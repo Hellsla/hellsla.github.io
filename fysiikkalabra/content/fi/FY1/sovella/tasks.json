@@ -1,0 +1,291 @@
+{
+  "intro": "Kaksi tehtävää kokoavat moduulin mittaamisen, kuvaajien ja tutkimisen taidot. Kolmannella arvioit oman tutkimusraporttisi.",
+  "tasks": [
+    {
+      "id": "fy1-s1",
+      "title": "Vierivä pallo videolla",
+      "source": "example",
+      "source_note": "Aineisto on laadittu esimerkiksi tällaisesta mittauksesta, eikä se ole oikean mittauksen tulos.",
+      "text": "Opiskelija päästää pallon vierimään lyhyttä ramppia alas lattialle ja kuvaa liikkeen puhelimella sivulta. Videoanalyysisovellus antaa pallon keskipisteen paikan $s$ lähtökohdasta mitattuna $0{,}20\\,\\text{s}$:n välein. Rampin alapää on noin $16\\,\\text{cm}$:n päässä lähtökohdasta. Videossa yksi kuvapiste vastaa lattialla $2{,}5\\,\\text{mm}$:ä.\n\n| $t\\ (\\text{s})$ | $s\\ (\\text{mm})$ |\n|---|---|\n| $0{,}0$ | $0{,}0$ |\n| $0{,}2$ | $38{,}9$ |\n| $0{,}4$ | $157{,}9$ |\n| $0{,}6$ | $320{,}9$ |\n| $0{,}8$ | $477{,}4$ |\n| $1{,}0$ | $640{,}2$ |\n| $1{,}2$ | $799{,}2$ |\n| $1{,}4$ | $957{,}3$ |\n| $1{,}6$ | $1120{,}0$ |\n| $1{,}8$ | $1277{,}2$ |\n| $2{,}0$ | $1439{,}6$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Piirrä aineistosta $(t, s)$-kuvaaja ja sovita siihen malli niihin pisteisiin, joihin se sopii.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Suora on sovitettu lattialla otettuihin pisteisiin; rampin alun pisteet eivät vaikuta siihen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajan avulla pallon nopeus lattialla. Perustele, mitä mittauspisteitä käytit.",
+          "answer": {
+            "value": 0.8,
+            "unit": "m/s"
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, miksi nopeus määritetään lattialla otetuista pisteistä ($t \\geq 0{,}4\\,\\text{s}$ tai $t \\geq 0{,}6\\,\\text{s}$): rampilla vauhti vasta kasvaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 0{,}80\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Sovellus ilmoittaa paikat $0{,}1\\,\\text{mm}$:n tarkkuudella. Arvioi, kuinka tarkasti pallon paikka todella tunnetaan. Ilmoita b-kohdan nopeus perustellulla tarkkuudella.",
+          "criteria": [
+            {
+              "text": "Arvioi paikan epävarmuudeksi noin yhden kuvapisteen eli muutaman millimetrin ja perustelee arvion videon kuvapisteellä.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että näytön desimaalit syntyvät laskennasta eivätkä kerro mittauksen tarkkuutta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Ilmoittaa nopeuden kahdella tai kolmella merkitsevällä numerolla ja perustelee määrän paikan epävarmuudella ja pisteiden sironnalla.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelijan pari jatkaa sovitettua suoraa ja päättelee, että pallo on $10\\,\\text{s}$:n kuluttua noin $7{,}8\\,\\text{m}$:n päässä lähtökohdasta. Arvioi päätelmää. Selitä myös, miksi sovitettu suora ei kulje origon kautta.",
+          "criteria": [
+            {
+              "text": "Toteaa, että malli on testattu vain mittausvälillä $0{,}4\\text{–}2{,}0\\,\\text{s}$ ja että suoran jatkaminen $10\\,\\text{s}$:iin on epävarmaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Nimeää fysikaalisen syyn, miksi liike ei jatku samanlaisena, esimerkiksi vierimisvastus hidastaa tai lattia loppuu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää negatiivisen vakiotermin: rampilla pallo kulki lattianopeutta hitaammin, joten lattialiikkeen suora leikkaa $s$-akselin alapuolella.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy1-5",
+        "experiment": "fy1-3",
+        "concept": "fy1-5",
+        "transfer": "fy1-4"
+      }
+    },
+    {
+      "id": "fy1-s2",
+      "title": "Kahden kuulan kilpa",
+      "source": "example",
+      "source_note": "Työselostus ja mittaukset on laadittu esimerkiksi.",
+      "text": "Ryhmä tutki, vaikuttaako kuulan massa siihen, kuinka kauan kuulalta kestää vieriä rampin alas. Tässä on ryhmän työselostus.\n\n> **Tutkimuskysymys.** Vierivätkö raskaat kuulat nopeammin?\n>\n> **Hypoteesi.** Raskas kuula on nopeampi, koska painovoima vetää sitä enemmän.\n>\n> **Välineet.** $1{,}2\\,\\text{m}$ pitkä ramppi, kirjapino, teräskuula ($110\\,\\text{g}$), samankokoinen umpinainen muovikuula ($16\\,\\text{g}$) ja puhelimen sekuntikellosovellus, joka näyttää tuhannesosasekunnit.\n>\n> **Menetelmä.** Nostimme rampin yläpään kirjapinon päälle. Päästimme teräskuulan rampin yläpäästä, ja Eetu käynnisti ajanoton kuulan lähtiessä. Muovikuula ei meinannut lähteä liikkeelle, joten annoimme sille pienen tönäisyn suunnilleen samasta kohdasta. Välissä kirjapinosta otettiin yksi kirja pois, koska sitä tarvittiin toisella tunnilla. Ajanotto pysäytettiin, kun kuula osui rampin päässä olevaan seinään.\n>\n> **Tulokset.** Teräskuula $2{,}437\\,\\text{s}$, muovikuula $2{,}109\\,\\text{s}$.\n>\n> **Johtopäätös.** Muovikuula oli $0{,}328\\,\\text{s}$ nopeampi, joten hypoteesi on väärä: kevyt kuula vierii nopeammin. Kevyet kappaleet liikkuvat aina nopeammin kuin raskaat.\n\nOpettajan palautteen jälkeen ryhmä korjasi menetelmänsä ja mittasi uudelleen:\n\n| Mittaus | teräskuula $t\\ (\\text{s})$ | muovikuula $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2{,}31$ | $2{,}40$ |\n| $2$ | $2{,}45$ | $2{,}33$ |\n| $3$ | $2{,}38$ | $2{,}47$ |\n| $4$ | $2{,}29$ | $2{,}36$ |\n| $5$ | $2{,}42$ | $2{,}44$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 8,
+          "text": "Etsi ensimmäisestä työselostuksesta neljä merkittävää puutetta. Kerro kunkin kohdalla, miksi se heikentää tutkimusta ja miten se korjataan.",
+          "criteria": [
+            {
+              "text": "Ensimmäinen puute nimetty, ja perusteltu, miksi se heikentää tutkimusta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Ensimmäinen puutteen korjaus poistaa ongelman.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Toinen puute nimetty, ja perusteltu, miksi se heikentää tutkimusta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Toinen puutteen korjaus poistaa ongelman.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Kolmas puute nimetty, ja perusteltu, miksi se heikentää tutkimusta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Kolmas puutteen korjaus poistaa ongelman.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Neljäs puute nimetty, ja perusteltu, miksi se heikentää tutkimusta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Neljäs puutteen korjaus poistaa ongelman.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske uusista mittauksista kummankin kuulan vierimisajan keskiarvo ja arvioi tulosten epävarmuus. Voiko mittausten perusteella sanoa, että kuulien vierimisajat eroavat?",
+          "answer": {
+            "value": 0.03,
+            "unit": "s"
+          },
+          "criteria": [
+            {
+              "text": "Keskiarvot oikein: teräs $2{,}37\\,\\text{s}$, muovi $2{,}40\\,\\text{s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Esimerkiksi vaihteluvälin puolikas yksinkertaisena, varovaisena arviona: $\\Delta t \\approx 0{,}08\\,\\text{s}$ ja $0{,}07\\,\\text{s}$."
+            },
+            {
+              "text": "Vertaa keskiarvojen eroa $0{,}03\\,\\text{s}$ epävarmuuksiin ja päättelee, ettei eroa voi osoittaa, koska ero ei ole selvästi epävarmuuksia suurempi.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Keskiarvot ilmoitetaan sadasosasekunnin tarkkuudella kuten mittaukset."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Kirjoita ryhmälle uusi johtopäätös.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Vastaa kysymykseen, vaikuttaako massa vierimisaikaan."
+            },
+            {
+              "text": "Kertoo tuloksen epävarmuuksineen: aikojen välillä ei havaittu eroa mittausepävarmuuden rajoissa.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Rajaa päätelmän tutkittuihin oloihin (samankokoiset umpinaiset kuulat, tämä ramppi) eikä yleistä sitä kaikkiin kappaleisiin.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "math": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy1-s3",
+      "kind": "own",
+      "title": "Arvioi oma tutkimusraporttisi",
+      "text": "Luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi* suunnittelit ja teit oman kokeen ja kirjoitit siitä raportin. Ota raporttisi esiin ja arvioi se alla olevilla kriteereillä. Kriteerit kertovat myös, mitä hyvään tutkimusraporttiin kuuluu, joten voit käyttää niitä jo raporttia kirjoittaessasi.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "own",
+          "points": 14,
+          "text": "Arvioi raporttisi.",
+          "criteria": [
+            {
+              "text": "Tutkimuskysymys koskee kahden mitattavan suureen yhteyttä, ja hypoteesi on perusteltu ennuste, jonka mittaus voi kumota.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Menetelmästä selviävät muutettava, mitattava ja vakiona pidetyt suureet, välineet ja mittausalue niin tarkasti, että toinen voisi toistaa kokeen.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Mittaukset ovat taulukossa, jossa näkyvät suureet, yksiköt ja toistot.",
+              "tag": "communication",
+              "points": 2
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1
+            },
+            {
+              "text": "Tulos (esimerkiksi keskiarvo tai kulmakerroin) on laskettu oikein, ja sen epävarmuus on arvioitu.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Johtopäätös vertaa tulosta hypoteesiin eikä yleistä mittausalueen ulkopuolelle."
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Raportissa kerrotaan myös, miten koetta voisi parantaa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "graph": "fy1-4",
+        "math": "fy1-3"
+      }
+    }
+  ]
+}

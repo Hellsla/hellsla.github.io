@@ -1,0 +1,10 @@
+ok   lint
+ok   latex
+ok   build
+ok   sims
+ok   inquiry (68 passed, 0 failed)
+ok   answer positions
+ok   layout 360 px
+ok   layout 768 px
+ok   layout 1280 px
+fy3-2: draft (science=stale, pedagogy=stale, legacy=stale); exercises: reviewed (science=PASS (carried over: split), pedagogy=PASS (carried over: split))

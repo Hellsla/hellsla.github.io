@@ -1,0 +1,21 @@
+{
+  "id": "fy2-7",
+  "course": "FY2",
+  "title": "Energian siirtäminen: sähkö ja lämpö",
+  "goals": [
+    "LOPS FY2: energian siirtäminen",
+    "Täsmennys: energian siirtämisen tarkastelu voidaan rajata sähköenergian ja lämpöenergian siirtoon"
+  ],
+  "prerequisites": [
+    "fy2-3"
+  ],
+  "glossary": [
+    "sähköenergia",
+    "kaukolämpö",
+    "sähköverkko",
+    "siirtohäviö"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

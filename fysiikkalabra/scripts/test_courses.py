@@ -21,21 +21,22 @@ def expect(name, cond, detail=""):
 
 
 def snapshot():
-    files = [SRC / "curriculum.json", SRC / "glossary.json"] + sorted((SRC / "content").rglob("*")) + sorted((SRC / "assets").rglob("*")) + sorted((SRC / "site").glob("*.html"))
+    files = [SRC / "curriculum.json", SRC / "glossary.json"] + sorted((SRC / "content").rglob("*")) + sorted((SRC / "lessons").rglob("*")) + sorted((SRC / "assets").rglob("*")) + sorted((SRC / "site").glob("*.html"))
     return hashlib.sha256(b"".join(p.as_posix().encode() + p.read_bytes() for p in files if p.is_file() and "/review/" not in p.as_posix())).hexdigest()
 REAL = snapshot()
 
 KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
-for f in ("curriculum.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content/_gold"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
+for d in ("scripts", "templates", "content/_gold", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
 c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
 (T / "docs/lops2019").mkdir(parents=True)
 for f in (SRC / "docs/lops2019").glob("*.txt"): shutil.copy(f, T / "docs/lops2019")
-shutil.copytree(SRC / "content/FY3/fy3-2", T / "content/FY3/fy3-2")
+shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))   # its carries name commits of the real history
+shutil.copytree(SRC / "lessons/FY3/fy3-2", T / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
 (T / "tests/sims").mkdir(parents=True); shutil.copy(SRC / "tests/sims/fy3-2.json", T / "tests/sims")
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T), "CLAUDE_CONFIG_DIR": str(T / ".claude-config")}
 
@@ -57,7 +58,7 @@ code, out = run("new_course.py", "FY4", "--check")
 expect("FY4 validates against LOPS 2019 before initialization", code == 0 and "17/17 LOPS items found" in out and "not initialized" in out, out)
 code, out = run("new_course.py", "FY4")
 cur = json.loads((T / "curriculum.json").read_text())
-expect("new_course creates FY4's content, picture and simulation folders", code == 0 and all((T / d).is_dir() for d in ("content/FY4", "assets/pics/fy4", "assets/sims/fy4")), out)
+expect("new_course creates FY4's content, picture and simulation folders", code == 0 and all((T / d).is_dir() for d in ("content/fi/FY4", "lessons/FY4", "assets/pics/fy4", "assets/sims/fy4")), out)
 expect("FY4 marked initialized; FY3's entry untouched", cur["FY4"].get("initialized") and cur["FY3"] == json.loads((SRC / "curriculum.json").read_text())["FY3"], cur["FY4"].get("initialized"))
 code, out = run("new_course.py", "FY4")
 expect("running it again only validates", code == 0 and "already initialized" in out, out)
@@ -72,17 +73,29 @@ expect("a lesson without a slot is refused", code != 0 and "not a lesson slot" i
 
 # 2. /lesson fy4-1 step 0: meta.json from the FY4 slot
 code, out = run("courses.py", "init-lesson", "fy4-1")
-L = T / "content/FY4/fy4-1"; meta = json.loads((L / "meta.json").read_text())
+L = T / "content/fi/FY4/fy4-1"; C = T / "lessons/FY4/fy4-1"; C.mkdir(parents=True); meta = json.loads((L / "meta.json").read_text())
 slot = next(l for l in cur["FY4"]["lessons"] if l["id"] == "fy4-1")
 expect("init-lesson writes FY4's slot into meta.json", code == 0 and meta["course"] == "FY4" and meta["title"] == slot["title"] and meta["goals"] == slot["goals"], meta)
 
 # 3. the fixture body: fy3-2 relabelled, simulation and picture in FY4's folders
-src = T / "content/FY3/fy3-2"
-for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md"):
-    (L / n).write_text((src / n).read_text().replace("fy3-2", "fy4-1"))
+src = T / "content/fi/FY3/fy3-2"; src_code = T / "lessons/FY3/fy3-2"
+def text_file(d, n): return d / "exercises" / n if n in ("exercises.json", "solutions.md") else d / n   # courses.lesson_file
+sys.path.insert(0, str(HERE)); from lint_lesson import PLAIN_QTY, strip_math_and_svg
+def maths_quantities(text):
+    """fy3-2 predates the 2026-10-28 rule that a number with its unit is maths; a new lesson meets it ($40$ N)."""
+    plain = re.sub(r'aria-label="[^"]*"', lambda m: " " * len(m.group(0)), strip_math_and_svg(text))
+    for m in reversed(list(PLAIN_QTY.finditer(plain))):
+        n = re.match(r"[\d ,]*\d", m.group(0)).group(0)
+        text = text[:m.start()] + "$" + n.replace(" ", "").replace(",", "{,}") + "$" + text[m.start() + len(n):]
+    return text
+for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(text_file(src, n).read_text().replace("fy3-2", "fy4-1")))
+for n in ("answers.py", "sim-spec.md", "figures.py"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))   # figures.py: an exercise shows one of its figures by id
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
-shutil.copy(src / "sim.js", S / "sim.js"); (S / "sim.css").write_text("#sim-root canvas { border-radius: 6px; }\n")
+shutil.copy(src_code / "sim.js", S / "sim.js"); (S / "sim.css").write_text("#sim-root canvas { border-radius: 6px; }\n")
+lang = json.loads((T / "lang/fi.json").read_text()); lang["sims"]["fy4-1"] = lang["sims"]["fy3-2"]   # the copied sim keeps its texts
+(T / "lang/fi.json").write_text(json.dumps(lang, ensure_ascii=False, indent=2) + "\n")
 (T / "tests/sims/fy4-1.json").write_text((T / "tests/sims/fy3-2.json").read_text())
 (T / "assets/pics/fy4/kalteva-taso.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"><path d="M40 260 L560 260 L560 80 Z" fill="none" stroke="#333" stroke-width="4"/></svg>\n')
 md = (L / "lesson.md").read_text()
@@ -98,7 +111,7 @@ expect("the resolver places fy4-1's simulation and picture in FY4's folders", '"
 # 4. lint and its course rules
 code, out = run("lint_lesson.py", "fy4-1")
 expect("fy4-1 lints clean", code == 0 and "0 error(s)" in out, out)
-shutil.copy(S / "sim.js", L / "sim.js"); code, out = run("lint_lesson.py", "fy4-1"); (L / "sim.js").unlink()
+shutil.copy(S / "sim.js", C / "sim.js"); code, out = run("lint_lesson.py", "fy4-1"); (C / "sim.js").unlink()
 expect("an FY4 sim.js in the lesson folder is refused", code == 1 and "lives in its own folder" in out, out)
 (T / "assets/pics/fy3").mkdir(parents=True, exist_ok=True); (T / "assets/pics/fy3/x.svg").write_text("<svg/>")
 (L / "lesson.md").write_text((L / "lesson.md").read_text() + "\n![x](pics/fy3/x.svg)\n"); code, out = run("lint_lesson.py", "fy4-1")
@@ -158,8 +171,10 @@ expect("the picture changed: the hash moved and both review it", run("reviews.py
 git("checkout", "--", ".")
 
 # 9. a second lesson reuses the simulation: dependencies and impact
-run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/FY4/fy4-2"
-for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md"): (L2 / n).write_text((L / n).read_text().replace("fy4-1", "fy4-2"))
+run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/fi/FY4/fy4-2"; C2 = T / "lessons/FY4/fy4-2"; C2.mkdir(parents=True)
+for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
+    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(text_file(L, n).read_text().replace("fy4-1", "fy4-2"))
+for n in ("answers.py", "sim-spec.md", "figures.py"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
 m2 = json.loads((L2 / "meta.json").read_text()); m2.update(sim="fy4-1", glossary=meta["glossary"], prerequisites=[]); (L2 / "meta.json").write_text(json.dumps(m2, ensure_ascii=False, indent=2))
 (T / "tests/sims/fy4-2.json").write_text((T / "tests/sims/fy4-1.json").read_text())
 code, out = run("courses.py", "deps")
@@ -179,7 +194,7 @@ proj = T / ".claude-config/projects/-x"; sub = proj / "s1/subagents"; sub.mkdir(
 u = lambda i, cr, cw, o: {"input_tokens": i, "cache_read_input_tokens": cr, "cache_creation_input_tokens": cw, "output_tokens": o, "cache_creation": {"ephemeral_1h_input_tokens": cw, "ephemeral_5m_input_tokens": 0}}
 turn = lambda mid, model, us, ts, blocks: [json.dumps({"type": "assistant", "timestamp": ts, "message": {"id": mid, "model": model, "usage": us, "content": [b]}}) for b in blocks]
 (sub / "agent-a1.jsonl").write_text("\n".join(
-    [json.dumps({"type": "user", "timestamp": "2026-10-26T10:00:00Z", "message": {"role": "user", "content": "Read content/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full. Round: 1."}})]
+    [json.dumps({"type": "user", "timestamp": "2026-10-26T10:00:00Z", "message": {"role": "user", "content": "Read content/fi/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full. Round: 1."}})]
     + turn("m1", "claude-opus-5-5", u(2, 0, 30000, 500), "2026-10-26T10:00:05Z", [{"type": "text", "text": "x"}, {"type": "tool_use", "name": "Read", "input": {}}])
     + turn("m2", "claude-opus-5-5", u(2, 30000, 2000, 800), "2026-10-26T10:01:00Z", [{"type": "text", "text": "VERDICT: PASS"}])) + "\n")
 (sub / "agent-a1.meta.json").write_text(json.dumps({"agentType": "science-reviewer", "model": "opus", "effort": "medium"}))

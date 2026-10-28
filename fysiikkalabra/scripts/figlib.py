@@ -17,6 +17,11 @@ stays the page's single source and the figure code stays editable. Coordinates a
 
 Labels: `Fig.tex(x, y, tex, anchor)` puts a KaTeX label whose box is centred vertically on y; anchor start | middle |
 end says whether x is its left edge, centre or right edge (like SVG text-anchor). Words go in \\text{}.
+
+Languages: figures.py is written once, in Finnish. For another language `python scripts/figures.py <id> --lang en`
+calls set_language() first with content/en/<COURSE>/<id>/figures.json, {Finnish text: translation}: the words of
+every \\text{} and every figure's description (Fig label) are looked up there, and the decimal comma {,} becomes the
+language's decimal sign. Formulas, symbols and numbers stay as figures.py draws them.
 """
 import html, re
 
@@ -26,6 +31,30 @@ SAND_LIGHT, SAND, SAND_DARK, GRAIN = "#f1dfb5", "#d9b26a", "#e9c98a", "#a97a35"
 HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, COLD, COLD_LIGHT = "#ffc078", "#e8590c", "#c92a2a", "#f2a69c", "#1971c2", "#d0e6fb"
 ALUMINIUM, METAL_EDGE, IRON, COPPER, ICE, ICE_EDGE = "#c4ccd4", "#8a96a3", "#6c757d", "#b8622d", "#a5d8ff", "#4f8fbf"
 GOOD, GOOD_LIGHT = "#2b8a3e", "#b2f2bb"
+PAPER = "#f6f1e6"   # the warm paper behind a chapter's opening illustration (Fig(..., hero=True))
+
+
+TEXTS = {}          # Finnish text -> the text in the language being drawn (set_language)
+DECIMAL = "{,}"     # a number's decimal sign in LaTeX: {,} in Finnish
+UNITS = set("kg g mg m s N J K Pa kPa MPa kJ MJ W kW Wh kWh h min cm mm km l dl ml dm mol Hz °C".split()) | {""}   # the same in every language
+MISSING = []        # Finnish texts drawn without a translation (figures.py reports them)
+
+
+def set_language(texts, decimal=","):
+    global TEXTS, DECIMAL
+    TEXTS, DECIMAL = dict(texts), "{,}" if decimal == "," else decimal; MISSING.clear()
+
+
+def translate(text, tex=True):
+    """A label in the language being drawn: in LaTeX the contents of each \\text{} and the decimal comma, a plain
+    description as a whole. In Finnish it is the text as it is."""
+    if not TEXTS and DECIMAL == "{,}": return text
+    def word(t):
+        if t.strip() not in UNITS and t not in TEXTS and re.search(r"[A-Za-zÄÖÅäöå]{2,}", t) and t not in MISSING: MISSING.append(t)
+        return TEXTS.get(t, t)
+    if not tex: return word(text)
+    text = re.sub(r"(\\(?:text|mathrm|textsf)\{)([^{}]*)\}", lambda m: m.group(1) + word(m.group(2)) + "}", text)
+    return text.replace("{,}", DECIMAL)
 
 
 def n(v):
@@ -37,7 +66,7 @@ def n(v):
 def fi(v, digits=None):
     """A number for a LaTeX label: decimal comma as {,}, true minus."""
     s = f"{v:.{digits}f}" if digits is not None else (f"{v:g}" if not float(v).is_integer() else str(int(v)))
-    return s.replace(".", "{,}")
+    return s.replace(".", DECIMAL)
 
 
 def visible_len(tex):
@@ -49,8 +78,9 @@ def visible_len(tex):
 
 
 class Fig:
-    def __init__(self, fid, height, label, width=600, size=24):
-        self.fid, self.w, self.h, self.label, self.size = fid, width, height, label, size
+    def __init__(self, fid, height, label, width=600, size=24, hero=False):
+        """hero: the chapter's opening illustration, 1200 wide, full column width under the Miksi question (site.css .fig-hero)."""
+        self.fid, self.w, self.h, self.label, self.size, self.hero = fid, width, height, translate(label, tex=False), size, hero
         self.defs, self.body = [], []
 
     # drawing
@@ -96,7 +126,7 @@ class Fig:
     def tex(self, x, y, tex, anchor="start", color=INK, size=None, w=None, bg=False):
         """A LaTeX label centred vertically on y; x is its left edge, centre or right edge (anchor). bg puts the
         figure's white under the label, for a label that sits on gridlines."""
-        size = size or self.size
+        size = size or self.size; tex = translate(tex)
         tall = re.search(r"\\d?frac|\\sqrt|\\sum|\\int", tex)
         h = round(size * (2.4 if tall else 1.2))            # about the rendered height: check_layout.py measures the box
         w = w or round(visible_len(tex) * size * 0.52 + 8)
@@ -106,7 +136,7 @@ class Fig:
         return self.add(f'<foreignObject x="{n(x0)}" y="{n(y - h / 2)}" width="{n(w)}" height="{h}" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="{style}">{f'<span style="background:{WHITE};padding:0 5px;border-radius:3px">${tex}$</span>' if bg else f'${tex}$'}</div></foreignObject>')
 
     def svg(self, name=None):
-        attrs = f' data-fig="{name}"' if name else ""
+        attrs = (f' data-fig="{name}"' if name else "") + (' class="fig-hero"' if self.hero else "")
         defs = f"\n  <defs>{''.join(self.defs)}</defs>" if self.defs else ""
         body = "\n  ".join(self.body)
         return (f'<svg viewBox="0 0 {self.w} {self.h}" role="img" aria-label="{html.escape(self.label, quote=True)}"{attrs} '
@@ -134,11 +164,11 @@ class Axes:
         for t in xticks:
             if t == x[0]: continue
             fig.line(X(t), self.y0, X(t), self.y0 + 7, INK, 2)
-            fig.tex(X(t), self.y0 + 24, xf(t), "middle")
+            if xf(t) != "": fig.tex(X(t), self.y0 + 24, xf(t), "middle")     # an empty format: a tick and gridline without a number
         for t in yticks:
             if t == y[0]: continue
             fig.line(self.x0 - 7, Y(t), self.x0, Y(t), INK, 2)
-            fig.tex(self.x0 - 12, Y(t), yf(t), "end")
+            if yf(t) != "": fig.tex(self.x0 - 12, Y(t), yf(t), "end")
         if origin_label and x[0] == 0 and y[0] == 0:
             fig.tex(self.x0 - 10, self.y0 + 20, "0", "end")
         # the axis titles beyond the arrow tips, where no data, tick or gridline can reach them: leave about

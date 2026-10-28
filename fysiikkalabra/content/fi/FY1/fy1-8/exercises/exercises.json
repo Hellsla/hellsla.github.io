@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-8-L1-01",
+      "level": 1,
+      "text": "Pallo vierii rinnettä alas, ja oppilas mittaa sen kulkuajaksi käsikellolla $4{,}0\\,\\text{s}$. Ajanoton epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$. Kuinka suuri on ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina?",
+      "answer": 5.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-02",
+      "level": 1,
+      "text": "Oppilas kävelee kymmenen metrin matkan viisi kertaa ja mittaa ajat $12{,}3\\,\\text{s}$, $12{,}5\\,\\text{s}$, $12{,}2\\,\\text{s}$, $12{,}6\\,\\text{s}$ ja $12{,}4\\,\\text{s}$. Mikä on mittausten keskiarvo?",
+      "answer": 12.4,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-03",
+      "level": 1,
+      "text": "Leluauton merkitty ajomatka on $1{,}50\\,\\text{m}$, ja auto kulkee sen ajassa $3{,}6\\,\\text{s}$. Mikä on auton nopeus? Oleta nopeus vakioksi ja vastaa yksikössä m/s.",
+      "answer": 0.42,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-04",
+      "level": 1,
+      "text": "Pöydän pituus mitataan viisi kertaa viivoittimella: $24{,}1\\,\\text{cm}$, $24{,}4\\,\\text{cm}$, $24{,}0\\,\\text{cm}$, $24{,}3\\,\\text{cm}$ ja $24{,}2\\,\\text{cm}$. Epävarmuudeksi arvioidaan puolet mittausten vaihteluvälistä. Kuinka suuri epävarmuus on?",
+      "answer": 0.2,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-05",
+      "level": 1,
+      "text": "Mittauspöytäkirjan rivillä matka on $2{,}00\\,\\text{m}$, kolmen ajan keskiarvo $4{,}73\\,\\text{s}$ ja puolet vaihteluvälistä $\\Delta t = 0{,}15\\,\\text{s}$. Kuinka suuri on ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina?",
+      "answer": 3.2,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-8-L2-01",
+      "level": 2,
+      "text": "Leluauton ajoaikaa mitataan viisi kertaa, ja tulokset ovat $7{,}8\\,\\text{s}$, $8{,}2\\,\\text{s}$, $7{,}9\\,\\text{s}$, $8{,}1\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Epävarmuuden yksinkertaiseksi ja varovaiseksi arvioksi otetaan puolet vaihteluvälistä. Kuinka suuri on tuloksen suhteellinen epävarmuus prosentteina?",
+      "answer": 2.5,
+      "unit": "%",
+      "tolerance": 0.21
+    },
+    {
+      "id": "fy1-8-L2-02",
+      "level": 2,
+      "text": "Auto kulkee vakionopeudella $1{,}5\\,\\text{m/s}$ $3{,}0\\,\\text{m}$:n matkan. Kulkuaika mitataan käsikellolla, ja ajanoton epävarmuus on $0{,}20\\,\\text{s}$. Kuinka suuri on mitatun ajan suhteellinen epävarmuus prosentteina?",
+      "answer": 10,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L2-03",
+      "level": 2,
+      "text": "Mittauspöytäkirjassa auton paikka on $90\\,\\text{cm}$, kun aikaa on kulunut $2{,}0\\,\\text{s}$, ja $342\\,\\text{cm}$, kun aikaa on kulunut $8{,}0\\,\\text{s}$. Oleta liike tasaiseksi. Mikä on auton nopeus? Vastaa yksikössä m/s.",
+      "answer": 0.42,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L2-04",
+      "level": 2,
+      "text": "Hypoteesin mukaan auton nopeus on $0{,}50\\,\\text{m/s}$, mutta kokeessa nopeudeksi mitataan $0{,}42\\,\\text{m/s}$. Kuinka monta prosenttia mitattu arvo poikkeaa hypoteesin ennustamasta arvosta?",
+      "answer": 16,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-8-L3-01",
+      "level": 3,
+      "text": "Oppilas sovittaa mittauspisteisiin (matka ajan funktiona) kaksi suoraa: jyrkimmän, jonka kulmakerroin on $0{,}463\\,\\text{m/s}$, ja loivimman, jonka kulmakerroin on $0{,}397\\,\\text{m/s}$. Mittauspisteet mahtuvat näiden suorien väliin. Epävarmuudeksi otetaan puolet suorien kulmakertoimien erotuksesta. Kuinka suuri on nopeuden epävarmuus?",
+      "answer": 0.033,
+      "unit": "m/s",
+      "tolerance": 0.1
+    },
+    {
+      "id": "fy1-8-L3-02",
+      "level": 3,
+      "text": "Kuumaa vettä jäähtyy kupissa. Lämpötila on $80{,}0\\,{}^\\circ\\text{C}$ kohdassa $t = 0\\,\\text{min}$, $68{,}0\\,{}^\\circ\\text{C}$ kohdassa $5{,}0\\,\\text{min}$, $52{,}0\\,{}^\\circ\\text{C}$ kohdassa $15{,}0\\,\\text{min}$ ja $47{,}0\\,{}^\\circ\\text{C}$ kohdassa $20{,}0\\,\\text{min}$. Oppilaan hypoteesi on, että lämpötila laskee tasaisesti. Kuinka paljon suurempi on lämpötilan laskunopeus ensimmäisen viiden minuutin aikana kuin viimeisen viiden minuutin aikana? Vastaa yksikössä K/min.",
+      "answer": 1.4,
+      "unit": "K/min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L3-03",
+      "level": 3,
+      "text": "Tutkimukseen on varattu 60 minuuttia. Laitteiden kasaamiseen ja testaamiseen menee 12 minuuttia, ja mittaus tehdään kuudella eri matkalla. Jokainen mittaustoisto kuluttaa 2,0 minuuttia, kun palautus alkuun ja kirjaaminen lasketaan mukaan. Kuinka monta toistoa jokaiselle matkalle ehtii, kun toistoja on yhtä monta joka matkalla?",
+      "answer": 4.0,
+      "unit": "toistoa",
+      "tolerance": 0.02
+    }
+  ]
+}

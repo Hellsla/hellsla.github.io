@@ -1,0 +1,22 @@
+{
+  "id": "fy1-4",
+  "course": "FY1",
+  "title": "Graafinen esitys ja suoran sovittaminen",
+  "goals": [
+    "LOPS FY1: tulosten esittäminen graafisesti",
+    "LOPS FY1: graafinen malli ja lineaarinen malli",
+    "Taidot: suoran sovittaminen ja suoran yhtälön tulkinta, kulmakertoimen määrittäminen kuvaajasta"
+  ],
+  "prerequisites": [
+    "fy1-3"
+  ],
+  "glossary": [
+    "kuvaaja",
+    "lineaarinen malli",
+    "kulmakerroin",
+    "suoran sovitus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

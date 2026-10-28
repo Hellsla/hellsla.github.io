@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "contribution": "Lineaarinen malli ja suoraan verrannollisuus liikkeessä: $(t, s)$-kuvaajan kulmakerroin on nopeus, matka (ei paikka) on suoraan verrannollinen aikaan, ja yhtälö $s = s_0 + vt$ toimii laskentavälineenä, esimerkiksi Voyager 2 -luotaimen etäisyydelle (mallin arvo, lähde NASA/JPL).",
+  "learn": [
+    "Osaat laskea tasaisessa liikkeessä matkan, ajan tai nopeuden kaavalla $s = s_0 + vt$.",
+    "Osaat lukea $(t, s)$-kuvaajasta nopeuden ja alkupaikan.",
+    "Osaat selittää, milloin matka ja milloin paikka on suoraan verrannollinen aikaan."
+  ],
+  "prior": [
+    "Mittauspisteisiin sovitetaan suora, ja sen kulmakerroin kertoo, kuinka paljon $y$ muuttuu, kun $x$ kasvaa yhdellä (luku *Graafinen esitys ja suoran sovittaminen*)",
+    "Suoran yhtälössä vakiotermi on suoran ja $y$-akselin leikkauskohta (luku *Graafinen esitys ja suoran sovittaminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Voyager 2 -luotain lähti Maasta vuonna 1977. Marraskuussa 2018 se ylitti heliopaussin eli rajan, jonka ulkopuolella Auringon aurinkotuuli ei enää hallitse avaruutta. NASA:n JPL:n mukaan luotain oli silloin 119,7 AU:n päässä Auringosta, ja se etenee yhä poispäin nopeudella $15{,}341\\,\\text{km/s}$. Tähtitieteellinen yksikkö AU on suunnilleen Maan ja Auringon etäisyys. Luotaimen viereen ei voi ojentaa viivainta, mutta sen etäisyyden voi silti ilmoittaa mille tahansa päivälle.",
+      "question": "Mitä tietoja tarvitset, jotta voisit laskea luotaimen etäisyyden Auringosta vaikkapa vuoden päästä, ja mitä oletat sen nopeudesta?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: suoran kulmakerroin",
+      "prompt": "Mittauspisteet (aika, paikka) asettuvat $(t, s)$-koordinaatistossa suoralle. Mitä suoran kulmakerroin kertoo?",
+      "choices": [
+        {
+          "text": "Kohdan, jossa suora leikkaa $s$-akselin.",
+          "feedback": "Se on suoran alkukohta, ei kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Kulmakerroin kertoo suoran jyrkkyyden: kuinka monta yksikköä $s$ muuttuu, kun $t$ kasvaa yhdellä."
+        },
+        {
+          "text": "Kuinka paljon paikka muuttuu aikayksikköä kohti.",
+          "correct": true,
+          "feedback": "Oikein. Kulmakerroin on $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*). Liikkeessä se on nopeus, ja sitä sovellat tänään."
+        },
+        {
+          "text": "Kuinka pitkä suora on.",
+          "feedback": "Suoran pituudella ei ole merkitystä, koska suora jatkuu molempiin suuntiin. Kulmakerroin on kahden muutoksen suhde, $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kuvaajan muoto",
+      "prompt": "Kärry lähtee nollakohdasta ja liikkuu tasaisesti nopeudella $2{,}0\\,\\text{m/s}$. Millainen on sen $(t, s)$-kuvaaja, kun aika $t$ on vaaka-akselilla ja paikka $s$ pystyakselilla?",
+      "choices": [
+        {
+          "text": "Vaakasuora suora, koska nopeus ei muutu.",
+          "feedback": "Mallin arvot kumoavat tämän: paikka kasvaa $2{,}0\\,\\text{m}$ jokaisessa sekunnissa, esimerkiksi hetkellä $4{,}0\\,\\text{s}$ se on $8{,}0\\,\\text{m}$. Vaakasuora viiva kuvaisi kappaletta, joka pysyy paikallaan."
+        },
+        {
+          "text": "Nouseva suora, joka kulkee origon kautta.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: paikka on $2{,}0\\,\\text{m/s} \\cdot t$, esimerkiksi $4{,}0\\,\\text{m}$ hetkellä $2{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{m}$ hetkellä $4{,}0\\,\\text{s}$. Aika kaksinkertaistuu ja paikka kaksinkertaistuu, joten pisteet ovat suoralla, joka lähtee origosta."
+        },
+        {
+          "text": "Ylöspäin kaareutuva käyrä, koska matka kasvaa koko ajan.",
+          "feedback": "Mallin arvot kumoavat tämän: paikka kasvaa saman verran, $2{,}0\\,\\text{m}$, jokaisessa sekunnissa, joten kuvaaja ei kaareudu. Matka kasvaa koko ajan, mutta tasaisesti. Kaareutuva käyrä tarkoittaisi, että nopeus muuttuu."
+        }
+      ],
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      }
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: aika kaksinkertaistuu",
+      "prompt": "Kärry on alussa kohdassa $s_0 = 6{,}0\\,\\text{m}$ ja liikkuu nopeudella $2{,}0\\,\\text{m/s}$. Hetkellä $t = 2{,}0\\,\\text{s}$ sen paikka on $10\\,\\text{m}$. Missä kärry on hetkellä $t = 4{,}0\\,\\text{s}$, kun aika on kaksinkertainen?",
+      "choices": [
+        {
+          "text": "$20\\,\\text{m}$, koska aika kaksinkertaistuu ja paikka kaksinkertaistuu.",
+          "feedback": "Mallin arvot kumoavat tämän: hetkellä $4{,}0\\,\\text{s}$ paikka on $14\\,\\text{m}$. Suoraan verrannollinen aikaan on vain matka $\\Delta s = vt$, joka kasvaa $4{,}0\\,\\text{m}$:stä $8{,}0\\,\\text{m}$:iin. Paikka ei kaksinkertaistu, koska liike alkoi kohdasta $6{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "$14\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $s = 6{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 14\\,\\text{m}$. Matka kaksinkertaistui ($4{,}0\\,\\text{m}$ on $8{,}0\\,\\text{m}$), mutta paikka ei, koska alkupaikka $6{,}0\\,\\text{m}$ pysyy mukana."
+        },
+        {
+          "text": "$12\\,\\text{m}$, koska nopeus on $2{,}0\\,\\text{m/s}$ ja paikka kasvaa siis $2{,}0\\,\\text{m}$.",
+          "feedback": "Mallin arvot kumoavat tämän. Nopeus $2{,}0\\,\\text{m/s}$ on matka yhdessä sekunnissa. Aikavälillä $2{,}0\\,\\text{s}$…$4{,}0\\,\\text{s}$ on kaksi sekuntia, joten kuljetaan $4{,}0\\,\\text{m}$ ja paikka on $10\\,\\text{m} + 4{,}0\\,\\text{m} = 14\\,\\text{m}$."
+        }
+      ],
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      }
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kärry ajaa suoralla radalla vakionopeudella. Muuta alkupaikkaa ja nopeutta, käynnistä liike tai vedä hetkeä, ja katso, miten $(t, s)$-kuvaaja piirtyy.",
+      "howto": "Säädä alkupaikka $s_0$ ja nopeus $v$ liukusäätimillä; aika palaa nollaan. *Käynnistä* toistaa liikkeen, *Tauko* pysäyttää sen ja *Alusta* palauttaa alun. Voit myös vetää *Hetki*-säädintä. Radalla oranssit pystyviivat ovat kärryn paikat kokonaisten sekuntien kohdalla, vihreä lippu on alkupaikka ja nuoli näyttää nopeuden. Kuvaajaan piirtyy suora hetkeen asti, jossa olet käynyt. Kun olet käynyt hetkessä $6\\,\\text{s}$, kuvaajaan ilmestyy kulmakolmio. *Nopeus (toisto)* muuttaa vain toiston tahtia.",
+      "model": "Kärry liikkuu suoralla radalla vakionopeudella: ei kitkaa eikä kiihtyvyyttä, ja vauhti on heti alussa täysi. Radan paikat ja kuvaajan arvot ovat mallin laskemia arvoja, eivät mittauksia. Kärry etenee vain yhteen suuntaan, joten nopeus on positiivinen.",
+      "calc": "Paikka on $s = s_0 + vt$ ja kuljettu matka $\\Delta s = s - s_0 = vt$. Kuvaajan kulmakolmio kulkee hetkestä $t = 2\\,\\text{s}$ hetkeen $t = 6\\,\\text{s}$, joten $\\Delta t = 4{,}0\\,\\text{s}$, ja kulmakerroin $\\Delta s : \\Delta t$ on nopeus $v$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: lähtö nollakohdasta",
+      "intro": "Testaa ennuste 1. Alkupaikka $s_0 = 0$ ja nopeus $v = 2{,}0\\,\\text{m/s}$ pysyvät vakioina. Muuta vain hetkeä $t$ ja kirjaa paikka ainakin kolmella hetkellä $t > 0$, esimerkiksi $2{,}0\\,\\text{s}$, $4{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Laske jokaiselle riville osamäärä $s : t$. Katso myös, miten kuvaaja piirtyy.",
+      "initial": {
+        "s0": 0,
+        "v": 2,
+        "t": 0
+      },
+      "locked": [
+        "s0",
+        "v"
+      ],
+      "vary": "t",
+      "names": {
+        "s0": "alkupaikka",
+        "v": "nopeus",
+        "t": "hetki"
+      },
+      "units": {
+        "s0": "m",
+        "v": "m/s",
+        "t": "s"
+      },
+      "measure": [
+        {
+          "key": "s",
+          "label": "s (m)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä osamäärille $s : t$ tapahtuu, kun hetki $t$ kasvaa?",
+        "choices": [
+          {
+            "text": "Ne ovat kaikki samat, ja ne ovat yhtä suuria kuin nopeus.",
+            "correct": true,
+            "feedback": "Oikein. Kun liike alkaa nollakohdasta, $s : t = 2{,}0\\,\\text{m/s}$ joka rivillä, esimerkiksi $4{,}0\\,\\text{m} : 2{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{m} : 4{,}0\\,\\text{s}$. Paikka on silloin suoraan verrannollinen aikaan, ja suhde on nopeus."
+          },
+          {
+            "text": "Ne kasvavat, koska paikka kasvaa.",
+            "feedback": "Paikka kasvaa, mutta myös aika kasvaa: kaksinkertainen aika antaa kaksinkertaisen paikan, joten suhde ei muutu. Laske esimerkiksi $4{,}0 : 2{,}0$ ja $8{,}0 : 4{,}0$."
+          },
+          {
+            "text": "Ne pienenevät, koska aika kasvaa jakajassa.",
+            "feedback": "Aika kasvaa, mutta samalla myös paikka kasvaa samassa suhteessa. Laske osamäärät taulukon riveiltä: ne ovat kaikki yhtä suuria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: lähtö 6,0 metrin kohdalta",
+      "intro": "Testaa ennuste 2. Nyt alkupaikka on $s_0 = 6{,}0\\,\\text{m}$ ja nopeus yhä $2{,}0\\,\\text{m/s}$. Muuta vain hetkeä $t$ ja kirjaa paikka $s$ ja matka $\\Delta s$ ainakin kolmella hetkellä $t > 0$, esimerkiksi $2{,}0\\,\\text{s}$, $4{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Laske kummastakin sarakkeesta osamäärä (paikka tai matka) jaettuna ajalla $t$.",
+      "initial": {
+        "s0": 6,
+        "v": 2,
+        "t": 0
+      },
+      "locked": [
+        "s0",
+        "v"
+      ],
+      "vary": "t",
+      "names": {
+        "s0": "alkupaikka",
+        "v": "nopeus",
+        "t": "hetki"
+      },
+      "units": {
+        "s0": "m",
+        "v": "m/s",
+        "t": "s"
+      },
+      "measure": [
+        {
+          "key": "s",
+          "label": "s (m)"
+        },
+        {
+          "key": "ds",
+          "label": "Δs (m)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Kumpi suure on suoraan verrannollinen aikaan, kun $s_0 = 6{,}0\\,\\text{m}$?",
+        "choices": [
+          {
+            "text": "Matka $\\Delta s$: osamäärä $\\Delta s : t$ on joka rivillä sama, $2{,}0\\,\\text{m/s}$.",
+            "correct": true,
+            "feedback": "Oikein. Esimerkiksi $4{,}0\\,\\text{m} : 2{,}0\\,\\text{s} = 8{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 2{,}0\\,\\text{m/s}$. Paikan osamäärä $s : t$ muuttuu ($10 : 2{,}0 = 5{,}0$, mutta $14 : 4{,}0 = 3{,}5$), joten paikka ei ole suoraan verrannollinen aikaan."
+          },
+          {
+            "text": "Paikka $s$, koska se on kuvaajan pystyakselilla.",
+            "feedback": "Pystyakselilla oleva suure ei ole automaattisesti verrannollinen aikaan. Laske osamäärät $s : t$: ne ovat eri suuria ($10 : 2{,}0 = 5{,}0$ ja $14 : 4{,}0 = 3{,}5$), joten suhde ei ole vakio."
+          },
+          {
+            "text": "Kumpikin, koska liike on tasaista.",
+            "feedback": "Tasaisuus ei riitä: paikka on verrannollinen aikaan vain, kun alkupaikka on nolla. Tässä $s : t$ vaihtelee ($5{,}0$ ja $3{,}5$), vaikka $\\Delta s : t$ on vakio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: milloin matka on verrannollinen aikaan?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: milloin paikka on suoraan verrannollinen aikaan, ja milloin vain matka? Mitä osamäärä $\\Delta s : t$ kertoo liikkeestä?",
+      "model": "Kokeessa 1 alkupaikka oli nolla, ja paikan ja ajan osamäärä $s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$ eli nopeus: paikka oli suoraan verrannollinen aikaan. Kokeessa 2 alkupaikka oli $6{,}0\\,\\text{m}$. Paikan osamäärä muuttui, esimerkiksi $10 : 2{,}0 = 5{,}0\\,\\text{m/s}$ ja $14 : 4{,}0 = 3{,}5\\,\\text{m/s}$, mutta matkan osamäärä $\\Delta s : t$ oli joka rivillä $2{,}0\\,\\text{m/s}$. Kuljettu matka on siis aina suoraan verrannollinen aikaan, ja paikka vain silloin, kun alkupaikka on nolla. Osamäärä $\\Delta s : t$ on nopeus. Arvot ovat mallin laskemia arvoja: malli olettaa vakionopeuden eikä kitkaa.",
+      "criteria": [
+        "Sanoin, että paikka on verrannollinen aikaan vain, kun alkupaikka on nolla.",
+        "Käytin taulukon lukuja osamäärien $s : t$ ja $\\Delta s : t$ vertailuun.",
+        "Sanoin, että osamäärä $\\Delta s : t$ on nopeus.",
+        "Mainitsin, että arvot ovat mallin arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeisiin. Palaa sitten alun kysymykseen: mitä tietoja tarvitaan Voyager 2 -luotaimen etäisyyden laskemiseen tulevalle päivälle, ja mitä sen nopeudesta oletetaan?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija ratkaisee tehtävän: kärry on alussa kohdassa $s_0 = 5{,}0\\,\\text{m}$ ja liikkuu nopeudella $3{,}0\\,\\text{m/s}$. Missä se on hetkellä $t = 6{,}0\\,\\text{s}$? Hän laskee: ”Hetkellä $2{,}0\\,\\text{s}$ paikka on $5{,}0\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} = 11\\,\\text{m}$. Aika $6{,}0\\,\\text{s}$ on kolminkertainen, joten paikka on $3 \\cdot 11\\,\\text{m} = 33\\,\\text{m}$.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Paikka ei ole suoraan verrannollinen aikaan, koska alkupaikka ei ole nolla. Oikea tulos on $s = 5{,}0\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} = 23\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Oikein. Vain matka $\\Delta s = vt$ kolminkertaistuu ($6{,}0\\,\\text{m}$ on $18\\,\\text{m}$), ja alkupaikka lisätään kerran: $5{,}0 + 18 = 23\\,\\text{m}$. Virheen olisi voinut huomata järkeilemällä: kärry ei voi olla yli $30\\,\\text{m}$:n päässä, koska se kulkee $6{,}0\\,\\text{s}$:ssa vain $18\\,\\text{m}$."
+        },
+        {
+          "text": "Nopeus pitäisi muuntaa kilometreiksi tunnissa ennen sijoitusta.",
+          "feedback": "Muunnos ei ole tarpeen: nopeus on jo m/s ja aika sekunteina, joten yksiköt sopivat yhteen. Virhe on päättelyssä, jossa paikka kerrotaan kolmella."
+        },
+        {
+          "text": "Kolminkertainen aika kolminkertaistaa myös nopeuden, joten paikan pitäisi olla vielä suurempi.",
+          "feedback": "Nopeus ei muutu, koska liike on tasaista: se on $3{,}0\\,\\text{m/s}$ koko ajan. Aika kolminkertaistuu, ja siksi matka kolminkertaistuu, mutta alkupaikka ei."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska tasaisessa liikkeessä paikka ja aika ovat verrannollisia.",
+          "feedback": "Verrannollisia ovat matka ja aika, ei paikka, kun alkupaikka on eri kuin nolla. Tarkista sijoittamalla $t = 6{,}0\\,\\text{s}$ suoraan: $5{,}0 + 3{,}0 \\cdot 6{,}0 = 23\\,\\text{m}$, ei $33\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pyöräilijä on hetkellä $0\\,\\text{s}$ jo $120\\,\\text{m}$:n päässä lähtöviivasta ja ajaa siitä poispäin tasaisesti nopeudella $21{,}6\\,\\text{km/h}$. Kuinka kaukana lähtöviivasta hän on $45\\,\\text{s}$ myöhemmin? Vastaa metreinä.",
+      "answer": 390,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on alkupaikka, ja mikä on nopeus? Ovatko yksiköt yhteensopivia?",
+        "Käytä kaavaa $s = s_0 + vt$. Muunna nopeus ensin yksikköön m/s sijoittamalla $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$.",
+        "$v = 21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1092,
+          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin sijoittamalla: $21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$."
+        },
+        {
+          "value": 270,
+          "feedback": "Laskit vain kuljetun matkan $vt$. Pyöräilijä oli aikavälin alussa jo $120\\,\\text{m}$:n päässä lähtöviivasta, joten paikka on $s_0 + vt$."
+        }
+      ],
+      "solution": "**Annettu:** alkupaikka $s_0 = 120\\,\\text{m}$, nopeus $v = 21{,}6\\,\\text{km/h}$, aika $t = 45\\,\\text{s}$\n\n**Kysytty:** paikka $s$ lähtöviivasta metreinä\n\n**Periaate:** Pyöräilijän nopeus on vakio, joten liike on tasaista, ja paikka seuraa lineaarista mallia. Alkupaikka ei ole nolla, joten se on lisättävä kuljettuun matkaan.\n\n**Kaava:** $s = s_0 + vt$\n\n**Muunnokset:** Sijoitetaan $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$. Aika ja alkupaikka ovat jo SI-yksiköissä.\n\n**Sijoitus:** $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s} = 120\\,\\text{m} + 270\\,\\text{m} = 390\\,\\text{m}$\n\n**Vastaus:** $390\\,\\text{m}$, kaksi merkitsevää numeroa kuten ajassa $45\\,\\text{s}$.\n\n**Järkevyys:** Nopeus $6\\,\\text{m/s}$ on noin $22\\,\\text{km/h}$, ja $45\\,\\text{s}$ on kolme neljäsosaa minuutista, joten matkaa kertyy noin $6 \\cdot 45 \\approx 270\\,\\text{m}$. Alkupaikka $120\\,\\text{m}$ lisää tähän, ja paikka on suurempi kuin alkupaikka, kuten pitääkin, kun pyöräilijä etenee poispäin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävät käyttävät kaavaa suoraan, tason 2 tehtävissä muunnetaan yksiköitä tai käytetään alkupaikkaa, ja taso 3 vaatii päättelyä, esimerkiksi Voyager 2 -luotaimen etäisyyden laskemista."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kappale liikkuu tasaisesti, ja sen $(t, s)$-kuvaaja on suora, joka ei kulje origon kautta. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Paikka $s$ on suoraan verrannollinen aikaan $t$.",
+          "feedback": "Suoraan verrannollisen suureen kuvaaja kulkee origon kautta, koska suhde $s : t$ on vakio. Tässä suora alkaa kohdasta $s_0 \\neq 0$, joten suhde $s : t$ muuttuu ajan mukana."
+        },
+        {
+          "text": "Kuljettu matka $\\Delta s = s - s_0$ on suoraan verrannollinen aikaan $t$.",
+          "correct": true,
+          "feedback": "Oikein. Suora on joka kohdassa yhtä jyrkkä, joten $\\Delta s = vt$ ja suhde $\\Delta s : t = v$ on vakio. Paikasta $s$ vähennetään alkupaikka $s_0$, ja jäljelle jäävä matka on verrannollinen aikaan."
+        },
+        {
+          "text": "Kappale ei liiku tasaisesti, koska suora ei kulje origon kautta.",
+          "feedback": "Tasaisen liikkeen tunnus on suora, ei se, että suora kulkee origon kautta. Origosta poikkeava suora kuvaa tasaista liikettä, joka alkaa kohdasta $s_0$: $s = s_0 + vt$."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kuvaajan tulkinta",
+      "prompt": "Kappaleen $(t, s)$-kuvaaja on vaakasuora suora kohdassa $s = 4\\,\\text{m}$. Mitä kappale tekee?",
+      "choices": [
+        {
+          "text": "Kappale liikkuu tasaisella nopeudella $4\\,\\text{m/s}$.",
+          "feedback": "Tämä houkuttelee, koska vaakasuora suora $(t, v)$-kuvaajassa tarkoittaa tasaista nopeutta. Tässä pystyakselilla on kuitenkin paikka $s$, ei nopeus. Nopeus on $(t, s)$-kuvaajan kulmakerroin, ja vaakasuoran suoran kulmakerroin on nolla."
+        },
+        {
+          "text": "Kappale on paikallaan kohdassa $s = 4\\,\\text{m}$.",
+          "feedback": "Oikein. Paikka ei muutu ajan kuluessa, joten $\\Delta s = 0$ ja nopeus $v = \\Delta s : \\Delta t = 0$. Vaakasuoran suoran kulmakerroin on nolla.",
+          "correct": true
+        },
+        {
+          "text": "Kappale liikkuu tasaisesti, koska kuvaaja on suora.",
+          "feedback": "Tasaisen liikkeen $(t, s)$-kuvaaja on suora, mutta suoruus ei yksin kerro, liikkuuko kappale. Nopeus on suoran kulmakerroin $\\Delta s : \\Delta t$, ja vaakasuorassa suorassa $\\Delta s = 0$, joten nopeus on nolla."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Kuvaajan lukeminen",
+      "prompt": "Tasaista liikettä esittävän $(t, s)$-kuvaajan suora kulkee pisteiden $(1{,}0\\,\\text{s};\\ 7{,}0\\,\\text{m})$ ja $(5{,}0\\,\\text{s};\\ 19\\,\\text{m})$ kautta. Mikä on liikkeen alkupaikka $s_0$? Vastaa metreinä.",
+      "answer": 4.0,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Alkupaikka on paikka hetkellä $t = 0$ eli kohta, jossa suora leikkaa $s$-akselin. Mikä on suoran kulmakerroin?",
+        "Kulmakerroin on $v = \\dfrac{s_2 - s_1}{t_2 - t_1}$. Alkupaikka saadaan, kun palataan pisteestä $(t_1, s_1)$ ajassa taaksepäin alkuun: $s_0 = s_1 - v t_1$.",
+        "$v = \\dfrac{19\\,\\text{m} - 7{,}0\\,\\text{m}}{5{,}0\\,\\text{s} - 1{,}0\\,\\text{s}} = 3{,}0\\,\\text{m/s}$, ja $s_0 = 7{,}0\\,\\text{m} - 3{,}0\\,\\text{m/s} \\cdot 1{,}0\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 7,
+          "feedback": "Luit paikan hetkellä $t = 1{,}0\\,\\text{s}$. Alkupaikka on paikka hetkellä $t = 0$, joten suoraa on jatkettava taaksepäin yhden sekunnin verran, $3{,}0\\,\\text{m}$ alaspäin."
+        },
+        {
+          "value": 3,
+          "feedback": "Laskit suoran kulmakertoimen eli nopeuden $3{,}0\\,\\text{m/s}$. Alkupaikka on suoran ja $s$-akselin leikkauskohta, $s_0 = s_1 - v t_1$."
+        }
+      ],
+      "solution": "**Annettu:** pisteet $(t_1, s_1) = (1{,}0\\,\\text{s};\\ 7{,}0\\,\\text{m})$ ja $(t_2, s_2) = (5{,}0\\,\\text{s};\\ 19\\,\\text{m})$ samalla suoralla\n\n**Kysytty:** alkupaikka $s_0$ eli paikka hetkellä $t = 0$ metreinä\n\n**Periaate:** Liike on tasaista, joten $(t, s)$-kuvaajan suora noudattaa yhtälöä $s = s_0 + vt$. Suoran kulmakerroin on nopeus, ja suoran ja $s$-akselin leikkauskohta on alkupaikka.\n\n**Kuvaajan lukeminen:** Kaksi annettua pistettä riittää. Niiden välinen paikan muutos jaetaan aikavälillä, mikä antaa kulmakertoimen. Sen jälkeen ensimmäisestä pisteestä palataan hetkeen $t = 0$: yhdessä sekunnissa paikka pienenee $v \\cdot 1{,}0\\,\\text{s}$.\n\n**Kaava:** $v = \\dfrac{s_2 - s_1}{t_2 - t_1}$ ja $s_1 = s_0 + v t_1$, josta $s_0 = s_1 - v t_1$\n\n**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.\n\n**Sijoitus:** $v = \\dfrac{19\\,\\text{m} - 7{,}0\\,\\text{m}}{5{,}0\\,\\text{s} - 1{,}0\\,\\text{s}} = 3{,}0\\,\\text{m/s}$ ja $s_0 = 7{,}0\\,\\text{m} - 3{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 1{,}0\\,\\text{s} = 4{,}0\\,\\text{m}$\n\n**Vastaus:** $4{,}0\\,\\text{m}$, kaksi merkitsevää numeroa kuten paikoissa $7{,}0\\,\\text{m}$ ja $19\\,\\text{m}$.\n\n**Järkevyys:** Tarkistus toisella pisteellä: $s = 4{,}0\\,\\text{m} + 3{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 5{,}0\\,\\text{s} = 19\\,\\text{m}$, mikä on annettu arvo. Alkupaikka on pienempi kuin $7{,}0\\,\\text{m}$, kuten pitääkin, koska kappale etenee eteenpäin."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Selitä ja arvioi mallia",
+      "prompt": "Selitä, miksi Voyager 2 -luotaimen etäisyys Auringosta voidaan laskea lineaarisella mallilla, ja miksi laskettu arvo on mallin arvo eikä mittaus.",
+      "criteria": [
+        "Kirjoitin yhtälön $s = s_0 + vt$ ja nimesin sen suureet.",
+        "Sanoin, että malli olettaa nopeuden vakioksi.",
+        "Perustelin, miksi arvo on mallin arvo: nopeus ei ole täysin vakio, koska Auringon vetovoima hidastaa luotainta.",
+        "Vertasin mallia JPL:n arvoon."
+      ],
+      "model": "Luotaimen nopeus on lähes vakio, joten sen etäisyys Auringosta kasvaa yhtä paljon jokaista sekuntia kohti: $s = s_0 + vt$, missä $s_0 = 119{,}7\\,\\text{AU}$ heliopaussin ylityksen hetkellä 5. marraskuuta 2018 ja $v = 15{,}341\\,\\text{km/s}$. Tällä mallilla etäisyys on 5. marraskuuta 2026 noin $145{,}6\\,\\text{AU}$. Arvo on mallin arvo, koska nopeus ei ole täysin vakio: Auringon vetovoima hidastaa luotainta hieman. Malli antaa 15. helmikuuta 2026 arvon $143{,}3\\,\\text{AU}$, kun JPL ilmoittaa helmikuulle 2026 arvon $143{,}05\\,\\text{AU}$. Ero on noin $0{,}2\\,\\text{AU}$. Ero johtuu osin siitä, että Auringon vetovoima hidastaa luotainta hieman ja alkuetäisyys on annettu vain kymmenesosan tarkkuudella. Malli on tarkka murto-osan prosentista, joten se on hyvä muutaman vuoden tarkasteluun.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fy2-8",
+  "course": "FY2",
+  "title": "Energiantuotanto, ympäristö ja ilmastonmuutos",
+  "goals": [
+    "LOPS FY2: energiantuotannon vaikutus ympäristöön ja ilmastonmuutokseen",
+    "LOPS FY2: saa valmiuksia osallistua ympäristöä ja teknologiaa koskevaan keskusteluun ja päätöksentekoon kestävän energiatalouden näkökulmasta",
+    "Täsmennys: maankäyttö, kuljetukset ja hiilidioksidipäästöt eri tuotantotavoissa"
+  ],
+  "prerequisites": [
+    "fy2-6"
+  ],
+  "glossary": [
+    "kasvihuoneilmiö",
+    "hiilidioksidipäästö",
+    "päästökerroin",
+    "ilmastonmuutos",
+    "kestävä energiatalous"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,30 +1,32 @@
 """Mechanical checks for a lesson folder, encoding the rules in CLAUDE.md and NOTES.md.
 
-  python scripts/lint_lesson.py <id>            lint one lesson (folder found under content/)
-  python scripts/lint_lesson.py content/FY3/fy3-3
-  python scripts/lint_lesson.py --all           every lesson except content/_gold
+  python scripts/lint_lesson.py <id>            lint one lesson (folder found under content/fi/)
+  python scripts/lint_lesson.py content/fi/FY3/fy3-3
+  python scripts/lint_lesson.py --all           every lesson of content/fi/ (content/_gold is the reference, not a lesson)
 
 Prints one line per finding, `ERROR file:line message` or `WARN file:line message`, and exits 1 when
 there is at least one ERROR. Run it before any reviewer starts: everything it catches used to cost a review
 round. When a new rule lands in NOTES.md, add the check here. The gate runs this too (`lint` check).
 
 It also runs the lesson's `answers.py` when present (`python -I answers.py` prints a JSON object
-{exercise id: numeric answer}) and compares every value with exercises.json within its tolerance.
+{exercise id: numeric answer}) and compares every value with exercises/exercises.json within its tolerance, and
+checks that `lesson-answers.py` (the numbers of the lesson text and inquiry.json, when there are any) runs.
 """
 import json, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import courses
+import courses, i18n
+import check_solutions as solution_rules
+import physics_phrases
 from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
-LABELS = ["Annettu", "Kysytty", "Kaava", "Sijoitus", "Vastaus", "Järkevyys"]
 
 
 # The figure palette (NOTES.md §3): one meaning per colour in every lesson's figures.
 PALETTE = {"#1f2933", "#6b7480", "#c9c2b2", "#e3dccb", "#ffffff", "#eef5f9", "#2f74b5", "#a9d1f0", "#d9b26a", "#e9c98a", "#f1dfb5",
            "#a97a35", "#8a5f22", "#e8590c", "#ffc078", "#c92a2a", "#f2a69c", "#1971c2", "#d0e6fb", "#8a96a3", "#c4ccd4", "#6c757d",
-           "#b8622d", "#a5d8ff", "#4f8fbf", "#2b8a3e", "#b2f2bb"}
+           "#b8622d", "#a5d8ff", "#4f8fbf", "#2b8a3e", "#b2f2bb", "#f6f1e6"}
 
 
 class Lint:
@@ -32,6 +34,8 @@ class Lint:
         self.folder = folder; self.out = []; self.errors = 0; self.form_errors = 0
         try: self.state = review_status(folder)["state"]
         except Exception: self.state = "draft"
+        try: self.ex_state = review_status(folder, "exercises")["state"]   # the exercise set is reviewed apart (README "Exercises")
+        except Exception: self.ex_state = self.state
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
     def form(self, f, line, msg):
@@ -42,7 +46,8 @@ class Lint:
     def page(self, f, line, msg):
         """A lesson-page rule of 2026-10-26 (CLAUDE.md "Lesson page"). An error for a lesson being written or edited
         (its reviews are not current); a lesson reviewed before the rule reports it as a warning until it is next edited."""
-        if self.state == "draft": self.err(f, line, msg)
+        state = self.ex_state if f.startswith("exercises/") or f == "solutions.md" else self.state
+        if state == "draft": self.err(f, line, msg)
         else: self.warn(f, line, msg + " (page rule 2026-10-26: fix when the lesson is next edited)")
 
 
@@ -87,6 +92,19 @@ def math_fragments(text):
         yield line, (m.group(1) if m.group(1) is not None else m.group(2)), m.group(1) is not None or any(a <= m.start() < b for a, b in figs)
 
 
+PLAIN_QTY = re.compile(r"(?<![\w,])\d+(?:[ ,]\d+)*\s?(?:%|(?:[kMGT]?(?:W|J|Wh)|snt|€|kg|g|t|km|m|min|h|s|l|°C|K|ppm)\b)")
+
+
+def check_plain_quantities(L, name, text):
+    """A number with its unit is maths everywhere a student reads (teacher 2026-10-28, "kaikki LaTeXilla"; NOTES 1):
+    $80\\,\\text{W}$, $4{,}0\\,\\%$. Only aria-labels (inside SVG) stay plain."""
+    plain = strip_math_and_svg(text)
+    plain = re.sub(r'aria-label="[^"]*"', "", plain)
+    for i, line in enumerate(plain.splitlines(), 1):
+        m = PLAIN_QTY.search(line)
+        if m: L.page(name, i, f"number with its unit in plain text: \"{m.group(0)}\"; write it as maths (NOTES 1, teacher 2026-10-28)")
+
+
 def check_text_rules(L, name, text):
     """Rules that apply to every Finnish prose file (lesson.md, solutions.md, sim-spec.md)."""
     plain = strip_math_and_svg(text)
@@ -115,6 +133,8 @@ def check_math(L, name, text):
             L.err(name, line, "· inside \\text{} breaks KaTeX; write \\text{mol}\\cdot\\text{K} (NOTES 1): " + frag[:60])
         if re.search(r"\\(si|SI|unit)\b|\\newcommand", frag):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
+        if re.search(r"\\times\b|×|\\div\b|÷", frag):
+            L.page(name, line, "multiplication is \\cdot and a written division a colon : (teacher 2026-10-28, NOTES 1): " + frag[:60])
         if re.search(r"(?<!\\)\*", frag):
             L.warn(name, line, "use \\cdot for multiplication, not * (NOTES 1.5)")
         if not display and "\\dfrac" in frag and name != "solutions.md":   # a solution line is a calculation of its own, a full-size fraction reads best there
@@ -170,11 +190,16 @@ def check_lesson_form(L, text):
         words = len(m.group(1).split())
         if words > 130:
             L.warn("lesson.md", text.count("\n", 0, m.start(1)) + 1, f"paragraph of {words} words; keep paragraphs under about 120 words and add a figure or a list (human rule 1)")
+    for m in re.finditer(r"^## (Ydinajatus|Yleinen virhekäsitys)[^\n]*\n(.*?)(?=^## |\Z)", text, flags=re.S | re.M):
+        prose = re.sub(r"<svg\b.*?</svg>|\$\$.*?\$\$|```.*?```", "", m.group(2), flags=re.S)
+        words, paras = len(prose.split()), len([p for p in re.split(r"\n\s*\n", prose) if p.strip() and not p.lstrip().startswith(("<", "|", "#"))])
+        if words > 320 and "\n### " not in m.group(2):
+            L.warn("lesson.md", text.count("\n", 0, m.start()) + 1, f"## {m.group(1)}: {words} words in {paras} paragraphs without a ### subheading; give each main idea a short subheading that names it (NOTES 8, teacher 2026-10-27)")
     body, line = section(text, "Esimerkki")
     if body:
         stages = body.count("<!-- vaihe -->")
-        if not 3 <= stages <= 6:
-            L.form("lesson.md", line, f"worked example has {stages} stages; write 3–6 stages separated by `<!-- vaihe -->` lines (human rule 4)")
+        if not 3 <= stages <= 7:
+            L.form("lesson.md", line, f"worked example has {stages} stages; write the 7 stages of check_solutions.py separated by `<!-- vaihe -->` lines (human rule 4)")
         start = text.find(body)
         for m in re.finditer(r"```latex\n(.*?)```|\$\$(.*?)\$\$", body, flags=re.S):
             frag = m.group(1) or m.group(2)
@@ -195,6 +220,10 @@ def check_lesson_md(L, folder):
     if "$$" not in text and "```latex" not in text:
         L.warn("lesson.md", 1, "no display formula; every formula appears once in display LaTeX (CLAUDE.md)")
     check_text_rules(L, "lesson.md", text)
+    check_plain_quantities(L, "lesson.md", text)
+    for jf in ("inquiry.json", "exit-ticket.json", "exercises/exercises.json"):
+        f = courses.lesson_file(folder, jf) if "/" not in jf else folder / jf
+        if f.exists(): check_plain_quantities(L, jf, f.read_text())
     check_math(L, "lesson.md", text)
     check_lesson_form(L, text)
     check_figures(L, text)
@@ -218,7 +247,7 @@ def numbers_with_units(text):
 
 
 def check_exercises(L, folder):
-    f = folder / "exercises.json"
+    f = courses.lesson_file(folder, "exercises.json")
     if not f.exists(): L.err("exercises.json", 1, "missing"); return {}
     try: ex = json.loads(f.read_text())
     except json.JSONDecodeError as e: L.err("exercises.json", e.lineno, f"invalid JSON: {e.msg}"); return {}
@@ -268,10 +297,11 @@ def latex_plain(s):
 
 
 def check_solutions(L, folder, answers):
-    f = folder / "solutions.md"
+    f = courses.lesson_file(folder, "solutions.md")
     if not f.exists(): L.err("solutions.md", 1, "missing"); return
     text = f.read_text()
     check_text_rules(L, "solutions.md", text)
+    check_plain_quantities(L, "solutions.md", text)
     check_math(L, "solutions.md", text)
     blocks = re.split(r"^## ", text, flags=re.M)[1:]
     seen = {}
@@ -281,10 +311,8 @@ def check_solutions(L, folder, answers):
         start = text.find(f"## {eid}")
         line = text.count("\n", 0, start) + 1
         seen[eid] = body
-        for lab in LABELS:
-            if f"**{lab}" not in body: L.warn("solutions.md", line, f"{eid}: no '**{lab}:**' step")
         for lab in ("Kaava", "Sijoitus"):
-            k = re.search(rf"\*\*{lab}:?\*\*:?([^\n]*)", body)
+            k = re.search(rf"\*\*{lab}:?\*\*:?(.*?)(?=\n\*\*|\Z)", body, re.S)   # the step runs to the next label: a display $$ block on the next line counts
             if k and "$" not in k.group(1):
                 L.page("solutions.md", line, f"{eid}: the {lab} step is plain text; write the calculation in LaTeX, $p = \\dfrac{{F}}{{A}}$ (teacher's rule 2026-10-26, NOTES 1)")
         body = tex_plain(body)
@@ -294,7 +322,7 @@ def check_solutions(L, folder, answers):
         elif k and re.search(r"=[^=]*\d[,.]?\d*\s?(?:" + UNITS[3:-1] + r")\b", k.group(1).split(",")[-1]) and "Sijoitus" in body:
             L.warn("solutions.md", line, f"{eid}: numbers with units in the Kaava step; keep Kaava symbolic and put the numbers in Sijoitus (human rule 2)")
         words = len(body.split())
-        if words > 130: L.warn("solutions.md", line, f"{eid}: {words} words, solutions stay under 120 words")
+        if words > 260: L.warn("solutions.md", line, f"{eid}: {words} words; a complete solution is about 100–220 words, put long reasoning in Periaate and Järkevyys, not in Sijoitus")
         m = re.search(r"\*\*Vastaus:?\*\*:?\s*([−-]?\d[\d\s]*(?:,\d+)?)", latex_plain(body))
         if m and eid in answers:
             ans, tol = answers[eid]
@@ -302,8 +330,6 @@ def check_solutions(L, folder, answers):
             except ValueError: continue
             if abs(got - ans) > max(tol, 0.005) * max(1, abs(ans)):
                 L.err("solutions.md", line, f"{eid}: Vastaus {m.group(1).strip()} does not match exercises.json answer {ans:g}")
-    for eid in answers:
-        if eid not in seen: L.err("solutions.md", 1, f"no solution for {eid}")
 
 
 def tex_plain(text):
@@ -323,9 +349,9 @@ CHAPTER_REF = re.compile(r"\b[Ff][Yy]\d-\d+\b(?![-\w])|\b[Oo]ppitunni(?:lla|n|st
 def check_chapter_refs(L, name, text):
     """A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): 'luvussa Paine ja hydrostaattinen
     paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
-    and solution headings are not shown as text and are skipped."""
+    and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth")."""
     for i, ln in enumerate(text.splitlines(), 1):
-        if re.match(r"\s*(\"id\"|## fy)", ln): continue
+        if re.match(r"\s*(\"id\"|\"figure\"|## fy)", ln): continue
         for m in CHAPTER_REF.finditer(ln):
             L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 
@@ -335,7 +361,7 @@ def check_exit_ticket(L, folder):
     if not f.exists(): L.err("exit-ticket.json", 1, "missing"); return
     try: q = json.loads(f.read_text())
     except json.JSONDecodeError as e: L.err("exit-ticket.json", e.lineno, f"invalid JSON: {e.msg}"); return
-    if len(q) != 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 3")
+    if not 1 <= len(q) <= 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 1–3 that the checks and exercises do not already ask (NOTES §11)")
     for i, item in enumerate(q, 1):
         if not item.get("q") or not item.get("a"): L.err("exit-ticket.json", 1, f"question {i} needs q and a")
         if re.search(r"\d\.\d", re.sub(r"\$[^$]*\$", "", item.get("q", "") + item.get("a", ""))): L.err("exit-ticket.json", 1, f"question {i}: decimal point; use a comma")
@@ -350,8 +376,7 @@ def check_meta(L, folder):
     if meta.get("id") != lid: L.err("meta.json", 1, f"id {meta.get('id')!r} does not match folder {lid!r}")
     code = courses.course_of(lid)
     if meta.get("course") != folder.parent.name or folder.parent.name != code:
-        L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{folder.parent.name}/ and id prefix ({code}) must agree")
-    if meta.get("solutions", "first") not in ("first", "all", "none"): L.err("meta.json", 1, "solutions must be first, all or none")
+        L.err("meta.json", 1, f"course {meta.get('course')!r}, folder content/{courses.lang_of(folder)}/{folder.parent.name}/ and id prefix ({code}) must agree")
     glossary = {e["term"] for e in json.loads((ROOT / "glossary.json").read_text())}
     for term in meta.get("glossary", []):
         if term not in glossary: L.err("meta.json", 1, f"glossary term {term!r} missing from glossary.json (add it, do not invent synonyms)")
@@ -371,20 +396,20 @@ def check_sim(L, folder, meta):
         L.err("sim.js", 1, f"a {c['code']} simulation lives in its own folder, {(c['paths']['sims'] / folder.name).relative_to(ROOT)}/ (sim.js, sim.css, images), not in the lesson folder")
     sim = where / "sim.js"
     if not sim.exists(): L.err("sim.js", 1, f"meta.sim is {meta.get('sim')!r} but {sim.relative_to(ROOT)} is missing"); return
-    js = sim.read_text()
+    js = i18n.resolved_sim(sim)                         # its labels and readouts from lang/fi.json in place
     if "window.simState" not in js: L.err("sim.js", 1, "sim must expose window.simState every frame (tester asserts on it)")
     if not re.search(r"createCanvas\(\s*600\s*,\s*400", js): L.warn("sim.js", 1, "canvas is not 600×400 (the embed scales that size)")
     if ".class('readout')" not in js and 'class("readout")' not in js and "readout" not in js:
         L.warn("sim.js", 1, "no DOM readout (.readout); numbers in the canvas are hard to read on a phone (NOTES 2)")
     if re.search(r"\bfetch\(|XMLHttpRequest|https?://", js): L.err("sim.js", 1, "no network requests from a simulation")
-    if not (folder / "sim-spec.md").exists(): L.err("sim-spec.md", 1, "a lesson with sim.js needs sim-spec.md")
+    if not courses.lesson_file(folder, "sim-spec.md").exists(): L.err("sim-spec.md", 1, "a lesson with sim.js needs sim-spec.md")
     t = ROOT / "tests" / "sims" / f"{folder.name}.json"
     if not t.exists(): L.err("tests/sims", 1, f"no tests/sims/{folder.name}.json; the developer writes it with the simulation")
     else:
         try: n = len(json.loads(t.read_text()))
         except json.JSONDecodeError as e: L.err(f"tests/sims/{folder.name}.json", e.lineno, "invalid JSON"); return
         if n < 3: L.err(f"tests/sims/{folder.name}.json", 1, f"only {n} assertions, at least 3 covering the spec")
-    check_text_rules(L, "sim-spec.md", (folder / "sim-spec.md").read_text()) if (folder / "sim-spec.md").exists() else None
+    check_text_rules(L, "sim-spec.md", courses.lesson_file(folder, "sim-spec.md").read_text()) if courses.lesson_file(folder, "sim-spec.md").exists() else None
     sim_rule = L.page if sim_edited(folder) else L.warn   # an old sim's notes are folded by sim-embed.js until the sim itself is edited
     for m in re.finditer(r"\bp\.text\(\s*(['\"`])((?:(?!\1)[^\\]|\\.)*)\1", js):   # a literal canvas label: LaTeX (teacher 2026-10-26)
         if "$" not in m.group(2) and m.group(2).strip():
@@ -410,11 +435,11 @@ def sim_edited(folder):
 
 
 def check_answers_py(L, folder, answers):
-    f = folder / "answers.py"
+    f = courses.lesson_file(folder, "answers.py")
     if not f.exists():
         L.warn("answers.py", 1, "no answers.py; the exercise author saves the Python that computed the answers so the gate can re-run it")
         return
-    r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=folder, timeout=60)
+    r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=f.parent, timeout=60)
     if r.returncode != 0: L.err("answers.py", 1, "failed: " + (r.stderr.strip().splitlines() or ["?"])[-1]); return
     try: got = json.loads(r.stdout.strip().splitlines()[-1])
     except (json.JSONDecodeError, IndexError): L.err("answers.py", 1, "must print a JSON object {exercise id: number} as its last line"); return
@@ -424,6 +449,14 @@ def check_answers_py(L, folder, answers):
         if not isinstance(v, (int, float)): L.err("answers.py", 1, f"{eid}: value {v!r} is not a number"); continue
         if abs(v - ans) > tol * max(1e-9, abs(ans)):
             L.err("answers.py", 1, f"{eid}: computes {v:g} but exercises.json says {ans:g} (tolerance {tol:g})")
+    f = courses.lesson_file(folder, "lesson-answers.py")   # the lesson's and the inquiry's own numbers, when it has any
+    if f.exists():
+        r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=f.parent, timeout=60)
+        try: ok = r.returncode == 0 and isinstance(json.loads(r.stdout.strip().splitlines()[-1]), dict)
+        except (json.JSONDecodeError, IndexError): ok = False
+        if not ok: L.err("lesson-answers.py", 1, "must run and print a JSON object {id: number} as its last line: " + ((r.stderr.strip().splitlines() or ["?"])[-1]))
+        elif set(json.loads(r.stdout.strip().splitlines()[-1])) & set(answers):
+            L.err("lesson-answers.py", 1, "an exercise id: the exercises' answers belong in answers.py, the exercise set's own file (README \"Exercises\")")
 
 
 def check_pictures(L, folder):
@@ -442,13 +475,28 @@ def lint(folder):
     check_lesson_md(L, folder)
     answers = check_exercises(L, folder)
     check_solutions(L, folder, answers)
+    for name, line, msg in solution_rules.problems(folder): L.err(name, line, msg + " (complete solutions, teacher 2026-10-27, scripts/check_solutions.py)")
     check_exit_ticket(L, folder)
     check_sim(L, folder, meta)
     check_answers_py(L, folder, answers)
     check_inquiry(L, folder)
     for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
-        if (folder / f).exists(): check_chapter_refs(L, f, (folder / f).read_text())
+        if courses.lesson_file(folder, f).exists(): check_chapter_refs(L, f, courses.lesson_file(folder, f).read_text())
+    check_figure_refs(L, folder)
+    for f, line, rid, msg, s in physics_phrases.problems(folder):   # review warnings, docs/physics-guardrails.md
+        L.warn(f, line, f"physics [{rid}]: {msg} (docs/physics-guardrails.md): «{s[:90]}»")
     return L
+
+
+def check_figure_refs(L, folder):
+    """"figure": "<id>" in a task names a figure that some figures.py draws (scripts/figcat.py, NOTES §11)."""
+    import figcat
+    for f in ("inquiry.json", "exercises.json", "exit-ticket.json"):
+        p = courses.lesson_file(folder, f)
+        if not p.exists(): continue
+        text = p.read_text()
+        for fid, msg in figcat.check_refs(text):
+            L.err(f, text.count("\n", 0, max(text.find(f'"{fid}"'), 0)) + 1, msg)
 
 
 def check_inquiry(L, folder):

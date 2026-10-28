@@ -1,0 +1,1539 @@
+[
+ {
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); const S=window.simState; return s[0].value==='1' && s[1].value==='1' && Number(document.querySelector('#sim-root input[type=range]').value)===1 && S.L===1 && S.nakyvat.split(',').includes('human') && S.nVis>=2 && S.nVis<=5 && S.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: L = 1 (view 10 m wide), direction ulos, speed normaali, the human in view together with other objects, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const r=document.querySelectorAll('#sim-root input[type=range]'); return r.length===1 && r[0].min==='-34' && r[0].max==='27.5' && r[0].step==='0.1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: the exponent L of the view width, -34 to 27,5 in steps of 0,1"
+ },
+ {
+  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===3 && o(0)==='1:loitonna|-1:lähennä' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: direction (loitonna / lähennä), speed hidas 0.5, normaali 1, nopea 2, and Siirry kohteeseen"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===4 && b[0]==='Käynnistä' && b[1]==='Alusta' && b[2].startsWith('Lähennä') && b[3].startsWith('Loitonna') && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four buttons: Käynnistä first, Alusta, Lähennä 10-kertaisesti, Loitonna 10-kertaisesti; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')]; return l.length===4 && /^Näkymän leveys \\$10\\^\\{1\\}\\\\,\\\\text\\{m\\}\\$$/.test(simText(l[0])) && l[1].textContent.startsWith('Suunta') && l[2].textContent.startsWith('Nopeus') && l[3].textContent.startsWith('Siirry kohteeseen') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four labelled controls: Näkymän leveys 10^L m, Suunta, Nopeus, Siirry kohteeseen"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='L,kohdeNimi' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares L and kohdeNimi (the Siirry kohteeseen select)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);",
+  "expr": "window.simState.nakyvat.split(',').includes('planck') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Planckin pituus: in view at L = -34"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}6\\\\cdot10^{-35}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Planckin pituus: its size label is 1{,}6\\cdot10^{-35}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Planckin pituus}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Planckin pituus: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-14.2);",
+  "expr": "window.simState.nakyvat.split(',').includes('proton') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "protoni: in view at L = -14.2"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}7\\\\cdot10^{-15}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "protoni: its size label is 1{,}7\\cdot10^{-15}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{protoni}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "protoni: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.nakyvat.split(',').includes('atom') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vetyatomi: in view at L = -9.4"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}1\\\\cdot10^{-10}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vetyatomi: its size label is 1{,}1\\cdot10^{-10}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{vetyatomi}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vetyatomi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-8.1);",
+  "expr": "window.simState.nakyvat.split(',').includes('dna') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "DNA-kierre: in view at L = -8.1"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}0\\\\cdot10^{-9}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "DNA-kierre: its size label is 2{,}0\\cdot10^{-9}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{DNA-kierre}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "DNA-kierre: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-6.4);",
+  "expr": "window.simState.nakyvat.split(',').includes('virus') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koronavirus: in view at L = -6.4"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}0\\\\cdot10^{-7}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koronavirus: its size label is 1{,}0\\cdot10^{-7}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{koronavirus}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koronavirus: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-4.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('rbc') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "punasolu: in view at L = -4.5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$7{,}5\\\\cdot10^{-6}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "punasolu: its size label is 7{,}5\\cdot10^{-6}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{punasolu}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "punasolu: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('hair') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "hius: in view at L = -3.6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$7{,}0\\\\cdot10^{-5}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "hius: its size label is 7{,}0\\cdot10^{-5}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{hius}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "hius: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-1.7);",
+  "expr": "window.simState.nakyvat.split(',').includes('ant') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "muurahainen: in view at L = -1.7"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$5{,}0\\\\cdot10^{-3}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "muurahainen: its size label is 5{,}0\\cdot10^{-3}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{muurahainen}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "muurahainen: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('human') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "ihminen: in view at L = 0.8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}7\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "ihminen: its size label is 1{,}7\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{ihminen}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "ihminen: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(3.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('building') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Burj Khalifa: in view at L = 3.5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$8{,}3\\\\cdot10^{2}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Burj Khalifa: its size label is 8{,}3\\cdot10^{2}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Burj Khalifa}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Burj Khalifa: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(4.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('everest') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Mount Everest: in view at L = 4.5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$8{,}8\\\\cdot10^{3}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Mount Everest: its size label is 8{,}8\\cdot10^{3}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Mount Everest}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Mount Everest: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(7.7);",
+  "expr": "window.simState.nakyvat.split(',').includes('earth') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maa: in view at L = 7.7"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}27\\\\cdot10^{7}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maa: its size label is 1{,}27\\cdot10^{7}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Maa}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maa: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9.7);",
+  "expr": "window.simState.nakyvat.split(',').includes('sun') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Aurinko: in view at L = 9.7"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}39\\\\cdot10^{9}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Aurinko: its size label is 1{,}39\\cdot10^{9}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Aurinko}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Aurinko: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(12.1);",
+  "expr": "window.simState.nakyvat.split(',').includes('au') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maan radan säde (1 AU): in view at L = 12.1"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}5\\\\cdot10^{11}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maan radan säde (1 AU): its size label is 1{,}5\\cdot10^{11}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Maan radan säde (1 AU)}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Maan radan säde (1 AU): its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(13.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('neptune') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Neptunuksen rata: in view at L = 13.6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$4{,}5\\\\cdot10^{12}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Neptunuksen rata: its size label is 4{,}5\\cdot10^{12}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Neptunuksen radan säde}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Neptunuksen rata: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(16.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('ly') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "1 valovuosi: in view at L = 16.6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$9{,}46\\\\cdot10^{15}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "1 valovuosi: its size label is 9{,}46\\cdot10^{15}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{1 valovuosi}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "1 valovuosi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(17.2);",
+  "expr": "window.simState.nakyvat.split(',').includes('proxima') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Proxima Centauri: in view at L = 17.2"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$4{,}0\\\\cdot10^{16}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Proxima Centauri: its size label is 4{,}0\\cdot10^{16}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Proxima Centauri}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Proxima Centauri: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('milky') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Linnunrata: in view at L = 21.6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$9{,}5\\\\cdot10^{20}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Linnunrata: its size label is 9{,}5\\cdot10^{20}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Linnunrata}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Linnunrata: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('universe') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "havaittava maailmankaikkeus: in view at L = 27.5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$8{,}8\\\\cdot10^{26}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "havaittava maailmankaikkeus: its size label is 8{,}8\\cdot10^{26}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{havaittava maailmankaikkeus}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "havaittava maailmankaikkeus: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.7);",
+  "expr": "window.simState.nakyvat==='rbc,hair' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -3,7: red blood cell and hair in view together"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(4.4);",
+  "expr": "window.simState.nakyvat==='whale,building,everest,nstar' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 4,4: the blue whale, Burj Khalifa, Mount Everest and a neutron star side by side"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(17.1);",
+  "expr": "window.simState.nakyvat==='ly,oort,proxima,orion' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 17,1: the light-year, the Oort cloud, Proxima Centauri and the Orion nebula together"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-20);",
+  "expr": "window.simState.nVis",
+  "expected": 0,
+  "tol": 0,
+  "note": "L = -20: no object in view (a gap between the quark and the Planck length)"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-20);",
+  "expr": "simText('#sim-root .readout').includes('Ei kohteita') && window.simState.kohdeId==='quark' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -20: nothing in view (between the quark and the proton); the nearest-sized object is the quark"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.kohdeExp",
+  "expected": -10,
+  "tol": 0,
+  "note": "L = -9: nearest-sized object atom, order of magnitude n = -10"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeId==='atom' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -9,4: nearest-sized object is atom"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);",
+  "expr": "window.simState.kohdeExp",
+  "expected": 0,
+  "tol": 0,
+  "note": "L = 1: nearest-sized object human, order of magnitude n = 0"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);",
+  "expr": "window.simState.kohdeId==='human' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 1: nearest-sized object is human"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);",
+  "expr": "window.simState.kohdeExp",
+  "expected": -35,
+  "tol": 0,
+  "note": "L = -34: nearest-sized object planck, order of magnitude n = -35"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);",
+  "expr": "window.simState.kohdeId==='planck' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -34: nearest-sized object is planck"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27);",
+  "expr": "window.simState.kohdeExp",
+  "expected": 27,
+  "tol": 0,
+  "note": "L = 27: nearest-sized object universe, order of magnitude n = 27"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27);",
+  "expr": "window.simState.kohdeId==='universe' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 27: nearest-sized object is universe"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-4.5);",
+  "expr": "window.simState.kohdeExp",
+  "expected": -5,
+  "tol": 0,
+  "note": "L = -4.5: nearest-sized object rbc, order of magnitude n = -5"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-4.5);",
+  "expr": "window.simState.kohdeId==='rbc' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -4.5: nearest-sized object is rbc"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9.5);",
+  "expr": "window.simState.kohdeExp",
+  "expected": 9,
+  "tol": 0,
+  "note": "L = 9.5: nearest-sized object sun, order of magnitude n = 9"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9.5);",
+  "expr": "window.simState.kohdeId==='sun' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 9.5: nearest-sized object is sun"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeLog",
+  "expected": -9.96,
+  "tol": 0.001,
+  "note": "L = -9,4: log10 of the atom's size, 1,1e-10"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.L",
+  "expected": -9,
+  "tol": 1e-06,
+  "note": "slider -9 sets L = -9"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.logW",
+  "expected": -9,
+  "tol": 1e-06,
+  "note": "logW equals L"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$W = 10^{-9{,}4}\\\\,\\\\text{m}$') && x.includes('vetyatomi') && x.includes('$1{,}1\\\\cdot10^{-10}\\\\,\\\\text{m}$') && x.includes('Näkyvissä $4$ kohdetta') && x.includes('gammasäteily') && x.includes('vesimolekyyli') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout at L = -9,4: view width, nearest object, its size, and the four objects in view"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.4);",
+  "expr": "(() => { const x=simText(document.querySelectorAll('#sim-root label')[0]); return x.includes('$10^{-3{,}4}\\\\,\\\\text{m}$') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "slider label at L = -3,4 writes the exponent with a decimal comma"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.palkkiK",
+  "expected": -9,
+  "tol": 0,
+  "note": "scale bar at L = -9 is 10^-9 m"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.palkkiPx",
+  "expected": 560,
+  "tol": 1e-06,
+  "note": "scale bar at L = -9 is the whole 560 px view"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-8.5);",
+  "expr": "window.simState.palkkiK",
+  "expected": -9,
+  "tol": 0,
+  "note": "scale bar at L = -8,5 is still 10^-9 m"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-8.5);",
+  "expr": "window.simState.palkkiPx",
+  "expected": 177.08754896942924,
+  "tol": 0.001,
+  "note": "scale bar at L = -8,5: 560 · 10^-0,5 = 177,1 px"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9);",
+  "expr": "window.simState.labels.some(l => l.s === '$10^{-9}\\\\,\\\\text{m}$') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "scale bar label 10^-9 m"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0.7);",
+  "expr": "window.simState.labels.some(l => l.s === '$1\\\\,\\\\text{m}$') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "scale bar label 1 m at L = 0,7"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0.7);",
+  "expr": "window.simState.palkkiPx",
+  "expected": 111.73468963825727,
+  "tol": 0.001,
+  "note": "scale bar at L = 0,7: 560 · 10^-0,7 = 111,7 px"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);B('Lähennä').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "Lähennä 10-kertaisesti from L = 1 goes to L = 0"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.4);B('Lähennä').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": -4,
+  "tol": 1e-06,
+  "note": "Lähennä 10-kertaisesti from L = -3,4 goes to the next whole power, -4"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-3.4);B('Loitonna').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": -3,
+  "tol": 1e-06,
+  "note": "Loitonna 10-kertaisesti from L = -3,4 goes to -3"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);B('Loitonna').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "Loitonna 10-kertaisesti from L = 1 goes to L = 2"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27.5);B('Loitonna').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": 27.5,
+  "tol": 1e-06,
+  "note": "Loitonna 10-kertaisesti stops at the end, L = 27,5"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);B('Lähennä').click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": -34,
+  "tol": 1e-06,
+  "note": "Lähennä 10-kertaisesti stops at the end, L = -34"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0);B('Lähennä').click();",
+  "expr": "new Promise(res => setTimeout(() => res(Number(document.querySelector('#sim-root input[type=range]').value)), 1000))",
+  "expected": -1,
+  "tol": 1e-06,
+  "note": "the slider follows the buttons"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);const cv=document.querySelector('#sim-root canvas'); cv.focus(); cv.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowUp',bubbles:true}));",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "ArrowUp on the focused canvas zooms in one power of ten"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);const cv=document.querySelector('#sim-root canvas'); cv.focus(); cv.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowDown',bubbles:true}));",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1000))",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "ArrowDown zooms out one power of ten"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);const cv=document.querySelector('#sim-root canvas'); cv.focus(); cv.dispatchEvent(new WheelEvent('wheel',{deltaY:100,bubbles:true,cancelable:true}));",
+  "expr": "window.simState.L",
+  "expected": 1.25,
+  "tol": 1e-06,
+  "note": "wheel on the focused canvas: one notch down zooms out 0,25"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);const cv=document.querySelector('#sim-root canvas'); cv.blur(); cv.dispatchEvent(new WheelEvent('wheel',{deltaY:100,bubbles:true,cancelable:true}));",
+  "expr": "window.simState.L",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "wheel without the focus does nothing (the page keeps scrolling)"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(2);const cv=document.querySelector('#sim-root canvas'); const R=cv.getBoundingClientRect(); const P=(t,x,y)=>cv.dispatchEvent(new PointerEvent(t,{clientX:R.left+x/600*R.width,clientY:R.top+y/400*R.height,bubbles:true,pointerId:1}));P('pointerdown',300,100); P('pointermove',360,100); P('pointerup',360,100);",
+  "expr": "window.simState.L",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "dragging the picture 60 canvas px to the right zooms in one power of ten"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(2);const cv=document.querySelector('#sim-root canvas'); const R=cv.getBoundingClientRect(); const P=(t,x,y)=>cv.dispatchEvent(new PointerEvent(t,{clientX:R.left+x/600*R.width,clientY:R.top+y/400*R.height,bubbles:true,pointerId:1}));P('pointerdown',300,100); P('pointermove',240,100); P('pointerup',240,100);",
+  "expr": "window.simState.L",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "dragging 60 px to the left zooms out one power of ten"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(10);const cv=document.querySelector('#sim-root canvas'); const R=cv.getBoundingClientRect(); const P=(t,x,y)=>cv.dispatchEvent(new PointerEvent(t,{clientX:R.left+x/600*R.width,clientY:R.top+y/400*R.height,bubbles:true,pointerId:1}));P('pointerdown',334.5,392); P('pointerup',334.5,392);",
+  "expr": "window.simState.L",
+  "expected": 0,
+  "tol": 0.05,
+  "note": "clicking the map at 10^0 sets L = 0"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0);const cv=document.querySelector('#sim-root canvas'); const R=cv.getBoundingClientRect(); const P=(t,x,y)=>cv.dispatchEvent(new PointerEvent(t,{clientX:R.left+x/600*R.width,clientY:R.top+y/400*R.height,bubbles:true,pointerId:1}));P('pointerdown',507.0,392); P('pointerup',0,0);",
+  "expr": "window.simState.L",
+  "expected": 20,
+  "tol": 0.05,
+  "note": "clicking the map at 10^20 sets L = 20"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-20);C(0,'-1'); C(1,'2'); B('Alusta').click();",
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); return window.simState.L===1 && s[0].value==='1' && s[1].value==='1' && !window.simState.running ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alusta returns to L = 1, direction ulos, speed normaali"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);C(0,'1'); C(1,'1'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1100))",
+  "expected": 2.1,
+  "tol": 0.35,
+  "note": "auto zoom ulos at normaali (1 power of ten per second): after 1,1 s about 1,1 powers of ten have passed"
+ },
+ {
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "still running"
+ },
+ {
+  "expr": "[...document.querySelectorAll('#sim-root button')][0].textContent==='Tauko' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button reads Tauko while it plays"
+ },
+ {
+  "expr": "new Promise(res => { [...document.querySelectorAll('#sim-root button')][0].click(); const L0 = window.simState.L; setTimeout(() => res(window.simState.running ? -1 : (Math.abs(window.simState.L - L0) < 0.35 ? 1 : 0)), 500); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "pressing Tauko stops the zoom; the exponent stays"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);C(0,'1'); C(1,'2'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 2100))",
+  "expected": 5.2,
+  "tol": 0.7,
+  "note": "nopea (x2) at 2 powers per second: after 2,1 s L is near 5,2"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);C(0,'1'); C(1,'0.5'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 2100))",
+  "expected": 2.05,
+  "tol": 0.4,
+  "note": "hidas (x0,5): after 2,1 s L is near 2"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);C(0,'-1'); C(1,'1'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 1100))",
+  "expected": -0.1,
+  "tol": 0.35,
+  "note": "auto zoom lähennä at normaali: after 1,1 s L has fallen by about 1,1"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(26);C(0,'1'); C(1,'2'); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.running ? 1 : window.simState.L), 1500))",
+  "expected": 27.5,
+  "tol": 1e-06,
+  "note": "nopea from L = 26 reaches the end, L = 27,5, and stops"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root input[type=range]'); return Number(r.value); })()",
+  "expected": 27.5,
+  "tol": 0,
+  "note": "the slider follows the zoom to the end"
+ },
+ {
+  "setup": "const sel=document.querySelectorAll('#sim-root select'); sel[1].value='2'; sel[1].dispatchEvent(new Event('change',{bubbles:true})); document.querySelectorAll('#sim-root button')[0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 400))",
+  "expected": -33.2,
+  "tol": 0.5,
+  "note": "pressing Käynnistä at the end plays again from the other end (L = -34 plus 0,8 after 0,4 s at nopea)"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);C(0,'1'); C(1,'1'); document.querySelectorAll('#sim-root button')[0].click();S(3);",
+  "expr": "window.simState.L",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "dragging the slider during the zoom stops it and sets L"
+ },
+ {
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "the zoom stopped by dragging"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);",
+  "expr": "(() => { const L=window.simState.labels; return Array.isArray(L) && L.length>=6 && L.every(a=>typeof a.s==='string' && a.x1>a.x0) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas texts are reported as label boxes"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-17.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('quark') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "kvarkki: in view at L = -17,5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"${<}10^{-18}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "kvarkki: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{kvarkki}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "kvarkki: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-14.7);",
+  "expr": "window.simState.nakyvat.split(',').includes('henuc') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumydin: in view at L = -14,7"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$3{,}4\\\\cdot10^{-15}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumydin: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{heliumydin}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumydin: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-13.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('pbnuc') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "lyijyydin: in view at L = -13,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}4\\\\cdot10^{-14}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "lyijyydin: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{lyijyydin}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "lyijyydin: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-11.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('gamma') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "gammasäteily: in view at L = -11,5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}0\\\\cdot10^{-12}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "gammasäteily: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{gammasäteilyn aallonpituus}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "gammasäteily: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-10.3);",
+  "expr": "window.simState.nakyvat.split(',').includes('heatom') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumatomi: in view at L = -10,3"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$6{,}2\\\\cdot10^{-11}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumatomi: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{heliumatomi}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliumatomi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-1.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('coin') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "euron kolikko: in view at L = -1,5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}3\\\\cdot10^{-2}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "euron kolikko: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{euron kolikko}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "euron kolikko: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-0.3);",
+  "expr": "window.simState.nakyvat.split(',').includes('ball') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "jalkapallo: in view at L = -0,3"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}2\\\\cdot10^{-1}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "jalkapallo: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{jalkapallo}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "jalkapallo: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('whale') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "sinivalas: in view at L = 1,6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$3{,}0\\\\cdot10^{1}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "sinivalas: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{sinivalas}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "sinivalas: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(5.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('space') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "avaruuden raja: in view at L = 5,6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}0\\\\cdot10^{5}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "avaruuden raja: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{avaruuden raja}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "avaruuden raja: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(6.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('moon') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Kuu: in view at L = 6,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$3{,}5\\\\cdot10^{6}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Kuu: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Kuu}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Kuu: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(8.4);",
+  "expr": "window.simState.nakyvat.split(',').includes('jupiter') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Jupiter: in view at L = 8,4"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}4\\\\cdot10^{8}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Jupiter: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Jupiter}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Jupiter: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(12.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('saturn') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Saturnuksen rata: in view at L = 12,6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}43\\\\cdot10^{12}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Saturnuksen rata: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Saturnuksen radan säde}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Saturnuksen rata: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(13.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('helio') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliopaussi: in view at L = 13,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}8\\\\cdot10^{13}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliopaussi: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{heliopaussin etäisyys}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "heliopaussi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(16.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('oort') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Oort-pilvi: in view at L = 16,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}5\\\\cdot10^{16}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Oort-pilvi: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Oort-pilven säde}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Oort-pilvi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(17.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('orion') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin sumu: in view at L = 17,6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}3\\\\cdot10^{17}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin sumu: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Orionin sumu}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin sumu: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(19.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('arm') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin haara: in view at L = 19,6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$3{,}3\\\\cdot10^{19}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin haara: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Orionin haara}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Orionin haara: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(20.5);",
+  "expr": "window.simState.nakyvat.split(',').includes('lmc') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Suuri Magellanin pilvi: in view at L = 20,5"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}3\\\\cdot10^{20}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Suuri Magellanin pilvi: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Suuri Magellanin pilvi}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Suuri Magellanin pilvi: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('andromeda') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Andromeda: in view at L = 21,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}1\\\\cdot10^{21}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Andromeda: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Andromeda}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Andromeda: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(22.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('group') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Paikallinen ryhmä: in view at L = 22,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$9{,}5\\\\cdot10^{22}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Paikallinen ryhmä: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Paikallinen ryhmä}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Paikallinen ryhmä: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(24.0);",
+  "expr": "window.simState.nakyvat.split(',').includes('virgo') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Virgon superjoukko: in view at L = 24,0"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$1{,}0\\\\cdot10^{24}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Virgon superjoukko: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Virgon superjoukko}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Virgon superjoukko: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(24.8);",
+  "expr": "window.simState.nakyvat.split(',').includes('laniakea') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Laniakea: in view at L = 24,8"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$4{,}7\\\\cdot10^{24}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Laniakea: its size label"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Laniakea}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Laniakea: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.2);",
+  "expr": "window.simState.nakyvat.split(',').includes('water') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vesimolekyyli: in view at L = -9.2"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}8\\\\cdot10^{-10}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vesimolekyyli: its size label is 2{,}8\\cdot10^{-10}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{vesimolekyyli}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "vesimolekyyli: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(4.4);",
+  "expr": "window.simState.nakyvat.split(',').includes('nstar') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "neutronitähti: in view at L = 4.4"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}4\\\\cdot10^{4}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "neutronitähti: its size label is 2{,}4\\cdot10^{4}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{neutronit\\u00e4hti}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "neutronitähti: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(10.6);",
+  "expr": "window.simState.nakyvat.split(',').includes('bh') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "musta aukko Sgr A*: in view at L = 10.6"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$2{,}5\\\\cdot10^{10}\\\\,\\\\text{m}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "musta aukko Sgr A*: its size label is 2{,}5\\cdot10^{10}\\,\\text{m}"
+ },
+ {
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{musta aukko Sgr A*}$\") ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "musta aukko Sgr A*: its name label"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-15);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -15: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-10);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -10: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-7);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -7: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-4);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -4: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-2);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = -2: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(0);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 0: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(2);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 2: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(4);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 4: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(7);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 7: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 9: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(12);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 12: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(16);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 16: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 21: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27);",
+  "expr": "window.simState.nVis>=2 && window.simState.nVis<=5 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 27: between two and five objects in view at once"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(3.5);",
+  "expr": "['whale','building','everest'].every(i=>window.simState.nakyvat.split(',').includes(i)) ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 3,5: a blue whale, Burj Khalifa and Mount Everest in view together"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);B('Loitonna').click();",
+  "expr": "window.simState.L>1.02 && window.simState.L<1.99 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Loitonna 10-kertaisesti glides: shortly after the click L is between 1 and 2"
+ },
+ {
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.L), 900))",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "the glide lands exactly on 2"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1);B('Loitonna').click();",
+  "expr": "window.simState.tavoite",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "simState.tavoite is the target of the glide, 2"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(1.5);",
+  "expr": "(()=>{const s=window.simState; return s.nVis>=2 && s.labels.every(a=>a.x0>=0 && a.x1<=600) ? 1 : 0})()",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 1,5 (between the whole powers): labels inside the canvas, at least two objects"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[2].options]; return o.length===44 && o[0].value==='' && o[0].textContent==='valitse kohde' && o[1].value==='planck' && o[43].value==='universe' && o.findIndex(x=>x.value==='atom')<o.findIndex(x=>x.value==='water') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen: a blank prompt and all 43 objects in size order, Planck first, the universe last"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('atom');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-9.3865))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen atom: the view glides towards L = -9.39, where atom is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('proton');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-14.1975))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen proton: the view glides towards L = -14.20, where proton is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('quark');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-17.4279))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen quark: the view glides towards L = -17.43, where quark is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('earth');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(7.6759))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen earth: the view glides towards L = 7.68, where earth is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('sun');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(9.7151))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen sun: the view glides towards L = 9.72, where sun is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('neptune');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(13.5263))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen neptune: the view glides towards L = 13.53, where neptune is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('milky');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(21.5498))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen milky: the view glides towards L = 21.55, where milky is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('universe');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(27.5000))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen universe: the view glides towards L = 27.50, where universe is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34); const g=document.querySelectorAll('#sim-root select')[2]; const J=(id)=>{g.value=id; g.dispatchEvent(new Event('change',{bubbles:true}));}; J('planck');",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.tavoite-(-34.0000))<0.01 && document.querySelectorAll('#sim-root select')[2].value==='' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Siirry kohteeseen planck: the view glides towards L = -34.00, where planck is the nearest object; the select returns to its prompt"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeId==='atom' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -9.4 (the jump target rounded to the slider step) the nearest object is atom"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-14.2);",
+  "expr": "window.simState.kohdeId==='proton' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -14.2 (the jump target rounded to the slider step) the nearest object is proton"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-17.4);",
+  "expr": "window.simState.kohdeId==='quark' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -17.4 (the jump target rounded to the slider step) the nearest object is quark"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(7.7);",
+  "expr": "window.simState.kohdeId==='earth' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 7.7 (the jump target rounded to the slider step) the nearest object is earth"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(9.7);",
+  "expr": "window.simState.kohdeId==='sun' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 9.7 (the jump target rounded to the slider step) the nearest object is sun"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(13.5);",
+  "expr": "window.simState.kohdeId==='neptune' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 13.5 (the jump target rounded to the slider step) the nearest object is neptune"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21.5);",
+  "expr": "window.simState.kohdeId==='milky' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 21.5 (the jump target rounded to the slider step) the nearest object is milky"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(27.5);",
+  "expr": "window.simState.kohdeId==='universe' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = 27.5 (the jump target rounded to the slider step) the nearest object is universe"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-34);",
+  "expr": "window.simState.kohdeId==='planck' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "at L = -34 (the jump target rounded to the slider step) the nearest object is planck"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
+  "expr": "window.simState.kohdeNimi==='vetyatomi' && window.simState.kohdeExp===-10 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "simState.kohdeNimi is the Finnish name of the nearest object (an experiment table shows it)"
+ }
+]

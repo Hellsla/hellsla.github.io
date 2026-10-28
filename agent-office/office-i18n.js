@@ -162,18 +162,162 @@
     'The next recorded stage starts at development. Approvals always belong to their recorded content version.':'Seuraava tallennettu vaihe alkaa kehityspajasta. Hyväksynnät koskevat aina vain raporttiin merkittyä sisältöversiota.',
     'The reviewers return their feedback separately. The developer revises the material before new checks and reviews.':'Arvioijat palauttavat huomionsa erikseen. Kehittäjä korjaa oppimateriaalin ennen uusia testejä ja arvioita.',
     'The developer takes the revised material back to the test runner. New independent reviews must follow.':'Kehittäjä vie korjatun oppimateriaalin testien ajajalle. Sen jälkeen tarvitaan uudet riippumattomat arviot.',
-    'Material journeys follow recorded versions on the selected commit’s first-parent history. Each stage shows its own review evidence. Missing stages and specific reviewer comments are not invented.':'Oppimateriaalin matka seuraa valitun commitin ensimmäisten vanhempien kehityslinjalla tallennettuja versioita. Jokainen vaihe näyttää omat arviointitietonsa. Puuttuvia vaiheita tai arvioijien yksittäisiä kommentteja ei keksitä.'
+    'Material journeys follow verified Git ancestry, including the branch that carries the selected material at a merge. Each stage shows its own review evidence. Missing stages and specific reviewer comments are not invented.':'Oppimateriaalin matka seuraa varmistettua Git-historiaa, myös valitun aineiston tuonutta yhdistettyä haaraa. Jokainen vaihe näyttää omat arviointitietonsa. Puuttuvia vaiheita tai arvioijien yksittäisiä kommentteja ei keksitä.'
   });
   Object.assign(fi, {"Same tests, fresh material. Fingers off the skip button.": "Samat testit, uusi materiaali. Ohitusnappiin ei kosketa.", "One more test run. The coffee can wait.": "Vielä yksi testiajo. Kahvi saa odottaa.", "A small coffee update for the developer.": "Pieni kahvipäivitys kehittäjälle.", "Letting the ideas brew for a moment.": "Annetaan ideoiden hautua hetki.", "Thinking time counts as work. Especially with coffee.": "Ajattelukin on työtä. Varsinkin kahvin kanssa.", "A sip of coffee, then back to the big questions.": "Hörppy kahvia, sitten takaisin isojen kysymysten pariin.", "Reviewing the aroma. No report required.": "Arvioin aromia. Tästä ei tarvita raporttia.", "This mug has excellent learning potential.": "Tässä mukissa on oppimispotentiaalia.", "Back at the keyboard. Ideas do not type themselves.": "Takaisin näppäimistölle. Ideat eivät kirjoita itseään.", "Another look. There is always a detail hiding somewhere.": "Vielä yksi tarkastelu. Jokin yksityiskohta piilottelee aina.", "Here is the topic. Make it worth wondering about.": "Tässä aihe. Tehdään siitä ihmettelyn arvoinen.", "A good question first. The material follows.": "Ensin hyvä kysymys. Materiaali seuraa perässä.", "Time to ask the tests some awkward questions.": "Aika esittää testeille kiusallisia kysymyksiä.", "Click, test, repeat. My kind of rhythm.": "Klikkaa, testaa, toista. Minun rytmini.", "The units get a vote in this review.": "Yksiköilläkin on tässä arviossa puheenvuoro.", "Even a pretty formula has to make sense.": "Kauniinkin kaavan pitää käydä järkeen.", "Reading this with my student hat on.": "Luen tätä opiskelijan silmin.", "A clear explanation is a small act of kindness.": "Selkeä selitys on pieni ystävällinen teko.", "That PASS belongs to the old version. Time for another look.": "Tuo PASS kuuluu vanhaan versioon. Katsotaan uudelleen.", "The material changed. The review needs to catch up.": "Materiaali muuttui. Arvion pitää pysyä mukana.", "Feedback delivery! Back to development, please.": "Palautelähetys! Takaisin kehitykseen, kiitos.", "A few things need another look before approval.": "Muutama asia vaatii uuden tarkastelun ennen hyväksyntää.", "Both reviews agree on this version. Nice teamwork.": "Molemmat arviot hyväksyvät tämän version. Hyvää yhteistyötä.", "Two current passes. Ready for the next desk.": "Kaksi voimassa olevaa PASSia. Valmis seuraavalle pöydälle.", "Waiting for both reviews. No shortcuts today.": "Odotetaan molempia arvioita. Tänään ei oikaista.", "This desk runs on two matching approvals.": "Tämä pöytä toimii kahdella saman version hyväksynnällä.", "Feedback received. Time to put it to work.": "Palaute vastaanotettu. Laitetaan se töihin.", "A revision now saves a puzzled reader later.": "Korjaus nyt säästää lukijan hämmennykseltä myöhemmin.", "Approval packed. Delivery is the next step.": "Hyväksyntä pakattu. Toimitus on seuraava vaihe.", "Carrying approved material. The website still needs its turn.": "Kuljetan hyväksyttyä materiaalia. Verkkosivuston vuoro on vielä edessä.", "Checking permission before picking up the material.": "Tarkistan luvan ennen kuin otan materiaalin mukaan.", "The parcel travels only with a recorded approval.": "Paketti kulkee vain tallennetulla hyväksynnällä.", "I can propose. Lauri has the final word.": "Minä voin ehdottaa. Laurilla on viimeinen sana.", "Ready to discuss publication. The decision is still pending.": "Valmis keskustelemaan julkaisusta. Päätös on vielä avoin.", "PUBLISHER PROPOSES, LAURI DECIDES": "JULKAISIJA EHDOTTAA, LAURI PÄÄTTÄÄ"});
+  Object.assign(fi, {
+  "Whole webpage review": "Koko verkkosivun arviointi",
+  "WEBPAGE REVIEW MODEL": "VERKKOSIVUN ARVIOINNIN MALLI",
+  "Play whole webpage review": "Toista koko verkkosivun arviointi",
+  "Pause whole webpage review": "Keskeytä koko verkkosivun arviointi",
+  "OPTIONAL · WHOLE WEBPAGE": "TARVITTAESSA · KOKO VERKKOSIVU",
+  "Another perspective: external review": "Toinen näkökulma: ulkopuolinen tarkistus",
+  "Lauri sometimes asks an external reviewer to review the whole webpage, alongside Claude’s lesson development and independent reviews.": "Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun Clauden oppimateriaalikehityksen ja riippumattomien arvioiden rinnalla.",
+  "Whole webpage review workflow": "Koko verkkosivun arvioinnin työnkulku",
+  "Lauri’s question": "Laurin kysymys",
+  "Share the webpage": "Verkkosivu arvioitavaksi",
+  "External review": "Ulkopuolinen tarkistus",
+  "Lauri selects feedback": "Lauri valitsee huomiot",
+  "Claude revises": "Claude korjaa",
+  "Check and revisit": "Testit ja uusi arvio",
+  "Workflow illustration based on Lauri’s description. No external review conversation, findings or completed review is recorded here. This does not grant a lesson PASS or publication approval.": "Laurin kuvaaman työnkulun havainnollistus. Tässä ei ole tallennettua ulkopuolista arviointikeskustelua, löydöksiä tai valmistunutta arviota. Tämä ei anna oppimateriaalille PASSia tai julkaisulupaa.",
+  "THE WHOLE-WEBPAGE VIEW": "KOKO VERKKOSIVUN NÄKÖKULMA",
+  "External review · requested by Lauri": "Ulkopuolinen arvio · Laurin pyynnöstä",
+  "The whole-webpage review is an optional workflow described by Lauri. It is not recorded agent activity and does not change the selected material’s evidence.": "Koko verkkosivun arviointi on Laurin kuvaama tarvittaessa käytettävä työnkulku. Se ei kuvaa tallennettua agenttitoimintaa eikä muuta valitun oppimateriaalin arviointitietoja.",
+  "WORKFLOW EXAMPLE": "TYÖNKULKUESIMERKKI",
+  "BY REQUEST": "PYYNNÖSTÄ",
+  "QUESTION": "KYSYMYS",
+  "WEBPAGE": "VERKKOSIVU",
+  "SUGGESTIONS": "EHDOTUKSET",
+  "CHANGE BRIEF": "MUUTOSTEHTÄVÄ",
+  "RECHECK": "UUDET TESTIT",
+  "WEB": "SIVU",
+  "CHECK AFTER CHANGES": "TESTIT MUUTOSTEN JÄLKEEN",
+  "SEPARATE": "ERILLINEN",
+  "WEBPAGE TO REVIEW": "ARVIOITAVA VERKKOSIVU",
+  "PUBLICATION SEPARATE": "JULKAISU ERIKSEEN",
+  "LAURI DECIDES": "LAURI PÄÄTTÄÄ",
+  "LESSON REVIEWS SEPARATE": "OPPIMATERIAALIARVIOT ERIKSEEN",
+  "CLAUDE LESSON WORKFLOW": "CLAUDEN OPPIMATERIAALITYÖ",
+  "THE WHOLE WEBPAGE": "KOKO VERKKOSIVU",
+  "Structure · clarity · navigation · usability": "Rakenne · selkeys · navigointi · käytettävyys",
+  "Please review the whole webpage, not just one lesson.": "Arvioi koko verkkosivu, ei vain yhtä oppimateriaalia.",
+  "A fresh pair of eyes on the whole webpage.": "Tuore näkökulma koko verkkosivuun.",
+  "Do the pages make sense together?": "Muodostavatko sivut selkeän kokonaisuuden?",
+  "Which suggestions should we take forward?": "Mitkä ehdotukset viedään eteenpäin?",
+  "A focused change brief, then back to development.": "Rajattu muutostehtävä ja takaisin kehitykseen.",
+  "Changes need checks and another look.": "Muutokset tarvitsevat testit ja uuden tarkastelun.",
+  "Lauri asks an external reviewer for a whole-webpage review: structure, navigation, consistency and the experience across pages.": "Lauri pyytää ulkopuoliselta arvioijalta koko verkkosivun arviota: rakenne, navigointi, johdonmukaisuus ja sivujen yhteinen käyttökokemus.",
+  "The external reviewer receives the webpage and Lauri’s question. This external perspective sits alongside the Claude lesson workflow.": "Ulkopuolinen arvioija saa verkkosivun ja Laurin kysymyksen. Ulkopuolinen näkökulma täydentää Clauden oppimateriaalityötä.",
+  "The external review considers the broader experience: clarity, visual hierarchy, mobile usability and how the parts fit together.": "Ulkopuolinen arvio tarkastelee kokonaisuutta: selkeyttä, visuaalista hierarkiaa, mobiilikäytettävyyttä ja osien yhteensopivuutta.",
+  "The external reviewer returns suggestions to Lauri. Lauri weighs them against teaching goals and decides what needs changing.": "Ulkopuolinen arvioija palauttaa ehdotukset Laurille. Lauri punnitsee niitä opetustavoitteita vasten ja päättää muutoksista.",
+  "Lauri turns selected feedback into a change brief for Claude development. Suggestions are not automatic instructions or approvals.": "Lauri tekee valitusta palautteesta muutostehtävän Claudelle. Ehdotukset eivät ole automaattisia ohjeita tai hyväksyntöjä.",
+  "The developer checks the changes. Affected lessons need current independent reviews; Lauri can request another whole-webpage review. Publication remains a separate decision.": "Kehittäjä tarkistaa muutokset. Muutetut oppimateriaalit tarvitsevat ajantasaiset riippumattomat arviot; Lauri voi pyytää uuden koko verkkosivun arvion. Julkaisu on erillinen päätös.",
+  "An illustrated office with development, review, publication, external review and coffee rooms.": "Havainnollistettu toimisto, jossa on kehitys-, arviointi-, julkaisu-, ulkopuolisen tarkistuksen huone sekä kahvihuoneet.",
+  "The optional Whole webpage review mode shows Lauri requesting a broader review from an external reviewer, selecting feedback and briefing Claude to make changes. It illustrates a user-described practice, not a recorded conversation or a third lesson approval.": "Koko verkkosivun arviointi -tila näyttää, miten Lauri pyytää ulkopuoliselta arvioijalta laajempaa arviota, valitsee huomioita ja antaa Claudelle muutostehtävän. Se havainnollistaa käyttäjän kuvaamaa käytäntöä, ei tallennettua keskustelua tai kolmatta oppimateriaalihyväksyntää."
+});
+  Object.assign(fi, {'Workflow described by Lauri · illustrative playback':'Laurin kuvaama työnkulku · havainnollistava toisto'});
+  Object.assign(fi, {
+    'Human roles have distinct characters, with different hair, clothing, colours and accessories. The review inbox and website display are fixtures. The publisher is a separate colleague; Lauri visits before making the publication decision.':'Ihmisroolit erottuvat hiuksilla, vaatetuksella, väreillä ja asusteilla. Arviointien saapuneet ja verkkosivun näyttö ovat kalusteita. Julkaisija on oma kollegansa, jonka luona Lauri käy ennen julkaisupäätöstä.'
+  });
+  Object.assign(fi, {
+    'External review':'Ulkopuolinen tarkistus','EXTERNAL REVIEW':'ULKOPUOLINEN TARKISTUS',
+    'Publisher':'Julkaisija','LAURI MAKES THE DECISION':'LAURI TEKEE PÄÄTÖKSEN',
+    'Let’s discuss the publication proposal first.':'Käydään julkaisuehdotus ensin yhdessä läpi.',
+    'The review coordinator delivers the reviewed material to the publisher.':'Arviointikoordinaattori vie tarkistetun aineiston julkaisijalle.',
+    'Lauri walks to the publisher to discuss the material before the publication decision.':'Lauri käy julkaisijan luona keskustelemassa aineistosta ennen julkaisupäätöstä.',
+    'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':'Lauri käy ehdotuksen läpi julkaisijan kanssa. Julkaisupäätös tulee tämän käynnin jälkeen.'
+  });
+  Object.assign(fi, {
+    'Commit time · Helsinki':'Commitin aika · Helsinki','Replay time · Helsinki':'Aikajanan aika · Helsinki',
+    'Day timeline · Europe/Helsinki':'Päivän aikajana · Europe/Helsinki',
+    'Step through an illustrated handoff; the commit time stays fixed':'Siirry seuraavaan havainnollistettuun luovutukseen; commitin aika pysyy samana',
+    'Show the next recorded version and its commit time':'Näytä seuraava tallennettu versio ja sen commitin aika',
+    'Commit times mark saved changes, not individual handoffs. Handoffs within one recorded version share its timestamp.':'Commitin aika kertoo tallennushetken, ei yksittäisen luovutuksen aikaa. Saman tallennetun version luovutuksilla on yhteinen aikaleima.'
+  });
+  Object.assign(fi, {
+    'Orchestrator':'Orkestroija','General-purpose agent':'Yleisagentti',
+    'THE COORDINATION DESK':'KOORDINOINTIPÖYTÄ','RECORDED SUPPORT WORK':'TALLENNETTU TUKITYÖ',
+    'COORDINATION':'KOORDINOINTI','GENERAL SUPPORT':'YLEINEN TUKITYÖ',
+    'Packets · review scope · correction rounds':'Tehtäväpaketit · arvioinnin rajaus · korjauskierrokset',
+    'Additional agent work recorded in usage files':'Käyttölokeihin tallennettu muu agenttityö',
+    '{count} RECORDED ENTRIES':'{count} TALLENNETTUA MERKINTÄÄ','CARRIED PASS':'SIIRRETTY PASS',
+    'The work behind this version':'Tämän version taustalla oleva työ',
+    'Development entries':'Kehitysmerkintöjä','Correction entries':'Korjausmerkintöjä',
+    'Science review entries':'Fysiikan arviointimerkintöjä','Pedagogy review entries':'Pedagogisia arviointimerkintöjä',
+    'Full review entries':'Koko arvioinnin merkintöjä','Partial review entries':'Osittaisen arvioinnin merkintöjä',
+    'Coordination entries':'Koordinointimerkintöjä','Support entries':'Tukityön merkintöjä',
+    'PASS · recorded carry':'PASS · tallennettu siirto',
+    'OPEN · current or recorded carried PASS':'AUKI · ajantasaiset tai siirretyt PASS-arviot',
+    'Exercise set: science {science}; pedagogy {pedagogy}. Separate content hash: {hash}.':'Tehtäväsarja: fysiikka {science}; pedagogiikka {pedagogy}. Oma sisältötiiviste: {hash}.',
+    'This snapshot predates separate exercise approvals.':'Tämä tilannekuva edeltää tehtäväsarjojen erillisiä arviointeja.',
+    '{count} recorded usage entries. Highest recorded round: {round}.':'{count} tallennettua käyttömerkintää. Suurin lokiin merkitty kierros: {round}.',
+    'No committed usage entries for this material in this snapshot.':'Tämän oppimateriaalin käyttömerkintöjä ei ole tallennettu tähän tilannekuvaan.',
+    'Counts come from committed usage entries at this snapshot. They are cumulative records with overlapping categories, not live activity or measured handoff times. Lesson and exercise approvals are tracked separately.':'Luvut perustuvat tähän tilannekuvaan tallennettuihin käyttömerkintöihin. Ne ovat kertyneitä merkintöjä osin päällekkäisissä ryhmissä, eivät suoraa toimintaa tai mitattuja luovutusaikoja. Oppimateriaalin ja tehtävien hyväksynnät ovat erilliset.',
+    'Recorded through {day} {time} · Helsinki. Static history snapshot.':'Tallennettu {day} klo {time} asti · Helsinki. Historiasta tehty tilannekuva.',
+    'No recorded history.':'Tallennettua historiaa ei ole.'
+  });
+  Object.assign(fi, {
+    'Recorded usage sources':'Tallennettujen käyttömerkintöjen lähteet',
+    'Both must say PASS for the current content hash or have a recorded carry to that hash. The office shows saved carry evidence; CI verification remains separate.':'Molempien on annettava PASS nykyiselle sisältötiivisteelle tai hyväksynnällä on oltava tallennettu siirto siihen. Toimisto näyttää siirtomerkinnät; CI:n tarkistus on erillinen.'
+  });
+  Object.assign(fi, {
+    'Review inbox':'Arviointien saapuneet','AN AUTOMATED RULE':'AUTOMAATTINEN SÄÄNTÖ','Website display':'Verkkosivun näyttö','THE OUTPUT':'LOPPUTULOS',
+    'Draft & build':'Luonnostelu ja toteutus','Flexible support':'Joustava tukityö',
+    'COFFEE & CONVERSATION':'KAHVIA JA KESKUSTELUA','LAURI · PLANNING':'LAURI · SUUNNITTELU','PUBLISHING':'JULKAISU',
+    'TESTING STATION':'TESTIPISTE','Waiting for Lauri':'Odottaa Lauria','Ready to publish':'Valmis julkaistavaksi','Discuss proposal':'Ehdotuksen läpikäynti','Waiting for reviewed work':'Odottaa tarkistettua työtä',
+    'Webpage to discuss':'Verkkosivu keskusteltavaksi','Website preview':'Verkkosivun esikatselu','WELCOME':'TERVETULOA','Coffee break':'Kahvitauko',
+    'Why?  →  Explore  →  Learn':'Miksi?  →  Tutki  →  Opi',
+    'Lesson reviews stay separate':'Oppimateriaaliarviot erikseen','Collecting material':'Hakee aineistoa','Returning review':'Palauttaa arviota','Discussing corrections':'Keskustelee korjauksista','Checking calculations':'Tarkistaa laskelmia','Reading the learning path':'Arvioi oppimispolkua','Review returned':'Arvio palautettu','Waiting for material':'Odottaa aineistoa',
+    'A connected office with a workshop, quiet review rooms, coordination island, meeting room, planning nook and publishing desk.':'Yhtenäinen toimisto, jossa on työpaja, rauhalliset arviointihuoneet, koordinointisaareke, neuvotteluhuone, suunnittelunurkka ja julkaisupöytä.',
+    'The orchestrator takes the reviewed material from the shared inbox to the publisher.':'Orkestroija vie tarkistetun aineiston yhteisestä saapuneiden lokerosta julkaisijalle.',
+    'Approval is recorded for this version. The publisher can prepare the material for publication.':'Tälle versiolle on tallennettu hyväksyntä. Julkaisija voi valmistella aineiston julkaistavaksi.',
+    'Lauri and the publisher wait: publication approval is not recorded for this version.':'Lauri ja julkaisija odottavat: tälle versiolle ei ole tallennettu julkaisulupaa.',
+    'The publisher takes the approved material to the website preview. Deployment itself remains unverified.':'Julkaisija vie hyväksytyn aineiston verkkosivun esikatseluun. Julkaisun onnistumista ei ole varmistettu.',
+    'No publication approval is recorded. The publisher keeps the material at the desk.':'Julkaisulupaa ei ole tallennettu. Julkaisija säilyttää aineiston pöydällään.'
+  });
+  Object.assign(fi, {
+    'Web publishing':'Verkkojulkaisu','WEB PUBLISHING':'VERKKOJULKAISU','AFTER LAURI’S APPROVAL':'LAURIN HYVÄKSYNNÄN JÄLKEEN',
+    'Prepared HTML/CSS · GitHub Pages':'Valmisteltu HTML/CSS · GitHub Pages',
+    'Calculations':'Laskelmat','Simulation':'Simulaatio','Exercises':'Tehtävät','Mobile layout':'Mobiilinäkymä',
+    'Testing':'Testaus','Incoming':'Saapuva','Results':'Tulokset','Material':'Aineisto','Check notes':'Testihuomiot',
+    'Working through the checks':'Testaa aineistoa','Receiving material':'Vastaanottaa aineistoa','Reviewing results':'Käy tulokset läpi',
+    'Collecting pages':'Sivujen koonti','Checking the bundle':'Pakettitarkistus','Preparing upload':'Siirron valmistelu','Deployment handoff':'Julkaisusiirto',
+    'Receiving approved pages':'Vastaanottaa aineiston','Waiting for approval':'Odottaa julkaisulupaa','Awaiting evidence':'Odottaa vahvistusta',
+    'Publication recorded':'Julkaisu vahvistettu','Published version':'Julkaistu versio','Publishing needs attention':'Julkaisu vaatii huomiota',
+    '5. Publication decision':'5. Julkaisupäätös','Proposal, then Lauri’s approval':'Ehdotus ja Laurin hyväksyntä','6. Web publishing':'6. Verkkojulkaisu',
+    'Deployment not recorded':'Julkaisua ei ole vahvistettu','Publication recorded for this version':'Tämän version julkaisu on vahvistettu','Recorded publishing failure':'Tallennettu julkaisuvirhe',
+    'The test operator works through calculations, simulation, exercises and mobile layout while the material waits.':'Testaaja käy läpi laskelmat, simulaation, tehtävät ja mobiilinäkymän aineiston odottaessa.',
+    'The test operator checks the results before the reviewers collect their copies.':'Testaaja käy tulokset läpi ennen kuin arvioijat hakevat kopionsa.',
+    'The publisher delivers the approved page bundle to the web publishing station.':'Julkaisija vie hyväksytyn sivupaketin verkkojulkaisupisteeseen.',
+    'The publisher hands the approved files to the web publishing station.':'Julkaisija luovuttaa hyväksytyt tiedostot verkkojulkaisupisteeseen.',
+    'The web publishing station prepares the approved page bundle before deployment.':'Verkkojulkaisupiste valmistelee hyväksytyn sivupaketin ennen julkaisua.',
+    'The revised material waits for fresh independent reviews.':'Korjattu aineisto odottaa uusia riippumattomia arvioita.',
+    'The web publishing station waits for Lauri’s recorded approval.':'Verkkojulkaisupiste odottaa Laurin tallennettua hyväksyntää.',
+    'Publication is recorded for this version. The website display can now show it as published.':'Tämän version julkaisu on vahvistettu. Verkkosivun näyttö voi nyt näyttää sen julkaistuna.',
+    'A publishing failure is recorded. The website is not marked as published.':'Julkaisuvirhe on tallennettu. Verkkosivua ei merkitä julkaistuksi.',
+    'The page bundle is prepared, but successful deployment is not recorded. The website remains a preview.':'Sivupaketti on valmisteltu, mutta onnistunutta julkaisua ei ole vahvistettu. Verkkosivu näkyy edelleen esikatseluna.',
+    'The approved pages are being prepared for publication.':'Hyväksyttyjä sivuja valmistellaan julkaistaviksi.',
+    'Publication still needs Lauri’s approval.':'Julkaisu odottaa vielä Laurin hyväksyntää.',
+    'Publication is recorded for this version.':'Tämän version julkaisu on vahvistettu.',
+    'The publishing step needs another look.':'Julkaisuvaihe vaatii uuden tarkastelun.',
+    'The pages are prepared. Waiting for deployment evidence.':'Sivut on valmisteltu. Odotetaan julkaisuvahvistusta.'
+  });
   const descriptions = {
+    publishing:'Automaattinen piste vastaanottaa hyväksytyn sivupaketin julkaisijalta, valmistelee sen ja siirtää sen julkaisuun. Esikatselu on rakennettu jo kehityksen ja testauksen yhteydessä. Näkyvä käsittelyaika on havainnollistus. Vain tälle sisältöversiolle tallennettu julkaisuvahvistus voi näyttää verkkosivun julkaistuna; hyväksyntä tai HTML-tiedosto ei yksin riitä.',
+
+    orchestrator:'Koordinoi tehtäväpaketit, testit, rinnakkaiset arvioijat, korjauskierrokset ja arvioinnin laajuuden. Käyttölokeissa on orkestroijan merkintöjä. Tämä on komentoa ajavan istunnon koordinointityötä, ei neljäs erikseen määritelty agentti. Yksityisiä keskusteluja tai tarkkoja työaikoja ei päätellä.',
+    support:'Tallennetuissa käyttölokeissa on myös yleisagenttien työtä. Lokista ei selviä pysyvää erikoisalaa tai täsmällistä toimeksiantoa. Huone kuvaa tallennettua tukityötä, ei keksittyä arvioijaa tai hyväksyntäroolia.',
+
+    chatgpt:"Lauri pyytää välillä ulkopuolista arvioijaa arvioimaan koko verkkosivun rakennetta, selkeyttä, johdonmukaisuutta ja käytettävyyttä. Tämä näkökulma täydentää Clauden oppimateriaalityötä. Lauri valitsee ehdotukset ja antaa kehitystehtävän. Gitistä ei päätellä keskustelua tai valmistunutta arviota. Tämä ei korvaa tieteen tai pedagogiikan hyväksyntää.",
     developer:'Kirjoittaa ja korjaa oppimateriaalin tekstiä, tehtäviä, kuvia ja simulaatioita. Nykyinen kehittäjän työnkulku tarkistaa oppimateriaalin ennen riippumatonta arviointia.',
     science:'Tarkistaa riippumattomasti fysiikan, matematiikan, yksiköt, laskutulokset ja simulaation toiminnan. Arvioi työn muokkaamatta itse oppimateriaalia.',
     pedagogy:'Arvioi riippumattomasti oppimispolun, selitykset, toiminnalliset tehtävät ja käytettävyyden puhelimella ja tietokoneella. Ei muokkaa oppimateriaalia.',
-    repository:'Tämän pöydän hahmo kuvaa Laurin julkaisupäätöstä. Lauri päättää, mitä yhdistetään. Rakennus hyväksyy oppimateriaalit, joilla on molemmat voimassa olevat PASS-arviot tai legacy-poikkeus. CI tarkistaa sivuston erikseen. Yhdistäminen ei todista hyväksyjää tai onnistunutta julkaisua.',
-    gatekeeper:'Tavallinen toimistohahmo kuvaa arvioiden hyväksyntätarkistusta. Molempien riippumattomien raporttien on annettava PASS nykyiselle sisältötiivisteelle. Koordinaattori vie tarkistetun paketin päätöksentekijälle ja palaa omalle pöydälleen. Puuttuva, hylätty, virheellinen tai vanhentunut raportti ei riitä. Hahmo havainnollistaa automaattista sääntöä, ei uutta käynnissä olevaa agenttia.',
+    repository:'Julkaisija valmistelee julkaisuehdotuksen. Lauri käy julkaisijan luona keskustelemassa tarkistetusta aineistosta ja tekee julkaisupäätöksen. Hahmon käynti havainnollistaa työnkulkua; se ei itsessään ole tallennettu hyväksyntä tai todiste onnistuneesta julkaisusta.',
+    gatekeeper:'Koordinointipöydän kaksi raporttilokeroa kuvaavat automaattista hyväksyntäsääntöä. Molempien riippumattomien arvioiden on oltava voimassa nykyiselle versiolle suoraan tai tallennetun siirron kautta. Orkestroija käsittelee aineistopakettia; sääntö ei ole uusi työntekijä. Tarkat arviot ja CI:n rajaukset näkyvät tietopaneelissa.',
     teacher:'Asettaa oppimateriaalin tavoitteet ja antaa kehitystehtävän. Laurin julkaisupäätös kuvataan erillisellä pöydällä. Hahmojen liikkuminen havainnollistaa työnkulkua; Git-historia ei tallenna Laurin todellisia liikkeitä tai yksityisiä ohjeita.',
     checks:'Oppimateriaalin työnkulku rakentaa esikatselun ja tarkistaa sisällön, matematiikan, simulaatiot ja ulkoasun. Tallennetut checks.txt-tulokset näkyvät tässä, mutta niissä ei ole sisältötiivistettä: niiden ajantasaisuus ja CI-tulos ovat tuntemattomia. Tietokoneella työskentelevä hahmo kuvaa automaattisten testien ajamista, ei uutta käynnissä olevaa agenttia.',
-    site:'Kuvaa julkaisuprosessia, ei uutta tekoälyagenttia. Kuriiri saapuu julkaisupöydälle, odottaa tälle versiolle tallennettua hyväksyntää ja ottaa mukaansa vain hyväksytyn aineiston. Yhdistäminen tai HTML-tiedosto ei yksin todista päätöstä. Julkaisua ei ole varmistettu.',
+    site:'Julkaisupisteen seinänäyttö kuvaa verkkosivun esikatselua. Se on työn lopputulos, ei työntekijä tai lisäagentti. Julkaisija valmistelee aineiston vasta Laurin tallennetun hyväksynnän jälkeen. Esikatselu, yhdistäminen tai HTML-tiedosto ei yksin todista onnistunutta julkaisua; tietopaneeli erottaa nämä asiat.',
     lounge:'Kahvikone, sohva ja pieni hengähdystauko. Vapaana oleva hahmo käy välillä kahvilla ja palaa ajoissa seuraavaan luovutukseen. Tauot ja puhekuplat ovat havainnollistuksia; oikeita agentteja ei pysäytetä eikä oppimateriaaleja muuteta.'
   };
   const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');

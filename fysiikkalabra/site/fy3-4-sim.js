@@ -11,7 +11,7 @@ new p5((p) => {
   const P0 = 101, G = 9.81, H_MAX = 20;                       // air pressure (kPa), g (m/s²), deepest gauge position (m)
   const TANK = { x: 70, w: 160, top: 70, bottom: 370 };       // pool: 20 m over 300 px
   const CH = { x0: 330, x1: 575, y0: 335, y1: 60 };           // chart area (axes at x0 and y0); h-axis title below the ticks
-  const LIQUIDS = { 720: 'bensiini', 1000: 'vesi', 1025: 'merivesi', 1240: 'Kuolleenmeren vesi' };
+  const LIQUIDS = { 720: __('bensiini'), 1000: __('vesi'), 1025: __('merivesi'), 1240: __('kuolleenmeren_vesi') };
   let sH, lH, sR, lR, cb, readout, k = 1;                     // k: canvas units per screen px for text (set each frame)
 
   const slider = (parent, min, max, val, step) => {
@@ -31,8 +31,8 @@ new p5((p) => {
     [sR, lR] = slider(controls, 700, 1300, 1000, 5);          // tiheys ρ (kg/m³)
     const lc = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.6rem').style('min-height', '40px');
     cb = p.createElement('input').attribute('type', 'checkbox').parent(lc).style('width', '24px').style('height', '24px').style('margin', '0');
-    p.createSpan('Näytä vain ylipaine').parent(lc);
-    p.createP('Jokainen syvyysmetri lisää painetta $\\rho g \\cdot 1\\,\\text{m}$ verran.')
+    p.createSpan(__('nayta_vain_ylipaine')).parent(lc);
+    p.createP(__('jokainen_syvyysmetri_lisaa'))
       .parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -51,12 +51,12 @@ new p5((p) => {
     const base = overOnly ? 0 : P0;                            // constant term of the line shown in the chart
     const [pMax, step] = niceMax(base + slope * H_MAX);        // chart scale: the line at 20 m, rounded up
     const name = LIQUIDS[rho] ? ` (${LIQUIDS[rho]})` : '';
-    lH.html(`Syvyys $h = ${tx(h, 1)}\\,\\text{m}$`); lR.html(`Tiheys $\\rho = ${rho}\\,\\text{kg/m}^3$${name}`);
-    readout.html(`Syvyys $h = ${tx(h, 1)}\\,\\text{m}$, tiheys $\\rho = ${rho}\\,\\text{kg/m}^3$` +
-                 `<br>Hydrostaattinen paine <strong>$\\rho g h = ${tx(pOver, 1)}\\,\\text{kPa}$</strong>` +
-                 `<br>Kokonaispaine $p = p_0 + \\rho g h = 101\\,\\text{kPa} + ${tx(pOver, 1)}\\,\\text{kPa} =$ <strong>$${tx(pTotal, 1)}\\,\\text{kPa}$</strong>` +
-                 `<br>Kokonaispaine on <strong>$${tx(ratio, 2)}$</strong> kertaa ilmanpaine.` +
-                 `<br>Kuvaajan asteikko $0\\text{–}${pMax}\\,\\text{kPa}$, kulmakerroin $\\rho g = ${tx(slope, 2)}\\,\\text{kPa/m}$.`);
+    lH.html(__(`syvyys`, {h: tx(h, 1)})); lR.html(__(`tiheys`, {rho: rho, name: name}));
+    readout.html(__(`syvyys_tiheys`, {h: tx(h, 1), rho: rho}) +
+                 __(`hydrostaattinen_paine`, {pover: tx(pOver, 1)}) +
+                 __(`kokonaispaine`, {pover: tx(pOver, 1), ptotal: tx(pTotal, 1)}) +
+                 __(`kokonaispaine_on_kertaa`, {ratio: tx(ratio, 2)}) +
+                 __(`kuvaajan_asteikko_kulmakerroin`, {pmax: pMax, slope: tx(slope, 2)}));
     window.simState = { h, rho, pOver, pTotal, ratio, overOnly, p0: P0, g: G, slope, chartBase: base, chartValue: base + pOver, pMax };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -71,7 +71,7 @@ new p5((p) => {
     p.stroke(255); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.noFill(); p.rect(gx - 18, TANK.top, 36, gy - TANK.top); p.drawingContext.setLineDash([]);
     p.stroke(60); p.strokeWeight(3); p.line(TANK.x, TANK.top - 30, TANK.x, TANK.bottom); p.line(TANK.x, TANK.bottom, TANK.x + TANK.w, TANK.bottom); p.line(TANK.x + TANK.w, TANK.bottom, TANK.x + TANK.w, TANK.top - 30);
     p.stroke(30, 80, 160); p.strokeWeight(2); p.line(TANK.x, TANK.top, TANK.x + TANK.w, TANK.top);   // surface
-    say(boxes, 'air', '$\\text{ilma, } p_0 = 101\\,\\text{kPa}$', ts(12), 60, 12, TANK.top - 40);
+    say(boxes, 'air', __('ilma_p_101'), ts(12), 60, 12, TANK.top - 40);
     for (let d = 0; d <= H_MAX; d += 5) { const y = TANK.top + d * PXM; p.stroke(60); p.strokeWeight(1.5); p.line(TANK.x - 6, y, TANK.x, y); say(boxes, `depth${d}`, `$${d}\\,\\text{m}$`, ts(11), 60, TANK.x - 9, y + ts(4), 'r'); }
 
     // gauge on a cable; arrows from four sides, length grows with the total pressure (pressure acts in every direction)
@@ -108,7 +108,7 @@ new p5((p) => {
     for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `$${d}$`, ts(11), 60, X(d), CH.y0 + ts(16), 'c');
     const mt = meas('$h\\ (\\text{m})$', ts(11));
     say(boxes, 'hTitle', '$h\\ (\\text{m})$', ts(11), 60, 596, boxes.h20[3] + 9 + mt.a, 'r');
-    say(boxes, 'pTitle', overOnly ? '$\\text{ylipaine } \\rho g h\\ (\\text{kPa})$' : '$\\text{paine } p\\ (\\text{kPa})$', ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
+    say(boxes, 'pTitle', overOnly ? __('ylipaine') : __('paine_p'), ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
 
     // labels inside the chart: each takes the first candidate box that lies in the chart area and clears every
     // obstacle (other text, the dashed lines as thin boxes, the dot, the blue line); text gets a halo as well

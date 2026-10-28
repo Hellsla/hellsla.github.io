@@ -1,0 +1,270 @@
+[
+ {
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); const R=document.querySelectorAll('#sim-root input[type=range]'); const S=window.simState; return s.length===1 && s[0].value==='1' && R[0].value==='1' && R[1].value==='0.15' && R[2].value==='0' && S.n===1 && S.T===2.4 && S.sat===0.15 && S.sys===0 && S.last===2.18 && S.mean===2.18 && S.running===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: n = 1, satunnaisvirhe 0,15 s, systemaattinen virhe 0, speed normaali, first reading 2,18 s, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=[...document.querySelectorAll('#sim-root input[type=range]')].map(r=>[r.min,r.max,r.step].join('/')).join('|'); return R==='1/40/1|0/0.3/0.05|-0.3/0.3/0.05' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: toistoja n 1-40 step 1, satunnaisvirhe 0-0,3 s step 0,05, systemaattinen virhe -0,3-+0,3 s step 0,05"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[0].options].map(x=>x.textContent+':'+x.value).join(','); return o==='hidas:0.5,normaali:1,nopea:2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "speed select hidas 0.5, normaali 1, nopea 2"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const t=L.map(x=>simText(x)); return L.length===4 && /^Toistoja \\$n = \\d+\\$$/.test(t[0]) && /^Satunnaisvirhe \\$\\\\Delta t_\\\\text\\{sat\\} = .*\\\\,\\\\text\\{s\\}\\$$/.test(t[1]) && /^Systemaattinen virhe \\$\\\\Delta t_\\\\text\\{sys\\} = [+-].*\\\\,\\\\text\\{s\\}\\$$/.test(t[2]) && t[3].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four labelled controls: Toistoja n, Satunnaisvirhe with unit s, Systemaattinen virhe with sign and unit s, Nopeus (toisto)"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='n,sat,sys' && P.sat.unit==='s' && P.sys.unit==='s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares n, sat (s) and sys (s)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0); S(2,0.2); S(0,40);",
+  "expr": "window.simState.mean",
+  "expected": 2.6,
+  "tol": 1e-06,
+  "note": "sat 0, sys +0,20 s, n = 40: every reading is 2,60 s, mean 2,60 s"
+ },
+ {
+  "expr": "window.simState.puoli",
+  "expected": 0,
+  "tol": 0,
+  "note": "sat 0: all readings equal, half-range 0"
+ },
+ {
+  "expr": "window.simState.vir",
+  "expected": 0.20000000000000018,
+  "tol": 1e-06,
+  "note": "mean − T = +0,20 s with no random error"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0); S(2,-0.3); S(0,5);",
+  "expr": "window.simState.last",
+  "expected": 2.1,
+  "tol": 1e-06,
+  "note": "sys −0,30 s, sat 0, n = 5: last reading 2,10 s"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0); S(0,1);",
+  "expr": "window.simState.last",
+  "expected": 2.18,
+  "tol": 1e-06,
+  "note": "sat 0,15 s, sys 0, n = 1: first reading 2,18 s (T + 0,15 · (−1,456) rounded to 0,01 s)"
+ },
+ {
+  "expr": "window.simState.puoli",
+  "expected": 0,
+  "tol": 0,
+  "note": "n = 1: half-range 0"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0); S(0,5);",
+  "expr": "window.simState.mean",
+  "expected": 2.476,
+  "tol": 1e-06,
+  "note": "sat 0,15 s, sys 0, n = 5: mean 2,476 s"
+ },
+ {
+  "expr": "window.simState.tmin",
+  "expected": 2.18,
+  "tol": 1e-06,
+  "note": "n = 5: smallest reading 2,18 s"
+ },
+ {
+  "expr": "window.simState.tmax",
+  "expected": 2.68,
+  "tol": 1e-06,
+  "note": "n = 5: largest reading 2,68 s"
+ },
+ {
+  "expr": "window.simState.puoli",
+  "expected": 0.25,
+  "tol": 1e-06,
+  "note": "n = 5: half-range 0,25 s"
+ },
+ {
+  "expr": "window.simState.last",
+  "expected": 2.4,
+  "tol": 1e-06,
+  "note": "n = 5: latest reading 2,40 s"
+ },
+ {
+  "expr": "window.simState.vir",
+  "expected": 0.07600000000000007,
+  "tol": 1e-06,
+  "note": "n = 5: mean − T = +0,076 s"
+ },
+ {
+  "expr": "window.simState.rs.length",
+  "expected": 5,
+  "tol": 0,
+  "note": "the series has n readings"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0); S(0,40);",
+  "expr": "window.simState.mean",
+  "expected": 2.3995,
+  "tol": 1e-06,
+  "note": "n = 40: mean 2,3995 s, within 0,001 s of T"
+ },
+ {
+  "expr": "window.simState.puoli",
+  "expected": 0.26,
+  "tol": 1e-06,
+  "note": "n = 40: half-range 0,26 s, no smaller than at n = 5"
+ },
+ {
+  "expr": "window.simState.vir",
+  "expected": -0.0004999999999997229,
+  "tol": 1e-06,
+  "note": "n = 40: mean − T = −0,0005 s"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0.3); S(0,40);",
+  "expr": "window.simState.mean",
+  "expected": 2.6995,
+  "tol": 1e-06,
+  "note": "sat 0,15 s, sys +0,30 s, n = 40: mean 2,6995 s"
+ },
+ {
+  "expr": "window.simState.vir",
+  "expected": 0.2995000000000001,
+  "tol": 1e-06,
+  "note": "mean − T = +0,2995 s: the systematic error stays"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.3); S(2,0); S(0,40);",
+  "expr": "window.simState.puoli",
+  "expected": 0.5250000000000001,
+  "tol": 1e-06,
+  "note": "sat 0,30 s, n = 40: half-range 0,525 s"
+ },
+ {
+  "expr": "window.simState.tmin",
+  "expected": 1.92,
+  "tol": 1e-06,
+  "note": "sat 0,30 s, n = 40: smallest reading 1,92 s"
+ },
+ {
+  "expr": "window.simState.tmax",
+  "expected": 2.97,
+  "tol": 1e-06,
+  "note": "sat 0,30 s, n = 40: largest reading 2,97 s"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.05); S(2,0); S(0,40);",
+  "expr": "window.simState.puoli",
+  "expected": 0.08500000000000019,
+  "tol": 1e-06,
+  "note": "sat 0,05 s, n = 40: half-range 0,085 s"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.puoli===S.puoli && S.tmax>=S.mean && S.mean>=S.tmin ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "min ≤ mean ≤ max"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0); S(0,1); B('Käynnistä').click();",
+  "expr": "(() => { const S=window.simState; return S.running===true && B('Tauko') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä starts playback; the button becomes Tauko"
+ },
+ {
+  "setup": "B('Tauko').click();",
+  "expr": "(() => { const S=window.simState; return S.running===false && B('Käynnistä') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "second click pauses and the button is Käynnistä again"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); B('Käynnistä').click(); S(0,3);",
+  "expr": "(() => { const S=window.simState; return S.running===false && S.n===3 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "dragging the slider while playing stops playback and shows n readings"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(0,12); B('Alusta').click();",
+  "expr": "(() => { const S=window.simState; return S.running===false && S.n===1 && document.querySelector('#sim-root input[type=range]').value==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alusta returns to n = 1 and stops"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; window.B=(t)=>[...document.querySelectorAll('#sim-root button')].find(x=>x.textContent===t); S(1,0.15); S(2,0); S(0,5); const sel=document.querySelector('#sim-root select'); sel.value='2'; sel.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simState.mean",
+  "expected": 2.476,
+  "tol": 1e-06,
+  "note": "speed nopea changes the pace only, not the readings"
+ },
+ {
+  "expr": "window.simState.speed",
+  "expected": 2,
+  "tol": 0,
+  "note": "speed nopea gives 2"
+ },
+ {
+  "expr": "(() => { const t=simText(document.querySelector('#sim-root .readout')); return t.includes('\\\\bar{t} = 2{,}476') && t.includes('n = 5') && t.includes('t_{5} = 2{,}40') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout shows n, the latest reading and the mean with decimal comma"
+ },
+ {
+  "expr": "(() => { const t=simText(document.querySelector('#sim-root .readout')); return t.includes('\\\\Delta t = 0{,}250') && t.includes('t_\\\\text{min} = 2{,}18') && t.includes('t_\\\\text{max} = 2{,}68') && t.includes('= +0{,}076') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout shows the half-range, the smallest and largest reading and the signed difference from T"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0); S(2,0); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0, n = 40: forty equal readings stack, yet the top dot stays below the T and mean labels"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0.05); S(2,0); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0,05 s, n = 40 (exp-3 start): the stack stays below the T and mean labels"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=(i,v)=>{R[i].value=v; R[i].dispatchEvent(new Event('input',{bubbles:true}));}; S(1,0); S(2,0.3); S(0,40);",
+  "expr": "(() => { const S=window.simState; const L=S.labels.filter(l=>l.s==='$T$'||l.s==='$\\\\bar{t}$'); const low=Math.max(...L.map(l=>l.y1)); return L.length===2 && S.dotTop>=low && S.dotTop>=0 && S.dotTop<338 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sat 0, sys +0,30 s, n = 40: the stack stays below the labels"
+ }
+]

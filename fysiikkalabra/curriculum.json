@@ -31,6 +31,7 @@
       "Globaali- ja kulttuuriosaaminen",
       "Monitieteinen ja luova osaaminen"
     ],
+    "initialized": "2026-10-27",
     "lessons": [
       {
         "id": "fy1-1",
@@ -40,12 +41,13 @@
           "LOPS FY1: tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin"
         ],
         "prerequisites": [],
-        "sim": false,
+        "sim": true,
         "glossary": [
           "fysiikka",
           "malli",
           "kymmenpotenssi",
-          "suuruusluokka"
+          "suuruusluokka",
+          "valovuosi"
         ]
       },
       {
@@ -58,13 +60,14 @@
         "prerequisites": [
           "fy1-1"
         ],
-        "sim": false,
+        "sim": true,
         "glossary": [
           "suure",
           "yksikkö",
           "SI-järjestelmä",
           "etuliite",
-          "merkitsevä numero"
+          "merkitsevä numero",
+          "astronominen yksikkö"
         ]
       },
       {
@@ -180,6 +183,12 @@
           "raportti"
         ]
       }
+    ],
+    "scope_notes": [
+      "FY1 is the first course: no prior physics beyond comprehensive school. Motion stays at s = vt (and s = s0 + vt) and v = gt as linear models; forces, Newton's laws, energy and vectors are FY2/FY4.",
+      "Teacher's brief 2026-10-27 (Lauri): interactive scale simulations. fy1-1 has a 'Scale of the Universe' style zoom from the Planck length (about 1,6·10^-35 m) to the observable universe (diameter about 8,8·10^26 m), one power of ten at a time; fy1-2 has an 'If the Moon were only 1 pixel' style scrollable solar system to true scale, with Voyager 2 on it.",
+      "Voyager 2 data (teacher's brief 2026-10-27): distance, speed and one-way signal time computed from a chosen date with the uniform-motion model d = d0 + v(t - t0) from source data: heliopause crossing 2018-11-05 at 119,7 AU from the Sun (NASA/JPL), heliocentric speed 15,341 km/s (JPL Voyager mission status); 1 AU = 149 597 870,7 km, c = 299 792 458 m/s. Label the values as model values with their source (source: model); the model gives about 143 AU for February 2026, matching JPL's 143,05 AU. fy1-5 uses Voyager 2 as an example of s = s0 + vt.",
+      "Teacher's brief 2026-10-28 (Lauri): fy1-1 also gives a qualitative overview of the structure of matter (molecule, atom, nucleus and electrons, protons and neutrons, quarks; atom about 10^4–10^5 times its nucleus), of astronomical structures (Earth–Moon, Sun as a star, Solar System as one planetary system, heliosphere vs the reach of the Sun's gravity, Milky Way, galaxy groups and clusters, observable vs whole universe; nebulae, neutron stars and black holes as object types, not levels) and of the four fundamental interactions (gravitation, electromagnetic, strong, weak with beta decay) linked to one phenomenon each. No quantum mechanics, particle classification, stellar evolution or cosmology equations. The scale simulation stays the same zoom; it gained a water molecule, a neutron star and the event horizon of Sgr A*. fy1-2 links units and prefixes to these scales."
     ]
   },
   "FY2": {
@@ -209,8 +218,13 @@
       "Monitieteinen ja luova osaaminen"
     ],
     "scope_notes": [
-      "FY2 introduces energy forms without expressions; E_k, E_p, the work-energy theorem, vectors and cos α are FY4."
+      "FY2 introduces energy forms without expressions; E_k, E_p, the work-energy theorem, vectors and cos α are FY4.",
+      "FY2 comes after FY1 and before FY3: students know SI units, prefixes and powers of ten, measurement and Delta x, graphs and the linear models s = vt and m = rho V (FY1 chapters, by name). Build on them; do not re-teach them.",
+      "No duplication with FY3 (taught later, it builds on FY2): FY2 has no work W = Fs or force, no Q = c m Delta T, no internal energy or first law, no heat-engine cycle or Carnot limit, no U-value or heat-conduction formulas, no radiative energy-balance model, and no product of chain efficiencies (fy3-15 does the chain and combined heat and power quantitatively). FY2 stays at energy forms, conservation, joule and kWh, P = E : t, one device's efficiency with an energy-flow (Sankey) picture, E = Hm, comparing production methods by orders of magnitude, transmission of electricity and heat qualitatively with simple loss percentages, and the environment.",
+      "Teacher's FY1-FY2 worksheet (FY01FY02_K2026.pdf, Lauri) sets the core vocabulary: energy forms mechanical (potential and kinetic), chemical (fuels, food, batteries), radiant, nuclear, electrical and thermal; energy is not created or destroyed but converts to less useful forms (E_alussa = E_lopussa for an isolated system); P = E/t with [P] = W and 1 kWh = 3,6 MJ; efficiency as the useful share of the energy taken in, by energy or by power; E = Hm; power plants as weather-dependent (wind, solar), well-adjustable (hydro, many fuel plants) and steady base load (nuclear); comparison criteria price, power, transportability, storability, safety and environmental impacts (emissions, climate change, land use, nature, waste, safety); greenhouse effect qualitatively (gases let solar radiation in but slow the outgoing heat radiation; humans add CO2 and methane).",
+      "Data in FY2 (Finnish energy statistics, emission factors, heating values) are real values with a named source (Tilastokeskus, Energiateollisuus, Fingrid, Motiva, IPCC) and year, rounded; mark invented situations as examples, never as statistics."
     ],
+    "initialized": "2026-10-28",
     "lessons": [
       {
         "id": "fy2-1",

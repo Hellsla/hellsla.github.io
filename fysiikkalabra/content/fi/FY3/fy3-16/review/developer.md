@@ -1,0 +1,2 @@
+VERDICT: DONE
+Round 2. inquiry.json: löyly Vastaus rounding now names ΔT = 90 K (m cancels); kayra t0 wording; "UA" wording; check-3 model: "esimerkiksi 0,20 kg", no particle-bond claim. exit-ticket.json: 1,8·10² kJ. solutions.md: L1-03 ice claim, L3-03 drop empty check, 1,51 kg / two figures, Sijoitus split into lines; L3-01 sentence clarified. lesson.md: sentence that the graph is the example bag. No numbers or answers changed.

@@ -1,0 +1,391 @@
+{
+ "version": 1,
+ "contribution": "Massa on suoraan verrannollinen tilavuuteen, ja verrannollisuuskerroin on aineen tiheys: m = ρV on lineaarinen malli, josta ratkaistaan massa, tilavuus tai tiheys sekä luetaan kulmakertoimena mittauksista, myös astian massan ollessa mukana.",
+ "learn": [
+  "Osaat laskea kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
+  "Osaat selittää, miksi massa on suoraan verrannollinen tilavuuteen ja mitä suoran kulmakerroin kertoo.",
+  "Osaat määrittää aineen tiheyden mittaustuloksista ja tunnistaa aineen taulukon avulla."
+ ],
+ "prior": [
+  "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat mittausepävarmuuden rajoissa origon kautta kulkevalla suoralla, ja sen kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",
+  "Mittaustuloksissa on aina virhettä, ja tulos ilmoitetaan sopivalla määrällä merkitseviä numeroita (luku *Mittaaminen ja mittauksen luotettavuus*)",
+  "Suureet lasketaan SI-yksiköissä ja yksiköt muunnetaan potenssien avulla (luku *Suureet, yksiköt ja SI-järjestelmä*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Kierrätyspisteellä on pöydällä kaksi harmaata metallikuutiota. Ne ovat täsmälleen samankokoiset, mutta toinen tuntuu kädessä paljon raskaammalta kuin toinen. Toinen on alumiinia ja toinen rautaa, mutta kuutioissa ei ole merkintöjä. Pöydällä on vaaka ja viivoitin.",
+   "question": "Mitä kuutioista kannattaa mitata, jotta niiden aineen voi päätellä?"
+  },
+  {
+   "id": "kertaus",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Kertaa: suoraan verrannollisuus",
+   "optional": true,
+   "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle. Mitä tämä kertoo suureiden riippuvuudesta?",
+   "choices": [
+    {
+     "text": "Suure $y$ on suoraan verrannollinen suureeseen $x$: suhde $y : x$ on vakio, ja se on suoran kulmakerroin.",
+     "correct": true,
+     "feedback": "Oikein. Origon kautta kulkeva suora on mallia $y = kx$, joten suhde $y : x = k$ pysyy samana ja kaksinkertainen $x$ antaa kaksinkertaisen $y$:n (luku *Graafinen esitys ja suoran sovittaminen*). Tänään $y$ on massa, $x$ tilavuus ja $k$ tiheys."
+    },
+    {
+     "text": "Suureet $x$ ja $y$ ovat yhtä suuret.",
+     "feedback": "Kulmakerroin voi olla mikä tahansa luku, ei vain 1. Suoran $y = kx$ pisteissä $y$ on $k$-kertainen $x$:ään verrattuna (luku *Graafinen esitys ja suoran sovittaminen*)."
+    },
+    {
+     "text": "Suure $y$ kasvaa aina saman verran, kun $x$ kasvaa, mutta $y$ voi olla alussa nollasta poikkeava.",
+     "feedback": "Tämä kuvaa suoraa $y = kx + b$, jossa vakio $b$ on leikkauspiste pystyakselilla. Kun suora kulkee origon kautta, $b = 0$, ja silloin $y$ on myös nolla, kun $x$ on nolla."
+    },
+    {
+     "text": "Suureet eivät riipu toisistaan.",
+     "feedback": "Jos suureet eivät riippuisi toisistaan, pisteet asettuisivat vaakasuoralle suoralle tai hajalleen. Suora, jonka kulmakerroin ei ole nolla, kertoo selvästä riippuvuudesta."
+    }
+   ]
+  },
+  {
+   "id": "ennuste-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 1: kolminkertainen pala",
+   "justify": true,
+   "prompt": "Alumiinipalan tilavuus on $20\\,\\text{cm}^3$ ja massa $54\\,\\text{g}$. Mikä on samasta alumiinista tehdyn $60\\,\\text{cm}^3$:n palan massa?",
+   "choices": [
+    {
+     "text": "$94\\,\\text{g}$, koska tilavuus kasvaa $40\\,\\text{cm}^3$ ja massakin kasvaa saman luvun verran.",
+     "feedback": "Massa ei kasva yhtä monta grammaa kuin tilavuus kasvaa kuutiosenttimetrejä. Alumiinin jokaista kuutiosenttimetriä kohti on massaa $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2{,}7\\,\\text{g/cm}^3$, joten $40\\,\\text{cm}^3$ lisää massaa $108\\,\\text{g}$, ja yhteensä $162\\,\\text{g}$."
+    },
+    {
+     "text": "$162\\,\\text{g}$, koska tilavuus kolminkertaistuu ja siksi myös massa kolminkertaistuu.",
+     "correct": true,
+     "feedback": "Oikein. Kun massa on suoraan verrannollinen tilavuuteen, kolminkertainen tilavuus antaa kolminkertaisen massan: $3 \\cdot 54\\,\\text{g} = 162\\,\\text{g}$. Sama tulos saadaan tiheydellä $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2{,}7\\,\\text{g/cm}^3$, ja $2{,}7\\,\\text{g/cm}^3 \\cdot 60\\,\\text{cm}^3 = 162\\,\\text{g}$."
+    },
+    {
+     "text": "$108\\,\\text{g}$, koska massa kasvaa hitaammin kuin tilavuus ja kaksinkertaistuu.",
+     "feedback": "Samasta aineesta tehdyssä kappaleessa jokainen kuutiosenttimetri sisältää saman massan, $2{,}7\\,\\text{g}$. Kolme kertaa niin monta kuutiosenttimetriä sisältää kolme kertaa niin paljon massaa, joten massa kasvaa yhtä nopeasti kuin tilavuus: $162\\,\\text{g}$."
+    },
+    {
+     "text": "Sitä ei voi tietää, koska massa riippuu myös kappaleen muodosta.",
+     "feedback": "Muoto ei vaikuta massaan, kun aine ja tilavuus ovat samat. Tiheys $2{,}7\\,\\text{g/cm}^3$ on aineen ominaisuus, joten $60\\,\\text{cm}^3$ alumiinia painaa $162\\,\\text{g}$ muodosta riippumatta."
+    }
+   ]
+  },
+  {
+   "id": "ennuste-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 2: kaksi ainetta samassa koordinaatistossa",
+   "justify": true,
+   "prompt": "Alumiini- ja rautapalojen massat ja tilavuudet mitataan, ja tulokset piirretään samaan koordinaatistoon, jossa vaaka-akselilla on tilavuus ja pystyakselilla massa. Millaiset suorat saadaan?",
+   "choices": [
+    {
+     "text": "Kaksi samaa suoraa, koska kumpikin aine on metallia.",
+     "feedback": "Ainelaji ratkaisee, ei se, onko aine metallia. Alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$ ja raudan $7{,}87\\,\\text{g/cm}^3$, joten samalla tilavuudella raudan massa on lähes kolminkertainen ja sen suora on jyrkempi."
+    },
+    {
+     "text": "Kaksi origon kautta kulkevaa suoraa, ja rautasuora on jyrkempi.",
+     "correct": true,
+     "feedback": "Oikein. Nollatilavuudessa massa on nolla, joten suorat lähtevät origosta. Kulmakerroin on tiheys, ja raudan tiheys $7{,}87\\,\\text{g/cm}^3$ on suurempi kuin alumiinin $2{,}70\\,\\text{g/cm}^3$, joten samalla tilavuudella rautapalan massa on suurempi ja sen suora jyrkempi."
+    },
+    {
+     "text": "Kaksi suoraa, jotka eivät kulje origon kautta, koska jokaisella kappaleella on aina jokin vähimmäismassa.",
+     "feedback": "Kappale, jonka tilavuus on nolla, ei sisällä ainetta, joten sen massa on nolla ja suora kulkee origon kautta. Vain jos mukana on astia tai pakkaus, mittauspisteet siirtyvät ylöspäin; sitä käsitellään myöhemmin."
+    },
+    {
+     "text": "Rautasuora on loivempi, koska rauta on tiheää ja siihen mahtuu vähemmän tilavuutta.",
+     "feedback": "Pystyakselilla on massa. Tiheässä aineessa on tilavuutta kohti paljon massaa, joten massa kasvaa tilavuuden mukana nopeasti ja suora on jyrkkä, ei loiva."
+    }
+   ]
+  },
+  {
+   "id": "alumiini",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Alumiinipalat: onko massa verrannollinen tilavuuteen?",
+   "source": "simulated",
+   "text": "Taulukossa on esimerkkiaineisto viidestä eri kokoisesta alumiinipalasta. Tilavuus on laskettu mitoista ja massa mitattu vaa'alla. Luvut ovat *esimerkkiarvoja*, eivät oikeita mittauksia, mutta niissä on mukana tavallista mittausvirhettä.\n\n| Pala | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 10,0 | 26,8 |\n| 2 | 20,0 | 54,4 |\n| 3 | 30,0 | 80,6 |\n| 4 | 40,0 | 108,4 |\n| 5 | 50,0 | 134,6 |\n\nLaske jokaiselle riville suhde $m : V$.",
+   "question": {
+    "type": "choice",
+    "prompt": "Mitä taulukosta voi päätellä?",
+    "choices": [
+     {
+      "text": "Massa kasvaa tilavuuden mukana, joten massa on suoraan verrannollinen tilavuuteen.",
+      "feedback": "Pelkkä kasvaminen ei riitä verrannollisuuteen. Myös suora $m = V + 5$ kasvaisi tilavuuden mukana. Verrannollisuudessa suhde $m : V$ on vakio, ja se pitää laskea: tässä se on joka rivillä noin $2{,}7\\,\\text{g/cm}^3$."
+     },
+     {
+      "text": "Suhde $m : V$ on joka rivillä lähes sama, noin $2{,}7\\,\\text{g/cm}^3$, joten massa on suoraan verrannollinen tilavuuteen. Pienet erot johtuvat mittausvirheestä.",
+      "correct": true,
+      "feedback": "Oikein. Suhteet ovat $2{,}68$, $2{,}72$, $2{,}69$, $2{,}71$ ja $2{,}69\\,\\text{g/cm}^3$, ja ne poikkeavat keskiarvostaan $2{,}70\\,\\text{g/cm}^3$ alle prosentin. Vakio suhde on aineen tiheys, ja se on alumiinille noin $2{,}7\\,\\text{g/cm}^3$."
+     },
+     {
+      "text": "Erotus $m - V$ pysyy samana, joten massa on aina saman verran tilavuutta suurempi.",
+      "feedback": "Erotukset ovat $16{,}8$, $34{,}4$, $50{,}6$, $68{,}4$ ja $84{,}6$, eli ne kasvavat. Lisäksi massan ja tilavuuden yksiköt ovat eri, eikä niitä voi vähentää toisistaan. Oikea vertailu on suhde $m : V$."
+     },
+     {
+      "text": "Suhde $m : V$ vaihtelee luvusta $2{,}68$ lukuun $2{,}72$, joten massa ei ole verrannollinen tilavuuteen.",
+      "feedback": "Mittaustuloksissa on aina pientä vaihtelua (luku *Mittaaminen ja mittauksen luotettavuus*). Jokainen suhde poikkeaa keskiarvostaan alle prosentin, eikä se ole systemaattista, joten suhde on käytännössä vakio."
+     }
+    ]
+   }
+  },
+  {
+   "id": "metalli",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Tuntematon metalli",
+   "source": "simulated",
+   "text": "Taulukossa on esimerkkiaineisto tuntemattomasta metallista tehdyistä paloista. Luvut ovat *esimerkkiarvoja*. Tiheyden voi laskea kahdella tavalla: yhden rivin suhteena $m : V$ tai kahden kaukana toisistaan olevan rivin erotusten suhteena $\\Delta m : \\Delta V$. Jälkimmäinen käyttää koko mittausaluetta.\n\n| Pala | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5,0 | 45,1 |\n| 2 | 10,0 | 89,2 |\n| 3 | 15,0 | 135,0 |\n| 4 | 20,0 | 178,9 |\n| 5 | 25,0 | 224,3 |",
+   "question": {
+    "type": "numeric",
+    "prompt": "Laske metallin tiheys käyttämällä ensimmäistä ja viimeistä riviä ja kaavaa $\\rho = \\Delta m : \\Delta V$. Vertaa tulosta lopuksi kirjan taulukkoon (luvun teoriaosa): alumiini $2{,}70$, rauta $7{,}87$, kupari $8{,}96$, lyijy $11{,}3$ ja kulta $19{,}3\\,\\text{g/cm}^3$. Vastaa yksikössä $\\text{g/cm}^3$.",
+    "answer": 8.96,
+    "unit": "g/cm³",
+    "tolerance": 0.02,
+    "hints": [
+     "Mikä on massan ja mikä tilavuuden muutos ensimmäisen ja viimeisen rivin välillä?",
+     "$\\Delta m = 224{,}3\\,\\text{g} - 45{,}1\\,\\text{g}$ ja $\\Delta V = 25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3$.",
+     "$\\rho = \\dfrac{179{,}2\\,\\text{g}}{20{,}0\\,\\text{cm}^3}$."
+    ],
+    "mistakes": [
+     {
+      "value": 0.112,
+      "feedback": "Tilavuus ja massa ovat vaihtaneet paikkaa. Tiheys on massa jaettuna tilavuudella, joten $\\Delta m$ tulee osoittajaan ja $\\Delta V$ nimittäjään."
+     },
+     {
+      "value": 7.17,
+      "feedback": "Jaoit massan muutoksen $179{,}2\\,\\text{g}$ viimeisen rivin tilavuudella $25{,}0\\,\\text{cm}^3$. Myös tilavuudesta pitää ottaa muutos: $25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3 = 20{,}0\\,\\text{cm}^3$."
+     }
+    ],
+    "solution": "**Annettu:** ensimmäinen rivi $V_1 = 5{,}0\\,\\text{cm}^3$, $m_1 = 45{,}1\\,\\text{g}$ ja viimeinen rivi $V_5 = 25{,}0\\,\\text{cm}^3$, $m_5 = 224{,}3\\,\\text{g}$\n\n**Kysytty:** metallin tiheys $\\rho$ yksikössä $\\text{g/cm}^3$\n\n**Periaate:** Massa on suoraan verrannollinen tilavuuteen, joten mittauspisteet ovat suoralla $m = \\rho V$, jonka kulmakerroin on tiheys. Kulmakerroin saadaan kahden kaukana toisistaan olevan pisteen erotusten suhteena.\n\n**Kaava:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Muunnokset:** Ei tarvita: massat ovat grammoina ja tilavuudet kuutiosenttimetreinä, ja vastaus pyydetään yksikössä $\\text{g/cm}^3$.\n\n**Sijoitus:** $\\rho = \\dfrac{224{,}3\\,\\text{g} - 45{,}1\\,\\text{g}}{25{,}0\\,\\text{cm}^3 - 5{,}0\\,\\text{cm}^3} = \\dfrac{179{,}2\\,\\text{g}}{20{,}0\\,\\text{cm}^3} = 8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Vastaus:** $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, kolme merkitsevää numeroa kuten mittaustuloksissa.\n\n**Järkevyys:** Arvo vastaa taulukon kuparia, $8{,}96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, joten metalli on luultavasti kuparia. Tarkistus yhdellä rivillä: $\\dfrac{224{,}3\\,\\text{g}}{25{,}0\\,\\text{cm}^3} = 8{,}97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$ eli lähes sama."
+   }
+  },
+  {
+   "id": "neste",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Neste astiassa: mistä massa koostuu?",
+   "source": "simulated",
+   "text": "Mittapulloon kaadetaan nestettä, ja vaaka näyttää pullon ja nesteen yhteismassan $m_\\text{yht}$. Taulukossa on esimerkkiaineisto. Luvut ovat *esimerkkiarvoja*.\n\n| $V$ ($\\text{cm}^3$) | $m_\\text{yht}$ (g) |\n|---|---|\n| 0 | 42,1 |\n| 20 | 57,9 |\n| 40 | 73,5 |\n| 60 | 89,6 |\n| 80 | 105,1 |\n\nTutki, kuinka paljon massa kasvaa jokaista $20\\,\\text{cm}^3$ kohti.",
+   "question": {
+    "type": "choice",
+    "prompt": "Mikä väite on oikein?",
+    "choices": [
+     {
+      "text": "Kokonaismassa on suoraan verrannollinen tilavuuteen, koska massa kasvaa tilavuuden mukana.",
+      "feedback": "Kun tilavuus on nolla, kokonaismassa on silti $42{,}1\\,\\text{g}$, ja suhteet $m_\\text{yht} : V$ ovat $2{,}9$, $1{,}8$, $1{,}5$ ja $1{,}3\\,\\text{g/cm}^3$, eli ne eivät ole vakioita. Verrannollisessa riippuvuudessa suora kulkisi origon kautta."
+     },
+     {
+      "text": "Kokonaismassa ei ole suoraan verrannollinen tilavuuteen. Massa kasvaa kuitenkin joka $20\\,\\text{cm}^3$:n välein lähes saman verran, noin $16\\,\\text{g}$, ja tyhjän pullon massa on noin $42\\,\\text{g}$.",
+      "correct": true,
+      "feedback": "Oikein. Lisäykset ovat $15{,}8$, $15{,}6$, $16{,}1$ ja $15{,}5\\,\\text{g}$. Tilavuus ja massa riippuvat toisistaan lineaarisesti: $m_\\text{yht} = \\rho V + m_0$. Suoran kulmakerroin $(105{,}1 - 42{,}1)\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0{,}79\\,\\text{g/cm}^3$ on nesteen tiheys, ja leikkauspiste $m_0 \\approx 42\\,\\text{g}$ on pullon massa."
+     },
+     {
+      "text": "Suoran kulmakerroin on tyhjän pullon massa, noin $42\\,\\text{g}$.",
+      "feedback": "Tyhjän pullon massa on suoran leikkauspiste pystyakselilla, eli massa, kun $V = 0$. Kulmakerroin kertoo, kuinka paljon massa kasvaa tilavuusyksikköä kohti, ja se on nesteen tiheys."
+     },
+     {
+      "text": "Nesteen tiheys saadaan viimeisestä rivistä: $105{,}1\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 1{,}3\\,\\text{g/cm}^3$.",
+      "feedback": "Viimeisen rivin massaan kuuluu myös pullo. Jos pullon massa $42{,}1\\,\\text{g}$ vähennetään, nesteen massa on $63{,}0\\,\\text{g}$ ja tiheys $63{,}0\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0{,}79\\,\\text{g/cm}^3$."
+     }
+    ]
+   }
+  },
+  {
+   "id": "johtopaatos",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Johtopäätös: miten massa ja tilavuus liittyvät?",
+   "prompt": "Kirjoita kolmen taulukon perusteella: Mistä tiedät, että alumiinipalojen massa on suoraan verrannollinen tilavuuteen? Miten tuntemattoman metallin tiheys saatiin? Kumpi suora, alumiinin vai tuntemattoman metallin, olisi koordinaatistossa jyrkempi ja miksi? Mitä pitää tehdä, jos nestettä mitataan astiassa?",
+   "model": "Alumiinipaloissa suhde $m : V$ oli joka rivillä noin $2{,}7\\,\\text{g/cm}^3$, joten massa on suoraan verrannollinen tilavuuteen ja suhde on aineen tiheys. Tuntemattoman metallin tiheys saatiin kahden kaukana toisistaan olevan pisteen erotuksista, $\\rho = \\Delta m : \\Delta V = 179{,}2\\,\\text{g} : 20{,}0\\,\\text{cm}^3 = 8{,}96\\,\\text{g/cm}^3$, ja se vastasi kuparia. Kuparin suora on alumiinin suoraa jyrkempi, koska sen tiheys eli kulmakerroin on suurempi. Nesteen kokonaismassa astian kanssa ei ole verrannollinen tilavuuteen, koska tyhjän astian massa on mukana. Siksi astian massa pitää vähentää kokonaismassasta tai tiheys pitää lukea suoran kulmakertoimesta, jolloin astian massa on suoran leikkauspiste. Aineistot olivat esimerkkiarvoja, joissa oli pientä mittausvirhettä. Kuutioiden aine voidaan siis päätellä mittaamalla massa ja tilavuus ja laskemalla niistä tiheys.",
+   "criteria": [
+    "Perustelin verrannollisuuden suhteella $m : V$, en pelkällä massan kasvulla.",
+    "Laskin tiheyden kahden kaukana toisistaan olevan pisteen avulla tai suhteena $m : V$.",
+    "Selitin, että astian massa on vähennettävä tai että se näkyy leikkauspisteenä.",
+    "Mainitsin, että aineisto oli esimerkkiarvoja tai että mittauksissa on virhettä.",
+    "Kerroin, kumman aineen suora on jyrkempi ja miksi, ja mitä kuutioista kannattaa mitata."
+   ]
+  },
+  {
+   "id": "teoria-osa",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "esimerkki",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "virhe",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe",
+   "optional": true,
+   "prompt": "Opiskelija laskee $250\\,\\text{cm}^3$ alumiinipalan massan: $m = \\rho V = 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 = 675\\,000\\,\\text{kg}$. Tulos on paljon liian suuri. Missä on virhe?",
+   "choices": [
+    {
+     "text": "Tilavuus on kuutiosenttimetreinä, vaikka tiheys on yksikössä $\\text{kg/m}^3$. Oikein: $250\\,\\text{cm}^3 = 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3$ ja $m = 0{,}675\\,\\text{kg}$.",
+     "correct": true,
+     "feedback": "Oikein. Yksiköt on muunnettava samaan järjestelmään: $250\\,\\text{cm}^3 = 250 \\cdot 10^{-6}\\,\\text{m}^3 = 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3$, ja $2700\\,\\text{kg/m}^3 \\cdot 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3 = 0{,}675\\,\\text{kg}$. Tuloksen olisi voinut huomata vääräksi arviolla: neljännes litraa alumiinia ei voi painaa satoja tonneja."
+    },
+    {
+     "text": "Kaava on väärä: massa pitäisi laskea jakamalla tilavuus tiheydellä, $m = V : \\rho$.",
+     "feedback": "Kaava $m = \\rho V$ on oikein, koska tiheys on massa tilavuutta kohti. Tarkista yksiköt: $V : \\rho$ antaisi yksikön $\\text{m}^3 \\cdot \\text{m}^3/\\text{kg}$, joka ei ole massan yksikkö."
+    },
+    {
+     "text": "Tiheys pitää aina antaa yksikössä $\\text{g/cm}^3$, joten $\\text{kg/m}^3$ ei kelpaa.",
+     "feedback": "Molemmat yksiköt kelpaavat, kunhan ne ovat johdonmukaiset: $2700\\,\\text{kg/m}^3 = 2{,}70\\,\\text{g/cm}^3$. Virhe syntyy vasta, kun tiheyden ja tilavuuden yksiköt ovat eri järjestelmistä."
+    },
+    {
+     "text": "Laskussa ei ole virhettä, vaan palan massa on todella tuhansia kiloja.",
+     "feedback": "Arvioi tulos: $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$, ja alumiini on 2,7-kertaisen tiheää, joten massa on noin $0{,}7\\,\\text{kg}$."
+    }
+   ]
+  },
+  {
+   "id": "siirto",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Sovella uuteen tilanteeseen",
+   "prompt": "Joesta löydetyn kiven massa on $187\\,\\text{g}$. Mittalasissa on vettä $120\\,\\text{ml}$, ja kun kivi upotetaan, lukema on $190\\,\\text{ml}$. Kuinka suuri on kiven aineen tiheys? Vastaa yksikössä $\\text{kg/m}^3$.",
+   "answer": 2700,
+   "unit": "kg/m³",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on kiven tilavuus? Kivi syrjäyttää oman tilavuutensa verran vettä.",
+    "Tilavuus on $V = V_2 - V_1 = 190\\,\\text{ml} - 120\\,\\text{ml}$. Muunna sitten massa kilogrammoiksi ja tilavuus kuutiometreiksi: $1\\,\\text{ml} = 1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$.",
+    "$\\rho = \\dfrac{0{,}187\\,\\text{kg}}{70 \\cdot 10^{-6}\\,\\text{m}^3}$."
+   ],
+   "mistakes": [
+    {
+     "value": 2.67,
+     "feedback": "Tuloksesi on oikea, jos se on yksikössä $\\text{g/cm}^3$. Kysytään kuitenkin yksikössä $\\text{kg/m}^3$, ja $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$."
+    },
+    {
+     "value": 984,
+     "feedback": "Käytit tilavuutena veden loppulukemaa $190\\,\\text{ml}$. Kiven tilavuus on veden pinnan nousu, $190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml}$."
+    },
+    {
+     "value": 2670000,
+     "feedback": "Massa on grammoina ja tilavuus kuutiometreinä, joten yksiköt ovat eri järjestelmistä. Muunna massa kilogrammoiksi: $187\\,\\text{g} = 0{,}187\\,\\text{kg}$."
+    }
+   ],
+   "solution": "**Annettu:** kiven massa $m = 187\\,\\text{g}$; veden lukema ennen $V_1 = 120\\,\\text{ml}$ ja jälkeen $V_2 = 190\\,\\text{ml}$\n\n**Kysytty:** kiven aineen tiheys $\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** Upotettu kivi syrjäyttää oman tilavuutensa verran vettä, joten kiven tilavuus on lukemien erotus. Tiheys on massa jaettuna tilavuudella.\n\n**Kaava:** $V = V_2 - V_1$ ja $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Muunnokset:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7{,}0 \\cdot 10^{-5}\\,\\text{m}^3$ ja $m = 187\\,\\text{g} = 0{,}187\\,\\text{kg}$.\n\n**Sijoitus:** $\\rho = \\dfrac{0{,}187\\,\\text{kg}}{7{,}0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Vastaus:** $2{,}7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, kaksi merkitsevää numeroa, koska lukemien erotus $70\\,\\text{ml}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kivet ovat tavallisesti noin 2,5–3-kertaisen tiheitä veteen verrattuna, ja $2{,}7 \\cdot 10^3\\,\\text{kg/m}^3$ on tällä välillä. Arvio: $190\\,\\text{g}$ ja $70\\,\\text{cm}^3$ antaisivat noin $2{,}7\\,\\text{g/cm}^3$."
+  },
+  {
+   "id": "harjoitukset",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Harjoittele kolmella tasolla. Tason 1 tehtävät käyttävät kaavaa $\\rho = m : V$ suoraan, tason 2 tehtävissä muunnetaan yksiköitä tai käsitellään mittaustuloksia, ja taso 3 vaatii päättelyä."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Kaksi samanlaista pulloa täytetään niin, että kummassakin on $0{,}50\\,\\text{kg}$ nestettä: toisessa vettä ja toisessa ruokaöljyä, jonka tiheys on $920\\,\\text{kg/m}^3$. Kumpi neste vie enemmän tilaa?",
+   "choices": [
+    {
+     "text": "Ruokaöljy, koska sen tiheys on pienempi ja sama massa vie siksi suuremman tilavuuden: $V = m : \\rho$.",
+     "correct": true,
+     "feedback": "Oikein. Veden tilavuus on $0{,}50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 = 5{,}0 \\cdot 10^{-4}\\,\\text{m}^3$ ja öljyn $0{,}50\\,\\text{kg} : 920\\,\\text{kg/m}^3 = 5{,}4 \\cdot 10^{-4}\\,\\text{m}^3$. Mitä pienempi tiheys, sitä enemmän tilavuutta massayksikköä kohti."
+    },
+    {
+     "text": "Vesi, koska veden tiheys on suurempi ja tiheä aine vie enemmän tilaa.",
+     "feedback": "Tiheä aine pakkautuu pieneen tilaan: tiheys on massa tilavuutta kohti, joten suurella tiheydellä sama massa vie vähemmän tilaa. Kaavasta $V = m : \\rho$ näkee, että suurempi $\\rho$ antaa pienemmän $V$:n."
+    },
+    {
+     "text": "Yhtä paljon, koska massa on sama.",
+     "feedback": "Sama massa ei tarkoita samaa tilavuutta. Tilavuus on $V = m : \\rho$, ja se riippuu myös tiheydestä, joka on aineille erilainen."
+    },
+    {
+     "text": "Sitä ei voi päätellä, koska aineiden hiukkaset ovat erilaisia.",
+     "feedback": "Ratkaisu ei vaadi hiukkasmallia. Tiheydet $1000\\,\\text{kg/m}^3$ ja $920\\,\\text{kg/m}^3$ sekä massa riittävät: $V = m : \\rho$ antaa tilavuudet."
+    }
+   ]
+  },
+  {
+   "id": "check-c2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Tiheys on aineen ominaisuus",
+   "prompt": "Rautakuution tilavuus kaksinkertaistuu, mutta aine pysyy rautana. Mitä tapahtuu kuution massalle ja tiheydelle?",
+   "choices": [
+    {
+     "text": "Massa kaksinkertaistuu ja tiheys pysyy samana.",
+     "feedback": "Oikein. Massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$, joten kaksinkertainen tilavuus tarkoittaa kaksinkertaista massaa. Tiheys $\\rho = m : V$ ei muutu, koska suhde pysyy samana: se on raudan ominaisuus.",
+     "correct": true
+    },
+    {
+     "text": "Massa ja tiheys kaksinkertaistuvat.",
+     "feedback": "Massa kaksinkertaistuu, mutta tiheys ei. Jos sekä massa että tilavuus kasvavat kaksinkertaisiksi, suhde $m : V$ pysyy samana. Tiheys ei kerro kappaleen kokoa vaan sitä, kuinka paljon massaa on tilavuusyksikössä."
+    },
+    {
+     "text": "Massa pysyy samana ja tiheys puolittuu.",
+     "feedback": "Massa ei pysy samana: kaksinkertainen rautakuutio sisältää kaksi kertaa niin paljon rautaa, joten sen massa kaksinkertaistuu. Tiheys ei puolitu, koska suhde $m : V$ pysyy samana."
+    },
+    {
+     "text": "Massa kaksinkertaistuu ja tiheys puolittuu.",
+     "feedback": "Tiheys ei puolitu. Kun tilavuus kaksinkertaistuu ja massa kaksinkertaistuu, suhde $\\rho = m : V$ pysyy samana. Tiheys pienenisi vain, jos tilavuus kasvaisi ilman, että massa kasvaa."
+    }
+   ]
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "3. Laskutehtävä",
+   "prompt": "Mäntykuution särmä on $20{,}0\\,\\text{cm}$ ja männyn tiheys $500\\,\\text{kg/m}^3$. Kuinka suuri on kuution massa? Vastaa kilogrammoina.",
+   "answer": 4.0,
+   "unit": "kg",
+   "tolerance": 0.02,
+   "hints": [
+    "Laske ensin kuution tilavuus. Kuution tilavuus on särmän kolmas potenssi.",
+    "Muunna särmä metreiksi: $20{,}0\\,\\text{cm} = 0{,}200\\,\\text{m}$. Tilavuus on $V = a^3$.",
+    "$m = \\rho a^3 = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot (0{,}200\\,\\text{m})^3$."
+   ],
+   "mistakes": [
+    {
+     "value": 4000000,
+     "feedback": "Tilavuus on kuutiosenttimetreinä ($8000\\,\\text{cm}^3$), mutta tiheys on yksikössä $\\text{kg/m}^3$. Muunna särmä metreiksi ennen laskemista: $0{,}200\\,\\text{m}$."
+    },
+    {
+     "value": 100,
+     "feedback": "Käytit tilavuutena särmää $0{,}200\\,\\text{m}$. Kuution tilavuus on särmän kolmas potenssi, $a^3 = (0{,}200\\,\\text{m})^3 = 0{,}00800\\,\\text{m}^3$."
+    }
+   ],
+   "solution": "**Annettu:** kuution särmä $a = 20{,}0\\,\\text{cm}$; männyn tiheys $\\rho = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Kysytty:** kuution massa $m$ kilogrammoina\n\n**Periaate:** Kuutio on kauttaaltaan mäntyä, joten massa on tiheys kertaa tilavuus. Kuution tilavuus on särmän kolmas potenssi.\n\n**Kaava:** $V = a^3$ ja $m = \\rho V = \\rho a^3$\n\n**Muunnokset:** Tiheys on yksikössä $\\text{kg/m}^3$, joten särmä muunnetaan metreiksi: $a = 20{,}0\\,\\text{cm} = 0{,}200\\,\\text{m}$.\n\n**Sijoitus:** $m = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot (0{,}200\\,\\text{m})^3 = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 0{,}00800\\,\\text{m}^3 = 4{,}00\\,\\text{kg}$\n\n**Vastaus:** $4{,}00\\,\\text{kg}$, kolme merkitsevää numeroa kuten särmässä $20{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Kuution tilavuus on $8{,}00\\,\\text{dm}^3$ eli kahdeksan litraa. Saman tilavuuden vesi olisi $8\\,\\text{kg}$, ja mänty on noin puolet veden tiheydestä, joten massa on noin $4\\,\\text{kg}$."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Selitä ja perustele",
+   "optional": true,
+   "prompt": "Opiskelija mittaa tuntemattoman metallipalan massan ja tilavuuden ja laskee tiheydeksi $8{,}9\\,\\text{g/cm}^3$. Hän sanoo: \"Pala on kuparia.\" Selitä, miksi tiheys on hyvä tapa tunnistaa aine ja miksi päätelmä ei silti ole täysin varma.",
+   "criteria": [
+    "Sanon, että tiheys on aineen ominaisuus, joka ei riipu kappaleen koosta.",
+    "Vertaan tulosta taulukkoarvoon: kuparin tiheys on $8{,}96\\,\\text{g/cm}^3$.",
+    "Mainitsen mittausvirheen: tulos poikkeaa taulukkoarvosta hieman, ja tilavuuden mittaus rajoittaa tarkkuutta.",
+    "Mainitsen, että eri aineilla voi olla lähes sama tiheys tai että pala voi olla seos."
+   ],
+   "model": "Tiheys $\\rho = m : V$ on aineen ominaisuus: saman aineen suuri ja pieni pala antavat saman tuloksen. Siksi mitattua tiheyttä voi verrata taulukkoarvoihin. Tulos $8{,}9\\,\\text{g/cm}^3$ on hyvin lähellä kuparin arvoa $8{,}96\\,\\text{g/cm}^3$, joten kupari on todennäköinen. Päätelmä ei ole varma, koska mittauksissa on aina virhettä, erityisesti tilavuudessa, ja koska muutkin aineet tai seokset voivat olla tiheydeltään lähellä samaa arvoa. Varmuutta lisäävät toiset mittaukset, kuten väri tai magneettisuus."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

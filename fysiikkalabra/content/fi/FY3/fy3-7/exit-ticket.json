@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Jäämurskaa lämmitetään. Lämpötila nousee $0\\,{}^\\circ\\text{C}$:seen ja pysyy sitten $0\\,{}^\\circ\\text{C}$:ssa, kunnes kaikki jää on sulanut, vaikka energiaa siirtyy koko ajan. Selitä mikromallilla, mihin energia kuluu.",
+    "a": "Sulamisen aikana siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia: jään säännöllinen järjestys purkautuu, ja hiukkasten välinen vuorovaikutusenergia kasvaa. Vesimolekyylit itse pysyvät ehjinä. Lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, joten hiukkasten keskimääräinen liike-energia ei kasva, ennen kuin kaikki jää on sulanut."
+  },
+  {
+    "q": "Lämpenemiskäyrässä on nousevia ja vaakasuoria osia. Mitä kummassakin tapahtuu ja mikä kaava pätee?",
+    "a": "Nousevilla osilla aine lämpenee ja $Q = cm\\Delta T$. Vaakasuorilla osilla aine muuttaa olomuotoaan vakiolämpötilassa ja $Q = sm$ (sulaminen) tai $Q = rm$ (höyrystyminen)."
+  }
+]

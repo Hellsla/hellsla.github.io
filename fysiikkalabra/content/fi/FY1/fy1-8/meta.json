@@ -1,0 +1,24 @@
+{
+  "id": "fy1-8",
+  "course": "FY1",
+  "title": "Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi",
+  "goals": [
+    "LOPS FY1: yksinkertaisen kokeellisen tutkimuksen suunnitteleminen ja toteutus",
+    "LOPS FY1: osaa suunnitella ja toteuttaa yksinkertaisia luonnontieteellisiä kokeita",
+    "Taidot: tutkimuksen suunnittelu, toteutus ja dokumentointi"
+  ],
+  "prerequisites": [
+    "fy1-3",
+    "fy1-4"
+  ],
+  "glossary": [
+    "tutkimus",
+    "hypoteesi",
+    "muuttuja",
+    "mittauspöytäkirja",
+    "raportti"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

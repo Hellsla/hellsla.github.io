@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-1-L1-01",
+      "level": 1,
+      "text": "Kappaleen massa on $4{,}0\\,\\text{kg}$. Mikä on sen paino Maassa?",
+      "answer": 39,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-02",
+      "level": 1,
+      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan kappale, jonka paino on 4,0 N. Kuinka monta senttimetriä jousi venyy, kun siihen ripustetaan kappale, jonka paino on 12 N?",
+      "answer": 6.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-03",
+      "level": 1,
+      "text": "Kuun pinnalle jätetyn mittalaitteen massa on $30\\,\\text{kg}$. Mikä on sen paino Kuussa? Lue $g$:n arvo oppitunnin taulukosta.",
+      "answer": 49,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-04",
+      "level": 1,
+      "text": "Kuvaajassa ovat erään voimamittarin jousen kalibrointimittaukset. Kun jouseen ripustetaan tuntematon kappale, jousi venyy $3{,}5\\,\\text{cm}$. Kuinka suuri voima venyttää jousta?",
+      "figure": "fy3-1/spring-points",
+      "answer": 7.0,
+      "unit": "N",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-1-L1-05",
+      "level": 1,
+      "text": "Kappaleen massa on $2{,}5\\,\\text{kg}$. Mikä on sen paino Jupiterissa, missä $g = 24{,}8\\,\\text{m/s}^2$?",
+      "answer": 62,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-1-L2-01",
+      "level": 2,
+      "text": "Voimamittari näyttää 49 N, kun siihen ripustetaan kappale Maassa. Mikä on kappaleen massa?",
+      "answer": 5.0,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-02",
+      "level": 2,
+      "text": "Kananmunan massa on $60\\,\\text{g}$. Mikä on sen paino Maassa newtoneina?",
+      "answer": 0.59,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-03",
+      "level": 2,
+      "text": "Astronautin massa varusteineen on $145\\,\\text{kg}$. Kuinka paljon pienempi hänen painonsa on Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) kuin Maassa ($g = 9{,}81\\,\\text{m/s}^2$)?",
+      "answer": 1190,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-04",
+      "level": 2,
+      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa $0{,}20\\,\\text{kg}$:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?",
+      "answer": 5.9,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-1-L3-01",
+      "level": 3,
+      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin ($g = 3{,}71\\,\\text{m/s}^2$). Mitä sama mittari näyttää siellä?",
+      "answer": 6.8,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-02",
+      "level": 3,
+      "text": "Nostaja jaksaa Maassa nostaa korkeintaan $22{,}0\\,\\text{kg}$:n massan, eli hän jaksaa tuottaa voiman, joka on yhtä suuri kuin tämän massan paino. Kuinka suuren massan hän jaksaisi nostaa Kuussa ($g = 1{,}62\\,\\text{m/s}^2$) samalla voimalla?",
+      "answer": 133,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-03",
+      "level": 3,
+      "text": "Voimamittarin asteikko on tehty Maassa niin, että se näyttää kilogrammoina luvun, joka saadaan jakamalla voima arvolla $9{,}81\\,\\text{m/s}^2$. Marsissa ($g = 3{,}71\\,\\text{m/s}^2$) mittari näyttää siihen ripustetulle kappaleelle $26\\,\\text{kg}$. Mikä on kappaleen massa?",
+      "answer": 69,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ]
+}

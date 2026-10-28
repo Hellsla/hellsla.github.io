@@ -1,0 +1,6 @@
+[
+  {
+    "q": "Ruiskussa on 40 ml ilmaa 100 kPa:n paineessa. Mäntää painetaan, kunnes tilavuus on 25 ml, eikä lämpötila muutu. Mikä on paine?",
+    "a": "Boylen lain mukaan $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml} / 25\\,\\text{ml} = 160\\,\\text{kPa}$."
+  }
+]

@@ -1,8 +1,0 @@
-ok   lint
-ok   latex
-ok   build
-ok   sims
-ok   inquiry (65 passed, 0 failed)
-ok   answer positions
-ok   layout 360 px
-fy3-2: draft (science=stale, pedagogy=stale, legacy=stale)

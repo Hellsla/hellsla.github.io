@@ -13,7 +13,7 @@
 // T, Q and the temperatures at a given point of the animation clock are the same at every speed.
 new p5((p) => {
   const CW = 4190, TAU = 1.5, T_END = 10;                     // water c (J/(kg·K)), time constant (s), animation length (s)
-  const MATERIALS = [['vesi', 4190], ['alumiini', 900], ['hiekka', 800], ['rauta', 450], ['kupari', 385]];
+  const MATERIALS = [[__('vesi'), 4190], [__('alumiini'), 900], [__('hiekka'), 800], [__('rauta'), 450], [__('kupari'), 385]];
   const VES = { x: 30, w: 210, top: 140, bottom: 370, wall: 14 };   // insulated vessel (outer box)
   const CH = { x0: 320, x1: 510, y0: 345, y1: 70 };           // chart area; right margin holds the T label
   let sMW, lMW, sTW, lTW, sel, lSel, sMB, lMB, sTB, lTB, sSp, readout;
@@ -31,7 +31,7 @@ new p5((p) => {
     p.createCanvas(600, 400).parent('sim-root');
     // controls right under the canvas with Upota first, so canvas + button fit on one phone screen; the long readout follows
     const controls = p.createDiv('').parent('sim-root').class('controls');
-    p.createButton('Upota').parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
+    p.createButton(__('upota')).parent(controls).mousePressed(() => { tAnim = 0; running = true; key = inputKey(); });
     [sMW, lMW] = slider(controls, 0.10, 1.00, 0.30, 0.01);    // veden massa (kg)
     [sTW, lTW] = slider(controls, 5, 60, 20, 0.5);            // veden alkulämpötila (°C)
     const ls = p.createElement('label').parent(controls);
@@ -41,8 +41,8 @@ new p5((p) => {
     sel.selected('385');
     [sMB, lMB] = slider(controls, 0.05, 1.00, 0.20, 0.01);    // kappaleen massa (kg)
     [sTB, lTB] = slider(controls, 0, 100, 100, 0.5);          // kappaleen alkulämpötila (°C)
-    const lv = p.createElement('label').parent(controls); p.createSpan('Nopeus').parent(lv); sSp = p.createSelect().parent(lv);
-    for (const [txt, v] of [['hidas', 0.5], ['normaali', 1], ['nopea', 2]]) sSp.option(txt, v);
+    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); sSp = p.createSelect().parent(lv);
+    for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) sSp.option(txt, v);
     sSp.selected('1');                                         // pace only: not part of inputKey, so it never resets the run
     readout = p.createDiv('').parent('sim-root').class('readout');
     p.textFont('Arial');
@@ -71,21 +71,21 @@ new p5((p) => {
     if (hi - lo < 10) hi = lo + 10;
     const step = hi - lo > 60 ? 20 : 10;
 
-    lMW.html(`Veden massa $m_\\text{v} = ${tx(mW, 2)}\\,\\text{kg}$`); lTW.html(`Veden alkulämpötila $T_\\text{v} = ${tx(TW0, 1)}\\,{}^\\circ\\text{C}$`);
-    lSel.html(`Kappaleen aine, $c_\\text{k} = ${cB}\\,\\text{J/(kg}\\cdot\\text{K)}$`);
-    lMB.html(`Kappaleen massa $m_\\text{k} = ${tx(mB, 2)}\\,\\text{kg}$`); lTB.html(`Kappaleen alkulämpötila $T_\\text{k} = ${tx(TB0, 1)}\\,{}^\\circ\\text{C}$`);
+    lMW.html(__(`veden_massa`, {mw: tx(mW, 2)})); lTW.html(__(`veden_alkulampotila`, {tw0: tx(TW0, 1)}));
+    lSel.html(__(`kappaleen_aine`, {cb: cB}));
+    lMB.html(__(`kappaleen_massa`, {mb: tx(mB, 2)})); lTB.html(__(`kappaleen_alkulampotila`, {tb0: tx(TB0, 1)}));
     const K = (x) => `$${tx(x, 1)}\\,\\text{K}$`, C = (x) => `$${tx(x, 1)}\\,{}^\\circ\\text{C}$`;
     let flow;
-    if (Math.abs(TB0 - TW0) < 1e-9) flow = 'Lämpötilat ovat samat, joten lämpöä ei siirry.';
-    else if (TB0 > TW0) flow = `Kappale luovuttaa <strong>$Q = ${fq(Q)}$</strong>, vesi vastaanottaa <strong>$Q = ${fq(QW)}$</strong>.` +
-                               `<br>Vesi lämpenee ${K(Teq - TW0)} ja kappale jäähtyy ${K(TB0 - Teq)}.`;
-    else flow = `Vesi luovuttaa <strong>$Q = ${fq(-QW)}$</strong>, kappale vastaanottaa <strong>$Q = ${fq(-Q)}$</strong>.` +
-                `<br>Kappale lämpenee ${K(Teq - TB0)} ja vesi jäähtyy ${K(TW0 - Teq)}.`;
-    readout.html(`Tasapainolämpötila <strong>$T = ${tx(Teq, 1)}\\,{}^\\circ\\text{C}$</strong>` +
-                 `<br>Lämpökapasiteetit $C = cm$: vesi $${fc(CWt)}\\,\\text{J/K}$, kappale (${name}) $${fc(CB)}\\,\\text{J/K}$` +
+    if (Math.abs(TB0 - TW0) < 1e-9) flow = __('lampotilat_ovat_samat');
+    else if (TB0 > TW0) flow = __(`kappale_luovuttaa_vesi`, {q: fq(Q), qw: fq(QW)}) +
+                               __(`vesi_lampenee_ja`, {teq: K(Teq - TW0), tb0: K(TB0 - Teq)});
+    else flow = __(`vesi_luovuttaa_kappale`, {qw: fq(-QW), q: fq(-Q)}) +
+                __(`kappale_lampenee_ja`, {teq: K(Teq - TB0), tw0: K(TW0 - Teq)});
+    readout.html(__(`tasapainolampotila`, {teq: tx(Teq, 1)}) +
+                 __(`lampokapasiteetit_vesi_kappale`, {cwt: fc(CWt), name: name, cb: fc(CB)}) +
                  `<br>${flow}` +
-                 `<br>Lämpömittarit nyt: vesi ${C(TW)}, kappale ${C(TB)}` +
-                 `<br><small>Kuvaajan asteikko $${lo}\\text{–}${hi}\\,{}^\\circ\\text{C}$ ja $0\\text{–}${T_END}\\,\\text{s}$</small>`);
+                 __(`lampomittarit_nyt_vesi`, {tw: C(TW), tb: C(TB)}) +
+                 __(`kuvaajan_asteikko_ja`, {lo: lo, hi: hi, t_end: T_END}));
     window.simState = { mW, TW0, cB, mB, TB0, Teq, CW: CWt, CB, Q, QW, running, TW, TB, t: tAnim, Tlo: lo, Thi: hi };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -113,8 +113,8 @@ new p5((p) => {
       arrow(bx, out ? by - 4 : by - 4 - L, bx, out ? by - 4 - L : by - 4, p.color(200, 40, 40));
     }
     p.noStroke(); p.textSize(ts(13)); p.textAlign(p.LEFT);
-    p.fill(30, 80, 160); p.text(`$\\text{vesi } ${tx(TW, 1)}\\,{}^\\circ\\text{C}$`, 20, ts(18));
-    p.fill(170, 70, 20); p.text(`$\\text{kappale } ${tx(TB, 1)}\\,{}^\\circ\\text{C}$`, 20, ts(18) + ts(19));
+    p.fill(30, 80, 160); p.text(__(`vesi_2`, {tw: tx(TW, 1)}), 20, ts(18));
+    p.fill(170, 70, 20); p.text(__(`kappale`, {tb: tx(TB, 1)}), 20, ts(18) + ts(19));
 
     // (t, T) chart: both temperatures so far and the equilibrium line
     const X = (t) => CH.x0 + (CH.x1 - CH.x0) * t / T_END, Y = (T) => CH.y0 - (CH.y0 - CH.y1) * (T - lo) / (hi - lo);
@@ -137,7 +137,7 @@ new p5((p) => {
     p.noStroke(); p.fill(30, 80, 160); p.circle(X(tAnim), Y(TW), 10); p.fill(200, 90, 20); p.circle(X(tAnim), Y(TB), 10);
     // legend above the chart
     p.strokeWeight(3); p.stroke(30, 80, 160); p.line(CH.x0 + 70, ts(14), CH.x0 + 94, ts(14)); p.stroke(200, 90, 20); p.line(CH.x0 + 70, ts(14) + ts(18), CH.x0 + 94, ts(14) + ts(18));
-    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text('$\\text{vesi}$', CH.x0 + 100, ts(14) + ts(4)); p.text('$\\text{kappale}$', CH.x0 + 100, ts(14) + ts(22));
+    p.noStroke(); p.fill(60); p.textSize(ts(12)); p.text(__('vesi_3'), CH.x0 + 100, ts(14) + ts(4)); p.text(__('kappale_2'), CH.x0 + 100, ts(14) + ts(22));
 
     function curve(T0, Te, tEnd, col) {                        // analytic curve T(t) from 0 to the current time
       p.stroke(col); p.strokeWeight(3); p.noFill(); p.beginShape();

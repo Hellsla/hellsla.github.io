@@ -23,12 +23,28 @@ jobs:
         with: { node-version: "22" }
       - run: pip install markdown playwright && playwright install --with-deps chromium
       - run: python scripts/lint_lesson.py --all
+      - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
+        run: python scripts/check_solutions.py --all
+      - name: known physics errors are not taught as fact again (docs/physics-guardrails.md, teacher 2026-10-28)
+        run: python scripts/test_physics_phrases.py
+      - name: Sovella itsenäisesti tasks (points, criteria, competencies, links, solutions, answers, translations) and their tests (teacher 2026-10-28)
+        run: python scripts/practice.py check && python scripts/test_practice.py
+      - name: the figure catalog is current and figures in tasks resolve, render and hash as they should (scripts/figcat.py)
+        run: python scripts/figcat.py build --check && python scripts/test_figcat.py
+      - name: assessment audits are current (docs/assessment/)
+        run: python scripts/assessment.py --all --check
+      - name: competency coverage reports are current (docs/coverage/)
+        run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
         run: python scripts/test_courses.py
+      - name: every language has every text, and every translation keeps the Finnish lesson's numbers, formulas and structure
+        run: python scripts/check_i18n.py
+      - name: a trial English lesson through the language check, the reviews and the build into site/en/ (nothing is published)
+        run: python scripts/test_i18n.py
       - name: which lessons this pull request touches, and which review each needs
         if: github.event_name == 'pull_request'
         run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"
@@ -36,7 +52,7 @@ jobs:
       - name: inquiry tests of every lesson with inquiry.json (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
         run: |
           fail=0
-          for f in content/*/*/inquiry.json; do
+          for f in content/fi/*/*/inquiry.json; do
             id=$(basename "$(dirname "$f")")
             if python scripts/test_inquiry.py "$id" > "/tmp/inquiry-$id.txt" 2>&1; then tail -1 "/tmp/inquiry-$id.txt" | sed "s/^/$id: /"
             else fail=1; echo "::error::inquiry tests failed for $id"; grep -E "^FAIL" "/tmp/inquiry-$id.txt" || tail -20 "/tmp/inquiry-$id.txt"; fi
@@ -48,10 +64,13 @@ jobs:
         run: |
           python scripts/build.py
           if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
-      - name: every published page fits a 360 px phone, its figure labels do not collide, and the wide layout keeps its columns and line length at 1280 and 1920 px
-        run: python scripts/check_layout.py --site && python scripts/check_layout.py --site --width 1280 && python scripts/check_layout.py --site --width 1920
+      - name: "every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
+        run: |
+          fail=0
+          for w in 360 390 640 768 1024 1280 1440 1920; do python scripts/check_layout.py --site --width $w > "/tmp/layout-$w.txt" 2>&1 || { fail=1; echo "::error::layout check failed at $w px"; grep -v "^OK" "/tmp/layout-$w.txt"; }; done
+          exit $fail
       - run: |
-          for d in content/*/*/; do
+          for d in content/fi/*/*/; do
             case "$d" in *_gold*) continue;; esac
             python scripts/check_latex.py "$d"
           done

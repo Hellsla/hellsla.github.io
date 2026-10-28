@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Sylinterissä olevan kaasun paine pysyy 200 kPa:na, kun sen tilavuus kasvaa 0,50 litraa. Kuinka suuren työn kaasu tekee männän liikkuessa?",
+    "a": "$W_\\text{k} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0{,}000\\,50\\,\\text{m}^3 = 100\\,\\text{J}$."
+  },
+  {
+    "q": "Automoottoriin syötetään polttoaineen energiaa teholla $60\\,\\text{kW}$, ja moottorin hyötysuhde on $30\\,\\%$. Kuinka suuri on mekaaninen teho, ja minne loput energiasta menee?",
+    "a": "Mekaaninen teho on 0,30 · $60\\,\\text{kW}$ = $18\\,\\text{kW}$. Loput $42\\,\\text{kW}$ siirtyy lämpönä ympäristöön pakokaasujen ja jäähdyttimen kautta."
+  }
+]

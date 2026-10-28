@@ -4,10 +4,10 @@ A lesson folder may carry `inquiry.json`. When it does, `scripts/build.py` lays 
 and the student acts before being told: a phenomenon, a prediction, an investigation, the model, a transfer task,
 three checks. Without the file the lesson renders in the classic layout (theory, simulation, exercises, exit
 ticket), byte for byte as before. The lesson's other files are unchanged by the framework: `lesson.md` still holds
-the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` the three quick checks, the simulation the physics.
+the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` one to three quick questions (NOTES.md §11), the simulation the physics.
 `inquiry.json` only says where those parts go and adds the activities between them.
 
-The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/FY3/fy3-2/inquiry.json`.
+The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/fi/FY3/fy3-2/inquiry.json`.
 
 Validate: `python scripts/inquiry.py <id>` (also run by `lint_lesson.py` and refused by `build.py`); errors name
 the lesson, the file and the field, e.g. `fy3-2 inquiry.json: activities[2].choices[1].feedback: every choice
@@ -18,8 +18,9 @@ needs misconception-specific feedback`. Tests: `python scripts/test_inquiry.py`.
 ```json
 {
   "version": 1,
-  "contribution": "One sentence: what this lesson adds that earlier lessons did not (markdown, LaTeX allowed).",
-  "prior": ["What the student already knows and where it came from (fy3-1)", "..."],
+  "contribution": "One sentence for the reviewers: what this lesson adds that earlier lessons did not (not shown on the page).",
+  "learn": ["Osaat laskea …", "Osaat selittää …", "Tunnistat …"],
+  "prior": ["One fact the student already knows (luku *Chapter title*)", "..."],
   "activities": [ { "id": "pred-1", "stage": "ennusta", "type": "choice", "...": "..." } ]
 }
 ```
@@ -48,9 +49,9 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `hook` | `text`, optional `question` | the phenomenon, in the lesson's voice, and the question it raises |
 | `text` | `text` | a paragraph wherever one is needed |
 | `choice` | `prompt`, `choices: [{text, correct?, feedback}]`, optional `justify`, `reveal`, `layout`, `solution` | radio buttons; feedback for the chosen option after *Vastaa*. With `reveal: {"after": "<experiment id>", "min": n}` the choice is a **prediction**: it locks on commit and its feedback stays hidden until that experiment has recorded `min` measurements. A prediction the simulation cannot test (which explanation is right, when the sim draws only the model's result) uses `reveal: {"after": "<theory id>"}` instead: its feedback appears once that theory section has been on screen. `justify: true` adds an optional written reason. `layout: "models"` presents the options as competing explanations. |
-| `experiment` | `intro`, `initial: {param: value}`, `locked: [param]`, `vary: param`, `measure: [key or {key, label}]`, optional `units: {param: unit}`, `names: {param: label shown instead of the key}`, `min`, `question` | a guided investigation on the page's simulation: *Aseta alkutila* sets `initial` and locks `locked`, the student changes `vary`, *Kirjaa mittaus* records `vary` and every `measure` key of `simState` into a table, *Nollaa* resets. A linked prediction is revealed at `min` rows (default 2); the optional `question` (a `choice`, `numeric` or `explain`) appears at the same point. |
+| `experiment` | `intro`, `initial: {param: value}`, `locked: [param]`, `vary: param`, `measure: [key or {key, label}]`, optional `units: {param: unit}`, `names: {param: label shown instead of the key}`, `values: {param: {value: words}}` (a select's option named in the *Alkutila* line, e.g. `{"kitka": {"1": "pieni kitka"}}`), `min`, `question` | a guided investigation on the page's simulation: *Aseta alkutila* sets `initial` and locks `locked`, the student changes `vary`, *Kirjaa mittaus* records `vary` and every `measure` key of `simState` into a table, *Nollaa* resets. A linked prediction is revealed at `min` rows (default 2); the optional `question` (a `choice`, `numeric` or `explain`) appears at the same point. |
 | `interpret` | `text`, optional `question` | a supplied representation (markdown table, inline SVG, measurements) and a question on it |
-| `numeric` | `prompt`, `answer`, `unit`, `tolerance` (relative, default 0.02), optional `mistakes: [{value, feedback}]`, `hints`, `solution` | the same browser-side check as the exercises (decimal comma or point, empty and non-numeric input asked again, two tries before pointing at the solution) plus feedback for listed common mistakes |
+| `numeric` | `prompt`, `answer`, `unit`, `tolerance` (relative, default 0.02), optional `mistakes: [{value, feedback}]`, `hints`; `solution` (required: the complete steps of NOTES.md §3 "Complete solutions", shown behind *Näytä ratkaisu*) | the same browser-side check as the exercises (decimal comma or point, empty and non-numeric input asked again, two tries before pointing at the solution) plus feedback for listed common mistakes |
 | `explain` | `prompt`, `model`, `criteria: [text]`, optional `pair` | a written explanation; a button shows the model answer and the self-assessment checklist |
 | `reflect` | `prompt`, `predictions: [choice ids]` | the student's own predictions beside the evidence verdict, "Muuttaisitko ennustettasi?" and a reason |
 | `theory` | `sections: ["Ydinajatus", "Kaava", …]` | those `## ` sections of `lesson.md` by their key (`## Kaava: Lämpömäärä` is the section "Kaava", shown as "Lämpömäärä"; each placed once; sections placed nowhere are appended to Teoriatiivistelmä) |
@@ -58,10 +59,20 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `exercises` | optional `text` | the three exercise levels (at most one) |
 | `exit` | optional `text` | the exit ticket (at most one) |
 
-Rules the validator enforces: `version` is 1; `contribution` is non-empty; ids are unique; every choice has
+Rules the validator enforces: `version` is 1; `contribution` is non-empty; `learn` holds two or three goals of at most about 20 words each, shown on the page under "Tällä tunnilla opit" (teacher 2026-10-27; `prior` shows as the list "Pohjatiedot", its "(luku …)" as a link to that chapter); ids are unique; every choice has
 feedback and exactly the correct options marked; `reveal.after` names an experiment or a theory section; `locked` does not contain
 `vary`; `theory` sections exist in `lesson.md` and appear once; `reflect.predictions` are activity ids; hints
 are at most three. What it cannot check, the reviewers do (below).
+
+Fields any activity may carry (2026-10-26):
+
+| field | on | behaviour |
+|---|---|---|
+| `optional: true` | any type but `sim` and `exercises` | the activity goes into a closed box "Valinnainen …" (its `title`, or the type's name) and the intro notes how many optional items there are; everything outside these boxes is the lesson's core path. A required `explain.after` or prediction `reveal.after` may not point at an optional experiment. |
+| `after: [experiment ids]` | `explain` | a conclusion from the student's own measurements: the model answer opens only when each listed experiment has its `min` rows and the student has written something (15 characters). Every `explain` waits for the student's own text; `after` adds a *Kopioi muistiinpanoihin* button that copies the tables and the answer. |
+| `source` (+ `source_note`) | `interpret` | provenance badge: `measured` (Mitattu aineisto; `source_note` naming where it was measured is required), `statistics` (Tilastoaineisto: official or published statistics; `source_note` naming the source and year is required), `simulated` (Simuloitu esimerkkiaineisto: produced by a simulation), `model` (Mallin laskemia arvoja) or `example` (Keksitty esimerkkiaineisto: invented, rounded numbers for a realistic situation; 2026-10-28, FY2). Invented data is never presented as measured. |
+
+Experiment tables are captioned *Simulaation lukemat*: values read from a model are not measurements.
 
 Guidance, not enforced: a prediction before every investigation; no feedback that answers the opening
 question before the student has committed; the varied parameter alone changes in an experiment; model values
@@ -105,7 +116,7 @@ offers free exploration.
 
 ## Migrating a lesson
 
-1. Read `meta.json` goals and prerequisites and the curriculum slot; write `contribution` and `prior`.
+1. Read `meta.json` goals and prerequisites and the curriculum slot; write `contribution`, `learn` (2–3 goals, NOTES.md §8) and `prior`.
 2. Decide which stages the lesson needs and what the student should do first. Not every lesson needs an
    experiment: a lesson without a sim uses `interpret` on a table or figure, or a competing-models `choice`.
 3. Write the predictions so that the investigation can refute them; write every wrong option's feedback as a

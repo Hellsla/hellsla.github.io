@@ -10,6 +10,13 @@ captures its questions need:
   example-390[-k]             the worked example with every stage revealed
   sim-390, sim-1280           the simulation with its controls and readout
   lab-1280, fig-row-1280      the wide layout: the sim beside the experiments, the first figure beside its paragraph
+  intro-1280                  the opening: title, Miksi question, illustration beside the goals, Pohjatiedot
+  theory-1280[-k]             Teoriatiivistelmä: long theory with its figures on one screen width
+  open-ennusta-1280           the Ennusta box open, the predictions answered (feedback showing)
+  open-tarkista-1280[-k]      Tarkista osaamisesi with every hint and solution open: does an opened card leave gaps?
+  open-exit-1280              the exit ticket with its answers open
+  open-exercises-1280[-k]     the first exercise level with every solution open
+(the open-* captures are what check_layout.py measures in its "open" state; look at them after a layout change)
   stage-<id>-390[-k]          every inquiry stage, in tiles
   exp-<id>-390                every experiment after "Aseta alkutila": the sim beside its buttons and table
 
@@ -37,6 +44,7 @@ rows = []
 def save(pg, name, what, box=None, locator=None):
     """One capture (a locator, or a clip box in page coordinates), split into tiles when it is taller than TILE."""
     if locator is not None:
+        if not locator.is_visible(): return          # e.g. a task's figure inside a closed exercise level
         locator.scroll_into_view_if_needed(); pg.wait_for_timeout(150)
         b = locator.bounding_box()
         if not b or b["width"] < 2 or b["height"] < 2: return
@@ -63,6 +71,19 @@ with sync_playwright() as pw:
         if w != 390:
             if pg.locator(".lab").count(): save(pg, f"lab-{w}", f"Tutki at {w} px: the simulation beside the experiments", locator=pg.locator(".lab").first)
             if pg.locator(".fig-row").count(): save(pg, f"fig-row-{w}", f"the first theory figure beside its paragraph at {w} px", locator=pg.locator(".fig-row").first)
+            if pg.locator(".intro").count(): save(pg, f"intro-{w}", f"the opening at {w} px", locator=pg.locator(".intro").first)
+            if pg.locator("#selita .act-theory").count(): save(pg, f"theory-{w}", f"Teoriatiivistelmä at {w} px: theory and figures", locator=pg.locator("#selita .act-theory").first)
+            pg.evaluate("""() => { document.querySelectorAll('details.fold, .hints details, details.solution, details.answer').forEach((d) => { d.open = true; });
+              document.querySelectorAll('fieldset.choice').forEach((f) => { const r = f.querySelector('input[type=radio]'); const b = f.querySelector('button.commit');
+                if (r && b && !f.dataset.reveal) { r.checked = true; b.click(); } }); }""")
+            pg.wait_for_timeout(400)
+            for sid in ("ennusta", "tarkista"):
+                if pg.locator(f"#{sid}").count(): save(pg, f"open-{sid}-{w}", f"{sid} at {w} px with hints, solutions and feedback open", locator=pg.locator(f"#{sid}"))
+            if pg.locator("#exit").count(): save(pg, f"open-exit-{w}", f"the exit ticket at {w} px, answers open", locator=pg.locator("#exit"))
+            lvl = pg.locator("#exercises details.level").first
+            if lvl.count():
+                lvl.evaluate("(d) => { d.open = true; d.querySelectorAll('details').forEach((x) => { x.open = true; }); }"); pg.wait_for_timeout(300)
+                save(pg, f"open-exercises-{w}", f"the first exercise level at {w} px, every solution open", locator=lvl)
             pg.close(); continue
         pg.evaluate("document.querySelectorAll('details.fold').forEach((d) => { d.open = true; })")   # the Ennusta box starts closed; reviewers read its predictions
         figs = pg.locator("main svg:not(#sim-root svg)")
@@ -81,6 +102,7 @@ with sync_playwright() as pw:
             save(pg, f"stage-{sid}-390", f"inquiry stage {title}", locator=s)
         for ex in pg.locator(".experiment").all():
             aid = ex.evaluate("(e) => e.closest('.activity').id")
+            ex.evaluate("(e) => { for (let d = e.closest('details'); d; d = d.parentElement && d.parentElement.closest('details')) d.open = true; }")   # an optional experiment sits in a closed box
             start = ex.locator(".exp-start")
             if start.count() and start.is_visible(): start.click(); pg.wait_for_timeout(500)
             save(pg, f"exp-{aid}-390", f"experiment {aid} after Aseta alkutila: the sim next to its buttons and table", locator=ex.locator("xpath=ancestor::div[contains(@class,'activity')][1]"))

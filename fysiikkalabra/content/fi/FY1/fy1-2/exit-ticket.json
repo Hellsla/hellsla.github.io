@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kerro omin sanoin, mikä ero on suureella ja yksiköllä. Anna esimerkki ja kirjoita suureen arvo.",
+    "a": "Suure on mitattava ominaisuus, esimerkiksi pituus $l$. Yksikkö on sovittu mitta, johon suuretta verrataan, esimerkiksi metri. Suureen arvo on lukuarvo kertaa yksikkö: $l = 3{,}2\\,\\text{m}$. Pelkkä lukuarvo 3,2 ei kerro mitään."
+  },
+  {
+    "q": "Muunna $4{,}2\\,\\text{km}$ metreiksi ja $0{,}50\\,\\text{mm}$ mikrometreiksi.",
+    "a": "$4{,}2\\,\\text{km} = 4{,}2\\cdot10^{3}\\,\\text{m} = 4200\\,\\text{m}$. $0{,}50\\,\\text{mm} = 0{,}50\\cdot10^{-3}\\,\\text{m} = 0{,}50\\cdot10^{3}\\,\\mu\\text{m} = 500\\,\\mu\\text{m}$."
+  }
+]

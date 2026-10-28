@@ -1,5 +1,77 @@
 [
   {
+    "term": "energiantuotanto",
+    "definition": "Luonnonvaran, kuten veden, tuulen, auringonsäteilyn, ydinpolttoaineen tai polttoaineen, energian muuttaminen sähköksi ja lämmöksi voimalaitoksessa. Energiaa ei synny tyhjästä, vaan se muuttaa muotoaan.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "uusiutuva energia",
+      "ydinvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "uusiutuva energia",
+    "definition": "Energia, jonka lähde ei ehdy ihmisen mittakaavassa tai uusiutuu nopeasti: vesi, tuuli, auringonsäteily ja bioperäiset polttoaineet. Uraani ja fossiiliset polttoaineet eivät uusiudu.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "tuulivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinvoima",
+    "definition": "Sähköntuotanto, jossa uraanin ydinreaktioissa vapautuva energia lämmittää höyryn, joka pyörittää turbiinia. Ydinvoimala käy tasaisesti lähes nimellisteholla, joten se on perusvoimaa.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vesivoima",
+    "definition": "Sähköntuotanto, jossa putoava vesi pyörittää turbiinia. Vesivoima on uusiutuvaa ja hyvin säädettävää, koska vesivirtaa voi lisätä tai vähentää sekunneissa.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tuulivoima",
+    "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aurinkoenergia",
+    "definition": "Auringonsäteilyn energia, jonka aurinkopaneeli muuttaa suoraan sähköksi tai aurinkokeräin lämmöksi. Aurinkosähkön teho riippuu säteilystä: se on suurimmillaan kesäpäivän keskellä ja nolla yöllä.",
+    "lessons": [
+      "fy2-6"
+    ],
+    "see_also": [
+      "energiantuotanto",
+      "uusiutuva energia"
+    ],
+    "locked": false
+  },
+  {
     "term": "(t,x)-kuvaaja",
     "definition": "(t,x)-kuvaajassa vaaka-akselilla on aika t ja pystyakselilla paikka x. Tasaisen liikkeen kuvaaja on suora, jonka kulmakerroin on nopeus ja jonka alkukohta on alkupaikka x₀: x = x₀ + vt.",
     "lessons": [
@@ -72,8 +144,96 @@
     "locked": false
   },
   {
+    "term": "mittaus",
+    "definition": "Suureen arvon määrittäminen vertaamalla sitä yksikköön mittarilla tai mittausmenetelmällä. Mittaustulos on lukuarvo yksikköineen, ja siihen kuuluu arvio sen epävarmuudesta.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "mittausvirhe",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittausvirhe",
+    "definition": "Mittaustuloksen ja suureen oikean arvon erotus eli tulos miinus oikea arvo. Pieni virhe kuuluu jokaiseen mittaukseen. Sitä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida. Erehdyksestä syntyvä karkea virhe sen sijaan poistetaan.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "satunnaisvirhe",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "karkea virhe",
+    "definition": "Yksittäinen selvä erehdys mittauksessa, esimerkiksi väärin luettu tai kirjattu lukema tai väärä yksikkö. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei keskiarvoisteta, vaan tulos tarkistetaan ja mitataan tarvittaessa uudelleen. Tulos jätetään pois vain, jos virheen syy löytyy, ja poisjättö kirjataan.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "systemaattinen virhe",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
+    "term": "systemaattinen virhe",
+    "definition": "Virhe, joka on jokaisessa mittauksessa suunnaltaan ja suuruudeltaan lähes sama, esimerkiksi mittarin väärä nollakohta. Toistaminen ja keskiarvo eivät pienennä sitä. Se huomataan vertaamalla tulosta toiseen menetelmään tai tunnettuun vertailuarvoon, ja se korjataan.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "oikeellisuus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
+    "term": "satunnaisvirhe",
+    "definition": "Virhe, joka vaihtelee sattumanvaraisesti mittauksesta toiseen ja voi olla kumpaan suuntaan tahansa, esimerkiksi käsin otetun ajan reaktioviive. Toistamalla mittaus ja ottamalla keskiarvo sen vaikutusta tulokseen saadaan pienennettyä. Koulukokeissa sen aiheuttamaa hajontaa arvioidaan usein likimääräisesti vaihteluvälin puolikkaalla.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "toistettavuus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
+    "term": "toistettavuus",
+    "definition": "Se, kuinka lähelle toisiaan samalla tavalla toistetut saman suureen mittaustulokset osuvat. Hyvä toistettavuus tarkoittaa pientä satunnaisvirhettä, mutta ei takaa, että tulos on oikea.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "oikeellisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikeellisuus",
+    "definition": "Se, kuinka lähellä mittaustulos on suureen oikeaa arvoa. Hyvä oikeellisuus tarkoittaa pientä systemaattista virhettä. Tulos voi olla hyvin toistettava mutta silti väärä.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "toistettavuus"
+    ],
+    "locked": false
+  },
+  {
     "term": "mittausepävarmuus",
-    "definition": "Arvio siitä, kuinka paljon mittaustulos voi enintään poiketa todellisesta arvosta, esimerkiksi ±1 kPa. Se piirretään kuvaajaan epävarmuusjanana, ja siitä saadaan tuloksen epävarmuus, kun suora piirretään jyrkimmän ja loivimman mahdollisen suoran väliin.",
+    "definition": "Mittaustulokseen liittyvä epävarmuus eli arvio siitä, kuinka paljon tulos voi poiketa oikeasta arvosta, esimerkiksi ±1 kPa. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa. Kuvaajaan se piirretään epävarmuusjanana, ja sovitetun suoran kulmakertoimen ja vakiotermin epävarmuutta voi arvioida jyrkimmän ja loivimman janoihin sopivan suoran avulla.",
     "lessons": [
       "fy3-13"
     ],
@@ -117,6 +277,32 @@
     "see_also": [
       "hyötysuhde",
       "hukkalämpö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energialaji",
+    "definition": "Muoto, jossa energia on tai jossa se ilmenee. Energialajeja ovat potentiaalienergia, liike-energia, lämpöenergia, kemiallinen energia, säteilyenergia, sähköenergia ja ydinenergia; potentiaali- ja liike-energia yhdessä ovat mekaanista energiaa.",
+    "lessons": [
+      "fy2-1"
+    ],
+    "see_also": [
+      "energia",
+      "mekaaninen energia",
+      "lämpöenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energian säilyminen",
+    "definition": "Periaate, jonka mukaan energiaa ei synny eikä katoa, vaan se muuttaa muotoa tai siirtyy. Eristetyssä systeemissä kaikkien energialajien energioiden summa on sama alussa ja lopussa: E_alussa = E_lopussa.",
+    "lessons": [
+      "fy2-1"
+    ],
+    "see_also": [
+      "energia",
+      "eristetty systeemi",
+      "energialaji"
     ],
     "locked": false
   },
@@ -181,13 +367,38 @@
   },
   {
     "term": "hyötysuhde",
-    "definition": "Hyödyksi saadun energian tai tehon suhde koneeseen tuotuun energiaan tai tehoon, η = W/Q₁. Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
+    "definition": "Hyödyksi saadun energian tai tehon suhde laitteeseen otettuun energiaan tai tehoon: η = E_a/E_o = P_a/P_o (lämpövoimakoneella η = W/Q₁). Hyötysuhde ilmoitetaan usein prosentteina, ja se on enintään 100 %. Todellisissa laitteissa se jää usein alle 100 %, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen.",
     "lessons": [
+      "fy2-4",
       "fy3-11"
     ],
     "see_also": [
       "lämpövoimakone",
       "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hyötyenergia",
+    "definition": "Se osa laitteeseen otetusta energiasta, joka muuttuu laitteen tarkoituksen mukaiseen muotoon, esimerkiksi lampun valo tai moottorin liike. Merkitään E_a.",
+    "lessons": [
+      "fy2-4"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "häviöt"
+    ],
+    "locked": false
+  },
+  {
+    "term": "häviöt",
+    "definition": "Se osa laitteeseen otetusta energiasta, joka ei muutu hyödyksi vaan yleensä lämmöksi ympäristöön. Energia ei katoa: otettu energia on hyötyenergia ja häviöt yhteensä, E_o = E_a + E_h.",
+    "lessons": [
+      "fy2-4"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "hyötyenergia"
     ],
     "locked": false
   },
@@ -328,11 +539,61 @@
     "term": "kasvihuoneilmiö",
     "definition": "Ilmiö, jossa ilmakehän kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin alas. Se nostaa maanpinnan keskilämpötilan noin −18 °C:sta noin +15 °C:een.",
     "lessons": [
+      "fy2-8",
       "fy3-12"
     ],
     "see_also": [
       "energiatasapaino",
-      "lämpösäteily"
+      "lämpösäteily",
+      "ilmastonmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hiilidioksidipäästö",
+    "definition": "Polttoaineen palamisessa tai muussa toiminnassa ilmakehään vapautuva hiilidioksidi. Sähköntuotannossa päästöt ilmoitetaan yleensä grammoina hiilidioksidiekvivalenttia tuotettua kilowattituntia kohti.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "päästökerroin",
+      "ilmastonmuutos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "päästökerroin",
+    "definition": "Luku, joka kertoo, kuinka paljon hiilidioksidiekvivalenttia syntyy tuotettua tai käytettyä energiayksikköä kohti, esimerkiksi grammoina kilowattituntia kohti. Päästö saadaan kertomalla päästökerroin energialla.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "hiilidioksidipäästö",
+      "kilowattitunti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmastonmuutos",
+    "definition": "Maapallon ilmaston pitkäaikainen muutos, jota nykyisin kiihdyttää ihmisen toiminta. Hiilidioksidin ja metaanin päästöt voimistavat kasvihuoneilmiötä ja nostavat maapallon keskilämpötilaa.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "kasvihuoneilmiö",
+      "hiilidioksidipäästö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kestävä energiatalous",
+    "definition": "Tapa tuottaa ja käyttää energiaa niin, että nykyisten tarpeiden tyydyttäminen ei heikennä tulevien sukupolvien mahdollisuuksia. Siinä otetaan huomioon ympäristö, talous ja yhteiskunta.",
+    "lessons": [
+      "fy2-8"
+    ],
+    "see_also": [
+      "ilmastonmuutos",
+      "energiantuotanto"
     ],
     "locked": false
   },
@@ -340,10 +601,24 @@
     "term": "kaukolämpö",
     "definition": "Voimalaitoksessa tai lämpölaitoksessa lämmitetty vesi, joka johdetaan putkia pitkin rakennusten lämmitykseen.",
     "lessons": [
+      "fy2-7",
       "fy3-11"
     ],
     "see_also": [
       "yhteistuotanto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kilowattitunti",
+    "definition": "Energian yksikkö kWh, jolla sähköenergia mitataan ja laskutetaan. 1 kWh on energia, jonka 1 kW:n teholla toimiva laite käyttää tunnissa: 1 kWh = 1000 W · 3600 s = 3 600 000 J = 3,6 MJ. Energia kilowattitunteina on teho kilowatteina kerrottuna ajalla tunteina.",
+    "lessons": [
+      "fy2-3"
+    ],
+    "see_also": [
+      "energia",
+      "joule",
+      "teho"
     ],
     "locked": false
   },
@@ -375,7 +650,8 @@
     "term": "kiihtyvyys",
     "definition": "Nopeuden muutos aikayksikössä. Yksikkö m/s².",
     "lessons": [
-      "fy4-4"
+      "fy4-4",
+      "fy1-6"
     ],
     "see_also": [
       "nopeus"
@@ -407,6 +683,32 @@
     "locked": false
   },
   {
+    "term": "kulmakerroin",
+    "definition": "Suoran y = kx + b jyrkkyyttä kuvaava luku k: y:n muutos jaettuna x:n muutoksella, k = Δy/Δx. Kulmakertoimen yksikkö on y:n yksikkö jaettuna x:n yksiköllä. Matka-aikakuvaajassa kulmakerroin on nopeus.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kuvaaja",
+      "lineaarinen malli",
+      "suoran sovitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kuvaaja",
+    "definition": "Kahden suureen riippuvuutta esittävä piirros, jossa jokainen mittaus on piste (x, y). Akseleilla ovat suureet yksikköineen, ja asteikon askeleet ovat yhtä suuret yhtä suurille arvoille. Pisteitä ei yhdistetä murtoviivaksi, vaan niihin sovitetaan malli.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "lineaarinen malli",
+      "suoran sovitus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
     "term": "lauhdevoimalaitos",
     "definition": "Lämpövoimalaitos, joka tuottaa vain sähköä. Turbiinista tuleva höyry tiivistetään lauhduttimessa, ja sen lämpö siirtyy hukkalämpönä esimerkiksi mereen.",
     "lessons": [
@@ -427,6 +729,19 @@
     "see_also": [
       "energia",
       "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lineaarinen malli",
+    "definition": "Malli, jossa kahden suureen riippuvuus on suora y = kx + b. Jos vakiotermi b on nolla, suureet ovat suoraan verrannolliset. Malli pätee vain mitatulla alueella ja sen lähellä, ja jos pisteet poikkeavat suorasta systemaattisesti, malli ei sovi.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kulmakerroin",
+      "kuvaaja",
+      "ekstrapolointi"
     ],
     "locked": false
   },
@@ -455,9 +770,34 @@
     "locked": false
   },
   {
+    "term": "polttoaine",
+    "definition": "Aine, jonka kemiallista energiaa vapautetaan polttamalla, esimerkiksi polttopuu, turve, kivihiili, maakaasu tai bensiini.",
+    "lessons": [
+      "fy2-5"
+    ],
+    "see_also": [
+      "lämpöarvo",
+      "kemiallinen energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kemiallinen energia",
+    "definition": "Aineen rakenteeseen varastoitunut energia, joka vapautuu esimerkiksi palaessa tai ruoan hajotessa elimistössä. Se muuntuu pääasiassa lämmöksi ja valoksi.",
+    "lessons": [
+      "fy2-5"
+    ],
+    "see_also": [
+      "polttoaine",
+      "lämpöarvo"
+    ],
+    "locked": false
+  },
+  {
     "term": "lämpöarvo",
     "definition": "Polttoaineen palaessa vapautuva energia massayksikköä kohti, yksikkö esimerkiksi MJ/kg. Esimerkiksi bensiinin lämpöarvo on noin 43 MJ/kg.",
     "lessons": [
+      "fy2-5",
       "fy3-11"
     ],
     "see_also": [
@@ -478,7 +818,7 @@
   },
   {
     "term": "lämpökerroin",
-    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä.",
+    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä. Lämpökerroin ei ole hyötysuhde: se voi olla yli 1, koska osa lämmöstä siirretään ulkoilmasta eikä tule sähköstä.",
     "lessons": [
       "fy3-11"
     ],
@@ -554,7 +894,7 @@
   },
   {
     "term": "lämpötila",
-    "definition": "Lämpötila kertoo aineen hiukkasten keskimääräisestä liike-energiasta. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
+    "definition": "Lämpötila kuvaa aineen hiukkasten lämpöliikkeen voimakkuutta; harvassa kaasussa se kertoo hiukkasten keskimääräisestä liike-energiasta. Lämpötila ei ole sama asia kuin aineen energia. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
     "lessons": [
       "fy3-3"
     ],
@@ -580,7 +920,8 @@
     "term": "massa",
     "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla, toisin kuin paino.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy1-7"
     ],
     "see_also": [
       "paino"
@@ -638,7 +979,8 @@
     "term": "nopeus",
     "definition": "Nopeus on paikan muutosnopeus: v = Δx/Δt. Se on vektorisuure, joten etumerkki kertoo suunnan. Nopeuden itseisarvo |v| on vauhti. Tasaisessa liikkeessä nopeus on vakio ja yksikkö on m/s.",
     "lessons": [
-      "fy4-1"
+      "fy4-1",
+      "fy1-5"
     ],
     "see_also": [
       "siirtymä",
@@ -688,7 +1030,8 @@
     "term": "paikka",
     "definition": "Kappaleen paikka x kertoo, missä kappale on valittuun origoon nähden x-akselilla. Paikan etumerkki kertoo, kummalla puolella origoa kappale on; yksikkö on metri (m).",
     "lessons": [
-      "fy4-1"
+      "fy4-1",
+      "fy1-5"
     ],
     "see_also": [
       "siirtymä",
@@ -760,7 +1103,8 @@
     "term": "putoamiskiihtyvyys",
     "definition": "Kiihtyvyys, jolla vapaasti putoava kappale liikkuu, kun ilmanvastusta ei ole. Maan pinnalla sen arvo on g = 9,81 m/s², ja sama luku kertoo, kuinka monta newtonia yhden kilogramman massan paino on.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy1-6"
     ],
     "see_also": [
       "paino",
@@ -806,6 +1150,20 @@
     "locked": false
   },
   {
+    "term": "suoran sovitus",
+    "definition": "Mittauspisteiden läpi piirrettävän suoran valinta niin, että suora kulkee pisteiden joukon keskeltä: lähellä kaikkia pisteitä ja suunnilleen yhtä monen pisteen ylä- ja alapuolella. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Sovituksesta luetaan kulmakerroin ja vakiotermi.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kuvaaja",
+      "kulmakerroin",
+      "lineaarinen malli",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
     "term": "systeemi",
     "definition": "Termodynaaminen systeemi on tutkimista varten rajattu osa maailmaa. Kaikki sen ulkopuolella on ympäristöä, ja systeemi on suljettu, jos siitä ei pääse ainetta ulos tai sisään.",
     "lessons": [
@@ -830,8 +1188,9 @@
   },
   {
     "term": "teho",
-    "definition": "Teho kertoo, kuinka nopeasti työtä tehdään tai energiaa siirtyy: P = W/t. Tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv; yksikkö on watti (W), joka on yksi joule sekunnissa.",
+    "definition": "Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: P = ΔE/Δt. Yksikkö on watti (W), joka on yksi joule sekunnissa. Kun energia siirtyy työnä, P = W/t, ja tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv.",
     "lessons": [
+      "fy2-3",
       "fy3-2"
     ],
     "see_also": [
@@ -856,9 +1215,23 @@
     "term": "tiheys",
     "definition": "Aineen massa tilavuutta kohti, ρ = m/V, yksikkö kg/m³. Veden tiheys on noin 1000 kg/m³.",
     "lessons": [
-      "fy3-4"
+      "fy3-4",
+      "fy1-7"
     ],
     "see_also": [
+      "massa",
+      "tilavuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilavuus",
+    "definition": "Tilavuus kertoo, kuinka suuren tilan kappale tai aine viemää. SI-yksikkö on kuutiometri (m³); 1 dm³ = 1 l = 0,001 m³ ja 1 cm³ = 1 ml = 10⁻⁶ m³.",
+    "lessons": [
+      "fy1-7"
+    ],
+    "see_also": [
+      "tiheys",
       "massa"
     ],
     "locked": false
@@ -922,6 +1295,31 @@
     "see_also": [
       "energia",
       "teho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "watti",
+    "definition": "Tehon SI-yksikkö W. Yksi watti on yksi joule sekunnissa: 1 W = 1 J/s. Suuremmat yksiköt ovat kilowatti (1 kW = 1000 W) ja megawatti (1 MW = 10^6 W).",
+    "lessons": [
+      "fy2-3"
+    ],
+    "see_also": [
+      "teho",
+      "joule",
+      "kilowattitunti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vapaa pudotus",
+    "definition": "Putoaminen, jossa kappaleeseen ei vaikuta ilmanvastus. Levosta lähtevän kappaleen nopeus kasvaa joka sekunti saman verran: v = gt, missä g = 9,81 m/s².",
+    "lessons": [
+      "fy1-6"
+    ],
+    "see_also": [
+      "putoamiskiihtyvyys",
+      "kiihtyvyys"
     ],
     "locked": false
   },
@@ -998,6 +1396,583 @@
       "hydrostaattinen paine",
       "ilmanpaine",
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tutkimus",
+    "definition": "Järjestelmällinen tapa vastata kysymykseen mittaamalla. Tutkimus alkaa tutkimuskysymyksestä ja hypoteesista, etenee suunnitelman ja mittausten kautta ja päättyy johtopäätökseen, jonka tulokset perustelevat.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "hypoteesi",
+      "muuttuja",
+      "raportti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hypoteesi",
+    "definition": "Perusteltu ja testattava ennuste tutkimuskysymykseen, esimerkiksi ”jos auto liikkuu vakionopeudella, matka on verrannollinen aikaan”. Hypoteesista pitää seurata mitattava tulos, joka voi osoittautua vääräksi.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "muuttuja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuttuja",
+    "definition": "Suure, jonka arvo voi vaihdella tutkimuksessa. Reilussa kokeessa muutetaan yhtä muuttujaa (muutettava), mitataan toista (mitattava) ja pidetään muut samoina (vakioitavat).",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "hypoteesi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittauspöytäkirja",
+    "definition": "Kokeen aikana tehty kirjaus: tutkimuskysymys, päivämäärä, välineet ja niiden tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Lukemia ei korjata tai poisteta hiljaa.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "raportti",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "raportti",
+    "definition": "Kirjallinen kuvaus tutkimuksesta niin, että toinen voi toistaa sen: tutkimuskysymys ja hypoteesi, menetelmä, tulokset, pohdinta ja johtopäätös.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "mittauspöytäkirja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasainen liike",
+    "definition": "Liike suoraa pitkin vakionopeudella: kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Paikka on s = s₀ + vt, ja (t, s)-kuvaaja on suora, jonka kulmakerroin on nopeus v.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "nopeus",
+      "paikka",
+      "matka",
+      "suoraan verrannollisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "matka",
+    "definition": "Kappaleen liikkeessään kulkema pituus, yksikkö metri (m). Kun kappale liikkuu suoraa pitkin yhteen suuntaan, matka on paikan muutos Δs = s − s₀, tasaisessa liikkeessä vt. Paikka kertoo, missä kappale on, matka sen, kuinka pitkän tien se on kulkenut.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "paikka",
+      "nopeus",
+      "tasainen liike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suoraan verrannollisuus",
+    "definition": "Kaksi suuretta ovat suoraan verrannollisia, kun niiden suhde on vakio: jos toinen kaksinkertaistuu, myös toinen kaksinkertaistuu. Kuvaaja on origon kautta kulkeva suora, ja suhde on sen kulmakerroin. Tasaisessa liikkeessä matka Δs on suoraan verrannollinen aikaan: Δs/t = v.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "tasainen liike",
+      "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fysiikka",
+    "definition": "Luonnontiede, joka tutkii aineen, energian, avaruuden ja ajan perusilmiöitä. Fysiikka etsii säännönmukaisuuksia havainnoista ja kokeista, kuvaa ne malleilla ja testaa mallit mittauksilla.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "malli",
+      "kymmenpotenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "malli",
+    "definition": "Yksinkertaistettu kuvaus ilmiöstä, josta voi päätellä ennusteita. Mallia testataan kokeilla ja mittauksilla, ja se on voimassa vain tietyissä oloissa: malli ei ole koko totuus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "fysiikka",
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kymmenpotenssi",
+    "definition": "Luku 10ⁿ, missä n on kokonaisluku. Kymmenpotenssimuodossa luku kirjoitetaan muotoon a · 10ⁿ, missä 1 ≤ a < 10; eksponentin kasvu yhdellä kymmenkertaistaa luvun.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suuruusluokka",
+    "definition": "Lukua lähinnä oleva kymmenpotenssi. Luvun a · 10ⁿ suuruusluokka on 10ⁿ, kun a on alle noin 3, ja 10ⁿ⁺¹, kun a on yli noin 3. Kokojen suhde on karkeasti 10 potenssiin suuruusluokkien ero.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "kymmenpotenssi",
+      "malli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valovuosi",
+    "definition": "Pituuden yksikkö: matka, jonka valo kulkee tyhjiössä yhdessä vuodessa, noin 9,46 · 10¹⁵ m. Valovuosi on matka eikä aika.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "kymmenpotenssi",
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suure",
+    "definition": "Mitattava ominaisuus, kuten pituus, massa tai aika. Suureen arvo kirjoitetaan lukuarvon ja yksikön tulona: l = 12,0 cm. Suureen symboli kirjoitetaan kursiivilla.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "SI-järjestelmä",
+      "mittaus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yksikkö",
+    "definition": "Sovittu mitta, johon suuretta verrataan. Yksikkö kirjoitetaan lukuarvon perään pystykirjaimin, esimerkiksi metri (m) tai sekunti (s). Ilman yksikköä lukuarvo ei kerro suureesta mitään.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "suure",
+      "SI-järjestelmä",
+      "etuliite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "SI-järjestelmä",
+    "definition": "Kansainvälisesti sovittu yksikköjärjestelmä, jossa on seitsemän perusyksikköä: metri, kilogramma, sekunti, ampeeri, kelvin, mooli ja kandela. Muut yksiköt, kuten m/s ja N, johdetaan perusyksiköistä.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "suure",
+      "yksikkö",
+      "etuliite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "etuliite",
+    "definition": "Yksikön eteen liitettävä kymmenpotenssin lyhenne: kilo (k) 10³, mega (M) 10⁶, giga (G) 10⁹, milli (m) 10⁻³, mikro (µ) 10⁻⁶. Esimerkiksi 1 km = 10³ m.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "SI-järjestelmä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "merkitsevä numero",
+    "definition": "Lukuarvon numero, joka kertoo mittauksen tarkkuudesta. Ensimmäisestä nollasta eroavasta numerosta alkaen kaikki numerot loppunollat mukaan lukien ovat merkitseviä. Kerto- ja jakolaskun tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "mittausepävarmuus",
+      "mittaus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "astronominen yksikkö",
+    "definition": "Maan ja Auringon keskimääräinen etäisyys, 1 AU = 149 597 870,7 km ≈ 1,496 · 10⁸ km. Valo kulkee yhden AU:n noin 8,3 minuutissa.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "etuliite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "molekyyli",
+    "definition": "Kahden tai useamman atomin yhteen sitoutunut kokonaisuus. Esimerkiksi vesimolekyylissä on yksi happiatomi ja kaksi vetyatomia; sen koko on noin 3 · 10⁻¹⁰ m.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomi",
+    "definition": "Aineen rakenneosa, jossa on keskellä pieni atomiydin ja sen ympärillä elektroneja. Atomin halkaisija on noin 10⁻¹⁰ m, kymmeniätuhansia kertoja ytimen halkaisija.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomiydin",
+      "elektroni",
+      "molekyyli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomiydin",
+    "definition": "Atomin keskellä oleva pieni ja tiheä osa, joka koostuu protoneista ja neutroneista. Halkaisija noin 10⁻¹⁵–10⁻¹⁴ m; ytimessä on yli 99,9 % atomin massasta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi",
+      "protoni",
+      "neutroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektroni",
+    "definition": "Negatiivisesti varattu alkeishiukkanen, joka liikkuu atomissa ytimen ympärillä. Elektronille ei ole mitattu kokoa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi",
+      "alkeishiukkanen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "protoni",
+    "definition": "Positiivisesti varattu atomiytimen osa, halkaisijaltaan noin 1,7 · 10⁻¹⁵ m. Protoni koostuu kolmesta kvarkista; vetyatomin ydin on yksi protoni.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "neutroni",
+      "kvarkki",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "neutroni",
+    "definition": "Sähköisesti neutraali atomiytimen osa, kooltaan ja massaltaan lähes protonin kaltainen. Neutroni koostuu kolmesta kvarkista.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "protoni",
+      "kvarkki",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvarkki",
+    "definition": "Alkeishiukkanen, josta protonit ja neutronit koostuvat, kumpikin kolmesta. Kvarkille ei ole mitattu kokoa: kokeiden mukaan se on pienempi kuin noin 10⁻¹⁸ m.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "protoni",
+      "neutroni",
+      "alkeishiukkanen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeishiukkanen",
+    "definition": "Hiukkanen, jolla ei tiettävästi ole pienempiä osia, esimerkiksi elektroni ja kvarkki.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "elektroni",
+      "kvarkki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "planeetta",
+    "definition": "Tähteä kiertävä suuri kappale, joka ei tuota itse valoa vaan heijastaa tähtensä valoa. Maa on Aurinkoa kiertävä planeetta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "planeettakunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tähti",
+    "definition": "Kuuma kaasupallo, joka tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Aurinko on tähti.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeetta",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "planeettakunta",
+    "definition": "Tähti ja sitä kiertävät planeetat, kuut ja pienemmät kappaleet. Aurinkokunta on yksi planeettakunta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeetta",
+      "tähti",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "galaksi",
+    "definition": "Painovoiman koossa pitämä valtava joukko tähtiä, kaasua ja pölyä. Linnunrata on galaksi, jonka halkaisija on noin 10⁵ valovuotta; galaksit muodostavat ryhmiä ja joukkoja.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "havaittava maailmankaikkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sumu",
+    "definition": "Kaasu- ja pölypilvi galaksissa, kooltaan tyypillisesti valovuosia. Sumuissa syntyy tähtiä, esimerkiksi Orionin sumussa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "neutronitähti",
+    "definition": "Raskaan tähden räjähdyksestä jäänyt kappale, joka koostuu lähes pelkistä neutroneista. Massa on tavallisesti suurempi kuin Auringon, mutta halkaisija vain noin 20–25 km.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "musta aukko"
+    ],
+    "locked": false
+  },
+  {
+    "term": "musta aukko",
+    "definition": "Alue, josta painovoiman takia mikään, ei edes valo, pääse ulos. Mustalla aukolla ei ole pintaa; sen koko on tapahtumahorisontin halkaisija, joka kasvaa massan mukana.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "neutronitähti",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "havaittava maailmankaikkeus",
+    "definition": "Se osa maailmankaikkeutta, josta valo on ehtinyt tulla meille maailmankaikkeuden iän aikana; halkaisija noin 8,8 · 10²⁶ m. Koko maailmankaikkeuden kokoa ei tiedetä.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "galaksi",
+      "valovuosi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heliosfääri",
+    "definition": "Aurinkotuulen eli Auringosta virtaavien hiukkasten ympärilleen puhaltama kupla. Sen raja, heliopaussi, on noin 120 AU:n päässä; Auringon painovoima ulottuu paljon kauemmas.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeettakunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perusvuorovaikutus",
+    "definition": "Yksi neljästä vuorovaikutuksesta, joihin kaikki tunnetut vuorovaikutukset palautuvat: gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "gravitaatio",
+      "sähkömagneettinen vuorovaikutus",
+      "vahva vuorovaikutus",
+      "heikko vuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatio",
+    "definition": "Perusvuorovaikutus kaikkien massallisten kappaleiden välillä, aina vetävä. Pitää planeetat radoillaan ja kokoaa tähtiä ja galakseja; hallitsee suurissa mittakaavoissa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "vuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneettinen vuorovaikutus",
+    "definition": "Perusvuorovaikutus sähköisesti varattujen hiukkasten välillä: erimerkkiset varaukset vetävät ja samanmerkkiset hylkivät. Pitää elektronit atomissa ja sitoo atomit molekyyleiksi.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "elektroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vahva vuorovaikutus",
+    "definition": "Perusvuorovaikutus, joka sitoo kvarkit protoneiksi ja neutroneiksi; sen jäännösvaikutus pitää atomiytimen koossa. Ulottuu vain noin 10⁻¹⁵ m:n etäisyydelle.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "kvarkki",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heikko vuorovaikutus",
+    "definition": "Perusvuorovaikutus, joka aiheuttaa eräitä radioaktiivisia hajoamisia, kuten beetahajoamisen, jossa neutroni muuttuu protoniksi.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "beetahajoaminen",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ja ytimestä lähtee elektroni ja antineutriino. Sen aiheuttaa heikko vuorovaikutus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "heikko vuorovaikutus",
+      "neutroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköenergia",
+    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä takaisin esimerkiksi lämmöksi, valoksi tai liikkeeksi; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "sähköverkko",
+      "kilowattitunti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköverkko",
+    "definition": "Voimalinjojen, muuntajien ja sähköasemien muodostama verkko, joka siirtää sähköenergian voimalaitoksilta käyttäjille. Pitkät matkat siirretään kantaverkossa korkealla jännitteellä, ja jakeluverkko vie sähkön kuluttajille.",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "siirtohäviö",
+      "sähköenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "siirtohäviö",
+    "definition": "Energia, joka muuttuu energian siirrossa lämmöksi ympäristöön eikä tule käyttäjälle asti: E_häviö = E_lähtö − E_perille. Siirron hyötysuhde on perille tulevan energian osuus lähtevästä energiasta, η = E_perille : E_lähtö.",
+    "lessons": [
+      "fy2-7"
+    ],
+    "see_also": [
+      "hyötysuhde",
+      "kaukolämpö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mekaaninen energia",
+    "definition": "Kappaleen liikkeeseen ja asemaan liittyvä energia, eli liike-energia ja potentiaalienergia. Mekaaninen energia voi muuttua esimerkiksi lämpöenergiaksi kitkan vaikutuksesta.",
+    "lessons": [
+      "fy2-2"
+    ],
+    "see_also": [
+      "energia",
+      "lämpöenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lämpöenergia",
+    "definition": "Aineen hiukkasten satunnaiseen liikkeeseen liittyvä energia. Energiaketjun jokaisessa vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka hajaantuu ympäristöön eikä ole enää helposti hyödynnettävissä.",
+    "lessons": [
+      "fy2-2"
+    ],
+    "see_also": [
+      "energia",
+      "mekaaninen energia"
     ],
     "locked": false
   }

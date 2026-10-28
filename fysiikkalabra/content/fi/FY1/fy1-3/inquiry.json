@@ -1,0 +1,568 @@
+{
+  "version": 1,
+  "contribution": "Mittaustulos on arvio, jolla on virhe: **satunnaisvirhe** hajauttaa tuloksia ja pienenee keskiarvolla, **systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan eikä poistu toistolla, ja luotettavuus on sekä toistettavuutta että oikeellisuutta.",
+  "learn": [
+    "Erotat karkean virheen, satunnaisvirheen ja systemaattisen virheen ja tunnistat niiden lähteitä.",
+    "Osaat laskea keskiarvon ja arvioida tulosten hajontaa vaihteluvälin puolikkaalla.",
+    "Osaat korjata systemaattisen virheen ja arvioida, onko mittaus toistettava ja oikea."
+  ],
+  "prior": [
+    "Mittaustulos ilmoitetaan lukuarvona ja yksikkönä, ja merkitsevät numerot kertovat sen tarkkuudesta (luku *Suureet, yksiköt ja SI-järjestelmä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Fysiikan tunnilla luokka mittaa saman kuulan vierimisajan rampin yläpäästä alapäähän. Jokaisella on samanlainen käsikello, ja jokainen painaa sitä omalla kädellään. Silti tulokset ovat $2{,}18\\,\\text{s}$, $2{,}45\\,\\text{s}$, $2{,}68\\,\\text{s}$, $2{,}67\\,\\text{s}$, $2{,}40\\,\\text{s}$ ja niin edelleen. Opettaja sanoo, että kuulan todellinen aika on olemassa, mutta ei kerro sitä.",
+      "question": "Miten luokka voi saada näistä luotettavan tuloksen, ja mistä tietää, ettei kello ole kaikilla samalla tavalla väärässä?"
+    },
+    {
+      "id": "pr-numerot",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa merkitsevät numerot",
+      "prompt": "Kello näyttää kuulan vierimisajaksi $2{,}40\\,\\text{s}$. Mitä viimeinen nolla kertoo?",
+      "choices": [
+        {
+          "text": "Kello näyttää sadasosasekunnit, ja nolla on merkitsevä numero.",
+          "correct": true,
+          "feedback": "Oikein. $2{,}40\\,\\text{s}$ on ilmoitettu kolmella merkitsevällä numerolla, ja viimeinen on sadasosien paikalla: kello näyttää sadasosat. Käsin otetun ajan epävarmuus voi silti olla paljon suurempi, koska reaktioaika vaihtelee. Tässä luvussa opit arvioimaan sen."
+        },
+        {
+          "text": "Nolla on turha ja sen voi jättää pois, sillä $2{,}4\\,\\text{s}$ on sama tulos.",
+          "feedback": "Lukuina arvot ovat samat, mutta mittaustuloksina eivät: $2{,}4\\,\\text{s}$ kertoo, että lukema on luettu kymmenesosina, ja $2{,}40\\,\\text{s}$, että kello näyttää sadasosat. Loppunollaa ei siis saa jättää pois. Lukeman tarkkuus ei silti ole sadasosa, kun aika otetaan käsin."
+        },
+        {
+          "text": "Kuula vierii täsmälleen 2,40 sekuntia eikä yhtään enempää.",
+          "feedback": "Mittaustulos ei kerro täsmällistä arvoa. Merkitsevien numeroiden määrä kertoo, mihin asti tulokseen voi luottaa, ei sitä, että oikea arvo olisi juuri tuo."
+        },
+        {
+          "text": "Nolla kertoo, että kello on säädetty oikein.",
+          "feedback": "Numerot kertovat lukeman tarkkuudesta, eivät siitä, onko kello oikeassa. Kello voi näyttää sadasosia ja silti näyttää joka kerta saman verran liikaa."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: toistot ja keskiarvo",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Kuulan vierimisaika mitataan käsikellolla. Kello on muuten moitteeton, mutta jokaisessa mittauksessa on satunnaisvirhe. Mittaus toistetaan 40 kertaa ja lasketaan keskiarvo. Miten keskiarvo suhtautuu oikeaan aikaan, kun mittauksia on yhä enemmän?",
+      "choices": [
+        {
+          "text": "Keskiarvo lähestyy oikeaa aikaa, vaikka yksittäiset tulokset heittelevät edelleen.",
+          "correct": true,
+          "feedback": "Oikein. Kokeessa 1 yksittäisen tuloksen ero oikeaan aikaan oli mallin arvoissa $-0{,}22\\,\\text{s}$, mutta 40 tuloksen keskiarvon ero oli alle $0{,}01\\,\\text{s}$. Liian suuret ja liian pienet tulokset kumoavat toisensa, mutta yksittäiset tulokset heittelevät yhä."
+        },
+        {
+          "text": "Keskiarvo on yhtä kaukana oikeasta ajasta kuin yksittäinen tulos, koska virhe on aina yhtä suuri.",
+          "feedback": "Satunnaisvirhe ei ole joka kerta yhtä suuri eikä samansuuntainen. Kokeessa 1 yksittäisen tuloksen ero oikeaan aikaan oli $-0{,}22\\,\\text{s}$, mutta 40 tuloksen keskiarvon ero alle $0{,}01\\,\\text{s}$."
+        },
+        {
+          "text": "Keskiarvo etääntyy oikeasta ajasta, koska virheet kasautuvat.",
+          "feedback": "Satunnaiset virheet eivät kasaudu samaan suuntaan, vaan osa heittää ylös ja osa alas. Kokeessa 1 keskiarvon ero oikeaan aikaan pieneni, kun mittauksia lisättiin."
+        },
+        {
+          "text": "Yksittäiset tulokset alkavat osua samaan lukuun, kun mittauksia on tarpeeksi.",
+          "feedback": "Toisto ei pienennä yksittäisen mittauksen heittoa. Kokeessa 1 vaihteluvälin puolikas pysyi noin $0{,}25\\,\\text{s}$:ssa; vain keskiarvo asettui."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kello on väärässä",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Kellossa on systemaattinen virhe: se näyttää jokaisella mittauskerralla $0{,}30\\,\\text{s}$ liikaa. Lisäksi mittauksissa on satunnaisvirhe. Mittaus toistetaan 40 kertaa ja lasketaan keskiarvo. Mihin keskiarvo asettuu, kun mittauksia on yhä enemmän?",
+      "choices": [
+        {
+          "text": "Oikeaan aikaan, koska toistot poistavat myös systemaattisen virheen.",
+          "feedback": "Toistot kumoavat vain satunnaisen osan, koska se heittää kumpaankin suuntaan. Systemaattinen virhe on joka mittauksessa samaan suuntaan, joten se säilyy keskiarvossa: kokeessa 2 keskiarvo asettui noin $0{,}30\\,\\text{s}$ oikean ajan yläpuolelle."
+        },
+        {
+          "text": "Noin $0{,}30\\,\\text{s}$ oikean ajan yläpuolelle: satunnainen osa vaimenee, mutta systemaattinen virhe jää.",
+          "correct": true,
+          "feedback": "Oikein. Kokeessa 2 keskiarvo asettui lähelle arvoa $2{,}70\\,\\text{s}$, kun oikea aika on $2{,}40\\,\\text{s}$. Toisto vaimentaa vain satunnaisvirhettä."
+        },
+        {
+          "text": "Yli $0{,}30\\,\\text{s}$ oikean ajan yläpuolelle, koska virhe kasvaa toistojen mukana.",
+          "feedback": "Virhe ei kasva toistojen mukana. Keskiarvo on summa jaettuna lukumäärällä, joten jokaisessa tuloksessa oleva sama $0{,}30\\,\\text{s}$ pysyy keskiarvossakin samana."
+        },
+        {
+          "text": "Mihinkään, vaan keskiarvo vaihtelee yhä yhtä paljon kuin ensimmäisten toistojen jälkeen.",
+          "feedback": "Keskiarvo vakiintuu: kokeessa 2 se muuttuu alussa paljon mutta lähestyy sitten tiettyä arvoa. Tämä arvo ei vain ole oikea aika."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kuula vierii rampilla, ja käsikello antaa joka kerta lukeman. Pisteet kasautuvat aika-akselille, ja näet keskiarvon ja oikean ajan. Liukusäätimillä valitset toistot ja kahden virheen suuruuden.",
+      "howto": "Paina *Käynnistä*, niin mittauksia tehdään yksi kerrallaan. Voit myös vetää *Toistoja* -liukusäädintä, jolloin näet saman sarjan ensimmäiset $n$ tulosta. *Satunnaisvirhe* kertoo, kuinka paljon tulokset heittelevät, ja *Systemaattinen virhe* sen, kuinka paljon kello näyttää joka kerta liikaa (plus) tai liian vähän (miinus). Oranssi piste on viimeisin lukema, vihreä katkoviiva oikea aika ja musta viiva keskiarvo.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät oikean kokeen mittauksia. Kuulan oikea vierimisaika on $T = 2{,}40\\,\\text{s}$. Malli tuntee sen, mutta oikeassa kokeessa sitä ei tiedetä. Lukema on $t_i = T + \\Delta t_\\text{sys} + \\Delta t_\\text{sat}\\,g_i$ pyöristettynä sadasosasekuntiin, missä $g_i$ on kiinteä satunnaislukujen sarja. Sama sarja alkaa aina alusta, joten kokeen voi toistaa. Luku $\\Delta t_\\text{sat}$ on yksittäisen lukeman tyypillinen poikkeama; monen lukeman vaihteluvälin puolikas on sitä suurempi.",
+      "calc": "Keskiarvo $\\bar{t}$ on $n$ ensimmäisen lukeman summa jaettuna luvulla $n$. Vaihteluvälin puolikas on $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. Keskiarvon ero oikeaan aikaan on $\\bar{t} - T$, ja sen näkee vain mallissa, koska oikeaa aikaa ei yleensä tunneta."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: satunnaisvirhe ja keskiarvo",
+      "intro": "Testaa ennuste 1. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi nollan. Vedä *Toistoja* -liukusäädintä ja kirjaa mittaus, kun $n = 1$, $n = 5$ ja $n = 40$. Katso, mitä keskiarvolle ja vaihteluvälille tapahtuu.",
+      "initial": {
+        "n": 1,
+        "sat": 0.15,
+        "sys": 0
+      },
+      "names": {
+        "n": "toistoja n",
+        "sat": "satunnaisvirhe",
+        "sys": "systemaattinen virhe"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "sat",
+        "sys"
+      ],
+      "vary": "n",
+      "measure": [
+        {
+          "key": "mean",
+          "label": "keskiarvo (s)"
+        },
+        {
+          "key": "puoli",
+          "label": "vaihteluvälin puolikas (s)"
+        },
+        {
+          "key": "vir",
+          "label": "ero oikeaan (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukko osoittaa, kun $n$ kasvaa?",
+        "choices": [
+          {
+            "text": "Keskiarvon ero oikeaan aikaan pienenee, mutta vaihteluvälin puolikas ei pienene kohti nollaa vaan asettuu noin $0{,}25\\,\\text{s}$:iin (rivillä $n = 1$ se on nolla, koska tuloksia on vain yksi).",
+            "correct": true,
+            "feedback": "Oikein. Rivillä $n = 1$ keskiarvo on yksittäinen tulos ja ero oikeaan on $-0{,}22\\,\\text{s}$, rivillä $n = 40$ ero on alle $0{,}01\\,\\text{s}$. Vaihteluvälin puolikas pysyy noin $0{,}25\\,\\text{s}$:ssa, koska yksittäiset mittaukset heittelevät yhä."
+          },
+          {
+            "text": "Sekä keskiarvon ero että vaihteluvälin puolikas pienenevät kohti nollaa.",
+            "feedback": "Vaihteluväli ei pienene: yksittäiset mittaukset heittelevät yhä yhtä paljon. Taulukossa puolikas on riveillä $n = 5$ ja $n = 40$ noin $0{,}25\\,\\text{s}$."
+          },
+          {
+            "text": "Keskiarvo pysyy samana kaikilla $n$, ja vain vaihteluväli muuttuu.",
+            "feedback": "Keskiarvo muuttuu: rivillä $n = 1$ se on yksittäinen tulos $2{,}18\\,\\text{s}$, mutta rivillä $n = 40$ lähes oikea aika $2{,}40\\,\\text{s}$."
+          },
+          {
+            "text": "Sekä keskiarvon ero että vaihteluvälin puolikas kasvavat mittausten lisääntyessä.",
+            "feedback": "Keskiarvon ero ei kasva vaan pienenee, koska liian suuret ja liian pienet tulokset kumoavat toisensa. Vain vaihteluväli kasvaa aluksi nollasta, kun mukaan tulee useampi tulos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: systemaattinen virhe ei kumoudu",
+      "intro": "Testaa ennuste 2. Alkutila asettaa satunnaisvirheeksi $0{,}15\\,\\text{s}$ ja systemaattiseksi virheeksi $+0{,}30\\,\\text{s}$. Kirjaa mittaus, kun $n = 1$, $n = 10$ ja $n = 40$. Oikea aika on $T = 2{,}40\\,\\text{s}$, jonka malli tuntee mutta oikeassa kokeessa ei tunnettaisi.",
+      "initial": {
+        "n": 1,
+        "sat": 0.15,
+        "sys": 0.3
+      },
+      "names": {
+        "n": "toistoja n",
+        "sat": "satunnaisvirhe",
+        "sys": "systemaattinen virhe"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "sat",
+        "sys"
+      ],
+      "vary": "n",
+      "measure": [
+        {
+          "key": "mean",
+          "label": "keskiarvo (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Lue taulukosta rivi $n = 40$ ja laske keskiarvon ja oikean ajan $T = 2{,}40\\,\\text{s}$ erotus. Vastaa sekunteina.",
+        "answer": 0.3,
+        "unit": "s",
+        "tolerance": 0.05,
+        "hints": [
+          "Mittausvirhe on tuloksen ja oikean arvon erotus. Tulos on tässä keskiarvo.",
+          "Erotus on $\\bar{t} - T$, missä $\\bar{t}$ on rivin $n = 40$ keskiarvo.",
+          "Jos keskiarvo on $2{,}70\\,\\text{s}$, erotus on $2{,}70\\,\\text{s} - 2{,}40\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2.7,
+            "feedback": "Tämä on keskiarvo itse. Kysyttiin sen eroa oikeaan aikaan: vähennä keskiarvosta $T = 2{,}40\\,\\text{s}$."
+          },
+          {
+            "value": 0,
+            "feedback": "Ero ei ole nolla. Satunnainen osa on vaimentunut, mutta systemaattinen virhe $+0{,}30\\,\\text{s}$ on yhä mukana jokaisessa tuloksessa ja siis keskiarvossa."
+          }
+        ],
+        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** erotus $\\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\bar{t} - T = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "optional": true,
+      "title": "Koe 3: satunnaisvirheen suuruus",
+      "intro": "Selvitä, miten tulosten hajonta riippuu satunnaisvirheen suuruudesta. Alkutila asettaa $n = 40$ ja systemaattisen virheen nollaksi. Kirjaa mittaus, kun satunnaisvirhe on $0{,}05\\,\\text{s}$, $0{,}15\\,\\text{s}$ ja $0{,}30\\,\\text{s}$.",
+      "initial": {
+        "n": 40,
+        "sat": 0.05,
+        "sys": 0
+      },
+      "names": {
+        "n": "toistoja n",
+        "sat": "satunnaisvirhe",
+        "sys": "systemaattinen virhe"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "n",
+        "sys"
+      ],
+      "vary": "sat",
+      "measure": [
+        {
+          "key": "puoli",
+          "label": "vaihteluvälin puolikas (s)"
+        },
+        {
+          "key": "mean",
+          "label": "keskiarvo (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta kertaa suurempi vaihteluvälin puolikas on, kun satunnaisvirhe on $0{,}30\\,\\text{s}$, kuin kun se on $0{,}05\\,\\text{s}$?",
+        "answer": 6.2,
+        "unit": "kertaa",
+        "tolerance": 0.03,
+        "hints": [
+          "Lue taulukosta vaihteluvälin puolikas kummallakin satunnaisvirheen arvolla.",
+          "Suhde saadaan jakamalla suuremman satunnaisvirheen puolikas pienemmän satunnaisvirheen puolikkaalla.",
+          "Riveiltä $\\dfrac{0{,}525\\,\\text{s}}{0{,}0850\\,\\text{s}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6,
+            "feedback": "Tämä on satunnaisvirheiden suhde $\\dfrac{0{,}30}{0{,}05}$. Kysyttiin taulukon vaihteluvälin puolikkaiden suhdetta, ja se on lähes sama mutta ei täsmälleen, koska tulokset on pyöristetty sadasosiin."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta vaihteluvälin puolikkaat $\\Delta t_1 = 0{,}0850\\,\\text{s}$ (satunnaisvirhe $0{,}05\\,\\text{s}$) ja $\\Delta t_2 = 0{,}525\\,\\text{s}$ (satunnaisvirhe $0{,}30\\,\\text{s}$), mallin arvoja\n\n**Kysytty:** suhde $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Periaate:** Mitä suurempi satunnaisvirhe on, sitä enemmän tulokset hajaantuvat ja sitä suurempi on vaihteluvälin puolikas. Hajonta on suoraan verrannollinen satunnaisvirheen suuruuteen, joten suhteen pitäisi olla lähellä satunnaisvirheiden suhdetta.\n\n**Kaava:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Muunnokset:** Molemmat ovat sekunteina ja suhteessa yksiköt supistuvat, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{0{,}525\\,\\text{s}}{0{,}0850\\,\\text{s}} = 6{,}2$\n\n**Vastaus:** $6{,}2$ kertaa. Kaksi merkitsevää numeroa riittää: lukemat on pyöristetty sadasosasekunteihin, joten pienempi puolikas $0{,}0850\\,\\text{s}$ on epävarma jo toisessa numerossaan, vaikka taulukko näyttää kolme.\n\n**Järkevyys:** Satunnaisvirheiden suhde on $\\dfrac{0{,}30}{0{,}05} = 6$, ja saatu $6{,}2$ on lähellä sitä. Pieni ero johtuu siitä, että mallin lukemat pyöristetään sadasosasekuntiin."
+      }
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "source": "simulated",
+      "title": "Aineisto: lämpömittari jäävedessä",
+      "text": "Oppilas tarkistaa lämpömittarin upottamalla sen sulavan jään ja veden seokseen, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Hän lukee mittaria kahdeksan kertaa (esimerkkiaineisto, ei oikea koe).\n\n| Lukukerta | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| Lukema (${}^\\circ\\text{C}$) | 1,4 | 1,6 | 1,5 | 1,5 | 1,6 | 1,4 | 1,5 | 1,5 |\n\nLukemien keskiarvo on $1{,}5\\,{}^\\circ\\text{C}$ ja vaihteluvälin puolikas $0{,}1\\,{}^\\circ\\text{C}$.",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä virhettä aineisto osoittaa?",
+        "choices": [
+          {
+            "text": "Systemaattista virhettä: lukemat ovat tiiviisti ryhmässä mutta noin $1{,}5\\,{}^\\circ\\text{C}$ liian suuria.",
+            "correct": true,
+            "feedback": "Oikein. Lukemat vaihtelevat vain välillä $1{,}4\\,{}^\\circ\\text{C}$–$1{,}6\\,{}^\\circ\\text{C}$ (hyvä toistettavuus), mutta oikea arvo on $0\\,{}^\\circ\\text{C}$. Mittari näyttää joka mittauksessa noin $1{,}5\\,{}^\\circ\\text{C}$ liikaa. Tämä paljastui vain, koska oikea arvo tunnettiin."
+          },
+          {
+            "text": "Satunnaisvirhettä: lukemat vaihtelevat, joten mittari on epäluotettava.",
+            "feedback": "Vaihtelu on pientä, koska vaihteluvälin puolikas on vain $0{,}1\\,{}^\\circ\\text{C}$. Suurempi ongelma on, etteivät lukemat ole lähelläkään oikeaa arvoa $0\\,{}^\\circ\\text{C}$."
+          },
+          {
+            "text": "Ei virhettä, koska lukemat ovat lähes samat.",
+            "feedback": "Lähes samat lukemat kertovat toistettavuudesta, eivät oikeellisuudesta. Oikea arvo on $0\\,{}^\\circ\\text{C}$, ja jokainen lukema on siitä yli yhden asteen poissa."
+          },
+          {
+            "text": "Satunnaisvirhe ja systemaattinen virhe ovat suunnilleen yhtä suuria.",
+            "feedback": "Satunnaisvirheen arvio on $0{,}1\\,{}^\\circ\\text{C}$ ja systemaattinen virhe $1{,}5\\,{}^\\circ\\text{C}$, eli systemaattinen virhe on noin viisitoistakertainen."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös kokeista",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Kirjoita kokeiden 1 ja 2 sekä lämpömittariaineiston perusteella: mitä keskiarvon ottaminen korjaa, mitä se ei korjaa ja miten systemaattisen virheen voi huomata? Perustele mallin arvoilla ja aineistolla.",
+      "criteria": [
+        "Sanon, että toistot ja keskiarvo vaimentavat satunnaisvirhettä, ja perustelen kokeella 1: keskiarvon ero oikeaan aikaan pieneni.",
+        "Sanon, että systemaattinen virhe säilyy keskiarvossa, ja perustelen kokeella 2: keskiarvo jäi noin $0{,}30\\,\\text{s}$ oikean ajan yläpuolelle.",
+        "Sanon, että systemaattisen virheen voi huomata vain vertaamalla tunnettuun vertailuarvoon tai toiseen mittaustapaan, kuten jäävettä lämpömittariaineistossa.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä oikeiksi mittauksiksi."
+      ],
+      "model": "Kokeessa 1 yksittäisen tuloksen ero oikeaan aikaan oli mallin arvoissa $-0{,}22\\,\\text{s}$, mutta 40 tuloksen keskiarvon ero alle $0{,}01\\,\\text{s}$, joten keskiarvo vaimentaa satunnaisvirhettä. Vaihteluvälin puolikas pysyi silti noin $0{,}25\\,\\text{s}$:ssa, koska yksittäiset mittaukset heittelevät edelleen. Kokeessa 2 mallin kellossa oli systemaattinen virhe $+0{,}30\\,\\text{s}$, ja 40 toiston keskiarvo asettui noin $0{,}30\\,\\text{s}$ oikean ajan yläpuolelle: keskiarvo ei korjaa systemaattista virhettä. Lämpömittariaineistossa lukemat toistuivat hyvin ($1{,}4\\,{}^\\circ\\text{C}$–$1{,}6\\,{}^\\circ\\text{C}$), mutta jäävedessä oikea arvo on $0\\,{}^\\circ\\text{C}$. Systemaattinen virhe huomattiin siis vertaamalla tunnettuun vertailuarvoon, ja se korjataan vähentämällä virhe lukemista."
+    },
+    {
+      "id": "kaava-teoria",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeisiin 1 ja 2. Mitä toistaminen korjaa ja mitä ei? Palaa myös alun luokkaan: miten he saisivat kuulan ajasta luotettavan tuloksen ja mistä he voisivat huomata, että kello on kaikilla väärässä?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "karkea",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Karkea virhe",
+      "justify": true,
+      "prompt": "Oppilas mittaa kuulan vierimisajan käsikellolla kuusi kertaa ja saa tulokset $3{,}12\\,\\text{s}$, $3{,}25\\,\\text{s}$, $3{,}07\\,\\text{s}$, $4{,}31\\,\\text{s}$, $3{,}19\\,\\text{s}$ ja $3{,}15\\,\\text{s}$. Mitä hänen kannattaa tehdä ennen keskiarvon laskemista?",
+      "choices": [
+        {
+          "text": "Laskea keskiarvon kaikista kuudesta tuloksesta, koska keskiarvo vaimentaa virheet.",
+          "feedback": "Keskiarvo vaimentaa satunnaisvirhettä, mutta tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, kun muut ovat $0{,}2\\,\\text{s}$:n sisällä. Se on todennäköisesti karkea virhe, ja mukaan otettuna se siirtäisi keskiarvoa noin $0{,}2\\,\\text{s}$ ylöspäin."
+        },
+        {
+          "text": "Tarkistaa tuloksen $4{,}31\\,\\text{s}$ ja mitata tarvittaessa uudelleen. Tulos jätetään pois vain, jos sille löytyy selvä syy, esimerkiksi myöhään pysäytetty kello, ja poisjättö perustellaan ja kirjataan.",
+          "correct": true,
+          "feedback": "Oikein. Tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, joten se on todennäköisesti karkea virhe, esimerkiksi myöhään pysäytetty kello tai väärin kirjattu lukema. Jos tarkistus paljastaa karkean virheen, tulos jätetään pois, syy kirjataan ja tilalle tehdään uusi mittaus. Pelkkä poikkeaminen muista ei vielä ole syy poistaa tulosta."
+        },
+        {
+          "text": "Jättää pois suurimman ja pienimmän tuloksen, $4{,}31\\,\\text{s}$ ja $3{,}07\\,\\text{s}$, koska ääripäät ovat aina virheellisiä.",
+          "feedback": "Ääripäät eivät ole automaattisesti virheellisiä: $3{,}07\\,\\text{s}$ on vain $0{,}05\\,\\text{s}$ seuraavaa tulosta pienempi, ja se kuuluu tavalliseen hajontaan. Selvästi poikkeava tulos, tässä $4{,}31\\,\\text{s}$, tarkistetaan, ja se jätetään pois vain, jos virheen syy löytyy."
+        },
+        {
+          "text": "Lisätä virhe-arvioon $\\Delta t$ tuloksen $4{,}31\\,\\text{s}$ verran, jotta kaikki tulokset mahtuvat väliin.",
+          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin seitsenkertaiseksi, $0{,}09\\,\\text{s}$:sta $0{,}62\\,\\text{s}$:iin. Selvästi poikkeava tulos tarkistetaan ja mittaus toistetaan tarvittaessa; tulos jätetään pois vain perustellusta ja kirjatusta syystä."
+        }
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Etsi virhe",
+      "prompt": "Oppilaan viivaimen nollakohta on kulunut, joten kaikki lukemat ovat noin $0{,}4\\,\\text{cm}$ liian suuria. Hän mittaa lasiputken pituuden kymmenen kertaa ja laskee keskiarvon. Hän päättelee: kymmenen mittausta kumoaa virheet, joten tulos on varmasti oikea. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Keskiarvo kumoaa vain satunnaisvirheen. Kulunut nollakohta on systemaattinen virhe, joka on mukana jokaisessa lukemassa ja siis myös keskiarvossa.",
+          "correct": true,
+          "feedback": "Oikein. Systemaattinen virhe ei vaihtele mittauksesta toiseen, joten keskiarvo ei vaimenna sitä. Se huomataan vertaamalla tunnettuun pituuteen ja korjataan vähentämällä."
+        },
+        {
+          "text": "Mittauksia pitäisi olla sata eikä kymmenen, jolloin virhe kumoutuisi.",
+          "feedback": "Toistojen lisääminen ei auta, koska virhe on joka lukemassa samansuuntainen. Kokeessa 2 mallin 40 mittausta ei poistanut systemaattista virhettä $0{,}30\\,\\text{s}$."
+        },
+        {
+          "text": "Keskiarvoon pitäisi ottaa vain pienimmät lukemat.",
+          "feedback": "Tulosten valikointi ei auta, jos kaikki lukemat ovat samalla tavalla liian suuria. Lisäksi tulosten karsiminen toiveiden mukaan vääristäisi tuloksen."
+        },
+        {
+          "text": "Virhettä ei ole, koska lukemat ovat lähes samoja ja viivain siis tarkka.",
+          "feedback": "Lähes samat lukemat kertovat toistettavuudesta, eivät oikeellisuudesta. Viivaimen nollakohta on kulunut, joten jokainen lukema on liian suuri."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Keittiövaaka näyttää tyhjänä $0{,}8\\,\\text{g}$. Oppilas punnitsee viisi samanlaista kolikkoa yhdessä viisi kertaa ja saa lukemat $27{,}9\\,\\text{g}$, $28{,}1\\,\\text{g}$, $28{,}0\\,\\text{g}$, $27{,}8\\,\\text{g}$ ja $28{,}2\\,\\text{g}$. Mikä on yhden kolikon massa? Vastaa grammoina.",
+      "answer": 5.44,
+      "unit": "g",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä virhelajia vaa'an nollalukema edustaa ja mitä virhelajia lukemien vaihtelu? Kumpaakin käsitellään eri tavalla.",
+        "Laske ensin lukemien keskiarvo, korjaa sitten nollakohta vähentämällä nollalukema ja jaa lopuksi kolikoiden lukumäärällä.",
+        "Lukemien summa on $27{,}9 + 28{,}1 + 28{,}0 + 27{,}8 + 28{,}2$ grammaa. Keskiarvo $\\bar{m}$ on summa jaettuna viidellä, ja yhden kolikon massa on $\\dfrac{\\bar{m} - 0{,}8\\,\\text{g}}{5}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.6,
+          "feedback": "Unohdit nollakohdan korjauksen. Vaaka näyttää tyhjänä $0{,}8\\,\\text{g}$, ja se on mukana jokaisessa lukemassa. Vähennä se keskiarvosta ennen jakamista."
+        },
+        {
+          "value": 27.2,
+          "feedback": "Tämä on korjattu viiden kolikon yhteismassa. Kysyttiin yhtä kolikkoa, joten jaa vielä viidellä."
+        },
+        {
+          "value": 4.8,
+          "feedback": "Vähensit nollalukeman yhdestä kolikosta. Nollalukema on mukana kerran koko punnituksessa, ei jokaisen kolikon kohdalla: vähennä se yhteismassasta ennen jakamista viidellä."
+        },
+        {
+          "value": 28,
+          "feedback": "Tämä on lukemien keskiarvo. Kolikon massaan tarvitaan vielä nollakohdan korjaus ja jako kolikoiden lukumäärällä."
+        }
+      ],
+      "solution": "**Annettu:** vaa'an nollalukema $m_0 = 0{,}8\\,\\text{g}$; lukemat $27{,}9\\,\\text{g}$, $28{,}1\\,\\text{g}$, $28{,}0\\,\\text{g}$, $27{,}8\\,\\text{g}$ ja $28{,}2\\,\\text{g}$; kolikoita $N = 5$\n\n**Kysytty:** yhden kolikon massa $m_\\text{kolikko}$ yksikössä $\\text{g}$\n\n**Periaate:** Lukemien vaihtelu on satunnaisvirhettä, jota keskiarvo vaimentaa. Nollalukema $0{,}8\\,\\text{g}$ on systemaattinen virhe, joka on mukana jokaisessa lukemassa ja siis keskiarvossa, joten se on vähennettävä. Viiden kolikon yhteismassa jaetaan lopuksi viidellä.\n\n**Kaava:** $\\bar{m} = \\dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$ ja $m_\\text{kolikko} = \\dfrac{\\bar{m} - m_0}{N}$\n\n**Muunnokset:** Kaikki massat ovat grammoina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Summa on $27{,}9\\,\\text{g} + 28{,}1\\,\\text{g} + 28{,}0\\,\\text{g} + 27{,}8\\,\\text{g} + 28{,}2\\,\\text{g} = 140{,}0\\,\\text{g}$, joten $\\bar{m} = \\dfrac{140{,}0\\,\\text{g}}{5} = 28{,}0\\,\\text{g}$ ja $m_\\text{kolikko} = \\dfrac{28{,}0\\,\\text{g} - 0{,}8\\,\\text{g}}{5} = \\dfrac{27{,}2\\,\\text{g}}{5} = 5{,}44\\,\\text{g}$\n\n**Vastaus:** $5{,}44\\,\\text{g}$, kolme merkitsevää numeroa: erotus $27{,}2\\,\\text{g}$ tunnetaan kolmella numerolla, ja jako luvulla $5$ on tarkka.\n\n**Järkevyys:** Arvio: $28\\,\\text{g} : 5 \\approx 5{,}6\\,\\text{g}$, ja korjaus pienentää massaa $0{,}8\\,\\text{g} : 5 = 0{,}16\\,\\text{g}$, joten $5{,}6\\,\\text{g} - 0{,}16\\,\\text{g} \\approx 5{,}44\\,\\text{g}$. Kolikon massa on muutaman gramman luokkaa, kuten pienillä kolikoilla, ja korjattu massa on lukemaa pienempi, koska vaaka näytti liikaa."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat vapaaehtoisia ja syventäviä, joten tee ne, jos taso 1 sujuu. Muunna kaikki tulokset samaan yksikköön ennen keskiarvon laskemista."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Mittarilla mitataan sama suure kymmenen kertaa. Kaikki lukemat ovat hyvin lähellä toisiaan, mutta kaikki ovat selvästi tunnettua vertailuarvoa suurempia. Mitä voi päätellä?",
+      "choices": [
+        {
+          "text": "Toistettavuus on hyvä, mutta mittauksessa on systemaattinen virhe, joten tulos ei ole oikea.",
+          "correct": true,
+          "feedback": "Oikein. Lähellä toisiaan olevat lukemat tarkoittavat pientä satunnaisvirhettä. Se, että kaikki ovat vertailuarvon samalla puolella, paljastaa systemaattisen virheen."
+        },
+        {
+          "text": "Satunnaisvirhe on suuri, koska tulokset eroavat vertailuarvosta.",
+          "feedback": "Satunnaisvirhe näkyy tulosten keskinäisenä hajontana. Tässä tulokset ovat lähellä toisiaan, joten satunnaisvirhe on pieni; ero vertailuarvoon on systemaattinen virhe."
+        },
+        {
+          "text": "Mittaus on luotettava, koska tulokset toistuvat.",
+          "feedback": "Toistuvuus kertoo vain toistettavuudesta. Luotettavan mittauksen pitää olla myös oikea, ja tässä kaikki lukemat ovat samalla tavalla pielessä."
+        },
+        {
+          "text": "Systemaattinen virhe poistuu, kun tuloksista lasketaan keskiarvo.",
+          "feedback": "Keskiarvo vaimentaa satunnaisvirhettä, koska heitot kumoavat toisensa. Systemaattinen virhe on joka tuloksessa samaan suuntaan, joten se säilyy keskiarvossa."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Resoluutio ja epävarmuus",
+      "prompt": "Oppilas ottaa kuulan vierimisajan käsin sekuntikellolla, joka näyttää sadasosasekunnit. Kello pysähtyy lukemaan $2{,}47\\,\\text{s}$. Mikä on järkevin arvio tämän yksittäisen ajan epävarmuudesta?",
+      "choices": [
+        {
+          "text": "Sekunnin kymmenesosien luokkaa, esimerkiksi noin $0{,}2\\,\\text{s}$, koska kello käynnistetään ja pysäytetään käsin.",
+          "correct": true,
+          "feedback": "Oikein. Näytön pienin askel $0{,}01\\,\\text{s}$ on kellon resoluutio, mutta mittauksen kokonaisepävarmuuteen vaikuttaa myös mittausmenetelmä. Reaktioaika vaihtelee käynnistyksessä ja pysäytyksessä, joten käsin otetun ajan epävarmuus on sekunnin kymmenesosien luokkaa. Toistamalla mittauksen voit arvioida hajonnan vaihteluvälin puolikkaalla."
+        },
+        {
+          "text": "$0{,}01\\,\\text{s}$, koska kello näyttää sadasosasekunnit.",
+          "feedback": "Houkutteleva, koska näytön tarkkuus näkyy suoraan lukemassa. $0{,}01\\,\\text{s}$ on kuitenkin kellon resoluutio eli pienin askel, jonka näyttö voi näyttää. Se ei yksin kerro epävarmuutta: käsin otetussa ajassa vaihteleva reaktioaika tuo epävarmuuden, joka on sekunnin kymmenesosien luokkaa."
+        },
+        {
+          "text": "$0{,}005\\,\\text{s}$ eli puolet näytön pienimmästä askeleesta.",
+          "feedback": "Puolet pienimmästä asteikkovälistä on yksinkertainen arvio lukeman epävarmuudesta, kun arvo luetaan asteikolta. Mittauksen kokonaisepävarmuuteen vaikuttavat kuitenkin myös mittausmenetelmä ja muut virhelähteet. Tässä lukema on helppo kirjata, mutta käsin käynnistetty ja pysäytetty kello tuo reaktioajan vuoksi sekunnin kymmenesosien epävarmuuden."
+        },
+        {
+          "text": "Epävarmuutta ei ole, koska digitaalinen näyttö ei vaadi asteikon tulkintaa.",
+          "feedback": "Digitaalinen näyttö poistaa asteikon tulkinnan, mutta ei mittausmenetelmän epävarmuutta. Jokaiseen mittaustulokseen kuuluu epävarmuus. Käsin otetussa ajassa sen aiheuttaa ennen kaikkea reaktioaika, joka vaihtelee mittauksesta toiseen."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Laskeminen",
+      "prompt": "Kuulan vierimisaika mitataan viisi kertaa ja tulokset ovat $2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$. Virhe-arvio on vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
+      "answer": 2.1,
+      "unit": "%",
+      "tolerance": 0.05,
+      "hints": [
+        "Laske ensin keskiarvo ja vaihteluvälin puolikas.",
+        "Suhteellinen virhe on $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
+        "Keskiarvo on $2{,}40\\,\\text{s}$ ja vaihteluvälin puolikas $\\dfrac{2{,}46\\,\\text{s} - 2{,}36\\,\\text{s}}{2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.2,
+          "feedback": "Unohdit puolittaa vaihteluvälin. Koko vaihteluväli $0{,}10\\,\\text{s}$ jaettuna keskiarvolla antaa $4{,}2\\,\\%$, mutta virhe-arvio on vaihteluvälin puolikas $0{,}05\\,\\text{s}$."
+        },
+        {
+          "value": 0.05,
+          "feedback": "Tämä on virhe-arvio sekunteina. Suhteellinen virhe saadaan jakamalla se keskiarvolla ja kertomalla sadalla prosenteiksi."
+        },
+        {
+          "value": 0.021,
+          "feedback": "Suhde on oikein mutta se ei ole vielä prosentteina. Kerro se sadalla."
+        }
+      ],
+      "solution": "**Annettu:** $t = 2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2{,}36\\,\\text{s}$, $t_\\text{max} = 2{,}46\\,\\text{s}$\n\n**Kysytty:** suhteellinen virhe $\\varepsilon$ prosentteina\n\n**Periaate:** Satunnaisvirheen arvio on vaihteluvälin puolikas, ja suhteellinen virhe vertaa sitä tulokseen, joka on keskiarvo. Suhde on yksikötön, ja prosenttiin päästään kertomalla sadalla.\n\n**Kaava:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ ja $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita. Suhde kerrotaan sadalla prosenteiksi.\n\n**Sijoitus:** $\\bar{t} = \\dfrac{12{,}00\\,\\text{s}}{5} = 2{,}40\\,\\text{s}$, $\\Delta t = \\dfrac{2{,}46\\,\\text{s} - 2{,}36\\,\\text{s}}{2} = 0{,}05\\,\\text{s}$ ja $\\varepsilon = \\dfrac{0{,}05\\,\\text{s}}{2{,}40\\,\\text{s}} \\cdot 100\\,\\% = 2{,}1\\,\\%$\n\n**Vastaus:** $2\\,\\%$, yksi merkitsevä numero kuten virhearviossa $0{,}05\\,\\text{s}$ (laskimen arvo $2{,}08\\,\\%$).\n\n**Järkevyys:** Arvio: $0{,}05\\,\\text{s}$ on noin $\\tfrac{1}{50}$ ajasta $2{,}4\\,\\text{s}$, eli noin $2\\,\\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Selitä",
+      "prompt": "Selitä omin sanoin, miten erotat toisistaan satunnaisen ja systemaattisen virheen, mitä toistaminen niille tekee ja mitä toistettavuus ja oikeellisuus tarkoittavat.",
+      "criteria": [
+        "Sanon, että satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy tulosten hajontana, kun taas systemaattinen virhe on joka mittauksessa samaan suuntaan.",
+        "Sanon, että keskiarvo vaimentaa satunnaisvirhettä mutta ei systemaattista virhettä.",
+        "Sanon, että toistettavuus kertoo tulosten lähellä toisiaan olemisesta ja oikeellisuus siitä, kuinka lähellä oikeaa arvoa tulos on.",
+        "Sanon, mistä systemaattisen virheen voi huomata: vertailusta tunnettuun arvoon tai toiseen menetelmään."
+      ],
+      "model": "Satunnaisvirhe vaihtelee kerta kerralta ja kumpaan suuntaan tahansa, joten se näkyy tulosten hajontana, esimerkiksi käsikellon reaktioaikana. Systemaattinen virhe on joka mittauksessa samaan suuntaan, esimerkiksi väärä nollakohta. Toistaminen ja keskiarvo vaimentavat satunnaisvirhettä, koska liian suuret ja liian pienet tulokset kumoavat toisensa, mutta systemaattinen virhe on yhtä suuri myös keskiarvossa. Toistettavuus kertoo, kuinka lähelle toisiaan toistetut tulokset osuvat, eli kuinka pieni satunnaisvirhe on. Oikeellisuus kertoo, kuinka lähellä keskiarvo on oikeaa arvoa, eli kuinka pieni systemaattinen virhe on. Systemaattisen virheen voi huomata vain vertaamalla tulosta tunnettuun vertailuarvoon tai toiseen mittaustapaan."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

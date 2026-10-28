@@ -1,0 +1,265 @@
+[
+ {
+  "expr": "(() => { const s=document.querySelector('#sim-root select'); const S=window.simState; return s.value==='litra bensiiniä' && Math.abs(S.L-7.5)<1e-9 && S.kohde==='litra bensiiniä' && S.tyyppi===1 && !document.querySelector('#sim-root input[type=range]') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: Kohde litra bensiiniä, view centre 10^7,5 J, value from a source; no slider (the view moves by Kohde and the buttons)"
+ },
+ {
+  "expr": "window.simState.k",
+  "expected": 7.50515,
+  "tol": 1e-05,
+  "note": "on load: log10 of 3,2 · 10^7 J = 7,505"
+ },
+ {
+  "expr": "window.simState.E_MJ",
+  "expected": 32,
+  "tol": 1e-09,
+  "note": "on load: a litre of petrol 32 MJ"
+ },
+ {
+  "expr": "window.simState.E_J",
+  "expected": 32000000.0,
+  "tol": 0.001,
+  "note": "E in joules"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 7.5,
+  "tol": 1e-09,
+  "note": "on load: view centre L = 7,5"
+ },
+ {
+  "expr": "window.simState.nakyvat",
+  "expected": 4,
+  "tol": 1e-06,
+  "note": "on load: objects within 1,2 powers of ten of the centre are on the ladder (suklaa, ruoka, bensiini, kaasu)"
+ },
+ {
+  "expr": "(() => { const s=document.querySelector('#sim-root select'); return s.options.length===28 && s.options[0].textContent==='vihreän valon fotoni' && s.options[27].textContent==='Aurinko, 1 s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Kohde select: all objects from the photon to the Sun"
+ },
+ {
+  "expr": "(() => { const c=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); return c.indexOf('canvas')<c.indexOf('controls') && c.indexOf('controls')<c.indexOf('readout') && b.length===2 && b[0].includes('10 kertaa enemmän') && b[1].includes('10 kertaa vähemmän') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; two buttons; nothing animates, so no speed control"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one legend line of at most 15 words, no Lisätietoja box"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='kohde' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares kohde only"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout').textContent; return r.includes('litra bensiiniä') && r.includes('32') && r.includes('Lähde: taulukkoarvo') && r.includes('Tilastokeskus') && !r.includes('(lähteestä)') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout names the object, its energy in MJ and its source (Lähde: taulukkoarvo …, Tilastokeskus)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('päivän ruoka');",
+  "expr": "window.simState.E_MJ",
+  "expected": 10,
+  "tol": 1e-06,
+  "note": "Kohde päivän ruoka: E in MJ"
+ },
+ {
+  "expr": "window.simState.k",
+  "expected": 7.0,
+  "tol": 1e-05,
+  "note": "Kohde päivän ruoka: log10 of its energy in J"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 7.0,
+  "tol": 1e-09,
+  "note": "Kohde päivän ruoka: the view centre moves to it (rounded to 0,1)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('banaani');",
+  "expr": "window.simState.E_MJ",
+  "expected": 0.45,
+  "tol": 1e-06,
+  "note": "Kohde banaani: E in MJ"
+ },
+ {
+  "expr": "window.simState.k",
+  "expected": 5.653213,
+  "tol": 1e-05,
+  "note": "Kohde banaani: log10 of its energy in J"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 5.7,
+  "tol": 1e-09,
+  "note": "Kohde banaani: the view centre moves to it (rounded to 0,1)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('vihreän valon fotoni');",
+  "expr": "window.simState.E_MJ",
+  "expected": 3.6e-25,
+  "tol": 1e-06,
+  "note": "Kohde vihreän valon fotoni: E in MJ"
+ },
+ {
+  "expr": "window.simState.k",
+  "expected": -18.443697,
+  "tol": 1e-05,
+  "note": "Kohde vihreän valon fotoni: log10 of its energy in J"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": -18.4,
+  "tol": 1e-09,
+  "note": "Kohde vihreän valon fotoni: the view centre moves to it (rounded to 0,1)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko, 1 s');",
+  "expr": "window.simState.E_MJ",
+  "expected": 3.8e+20,
+  "tol": 1e-06,
+  "note": "Kohde Aurinko, 1 s: E in MJ"
+ },
+ {
+  "expr": "window.simState.k",
+  "expected": 26.579784,
+  "tol": 1e-05,
+  "note": "Kohde Aurinko, 1 s: log10 of its energy in J"
+ },
+ {
+  "expr": "window.simState.L",
+  "expected": 26.6,
+  "tol": 1e-09,
+  "note": "Kohde Aurinko, 1 s: the view centre moves to it (rounded to 0,1)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('päivän ruoka');",
+  "expr": "window.simState.tyyppi",
+  "expected": 0,
+  "tol": 0,
+  "note": "ruoka is an estimate (ring)"
+ },
+ {
+  "expr": "window.simState.kohde.length",
+  "expected": 12,
+  "tol": 0,
+  "note": "Kohde päivän ruoka named in the state"
+ },
+ {
+  "expr": "window.simState.nakyvat",
+  "expected": 3,
+  "tol": 0,
+  "note": "ruoka at L = 7,0: visible objects"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('päivän ruoka'); CL(B[0]);",
+  "expr": "window.simState.L",
+  "expected": 8.0,
+  "tol": 1e-09,
+  "note": "▲ button: the centre goes one power of ten up (7,0 to 8,0)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); CL(B[1]);",
+  "expr": "window.simState.L",
+  "expected": 7.0,
+  "tol": 1e-09,
+  "note": "▼ button: one power of ten down"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('päivän ruoka'); for (let i=0;i<17;i++) CL(B[1]);",
+  "expr": "window.simState.L",
+  "expected": -10.0,
+  "tol": 1e-09,
+  "note": "▼ pressed 17 times from 7,0: the centre is 10^−10 J"
+ },
+ {
+  "expr": "window.simState.nakyvat",
+  "expected": 0,
+  "tol": 0,
+  "note": "L = −10: no object within 1,2 powers of ten"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko, 1 s'); CL(B[0]);",
+  "expr": "window.simState.L",
+  "expected": 26.6,
+  "tol": 1e-09,
+  "note": "▲ at the Sun (26,6): the centre stays at the top end 26,6"
+ },
+ {
+  "expr": "window.simState.nakyvat",
+  "expected": 1,
+  "tol": 0,
+  "note": "L = 26,6: only the Sun is on the ladder"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan tunnissa');",
+  "expr": "window.simState.k",
+  "expected": 20.792392,
+  "tol": 1e-05,
+  "note": "aurinko_h: log10(6,2 · 10^20 J)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('ihmiskunta, vuosi');",
+  "expr": "window.simState.k",
+  "expected": 20.792392,
+  "tol": 1e-05,
+  "note": "ihmiskunta has the same power of ten as one hour of sunlight"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan tunnissa');",
+  "expr": "window.simState.E_EJ",
+  "expected": 620,
+  "tol": 1e-06,
+  "note": "aurinko_h: E = 6,2 · 10^20 J = 620 EJ (koe-2 records E in EJ)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('ihmiskunta, vuosi');",
+  "expr": "window.simState.E_EJ",
+  "expected": 620,
+  "tol": 1e-06,
+  "note": "ihmiskunta: 620 EJ, the same as one hour of sunlight"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('vihreän valon fotoni'); CL(B[1]); CL(B[1]);",
+  "expr": "window.simState.L",
+  "expected": -19,
+  "tol": 1e-09,
+  "note": "▼ at the photon (−18,4): the centre stops at the bottom end −19"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('kaasupullo 11 kg');",
+  "expr": "window.simState.nakyvat",
+  "expected": 5,
+  "tol": 0,
+  "note": "kaasupullo at 8,7: the fullest view, 5 objects (bensiini, kaasu, salama, tankki, TNT), labels still apart (sweep)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('litra bensiiniä');",
+  "expr": "(() => { const l=window.simState.labels; return Array.isArray(l) && l.length>=2 && l.every(a=>a.s.startsWith('$')) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "every canvas text is LaTeX ($…$)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('litra bensiiniä');",
+  "expr": "(() => { const l=window.simState.labels, c=document.querySelector('#sim-root canvas'); const px=(l[0].y1-l[0].y0)*c.getBoundingClientRect().width/600; return px>=16 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas text is at least 16 px high on the page (17 px font)"
+ }
+]

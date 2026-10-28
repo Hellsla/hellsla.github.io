@@ -1,0 +1,334 @@
+[
+ {
+  "expr": "(() => { const S=window.simState, s=document.querySelectorAll('#sim-root select'), r=document.querySelectorAll('#sim-root input[type=range]'); return S.laite==='lamppu' && s[0].value==='lamppu' && s[1].value==='1' && Number(r[0].value)===60 && Number(r[1].value)===10 && S.Po===60 && S.t===10 && S.nopeus===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: hehkulamppu, P_o = 60 W, t = 10 s, speed normaali (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.05,
+  "tol": 1e-09,
+  "note": "hehkulamppu: eta = 0,05"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 3,
+  "tol": 1e-09,
+  "note": "hehkulamppu at 60 W: P_a = 0,05 · 60 W = 3,0 W"
+ },
+ {
+  "expr": "window.simState.Ph",
+  "expected": 57,
+  "tol": 1e-09,
+  "note": "P_h = 60 W − 3,0 W = 57 W"
+ },
+ {
+  "expr": "window.simState.Eo",
+  "expected": 600,
+  "tol": 1e-09,
+  "note": "E_o = 60 W · 10 s = 600 J"
+ },
+ {
+  "expr": "window.simState.Ea",
+  "expected": 30,
+  "tol": 1e-09,
+  "note": "E_a = 0,05 · 600 J = 30 J"
+ },
+ {
+  "expr": "window.simState.Eh",
+  "expected": 570,
+  "tol": 1e-09,
+  "note": "E_h = 600 J − 30 J = 570 J"
+ },
+ {
+  "expr": "window.simState.etaP",
+  "expected": 5,
+  "tol": 1e-09,
+  "note": "eta from the powers = 5 %"
+ },
+ {
+  "expr": "window.simState.etaE",
+  "expected": 5,
+  "tol": 1e-09,
+  "note": "eta from the energies = 5 %, the same"
+ },
+ {
+  "expr": "(() => { const c=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const b=document.querySelectorAll('#sim-root button').length; return c.indexOf('canvas')<c.indexOf('controls') && c.indexOf('controls')<c.indexOf('readout') && b===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; no button (the flow animates on its own)"
+ },
+ {
+  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===2 && o(0)==='lamppu:hehkulamppu|ledi:ledilamppu|keitin:vedenkeitin|moottori:sähkömoottori|auto:auton bensiinimoottori|paneeli:aurinkopaneeli' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: laite with six devices, speed hidas 0,5 · normaali 1 · nopea 2"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')]; return r.length===2 && r[0].min==='10' && r[0].max==='100' && r[0].step==='5' && r[1].min==='1' && r[1].max==='600' && r[1].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: P_o 10–100 W in steps of 5 for the filament lamp, t 1–600 s in steps of 1"
+ },
+ {
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===4 && l[0].startsWith('Laite') && l[1].includes('Otettu teho') && l[2].includes('Aika') && l[3].startsWith('Nopeus') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "controls: Laite, Otettu teho, Aika, Nopeus"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='Po,laite,t' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares laite, Po and t"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s).join('|'); return L.includes('\\\\text{hehkulamppu}') && L.includes('P_\\\\text{o} = 60\\\\,\\\\text{W}') && L.includes('P_\\\\text{a} = 3\\\\,\\\\text{W}') && L.includes('P_\\\\text{h} = 57\\\\,\\\\text{W}') && L.includes('\\\\eta = 5\\\\,\\\\%') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas labels (LaTeX): device name, P_o, P_a, P_h and eta"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout').textContent; return r.includes('Hyötysuhde') && r.includes('Teho') && r.includes('Energia ajassa') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout lists efficiency, powers and energies"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('lamppu'); PO(40); T(20);",
+  "expr": "window.simState.Po",
+  "expected": 40,
+  "tol": 1e-09,
+  "note": "slider P_o sets simState.Po"
+ },
+ {
+  "expr": "window.simState.t",
+  "expected": 20,
+  "tol": 1e-09,
+  "note": "slider t sets simState.t"
+ },
+ {
+  "expr": "window.simState.Eo",
+  "expected": 800,
+  "tol": 1e-09,
+  "note": "40 W · 20 s = 800 J"
+ },
+ {
+  "expr": "window.simState.Ea",
+  "expected": 40,
+  "tol": 1e-09,
+  "note": "E_a = 0,05 · 800 J = 40 J"
+ },
+ {
+  "expr": "window.simState.etaE",
+  "expected": 5,
+  "tol": 1e-09,
+  "note": "E_a / E_o = 5 % for every t"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 2,
+  "tol": 1e-09,
+  "note": "P_a = 0,05 · 40 W = 2,0 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; PO(60);",
+  "expr": "window.simState.Eo",
+  "expected": 1200,
+  "tol": 1e-09,
+  "note": "P_o = 60 W, t = 20 s: E_o = 1200 J"
+ },
+ {
+  "expr": "window.simState.Ea",
+  "expected": 60,
+  "tol": 1e-09,
+  "note": "E_a = 60 J"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('ledi');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.laite==='ledi' && r[0].min==='2' && r[0].max==='40' && r[0].step==='1' && Number(r[0].value)==10 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "ledilamppu: slider P_o runs 2–40 W in steps of 1, starts at 10 W"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.3,
+  "tol": 1e-09,
+  "note": "ledilamppu: eta = 0.3"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 3.0,
+  "tol": 1e-06,
+  "note": "ledilamppu: P_a = 0.3 · 10 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('keitin');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.laite==='keitin' && r[0].min==='500' && r[0].max==='3000' && r[0].step==='100' && Number(r[0].value)==2000 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "vedenkeitin: slider P_o runs 500–3000 W in steps of 100, starts at 2000 W"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.9,
+  "tol": 1e-09,
+  "note": "vedenkeitin: eta = 0.9"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 1800.0,
+  "tol": 1e-06,
+  "note": "vedenkeitin: P_a = 0.9 · 2000 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('moottori');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.laite==='moottori' && r[0].min==='100' && r[0].max==='5000' && r[0].step==='100' && Number(r[0].value)==1000 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sähkömoottori: slider P_o runs 100–5000 W in steps of 100, starts at 1000 W"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.9,
+  "tol": 1e-09,
+  "note": "sähkömoottori: eta = 0.9"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 900.0,
+  "tol": 1e-06,
+  "note": "sähkömoottori: P_a = 0.9 · 1000 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('auto');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.laite==='auto' && r[0].min==='10000' && r[0].max==='100000' && r[0].step==='5000' && Number(r[0].value)==60000 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "auton bensiinimoottori: slider P_o runs 10000–100000 W in steps of 5000, starts at 60000 W"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.25,
+  "tol": 1e-09,
+  "note": "auton bensiinimoottori: eta = 0.25"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 15000.0,
+  "tol": 1e-06,
+  "note": "auton bensiinimoottori: P_a = 0.25 · 60000 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('paneeli');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.laite==='paneeli' && r[0].min==='100' && r[0].max==='2000' && r[0].step==='100' && Number(r[0].value)==1000 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "aurinkopaneeli: slider P_o runs 100–2000 W in steps of 100, starts at 1000 W"
+ },
+ {
+  "expr": "window.simState.eta",
+  "expected": 0.2,
+  "tol": 1e-09,
+  "note": "aurinkopaneeli: eta = 0.2"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 200.0,
+  "tol": 1e-06,
+  "note": "aurinkopaneeli: P_a = 0.2 · 1000 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('auto'); PO(20000); T(10);",
+  "expr": "window.simState.Pa",
+  "expected": 5000,
+  "tol": 1e-06,
+  "note": "engine at P_o = 20 kW: P_a = 5,0 kW"
+ },
+ {
+  "expr": "window.simState.Ph",
+  "expected": 15000,
+  "tol": 1e-06,
+  "note": "P_h = 15 kW"
+ },
+ {
+  "expr": "window.simState.Ea",
+  "expected": 50000,
+  "tol": 1e-06,
+  "note": "E_a = 5000 W · 10 s = 50 kJ"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; PO(100000);",
+  "expr": "window.simState.Ph",
+  "expected": 75000,
+  "tol": 1e-06,
+  "note": "engine at P_o = 100 kW: P_h = 75 kW"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; T(600);",
+  "expr": "window.simState.Eh",
+  "expected": 45000000,
+  "tol": 1e-06,
+  "note": "P_h · 600 s = 45 MJ at t = 600 s"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout').textContent; return /45\\s*MJ/.test(r) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout writes the energy in MJ"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('keitin'); T(120);",
+  "expr": "window.simState.Ea",
+  "expected": 216000,
+  "tol": 1e-06,
+  "note": "kettle 2000 W for 120 s: E_a = 0,90 · 240 kJ = 216 kJ"
+ },
+ {
+  "expr": "window.simState.Eh",
+  "expected": 24000,
+  "tol": 1e-06,
+  "note": "E_h = 24 kJ"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; DEV('paneeli'); T(360);",
+  "expr": "window.simState.Ea",
+  "expected": 72000,
+  "tol": 1e-06,
+  "note": "solar panel 1000 W for 360 s: E_a = 0,20 · 360 kJ = 72 kJ"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; SP('2');",
+  "expr": "window.simState.nopeus",
+  "expected": 2,
+  "tol": 0,
+  "note": "speed select nopea sets simState.nopeus = 2"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DEV=(v)=>{S[0].value=v;ev(S[0]);}; const PO=(v)=>{R[0].value=v;ev(R[0]);}; const T=(v)=>{R[1].value=v;ev(R[1]);}; const SP=(v)=>{S[1].value=v;ev(S[1]);}; SP('0.5');",
+  "expr": "window.simState.nopeus",
+  "expected": 0.5,
+  "tol": 0,
+  "note": "speed select hidas sets simState.nopeus = 0,5"
+ },
+ {
+  "expr": "window.simState.Pa",
+  "expected": 200,
+  "tol": 1e-09,
+  "note": "speed does not change the physics: panel 1000 W, P_a = 200 W"
+ }
+]

@@ -1,0 +1,11 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-10-26T16:10Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	668461	16	11760	584492	72193	99863	8	97	19		0.4150	transcript	3cd612cd3ca9
+2026-10-26T16:10Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	full	1	1141756	26	15310	1044091	82329	110347	13	154	17		0.9268	transcript	d5ff523d3a36
+2026-10-26T16:10Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	469947	12	3674	399661	66600	94208	6	32	15		0.2832	transcript	c64a72c31063
+2026-10-26T16:10Z	fy3-16	FY3	developer	develop	claude-sonnet-5-5	medium	draft	1	6180675	78	108221	5877995	194381	222501	39	884	46		2.7439	transcript	9dd15b33e2a1
+2026-10-26T16:10Z	fy3-16	FY3	developer	develop	claude-sonnet-5-5	medium	fix	1	1664567	38	24270	1546054	94205	122289	19	241	20		0.7875	transcript	7156d4ff2fa9
+2026-10-26T16:10Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	484395	12	7726	400135	76522	104170	6	74	8		0.6172	transcript	119256115f5d
+2026-10-26T16:10Z	fy3-16	FY3	orchestrator	orchestrate	claude-opus-5-5		session/4		2470234	35	9803	2372449	87947	51386	70	3641	107		1.1314	transcript	173531379dd9
+2026-10-26T19:42Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	batch/4		679188	8	6430	599130	73620	73856	16	252	20		0.6166	transcript	612bb0778417
+2026-10-26T19:42Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/5		950399	14	5498	903045	41842	42156	35	311	39		0.3402	transcript	c00989d5efe6
+2026-10-26T19:42Z	fy3-16	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	e18002dcc297

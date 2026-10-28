@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Ajan epävarmuus on $0{,}2\\,\\text{s}$. Kuinka pitkä aika pitää vähintään mitata, jotta suhteellinen epävarmuus on enintään $2{,}0\\,\\%$?",
+    "a": "$t \\ge \\dfrac{\\Delta t}{\\varepsilon_\\text{max}} = \\dfrac{0{,}2\\,\\text{s}}{0{,}020} = 10\\,\\text{s}$."
+  },
+  {
+    "q": "Mitä mittauspöytäkirjaan kirjataan, ja miksi epätavalliselta näyttävää mittausta ei poisteta hiljaa?",
+    "a": "Pöytäkirjaan kirjataan tutkimuskysymys, päivämäärä, välineet ja tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Selvästi poikkeava mittaus tarkistetaan, merkitään ja selitetään, ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista, koska silloin tulos valittaisiin sopimaan odotukseen eikä tutkimus enää testaisi hypoteesia. Mahdollinen hylkääminen on perusteltava ja dokumentoitava."
+  }
+]

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amplitudi, jaksonaika ja taajuus · FY05</title>
+<style>
+  /* ---------- yhteinen ulkoasu (sama kaikissa FY05-simulaatioissa) ----------
+     Mitoitus on tehty luokkahuoneen näyttöä varten: peruskoko seuraa ikkunan kokoa
+     (16:9-upotuksessa noin 4 % korkeudesta) ja kaikki mitat ovat em-yksiköissä,
+     joten koko käyttöliittymä skaalautuu kuin kalvo. ?koko=1,2 suurentaa kaiken 20 %. */
+  :root{
+    --bg:#ffffff; --panel:#f6f6f3;
+    --ink:#2b2e33; --ink-2:#555a61; --ink-3:#858a91;
+    --line:#e2e2de; --line-2:#c6c6c0;
+    --accent:#2f6f9f; --accent-soft:#e3edf6;
+    --c-blue:#2a7aab; --c-red:#c2404f; --c-orange:#d8761f; --c-green:#35895a; --c-violet:#7a62b0;
+    --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --koko:1;
+  }
+  *{box-sizing:border-box}
+  html{font-size:calc(clamp(12px,min(2.75vw,4vh),60px) * var(--koko))}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  body{font-family:var(--font);font-size:1rem;line-height:1.3}
+  .app{position:fixed;inset:0;display:grid;grid-template-columns:minmax(0,1fr) auto}
+  .app.is-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  .stage{position:relative;min-width:0;min-height:0;overflow:hidden}
+  #cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;
+    user-select:none;-webkit-user-select:none}
+  .panel{width:13.4em;background:var(--panel);border-left:1px solid var(--line);
+    padding:.55em .7em .5em;display:flex;flex-direction:column;gap:.35em;overflow:hidden}
+  .app.is-bottom .panel{width:auto;font-size:.92em;border-left:0;border-top:1px solid var(--line);flex-direction:row;
+    flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.35em 1.2em;padding:.4em 1em .5em}
+  .group{display:flex;flex-direction:column;gap:.15em;min-width:0}
+  .ctl{display:flex;flex-direction:column;gap:0}
+  .ctl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 .5em;font-size:.88em;line-height:1.2;color:var(--ink-2);white-space:nowrap}
+  .ctl-head b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:auto}
+  .sym{font-style:italic}
+  sub{font-size:.72em;line-height:0}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:1.3em;margin:0;background:transparent;
+    cursor:pointer;font-size:inherit;--p:50%}
+  input[type=range]:focus{outline:none}
+  input[type=range]:focus-visible{outline:2px solid var(--accent-soft);outline-offset:1px;border-radius:.4em}
+  input[type=range]::-webkit-slider-runnable-track{height:.28em;border-radius:.2em;
+    background:linear-gradient(to right,var(--accent) 0 var(--p),var(--line-2) var(--p) 100%)}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.05em;height:1.05em;margin-top:-.385em;border-radius:50%;
+    background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  input[type=range]::-moz-range-track{height:.28em;border-radius:.2em;background:var(--line-2)}
+  input[type=range]::-moz-range-progress{height:.28em;border-radius:.2em;background:var(--accent)}
+  input[type=range]::-moz-range-thumb{width:.95em;height:.95em;border-radius:50%;background:#fff;border:.1em solid var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.14)}
+  .chk{display:flex;align-items:center;gap:.45em;font-size:.9em;line-height:1.2;cursor:pointer;user-select:none;min-height:1.5em;white-space:nowrap}
+  .chk input{font-size:inherit;width:1.05em;height:1.05em;margin:0;accent-color:var(--accent);cursor:pointer;flex:none}
+  .chk.wrap{white-space:normal;align-items:flex-start}
+  .chk.wrap input{margin-top:.1em}
+  .btns{display:flex;gap:.3em;flex-wrap:wrap}
+  .btns .btn{flex:1 1 0}
+  .btn{font:inherit;font-size:.9em;line-height:1;display:inline-flex;align-items:center;justify-content:center;gap:.35em;
+    min-height:2.05em;padding:0 .55em;border-radius:.5em;border:1px solid var(--line-2);background:#fff;color:var(--ink);
+    cursor:pointer;touch-action:manipulation;white-space:nowrap}
+  .btn:hover{border-color:var(--ink-3)}
+  .btn:active{background:#f1f1ee}
+  .btn svg{width:1em;height:1em;flex:none}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .btn.primary:hover{background:#1c1f23}
+  .btn.wide{width:100%}
+  .btn[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .btn:disabled{opacity:.45;cursor:default}
+  .seg{display:inline-flex;border:1px solid var(--line-2);border-radius:.5em;overflow:hidden;background:#fff}
+  .seg button{font:inherit;font-size:.9em;border:0;background:transparent;padding:0 .7em;min-height:2.0em;color:var(--ink-2);
+    cursor:pointer;touch-action:manipulation}
+  .seg button+button{border-left:1px solid var(--line-2)}
+  .seg button[aria-pressed=true]{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .key{display:inline-block;width:1.4em;height:.7em;flex:none;position:relative}
+  .key::before{content:"";position:absolute;left:0;right:.35em;top:calc(50% - .08em);height:.16em;background:var(--c)}
+  .key::after{content:"";position:absolute;right:0;top:calc(50% - .3em);border-left:.5em solid var(--c);
+    border-top:.3em solid transparent;border-bottom:.3em solid transparent}
+  .key.none{visibility:hidden}
+  .legend{display:flex;flex-direction:column;gap:.15em;font-size:.85em;line-height:1.25;color:var(--ink-2)}
+  .legend span{display:flex;align-items:center;gap:.5em}
+  .legend[hidden]{display:none}
+  @media (max-aspect-ratio:4/5),(max-width:560px){      /* puhelin pystyasennossa: säätimet kuvan alla */
+    html{font-size:calc(clamp(13px,3.7vw,18px) * var(--koko))}
+    html,body{overflow:auto}
+    .app{position:static;min-height:100%;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto}
+    .stage{height:58vh;min-height:300px}
+    .app .panel,.app.is-bottom .panel{width:auto;border-left:0;border-top:1px solid var(--line);overflow:visible}
+  }
+
+  /* ---------- tämän simulaation omat ---------- */
+  .hint{margin:0;font-size:.8em;line-height:1.3;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="cv" role="img" aria-label="Jouseen ripustettu punnus värähtelee ylös ja alas tasapainoaseman ympärillä. Vieressä piirtyy paikan kuvaaja ajan funktiona samassa mittakaavassa, joten punnus ja kuvaajan piste ovat aina samalla korkeudella. Amplitudia ja jaksonaikaa voi muuttaa."></canvas>
+  </div>
+
+  <div class="panel" aria-label="Säätimet">
+    <button class="btn primary wide" id="play" type="button"></button>
+    <div class="btns">
+      <button class="btn" id="reset" type="button" title="Punnus ääriasemaan ja kuvaaja tyhjäksi">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.3 8.2a4.7 4.7 0 1 0 1.5-3.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.6 2.4v3.4H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Alusta</button>
+      <button class="btn" id="ref" type="button" aria-pressed="false" title="Tallenna nykyiset arvot vertailukuvaajaksi (uusi painallus poistaa sen)">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 8c1.6-5 3.6-5 5.2 0s3.6 5 5.2 0 2.1-3.4 2.6-2.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2.4 1.8"/></svg>Vertailu</button>
+    </div>
+    <div class="group">
+      <label class="ctl"><span class="ctl-head"><span>Amplitudi <span class="sym">A</span></span><b data-for="A"></b></span>
+        <input id="A" type="range" min="0.1" max="1" step="0.05" value="0.65" aria-label="Amplitudi"></label>
+      <label class="ctl"><span class="ctl-head"><span>Jaksonaika <span class="sym">T</span></span><b data-for="T"></b></span>
+        <input id="T" type="range" min="0.5" max="4" step="0.1" value="2" aria-label="Jaksonaika"></label>
+    </div>
+    <div class="group">
+      <label class="chk"><input type="checkbox" id="showA"><span class="key none"></span>Amplitudi</label>
+      <label class="chk"><input type="checkbox" id="showT"><span class="key none"></span>Jaksonaika</label>
+      <label class="chk"><input type="checkbox" id="showV"><span class="key" style="--c:var(--c-green)"></span>Nopeus</label>
+      <label class="chk"><input type="checkbox" id="showVal"><span class="key none"></span>Arvot</label>
+    </div>
+    <p class="hint">Vedä kuvaajasta: punnus siirtyy valitun hetken kohtaan.</p>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =====================================================================
+   Yhteiset apufunktiot
+   ===================================================================== */
+const FONT = 'system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+const MINUS = '−', NBSP = ' ';
+const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = { ink: css('--ink'), ink2: css('--ink-2'), ink3: css('--ink-3'), line: css('--line'), line2: css('--line-2'),
+  blue: css('--c-blue'), red: css('--c-red'), orange: css('--c-orange'), green: css('--c-green'), violet: css('--c-violet') };
+
+/** Luku suomalaisittain: desimaalipilkku, oikea miinusmerkki, ei "−0,0". */
+function fmt(x, d = 1) {
+  if (!Number.isFinite(x)) return '–';
+  const s = Math.abs(x).toFixed(d);
+  const neg = x < 0 && +s !== 0;
+  let [ip, fp] = s.split('.');
+  if (ip.length > 4) ip = ip.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  return (neg ? MINUS : '') + ip + (fp ? ',' + fp : '');
+}
+/** Luku n merkitsevällä numerolla (esim. 160, 32,0, 2,67, 0,100). */
+function fmtSig(x, n = 3) {
+  if (!Number.isFinite(x)) return '–';
+  if (x === 0) return '0';
+  const d = Math.max(0, n - 1 - Math.floor(Math.log10(Math.abs(x)) + 1e-9));
+  return fmt(x, Math.min(d, 6));
+}
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+
+/* Pieni merkintäkieli kanvastekstille:
+   {F} = kursiivinen suureen tunnus, {->v} = vektori (kursiivi + nuoli),
+   _1 tai _{ab} = alaindeksi, ^2 tai ^{ab} = yläindeksi. */
+const richCache = new Map();
+function rich(src) {
+  let out = richCache.get(src);
+  if (out) return out;
+  out = []; let buf = '';
+  const flush = () => { if (buf) { out.push({ t: buf }); buf = ''; } };
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '{') {
+      const j = src.indexOf('}', i), body = src.slice(i + 1, j);
+      flush();
+      out.push(body.startsWith('->') ? { t: body.slice(2), it: true, vec: true } : { t: body, it: true });
+      i = j;
+    } else if ((c === '_' || c === '^') && i + 1 < src.length) {
+      flush();
+      let body;
+      if (src[i + 1] === '{') { const j = src.indexOf('}', i + 1); body = src.slice(i + 2, j); i = j; }
+      else { body = src[i + 1]; i++; }
+      out.push(c === '_' ? { t: body, sub: true } : { t: body, sup: true });
+    } else buf += c;
+  }
+  flush();
+  richCache.set(src, out);
+  return out;
+}
+/** Piirtää rikastetun tekstin; palauttaa leveyden. */
+function drawRich(ctx, src, x, y, o = {}) {
+  const size = o.size || 15, parts = rich(src), weight = o.weight || 400;
+  const fontOf = (p) => `${p.it ? 'italic ' : ''}${weight} ${(p.sub || p.sup) ? Math.round(size * 0.72) : size}px ${FONT}`;
+  let w = 0;
+  const ws = parts.map((p) => { ctx.font = fontOf(p); const pw = ctx.measureText(p.t).width + (p.it ? size * 0.06 : 0); w += pw; return pw; });
+  if (o.measure) return w;
+  let cx = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
+  ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  parts.forEach((p, k) => {
+    ctx.font = fontOf(p);
+    const dy = p.sub ? size * 0.3 : p.sup ? -size * 0.36 : 0;
+    if (o.halo) {
+      ctx.lineWidth = 4; ctx.lineJoin = 'round';
+      ctx.strokeStyle = typeof o.halo === 'string' ? o.halo : 'rgba(255,255,255,0.92)';
+      ctx.strokeText(p.t, cx, y + dy);
+    }
+    ctx.fillStyle = o.color || COL.ink;
+    ctx.fillText(p.t, cx, y + dy);
+    if (p.vec) {                                   // vektorinuoli kirjaimen yläpuolelle
+      const ax0 = cx + size * 0.12, ax1 = cx + ws[k] + size * 0.02, ay = y - size * 0.62;
+      ctx.strokeStyle = o.color || COL.ink; ctx.lineWidth = Math.max(1, size / 13);
+      ctx.beginPath(); ctx.moveTo(ax0, ay); ctx.lineTo(ax1, ay);
+      ctx.moveTo(ax1 - size * 0.2, ay - size * 0.12); ctx.lineTo(ax1, ay); ctx.lineTo(ax1 - size * 0.2, ay + size * 0.12);
+      ctx.stroke();
+    }
+    cx += ws[k];
+  });
+  return w;
+}
+/** Vektorinuoli (ohut varsi, kapea kärki). */
+function arrow(ctx, x1, y1, x2, y2, color, o = {}) {
+  const w = o.width || 2.4, L = Math.hypot(x2 - x1, y2 - y1);
+  if (L < 0.5) return;
+  const ux = (x2 - x1) / L, uy = (y2 - y1) / L;
+  const hl = Math.min(o.head || 10 + w * 1.2, L * 0.8), hw = hl * 0.58;
+  const bx = x2 - ux * hl, by = y2 - uy * hl;
+  ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w; ctx.lineCap = 'butt';
+  ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(bx + ux, by + uy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x2, y2);
+  ctx.lineTo(bx - uy * hw, by + ux * hw); ctx.lineTo(bx + uy * hw, by - ux * hw); ctx.closePath(); ctx.fill();
+}
+/** ?koko=1,2 (tai ?scale=) suurentaa koko käyttöliittymän: luokan näytölle voi valita sopivan koon. */
+(() => {
+  const q = new URLSearchParams(location.search), raw = q.get('koko') || q.get('scale') || q.get('zoom');
+  const k = raw ? parseFloat(raw.replace(',', '.')) : NaN;
+  if (k >= 0.5 && k <= 3) document.documentElement.style.setProperty('--koko', String(k));
+})();
+/** Kanvas, joka seuraa elementin kokoa ja näytön tarkkuutta.
+    Piirtäminen tehdään loogisina pikseleinä: u = sivun peruskoko / 15 px. Kun ikkuna kasvaa
+    (esim. luokan näyttö), myös tekstit, viivat ja merkit suurenevat samassa suhteessa.
+    Kuvapuskuri on vähintään 2-kertainen, jotta kuva pysyy terävänä, kun esitysohjelma
+    (esim. Slides.com) suurentaa upotuksen koko ruudulle. */
+function setupCanvas(cv, onResize) {
+  const view = { ctx: cv.getContext('2d'), W: 1, H: 1, dpr: 1, u: 1 };
+  const resize = () => {
+    const r = cv.getBoundingClientRect();
+    const base = parseFloat(getComputedStyle(document.documentElement).fontSize) || 15;
+    const boost = r.width * r.height <= 1.2e6 ? 2 : 1.5;
+    const dev = Math.min(3, Math.max(window.devicePixelRatio || 1, boost));
+    view.u = base / 15;
+    view.W = Math.max(1, r.width / view.u); view.H = Math.max(1, r.height / view.u);
+    view.dpr = dev * view.u;                       // looginen pikseli → laitepikseli
+    cv.width = Math.round(r.width * dev); cv.height = Math.round(r.height * dev);
+    if (onResize) onResize(view);
+  };
+  /** Osoittimen paikka loogisina pikseleinä. */
+  view.pt = (e) => { const r = cv.getBoundingClientRect(); return { x: (e.clientX - r.left) / view.u, y: (e.clientY - r.top) / view.u }; };
+  new ResizeObserver(resize).observe(cv);
+  window.addEventListener('resize', resize);       // peruskoko voi muuttua, vaikka kanvaksen koko ei muuttuisi
+  resize();
+  return view;
+}
+/** Liukusäädin + arvonäyttö. */
+function bindRange(id, show, onInput) {
+  const el = document.getElementById(id), out = document.querySelector(`[data-for="${id}"]`);
+  const paint = () => {
+    const v = +el.value, a = +el.min, b = +el.max;
+    el.style.setProperty('--p', ((v - a) / (b - a) * 100) + '%');
+    if (out) out.textContent = show(v);
+  };
+  el.addEventListener('input', () => { paint(); onInput(+el.value); });
+  paint();
+  return { el, set(v) { el.value = v; paint(); }, get v() { return +el.value; }, repaint: paint };
+}
+/** Kiinteän aika-askeleen silmukka: fysiikka ei riipu näytön virkistystaajuudesta. */
+function startLoop({ dt, step, draw, running }) {
+  let last = performance.now(), acc = 0;
+  const frame = (ts) => {
+    requestAnimationFrame(frame);
+    const real = clamp((ts - last) / 1000, 0, 0.1);   // pitkä tauko (esim. välilehti piilossa) ei aiheuta hyppyä
+    last = ts;
+    if (running()) {
+      acc += real;
+      let n = 0;
+      while (acc >= dt && n++ < 1000) { step(dt); acc -= dt; }
+    }
+    draw();
+  };
+  requestAnimationFrame(frame);
+}
+
+/* =====================================================================
+   Fysiikka: amplitudi, jaksonaika ja taajuus
+   Jouseen ripustettu punnus värähtelee pystysuunnassa tasapainoaseman ympärillä. Paikka x mitataan
+   tasapainoasemasta, ylöspäin positiivinen. Punnus päästetään levosta ääriasemasta x = A:
+        x(t) = A cos(2πt/T),    v(t) = −(2πA/T) sin(2πt/T),    f = 1/T.
+   Amplitudi ja jaksonaika säädetään toisistaan riippumatta (jousivärähtelijän jaksonaika
+   T = 2π√(m/k) ei riipu amplitudista). Kuvaaja piirtyy ajan kuluessa samassa pystymittakaavassa
+   kuin punnus, joten punnus ja kuvaajan piste ovat aina samalla korkeudella.
+   ===================================================================== */
+const TMAX = 10, XMAX = 1;                                          // kuvaajan aika-akseli (s) ja paikka-akseli (m)
+const S = { A: 0.65, T: 2, t: 0, running: false, ref: null, drag: false, show: { A: false, T: false, v: false, val: false } };
+const xAt = (t, P = S) => P.A * Math.cos(2 * Math.PI * t / P.T);
+const vAt = (t, P = S) => -P.A * 2 * Math.PI / P.T * Math.sin(2 * Math.PI * t / P.T);
+function step(dt) {
+  S.t += dt;
+  if (S.t >= TMAX) { S.t = TMAX; S.running = false; paintPlay(); }   // kuvaaja täynnä: ajo pysähtyy
+}
+
+/* =====================================================================
+   Piirtäminen
+   ===================================================================== */
+const cv = document.getElementById('cv');
+let L = {};
+const view = setupCanvas(cv, (v) => {
+  const fs = clamp(Math.min(v.W / 30, v.H / 16), 12, 18);
+  L = { W: v.W, H: v.H, fs, pad: fs * 0.9, band: 12 + fs * 0.85 * 1.4 };
+});
+const CX = COL.blue, CP = COL.orange, CA = COL.violet, CV = COL.green, CREF = '#9a9ea4';
+
+/** Mitat: jousi ja punnus vasemmalla, kuvaaja oikealla samassa pystymittakaavassa (k pikseliä metrille). */
+function layout() {
+  const { W, H, fs, pad, band } = L;
+  const mw = fs * 2.4, mh = fs * 1.9, ceil = band + fs * 0.9, bottom = H - pad - fs * 1.5;
+  const k = Math.max(10, (bottom - ceil - mh - fs * 1.8) / (2 * XMAX));
+  const Y0 = ceil + fs * 1.8 + mh / 2 + XMAX * k, cx = pad + fs * 0.6 + mw / 2;
+  const gx0 = cx + mw / 2 + fs * 4.4, gx1 = W - pad - fs * 1.6;      // väliin nopeusnuoli ja asteikko
+  return { mw, mh, ceil, k, Y0, cx, gx0, gx1, TX: (t) => gx0 + t / TMAX * (gx1 - gx0), Y: (x) => Y0 - x * k };
+}
+
+/** Kierrejousi katosta punnuksen yläpintaan. */
+function spring(ctx, x, y0, y1, w) {
+  const n = 12, lead = Math.min(8, (y1 - y0) * 0.12), h = (y1 - y0 - 2 * lead) / n;
+  ctx.strokeStyle = '#5c6066'; ctx.lineWidth = 2; ctx.lineJoin = 'round';
+  ctx.beginPath(); ctx.moveTo(x, y0); ctx.lineTo(x, y0 + lead);
+  for (let i = 0; i < n; i++) { ctx.lineTo(x + (i % 2 ? -w : w) / 2, y0 + lead + (i + 0.5) * h); }
+  ctx.lineTo(x, y1 - lead); ctx.lineTo(x, y1); ctx.stroke();
+}
+/** Paikan kuvaaja ajanhetkeen t asti. */
+function curve(ctx, G, P, t1, color, width, dash) {
+  if (t1 <= 0) return;
+  const n = Math.max(2, Math.ceil((G.TX(t1) - G.gx0) / 1.5));
+  ctx.strokeStyle = color; ctx.lineWidth = width; ctx.lineJoin = 'round'; ctx.setLineDash(dash || []);
+  ctx.beginPath();
+  for (let i = 0; i <= n; i++) { const t = t1 * i / n; if (i) ctx.lineTo(G.TX(t), G.Y(xAt(t, P))); else ctx.moveTo(G.TX(t), G.Y(xAt(t, P))); }
+  ctx.stroke(); ctx.setLineDash([]);
+}
+
+function draw() {
+  const { ctx, dpr } = view, { W, H, fs } = L, G = layout(), { k, Y0, cx, mw, mh, gx0, gx1, TX, Y } = G;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  const x = xAt(S.t), v = vAt(S.t), my = Y(x);
+
+  // kuvaajan ruudukko ja akselit
+  const dt = (gx1 - gx0) / TMAX >= fs * 2.2 ? 1 : 2;              // aika-akselin jako
+  ctx.strokeStyle = COL.line; ctx.lineWidth = 1; ctx.beginPath();
+  for (let t = dt; t <= TMAX + 1e-9; t += dt) { ctx.moveTo(TX(t), Y(XMAX)); ctx.lineTo(TX(t), Y(-XMAX)); }
+  for (const q of [-1, -0.5, 0.5, 1]) { ctx.moveTo(gx0, Y(q)); ctx.lineTo(gx1, Y(q)); }
+  ctx.stroke();
+  for (let t = 0; t <= TMAX + 1e-9; t += dt) drawRich(ctx, fmt(t, 0), TX(t), Y(-XMAX) + fs * 0.8, { size: fs * 0.75, color: COL.ink3, align: 'center' });
+  for (const q of [-1, -0.5, 0, 0.5, 1]) drawRich(ctx, q === 0 ? '0' : `${q > 0 ? '+' : MINUS}${fmt(Math.abs(q), 1)}`, gx0 - fs * 0.35, Y(q), { size: fs * 0.75, color: COL.ink3, align: 'right', halo: true });
+  arrow(ctx, gx0, Y(-XMAX) + fs * 0.3, gx0, Y(XMAX) - fs * 0.9, COL.ink2, { width: 1.4, head: 8 });
+  drawRich(ctx, '{x} (m)', gx0 - fs * 0.4, Y(XMAX) - fs * 0.9, { size: fs * 0.85, color: COL.ink2, align: 'right' });
+  // tasapainoasema katkoviivana jousen kohdalta aika-akseliksi
+  ctx.strokeStyle = COL.ink3; ctx.lineWidth = 1.2; ctx.setLineDash([5, 5]); ctx.beginPath(); ctx.moveTo(cx - mw * 0.9, Y0); ctx.lineTo(gx0, Y0); ctx.stroke(); ctx.setLineDash([]);
+  arrow(ctx, gx0, Y0, gx1 + fs * 0.9, Y0, COL.ink2, { width: 1.4, head: 8 });
+  drawRich(ctx, '{t} (s)', gx1 + fs * 0.9, Y0 + fs * 0.85, { size: fs * 0.85, color: COL.ink2, align: 'right' });
+
+  // amplitudi: ääriasemat ±A punnuksen kohdalla ja kuvaajassa
+  if (S.show.A) {
+    ctx.strokeStyle = CA; ctx.lineWidth = 1.4; ctx.setLineDash([6, 5]); ctx.beginPath();
+    for (const s of [1, -1]) { ctx.moveTo(cx - mw * 0.9, Y(s * S.A)); ctx.lineTo(gx1, Y(s * S.A)); }
+    ctx.stroke(); ctx.setLineDash([]);
+    const ax = cx - mw / 2 - fs * 0.35;
+    if (S.A * k > fs * 1.2) { arrow(ctx, ax, Y0, ax, Y(S.A), CA, { width: 1.8, head: 8 }); }
+    drawRich(ctx, '{A}', ax - fs * 0.3, (Y0 + Y(S.A)) / 2, { size: fs, color: CA, align: 'right', halo: true });
+  }
+  // jaksonaika: hakaset täysien jaksojen kohdalle kuvaajan yläreunaan
+  if (S.show.T) {
+    const yb = Y(XMAX) - fs * 0.6, n = Math.floor(S.t / S.T + 1e-9);
+    ctx.strokeStyle = CA; ctx.lineWidth = 1.6;
+    for (let i = 0; i < n; i++) {
+      const a = TX(i * S.T) + 1.5, b = TX((i + 1) * S.T) - 1.5;
+      ctx.beginPath(); ctx.moveTo(a, yb + 5); ctx.lineTo(a, yb); ctx.lineTo(b, yb); ctx.lineTo(b, yb + 5); ctx.stroke();
+    }
+    const lab = S.show.val ? `{T} = ${fmt(S.T, 1)}${NBSP}s` : '{T}', wl = drawRich(ctx, lab, 0, 0, { size: fs * 0.85, measure: true });
+    for (const i of n >= 3 ? [0, n - 1] : n >= 1 ? [0] : []) {
+      const c = Math.max(TX((i + 0.5) * S.T), gx0 + wl / 2 + 4);   // ei y-akselin nimen päälle
+      if (i === 0 || c - wl / 2 > gx0 + wl + 4 + fs) drawRich(ctx, lab, c, yb - fs * 0.5, { size: fs * 0.85, color: CA, align: 'center', halo: true });
+    }
+  }
+
+  // vertailukuvaaja ja paikan kuvaaja
+  if (S.ref) curve(ctx, G, S.ref, TMAX, CREF, 1.8, [7, 6]);
+  curve(ctx, G, S, S.t, CX, 2.8);
+
+  // katto, jousi ja punnus
+  ctx.fillStyle = '#d9d6cf'; ctx.fillRect(cx - mw * 0.8, G.ceil - 7, mw * 1.6, 7);
+  ctx.strokeStyle = '#a7a39a'; ctx.lineWidth = 1; ctx.beginPath();
+  for (let hx = cx - mw * 0.8 + 4; hx < cx + mw * 0.8; hx += 7) { ctx.moveTo(hx, G.ceil - 7); ctx.lineTo(hx - 5, G.ceil - 12); }
+  ctx.stroke();
+  spring(ctx, cx, G.ceil, my - mh / 2, mw * 0.55);
+  ctx.fillStyle = '#9fb7c9'; ctx.strokeStyle = '#3f5d73'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.roundRect(cx - mw / 2, my - mh / 2, mw, mh, fs * 0.3); ctx.fill(); ctx.stroke();
+  // punnuksen korkeus kuvaajan nykyiseen pisteeseen
+  const px = TX(S.t);
+  ctx.strokeStyle = CP; ctx.lineWidth = 1.4; ctx.setLineDash([4, 5]); ctx.beginPath(); ctx.moveTo(cx + mw / 2 + 2, my); ctx.lineTo(px, my); ctx.stroke(); ctx.setLineDash([]);
+  ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(px, my, 7.5, 0, 2 * Math.PI); ctx.fill();
+  ctx.fillStyle = CP; ctx.beginPath(); ctx.arc(px, my, 5.5, 0, 2 * Math.PI); ctx.fill();
+  ctx.fillStyle = COL.ink; ctx.beginPath(); ctx.arc(cx, my, 2.8, 0, 2 * Math.PI); ctx.fill();
+  // nopeus punnuksen vieressä (sama mittakaava kaikilla asetuksilla: nuoli = matka 0,15 s:ssa)
+  if (S.show.v) {
+    const ax = cx + mw / 2 + fs * 0.7, ly = -v * 0.15 * k;
+    arrow(ctx, ax, my, ax, my + ly, CV, { width: 3 });
+    drawRich(ctx, '{->v}', ax + fs * 0.45, my + ly / 2, { size: fs, color: CV, halo: true });
+  }
+
+  // arvot ylhäällä
+  if (S.show.val) {
+    const rows = [`{x} = ${x < -5e-3 ? MINUS : '+'}${fmt(Math.abs(x), 2)}${NBSP}m,   {v} = ${fmt(Math.abs(v) < 5e-3 ? 0 : v, 2)}${NBSP}m/s,   {t} = ${fmt(S.t, 2)}${NBSP}s,   {f} = 1/{T} = ${fmt(1 / S.T, 2)}${NBSP}Hz`];
+    if (S.ref) rows.push(`vertailu (katkoviiva): {A} = ${fmt(S.ref.A, 2)}${NBSP}m,   {T} = ${fmt(S.ref.T, 1)}${NBSP}s`);
+    const rx = cx + mw * 0.8 + fs * 0.6, ef = fs * 0.85;            // katon oikealta puolelta
+    const w = Math.max(...rows.map((t) => drawRich(ctx, t, 0, 0, { size: ef, measure: true }))), sz = w > W - rx - 10 ? ef * (W - rx - 10) / w : ef;
+    rows.forEach((t, i) => drawRich(ctx, t, rx, 12 + sz * 0.6 + i * sz * 1.4, { size: sz, color: i ? CREF : COL.ink2, halo: true }));
+  }
+}
+
+/* =====================================================================
+   Käyttöliittymä
+   ===================================================================== */
+const playBtn = document.getElementById('play'), refBtn = document.getElementById('ref');
+const ICON_PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8l9-5.4z" fill="currentColor"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/><rect x="9.3" y="2.6" width="3.2" height="10.8" rx=".8" fill="currentColor"/></svg>';
+function paintPlay() { playBtn.innerHTML = S.running ? ICON_PAUSE + 'Tauko' : ICON_PLAY + 'Käynnistä'; }
+playBtn.addEventListener('click', () => {
+  if (!S.running && S.t >= TMAX) S.t = 0;                          // täysi kuvaaja: uusi ajo alusta
+  S.running = !S.running; paintPlay();
+});
+document.getElementById('reset').addEventListener('click', () => { S.t = 0; S.running = false; paintPlay(); });
+function paintRef() { refBtn.setAttribute('aria-pressed', String(!!S.ref)); }
+refBtn.addEventListener('click', () => { S.ref = S.ref ? null : { A: S.A, T: S.T }; paintRef(); });
+bindRange('A', (x) => `${fmt(x, 2)}${NBSP}m`, (x) => { S.A = x; });
+bindRange('T', (x) => `${fmt(x, 1)}${NBSP}s`, (x) => { S.T = x; });
+for (const [id, key] of [['showA', 'A'], ['showT', 'T'], ['showV', 'v'], ['showVal', 'val']]) {
+  const el = document.getElementById(id);
+  S.show[key] = el.checked;
+  el.addEventListener('change', () => { S.show[key] = el.checked; });
+}
+// kuvaajasta vetämällä valitaan ajanhetki: punnus siirtyy samaan kohtaan
+const inGraph = (p) => { const G = layout(); return p.x >= G.gx0 - L.fs && p.x <= G.gx1 + L.fs && p.y >= G.Y(XMAX) - L.fs && p.y <= G.Y(-XMAX) + L.fs; };
+const seek = (p) => { const G = layout(); S.t = clamp((p.x - G.gx0) / (G.gx1 - G.gx0) * TMAX, 0, TMAX); };
+cv.addEventListener('pointerdown', (e) => {
+  const p = view.pt(e); if (!inGraph(p)) return;
+  S.drag = true; S.running = false; paintPlay(); seek(p); cv.setPointerCapture(e.pointerId);
+});
+cv.addEventListener('pointermove', (e) => { const p = view.pt(e); if (S.drag) seek(p); else cv.style.cursor = inGraph(p) ? 'ew-resize' : ''; });
+for (const ev of ['pointerup', 'pointercancel']) cv.addEventListener(ev, () => { S.drag = false; });
+paintPlay(); paintRef();
+startLoop({ dt: 1 / 240, step, draw, running: () => S.running });
+})();
+</script>
+</body>
+</html>

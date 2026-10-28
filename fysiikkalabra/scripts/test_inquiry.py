@@ -68,11 +68,11 @@ WIDE = """() => {      // the wide layout as rendered: which blocks sit side by 
   const R = (e) => e.getBoundingClientRect(), beside = (a, b) => R(b).left >= R(a).right - 1 && Math.abs(R(a).top - R(b).top) < 400;
   const lab = document.querySelector('.lab'), rows = [...document.querySelectorAll('.act-theory > .fig-row, article#teoria > .fig-row')];
   const text = [...document.querySelectorAll('main p, main li')].filter((e) => e.offsetParent && !e.closest('#sim-root, .katex-display, table'));
-  const cells = [...document.querySelectorAll('.act-grid > *, .lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
+  const cells = [...document.querySelectorAll('.lab > *, .fig-row > *, .intro-row > *')].filter((e) => e.scrollWidth > e.clientWidth + 1).map((e) => e.className);
   return { over: document.documentElement.scrollWidth - document.documentElement.clientWidth,
            lab: lab ? beside(lab.querySelector('.lab-main'), lab.querySelector('.lab-side')) : null,
-           figs: rows.map((r) => beside(r.querySelector('.fig-text'), r.querySelector('.fig'))),
-           widest: Math.max(0, ...text.map((e) => R(e).width)), rem: parseFloat(getComputedStyle(document.documentElement).fontSize), cells };
+           figs: rows.map((r) => beside(r.querySelector('.fig-text'), r.querySelector('.fig')) === r.classList.contains('side')),
+           sides: rows.map((r) => r.classList.contains('side')), widest: Math.max(0, ...text.map((e) => R(e).width)), rem: parseFloat(getComputedStyle(document.documentElement).fontSize), cells };
 }"""
 
 
@@ -81,14 +81,14 @@ def page_form(pg, b, url, acts, page):
     names = pg.evaluate(NAMES)
     old = [n for n in names if any(n == o or n.startswith(o + " ") for o in OLD_NAMES)]
     check("no old stage or section names in the nav or headings (Pohdinta, Teoriatiivistelmä, Exit ticket)", not old, str(old))
-    toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => a.textContent)")
+    toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => { const l = (a.querySelector('.toc-label') || a).cloneNode(true); l.querySelectorAll('.toc-rest').forEach((e) => e.remove()); return l.textContent; })")   # the short name; the side column adds the rest of a long title
     want = []
     for sid, t in inquiry.STAGES:
         here = [a for a in acts if a["stage"] == sid and a["type"] != "exercises"]
         if here: want += [inquiry.NAV.get(sid, t)] + ([inquiry.EXIT_TITLE] if any(a["type"] == "exit" for a in here) else [])
     want.append(inquiry.EXERCISES_TITLE)
     check("nav names the stages, the exit ticket and the exercises", toc == want, f"{toc} != {want}")
-    order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro-row')].map((e) => e.id || e.className)")
+    order = pg.evaluate("[...document.querySelectorAll('article > section, article > .intro')].map((e) => e.id || e.className)")
     check("the exercises close the page, after the exit ticket", order[-1:] == ["exercises"] and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(x.compareDocumentPosition(e) & 4); })()"), str(order))
     if any(a["stage"] == "ennusta" for a in acts):
         fold = pg.locator("#ennusta details.fold")
@@ -100,7 +100,7 @@ def page_form(pg, b, url, acts, page):
         boxes = pg.evaluate("[...document.querySelectorAll('#sim details')].map((d) => [d.querySelector('summary').textContent.trim(), d.open])")
         check("the simulation's explanations sit behind closed, named boxes", all(t and not o for t, o in boxes), str(boxes))
         words = pg.evaluate("""() => { const a = document.querySelector('.act-sim'); if (!a) return 0; const c = a.cloneNode(true);
-          c.querySelectorAll('label, .readout, .controls, button, select, summary, table, canvas, script, h3, details:not([open]) > :not(summary), .sim-moved').forEach((e) => e.remove());
+          c.querySelectorAll('label, .readout, .controls, button, select, summary, table, canvas, script, h3, details:not([open]) > :not(summary), .sim-moved, .sim-context').forEach((e) => e.remove());
           return c.textContent.trim().split(/\\s+/).filter(Boolean).length; }""")
         check("the simulation shows little text: picture, controls and values first", words <= 50, f"{words} visible words beside the controls and the readout")
     for w in (1280, 1920):
@@ -109,11 +109,11 @@ def page_form(pg, b, url, acts, page):
         check(f"{w} px: no horizontal overflow, no column spilling into its neighbour", L["over"] <= 0 and not L["cells"], str(L))
         check(f"{w} px: text no wider than a reading column (44rem)", L["widest"] <= 44 * L["rem"] + 1, f"{L['widest']:.0f} px")
         if L["lab"] is not None: check(f"{w} px: the simulation beside the experiments", L["lab"])
-        if L["figs"]: check(f"{w} px: every theory figure beside its paragraph", all(L["figs"]), str(L["figs"]))
+        if L["figs"]: check(f"{w} px: a theory figure beside its paragraph when the two are about as tall (.side), under it otherwise", all(L["figs"]), str(L["figs"]))
         q.close()
     q = b.new_page(viewport={"width": 360, "height": 740}); q.goto(url); q.wait_for_timeout(500)
     L = q.evaluate(WIDE)
-    check("360 px: one column", not L["lab"] and not any(L["figs"]), str(L))
+    check("360 px: one column", not L["lab"] and not any(L["figs"][i] and side for i, side in enumerate(L["sides"])), str(L))
     q.close()
 
 
@@ -165,6 +165,13 @@ def generic(lid):
         check("no console errors", not errors, str(errors[:2]))
         page_form(pg, b, url, acts, page)
         if pg.locator("details.fold").count(): pg.locator("details.fold > summary").first.click(); pg.wait_for_timeout(100)   # open the Ennusta box as a student does
+        n_opt = pg.locator("details.opt").count()
+        if n_opt:                                         # optional activities: closed, named boxes that open from the keyboard
+            st = pg.evaluate("[...document.querySelectorAll('details.opt')].map((d) => [d.open, d.querySelector('summary').textContent.includes('Valinnainen'), !!d.querySelector('.activity[id]')])")
+            check("optional activities start closed, are named Valinnainen and keep their ids", all(not o and v and i for o, v, i in st), str(st))
+            pg.locator("details.opt > summary").first.focus(); pg.keyboard.press("Enter")
+            check("an optional box opens from the keyboard", pg.locator("details.opt").first.evaluate("(d) => d.open"))
+            pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats them like the others
         for a in acts:                                    # plain choices: a wrong option gets its own feedback, the right one "Oikein"
             if a["type"] != "choice" or a.get("reveal"): continue
             loc = pg.locator(f"#{a['id']}")
@@ -241,25 +248,28 @@ if len(sys.argv) > 1:
 
 
 # ---------------------------------------------------------------- part 1: validation and rendering
-folder = ROOT / "content/FY3/fy3-2"
+folder = ROOT / "content/fi/FY3/fy3-2"
 good = json.loads((folder / "inquiry.json").read_text()); lesson_md = (folder / "lesson.md").read_text()
 check("pilot validates", inquiry.validate(folder, good, lesson_md) == [], str(inquiry.validate(folder, good, lesson_md)))
 
 def errs_of(mutate):
     d = copy.deepcopy(good); mutate(d); return inquiry.validate(folder, d, lesson_md)
+def act(d, aid): return next(a for a in d["activities"] if a["id"] == aid)   # by id: inserting an activity must not shift the tests
 
 e = errs_of(lambda d: d.__setitem__("version", 2)); check("wrong version named", any("version" in x and x.startswith("fy3-2 inquiry.json") for x in e), str(e))
 e = errs_of(lambda d: d["activities"][2]["choices"][1].pop("feedback")); check("missing feedback names lesson, activity and choice", any("activities[2].choices[1].feedback" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"][2].__setitem__("reveal", {"after": "nope"})); check("reveal must point at an experiment", any("reveal.after" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][6]["locked"].append("s")); check("varied parameter cannot be locked", any("locked" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][9]["sections"].append("Ei ole")); check("theory section must exist in lesson.md", any("Ei ole" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][9]["sections"].append("Esimerkki")); check("a section placed twice is an error", any("more than once" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "exp-1")["locked"].append("s")); check("varied parameter cannot be locked", any("locked" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "theory")["sections"].append("Ei ole")); check("theory section must exist in lesson.md", any("Ei ole" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "theory")["sections"].append("Esimerkki")); check("a section placed twice is an error", any("more than once" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"].append(dict(d["activities"][0]))); check("duplicate id is an error", any("used twice" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"][0].__setitem__("stage", "lopuksi")); check("unknown stage is an error", any("stage" in x for x in e), str(e))
 e = errs_of(lambda d: [c.__setitem__("correct", False) for c in d["activities"][1]["choices"]]); check("a choice needs one correct option", any('"correct": true' in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][13].__setitem__("hints", ["a", "b", "c", "d"])); check("at most three hints", any("hints" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][13].__setitem__("answer", "240")); check("numeric answer must be a number", any("answer" in x for x in e), str(e))
-e = errs_of(lambda d: d["activities"][17].pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "siirto").__setitem__("hints", ["a", "b", "c", "d"])); check("at most three hints", any("hints" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "siirto").__setitem__("answer", "240")); check("numeric answer must be a number", any("answer" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3").pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3")["criteria"].__setitem__(0, "Osaan selittää työn.")); check("a confidence statement is not a criterion", any("how sure" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3").__setitem__("figure", "fy3-9/hero")); check("a task's figure must carry information", any("figure" in x for x in e), str(e))
 types = {a["type"] for a in good["activities"]}
 check("pilot exercises every implemented type but text", types >= set(inquiry.TYPES) - {"text"}, str(set(inquiry.TYPES) - types))
 named = lesson_md.replace("\n## Kaava\n", "\n## Kaava: Työ ja teho\n")
@@ -274,12 +284,13 @@ check("sim activity: a long text from before 2026-10-26 goes behind one box", le
 # a lesson without inquiry.json renders in the classic layout: build a copy of fy3-2 without the file in a temporary root
 with tempfile.TemporaryDirectory() as tmp:
     troot = pathlib.Path(tmp)
-    for n in ("templates", "curriculum.json", "glossary.json"):
+    for n in ("templates", "lang", "curriculum.json", "competencies.json", "glossary.json"):
         src = ROOT / n
         if src.is_dir(): shutil.copytree(src, troot / n)
         elif src.exists(): shutil.copy(src, troot / n)
-    shutil.copytree(folder, troot / "content/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
-    (troot / "content/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/FY3/fy3-2/lesson.md").write_text(named)
+    shutil.copytree(folder, troot / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("review", "packet-*"))
+    shutil.copytree(ROOT / "lessons/FY3/fy3-2", troot / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
+    (troot / "content/fi/FY3/fy3-2/inquiry.json").unlink(); (troot / "content/fi/FY3/fy3-2/lesson.md").write_text(named)
     env = {**os.environ, "FYSIIKKALABRA_ROOT": tmp}
     r = subprocess.run([PY, ROOT / "scripts/build.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env=env)
     classic = (troot / "preview/fy3-2.html").read_text() if r.returncode == 0 else ""
@@ -292,7 +303,7 @@ with tempfile.TemporaryDirectory() as tmp:
 
 # a broken inquiry.json fails the build with the field named
 with tempfile.TemporaryDirectory() as tmp:
-    bad = pathlib.Path(tmp) / "content/FY3/fy3-2"; shutil.copytree(folder, bad)
+    bad = pathlib.Path(tmp) / "content/fi/FY3/fy3-2"; shutil.copytree(folder, bad)
     d = copy.deepcopy(good); d["activities"][2]["choices"][1].pop("feedback"); (bad / "inquiry.json").write_text(json.dumps(d))
     r = subprocess.run([PY, ROOT / "scripts/lint_lesson.py", "fy3-2"], capture_output=True, text=True, cwd=ROOT, env={**__import__("os").environ, "FYSIIKKALABRA_ROOT": tmp})
     # lint_lesson resolves its own ROOT; validate directly instead
@@ -315,10 +326,10 @@ order = [page_html.index(f'id="{sid}"') for sid, _ in inquiry.STAGES]; check("st
 check("theory sections placed once", page_html.count('class="theory-h">Ydinajatus') == 1 and page_html.count('class="theory-h">Esimerkki') == 1)
 check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
 check("the exercises come last, after the exit ticket", page_html.index('id="exit"') < page_html.index('<section class="stage stage-practice" id="exercises"') and page_html.count('id="exercises"') == 1
-      and '<a href="#exit">Exit ticket</a><a href="#exercises">Tehtävät</a></nav>' in page_html)
+      and re.search(r'<a href="#exit"[^>]*>(?:(?!</a>).)*Exit ticket(?:(?!</a>).)*</a><a href="#exercises"[^>]*>(?:(?!</a>).)*Tehtävät(?:(?!</a>).)*</a></nav>', page_html) is not None)
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
-check("exercises and exit ticket kept (5/4/3, 3 items)", page_html.count('class="level"') == 3 and page_html.count("<li>Nostat 10") == 1 and '<span class="count">5 tehtävää' in page_html and '<span class="count">3 tehtävää' in page_html)
+check("exercises and exit ticket kept (5/4/3, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and '<span class="count">5 tehtävää' in page_html and '<span class="count">3 tehtävää' in page_html)
 check("no answer disclosed before commitment", 'class="feedback" data-for="0" hidden' in page_html)
 check("nav lists the stages", '<a href="#herata">' in page_html and '<a href="#tarkista">' in page_html)
 
@@ -342,7 +353,11 @@ with sync_playwright() as pw:
     # the Ennusta box: closed at first, opened by its summary
     fold = pg.locator("details.fold")
     check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
-    fold.locator("summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-1 button.commit").is_visible())
+    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    opt1 = pg.locator("details.opt:has(#pred-1)")   # pred-1 is optional in the pilot: closed until the student opens it
+    check("an optional prediction waits in its closed box", not opt1.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
+    opt1.locator(":scope > summary").click(); check("the optional box opens", pg.locator("#pred-1 button.commit").is_visible())
+    pg.evaluate("document.querySelectorAll('details.opt').forEach((d) => { d.open = true; })")   # the rest of the run treats optional items like the others
     # prediction: commit first, no feedback until the experiment has two measurements
     p1 = pg.locator("#pred-1")
     p1.locator("button.commit").click(); check("empty commit asks for a choice", "Valitse" in p1.locator("output").inner_text())
@@ -351,9 +366,9 @@ with sync_playwright() as pw:
     p1.locator("button.commit").click()
     check("prediction committed: radios locked, feedback hidden", p1.locator("input[type=radio]").nth(w1).is_disabled() and not p1.locator(".feedback").nth(w1).is_visible() and p1.locator(".pending").is_visible())
     check("the box counts the answers", "vastattu 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
-    fold.locator("summary").click(); fold.locator("summary").click()
+    fold.locator(":scope > summary").click(); fold.locator(":scope > summary").click()
     check("closing and reopening the box keeps the prediction and its reason", p1.locator("input[type=radio]").nth(w1).is_checked() and p1.locator(".justify textarea").input_value() == "voima sama")
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
 
     ex1 = pg.locator("#exp-1")
     check("record disabled before the initial state is set", ex1.locator(".exp-record").is_disabled())
@@ -372,9 +387,9 @@ with sync_playwright() as pw:
     rows = ex1.locator(".exp-table tbody tr").all_inner_texts()
     check("second measurement doubles W", len(rows) == 2 and "1200" in rows[1], str(rows))
     check("the closed box tells that feedback is ready", "palaute 1/" in fold.locator(".fold-status").inner_text(), fold.locator(".fold-status").inner_text())
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
     check("prediction feedback revealed after two measurements", p1.locator(".feedback").nth(w1).is_visible() and "Ei aivan" in p1.locator("output").inner_text() and not p1.locator(".pending").is_visible())
-    fold.locator("summary").click()
+    fold.locator(":scope > summary").click()
     ex1.locator(".exp-reset").click(); pg.wait_for_timeout(120)
     st = pg.evaluate("window.simState"); locked = pg.evaluate("[...document.querySelectorAll('#sim-root input[type=range]')].map(r => r.disabled)")
     check("reset restores defaults, unlocks, clears the table", st["s"] == 10 and st["u"] == 0 and locked == [False, False, False] and ex1.locator(".exp-table tbody tr").count() == 0, f"{st} {locked}")
@@ -408,8 +423,16 @@ with sync_playwright() as pw:
     check("second wrong try points to the solution", "Ei vielä" in o2.inner_text() or "Vastaus" in o2.inner_text(), o2.inner_text())
 
     # explanation: model answer and criteria on request
-    ex = pg.locator("#check-3"); ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
+    ex = pg.locator("#check-3"); ex.locator(".show-model").click()
+    check("the model answer waits for the student's own answer", not ex.locator(".model").is_visible() and "oma vastauksesi" in ex.locator(".explain-status").inner_text())
+    ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
     ex.locator(".show-model").click(); check("model answer and criteria shown", ex.locator(".model").is_visible() and ex.locator("ul.criteria input[type=checkbox]").count() == 4)
+    boxes = ex.locator("ul.criteria input[type=checkbox]"); boxes.nth(0).check(); boxes.nth(1).check(); ex.locator(".check-criteria").click()
+    check("what is missing: the two unticked criteria and where to practise", ex.locator(".crit-missing li").count() == 2 and ex.locator(".crit-practice").is_visible()
+          and ex.locator(".crit-practice a[href='#exercises']").count() == 1, ex.locator(".crit-result").inner_text())
+    boxes.nth(2).check(); boxes.nth(3).check(); ex.locator(".check-criteria").click()
+    check("all criteria ticked: nothing missing, no practice pointer", ex.locator(".crit-missing li").count() == 0 and not ex.locator(".crit-practice").is_visible())
+    check("no chapter-level Osaan / Tarvitsen self-assessment", pg.locator(".selfcheck, #arvioi").count() == 0)
 
     # persistence survives a reload (per-device convenience only)
     pg.reload(); pg.wait_for_function("window.simState && window.simAdapter", timeout=3000)

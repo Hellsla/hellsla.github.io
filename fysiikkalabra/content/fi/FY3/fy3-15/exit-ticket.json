@@ -1,0 +1,6 @@
+[
+  {
+    "q": "Voimalaitoksen energiaketjun vaiheiden hyötysuhteet ovat $\\eta_1 = 0{,}90$, $\\eta_2 = 0{,}50$ ja $\\eta_3 = 0{,}96$. Mikä on koko ketjun hyötysuhde?",
+    "a": "Hyötysuhteet kerrotaan: $\\eta = \\eta_1 \\eta_2 \\eta_3 = 0{,}90 \\cdot 0{,}50 \\cdot 0{,}96 = 0{,}432 \\approx 43\\,\\%$. Niitä ei lasketa yhteen eikä keskiarvoteta."
+  }
+]

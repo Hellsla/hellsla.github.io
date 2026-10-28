@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Atomin ytimessä on protoneja, jotka hylkivät toisiaan sähköisesti. Mikä perusvuorovaikutus pitää ytimen silti koossa, ja miksi se ei vedä yhteen kauempana olevia atomeja?",
+    "a": "Vahva vuorovaikutus, tarkemmin sen jäännösvaikutus protonien ja neutronien välillä. Ytimen kokoisilla etäisyyksillä, noin $10^{-15}\\,\\text{m}$, se on voimakkaampi kuin protonien sähköinen hylkiminen, mutta se ei ulotu ydintä kauemmas, joten eri atomien ytimet eivät vedä toisiaan sen avulla."
+  },
+  {
+    "q": "Miksi fysiikassa malli testataan kokeella, vaikka se olisi looginen ja kaunis?",
+    "a": "Looginenkin malli voi kuvata luontoa väärin. Vasta mittaus kertoo, vastaako mallista johdettu ennuste luontoa. Jos ei vastaa, mallia muutetaan tai se hylätään."
+  }
+]
