@@ -36,7 +36,7 @@
 **Muunnokset:** Voima on newtoneina ja ala neliömetreinä, joten tulos tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $p = \dfrac{750\,\text{N}}{0{,}0025\,\text{m}^2} = 300\,000\,\text{Pa} = 300\,\text{kPa}$
 **Vastaus:** $300\,\text{kPa}$, kaksi merkitsevää numeroa kuten alassa $0{,}0025\,\text{m}^2$ (nollat ovat paikan pitäjiä).
-**Järkevyys:** Yhden jalan ala on $0{,}0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, esimerkiksi $2{,}5\,\text{cm} \times 2{,}5\,\text{cm}$, mikä on uskottava jalan koko. Paine on noin kolme ilmanpainetta, joten raskaan kiukaan jalat voivat painua pehmeään lattiaan. Jos ala olisi kymmenkertainen, paine olisi vain kymmenesosa.
+**Järkevyys:** Yhden jalan ala on $0{,}0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, esimerkiksi $2{,}5\,\text{cm} \cdot 2{,}5\,\text{cm}$, mikä on uskottava jalan koko. Paine on noin kolme ilmanpainetta, joten raskaan kiukaan jalat voivat painua pehmeään lattiaan. Jos ala olisi kymmenkertainen, paine olisi vain kymmenesosa.
 
 ## fy3-4-L1-05
 **Annettu:** syvyys $h = 0{,}45\,\text{m}$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
@@ -97,7 +97,7 @@
 **Muunnokset:** $6{,}0\,\text{kPa} = 6000\,\text{Pa}$. Massa on jo kilogrammoina.
 **Sijoitus:** $G = 85\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 833{,}85\,\text{N}$; $A = \dfrac{833{,}85\,\text{N}}{6000\,\text{Pa}} = 0{,}13898\,\text{m}^2$
 **Vastaus:** $0{,}14\,\text{m}^2$, kaksi merkitsevää numeroa kuten paineessa $6{,}0\,\text{kPa}$ ja massassa $85\,\text{kg}$.
-**Järkevyys:** Takaisin laskettuna $833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \approx 5960\,\text{Pa}$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \times 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
+**Järkevyys:** Takaisin laskettuna $833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \approx 5960\,\text{Pa}$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \cdot 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
 
 ## fy3-4-L3-02
 **Annettu:** letkun korkeus kannen yläpuolella $h = 4{,}0\,\text{m}$, kannen ala $A = 0{,}25\,\text{m}^2$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$; letkun vesimäärä $0{,}40\,\textsf{l}$

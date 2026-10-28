@@ -57,7 +57,7 @@
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Sijoitus:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0{,}20\,\text{m} = 300\,\text{N} \cdot 0{,}20\,\text{m} = 60\,\text{J}$, joten $Q = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
 **Vastaus:** $-15\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}20\,\text{m}$ ja $45\,\text{J}$. Kuvaajan arvot luetaan tarkasti ruudukosta, joten hyväksytään $-14{,}5\ldots-15{,}5\,\text{J}$.
-**Järkevyys:** Työ toi ilmaan 60 J, mutta sisäenergia kasvoi vain 45 J, joten 15 J:n on täytynyt lähteä lämpönä pois ja $Q$ on negatiivinen. Tulos sopii siihen, että puristettu ilma on lämmintä ja luovuttaa lämpöä sylinterin seiniin. Tase: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
+**Järkevyys:** Työ toi ilmaan $60\,\text{J}$, mutta sisäenergia kasvoi vain $45\,\text{J}$, joten $15\,\text{J}$:n on täytynyt lähteä lämpönä pois ja $Q$ on negatiivinen. Tulos sopii siihen, että puristettu ilma on lämmintä ja luovuttaa lämpöä sylinterin seiniin. Tase: $-15\,\text{J} + 60\,\text{J} = 45\,\text{J}$.
 
 ## fy3-5-L2-02
 **Annettu:** systeemi on vesi; vastuksen teho $P = 2{,}0\,\text{kW}$, aika $t = 90\,\text{s}$, kuoren läpi ympäristöön siirtyvä lämpö $20\,\text{kJ}$; työtä ei tehdä, joten $W = 0$
