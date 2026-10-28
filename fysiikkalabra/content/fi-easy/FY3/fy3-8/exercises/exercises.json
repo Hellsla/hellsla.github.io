@@ -53,7 +53,7 @@
     {
       "id": "fy3-8-L2-02",
       "level": 2,
-      "text": "Teräksinen kahvakuula, jonka tilavuus on 2,0 dm³, on ollut pakkasyön autotallissa −22 °C:ssa. Se tuodaan sisälle, jossa se lämpenee 20 °C:seen. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta kuutiosenttimetriä kahvakuulan tilavuus kasvaa? Vihje: kiinteällä aineella $\\gamma \\approx 3\\alpha$.",
+      "text": "Teräksisen kahvakuulan tilavuus on 2,0 dm³. Kuula on ollut pakkasyön autotallissa −22 °C:ssa. Se tuodaan sisälle, jossa se lämpenee 20 °C:seen. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta kuutiosenttimetriä kahvakuulan tilavuus kasvaa? Vihje: kiinteällä aineella $\\gamma \\approx 3\\alpha$.",
       "answer": 3.0,
       "unit": "cm³",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy3-8-L3-03",
       "level": 3,
-      "text": "Mökkiveneen 20,0 litran teräskanisteri täytetään huoltoasemalla piripintaan 10 °C:n bensiinillä ja suljetaan. Laiturilla aurinko lämmittää kanisterin ja bensiinin 35 °C:seen. Bensiinin $\\gamma = 0{,}95 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ ja teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kanisterin sisätilavuus kasvaa samoin kuin yhtä suuren teräskappaleen tilavuus. Kuinka monta kuutiosenttimetriä bensiiniä pyrkisi valumaan yli, jos korkki avataan? Perustele, miksi kanisteria ei täytetä piripintaan, vaikka myös kanisteri laajenee.",
+      "text": "Mökkiveneen teräskanisteri on 20,0 litran kokoinen. Se täytetään huoltoasemalla piripintaan 10 °C:n bensiinillä ja suljetaan. Laiturilla aurinko lämmittää kanisterin ja bensiinin 35 °C:seen. Bensiinin $\\gamma = 0{,}95 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ ja teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kanisterin sisätilavuus kasvaa samoin kuin yhtä suuren teräskappaleen tilavuus. Kuinka monta kuutiosenttimetriä bensiiniä pyrkisi valumaan yli, jos korkki avataan? Perustele myös, miksi kanisteria ei täytetä piripintaan, vaikka myös kanisteri laajenee.",
       "answer": 460,
       "unit": "cm³",
       "tolerance": 0.02

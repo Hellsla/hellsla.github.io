@@ -2,7 +2,7 @@
 
 > **Miksi** painavan repun kantaminen tasaista käytävää pitkin ei fysiikan mielessä ole työtä, vaikka olkapäät väsyvät?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin painava reppu selässään. Lattia on vaakasuora, ja katkoviivanuoli lattian suuntaisesti näyttää kulkusuunnan. Taustalla on kaappirivi ja ikkunoita." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin. Hänellä on selässä painava reppu. Lattia on vaakasuora. Katkoviivanuoli lattian suuntaisesti näyttää, mihin suuntaan opiskelija kulkee. Taustalla on rivi kaappeja ja ikkunoita." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32h-win40" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win340" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win640" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy32h-win940" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
   <rect x="40" y="60" width="180" height="150" rx="4" fill="url(#fy32h-win40)" stroke="#1f2933" stroke-width="3"/>
@@ -118,7 +118,7 @@
 ## Ydinajatus
 Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana tarkoittaa tarkemmin jotain muuta. Voima tekee työtä, kun se siirtää kappaletta voiman suuntaan. Kannat reppua vaakasuoraan tasaisella vauhdilla. Kannatteleva voimasi osoittaa ylös, mutta reppu liikkuu sivulle. Voima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Lihaksesi väsyvät, koska ne kuluttavat energiaa voiman ylläpitoon. Reppuun ei kuitenkaan siirry energiaa.
 
-<svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-size:24px">
+<svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan. Kannatteleva voima F osoittaa ylös, mutta liike on sivulle. Siksi voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös. Voima F ja liike ovat samansuuntaiset. Siksi voima tekee työn W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="71" y="15.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kanto sivulle}$</div></foreignObject>
   <foreignObject x="390" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nosto ylös}$</div></foreignObject>
   <line x1="300" y1="20" x2="300" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
@@ -148,7 +148,7 @@ Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana tarkoittaa tark
 
 Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla. Hän antoi putoavan painon pyörittää siipipyörää vedessä. Paino teki työn. Vesi lämpeni mitattavan verran, vaikka sitä ei lämmitetty. Työ kasvatti veden sisäenergiaa. Kokeissa veden lämpeneminen oli verrannollinen painon ja pudotusmatkan tuloon. Tämä tulo on sama kuin voiman ja matkan tulo. Tämä koetulos perustelee työn määritelmän $W = Fs$ (kaava alla). Sama lämpeneminen saadaan myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa. Molemmat mitataan samalla yksiköllä, joulella.
 
-<svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-size:24px">
+<svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua. Naru kulkee väkipyörän yli ja pyörittää siipipyörää. Siipipyörä on vesiastiassa. Painon voima tekee työn pudotusmatkalla h. Siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <foreignObject x="190" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{työ} \to \text{lämpö}$</div></foreignObject>
   <rect x="62" y="170" width="196" height="100" fill="url(#fy32-water)"/>
@@ -188,7 +188,7 @@ missä $W$ on työ (J), $F$ voiman suuruus (N) ja $s$ kappaleen kulkema matka (m
 
 Jos voima muuttuu matkan aikana, työ on $(s,F)$-kuvaajassa pinta-ala. Se on voimakäyrän ja $s$-akselin välissä oleva alue. Vakiovoimalla alue on suorakulmio, jonka ala on $F \cdot s$. Sama laskusääntö toimii siis molemmissa tapauksissa. Monimutkaisen kuvaajan pinta-alan voi laskea jakamalla kuvaaja osiin. Osat ovat suorakulmioita, kolmioita ja puolisuunnikkaita.
 
-<svg data-fig="work-graphs" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-size:24px">
+<svg data-fig="work-graphs" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio. Työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti. Sitten voima pysyy vakiona. Työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂." style="max-width:100%;font-size:24px">
   <line x1="59" y1="240" x2="244" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M256,240 L243,246 L243,234 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="60" y1="241" x2="60" y2="66" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -222,13 +222,13 @@ Jos voima muuttuu matkan aikana, työ on $(s,F)$-kuvaajassa pinta-ala. Se on voi
   <foreignObject x="341.5" y="291.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuttuva voima}$</div></foreignObject>
 </svg>
 
-Kun nostat kappaleen tasaisella nopeudella ylös, nostovoima on yhtä suuri kuin kappaleen paino $G = mg$ (luku *Voima vuorovaikutuksen mittana ja paino*). Nostotyö korkeudelle $h$ on siis:
+Nostat kappaleen ylös tasaisella nopeudella. Silloin nostovoima on yhtä suuri kuin kappaleen paino $G = mg$ (luku *Voima vuorovaikutuksen mittana ja paino*). Nostotyö korkeudelle $h$ on siis:
 ```latex
 W = G h = m g h
 ```
 missä $G$ on paino (N), $m$ massa (kg), $g = 9{,}81\,\text{m/s}^2$ ja $h$ nostokorkeus (m). Nostetun kappaleen energia kasvaa täsmälleen nostotyön verran.
 
-<svg data-fig="lift-work" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös ja laatikon paino G alas, ja nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h." style="max-width:100%;font-size:24px">
+<svg data-fig="lift-work" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös. Laatikon paino G osoittaa alas. Nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy32-ground" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#6b7480" stroke-width="1.5"/></pattern></defs>
   <rect x="30" y="292" width="300" height="12" fill="url(#fy32-ground)"/>
   <line x1="30" y1="292" x2="330" y2="292" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -268,7 +268,7 @@ missä $P$ on teho (W), $t$ aika (s) ja $v$ nopeus (m/s). Yksi watti on yksi jou
 ## Esimerkki
 Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newtoniin, kuten kuvaaja näyttää. Kuinka suuren työn venyttävä voima tekee?
 
-<svg data-fig="spring-work" viewBox="0 0 600 320" role="img" aria-label="(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ." style="max-width:100%;font-size:24px">
+<svg data-fig="spring-work" viewBox="0 0 600 320" role="img" aria-label="(s,F)-kuvaaja mittakaavassa. Voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä. Kolmion pinta-ala on työ." style="max-width:100%;font-size:24px">
   <line x1="167.5" y1="270" x2="167.5" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="243" y1="270" x2="243" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="319" y1="270" x2="319" y2="56" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -310,11 +310,11 @@ Jousta venytetään 20 cm. Venyttävä voima kasvaa tasaisesti nollasta 40 newto
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Jousen venytys eli voiman kulkema matka on $s = 20\,\text{cm}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä $W$.
+**Tunnetut ja kysytty.** Jousen venytys on sama kuin voiman kulkema matka: $s = 20\,\text{cm}$. Voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään työtä $W$, jonka venyttävä voima tekee.
 
 <!-- vaihe -->
 
-**Periaate.** Työ on voiman ja matkan tulo vain, kun voima on vakio. Tässä voima kasvaa tasaisesti, joten työ saadaan $(s,F)$-kuvaajan pinta-alana: kuvaajan ja $s$-akselin väliin jäävä alue on kolmio. Voima on liikkeen suuntainen, joten työ on positiivinen.
+**Periaate.** Työ on voiman ja matkan tulo vain, kun voima on vakio. Tässä voima kasvaa tasaisesti. Siksi työ saadaan $(s,F)$-kuvaajan pinta-alana. Kuvaajan ja $s$-akselin välissä oleva alue on kolmio. Voima on liikkeen suuntainen, joten työ on positiivinen.
 
 <!-- vaihe -->
 
@@ -328,7 +328,7 @@ W &= A_\text{kolmio} \\
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Matka on senttimetreinä, mutta työ lasketaan jouleina, joten matka muunnetaan metreiksi: $s = 20\,\text{cm} = 0{,}20\,\text{m}$. Voima on jo newtoneina, joten tulo $\text{N}\cdot\text{m}$ on suoraan jouleja.
+**Yksikkömuunnokset.** Matka on senttimetreinä, mutta työ lasketaan jouleina. Siksi matka muunnetaan metreiksi: $s = 20\,\text{cm} = 0{,}20\,\text{m}$. Voima on jo newtoneina. Siksi tulo $\text{N}\cdot\text{m}$ on suoraan jouleja.
 
 <!-- vaihe -->
 
@@ -356,7 +356,7 @@ W &= F_\text{ka}\, s \\
 &= 4{,}0\,\text{J}
 \end{aligned}
 ```
-Jos laskisit $40\,\text{N} \cdot 0{,}20\,\text{m} = 8{,}0\,\text{J}$, tulos olisi kaksinkertainen, koska voima ei ole 40 N koko matkalla.
+Jos laskisit $40\,\text{N} \cdot 0{,}20\,\text{m} = 8{,}0\,\text{J}$, tulos olisi kaksinkertainen. Syy on se, että voima ei ole 40 N koko matkalla.
 
 ## Yleinen virhekäsitys
 Työ ei ole sama asia kuin ponnistelu. Väsyminen ei tarkoita, että olisit tehnyt fysiikan tarkoittamaa työtä. Toinen yleinen virhe on sotkea työ ja teho. Suuri teho ei tarkoita suurta työtä. Se tarkoittaa nopeasti tehtyä työtä.
@@ -364,5 +364,5 @@ Työ ei ole sama asia kuin ponnistelu. Väsyminen ei tarkoita, että olisit tehn
 ## Tiivistelmä
 - Liikkeen suuntainen vakiovoima tekee työn $W = F s$. Muuttuvalla voimalla työ on $(s,F)$-kuvaajan pinta-ala.
 - Liikettä vastaan kohtisuora voima ei tee työtä. Siksi vaakasuora kantaminen tasaisella vauhdilla ei ole kantajan voiman tekemää työtä.
-- Työ siirtää energiaa: se voi nostaa kappaleen energiaa ($W = m g h$), venyttää jousta tai kasvattaa kitkassa pintojen sisäenergiaa. Joulen koe osoitti, että työ ja lämpö ovat kaksi tapaa siirtää energiaa.
+- Työ siirtää energiaa. Työ voi kasvattaa nostetun kappaleen energiaa ($W = m g h$). Se voi venyttää jousta. Kitkassa se voi kasvattaa pintojen sisäenergiaa. Joulen koe osoitti, että työ ja lämpö ovat kaksi tapaa siirtää energiaa.
 - Teho on työ aikayksikössä: $P = W/t = F v$. Yksiköt: $1\,\text{J} = 1\,\text{N} \cdot \text{m}$ ja $1\,\text{W} = 1\,\text{J/s}$.

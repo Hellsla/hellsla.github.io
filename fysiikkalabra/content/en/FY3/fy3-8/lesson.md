@@ -98,7 +98,7 @@ Almost all substances expand when they are heated and contract when they are coo
 ### Why does a substance expand?
 The micro model explains thermal expansion. In a solid the particles vibrate around their equilibrium positions. When the temperature rises, the vibration gets stronger.
 
-It is easier for the particles to move apart than to be squeezed closer: particles pressed close together repel each other strongly, but the attraction between particles moving apart weakens gradually. So a particle swings farther from its neighbour than closer to it, and the **average distance grows** between more strongly vibrating particles. When all the gaps between the particles grow, the whole object expands.
+It is easier for the particles to move apart than to be squeezed closer: particles pressed close together repel each other strongly, but the attraction between particles moving apart weakens gradually. So a particle swings farther from its neighbour than closer to it, and for more strongly vibrating particles the **average distance grows**. When all the gaps between the particles grow, the whole object expands.
 
 <svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="The same row of particles cold and warm. When warm, the particles vibrate more strongly and their average distance d is greater than the distance d₀ of the cold row, but the particles are the same size. The change in distance is drawn exaggerated." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{cold}$</div></foreignObject>

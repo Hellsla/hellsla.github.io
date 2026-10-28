@@ -2,7 +2,7 @@
 
 > **Why** does a bicycle tyre feel harder on a hot summer day than on a frosty day, even though no more air has been pumped into it?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a bicycle stands on hot asphalt on a summer heat day. The sun is shining, the heat shimmers above the asphalt, and the red column of the thermometer on the post is high." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a bicycle stands on hot asphalt in the summer heat. The sun is shining, heat shimmers above the asphalt, and the red column of the thermometer on the post is high." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy33h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy33h-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="430" fill="url(#fy33h-sky)"/>
   <circle cx="1020" cy="110" r="93" fill="#ffffff" fill-opacity="0.5"/>

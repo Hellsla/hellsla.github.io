@@ -310,7 +310,7 @@ A spring is stretched 20 cm. The stretching force increases steadily from zero t
 
 <!-- vaihe -->
 
-**Known and unknown.** The stretch of the spring, that is, the distance moved by the force, is $s = 20\,\text{cm}$, and the greatest value of the force is $F_\text{max} = 40\,\text{N}$. The force increases steadily from zero. We want the work $W$ done by the stretching force.
+**Given and find.** The stretch of the spring, that is, the distance moved by the force, is $s = 20\,\text{cm}$, and the greatest value of the force is $F_\text{max} = 40\,\text{N}$. The force increases steadily from zero. We want the work $W$ done by the stretching force.
 
 <!-- vaihe -->
 

@@ -136,7 +136,7 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "The simulation is a micro model of a gas: 80 particles move in the container and bounce off the walls. Try freely what temperature and volume do to the particles and the pressure.",
+      "text": "The simulation is a micro model of a gas: 80 particles move in the container and bounce off the walls. Explore freely what temperature and volume do to the particles and the pressure.",
       "model": "The model is simplified: it is two-dimensional, the particles do not collide with each other, and all the particles have the same speed, determined by the temperature. When the particles move faster, they hit the wall more often and harder. When the container is smaller, they hit the wall more often. In both cases the pressure increases. The measured pressure varies a little around the theoretical value.",
       "calc": "The pressure is a relative number (100 = 300 K and 1.0 dm³). The *measured* pressure is calculated from the collisions of the particles with the wall during the last 1.5 seconds, so it varies a little; the *theory* is the value calculated by the model. *Speed* changes only the pace of the animation: the pressure is calculated in simulated time, so it does not change the measured value."
     },
@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the temperature changes",
-      "intro": "Test predictions 1 and 3. The volume is locked at 1.0 dm³, and only the temperature changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at 300 K) at at least two temperatures, for example 150 K, 300 K and 600 K. After adjusting, wait a couple of seconds so that the measured pressure has time to settle to its new value. Compare the ratio of the kelvin temperatures with the ratio of the pressures.",
+      "intro": "Test predictions 1 and 3. The volume is locked at 1.0 dm³, and only the temperature changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at 300 K) at at least two temperatures, for example 150 K, 300 K and 600 K. After adjusting, wait a couple of seconds so that the measured pressure has time to settle to its new value. Compare the ratio of the temperatures in kelvins with the ratio of the pressures.",
       "initial": {
         "T": 300,
         "V": 1

@@ -105,7 +105,7 @@ Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone. Ne
   <foreignObject x="16" y="223.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_\text{ulko}$</div></foreignObject>
   <foreignObject x="381" y="77.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lämpö sisälle}$</div></foreignObject>
   <foreignObject x="406" y="177.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q_\text{sisälle}$</div></foreignObject>
-  <foreignObject x="-3301" y="237.5" width="3889" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta. Paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2. Kuvaaja on siis vaakasuora jana, ja nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jää varjostettu suorakulmio. Sen leveys on tilavuuden muutos ΔV ja korkeus on p. Suorakulmion pinta-ala on kaasun tekemä työ W_k = p ΔV. Kaaviokuva.}$</div></foreignObject>
+  <foreignObject x="380" y="237.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{leveys kuvaa tehoa}$</div></foreignObject>
 </svg>
 
 ## Kaava: Kaasun työ ja hyötysuhde
@@ -128,7 +128,7 @@ W = Q_1 - Q_2
 ```
 missä $Q_1$ on kuumasta lähteestä koneeseen siirtynyt lämpö (J), $Q_2$ kylmempään ympäristöön luovutettu lämpö (J), $W$ koneen kierroksen aikana tekemä työ (J) ja $\eta$ hyötysuhde. Hyötysuhde ilmoitetaan usein prosentteina. Hyötysuhteen voi laskea samalla tavalla tehoista, esimerkiksi sähköteho jaettuna polttoaineteholla.
 
-<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta: paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2, joten kuvaaja on vaakasuora jana, jonka nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jäävä varjostettu suorakulmio, jonka leveys on tilavuuden muutos ΔV ja korkeus p, on kaasun tekemä työ W_k = p ΔV. Kaaviokuva." style="max-width:100%;font-size:24px">
+<svg data-fig="pv-work" viewBox="0 0 600 330" role="img" aria-label="(V, p)-kuvaaja vakiopaineessa laajenevasta kaasusta. Paine p pysyy vakiona, kun tilavuus kasvaa arvosta V_1 arvoon V_2. Kuvaaja on siis vaakasuora jana, ja nuoli osoittaa laajenemisen suuntaa. Janan ja V-akselin väliin jää varjostettu suorakulmio. Sen leveys on tilavuuden muutos ΔV ja korkeus on p. Suorakulmion pinta-ala on kaasun tekemä työ W_k = p ΔV. Kaaviokuva." style="max-width:100%;font-size:24px">
   <line x1="203" y1="270" x2="203" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="363" y1="270" x2="363" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="96" y1="112.5" x2="470" y2="112.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

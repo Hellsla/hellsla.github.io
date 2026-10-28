@@ -72,7 +72,7 @@
         },
         {
           "text": "The same, because the rod is the same steel and the same length.",
-          "feedback": "The material and the initial length are the same, but the change in temperature is not: 50 K and 100 K. The values from the model are 6.00 mm and 12.0 mm, so a larger change in temperature lengthens the rod more."
+          "feedback": "The substance and the initial length are the same, but the change in temperature is not: 50 K and 100 K. The values from the model are 6.00 mm and 12.0 mm, so a larger change in temperature lengthens the rod more."
         }
       ]
     },
@@ -89,8 +89,8 @@
       },
       "choices": [
         {
-          "text": "Equal, because the material and the change in temperature are the same.",
-          "feedback": "The material and the change in temperature determine the *relative* change $\\Delta L / L_0 = \\alpha \\Delta T$, which in the model is 0.0600 % for both. However, the longer rod has twice as many gaps between particles, and each grows by the same amount: A lengthens by 6.00 mm and B by 12.0 mm."
+          "text": "Equal, because the substance and the change in temperature are the same.",
+          "feedback": "The substance and the change in temperature determine the *relative* change $\\Delta L / L_0 = \\alpha \\Delta T$, which in the model is 0.0600 % for both. However, the longer rod has twice as many gaps between particles, and each grows by the same amount: A lengthens by 6.00 mm and B by 12.0 mm."
         },
         {
           "text": "Twice as large.",
@@ -140,8 +140,8 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Choose the material, the initial length $L_0$ of the rod (measured at 20 °C) and the temperature $T$.",
-      "howto": "On the left is the micro model, on the right the rod and the $(T, \\Delta L)$ graph. The changes are drawn exaggerated a hundred times; the real changes are less than 0.3 %. The particles do not get bigger, but their average distance grows. The thin straight lines in the graph are the lines of the other materials: the steepest is aluminium, the gentlest is borosilicate glass. The dashed line is the situation at 20 °C. *Speed* changes only the pace of the vibration, not the lengths.",
+      "text": "Choose the substance, the initial length $L_0$ of the rod (measured at 20 °C) and the temperature $T$.",
+      "howto": "On the left is the micro model, on the right the rod and the $(T, \\Delta L)$ graph. The changes are drawn exaggerated a hundred times; the real changes are less than 0.3 %. The particles do not get bigger, but their average distance grows. The thin straight lines in the graph are the lines of the other substances: the steepest is aluminium, the gentlest is borosilicate glass. The dashed line is the situation at 20 °C. *Speed* changes only the pace of the vibration, not the lengths.",
       "model": "The readings are values from the model, in which the coefficient $\\alpha$ is assumed to be constant, not measurements of a real rod. In the micro model the particles vibrate equally far in both directions in the drawing, and their average distance is set directly from the formula $\\Delta L/L_0 = \\alpha \\Delta T$. So the model shows *that* the distance grows, but not *why*; the reason is in the Theory summary."
     },
     {

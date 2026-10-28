@@ -2,7 +2,7 @@
 
 > **Miksi** pitkän sillan päässä on kampamainen teräsliitos, jonka yli auton renkaat kolahtavat?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos, jonka hampaat lomittuvat ja jättävät väliinsä raon sillan lämpölaajenemista varten." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos. Sen hampaat lomittuvat. Hampaiden väliin jää rako, joka antaa sillan laajeta lämmetessään." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy38h-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="300" fill="url(#fy38h-sky)"/>
   <path d="M188,106 Q186.5,79 218.5,82 Q231,53 263,63 Q292,47 308,77 Q337,80.5 333.5,106 Z" fill="#ffffff" stroke-linejoin="round"/>
@@ -96,11 +96,11 @@
 Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan **lämpölaajenemiseksi**.
 
 ### Miksi aine laajenee?
-Mikromalli selittää lämpölaajenemisen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu.
+Mikromalli (hiukkasmalli) selittää lämpölaajenemisen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu.
 
 Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan. Lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti. Loittonevien hiukkasten välinen veto taas heikkenee vähitellen. Siksi hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä. Voimakkaammin värähtelevien hiukkasten **keskimääräinen etäisyys kasvaa**. Kun kaikki hiukkasvälit kasvavat, koko kappale laajenee.
 
-<svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin ja niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀, mutta hiukkaset ovat yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
+<svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin. Niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀. Hiukkaset ovat silti yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="85.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kylmä}$</div></foreignObject>
   <line x1="180" y1="72" x2="250" y2="72" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="180" y1="64" x2="180" y2="80" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -155,7 +155,7 @@ Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan. Lä
 </svg>
 
 ### Lämpölaajeneminen arjessa
-Muutos on pieni mutta voimakas. Teräksinen sauva pitenee vain noin sadastuhannesosan pituudestaan jokaista kelviniä kohti. Jos sauvan päät on kiinnitetty, laajeneva teräs työntää niitä valtavalla voimalla. Siksi pitkissä rakenteissa on liikuntasaumoja. Sillan teräskansi on talvipakkasella lyhyempi kuin kesähelteellä. Kampamainen liitos sillan päässä antaa kannen liikkua vapaasti. Samasta syystä sähkölinjat roikkuvat helteellä alempana kuin pakkasella.
+Muutos on pieni mutta voimakas. Teräksinen sauva pitenee vain noin sadastuhannesosan pituudestaan jokaista kelviniä kohti. Jos sauvan päät on kiinnitetty, laajeneva teräs työntää niitä valtavalla voimalla. Siksi pitkissä rakenteissa on liikuntasaumoja eli rakoja, jotka antavat rakenteen laajeta. Sillan teräskansi on talvipakkasella lyhyempi kuin kesähelteellä. Kampamainen liitos sillan päässä antaa kannen liikkua vapaasti. Samasta syystä sähkölinjat roikkuvat helteellä alempana kuin pakkasella.
 
 Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettaessa. Myös reikä levyssä suurenee, kun levy lämpenee. Tätä käytetään kutistusliitoksessa. Kuumennettu teräsrengas pujotetaan akselille. Kun se jäähtyy, se puristuu tiukasti kiinni.
 
@@ -179,7 +179,7 @@ Nesteiden (ja vakiopaineessa kaasujen) tilavuuden muutos lasketaan samalla taval
 ```
 missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilakerroin (1/K) ja $V_0$ alkuperäinen tilavuus (m³). Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan. Pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$. Kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen, esimerkiksi enintään noin sata kelviniä.
 
-<svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
+<svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Nesteen tilavuuden lämpölaajeneminen. Kolvissa on sama määrä nestettä. Kolvin kaulana on ohut putki. Kylmänä nesteen tilavuus on V₀, ja pinta on alempana. Lämpimänä neste on laajentunut, ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38-liq-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy38-liq-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
   <path d="M140,64 V233.0 A50,50 0 1 0 160,233.0 V64 Z" fill="#eef5f9" stroke-linejoin="round"/>
   <path d="M140,190 V233.0 A50,50 0 1 0 160,233.0 V190 Z" fill="url(#fy38-liq-c)" stroke-linejoin="round"/>
@@ -232,7 +232,7 @@ missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilaker
 | bensiini | 0,95 |
 | ilma (vakiopaineessa) | 3,4 |
 
-<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
+<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="Sama sauva kylmänä ja lämpimänä. Lämmin sauva on pidempi. Pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy38-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="1.5"/></pattern><linearGradient id="fy38-cold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy38-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2a69c"/></linearGradient></defs>
   <rect x="36" y="56" width="14" height="164" fill="url(#fy38-hatch)"/>
   <line x1="50" y1="56" x2="50" y2="220" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -260,7 +260,7 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 
 <!-- vaihe -->
 
-**Periaate.** Kiinteän aineen hiukkasten värähtely voimistuu lämmetessä ja niiden keskimääräinen etäisyys kasvaa, joten kansi pitenee. Teräs pysyy kiinteänä koko vuoden, ja kansi saa laajentua vapaasti, joten pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen: $\Delta L = \alpha L_0 \Delta T$.
+**Periaate.** Kiinteän aineen hiukkasten värähtely voimistuu lämmetessä. Silloin niiden keskimääräinen etäisyys kasvaa, ja kansi pitenee. Teräs pysyy kiinteänä koko vuoden. Kansi saa laajentua vapaasti. Siksi pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen (kun toinen kaksinkertaistuu, muutos kaksinkertaistuu): $\Delta L = \alpha L_0 \Delta T$.
 
 <!-- vaihe -->
 
@@ -274,7 +274,7 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta L$ tulee metreinä; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
+**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta L$ tulee metreinä. Lopuksi muutetaan tulos millimetreiksi: $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 
@@ -290,14 +290,14 @@ Teräksisen sillan kansi on 120 m pitkä. Paikkakunnalla lämpötila vaihtelee v
 
 <!-- vaihe -->
 
-**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$ (kumpikin kaksi numeroa); pituus $120\,\text{m}$ on vähintään kahden numeron arvo eikä rajoita.
+**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla (merkitsevät numerot kertovat, kuinka tarkka luku on). Tulosta rajoittavat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$. Kummassakin on kaksi numeroa. Pituudessa $120\,\text{m}$ on vähintään kaksi numeroa, joten se ei rajoita tulosta.
 
 <!-- vaihe -->
 
-**Järkevyys.** Karkea arvio: $10^{-5}\,\tfrac{1}{\text{K}} \cdot 100\,\text{m} \cdot 60\,\text{K} = 60\,\text{mm}$, joten tulos on oikeaa suuruusluokkaa. Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee. Se on vain $\alpha \Delta T = 0{,}072\,\%$ kannen pituudesta, mutta ilman liikuntasaumaa laajeneva teräs työntäisi sillan päitä niin suurella voimalla, että rakenteet vaurioituisivat. Siksi sillan päässä on kampamainen liitos, jonka hampaat liukuvat toistensa lomassa.
+**Järkevyys.** Karkea arvio: $10^{-5}\,\tfrac{1}{\text{K}} \cdot 100\,\text{m} \cdot 60\,\text{K} = 60\,\text{mm}$, joten tulos on oikeaa suuruusluokkaa. Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee. Se on vain $\alpha \Delta T = 0{,}072\,\%$ kannen pituudesta. Ilman liikuntasaumaa laajeneva teräs kuitenkin työntäisi sillan päitä suurella voimalla. Silloin rakenteet vaurioituisivat. Siksi sillan päässä on kampamainen liitos. Sen hampaat liukuvat toistensa lomassa.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukkaset pysyvät samankokoisina, ja vain niiden keskimääräiset etäisyydet kasvavat. Toinen virhe on luulla, että levyn reikä pienenee, koska levy muka laajenee reunoiltaan reiän puolelle. Reikä suurenee samassa suhteessa kuin levy muutenkin. Kolmas virhe on olettaa, että kaikki aineet laajenevat aina lämmetessään. Vesi kutistuu 0 °C:n ja 4 °C:n välillä, ja jäätyessään se laajenee. Siksi jää kelluu ja järvet jäätyvät pinnalta.
+Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukkaset pysyvät samankokoisina, ja vain niiden keskimääräiset etäisyydet kasvavat. Toinen virhe on luulla, että levyn reikä pienenee. Silloin ajatellaan, että levy laajenee reunoiltaan reiän puolelle. Näin ei käy. Reikä suurenee samassa suhteessa kuin levy muutenkin. Kolmas virhe on olettaa, että kaikki aineet laajenevat aina lämmetessään. Vesi kutistuu 0 °C:n ja 4 °C:n välillä, ja jäätyessään se laajenee. Siksi jää kelluu ja järvet jäätyvät pinnalta.
 
 ## Tiivistelmä
 - Lämmetessä hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, joten aine laajenee.
@@ -306,7 +306,7 @@ Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukka
 - Kappale laajenee kaikkiin suuntiin samassa suhteessa, joten myös reiät suurenevat.
 - Vesi on poikkeus: sen tiheys on suurin noin 4 °C:ssa.
 
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus, ja kahden kiskon jatkoskohdassa on pieni rako lämpölaajenemista varten." style="max-width:100%;font-size:24px">
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus. Kahden kiskon jatkoskohdassa on pieni rako, joka antaa kiskojen laajeta lämmetessään." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy38s-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
   <rect x="0" y="0" width="1200" height="160" fill="url(#fy38s-sky)"/>
   <circle cx="520" cy="60" r="54.5" fill="#ffffff" fill-opacity="0.5"/>

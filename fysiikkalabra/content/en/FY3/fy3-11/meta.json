@@ -16,12 +16,12 @@
     "work done by a gas",
     "refrigerator",
     "heat pump",
-    "yhteistuotanto",
+    "combined heat and power",
     "coefficient of performance",
     "heat of combustion",
     "waste heat",
     "district heating",
-    "lauhdevoimalaitos"
+    "condensing power plant"
   ],
   "sim": true,
   "image": false

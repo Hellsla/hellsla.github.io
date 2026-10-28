@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita. Massa on kilogrammoina ja $r$ kilojouleina kilogrammaa kohti. Siksi tulos tulee kilojouleina.
 **Sijoitus:** $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}030\,\text{kg} = 67{,}8\,\text{kJ}$
 **Vastaus:** $68\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}030\,\text{kg}$.
-**Järkevyys:** Arvio: $2300\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}03\,\text{kg} \approx 69\,\text{kJ}$. Tämä lämpömäärä lämmittäisi $0{,}3\,\text{kg}$ maitoa noin $\dfrac{67{,}8\,\text{kJ}}{4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}3\,\text{kg}} \approx 54\,\text{K}$, Pieni höyrymäärä lämmittää siis kannullisen maitoa. Samasta syystä höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.
+**Järkevyys:** Arvio: $2300\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}03\,\text{kg} \approx 69\,\text{kJ}$. Tämä lämpömäärä lämmittäisi $0{,}3\,\text{kg}$ maitoa noin $\dfrac{67{,}8\,\text{kJ}}{4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}3\,\text{kg}} \approx 54\,\text{K}$. Pieni höyrymäärä lämmittää siis kannullisen maitoa. Samasta syystä höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.
 
 ## fy3-7-L1-05
 **Annettu:** lämpenemiskäyrän vaakasuora osa $0\,{}^\circ\text{C}$:ssa alkaa energian kohdalta $E_1 = 19\,\text{kJ}$ ja päättyy kohtaan $E_2 = 186\,\text{kJ}$; jää lämpeni ensin $-18\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -52,7 +52,7 @@
 ## fy3-7-L2-01
 **Annettu:** $P = 2{,}0\,\text{kW}$, kiehuvasta vedestä höyrystyvä massa $m = 0{,}50\,\text{kg}$, kaikki levyn energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** aika $t$ minuutteina
-**Periaate:** Vesi kiehuu jo, joten sen lämpötila ei nouse Kaikki levyn energia $Pt$ kuluu höyrystämiseen, $Q = rm$. Häviöitä ei ole, joten energia säilyy ja $Pt = rm$.
+**Periaate:** Vesi kiehuu jo, joten sen lämpötila ei nouse. Kaikki levyn energia $Pt$ kuluu höyrystämiseen, $Q = rm$. Häviöitä ei ole, joten energia säilyy ja $Pt = rm$.
 **Kaava:** $Pt = rm$, josta $t = \dfrac{rm}{P}$
 **Muunnokset:** $P = 2{,}0\,\text{kW} = 2000\,\text{W}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$. Aika saadaan sekunteina. Se muunnetaan lopuksi minuuteiksi: $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}50\,\text{kg}}{2000\,\text{W}} = 565\,\text{s} = \dfrac{565}{60}\,\text{min} = 9{,}42\,\text{min}$
@@ -110,7 +110,7 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Muunnokset:** $T_2 - T_1 = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ ja $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}25\,\text{kg} = 565\,000\,\text{J}$, joten $\Delta T = \dfrac{648\,800\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{648\,800\,\text{J}}{24\,000\,\tfrac{\text{J}}{\text{K}}} = 27{,}03\,\text{K}$
 **Vastaus:** $27\,\text{K}$, kaksi merkitsevää numeroa kuten massassa $0{,}25\,\text{kg}$.
-**Järkevyys:** Höyrystyminen vie $\dfrac{565}{648{,}8} \approx 87\,\%$ energiasta ja lämpeneminen vain $13\,\%$, vaikka lämpötila nousee $80\,\text{K}$. Yhden kilogramman höyrystäminen vaatii saman energian kuin sen lämmittäminen noin $\dfrac{2260}{4{,}19} \approx 540\,\text{K}$. Kivien lämpökapasiteetti on $24\,000\,\tfrac{\text{J}}{\text{K}}$, Yksi kauhallinen jäähdyttää kiviä siis muutaman kymmenen kelviniä. Se sopii löylyn kokemukseen.
+**Järkevyys:** Höyrystyminen vie $\dfrac{565}{648{,}8} \approx 87\,\%$ energiasta ja lämpeneminen vain $13\,\%$, vaikka lämpötila nousee $80\,\text{K}$. Yhden kilogramman höyrystäminen vaatii saman energian kuin sen lämmittäminen noin $\dfrac{2260}{4{,}19} \approx 540\,\text{K}$. Kivien lämpökapasiteetti on $24\,000\,\tfrac{\text{J}}{\text{K}}$. Yksi kauhallinen jäähdyttää kiviä siis muutaman kymmenen kelviniä. Se sopii löylyn kokemukseen.
 
 ## fy3-7-L3-03
 **Annettu:** $P_1 = 800\,\text{W}$, $\Delta m_1 = 196\,\text{g}$; $P_2 = 400\,\text{W}$, $\Delta m_2 = 90{,}0\,\text{g}$; kummassakin $t = 10{,}0\,\text{min}$; vesi $100\,{}^\circ\text{C}$:ssa, joten ilmaan siirtyvä teho $P_\text{h}$ on sama

@@ -9,9 +9,9 @@
   ],
   "prerequisites": [],
   "glossary": [
-    "systeemi",
-    "tilanmuuttuja",
-    "paine",
+    "system",
+    "state variable",
+    "pressure",
     "temperature",
     "kelvin",
     "absolute zero"

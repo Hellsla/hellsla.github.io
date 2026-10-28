@@ -5,15 +5,15 @@
   "goals": [
     "LOPS FY3: mechanical work",
     "LOPS FY3: deepens their understanding of energy as a central concept of physics",
-    "Clarification: the law of work $W = Fs$ is defined on the basis of an experiment (Joule's experiment: mechanical work and the heat produced); graphical integration in the $(s,F)$ coordinate system"
+    "Clarification: the law of work W = Fs is defined on the basis of an experiment (Joule's experiment: mechanical work and the heat produced); graphical integration in the (s,F) coordinate system"
   ],
   "prerequisites": [
     "fy3-1"
   ],
   "glossary": [
     "work",
-    "energia",
-    "teho",
+    "energy",
+    "power",
     "joule"
   ],
   "sim": true,

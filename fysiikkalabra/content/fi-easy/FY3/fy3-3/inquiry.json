@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Kaasu nähdään termodynaamisena systeeminä. Sen tilaa kuvaavat lämpötila, paine ja tilavuus. Mikromalli selittää, että paine syntyy hiukkasten törmäyksistä ja että lämpötila kertoo hiukkasten keskimääräisen liike-energian. Siksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä.",
   "learn": [
-    "Osaat kuvata kaasun termodynaamisena systeeminä, jonka tilan kertovat lämpötila, paine ja tilavuus.",
+    "Osaat kuvata kaasun termodynaamisena systeeminä. Sen tilan kertovat lämpötila, paine ja tilavuus.",
     "Osaat selittää mikromallilla, mitä paine ja lämpötila ovat.",
     "Osaat perustella, miksi lämpötiloja verrataan kelvineinä absoluuttisesta nollapisteestä."
   ],
@@ -28,7 +28,7 @@
         {
           "text": "Renkaaseen tulee lisää ilmaa, ja ilma painaa renkaan seiniä sisältäpäin voimakkaammin.",
           "correct": true,
-          "feedback": "Juuri näin: kun samaan tilaan tuodaan lisää ilmaa, sen paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu saa saman ilman painamaan seiniä voimakkaammin."
+          "feedback": "Juuri näin. Kun samaan tilaan tuodaan lisää ilmaa, ilman paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu saa saman ilman painamaan seiniä voimakkaammin."
         },
         {
           "text": "Ilma puristuu renkaassa kokoon, joten sitä on lopulta vähemmän.",
@@ -36,7 +36,7 @@
         },
         {
           "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.",
-          "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta, joka painaa kumia ulospäin."
+          "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta. Ilma painaa kumia ulospäin."
         }
       ],
       "optional": true
@@ -64,7 +64,7 @@
         },
         {
           "text": "Paine pysyy samana, koska astiaan ei tule lisää kaasua.",
-          "feedback": "Hiukkasia on kokeessa koko ajan 80, mutta paine kasvaa silti 100:sta noin 200:aan. Paine ei riipu vain kaasun määrästä vaan myös siitä, kuinka nopeasti hiukkaset liikkuvat."
+          "feedback": "Hiukkasia on kokeessa koko ajan 80, mutta paine kasvaa silti 100:sta noin 200:aan. Paine ei riipu vain kaasun määrästä. Se riippuu myös siitä, kuinka nopeasti hiukkaset liikkuvat."
         },
         {
           "text": "Paine kasvaa samassa suhteessa kuin hiukkasten keskinopeus, noin 1,4-kertaiseksi.",
@@ -95,11 +95,11 @@
         },
         {
           "text": "Paine kaksinkertaistuu, koska ahtaassa tilassa hiukkaset liikkuvat nopeammin.",
-          "feedback": "Paine kaksinkertaistuu, mutta keskinopeus pysyy kokeessa lukemassa 1,00. Hiukkasten nopeus riippuu lämpötilasta, ei astian koosta. Pienemmässä astiassa samalla nopeudella liikkuvat hiukkaset vain osuvat seinään useammin."
+          "feedback": "Paine kaksinkertaistuu, mutta keskinopeus pysyy kokeessa lukemassa 1,00. Hiukkasten nopeus riippuu lämpötilasta, ei astian koosta. Pienemmässä astiassa hiukkaset liikkuvat samalla nopeudella. Ne vain osuvat seinään useammin."
         },
         {
           "text": "Paine pienenee, koska seinää, johon osua, on vähemmän.",
-          "feedback": "Kokeessa paine kasvaa 50:stä 100:aan. Seinää on vähemmän, mutta törmäyksiä seinän pituutta kohti on enemmän, koska hiukkaset palaavat seinälle nopeammin."
+          "feedback": "Kokeessa paine kasvaa 50:stä 100:aan. Seinää on vähemmän. Törmäyksiä seinän pituutta kohti on kuitenkin enemmän, koska hiukkaset palaavat seinälle nopeammin."
         }
       ],
       "optional": true
@@ -244,7 +244,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeiden tuloksiin ja mikromalliin. Palaa sitten alun kysymykseen: miksi pyörän rengas on kova auringossa ja pehmeä pakkasella, vaikka sen ilma on sama? Käytä selityksessäsi sanoja lämpötila, hiukkasten nopeus ja törmäykset.",
+      "prompt": "Vertaa ennusteitasi kokeiden tuloksiin ja mikromalliin. Palaa sitten alun kysymykseen. Miksi pyörän rengas on kova auringossa ja pehmeä pakkasella, vaikka sen ilma on sama? Käytä selityksessäsi sanoja lämpötila, hiukkasten nopeus ja törmäykset.",
       "predictions": [
         "pred-1",
         "pred-2",
@@ -265,7 +265,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Jäykässä suljetussa säiliössä kaasun paine on 120 kPa lämpötilassa 20 °C. Kaasu lämpenee 40 °C:seen. Opiskelija päättelee: ”Lämpötila kaksinkertaistuu, joten paine kaksinkertaistuu: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.” Missä on virhe?",
+      "prompt": "Säiliö on jäykkä ja suljettu. Säiliössä kaasun paine on 120 kPa lämpötilassa 20 °C. Kaasu lämpenee 40 °C:seen. Opiskelija päättelee: ”Lämpötila kaksinkertaistuu, joten paine kaksinkertaistuu: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.” Missä on virhe?",
       "choices": [
         {
           "text": "Paine ei muutu lainkaan, koska säiliön tilavuus pysyy samana.",
@@ -274,11 +274,11 @@
         {
           "text": "Lämpötilojen suhde pitää laskea kelvineinä: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}07$, joten paine on noin 128 kPa.",
           "correct": true,
-          "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan, ei celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste."
+          "feedback": "Oikein. Paine on suoraan verrannollinen kelvinlämpötilaan. Se ei ole verrannollinen celsiuslämpötilaan: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. Celsiusasteikon nollakohta on vain veden jäätymispiste."
         },
         {
           "text": "Paineeseen lisätään lämpötilan nousu: 120 kPa + 20 kPa = 140 kPa.",
-          "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila: noin 7 %, eli noin 128 kPa:iin."
+          "feedback": "Kelvinejä tai celsiusasteita ei voi lisätä kilopascaleihin, koska ne ovat eri suureita. Paine muuttuu samassa suhteessa kuin kelvinlämpötila. Muutos on noin 7 %, eli paine nousee noin 128 kPa:iin."
         },
         {
           "text": "Päättelyssä ei ole virhettä.",
@@ -298,20 +298,20 @@
       "tolerance": 0.02,
       "hints": [
         "Mitkä tilanmuuttujat pysyvät samoina ja mitkä muuttuvat? Millä asteikolla lämpötilojen suhde pitää laskea?",
-        "Kun tilavuus ja aineen määrä pysyvät samoina, paine on suoraan verrannollinen kelvinlämpötilaan: $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, eli $p_2 = p_1 \\dfrac{T_2}{T_1}$.",
+        "Tilavuus ja aineen määrä pysyvät samoina. Silloin paine on suoraan verrannollinen kelvinlämpötilaan: $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, eli $p_2 = p_1 \\dfrac{T_2}{T_1}$.",
         "Muunna ensin: $T_1 = 293{,}15\\,\\text{K}$ ja $T_2 = 353{,}15\\,\\text{K}$. Sijoita: $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}}$."
       ],
       "mistakes": [
         {
           "value": 404,
-          "feedback": "Laskit lämpötilojen suhteen celsiusasteina, $80/20 = 4$. Paine on verrannollinen kelvinlämpötilaan: suhde on $353\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}20$."
+          "feedback": "Laskit lämpötilojen suhteen celsiusasteina, $80/20 = 4$. Paine on kuitenkin verrannollinen kelvinlämpötilaan. Oikea suhde on $353\\,\\text{K} / 293\\,\\text{K} \\approx 1{,}20$."
         },
         {
           "value": 83.8,
           "feedback": "Suhde on väärin päin: paine pieneni, vaikka ilma lämpeni. Lämpimämmässä ilmassa hiukkaset liikkuvat nopeammin. Siksi paineen pitää kasvaa: $p_2 = p_1 \\cdot T_2/T_1$."
         }
       ],
-      "solution": "**Annettu:** ilma suljetussa purkissa, $\\theta_1 = 20\\,{}^\\circ\\text{C}$, $p_1 = 101\\,\\text{kPa}$, $\\theta_2 = 80\\,{}^\\circ\\text{C}$; purkin tilavuus ja ilman määrä pysyvät samoina\n\n**Kysytty:** ilman paine $p_2$ kilopascaleina\n\n**Periaate:** Tilavuus ja ilman määrä ovat vakiot, joten paine on suoraan verrannollinen kelvinlämpötilaan: lämpimämmän ilman hiukkaset liikkuvat nopeammin ja törmäävät seinään useammin ja kovemmin. Verrannollisuus ei päde celsiuslämpötilaan.\n\n**Kaava:** $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, josta\n\n$$p_2 = p_1\\,\\frac{T_2}{T_1}$$\n\n**Muunnokset:** Lämpötilat muutetaan kelvineiksi: $T_1 = 20 + 273{,}15 = 293{,}15\\,\\text{K}$ ja $T_2 = 80 + 273{,}15 = 353{,}15\\,\\text{K}$. Paine pysyy kilopascaleina.\n\n**Sijoitus:** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} = 121{,}67\\,\\text{kPa}$\n\n**Vastaus:** $122\\,\\text{kPa}$, kolme merkitsevää numeroa kuten paineessa $101\\,\\text{kPa}$.\n\n**Järkevyys:** Kelvinlämpötila nousee $60\\,\\text{K}$ eli noin $\\dfrac{60}{293} \\approx 20\\,\\%$, joten paine nousee noin $0{,}20 \\cdot 101\\,\\text{kPa} \\approx 21\\,\\text{kPa}$, ja $101 + 21 \\approx 122\\,\\text{kPa}$. Lämpötila nousee, joten paineen pitää kasvaa. Celsiusasteiden suhde $\\tfrac{80}{20} = 4$ antaisi kohtuuttoman $404\\,\\text{kPa}$. Purkin paine on suurempi kuin ulkoilman $101\\,\\text{kPa}$, joten kansi painuu ulospäin.",
+      "solution": "**Annettu:** ilma suljetussa purkissa, $\\theta_1 = 20\\,{}^\\circ\\text{C}$, $p_1 = 101\\,\\text{kPa}$, $\\theta_2 = 80\\,{}^\\circ\\text{C}$. Purkin tilavuus ja ilman määrä pysyvät samoina\n\n**Kysytty:** ilman paine $p_2$ kilopascaleina\n\n**Periaate:** Tilavuus ja ilman määrä ovat vakiot (ne eivät muutu). Siksi paine on suoraan verrannollinen kelvinlämpötilaan. Lämpimämmän ilman hiukkaset liikkuvat nopeammin. Ne törmäävät seinään useammin ja kovemmin. Verrannollisuus ei päde celsiuslämpötilaan.\n\n**Kaava:** $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, josta\n\n$$p_2 = p_1\\,\\frac{T_2}{T_1}$$\n\n**Muunnokset:** Lämpötilat muutetaan kelvineiksi: $T_1 = 20 + 273{,}15 = 293{,}15\\,\\text{K}$ ja $T_2 = 80 + 273{,}15 = 353{,}15\\,\\text{K}$. Paine pysyy kilopascaleina.\n\n**Sijoitus:** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} = 121{,}67\\,\\text{kPa}$\n\n**Vastaus:** $122\\,\\text{kPa}$. Vastauksessa on kolme merkitsevää numeroa, kuten paineessa $101\\,\\text{kPa}$.\n\n**Järkevyys:** Kelvinlämpötila nousee $60\\,\\text{K}$ eli noin $\\dfrac{60}{293} \\approx 20\\,\\%$. Siksi paine nousee noin $0{,}20 \\cdot 101\\,\\text{kPa} \\approx 21\\,\\text{kPa}$. Tarkistus: $101 + 21 \\approx 122\\,\\text{kPa}$. Lämpötila nousee, joten paineen pitää kasvaa. Celsiusasteiden suhde $\\tfrac{80}{20} = 4$ antaisi liian suuren paineen $404\\,\\text{kPa}$. Purkin paine on suurempi kuin ulkoilman paine $101\\,\\text{kPa}$. Siksi kansi painuu ulospäin.",
       "optional": true
     },
     {
@@ -329,12 +329,12 @@
       "choices": [
         {
           "text": "Hiukkaset ovat pysähtyneet, koska lämpötila on nolla.",
-          "feedback": "0 °C on vain veden jäätymispiste. Kelvineinä se on 273 K, joten hiukkaset liikkuvat. Hiukkasten liike on pienimmillään vasta absoluuttisessa nollapisteessä 0 K = −273,15 °C."
+          "feedback": "0 °C on vain veden jäätymispiste. Kelvineinä se on 273 K. Siksi hiukkaset liikkuvat. Hiukkasten liike on pienimmillään vasta absoluuttisessa nollapisteessä 0 K = −273,15 °C."
         },
         {
           "text": "Hiukkaset liikkuvat, ja niiden keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan 273 K.",
           "correct": true,
-          "feedback": "Oikein. 0 °C = 273,15 K on kaukana absoluuttisesta nollapisteestä, ja hiukkasten keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan."
+          "feedback": "Oikein. 0 °C = 273,15 K on kaukana absoluuttisesta nollapisteestä. Hiukkasten keskimääräinen liike-energia on verrannollinen kelvinlämpötilaan."
         },
         {
           "text": "Hiukkaset ovat jäätyneet kiinni toisiinsa kuten vesi jäässä.",
@@ -357,30 +357,30 @@
       "tolerance": 0.02,
       "hints": [
         "Kuinka paljon paine muuttuu, kun lämpötila nousee yhden celsiusasteen?",
-        "Kulmakerroin on $k = \\dfrac{\\Delta p}{\\Delta \\theta}$, ja paine on nolla, kun se on pienentynyt arvosta 100 nollaan: $\\theta_0 = 27\\,\\text{°C} - \\dfrac{100}{k}$.",
+        "Kulmakerroin on $k = \\dfrac{\\Delta p}{\\Delta \\theta}$, Paine on nolla, kun se on pienentynyt arvosta 100 nollaan: $\\theta_0 = 27\\,\\text{°C} - \\dfrac{100}{k}$.",
         "$k = \\dfrac{150 - 50}{177\\,\\text{°C} - (-123\\,\\text{°C})} = \\dfrac{100}{300\\,\\text{°C}}$, joten 100 yksikön pudotukseen tarvitaan 300 °C."
       ],
       "mistakes": [
         {
           "value": 0,
-          "feedback": "0 °C on veden jäätymispiste, ei nollapaineen lämpötila: taulukossa paine on vielä −123 °C:ssa 50. Jatka suoraa vasemmalle niin pitkälle, että paine putoaa nollaan."
+          "feedback": "0 °C on veden jäätymispiste. Se ei ole nollapaineen lämpötila. Taulukossa paine on vielä −123 °C:ssa 50. Jatka suoraa vasemmalle niin pitkälle, että paine putoaa nollaan."
         },
         {
           "value": -123,
-          "feedback": "−123 °C on taulukon alin lämpötila, mutta siinä paine on vielä 50. Paine putoaa 50 yksikköä jokaista 150 °C:n laskua kohti, joten nollaan päästään vasta 150 °C alempana."
+          "feedback": "−123 °C on taulukon alin lämpötila, mutta siinä paine on vielä 50. Paine putoaa 50 yksikköä, kun lämpötila laskee 150 °C. Siksi nollaan päästään vasta 150 °C alempana."
         }
       ],
-      "solution": "**Annettu:** pisteet $(-123\\,{}^\\circ\\text{C};\\ 50)$, $(27\\,{}^\\circ\\text{C};\\ 100)$ ja $(177\\,{}^\\circ\\text{C};\\ 150)$ samalla suoralla; $p$ on suhteellinen luku ilman yksikköä\n\n**Kysytty:** lämpötila $\\theta_0$, jossa $p = 0$, celsiusasteina\n\n**Periaate:** Pisteet ovat samalla suoralla, joten paine muuttuu lämpötilan mukana tasaisesti. Kun suoraa jatketaan alaspäin mittausalueen ulkopuolelle eli ekstrapoloidaan, nollapaine löytyy kohdasta, jossa suora leikkaa lämpötila-akselin.\n\n**Kuvaajan lukeminen:** Taulukosta luetaan kaksi pistettä, esimerkiksi päätepisteet $(-123\\,{}^\\circ\\text{C};\\ 50)$ ja $(177\\,{}^\\circ\\text{C};\\ 150)$. Kolmas piste $(27\\,{}^\\circ\\text{C};\\ 100)$ on samalla suoralla, joten malli on lineaarinen. Suoraa jatketaan vasemmalle, kunnes $p = 0$.\n\n**Kaava:** $k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1}$ ja suora $p = p_a + k(\\theta - \\theta_a)$ pisteen $(\\theta_a,\\, p_a) = (27\\,{}^\\circ\\text{C};\\ 100)$ kautta. Kun $p = 0$:\n\n$$\\theta_0 = \\theta_a - \\frac{p_a}{k}$$\n\n**Muunnokset:** Muunnoksia ei tarvita: lämpötilaero $\\theta_2 - \\theta_1$ on sama celsiusasteina ja kelvineinä, ja tulos halutaan celsiusasteina. Kulmakertoimen yksikkö on $\\tfrac{1}{{}^\\circ\\text{C}}$.\n\n**Sijoitus:** $k = \\dfrac{150 - 50}{(177 - (-123))\\,{}^\\circ\\text{C}} = \\dfrac{100}{300\\,{}^\\circ\\text{C}} = \\dfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}$, ja $\\theta_0 = 27\\,{}^\\circ\\text{C} - \\dfrac{100}{\\tfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}} = 27\\,{}^\\circ\\text{C} - 300\\,{}^\\circ\\text{C} = -273\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $-273\\,{}^\\circ\\text{C}$, kolme merkitsevää numeroa kuten taulukon lämpötiloissa.\n\n**Järkevyys:** Paine laskee $50$ yksikköä jokaista $150\\,{}^\\circ\\text{C}$ kohti, joten pisteestä $(-123\\,{}^\\circ\\text{C};\\ 50)$ nollaan on vielä $150\\,{}^\\circ\\text{C}$: $-123 - 150 = -273\\,{}^\\circ\\text{C}$. Tulos on absoluuttinen nollapiste $-273{,}15\\,{}^\\circ\\text{C}$ eli $0\\,\\text{K}$, koska mallissa paine on verrannollinen kelvinlämpötilaan."
+      "solution": "**Annettu:** pisteet $(-123\\,{}^\\circ\\text{C};\\ 50)$, $(27\\,{}^\\circ\\text{C};\\ 100)$ ja $(177\\,{}^\\circ\\text{C};\\ 150)$ samalla suoralla. $p$ on suhteellinen luku, jolla ei ole yksikköä.\n\n**Kysytty:** lämpötila $\\theta_0$, jossa $p = 0$, celsiusasteina\n\n**Periaate:** Pisteet ovat samalla suoralla. Siksi paine muuttuu lämpötilan mukana tasaisesti. Suoraa jatketaan alaspäin mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi. Nollapaine on kohdassa, jossa suora leikkaa lämpötila-akselin.\n\n**Kuvaajan lukeminen:** Taulukosta luetaan kaksi pistettä, esimerkiksi päätepisteet $(-123\\,{}^\\circ\\text{C};\\ 50)$ ja $(177\\,{}^\\circ\\text{C};\\ 150)$. Kolmas piste $(27\\,{}^\\circ\\text{C};\\ 100)$ on samalla suoralla. Siksi malli on lineaarinen. Suoraa jatketaan vasemmalle, kunnes $p = 0$.\n\n**Kaava:** $k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1}$ ja suora $p = p_a + k(\\theta - \\theta_a)$ pisteen $(\\theta_a,\\, p_a) = (27\\,{}^\\circ\\text{C};\\ 100)$ kautta. Kun $p = 0$:\n\n$$\\theta_0 = \\theta_a - \\frac{p_a}{k}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Lämpötilaero $\\theta_2 - \\theta_1$ on sama celsiusasteina ja kelvineinä. Tulos halutaan celsiusasteina. Kulmakertoimen yksikkö on $\\tfrac{1}{{}^\\circ\\text{C}}$.\n\n**Sijoitus:** $k = \\dfrac{150 - 50}{(177 - (-123))\\,{}^\\circ\\text{C}} = \\dfrac{100}{300\\,{}^\\circ\\text{C}} = \\dfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}$, ja $\\theta_0 = 27\\,{}^\\circ\\text{C} - \\dfrac{100}{\\tfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}} = 27\\,{}^\\circ\\text{C} - 300\\,{}^\\circ\\text{C} = -273\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $-273\\,{}^\\circ\\text{C}$. Vastauksessa on kolme merkitsevää numeroa, kuten taulukon lämpötiloissa.\n\n**Järkevyys:** Paine laskee $50$ yksikköä jokaista $150\\,{}^\\circ\\text{C}$ kohti. Pisteestä $(-123\\,{}^\\circ\\text{C};\\ 50)$ nollaan on vielä $150\\,{}^\\circ\\text{C}$: $-123 - 150 = -273\\,{}^\\circ\\text{C}$. Tulos on absoluuttinen nollapiste $-273{,}15\\,{}^\\circ\\text{C}$ eli $0\\,\\text{K}$. Syy on se, että mallissa paine on verrannollinen kelvinlämpötilaan."
     },
     {
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä",
-      "prompt": "Selitä mikromallin avulla, miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina ja miksi kelvinlämpötila ei voi olla negatiivinen.",
+      "prompt": "Selitä mikromallin avulla kaksi asiaa. Miksi lämpötilojen suhteita verrataan kelvineinä eikä celsiusasteina? Miksi kelvinlämpötila ei voi olla negatiivinen?",
       "criteria": [
         "Sanon, että lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta.",
-        "Sanon, että kelvinasteikon nollakohta on absoluuttinen nollapiste, jossa liike-energia on pienimmillään, mutta celsiusasteikon nollakohta on vain veden jäätymispiste.",
+        "Sanon, että kelvinasteikon nollakohta on absoluuttinen nollapiste. Siinä liike-energia on pienimmillään. Celsiusasteikon nollakohta on vain veden jäätymispiste.",
         "Perustelen, miksi suhde lasketaan kelvineinä: liike-energia ja paine ovat verrannollisia kelvinlämpötilaan.",
         "Käytän esimerkkiä tai lukuja oikein, esimerkiksi 10 °C → 20 °C on kelvineinä 283 K → 293 K."
       ],

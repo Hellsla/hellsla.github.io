@@ -19,10 +19,10 @@
 **Reasonableness:** The slope is positive because the pressure increases as the temperature rises. Check: $105.0\,\text{kPa} + 0.36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 60.0\,{}^\circ\text{C} = 127.0\,\text{kPa}$. The value is of the same order of magnitude as in the other experiments in this chapter ($0.36\ldots 0.39\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$).
 
 ## fy3-13-L1-03
-**Given:** the group's result $\theta_0 = -267.90\,{}^\circ\text{C}$ and the accepted value $\theta_\text{h} = -273.15\,{}^\circ\text{C}$
+**Given:** the group's result $\theta_0 = -267.90\,{}^\circ\text{C}$ and the accepted value $\theta_\text{acc} = -273.15\,{}^\circ\text{C}$
 **Find:** the deviation $d$ in degrees Celsius
 **Principle:** The error of a measurement result is its distance from the accepted value. A distance is always a positive number, whether the result is above or below the accepted value, so you take the absolute value of the difference.
-**Formula:** $d = |\theta_0 - \theta_\text{h}|$
+**Formula:** $d = |\theta_0 - \theta_\text{acc}|$
 **Conversions:** Both values are in degrees Celsius on the same scale. The difference of temperatures is the same in degrees Celsius and in kelvins, so no conversions are needed.
 **Substitution:** $d = |-267.90\,{}^\circ\text{C} - (-273.15\,{}^\circ\text{C})| = |5.25\,{}^\circ\text{C}| = 5.25\,{}^\circ\text{C}$
 **Answer:** $5.25\,{}^\circ\text{C}$, three significant figures, because both temperatures, $-267.90\,{}^\circ\text{C}$ and $-273.15\,{}^\circ\text{C}$, are given to the hundredth, and the difference has as many decimals as the least precise number.
@@ -109,10 +109,10 @@
 **Reasonableness:** The temperature $77.0\,\text{K}$ is about $0.28$ times the temperature $273.15\,\text{K}$, and the pressure is in the same proportion: about $0.28 \cdot 100 = 28\,\text{kPa}$. At the temperature $67\,\text{K}$ the line would give a pressure of $100 \cdot 67/273.15 = 24.5\,\text{kPa}$, but in reality the gas has already liquefied there. So extrapolation is reliable only as far as the assumption of a gas holds true.
 
 ## fy3-13-L3-03
-**Given:** group A's result $\theta_0 = -262.00\,{}^\circ\text{C}$ and uncertainty $\Delta\theta_0 = 6.00\,{}^\circ\text{C}$; the accepted value $\theta_\text{h} = -273.15\,{}^\circ\text{C}$
+**Given:** group A's result $\theta_0 = -262.00\,{}^\circ\text{C}$ and uncertainty $\Delta\theta_0 = 6.00\,{}^\circ\text{C}$; the accepted value $\theta_\text{acc} = -273.15\,{}^\circ\text{C}$
 **Find:** the ratio $n$ of the deviation to the uncertainty (how many times $\Delta\theta_0$ fits between the result and the accepted value) and the reason for the disagreement
 **Principle:** A result agrees with the accepted value if the value lies in the uncertainty interval $\theta_0 \pm \Delta\theta_0$, that is, when the deviation is at most one uncertainty. The ratio $n$ tells you how much the deviation exceeds this limit.
-**Formula:** $n = \dfrac{|\theta_0 - \theta_\text{h}|}{\Delta\theta_0}$
+**Formula:** $n = \dfrac{|\theta_0 - \theta_\text{acc}|}{\Delta\theta_0}$
 **Conversions:** All temperatures are in degrees Celsius, and temperature differences are the same in kelvins. The ratio $n$ is dimensionless, so no conversions are needed.
 **Substitution:** $n = \dfrac{|-262.00\,{}^\circ\text{C} - (-273.15\,{}^\circ\text{C})|}{6.00\,{}^\circ\text{C}} = \dfrac{11.15\,{}^\circ\text{C}}{6.00\,{}^\circ\text{C}} = 1.858$
 **Answer:** $1.86$ times, three significant figures, because the difference $11.15\,{}^\circ\text{C}$ and the uncertainty $6.00\,{}^\circ\text{C}$ are given to three figures (the result $-262.00\,{}^\circ\text{C}$ and the accepted value are given to the hundredth).

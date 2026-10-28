@@ -237,11 +237,11 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Eristettyyn astiaan sekoitetaan 0,80 kg jäätä (0 °C) ja 0,60 kg vettä (25 °C). Opiskelija laskee lopputilan painotettuna keskiarvona: $T = \\dfrac{0{,}80 \\cdot 0 + 0{,}60 \\cdot 25}{0{,}80 + 0{,}60}\\,{}^\\circ\\text{C} \\approx 10{,}7\\,{}^\\circ\\text{C}$. Missä on virhe?",
+      "prompt": "Eristettyyn astiaan sekoitetaan 0,80 kg jäätä (0 °C) ja 0,60 kg vettä (25 °C). Opiskelija laskee lopputilan lämpötilan painotettuna keskiarvona: $T = \\dfrac{0{,}80 \\cdot 0 + 0{,}60 \\cdot 25}{0{,}80 + 0{,}60}\\,{}^\\circ\\text{C} \\approx 10{,}7\\,{}^\\circ\\text{C}$. Missä on virhe?",
       "choices": [
         {
           "text": "Lämpötilat pitäisi muuttaa kelvineiksi ennen keskiarvon laskemista.",
-          "feedback": "Painotettu keskiarvo antaa saman tuloksen kelvineinä ja celsiusasteina, koska asteikot eroavat vain vakiolla. Virhe on muualla: laskussa ei ole jään sulamista."
+          "feedback": "Painotettu keskiarvo antaa saman tuloksen kelvineinä ja celsiusasteina. Asteikot eroavat nimittäin vain vakiolla. Virhe on muualla: laskussa ei ole jään sulamista."
         },
         {
           "text": "Laskussa ei huomioitu jään sulamista. Vesi voi luovuttaa vain $4190 \\cdot 0{,}60 \\cdot 25\\,\\text{J} \\approx 63\\,\\text{kJ}$. Kaiken jään sulattaminen vaatisi $334\\,\\text{kJ/kg} \\cdot 0{,}80\\,\\text{kg} \\approx 267\\,\\text{kJ}$. Jää sulaa vain osittain, ja lämpötila on 0 °C.",

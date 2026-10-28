@@ -2,7 +2,7 @@
 
 > **Miksi** pyörän rengas tuntuu kovemmalta kuumana kesäpäivänä kuin pakkasella, vaikka renkaaseen ei pumpata lisää ilmaa?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: polkupyörä seisoo kuumalla asfaltilla kesähelteellä. Aurinko paistaa, asfaltin yllä väreilee kuumuus ja tolpan lämpömittarin punainen pylväs on korkealla." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: polkupyörä seisoo kuumalla asfaltilla. On helteinen kesäpäivä. Aurinko paistaa, ja kuumuus väreilee asfaltin yllä. Tolpassa on lämpömittari, ja sen punainen pylväs on korkealla." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy33h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy33h-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="430" fill="url(#fy33h-sky)"/>
   <circle cx="1020" cy="110" r="93" fill="#ffffff" fill-opacity="0.5"/>
@@ -124,7 +124,7 @@
 ## Ydinajatus
 Kun tutkit ilmiötä, rajaat tutkittavan osan erilleen muusta maailmasta. Rajattu osa on termodynaaminen systeemi. Kaikki sen ulkopuolella on ympäristö. Pyörän renkaan ilma on esimerkki systeemistä. Jos systeemistä ei pääse ainetta ulos eikä sisään, systeemi on suljettu. Systeemin tilaa kuvataan tilanmuuttujilla. Tilanmuuttujia ovat lämpötila, paine ja tilavuus sekä aineen määrä. Paine on voima pinta-alaa kohti. Paineen yksikkö on pascal (Pa), ja 1 kPa = 1000 Pa. Paineeseen tutustutaan tarkemmin myöhemmin. Kun muutat kaasusysteemissä yhtä tilanmuuttujaa, vähintään yksi muista muuttuu myös.
 
-<svg data-fig="system" viewBox="0 0 600 340" role="img" aria-label="Periaatekuva, ei mittakaavassa: kaasua sylinterissä, jonka yläpäätä sulkee liikkuva mäntä. Kaasu on termodynaaminen systeemi; sen rajapinta on piirretty katkoviivalla kaasun ympärille. Sylinterin seinät, mäntä ja koko muu maailma ovat ympäristöä. Systeemin tilaa kuvaavat tilanmuuttujat: paine p, tilavuus V ja lämpötila T." style="max-width:100%;font-size:24px">
+<svg data-fig="system" viewBox="0 0 600 340" role="img" aria-label="Periaatekuva, ei mittakaavassa. Kaasu on sylinterissä. Sylinterin yläpään sulkee mäntä, joka voi liikkua. Kaasu on termodynaaminen systeemi. Systeemin rajapinta on piirretty katkoviivalla kaasun ympärille. Sylinterin seinät, mäntä ja koko muu maailma ovat ympäristöä. Systeemin tilaa kuvaavat tilanmuuttujat: paine p, tilavuus V ja lämpötila T." style="max-width:100%;font-size:24px">
   <rect x="138" y="150" width="204" height="140" fill="#eef5f9"/>
   <path d="M126,110 V302 H354 V110 H342 V290 H138 V110 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <rect x="138" y="128" width="204" height="22" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
@@ -169,7 +169,7 @@ Kun tutkit ilmiötä, rajaat tutkittavan osan erilleen muusta maailmasta. Rajatt
 
 Miksi näin käy? Sen selittää aineen mikromalli. Kaasu koostuu hiukkasista. Hiukkaset liikkuvat jatkuvasti joka suuntaan. Ne törmäilevät toisiinsa ja astian seinämiin. Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Mitä kuumempaa kaasu on, sitä nopeammin hiukkaset liikkuvat keskimäärin. Paine syntyy, kun hiukkaset törmäävät seinämään. Jokainen törmäys työntää seinää hieman. Oletetaan, että tilavuus pienenee ja lämpötila pysyy samana. Silloin hiukkasilla on vähemmän tilaa, ja ne osuvat seinään useammin. Siksi paine kasvaa, mutta yksittäinen törmäys ei muutu kovemmaksi. Oletetaan sitten, että lämpötila nousee mutta tilavuus pysyy samana. Silloin hiukkaset osuvat seinään sekä useammin että kovempaa. Siksi paine kasvaa. Tästä syystä rengas tuntuu kesällä kovemmalta.
 
-<svg data-fig="micro-model" viewBox="0 0 600 300" role="img" aria-label="Kaaviokuva kaasun mikromallista: kaksi samankokoista suljettua astiaa, joissa on yhtä monta hiukkasta. Kylmässä kaasussa nopeutta kuvaavat nuolet ovat lyhyitä, kuumassa pitkiä, ja kuuman kaasun paine p2 on suurempi kuin kylmän kaasun paine p1." style="max-width:100%;font-size:24px">
+<svg data-fig="micro-model" viewBox="0 0 600 300" role="img" aria-label="Kaaviokuva kaasun mikromallista. Kuvassa on kaksi suljettua astiaa. Astiat ovat yhtä suuret, ja niissä on yhtä monta hiukkasta. Nuolet kuvaavat hiukkasten nopeutta. Kylmässä kaasussa nuolet ovat lyhyitä. Kuumassa kaasussa nuolet ovat pitkiä. Kuuman kaasun paine p2 on suurempi kuin kylmän kaasun paine p1." style="max-width:100%;font-size:24px">
   <foreignObject x="88.5" y="25.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kylmä kaasu}$</div></foreignObject>
   <rect x="40" y="62" width="230" height="180" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="378.5" y="25.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuuma kaasu}$</div></foreignObject>
@@ -227,7 +227,7 @@ Tässä $T$ on lämpötila kelvineinä (K) ja $\theta$ on lämpötila celsiusast
 
 Absoluuttinen nollapiste on siis 0 K = −273,15 °C. Kelvinlämpötila ei voi olla negatiivinen. Celsiuslämpötila voi olla negatiivinen.
 
-<svg data-fig="kelvin-scale" viewBox="0 0 600 250" role="img" aria-label="Kelvinasteikko ja celsiusasteikko rinnakkain mittakaavassa: 0 K on −273,15 °C (absoluuttinen nollapiste), 273,15 K on 0 °C (vesi jäätyy) ja 373,15 K on 100 °C (vesi kiehuu). Asteikkojen välit ovat yhtä suuret, ja kelvinlukema saadaan lisäämällä celsiuslukemaan 273,15." style="max-width:100%;font-size:24px">
+<svg data-fig="kelvin-scale" viewBox="0 0 600 250" role="img" aria-label="Kelvinasteikko ja celsiusasteikko rinnakkain mittakaavassa. 0 K on −273,15 °C (absoluuttinen nollapiste). 273,15 K on 0 °C (vesi jäätyy). 373,15 K on 100 °C (vesi kiehuu). Asteikkojen välit ovat yhtä suuret. Kelvinlukema saadaan, kun celsiuslukemaan lisätään 273,15." style="max-width:100%;font-size:24px">
   <line x1="58" y1="112" x2="533" y2="112" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M545,112 L532,118 L532,106 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="58" y1="182" x2="533" y2="182" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -270,7 +270,7 @@ Määritä ekstrapoloimalla lämpötila, jossa kaasun paine olisi nolla.
 
 **Tunnetut ja kysytty.** Taulukossa on kuusi mittapistettä $(\theta,\, p)$. Paine on $p_0 = 100\,\text{kPa}$ lämpötilassa $0\,{}^\circ\text{C}$. Kysytään lämpötilaa $\theta_0$, jossa paine olisi nolla. Pisteet ovat kuvaajassa suoralla. Paine kasvaa jokaista $20\,{}^\circ\text{C}$ kohti $7$–$8\,\text{kPa}$. Suoraa jatketaan vasemmalle, mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.
 
-<svg data-fig="extrapolation" viewBox="0 0 600 350" role="img" aria-label="Kaasun paine lämpötilan funktiona suljetussa astiassa: mittapisteet lämpötila-alueella 0–100 °C asettuvat suoralle, ja ekstrapoloitu suora kohtaa nollapaineen lämpötilassa noin −270 °C. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C." style="max-width:100%;font-size:24px">
+<svg data-fig="extrapolation" viewBox="0 0 600 350" role="img" aria-label="Kuvaaja näyttää, miten kaasun paine riippuu lämpötilasta suljetussa astiassa. Mittapisteet ovat lämpötila-alueella 0–100 °C, ja ne ovat suoralla. Suoraa on jatkettu eli ekstrapoloitu. Jatkettu suora kohtaa nollapaineen noin −270 °C:ssa. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C." style="max-width:100%;font-size:24px">
   <line x1="120.5" y1="290" x2="120.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="186.5" y1="290" x2="186.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="281" y1="290" x2="281" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -376,7 +376,7 @@ Moni ajattelee, että lämpötila kaksinkertaistuu, kun se nousee 10 °C:sta 20 
 - Kun tilavuus ja aineen määrä pysyvät samoina, paine on suoraan verrannollinen kelvinlämpötilaan. Mittapisteiden suoran jatkaminen eli ekstrapolointi antaa absoluuttisen nollapisteen.
 - Muunnos on $T = \theta + 273{,}15$. Absoluuttinen nollapiste on 0 K = −273,15 °C.
 
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama polkupyörä lumisena pakkasaamuna. Lunta on maassa ja satulalla, ja tolpan lämpömittarin pylväs on matalalla." style="max-width:100%;font-size:24px">
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sama polkupyörä on ulkona lumisena pakkasaamuna. Maassa ja satulalla on lunta. Tolpan lämpömittarin pylväs on matalalla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy33s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="360" fill="url(#fy33s-sky)"/>
   <path d="M0,240 L10,214 L20,240 L30,214.5 L40,240 L56,192.5 L72.5,240 L85.5,202.5 L99,240 L114,195.5 L129.5,240 L141.5,207 L153.5,240 L168.5,197 L183.5,240 L193,216 L202.5,240 L218,194.5 L234,240 L250,192 L266.5,240 L277,213.5 L287,240 L303.5,192.5 L319.5,240 L329.5,215 L339.5,240 L352.5,203 L366,240 L382,192.5 L398,240 L411.5,202 L425,240 L439.5,198.5 L454,240 L470,194.5 L485.5,240 L500,197.5 L515,240 L531.5,190.5 L548.5,240 L559,211.5 L570,240 L584.5,199 L598.5,240 L609,213 L619.5,240 L629,215.5 L639,240 L653,200.5 L667,240 L682,196.5 L697,240 L712,195.5 L727.5,240 L738,212.5 L748.5,240 L760,209 L771.5,240 L783,210 L794,240 L803.5,217 L812.5,240 L823.5,211 L834.5,240 L847.5,203.5 L861,240 L873,206 L885.5,240 L898.5,203.5 L911.5,240 L926.5,197.5 L941.5,240 L952.5,210 L964,240 L980,192 L996.5,240 L1006.5,215 L1016,240 L1029,204.5 L1042,240 L1054,207 L1066,240 L1079,203.5 L1092,240 L1106,199 L1120.5,240 L1130.5,215 L1140.5,240 L1151.5,209.5 L1163,240 L1173,213.5 L1183.5,240 L1193,216.5 L1202,240 V270 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>

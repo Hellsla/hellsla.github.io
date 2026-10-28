@@ -79,7 +79,7 @@
     {
       "id": "fy3-14-L3-01",
       "level": 3,
-      "text": "A thermos jug contains 0.600 kg of water at 35.0 °C. Ice taken from the freezer at −20 °C is to be added to the water, so much that the ice melts exactly completely and the temperature of the mixture becomes 0 °C. How many grams of ice are needed? Give the answer in grams.",
+      "text": "A thermos jug contains 0.600 kg of water at 35.0 °C. Ice taken from the freezer at −20 °C is to be added to the water. The amount of ice is chosen so that the ice melts exactly completely and the temperature of the mixture becomes 0 °C. How many grams of ice are needed? Give the answer in grams.",
       "answer": 234,
       "unit": "g",
       "tolerance": 0.02

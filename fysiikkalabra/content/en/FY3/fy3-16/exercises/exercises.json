@@ -79,7 +79,7 @@
     {
       "id": "fy3-16-L3-01",
       "level": 3,
-      "text": "A stove contains 25 kg of stones ($c = 800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). 0.20 kg of water at 20 °C is thrown on the stones, and it warms to 100 °C and vaporises completely. Assume that all the energy needed is taken from the stones and that the warming of the steam is not taken into account. By how many kelvins does the temperature of the stones drop?",
+      "text": "A sauna stove contains 25 kg of stones ($c = 800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). 0.20 kg of water at 20 °C is thrown on the stones, and it warms to 100 °C and vaporises completely. Assume that all the energy needed is taken from the stones and that the warming of the steam is not taken into account. By how many kelvins does the temperature of the stones drop?",
       "answer": 26,
       "unit": "K",
       "tolerance": 0.02

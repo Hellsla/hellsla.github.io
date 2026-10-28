@@ -381,7 +381,7 @@
       "tolerance": 0.02,
       "hints": [
         "Into which three parts is the fuel power divided?",
-        "Energy is conserved: $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$. Solve $P_\\text{k}$ from this.",
+        "Energy is conserved: $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$. Solve this for $P_\\text{k}$.",
         "$P_\\text{k} = P_0 - P_\\text{s} - P_\\text{h}$."
       ],
       "mistakes": [

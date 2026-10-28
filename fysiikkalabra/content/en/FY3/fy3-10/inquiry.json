@@ -80,7 +80,7 @@
       "id": "punnitus",
       "stage": "tutki",
       "type": "interpret",
-      "title": "Weigh the balloons",
+      "title": "Weigh the flasks",
       "text": "A thin-walled 5.00 litre glass flask is weighed first pumped empty and then filled with different gases. Each time the gas pressure is 101 kPa and the temperature is 20 °C. A mole is always the same, a certain number of particles, and the molar mass $M$ is the mass of one mole. The table shows the masses of the gases (*example values* with the usual scatter of weighing, about ±0.02 g) and the molar masses.\n\n| gas | $m$ (g) | $M$ (g/mol) |\n|---|---|---|\n| helium He | 0.83 | 4.00 |\n| nitrogen N₂ | 5.78 | 28.0 |\n| air | 6.02 | 29.0 |\n| carbon dioxide CO₂ | 9.10 | 44.0 |\n\nFirst calculate the quotient of the mass and the molar mass, $m/M$, for helium.",
       "question": {
         "type": "numeric",
@@ -186,7 +186,7 @@
       ],
       "vary": "N",
       "names": {
-        "N": "particle number N",
+        "N": "number of particles N",
         "T": "temperature T",
         "V": "volume V"
       },
@@ -224,7 +224,7 @@
       ],
       "vary": "N",
       "names": {
-        "N": "particle number N",
+        "N": "number of particles N",
         "T": "temperature T",
         "V": "volume V"
       },

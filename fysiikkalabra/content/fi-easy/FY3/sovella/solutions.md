@@ -129,7 +129,7 @@
 ### b)
 **Kysytty:** miksi kiehumislämpötila on korkeampi ja miksi ruoka kypsyy nopeammin
 **Periaate:** Faasikaavion höyrystymiskäyrä ja taulukko näyttävät, että veden kiehumislämpötila kasvaa paineen kasvaessa.
-**Mallivastaus:** Kiehuessaan vesi höyrystyy kuplina koko nesteen sisällä. Höyrykupla pysyy olemassa vain, jos sen sisällä olevan höyryn paine on yhtä suuri kuin ympäröivän nesteen paine. Nesteen paineeseen vaikuttaa pinnan paine. Höyryn paine kasvaa lämpötilan noustessa. Nopeat hiukkaset irtoavat nesteestä useammin ja törmäävät kuplan seinään voimakkaammin. Mitä suurempi pinnan paine on, sitä korkeampi lämpötilan on oltava, ennen kuin kuplia voi syntyä. Painekattilassa paine on noin $1{,}8$-kertainen ulkoilman paineeseen verrattuna. Siksi vesi kiehuu vasta noin $117\,{}^\circ\text{C}$:ssa.
+**Mallivastaus:** Kiehuessaan vesi höyrystyy kuplina koko nesteen sisällä. Höyrykupla pysyy olemassa vain, jos sen sisällä olevan höyryn paine on yhtä suuri kuin ympäröivän nesteen paine. Nesteen paineeseen vaikuttaa pinnan paine. Höyryn paine kasvaa lämpötilan noustessa. Nopeammat hiukkaset irtoavat nesteestä useammin ja törmäävät kuplan seinään voimakkaammin. Mitä suurempi pinnan paine on, sitä korkeampi lämpötilan on oltava, ennen kuin kuplia voi syntyä. Painekattilassa paine on noin $1{,}8$-kertainen ulkoilman paineeseen verrattuna. Siksi vesi kiehuu vasta noin $117\,{}^\circ\text{C}$:ssa.
 Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Vesi on $17\,{}^\circ\text{C}$ kuumempaa kuin avoimessa kattilassa. Siksi lämpötilaero ruoan pintaan on suurempi. Silloin lämpö johtuu ruoan sisään nopeammin. Korkeammassa lämpötilassa myös kypsymisen muutokset tapahtuvat nopeammin.
 
 ### c)

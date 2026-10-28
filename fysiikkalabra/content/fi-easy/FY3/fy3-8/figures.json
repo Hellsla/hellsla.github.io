@@ -1,1 +1,15 @@
-{}
+{
+ "Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos, jonka hampaat lomittuvat ja jättävät väliinsä raon sillan lämpölaajenemista varten.": "Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos. Sen hampaat lomittuvat. Hampaiden väliin jää rako, joka antaa sillan laajeta lämmetessään.",
+ "Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus, ja kahden kiskon jatkoskohdassa on pieni rako lämpölaajenemista varten.": "Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus. Kahden kiskon jatkoskohdassa on pieni rako, joka antaa kiskojen laajeta lämmetessään.",
+ "Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin ja niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀, mutta hiukkaset ovat yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna.": "Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin. Niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀. Hiukkaset ovat silti yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna.",
+ "kylmä": "kylmä",
+ "lämmin": "lämmin",
+ "hiukkaset yhtä suuria, välit liioiteltu": "hiukkaset yhtä suuria, välit liioiteltu",
+ "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.": "Sama sauva kylmänä ja lämpimänä. Lämmin sauva on pidempi. Pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.",
+ "kylmä, lämpötila ": "kylmä, lämpötila ",
+ "lämmin, lämpötila ": "lämmin, lämpötila ",
+ "laajeneminen liioiteltu": "laajeneminen liioiteltu",
+ "Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.": "Nesteen tilavuuden lämpölaajeneminen. Kolvissa on sama määrä nestettä. Kolvin kaulana on ohut putki. Kylmänä nesteen tilavuus on V₀, ja pinta on alempana. Lämpimänä neste on laajentunut, ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.",
+ "kylmä, ": "kylmä, ",
+ "pinta": "pinta"
+}

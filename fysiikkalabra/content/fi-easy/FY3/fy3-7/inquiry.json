@@ -26,12 +26,12 @@
       "choices": [
         {
           "text": "noin 2,1 kJ",
-          "feedback": "Tämä on lämpömäärä yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$, joten $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
+          "feedback": "Tämä on lämpömäärä vain yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$. Siksi $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
         },
         {
           "text": "noin 210 kJ",
           "correct": true,
-          "feedback": "Oikein: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. Tätä lukua voit verrata tämän tunnin olomuodon muutoksiin."
+          "feedback": "Oikein: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. Voit verrata tätä lukua tämän tunnin olomuodon muutoksiin."
         },
         {
           "text": "noin 419 kJ",
@@ -94,7 +94,7 @@
         },
         {
           "text": "Sulaminen kestää pidempään, koska kylmää jäätä on vaikeampi lämmittää.",
-          "feedback": "Sulamisen aikana jää on jo 0-asteista, eikä sen lämpötila muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin 84 s ja 565 s, kun $m = 0{,}25\\,\\text{kg}$)."
+          "feedback": "Sulamisen aikana jää on jo 0-asteista. Sen lämpötila ei muutu. Mallin mukaan sulaminen kestää vain noin seitsemäsosan kiehumisen kestosta (noin 84 s ja 565 s, kun $m = 0{,}25\\,\\text{kg}$)."
         }
       ],
       "optional": true
@@ -105,7 +105,7 @@
       "type": "choice",
       "layout": "models",
       "title": "Ennuste 3: miksi lämpötila ei nouse?",
-      "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy 0 °C:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää ilmiön. Kenen selitys sopii siihen, että vakio-osan kesto kasvaa massan mukana?",
+      "prompt": "Sulamisen aikana jään ja veden seoksen lämpötila pysyy 0 °C:ssa, vaikka kuumennin toimii koko ajan. Kolme opiskelijaa selittää tämän. Kenen selitys sopii siihen, että vakio-osan kesto kasvaa massan mukana?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -113,16 +113,16 @@
       },
       "choices": [
         {
-          "text": "Aino: Energia karkaa astiasta ilmaan yhtä nopeasti kuin sitä tulee, joten aine ei lämpene.",
+          "text": "Aino: Energia karkaa astiasta ilmaan yhtä nopeasti kuin sitä tulee. Siksi aine ei lämpene.",
           "feedback": "Jos energiaa karkaisi yhtä nopeasti kuin sitä tulee, vaakasuora osa ei loppuisi koskaan. Se kuitenkin loppuu, kun kaikki jää on sulanut. Sen kesto kasvaa massan mukana, koska jokainen kilogramma tarvitsee oman energiansa. Häviöt hidastavat lämpenemistä. Ne eivät kuitenkaan selitä, miksi lämpötila pysähtyy juuri sulamispisteeseen."
         },
         {
-          "text": "Bea: Energia purkaa hiukkasten välisiä sidoksia, joten hiukkasten liike ei nopeudu eikä lämpötila nouse.",
+          "text": "Bea: Energia purkaa hiukkasten välisiä sidoksia. Siksi hiukkasten liike ei nopeudu eikä lämpötila nouse.",
           "correct": true,
           "feedback": "Tämä selitys sopii havaintoihin. Lämpötila pysähtyy aina sulamispisteeseen. Vakio-osan kesto on suoraan verrannollinen massaan, koska jokaisen kilogramman sidosten purkamiseen tarvitaan sama energia. Simulaation malli on rakennettu tämän selityksen varaan, joten simulaatio ei yksin todista sitä. Ratkaisevaa on, että selitys ennustaa vakio-osan pituuden oikein. Hiukkasten välinen vuorovaikutusenergia kasvaa."
         },
         {
-          "text": "Cem: Hiukkasten liike nopeutuu koko ajan, mutta lämpömittari ei ehdi reagoida ennen kuin jää on sulanut.",
+          "text": "Cem: Hiukkasten liike nopeutuu koko ajan. Lämpömittari ei kuitenkaan ehdi reagoida, ennen kuin jää on sulanut.",
           "feedback": "Lämpömittarin viive on sekunteja, mutta sulaminen kestää minuutteja. Vakio-osa on sitä pidempi, mitä enemmän jäätä on. Viive ei selitä kumpaakaan. Lisäksi lämpötila kuvaa hiukkasten liikettä. Jos liike nopeutuisi, lämpötila nousisi. Vaakasuoran osan aikana energia kuluu sidosten purkamiseen."
         }
       ]
