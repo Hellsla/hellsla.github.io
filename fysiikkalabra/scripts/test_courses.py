@@ -149,7 +149,8 @@ site = T / "site"
 expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-1.html").is_file() and all((site / p).is_file() for p in ("sims/fy4/fy4-1/sim.js", "sims/fy4/fy4-1/sim.css", "pics/fy4/kalteva-taso.svg")), out)
 expect("FY4.html links fy4-1 and lists the other FY4 slots as coming; FY3.html does not list it",
        'href="fy4-1.html"' in (site / "FY4.html").read_text() and "tulossa" in (site / "FY4.html").read_text() and "fy4-1" not in (site / "FY3.html").read_text())
-expect("fy3-2 is built exactly as the real site has it", (site / "fy3-2.html").read_bytes() == (SRC / "site/fy3-2.html").read_bytes() and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
+nolang = lambda f: re.sub(r'<a class="lang" [^>]*>[^<]*</a>', "", f.read_text())   # the real site has its translations to link to
+expect("fy3-2 is built exactly as the real site has it", nolang(site / "fy3-2.html") == nolang(SRC / "site/fy3-2.html") and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
 code, out = run("check_choices.py", "--all", "--site")
 expect("answer positions are checked per course on the site", code == 0 and "FY4:" in out and "FY3:" in out, out)
 git("add", "."); git("commit", "-qm", "fy4-1 reviewed (stand-in)")
