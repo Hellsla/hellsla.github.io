@@ -169,7 +169,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "From the new measurements, calculate the mean rolling time of each ball and its uncertainty. Can you say from the measurements that the rolling times of the balls differ?",
+          "text": "From the new measurements, calculate the mean rolling time of each ball and estimate the uncertainty of the results. Can you say from the measurements that the rolling times of the balls differ?",
           "answer": {
             "value": 0.03,
             "unit": "s"
@@ -183,10 +183,10 @@
             {
               "key": "uncertainty",
               "points": 1,
-              "detail": "For example half of the range: $\\Delta t \\approx 0.08\\,\\text{s}$ and $0.07\\,\\text{s}$."
+              "detail": "For example half of the range as a simple, cautious estimate: $\\Delta t \\approx 0.08\\,\\text{s}$ and $0.07\\,\\text{s}$."
             },
             {
-              "text": "Compares the difference of the means, $0.03\\,\\text{s}$, with the uncertainties and concludes that a difference cannot be shown.",
+              "text": "Compares the difference of the means, $0.03\\,\\text{s}$, with the uncertainties and concludes that a difference cannot be shown, because the difference is not clearly larger than the uncertainties.",
               "tag": "experiment",
               "points": 1
             },
@@ -209,7 +209,7 @@
               "detail": "Answers the question of whether mass affects the rolling time."
             },
             {
-              "text": "States the result with its uncertainties: the times are the same within the measurement precision.",
+              "text": "States the result with its uncertainties: no difference between the times was observed within the measurement uncertainty.",
               "tag": "communication",
               "points": 1
             },

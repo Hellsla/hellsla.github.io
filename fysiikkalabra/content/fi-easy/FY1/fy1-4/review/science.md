@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3e148733f4277f57
+CONTENT-HASH: 30aca255a313f16c
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 3e148733f4277f57
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, figures.json against content/fi: same physics, numbers, decimal commas, formulas; conditions (jos/kun), proportionality and sign statements.
 - Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): intro texts, column names, word units: simplified correctly; fixed activities[6]/[7].intro "Yhden niistä pitää olla pienin … poikkeama" → "Yhdessä niistä pitää olla pienin … poikkeama".
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (new drawing-the-line check, trimmed exit ticket, calculation task) against the new Finnish.

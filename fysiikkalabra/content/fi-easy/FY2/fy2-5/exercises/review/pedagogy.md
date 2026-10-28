@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bb669bce0090a013
+CONTENT-HASH: 8240b6f2764c9436
 
 ## Blocking
 (none left; fixed items listed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: bb669bce0090a013
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (pedagogy): exercises.json (12 tasks) and solutions.md (all steps) against the Finnish: numbers, answers, units, step labels, reasoning kept; language simplified without lowering demand.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (energy content wording, e = em in solutions).

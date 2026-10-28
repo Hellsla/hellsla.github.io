@@ -174,7 +174,7 @@
       "type": "interpret",
       "title": "The initial data and values of the Voyager 2 model",
       "source": "model",
-      "source_note": "NASA/JPL: heliopause crossing on 2018-11-05 at a distance of 119.7 AU, speed 15.341 km/s; $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
+      "source_note": "NASA/JPL: heliopause crossing on 2018-11-05 at a distance of 119.7 AU, speed $15.341\\,\\text{km/s}$; $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
       "text": "The simulation calculates the position of Voyager 2 by assuming that after crossing the heliopause the probe moves at a constant speed. The heliopause is the boundary beyond which the stream of particles from the Sun, the solar wind, no longer dominates space. The distances and signal travel times from the Sun calculated this way (four days, not measurements):\n\n| Year | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119.7$ | $1.79\\cdot10^{10}$ | $16.6$ |\n| 2022 | $132.6$ | $1.98\\cdot10^{10}$ | $18.4$ |\n| 2026 | $145.6$ | $2.18\\cdot10^{10}$ | $20.2$ |\n| 2030 | $158.5$ | $2.37\\cdot10^{10}$ | $22.0$ |\n\nThe values are for 5 November of each year. The same distance is written in three ways: in AU, in kilometres and as the travel time of light in hours.",
       "question": {
         "type": "choice",
@@ -329,7 +329,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "Voyager 2 is moving away from the Sun at a speed of 15.341 km/s. How many astronomical units does it move away in a year? Use the values $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. Answer in the unit AU/a.",
+      "prompt": "Voyager 2 is moving away from the Sun at a speed of $15.341\\,\\text{km/s}$. How many astronomical units does it move away in a year? Use the values $1\\,\\text{a} = 3.156\\cdot10^{7}\\,\\text{s}$ and $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$. Answer in the unit AU/a.",
       "answer": 3.236,
       "unit": "AU/a",
       "tolerance": 0.02,
@@ -365,7 +365,7 @@
       "choices": [
         {
           "text": "Two, because a zero at the end means nothing.",
-          "feedback": "The trailing zero is significant, because it tells that the measurement was made to a precision of thousandths. Remember that $3.0\\,\\text{m}$ and $3\\,\\text{m}$ are not the same result: the first has two significant figures, the latter one."
+          "feedback": "The trailing zero is significant, because it tells that the reading was given to a precision of a ten-thousandth of a metre, that is $0.1\\,\\text{mm}$. Remember that $3.0\\,\\text{m}$ and $3\\,\\text{m}$ are not the same result: the first has two significant figures, the latter one."
         },
         {
           "text": "Three.",
@@ -383,10 +383,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Distance and time",
+      "prompt": "Light travels from the Sun to the Earth ($1.0\\,\\text{AU}$) in about $8.3\\,\\text{min}$. How long does light take to travel from the Sun to Saturn, which is $9.5\\,\\text{AU}$ away?",
+      "choices": [
+        {
+          "text": "About $8.3\\,\\text{min}$, because the speed of light is the same",
+          "feedback": "The speed of light really is the same, but that is exactly why the time depends on the distance. At a constant speed $t = s/c$, so when the distance is 9.5 times as long, the time is also 9.5 times as long."
+        },
+        {
+          "text": "About $79\\,\\text{min}$",
+          "feedback": "Correct. The speed $c$ stays the same, so the time is directly proportional to the distance: $t = s/c$. The distance is 9.5 times as long, so the time is $9.5\\cdot8.3\\,\\text{min} \\approx 79\\,\\text{min}$.",
+          "correct": true
+        },
+        {
+          "text": "About $0.87\\,\\text{min}$",
+          "feedback": "You divided the time by the distance. A longer distance takes longer, not shorter: the time grows in the same ratio as the distance, so it is multiplied by 9.5, not divided."
+        },
+        {
+          "text": "About $9.5\\,\\text{min}$",
+          "feedback": "You used the numerical value of the distance, 9.5, as the time in minutes. One AU takes $8.3\\,\\text{min}$, so the time for one AU is multiplied by the distance: $9.5\\cdot8.3\\,\\text{min}$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Travel time of light",
+      "title": "3. Travel time of light",
       "prompt": "Mercury is at a mean distance of 0.387 AU from the Sun. How many minutes does light take to travel from the Sun to Mercury? Use the values $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ and $c = 2.998\\cdot10^{5}\\,\\text{km/s}$. Answer in minutes.",
       "answer": 3.22,
       "unit": "min",
@@ -412,7 +438,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "prompt": "Explain in your own words why in astronomy distances are given in astronomical units or as the travel time of light instead of kilometres. What is needed to move from one unit to another?",
       "model": "In kilometres, astronomical distances would be huge numbers: Neptune is about $4.5\\cdot10^{9}\\,\\text{km}$ and Voyager 2 more than $2\\cdot10^{10}\\,\\text{km}$. The astronomical unit $1\\,\\text{AU} = 1.496\\cdot10^{8}\\,\\text{km}$ is the distance between the Earth and the Sun, so Neptune is $30.1\\,\\text{AU}$ and the size of the number can be compared with the Earth. The travel time of light tells how long a message is on its way: for Voyager 2 about 20 hours. You move from one unit to another by writing the value of the unit in place of the unit, for example $30.1\\,\\text{AU} = 30.1\\cdot1.496\\cdot10^{8}\\,\\text{km}$; to get the travel time of light you divide the distance by the speed of light, $t = s : c$. The quantity stays the same, only the numerical value changes.",
       "criteria": [
@@ -428,7 +454,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself and only then open the answer."
+      "text": "Finally, two quick questions. Answer first yourself and only then open the answer."
     }
   ]
 }

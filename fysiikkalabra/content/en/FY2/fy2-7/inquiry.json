@@ -320,7 +320,7 @@
         },
         {
           "text": "Neither pipe loses anything, because the water stays in the pipe.",
-          "feedback": "The water stays in the pipe, but its heat passes through the pipe wall and the insulation into the surroundings. That is why the loss of the district heating network is about $9\\,\\%$."
+          "feedback": "The water stays in the pipe, but energy passes from it as heat through the pipe wall and the insulation into the surroundings. That is why the loss of the district heating network is about $9\\,\\%$."
         }
       ]
     },

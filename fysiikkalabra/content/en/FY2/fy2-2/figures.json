@@ -1,5 +1,5 @@
 {
- "Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu on lämpöä. Joka vaiheessa osa energiasta muuttuu lämmöksi ympäristöön (oranssit nuolet alas), ja lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa.": "Diagram: an energy chain from the Sun to cycling. The Sun sends radiation energy, a plant (oats) stores it as chemical energy in food, the muscles turn part of it into the motion of the bicycle and the rest is heat. At every step part of the energy turns into heat in the surroundings (orange arrows pointing down), and finally the motion also turns into heat. The lengths of the arrows are not to scale.",
+ "Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa, kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan, lihakset muuttavat osan siitä pyörän liikkeeksi ja loppu muuttuu lämpöenergiaksi. Joka vaiheessa osa energiasta siirtyy lämpönä ympäristöön (oranssit nuolet alas), ja lopuksi myös liike-energia muuttuu lämpöenergiaksi. Nuolten pituus ei ole mittakaavassa.": "Diagram: the energy chain from the Sun to cycling. The Sun emits radiant energy, the plant (oats) stores it as chemical energy in food, the muscles turn part of it into the motion of the bicycle, and the rest turns into thermal energy. At every step part of the energy is transferred as heat to the surroundings (orange arrows pointing down), and finally the kinetic energy also turns into thermal energy. The lengths of the arrows are not to scale.",
  "kasvi": "plant",
  "Aurinko": "Sun",
  "säteily": "radiation",
@@ -19,7 +19,7 @@
  "päivän ruoka": "day's food",
  "bensiinitankki": "petrol tank",
  "Olkiluoto 3, vrk": "Olkiluoto 3, per day",
- "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämmöksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.": "Scale diagram (example): of the 800 kJ of chemical energy in a cyclist's morning porridge, the muscles turn 200 kJ into motion and 600 kJ into heat. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow.",
+ "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.": "Scale diagram (example): of the 800 kJ of chemical energy in the cyclist's morning porridge, the muscles turn 200 kJ into motion and 600 kJ into thermal energy. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow.",
  "liike: ": "motion: ",
  "lämpö: ": "heat: ",
  "nuolen leveys kuvaa energian määrää": "the width of the arrow shows the amount of energy"

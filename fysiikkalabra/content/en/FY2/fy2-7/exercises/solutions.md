@@ -76,7 +76,7 @@
 **Conversions:** $p = 4.0 : 100 = 0.040$ and $1\,\text{TWh} = 1\,000\,000\,\text{MWh}$, so $2.40\,\text{TWh} = 2.40 \cdot 1\,000\,000\,\text{MWh} = 2\,400\,000\,\text{MWh}$.
 **Substitution:** $E_\text{loss} = 0.040 \cdot 2\,400\,000\,\text{MWh} = 96\,000\,\text{MWh}$, and $P_\text{loss} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10.96\,\text{MW}$
 **Answer:** $11\,\text{MW}$, two significant figures, because the loss percentage $4.0\,\%$ is known to two figures (the least precise value).
-**Reasonableness:** Estimate: $4\,\%$ of $2400$ is about $100$, and $100\,000\,\text{MWh} : 8760\,\text{h}$ is about $11\,\text{MW}$. So the loss power of the electricity grid is constantly about as large as the power of a small power plant.
+**Reasonableness:** Estimate: $4\,\%$ of $2400$ is about $100$, and $100\,000\,\text{MWh} : 8760\,\text{h}$ is about $11\,\text{MW}$. So the loss power of the electricity grid is on average about as large as the power of a small power plant.
 
 ## fy2-7-L2-04
 **Given:** power needed by the building $P_\text{arrived} = 40.0\,\text{kW}$, loss $20\,\%$ of the sent power, time $t = 24\,\text{h}$

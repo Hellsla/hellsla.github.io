@@ -9,6 +9,6 @@
   },
   {
     "q": "A torch battery gives out $12\\,\\text{kJ}$, of which $3\\,\\text{kJ}$ turns into light. What does the remaining $9\\,\\text{kJ}$ turn into, and why has no energy been lost?",
-    "a": "The remaining $9\\,\\text{kJ}$ turns into heat. No energy has been lost, because the energy of the light and the heat together is $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, which is the same as at the start."
+    "a": "The remaining $9\\,\\text{kJ}$ turns into thermal energy. No energy has been lost, because the energy of the light and the thermal energy together is $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, which is the same as at the start."
   }
 ]

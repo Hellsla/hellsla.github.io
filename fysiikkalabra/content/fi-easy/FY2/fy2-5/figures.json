@@ -4,7 +4,7 @@
  "energia": "energia",
  "palaminen": "palaminen",
  "lämpö ja valo": "lämpö ja valo",
- "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 49, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen.": "Vaakasuora pylväskaavio näyttää polttoaineiden lämpöarvot yksikössä MJ/kg. Arvot on pyöristetty: maakaasu 49, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu 15 ja turve 10. Pylväiden pituudet ovat oikeassa suhteessa. Maakaasun pylväs on noin viisi kertaa niin pitkä kuin turpeen pylväs.",
+ "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen.": "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa. Maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen.",
  "MJ/kg": "MJ/kg",
  "maakaasu": "maakaasu",
  "bensiini": "bensiini",
@@ -13,7 +13,7 @@
  "puupelletti": "puupelletti",
  "polttopuu": "polttopuu",
  "turve": "turve",
- "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan lämpöarvoa vastaava luku 22 MJ/kg.": "Periaatekuva ravintoarvomerkinnästä. Se on esimerkki, ei oikea tuote. Pakkauksessa lukee: energia 2200 kJ sadassa grammassa. Muutetaan energia megajouleiksi ja massa kilogrammoiksi. Silloin saadaan luku 22 MJ/kg. Se vastaa lämpöarvoa.",
+ "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan ruoan energiasisältö 22 MJ/kg.": "Periaatekuva ravintoarvomerkinnästä. Se on esimerkki eikä oikea tuote. Pakkauksessa lukee energia 2200 kJ sadassa grammassa. Muuta energia megajouleiksi ja massa kilogrammoiksi. Silloin saadaan ruoan energiasisältö 22 MJ/kg.",
  "Ravintoarvo": "Ravintoarvo",
  "sadassa grammassa": "sadassa grammassa",
  "esimerkki": "esimerkki"

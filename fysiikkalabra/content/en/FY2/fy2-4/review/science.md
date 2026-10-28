@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a6beba555e576d2c
+CONTENT-HASH: d49790c6be151974
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: a6beba555e576d2c
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (all prose, worked example steps, misconception, summary; decimals, \cdot, chapter reference *Power P = ΔE/Δt*), figures.json, meta.json, exit-ticket.json, inquiry.json (all activities incl. experiment intros/names, hints, feedback, solutions) and the sim's en labels; physics, signs, ratios and numbers match the Finnish.
 - Update 2026-10-28: experiment option words (`values`) translated to match the English sim labels; re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked efficiency wording (lesson.md, inquiry.json feedback/prompt/goal, solutions.md Reasonableness) against the new Finnish.

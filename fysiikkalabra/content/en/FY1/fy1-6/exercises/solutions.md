@@ -60,14 +60,15 @@
 **Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second, so reaching $12\,\text{m/s}$ takes a little over a second. Back-calculation: $9.81\,\text{m/s}^2 \cdot 1.22\,\text{s} = 12.0\,\text{m/s}$.
 
 ## fy1-6-L2-02
-**Given:** the stone starts from rest, impact speed $v = 54.0\,\text{km/h}$, $g = 9.81\,\text{m/s}^2$
-**Find:** the time of the fall $t$ in $\text{s}$
-**Principle:** Air resistance is ignored, so the stone is in free fall and the speed of an object that starts from rest is $v = g\,t$. The time is found by solving the formula for time after the speed has been converted to SI units.
-**Formula:** $v = g\,t$, so $t = \dfrac{v}{g}$
-**Conversions:** substitute $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$: $54.0\,\text{km/h} = \dfrac{54.0\cdot1000\,\text{m}}{3600\,\text{s}} = 15.0\,\text{m/s}$.
-**Substitution:** $t = \dfrac{15.0\,\text{m/s}}{9.81\,\text{m/s}^2} = 1.529\,\text{s}$
-**Answer:** $1.53\,\text{s}$, three significant figures as in the speed $54.0\,\text{km/h}$.
-**Reasonableness:** A speed of $15\,\text{m/s}$ is reached when the speed increases by about $10\,\text{m/s}$ every second, so it takes about one and a half seconds, which matches the result. This corresponds to falling from about the height of the fourth floor, so the situation is believable.
+**Given:** graphs of bodies dropped from rest on two planets without an atmosphere, A and B; the time for the body on planet A $t_\text{A} = 5.0\,\text{s}$
+**Find:** the time $t_\text{B}$ after which the body on planet B has the same speed that the body on planet A has after the time $t_\text{A}$
+**Principle:** In free fall from rest the speed increases by the same amount every second, so the speed is $v = g\,t$ and the $(t, v)$ graph is a straight line from the origin whose slope is the $g$ of the planet. The same speed is found by first calculating the speed of A and then the time that B needs to reach it.
+**Reading the graph:** The line of planet A passes through the grid crossing $(5.0\,\text{s};\, 20\,\text{m/s})$, so the body on A has $v_\text{A} = 20\,\text{m/s}$ after $5.0\,\text{s}$. The line of planet B passes through the crossing $(5.0\,\text{s};\, 40\,\text{m/s})$. The readings are exact from the grid, so an answer that differs by at most $3\,\%$ is accepted.
+**Formula:** $g_\text{B} = \dfrac{v}{t}$ and $t_\text{B} = \dfrac{v_\text{A}}{g_\text{B}}$
+**Conversions:** Not needed: the speeds are in $\text{m/s}$ and the times in seconds.
+**Substitution:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5.0\,\text{s}} = 8.0\,\text{m/s}^2$ and $t_\text{B} = \dfrac{20\,\text{m/s}}{8.0\,\text{m/s}^2} = 2.5\,\text{s}$
+**Answer:** $2.5\,\text{s}$, two significant figures as in the read values and in the time $5.0\,\text{s}$.
+**Reasonableness:** The acceleration of planet B, $8.0\,\text{m/s}^2$, is twice that of A, $\dfrac{20\,\text{m/s}}{5.0\,\text{s}} = 4.0\,\text{m/s}^2$, so B reaches the same speed in half the time: $\tfrac{5.0\,\text{s}}{2} = 2.5\,\text{s}$. In the graph the line of B passes the $20\,\text{m/s}$ level between $2$ and $3\,\text{s}$, as it should.
 
 ## fy1-6-L2-03
 **Given:** initial speed $v_1 = 12.0\,\text{m/s}$, time interval $\Delta t = 1.50\,\text{s}$, $g = 9.81\,\text{m/s}^2$, no air resistance

@@ -6,7 +6,7 @@
 **Conversions:** None needed: the distances are in metres and the times in seconds, so the result comes directly in m/s.
 **Substitution:** $k = \dfrac{10.1\,\text{m} - 2.3\,\text{m}}{7.0\,\text{s} - 1.0\,\text{s}} = \dfrac{7.8\,\text{m}}{6.0\,\text{s}} = 1.3\,\text{m/s}$
 **Answer:** $1.3\,\text{m/s}$, two significant figures, because the differences $7.8\,\text{m}$ and $6.0\,\text{s}$ are known to two figures.
-**Reasonableness:** The slope is positive, because the distance increases with time. Between the points the trolley travels about 8 m in about 6 seconds, that is, about 1.3 metres per second, which is the speed of a leisurely walk.
+**Reasonableness:** The slope is positive, because the distance increases with time. Between the points the trolley travels about $8\,\text{m}$ in about 6 seconds, that is, about 1.3 metres per second, which is the speed of a leisurely walk.
 
 ## fy1-4-L1-02
 **Given:** the line $h = 0.50\,\tfrac{\text{cm}}{\text{min}} \cdot t + 12\,\text{cm}$, that is, $k = 0.50\,\tfrac{\text{cm}}{\text{min}}$ and $b = 12\,\text{cm}$; time $t = 30\,\text{min}$
@@ -46,7 +46,7 @@
 **Conversions:** $1.2\,\text{kg} = 1200\,\text{g}$, because $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** $k = \dfrac{1200\,\text{g}}{250} = 4.8\,\text{g}$
 **Answer:** $4.8\,\text{g}$, two significant figures, like the mass $1.2\,\text{kg}$ (the number of sheets is an exact count).
-**Reasonableness:** The mass of an ordinary A4 sheet is about 5 g, so the result is reasonable. Check: $250 \cdot 4.8\,\text{g} = 1200\,\text{g} = 1.2\,\text{kg}$.
+**Reasonableness:** The mass of an ordinary A4 sheet is about $5\,\text{g}$, so the result is reasonable. Check: $250 \cdot 4.8\,\text{g} = 1200\,\text{g} = 1.2\,\text{kg}$.
 
 ## fy1-4-L2-01
 **Given:** points on the line $(t_1;\ s_1) = (2.0\,\text{min};\ 0.30\,\text{km})$ and $(t_2;\ s_2) = (10.0\,\text{min};\ 1.50\,\text{km})$
@@ -59,14 +59,15 @@
 **Reasonableness:** The result is about $2.5 \cdot 3.6 = 9\,\text{km/h}$. Check with kilometres and minutes: $1.20\,\text{km} : 8.0\,\text{min} = 0.15\,\text{km/min} = 9\,\text{km/h}$, which is the speed of leisurely cycling.
 
 ## fy1-4-L2-02
-**Given:** points on the line $(t_1;\ h_1) = (2.0\,\text{min};\ 7.0\,\text{cm})$ and $(t_2;\ h_2) = (6.0\,\text{min};\ 15.0\,\text{cm})$; the time asked about is $t = 10.0\,\text{min}$
-**Find:** the height $h$ at $t = 10.0\,\text{min}$ in centimetres
-**Principle:** The surface rises steadily, so the height follows the line $h = kt + b$. The slope is calculated from two points and the constant term from one point. The time 10.0 min is outside the measured range, so the prediction assumes that the rise continues in the same way.
-**Formula:** $k = \dfrac{h_2 - h_1}{t_2 - t_1}$ and $b = h_1 - k t_1$, so $h = kt + b = h_1 + k\,(t - t_1)$
-**Conversions:** None needed: the heights are in centimetres and the times in minutes.
-**Substitution:** $k = \dfrac{15.0\,\text{cm} - 7.0\,\text{cm}}{6.0\,\text{min} - 2.0\,\text{min}} = 2.0\,\tfrac{\text{cm}}{\text{min}}$ and $b = 7.0\,\text{cm} - 2.0\,\tfrac{\text{cm}}{\text{min}} \cdot 2.0\,\text{min} = 3.0\,\text{cm}$, so $h = 2.0\,\tfrac{\text{cm}}{\text{min}} \cdot 10.0\,\text{min} + 3.0\,\text{cm} = 23\,\text{cm}$
-**Answer:** $23\,\text{cm}$, two significant figures, because the slope $2.0\,\tfrac{\text{cm}}{\text{min}}$ is known to two figures.
-**Reasonableness:** The surface rises two centimetres per minute, so after 15.0 cm at six minutes it rises about 8 cm more in the next four minutes: $15 + 8 = 23\,\text{cm}$.
+**Given:** the measured points $(t;\ s)$ of the graph: $(1\,\text{s};\ 0.6\,\text{m})$, $(2\,\text{s};\ 0.8\,\text{m})$, $(3\,\text{s};\ 1.6\,\text{m})$, $(4\,\text{s};\ 2.1\,\text{m})$, $(5\,\text{s};\ 2.4\,\text{m})$ and $(6\,\text{s};\ 2.9\,\text{m})$; the time asked about is $t = 8.0\,\text{s}$
+**Find:** the distance $s$ travelled by the trolley at $8.0\,\text{s}$ in metres
+**Principle:** The trolley moves steadily, so the distance increases linearly with time and a line $s = kt + b$ is fitted to the points. The points deviate randomly from the line, so the line is drawn through the middle of the points, with points on both sides of it, and not through any two points. The prediction assumes that the motion continues in the same way after the measured range too.
+**Reading the graph:** The line drawn through the middle of the points passes almost through the origin, and at $6.0\,\text{s}$ it is at $2.9\,\text{m}$. Read these two points from the line, far apart, $(0\,\text{s};\ 0.0\,\text{m})$ and $(6.0\,\text{s};\ 2.9\,\text{m})$, and extend the line to the time $8.0\,\text{s}$.
+**Formula:** $k = \dfrac{s_2 - s_1}{t_2 - t_1}$ and $s = s_1 + k\,(t - t_1)$
+**Conversions:** None needed: the times are in seconds and the distances in metres.
+**Substitution:** $k = \dfrac{2.9\,\text{m} - 0.0\,\text{m}}{6.0\,\text{s} - 0\,\text{s}} = 0.4833\,\tfrac{\text{m}}{\text{s}}$, so $s = 0.0\,\text{m} + 0.4833\,\tfrac{\text{m}}{\text{s}} \cdot 8.0\,\text{s} = 3.87\,\text{m}$
+**Answer:** $s \approx 3.9\,\text{m}$, two significant figures, because the values read from the line are known to two figures. A fit by eye varies, so about $3.6\ldots4.2\,\text{m}$ is a good answer.
+**Reasonableness:** The trolley travels about half a metre per second, so from about $2.9\,\text{m}$ at $6\,\text{s}$ it moves about a metre further in two seconds: $2.9\,\text{m} + 1.0\,\text{m} \approx 3.9\,\text{m}$. A prediction outside the measured range is more uncertain than a value read within the measured range.
 
 ## fy1-4-L2-03
 **Given:** points on the line $(V_1;\ m_1) = (3.0\,\textsf{l};\ 3.9\,\text{kg})$ and $(V_2;\ m_2) = (9.0\,\textsf{l};\ 9.9\,\text{kg})$, where $m$ is the combined mass of the canister and the water
@@ -76,7 +77,7 @@
 **Conversions:** None needed: the masses are in kilograms and the volumes in litres, so $k$ comes out in kg/l.
 **Substitution:** $k = \dfrac{9.9\,\text{kg} - 3.9\,\text{kg}}{9.0\,\textsf{l} - 3.0\,\textsf{l}} = 1.0\,\tfrac{\text{kg}}{\textsf{l}}$ and $b = 3.9\,\text{kg} - 1.0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3.0\,\textsf{l} = 0.9\,\text{kg}$
 **Answer:** $0.9\,\text{kg}$, one decimal place like the given masses $3.9\,\text{kg}$ and $9.9\,\text{kg}$.
-**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the liquid is correctly identified as water. An empty plastic canister weighs about 1 kg, so $0.9\,\text{kg}$ is reasonable.
+**Reasonableness:** The slope $1.0\,\text{kg/l}$ is the density of water, so the liquid is correctly identified as water. An empty plastic canister weighs about $1\,\text{kg}$, so $0.9\,\text{kg}$ is reasonable.
 
 ## fy1-4-L2-04
 **Given:** starting charge $b = 4.0\,\text{€}$ and price per kilometre $k = 2.5\,\tfrac{\text{€}}{\text{km}}$; distances $x_1 = 5.0\,\text{km}$ and $x_2 = 10\,\text{km}$
@@ -95,25 +96,25 @@
 **Formula:** $s = kt + b$, from which $t = \dfrac{s - b}{k}$
 **Conversions:** None needed: the position is in metres and the slope gives metres per second.
 **Substitution:** $t = \dfrac{0 - 0.40\,\text{m}}{0.85\,\tfrac{\text{m}}{\text{s}}} = -0.4706\,\text{s}$
-**Answer:** $-0.47\,\text{s}$, two significant figures like the slope $0.85\,\tfrac{\text{m}}{\text{s}}$ and the constant term $0.40\,\text{m}$. The minus sign means that the trolley was at the start of the track 0.47 s before the stopwatch was started. The result assumes that the trolley was already moving at the same speed before the watch was started, because the line is extended outside the measured range ($t < 0$).
-**Reasonableness:** Check: in 0.47 seconds at 0.85 m/s the trolley travels about $0.85 \cdot 0.47 = 0.40\,\text{m}$, which is exactly the constant term. The result is the same as if the watch had been started 0.47 s earlier and the constant term were zero.
+**Answer:** $-0.47\,\text{s}$, two significant figures like the slope $0.85\,\tfrac{\text{m}}{\text{s}}$ and the constant term $0.40\,\text{m}$. The minus sign means that the trolley was at the start of the track $0.47\,\text{s}$ before the stopwatch was started. The result assumes that the trolley was already moving at the same speed before the watch was started, because the line is extended outside the measured range ($t < 0$).
+**Reasonableness:** Check: in 0.47 seconds at $0.85\,\text{m/s}$ the trolley travels about $0.85 \cdot 0.47 = 0.40\,\text{m}$, which is exactly the constant term. The result is the same as if the watch had been started $0.47\,\text{s}$ earlier and the constant term were zero.
 
 ## fy1-4-L3-02
-**Given:** the temperature $T$ of the coffee: $90\,{}^\circ\text{C}$ (0 min), $72\,{}^\circ\text{C}$ (10 min), $60\,{}^\circ\text{C}$ (20 min) and $51\,{}^\circ\text{C}$ (30 min)
+**Given:** the temperature $T$ of the coffee: $90\,{}^\circ\text{C}$ ($0\,\text{min}$), $72\,{}^\circ\text{C}$ ($10\,\text{min}$), $60\,{}^\circ\text{C}$ ($20\,\text{min}$) and $51\,{}^\circ\text{C}$ ($30\,\text{min}$)
 **Find:** the ratio of the absolute values of the slopes $\dfrac{|k_1|}{|k_3|}$ in the first and last ten-minute intervals, and a justification of why one line does not fit
 **Principle:** If the data points followed a straight line, the slope would be the same in every time interval. Calculate the slope for the first and last intervals and compare them.
 **Formula:** $k = \dfrac{\Delta T}{\Delta t}$ and $\dfrac{|k_1|}{|k_3|}$
 **Conversions:** None needed: a temperature difference is the same in degrees Celsius and in kelvins, and the time is in minutes.
 **Substitution:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1.8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ and $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0.90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, so $\dfrac{|k_1|}{|k_3|} = \dfrac{1.8}{0.90} = 2.0$
-**Answer:** $2.0$ times, two significant figures like the temperature differences. One line does not fit, because the slope is not constant: the coffee first cools twice as fast as at the end, and the interval 10–20 min gives a third value, $-1.2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. The points do not lie on a straight line.
+**Answer:** $2.0$ times, two significant figures like the temperature differences. One line does not fit, because the slope is not constant: the coffee first cools twice as fast as at the end, and the interval 10–$20\,\text{min}$ gives a third value, $-1.2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. The points do not lie on a straight line.
 **Reasonableness:** The slopes are negative, because the coffee cools. The cooling slows down because the coffee approaches room temperature and the temperature difference to the surroundings gets smaller, which fits what you know about a hot drink cooling.
 
 ## fy1-4-L3-03
-**Given:** the line $y = 2.0\,x$; the reading error of $y$ is at most $\Delta y_\text{read} = 0.1$ and there are two readings, so the error of the difference $\Delta y$ is at most $2\,\Delta y_\text{read} = 0.2$; close together $\Delta x_1 = 4.5 - 4.0 = 0.5$, far apart $\Delta x_2 = 9.0 - 1.0 = 8.0$
+**Given:** line $y = 2.0\,x$; the uncertainty of a $y$ reading is about $\Delta y_\text{read} = 0.1$, so the uncertainty of the difference $\Delta y$ of two readings is, estimated cautiously, about $2\,\Delta y_\text{read} = 2 \cdot 0.1 = 0.2$; close together $\Delta x_1 = 4.5 - 4.0 = 0.5$, far apart $\Delta x_2 = 9.0 - 1.0 = 8.0$
 **Find:** how many times greater the relative uncertainty of the slope is when it is calculated from the close points
 **Principle:** The slope is $k = \Delta y : \Delta x$. When the $x$ values are known accurately, the relative uncertainty of the slope is equal to the relative uncertainty of the difference $\Delta y$. On a straight line $\Delta y = k\,\Delta x$, so the difference grows with the interval, but the reading error stays the same.
 **Formula:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{read}}{\Delta y} = \dfrac{2\,\Delta y_\text{read}}{k\,\Delta x}$, so $\dfrac{(\Delta k : k)_\text{near}}{(\Delta k : k)_\text{far}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Conversions:** None needed: the ratio has no unit.
 **Substitution:** Near: $\Delta y = 2.0 \cdot 0.5 = 1.0$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{1.0} = 0.20$. Far: $\Delta y = 2.0 \cdot 8.0 = 16$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{16} = 0.0125$. The ratio is $\dfrac{0.20}{0.0125} = \dfrac{8.0}{0.5} = 16$.
 **Answer:** $16$ times. The reading error cancels out of the ratio, so the number is determined only by the ratio of the $\Delta x$ values, $8.0 : 0.5 = 16$, which is exact; two significant figures are enough. Points far apart are the better choice, because the difference $\Delta y$ is large compared with the reading error.
-**Reasonableness:** An error of 20 % for the close points is too large, while about 1.3 % for the far points is good. The ratio 16 is the same as the ratio of the $\Delta x$ values, $8.0 : 0.5$, as it must be according to the formula.
+**Reasonableness:** An error of $20\,\%$ for the close points is too large, while about $1.3\,\%$ for the far points is good. The ratio 16 is the same as the ratio of the $\Delta x$ values, $8.0 : 0.5$, as it must be according to the formula.

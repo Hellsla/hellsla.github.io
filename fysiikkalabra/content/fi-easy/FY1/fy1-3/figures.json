@@ -12,5 +12,6 @@
  "lukema ": "lukema ",
  "lukema": "lukema",
  "systemaattinen virhe: nollakohta": "systemaattinen virhe: nollakohta",
- "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla.": "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s. Keskiarvo on 3,18 s. Tulos 3,18 s ± 0,12 s on merkitty vihreällä palkilla."
+ "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla.": "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s. Keskiarvo on 3,18 s. Tulos 3,18 s ± 0,12 s on merkitty vihreällä palkilla.",
+ "Kuvaaja mittakaavassa: heilurin kymmenen heilahduksen aika t viidessä toistossa pisteinä aika-akselilla. Akseli kulkee 12,0 sekunnista 13,0 sekuntiin, pystyviivat ja pienet merkit joka 0,1 sekunnin kohdalla ja numerot joka 0,2 sekunnin kohdalla. Pisteet ovat kohdissa 12,2 s, 12,4 s, 12,6 s, 12,7 s ja 12,9 s.": "Kuvaaja mittakaavassa: heilurin kymmenen heilahduksen aika t viidessä toistossa pisteinä aika-akselilla. Akseli kulkee 12,0 sekunnista 13,0 sekuntiin. Pystyviivat ja pienet merkit ovat joka 0,1 sekunnin kohdalla. Numerot ovat joka 0,2 sekunnin kohdalla. Pisteet ovat kohdissa 12,2 s, 12,4 s, 12,6 s, 12,7 s ja 12,9 s."
 }

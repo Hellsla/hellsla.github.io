@@ -124,10 +124,10 @@
       "min": 3,
       "values": {
         "A": {
-          "kuivain": "hair dryer"
+          "kuivain": "hiustenkuivain"
         },
         "B": {
-          "lamppu": "lamp"
+          "lamppu": "lamppu"
         }
       },
       "question": {
@@ -226,10 +226,10 @@
       "min": 3,
       "values": {
         "A": {
-          "keitin": "kettle"
+          "keitin": "vedenkeitin"
         },
         "B": {
-          "lamppu": "lamp"
+          "lamppu": "lamppu"
         }
       },
       "question": {

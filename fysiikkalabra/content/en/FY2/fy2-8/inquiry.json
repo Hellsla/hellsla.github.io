@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Final chapter of the course: the greenhouse effect in qualitative terms, the link between fuels and climate change, and the comparison of ways of producing energy by life-cycle emission factors ($m = e \\cdot E$), so that the student can weigh the grounds of the sustainability debate.",
   "learn": [
-    "You can explain the greenhouse effect and why burning fuels strengthens it.",
+    "You can explain the greenhouse effect and why burning fossil fuels strengthens it.",
     "You can calculate an emission from the emission factor and the energy, and compare ways of producing energy.",
     "You can justify a choice using several criteria for comparison."
   ],
@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Before industrialisation the atmosphere contained about $280\\,\\text{ppm}$ of carbon dioxide, that is, $280$ molecules per million molecules of the atmosphere. Now the concentration is about $420\\,\\text{ppm}$ (NOAA measurements, 2023), and the rise is largely caused by burning fuels for electricity, heat and transport. Even so, carbon dioxide is less than half a part per thousand of the atmosphere.",
+      "text": "Before industrialisation the atmosphere contained about $280\\,\\text{ppm}$ of carbon dioxide, that is, $280$ molecules per million molecules of the atmosphere. Now the concentration is about $420\\,\\text{ppm}$ (NOAA measurements, 2023), and the rise is largely caused by burning fossil fuels for electricity, heat and transport. Even so, carbon dioxide is less than half a part per thousand of the atmosphere.",
       "question": "How can such a small part of the atmosphere change the temperature of the whole Earth, and why does it matter how electricity is produced?"
     },
     {
@@ -29,7 +29,7 @@
         {
           "text": "Chemical energy changes into kinetic energy and heat, and the carbon of the petrol leaves as carbon dioxide in the exhaust gases.",
           "correct": true,
-          "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion E = Hm*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning brings carbon dioxide with it."
+          "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion E = Hm*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning a carbon-containing fuel brings carbon dioxide with it."
         },
         {
           "text": "When petrol burns, it changes completely into energy, so no carbon or other matter is left in the exhaust gases.",
@@ -55,7 +55,7 @@
       "choices": [
         {
           "text": "It would rise, because the atmosphere would no longer stop the Sun's radiation from reaching the ground.",
-          "feedback": "Greenhouse gases already let most of the Sun's radiation through, so removing them would not increase the energy reaching the ground. They act in the other direction: they slow down the escape of the ground's thermal radiation."
+          "feedback": "Greenhouse gases already let most of the Sun's radiation through, so removing them would not increase the energy reaching the ground from the Sun. They act in the other direction: they slow down the escape of the ground's thermal radiation."
         },
         {
           "text": "It would fall by tens of degrees, because the thermal radiation of the ground would escape almost freely into space.",
@@ -87,7 +87,7 @@
         {
           "text": "Largest with coal and smallest with wind power, because a wind turbine does not burn anything.",
           "correct": true,
-          "feedback": "Correct. Burning releases carbon dioxide for every kilowatt-hour produced, and the energy of coal comes mostly from the burning of carbon. Natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. A wind turbine does not burn anything. In the next step you see from the table how large the differences are."
+          "feedback": "Correct. Burning a carbon-containing fuel releases carbon dioxide for every kilowatt-hour produced, and the energy of coal comes mostly from the burning of carbon. Natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. A wind turbine does not burn anything. In the next step you see from the table how large the differences are."
         },
         {
           "text": "Largest with biomass and smallest with wind power, because wood contains more carbon than coal.",
@@ -159,7 +159,7 @@
           },
           {
             "text": "Greenhouse gases produce heat themselves, and the more gas there is, the more heat.",
-            "feedback": "Gases do not produce energy: energy does not appear from nothing (chapter *Forms of energy and conservation of energy*). A gas molecule sends onwards only the radiation that it has absorbed from the ground. The energy originally comes from the Sun."
+            "feedback": "Gases do not produce energy: energy does not appear from nothing (chapter *Forms of energy and conservation of energy*). The atmosphere radiates only the energy it has received, and most of it comes from the thermal radiation of the ground, which the gases absorb. The energy originally comes from the Sun."
           },
           {
             "text": "There is so much carbon dioxide in the atmosphere that it stops all thermal radiation.",
@@ -378,7 +378,7 @@
         "I made a clear claim and chose one option.",
         "I calculated the emission correctly with the formula $m = e \\cdot E$: I converted gigawatt-hours into kilowatt-hours and grams into tonnes, and compared the result with another option.",
         "I used at least two other criteria for comparison (land use, waste, safety, transport, dependence on the weather).",
-        "I explained with physics why the emission factor is small or large (burning releases carbon dioxide, life-cycle emissions come from manufacture and transport).",
+        "I explained with physics why the emission factor is small or large (burning a carbon-containing fuel releases carbon dioxide, life-cycle emissions come from manufacture and transport).",
         "I gave the strongest counterargument and answered it, and I did not claim that any option is emission-free.",
         "I said what I left out (for example the price)."
       ]
@@ -447,14 +447,14 @@
       "type": "explain",
       "title": "3. Explain",
       "optional": true,
-      "prompt": "Explain why the natural greenhouse effect is useful but its strengthening is a problem. Also say why burning fuels strengthens the effect.",
+      "prompt": "Explain why the natural greenhouse effect is useful but its strengthening is a problem. Also say why burning fossil fuels strengthens the effect.",
       "criteria": [
         "I said that greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation.",
         "I mentioned that the natural effect raises the mean temperature from about $-18\\,{}^\\circ\\text{C}$ to about $+15\\,{}^\\circ\\text{C}$.",
-        "I explained that burning releases carbon dioxide, so more radiation-absorbing gases remain in the atmosphere.",
+        "I explained that burning fossil fuels releases carbon dioxide, so more radiation-absorbing gases remain in the atmosphere.",
         "I linked the strengthening to climate change, that is, to the rise of the mean temperature."
       ],
-      "model": "The Sun warms the ground with radiation that the greenhouse gases of the atmosphere let mostly through. The warm ground sends out energy as thermal radiation, which the greenhouse gases absorb and partly radiate back down. That is why the ground is at about $+15\\,{}^\\circ\\text{C}$ and not at about $-18\\,{}^\\circ\\text{C}$, and the effect keeps the Earth habitable. When fuels burn, carbon combines with oxygen and is released as carbon dioxide. When there is more of the gas, thermal radiation escapes more slowly than before, so the effect gets stronger and the mean temperature rises: that is climate change."
+      "model": "The Sun warms the ground with radiation that the greenhouse gases of the atmosphere let mostly through. The warm ground sends out energy as thermal radiation, which the greenhouse gases absorb and partly radiate back down. That is why the ground is at about $+15\\,{}^\\circ\\text{C}$ and not at about $-18\\,{}^\\circ\\text{C}$, and the effect keeps the Earth habitable. When fossil fuels burn, their carbon combines with oxygen and is released as carbon dioxide. When there is more of the gas, thermal radiation escapes more slowly than before, so the effect gets stronger and the mean temperature rises: that is climate change."
     },
     {
       "id": "lahtolippu",

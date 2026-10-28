@@ -3,7 +3,7 @@
     {
       "id": "fy1-8-L1-01",
       "level": 1,
-      "text": "A ball rolls down a slope, and a student measures its travel time with a hand stopwatch as 4.0 s. The timing uncertainty is $\\Delta t = 0.2\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
+      "text": "A ball rolls down a slope, and a student measures its travel time with a hand stopwatch as $4.0\\,\\text{s}$. The timing uncertainty is $\\Delta t = 0.2\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
       "answer": 5.0,
       "unit": "%",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy1-8-L1-02",
       "level": 1,
-      "text": "A student walks a distance of ten metres five times and measures the times 12.3 s, 12.5 s, 12.2 s, 12.6 s and 12.4 s. What is the mean of the measurements?",
+      "text": "A student walks a distance of ten metres five times and measures the times $12.3\\,\\text{s}$, $12.5\\,\\text{s}$, $12.2\\,\\text{s}$, $12.6\\,\\text{s}$ and $12.4\\,\\text{s}$. What is the mean of the measurements?",
       "answer": 12.4,
       "unit": "s",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy1-8-L1-03",
       "level": 1,
-      "text": "The marked driving distance of a toy car is 1.50 m, and the car covers it in 3.6 s. What is the speed of the car? Assume the speed is constant and give the answer in m/s.",
+      "text": "The marked driving distance of a toy car is $1.50\\,\\text{m}$, and the car covers it in $3.6\\,\\text{s}$. What is the speed of the car? Assume the speed is constant and answer in m/s.",
       "answer": 0.42,
       "unit": "m/s",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy1-8-L1-04",
       "level": 1,
-      "text": "The length of a table is measured five times with a ruler: 24.1 cm, 24.4 cm, 24.0 cm, 24.3 cm and 24.2 cm. The uncertainty is estimated as half of the range of the measurements. How large is the uncertainty?",
+      "text": "The length of a table is measured five times with a ruler: $24.1\\,\\text{cm}$, $24.4\\,\\text{cm}$, $24.0\\,\\text{cm}$, $24.3\\,\\text{cm}$ and $24.2\\,\\text{cm}$. The uncertainty is estimated as half of the range of the measurements. How large is the uncertainty?",
       "answer": 0.2,
       "unit": "cm",
       "tolerance": 0.02
@@ -35,7 +35,7 @@
     {
       "id": "fy1-8-L1-05",
       "level": 1,
-      "text": "In a row of a lab record, the distance is 2.00 m, the mean of three times is 4.73 s and half of the range is $\\Delta t = 0.15\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
+      "text": "In a row of a lab record the distance is $2.00\\,\\text{m}$, the mean of three times is $4.73\\,\\text{s}$ and half of the range is $\\Delta t = 0.15\\,\\text{s}$. What is the relative uncertainty $\\varepsilon$ of the time as a percentage?",
       "answer": 3.2,
       "unit": "%",
       "tolerance": 0.02
@@ -45,15 +45,15 @@
     {
       "id": "fy1-8-L2-01",
       "level": 2,
-      "text": "The travel time of a toy car is measured five times, and the results are 7.8 s, 8.2 s, 7.9 s, 8.1 s and 8.0 s. The uncertainty is estimated as half of the range. What is the relative uncertainty of the mean as a percentage?",
+      "text": "The travel time of a toy car is measured five times, and the results are $7.8\\,\\text{s}$, $8.2\\,\\text{s}$, $7.9\\,\\text{s}$, $8.1\\,\\text{s}$ and $8.0\\,\\text{s}$. Half of the range is taken as a simple and cautious estimate of the uncertainty. What is the relative uncertainty of the result as a percentage?",
       "answer": 2.5,
       "unit": "%",
-      "tolerance": 0.02
+      "tolerance": 0.21
     },
     {
       "id": "fy1-8-L2-02",
       "level": 2,
-      "text": "A car travels a distance of 3.0 m at a constant speed of 1.5 m/s, and the travel time is measured with a hand stopwatch whose uncertainty is 0.20 s. What is the relative uncertainty of the measured time as a percentage?",
+      "text": "A car covers a distance of $3.0\\,\\text{m}$ at a constant speed of $1.5\\,\\text{m/s}$. The travel time is measured with a hand stopwatch, and the timing uncertainty is $0.20\\,\\text{s}$. What is the relative uncertainty of the measured time as a percentage?",
       "answer": 10,
       "unit": "%",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy1-8-L2-03",
       "level": 2,
-      "text": "In a lab record the position of a car is 90 cm when 2.0 s has passed and 342 cm when 8.0 s has passed. Assume the motion is uniform. What is the speed of the car? Give the answer in m/s.",
+      "text": "In a lab record the position of a car is $90\\,\\text{cm}$ when $2.0\\,\\text{s}$ has passed, and $342\\,\\text{cm}$ when $8.0\\,\\text{s}$ has passed. Assume the motion is uniform. What is the speed of the car? Answer in m/s.",
       "answer": 0.42,
       "unit": "m/s",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy1-8-L2-04",
       "level": 2,
-      "text": "According to a hypothesis the speed of a car is 0.50 m/s, but in the experiment the speed is measured as 0.42 m/s. By how many per cent does the measured value deviate from the value predicted by the hypothesis?",
+      "text": "According to the hypothesis the speed of the car is $0.50\\,\\text{m/s}$, but in the experiment the speed is measured as $0.42\\,\\text{m/s}$. By how many percent does the measured value differ from the value predicted by the hypothesis?",
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
@@ -79,15 +79,15 @@
     {
       "id": "fy1-8-L3-01",
       "level": 3,
-      "text": "A student fits two lines to data points (distance as a function of time): the steepest, with a slope of 0.463 m/s, and the shallowest, with a slope of 0.397 m/s. The data points fit between these lines. The uncertainty is taken as half of the difference of the slopes. How large is the uncertainty of the speed?",
+      "text": "A student fits two lines to the measurement points (distance as a function of time): the steepest, whose slope is $0.463\\,\\text{m/s}$, and the shallowest, whose slope is $0.397\\,\\text{m/s}$. The measurement points fit between these lines. Half of the difference of the slopes of the lines is taken as the uncertainty. How large is the uncertainty of the speed?",
       "answer": 0.033,
       "unit": "m/s",
-      "tolerance": 0.02
+      "tolerance": 0.1
     },
     {
       "id": "fy1-8-L3-02",
       "level": 3,
-      "text": "Hot water cools in a cup. The temperature is 80.0 °C at $t = 0\\,\\text{min}$, 68.0 °C at $5.0\\,\\text{min}$, 52.0 °C at $15.0\\,\\text{min}$ and 47.0 °C at $20.0\\,\\text{min}$. The student's hypothesis is that the temperature falls steadily. How much greater is the rate of fall of temperature during the first five minutes than during the last five minutes? Give the answer in K/min.",
+      "text": "Hot water cools in a cup. The temperature is $80.0\\,{}^\\circ\\text{C}$ at $t = 0\\,\\text{min}$, $68.0\\,{}^\\circ\\text{C}$ at $5.0\\,\\text{min}$, $52.0\\,{}^\\circ\\text{C}$ at $15.0\\,\\text{min}$ and $47.0\\,{}^\\circ\\text{C}$ at $20.0\\,\\text{min}$. The student's hypothesis is that the temperature falls steadily. How much greater is the rate of temperature fall during the first five minutes than during the last five minutes? Answer in K/min.",
       "answer": 1.4,
       "unit": "K/min",
       "tolerance": 0.02
@@ -97,7 +97,7 @@
       "level": 3,
       "text": "60 minutes have been set aside for an investigation. Assembling and testing the equipment takes 12 minutes, and the measurement is made at six different distances. Each measurement repeat takes 2.0 minutes, including returning to the start and recording. How many repeats can be done for each distance, when the number of repeats is the same at every distance?",
       "answer": 4.0,
-      "unit": "repeats",
+      "unit": "toistoa",
       "tolerance": 0.02
     }
   ]

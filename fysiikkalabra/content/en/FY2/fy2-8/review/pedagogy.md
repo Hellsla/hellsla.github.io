@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a86e8c3679b36987
+CONTENT-HASH: d6f234224b94f826
 
 ## Blocking
 - none left (fixes listed under Fixed)
@@ -16,3 +16,4 @@ CONTENT-HASH: a86e8c3679b36987
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): terms against terms.md (emission factor, life-cycle emissions, carbon dioxide equivalent, sustainable energy economy, Given/Find/Principle labels), button and stage names against lang/en.json sims.fy2-8 (Greenhouse gases, Speed, slow/normal/fast); every choice question still has one unambiguous correct answer, and its feedback matches the option; hints and mistakes are complete.
 - Update 2026-10-28: experiment option words (`values`) translated to match the English sim labels; re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, inquiry texts (fossil-fuel wording, check items, feedback, model answer) and criteria

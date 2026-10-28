@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a161c1cfd0a4c1e1
+CONTENT-HASH: 9434cf828cfac2b8
 
 ## Blocking
 (none left)
@@ -15,3 +15,4 @@ CONTENT-HASH: a161c1cfd0a4c1e1
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): same files as science; terminology against terms.md, sim labels (lang/en.json sims.fy2-3: Device A/B, Usage time, Speed, device names), step labels **Given:** … **Reasonableness:**, choice/feedback correspondence, correct answers unambiguous.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md (average-power sentence) against the new Finnish.

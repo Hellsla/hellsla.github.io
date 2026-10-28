@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The Voyager 2 probe left the Earth in 1977. In November 2018 it crossed the heliopause, the boundary beyond which the Sun's solar wind no longer dominates space. According to NASA's JPL, the probe was then 119.7 AU from the Sun, and it is still moving away at a speed of 15.341 km/s. The astronomical unit AU is roughly the distance between the Earth and the Sun. You cannot hold a ruler next to the probe, but you can still give its distance for any day.",
+      "text": "The Voyager 2 probe left the Earth in 1977. In November 2018 it crossed the heliopause, the boundary beyond which the Sun's solar wind no longer dominates space. According to NASA's JPL, the probe was then 119.7 AU from the Sun, and it is still moving away at a speed of $15.341\\,\\text{km/s}$. The astronomical unit AU is roughly the distance between the Earth and the Sun. You cannot hold a ruler next to the probe, but you can still give its distance for any day.",
       "question": "What information do you need to calculate the distance of the probe from the Sun, say a year from now, and what do you assume about its speed?"
     },
     {
@@ -46,20 +46,20 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the shape of the graph",
-      "prompt": "A trolley starts from the zero point and moves uniformly at 2.0 m/s. What does its $(t, s)$ graph look like, when the time $t$ is on the horizontal axis and the position $s$ on the vertical axis?",
+      "prompt": "A trolley starts from the zero point and moves uniformly at $2.0\\,\\text{m/s}$. What does its $(t, s)$ graph look like, when the time $t$ is on the horizontal axis and the position $s$ on the vertical axis?",
       "choices": [
         {
           "text": "A horizontal line, because the speed does not change.",
-          "feedback": "The values of the model rule this out: the position increases by 2.0 m every second, for example at 4.0 s it is 8.0 m. A horizontal line would describe an object that stays in place."
+          "feedback": "The values of the model rule this out: the position increases by $2.0\\,\\text{m}$ every second, for example at $4.0\\,\\text{s}$ it is $8.0\\,\\text{m}$. A horizontal line would describe an object that stays in place."
         },
         {
           "text": "A rising straight line through the origin.",
           "correct": true,
-          "feedback": "The values of the model support this: the position is $2.0\\,\\text{m/s} \\cdot t$, for example 4.0 m at 2.0 s and 8.0 m at 4.0 s. The time doubles and the position doubles, so the points lie on a line that starts from the origin."
+          "feedback": "The values of the model support this: the position is $2.0\\,\\text{m/s} \\cdot t$, for example $4.0\\,\\text{m}$ at $2.0\\,\\text{s}$ and $8.0\\,\\text{m}$ at $4.0\\,\\text{s}$. The time doubles and the position doubles, so the points lie on a line that starts from the origin."
         },
         {
           "text": "A curve bending upwards, because the distance keeps growing.",
-          "feedback": "The values of the model rule this out: the position increases by the same amount, 2.0 m, every second, so the graph does not curve. The distance keeps growing, but steadily. A curve would mean that the speed changes."
+          "feedback": "The values of the model rule this out: the position increases by the same amount, $2.0\\,\\text{m}$, every second, so the graph does not curve. The distance keeps growing, but steadily. A curve would mean that the speed changes."
         }
       ],
       "justify": true,
@@ -73,20 +73,20 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: the time doubles",
-      "prompt": "A trolley starts at $s_0 = 6.0\\,\\text{m}$ and moves at 2.0 m/s. At $t = 2.0\\,\\text{s}$ its position is 10 m. Where is the trolley at $t = 4.0\\,\\text{s}$, when the time is doubled?",
+      "prompt": "A trolley starts at $s_0 = 6.0\\,\\text{m}$ and moves at $2.0\\,\\text{m/s}$. At $t = 2.0\\,\\text{s}$ its position is $10\\,\\text{m}$. Where is the trolley at $t = 4.0\\,\\text{s}$, when the time is doubled?",
       "choices": [
         {
-          "text": "20 m, because the time doubles and the position doubles.",
-          "feedback": "The values of the model rule this out: at 4.0 s the position is 14 m. Only the distance $\\Delta s = vt$ is directly proportional to time, and it grows from 4.0 m to 8.0 m. The position does not double, because the motion started from 6.0 m."
+          "text": "$20\\,\\text{m}$, because the time doubles and the position doubles.",
+          "feedback": "The values of the model rule this out: at $4.0\\,\\text{s}$ the position is $14\\,\\text{m}$. Only the distance $\\Delta s = vt$ is directly proportional to time, and it grows from $4.0\\,\\text{m}$ to $8.0\\,\\text{m}$. The position does not double, because the motion started from $6.0\\,\\text{m}$."
         },
         {
-          "text": "14 m.",
+          "text": "$14\\,\\text{m}$.",
           "correct": true,
-          "feedback": "The values of the model support this: $s = 6.0\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 14\\,\\text{m}$. The distance doubled (4.0 m became 8.0 m), but the position did not, because the initial position 6.0 m stays in the sum."
+          "feedback": "The values of the model support this: $s = 6.0\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 14\\,\\text{m}$. The distance doubled ($4.0\\,\\text{m}$ became $8.0\\,\\text{m}$), but the position did not, because the initial position $6.0\\,\\text{m}$ stays in the sum."
         },
         {
-          "text": "12 m, because the speed is 2.0 m/s and so the position grows by 2.0 m.",
-          "feedback": "The values of the model rule this out. The speed 2.0 m/s is the distance in one second. The interval 2.0 s…4.0 s is two seconds long, so the trolley travels 4.0 m and the position is $10\\,\\text{m} + 4.0\\,\\text{m} = 14\\,\\text{m}$."
+          "text": "$12\\,\\text{m}$, because the speed is $2.0\\,\\text{m/s}$ and so the position grows by $2.0\\,\\text{m}$.",
+          "feedback": "The values of the model rule this out. The speed $2.0\\,\\text{m/s}$ is the distance in one second. The interval $2.0\\,\\text{s}$…$4.0\\,\\text{s}$ is two seconds long, so the trolley travels $4.0\\,\\text{m}$ and the position is $10\\,\\text{m} + 4.0\\,\\text{m} = 14\\,\\text{m}$."
         }
       ],
       "justify": true,
@@ -100,7 +100,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "A trolley moves along a straight track at constant speed. Change the initial position and the speed, start the motion or drag the moment, and see how the $(t, s)$ graph is drawn.",
-      "howto": "Set the initial position $s_0$ and the speed $v$ with the sliders; the time returns to zero. *Start* plays the motion, *Pause* stops it and *Reset* returns to the beginning. You can also drag the *Moment* slider. On the track, the orange vertical lines are the positions of the trolley at whole seconds, the green flag is the initial position and the arrow shows the speed. A straight line is drawn in the graph up to the moment you have reached. When you have reached the moment 6 s, a slope triangle appears in the graph. *Speed (replay)* changes only the pace of the replay.",
+      "howto": "Set the initial position $s_0$ and the speed $v$ with the sliders; the time returns to zero. *Start* plays the motion, *Pause* stops it and *Reset* returns to the beginning. You can also drag the *Moment* slider. On the track, the orange vertical lines are the positions of the trolley at whole seconds, the green flag is the initial position and the arrow shows the speed. A straight line is drawn in the graph up to the moment you have reached. When you have reached the moment $6\\,\\text{s}$, a slope triangle appears in the graph. *Speed (replay)* changes only the pace of the replay.",
       "model": "The trolley moves along a straight track at constant speed: no friction and no acceleration, and the full speed is reached right at the start. The positions on the track and the values in the graph are values calculated by the model, not measurements. The trolley moves in one direction only, so the speed is positive.",
       "calc": "The position is $s = s_0 + vt$ and the distance travelled is $\\Delta s = s - s_0 = vt$. The slope triangle in the graph goes from the moment $t = 2\\,\\text{s}$ to the moment $t = 6\\,\\text{s}$, so $\\Delta t = 4.0\\,\\text{s}$, and the slope $\\Delta s : \\Delta t$ is the speed $v$."
     },
@@ -109,7 +109,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: starting from the zero point",
-      "intro": "Test prediction 1. The initial position $s_0 = 0$ and the speed $v = 2.0\\,\\text{m/s}$ stay constant. Change only the moment $t$ and record the position at at least three moments $t > 0$, for example 2.0 s, 4.0 s and 8.0 s. For each row, calculate the quotient $s : t$. Also look at how the graph is drawn.",
+      "intro": "Test prediction 1. The initial position $s_0 = 0$ and the speed $v = 2.0\\,\\text{m/s}$ stay constant. Change only the moment $t$ and record the position at at least three moments $t > 0$, for example $2.0\\,\\text{s}$, $4.0\\,\\text{s}$ and $8.0\\,\\text{s}$. For each row, calculate the quotient $s : t$. Also look at how the graph is drawn.",
       "initial": {
         "s0": 0,
         "v": 2,
@@ -121,9 +121,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "initial position",
-        "v": "speed",
-        "t": "moment"
+        "s0": "alkupaikka",
+        "v": "nopeus",
+        "t": "hetki"
       },
       "units": {
         "s0": "m",
@@ -162,7 +162,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: starting from 6.0 metres",
-      "intro": "Test prediction 2. Now the initial position is $s_0 = 6.0\\,\\text{m}$ and the speed is still $2.0\\,\\text{m/s}$. Change only the moment $t$ and record the position $s$ and the distance $\\Delta s$ at at least three moments $t > 0$, for example 2.0 s, 4.0 s and 8.0 s. For both columns, calculate the quotient (position or distance) divided by the time $t$.",
+      "intro": "Test prediction 2. Now the initial position is $s_0 = 6.0\\,\\text{m}$ and the speed is still $2.0\\,\\text{m/s}$. Change only the moment $t$ and record the position $s$ and the distance $\\Delta s$ at at least three moments $t > 0$, for example $2.0\\,\\text{s}$, $4.0\\,\\text{s}$ and $8.0\\,\\text{s}$. For both columns, calculate the quotient (position or distance) divided by the time $t$.",
       "initial": {
         "s0": 6,
         "v": 2,
@@ -174,9 +174,9 @@
       ],
       "vary": "t",
       "names": {
-        "s0": "initial position",
-        "v": "speed",
-        "t": "moment"
+        "s0": "alkupaikka",
+        "v": "nopeus",
+        "t": "hetki"
       },
       "units": {
         "s0": "m",
@@ -292,7 +292,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "At time 0 s a cyclist is already 120 m from the starting line and rides away from it uniformly at 21.6 km/h. How far from the starting line is the cyclist 45 s later? Give the answer in metres.",
+      "prompt": "At time $0\\,\\text{s}$ a cyclist is already $120\\,\\text{m}$ from the starting line and rides away from it uniformly at $21.6\\,\\text{km/h}$. How far from the starting line is the cyclist $45\\,\\text{s}$ later? Give the answer in metres.",
       "answer": 390,
       "unit": "m",
       "tolerance": 0.02,
@@ -308,7 +308,7 @@
         },
         {
           "value": 270,
-          "feedback": "You calculated only the distance travelled $vt$. At the start of the interval the cyclist was already 120 m from the starting line, so the position is $s_0 + vt$."
+          "feedback": "You calculated only the distance travelled $vt$. At the start of the interval the cyclist was already $120\\,\\text{m}$ from the starting line, so the position is $s_0 + vt$."
         }
       ],
       "solution": "**Given:** initial position $s_0 = 120\\,\\text{m}$, speed $v = 21.6\\,\\text{km/h}$, time $t = 45\\,\\text{s}$\n\n**Find:** position $s$ from the starting line in metres\n\n**Principle:** The speed of the cyclist is constant, so the motion is uniform, and the position follows the linear model. The initial position is not zero, so it must be added to the distance travelled.\n\n**Formula:** $s = s_0 + vt$\n\n**Conversions:** Substitute $1\\,\\text{km} = 1000\\,\\text{m}$ and $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 21.6\\,\\text{km/h} = \\dfrac{21.6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6.0\\,\\text{m/s}$. The time and the initial position are already in SI units.\n\n**Substitution:** $s = 120\\,\\text{m} + 6.0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s} = 120\\,\\text{m} + 270\\,\\text{m} = 390\\,\\text{m}$\n\n**Answer:** $390\\,\\text{m}$, two significant figures as in the time $45\\,\\text{s}$.\n\n**Reasonableness:** The speed $6\\,\\text{m/s}$ is about $22\\,\\text{km/h}$, and $45\\,\\text{s}$ is three quarters of a minute, so the distance travelled is about $6 \\cdot 45 \\approx 270\\,\\text{m}$. The initial position $120\\,\\text{m}$ is added to this, and the position is greater than the initial position, as it should be when the cyclist moves away."
@@ -342,10 +342,32 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Interpreting a graph",
+      "prompt": "The $(t, s)$ graph of an object is a horizontal line at $s = 4\\,\\text{m}$. What is the object doing?",
+      "choices": [
+        {
+          "text": "The object moves at a constant speed of $4\\,\\text{m/s}$.",
+          "feedback": "This is tempting, because a horizontal line in a $(t, v)$ graph means constant speed. Here, however, the vertical axis shows the position $s$, not the speed. The speed is the slope of the $(t, s)$ graph, and the slope of a horizontal line is zero."
+        },
+        {
+          "text": "The object is at rest at $s = 4\\,\\text{m}$.",
+          "feedback": "Correct. The position does not change as time passes, so $\\Delta s = 0$ and the speed is $v = \\Delta s : \\Delta t = 0$. The slope of a horizontal line is zero.",
+          "correct": true
+        },
+        {
+          "text": "The object moves uniformly, because the graph is a straight line.",
+          "feedback": "The $(t, s)$ graph of uniform motion is a straight line, but a straight line alone does not tell whether the object moves. The speed is the slope of the line, $\\Delta s : \\Delta t$, and in a horizontal line $\\Delta s = 0$, so the speed is zero."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Reading a graph",
+      "title": "3. Reading a graph",
       "prompt": "The line of a $(t, s)$ graph of uniform motion passes through the points $(1.0\\,\\text{s};\\ 7.0\\,\\text{m})$ and $(5.0\\,\\text{s};\\ 19\\,\\text{m})$. What is the initial position $s_0$ of the motion? Give the answer in metres.",
       "answer": 4.0,
       "unit": "m",
@@ -371,7 +393,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and evaluate the model",
+      "title": "4. Explain and evaluate the model",
       "prompt": "Explain why the distance of the Voyager 2 probe from the Sun can be calculated with a linear model, and why the calculated value is a model value and not a measurement.",
       "criteria": [
         "I wrote the equation $s = s_0 + vt$ and named its quantities.",
@@ -386,7 +408,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first on your own and only then open the answer."
+      "text": "Finally, one quick question. Answer first on your own and only then open the answer."
     }
   ]
 }

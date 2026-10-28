@@ -3,7 +3,7 @@
   "contribution": "A measurement result is an estimate that has an error: **random error** scatters the results and is reduced by taking the mean, **systematic error** shifts all results in the same direction and is not removed by repeating, and reliability means both repeatability and accuracy.",
   "learn": [
     "You can tell gross error, random error and systematic error apart and recognise their sources.",
-    "You can calculate a mean and estimate the error of a result using half of the range.",
+    "You can calculate a mean and estimate the scatter of the results using half of the range.",
     "You can correct a systematic error and judge whether a measurement is repeatable and accurate."
   ],
   "prior": [
@@ -25,13 +25,13 @@
       "prompt": "The stopwatch shows the rolling time of the ball as $2.40\\,\\text{s}$. What does the last zero tell you?",
       "choices": [
         {
-          "text": "The time has been measured to the nearest hundredth of a second, and the zero is a significant figure.",
+          "text": "The stopwatch shows hundredths of a second, and the zero is a significant figure.",
           "correct": true,
-          "feedback": "Correct. Significant figures tell how precise a measurement is: $2.40\\,\\text{s}$ is given with three significant figures, and the last one is in the hundredths place. In this chapter the assessment of precision gets a more exact form: the error estimate."
+          "feedback": "Correct. $2.40\\,\\text{s}$ is given with three significant figures, and the last one is in the hundredths place: the stopwatch shows the hundredths. The uncertainty of a time taken by hand can still be much larger, because reaction time varies. In this chapter you learn to estimate it."
         },
         {
           "text": "The zero is useless and can be left out, because $2.4\\,\\text{s}$ is the same result.",
-          "feedback": "As numbers the values are the same, but as measurement results they are not: $2.4\\,\\text{s}$ tells about a precision of one tenth and $2.40\\,\\text{s}$ about a precision of one hundredth. The trailing zero states that the hundredths were really measured."
+          "feedback": "As numbers the values are the same, but as measurement results they are not: $2.4\\,\\text{s}$ says that the reading was taken in tenths, and $2.40\\,\\text{s}$ that the stopwatch shows hundredths. So the trailing zero must not be left out. Even so, the precision of the reading is not a hundredth when the time is taken by hand."
         },
         {
           "text": "The ball rolls exactly 2.40 seconds and not a bit more.",
@@ -127,7 +127,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "random error",
+        "sat": "satunnaisvirhe",
         "sys": "systematic error"
       },
       "units": {
@@ -191,7 +191,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "random error",
+        "sat": "satunnaisvirhe",
         "sys": "systematic error"
       },
       "units": {
@@ -231,7 +231,7 @@
             "feedback": "The difference is not zero. The random part has been damped, but the systematic error $+0.30\\,\\text{s}$ is still in every result and so in the mean."
           }
         ],
-        "solution": "**Given:** the mean of the row $n = 40$ from the table $\\bar{t} = 2.70\\,\\text{s}$ (model value) and the true time $T = 2.40\\,\\text{s}$\n\n**Find:** the difference between the mean and the true time, that is, the measurement error $\\Delta t = \\bar{t} - T$ in the unit $\\text{s}$\n\n**Principle:** A measurement error is the difference between the result and the true value. The random part has already almost cancelled in the mean of 40 repeats, so the remaining difference tells the systematic error.\n\n**Formula:** $\\Delta t = \\bar{t} - T$\n\n**Conversions:** Both times are in seconds, so no conversions are needed.\n\n**Substitution:** $\\Delta t = 2.70\\,\\text{s} - 2.40\\,\\text{s} = 0.30\\,\\text{s}$\n\n**Answer:** $0.30\\,\\text{s}$, two significant figures like the mean in the table. The difference is the same as the set systematic error $+0.30\\,\\text{s}$.\n\n**Reasonableness:** The difference is positive, because the stopwatch shows too much. It is almost exactly the set $0.30\\,\\text{s}$, so 40 repeats damped the random part but did not remove the systematic error."
+        "solution": "**Given:** the mean of the row $n = 40$ from the table $\\bar{t} = 2.70\\,\\text{s}$ (model value) and the true time $T = 2.40\\,\\text{s}$\n\n**Find:** the difference between the mean and the true time, that is, the measurement error $\\bar{t} - T$ in the unit $\\text{s}$\n\n**Principle:** A measurement error is the difference between the result and the true value. The random part has already almost cancelled in the mean of 40 repeats, so the remaining difference tells the systematic error.\n\n**Formula:** difference $\\bar{t} - T$\n\n**Conversions:** Both times are in seconds, so no conversions are needed.\n\n**Substitution:** $\\bar{t} - T = 2.70\\,\\text{s} - 2.40\\,\\text{s} = 0.30\\,\\text{s}$\n\n**Answer:** $0.30\\,\\text{s}$, two significant figures like the mean in the table. The difference is the same as the set systematic error $+0.30\\,\\text{s}$.\n\n**Reasonableness:** The difference is positive, because the stopwatch shows too much. It is almost exactly the set $0.30\\,\\text{s}$, so 40 repeats damped the random part but did not remove the systematic error."
       }
     },
     {
@@ -248,7 +248,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "random error",
+        "sat": "satunnaisvirhe",
         "sys": "systematic error"
       },
       "units": {
@@ -275,7 +275,7 @@
         "type": "numeric",
         "prompt": "How many times larger is half of the range when the random error is $0.30\\,\\text{s}$ than when it is $0.05\\,\\text{s}$?",
         "answer": 6.2,
-        "unit": "times",
+        "unit": "kertaa",
         "tolerance": 0.03,
         "hints": [
           "Read from the table half of the range for both values of random error.",
@@ -288,7 +288,7 @@
             "feedback": "This is the ratio of the random errors $\\dfrac{0.30}{0.05}$. The question asked for the ratio of the halves of the range in the table, and it is almost the same but not exactly, because the results have been rounded to hundredths."
           }
         ],
-        "solution": "**Given:** from the table, halves of the range $\\Delta t_1 = 0.0850\\,\\text{s}$ (random error $0.05\\,\\text{s}$) and $\\Delta t_2 = 0.525\\,\\text{s}$ (random error $0.30\\,\\text{s}$), model values\n\n**Find:** the ratio $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Principle:** The larger the random error, the more the results scatter and the larger half of the range is. The scatter is directly proportional to the size of the random error, so the ratio should be close to the ratio of the random errors.\n\n**Formula:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Conversions:** Both are in seconds and in the ratio the units cancel, so no conversions are needed.\n\n**Substitution:** $k = \\dfrac{0.525\\,\\text{s}}{0.0850\\,\\text{s}} = 6.2$\n\n**Answer:** $6.2$ times, two significant figures like the smaller half of the range in the table.\n\n**Reasonableness:** The ratio of the random errors is $\\dfrac{0.30}{0.05} = 6$, and the obtained $6.2$ is close to it. The small difference is due to the readings of the model being rounded to hundredths of a second."
+        "solution": "**Given:** from the table, halves of the range $\\Delta t_1 = 0.0850\\,\\text{s}$ (random error $0.05\\,\\text{s}$) and $\\Delta t_2 = 0.525\\,\\text{s}$ (random error $0.30\\,\\text{s}$), model values\n\n**Find:** the ratio $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Principle:** The larger the random error, the more the results scatter and the larger half of the range is. The scatter is directly proportional to the size of the random error, so the ratio should be close to the ratio of the random errors.\n\n**Formula:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Conversions:** Both are in seconds and in the ratio the units cancel, so no conversions are needed.\n\n**Substitution:** $k = \\dfrac{0.525\\,\\text{s}}{0.0850\\,\\text{s}} = 6.2$\n\n**Answer:** $6.2$ times. Two significant figures are enough: the readings are rounded to hundredths of a second, so the smaller half of the range $0.0850\\,\\text{s}$ is uncertain already in its second figure, although the table shows three.\n\n**Reasonableness:** The ratio of the random errors is $\\dfrac{0.30}{0.05} = 6$, and the obtained $6.2$ is close to it. The small difference is due to the readings of the model being rounded to hundredths of a second."
       }
     },
     {
@@ -381,17 +381,17 @@
           "feedback": "The mean damps random error, but the result $4.31\\,\\text{s}$ differs from the others by more than a second, while the others are within $0.2\\,\\text{s}$ of each other. It is probably a gross error, and if it were included, it would move the mean about $0.2\\,\\text{s}$ up."
         },
         {
-          "text": "Check the result $4.31\\,\\text{s}$. If the cause is found or it clearly differs from the others, leave it out, measure again and record the reason for leaving it out.",
+          "text": "Check the result $4.31\\,\\text{s}$ and measure again if necessary. The result is left out only if there is a clear reason for it, for example a stopwatch stopped late, and leaving it out is justified and recorded.",
           "correct": true,
-          "feedback": "Correct. The result $4.31\\,\\text{s}$ differs from the others by more than a second, so it is probably a gross error, for example a stopwatch stopped late or a wrongly recorded reading. A gross error is not averaged but removed, and a new measurement is made in its place."
+          "feedback": "Correct. The result $4.31\\,\\text{s}$ differs from the others by more than a second, so it is probably a gross error, for example a stopwatch stopped late or a wrongly recorded reading. If the check reveals a gross error, the result is left out, the reason is recorded and a new measurement is made in its place. Merely differing from the others is not yet a reason to remove a result."
         },
         {
           "text": "Leave out the largest and smallest results, $4.31\\,\\text{s}$ and $3.07\\,\\text{s}$, because the extremes are always wrong.",
-          "feedback": "The extremes are not automatically wrong: $3.07\\,\\text{s}$ is only $0.05\\,\\text{s}$ smaller than the next result, and it belongs to the ordinary scatter. Only a result that clearly differs from the others or whose cause is known is left out, here $4.31\\,\\text{s}$."
+          "feedback": "The extremes are not automatically wrong: $3.07\\,\\text{s}$ is only $0.05\\,\\text{s}$ smaller than the next result, and it belongs to the ordinary scatter. A result that clearly differs, here $4.31\\,\\text{s}$, is checked, and it is left out only if the cause of the error is found."
         },
         {
           "text": "Add the result $4.31\\,\\text{s}$ to the error estimate $\\Delta t$ so that all results fit in the interval.",
-          "feedback": "The error estimate describes random error, that is, ordinary scatter. A gross error is not scatter but a mistake, so including it would inflate the error estimate about sevenfold, from $0.09\\,\\text{s}$ to $0.62\\,\\text{s}$. A result that clearly differs is checked and left out."
+          "feedback": "The error estimate describes random error, that is, ordinary scatter. A gross error is not scatter but a mistake, so including it would inflate the error estimate about sevenfold, from $0.09\\,\\text{s}$ to $0.62\\,\\text{s}$. A result that clearly differs is checked and the measurement is repeated if necessary; the result is left out only for a justified and recorded reason."
         }
       ]
     },
@@ -489,10 +489,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Resolution and uncertainty",
+      "prompt": "A student times the rolling of a ball by hand with a stopwatch that shows hundredths of a second. The stopwatch stops at a reading of $2.47\\,\\text{s}$. What is the most reasonable estimate of the uncertainty of this single time?",
+      "choices": [
+        {
+          "text": "Of the order of tenths of a second, for example about $0.2\\,\\text{s}$, because the stopwatch is started and stopped by hand.",
+          "correct": true,
+          "feedback": "Correct. The smallest step of the display, $0.01\\,\\text{s}$, is the resolution of the stopwatch, but the total uncertainty of a measurement is also affected by the method of measurement. Reaction time varies in starting and stopping, so the uncertainty of a time taken by hand is of the order of tenths of a second. By repeating the measurement you can estimate the scatter with half of the range."
+        },
+        {
+          "text": "$0.01\\,\\text{s}$, because the stopwatch shows hundredths of a second.",
+          "feedback": "Tempting, because the precision of the display is visible directly in the reading. However, $0.01\\,\\text{s}$ is the resolution of the stopwatch, that is, the smallest step the display can show. It alone does not give the uncertainty: in a time taken by hand, the varying reaction time brings an uncertainty of the order of tenths of a second."
+        },
+        {
+          "text": "$0.005\\,\\text{s}$, that is, half of the smallest step of the display.",
+          "feedback": "Half of the smallest scale division is a simple estimate of the uncertainty of a reading when a value is read from a scale. However, the total uncertainty of a measurement is also affected by the method of measurement and other sources of error. Here the reading is easy to record, but a stopwatch started and stopped by hand brings, because of reaction time, an uncertainty of tenths of a second."
+        },
+        {
+          "text": "There is no uncertainty, because a digital display does not require interpreting a scale.",
+          "feedback": "A digital display removes the interpreting of a scale, but not the uncertainty of the method of measurement. Every measurement result has an uncertainty. In a time taken by hand it is caused above all by reaction time, which varies from one measurement to the next."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "3. Calculation",
       "prompt": "The rolling time of a ball is measured five times and the results are $2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$. The error estimate is half of the range. What percentage of the mean is it?",
       "answer": 2.1,
       "unit": "%",
@@ -522,7 +548,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "4. Explain",
       "prompt": "Explain in your own words how you tell random and systematic error apart, what repeating does to them, and what repeatability and accuracy mean.",
       "criteria": [
         "I say that random error varies from one measurement to the next and shows as scatter in the results, whereas a systematic error is in the same direction in every measurement.",

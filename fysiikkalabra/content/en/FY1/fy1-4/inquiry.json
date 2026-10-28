@@ -32,11 +32,11 @@
         {
           "text": "Random error: the reading and the placing of the tape measure vary slightly each time.",
           "correct": true,
-          "feedback": "Correct. Random error scatters the results in both directions around the mean (chapter *Measuring and the reliability of a measurement*). For the same reason the data points do not land exactly on a straight line, and that is why we fit a line to them."
+          "feedback": "Correct. Random error scatters the results in both directions around the mean (chapter *Measuring and the reliability of a measurement*). For the same reason the data points do not usually all land exactly on a straight line, and that is why we fit a line to them."
         },
         {
-          "text": "Gross error (blunder): the experimenter has calculated one of the results wrongly.",
-          "feedback": "A gross error would be a single clearly wrong result. The variation is part of every measurement, even if nobody makes a blunder (chapter *Measuring and the reliability of a measurement*)."
+          "text": "Gross error: the experimenter has made a mistake and calculated one of the results wrongly.",
+          "feedback": "A gross error would be a single clearly wrong result. The variation is part of every measurement, even if nobody makes a mistake (chapter *Measuring and the reliability of a measurement*)."
         }
       ],
       "optional": true
@@ -87,7 +87,7 @@
         {
           "text": "At the mass of the empty measuring cylinder, because when the amount of liquid is zero, only the cylinder remains.",
           "correct": true,
-          "feedback": "The example data support this: the deviation $d$ is smallest when the constant term is about $61\\,\\text{g}$ (about $1\\,\\text{g}$), and that is the mass of the empty cylinder. The constant term $b$ is the value of $y$ when $x = 0$."
+          "feedback": "The example data support this: the deviation $d$ is smallest when the constant term is about $61\\,\\text{g}$ ($d \\approx 1\\,\\text{g}$), and that is the mass of the empty cylinder. The constant term $b$ is the value of $y$ when $x = 0$."
         },
         {
           "text": "At the first data point, about $78.5\\,\\text{g}$.",
@@ -121,7 +121,7 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "data set",
+        "aineisto": "aineisto",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -155,7 +155,7 @@
       ],
       "vary": "b",
       "names": {
-        "aineisto": "data set",
+        "aineisto": "aineisto",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -189,7 +189,7 @@
       ],
       "vary": "k",
       "names": {
-        "aineisto": "data set",
+        "aineisto": "aineisto",
         "k": "slope k",
         "b": "constant term b"
       },
@@ -220,7 +220,7 @@
           },
           {
             "text": "It does not fit, because no line passes through all the points, even if the measurements were accurate.",
-            "feedback": "In no data set does a line pass through all the points, because there is always random error in measurements. Whether the line fits depends on whether the deviations are random or form a pattern."
+            "feedback": "In measured data a line does not usually pass through all the points, because there is random error in measurements. Whether the line fits depends on whether the deviations are random or form a pattern."
           },
           {
             "text": "It fits, because all the deviations are about the same length and the points are close to the line.",
@@ -299,7 +299,7 @@
         },
         {
           "text": "The slope should have been calculated from one point by dividing $s$ by the time $t$, for example $0.6\\,\\text{m} : 1.0\\,\\text{s}$.",
-          "feedback": "One point gives $0.60\\,\\text{m/s}$ (1 s), $0.40\\,\\text{m/s}$ (2 s) and $0.53\\,\\text{m/s}$ (3 s): each value follows the error of that point. In addition, $s : t$ gives the slope only if the line passes through the origin. Two distant points read from the line are a more reliable way."
+          "feedback": "One point gives $0.60\\,\\text{m/s}$ ($1\\,\\text{s}$), $0.40\\,\\text{m/s}$ ($2\\,\\text{s}$) and $0.53\\,\\text{m/s}$ ($3\\,\\text{s}$): each value follows the error of that point. In addition, $s : t$ gives the slope only if the line passes through the origin. Two distant points read from the line are a more reliable way."
         }
       ]
     },
@@ -341,7 +341,7 @@
       "title": "Apply to a new situation",
       "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. On which day from the start of the measurements is the plant 20 cm tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
       "answer": 20,
-      "unit": "d",
+      "unit": "vrk",
       "tolerance": 0.02,
       "hints": [
         "What is the slope of the line and what unit does it use? Calculate it from two points on the line.",
@@ -390,11 +390,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Drawing the line",
+      "prompt": "Six data points lie roughly along a straight line, but not exactly. How is the fit drawn on the graph?",
+      "choices": [
+        {
+          "text": "The points are joined into a broken line so that all the measurements are included.",
+          "feedback": "A broken line would also follow the random error of each measurement. If the measurements were repeated, the points would be somewhere else and the line would be different, even though the phenomenon is the same. A straight line shows the general relationship in the phenomenon."
+        },
+        {
+          "text": "The line is drawn through the middle of the set of points so that there are roughly equal numbers of points on both sides of it.",
+          "feedback": "Correct. Measurement errors are random, so the points deviate from the line in both directions. A good fit runs close to all the points, and it does not have to pass through any of them.",
+          "correct": true
+        },
+        {
+          "text": "The line is drawn through the first two points, because they were measured first.",
+          "feedback": "Two points give the direction of the line poorly: each has its own measurement error, and it affects the steepness of the line. In a fit, all the points are taken into account."
+        },
+        {
+          "text": "The line is always drawn through the origin, because the two quantities are proportional.",
+          "feedback": "The line does not have to pass through the origin. In direct proportionality it does, but if the points show that the line crosses the $y$-axis elsewhere, the constant term $b$ is not zero and the line is drawn according to the points."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
-      "prompt": "The distance $s$ of a hiking trip as a function of time $t$ follows the line fitted to the measurements, which passes through the points $(1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(5.0\\,\\text{h};\\ 19.0\\,\\text{km})$. So the hiker had already travelled some distance when the clock was started. At what number of hours is the distance 25 km? Give the answer in hours.",
+      "title": "3. Calculation",
+      "prompt": "The distance $s$ of a hiking trip as a function of time $t$ follows the line fitted to the measurements, which passes through the points $(1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(5.0\\,\\text{h};\\ 19.0\\,\\text{km})$. So the hiker had already travelled some distance when the clock was started. Assume that the hiker keeps the same pace after the last measurement too. At what number of hours is the distance $25\\,\\text{km}$? Give the answer in hours.",
       "answer": 7.0,
       "unit": "h",
       "tolerance": 0.02,
@@ -413,13 +439,13 @@
           "feedback": "You swapped the slope and the constant term: the line $s = 4.0\\,t + 3.0$ would give $t = (25 - 3.0) : 4.0 = 5.5\\,\\text{h}$. In the correct line the slope is $3.0\\,\\text{km/h}$ (speed) and the constant term is $4.0\\,\\text{km}$ (distance at the moment the clock was started)."
         }
       ],
-      "solution": "**Given:** points on the line $(t_1;\\ s_1) = (1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(t_2;\\ s_2) = (5.0\\,\\text{h};\\ 19.0\\,\\text{km})$; distance $s = 25\\,\\text{km}$\n\n**Find:** the time $t$ at which $s = 25\\,\\text{km}$\n\n**Principle:** The distance increases steadily, so the distance follows the line $s = kt + b$. The slope is calculated from two points on the line and the constant term from one, and the time is solved from the equation of the line.\n\n**Formula:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ and $s = kt + b$, from which\n\n$$t = \\frac{s - b}{k}$$\n\n**Conversions:** None needed: the distances are in kilometres and the times in hours.\n\n**Substitution:** $k = \\dfrac{19.0\\,\\text{km} - 7.0\\,\\text{km}}{5.0\\,\\text{h} - 1.0\\,\\text{h}} = 3.0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7.0\\,\\text{km} - 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1.0\\,\\text{h} = 4.0\\,\\text{km}$ and $t = \\dfrac{25\\,\\text{km} - 4.0\\,\\text{km}}{3.0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7.0\\,\\text{h}$\n\n**Answer:** $7.0\\,\\text{h}$, two significant figures like the slope $3.0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Reasonableness:** Check: $3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7.0\\,\\text{h} + 4.0\\,\\text{km} = 25\\,\\text{km}$. The speed $3.0\\,\\text{km/h}$ is about walking pace. The time is shorter than $25\\,\\text{km} : 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8.3\\,\\text{h}$, because the starting distance of $4.0\\,\\text{km}$ has already been covered."
+      "solution": "**Given:** points on the line $(t_1;\\ s_1) = (1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(t_2;\\ s_2) = (5.0\\,\\text{h};\\ 19.0\\,\\text{km})$; distance $s = 25\\,\\text{km}$\n\n**Find:** the time $t$ at which $s = 25\\,\\text{km}$\n\n**Principle:** The distance increases steadily, so the distance follows the line $s = kt + b$. The slope is calculated from two points on the line and the constant term from one, and the time is solved from the equation of the line.\n\n**Formula:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ and $s = kt + b$, from which\n\n$$t = \\frac{s - b}{k}$$\n\n**Conversions:** None needed: the distances are in kilometres and the times in hours.\n\n**Substitution:** $k = \\dfrac{19.0\\,\\text{km} - 7.0\\,\\text{km}}{5.0\\,\\text{h} - 1.0\\,\\text{h}} = 3.0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7.0\\,\\text{km} - 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1.0\\,\\text{h} = 4.0\\,\\text{km}$ and $t = \\dfrac{25\\,\\text{km} - 4.0\\,\\text{km}}{3.0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7.0\\,\\text{h}$\n\n**Answer:** $7.0\\,\\text{h}$, two significant figures like the slope $3.0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Reasonableness:** Check: $3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7.0\\,\\text{h} + 4.0\\,\\text{km} = 25\\,\\text{km}$. The speed $3.0\\,\\text{km/h}$ is about walking pace. The time is shorter than $25\\,\\text{km} : 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8.3\\,\\text{h}$, because the starting distance of $4.0\\,\\text{km}$ has already been covered. The time $7.0\\,\\text{h}$ is outside the measurements, so the result holds only if the pace really stays the same."
     },
     {
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "4. Explain",
       "prompt": "Explain why the data points are not joined into a broken line, and why the slope of the line is calculated from two points on the line that are far apart and not from two data points.",
       "criteria": [
         "I say that every measurement has a random error, which the broken line would repeat.",
@@ -434,7 +460,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first by yourself and open the answer only after that."
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only after that."
     }
   ]
 }

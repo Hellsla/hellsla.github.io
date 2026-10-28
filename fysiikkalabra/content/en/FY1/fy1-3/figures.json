@@ -12,5 +12,6 @@
  "lukema ": "reading ",
  "lukema": "reading",
  "systemaattinen virhe: nollakohta": "systematic error: zero",
- "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla.": "Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar."
+ "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla.": "Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar.",
+ "Kuvaaja mittakaavassa: heilurin kymmenen heilahduksen aika t viidessä toistossa pisteinä aika-akselilla. Akseli kulkee 12,0 sekunnista 13,0 sekuntiin, pystyviivat ja pienet merkit joka 0,1 sekunnin kohdalla ja numerot joka 0,2 sekunnin kohdalla. Pisteet ovat kohdissa 12,2 s, 12,4 s, 12,6 s, 12,7 s ja 12,9 s.": "Graph to scale: the time t of ten swings of a pendulum in five repeats, shown as dots on a time axis. The axis runs from 12.0 seconds to 13.0 seconds, with vertical lines and small tick marks at every 0.1 seconds and numbers at every 0.2 seconds. The dots are at 12.2 s, 12.4 s, 12.6 s, 12.7 s and 12.9 s."
 }

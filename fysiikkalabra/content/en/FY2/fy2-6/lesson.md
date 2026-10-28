@@ -69,7 +69,7 @@ A power plant does not produce energy out of nothing. It converts the energy of 
 </svg>
 
 ### Renewable and non-renewable energy
-Water, wind and solar radiation are renewable: they do not run out when used. Biofuels such as wood are renewable, because a new forest grows to replace the old one. Coal, oil, natural gas and peat are fossil fuels, and uranium is also a non-renewable resource. The emissions and climate effects of power plants are covered in chapter *Energy production, the environment and climate change*.
+Water, wind and solar radiation are renewable: they do not run out when used. Biofuels such as wood are renewable when a new forest grows to replace the old one. Coal, oil, natural gas and peat are fossil fuels, and uranium is also a non-renewable resource. The emissions and climate effects of power plants are covered in chapter *Energy production, the environment and climate change*.
 
 ### Three groups: how a power plant works in the grid
 Large amounts of electricity cannot be stored directly in the grid, so production must match consumption at every moment. This is why power plants are grouped by how their output can be influenced.

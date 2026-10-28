@@ -3,7 +3,7 @@
 > **Why** does a kilogram of petrol release almost three times as much energy as a kilogram of air-dried firewood, even though both are just burning matter?
 
 ## Key idea
-A fuel is a substance whose chemical energy is released by burning it. Chemical energy is energy stored in the structure of the atoms and molecules of a substance. When a fuel burns, the structure changes and energy is released as heat and light. Energy does not appear out of nothing: chemical energy is transformed into another form. The same is true of food: your body slowly "burns" food and releases energy from it.
+In this chapter a fuel means a chemical fuel: a substance whose chemical energy is released by burning it. The uranium in a nuclear power plant is also called a fuel, but nuclear fuel does not burn: its energy is nuclear energy (chapter *Forms of energy and conservation of energy*). Chemical energy is energy stored in the structure of the atoms and molecules of a substance. When a fuel burns, the structure changes and energy is released as heat and light. Energy does not appear out of nothing: chemical energy is transformed into another form. The same is true of food: your body slowly "burns" food and releases energy from it.
 
 <svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Schematic illustration, not to scale: a pile of firewood contains chemical energy. When it burns, the wood turns into a flame in which the chemical energy is released as heat and light. The energy released is found by multiplying the mass of the fuel by the heat of combustion." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -52,7 +52,7 @@ The table gives the heats of combustion of common fuels. They are net heats of c
 
 Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$) and milled peat ($9\text{–}11\,\text{GJ/t}$, moisture $40\text{–}50\,\%$): Statistics Finland, *Polttoaineluokitus, määritelmät* (2017). Natural gas $48.0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, volume 2, table of default heating values (2006). Typical values: coal (IPCC 2006: $25.8\,\text{MJ/kg}$), diesel (IPCC 2006: $43.0\,\text{MJ/kg}$), petrol ($43\,\text{MJ/kg}$; the IPCC 2006 value for pure petrol is $44.3\,\text{MJ/kg}$, but Finnish petrol contains ethanol, which has a lower heat of combustion) and wood pellets (published typical value). The values are rounded.
 
-<svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Horizontal bar chart of the heats of combustion of fuels in MJ/kg, rounded values: natural gas 49, petrol 43, diesel 43, coal 26, wood pellets 17, firewood 15 and peat 10. The bar lengths are to scale: the bar for natural gas is about five times as long as the bar for peat." style="max-width:100%;font-size:24px">
+<svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Horizontal bar chart of the heats of combustion of fuels in MJ/kg, rounded values: natural gas 48, petrol 43, diesel 43, coal 26, wood pellets 17, firewood (air-dried) 15 and peat 10. The bar lengths are to scale: the natural gas bar is about five times as long as the peat bar." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="150" y="9.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$H\ \left(\text{MJ/kg}\right)$</div></foreignObject>
   <line x1="224" y1="48" x2="224" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -60,9 +60,9 @@ Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$)
   <line x1="360" y1="48" x2="360" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="428" y1="48" x2="428" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="496" y1="48" x2="496" y2="320" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="156" y="52" width="333" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="156" y="52" width="326.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="4" y="50.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{natural gas}$</div></foreignObject>
-  <foreignObject x="499" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$49$</div></foreignObject>
+  <foreignObject x="492.5" y="50.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$48$</div></foreignObject>
   <rect x="156" y="90" width="292.5" height="26" rx="3" fill="url(#fy25-heat)" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="4" y="88.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{petrol}$</div></foreignObject>
   <foreignObject x="458.5" y="88.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$43$</div></foreignObject>
@@ -98,12 +98,12 @@ Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$)
 </svg>
 
 ### Moisture and fuel quality
-Wet wood gives less energy per kilogram than dry wood, because part of the released energy is used to vaporise the water. This is why the firewood in the table is air-dried (moisture $20\text{–}25\,\%$) and the peat is milled peat with a moisture of $40\text{–}50\,\%$. Completely dry wood would have a heat of combustion of about $19\,\text{MJ/kg}$.
+Wet wood gives less energy per kilogram than dry wood, because part of its mass is water, which does not burn, and in addition part of the released energy is used to vaporise this water. This is why the firewood in the table is air-dried (moisture $20\text{–}25\,\%$) and the peat is milled peat with a moisture of $40\text{–}50\,\%$. Completely dry wood would have a heat of combustion of about $19\,\text{MJ/kg}$.
 
-### The energy in food is the same idea
-A nutrition label gives energy per hundred grams, for example $2200\,\text{kJ}$ per $100\,\text{g}$. When you convert the energy to megajoules and the mass to kilograms, the label gives the "heat of combustion" of the food. So the number on the package corresponds to the heat of combustion: it tells you the chemical energy of the food per unit of mass. It is the energy your body can use, so it is slightly smaller than the energy released in burning.
+### The energy content of food and the heat of combustion
+A nutrition label gives energy per hundred grams, for example $2200\,\text{kJ}$ per $100\,\text{g}$. When you convert the energy to megajoules and the mass to kilograms, you get the energy content of the food per unit of mass, here $e = 22\,\text{MJ/kg}$. Both the energy content of food and the heat of combustion of a fuel can be given in the unit $\text{MJ/kg}$. The nutrition label describes the energy the body can use, whereas the heat of combustion of a fuel describes the energy released in burning. So they are not the same quantity: your body does not get all the energy from food that would be released if it burned, because, for example, part of the food is not absorbed from the intestine. The calculation is still the same as with the heat of combustion: the energy of food is $E = em$.
 
-<svg data-fig="etiketti" viewBox="0 0 600 300" role="img" aria-label="Schematic illustration of a nutrition label, an example and not a real product: the package says energy 2200 kJ per hundred grams. When the energy is converted to megajoules and the mass to kilograms, you get a number corresponding to the heat of combustion, 22 MJ/kg." style="max-width:100%;font-size:24px">
+<svg data-fig="etiketti" viewBox="0 0 600 300" role="img" aria-label="Schematic illustration of a nutrition label, an example and not a real product: the package says energy 2200 kJ per hundred grams. When the energy is converted to megajoules and the mass to kilograms, you get the energy content of the food, 22 MJ/kg." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <rect x="30" y="30" width="230" height="220" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="45" y="51.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Nutritional value}$</div></foreignObject>
@@ -117,10 +117,10 @@ A nutrition label gives energy per hundred grams, for example $2200\,\text{kJ}$ 
   <path d="M280,147 L318,147 L318,155 L340,140 L318,125 L318,133 L280,133 Z" fill="url(#fy25-heat)" stroke-linejoin="round"/>
   <foreignObject x="350" y="81.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$2200\,\text{kJ} = 2.2\,\text{MJ}$</div></foreignObject>
   <foreignObject x="350" y="125.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$100\,\text{g} = 0.100\,\text{kg}$</div></foreignObject>
-  <foreignObject x="350" y="175" width="200" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$H = 22\,\dfrac{\text{MJ}}{\text{kg}}$</div></foreignObject>
+  <foreignObject x="350" y="175" width="200" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$e = 22\,\dfrac{\text{MJ}}{\text{kg}}$</div></foreignObject>
 </svg>
 
-| Food | $\text{kJ}$ / $100\,\text{g}$ | $H$ ($\text{MJ/kg}$) |
+| Food | $\text{kJ}$ / $100\,\text{g}$ | $e$ ($\text{MJ/kg}$) |
 | --- | --- | --- |
 | potato, boiled | 300 | 3 |
 | rye bread | 1000 | 10 |
@@ -176,12 +176,12 @@ In kilowatt-hours $E = 90\,\text{MJ} = 90 \cdot (1\,\text{kWh} : 3.6) = 25\,\tex
 - **Energy is not created in burning.** The chemical energy of the fuel is transformed into heat and light, but energy does not appear out of nothing.
 - **Released energy is not useful energy.** In a boiler, a fireplace or an engine, part of the energy is wasted, and the useful share is calculated with efficiency (chapter *Efficiency*).
 
-Burning also produces carbon dioxide, which is covered in the chapter *Energy production, the environment and climate change*.
+Burning carbon-containing fuels, such as wood, peat and fossil fuels, also produces carbon dioxide, which is covered in the chapter *Energy production, the environment and climate change*.
 
 ## Summary
 - The chemical energy of a fuel is released as heat and light when it burns. Energy is not created but transformed.
 - The heat of combustion $H$ is the energy released per kilogram of fuel, with the unit $\text{MJ/kg}$.
 - The energy released is $E = Hm$ when the mass $m$ is in kilograms.
 - The heat of combustion of petrol and diesel is about $43\,\text{MJ/kg}$, of coal $26$, of air-dried wood $15$ and of peat $10\,\text{MJ/kg}$.
-- The $\text{kJ}$ per $100\,\text{g}$ on a food package corresponds to the heat of combustion: the amount of chemical energy in the food per unit of mass.
+- The $\text{kJ}$ per $100\,\text{g}$ on a food package can be converted to $\text{MJ/kg}$ like a heat of combustion, but it describes the energy the body can use, not the energy released in burning.
 - Released energy is not the same as useful energy: useful energy is found with efficiency.

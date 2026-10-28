@@ -149,7 +149,7 @@
       "id": "fy3-s2",
       "title": "Painekattila",
       "source_note": "Taulukon arvot ovat veden mitattuja kiehumislämpötiloja taulukkokirjoista. Arvot on pyöristetty.",
-      "text": "Painekattilan kansi sulkeutuu tiiviisti. Kun vesi kuumenee, kattilan paine nousee. Lopulta venttiili alkaa päästää höyryä ulos. Venttiili pitää kattilan paineen $80\\,\\text{kPa}$ suurempana kuin ulkoilman paine. Ulkoilman paine on $101\\,\\text{kPa}$.\n\n| $p\\ (\\text{kPa})$ | $T_\\text{k}\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $70{,}2$ | $90$ |\n| $84{,}6$ | $95$ |\n| $101{,}3$ | $100$ |\n| $120{,}9$ | $105$ |\n| $143{,}4$ | $110$ |\n| $169{,}2$ | $115$ |\n| $198{,}7$ | $120$ |\n| $232{,}3$ | $125$ |\n\nTaulukossa on veden kiehumislämpötila $T_\\text{k}$ eri paineissa $p$.",
+      "text": "Painekattilan kansi sulkeutuu tiiviisti. Kun vesi kuumenee, kattilan paine nousee. Lopulta venttiili alkaa päästää höyryä ulos. Venttiili pitää kattilan paineen $80\\,\\text{kPa}$ suurempana kuin ulkoilman paine. Ulkoilman paine on $101\\,\\text{kPa}$. Ilma on poistunut kattilasta höyryn mukana jo kuumennuksen aikana. Siksi kannen alla on vain vesihöyryä.\n\n| $p\\ (\\text{kPa})$ | $T_\\text{k}\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $70{,}2$ | $90$ |\n| $84{,}6$ | $95$ |\n| $101{,}3$ | $100$ |\n| $120{,}9$ | $105$ |\n| $143{,}4$ | $110$ |\n| $169{,}2$ | $115$ |\n| $198{,}7$ | $120$ |\n| $232{,}3$ | $125$ |\n\nTaulukossa on veden kiehumislämpötila $T_\\text{k}$ eri paineissa $p$.",
       "parts": [
         {
           "id": "a",
@@ -186,12 +186,12 @@
           "text": "Selitä, miksi vesi kiehuu painekattilassa korkeammassa lämpötilassa kuin avoimessa kattilassa. Selitä myös, miksi ruoka kypsyy painekattilassa nopeammin.",
           "criteria": [
             {
-              "text": "Kytkee kiehumislämpötilan paineeseen. Faasikaavion höyrystymiskäyrä ja taulukko osoittavat: mitä suurempi paine on, sitä korkeammassa lämpötilassa vesi kiehuu.",
+              "text": "Kytkee kiehumislämpötilan paineeseen. Taulukon mukaan vesi kiehuu sitä korkeammassa lämpötilassa, mitä suurempi paine on.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Perustelee hiukkasmallilla: höyrykupla pysyy auki vain, jos sen höyryn paine on yhtä suuri kuin ympäröivä paine. Höyryn paine kasvaa lämpötilan mukana.",
+              "text": "Perustelee, miksi paine vaikuttaa, esimerkiksi hiukkasmallilla: höyrykupla pysyy auki vain, jos sen höyryn paine on yhtä suuri kuin ympäröivä paine. Höyryn paine kasvaa lämpötilan mukana.",
               "tag": "concept",
               "points": 1
             },
@@ -206,7 +206,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Kattilassa on $1{,}50\\,\\text{kg}$ vettä ja lisäksi perunoita. Venttiili sihisee. Silloin levyn teho säädetään $300\\,\\text{W}$:iin. Tehosta $80\\,\\%$ siirtyy kattilan sisältöön ja loput ympäristöön. Kuinka paljon vettä höyrystyy $20$ minuutissa?",
+          "text": "Kattilassa on $1{,}50\\,\\text{kg}$ vettä ja lisäksi perunoita. Venttiili sihisee. Silloin levyn teho säädetään $300\\,\\text{W}$:iin. Tehosta $80\\,\\%$ siirtyy kattilan sisältöön ja loput ympäristöön. Perunat ovat jo lämmenneet läpikotaisin kattilan lämpötilaan. Kuinka paljon vettä höyrystyy $20$ minuutissa?",
           "answer": {
             "value": 0.13,
             "unit": "kg",
@@ -214,7 +214,7 @@
           },
           "criteria": [
             {
-              "text": "Perustelee: lämpötila pysyy vakiona, joten kattilan sisältöön siirtyvä energia kuluu kokonaan veden höyrystämiseen.",
+              "text": "Perustelee: paine ja lämpötila pysyvät vakioina ja perunat ovat jo kattilan lämpötilassa. Siksi kattilan sisältöön siirtyvä energia kuluu kokonaan veden höyrystämiseen.",
               "tag": "transfer",
               "points": 1
             },
@@ -342,7 +342,7 @@
               "detail": "$V_2 = 6{,}0\\,\\text{l} \\cdot \\dfrac{248\\,\\text{kPa}}{101\\,\\text{kPa}} \\approx 15\\,\\text{l}$"
             },
             {
-              "text": "Selittää vaaran: keuhkot eivät voi laajeta näin paljon, joten ilma vahingoittaa niitä. Noustessa on hengitettävä ulos.",
+              "text": "Selittää vaaran: keuhkot eivät voi laajeta näin paljon, joten ilma vahingoittaa niitä. Noustessa hengitetään normaalisti, eikä hengitystä koskaan pidätetä. Silloin laajeneva ilma pääsee ulos keuhkoista.",
               "tag": "communication",
               "points": 1
             }
@@ -352,7 +352,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Sukeltajan säiliön tilavuus on $12{,}0\\,\\text{l}$. Säiliön painemittari näyttää ylipainetta $200\\,\\text{bar}$, missä $1\\,\\text{bar} = 100\\,\\text{kPa}$. Sukeltaja kuluttaa $15{,}0\\,\\text{m}$:n syvyydessä $20\\,\\text{l}$ ilmaa minuutissa. Tämä tilavuus on mitattu syvyyden paineessa. Nousu aloitetaan, kun mittari näyttää $50\\,\\text{bar}$. Kuinka kauan sukeltaja voi olla tässä syvyydessä?",
+          "text": "Sukeltajan säiliön tilavuus on $12{,}0\\,\\text{l}$. Säiliön painemittari näyttää ylipainetta $200\\,\\text{bar}$, missä $1\\,\\text{bar} = 100\\,\\text{kPa}$. Sukeltaja kuluttaa $15{,}0\\,\\text{m}$:n syvyydessä $20\\,\\text{l}$ ilmaa minuutissa. Tämä tilavuus on mitattu syvyyden paineessa. Nousu aloitetaan, kun mittari näyttää $50\\,\\text{bar}$. Oleta, että ilma on yhtä lämmintä säiliössä ja keuhkoissa. Kuinka kauan sukeltaja voi olla tässä syvyydessä?",
           "answer": {
             "value": 36,
             "unit": "min",
@@ -360,7 +360,7 @@
           },
           "criteria": [
             {
-              "text": "Perustelee mallin: ilman lämpötila pysyy samana, joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki).",
+              "text": "Käyttää annettua oletusta: kun lämpötila on sama, ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki).",
               "tag": "transfer",
               "points": 1
             },

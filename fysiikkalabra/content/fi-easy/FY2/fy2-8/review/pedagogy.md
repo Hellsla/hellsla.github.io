@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 13d18515396b662f
+CONTENT-HASH: c810d1dfcc09172f
 
 ## Blocking
 - none left (fixes listed under Fixed)
@@ -18,3 +18,4 @@ CONTENT-HASH: 13d18515396b662f
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): that each text block is plain language (short sentences, main clause first), that physics terms are kept, that no step, hint or feedback was dropped, that the level of demand is the same, and that the correct choice is still unambiguous.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, inquiry texts (fossil-fuel wording, check items, feedback, model answer) and criteria

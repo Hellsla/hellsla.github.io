@@ -44,7 +44,7 @@
         },
         {
           "text": "Liike-energia on pienempi kuin $981\\,\\text{J}$, koska liikkuminen kuluttaa energiaa.",
-          "feedback": "Ilman kitkaa mikään ei muuta energiaa lämmöksi, joten mitään ei kulu. Taulukossa liike-energia ja potentiaalienergia ovat yhdessä aina $981\\,\\text{J}$."
+          "feedback": "Ilman kitkaa mikään ei muuta energiaa lämpöenergiaksi, joten mitään ei kulu. Taulukossa liike-energia ja potentiaalienergia ovat yhdessä aina $981\\,\\text{J}$."
         }
       ]
     },
@@ -86,7 +86,7 @@
       "type": "sim",
       "text": "Simulaatiossa $50\\,\\text{kg}$:n skeittari lähtee levosta half-pipen seinältä korkeudelta $h_0$. Pylväs ja kuvaaja näyttävät jouleina potentiaalienergian, liike-energian ja lämpöenergian.",
       "howto": "Paina *Aloita* ja katso skeittarin liikettä ja energioita. Voit myös vetää *Hetki $t$* -liukusäädintä ja pysäyttää kuvan haluamaasi hetkeen. Valitse *Kitka* (ei kitkaa, pieni tai suuri), *Alkukorkeus $h_0$* ja *Nopeus*. Pylvään sininen osa on $E_\\text{p}$, oranssi osa on $E_\\text{k}$ ja punainen viivoitettu osa on $E_\\text{lämpö}$. Pylvään vieressä oleva katkoviiva näyttää kokonaisenergian.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Skeittarin massa on $50\\,\\text{kg}$. Hän lähtee levosta half-pipen seinältä korkeudelta $h_0$. Half-pipen reunat ovat $3{,}0\\,\\text{m}$ korkealla, ja nollataso on pohja. Ilmanvastus jätetään huomiotta. Kitka muuttaa jokaisella liukumetrillä yhtä paljon liikkeen energiaa lämpöenergiaksi. Mitä pidemmän matkan skeittari liukuu, sitä enemmän lämpöenergiaa syntyy.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Skeittarin massa on $50\\,\\text{kg}$. Hän lähtee levosta half-pipen seinältä korkeudelta $h_0$. Half-pipen reunat ovat $3{,}0\\,\\text{m}$ korkealla, ja nollataso on pohja. Ilmanvastus jätetään huomiotta. Kitka muuttaa jokaisella liukumetrillä yhtä paljon liikkeen energiaa lämpöenergiaksi. Mitä pidemmän matkan skeittari liukuu, sitä enemmän energiaa muuttuu lämpöenergiaksi.",
       "calc": "Simulaatio laskee skeittarin liikkeen pienin aika-askelin. Potentiaalienergia lasketaan korkeudesta ja liike-energia nopeudesta. Lämpöenergia lasketaan siitä, kuinka paljon kitka on muuttanut liikkeen energiaa matkan varrella. Näiden kaavoja ei tarvita tässä luvussa. Kolme energiaa lasketaan erikseen, ja vasta sitten ne lasketaan yhteen. Siksi summan pysyminen samana on laskennan tulos eikä oletus. Näytetyt luvut pyöristetään kokonaisiksi jouleiksi."
     },
     {
@@ -267,7 +267,7 @@
             "feedback": "Tämä on ensimmäisen pompun aikana muuttunut energia, $0{,}60\\,\\text{J} - 0{,}48\\,\\text{J}$. Kysyttiin kolmea pomppua. Käytä siksi loppuarvona kolmannen pompun jälkeistä arvoa."
           }
         ],
-        "solution": "**Annettu:** mekaaninen energia pudotushetkellä $E_\\text{alussa} = 0{,}60\\,\\text{J}$ ja kolmen pompun jälkeen $E_\\text{mek} = 0{,}31\\,\\text{J}$ (taulukosta, simuloitua esimerkkiaineistoa)\n\n**Kysytty:** energia, joka on muuttunut lämpöenergiaksi, $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Pallo ja lattia muodostavat eristetyn systeemin. Siksi energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Pallolta puuttuu osa mekaanisesta energiasta. Tämä energia ei ole kadonnut. Se on muuttunut lämpöenergiaksi.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{mek} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{mek}$\n\n**Muunnokset:** Kaikki energiat ovat jouleina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $E_\\text{lämpö} = 0{,}60\\,\\text{J} - 0{,}31\\,\\text{J} = 0{,}29\\,\\text{J}$\n\n**Vastaus:** $0{,}29\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa ja kaksi desimaalia, kuten taulukon arvoissa.\n\n**Järkevyys:** Kolmen pompun jälkeen mekaanista energiaa on vielä $0{,}31\\,\\text{J}$. Lasketaan yhteen: $0{,}31\\,\\text{J} + 0{,}29\\,\\text{J} = 0{,}60\\,\\text{J}$. Tämä on alkuenergia. Jokaisessa pompussa noin viidesosa jäljellä olevasta energiasta muuttuu lämmöksi ($0{,}12\\,\\text{J}$, $0{,}10\\,\\text{J}$, $0{,}07\\,\\text{J}$). Nämä kolme ovat yhteensä $0{,}29\\,\\text{J}$."
+        "solution": "**Annettu:** mekaaninen energia pudotushetkellä $E_\\text{alussa} = 0{,}60\\,\\text{J}$ ja kolmen pompun jälkeen $E_\\text{mek} = 0{,}31\\,\\text{J}$ (taulukosta, simuloitua esimerkkiaineistoa)\n\n**Kysytty:** energia, joka on muuttunut lämpöenergiaksi, $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Pallo ja lattia muodostavat eristetyn systeemin. Siksi energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Pallolta puuttuu osa mekaanisesta energiasta. Tämä energia ei ole kadonnut. Se on muuttunut lämpöenergiaksi.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{mek} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{mek}$\n\n**Muunnokset:** Kaikki energiat ovat jouleina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $E_\\text{lämpö} = 0{,}60\\,\\text{J} - 0{,}31\\,\\text{J} = 0{,}29\\,\\text{J}$\n\n**Vastaus:** $0{,}29\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa ja kaksi desimaalia, kuten taulukon arvoissa.\n\n**Järkevyys:** Kolmen pompun jälkeen mekaanista energiaa on vielä $0{,}31\\,\\text{J}$. Lasketaan yhteen: $0{,}31\\,\\text{J} + 0{,}29\\,\\text{J} = 0{,}60\\,\\text{J}$. Tämä on alkuenergia. Jokaisessa pompussa noin viidesosa jäljellä olevasta energiasta muuttuu lämpöenergiaksi ($0{,}12\\,\\text{J}$, $0{,}10\\,\\text{J}$, $0{,}07\\,\\text{J}$). Nämä kolme ovat yhteensä $0{,}29\\,\\text{J}$."
       }
     },
     {
@@ -348,7 +348,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Pyöräilijä nousee mäkeä ylös tasaisella nopeudella. Hänen lihaksissaan vapautuu kemiallista energiaa $420\\,\\text{kJ}$. Hänen ja pyörän potentiaalienergia kasvaa $85\\,\\text{kJ}$. Liike-energia ei muutu. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy? Vastaa kilojouleina.",
+      "prompt": "Pyöräilijä nousee mäkeä ylös tasaisella nopeudella. Hänen lihaksissaan vapautuu kemiallista energiaa $420\\,\\text{kJ}$. Hänen ja pyörän potentiaalienergia kasvaa $85\\,\\text{kJ}$. Liike-energia ei muutu. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi? Vastaa kilojouleina.",
       "answer": 335,
       "unit": "kJ",
       "tolerance": 0.02,
@@ -371,7 +371,7 @@
           "feedback": "Tämä on koko kemiallinen energia. Osa siitä muuttui potentiaalienergiaksi, joten vähennä $85\\,\\text{kJ}$."
         }
       ],
-      "solution": "**Annettu:** kemiallinen energia $E_\\text{kem} = 420\\,\\text{kJ}$, potentiaalienergian kasvu $E_\\text{p} = 85\\,\\text{kJ}$, liike-energian muutos $0\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{kJ}$\n\n**Periaate:** Pyöräilijä, pyörä ja ympäristö muodostavat eristetyn systeemin. Siksi energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Vauhti ei muutu, joten liike-energia ei muutu. Kemiallinen energia muuttuu potentiaalienergiaksi ja lämpöenergiaksi.\n\n**Kaava:** $E_\\text{kem} = E_\\text{p} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{kem} - E_\\text{p}$\n\n**Muunnokset:** Molemmat energiat ovat kilojouleina. Myös vastaus kysytään kilojouleina. Muunnoksia ei siis tarvita.\n\n**Sijoitus:** $E_\\text{lämpö} = 420\\,\\text{kJ} - 85\\,\\text{kJ} = 335\\,\\text{kJ}$\n\n**Vastaus:** $335\\,\\text{kJ}$ kokonaisina kilojouleina. Molemmat energiat on annettu kilojoulen tarkkuudella.\n\n**Järkevyys:** Potentiaalienergiaksi päätyy $85\\,\\text{kJ}$ ja lämpöenergiaksi $335\\,\\text{kJ}$. Yhteensä ne ovat $420\\,\\text{kJ}$. Se on yhtä paljon kuin lihasten kemiallinen energia. Lämpöä syntyy noin neljä kertaa enemmän kuin hyötyä. Ihmisen lihakset ovat tunnetusti tehottomia: pyöräilijä hikoilee."
+      "solution": "**Annettu:** kemiallinen energia $E_\\text{kem} = 420\\,\\text{kJ}$, potentiaalienergian kasvu $E_\\text{p} = 85\\,\\text{kJ}$, liike-energian muutos $0\\,\\text{kJ}$\n\n**Kysytty:** energia, joka muuttuu lämpöenergiaksi, $E_\\text{lämpö}$ yksikössä $\\text{kJ}$\n\n**Periaate:** Pyöräilijä, pyörä ja ympäristö muodostavat eristetyn systeemin. Siksi energia säilyy: $E_\\text{alussa} = E_\\text{lopussa}$. Vauhti ei muutu, joten liike-energia ei muutu. Kemiallinen energia muuttuu potentiaalienergiaksi ja lämpöenergiaksi.\n\n**Kaava:** $E_\\text{kem} = E_\\text{p} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{kem} - E_\\text{p}$\n\n**Muunnokset:** Molemmat energiat ovat kilojouleina. Myös vastaus kysytään kilojouleina. Muunnoksia ei siis tarvita.\n\n**Sijoitus:** $E_\\text{lämpö} = 420\\,\\text{kJ} - 85\\,\\text{kJ} = 335\\,\\text{kJ}$\n\n**Vastaus:** $335\\,\\text{kJ}$ kokonaisina kilojouleina. Molemmat energiat on annettu kilojoulen tarkkuudella.\n\n**Järkevyys:** Potentiaalienergiaksi päätyy $85\\,\\text{kJ}$ ja lämpöenergiaksi $335\\,\\text{kJ}$. Yhteensä ne ovat $420\\,\\text{kJ}$. Se on yhtä paljon kuin lihasten kemiallinen energia. Lämpöenergiaksi muuttuu noin neljä kertaa enemmän energiaa kuin hyötyenergiaksi. Ihmisen lihakset ovat tunnetusti tehottomia: pyöräilijä hikoilee."
     },
     {
       "id": "tehtavat",
@@ -397,7 +397,7 @@
         },
         {
           "text": "Lämpöenergiana.",
-          "feedback": "Lämpöenergiaa syntyy vasta reaktorissa, kun ydinreaktiot lämmittävät vettä. Ennen sitä energia on sitoutunut uraanin atomiytimiin. Se on siis ydinenergiaa."
+          "feedback": "Energia muuttuu lämpöenergiaksi vasta reaktorissa, kun ydinreaktiot lämmittävät vettä. Ennen sitä energia on sitoutunut uraanin atomiytimiin. Se on siis ydinenergiaa."
         },
         {
           "text": "Sähköenergiana.",
@@ -410,7 +410,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Laskeminen",
-      "prompt": "Hehkulamppu ottaa sähköenergiaa $2{,}5\\,\\text{kJ}$ ja muuttaa siitä näkyväksi valoksi $0{,}12\\,\\text{kJ}$. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon lämpöenergiaa syntyy? Vastaa jouleina.",
+      "prompt": "Hehkulamppu ottaa sähköenergiaa $2{,}5\\,\\text{kJ}$ ja muuttaa siitä näkyväksi valoksi $0{,}12\\,\\text{kJ}$. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi? Vastaa jouleina.",
       "answer": 2380,
       "unit": "J",
       "tolerance": 0.02,
@@ -433,7 +433,7 @@
           "feedback": "Laskit sähköenergian ja valon yhteen. Sähköenergia jakautuu kahteen osaan. Vähennä siksi valo sähköenergiasta."
         }
       ],
-      "solution": "**Annettu:** sähköenergia $E_\\text{sähkö} = 2{,}5\\,\\text{kJ}$, näkyvä valo $E_\\text{valo} = 0{,}12\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Lamppu muuttaa sähköenergian näkyväksi valoksi ja lämpöenergiaksi. Lämpöenergia lämmittää lamppua ja ympäristöä. Osa siitä lähtee lampusta lämpösäteilynä. Energiaa ei synny eikä katoa, joten $E_\\text{alussa} = E_\\text{lopussa}$.\n\n**Kaava:** $E_\\text{sähkö} = E_\\text{valo} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{sähkö} - E_\\text{valo}$\n\n**Muunnokset:** Etuliite kilo tarkoittaa tuhatta. Siksi $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Vastaus:** $2{,}4 \\cdot 10^{3}\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa. Sähköenergia $2{,}5\\,\\text{kJ}$ on annettu sadan joulen tarkkuudella, ja se rajoittaa erotusta.\n\n**Järkevyys:** Näkyväksi valoksi muuttuu vain $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0{,}05$ eli noin viisi prosenttia. Tämä on hehkulampulle tavallista. Loput on lämpöä. Takaisinlasku: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
+      "solution": "**Annettu:** sähköenergia $E_\\text{sähkö} = 2{,}5\\,\\text{kJ}$, näkyvä valo $E_\\text{valo} = 0{,}12\\,\\text{kJ}$\n\n**Kysytty:** energia, joka muuttuu lämpöenergiaksi, $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Lamppu muuttaa sähköenergian näkyväksi valoksi ja lämpöenergiaksi. Lämpöenergia lämmittää lamppua ja ympäristöä. Osa siitä lähtee lampusta lämpösäteilynä. Energiaa ei synny eikä katoa, joten $E_\\text{alussa} = E_\\text{lopussa}$.\n\n**Kaava:** $E_\\text{sähkö} = E_\\text{valo} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{sähkö} - E_\\text{valo}$\n\n**Muunnokset:** Etuliite kilo tarkoittaa tuhatta. Siksi $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Vastaus:** $2{,}4 \\cdot 10^{3}\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa. Sähköenergia $2{,}5\\,\\text{kJ}$ on annettu sadan joulen tarkkuudella, ja se rajoittaa erotusta.\n\n**Järkevyys:** Näkyväksi valoksi muuttuu vain $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0{,}05$ eli noin viisi prosenttia. Tämä on hehkulampulle tavallista. Loput on lämpöenergiaa. Takaisinlasku: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
     },
     {
       "id": "check-3",

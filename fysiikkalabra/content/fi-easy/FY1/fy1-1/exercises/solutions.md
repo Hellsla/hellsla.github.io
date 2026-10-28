@@ -9,14 +9,15 @@
 **Järkevyys:** Mikrometri on tuhannesosa millimetristä, joten $7{,}5\,\mu\text{m} = 0{,}0075\,\text{mm}$. Punasolu on siis paljon hiusta ohuempi ja näkyy vain mikroskoopilla. Tämä sopii tuttuun tietoon.
 
 ## fy1-1-L1-02
-**Annettu:** vetyatomin suuruusluokka $10^{-10}\,\text{m}$ eli $n_\text{atomi} = -10$ ja muurahaisen $10^{-2}\,\text{m}$ eli $n_\text{muurahainen} = -2$
+**Annettu:** kuva, jossa vetyatomi ja muurahainen on merkitty koon $d$ kymmenpotenssiakselille
 **Kysytty:** suuruusluokkien ero eli kymmenpotenssin askelten määrä
-**Periaate:** Suuruusluokan eksponentti kertoo, missä kymmenpotenssissa koko on. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Askelten määrä on eksponenttien erotus, suuremmasta pienempi.
+**Periaate:** Akselilla jokainen viiva on kymmenpotenssi. Yksi askel oikealle on kymmenkertainen koko. Kohteen suuruusluokan eksponentti luetaan sen kohdalla olevasta viivasta. Askelten määrä on eksponenttien erotus.
+**Kuvaajan lukeminen:** Vetyatomin merkki on viivalla $10^{-10}\,\text{m}$, joten $n_\text{atomi} = -10$. Muurahaisen merkki on viivalla $10^{-2}\,\text{m}$, joten $n_\text{muurahainen} = -2$.
 **Kaava:** $\text{askelia} = n_\text{muurahainen} - n_\text{atomi}$
 **Muunnokset:** Ei tarvita. Eksponentit ovat lukuja, joilla ei ole yksikköä.
 **Sijoitus:** $\text{askelia} = -2 - (-10) = -2 + 10 = 8$
-**Vastaus:** $8$ suuruusluokkaa; luku on kokonaisluku, koska suuruusluokat on annettu kymmenpotensseina.
-**Järkevyys:** Kahdeksan askelta tarkoittaa noin $10^{8}$ eli sata miljoonaa kertaa suurempaa kokoa. Muurahainen on selvästi atomia isompi. Siksi positiivinen ero on järkevä.
+**Vastaus:** $8$ suuruusluokkaa; luku on kokonaisluku, koska merkit ovat tasan viivoilla.
+**Järkevyys:** Merkkien välissä on kuvassa kahdeksan väliä, joten kahdeksan askelta täsmää. Kahdeksan askelta tarkoittaa noin $10^{8}$ eli sata miljoonaa kertaa suurempaa kokoa. Muurahainen on selvästi atomia isompi. Siksi positiivinen ero on järkevä.
 
 ## fy1-1-L1-03
 **Annettu:** $d = 1{,}27\cdot10^{7}\,\text{m}$ ja $1\,\text{km} = 1000\,\text{m} = 10^{3}\,\text{m}$

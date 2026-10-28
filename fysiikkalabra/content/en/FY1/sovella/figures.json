@@ -1,4 +1,4 @@
 {
- "Kuvaaja: pallon paikka s metreinä ajan t funktiona. Kolme ensimmäistä pistettä ovat rampilta ja kaartuvat ylöspäin. Lattialla otetut pisteet ovat suoralla, jonka kulmakerroin on 0,80 m/s. Suoralta on luettu pisteet (0,6 s; 0,32 m) ja (2,0 s; 1,44 m).": "Graph: position s of the ball in metres as a function of time t. The first three points are from the ramp and curve upwards. The points taken on the floor lie on a line with a slope of 0.80 m/s. The points (0.6 s; 0.32 m) and (2.0 s; 1.44 m) have been read from the line.",
+ "Kuvaaja: pallon paikka s metreinä ajan t funktiona. Kaksi ensimmäistä pistettä ovat rampilta ja jäävät suoran yläpuolelle; hetkellä 0,4 s pallo on rampin alapäässä. Lattialla otetut pisteet ovat suoralla, jonka kulmakerroin on 0,80 m/s. Suoralta on luettu pisteet (0,6 s; 0,32 m) ja (2,0 s; 1,44 m).": "Graph: position s of the ball in metres as a function of time t. The first two points are from the ramp and lie above the line; at 0.4 s the ball is at the bottom of the ramp. The points taken on the floor lie on a line with slope 0.80 m/s. The points (0.6 s; 0.32 m) and (2.0 s; 1.44 m) have been read from the line.",
  "ramppi": "ramp"
 }

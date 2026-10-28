@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7391e70c58326e24
+CONTENT-HASH: 25b3b8271f7e1134
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -18,3 +18,4 @@ CONTENT-HASH: 7391e70c58326e24
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md was already genuine Selkeä suomi (lists for the plan and the lab record, short sentences); all tasks, hints, feedback and model answers keep the same demand and steps; Finnish step labels unchanged; correct choices unambiguous and feedback matches its option.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (check-c2 items, renumbered titles, table, graph text, solutions, model answer, feedback) and exit-ticket.json against the new Finnish; en decimal point, fi-easy simplicity and unambiguous correct option.

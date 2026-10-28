@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4b3378953f1912c8
+CONTENT-HASH: 25908ffbf1d7d5d7
 
 ## Blocking
 (none left)
@@ -15,3 +15,4 @@ CONTENT-HASH: 4b3378953f1912c8
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): same files; Selkeä suomi (short main-clause-first sentences, terms kept and explained: nimellisteho, keskiteho), same cognitive demand, no steps, hints or feedback dropped; correct choices unambiguous; step labels unchanged; sim labels (lang/fi-easy.json sims.fy2-3) match.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md (average-power sentence) against the new Finnish.

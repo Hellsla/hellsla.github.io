@@ -1,6 +1,6 @@
 # Graphing and fitting a straight line
 
-> **Why** do data points never land exactly on one straight line, and yet a single line drawn through them can reveal a law of nature?
+> **Why** do data points not usually all land exactly on one straight line, and yet a single line fitted to them can reveal the relationship between the quantities?
 
 ## Key idea
 ### A graph brings the measurements together
@@ -65,14 +65,14 @@ A graph needs axes with the quantity and its unit written at the end, such as $s
 </svg>
 
 ### Fit a line, do not join the points
-The data points do not fall exactly on a straight line, because every measurement contains random error (chapter *Measuring and the reliability of a measurement*). So you do not join the points into a broken line, since that line would follow the errors too. Instead you fit one straight line that runs through the middle of the set of points.
+In real data sets the data points do not usually lie exactly on one straight line, because of measurement uncertainty, especially random error (chapter *Measuring and the reliability of a measurement*). So you do not join the points into a broken line, since that line would follow the errors too. Instead you fit one straight line that runs through the middle of the set of points.
 
 A good fit is close to all the points and does not lean towards any single point. There are roughly as many points on each side of the line, and the deviations above and below cancel each other. The line does not have to pass through any point. If one point is clearly further away than the others, it is worth finding out why, and you do not drop the point automatically.
 
 ### Linear model
-If the points lie along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero.
+If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero.
 
-When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The model holds in the range that was measured. If the points curve systematically around the line, for example all the points are above the line at the ends and below it in the middle, the linear model does not fit.
+When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements show that the model holds only in the range that was measured. If the line is extended beyond the measured range, you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example all the points are above the line at the ends and below it in the middle, the linear model does not fit.
 
 ## Formula: Equation of a straight line
 The graph of a linear model is a straight line with the equation
@@ -151,7 +151,7 @@ The temperature $T$ of the water in a kettle was measured every minute:
 | 4 | 52.4 |
 | 5 | 59.6 |
 
-Fit a straight line to the data points, find its equation $T = kt + b$ and use it to work out when the water temperature is 40 °C. The power of the kettle is constant.
+Fit a straight line to the data points, find its equation $T = kt + b$ and use it to work out when the water temperature is $40\,{}^\circ\text{C}$. The power of the kettle is constant, and the heat losses are small.
 
 <svg data-fig="kettle" viewBox="0 0 600 350" role="img" aria-label="Graph drawn to scale: the temperature T of the water in a kettle as a function of time t. Six data points, one minute apart, are scattered around the line T = 8.0 °C/min · t + 20 °C. Two points far apart have been read from the line, (0 min; 20 °C) and (5.0 min; 60 °C). A dashed line shows that the line reaches the temperature 40 °C at 2.5 min." style="max-width:100%;font-size:24px">
   <line x1="158.5" y1="300" x2="158.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -211,7 +211,7 @@ Fit a straight line to the data points, find its equation $T = kt + b$ and use i
 
 <!-- vaihe -->
 
-**Principle.** The power of the kettle is constant, so the water temperature rises steadily and the linear model $T = kt + b$ fits. The line is drawn so that there are points on both sides of it and each point is close to the line. The slope is calculated from the points $A$ and $B$ on the line, not from the data points.
+**Principle.** The power of the kettle is constant and the heat losses are small in this temperature range, so the water temperature rises almost steadily and the linear model $T = kt + b$ fits. The line is drawn so that there are points on both sides of it and each point is close to the line. The slope is calculated from the points $A$ and $B$ on the line, not from the data points.
 
 <!-- vaihe -->
 
@@ -247,14 +247,14 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Result.** The equation of the line is $T = 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot t + 20\,{}^\circ\text{C}$, and the temperature 40 °C is reached after about 2.5 minutes. The results are given to two significant figures, because $k$ is determined from points read to two figures.
+**Result.** The equation of the line is $T = 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot t + 20\,{}^\circ\text{C}$, and the temperature $40\,{}^\circ\text{C}$ is reached after about 2.5 minutes. The results are given to two significant figures, because $k$ is determined from points read to two figures.
 
 <!-- vaihe -->
 
-**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water before heating, that is, room temperature, and the slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, 40 °C is passed between the third and fourth measurements, since $T$ is 36.5 °C at two minutes and 43.8 °C at three minutes, so 2.5 min is in the right interval. The points deviate from the line by at most about one degree.
+**Reasonableness.** The constant term $20\,{}^\circ\text{C}$ is the temperature of the water before heating, that is, room temperature, and the slope $8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ tells you how fast the water warms up. In the table, $40\,{}^\circ\text{C}$ is passed between the third and fourth measurements, since $T$ is $36.5\,{}^\circ\text{C}$ at two minutes and $43.8\,{}^\circ\text{C}$ at three minutes, so $2.5\,\text{min}$ is in the right interval. The points deviate from the line by at most about one degree.
 
 ## Common misconception
-Many students join the data points with a line, or force the line to pass through one of the data points, even though that point is just one erroneous measurement. The line is fitted to the set of points, and it passes between the points.
+Many students join the data points with a line, or force the line to pass through one of the data points, even though that point, too, has measurement uncertainty. The line is fitted to the whole set of points; it may pass through some point, but it does not have to.
 
 Another mistake is to calculate the slope from two data points. Then the error in each point affects the result, and if the points are also close together, the result is uncertain. Read the points from the fitted line and far apart.
 

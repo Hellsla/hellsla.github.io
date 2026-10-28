@@ -4,10 +4,6 @@
     "a": "$\\rho = \\dfrac{m}{V} = \\dfrac{108\\,\\text{g}}{40\\,\\text{cm}^3} = 2.7\\,\\tfrac{\\text{g}}{\\text{cm}^3}$."
   },
   {
-    "q": "The volume of a cube doubles, but the substance stays the same. What happens to the mass and the density of the cube?",
-    "a": "The mass doubles, because mass is directly proportional to volume, $m = \\rho V$. The density does not change, because it is a property of the substance and the ratio $m : V$ stays the same."
-  },
-  {
     "q": "The volume of a water bottle is $1.5\\,\\text{dm}^3$. What is the mass of the water ($\\rho = 1000\\,\\text{kg/m}^3$)? Which conversion is needed?",
     "a": "The volume is converted to cubic metres: $1.5\\,\\text{dm}^3 = 1.5 \\cdot 10^{-3}\\,\\text{m}^3$. Then $m = \\rho V = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 1.5 \\cdot 10^{-3}\\,\\text{m}^3 = 1.5\\,\\text{kg}$."
   }

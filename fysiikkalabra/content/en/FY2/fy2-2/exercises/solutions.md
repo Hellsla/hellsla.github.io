@@ -70,13 +70,13 @@
 
 ## fy2-2-L2-03
 **Given:** electrical energy $E_\text{electric} = 6.0\,\text{kJ}$, energy turned into light $E_\text{light} = 1.5\,\text{kJ}$; the light is absorbed by the surfaces of the room
-**Find:** thermal energy produced in the room $E_\text{heat}$ in kilojoules
-**Principle:** Energy is conserved. The heat of the lamp is $E_\text{electric} - E_\text{light}$, and when the light is absorbed, it also turns into heat. No energy leaves the room as light.
+**Find:** energy that turned into thermal energy in the room $E_\text{heat}$ in kilojoules
+**Principle:** Energy is conserved. The thermal energy of the lamp is $E_\text{electric} - E_\text{light}$, and when the light is absorbed, it also turns into thermal energy. No energy leaves the room as light.
 **Formula:** $E_\text{heat} = (E_\text{electric} - E_\text{light}) + E_\text{light} = E_\text{electric}$
 **Conversions:** Not needed: all energies are given in kilojoules.
 **Substitution:** $E_\text{heat} = (6.0\,\text{kJ} - 1.5\,\text{kJ}) + 1.5\,\text{kJ} = 4.5\,\text{kJ} + 1.5\,\text{kJ} = 6.0\,\text{kJ}$
 **Answer:** $6.0\,\text{kJ}$, two significant figures as in the given electrical energy.
-**Reasonableness:** All the electrical energy ends up as heat, as at the end of a chain whenever nothing is stored. The light is not stored anywhere but heats the surfaces.
+**Reasonableness:** All the electrical energy ends up as thermal energy, as at the end of a chain whenever nothing is stored. The light is not stored anywhere but heats the surfaces.
 
 ## fy2-2-L2-04
 **Given:** a tonne of TNT $E_\text{TNT} = 4.2\,\text{GJ}$ and a chocolate bar ($200\,\text{g}$) $E_\text{chocolate} = 4.4\,\text{MJ}$
@@ -106,7 +106,7 @@
 **Conversions:** Replace the prefix tera with its value: $230\,\text{TJ} = 230 \cdot 1000\,\text{GJ} = 230\,000\,\text{GJ}$
 **Substitution:** $E_\text{sea} = 370\,\text{TJ} - 140\,\text{TJ} = 230\,\text{TJ} = 230\,000\,\text{GJ}$, and $N = 230\,000\,\text{GJ} : 72\,\text{GJ} = 3194$
 **Answer:** About $3200$ detached houses, two significant figures as in the data $72\,\text{GJ}$, $140\,\text{TJ}$ and $370\,\text{TJ}$.
-**Reasonableness:** More energy goes to the sea than into electricity, as is usual in power plants that run on heat: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Estimate: $200\,000 : 70 \approx 3000$, so thousands of houses is the right order of magnitude. The waste heat of one day would therefore be enough to heat a whole small town for a year.
+**Reasonableness:** More energy goes to the sea than into electricity, as is usual in power plants that run on heat: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Estimate: $200\,000 : 70 \approx 3000$, so thousands of houses is the right order of magnitude. This amount of energy therefore corresponds to heating a small town for a year, but the heat going to the sea is too cool for district heating; in combined heat and power production the steam is condensed at a higher temperature, so the heat can be recovered and slightly less electricity is produced.
 
 ## fy2-2-L3-03
 **Given:** energy of the reactor per day $E = 370\,\text{TJ}$, $4.5\,\text{kg}$ of uranium-235 and the energy of petrol per litre $E_\text{litre} = 32\,\text{MJ}/\textsf{l}$

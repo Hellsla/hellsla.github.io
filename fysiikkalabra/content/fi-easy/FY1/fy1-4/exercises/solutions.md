@@ -6,7 +6,7 @@
 **Muunnokset:** Ei tarvita. Matkat ovat metreinä ja ajat sekunteina. Tulos tulee siksi suoraan yksikössä m/s.
 **Sijoitus:** $k = \dfrac{10{,}1\,\text{m} - 2{,}3\,\text{m}}{7{,}0\,\text{s} - 1{,}0\,\text{s}} = \dfrac{7{,}8\,\text{m}}{6{,}0\,\text{s}} = 1{,}3\,\text{m/s}$
 **Vastaus:** $1{,}3\,\text{m/s}$, kaksi merkitsevää numeroa. Syy on se, että erotukset $7{,}8\,\text{m}$ ja $6{,}0\,\text{s}$ ovat kahden numeron tarkkuudella.
-**Järkevyys:** Kulmakerroin on positiivinen, koska matka kasvaa ajan mukana. Pisteiden välillä kärry kulkee noin 8 m noin 6 sekunnissa. Se on noin 1,3 metriä sekunnissa, eli rauhallisen kävelyn vauhti.
+**Järkevyys:** Kulmakerroin on positiivinen, koska matka kasvaa ajan mukana. Pisteiden välillä kärry kulkee noin $8\,\text{m}$ noin 6 sekunnissa. Se on noin 1,3 metriä sekunnissa, eli rauhallisen kävelyn vauhti.
 
 ## fy1-4-L1-02
 **Annettu:** suora $h = 0{,}50\,\tfrac{\text{cm}}{\text{min}} \cdot t + 12\,\text{cm}$, eli $k = 0{,}50\,\tfrac{\text{cm}}{\text{min}}$ ja $b = 12\,\text{cm}$; aika $t = 30\,\text{min}$
@@ -46,7 +46,7 @@
 **Muunnokset:** $1{,}2\,\text{kg} = 1200\,\text{g}$, koska $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** $k = \dfrac{1200\,\text{g}}{250} = 4{,}8\,\text{g}$
 **Vastaus:** $4{,}8\,\text{g}$, kaksi merkitsevää numeroa, kuten massassa $1{,}2\,\text{kg}$. Arkkien määrä on tarkka lukumäärä.
-**Järkevyys:** Tavallisen A4-arkin massa on noin 5 g. Tulos on siis järkevä. Tarkistus: $250 \cdot 4{,}8\,\text{g} = 1200\,\text{g} = 1{,}2\,\text{kg}$.
+**Järkevyys:** Tavallisen A4-arkin massa on noin $5\,\text{g}$. Tulos on siis järkevä. Tarkistus: $250 \cdot 4{,}8\,\text{g} = 1200\,\text{g} = 1{,}2\,\text{kg}$.
 
 ## fy1-4-L2-01
 **Annettu:** suoran pisteet $(t_1;\ s_1) = (2{,}0\,\text{min};\ 0{,}30\,\text{km})$ ja $(t_2;\ s_2) = (10{,}0\,\text{min};\ 1{,}50\,\text{km})$
@@ -59,14 +59,15 @@
 **Järkevyys:** Tulos on noin $2{,}5 \cdot 3{,}6 = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$. Se on rauhallisen pyöräilyn vauhti.
 
 ## fy1-4-L2-02
-**Annettu:** suoran pisteet $(t_1;\ h_1) = (2{,}0\,\text{min};\ 7{,}0\,\text{cm})$ ja $(t_2;\ h_2) = (6{,}0\,\text{min};\ 15{,}0\,\text{cm})$; kysytty hetki $t = 10{,}0\,\text{min}$
-**Kysytty:** korkeus $h$ hetkellä $t = 10{,}0\,\text{min}$ senttimetreinä
-**Periaate:** Pinta nousee tasaisesti. Siksi korkeus noudattaa suoraa $h = kt + b$. Kulmakerroin lasketaan kahdesta pisteestä ja vakiotermi yhdestä pisteestä. Hetki 10,0 min on mittausalueen ulkopuolella. Ennuste olettaa, että nousu jatkuu samana.
-**Kaava:** $k = \dfrac{h_2 - h_1}{t_2 - t_1}$ ja $b = h_1 - k t_1$, joten $h = kt + b = h_1 + k\,(t - t_1)$
-**Muunnokset:** Ei tarvita. Korkeudet ovat senttimetreinä ja ajat minuutteina.
-**Sijoitus:** $k = \dfrac{15{,}0\,\text{cm} - 7{,}0\,\text{cm}}{6{,}0\,\text{min} - 2{,}0\,\text{min}} = 2{,}0\,\tfrac{\text{cm}}{\text{min}}$ ja $b = 7{,}0\,\text{cm} - 2{,}0\,\tfrac{\text{cm}}{\text{min}} \cdot 2{,}0\,\text{min} = 3{,}0\,\text{cm}$, joten $h = 2{,}0\,\tfrac{\text{cm}}{\text{min}} \cdot 10{,}0\,\text{min} + 3{,}0\,\text{cm} = 23\,\text{cm}$
-**Vastaus:** $23\,\text{cm}$, kaksi merkitsevää numeroa. Syy on se, että kulmakerroin $2{,}0\,\tfrac{\text{cm}}{\text{min}}$ on kahden numeron tarkkuudella.
-**Järkevyys:** Pinta nousee kaksi senttiä minuutissa. Kuuden minuutin kohdan 15,0 cm jälkeen se nousee vielä neljässä minuutissa noin 8 cm: $15 + 8 = 23\,\text{cm}$.
+**Annettu:** kuvaajan mittauspisteet $(t;\ s)$: $(1\,\text{s};\ 0{,}6\,\text{m})$, $(2\,\text{s};\ 0{,}8\,\text{m})$, $(3\,\text{s};\ 1{,}6\,\text{m})$, $(4\,\text{s};\ 2{,}1\,\text{m})$, $(5\,\text{s};\ 2{,}4\,\text{m})$ ja $(6\,\text{s};\ 2{,}9\,\text{m})$; kysytty hetki $t = 8{,}0\,\text{s}$
+**Kysytty:** kärryn kulkema matka $s$ hetkellä $8{,}0\,\text{s}$ metreinä
+**Periaate:** Kärry liikkuu tasaisesti. Siksi matka kasvaa ajan mukana lineaarisesti, ja pisteisiin sovitetaan suora $s = kt + b$. Pisteet poikkeavat suorasta satunnaisesti. Siksi suora piirretään pisteiden keskelle niin, että sen molemmille puolille jää pisteitä. Suoraa ei piirretä minkään kahden pisteen kautta. Ennuste olettaa, että liike jatkuu samanlaisena myös mittausalueen jälkeen.
+**Kuvaajan lukeminen:** Pisteiden keskelle piirretty suora kulkee lähes origon kautta. Hetkellä $6{,}0\,\text{s}$ se on kohdassa $2{,}9\,\text{m}$. Luetaan suoralta nämä kaksi kaukana toisistaan olevaa pistettä, $(0\,\text{s};\ 0{,}0\,\text{m})$ ja $(6{,}0\,\text{s};\ 2{,}9\,\text{m})$. Sitten jatketaan suoraa hetkeen $8{,}0\,\text{s}$.
+**Kaava:** $k = \dfrac{s_2 - s_1}{t_2 - t_1}$ ja $s = s_1 + k\,(t - t_1)$
+**Muunnokset:** Ei tarvita. Ajat ovat sekunteina ja matkat metreinä.
+**Sijoitus:** $k = \dfrac{2{,}9\,\text{m} - 0{,}0\,\text{m}}{6{,}0\,\text{s} - 0\,\text{s}} = 0{,}4833\,\tfrac{\text{m}}{\text{s}}$, joten $s = 0{,}0\,\text{m} + 0{,}4833\,\tfrac{\text{m}}{\text{s}} \cdot 8{,}0\,\text{s} = 3{,}87\,\text{m}$
+**Vastaus:** $s \approx 3{,}9\,\text{m}$, kaksi merkitsevää numeroa. Syy on se, että suoralta luetut arvot ovat kahden numeron tarkkuudella. Silmämääräinen sovitus vaihtelee, joten noin $3{,}6\ldots4{,}2\,\text{m}$ on hyvä vastaus.
+**Järkevyys:** Kärry kulkee noin puoli metriä sekunnissa. Hetkellä $6\,\text{s}$ matka on noin $2{,}9\,\text{m}$. Kahdessa sekunnissa kärry etenee vielä noin metrin: $2{,}9\,\text{m} + 1{,}0\,\text{m} \approx 3{,}9\,\text{m}$. Mittausalueen ulkopuolinen ennuste on epävarmempi kuin mittausalueen sisältä luettu arvo.
 
 ## fy1-4-L2-03
 **Annettu:** suoran pisteet $(V_1;\ m_1) = (3{,}0\,\textsf{l};\ 3{,}9\,\text{kg})$ ja $(V_2;\ m_2) = (9{,}0\,\textsf{l};\ 9{,}9\,\text{kg})$, missä $m$ on kanisterin ja veden yhteismassa
@@ -76,7 +77,7 @@
 **Muunnokset:** Ei tarvita. Massat ovat kilogrammoina ja tilavuudet litroina. Siksi $k$ tulee yksikössä kg/l.
 **Sijoitus:** $k = \dfrac{9{,}9\,\text{kg} - 3{,}9\,\text{kg}}{9{,}0\,\textsf{l} - 3{,}0\,\textsf{l}} = 1{,}0\,\tfrac{\text{kg}}{\textsf{l}}$ ja $b = 3{,}9\,\text{kg} - 1{,}0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3{,}0\,\textsf{l} = 0{,}9\,\text{kg}$
 **Vastaus:** $0{,}9\,\text{kg}$, yksi desimaali, kuten annetuissa massoissa $3{,}9\,\text{kg}$ ja $9{,}9\,\text{kg}$.
-**Järkevyys:** Kulmakerroin $1{,}0\,\text{kg/l}$ on veden tiheys. Vesi tunnistetaan siis oikein. Tyhjä muovikanisteri painaa noin 1 kg, joten $0{,}9\,\text{kg}$ on järkevä.
+**Järkevyys:** Kulmakerroin $1{,}0\,\text{kg/l}$ on veden tiheys. Vesi tunnistetaan siis oikein. Tyhjä muovikanisteri painaa noin $1\,\text{kg}$, joten $0{,}9\,\text{kg}$ on järkevä.
 
 ## fy1-4-L2-04
 **Annettu:** alkumaksu $b = 4{,}0\,\text{€}$ ja kilometrihinta $k = 2{,}5\,\tfrac{\text{€}}{\text{km}}$; matkat $x_1 = 5{,}0\,\text{km}$ ja $x_2 = 10\,\text{km}$
@@ -95,25 +96,25 @@
 **Kaava:** $s = kt + b$, josta $t = \dfrac{s - b}{k}$
 **Muunnokset:** Ei tarvita. Paikka on metreinä. Kulmakerroin kertoo metrit sekunnissa.
 **Sijoitus:** $t = \dfrac{0 - 0{,}40\,\text{m}}{0{,}85\,\tfrac{\text{m}}{\text{s}}} = -0{,}4706\,\text{s}$
-**Vastaus:** $-0{,}47\,\text{s}$, kaksi merkitsevää numeroa, kuten kulmakertoimessa $0{,}85\,\tfrac{\text{m}}{\text{s}}$ ja vakiotermissä $0{,}40\,\text{m}$. Miinusmerkki tarkoittaa, että kärry oli radan alussa 0,47 s ennen kellon käynnistystä. Tulos olettaa, että kärry liikkui samalla nopeudella jo ennen kellon käynnistämistä. Syy on se, että suoraa jatketaan mittausalueen ulkopuolelle ($t < 0$).
-**Järkevyys:** Tarkistus: kärry kulkee 0,47 sekunnissa vauhdilla 0,85 m/s noin $0{,}85 \cdot 0{,}47 = 0{,}40\,\text{m}$. Se on täsmälleen vakiotermi. Tulos on sama kuin tilanteessa, jossa kello olisi käynnistetty 0,47 s aiemmin ja vakiotermi olisi nolla.
+**Vastaus:** $-0{,}47\,\text{s}$, kaksi merkitsevää numeroa, kuten kulmakertoimessa $0{,}85\,\tfrac{\text{m}}{\text{s}}$ ja vakiotermissä $0{,}40\,\text{m}$. Miinusmerkki tarkoittaa, että kärry oli radan alussa $0{,}47\,\text{s}$ ennen kellon käynnistystä. Tulos olettaa, että kärry liikkui samalla nopeudella jo ennen kellon käynnistämistä. Syy on se, että suoraa jatketaan mittausalueen ulkopuolelle ($t < 0$).
+**Järkevyys:** Tarkistus: kärry kulkee 0,47 sekunnissa vauhdilla $0{,}85\,\text{m/s}$ noin $0{,}85 \cdot 0{,}47 = 0{,}40\,\text{m}$. Se on täsmälleen vakiotermi. Tulos on sama kuin tilanteessa, jossa kello olisi käynnistetty $0{,}47\,\text{s}$ aiemmin ja vakiotermi olisi nolla.
 
 ## fy1-4-L3-02
-**Annettu:** kahvin lämpötila $T$: $90\,{}^\circ\text{C}$ (0 min), $72\,{}^\circ\text{C}$ (10 min), $60\,{}^\circ\text{C}$ (20 min) ja $51\,{}^\circ\text{C}$ (30 min)
+**Annettu:** kahvin lämpötila $T$: $90\,{}^\circ\text{C}$ ($0\,\text{min}$), $72\,{}^\circ\text{C}$ ($10\,\text{min}$), $60\,{}^\circ\text{C}$ ($20\,\text{min}$) ja $51\,{}^\circ\text{C}$ ($30\,\text{min}$)
 **Kysytty:** kulmakertoimien itseisarvojen suhde $\dfrac{|k_1|}{|k_3|}$ ensimmäisellä ja viimeisellä kymmenen minuutin välillä sekä perustelu, miksi yksi suora ei sovi
 **Periaate:** Jos mittauspisteet noudattaisivat suoraa, kulmakerroin olisi sama jokaisella aikavälillä. Lasketaan kulmakerroin ensimmäiseltä ja viimeiseltä välillä. Sitten verrataan niitä.
 **Kaava:** $k = \dfrac{\Delta T}{\Delta t}$ ja $\dfrac{|k_1|}{|k_3|}$
 **Muunnokset:** Ei tarvita. Lämpötilojen erotus on sama celsiusasteina ja kelvineinä. Aika on minuutteina.
 **Sijoitus:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1{,}8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ ja $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0{,}90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, joten $\dfrac{|k_1|}{|k_3|} = \dfrac{1{,}8}{0{,}90} = 2{,}0$
-**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa, kuten lämpötilaerotuksissa. Yksi suora ei sovi, koska kulmakerroin ei ole vakio. Kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa. Väliltä 10–20 min saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
+**Vastaus:** $2{,}0$ kertaa, kaksi merkitsevää numeroa, kuten lämpötilaerotuksissa. Yksi suora ei sovi, koska kulmakerroin ei ole vakio. Kahvi jäähtyy ensin kaksi kertaa nopeammin kuin lopussa. Väliltä 10–$20\,\text{min}$ saadaan vielä kolmas arvo $-1{,}2\,\tfrac{{}^\circ\text{C}}{\text{min}}$. Pisteet eivät asetu suoralle.
 **Järkevyys:** Kulmakertoimet ovat negatiivisia, koska kahvi jäähtyy. Jäähtyminen hidastuu. Syy on se, että kahvi lähestyy huoneen lämpötilaa ja lämpötilaero ympäristöön pienenee. Tämä sopii kokemukseen kuuman juoman jäähtymisestä.
 
 ## fy1-4-L3-03
-**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman virhe enintään $\Delta y_\text{luku} = 0{,}1$ ja kaksi lukemaa, joten erotuksen $\Delta y$ virhe on enintään $2\,\Delta y_\text{luku} = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
+**Annettu:** suora $y = 2{,}0\,x$; $y$-lukeman epävarmuus on noin $\Delta y_\text{luku} = 0{,}1$. Kahden lukeman erotuksen $\Delta y$ epävarmuus on siksi varovaisesti arvioiden noin $2\,\Delta y_\text{luku} = 2 \cdot 0{,}1 = 0{,}2$; lähekkäin $\Delta x_1 = 4{,}5 - 4{,}0 = 0{,}5$, kaukana $\Delta x_2 = 9{,}0 - 1{,}0 = 8{,}0$
 **Kysytty:** kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna
 **Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$. Kun $x$-arvot tunnetaan tarkasti, kulmakertoimen suhteellinen epävarmuus on yhtä suuri kuin erotuksen $\Delta y$ suhteellinen epävarmuus. Suoralla $\Delta y = k\,\Delta x$. Erotus kasvaa siis matkan mukana, mutta lukemavirhe pysyy samana.
 **Kaava:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{luku}}{\Delta y} = \dfrac{2\,\Delta y_\text{luku}}{k\,\Delta x}$, joten $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}} = \dfrac{\Delta x_2}{\Delta x_1}$
 **Muunnokset:** Ei tarvita. Suhde on yksikötön.
 **Sijoitus:** Lähellä $\Delta y = 2{,}0 \cdot 0{,}5 = 1{,}0$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{1{,}0} = 0{,}20$. Kaukana $\Delta y = 2{,}0 \cdot 8{,}0 = 16$ ja $\dfrac{\Delta k}{k} = \dfrac{0{,}2}{16} = 0{,}0125$. Suhde on $\dfrac{0{,}20}{0{,}0125} = \dfrac{8{,}0}{0{,}5} = 16$.
 **Vastaus:** $16$ kertaa. Lukemavirhe supistuu pois suhteesta. Luku määräytyy siis pelkästä $\Delta x$:n suhteesta $8{,}0 : 0{,}5 = 16$, joka on tarkka. Kaksi merkitsevää numeroa riittää. Kaukana toisistaan olevat pisteet ovat parempi valinta, koska erotus $\Delta y$ on suuri verrattuna lukemavirheeseen.
-**Järkevyys:** Lähekkäisten pisteiden virhe 20 % on liian suuri. Kaukana olevien pisteiden virhe, noin 1,3 %, on hyvä. Suhde 16 on sama kuin $\Delta x$:n suhde $8{,}0 : 0{,}5$, kuten kaavasta pitää seurata.
+**Järkevyys:** Lähekkäisten pisteiden virhe $20\,\%$ on liian suuri. Kaukana olevien pisteiden virhe, noin $1{,}3\,\%$, on hyvä. Suhde 16 on sama kuin $\Delta x$:n suhde $8{,}0 : 0{,}5$, kuten kaavasta pitää seurata.

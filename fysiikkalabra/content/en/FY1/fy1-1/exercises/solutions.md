@@ -9,14 +9,15 @@
 **Reasonableness:** A micrometre is a thousandth of a millimetre, so $7.5\,\mu\text{m} = 0.0075\,\text{mm}$. A red blood cell is therefore much thinner than a hair and visible only under a microscope, which fits what we know.
 
 ## fy1-1-L1-02
-**Given:** the order of magnitude of a hydrogen atom $10^{-10}\,\text{m}$, that is $n_\text{atom} = -10$, and of an ant $10^{-2}\,\text{m}$, that is $n_\text{ant} = -2$
+**Given:** a figure with a hydrogen atom and an ant marked on the axis of powers of ten for the size $d$
 **Find:** the difference of the orders of magnitude, that is, the number of steps of powers of ten
-**Principle:** The exponent of the order of magnitude tells which power of ten the size is in. Each step from one power of ten to the next is a tenfold size, and the number of steps is the difference of the exponents, the smaller subtracted from the larger.
+**Principle:** On the axis, each line is a power of ten, and one step to the right is a tenfold size. The exponent of the order of magnitude of an object is read from the line at its mark, and the number of steps is the difference of the exponents.
+**Reading the graph:** The mark of the hydrogen atom is at the line $10^{-10}\,\text{m}$, so $n_\text{atom} = -10$. The mark of the ant is at the line $10^{-2}\,\text{m}$, so $n_\text{ant} = -2$.
 **Formula:** $\text{steps} = n_\text{ant} - n_\text{atom}$
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** $\text{steps} = -2 - (-10) = -2 + 10 = 8$
-**Answer:** $8$ orders of magnitude; the number is an integer, because the orders of magnitude are given as powers of ten.
-**Reasonableness:** Eight steps mean about $10^{8}$, that is, a hundred million times larger size. An ant is clearly bigger than an atom, so a positive difference makes sense.
+**Answer:** $8$ orders of magnitude; the number is an integer, because the marks are exactly at the lines.
+**Reasonableness:** In the figure there are eight intervals between the marks, so eight steps matches. Eight steps mean about $10^{8}$, that is, a hundred million times larger size. An ant is clearly bigger than an atom, so a positive difference makes sense.
 
 ## fy1-1-L1-03
 **Given:** $d = 1.27\cdot10^{7}\,\text{m}$ and $1\,\text{km} = 1000\,\text{m} = 10^{3}\,\text{m}$

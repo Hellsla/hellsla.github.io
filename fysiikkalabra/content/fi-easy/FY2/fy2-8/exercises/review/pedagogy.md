@@ -14,3 +14,4 @@ CONTENT-HASH: 56c99a342400c0f8
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): the plain-language level of every exercise text and solution step, the Finnish step labels (Annettu … Järkevyys) kept unchanged, and that no hint, step or reasoning was lost.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (no Finnish change in exercises; fossil-fuel wording only in lesson/inquiry)

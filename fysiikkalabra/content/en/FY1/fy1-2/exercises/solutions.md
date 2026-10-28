@@ -29,14 +29,15 @@
 **Reasonableness:** With rounded numbers $2\,\text{m}\cdot 1\,\text{m} = 2\,\text{m}^2$, and the result 1.7 is slightly smaller, because both sides were rounded upwards. The square metre is a unit of area, as it should be.
 
 ## fy1-2-L1-04
-**Given:** speed $v = 15.341\,\text{km/s}$
-**Find:** the speed $v$ in the unit $\text{m/s}$
-**Principle:** The speed unit $\text{km/s}$ is a unit of length divided by a unit of time; only the unit of length changes, the second stays. The prefix kilo is $10^{3}$, so $1\,\text{km} = 1000\,\text{m}$.
-**Formula:** $1\,\text{km} = 1000\,\text{m}$, so $1\,\dfrac{\text{km}}{\text{s}} = 1000\,\dfrac{\text{m}}{\text{s}}$
-**Conversions:** In place of the kilometre we write $1000\,\text{m}$; the second stays.
-**Substitution:** $v = 15.341\,\dfrac{\text{km}}{\text{s}} = 15.341\cdot\dfrac{1000\,\text{m}}{\text{s}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
-**Answer:** $15\,341\,\text{m/s}$, five significant figures like the initial value $15.341\,\text{km/s}$.
-**Reasonableness:** A metre is a smaller unit than a kilometre, so the numerical value must become a thousand times larger. About 15 km/s is more than 40 times the speed of sound, 340 m/s, which fits a space probe.
+**Given:** a picture in which an aluminium rod is next to a ruler and the ends of the rod are at the scale of the ruler
+**Find:** the length $l$ of the rod in millimetres
+**Principle:** The rod does not start at the zero mark of the ruler, so the length is not the reading at the right end but the difference between the readings at the two ends. A quantity does not change when the unit is changed, so in place of the centimetre we write its value in millimetres.
+**Reading the graph:** The left end is at $x_1 = 2.0\,\text{cm}$ (two long marks from zero). The right end is at $x_2 = 13.6\,\text{cm}$ (thirteen long marks and six millimetre marks after that). The reading is exact to the millimetre marks.
+**Formula:** $l = x_2 - x_1$
+**Conversions:** One centimetre is ten millimetres, so in place of the centimetre we write $10\,\text{mm}$.
+**Substitution:** $l = 13.6\,\text{cm} - 2.0\,\text{cm} = 11.6\,\text{cm} = 11.6\cdot10\,\text{mm} = 116\,\text{mm}$
+**Answer:** $116\,\text{mm}$, three significant figures like the readings, which were taken to the precision of a millimetre.
+**Reasonableness:** A millimetre is a smaller unit than a centimetre, so the numerical value must become ten times larger: from 11.6 to 116. The rod is about ten centimetres long, as can be seen in the picture.
 
 ## fy1-2-L1-05
 **Given:** the diameter of the Moon $D_\text{Moon} = 3474\,\text{km}$ corresponds to one pixel; the diameter of the Sun $D_\text{Sun} = 1.392\cdot10^{6}\,\text{km}$

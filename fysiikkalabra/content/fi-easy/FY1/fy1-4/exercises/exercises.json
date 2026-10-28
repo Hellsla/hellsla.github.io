@@ -19,7 +19,7 @@
     {
       "id": "fy1-4-L1-03",
       "level": 1,
-      "text": "Nurmikon pituutta $h$ seurattiin vuorokausien $t$ funktiona. Sovitettu suora on $h = 0{,}60\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot t + 4{,}0\\,\\text{cm}$. Monenako vuorokautena mittauksen alusta nurmikko on 10 cm pitkä? Anna vastaus vuorokausina.",
+      "text": "Nurmikon pituutta $h$ seurattiin vuorokausien $t$ funktiona. Sovitettu suora on $h = 0{,}60\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot t + 4{,}0\\,\\text{cm}$. Monenako vuorokautena mittauksen alusta nurmikko on $10\\,\\text{cm}$ pitkä? Anna vastaus vuorokausina.",
       "answer": 10,
       "unit": "vrk",
       "tolerance": 0.02
@@ -53,10 +53,11 @@
     {
       "id": "fy1-4-L2-02",
       "level": 2,
-      "text": "Vesisäiliön pinnan korkeus $h$ kasvaa tasaisesti ajan $t$ funktiona. Sovitettu suora kulkee pisteiden $(2{,}0\\,\\text{min};\\ 7{,}0\\,\\text{cm})$ ja $(6{,}0\\,\\text{min};\\ 15{,}0\\,\\text{cm})$ kautta. Suoraa jatketaan mittausalueen yli. Kuinka korkealla pinta on 10,0 minuutin kohdalla? Anna vastaus senttimetreinä.",
-      "answer": 23,
-      "unit": "cm",
-      "tolerance": 0.02
+      "text": "Kuvaajassa on tasaisesti liikkuvan kärryn kulkema matka $s$ ajan $t$ funktiona kuudessa mittauksessa. Sovita pisteisiin silmämääräisesti suora. Piirrä pisteet ruutupaperille tai aseta viivoitin kuvan päälle. Arvioi suoran avulla, kuinka pitkän matkan kärry on kulkenut hetkellä $t = 8{,}0\\,\\text{s}$. Oleta, että liike jatkuu samanlaisena. Anna vastaus metreinä.",
+      "figure": "fy1-4/scatter-points",
+      "answer": 3.9,
+      "unit": "m",
+      "tolerance": 0.08
     },
     {
       "id": "fy1-4-L2-03",
@@ -69,7 +70,7 @@
     {
       "id": "fy1-4-L2-04",
       "level": 2,
-      "text": "Taksimatkan hinta koostuu alkumaksusta $4{,}0\\,\\text{€}$ ja lisäksi $2{,}5\\,\\text{€}$:sta jokaiselta ajetulta kilometriltä. Hinta on matkan funktio $y = kx + b$. Kuinka monta kertaa niin kallis 10 km:n matka on kuin 5,0 km:n matka? Anna vastaus lukuna.",
+      "text": "Taksimatkan hinta koostuu alkumaksusta $4{,}0\\,\\text{€}$ ja lisäksi $2{,}5\\,\\text{€}$:sta jokaiselta ajetulta kilometriltä. Hinta on matkan funktio $y = kx + b$. Kuinka monta kertaa niin kallis $10\\,\\text{km}$:n matka on kuin $5{,}0\\,\\text{km}$:n matka? Anna vastaus lukuna.",
       "answer": 1.8,
       "unit": "kertaa",
       "tolerance": 0.03

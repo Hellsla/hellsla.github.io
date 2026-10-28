@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 569cce27024dce51
+CONTENT-HASH: d8efcf324253b772
 
 ## Blocking
 (none left; fixed items listed under Fixed)
@@ -18,3 +18,4 @@ CONTENT-HASH: 569cce27024dce51
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (science): lesson.md, inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, source_notes), exit-ticket.json, meta.json, figures.json against the Finnish: same physics, numbers, tasks, steps, hints and feedback; correct choices still unambiguous; Finnish step labels kept.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, figure labels, inquiry texts/feedback/solutions/model answer/criteria, exit ticket (nuclear-fuel note, moisture, food energy content vs heat of combustion, CO2 sentence).

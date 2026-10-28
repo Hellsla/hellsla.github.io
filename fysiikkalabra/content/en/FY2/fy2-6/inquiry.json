@@ -113,7 +113,7 @@
         "type": "numeric",
         "prompt": "How many $5.0\\,\\text{MW}$ wind turbines are needed for their rated power to be equal to the rated power of Olkiluoto 3, $1600\\,\\text{MW}$?",
         "answer": 320,
-        "unit": "pcs",
+        "unit": "kpl",
         "tolerance": 0.02,
         "hints": [
           "We compare the same quantity, power: how many times does $5.0\\,\\text{MW}$ fit into $1600\\,\\text{MW}$?",
@@ -126,7 +126,7 @@
             "feedback": "You divided the smaller power by the larger one. The question asks how many wind turbines are needed, so the larger power is divided by the smaller one."
           }
         ],
-        "solution": "**Given:** power of a wind turbine $P_\\text{t} = 5.0\\,\\text{MW}$, power of Olkiluoto 3 $P_\\text{O} = 1600\\,\\text{MW}$\n\n**Find:** the number of wind turbines $N$\n\n**Principle:** Rated powers are added together, so the combined power of $N$ turbines is $N P_\\text{t}$. We want it to be equal to the power of Olkiluoto 3.\n\n**Formula:** $N P_\\text{t} = P_\\text{O}$, so $N = \\dfrac{P_\\text{O}}{P_\\text{t}}$\n\n**Conversions:** Not needed: both powers are in megawatts, so the unit cancels.\n\n**Substitution:** $N = 1600\\,\\text{MW} : 5.0\\,\\text{MW} = 320$\n\n**Answer:** $320$ wind turbines, two significant figures like the power of a wind turbine, $5.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $1600 : 5 = 320$. In reality many more would be needed, because a wind turbine produces in a year only a part of its rated power, while Olkiluoto 3 runs almost all the time."
+        "solution": "**Given:** power of a wind turbine $P_\\text{t} = 5.0\\,\\text{MW}$, power of Olkiluoto 3 $P_\\text{O} = 1600\\,\\text{MW}$\n\n**Find:** the number of wind turbines $N$\n\n**Principle:** Rated powers are added together, so the combined power of $N$ turbines is $N P_\\text{t}$. We want it to be equal to the power of Olkiluoto 3.\n\n**Formula:** $N P_\\text{t} = P_\\text{O}$, so $N = \\dfrac{P_\\text{O}}{P_\\text{t}}$\n\n**Conversions:** Not needed: both powers are in megawatts, so the unit cancels.\n\n**Substitution:** $N = 1600\\,\\text{MW} : 5.0\\,\\text{MW} = 320$\n\n**Answer:** $320$ wind turbines, two significant figures like the power of a wind turbine, $5.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $1600 : 5 = 320$. To produce the same annual energy, many more wind turbines would be needed, because the average power of a wind turbine is only a part of its rated power, while Olkiluoto 3 runs almost all the time close to its rated power."
       }
     },
     {

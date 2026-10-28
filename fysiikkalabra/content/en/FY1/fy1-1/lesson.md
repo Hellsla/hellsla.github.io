@@ -91,7 +91,7 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
 
 ### Order of magnitude tells the rough size
 
-The **order of magnitude** is the power of ten that is closest to the number. The order of magnitude of $a\cdot10^{n}$ is $10^{n}$ when $a$ is less than about 3, and $10^{n+1}$ when $a$ is more than about 3. A person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
+The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. The order of magnitude of $a\cdot10^{n}$ is $10^{n}$ when $a$ is less than about 3, and $10^{n+1}$ when $a$ is more than about 3. A person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
 
 The sizes of objects are rounded values: people, ants and galaxies are not all the same size. That is why the order of magnitude is often enough for a comparison, and it is worth asking how accurate the numbers are.
 
@@ -461,7 +461,7 @@ Neutron stars and black holes are not steps larger than a galaxy, but objects in
 
 - Physics builds models from which predictions are derived, and an experiment or measurement decides whether the model holds.
 - Scientific notation $a\cdot10^{n}$ writes very small and very large numbers briefly; one step in the exponent means a tenfold size.
-- The order of magnitude is the nearest power of ten. The ratio of sizes is found by dividing the larger size by the smaller, and each step of a power of ten is a tenfold size.
+- The order of magnitude is the nearest power of ten on the axis of powers of ten. The ratio of sizes is found by dividing the larger size by the smaller, and each step of a power of ten is a tenfold size.
 - A light-year is the distance light travels in a year, about $9.46\cdot10^{15}\,\text{m}$.
 - Molecules consist of atoms, atoms of a nucleus and electrons, the nucleus of protons and neutrons, and these of quarks. An atom is tens of thousands of times larger than its nucleus.
 - Earth is a planet that orbits a star. The Solar System is one planetary system in the Milky Way, and the Milky Way is one of the hundreds of billions of galaxies of the observable universe.

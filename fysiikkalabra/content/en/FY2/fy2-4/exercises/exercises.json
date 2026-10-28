@@ -81,7 +81,7 @@
       "level": 3,
       "text": "Device A takes energy of $200\\,\\text{J}$ and gives useful energy of $150\\,\\text{J}$. Device B takes energy of $4.0\\,\\text{kJ}$, and its losses are $2.0\\,\\text{kJ}$. How many times as large is the efficiency of device A compared with the efficiency of device B?",
       "answer": 1.5,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {

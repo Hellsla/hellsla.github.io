@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0fe7b88d255b1f08
+CONTENT-HASH: e3be07005fbc7359
 
 ## Blocking
 (none left; see Fixed)
@@ -17,3 +17,4 @@ CONTENT-HASH: 0fe7b88d255b1f08
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): that every block is Selkeä suomi (short sentences, main clause first), physics terms kept, no step, hint or feedback dropped, same cognitive demand, options/feedback still match, correct options unambiguous.
 - Follow-up 2026-10-28 (check_i18n update): experiment intro texts (activities 5–7), column names and the word unit "kertaa"/"times"; slider name *Repetitions*/*Toistoja* matches the sim label; no change needed, re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, check-c2 resolution item, changed feedback, figure description and glossary against the new Finnish; same physics, terms, decimals and unambiguous correct choice; no issues found.

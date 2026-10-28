@@ -3,7 +3,7 @@
   "contribution": "From conservation of energy and power, the student moves on to the efficiency of a single device. The student separates useful energy from losses, reads an energy flow diagram drawn to scale, calculates efficiency from energies and from powers, notices that it does not depend on running time when the device runs at constant power, and separates a model's assumption from the behaviour of a real device.",
   "learn": [
     "You can calculate the efficiency of a device as a ratio of energies or powers.",
-    "You can explain why efficiency is always below $100\\,\\%$ even though energy is conserved.",
+    "You can explain why efficiency is at most $100\\,\\%$ and why in real devices it is often below that.",
     "You can read an energy flow diagram and work out the shares of useful energy and losses from it."
   ],
   "prior": [
@@ -130,7 +130,7 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "device",
+        "laite": "laite",
         "Po": "input power P_o",
         "t": "time t"
       },
@@ -200,7 +200,7 @@
       ],
       "vary": "t",
       "names": {
-        "laite": "device",
+        "laite": "laite",
         "Po": "input power P_o",
         "t": "time t"
       },
@@ -242,7 +242,7 @@
       "optional": true,
       "values": {
         "laite": {
-          "lamppu": "incandescent lamp"
+          "lamppu": "hehkulamppu"
         }
       }
     },
@@ -302,7 +302,7 @@
         {
           "text": "The ratio is the wrong way round: efficiency is the useful power divided by the power taken, $2.4 : 8.0 = 0.30$, that is, $30\\,\\%$.",
           "correct": true,
-          "feedback": "Correct. Efficiency tells what share of the power taken is useful, so the power taken is the divisor. Efficiency is always below $100\\,\\%$, so the result $330\\,\\%$ should have raised suspicion straight away."
+          "feedback": "Correct. Efficiency tells what share of the power taken is useful, so the power taken is the divisor. Efficiency cannot be over $100\\,\\%$, so the result $330\\,\\%$ should have raised suspicion straight away."
         },
         {
           "text": "There is no error in the calculation: an LED lamp is so efficient that it produces more energy than it takes.",
@@ -310,7 +310,7 @@
         },
         {
           "text": "The heat should also be counted in the efficiency, because the lamp warms up.",
-          "feedback": "The heat is a loss of the lamp, not a benefit. If the heat were counted in, the efficiency would be $(2.4 + 5.6) : 8.0 = 100\\,\\%$ and it would tell nothing about how good the lamp is."
+          "feedback": "The heat is a loss of the lamp, not a benefit, because the benefit of a lamp has been defined as light. If the heat were counted in, the efficiency would be $(2.4 + 5.6) : 8.0 = 100\\,\\%$ and it would tell nothing about how good the lamp is."
         },
         {
           "text": "The powers should first have been converted to energies by multiplying them by time, because efficiency is calculated from energies.",
@@ -372,7 +372,7 @@
         },
         {
           "text": "The efficiency rises to $100\\,\\%$ when the device has been on long enough.",
-          "feedback": "Efficiency is a property of the device that stays roughly the same regardless of running time. In practice some of the energy always becomes heat, so efficiency is always below $100\\,\\%$."
+          "feedback": "Efficiency is a property of the device that stays roughly the same regardless of running time. Running time does not remove losses: if part of the energy becomes heat that is not the benefit of the device, the efficiency stays below $100\\,\\%$ just as much at the start as after long use."
         }
       ]
     },
@@ -397,7 +397,7 @@
         },
         {
           "value": 125,
-          "feedback": "You divided the energy taken by the useful energy ($2.5 : 2.0$). The ratio is the wrong way round: in efficiency the energy taken is the divisor, and the result is always below $100\\,\\%$."
+          "feedback": "You divided the energy taken by the useful energy ($2.5 : 2.0$). The ratio is the wrong way round: in efficiency the energy taken is the divisor. The useful energy cannot be greater than the energy taken, so the result is at most $100\\,\\%$."
         }
       ],
       "solution": "**Given:** energy taken $E_\\text{o} = 2.5\\,\\text{kJ}$ and losses $E_\\text{h} = 0.50\\,\\text{kJ}$\n\n**Find:** the efficiency $\\eta$ of the motor as a percentage\n\n**Principle:** Efficiency is the share of the useful energy in the energy taken. The useful energy was not given, but energy is conserved, so it is found as the difference between the energy taken and the losses.\n\n**Formula:** $E_\\text{a} = E_\\text{o} - E_\\text{h}$ and $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, so $\\eta = \\dfrac{E_\\text{o} - E_\\text{h}}{E_\\text{o}}$\n\n**Conversions:** Not needed: all energies are in kilojoules, so the units cancel. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $E_\\text{a} = 2.5\\,\\text{kJ} - 0.50\\,\\text{kJ} = 2.0\\,\\text{kJ}$, so $\\eta = \\dfrac{2.0\\,\\text{kJ}}{2.5\\,\\text{kJ}} = 0.80 = 0.80 \\cdot 100\\,\\% = 80\\,\\%$\n\n**Answer:** $80\\,\\%$, two significant figures, as in the given energies.\n\n**Reasonableness:** The losses are $0.50 : 2.5 = 20\\,\\%$ of the energy taken, and $80\\,\\% + 20\\,\\% = 100\\,\\%$. The result is below $100\\,\\%$ and close to the typical $90\\,\\%$ of an electric motor."
@@ -407,7 +407,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain",
-      "prompt": "Explain why efficiency is always below $100\\,\\%$ even though energy does not vanish anywhere. Use an incandescent lamp as an example.",
+      "prompt": "The efficiency of an incandescent lamp stays clearly below $100\\,\\%$ even though energy does not vanish anywhere. Explain why.",
       "criteria": [
         "I say that energy is conserved: the energy taken is the sum of the useful energy and the losses.",
         "I say that in an incandescent lamp most of the electrical energy becomes heat, not light.",

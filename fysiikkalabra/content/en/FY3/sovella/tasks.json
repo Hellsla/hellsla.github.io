@@ -149,7 +149,7 @@
       "id": "fy3-s2",
       "title": "Pressure cooker",
       "source_note": "The values in the table are measured boiling temperatures of water from data books, rounded.",
-      "text": "The lid of a pressure cooker closes tightly. When the water heats up, the pressure in the cooker rises until the valve starts to let steam out. The valve keeps the pressure in the cooker $80\\,\\text{kPa}$ higher than the outside air pressure of $101\\,\\text{kPa}$.\n\n| $p\\ (\\text{kPa})$ | $T_\\text{b}\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $70.2$ | $90$ |\n| $84.6$ | $95$ |\n| $101.3$ | $100$ |\n| $120.9$ | $105$ |\n| $143.4$ | $110$ |\n| $169.2$ | $115$ |\n| $198.7$ | $120$ |\n| $232.3$ | $125$ |\n\nThe table gives the boiling temperature $T_\\text{b}$ of water at different pressures $p$.",
+      "text": "The lid of a pressure cooker closes tightly. When the water heats up, the pressure in the cooker rises until the valve starts to let steam out. The valve keeps the pressure in the cooker $80\\,\\text{kPa}$ higher than the outside air pressure of $101\\,\\text{kPa}$. The air left the cooker with the steam during heating, so there is only water vapour under the lid.\n\n| $p\\ (\\text{kPa})$ | $T_\\text{b}\\ ({}^\\circ\\text{C})$ |\n|---|---|\n| $70.2$ | $90$ |\n| $84.6$ | $95$ |\n| $101.3$ | $100$ |\n| $120.9$ | $105$ |\n| $143.4$ | $110$ |\n| $169.2$ | $115$ |\n| $198.7$ | $120$ |\n| $232.3$ | $125$ |\n\nThe table gives the boiling temperature $T_\\text{b}$ of water at different pressures $p$.",
       "parts": [
         {
           "id": "a",
@@ -186,12 +186,12 @@
           "text": "Explain why water boils at a higher temperature in a pressure cooker than in an open pot, and why food cooks faster in it.",
           "criteria": [
             {
-              "text": "Links the boiling temperature to pressure: the vaporisation curve of the phase diagram and the table show that at a higher pressure water boils at a higher temperature.",
+              "text": "Links the boiling temperature to pressure: according to the table, at a higher pressure water boils at a higher temperature.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Justifies with the particle model: a vapour bubble stays open only if the pressure of its vapour is equal to the surrounding pressure, and the vapour pressure increases with temperature.",
+              "text": "Explains why pressure matters, for example with the particle model: a vapour bubble stays open only if the pressure of its vapour is equal to the surrounding pressure, and the vapour pressure increases with temperature.",
               "tag": "concept",
               "points": 1
             },
@@ -206,7 +206,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "The cooker contains $1.50\\,\\text{kg}$ of water and also potatoes. When the valve hisses, the power of the hob is set to $300\\,\\text{W}$. Of this, $80\\,\\%$ is transferred to the contents of the cooker and the rest to the surroundings. How much water vaporises in $20$ minutes?",
+          "text": "The cooker contains $1.50\\,\\text{kg}$ of water and also potatoes. When the valve hisses, the power of the hob is set to $300\\,\\text{W}$. Of this, $80\\,\\%$ is transferred to the contents of the cooker and the rest to the surroundings. The potatoes have already warmed through to the temperature of the cooker. How much water vaporises in $20$ minutes?",
           "answer": {
             "value": 0.13,
             "unit": "kg",
@@ -214,7 +214,7 @@
           },
           "criteria": [
             {
-              "text": "Justifies that the temperature stays constant, so the energy transferred to the contents of the cooker is used to vaporise water.",
+              "text": "Justifies that the pressure and temperature stay constant and the potatoes are already at the temperature of the cooker, so the energy transferred to the contents of the cooker is used to vaporise water.",
               "tag": "transfer",
               "points": 1
             },
@@ -342,7 +342,7 @@
               "detail": "$V_2 = 6.0\\,\\text{l} \\cdot \\dfrac{248\\,\\text{kPa}}{101\\,\\text{kPa}} \\approx 15\\,\\text{l}$"
             },
             {
-              "text": "Explains the danger: the lungs cannot expand this much, so the air damages them; you must breathe out while rising.",
+              "text": "Explains the danger: the lungs cannot expand this much, so the air damages them; while rising you breathe normally and never hold your breath, so that the expanding air can escape from the lungs.",
               "tag": "communication",
               "points": 1
             }
@@ -352,7 +352,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "The volume of the diver's tank is $12.0\\,\\text{l}$, and its pressure gauge shows a gauge pressure of $200\\,\\text{bar}$, where $1\\,\\text{bar} = 100\\,\\text{kPa}$. At a depth of $15.0\\,\\text{m}$ the diver uses $20\\,\\text{l}$ of air per minute at the pressure of that depth. The ascent is started when the gauge shows $50\\,\\text{bar}$. How long can the diver stay at this depth?",
+          "text": "The volume of the diver's tank is $12.0\\,\\text{l}$, and its pressure gauge shows a gauge pressure of $200\\,\\text{bar}$, where $1\\,\\text{bar} = 100\\,\\text{kPa}$. At a depth of $15.0\\,\\text{m}$ the diver uses $20\\,\\text{l}$ of air per minute at the pressure of that depth. The ascent is started when the gauge shows $50\\,\\text{bar}$. Assume that the air is equally warm in the tank and in the lungs. How long can the diver stay at this depth?",
           "answer": {
             "value": 36,
             "unit": "min",
@@ -360,7 +360,7 @@
           },
           "criteria": [
             {
-              "text": "Justifies the model: the temperature of the air stays the same, so the amount of air is proportional to the product of pressure and volume (Boyle's law).",
+              "text": "Uses the given assumption: when the temperature is the same, the amount of air is proportional to the product of pressure and volume (Boyle's law).",
               "tag": "transfer",
               "points": 1
             },

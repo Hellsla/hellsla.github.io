@@ -3,7 +3,7 @@
     {
       "id": "fy1-3-L1-01",
       "level": 1,
-      "text": "A small ball's falling time is measured four times and the results are 0.52 s, 0.48 s, 0.55 s and 0.49 s. What is the mean of the series?",
+      "text": "A small ball's falling time is measured four times and the results are $0.52\\,\\text{s}$, $0.48\\,\\text{s}$, $0.55\\,\\text{s}$ and $0.49\\,\\text{s}$. What is the mean of the series?",
       "answer": 0.51,
       "unit": "s",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy1-3-L1-02",
       "level": 1,
-      "text": "The length of a reference piece is known exactly: it is 20.0 cm. A tape measure gives the length of the piece as 20.3 cm. What is the measurement error with its sign?",
+      "text": "The length of a reference piece is known exactly: it is $20.0\\,\\text{cm}$. A tape measure gives the length of the piece as $20.3\\,\\text{cm}$. What is the measurement error with its sign?",
       "answer": 0.3,
       "unit": "cm",
       "tolerance": 0.02
@@ -19,15 +19,16 @@
     {
       "id": "fy1-3-L1-03",
       "level": 1,
-      "text": "The time of ten swings of a pendulum is measured five times with a hand stopwatch, and the results are 12.4 s, 12.9 s, 12.6 s, 12.2 s and 12.7 s. What is half of the range of the results?",
+      "text": "The time of ten swings of a pendulum is measured five times with a hand stopwatch. Each result is marked as a dot on the time axis in the picture. Read the smallest and the largest result from the picture. What is half of the range of the results?",
+      "figure": "fy1-3/pendulum-dots",
       "answer": 0.35,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.15
     },
     {
       "id": "fy1-3-L1-04",
       "level": 1,
-      "text": "A kitchen scale shows a reading of 1.2 g when empty, although there is nothing on it. An object is placed on the scale, and the scale shows 48.7 g. What is the mass of the object?",
+      "text": "A kitchen scale shows a reading of $1.2\\,\\text{g}$ when empty, although there is nothing on it. An object is placed on the scale, and the scale shows $48.7\\,\\text{g}$. What is the mass of the object?",
       "answer": 47.5,
       "unit": "g",
       "tolerance": 0.02
@@ -35,7 +36,7 @@
     {
       "id": "fy1-3-L1-05",
       "level": 1,
-      "text": "The smallest scale division of a ruler is 1.0 mm, and the error estimate of a single reading is half of a scale division. How large is the error estimate?",
+      "text": "The smallest scale division of a ruler is $1.0\\,\\text{mm}$, and the uncertainty of a reading is estimated to be half of a scale division. How large is the uncertainty of the reading?",
       "answer": 0.5,
       "unit": "mm",
       "tolerance": 0.02
@@ -45,7 +46,7 @@
     {
       "id": "fy1-3-L2-01",
       "level": 2,
-      "text": "The rolling time of a ball is measured six times: 1.84 s, 1.91 s, 1.78 s, 1.88 s, 1.96 s and 1.82 s. The estimate of random error is taken to be half of the range. What percentage of the mean is it?",
+      "text": "The rolling time of a ball is measured six times: $1.84\\,\\text{s}$, $1.91\\,\\text{s}$, $1.78\\,\\text{s}$, $1.88\\,\\text{s}$, $1.96\\,\\text{s}$ and $1.82\\,\\text{s}$. The estimate of random error is taken to be half of the range. What percentage of the mean is it?",
       "answer": 4.83,
       "unit": "%",
       "tolerance": 0.04
@@ -53,7 +54,7 @@
     {
       "id": "fy1-3-L2-02",
       "level": 2,
-      "text": "The zero end of a tape measure is worn. A rod exactly 1.000 m long is measured with the tape three times, and the readings are 1.012 m, 1.009 m and 1.011 m. How many millimetres too much does the tape show on average?",
+      "text": "The zero end of a tape measure is worn. A rod exactly $1.000\\,\\text{m}$ long is measured with the tape three times, and the readings are $1.012\\,\\text{m}$, $1.009\\,\\text{m}$ and $1.011\\,\\text{m}$. By how many millimetres too much does the tape show on average?",
       "answer": 10.67,
       "unit": "mm",
       "tolerance": 0.04
@@ -61,7 +62,7 @@
     {
       "id": "fy1-3-L2-03",
       "level": 2,
-      "text": "The length of a glass tube is measured three times, and the results have been recorded in different units: 12.4 cm, 0.125 m and 123 mm. What is the mean in centimetres?",
+      "text": "The length of a glass tube is measured three times, and the results have been recorded in different units: $12.4\\,\\text{cm}$, $0.125\\,\\text{m}$ and $123\\,\\text{mm}$. What is the mean in centimetres?",
       "answer": 12.4,
       "unit": "cm",
       "tolerance": 0.02
@@ -69,9 +70,9 @@
     {
       "id": "fy1-3-L2-04",
       "level": 2,
-      "text": "The same length is measured five times with two instruments. Instrument A gives the results 5.2 cm, 5.6 cm, 5.4 cm, 5.3 cm and 5.5 cm. Instrument B gives the results 5.40 cm, 5.43 cm, 5.41 cm, 5.42 cm and 5.44 cm. How many times larger is half of the range of the results of instrument A than that of instrument B?",
+      "text": "The same length is measured five times with two instruments. Instrument A gives the results $5.2\\,\\text{cm}$, $5.6\\,\\text{cm}$, $5.4\\,\\text{cm}$, $5.3\\,\\text{cm}$ and $5.5\\,\\text{cm}$. Instrument B gives the results $5.40\\,\\text{cm}$, $5.43\\,\\text{cm}$, $5.41\\,\\text{cm}$, $5.42\\,\\text{cm}$ and $5.44\\,\\text{cm}$. How many times as large is half of the range of the results of instrument A compared with that of instrument B?",
       "answer": 10,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ],
@@ -79,7 +80,7 @@
     {
       "id": "fy1-3-L3-01",
       "level": 3,
-      "text": "In hand timing the stopwatch is always started 0.18 s too late and always stopped 0.12 s too late (the delays are the same every time). What is the systematic error of the timing, that is, the reading minus the true time? Give the answer with its sign.",
+      "text": "In hand timing the stopwatch is always started $0.18\\,\\text{s}$ too late and always stopped $0.12\\,\\text{s}$ too late (the delays are the same every time). What is the systematic error of the timing, that is, the reading minus the true time? Give the answer with its sign.",
       "answer": -0.06,
       "unit": "s",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy1-3-L3-02",
       "level": 3,
-      "text": "There are 250 similar sheets in a stack of paper. The thickness of the stack is measured with a ruler whose smallest scale division is 1.0 mm, and the error estimate of the reading is half of a scale division. What is the error estimate of the thickness of one sheet, when all sheets are equally thick? Give the answer in micrometres, where one micrometre is a thousandth of a millimetre.",
+      "text": "There are 250 similar sheets in a stack of paper. The thickness of the stack is measured with a ruler whose smallest scale division is $1.0\\,\\text{mm}$, and the uncertainty of the reading is estimated to be half of a scale division. What is the error estimate of the thickness of one sheet, when all the sheets are equally thick? Give the answer in micrometres, where one micrometre is a thousandth of a millimetre.",
       "answer": 2.0,
       "unit": "µm",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy1-3-L3-03",
       "level": 3,
-      "text": "The length of a steel rod is known exactly from a reference measurement: it is 8.00 cm. The rod is measured five times with vernier callipers, and the readings are 8.24 cm, 8.27 cm, 8.25 cm, 8.29 cm and 8.25 cm. Calculate the estimate of the systematic error, that is, the difference between the mean and the true value.",
+      "text": "The length of a steel rod is known exactly from a reference measurement: it is $8.00\\,\\text{cm}$. The rod is measured five times with vernier callipers, and the readings are $8.24\\,\\text{cm}$, $8.27\\,\\text{cm}$, $8.25\\,\\text{cm}$, $8.29\\,\\text{cm}$ and $8.25\\,\\text{cm}$. Calculate the estimate of the systematic error, that is, the difference between the mean and the true value.",
       "answer": 0.26,
       "unit": "cm",
       "tolerance": 0.02

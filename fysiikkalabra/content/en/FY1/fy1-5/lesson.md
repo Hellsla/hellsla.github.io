@@ -3,7 +3,7 @@
 > **Why** can the position of the Voyager 2 probe be calculated in advance for any day, even though it is more than 20 billion kilometres from the Sun?
 
 ## Key idea
-Uniform motion is motion along a straight line at constant speed: in equal intervals of time, the object travels equal distances. Speed tells you how far the object travels in one second, so its unit is metres per second (m/s). If a trolley moves two metres every second, its speed is 2 m/s.
+Uniform motion is motion along a straight line at constant speed: in equal intervals of time, the object travels equal distances. Speed tells you how far the object travels in one second, so its unit is metres per second (m/s). If a trolley moves two metres every second, its speed is $2\,\text{m/s}$.
 
 <svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Motion diagram in which the same trolley is drawn at five consecutive seconds on the grid: 0 s, 1 s, 2 s, 3 s and 4 s. The gaps between the trolleys are equal, and under each gap there is an equally long bracket Δs: in uniform motion an object travels equal distances in equal intervals of time. The gaps are drawn to scale, and the trolleys are the same size." style="max-width:100%;font-size:24px">
   <line x1="24" y1="150" x2="576" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

@@ -10,23 +10,24 @@
 
 ## fy1-3-L1-02
 **Given:** true value (reference length) $x_\text{true} = 20.0\,\text{cm}$, measurement result $x = 20.3\,\text{cm}$
-**Find:** the measurement error $\Delta x$ with its sign in the unit $\text{cm}$
+**Find:** the measurement error $x - x_\text{true}$ with its sign in the unit $\text{cm}$
 **Principle:** The measurement error is the difference between the measurement result and the true value. The sign tells the direction: plus means that the result is too large, and minus that it is too small.
-**Formula:** $\Delta x = x - x_\text{true}$. The formula is already solved for the quantity to find: $\Delta x = x - x_\text{true}$
+**Formula:** The measurement error is the difference between the result and the true value, and it is already solved for the quantity to find: $\text{measurement error} = x - x_\text{true}$
 **Conversions:** Both lengths are in centimetres, so no conversions are needed.
-**Substitution:** $\Delta x = 20.3\,\text{cm} - 20.0\,\text{cm} = +0.3\,\text{cm}$
+**Substitution:** $x - x_\text{true} = 20.3\,\text{cm} - 20.0\,\text{cm} = +0.3\,\text{cm}$
 **Answer:** $0.3\,\text{cm}$, that is, the result is too large. The difference is known only to one decimal place, because both lengths are given with one decimal place.
 **Reasonableness:** The result $20.3\,\text{cm}$ is larger than the true value $20.0\,\text{cm}$, so the error must be positive. Relative to the length the error is $\dfrac{0.3\,\text{cm}}{20.0\,\text{cm}} \approx 1.5\,\%$, which is a large error for a tape measure (a tape is usually accurate to about a millimetre), so the cause is probably systematic, for example a worn start of the tape or a wrong zero.
 
 ## fy1-3-L1-03
-**Given:** $t = 12.4\,\text{s}$, $12.9\,\text{s}$, $12.6\,\text{s}$, $12.2\,\text{s}$ and $12.7\,\text{s}$; the smallest result $t_\text{min} = 12.2\,\text{s}$ and the largest $t_\text{max} = 12.9\,\text{s}$
+**Given:** the five results of the figure on the time axis; the smallest result $t_\text{min} = 12.2\,\text{s}$ and the largest $t_\text{max} = 12.9\,\text{s}$
 **Find:** half of the range $\Delta t$ in the unit $\text{s}$
-**Principle:** The scatter of the results tells the size of the random error. The simplest estimate is half of the range, that is, half of the difference between the largest and the smallest result, because a single result can deviate from the middle in either direction.
+**Principle:** The scatter of the results tells the size of the random error. The simplest estimate is half of the range, that is, half of the difference between the largest and the smallest result, because a single result can deviate from the middle in either direction. Only the two extremes determine the range, so the other points are not needed.
+**Reading the graph:** The vertical lines of the axis are $0.1\,\text{s}$ apart and the numbers $0.2\,\text{s}$ apart. The leftmost point is on the line $12.2\,\text{s}$, so $t_\text{min} = 12.2\,\text{s}$. The rightmost point is on the line that is one interval to the right of the number $12.8$, so $t_\text{max} = 12.9\,\text{s}$. The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
 **Formula:** $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$. The formula is already solved for the quantity to find: $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Conversions:** All times are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t = \dfrac{12.9\,\text{s} - 12.2\,\text{s}}{2} = \dfrac{0.7\,\text{s}}{2} = 0.35\,\text{s}$
-**Answer:** $0.35\,\text{s}$, two significant figures; the divisor $2$ is an exact number. This is exactly half of the range. As a stated error estimate it would be rounded to one significant figure, $0.4\,\text{s}$.
-**Reasonableness:** The range is $0.7\,\text{s}$, and half of it is smaller than the range, as it should be. The middle of the range is $12.55\,\text{s}$, and $12.55\,\text{s} \pm 0.35\,\text{s}$ gives exactly the interval $12.2\,\text{s}$–$12.9\,\text{s}$.
+**Answer:** $0.35\,\text{s}$ is exactly half of the range. The uncertainty is stated with one significant figure, so in a report it is $0.4\,\text{s}$. Both answers are accepted.
+**Reasonableness:** In the figure the extreme points are seven squares apart, that is, $0.7\,\text{s}$, and half of it is smaller than the range, as it should be. The middle of the range is $12.55\,\text{s}$, and $12.55\,\text{s} \pm 0.35\,\text{s}$ gives exactly the interval $12.2\,\text{s}$–$12.9\,\text{s}$, onto which all the points fall.
 
 ## fy1-3-L1-04
 **Given:** the reading of the scale when empty (zero reading) $m_0 = 1.2\,\text{g}$, the reading with the object $m_\text{reading} = 48.7\,\text{g}$
@@ -40,13 +41,13 @@
 
 ## fy1-3-L1-05
 **Given:** the smallest scale division $d = 1.0\,\text{mm}$
-**Find:** the error estimate of a single reading $\Delta x$ in the unit $\text{mm}$
-**Principle:** A reading is taken from the scale according to the nearest scale mark. The true value can be anything between two marks, so the reading can be wrong by at most half of a scale division.
+**Find:** the uncertainty of the reading $\Delta x$ in the unit $\text{mm}$
+**Principle:** A reading is taken from the scale according to the nearest scale mark. In a simple situation the uncertainty of the reading is estimated as half of a scale division; the total uncertainty can be larger if, for example, the edge of the object is unclear or the scale is viewed from the side.
 **Formula:** $\Delta x = \dfrac{d}{2}$. The formula is already solved for the quantity to find: $\Delta x = \dfrac{d}{2}$
 **Conversions:** The scale division is already in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$
 **Answer:** $0.5\,\text{mm}$; the error estimate is a rough estimate, so it is stated with one significant figure.
-**Reasonableness:** If $23.0\,\text{mm}$ is read from a ruler, the true length is between $22.5\,\text{mm}$ and $23.5\,\text{mm}$, and this interval is one scale division, that is, $1.0\,\text{mm}$ wide. The error estimate cannot be larger than a scale division.
+**Reasonableness:** If $23.0\,\text{mm}$ is read from a ruler, on the basis of the reading the length is estimated to be between $22.5\,\text{mm}$ and $23.5\,\text{mm}$, and this interval is one scale division, that is, $1.0\,\text{mm}$ wide. So the uncertainty of the reading is smaller than a scale division, but the total uncertainty of the measurement can be larger than this.
 
 ## fy1-3-L2-01
 **Given:** $t = 1.84\,\text{s}$, $1.91\,\text{s}$, $1.78\,\text{s}$, $1.88\,\text{s}$, $1.96\,\text{s}$ and $1.82\,\text{s}$; $n = 6$, $t_\text{min} = 1.78\,\text{s}$, $t_\text{max} = 1.96\,\text{s}$
@@ -65,8 +66,8 @@
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ and $\Delta L_\text{sys} = \bar{L} - L_0$. The quantity to find is $\Delta L_\text{sys} = \bar{L} - L_0$
 **Conversions:** The result comes out in metres, and $1\,\text{m} = 1000\,\text{mm}$, so it is multiplied by a thousand.
 **Substitution:** The sum is $1.012\,\text{m} + 1.009\,\text{m} + 1.011\,\text{m} = 3.032\,\text{m}$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m} = 10.67\,\text{mm}$
-**Answer:** $10.7\,\text{mm}$, three significant figures: the readings are to a millimetre, and the mean of three readings carries one more figure.
-**Reasonableness:** Each reading is $9\,\text{mm}$–$12\,\text{mm}$ too large, so the mean $10.7\,\text{mm}$ is between these. The tape shows about $1\,\%$ too much, and the sign of the error is positive, because the readings exceed the true value.
+**Answer:** about $11\,\text{mm}$ (calculator value $10.67\,\text{mm}$): the readings vary by about $\pm 1.5\,\text{mm}$, so the mean should not be stated more precisely than a millimetre.
+**Reasonableness:** Each reading is $9\,\text{mm}$–$12\,\text{mm}$ too large, so the mean $11\,\text{mm}$ is between these. The tape shows about $1\,\%$ too much, and the sign of the error is positive, because the readings exceed the true value.
 
 ## fy1-3-L2-03
 **Given:** $L_1 = 12.4\,\text{cm}$, $L_2 = 0.125\,\text{m}$, $L_3 = 123\,\text{mm}$

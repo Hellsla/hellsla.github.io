@@ -69,7 +69,7 @@ Voimalaitos ei tee energiaa tyhjästä. Se muuttaa luonnonvaran energian sähkö
 </svg>
 
 ### Uusiutuva ja uusiutumaton energia
-Vesi, tuuli ja auringonsäteily ovat uusiutuvia. Ne eivät lopu, kun niitä käytetään. Bioperäiset polttoaineet, kuten puu, ovat myös uusiutuvia, koska uusi metsä kasvaa tilalle. Kivihiili, öljy, maakaasu ja turve ovat fossiilisia. Uraani on myös uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
+Vesi, tuuli ja auringonsäteily ovat uusiutuvia. Ne eivät lopu, kun niitä käytetään. Bioperäiset polttoaineet, kuten puu, ovat myös uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy, maakaasu ja turve ovat fossiilisia. Uraani on myös uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
 ### Kolme ryhmää: miten voimala toimii verkossa
 Suuria määriä sähköä ei voi varastoida suoraan verkkoon. Siksi tuotannon on vastattava kulutusta joka hetki. Voimalat jaetaan ryhmiin sen mukaan, miten niiden tehoa voi muuttaa.

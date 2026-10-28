@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb3e58dd9391ebc
+CONTENT-HASH: 45796352a9c5257f
 
 ## Blocking
 (none left; see Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 5bb3e58dd9391ebc
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): wording of tasks and solutions for natural English, step labels (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness), that every task still asks the same thing.
 - Follow-up 2026-10-28 (check_i18n update): word unit "kertaa"/"times" (level2[3]) and units; no change needed, re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercise texts, figure task (pendulum-dots) and solutions against the new Finnish; same physics, terms, decimals and unambiguous correct choice; no issues found.

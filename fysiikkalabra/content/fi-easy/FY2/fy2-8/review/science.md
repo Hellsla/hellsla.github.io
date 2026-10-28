@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 13d18515396b662f
+CONTENT-HASH: c810d1dfcc09172f
 
 ## Blocking
 - none left (fixes listed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 13d18515396b662f
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, figures.json, inquiry.json (with the new sim and experiment texts), exit-ticket.json and meta.json, compared for physics, numbers, units, decimal comma and chapter titles; sim labels via i18n.py resolve fi-easy. check_i18n fi-easy: 0 errors.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, inquiry texts (fossil-fuel wording, check items, feedback, model answer) and criteria

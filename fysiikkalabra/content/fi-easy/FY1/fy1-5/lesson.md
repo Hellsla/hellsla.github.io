@@ -3,7 +3,7 @@
 > **Miksi** Voyager 2 -luotaimen paikan voi laskea etukäteen mille tahansa päivälle, vaikka se on yli 20 miljardin kilometrin päässä Auringosta?
 
 ## Ydinajatus
-Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Nopeus kertoo, kuinka pitkän matkan kappale kulkee yhdessä sekunnissa. Siksi nopeuden yksikkö on metri sekunnissa (m/s). Jos kärry etenee joka sekunti kaksi metriä, sen nopeus on 2 m/s.
+Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Nopeus kertoo, kuinka pitkän matkan kappale kulkee yhdessä sekunnissa. Siksi nopeuden yksikkö on metri sekunnissa (m/s). Jos kärry etenee joka sekunti kaksi metriä, sen nopeus on $2\,\text{m/s}$.
 
 <svg data-fig="motion" viewBox="0 0 600 330" role="img" aria-label="Liikekuva. Samaa kärryä on piirretty viiden peräkkäisen sekunnin kohdalle: 0 s, 1 s, 2 s, 3 s ja 4 s. Kärryjen välit ovat yhtä pitkät. Jokaisen välin alla on yhtä pitkä sulku Δs. Kuva näyttää, että tasaisessa liikkeessä kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Välit on piirretty mittakaavassa. Kärryt ovat samankokoisia." style="max-width:100%;font-size:24px">
   <line x1="24" y1="150" x2="576" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

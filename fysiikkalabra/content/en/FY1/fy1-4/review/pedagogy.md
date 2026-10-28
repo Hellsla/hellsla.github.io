@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1aa449966232bf2a
+CONTENT-HASH: d41a753526fbce19
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 1aa449966232bf2a
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): en wording for 16–18-year-olds, terms against terms.md (slope, constant term, data points, fitted line, mean deviation, gross error), step labels (Given/Find/Principle/Reading the graph/…), stage titles, sim labels (Data set, Slope, Constant term, Show the calculated best-fit line); question intent, correct options and option–feedback match unchanged.
 - Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): intro texts (experiments 1–3), column names, word units: consistent with sim labels (Data set, Slope, Constant term); fixed activities[5].intro "a measurement of a cart" → "the trolley measurements" (term consistency).
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (new drawing-the-line check, trimmed exit ticket, calculation task) against the new Finnish.

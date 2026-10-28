@@ -29,7 +29,7 @@
       "level": 1,
       "text": "The life-cycle emission factor of rooftop panels is $41\\,\\text{g/kWh}$ and that of natural gas electricity is $490\\,\\text{g/kWh}$. Both produce the same amount of electricity. How many times as large is the emission of natural gas electricity compared with that of rooftop panels?",
       "answer": 12,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {
@@ -89,7 +89,7 @@
       "level": 3,
       "text": "An example city needs $100\\,\\text{GWh}$ of electricity a year and compares two ways. A solar park produces about $0.50\\,\\text{GWh}$ of electricity per hectare per year. A field grown for energy gives about $0.010\\,\\text{GWh}$ of electricity per hectare per year in a power plant. (The figures are rounded example values; $1\\,\\text{ha} = 0.01\\,\\text{km}^2$.) How many times as large a field area would biomass electricity need compared with the area of the solar park? What does land use tell you about the ways of producing energy that the emission factor does not?",
       "answer": 50,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {
@@ -97,7 +97,7 @@
       "level": 3,
       "text": "Example situation: a city bus uses $30$ litres of diesel per $100\\,\\text{km}$ and has $25$ passengers. The energy content of diesel is $36\\,\\text{MJ/}\\textsf{l}$ and the emission factor of burning is $74\\,\\text{g/MJ}$. A petrol car driven by one person uses $6.0$ litres per $100\\,\\text{km}$ ($32\\,\\text{MJ/}\\textsf{l}$ and $69\\,\\text{g/MJ}$). How many times as large is the emission from burning of the car per passenger compared with that of the bus?",
       "answer": 4.1,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ]

@@ -142,7 +142,10 @@
     "why": "Miksi?",
     "fold_title": "Tee ennusteet ennen tutkimista",
     "fold_question_one": "{{n}} kysymys",
-    "fold_question_many": "{{n}} kysymystä"
+    "fold_question_many": "{{n}} kysymystä",
+    "self_assess_lead": "Merkitse kohdat, jotka sinun vastauksessasi jo on.",
+    "criteria_done": "Mitä vastauksestani puuttuu?",
+    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>."
   },
   "js": {
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",
@@ -185,7 +188,8 @@
     "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">mene ennusteeseen</a>.",
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
-    "selfcheck_summary": "Osaan {{ok}} / {{n}} tavoitetta."
+    "criteria_all": "Vastauksessasi on kaikki mallivastauksen tärkeät kohdat.",
+    "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:"
   },
   "sims": {
     "fy2-2": {
@@ -868,14 +872,5 @@
     "error_sources": "Tärkeimmät virhelähteet on nimetty. On myös kerrottu, miten ne vaikuttavat tulokseen.",
     "assumptions": "Oletus on nimetty. On myös perusteltu, miten se vaikuttaa tulokseen.",
     "conclusion": "Johtopäätös vastaa kysymykseen ja perustuu aineistoon."
-  },
-  "selfcheck": {
-    "title": "Arvioi osaamistasi",
-    "lead": "Mieti luvun tavoitteita: miltä osaamisesi tuntuu nyt? Valinnat tallentuvat vain tähän selaimeen.",
-    "ok": "Osaan",
-    "practice": "Tarvitsen vielä harjoitusta",
-    "next": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
-    "next_no_exercises": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a>.",
-    "optional": "valinnainen"
   }
 }

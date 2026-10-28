@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7f53d12f4f81ee66
+CONTENT-HASH: 8b9a53d3c7eaa6b9
 
 ## Blocking
 (none left)
@@ -21,3 +21,4 @@ CONTENT-HASH: 7f53d12f4f81ee66
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi in every long text block (lesson, sim howto/model/calc, solutions, model answers, exit-ticket answers, figure descriptions); physics terms kept (vapaa pudotus, putoamiskiihtyvyys, kulmakerroin, rajanopeus); no step, hint or feedback dropped; questions ask the same thing; correct choices unchanged and unambiguous; Finnish step labels kept.
 - Update 2026-10-28: simplified stage intros of Koe 1–3 ("Alussa on tyhjiö …", one instruction per sentence) checked against the Finnish: same settings, same task, *Pudota* / *Hetki t* match the sim; names/units kept as Finnish; numeric answers unchanged.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the fitted-line example data text and solution, new check-c2 item (g = 9.81 m/s^2, four options with feedback, only option 2 correct) and renumbered titles, the one-question exit ticket (Moon vs Earth, 4.9 and 29 m/s, ratio 6.1) and its intro, figure description; numbers, decimal signs, formulas and answers match the new Finnish.

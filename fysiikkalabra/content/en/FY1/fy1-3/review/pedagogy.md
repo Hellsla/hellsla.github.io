@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e8eb4468807db78f
+CONTENT-HASH: 04c6ee16d8dc975f
 
 ## Blocking
 (none left; see Fixed)
@@ -16,3 +16,4 @@ CONTENT-HASH: e8eb4468807db78f
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): tone and readability for 16–18-year-olds, glossary terms against terms.md, step labels against lang/en.json, slider/button names against the en sim labels, that every question, option and feedback still asks/matches the same thing and the correct options stay unambiguous.
 - Follow-up 2026-10-28 (check_i18n update): experiment intro texts (activities 5–7), column names and the word unit "kertaa"/"times"; slider name *Repetitions*/*Toistoja* matches the sim label; no change needed, re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, check-c2 resolution item, changed feedback, figure description and glossary against the new Finnish; same physics, terms, decimals and unambiguous correct choice; no issues found.

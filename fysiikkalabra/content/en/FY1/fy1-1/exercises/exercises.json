@@ -11,9 +11,10 @@
     {
       "id": "fy1-1-L1-02",
       "level": 1,
-      "text": "The order of magnitude of the size of a hydrogen atom is $10^{-10}\\,\\text{m}$ and that of an ant $10^{-2}\\,\\text{m}$. How many orders of magnitude are there between them?",
+      "text": "The figure shows an axis of powers of ten for the size $d$, with a hydrogen atom and an ant marked on it. How many orders of magnitude are there between their sizes?",
+      "figure": "fy1-1/scale-marks",
       "answer": 8,
-      "unit": "orders of magnitude",
+      "unit": "suuruusluokkaa",
       "tolerance": 0.02
     },
     {
@@ -29,7 +30,7 @@
       "level": 1,
       "text": "The diameter of a lead atom is about $3.5\\cdot10^{-10}\\,\\text{m}$ and the diameter of its nucleus about $1.4\\cdot10^{-14}\\,\\text{m}$. How many times larger is the atom than its nucleus?",
       "answer": 25000,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {
@@ -37,7 +38,7 @@
       "level": 1,
       "text": "The thickness of a hair is $7.0\\cdot10^{-5}\\,\\text{m}$ and the diameter of a red blood cell $7.5\\cdot10^{-6}\\,\\text{m}$. How many times thicker is the hair than the red blood cell?",
       "answer": 9.33,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ],
@@ -47,7 +48,7 @@
       "level": 2,
       "text": "The diameter of the Milky Way is about $1.0\\cdot10^{5}$ light-years, and one light-year is $9.46\\cdot10^{15}\\,\\text{m}$. The diameter of the observable universe is about $8.8\\cdot10^{26}\\,\\text{m}$. How many Milky Way diameters would fit in a row across the diameter of the observable universe? Give the answer in thousands.",
       "answer": 930.2,
-      "unit": "thousand",
+      "unit": "tuhatta",
       "tolerance": 0.02
     },
     {
@@ -89,7 +90,7 @@
       "level": 3,
       "text": "The Planck length is $1.6\\cdot10^{-35}\\,\\text{m}$, the size of a proton $1.7\\cdot10^{-15}\\,\\text{m}$ and the height of a person $1.7\\,\\text{m}$. Which difference of orders of magnitude is larger: between the Planck length and the proton, or between the proton and a person? Give the larger difference as a number of powers of ten.",
       "answer": 20,
-      "unit": "orders of magnitude",
+      "unit": "suuruusluokkaa",
       "tolerance": 0.02
     },
     {

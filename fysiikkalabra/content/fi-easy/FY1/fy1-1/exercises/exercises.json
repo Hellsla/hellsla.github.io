@@ -11,7 +11,8 @@
     {
       "id": "fy1-1-L1-02",
       "level": 1,
-      "text": "Vetyatomin koon suuruusluokka on $10^{-10}\\,\\text{m}$ ja muurahaisen koon suuruusluokka $10^{-2}\\,\\text{m}$. Montako suuruusluokkaa niiden välillä on?",
+      "text": "Kuvassa on koon $d$ kymmenpotenssiakseli. Siihen on merkitty vetyatomi ja muurahainen. Montako suuruusluokkaa niiden koon välillä on?",
+      "figure": "fy1-1/scale-marks",
       "answer": 8,
       "unit": "suuruusluokkaa",
       "tolerance": 0.02

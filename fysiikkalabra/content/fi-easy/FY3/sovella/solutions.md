@@ -87,7 +87,7 @@
 **Muunnokset:** Ei tarvita, tehot ovat watteina.
 **Sijoitus:** $P_\text{tuleva} = 800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}$ ja $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0{,}59$
 **Vastaus:** $\eta \approx 0{,}59$ eli noin $60\,\%$. Vastauksessa on kaksi merkitsevää numeroa kuten b-kohdan tehossa.
-**Järkevyys:** Hyötysuhde on alle yhden, kuten pitää. Osa säteilystä heijastuu lasista ja laatikosta. Siksi noin $60\,\%$ on uskottava yksinkertaiselle keräimelle.
+**Järkevyys:** Hyötysuhde on enintään yksi, koska vesi ei voi saada enempää tehoa kuin keräimeen tulee. Todellisessa keräimessä se jää alle yhden, koska osa säteilystä heijastuu lasista ja laatikosta. Siksi noin $60\,\%$ on uskottava yksinkertaiselle keräimelle.
 
 ### d)
 **Annettu:** auringosta saatu teho $P \approx 237\,\text{W}$ ja a-kohdan kuvaaja
@@ -119,7 +119,7 @@
 ### a)
 **Annettu:** venttiili pitää ylipaineen $80\,\text{kPa}$, ulkoilman paine $101\,\text{kPa}$ ja taulukon kiehumislämpötilat
 **Kysytty:** veden lämpötila $T$, kun venttiili päästää höyryä ulos
-**Periaate:** Vesi kiehuu siinä lämpötilassa, joka vastaa veden pinnalla vaikuttavaa kokonaispainetta. Kun venttiili päästää höyryä ulos, kattilan kokonaispaine on ulkoilman paine ja venttiilin ylipaine yhteensä. Taulukossa on kiehumislämpötila vain $5\,{}^\circ\text{C}$:n välein. Siksi väliin jäävä arvo interpoloidaan kahden lähimmän rivin välistä. Oletus on, että lämpötila muuttuu rivien välillä tasaisesti.
+**Periaate:** Vesi kiehuu siinä lämpötilassa, joka vastaa veden pinnalla vaikuttavaa kokonaispainetta. Kun venttiili päästää höyryä ulos, kattilan kokonaispaine on ulkoilman paine ja venttiilin ylipaine yhteensä. Ilma on jo poistunut, joten kannen alla on vain vesihöyryä ja koko paine on höyryn painetta. Taulukossa on kiehumislämpötila vain $5\,{}^\circ\text{C}$:n välein. Siksi väliin jäävä arvo interpoloidaan kahden lähimmän rivin välistä. Oletus on, että lämpötila muuttuu rivien välillä tasaisesti.
 **Kaava:** $p = p_0 + \Delta p$ ja $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
 **Muunnokset:** Ei tarvita, kaikki paineet ovat kilopascaleina.
 **Sijoitus:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, joka on rivien $169{,}2\,\text{kPa}$ ja $198{,}7\,\text{kPa}$ välissä. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11{,}8\,\text{kPa}}{29{,}5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2{,}0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
@@ -128,14 +128,14 @@
 
 ### b)
 **Kysytty:** miksi kiehumislämpötila on korkeampi ja miksi ruoka kypsyy nopeammin
-**Periaate:** Faasikaavion höyrystymiskäyrä ja taulukko näyttävät, että veden kiehumislämpötila kasvaa paineen kasvaessa.
+**Periaate:** Taulukko näyttää, että veden kiehumislämpötila kasvaa paineen kasvaessa. Sama tieto on faasikaavion höyrystymiskäyrässä, mutta vastaukseen riittää taulukko.
 **Mallivastaus:** Kiehuessaan vesi höyrystyy kuplina koko nesteen sisällä. Höyrykupla pysyy olemassa vain, jos sen sisällä olevan höyryn paine on yhtä suuri kuin ympäröivän nesteen paine. Nesteen paineeseen vaikuttaa pinnan paine. Höyryn paine kasvaa lämpötilan noustessa. Nopeammat hiukkaset irtoavat nesteestä useammin ja törmäävät kuplan seinään voimakkaammin. Mitä suurempi pinnan paine on, sitä korkeampi lämpötilan on oltava, ennen kuin kuplia voi syntyä. Painekattilassa paine on noin $1{,}8$-kertainen ulkoilman paineeseen verrattuna. Siksi vesi kiehuu vasta noin $117\,{}^\circ\text{C}$:ssa.
 Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Vesi on $17\,{}^\circ\text{C}$ kuumempaa kuin avoimessa kattilassa. Siksi lämpötilaero ruoan pintaan on suurempi. Silloin lämpö johtuu ruoan sisään nopeammin. Korkeammassa lämpötilassa myös kypsymisen muutokset tapahtuvat nopeammin.
 
 ### c)
 **Annettu:** levyn teho $P = 300\,\text{W}$, josta $\eta = 0{,}80$ siirtyy kattilan sisältöön, aika $t = 20\,\text{min}$ ja veden ominaishöyrystymislämpö $r = 2260\,\text{kJ/kg}$
 **Kysytty:** höyrystyvän veden massa $m$
-**Periaate:** Venttiili pitää paineen vakiona, joten kattilan sisältö pysyy kiehumislämpötilassa. Lämpötila ei nouse. Siksi kaikki sisältöön siirtyvä energia kuluu veden höyrystämiseen. Syntyvä höyry purkautuu venttiilistä. Veden ja perunoiden massaa ei tarvita. Massa ratkaisee vain sen, kuinka kauan vettä riittää.
+**Periaate:** Venttiili pitää paineen vakiona, joten kattilan sisältö pysyy kiehumislämpötilassa. Lämpötila ei nouse, ja perunoiden oletetaan jo olevan kattilan lämpötilassa. Siksi kaikki sisältöön siirtyvä energia kuluu veden höyrystämiseen. Syntyvä höyry purkautuu venttiilistä. Veden ja perunoiden massaa ei tarvita. Massa ratkaisee vain sen, kuinka kauan vettä riittää.
 **Kaava:** $\eta P t = rm$, josta $m = \dfrac{\eta P t}{r}$
 **Muunnokset:** $t = 20\,\text{min} = 20 \cdot 60\,\text{s} = 1200\,\text{s}$ ja $r = 2260\,\text{kJ/kg} = 2{,}26 \cdot 10^6\,\text{J/kg}$
 **Sijoitus:** $\eta P t = 0{,}80 \cdot 300\,\text{W} \cdot 1200\,\text{s} = 288\,000\,\text{J}$ ja $m = \dfrac{288\,000\,\text{J}}{2{,}26 \cdot 10^6\,\text{J/kg}} = 0{,}127\,\text{kg}$
@@ -181,13 +181,13 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Vesi on $17\,{}^\cir
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Muunnokset:** Ei tarvita, paineiden suhteessa yksiköt supistuvat.
 **Sijoitus:** $V_2 = 6{,}0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14{,}7\,\text{l}$
-**Vastaus:** Ilma laajenisi noin $15\,\text{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\text{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\text{l}$. Pidätetty ilma venyttäisi keuhkoja ja voisi repiä keuhkokudoksen. Noustessa on hengitettävä koko ajan ulos.
+**Vastaus:** Ilma laajenisi noin $15\,\text{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\text{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\text{l}$. Pidätetty ilma venyttäisi keuhkoja ja voisi repiä keuhkokudoksen. Noustessa ei saa koskaan pidättää hengitystä. Hengitetään normaalisti koko nousun ajan, jolloin laajeneva ilma pääsee ulos keuhkoista.
 **Järkevyys:** Tilavuus kasvaa samassa suhteessa kuin a-kohdan kupla, paitsi lämpenemisen osuutta. Keuhkojen lämpötila ei muutu.
 
 ### c)
 **Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\text{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
 **Kysytty:** aika $t$, jonka sukeltaja voi olla $15{,}0\,\text{m}$:n syvyydessä
-**Periaate:** Ilman lämpötila pysyy samana, kun ilma virtaa säiliöstä säätimen kautta keuhkoihin. Siksi ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa sen tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
+**Periaate:** Tehtävän mukaan ilman lämpötila on sama säiliössä ja keuhkoissa (d-kohdassa arvioidaan lämpenemisen vaikutus). Siksi ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa sen tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
 **Kaava:** $\Delta p_\text{s} V_\text{s} = p V$, josta $V = \dfrac{\Delta p_\text{s} V_\text{s}}{p}$, ja $t = \dfrac{V}{q}$
 **Muunnokset:** $\Delta p_\text{s} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. Tilavuudet voivat jäädä litroiksi.
 **Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ ja $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$

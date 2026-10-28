@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5a93a3131bd816ee
+CONTENT-HASH: de18853041012696
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 5a93a3131bd816ee
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (all sections, worked example steps and numbers), inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, models, criteria, source notes, units), exit-ticket.json, meta.json, figures.json; decimal points, \cdot, chapter titles vs courses.json, P_avg/P_nom/P_cons subscripts.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked renewable wording (lesson.md) and the wind-turbine solution (inquiry.json) against the new Finnish.

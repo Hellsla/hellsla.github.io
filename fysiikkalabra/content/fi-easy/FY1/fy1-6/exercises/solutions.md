@@ -60,14 +60,15 @@
 **Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa. Nopeuteen $12\,\text{m/s}$ pääseminen vie siis hieman yli sekunnin. Takaisinlasku: $9{,}81\,\text{m/s}^2 \cdot 1{,}22\,\text{s} = 12{,}0\,\text{m/s}$.
 
 ## fy1-6-L2-02
-**Annettu:** kivi lähtee levosta, osumisnopeus $v = 54{,}0\,\text{km/h}$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** putoamisaika $t$ yksikössä $\text{s}$
-**Periaate:** Ilmanvastus jätetään huomiotta, joten kivi on vapaassa pudotuksessa. Levosta lähtevän kappaleen nopeus on $v = g\,t$. Muunna ensin nopeus SI-yksiköihin. Ratkaise sitten kaavasta aika.
-**Kaava:** $v = g\,t$, joten $t = \dfrac{v}{g}$
-**Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $54{,}0\,\text{km/h} = \dfrac{54{,}0\cdot1000\,\text{m}}{3600\,\text{s}} = 15{,}0\,\text{m/s}$.
-**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}529\,\text{s}$
-**Vastaus:** $1{,}53\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $54{,}0\,\text{km/h}$.
-**Järkevyys:** Nopeus $15\,\text{m/s}$ saavutetaan, kun nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa. Siihen kuluu noin puolitoista sekuntia. Tämä vastaa tulosta. Aika vastaa putoamista noin neljännen kerroksen korkeudelta, joten tilanne on uskottava.
+**Annettu:** kuvaajat, joissa kappaleet on pudotettu levosta kahdella ilmattomalla planeetalla A ja B; planeetan A kappaleen aika $t_\text{A} = 5{,}0\,\text{s}$
+**Kysytty:** aika $t_\text{B}$, jonka kuluttua planeetan B kappaleella on sama nopeus kuin planeetan A kappaleella ajan $t_\text{A}$ kuluttua
+**Periaate:** Vapaassa pudotuksessa levosta nopeus kasvaa joka sekunti saman verran. Siksi nopeus on $v = g\,t$. Kuvaaja $(t, v)$ on origosta alkava suora, ja sen kulmakerroin on planeetan $g$. Lasketaan ensin A:n nopeus. Sitten lasketaan aika, jonka B tarvitsee samaan nopeuteen.
+**Kuvaajan lukeminen:** Planeetan A suora kulkee ruudukon risteyksen $(5{,}0\,\text{s};\, 20\,\text{m/s})$ kautta. Siksi A:n kappaleella on $v_\text{A} = 20\,\text{m/s}$ ajan $5{,}0\,\text{s}$ kuluttua. Planeetan B suora kulkee risteyksen $(5{,}0\,\text{s};\, 40\,\text{m/s})$ kautta. Lukemat ovat tarkkoja ruudukosta. Siksi vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
+**Kaava:** $g_\text{B} = \dfrac{v}{t}$ ja $t_\text{B} = \dfrac{v_\text{A}}{g_\text{B}}$
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
+**Sijoitus:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5{,}0\,\text{s}} = 8{,}0\,\text{m/s}^2$ ja $t_\text{B} = \dfrac{20\,\text{m/s}}{8{,}0\,\text{m/s}^2} = 2{,}5\,\text{s}$
+**Vastaus:** $2{,}5\,\text{s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa ja ajassa $5{,}0\,\text{s}$.
+**Järkevyys:** Planeetan B kiihtyvyys $8{,}0\,\text{m/s}^2$ on kaksi kertaa A:n kiihtyvyys $\dfrac{20\,\text{m/s}}{5{,}0\,\text{s}} = 4{,}0\,\text{m/s}^2$. Siksi B saavuttaa saman nopeuden puolessa ajassa: $\tfrac{5{,}0\,\text{s}}{2} = 2{,}5\,\text{s}$. Kuvaajassa B:n suora ylittää $20\,\text{m/s}$ kohdan ajan $2$ ja $3\,\text{s}$ välillä, kuten pitääkin.
 
 ## fy1-6-L2-03
 **Annettu:** nopeus alussa $v_1 = 12{,}0\,\text{m/s}$, aikaväli $\Delta t = 1{,}50\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$, ei ilmanvastusta

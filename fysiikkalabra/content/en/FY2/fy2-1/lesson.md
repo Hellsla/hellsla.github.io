@@ -10,7 +10,7 @@ Energy comes in many forms, and each form is called a **form of energy**. The fo
 ### Seven forms of energy
 - **Potential energy** $E_\text{p}$ is energy that depends on the position of an object, here gravitational potential energy. The higher an object is and the greater its mass, the more potential energy it has. A ball at the edge of a shelf can pick up speed as it falls.
 - **Kinetic energy** $E_\text{k}$ is the energy of a moving object. The faster an object moves and the greater its mass, the more kinetic energy it has. An object at rest has none.
-- **Thermal energy** $E_\text{thermal}$ is energy linked to the motion of the particles of a substance. The warmer an object is, the more its particles move and the more thermal energy it has.
+- **Thermal energy** $E_\text{thermal}$ is energy linked to the motion of the particles of a substance and to the interactions between them. When an object warms up, its particles move more and its thermal energy increases. Thermal energy also depends on the amount of substance, so it is not the same thing as temperature. The word **heat**, on the other hand, means in physics energy that is *transferred* because of a temperature difference: the net transfer of energy is from the warmer object to the colder one. An object has thermal energy, and energy is transferred from one object to another as heat.
 - **Chemical energy** is energy stored in the chemical bonds of substances. It is found in food, fuels and batteries, and it is released in, for example, combustion and metabolism.
 - **Radiant energy** is energy carried by radiation, for example sunlight. It also travels through a vacuum.
 - **Electrical energy** is energy transferred by an electric current, for example in the electricity grid.
@@ -102,7 +102,7 @@ Potential energy and kinetic energy together make up **mechanical energy**, $E_\
 ### Energy changes form
 Energy does not stay in the same form. In a torch (flashlight), the chemical energy of the battery changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. In an incandescent bulb, most of the energy changes into thermal energy and only a small part into light.
 
-<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Schematic diagram: energy changes in a torch (flashlight). The battery contains chemical energy. It changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. Most of it changes into heat, so the heat arrow is wider. The picture is schematic, and the width of the arrows is not to scale." style="max-width:100%;font-size:24px">
+<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Schematic diagram: energy changes in a torch (flashlight). The battery holds chemical energy. It changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. Most of it changes into thermal energy, so the arrow for thermal energy is wider. The picture is schematic, and the widths of the arrows are not to scale." style="max-width:100%;font-size:24px">
   <foreignObject x="26" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{chemical}$</div></foreignObject>
   <foreignObject x="38.5" y="41.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energy}$</div></foreignObject>
   <rect x="59" y="90" width="42" height="74" rx="5" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
@@ -127,7 +127,7 @@ Energy does not stay in the same form. In a torch (flashlight), the chemical ene
   <foreignObject x="444" y="169.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{energy}$</div></foreignObject>
 </svg>
 
-There are similar changes everywhere. A plant changes the radiant energy of the Sun into chemical energy. A muscle changes chemical energy into kinetic energy and heat. In a nuclear power plant, nuclear energy finally changes into electrical energy.
+There are similar changes everywhere. A plant changes the radiant energy of the Sun into chemical energy. A muscle changes chemical energy into kinetic energy and thermal energy. In a nuclear power plant, nuclear energy finally changes into electrical energy.
 
 ## Formula: Law of conservation of energy
 In all these changes the total amount of energy stays the same: energy is neither created nor destroyed, but changes form or moves from one place to another. This is a universal principle of physics, the **law of conservation of energy**. We look at an **isolated system**, which receives no energy from outside and loses none to the outside. Then the total energy of the system is the same at the start and at the end:
@@ -138,7 +138,7 @@ E_\text{initial} = E_\text{final}
 
 where $E_\text{initial}$ is the sum of the energies of all forms of energy in the system at the start and $E_\text{final}$ is their sum at the end. Both are given in joules ($\text{J}$).
 
-The sum includes all forms of energy, thermal energy too. When a skateboarder slides from the edge of a half-pipe to the bottom and friction acts, the mechanical energy $E_\text{p} + E_\text{k}$ decreases, but the thermal energy $E_\text{thermal}$ increases by the same amount. The sum $E_\text{p} + E_\text{k} + E_\text{thermal}$ does not change.
+The sum includes all forms of energy, thermal energy too. When a skateboarder slides from the edge of a half-pipe to the bottom and friction acts, the mechanical energy $E_\text{p} + E_\text{k}$ decreases, but the thermal energy $E_\text{thermal}$ increases by the same amount. The sum $E_\text{p} + E_\text{k} + E_\text{thermal}$ does not change. So friction does not create energy: it changes mechanical energy into thermal energy, and the tyres, the ramp and the air warm up a little.
 
 <svg data-fig="sailyminen" viewBox="0 0 600 380" role="img" aria-label="Schematic diagram: a skateboarder in a half-pipe at three moments, with the energies at each moment as bars. At the start the skateboarder is at rest at the edge, and all the energy, 800 J, is potential energy. In the middle there is 300 J of potential energy, 450 J of kinetic energy and 50 J of thermal energy. At the bottom there is no potential energy, 700 J of kinetic energy and 100 J of thermal energy. The heights of the bars are to scale, and the total height of every bar corresponds to 800 joules, so there is the same amount of energy at every moment." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy21-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#c92a2a"/><line x1="0" y1="0" x2="0" y2="8" stroke="#f2a69c" stroke-width="3"/></pattern></defs>
@@ -178,18 +178,18 @@ The sum includes all forms of energy, thermal energy too. When a skateboarder sl
 </svg>
 
 ### Using up energy is changing energy
-In everyday language energy is "used up", but in physics it does not run out. When a device uses energy, it changes energy from one form to another. Most often the largest part changes into thermal energy, which spreads into the surroundings and is hard to use any more. This is why it is worth saving energy even though it cannot be destroyed.
+In everyday language energy is "used up", but in physics it does not run out. When a device uses energy, it changes energy from one form to another. Most often the largest part changes into thermal energy, which is transferred as heat into the surroundings and is hard to use any more. In short, people often say that energy "changes into heat". This is why it is worth saving energy even though it cannot be destroyed.
 
 ## Worked example
 A skateboarder starts from rest at the edge of a half-pipe. At the edge her potential energy is $840\,\text{J}$, when the zero level is the bottom of the half-pipe. At the bottom her kinetic energy is $0.72\,\text{kJ}$. The skateboarder, the half-pipe and the surroundings form an isolated system. How much energy has friction changed into thermal energy during the slide?
 
 <!-- vaihe -->
 
-**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest. At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$. As thermal energy we count only the energy that friction produces during the slide. We want this thermal energy $E_\text{thermal}$.
+**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest. At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$. We want the mechanical energy $E_\text{thermal}$ that friction changes into thermal energy during the slide.
 
 <!-- vaihe -->
 
-**Principle.** The system is isolated, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy. At the bottom it is divided between kinetic energy and the thermal energy produced by friction.
+**Principle.** The system is isolated, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy. At the bottom it is divided between kinetic energy and thermal energy, into which friction has changed part of it.
 
 <!-- vaihe -->
 
@@ -219,18 +219,19 @@ E_\text{thermal} &= E_\text{p} - E_\text{k} \\
 
 <!-- vaihe -->
 
-**Result.** The thermal energy produced was $E_\text{thermal} = 120\,\text{J}$. The result is rounded to tens of joules, because the kinetic energy $0.72\,\text{kJ}$ is given to the nearest ten joules and this limits the precision of the difference.
+**Result.** Friction changed $E_\text{thermal} = 120\,\text{J}$ into thermal energy. The result is rounded to tens of joules, because the kinetic energy $0.72\,\text{kJ}$ is given to the nearest ten joules and this limits the precision of the difference.
 
 <!-- vaihe -->
 
-**Reasonableness.** The thermal energy is positive and smaller than the initial energy $840\,\text{J}$, as it should be with friction. The energy is accounted for: $720\,\text{J} + 120\,\text{J} = 840\,\text{J} = E_\text{initial}$. Less than a fifth of the initial energy became thermal energy, which is a believable amount on a smooth half-pipe.
+**Reasonableness.** The thermal energy is positive and smaller than the initial energy $840\,\text{J}$, as it should be with friction. The energy is accounted for: $720\,\text{J} + 120\,\text{J} = 840\,\text{J} = E_\text{initial}$. Less than a fifth of the initial energy changed into thermal energy, which is a believable amount on a smooth half-pipe.
 
 ## Common misconception
-Energy does not disappear or get used up. When a ball stops or a device uses energy, the energy has changed into another form, usually thermal energy that has spread into the surroundings. Another mistake is to calculate only the mechanical energy. In motion with friction $E_\text{p} + E_\text{k}$ decreases, but the total energy stays the same when thermal energy is included.
+Energy does not disappear or get used up. When a ball stops or a device uses energy, the energy has changed into another form, usually thermal energy that has been transferred as heat into the surroundings. Another mistake is to calculate only the mechanical energy. In motion with friction $E_\text{p} + E_\text{k}$ decreases, but the total energy stays the same when thermal energy is included. Friction does not create energy but changes it from one form to another.
 
 ## Summary
 - The symbol for energy is $E$ and its unit is the joule $\text{J}$; $1\,\text{kJ} = 1000\,\text{J}$.
 - The forms of energy are potential energy, kinetic energy (together mechanical energy), thermal energy, chemical energy, radiant energy, electrical energy and nuclear energy.
 - Energy changes form and moves but is neither created nor destroyed: in an isolated system $E_\text{initial} = E_\text{final}$.
-- Friction changes mechanical energy into thermal energy: $E_\text{p} + E_\text{k}$ decreases, but the total energy does not change.
+- Friction does not create energy but changes mechanical energy into thermal energy: $E_\text{p} + E_\text{k}$ decreases, but the total energy does not change.
+- An object has thermal energy; heat is energy that is transferred because of a temperature difference, net from the warmer object to the colder one.
 - Using up energy means changing it into a form that is hard to use, usually thermal energy.

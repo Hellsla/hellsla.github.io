@@ -6,7 +6,7 @@
 **Conversions:** Not needed: both energies are in joules, so the units cancel. The result is converted to a percentage by substituting $1 = 100\,\%$.
 **Substitution:** $\eta = \dfrac{340\,\text{J}}{400\,\text{J}} = 0.85 = 0.85 \cdot 100\,\% = 85\,\%$
 **Answer:** $85\,\%$, two significant figures, because the energies were given to two figures.
-**Reasonableness:** The result is below $100\,\%$, as for every device. The losses are $400\,\text{J} - 340\,\text{J} = 60\,\text{J}$, that is, $60 : 400 = 15\,\%$, and $85\,\% + 15\,\% = 100\,\%$. The typical efficiency of an electric motor is about $90\,\%$, so the result fits.
+**Reasonableness:** The result is below $100\,\%$, as it should be for a motor, because part of the energy becomes heat in friction and in the windings. The losses are $400\,\text{J} - 340\,\text{J} = 60\,\text{J}$, that is, $60 : 400 = 15\,\%$, and $85\,\% + 15\,\% = 100\,\%$. The typical efficiency of an electric motor is about $90\,\%$, so the result fits.
 
 ## fy2-4-L1-02
 **Given:** power taken by the device $P_\text{o} = 8.0\,\text{W}$ and useful power (light) $P_\text{a} = 2.4\,\text{W}$

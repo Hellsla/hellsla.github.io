@@ -6,7 +6,7 @@
 **Muunnokset:** Ei tarvita. Molemmat energiat ovat jouleina, joten yksiköt supistuvat. Prosenteiksi muutetaan sijoittamalla $1 = 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{340\,\text{J}}{400\,\text{J}} = 0{,}85 = 0{,}85 \cdot 100\,\% = 85\,\%$
 **Vastaus:** $85\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska energiat annettiin kahden numeron tarkkuudella.
-**Järkevyys:** Tulos on alle $100\,\%$, kuten kaikilla laitteilla. Häviöitä on $400\,\text{J} - 340\,\text{J} = 60\,\text{J}$ eli $60 : 400 = 15\,\%$. Yhteensä $85\,\% + 15\,\% = 100\,\%$. Sähkömoottorin tyypillinen hyötysuhde on noin $90\,\%$. Tulos sopii siis hyvin.
+**Järkevyys:** Tulos on alle $100\,\%$, kuten moottorilla pitääkin. Osa energiasta muuttuu kitkassa ja käämeissä lämmöksi. Häviöitä on $400\,\text{J} - 340\,\text{J} = 60\,\text{J}$ eli $60 : 400 = 15\,\%$. Yhteensä $85\,\% + 15\,\% = 100\,\%$. Sähkömoottorin tyypillinen hyötysuhde on noin $90\,\%$. Tulos sopii siis hyvin.
 
 ## fy2-4-L1-02
 **Annettu:** laitteeseen otettu teho $P_\text{o} = 8{,}0\,\text{W}$ ja hyötyteho (valo) $P_\text{a} = 2{,}4\,\text{W}$

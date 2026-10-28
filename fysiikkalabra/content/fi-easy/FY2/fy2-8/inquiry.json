@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Kurssin päätösluku. Siinä käsitellään kasvihuoneilmiötä laadullisesti ja polttoaineiden yhteyttä ilmastonmuutokseen. Tuotantotapoja verrataan elinkaaren päästökertoimilla ($m = e \\cdot E$). Näin oppilas osaa punnita kestävyyskeskustelun perusteita.",
   "learn": [
-    "Osaat selittää kasvihuoneilmiön ja sen, miksi polttoaineiden polttaminen voimistaa sitä.",
+    "Osaat selittää kasvihuoneilmiön ja sen, miksi fossiilisten polttoaineiden polttaminen voimistaa sitä.",
     "Osaat laskea päästön päästökertoimen ja energian avulla ja vertailla tuotantotapoja.",
     "Osaat perustella valinnan useiden vertailuperusteiden avulla."
   ],
@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Ennen teollistumista ilmakehässä oli hiilidioksidia noin $280\\,\\text{ppm}$. Se tarkoittaa $280$ molekyyliä miljoonaa ilmakehän molekyyliä kohti. Nyt pitoisuus on noin $420\\,\\text{ppm}$ (NOAA:n mittaukset, 2023). Nousun syynä on suurelta osin se, että polttoaineita poltetaan sähkön, lämmön ja liikenteen tarpeisiin. Hiilidioksidia on silti alle puoli promillea ilmakehästä.",
+      "text": "Ennen teollistumista ilmakehässä oli hiilidioksidia noin $280\\,\\text{ppm}$. Se tarkoittaa $280$ molekyyliä miljoonaa ilmakehän molekyyliä kohti. Nyt pitoisuus on noin $420\\,\\text{ppm}$ (NOAA:n mittaukset, 2023). Nousun syynä on suurelta osin se, että fossiilisia polttoaineita poltetaan sähkön, lämmön ja liikenteen tarpeisiin. Hiilidioksidia on silti alle puoli promillea ilmakehästä.",
       "question": "Miten näin pieni osa ilmakehästä voi muuttaa koko maapallon lämpötilaa? Miksi sillä on väliä, millä tavalla sähkö tuotetaan?"
     },
     {
@@ -29,7 +29,7 @@
         {
           "text": "Kemiallinen energia muuttuu liike-energiaksi ja lämmöksi, ja bensiinin hiili poistuu hiilidioksidina pakokaasuissa.",
           "correct": true,
-          "feedback": "Oikein. Palaessa kemiallinen energia vapautuu (luku *Polttoaineet ja lämpöarvo E = Hm*). Polttoaineen hiiliatomit yhtyvät happeen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. Siksi jokainen polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia."
+          "feedback": "Oikein. Palaessa kemiallinen energia vapautuu (luku *Polttoaineet ja lämpöarvo E = Hm*). Polttoaineen hiiliatomit yhtyvät happeen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. Siksi jokainen hiilipitoisesta polttoaineesta polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia."
         },
         {
           "text": "Bensiini muuttuu palaessaan kokonaan energiaksi, joten pakokaasuihin ei jää lainkaan hiiltä tai muuta ainetta.",
@@ -55,7 +55,7 @@
       "choices": [
         {
           "text": "Se nousisi, koska ilmakehä ei enää estäisi auringon säteilyä pääsemästä maanpinnalle.",
-          "feedback": "Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi jo nyt. Niiden poistaminen ei siis lisäisi maanpinnalle tulevaa energiaa. Ne vaikuttavat toiseen suuntaan: ne hidastavat maanpinnan lämpösäteilyn pääsyä pois."
+          "feedback": "Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi jo nyt. Niiden poistaminen ei siis lisäisi Auringosta maanpinnalle tulevaa energiaa. Ne vaikuttavat toiseen suuntaan: ne hidastavat maanpinnan lämpösäteilyn pääsyä pois."
         },
         {
           "text": "Se laskisi kymmeniä asteita, koska maanpinnan lämpösäteily pääsisi lähes esteettä avaruuteen.",
@@ -87,7 +87,7 @@
         {
           "text": "Suurimmat kivihiilellä ja pienimmät tuulivoimalla, koska tuulivoimala ei polta mitään.",
           "correct": true,
-          "feedback": "Oikein. Polttaminen vapauttaa hiilidioksidia jokaista tuotettua kilowattituntia kohti. Kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta. Maakaasussa on hiilen lisäksi paljon vetyä. Vety palaa vedeksi. Siksi maakaasun päästö on pienempi. Tuulivoimala ei polta mitään. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
+          "feedback": "Oikein. Hiilipitoisen polttoaineen polttaminen vapauttaa hiilidioksidia jokaista tuotettua kilowattituntia kohti. Kivihiilen energia tulee suurimmaksi osaksi hiilen palamisesta. Maakaasussa on hiilen lisäksi paljon vetyä. Vety palaa vedeksi. Siksi maakaasun päästö on pienempi. Tuulivoimala ei polta mitään. Seuraavassa vaiheessa näet taulukosta, kuinka suuria erot ovat."
         },
         {
           "text": "Suurimmat biomassalla ja pienimmät tuulivoimalla, koska puussa on enemmän hiiltä kuin kivihiilessä.",
@@ -159,7 +159,7 @@
           },
           {
             "text": "Kasvihuonekaasut tuottavat itse lämpöä, ja sitä on sitä enemmän, mitä enemmän kaasuja on.",
-            "feedback": "Kaasut eivät tuota energiaa. Energia ei synny tyhjästä (luku *Energialajit ja energian säilyminen*). Kaasumolekyyli lähettää eteenpäin vain sen säteilyn, jonka se on imenyt maanpinnalta. Energia on alun perin peräisin Auringosta."
+            "feedback": "Kaasut eivät tuota energiaa. Energia ei synny tyhjästä (luku *Energialajit ja energian säilyminen*). Ilmakehä säteilee vain sitä energiaa, jonka se on saanut. Suurin osa siitä on peräisin maanpinnan lämpösäteilystä, jota kaasut imevät. Energia on alun perin peräisin Auringosta."
           },
           {
             "text": "Hiilidioksidia on ilmakehässä niin paljon, että se pysäyttää kaiken lämpösäteilyn.",
@@ -378,7 +378,7 @@
         "Esitin selvän väitteen ja valitsin yhden vaihtoehdon.",
         "Laskin päästön kaavalla $m = e \\cdot E$ oikein. Muunsin gigawattitunnit kilowattitunneiksi ja grammat tonneiksi. Vertasin tulosta toiseen vaihtoehtoon.",
         "Käytin vähintään kahta muuta vertailuperustetta (maankäyttö, jäte, turvallisuus, kuljetukset, säästä riippuvuus).",
-        "Selitin fysiikalla, miksi päästökerroin on pieni tai suuri (polttaminen vapauttaa hiilidioksidia, elinkaaren päästöt syntyvät valmistuksesta ja kuljetuksista).",
+        "Selitin fysiikalla, miksi päästökerroin on pieni tai suuri (hiilipitoisen polttoaineen polttaminen vapauttaa hiilidioksidia, elinkaaren päästöt syntyvät valmistuksesta ja kuljetuksista).",
         "Esitin vahvimman vastaväitteen ja vastasin siihen, enkä väittänyt mitään vaihtoehtoa päästöttömäksi.",
         "Sanoin, mitä jätin huomiotta (esimerkiksi hinnan)."
       ]
@@ -447,14 +447,14 @@
       "type": "explain",
       "title": "3. Selitä",
       "optional": true,
-      "prompt": "Selitä, miksi luonnollinen kasvihuoneilmiö on hyödyllinen. Selitä myös, miksi sen voimistuminen on ongelma. Kerro lisäksi, miksi polttoaineiden polttaminen voimistaa ilmiötä.",
+      "prompt": "Selitä, miksi luonnollinen kasvihuoneilmiö on hyödyllinen. Selitä myös, miksi sen voimistuminen on ongelma. Kerro lisäksi, miksi fossiilisten polttoaineiden polttaminen voimistaa ilmiötä.",
       "criteria": [
         "Kerroin, että kasvihuonekaasut päästävät auringon säteilyn läpi mutta hidastavat lämpösäteilyn pakoa.",
         "Mainitsin, että luonnollinen ilmiö nostaa keskilämpötilan noin $-18\\,{}^\\circ\\text{C}$:sta noin $+15\\,{}^\\circ\\text{C}$:een.",
-        "Selitin, että polttaminen vapauttaa hiilidioksidia, jolloin ilmakehään jää enemmän säteilyä imeviä kaasuja.",
+        "Selitin, että fossiilisten polttoaineiden polttaminen vapauttaa hiilidioksidia, jolloin ilmakehään jää enemmän säteilyä imeviä kaasuja.",
         "Yhdistin voimistumisen ilmastonmuutokseen eli keskilämpötilan nousuun."
       ],
-      "model": "Aurinko lämmittää maanpintaa säteilyllä. Ilmakehän kasvihuonekaasut päästävät sen suurelta osin läpi. Lämmin maanpinta lähettää energiaa lämpösäteilynä. Kasvihuonekaasut imevät sen ja säteilevät osan takaisin alas. Siksi maanpinta on noin $+15\\,{}^\\circ\\text{C}$:ssa eikä noin $-18\\,{}^\\circ\\text{C}$:ssa. Ilmiö pitää maapallon asuttavana. Polttoaineiden palaessa hiili yhtyy happeen ja vapautuu hiilidioksidina. Kun kaasua on enemmän, lämpösäteily pääsee pois entistä hitaammin. Ilmiö voimistuu ja keskilämpötila nousee. Se on ilmastonmuutos."
+      "model": "Aurinko lämmittää maanpintaa säteilyllä. Ilmakehän kasvihuonekaasut päästävät sen suurelta osin läpi. Lämmin maanpinta lähettää energiaa lämpösäteilynä. Kasvihuonekaasut imevät sen ja säteilevät osan takaisin alas. Siksi maanpinta on noin $+15\\,{}^\\circ\\text{C}$:ssa eikä noin $-18\\,{}^\\circ\\text{C}$:ssa. Ilmiö pitää maapallon asuttavana. Fossiilisten polttoaineiden palaessa niiden hiili yhtyy happeen ja vapautuu hiilidioksidina. Kun kaasua on enemmän, lämpösäteily pääsee pois entistä hitaammin. Ilmiö voimistuu ja keskilämpötila nousee. Se on ilmastonmuutos."
     },
     {
       "id": "lahtolippu",

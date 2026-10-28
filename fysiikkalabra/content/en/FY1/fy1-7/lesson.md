@@ -4,7 +4,7 @@
 
 ## Key idea
 
-The mass $m$ of an object tells you how much matter the object contains, and its unit is the kilogram. The volume $V$ tells you how much space the object takes up; its SI unit is the cubic metre ($\text{m}^3$). Two objects of the same size have different weights if they are made of different substances: a ten-cubic-centimetre pine cube is light, an aluminium cube is clearly heavier and an iron cube is the heaviest.
+The mass $m$ of an object tells you how much matter the object contains, and its unit is the kilogram. The volume $V$ tells you how much space the object takes up; its SI unit is the cubic metre ($\text{m}^3$). Two objects of the same size may have different weights if they are made of different substances: a ten-cubic-centimetre pine cube is light, an aluminium cube is clearly heavier and an iron cube is the heaviest.
 
 <svg data-fig="cubes" viewBox="0 0 600 372" role="img" aria-label="Schematic figure: three equally large cubes, each with a volume of 10 cm³, made of pine, aluminium and iron. The cubes are the same size, but their masses are 5.0 g, 27 g and 79 g. The lengths of the horizontal bars showing mass are to scale: the bar of the iron cube is more than ten times as long as the bar of the pine cube." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy17-grain" width="14" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#a97a35"/><circle cx="10" cy="8" r="1" fill="#a97a35"/></pattern><linearGradient id="fy17-pine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -53,11 +53,11 @@ The difference comes from how tightly the matter is packed inside the volume. Th
 
 When you measure pieces of different sizes made of the same substance, you notice a regularity: twice the volume gives twice the mass, and half the volume gives half the mass. So mass is **directly proportional** to volume, which means the ratio $m : V$ stays the same. That constant ratio is the density of the substance.
 
-If the measurement results are plotted in a coordinate system with volume on the horizontal axis and mass on the vertical axis, the points lie on a straight line that passes through the origin (chapter *Graphs and fitting a straight line*). The slope of the line is the density.
+If the measurement results are plotted in a coordinate system with volume on the horizontal axis and mass on the vertical axis, the points lie, within the measurement uncertainty, on a straight line through the origin (chapter *Graphs and fitting a straight line*). The slope of the line is the density.
 
 ### Density tells you what the substance is
 
-Every pure substance has its own density, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurements always contain error (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
+Every pure substance has its own density in a given state of matter and at a given temperature, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurements always contain error (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
 
 ## Formula: Density
 
@@ -213,7 +213,7 @@ The volume of a regular object is calculated from its dimensions: the volume of 
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-A reading of a measuring cylinder is known only to the precision of the scale, so the difference of two readings may have fewer significant figures than either reading, because the error of each reading is included. This limits the accuracy of the density.
+A reading of a measuring cylinder contains uncertainty, for example from reading the scale and the curvature of the liquid surface. The difference of two readings is a smaller number than the readings themselves, but it includes the uncertainty of both readings, so the difference may have fewer significant figures than either reading. This limits the accuracy of the density.
 
 ### The mass of a container in a measurement
 
@@ -221,7 +221,7 @@ If a liquid is measured in a container and the balance shows the total mass of t
 
 ## Worked example
 
-A solid iron beam is 1.20 m long, and its cross-section is a square with a side of 4.0 cm. What is the mass of the beam?
+A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square with a side of 4.0 cm. What is the mass of the beam?
 
 <!-- vaihe -->
 

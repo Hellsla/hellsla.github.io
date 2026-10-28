@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a317707d775e6621
+CONTENT-HASH: 767bd8791d51447e
 
 ## Blocking
 (none left; fixed items listed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: a317707d775e6621
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (science): lesson.md (all sections, worked example steps, table, sources), inquiry.json (contribution, goals, prior-knowledge chapter titles vs content/en/courses.json, all prompts, choices, feedback, hints, mistakes, solutions, source_notes, criteria), exit-ticket.json, meta.json, figures.json. Physics meaning, heat of combustion term, decimal points, \cdot, step labels, chapter titles checked; no simulation in this lesson.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, figure labels, inquiry texts/feedback/solutions/model answer/criteria, exit ticket (nuclear-fuel note, moisture, food energy content vs heat of combustion, CO2 sentence).

@@ -29,7 +29,7 @@ Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä. 
 ```latex
 P = \frac{\Delta E}{\Delta t}
 ```
-missä $P$ on teho (W), $\Delta E$ energian muutos eli muuntunut tai siirtynyt energia (J) ja $\Delta t$ siihen kulunut aika (s). Sanoin: teho on energia jaettuna ajalla. Kun laite käy tasaisesti käynnistämisestä alkaen, $\Delta E$ on koko muuntunut energia $E$. Silloin $\Delta t$ on koko aika $t$, joten $P = E : t$. Kaavasta ratkaistaan energia ja aika:
+missä $P$ on teho (W), $\Delta E$ energian muutos eli muuntunut tai siirtynyt energia (J) ja $\Delta t$ siihen kulunut aika (s). Sanoin: teho on energia jaettuna ajalla. Jos energiaa muuntuu epätasaisesti, kaava antaa aikavälin $\Delta t$ keskitehon. Kun laite käy tasaisesti käynnistämisestä alkaen, $\Delta E$ on koko muuntunut energia $E$. Silloin $\Delta t$ on koko aika $t$, joten $P = E : t$. Kaavasta ratkaistaan energia ja aika:
 ```latex
 \begin{aligned}
 E &= P\,t \\

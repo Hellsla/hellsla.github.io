@@ -3,15 +3,15 @@
 > **Why** do ten students get ten different results for the rolling time of the same ball, even though they all use the same stopwatch?
 
 ## Key idea
-A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result is never exactly the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference between the result and the true value is the **measurement error** $\Delta x = x - x_\text{true}$. Every measurement has a small error, even one made by a skilled measurer. In physics the error is estimated and stated together with the result.
+A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement has a small error, even one made by a skilled measurer. The true value, and therefore the error too, is usually not known, so in physics we estimate how large the error can be, and this estimate, the **measurement uncertainty**, is stated together with the result.
 
 Errors are divided into three kinds: gross error, random error and systematic error. You can tell them apart by how they behave when the measurement is repeated.
 
 ### Gross error
-A **gross error** is a single clear mistake: the instrument is read wrongly, a number is recorded wrongly (for example $3.52\,\text{s}$ instead of $3.25\,\text{s}$), the stopwatch is accidentally started only once the ball is already moving, or the result is recorded in the wrong unit. It usually shows up as a result that differs clearly from the others. A gross error is not estimated or averaged but looked for and removed: the odd result is checked, and if it is clearly wrong, it is left out of the calculations and the measurement is made again. The result that was left out and the reason are written down.
+A **gross error** is a single clear mistake: the instrument is read wrongly, a number is recorded wrongly (for example $3.52\,\text{s}$ instead of $3.25\,\text{s}$), the stopwatch is accidentally started only once the ball is already moving, or the result is recorded in the wrong unit. It usually shows up as a result that differs clearly from the others. A gross error is not estimated or averaged but looked for: the odd result is checked, and the measurement can be repeated if necessary. A result is not removed merely because it differs from the others: it is left out of the calculations only if the cause of the error is found, and leaving it out is justified and recorded.
 
 ### Random error
-A **random error** varies from one measurement to the next by chance and can be in either direction. When the rolling time of a ball is measured with a hand stopwatch, it comes from reaction time: sometimes the stopwatch is started a little too early and sometimes too late. Reading a scale between two marks also brings random error. It shows up as scatter: a slightly different number is obtained for the same quantity each time. Repeating the measurement makes the scatter visible, and the mean damps it, because results that are too large and too small partly cancel each other.
+A **random error** varies from one measurement to the next by chance and can be in either direction. When the rolling time of a ball is measured with a hand stopwatch, it comes from reaction time: sometimes the stopwatch is started a little too early and sometimes too late. Reading a scale between two marks also brings random error. It shows up as scatter: a slightly different number is obtained for the same quantity each time. Repeating the measurement makes the scatter visible, and in the mean the effect of random error is damped, although the scatter of the individual results does not get smaller: results that are too large and too small partly cancel each other.
 
 ### Systematic error
 A **systematic error** is almost the same in direction and size in every measurement. It comes, for example, from a wrong zero (a scale shows $1.2\,\text{g}$ when empty), from a badly adjusted instrument, or from the way of measuring, such as looking at a scale from the side. All results shift in the same direction, so they can be in a tight group but in the wrong place. Repeating and the mean do not remove it. It is noticed by comparing the result with a known reference value or with another method of measurement, and then it is corrected.
@@ -97,11 +97,11 @@ The best estimate of a repeated measurement is the mean of the results:
 ```
 where $\bar{x}$ is the mean, $x_1, x_2, \dots, x_n$ are the individual measurement results and $n$ is the number of measurements. The mean adds up the results and divides the sum by the number, so the more measurements there are, the less a single stray result affects it.
 
-The size of random error is estimated as half of the range:
+In this course the scatter of repeated results, that is, the size of random error, is estimated with a simple approximate method, as half of the range:
 ```latex
 \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
-where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\text{min}$ the smallest result. The notation is the same as for the measurement error, because the error estimate tells how large the measurement error in the result is estimated to be; the error estimate is always positive. The result is stated in the form $\bar{x} \pm \Delta x$. The error estimate is a rough estimate, not an exact limit: a single result can sometimes fall outside it.
+where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\text{min}$ the smallest result. The error estimate, or **measurement uncertainty**, is not the measurement error itself, which is not known, but an estimate of how large the measurement error can be; it is always positive. The result is stated in the form $\bar{x} \pm \Delta x$. The error estimate is a rough estimate, not a strict limit: a single result can sometimes fall outside it. Half of the range describes the scatter of the individual results. The uncertainty of the mean is usually smaller, and the more measurements there are, the smaller it is, so for the mean $\Delta x$ is a cautious estimate. The method suits the measurements of this course with a few repeats; more exact methods are based on statistical scatter.
 
 <svg data-fig="range-half" viewBox="0 0 600 330" role="img" aria-label="Schematic, no numerical values: six measurement results on a time axis. The largest result t_max and the smallest result t_min bound the range, whose length is t_max − t_min. The mean is marked with a vertical line. Half of the range Δt is an estimate of the random error, and the result is given as the mean plus or minus Δt." style="max-width:100%;font-size:24px">
   <circle cx="143.5" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -131,11 +131,13 @@ where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\te
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
 
-The error estimate is rounded to one significant figure, or to two if the first figure is 1. The result is rounded to the same decimal place: $3.18 \pm 0.12\,\text{s}$ and not $3.1817 \pm 0.12\,\text{s}$. This way the result has no figures that the error already blurs. When the measurement is made only once, the error estimate is half of a scale division $d$:
+The error estimate is rounded to one significant figure, or to two if the first figure is 1. The result is rounded to the same decimal place: $3.18 \pm 0.12\,\text{s}$ and not $3.1817 \pm 0.12\,\text{s}$. This way the result has no figures that the error already blurs.
+
+When the measurement is made only once and the value is read from a scale, in a simple situation the uncertainty of the reading can be estimated, for example, as half of the smallest scale division $d$:
 ```latex
 \Delta x = \frac{d}{2}
 ```
-With a ruler whose smallest scale division is $1.0\,\text{mm}$, the error estimate of a single reading is therefore $0.5\,\text{mm}$.
+With a ruler whose smallest scale division is $1.0\,\text{mm}$, the uncertainty of the reading can thus be estimated as $0.5\,\text{mm}$. However, the total uncertainty of a measurement can also be affected by the method of measurement, the instrument and other sources of error. The smallest scale division, or the step of the last figure of a display, is the **resolution** of the instrument, and it alone does not give the uncertainty: a stopwatch shows hundredths of a second, but the uncertainty of a time taken by hand is, because of reaction time, of the order of tenths of a second.
 
 The ratio of the error estimate to the result is called the relative error:
 ```latex
@@ -251,12 +253,12 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 **Reasonableness.** The interval $3.18\,\text{s} \pm 0.12\,\text{s}$, that is, $3.06\,\text{s}$–$3.30\,\text{s}$, covers five of the six results. The result $3.31\,\text{s}$ falls just outside it, which fits the fact that the error estimate is rough. The relative error is a few percent, which is usual for a hand-timed measurement. However, the repeats tell only about random error: a systematic error would be revealed only by comparison with another method of measurement.
 
 ## Common misconception
-Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is removed, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
+Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is looked for and left out only for a justified and recorded reason, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
 
 ## Summary
-- A measurement error is the difference between the result and the true value, $\Delta x = x - x_\text{true}$. An error belongs to every measurement, and it is estimated and stated together with the result.
-- A gross error is a single mistake, such as a wrongly read or recorded reading. It shows up as a result that clearly differs from the others, which is checked and left out.
-- A random error varies from one measurement to the next and shows up as scatter. The mean $\bar{x}$ damps it, and its size is estimated by half of the range $\Delta x$.
+- A measurement error is the difference between the result and the true value, $x - x_\text{true}$. An error belongs to every measurement. It is usually not known, but its possible size is estimated as the measurement uncertainty and stated together with the result.
+- A gross error is a single mistake, such as a wrongly read or recorded reading. It often shows up as a result that clearly differs from the others, which is checked; the result is left out only if the cause of the error is found, and the cause is recorded.
+- A random error varies from one measurement to the next and shows up as scatter. In the mean $\bar{x}$ the effect of random error is damped, although the scatter of the individual results does not get smaller. In this course the scatter is estimated approximately by half of the range $\Delta x$, which is a cautious uncertainty estimate for the mean.
 - A systematic error shifts all results in the same direction, and repeating does not remove it. It is noticed with a reference value and corrected: $x = x_\text{reading} - \Delta x_\text{sys}$.
 - Repeatability tells about random error and accuracy about systematic error. A reliable measurement is both repeatable and accurate.
 - The result is stated in the form $\bar{x} \pm \Delta x$ with its unit. The error estimate is rounded to one significant figure (two if the first figure is 1), and the result to the same decimal place.

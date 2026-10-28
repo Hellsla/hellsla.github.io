@@ -3,7 +3,7 @@
     {
       "id": "fy1-5-L1-01",
       "level": 1,
-      "text": "Pyöräilijä ajaa tasaisesti nopeudella 5,5 m/s. Kuinka pitkän matkan hän kulkee 20 sekunnissa?",
+      "text": "Pyöräilijä ajaa tasaisesti nopeudella $5{,}5\\,\\text{m/s}$. Kuinka pitkän matkan hän kulkee 20 sekunnissa?",
       "answer": 110,
       "unit": "m",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy1-5-L1-02",
       "level": 1,
-      "text": "Juoksija kulkee tasaisella vauhdilla 360 m ajassa 45 s. Mikä on hänen nopeutensa?",
+      "text": "Juoksija kulkee tasaisella vauhdilla $360\\,\\text{m}$ ajassa $45\\,\\text{s}$. Mikä on hänen nopeutensa?",
       "answer": 8.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -19,15 +19,16 @@
     {
       "id": "fy1-5-L1-03",
       "level": 1,
-      "text": "Kävelijä etenee tasaisesti nopeudella 1,4 m/s. Kuinka monta sekuntia 560 m:n matka kestää?",
-      "answer": 400,
+      "text": "Kuvaajassa on kävelijän paikka ajan funktiona. Kävelijä liikkuu tasaisesti samaan suuntaan myös kuvaajan ulkopuolella. Kuinka monta sekuntia kuluu lähdöstä siihen, kun hän on kulkenut $150\\,\\text{m}$?",
+      "figure": "fy1-5/line-read",
+      "answer": 60,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy1-5-L1-04",
       "level": 1,
-      "text": "Kappale lähtee lähtöpisteestään ja liikkuu tasaisesti. Se kulkee ajassa 4,0 s matkan 18 m. Kuinka pitkän matkan se kulkee ajassa 10 s?",
+      "text": "Kappale lähtee lähtöpisteestään ja liikkuu tasaisesti. Se kulkee ajassa $4{,}0\\,\\text{s}$ matkan $18\\,\\text{m}$. Kuinka pitkän matkan se kulkee ajassa $10\\,\\text{s}$?",
       "answer": 45,
       "unit": "m",
       "tolerance": 0.02
@@ -35,7 +36,7 @@
     {
       "id": "fy1-5-L1-05",
       "level": 1,
-      "text": "Kärry liikkuu tasaisesti. Sen paikka mitataan lähtöpisteestä. Hetkellä 2,0 s kärry on kohdassa 7,0 m ja hetkellä 6,0 s kohdassa 21 m. Laske kärryn nopeus. Käytä paikan muutosta ja aikaväliä.",
+      "text": "Kärry liikkuu tasaisesti. Sen paikka mitataan lähtöpisteestä. Hetkellä $2{,}0\\,\\text{s}$ kärry on kohdassa $7{,}0\\,\\text{m}$ ja hetkellä $6{,}0\\,\\text{s}$ kohdassa $21\\,\\text{m}$. Laske kärryn nopeus. Käytä paikan muutosta ja aikaväliä.",
       "answer": 3.5,
       "unit": "m/s",
       "tolerance": 0.02
@@ -45,7 +46,7 @@
     {
       "id": "fy1-5-L2-01",
       "level": 2,
-      "text": "Auto ajaa tasaisella nopeudella 54 km/h. Kuinka pitkän matkan se kulkee 14 sekunnissa? Vastaa metreinä.",
+      "text": "Auto ajaa tasaisella nopeudella $54\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee 14 sekunnissa? Vastaa metreinä.",
       "answer": 210,
       "unit": "m",
       "tolerance": 0.02
@@ -53,7 +54,7 @@
     {
       "id": "fy1-5-L2-02",
       "level": 2,
-      "text": "Linja-auto ajaa tasaisesti nopeudella 36 km/h. Kuinka monta sekuntia 4,5 km:n matka kestää?",
+      "text": "Linja-auto ajaa tasaisesti nopeudella $36\\,\\text{km/h}$. Kuinka monta sekuntia $4{,}5\\,\\text{km}$:n matka kestää?",
       "answer": 450,
       "unit": "s",
       "tolerance": 0.02
@@ -61,7 +62,7 @@
     {
       "id": "fy1-5-L2-03",
       "level": 2,
-      "text": "Retkeilijä on 1,5 km:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin. Hänen nopeutensa on tasainen 1,5 m/s. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
+      "text": "Retkeilijä on $1{,}5\\,\\text{km}$:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin. Hänen nopeutensa on tasainen $1{,}5\\,\\text{m/s}$. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
       "answer": 2.4,
       "unit": "km",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy1-5-L2-04",
       "level": 2,
-      "text": "Salama välähtää. Ukkosen jyrähdys kuuluu 5,0 s myöhemmin. Ääni etenee ilmassa tasaisesti nopeudella 343 m/s. Valon kulkuaika on hyvin pieni, joten se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
+      "text": "Salama välähtää. Ukkosen jyrähdys kuuluu $5{,}0\\,\\text{s}$ myöhemmin. Ääni etenee ilmassa tasaisesti nopeudella $343\\,\\text{m/s}$. Valon kulkuaika on hyvin pieni, joten se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
@@ -79,7 +80,7 @@
     {
       "id": "fy1-5-L3-01",
       "level": 3,
-      "text": "Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018. Silloin sen etäisyys Auringosta oli 119,7 AU (NASA/JPL). Sen nopeus Aurinkoon nähden on 15,341 km/s (JPL). Oleta nopeus vakioksi. Kuinka monta vuorokautta heliopaussin ylityksestä kuluu, ennen kuin luotain on mallin mukaan 150 AU:n päässä Auringosta? Käytä arvoja 1 AU = 149 597 870,7 km ja 1 vrk = 86 400 s. Tulos on mallin arvo.",
+      "text": "Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018. Silloin sen etäisyys Auringosta oli $119{,}7\\,\\text{AU}$ (NASA/JPL). Sen nopeus Aurinkoon nähden on $15{,}341\\,\\text{km/s}$ (JPL). Oleta nopeus vakioksi. Kuinka monta vuorokautta heliopaussin ylityksestä kuluu, ennen kuin luotain on mallin mukaan $150\\,\\text{AU}$:n päässä Auringosta? Käytä arvoja $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$ ja $1\\,\\text{vrk} = 86\\,400\\,\\text{s}$. Tulos on mallin arvo.",
       "answer": 3420,
       "unit": "vrk",
       "tolerance": 0.02
@@ -87,7 +88,7 @@
     {
       "id": "fy1-5-L3-02",
       "level": 3,
-      "text": "Voyager 2 on mallin mukaan 150 AU:n etäisyydellä Maasta. Radiosignaali etenee tyhjiössä tasaisesti nopeudella 299 792 458 m/s. Komento lähtee Maasta luotaimelle. Luotain vastaa, ja vastaus saapuu Maahan. Kuinka monta tuntia tähän kuluu? Luotaimen liike ja sen käsittelyaika vastausta varten jätetään huomiotta. Käytä arvoa 1 AU = 149 597 870,7 km. Perustele, miksi liikkeen voi jättää huomiotta.",
+      "text": "Voyager 2 on mallin mukaan $150\\,\\text{AU}$:n etäisyydellä Maasta. Radiosignaali etenee tyhjiössä tasaisesti nopeudella $299\\,792\\,458\\,\\text{m/s}$. Komento lähtee Maasta luotaimelle. Luotain vastaa, ja vastaus saapuu Maahan. Kuinka monta tuntia tähän kuluu? Luotaimen liike ja sen käsittelyaika vastausta varten jätetään huomiotta. Käytä arvoa $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$. Perustele, miksi liikkeen voi jättää huomiotta.",
       "answer": 41.6,
       "unit": "h",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy1-5-L3-03",
       "level": 3,
-      "text": "Kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella 1,5 m/s. Toinen lähtee ovelta 40 s myöhemmin pyörällä. Hän ajaa tasaisesti nopeudella 4,5 m/s. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
+      "text": "Kaksi ystävää lähtee koulun ovelta samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$. Toinen lähtee ovelta $40\\,\\text{s}$ myöhemmin pyörällä. Hän ajaa tasaisesti nopeudella $4{,}5\\,\\text{m/s}$. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02

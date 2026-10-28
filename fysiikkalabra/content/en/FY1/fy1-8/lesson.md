@@ -155,7 +155,7 @@ where $\varepsilon$ is the relative uncertainty (often given as a percentage), $
 The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphs and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
 
 ## Worked example
-Students investigate the motion of a toy car. In a trial run the speed of the car is about $0.42\,\text{m/s}$. The time is measured with a hand stopwatch whose uncertainty is $\Delta t = 0.2\,\text{s}$. The relative uncertainty of the measurement should be at most $5.0\,\%$. What is the shortest distance the car must travel?
+Students investigate the motion of a toy car. In a trial run the speed of the car is about $0.42\,\text{m/s}$. The time is measured with a hand stopwatch, and the timing uncertainty is $\Delta t = 0.2\,\text{s}$. The relative uncertainty of the measurement should be at most $5.0\,\%$. What is the shortest distance the car must travel?
 
 <!-- vaihe -->
 
@@ -203,7 +203,7 @@ s_\text{min} &= v\, t_\text{min} \\
 ## Common misconception
 Many people think an investigation has failed if the measurement does not support the hypothesis. This is not so: if a measurement disproves the hypothesis, the investigator knows something they did not know before. A failed investigation is one from which nothing can be concluded, because the variables were not controlled or the measurements are too uncertain.
 
-Another common mistake is to treat one measurement as enough. A single reading does not show how much the result varies, so the uncertainty cannot be estimated. A third mistake is to pick the measurements that fit the result and leave out the others: all measurements are recorded, and an outlier is explained or marked.
+Another common mistake is to treat one measurement as enough. A single reading does not show how much the result varies, so the spread caused by random error cannot be estimated. A third mistake is to pick the measurements that fit the result and leave out the others: all measurements are recorded, and an outlier is explained or marked.
 
 ## Summary
 - An investigation begins with a question that can be measured and a testable hypothesis that could turn out to be wrong.

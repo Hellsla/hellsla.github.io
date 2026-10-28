@@ -11,7 +11,7 @@
     {
       "id": "fy2-1-L1-02",
       "level": 1,
-      "text": "A plant leaf absorbs radiant energy of $245\\,\\text{J}$ from the Sun. Through photosynthesis the leaf changes $6.0\\,\\text{J}$ of it into chemical energy, and the rest changes into thermal energy. How much thermal energy is produced?",
+      "text": "A plant leaf absorbs radiant energy of $245\\,\\text{J}$ from the Sun. Through photosynthesis the leaf changes $6.0\\,\\text{J}$ of it into chemical energy, and the rest changes into thermal energy. How much energy is changed into thermal energy?",
       "answer": 239.0,
       "unit": "J",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "A solar panel receives radiant energy of $800\\,\\text{J}$ and changes $160\\,\\text{J}$ of it into electrical energy. The rest changes into thermal energy. How much thermal energy is produced?",
+      "text": "A solar panel receives radiant energy of $800\\,\\text{J}$ and changes $160\\,\\text{J}$ of it into electrical energy. The rest changes into thermal energy. How much energy is changed into thermal energy?",
       "answer": 640.0,
       "unit": "J",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy2-1-L2-01",
       "level": 2,
-      "text": "An electric scooter sets off. Chemical energy of $3.00\\,\\text{kJ}$ is released from its battery, and the scooter and rider gain kinetic energy of $2150\\,\\text{J}$ from it. The rest changes into thermal energy in the battery, the motor and the tyres. How many joules of thermal energy are produced?",
+      "text": "An electric scooter sets off. Chemical energy of $3.00\\,\\text{kJ}$ is released from its battery, and the scooter and rider gain kinetic energy of $2150\\,\\text{J}$ from it. The rest changes into thermal energy in the battery, the motor and the tyres. How many joules of energy are changed into thermal energy?",
       "answer": 850.0,
       "unit": "J",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy2-1-L2-03",
       "level": 2,
-      "text": "A child sitting on a swing is pulled to the side and released from rest. At the highest point the potential energy of the child and the swing is $0.36\\,\\text{kJ}$, when the zero level is the lowest point of the swing. The swing keeps swinging in smaller and smaller swings until it stops at the lowest point. Sound is ignored. How many joules of thermal energy are produced in total?",
+      "text": "A child sitting on a swing is pulled to the side and released from rest. At the highest point the potential energy of the child and the swing is $0.36\\,\\text{kJ}$, when the zero level is the lowest point of the swing. The swing keeps swinging in smaller and smaller swings until it stops at the lowest point. Sound is ignored. How many joules of energy are changed into thermal energy in total?",
       "answer": 360.0,
       "unit": "J",
       "tolerance": 0.02
@@ -69,7 +69,7 @@
     {
       "id": "fy2-1-L2-04",
       "level": 2,
-      "text": "Electrical energy of $360\\,\\text{kJ}$ goes into a kettle. Of this, $331\\,\\text{kJ}$ is transferred to the water as thermal energy, and the rest warms the kettle and the surroundings. How many joules of energy end up in the kettle and the surroundings?",
+      "text": "Electrical energy of $360\\,\\text{kJ}$ goes into a kettle. Of this, $331\\,\\text{kJ}$ is transferred to the water as heat, and the rest warms the kettle and the surroundings. How many joules of energy end up in the kettle and the surroundings?",
       "answer": 29000.0,
       "unit": "J",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy2-1-L3-01",
       "level": 3,
-      "text": "The energies of a skateboarder are measured at three points in a half-pipe. At point A the skateboarder is at rest and her potential energy is $900\\,\\text{J}$. At point B the potential energy is $400\\,\\text{J}$ and the kinetic energy $480\\,\\text{J}$. At point C the potential energy is zero and the kinetic energy $750\\,\\text{J}$. Friction keeps changing mechanical energy into thermal energy. How much thermal energy is produced between points B and C?",
+      "text": "The energies of a skateboarder are measured at three points in a half-pipe. At point A the skateboarder is at rest and her potential energy is $900\\,\\text{J}$. At point B the potential energy is $400\\,\\text{J}$ and the kinetic energy $480\\,\\text{J}$. At point C the potential energy is zero and the kinetic energy $750\\,\\text{J}$. Friction keeps changing mechanical energy into thermal energy. How much energy is changed into thermal energy between points B and C?",
       "answer": 130,
       "unit": "J",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy2-1-L3-02",
       "level": 3,
-      "text": "A rubber ball is dropped on the floor. The mechanical energy of the ball is $5.00\\,\\text{J}$ when dropped, $4.00\\,\\text{J}$ after the first bounce and $3.20\\,\\text{J}$ after the second bounce. How much more thermal energy is produced in the first bounce than in the second?",
+      "text": "A rubber ball is dropped on the floor. The mechanical energy of the ball is $5.00\\,\\text{J}$ when dropped, $4.00\\,\\text{J}$ after the first bounce and $3.20\\,\\text{J}$ after the second bounce. How much more energy is changed into thermal energy in the first bounce than in the second?",
       "answer": 0.2,
       "unit": "J",
       "tolerance": 0.02

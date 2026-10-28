@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b4d259fc7523a94d
+CONTENT-HASH: 825cc5b6b7567c38
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: b4d259fc7523a94d
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): every text block for sentence length and common words, no steps, hints or feedback dropped, same cognitive demand, correct choices still unambiguous, Finnish step labels kept.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked efficiency wording (lesson.md, inquiry.json feedback/prompt/goal, solutions.md Reasonableness) against the new Finnish.

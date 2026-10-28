@@ -63,7 +63,7 @@
       "level": 2,
       "text": "Nuclear power plants produced about $31\\,\\text{TWh}$ of electricity in 2024. The wind turbine in the example produces $12\\,\\text{GWh}$ in a year. How many such wind turbines would be needed to produce the same annual energy as the nuclear power plants produced?",
       "answer": 2600,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     },
     {
@@ -89,7 +89,7 @@
       "level": 3,
       "text": "The wind farm and the nuclear power plant in the example have the same rated power, $600\\,\\text{MW}$. The average power of the wind farm is $33\\,\\%$ and that of the nuclear power plant $90\\,\\%$ of the rated power. How many times as much energy does the nuclear power plant produce in a year? Give the answer as a factor.",
       "answer": 2.7,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {

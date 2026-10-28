@@ -97,7 +97,7 @@
       "level": 3,
       "text": "The loss power of a district heating pipework is steadily $150\\,\\text{kW}$. The heating of one detached house uses $20\\,\\text{MWh}$ in a year. The annual loss of the pipework equals the annual heating energy of how many houses, when a year has $8760\\,\\text{h}$?",
       "answer": 66,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     }
   ]

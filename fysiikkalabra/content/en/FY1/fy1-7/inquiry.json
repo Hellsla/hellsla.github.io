@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "contribution": "Mass is directly proportional to volume, and the constant of proportionality is the density of the substance: m = ρV is the first linear model in FY1. You solve it for mass, volume or density, and you read the density as a slope from measurements, even when the mass of a container is included.",
+  "contribution": "Mass is directly proportional to volume, and the constant of proportionality is the density of the substance: m = ρV is a linear model. You solve it for mass, volume or density, and you read the density as a slope from measurements, even when the mass of a container is included.",
   "learn": [
     "You can calculate the mass, volume or density of an object with the formula $m = \\rho V$.",
     "You can explain why mass is directly proportional to volume and what the slope of the line tells you.",
     "You can determine the density of a substance from measurement results and identify the substance using a table."
   ],
   "prior": [
-    "In direct proportionality the measurement points lie on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphs and fitting a straight line*)",
+    "In direct proportionality the measurement points lie, within the measurement uncertainty, on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphs and fitting a straight line*)",
     "Measurement results always contain error, and a result is given with a suitable number of significant figures (chapter *Measuring and the reliability of a measurement*)",
     "Quantities are calculated in SI units, and units are converted using powers of ten (chapter *Quantities, units and the SI system*)"
   ],
@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Recap: direct proportionality",
       "optional": true,
-      "prompt": "In an experiment the quantities $x$ and $y$ are measured. The measurement points lie on a straight line that passes through the origin. What does this tell you about how the quantities depend on each other?",
+      "prompt": "In an experiment the quantities $x$ and $y$ are measured. Within the measurement uncertainty, the measurement points lie on a straight line through the origin. What does this tell you about how the quantities depend on each other?",
       "choices": [
         {
           "text": "The quantity $y$ is directly proportional to the quantity $x$: the ratio $y : x$ is constant, and it is the slope of the line.",
@@ -315,10 +315,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Density is a property of a substance",
+      "prompt": "The volume of an iron cube doubles, but the substance stays iron. What happens to the mass and the density of the cube?",
+      "choices": [
+        {
+          "text": "The mass doubles and the density stays the same.",
+          "feedback": "Correct. Mass is directly proportional to volume, $m = \\rho V$, so double the volume means double the mass. The density $\\rho = m : V$ does not change, because the ratio stays the same: it is a property of iron.",
+          "correct": true
+        },
+        {
+          "text": "The mass and the density both double.",
+          "feedback": "The mass doubles, but the density does not. If both the mass and the volume double, the ratio $m : V$ stays the same. Density does not tell you the size of an object but how much mass there is in one unit of volume."
+        },
+        {
+          "text": "The mass stays the same and the density halves.",
+          "feedback": "The mass does not stay the same: a cube of iron with double the volume contains twice as much iron, so its mass doubles. The density does not halve, because the ratio $m : V$ stays the same."
+        },
+        {
+          "text": "The mass doubles and the density halves.",
+          "feedback": "The density does not halve. When the volume doubles and the mass doubles, the ratio $\\rho = m : V$ stays the same. The density would decrease only if the volume grew without the mass growing."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation exercise",
+      "title": "3. Calculation exercise",
       "prompt": "The edge of a pine cube is $20.0\\,\\text{cm}$ and the density of pine is $500\\,\\text{kg/m}^3$. What is the mass of the cube? Give your answer in kilograms.",
       "answer": 4.0,
       "unit": "kg",
@@ -344,7 +370,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and justify",
+      "title": "4. Explain and justify",
       "optional": true,
       "prompt": "A student measures the mass and volume of an unknown piece of metal and calculates a density of $8.9\\,\\text{g/cm}^3$. The student says: \"The piece is copper.\" Explain why density is a good way to identify a substance and why the conclusion is still not completely certain.",
       "criteria": [
@@ -359,7 +385,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first on your own and only then open the answer."
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
     }
   ]
 }

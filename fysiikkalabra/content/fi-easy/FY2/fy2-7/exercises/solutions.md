@@ -76,7 +76,7 @@
 **Muunnokset:** $p = 4{,}0 : 100 = 0{,}040$ ja $1\,\text{TWh} = 1\,000\,000\,\text{MWh}$, joten $2{,}40\,\text{TWh} = 2{,}40 \cdot 1\,000\,000\,\text{MWh} = 2\,400\,000\,\text{MWh}$.
 **Sijoitus:** $E_\text{häviö} = 0{,}040 \cdot 2\,400\,000\,\text{MWh} = 96\,000\,\text{MWh}$, ja $P_\text{häviö} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10{,}96\,\text{MW}$
 **Vastaus:** $11\,\text{MW}$, kaksi merkitsevää numeroa. Häviöprosentti $4{,}0\,\%$ tunnetaan kahden numeron tarkkuudella (epätarkin tieto).
-**Järkevyys:** Arvio: $4\,\%$ luvusta $2400$ on noin $100$, ja $100\,000\,\text{MWh} : 8760\,\text{h}$ on noin $11\,\text{MW}$. Sähköverkon häviöteho on siis koko ajan yhtä suuri kuin pienen voimalaitoksen teho.
+**Järkevyys:** Arvio: $4\,\%$ luvusta $2400$ on noin $100$, ja $100\,000\,\text{MWh} : 8760\,\text{h}$ on noin $11\,\text{MW}$. Sähköverkon häviöteho on siis keskimäärin yhtä suuri kuin pienen voimalaitoksen teho.
 
 ## fy2-7-L2-04
 **Annettu:** rakennuksen tarvitsema teho $P_\text{perille} = 40{,}0\,\text{kW}$, häviö $20\,\%$ lähtevästä tehosta, aika $t = 24\,\text{h}$

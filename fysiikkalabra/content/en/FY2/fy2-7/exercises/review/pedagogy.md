@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ce51fbedcb1a9515
+CONTENT-HASH: 7ecc2e9a77394d11
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: ce51fbedcb1a9515
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): natural English, step labels Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness, questions ask the same thing as the Finnish.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) in the exercises against the new Finnish.

@@ -4,10 +4,6 @@
     "a": "The strong interaction, more precisely its residual effect between protons and neutrons. At distances the size of a nucleus, about $10^{-15}\\,\\text{m}$, it is stronger than the electric repulsion of the protons, but it does not reach beyond the nucleus, so the nuclei of different atoms are not pulled together by it."
   },
   {
-    "q": "The order of magnitude of the size of object $\\text{A}$ is $10^{3}\\,\\text{m}$ and that of object $\\text{B}$ is $10^{8}\\,\\text{m}$. How many times larger is $\\text{B}$, to the accuracy of an order of magnitude?",
-    "a": "Between the orders of magnitude there are $8-3 = 5$ steps of powers of ten, and each step is a tenfold size. So object $\\text{B}$ is about $10^{5}$, that is, a hundred thousand times larger. A difference of five orders of magnitude must not be read as fivefold: one order of magnitude is a tenfold size."
-  },
-  {
     "q": "Why is a model tested with an experiment in physics, even if it is logical and beautiful?",
     "a": "Even a logical model can describe nature wrongly. Only a measurement tells whether a prediction derived from the model matches nature. If it does not, the model is changed or rejected."
   }

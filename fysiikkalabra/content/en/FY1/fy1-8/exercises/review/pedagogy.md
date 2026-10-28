@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 11411738ec61c1d6
+CONTENT-HASH: 6fd0af38dd92394f
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: 11411738ec61c1d6
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercise texts read naturally and ask the same thing; solution steps complete, step labels exactly as in the brief; terminology consistent with the lesson and terms.md.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (units in math, wording, tolerances unchanged by translation) and solutions.md (rounding/significant-figure notes, K/min working) against the new Finnish.

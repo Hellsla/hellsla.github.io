@@ -13,6 +13,7 @@
     "mittaus",
     "mittausvirhe",
     "karkea virhe",
+    "mittausepävarmuus",
     "systemaattinen virhe",
     "satunnaisvirhe",
     "toistettavuus"

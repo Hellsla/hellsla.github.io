@@ -69,14 +69,15 @@
 **Reasonableness:** Two and a half litres of water has a mass of $2.5\,\text{kg}$. Ethanol is less dense than water, so its mass is slightly smaller, about $0.79 \cdot 2.5\,\text{kg} \approx 2.0\,\text{kg}$.
 
 ## fy1-7-L2-03
-**Given:** mass of the ball $m = 33.0\,\text{g}$; water before $V_1 = 50.0\,\text{ml}$ and after $V_2 = 54.2\,\text{ml}$
-**Find:** the density $\rho$ of the substance of the ball in $\text{kg/m}^3$
-**Principle:** A submerged ball displaces its own volume of water, so the volume of the ball is the difference of the readings. Density is mass per unit of volume.
-**Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V} = \dfrac{m}{V_2 - V_1}$
-**Conversions:** $V = 54.2\,\text{ml} - 50.0\,\text{ml} = 4.2\,\text{ml} = 4.2\,\text{cm}^3 = 4.2 \cdot 10^{-6}\,\text{m}^3$ and $33.0\,\text{g} = 0.0330\,\text{kg}$.
-**Substitution:** $\rho = \dfrac{0.0330\,\text{kg}}{4.2 \cdot 10^{-6}\,\text{m}^3} = 7857\,\tfrac{\text{kg}}{\text{m}^3}$
-**Answer:** $7900\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the difference of the readings, $4.2\,\text{ml}$, is known to two figures, even though the mass and the readings are more precise.
-**Reasonableness:** The result is close to the density of iron, $7870\,\tfrac{\text{kg}}{\text{m}^3}$, and steel is mostly iron. Estimate: $33\,\text{g} : 4\,\text{cm}^3 \approx 8\,\tfrac{\text{g}}{\text{cm}^3}$.
+**Given:** mass of the object $m = 89.0\,\text{g}$; a figure of the measuring cylinder before and after the object is lowered in
+**Find:** the density $\rho$ of the substance of the object in $\text{kg/m}^3$
+**Principle:** A submerged object displaces its own volume of water, so the volume of the object is the difference of the water readings. Density is mass per unit of volume.
+**Reading the graph:** The numbers on the scale are at $20\,\text{ml}$ intervals, the long marks are at $10\,\text{ml}$ intervals and the small marks at $2\,\text{ml}$ intervals. Before the object is lowered in, the water reaches the mark $V_1 = 40\,\text{ml}$. After that, the water reaches the long mark halfway between the numbers $40$ and $60$, $V_2 = 50\,\text{ml}$. An answer is accepted if it deviates by at most $3\,\%$.
+**Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
+**Conversions:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 1.0 \cdot 10^{-5}\,\text{m}^3$ and $89.0\,\text{g} = 0.0890\,\text{kg}$.
+**Substitution:** $\rho = \dfrac{0.0890\,\text{kg}}{1.0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
+**Answer:** $8900\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the volume $10\,\text{ml}$ is read from the scale to about $1\,\text{ml}$.
+**Reasonableness:** Estimate: $89\,\text{g} : 10\,\text{cm}^3 \approx 9\,\tfrac{\text{g}}{\text{cm}^3}$, which is $9000\,\tfrac{\text{kg}}{\text{m}^3}$. The result is close to the density of copper, $8960\,\tfrac{\text{kg}}{\text{m}^3}$, so the object may be copper.
 
 ## fy1-7-L2-04
 **Given:** mass of the empty flask $m_0 = 215\,\text{g}$, volume of the liquid $V = 250\,\text{cm}^3$ and total mass of the flask and the liquid $m_\text{tot} = 412\,\text{g}$
@@ -119,4 +120,4 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Conversions:** The radius is $r = 0.50\,\text{mm} = 0.50 \cdot 10^{-3}\,\text{m}$, so $r^2 = 2.5 \cdot 10^{-7}\,\text{m}^2$.
 **Substitution:** $V = \dfrac{0.50\,\text{kg}}{8960\,\tfrac{\text{kg}}{\text{m}^3}} = 5.58 \cdot 10^{-5}\,\text{m}^3$ and $A = \pi \cdot 2.5 \cdot 10^{-7}\,\text{m}^2 = 7.85 \cdot 10^{-7}\,\text{m}^2$, so $L = \dfrac{5.58 \cdot 10^{-5}\,\text{m}^3}{7.85 \cdot 10^{-7}\,\text{m}^2} = 71.1\,\text{m}$
 **Answer:** $71\,\text{m}$, two significant figures, because the diameter $1.0\,\text{mm}$ is known to two figures.
-**Reasonableness:** Half a kilogram of copper has a volume of only about $56\,\text{cm}^3$, that is, half a decilitre. Drawn into a thin wire one thousandth of a metre thick, it is enough for tens of metres of length, so 71 m is believable.
+**Reasonableness:** Half a kilogram of copper has a volume of only about $56\,\text{cm}^3$, that is, half a decilitre. Drawn into a thin wire one thousandth of a metre thick, it is enough for tens of metres of length, so $71\,\text{m}$ is believable.

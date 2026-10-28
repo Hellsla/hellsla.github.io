@@ -126,7 +126,7 @@
         "L": -9
       },
       "names": {
-        "kohdeNimi": "object"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -141,7 +141,7 @@
         "type": "numeric",
         "prompt": "Use the rows of the hydrogen atom and the proton in the table. By how many orders of magnitude is the hydrogen atom larger than its nucleus?",
         "answer": 5,
-        "unit": "orders of magnitude",
+        "unit": "suuruusluokkaa",
         "tolerance": 0.02,
         "hints": [
           "From the table you get the exponent $n$ of the order of magnitude of both objects. The nucleus of a hydrogen atom is a single proton.",
@@ -175,7 +175,7 @@
         "L": 7.7
       },
       "names": {
-        "kohdeNimi": "object"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -220,7 +220,7 @@
         "L": 27.5
       },
       "names": {
-        "kohdeNimi": "object"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -457,7 +457,7 @@
       "choices": [
         {
           "text": "$10^{16}\\,\\text{m}$",
-          "feedback": "You ignored the factor part. When the factor part is more than about 3, the nearest power of ten is the next one: the number $4.0\\cdot10^{16}$ is closer to $10^{17}$ than to $10^{16}$."
+          "feedback": "You ignored the factor part. When the factor part is more than about 3, the nearest power of ten is the next one: on the axis of powers of ten, the number $4.0\\cdot10^{16}$ is closer to the point $10^{17}$ than to the point $10^{16}$."
         },
         {
           "text": "$10^{17}\\,\\text{m}$",
@@ -475,13 +475,39 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Difference of orders of magnitude",
+      "prompt": "The order of magnitude of the size of object $\\text{A}$ is $10^{3}\\,\\text{m}$ and that of object $\\text{B}$ is $10^{8}\\,\\text{m}$. How many times larger is $\\text{B}$, to the accuracy of an order of magnitude?",
+      "choices": [
+        {
+          "text": "About $5$ times larger",
+          "feedback": "You calculated the difference of the orders of magnitude, $8-3 = 5$, and read it as the ratio of the sizes. The difference 5 tells the number of steps of powers of ten, and each step is a tenfold size, so the ratio is $10^{5}$."
+        },
+        {
+          "text": "About $10^{5}$, that is, a hundred thousand times larger",
+          "feedback": "Correct. Between the orders of magnitude there are $8-3 = 5$ steps, and each step is a tenfold size: $10\\cdot10\\cdot10\\cdot10\\cdot10 = 10^{5}$.",
+          "correct": true
+        },
+        {
+          "text": "About $10^{11}$ times larger",
+          "feedback": "You added the exponents: $3+8 = 11$. The ratio of sizes is a division, and when powers of ten are divided, the exponents are subtracted: $10^{8}/10^{3} = 10^{8-3}$."
+        },
+        {
+          "text": "About $8/3 \\approx 2.7$ times larger",
+          "feedback": "You divided the exponents by each other. The size is a power of ten, not an exponent: the ratio is $10^{8}/10^{3}$, and it is the difference of the exponents in the superscript, $10^{8-3} = 10^{5}$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "3. Calculation",
       "prompt": "The diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$ and the diameter of a neutron star is about $2.4\\cdot10^{4}\\,\\text{m}$, although the mass of a neutron star is greater than that of the Sun. How many times larger is the diameter of the Sun than the diameter of the neutron star?",
       "answer": 57917,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02,
       "hints": [
         "The question \"how many times larger\" is a division: divide the larger size by the smaller.",
@@ -504,7 +530,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "4. Explain",
       "prompt": "Explain in your own words what the difference of orders of magnitude tells about the sizes of two objects, and why the simulation cannot show, for example, the Milky Way and an atom in the same picture in the right proportions of size. Use the words model, power of ten and order of magnitude.",
       "criteria": [
         "I say that the difference of orders of magnitude is the number of steps of powers of ten and that each step is a tenfold size.",
@@ -519,7 +545,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer them yourself first, and only then open the answer."
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
     }
   ]
 }

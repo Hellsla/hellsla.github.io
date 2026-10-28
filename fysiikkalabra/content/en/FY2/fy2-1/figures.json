@@ -9,7 +9,7 @@
  "säteily-": "radiant",
  "sähkö-": "electrical",
  "ydin-": "nuclear",
- "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Schematic diagram: energy changes in a torch (flashlight). The battery contains chemical energy. It changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. Most of it changes into heat, so the heat arrow is wider. The picture is schematic, and the width of the arrows is not to scale.",
+ "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Schematic diagram: energy changes in a torch (flashlight). The battery holds chemical energy. It changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. Most of it changes into thermal energy, so the arrow for thermal energy is wider. The picture is schematic, and the widths of the arrows are not to scale.",
  "paristo": "battery",
  "lamppu": "bulb",
  "valo": "light",

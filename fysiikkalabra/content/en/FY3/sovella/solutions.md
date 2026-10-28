@@ -87,7 +87,7 @@
 **Conversions:** Not needed, the powers are in watts.
 **Substitution:** $P_\text{in} = 800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 = 400\,\text{W}$ and $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0.59$
 **Answer:** $\eta \approx 0.59$, that is, about $60\,\%$, two significant figures as in the power from part b.
-**Reasonableness:** The efficiency is below one, as it should be. Part of the radiation is reflected from the glass and the box, so about $60\,\%$ is believable for a simple collector.
+**Reasonableness:** The efficiency is at most one, because the water cannot receive more power than arrives at the collector. In a real collector it stays below one, because part of the radiation is reflected from the glass and the box, so about $60\,\%$ is believable for a simple collector.
 
 ### d)
 **Given:** power received from the Sun $P \approx 237\,\text{W}$ and the graph from part a
@@ -119,7 +119,7 @@
 ### a)
 **Given:** the valve keeps a gauge pressure of $80\,\text{kPa}$, outside air pressure $101\,\text{kPa}$ and the boiling temperatures in the table
 **Find:** the temperature $T$ of the water when the valve lets steam out
-**Principle:** Water boils at the temperature that corresponds to the total pressure acting on the surface of the water. When the valve lets steam out, the total pressure in the cooker is the outside air pressure and the gauge pressure of the valve together. The table gives the boiling temperature only at intervals of $5\,{}^\circ\text{C}$, so a value in between is interpolated between the two nearest rows, assuming that the temperature changes evenly between them.
+**Principle:** Water boils at the temperature that corresponds to the total pressure acting on the surface of the water. When the valve lets steam out, the total pressure in the cooker is the outside air pressure and the gauge pressure of the valve together. The air has already left, so under the lid there is only water vapour and the whole pressure is the pressure of the vapour. The table gives the boiling temperature only at intervals of $5\,{}^\circ\text{C}$, so a value in between is interpolated between the two nearest rows, assuming that the temperature changes evenly between them.
 **Formula:** $p = p_0 + \Delta p$ and $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
 **Conversions:** Not needed, all pressures are in kilopascals.
 **Substitution:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, which is between the rows $169.2\,\text{kPa}$ and $198.7\,\text{kPa}$. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11.8\,\text{kPa}}{29.5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2.0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
@@ -128,14 +128,14 @@
 
 ### b)
 **Find:** why the boiling temperature is higher and why food cooks faster
-**Principle:** The vaporisation curve of the phase diagram and the table show that the boiling temperature of water increases as pressure increases.
+**Principle:** The table shows that the boiling temperature of water increases as pressure increases. The same information is in the vaporisation curve of the phase diagram, but the table is enough for the answer.
 **Model answer:** When it boils, water vaporises as bubbles throughout the liquid. A vapour bubble exists only if the pressure of the vapour inside it is equal to the pressure of the surrounding liquid, which is affected by the pressure at the surface. The vapour pressure increases as the temperature rises, because faster particles leave the liquid more often and hit the wall of the bubble harder. The higher the pressure at the surface, the higher the temperature must be before bubbles can form. In the pressure cooker the pressure is about $1.8$ times the outside air pressure, so the water boils only at about $117\,{}^\circ\text{C}$.
 Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\circ\text{C}$ hotter than in an open pot, the temperature difference to the surface of the food is greater. Then heat is conducted into the food faster, and at a higher temperature the changes of cooking also happen faster.
 
 ### c)
 **Given:** power of the hob $P = 300\,\text{W}$, of which $\eta = 0.80$ is transferred to the contents of the cooker, time $t = 20\,\text{min}$ and specific latent heat of vaporisation of water $r = 2260\,\text{kJ/kg}$
 **Find:** the mass $m$ of the water that vaporises
-**Principle:** The valve keeps the pressure constant, so the contents of the cooker stay at the boiling temperature. The temperature does not rise, so all the energy transferred to the contents is used to vaporise water, and the steam produced escapes through the valve. The mass of the water and the potatoes is not needed: it only determines how long the water lasts.
+**Principle:** The valve keeps the pressure constant, so the contents of the cooker stay at the boiling temperature. The temperature does not rise, and the potatoes are assumed to be already at the temperature of the cooker, so all the energy transferred to the contents is used to vaporise water, and the steam produced escapes through the valve. The mass of the water and the potatoes is not needed: it only determines how long the water lasts.
 **Formula:** $\eta P t = rm$, so $m = \dfrac{\eta P t}{r}$
 **Conversions:** $t = 20\,\text{min} = 20 \cdot 60\,\text{s} = 1200\,\text{s}$ and $r = 2260\,\text{kJ/kg} = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\eta P t = 0.80 \cdot 300\,\text{W} \cdot 1200\,\text{s} = 288\,000\,\text{J}$ and $m = \dfrac{288\,000\,\text{J}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.127\,\text{kg}$
@@ -181,13 +181,13 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 **Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Conversions:** Not needed, the units cancel in the ratio of the pressures.
 **Substitution:** $V_2 = 6.0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\text{l}$
-**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue. While rising, you must keep breathing out.
+**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue. While rising, you must never hold your breath: you breathe normally throughout the ascent, so that the expanding air can escape from the lungs.
 **Reasonableness:** The volume grows in the same ratio as the bubble in part a, except for the share due to warming: the temperature of the lungs does not change.
 
 ### c)
 **Given:** volume of the tank $V_\text{tank} = 12.0\,\text{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
 **Find:** the time $t$ the diver can stay at a depth of $15.0\,\text{m}$
-**Principle:** The temperature of the air stays the same as it flows from the tank through the regulator to the lungs, so the amount of air is proportional to the product of pressure and volume (Boyle's law). The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
+**Principle:** According to the problem, the temperature of the air is the same in the tank and in the lungs (part d) estimates the effect of warming), so the amount of air is proportional to the product of pressure and volume (Boyle's law). The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
 **Formula:** $\Delta p_\text{tank} V_\text{tank} = p V$, so $V = \dfrac{\Delta p_\text{tank} V_\text{tank}}{p}$, and $t = \dfrac{V}{q}$
 **Conversions:** $\Delta p_\text{tank} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. The volumes can stay in litres.
 **Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ and $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$

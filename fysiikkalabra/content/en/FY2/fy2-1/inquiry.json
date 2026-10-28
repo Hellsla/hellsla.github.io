@@ -44,7 +44,7 @@
         },
         {
           "text": "The kinetic energy is less than $981\\,\\text{J}$, because moving uses up energy.",
-          "feedback": "Without friction nothing changes energy into heat, so nothing is used up. In the table the kinetic energy and the potential energy together are always $981\\,\\text{J}$."
+          "feedback": "Without friction nothing changes energy into thermal energy, so nothing is used up. In the table the kinetic energy and the potential energy together are always $981\\,\\text{J}$."
         }
       ]
     },
@@ -86,7 +86,7 @@
       "type": "sim",
       "text": "In the simulation a $50\\,\\text{kg}$ skateboarder starts from rest from height $h_0$ on the wall of a half-pipe. The bar and the graph show the potential energy, kinetic energy and thermal energy in joules.",
       "howto": "Press *Start* and watch the motion and energies of the skateboarder. You can also drag the *Moment $t$* slider and stop the picture at any moment you like. Choose *Friction* (none, small or large) as well as *Initial height $h_0$* and *Speed*. The blue part of the bar is $E_\\text{p}$, the orange part $E_\\text{k}$ and the red striped part $E_\\text{thermal}$. The dashed line next to the bar shows the total energy.",
-      "model": "The values are model values calculated by the simulation, not measurements. The mass of the skateboarder is $50\\,\\text{kg}$, and she starts from rest from height $h_0$ on the wall of the half-pipe. The edges of the half-pipe are $3.0\\,\\text{m}$ high, and the zero level is the bottom. Air resistance is ignored. On every metre of sliding, friction changes the same amount of the energy of motion into thermal energy, so the longer the distance the skateboarder slides, the more thermal energy is produced.",
+      "model": "The values are model values calculated by the simulation, not measurements. The mass of the skateboarder is $50\\,\\text{kg}$, and she starts from rest from height $h_0$ on the wall of the half-pipe. The edges of the half-pipe are $3.0\\,\\text{m}$ high, and the zero level is the bottom. Air resistance is ignored. On every metre of sliding, friction changes the same amount of the energy of motion into thermal energy, so the longer the distance the skateboarder slides, the more energy is changed into thermal energy.",
       "calc": "The simulation calculates the motion of the skateboarder in small time steps. The potential energy is calculated from the height, the kinetic energy from the speed and the thermal energy from how much friction has changed the energy of motion along the way. The formulas for these are not needed in this chapter. The three energies are calculated separately and only then added together, so the sum staying the same is a result of the calculation, not an assumption. The numbers shown are rounded to whole joules."
     },
     {
@@ -107,7 +107,7 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "friction",
+        "kitka": "kitka",
         "h0": "initial height $h_0$"
       },
       "units": {
@@ -180,7 +180,7 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "friction",
+        "kitka": "kitka",
         "h0": "initial height $h_0$"
       },
       "units": {
@@ -267,7 +267,7 @@
             "feedback": "This is the energy that changed during the first bounce, $0.60\\,\\text{J} - 0.48\\,\\text{J}$. The question was about three bounces, so use the value after the third bounce as the final value."
           }
         ],
-        "solution": "**Given:** mechanical energy when dropped $E_\\text{initial} = 0.60\\,\\text{J}$ and after three bounces $E_\\text{mech} = 0.31\\,\\text{J}$ (from the table, simulated example data)\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The ball and the floor form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The mechanical energy that the ball is missing has not disappeared but has changed into thermal energy.\n\n**Formula:** $E_\\text{initial} = E_\\text{mech} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{initial} - E_\\text{mech}$\n\n**Conversions:** All energies are in joules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 0.60\\,\\text{J} - 0.31\\,\\text{J} = 0.29\\,\\text{J}$\n\n**Answer:** $0.29\\,\\text{J}$, two significant figures and two decimal places like the values in the table.\n\n**Reasonableness:** After three bounces there is still $0.31\\,\\text{J}$ of mechanical energy, and $0.31\\,\\text{J} + 0.29\\,\\text{J} = 0.60\\,\\text{J}$ is the initial energy. In each bounce about a fifth of the remaining energy changes into heat ($0.12\\,\\text{J}$, $0.10\\,\\text{J}$, $0.07\\,\\text{J}$), and these three together are $0.29\\,\\text{J}$."
+        "solution": "**Given:** mechanical energy when dropped $E_\\text{initial} = 0.60\\,\\text{J}$ and after three bounces $E_\\text{mech} = 0.31\\,\\text{J}$ (from the table, simulated example data)\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The ball and the floor form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The mechanical energy that the ball is missing has not disappeared but has changed into thermal energy.\n\n**Formula:** $E_\\text{initial} = E_\\text{mech} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{initial} - E_\\text{mech}$\n\n**Conversions:** All energies are in joules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 0.60\\,\\text{J} - 0.31\\,\\text{J} = 0.29\\,\\text{J}$\n\n**Answer:** $0.29\\,\\text{J}$, two significant figures and two decimal places like the values in the table.\n\n**Reasonableness:** After three bounces there is still $0.31\\,\\text{J}$ of mechanical energy, and $0.31\\,\\text{J} + 0.29\\,\\text{J} = 0.60\\,\\text{J}$ is the initial energy. In each bounce about a fifth of the remaining energy changes into thermal energy ($0.12\\,\\text{J}$, $0.10\\,\\text{J}$, $0.07\\,\\text{J}$), and these three together are $0.29\\,\\text{J}$."
       }
     },
     {
@@ -348,7 +348,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A cyclist rides up a hill at a constant speed. Chemical energy of $420\\,\\text{kJ}$ is released in her muscles. The potential energy of her and the bicycle increases by $85\\,\\text{kJ}$, and the kinetic energy does not change. The rest of the energy changes into thermal energy. How much thermal energy is produced? Answer in kilojoules.",
+      "prompt": "A cyclist rides up a hill at a constant speed. Chemical energy of $420\\,\\text{kJ}$ is released in her muscles. The potential energy of her and the bicycle increases by $85\\,\\text{kJ}$, and the kinetic energy does not change. The rest of the energy changes into thermal energy. How much energy is changed into thermal energy? Answer in kilojoules.",
       "answer": 335,
       "unit": "kJ",
       "tolerance": 0.02,
@@ -371,7 +371,7 @@
           "feedback": "This is the whole chemical energy. Part of it changed into potential energy, so subtract $85\\,\\text{kJ}$."
         }
       ],
-      "solution": "**Given:** chemical energy $E_\\text{chem} = 420\\,\\text{kJ}$, increase in potential energy $E_\\text{p} = 85\\,\\text{kJ}$, change in kinetic energy $0\\,\\text{kJ}$\n\n**Find:** thermal energy produced $E_\\text{thermal}$ in $\\text{kJ}$\n\n**Principle:** The cyclist, the bicycle and the surroundings form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The speed does not change, so the kinetic energy does not change. The chemical energy changes into potential energy and thermal energy.\n\n**Formula:** $E_\\text{chem} = E_\\text{p} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{chem} - E_\\text{p}$\n\n**Conversions:** Both energies are in kilojoules and the answer is asked in kilojoules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 420\\,\\text{kJ} - 85\\,\\text{kJ} = 335\\,\\text{kJ}$\n\n**Answer:** $335\\,\\text{kJ}$, in whole kilojoules, because both energies are given to the nearest kilojoule.\n\n**Reasonableness:** $85\\,\\text{kJ}$ ends up as potential energy and $335\\,\\text{kJ}$ as thermal energy, and together they are $420\\,\\text{kJ}$, the same as the chemical energy of the muscles. About four times as much heat is produced as useful energy, and human muscles are known to be inefficient: the cyclist sweats."
+      "solution": "**Given:** chemical energy $E_\\text{chem} = 420\\,\\text{kJ}$, increase in potential energy $E_\\text{p} = 85\\,\\text{kJ}$, change in kinetic energy $0\\,\\text{kJ}$\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{kJ}$\n\n**Principle:** The cyclist, the bicycle and the surroundings form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The speed does not change, so the kinetic energy does not change. The chemical energy changes into potential energy and thermal energy.\n\n**Formula:** $E_\\text{chem} = E_\\text{p} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{chem} - E_\\text{p}$\n\n**Conversions:** Both energies are in kilojoules and the answer is asked in kilojoules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 420\\,\\text{kJ} - 85\\,\\text{kJ} = 335\\,\\text{kJ}$\n\n**Answer:** $335\\,\\text{kJ}$, in whole kilojoules, because both energies are given to the nearest kilojoule.\n\n**Reasonableness:** $85\\,\\text{kJ}$ ends up as potential energy and $335\\,\\text{kJ}$ as thermal energy, and together they are $420\\,\\text{kJ}$, the same as the chemical energy of the muscles. About four times as much energy is changed into thermal energy as into useful energy, and human muscles are known to be inefficient: the cyclist sweats."
     },
     {
       "id": "tehtavat",
@@ -397,7 +397,7 @@
         },
         {
           "text": "As thermal energy.",
-          "feedback": "Thermal energy is produced only in the reactor, when the nuclear reactions heat the water. Before that the energy is stored in the atomic nuclei of uranium, so it is nuclear energy."
+          "feedback": "The energy changes into thermal energy only in the reactor, when the nuclear reactions heat the water. Before that the energy is stored in the atomic nuclei of uranium, so it is nuclear energy."
         },
         {
           "text": "As electrical energy.",
@@ -410,7 +410,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Calculation",
-      "prompt": "An incandescent bulb takes electrical energy of $2.5\\,\\text{kJ}$ and changes $0.12\\,\\text{kJ}$ of it into visible light. The rest changes into thermal energy. How much thermal energy is produced? Answer in joules.",
+      "prompt": "An incandescent bulb takes electrical energy of $2.5\\,\\text{kJ}$ and changes $0.12\\,\\text{kJ}$ of it into visible light. The rest changes into thermal energy. How much energy is changed into thermal energy? Answer in joules.",
       "answer": 2380,
       "unit": "J",
       "tolerance": 0.02,
@@ -433,7 +433,7 @@
           "feedback": "You added the electrical energy and the light together. The electrical energy is divided into two parts, so subtract the light from the electrical energy."
         }
       ],
-      "solution": "**Given:** electrical energy $E_\\text{elec} = 2.5\\,\\text{kJ}$, visible light $E_\\text{light} = 0.12\\,\\text{kJ}$\n\n**Find:** thermal energy produced $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The bulb changes electrical energy into visible light and thermal energy; the thermal energy warms the bulb and the surroundings, and part of it leaves the bulb as thermal radiation. Energy is neither created nor destroyed, so $E_\\text{initial} = E_\\text{final}$.\n\n**Formula:** $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{elec} - E_\\text{light}$\n\n**Conversions:** The prefix kilo means a thousand, so $2.5\\,\\text{kJ} = 2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ and $0.12\\,\\text{kJ} = 0.12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Substitution:** $E_\\text{thermal} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Answer:** $2.4 \\cdot 10^{3}\\,\\text{J}$, two significant figures, because the electrical energy $2.5\\,\\text{kJ}$ is given to the nearest hundred joules and limits the difference.\n\n**Reasonableness:** Only $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0.05$, about five per cent, changes into visible light, which is typical for an incandescent bulb, and the rest is heat. Checking backwards: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
+      "solution": "**Given:** electrical energy $E_\\text{elec} = 2.5\\,\\text{kJ}$, visible light $E_\\text{light} = 0.12\\,\\text{kJ}$\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The bulb changes electrical energy into visible light and thermal energy; the thermal energy warms the bulb and the surroundings, and part of it leaves the bulb as thermal radiation. Energy is neither created nor destroyed, so $E_\\text{initial} = E_\\text{final}$.\n\n**Formula:** $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{elec} - E_\\text{light}$\n\n**Conversions:** The prefix kilo means a thousand, so $2.5\\,\\text{kJ} = 2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ and $0.12\\,\\text{kJ} = 0.12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Substitution:** $E_\\text{thermal} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Answer:** $2.4 \\cdot 10^{3}\\,\\text{J}$, two significant figures, because the electrical energy $2.5\\,\\text{kJ}$ is given to the nearest hundred joules and limits the difference.\n\n**Reasonableness:** Only $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0.05$, about five per cent, changes into visible light, which is typical for an incandescent bulb, and the rest is thermal energy. Checking backwards: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
     },
     {
       "id": "check-3",

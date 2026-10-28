@@ -19,9 +19,9 @@
     {
       "id": "fy1-4-L1-03",
       "level": 1,
-      "text": "The height $h$ of a lawn was followed as a function of days $t$, and the fitted line is $h = 0.60\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot t + 4.0\\,\\text{cm}$. On which day from the start of the measurements is the lawn 10 cm tall? Give the answer in days.",
+      "text": "The height $h$ of a lawn was followed as a function of days $t$, and the fitted line is $h = 0.60\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot t + 4.0\\,\\text{cm}$. On which day from the start of the measurements is the lawn $10\\,\\text{cm}$ tall? Give the answer in days.",
       "answer": 10,
-      "unit": "d",
+      "unit": "vrk",
       "tolerance": 0.02
     },
     {
@@ -53,10 +53,11 @@
     {
       "id": "fy1-4-L2-02",
       "level": 2,
-      "text": "The height $h$ of the surface in a water tank increases steadily as a function of time $t$. The fitted line passes through the points $(2.0\\,\\text{min};\\ 7.0\\,\\text{cm})$ and $(6.0\\,\\text{min};\\ 15.0\\,\\text{cm})$. How high is the surface at 10.0 minutes, when the line is extended beyond the measured range? Give the answer in centimetres.",
-      "answer": 23,
-      "unit": "cm",
-      "tolerance": 0.02
+      "text": "The graph shows the distance $s$ travelled by a trolley moving steadily as a function of time $t$ in six measurements. Fit a straight line to the points by eye (plot the points on squared paper or lay a ruler over the figure) and use it to estimate how far the trolley has travelled at the moment $t = 8.0\\,\\text{s}$, when the motion continues in the same way. Give the answer in metres.",
+      "figure": "fy1-4/scatter-points",
+      "answer": 3.9,
+      "unit": "m",
+      "tolerance": 0.08
     },
     {
       "id": "fy1-4-L2-03",
@@ -69,9 +70,9 @@
     {
       "id": "fy1-4-L2-04",
       "level": 2,
-      "text": "The price of a taxi ride is a starting charge of $4.0\\,\\text{€}$ plus $2.5\\,\\text{€}$ for every kilometre driven. The price is a function of the distance, $y = kx + b$. How many times as expensive is a 10 km ride as a 5.0 km ride? Give the answer as a number.",
+      "text": "The price of a taxi ride is a starting charge of $4.0\\,\\text{€}$ plus $2.5\\,\\text{€}$ for every kilometre driven. The price is a function of the distance, $y = kx + b$. How many times as expensive is a $10\\,\\text{km}$ ride as a $5.0\\,\\text{km}$ ride? Give the answer as a number.",
       "answer": 1.8,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.03
     }
   ],
@@ -89,7 +90,7 @@
       "level": 3,
       "text": "The temperature $T$ of coffee was measured as a function of time $t$: $0\\,\\text{min}$: $90\\,{}^\\circ\\text{C}$, $10\\,\\text{min}$: $72\\,{}^\\circ\\text{C}$, $20\\,\\text{min}$: $60\\,{}^\\circ\\text{C}$ and $30\\,\\text{min}$: $51\\,{}^\\circ\\text{C}$. How many times greater is the change in temperature per minute (the absolute value of the slope) in the first ten-minute interval than in the last? Justify why one line does not describe all the measurements.",
       "answer": 2.0,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {
@@ -97,7 +98,7 @@
       "level": 3,
       "text": "Two points are read from the line $y = 2.0\\,x$, and the reading error of each $y$ value is at most $0.1$ units. The slope is calculated either from the points $x = 4.0$ and $x = 4.5$ or from the points $x = 1.0$ and $x = 9.0$. How many times greater is the relative uncertainty of the slope when it is calculated from the close points? Use the worst case, in which the reading errors add up in the difference $\\Delta y$. Justify why points far apart are the better choice.",
       "answer": 16,
-      "unit": "times",
+      "unit": "kertaa",
       "tolerance": 0.02
     }
   ]

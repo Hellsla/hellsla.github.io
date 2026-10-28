@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: efe0990ab50dd643
+CONTENT-HASH: 9f59d9300d78421c
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: efe0990ab50dd643
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercise texts and solutions are simplified (split sentences) without lowering demand; questions ask the same thing.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) in the exercises against the new Finnish.

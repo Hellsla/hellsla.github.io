@@ -35,7 +35,7 @@
     {
       "id": "fy2-5-L1-05",
       "level": 1,
-      "text": "Retkeilijän pähkinäsekoituksen energiapitoisuus on $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Kourallinen pähkinöitä painaa $0{,}040\\,\\text{kg}$. Kuinka paljon energiaa kourallisesta saadaan? Anna vastaus megajouleina.",
+      "text": "Retkeilijän pähkinäsekoituksen energiasisältö on $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Kourallinen pähkinöitä painaa $0{,}040\\,\\text{kg}$. Kuinka paljon energiaa kourallisesta saadaan? Anna vastaus megajouleina.",
       "answer": 0.96,
       "unit": "MJ",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy2-5-L3-02",
       "level": 3,
-      "text": "Vaeltaja kantaa mukanaan ruokaa, jonka energiapitoisuus on $18\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Ruokaa on $2{,}4\\,\\text{kg}$. Vaeltaja tarvitsee päivässä ruoasta energiaa $12\\,\\text{MJ}$. Montako päivän annosta ruoasta saadaan? Anna vastaus desimaalilukuna ja perustele laskusi.",
+      "text": "Vaeltaja kantaa mukanaan ruokaa, jonka energiasisältö on $18\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (esimerkkiarvo). Ruokaa on $2{,}4\\,\\text{kg}$. Vaeltaja tarvitsee päivässä ruoasta energiaa $12\\,\\text{MJ}$. Montako päivän annosta ruoasta saadaan? Anna vastaus desimaalilukuna ja perustele laskusi.",
       "answer": 3.6,
       "unit": "päivän annosta",
       "tolerance": 0.02

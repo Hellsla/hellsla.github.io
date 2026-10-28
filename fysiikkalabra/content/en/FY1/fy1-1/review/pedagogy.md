@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8e388340d86717fb
+CONTENT-HASH: 82ddeb3c75c11a9c
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -15,3 +15,4 @@ CONTENT-HASH: 8e388340d86717fb
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): tone and terms against terms.md, step labels **Given:** … **Reasonableness:**, button/menu names in *asterisks* (Record measurement, Go to object, zoom buttons, Width of the view, Start, Direction, Speed) against lang/en.json, the experiment intros (activities[5–7], translated after the check_i18n update; same steps as the Finnish) and answer units (orders of magnitude, times), every question, hint, feedback and solution step present, feedback matching its option.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the new check-c2 item, renumbered activities, the two-question exit ticket, "on the axis of powers of ten" wording and the new scale-marks figure text.

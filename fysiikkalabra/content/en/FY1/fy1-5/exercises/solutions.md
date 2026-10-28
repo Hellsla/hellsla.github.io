@@ -19,14 +19,15 @@
 **Reasonableness:** Check backwards: $8.0\,\text{m/s} \cdot 45\,\text{s} = 360\,\text{m}$. The speed corresponds to about $29\,\text{km/h}$, which matches the pace of a good runner in a 400-metre race.
 
 ## fy1-5-L1-03
-**Given:** speed $v = 1.4\,\text{m/s}$, distance $s = 560\,\text{m}$; the motion is uniform and starts from the zero point
-**Find:** time $t$ in seconds
-**Principle:** The speed is constant, so the distance is proportional to time, and the time is obtained by dividing the distance by the speed.
-**Formula:** $s = vt$, so $t = \dfrac{s}{v}$
-**Conversions:** None needed: the distance is in metres and the speed in m/s, so the metres cancel and the second remains.
-**Substitution:** $t = \dfrac{560\,\text{m}}{1.4\,\tfrac{\text{m}}{\text{s}}} = 400\,\text{s}$
-**Answer:** $400\,\text{s}$, two significant figures as in the speed $1.4\,\text{m/s}$.
-**Reasonableness:** The speed $1.4\,\text{m/s}$ is about $5\,\text{km/h}$, at which $0.56\,\text{km}$ takes about $0.11\,\text{h} \approx 6.7\,\text{min} \approx 400\,\text{s}$.
+**Given:** a graph in which the position $s$ of a walker as a function of time $t$ is a straight line from the origin; the motion continues uniformly beyond the graph; distance $s = 150\,\text{m}$
+**Find:** time $t$ in seconds when the distance is $150\,\text{m}$
+**Principle:** A straight line from the origin means uniform motion, and the slope of the line is the speed. When the speed is known, the time beyond the graph is obtained by dividing the distance by the speed.
+**Reading the graph:** The line passes through the grid crossing where $t_1 = 0\,\text{s}$ and $s_1 = 0\,\text{m}$ (the origin), and through the crossing where $t_2 = 8\,\text{s}$ and $s_2 = 20\,\text{m}$. Other crossings are for example $(4\,\text{s};\,10\,\text{m})$ and $(10\,\text{s};\,25\,\text{m})$. The reading is exact from the grid, so an answer that deviates by at most $3\,\%$ is accepted.
+**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = vt$, so $t = \dfrac{s}{v}$
+**Conversions:** None needed: the distance is in metres and the time in seconds.
+**Substitution:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2.5\,\dfrac{\text{m}}{\text{s}}$ and $t = \dfrac{150\,\text{m}}{2.5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
+**Answer:** $60\,\text{s}$, that is one minute; the speed was read with two significant figures, so the answer is given with the same precision.
+**Reasonableness:** The speed $2.5\,\text{m/s}$ is about $9\,\text{km/h}$, a brisk walk or a slow jog. In the graph $10\,\text{s}$ takes $25\,\text{m}$, so $150\,\text{m}$, a distance six times as long, takes six times as long, $60\,\text{s}$.
 
 ## fy1-5-L1-04
 **Given:** $s_1 = 18\,\text{m}$ in time $t_1 = 4.0\,\text{s}$; the time asked about is $t_2 = 10\,\text{s}$; the motion starts from the starting point, so $s_0 = 0$

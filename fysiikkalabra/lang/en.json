@@ -142,7 +142,10 @@
     "why": "Why?",
     "fold_title": "Make your predictions before investigating",
     "fold_question_one": "{{n}} question",
-    "fold_question_many": "{{n}} questions"
+    "fold_question_many": "{{n}} questions",
+    "self_assess_lead": "Tick the points your own answer already contains.",
+    "criteria_done": "What is missing from my answer?",
+    "further_practice": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>."
   },
   "js": {
     "check_number": "Type a number, for example 9.81.",
@@ -185,7 +188,8 @@
     "reflect_not_answered": "You have not answered yet: <a href=\"{{href}}\">go to the prediction</a>.",
     "rubric_total": "Self-assessed points: {{got}} / {{max}}",
     "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)",
-    "selfcheck_summary": "I can do {{ok}} / {{n}} goals."
+    "criteria_all": "Your answer contains all the key points of the model answer.",
+    "criteria_missing": "Add these points to your answer and compare again:"
   },
   "sims": {
     "fy2-2": {
@@ -868,14 +872,5 @@
     "error_sources": "The main sources of error are named, and it is explained how they affect the result.",
     "assumptions": "The assumption is named, and its effect on the result is justified.",
     "conclusion": "The conclusion answers the question and is based on the data."
-  },
-  "selfcheck": {
-    "title": "Assess your understanding",
-    "lead": "Think about the goals of the chapter: how does your understanding feel now? Your choices are saved only in this browser.",
-    "ok": "I can do this",
-    "practice": "I still need practice",
-    "next": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>.",
-    "next_no_exercises": "Review the <a href=\"#selita\">theory summary</a>.",
-    "optional": "optional"
   }
 }

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d9366a719c4ca611
+CONTENT-HASH: 6ab117fbca2eb636
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -16,3 +16,4 @@ CONTENT-HASH: d9366a719c4ca611
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi quality of lesson.md, inquiry prompts/feedback/solutions, exit ticket and figure descriptions; no steps, hints or feedback dropped, same cognitive demand, correct choice still unambiguous.
 - Update 2026-10-28: reviewed the newly translated fields intro, source_note, names, word units (pcs, million km) and string answers; button names in *asterisks* match the sim labels and lang exp_record; check_i18n shows no fy1-2 error.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 item, renumbered titles, exit ticket trimmed to two questions), figures.json (ruler-read description) and prefix sentence.

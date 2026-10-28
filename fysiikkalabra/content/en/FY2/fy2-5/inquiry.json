@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "contribution": "Chemical energy gets a formula: the heat of combustion $H$ of a fuel tells you the energy released per kilogram, and $E = Hm$ links fuels and food through the same idea of energy per unit of mass.",
+  "contribution": "Chemical energy gets a formula: the heat of combustion $H$ of a fuel tells you the energy released per kilogram, and $E = Hm$ gives it for the whole mass. The energy content of food is given in the same unit, but it describes the energy the body can use.",
   "learn": [
     "You can calculate the energy released from a fuel using its heat of combustion and mass.",
-    "You can compare fuels and food by their energy content.",
+    "You can compare fuels and food by energy content and explain how food energy differs from the heat of combustion.",
     "You can tell released energy apart from useful energy using efficiency."
   ],
   "prior": [
@@ -70,7 +70,7 @@
         },
         {
           "text": "About a hundred times as much energy is released from the petrol.",
-          "feedback": "The difference is much smaller: the heats of combustion of fuels are all of the same order of magnitude, about $10$–$50\\,\\text{MJ/kg}$. The ratio of petrol to wood is only $43 : 15 \\approx 2.9$."
+          "feedback": "The difference is much smaller: the heats of combustion of the most common fuels are all of the same order of magnitude, about $10$–$50\\,\\text{MJ/kg}$. The ratio of petrol to wood is only $43 : 15 \\approx 2.9$."
         }
       ]
     },
@@ -88,7 +88,7 @@
         },
         {
           "text": "The chocolate.",
-          "feedback": "Correct. The $2200\\,\\text{kJ}$ per hundred grams of chocolate is $22\\,\\text{MJ/kg}$, and that is more than the $1500\\,\\text{kJ}$ per hundred grams, or $15\\,\\text{MJ/kg}$, of wood. The label tells you the same as the heat of combustion.",
+          "feedback": "Correct. The $2200\\,\\text{kJ}$ per hundred grams of chocolate is $22\\,\\text{MJ/kg}$, and that is more than the $1500\\,\\text{kJ}$ per hundred grams, or $15\\,\\text{MJ/kg}$, of wood. Both numbers are energy per unit of mass, but the label gives the energy the body can use. If chocolate were burned, slightly more energy would be released, so chocolate wins the comparison in that case too.",
           "correct": true
         },
         {
@@ -166,20 +166,20 @@
       "id": "ruoka",
       "stage": "tutki",
       "type": "interpret",
-      "title": "A package label as a heat of combustion",
+      "title": "A package label converted to MJ/kg",
       "source": "example",
       "source_note": "example label, not the data of a real product",
-      "text": "The packaging of a chocolate bar says:\n\n| Nutritional value | per 100 g |\n|---|---|\n| energy | $2200\\,\\text{kJ}$ |\n\nWhen you convert the energy to megajoules and the mass to kilograms, the label gives you the heat of combustion of the chocolate.\n",
+      "text": "The packaging of a chocolate bar says:\n\n| Nutritional value | per 100 g |\n|---|---|\n| energy | $2200\\,\\text{kJ}$ |\n\nWhen you convert the energy to megajoules and the mass to kilograms, the label gives the energy content $e$ of the chocolate in $\\text{MJ/kg}$. It is given in the same unit as the heat of combustion, but it describes the energy the body can use.\n",
       "question": {
         "type": "numeric",
-        "prompt": "What is the energy content, that is the heat of combustion $H$, of the chocolate in $\\text{MJ/kg}$?",
+        "prompt": "What is the energy content $e$ of the chocolate in $\\text{MJ/kg}$?",
         "answer": 22,
         "unit": "MJ/kg",
         "tolerance": 0.02,
         "hints": [
           "How many megajoules is $2200\\,\\text{kJ}$ and how many kilograms is $100\\,\\text{g}$?",
           "$2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.",
-          "The heat of combustion is energy divided by mass: $H = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg}$."
+          "The energy content is energy divided by mass: $e = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg}$."
         ],
         "mistakes": [
           {
@@ -191,7 +191,7 @@
             "feedback": "You divided the energy in megajoules by the number $100$, that is by grams, although the mass must be in kilograms: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$."
           }
         ],
-        "solution": "**Given:** energy $2200\\,\\text{kJ}$ per mass $100\\,\\text{g}$\n\n**Find:** heat of combustion $H$ in $\\text{MJ/kg}$\n\n**Principle:** The heat of combustion is the energy per kilogram, and the label gives the energy for a hundred grams. So the label is converted to megajoules per kilogram.\n\n**Formula:** $H = \\dfrac{E}{m}$\n\n**Conversions:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.\n\n**Substitution:** $H = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Answer:** $22\\,\\text{MJ/kg}$, two significant figures, as in the number $2200\\,\\text{kJ}$.\n\n**Reasonableness:** The heat of combustion of firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. The heat of combustion of chocolate lies between them, which is a believable result: chocolate contains a lot of fat and sugar."
+        "solution": "**Given:** energy $2200\\,\\text{kJ}$ per mass $100\\,\\text{g}$\n\n**Find:** energy content $e$ in $\\text{MJ/kg}$\n\n**Principle:** The energy content is the energy per kilogram, and the label gives the energy the body can use for a hundred grams. So the label is converted to megajoules per kilogram, in the same way as a heat of combustion is given.\n\n**Formula:** $e = \\dfrac{E}{m}$\n\n**Conversions:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.\n\n**Substitution:** $e = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Answer:** $22\\,\\text{MJ/kg}$, two significant figures, as in the number $2200\\,\\text{kJ}$.\n\n**Reasonableness:** The heat of combustion of firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. The energy content of chocolate lies between them, which is a believable result: chocolate contains a lot of fat and sugar. The numbers are not quite the same quantity, but they are fine for comparing orders of magnitude."
       }
     },
     {
@@ -200,12 +200,12 @@
       "type": "explain",
       "title": "Conclusion: what does the heat of combustion tell you?",
       "prompt": "Based on the tables and the package label, write: what does the heat of combustion tell you about a fuel, and how is it used to calculate the energy released from a mass? How does the label on food packaging relate to this?",
-      "model": "The heat of combustion $H$ tells you how much energy is released from one kilogram of fuel, and it is measured in $\\text{MJ/kg}$. In the table the heat of combustion of petrol is $43\\,\\text{MJ/kg}$ and that of air-dried wood $15\\,\\text{MJ/kg}$, so burning the same mass releases different amounts of energy. The energy is directly proportional to the mass, so the energy released is found by multiplying the heat of combustion by the mass: $E = Hm$, when the mass is in kilograms. The label on food packaging gives the energy for a hundred grams. When it is converted to megajoules per kilogram, you get the heat of combustion of the food, for example $22\\,\\text{MJ/kg}$ for chocolate.",
+      "model": "The heat of combustion $H$ tells you how much energy is released from one kilogram of fuel, and it is measured in $\\text{MJ/kg}$. In the table the heat of combustion of petrol is $43\\,\\text{MJ/kg}$ and that of air-dried wood $15\\,\\text{MJ/kg}$, so burning the same mass releases different amounts of energy. The energy is directly proportional to the mass, so the energy released is found by multiplying the heat of combustion by the mass: $E = Hm$, when the mass is in kilograms. The label on food packaging gives the energy for a hundred grams. When it is converted to megajoules per kilogram, you get the energy content of the food, for example $22\\,\\text{MJ/kg}$ for chocolate. It is given in the same unit as the heat of combustion, but it describes the energy the body can use, whereas the heat of combustion describes the energy released in burning.",
       "criteria": [
         "I said that the heat of combustion is energy per kilogram.",
         "I wrote that the energy is found by multiplying the heat of combustion by the mass.",
         "I mentioned a number from a table as an example.",
-        "I explained that the label on food packaging is the same idea."
+        "I explained that the label on food packaging can be converted to $\\text{MJ/kg}$, but that it describes the energy the body can use and not the energy released in burning."
       ]
     },
     {

@@ -10,7 +10,7 @@ Energiaa on monessa muodossa. Jokaista muotoa sanotaan **energialajiksi**. Energ
 ### Seitsemän energialajia
 - **Potentiaalienergia** $E_\text{p}$ on energiaa, joka riippuu kappaleen paikasta. Tässä se on painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia.
 - **Liike-energia** $E_\text{k}$ on liikkuvan kappaleen energiaa. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole.
-- **Lämpöenergia** $E_\text{lämpö}$ liittyy aineen hiukkasten liikkeeseen. Mitä lämpimämpi kappale on, sitä enemmän sen hiukkaset liikkuvat. Silloin kappaleella on myös enemmän lämpöenergiaa.
+- **Lämpöenergia** $E_\text{lämpö}$ liittyy aineen hiukkasten liikkeeseen ja siihen, miten hiukkaset vaikuttavat toisiinsa. Kun kappale lämpenee, sen hiukkaset liikkuvat enemmän. Silloin kappaleen lämpöenergia kasvaa. Lämpöenergia riippuu myös aineen määrästä. Siksi se ei ole sama asia kuin lämpötila. Sana **lämpö** tarkoittaa fysiikassa energiaa, joka *siirtyy* lämpötilaeron vuoksi. Energiaa siirtyy nettomääräisesti lämpimämmästä kappaleesta kylmempään. Kappaleella on lämpöenergiaa. Lämpönä energiaa siirtyy kappaleesta toiseen.
 - **Kemiallinen energia** on energiaa, joka on varastoitunut aineiden kemiallisiin sidoksiin. Sitä on ravinnossa, polttoaineissa ja paristoissa. Se vapautuu esimerkiksi palamisessa ja aineenvaihdunnassa.
 - **Säteilyenergia** kulkee säteilyn mukana, esimerkiksi auringonvalossa. Se kulkee myös tyhjiön läpi.
 - **Sähköenergia** siirtyy sähkövirran mukana, esimerkiksi sähköverkossa.
@@ -102,7 +102,7 @@ Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\te
 ### Energia muuttaa muotoa
 Energia ei pysy samassa muodossa. Taskulampussa pariston kemiallinen energia muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Hehkulampussa suurin osa energiasta muuttuu lämpöenergiaksi. Vain pieni osa muuttuu valoksi.
 
-<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi. Siksi lämpönuoli on leveämpi. Kuva on kaavamainen. Nuolten leveys ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="energian-muuttuminen" viewBox="0 0 600 250" role="img" aria-label="Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpöenergian nuoli on leveämpi. Kuva on kaavamainen. Nuolten leveys ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <foreignObject x="7.5" y="11.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kemiallinen}$</div></foreignObject>
   <foreignObject x="32.5" y="41.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
   <rect x="59" y="90" width="42" height="74" rx="5" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
@@ -127,7 +127,7 @@ Energia ei pysy samassa muodossa. Taskulampussa pariston kemiallinen energia muu
   <foreignObject x="444" y="169.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
 </svg>
 
-Samanlaisia muutoksia on kaikkialla. Kasvi muuttaa auringon säteilyenergiaa kemialliseksi energiaksi. Lihas muuttaa kemiallista energiaa liike-energiaksi ja lämmöksi. Ydinvoimalassa ydinenergia muuttuu lopulta sähköenergiaksi.
+Samanlaisia muutoksia on kaikkialla. Kasvi muuttaa auringon säteilyenergiaa kemialliseksi energiaksi. Lihas muuttaa kemiallista energiaa liike-energiaksi ja lämpöenergiaksi. Ydinvoimalassa ydinenergia muuttuu lopulta sähköenergiaksi.
 
 ## Kaava: Energian säilymislaki
 Kaikissa näissä muutoksissa energian kokonaismäärä pysyy samana. Energiaa ei synny eikä katoa. Se muuttaa muotoa tai siirtyy paikasta toiseen. Tämä on fysiikan yleinen periaate, **energian säilymislaki**. Tarkastellaan **eristettyä systeemiä**. Siihen ei tule energiaa ulkopuolelta, eikä siitä lähde energiaa pois. Silloin systeemin kokonaisenergia on sama alussa ja lopussa:
@@ -138,7 +138,7 @@ E_\text{alussa} = E_\text{lopussa}
 
 Tässä $E_\text{alussa}$ on systeemin kaikkien energialajien energioiden summa alussa. Lopussa vastaava summa on $E_\text{lopussa}$. Molemmat ilmoitetaan jouleina ($\text{J}$).
 
-Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Skeittari liukuu half-pipen reunalta pohjalle, ja kitka vaikuttaa. Silloin mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee. Lämpöenergia $E_\text{lämpö}$ kasvaa saman verran. Summa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ ei muutu.
+Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Skeittari liukuu half-pipen reunalta pohjalle, ja kitka vaikuttaa. Silloin mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee. Lämpöenergia $E_\text{lämpö}$ kasvaa saman verran. Summa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ ei muutu. Kitka ei siis luo energiaa. Se muuttaa mekaanista energiaa lämpöenergiaksi. Renkaat, ramppi ja ilma lämpenevät hieman.
 
 <svg data-fig="sailyminen" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva: skeittari half-pipessä kolmella hetkellä. Jokaisen hetken energiat näkyvät pylväinä. Alussa skeittari on levossa reunalla. Silloin koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole. Liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa. Jokaisen pylvään kokonaiskorkeus vastaa 800 joulea. Kaikilla hetkillä energiaa on siis yhtä paljon." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy21-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#c92a2a"/><line x1="0" y1="0" x2="0" y2="8" stroke="#f2a69c" stroke-width="3"/></pattern></defs>
@@ -178,18 +178,18 @@ Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Skeittari liukuu hal
 </svg>
 
 ### Energian kuluttaminen on energian muuttumista
-Arkikielessä energiaa "kuluu". Fysiikassa energia ei kuitenkaan lopu. Kun laite kuluttaa energiaa, se muuttaa energiaa muodosta toiseen. Useimmiten suurin osa muuttuu lämpöenergiaksi. Lämpöenergia leviää ympäristöön, ja sitä on vaikea käyttää enää hyödyksi. Siksi energiaa kannattaa säästää, vaikka sitä ei voi hävittää.
+Arkikielessä energiaa "kuluu". Fysiikassa energia ei kuitenkaan lopu. Kun laite kuluttaa energiaa, se muuttaa energiaa muodosta toiseen. Useimmiten suurin osa muuttuu lämpöenergiaksi. Lämpöenergia siirtyy lämpönä ympäristöön, ja sitä on vaikea käyttää enää hyödyksi. Lyhyesti sanotaan usein, että energia "muuttuu lämmöksi". Siksi energiaa kannattaa säästää, vaikka sitä ei voi hävittää.
 
 ## Esimerkki
 Skeittari lähtee levosta half-pipen reunalta. Reunalla hänen potentiaalienergiansa on $840\,\text{J}$, kun nollataso on half-pipen pohja. Pohjalla hänen liike-energiansa on $0{,}72\,\text{kJ}$. Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin. Kuinka paljon kitka on muuttanut energiaa lämpöenergiaksi laskun aikana?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Alussa potentiaalienergia on $E_\text{p} = 840\,\text{J}$. Liike-energia on nolla, koska skeittari on levossa. Pohjalla potentiaalienergia on nolla ja liike-energia on $E_\text{k} = 0{,}72\,\text{kJ}$. Lämpöenergiaksi lasketaan vain energia, jonka kitka tuottaa laskun aikana. Kysytään tätä lämpöenergiaa $E_\text{lämpö}$.
+**Tunnetut ja kysytty.** Alussa potentiaalienergia on $E_\text{p} = 840\,\text{J}$. Liike-energia on nolla, koska skeittari on levossa. Pohjalla potentiaalienergia on nolla ja liike-energia on $E_\text{k} = 0{,}72\,\text{kJ}$. Kysytään sitä mekaanista energiaa $E_\text{lämpö}$, jonka kitka muuttaa laskun aikana lämpöenergiaksi.
 
 <!-- vaihe -->
 
-**Periaate.** Systeemi on eristetty, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Alussa kaikki energia on potentiaalienergiaa. Pohjalla energia on jakautunut kahtia. Osa on liike-energiaa ja osa on kitkan tuottamaa lämpöenergiaa.
+**Periaate.** Systeemi on eristetty, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Alussa kaikki energia on potentiaalienergiaa. Pohjalla energia on jakautunut kahtia. Osa on liike-energiaa ja osa on lämpöenergiaa. Kitka on muuttanut osan energiasta lämpöenergiaksi.
 
 <!-- vaihe -->
 
@@ -219,18 +219,19 @@ E_\text{lämpö} &= E_\text{p} - E_\text{k} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaa syntyi $E_\text{lämpö} = 120\,\text{J}$. Tulos pyöristetään kymmeniin jouleihin. Liike-energia $0{,}72\,\text{kJ}$ on annettu kymmenen joulen tarkkuudella, ja se rajoittaa erotuksen tarkkuutta.
+**Tulos.** Kitka muutti lämpöenergiaksi $E_\text{lämpö} = 120\,\text{J}$. Tulos pyöristetään kymmeniin jouleihin. Liike-energia $0{,}72\,\text{kJ}$ on annettu kymmenen joulen tarkkuudella, ja se rajoittaa erotuksen tarkkuutta.
 
 <!-- vaihe -->
 
-**Järkevyys.** Lämpöenergia on positiivinen ja pienempi kuin alkuenergia $840\,\text{J}$, kuten kitkan kohdalla pitääkin. Energia on tallessa: $720\,\text{J} + 120\,\text{J} = 840\,\text{J} = E_\text{alussa}$. Lämpöenergiaa syntyi alle viidesosa alkuenergiasta. Se on uskottava määrä sileässä half-pipessä.
+**Järkevyys.** Lämpöenergia on positiivinen ja pienempi kuin alkuenergia $840\,\text{J}$, kuten kitkan kohdalla pitääkin. Energia on tallessa: $720\,\text{J} + 120\,\text{J} = 840\,\text{J} = E_\text{alussa}$. Lämpöenergiaksi muuttui alle viidesosa alkuenergiasta. Se on uskottava määrä sileässä half-pipessä.
 
 ## Yleinen virhekäsitys
-Energia ei katoa eikä kulu loppuun. Pallo pysähtyy tai laite kuluttaa energiaa. Silloin energia on muuttunut toiseen muotoon, yleensä lämpöenergiaksi, joka on levinnyt ympäristöön. Toinen virhe on laskea vain mekaaninen energia. Kitkallisessa liikkeessä $E_\text{p} + E_\text{k}$ pienenee. Kokonaisenergia pysyy silti samana, kun lämpöenergia otetaan mukaan.
+Energia ei katoa eikä kulu loppuun. Pallo pysähtyy tai laite kuluttaa energiaa. Silloin energia on muuttunut toiseen muotoon, yleensä lämpöenergiaksi, joka on siirtynyt lämpönä ympäristöön. Toinen virhe on laskea vain mekaaninen energia. Kitkallisessa liikkeessä $E_\text{p} + E_\text{k}$ pienenee. Kokonaisenergia pysyy silti samana, kun lämpöenergia otetaan mukaan. Kitka ei luo energiaa. Se muuttaa energiaa muodosta toiseen.
 
 ## Tiivistelmä
 - Energian tunnus on $E$ ja yksikkö joule $\text{J}$; $1\,\text{kJ} = 1000\,\text{J}$.
 - Energialajeja ovat potentiaalienergia, liike-energia (yhdessä mekaaninen energia), lämpöenergia, kemiallinen energia, säteilyenergia, sähköenergia ja ydinenergia.
 - Energia muuttaa muotoa ja siirtyy, mutta se ei synny eikä katoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$.
-- Kitka muuttaa mekaanista energiaa lämpöenergiaksi: $E_\text{p} + E_\text{k}$ pienenee, mutta kokonaisenergia ei muutu.
+- Kitka ei luo energiaa vaan muuttaa mekaanista energiaa lämpöenergiaksi: $E_\text{p} + E_\text{k}$ pienenee, mutta kokonaisenergia ei muutu.
+- Kappaleella on lämpöenergiaa. Lämpö on energiaa, joka siirtyy lämpötilaeron vuoksi, nettomääräisesti lämpimämmästä kylmempään.
 - Energian kuluttaminen tarkoittaa sen muuttumista muotoon, jota on vaikea hyödyntää. Yleensä se on lämpöenergiaa.

@@ -29,7 +29,7 @@ Power is the quotient of the energy transformed or transferred and the time it t
 ```latex
 P = \frac{\Delta E}{\Delta t}
 ```
-where $P$ is power (W), $\Delta E$ is the change in energy, that is the energy transformed or transferred (J), and $\Delta t$ is the time it takes (s). In words: power is energy divided by time. When a device runs steadily from the moment it is switched on, $\Delta E$ is the whole transformed energy $E$ and $\Delta t$ is the whole time $t$, so $P = E : t$. Energy and time can be solved from the formula:
+where $P$ is power (W), $\Delta E$ is the change in energy, that is the energy transformed or transferred (J), and $\Delta t$ is the time it takes (s). In words: power is energy divided by time. If energy is transformed unevenly, the formula gives the average power over the time interval $\Delta t$. When a device runs steadily from the moment it is switched on, $\Delta E$ is the whole transformed energy $E$ and $\Delta t$ is the whole time $t$, so $P = E : t$. Energy and time can be solved from the formula:
 ```latex
 \begin{aligned}
 E &= P\,t \\

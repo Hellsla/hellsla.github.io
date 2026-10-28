@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e8eb4468807db78f
+CONTENT-HASH: 04c6ee16d8dc975f
 
 ## Blocking
 (none left; see Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: e8eb4468807db78f
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): every statement of lesson.md (Key idea, three error types, Formula section, Worked example steps, Misconception, Summary), inquiry.json (all activities, choices, feedback, hints, mistakes, solutions), exit-ticket.json, meta.json and figures.json against content/fi; sim labels via i18n.py resolve en (Start, Repetitions, Random error Δt_ran, Systematic error Δt_sys); signs, "at most", sys-error direction, decimal points, \cdot, step labels. check_i18n en: 0 errors.
 - Follow-up 2026-10-28 (check_i18n update): experiment intro texts (activities 5–7), column names and the word unit "kertaa"/"times"; slider name *Repetitions*/*Toistoja* matches the sim label; no change needed, re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the lesson text, check-c2 resolution item, changed feedback, figure description and glossary against the new Finnish; same physics, terms, decimals and unambiguous correct choice; no issues found.

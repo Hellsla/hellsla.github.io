@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 49312002adec9bb2
+CONTENT-HASH: 14fbc9d75ccc7320
 
 ## Blocking
 (none left)
@@ -15,3 +15,4 @@ CONTENT-HASH: 49312002adec9bb2
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): tone and readability for 16–18-year-olds in all lesson and inquiry texts; questions ask the same thing, correct choices unchanged and unambiguous, feedback matches each option, hints and solution steps complete.
 - Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson prose, example, summary, inquiry feedback/solutions/models/criteria, exit ticket and figure texts.

@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "contribution": "Kemiallinen energia saa laskukaavan. Polttoaineen lämpöarvo $H$ kertoo vapautuvan energian kilogrammaa kohti. Kaava $E = Hm$ yhdistää polttoaineet ja ruoan samaan ajatukseen: energia massayksikköä kohti.",
+  "contribution": "Kemiallinen energia saa laskukaavan. Polttoaineen lämpöarvo $H$ kertoo vapautuvan energian kilogrammaa kohti. Kaava $E = Hm$ antaa energian koko massalle. Ruoan energiasisältö ilmoitetaan samassa yksikössä. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään.",
   "learn": [
     "Osaat laskea polttoaineesta vapautuvan energian lämpöarvon ja massan avulla.",
-    "Osaat vertailla polttoaineita ja ruokaa energiapitoisuuden perusteella.",
+    "Osaat vertailla polttoaineita ja ruokaa energiasisällön perusteella ja selittää, miten ruoan energiasisältö eroaa lämpöarvosta.",
     "Osaat erottaa vapautuneen energian hyötyenergiasta hyötysuhteen avulla."
   ],
   "prior": [
@@ -70,7 +70,7 @@
         },
         {
           "text": "Bensiinistä vapautuu noin sata kertaa enemmän energiaa.",
-          "feedback": "Ero on paljon pienempi. Polttoaineiden lämpöarvot ovat kaikki samaa suuruusluokkaa, noin $10$–$50\\,\\text{MJ/kg}$. Bensiinin ja puun suhde on vain $43 : 15 \\approx 2{,}9$."
+          "feedback": "Ero on paljon pienempi. Tavallisimpien polttoaineiden lämpöarvot ovat kaikki samaa suuruusluokkaa, noin $10$–$50\\,\\text{MJ/kg}$. Bensiinin ja puun suhde on vain $43 : 15 \\approx 2{,}9$."
         }
       ]
     },
@@ -88,7 +88,7 @@
         },
         {
           "text": "Suklaa.",
-          "feedback": "Oikein. Suklaan $2200\\,\\text{kJ}$ sadassa grammassa on $22\\,\\text{MJ/kg}$. Se on enemmän kuin puun $1500\\,\\text{kJ}$ sadassa grammassa eli $15\\,\\text{MJ/kg}$. Pakkausmerkintä kertoo saman kuin lämpöarvo.",
+          "feedback": "Oikein. Suklaan $2200\\,\\text{kJ}$ sadassa grammassa on $22\\,\\text{MJ/kg}$. Se on enemmän kuin puun $1500\\,\\text{kJ}$ sadassa grammassa eli $15\\,\\text{MJ/kg}$. Molemmat luvut ovat energiaa massayksikköä kohti. Pakkausmerkintä kertoo kuitenkin energian, jonka elimistö pystyy hyödyntämään. Jos suklaa palaisi, siitä vapautuisi vielä hieman enemmän energiaa. Suklaa voittaa vertailun silloinkin.",
           "correct": true
         },
         {
@@ -166,20 +166,20 @@
       "id": "ruoka",
       "stage": "tutki",
       "type": "interpret",
-      "title": "Pakkausmerkintä lämpöarvona",
+      "title": "Pakkausmerkintä yksikköön MJ/kg",
       "source": "example",
       "source_note": "esimerkkimerkintä, ei oikean tuotteen tietoja",
-      "text": "Suklaalevyn pakkauksessa lukee:\n\n| Ravintoarvo | sadassa grammassa |\n|---|---|\n| energia | $2200\\,\\text{kJ}$ |\n\nMuuta energia megajouleiksi ja massa kilogrammoiksi. Silloin merkinnästä saa suklaan lämpöarvon.\n",
+      "text": "Suklaalevyn pakkauksessa lukee:\n\n| Ravintoarvo | sadassa grammassa |\n|---|---|\n| energia | $2200\\,\\text{kJ}$ |\n\nMuuta energia megajouleiksi ja massa kilogrammoiksi. Silloin merkinnästä saa suklaan energiasisällön $e$ yksikössä $\\text{MJ/kg}$. Se ilmoitetaan samassa yksikössä kuin lämpöarvo. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään.\n",
       "question": {
         "type": "numeric",
-        "prompt": "Mikä on suklaan energiapitoisuus eli lämpöarvo $H$ yksikössä $\\text{MJ/kg}$?",
+        "prompt": "Mikä on suklaan energiasisältö $e$ yksikössä $\\text{MJ/kg}$?",
         "answer": 22,
         "unit": "MJ/kg",
         "tolerance": 0.02,
         "hints": [
           "Kuinka monta megajoulea on $2200\\,\\text{kJ}$ ja kuinka monta kilogrammaa on $100\\,\\text{g}$?",
           "$2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.",
-          "Lämpöarvo on energia jaettuna massalla: $H = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg}$."
+          "Energiasisältö on energia jaettuna massalla: $e = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg}$."
         ],
         "mistakes": [
           {
@@ -191,7 +191,7 @@
             "feedback": "Jaoit energian megajouleina luvulla $100$ eli grammoilla. Massa pitää kuitenkin ilmoittaa kilogrammoina: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$."
           }
         ],
-        "solution": "**Annettu:** energia $2200\\,\\text{kJ}$ massaa $100\\,\\text{g}$ kohti\n\n**Kysytty:** lämpöarvo $H$ yksikössä $\\text{MJ/kg}$\n\n**Periaate:** Lämpöarvo on energia yhtä kilogrammaa kohti. Pakkausmerkintä antaa energian sadalle grammalle. Merkintä muutetaan siis yksikköön megajoulea kilogrammaa kohti.\n\n**Kaava:** $H = \\dfrac{E}{m}$\n\n**Muunnokset:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.\n\n**Sijoitus:** $H = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Vastaus:** $22\\,\\text{MJ/kg}$, kaksi merkitsevää numeroa kuten luvussa $2200\\,\\text{kJ}$.\n\n**Järkevyys:** Polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$ ja bensiinin $43\\,\\text{MJ/kg}$. Suklaan lämpöarvo on näiden välissä. Tulos on uskottava, koska suklaa sisältää paljon rasvaa ja sokeria."
+        "solution": "**Annettu:** energia $2200\\,\\text{kJ}$ massaa $100\\,\\text{g}$ kohti\n\n**Kysytty:** energiasisältö $e$ yksikössä $\\text{MJ/kg}$\n\n**Periaate:** Energiasisältö on energia yhtä kilogrammaa kohti. Pakkausmerkintä antaa sadalle grammalle energian, jonka elimistö pystyy hyödyntämään. Merkintä muutetaan siis yksikköön megajoulea kilogrammaa kohti. Lämpöarvokin ilmoitetaan samalla tavalla.\n\n**Kaava:** $e = \\dfrac{E}{m}$\n\n**Muunnokset:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.\n\n**Sijoitus:** $e = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Vastaus:** $22\\,\\text{MJ/kg}$, kaksi merkitsevää numeroa kuten luvussa $2200\\,\\text{kJ}$.\n\n**Järkevyys:** Polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$ ja bensiinin $43\\,\\text{MJ/kg}$. Suklaan energiasisältö on näiden välissä. Tulos on uskottava, koska suklaa sisältää paljon rasvaa ja sokeria. Luvut eivät ole aivan sama suure. Suuruusluokan vertailuun ne kuitenkin käyvät."
       }
     },
     {
@@ -200,12 +200,12 @@
       "type": "explain",
       "title": "Johtopäätös: mitä lämpöarvo kertoo?",
       "prompt": "Kirjoita taulukoiden ja pakkausmerkinnän perusteella: mitä lämpöarvo kertoo polttoaineesta? Miten lämpöarvon avulla lasketaan massasta vapautuva energia? Miten ruoan pakkausmerkintä liittyy tähän?",
-      "model": "Lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta. Se mitataan yksiköissä $\\text{MJ/kg}$. Taulukossa bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivan puun $15\\,\\text{MJ/kg}$. Saman massan polttaminen vapauttaa siis eri määrän energiaa. Energia on suoraan verrannollinen massaan. Vapautuva energia saadaan kertomalla lämpöarvo massalla: $E = Hm$, kun massa on kilogrammoina. Ruoan pakkausmerkintä kertoo energian sadalle grammalle. Kun se muutetaan megajouleiksi kilogrammaa kohti, saadaan ruoan lämpöarvo, esimerkiksi $22\\,\\text{MJ/kg}$ suklaalle.",
+      "model": "Lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta. Se mitataan yksiköissä $\\text{MJ/kg}$. Taulukossa bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivan puun $15\\,\\text{MJ/kg}$. Saman massan polttaminen vapauttaa siis eri määrän energiaa. Energia on suoraan verrannollinen massaan. Vapautuva energia saadaan kertomalla lämpöarvo massalla: $E = Hm$, kun massa on kilogrammoina. Ruoan pakkausmerkintä kertoo energian sadalle grammalle. Kun se muutetaan megajouleiksi kilogrammaa kohti, saadaan ruoan energiasisältö, esimerkiksi $22\\,\\text{MJ/kg}$ suklaalle. Se ilmoitetaan samassa yksikössä kuin lämpöarvo. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään. Lämpöarvo taas kuvaa energiaa, joka vapautuu palamisessa.",
       "criteria": [
         "Sanoin, että lämpöarvo on energia yhtä kilogrammaa kohti.",
         "Kirjoitin, että energia saadaan kertomalla lämpöarvo massalla.",
         "Mainitsin esimerkkinä jonkin taulukon luvun.",
-        "Selitin, että ruoan pakkausmerkintä on sama ajatus."
+        "Selitin, että ruoan pakkausmerkinnän voi muuttaa yksikköön $\\text{MJ/kg}$. Kirjoitin, että se kuvaa energiaa, jonka elimistö pystyy hyödyntämään, eikä palamisessa vapautuvaa energiaa."
       ]
     },
     {

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1fb57883f3c8d052
+CONTENT-HASH: 0c12449dd247c7d9
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 1fb57883f3c8d052
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json against content/fi: same physics, numbers, comma decimals, formulas, chapter references, source notes. check_i18n fi-easy: 0 errors.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) against the new Finnish.

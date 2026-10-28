@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Energy gets the unit joule and the prefixes kJ, MJ, GJ and TJ: conservation and transformation of energy are shown as chains in which part turns into heat at every step, and everyday and societal energies are compared by order of magnitude on a ladder.",
+  "contribution": "Energy gets the unit joule and the prefixes kJ, MJ, GJ and TJ: conservation and transformation of energy are shown as chains in which part turns into thermal energy at every step, and everyday and societal energies are compared by order of magnitude on a ladder.",
   "learn": [
     "You can explain an energy chain and what the energy finally turns into.",
     "You can give energy in joules and with the prefixes kJ, MJ, GJ and TJ.",
@@ -33,7 +33,7 @@
         },
         {
           "text": "The kinetic energy turns mostly into thermal energy in the brakes, tyres and road, and there is as much energy in total as before.",
-          "feedback": "Correct. Energy is conserved and changes form: kinetic energy becomes heat, which spreads into the surroundings. Today we examine such chains and calculate energy in joules.",
+          "feedback": "Correct. Energy is conserved and changes form: kinetic energy becomes thermal energy, which is transferred as heat to the surroundings and spreads out. Today we examine such chains and calculate energy in joules.",
           "correct": true
         },
         {
@@ -56,7 +56,7 @@
       "choices": [
         {
           "text": "A day's food, because it gives a person the strength to be active all day.",
-          "feedback": "The table values refute this: a day's food is about $10\\,\\text{MJ}$ and a litre of petrol about $32\\,\\text{MJ}$. Being able to keep going does not show how much energy there is, because the body turns a large part of the energy of food into heat."
+          "feedback": "The table values refute this: a day's food is about $10\\,\\text{MJ}$ and a litre of petrol about $32\\,\\text{MJ}$. Being able to keep going does not show how much energy there is, because the body turns a large part of the energy of food into thermal energy."
         },
         {
           "text": "A litre of petrol, about three times as much.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "The same, because you can travel about the same distance with either.",
-          "feedback": "The values refute this: $32\\,\\text{MJ}$ and $10\\,\\text{MJ}$. Distance does not show how much energy there is, because a large part of the energy of fuel turns into heat in the engine of the car."
+          "feedback": "The values refute this: $32\\,\\text{MJ}$ and $10\\,\\text{MJ}$. Distance does not show how much energy there is, because a large part of the energy of fuel turns into thermal energy in the engine of the car."
         }
       ]
     },
@@ -117,7 +117,7 @@
       "locked": [],
       "vary": "kohde",
       "names": {
-        "kohde": "item"
+        "kohde": "kohde"
       },
       "measure": [
         {
@@ -139,7 +139,7 @@
       "locked": [],
       "vary": "kohde",
       "names": {
-        "kohde": "item"
+        "kohde": "kohde"
       },
       "measure": [
         {
@@ -171,14 +171,14 @@
         "mistakes": [
           {
             "value": 60,
-            "feedback": "You calculated only the heat of the power plant, $100\\,\\text{MJ} - 40\\,\\text{MJ}$. Energy also turns into heat in the grid and in the kettle, and the share of the whole chain is the difference between the initial energy and what remained in the water."
+            "feedback": "You calculated only the energy that turned into thermal energy in the power plant, $100\\,\\text{MJ} - 40\\,\\text{MJ}$. Energy also turns into thermal energy in the grid and in the kettle, and the share of the whole chain is the difference between the initial energy and what remained in the water."
           },
           {
             "value": 34,
             "feedback": "$34\\,\\text{MJ}$ is the energy transferred to the water, not the energy that went elsewhere. The question asks for the rest, when there was $100\\,\\text{MJ}$ at the start."
           }
         ],
-        "solution": "**Given:** chemical energy of the fuel $E_\\text{start} = 100\\,\\text{MJ}$ and energy transferred to the water $E_\\text{water} = 34\\,\\text{MJ}$\n\n**Find:** energy that ended up somewhere other than the water $E_\\text{other}$ in megajoules\n\n**Principle:** Energy is conserved, so the initial energy is divided entirely between the water and elsewhere. The other energy is heat that was produced in the power plant, the grid and the kettle and spread into the surroundings.\n\n**Formula:** $E_\\text{start} = E_\\text{water} + E_\\text{other}$, so $E_\\text{other} = E_\\text{start} - E_\\text{water}$\n\n**Conversions:** Not needed: all energies are given in megajoules.\n\n**Substitution:** $E_\\text{other} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Answer:** $66\\,\\text{MJ}$, two significant figures as in the data $34\\,\\text{MJ}$.\n\n**Reasonableness:** The heat at the steps is $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ and $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$, and together they make $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. This is more than the energy that remained in the water, as in power plants."
+        "solution": "**Given:** chemical energy of the fuel $E_\\text{start} = 100\\,\\text{MJ}$ and energy transferred to the water $E_\\text{water} = 34\\,\\text{MJ}$\n\n**Find:** energy that ended up somewhere other than the water $E_\\text{other}$ in megajoules\n\n**Principle:** Energy is conserved, so the initial energy is divided entirely between the water and elsewhere. The other energy turned into thermal energy in the power plant, the grid and the kettle and was transferred as heat to the surroundings.\n\n**Formula:** $E_\\text{start} = E_\\text{water} + E_\\text{other}$, so $E_\\text{other} = E_\\text{start} - E_\\text{water}$\n\n**Conversions:** Not needed: all energies are given in megajoules.\n\n**Substitution:** $E_\\text{other} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Answer:** $66\\,\\text{MJ}$, two significant figures as in the data $34\\,\\text{MJ}$.\n\n**Reasonableness:** The heat at the steps is $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ and $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$, and together they make $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. This is more than the energy that remained in the water, as in power plants."
       }
     },
     {
@@ -191,11 +191,11 @@
         "koe-2"
       ],
       "prompt": "Write, on the basis of your tables and the energy chain: which was greater, a litre of petrol or a day's food, and by what factor? How did the energy from the Sun in one hour compare with the energy use of humankind in a year? What form does the energy of the chain finally end up in?",
-      "model": "A litre of petrol was about $32\\,\\text{MJ}$ and a day's food about $10\\,\\text{MJ}$, so petrol contains about $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ times as much energy. The solar radiation reaching the Earth in an hour and the energy use of humankind in a year were each about $620\\,\\text{EJ}$, that is, $6.2 \\cdot 10^{20}\\,\\text{J}$, in the table, so they are of the same order of magnitude. In an energy chain, energy is conserved, but a large part turns into heat at every step and spreads into the surroundings. The values are rounded orders of magnitude, partly estimates.",
+      "model": "A litre of petrol was about $32\\,\\text{MJ}$ and a day's food about $10\\,\\text{MJ}$, so petrol contains about $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ times as much energy. The solar radiation reaching the Earth in an hour and the energy use of humankind in a year were each about $620\\,\\text{EJ}$, that is, $6.2 \\cdot 10^{20}\\,\\text{J}$, in the table, so they are of the same order of magnitude. In an energy chain, energy is conserved, but a large part turns into thermal energy at every step and spreads into the surroundings. The values are rounded orders of magnitude, partly estimates.",
       "criteria": [
         "I compared petrol and food using numbers and said by what factor they differ.",
         "I said that an hour of the Sun and a year of humankind are of the same order of magnitude.",
-        "I explained that the energy of the chain is conserved but ends up largely as heat.",
+        "I explained that the energy of the chain is conserved but ends up largely as thermal energy.",
         "I mentioned that the values are rounded orders of magnitude."
       ]
     },
@@ -256,13 +256,13 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A wind farm produces electrical energy of $360\\,\\text{GJ}$ in a day. In the grid, $9\\,\\text{GJ}$ turns into heat on the way, and consumers use $0.300\\,\\text{TJ}$ of electricity. The rest is stored in a battery. How many gigajoules are stored in the battery?",
+      "prompt": "A wind farm produces electrical energy of $360\\,\\text{GJ}$ in a day. In the grid, $9\\,\\text{GJ}$ turns into thermal energy on the way, and consumers use $0.300\\,\\text{TJ}$ of electricity. The rest is stored in a battery. How many gigajoules are stored in the battery?",
       "answer": 51,
       "unit": "GJ",
       "tolerance": 0.02,
       "hints": [
         "Where does all the electrical energy that was produced go? Energy does not disappear.",
-        "Write the conservation law: the energy produced equals the energy that turned into heat, the energy used by consumers and the stored energy, added together. Solve for the stored energy.",
+        "Write the conservation law: the energy produced equals the energy that turned into thermal energy, the energy used by consumers and the stored energy, added together. Solve for the stored energy.",
         "First convert to the same unit: $0.300\\,\\text{TJ} = 0.300 \\cdot 1000\\,\\text{GJ}$. Then $E_\\text{battery} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ}$."
       ],
       "mistakes": [
@@ -275,7 +275,7 @@
           "feedback": "You subtracted only the heat of the grid, $360\\,\\text{GJ} - 9\\,\\text{GJ}$. The energy used by consumers, $300\\,\\text{GJ}$, must also be subtracted to get the energy left for the battery."
         }
       ],
-      "solution": "**Given:** electrical energy produced $E_\\text{produced} = 360\\,\\text{GJ}$, heat in the grid $E_\\text{heat} = 9\\,\\text{GJ}$, consumers $E_\\text{use} = 0.300\\,\\text{TJ}$\n\n**Find:** energy stored in the battery $E_\\text{battery}$ in gigajoules\n\n**Principle:** Energy is conserved: the energy produced is divided into heat, the consumers and the battery. Nothing disappears, so the parts together equal the energy produced.\n\n**Formula:** $E_\\text{produced} = E_\\text{heat} + E_\\text{use} + E_\\text{battery}$, so $E_\\text{battery} = E_\\text{produced} - E_\\text{heat} - E_\\text{use}$\n\n**Conversions:** Replace the terajoule with its value: $0.300\\,\\text{TJ} = 0.300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Substitution:** $E_\\text{battery} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Answer:** $51\\,\\text{GJ}$, to the accuracy of a whole gigajoule: in a subtraction the least precise value decides the accuracy, and all the data ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ and $0.300\\,\\text{TJ} = 300\\,\\text{GJ}$) are known to the accuracy of a gigajoule.\n\n**Reasonableness:** A small part of the energy produced is left for the battery, and the sum is correct: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. The heat in the grid is the smallest item, which fits the fact that transmission losses are small."
+      "solution": "**Given:** electrical energy produced $E_\\text{produced} = 360\\,\\text{GJ}$, turned into thermal energy in the grid $E_\\text{heat} = 9\\,\\text{GJ}$, consumers $E_\\text{use} = 0.300\\,\\text{TJ}$\n\n**Find:** energy stored in the battery $E_\\text{battery}$ in gigajoules\n\n**Principle:** Energy is conserved: the energy produced is divided into thermal energy, the consumers and the battery. Nothing disappears, so the parts together equal the energy produced.\n\n**Formula:** $E_\\text{produced} = E_\\text{heat} + E_\\text{use} + E_\\text{battery}$, so $E_\\text{battery} = E_\\text{produced} - E_\\text{heat} - E_\\text{use}$\n\n**Conversions:** Replace the terajoule with its value: $0.300\\,\\text{TJ} = 0.300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Substitution:** $E_\\text{battery} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Answer:** $51\\,\\text{GJ}$, to the accuracy of a whole gigajoule: in a subtraction the least precise value decides the accuracy, and all the data ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ and $0.300\\,\\text{TJ} = 300\\,\\text{GJ}$) are known to the accuracy of a gigajoule.\n\n**Reasonableness:** A small part of the energy produced is left for the battery, and the sum is correct: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. The energy that turned into thermal energy in the grid is the smallest item, which fits the fact that transmission losses are small."
     },
     {
       "id": "harjoitukset",
@@ -292,16 +292,16 @@
       "choices": [
         {
           "text": "The energy of the battery has run out, so it no longer exists.",
-          "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and heat, and in the end everything has spread as heat into the surroundings."
+          "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and thermal energy, and in the end everything has spread as heat into the surroundings."
         },
         {
-          "text": "The $54\\,\\text{kJ}$ of the battery has turned into other forms in the phone, finally almost entirely into heat, and there is as much energy in total as at the start.",
-          "feedback": "Correct. Chemical energy turns into electricity, light, sound and heat, and in the end everything ends up as heat in the surroundings. Energy is conserved.",
+          "text": "The $54\\,\\text{kJ}$ of the battery has turned into other forms in the phone, finally almost entirely into thermal energy, and there is as much energy in total as at the start.",
+          "feedback": "Correct. Chemical energy turns into electricity, light, sound and thermal energy, and in the end everything ends up as heat in the surroundings. Energy is conserved.",
           "correct": true
         },
         {
           "text": "The energy of the battery has increased, because the phone gets warm.",
-          "feedback": "The phone getting warm is the energy of the battery turning into heat. Heat is not new energy; the chemical energy of the battery decreases by exactly as much as the thermal energy increases."
+          "feedback": "The phone getting warm is the energy of the battery turning into thermal energy. Thermal energy is not new energy; the chemical energy of the battery decreases by exactly as much as the thermal energy increases."
         }
       ]
     },
@@ -312,7 +312,7 @@
       "title": "2. Comparison",
       "prompt": "A lightning strike releases on average about $1.0\\,\\text{GJ}$ of energy, and the energy of a day's food is $10\\,\\text{MJ}$. How many days' food does the energy of a lightning strike correspond to?",
       "answer": 100,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02,
       "hints": [
         "Both energies must be in the same unit so that they can be compared.",
@@ -341,10 +341,10 @@
       "criteria": [
         "I say that energy does not disappear but changes form.",
         "I describe the chain: chemical energy, motion, heat.",
-        "I say that in the end a large part is heat that spreads into the surroundings.",
-        "I explain why the heat can no longer easily be put to use."
+        "I say that in the end a large part is thermal energy, which is transferred as heat to the surroundings and spreads out.",
+        "I explain why the thermal energy that has spread out can no longer easily be put to use."
       ],
-      "model": "In the engine of a car, the chemical energy of petrol turns into motion and heat. When driving, air resistance, the tyres and the brakes turn the energy of the motion into thermal energy, which spreads into the air and the road. So no energy disappears: there is the same amount of energy at the start and at the end of the chain. The tank becomes empty because the energy has changed into a form that can no longer be collected back and used. That is why new energy is needed all the time, for example from fuel or from the Sun."
+      "model": "In the engine of a car, the chemical energy of petrol turns into motion and thermal energy. When driving, air resistance, the tyres and the brakes turn the energy of the motion into thermal energy, which spreads into the air and the road. So no energy disappears: there is the same amount of energy at the start and at the end of the chain. The tank becomes empty because the energy has changed into a form that can no longer be collected back and used. That is why new energy is needed all the time, for example from fuel or from the Sun."
     },
     {
       "id": "lahtolippu",

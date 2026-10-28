@@ -6,9 +6,5 @@
   {
     "q": "Muunna $4{,}2\\,\\text{km}$ metreiksi ja $0{,}50\\,\\text{mm}$ mikrometreiksi.",
     "a": "$4{,}2\\,\\text{km} = 4{,}2\\cdot10^{3}\\,\\text{m} = 4200\\,\\text{m}$. $0{,}50\\,\\text{mm} = 0{,}50\\cdot10^{-3}\\,\\text{m} = 0{,}50\\cdot10^{3}\\,\\mu\\text{m} = 500\\,\\mu\\text{m}$."
-  },
-  {
-    "q": "Valo kulkee Auringosta Maahan ($1{,}0\\,\\text{AU}$) noin 8,3 minuutissa. Kuinka kauan se kulkee Auringosta Saturnukseen, joka on 9,5 AU:n päässä? Miksi vastaus ei ole 8,3 minuuttia?",
-    "a": "$9{,}5\\cdot 8{,}3\\,\\text{min} = 79\\,\\text{min}$ eli noin 1,3 tuntia. Valon nopeus on sama, mutta matka on 9,5-kertainen. Siksi myös aika on 9,5-kertainen. Aika on suoraan verrannollinen matkaan, $t = s : c$."
   }
 ]

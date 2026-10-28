@@ -9,6 +9,6 @@
   },
   {
     "q": "Taskulampun paristo luovuttaa $12\\,\\text{kJ}$, josta $3\\,\\text{kJ}$ muuttuu valoksi. Mihin loput $9\\,\\text{kJ}$ muuttuvat? Miksi energiaa ei ole kadonnut?",
-    "a": "Loput $9\\,\\text{kJ}$ muuttuvat lämmöksi. Energiaa ei ole kadonnut. Valon ja lämmön energia yhteensä on $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, eli sama kuin alussa."
+    "a": "Loput $9\\,\\text{kJ}$ muuttuvat lämpöenergiaksi. Energiaa ei ole kadonnut. Valon energia ja lämpöenergia yhteensä on $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, eli sama kuin alussa."
   }
 ]

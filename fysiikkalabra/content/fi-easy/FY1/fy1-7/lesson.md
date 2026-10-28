@@ -4,7 +4,7 @@
 
 ## Ydinajatus
 
-Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie. Tilavuuden SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta ovat eri painoisia, jos ne ovat eri ainetta. Kymmenen kuutiosenttimetrin mäntykuutio on kevyt. Alumiinikuutio on selvästi raskaampi. Rautakuutio on raskain.
+Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie. Tilavuuden SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta voivat olla eri painoisia, jos ne ovat eri ainetta. Kymmenen kuutiosenttimetrin mäntykuutio on kevyt. Alumiinikuutio on selvästi raskaampi. Rautakuutio on raskain.
 
 <svg data-fig="cubes" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva: kolme yhtä suurta kuutiota ovat mäntyä, alumiinia ja rautaa. Jokaisen kuution tilavuus on 10 cm³. Kuutiot ovat samankokoiset, mutta niiden massat ovat 5,0 g, 27 g ja 79 g. Vaakapylväät kuvaavat massaa, ja niiden pituudet ovat mittakaavassa. Rautakuution pylväs on yli kymmenen kertaa niin pitkä kuin mäntykuution pylväs." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy17-grain" width="14" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.3" fill="#a97a35"/><circle cx="10" cy="8" r="1" fill="#a97a35"/></pattern><linearGradient id="fy17-pine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -53,11 +53,11 @@ Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuva
 
 Mittaa saman aineen eri kokoisia paloja. Huomaat säännön: kaksinkertainen tilavuus antaa kaksinkertaisen massan. Puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen. Se tarkoittaa, että suhde $m : V$ pysyy samana. Tämä vakio suhde on aineen tiheys.
 
-Piirrä mittaustulokset koordinaatistoon. Vaaka-akselilla on tilavuus ja pystyakselilla massa. Pisteet ovat suoralla, joka kulkee origon kautta (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
+Piirrä mittaustulokset koordinaatistoon. Vaaka-akselilla on tilavuus ja pystyakselilla massa. Pisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
 
 ### Tiheys kertoo, mistä aineesta on kyse
 
-Jokaisella puhtaalla aineella on oma tiheytensä. Tiheys on siis kuin aineen sormenjälki. Mittaa ensin kappaleen massa ja tilavuus. Sitten voit verrata laskettua tiheyttä taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*). Lisäksi joillakin aineilla on lähes sama tiheys. Tulos kertoo siis vain, mitä aineita kappale voi olla.
+Jokaisella puhtaalla aineella on tietyssä olomuodossa ja lämpötilassa oma tiheytensä. Tiheys on siis kuin aineen sormenjälki. Mittaa ensin kappaleen massa ja tilavuus. Sitten voit verrata laskettua tiheyttä taulukkoarvoihin. Päättely ei ole varma. Mittauksissa on aina virhettä (luku *Mittaaminen ja mittauksen luotettavuus*). Lisäksi joillakin aineilla on lähes sama tiheys. Tulos kertoo siis vain, mitä aineita kappale voi olla.
 
 ## Kaava: Tiheys
 
@@ -213,7 +213,7 @@ Säännöllisen kappaleen tilavuuden voi laskea mitoista. Kuution tilavuus on $a
   <foreignObject x="295" y="331.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V_2 = 70\,\text{ml}$</div></foreignObject>
 </svg>
 
-Mittalasin lukema tunnetaan vain asteikon tarkkuudella. Kummankin lukeman virhe tulee mukaan erotukseen. Siksi kahden lukeman erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
+Mittalasin lukemassa on epävarmuutta. Sitä tulee esimerkiksi asteikon ja nestepinnan kaarevuuden lukemisesta. Kahden lukeman erotus on pienempi luku kuin lukemat itse. Erotukseen tulee kuitenkin kummankin lukeman epävarmuus. Siksi erotuksessa voi olla vähemmän merkitseviä numeroita kuin kummassakaan lukemassa. Tämä rajoittaa tiheyden tarkkuutta.
 
 ### Astian massa mittauksessa
 
@@ -221,7 +221,7 @@ Joskus nestettä mitataan astiassa. Vaaka näyttää silloin astian ja nesteen y
 
 ## Esimerkki
 
-Massiivisen rautapalkin pituus on 1,20 m. Sen poikkileikkaus on neliö, jonka sivu on 4,0 cm. Mikä on palkin massa?
+Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neliö, jonka sivu on 4,0 cm. Mikä on palkin massa?
 
 <!-- vaihe -->
 

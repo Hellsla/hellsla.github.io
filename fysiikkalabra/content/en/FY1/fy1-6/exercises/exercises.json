@@ -53,10 +53,11 @@
     {
       "id": "fy1-6-L2-02",
       "level": 2,
-      "text": "A stone is released from rest and hits the water at a speed of $54.0\\,\\text{km/h}$. Air resistance is ignored. How long did the stone fall?",
-      "answer": 1.529052,
+      "text": "The figure shows the $(t, v)$ graphs of bodies dropped from rest on two planets without an atmosphere. After how many seconds from the drop does the body on planet B have the same speed that the body on planet A has $5.0\\,\\text{s}$ after the drop?",
+      "figure": "fy1-6/two-planets",
+      "answer": 2.5,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy1-6-L2-03",

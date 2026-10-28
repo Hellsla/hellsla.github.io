@@ -5,8 +5,8 @@
 **Formula:** $\varepsilon = \dfrac{\Delta t}{t}$
 **Conversions:** Both $\Delta t$ and $t$ are in seconds, so the units cancel. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\varepsilon = \dfrac{0.2\,\text{s}}{4.0\,\text{s}} = 0.050 = 5.0\,\%$
-**Answer:** $5.0\,\%$, two significant figures like the time $4.0\,\text{s}$.
-**Reasonableness:** Four seconds is 20 times the uncertainty 0.2 s, so the uncertainty is about $\tfrac{1}{20} = 5\,\%$ of the measured time.
+**Answer:** $5\,\%$, one significant figure like the uncertainty $0.2\,\text{s}$ (calculator value $5.0\,\%$).
+**Reasonableness:** Four seconds is 20 times the uncertainty $0.2\,\text{s}$, so the uncertainty is about $\tfrac{1}{20} = 5\,\%$ of the measured time.
 
 ## fy1-8-L1-02
 **Given:** five measurements $12.3\,\text{s}$, $12.5\,\text{s}$, $12.2\,\text{s}$, $12.6\,\text{s}$ and $12.4\,\text{s}$
@@ -26,12 +26,12 @@
 **Conversions:** The distance is in metres and the time in seconds, so the result comes out directly in $\text{m/s}$.
 **Substitution:** $v = \dfrac{1.50\,\text{m}}{3.6\,\text{s}} = 0.4167\,\text{m/s}$
 **Answer:** $0.42\,\text{m/s}$, two significant figures like the time $3.6\,\text{s}$.
-**Reasonableness:** The result is of the order of an ordinary toy car, a little below walking pace ($1.4\,\text{m/s}$). Rough check: $0.4\,\text{m/s} \cdot 3.6\,\text{s} \approx 1.4\,\text{m}$, which is close to 1.5 metres.
+**Reasonableness:** The result is of the order of an ordinary toy car, less than a third of walking pace ($1.4\,\text{m/s}$). Rough check: $0.4\,\text{m/s} \cdot 3.6\,\text{s} \approx 1.4\,\text{m}$, which is close to 1.5 metres.
 
 ## fy1-8-L1-04
 **Given:** five measurements $24.1\,\text{cm}$, $24.4\,\text{cm}$, $24.0\,\text{cm}$, $24.3\,\text{cm}$ and $24.2\,\text{cm}$
 **Find:** the uncertainty $\Delta x$ in centimetres
-**Principle:** The uncertainty is estimated as half of the range. The measurements have varied between the largest and the smallest value, so the true value is probably in the middle, and half the range describes the spread around the mean.
+**Principle:** Here the uncertainty is estimated simply as half of the range: it describes the spread of the repeated measurements around the mean. Repeats do not reveal a systematic error.
 **Formula:** $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** $\Delta x = \dfrac{24.4\,\text{cm} - 24.0\,\text{cm}}{2} = \dfrac{0.4\,\text{cm}}{2} = 0.2\,\text{cm}$
@@ -50,13 +50,13 @@
 
 ## fy1-8-L2-01
 **Given:** five times $7.8\,\text{s}$, $8.2\,\text{s}$, $7.9\,\text{s}$, $8.1\,\text{s}$ and $8.0\,\text{s}$
-**Find:** the relative uncertainty $\varepsilon$ of the mean as a percentage
-**Principle:** First calculate the mean and the uncertainty as half of the range. The relative uncertainty is the uncertainty divided by the mean, so it tells the quality of the measurement regardless of the unit.
+**Find:** the relative uncertainty $\varepsilon$ of the result as a percentage, when the uncertainty is half of the range
+**Principle:** First calculate the mean and a simple estimate of the uncertainty, half of the range. The relative uncertainty is the uncertainty divided by the mean, so it tells the quality of the measurement regardless of the unit.
 **Formula:** $\bar{t} = \dfrac{\sum t_i}{5}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ and $\varepsilon = \dfrac{\Delta t}{\bar{t}}$
 **Conversions:** All times are in seconds, so no conversions are needed. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\bar{t} = \dfrac{40.0\,\text{s}}{5} = 8.0\,\text{s}$ and $\Delta t = \dfrac{8.2\,\text{s} - 7.8\,\text{s}}{2} = 0.2\,\text{s}$, so $\varepsilon = \dfrac{0.2\,\text{s}}{8.0\,\text{s}} = 0.025 = 2.5\,\%$
-**Answer:** $2.5\,\%$, two significant figures, because the mean $8.0\,\text{s}$ is given with two figures.
-**Reasonableness:** Eight seconds is 40 times the uncertainty 0.2 s, so the fraction is about $\tfrac{1}{40} = 2.5\,\%$. It is smaller than the 5.0 % of the 4.0 s measurement, as it should be for a longer time.
+**Answer:** $2.5\,\%$ (calculator value). The uncertainty $0.2\,\text{s}$ is a rough estimate with one figure, so in a report it is enough to round the relative uncertainty to one significant figure, about $3\,\%$. The answer field accepts both.
+**Reasonableness:** Eight seconds is 40 times the uncertainty $0.2\,\text{s}$, so the fraction is about $\tfrac{1}{40} = 2.5\,\%$. It is smaller than the $5.0\,\%$ of the $4.0\,\text{s}$ measurement, as it should be for a longer time.
 
 ## fy1-8-L2-02
 **Given:** speed $v = 1.5\,\text{m/s}$, distance $s = 3.0\,\text{m}$, timing uncertainty $\Delta t = 0.20\,\text{s}$
@@ -66,7 +66,7 @@
 **Conversions:** The distance is in metres and the speed in $\text{m/s}$, so the time comes out in seconds. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $t = \dfrac{3.0\,\text{m}}{1.5\,\text{m/s}} = 2.0\,\text{s}$, so $\varepsilon = \dfrac{0.20\,\text{s}}{2.0\,\text{s}} = 0.10 = 10\,\%$
 **Answer:** $10\,\%$, two significant figures like the distance and the speed.
-**Reasonableness:** In a two-second measurement, a reaction-time error of 0.20 s is a tenth of the total time. The result is twice the 5 % that a long measurement would reach, which is why the short distance is a poor choice.
+**Reasonableness:** In a two-second measurement, a reaction-time error of $0.20\,\text{s}$ is a tenth of the total time. The result is twice the $5\,\%$ that a long measurement would reach, which is why the short distance is a poor choice.
 
 ## fy1-8-L2-03
 **Given:** points $(t_1, s_1) = (2.0\,\text{s}, 90\,\text{cm})$ and $(t_2, s_2) = (8.0\,\text{s}, 342\,\text{cm})$
@@ -86,16 +86,16 @@
 **Conversions:** Both speeds are in $\text{m/s}$, so the units cancel. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\delta = \dfrac{\left| 0.50\,\text{m/s} - 0.42\,\text{m/s} \right|}{0.50\,\text{m/s}} = \dfrac{0.08}{0.50} = 0.16 = 16\,\%$
 **Answer:** $16\,\%$, two significant figures like the speeds.
-**Reasonableness:** The measured speed is below the prediction, and the difference 0.08 m/s is about a sixth of the prediction ($\tfrac{1}{6} \approx 17\,\%$). If the uncertainty of the speed were only a few per cent, the difference would be too large to be chance, and the hypothesis should be rejected or checked.
+**Reasonableness:** The measured speed is below the prediction, and the difference $0.08\,\text{m/s}$ is about a sixth of the prediction ($\tfrac{1}{6} \approx 17\,\%$). If the uncertainty of the speed were only a few per cent, the difference would be too large to be chance, and the hypothesis should be rejected or checked.
 
 ## fy1-8-L3-01
 **Given:** slope of the steepest line $v_\text{max} = 0.463\,\text{m/s}$, of the shallowest $v_\text{min} = 0.397\,\text{m/s}$
 **Find:** the uncertainty $\Delta v$ of the speed in $\text{m/s}$
-**Principle:** All lines that fit between the data points are possible, so the speed lies between the slopes of the steepest and the shallowest line. The best estimate is their mean, and the uncertainty is half of the difference.
+**Principle:** All lines that fit the data points within their uncertainties are plausible, so the speed is probably between the slopes of the steepest and the shallowest line. The best estimate is their mean, and the uncertainty is half of the difference.
 **Formula:** $v = \dfrac{v_\text{max} + v_\text{min}}{2}$ and $\Delta v = \dfrac{v_\text{max} - v_\text{min}}{2}$
 **Conversions:** The slopes are already in the same unit, $\text{m/s}$, so no conversions are needed.
 **Substitution:** $\Delta v = \dfrac{0.463\,\text{m/s} - 0.397\,\text{m/s}}{2} = \dfrac{0.066\,\text{m/s}}{2} = 0.033\,\text{m/s}$
-**Answer:** $0.033\,\text{m/s}$, two significant figures, because the difference of the slopes $0.066\,\text{m/s}$ comes from numbers with three figures. The speed is $v = 0.430 \pm 0.033\,\text{m/s}$.
+**Answer:** $0.033\,\text{m/s}$ (calculated value; the difference $0.066\,\text{m/s}$ is a two-figure number). As a stated uncertainty it is rounded to one significant figure, so the speed is $v = 0.43\,\text{m/s} \pm 0.03\,\text{m/s}$. The answer field accepts both.
 **Reasonableness:** The uncertainty is about $\tfrac{0.033}{0.430} \approx 8\,\%$ of the speed, which suits motion measured with a hand stopwatch. If the hypothesis predicted $0.50\,\text{m/s}$, it would be more than two uncertainties above the measured value: the interval is $0.397$–$0.463\,\text{m/s}$, and the prediction does not fit in it.
 
 ## fy1-8-L3-02
@@ -104,9 +104,9 @@
 **Principle:** The hypothesis "the temperature falls steadily" predicts the same rate of fall everywhere. So calculate the rate of fall for two periods and compare them. A temperature change is the same in kelvins and in degrees Celsius.
 **Formula:** $r = \dfrac{T_\text{start} - T_\text{end}}{\Delta t}$ and $\Delta r = r_1 - r_2$
 **Conversions:** A fall in temperature in degrees Celsius equals the fall in kelvins, so a change of $1\,{}^\circ\text{C}$ is $1\,\text{K}$ and no conversion is needed.
-**Substitution:** $r_1 = \dfrac{80.0\,\text{K} - 68.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,\text{K} - 47.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $\Delta r = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
-**Answer:** $1.4\,\text{K/min}$, two significant figures, because the temperature differences are 12.0 K and 5.0 K.
-**Reasonableness:** The first rate of fall is more than twice the last one, and this difference cannot come from a reading error of 0.1 K alone. So the hypothesis of a steady fall does not hold: the temperature falls more slowly the closer the water is to room temperature.
+**Substitution:** $r_1 = \dfrac{80.0\,{}^\circ\text{C} - 68.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{12.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,{}^\circ\text{C} - 47.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{5.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $\Delta r = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
+**Answer:** $1.4\,\text{K/min}$, two significant figures, because the temperature differences are $12.0\,\text{K}$ and $5.0\,\text{K}$.
+**Reasonableness:** The first rate of fall is more than twice the last one, and this difference cannot come from a reading error of $0.1\,\text{K}$ alone. So the hypothesis of a steady fall does not hold: the temperature falls more slowly the closer the water is to room temperature.
 
 ## fy1-8-L3-03
 **Given:** total time $60\,\text{min}$, preparation $12\,\text{min}$, number of distances $N = 6$, one repeat $2.0\,\text{min}$

@@ -6,9 +6,9 @@
 ### Energia muuttuu muodosta toiseen
 Energia on suure. Sen avulla kuvataan, mitä systeemissä voi tapahtua. Energia esiintyy eri muodoissa. Muotoja ovat esimerkiksi mekaaninen energia, kemiallinen energia, sähköenergia, lämpöenergia, säteily ja ydinenergia (luku *Energialajit ja energian säilyminen*). Arjessa energia on harvoin vain yhdessä muodossa. Se muuttuu muodosta toiseen monessa vaiheessa. Vaiheet muodostavat ketjun.
 
-Pyöräilijän ketju alkaa Auringosta. Kasvi sitoo säteilyenergian kemialliseksi energiaksi. Kemiallinen energia päätyy kauraan ja aamupuuroon. Lihakset muuttavat osan puuron kemiallisesta energiasta pyörän liikkeeksi. Kun pysähdyt, liike muuttuu lopulta lämmöksi renkaisiin, jarruihin ja ilmaan.
+Pyöräilijän ketju alkaa Auringosta. Kasvi sitoo säteilyenergian kemialliseksi energiaksi. Kemiallinen energia päätyy kauraan ja aamupuuroon. Lihakset muuttavat osan puuron kemiallisesta energiasta pyörän liikkeeksi. Kun pysähdyt, liike-energia muuttuu lopulta renkaiden, jarrujen ja ilman lämpöenergiaksi.
 
-<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa. Kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan. Lihakset muuttavat osan siitä pyörän liikkeeksi, ja loppu on lämpöä. Joka vaiheessa osa energiasta muuttuu lämmöksi ympäristöön (oranssit nuolet alas). Lopuksi myös liike muuttuu lämmöksi. Nuolten pituus ei ole mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva: energiaketju Auringosta pyöräilyyn. Aurinko lähettää säteilyenergiaa. Kasvi (kaura) sitoo sen kemialliseksi energiaksi ruokaan. Lihakset muuttavat osan siitä pyörän liikkeeksi. Loppu muuttuu lämpöenergiaksi. Joka vaiheessa osa energiasta siirtyy lämpönä ympäristöön (oranssit nuolet alas). Lopuksi myös liike-energia muuttuu lämpöenergiaksi. Nuolten pituus ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="106" y1="100" x2="120" y2="100" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="97" y1="122" x2="107" y2="132" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="75" y1="131" x2="75" y2="145" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
@@ -64,9 +64,9 @@ Pyöräilijän ketju alkaa Auringosta. Kasvi sitoo säteilyenergian kemialliseks
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia hajaantuu ympäristöön. Energiaa ei silti katoa. Luvussa *Energialajit ja energian säilyminen* todettiin, että ketjun alussa ja lopussa energiaa on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämmöksi. Osat ovat yhteensä yhtä paljon kuin alussa. Lämpö hajaantuu niin laajalle, ettei sitä voi enää käyttää hyödyksi. Siksi energia tuntuu "kuluvan loppuun".
+Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa. Luvussa *Energialajit ja energian säilyminen* todettiin, että ketjun alussa ja lopussa energiaa on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi. Osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä voi enää käyttää hyödyksi. Siksi energia tuntuu "kuluvan loppuun".
 
-<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämmöksi 600 kJ. Nuolten leveys on verrannollinen energiaan. Haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
+<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta on 800 kJ. Lihakset muuttavat siitä liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan. Haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
   <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
   <path d="M232,112 L400,112 L400,98 L452,124 L400,150 L400,136 L232,136 Z" fill="#ffc078" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
   <path d="M232,136 L304,136 L304,262 L326,262 L268,302 L210,262 L232,262 Z" fill="#f2a69c" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
@@ -141,7 +141,7 @@ Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymm
 Energian määrä ei vielä kerro, kuinka nopeasti energiaa käytetään. Sitä kuvataan seuraavassa luvussa *Teho*.
 
 ## Esimerkki
-Pyöräilijä syö banaanin. Banaanin kemiallinen energia on $0{,}45\,\text{MJ}$. Lihakset muuttavat siitä pyöräilyn liikkeeksi $110\,\text{kJ}$. Loppu muuttuu lämmöksi. Kuinka paljon lämpöenergiaa lihaksiin ja kehoon syntyy? Anna vastaus kilojouleina.
+Pyöräilijä syö banaanin. Banaanin kemiallinen energia on $0{,}45\,\text{MJ}$. Lihakset muuttavat siitä pyöräilyn liikkeeksi $110\,\text{kJ}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lihaksissa ja kehossa lämpöenergiaksi? Anna vastaus kilojouleina.
 
 <!-- vaihe -->
 
@@ -149,7 +149,7 @@ Pyöräilijä syö banaanin. Banaanin kemiallinen energia on $0{,}45\,\text{MJ}$
 
 <!-- vaihe -->
 
-**Periaate.** Energia säilyy. Banaanin kemiallinen energia ei katoa. Se muuttuu kokonaan liikkeeksi ja lämmöksi. Alun energia on siis yhtä suuri kuin liikkeen ja lämmön energioiden summa.
+**Periaate.** Energia säilyy. Banaanin kemiallinen energia ei katoa. Se muuttuu kokonaan liikkeeksi ja lämpöenergiaksi. Alun energia on siis yhtä suuri kuin liikkeeksi ja lämpöenergiaksi muuttuneiden energioiden summa.
 
 <!-- vaihe -->
 
@@ -178,11 +178,11 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaa syntyy $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen. Alkuenergia $0{,}45\,\text{MJ}$ ja liike $110\,\text{kJ}$ on nimittäin annettu kahdella numerolla.
+**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen. Alkuenergia $0{,}45\,\text{MJ}$ ja liike $110\,\text{kJ}$ on nimittäin annettu kahdella numerolla.
 
 <!-- vaihe -->
 
-**Järkevyys.** Lämpöä syntyy enemmän kuin liikettä. Näin on ihmisen lihasten toiminnassa yleensä: keho lämpenee pyöräillessä. Summa tarkistuu: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$. Se on sama kuin alussa.
+**Järkevyys.** Lämpöenergiaksi muuttuu enemmän energiaa kuin liikkeeksi. Näin on ihmisen lihasten toiminnassa yleensä: keho lämpenee pyöräillessä. Summa tarkistuu: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$. Se on sama kuin alussa.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että energia kuluu loppuun, kun vauhti hidastuu tai akku tyhjenee. Energia ei kulu eikä katoa. Se muuttaa muotoa. Suuri osa päätyy lämpönä ympäristöön. Sitä ei voi kerätä sieltä takaisin hyödyksi.
@@ -190,8 +190,8 @@ Moni ajattelee, että energia kuluu loppuun, kun vauhti hidastuu tai akku tyhjen
 Toinen virhe on laskea yhteen energioita eri yksiköissä. Esimerkiksi $1{,}5\,\text{MJ} + 300\,\text{kJ} = 301{,}5$ on väärin. Etuliite on kerroin. Muunna energiat siis ensin samaan yksikköön.
 
 ## Tiivistelmä
-- Energia muuttuu ketjussa muodosta toiseen, esimerkiksi säteily, kemiallinen energia, liike ja lämpö.
-- Energia säilyy (luku *Energialajit ja energian säilyminen*). Osa muuttuu joka vaiheessa lämmöksi, ja lämpö hajaantuu ympäristöön.
+- Energia muuttuu ketjussa muodosta toiseen, esimerkiksi säteily, kemiallinen energia, liike-energia ja lämpöenergia.
+- Energia säilyy (luku *Energialajit ja energian säilyminen*). Osa muuttuu joka vaiheessa lämpöenergiaksi, ja lämpöenergia siirtyy lämpönä ympäristöön.
 - Energian yksikkö on joule (J). Etuliitteet: $1\,\text{kJ} = 1000\,\text{J}$, $1\,\text{MJ} = 1000\,\text{kJ}$, $1\,\text{GJ} = 1000\,\text{MJ}$ ja $1\,\text{TJ} = 1000\,\text{GJ}$.
 - Etuliite korvataan arvollaan: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J}$. Energioita lasketaan yhteen samassa yksikössä.
 - Arjen energiat ovat jouleista terajouleihin. Vertailu tehdään kymmenpotensseina.

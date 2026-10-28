@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 81887d1ec336b051
+CONTENT-HASH: eb8f1d1528f6cb4e
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -18,3 +18,4 @@ CONTENT-HASH: 81887d1ec336b051
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): terms.md vocabulary (form of energy, isolated system, thermal energy, radiant energy), step labels, button names in *asterisks* against lang/en.json sim labels (*Start*, *Moment $t$*, *Friction*, *Initial height $h_0$*, *Speed*), choice/feedback pairing and correct options unchanged, hints and mistakes complete.
 - Update 2026-10-28: experiment option words (`values`) translated to match the English sim labels; re-hashed.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson, inquiry, exit ticket and figure texts (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).

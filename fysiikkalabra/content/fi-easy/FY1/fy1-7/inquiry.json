@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "contribution": "Massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on aineen tiheys. Kaava m = ρV on FY1:n ensimmäinen lineaarinen malli. Siitä ratkaistaan massa, tilavuus tai tiheys. Tiheyden voi myös lukea kulmakertoimena mittauksista, vaikka astian massa olisi mukana.",
+  "contribution": "Massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on aineen tiheys. Kaava m = ρV on lineaarinen malli. Siitä ratkaistaan massa, tilavuus tai tiheys. Tiheyden voi myös lukea kulmakertoimena mittauksista, vaikka astian massa olisi mukana.",
   "learn": [
     "Osaat laskea kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
     "Osaat selittää, miksi massa on suoraan verrannollinen tilavuuteen. Osaat myös selittää, mitä suoran kulmakerroin kertoo.",
     "Osaat määrittää aineen tiheyden mittaustuloksista. Osaat tunnistaa aineen taulukon avulla."
   ],
   "prior": [
-    "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",
+    "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta. Suoran kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",
     "Mittaustuloksissa on aina virhettä. Tulos ilmoitetaan sopivalla määrällä merkitseviä numeroita (luku *Mittaaminen ja mittauksen luotettavuus*)",
     "Suureet lasketaan SI-yksiköissä. Yksiköt muunnetaan kymmenpotenssien avulla (luku *Suureet, yksiköt ja SI-järjestelmä*)"
   ],
@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Kertaa: suoraan verrannollisuus",
       "optional": true,
-      "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet ovat suoralla, joka kulkee origon kautta. Mitä tämä kertoo suureiden riippuvuudesta?",
+      "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta. Mitä tämä kertoo suureiden riippuvuudesta?",
       "choices": [
         {
           "text": "Suure $y$ on suoraan verrannollinen suureeseen $x$. Suhde $y : x$ on vakio, ja se on suoran kulmakerroin.",
@@ -315,10 +315,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Tiheys on aineen ominaisuus",
+      "prompt": "Rautakuution tilavuus kaksinkertaistuu. Aine pysyy rautana. Mitä tapahtuu kuution massalle ja tiheydelle?",
+      "choices": [
+        {
+          "text": "Massa kaksinkertaistuu ja tiheys pysyy samana.",
+          "feedback": "Oikein. Massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$. Kaksinkertainen tilavuus tarkoittaa siis kaksinkertaista massaa. Tiheys $\\rho = m : V$ ei muutu, koska suhde pysyy samana. Tiheys on raudan ominaisuus.",
+          "correct": true
+        },
+        {
+          "text": "Massa ja tiheys kaksinkertaistuvat.",
+          "feedback": "Massa kaksinkertaistuu, mutta tiheys ei. Jos sekä massa että tilavuus kaksinkertaistuvat, suhde $m : V$ pysyy samana. Tiheys ei kerro kappaleen kokoa. Se kertoo, kuinka paljon massaa on yhdessä tilavuusyksikössä."
+        },
+        {
+          "text": "Massa pysyy samana ja tiheys puolittuu.",
+          "feedback": "Massa ei pysy samana. Kaksinkertaisessa rautakuutiossa on kaksi kertaa niin paljon rautaa, joten sen massa kaksinkertaistuu. Tiheys ei puolitu, koska suhde $m : V$ pysyy samana."
+        },
+        {
+          "text": "Massa kaksinkertaistuu ja tiheys puolittuu.",
+          "feedback": "Tiheys ei puolitu. Tilavuus kaksinkertaistuu ja massa kaksinkertaistuu. Silloin suhde $\\rho = m : V$ pysyy samana. Tiheys pienenisi vain, jos tilavuus kasvaisi mutta massa ei kasvaisi."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskutehtävä",
+      "title": "3. Laskutehtävä",
       "prompt": "Mäntykuution särmä on $20{,}0\\,\\text{cm}$ ja männyn tiheys $500\\,\\text{kg/m}^3$. Kuinka suuri on kuution massa? Vastaa kilogrammoina.",
       "answer": 4.0,
       "unit": "kg",
@@ -344,7 +370,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja perustele",
+      "title": "4. Selitä ja perustele",
       "optional": true,
       "prompt": "Opiskelija mittaa tuntemattoman metallipalan massan ja tilavuuden. Hän laskee tiheydeksi $8{,}9\\,\\text{g/cm}^3$ ja sanoo: \"Pala on kuparia.\" Selitä, miksi tiheys on hyvä tapa tunnistaa aine. Selitä myös, miksi päätelmä ei silti ole täysin varma.",
       "criteria": [
@@ -359,7 +385,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
     }
   ]
 }

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5a93a3131bd816ee
+CONTENT-HASH: de18853041012696
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -13,3 +13,4 @@ CONTENT-HASH: 5a93a3131bd816ee
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Naturalness for 16–18-year-olds, glossary terms (rated power, average power, base load, controllable, weather-dependent), step labels (**Given:** … **Reasonableness:**), stage words, choice/feedback correspondence.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked renewable wording (lesson.md) and the wind-turbine solution (inquiry.json) against the new Finnish.

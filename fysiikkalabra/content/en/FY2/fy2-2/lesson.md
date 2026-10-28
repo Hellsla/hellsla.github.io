@@ -6,9 +6,9 @@
 ### Energy changes from one form to another
 Energy is a quantity that describes what can happen in a system. It appears in different forms, such as mechanical, chemical, electrical, thermal energy, radiation and nuclear energy (chapter *Forms of energy and conservation of energy*). In everyday life, energy seldom stays in one form: it changes from one form to another in a chain of steps.
 
-The cyclist's chain begins with the Sun. Radiation energy is stored in a plant as chemical energy, and it ends up in oats and in morning porridge. The muscles turn part of the chemical energy of the porridge into the motion of the bicycle, and when you stop, the motion finally turns into heat in the tyres, the brakes and the air.
+The cyclist's chain begins with the Sun. Radiation energy is stored in a plant as chemical energy, and it ends up in oats and in morning porridge. The muscles turn part of the chemical energy of the porridge into the motion of the bicycle, and when you stop, the kinetic energy finally turns into thermal energy of the tyres, the brakes and the air.
 
-<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Diagram: an energy chain from the Sun to cycling. The Sun sends radiation energy, a plant (oats) stores it as chemical energy in food, the muscles turn part of it into the motion of the bicycle and the rest is heat. At every step part of the energy turns into heat in the surroundings (orange arrows pointing down), and finally the motion also turns into heat. The lengths of the arrows are not to scale." style="max-width:100%;font-size:24px">
+<svg data-fig="ketju" viewBox="0 0 600 370" role="img" aria-label="Diagram: the energy chain from the Sun to cycling. The Sun emits radiant energy, the plant (oats) stores it as chemical energy in food, the muscles turn part of it into the motion of the bicycle, and the rest turns into thermal energy. At every step part of the energy is transferred as heat to the surroundings (orange arrows pointing down), and finally the kinetic energy also turns into thermal energy. The lengths of the arrows are not to scale." style="max-width:100%;font-size:24px">
   <line x1="106" y1="100" x2="120" y2="100" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="97" y1="122" x2="107" y2="132" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
   <line x1="75" y1="131" x2="75" y2="145" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
@@ -64,9 +64,9 @@ The cyclist's chain begins with the Sun. Radiation energy is stored in a plant a
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-At every step, part of the energy turns into thermal energy, which spreads into the surroundings. Even so, no energy disappears: as stated in chapter *Forms of energy and conservation of energy*, there is the same amount of energy at the start and at the end of the chain. In the example in the figure, the $800\,\text{kJ}$ of the porridge is divided into motion and heat, and the parts add up to the same amount as at the start. Heat spreads so widely that it can no longer be put to use, and this is why energy seems to "run out".
+At every step, part of the energy turns into thermal energy, which is transferred as heat to the surroundings and spreads out. Even so, no energy disappears: as stated in chapter *Forms of energy and conservation of energy*, there is the same amount of energy at the start and at the end of the chain. In the example in the figure, the $800\,\text{kJ}$ of the porridge is divided into motion and thermal energy, and the parts add up to the same amount as at the start. Thermal energy spreads so widely that it can no longer be put to use, and this is why energy seems to "run out".
 
-<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Scale diagram (example): of the 800 kJ of chemical energy in a cyclist&#x27;s morning porridge, the muscles turn 200 kJ into motion and 600 kJ into heat. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow." style="max-width:100%;font-size:24px">
+<svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Scale diagram (example): of the 800 kJ of chemical energy in the cyclist&#x27;s morning porridge, the muscles turn 200 kJ into motion and 600 kJ into thermal energy. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow." style="max-width:100%;font-size:24px">
   <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
   <path d="M232,112 L400,112 L400,98 L452,124 L400,150 L400,136 L232,136 Z" fill="#ffc078" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
   <path d="M232,136 L304,136 L304,262 L326,262 L268,302 L210,262 L232,262 Z" fill="#f2a69c" stroke="#c92a2a" stroke-width="2" stroke-linejoin="round"/>
@@ -141,7 +141,7 @@ The orders of magnitude of everyday energies are collected in the figure, where 
 The amount of energy does not yet tell how fast the energy is used. That is described in the next chapter, *Power*.
 
 ## Worked example
-A cyclist eats a banana whose chemical energy is $0.45\,\text{MJ}$. The muscles turn $110\,\text{kJ}$ of it into the motion of cycling, and the rest turns into heat. How much thermal energy is produced in the muscles and the body? Give the answer in kilojoules.
+A cyclist eats a banana whose chemical energy is $0.45\,\text{MJ}$. The muscles turn $110\,\text{kJ}$ of it into the motion of cycling, and the rest turns into thermal energy. How much energy turns into thermal energy in the muscles and the body? Give the answer in kilojoules.
 
 <!-- vaihe -->
 
@@ -149,7 +149,7 @@ A cyclist eats a banana whose chemical energy is $0.45\,\text{MJ}$. The muscles 
 
 <!-- vaihe -->
 
-**Principle.** Energy is conserved: the chemical energy of the banana does not disappear but turns entirely into motion and heat. So the energy at the start is equal to the sum of the energies of the motion and the heat.
+**Principle.** Energy is conserved: the chemical energy of the banana does not disappear but turns entirely into motion and thermal energy. So the energy at the start is equal to the sum of the energies that turned into motion and thermal energy.
 
 <!-- vaihe -->
 
@@ -182,7 +182,7 @@ E_\text{heat} &= E_\text{start} - E_\text{motion} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** More heat is produced than motion, as is usual in human muscles: the body warms up when you cycle. The sum checks out: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$, which is the same as at the start.
+**Reasonableness.** More energy turns into thermal energy than into motion, as is usual in human muscles: the body warms up when you cycle. The sum checks out: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$, which is the same as at the start.
 
 ## Common misconception
 Many people think that energy runs out when the speed slows down or the battery goes flat. Energy does not run out and does not disappear. It changes form, and a large part ends up as heat in the surroundings, from where it cannot be collected back for use.
@@ -190,8 +190,8 @@ Many people think that energy runs out when the speed slows down or the battery 
 Another mistake is to add energies in different units, for example $1.5\,\text{MJ} + 300\,\text{kJ} = 301.5$. A prefix is a multiplier, so the energies are first converted to the same unit.
 
 ## Summary
-- Energy changes from one form to another in a chain, for example radiation, chemical energy, motion and heat.
-- Energy is conserved (chapter *Forms of energy and conservation of energy*). At every step part of it turns into heat, which spreads into the surroundings.
+- Energy changes from one form to another in a chain, for example radiation, chemical energy, kinetic energy and thermal energy.
+- Energy is conserved (chapter *Forms of energy and conservation of energy*). At every step part of it turns into thermal energy, which is transferred as heat to the surroundings.
 - The unit of energy is the joule (J). Prefixes: $1\,\text{kJ} = 1000\,\text{J}$, $1\,\text{MJ} = 1000\,\text{kJ}$, $1\,\text{GJ} = 1000\,\text{MJ}$ and $1\,\text{TJ} = 1000\,\text{GJ}$.
 - A prefix is replaced by its value: $2.5\,\text{kJ} = 2.5 \cdot 1000\,\text{J}$. Energies are added in the same unit.
 - Everyday energies range from joules to terajoules, and they are compared using powers of ten.

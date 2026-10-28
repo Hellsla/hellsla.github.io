@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4f04fc51a6a014b1
+CONTENT-HASH: 97249688487855fc
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -12,3 +12,4 @@ CONTENT-HASH: 4f04fc51a6a014b1
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json task texts and solutions.md model answers for natural English, consistent terms (Given/Find/…, Model answer, sledge, torch), same demand and steps as the Finnish.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed exercise texts and solutions (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).

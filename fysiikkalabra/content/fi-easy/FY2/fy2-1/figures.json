@@ -9,7 +9,7 @@
  "säteily-": "säteily-",
  "sähkö-": "sähkö-",
  "ydin-": "ydin-",
- "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi. Siksi lämpönuoli on leveämpi. Kuva on kaavamainen. Nuolten leveys ei ole mittakaavassa.",
+ "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpöenergian nuoli on leveämpi. Kuva on kaavamainen. Nuolten leveys ei ole mittakaavassa.",
  "paristo": "paristo",
  "lamppu": "lamppu",
  "valo": "valo",

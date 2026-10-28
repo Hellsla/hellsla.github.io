@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1fb57883f3c8d052
+CONTENT-HASH: 0c12449dd247c7d9
 
 ## Blocking
 (none left; list what you fixed under Fixed)
@@ -14,3 +14,4 @@ CONTENT-HASH: 1fb57883f3c8d052
 
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi: short sentences, terms kept (siirtohäviö, hyötysuhde, kaukolämpö), no dropped steps, hints or feedback; options and feedback still match, correct choices unambiguous; Annettu/Kysytty… labels unchanged.
+- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) against the new Finnish.

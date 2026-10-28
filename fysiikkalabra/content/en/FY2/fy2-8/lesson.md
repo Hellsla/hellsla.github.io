@@ -56,7 +56,7 @@ The problem is that the effect is getting stronger. When people add carbon dioxi
 The greenhouse effect is treated with calculations on the FY3 course in the chapter *Heat transfer, energy balance and climate change*. Here it is enough to understand what the gases do to radiation and where the extra gases come from.
 
 ### Fuels link energy and climate
-A fossil fuel, such as coal, oil or natural gas, is chemical energy from ancient living things: coal formed mostly from plants, oil and natural gas from marine plankton. When a fuel burns, its carbon combines with oxygen: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. The chemical energy is released as heat (chapter *Fuels and heat of combustion E = Hm*), and the carbon dioxide leaves with the flue gases into the atmosphere. The more energy we get by burning, the more carbon dioxide is released.
+A fossil fuel, such as coal, oil or natural gas, is chemical energy from ancient living things: coal formed mostly from plants, oil and natural gas from marine plankton. When such a carbon-containing fuel burns completely, its carbon combines with oxygen: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. The chemical energy is released as heat (chapter *Fuels and heat of combustion E = Hm*), and the carbon dioxide leaves with the flue gases into the atmosphere. The more energy we get by burning carbon-containing fuels, the more carbon dioxide is released. Not every fuel contains carbon: when hydrogen burns, only water is formed.
 
 The carbon of a fossil fuel has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of biomass, for example wood, was bound into plants only during the last few decades. Even so, burning biomass is not emission-free: the carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transport cause their own emissions.
 
@@ -197,6 +197,6 @@ m &= e \cdot E \\
 
 ## Summary
 - Greenhouse gases let most of the Sun's radiation through but slow down the escape of thermal radiation from the ground. The natural greenhouse effect raises the mean temperature from about $-18\,{}^\circ\text{C}$ to about $+15\,{}^\circ\text{C}$.
-- Burning fuels adds carbon dioxide to the atmosphere, strengthens the greenhouse effect and leads to climate change.
+- Burning fossil fuels adds carbon dioxide to the atmosphere, strengthens the greenhouse effect and leads to climate change.
 - The emission is the emission factor times the energy: $m = e \cdot E$. Ways of producing energy are compared by life-cycle emission factors, which range from about $12\,\text{g/kWh}$ (nuclear and wind power) to about $820\,\text{g/kWh}$ (coal).
 - The emission factor does not tell everything: land use, transport, waste, safety and the availability of electricity are weighed separately when looking for a sustainable energy economy.

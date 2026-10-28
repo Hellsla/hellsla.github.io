@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Energialle tulee yksikkö joule ja etuliitteet kJ, MJ, GJ ja TJ. Energian säilyminen ja muuntuminen näytetään ketjuina, joissa osa energiasta muuttuu joka vaiheessa lämmöksi. Arjen ja yhteiskunnan energioita verrataan suuruusluokittain tikapuilla.",
+  "contribution": "Energialle tulee yksikkö joule ja etuliitteet kJ, MJ, GJ ja TJ. Energian säilyminen ja muuntuminen näytetään ketjuina, joissa osa energiasta muuttuu joka vaiheessa lämpöenergiaksi. Arjen ja yhteiskunnan energioita verrataan suuruusluokittain tikapuilla.",
   "learn": [
     "Osaat selittää energiaketjun ja sen, mihin energia lopulta muuttuu.",
     "Osaat ilmoittaa energian jouleina ja etuliitteillä kJ, MJ, GJ ja TJ.",
@@ -33,7 +33,7 @@
         },
         {
           "text": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä pääosin lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin ennen.",
-          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: liike-energiasta tulee lämpöä, joka hajaantuu ympäristöön. Tänään tarkastellaan tällaisia ketjuja. Lisäksi lasketaan energiaa jouleina.",
+          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: liike-energiasta tulee lämpöenergiaa. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja. Lisäksi lasketaan energiaa jouleina.",
           "correct": true
         },
         {
@@ -56,7 +56,7 @@
       "choices": [
         {
           "text": "Päivän ruoka, koska ihminen jaksaa sillä toimia koko päivän.",
-          "feedback": "Taulukkoarvot kumoavat tämän: päivän ruoka on noin $10\\,\\text{MJ}$ ja litra bensiiniä noin $32\\,\\text{MJ}$. Jaksaminen ei kerro energian määrästä. Keho nimittäin muuttaa suuren osan ruoan energiasta lämmöksi."
+          "feedback": "Taulukkoarvot kumoavat tämän: päivän ruoka on noin $10\\,\\text{MJ}$ ja litra bensiiniä noin $32\\,\\text{MJ}$. Jaksaminen ei kerro energian määrästä. Keho nimittäin muuttaa suuren osan ruoan energiasta lämpöenergiaksi."
         },
         {
           "text": "Litra bensiiniä, noin kolminkertaisesti.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "Yhtä paljon, koska kummallakin voi liikkua suunnilleen saman matkan.",
-          "feedback": "Arvot kumoavat tämän: $32\\,\\text{MJ}$ ja $10\\,\\text{MJ}$. Matka ei kerro energian määrästä. Polttoaineen energiasta suuri osa muuttuu auton moottorissa lämmöksi."
+          "feedback": "Arvot kumoavat tämän: $32\\,\\text{MJ}$ ja $10\\,\\text{MJ}$. Matka ei kerro energian määrästä. Polttoaineen energiasta suuri osa muuttuu auton moottorissa lämpöenergiaksi."
         }
       ]
     },
@@ -171,14 +171,14 @@
         "mistakes": [
           {
             "value": 60,
-            "feedback": "Laskit vain voimalaitoksen lämmön, $100\\,\\text{MJ} - 40\\,\\text{MJ}$. Myös verkossa ja vedenkeittimessä energiaa muuttuu lämmöksi. Koko ketjun osuus on alkuenergian ja veteen jääneen energian erotus."
+            "feedback": "Laskit vain sen energian, joka muuttui voimalaitoksessa lämpöenergiaksi: $100\\,\\text{MJ} - 40\\,\\text{MJ}$. Myös verkossa ja vedenkeittimessä energiaa muuttuu lämpöenergiaksi. Koko ketjun osuus on alkuenergian ja veteen jääneen energian erotus."
           },
           {
             "value": 34,
             "feedback": "$34\\,\\text{MJ}$ on veteen siirtynyt energia. Se ei ole muualle päätynyt energia. Kysytty on loput, kun alussa oli $100\\,\\text{MJ}$."
           }
         ],
-        "solution": "**Annettu:** polttoaineen kemiallinen energia $E_\\text{alussa} = 100\\,\\text{MJ}$ ja veteen siirtynyt energia $E_\\text{vesi} = 34\\,\\text{MJ}$\n\n**Kysytty:** muualle kuin veteen päätynyt energia $E_\\text{muu}$ megajouleina\n\n**Periaate:** Energia säilyy. Alkuenergia jakautuu siis kokonaan veteen ja muualle. Muu energia on lämpöä. Se syntyi voimalaitoksessa, verkossa ja keittimessä ja hajaantui ympäristöön.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{vesi} + E_\\text{muu}$, josta $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$\n\n**Muunnokset:** Ei tarvita. Kaikki energiat on annettu megajouleina.\n\n**Sijoitus:** $E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Vastaus:** $66\\,\\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $34\\,\\text{MJ}$.\n\n**Järkevyys:** Vaiheiden lämmöt ovat $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ ja $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$. Ne tekevät yhteensä $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. Tämä on enemmän kuin veteen jäänyt energia. Voimalaitoksissa niin on."
+        "solution": "**Annettu:** polttoaineen kemiallinen energia $E_\\text{alussa} = 100\\,\\text{MJ}$ ja veteen siirtynyt energia $E_\\text{vesi} = 34\\,\\text{MJ}$\n\n**Kysytty:** muualle kuin veteen päätynyt energia $E_\\text{muu}$ megajouleina\n\n**Periaate:** Energia säilyy. Alkuenergia jakautuu siis kokonaan veteen ja muualle. Muu energia muuttui lämpöenergiaksi voimalaitoksessa, verkossa ja keittimessä. Se siirtyi lämpönä ympäristöön.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{vesi} + E_\\text{muu}$, josta $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$\n\n**Muunnokset:** Ei tarvita. Kaikki energiat on annettu megajouleina.\n\n**Sijoitus:** $E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Vastaus:** $66\\,\\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $34\\,\\text{MJ}$.\n\n**Järkevyys:** Vaiheiden lämmöt ovat $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ ja $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$. Ne tekevät yhteensä $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. Tämä on enemmän kuin veteen jäänyt energia. Voimalaitoksissa niin on."
       }
     },
     {
@@ -191,11 +191,11 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi ja energiaketjun perusteella vastaukset kolmeen kysymykseen. Kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Miten Auringosta tuleva tunnin energia vertautui ihmiskunnan vuoden energiankäyttöön? Mihin muotoon ketjun energia lopulta päätyy?",
-      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Suuri osa muuttuu kuitenkin joka vaiheessa lämmöksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
+      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Suuri osa muuttuu kuitenkin joka vaiheessa lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
       "criteria": [
         "Vertasin bensiiniä ja ruokaa luvuilla ja sanoin, kuinka moninkertainen ero on.",
         "Sanoin, että Auringon tunti ja ihmiskunnan vuosi ovat samaa suuruusluokkaa.",
-        "Kerroin, että ketjun energia säilyy mutta päätyy suurelta osin lämmöksi.",
+        "Kerroin, että ketjun energia säilyy mutta päätyy suurelta osin lämpöenergiaksi.",
         "Mainitsin, että arvot ovat pyöristettyjä suuruusluokkia."
       ]
     },
@@ -256,13 +256,13 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Tuulivoimapuisto tuottaa vuorokaudessa sähköenergiaa $360\\,\\text{GJ}$. Sähköverkossa $9\\,\\text{GJ}$ muuttuu matkalla lämmöksi. Kuluttajat käyttävät sähköä $0{,}300\\,\\text{TJ}$. Loppu varastoidaan akkuun. Kuinka monta gigajoulea akkuun varastoidaan?",
+      "prompt": "Tuulivoimapuisto tuottaa vuorokaudessa sähköenergiaa $360\\,\\text{GJ}$. Sähköverkossa $9\\,\\text{GJ}$ muuttuu matkalla lämpöenergiaksi. Kuluttajat käyttävät sähköä $0{,}300\\,\\text{TJ}$. Loppu varastoidaan akkuun. Kuinka monta gigajoulea akkuun varastoidaan?",
       "answer": 51,
       "unit": "GJ",
       "tolerance": 0.02,
       "hints": [
         "Mihin kaikkialle tuotettu sähköenergia menee? Energiaa ei häviä.",
-        "Kirjoita säilymislaki: tuotettu energia on yhtä suuri kuin lämmöksi muuttunut, kuluttajien käyttämä ja varastoitu energia yhteensä. Ratkaise varastoitu energia.",
+        "Kirjoita säilymislaki: tuotettu energia on yhtä suuri kuin lämpöenergiaksi muuttunut, kuluttajien käyttämä ja varastoitu energia yhteensä. Ratkaise varastoitu energia.",
         "Muunna ensin samaan yksikköön: $0{,}300\\,\\text{TJ} = 0{,}300 \\cdot 1000\\,\\text{GJ}$. Laske sitten $E_\\text{akku} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ}$."
       ],
       "mistakes": [
@@ -275,7 +275,7 @@
           "feedback": "Vähensit vain verkon lämmön, $360\\,\\text{GJ} - 9\\,\\text{GJ}$. Myös kuluttajien käyttämä energia $300\\,\\text{GJ}$ pitää vähentää, ennen kuin saat akkuun jäävän energian."
         }
       ],
-      "solution": "**Annettu:** tuotettu sähköenergia $E_\\text{tuotettu} = 360\\,\\text{GJ}$, verkossa lämmöksi $E_\\text{lämpö} = 9\\,\\text{GJ}$, kuluttajat $E_\\text{käyttö} = 0{,}300\\,\\text{TJ}$\n\n**Kysytty:** akkuun varastoitu energia $E_\\text{akku}$ gigajouleina\n\n**Periaate:** Energia säilyy. Tuotettu energia jakautuu lämmöksi, kuluttajille ja akkuun. Mitään ei häviä, joten osat yhdessä ovat yhtä suuret kuin tuotettu energia.\n\n**Kaava:** $E_\\text{tuotettu} = E_\\text{lämpö} + E_\\text{käyttö} + E_\\text{akku}$, josta $E_\\text{akku} = E_\\text{tuotettu} - E_\\text{lämpö} - E_\\text{käyttö}$\n\n**Muunnokset:** Terajoule korvataan arvollaan: $0{,}300\\,\\text{TJ} = 0{,}300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Sijoitus:** $E_\\text{akku} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Vastaus:** $51\\,\\text{GJ}$, kokonaisen gigajoulen tarkkuudella. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto. Kaikki tiedot ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ ja $0{,}300\\,\\text{TJ} = 300\\,\\text{GJ}$) tunnetaan gigajoulen tarkkuudella.\n\n**Järkevyys:** Akkuun jää pieni osa tuotetusta energiasta. Summa on oikein: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. Verkon lämpö on pienin erä. Se sopii siihen, että siirtohäviöt ovat pieniä."
+      "solution": "**Annettu:** tuotettu sähköenergia $E_\\text{tuotettu} = 360\\,\\text{GJ}$, verkossa lämpöenergiaksi $E_\\text{lämpö} = 9\\,\\text{GJ}$, kuluttajat $E_\\text{käyttö} = 0{,}300\\,\\text{TJ}$\n\n**Kysytty:** akkuun varastoitu energia $E_\\text{akku}$ gigajouleina\n\n**Periaate:** Energia säilyy. Tuotettu energia jakautuu lämpöenergiaksi, kuluttajille ja akkuun. Mitään ei häviä, joten osat yhdessä ovat yhtä suuret kuin tuotettu energia.\n\n**Kaava:** $E_\\text{tuotettu} = E_\\text{lämpö} + E_\\text{käyttö} + E_\\text{akku}$, josta $E_\\text{akku} = E_\\text{tuotettu} - E_\\text{lämpö} - E_\\text{käyttö}$\n\n**Muunnokset:** Terajoule korvataan arvollaan: $0{,}300\\,\\text{TJ} = 0{,}300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Sijoitus:** $E_\\text{akku} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Vastaus:** $51\\,\\text{GJ}$, kokonaisen gigajoulen tarkkuudella. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto. Kaikki tiedot ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ ja $0{,}300\\,\\text{TJ} = 300\\,\\text{GJ}$) tunnetaan gigajoulen tarkkuudella.\n\n**Järkevyys:** Akkuun jää pieni osa tuotetusta energiasta. Summa on oikein: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. Verkossa lämpöenergiaksi muuttunut energia on pienin erä. Se sopii siihen, että siirtohäviöt ovat pieniä."
     },
     {
       "id": "harjoitukset",
@@ -292,16 +292,16 @@
       "choices": [
         {
           "text": "Akun energia on kulunut loppuun, joten sitä ei ole enää olemassa.",
-          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämmöksi. Lopulta kaikki on hajaantunut lämpönä ympäristöön."
+          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki on hajaantunut lämpönä ympäristöön."
         },
         {
-          "text": "Akun $54\\,\\text{kJ}$ on muuttunut puhelimessa muihin muotoihin, lopulta lähes kokonaan lämmöksi. Energiaa on yhteensä yhtä paljon kuin alussa.",
-          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämmöksi. Lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
+          "text": "Akun $54\\,\\text{kJ}$ on muuttunut puhelimessa muihin muotoihin, lopulta lähes kokonaan lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin alussa.",
+          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
           "correct": true
         },
         {
           "text": "Akun energia on kasvanut, koska puhelin lämpenee.",
-          "feedback": "Puhelimen lämpeneminen on akun energian muuttumista lämmöksi. Lämpö ei ole uutta energiaa. Akun kemiallinen energia pienenee yhtä paljon kuin lämpöenergia kasvaa."
+          "feedback": "Puhelimen lämpeneminen on akun energian muuttumista lämpöenergiaksi. Lämpöenergia ei ole uutta energiaa. Akun kemiallinen energia pienenee yhtä paljon kuin lämpöenergia kasvaa."
         }
       ]
     },
@@ -341,10 +341,10 @@
       "criteria": [
         "Sanon, että energia ei katoa vaan muuttaa muotoa.",
         "Kuvaan ketjun: kemiallinen energia, liike, lämpö.",
-        "Sanon, että lopulta suuri osa on lämpöä, joka hajaantuu ympäristöön.",
-        "Selitän, miksi lämpö ei ole enää helposti hyödynnettävissä."
+        "Sanon, että lopulta suuri osa on lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu.",
+        "Selitän, miksi hajaantunut lämpöenergia ei ole enää helposti hyödynnettävissä."
       ],
-      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämmöksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
+      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
     },
     {
       "id": "lahtolippu",

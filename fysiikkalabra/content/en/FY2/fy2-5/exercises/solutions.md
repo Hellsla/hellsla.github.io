@@ -39,22 +39,22 @@
 **Reasonableness:** The heat of combustion of peat is small, so a hundred kilograms gives only $1000\,\text{MJ}$. Four times the mass gives four times the energy, $4000\,\text{MJ}$.
 
 ## fy2-5-L1-05
-**Given:** nuts, energy content $H = 24\,\tfrac{\text{MJ}}{\text{kg}}$ and mass $m = 0.040\,\text{kg}$
+**Given:** nuts, energy content $e = 24\,\tfrac{\text{MJ}}{\text{kg}}$ and mass $m = 0.040\,\text{kg}$
 **Find:** the energy $E$ contained in the nuts, in megajoules
-**Principle:** The chemical energy of food is calculated in the same way as for a fuel: the energy content is energy per kilogram, so the energy is the product of it and the mass.
-**Formula:** $E = Hm$
+**Principle:** The energy of food is calculated in the same way as for a fuel: the energy content is the energy the body can use per kilogram, so the energy is the product of it and the mass. The energy content is not a heat of combustion, even though the unit is the same.
+**Formula:** $E = em$
 **Conversions:** Not needed: the mass is in kilograms and the answer is wanted in megajoules.
-**Substitution:** $E = 24\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.040\,\text{kg} = 0.96\,\text{MJ}$
+**Substitution:** $E = em = 24\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.040\,\text{kg} = 0.96\,\text{MJ}$
 **Answer:** $0.96\,\text{MJ}$, two significant figures like the mass $0.040\,\text{kg}$.
 **Reasonableness:** An estimate with rounded numbers: $25\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.04\,\text{kg} = 1\,\text{MJ}$, so $0.96\,\text{MJ}$ is of the right order of magnitude. It is about $1000\,\text{kJ}$, the typical energy of a small snack.
 
 ## fy2-5-L2-01
 **Given:** according to the label $1200\,\text{kJ}$ per hundred grams, mass of the slice $m = 40\,\text{g}$
 **Find:** the energy $E$ of the slice, in kilojoules
-**Principle:** The label gives the heat of combustion of the food in the same way as for a fuel: energy per unit of mass. It must first be converted to megajoules per kilogram, and then the law $E = Hm$ is used.
-**Formula:** $E = Hm$, where the heat of combustion $H$ is the energy on the label divided by the mass on the label
+**Principle:** The label gives the energy content of the food, that is the energy the body can use, per unit of mass. It is not a heat of combustion, but the calculation is done in the same way: the label is converted to megajoules per kilogram and multiplied by the mass.
+**Formula:** $E = em$, where the energy content $e$ is the energy on the label divided by the mass on the label
 **Conversions:** $1200\,\text{kJ} = 1200 \cdot (1 : 1000)\,\text{MJ} = 1.2\,\text{MJ}$, $100\,\text{g} = 100 \cdot (1 : 1000)\,\text{kg} = 0.100\,\text{kg}$ and $40\,\text{g} = 40 \cdot (1 : 1000)\,\text{kg} = 0.040\,\text{kg}$.
-**Substitution:** $H = 1.2\,\text{MJ} : 0.100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ and $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.040\,\text{kg} = 0.48\,\text{MJ} = 480\,\text{kJ}$
+**Substitution:** $e = 1.2\,\text{MJ} : 0.100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ and $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.040\,\text{kg} = 0.48\,\text{MJ} = 480\,\text{kJ}$
 **Answer:** $480\,\text{kJ}$, two significant figures like the mass $40\,\text{g}$.
 **Reasonableness:** The slice is $40\,\%$ of a hundred grams, and $40\,\%$ of $1200\,\text{kJ}$ is $0.4 \cdot 1200\,\text{kJ} = 480\,\text{kJ}$. The result is smaller than $1200\,\text{kJ}$, as it should be.
 
@@ -99,10 +99,10 @@
 **Reasonableness:** The mass of wood is about $2.9$ times the mass of oil, since $43 : 15 = 2.87$. So $2.87 \cdot 2.79\,\text{kg} \approx 8.0\,\text{kg}$, and the difference is $2.87 - 1 = 1.87$ times the mass of oil: $1.87 \cdot 2.79\,\text{kg} \approx 5.2\,\text{kg}$, as it should be.
 
 ## fy2-5-L3-02
-**Given:** energy content of the food $H = 18\,\tfrac{\text{MJ}}{\text{kg}}$, mass $m = 2.4\,\text{kg}$, daily consumption $12\,\text{MJ}$
+**Given:** energy content of the food $e = 18\,\tfrac{\text{MJ}}{\text{kg}}$, mass $m = 2.4\,\text{kg}$, daily consumption $12\,\text{MJ}$
 **Find:** the number of daily rations $N$ that the food provides (as a decimal number)
-**Principle:** The total energy in the food is given by the law $E = Hm$. The number of rations is how many times the daily consumption fits into the total energy, so $N = E : \text{daily consumption}$.
-**Formula:** $E = Hm$ and the number of days $N = \dfrac{E}{12\,\text{MJ}}$
+**Principle:** The total energy obtainable from the food is found by multiplying the energy content by the mass, as with a fuel by the law $E = Hm$. The number of rations is how many times the daily consumption fits into the total energy, so $N = E : \text{daily consumption}$.
+**Formula:** $E = em$ and the number of days $N = \dfrac{E}{12\,\text{MJ}}$
 **Conversions:** Not needed: the mass is in kilograms and the energy in megajoules.
 **Substitution:** $E = 18\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.4\,\text{kg} = 43.2\,\text{MJ}$ and $N = 43.2\,\text{MJ} : 12\,\text{MJ} = 3.6$
 **Answer:** $3.6$ daily rations, two significant figures like the data $2.4\,\text{kg}$ and $18\,\tfrac{\text{MJ}}{\text{kg}}$.

@@ -70,13 +70,13 @@
 
 ## fy2-2-L2-03
 **Annettu:** sähköenergia $E_\text{sähkö} = 6{,}0\,\text{kJ}$ ja valoksi muuttunut energia $E_\text{valo} = 1{,}5\,\text{kJ}$. Valo imeytyy huoneen pintoihin.
-**Kysytty:** huoneeseen syntynyt lämpöenergia $E_\text{lämpö}$ kilojouleina
-**Periaate:** Energia säilyy. Lampun lämpö on $E_\text{sähkö} - E_\text{valo}$. Kun valo imeytyy pintoihin, se muuttuu myös lämmöksi. Energiaa ei poistu huoneesta valona.
+**Kysytty:** huoneessa lämpöenergiaksi muuttunut energia $E_\text{lämpö}$ kilojouleina
+**Periaate:** Energia säilyy. Lampun lämpöenergia on $E_\text{sähkö} - E_\text{valo}$. Kun valo imeytyy pintoihin, se muuttuu myös lämpöenergiaksi. Energiaa ei poistu huoneesta valona.
 **Kaava:** $E_\text{lämpö} = (E_\text{sähkö} - E_\text{valo}) + E_\text{valo} = E_\text{sähkö}$
 **Muunnokset:** Ei tarvita. Kaikki energiat on annettu kilojouleina.
 **Sijoitus:** $E_\text{lämpö} = (6{,}0\,\text{kJ} - 1{,}5\,\text{kJ}) + 1{,}5\,\text{kJ} = 4{,}5\,\text{kJ} + 1{,}5\,\text{kJ} = 6{,}0\,\text{kJ}$
 **Vastaus:** $6{,}0\,\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetussa sähköenergiassa.
-**Järkevyys:** Koko sähköenergia päätyy lopulta lämmöksi. Ketjun lopussa niin käy aina, kun mitään ei varastoida. Valo ei säily mihinkään. Se lämmittää pintoja.
+**Järkevyys:** Koko sähköenergia päätyy lopulta lämpöenergiaksi. Ketjun lopussa niin käy aina, kun mitään ei varastoida. Valo ei säily mihinkään. Se lämmittää pintoja.
 
 ## fy2-2-L2-04
 **Annettu:** TNT-tonni $E_\text{TNT} = 4{,}2\,\text{GJ}$ ja suklaalevy ($200\,\text{g}$) $E_\text{suklaa} = 4{,}4\,\text{MJ}$
@@ -106,7 +106,7 @@
 **Muunnokset:** Korvataan terajoulen etuliite sen arvolla: $230\,\text{TJ} = 230 \cdot 1000\,\text{GJ} = 230\,000\,\text{GJ}$
 **Sijoitus:** $E_\text{meri} = 370\,\text{TJ} - 140\,\text{TJ} = 230\,\text{TJ} = 230\,000\,\text{GJ}$, ja $N = 230\,000\,\text{GJ} : 72\,\text{GJ} = 3194$
 **Vastaus:** Noin $3200$ omakotitaloa. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $72\,\text{GJ}$, $140\,\text{TJ}$ ja $370\,\text{TJ}$.
-**Järkevyys:** Mereen menee enemmän energiaa kuin sähköksi. Lämmöllä toimivissa voimaloissa niin yleensä on: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Tee arvio: $200\,000 : 70 \approx 3000$. Tuhansia taloja on siis oikea suuruusluokka. Yhden vuorokauden hukkalämpö riittäisi kokonaisen pikkukaupungin vuoden lämmitykseen.
+**Järkevyys:** Mereen menee enemmän energiaa kuin sähköksi. Lämmöllä toimivissa voimaloissa niin yleensä on: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Tee arvio: $200\,000 : 70 \approx 3000$. Tuhansia taloja on siis oikea suuruusluokka. Energiamäärä vastaa siis pikkukaupungin vuoden lämmitystä. Mereen menevä lämpö on kuitenkin liian viileää kaukolämmöksi. Yhteistuotannossa höyry lauhdutetaan kuumempana. Silloin lämpö saadaan talteen, ja sähköä syntyy hieman vähemmän.
 
 ## fy2-2-L3-03
 **Annettu:** reaktorin energia vuorokaudessa $E = 370\,\text{TJ}$, uraani-235:tä $4{,}5\,\text{kg}$ ja bensiinin energia litraa kohti $E_\text{litra} = 32\,\text{MJ}/\textsf{l}$

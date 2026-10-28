@@ -91,7 +91,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia. Protoni on noin $1{,}7\cdot10^{
 
 ### Suuruusluokka kertoo karkean koon
 
-**Suuruusluokka** on se kymmenpotenssi, joka on lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a$ on alle noin 3. Jos $a$ on yli noin 3, suuruusluokka on $10^{n+1}$. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
+**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a$ on alle noin 3. Jos $a$ on yli noin 3, suuruusluokka on $10^{n+1}$. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
 Kohteiden koot ovat pyöristettyjä arvoja. Ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka. Luvuista kannattaa myös kysyä, kuinka tarkkoja ne ovat.
 
@@ -461,7 +461,7 @@ Neutronitähti ja musta aukko eivät ole galaksia suurempia portaita. Ne ovat ko
 
 - Fysiikka rakentaa malleja, joista johdetaan ennusteita. Koe tai mittaus ratkaisee, kestääkö malli.
 - Kymmenpotenssimuoto $a\cdot10^{n}$ kirjoittaa hyvin pienet ja hyvin suuret luvut lyhyesti. Yksi askel eksponentissa on kymmenkertainen koko.
-- Suuruusluokka on lähin kymmenpotenssi. Kokojen suhde saadaan jakamalla suurempi koko pienemmällä. Jokainen kymmenpotenssin askel on kymmenkertainen koko.
+- Suuruusluokka on kymmenpotenssien akselilla lähin kymmenpotenssi. Kokojen suhde saadaan jakamalla suurempi koko pienemmällä. Jokainen kymmenpotenssin askel on kymmenkertainen koko.
 - Valovuosi on matka, jonka valo kulkee vuodessa. Se on noin $9{,}46\cdot10^{15}\,\text{m}$.
 - Molekyylit koostuvat atomeista. Atomit koostuvat ytimestä ja elektroneista. Ydin koostuu protoneista ja neutroneista, ja nämä koostuvat kvarkeista. Atomi on kymmeniätuhansia kertoja ydintään suurempi.
 - Maa on planeetta, joka kiertää tähteä. Aurinkokunta on yksi planeettakunta Linnunradassa. Linnunrata on yksi havaittavan maailmankaikkeuden sadoista miljardeista galakseista.

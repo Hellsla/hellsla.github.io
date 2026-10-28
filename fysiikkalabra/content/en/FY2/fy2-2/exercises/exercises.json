@@ -13,7 +13,7 @@
       "level": 1,
       "text": "The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$, and the energy of an adult's day's food is about $10\\,\\text{MJ}$. How many chocolate bars correspond in energy to a day's food?",
       "answer": 2.3,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     },
     {
@@ -37,7 +37,7 @@
       "level": 1,
       "text": "The energy of an adult's day's food is about $10\\,\\text{MJ}$. The energy of an apple is, for example, $300\\,\\text{kJ}$. How many apples correspond in energy to a day's food?",
       "answer": 33,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     }
   ],
@@ -61,7 +61,7 @@
     {
       "id": "fy2-2-L2-03",
       "level": 2,
-      "text": "An LED lamp receives electrical energy of $6.0\\,\\text{kJ}$. It turns $1.5\\,\\text{kJ}$ of it into light, and the rest turns into heat in the lamp. The light hits the walls and surfaces of the room and is absorbed by them. How much thermal energy has finally been produced in the room? Give the answer in kilojoules.",
+      "text": "An LED lamp receives electrical energy of $6.0\\,\\text{kJ}$. It turns $1.5\\,\\text{kJ}$ of it into light, and the rest turns into thermal energy in the lamp. The light hits the walls and surfaces of the room and is absorbed by them. How much energy has finally turned into thermal energy in the room? Give the answer in kilojoules.",
       "answer": 6.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -71,7 +71,7 @@
       "level": 2,
       "text": "The energy of explosives is often given in tonnes of TNT: by convention, one tonne of TNT corresponds to about $4.2\\,\\text{GJ}$. The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$. How many chocolate bars correspond in energy to one tonne of TNT?",
       "answer": 950,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     }
   ],
@@ -81,7 +81,7 @@
       "level": 3,
       "text": "In Finland, on average about $790\\,\\text{TJ}$ of electrical energy is consumed per day (calculated from Statistics Finland data for 2023). An Olkiluoto 3 nuclear power plant unit produces electrical energy of $140\\,\\text{TJ}$ per day. What is the smallest number of such units whose output would cover the whole consumption? Give the answer as a whole number.",
       "answer": 6,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     },
     {
@@ -89,7 +89,7 @@
       "level": 3,
       "text": "In the reactor of a nuclear power plant unit, thermal energy of $370\\,\\text{TJ}$ is released per day. Of this, $140\\,\\text{TJ}$ turns into electricity, and the rest is carried into the sea by the cooling water. Heating a detached house takes, for example, $72\\,\\text{GJ}$ per year. The energy transferred to the sea in one day corresponds to a year's heating for how many detached houses?",
       "answer": 3200,
-      "unit": "pcs",
+      "unit": "kpl",
       "tolerance": 0.02
     },
     {
