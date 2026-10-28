@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 989e477708edb711
+CONTENT-HASH: b23b73f81e2a6b5b
 ## Blocking
 ## Polish
-- solutions.md L1-02 Järkevyys — "syy on todennäköisesti systemaattinen, esimerkiksi venynyt nauha": a stretched tape shows too SMALL a reading, but the reading here is too large. Write "esimerkiksi kulunut alkupää tai väärä nollakohta". Correct this one before publication.
-- solutions.md, every solution (Kaava) — "Kaava on jo ratkaistu kysytyn suureen suhteen: <the same formula again>" repeats the formula within one line and reads as a template glitch on the page (capture open-exercises-1280-4). Drop the repeated formula, or say only "Kaava on valmiiksi ratkaistu kysytyn suureen suhteen."
-- Coverage — karkea virhe (a lesson topic) and reporting $\bar{x}\pm\Delta x$ with correct rounding are not practised; systematic error as mean minus true value appears four times (L1-02, L2-02, L3-03, L1-04), and L3-03 is the same two steps as L2-02, so it is not a level-3 idea. Rework L3-03: five readings with one clear slip (e.g. 8,24; 8,27; 8,52; 8,29; 8,25), decide what to do with it, then estimate the systematic error.
-- exercises intro (page text, "Muunna kaikki tulokset samaan yksikköön ennen keskiarvon laskemista") gives away the trap of L2-03 before the student tries it; remove that sentence from the intro and keep it in the solution.
-- solutions.md L2-02 Sijoitus/Muunnokset and L3-02 — "kerrotaan tuhannella" states the operation without writing the substitution; show `0{,}01067\,\text{m} = 0{,}01067\cdot1000\,\text{mm} = 10{,}67\,\text{mm}` (likewise `0{,}125\,\text{m} = 0{,}125\cdot100\,\text{cm}` in L2-03). Also L2-02 Vastaus: "keskiarvo kantaa yhden numeron lisää" is not a sig-fig rule from the lesson; say "kolme merkitsevää numeroa, koska erotus 0,0107 m on tunnettu kolmella".
+- solutions.md L3-02 Sijoitus/Vastaus — the chain ends "= 2,0 µm" and the answer says "2 µm": a student sees two forms. Add "pyöristettynä yhteen merkitsevään numeroon 2 µm" to the Sijoitus end, or end the chain at "0{,}0020 mm = 2 µm". The exercise stores answer 2.0 with tolerance 0.02 (accepts 1,96–2,04 only if relative; if absolute, still accepts 2); fine either way.
+- Earlier unaddressed Polish still open (not part of this diff): repeated formula in every "Kaava" line (e.g. L3-03 "Kysytty on Δx_sys = …"), L3-03 duplicates L2-02's two steps and karkea virhe is not practised, intro sentence about units gives away L2-03, "kerrotaan tuhannella" without a written substitution in L3-02 Muunnokset.
 ## Checked
-- Counts 5/4/3 per the course; none repeats the Esimerkki (which is a mean, half-range and ε of one series); L1 uses one formula each, L2-04 compares repeatability, L3-01 and L3-02 are genuine reasoning tasks.
-- Answers recomputed: 0,51; 0,3; 0,35; 47,5; 0,5; 4,83 (0,09/1,865); 10,67; 12,4 (also the unconverted trap 45,2); 10; −0,06; 2,0; 0,26.
-- L2-01 relative tolerance 0,04 accepts 4,64–5,02, so a student's rounded "5" passes and the solution's final "5 %" agrees with the stored 4,83.
-- L1-03 and L2-01: the solutions explain why the exact 0,35 s differs from the one-figure 0,4 s, with the one-significant-figure rule from the lesson.
-- Situations first, question last; everyday contexts (kitchen scale, ruler, paper stack, tape); Finnish and case after number+unit correct.
-- Solutions: seven steps present, principle explained, \cdot never ×, notation Δx, Δx_sys as in the lesson; \dfrac fractions kept for formulas.
-- Captures stage-exercises-390 and open-exercises-1280-4: nothing clipped, calculations legible.
+- L1-02: "kulunut nauhan alkupää tai väärä nollakohta" is physically right for a reading that is too large (a worn start shifts the zero inward), so the earlier physics slip is fixed; the percentage and "suuri virhe mittanauhalle" reasoning is unchanged and consistent.
+- L3-02: answer now follows the lesson's rule (virhe-arvio yhteen merkitsevään numeroon) and the reason is stated; the reasonableness check (2 % of 0,1 mm, 500 % for one sheet) still holds.
+- L3-03: 0,025 cm ≈ 0,03 cm follows the same one-figure rule, "noin kymmenesosa" (0,03 vs 0,26) is correct, and the next sentence (7,98–8,03 cm) is unaffected.
+- Finnish of the three changed passages is correct; no new terms; answers in exercises.json unchanged and consistent.
