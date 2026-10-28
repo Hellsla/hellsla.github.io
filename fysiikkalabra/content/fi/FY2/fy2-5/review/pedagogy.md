@@ -1,16 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 109dbcc240d94859
+VERDICT: PASS
+CONTENT-HASH: 3e35103094aaa58b
 
 ## Blocking
-1. lesson.md:53 — Lähteet-kappale sanoo bensiinistä "IPCC 2006: $44{,}3\,\text{MJ/kg}$, tyypillinen arvo pyöristettynä: $43$". 44,3 ei pyöristy lukuun 43; opiskelija voi tarkistaa ja huomaa virheen (taulukko ja kaikki tehtävät käyttävät 43). Kierroksen 2 selitys (kotimaisessa bensiinissä on etanolia) oli oikea ja poistui. Korjaus: palauta se, esim. "kotimaisessa bensiinissä on etanolia, joten taulukossa käytetään arvoa $43$", tai kirjoita "taulukon arvo $43$ on tyypillinen suomalaisen bensiinin arvo". Tieteellinen arvo on science-reviewerin; tässä virhe on opiskelijan nähtävissä.
 
 ## Polish
-1. lesson.md:53 — Lähteet on yhä tiheä; yksityiskohdat suljetun laatikon taakse (kuten kierroksella 2).
-2. inquiry.json (ennuste-2, rakenna) ja lesson.md (kuva 1, Yleinen virhekäsitys) — kierroksen 2 huomautukset 1, 2, 3 ja 5 ennallaan, eivät estä.
+1. inquiry.json (siirto, tarkistus-3) ja lesson.md (Yleinen virhekäsitys) — hyötysuhde ja teho ovat viitattu luvuilla *Hyötysuhde*/*Teho*, mutta meta-esitieto on vain fy2-2; siirto-tehtävän vihje 2 kertaa hyötysuhteen, mikä riittää. Harkitse yhden lauseen muistutusta tehtävätekstissä.
+2. lesson.md Lähteet-kappale (taulukon alla) on tiheä; yksityiskohdat voisi viedä suljetun laatikon taakse.
+3. ennuste-2 — "Suklaa." on lyhyt vaihtoehto muiden rinnalla; vastaus erottuu pituudesta. Pidennä muiden kanssa samaan mittaan.
+4. rakenna (optional) — taulukko on suoraan E = 15 m, joten se vahvistaa laskun eikä ennusta; sopii valinnaiseksi.
+5. Opiskelijan "Etsi virhe" -tehtävässä oikea vaihtoehto on pisin; harkitse lyhentämistä.
 
 ## Checked
-- Diff: $\text{MJ/kg}$, $\text{kJ}$ ja $100\,\text{g}$ LaTeX-muotoon (exit-ticket, inquiry, taulukon otsikko) — johdonmukaista, ei muuta sisältöä.
-- Taulukon otsikko $H\ (\text{MJ/kg})$ mahtuu 360 px:ään (layout-testit ok).
-- lesson-answers.py: tark3 (170/430 MJ, suhde 2,5), 129 MJ ja lippu 75 MJ / 15 MJ/kg vastaavat tekstiä ja poistumislippua.
-- Poistumislipun tehtävä (1500 kJ / 100 g) ja vastaus ennallaan ja seurattavissa.
-- Polku, esimerkki, ennusteet ja palautteet kuten kierroksella 2 (PASS).
+- Edellisen kierroksen esto (bensiinin 44,3 vs 43) on korjattu: etanoliselitys on takaisin lähteissä, taulukko ja tehtävät käyttävät 43:a.
+- Polku Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella → Tarkista on kokonaisuus yhdelle tunnille; alun kysymys saa vastauksen (johtopäätös, pohdi).
+- Ennusteet voi kumota taulukolla ennen teoriaa; jokaisen väärän vaihtoehdon palaute korjaa väärinkäsityksen.
+- Tavoitteet (kemiallinen energia, E = Hm) täyttyvät; ei FY3-sisältöä (ei Q = cmΔT, ei ketjuhyötysuhdetta).
+- Kuvat 1–3 (390 px) luettavia, LaTeX-nimiöt, väri ei yksin (arvot pylväissä); kuvat heti selittävän kappaleen jälkeen.
+- Esimerkki seitsemässä vaiheessa, yksi askel per vaihe, kWh-muunnos selitetty.
+- Ratkaisut (ruoka, siirto, tarkistus-2) seuraavat seitsemää kohtaa; poistumislippu testaa ydinajatuksen.
+- Suomi: sijamuodot ja desimaalipilkku oikein; termit glossaarin mukaiset.
+- Hash alussa ja lopussa sama.

@@ -1,20 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: fe513fd7ad68b4ac
+VERDICT: PASS
+CONTENT-HASH: 15412e00f1e4b741
 
 ## Blocking
-- lesson.md:146, 191; inquiry.json:18, 228, 307; exit-ticket.json:12 — student-visible numbers in prose still outside LaTeX, against the teacher's standing rule "everything in LaTeX" (round 2 listed them under Polish; they are a rule breach a student sees, so they block now): "noin 70-kertainen" (lesson 146), "noin 41 kertaa pienempi" (lesson 191, example check), "eli 280 molekyyliä" (hook), "noin 41 kertaa enemmän" (virhe feedback), "noin 41-kertaiset" (perustele model), "noin 70-kertaiset" (exit ticket 3). — Fix: "$70$-kertainen", "$41$ kertaa", "$280$ molekyyliä", "$41$-kertaiset", "$70$-kertaiset".
 
 ## Polish
-- lesson.md:91–97, inquiry.json:107 (aineisto table) — the table values (820, 490, …, 11–12) are plain text; for consistency with the rule write them as $820$, $41\text{–}48$ etc.
-- lesson.md:87 — "$1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$" skips the joules; "$= 3\,600\,000\,\text{J} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$" shows the substitution.
-- inquiry.json:307 (perustele model) — "ei tuota jätettä" overstates (blades and decommissioning are waste); say "ei tuota radioaktiivista jätettä eikä käytä polttoainetta".
+- inquiry.json:384, 392 (ennuste-2 feedbacks) — "kivihiilen energia tulee lähes kokonaan hiilen palamisesta" overstates: in bituminous coal hydrogen gives roughly a fifth of the heating value (carbon ~75–80 %). — Say "suurimmaksi osaksi hiilen palamisesta"; the comparison with methane (much more hydrogen) still holds.
+- lesson.md:181–189, inquiry.json:405 (aineisto table) — the table values (820, 490, …, 41–48, 11–12) are plain text; write them as $820$, $41\text{–}48$ for consistency with the LaTeX rule.
+- lesson.md:179 — "$1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$" skips the joules; "$= 3\,600\,000\,\text{J} = 3{,}6\,\text{MJ}$" shows the step.
 
 ## Checked
-- Recomputed in one script with my own formulas: all 21 lesson-answers.py values and every inquiry number (820 kg with mistake 820 000 g; 49 000 t with mistakes 0,049 t and 4,9·10¹⁰ g; 16 kg (15,90) with mistakes 13,2 and 15 900; 43 200 g vs the student's 300; 1200 t and 41 in the model; 2,4 t, 2,5 t, 58 kg, 41, 68 in the example; ticket 120 g; 33 K) — all match, all inside tolerance.
-- Round-2 blocker fixed: every unit conversion (example check, aineisto, virhe, siirto mistakes and check, tarkistus-2 check and mistake) now substitutes the factor; worked example chain ends at $2{,}352\,\text{t}$; "polttoainekuljetuksia" fixed.
-- Data with sources right: IPCC AR5 WG III Annex III medians; IPCC 2006 petrol 69 g/MJ; NOAA 2023 ≈ 420 ppm vs 280 ppm (< 0,5 ‰); −18 → +15 °C.
-- m = e · E correct, conditions and units stated; inside FY2 central contents; FY3 only named by chapter; no energy-balance model.
-- Worked example: seven stages, symbolic first, 2 s.f. justified, check is a real check.
-- Emissions chart to scale (0,440 px per g/kWh, every bar within 0,5 px); greenhouse figure marked not to scale and physically right.
-- Every correct option and every feedback's physics checked (predictions, alkuperä, muut perusteet, virhe, kuljetus 400 : 50 = 8, tarkistus-1).
-- Invented situations marked as examples; no ×; written division as colon.
+- Recomputed in one script with my own formulas: all 21 lesson-answers.py values and every lesson/inquiry/exit-ticket number (example 2 352 000 g = 2,352 t → 2,4 t, check 2,5 t, wind 57,6 → 58 kg, 490 : 12 ≈ 41; aineisto 820 kg, mistake 820 000; virhe 43 200 g ≈ 43 kg vs the student's 300; siirto 4,9·10¹⁰ g = 49 000 t, mistakes 0,049 t and 4,9·10¹⁰; wind 1200 t; tarkistus-2 7,2 l → 230,4 MJ → 15,9 kg → 16 kg, mistakes 13,2 kg and 15 900 g, check 14,7 kg and 2,2 kg/l; ticket 120 g, ≈ 70; 33 K; 420 ppm = 0,42 ‰). All match; rounded student answers stay inside 2 % tolerance.
+- Round-3 blocker fixed: no student-visible number left outside LaTeX (only years, list numbers and titles remain).
+- Round-3 polish taken: "ei tuota radioaktiivista jätettä eikä käytä polttoainetta" in the perustele model.
+- Data and sources right: IPCC AR5 WG III Annex III medians (coal 820, gas CC 490, dedicated biomass 230, PV rooftop 41 / utility 48, hydro 24, nuclear 12, wind onshore 11 / offshore 12); IPCC default petrol ≈ 69 g/MJ, ≈ 32 MJ/l realistic; NOAA 2023 ≈ 420 ppm vs 280 ppm; −18 → +15 °C.
+- m = e · E correct, units and meaning stated; inside FY2 central contents; no radiative-balance model, FY3 named by chapter only.
+- Worked example: seven stages, symbolic first, conversions shown, 2 s.f. justified, reasonableness check real.
+- Emissions chart to scale (0,440 px per g/kWh, all bars within 0,5 px; solar bar at the range midpoint); greenhouse figure marked not to scale, arrows physically right (solar through, IR absorbed, re-emitted down and to space).
+- Every correct option and feedback's physics checked: kertaus, both predictions, alkuperä, muut perusteet, virhe (kWh²/g unit argument), kuljetus (400 : 50 = 8), tarkistus-1, model answers of perustele and tarkistus-3.
+- Biomass treatment correct: biogenic combustion CO₂ counted zero in AR5's 230, its decades-long re-uptake lag stated.
+- Invented situations marked as examples; division written with a colon.

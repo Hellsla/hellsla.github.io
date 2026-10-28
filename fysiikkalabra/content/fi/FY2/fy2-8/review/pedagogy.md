@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: fe513fd7ad68b4ac
+CONTENT-HASH: 15412e00f1e4b741
 
 ## Blocking
 
 ## Polish
-- inquiry.json `kertaus`, `ennuste-2`, `tarkistus-1`, `virhe` — the correct option is still the longest in each (round-1/2 note, unchanged; the `virhe` correct option is now longer still with the added 0,001 kg step). Shorten it or lengthen the distractors.
-- inquiry.json `alkupera` — the "mittausvirhe" distractor is still a strawman (unchanged).
-- Figure `greenhouse` — sunlight arrow could carry a short "läpäisee" (unchanged, taste).
-- Workload — core path about an hour; keep the pair exchange optional (unchanged).
+- inquiry.json `kertaus`, `ennuste-2`, `tarkistus-1`, `virhe` — the correct option is still the longest in each (carried from earlier rounds). Shorten it or lengthen the distractors.
+- inquiry.json `alkupera` — the "mittausvirhe" distractor is a strawman (unchanged).
+- Figure `greenhouse` — the sunlight arrow could carry a short "läpäisee" label (taste).
+- Workload — the core path is about an hour; keep the pair exchange in `perustele` optional.
 
 ## Checked
-- Round-2 polish on the "−18 °C:sta" line break closed: "arvosta noin −18 °C arvoon noin +15 °C" is correct Finnish, avoids the suffix break, in lesson.md and the summary.
-- Unit chains now show every conversion (g → kg → t, g → 10^-6 t) in the example, the transfer solution, the model answer and feedback; each step is followable by a student who has met powers of ten in FY1; the answers are unchanged.
-- Example stage 5 now ends with 2,352 t as its own row; the staging (seven stages, one step each) is intact and the check line stays its own block.
-- Model answer: "polttoainekuljetuksia ei tarvita" is more accurate than "kuljetuksia"; no content change to the learning path.
-- Diff touches no figure, no prediction and no option order; gating and opening question answered as before.
-- Hash at the end: fe513fd7ad68b4ac (unchanged).
+- Full review after a figure change: both figures seen at 390 px, the greenhouse figure also beside its paragraph at 1280 px. The greenhouse figure is recognisable and uncluttered, with LaTeX labels, a sun, an atmosphere band, and the three arrow directions that the caption and text describe. Colour (orange for sunlight, red for heat) is matched by arrow direction and labels, so it is never the only carrier.
+- The emissions bar chart is on one scale. Fossil bars are dark and the others light, with a legend and printed values, so the contrast does not rely on colour alone. The thin nuclear and wind bars are legible through their labels, and the text says they are narrow but not zero.
+- Learning path: the opening question (how can a tiny share of the air matter, and why does the way of producing electricity matter?) is answered by the theory, the table and the model answer. The slot goals (climate, land use, transport, CO2 emissions) are all covered, nothing beyond them. FY3 content is pointed to by chapter name, not taught.
+- Activities fit the topic: two predictions that data can refute (the table), then a data table, a source-of-emissions question, and a "what the factor does not tell" question. There is no empty simulation. The `kuljetus` item covers transport and land use.
+- Example: seven stages, one step each, the unit chain g -> kg -> t shown in full, the answer set apart, and a reasonableness check. It does not repeat the exercises.
+- Each option's feedback repairs the misconception it reveals. No answer is disclosed before a commitment, and Ennusta 2 defers the numbers to the table.
+- Finnish: "arvosta noin −18 °C arvoon noin +15 °C" is fine, and the terms match the glossary. No wall of text: the paragraphs are short, with content-naming subheadings.
+- Exit ticket: three questions testing the core ideas (the radiation mechanism, the calculation, low-emission is not zero-emission).
+- Phone captures: nothing clipped in the stages or the example. The exercise set is out of scope (reviewed separately).
+- Hash at start and end: 15412e00f1e4b741.
