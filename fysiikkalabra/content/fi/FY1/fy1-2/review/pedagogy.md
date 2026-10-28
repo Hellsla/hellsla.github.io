@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a5d16bc42cc16ad8
+CONTENT-HASH: 6e11a95160d708c6
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:248-262 — the new scale table is read-only; a one-line question under it (e.g. "Kirjoita Maan halkaisija megametreinä") would let the student act on it — optional, workload is already full.
-- lesson.md:255 — femto (fm) appears in the table before any prefix table lists it (figure shows nano..tera); it is defined in the same row, so understandable, but a half-sentence "femto on 10^-15" in the text would help.
+- (carried over, optional) lesson.md:248-262 — the scale table is read-only; a one-line question under it would let the student act on it.
+- (carried over, optional) lesson.md:255 — femto appears in the table before a prefix table lists it; a half-sentence "femto on 10^-15" would help.
 
 ## Checked
-- Hash a5d16bc42cc16ad8 at start and end; delta only touches inquiry.json (prior, hook), lesson.md (new section, one rephrased sentence).
-- Prior text now names Planck length to observable universe, matching fy1-1's zoom; "yli kuusikymmentä kymmenpotenssia" holds (about 62).
-- Hook: heliopause explained in plain words, "yhä Auringon painovoiman piirissä" fits the brief; opening question unchanged and still answered by the lesson.
-- Table values plausible and consistent with the lesson (nucleus 1e-15..1e-14 m, H atom 0,11 nm, proton 1,7 fm, red cell 7,5 µm, Earth 1,27e7 m, AU 1,5e11 m, ly 9,46e15 m = 9,46e12 km).
-- Links units and prefixes to fy1-1 scales in the slot's goals; non-SI status of AU and ly stated.
-- s = ct sentence split: now states the formula before solving for t, a clearer step.
-- Finnish and units formatting fine; 3-column table in one reading column, layout checks pass at 360/768/1280.
+- Hash 6e11a95160d708c6 at start and end; delta is inquiry.json (sim "model" text) and solutions.md (one digit).
+- "heliopaussin eli aurinkotuulen kuplan rajan" now matches the hook's wording ("aurinkotuulen puhaltaman kuplan"); the term is explained the same way in both places, plainer than "Auringon vaikutusalueen raja" and consistent with the fy1-1 heliosphere distinction.
+- Solution L3-01: 2,998e5 · 3,156e7 = 9,4617e12, so 9,462e12 km is the right rounding. 9,462e12 / 1,496e8 = 6,325e4 AU, unchanged; the step stays followable and the answer is unaffected.
+- No other 9,461 left in lesson, inquiry or solutions; lesson.md's 9,46e12 km is consistent.
