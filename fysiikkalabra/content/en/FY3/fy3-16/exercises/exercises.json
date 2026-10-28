@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-16-L1-01",
+      "level": 1,
+      "text": "A sauna stove contains 20 kg of stones with a specific heat capacity of 800 J/(kg·K). The stones warm from 20 °C to 300 °C. How large a quantity of heat is transferred to the stones? Give your answer in megajoules.",
+      "answer": 4.5,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-02",
+      "level": 1,
+      "text": "0.20 kg of water that is already at the boiling point of 100 °C is thrown on the sauna stones. The water vaporises completely. How large a quantity of heat is used for vaporisation? Give your answer in kilojoules.",
+      "answer": 450,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-03",
+      "level": 1,
+      "text": "The total area of the walls of a cool bag is 0.60 m² and the U-value is 1.6 W/(m²·K). It is 2.0 °C inside the bag and 30 °C outside. How large is the heat power conducted through the walls into the bag? Give your answer in watts.",
+      "answer": 27,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-04",
+      "level": 1,
+      "text": "A 0.75 kg ice pack in a cool bag is at 0 °C and melts completely. How large a quantity of heat is transferred to the ice? Give your answer in kilojoules.",
+      "answer": 250,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-05",
+      "level": 1,
+      "text": "A car's coolant ($c = 3500\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$) circulates in the engine at 0.50 kg every second, and the liquid warms by 8.0 K in the engine. How large is the power transferred from the engine to the liquid? Give your answer in kilowatts.",
+      "answer": 14,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-16-L2-01",
+      "level": 2,
+      "text": "The total area of the walls of a cool bag is 0.50 m² and the U-value is 2.0 W/(m²·K). It is 25 °C outside, and the temperature of the ice pack stays at 0 °C as long as there is ice. How large must the mass of the ice pack be for the ice to last for 6.0 hours? Assume that the bag contains only ice.",
+      "answer": 1.6,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-02",
+      "level": 2,
+      "text": "0.25 kg of water at 20 °C is thrown on the stones as sauna water. The water warms to 100 °C and vaporises completely. How large is the total quantity of heat used? Give your answer in kilojoules.",
+      "answer": 650,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-03",
+      "level": 2,
+      "text": "An engine transfers a power of 24 kW to the coolant ($c = 3500\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). The liquid may warm by at most 8.0 K in the engine. What mass of liquid has to be circulated through the engine every second? Give your answer in kg/s.",
+      "answer": 0.86,
+      "unit": "kg/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-04",
+      "level": 2,
+      "text": "To make a cold drink, 0.33 kg of lemonade at 22 °C, with a specific heat capacity equal to that of water, is poured into a glass. Enough ice is added to the glass. How many grams of ice melt when the lemonade cools to 0 °C? Assume that no heat is transferred from the surroundings.",
+      "answer": 91,
+      "unit": "g",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-16-L3-01",
+      "level": 3,
+      "text": "A stove contains 25 kg of stones ($c = 800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). 0.20 kg of water at 20 °C is thrown on the stones, and it warms to 100 °C and vaporises completely. Assume that all the energy needed is taken from the stones and that the warming of the steam is not taken into account. By how many kelvins does the temperature of the stones drop?",
+      "answer": 26,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L3-02",
+      "level": 3,
+      "text": "0.500 kg of ice at 0 °C and 2.00 kg of water at 30.0 °C are mixed in an insulated container. What is the temperature of the mixture when thermal equilibrium has been reached? First check whether all the ice melts.",
+      "answer": 8.1,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L3-03",
+      "level": 3,
+      "text": "The total area of the walls of a cool bag is 0.50 m² and the U-value is 1.5 W/(m²·K). 0.50 kg of drinks at 24 °C, with a specific heat capacity equal to that of water, $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, is packed into the bag, along with an ice pack taken from the freezer at −10 °C ($c_\\text{ice} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). It is 30 °C outside. The ice must last for 6.0 hours. Assume that the drinks cool to 0 °C at once, that the ice first warms to 0 °C and then melts, and that the same power comes through the wall all the time as if the inside were at 0 °C. What is the smallest mass the ice pack must have? Give your answer in kilograms.",
+      "answer": 1.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ]
+}

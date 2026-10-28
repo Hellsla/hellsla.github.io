@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A cool bag contains ice and water at 0 °C, and heat comes through the walls all the time. Why does the inside temperature of the bag not rise until all the ice has melted?",
+    "a": "The energy coming through the wall is used to melt the ice, $Q = sm$, and not to raise the temperature. During a change of state the temperature stays at the melting point, and only when the ice has melted does the energy start to raise the temperature of the water."
+  },
+  {
+    "q": "How much energy is needed to melt 0.40 kg of ice at 0 °C and warm the water that forms to 25 °C? Use the values $s = 334\\,\\text{kJ/kg}$ and $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+    "a": "Melting: $Q_1 = sm = 334\\,\\text{kJ/kg} \\cdot 0.40\\,\\text{kg} = 133.6\\,\\text{kJ}$. Warming: $Q_2 = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.40\\,\\text{kg} \\cdot 25\\,\\text{K} = 41.9\\,\\text{kJ}$. In total $Q = Q_1 + Q_2 = 175.5\\,\\text{kJ} \\approx 1.8 \\cdot 10^2\\,\\text{kJ}$, two significant figures like the mass $0.40\\,\\text{kg}$."
+  },
+  {
+    "q": "Sauna water is thrown on hot stones. Why do the stones cool down much more when the water vaporises than if it only warmed to 100 °C?",
+    "a": "The water also vaporises, and vaporisation needs energy $Q = rm$, which is about 2260 kJ/kg. This is many times more than heating the water: 1 kg of water from 20 °C to 100 °C needs only 335 kJ. The energy is taken from the stones, so they cool down."
+  }
+]

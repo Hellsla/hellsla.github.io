@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Miksi mittauspisteisiin piirretty suora ei kulje kaikkien pisteiden kautta, ja onko se virhe?",
+    "a": "Ei ole virhe. Jokaisessa pisteessä on mittausepävarmuus, joten pisteet vaihtelevat suoran molemmin puolin. Vedä suora pisteiden joukon keskeltä niin, että se kulkee epävarmuusjanojen kautta."
+  },
+  {
+    "q": "Suoralta luetaan pisteet $(20\\,{}^\\circ\\text{C};\\ 110\\,\\text{kPa})$ ja $(70\\,{}^\\circ\\text{C};\\ 128\\,\\text{kPa})$. Laske suoran kulmakerroin.",
+    "a": "$k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1} = \\dfrac{(128 - 110)\\,\\text{kPa}}{(70 - 20)\\,{}^\\circ\\text{C}} = 0{,}36\\,\\dfrac{\\text{kPa}}{{}^\\circ\\text{C}}$."
+  },
+  {
+    "q": "Tulokseksi saatiin $\\theta_0 = -270 \\pm 12\\,{}^\\circ\\text{C}$. Sopiiko tulos yhteen arvon $-273{,}15\\,{}^\\circ\\text{C}$ kanssa?",
+    "a": "Sopii. Epävarmuusväli on $-282\\,{}^\\circ\\text{C} \\ldots -258\\,{}^\\circ\\text{C}$. Hyväksytty arvo $-273{,}15\\,{}^\\circ\\text{C}$ kuuluu siihen."
+  }
+]

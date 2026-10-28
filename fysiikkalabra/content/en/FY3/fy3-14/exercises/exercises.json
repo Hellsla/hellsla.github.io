@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy3-14-L1-01",
+      "level": 1,
+      "text": "A 0.050 kg piece of ice at 0 °C is dropped into a fruit drink. The ice melts completely into water at 0 °C. How much heat does the ice take in as it melts? Give the answer in kilojoules.",
+      "answer": 17,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-02",
+      "level": 1,
+      "text": "A freezer contains 0.25 kg of water at 0 °C. The water freezes completely into ice at 0 °C. How much heat does the water give out as it freezes? Give the answer in kilojoules.",
+      "answer": 84,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-03",
+      "level": 1,
+      "text": "A thermos flask contains 0.30 kg of water at 20 °C. How much heat does the water give out as it cools to 0 °C? Give the answer in kilojoules.",
+      "answer": 25,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-04",
+      "level": 1,
+      "text": "Ice at 0 °C is melted with a heater that transfers 60 kJ of heat to the ice. How many grams of ice have time to melt, when all the heat is used for melting? Give the answer in grams.",
+      "answer": 180,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-05",
+      "level": 1,
+      "text": "A 0.20 kg bag of ice at −12 °C is taken from the freezer. How much heat must be transferred to the ice for its temperature to rise to 0 °C without the ice yet starting to melt? Give the answer in kilojoules.",
+      "answer": 5.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-14-L2-01",
+      "level": 2,
+      "text": "A calorimeter contains 0.35 kg of water at 30 °C. 0.060 kg of ice at 0 °C is dropped into the water. What is the temperature of the contents of the calorimeter when thermal equilibrium has been reached and all the ice has melted? Assume that no heat is transferred to the calorimeter or the surroundings.",
+      "answer": 14,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-02",
+      "level": 2,
+      "text": "Ice at 0 °C taken from the fridge is used to cool 0.30 kg of water from 18 °C to 0 °C. How many grams of ice must melt? Assume that no heat is transferred to the surroundings. Give the answer in grams.",
+      "answer": 68,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-03",
+      "level": 2,
+      "text": "Ice of mass 0.40 kg and temperature −10 °C is heated with an 800 W heater until all the ice has melted into water at 0 °C. Assume that all the power of the heater is transferred to the ice. How long does the heating take? Give the answer in seconds.",
+      "answer": 180,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-04",
+      "level": 2,
+      "text": "The latent heat of fusion of ice is measured with a calorimeter. The calorimeter contains 0.200 kg of water at 30.0 °C. 0.0500 kg of ice at 0 °C is dropped into the water. When the ice has melted completely, the measured temperature is 8.1 °C. Determine the specific latent heat of fusion of ice. The heat capacity of the calorimeter itself and heat losses are ignored. Give the answer in kJ/kg.",
+      "answer": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-14-L3-01",
+      "level": 3,
+      "text": "A thermos jug contains 0.600 kg of water at 35.0 °C. Ice taken from the freezer at −20 °C is to be added to the water, so much that the ice melts exactly completely and the temperature of the mixture becomes 0 °C. How many grams of ice are needed? Give the answer in grams.",
+      "answer": 234,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L3-02",
+      "level": 3,
+      "text": "An insulated container holds 0.200 kg of water at 15.0 °C. 0.300 kg of ice at −10.0 °C is added to the water. How many grams of ice are left in the container when thermal equilibrium has been reached? First check whether all the ice melts. Give the answer in grams.",
+      "answer": 281,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L3-03",
+      "level": 3,
+      "text": "An insulated container holds 0.100 kg of water at 10.0 °C. 0.500 kg of ice at −40.0 °C is added to the water. What is the temperature of the contents of the container when thermal equilibrium has been reached? First work out whether all the water freezes. Give the answer in degrees Celsius.",
+      "answer": -3.5,
+      "unit": "°C",
+      "tolerance": 0.02
+    }
+  ]
+}
