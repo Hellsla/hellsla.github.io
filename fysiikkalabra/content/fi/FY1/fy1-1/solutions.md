@@ -29,14 +29,14 @@
 **Järkevyys:** Maan ympärysmitta on noin $40\,000\,\text{km}$, ja halkaisija on ympärysmitta jaettuna luvulla $\pi \approx 3{,}14$, siis noin $12\,700\,\text{km}$. Tulos täsmää.
 
 ## fy1-1-L1-04
-**Annettu:** matka $s = 4{,}10\cdot10^{10}\,\text{m}$ ja valon nopeus $c = 3{,}00\cdot10^{8}\,\text{m/s}$; nopeus on tasainen
-**Kysytty:** aika $t$ yksikössä $\text{s}$
-**Periaate:** Valo kulkee tasaisella nopeudella, joten matka on nopeuden ja ajan tulo. Aika saadaan jakamalla matka nopeudella.
-**Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
-**Muunnokset:** Ei tarvita: matka on metreinä ja nopeus yksikössä $\text{m/s}$, joten tulos tulee sekunteina.
-**Sijoitus:** $t = \dfrac{4{,}10\cdot10^{10}\,\text{m}}{3{,}00\cdot10^{8}\,\text{m/s}} = \dfrac{4{,}10}{3{,}00}\cdot10^{10-8}\,\text{s} = 1{,}367\cdot10^{2}\,\text{s} = 137\,\text{s}$
-**Vastaus:** $137\,\text{s}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
-**Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa ja Venus on noin $4\cdot10^{10}\,\text{m}$ päässä, joten aika on noin $\dfrac{4\cdot10^{10}}{3\cdot10^{8}} \approx 1{,}3\cdot10^{2}\,\text{s}$ eli vajaat kaksi ja puoli minuuttia. Se on lyhyempi kuin valon matka Auringosta (500 s), koska Venus on lähempänä kuin Aurinko.
+**Annettu:** lyijyatomin halkaisija $d_2 = 3{,}5\cdot10^{-10}\,\text{m}$ ja sen ytimen halkaisija $d_1 = 1{,}4\cdot10^{-14}\,\text{m}$
+**Kysytty:** kokojen suhde $k$ (kuinka monta kertaa atomi on ydintään suurempi)
+**Periaate:** Kysymys ”kuinka monta kertaa suurempi” on jakolasku: suurempi koko jaetaan pienemmällä. Kymmenpotenssit jaetaan vähentämällä eksponentit, ja kerroinosat jaetaan tavallisesti.
+**Kaava:** $k = \dfrac{d_2}{d_1} = \dfrac{a_2}{a_1}\cdot10^{n_2-n_1}$
+**Muunnokset:** Ei tarvita: molemmat halkaisijat ovat metreinä, joten yksiköt supistuvat ja $k$ on pelkkä luku.
+**Sijoitus:** $k = \dfrac{3{,}5\cdot10^{-10}\,\text{m}}{1{,}4\cdot10^{-14}\,\text{m}} = \dfrac{3{,}5}{1{,}4}\cdot10^{-10-(-14)} = 2{,}5\cdot10^{4}$
+**Vastaus:** $25\,000$ kertaa eli $2{,}5\cdot10^{4}$; kaksi merkitsevää numeroa kuten annetuissa halkaisijoissa.
+**Järkevyys:** Suuruusluokat ovat $10^{-10}\,\text{m}$ ja $10^{-14}\,\text{m}$, joten suhteen pitää olla $10^{4}$–$10^{5}$, ja $2{,}5\cdot10^{4}$ on tällä välillä. Lyijyn ydin on suuri, koska siinä on yli 200 protonia ja neutronia, joten ero atomiin on pienempi kuin vedyllä ($6{,}5\cdot10^{4}$).
 
 ## fy1-1-L1-05
 **Annettu:** hiuksen paksuus $d_2 = 7{,}0\cdot10^{-5}\,\text{m}$ ja punasolun halkaisija $d_1 = 7{,}5\cdot10^{-6}\,\text{m}$
@@ -49,14 +49,14 @@
 **Järkevyys:** Suuruusluokat ovat $10^{-4}\,\text{m}$ ja $10^{-5}\,\text{m}$, joten ero on yksi suuruusluokka eli noin kymmenkertainen. Tulos $9{,}3$ on lähellä kymmentä, joten se on järkevä.
 
 ## fy1-1-L2-01
-**Annettu:** valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$ ja vuoden pituus $t = 3{,}156\cdot10^{7}\,\text{s}$
-**Kysytty:** valovuoden pituus $s$ petametreinä, yksikössä $\text{Pm}$
-**Periaate:** Valovuosi on matka, jonka valo kulkee vuodessa. Valo kulkee tasaisella nopeudella, joten matka on nopeus kertaa aika.
-**Kaava:** $s = c\,t$
-**Muunnokset:** Vuosi on jo sekunteina, joten sekunnit supistuvat ja tulos tulee metreinä. Petametreiksi: $1\,\text{Pm} = 10^{15}\,\text{m}$, joten $10^{15}$ jää pois.
-**Sijoitus:** $s = 2{,}998\cdot10^{8}\,\text{m/s}\cdot3{,}156\cdot10^{7}\,\text{s} = (2{,}998\cdot3{,}156)\cdot10^{8+7}\,\text{m} = 9{,}462\cdot10^{15}\,\text{m} = 9{,}462\,\text{Pm}$
-**Vastaus:** $9{,}46\,\text{Pm}$ eli $9{,}46\cdot10^{15}\,\text{m}$, kolme merkitsevää numeroa (tiedoissa on neljä, vastaus pyöristetään; kenttään sopii $9{,}462$).
-**Järkevyys:** Arvio: $3\cdot10^{8}\cdot3\cdot10^{7} = 9\cdot10^{15}$, joten tulos on oikean suuruinen. Auringon ja Maan väli $1{,}5\cdot10^{11}\,\text{m}$ on vain noin $10^{-5}$ valovuotta, mikä sopii siihen, että valo kulkee sen kahdeksassa minuutissa.
+**Annettu:** Linnunradan halkaisija $1{,}0\cdot10^{5}$ valovuotta, $1$ valovuosi $= 9{,}46\cdot10^{15}\,\text{m}$ ja havaittavan maailmankaikkeuden halkaisija $D = 8{,}8\cdot10^{26}\,\text{m}$
+**Kysytty:** kuinka monta Linnunradan halkaisijaa $N$ mahtuu havaittavan maailmankaikkeuden halkaisijalle, tuhansina
+**Periaate:** Rivissä olevien halkaisijoiden lukumäärä on pituuksien suhde: suurempi pituus jaetaan pienemmällä. Pituuksien pitää olla samassa yksikössä, joten Linnunradan halkaisija muunnetaan ensin metreiksi.
+**Kaava:** $N = \dfrac{D}{d}$, missä $d$ on Linnunradan halkaisija metreinä
+**Muunnokset:** $d = 1{,}0\cdot10^{5}\cdot9{,}46\cdot10^{15}\,\text{m} = 9{,}46\cdot10^{20}\,\text{m}$. Lopuksi tuhansiksi jakamalla luvulla $1000$.
+**Sijoitus:** $N = \dfrac{8{,}8\cdot10^{26}\,\text{m}}{9{,}46\cdot10^{20}\,\text{m}} = 0{,}930\cdot10^{6} = 9{,}30\cdot10^{5} = 930\ \text{tuhatta}$
+**Vastaus:** noin $930$ tuhatta eli $9{,}3\cdot10^{5}$; kaksi merkitsevää numeroa kuten Linnunradan halkaisijassa ja maailmankaikkeuden halkaisijassa.
+**Järkevyys:** Suuruusluokat ovat $10^{21}\,\text{m}$ ja $10^{27}\,\text{m}$, joten suhteen pitää olla noin $10^{6}$, ja $9{,}3\cdot10^{5}$ on sitä lähellä. Havaittavaan maailmankaikkeuteen mahtuu siis noin miljoona Linnunradan läpimittaa rivissä.
 
 ## fy1-1-L2-02
 **Annettu:** matka $s = 4{,}0\cdot10^{16}\,\text{m}$, $c = 2{,}998\cdot10^{8}\,\text{m/s}$, yksi vuosi $3{,}156\cdot10^{7}\,\text{s}$

@@ -1393,5 +1393,288 @@
       "etuliite"
     ],
     "locked": false
+  },
+  {
+    "term": "molekyyli",
+    "definition": "Kahden tai useamman atomin yhteen sitoutunut kokonaisuus. Esimerkiksi vesimolekyylissä on yksi happiatomi ja kaksi vetyatomia; sen koko on noin 3 · 10⁻¹⁰ m.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomi",
+    "definition": "Aineen rakenneosa, jossa on keskellä pieni atomiydin ja sen ympärillä elektroneja. Atomin halkaisija on noin 10⁻¹⁰ m, kymmeniätuhansia kertoja ytimen halkaisija.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomiydin",
+      "elektroni",
+      "molekyyli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomiydin",
+    "definition": "Atomin keskellä oleva pieni ja tiheä osa, joka koostuu protoneista ja neutroneista. Halkaisija noin 10⁻¹⁵–10⁻¹⁴ m; ytimessä on yli 99,9 % atomin massasta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi",
+      "protoni",
+      "neutroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektroni",
+    "definition": "Negatiivisesti varattu alkeishiukkanen, joka liikkuu atomissa ytimen ympärillä. Elektronille ei ole mitattu kokoa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "atomi",
+      "alkeishiukkanen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "protoni",
+    "definition": "Positiivisesti varattu atomiytimen osa, halkaisijaltaan noin 1,7 · 10⁻¹⁵ m. Protoni koostuu kolmesta kvarkista; vetyatomin ydin on yksi protoni.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "neutroni",
+      "kvarkki",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "neutroni",
+    "definition": "Sähköisesti neutraali atomiytimen osa, kooltaan ja massaltaan lähes protonin kaltainen. Neutroni koostuu kolmesta kvarkista.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "protoni",
+      "kvarkki",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvarkki",
+    "definition": "Alkeishiukkanen, josta protonit ja neutronit koostuvat, kumpikin kolmesta. Kvarkille ei ole mitattu kokoa: kokeiden mukaan se on pienempi kuin noin 10⁻¹⁸ m.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "protoni",
+      "neutroni",
+      "alkeishiukkanen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeishiukkanen",
+    "definition": "Hiukkanen, jolla ei tiettävästi ole pienempiä osia, esimerkiksi elektroni ja kvarkki.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "elektroni",
+      "kvarkki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "planeetta",
+    "definition": "Tähteä kiertävä suuri kappale, joka ei tuota itse valoa vaan heijastaa tähtensä valoa. Maa on Aurinkoa kiertävä planeetta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "planeettakunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tähti",
+    "definition": "Kuuma kaasupallo, joka tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Aurinko on tähti.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeetta",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "planeettakunta",
+    "definition": "Tähti ja sitä kiertävät planeetat, kuut ja pienemmät kappaleet. Aurinkokunta on yksi planeettakunta.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeetta",
+      "tähti",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "galaksi",
+    "definition": "Painovoiman koossa pitämä valtava joukko tähtiä, kaasua ja pölyä. Linnunrata on galaksi, jonka halkaisija on noin 10⁵ valovuotta; galaksit muodostavat ryhmiä ja joukkoja.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "havaittava maailmankaikkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sumu",
+    "definition": "Kaasu- ja pölypilvi galaksissa, kooltaan tyypillisesti valovuosia. Sumuissa syntyy tähtiä, esimerkiksi Orionin sumussa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "galaksi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "neutronitähti",
+    "definition": "Raskaan tähden räjähdyksestä jäänyt kappale, joka koostuu lähes pelkistä neutroneista. Massa on tavallisesti suurempi kuin Auringon, mutta halkaisija vain noin 20–25 km.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "tähti",
+      "musta aukko"
+    ],
+    "locked": false
+  },
+  {
+    "term": "musta aukko",
+    "definition": "Alue, josta painovoiman takia mikään, ei edes valo, pääse ulos. Mustalla aukolla ei ole pintaa; sen koko on tapahtumahorisontin halkaisija, joka kasvaa massan mukana.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "neutronitähti",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "havaittava maailmankaikkeus",
+    "definition": "Se osa maailmankaikkeutta, josta valo on ehtinyt tulla meille maailmankaikkeuden iän aikana; halkaisija noin 8,8 · 10²⁶ m. Koko maailmankaikkeuden kokoa ei tiedetä.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "galaksi",
+      "valovuosi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heliosfääri",
+    "definition": "Aurinkotuulen eli Auringosta virtaavien hiukkasten ympärilleen puhaltama kupla. Sen raja, heliopaussi, on noin 120 AU:n päässä; Auringon painovoima ulottuu paljon kauemmas.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "planeettakunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perusvuorovaikutus",
+    "definition": "Yksi neljästä vuorovaikutuksesta, joihin kaikki tunnetut vuorovaikutukset palautuvat: gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "gravitaatio",
+      "sähkömagneettinen vuorovaikutus",
+      "vahva vuorovaikutus",
+      "heikko vuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatio",
+    "definition": "Perusvuorovaikutus kaikkien massallisten kappaleiden välillä, aina vetävä. Pitää planeetat radoillaan ja kokoaa tähtiä ja galakseja; hallitsee suurissa mittakaavoissa.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "vuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneettinen vuorovaikutus",
+    "definition": "Perusvuorovaikutus sähköisesti varattujen hiukkasten välillä: erimerkkiset varaukset vetävät ja samanmerkkiset hylkivät. Pitää elektronit atomissa ja sitoo atomit molekyyleiksi.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "elektroni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vahva vuorovaikutus",
+    "definition": "Perusvuorovaikutus, joka sitoo kvarkit protoneiksi ja neutroneiksi; sen jäännösvaikutus pitää atomiytimen koossa. Ulottuu vain noin 10⁻¹⁵ m:n etäisyydelle.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "kvarkki",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heikko vuorovaikutus",
+    "definition": "Perusvuorovaikutus, joka aiheuttaa eräitä radioaktiivisia hajoamisia, kuten beetahajoamisen, jossa neutroni muuttuu protoniksi.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "beetahajoaminen",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ja ytimestä lähtee elektroni ja antineutriino. Sen aiheuttaa heikko vuorovaikutus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "heikko vuorovaikutus",
+      "neutroni"
+    ],
+    "locked": false
   }
 ]

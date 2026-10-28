@@ -247,6 +247,20 @@ Metri sopii huoneen mittaamiseen mutta ei atomille eikä Neptunukselle. Siksi yk
 
 Kun siirrytään pienempään yksikköön, lukuarvo kasvaa: $4{,}2\,\text{km} = 4{,}2\cdot10^{3}\,\text{m} = 4200\,\text{m}$. Kun siirrytään suurempaan, lukuarvo pienenee. Suure pysyy samana, vain sen kirjoitustapa muuttuu.
 
+### Jokaiselle mittakaavalle oma yksikkö
+Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* nähtiin, että aineen ja maailmankaikkeuden rakenteet ovat kymmenpotenssien portailla. Jokaiselle portaalle on kätevä yksikkö:
+
+| Rakenne | Koko metreinä | Kätevä yksikkö |
+|---|---|---|
+| atomiydin | $10^{-15}$–$10^{-14}\,\text{m}$ | femtometri, $1\,\text{fm} = 10^{-15}\,\text{m}$ |
+| atomi, pieni molekyyli | $10^{-10}\,\text{m}$ | nanometri, $1\,\text{nm} = 10^{-9}\,\text{m}$ |
+| punasolu | $7{,}5\cdot10^{-6}\,\text{m}$ | mikrometri, $1\,\mu\text{m} = 10^{-6}\,\text{m}$ |
+| Maa | $1{,}27\cdot10^{7}\,\text{m}$ | kilometri, $1\,\text{km} = 10^{3}\,\text{m}$ |
+| Aurinkokunnan planeettojen alue | $10^{12}$–$10^{13}\,\text{m}$ | astronominen yksikkö $\text{AU}$, noin $1{,}5\cdot10^{11}\,\text{m}$ |
+| tähtien välimatkat, galaksit | $10^{16}$–$10^{21}\,\text{m}$ | valovuosi, noin $9{,}46\cdot10^{15}\,\text{m}$ |
+
+Esimerkiksi vetyatomin halkaisija on $0{,}11\,\text{nm}$ ja protonin $1{,}7\,\text{fm}$. Yksikkö ei muuta kokoa, vain sen kirjoitustapaa. Astronominen yksikkö ja valovuosi eivät ole SI-yksiköitä, mutta ne on määritelty metreinä, joten ne voi aina muuntaa metreiksi.
+
 ### Merkitsevät numerot
 Lukuarvon **merkitsevät numerot** kertovat, kuinka tarkasti suure tunnetaan. Ensimmäisestä nollasta eroavasta numerosta alkaen kaikki numerot, myös loppunollat, ovat merkitseviä: $0{,}0250\,\text{m}$ on kolme merkitsevää numeroa ja $3{,}0\,\text{m}$ kaksi. Kymmenpotenssimuoto tekee tarkkuuden näkyväksi: $3{,}00\cdot10^{8}$ on kolme merkitsevää numeroa ja $3\cdot10^{8}$ yksi. Kokonaisluvun loppunollat ovat epäselviä: luvusta $384\,400$ ei näe, onko tarkkuus sata vai yksi kilometri. Kirjoita tarkkuus näkyviin kymmenpotenssimuodossa, esimerkiksi $3{,}844\cdot10^{5}$ (neljä merkitsevää numeroa).
 
@@ -262,7 +276,7 @@ missä $x$ on lukuarvo ja $U$ yksikkö. Esimerkiksi suhde $\tfrac{1\,\text{km}}{
 
 Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on Maan ja Auringon keskimääräinen etäisyys: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Valovuosi on sekin pituusyksikkö eikä aikayksikkö: se on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
 
-Etäisyyden voi ilmoittaa myös sillä ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$, joten kulkuajan antaa annettu kaava $s = ct$ ratkaistuna ajan suhteen:
+Etäisyyden voi ilmoittaa myös sillä ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$, joten sen kulkema matka on nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun tämä kaava ratkaistaan ajan suhteen:
 
 ```latex
 t = \frac{s}{c}

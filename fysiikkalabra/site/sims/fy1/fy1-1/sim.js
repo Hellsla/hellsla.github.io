@@ -19,6 +19,7 @@ new p5((p) => {
     { id: 'gamma', m: 1.0e-12, lat: '1{,}0\\cdot10^{-12}\\,\\text{m}', bw: 1, dim: 'w', cat: 'q' },
     { id: 'heatom', m: 6.2e-11, lat: '6{,}2\\cdot10^{-11}\\,\\text{m}', bw: 1, dim: 'w', cat: 'q' },
     { id: 'atom', m: 1.1e-10, lat: '1{,}1\\cdot10^{-10}\\,\\text{m}', bw: 1, dim: 'w', cat: 'q' },
+    { id: 'water', m: 2.8e-10, lat: '2{,}8\\cdot10^{-10}\\,\\text{m}', bw: 1, dim: 'w', cat: 'q' },
     { id: 'dna', m: 2.0e-9, lat: '2{,}0\\cdot10^{-9}\\,\\text{m}', bw: 1, dim: 'w', cat: 'b' },
     { id: 'virus', m: 1.0e-7, lat: '1{,}0\\cdot10^{-7}\\,\\text{m}', bw: 1, dim: 'w', cat: 'b' },
     { id: 'rbc', m: 7.5e-6, lat: '7{,}5\\cdot10^{-6}\\,\\text{m}', bw: 1, dim: 'w', cat: 'b' },
@@ -30,11 +31,13 @@ new p5((p) => {
     { id: 'whale', m: 3.0e1, lat: '3{,}0\\cdot10^{1}\\,\\text{m}', bw: 1, dim: 'w', cat: 'h' },
     { id: 'building', m: 8.3e2, lat: '8{,}3\\cdot10^{2}\\,\\text{m}', bw: 0.2, dim: 'h', cat: 'h' },
     { id: 'everest', m: 8.8e3, lat: '8{,}8\\cdot10^{3}\\,\\text{m}', bw: 1.8, dim: 'h', cat: 'h' },
+    { id: 'nstar', m: 2.4e4, lat: '2{,}4\\cdot10^{4}\\,\\text{m}', bw: 1, dim: 'w', cat: 'c' },
     { id: 'space', m: 1.0e5, lat: '1{,}0\\cdot10^{5}\\,\\text{m}', bw: 0.3, dim: 'h', cat: 'h' },
     { id: 'moon', m: 3.5e6, lat: '3{,}5\\cdot10^{6}\\,\\text{m}', bw: 1, dim: 'w', cat: 'p' },
     { id: 'earth', m: 1.27e7, lat: '1{,}27\\cdot10^{7}\\,\\text{m}', bw: 1, dim: 'w', cat: 'p' },
     { id: 'jupiter', m: 1.4e8, lat: '1{,}4\\cdot10^{8}\\,\\text{m}', bw: 1, dim: 'w', cat: 'p' },
     { id: 'sun', m: 1.39e9, lat: '1{,}39\\cdot10^{9}\\,\\text{m}', bw: 1, dim: 'w', cat: 'p' },
+    { id: 'bh', m: 2.5e10, lat: '2{,}5\\cdot10^{10}\\,\\text{m}', bw: 1, dim: 'w', cat: 'c' },
     { id: 'au', m: 1.50e11, ext: 3.0e11, lat: '1{,}5\\cdot10^{11}\\,\\text{m}', bw: 1, dim: 'r', cat: 'p' },
     { id: 'saturn', m: 1.43e12, ext: 2.86e12, lat: '1{,}43\\cdot10^{12}\\,\\text{m}', bw: 1, dim: 'r', cat: 'p' },
     { id: 'neptune', m: 4.5e12, ext: 9.0e12, lat: '4{,}5\\cdot10^{12}\\,\\text{m}', bw: 1, dim: 'r', cat: 'p' },
@@ -177,7 +180,7 @@ new p5((p) => {
     const vb = ySbL - 1.09 * fh - 4 - 0.32 * fh, nb = vb - 1.43 * fh - 2, yb = nb - 0.9 * fh - 14;
     geo = { mapTop: mapY - 16, yb };
     readout.html(__('rivi_leveys', { L: Lfmt(L) }) + '<br>' + __('rivi_kohde', { nimi: __('o_' + M.id), lat: M.lat }) + '<br>' +
-      (vis.length ? __('rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => __('o_' + it.o.id)).join(', ') }) : __('rivi_tyhja')));
+      (vis.length ? __('rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => `$\\text{${__('o_' + it.o.id)}}$`).join(', ') }) : __('rivi_tyhja')));
     window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
       palkkiK: kk, palkkiPx: barPx, running, dir, speed, labels: null };
     labels = [];
@@ -390,6 +393,12 @@ new p5((p) => {
     },
     atom(cx, yb, S) { atomPic(cx, yb, S, [51, 154, 240], 1); },       // electron cloud (probability), nucleus drawn larger than true size
     heatom(cx, yb, S) { atomPic(cx, yb, S, [64, 192, 87], 2); },
+    water(cx, yb, S) {                                   // a water molecule: one oxygen atom and two hydrogen atoms at 104,5°; the atoms drawn as balls
+      const rO = S * 0.3, rH = S * 0.2, cy = yb - S * 0.44, d = S * 0.3, a = 52.25 * Math.PI / 180;
+      for (const sg of [-1, 1]) { const x = cx + sg * d * Math.sin(a) * 1.25, y = cy + d * Math.cos(a) * 1.25;
+        disc(x, y, rH, rg(x - 0.3 * rH, y - 0.35 * rH, 0.05 * rH, x, y, rH, [[0, '#ffffff'], [0.6, '#dee2e6'], [1, '#868e96']]), '#495057', lw(S, 0.008, 0.6, 1.6)); }
+      disc(cx, cy, rO, rg(cx - 0.3 * rO, cy - 0.35 * rO, 0.05 * rO, cx, cy, rO, [[0, '#ffc9c9'], [0.55, '#e03131'], [1, '#8f1d1d']]), '#7a1717', lw(S, 0.008, 0.6, 1.6));
+    },
     dna(cx, yb, S) {                                     // double helix, width S; the pitch is 1,7 times the width
       const c = ctx(), H = S * 3.2, N = 120, pitch = S * 1.7, R = S * 0.42, wd = Math.max(1.6, S * 0.11);
       const pt = (t, ph) => [cx + R * Math.cos(t * H / pitch * 6.283 + ph), yb - t * H, Math.sin(t * H / pitch * 6.283 + ph)];
@@ -484,6 +493,12 @@ new p5((p) => {
       GRAN.forEach(([u, v, a]) => ell(cx + u * r, cy + v * r, r * 0.07, r * 0.045, a, 'rgba(255,255,255,0.18)'));
     },
     au(cx, yb, S, f) { orbitPicture(cx, yb, S, [1], 1, f); },
+    bh(cx, yb, S, f) {                                   // the black hole at the centre of the Milky Way: S is the diameter of its event horizon (a boundary, not a surface)
+      const r = S / 2, cy = yb - r, c = ctx();
+      disc(cx, cy, r * 1.7, rg(cx, cy, r, cx, cy, r * 1.7, [[0, 'rgba(255,146,43,0.55)'], [0.4, 'rgba(255,192,120,0.22)'], [1, 'rgba(255,192,120,0)']]));
+      disc(cx, cy, r, '#000000');
+      c.save(); c.setLineDash([5, 4]); disc(cx, cy, r, null, f > 0.5 ? 'rgba(60,70,90,0.8)' : 'rgba(255,214,170,0.85)', 1.3); c.restore();
+    },
     saturn(cx, yb, S, f) { orbitPicture(cx, yb, S, [0.387, 0.723, 1, 1.524, 5.203, 9.537], 9.537, f); },
     neptune(cx, yb, S, f) { orbitPicture(cx, yb, S, [0.387, 0.723, 1, 1.524, 5.203, 9.537, 19.19, 30.07], 30.07, f); },
     ly(cx, yb, S) {                                      // a beam of light, one year long
@@ -584,6 +599,14 @@ new p5((p) => {
       const c = ctx(); c.save(); c.setLineDash([6, 5]); disc(cx, cy, R, null, 'rgba(232,118,28,0.95)', 2); disc(cx, cy, R * 0.25, null, f > 0.5 ? 'rgba(60,70,90,0.6)' : 'rgba(200,215,245,0.7)', 1.2); c.restore();
       disc(cx, cy, Math.max(3, S * 0.01), rg(cx, cy, 0, cx, cy, Math.max(3, S * 0.01), [[0, '#fff9db'], [1, '#f08c00']]), '#e67700', 1);
       radiusLine(cx, cy, R, -0.5);
+    },
+    nstar(cx, yb, S) {                                   // a neutron star: a city-sized ball of neutrons, hot and blue-white; faint beams of a pulsar
+      const r = S / 2, cy = yb - r, c = ctx();
+      c.save(); c.translate(cx, cy); c.rotate(-0.35);
+      for (const sg of [-1, 1]) poly([[0, 0], [-r * 0.45, sg * r * 2.6], [r * 0.45, sg * r * 2.6]], lg(0, 0, 0, sg * r * 2.6, [[0, 'rgba(165,216,255,0.55)'], [1, 'rgba(165,216,255,0)']]));
+      c.restore();
+      disc(cx, cy, r * 1.35, rg(cx, cy, r * 0.9, cx, cy, r * 1.35, [[0, 'rgba(165,216,255,0.6)'], [1, 'rgba(165,216,255,0)']]));
+      disc(cx, cy, r, rg(cx - 0.3 * r, cy - 0.35 * r, 0.05 * r, cx, cy, r, [[0, '#ffffff'], [0.5, '#d0ebff'], [1, '#4dabf7']]), '#1971c2', lw(S));
     },
     oort(cx, yb, S, f) {                                 // a shell of icy bodies; the planets' region is a speck in the middle
       const R = S / 2, cy = yb - R, c = ctx();

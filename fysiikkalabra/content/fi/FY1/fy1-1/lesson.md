@@ -103,7 +103,7 @@ Kun halutaan tietää, kuinka monta kertaa koko $d_2$ on suurempi kuin koko $d_1
 k = \frac{d_2}{d_1} = \frac{a_2}{a_1}\cdot 10^{\,n_2-n_1}
 ```
 
-Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ ovat kokojen $d_1$ ja $d_2$ kerroinosat ja $n_1$ ja $n_2$ niiden eksponentit. Karkeasti $k \approx 10^{\Delta n}$, missä $\Delta n = n_2 - n_1$ on suuruusluokkien ero eli kymmenpotenssien lukumäärä.
+Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ ovat kokojen $d_1$ ja $d_2$ kerroinosat ja $n_1$ ja $n_2$ niiden eksponentit. Karkeasti $k \approx 10^{\Delta n}$, missä $\Delta n = n_2 - n_1$ on eksponenttien ero. Se on likimain suuruusluokkien ero eli kymmenpotenssien lukumäärä. Suuruusluokkien ero saadaan täsmälleen, kun kumpikin koko pyöristetään ensin suuruusluokakseen.
 
 <svg data-fig="ladder" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva, ei mittakaavassa: viisi tikapuuaskelmaa, joissa koko on kymmenkertaistunut jokaisella askeleella 10 potenssiin n1, n1 plus 1, n1 plus 2 ja niin edelleen aina 10 potenssiin n2 asti. Suuruusluokkien ero on askelten lukumäärä n2 miinus n1, ja kokojen suhde d2 per d1 on noin 10 potenssiin n2 miinus n1." style="max-width:100%;font-size:24px">
   <rect x="28" y="228" width="56" height="34" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
@@ -137,38 +137,265 @@ Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ 
 
 ### Valovuosi on pituuden yksikkö
 
-Tähtien väliset etäisyydet ovat niin suuria, että metri on epäkäytännöllinen. **Valovuosi** on matka, jonka valo kulkee tyhjiössä yhdessä vuodessa, eli pituus eikä aika. Valo kulkee tasaisella nopeudella $c = 2{,}998\cdot10^{8}\,\text{m/s}$, joten sen kulkema matka noudattaa suoraviivaisen liikkeen mallia.
+Tähtien väliset etäisyydet ovat niin suuria, että metri on epäkäytännöllinen. **Valovuosi** on matka, jonka valo kulkee tyhjiössä yhdessä vuodessa, noin $9{,}46\cdot10^{15}\,\text{m}$. Se on siis pituus eikä aika. Valon kulkuaikoja ja tähtitieteen pituusyksiköitä käsitellään tarkemmin luvussa *Suureet, yksiköt ja SI-järjestelmä*.
 
-```latex
-s = c\,t
-```
+## Aineen rakenne
 
-Tässä $s$ on valon kulkema matka, $c$ valon nopeus tyhjiössä ja $t$ kulunut aika. Yhdessä vuodessa, $t = 3{,}156\cdot10^{7}\,\text{s}$, valo kulkee matkan $s = 9{,}46\cdot10^{15}\,\text{m}$.
+### Aine koostuu sisäkkäisistä rakenteista
 
-<svg data-fig="light-time" viewBox="0 0 600 346" role="img" aria-label="Kaaviokuva, ei mittakaavassa: valo kulkee tyhjiössä nopeudella c ja matka on s = c t. Valo kulkee Kuusta Maahan 3,84 · 10 potenssiin 8 metriä noin 1,28 sekunnissa, Auringosta Maahan 1,50 · 10 potenssiin 11 metriä noin 8,3 minuutissa ja Proxima Centaurista Maahan 4,0 · 10 potenssiin 16 metriä noin 4,2 vuodessa. Nuolten pituudet kuvaavat vain järjestystä." style="max-width:100%;font-size:24px">
-  <foreignObject x="24" y="21.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Kuu}$</div></foreignObject>
-  <circle cx="34" cy="70" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M58,76 L250,76 L250,83 L272,70 L250,57 L250,64 L58,64 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <circle cx="290" cy="70" r="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="310" y="55.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa}$</div></foreignObject>
-  <foreignObject x="135" y="21.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 3{,}84\cdot10^{8}\,\text{m}$</div></foreignObject>
-  <foreignObject x="160" y="89.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$t = 1{,}28\,\text{s}$</div></foreignObject>
-  <foreignObject x="24" y="121.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Aurinko}$</div></foreignObject>
-  <circle cx="34" cy="170" r="12" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M58,176 L360,176 L360,183 L382,170 L360,157 L360,164 L58,164 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <circle cx="400" cy="170" r="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="420" y="155.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa}$</div></foreignObject>
-  <foreignObject x="184" y="121.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 1{,}50\cdot10^{11}\,\text{m}$</div></foreignObject>
-  <foreignObject x="209" y="189.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$t = 8{,}3\,\text{min}$</div></foreignObject>
-  <foreignObject x="24" y="221.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Proxima}$</div></foreignObject>
-  <circle cx="34" cy="270" r="12" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M58,276 L460,276 L460,283 L482,270 L460,257 L460,264 L58,264 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <circle cx="500" cy="270" r="12" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="520" y="255.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa}$</div></foreignObject>
-  <foreignObject x="240" y="221.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 4{,}0\cdot10^{16}\,\text{m}$</div></foreignObject>
-  <foreignObject x="271.5" y="289.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$t = 4{,}2\,\text{a}$</div></foreignObject>
-  <foreignObject x="389" y="315.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{ei mittakaavassa}$</div></foreignObject>
+Kaikki ympärillämme oleva aine koostuu **atomeista**. Atomit voivat liittyä toisiinsa **molekyyleiksi**: vesimolekyylissä on yksi happiatomi ja kaksi vetyatomia. Jokaisen atomin keskellä on pieni **atomiydin**, ja sen ympärillä liikkuu **elektroneja**. Ydin koostuu **protoneista** ja **neutroneista**, ja kumpikin niistä koostuu kolmesta **kvarkista**. Kvarkit ja elektroni ovat **alkeishiukkasia**: niillä ei tiettävästi ole pienempiä osia, eikä niille ole mitattu kokoa. Kokeiden mukaan ne ovat pienempiä kuin noin $10^{-18}\,\text{m}$.
+
+<svg data-fig="matter-ladder" viewBox="0 0 600 432" role="img" aria-label="Kaaviokuva, ei mittakaavassa: aineen rakenne portaittain ylhäältä alas. Vesimolekyyli, noin 3 · 10 potenssiin −10 metriä, koostuu atomeista. Atomi, noin 10 potenssiin −10 metriä, koostuu ytimestä ja elektroneista. Ydin, 10 potenssiin −15 … −14 metriä, koostuu protoneista ja neutroneista. Protoni ja neutroni, noin 10 potenssiin −15 metriä, koostuvat kolmesta kvarkista. Kvarkit ja elektroni ovat alkeishiukkasia, pienempiä kuin noin 10 potenssiin −18 metriä. Jokaisen rivin kuva on suurennos edellisen rivin pienestä kohdasta." style="max-width:100%;font-size:24px">
+  <line x1="55" y1="72" x2="36" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="73" y1="72" x2="96" y2="154" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="61" y1="154" x2="36" y2="232" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="71" y1="154" x2="96" y2="232" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="53" y1="226" x2="36" y2="310" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="67" y1="226" x2="96" y2="310" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="69" y1="302" x2="36" y2="388" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="81" y1="302" x2="96" y2="388" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="64" cy="72" r="9" fill="none" stroke="#e8590c" stroke-width="2"/>
+  <circle cx="66" cy="154" r="5" fill="none" stroke="#e8590c" stroke-width="2"/>
+  <circle cx="60" cy="226" r="7" fill="none" stroke="#e8590c" stroke-width="2"/>
+  <circle cx="75" cy="302" r="6" fill="none" stroke="#e8590c" stroke-width="2"/>
+  <circle cx="47" cy="89" r="12" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="85" cy="89" r="12" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="66" cy="74" r="19" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="66" cy="154" r="30" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <circle cx="66" cy="154" r="20" fill="#1971c2" fill-opacity="0.18"/>
+  <circle cx="66" cy="154" r="4" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="87" cy="142" r="4" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="48" cy="169" r="4" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="72" cy="251" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="74" cy="214.5" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="49" cy="239" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="82.5" cy="238" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="58.5" cy="217.5" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="62" cy="246.5" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="78" cy="224.5" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="53.5" cy="230" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="73" cy="241" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="67" cy="222.5" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="60.5" cy="237" r="6.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="70" cy="232" r="6.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="66" cy="310" r="30" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
+  <circle cx="66" cy="295.5" r="6.6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="78.5" cy="317" r="6.6" fill="#2b8a3e" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="53.5" cy="317" r="6.6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="52" cy="388" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="80" cy="388" r="6" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <foreignObject x="116" y="46.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vesimolekyyli: kolme atomia yhdessä}$</div></foreignObject>
+  <foreignObject x="116" y="78.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$3\cdot10^{-10}\,\text{m}$</div></foreignObject>
+  <foreignObject x="116" y="124.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{atomi: ydin ja elektronit}$</div></foreignObject>
+  <foreignObject x="116" y="156.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$10^{-10}\,\text{m}$</div></foreignObject>
+  <foreignObject x="116" y="202.5" width="308" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ydin: protonit ja neutronit}$</div></foreignObject>
+  <foreignObject x="116" y="234.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$10^{-15}\text{–}10^{-14}\,\text{m}$</div></foreignObject>
+  <foreignObject x="116" y="280.5" width="357" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{protoni tai neutroni: 3 kvarkkia}$</div></foreignObject>
+  <foreignObject x="116" y="312.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$10^{-15}\,\text{m}$</div></foreignObject>
+  <foreignObject x="116" y="358.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kvarkki, elektroni: alkeishiukkasia}$</div></foreignObject>
+  <foreignObject x="116" y="390.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">${<}\,10^{-18}\,\text{m}$</div></foreignObject>
+  <foreignObject x="389" y="5.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{ei mittakaavassa}$</div></foreignObject>
 </svg>
+
+### Atomi on ydintään kymmeniätuhansia kertoja suurempi
+
+Atomin halkaisija on noin $10^{-10}\,\text{m}$, mutta ytimen vain $10^{-15}$–$10^{-14}\,\text{m}$. Suuruusluokkia niiden välillä on neljä tai viisi, joten atomi on kymmeniätuhansia kertoja ydintään suurempi. Jos atomi suurennettaisiin jalkapallostadionin kokoiseksi, ydin olisi sen keskellä herneen kokoinen. Silti ytimessä on yli 99,9 prosenttia atomin massasta. Atomin koon määrää elektronien liikkumisalue, ja ydin on sen keskellä pieni ja hyvin tiheä. Vetyatomin ydin on yksi protoni.
+
+<svg data-fig="atom-stadium" viewBox="0 0 600 330" role="img" aria-label="Vertauskuva atomista ja sen ytimestä: jos atomi olisi jalkapallostadionin kokoinen, noin 200 metriä, sen ydin olisi keskellä herneen kokoinen, noin 5 millimetriä. Herne on kuvassa piirretty aivan liian suureksi; oikeassa suhteessa se olisi alle pikselin kokoinen. Atomin halkaisija on noin 10 potenssiin −10 metriä ja ytimen noin 10 potenssiin −15 metriä." style="max-width:100%;font-size:24px">
+  <ellipse cx="300" cy="172" rx="250" ry="122" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="300" cy="172" rx="214" ry="96" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2"/>
+  <rect x="150" y="102" width="300" height="140" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <line x1="300" y1="102" x2="300" y2="242" stroke="#ffffff" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="300" cy="172" r="26" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="300" cy="172" r="5" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="420" y1="132" x2="322.5" y2="164.5" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M312,168 L321.5,159 L325,169.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="424" y="109.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ydin} \approx \text{herne}$</span></div></foreignObject>
+  <foreignObject x="104" y="197.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{atomi} \approx \text{stadion}$</span></div></foreignObject>
+  <line x1="50" y1="312" x2="550" y2="312" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="50" y1="304" x2="50" y2="320" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="550" y1="304" x2="550" y2="320" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="258.5" y="297.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\approx 200\,\text{m}$</span></div></foreignObject>
+  <foreignObject x="239" y="7.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{herne piirretty liian suureksi}$</div></foreignObject>
+</svg>
+
+## Maailmankaikkeuden rakenteet
+
+### Maan osoite maailmankaikkeudessa
+
+Maa on **planeetta**: se kiertää **tähteä** eli Aurinkoa, ja Kuu kiertää Maata. Tähti on kuuma kaasupallo, joka tuottaa itse valonsa ytimessään tapahtuvissa ydinreaktioissa. Planeetta ei tuota valoa, vaan se näkyy, koska se heijastaa tähtensä valoa. Aurinko, sen kahdeksan planeettaa kuineen sekä kääpiöplaneetat, asteroidit ja komeetat muodostavat **Aurinkokunnan**. Se on yksi **planeettakunta** monien joukossa: muita tähtiä kiertäviä planeettoja tunnetaan jo tuhansia.
+
+Aurinko on yksi Linnunradan sadoista miljardeista tähdistä. **Linnunrata** on **galaksi** eli painovoiman koossa pitämä valtava joukko tähtiä, kaasua ja pölyä, ja sen halkaisija on noin $10^{5}$ valovuotta. Galakseja on havaittavassa maailmankaikkeudessa arviolta satoja miljardeja. Ne muodostavat **galaksiryhmiä** ja suurempia **galaksijoukkoja**: Linnunrata ja Andromedan galaksi kuuluvat Paikalliseen ryhmään. Ryhmät ja joukot muodostavat superjoukkoja, ja suurimmassa mittakaavassa galaksit ovat verkon kaltaisissa säikeissä, joiden välissä on lähes tyhjiä alueita.
+
+<svg data-fig="cosmic-address" viewBox="0 0 600 400" role="img" aria-label="Kaaviokuva, ei mittakaavassa: sisäkkäiset laatikot näyttävät Maan osoitteen maailmankaikkeudessa. Uloimpana havaittava maailmankaikkeus, noin 10 potenssiin 27 metriä, sen sisällä Virgon superjoukko noin 10 potenssiin 24 metriä, sen sisällä Paikallinen ryhmä noin 10 potenssiin 23 metriä, sen sisällä Linnunrata noin 10 potenssiin 21 metriä, sen sisällä Aurinkokunnan planeettojen alue noin 10 potenssiin 13 metriä ja sisimpänä Maa ja Kuun rata noin 10 potenssiin 9 metriä." style="max-width:100%;font-size:24px">
+  <rect x="12" y="12" width="576" height="376" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="26" y="23.5" width="332" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{havaittava maailmankaikkeus}$</div></foreignObject>
+  <foreignObject x="491" y="23.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{27}\,\text{m}$</div></foreignObject>
+  <rect x="30" y="68" width="540" height="314" rx="10" fill="#eef5f9" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="44" y="79.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Virgon superjoukko}$</div></foreignObject>
+  <foreignObject x="473" y="79.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{24}\,\text{m}$</div></foreignObject>
+  <rect x="48" y="124" width="504" height="252" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="62" y="135.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Paikallinen ryhmä}$</div></foreignObject>
+  <foreignObject x="455" y="135.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{23}\,\text{m}$</div></foreignObject>
+  <rect x="66" y="180" width="468" height="190" rx="10" fill="#a5d8ff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="80" y="191.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Linnunrata}$</div></foreignObject>
+  <foreignObject x="437" y="191.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{21}\,\text{m}$</div></foreignObject>
+  <rect x="84" y="236" width="432" height="128" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
+  <foreignObject x="98" y="247.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Aurinkokunta}$</div></foreignObject>
+  <foreignObject x="419" y="247.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{13}\,\text{m}$</div></foreignObject>
+  <rect x="102" y="292" width="396" height="66" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2"/>
+  <foreignObject x="116" y="303.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Maa ja Kuu}$</div></foreignObject>
+  <foreignObject x="414" y="303.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$10^{9}\,\text{m}$</div></foreignObject>
+  <ellipse cx="318" cy="324" rx="44" ry="13" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="318" cy="324" r="11" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="362" cy="324" r="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+</svg>
+
+### Aurinkokunnan reuna riippuu siitä, mitä mitataan
+
+Aurinkokunnalla ei ole yhtä tarkkaa reunaa. Auringosta virtaa hiukkasia, **aurinkotuulta**, joka puhaltaa ympärilleen kuplan, **heliosfäärin**. Sen raja, heliopaussi, on noin $120\,\text{AU}$:n päässä Auringosta, ja Voyager-luotaimet ovat ylittäneet sen. Auringon painovoima hallitsee kuitenkin paljon kauempana. Pitkäjaksoisten komeettojen radoista päätellään, että Aurinkoa kiertää kaukana komeettojen parvi, Oortin pilvi, noin $2000$–$100\,000\,\text{AU}$:n päässä. Voyagerit ovat siis tähtienvälisessä avaruudessa mutta yhä Auringon painovoiman piirissä.
+
+### Kohdetyyppejä, ei portaita
+
+Kaikki tähtitieteelliset kohteet eivät ole portaita samassa sisäkkäisyydessä, vaan ne ovat galaksien sisällä tähtien joukossa. **Sumu** on kaasu- ja pölypilvi; esimerkiksi Orionin sumussa syntyy uusia tähtiä. **Neutronitähti** on jäänne raskaan tähden räjähdyksestä. Sen massa on tavallisesti suurempi kuin Auringon, mutta halkaisija vain noin $20$–$25\,\text{km}$, koska aine on puristunut lähes pelkiksi neutroneiksi.
+
+**Musta aukko** on alue, josta painovoiman takia mikään, ei edes valo, pääse ulos. Sillä ei ole pintaa: sen kooksi ilmoitetaan rajan eli **tapahtumahorisontin** halkaisija, joka kasvaa massan mukana. Linnunradan keskustan mustan aukon massa on noin neljä miljoonaa Auringon massaa ja tapahtumahorisontin halkaisija noin $2{,}5\cdot10^{10}\,\text{m}$. Koko ei siis kerro kohteen tyyppiä: neutronitähti on Maata pienempi, ja tämä musta aukko on Aurinkoa suurempi.
+
+<svg data-fig="object-types" viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva: tähtitieteellisten kohteiden tyyppejä kokoakselilla, jossa jokainen askel on kymmenkertainen koko. Neutronitähti noin 2 · 10 potenssiin 4 metriä, planeetta Maa 1,3 · 10 potenssiin 7 metriä, tähti Aurinko 1,4 · 10 potenssiin 9 metriä, musta aukko Sgr A* (tapahtumahorisontin halkaisija) 2,5 · 10 potenssiin 10 metriä, Orionin sumu 2 · 10 potenssiin 17 metriä ja galaksi Linnunrata 10 potenssiin 21 metriä. Akselin paikat ovat mittakaavassa, kuvakkeiden koot eivät." style="max-width:100%;font-size:24px">
+  <line x1="24" y1="250" x2="572" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M584,250 L571,256 L571,244 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="62" y1="246" x2="62" y2="258" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="114" y1="246" x2="114" y2="255" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="166" y1="246" x2="166" y2="258" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="218" y1="246" x2="218" y2="255" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="270" y1="246" x2="270" y2="258" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="322" y1="246" x2="322" y2="255" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="374" y1="246" x2="374" y2="258" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="426" y1="246" x2="426" y2="255" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="478" y1="246" x2="478" y2="258" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="530" y1="246" x2="530" y2="255" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="39.5" y="263.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{4}$</div></foreignObject>
+  <foreignObject x="143.5" y="263.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{8}$</div></foreignObject>
+  <foreignObject x="241" y="263.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{12}$</div></foreignObject>
+  <foreignObject x="345" y="263.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{16}$</div></foreignObject>
+  <foreignObject x="449" y="263.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$10^{20}$</div></foreignObject>
+  <foreignObject x="522" y="299.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$d\ (\text{m})$</div></foreignObject>
+  <line x1="72" y1="244" x2="72" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="72" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="72" y1="66" x2="72" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="14" y="35.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutronitähti}$</div></foreignObject>
+  <line x1="142.5" y1="244" x2="142.5" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="142.5" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="142.5" y1="120" x2="142.5" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="96" y="89.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{planeetta}$</div></foreignObject>
+  <line x1="195.5" y1="244" x2="195.5" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="195.5" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="195.5" y1="168" x2="195.5" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="152" y="137.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{tähti}$</div></foreignObject>
+  <line x1="228.5" y1="244" x2="228.5" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="228.5" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="250" y1="120" x2="232.5" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="246" y="89.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{musta aukko}$</div></foreignObject>
+  <line x1="409.5" y1="244" x2="409.5" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="409.5" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="409.5" y1="66" x2="409.5" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="380.5" y="35.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sumu}$</div></foreignObject>
+  <line x1="503.5" y1="244" x2="503.5" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="503.5" cy="250" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <line x1="503.5" y1="120" x2="503.5" y2="182" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="456" y="89.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{galaksi}$</div></foreignObject>
+  <circle cx="72" cy="200" r="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <circle cx="142.5" cy="200" r="14" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M135.5,195 L144.5,191 L148.5,198 L140.5,204 Z" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="195.5" cy="200" r="13" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
+  <circle cx="228.5" cy="200" r="15" fill="#ffc078"/>
+  <circle cx="228.5" cy="200" r="10" fill="#1f2933"/>
+  <ellipse cx="409.5" cy="200" rx="22" ry="13" fill="#f2a69c" fill-opacity="0.8"/><ellipse cx="415.5" cy="197" rx="13" ry="8" fill="#a5d8ff" fill-opacity="0.8"/>
+  <ellipse cx="503.5" cy="200" rx="24" ry="8" fill="#a5d8ff" stroke="#1971c2" stroke-width="1.5"/>
+  <circle cx="503.5" cy="200" r="4" fill="#ffc078"/>
+  <foreignObject x="16" y="307.5" width="382" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{kuvakkeet eivät ole mittakaavassa}$</div></foreignObject>
+</svg>
+
+### Havaittava maailmankaikkeus ei ole koko maailmankaikkeus
+
+**Havaittava maailmankaikkeus** on se osa maailmankaikkeutta, josta valo on ehtinyt tulla meille maailmankaikkeuden noin 13,8 miljardin vuoden iän aikana. Sen halkaisija on noin $8{,}8\cdot10^{26}\,\text{m}$ eli noin 93 miljardia valovuotta. Luku on suurempi kuin kaksi kertaa 13,8 miljardia valovuotta, koska avaruus on laajentunut valon matkan aikana. Havaittavan maailmankaikkeuden raja ei ole maailmankaikkeuden reuna vaan näköpiirimme raja: toisessa galaksissa olevan havaitsijan havaittava maailmankaikkeus on pallo hänen ympärillään. Koko maailmankaikkeuden kokoa ei tiedetä, ja se voi olla ääretön.
+
+## Perusvuorovaikutukset
+
+### Neljä perusvuorovaikutusta
+
+Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnetut vuorovaikutukset palautuvat neljään **perusvuorovaikutukseen**:
+
+- **Gravitaatio** vaikuttaa kaikkien kappaleiden välillä, joilla on massa, ja se on aina vetävä. Se pitää Kuun Maan ympärillä ja planeetat radoillaan tähtiensä ympärillä, ja se kokoaa kaasupilvistä tähtiä ja galakseja.
+- **Sähkömagneettinen vuorovaikutus** vaikuttaa sähköisesti varattujen hiukkasten välillä: erimerkkiset varaukset vetävät ja samanmerkkiset hylkivät toisiaan. Se pitää elektronit atomissa ytimen ympärillä, sitoo atomit molekyyleiksi ja aiheuttaa sähköiset ja magneettiset ilmiöt, kuten hangatun ilmapallon kyvyn vetää paperisilppuja.
+- **Vahva vuorovaikutus** sitoo kvarkit protoneiksi ja neutroneiksi. Sen jäännösvaikutus pitää protonit ja neutronit yhdessä ytimessä, vaikka protonit hylkivät toisiaan sähköisesti. Se ulottuu vain ytimen kokoiselle etäisyydelle, noin $10^{-15}\,\text{m}$.
+- **Heikko vuorovaikutus** aiheuttaa eräitä radioaktiivisia hajoamisia. Esimerkiksi **beetahajoamisessa** ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja hiukkanen nimeltä antineutriino. Heikko vuorovaikutus on mukana myös Auringon energiantuotannossa.
+
+<svg data-fig="interactions" viewBox="0 0 600 420" role="img" aria-label="Kaaviokuva, ei mittakaavassa, neljä paneelia. Gravitaatio: Maa kiertää Aurinkoa, ja voima osoittaa Maasta kohti Aurinkoa. Sähkömagneettinen vuorovaikutus: positiivinen ydin ja negatiivinen elektroni vetävät toisiaan. Vahva vuorovaikutus: protonit ja neutronit pysyvät ytimessä, ja protonin sisällä on kolme kvarkkia. Heikko vuorovaikutus: beetahajoamisessa neutroni muuttuu protoniksi, ja syntyy elektroni ja antineutriino." style="max-width:100%;font-size:24px">
+  <rect x="12" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
+  <foreignObject x="26" y="19.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{gravitaatio}$</div></foreignObject>
+  <rect x="306" y="12" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
+  <foreignObject x="320" y="19.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{sähkömagneettinen}$</div></foreignObject>
+  <rect x="12" y="220" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
+  <foreignObject x="26" y="227.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{vahva}$</div></foreignObject>
+  <rect x="306" y="220" width="282" height="196" rx="8" fill="#ffffff" stroke="#e3dccb" stroke-width="2"/>
+  <foreignObject x="320" y="227.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{heikko}$</div></foreignObject>
+  <ellipse cx="132" cy="116" rx="96" ry="44" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="132" cy="116" r="20" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
+  <circle cx="228" cy="116" r="10" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
+  <line x1="215" y1="116" x2="175" y2="116" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M164,116 L176,110.5 L176,121.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="183" y="79.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}$</div></foreignObject>
+  <foreignObject x="36.5" y="173.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Maa kiertää Aurinkoa}$</div></foreignObject>
+  <circle cx="398" cy="104" r="18" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="386" y="89.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$+$</div></foreignObject>
+  <circle cx="516" cy="104" r="11" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="506" y="89.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$-$</div></foreignObject>
+  <line x1="502" y1="104" x2="475" y2="104" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M464,104 L476,98.5 L476,109.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="419" y1="104" x2="446" y2="104" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M457,104 L445,109.5 L445,98.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="369" y="127.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ydin}$</div></foreignObject>
+  <foreignObject x="456" y="125.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{elektroni}$</div></foreignObject>
+  <foreignObject x="343" y="173.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{atomi pysyy koossa}$</div></foreignObject>
+  <circle cx="97.5" cy="354" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="100.5" cy="308" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="68.5" cy="339" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="110.5" cy="337.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="80.5" cy="312" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="85" cy="348.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="105" cy="320.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="74.5" cy="327" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="98.5" cy="341" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="91" cy="318" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="83" cy="336" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="95.5" cy="330" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="104" y1="316" x2="180" y2="286" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <line x1="104" y1="324" x2="180" y2="366" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 3"/>
+  <circle cx="102" cy="320" r="6" fill="none" stroke="#e8590c" stroke-width="2"/>
+  <circle cx="222" cy="326" r="40" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
+  <circle cx="222" cy="307" r="8.8" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="238.5" cy="335.5" r="8.8" fill="#2b8a3e" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="205.5" cy="335.5" r="8.8" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <foreignObject x="55.5" y="379.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ydin pysyy koossa}$</div></foreignObject>
+  <circle cx="356" cy="324" r="18" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="344" y="309.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{n}$</div></foreignObject>
+  <line x1="380" y1="324" x2="427" y2="324" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M438,324 L426,329.5 L426,318.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="466" cy="324" r="18" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="454" y="309.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$\text{p}$</div></foreignObject>
+  <line x1="482" y1="312" x2="523.5" y2="287" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M532,282 L525,292 L520,283.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <circle cx="542" cy="276" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="560" y="261.5" width="34" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{e}^-$</div></foreignObject>
+  <line x1="482" y1="336" x2="528" y2="364" stroke="#6b7480" stroke-width="2" stroke-dasharray="4 3"/>
+  <foreignObject x="531" y="355.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\bar{\nu}$</div></foreignObject>
+  <foreignObject x="349.5" y="383.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beetahajoaminen}$</div></foreignObject>
+</svg>
+
+### Mittakaava ratkaisee, mikä vuorovaikutus hallitsee
+
+Samat neljä vuorovaikutusta toimivat kaikkialla, ytimen sisältä galaksijoukkoihin, mutta mittakaava ratkaisee, mikä niistä hallitsee. Vahva ja heikko vuorovaikutus ulottuvat vain ytimen mittakaavaan. Sähkömagneettinen vuorovaikutus on hiukkasten välillä valtavasti gravitaatiota voimakkaampi, mutta suuret kappaleet ovat lähes neutraaleja: niiden positiiviset ja negatiiviset varaukset kumoavat toistensa vaikutuksen. Gravitaatio on hiukkasten välillä heikoin, mutta se on aina vetävä ja kasvaa massan mukana. Siksi planeettojen, tähtien ja galaksien mittakaavassa gravitaatio hallitsee.
 
 ## Esimerkki
 
@@ -223,9 +450,15 @@ k &= \frac{d_2}{d_1} \\
 
 Kymmenpotenssien ero ei ole kokojen ero. Jos kahden kohteen suuruusluokat eroavat kuudella, toinen ei ole kuusi kertaa suurempi vaan $10^{6}$ eli miljoona kertaa suurempi. Lisäksi mittakaavakuva voi näyttää tosi vain yhden mittakaavan kerrallaan: kaikkea ei voi piirtää samaan kuvaan oikeassa suhteessa.
 
+Neutronitähti ja musta aukko eivät ole galaksia suurempia portaita, vaan kohteita galaksien sisällä. Musta aukko ei myöskään ime kaikkea ympäriltään: kaukana siitä sen painovoima on sama kuin minkä tahansa yhtä suuren massan, ja tähdet voivat kiertää sitä kuten planeetat Aurinkoa.
+
 ## Tiivistelmä
 
 - Fysiikka rakentaa malleja, joista johdetaan ennusteita, ja koe tai mittaus ratkaisee, kestääkö malli.
 - Kymmenpotenssimuoto $a\cdot10^{n}$ kirjoittaa hyvin pienet ja hyvin suuret luvut lyhyesti; yksi askel eksponentissa on kymmenkertainen koko.
 - Suuruusluokka on lähin kymmenpotenssi; kokojen suhde on $k = \tfrac{d_2}{d_1} \approx 10^{\Delta n}$.
-- Valovuosi on matka $s = c\,t$, noin $9{,}46\cdot10^{15}\,\text{m}$.
+- Valovuosi on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{15}\,\text{m}$.
+- Molekyylit koostuvat atomeista, atomit ytimestä ja elektroneista, ydin protoneista ja neutroneista ja nämä kvarkeista. Atomi on kymmeniätuhansia kertoja ydintään suurempi.
+- Maa on planeetta, joka kiertää tähteä. Aurinkokunta on yksi planeettakunta Linnunradassa, ja Linnunrata on yksi havaittavan maailmankaikkeuden sadoista miljardeista galakseista.
+- Sumut, neutronitähdet ja mustat aukot ovat kohteiden tyyppejä galaksien sisällä, eivät rakenteiden portaita.
+- Neljä perusvuorovaikutusta ovat gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus. Pienissä mittakaavoissa hallitsevat ytimen ja atomin vuorovaikutukset, suurissa gravitaatio.

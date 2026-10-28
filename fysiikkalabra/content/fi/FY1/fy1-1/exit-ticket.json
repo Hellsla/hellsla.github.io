@@ -1,7 +1,7 @@
 [
   {
-    "q": "Kirjoita pituus $0{,}000\\,042\\,\\text{m}$ kymmenpotenssimuodossa ja anna sen suuruusluokka.",
-    "a": "$0{,}000\\,042\\,\\text{m} = 4{,}2\\cdot10^{-5}\\,\\text{m}$. Kerroinosa $4{,}2$ on yli noin 3, joten suuruusluokka on seuraava kymmenpotenssi, $10^{-4}\\,\\text{m}$."
+    "q": "Atomin ytimessä on protoneja, jotka hylkivät toisiaan sähköisesti. Mikä perusvuorovaikutus pitää ytimen silti koossa, ja miksi se ei vedä yhteen kauempana olevia atomeja?",
+    "a": "Vahva vuorovaikutus, tarkemmin sen jäännösvaikutus protonien ja neutronien välillä. Ytimen kokoisilla etäisyyksillä, noin $10^{-15}\\,\\text{m}$, se on voimakkaampi kuin protonien sähköinen hylkiminen, mutta se ei ulotu ydintä kauemmas, joten eri atomien ytimet eivät vedä toisiaan sen avulla."
   },
   {
     "q": "Kohteen $\\text{A}$ koon suuruusluokka on $10^{3}\\,\\text{m}$ ja kohteen $\\text{B}$ koon suuruusluokka $10^{8}\\,\\text{m}$. Kuinka monta kertaa suurempi $\\text{B}$ on suuruusluokan tarkkuudella?",

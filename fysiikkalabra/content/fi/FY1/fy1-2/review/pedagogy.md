@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e59eb0f3031179fc
+CONTENT-HASH: 6e11a95160d708c6
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- (carried over, optional) lesson.md:248-262 — the scale table is read-only; a one-line question under it would let the student act on it.
+- (carried over, optional) lesson.md:255 — femto appears in the table before a prefix table lists it; a half-sentence "femto on 10^-15" would help.
 
 ## Checked
-Delta review of sim.js: true-scale ruler Gm numbers now omitted within 64 px of the canvas edges. Sim captures at 390 and 1280 px: the labelled centre value (0 Gm), scale bar, bottom log scale and controls remain legible; no label is cut off. Only edge tick numbers are dropped, and ticks still show the scale, so learning path and activities are unchanged.
+- Hash 6e11a95160d708c6 at start and end; delta is inquiry.json (sim "model" text) and solutions.md (one digit).
+- "heliopaussin eli aurinkotuulen kuplan rajan" now matches the hook's wording ("aurinkotuulen puhaltaman kuplan"); the term is explained the same way in both places, plainer than "Auringon vaikutusalueen raja" and consistent with the fy1-1 heliosphere distinction.
+- Solution L3-01: 2,998e5 · 3,156e7 = 9,4617e12, so 9,462e12 km is the right rounding. 9,462e12 / 1,496e8 = 6,325e4 AU, unchanged; the step stays followable and the answer is unaffected.
+- No other 9,461 left in lesson, inquiry or solutions; lesson.md's 9,46e12 km is consistent.

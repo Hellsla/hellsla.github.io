@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Fysiikka rakentaa malleja ja testaa ne mittauksilla, ja kohteiden koot käsitetään kymmenpotensseina: koko kirjoitetaan muodossa $a\\cdot10^{n}$, suuruusluokkien ero on kymmenpotenssien lukumäärä ja kokojen suhde on noin $10^{\\Delta n}$. Zoomaussimulaatio opettaa tämän kokemuksesta.",
+  "contribution": "Fysiikka rakentaa malleja ja testaa ne mittauksilla, ja kohteiden koot käsitetään kymmenpotensseina: koko kirjoitetaan muodossa $a\\cdot10^{n}$, suuruusluokkien ero on kymmenpotenssien lukumäärä ja kokojen suhde on noin $10^{\\Delta n}$. Zoomaussimulaatiolla opiskelija vertaa atomia ja sen ydintä sekä Aurinkokuntaa ja Linnunrataa, ja teoria kokoaa aineen rakenteen (molekyyli–atomi–ydin–nukleoni–kvarkki), Maan paikan maailmankaikkeuden rakenteissa, tähtitieteelliset kohdetyypit ja neljä perusvuorovaikutusta laadullisesti.",
   "learn": [
-    "Osaat kuvata, miten fysiikka rakentaa malleja ja testaa ne mittauksilla.",
-    "Osaat kirjoittaa koon kymmenpotenssimuotoon ja arvioida sitä suuruusluokalla.",
-    "Osaat verrata kokoja laskemalla suhteen ja suuruusluokkien eron."
+    "Osaat kuvata aineen rakenteen molekyyleistä kvarkkeihin ja Maan paikan maailmankaikkeuden rakenteissa.",
+    "Osaat kirjoittaa koon kymmenpotenssimuotoon ja verrata kokoja suuruusluokkien avulla.",
+    "Tunnistat neljä perusvuorovaikutusta ja osaat liittää kuhunkin ilmiön."
   ],
   "prior": [
     "Potenssit yläkoulun matematiikasta, esimerkiksi $10^{3} = 1000$ ja $10^{-2} = 0{,}01$",
@@ -15,8 +15,8 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikka tutkii samoilla periaatteilla pienimpiä ja suurimpia kohteita, joita tunnemme. Protonin koko on noin $1{,}7\\cdot10^{-15}\\,\\text{m}$ ja havaittavan maailmankaikkeuden halkaisija noin $8{,}8\\cdot10^{26}\\,\\text{m}$. Kumpaakaan ei voi nähdä paljain silmin eikä mitata metrimitalla, ja silti niiden koot tunnetaan.",
-      "question": "Kuinka monta kymmenpotenssia näiden kokojen välillä on, ja mistä tiedämme niiden koot, vaikka niitä ei voi mitata suoraan?"
+      "text": "Fysiikka tutkii samoilla periaatteilla pienimpiä ja suurimpia rakenteita, joita tunnemme. Protonin koko on noin $1{,}7\\cdot10^{-15}\\,\\text{m}$ ja havaittavan maailmankaikkeuden halkaisija noin $8{,}8\\cdot10^{26}\\,\\text{m}$. Kumpaakaan ei voi nähdä paljain silmin eikä mitata metrimitalla, ja silti niiden koot tunnetaan.",
+      "question": "Mistä osista aine koostuu, minkä suurempien rakenteiden osa Maa on, ja kuinka monta kymmenpotenssia pienimmän ja suurimman koon välillä on?"
     },
     {
       "id": "kertaus",
@@ -49,30 +49,30 @@
       "id": "pred-1",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 1: atomista ihmiseen",
+      "title": "Ennuste 1: atomi ja sen ydin",
       "justify": true,
       "reveal": {
         "after": "exp-1",
-        "min": 2
+        "min": 3
       },
-      "prompt": "Vetyatomin koko on noin $1{,}1\\cdot10^{-10}\\,\\text{m}$ ja aikuisen ihmisen pituus noin $1{,}7\\,\\text{m}$. Montako kymmenpotenssia eli suuruusluokkaa näiden kokojen välillä on?",
+      "prompt": "Vetyatomin halkaisija on noin $1{,}1\\cdot10^{-10}\\,\\text{m}$. Atomin keskellä on ydin, joka vetyatomilla on yksi protoni. Montako suuruusluokkaa atomi on ydintään suurempi?",
       "choices": [
         {
-          "text": "Noin 3 suuruusluokkaa, koska ihminen on noin tuhat kertaa suurempi kuin atomi.",
-          "feedback": "Mallin arvoissa vetyatomin suuruusluokka on $10^{-10}\\,\\text{m}$ ja ihmisen $10^{0}\\,\\text{m}$, joten ero on kymmenen suuruusluokkaa. Kolme suuruusluokkaa on vain millimetrin ja metrin ero: tuhat kertaa on pieni väli verrattuna atomin ja ihmisen väliin."
+          "text": "Noin yksi suuruusluokka: ydin täyttää ison osan atomista, kuten atomin kuvissa usein näyttää.",
+          "feedback": "Mallin arvoissa vetyatomin suuruusluokka on $10^{-10}\\,\\text{m}$ ja protonin $10^{-15}\\,\\text{m}$, joten ero on viisi suuruusluokkaa. Atomin kuvissa ydin piirretään tahallaan aivan liian suureksi, jotta se näkyisi: oikeassa suhteessa se olisi näkymätön piste atomin keskellä."
         },
         {
-          "text": "Noin 10 suuruusluokkaa.",
-          "feedback": "Mallin arvot tukevat tätä: suuruusluokat ovat $10^{-10}\\,\\text{m}$ ja $10^{0}\\,\\text{m}$, joten ero on $0 - (-10) = 10$. Jokainen suuruusluokka on kymmenkertainen koko, joten ihminen on noin $10^{10}$ eli kymmenen miljardia kertaa atomia suurempi.",
-          "correct": true
+          "text": "Noin viisi suuruusluokkaa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: vetyatomin suuruusluokka on $10^{-10}\\,\\text{m}$ ja protonin $10^{-15}\\,\\text{m}$, joten ero on $-10-(-15) = 5$. Atomi on siis kymmeniätuhansia kertoja ydintään suurempi: jos atomi olisi jalkapallostadion, ydin olisi sen keskellä herneen kokoinen."
         },
         {
-          "text": "Noin 100 suuruusluokkaa.",
-          "feedback": "Sata suuruusluokkaa tarkoittaisi kokojen suhdetta $10^{100}$, mikä on moninkertaisesti enemmän kuin koko havaittavan maailmankaikkeuden ja protonin suhde. Mallin arvoissa ero on kymmenen suuruusluokkaa: askeleita on kymmenen, ja jokainen on kymmenkertainen."
+          "text": "Noin kymmenen suuruusluokkaa.",
+          "feedback": "Kymmenen suuruusluokkaa on atomin ja ihmisen välinen ero. Mallin arvoissa ydin on suuruusluokkaa $10^{-15}\\,\\text{m}$ ja atomi $10^{-10}\\,\\text{m}$, joten ero on viisi suuruusluokkaa: valtava, mutta pienempi kuin atomin ja ihmisen ero."
         },
         {
-          "text": "Noin 15 miljardia suuruusluokkaa, koska ihminen on noin 15 miljardia kertaa suurempi.",
-          "feedback": "Sekoitat suhteen ja suuruusluokkien lukumäärän. Mallin arvoissa suhde on noin $1{,}5\\cdot10^{10}$, mutta suuruusluokkien ero on vain sen eksponentti eli kymmenen. Suuruusluokkien ero on askelten lukumäärä, ei kertoimen arvo."
+          "text": "Ei yhtään, koska atomi ja sen ydin ovat sama asia.",
+          "feedback": "Atomi ja ydin eivät ole sama asia: ydin on vain atomin keskusosa, ja atomiin kuuluvat myös ytimen ympärillä liikkuvat elektronit. Mallin arvoissa atomi on viisi suuruusluokkaa ydintään suurempi."
         }
       ]
     },
@@ -80,30 +80,30 @@
       "id": "pred-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 2: kokojen puoliväli",
+      "title": "Ennuste 2: Aurinkokunta ja Linnunrata",
       "justify": true,
       "reveal": {
         "after": "exp-2",
-        "min": 3
+        "min": 4
       },
-      "prompt": "Planckin pituus on noin $10^{-35}\\,\\text{m}$ ja havaittavan maailmankaikkeuden halkaisija noin $10^{27}\\,\\text{m}$. Mikä seuraavista kohteista on kymmenpotensseissa mitattuna näiden kahden puolivälissä?",
+      "prompt": "Aurinkokunnan planeetat kiertävät Aurinkoa Neptunuksen rataa myöten. Aurinko on yksi Linnunradan tähdistä. Montako suuruusluokkaa Linnunrata on Aurinkokunnan planeettojen aluetta suurempi?",
       "choices": [
         {
-          "text": "Ihminen, jonka pituus on $1{,}7\\,\\text{m}$.",
-          "feedback": "Mallin arvoissa ihmisen suuruusluokka on $10^{0}\\,\\text{m}$, kun puoliväli on suuruusluokalla $\\dfrac{-35 + 27}{2} = -4$. Ihminen on siis neljä suuruusluokkaa liian suuri. Tuntuu luonnolliselta pitää itseä keskellä, mutta mittakaavoilla keskikohta on paljon pienempi."
+          "text": "Noin kaksi suuruusluokkaa: Aurinkokunta täyttää huomattavan osan Linnunradasta.",
+          "feedback": "Mallin arvoissa Neptunuksen radan suuruusluokka on $10^{13}\\,\\text{m}$ ja Linnunradan $10^{21}\\,\\text{m}$, joten ero on kahdeksan suuruusluokkaa. Aurinkokunta on Linnunradassa pienempi kuin hiekanjyvä jalkapallokentällä, ja galaksissa on sen lisäksi satoja miljardeja muita tähtiä."
         },
         {
-          "text": "Hiuksen paksuus, noin $7{,}0\\cdot10^{-5}\\,\\text{m}$.",
-          "feedback": "Mallin arvot tukevat tätä: puoliväli on suuruusluokalla $\\dfrac{-35 + 27}{2} = -4$, ja hiuksen paksuus $7{,}0\\cdot10^{-5}\\,\\text{m}$ on suuruusluokkaa $10^{-4}\\,\\text{m}$. Se on 31 suuruusluokkaa sekä Planckin pituudesta että maailmankaikkeudesta.",
-          "correct": true
+          "text": "Noin neljä suuruusluokkaa.",
+          "feedback": "Mallin arvoissa ero on kahdeksan suuruusluokkaa: Neptunuksen rata on suuruusluokkaa $10^{13}\\,\\text{m}$ ja Linnunrata $10^{21}\\,\\text{m}$. Neljä suuruusluokkaa on vasta Neptunuksen radan ja lähimmän tähden etäisyyden luokkaa, ja Linnunrata on vielä paljon suurempi."
         },
         {
-          "text": "Maa, jonka halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m}$.",
-          "feedback": "Mallin arvoissa Maan suuruusluokka on $10^{7}\\,\\text{m}$, kun puoliväli on suuruusluokalla $-4$. Maa on 11 suuruusluokkaa liian suuri. Maa tuntuu suurelta, mutta se on kaukana kokoalueen keskikohdasta."
+          "text": "Noin kahdeksan suuruusluokkaa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: Neptunuksen rata on suuruusluokkaa $10^{13}\\,\\text{m}$ ja Linnunrata $10^{21}\\,\\text{m}$, joten ero on $21-13 = 8$. Linnunrata on noin sata miljoonaa kertaa planeettojen aluetta suurempi."
         },
         {
-          "text": "Protoni, jonka koko on $1{,}7\\cdot10^{-15}\\,\\text{m}$.",
-          "feedback": "Mallin arvoissa protonin suuruusluokka on $10^{-15}\\,\\text{m}$, kun puoliväli on suuruusluokalla $-4$. Protoni on 11 suuruusluokkaa liian pieni. Se on pieni arkielämän mittapuulla, mutta Planckin pituuteen verrattuna vielä 20 suuruusluokkaa suurempi."
+          "text": "Noin kuusitoista suuruusluokkaa.",
+          "feedback": "Kuusitoista suuruusluokkaa tarkoittaisi $10^{16}$-kertaista eroa. Mallin arvoissa ero on kahdeksan suuruusluokkaa: Neptunuksen rata on suuruusluokkaa $10^{13}\\,\\text{m}$ ja Linnunrata $10^{21}\\,\\text{m}$. Jo kahdeksan kymmenkertaistusta tekee sadan miljoonan kertaisen eron."
         }
       ]
     },
@@ -113,15 +113,15 @@
       "type": "sim",
       "text": "Zoomaa Planckin pituudesta havaittavaan maailmankaikkeuteen. Kaikki kuvaan mahtuvat kohteet näkyvät yhtä aikaa oikeassa kokosuhteessa, ja alareunan palkki on $10^{k}\\,\\text{m}$ pitkä.",
       "howto": "Paina *Lähennä ×10* tai *Loitonna ×10*: näkymän leveys muuttuu kymmenesosaksi tai kymmenkertaiseksi, ja kuva liukuu uuteen mittakaavaan. Kohteet seisovat rinnakkain koon mukaan: pienin vasemmalla, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Muutaman pikselin kokoinen kohde on piste, josta viiva osoittaa sen nimeen. Voit myös vetää *Näkymän leveys* -liukusäädintä, vetää kuvaa sivusuunnassa tai napsauttaa kartan kohtaa. Kun kuva on valittuna, nuolinäppäimet ylös ja alas sekä hiiren rulla zoomaavat. *Käynnistä* zoomaa automaattisesti, ja *Suunta* ja *Nopeus* valitsevat suunnan ja vauhdin. Kartan pisteet ovat kohteita, ja vaalea kaista näyttää, mitkä koot mahtuvat kuvaan nyt. Jos kuvassa ei ole mitään, siirry kartalla jonkin pisteen luo.",
-      "model": "Koot ovat pyöristettyjä suuruusluokka-arvoja, eivät tarkkoja mittaustuloksia. Arvot ovat kirjallisuudesta pyöristettyjä mallin arvoja: Planckin pituus on luonnonvakioista laskettu suure, astronominen yksikkö $1\\,\\text{AU}$ ja valovuosi ovat sovittuja määritelmiä, protonin ja atomin koot perustuvat sirontakokeisiin ja kvanttimekaniikan malliin, Linnunradan koko on arvio (noin $10^{5}$ valovuotta, epävarmuus kymmeniä prosentteja) ja maailmankaikkeuden halkaisija päätellään havainnoista kosmologisen mallin avulla. Hiuksen, punasolun, muurahaisen, kolikon, pallon, valaan ja ihmisen koot ovat tyypillisiä arvoja, ja yksilöt vaihtelevat. Kvarkin koko on havainnoista saatu yläraja, ja ytimien, atomien ja Kuun sekä Jupiterin koot ovat pyöristettyjä taulukkoarvoja. Piirrokset ovat havainnollistuksia. Planckin pituudella ruudukko on vain symboli, koska pituuden rakenteesta ei ole havaintoja. Vetyatomin elektronipilvi on todennäköisyyskuva, ja sen ydin on piirretty liian suureksi. Radoilla tähdet ja planeetat ovat suurennettuja pisteitä, ja ratojen koko on niiden säde, vaikka kuva piirretään halkaisijan mukaan. Linnunrata ja maailmankaikkeus ovat taiteilijan näkemyksiä.",
+      "model": "Koot ovat pyöristettyjä suuruusluokka-arvoja, eivät tarkkoja mittaustuloksia. Arvot ovat kirjallisuudesta pyöristettyjä mallin arvoja: Planckin pituus on luonnonvakioista laskettu suure, astronominen yksikkö $1\\,\\text{AU}$ ja valovuosi ovat sovittuja määritelmiä, protonin ja atomin koot perustuvat sirontakokeisiin ja kvanttimekaniikan malliin, Linnunradan koko on arvio (noin $10^{5}$ valovuotta, epävarmuus kymmeniä prosentteja) ja maailmankaikkeuden halkaisija päätellään havainnoista kosmologisen mallin avulla. Hiuksen, punasolun, muurahaisen, kolikon, pallon, valaan ja ihmisen koot ovat tyypillisiä arvoja, ja yksilöt vaihtelevat. Kvarkin koko on havainnoista saatu yläraja. Vesimolekyylin koko on tyypillinen arvo, neutronitähden halkaisija on havaintoihin ja malleihin perustuva tyypillinen arvo (noin $20$–$25\\,\\text{km}$), ja Linnunradan keskustan mustan aukon Sgr A* kooksi on piirretty sen tapahtumahorisontin halkaisija, joka on laskettu sen massasta (noin $4{,}3$ miljoonaa Auringon massaa). Musta aukko ei ole kiinteä pallo: piirretty raja on tapahtumahorisontti, ja sen ympärillä hehkuva kaasu ja neutronitähden säteilykeilat ovat havainnollistuksia. Ytimien, atomien ja Kuun sekä Jupiterin koot ovat pyöristettyjä taulukkoarvoja. Piirrokset ovat havainnollistuksia. Planckin pituudella ruudukko on vain symboli, koska pituuden rakenteesta ei ole havaintoja. Vetyatomin elektronipilvi on todennäköisyyskuva, ja sen ydin on piirretty liian suureksi. Radoilla tähdet ja planeetat ovat suurennettuja pisteitä, ja ratojen kooksi on merkitty niiden säde, vaikka kuva piirretään halkaisijan mukaan. Linnunrata ja maailmankaikkeus ovat taiteilijan näkemyksiä.",
       "calc": "Näkymän leveys on $W = 10^{L}\\,\\text{m}$, ja se vastaa kuvassa $560$ pikseliä. Kohde, jonka koko on $d$, piirretään kuvaan leveydelle $\\dfrac{d}{W}\\cdot560$ pikseliä. Esimerkiksi kun $L = -9$, vetyatomi on $\\dfrac{1{,}1\\cdot10^{-10}}{10^{-9}}\\cdot560 \\approx 62$ pikseliä leveä. Kohde näkyy, kun sen koko on noin $\\dfrac{1}{2000}$–$3$ kertaa näkymän leveys eli noin $0{,}3$–$1700$ pikseliä: alle $4$ pikselin kohde on piste, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Kohteen kokoa muutetaan siis vain liu'uttamalla $L$-arvoa, ja kaikki kuvan kohteet muuttuvat samassa suhteessa. Alareunan palkin pituus on $10^{k}\\,\\text{m}$, missä $k$ on suurin kokonaisluku, joka ei ylitä lukua $L$. Kun $L$ kasvaa yhdellä, kaikki kohteet pienenevät kymmenesosaan."
     },
     {
       "id": "exp-1",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 1: vetyatomista ihmiseen",
-      "intro": "Testaa ennuste 1. Alkutila asettaa näkymän leveyden eksponentiksi $L = -9$, jolloin vetyatomi on lähin kohde. Paina *Kirjaa mittaus*. Loitonna sitten painikkeella *Loitonna ×10* tai liukusäätimellä, kunnes lähin kohde on ihminen (alla oleva rivi *Kooltaan lähin kohde*), ja kirjaa toinen rivi. Taulukon $n$ on lähimmän kohteen suuruusluokan eksponentti.",
+      "title": "Koe 1: aineen portaat",
+      "intro": "Testaa ennuste 1. Alkutila asettaa $L = -9$, jolloin lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Lähennä sitten liukusäätimellä (painike *Lähennä ×10* hyppää vain kokonaisiin $L$-arvoihin ja ohittaa vetyatomin) ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava portaista: vetyatomi (noin $L = -9{,}4$), protoni eli vetyatomin ydin (noin $L = -14{,}5$) ja kvarkki (noin $L = -17$). Merkitse muistiin, mikä kohde kullakin rivillä on. Taulukon $n$ on lähimmän kohteen suuruusluokan eksponentti; kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
@@ -136,37 +136,86 @@
           "label": "n"
         }
       ],
-      "min": 2,
+      "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Käytä taulukon kahta riviä: vetyatomin ja ihmisen $n$-arvoja. Montako suuruusluokkaa niiden välillä on?",
-        "answer": 10,
+        "prompt": "Käytä taulukon vetyatomin ja protonin rivejä. Montako suuruusluokkaa vetyatomi on ydintään suurempi?",
+        "answer": 5,
         "unit": "suuruusluokkaa",
         "tolerance": 0.02,
         "hints": [
-          "Taulukosta saat kummankin kohteen suuruusluokan eksponentin $n$. Suuruusluokkien ero on kymmenpotenssien lukumäärä.",
-          "Kahden suuruusluokan ero on eksponenttien erotus: $\\Delta n = n_2 - n_1$, jossa $n_2$ on suuremman kohteen eksponentti.",
-          "Jos vetyatomin rivillä on $n = -10$ ja ihmisen rivillä $n = 0$, niin $\\Delta n = 0 - (-10)$."
+          "Taulukosta saat kummankin kohteen suuruusluokan eksponentin $n$. Vetyatomin ydin on yksi protoni.",
+          "Suuruusluokkien ero on eksponenttien erotus: $\\Delta n = n_2 - n_1$, jossa $n_2$ on suuremman kohteen eksponentti.",
+          "Jos vetyatomin rivillä on $n = -10$ ja protonin rivillä $n = -15$, niin $\\Delta n = -10 - (-15)$."
         ],
         "mistakes": [
           {
-            "value": 15000000000.0,
-            "feedback": "Tämä on kokojen suhde $k$, ei suuruusluokkien lukumäärä. Suhde on noin $1{,}5\\cdot10^{10}$ ja sen eksponentti on 10: kysytty on eksponentti eli kymmenpotenssien lukumäärä."
+            "value": 65000,
+            "feedback": "Tämä on kokojen suhde $k$, ei suuruusluokkien lukumäärä. Suhde on noin $6{,}5\\cdot10^{4}$, ja kysytty on kymmenpotenssien lukumäärä eli eksponenttien erotus."
           },
           {
-            "value": -10,
-            "feedback": "Suuruus on oikein, mutta etumerkki ei. Ihminen on atomia suurempi, joten ero lasketaan suuremmasta pienempi: $0 - (-10) = 10$ eikä $-10 - 0$."
+            "value": -5,
+            "feedback": "Suuruus on oikein, mutta etumerkki ei. Atomi on ydintään suurempi, joten ero lasketaan suuremmasta pienempi: $-10 - (-15) = 5$."
+          },
+          {
+            "value": -25,
+            "feedback": "Laskit eksponentit yhteen. Suuruusluokkien ero on eksponenttien erotus: $-10 - (-15) = -10 + 15 = 5$."
           }
         ],
-        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_1 = -10$ ja ihmisen rivillä $n_2 = 0$\n\n**Kysytty:** suuruusluokkien ero $\\Delta n$ eli kymmenpotenssien lukumäärä\n\n**Periaate:** Suuruusluokan eksponentti $n$ kertoo, kuinka monta kymmenkertaistusta tarvitaan lähtien koosta $1\\,\\text{m}$. Kahden kohteen välillä olevien kymmenpotenssien lukumäärä on siksi niiden eksponenttien erotus.\n\n**Kaava:** $\\Delta n = n_2 - n_1$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\Delta n = 0 - (-10) = 10$\n\n**Vastaus:** $10$ suuruusluokkaa; luku on kokonaisluku, koska $n$ on pyöristetty kokonaiseksi kymmenpotenssiksi.\n\n**Järkevyys:** Tarkka kokojen suhde on $\\dfrac{1{,}7\\,\\text{m}}{1{,}1\\cdot10^{-10}\\,\\text{m}} = 1{,}5\\cdot10^{10}$, jonka eksponentti on 10. Ihminen on siis noin kymmenen miljardia kertaa atomia suurempi, ja kymmenen kymmenkertaistusta antaa saman tuloksen."
+        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_2 = -10$ ja protonin eli vetyatomin ytimen rivillä $n_1 = -15$\n\n**Kysytty:** suuruusluokkien ero $\\Delta n$ eli kymmenpotenssien lukumäärä atomin ja sen ytimen välillä\n\n**Periaate:** Suuruusluokan eksponentti $n$ kertoo, monennessako kymmenpotenssissa koko on. Kahden kohteen välillä olevien kymmenpotenssien lukumäärä on siksi niiden eksponenttien erotus, suuremmasta pienempi.\n\n**Kaava:** $\\Delta n = n_2 - n_1$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\Delta n = -10 - (-15) = -10 + 15 = 5$\n\n**Vastaus:** $5$ suuruusluokkaa; luku on kokonaisluku, koska $n$ on pyöristetty kokonaiseksi kymmenpotenssiksi.\n\n**Järkevyys:** Tarkka kokojen suhde on $\\dfrac{1{,}1\\cdot10^{-10}\\,\\text{m}}{1{,}7\\cdot10^{-15}\\,\\text{m}} \\approx 6{,}5\\cdot10^{4}$, joka on lähempänä arvoa $10^{5}$ kuin arvoa $10^{4}$. Viisi kymmenkertaistusta vastaa siis tarkkaa suhdetta, ja ero on paljon pienempi kuin atomin ja ihmisen kymmenen suuruusluokkaa."
       }
     },
     {
       "id": "exp-2",
       "stage": "tutki",
       "type": "experiment",
-      "title": "Koe 2: Planckin pituudesta maailmankaikkeuteen",
-      "intro": "Testaa ennuste 2. Alkutila asettaa $L = -34$, jolloin lähin kohde on Planckin pituus. Kirjaa rivi. Zoomaa sitten ulospäin aina maailmankaikkeuteen asti ($L = 27{,}5$) ja kirjaa toinen rivi, kun havaittava maailmankaikkeus on lähin kohde. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä.",
+      "title": "Koe 2: Maan osoite",
+      "intro": "Testaa ennuste 2. Alkutila asettaa $L = 7{,}7$, jolloin lähin kohde on Maa. Kirjaa rivi. Loitonna sitten ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava: Aurinko (noin $L = 9{,}7$), Neptunuksen radan säde (noin $L = 13{,}5$) ja Linnunrata (noin $L = 21{,}5$). Merkitse muistiin, mikä kohde kullakin rivillä on. Halutessasi jatka havaittavaan maailmankaikkeuteen asti ($L = 27{,}5$).",
+      "initial": {
+        "L": 7.7
+      },
+      "names": {
+        "L": "L"
+      },
+      "locked": [],
+      "vary": "L",
+      "measure": [
+        {
+          "key": "kohdeExp",
+          "label": "n"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "choice",
+        "prompt": "Taulukon kohteet ovat kokojärjestyksessä. Mikä väite kuvaa oikein, miten ne liittyvät toisiinsa?",
+        "choices": [
+          {
+            "text": "Maa kiertää Aurinkoa, Aurinko on yksi Linnunradan tähdistä, ja Linnunrata on yksi havaittavan maailmankaikkeuden monista galakseista.",
+            "correct": true,
+            "feedback": "Oikein. Rakenteet ovat sisäkkäin: Maa on Aurinkokunnassa, Aurinkokunta Linnunradassa ja Linnunrata havaittavassa maailmankaikkeudessa. Taulukon mukaan jokainen seuraava rakenne on useita suuruusluokkia edellistä suurempi: Neptunuksen radasta Linnunrataan on kahdeksan suuruusluokkaa."
+          },
+          {
+            "text": "Linnunrata on Aurinkokunnan uloin osa, jossa on muita tähtiä.",
+            "feedback": "Järjestys on toisin päin: Aurinkokunta on Linnunradan sisällä, ei Linnunrata Aurinkokunnan. Linnunradassa on satoja miljardeja tähtiä, ja Aurinko on yksi niistä. Taulukon mukaan Linnunrata on noin kahdeksan suuruusluokkaa Aurinkokunnan planeettojen aluetta suurempi."
+          },
+          {
+            "text": "Linnunrata on sama asia kuin havaittava maailmankaikkeus, koska kaikki näkemämme tähdet ja galaksit ovat Linnunradassa.",
+            "feedback": "Paljain silmin näkyvät yksittäiset tähdet ovat Linnunradassa, mutta Linnunrata on vain yksi galaksi. Esimerkiksi Andromedan galaksi on Linnunradan ulkopuolella, ja havaittava maailmankaikkeus on noin kuusi suuruusluokkaa Linnunrataa suurempi."
+          },
+          {
+            "text": "Aurinko on Linnunradan keskus, jonka ympärillä galaksin muut tähdet kiertävät.",
+            "feedback": "Aurinko on yksi tavallinen tähti noin 26 000 valovuoden päässä Linnunradan keskustasta. Linnunradan tähdet, myös Aurinko, kiertävät galaksin keskustaa, ja keskustassa on musta aukko."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Valinnainen koe: missä on kokojen puoliväli?",
+      "intro": "Alkutila asettaa $L = -34$, jolloin lähin kohde on Planckin pituus. Kirjaa rivi. Zoomaa sitten ulospäin aina maailmankaikkeuteen asti ($L = 27{,}5$) ja kirjaa toinen rivi, kun havaittava maailmankaikkeus on lähin kohde. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
       "initial": {
         "L": -34
       },
@@ -204,7 +253,8 @@
           }
         ],
         "solution": "**Annettu:** taulukosta Planckin pituuden rivillä $n_\\text{min} = -35$ ja maailmankaikkeuden rivillä $n_\\text{max} = 27$\n\n**Kysytty:** puolivälin eksponentti $n_\\text{keski}$\n\n**Periaate:** Koot ovat monessa eri kymmenpotenssissa, joten \"puolivälissä\" tarkoittaa yhtä monta suuruusluokkaa kummastakin päästä. Se on eksponenttien keskiarvo, ei kokojen keskiarvo metreinä.\n\n**Kaava:** $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $n_\\text{keski} = \\dfrac{-35 + 27}{2} = \\dfrac{-8}{2} = -4$\n\n**Vastaus:** $-4$ eli koko noin $10^{-4}\\,\\text{m}$; kokonaisluku, koska eksponentit ovat kokonaislukuja. Kun zoomaat tähän, simulaation lähin kohde on hius, jonka $n = -4$: laskettu puoliväli ja simulaation kohde täsmäävät.\n\n**Järkevyys:** Keskikohdasta on Planckin pituuteen $-4 - (-35) = 31$ suuruusluokkaa ja maailmankaikkeuteen $27 - (-4) = 31$ suuruusluokkaa, joten väli on symmetrinen. Koko $10^{-4}\\,\\text{m}$ on kymmenesosamillimetri, noin hiuksen paksuus."
-      }
+      },
+      "optional": true
     },
     {
       "id": "menetelmat",
@@ -234,7 +284,8 @@
             "feedback": "Teoria ei yksin kerro, minkä kokoinen protoni on: koon ratkaisee mittaus. Teoria auttaa tulkitsemaan mittauksia, mutta sen ennusteet testataan kokeilla."
           }
         ]
-      }
+      },
+      "optional": true
     },
     {
       "id": "theory",
@@ -242,7 +293,10 @@
       "type": "theory",
       "sections": [
         "Ydinajatus",
-        "Kaava"
+        "Kaava",
+        "Aineen rakenne",
+        "Maailmankaikkeuden rakenteet",
+        "Perusvuorovaikutukset"
       ]
     },
     {
@@ -250,7 +304,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi taulukoihin ja simulaatioon. Mitä opit kymmenpotenssien lukumäärästä ja kokojen suhteesta? Mikä mittaus tai havainto on minkin koon takana (katso luvun menetelmät)? Missä kohdassa kokojen alue yllätti sinut?",
+      "prompt": "Vertaa ennusteitasi simulaation lukemiin. Kuinka suuri ero atomin ja sen ytimen välillä on, ja miten Aurinkokunta, Linnunrata ja havaittava maailmankaikkeus liittyvät toisiinsa? Mikä kokojen ero yllätti sinut eniten? Palaa myös alun kysymykseen: protonista havaittavaan maailmankaikkeuteen on noin $27-(-15) = 42$ suuruusluokkaa ja Planckin pituudesta noin 62.",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -262,6 +316,72 @@
       "type": "theory",
       "sections": [
         "Esimerkki"
+      ]
+    },
+    {
+      "id": "tunnista",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Tunnista kohde",
+      "justify": true,
+      "prompt": "Radioteleskooppi havaitsee Linnunradassa kohteen, josta tulee säteilypulssi tasaisesti noin 30 kertaa sekunnissa. Kohteen massaksi on määritetty noin $1{,}4$ Auringon massaa, ja muiden havaintojen mukaan sen halkaisija on vain noin $20\\,\\text{km}$. Mikä kohde on todennäköisimmin kyseessä?",
+      "choices": [
+        {
+          "text": "Tähti, joka on samanlainen kuin Aurinko.",
+          "feedback": "Aurinkoa hieman massiivisempi tavallinen tähti olisi Auringon kokoluokkaa, halkaisijaltaan yli miljoona kilometriä, ei $20\\,\\text{km}$. Näin suuri massa näin pienessä tilassa vaatii äärimmäisen tiheää ainetta."
+        },
+        {
+          "text": "Planeetta.",
+          "feedback": "Planeetan massa on paljon pienempi kuin tähden: suurimmankin planeetan, Jupiterin, massa on vain noin tuhannesosa Auringon massasta. Kohteen massa on suurempi kuin Auringon, joten se ei voi olla planeetta."
+        },
+        {
+          "text": "Neutronitähti.",
+          "correct": true,
+          "feedback": "Oikein. Massa on suurempi kuin Auringon mutta halkaisija vain noin $20\\,\\text{km}$: aine on puristunut lähes pelkiksi neutroneiksi. Neutronitähti voi pyöriä kymmeniä kertoja sekunnissa, ja sen säteilykeila pyyhkäisee Maan ohi kerran kierroksessa kuin majakan valo."
+        },
+        {
+          "text": "Musta aukko.",
+          "feedback": "Mustalla aukolla ei ole pintaa, ja sen koko on tapahtumahorisontin halkaisija. Tunnetut tähtien jäänteinä syntyneet mustat aukot ovat noin kolme kertaa Auringon massaisia tai raskaampia, joten $1{,}4$ Auringon massan kohde, jolla on $20\\,\\text{km}$:n kokoinen pyörivä pinta, on neutronitähti."
+        },
+        {
+          "text": "Sumu.",
+          "feedback": "Sumu on kaasu- ja pölypilvi, jonka koko on valovuosia eli kymmeniä biljoonia kilometrejä, ei $20\\,\\text{km}$. Sumussa voi syntyä tähtiä, mutta itse sumu ei ole tiivis kappale."
+        },
+        {
+          "text": "Galaksi.",
+          "feedback": "Galaksi on miljardien tähtien, kaasun ja pölyn järjestelmä, jonka halkaisija on tuhansia tai satoja tuhansia valovuosia. Galaksin massa on miljardeja kertoja Auringon massa, ei $1{,}4$ kertaa."
+        }
+      ]
+    },
+    {
+      "id": "vuorovaikutukset",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Mikä vuorovaikutus?",
+      "justify": true,
+      "prompt": "Mikä perusvuorovaikutus selittää kunkin ilmiön?\n\n1. Pudotettu avainnippu putoaa lattialle.\n2. Jääkaappimagneetti pysyy kiinni jääkaapin ovessa.\n3. Heliumytimen kaksi protonia ja kaksi neutronia pysyvät yhdessä.\n4. Banaanissa on hieman radioaktiivista kalium-40:tä. Joskus sen ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni.",
+      "choices": [
+        {
+          "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 heikko",
+          "correct": true,
+          "feedback": "Oikein. Maa ja avainnippu vetävät toisiaan gravitaation takia. Magneetin ja teräsoven välinen voima on magneettinen eli sähkömagneettinen. Ytimen osat pitää yhdessä vahvan vuorovaikutuksen jäännösvaikutus, ja neutronin muuttumisen protoniksi (beetahajoaminen) aiheuttaa heikko vuorovaikutus."
+        },
+        {
+          "text": "1 gravitaatio, 2 sähkömagneettinen, 3 gravitaatio, 4 heikko",
+          "feedback": "Ytimen hiukkasten välinen gravitaatio on aivan liian heikko: kahden protonin sähköinen hylkiminen on noin $10^{36}$ kertaa niiden gravitaatiota voimakkaampi. Ytimen pitää koossa vahvan vuorovaikutuksen jäännösvaikutus."
+        },
+        {
+          "text": "1 gravitaatio, 2 sähkömagneettinen, 3 sähkömagneettinen, 4 heikko",
+          "feedback": "Sähkömagneettinen vuorovaikutus ei pidä ydintä koossa vaan pyrkii hajottamaan sen: protonit ovat samanmerkkisesti varattuja ja hylkivät toisiaan, eikä neutroneilla ole varausta. Ydin pysyy koossa vahvan vuorovaikutuksen jäännösvaikutuksen takia."
+        },
+        {
+          "text": "1 sähkömagneettinen, 2 sähkömagneettinen, 3 vahva, 4 heikko",
+          "feedback": "Avainnippu ja Maa ovat kokonaisuutena lähes sähköisesti neutraaleja, joten niiden välillä ei ole merkittävää sähköistä voimaa. Putoaminen johtuu gravitaatiosta, joka vaikuttaa kaikkien massojen välillä ja on aina vetävä."
+        },
+        {
+          "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 vahva",
+          "feedback": "Kalium-40:n hajoamisessa (beetahajoaminen) neutroni muuttuu protoniksi, eli hiukkasen laji muuttuu. Tällaisen muutoksen aiheuttaa heikko vuorovaikutus. Vahva vuorovaikutus sitoo kvarkit ja ytimen osat yhteen, mutta se ei muuta neutronia protoniksi."
+        }
       ]
     },
     {
@@ -295,7 +415,7 @@
       "id": "siirto",
       "stage": "sovella",
       "type": "numeric",
-      "title": "Sovella: Maan koko mitataan",
+      "title": "Valinnainen: Maan koko mitataan",
       "prompt": "Kaksi mittaajaa seisoo samalla pohjois–etelä-suoralla etäisyyden $8{,}0\\cdot10^{2}\\,\\text{km}$ päässä toisistaan. Keskipäivällä Aurinko on toisen kohdalla suoraan pään päällä, mutta toisen mittaajan pystysuora tikku heittää varjon, joka kertoo, että Auringon säde on $7{,}2^\\circ$ kulmassa tikkuun nähden. Aurinko on niin kaukana, että sen säteet ovat yhdensuuntaiset, joten kulma $7{,}2^\\circ$ on myös mittaajien välinen kaarikulma Maan keskipisteestä. Maa on pallo. Mikä on Maan halkaisija? Vastaa kilometreinä.",
       "answer": 12732,
       "unit": "km",
@@ -319,7 +439,8 @@
           "feedback": "Tämä on yhden asteen pituus Maan pinnalla, $\\dfrac{800\\,\\text{km}}{7{,}2}$. Koko ympärysmitassa on 360 astetta, ja halkaisija saadaan vasta ympärysmitasta."
         }
       ],
-      "solution": "**Annettu:** mittaajien välimatka $s = 8{,}0\\cdot10^{2}\\,\\text{km}$ ja kaarikulma $\\alpha = 7{,}2^\\circ$; Maa on pallo\n\n**Kysytty:** Maan halkaisija $d$ kilometreinä\n\n**Periaate:** Mittaajien väli on yhtä suuri osa ympärysmitasta kuin kulma $7{,}2^\\circ$ on koko kierroksesta $360^\\circ$. Ympärysmitasta halkaisija saadaan, koska ympyrän ympärysmitta on $\\pi$ kertaa halkaisija.\n\n**Kaava:** $\\dfrac{s}{C} = \\dfrac{\\alpha}{360^\\circ}$, joten $C = \\dfrac{360^\\circ}{\\alpha}\\,s$, ja $C = \\pi d$, joten $d = \\dfrac{C}{\\pi} = \\dfrac{360^\\circ\\,s}{\\pi\\,\\alpha}$\n\n**Muunnokset:** Ei tarvita: välimatka on jo kilometreinä ja kulmat samassa yksikössä (asteina), joten kulmayksiköt supistuvat pois.\n\n**Sijoitus:** $d = \\dfrac{360^\\circ\\cdot8{,}0\\cdot10^{2}\\,\\text{km}}{\\pi\\cdot7{,}2^\\circ} = \\dfrac{4{,}0\\cdot10^{4}\\,\\text{km}}{\\pi} = 1{,}27\\cdot10^{4}\\,\\text{km}$\n\n**Vastaus:** $1{,}3\\cdot10^{4}\\,\\text{km}$ eli noin $13\\,000\\,\\text{km}$, kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $12\\,700$).\n\n**Järkevyys:** Tunnettu Maan halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m} = 1{,}27\\cdot10^{4}\\,\\text{km}$, ja tulos täsmää. Ympärysmitta $4{,}0\\cdot10^{4}\\,\\text{km}$ on suuruusluokkaa $10^{4}\\,\\text{km}$, mikä vastaa maapallon kokoa."
+      "solution": "**Annettu:** mittaajien välimatka $s = 8{,}0\\cdot10^{2}\\,\\text{km}$ ja kaarikulma $\\alpha = 7{,}2^\\circ$; Maa on pallo\n\n**Kysytty:** Maan halkaisija $d$ kilometreinä\n\n**Periaate:** Mittaajien väli on yhtä suuri osa ympärysmitasta kuin kulma $7{,}2^\\circ$ on koko kierroksesta $360^\\circ$. Ympärysmitasta halkaisija saadaan, koska ympyrän ympärysmitta on $\\pi$ kertaa halkaisija.\n\n**Kaava:** $\\dfrac{s}{C} = \\dfrac{\\alpha}{360^\\circ}$, joten $C = \\dfrac{360^\\circ}{\\alpha}\\,s$, ja $C = \\pi d$, joten $d = \\dfrac{C}{\\pi} = \\dfrac{360^\\circ\\,s}{\\pi\\,\\alpha}$\n\n**Muunnokset:** Ei tarvita: välimatka on jo kilometreinä ja kulmat samassa yksikössä (asteina), joten kulmayksiköt supistuvat pois.\n\n**Sijoitus:** $d = \\dfrac{360^\\circ\\cdot8{,}0\\cdot10^{2}\\,\\text{km}}{\\pi\\cdot7{,}2^\\circ} = \\dfrac{4{,}0\\cdot10^{4}\\,\\text{km}}{\\pi} = 1{,}27\\cdot10^{4}\\,\\text{km}$\n\n**Vastaus:** $1{,}3\\cdot10^{4}\\,\\text{km}$ eli noin $13\\,000\\,\\text{km}$, kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $12\\,700$).\n\n**Järkevyys:** Tunnettu Maan halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m} = 1{,}27\\cdot10^{4}\\,\\text{km}$, ja tulos täsmää. Ympärysmitta $4{,}0\\cdot10^{4}\\,\\text{km}$ on suuruusluokkaa $10^{4}\\,\\text{km}$, mikä vastaa maapallon kokoa.",
+      "optional": true
     },
     {
       "id": "tehtavat",
@@ -358,26 +479,26 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Laskeminen",
-      "prompt": "Valo kulkee Auringosta Maahan matkan $1{,}50\\cdot10^{11}\\,\\text{m}$ nopeudella $3{,}00\\cdot10^{8}\\,\\text{m/s}$. Kuinka monta minuuttia matka kestää?",
-      "answer": 8.33,
-      "unit": "min",
+      "prompt": "Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m}$ ja neutronitähden halkaisija noin $2{,}4\\cdot10^{4}\\,\\text{m}$, vaikka neutronitähden massa on suurempi kuin Auringon. Kuinka monta kertaa Auringon halkaisija on neutronitähden halkaisijaa suurempi?",
+      "answer": 57917,
+      "unit": "kertaa",
       "tolerance": 0.02,
       "hints": [
-        "Valo kulkee tasaisella nopeudella. Mikä kaava yhdistää matkan, nopeuden ja ajan?",
-        "Kaavasta $s = c\\,t$ saat ajan $t = \\dfrac{s}{c}$. Tulos tulee ensin sekunteina.",
-        "$t = \\dfrac{1{,}50\\cdot10^{11}}{3{,}00\\cdot10^{8}}\\,\\text{s}$. Muuta lopuksi sekunnit minuuteiksi jakamalla luvulla 60."
+        "Kysymys \"kuinka monta kertaa suurempi\" on jakolasku: suurempi koko jaetaan pienemmällä.",
+        "Kokojen suhde on $k = \\dfrac{d_2}{d_1} = \\dfrac{a_2}{a_1}\\cdot10^{\\,n_2-n_1}$.",
+        "$k = \\dfrac{1{,}39}{2{,}4}\\cdot10^{9-4}$. Laske kerroinosien osamäärä ja kerro se luvulla $10^{5}$."
       ],
       "mistakes": [
         {
-          "value": 500,
-          "feedback": "Tämä on aika sekunteina. Kysyttiin minuutteja, joten jaa vielä luvulla 60."
+          "value": 5,
+          "feedback": "Tämä on suuruusluokkien ero eli eksponenttien erotus, ei kokojen suhde. Suhde on kerroinosien osamäärä kertaa $10^{5}$."
         },
         {
-          "value": 30000,
-          "feedback": "Kerroit sekunnit luvulla 60, vaikka sekunneista minuutteihin siirrytään jakamalla. Minuutti on pitempi kuin sekunti, joten minuutteja on vähemmän kuin sekunteja."
+          "value": 1.7266187e-05,
+          "feedback": "Jaoit pienemmän koon suuremmalla. Kun kysytään, kuinka monta kertaa Aurinko on suurempi, Auringon halkaisija jaetaan neutronitähden halkaisijalla."
         }
       ],
-      "solution": "**Annettu:** $s = 1{,}50\\cdot10^{11}\\,\\text{m}$ ja $c = 3{,}00\\cdot10^{8}\\,\\text{m/s}$; nopeus on tasainen\n\n**Kysytty:** aika $t$ minuutteina\n\n**Periaate:** Valo etenee tasaisella nopeudella, joten matka on nopeuden ja ajan tulo. Aika on matka jaettuna nopeudella.\n\n**Kaava:** $s = c\\,t$, joten $t = \\dfrac{s}{c}$\n\n**Muunnokset:** Tulos tulee sekunteina. Minuuteiksi muutetaan jakamalla: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{1{,}50\\cdot10^{11}\\,\\text{m}}{3{,}00\\cdot10^{8}\\,\\text{m/s}} = 500\\,\\text{s} = \\dfrac{500\\,\\text{s}}{60\\,\\text{s/min}} = 8{,}33\\,\\text{min}$\n\n**Vastaus:** $8{,}33\\,\\text{min}$ eli noin $8{,}3\\,\\text{min}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.\n\n**Järkevyys:** Arvio: $\\dfrac{1{,}5\\cdot10^{11}}{3\\cdot10^{8}} = 0{,}5\\cdot10^{3} = 500\\,\\text{s}$, mikä on vajaat kymmenen minuuttia. Auringon valo on siis noin kahdeksan minuuttia vanhaa, kuten tähtitieteen kirjoissa kerrotaan."
+      "solution": "**Annettu:** Auringon halkaisija $d_2 = 1{,}39\\cdot10^{9}\\,\\text{m}$ ja neutronitähden halkaisija $d_1 = 2{,}4\\cdot10^{4}\\,\\text{m}$\n\n**Kysytty:** kokojen suhde $k$ (kuinka monta kertaa Auringon halkaisija on neutronitähden halkaisijaa suurempi)\n\n**Periaate:** Kysymys \"kuinka monta kertaa suurempi\" on jakolasku: suurempi koko jaetaan pienemmällä. Kymmenpotenssit jaetaan vähentämällä eksponentit, ja kerroinosat jaetaan tavallisesti.\n\n**Kaava:** $k = \\dfrac{d_2}{d_1} = \\dfrac{a_2}{a_1}\\cdot10^{\\,n_2-n_1}$\n\n**Muunnokset:** Ei tarvita: molemmat halkaisijat ovat metreinä, joten yksikkö supistuu ja $k$ on pelkkä luku.\n\n**Sijoitus:** $k = \\dfrac{1{,}39\\cdot10^{9}\\,\\text{m}}{2{,}4\\cdot10^{4}\\,\\text{m}} = \\dfrac{1{,}39}{2{,}4}\\cdot10^{9-4} = 0{,}579\\cdot10^{5} = 5{,}79\\cdot10^{4}$\n\n**Vastaus:** noin $5{,}8\\cdot10^{4}$ eli $58\\,000$ kertaa; kaksi merkitsevää numeroa, koska neutronitähden halkaisija $2{,}4\\cdot10^{4}\\,\\text{m}$ on annettu kahdella.\n\n**Järkevyys:** Suuruusluokat ovat $10^{9}\\,\\text{m}$ ja $10^{4}\\,\\text{m}$, joten suhteen pitää olla noin $10^{5}$, ja $5{,}8\\cdot10^{4}$ on sitä lähellä. Neutronitähti on siis pienempi kuin moni kaupunki, vaikka sen massa on suurempi kuin Auringon: koko ei kerro kohteen tyyppiä eikä massaa."
     },
     {
       "id": "check-3",
