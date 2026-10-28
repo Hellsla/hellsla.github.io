@@ -189,21 +189,21 @@
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelectorAll('#sim-root select'); const F=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; s[0].value='0'; F(s[0]); r[0].value=1; F(r[0]); r[1].value=8; F(r[1]); r[2].value=3; F(r[2]);",
-  "expr": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelectorAll('#sim-root select'); const F=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; s[0].value='0'; F(s[0]); r[0].value=1; F(r[0]); r[1].value=8; F(r[1]); r[2].value=3; F(r[2]); (() => { const x=simText('#sim-root .readout'); return x.includes('$t = 3{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: nopeus $v = 29{,}4\\\\,\\\\text{m/s}$, $v/t = 9{,}81\\\\,\\\\text{m/s}^2$') && x.includes('$\\\\text{B}$: nopeus $v = 29{,}4\\\\,\\\\text{m/s}$, $v/t = 9{,}81\\\\,\\\\text{m/s}^2$') ? 1 : 0 })()",
+  "expr": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelectorAll('#sim-root select'); const F=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; s[0].value='0'; F(s[0]); r[0].value=1; F(r[0]); r[1].value=8; F(r[1]); r[2].value=3; F(r[2]); (() => { const x=simText('#sim-root .readout'); return x.includes('$t = 3{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: nopeus $v = 29{,}4\\\\,\\\\text{m/s}$, $v : t = 9{,}81\\\\,\\\\text{m/s}^2$') && x.includes('$\\\\text{B}$: nopeus $v = 29{,}4\\\\,\\\\text{m/s}$, $v : t = 9{,}81\\\\,\\\\text{m/s}^2$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout in vacuum at 3,0 s: both balls v = 29,4 m/s and v/t = 9,81 m/s²"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelectorAll('#sim-root select'); const F=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; s[0].value='1'; F(s[0]); r[0].value=0.1; F(r[0]); r[1].value=10; F(r[1]); r[2].value=4; F(r[2]);",
-  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$\\\\text{B}$: nopeus $v = 37{,}5\\\\,\\\\text{m/s}$, $v/t = 9{,}38\\\\,\\\\text{m/s}^2$') && x.includes('$\\\\text{A}$: nopeus $v = 10{,}5\\\\,\\\\text{m/s}$, $v/t = 2{,}63\\\\,\\\\text{m/s}^2$') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$\\\\text{B}$: nopeus $v = 37{,}5\\\\,\\\\text{m/s}$, $v : t = 9{,}38\\\\,\\\\text{m/s}^2$') && x.includes('$\\\\text{A}$: nopeus $v = 10{,}5\\\\,\\\\text{m/s}$, $v : t = 2{,}63\\\\,\\\\text{m/s}^2$') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout in air at 4,0 s: A (0,1 kg) 10,5 m/s and 2,63 m/s², B (10 kg) 37,5 m/s and 9,38 m/s²"
  },
  {
   "setup": "const r=document.querySelectorAll('#sim-root input[type=range]'), s=document.querySelectorAll('#sim-root select'); const F=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; s[0].value='0'; F(s[0]); r[0].value=1; F(r[0]); r[1].value=1; F(r[1]); r[2].value=0; F(r[2]);",
-  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$t = 0{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: nopeus $v = 0\\\\,\\\\text{m/s}$, $v/t$ ei ole vielä määritelty') && window.simState.qA===null ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$t = 0{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: nopeus $v = 0\\\\,\\\\text{m/s}$, $v : t$ ei ole vielä määritelty') && window.simState.qA===null ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout at t = 0: v = 0 and v/t not yet defined"

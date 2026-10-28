@@ -85,29 +85,28 @@ def scale_axis():
         f.line(X(n), y0 - 6, X(n), yl + 18, MUTED, 1.5, "5 4")
         f.tex(lx, yl, rf"\text{{{name}}}", anchor)
         f.circle(X(n), y0, 7, INK, WHITE, 2)
-    f.tex(300, 40, r"\text{yksi askel oikealle} \Rightarrow \text{koko} \times 10", "middle", COLD)
+    f.tex(300, 40, r"\text{yksi askel oikealle} \Rightarrow \text{koko} \cdot 10", "middle", COLD)
     return f.svg()
 
 
 def ladder():
-    f = Fig("fy11-ladder", 330, "Kaaviokuva, ei mittakaavassa: viisi tikapuuaskelmaa, joissa koko on kymmenkertaistunut jokaisella askeleella "
-            "10 potenssiin n1, n1 plus 1, n1 plus 2 ja niin edelleen aina 10 potenssiin n2 asti. Suuruusluokkien ero on askelten lukumäärä "
-            "n2 miinus n1, ja kokojen suhde d2 per d1 on noin 10 potenssiin n2 miinus n1.")
-    bw, xs = 56, [28, 148, 268, 388, 508]
-    hs = [34, 70, 106, 142, 178]
-    labs = ["10^{n_1}", "10^{n_1+1}", "10^{n_1+2}", r"\ldots", "10^{n_2}"]
-    base = 262
+    f = Fig("fy11-ladder", 372, "Kaaviokuva, ei mittakaavassa: kuusi pylvästä, joissa koko kymmenkertaistuu jokaisella askeleella. "
+            "Ensimmäinen on 10 potenssiin −15 metriä, protoni, ja viimeinen 10 potenssiin −10 metriä, vetyatomi. "
+            "Askelia on viisi, joten vetyatomi on noin 10 potenssiin 5 eli satatuhatta kertaa protonia suurempi.")
+    bw, xs = 48, [24 + 100 * i for i in range(6)]
+    hs = [30, 58, 86, 114, 142, 170]
+    base = 236
     for i, (x, h) in enumerate(zip(xs, hs)):
         f.rect(x, base - h, bw, h, COLD_LIGHT, COLD, 2.5, rx=3)
-        f.tex(x + bw / 2, base - h - 24, labs[i], "middle", INK, w=100)
-    for i in range(4):
-        xm = xs[i] + bw + 32
-        f.arrow(xs[i] + bw + 10, base - 56, xs[i + 1] - 10, base - 56, MUTED, 2, 10)
-        f.tex(xm, base - 24, r"\times 10", "middle", HEAT, w=60)
-    f.line(xs[0], base + 18, xs[4] + bw, base + 18, INK, 2.5)
-    f.line(xs[0], base + 10, xs[0], base + 26, INK, 2.5); f.line(xs[4] + bw, base + 10, xs[4] + bw, base + 26, INK, 2.5)
-    f.tex(300, base + 50, r"\Delta n = n_2 - n_1\ \text{askelta}", "middle")
-    f.tex(584, 30, r"\text{ei mittakaavassa}", "end", MUTED)
+        f.tex(x + bw / 2, base - h - 22, rf"10^{{{i - 15}}}", "middle", INK, w=90)
+    for i in range(5):
+        f.arrow(xs[i] + bw + 6, base - 14, xs[i + 1] - 6, base - 14, MUTED, 2, 9)
+        f.tex((xs[i] + bw + xs[i + 1]) / 2, base + 24, r"\cdot 10", "middle", HEAT, w=56)
+    f.line(xs[0], base, xs[5] + bw, base, INK, 2)
+    f.tex(xs[0], base + 64, r"\text{protoni}", "start")
+    f.tex(xs[5] + bw, base + 64, r"\text{vetyatomi}", "end")
+    f.tex(300, base + 112, r"5\ \text{askelta} \Rightarrow 10^{5} = 100\,000\ \text{kertaa suurempi}", "middle")
+    f.tex(16, 30, r"\text{ei mittakaavassa}", "start", MUTED)
     return f.svg()
 
 

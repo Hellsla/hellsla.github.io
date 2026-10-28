@@ -3,7 +3,8 @@
 // d / W · 560 px wide, so every picture is to scale for the current L. Every object between about 1/2000 and about 3 times the view
 // is on screen at once, side by side on the ground line in size order: a larger one is cropped by the canvas (its limb is a big arc),
 // one under 4 px is a dot with a leader line to its label. Objects fade in and out smoothly as the view slides past their size.
-// All sizes are rounded orders of magnitude (see OBJ). Controls: ±1 power of ten buttons (animated), a log slider, drag / wheel / keys
+// All sizes are rounded orders of magnitude (see OBJ). Controls: ±1 power of ten buttons (animated), a log slider, a jump-to-object
+// select (glides to the view in which that object is the nearest one), drag / wheel / keys
 // on the canvas, the map at the bottom, an auto-zoom with the speed select (hidas · normaali · nopea = 0,5 · 1 · 2 powers of ten per second).
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
@@ -90,7 +91,7 @@ new p5((p) => {
   const GROUP = Array.from({ length: 22 }, () => { const a = rnd() * 6.283, d = Math.sqrt(rnd()) * 0.8; return [d * Math.cos(a), d * Math.sin(a), 0.012 + rnd() * 0.02]; });
   const CLUSTER = Array.from({ length: 24 }, () => { const a = rnd() * 6.283, d = Math.sqrt(rnd()) * 0.8; return [d * Math.cos(a), d * Math.sin(a), 0.02 + rnd() * 0.05]; });
 
-  let btn, bIn, bOut, sl, lSl, selDir, selSp, readout, cv;
+  let btn, bIn, bOut, sl, lSl, selDir, selSp, selGo, readout, cv;
   let L = 1, tgt = null, running = false, k = 1, labels = [], geo = {};
 
   // --- state helpers ---
@@ -125,6 +126,11 @@ new p5((p) => {
     const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); selSp = p.createSelect().parent(lv);
     for (const [txt, v] of [[__('hidas'), 0.5], [__('normaali'), 1], [__('nopea'), 2]]) selSp.option(txt, v);
     selSp.selected('1');                                                    // pace only: L advances by simulated time dt · speed
+    // jump to an object: the view glides to the width at which that object is the nearest one (mainObj)
+    const lj = p.createElement('label').parent(controls); p.createSpan(__('siirry')).parent(lj); selGo = p.createSelect().parent(lj);
+    selGo.option(__('siirry_valitse'), '');
+    OBJ.map((o, i) => i).sort((a, b) => OBJ[a].logExt - OBJ[b].logExt).forEach((i) => selGo.option(__('o_' + OBJ[i].id), OBJ[i].id));
+    selGo.elt.addEventListener('change', () => { const o = OBJ.find((x) => x.id === selGo.value()); if (o) goTo(o.logExt - Math.log10(150 / VIEW)); selGo.selected(''); });
     p.createP(__('kartta_ohje')).parent('sim-root').class('note');
     p.textFont('Arial');
     // direct manipulation: drag the picture, drag along the map, wheel and keys once the canvas has the focus
@@ -147,12 +153,12 @@ new p5((p) => {
     });
     sl.value(L);
     if (window.defineSimAdapter) window.defineSimAdapter({
-      params: { L: { input: sl.elt, unit: '' } },
+      params: { L: { input: sl.elt, unit: '' }, kohdeNimi: { input: selGo.elt, unit: '' } },   // kohdeNimi: the jump select; an experiment's table lists the nearest object by name
       reset: () => reset(),
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
-  function reset() { running = false; tgt = null; selDir.selected('1'); selSp.selected('1'); setL(1); }
+  function reset() { running = false; tgt = null; selDir.selected('1'); selSp.selected('1'); selGo.selected(''); setL(1); }
 
   p.draw = () => {
     const speed = Number(selSp.value()), dir = Number(selDir.value()), dt = Math.min(p.deltaTime, 100) / 1000;
@@ -180,8 +186,8 @@ new p5((p) => {
     const vb = ySbL - 1.09 * fh - 4 - 0.32 * fh, nb = vb - 1.43 * fh - 2, yb = nb - 0.9 * fh - 14;
     geo = { mapTop: mapY - 16, yb };
     readout.html(__('rivi_leveys', { L: Lfmt(L) }) + '<br>' + __('rivi_kohde', { nimi: __('o_' + M.id), lat: M.lat }) + '<br>' +
-      (vis.length ? __('rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => `$\\text{${__('o_' + it.o.id)}}$`).join(', ') }) : __('rivi_tyhja')));
-    window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
+      (vis.length ? __(vis.length === 1 ? 'rivi_nakyvissa_1' : 'rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => `$\\text{${__('o_' + it.o.id)}}$`).join(', ') }) : __('rivi_tyhja')));
+    window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeNimi: __('o_' + M.id), kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
       palkkiK: kk, palkkiPx: barPx, running, dir, speed, labels: null };
     labels = [];
     scene(ts, fh, items, { TB, mapY, ySb, ySbL, vb, nb, yb, kk, barPx });
@@ -230,16 +236,23 @@ new p5((p) => {
       if (sm.it.S >= 1) break;
       cands = cands.filter((cl) => cl !== sm);
     }
-    const cols = cands.map((cl) => {
+    let cols = cands.map((cl) => {
       const it = cl.it, nm = `$\\text{${__('o_' + it.o.id)}}$`, vl = `$${it.o.lat}$`, w = Math.max(p.textWidth(nm), p.textWidth(vl)) + 6;
       const ax = clamp((clamp(it.x0, 12, 588) + clamp(it.x1, 12, 588)) / 2, 12, 588);
-      return { nm, vl, w, ax, la: cl.la, it };
+      return { nm, vl, w0: w, ax, la: cl.la, it };
     }).sort((a, b) => a.ax - b.ax);
-    // crowded: the labels shrink together (down to 0,8 times) so that all fit side by side
-    const need = cols.reduce((s, cl) => s + cl.w + 4, 0), fs = clamp(584 / Math.max(need, 1), 0.8, 1), lfh = fh * fs;
-    cols.forEach((cl) => { cl.w *= fs; cl.cx = clamp(cl.ax, 8 + cl.w / 2, 592 - cl.w / 2); });
-    for (let i = 1; i < cols.length; i++) cols[i].cx = Math.max(cols[i].cx, cols[i - 1].cx + (cols[i - 1].w + cols[i].w) / 2 + 4);
-    for (let i = cols.length - 1; i >= 0; i--) { const lim = i === cols.length - 1 ? 592 - cols[i].w / 2 : cols[i + 1].cx - (cols[i + 1].w + cols[i].w) / 2 - 4; cols[i].cx = Math.min(cols[i].cx, lim); }
+    // crowded: the labels shrink together (down to 0,8 times) so that all fit side by side; if they still do not fit,
+    // the faintest label (the one fading in or out) gives way and the row is laid out again
+    let lfh = fh;
+    for (;;) {
+      const need = cols.reduce((s, cl) => s + cl.w0 + 4, 0), fs = clamp(584 / Math.max(need, 1), 0.8, 1); lfh = fh * fs;
+      cols.forEach((cl) => { cl.w = cl.w0 * fs; cl.cx = clamp(cl.ax, 8 + cl.w / 2, 592 - cl.w / 2); });
+      for (let i = 1; i < cols.length; i++) cols[i].cx = Math.max(cols[i].cx, cols[i - 1].cx + (cols[i - 1].w + cols[i].w) / 2 + 4);
+      for (let i = cols.length - 1; i >= 0; i--) { const lim = i === cols.length - 1 ? 592 - cols[i].w / 2 : cols[i + 1].cx - (cols[i + 1].w + cols[i].w) / 2 - 4; cols[i].cx = Math.min(cols[i].cx, lim); }
+      if (cols.length < 2 || cols[0].cx - cols[0].w / 2 >= 8) break;
+      const weak = cols.reduce((a, b) => (b.la < a.la || (b.la === a.la && b.it.S < a.it.S) ? b : a));
+      cols = cols.filter((cl) => cl !== weak);
+    }
     cols.forEach((cl) => {
       const bracket = cl.it.S >= 14 && cl.it.o.dim !== 'none' && cl.it.o.dim !== 'r' && cl.it.o.dim !== 'h' && cl.it.x0 > 4 && cl.it.x1 < 596;
       if (Math.abs(cl.cx - cl.ax) > 3 || cl.it.S < 30) {

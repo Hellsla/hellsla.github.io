@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 38c778f449b232fd
+CONTENT-HASH: 2a7e930288c2b5a4
 
 ## Blocking
 - none.
 
 ## Polish
-- inquiry.json `learn` — still no goal for slot goal 1 (fysiikka mallintavana, kokeisiin nojautuvana tieteenä), although the exit ticket and check-3 test it. Add: "Osaat selittää, miksi malli testataan mittauksella."
-- exercises.json L1-04 — lead atom/nucleus ratio is the worked example's method and context; swap for a non-atomic pair (e.g. hius/virus) so no L1 task echoes the example.
-- inquiry.json `reflect` — it now answers the opening question (42 and 62), good; but it sits in the core path while exp-2's rows already carry pred-2. If the hour is tight, `reflect` is the next candidate to make optional, not the 42/62 line (move that line to Ydinajatus then).
+- inquiry.json exp-1/2/3 `initial` — the setup box still reads "Alkutila: L = -9" and the sim shows "Näkymän leveys W = 10^-9 m"; L is never explained to the student, who needs only n. Write the initial state in words ("alkutilassa lähin kohde on vesimolekyyli") or hide L from the box.
+- Predictions and exp-1 ask "montako suuruusluokkaa", the Kaava section "kuinka monta kertaa". Add one sentence at exp-1's question: "viisi suuruusluokkaa = viisi askelta = $10^{5}$-kertainen".
+- The "Siirry kohteeseen" menu has about 44 entries; the experiments name about 8. Group it (aine, maapallo, avaruus) or shorten it.
+- Workload is on the upper edge for one lesson (five theory sections, two predictions, two experiments, three optional items, four Sovella tasks). Consider making the Orion/neutron-star detail in the theory shorter.
+- Formula: add that $d_\text{suurempi} : d_\text{pienempi}$ means the same as the fraction (the exercises' solutions use the colon).
 
 ## Checked
-- Round-1 fixes verified: sim readout names are LaTeX ($W = 10^{L}\,\text{m}$, "Näkymän leveys $10^{7,7}$ m", sizes in LaTeX) at 390 px; "radan säde" in exp-2; exp-1 intro tells the student to use the slider and why the button skips the atom.
-- vuorovaikutukset now transfers: falling keys, fridge magnet, potassium-40 are new phenomena not in the theory text; helium nucleus kept; each wrong option's feedback repairs a specific confusion (gravity in nucleus, EM holding nucleus, strong doing beta decay).
-- Opening question fully answered on the core path: structure (theory), Earth's address (exp-2), 42 and 62 orders (reflect).
-- Optional now: retrieval, exp-3, size-methods interpret, Etsi virhe, siirto, check-3. Core path: 2 predictions, exp-1 and exp-2, theory (about 8 figures), reflect, example, tunnista, vuorovaikutukset, L1 (5), check-1, check-2, exit ticket (3).
-- Workload for FY1 (1 op, 8 lessons, so about 3 h of work per lesson including practice): core path about 70 min plus L1, which is manageable; the optional items are real extras, not hidden requirements.
-- Predictions arguable before evidence and refutable by the exp rows (n values); nothing disclosed before commitment.
-- Sim at 390 px readable, text behind closed Käyttöohje / Mallin oletukset / Laskennan selitys; controls not clipped.
-- Example seven stages; solutions complete (spot-checked L1-04, L2-04, L3-03, check-2).
-- Finnish: glossary terms right, no case slips after number+unit found.
-- Hash unchanged at end (38c778f449b232fd).
+- Teacher's concern: the essential is now clear. Fig 3 (ladder) says "5 askelta ⇒ 10^5 = 100 000 kertaa suurempi", and the prediction, experiment table (only n) and example all use the same rule: count the steps, then 10 to that power. No d_2/d_1 and no L values to compare remain in the table.
+- The menu "Siirry kohteeseen" is readable at 390 px and 1280 px; the table's single column "kohde, n" is clear. Exp-1 and exp-2 can refute the predictions (atom vs ydin 5 steps, Neptune vs Linnunrata 8).
+- The two earlier blockers are fixed: the exit ticket shows $\text{B}$ correctly (capture open-exit-1280) and the table no longer has an L column.
+- Predictions open without disclosing answers; each option's feedback repairs its misconception.
+- The example is staged in seven steps; solutions follow the seven-part rubric.
+- Shots were stale (before the last inquiry and sim edits); regenerated with screenshot.py before judging.
+- Finnish and notation consistent (\cdot, thin spaces, glossary terms).
+- Hash unchanged at the end.

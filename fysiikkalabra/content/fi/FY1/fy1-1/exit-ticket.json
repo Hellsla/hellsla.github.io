@@ -5,7 +5,7 @@
   },
   {
     "q": "Kohteen $\\text{A}$ koon suuruusluokka on $10^{3}\\,\\text{m}$ ja kohteen $\\text{B}$ koon suuruusluokka $10^{8}\\,\\text{m}$. Kuinka monta kertaa suurempi $\\text{B}$ on suuruusluokan tarkkuudella?",
-    "a": "$k \\approx 10^{n_2 - n_1} = 10^{8-3} = 10^{5}$. Kohde $\\text{B}$ on noin satatuhatkertainen. Eroa viisi suuruusluokkaa ei saa lukea viisinkertaiseksi: yksi suuruusluokka on kymmenkertainen koko."
+    "a": "Suuruusluokkien välissä on $8-3 = 5$ kymmenpotenssin askelta, ja jokainen askel on kymmenkertainen koko. Kohde $\\text{B}$ on siis noin $10^{5}$ eli satatuhatta kertaa suurempi. Eroa viisi suuruusluokkaa ei saa lukea viisinkertaiseksi: yksi suuruusluokka on kymmenkertainen koko."
   },
   {
     "q": "Miksi fysiikassa malli testataan kokeella, vaikka se olisi looginen ja kaunis?",

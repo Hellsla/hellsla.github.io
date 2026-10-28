@@ -5,7 +5,7 @@
 // Distances: the planets stand at their mean orbital radii (semi-major axes, JPL "Approximate Positions of the Planets"), all on
 // one line from the Sun, diameters are equatorial (NASA planetary fact sheets); only the distance along the strip is real.
 // Light: c = 299 792,458 km/s = 86,3 px/s. "Matkusta valon nopeudella" sends a light pulse from the view's centre; the clock runs
-// in simulated time (dt·speed), so ×1, ×100 and ×10 000 change only the pace: the elapsed time at a given point is the same.
+// in simulated time (dt·speed), so the 1-, 100- and 10 000-fold paces change only the pace: the elapsed time at a given point is the same.
 // Voyager 2 (model values, source: model): d = d0 + v (t - t0) with d0 = 119,7 AU on 2018-11-05 (heliopause crossing, NASA/JPL)
 // and v = 15,341 km/s (JPL Voyager mission status); 1 AU = 149 597 870,7 km. The marker is drawn larger than the probe (a pin).
 // Every canvas text is a LaTeX string drawn through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.

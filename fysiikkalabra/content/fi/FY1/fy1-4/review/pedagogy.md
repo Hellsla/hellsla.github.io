@@ -1,11 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 21e9bac43306edcf
-
+CONTENT-HASH: e0edff6ef10318e0
 ## Blocking
-(none)
-
 ## Polish
-(none)
-
 ## Checked
-batch delta review: correct option now says the line passes near all points with points on both sides (a stronger, fairer criterion); koe-3 added to the conclusion's after list, so the reflection draws on all three experiments; no answer disclosed early.
+batch delta review: the Järkevyys check now reads `25\,\text{km} : 3{,}0\,\tfrac{\text{km}}{\text{h}} \approx 8{,}3\,\text{h}` (colon for division, units carried; 25:3,0 = 8,33 correct); nothing else changed, solution still complete.

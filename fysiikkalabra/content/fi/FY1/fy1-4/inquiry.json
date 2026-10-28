@@ -285,8 +285,8 @@
       "prompt": "Opiskelija määrittää kärryn kuvaajan kulmakertoimen mittauspisteistä $(1{,}0\\,\\text{s};\\ 0{,}6\\,\\text{m})$ ja $(2{,}0\\,\\text{s};\\ 0{,}8\\,\\text{m})$:\n\n$$k = \\frac{0{,}8\\,\\text{m} - 0{,}6\\,\\text{m}}{2{,}0\\,\\text{s} - 1{,}0\\,\\text{s}} = 0{,}2\\,\\text{m/s}$$\n\nMuut mittauspisteet kuitenkin antavat noin $0{,}5\\,\\text{m/s}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Kulmakerroin on pitänyt laskea jakamalla aikaero matkaerolla, eli laskemalla $\\Delta t / \\Delta s$ eikä $\\Delta s / \\Delta t$.",
-          "feedback": "Kulmakerroin on $\\Delta y / \\Delta x$ eli matkan muutos jaettuna ajan muutoksella. Käänteinen suhde antaisi yksikön s/m, joka ei ole nopeus."
+          "text": "Kulmakerroin on pitänyt laskea jakamalla aikaero matkaerolla, eli laskemalla $\\Delta t : \\Delta s$ eikä $\\Delta s : \\Delta t$.",
+          "feedback": "Kulmakerroin on $\\Delta y : \\Delta x$ eli matkan muutos jaettuna ajan muutoksella. Käänteinen suhde antaisi yksikön s/m, joka ei ole nopeus."
         },
         {
           "text": "Pisteet on luettu mittauksista eikä sovitetulta suoralta, ja ne ovat liian lähellä toisiaan.",
@@ -298,8 +298,8 @@
           "feedback": "Tulos $0{,}2\\,\\text{m/s}$ eroaa muista väleistä, joten yksi pisteväli ei kerro koko liikkeestä. Peräkkäisistä pareista saataisiin $0{,}2$, $0{,}8$, $0{,}5$, $0{,}3$ ja $0{,}5\\,\\text{m/s}$, ja nämä satunnaisvirheen hajottamat arvot ovat kaikki epäluotettavia."
         },
         {
-          "text": "Kulmakerroin olisi pitänyt laskea yhdestä pisteestä jakamalla $s$ ajalla $t$, esimerkiksi $0{,}6\\,\\text{m} / 1{,}0\\,\\text{s}$.",
-          "feedback": "Yksi piste antaa $0{,}60\\,\\text{m/s}$ (1 s), $0{,}40\\,\\text{m/s}$ (2 s) ja $0{,}53\\,\\text{m/s}$ (3 s): jokaisen oman virheen mukainen arvo. Lisäksi $s/t$ antaa kulmakertoimen vain, jos suora kulkee origon kautta. Suoralta luetut kaksi kaukaista pistettä ovat luotettavampi tapa."
+          "text": "Kulmakerroin olisi pitänyt laskea yhdestä pisteestä jakamalla $s$ ajalla $t$, esimerkiksi $0{,}6\\,\\text{m} : 1{,}0\\,\\text{s}$.",
+          "feedback": "Yksi piste antaa $0{,}60\\,\\text{m/s}$ (1 s), $0{,}40\\,\\text{m/s}$ (2 s) ja $0{,}53\\,\\text{m/s}$ (3 s): jokaisen oman virheen mukainen arvo. Lisäksi $s : t$ antaa kulmakertoimen vain, jos suora kulkee origon kautta. Suoralta luetut kaksi kaukaista pistettä ovat luotettavampi tapa."
         }
       ]
     },
@@ -318,20 +318,20 @@
         "tolerance": 0.02,
         "hints": [
           "Mistä kohdasta akselilta luet pisteen koordinaatin? Kulje pisteestä ruudukkoa pitkin akselille.",
-          "Kulmakerroin on $\\Delta s / \\Delta t$: pystysuuntainen muutos jaettuna vaakasuuntaisella muutoksella.",
+          "Kulmakerroin on $\\Delta s : \\Delta t$: pystysuuntainen muutos jaettuna vaakasuuntaisella muutoksella.",
           "Kun $P_1$ on kohdassa $t = 1{,}0\\,\\text{h}$ ja $P_2$ kohdassa $t = 3{,}0\\,\\text{h}$, aikaväli on $\\Delta t = 2{,}0\\,\\text{h}$. Lue vastaavat matkat pystyakselilta."
         ],
         "mistakes": [
           {
             "value": 16.7,
-            "feedback": "Jaoit pisteen $P_2$ matkan sen ajalla ($50/3{,}0$), mikä kelpaa vain, jos suora kulkee origon kautta. Tämä suora leikkaa pystyakselin kohdassa $5\\,\\text{km}$, joten lasketaan muutokset: $\\Delta s / \\Delta t$."
+            "feedback": "Jaoit pisteen $P_2$ matkan sen ajalla ($50 : 3{,}0$), mikä kelpaa vain, jos suora kulkee origon kautta. Tämä suora leikkaa pystyakselin kohdassa $5\\,\\text{km}$, joten lasketaan muutokset: $\\Delta s : \\Delta t$."
           },
           {
             "value": 0.067,
-            "feedback": "Jaoit aikaeron matkaerolla ($\\Delta t / \\Delta s$). Kulmakerroin on pystysuuntainen muutos jaettuna vaakasuuntaisella, eli $\\Delta s / \\Delta t$, ja sen yksikkö on km/h."
+            "feedback": "Jaoit aikaeron matkaerolla ($\\Delta t : \\Delta s$). Kulmakerroin on pystysuuntainen muutos jaettuna vaakasuuntaisella, eli $\\Delta s : \\Delta t$, ja sen yksikkö on km/h."
           }
         ],
-        "solution": "**Annettu:** kuvaajan suora, jolla ovat merkityt pisteet $P_1$ ja $P_2$; akseleilla matka $s$ (km) ja aika $t$ (h)\n\n**Kysytty:** suoran kulmakerroin $k$ eli pyöräilijän nopeus yksikössä km/h\n\n**Periaate:** Matka-aikakuvaajan suoran kulmakerroin on nopeus, ja se on $\\Delta s / \\Delta t$ millä tahansa kahdella suoran pisteellä. Luetaan kaksi kaukana toisistaan olevaa pistettä sovitetulta suoralta, jolloin lukemavirhe vaikuttaa tulokseen vähän.\n\n**Kuvaajan lukeminen:** Piste $P_1$ on ruudukon risteyksessä, jossa $t_1 = 1{,}0\\,\\text{h}$ ja $s_1 = 20\\,\\text{km}$ (vaaka-akselin luku suoraan alapuolella, pystyakselin luku suoraan vasemmalla). Piste $P_2$ on risteyksessä $t_2 = 3{,}0\\,\\text{h}$ ja $s_2 = 50\\,\\text{km}$. Kulmakerroin lasketaan näistä lukemista.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina, ja tulos kysytään yksikössä km/h.\n\n**Sijoitus:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2{,}0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Vastaus:** $15\\,\\text{km/h}$, kaksi merkitsevää numeroa, koska ajat on luettu kahden numeron tarkkuudella ($1{,}0\\,\\text{h}$ ja $3{,}0\\,\\text{h}$).\n\n**Järkevyys:** Tarkistus kolmannella pisteellä: kun $t = 2{,}0\\,\\text{h}$, suora on kuvaajassa noin $35\\,\\text{km}$, ja $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2{,}0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. Nopeus $15\\,\\text{km/h}$ on tavallisen pyöräilyn luokkaa."
+        "solution": "**Annettu:** kuvaajan suora, jolla ovat merkityt pisteet $P_1$ ja $P_2$; akseleilla matka $s$ (km) ja aika $t$ (h)\n\n**Kysytty:** suoran kulmakerroin $k$ eli pyöräilijän nopeus yksikössä km/h\n\n**Periaate:** Matka-aikakuvaajan suoran kulmakerroin on nopeus, ja se on $\\Delta s : \\Delta t$ millä tahansa kahdella suoran pisteellä. Luetaan kaksi kaukana toisistaan olevaa pistettä sovitetulta suoralta, jolloin lukemavirhe vaikuttaa tulokseen vähän.\n\n**Kuvaajan lukeminen:** Piste $P_1$ on ruudukon risteyksessä, jossa $t_1 = 1{,}0\\,\\text{h}$ ja $s_1 = 20\\,\\text{km}$ (vaaka-akselin luku suoraan alapuolella, pystyakselin luku suoraan vasemmalla). Piste $P_2$ on risteyksessä $t_2 = 3{,}0\\,\\text{h}$ ja $s_2 = 50\\,\\text{km}$. Kulmakerroin lasketaan näistä lukemista.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina, ja tulos kysytään yksikössä km/h.\n\n**Sijoitus:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2{,}0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Vastaus:** $15\\,\\text{km/h}$, kaksi merkitsevää numeroa, koska ajat on luettu kahden numeron tarkkuudella ($1{,}0\\,\\text{h}$ ja $3{,}0\\,\\text{h}$).\n\n**Järkevyys:** Tarkistus kolmannella pisteellä: kun $t = 2{,}0\\,\\text{h}$, suora on kuvaajassa noin $35\\,\\text{km}$, ja $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2{,}0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. Nopeus $15\\,\\text{km/h}$ on tavallisen pyöräilyn luokkaa."
       }
     },
     {
@@ -351,7 +351,7 @@
       "mistakes": [
         {
           "value": 25,
-          "feedback": "Laskit $t = h/k = 20/0{,}80$ ikään kuin suora kulkisi origon kautta. Suoralla on vakiotermi $b = 4{,}0\\,\\text{cm}$: kasvi oli jo 4,0 cm pitkä mittauksen alussa, joten tarvitaan $t = (h - b)/k$."
+          "feedback": "Laskit $t = h : k = 20 : 0{,}80$ ikään kuin suora kulkisi origon kautta. Suoralla on vakiotermi $b = 4{,}0\\,\\text{cm}$: kasvi oli jo 4,0 cm pitkä mittauksen alussa, joten tarvitaan $t = (h - b) : k$."
         },
         {
           "value": 16,
@@ -401,19 +401,19 @@
       "hints": [
         "Mikä kysytään: aikaa vai matkaa? Mikä suoran yhtälön suure on tunnettu?",
         "Suoran yhtälö on $s = kt + b$. Laske ensin kulmakerroin $k$ kahdesta pisteestä ja sitten vakiotermi $b = s_1 - kt_1$.",
-        "$k = \\dfrac{19{,}0 - 7{,}0}{5{,}0 - 1{,}0}\\,\\tfrac{\\text{km}}{\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$ ja $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$; ratkaise $t = (s - b)/k$."
+        "$k = \\dfrac{19{,}0 - 7{,}0}{5{,}0 - 1{,}0}\\,\\tfrac{\\text{km}}{\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$ ja $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$; ratkaise $t = (s - b) : k$."
       ],
       "mistakes": [
         {
           "value": 8.3,
-          "feedback": "Laskit $t = s/k = 25/3{,}0$ ikään kuin suora kulkisi origon kautta. Vakiotermi $b = 4{,}0\\,\\text{km}$ on matka kellon käynnistyshetkellä, joten $t = (25 - 4{,}0)/3{,}0$."
+          "feedback": "Laskit $t = s : k = 25 : 3{,}0$ ikään kuin suora kulkisi origon kautta. Vakiotermi $b = 4{,}0\\,\\text{km}$ on matka kellon käynnistyshetkellä, joten $t = (25 - 4{,}0) : 3{,}0$."
         },
         {
           "value": 5.5,
-          "feedback": "Vaihdoit kulmakertoimen ja vakiotermin: suora $s = 4{,}0\\,t + 3{,}0$ antaisi $t = (25 - 3{,}0)/4{,}0 = 5{,}5\\,\\text{h}$. Oikeassa suorassa kulmakerroin on $3{,}0\\,\\text{km/h}$ (nopeus) ja vakiotermi $4{,}0\\,\\text{km}$ (matka kellon käynnistyshetkellä)."
+          "feedback": "Vaihdoit kulmakertoimen ja vakiotermin: suora $s = 4{,}0\\,t + 3{,}0$ antaisi $t = (25 - 3{,}0) : 4{,}0 = 5{,}5\\,\\text{h}$. Oikeassa suorassa kulmakerroin on $3{,}0\\,\\text{km/h}$ (nopeus) ja vakiotermi $4{,}0\\,\\text{km}$ (matka kellon käynnistyshetkellä)."
         }
       ],
-      "solution": "**Annettu:** suoran pisteet $(t_1;\\ s_1) = (1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(t_2;\\ s_2) = (5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$; matka $s = 25\\,\\text{km}$\n\n**Kysytty:** aika $t$, jolla $s = 25\\,\\text{km}$\n\n**Periaate:** Matka kasvaa tasaisesti, joten matka noudattaa suoraa $s = kt + b$. Kulmakerroin lasketaan suoran kahdesta pisteestä ja vakiotermi yhdestä, ja aika ratkaistaan suoran yhtälöstä.\n\n**Kaava:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ ja $s = kt + b$, josta\n\n$$t = \\frac{s - b}{k}$$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina.\n\n**Sijoitus:** $k = \\dfrac{19{,}0\\,\\text{km} - 7{,}0\\,\\text{km}}{5{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$ ja $t = \\dfrac{25\\,\\text{km} - 4{,}0\\,\\text{km}}{3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7{,}0\\,\\text{h}$\n\n**Vastaus:** $7{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Järkevyys:** Tarkistus: $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7{,}0\\,\\text{h} + 4{,}0\\,\\text{km} = 25\\,\\text{km}$. Vauhti $3{,}0\\,\\text{km/h}$ on kävelyn luokkaa. Aika on lyhyempi kuin $25 / 3{,}0 \\approx 8{,}3\\,\\text{h}$, koska lähtömatka $4{,}0\\,\\text{km}$ on jo kuljettu."
+      "solution": "**Annettu:** suoran pisteet $(t_1;\\ s_1) = (1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(t_2;\\ s_2) = (5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$; matka $s = 25\\,\\text{km}$\n\n**Kysytty:** aika $t$, jolla $s = 25\\,\\text{km}$\n\n**Periaate:** Matka kasvaa tasaisesti, joten matka noudattaa suoraa $s = kt + b$. Kulmakerroin lasketaan suoran kahdesta pisteestä ja vakiotermi yhdestä, ja aika ratkaistaan suoran yhtälöstä.\n\n**Kaava:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ ja $s = kt + b$, josta\n\n$$t = \\frac{s - b}{k}$$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina.\n\n**Sijoitus:** $k = \\dfrac{19{,}0\\,\\text{km} - 7{,}0\\,\\text{km}}{5{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$ ja $t = \\dfrac{25\\,\\text{km} - 4{,}0\\,\\text{km}}{3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7{,}0\\,\\text{h}$\n\n**Vastaus:** $7{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Järkevyys:** Tarkistus: $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7{,}0\\,\\text{h} + 4{,}0\\,\\text{km} = 25\\,\\text{km}$. Vauhti $3{,}0\\,\\text{km/h}$ on kävelyn luokkaa. Aika on lyhyempi kuin $25\\,\\text{km} : 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8{,}3\\,\\text{h}$, koska lähtömatka $4{,}0\\,\\text{km}$ on jo kuljettu."
     },
     {
       "id": "tarkistus-3",
@@ -427,7 +427,7 @@
         "Perustelen, että kaukana toisistaan olevilla pisteillä $\\Delta y$ on suuri verrattuna lukemavirheeseen, joten kulmakertoimen virhe on pieni.",
         "Sanon, että pisteet luetaan sovitetulta suoralta eikä yksittäisistä mittauspisteistä."
       ],
-      "model": "Jokaiseen mittaukseen kuuluu satunnaisvirhe, joten pisteet hajaantuvat mallin ympärille. Murtoviiva yhdistäisi myös nämä virheet ja antaisi jyrkästi vaihtelevan, epäuskottavan riippuvuuden. Sovitettu suora kulkee pisteiden joukon keskeltä ja kuvaa ilmiön yleistä riippuvuutta. Kulmakerroin $k = \\Delta y / \\Delta x$ lasketaan suoran kahdesta pisteestä, koska suoralla virheet on jo tasattu. Pisteet valitaan kaukana toisistaan, koska silloin $\\Delta y$ on suuri verrattuna lukemavirheeseen ja kulmakertoimen suhteellinen virhe pienenee. Esimerkiksi $\\Delta x$:n kymmenkertaistaminen pienentää suhteellista virhettä kymmenesosaan.",
+      "model": "Jokaiseen mittaukseen kuuluu satunnaisvirhe, joten pisteet hajaantuvat mallin ympärille. Murtoviiva yhdistäisi myös nämä virheet ja antaisi jyrkästi vaihtelevan, epäuskottavan riippuvuuden. Sovitettu suora kulkee pisteiden joukon keskeltä ja kuvaa ilmiön yleistä riippuvuutta. Kulmakerroin $k = \\Delta y : \\Delta x$ lasketaan suoran kahdesta pisteestä, koska suoralla virheet on jo tasattu. Pisteet valitaan kaukana toisistaan, koska silloin $\\Delta y$ on suuri verrattuna lukemavirheeseen ja kulmakertoimen suhteellinen virhe pienenee. Esimerkiksi $\\Delta x$:n kymmenkertaistaminen pienentää suhteellista virhettä kymmenesosaan.",
       "optional": true
     },
     {

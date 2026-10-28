@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bf5a8408183fa8fb
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-5/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: f67273566e2625ad
 
 ## Blocking
 
 ## Polish
+- lessons/FY1/fy1-5/answers.py:20–21 — comments and code still use `/ 3.6`; harmless (not student-facing), but `54 * 1000 / 3600` would mirror the solutions.
 
 ## Checked
-- Hash bf5a8408183fa8fb at start and end. Since round 2, only lesson.md Järkevyys, the inquiry.json conclusion/tarkistus-3 `model`, ennuste-1 feedback and solutions.md L1-02 changed.
-- The Earth-distance claim is gone from lesson.md and inquiry.json; no other file repeats it. The JPL value 143,05 AU is now compared with the heliocentric model, which is consistent with the teacher's brief.
-- The new cause ("osin" solar deceleration plus 0,1 AU precision of s₀) is honest. Solar gravity at about 120–143 AU gives an order of 0,1 AU over the interval, so "osin" fits.
-- The model at 2026-02-15 (2659 d) gives 143,26 AU. The gap is 0,21 AU = 0,15 %, so "noin 0,2 AU" and "alle 0,2 %" are right.
-- Worked example: 2922 d, Δs = 25,89 AU, s = 145,59 AU, so 145,6 AU is right.
-- ennuste-1 wrong-option feedback with the v–t sentence removed is still correct (a horizontal s–t line means rest).
-- L1-02: 8,0 m/s as "hyvän juoksijan vauhti" is realistic.
-- answers.py recomputed: all 12 answers match exercises.json. L2-04 1,715 rounds to 1,7, which is inside the tolerance.
+- Round-3 change, solutions.md:56 (L2-01): 54 · 1000 m : 3600 s = 15 m/s, s = 15 m/s · 14 s = 210 m — correct.
+- solutions.md:66 (L2-02): 36 · 1000 m : 3600 s = 10 m/s, 4,5 km = 4500 m, t = 450 s; check 4,5 km : 36 km/h = 0,125 h = 450 s — correct.
+- No conversion-formula rule ("jaa 3,6:lla") left in student text; m/s → km/h only in reasonableness estimates (8,0 → 29; 1,4 → 5; 3,5 → 13; 1,5 → 5,4 km/h), all right.
+- answers.py reproduces all 12 answers, recomputed independently: 110; 8,0; 400; 45; 3,5; 210; 450; 2,4; 1,7; 3420 vrk; 41,6 h; 90 m; tolerances 2 %.
+- Notation: \cdot products, colon for written divisions, no ×/\times.
+- Other solutions unchanged since the PASS; symbolic first, rounding justified.
+- Hash identical at start and end.

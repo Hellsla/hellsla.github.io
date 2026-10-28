@@ -1,20 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e0ca257609881513
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-8/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: 250421b788f74ed6
 
 ## Blocking
 
 ## Polish
-- inquiry.json ennuste-1 first option — "Ryhmän B auto kulki hitaammin pitkällä matkalla" is nearly the same hypothesis as the second option (speed higher on short than long distance); the feedback could also note that B's own shortest distance gives the lower value, 0,39 m/s — or make the distractor distinct (e.g. different surface or batteries).
 
 ## Checked
-- Diff since PASS: inquiry.json ennuste-1 first option and feedback, `suunnittele` model answer.
-- New feedback: B's table gives 0,41 / 0,42 / 0,42 / 0,42 m/s for 1,00–2,50 m (1,00/2,47, 1,50/3,60, 2,00/4,73, 2,50/5,93) — "likimain samana 0,42 m/s" holds.
-- The option is not marked correct; the correct option (A's 20 % time uncertainty, 0,50 ± 0,10 m/s) unchanged.
-- `suunnittele` model: added rolling-resistance remark is correct and fits the falsifiable s = vt hypothesis; 1,6 m / 0,4 m/s = 4 s, 0,2/4 = 5 % unchanged.
-- No change to answers, exercises or solutions; earlier checks stand.
+- Notation sweep: solutions L1-05 Järkevyys `0{,}15 / 4{,}7` → `0{,}15 : 4{,}7`, meaning unchanged; no `×`/`\times`; remaining `/` are unit fractions (m/s, K/min).
+- L1-04 writes the uncertainty as Δx = (x_max − x_min) : 2 in \frac form; other uncertainties Δt, Δv.
+- answers.py run and recomputed: all 12 match exercises.json within tolerance (L1-03 0,4167 → 0,42; L1-05 3,17 → 3,2; L3-01 0,033; L3-02 2,4 − 1,0 = 1,4 K/min; L3-03 48 : 12 = 4).
+- Solutions symbolic first; conversions right (cm → m, °C difference = K); checks real (L2-03 intercept 0,06 m, L3-01 0,50 outside 0,397–0,463, L3-03 sums to 60 min).
 - Hash identical at start and end.

@@ -9,6 +9,6 @@
   },
   {
     "q": "Valo kulkee Auringosta Maahan ($1{,}0\\,\\text{AU}$) noin 8,3 minuutissa. Kuinka kauan se kulkee Auringosta Saturnukseen, joka on 9,5 AU:n päässä, ja miksi vastaus ei ole 8,3 minuuttia?",
-    "a": "$9{,}5\\cdot 8{,}3\\,\\text{min} = 79\\,\\text{min}$ eli noin 1,3 tuntia. Valon nopeus on sama, mutta matka on 9,5-kertainen, joten myös aika on 9,5-kertainen: aika on suoraan verrannollinen matkaan, $t = s/c$."
+    "a": "$9{,}5\\cdot 8{,}3\\,\\text{min} = 79\\,\\text{min}$ eli noin 1,3 tuntia. Valon nopeus on sama, mutta matka on 9,5-kertainen, joten myös aika on 9,5-kertainen: aika on suoraan verrannollinen matkaan, $t = s : c$."
   }
 ]

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Fysiikka rakentaa malleja ja testaa ne mittauksilla, ja kohteiden koot käsitetään kymmenpotensseina: koko kirjoitetaan muodossa $a\\cdot10^{n}$, suuruusluokkien ero on kymmenpotenssien lukumäärä ja kokojen suhde on noin $10^{\\Delta n}$. Zoomaussimulaatiolla opiskelija vertaa atomia ja sen ydintä sekä Aurinkokuntaa ja Linnunrataa, ja teoria kokoaa aineen rakenteen (molekyyli–atomi–ydin–nukleoni–kvarkki), Maan paikan maailmankaikkeuden rakenteissa, tähtitieteelliset kohdetyypit ja neljä perusvuorovaikutusta laadullisesti.",
+  "contribution": "Fysiikka rakentaa malleja ja testaa ne mittauksilla, ja kohteiden koot käsitetään kymmenpotensseina: koko kirjoitetaan muodossa $a\\cdot10^{n}$, kokojen suhde saadaan jakamalla suurempi koko pienemmällä, ja jokainen kymmenpotenssin askel on kymmenkertainen koko. Zoomaussimulaatiolla opiskelija vertaa atomia ja sen ydintä sekä Aurinkokuntaa ja Linnunrataa, ja teoria kokoaa aineen rakenteen (molekyyli–atomi–ydin–nukleoni–kvarkki), Maan paikan maailmankaikkeuden rakenteissa, tähtitieteelliset kohdetyypit ja neljä perusvuorovaikutusta laadullisesti.",
   "learn": [
     "Osaat kuvata aineen rakenteen molekyyleistä kvarkkeihin ja Maan paikan maailmankaikkeuden rakenteissa.",
     "Osaat kirjoittaa koon kymmenpotenssimuotoon ja verrata kokoja suuruusluokkien avulla.",
@@ -111,25 +111,25 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Zoomaa Planckin pituudesta havaittavaan maailmankaikkeuteen. Kaikki kuvaan mahtuvat kohteet näkyvät yhtä aikaa oikeassa kokosuhteessa, ja alareunan palkki on $10^{k}\\,\\text{m}$ pitkä.",
-      "howto": "Paina *Lähennä ×10* tai *Loitonna ×10*: näkymän leveys muuttuu kymmenesosaksi tai kymmenkertaiseksi, ja kuva liukuu uuteen mittakaavaan. Kohteet seisovat rinnakkain koon mukaan: pienin vasemmalla, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Muutaman pikselin kokoinen kohde on piste, josta viiva osoittaa sen nimeen. Voit myös vetää *Näkymän leveys* -liukusäädintä, vetää kuvaa sivusuunnassa tai napsauttaa kartan kohtaa. Kun kuva on valittuna, nuolinäppäimet ylös ja alas sekä hiiren rulla zoomaavat. *Käynnistä* zoomaa automaattisesti, ja *Suunta* ja *Nopeus* valitsevat suunnan ja vauhdin. Kartan pisteet ovat kohteita, ja vaalea kaista näyttää, mitkä koot mahtuvat kuvaan nyt. Jos kuvassa ei ole mitään, siirry kartalla jonkin pisteen luo.",
+      "text": "Zoomaa Planckin pituudesta havaittavaan maailmankaikkeuteen. Kaikki kuvaan mahtuvat kohteet näkyvät yhtä aikaa oikeassa kokosuhteessa, ja alareunan palkki näyttää, kuinka pitkä kymmenen potenssi metrejä on tällä mittakaavalla.",
+      "howto": "Valitse kohde valikosta *Siirry kohteeseen*, niin kuva liukuu mittakaavaan, jossa se on kooltaan lähin kohde. Painikkeet *Lähennä $10$-kertaisesti* ja *Loitonna $10$-kertaisesti* muuttavat näkymän leveyden kymmenesosaksi tai kymmenkertaiseksi. Kohteet seisovat rinnakkain koon mukaan: pienin vasemmalla, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Muutaman pikselin kokoinen kohde on piste, josta viiva osoittaa sen nimeen. Voit myös vetää *Näkymän leveys* -liukusäädintä, vetää kuvaa sivusuunnassa tai napsauttaa kartan kohtaa. *Käynnistä* zoomaa automaattisesti, ja *Suunta* ja *Nopeus* valitsevat suunnan ja vauhdin. Kartan pisteet ovat kohteita, ja vaalea kaista näyttää, mitkä koot mahtuvat kuvaan nyt.",
       "model": "Koot ovat pyöristettyjä suuruusluokka-arvoja, eivät tarkkoja mittaustuloksia. Arvot ovat kirjallisuudesta pyöristettyjä mallin arvoja: Planckin pituus on luonnonvakioista laskettu suure, astronominen yksikkö $1\\,\\text{AU}$ ja valovuosi ovat sovittuja määritelmiä, protonin ja atomin koot perustuvat sirontakokeisiin ja kvanttimekaniikan malliin, Linnunradan koko on arvio (noin $10^{5}$ valovuotta, epävarmuus kymmeniä prosentteja) ja maailmankaikkeuden halkaisija päätellään havainnoista kosmologisen mallin avulla. Hiuksen, punasolun, muurahaisen, kolikon, pallon, valaan ja ihmisen koot ovat tyypillisiä arvoja, ja yksilöt vaihtelevat. Kvarkin koko on havainnoista saatu yläraja. Vesimolekyylin koko on tyypillinen arvo, neutronitähden halkaisija on havaintoihin ja malleihin perustuva tyypillinen arvo (noin $20$–$25\\,\\text{km}$), ja Linnunradan keskustan mustan aukon Sgr A* kooksi on piirretty sen tapahtumahorisontin halkaisija, joka on laskettu sen massasta (noin $4{,}3$ miljoonaa Auringon massaa). Musta aukko ei ole kiinteä pallo: piirretty raja on tapahtumahorisontti, ja sen ympärillä hehkuva kaasu ja neutronitähden säteilykeilat ovat havainnollistuksia. Ytimien, atomien ja Kuun sekä Jupiterin koot ovat pyöristettyjä taulukkoarvoja. Piirrokset ovat havainnollistuksia. Planckin pituudella ruudukko on vain symboli, koska pituuden rakenteesta ei ole havaintoja. Vetyatomin elektronipilvi on todennäköisyyskuva, ja sen ydin on piirretty liian suureksi. Radoilla tähdet ja planeetat ovat suurennettuja pisteitä, ja ratojen kooksi on merkitty niiden säde, vaikka kuva piirretään halkaisijan mukaan. Linnunrata ja maailmankaikkeus ovat taiteilijan näkemyksiä.",
-      "calc": "Näkymän leveys on $W = 10^{L}\\,\\text{m}$, ja se vastaa kuvassa $560$ pikseliä. Kohde, jonka koko on $d$, piirretään kuvaan leveydelle $\\dfrac{d}{W}\\cdot560$ pikseliä. Esimerkiksi kun $L = -9$, vetyatomi on $\\dfrac{1{,}1\\cdot10^{-10}}{10^{-9}}\\cdot560 \\approx 62$ pikseliä leveä. Kohde näkyy, kun sen koko on noin $\\dfrac{1}{2000}$–$3$ kertaa näkymän leveys eli noin $0{,}3$–$1700$ pikseliä: alle $4$ pikselin kohde on piste, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Kohteen kokoa muutetaan siis vain liu'uttamalla $L$-arvoa, ja kaikki kuvan kohteet muuttuvat samassa suhteessa. Alareunan palkin pituus on $10^{k}\\,\\text{m}$, missä $k$ on suurin kokonaisluku, joka ei ylitä lukua $L$. Kun $L$ kasvaa yhdellä, kaikki kohteet pienenevät kymmenesosaan."
+      "calc": "Näkymän leveys $W$ vastaa kuvassa $560$ pikseliä. Kohde, jonka koko on $d$, piirretään kuvaan leveydelle $\\dfrac{d}{W}\\cdot560$ pikseliä. Esimerkiksi kun näkymän leveys on $10^{-9}\\,\\text{m}$, vetyatomi on $\\dfrac{1{,}1\\cdot10^{-10}\\,\\text{m}}{10^{-9}\\,\\text{m}}\\cdot560 \\approx 62$ pikseliä leveä. Kohde näkyy, kun sen koko on noin $\\dfrac{1}{1000}$–$3$ kertaa näkymän leveys: alle $4$ pikselin kohde on piste, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Liukusäätimen luku on leveyden eksponentti: luku $-9$ tarkoittaa leveyttä $10^{-9}\\,\\text{m}$. Kun näkymä loitontuu kymmenkertaiseksi, kaikki kohteet pienenevät kymmenesosaan."
     },
     {
       "id": "exp-1",
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: aineen portaat",
-      "intro": "Testaa ennuste 1. Alkutila asettaa $L = -9$, jolloin lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Lähennä sitten liukusäätimellä (painike *Lähennä ×10* hyppää vain kokonaisiin $L$-arvoihin ja ohittaa vetyatomin) ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava portaista: vetyatomi (noin $L = -9{,}4$), protoni eli vetyatomin ydin (noin $L = -14{,}5$) ja kvarkki (noin $L = -17$). Merkitse muistiin, mikä kohde kullakin rivillä on. Taulukon $n$ on lähimmän kohteen suuruusluokan eksponentti; kvarkin arvo on yläraja.",
+      "intro": "Testaa ennuste 1. Alkutilassa kooltaan lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan vetyatomi, protoni ja kvarkki ja kirjaa rivi jokaisesta. Taulukon $n$ kertoo lähimmän kohteen suuruusluokan: kohteen koko on noin $10^{n}\\,\\text{m}$. Kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
       "names": {
-        "L": "L"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -145,13 +145,13 @@
         "tolerance": 0.02,
         "hints": [
           "Taulukosta saat kummankin kohteen suuruusluokan eksponentin $n$. Vetyatomin ydin on yksi protoni.",
-          "Suuruusluokkien ero on eksponenttien erotus: $\\Delta n = n_2 - n_1$, jossa $n_2$ on suuremman kohteen eksponentti.",
-          "Jos vetyatomin rivillä on $n = -10$ ja protonin rivillä $n = -15$, niin $\\Delta n = -10 - (-15)$."
+          "Laske, montako kymmenpotenssin askelta on protonin suuruusluokasta vetyatomin suuruusluokkaan. Askelten määrä on eksponenttien erotus, suuremmasta pienempi.",
+          "Jos vetyatomin rivillä on $n = -10$ ja protonin rivillä $n = -15$, askelia on $-10 - (-15)$."
         ],
         "mistakes": [
           {
             "value": 65000,
-            "feedback": "Tämä on kokojen suhde $k$, ei suuruusluokkien lukumäärä. Suhde on noin $6{,}5\\cdot10^{4}$, ja kysytty on kymmenpotenssien lukumäärä eli eksponenttien erotus."
+            "feedback": "Tämä on kokojen suhde eli se, kuinka monta kertaa suurempi atomi on. Kysytty on kymmenpotenssin askelten määrä eli eksponenttien erotus."
           },
           {
             "value": -5,
@@ -162,7 +162,7 @@
             "feedback": "Laskit eksponentit yhteen. Suuruusluokkien ero on eksponenttien erotus: $-10 - (-15) = -10 + 15 = 5$."
           }
         ],
-        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_2 = -10$ ja protonin eli vetyatomin ytimen rivillä $n_1 = -15$\n\n**Kysytty:** suuruusluokkien ero $\\Delta n$ eli kymmenpotenssien lukumäärä atomin ja sen ytimen välillä\n\n**Periaate:** Suuruusluokan eksponentti $n$ kertoo, monennessako kymmenpotenssissa koko on. Kahden kohteen välillä olevien kymmenpotenssien lukumäärä on siksi niiden eksponenttien erotus, suuremmasta pienempi.\n\n**Kaava:** $\\Delta n = n_2 - n_1$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\Delta n = -10 - (-15) = -10 + 15 = 5$\n\n**Vastaus:** $5$ suuruusluokkaa; luku on kokonaisluku, koska $n$ on pyöristetty kokonaiseksi kymmenpotenssiksi.\n\n**Järkevyys:** Tarkka kokojen suhde on $\\dfrac{1{,}1\\cdot10^{-10}\\,\\text{m}}{1{,}7\\cdot10^{-15}\\,\\text{m}} \\approx 6{,}5\\cdot10^{4}$, joka on lähempänä arvoa $10^{5}$ kuin arvoa $10^{4}$. Viisi kymmenkertaistusta vastaa siis tarkkaa suhdetta, ja ero on paljon pienempi kuin atomin ja ihmisen kymmenen suuruusluokkaa."
+        "solution": "**Annettu:** taulukosta vetyatomin rivillä $n_\\text{atomi} = -10$ ja protonin eli vetyatomin ytimen rivillä $n_\\text{protoni} = -15$\n\n**Kysytty:** suuruusluokkien ero eli kymmenpotenssin askelten määrä atomin ja sen ytimen välillä\n\n**Periaate:** Eksponentti $n$ kertoo, missä kymmenpotenssissa koko on. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko, ja askelten määrä on eksponenttien erotus, suuremmasta pienempi.\n\n**Kaava:** $\\text{askelia} = n_\\text{atomi} - n_\\text{protoni}$\n\n**Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\text{askelia} = -10 - (-15) = -10 + 15 = 5$\n\n**Vastaus:** $5$ suuruusluokkaa; luku on kokonaisluku, koska $n$ on pyöristetty kokonaiseksi kymmenpotenssiksi.\n\n**Järkevyys:** Viisi askelta tarkoittaa noin $10^{5}$ eli satatuhatkertaista kokoa. Tarkka suhde on $1{,}1\\cdot10^{-10}\\,\\text{m} : 1{,}7\\cdot10^{-15}\\,\\text{m} \\approx 6{,}5\\cdot10^{4}$, joka on lähellä sitä. Ero on paljon pienempi kuin atomin ja ihmisen kymmenen suuruusluokkaa."
       }
     },
     {
@@ -170,15 +170,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Maan osoite",
-      "intro": "Testaa ennuste 2. Alkutila asettaa $L = 7{,}7$, jolloin lähin kohde on Maa. Kirjaa rivi. Loitonna sitten ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava: Aurinko (noin $L = 9{,}7$), Neptunuksen radan säde (noin $L = 13{,}5$) ja Linnunrata (noin $L = 21{,}5$). Merkitse muistiin, mikä kohde kullakin rivillä on. Halutessasi jatka havaittavaan maailmankaikkeuteen asti ($L = 27{,}5$).",
+      "intro": "Testaa ennuste 2. Alkutilassa kooltaan lähin kohde on Maa. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* vuorollaan Aurinko, Neptunuksen radan säde ja Linnunrata ja kirjaa rivi jokaisesta. Halutessasi jatka havaittavaan maailmankaikkeuteen asti.",
       "initial": {
         "L": 7.7
       },
       "names": {
-        "L": "L"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -215,15 +215,15 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Valinnainen koe: missä on kokojen puoliväli?",
-      "intro": "Alkutila asettaa $L = -34$, jolloin lähin kohde on Planckin pituus. Kirjaa rivi. Zoomaa sitten ulospäin aina maailmankaikkeuteen asti ($L = 27{,}5$) ja kirjaa toinen rivi, kun havaittava maailmankaikkeus on lähin kohde. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
+      "intro": "Alkutilassa kooltaan lähin kohde on havaittava maailmankaikkeus. Kirjaa rivi. Valitse sitten valikosta *Siirry kohteeseen* Planckin pituus ja kirjaa toinen rivi. Laske kysymyksessä näiden puoliväli. Zoomaa sitten mallin kohteeseen, jonka koko on lähinnä tätä puoliväliä, ja kirjaa kolmas rivi: simulaatio näyttää, mikä kohde on keskellä. Arvaa ensin: onko ihminen kokojen keskellä?",
       "initial": {
-        "L": -34
+        "L": 27.5
       },
       "names": {
-        "L": "L"
+        "kohdeNimi": "kohde"
       },
       "locked": [],
-      "vary": "L",
+      "vary": "kohdeNimi",
       "measure": [
         {
           "key": "kohdeExp",
@@ -233,14 +233,14 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla. Zoomaa sitten sen kohdalle, kirjaa kolmas rivi ja vastaa: mikä on simulaation lähimmän kohteen $n$? Merkitse myös kohteen nimi muistiin.",
+        "prompt": "Laske pienimmän ja suurimman kohteen $n$-arvojen keskiarvo eli puoliväli suuruusluokkien akselilla. Zoomaa sitten sen kohdalle, kirjaa kolmas rivi ja vastaa: mikä on simulaation lähimmän kohteen $n$?",
         "answer": -4,
         "unit": "",
         "tolerance": 0.02,
         "hints": [
           "Valitse taulukosta Planckin pituuden ja maailmankaikkeuden rivit ja lue niiden $n$-arvot.",
           "Puoliväli on kahden luvun keskiarvo, $n_\\text{keski} = \\dfrac{n_\\text{min} + n_\\text{max}}{2}$. Käytä eksponentteja, älä kokoja metreinä.",
-          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$. Aseta sitten $L = -4$ ja kirjaa kolmas rivi."
+          "Jos $n_\\text{min} = -35$ ja $n_\\text{max} = 27$, niin $n_\\text{keski} = \\dfrac{-35 + 27}{2}$. Etsi sitten kohde, jonka koko on noin $10^{-4}\\,\\text{m}$, ja kirjaa kolmas rivi."
         ],
         "mistakes": [
           {
@@ -485,20 +485,20 @@
       "tolerance": 0.02,
       "hints": [
         "Kysymys \"kuinka monta kertaa suurempi\" on jakolasku: suurempi koko jaetaan pienemmällä.",
-        "Kokojen suhde on $k = \\dfrac{d_2}{d_1} = \\dfrac{a_2}{a_1}\\cdot10^{\\,n_2-n_1}$.",
-        "$k = \\dfrac{1{,}39}{2{,}4}\\cdot10^{9-4}$. Laske kerroinosien osamäärä ja kerro se luvulla $10^{5}$."
+        "Kokojen suhde on $k = \\dfrac{d_\\text{Aurinko}}{d_\\text{neutronitähti}}$.",
+        "$k = \\dfrac{1{,}39\\cdot10^{9}\\,\\text{m}}{2{,}4\\cdot10^{4}\\,\\text{m}}$. Laske laskimella ja tarkista: askelia on $9-4 = 5$, joten vastauksen pitää olla lähellä lukua $10^{5}$."
       ],
       "mistakes": [
         {
           "value": 5,
-          "feedback": "Tämä on suuruusluokkien ero eli eksponenttien erotus, ei kokojen suhde. Suhde on kerroinosien osamäärä kertaa $10^{5}$."
+          "feedback": "Tämä on suuruusluokkien ero eli eksponenttien erotus, ei kokojen suhde. Suhde saadaan jakamalla Auringon halkaisija neutronitähden halkaisijalla."
         },
         {
           "value": 1.7266187e-05,
           "feedback": "Jaoit pienemmän koon suuremmalla. Kun kysytään, kuinka monta kertaa Aurinko on suurempi, Auringon halkaisija jaetaan neutronitähden halkaisijalla."
         }
       ],
-      "solution": "**Annettu:** Auringon halkaisija $d_2 = 1{,}39\\cdot10^{9}\\,\\text{m}$ ja neutronitähden halkaisija $d_1 = 2{,}4\\cdot10^{4}\\,\\text{m}$\n\n**Kysytty:** kokojen suhde $k$ (kuinka monta kertaa Auringon halkaisija on neutronitähden halkaisijaa suurempi)\n\n**Periaate:** Kysymys \"kuinka monta kertaa suurempi\" on jakolasku: suurempi koko jaetaan pienemmällä. Kymmenpotenssit jaetaan vähentämällä eksponentit, ja kerroinosat jaetaan tavallisesti.\n\n**Kaava:** $k = \\dfrac{d_2}{d_1} = \\dfrac{a_2}{a_1}\\cdot10^{\\,n_2-n_1}$\n\n**Muunnokset:** Ei tarvita: molemmat halkaisijat ovat metreinä, joten yksikkö supistuu ja $k$ on pelkkä luku.\n\n**Sijoitus:** $k = \\dfrac{1{,}39\\cdot10^{9}\\,\\text{m}}{2{,}4\\cdot10^{4}\\,\\text{m}} = \\dfrac{1{,}39}{2{,}4}\\cdot10^{9-4} = 0{,}579\\cdot10^{5} = 5{,}79\\cdot10^{4}$\n\n**Vastaus:** noin $5{,}8\\cdot10^{4}$ eli $58\\,000$ kertaa; kaksi merkitsevää numeroa, koska neutronitähden halkaisija $2{,}4\\cdot10^{4}\\,\\text{m}$ on annettu kahdella.\n\n**Järkevyys:** Suuruusluokat ovat $10^{9}\\,\\text{m}$ ja $10^{4}\\,\\text{m}$, joten suhteen pitää olla noin $10^{5}$, ja $5{,}8\\cdot10^{4}$ on sitä lähellä. Neutronitähti on siis pienempi kuin moni kaupunki, vaikka sen massa on suurempi kuin Auringon: koko ei kerro kohteen tyyppiä eikä massaa."
+      "solution": "**Annettu:** Auringon halkaisija $d_\\text{Aurinko} = 1{,}39\\cdot10^{9}\\,\\text{m}$ ja neutronitähden halkaisija $d_\\text{neutronitähti} = 2{,}4\\cdot10^{4}\\,\\text{m}$\n\n**Kysytty:** kokojen suhde $k$ (kuinka monta kertaa Auringon halkaisija on neutronitähden halkaisijaa suurempi)\n\n**Periaate:** Kysymys \"kuinka monta kertaa suurempi\" on jakolasku: suurempi koko jaetaan pienemmällä.\n\n**Kaava:** $k = \\dfrac{d_\\text{Aurinko}}{d_\\text{neutronitähti}}$\n\n**Muunnokset:** Ei tarvita: molemmat halkaisijat ovat metreinä, joten yksikkö supistuu ja $k$ on pelkkä luku.\n\n**Sijoitus:** $k = \\dfrac{1{,}39\\cdot10^{9}\\,\\text{m}}{2{,}4\\cdot10^{4}\\,\\text{m}} = 5{,}79\\ldots\\cdot10^{4}$\n\n**Vastaus:** noin $5{,}8\\cdot10^{4}$ eli $58\\,000$ kertaa; kaksi merkitsevää numeroa, koska neutronitähden halkaisija $2{,}4\\cdot10^{4}\\,\\text{m}$ on annettu kahdella.\n\n**Järkevyys:** Suuruusluokat ovat $10^{9}\\,\\text{m}$ ja $10^{4}\\,\\text{m}$. Niiden välissä on viisi kymmenpotenssin askelta, joten suhteen pitää olla noin $10^{5}$, ja $5{,}8\\cdot10^{4}$ on sitä lähellä. Neutronitähti on siis pienempi kuin moni kaupunki, vaikka sen massa on suurempi kuin Auringon: koko ei kerro kohteen tyyppiä eikä massaa."
     },
     {
       "id": "check-3",
@@ -507,12 +507,12 @@
       "title": "3. Selitä",
       "prompt": "Selitä omin sanoin, mitä suuruusluokkien ero kertoo kahden kohteen koosta ja miksi simulaatio ei voi näyttää esimerkiksi Linnunrataa ja atomia samassa kuvassa oikeassa kokosuhteessa. Käytä sanoja malli, kymmenpotenssi ja suuruusluokka.",
       "criteria": [
-        "Sanon, että suuruusluokkien ero on kymmenpotenssien lukumäärä, ja että kokojen suhde on noin $10^{\\Delta n}$.",
+        "Sanon, että suuruusluokkien ero on kymmenpotenssin askelten määrä ja että jokainen askel on kymmenkertainen koko.",
         "Sanon, että ero 5 tarkoittaa satatuhatkertaista eroa eikä viisinkertaista.",
         "Perustelen laskemalla, että Linnunrata ($10^{21}\\,\\text{m}$) ja atomi ($10^{-10}\\,\\text{m}$) eroavat noin 31 suuruusluokkaa, joten kuvaan ei mahdu molempia.",
         "Sanon, että simulaatio on malli, joka näyttää yhden mittakaavan kerrallaan ja jonka koot ovat pyöristettyjä."
       ],
-      "model": "Suuruusluokkien ero $\\Delta n = n_2 - n_1$ kertoo, montako kymmenpotenssia kohteiden koot ovat toisistaan, ja kokojen suhde on noin $10^{\\Delta n}$. Jos ero on viisi, suurempi kohde on noin $10^{5}$ eli satatuhatta kertaa suurempi. Linnunrata on suuruusluokkaa $10^{21}\\,\\text{m}$ ja vetyatomi $10^{-10}\\,\\text{m}$, joten ero on $21 - (-10) = 31$ suuruusluokkaa. Jos Linnunrata täyttää kuvan, atomin koko olisi murto-osa pikselistä, ja päinvastoin. Siksi simulaatio on malli, joka piirtää kohteet oikeassa kokosuhteessa vain yhdelle mittakaavalle kerrallaan. Mallin koot ovat pyöristettyjä arvoja, ja niiden tarkkuus vaihtelee.",
+      "model": "Suuruusluokkien ero kertoo, montako kymmenpotenssin askelta kohteiden koot ovat toisistaan, ja jokainen askel on kymmenkertainen koko. Jos ero on viisi, suurempi kohde on noin $10^{5}$ eli satatuhatta kertaa suurempi. Linnunrata on suuruusluokkaa $10^{21}\\,\\text{m}$ ja vetyatomi $10^{-10}\\,\\text{m}$, joten ero on $21 - (-10) = 31$ suuruusluokkaa. Jos Linnunrata täyttää kuvan, atomin koko olisi murto-osa pikselistä, ja päinvastoin. Siksi simulaatio on malli, joka piirtää kohteet oikeassa kokosuhteessa vain yhdelle mittakaavalle kerrallaan. Mallin koot ovat pyöristettyjä arvoja, ja niiden tarkkuus vaihtelee.",
       "optional": true
     },
     {

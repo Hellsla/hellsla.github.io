@@ -250,14 +250,12 @@ Kun siirrytään pienempään yksikköön, lukuarvo kasvaa: $4{,}2\,\text{km} = 
 ### Jokaiselle mittakaavalle oma yksikkö
 Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* nähtiin, että aineen ja maailmankaikkeuden rakenteet ovat kymmenpotenssien portailla. Jokaiselle portaalle on kätevä yksikkö:
 
-| Rakenne | Koko metreinä | Kätevä yksikkö |
-|---|---|---|
-| atomiydin | $10^{-15}$–$10^{-14}\,\text{m}$ | femtometri, $1\,\text{fm} = 10^{-15}\,\text{m}$ |
-| atomi, pieni molekyyli | $10^{-10}\,\text{m}$ | nanometri, $1\,\text{nm} = 10^{-9}\,\text{m}$ |
-| punasolu | $7{,}5\cdot10^{-6}\,\text{m}$ | mikrometri, $1\,\mu\text{m} = 10^{-6}\,\text{m}$ |
-| Maa | $1{,}27\cdot10^{7}\,\text{m}$ | kilometri, $1\,\text{km} = 10^{3}\,\text{m}$ |
-| Aurinkokunnan planeettojen alue | $10^{12}$–$10^{13}\,\text{m}$ | astronominen yksikkö $\text{AU}$, noin $1{,}5\cdot10^{11}\,\text{m}$ |
-| tähtien välimatkat, galaksit | $10^{16}$–$10^{21}\,\text{m}$ | valovuosi, noin $9{,}46\cdot10^{15}\,\text{m}$ |
+- **Atomiydin**, noin $10^{-15}\,\text{m}$: femtometri, $1\,\text{fm} = 10^{-15}\,\text{m}$.
+- **Atomi**, noin $10^{-10}\,\text{m}$: nanometri, $1\,\text{nm} = 10^{-9}\,\text{m}$.
+- **Punasolu**, noin $10^{-5}\,\text{m}$: mikrometri, $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
+- **Maa**, noin $10^{7}\,\text{m}$: kilometri, $1\,\text{km} = 10^{3}\,\text{m}$.
+- **Planeettojen radat**, noin $10^{12}\,\text{m}$: astronominen yksikkö, $1\,\text{AU} \approx 1{,}5\cdot10^{11}\,\text{m}$.
+- **Tähtien välimatkat**, noin $10^{16}\,\text{m}$ ja enemmän: valovuosi, noin $9{,}46\cdot10^{15}\,\text{m}$.
 
 Esimerkiksi vetyatomin halkaisija on $0{,}11\,\text{nm}$ ja protonin $1{,}7\,\text{fm}$. Yksikkö ei muuta kokoa, vain sen kirjoitustapaa. Astronominen yksikkö ja valovuosi eivät ole SI-yksiköitä, mutta ne on määritelty metreinä, joten ne voi aina muuntaa metreiksi.
 
@@ -267,12 +265,13 @@ Lukuarvon **merkitsevät numerot** kertovat, kuinka tarkasti suure tunnetaan. En
 Kertolaskun ja jakolaskun tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on. Pyöristys tehdään vasta lopuksi, ja tarkoilla luvuilla kuten muunnoskertoimella $1000$ ei ole rajoittavaa vaikutusta. Esimerkiksi $1{,}85\,\text{m}\cdot0{,}92\,\text{m} = 1{,}702\,\text{m}^2$ pyöristetään arvoon $1{,}7\,\text{m}^2$.
 
 ## Kaava: Yksikkömuunnokset
-Yksikköä vaihdettaessa suure ei muutu. Lukuarvo kerrotaan muunnoskertoimella, joka on kahden yksikön suhde:
+Yksikköä vaihdettaessa suure ei muutu, vain sen kirjoitustapa. Muunnos tehdään korvaamalla vanha yksikkö sen arvolla uudessa yksikössä. Koska $1\,\text{km} = 1000\,\text{m}$, kilometrin paikalle voi kirjoittaa $1000\,\text{m}$:
 
 ```latex
-x_\text{uusi} = x_\text{vanha}\cdot\frac{U_\text{vanha}}{U_\text{uusi}}
+4{,}2\,\text{km} = 4{,}2\cdot1000\,\text{m} = 4200\,\text{m}
 ```
-missä $x$ on lukuarvo ja $U$ yksikkö. Esimerkiksi suhde $\tfrac{1\,\text{km}}{1\,\text{m}} = 1000$ on kerroin, joka muuttaa kilometrit metreiksi. Pinta-alalla ja tilavuudella kerroin on potenssissa: $1\,\text{km}^2 = (10^{3}\,\text{m})^2 = 10^{6}\,\text{m}^2$.
+
+Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\cdot0{,}001\,\text{km} = 0{,}35\,\text{km}$. Tulosta kannattaa aina järkeillä: pienemmässä yksikössä lukuarvo on suurempi, koska pieniä yksiköitä tarvitaan enemmän. Pinta-alassa yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$.
 
 Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on Maan ja Auringon keskimääräinen etäisyys: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Valovuosi on sekin pituusyksikkö eikä aikayksikkö: se on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
 
@@ -321,37 +320,33 @@ Neptunuksen etäisyys Auringosta on keskimäärin $30{,}1\,\text{AU}$. Kuinka mo
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Etäisyys $a = 30{,}1\,\text{AU}$, muunnoskerroin $k = 1{,}496\cdot10^{8}\,\text{km/AU}$ ja valon nopeus $c = 2{,}998\cdot10^{5}\,\text{km/s}$. Kysytään etäisyyttä $s$ kilometreinä ja kulkuaikaa $t$ tunteina.
+**Tunnetut ja kysytty.** Etäisyys $s = 30{,}1\,\text{AU}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$ ja valon nopeus $c = 2{,}998\cdot10^{5}\,\text{km/s}$. Kysytään etäisyyttä $s$ kilometreinä ja kulkuaikaa $t$ tunteina.
 
 <!-- vaihe -->
 
-**Periaate.** Etäisyys ei muutu, kun yksikkö vaihtuu, joten AU:t muunnetaan kilometreiksi kertomalla muunnoskertoimella. Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan.
+**Periaate.** Etäisyys ei muutu, kun yksikkö vaihtuu, joten AU:n paikalle kirjoitetaan sen arvo kilometreinä. Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan.
 
 <!-- vaihe -->
 
 **Kaava ratkaistuna.**
 ```latex
-\begin{aligned}
-&s = a\,k \\
-&t = \frac{s}{c}
-\end{aligned}
+t = \frac{s}{c}
 ```
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Tunneiksi muunnetaan jakamalla luvulla $3600\,\text{s/h}$.
+**Yksikkömuunnokset.** Etäisyys muunnetaan kilometreiksi kirjoittamalla $\text{AU}$:n paikalle $1{,}496\cdot10^{8}\,\text{km}$: $s = 30{,}1\,\text{AU} = 30{,}1\cdot1{,}496\cdot10^{8}\,\text{km} = 4{,}503\cdot10^{9}\,\text{km}$.
+Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Tunneiksi muunnetaan, koska $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
 
 **Sijoitus.**
 ```latex
 \begin{aligned}
-&s = a\,k \\
-&= 30{,}1\,\text{AU}\cdot1{,}496\cdot10^{8}\,\tfrac{\text{km}}{\text{AU}} \\
-&= 4{,}503\cdot10^{9}\,\text{km} \\[6pt]
-&t = \frac{s}{c} \\
+t &= \frac{s}{c} \\
 &= \frac{4{,}503\cdot10^{9}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} \\
-&= 1{,}502\cdot10^{4}\,\text{s} = 4{,}17\,\text{h}
+&= 1{,}502\cdot10^{4}\,\text{s} \\
+&= (1{,}502\cdot10^{4} : 3600)\,\text{h} = 4{,}17\,\text{h}
 \end{aligned}
 ```
 
@@ -374,6 +369,6 @@ Valovuosi ei ole aikayksikkö, vaikka nimessä on vuosi. Se on pituusyksikkö, n
 - Suureen arvo on lukuarvo kertaa yksikkö: $l = 12{,}0\,\text{cm}$. Ilman yksikköä luku ei kerro mitään.
 - SI-järjestelmässä perusyksiköt ovat esimerkiksi metri, kilogramma ja sekunti, ja muut yksiköt johdetaan niistä.
 - Etuliite on kymmenpotenssi: kilo $10^{3}$, mega $10^{6}$, giga $10^{9}$, milli $10^{-3}$, mikro $10^{-6}$.
-- Yksikkömuunnoksessa lukuarvo kerrotaan muunnoskertoimella $\tfrac{U_\text{vanha}}{U_\text{uusi}}$; neliö- ja kuutioyksiköillä kerroin potensoidaan.
+- Yksikkömuunnoksessa vanhan yksikön paikalle kirjoitetaan sen arvo uudessa yksikössä, esimerkiksi $4{,}2\,\text{km} = 4{,}2\cdot1000\,\text{m}$. Neliöyksikössä muunnos tehdään kahdesti: $1\,\text{km}^2 = 10^{6}\,\text{m}^2$.
 - Tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on.
-- Valon kulkuaika on $t = s/c$: yksi AU on valolle noin $8{,}3\,\text{min}$.
+- Valon kulkuaika on $t = \tfrac{s}{c}$: yksi AU on valolle noin $8{,}3\,\text{min}$.

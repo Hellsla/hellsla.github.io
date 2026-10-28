@@ -2,9 +2,9 @@
 **Annettu:** hiuksen paksuus $l = 82\,\mu\text{m}$
 **Kysytty:** paksuus $l$ millimetreinä
 **Periaate:** Suure ei muutu, kun sen yksikkö vaihdetaan; vain lukuarvo muuttuu. Etuliite mikro tarkoittaa kerrointa $10^{-6}$ ja etuliite milli kerrointa $10^{-3}$, joten $1\,\mu\text{m} = 10^{-3}\,\text{mm}$.
-**Kaava:** $l = x\cdot 1\,\mu\text{m}$ ja $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$, joten $l_\text{mm} = x\cdot 10^{-3}$
-**Muunnokset:** $1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-3}\,\text{mm}$.
-**Sijoitus:** $l = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
+**Kaava:** $1\,\mu\text{m} = 10^{-3}\,\text{mm}$
+**Muunnokset:** Mikrometrin paikalle kirjoitetaan sen arvo millimetreinä, $10^{-3}\,\text{mm}$.
+**Sijoitus:** $l = 82\,\mu\text{m} = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
 **Vastaus:** $0{,}082\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtöarvossa $82\,\mu\text{m}$ (johtava nolla ei ole merkitsevä).
 **Järkevyys:** Millimetri on tuhat kertaa suurempi yksikkö kuin mikrometri, joten lukuarvon on pienennyttävä tuhannesosaan: 82:sta 0,082:een. Hius on hieman alle kymmenesosamillimetrin paksuinen, mikä sopii kokemukseen.
 
@@ -12,10 +12,10 @@
 **Annettu:** Maan ja Kuun etäisyys $s = 384\,400\,\text{km}$; $1\,\text{Mm} = 10^{6}\,\text{m}$
 **Kysytty:** etäisyys $s$ megametreinä
 **Periaate:** Etäisyys on sama riippumatta yksiköstä. Etuliite mega on $10^{6}$ ja etuliite kilo $10^{3}$, joten $1\,\text{Mm} = 10^{3}\,\text{km}$.
-**Kaava:** $s = x\,\text{km}$ ja $1\,\text{km} = 10^{-3}\,\text{Mm}$, josta $s_\text{Mm} = x\cdot 10^{-3}$
-**Muunnokset:** $1\,\text{Mm} = 10^{6}\,\text{m} = 10^{3}\,\text{km}$.
-**Sijoitus:** $s = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
-**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä, joten luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja muunnoskerroin on tarkka.
+**Kaava:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
+**Muunnokset:** Megametri on tuhat kilometriä, joten kilometri on tuhannesosa megametristä. Kilometrin paikalle kirjoitetaan $10^{-3}\,\text{Mm}$.
+**Sijoitus:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
+**Vastaus:** $384{,}4\,\text{Mm}$, neljä merkitsevää numeroa. Kokonaisluvun $384\,400$ loppunollat ovat epäselviä, joten luku tulkitaan sadan kilometrin tarkkuudella, $3{,}844\cdot10^{5}\,\text{km}$, ja $1\,\text{km} = 10^{-3}\,\text{Mm}$ on tarkka.
 **Järkevyys:** Megametri on tuhat kilometriä, ja 384 400 on noin 400 tuhatta, joten tulos on noin 400 Mm. Etäisyyden kymmenpotenssi on $10^{8}\,\text{m} = 100\,\text{Mm}$ ja $10^{9}\,\text{m} = 1000\,\text{Mm}$ välissä, kuten pitääkin.
 
 ## fy1-2-L1-03
@@ -32,9 +32,9 @@
 **Annettu:** nopeus $v = 15{,}341\,\text{km/s}$
 **Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Nopeuden yksikkö $\text{km/s}$ on pituusyksikkö jaettuna aikayksiköllä; vain pituusyksikkö muuttuu, sekunti pysyy. Etuliite kilo on $10^{3}$, joten $1\,\text{km} = 1000\,\text{m}$.
-**Kaava:** $v_\text{m/s} = v_\text{km/s}\cdot k$, missä $k$ on muunnoskerroin metreistä kilometreihin
-**Muunnokset:** $k = \dfrac{1000\,\text{m}}{1\,\text{km}}$, koska $1\,\text{km} = 10^{3}\,\text{m}$; siis $1\,\text{km/s} = 10^{3}\,\text{m/s}$.
-**Sijoitus:** $v = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 1000\,\dfrac{\text{m}}{\text{km}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
+**Kaava:** $1\,\text{km} = 1000\,\text{m}$, joten $1\,\dfrac{\text{km}}{\text{s}} = 1000\,\dfrac{\text{m}}{\text{s}}$
+**Muunnokset:** Kilometrin paikalle kirjoitetaan $1000\,\text{m}$; sekunti pysyy.
+**Sijoitus:** $v = 15{,}341\,\dfrac{\text{km}}{\text{s}} = 15{,}341\cdot\dfrac{1000\,\text{m}}{\text{s}} = 15\,341\,\dfrac{\text{m}}{\text{s}}$
 **Vastaus:** $15\,341\,\text{m/s}$, viisi merkitsevää numeroa kuten lähtöarvossa $15{,}341\,\text{km/s}$.
 **Järkevyys:** Metri on pienempi yksikkö kuin kilometri, joten lukuarvon on kasvettava tuhatkertaiseksi. Noin 15 km/s on yli 40-kertainen äänen nopeuteen 340 m/s verrattuna, mikä sopii avaruusluotaimelle.
 
@@ -71,12 +71,12 @@
 ## fy1-2-L2-03
 **Annettu:** pinta-ala $A = 2{,}4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Kysytty:** pinta-ala $A$ hehtaareina
-**Periaate:** Pinta-alan yksikkö on pituusyksikön neliö, joten myös muunnoskerroin on neliöitävä: $1\,\text{km}^2 = (1000\,\text{m})^2 = 10^{6}\,\text{m}^2$, ei $1000\,\text{m}^2$.
-**Kaava:** $A_\text{ha} = \dfrac{A_{\text{km}^2}\cdot k_1}{k_2}$, missä $k_1$ muuntaa neliökilometrit neliömetreiksi ja $k_2$ neliömetrit hehtaareiksi
-**Muunnokset:** $k_1 = 10^{6}\,\text{m}^2/\text{km}^2$, joten $2{,}4\,\text{km}^2 = 2{,}4\cdot10^{6}\,\text{m}^2$. Yksi hehtaari on $10^{4}\,\text{m}^2$, eli $k_2 = 10^{4}\,\text{m}^2/\text{ha}$.
-**Sijoitus:** $A = \dfrac{2{,}4\cdot10^{6}\,\text{m}^2}{10^{4}\,\text{m}^2/\text{ha}} = 2{,}4\cdot10^{2}\,\text{ha} = 240\,\text{ha}$
+**Periaate:** Yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä. Pinta-alan yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$, ei $1000\,\text{m}^2$. Sen jälkeen lasketaan, montako hehtaaria neliömetrimäärään mahtuu.
+**Kaava:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja $1\,\text{ha} = 10^{4}\,\text{m}^2$, joten $1\,\text{km}^2 = 10^{6} : 10^{4}\,\text{ha} = 100\,\text{ha}$
+**Muunnokset:** Neliökilometrin paikalle kirjoitetaan $100\,\text{ha}$.
+**Sijoitus:** $A = 2{,}4\,\text{km}^2 = 2{,}4\cdot100\,\text{ha} = 240\,\text{ha}$
 **Vastaus:** $240\,\text{ha}$, kirjoitettuna $2{,}4\cdot10^{2}\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
-**Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6}/10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
+**Järkevyys:** Neliökilometri on 100 hehtaaria, koska $10^{6} : 10^{4} = 10^{2}$. Siksi 2,4 neliökilometriä on 2,4 sataa eli 240 hehtaaria.
 
 ## fy1-2-L2-04
 **Annettu:** nopeus $v = 15{,}341\,\text{km/s}$ (vakio), aika $t = 1\,\text{vrk}$
@@ -92,18 +92,18 @@
 **Annettu:** $c = 2{,}998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** yhden valovuoden pituus $L$ astronomisina yksikköinä
 **Periaate:** Valovuosi on pituusyksikkö, ei aikayksikkö: se on matka, jonka valo kulkee vuodessa. Valo etenee tasaisella nopeudella, joten annettu kaava $s = ct$ antaa matkan kilometreinä, ja sen jälkeen matka jaetaan AU:n pituudella.
-**Kaava:** $L = c\,t$ ja $L_\text{AU} = \dfrac{c\,t}{1\,\text{AU}}$
-**Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Matka kilometreinä jaetaan lopuksi arvolla $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$.
-**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}462\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
+**Kaava:** $L = c\,t$
+**Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Astronomisina yksikköinä matka saadaan, kun lasketaan, montako AU:ta ($1{,}496\cdot10^{8}\,\text{km}$) siihen mahtuu.
+**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $9{,}462\cdot10^{12}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 6{,}325\cdot10^{4}$, eli $L = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600/8{,}3 \approx 63\,000$ vahvistaa tuloksen.
+**Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600 : 8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
 ## fy1-2-L3-02
 **Annettu:** näytön leveys $W = 1920\,\text{px}$ (tarkka luku); Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** näyttöjen lukumäärä $N$
 **Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Näyttöjen lukumäärä on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
 **Kaava:** $N = \dfrac{a\cdot 1\,\text{AU}}{D}\cdot\dfrac{1\,\text{px}}{W}$
-**Muunnokset:** Matka kilometreinä: $30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Kuvapisteinä: $\dfrac{4{,}498\cdot10^{9}\,\text{km}}{3474\,\text{km/px}} = 1{,}295\cdot10^{6}\,\text{px}$.
+**Muunnokset:** Matka kilometreinä: $30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1{,}295\cdot10^{6}$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
 **Vastaus:** $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
 **Järkevyys:** Neptunus on noin 1,3 miljoonan kuvapisteen päässä, ja 1,3 miljoonaa jaettuna kahdella tuhannella on noin 650. Tulos on samaa suuruusluokkaa, joten matkaa ei voi vierittää kuvassa yhdellä vilkaisulla.
@@ -114,6 +114,6 @@
 **Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa ajan. Komento ja vahvistus kulkevat kumpikin matkan $d$, joten koko matka on $2d$ eikä pelkkä $d$.
 **Kaava:** $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 145\cdot 1{,}496\cdot10^{8}\,\text{km} = 2{,}169\cdot10^{10}\,\text{km}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
-**Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s} = \dfrac{1{,}447\cdot10^{5}\,\text{s}}{3600\,\text{s/h}} = 40{,}2\,\text{h}$
+**Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s}$. Tunteja on $1{,}447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40{,}2$, joten $t = 40{,}2\,\text{h}$
 **Vastaus:** $40{,}2\,\text{h}$, kolme merkitsevää numeroa kuten etäisyydessä $145\,\text{AU}$.
 **Järkevyys:** Yhteen suuntaan valolla kestää noin $145\cdot 8{,}3\,\text{min} = 1200\,\text{min} = 20\,\text{h}$, joten edestakaisin tulee noin 40 tuntia. Vastaus saapuu siis yli vuorokauden kuluttua.

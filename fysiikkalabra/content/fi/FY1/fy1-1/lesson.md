@@ -86,7 +86,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
   <line x1="547.5" y1="230" x2="547.5" y2="106" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="378" y="73.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{maailmankaikkeus}$</div></foreignObject>
   <circle cx="547.5" cy="236" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="140" y="25.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{yksi askel oikealle} \Rightarrow \text{koko} \times 10$</div></foreignObject>
+  <foreignObject x="140" y="25.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{yksi askel oikealle} \Rightarrow \text{koko} \cdot 10$</div></foreignObject>
 </svg>
 
 ### Suuruusluokka kertoo karkean koon
@@ -95,44 +95,51 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
 
 Kohteiden koot ovat pyöristettyjä arvoja: ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka, ja luvuista kannattaa kysyä, kuinka tarkkoja ne ovat.
 
-## Kaava: Kokojen vertailu
+## Kaava: Kuinka monta kertaa suurempi?
 
-Kun halutaan tietää, kuinka monta kertaa koko $d_2$ on suurempi kuin koko $d_1$, lasketaan niiden suhde. Kymmenpotenssien jakolaskussa eksponentit vähennetään toisistaan.
+Kun halutaan tietää, kuinka monta kertaa jokin on toista suurempi, suurempi koko jaetaan pienemmällä:
 
 ```latex
-k = \frac{d_2}{d_1} = \frac{a_2}{a_1}\cdot 10^{\,n_2-n_1}
+k = \frac{d_\text{suurempi}}{d_\text{pienempi}}
 ```
 
-Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ ovat kokojen $d_1$ ja $d_2$ kerroinosat ja $n_1$ ja $n_2$ niiden eksponentit. Karkeasti $k \approx 10^{\Delta n}$, missä $\Delta n = n_2 - n_1$ on eksponenttien ero. Se on likimain suuruusluokkien ero eli kymmenpotenssien lukumäärä. Suuruusluokkien ero saadaan täsmälleen, kun kumpikin koko pyöristetään ensin suuruusluokakseen.
+Tässä $k$ on kokojen suhde eli se, kuinka monta kertaa suurempi kohde on. Kummankin koon on oltava samassa yksikössä. Silloin yksikkö supistuu pois, ja $k$ on pelkkä luku.
 
-<svg data-fig="ladder" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva, ei mittakaavassa: viisi tikapuuaskelmaa, joissa koko on kymmenkertaistunut jokaisella askeleella 10 potenssiin n1, n1 plus 1, n1 plus 2 ja niin edelleen aina 10 potenssiin n2 asti. Suuruusluokkien ero on askelten lukumäärä n2 miinus n1, ja kokojen suhde d2 per d1 on noin 10 potenssiin n2 miinus n1." style="max-width:100%;font-size:24px">
-  <rect x="28" y="228" width="56" height="34" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="6" y="189.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{n_1}$</div></foreignObject>
-  <rect x="148" y="192" width="56" height="70" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="126" y="153.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{n_1+1}$</div></foreignObject>
-  <rect x="268" y="156" width="56" height="106" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="246" y="117.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{n_1+2}$</div></foreignObject>
-  <rect x="388" y="120" width="56" height="142" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="366" y="81.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\ldots$</div></foreignObject>
-  <rect x="508" y="84" width="56" height="178" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="486" y="45.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{n_2}$</div></foreignObject>
-  <line x1="94" y1="206" x2="129" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M138,206 L128,210.5 L128,201.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="86" y="223.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\times 10$</div></foreignObject>
-  <line x1="214" y1="206" x2="249" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M258,206 L248,210.5 L248,201.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="206" y="223.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\times 10$</div></foreignObject>
-  <line x1="334" y1="206" x2="369" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M378,206 L368,210.5 L368,201.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="326" y="223.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\times 10$</div></foreignObject>
-  <line x1="454" y1="206" x2="489" y2="206" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M498,206 L488,210.5 L488,201.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="446" y="223.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\times 10$</div></foreignObject>
-  <line x1="28" y1="280" x2="564" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="28" y1="272" x2="28" y2="288" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="564" y1="272" x2="564" y2="288" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <foreignObject x="200.5" y="297.5" width="199" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta n = n_2 - n_1\ \text{askelta}$</div></foreignObject>
-  <foreignObject x="389" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{ei mittakaavassa}$</div></foreignObject>
+Kymmenpotenssien avulla suhteen voi arvioida myös päässä. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Vetyatomi on suuruusluokkaa $10^{-10}\,\text{m}$ ja protoni $10^{-15}\,\text{m}$. Niiden välissä on viisi askelta, joten atomi on noin $10\cdot10\cdot10\cdot10\cdot10 = 10^{5}$ eli satatuhatta kertaa protonia suurempi. Askelten määrä on eksponenttien erotus: $-10-(-15) = 5$.
+
+<svg data-fig="ladder" viewBox="0 0 600 372" role="img" aria-label="Kaaviokuva, ei mittakaavassa: kuusi pylvästä, joissa koko kymmenkertaistuu jokaisella askeleella. Ensimmäinen on 10 potenssiin −15 metriä, protoni, ja viimeinen 10 potenssiin −10 metriä, vetyatomi. Askelia on viisi, joten vetyatomi on noin 10 potenssiin 5 eli satatuhatta kertaa protonia suurempi." style="max-width:100%;font-size:24px">
+  <rect x="24" y="206" width="48" height="30" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="3" y="169.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-15}$</div></foreignObject>
+  <rect x="124" y="178" width="48" height="58" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="103" y="141.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-14}$</div></foreignObject>
+  <rect x="224" y="150" width="48" height="86" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="203" y="113.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-13}$</div></foreignObject>
+  <rect x="324" y="122" width="48" height="114" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="303" y="85.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-12}$</div></foreignObject>
+  <rect x="424" y="94" width="48" height="142" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="403" y="57.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-11}$</div></foreignObject>
+  <rect x="524" y="66" width="48" height="170" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <foreignObject x="503" y="29.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10^{-10}$</div></foreignObject>
+  <line x1="78" y1="222" x2="110" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M118,222 L109,226 L109,218 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="70" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
+  <line x1="178" y1="222" x2="210" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M218,222 L209,226 L209,218 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="170" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
+  <line x1="278" y1="222" x2="310" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M318,222 L309,226 L309,218 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="270" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
+  <line x1="378" y1="222" x2="410" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M418,222 L409,226 L409,218 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="370" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
+  <line x1="478" y1="222" x2="510" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M518,222 L509,226 L509,218 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="470" y="245.5" width="56" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\cdot 10$</div></foreignObject>
+  <line x1="24" y1="236" x2="572" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="24" y="285.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{protoni}$</div></foreignObject>
+  <foreignObject x="452" y="285.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vetyatomi}$</div></foreignObject>
+  <foreignObject x="80" y="333.5" width="440" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$5\ \text{askelta} \Rightarrow 10^{5} = 100\,000\ \text{kertaa suurempi}$</div></foreignObject>
+  <foreignObject x="16" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ei mittakaavassa}$</div></foreignObject>
 </svg>
 
 ### Valovuosi on pituuden yksikkö
@@ -403,21 +410,18 @@ Vetyatomin halkaisija on noin $1{,}1\cdot10^{-10}\,\text{m}$ ja protonin halkais
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Atomin koko $d_2 = 1{,}1\cdot10^{-10}\,\text{m}$ ja protonin koko $d_1 = 1{,}7\cdot10^{-15}\,\text{m}$. Kysytään kokojen suhdetta $k$ ja suuruusluokkien eroa $\Delta n$.
+**Tunnetut ja kysytty.** Vetyatomin halkaisija $d_\text{atomi} = 1{,}1\cdot10^{-10}\,\text{m}$ ja protonin halkaisija $d_\text{protoni} = 1{,}7\cdot10^{-15}\,\text{m}$. Kysytään kokojen suhdetta $k$ ja kymmenpotenssien askelten määrää.
 
 <!-- vaihe -->
 
-**Periaate.** Kysymys "kuinka monta kertaa suurempi" on jakolasku: suurempi koko jaetaan pienemmällä. Kymmenpotenssit jaetaan vähentämällä eksponentit, ja kerroinosat jaetaan tavallisesti.
+**Periaate.** Kysymys "kuinka monta kertaa suurempi" on jakolasku: suurempi koko jaetaan pienemmällä. Askelten määrä on suuruusluokkien eksponenttien erotus.
 
 <!-- vaihe -->
 
 **Kaava ratkaistuna.**
 
 ```latex
-\begin{aligned}
-k &= \frac{d_2}{d_1} \\
-&= \frac{a_2}{a_1}\cdot 10^{\,n_2-n_1}
-\end{aligned}
+k = \frac{d_\text{atomi}}{d_\text{protoni}}
 ```
 
 <!-- vaihe -->
@@ -430,21 +434,22 @@ k &= \frac{d_2}{d_1} \\
 
 ```latex
 \begin{aligned}
-k &= \frac{d_2}{d_1} \\
+k &= \frac{d_\text{atomi}}{d_\text{protoni}} \\
 &= \frac{1{,}1\cdot10^{-10}\,\text{m}}{1{,}7\cdot10^{-15}\,\text{m}} \\
-&= \frac{1{,}1}{1{,}7}\cdot 10^{-10-(-15)} \\
-&= 0{,}647\cdot 10^{5} \\
-&= 6{,}5\cdot10^{4}
+&= 6{,}47\ldots\cdot10^{4} \\
+&\approx 6{,}5\cdot10^{4}
 \end{aligned}
 ```
 
-<!-- vaihe -->
-
-**Tulos.** Vetyatomi on noin $6{,}5\cdot10^{4}$ eli noin 65 000 kertaa protonia suurempi. Tulos on annettu kahdella merkitsevällä numerolla kuten lähtötiedot. Suuruusluokat ovat $10^{-10}\,\text{m}$ ja $10^{-15}\,\text{m}$, joten $\Delta n = -10 - (-15) = 5$.
+Laskimella jakolasku $1{,}1\cdot10^{-10} : 1{,}7\cdot10^{-15}$ tehdään kirjoittamalla kymmenpotenssit kymmenpotenssinäppäimellä, jonka nimi on usein EE tai EXP.
 
 <!-- vaihe -->
 
-**Järkevyys.** Luku $6{,}5\cdot10^{4}$ on lähempänä arvoa $10^{5}$ kuin arvoa $10^{4}$, mikä sopii eroon $\Delta n = 5$. Suuruusluokkatarkistus: jos protoni suurennettaisiin millimetrin kokoiseksi, atomi olisi $65\,000\,\text{mm} = 65\,\text{m}$ eli noin kymmenien metrien luokkaa.
+**Tulos.** Vetyatomi on noin $6{,}5\cdot10^{4}$ eli noin 65 000 kertaa protonia suurempi. Tulos on annettu kahdella merkitsevällä numerolla kuten lähtötiedot. Suuruusluokat ovat $10^{-10}\,\text{m}$ ja $10^{-15}\,\text{m}$, joten askelia on $-10 - (-15) = 5$.
+
+<!-- vaihe -->
+
+**Järkevyys.** Viisi askelta tarkoittaa noin $10^{5}$ eli satatuhatkertaista kokoa, ja $6{,}5\cdot10^{4}$ on lähellä sitä. Suuruusluokkatarkistus: jos protoni suurennettaisiin millimetrin kokoiseksi, atomi olisi $65\,000\,\text{mm} = 65\,\text{m}$ eli noin kymmenien metrien luokkaa.
 
 ## Yleinen virhekäsitys
 
@@ -456,7 +461,7 @@ Neutronitähti ja musta aukko eivät ole galaksia suurempia portaita, vaan kohte
 
 - Fysiikka rakentaa malleja, joista johdetaan ennusteita, ja koe tai mittaus ratkaisee, kestääkö malli.
 - Kymmenpotenssimuoto $a\cdot10^{n}$ kirjoittaa hyvin pienet ja hyvin suuret luvut lyhyesti; yksi askel eksponentissa on kymmenkertainen koko.
-- Suuruusluokka on lähin kymmenpotenssi; kokojen suhde on $k = \tfrac{d_2}{d_1} \approx 10^{\Delta n}$.
+- Suuruusluokka on lähin kymmenpotenssi. Kokojen suhde saadaan jakamalla suurempi koko pienemmällä, ja jokainen kymmenpotenssin askel on kymmenkertainen koko.
 - Valovuosi on matka, jonka valo kulkee vuodessa, noin $9{,}46\cdot10^{15}\,\text{m}$.
 - Molekyylit koostuvat atomeista, atomit ytimestä ja elektroneista, ydin protoneista ja neutroneista ja nämä kvarkeista. Atomi on kymmeniätuhansia kertoja ydintään suurempi.
 - Maa on planeetta, joka kiertää tähteä. Aurinkokunta on yksi planeettakunta Linnunradassa, ja Linnunrata on yksi havaittavan maailmankaikkeuden sadoista miljardeista galakseista.

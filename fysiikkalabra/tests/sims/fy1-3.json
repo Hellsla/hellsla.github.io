@@ -24,7 +24,7 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const t=L.map(x=>simText(x)); return L.length===4 && /^Toistoja \\$n = \\d+\\$$/.test(t[0]) && /^Satunnaisvirhe \\$\\\\delta_\\\\text\\{sat\\} = .*\\\\,\\\\text\\{s\\}\\$$/.test(t[1]) && /^Systemaattinen virhe \\$\\\\delta_\\\\text\\{sys\\} = [+-].*\\\\,\\\\text\\{s\\}\\$$/.test(t[2]) && t[3].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const t=L.map(x=>simText(x)); return L.length===4 && /^Toistoja \\$n = \\d+\\$$/.test(t[0]) && /^Satunnaisvirhe \\$\\\\Delta t_\\\\text\\{sat\\} = .*\\\\,\\\\text\\{s\\}\\$$/.test(t[1]) && /^Systemaattinen virhe \\$\\\\Delta t_\\\\text\\{sys\\} = [+-].*\\\\,\\\\text\\{s\\}\\$$/.test(t[2]) && t[3].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "four labelled controls: Toistoja n, Satunnaisvirhe with unit s, Systemaattinen virhe with sign and unit s, Nopeus (toisto)"

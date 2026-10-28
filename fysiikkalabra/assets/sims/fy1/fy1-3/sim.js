@@ -1,6 +1,6 @@
 // fy1-3 Mittaaminen ja mittauksen luotettavuus: a ball rolls down a ramp and a hand stopwatch gives a reading each time.
-// Model: the true rolling time is T = 2,40 s. Reading i is t_i = T + δ_sys + δ_sat · g_i, rounded to the stopwatch's 0,01 s,
-// where δ_sys is a constant (systematic) error and g_i is a fixed series of standard random deviates (the same series on
+// Model: the true rolling time is T = 2,40 s. Reading i is t_i = T + Δt_sys + Δt_sat · g_i, rounded to the stopwatch's 0,01 s,
+// where Δt_sys is a constant (systematic) error and g_i is a fixed series of standard random deviates (the same series on
 // every run, so a table made today can be checked tomorrow). The slider n shows the first n readings of the series.
 // The student sees the readings pile up as a dot plot, the mean, and the true value (known only in the model).
 // Time: the main button plays the measurements one by one in simulated time (dt·speed); "Nopeus (toisto)" changes only the pace.

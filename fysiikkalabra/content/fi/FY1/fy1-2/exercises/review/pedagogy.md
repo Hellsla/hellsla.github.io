@@ -1,20 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6e11a95160d708c6
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-2/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
-
+CONTENT-HASH: 4157a622aabadf49
 ## Blocking
-(none)
-
 ## Polish
-- (carried over, optional) lesson.md:248-262 — the scale table is read-only; a one-line question under it would let the student act on it.
-- (carried over, optional) lesson.md:255 — femto appears in the table before a prefix table lists it; a half-sentence "femto on 10^-15" would help.
-
+- solutions.md (L3 pixel task, Muunnokset) — "Jokainen 3474 km on yksi kuvapiste, joten kuvapisteitä on 4,498·10^9 km : 3474 km = 1,295·10^6" is a good substitution-style step; add the unit of the result ("px") so the Sijoitus line `1,295·10^6 px` does not appear from nowhere.
+- solutions.md (L3 round-trip task, Sijoitus) — `1,447·10^5 s : 3600 s = 40,2` correct; say "(koska 1 h = 3600 s)" in the same sentence so the conversion fact sits beside its use.
+- Carried, optional: "merkitsevät numerot" is practised mainly by L1-03; a rounding point in one level-2 task would balance the slot's goals.
 ## Checked
-- Hash 6e11a95160d708c6 at start and end; delta is inquiry.json (sim "model" text) and solutions.md (one digit).
-- "heliopaussin eli aurinkotuulen kuplan rajan" now matches the hook's wording ("aurinkotuulen puhaltaman kuplan"); the term is explained the same way in both places, plainer than "Auringon vaikutusalueen raja" and consistent with the fy1-1 heliosphere distinction.
-- Solution L3-01: 2,998e5 · 3,156e7 = 9,4617e12, so 9,462e12 km is the right rounding. 9,462e12 / 1,496e8 = 6,325e4 AU, unchanged; the step stays followable and the answer is unaffected.
-- No other 9,461 left in lesson, inquiry or solutions; lesson.md's 9,46e12 km is consistent.
+- Delta round 3 read in context: both changed solutions replace division by a unit factor (km/px, s/h) with "how many fit" and `:` between like units, which matches the teacher's substitution-for-understanding and colon rules.
+- Numbers rechecked: 4,498·10^9 / 3474 = 1,295·10^6; /1920 = 674,4; 2·2,169·10^10 / 2,998·10^5 = 1,447·10^5 s; /3600 = 40,2 h.
+- Seven-step structure intact in both; \cdot never ×; principle still explained.
+- Counts 5/4/3, situations, Finnish and captures as approved in round 2; unchanged by the diff.

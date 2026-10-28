@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6e11a95160d708c6
+CONTENT-HASH: 5e3c67f583461927
 
 ## Blocking
 
 ## Polish
-- lessons/FY1/fy1-2/answers.py:21 — the comment still says "9,461e12 km". 2,998·10⁵ · 3,156·10⁷ = 9,4617·10¹² km, so it should read 9,462e12 (solutions.md now says 9,462). The computed value is unaffected. Fix: change the comment to 9,462e12.
+- lesson.md:265 — "tarkoilla luvuilla kuten muunnoskertoimella $1000$" still names a conversion factor. Write "tarkoilla luvuilla, kuten $1\,\text{km} = 1000\,\text{m}$".
+- lesson.md:349 (Esimerkki, Sijoitus) — "$(1{,}502\cdot10^{4} : 3600)\,\text{h}$" is correct but leaves the substitution implicit. Use the same form as the exercises: "Tunteja on $1{,}502\cdot10^{4}\,\text{s} : 3600\,\text{s} = 4{,}17$".
+- sim (slider label vs view), open since round 1 — at the Sun the slider label reads $d = 10^{6{,}00}\,\text{km}$ while the readout reads $d = 0\,\text{km}$. Mark the label as the slider's lower limit.
 
 ## Checked
-- Hash 6e11a95160d708c6 at the start and at the end (full review, round 2).
-- Round-1 blocker fixed: inquiry.json:116 (Mallin oletukset) now says "heliopaussin eli aurinkotuulen kuplan rajan ylityksestä". This matches the hook ("aurinkotuulen puhaltaman kuplan rajan … yhä Auringon painovoiman piirissä") and `voyager-malli` ("Auringon hiukkastuuli ei enää hallitse"). No "vaikutusalue" is left in the built page.
-- solutions.md L3-01 now gives 9,462·10¹² km → 6,325·10⁴ AU, which is correct.
-- One Python run recomputed all 12 exercise answers independently. Each one matches exercises.json within tolerance (L1-03 1,702 → 1,7 m², L3-01 63 247 → 63 250 AU, L3-03 40,20 h). It also matched the worked example (4,503·10⁹ km, 15 020 s = 4,17 h), siirto 3,236 AU/a and tarkistus-2 193,1 s = 3,22 min.
-- Lesson physics: SI base table, the prefix ladder figure (n…T, ×10³ steps), and the km² = 10⁶ m² conversion. The scale table (H atom 0,11 nm, proton 1,7 fm, Earth 1,27·10⁷ m), 1 AU = 499 s = 8,32 min, and ly ≈ 9,46·10¹² km are all correct. The scope stays at s = ct and t = s/c.
-- Prediction feedback: 1 h ≈ 7,2 AU, 1 week ≈ 1212 AU, 1 ly ≈ 63 000 AU; the exit ticket gives 9,5 · 8,3 min = 79 min.
-- Voyager model (d0 = 119,7 AU on 2018-11-05, v = 15,341 km/s) gives 142,86 AU and 19,80 h on 1.1.2026, and 143,26 AU in mid-February 2026 (JPL gives 143,05). The table rows 119,7/132,6/145,6/158,5 AU and 16,6/18,4/20,2/22,0 h are right. The ≤ 8 min Earth–Sun caveat is correct.
-- In Playwright on the preview page: date 2026-01-01 → simState vAU 142,86 and vTh 19,80, as the feedback states. The slider at n = 7/8/9 gives dAU 0,0668/0,668/6,68 and tLight 33,4/334/3336 s, which matches koe-1 and johtopaatos. Koe-1 locks the date; neither experiment's measured keys depend on the other variable.
-- sim.js uses c = 299 792,458 km/s and 1 px = 3474 km (Sun 401 px, 86,3 px/s). The light pulse runs in simulated time, so the speed setting changes only the pace. Its limits are stated: planets on one line, an enlarged Voyager marker, and model values rather than measurements.
+- Round-2 blockers are fixed. Siirto's solution, hints 2–3 and its first mistake now count the AU with ":" (no km/AU). Tarkistus-2's solution counts minutes, $193{,}1\,\text{s} : 60\,\text{s}$, and its mistake 193 does the same (no s/min).
+- Round-2 polish: virhe feedback now substitutes $1\,\text{km}^2 = (1000\,\text{m})^2$ instead of naming a "muunnoskerroin". The worked example now uses ":".
+- Regression scan of lesson.md, inquiry.json, exit-ticket.json and the sim texts: no ×, \times or ÷; products use \cdot; no conversion-factor units (km/AU, s/min, s/h, km/px).
+- One script recomputed every number again and found no change: Neptune $4{,}503\cdot10^{9}\,\text{km}$ and $4{,}17\,\text{h}$, siirto $3{,}236\,\text{AU/a}$, Mercury $193{,}1\,\text{s}$ and $3{,}22\,\text{min}$ (mistakes 193 and 0,0536), 1 AU in 499 s, and the koe-1 and Voyager values.
+- The changed solutions keep all seven parts, are symbolic first, and their rounding is justified.
+- The formulas ($s = vt$, $t = s : c$, unit substitution, significant figures) are inside FY1 central contents.
+- Content hash is identical at the start and the end.

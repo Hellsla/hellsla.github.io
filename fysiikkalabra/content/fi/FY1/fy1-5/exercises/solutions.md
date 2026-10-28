@@ -31,12 +31,12 @@
 ## fy1-5-L1-04
 **Annettu:** $s_1 = 18\,\text{m}$ ajassa $t_1 = 4{,}0\,\text{s}$; kysytty aika $t_2 = 10\,\text{s}$; liike alkaa lähtöpisteestä, joten $s_0 = 0$
 **Kysytty:** matka $s_2$ ajassa $t_2$ metreinä
-**Periaate:** Liike on tasaista ja alkaa nollakohdasta, joten matka on suoraan verrannollinen aikaan: suhde $s/t$ on molemmilla ajoilla sama.
+**Periaate:** Liike on tasaista ja alkaa nollakohdasta, joten matka on suoraan verrannollinen aikaan: suhde $s : t$ on molemmilla ajoilla sama.
 **Kaava:** $\dfrac{s_2}{t_2} = \dfrac{s_1}{t_1}$, josta $s_2 = s_1\,\dfrac{t_2}{t_1}$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina, ja sekunnit supistuvat.
 **Sijoitus:** $s_2 = 18\,\text{m} \cdot \dfrac{10\,\text{s}}{4{,}0\,\text{s}} = 45\,\text{m}$
 **Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa kuten matkassa $18\,\text{m}$.
-**Järkevyys:** Aika $10\,\text{s}$ on $2{,}5$-kertainen aikaan $4{,}0\,\text{s}$ verrattuna, joten matkankin pitää olla $2{,}5$-kertainen: $2{,}5 \cdot 18\,\text{m} = 45\,\text{m}$. Nopeus on $18\,\text{m} / 4{,}0\,\text{s} = 4{,}5\,\text{m/s}$, ja $4{,}5\,\text{m/s} \cdot 10\,\text{s} = 45\,\text{m}$.
+**Järkevyys:** Aika $10\,\text{s}$ on $2{,}5$-kertainen aikaan $4{,}0\,\text{s}$ verrattuna, joten matkankin pitää olla $2{,}5$-kertainen: $2{,}5 \cdot 18\,\text{m} = 45\,\text{m}$. Nopeus on $18\,\text{m} : 4{,}0\,\text{s} = 4{,}5\,\text{m/s}$, ja $4{,}5\,\text{m/s} \cdot 10\,\text{s} = 45\,\text{m}$.
 
 ## fy1-5-L1-05
 **Annettu:** hetkellä $t_1 = 2{,}0\,\text{s}$ paikka $s_1 = 7{,}0\,\text{m}$ ja hetkellä $t_2 = 6{,}0\,\text{s}$ paikka $s_2 = 21\,\text{m}$; liike on tasaista
@@ -46,14 +46,14 @@
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{21\,\text{m} - 7{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{14\,\text{m}}{4{,}0\,\text{s}} = 3{,}5\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $3{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikoissa $7{,}0\,\text{m}$ ja ajoissa $2{,}0\,\text{s}$.
-**Järkevyys:** Osamäärät $7{,}0\,\text{m} / 2{,}0\,\text{s}$ ja $21\,\text{m} / 6{,}0\,\text{s}$ ovat kumpikin $3{,}5\,\text{m/s}$, joten paikka on verrannollinen aikaan ja alkupaikka on nolla. Nopeus $3{,}5\,\text{m/s}$ vastaa pyöräilyä hitaasti, noin $13\,\text{km/h}$.
+**Järkevyys:** Osamäärät $7{,}0\,\text{m} : 2{,}0\,\text{s}$ ja $21\,\text{m} : 6{,}0\,\text{s}$ ovat kumpikin $3{,}5\,\text{m/s}$, joten paikka on verrannollinen aikaan ja alkupaikka on nolla. Nopeus $3{,}5\,\text{m/s}$ vastaa pyöräilyä hitaasti, noin $13\,\text{km/h}$.
 
 ## fy1-5-L2-01
 **Annettu:** nopeus $v = 54\,\text{km/h}$, aika $t = 14\,\text{s}$; liike alkaa nollakohdasta
 **Kysytty:** matka $s$ metreinä
 **Periaate:** Auto ajaa vakionopeudella, joten liike on tasaista ja $s = vt$. Nopeus ja aika täytyy saada yhteensopiviin yksiköihin.
 **Kaava:** $s = vt$
-**Muunnokset:** $v = 54\,\text{km/h} = \dfrac{54}{3{,}6}\,\text{m/s} = 15\,\text{m/s}$, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
 **Sijoitus:** $s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Vastaus:** $210\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $54\,\text{km/h}$ ja ajassa $14\,\text{s}$.
 **Järkevyys:** Nopeus $54\,\text{km/h}$ on $0{,}9\,\text{km}$ minuutissa, ja $14\,\text{s}$ on noin $0{,}23\,\text{min}$, joten matka on noin $0{,}9 \cdot 0{,}23\,\text{km} \approx 0{,}21\,\text{km} = 210\,\text{m}$.
@@ -63,10 +63,10 @@
 **Kysytty:** aika $t$ sekunteina
 **Periaate:** Linja-auto ajaa vakionopeudella, joten matka on verrannollinen aikaan ja aika on matka jaettuna nopeudella.
 **Kaava:** $s = vt$, josta $t = \dfrac{s}{v}$
-**Muunnokset:** $v = \dfrac{36}{3{,}6}\,\text{m/s} = 10\,\text{m/s}$ ja $s = 4{,}5\,\text{km} = 4500\,\text{m}$.
+**Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ ja $s = 4{,}5\,\text{km} = 4500\,\text{m}$.
 **Sijoitus:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Vastaus:** $450\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $36\,\text{km/h}$ ja $4{,}5\,\text{km}$.
-**Järkevyys:** Kilometreinä ja tunteina: $4{,}5\,\text{km} / 36\,\text{km/h} = 0{,}125\,\text{h} = 7{,}5\,\text{min} = 450\,\text{s}$, mikä on sama tulos.
+**Järkevyys:** Kilometreinä ja tunteina: $4{,}5\,\text{km} : 36\,\text{km/h} = 0{,}125\,\text{h} = 7{,}5\,\text{min} = 450\,\text{s}$, mikä on sama tulos.
 
 ## fy1-5-L2-03
 **Annettu:** alkupaikka $s_0 = 1{,}5\,\text{km}$ mökistä, nopeus $v = 1{,}5\,\text{m/s}$ poispäin mökistä, aika $t = 10\,\text{min}$
@@ -86,7 +86,7 @@
 **Muunnokset:** Matka lasketaan metreinä, ja lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5{,}0\,\text{s} = 1715\,\text{m} = 1{,}7\,\text{km}$
 **Vastaus:** $1{,}7\,\text{km}$, kaksi merkitsevää numeroa kuten ajassa $5{,}0\,\text{s}$.
-**Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} / (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
+**Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} : (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
 
 ## fy1-5-L3-01
 **Annettu:** $s_0 = 119{,}7\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
@@ -96,7 +96,7 @@
 **Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} \cdot 86\,400\,\tfrac{\text{s}}{\text{vrk}} = 1\,325\,462\,\tfrac{\text{km}}{\text{vrk}}$, ja $\dfrac{1\,325\,462\,\text{km/vrk}}{149\,597\,870{,}7\,\text{km/AU}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
 **Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}7\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{30{,}3\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3419{,}8\,\text{vrk}$
 **Vastaus:** $3420\,\text{vrk}$, kolme merkitsevää numeroa, kun $150\,\text{AU}$ tulkitaan kolmen numeron tarkkuudella ja erotus on $30{,}3\,\text{AU}$.
-**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 / 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli poikkeaa JPL:n arvosta noin 0,2 AU, mikä vastaa noin 20 vuorokauden virhettä ajankohdassa.
+**Järkevyys:** Vauhti on noin $3{,}2\,\text{AU}$ vuodessa, joten $30{,}3\,\text{AU}$ vie noin $30{,}3 : 3{,}2 \approx 9{,}5$ vuotta. Tulos $3420\,\text{vrk} \approx 9{,}4$ vuotta sopii tähän ja ajoittuu maaliskuuhun 2028. Malli poikkeaa JPL:n arvosta noin 0,2 AU, mikä vastaa noin 20 vuorokauden virhettä ajankohdassa.
 
 ## fy1-5-L3-02
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
@@ -116,4 +116,4 @@
 **Muunnokset:** Ei tarvita: nopeudet ovat m/s ja viive sekunteina.
 **Sijoitus:** $t = \dfrac{4{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 40\,\text{s}}{4{,}5\,\tfrac{\text{m}}{\text{s}} - 1{,}5\,\tfrac{\text{m}}{\text{s}}} = 60\,\text{s}$ ja $s = 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 60\,\text{s} = 90\,\text{m}$
 **Vastaus:** $90\,\text{m}$, kaksi merkitsevää numeroa kuten nopeuksissa.
-**Järkevyys:** Pyöräilijä ajaa $60\,\text{s} - 40\,\text{s} = 20\,\text{s}$, ja $4{,}5\,\text{m/s} \cdot 20\,\text{s} = 90\,\text{m}$, sama tulos. Toinen tarkistus: kävelijän etumatka $40\,\text{s}$ jälkeen on $1{,}5 \cdot 40 = 60\,\text{m}$, ja pyöräilijä kuroo sen umpeen nopeuserolla $3{,}0\,\text{m/s}$ ajassa $60 / 3{,}0 = 20\,\text{s}$.
+**Järkevyys:** Pyöräilijä ajaa $60\,\text{s} - 40\,\text{s} = 20\,\text{s}$, ja $4{,}5\,\text{m/s} \cdot 20\,\text{s} = 90\,\text{m}$, sama tulos. Toinen tarkistus: kävelijän etumatka $40\,\text{s}$ jälkeen on $1{,}5 \cdot 40 = 60\,\text{m}$, ja pyöräilijä kuroo sen umpeen nopeuserolla $3{,}0\,\text{m/s}$ ajassa $60 : 3{,}0 = 20\,\text{s}$.

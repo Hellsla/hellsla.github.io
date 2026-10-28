@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Mittaustulos on arvio, jolla on virhe: **satunnaisvirhe** hajauttaa tuloksia ja pienenee keskiarvolla, **systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan eikä poistu toistolla, ja luotettavuus on sekä toistettavuutta että oikeellisuutta.",
   "learn": [
-    "Erotat satunnaisen ja systemaattisen virheen ja tunnistat niiden lähteitä.",
+    "Erotat karkean virheen, satunnaisvirheen ja systemaattisen virheen ja tunnistat niiden lähteitä.",
     "Osaat laskea keskiarvon ja arvioida tuloksen virheen vaihteluvälin puolikkaalla.",
     "Osaat korjata systemaattisen virheen ja arvioida, onko mittaus toistettava ja oikea."
   ],
@@ -111,7 +111,7 @@
       "type": "sim",
       "text": "Kuula vierii rampilla, ja käsikello antaa joka kerta lukeman. Pisteet kasautuvat aika-akselille, ja näet keskiarvon ja oikean ajan. Liukusäätimillä valitset toistot ja kahden virheen suuruuden.",
       "howto": "Paina *Käynnistä*, niin mittauksia tehdään yksi kerrallaan. Voit myös vetää *Toistoja* -liukusäädintä, jolloin näet saman sarjan ensimmäiset $n$ tulosta. *Satunnaisvirhe* kertoo, kuinka paljon tulokset heittelevät, ja *Systemaattinen virhe* sen, kuinka paljon kello näyttää joka kerta liikaa (plus) tai liian vähän (miinus). Oranssi piste on viimeisin lukema, vihreä katkoviiva oikea aika ja musta viiva keskiarvo.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät oikean kokeen mittauksia. Kuulan oikea vierimisaika on $T = 2{,}40\\,\\text{s}$. Malli tuntee sen, mutta oikeassa kokeessa sitä ei tiedetä. Lukema on $t_i = T + \\delta_\\text{sys} + \\delta_\\text{sat}\\,g_i$ pyöristettynä sadasosasekuntiin, missä $g_i$ on kiinteä satunnaislukujen sarja. Sama sarja alkaa aina alusta, joten kokeen voi toistaa. Luku $\\delta_\\text{sat}$ on yksittäisen lukeman tyypillinen poikkeama; monen lukeman vaihteluvälin puolikas on sitä suurempi.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät oikean kokeen mittauksia. Kuulan oikea vierimisaika on $T = 2{,}40\\,\\text{s}$. Malli tuntee sen, mutta oikeassa kokeessa sitä ei tiedetä. Lukema on $t_i = T + \\Delta t_\\text{sys} + \\Delta t_\\text{sat}\\,g_i$ pyöristettynä sadasosasekuntiin, missä $g_i$ on kiinteä satunnaislukujen sarja. Sama sarja alkaa aina alusta, joten kokeen voi toistaa. Luku $\\Delta t_\\text{sat}$ on yksittäisen lukeman tyypillinen poikkeama; monen lukeman vaihteluvälin puolikas on sitä suurempi.",
       "calc": "Keskiarvo $\\bar{t}$ on $n$ ensimmäisen lukeman summa jaettuna luvulla $n$. Vaihteluvälin puolikas on $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. Keskiarvon ero oikeaan aikaan on $\\bar{t} - T$, ja sen näkee vain mallissa, koska oikeaa aikaa ei yleensä tunneta."
     },
     {
@@ -231,7 +231,7 @@
             "feedback": "Ero ei ole nolla. Satunnainen osa on vaimentunut, mutta systemaattinen virhe $+0{,}30\\,\\text{s}$ on yhä mukana jokaisessa tuloksessa ja siis keskiarvossa."
           }
         ],
-        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $e = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $e = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $e = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
+        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\Delta t = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $\\Delta t = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta t = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
       }
     },
     {
@@ -369,6 +369,33 @@
       ]
     },
     {
+      "id": "karkea",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Karkea virhe",
+      "justify": true,
+      "prompt": "Oppilas mittaa kuulan vierimisajan käsikellolla kuusi kertaa ja saa tulokset $3{,}12\\,\\text{s}$, $3{,}25\\,\\text{s}$, $3{,}07\\,\\text{s}$, $4{,}31\\,\\text{s}$, $3{,}19\\,\\text{s}$ ja $3{,}15\\,\\text{s}$. Mitä hänen kannattaa tehdä ennen keskiarvon laskemista?",
+      "choices": [
+        {
+          "text": "Laskea keskiarvon kaikista kuudesta tuloksesta, koska keskiarvo vaimentaa virheet.",
+          "feedback": "Keskiarvo vaimentaa satunnaisvirhettä, mutta tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, kun muut ovat $0{,}2\\,\\text{s}$:n sisällä. Se on todennäköisesti karkea virhe, ja mukaan otettuna se siirtäisi keskiarvoa noin $0{,}2\\,\\text{s}$ ylöspäin."
+        },
+        {
+          "text": "Tarkistaa tuloksen $4{,}31\\,\\text{s}$. Jos syy löytyy tai se on selvästi muista poikkeava, jättää sen pois, mitata uudelleen ja kirjata poiston syy muistiin.",
+          "correct": true,
+          "feedback": "Oikein. Tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, joten se on todennäköisesti karkea virhe, esimerkiksi myöhään pysäytetty kello tai väärin kirjattu lukema. Karkeaa virhettä ei keskiarvoisteta vaan se poistetaan, ja tilalle tehdään uusi mittaus."
+        },
+        {
+          "text": "Jättää pois suurimman ja pienimmän tuloksen, $4{,}31\\,\\text{s}$ ja $3{,}07\\,\\text{s}$, koska ääripäät ovat aina virheellisiä.",
+          "feedback": "Ääripäät eivät ole automaattisesti virheellisiä: $3{,}07\\,\\text{s}$ on vain $0{,}05\\,\\text{s}$ seuraavaa tulosta pienempi, ja se kuuluu tavalliseen hajontaan. Pois jätetään vain tulos, joka poikkeaa selvästi muista tai jonka syy tiedetään, tässä $4{,}31\\,\\text{s}$."
+        },
+        {
+          "text": "Lisätä virhe-arvioon $\\Delta t$ tuloksen $4{,}31\\,\\text{s}$ verran, jotta kaikki tulokset mahtuvat väliin.",
+          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin seitsenkertaiseksi, $0{,}09\\,\\text{s}$:sta $0{,}62\\,\\text{s}$:iin. Selvästi poikkeava tulos tarkistetaan ja jätetään pois."
+        }
+      ]
+    },
+    {
       "id": "virhe",
       "stage": "sovella",
       "type": "choice",
@@ -427,7 +454,7 @@
           "feedback": "Tämä on lukemien keskiarvo. Kolikon massaan tarvitaan vielä nollakohdan korjaus ja jako kolikoiden lukumäärällä."
         }
       ],
-      "solution": "**Annettu:** vaa'an nollalukema $m_0 = 0{,}8\\,\\text{g}$; lukemat $27{,}9\\,\\text{g}$, $28{,}1\\,\\text{g}$, $28{,}0\\,\\text{g}$, $27{,}8\\,\\text{g}$ ja $28{,}2\\,\\text{g}$; kolikoita $N = 5$\n\n**Kysytty:** yhden kolikon massa $m_\\text{kolikko}$ yksikössä $\\text{g}$\n\n**Periaate:** Lukemien vaihtelu on satunnaisvirhettä, jota keskiarvo vaimentaa. Nollalukema $0{,}8\\,\\text{g}$ on systemaattinen virhe, joka on mukana jokaisessa lukemassa ja siis keskiarvossa, joten se on vähennettävä. Viiden kolikon yhteismassa jaetaan lopuksi viidellä.\n\n**Kaava:** $\\bar{m} = \\dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$ ja $m_\\text{kolikko} = \\dfrac{\\bar{m} - m_0}{N}$\n\n**Muunnokset:** Kaikki massat ovat grammoina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Summa on $27{,}9\\,\\text{g} + 28{,}1\\,\\text{g} + 28{,}0\\,\\text{g} + 27{,}8\\,\\text{g} + 28{,}2\\,\\text{g} = 140{,}0\\,\\text{g}$, joten $\\bar{m} = \\dfrac{140{,}0\\,\\text{g}}{5} = 28{,}0\\,\\text{g}$ ja $m_\\text{kolikko} = \\dfrac{28{,}0\\,\\text{g} - 0{,}8\\,\\text{g}}{5} = \\dfrac{27{,}2\\,\\text{g}}{5} = 5{,}44\\,\\text{g}$\n\n**Vastaus:** $5{,}44\\,\\text{g}$, kolme merkitsevää numeroa: erotus $27{,}2\\,\\text{g}$ tunnetaan kolmella numerolla, ja jako luvulla $5$ on tarkka.\n\n**Järkevyys:** Arvio: $28\\,\\text{g} / 5 \\approx 5{,}6\\,\\text{g}$, ja korjaus pienentää massaa $0{,}8\\,\\text{g} / 5 = 0{,}16\\,\\text{g}$, joten $5{,}6\\,\\text{g} - 0{,}16\\,\\text{g} \\approx 5{,}44\\,\\text{g}$. Kolikon massa on muutaman gramman luokkaa, kuten pienillä kolikoilla, ja korjattu massa on lukemaa pienempi, koska vaaka näytti liikaa."
+      "solution": "**Annettu:** vaa'an nollalukema $m_0 = 0{,}8\\,\\text{g}$; lukemat $27{,}9\\,\\text{g}$, $28{,}1\\,\\text{g}$, $28{,}0\\,\\text{g}$, $27{,}8\\,\\text{g}$ ja $28{,}2\\,\\text{g}$; kolikoita $N = 5$\n\n**Kysytty:** yhden kolikon massa $m_\\text{kolikko}$ yksikössä $\\text{g}$\n\n**Periaate:** Lukemien vaihtelu on satunnaisvirhettä, jota keskiarvo vaimentaa. Nollalukema $0{,}8\\,\\text{g}$ on systemaattinen virhe, joka on mukana jokaisessa lukemassa ja siis keskiarvossa, joten se on vähennettävä. Viiden kolikon yhteismassa jaetaan lopuksi viidellä.\n\n**Kaava:** $\\bar{m} = \\dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$ ja $m_\\text{kolikko} = \\dfrac{\\bar{m} - m_0}{N}$\n\n**Muunnokset:** Kaikki massat ovat grammoina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Summa on $27{,}9\\,\\text{g} + 28{,}1\\,\\text{g} + 28{,}0\\,\\text{g} + 27{,}8\\,\\text{g} + 28{,}2\\,\\text{g} = 140{,}0\\,\\text{g}$, joten $\\bar{m} = \\dfrac{140{,}0\\,\\text{g}}{5} = 28{,}0\\,\\text{g}$ ja $m_\\text{kolikko} = \\dfrac{28{,}0\\,\\text{g} - 0{,}8\\,\\text{g}}{5} = \\dfrac{27{,}2\\,\\text{g}}{5} = 5{,}44\\,\\text{g}$\n\n**Vastaus:** $5{,}44\\,\\text{g}$, kolme merkitsevää numeroa: erotus $27{,}2\\,\\text{g}$ tunnetaan kolmella numerolla, ja jako luvulla $5$ on tarkka.\n\n**Järkevyys:** Arvio: $28\\,\\text{g} : 5 \\approx 5{,}6\\,\\text{g}$, ja korjaus pienentää massaa $0{,}8\\,\\text{g} : 5 = 0{,}16\\,\\text{g}$, joten $5{,}6\\,\\text{g} - 0{,}16\\,\\text{g} \\approx 5{,}44\\,\\text{g}$. Kolikon massa on muutaman gramman luokkaa, kuten pienillä kolikoilla, ja korjattu massa on lukemaa pienempi, koska vaaka näytti liikaa."
     },
     {
       "id": "tehtavat",
@@ -469,7 +496,7 @@
       "prompt": "Kuulan vierimisaika mitataan viisi kertaa ja tulokset ovat $2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$. Virhe-arvio on vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
       "answer": 2.1,
       "unit": "%",
-      "tolerance": 0.03,
+      "tolerance": 0.05,
       "hints": [
         "Laske ensin keskiarvo ja vaihteluvälin puolikas.",
         "Suhteellinen virhe on $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
@@ -489,7 +516,7 @@
           "feedback": "Suhde on oikein mutta se ei ole vielä prosentteina. Kerro se sadalla."
         }
       ],
-      "solution": "**Annettu:** $t = 2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2{,}36\\,\\text{s}$, $t_\\text{max} = 2{,}46\\,\\text{s}$\n\n**Kysytty:** suhteellinen virhe $\\varepsilon$ prosentteina\n\n**Periaate:** Satunnaisvirheen arvio on vaihteluvälin puolikas, ja suhteellinen virhe vertaa sitä tulokseen, joka on keskiarvo. Suhde on yksikötön, ja prosenttiin päästään kertomalla sadalla.\n\n**Kaava:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ ja $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita. Suhde kerrotaan sadalla prosenteiksi.\n\n**Sijoitus:** $\\bar{t} = \\dfrac{12{,}00\\,\\text{s}}{5} = 2{,}40\\,\\text{s}$, $\\Delta t = \\dfrac{2{,}46\\,\\text{s} - 2{,}36\\,\\text{s}}{2} = 0{,}05\\,\\text{s}$ ja $\\varepsilon = \\dfrac{0{,}05\\,\\text{s}}{2{,}40\\,\\text{s}} \\cdot 100\\,\\% = 2{,}1\\,\\%$\n\n**Vastaus:** $2{,}1\\,\\%$, kaksi merkitsevää numeroa; erotus $0{,}10\\,\\text{s}$ jaetaan tarkalla luvulla $2$.\n\n**Järkevyys:** Arvio: $0{,}05\\,\\text{s}$ on noin $\\tfrac{1}{50}$ ajasta $2{,}4\\,\\text{s}$, eli noin $2\\,\\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen."
+      "solution": "**Annettu:** $t = 2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2{,}36\\,\\text{s}$, $t_\\text{max} = 2{,}46\\,\\text{s}$\n\n**Kysytty:** suhteellinen virhe $\\varepsilon$ prosentteina\n\n**Periaate:** Satunnaisvirheen arvio on vaihteluvälin puolikas, ja suhteellinen virhe vertaa sitä tulokseen, joka on keskiarvo. Suhde on yksikötön, ja prosenttiin päästään kertomalla sadalla.\n\n**Kaava:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ ja $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita. Suhde kerrotaan sadalla prosenteiksi.\n\n**Sijoitus:** $\\bar{t} = \\dfrac{12{,}00\\,\\text{s}}{5} = 2{,}40\\,\\text{s}$, $\\Delta t = \\dfrac{2{,}46\\,\\text{s} - 2{,}36\\,\\text{s}}{2} = 0{,}05\\,\\text{s}$ ja $\\varepsilon = \\dfrac{0{,}05\\,\\text{s}}{2{,}40\\,\\text{s}} \\cdot 100\\,\\% = 2{,}1\\,\\%$\n\n**Vastaus:** $2\\,\\%$, yksi merkitsevä numero kuten virhearviossa $0{,}05\\,\\text{s}$ (laskimen arvo $2{,}08\\,\\%$).\n\n**Järkevyys:** Arvio: $0{,}05\\,\\text{s}$ on noin $\\tfrac{1}{50}$ ajasta $2{,}4\\,\\text{s}$, eli noin $2\\,\\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen."
     },
     {
       "id": "check-3",

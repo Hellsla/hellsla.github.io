@@ -46,7 +46,7 @@
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja tilavuus kuutiometreinä, ja vastaus pyydetään yksikössä $\text{kg/m}^3$.
 **Sijoitus:** $\rho = \dfrac{36{,}8\,\text{kg}}{0{,}0400\,\text{m}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $920\,\tfrac{\text{kg}}{\text{m}^3}$, kolme merkitsevää numeroa kuten tiedoissa.
-**Järkevyys:** Tulos on hieman alle veden tiheyden $1000\,\tfrac{\text{kg}}{\text{m}^3}$, mikä sopii siihen, että jää kelluu vedessä. Karkea arvio: $37\,\text{kg} / 0{,}04\,\text{m}^3 \approx 925\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Järkevyys:** Tulos on hieman alle veden tiheyden $1000\,\tfrac{\text{kg}}{\text{m}^3}$, mikä sopii siihen, että jää kelluu vedessä. Karkea arvio: $37\,\text{kg} : 0{,}04\,\text{m}^3 \approx 925\,\tfrac{\text{kg}}{\text{m}^3}$.
 
 ## fy1-7-L2-01
 **Annettu:** harkon mitat $10{,}0\,\text{cm}$, $5{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$; kullan tiheys $\rho = 19\,300\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -76,7 +76,7 @@
 **Muunnokset:** $V = 54{,}2\,\text{ml} - 50{,}0\,\text{ml} = 4{,}2\,\text{ml} = 4{,}2\,\text{cm}^3 = 4{,}2 \cdot 10^{-6}\,\text{m}^3$ ja $33{,}0\,\text{g} = 0{,}0330\,\text{kg}$.
 **Sijoitus:** $\rho = \dfrac{0{,}0330\,\text{kg}}{4{,}2 \cdot 10^{-6}\,\text{m}^3} = 7857\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $7900\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska lukemien erotus $4{,}2\,\text{ml}$ on kahden numeron tarkkuudella, vaikka massa ja lukemat ovat tarkempia.
-**Järkevyys:** Tulos on lähellä raudan tiheyttä $7870\,\tfrac{\text{kg}}{\text{m}^3}$, ja teräs on pääosin rautaa. Arvio: $33\,\text{g} / 4\,\text{cm}^3 \approx 8\,\tfrac{\text{g}}{\text{cm}^3}$.
+**Järkevyys:** Tulos on lähellä raudan tiheyttä $7870\,\tfrac{\text{kg}}{\text{m}^3}$, ja teräs on pääosin rautaa. Arvio: $33\,\text{g} : 4\,\text{cm}^3 \approx 8\,\tfrac{\text{g}}{\text{cm}^3}$.
 
 ## fy1-7-L2-04
 **Annettu:** tyhjän pullon massa $m_0 = 215\,\text{g}$, nesteen tilavuus $V = 250\,\text{cm}^3$ ja pullon sekä nesteen yhteismassa $m_\text{yht} = 412\,\text{g}$
@@ -90,14 +90,14 @@
 
 ## fy1-7-L3-01
 **Annettu:** kuparikappaleen ja alumiinikappaleen massat ovat yhtä suuret, $m_\text{Cu} = m_\text{Al} = m$; taulukosta $\rho_\text{Cu} = 8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $\rho_\text{Al} = 2700\,\tfrac{\text{kg}}{\text{m}^3}$
-**Kysytty:** tilavuuksien suhde $V_\text{Al} / V_\text{Cu}$
+**Kysytty:** tilavuuksien suhde $V_\text{Al} : V_\text{Cu}$
 **Periaate:** Kummankin kappaleen massa on tiheys kertaa tilavuus. Koska massat ovat yhtä suuret, tiheyden ja tilavuuden tulot ovat yhtä suuret, joten suurempi tiheys tarkoittaa pienempää tilavuutta.
 **Kaava:** $\rho_\text{Al} V_\text{Al} = \rho_\text{Cu} V_\text{Cu}$, josta
 $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Muunnokset:** Ei tarvita: tiheydet ovat samassa yksikössä ja massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
 **Vastaus:** $3{,}32$ kertaa, kolme merkitsevää numeroa kuten tiheyksissä $8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $2{,}70\cdot10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$.
-**Järkevyys:** Alumiini on kevyempää, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Pyöristetyillä luvuilla $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$, joten suhde $8960/2700$ on kolmen ja neljän välissä, lähempänä kolmea, kuten $3{,}32$.
+**Järkevyys:** Alumiini on kevyempää, joten saman massan saamiseksi sitä tarvitaan enemmän tilavuutena. Pyöristetyillä luvuilla $3 \cdot 2700 = 8100$ ja $4 \cdot 2700 = 10\,800$, joten suhde $8960 : 2700$ on kolmen ja neljän välissä, lähempänä kolmea, kuten $3{,}32$.
 
 ## fy1-7-L3-02
 **Annettu:** alumiinia $V_1 = 100\,\text{cm}^3$, $\rho_1 = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$ ja rautaa $V_2 = 50\,\text{cm}^3$, $\rho_2 = 7{,}87\,\tfrac{\text{g}}{\text{cm}^3}$; tilavuudet lasketaan yhteen

@@ -10,13 +10,13 @@
 
 ## fy1-3-L1-02
 **Annettu:** oikea arvo (vertailupituus) $x_\text{oikea} = 20{,}0\,\text{cm}$, mittaustulos $x = 20{,}3\,\text{cm}$
-**Kysytty:** mittausvirhe $e$ etumerkkeineen yksikössä $\text{cm}$
+**Kysytty:** mittausvirhe $\Delta x$ etumerkkeineen yksikössä $\text{cm}$
 **Periaate:** Mittausvirhe on mittaustuloksen ja oikean arvon erotus. Etumerkki kertoo suunnan: plus tarkoittaa, että tulos on liian suuri, ja miinus, että se on liian pieni.
-**Kaava:** $e = x - x_\text{oikea}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $e = x - x_\text{oikea}$
+**Kaava:** $\Delta x = x - x_\text{oikea}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $\Delta x = x - x_\text{oikea}$
 **Muunnokset:** Molemmat pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $e = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
+**Sijoitus:** $\Delta x = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
 **Vastaus:** $0{,}3\,\text{cm}$ eli tulos on liian suuri. Erotus tunnetaan vain yhden desimaalin tarkkuudella, koska molemmat pituudet on annettu yhdellä desimaalilla.
-**Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$, mikä on mittanauhalle suuri virhe (nauha on tavallisesti tarkka noin millimetrin), joten syy on todennäköisesti systemaattinen, esimerkiksi venynyt nauha tai väärä nollakohta.
+**Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$, mikä on mittanauhalle suuri virhe (nauha on tavallisesti tarkka noin millimetrin), joten syy on todennäköisesti systemaattinen, esimerkiksi kulunut nauhan alkupää tai väärä nollakohta.
 
 ## fy1-3-L1-03
 **Annettu:** $t = 12{,}4\,\text{s}$, $12{,}9\,\text{s}$, $12{,}6\,\text{s}$, $12{,}2\,\text{s}$ ja $12{,}7\,\text{s}$; pienin tulos $t_\text{min} = 12{,}2\,\text{s}$ ja suurin $t_\text{max} = 12{,}9\,\text{s}$
@@ -55,7 +55,7 @@
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$. Kysytty on $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
 **Muunnokset:** Ajat ovat sekunteina ja suhde on yksikötön. Se kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\bar{t} = \dfrac{11{,}19\,\text{s}}{6} = 1{,}865\,\text{s}$ ja $\Delta t = \dfrac{1{,}96\,\text{s} - 1{,}78\,\text{s}}{2} = 0{,}09\,\text{s}$, joten $\varepsilon = \dfrac{0{,}09\,\text{s}}{1{,}865\,\text{s}} \cdot 100\,\% = 4{,}83\,\%$
-**Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa. Suhteellisena virheenä se on noin viisi prosenttia, ja tarkempi arvo tulee vaihteluvälin tarkasta puolikkaasta.
+**Vastaus:** $5\,\%$, yksi merkitsevä numero kuten virhearviossa $0{,}09\,\text{s}$ (laskimen arvo $4{,}83\,\%$).
 **Järkevyys:** Arvio karkeasti: $0{,}09\,\text{s}$ on noin $\tfrac{1}{20}$ ajasta $1{,}87\,\text{s}$, eli noin $5\,\%$. Käsin otetulle ajalle muutaman prosentin satunnaisvirhe on tavallinen.
 
 ## fy1-3-L2-02
@@ -105,7 +105,7 @@
 **Kaava:** $\Delta h = \dfrac{d}{2}$ ja $\Delta h_1 = \dfrac{\Delta h}{n}$, joten $\Delta h_1 = \dfrac{d}{2n}$
 **Muunnokset:** Tulos tulee millimetreinä, ja $1\,\text{mm} = 1000\,\mu\text{m}$, joten se kerrotaan tuhannella.
 **Sijoitus:** $\Delta h_1 = \dfrac{1{,}0\,\text{mm}}{2 \cdot 250} = \dfrac{0{,}5\,\text{mm}}{250} = 0{,}0020\,\text{mm} = 2{,}0\,\mu\text{m}$
-**Vastaus:** $2{,}0\,\mu\text{m}$, kaksi merkitsevää numeroa kuten asteikkovälissä $1{,}0\,\text{mm}$; arkkien lukumäärä on tarkka luku.
+**Vastaus:** $2\,\mu\text{m}$, yksi merkitsevä numero, koska virhe-arvio pyöristetään yhteen merkitsevään numeroon; arkkien lukumäärä on tarkka luku.
 **Järkevyys:** Tavallisen kopiopaperin paksuus on noin $0{,}1\,\text{mm} = 100\,\mu\text{m}$, joten virhe-arvio on noin $2\,\%$. Yhden arkin mittaaminen suoraan viivaimella antaisi virheeksi $0{,}5\,\text{mm}$ eli noin $500\,\%$, joten pinon mittaaminen pienentää suhteellisen virheen 250-osaan.
 
 ## fy1-3-L3-03
@@ -116,4 +116,4 @@
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** Summa on $8{,}24\,\text{cm} + 8{,}27\,\text{cm} + 8{,}25\,\text{cm} + 8{,}29\,\text{cm} + 8{,}25\,\text{cm} = 41{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{41{,}30\,\text{cm}}{5} = 8{,}26\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}26\,\text{cm} - 8{,}00\,\text{cm} = 0{,}26\,\text{cm}$
 **Vastaus:** $0{,}26\,\text{cm}$, kaksi merkitsevää numeroa; erotus on kahden desimaalin tarkkuudella.
-**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}29\,\text{cm} - 8{,}24\,\text{cm}}{2} = 0{,}025\,\text{cm}$ on kymmenesosa systemaattisesta virheestä, joten virheen ratkaisee systemaattinen osa, esimerkiksi väärä nollakohta. Jos kaikista lukemista vähennetään $0{,}26\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
+**Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}29\,\text{cm} - 8{,}24\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin kymmenesosa systemaattisesta virheestä, joten virheen ratkaisee systemaattinen osa, esimerkiksi väärä nollakohta. Jos kaikista lukemista vähennetään $0{,}26\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.

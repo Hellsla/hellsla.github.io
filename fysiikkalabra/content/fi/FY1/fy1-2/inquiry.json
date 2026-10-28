@@ -27,12 +27,12 @@
       "choices": [
         {
           "text": "Kolminkertainen, koska eksponentti kasvaa kolmella.",
-          "feedback": "Eksponentin kasvu kolmella ei tarkoita kolminkertaista: jokainen eksponentin askel kerryttää kertoimen 10. Suhde on $10^{9}/10^{6} = 10^{9-6} = 10^{3}$."
+          "feedback": "Eksponentin kasvu kolmella ei tarkoita kolminkertaista: jokainen eksponentin askel kerryttää kertoimen 10. Suhde on $10^{9} : 10^{6} = 10^{9-6} = 10^{3}$."
         },
         {
           "text": "Tuhatkertainen.",
           "correct": true,
-          "feedback": "Oikein. Potenssien jakolaskussa eksponentit vähennetään: $10^{9}/10^{6} = 10^{3} = 1000$. Tämä sama laskutapa on etuliitteiden takana: $1\\,\\text{km} = 10^{3}\\,\\text{m}$."
+          "feedback": "Oikein. Potenssien jakolaskussa eksponentit vähennetään: $10^{9} : 10^{6} = 10^{3} = 1000$. Tämä sama laskutapa on etuliitteiden takana: $1\\,\\text{km} = 10^{3}\\,\\text{m}$."
         },
         {
           "text": "Kolmetuhatkertainen.",
@@ -59,7 +59,7 @@
       "choices": [
         {
           "text": "Noin 8 minuuttia, koska valo on niin nopea, ettei matka juuri vaikuta aikaan.",
-          "feedback": "Mallin arvot kumoavat tämän: päivänä 1.1.2026 Voyager 2 on mallin mukaan $142{,}9\\,\\text{AU}$ päässä ja valon kulkuaika on $19{,}8\\,\\text{h}$. Valon nopeus on vakio, joten kulkuaika on suoraan verrannollinen matkaan, $t = s/c$: yli satakertainen matka vie yli satakertaisen ajan, vaikka nopeus on valtava."
+          "feedback": "Mallin arvot kumoavat tämän: päivänä 1.1.2026 Voyager 2 on mallin mukaan $142{,}9\\,\\text{AU}$ päässä ja valon kulkuaika on $19{,}8\\,\\text{h}$. Valon nopeus on vakio, joten kulkuaika on suoraan verrannollinen matkaan, $t = s : c$: yli satakertainen matka vie yli satakertaisen ajan, vaikka nopeus on valtava."
         },
         {
           "text": "Noin tunti.",
@@ -94,12 +94,12 @@
         },
         {
           "text": "Noin 330 sekuntia, koska matka kasvaa kymmenkertaiseksi.",
-          "feedback": "Mallin arvot kumoavat tämän: tulos on $3340\\,\\text{s}$, ei 330. Matka kasvaa kahden eksponentin askeleen verran, $10^{9}/10^{7} = 10^{2}$, eli satakertaiseksi eikä kymmenkertaiseksi."
+          "feedback": "Mallin arvot kumoavat tämän: tulos on $3340\\,\\text{s}$, ei 330. Matka kasvaa kahden eksponentin askeleen verran, $10^{9} : 10^{7} = 10^{2}$, eli satakertaiseksi eikä kymmenkertaiseksi."
         },
         {
           "text": "Noin 3300 sekuntia, koska matka kasvaa satakertaiseksi.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $10^{9}\\,\\text{km}$ vie $3340\\,\\text{s}$, noin 56 minuuttia. Matka on satakertainen, $10^{9}/10^{7} = 10^{2}$, ja valon nopeus on vakio, joten myös aika on satakertainen."
+          "feedback": "Mallin arvot tukevat tätä: $10^{9}\\,\\text{km}$ vie $3340\\,\\text{s}$, noin 56 minuuttia. Matka on satakertainen, $10^{9} : 10^{7} = 10^{2}$, ja valon nopeus on vakio, joten myös aika on satakertainen."
         },
         {
           "text": "Noin 33 000 sekuntia, koska matka kasvaa tuhatkertaiseksi.",
@@ -112,9 +112,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Vieritä Aurinkokuntaa, jossa Kuun halkaisija on yksi kuvapiste. Hyppää kohteeseen, matkusta valon nopeudella ja lue etäisyys kilometreinä, AU:na ja valon kulkuaikana.",
-      "howto": "Vieritä kuvaa vetämällä, hiiren pyörällä tai nuolinäppäimillä (Shift suurentaa askelta) tai nuolipainikkeilla: mitä pidempään painiketta pidät, sitä nopeammin kuva vierii. Liukusäädin siirtää näkymän etäisyydelle $d = 10^{n}\\,\\text{km}$ Auringosta, ja hyppypainikkeet vievät suoraan Aurinkoon, planeettaan tai Voyager 2:een. *Matkusta valon nopeudella* lähettää valopulssin näkymän keskikohdasta; *Nopeus* kertoo, moninkertaisella tahdilla aika kuluu (×1, ×100 tai ×10 000), ja kulunut aika sekä kuljettu matka näkyvät luvuissa. *Alusta* palauttaa näkymän Aurinkoon. Kenttä *Voyager 2 -päivä* valitsee päivän, jolle luotaimen paikka lasketaan; oletuksena se on tämä päivä. Näkymän keskikohdan etäisyys luetaan kolmella tavalla: kilometreinä, AU:na ja valon kulkuaikana.",
+      "howto": "Vieritä kuvaa vetämällä, hiiren pyörällä tai nuolinäppäimillä (Shift suurentaa askelta) tai nuolipainikkeilla: mitä pidempään painiketta pidät, sitä nopeammin kuva vierii. Liukusäädin siirtää näkymän etäisyydelle $d = 10^{n}\\,\\text{km}$ Auringosta, ja hyppypainikkeet vievät suoraan Aurinkoon, planeettaan tai Voyager 2:een. *Matkusta valon nopeudella* lähettää valopulssin näkymän keskikohdasta; *Nopeus* kertoo, moninkertaisella tahdilla aika kuluu (1-, 100- tai 10 000-kertainen), ja kulunut aika sekä kuljettu matka näkyvät luvuissa. *Alusta* palauttaa näkymän Aurinkoon. Kenttä *Voyager 2 -päivä* valitsee päivän, jolle luotaimen paikka lasketaan; oletuksena se on tämä päivä. Näkymän keskikohdan etäisyys luetaan kolmella tavalla: kilometreinä, AU:na ja valon kulkuaikana.",
       "model": "Kuva on todellisessa mittakaavassa etäisyyden suunnassa: yksi kuvapiste on Kuun halkaisija, $3474\\,\\text{km}$. Planeetat on piirretty yhdelle suoralle Auringosta lähtien niiden keskimääräisille etäisyyksille eli radan isoille puoliakseleille (JPL, *Approximate Positions of the Planets*), ja niiden koot ovat päiväntasaajan halkaisijoita (NASA). Todellisuudessa planeetat ovat Auringon eri puolilla. Voyager 2 on merkitty suurennetulla symbolilla, koska itse luotain on kuvassa paljon yhtä kuvapistettä pienempi.\n\nVoyager 2:n etäisyys, nopeus ja signaalin kulkuaika ovat **mallin laskemia arvoja** (lähteet: NASA/JPL), eivät mittauksia. Malli olettaa, että luotain etenee vakionopeudella $15{,}341\\,\\text{km/s}$ heliopaussin eli aurinkotuulen kuplan rajan ylityksestä 2018-11-05 alkaen, jolloin etäisyys oli $119{,}7\\,\\text{AU}$; todellinen nopeus muuttuu hieman. Signaalin kulkuaika lasketaan Auringon etäisyydestä. Maa on enintään $1\\,\\text{AU}$ Aurinkoa lähempänä tai kauempana, joten signaalin kulkuaika Maahan poikkeaa näytetystä enintään noin kahdeksan minuuttia. Valon nopeus on $c = 299\\,792\\,458\\,\\text{m/s}$, ja *Nopeus* muuttaa vain animaation tahtia, ei kulunutta aikaa tai matkaa.",
-      "calc": "Kuvapisteiden määrä saadaan jakamalla pituus Kuun halkaisijalla:\n\n$$N = \\frac{d}{3474\\,\\text{km}}\\cdot1\\,\\text{px}$$\n\nEsimerkiksi Auringon leveys on $\\tfrac{1{,}392\\cdot10^{6}\\,\\text{km}}{3474\\,\\text{km}}\\cdot1\\,\\text{px} = 401\\,\\text{px}$. Etäisyys AU:na on $\\tfrac{d}{1{,}496\\cdot10^{8}\\,\\text{km}}$, ja valon kulkuaika on\n\n$$t = \\frac{d}{c}\\qquad c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$$\n\nMatkustettaessa kuljettu matka on $s = ct$ ja kulunut aika $t = s/c$; nopeusvalinta kertoo vain, kuinka monta animaatiosekuntia kuluu sekunnissa. Voyager 2:n etäisyys päivänä $t$ on mallissa\n\n$$d = d_0 + v\\,(t - t_0)$$\n\nmissä $d_0 = 119{,}7\\,\\text{AU}$, $v = 15{,}341\\,\\text{km/s}$ ja $t_0$ on 2018-11-05. Kaavaa käytetään tässä valmiina mallina, eikä sitä tarvitse itse ratkaista."
+      "calc": "Kuvapisteiden määrä saadaan jakamalla pituus Kuun halkaisijalla:\n\n$$N = \\frac{d}{3474\\,\\text{km}}\\cdot1\\,\\text{px}$$\n\nEsimerkiksi Auringon leveys on $\\tfrac{1{,}392\\cdot10^{6}\\,\\text{km}}{3474\\,\\text{km}}\\cdot1\\,\\text{px} = 401\\,\\text{px}$. Etäisyys AU:na on $\\tfrac{d}{1{,}496\\cdot10^{8}\\,\\text{km}}$, ja valon kulkuaika on\n\n$$t = \\frac{d}{c}\\qquad c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$$\n\nMatkustettaessa kuljettu matka on $s = ct$ ja kulunut aika $t = s : c$; nopeusvalinta kertoo vain, kuinka monta animaatiosekuntia kuluu sekunnissa. Voyager 2:n etäisyys päivänä $t$ on mallissa\n\n$$d = d_0 + v\\,(t - t_0)$$\n\nmissä $d_0 = 119{,}7\\,\\text{AU}$, $v = 15{,}341\\,\\text{km/s}$ ja $t_0$ on 2018-11-05. Kaavaa käytetään tässä valmiina mallina, eikä sitä tarvitse itse ratkaista."
     },
     {
       "id": "koe-1",
@@ -151,7 +151,7 @@
           {
             "text": "Se kasvaa kymmenkertaiseksi.",
             "correct": true,
-            "feedback": "Oikein. Etäisyys $10^{n}\\,\\text{km}$ kasvaa kymmenkertaiseksi, ja koska $t = s/c$ ja $c$ on vakio, myös aika kymmenkertaistuu. Taulukossa $33{,}4\\,\\text{s}$, $334\\,\\text{s}$, $3340\\,\\text{s}$."
+            "feedback": "Oikein. Etäisyys $10^{n}\\,\\text{km}$ kasvaa kymmenkertaiseksi, ja koska $t = s : c$ ja $c$ on vakio, myös aika kymmenkertaistuu. Taulukossa $33{,}4\\,\\text{s}$, $334\\,\\text{s}$, $3340\\,\\text{s}$."
           },
           {
             "text": "Se kasvaa yhdellä sekunnilla.",
@@ -175,7 +175,7 @@
       "title": "Voyager 2 -mallin lähtötiedot ja arvot",
       "source": "model",
       "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus 15,341 km/s; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
-      "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Heliopaussi on raja, jonka ulkopuolella Auringon hiukkastuuli ei enää hallitse avaruutta. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Päivä | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018-11-05 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022-11-05 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026-11-05 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030-11-05 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nSama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
+      "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Heliopaussi on raja, jonka ulkopuolella Auringon hiukkastuuli ei enää hallitse avaruutta. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Vuosi | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nArvot ovat kunkin vuoden 5. marraskuuta. Sama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
       "question": {
         "type": "choice",
         "prompt": "Taulukon arvot ovat mallin laskemia arvoja. Mitä se tarkoittaa?",
@@ -232,12 +232,12 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten valon kulkuaika riippuu matkasta? Kuinka monta kertaa pidempi Voyager 2:n signaalin kulkuaika on kuin yhden AU:n kulkuaika, ja miksi etäisyys voidaan ilmoittaa kolmella eri yksiköllä?",
-      "model": "Kokeessa 1 jokainen $n$:n kasvu yhdellä kymmenkertaisti sekä etäisyyden AU:na että valon kulkuajan: $n = 7$ antoi $33{,}4\\,\\text{s}$, $n = 8$ antoi $334\\,\\text{s}$ ja $n = 9$ antoi $3340\\,\\text{s}$. Valon nopeus on vakio, joten aika on suoraan verrannollinen matkaan, $t = s/c$. Kokeessa 2 mallin arvo päivälle 1.1.2026 oli $142{,}9\\,\\text{AU}$ ja kulkuaika $19{,}8\\,\\text{h}$, mikä on noin 143 kertaa yhden AU:n kulkuaika $8{,}32\\,\\text{min}$. Myöhemmin kulkuaika on pidempi, koska luotain etääntyy. Sama matka voidaan kirjoittaa kilometreinä, AU:na tai valon kulkuaikana: luvut ovat eri, koska yksiköt ovat eri, mutta ne kuvaavat samaa matkaa, ja muunnoskerroin vie yksiköstä toiseen. Arvot ovat mallin laskemia lähteinä NASA/JPL, ja Maan kulkuaika voi poiketa niistä enintään noin kahdeksan minuuttia.",
+      "model": "Kokeessa 1 jokainen $n$:n kasvu yhdellä kymmenkertaisti sekä etäisyyden AU:na että valon kulkuajan: $n = 7$ antoi $33{,}4\\,\\text{s}$, $n = 8$ antoi $334\\,\\text{s}$ ja $n = 9$ antoi $3340\\,\\text{s}$. Valon nopeus on vakio, joten aika on suoraan verrannollinen matkaan, $t = s : c$. Kokeessa 2 mallin arvo päivälle 1.1.2026 oli $142{,}9\\,\\text{AU}$ ja kulkuaika $19{,}8\\,\\text{h}$, mikä on noin 143 kertaa yhden AU:n kulkuaika $8{,}32\\,\\text{min}$. Myöhemmin kulkuaika on pidempi, koska luotain etääntyy. Sama matka voidaan kirjoittaa kilometreinä, AU:na tai valon kulkuaikana: luvut ovat eri, koska yksiköt ovat eri, mutta ne kuvaavat samaa matkaa: yksikön paikalle voi aina kirjoittaa sen arvon toisessa yksikössä. Arvot ovat mallin laskemia lähteinä NASA/JPL, ja Maan kulkuaika voi poiketa niistä enintään noin kahdeksan minuuttia.",
       "criteria": [
         "Kirjoitin, että kulkuaika on suoraan verrannollinen matkaan, koska valon nopeus on vakio.",
         "Käytin taulukoiden lukuja: kymmenkertainen matka antaa kymmenkertaisen ajan.",
         "Vertasin Voyager 2:n kulkuaikaa yhden AU:n kulkuaikaan ja sain suhteeksi noin 143.",
-        "Selitin, että yksikön vaihto muuttaa lukuarvon mutta ei suuretta, ja mainitsin muunnoskertoimen.",
+        "Selitin, että yksikön vaihto muuttaa lukuarvon mutta ei suuretta, ja että muunnoksessa yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä.",
         "Sanoin, että luvut ovat mallin laskemia eivätkä mittauksia."
       ]
     },
@@ -255,7 +255,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja muunnoskaavaan. Palaa sitten alun kysymykseen: miksi sama etäisyys voidaan ilmoittaa kilometreinä, astronomisina yksikköinä ja valon kulkuaikana, ja milloin mikin yksikkö on käyttökelpoinen?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yksikkömuunnoksiin. Palaa sitten alun kysymykseen: miksi sama etäisyys voidaan ilmoittaa kilometreinä, astronomisina yksikköinä ja valon kulkuaikana, ja milloin mikin yksikkö on käyttökelpoinen?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -280,11 +280,11 @@
         {
           "text": "Hän kertoi vain yhdellä tuhannella. Neliökilometri on $(1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$, joten oikea tulos on $2{,}5\\cdot10^{6}\\,\\text{m}^2$.",
           "correct": true,
-          "feedback": "Oikein. Yksikkö on neliö, joten myös muunnoskerroin on neliö: $(10^{3})^2 = 10^{6}$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
+          "feedback": "Oikein. Yksikkö on neliö, joten sijoitetaan koko neliö: $1\\,\\text{km}^2 = (1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
         },
         {
           "text": "Hänen olisi pitänyt jakaa tuhannella, koska metri on pienempi kuin kilometri.",
-          "feedback": "Pienempään yksikköön siirryttäessä lukuarvo kasvaa, joten kertominen on oikea suunta. Virhe on kertoimessa: neliöyksikön kerroin on $10^{6}$, ei $10^{3}$."
+          "feedback": "Pienempään yksikköön siirryttäessä lukuarvo kasvaa, joten kertominen on oikea suunta. Virhe on siinä, mitä sijoitettiin: $1\\,\\text{km}^2 = 10^{6}\\,\\text{m}^2$, ei $10^{3}\\,\\text{m}^2$."
         },
         {
           "text": "Tulos pitää kirjoittaa kymmenpotenssimuodossa $2{,}5\\cdot10^{3}\\,\\text{m}^2$.",
@@ -292,7 +292,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä, koska yksi kilometri on tuhat metriä.",
-          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten myös muunnoskerroin on kahden tuhannen tulo, $1000\\cdot1000 = 10^{6}$."
+          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten $1\\,\\text{km}^2 = 1000\\,\\text{m}\\cdot1000\\,\\text{m} = 10^{6}\\,\\text{m}^2$."
         }
       ],
       "optional": true
@@ -335,20 +335,20 @@
       "tolerance": 0.02,
       "hints": [
         "Nopeus kertoo matkan sekunnissa. Kuinka monta sekuntia vuodessa on, ja mitä yksikköä matka on, kun nopeus on $\\text{km/s}$?",
-        "Matka vuodessa on $s = vt$, missä $t = 3{,}156\\cdot10^{7}\\,\\text{s}$. Muunna sitten kilometrit AU:ksi jakamalla luvulla $1{,}496\\cdot10^{8}\\,\\text{km/AU}$.",
-        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$, ja $\\dfrac{4{,}842\\cdot10^{8}\\,\\text{km}}{1{,}496\\cdot10^{8}\\,\\text{km/AU}}$."
+        "Matka vuodessa on $s = vt$, missä $t = 3{,}156\\cdot10^{7}\\,\\text{s}$. Laske sitten, montako AU:ta matkaan mahtuu, kun $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.",
+        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km}$."
       ],
       "mistakes": [
         {
           "value": 484000000,
-          "feedback": "Tuo luku on matka kilometreinä, $4{,}84\\cdot10^{8}\\,\\text{km}$. Kysyttiin AU:ina, joten jaa vielä AU:n pituudella $1{,}496\\cdot10^{8}\\,\\text{km/AU}$."
+          "feedback": "Tuo luku on matka kilometreinä, $4{,}84\\cdot10^{8}\\,\\text{km}$. Kysyttiin AU:ina, joten laske vielä, montako AU:ta ($1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$) matkaan mahtuu."
         },
         {
           "value": 3236,
           "feedback": "Käytit AU:n pituutena $1{,}496\\cdot10^{5}\\,\\text{km}$. AU on $1{,}496\\cdot10^{8}\\,\\text{km}$, tuhat kertaa pidempi, joten lukuarvo on tuhannesosa siitä."
         }
       ],
-      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** matka vuodessa $s$ yksikössä AU/a\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$ ja $s_\\text{AU} = \\dfrac{vt}{1\\,\\text{AU}}$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Matka muunnetaan AU:ksi jakamalla luvulla $1{,}496\\cdot10^{8}\\,\\text{km/AU}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km} = \\dfrac{4{,}842\\cdot10^{8}\\,\\text{km}}{1{,}496\\cdot10^{8}\\,\\text{km/AU}} = 3{,}236\\,\\text{AU}$\n\n**Vastaus:** $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
+      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** matka vuodessa $s$ yksikössä AU/a\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Lopuksi lasketaan, montako AU:ta matkaan mahtuu: $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km} = 3{,}236$, joten $s = 3{,}236\\,\\text{AU}$\n\n**Vastaus:** $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
     },
     {
       "id": "harjoitukset",
@@ -399,14 +399,14 @@
       "mistakes": [
         {
           "value": 193,
-          "feedback": "Tuo luku on aika sekunteina, noin $193\\,\\text{s}$. Kysyttiin minuutteja, joten jaa vielä luvulla $60\\,\\text{s/min}$."
+          "feedback": "Tuo luku on aika sekunteina, noin $193\\,\\text{s}$. Kysyttiin minuutteja. Minuutissa on $60\\,\\text{s}$, joten laske vielä, montako minuuttia $193\\,\\text{s}$ on."
         },
         {
           "value": 0.0536,
-          "feedback": "Muunsit sekunnit tunneiksi ($193\\,\\text{s}/3600$), vaikka kysyttiin minuutteja. Yksi minuutti on $60\\,\\text{s}$."
+          "feedback": "Muunsit sekunnit tunneiksi ($193\\,\\text{s} : 3600$), vaikka kysyttiin minuutteja. Yksi minuutti on $60\\,\\text{s}$."
         }
       ],
-      "solution": "**Annettu:** etäisyys $a = 0{,}387\\,\\text{AU}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$, $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$\n\n**Kysytty:** valon kulkuaika $t$ minuutteina\n\n**Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan $t = s/c$. Matka on ensin muunnettava AU:sta kilometreiksi, jotta se sopii nopeuden yksikköön.\n\n**Kaava:** $s = a\\cdot1\\,\\text{AU}$ ja $t = \\dfrac{s}{c}$, josta $t = \\dfrac{a\\cdot1\\,\\text{AU}}{c}$\n\n**Muunnokset:** $s = 0{,}387\\cdot1{,}496\\cdot10^{8}\\,\\text{km} = 5{,}790\\cdot10^{7}\\,\\text{km}$. Lopuksi sekunnit minuuteiksi: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{5{,}790\\cdot10^{7}\\,\\text{km}}{2{,}998\\cdot10^{5}\\,\\text{km/s}} = 193{,}1\\,\\text{s} = \\dfrac{193{,}1\\,\\text{s}}{60\\,\\text{s/min}} = 3{,}219\\,\\text{min}$\n\n**Vastaus:** $3{,}22\\,\\text{min}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}387\\,\\text{AU}$.\n\n**Järkevyys:** Yhden AU:n valo kulkee noin $8{,}3\\,\\text{min}$, ja Merkurius on noin 0,4 AU:n päässä, joten aika on noin $0{,}4\\cdot8{,}3\\,\\text{min} = 3{,}3\\,\\text{min}$. Tulos on samaa suuruusluokkaa."
+      "solution": "**Annettu:** etäisyys $a = 0{,}387\\,\\text{AU}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$, $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$\n\n**Kysytty:** valon kulkuaika $t$ minuutteina\n\n**Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan $t = s : c$. Matka on ensin muunnettava AU:sta kilometreiksi, jotta se sopii nopeuden yksikköön.\n\n**Kaava:** $s = a\\cdot1\\,\\text{AU}$ ja $t = \\dfrac{s}{c}$, josta $t = \\dfrac{a\\cdot1\\,\\text{AU}}{c}$\n\n**Muunnokset:** $s = 0{,}387\\cdot1{,}496\\cdot10^{8}\\,\\text{km} = 5{,}790\\cdot10^{7}\\,\\text{km}$. Lopuksi sekunnit minuuteiksi: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{5{,}790\\cdot10^{7}\\,\\text{km}}{2{,}998\\cdot10^{5}\\,\\text{km/s}} = 193{,}1\\,\\text{s}$. Minuutteja on $193{,}1\\,\\text{s} : 60\\,\\text{s} = 3{,}219$, joten $t = 3{,}219\\,\\text{min}$\n\n**Vastaus:** $3{,}22\\,\\text{min}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}387\\,\\text{AU}$.\n\n**Järkevyys:** Yhden AU:n valo kulkee noin $8{,}3\\,\\text{min}$, ja Merkurius on noin 0,4 AU:n päässä, joten aika on noin $0{,}4\\cdot8{,}3\\,\\text{min} = 3{,}3\\,\\text{min}$. Tulos on samaa suuruusluokkaa."
     },
     {
       "id": "tarkistus-3",
@@ -414,12 +414,12 @@
       "type": "explain",
       "title": "3. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi tähtitieteessä etäisyyksiä ilmoitetaan astronomisina yksikköinä tai valon kulkuaikana kilometrien sijaan. Mitä tarvitaan, jotta voi siirtyä yksiköstä toiseen?",
-      "model": "Kilometreinä tähtitieteelliset etäisyydet olisivat valtavia lukuja: Neptunus on noin $4{,}5\\cdot10^{9}\\,\\text{km}$ ja Voyager 2 yli $2\\cdot10^{10}\\,\\text{km}$. Astronominen yksikkö $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ on Maan ja Auringon etäisyys, joten Neptunus on $30{,}1\\,\\text{AU}$ ja luvun suuruuden voi verrata Maahan. Valon kulkuaika kertoo, kuinka kauan viesti on matkalla: Voyager 2:lle noin 20 tuntia. Yksiköstä toiseen siirrytään muunnoskertoimella, joka on kahden yksikön suhde, esimerkiksi $1{,}496\\cdot10^{8}\\,\\text{km/AU}$; valon kulkuaikaan siirrytään jakamalla matka valon nopeudella, $t = s/c$. Suure pysyy samana, vain lukuarvo muuttuu.",
+      "model": "Kilometreinä tähtitieteelliset etäisyydet olisivat valtavia lukuja: Neptunus on noin $4{,}5\\cdot10^{9}\\,\\text{km}$ ja Voyager 2 yli $2\\cdot10^{10}\\,\\text{km}$. Astronominen yksikkö $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ on Maan ja Auringon etäisyys, joten Neptunus on $30{,}1\\,\\text{AU}$ ja luvun suuruuden voi verrata Maahan. Valon kulkuaika kertoo, kuinka kauan viesti on matkalla: Voyager 2:lle noin 20 tuntia. Yksiköstä toiseen siirrytään kirjoittamalla yksikön paikalle sen arvo, esimerkiksi $30{,}1\\,\\text{AU} = 30{,}1\\cdot1{,}496\\cdot10^{8}\\,\\text{km}$; valon kulkuaikaan siirrytään jakamalla matka valon nopeudella, $t = s : c$. Suure pysyy samana, vain lukuarvo muuttuu.",
       "criteria": [
         "Sanon, että kilometreinä luvut olisivat hyvin suuria ja hankalia.",
         "Mainitsen, että AU on Maan ja Auringon etäisyys ja antaa vertailukohdan.",
         "Sanon, että valon kulkuaika kertoo, kuinka kauan signaali on matkalla.",
-        "Kerron, että yksiköstä toiseen siirrytään muunnoskertoimella tai jakamalla matka valon nopeudella.",
+        "Kerron, että yksiköstä toiseen siirrytään kirjoittamalla yksikön paikalle sen arvo, ja valon kulkuaikaan jakamalla matka valon nopeudella.",
         "Muistan, että suure pysyy samana ja vain lukuarvo muuttuu."
       ],
       "optional": true

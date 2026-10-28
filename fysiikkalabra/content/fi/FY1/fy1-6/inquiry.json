@@ -110,7 +110,7 @@
       "text": "Simulaatiossa kaksi samankokoista palloa putoaa levosta, ja niiden nopeudet piirtyvät $(t, v)$-kuvaajaan.",
       "howto": "Paina *Pudota* tai vedä *Hetki $t$* -liukusäädintä ja katso, miten pallot putoavat ja miten kuvaaja piirtyy. Valitse *Ympäristö* (tyhjiö tai ilma) ja säädä pallojen massat. Nuolen pituus on nopeus, ja pisteet merkitsevät kokonaisia sekunteja. Katkoviiva on kaava $v = gt$.",
       "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Pallot ovat samankokoiset, ja ne lähtevät levosta. Tyhjiössä vaikuttaa vain putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Ilmassa pallon halkaisija on $0{,}20\\,\\text{m}$, ja ilma hidastaa palloa sitä enemmän, mitä nopeammin se liikkuu. Tuuli ja pallon pyöriminen jätetään huomiotta.",
-      "calc": "Tyhjiössä nopeus lasketaan kaavalla $v = gt$. Luku $v/t$ kertoo, kuinka paljon nopeus on kasvanut keskimäärin sekunnissa, kun pallo lähti levosta. Ilmassa nopeuden kasvu hidastuu nopeuden kasvaessa, ja nopeus lähestyy rajanopeutta. Kevyellä pallolla rajanopeus on pienempi kuin raskaalla, joten $v/t$ jää kevyellä pallolla pienemmäksi."
+      "calc": "Tyhjiössä nopeus lasketaan kaavalla $v = gt$. Luku $v : t$ kertoo, kuinka paljon nopeus on kasvanut keskimäärin sekunnissa, kun pallo lähti levosta. Ilmassa nopeuden kasvu hidastuu nopeuden kasvaessa, ja nopeus lähestyy rajanopeutta. Kevyellä pallolla rajanopeus on pienempi kuin raskaalla, joten $v : t$ jää kevyellä pallolla pienemmäksi."
     },
     {
       "id": "exp-1",
@@ -483,8 +483,8 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä yksikkö nopeudella pitää olla, jotta sitä voi käyttää yhdessä luvun $g$ kanssa?",
-        "Muunna ensin $\\text{km/h}$ yksikköön $\\text{m/s}$ jakamalla luvulla $3{,}6$. Ratkaise sitten kaavasta $v = gt$ aika.",
-        "$t = \\dfrac{v}{g}$, missä $v = \\dfrac{108}{3{,}6}\\,\\text{m/s}$."
+        "Muunna ensin $\\text{km/h}$ yksikköön $\\text{m/s}$ sijoittamalla $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$. Ratkaise sitten kaavasta $v = gt$ aika.",
+        "$t = \\dfrac{v}{g}$, missä $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}}$."
       ],
       "mistakes": [
         {
@@ -500,7 +500,7 @@
           "feedback": "Jaoit luvun $g$ nopeudella. Ratkaisussa $v = gt$ aika on $t = \\dfrac{v}{g}$."
         }
       ],
-      "solution": "**Annettu:** pallo lähtee levosta, loppunopeus $v = 108\\,\\text{km/h}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** aika $t$ yksikössä $\\text{s}$\n\n**Periaate:** Pallo on tyhjiössä vapaassa pudotuksessa ja lähtee levosta, joten nopeus on suoraan verrannollinen aikaan: $v = gt$. Kun nopeus tunnetaan, aika saadaan ratkaisemalla kaavasta $t$.\n\n**Kaava:** $v = g\\,t$, josta $t = \\dfrac{v}{g}$\n\n**Muunnokset:** Nopeus muunnetaan yksikköön $\\text{m/s}$, koska $g$ on yksikössä $\\text{m/s}^2$: $v = 108\\,\\text{km/h} = \\dfrac{108}{3{,}6}\\,\\text{m/s} = 30{,}0\\,\\text{m/s}$.\n\n**Sijoitus:** $t = \\dfrac{30{,}0\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 3{,}058\\,\\text{s}$\n\n**Vastaus:** $3{,}06\\,\\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $108\\,\\text{km/h}$.\n\n**Järkevyys:** Nopeus kasvaa noin $10\\,\\text{m/s}$ sekunnissa, joten nopeuteen $30\\,\\text{m/s}$ pääsemiseen menee noin $3\\,\\text{s}$, mikä vastaa tulosta. Takaisinlasku: $9{,}81\\,\\text{m/s}^2 \\cdot 3{,}06\\,\\text{s} = 30{,}0\\,\\text{m/s}$, ja yksiköt $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$ täsmäävät."
+      "solution": "**Annettu:** pallo lähtee levosta, loppunopeus $v = 108\\,\\text{km/h}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** aika $t$ yksikössä $\\text{s}$\n\n**Periaate:** Pallo on tyhjiössä vapaassa pudotuksessa ja lähtee levosta, joten nopeus on suoraan verrannollinen aikaan: $v = gt$. Kun nopeus tunnetaan, aika saadaan ratkaisemalla kaavasta $t$.\n\n**Kaava:** $v = g\\,t$, josta $t = \\dfrac{v}{g}$\n\n**Muunnokset:** Nopeus muunnetaan yksikköön $\\text{m/s}$, koska $g$ on yksikössä $\\text{m/s}^2$: sijoitetaan $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 30{,}0\\,\\text{m/s}$.\n\n**Sijoitus:** $t = \\dfrac{30{,}0\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 3{,}058\\,\\text{s}$\n\n**Vastaus:** $3{,}06\\,\\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $108\\,\\text{km/h}$.\n\n**Järkevyys:** Nopeus kasvaa noin $10\\,\\text{m/s}$ sekunnissa, joten nopeuteen $30\\,\\text{m/s}$ pääsemiseen menee noin $3\\,\\text{s}$, mikä vastaa tulosta. Takaisinlasku: $9{,}81\\,\\text{m/s}^2 \\cdot 3{,}06\\,\\text{s} = 30{,}0\\,\\text{m/s}$, ja yksiköt $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$ täsmäävät."
     },
     {
       "id": "check-3",

@@ -156,7 +156,7 @@ v = g\,t
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee yksikössä $\text{m/s}$ ilman muunnosta. Kilometreiksi tunnissa muunnetaan kertomalla luvulla $3{,}6$, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Yksikkömuunnokset.** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee yksikössä $\text{m/s}$ ilman muunnosta. Kilometreiksi tunnissa muunnetaan miettimällä, mitä $1\,\text{m/s}$ tarkoittaa: tunnissa ($3600\,\text{s}$) kertyy $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$. Tämä sijoitetaan yksikön paikalle.
 
 <!-- vaihe -->
 
@@ -167,8 +167,8 @@ v &= g\,t \\
 &= 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s} \\
 &= 14{,}715\,\text{m/s}
 \\[4pt]
-v_\text{km/h} &= 3{,}6 \cdot v \\
-&= 3{,}6 \cdot 14{,}715 \\
+v &= 14{,}715 \cdot 1\,\text{m/s} \\
+&= 14{,}715 \cdot 3{,}6\,\text{km/h} \\
 &= 52{,}97\,\text{km/h}
 \end{aligned}
 ```
@@ -189,4 +189,4 @@ Raskas kappale ei putoa nopeammin kuin kevyt: kun ilmanvastusta ei ole, kaikilla
 - Putoamiskiihtyvyys on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, ja se on sama kaikille kappaleille massasta riippumatta.
 - Levosta lähteneen kappaleen nopeus on $v = g\,t$, ja $(t, v)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $g$.
 - Ilmassa kevyt ja leveä kappale hidastuu eniten, joten $v = g\,t$ ei päde ilman ilmanvastuksen huomiotta jättämistä.
-- Muunnos: $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+- Muunnos: tunnissa $3600\,\text{m} = 3{,}6\,\text{km}$, joten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.

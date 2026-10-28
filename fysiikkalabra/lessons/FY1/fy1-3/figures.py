@@ -46,7 +46,7 @@ def error_types():
         f.tex(X(m) + 9, ya - 100, r"\text{keskiarvo}", "start")
         if sys_:
             f.arrow(X(2.4) + 2, ya - 66, X(m) - 2, ya - 66, HOT, 3.5, 14)
-            f.tex((X(2.4) + X(m)) / 2, ya - 84, r"\delta_\text{sys}", "middle", HOT)
+            f.tex((X(2.4) + X(m)) / 2, ya - 84, r"\Delta t_\text{sys}", "middle", HOT)
     f.line(24, 206, 576, 206, MUTED, 1.5, "8 6")
     return f.svg()
 

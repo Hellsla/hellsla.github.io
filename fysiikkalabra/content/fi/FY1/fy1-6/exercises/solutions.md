@@ -64,7 +64,7 @@
 **Kysytty:** putoamisaika $t$ yksikössä $\text{s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten kivi on vapaassa pudotuksessa ja levosta lähtevän kappaleen nopeus on $v = g\,t$. Aika saadaan ratkaisemalla kaava ajalle, kun nopeus on muunnettu SI-yksiköihin.
 **Kaava:** $v = g\,t$, joten $t = \dfrac{v}{g}$
-**Muunnokset:** $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $54{,}0\,\text{km/h} = \dfrac{54{,}0}{3{,}6}\,\text{m/s} = 15{,}0\,\text{m/s}$.
+**Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $54{,}0\,\text{km/h} = \dfrac{54{,}0\cdot1000\,\text{m}}{3600\,\text{s}} = 15{,}0\,\text{m/s}$.
 **Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}529\,\text{s}$
 **Vastaus:** $1{,}53\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $54{,}0\,\text{km/h}$.
 **Järkevyys:** Nopeus $15\,\text{m/s}$ kasvaa noin $10\,\text{m/s}$ sekunnissa, joten siihen kuluu noin puolitoista sekuntia, mikä vastaa tulosta. Tämä vastaa putoamista noin neljännen kerroksen korkeudelta, joten tilanne on uskottava.

@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f133eaa3b524415d
-
-> Carried over from the lesson's review (content/fi/FY1/fy1-7/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: 4336e3fb3c6c8370
 
 ## Blocking
 
 ## Polish
+- content/fi/FY1/fy1-7/exercises/exercises.json:48 — L2-01 now mixes a LaTeX product of the dimensions with a plain-text density "19 300 kg/m³" in the same sentence — write both the same way (e.g. density also in LaTeX).
 
 ## Checked
-- Diff since PASS: lesson.md:216 typo fix and solutions.md L3-01 Vastaus.
-- lesson.md: "erotuksessa voi olla vähemmän merkitseviä numeroita" — statement unchanged in substance, correct.
-- L3-01: $8960/2700 = 3{,}319$ → 3,32; three figures now cited from $8960$ and $2{,}70\cdot10^{3}\,\text{kg/m}^3$, consistent with Annettu.
-- No change to answers, exercises, inquiry or figures; earlier checks stand.
-- Hash identical at start and end.
+- All 12 answers recomputed (ρ = m/V, m = ρV, V = m/ρ, displacement V2 − V1, container mass subtracted, equal-mass ratio, mixture mean density, wire L = m/(ρπr²)) and equal to answers.py; tolerances fit the rounded answers (L2-01 1,93 → 1,9: 1,6 %; L2-02 1,975 → 2,0: 1,3 %).
+- Densities match the lesson's table; magnitudes realistic (lead, steel ≈ 7860, ice 920, ethanol 788).
+- Significant figures justified by the limiting datum, incl. the 4,2 ml difference in L2-03.
+- Teacher's rules 2026-10-28: L2-01's former "×" is now "\cdot" with the meaning (product of three dimensions) unchanged; no × elsewhere; divisions as operations use ':' (L1-05, L2-03, L3-01 ratio V_Al : V_Cu and 8960 : 2700); colon replacements in a196d94 keep operands and meaning.
+- Notation ρ, m, V, a, L as in the lesson; every solution complete and symbolic first; inside FY1 scope.

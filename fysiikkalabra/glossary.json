@@ -85,7 +85,7 @@
   },
   {
     "term": "mittausvirhe",
-    "definition": "Mittaustuloksen ja suureen oikean arvon erotus: virhe = tulos − oikea arvo. Virhe kuuluu jokaiseen mittaukseen, eikä se ole sama asia kuin moka. Virhettä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida.",
+    "definition": "Mittaustuloksen ja suureen oikean arvon erotus eli tulos miinus oikea arvo. Pieni virhe kuuluu jokaiseen mittaukseen. Sitä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida. Erehdyksestä syntyvä karkea virhe sen sijaan poistetaan.",
     "lessons": [
       "fy1-3"
     ],
@@ -93,6 +93,19 @@
       "systemaattinen virhe",
       "satunnaisvirhe",
       "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "karkea virhe",
+    "definition": "Yksittäinen selvä erehdys mittauksessa, esimerkiksi väärin luettu tai kirjattu lukema tai väärä yksikkö. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei keskiarvoisteta, vaan tulos tarkistetaan, jätetään pois ja mitataan uudelleen.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "systemaattinen virhe",
+      "mittausvirhe"
     ],
     "locked": false
   },

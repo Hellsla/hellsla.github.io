@@ -51,7 +51,7 @@ Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuva
 
 ### Massa on suoraan verrannollinen tilavuuteen
 
-Kun mitataan saman aineen eri kokoisia paloja, havaitaan säännönmukaisuus: kaksinkertainen tilavuus antaa kaksinkertaisen massan, ja puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen, eli suhde $m/V$ pysyy samana. Tuo vakio suhde on aineen tiheys.
+Kun mitataan saman aineen eri kokoisia paloja, havaitaan säännönmukaisuus: kaksinkertainen tilavuus antaa kaksinkertaisen massan, ja puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen, eli suhde $m : V$ pysyy samana. Tuo vakio suhde on aineen tiheys.
 
 Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tilavuus ja pystyakselilla massa, pisteet asettuvat suoralle, joka kulkee origon kautta (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
 
@@ -136,7 +136,7 @@ missä $\rho$ on tiheys (SI-yksikkö $\text{kg/m}^3$), $m$ massa (kg) ja $V$ til
   <foreignObject x="115.5" y="104" width="110" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\rho = \dfrac{\Delta m}{\Delta V}$</div></foreignObject>
 </svg>
 
-Kuvassa jokaisen aineen pisteet ovat omalla suoralla. Mitä jyrkempi suora on, sitä suurempi on tiheys. Tiheyden saa kuvaajasta lukemalla kaksi kaukana toisistaan olevaa pistettä suoralta ja laskemalla $\rho = \Delta m / \Delta V$. Näin laskettu tulos on tarkempi kuin yhden pisteen suhde $m/V$, koska se käyttää koko suoraa.
+Kuvassa jokaisen aineen pisteet ovat omalla suoralla. Mitä jyrkempi suora on, sitä suurempi on tiheys. Tiheyden saa kuvaajasta lukemalla kaksi kaukana toisistaan olevaa pistettä suoralta ja laskemalla $\rho = \Delta m : \Delta V$. Näin laskettu tulos on tarkempi kuin yhden pisteen suhde $m : V$, koska se käyttää koko suoraa.
 
 ### Yksiköt
 
@@ -269,7 +269,7 @@ m &= \rho a^2 L \\
 
 ## Yleinen virhekäsitys
 
-Moni ajattelee, että suurempi kappale on tiheämpi, koska se on raskaampi. Isompi rautapala on kyllä raskaampi kuin pieni, mutta niiden tiheys on sama: massa ja tilavuus kasvavat yhdessä niin, että suhde $m/V$ ei muutu. Tiheys on aineen ominaisuus, ei kappaleen koon.
+Moni ajattelee, että suurempi kappale on tiheämpi, koska se on raskaampi. Isompi rautapala on kyllä raskaampi kuin pieni, mutta niiden tiheys on sama: massa ja tilavuus kasvavat yhdessä niin, että suhde $m : V$ ei muutu. Tiheys on aineen ominaisuus, ei kappaleen koon.
 
 Toinen virhe on sekoittaa yksiköt. Jos massa on grammoina ja tilavuus kuutiometreinä, tulos on tuhat kertaa liian suuri tai pieni. Muunna ensin kaikki yhteen yksikköjärjestelmään: joko $\text{kg}$ ja $\text{m}^3$ tai $\text{g}$ ja $\text{cm}^3$.
 
@@ -277,7 +277,7 @@ Kolmas virhe on ajatella, että tyhjän astian massa kuuluu nesteeseen. Se täyt
 
 ## Tiivistelmä
 
-- Tiheys on massa tilavuutta kohti: $\rho = m/V$, SI-yksikkö $\text{kg/m}^3$. Vesi 1000 $\text{kg/m}^3$, alumiini 2700 $\text{kg/m}^3$, rauta 7870 $\text{kg/m}^3$.
+- Tiheys on massa tilavuutta kohti: $\rho = m : V$, SI-yksikkö $\text{kg/m}^3$. Vesi 1000 $\text{kg/m}^3$, alumiini 2700 $\text{kg/m}^3$, rauta 7870 $\text{kg/m}^3$.
 - Saman aineen massa on suoraan verrannollinen tilavuuteen: $m = \rho V$. Kuvaajassa $m(V)$ on origon kautta kulkeva suora, jonka kulmakerroin on tiheys.
-- Kaavasta ratkaistaan tarvittava suure: $\rho = m/V$, $m = \rho V$ tai $V = m/\rho$. Pidä yksiköt samassa järjestelmässä: $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
+- Kaavasta ratkaistaan tarvittava suure: $\rho = m : V$, $m = \rho V$ tai $V = m : \rho$. Pidä yksiköt samassa järjestelmässä: $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
 - Epäsäännöllisen kappaleen tilavuus mitataan vedensiirtymällä $V = V_2 - V_1$. Astian massa on vähennettävä tai se näkyy suoran vakiotermi $m_0$.
