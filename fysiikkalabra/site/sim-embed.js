@@ -47,6 +47,8 @@
   };
 
   const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
+  let fontGen = 0;                             // bumped when a web font (KaTeX's) finishes loading: label sizes measured before it are stale
+  try { document.fonts.addEventListener('loadingdone', () => { fontGen++; }); document.fonts.ready.then(() => { fontGen++; }); } catch (e) { /* no FontFaceSet */ }
   const mixed = (el, str) => {                 // "Massa $m = 10$ kg": text nodes and KaTeX spans
     el.textContent = '';
     str.split(/(\$[^$]+\$)/).forEach((part) => {
@@ -108,21 +110,26 @@
           used++;
           if (el.__s !== str) { mixed(el, str); el.__s = str; }
           const st = el.style;
-          st.display = '';
-          st.left = ((m.a * x + m.c * y + m.e) / pd * k).toFixed(1) + 'px';
-          st.top = ((m.b * x + m.d * y + m.f) / pd * k).toFixed(1) + 'px';
-          st.fontSize = (p.textSize() * Math.hypot(m.a, m.b) / pd * k).toFixed(2) + 'px';
+          const lx = (m.a * x + m.c * y + m.e) / pd * k, ly = (m.b * x + m.d * y + m.f) / pd * k;
+          st.display = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
+          const sz = p.textSize() * Math.hypot(m.a, m.b) / pd;   // in canvas pixels
+          const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
+          st.fontSize = fs;
           st.color = ctx.fillStyle;
-          const tx = { left: '0', center: '-50%', right: '-100%' }[al.horizontal] || '0';
-          const ty = { top: '0', center: '-50%', bottom: '-100%' }[al.vertical] || '-78%';   // alphabetic: baseline near 78 % of the line
-          st.transform = `translate(${tx},${ty})`;
+          if (el.__fs !== fs || el.__ms !== str || el.__fg !== fontGen || !el.__w) { const r = el.getBoundingClientRect(); el.__w = r.width; el.__h = r.height; el.__fs = fs; el.__ms = str; el.__fg = fontGen; }   // measured only when the label or its size changes
+          const fx = { left: 0, center: -0.5, right: -1 }[al.horizontal] || 0;
+          const fy = { top: 0, center: -0.5, bottom: -1 }[al.vertical] ?? -0.78;   // alphabetic: baseline near 78 % of the line
+          const cw = p.canvas.clientWidth || p.width * k, ch = p.canvas.clientHeight || p.height * k;
+          // the larger phone labels are kept inside the canvas
+          st.left = Math.max(0, Math.min(lx + fx * el.__w, cw - el.__w)).toFixed(1) + 'px';
+          st.top = Math.max(0, Math.min(ly + fy * el.__h, ch - el.__h)).toFixed(1) + 'px';
           return p;
         };
         const textWidth = p.textWidth, widths = new Map();
         let meter = null;
         p.textWidth = function (str) {           // the width of a $…$ label as KaTeX draws it, in sketch units
           if (typeof str !== 'string' || !str.includes('$') || !window.katex) return textWidth.call(p, str);
-          const key = p.textSize() + '|' + str;
+          const key = fontGen + '|' + p.textSize() + '|' + str;
           if (!widths.has(key)) {
             if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
             meter.style.fontSize = p.textSize() + 'px'; mixed(meter, str);

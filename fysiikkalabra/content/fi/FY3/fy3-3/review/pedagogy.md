@@ -1,14 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: b5693f207e2ab3f8
 
-Round 3: delta review of one feedback sentence in the check on doubling 10 to 20 °C: 'ei tilaksi, jossa liike loppuu' became 'ei absoluuttiseksi nollapisteeksi', and 'Liike-energia' became 'Hiukkasten keskimääräinen liike-energia'.
-
 ## Blocking
 - none
+
 ## Polish
-- check-c2 (10 to 20 °C: kinetic energy up 3,5 %) uses the exact example of check-3's model answer and overlaps check-1's °C/K point; three checks on one idea. A sharper c2 would test something else (e.g. pressure at constant V proportional to T in kelvin).
-- check-c2 has only 3 options (others 4).
+- Pressure readout "p ≈ 0 (suhteellinen ...)" at start may puzzle a student before collisions are counted; one clause saying the value settles after a moment would help.
+- Thermometer labels (100 K, 600 K) sit at the 10 px floor.
+
 ## Checked
-- New wording is clear Finnish for a lukio student: 'absoluuttinen nollapiste' is the term the unit uses; the contrast with the freezing point of water still repairs the 'lukuarvo kaksinkertaistuu' misconception.
-- 'Keskimääräinen' makes the physics more exact (temperature relates to the mean kinetic energy); 283 K to 293 K unchanged and right (1,035).
-- Round-2 items otherwise unchanged: exit q2 removed, stage text 'yksi nopea kysymys' matches.
+batch delta review: the packet's diff is empty (0 changed wording lines, hash equal to the passed version). Judged the simulation LaTeX pass from the 390 px simulation capture: canvas labels and readouts are KaTeX in one typeface, legible at 390 px, the lead is short, Käyttöohje / Mallin oletukset / Laskennan selitys boxes are closed and hold the rest, controls are not hidden, colour carries meaning and is backed by labels. Law name, Finnish and figure captures unchanged since the earlier PASS.

@@ -1,14 +1,11 @@
 VERDICT: PASS
 CONTENT-HASH: bfec5c76baad670d
 
-Round 2: the round-1 Blocking item (exit q2 repeated check-3) is fixed. Delta review of the diff: exit q2 removed, stage text 'Lopuksi yksi nopea kysymys'.
-
 ## Blocking
 - none
+
 ## Polish
-- The one exit question (area under a horizontal $40\,\text{N}$ line = work, 20 J) repeats what check-1, check-2 and exercise L1-04 (area under (s,F)) already ask; a lighter overlap, consider replacing with the sign or direction of the force.
-- check-c2 correct feedback ends with the whole calculation (98 J given to the student); fine.
+- Axis ticks (0 m ... 20 m) are small at 390 px; acceptable at the 10 px floor.
+
 ## Checked
-- Round-1 Blocking: the lift question (same work, double power) is gone; check-3 still asks it.
-- 40 * 0,50 = 20 J computed. Stage text 'yksi' matches one question.
-- check-c2 and titles 1-4 as in round 1.
+batch delta review: the packet's diff is empty (0 changed wording lines, hash equal to the passed version). Judged the simulation LaTeX pass from the 390 px simulation capture: canvas labels and readouts are KaTeX in one typeface, legible at 390 px, the lead is short, Käyttöohje / Mallin oletukset / Laskennan selitys boxes are closed and hold the rest, controls are not hidden, colour carries meaning and is backed by labels. Law name, Finnish and figure captures unchanged since the earlier PASS.

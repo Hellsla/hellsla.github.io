@@ -1,12 +1,9 @@
 VERDICT: PASS
 CONTENT-HASH: 3158253ae0b056ab
 
-Round 2: exit ticket 2 → 1 (the Moon mass/weight question removed), stage text "Lopuksi yksi".
-
 ## Blocking
-- none
+
 ## Polish
-- lesson.md:214 "1 N = $1\,\text{kg}\cdot\text{m/s}^2$" puts only one side in maths; write the whole identity in one $...$ (cosmetic).
+
 ## Checked
-- Remaining exit question: 20 N / 8,0 N = 2,5, 2,5 · 3,0 cm = 7,5 cm (recomputed); Hooke proportionality within the spring's range, as in the lesson.
-- Count 1 matches "Lopuksi yksi"; mass vs weight stays covered by check-c2.
+batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash 3158253ae0b056ab; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.
