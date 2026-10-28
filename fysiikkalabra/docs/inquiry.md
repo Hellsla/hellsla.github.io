@@ -47,7 +47,7 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 |---|---|---|
 | `hook` | `text`, optional `question` | the phenomenon, in the lesson's voice, and the question it raises |
 | `text` | `text` | a paragraph wherever one is needed |
-| `choice` | `prompt`, `choices: [{text, correct?, feedback}]`, optional `justify`, `reveal`, `layout`, `solution` | radio buttons; feedback for the chosen option after *Vastaa*. With `reveal: {"after": "<experiment id>", "min": n}` the choice is a **prediction**: it locks on commit and its feedback stays hidden until that experiment has recorded `min` measurements. `justify: true` adds an optional written reason. `layout: "models"` presents the options as competing explanations. |
+| `choice` | `prompt`, `choices: [{text, correct?, feedback}]`, optional `justify`, `reveal`, `layout`, `solution` | radio buttons; feedback for the chosen option after *Vastaa*. With `reveal: {"after": "<experiment id>", "min": n}` the choice is a **prediction**: it locks on commit and its feedback stays hidden until that experiment has recorded `min` measurements. A prediction the simulation cannot test (which explanation is right, when the sim draws only the model's result) uses `reveal: {"after": "<theory id>"}` instead: its feedback appears once that theory section has been on screen. `justify: true` adds an optional written reason. `layout: "models"` presents the options as competing explanations. |
 | `experiment` | `intro`, `initial: {param: value}`, `locked: [param]`, `vary: param`, `measure: [key or {key, label}]`, optional `units: {param: unit}`, `names: {param: label shown instead of the key}`, `min`, `question` | a guided investigation on the page's simulation: *Aseta alkutila* sets `initial` and locks `locked`, the student changes `vary`, *Kirjaa mittaus* records `vary` and every `measure` key of `simState` into a table, *Nollaa* resets. A linked prediction is revealed at `min` rows (default 2); the optional `question` (a `choice`, `numeric` or `explain`) appears at the same point. |
 | `interpret` | `text`, optional `question` | a supplied representation (markdown table, inline SVG, measurements) and a question on it |
 | `numeric` | `prompt`, `answer`, `unit`, `tolerance` (relative, default 0.02), optional `mistakes: [{value, feedback}]`, `hints`, `solution` | the same browser-side check as the exercises (decimal comma or point, empty and non-numeric input asked again, two tries before pointing at the solution) plus feedback for listed common mistakes |
@@ -59,7 +59,7 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `exit` | optional `text` | the exit ticket (at most one) |
 
 Rules the validator enforces: `version` is 1; `contribution` is non-empty; ids are unique; every choice has
-feedback and exactly the correct options marked; `reveal.after` names an experiment; `locked` does not contain
+feedback and exactly the correct options marked; `reveal.after` names an experiment or a theory section; `locked` does not contain
 `vary`; `theory` sections exist in `lesson.md` and appear once; `reflect.predictions` are activity ids; hints
 are at most three. What it cannot check, the reviewers do (below).
 

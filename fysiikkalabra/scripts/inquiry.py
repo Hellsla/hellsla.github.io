@@ -65,7 +65,7 @@ def _check_choice(a, path, errs):
             if m: errs.append(f"{path}.{where}: \"{m.group(0)}\" points at an option by its letter or place, but options are shown shuffled; name the option by its content")
     r = a.get("reveal")
     if r is not None:
-        if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment id>\", \"min\": n}}")
+        if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment or theory id>\", \"min\": n}}")
         elif "min" in r and (not isinstance(r["min"], int) or r["min"] < 1): errs.append(f"{path}.reveal.min: a positive integer")
     if "justify" in a and not isinstance(a["justify"], bool): errs.append(f"{path}.justify: true or false")
     if a.get("layout") not in (None, "list", "models"): errs.append(f"{path}.layout: \"list\" or \"models\"")
@@ -154,7 +154,8 @@ def validate(folder, inquiry, lesson_md):
     for i, a in enumerate(acts):                      # references
         if not isinstance(a, dict): continue
         r = a.get("reveal") if a.get("type") == "choice" else None
-        if isinstance(r, dict) and isinstance(r.get("after"), str) and r["after"] not in exp_ids: E(f"activities[{i}].reveal.after: \"{r['after']}\" is not an experiment id")
+        theory_ids = {b.get("id") for b in acts if isinstance(b, dict) and b.get("type") == "theory"}
+        if isinstance(r, dict) and isinstance(r.get("after"), str) and r["after"] not in exp_ids | theory_ids: E(f"activities[{i}].reveal.after: \"{r['after']}\" is not an experiment or theory id")
         if a.get("type") == "reflect":
             for pid in a.get("predictions", []):
                 if pid not in ids: E(f"activities[{i}].predictions: \"{pid}\" is not an activity id")
