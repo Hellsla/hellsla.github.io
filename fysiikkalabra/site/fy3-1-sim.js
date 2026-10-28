@@ -59,11 +59,11 @@ new p5((p) => {
     const [body, g] = BODIES[idx];
     const G = m * g;                                           // weight in newtons
     const stretch = SPRING.maxLen * G / G_FULL;                // spring stretch (px), proportional to the weight G
-    lM.html(`Massa m = ${m} kg`);
+    lM.html(`Massa $m = ${m}\\,\\text{kg}$`);
     const chartFull = m * G_MAX;                                // bar chart full scale: this mass on Jupiter
-    readout.html(`<strong>Massa m = ${m} kg</strong> (sama kaikkialla)<br>g = ${fi(g, 2)} m/s² (${body})` +
-                 `<br><strong>G = m · g = ${fi(G, 1)} N</strong>` +
-                 `<br>Palkkikaavion asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N on tämän massan paino Jupiterissa.`);
+    readout.html(`<strong>Massa $m = ${m}\\,\\text{kg}$</strong> (sama kaikkialla)<br>$g = ${tx(g, 2)}\\,\\text{m/s}^2$ (${body})` +
+                 `<br><strong>$G = mg = ${tx(G, 1)}\\,\\text{N}$</strong>` +
+                 `<br>Palkkikaavion asteikko $0\\text{–}${tx(chartFull, chartFull < 100 ? 1 : 0)}\\,\\text{N}$ on tämän massan paino Jupiterissa.`);
     const arrow = ARROW_FULL * G / G_FULL;                     // weight arrow length (px), purely proportional to G
     const bars = BODIES.map(([, gg]) => (m * gg / chartFull) * (BARS.h - 30));   // bar heights (px), proportional to the weight at this mass
     window.simState = { m, body, g, G, stretch, arrow, bars, chartFull };
@@ -88,14 +88,14 @@ new p5((p) => {
 
     // steel weight: the mass, the same on every body (grey), size grows a little with m
     p.textSize(ts(11)); p.textStyle(p.BOLD);
-    const bs = Math.max(36 + 40 * Math.sqrt(m / 100), p.textWidth(`${m} kg`) + 16), bh = bs * 0.8, e = bs * 0.12;
+    const bs = Math.max(36 + 40 * Math.sqrt(m / 100), p.textWidth(`$${m}\\,\\text{kg}$`) + 16), bh = bs * 0.8, e = bs * 0.12;
     const by = yS + 8, bx = SPRING.x - bs / 2;
     p.stroke(70); p.strokeWeight(2); p.noFill(); p.line(SPRING.x, yS, SPRING.x, by - 2); p.arc(SPRING.x, by - 2, 8, 8, p.PI, 0);   // hook
     p.noStroke(); p.fill(0); grad(bx, 0, bx + bs, 0, [[0, '#5d636b'], [0.35, '#e4e7eb'], [0.6, '#b9bec5'], [1, '#4d525a']]);
     p.rect(bx, by + e / 2, bs, bh - e / 2, 0, 0, 4, 4);
     p.fill(0); grad(bx, by, bx + bs, by, [[0, '#9aa0a8'], [0.4, '#f4f6f8'], [1, '#8a9098']]); p.ellipse(SPRING.x, by + e / 2, bs, e);
     p.stroke(60); p.strokeWeight(1.5); p.noFill(); p.rect(bx, by + e / 2, bs, bh - e / 2, 0, 0, 4, 4); p.ellipse(SPRING.x, by + e / 2, bs, e);
-    p.noStroke(); p.fill(25); p.textAlign(p.CENTER, p.CENTER); p.text(`${m} kg`, SPRING.x, by + e / 2 + (bh - e / 2) / 2);
+    p.noStroke(); p.fill(25); p.textAlign(p.CENTER, p.CENTER); p.text(`$${m}\\,\\text{kg}$`, SPRING.x, by + e / 2 + (bh - e / 2) / 2);
     p.textStyle(p.NORMAL);
 
     // weight arrow: length proportional to G (3 px floor only for the smallest weights), red like every weight in the picture
@@ -104,7 +104,7 @@ new p5((p) => {
     p.fill(...RED); p.noStroke(); p.rect(ax - 2.5, a0, 5, aLen - hl);
     p.triangle(ax, a0 + aLen, ax - hw, a0 + aLen - hl, ax + hw, a0 + aLen - hl);
     p.drawingContext.shadowBlur = 0;
-    p.textAlign(p.LEFT, p.CENTER); p.textSize(ts(12)); p.textStyle(p.BOLD); p.text('G', ax + 7, a0 + aLen / 2); p.textStyle(p.NORMAL);
+    p.textAlign(p.LEFT, p.CENTER); p.textSize(ts(12)); p.textStyle(p.BOLD); p.text('$G$', ax + 7, a0 + aLen / 2); p.textStyle(p.NORMAL);
 
     drawChart(idx, m, bars, chartFull);
     drawLegend(idx);
@@ -138,9 +138,9 @@ new p5((p) => {
     for (let F = 0; F <= 2500; F += 100) {
       const y = y0 + SPRING.maxLen * F / G_FULL, major = F % 500 === 0;
       p.stroke(60); p.strokeWeight(major ? 1.5 : 1); p.line(x1 - (major ? 10 : 5), y, x1, y);
-      if (major) { p.noStroke(); p.fill(40); p.text(String(F), x1 - 12, y); }
+      if (major) { p.noStroke(); p.fill(40); p.text(`$${F}$`, x1 - 12, y); }
     }
-    p.noStroke(); p.fill(40); p.text('N', x1 - 12, y0 - 1.5 * ts(10));
+    p.noStroke(); p.fill(40); p.text('$\\text{N}$', x1 - 12, y0 - 1.5 * ts(10));
     p.stroke(...RED); p.strokeWeight(2); p.line(x1 + 6, yS, SPRING.x - 14, yS);   // pointer at the spring end reads the weight
     p.noStroke(); p.fill(...RED); p.triangle(x1 + 1, yS, x1 + 9, yS - 5, x1 + 9, yS + 5);
   }
@@ -164,10 +164,10 @@ new p5((p) => {
     for (let v = step; v < 0.8 * chartFull; v += step) {
       const y = base - H * v / chartFull;
       p.stroke(0, 0, 0, 30); p.strokeWeight(1); p.line(BARS.x, y, BARS.x + BARS.w, y);
-      p.noStroke(); p.fill(70); p.text(fi(v, 0), BARS.x - 6, y);
+      p.noStroke(); p.fill(70); p.text(`$${fi(v, 0)}$`, BARS.x - 6, y);
     }
     p.stroke(0, 0, 0, 45); p.line(BARS.x, top, BARS.x + BARS.w, top);                 // full-scale gridline
-    p.noStroke(); p.fill(40); p.textStyle(p.BOLD); p.text('G (N)', BARS.x - 6, top + ts(3)); p.textStyle(p.NORMAL);
+    p.noStroke(); p.fill(40); p.textStyle(p.BOLD); p.text('$G\\ (\\text{N})$', BARS.x - 6, top + ts(3)); p.textStyle(p.NORMAL);
     p.stroke(60); p.strokeWeight(2); p.line(BARS.x, base, BARS.x + BARS.w, base);
     p.line(BARS.x, base, BARS.x, top); p.line(BARS.x - 5, top, BARS.x + 5, top);   // y axis ends at full scale, with a tick
     const bw = BARS.w / 4 - 16;
@@ -181,17 +181,17 @@ new p5((p) => {
       if (on) { p.stroke(120, 20, 20); p.strokeWeight(2); p.noFill(); p.rect(x, base - h, bw, h, 3, 3, 0, 0); }
       planet(i, x + bw / 2, base + 13, on ? 10 : 8, on);
       p.noStroke(); p.fill(on ? 20 : 70); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(12)); p.textStyle(on ? p.BOLD : p.NORMAL);
-      p.text(name, x + bw / 2, 336 + 0.75 * ts(12));
-      const vt = `${fi(val, val < 100 ? 1 : 0)} N`;                  // value label, shrunk if it would touch the neighbour's label
+      p.text(`$\\text{${name}}$`, x + bw / 2, 336 + 0.75 * ts(12));
+      const vt = `$${tx(val, val < 100 ? 1 : 0)}\\,\\text{N}$`;                  // value label, shrunk if it would touch the neighbour's label
       if (p.textWidth(vt) > bw + 12) p.textSize(Math.max(10 * k, ts(12) * (bw + 12) / p.textWidth(vt)));   // never below 10 rendered px
       p.fill(on ? 120 : 70, on ? 20 : 70, on ? 20 : 70); p.text(vt, x + bw / 2, base - h - 6); p.textStyle(p.NORMAL);
     });
     p.noStroke(); p.fill(26, 77, 46); p.textAlign(p.CENTER, p.BASELINE); p.textSize(ts(13));   // title: shrunk to fit inside the canvas when scaled down
-    const title = 'Sama massa, paino eri paikoissa', titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
+    const title = '$\\text{Sama massa, paino eri paikoissa}$', titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
     p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
     p.fill(60); p.textSize(ts(11));                               // scale line: short, the explanation is in the readout
-    p.textAlign(p.LEFT); p.text(`asteikko 0–${fi(chartFull, chartFull < 100 ? 1 : 0)} N`, BARS.x + 9, top - ts(4));
+    p.textAlign(p.LEFT); p.text(`$\\text{asteikko } 0\\text{–}${tx(chartFull, chartFull < 100 ? 1 : 0)}\\,\\text{N}$`, BARS.x + 9, top - ts(4));
   }
 
   function planet(i, x, y, r, on) {                            // small shaded disc of the body, in its own colour
@@ -210,7 +210,7 @@ new p5((p) => {
 
   function drawLegend(idx) {                                   // colour key in a pill on the ground, bottom right
     p.textSize(ts(11)); p.textAlign(p.LEFT, p.CENTER);
-    const items = [['paino G', RED], ['massa m', [150, 156, 164]], [BODIES[idx][0], null]], y = 386, sw = 16 + 5, gap = 12;
+    const items = [['$\\text{paino } G$', RED], ['$\\text{massa } m$', [150, 156, 164]], [`$\\text{${BODIES[idx][0]}}$`, null]], y = 386, sw = 16 + 5, gap = 12;
     const w = items.reduce((s, [t]) => s + sw + p.textWidth(t), 0) + gap * (items.length - 1) + 16, h = ts(11) + 8;
     let x = 594 - w + 8;
     p.noStroke(); p.fill(255, 235); p.rect(594 - w, y - h / 2, w, h, 6);
@@ -227,4 +227,5 @@ new p5((p) => {
     stops.forEach(([o, c]) => g.addColorStop(o, c)); p.drawingContext.fillStyle = g;
   };
   const fi = (x, d) => x.toFixed(d).replace('.', ',');         // Finnish decimal comma
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');       // the same inside LaTeX
 });

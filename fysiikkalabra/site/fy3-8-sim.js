@@ -43,7 +43,7 @@ new p5((p) => {
     const ls = p.createElement('label').parent(controls);
     p.createSpan('Aine').parent(ls);
     sel = p.createSelect().parent(ls);
-    for (const [name, a] of MATERIALS) sel.option(`${name} (α = ${fa(a)} · 10⁻⁶ 1/K)`, name);
+    for (const [name, a] of MATERIALS) sel.option(name, name);
     sel.selected('teräs');
     [sL, lL] = slider(controls, 1, 100, 10, 1);                 // alkupituus L₀ (m)
     [sT, lT] = slider(controls, T_MIN, T_MAX, T_REF, 1);         // lämpötila T (°C)
@@ -74,13 +74,13 @@ new p5((p) => {
     if (running) tAnim += Math.min(p.deltaTime, 100) / 1000 * Number(sSp.value());
     const decL = dL === 0 ? 4 : Math.min(8, Math.max(4, Math.ceil(-Math.log10(Math.abs(dL))) + 1));   // show the change in L
 
-    lL.html(`Alkupituus L₀ = ${nw(`${L0} m`)}`); lT.html(`Lämpötila T = ${nw(`${fi(T, 0)} °C`)}`);
-    readout.html(`Aine: <strong>${material}</strong>, α = ${nw(`${fa(alpha)} · 10⁻⁶ 1/K`)}, alkupituus L₀ = ${nw(`${L0} m`)} (${nw('20 °C:ssa')})` +
-                 `<br>Lämpötilan muutos ΔT = T − ${nw('20 °C')} = ${nw(`${fi(T, 0)} °C`)} − ${nw('20 °C')} = <strong>${nw(`${fi(dT, 0)} K`)}</strong>` +
-                 `<br>Pituuden muutos ΔL = αL₀ΔT = <strong>${nw(`${sgn(dL * 1000)} mm`)}</strong>` +
-                 `<br>Uusi pituus L = L₀ + ΔL = <strong>${nw(`${fi(L, decL)} m`)}</strong>` +
-                 `<br>Suhteellinen muutos ΔL/L₀ = αΔT = ${nw(`${sgn(rel * 100)} %`)}` +
-                 `<br>Kuvaajan ΔL-akseli ${nw(`${fi(yMin, dec)}…${fi(yMax, dec)} mm`)}, kun L₀ = ${nw(`${L0} m`)}.`);
+    lL.html(`Alkupituus $L_0 = ${L0}\\,\\text{m}$`); lT.html(`Lämpötila $T = ${tx(T, 0)}\\,{}^\\circ\\text{C}$`);
+    readout.html(`Aine: <strong>${material}</strong>, $\\alpha = ${fa(alpha)} \\cdot 10^{-6}\\,\\text{1/K}$, alkupituus $L_0 = ${L0}\\,\\text{m}$ (${'$20\\,{}^\\circ\\text{C}$'}:ssa)` +
+                 `<br>Lämpötilan muutos $\\Delta T = T - 20\\,{}^\\circ\\text{C} = ${tx(T, 0)}\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = ${tx(dT, 0)}\\,\\text{K}$` +
+                 `<br>Pituuden muutos $\\Delta L = \\alpha L_0 \\Delta T = ${sgn(dL * 1000)}\\,\\text{mm}$` +
+                 `<br>Uusi pituus $L = L_0 + \\Delta L = ${tx(L, decL)}\\,\\text{m}$` +
+                 `<br>Suhteellinen muutos $\\Delta L/L_0 = \\alpha \\Delta T = ${sgn(rel * 100)}\\,\\%$` +
+                 `<br>Kuvaajan $\\Delta L$-akseli $${tx(yMin, dec)}\\text{–}${tx(yMax, dec)}\\,\\text{mm}$, kun $L_0 = ${L0}\\,\\text{m}$.`);
     window.simState = { material, alpha, L0, T, dT, dL, L, rel, E, spacing, amp, chartMin: yMin, chartMax: yMax, running, t: tAnim };
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -88,11 +88,11 @@ new p5((p) => {
     p.background(250);
     const col = tempColor(T);
     p.noStroke(); p.fill(40); p.textAlign(p.CENTER); p.textSize(ts(13));
-    p.text(`Pituuden muutokset liioiteltu ×${E}`, 300, 8 + ts(13));
+    p.text(`$\\text{Pituuden muutokset liioiteltu }\\times ${E}$`, 300, 4 + ts(13));
 
     // micro model: 5 × 5 particles, mean spacing d₀(1 + EαΔT), each vibrating with amplitude ∝ √T
     const d = LAT.d0 * spacing, half = (LAT.n - 1) / 2, ref = 2 * half * LAT.d0;
-    p.textSize(ts(14)); p.text('mikromalli', LAT.cx, 40 + ts(14));
+    p.textSize(ts(14)); p.text('$\\text{mikromalli}$', LAT.cx, 46 + ts(14));
     p.noFill(); p.stroke(150); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]);
     p.rect(LAT.cx - ref / 2, LAT.cy - ref / 2, ref, ref); p.drawingContext.setLineDash([]);
     p.stroke(255); p.strokeWeight(1.5); p.fill(col);
@@ -103,12 +103,13 @@ new p5((p) => {
       p.circle(x, y, 2 * LAT.r);
     }
     p.noStroke(); p.fill(60); p.textSize(ts(12));
-    p.text('katkoviiva: 20 °C', LAT.cx, 330 + ts(6));
-    p.text(`välit ${sgn(rel * 100)} %`, LAT.cx, 340 + ts(12) + ts(12));
+    p.text('$\\text{katkoviiva:}$', LAT.cx, 308 + ts(12));
+    p.text('$20\\,{}^\\circ\\text{C}$', LAT.cx, 308 + ts(12) + ts(15));
+    p.text(`$\\text{välit }${sgn(rel * 100)}\\,\\%$`, LAT.cx, 308 + ts(12) + 2 * ts(15));
 
     // rod with its left end fixed; dashed outline = length at 20 °C, solid = length now (change ×E)
     const wNow = ROD.w * spacing, xRef = ROD.x + ROD.w, xNow = ROD.x + wNow;
-    p.fill(40); p.textAlign(p.LEFT); p.textSize(ts(14)); p.text(`sauva, L₀ = ${L0} m`, ROD.x - 10, 40 + ts(14));
+    p.fill(40); p.textAlign(p.LEFT); p.textSize(ts(14)); p.text(`$\\text{sauva, }L_0 = ${L0}\\,\\text{m}$`, ROD.x - 10, 46 + ts(14));
     p.fill(110); p.rect(ROD.x - 10, ROD.y - 10, 10, ROD.h + 20);
     p.fill(col); p.stroke(60); p.strokeWeight(1.5); p.rect(ROD.x, ROD.y, wNow, ROD.h);
     p.noFill(); p.stroke(60); p.drawingContext.setLineDash([5, 4]); p.rect(ROD.x, ROD.y, ROD.w, ROD.h); p.drawingContext.setLineDash([]);
@@ -117,7 +118,7 @@ new p5((p) => {
       p.stroke(200, 50, 40); p.strokeWeight(2); p.line(xRef, yA, xNow, yA); p.line(xRef, yA - 5, xRef, yA + 5);
       p.fill(200, 50, 40); p.triangle(xNow, yA, xNow - 7 * s, yA - 4, xNow - 7 * s, yA + 4);
       p.noStroke(); p.textAlign(p.CENTER); p.textSize(ts(13));
-      p.text('ΔL', Math.min((xRef + xNow) / 2, 590 - p.textWidth('ΔL') / 2), yA + 4 + ts(13));
+      p.text('$\\Delta L$', Math.min((xRef + xNow) / 2, 590 - p.textWidth('$\\Delta L$') / 2), yA + 4 + ts(13));
     }
 
     // (T, ΔL) chart: thin lines for every material, thick for the chosen one, the current point
@@ -129,11 +130,11 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(2); p.line(CH.x0, CH.y0, CH.x1, CH.y0); p.line(CH.x0, CH.y0, CH.x0, CH.y1 - 5);
     p.stroke(120); p.strokeWeight(1.5); p.line(CH.x0, Y(0), CH.x1, Y(0));
     p.noStroke(); p.fill(60); p.textSize(ts(11)); p.textAlign(p.RIGHT);
-    for (let j = -nDown; j <= nUp; j++) p.text(fi(j * yStep, dec), CH.x0 - 6, Y(j * yStep) + ts(4));
+    for (let j = -nDown; j <= nUp; j++) p.text(`$${tx(j * yStep, dec)}$`, CH.x0 - 6, Y(j * yStep) + ts(4));
     p.textAlign(p.CENTER);
-    for (let TT = T_MIN; TT <= T_MAX; TT += 40) p.text(fi(TT, 0), X(TT), CH.y0 + ts(16));
-    p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('T (°C)', CH.x1 + 10, CH.y0 + ts(32));
-    p.textAlign(p.LEFT); p.text('ΔL (mm)', CH.x0 + 8, CH.y1 + ts(8));
+    for (let TT = T_MIN; TT <= T_MAX; TT += 40) p.text(`$${tx(TT, 0)}$`, X(TT), CH.y0 + ts(16));
+    p.textAlign(p.RIGHT); p.textSize(ts(12)); p.text('$T\\ (^\\circ\\text{C})$', CH.x1 + 10, CH.y0 + ts(32));
+    p.textAlign(p.LEFT); p.text('$\\Delta L\\ (\\text{mm})$', CH.x0 + 8, CH.y1 + ts(8));
     for (const [name, a, c] of MATERIALS) {
       if (name === material) continue;
       p.stroke(...c, 150); p.strokeWeight(1.5); p.line(X(T_MIN), Y(a * L0 * (T_MIN - T_REF) * 1000), X(T_MAX), Y(a * L0 * (T_MAX - T_REF) * 1000));
@@ -146,12 +147,12 @@ new p5((p) => {
   // −40 °C blue, 120 °C red
   function tempColor(T) { return p.lerpColor(p.color(40, 100, 210), p.color(215, 50, 40), (T - T_MIN) / (T_MAX - T_MIN)); }
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');                   // Finnish decimal comma and minus sign
-  const nw = (t) => `<span style="white-space:nowrap">${t}</span>`;                     // keep a value and its unit on one line
-  const fa = (a) => String(+(a * 1e6).toFixed(1)).replace('.', ',');                       // α in units of 10⁻⁶ 1/K
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');
+  const fa = (a) => String(+(a * 1e6).toFixed(1)).replace('.', '{,}');                       // α in units of 10⁻⁶ 1/K
   // three significant figures with an explicit sign
   const sgn = (x) => {
     if (x === 0) return '0';
-    const s = fi(Math.abs(x), Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x)))));
-    return (x > 0 ? '+' : '−') + s;
+    const s = tx(Math.abs(x), Math.max(0, 2 - Math.floor(Math.log10(Math.abs(x)))));
+    return (x > 0 ? '+' : '-') + s;
   };
 });

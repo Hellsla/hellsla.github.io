@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b9d35043f608c48a
+CONTENT-HASH: 2c1918a55c16bf98
 
 ## Blocking
 
 ## Polish
-- inquiry.json, ennuste-2 — the correct option still names "noin 4 kJ" and the mechanism; one of four options so not disclosure, but "ja sen verran vähemmän lämpöä jää sulattamiseen" without the number would make Koe 2 the place the student finds it (repeat from round 2).
-- exercises.json, level2 task 1 (0,35 kg, 30 °C, 0 °C ice, all melts) is the same case type as the worked example and the opening glass; ask for the melted mass or change the ice temperature (repeat).
-- Workload is long (two predictions, two experiments, error item, transfer task, 12 exercises, three checks, exit ticket); acceptable, trim if students report more than an hour (repeat).
-- inquiry.json, simulaatio `howto` is one 190-word paragraph (closed box, so allowed); splitting it into usage and "how to read the bars" would help a phone reader.
-- Figure 2 uses ice at −10 °C while the sim default and Ennuste 1 use 0 °C; the figure labels state it, but a short clause in the paragraph ("kuvassa jää on −10-asteista, jotta lämmitys näkyy") would stop a student comparing 35,5 kJ with the 33,4 kJ of the sim.
+- inquiry.json ennuste-2, correct option — it is the only choice that carries a number and a mechanism ("noin 13 g enemmän: ... noin 4 kJ"), so the longest, most specific option is the right one. Give each distractor a figure and a reason of similar length, or shorten the right one.
+- exercises.json fy3-14-L3-03 — the freezing branch (all water freezes, T < 0 °C) gets one sentence in lesson.md ("ratkaistaan samasta energiataseesta tason 3 tehtävässä") and no worked formula; the exercise gives only "päättele ensin". Add the balance equation as a hint in the solution, or one line in the lesson.
+- sim.js bars, freezing case (water 0,10 kg 10 °C, ice 0,50 kg −40 °C) — "vesi luovuttaa" shows only 4,2 kJ, so the bar does not show the 33,4 kJ released by freezing that makes the result; the student sees warming 42 kJ against 4,2 kJ and cannot see why all water freezes. The readout line should say that freezing releases s·m_v, or the bar should stack it.
+- sim.js, end of freezing case — 600 g of ice is shown as pale water with no cubes; the label "jäätä 600 g" and the picture disagree. Keep cubes or draw a solid block.
+- lesson.md Esimerkki stage 3 ("Kaava ratkaistuna") repeats the Kaava section's formula with no new step; fold it into stage 4.
 
 ## Checked
-- Sim change judged in captures: readout under the canvas is now three lines at 390 px (round-2 polish done); legend, speed control, closed Käyttöohje / Mallin oletukset / Laskennan selitys present; visible lead is under 30 words; bars autoscale and show the 25,1 vs 33,4 kJ gap with the dimmed "not melted" part.
-- Playwright load of the preview: simState gives Tf 0, iceLeftG 24,7 g, Qv 25 140 J, Qmelt 33 400 J for the opening case, matching the text, figures and feedback.
-- 1280 px lab capture: sim beside both experiments, tables readable; 390 px sim controls reachable, nothing clipped.
-- Figures 1–3 legible at 390 px, labels and formulas LaTeX; numbers match text (0,375 kg and 0,025 kg, 26,6 °C, 35,5 kJ); dot "alun lasi" explained before the graph.
-- Opening question answered in theory, example, reflect and check 3; prior learning retrieved by chapter name, no lesson ids in student text.
-- Predictions refutable: Koe 1 at 10/20/40 °C refutes 15 °C and "slightly above 0"; Koe 2 refutes "no extra ice" and "does not melt"; locked and varied variables right.
-- Spot-checked arithmetic: example (25,1 / 17,5 kJ, 6,05 °C), L3-02 281 g, L3-03 −3,5 °C, transfer task 39,9 g, check 2 (40 °C).
-- Example staged in 5 steps, symbolic first, units in the substitution; levels 5/4/3; error-spotting feedback repairs the sign and assumption misconception.
-- Finnish reads correctly; glossary terms used; 768 px overflow is the known shared-template issue, not judged.
+- LaTeX canvas text (computed font sizes at 390 px): readouts and labels 10,8–13 px, legend 10,3 px, all at or above the 10 px floor; at 1280 px 10–13 px; no overlap between the thermometer text, cubes, bars and legend in the default, mid-animation and end states at 390 and 1280 px.
+- Sim at 390 px: picture first, controls, three-line readout, Käyttöohje / Mallin oletukset / Laskennan selitys closed; lead text 21 words. Locked sliders marked "(vakio)" in the experiments. Wide layout puts the sim beside Koe 1 and Koe 2.
+- Figures 1–3 legible at phone width, labels in LaTeX, next to the paragraphs they explain; figure 3's point and 26,6 °C boundary match the text.
+- Learning path: hook, retrieval, two predictions the experiments can refute (koe-1 locks all but T_v, koe-2 all but T_j), theory, reflection, staged example, error-spotting, transfer; opening question answered in the reflect and check 3; one lesson's workload.
+- Arithmetic re-done: example (25 140 J, 17 540 J, 6,05 °C), misconception 15 °C and 24,7 g, 26,6 °C, 12,6 g, limsa 39,9 g, tea 40 °C, L1–L3 answers, mistakes 43,9 / 438 / 56 / 35.
+- Exercise levels 5/4/3, none repeats the example; wrong-answer feedback repairs the misconception.
+- Finnish: terms (ominaissulamislämpö, lämpötasapaino) consistent, decimal comma, no letter references to options.

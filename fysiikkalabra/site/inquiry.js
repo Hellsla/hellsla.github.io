@@ -3,7 +3,8 @@
    Everything stays in the browser. Answers are kept in memory, and copied to localStorage only so that a
    reload on the same device does not lose a prediction; every access is wrapped, and the page works without it.
    1. Predictions (fieldset.choice with data-reveal): the student commits before any feedback; the feedback
-      appears only after the linked experiment has recorded data-reveal-min measurements.
+      appears only after the linked experiment has recorded data-reveal-min measurements, or, for a prediction
+      the simulation cannot test (an explanation), once the linked theory section has been on screen.
    2. Plain choices: feedback for the selected option after "Vastaa"; the student may change and re-check.
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset.
@@ -22,6 +23,21 @@
   };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
+
+  // 1. a prediction linked to a theory section is revealed once that section has been on screen
+  const seen = new Set();
+  document.querySelectorAll('fieldset.choice[data-reveal]').forEach((fs) => {
+    const t = document.getElementById(fs.dataset.reveal);
+    if (!t || t.dataset.type !== 'theory') return;
+    const pending = fs.querySelector('.pending');
+    if (pending) pending.textContent = 'Ennusteesi on tallessa. Palaute näkyy, kun olet lukenut teoriaosan.';
+    if (!('IntersectionObserver' in window)) { measured[t.id] = Infinity; return; }
+    if (seen.has(t.id)) return;
+    seen.add(t.id);
+    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) {
+      io.disconnect(); measured[t.id] = Infinity; bus.dispatchEvent(new CustomEvent('fl:measured', { detail: { id: t.id, count: Infinity } })); } });
+    io.observe(t);
+  });
 
   // 1–2. choices
   document.querySelectorAll('fieldset.choice').forEach((fs) => {

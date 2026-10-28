@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0aaf01ed9efec6be
+CONTENT-HASH: b771002b9af91a64
 
 ## Blocking
 
 ## Polish
-- inquiry.json:510, 548 (exp-1, exp-2 intro) — the pressure window is 1,5 s of simulated time, so at "hidas" it takes 3 s of real time to refresh, and after a volume change the bunched particles keep the reading 10–20 % off for several seconds; "pari sekuntia" is short — say "muutama sekunti", or clear `hist` when V changes.
-- sim.js:1014 — `lastT` is no longer used since the fixed-step speed control; remove it.
+- sim.js:102 — `fi` is no longer called since the readout moved to TeX (`tx`), and `lastT` (sim.js:20) is still unused; remove both.
+- sim.js:57, 71–74 — the readout shows the measured pressure from the first frame, when the window holds one step (the 390 px capture shows "p ≈ 0", the 1280 px one 89 against theory 100). Show "–" until the 90-step window is full, or start the window full by running 90 steps in setup.
+- inquiry.json:141, 179 (exp-1, exp-2 intro) — still "pari sekuntia": at "hidas" the 1,5 s window takes 3 s of real time to refresh; "muutama sekunti" would be safer (carried over from the previous review).
 
 ## Checked
-- Round-2 conversion: every changed string compared with the previous version (pred-1 feedback 600 K / 300 K = 2; virhe option 313 K / 293 K ≈ 1,07 → 128 kPa; siirto mistake 80/20 = 4 and 353 K / 293 K ≈ 1,20; check-2 table −123/27/177 °C → 50/100/150; exp-1/exp-2 $v$): no number, formula or meaning changed.
-- lesson.md: "ja lämpötila pysyy samana" makes the compression sentence correct (at constant T a single hit is no harder); nothing else in lesson.md changed.
-- siirto Järkevyys now matches the task: closed at 20 °C, heated to 80 °C → 122 kPa > 101 kPa outside, lid pushed outward. Correct.
-- All 12 exercise answers recomputed independently = answers.py = exercises.json (L1-05 −270,45 → −270; L2-04 3,996 → 4,0; L3-03 −126,575 → −127); solutions symbolic first, units right.
-- Worked example: k = 0,37 kPa/°C, θ₀ = −270 °C, symbolic solve before substitution, liquefaction caveat stated.
-- Extrapolation figure to scale (0,945 px/°C, 1,375 px/kPa; all six points and the p = 0 crossing at −270 °C); kelvin figure to scale; system and micro-model figures right.
-- Inquiry: pred-1 ratio 2 with vRel 1,41; pred-2 50 → 100 with vRel 1,00; pred-3 count and size unchanged; virhe 128,2 kPa; siirto 121,7 → 122 kPa, mistakes 404 and 83,8 right; check-2 −273 °C, mistakes 0 and −123 explained right; check-1, check-3 model, exit ticket, misconception 293/283 ≈ 1,035.
-- sim.js: v ∝ √T so mean KE ∝ T; pressure from wall momentum per time per effective length, reference on the same lengths; pTheory = 100·(T/300)/V. Speed control advances fixed DT = 1/60 s steps of simulated time, window 90 steps, so speed changes only pace.
-- exp-1 locks V, varies T; exp-2 locks T, varies V; initial states and suggested values inside slider ranges; simState gives theta, vRel, pRel, pTheory.
-- Scope inside FY3; p ∝ T at constant V and n stated with its conditions.
+- LaTeX conversion of sim.js: only the strings changed (`tx` gives a TeX decimal comma `{,}`; the minus is TeX math minus). The physics lines (speed ∝ √T, wall momentum per time per effective length, pRef, pTheory = 100·(T/300)/V, θ = T − 273,15) are unchanged; renaming the thermometer x from `tx` to `thx` avoids a name clash and moves nothing.
+- Readout values: 300 K → 27 °C (26,85 rounds to 27); 100 K, 0,5 dm³ → −173 °C, theory 66,7 → 67; v = 1,00·v₃₀₀ K at 300 K. The screenshots show these values rendered by KaTeX, with units right.
+- tests/sims/fy3-3.json: the two rewritten assertions check the same numbers (27 °C at 300 K; −173 °C and theory 67 at 100 K, 0,5 dm³) in the TeX string via `simText`; the only thing dropped is the check of the Unicode minus sign, which is typography, not physics. The slider-unit check (/K/, /dm/) still holds on the rendered text. No physics check was lost or loosened.
+- All 12 exercise answers recomputed independently = answers.py = exercises.json (L1-05 −270,45 → −270; L2-04 3,996 → 4,0; L3-03 −126,6 → −127); solutions symbolic first.
+- Worked example: k = 0,37 kPa/°C, θ₀ = −270 °C (least squares −271 °C); the liquefaction caveat is stated. Extrapolation and kelvin figures to scale.
+- Inquiry: pred-1 600/300 = 2.00, vRel 1,41; pred-2 50 → 100 at vRel 1,00; virhe 128,2 kPa; siirto 121,7 → 122 kPa, mistakes 404 and 83,8; check-2 −273 °C; misconception 293/283 = 1,035.
+- exp-1 locks V and varies T; exp-2 locks T and varies V; simState gives theta, vRel, pRel and pTheory.
+- The scope stays inside FY3, and p ∝ T is stated with its conditions (constant V and n).

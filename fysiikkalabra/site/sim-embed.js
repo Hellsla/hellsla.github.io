@@ -10,6 +10,10 @@
      "Mallin oletukset ja selitys" box, so the picture, the controls and the values come first; one legend line of
      at most 15 words stays visible. New sims put no explanation in the page: the lesson's inquiry.json carries
      Käyttöohje, Mallin oletukset and Laskennan selitys (NOTES.md §4).
+   - draws every p.text() string that contains $…$ with KaTeX in a layer over the canvas, at the same place, size,
+     alignment and fill colour as p.text would (teacher's rule 2026-10-26: every symbol and label is LaTeX, the
+     simulation too); words outside the dollars stay text in the page font. A p5 element's .html() with $…$ (the
+     readout, a legend) renders its maths the same way, and is re-rendered only when its string changes.
    Tests run at 1280 px, where the container is wider than 600 px, so the canvas keeps its native size there.
    It also defines window.defineSimAdapter (docs/inquiry.md, "Simulation interface"): a sim that calls it once
    from setup exposes a small adapter that guided investigations (inquiry.js) use to read the state, set
@@ -29,12 +33,79 @@
     });
   };
 
+  const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
+  const mixed = (el, str) => {                 // "Massa $m = 10$ kg": text nodes and KaTeX spans
+    el.textContent = '';
+    str.split(/(\$[^$]+\$)/).forEach((part) => {
+      if (!part) return;
+      if (part.length > 2 && part[0] === '$' && part[part.length - 1] === '$') {
+        const span = document.createElement('span');
+        try { window.katex.render(part.slice(1, -1), span, { throwOnError: false }); } catch (e) { span.textContent = part; }
+        el.appendChild(span);
+      } else el.appendChild(document.createTextNode(part));
+    });
+  };
+  if (Base.Element && !Base.Element.prototype.__tex) {
+    const html = Base.Element.prototype.html;
+    Base.Element.prototype.html = function (...a) {
+      if (!a.length || a[1] || typeof a[0] !== 'string' || !a[0].includes('$')) { this.__texLast = null; return html.apply(this, a); }
+      if (this.__texLast === a[0]) return this;   // the readout is set every frame; KaTeX runs only on a change
+      this.__texLast = a[0];
+      const r = html.apply(this, a);
+      if (window.renderMathInElement) window.renderMathInElement(this.elt, MATH);
+      return r;
+    };
+    Base.Element.prototype.__tex = true;
+  }
+
   class Embedded extends Base {
     constructor(sketch, node) {
       super((p) => {
         sketch(p);
         const setup = p.setup, draw = p.draw;
         let s = 1;
+        let layer = null, labels = [], used = 0;
+        const text = p.text;
+        p.text = function (str, x, y, ...rest) {
+          if (typeof str !== 'string' || !str.includes('$') || !window.katex || !p.canvas) return text.call(p, str, x, y, ...rest);
+          if (!layer) {
+            const wrap = document.createElement('div'); wrap.className = 'sim-canvas';
+            p.canvas.before(wrap); wrap.appendChild(p.canvas);
+            layer = document.createElement('div'); layer.className = 'sim-tex-layer'; layer.setAttribute('aria-hidden', 'true');
+            wrap.appendChild(layer);
+          }
+          const ctx = p.drawingContext, m = ctx.getTransform(), pd = p.pixelDensity();
+          const k = (p.canvas.clientWidth || p.width) / p.width;        // CSS size of the canvas against its own size
+          const al = p.textAlign();
+          let el = labels[used];
+          if (!el) { el = document.createElement('div'); el.className = 'sim-tex'; layer.appendChild(el); labels.push(el); }
+          used++;
+          if (el.__s !== str) { mixed(el, str); el.__s = str; }
+          const st = el.style;
+          const lx = (m.a * x + m.c * y + m.e) / pd * k, ly = (m.b * x + m.d * y + m.f) / pd * k;
+          st.display = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
+          st.left = lx.toFixed(1) + 'px';
+          st.top = ly.toFixed(1) + 'px';
+          const sz = p.textSize() * Math.hypot(m.a, m.b) / pd;   // in canvas pixels
+          st.fontSize = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
+          st.color = ctx.fillStyle;
+          const tx = { left: '0', center: '-50%', right: '-100%' }[al.horizontal] || '0';
+          const ty = { top: '0', center: '-50%', bottom: '-100%' }[al.vertical] || '-78%';   // alphabetic: baseline near 78 % of the line
+          st.transform = `translate(${tx},${ty})`;
+          return p;
+        };
+        const textWidth = p.textWidth, widths = new Map();
+        let meter = null;
+        p.textWidth = function (str) {           // the width of a $…$ label as KaTeX draws it, in sketch units
+          if (typeof str !== 'string' || !str.includes('$') || !window.katex) return textWidth.call(p, str);
+          const key = p.textSize() + '|' + str;
+          if (!widths.has(key)) {
+            if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
+            meter.style.fontSize = p.textSize() + 'px'; mixed(meter, str);
+            widths.set(key, meter.getBoundingClientRect().width);
+          }
+          return widths.get(key);
+        };
         const root = () => (p.canvas && p.canvas.parentElement) || document.getElementById('sim-root');
         const fit = () => {
           const el = root();
@@ -51,6 +122,7 @@
           if (!p.canvas) return;
           const simRoot = document.getElementById('sim-root');
           if (simRoot) foldNotes(simRoot);
+          if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
           fit();
           if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root());
           else window.addEventListener('resize', fit);
@@ -64,13 +136,27 @@
             document.fonts.load('16px "' + font + '"').then(() => { p.textFont(font); }).catch(() => {});
           }
         };
-        if (draw) p.draw = () => { p.push(); p.scale(s); draw(); p.pop(); };
+        if (draw) p.draw = () => {
+          used = 0;
+          p.push(); p.scale(s); draw(); p.pop();
+          for (let i = used; i < labels.length; i++) labels[i].style.display = 'none';   // a label not drawn this frame
+        };
       }, node);
     }
   }
   Embedded.__fysiikkalabra = true;
   window.p5 = Embedded;
 })();
+
+/* window.simText(el): the text of a sim element with each KaTeX formula as its TeX source between dollars
+   ("Massa $m = 10\,\text{kg}$ (sama kaikkialla)"), for tests that read the readout. */
+window.simText = (el) => {
+  if (typeof el === 'string') el = document.querySelector(el);
+  if (!el) return '';
+  const c = el.cloneNode(true);
+  c.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith('$' + (a ? a.textContent : k.textContent) + '$'); });
+  return c.textContent;
+};
 
 /* window.defineSimAdapter({ params, reset, pause, resume, get })
    params: { name: { input: <input or select element>, unit: 'N' } } — every parameter an investigation may set

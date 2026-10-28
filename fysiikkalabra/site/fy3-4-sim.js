@@ -32,7 +32,7 @@ new p5((p) => {
     const lc = p.createElement('label').parent(controls).style('flex-direction', 'row').style('align-items', 'center').style('gap', '.6rem').style('min-height', '40px');
     cb = p.createElement('input').attribute('type', 'checkbox').parent(lc).style('width', '24px').style('height', '24px').style('margin', '0');
     p.createSpan('Näytä vain ylipaine').parent(lc);
-    p.createP('Paine kasvaa syvyyden mukana tasaisesti: jokainen metri lisää painetta ρg:n verran. Suoran kulmakerroin riippuu tiheydestä, mutta pinnalla paine on aina ilmanpaine.')
+    p.createP('Jokainen syvyysmetri lisää painetta $\\rho g \\cdot 1\\,\\text{m}$ verran.')
       .parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
@@ -51,12 +51,12 @@ new p5((p) => {
     const base = overOnly ? 0 : P0;                            // constant term of the line shown in the chart
     const [pMax, step] = niceMax(base + slope * H_MAX);        // chart scale: the line at 20 m, rounded up
     const name = LIQUIDS[rho] ? ` (${LIQUIDS[rho]})` : '';
-    lH.html(`Syvyys h = ${fi(h, 1)} m`); lR.html(`Tiheys ρ = ${rho} kg/m³${name}`);
-    readout.html(`Syvyys h = ${fi(h, 1)} m, tiheys ρ = ${rho} kg/m³` +
-                 `<br>Hydrostaattinen paine ρgh = <strong>${fi(pOver, 1)} kPa</strong>` +
-                 `<br>Kokonaispaine p = p₀ + ρgh = 101 kPa + ${fi(pOver, 1)} kPa = <strong>${fi(pTotal, 1)} kPa</strong>` +
-                 `<br>Kokonaispaine on <strong>${fi(ratio, 2)}</strong> kertaa ilmanpaine.` +
-                 `<br>Kuvaajan asteikko 0–${pMax} kPa, kulmakerroin ρg = ${fi(slope, 2)} kPa/m.`);
+    lH.html(`Syvyys $h = ${tx(h, 1)}\\,\\text{m}$`); lR.html(`Tiheys $\\rho = ${rho}\\,\\text{kg/m}^3$${name}`);
+    readout.html(`Syvyys $h = ${tx(h, 1)}\\,\\text{m}$, tiheys $\\rho = ${rho}\\,\\text{kg/m}^3$` +
+                 `<br>Hydrostaattinen paine <strong>$\\rho g h = ${tx(pOver, 1)}\\,\\text{kPa}$</strong>` +
+                 `<br>Kokonaispaine $p = p_0 + \\rho g h = 101\\,\\text{kPa} + ${tx(pOver, 1)}\\,\\text{kPa} =$ <strong>$${tx(pTotal, 1)}\\,\\text{kPa}$</strong>` +
+                 `<br>Kokonaispaine on <strong>$${tx(ratio, 2)}$</strong> kertaa ilmanpaine.` +
+                 `<br>Kuvaajan asteikko $0\\text{–}${pMax}\\,\\text{kPa}$, kulmakerroin $\\rho g = ${tx(slope, 2)}\\,\\text{kPa/m}$.`);
     window.simState = { h, rho, pOver, pTotal, ratio, overOnly, p0: P0, g: G, slope, chartBase: base, chartValue: base + pOver, pMax };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
@@ -71,8 +71,8 @@ new p5((p) => {
     p.stroke(255); p.strokeWeight(1.5); p.drawingContext.setLineDash([5, 4]); p.noFill(); p.rect(gx - 18, TANK.top, 36, gy - TANK.top); p.drawingContext.setLineDash([]);
     p.stroke(60); p.strokeWeight(3); p.line(TANK.x, TANK.top - 30, TANK.x, TANK.bottom); p.line(TANK.x, TANK.bottom, TANK.x + TANK.w, TANK.bottom); p.line(TANK.x + TANK.w, TANK.bottom, TANK.x + TANK.w, TANK.top - 30);
     p.stroke(30, 80, 160); p.strokeWeight(2); p.line(TANK.x, TANK.top, TANK.x + TANK.w, TANK.top);   // surface
-    say(boxes, 'air', 'ilma, p₀ = 101 kPa', ts(12), 60, 12, TANK.top - 40);
-    for (let d = 0; d <= H_MAX; d += 5) { const y = TANK.top + d * PXM; p.stroke(60); p.strokeWeight(1.5); p.line(TANK.x - 6, y, TANK.x, y); say(boxes, `depth${d}`, `${d} m`, ts(11), 60, TANK.x - 9, y + ts(4), 'r'); }
+    say(boxes, 'air', '$\\text{ilma, } p_0 = 101\\,\\text{kPa}$', ts(12), 60, 12, TANK.top - 40);
+    for (let d = 0; d <= H_MAX; d += 5) { const y = TANK.top + d * PXM; p.stroke(60); p.strokeWeight(1.5); p.line(TANK.x - 6, y, TANK.x, y); say(boxes, `depth${d}`, `$${d}\\,\\text{m}$`, ts(11), 60, TANK.x - 9, y + ts(4), 'r'); }
 
     // gauge on a cable; arrows from four sides, length grows with the total pressure (pressure acts in every direction)
     p.stroke(80); p.strokeWeight(1.5); p.line(gx, TANK.top - 30, gx, gy - 10);
@@ -88,7 +88,7 @@ new p5((p) => {
     // depth bracket on the right of the pool; its "h" only when the bracket is long enough to carry it
     const bx = TANK.x + TANK.w + 12;
     p.stroke(60); p.strokeWeight(1.5); p.line(bx, TANK.top, bx, gy); p.line(bx - 4, TANK.top, bx + 4, TANK.top); p.line(bx - 4, gy, bx + 4, gy);
-    if (h >= 2) say(boxes, 'bracket', 'h', ts(13), 60, bx + 6, (TANK.top + gy) / 2 + ts(5));
+    if (h >= 2) say(boxes, 'bracket', '$h$', ts(13), 60, bx + 6, (TANK.top + gy) / 2 + ts(5));
 
     // (h, p) chart scaled to the line shown; p₀ marked as a dashed line when the constant term is included
     const X = (hh) => CH.x0 + (CH.x1 - CH.x0) * hh / H_MAX, Y = (pp) => CH.y0 - (CH.y0 - CH.y1) * pp / pMax;
@@ -104,11 +104,11 @@ new p5((p) => {
     p.noStroke(); p.fill(200, 40, 40); p.circle(px, py, 12);
 
     // axis text; the h-axis title sits under the tick labels, so the vertical guide (it ends at the axis) never reaches it
-    for (let v = 0; v <= pMax; v += step) say(boxes, `p${v}`, `${v}`, ts(11), 60, CH.x0 - 8, Y(v) + ts(4), 'r');
-    for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `${d}`, ts(11), 60, X(d), CH.y0 + ts(16), 'c');
-    const mt = meas('h (m)', ts(11));
-    say(boxes, 'hTitle', 'h (m)', ts(11), 60, 596, boxes.h20[3] + 3 + mt.a, 'r');
-    say(boxes, 'pTitle', overOnly ? 'ylipaine ρgh (kPa)' : 'paine p (kPa)', ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
+    for (let v = 0; v <= pMax; v += step) say(boxes, `p${v}`, `$${v}$`, ts(11), 60, CH.x0 - 8, Y(v) + ts(4), 'r');
+    for (let d = 0; d <= H_MAX; d += 5) say(boxes, `h${d}`, `$${d}$`, ts(11), 60, X(d), CH.y0 + ts(16), 'c');
+    const mt = meas('$h\\ (\\text{m})$', ts(11));
+    say(boxes, 'hTitle', '$h\\ (\\text{m})$', ts(11), 60, 596, boxes.h20[3] + 9 + mt.a, 'r');
+    say(boxes, 'pTitle', overOnly ? '$\\text{ylipaine } \\rho g h\\ (\\text{kPa})$' : '$\\text{paine } p\\ (\\text{kPa})$', ts(12), 60, CH.x0 - 26, CH.y1 - ts(14));
 
     // labels inside the chart: each takes the first candidate box that lies in the chart area and clears every
     // obstacle (other text, the dashed lines as thin boxes, the dot, the blue line); text gets a halo as well
@@ -130,11 +130,11 @@ new p5((p) => {
       const xs = [(w) => CH.x1 - w, () => CH.x0 + 10];
       for (let t = 0.25; t < 1; t += 0.25) xs.push((w) => CH.x0 + 10 + t * (CH.x1 - CH.x0 - 10 - w));
       const spots = [...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 + 4, y0 + 4 + ht]), ...xs.map((fx) => (w, ht) => [fx(w), fx(w) + w, y0 - 4 - ht, y0 - 4])];
-      p0Opts = [...fits('p₀ = 101 kPa', ts(11), spots, ['p0line']), ...fits('p₀', ts(11), spots, ['p0line'])];
+      p0Opts = [...fits('$p_0 = 101\\,\\text{kPa}$', ts(11), spots, ['p0line']), ...fits('$p_0$', ts(11), spots, ['p0line'])];
     }
     // gauge reading next to the point: above-left, above-right, below-right, below-left, then to the right under the
     // line's starting level (p₀ or the h axis) far enough right that the rising line clears it, then down the left side
-    const g = 10, txt = `${fi(base + pOver, 0)} kPa`, NEAR = 5;
+    const g = 10, txt = `$${tx(base + pOver, 0)}\\,\\text{kPa}$`, NEAR = 5;
     const cands = [(w, ht) => [px - g - w, px - g, py - g - ht, py - g], (w, ht) => [px + g, px + g + w, py - g - ht, py - g],
       (w, ht) => [px + g, px + g + w, py + g, py + g + ht], (w, ht) => [px - g - w, px - g, py + g, py + g + ht],
       (w, ht) => { const bot = Math.min(Y(base) + g + ht, CH.y0 - 4), lp = 2 + PAD, x = px + 1 + Math.max(g, lp + (py - bot + ht + lp) / rise); return [x, x + w, bot - ht, bot]; }];
@@ -150,16 +150,17 @@ new p5((p) => {
   };
 
   // text with a 3-px halo in the background colour (drawn under the fill) and its ink box recorded in boxes[name]
+  // ink box of a $…$ label as KaTeX draws it: width from p.textWidth, height estimated from the font size
+  // (subscripts and "(" ")" reach below the baseline)
   const meas = (t, size) => {
     p.textSize(size); p.textAlign(p.LEFT, p.BASELINE);
-    const m = p.drawingContext.measureText(t);
-    return { w: m.width, l: m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, d: m.actualBoundingBoxDescent };
+    const w = p.textWidth(t);
+    return { w, l: 0, r: w, a: size * 0.8, d: size * (/_|\(/.test(t) ? 0.35 : 0.1) };
   };
+  // text at (x, y) and its ink box recorded in boxes[name]; the KaTeX layer has no halo
   const say = (boxes, name, t, size, col, x, y, align = 'l') => {
     const m = meas(t, size), lx = align === 'r' ? x - m.w : align === 'c' ? x - m.w / 2 : x;
-    p.push(); p.fill(...[].concat(col));
-    p.stroke(250); p.strokeWeight(3 * k); p.strokeJoin(p.ROUND);
-    p.text(t, lx, y); p.noStroke(); p.text(t, lx, y); p.pop();
+    p.push(); p.fill(...[].concat(col)); p.noStroke(); p.text(t, lx, y); p.pop();
     boxes[name] = [lx - m.l, lx + m.r, y - m.a, y + m.d];
   };
   // does the segment [x1, y1, x2, y2] pass through box b grown by pad? (Liang–Barsky clipping)
@@ -173,5 +174,6 @@ new p5((p) => {
     return true;
   };
 
+  const tx = (x, d) => x.toFixed(d).replace('.', '{,}');
   const fi = (x, d) => x.toFixed(d).replace('.', ',').replace('-', '−');   // Finnish decimal comma and minus sign
 });

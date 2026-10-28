@@ -97,6 +97,7 @@ details.answer p{margin:.2rem 0 0 1.2rem;background:var(--accent-soft);border-ra
 @media (min-width:720px){#sim{margin-inline:-1.1rem}.lab-side #sim{margin-inline:0}}   /* the card pokes out of the 38rem text column so the 600 px canvas keeps its native size */
 #sim h2{margin-top:1rem}
 #sim-root{position:relative}#sim-root canvas{max-width:100%;height:auto!important;display:block;border-radius:10px}
+.sim-canvas{position:relative}.sim-tex-layer{position:absolute;inset:0;pointer-events:none;overflow:visible}.sim-tex{position:absolute;white-space:nowrap;line-height:1.15}.sim-tex .katex{font-size:1em}#sim-root .readout .katex,#sim-root label .katex{font-size:1.05em}
 #sim-root .readout{font-size:1rem;line-height:1.5;margin:.6rem 0;font-variant-numeric:tabular-nums}
 #sim-root .note{font-size:.9rem;color:var(--ink-2);margin:.5rem 0 0}
 #sim-root .controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.5rem 1.5rem;margin:.5rem 0}

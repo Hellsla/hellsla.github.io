@@ -1,24 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: edd01c91e24f237e
+VERDICT: PASS
+CONTENT-HASH: 532dc0152871b210
 
 ## Blocking
-- content/FY3/fy3-9/sim.js (canvas labels) — at 390 px (fy3-9-sim-390.png, fy3-9-exp-exp-2-390-1.png) the KaTeX labels shrink with the canvas to about 7 px: the thermometer ticks (150 °C … −50 °C), the graph axis numbers (50, 100, 200, 40, 80, 200, 400) and the gauge scale (0/200/300 and "kPa") cannot be read, and in the gauge the "kPa" and the figure "100" sit under the needle hub. The graph is the point of the lesson (read p off the curve, follow the dashed line to the origin in exp-2), so a phone student cannot do it. Fix: draw canvas text at a size that is at least about 11 px after scaling (scale font by the canvas-to-CSS ratio, fewer ticks: 0/100/200/300 and 0/50/100 ml), put the gauge unit outside the dial, and keep the live values in the text readout below, which is legible.
-- Same cause at 1280 px (fy3-9-lab-1280-1.png): in the narrow sim column tick labels are about 9 px and the gauge "100" collides with the needle; fix with the same minimum size.
 
 ## Polish
-- Readout, 390 px: "Vakio pV = 100,0 kPa · 50,0 ml = 5000 kPa · ml" breaks between "·" and "ml"; use a non-breaking thin space, or wrap the whole product.
-- exp-1 table shows p in Pa while the simulation readout shows kPa; the intro explains it, but one unit throughout (kPa, pV in kPa·ml) would remove the conversion the student must hold.
-- Ennusta 1/2 feedback says "Mallin arvoissa ..." for every option, which is repetitive; a shorter lead ("Koe 1 antoi ...") reads better.
-- exp-2 question mixes two tasks (compute ml/K and the relative share) with a choice about the origin of γ; consider splitting so the calculation is a numeric item.
-- ruisku item: the 30 ml row's "nopea puristus" is given in the text, so the diagnosis is partly disclosed; remove "Yhden mittauksen kohdalla ..." sentence's cause and let the choice carry it.
+- Readout at 390 px (fy3-9-sim-390.png): "Vakio pV = 100,0 kPa · 50,0 ml = 5000 kPa · ml" still breaks before "ml"; keep the unit with its number (non-breaking space) or wrap the whole product.
+- exp-1 table gives p in Pa while the readout gives kPa; the intro explains it, but one unit (kPa, pV in kPa·ml) would remove the conversion.
+- Ennusta 1/2 feedback starts every option with "Mallin arvoissa ..."; a shorter lead ("Koe 1 antoi ...") reads better.
+- exp-2 question mixes two tasks (ml/K and the relative share) with a choice about where γ comes from; split so the calculation is its own numeric item.
+- ruisku item: the text already says the 30 ml row was pressed quickly, which gives away the diagnosis; drop the cause and let the choice carry it.
 
 ## Checked
-- Learning path: hook, retrieval (F = pA), three predictions, two guided experiments, syringe data with a 1/V column, theory, example, transfer, three checks, matches the slot goals (Boylen todentaminen, 1/V graph, new column); one lesson's workload.
-- Predictions are refutable by exp-1/exp-2; options carry their own feedback; no answer shown before commitment.
-- Experiments lock the controlled quantities and vary one; the sim's computed values are called model values, and the syringe data are labelled example values.
-- Figures (micro-boyle, iso-processes, boyle-graphs, absolute-zero) are placed after their paragraphs and legible in the 390 px captures.
-- Worked example has five stages, symbolic first, units, sanity check; not repeated in exercises.
-- Exercises: 5/4/3, contexts varied, level 3 needs two ideas; exit ticket tests the core ideas (Boyle, 1/V graph, kelvin).
-- Finnish: terms agree with the glossary; case after number+unit correct in the text read.
-- 1280 px wide layout: sim beside experiments, readable line width, no overlap outside the canvas.
-- Only the canvas text legibility blocks; hash unchanged at end.
+- Round 1 blocker, canvas label size: the capture set (fy3-9-sim-390, exp-exp-2-390-1, lab-1280-1) was taken from a stale preview (preview/fy3-9-sim.js older than sim.js, still printing gauge numbers). I rebuilt the preview (sim.js now identical) and recaptured the canvas at 390 and 1280 px.
+- 390 px: thermometer ticks (150, 50, −50 °C), graph axis numbers (300/200/100/0, 40, 80), axis names and V, T and p readouts are legible; sim-embed.js floors canvas text at 10 px.
+- Gauge: no dial numbers or unit, needle and hub are clear; the reading "100,0 kPa" stands above it, so nothing sits under the needle.
+- 1280 px: all labels legible, graph readable, no collisions. The graph, with its dashed lines to the axes, can be read by a phone student, so the exp-2 extrapolation is feasible.
+- Learning path, activities, predictions, experiments, figures, example, exercises, exit ticket and Finnish are unchanged since round 1 (inquiry tests pass) and still hold.
+- Hash unchanged at start and end.

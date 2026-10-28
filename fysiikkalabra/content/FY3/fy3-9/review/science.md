@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: edd01c91e24f237e
+CONTENT-HASH: 532dc0152871b210
 
 ## Blocking
 
 ## Polish
-- tests/sims/fy3-9.json (readout isobaarinen −50 °C assertion) — the note still says "minus sign U+2212", but the assertion now matches TeX `-50`, which KaTeX typesets as a true minus. The check is equivalent; only the note is stale — reword the note to "TeX minus".
-- content/FY3/fy3-9/sim.js:1316–1318 — `fi()` is now unused, and a stray duplicate comment "three significant figures" trails `tx` — delete both.
-- content/FY3/fy3-9/inquiry.json (virhe, correct option) — `≈ 250 kPa` (252,5) is right to two significant figures from 0,50 l / 0,20 l. Fine as is; optionally write `≈ 2,5·10² kPa` to make the precision explicit.
+- content/FY3/fy3-9/sim.js:174 — `p.textSize(ts(9))` before the needle is left over from the removed dial numbers and draws nothing. Delete it.
+- content/FY3/fy3-9/sim.js:238–240 — `fi()` is still unused, and the stray duplicate comment "three significant figures" still trails `tx`. Delete both (carried over from round 1).
+- content/FY3/fy3-9/review/shots/fy3-9-sim-1280.png, fy3-9-sim-390.png — these captures still show dial numbers and "kPa" on the gauge face, but the current sim.js draws neither (checked with a fresh Playwright render of the preview). Regenerate the shots so the pedagogy reviewer judges the current gauge.
+- content/FY3/fy3-9/inquiry.json (simulaatio, model) — the gauge and readout show the gas's absolute (total) pressure, 100 kPa at the start. Lesson.md tells students to use total pressure, not the gauge's overpressure. One clause in `model` ("mittari näyttää kokonaispaineen") would keep the two from seeming to contradict each other.
 
 ## Checked
-- All 12 exercise answers recomputed independently. Each agrees with answers.py and exercises.json within tolerance. L2-03 uses a least-squares fit through the origin, giving 2009 kPa·ml (2,0 J); pV runs 1980–2030 kPa·ml, as solutions.md says. L3-02 handles gauge vs. absolute pressure correctly (202 kPa; 216 kPa if the reading is wrongly put into the formula).
-- Worked example (1,036 l, +30 %), siirto (1,07 l; mistake 2,10 l), check-2 (120 kPa; mistakes 108 and 0,12), exit ticket (160 kPa, 308/280 = 1,1) and misconception (1,035 → 1,04 l): all correct, and every one is solved symbolically before the numbers go in.
-- inquiry: pred-1 (200 kPa, pV = 5,00 J), pred-2 (60,2 ml, V/T = 0,1706 ml/K) and pred-3 (curve 200/100/50 kPa) have the right options marked correct. The γ question gives 1/293 K = 3,41·10⁻³ 1/K. In ruisku, pV = 5040 except at 30 ml (5430, +7,7 %), and heating is the correct reason. All the feedback physics is sound.
-- Experiments: exp-1 locks mode and Tc and varies Vml; simState gives p in Pa and the constant in J. exp-2 locks mode and varies Tc; the adapter supplies T, Vgas and VperT. Each setup isolates the parameter it varies.
-- The simulation implements pV/T = const in all three modes, and the SI conversion of `constant` is correct. Axis maxima cover the slider ranges: 144 kPa ≤ 160 and 72 ml ≤ 80. The theory curves and the dashed lines to the origin are correct. `calc` and pred-3 say the values come from the law, not from measurement.
-- The LaTeX migration lost no physics check. tests/sims/fy3-9.json has 72 assertions before and 72 after. Each changed assertion reads the same values (40,0 | 0,0250 | 125,0 | 293,15 | 5000; 38,1; 0,1706; 76,1; 144,3; 0,3411; the axis scales) through simText. Only the label strings were reworded, e.g. "lämpötila vakio". The numeric simState checks are unchanged.
-- The figures are to scale: boyle-graphs (pV = 2000 kPa·ml, line ends at (0,12; 240)), absolute-zero (253–373 K points on lines through 0 K), micro-boyle (gas heights 2 : 1, hit marks 4 → 8).
-- Facts: cabin pressure about 78 kPa; at 300 bar air has Z ≈ 1,1; for a 0,5 m² lid the force is about 7 kN.
-- Scope: Boyle's law and the isobaric and isochoric changes belong to "kaasujen tilanmuutokset" and to the Boyle experiment. L3-01 uses ρgh from fy3-4.
+- I recomputed all 12 exercise answers independently. Each agrees with answers.py and exercises.json within tolerance: 67,3; 13,7; 287; 2,6; 87,3; 2,0; 90; 2,0 (least-squares fit, 2009 kPa·ml); 890; 5,9; 202; 29,9.
+- Worked example (1,036 l, +29,5 %), siirto (1,07 l; mistake 2,10 l; 71 %), check-2 (120 kPa; mistakes 108 and 0,12), exit ticket (160 kPa; 308/280 = 1,1), misconception (1,035 → 1,04 l): all correct, and every one is solved symbolically first.
+- inquiry: pred-1 (200 kPa, pV = 5,00 J), pred-2 (60,2 ml, 0,1706 ml/K), pred-3 (the curve) and the γ question (1/293 K = 3,41·10⁻³ 1/K) are correct. In ruisku, pV = 5040 except at 30 ml (5430, +7,7 %), and heating is the correct reason. The kertaus answer is 30 N.
+- New gauge (fresh render, 1280 and 390 px): the needle angle is 135° + 270°·p/300 kPa, so 100 kPa sits at 225°. The reading `100,0 kPa` above the gauge equals simState.p. The needle never clips: the maximum is 250 kPa when isothermal and 144 kPa when isochoric, both under 300.
+- The phone label scaling (k = 1,85 at 390 px) only thins the tick labels. Every label that remains still has the right value at the right position: thermometer −50/50/150 °C, chart axes 0–300 kPa and 40/80 ml.
+- The sim physics is unchanged: pV/T = const in all three modes, the SI conversions of `constant` are correct, and the axis maxima cover the slider ranges. Fresh simState: isochoric p/T = 341,1 Pa/K = 100 kPa/293,15 K.
+- Experiments: exp-1 locks mode and Tc and varies Vml. exp-2 locks mode and varies Tc. The adapter supplies p, constant, T, Vgas and VperT in the units the tables state.
+- Figures are to scale (I checked their coordinates): boyle-graphs (pV = 2000 kPa·ml), absolute-zero (253–373 K points, slope 0,449 to the origin in both panels), micro-boyle (heights 2 : 1, hit marks 4 → 8).
+- Scope: Boyle's law and the isobaric and isochoric changes fall under "kaasujen tilanmuutokset" and the Boyle experiment. L3-01 uses ρgh from fy3-4.
