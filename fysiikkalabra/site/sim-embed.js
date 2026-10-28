@@ -34,6 +34,8 @@
   };
 
   const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
+  let fontGen = 0;                             // bumped when a web font (KaTeX's) finishes loading: label sizes measured before it are stale
+  try { document.fonts.addEventListener('loadingdone', () => { fontGen++; }); document.fonts.ready.then(() => { fontGen++; }); } catch (e) { /* no FontFaceSet */ }
   const mixed = (el, str) => {                 // "Massa $m = 10$ kg": text nodes and KaTeX spans
     el.textContent = '';
     str.split(/(\$[^$]+\$)/).forEach((part) => {
@@ -88,7 +90,7 @@
           const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
           st.fontSize = fs;
           st.color = ctx.fillStyle;
-          if (el.__fs !== fs || el.__ms !== str || !el.__w) { el.__w = el.offsetWidth; el.__h = el.offsetHeight; el.__fs = fs; el.__ms = str; }   // measured only when the label or its size changes
+          if (el.__fs !== fs || el.__ms !== str || el.__fg !== fontGen || !el.__w) { const r = el.getBoundingClientRect(); el.__w = r.width; el.__h = r.height; el.__fs = fs; el.__ms = str; el.__fg = fontGen; }   // measured only when the label or its size changes
           const fx = { left: 0, center: -0.5, right: -1 }[al.horizontal] || 0;
           const fy = { top: 0, center: -0.5, bottom: -1 }[al.vertical] ?? -0.78;   // alphabetic: baseline near 78 % of the line
           const cw = p.canvas.clientWidth || p.width * k, ch = p.canvas.clientHeight || p.height * k;
@@ -101,7 +103,7 @@
         let meter = null;
         p.textWidth = function (str) {           // the width of a $…$ label as KaTeX draws it, in sketch units
           if (typeof str !== 'string' || !str.includes('$') || !window.katex) return textWidth.call(p, str);
-          const key = p.textSize() + '|' + str;
+          const key = fontGen + '|' + p.textSize() + '|' + str;
           if (!widths.has(key)) {
             if (!meter) { meter = document.createElement('div'); meter.className = 'sim-tex'; meter.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0'; document.body.appendChild(meter); }
             meter.style.fontSize = p.textSize() + 'px'; mixed(meter, str);
