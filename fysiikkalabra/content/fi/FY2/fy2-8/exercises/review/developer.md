@@ -1,8 +1,15 @@
 VERDICT: DONE
 
-Round 1 fix (science FAIL, pedagogy PASS with Polish).
-- solutions.md: g → t by substitution in L2-02 ($2\,908\,800 \cdot 10^{-6}\,\text{t}$); L2-02 rounding names the coefficients; written divisions in Sijoitus chains as colons (L2-03, L3-01, L3-03; L3-03 Kaava too); a solved formula keeps its fraction (NOTES §1: "a formula keeps its fraction"); L2-04 says why a fuel's g/kWh is not the table's electricity g/kWh; L3-01 gets a **Johtopäätös** on the e-car with coal power.
-- exercises.json: every number with its unit in LaTeX; L1-04 now a comparison (gas vs rooftop PV, one division, 12×) instead of a fourth identical m = e·E; L3-01 ends with an interpretive question; L3-02 replaced (it was the "sum of two products" pedagogy flagged, and also carried the second Blocking conversion) by a level-3 land-use task: area for 100 GWh by energy crops (100 km²) vs solar park (2,0 km²), with a question on what land use shows that the emission factor does not, answered in **Johtopäätös**. Level counts stay 5/4/3 (lint enforces 3).
-- answers.py: L1-04 and L3-02 recomputed.
-- Not fixable here: `mistakes` feedback for exercises (the exercise schema and page have no such field; a template change).
-- Skipped as wording taste: "hiilidioksidia" vs "-ekvivalenttia" in L3-01.
+Round 2, fix mode. lint_lesson.py and check_solutions.py: no errors.
+
+solutions.md
+- Järkevyys conversions by substitution in L1-01, L1-02, L1-05, L2-01, L2-02, L2-03 (grams to kg or t via `\cdot 0{,}001` or `\cdot 10^{-6}`; L1-01 coal check now via grams).
+- L3-01 and L3-03 Kaava symbolic first ($m = e_\text{b} \cdot V \cdot h$; $m_\text{bussi} = e_\text{b} V_\text{b} h_\text{b} : N$), with symbols explained.
+- L3-03 Sijoitus keeps units l and MJ; "$25$ matkustajalle" in LaTeX.
+- L3-02 solved for the area ratio: Kysytty, Kaava, Sijoitus (100 km² : 2,0 km² = 50) and Vastaus (50 kertaa).
+
+exercises.json
+- L3-02 asks how many times the field area exceeds the solar park area; answer 50, unit "kertaa", tolerance 0,02.
+
+answers.py
+- L3-02 computed as A_bio / A_sol = 50.

@@ -30,7 +30,7 @@ Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sank
 Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden, ja häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö on sen sijaan aina häviötä, vaikka se lämmittäisi huonetta talvella, koska lampun tehtävä on valaista. Hyöty määräytyy siis laitteen tarkoituksesta.
 
 ### Hyötysuhde kertoo hyödyn osuuden
-Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Se on aina alle $100\,\%$, koska osa energiasta muuttuu käytännössä aina lämmöksi esimerkiksi sähkövastuksessa tai kitkassa, ja lämpö leviää ympäristöön, josta sitä on vaikea ottaa talteen. Laitteiden hyötysuhteet vaihtelevat paljon:
+Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Se on alle $100\,\%$, koska osa energiasta muuttuu käytännössä aina lämmöksi esimerkiksi sähkövastuksessa tai kitkassa, ja lämpö leviää ympäristöön, josta sitä on vaikea ottaa talteen. Kun laitteen hyöty on muuta kuin lämpöä, hyötysuhde jää selvästi alle $100\,\%$. Sähkölämmittimessä hyöty on itse lämpö, ja hyötysuhde on lähellä $100\,\%$, mutta sekin on alle, koska osa lämmöstä karkaa hyödyttömään paikkaan. Laitteiden hyötysuhteet vaihtelevat paljon:
 
 | Laite ja sen hyöty | tyypillinen $\eta$ |
 | --- | --- |
@@ -138,11 +138,11 @@ E_\text{h} &= E_\text{o} - E_\text{a} \\
 
 <!-- vaihe -->
 
-**Tulos.** Häviöiksi muuttuu $36\,\text{kJ}$. Tulos annetaan kahdella merkitsevällä numerolla, koska lähtötiedot $90\,\%$, $2{,}0\,\text{kW}$ ja $3{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
+**Tulos.** Häviöiksi muuttuu $36\,000\,\text{J} = 36 \cdot 1000\,\text{J} = 36\,\text{kJ}$. Tulos annetaan kahdella merkitsevällä numerolla, koska lähtötiedot $90\,\%$, $2{,}0\,\text{kW}$ ja $3{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
 
 <!-- vaihe -->
 
-**Järkevyys.** Häviöitä pitää olla $100\,\% - 90\,\% = 10\,\%$ otetusta energiasta, ja $0{,}10 \cdot 360\,\text{kJ} = 36\,\text{kJ}$. Lisäksi hyötyenergia ja häviöt antavat yhteensä otetun energian: $324\,\text{kJ} + 36\,\text{kJ} = 360\,\text{kJ}$.
+**Järkevyys.** Häviöitä pitää olla $100\,\% - 90\,\% = 10\,\%$ otetusta energiasta, ja otettu energia on $360\,000\,\text{J} = 360 \cdot 1000\,\text{J} = 360\,\text{kJ}$, joten $0{,}10 \cdot 360\,\text{kJ} = 36\,\text{kJ}$. Lisäksi hyötyenergia ja häviöt antavat yhteensä otetun energian: $324\,\text{kJ} + 36\,\text{kJ} = 360\,\text{kJ}$.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että häviöissä energia katoaa. Energia säilyy kuitenkin kaikissa laitteissa. Hehkulampusta lähtevä energia on yhteensä yhtä suuri kuin siihen tuleva: $3\,\text{W}$ valoa ja $57\,\text{W}$ lämpöä on yhteensä $60\,\text{W}$. Häviö tarkoittaa vain sitä, että osa energiasta päätyi muotoon, josta ei ole hyötyä.
@@ -150,7 +150,7 @@ Moni ajattelee, että häviöissä energia katoaa. Energia säilyy kuitenkin kai
 Toinen virhe on pitää suuritehoista laitetta tehokkaana. Hyötysuhde on suhdeluku, ei määrä. $100\,\text{W}$:n hehkulamppu antaa valoa $5\,\text{W}$ ja $60\,\text{W}$:n lamppu $3\,\text{W}$, mutta molempien hyötysuhde on $5\,\%$. Suuritehoinen laite käyttää enemmän energiaa, mutta teho ei kerro, kuinka suuri osa energiasta on hyötyä.
 
 ## Tiivistelmä
-- Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \tfrac{E_\text{a}}{E_\text{o}} = \tfrac{P_\text{a}}{P_\text{o}}$. Se ilmoitetaan usein prosentteina ja on aina alle $100\,\%$.
+- Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \tfrac{E_\text{a}}{E_\text{o}} = \tfrac{P_\text{a}}{P_\text{o}}$. Se ilmoitetaan usein prosentteina ja on alle $100\,\%$ (sähkölämmittimellä lähes $100\,\%$).
 - Energia säilyy: $E_\text{o} = E_\text{a} + E_\text{h}$. Häviöt ovat yleensä lämpöä, joka leviää ympäristöön.
 - Energiavirtakuviossa nuolen paksuus on verrannollinen energiaan tai tehoon, ja hyötysuhde on hyötynuolen osuus tulevasta nuolesta.
 - Tasaisesti käyvän laitteen hyötysuhde ei riipu käyntiajasta, koska aika supistuu energioiden suhteesta. Käyttötilanne voi muuttaa sitä: esimerkiksi bensiinimoottorin hyötysuhde on pienellä kuormalla selvästi pienempi.

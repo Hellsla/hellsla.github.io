@@ -207,7 +207,7 @@
   "note": "L = 26,6: only the Sun is on the ladder"
  },
  {
-  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan, 1 h');",
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan tunnissa');",
   "expr": "window.simState.k",
   "expected": 20.792392,
   "tol": 1e-05,
@@ -221,7 +221,7 @@
   "note": "ihmiskunta has the same power of ten as one hour of sunlight"
  },
  {
-  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan, 1 h');",
+  "setup": "const S=document.querySelector('#sim-root select'), B=[...document.querySelectorAll('#sim-root button')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(v)=>{S.value=v;ev(S);}; const CL=(b)=>b.dispatchEvent(new MouseEvent('mousedown',{bubbles:true})); SEL('Aurinko Maahan tunnissa');",
   "expr": "window.simState.E_EJ",
   "expected": 620,
   "tol": 1e-06,

@@ -79,7 +79,7 @@
     {
       "id": "fy2-5-L3-01",
       "level": 3,
-      "text": "Mökin lämmitykseen tarvitaan energiaa $120\\,\\text{MJ}$. Energia voidaan saada joko ilmakuivasta polttopuusta ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) tai kevyestä polttoöljystä ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Laske kummankin polttoaineen tarvittava massa ja kerro, kuinka monta kilogrammaa enemmän puuta kuin öljyä tarvitaan. Selitä myös, miksi puuta tarvitaan enemmän. Anna vastaus kilogrammoina.",
+      "text": "Mökin lämmitykseen polttoaineesta pitää vapautua energiaa $120\\,\\text{MJ}$. Energia voidaan saada joko ilmakuivasta polttopuusta ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) tai kevyestä polttoöljystä ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Laske kummankin polttoaineen tarvittava massa ja kerro, kuinka monta kilogrammaa enemmän puuta kuin öljyä tarvitaan. Selitä myös, miksi puuta tarvitaan enemmän. Anna vastaus kilogrammoina.",
       "answer": 5.2,
       "unit": "kg",
       "tolerance": 0.02

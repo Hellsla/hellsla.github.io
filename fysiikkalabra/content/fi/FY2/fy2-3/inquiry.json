@@ -50,20 +50,20 @@
       "justify": true,
       "choices": [
         {
-          "text": "Noin viisi minuuttia, koska energian pitää kertyä samassa ajassa.",
+          "text": "Noin $5\\,\\text{min}$, koska energian pitää kertyä samassa ajassa.",
           "feedback": "Samassa ajassa lamppu muuntaa vain $10\\,\\text{J/s} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$, kun kuivain muuntaa $1800\\,\\text{J/s} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$. Lampun teho on pieni, joten aikaa tarvitaan paljon enemmän."
         },
         {
-          "text": "Noin tunnin.",
+          "text": "Noin $1\\,\\text{h}$.",
           "feedback": "Tunnissa lamppu muuntaa $10\\,\\text{J/s} \\cdot 3600\\,\\text{s} = 36\\,000\\,\\text{J}$, mikä on alle kymmenesosa kuivaimen $540\\,000\\,\\text{J}$:sta. Aikaa tarvitaan selvästi enemmän."
         },
         {
-          "text": "Noin 15 tuntia.",
+          "text": "Noin $15\\,\\text{h}$.",
           "correct": true,
           "feedback": "Oikein: lampun teho on 180 kertaa pienempi kuin kuivaimen, joten aikaa tarvitaan 180 kertaa enemmän kuin $300\\,\\text{s}$, eli $54\\,000\\,\\text{s} = 15\\,\\text{h}$. Laskettuna $t = E : P = 540\\,000\\,\\text{J} : 10\\,\\text{W}$."
         },
         {
-          "text": "Noin 150 tuntia.",
+          "text": "Noin $150\\,\\text{h}$.",
           "feedback": "Niin kauan lamppu muuntaisi $10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} = 5\\,400\\,000\\,\\text{J}$, kymmenkertaisesti kuivaimen energian. Tarvittava aika on kymmenesosa tästä."
         }
       ]
@@ -75,17 +75,17 @@
       "title": "Energiamittarin lukemat",
       "source": "model",
       "source_note": "Laskettu laitteiden nimellistehoista (vedenkeitin $2000\\,\\text{W}$, tosteri $1000\\,\\text{W}$, televisio $80\\,\\text{W}$); esimerkkiaineisto, ei mittaus.",
-      "text": "Kolmeen laitteeseen kytketään energiamittari, ja lukema merkitään $20\\,\\text{s}$ välein. Taulukossa on mittarin lukema kilojouleina ($\\text{kJ}$) laitteen käynnistämisen jälkeen.\n\n| $t$ (s) | keitin | tosteri | televisio |\n| --- | --- | --- | --- |\n| 0 | 0 | 0 | 0 |\n| 20 | 40 | 20 | 1,6 |\n| 40 | 80 | 40 | 3,2 |\n| 60 | 120 | 60 | 4,8 |\n\nLukema kasvaa tasaisesti. Piirrettynä aikaa vastaan lukemat muodostavat suoran, jonka jyrkkyyden voi lukea taulukosta.",
+      "text": "Kolmeen laitteeseen kytketään energiamittari, ja lukema merkitään $20\\,\\text{s}$ välein. Taulukossa on mittarin lukema kilojouleina ($\\text{kJ}$) laitteen käynnistämisen jälkeen.\n\n| $t$ (s) | keitin | tosteri | televisio |\n| --- | --- | --- | --- |\n| $0$ | $0$ | $0$ | $0$ |\n| $20$ | $40$ | $20$ | $1{,}6$ |\n| $40$ | $80$ | $40$ | $3{,}2$ |\n| $60$ | $120$ | $60$ | $4{,}8$ |\n\nLukema kasvaa tasaisesti. Piirrettynä aikaa vastaan lukemat muodostavat suoran, jonka jyrkkyyden voi lukea taulukosta.",
       "question": {
         "type": "choice",
         "prompt": "Mistä taulukon luvuista nähdään, kuinka nopeasti tosteri muuntaa energiaa?",
         "choices": [
           {
             "text": "Lukemasta $60\\,\\text{kJ}$, koska se on tosterin suurin energia.",
-            "feedback": "Lukema $60\\,\\text{kJ}$ kertoo vain, kuinka paljon energiaa on muuntunut 60 sekunnissa. Nopeus saadaan, kun energia jaetaan ajalla."
+            "feedback": "Lukema $60\\,\\text{kJ}$ kertoo vain, kuinka paljon energiaa on muuntunut $60\\,\\text{s}$:ssa. Nopeus saadaan, kun energia jaetaan ajalla."
           },
           {
-            "text": "Energian lisäyksestä jaettuna ajalla: $20\\,\\text{kJ}$ jokaisessa 20 sekunnin välissä, eli $1000\\,\\text{J}$ sekunnissa.",
+            "text": "Energian lisäyksestä jaettuna ajalla: $20\\,\\text{kJ}$ jokaisessa $20\\,\\text{s}$:n välissä, eli $1000\\,\\text{J}$ sekunnissa.",
             "correct": true,
             "feedback": "Oikein. Energian lisäys $\\Delta E = 20\\,000\\,\\text{J}$ jaettuna ajalla $\\Delta t = 20\\,\\text{s}$ on $1000\\,\\text{J/s} = 1000\\,\\text{W}$. Sama osamäärä saadaan mistä tahansa aikavälistä, koska kasvu on tasaista."
           },
@@ -103,7 +103,7 @@
       "title": "Lampun energia ajan kuluessa",
       "source": "model",
       "source_note": "Laskettu lampun nimellistehosta $10\\,\\text{W}$ ja kuivaimen tehosta $1800\\,\\text{W}$; esimerkkiaineisto, ei mittaus.",
-      "text": "Hiustenkuivain muuntaa $5{,}0\\,\\text{min}$:ssa $0{,}54\\,\\text{MJ}$ sähköenergiaa. Taulukossa on $10\\,\\text{W}$:n lampun muuntama energia, kun se palaa yhtäjaksoisesti.\n\n| aika | lampun energia (MJ) |\n| --- | --- |\n| $1\\,\\text{h}$ | 0,036 |\n| $5\\,\\text{h}$ | 0,18 |\n| $24\\,\\text{h}$ | 0,86 |\n\nLampun teho on koko ajan sama $10\\,\\text{W}$. Silti sen muuntama energia kasvaa ajan mukana.",
+      "text": "Hiustenkuivain muuntaa $5{,}0\\,\\text{min}$:ssa $0{,}54\\,\\text{MJ}$ sähköenergiaa. Taulukossa on $10\\,\\text{W}$:n lampun muuntama energia, kun se palaa yhtäjaksoisesti.\n\n| aika | lampun energia (MJ) |\n| --- | --- |\n| $1\\,\\text{h}$ | $0{,}036$ |\n| $5\\,\\text{h}$ | $0{,}18$ |\n| $24\\,\\text{h}$ | $0{,}86$ |\n\nLampun teho on koko ajan sama $10\\,\\text{W}$. Silti sen muuntama energia kasvaa ajan mukana.",
       "question": {
         "type": "choice",
         "prompt": "Laske, kuinka kauan lampun täytyy palaa, jotta se on muuntanut saman energian kuin kuivain viidessä minuutissa. Tarkista tulos taulukosta.",
@@ -123,7 +123,7 @@
           },
           {
             "text": "Noin $24\\,\\text{h}$.",
-            "feedback": "24 tunnissa lamppu muuntaa $0{,}86\\,\\text{MJ}$, mikä on enemmän kuin kuivaimen $0{,}54\\,\\text{MJ}$. Sama energia saavutetaan jo aiemmin, kun lasketaan $t = E : P$."
+            "feedback": "$24\\,\\text{h}$:ssa lamppu muuntaa $0{,}86\\,\\text{MJ}$, mikä on enemmän kuin kuivaimen $0{,}54\\,\\text{MJ}$. Sama energia saavutetaan jo aiemmin, kun lasketaan $t = E : P$."
           }
         ]
       }
@@ -180,7 +180,7 @@
         {
           "text": "Tehoa ei muutettu kilowateiksi: oikein $E = 1{,}5\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 4{,}5\\,\\text{kWh}$, ja hinta on $0{,}90\\,\\text{€}$.",
           "correct": true,
-          "feedback": "Oikein. Kilowattituntia saadaan vain, kun teho on kilowatteina: $1500\\,\\text{W} = 1{,}5\\,\\text{kW}$. Virheen huomaa myös järkevyydestä: 900 euroa kolmen tunnin lämmityksestä olisi mahdoton."
+          "feedback": "Oikein. Kilowattituntia saadaan vain, kun teho on kilowatteina: $1500\\,\\text{W} = 1{,}5\\,\\text{kW}$. Virheen huomaa myös järkevyydestä: $900\\,\\text{€}$ kolmen tunnin lämmityksestä olisi mahdoton."
         },
         {
           "text": "Aika olisi pitänyt muuttaa sekunneiksi ennen laskua.",
@@ -192,7 +192,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Tulos 900 euroa on mahdoton: lämmitys maksaisi kolmessa tunnissa enemmän kuin kuukauden sähkö. Teho jäi watteihin, vaikka kWh vaatii kilowatit."
+          "feedback": "Tulos $900\\,\\text{€}$ on mahdoton: lämmitys maksaisi kolmessa tunnissa enemmän kuin kuukauden sähkö. Teho jäi watteihin, vaikka kWh vaatii kilowatit."
         }
       ],
       "optional": true
@@ -202,7 +202,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Valmiustila vuoden ajan",
-      "prompt": "Televisio ja pelikonsoli ovat valmiustilassa yhteensä teholla $2{,}5\\,\\text{W}$ koko vuoden, 365 vuorokautta. Paljonko energiaa tämä kuluttaa vuodessa? Vastaa kilowattitunteina.",
+      "prompt": "Televisio ja pelikonsoli ovat valmiustilassa yhteensä teholla $2{,}5\\,\\text{W}$ koko vuoden, $365\\,\\text{vrk}$. Paljonko energiaa tämä kuluttaa vuodessa? Vastaa kilowattitunteina.",
       "answer": 21.9,
       "unit": "kWh",
       "tolerance": 0.02,
@@ -218,10 +218,10 @@
         },
         {
           "value": 0.9125,
-          "feedback": "Käytit aikana $365\\,\\text{h}$. Vuodessa on 365 vuorokautta eli $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$."
+          "feedback": "Käytit aikana $365\\,\\text{h}$. Vuodessa on $365\\,\\text{vrk}$ eli $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$."
         }
       ],
-      "solution": "**Annettu:** teho $P = 2{,}5\\,\\text{W}$ (vakio), aika 365 vuorokautta\n\n**Kysytty:** energia $E$ kilowattitunteina\n\n**Periaate:** Valmiustilan teho on tasainen, joten muuntunut energia on teho kertaa aika.\n\n**Kaava:** $E = P\\,t$\n\n**Muunnokset:** $2{,}5\\,\\text{W} = 2{,}5 \\cdot 10^{-3}\\,\\text{kW} = 0{,}0025\\,\\text{kW}$ (sijoitetaan $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$) ja $365\\,\\text{vrk} = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$.\n\n**Sijoitus:** $E = 0{,}0025\\,\\text{kW} \\cdot 8760\\,\\text{h} = 21{,}9\\,\\text{kWh}$\n\n**Vastaus:** $22\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\\,\\text{W}$.\n\n**Järkevyys:** Vuorokaudessa kuluu noin $2{,}5\\,\\text{W} \\cdot 24\\,\\text{h} = 60\\,\\text{Wh} = 0{,}06\\,\\text{kWh}$, ja 365 päivässä noin $22\\,\\text{kWh}$. Hinta olisi noin $22 \\cdot 0{,}20\\,\\text{€} \\approx 4{,}4\\,\\text{€}$: pieni mutta turha."
+      "solution": "**Annettu:** teho $P = 2{,}5\\,\\text{W}$ (vakio), aika $365\\,\\text{vrk}$\n\n**Kysytty:** energia $E$ kilowattitunteina\n\n**Periaate:** Valmiustilan teho on tasainen, joten muuntunut energia on teho kertaa aika.\n\n**Kaava:** $E = P\\,t$\n\n**Muunnokset:** $2{,}5\\,\\text{W} = 2{,}5 \\cdot 10^{-3}\\,\\text{kW} = 0{,}0025\\,\\text{kW}$ (sijoitetaan $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$) ja $365\\,\\text{vrk} = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$.\n\n**Sijoitus:** $E = 0{,}0025\\,\\text{kW} \\cdot 8760\\,\\text{h} = 21{,}9\\,\\text{kWh}$\n\n**Vastaus:** $22\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\\,\\text{W}$.\n\n**Järkevyys:** Vuorokaudessa kuluu noin $2{,}5\\,\\text{W} \\cdot 24\\,\\text{h} = 60\\,\\text{Wh} = 0{,}06\\,\\text{kWh}$, ja $365\\,\\text{vrk}$ aikana noin $22\\,\\text{kWh}$. Hinta olisi noin $22 \\cdot 0{,}20\\,\\text{€} \\approx 4{,}4\\,\\text{€}$: pieni mutta turha."
     },
     {
       "id": "harjoitukset",
@@ -256,7 +256,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Pesukoneen teho",
-      "prompt": "Pesukone kuluttaa pesuohjelman aikana energiaa $1{,}2\\,\\text{kWh}$ 90 minuutin aikana. Mikä on sen keskiteho? Vastaa watteina.",
+      "prompt": "Pesukone kuluttaa pesuohjelman aikana energiaa $1{,}2\\,\\text{kWh}$ $90\\,\\text{min}$:n aikana. Mikä on sen keskiteho? Vastaa watteina.",
       "answer": 800,
       "unit": "W",
       "tolerance": 0.02,

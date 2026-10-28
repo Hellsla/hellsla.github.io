@@ -136,7 +136,7 @@
       "optional": true,
       "title": "Kuinka energia riippuu massasta?",
       "source": "model",
-      "source_note": "esimerkki: kuivan polttopuun poltosta lasketut arvot lämpöarvolla 15 MJ/kg (ilmakuiva puu)",
+      "source_note": "esimerkki: ilmakuivan polttopuun poltosta lasketut arvot lämpöarvolla $15\\,\\text{MJ/kg}$",
       "text": "Ilmakuivaa polttopuuta poltetaan eri määriä. Taulukossa on poltetun puun massa $m$ ja siitä vapautuva energia $E$.\n\n| $m$ ($\\text{kg}$) | $E$ ($\\text{MJ}$) |\n|---|---|\n| 1,0 | 15 |\n| 2,0 | 30 |\n| 4,0 | 60 |\n| 8,0 | 120 |",
       "question": {
         "type": "choice",
@@ -172,7 +172,7 @@
       "text": "Suklaalevyn pakkauksessa lukee:\n\n| Ravintoarvo | sadassa grammassa |\n|---|---|\n| energia | $2200\\,\\text{kJ}$ |\n\nKun energia muutetaan megajouleiksi ja massa kilogrammoiksi, merkinnästä saa suklaan lämpöarvon.",
       "question": {
         "type": "numeric",
-        "prompt": "Mikä on suklaan energiapitoisuus eli lämpöarvo $H$ yksikössä MJ/kg?",
+        "prompt": "Mikä on suklaan energiapitoisuus eli lämpöarvo $H$ yksikössä $\\text{MJ/kg}$?",
         "answer": 22,
         "unit": "MJ/kg",
         "tolerance": 0.02,
@@ -184,7 +184,7 @@
         "mistakes": [
           {
             "value": 2200,
-            "feedback": "Et ole muuttanut yksiköitä: kJ on tuhannesosa megajoulesta ja 100 g on kymmenesosa kilogrammasta."
+            "feedback": "Et ole muuttanut yksiköitä: $\\text{kJ}$ on tuhannesosa megajoulesta ja $100\\,\\text{g}$ on kymmenesosa kilogrammasta."
           },
           {
             "value": 0.022,
@@ -200,7 +200,7 @@
       "type": "explain",
       "title": "Johtopäätös: mitä lämpöarvo kertoo?",
       "prompt": "Kirjoita taulukoiden ja pakkausmerkinnän perusteella: mitä lämpöarvo kertoo polttoaineesta, ja miten sen avulla lasketaan massasta vapautuva energia? Miten ruoan pakkausmerkintä liittyy tähän?",
-      "model": "Lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta, ja se mitataan yksiköissä MJ/kg. Taulukossa bensiinillä lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivalla puulla $15\\,\\text{MJ/kg}$, joten saman massan polttaminen vapauttaa eri määrän energiaa. Energia on suoraan verrannollinen massaan, joten vapautuva energia saadaan kertomalla lämpöarvo massalla: $E = Hm$, kun massa on kilogrammoina. Ruoan pakkausmerkintä kertoo energian sadalle grammalle. Kun se muutetaan megajouleiksi kilogrammaa kohti, saadaan ruoan lämpöarvo, esimerkiksi $22\\,\\text{MJ/kg}$ suklaalle.",
+      "model": "Lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta, ja se mitataan yksiköissä $\\text{MJ/kg}$. Taulukossa bensiinillä lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivalla puulla $15\\,\\text{MJ/kg}$, joten saman massan polttaminen vapauttaa eri määrän energiaa. Energia on suoraan verrannollinen massaan, joten vapautuva energia saadaan kertomalla lämpöarvo massalla: $E = Hm$, kun massa on kilogrammoina. Ruoan pakkausmerkintä kertoo energian sadalle grammalle. Kun se muutetaan megajouleiksi kilogrammaa kohti, saadaan ruoan lämpöarvo, esimerkiksi $22\\,\\text{MJ/kg}$ suklaalle.",
       "criteria": [
         "Sanoin, että lämpöarvo on energia yhtä kilogrammaa kohti.",
         "Kirjoitin, että energia saadaan kertomalla lämpöarvo massalla.",
@@ -223,7 +223,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi taulukkoihin ja yhtälöön $E = Hm$. Palaa sitten alun kysymykseen: vapautuuko eri aineiden kilogrammasta yhtä paljon energiaa? Mitä pakkausmerkinnän kJ-luku kertoo?",
+      "prompt": "Vertaa ennusteitasi taulukkoihin ja yhtälöön $E = Hm$. Palaa sitten alun kysymykseen: vapautuuko eri aineiden kilogrammasta yhtä paljon energiaa? Mitä pakkausmerkinnän $\\text{kJ}$-luku kertoo?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -308,7 +308,7 @@
       "choices": [
         {
           "text": "Kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta palaessaan.",
-          "feedback": "Oikein. Lämpöarvon yksikkö MJ/kg kertoo energian massayksikköä kohti, ja koko energia saadaan kertomalla se massalla: $E = Hm$.",
+          "feedback": "Oikein. Lämpöarvon yksikkö $\\text{MJ/kg}$ kertoo energian massayksikköä kohti, ja koko energia saadaan kertomalla se massalla: $E = Hm$.",
           "correct": true
         },
         {

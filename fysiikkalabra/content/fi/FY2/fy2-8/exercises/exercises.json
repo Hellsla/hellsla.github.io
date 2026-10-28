@@ -87,9 +87,9 @@
     {
       "id": "fy2-8-L3-02",
       "level": 3,
-      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.) Kuinka monen neliökilometrin peltoalan biomassasähkö tarvitsisi? Anna vastaus neliökilometreinä. Vertaa aurinkopuiston tarvitsemaan alaan: mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
-      "answer": 100,
-      "unit": "km²",
+      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.) Kuinka moninkertaisen peltoalan biomassasähkö tarvitsisi aurinkopuiston alaan verrattuna? Mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
+      "answer": 50,
+      "unit": "kertaa",
       "tolerance": 0.02
     },
     {

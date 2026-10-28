@@ -58,10 +58,10 @@ Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos 
   <rect x="536" y="182" width="14" height="24" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
   <rect x="558" y="182" width="16" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="160" y="47.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$110\text{–}400\,\text{kV}$</div></foreignObject>
-  <foreignObject x="426" y="93.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
+  <foreignObject x="426" y="101.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
   <foreignObject x="506" y="47.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}4\,\text{kV}$</div></foreignObject>
-  <foreignObject x="90" y="92" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuntaja}$</div></foreignObject>
-  <line x1="135" y1="124" x2="135" y2="171" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <foreignObject x="85" y="86" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuntaja}$</div></foreignObject>
+  <line x1="130" y1="118" x2="130" y2="171" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
   <line x1="556" y1="82" x2="556" y2="130" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
   <foreignObject x="18" y="247.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{voimalaitos}$</div></foreignObject>
   <foreignObject x="175" y="247.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kantaverkko}$</div></foreignObject>
@@ -112,7 +112,7 @@ Muuntaja nostaa jännitteen voimalaitoksella ja laskee sen takaisin käyttäjän
 
 Kummassakin verkossa osa energiasta muuttuu matkalla lämmöksi ympäristöön eikä tule perille. Tätä kutsutaan **siirtohäviöksi**. Energia ei katoa (luku *Energialajit ja energian säilyminen*), mutta häviö on käyttäjälle hyödytöntä.
 
-Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuksesta, kun kulutus oli noin $83\,\text{TWh}$ (Energiateollisuus, Sähkövuosi 2024). Kaukolämmön verkkoon hankittiin vuonna 2024 noin $36\,\text{TWh}$ ja asiakkaille käytettiin noin $32{,}7\,\text{TWh}$, joten noin $9\,\%$ jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024; osuus on laskettu erotuksesta, joten se on arvio). Kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää: mitä suurempi lämpötilaero ympäristöön on, sitä enemmän lämpöä karkaa, ja lämpöä pääsee eristeen läpi koko putkiston pituudella.
+Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuksesta, kun kulutus oli noin $83\,\text{TWh}$ (Energiateollisuus, Sähkövuosi 2024). Tässä luvussa kulutusta käytetään sähköverkon lähtevänä energiana, joten $4\,\%$ on osuus siitä. Kaukolämmön verkkoon hankittiin vuonna 2024 noin $36\,\text{TWh}$ ja asiakkaille käytettiin noin $32{,}7\,\text{TWh}$, joten noin $9\,\%$ jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024; osuus on laskettu erotuksesta, joten se on arvio). Kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää: mitä suurempi lämpötilaero ympäristöön on, sitä enemmän lämpöä karkaa, ja lämpöä pääsee eristeen läpi koko putkiston pituudella.
 
 ### Energian siirtäminen ajassa: varastointi
 
@@ -149,7 +149,7 @@ Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy sillo
   <line x1="380" y1="20" x2="380" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
-Akkuun energia varastoituu kemialliseksi energiaksi. Pumppuvoimalassa vettä pumpataan ylempään altaaseen, ja alas valuva vesi pyörittää voimalaitoksen koneita. Lämpövarastossa kuuma vesi säilyy eristetyssä säiliössä, ja sitä käytetään esimerkiksi kaukolämpöverkossa. Sähköä ei varastoida sellaisenaan vaan muuttamalla se toiseksi energialajiksi ja takaisin, ja jokaisessa muunnoksessa osa energiasta muuttuu lämmöksi.
+Akkuun energia varastoituu kemialliseksi energiaksi. Pumppuvoimalassa vettä pumpataan ylempään altaaseen, ja alas valuva vesi pyörittää voimalaitoksen koneita. Lämpövarastossa kuuma vesi säilyy eristetyssä säiliössä, ja sitä käytetään esimerkiksi kaukolämpöverkossa. Sähköä ei varastoida suuria määriä sellaisenaan vaan muuttamalla se toiseksi energialajiksi ja takaisin, ja jokaisessa muunnoksessa osa energiasta muuttuu lämmöksi.
 
 ## Kaava: Siirtohäviö
 
@@ -181,7 +181,7 @@ missä $E_\text{lähtö}$ on verkkoon syötetty energia, $E_\text{perille}$ käy
   <foreignObject x="506" y="298" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$9\,\%$</div></foreignObject>
 </svg>
 
-Kuvassa virran leveys kuvaa energian määrää. Sähköverkossa $4\,\%$ lähtevästä energiasta häviää ja $96\,\%$ tulee perille, kaukolämmössä $9\,\%$ ja $91\,\%$.
+Kuvassa virran leveys kuvaa energian määrää. Sähköverkossa $4\,\%$ lähtevästä energiasta (kulutuksesta) häviää ja $96\,\%$ tulee perille, kaukolämmössä $9\,\%$ ja $91\,\%$.
 
 ### Laskeminen häviöprosentista
 

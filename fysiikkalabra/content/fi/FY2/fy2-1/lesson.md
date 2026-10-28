@@ -122,8 +122,7 @@ Energia ei pysy samassa muodossa. Taskulampussa pariston kemiallinen energia muu
   <foreignObject x="280.5" y="183.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lamppu}$</div></foreignObject>
   <path d="M367.5,99.5 L412,79 L415.5,87 L430,66 L404.5,63.5 L408.5,71.5 L364.5,92.5 Z" fill="#ffc078" stroke-linejoin="round"/>
   <path d="M361,151 L401.5,170 L398,177 L430,170 L415,141 L411.5,148 L371,129 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <foreignObject x="444" y="47.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{säteily-}$</div></foreignObject>
-  <foreignObject x="444" y="77.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
+  <foreignObject x="444" y="62.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{valo}$</div></foreignObject>
   <foreignObject x="444" y="139.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lämpö-}$</div></foreignObject>
   <foreignObject x="444" y="169.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{energia}$</div></foreignObject>
 </svg>

@@ -60,7 +60,7 @@
         },
         {
           "text": "Litra bensiiniä, noin kolminkertaisesti.",
-          "feedback": "Arvot tukevat tätä: litra bensiiniä on noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$, joten suhde on noin 3,2. Pieni määrä polttoainetta sisältää paljon energiaa.",
+          "feedback": "Arvot tukevat tätä: litra bensiiniä on noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$, joten suhde on $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3{,}2$. Pieni määrä polttoainetta sisältää paljon energiaa.",
           "correct": true
         },
         {
@@ -134,7 +134,7 @@
       "title": "Koe 2: Aurinko ja ihmiskunta",
       "intro": "Testaa ennuste 2. Valitse *Kohde*-valikosta ensin Auringon säteily Maahan yhdessä tunnissa ja sitten ihmiskunnan energiankäyttö vuodessa, ja kirjaa kummankin energia eksajouleina ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Vertaa lukuja keskenään.",
       "initial": {
-        "kohde": "Aurinko Maahan, 1 h"
+        "kohde": "Aurinko Maahan tunnissa"
       },
       "locked": [],
       "vary": "kohde",
@@ -178,7 +178,7 @@
             "feedback": "$34\\,\\text{MJ}$ on veteen siirtynyt energia, ei muualle päätynyt. Kysytty on loput, kun alussa oli $100\\,\\text{MJ}$."
           }
         ],
-        "solution": "**Annettu:** polttoaineen kemiallinen energia $E_\\text{alussa} = 100\\,\\text{MJ}$ ja veteen siirtynyt energia $E_\\text{vesi} = 34\\,\\text{MJ}$\n\n**Kysytty:** muualle kuin veteen päätynyt energia $E_\\text{muu}$ megajouleina\n\n**Periaate:** Energia säilyy, joten alkuenergia jakautuu kokonaan veteen ja muualle. Muu energia on lämpöä, joka syntyi voimalaitoksessa, verkossa ja keittimessä ja hajaantui ympäristöön.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{vesi} + E_\\text{muu}$, josta $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$\n\n**Muunnokset:** Ei tarvita: kaikki energiat on annettu megajouleina.\n\n**Sijoitus:** $E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Vastaus:** $66\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $34\\,\\text{MJ}$.\n\n**Järkevyys:** Vaiheiden lämmöt ovat $100 - 40 = 60$, $40 - 38 = 2$ ja $38 - 34 = 4$ megajoulea, ja ne tekevät yhteensä $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. Tämä on enemmän kuin veteen jäänyt energia, kuten voimalaitoksissa."
+        "solution": "**Annettu:** polttoaineen kemiallinen energia $E_\\text{alussa} = 100\\,\\text{MJ}$ ja veteen siirtynyt energia $E_\\text{vesi} = 34\\,\\text{MJ}$\n\n**Kysytty:** muualle kuin veteen päätynyt energia $E_\\text{muu}$ megajouleina\n\n**Periaate:** Energia säilyy, joten alkuenergia jakautuu kokonaan veteen ja muualle. Muu energia on lämpöä, joka syntyi voimalaitoksessa, verkossa ja keittimessä ja hajaantui ympäristöön.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{vesi} + E_\\text{muu}$, josta $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$\n\n**Muunnokset:** Ei tarvita: kaikki energiat on annettu megajouleina.\n\n**Sijoitus:** $E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Vastaus:** $66\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $34\\,\\text{MJ}$.\n\n**Järkevyys:** Vaiheiden lämmöt ovat $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ ja $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$, ja ne tekevät yhteensä $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. Tämä on enemmän kuin veteen jäänyt energia, kuten voimalaitoksissa."
       }
     },
     {
@@ -325,11 +325,11 @@
           "feedback": "Jaoit lukuarvot $1{,}0$ ja $10$ muuntamatta yksiköitä. Gigajoule on tuhat megajoulea, joten muunna ensin: $1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ} = 1000\\,\\text{MJ}$, ja jaa sitten $1000\\,\\text{MJ} : 10\\,\\text{MJ}$."
         },
         {
-          "value": 0.0001,
-          "feedback": "Lukuarvot 1,0 ja 10 eivät ole vertailukelpoisia ennen kuin yksiköt ovat samat. Muunna ensin: $1{,}0\\,\\text{GJ} = 1000\\,\\text{MJ}$."
+          "value": 0.01,
+          "feedback": "Jaoit päivän ruoan energian salaman energialla ja muunsit yksiköt, $10\\,\\text{MJ} : 1000\\,\\text{MJ} = 0{,}01$. Suhde on käänteinen: kysytään, montako ruokaa salaman energia vastaa, joten jaetaan salaman energia ruoan energialla, $1000\\,\\text{MJ} : 10\\,\\text{MJ}$."
         }
       ],
-      "solution": "**Annettu:** salama $E_\\text{salama} = 1{,}0\\,\\text{GJ}$ ja päivän ruoka $E_\\text{ruoka} = 10\\,\\text{MJ}$\n\n**Kysytty:** päivän ruokien lukumäärä $N$\n\n**Periaate:** Lukumäärä saadaan jakamalla salaman energia yhden päivän ruoan energialla, kun molemmat ovat samassa yksikössä.\n\n**Kaava:** $N = \\dfrac{E_\\text{salama}}{E_\\text{ruoka}}$\n\n**Muunnokset:** $1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ} = 1000\\,\\text{MJ}$\n\n**Sijoitus:** $N = \\dfrac{1000\\,\\text{MJ}}{10\\,\\text{MJ}} = 100$\n\n**Vastaus:** Noin $100$ päivän ruokaa, kaksi merkitsevää numeroa kuten tiedoissa $1{,}0\\,\\text{GJ}$ ja $10\\,\\text{MJ}$.\n\n**Järkevyys:** Gigajoule on tuhat megajoulea ja ruoka kymmenen, joten suhde on tuhat jaettuna kymmenellä, noin sata. Salaman energia riittäisi ihmiselle yli kolmeksi kuukaudeksi, mutta salama vapauttaa sen sekunnin murto-osassa."
+      "solution": "**Annettu:** salama $E_\\text{salama} = 1{,}0\\,\\text{GJ}$ ja päivän ruoka $E_\\text{ruoka} = 10\\,\\text{MJ}$\n\n**Kysytty:** päivän ruokien lukumäärä $N$\n\n**Periaate:** Lukumäärä saadaan jakamalla salaman energia yhden päivän ruoan energialla, kun molemmat ovat samassa yksikössä.\n\n**Kaava:** $N = E_\\text{salama} : E_\\text{ruoka}$\n\n**Muunnokset:** $1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ} = 1000\\,\\text{MJ}$\n\n**Sijoitus:** $N = E_\\text{salama} : E_\\text{ruoka} = 1000\\,\\text{MJ} : 10\\,\\text{MJ} = 100$\n\n**Vastaus:** Noin $100$ päivän ruokaa, kaksi merkitsevää numeroa kuten tiedoissa $1{,}0\\,\\text{GJ}$ ja $10\\,\\text{MJ}$.\n\n**Järkevyys:** Gigajoule on tuhat megajoulea ja ruoka kymmenen, joten suhde on tuhat jaettuna kymmenellä, noin sata. Salaman energia riittäisi ihmiselle yli kolmeksi kuukaudeksi, mutta salama vapauttaa sen sekunnin murto-osassa."
     },
     {
       "id": "tarkistus-3",

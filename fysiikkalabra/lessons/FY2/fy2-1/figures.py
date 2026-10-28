@@ -104,7 +104,7 @@ def chain():
     f.tex(bx, cy + 80, r"\text{lamppu}", "middle")
     f.block_arrow(366, cy - 22, 430, cy - 52, HEAT_LIGHT, shaft=8, head=26, headlen=22)
     f.block_arrow(366, cy + 22, 430, cy + 52, HEAT_LIGHT, shaft=24, head=40, headlen=26)
-    f.tex(444, cy - 56, r"\text{säteily-}", "start"); f.tex(444, cy - 26, r"\text{energia}", "start")
+    f.tex(444, cy - 41, r"\text{valo}", "start")
     f.tex(444, cy + 36, r"\text{lämpö-}", "start"); f.tex(444, cy + 66, r"\text{energia}", "start")
     return f.svg()
 

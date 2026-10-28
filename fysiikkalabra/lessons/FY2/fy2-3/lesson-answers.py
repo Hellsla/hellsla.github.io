@@ -30,7 +30,7 @@ a["inq-siirto-hinta"] = 2.5 / 1000 * YEAR_H * PRICE   # 4,38 EUR
 a["inq-siirto-365h"] = 2.5 / 1000 * 365               # mistake: 365 h instead of 365 d = 0,9125
 # Check 2: washing machine 1,2 kWh in 90 min
 a["inq-check2"] = 1.2 * KWH / (90 * 60)               # 4 320 000 J : 5400 s = 800 W
-a["inq-check2-ilman-muunnosta"] = 1.2 / 90            # mistake: 1,2 kWh : 90 min
+a["inq-check2-ilman-muunnosta"] = 1200 / 90           # mistake: 1200 Wh : 90 min = 13,3
 # Lamp comparison used in the text: 10 W 24 h in kWh
 a["text-lamppu-kWh"] = 0.010 * 24                     # 0,24 kWh
 a["text-kuivain-kWh"] = 1.8 * 5 / 60                  # 0,15 kWh

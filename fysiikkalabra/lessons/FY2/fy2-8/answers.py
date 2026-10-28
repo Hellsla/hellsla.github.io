@@ -20,7 +20,9 @@ a["fy2-8-L2-04"] = 69 * 3.6                            # petrol 69 g/MJ · 3,6 M
 m_bensa = 6.0 * 32 * 69                                # petrol car 100 km: 6,0 l · 32 MJ/l = 192 MJ; · 69 g/MJ = 13 248 g
 a["fy2-8-L3-01"] = m_bensa / 18                        # equal emission with an electric car (18 kWh): e = 13 248 g / 18 kWh = 736 g/kWh -> 740 g/kWh
 A_bio_ha = 100 / 0.010                                 # land use: 100 GWh : 0,010 GWh/ha = 10 000 ha of energy crops
-a["fy2-8-L3-02"] = A_bio_ha * 0.01                     # 1 ha = 0,01 km^2: 100 km^2 (solar park 100 : 0,50 = 200 ha = 2,0 km^2, 50 times less)
+A_bio = A_bio_ha * 0.01                                # 1 ha = 0,01 km^2: 100 km^2
+A_sol = 100 / 0.50 * 0.01                              # solar park 100 : 0,50 = 200 ha = 2,0 km^2
+a["fy2-8-L3-02"] = A_bio / A_sol                       # ratio of areas: 100 : 2,0 = 50 times
 m_bussi = 30 * 36 * 74 / 25                            # bus per passenger: 30 l · 36 MJ/l · 74 g/MJ = 79 920 g, / 25 = 3196,8 g
 a["fy2-8-L3-03"] = m_bensa / m_bussi                   # car alone / bus per passenger = 13 248 / 3196,8 = 4,14 -> 4,1
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -5,7 +5,7 @@
 ## Ydinajatus
 Aurinko lämmittää maanpintaa säteilemällä sille energiaa, näkyvänä valona ja lähi-infrapunasäteilynä. Ilmakehä päästää tämän säteilyn suurelta osin läpi. Lämmin maanpinta lähettää energiaa takaisin avaruuteen lämpösäteilynä, ja sitä ilmakehän **kasvihuonekaasut** imevät. Tärkeimpiä niistä ovat vesihöyry, hiilidioksidi $\text{CO}_2$ ja metaani $\text{CH}_4$. Ne säteilevät energian uudelleen joka suuntaan, joten osa siitä palaa takaisin maanpinnalle.
 
-Kasvihuonekaasut siis päästävät auringon säteilyn läpi mutta hidastavat lämpösäteilyn pääsyä pois. Maanpinta pysyy lämpimämpänä kuin ilman niitä: **kasvihuoneilmiö** nostaa maapallon keskilämpötilan noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een. Tämä luonnollinen ilmiö pitää maapallon asuttavana, sillä ilman sitä merien vesi olisi jäässä.
+Kasvihuonekaasut siis päästävät auringon säteilyn läpi mutta hidastavat lämpösäteilyn pääsyä pois. Maanpinta pysyy lämpimämpänä kuin ilman niitä: **kasvihuoneilmiö** nostaa maapallon keskilämpötilan arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$. Tämä luonnollinen ilmiö pitää maapallon asuttavana, sillä ilman sitä merien vesi olisi jäässä.
 
 <svg data-fig="greenhouse" viewBox="0 0 600 440" role="img" aria-label="Periaatekuva, ei mittakaavassa: kasvihuoneilmiö. Auringon säteily (oranssi nuoli), näkyvä valo ja lähi-infrapuna, kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä ylöspäin (punaiset nuolet), ja ilmakehän kasvihuonekaasut imevät sen. Kaasut säteilevät energian uudelleen: osa palaa takaisin alas maanpinnalle ja osa karkaa avaruuteen. Nuolten paksuus havainnollistaa suuntaa, ei tarkkoja energioita." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -176,7 +176,9 @@ m &= e \cdot E \\
 &= 490\,\text{g/kWh} \cdot 4800\,\text{kWh} \\
 &= 2\,352\,000\,\text{g} \\
 &= 2\,352\,000 \cdot 0{,}001\,\text{kg} \\
-&= 2352\,\text{kg} = 2352 \cdot 0{,}001\,\text{t}
+&= 2352\,\text{kg} \\
+&= 2352 \cdot 0{,}001\,\text{t} \\
+&= 2{,}352\,\text{t}
 \end{aligned}
 ```
 
@@ -186,7 +188,7 @@ m &= e \cdot E \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Pyöristetyillä luvuilla $500\,\text{g/kWh} \cdot 5000\,\text{kWh} = 2\,500\,000\,\text{g} = 2{,}5\,\text{t}$, mikä on lähellä tulosta. Jos sama sähkö tuotettaisiin tuulivoimalla, päästö olisi $12\,\text{g/kWh} \cdot 4800\,\text{kWh} \approx 58\,\text{kg}$, noin 41 kertaa pienempi ($490 : 12 \approx 41$).
+**Järkevyys.** Pyöristetyillä luvuilla $500\,\text{g/kWh} \cdot 5000\,\text{kWh} = 2\,500\,000\,\text{g} = 2\,500\,000 \cdot 10^{-6}\,\text{t} = 2{,}5\,\text{t}$, mikä on lähellä tulosta. Jos sama sähkö tuotettaisiin tuulivoimalla, päästö olisi $12\,\text{g/kWh} \cdot 4800\,\text{kWh} = 57\,600\,\text{g} = 57\,600 \cdot 0{,}001\,\text{kg} \approx 58\,\text{kg}$, noin 41 kertaa pienempi ($490 : 12 \approx 41$).
 
 ## Yleinen virhekäsitys
 **"Tuuli-, aurinko- ja ydinvoima ovat päästöttömiä."** Ne ovat pienipäästöisiä, eivät päästöttömiä: voimaloiden rakentaminen, polttoaineen valmistus ja kuljetukset aiheuttavat päästöjä, tuulivoimalla ja ydinvoimalla noin $12\,\text{g/kWh}$. Kivihiilellä luku on noin $820\,\text{g/kWh}$.
@@ -194,7 +196,7 @@ m &= e \cdot E \\
 **"Kasvihuoneilmiö on haitallinen ilmiö."** Luonnollinen kasvihuoneilmiö on välttämätön, sillä ilman sitä maapallon keskilämpötila olisi noin $-18\,{}^\circ\text{C}$. Ongelma on ilmiön voimistuminen, kun ilmakehään lisätään hiilidioksidia ja metaania.
 
 ## Tiivistelmä
-- Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä pois. Luonnollinen kasvihuoneilmiö nostaa keskilämpötilan noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een.
+- Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä pois. Luonnollinen kasvihuoneilmiö nostaa keskilämpötilan arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$.
 - Polttoaineiden polttaminen lisää ilmakehän hiilidioksidia, voimistaa kasvihuoneilmiötä ja johtaa ilmastonmuutokseen.
 - Päästö on päästökerroin kertaa energia: $m = e \cdot E$. Tuotantotapoja verrataan elinkaaren päästökertoimilla, jotka vaihtelevat noin $12\,\text{g/kWh}$:sta (ydin- ja tuulivoima) noin $820\,\text{g/kWh}$:iin (kivihiili).
 - Päästökerroin ei kerro kaikkea: maankäyttö, kuljetukset, jäte, turvallisuus ja sähkön saatavuus punnitaan erikseen, kun etsitään kestävää energiataloutta.

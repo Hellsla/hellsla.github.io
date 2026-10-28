@@ -16,9 +16,15 @@ a["puu_1kg"] = H_puu * 1.0                                # 15 MJ
 a["puu_2kg"] = H_puu * 2.0                                # 30 MJ
 a["puu_4kg"] = H_puu * 4.0                                # 60 MJ
 a["puu_8kg"] = H_puu * 8.0                                # 120 MJ
-# misconception: wet wood
-a["tiivistelma_sakki_puu"] = H_puu * 10                   # 10 kg wood = 150 MJ
-a["tiivistelma_sakki_bensiini"] = H_bens * 10             # 10 kg petrol = 430 MJ
+# check 3 (tarkistus-3): 10 kg pellets vs 10 kg petrol
+a["tark3_pelletti"] = H_pel * 10                          # 17 · 10 = 170 MJ
+a["tark3_bensiini"] = H_bens * 10                         # 43 · 10 = 430 MJ
+a["tark3_suhde"] = a["tark3_bensiini"] / a["tark3_pelletti"]  # 430 : 170 = 2,5
+# lesson.md:39, bensiini 3,0 kg
+a["kaava_bensiini_3kg"] = H_bens * 3.0                    # 43 · 3,0 = 129 MJ
+# exit ticket
+a["lippu_E"] = H_puu * 5.0                                # q2: 15 · 5,0 = 75 MJ
+a["lippu_H"] = 1.5 / 0.100                                # q3: 1500 kJ = 1,5 MJ per 0,100 kg = 15 MJ/kg
 # error-spotting: 250 g of wood
 a["virhe_oikea_E"] = H_puu * 0.250                        # 15 · 0,250 = 3,75 MJ
 a["virhe_vaara_E"] = H_puu * 250                          # 3750 MJ (forgot g -> kg)

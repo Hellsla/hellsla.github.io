@@ -11,11 +11,11 @@ a["data-fi-muut_TWh"] = 79.9 - (31 + 20.2 + 14.1 + 9.5 + 3.4 + 0.9)   # other so
 a["maailma-keskiteho_GW"] = 3.0e4 * 1e3 / h_year   # world ~3·10^4 TWh/yr = 3·10^7 GWh : 8760 h = 3425 GW
 a["virhe-suhde"] = 14 * h_year / (3.0e4 * 1e3 / h_year)   # 14 GWh·8760 h = 122 640 "GW" : 3425 GW = 36 ("kymmeniä kertoja")
 # example week (invented, rounded; daily mean powers in GW): consumption, nuclear, wind
-kul = [12.8, 13.4, 14.1, 14.6, 14.2, 12.9, 12.3]
+kul = [11.3, 11.9, 12.6, 13.1, 12.7, 11.4, 10.8]
 ydin = [4.3] * 7
 tuuli = [6.4, 5.1, 2.2, 0.4, 1.1, 3.6, 5.8]
-a["viikko-muut-to_GW"] = kul[3] - ydin[3] - tuuli[3]   # Thursday: 14,6 - 4,3 - 0,4 = 9,9 GW from other sources
-a["viikko-muut-ma_GW"] = kul[0] - ydin[0] - tuuli[0]   # Monday: 12,8 - 4,3 - 6,4 = 2,1 GW
+a["viikko-muut-to_GW"] = kul[3] - ydin[3] - tuuli[3]   # Thursday: 13,1 - 4,3 - 0,4 = 8,4 GW from other sources
+a["viikko-muut-ma_GW"] = kul[0] - ydin[0] - tuuli[0]   # Monday: 11,3 - 4,3 - 6,4 = 0,6 GW
 a["viikko-tuuli-max-osuus"] = max(tuuli) / 8          # windiest day 6,4 GW of about 8 GW nominal = 0,8
 a["viikko-tuuli-min-osuus"] = min(tuuli) / 8          # calmest day 0,4 GW of about 8 GW nominal = 0,05
 a["tuulet-ol3"] = 1600 / 5.0                    # 1600 MW : 5,0 MW = 320 turbines (nominal power)

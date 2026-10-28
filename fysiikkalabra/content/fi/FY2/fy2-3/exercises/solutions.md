@@ -43,7 +43,7 @@
 **Kysytty:** energia $E$ kilowattitunteina
 **Periaate:** Lämmitin muuntaa energiaa tasaisella teholla, joten energia on teho kertaa aika. Kun teho on kilowatteina ja aika tunteina, tulos tulee suoraan kilowattitunteina.
 **Kaava:** $E = P\,t$
-**Muunnokset:** Ei tarvita: $\text{kW} \cdot \text{h} = \text{kWh}$. Jouleina tulos olisi $3{,}0 \cdot 1000\,\text{W} \cdot 3600\,\text{s} = 1{,}08 \cdot 10^{7}\,\text{J}$.
+**Muunnokset:** Ei tarvita: $\text{kW} \cdot \text{h} = \text{kWh}$. Jouleina tulos olisi $3{,}0 \cdot 1000\,\text{W} \cdot 3600\,\text{s} \approx 1{,}1 \cdot 10^{7}\,\text{J}$.
 **Sijoitus:** $E = 1{,}5\,\text{kW} \cdot 2{,}0\,\text{h} = 3{,}0\,\text{kWh}$
 **Vastaus:** $3{,}0\,\text{kWh}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Yhdessä tunnissa kuluu $1{,}5\,\text{kWh}$, joten kahdessa tunnissa kaksi kertaa niin paljon, $3{,}0\,\text{kWh}$. Lämmittimelle se on tavallinen määrä.
@@ -53,7 +53,7 @@
 **Kysytty:** hinta euroina
 **Periaate:** Kiuas muuntaa energiaa tasaisella teholla. Ensin lasketaan kulutettu energia kilowattitunteina, sitten sen hinta.
 **Kaava:** $E = P\,t$ ja $\text{hinta} = E \cdot \text{yksikköhinta}$
-**Muunnokset:** Teho on jo kilowatteina. Aika: $1\,\text{min} = \tfrac{1}{60}\,\text{h}$, joten $150\,\text{min} = 150 \cdot \tfrac{1}{60}\,\text{h} = 2{,}5\,\text{h}$. Hinta $20\,\text{snt/kWh} = 0{,}20\,\text{€/kWh}$.
+**Muunnokset:** Teho on jo kilowatteina. Aika: $1\,\text{min} = 1\,\text{h} : 60$, joten $150\,\text{min} = 150 \cdot (1\,\text{h} : 60) = 2{,}5\,\text{h}$. Hinta $20\,\text{snt/kWh} = 0{,}20\,\text{€/kWh}$.
 **Sijoitus:** $E = 6{,}0\,\text{kW} \cdot 2{,}5\,\text{h} = 15\,\text{kWh}$ ja $\text{hinta} = 15\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 3{,}0\,\text{€}$
 **Vastaus:** $3{,}0\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $6{,}0\,\text{kW}$.
 **Järkevyys:** Pyöristetyillä luvuilla $6\,\text{kW} \cdot 2{,}5\,\text{h} \approx 15\,\text{kWh}$, joka maksaa noin $15 \cdot 0{,}20\,\text{€} = 3{,}0\,\text{€}$. Saunomisen hinta on muutaman euron luokkaa.
@@ -86,10 +86,10 @@
 **Muunnokset:** $6 \cdot 1{,}5\,\text{W} = 9{,}0\,\text{W}$, ja sijoittamalla $1\,\text{W} = 10^{-3}\,\text{kW}$ saadaan $9{,}0\,\text{W} = 9{,}0 \cdot 10^{-3}\,\text{kW} = 0{,}0090\,\text{kW}$.
 **Sijoitus:** $E = 0{,}0090\,\text{kW} \cdot 8760\,\text{h} = 78{,}84\,\text{kWh}$
 **Vastaus:** $79\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5\,\text{W}$.
-**Järkevyys:** Yhdeksän wattia kuluttaa vuorokaudessa $9\,\text{W} \cdot 24\,\text{h} = 216\,\text{Wh} \approx 0{,}22\,\text{kWh}$, ja 365 vuorokaudessa noin $80\,\text{kWh}$. Hinta olisi noin $16\,\text{€}$ vuodessa, joten pieni teho maksaa, kun se kestää koko vuoden.
+**Järkevyys:** Yhdeksän wattia kuluttaa vuorokaudessa $9\,\text{W} \cdot 24\,\text{h} = 216\,\text{Wh} \approx 0{,}22\,\text{kWh}$, ja $365\,\text{vrk}$ aikana noin $80\,\text{kWh}$. Hinta olisi noin $16\,\text{€}$ vuodessa, joten pieni teho maksaa, kun se kestää koko vuoden.
 
 ## fy2-3-L3-01
-**Annettu:** hehkulampun teho $60\,\text{W}$, LEDin $8{,}0\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa 365 vuorokautta, hinta $0{,}20\,\text{€/kWh}$
+**Annettu:** hehkulampun teho $60\,\text{W}$, LEDin $8{,}0\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa $365\,\text{vrk}$, hinta $0{,}20\,\text{€/kWh}$
 **Kysytty:** vuodessa säästyvä hinta euroina
 **Periaate:** Säästö on kahden lampun energiankulutuksen erotus kertaa hinta. Teho on molemmilla tasainen, joten energia on teho kertaa aika.
 **Kaava:** $\Delta E = (P_1 - P_2)\,t$ ja $\text{säästö} = \Delta E \cdot \text{yksikköhinta}$
@@ -116,4 +116,4 @@
 **Muunnokset:** Ei tarvita: teho on kilowatteina ja aika tunteina, joten energia on kilowattitunteina.
 **Sijoitus:** $E = 2{,}3\,\text{kW} \cdot 8{,}0\,\text{h} = 18{,}4\,\text{kWh}$ ja $s = \dfrac{18{,}4\,\text{kWh}}{18\,\text{kWh}} \cdot 100\,\text{km} = 102{,}2\,\text{km}$
 **Vastaus:** $100\,\text{km}$ (eli $1{,}0 \cdot 10^{2}\,\text{km}$), kaksi merkitsevää numeroa kuten tehossa $2{,}3\,\text{kW}$.
-**Järkevyys:** Latausenergia $18{,}4\,\text{kWh}$ on hieman suurempi kuin yhden sadan kilometrin kulutus $18\,\text{kWh}$, joten matka on hieman yli 100 km. Yöllinen pistorasialataus antaa siis noin päivän ajomatkan.
+**Järkevyys:** Latausenergia $18{,}4\,\text{kWh}$ on hieman suurempi kuin yhden sadan kilometrin kulutus $18\,\text{kWh}$, joten matka on hieman yli $100\,\text{km}$. Yöllinen pistorasialataus antaa siis noin päivän ajomatkan.

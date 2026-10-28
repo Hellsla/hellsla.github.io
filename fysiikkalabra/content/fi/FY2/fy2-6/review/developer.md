@@ -1,8 +1,7 @@
 VERDICT: DONE
-Round 1 fix.
-- inquiry.json: new Tutki item `data-viikko` (an invented, rounded winter week of consumption, nuclear and wind as daily mean powers, wind's nominal power about $8\,\text{GW}$, labelled as an example) with a numeric task (other sources on Thursday, $9{,}9\,\text{GW}$) and a complete solution, before the conclusion; the conclusion's prompt, model and criterion now use it. data-fi: "muut lähteet 0,8" row instead of "rounding"; answer $2{,}31\,\text{GW}$ with three figures; 2306 feedback says MW only. Virhe: "kymmeniä kertoja koko maailman voimaloiden keskiteho". Quantities in LaTeX (ennuste-1, data-yksikko table, siirto, tarkistus-3), conversions by substitution (data-fi, siirto, tarkistus-2). tarkistus-3 (criteria comparison) is on the core path now.
-- lesson.md: blank line before the criteria list; clearer Kuljetettavuus; "kapasiteettikerroin" dropped; LaTeX $80\,\text{TWh}$ and $5\,\text{MW}$; the group table shortened so all columns show at 360 px; the log-scale text no longer speaks of a "ruutu".
-- figures.py: plants redrawn (reactor vs boiler, generator G, solar without G, grey resource arrows, dark electricity arrows, labelled orange heat arrows); unit-power uses dots instead of bars; fi-bars aria says two fifths.
-- lesson-answers.py: the new numbers (muut, week, world mean power ratio 36).
-- exit-ticket.json: conversion by substitution.
-Not fixable here: the source-note pill (shared component).
+
+Round 2.
+lesson.md: Sijoitus split into one `=` step per row (osuus = P_ka : P_nim, then 1598 kW : 5000 kW, then 0,32); Tulos shows 1598 kW = 1,598 · 1000 kW ≈ 1,6 MW; Järkevyys shows 43 800 000 kWh = 43,8 · 10^6 kWh = 43,8 GWh; stage 4 "14 · 10^6 kWh" grouped so it no longer breaks mid-product.
+inquiry.json: example week consumption lowered by 1,5 GW (11,3 / 11,9 / 12,6 / 13,1 / 12,7 / 11,4 / 10,8); Thursday answer 8,4 GW, mistakes 8,8 / 12,7 / 0,6, hints, solution and Järkevyys (Monday 0,6 GW, "moninkertaiseksi") updated; tarkistus-2 9000 MWh = 9 · 1000 MWh = 9 GWh; table cells and header units as maths in data-fi and data-viikko; data-yksikko has source example with source_note; no plain-text number+unit remains.
+lesson-answers.py: week data and comments updated (8,4 and 0,6 GW computed).
+check_lesson.py all ok; 390 px example screenshot checked.

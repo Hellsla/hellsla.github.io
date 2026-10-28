@@ -122,11 +122,11 @@
       "measure": [
         {
           "key": "Ep",
-          "label": "E_p"
+          "label": "$E_\\text{p}$"
         },
         {
           "key": "Ek",
-          "label": "E_k"
+          "label": "$E_\\text{k}$"
         },
         {
           "key": "Eth",
@@ -134,7 +134,7 @@
         },
         {
           "key": "Ekok",
-          "label": "E"
+          "label": "$E$"
         }
       ],
       "min": 3,
@@ -195,11 +195,11 @@
       "measure": [
         {
           "key": "Ep",
-          "label": "E_p"
+          "label": "$E_\\text{p}$"
         },
         {
           "key": "Ek",
-          "label": "E_k"
+          "label": "$E_\\text{k}$"
         },
         {
           "key": "Eth",
@@ -207,7 +207,7 @@
         },
         {
           "key": "Ekok",
-          "label": "E"
+          "label": "$E$"
         }
       ],
       "min": 3,
@@ -241,7 +241,7 @@
       "type": "interpret",
       "source": "simulated",
       "title": "Esimerkkiaineisto: pomppiva pallo",
-      "text": "Kumipallo pudotetaan lattialle. Taulukossa on pallon mekaaninen energia pudotushetkellä ja kunkin pompun jälkeen (simuloitu esimerkkiaineisto, ei oikea koe). Pallo ja lattia muodostavat eristetyn systeemin, ja ääntä ei oteta huomioon.\n\n| Pomppuja | Mekaaninen energia (J) |\n|---|---|\n| 0 | 0,60 |\n| 1 | 0,48 |\n| 2 | 0,38 |\n| 3 | 0,31 |",
+      "text": "Kumipallo pudotetaan lattialle. Taulukossa on pallon mekaaninen energia pudotushetkellä ja kunkin pompun jälkeen (simuloitu esimerkkiaineisto, ei oikea koe). Pallo ja lattia muodostavat eristetyn systeemin, ja ääntä ei oteta huomioon.\n\n| Pomppuja | Mekaaninen energia $E$ (J) |\n|---|---|\n| 0 | $0{,}60$ |\n| 1 | $0{,}48$ |\n| 2 | $0{,}38$ |\n| 3 | $0{,}31$ |",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka paljon mekaanista energiaa on muuttunut lämpöenergiaksi kolmen pompun aikana? Vastaa jouleina.",
@@ -433,7 +433,7 @@
           "feedback": "Laskit sähköenergian ja valon yhteen. Sähköenergia jakautuu kahteen osaan, joten vähennä valo sähköenergiasta."
         }
       ],
-      "solution": "**Annettu:** sähköenergia $E_\\text{sähkö} = 2{,}5\\,\\text{kJ}$, näkyvä valo $E_\\text{valo} = 0{,}12\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Lamppu muuttaa sähköenergian näkyväksi valoksi ja lämpöenergiaksi; suurin osa lämpöenergiasta lähtee lampusta näkymättömänä lämpösäteilynä ja lämmittää ympäristöä. Energiaa ei synny eikä katoa, joten $E_\\text{alussa} = E_\\text{lopussa}$.\n\n**Kaava:** $E_\\text{sähkö} = E_\\text{valo} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{sähkö} - E_\\text{valo}$\n\n**Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Vastaus:** $2{,}4 \\cdot 10^{3}\\,\\text{J}$, kaksi merkitsevää numeroa, koska sähköenergia $2{,}5\\,\\text{kJ}$ on annettu sadan joulen tarkkuudella ja rajoittaa erotusta.\n\n**Järkevyys:** Näkyväksi valoksi muuttuu vain $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0{,}05$ eli noin viisi prosenttia, mikä on hehkulampulle tavallista, ja loput on lämpöä. Takaisinlasku: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
+      "solution": "**Annettu:** sähköenergia $E_\\text{sähkö} = 2{,}5\\,\\text{kJ}$, näkyvä valo $E_\\text{valo} = 0{,}12\\,\\text{kJ}$\n\n**Kysytty:** syntyvä lämpöenergia $E_\\text{lämpö}$ yksikössä $\\text{J}$\n\n**Periaate:** Lamppu muuttaa sähköenergian näkyväksi valoksi ja lämpöenergiaksi; lämpöenergia lämmittää lampun ja ympäristön. Energiaa ei synny eikä katoa, joten $E_\\text{alussa} = E_\\text{lopussa}$.\n\n**Kaava:** $E_\\text{sähkö} = E_\\text{valo} + E_\\text{lämpö}$, joten $E_\\text{lämpö} = E_\\text{sähkö} - E_\\text{valo}$\n\n**Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten $2{,}5\\,\\text{kJ} = 2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ ja $0{,}12\\,\\text{kJ} = 0{,}12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Sijoitus:** $E_\\text{lämpö} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Vastaus:** $2{,}4 \\cdot 10^{3}\\,\\text{J}$, kaksi merkitsevää numeroa, koska sähköenergia $2{,}5\\,\\text{kJ}$ on annettu sadan joulen tarkkuudella ja rajoittaa erotusta.\n\n**Järkevyys:** Näkyväksi valoksi muuttuu vain $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0{,}05$ eli noin viisi prosenttia, mikä on hehkulampulle tavallista, ja loput on lämpöä. Takaisinlasku: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
     },
     {
       "id": "check-3",

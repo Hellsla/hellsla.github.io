@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja vastaus halutaan megajouleina, kuten lämpöarvossa.
 **Sijoitus:** $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,000\,\text{kg} = 312\,000\,\text{MJ}$
 **Vastaus:** $310\,000\,\text{MJ}$, kaksi merkitsevää numeroa kuten lämpöarvossa $26\,\tfrac{\text{MJ}}{\text{kg}}$.
-**Järkevyys:** Karkeasti $10\,000\,\text{kg} \cdot 30\,\tfrac{\text{MJ}}{\text{kg}} = 300\,000\,\text{MJ}$. Voimalaitoksen tunnin energia on suuri, koska polttoainetta kuluu kymmeniä tonneja.
+**Järkevyys:** Karkeasti $10\,000\,\text{kg} \cdot 30\,\tfrac{\text{MJ}}{\text{kg}} = 300\,000\,\text{MJ}$. Voimalaitoksen tunnin energia on suuri, koska polttoainetta kuluu noin kymmenen tonnia.
 
 ## fy2-5-L1-04
 **Annettu:** jyrsinturve, massa $m = 400\,\text{kg}$ ja lämpöarvo $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
@@ -96,7 +96,7 @@
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
 **Sijoitus:** $m_\text{puu} = 120\,\text{MJ} : 15\,\tfrac{\text{MJ}}{\text{kg}} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = 120\,\text{MJ} : 43\,\tfrac{\text{MJ}}{\text{kg}} = 2{,}79\,\text{kg}$. Erotus: $\Delta m = 8{,}0\,\text{kg} - 2{,}79\,\text{kg} = 5{,}21\,\text{kg}$.
 **Vastaus:** Puuta tarvitaan $5{,}2\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}}$. Puuta tarvitaan enemmän, koska yksi kilogramma puuta sisältää vähemmän kemiallista energiaa kuin kilogramma öljyä.
-**Järkevyys:** Puun massa on noin $2{,}9$-kertainen öljyn massaan verrattuna, sillä $43 : 15 = 2{,}87$. Siksi $2{,}87 \cdot 2{,}79\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus $8{,}0\,\text{kg} - 2{,}79\,\text{kg}$ on yli kaksi kertaa öljyn massa.
+**Järkevyys:** Puun massa on noin $2{,}9$-kertainen öljyn massaan verrattuna, sillä $43 : 15 = 2{,}87$. Siksi $2{,}87 \cdot 2{,}79\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}87 - 1 = 1{,}87$ kertaa öljyn massa: $1{,}87 \cdot 2{,}79\,\text{kg} \approx 5{,}2\,\text{kg}$, kuten pitää.
 
 ## fy2-5-L3-02
 **Annettu:** ruoan energiapitoisuus $H = 18\,\tfrac{\text{MJ}}{\text{kg}}$, massa $m = 2{,}4\,\text{kg}$, päiväkulutus $12\,\text{MJ}$

@@ -36,5 +36,7 @@ a["inq-tarkistus-2-haviot"] = 0.50 / 2.5 * 100             # mistake: E_h / E_o 
 a["inq-tarkistus-2-kaanteinen"] = 2.5 / 2.0 * 100          # mistake: E_o / E_a = 125 %
 a["inq-virhe"] = 2.4 / 8.0 * 100                           # error-spotting: correct eta = 30 %; the student's 8,0/2,4 = 3,33 = 333 %
 a["inq-virhe-vaara"] = 8.0 / 2.4 * 100
-a["inq-tulkinta-eta"] = 1.5 / 6.0 * 100                    # interpret: Sankey bands 6,0 cm and 1,5 cm: eta = 25 %
+a["inq-koe1-haviot-osuus"] = 450000 / 600000 * 100         # koe-1 question: E_h / E_o = 75 % (answer); mistake 25 % = eta
+a["fig-sankey-eta"] = 4.0 / 5.0 * 100                      # Sankey cm example (Kahden lampun vertailu): 4,0 cm : 5,0 cm = 80 %
+a["misc-bulb100-Pa"] = 0.05 * 100                          # misconception: 100 W filament lamp, eta = 5 %: 5 W of light
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

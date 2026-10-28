@@ -7,7 +7,7 @@ Kun laite muuntaa energiaa, kiinnostaa kaksi asiaa: kuinka paljon energiaa muunt
 
 Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho on energia aikayksikköä kohti: jos laite muuntaa joka sekunti $2000\,\text{J}$, sen teho on $2000\,\text{J/s} = 2000\,\text{W}$.
 
-<svg data-fig="bars" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 100 W vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon." style="max-width:100%;font-size:24px">
+<svg data-fig="bars" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 80 W vain 80 J. Pylvään pituus on suoraan verrannollinen tehoon." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy23-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <foreignObject x="96.5" y="11.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{energiaa muuntuu yhdessä sekunnissa}$</div></foreignObject>
   <foreignObject x="30" y="75.5" width="261" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vedenkeitin},\ P = 2000\,\text{W}$</div></foreignObject>
@@ -81,7 +81,7 @@ Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lä
 </svg>
 
 ### Kilowattitunti
-Sähköenergia laskutetaan kilowattitunteina (kWh). Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite muuntaa tunnissa. Joulemuodossa tunti on $3600\,\text{s}$ ja kilowatti $1000\,\text{W}$, joten
+Sähköenergia laskutetaan kilowattitunteina (kWh). Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite muuntaa tunnissa. Jouleina laskettaessa tunti on $3600\,\text{s}$ ja kilowatti $1000\,\text{W}$, joten
 ```latex
 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J}
 ```
@@ -105,11 +105,11 @@ Moni laite käyttää energiaa myös silloin, kun se näyttää olevan pois pä�
 Sähkölasku on kulutettu energia kertaa yksikköhinta. Tässä luvussa käytetään pyöreää esimerkkihintaa $20\,\text{snt/kWh}$ eli $0{,}20\,\text{€/kWh}$. Se on kotitalouden sähkön kokonaishinnan suuruusluokka vuonna 2025 (Tilastokeskus 2025: noin $18\,\text{snt/kWh}$ kokonaishintana, kun energia, siirto ja verot lasketaan yhteen); esimerkkihinta on pyöristetty ylöspäin. Todellinen hinta vaihtelee sopimuksen ja vuodenajan mukaan.
 
 ## Esimerkki
-Television teho on $80\,\text{W}$, ja se on päällä $4{,}0\,\text{h}$ vuorokaudessa 30 vuorokautta. Mitä television katsominen maksaa kuukaudessa, kun sähkön hinta on $20\,\text{snt/kWh}$?
+Television teho on $80\,\text{W}$, ja se on päällä $4{,}0\,\text{h}$ vuorokaudessa $30\,\text{vrk}$ ajan. Mitä television katsominen maksaa kuukaudessa, kun sähkön hinta on $20\,\text{snt/kWh}$?
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Teho $P = 80\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa 30 vuorokautta ja hinta $20\,\text{snt/kWh}$. Kysytään kuukauden sähkön hintaa.
+**Tunnetut ja kysytty.** Teho $P = 80\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa $30\,\text{vrk}$ ajan ja hinta $20\,\text{snt/kWh}$. Kysytään kuukauden sähkön hintaa.
 
 <!-- vaihe -->
 
@@ -127,7 +127,7 @@ E &= P\,t \\
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Kilowattitunteja varten teho on kilowatteina. Sijoitetaan $1\,\text{W} = 10^{-3}\,\text{kW}$: $80\,\text{W} = 80 \cdot 10^{-3}\,\text{kW} = 0{,}080\,\text{kW}$. Kokonaisaika on $4{,}0\,\text{h} \cdot 30 = 120\,\text{h}$.
+**Yksikkömuunnokset.** Kilowattitunteja varten teho on kilowatteina. Sijoitetaan $1\,\text{W} = 10^{-3}\,\text{kW}$: $80\,\text{W} = 80 \cdot 10^{-3}\,\text{kW} = 0{,}080\,\text{kW}$. Kokonaisaika on $4{,}0\,\text{h} \cdot 30 = 120\,\text{h}$. Hinta saadaan senteissä, ja euroiksi muunnetaan sijoittamalla $1\,\text{snt} = 0{,}01\,\text{€}$.
 
 <!-- vaihe -->
 
@@ -139,20 +139,22 @@ E &= P\,t \\
 &= 9{,}6\,\text{kWh} \\
 \text{hinta} &= E \cdot \text{yksikköhinta} \\
 &= 9{,}6\,\text{kWh} \cdot 20\,\text{snt/kWh} \\
-&= 192\,\text{snt}
+&= 192\,\text{snt} \\
+&= 192 \cdot 0{,}01\,\text{€} \\
+&= 1{,}92\,\text{€}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa. Tulos on annettu kahdella merkitsevällä numerolla, koska teho ja päivittäinen käyttöaika on annettu kahdella numerolla.
+**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa. Tulos on annettu kahdella merkitsevällä numerolla, koska teho ja päivittäinen käyttöaika ovat annetut kahdella numerolla.
 
 <!-- vaihe -->
 
 **Järkevyys.** Yksi kilowattitunti kattaa $80\,\text{W}$:n television noin $12\,\text{h}$:ksi, ja kuukaudessa katsotaan $120\,\text{h}$, eli noin kymmenen kilowattituntia. Se maksaa noin kymmenen kertaa $20\,\text{snt}$ eli noin kaksi euroa.
 
 ## Yleinen virhekäsitys
-Moni luulee, että suuri teho tarkoittaa suurta energiankulutusta. Teho kertoo vain vauhdin: kulutettu energia on teho kertaa aika. Hiustenkuivain ($1800\,\text{W}$) käy viisi minuuttia ja kuluttaa $0{,}15\,\text{kWh}$, mutta $10\,\text{W}$:n lamppu, joka palaa vuorokauden, kuluttaa $0{,}24\,\text{kWh}$. Toinen virhe on sekoittaa yksiköt: watti on tehon yksikkö ja kilowattitunti energian, joten "kilowattitunti sekunnissa" ei ole teho vaan sekoitus.
+Moni luulee, että suuri teho tarkoittaa suurta energiankulutusta. Teho kertoo vain vauhdin: kulutettu energia on teho kertaa aika. Hiustenkuivain ($1800\,\text{W}$) käy viisi minuuttia ja kuluttaa $0{,}15\,\text{kWh}$, mutta $10\,\text{W}$:n lamppu, joka palaa vuorokauden, kuluttaa $0{,}24\,\text{kWh}$. Toinen virhe on sekoittaa yksiköt: watti on tehon yksikkö ja kilowattitunti energian, joten "teho on $2\,\text{kWh}$" on virhe: oikein teho on $2\,\text{kW}$.
 
 ## Tiivistelmä
 - Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: $P = \tfrac{\Delta E}{\Delta t}$. Yksikkö on watti, $1\,\text{W} = 1\,\text{J/s}$.

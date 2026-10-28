@@ -1,7 +1,14 @@
 VERDICT: DONE
 
-Round 1 fix (science FAIL, pedagogy FAIL).
-- inquiry.json: ennuste-1 per-mille claim now names CO2 (alle puoli promillea); ennuste-2 asks for the order (largest/smallest of coal, gas, biomass, wind) with arguable reasons, no number before the table and no alkupera answer in its feedback; muut-perusteet stem no longer lists the criteria, asks "Mitä muuta pitäisi tietää…", wrong options carry real arguments ($1\,\text{g/kWh}$ difference, price, measurement precision); new Sovella item `kuljetus` (wood chips 50 km vs 400 km: transport and land use); option lengths evened in kertaus, ennuste-1, alkupera, tarkistus-1 (correct no longer the longest); sunlight "suurelta osin läpi"; otsoni; siirto mistake 0.049 t with matching feedback; conversions by substitution (perustele model, tarkistus-2 check with 7,2 l); colon for written division; aineisto answer as two significant figures like 490.
-- lesson.md: sunlight = visible + near infrared, "suurelta osin"; "muinaisten eliöiden" (coal plants, oil/gas plankton); biomass 230 g/kWh note (dedicated crops, combustion CO2 counted zero, regrowth delay not shown); Ydinajatus sentence on why a small CO2 share matters; legend sentence; all numbers with units in LaTeX.
-- figures.py: greenhouse heat radiation red (sunlight orange), dashed layer "ilmakehä (kasvihuonekaasut)"; emissions legend fossiilinen/muu.
-- exit-ticket.json: wording and LaTeX. lesson-answers.py: new check numbers.
+Round 2, fix mode. check_lesson.py fy2-8: all ok.
+
+lesson.md
+- Example check (Järkevyys): conversions by substitution (`2\,500\,000 \cdot 10^{-6}\,\text{t}`, `57\,600 \cdot 0{,}001\,\text{kg}`).
+- Worked example chain now ends `= 2{,}352\,\text{t}`, split over three lines so it fits 360 px.
+- "-18 °C:sta ... +15 °C:een" rephrased ("arvosta ... arvoon ...") in Ydinajatus and in the summary; no case ending after maths.
+
+inquiry.json
+- Conversions by substitution in the aineisto check, virhe correct option, siirto mistake feedbacks and check, tarkistus-2 check (each `... \cdot 10^{-6}\,\text{t}` or `\cdot 0{,}001\,\text{kg}`).
+- perustele model: "polttoainekuljetuksia".
+
+No plain-text number-with-unit lines were found by the lint in these files. exit-ticket.json unchanged.

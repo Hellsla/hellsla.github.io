@@ -50,7 +50,9 @@ new p5((p) => {
   const objOf = (id) => OBJ.find((o) => o[0] === id);
   const byName = (nm) => OBJ.find((o) => __('n_' + o[0]) === nm) || OBJ[0];
   // a name as TeX without space characters, so that the label is one word for the page's text count
-  const nameTex = (o) => __('n_' + o[0]).split(' ').map((w) => `\\text{${w}}`).join('\\kern0.3em');
+  // objects with a number and a unit in their name have a TeX name t_<id> (lang/fi.json); the select keeps the plain name
+  const texOf = (o) => { const t = __('t_' + o[0]); return t && t !== 't_' + o[0] ? t : null; };
+  const nameTex = (o) => texOf(o) || __('n_' + o[0]).split(' ').map((w) => `\\text{${w}}`).join('\\kern0.3em');
   // E = m · 10^k J written as mantissa and power, and with the prefix that makes the number 1…999
   const powTex = (o) => (o[2] === 0 ? `${tx(o[1], 1)}\\kern0.17em\\text{J}` : `${tx(o[1], 1)}\\cdot10^{${o[2]}}\\kern0.17em\\text{J}`);
   const prefTex = (o) => {
@@ -101,7 +103,7 @@ new p5((p) => {
     const ys = vis.map((o) => Y(lg(o)));
     const E = fo[1] * Math.pow(10, fo[2]);
     const pt = prefTex(fo), dir = kf > L + HALF + 0.05 ? __('yla') : kf < L - HALF - 0.05 ? __('ala') : '';
-    readout.html(__('valittu', { nimi: __('n_' + fo[0]), arvo: powTex(fo) + (pt ? ` = ${pt}` : ''), lahde: __('s_' + fo[0]) }) +
+    readout.html(__('valittu', { nimi: texOf(fo) ? `$${texOf(fo)}$` : __('n_' + fo[0]), arvo: powTex(fo) + (pt ? ` = ${pt}` : ''), lahde: __('s_' + fo[0]) }) +
       (dir ? __('ulkona', { suunta: dir }) : ''));
     window.simState = { L, kohde: selK.value(), k: kf, E_J: E, E_MJ: E / 1e6, E_EJ: E / 1e18, tyyppi: fo[3] === 'lahde' ? 1 : 0, nakyvat: vis.length, labels: null };
 

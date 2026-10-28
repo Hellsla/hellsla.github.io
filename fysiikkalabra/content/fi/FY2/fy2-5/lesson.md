@@ -40,7 +40,7 @@ missä $E$ on vapautuva energia ($\text{J}$ tai $\text{MJ}$), $H$ polttoaineen l
 
 Taulukossa on yleisten polttoaineiden lämpöarvoja. Ne ovat tehollisia lämpöarvoja eli lämpöarvoja, joissa savukaasun vesihöyryn tiivistymislämpöä ei lasketa mukaan, ja energiatilastot käyttävät niitä. Arvot on pyöristetty: todellinen arvo vaihtelee polttoaine-erän mukaan.
 
-| Polttoaine | $H$ (MJ/kg) |
+| Polttoaine | $H\ (\text{MJ/kg})$ |
 | --- | --- |
 | maakaasu | 48 |
 | bensiini | 43 |
@@ -50,7 +50,7 @@ Taulukossa on yleisten polttoaineiden lämpöarvoja. Ne ovat tehollisia lämpöa
 | polttopuu (ilmakuiva) | 15 |
 | turve (jyrsinturve) | 10 |
 
-Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$) ja jyrsinturve ($9\text{–}11\,\text{GJ/t}$, kosteus $40\text{–}50\,\%$): Tilastokeskus, *Polttoaineluokitus, määritelmät* (2017). Maakaasu $48{,}0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, osa 2, oletuslämpöarvojen taulukko (2006). Tyypillisiä arvoja: kivihiili (IPCC 2006: $25{,}8\,\text{MJ/kg}$), diesel (IPCC 2006: $43{,}0\,\text{MJ/kg}$), bensiini (IPCC 2006: $44{,}3\,\text{MJ/kg}$, kotimaisessa bensiinissä on etanolia, joten pyöristetty $43$:een) ja puupelletti (julkaistu tyypillinen arvo). Arvot on pyöristetty.
+Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$) ja jyrsinturve ($9\text{–}11\,\text{GJ/t}$, kosteus $40\text{–}50\,\%$): Tilastokeskus, *Polttoaineluokitus, määritelmät* (2017). Maakaasu $48{,}0\,\text{MJ/kg}$: IPCC, *2006 Guidelines for National Greenhouse Gas Inventories*, osa 2, oletuslämpöarvojen taulukko (2006). Tyypillisiä arvoja: kivihiili (IPCC 2006: $25{,}8\,\text{MJ/kg}$), diesel (IPCC 2006: $43{,}0\,\text{MJ/kg}$), bensiini (IPCC 2006: $44{,}3\,\text{MJ/kg}$, tyypillinen arvo pyöristettynä: $43$) ja puupelletti (julkaistu tyypillinen arvo). Arvot on pyöristetty.
 
 <svg data-fig="lampoarvot" viewBox="0 0 600 372" role="img" aria-label="Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 48, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu (ilmakuiva) 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
