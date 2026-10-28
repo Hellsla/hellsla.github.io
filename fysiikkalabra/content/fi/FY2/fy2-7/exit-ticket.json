@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Sähköverkkoon syötetään $800\\,\\text{MWh}$, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka paljon energiaa tulee perille?",
+    "a": "Perille tulee $96{,}0\\,\\%$ eli $\\eta = 0{,}960$. $E_\\text{perille} = \\eta\\, E_\\text{lähtö} = 0{,}960 \\cdot 800\\,\\text{MWh} = 768\\,\\text{MWh}$."
+  },
+  {
+    "q": "Miksi pitkä sähkönsiirto tehdään korkealla jännitteellä?",
+    "a": "Sama teho siirtyy korkealla jännitteellä pienemmällä sähkövirralla. Johdin lämpenee sitä enemmän, mitä suurempi virta on, joten korkealla jännitteellä lämmöksi muuttuva häviö on pieni."
+  },
+  {
+    "q": "Kaukolämpöputken häviöteho on $2{,}0\\,\\text{kW}$. Kuinka paljon energiaa putkessa häviää vuorokaudessa? Mihin häviävä energia menee?",
+    "a": "$E_\\text{häviö} = P_\\text{häviö} \\cdot t = 2{,}0\\,\\text{kW} \\cdot 24\\,\\text{h} = 48\\,\\text{kWh}$. Energia ei katoa vaan muuttuu lämmöksi ympäristöön eli maahan."
+  }
+]

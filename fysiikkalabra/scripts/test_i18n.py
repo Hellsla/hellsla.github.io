@@ -96,7 +96,7 @@ other = next(f.name for f in courses.lessons() if f.name != LESSON)
 expect("a page the other language lacks links to its front page", 'href="en/index.html" hreflang="en"' in (T / "site" / f"{other}.html").read_text())
 expect("the English course page lists the translated lesson, the rest as coming", f'href="{LESSON}.html"' in (T / "site/en/FY3.html").read_text() and "(en)" in (T / "site/en/FY3.html").read_text())
 code, out = run("check_layout.py", "--site")
-expect("the English pages pass the 360 px layout check", code == 0, out[-600:])
+expect("the English pages pass the 360 px layout check", code == 0, "\n".join(l for l in out.splitlines() if not l.startswith("OK ")) or out[-600:])
 
 shutil.rmtree(T, ignore_errors=True)
 expect("the real project is untouched", snapshot() == REAL)

@@ -218,8 +218,13 @@
       "Monitieteinen ja luova osaaminen"
     ],
     "scope_notes": [
-      "FY2 introduces energy forms without expressions; E_k, E_p, the work-energy theorem, vectors and cos α are FY4."
+      "FY2 introduces energy forms without expressions; E_k, E_p, the work-energy theorem, vectors and cos α are FY4.",
+      "FY2 comes after FY1 and before FY3: students know SI units, prefixes and powers of ten, measurement and Delta x, graphs and the linear models s = vt and m = rho V (FY1 chapters, by name). Build on them; do not re-teach them.",
+      "No duplication with FY3 (taught later, it builds on FY2): FY2 has no work W = Fs or force, no Q = c m Delta T, no internal energy or first law, no heat-engine cycle or Carnot limit, no U-value or heat-conduction formulas, no radiative energy-balance model, and no product of chain efficiencies (fy3-15 does the chain and combined heat and power quantitatively). FY2 stays at energy forms, conservation, joule and kWh, P = E : t, one device's efficiency with an energy-flow (Sankey) picture, E = Hm, comparing production methods by orders of magnitude, transmission of electricity and heat qualitatively with simple loss percentages, and the environment.",
+      "Teacher's FY1-FY2 worksheet (FY01FY02_K2026.pdf, Lauri) sets the core vocabulary: energy forms mechanical (potential and kinetic), chemical (fuels, food, batteries), radiant, nuclear, electrical and thermal; energy is not created or destroyed but converts to less useful forms (E_alussa = E_lopussa for an isolated system); P = E/t with [P] = W and 1 kWh = 3,6 MJ; efficiency as the useful share of the energy taken in, by energy or by power; E = Hm; power plants as weather-dependent (wind, solar), well-adjustable (hydro, many fuel plants) and steady base load (nuclear); comparison criteria price, power, transportability, storability, safety and environmental impacts (emissions, climate change, land use, nature, waste, safety); greenhouse effect qualitatively (gases let solar radiation in but slow the outgoing heat radiation; humans add CO2 and methane).",
+      "Data in FY2 (Finnish energy statistics, emission factors, heating values) are real values with a named source (Tilastokeskus, Energiateollisuus, Fingrid, Motiva, IPCC) and year, rounded; mark invented situations as examples, never as statistics."
     ],
+    "initialized": "2026-10-28",
     "lessons": [
       {
         "id": "fy2-1",

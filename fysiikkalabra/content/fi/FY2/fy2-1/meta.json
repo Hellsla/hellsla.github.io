@@ -1,0 +1,24 @@
+{
+  "id": "fy2-1",
+  "course": "FY2",
+  "title": "Energialajit ja energian säilyminen",
+  "goals": [
+    "LOPS FY2: energialajit, energian säilyminen ja muuntuminen",
+    "Täsmennys: ainakin mekaaninen energia (potentiaali- ja liike-energia), säteily, kemiallinen energia ja ydinenergia; energian säilyminen yleispätevänä periaatteena"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "energia",
+    "energialaji",
+    "liike-energia",
+    "potentiaalienergia",
+    "energian säilyminen",
+    "mekaaninen energia",
+    "lämpöenergia",
+    "eristetty systeemi",
+    "joule"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

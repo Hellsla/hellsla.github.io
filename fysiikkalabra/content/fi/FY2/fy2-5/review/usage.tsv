@@ -1,0 +1,13 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-10-28T09:50Z	fy2-5	FY2	developer	develop	claude-sonnet-5-5	medium	fix	2	542009	20	4692	496339	40958	68882	10	79	11		0.2486	transcript	15537e862d13
+2026-10-28T09:50Z	fy2-5	FY2	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	647356	16	5590	542493	99257	100074	8	54	15		0.4126	transcript	92e5911a61b1
+2026-10-28T09:50Z	fy2-5	FY2	developer	develop	claude-sonnet-5-5	medium	fix	1	1729446	32	29929	1591393	108092	137025	16	274	20		0.8879	transcript	00b9f13a0430
+2026-10-28T09:50Z	fy2-5	FY2	science-reviewer	review	claude-opus-5-5	medium	full	2	2014581	42	17388	1879807	117344	118567	21	198	22		1.3106	transcript	7e85a1997c6c
+2026-10-28T09:50Z	fy2-5	FY2	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	3	394455	12	6000	308115	80328	81041	6	58	8		0.3225	transcript	c6e65ac6cff8
+2026-10-28T09:50Z	fy2-5	FY2	science-reviewer	review	claude-opus-5-5	medium	full	3	1218702	28	13647	1094546	110481	111584	14	138	15		1.0444	transcript	e94b0fd7aff5
+2026-10-28T09:50Z	fy2-5	FY2	science-reviewer	review	claude-opus-5-5	medium	full	1	3533371	66	27476	3374105	131724	133344	33	354	41		1.8832	transcript	a4c28f60a4da
+2026-10-28T09:50Z	fy2-5	FY2	developer	develop	claude-sonnet-5-5	medium	draft	1	5310952	72	67557	5058498	184825	185986	36	723	42		2.1495	transcript	0223b12bc9bb
+2026-10-28T09:50Z	fy2-5	FY2	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	573636	14	13638	460383	99601	100634	7	121	15		0.4775	transcript	2459bedc29ec
+2026-10-28T09:50Z	fy2-5	FY2	orchestrator	orchestrate	claude-opus-5-5		session/5	4	7221591	73	24393	7099693	97432	38414	184	7142	273		2.6876	transcript	d35a886bf9ab
+2026-10-28T09:50Z	fy2-5	FY2	pedagogy-reviewer	review	claude-sonnet-5-5		full	4	396375	10	4169	294979	97217	97834	5	804	11		0.3437	transcript	38f0a2c4a9bd
+2026-10-28T09:50Z	fy2-5	FY2	science-reviewer	review	claude-opus-5-5		full	4	741288	20	8878	627614	104776	105702	10	859	11		0.8270	transcript	86315a241059

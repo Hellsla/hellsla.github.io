@@ -88,6 +88,19 @@ def math_fragments(text):
         yield line, (m.group(1) if m.group(1) is not None else m.group(2)), m.group(1) is not None or any(a <= m.start() < b for a, b in figs)
 
 
+PLAIN_QTY = re.compile(r"(?<![\w,])\d+(?:[ ,]\d+)*\s?(?:%|(?:[kMGT]?(?:W|J|Wh)|snt|€|kg|g|t|km|m|min|h|s|l|°C|K|ppm)\b)")
+
+
+def check_plain_quantities(L, name, text):
+    """A number with its unit is maths everywhere a student reads (teacher 2026-10-28, "kaikki LaTeXilla"; NOTES 1):
+    $80\\,\\text{W}$, $4{,}0\\,\\%$. Only aria-labels (inside SVG) stay plain."""
+    plain = strip_math_and_svg(text)
+    plain = re.sub(r'aria-label="[^"]*"', "", plain)
+    for i, line in enumerate(plain.splitlines(), 1):
+        m = PLAIN_QTY.search(line)
+        if m: L.page(name, i, f"number with its unit in plain text: \"{m.group(0)}\"; write it as maths (NOTES 1, teacher 2026-10-28)")
+
+
 def check_text_rules(L, name, text):
     """Rules that apply to every Finnish prose file (lesson.md, solutions.md, sim-spec.md)."""
     plain = strip_math_and_svg(text)
@@ -116,6 +129,8 @@ def check_math(L, name, text):
             L.err(name, line, "· inside \\text{} breaks KaTeX; write \\text{mol}\\cdot\\text{K} (NOTES 1): " + frag[:60])
         if re.search(r"\\(si|SI|unit)\b|\\newcommand", frag):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
+        if re.search(r"\\times\b|×|\\div\b|÷", frag):
+            L.page(name, line, "multiplication is \\cdot and a written division a colon : (teacher 2026-10-28, NOTES 1): " + frag[:60])
         if re.search(r"(?<!\\)\*", frag):
             L.warn(name, line, "use \\cdot for multiplication, not * (NOTES 1.5)")
         if not display and "\\dfrac" in frag and name != "solutions.md":   # a solution line is a calculation of its own, a full-size fraction reads best there
@@ -201,6 +216,10 @@ def check_lesson_md(L, folder):
     if "$$" not in text and "```latex" not in text:
         L.warn("lesson.md", 1, "no display formula; every formula appears once in display LaTeX (CLAUDE.md)")
     check_text_rules(L, "lesson.md", text)
+    check_plain_quantities(L, "lesson.md", text)
+    for jf in ("inquiry.json", "exit-ticket.json", "exercises/exercises.json"):
+        f = courses.lesson_file(folder, jf) if "/" not in jf else folder / jf
+        if f.exists(): check_plain_quantities(L, jf, f.read_text())
     check_math(L, "lesson.md", text)
     check_lesson_form(L, text)
     check_figures(L, text)
@@ -278,6 +297,7 @@ def check_solutions(L, folder, answers):
     if not f.exists(): L.err("solutions.md", 1, "missing"); return
     text = f.read_text()
     check_text_rules(L, "solutions.md", text)
+    check_plain_quantities(L, "solutions.md", text)
     check_math(L, "solutions.md", text)
     blocks = re.split(r"^## ", text, flags=re.M)[1:]
     seen = {}

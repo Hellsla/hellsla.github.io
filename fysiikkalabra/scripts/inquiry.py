@@ -37,7 +37,7 @@ TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explai
 QUESTION_TYPES = ("choice", "numeric", "explain")
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
-SOURCES = ("measured", "simulated", "model")      # interpret "source"; its badge is lang "inquiry.source_<source>"
+SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
@@ -172,8 +172,8 @@ def validate(folder, inquiry, lesson_md):
         elif t == "interpret":
             if not isinstance(a.get("text"), str) or not a["text"].strip(): errs.append(f"{path}.text: the representation (table, figure or measurements) in markdown/HTML")
             src = a.get("source")
-            if src is not None and src not in SOURCES: errs.append(f"{path}.source: one of {', '.join(SOURCES)} (what the numbers are: measured, simulated example data, or values computed from the model)")
-            if src == "measured" and not (isinstance(a.get("source_note"), str) and a["source_note"].strip()):
+            if src is not None and src not in SOURCES: errs.append(f"{path}.source: one of {', '.join(SOURCES)} (what the numbers are: measured, official statistics with their source, simulated example data, values computed from the model, or an invented example)")
+            if src in ("measured", "statistics") and not (isinstance(a.get("source_note"), str) and a["source_note"].strip()):
                 errs.append(f"{path}.source_note: measured data needs a note on who measured it and how (never present invented numbers as measurements)")
         if t == "explain" and "after" in a and not (isinstance(a["after"], list) and a["after"] and all(isinstance(x, str) for x in a["after"])):
             errs.append(f"{path}.after: the ids of the experiments whose measurements the conclusion rests on")
@@ -322,10 +322,19 @@ def question_html(q, md, lid, aid):
 
 def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
-    nm = lambda k: esc(names.get(k, k))
+    nm = lambda k: tex_name(names.get(k, k))   # the status line typesets its $…$ (inquiry.js)
     tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
-    fmt = lambda k, v: f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(units[k])}" if units.get(k) else "") + "</span>"   # name, value and unit on one line
+    words = a.get("values", {})   # {param: {value: words}}: a select's option named in words, not by its index
+    def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
+        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        u = units.get(k, "")
+        if isinstance(v, (int, float)) and re.fullmatch(r"[A-Za-z/%]*", u):
+            num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
+            if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000
+            unit = ("\\," + ("\\%" if u == "%" else "\\text{" + u + "}")) if u else ""
+            return f'<span class="nobr">{tn(k)} = ${esc(num)}{unit}$</span>'
+        return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(tn(k) for k in a["locked"]) or T("inquiry.nothing_locked")
     cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
@@ -333,7 +342,7 @@ def experiment_html(a, md, lid):
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
-            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([names.get(k, k) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
+            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'

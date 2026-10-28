@@ -1,0 +1,20 @@
+{
+  "id": "fy2-4",
+  "course": "FY2",
+  "title": "Hyötysuhde",
+  "goals": [
+    "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
+    "Täsmennys: hyötysuhde käsitellään energian tai tehon avulla määriteltynä, η = E_a/E_o = P_a/P_o"
+  ],
+  "prerequisites": [
+    "fy2-3"
+  ],
+  "glossary": [
+    "hyötysuhde",
+    "hyötyenergia",
+    "häviöt"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

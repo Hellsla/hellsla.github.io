@@ -90,7 +90,7 @@ blockquote strong{font-weight:600;color:var(--accent-deep)}
 blockquote p{margin:0}
 li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-@media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.08em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.08em) so the widest row (fy3-3) fits 360 px; at 390 px and up nothing overflows, so formulas stay full size */
+@media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.03em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.03em) so the widest rows (fy3-3, fy2-3's kWh in joules) fit 360 px also with CI's fonts; at 390 px and up nothing overflows, so formulas stay full size */
 .notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:var(--fs-small)}
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
@@ -182,6 +182,9 @@ th,td{padding:.45rem .8rem;text-align:left;border-bottom:1px solid var(--line-2)
 th{font:600 var(--fs-small) var(--sans);color:var(--ink-2);background:var(--bg-tint)}
 tr:last-child td{border-bottom:0}
 table thead,table tbody{display:table;width:100%}
+/* teacher 2026-10-28: every column visible on a phone. Below 48rem the cells wrap their words (Finnish hyphenation)
+   and pad less; a number with its unit stays on one line (KaTeX, nbsp). */
+@media (max-width:48rem){th,td{white-space:normal;hyphens:auto;-webkit-hyphens:auto;padding:.4rem .5rem}}
 
 /* stage navigation. Phone to laptop: a bar of chips that sticks under the top edge. From 85rem of window: a side column
    (below). Each stage shows its number, so the nav and the stage headings read as one sequence; the stage on screen

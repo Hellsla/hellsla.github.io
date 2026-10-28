@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Laite ottaa energiaa $500\\,\\text{J}$ ja antaa siitä hyötyenergiaa $350\\,\\text{J}$. Mikä on sen hyötysuhde ja mihin loput energiasta menee?",
+    "a": "$\\eta = \\dfrac{350\\,\\text{J}}{500\\,\\text{J}} = 0{,}70 = 0{,}70 \\cdot 100\\,\\% = 70\\,\\%$. Loput $500\\,\\text{J} - 350\\,\\text{J} = 150\\,\\text{J}$ on häviöitä, yleensä lämpöä, joka leviää ympäristöön. Energiaa ei ole kadonnut, koska $350\\,\\text{J} + 150\\,\\text{J} = 500\\,\\text{J}$."
+  },
+  {
+    "q": "Laitteen hyötysuhde on $25\\,\\%$ ja se ottaa tehon $200\\,\\text{W}$. Kuinka suuri on hyötyteho ja kuinka suuri häviöteho?",
+    "a": "Hyötyteho on $P_\\text{a} = 0{,}25 \\cdot 200\\,\\text{W} = 50\\,\\text{W}$. Häviöteho on $P_\\text{h} = 200\\,\\text{W} - 50\\,\\text{W} = 150\\,\\text{W}$."
+  },
+  {
+    "q": "Väitetään: ”Suuritehoisella laitteella on aina parempi hyötysuhde kuin pienitehoisella.” Pitääkö väite paikkansa? Perustele.",
+    "a": "Ei pidä. Hyötysuhde on hyötytehon osuus otetusta tehosta, ei teho sinänsä. Esimerkiksi $100\\,\\text{W}$:n ja $60\\,\\text{W}$:n hehkulampuilla on sama hyötysuhde noin $5\\,\\%$, vaikka suuritehoinen lamppu ottaa enemmän tehoa."
+  }
+]
