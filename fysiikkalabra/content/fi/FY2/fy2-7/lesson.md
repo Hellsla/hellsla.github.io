@@ -226,7 +226,7 @@ E_\text{perille} &= \eta\, E_\text{lähtö} \\
 &= 0{,}910 \cdot 245\,\text{MWh} \\
 &= 222{,}95\,\text{MWh} \\
 E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
-&= 245\,\text{MWh} - 222{,}95\,\text{MWh} \\
+&= (245 - 222{,}95)\,\text{MWh} \\
 &= 22{,}05\,\text{MWh}
 \end{aligned}
 ```
