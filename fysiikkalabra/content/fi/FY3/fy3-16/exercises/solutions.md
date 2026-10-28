@@ -31,7 +31,7 @@
 ## fy3-16-L1-04
 **Annettu:** jää $m = 0{,}75\,\text{kg}$, sulamispisteessä $0\,{}^\circ\text{C}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään sulamiseen tarvittava lämpömäärä $Q$ kilojouleina
-**Periaate:** Jää on jo sulamispisteessä, ja sulaessaan se pysyy $0\,{}^\circ\text{C}$:ssa. Energia ei siis nosta lämpötilaa vaan rikkoo jään rakenteen, joten tarvitaan ominaissulamislämpö $s$ eikä $c\,\Delta T$:tä.
+**Periaate:** Jää on jo sulamispisteessä, ja sulaessaan se pysyy $0\,{}^\circ\text{C}$:ssa. Energia ei siis nosta lämpötilaa vaan muuttaa hiukkasten keskinäisiä vuorovaikutuksia: jään säännöllinen järjestys purkautuu ja hiukkasten välinen vuorovaikutusenergia kasvaa, joten tarvitaan ominaissulamislämpö $s$ eikä $c\,\Delta T$:tä.
 **Kaava:** $Q = s\,m$
 **Muunnokset:** Ei tarvita: $s$ on kilojoulea kilogrammaa kohti ja massa kilogrammoina.
 **Sijoitus:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}75\,\text{kg} = 250{,}5\,\text{kJ}$

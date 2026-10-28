@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana $(1/V, p)$-koordinaatistossa, ja vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan samoin kuin paine vakiotilavuudessa (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*).",
+  "contribution": "Kaasun paine, tilavuus ja lämpötila kytketään toisiinsa: isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki), kääntäen verrannollisuus todennetaan suorana $(1/V, p)$-koordinaatistossa, ja kun kaasun määrä pysyy samana, harvan kaasun tilavuus vakiopaineessa on verrannollinen kelvinlämpötilaan samoin kuin paine vakiotilavuudessa (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*).",
   "learn": ["Osaat käyttää Boylen lakia: isotermisessä tilanmuutoksessa paineen ja tilavuuden tulo pysyy vakiona.", "Osaat todentaa kääntäen verrannollisuuden suorana, kun painetta tarkastellaan tilavuuden käänteisluvun funktiona.", "Osaat selittää, miten kaasun tilavuus riippuu kelvinlämpötilasta vakiopaineessa."],
   "prior": [
     "Paine on voima pinta-alaa kohti, $p = F/A$, ja ilmanpaine on noin 101 kPa (luku *Paine ja hydrostaattinen paine*)",
-    "Vakiotilavuudessa kaasun paine on verrannollinen kelvinlämpötilaan, ja suoran jatke osuu absoluuttiseen nollapisteeseen (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
+    "Kun tilavuus ja kaasun määrä pysyvät samoina, harvan kaasun paine on verrannollinen kelvinlämpötilaan, ja suoran jatke osuu absoluuttiseen nollapisteeseen (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
     "Kaasut laajenevat lämmetessä paljon enemmän kuin nesteet ja kiinteät aineet; ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ vakiopaineessa (luku *Lämpölaajeneminen*)"
   ],
   "activities": [
@@ -47,7 +47,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: kaasu puristetaan puoleen",
-      "prompt": "Suljetussa sylinterissä on 50 ml ilmaa, jonka paine on 100 kPa ja lämpötila 20 °C. Mäntää painetaan hitaasti, kunnes tilavuus on 25 ml. Lämpötila pysyy 20 °C:ssa, eikä ilmaa pääse pois. Mikä on paine nyt?",
+      "prompt": "Suljetussa sylinterissä on 50 ml ilmaa, jonka paine on 100 kPa ja lämpötila $20\\,{}^\\circ\\text{C}$. Mäntää painetaan hitaasti, kunnes tilavuus on 25 ml. Lämpötila pysyy $20\\,{}^\\circ\\text{C}$:ssa, eikä ilmaa pääse pois. Mikä on paine nyt?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -59,13 +59,13 @@
           "feedback": "Mallin arvoissa paine nousi 25 ml:ssa 200 000 Pa:iin. Ilman määrä pysyi samana, mutta samat hiukkaset ovat nyt puolet pienemmässä tilassa ja osuvat seinämiin kaksi kertaa niin usein."
         },
         {
-          "text": "150 kPa, koska tilavuus pieneni 50 % ja paine kasvaa 50 %.",
+          "text": "150 kPa, koska tilavuus pieneni $50\\,\\%$ ja paine kasvaa $50\\,\\%$.",
           "feedback": "Mallin arvoissa paine oli 25 ml:ssa 200 000 Pa eli 200 kPa. Paine ei kasva samoin prosentein kuin tilavuus pienenee: tilavuuden puolittuminen kaksinkertaistaa paineen, koska tulo $pV$ pysyy samana."
         },
         {
           "text": "200 kPa, eli paine kaksinkertaistuu.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: 50 ml:ssa $p = 100\\,000\\,\\text{Pa}$ ja 25 ml:ssa $p = 200\\,000\\,\\text{Pa}$. Tulo $pV$ on molemmissa 5,00 J."
+          "feedback": "Mallin arvot tukevat tätä: 50 ml:ssa $p = 100\\,000\\,\\text{Pa}$ ja 25 ml:ssa $p = 200\\,000\\,\\text{Pa}$. Tulo $pV$ on molemmissa $5{,}00\\,\\text{J}$."
         },
         {
           "text": "400 kPa, koska hiukkaset osuvat seiniin useammin ja myös kovempaa.",
@@ -78,7 +78,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 2: vapaa mäntä ja lämmitys",
-      "prompt": "Sylinterin mäntä pääsee nyt liikkumaan vapaasti, ja sen päällä oleva paino pitää ilman paineen 100 kPa:ssa. Ilmaa on 50 ml, ja sen lämpötila on 20 °C. Ilma lämmitetään 80 °C:seen. Mikä on ilman tilavuus nyt?",
+      "prompt": "Sylinterin mäntä pääsee nyt liikkumaan vapaasti, ja sen päällä oleva paino pitää ilman paineen 100 kPa:ssa. Ilmaa on 50 ml, ja sen lämpötila on $20\\,{}^\\circ\\text{C}$. Ilma lämmitetään $80\\,{}^\\circ\\text{C}$:seen. Mikä on ilman tilavuus nyt?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -87,12 +87,12 @@
       "choices": [
         {
           "text": "200 ml, koska lämpötila nelinkertaistuu.",
-          "feedback": "Mallin arvoissa tilavuus oli 80 °C:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee 293 K:stä 353 K:iin, noin 20 %."
+          "feedback": "Mallin arvoissa tilavuus oli $80\\,{}^\\circ\\text{C}$:ssa noin 60 ml. Celsiusasteiden suhde 80/20 ei kerro hiukkasten liikkeen muutosta, koska celsiusasteikon nolla on vain veden jäätymispiste. Kelvineinä lämpötila nousee $293\\,\\text{K}$:stä $353\\,\\text{K}$:iin, noin $20\\,\\%$."
         },
         {
-          "text": "Noin 60 ml, eli tilavuus kasvaa noin 20 %.",
+          "text": "Noin 60 ml, eli tilavuus kasvaa noin $20\\,\\%$.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: 20 °C:ssa (293,15 K) $V = 50{,}0\\,\\text{ml}$ ja 80 °C:ssa (353,15 K) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, $353/293 \\approx 1{,}20$, ja $V/T$ pysyy 0,171 ml/K:ssa."
+          "feedback": "Mallin arvot tukevat tätä: $20\\,{}^\\circ\\text{C}$:ssa ($293{,}15\\,\\text{K}$) $V = 50{,}0\\,\\text{ml}$ ja $80\\,{}^\\circ\\text{C}$:ssa ($353{,}15\\,\\text{K}$) $V \\approx 60{,}2\\,\\text{ml}$. Tilavuus kasvaa samassa suhteessa kuin kelvinlämpötila, $353/293 \\approx 1{,}20$, ja $V/T$ pysyy 0,171 ml/K:ssa."
         },
         {
           "text": "50 ml, koska paine pysyy samana.",
@@ -100,7 +100,7 @@
         },
         {
           "text": "110 ml, koska tilavuus kasvaa 1 ml jokaista lämpöastetta kohti.",
-          "feedback": "Mallin arvoissa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja 60 K on vain noin 20 % 293 K:stä."
+          "feedback": "Mallin arvoissa tilavuus kasvoi vain noin 10 ml, kun lämpötila nousi 60 astetta. Kasvu on noin 0,17 ml kelviniä kohti, koska tilavuus on verrannollinen koko kelvinlämpötilaan, ja $60\\,\\text{K}$ on vain noin $20\\,\\%$ $293\\,\\text{K}$:stä."
         }
       ]
     },
@@ -147,7 +147,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain tilavuus muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy 20 °C:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon $pV$ jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
+      "intro": "Testaa ennusteet 1 ja 3. Tilanmuutos on isoterminen, joten lämpötila pysyy $20\\,{}^\\circ\\text{C}$:ssa. Muuta vain tilavuutta ja kirjaa mittaus ainakin tilavuuksilla 50 ml, 25 ml ja 100 ml. Taulukko näyttää tilavuuden millilitroina, kuten liukusäädin, mutta paineen pascaleina (100 kPa = 100 000 Pa) ja tulon $pV$ jouleina ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0{,}001\\,\\text{J}$).",
       "initial": {
         "mode": "isoterminen",
         "Tc": 20,
@@ -184,7 +184,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: vain lämpötila muuttuu, paine pysyy samana",
-      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan, ja sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa 20 °C ja 80 °C, mielellään myös 150 °C ja −50 °C. Katso $(T, V)$-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää säätämäsi celsiuslämpötilan $\\theta$, kelvinlämpötilan $T$, ilman tilavuuden millilitroina ja suhteen $V/T$ yksikössä ml/K.",
+      "intro": "Testaa ennuste 2. Mäntä pääsee liikkumaan, ja sen päällä oleva paino pitää paineen 100 kPa:ssa, joten tilanmuutos on isobaarinen. Muuta vain lämpötilaa ja kirjaa mittaus ainakin lämpötiloissa $20\\,{}^\\circ\\text{C}$ ja $80\\,{}^\\circ\\text{C}$, mielellään myös $150\\,{}^\\circ\\text{C}$ ja $-50\\,{}^\\circ\\text{C}$. Katso $(T, V)$-kuvaajasta, mihin kohtaan pisteiden kautta piirretty suora osuisi, jos sitä jatkettaisiin. Taulukko näyttää säätämäsi celsiuslämpötilan $\\theta$, kelvinlämpötilan $T$, ilman tilavuuden millilitroina ja suhteen $V/T$ yksikössä ml/K.",
       "initial": {
         "mode": "isobaarinen",
         "Tc": 20
@@ -219,20 +219,20 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on 20 °C:n tilavuudesta 50 ml. Luvussa *Lämpölaajeneminen* ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
+        "prompt": "Laske mittauksistasi, kuinka monta millilitraa tilavuus kasvaa jokaista kelviniä kohti ja kuinka suuri osa se on $20\\,{}^\\circ\\text{C}$:n tilavuudesta 50 ml. Luvussa *Lämpölaajeneminen* ilman tilavuuden lämpötilakertoimeksi annettiin vakiopaineessa $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Mistä tämä luku tulee?",
         "choices": [
           {
-            "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla 20 °C:n tilavuudesta.",
+            "text": "Se on $1/(293\\,\\text{K})$: vakiopaineessa tilavuus on verrannollinen kelvinlämpötilaan, joten jokainen kelvin kasvattaa sitä 1/293-osalla $20\\,{}^\\circ\\text{C}$:n tilavuudesta.",
             "correct": true,
             "feedback": "Oikein. Mallin arvoissa tilavuus kasvaa noin 0,171 ml kelviniä kohti, ja $0{,}171\\,\\text{ml} / 50\\,\\text{ml} \\approx 3{,}4 \\cdot 10^{-3}$ eli 1/293. Tämä pätee ideaalikaasulle vakiopaineessa. Kaasun suuri lämpölaajeneminen on siis sama ilmiö kuin tämän tunnin kaasulaki. Siksi kaasun $\\gamma$ ei ole vakio kuten metallin $\\alpha$, vaan se riippuu lämpötilasta, josta lähdetään."
           },
           {
             "text": "Se on ilman ominaisuus, joka mitataan erikseen, eikä sillä ole yhteyttä kaasulakeihin.",
-            "feedback": "Laske mittauksistasi: 0,171 ml kelviniä kohti on 50 ml:sta $3{,}4 \\cdot 10^{-3}$ eli 1/293. Luku seuraa siitä, että vakiopaineessa $V/T$ pysyy vakiona ja 20 °C on 293 K."
+            "feedback": "Laske mittauksistasi: 0,171 ml kelviniä kohti on 50 ml:sta $3{,}4 \\cdot 10^{-3}$ eli 1/293. Luku seuraa siitä, että vakiopaineessa $V/T$ pysyy vakiona ja $20\\,{}^\\circ\\text{C}$ on $293\\,\\text{K}$."
           },
           {
-            "text": "Se on $1/(273\\,\\text{K})$, koska kelvinasteikon nollakohta on −273 °C.",
-            "feedback": "Lähellä, mutta suhteellinen kasvu lasketaan tilavuudesta, josta lähdetään. Tässä lähdetään 20 °C:sta eli 293 K:stä, joten jokainen kelvin kasvattaa tilavuutta 1/293-osalla, ja $1/(293\\,\\text{K}) \\approx 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Jos lähdettäisiin 0 °C:sta, osuus olisi 1/273."
+            "text": "Se on $1/(273\\,\\text{K})$, koska kelvinasteikon nollakohta on $-273\\,{}^\\circ\\text{C}$.",
+            "feedback": "Lähellä, mutta suhteellinen kasvu lasketaan tilavuudesta, josta lähdetään. Tässä lähdetään $20\\,{}^\\circ\\text{C}$:sta eli $293\\,\\text{K}$:stä, joten jokainen kelvin kasvattaa tilavuutta 1/293-osalla, ja $1/(293\\,\\text{K}) \\approx 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Jos lähdettäisiin $0\\,{}^\\circ\\text{C}$:sta, osuus olisi 1/273."
           },
           {
             "text": "Se on 0,17, koska tilavuus kasvaa 0,17 ml kelviniä kohti.",
@@ -266,7 +266,7 @@
           },
           {
             "text": "Mikään rivi ei poikkea, koska paine kasvaa joka rivillä tilavuuden pienentyessä.",
-            "feedback": "Paineen kasvu ei vielä todista Boylen lakia, vaan tulon $pV$ täytyy pysyä samana. Riveillä 60, 50, 40 ja 20 ml se on noin 5040 kPa·ml, mutta rivillä 30 ml noin 5430 kPa·ml, lähes 8 % suurempi."
+            "feedback": "Paineen kasvu ei vielä todista Boylen lakia, vaan tulon $pV$ täytyy pysyä samana. Riveillä 60, 50, 40 ja 20 ml se on noin 5040 kPa·ml, mutta rivillä 30 ml noin 5430 kPa·ml, lähes $8\\,\\%$ suurempi."
           }
         ]
       },
@@ -326,7 +326,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Pyöräpumpun sylinterissä on 0,50 l ilmaa 101 kPa:n paineessa. Venttiili on kiinni, ja mäntää painetaan hitaasti, kunnes ilman tilavuus on 0,20 l. Lämpötila pysyy samana. Opiskelija laskee: $p_2 = \\dfrac{p_1 V_2}{V_1} = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}20\\,\\textsf{l}}{0{,}50\\,\\textsf{l}} \\approx 40\\,\\text{kPa}$. Missä on virhe?",
+      "prompt": "Pyöräpumpun sylinterissä on $0{,}50\\,\\textsf{l}$ ilmaa 101 kPa:n paineessa. Venttiili on kiinni, ja mäntää painetaan hitaasti, kunnes ilman tilavuus on $0{,}20\\,\\textsf{l}$. Lämpötila pysyy samana. Opiskelija laskee: $p_2 = \\dfrac{p_1 V_2}{V_1} = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}20\\,\\textsf{l}}{0{,}50\\,\\textsf{l}} \\approx 40\\,\\text{kPa}$. Missä on virhe?",
       "choices": [
         {
           "text": "Tilavuudet olisi pitänyt muuntaa kuutiometreiksi ja paine pascaleiksi.",
@@ -372,7 +372,7 @@
           "feedback": "Tulos on kuutiometreinä. Kysyttiin litroja: $1{,}07 \\cdot 10^{-3}\\,\\text{m}^3 = 1{,}07\\,\\textsf{l}$. Kun paineet ovat samassa yksikössä, litroja ei tarvitse muuntaa lainkaan."
         }
       ],
-      "solution": "**Annettu:** $V_1 = 1{,}50\\,\\textsf{l}$ majalla, $p_1 = 72{,}0\\,\\text{kPa}$, laaksossa $p_2 = 101\\,\\text{kPa}$, lämpötila sama, pullo suljettu\n\n**Kysytty:** pullon ilman tilavuus $V_2$ laaksossa litroina\n\n**Periaate:** Korkki on kiinni, joten ilman määrä ei muutu, ja lämpötila on molemmissa paikoissa sama. Boylen laki pätee: $pV$ on vakio. Pehmeä pullo painuu kokoon, kunnes sen sisällä on sama paine kuin ulkona, joten pullon paine on aina ulkoilman paine.\n\n**Kaava:** $p_1V_1 = p_2V_2$, josta\n\n$$V_2 = \\frac{p_1V_1}{p_2}$$\n\n**Muunnokset:** Yksikköjä ei tarvitse muuntaa: paineet ovat molemmat kilopascaleina ja supistuvat, joten tilavuus tulee litroina.\n\n**Sijoitus:** $V_2 = \\dfrac{72{,}0\\,\\text{kPa} \\cdot 1{,}50\\,\\textsf{l}}{101\\,\\text{kPa}} = 1{,}0693\\,\\textsf{l}$\n\n**Vastaus:** $1{,}07\\,\\textsf{l}$, kolme merkitsevää numeroa. Kaikki kolme lähtötietoa ($72{,}0\\,\\text{kPa}$, $1{,}50\\,\\textsf{l}$ ja $101\\,\\text{kPa}$) ovat kolmen numeron arvoja.\n\n**Järkevyys:** Paine kasvaa kertoimella $101/72{,}0 \\approx 1{,}4$, joten tilavuuden pitää pienentyä samalla kertoimella: $1{,}50\\,\\textsf{l} / 1{,}4 \\approx 1{,}07\\,\\textsf{l}$. Pullon ilma vie laaksossa noin 71 % alkuperäisestä tilavuudesta, ja pullo on rypyllä. Tulo $pV$ on $108\\,\\text{kPa}\\cdot\\textsf{l}$ molemmissa paikoissa.",
+      "solution": "**Annettu:** $V_1 = 1{,}50\\,\\textsf{l}$ majalla, $p_1 = 72{,}0\\,\\text{kPa}$, laaksossa $p_2 = 101\\,\\text{kPa}$, lämpötila sama, pullo suljettu\n\n**Kysytty:** pullon ilman tilavuus $V_2$ laaksossa litroina\n\n**Periaate:** Korkki on kiinni, joten ilman määrä ei muutu, ja lämpötila on molemmissa paikoissa sama. Boylen laki pätee: $pV$ on vakio. Pehmeä pullo painuu kokoon, kunnes sen sisällä on sama paine kuin ulkona, joten pullon paine on aina ulkoilman paine.\n\n**Kaava:** $p_1V_1 = p_2V_2$, josta\n\n$$V_2 = \\frac{p_1V_1}{p_2}$$\n\n**Muunnokset:** Yksikköjä ei tarvitse muuntaa: paineet ovat molemmat kilopascaleina ja supistuvat, joten tilavuus tulee litroina.\n\n**Sijoitus:** $V_2 = \\dfrac{72{,}0\\,\\text{kPa} \\cdot 1{,}50\\,\\textsf{l}}{101\\,\\text{kPa}} = 1{,}0693\\,\\textsf{l}$\n\n**Vastaus:** $1{,}07\\,\\textsf{l}$, kolme merkitsevää numeroa. Kaikki kolme lähtötietoa ($72{,}0\\,\\text{kPa}$, $1{,}50\\,\\textsf{l}$ ja $101\\,\\text{kPa}$) ovat kolmen numeron arvoja.\n\n**Järkevyys:** Paine kasvaa kertoimella $101/72{,}0 \\approx 1{,}4$, joten tilavuuden pitää pienentyä samalla kertoimella: $1{,}50\\,\\textsf{l} / 1{,}4 \\approx 1{,}07\\,\\textsf{l}$. Pullon ilma vie laaksossa noin $71\\,\\%$ alkuperäisestä tilavuudesta, ja pullo on rypyllä. Tulo $pV$ on $108\\,\\text{kPa}\\cdot\\textsf{l}$ molemmissa paikoissa.",
       "optional": true
     },
     {
@@ -438,7 +438,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä koe",
-      "prompt": "Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään $(1/V, p)$-koordinaatistoon eikä pelkästään $(V, p)$-koordinaatistoon.",
+      "prompt": "Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään $(1/V, p)$-koordinaatistoon eikä pelkästään $(V, p)$-koordinaatistoon. Mitä muuta koejärjestelyssä on varmistettava?",
       "criteria": [
         "Sanon, että Boylen laki koskee isotermistä tilanmuutosta, ja nopea puristus lämmittää ilmaa, jolloin paine on liian suuri.",
         "Sanon, että $(V, p)$-pisteet asettuvat kaarelle, josta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta.",

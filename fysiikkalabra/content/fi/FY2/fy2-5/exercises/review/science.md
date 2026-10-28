@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ca27eff8e9804aac
+CONTENT-HASH: e9677835c145266c
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:79 (fy2-5-L2-03, Järkevyys) — Problem: rounding 0,85 up to 0,9 and getting 610 MJ only shows the order of magnitude. — Fix (optional): the loss is 15 % of 680 MJ ≈ 100 MJ, so the useful energy is about 580 MJ.
-- solutions.md fy2-5-L3-03, Muunnokset — Problem: "$1\,\text{h} = 3600\,\text{s}$" is stated, not substituted. This is acceptable because the task text gives it. — Fix (optional): $1\,\text{h} = 60 \cdot 60\,\text{s} = 3600\,\text{s}$.
+- content/fi/FY2/fy2-5/exercises/solutions.md:89 — L2-04 uses petrol density 0,74 kg/l, while the chapter on energy units uses 0,75 kg/l (32 MJ per litre); use one value across chapters (no effect on the answer).
+- content/fi/FY2/fy2-5/exercises/solutions.md (L1-04) — "kaksi merkitsevää numeroa kuten lämpöarvossa 10 MJ/kg": 10 and 400 do not show their figures; say the answer is given to the precision of the data, 4,0·10³ MJ.
 
 ## Checked
-- The hash was ca27eff8e9804aac at the start and the end.
-- The round-3 blocking item is fixed. In L2-01, 100 g and 40 g are converted to kg by substitution.
-- I recomputed all 12 answers independently and they match answers.py and exercises.json: 86, 96, 312 000 → 310 000, 4000, 0,96; 480, 41,86 → 42, 578 → 580, 4,465 → 4,5; 5,209 → 5,2, 3,6, 35. Each rounded answer deviates by at most 0,8 %, inside the 2 % tolerance.
-- answers.py uses the right physics on every line: E = Hm, m = E : H, E_hyöty = η E_sisään, E_sisään = E_hyöty : η, and P = E_hyöty : t with 1 MJ/s = 1 MW.
-- Every solution has all seven parts. Each solves symbolically before substituting, does its conversions (GJ → MJ, t → kg, kJ → MJ, g → kg) by substitution, and justifies its rounding.
-- The magnitudes are realistic: about 6 l of petrol per 100 km, a 35 MW peat plant at 35 %, kevyt polttoöljy at 43 MJ/kg, nuts at 24 MJ/kg, 12 MJ a day for a hiker.
-- The levels have 5, 4 and 3 exercises. None repeats the worked example (6,0 kg of wood). All are inside FY2 scope, with one efficiency per task and no chain.
+- All 12 answers recomputed independently in one script: 86, 96, 312 000 → 310 000, 4000, 0,96 MJ; 480 kJ; 41,9 → 42 kg; 578 → 580 MJ; 4,47 → 4,5 kg; 5,21 → 5,2 kg; 3,6; 35 MW. All agree with answers.py and exercises.json, and each rounded answer is inside its 2 % tolerance.
+- Heating values match the lesson table; L3-01's light fuel oil value (43 MJ/kg) is given in the task.
+- Food tasks (L1-05, L2-01, L3-02) use the energy content e and say it is not a heating value (food and fuel guardrail); example values are marked as examples.
+- Efficiency tasks (L2-03, L2-04, L3-03) separate released energy from useful energy and use one device's η only (FY2 scope); 35 % electrical efficiency for a peat plant and 85 % for a pellet boiler are realistic.
+- L3-03 converts t → kg and h → s correctly, with 1 MJ/s = 1 MW.
+- Solutions complete in seven parts, symbolic first, conversions explicit, checks real (L2-04: about 6 l per 100 km).
+- Notation (E = Hm, e, η, E_sisään, E_hyöty) the same as in the lesson.

@@ -1,23 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9276338c11c76304
+CONTENT-HASH: aee5688129bd889b
 
 ## Blocking
 
 ## Polish
-- Tutki, source-note box (data-fi, data-yksikko; 390 px capture) — still an oval pill with a multi-line note, text hugs the curved edge; shared component, make it a plain rounded box.
-- Figure "unit-power" — axis reads 10^3 ... 10^9 only; add "1 kW", "1 MW", "1 GW" under three ticks so the powers of ten are tied to units. Row labels sit over the gridlines; a little more room would help.
-- inquiry.json ennuste-1 — fact recall settled by the table; the justify box invites "miksi", which only the week table (data-viikko) really tests. Acceptable, optionally reword to "Mikä ominaisuus selittää…".
-- inquiry.json johtopaatos model — "säädettäviä voimaloita, kuten vesivoimaa" appears before the groups are taught in theory; say "voimaloita, joiden tehoa voi nostaa nopeasti, kuten vesivoimaa".
-- Esimerkki vaihe 4 (390 px) — "14 GWh = 14 · 10^6 kWh ja" then the second conversion drops into a separate block; fine, but the lead-in sentence reads broken across the break.
+- inquiry.json (task with N = 320 wind turbines, Järkevyys) — the new sentence is long (two "koska/mutta" clauses); split: "Saman vuosienergian tuottamiseen tarvittaisiin paljon enemmän tuulivoimaloita, koska niiden keskiteho on vain osa nimellistehosta. Olkiluoto 3 sen sijaan käy lähes koko ajan lähellä nimellistehoaan."
+- Round 1 polish items (source-note pill, unit-power axis labels, ennuste-1 wording, "säädettäviä voimaloita" before the groups) are not part of this diff and remain open, non-blocking.
 
 ## Checked
-- Round 2 blocker fixed: the worked example's Sijoitus at 390 px now fits, the "osuus" rows are aligned and "0,32" is whole; vaihe 4 and 7 blocks fit too.
-- Example: seven stages, one step each, symbolic first, units converted, answer rounded with reason, reasonableness check present; does not repeat the Tutki tasks.
-- Opening question answered with evidence (bars, power table, week table) before the theory; slot goals covered, no FY3 content (no chain efficiency, no heat engine).
-- Predictions can be refuted: ennuste-1 by the Tutki table, the week table shows nominal vs actual wind power; option feedback repairs the misconception.
-- Figures (plants, bars, log-axis dots) legible and beside their paragraphs at 390 and 1280 px; tables fit 390 px.
-- Badges Tilastoaineisto and Keksitty esimerkkiaineisto present; chapter names, not ids.
-- Tasks have three hints, mistake feedback and complete model solutions; exit ticket and checks test grouping, E = P t, nominal vs mean power.
-- Finnish and case after number+unit correct (5,0 MW:n); divisions written with colon, \cdot used.
-- Workload fits one lesson (optional items marked).
-- Hash unchanged at start and end.
+- Delta 1: the solution's Järkevyys now states the correct condition (same annual energy, mean power below nominal) instead of the vaguer "Todellisuudessa"; the arithmetic 1600 : 5,0 = 320 is untouched and the contrast with Olkiluoto 3 is correct.
+- Delta 2: "ovat uusiutuvia, kun uusi metsä kasvaa tilalle" turns the claim into a stated condition; grammatical and consistent with the glossary (uusiutuva energia: bioperäiset polttoaineet).
+- No answer, hint or option changed; no experiment or prediction affected; earlier PASS conclusions hold.

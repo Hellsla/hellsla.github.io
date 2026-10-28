@@ -56,7 +56,7 @@ Ongelma on ilmiön voimistuminen. Kun ihminen lisää ilmakehään hiilidioksidi
 Kasvihuoneilmiötä käsitellään laskemalla FY3-kurssilla luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*. Tässä riittää ymmärtää, mitä kaasut tekevät säteilylle ja mistä lisäkaasut tulevat.
 
 ### Polttoaineet yhdistävät energian ja ilmaston
-Fossiilinen polttoaine, kuten kivihiili, öljy tai maakaasu, on muinaisten eliöiden kemiallista energiaa: kivihiili on syntynyt enimmäkseen kasveista, öljy ja maakaasu meren planktonista. Kun polttoaine palaa, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo*), ja hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla, sitä enemmän hiilidioksidia vapautuu.
+Fossiilinen polttoaine, kuten kivihiili, öljy tai maakaasu, on muinaisten eliöiden kemiallista energiaa: kivihiili on syntynyt enimmäkseen kasveista, öljy ja maakaasu meren planktonista. Kun tällainen hiiltä sisältävä polttoaine palaa täydellisesti, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo*), ja hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla hiilipitoisia polttoaineita, sitä enemmän hiilidioksidia vapautuu. Kaikissa polttoaineissa ei ole hiiltä: esimerkiksi vedyn palaessa syntyy vain vettä.
 
 Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä: polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
 
@@ -197,6 +197,6 @@ m &= e \cdot E \\
 
 ## Tiivistelmä
 - Kasvihuonekaasut päästävät auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä pois. Luonnollinen kasvihuoneilmiö nostaa keskilämpötilan arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$.
-- Polttoaineiden polttaminen lisää ilmakehän hiilidioksidia, voimistaa kasvihuoneilmiötä ja johtaa ilmastonmuutokseen.
+- Fossiilisten polttoaineiden polttaminen lisää ilmakehän hiilidioksidia, voimistaa kasvihuoneilmiötä ja johtaa ilmastonmuutokseen.
 - Päästö on päästökerroin kertaa energia: $m = e \cdot E$. Tuotantotapoja verrataan elinkaaren päästökertoimilla, jotka vaihtelevat noin $12\,\text{g/kWh}$:sta (ydin- ja tuulivoima) noin $820\,\text{g/kWh}$:iin (kivihiili).
 - Päästökerroin ei kerro kaikkea: maankäyttö, kuljetukset, jäte, turvallisuus ja sähkön saatavuus punnitaan erikseen, kun etsitään kestävää energiataloutta.

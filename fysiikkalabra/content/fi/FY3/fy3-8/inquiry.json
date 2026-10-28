@@ -3,7 +3,7 @@
   "contribution": "Lämpötilan muutos muuttaa myös kappaleen kokoa: tällä tunnilla selvität kokeilla, mistä sauvan pituuden muutos riippuu, ja mikromalli selittää, miksi kiinteä aine laajenee lämmetessään.",
   "learn": ["Osaat selittää hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään.", "Tutkit kokeilla, mistä sauvan pituuden muutos riippuu.", "Osaat laskea kappaleen pituuden ja tilavuuden muutoksen lämpötilan muuttuessa."],
   "prior": [
-    "Lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
+    "Lämpötila kuvaa hiukkasten lämpöliikkeen voimakkuutta; kaasussa se kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
     "Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina, $T = \\theta + 273{,}15$ (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
   ],
   "activities": [
@@ -22,20 +22,20 @@
       "prompt": "Sillan kansi on pakkasaamuna $-30\\,{}^\\circ\\text{C}$ ja helleiltapäivänä $+30\\,{}^\\circ\\text{C}$. Kuinka suuri on lämpötilan muutos kelvineinä?",
       "choices": [
         {
-          "text": "60 K",
+          "text": "$60\\,\\text{K}$",
           "correct": true,
           "feedback": "Oikein. Kelvin- ja celsiusasteikon asteet ovat yhtä suuria, joten muutos on sama luku: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. Muunnos $+273{,}15$ kumoutuu erotuksessa."
         },
         {
-          "text": "333 K",
+          "text": "$333\\,\\text{K}$",
           "feedback": "Lisäsit 273 lämpötilan *muutokseen*. Muunnos $T = \\theta + 273{,}15$ koskee yksittäistä lämpötilaa; erotuksessa se kumoutuu: $(303{,}15 - 243{,}15)\\,\\text{K} = 60\\,\\text{K}$."
         },
         {
-          "text": "0 K",
+          "text": "$0\\,\\text{K}$",
           "feedback": "Lukujen 30 ja −30 summa on nolla, mutta muutos on loppulämpötila miinus alkulämpötila: $30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$."
         },
         {
-          "text": "−60 K",
+          "text": "$-60\\,\\text{K}$",
           "feedback": "Etumerkki kertoo suunnan: lämpötila nousee, joten muutos on positiivinen. Laske loppu miinus alku: $30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = +60\\,\\text{K}$."
         }
       ],
@@ -46,7 +46,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 1: lämmitetään kuumemmaksi",
-      "prompt": "Teräksisen sauvan pituus on 20 °C:ssa 10 m. Sauva lämmitetään ensin 70 °C:seen ja sitten 120 °C:seen. Miten sauvan pituuden muutos $\\Delta L$ (verrattuna 20 °C:n pituuteen) on 120 °C:ssa verrattuna 70 °C:seen?",
+      "prompt": "Teräksisen sauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $10\\,\\text{m}$. Sauva lämmitetään ensin $70\\,{}^\\circ\\text{C}$:seen ja sitten $120\\,{}^\\circ\\text{C}$:seen. Miten sauvan pituuden muutos $\\Delta L$ (verrattuna $20\\,{}^\\circ\\text{C}$:n pituuteen) on $120\\,{}^\\circ\\text{C}$:ssa verrattuna $70\\,{}^\\circ\\text{C}$:seen?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -54,13 +54,13 @@
       },
       "choices": [
         {
-          "text": "Noin 1,7-kertainen, koska 120 °C on noin 1,7 kertaa 70 °C.",
-          "feedback": "Pituuden muutos ei riipu lämpötilan lukemasta vaan siitä, kuinka paljon lämpötila on muuttunut lähtötilanteesta 20 °C. Muutokset ovat $\\Delta T = 50\\,\\text{K}$ ja $100\\,\\text{K}$, ja mallin arvot ovat $\\Delta L = 6{,}00\\,\\text{mm}$ ja $12{,}0\\,\\text{mm}$: suhde on 2. Celsiuslukujen suhde ei edes ole fysikaalinen, koska asteikon nollakohta on sovittu."
+          "text": "Noin 1,7-kertainen, koska $120\\,{}^\\circ\\text{C}$ on noin 1,7 kertaa $70\\,{}^\\circ\\text{C}$.",
+          "feedback": "Pituuden muutos ei riipu lämpötilan lukemasta vaan siitä, kuinka paljon lämpötila on muuttunut lähtötilanteesta $20\\,{}^\\circ\\text{C}$. Muutokset ovat $\\Delta T = 50\\,\\text{K}$ ja $100\\,\\text{K}$, ja mallin arvot ovat $\\Delta L = 6{,}00\\,\\text{mm}$ ja $12{,}0\\,\\text{mm}$: suhde on 2. Celsiuslukujen suhde ei edes ole fysikaalinen, koska asteikon nollakohta on sovittu."
         },
         {
           "text": "Kaksinkertainen.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: 70 °C:ssa $\\Delta L = 6{,}00\\,\\text{mm}$ ja 120 °C:ssa $12{,}0\\,\\text{mm}$. Lämpötilan muutos kasvoi 50 K:stä 100 K:iin eli kaksinkertaistui, ja niin kaksinkertaistui pituuden muutoskin."
+          "feedback": "Mallin arvot tukevat tätä: $70\\,{}^\\circ\\text{C}$:ssa $\\Delta L = 6{,}00\\,\\text{mm}$ ja $120\\,{}^\\circ\\text{C}$:ssa $12{,}0\\,\\text{mm}$. Lämpötilan muutos kasvoi $50\\,\\text{K}$:stä $100\\,\\text{K}$:iin eli kaksinkertaistui, ja niin kaksinkertaistui pituuden muutoskin."
         },
         {
           "text": "Alle kaksinkertainen, koska jo lämmenneen teräksen hiukkasvälit eivät enää kasva yhtä helposti.",
@@ -68,7 +68,7 @@
         },
         {
           "text": "Sama, koska sauva on samaa terästä ja yhtä pitkä.",
-          "feedback": "Aine ja alkupituus ovat samat, mutta lämpötilan muutos ei: 50 K ja 100 K. Mallin arvot ovat 6,00 mm ja 12,0 mm, joten suurempi lämpötilan muutos pidentää sauvaa enemmän."
+          "feedback": "Aine ja alkupituus ovat samat, mutta lämpötilan muutos ei: $50\\,\\text{K}$ ja $100\\,\\text{K}$. Mallin arvot ovat 6,00 mm ja 12,0 mm, joten suurempi lämpötilan muutos pidentää sauvaa enemmän."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 2: pidempi sauva",
-      "prompt": "Kaksi teräksistä sauvaa lämpenee 20 °C:sta 70 °C:seen. Sauva A on 20 °C:ssa 10 m pitkä, sauva B 20 m pitkä. Miten B:n pituuden muutos on verrattuna A:n pituuden muutokseen?",
+      "prompt": "Kaksi teräksistä sauvaa lämpenee $20\\,{}^\\circ\\text{C}$:sta $70\\,{}^\\circ\\text{C}$:seen. Sauva A on $20\\,{}^\\circ\\text{C}$:ssa $10\\,\\text{m}$ pitkä, sauva B $20\\,\\text{m}$ pitkä. Miten B:n pituuden muutos on verrattuna A:n pituuden muutokseen?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -86,12 +86,12 @@
       "choices": [
         {
           "text": "Yhtä suuri, koska aine ja lämpötilan muutos ovat samat.",
-          "feedback": "Aine ja lämpötilan muutos määräävät *suhteellisen* muutoksen $\\Delta L / L_0 = \\alpha \\Delta T$, joka on mallissa molemmilla 0,0600 %. Pidemmässä sauvassa on kuitenkin kaksi kertaa enemmän hiukkasvälejä, ja jokainen kasvaa yhtä paljon: A pitenee 6,00 mm, B 12,0 mm."
+          "feedback": "Aine ja lämpötilan muutos määräävät *suhteellisen* muutoksen $\\Delta L / L_0 = \\alpha \\Delta T$, joka on mallissa molemmilla $0{,}0600\\,\\%$. Pidemmässä sauvassa on kuitenkin kaksi kertaa enemmän hiukkasvälejä, ja jokainen kasvaa yhtä paljon: A pitenee 6,00 mm, B 12,0 mm."
         },
         {
           "text": "Kaksinkertainen.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: A pitenee 6,00 mm ja B 12,0 mm, ja suhteellinen muutos $\\Delta L / L_0$ on molemmilla sama 0,0600 %. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, jotka kaikki kasvavat yhtä paljon."
+          "feedback": "Mallin arvot tukevat tätä: A pitenee 6,00 mm ja B 12,0 mm, ja suhteellinen muutos $\\Delta L / L_0$ on molemmilla sama $0{,}0600\\,\\%$. Kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, jotka kaikki kasvavat yhtä paljon."
         },
         {
           "text": "Puolet, koska pitkä sauva lämpenee hitaammin.",
@@ -136,8 +136,8 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu 20 °C:ssa) ja lämpötila $T$.",
-      "howto": "Vasemmalla mikromalli, oikealla sauva ja $(T, \\Delta L)$-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle 0,3 %. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on 20 °C:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
+      "text": "Valitse aine, sauvan alkupituus $L_0$ (mitattu $20\\,{}^\\circ\\text{C}$:ssa) ja lämpötila $T$.",
+      "howto": "Vasemmalla mikromalli, oikealla sauva ja $(T, \\Delta L)$-kuvaaja. Muutokset on piirretty sata kertaa liioiteltuina; todelliset muutokset ovat alle $0{,}3\\,\\%$. Hiukkaset eivät suurene, vaan niiden keskimääräinen etäisyys kasvaa. Kuvaajan ohuet suorat ovat muiden aineiden suorat: jyrkin on alumiini, loivin borosilikaattilasi. Katkoviiva on $20\\,{}^\\circ\\text{C}$:n tilanne. *Nopeus* muuttaa vain värähtelyn tahtia, ei pituuksia.",
       "model": "Lukemat ovat mallin arvoja, joissa kerroin $\\alpha$ oletetaan vakioksi, eivät mittauksia oikeasta sauvasta. Mikromallissa hiukkaset värähtelevät piirroksessa yhtä paljon kumpaankin suuntaan, ja niiden keskimääräinen etäisyys asetetaan suoraan kaavasta $\\Delta L/L_0 = \\alpha \\Delta T$. Malli siis näyttää, *että* etäisyys kasvaa, mutta ei sitä, *miksi*; syy on Teoriatiivistelmässä."
     },
     {
@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi 70 °C ja 120 °C, ja kokeile myös pakkasta, esimerkiksi −30 °C. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
+      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi $70\\,{}^\\circ\\text{C}$ ja $120\\,{}^\\circ\\text{C}$, ja kokeile myös pakkasta, esimerkiksi $-30\\,{}^\\circ\\text{C}$. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
       "initial": {
         "material": "teräs",
         "L0": 10,
@@ -182,7 +182,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Lisätutkimus: vain alkupituus muuttuu",
-      "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat vakioita, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi 10 m, 20 m ja 40 m. Mikä muuttuu, mikä pysyy samana?",
+      "intro": "Testaa ennuste 2. Nyt aine ja lämpötila ovat vakioita, ja vain sauvan alkupituutta muutetaan. Kirjaa pituuden muutos ja suhteellinen muutos ainakin kahdella alkupituudella, esimerkiksi $10\\,\\text{m}$, $20\\,\\text{m}$ ja $40\\,\\text{m}$. Mikä muuttuu, mikä pysyy samana?",
       "initial": {
         "material": "teräs",
         "L0": 10,
@@ -237,23 +237,23 @@
       "stage": "tutki",
       "type": "interpret",
       "title": "Kiinteä aine, neste ja kaasu",
-      "text": "Taulukossa on laskettu, kuinka paljon litra eri aineita laajenee, kun sen lämpötila nousee 10 K. Arvot on laskettu oppitunnin taulukon kertoimista kaavalla $\\Delta V = \\gamma V_0 \\Delta T$ (teräkselle $\\gamma \\approx 3\\alpha$); ne ovat mallin arvoja, eivät mittauksia. Ilman tilavuus on laskettu vakiopaineessa.\n\n| 1,00 l ainetta | $\\Delta V$ (cm³) |\n|---|---|\n| teräs (kiinteä) | 0,36 |\n| vesi (neste) | 2,1 |\n| etanoli (neste) | 11 |\n| ilma (kaasu) | 34 |",
+      "text": "Taulukossa on laskettu, kuinka paljon litra eri aineita laajenee, kun sen lämpötila nousee $10\\,\\text{K}$. Arvot on laskettu oppitunnin taulukon kertoimista kaavalla $\\Delta V = \\gamma V_0 \\Delta T$ (teräkselle $\\gamma \\approx 3\\alpha$); ne ovat mallin arvoja, eivät mittauksia. Ilman tilavuus on laskettu vakiopaineessa.\n\n| $1{,}00\\,\\textsf{l}$ ainetta | $\\Delta V$ (cm³) |\n|---|---|\n| teräs (kiinteä) | 0,36 |\n| vesi (neste) | 2,1 |\n| etanoli (neste) | 11 |\n| ilma (kaasu) | 34 |",
       "question": {
         "type": "choice",
         "prompt": "Mikä mikromallin piirre selittää parhaiten, miksi kaasu laajenee eniten ja kiinteä aine vähiten?",
         "choices": [
           {
-            "text": "Mitä heikommin hiukkaset ovat sidoksissa toisiinsa, sitä enemmän lämpötilan nousu loitontaa niitä: kiinteässä aineessa sidokset ovat vahvimpia, kaasun hiukkaset ovat lähes vapaita.",
+            "text": "Mitä heikompia hiukkasten väliset vuorovaikutukset ovat, sitä enemmän lämpötilan nousu loitontaa niitä: kiinteässä aineessa vuorovaikutukset ovat vahvimpia, kaasun hiukkaset ovat lähes vapaita.",
             "correct": true,
-            "feedback": "Juuri näin. Kiinteän aineen hiukkaset värähtelevät tasapainoasemiensa ympärillä vahvojen sidosten pitäminä, nesteen sidokset ovat heikompia, ja kaasun hiukkaset liikkuvat lähes vapaasti. Taulukossa järjestys on sama: 0,36 cm³, 2,1 cm³ ja 11 cm³, 34 cm³."
+            "feedback": "Juuri näin. Kiinteän aineen hiukkaset värähtelevät tasapainoasemiensa ympärillä naapuriensa vetovoimien pitäminä, nesteen hiukkaset pysyvät yhdessä mutta liikkuvat toistensa ohi, ja kaasun hiukkaset liikkuvat lähes vapaasti. Taulukossa järjestys on sama: $0{,}36\\,\\text{cm}^3$, $2{,}1\\,\\text{cm}^3$ ja $11\\,\\text{cm}^3$, $34\\,\\text{cm}^3$."
           },
           {
             "text": "Kaasun ja nesteen hiukkaset kasvavat lämmetessään enemmän kuin kiinteän aineen hiukkaset.",
-            "feedback": "Hiukkaset eivät kasva missään olomuodossa; lämmetessä muuttuu niiden liike ja keskimääräinen etäisyys. Ero olomuotojen välillä tulee siitä, kuinka tiukasti hiukkasten väliset sidokset pitävät niitä paikoillaan."
+            "feedback": "Hiukkaset eivät kasva missään olomuodossa; lämmetessä muuttuu niiden liike ja keskimääräinen etäisyys. Ero olomuotojen välillä tulee siitä, kuinka tiukasti hiukkasten väliset vuorovaikutukset pitävät niitä paikoillaan."
           },
           {
             "text": "Kaasussa on samassa tilavuudessa enemmän hiukkasia, joten laajenevia hiukkasvälejä on enemmän.",
-            "feedback": "Asia on päinvastoin: kaasussa hiukkaset ovat kaukana toisistaan, joten litrassa ilmaa on paljon vähemmän hiukkasia kuin litrassa vettä tai terästä. Kaasu laajenee eniten, koska sen hiukkaset ovat lähes vapaita, eivät sidosten pitämiä."
+            "feedback": "Asia on päinvastoin: kaasussa hiukkaset ovat kaukana toisistaan, joten litrassa ilmaa on paljon vähemmän hiukkasia kuin litrassa vettä tai terästä. Kaasu laajenee eniten, koska sen hiukkaset ovat lähes vapaita, eivät naapuriensa vetovoimien pitämiä."
           }
         ]
       },
@@ -294,24 +294,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat 4,0 m pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee 10 °C:sta 30 °C:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0{,}028\\,\\text{m} = 28\\,\\text{mm}$.\n\nMissä on virhe?",
+      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $4{,}0\\,\\text{m}$ pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0{,}028\\,\\text{m} = 28\\,\\text{mm}$.\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Kaavaan kuuluu lämpötilan muutos, ei loppulämpötila kelvineinä: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, ja $\\Delta L \\approx 1{,}8\\,\\text{mm}$.",
           "correct": true,
-          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: 28 mm olisi 0,7 % tikkaiden pituudesta, mikä on lämpölaajenemiselle aivan liikaa."
+          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: 28 mm olisi $0{,}7\\,\\%$ tikkaiden pituudesta, mikä on lämpölaajenemiselle aivan liikaa."
         },
         {
           "text": "Kerroin $\\alpha$ pitää muuntaa yksikköön 1/°C ennen sijoittamista.",
-          "feedback": "Muunnosta ei tarvita: kelvin ja celsiusaste ovat yhtä suuria, joten $1/\\text{K}$ ja $1/{}^\\circ\\text{C}$ ovat sama luku. Virhe on lämpötilan muutoksessa: kaavaan kuuluu $\\Delta T = 20\\,\\text{K}$, ei 303 K."
+          "feedback": "Muunnosta ei tarvita: kelvin ja celsiusaste ovat yhtä suuria, joten $1/\\text{K}$ ja $1/{}^\\circ\\text{C}$ ovat sama luku. Virhe on lämpötilan muutoksessa: kaavaan kuuluu $\\Delta T = 20\\,\\text{K}$, ei $303\\,\\text{K}$."
         },
         {
           "text": "Pituus pitää sijoittaa millimetreinä, jotta tulos tulee millimetreinä.",
-          "feedback": "Metreinä sijoitettu pituus antaa tuloksen metreinä, ja muunnos millimetreiksi on tehty oikein. Virhe on lämpötilan muutoksessa: lämpötila nousee vain 20 K."
+          "feedback": "Metreinä sijoitettu pituus antaa tuloksen metreinä, ja muunnos millimetreiksi on tehty oikein. Virhe on lämpötilan muutoksessa: lämpötila nousee vain $20\\,\\text{K}$."
         },
         {
           "text": "Laskussa ei ole virhettä.",
-          "feedback": "Tarkista $\\Delta T$. Lämpötila nousee 10 °C:sta 30 °C:seen eli 20 K, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
+          "feedback": "Tarkista $\\Delta T$. Lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen eli $20\\,\\text{K}$, mutta opiskelija sijoitti loppulämpötilan kelvineinä. Tulos 28 mm on noin viisitoista kertaa liian suuri."
         }
       ],
       "optional": true
@@ -321,7 +321,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Nestelämpömittarin säiliössä on $0{,}20\\,\\text{cm}^3$ etanolia ($\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$). Säiliöstä lähtee ohut putki, jonka poikkipinta-ala on $0{,}050\\,\\text{mm}^2$. Kuinka monta millimetriä nestepatsas nousee, kun lämpötila nousee 15 °C:sta 25 °C:seen? Lasin laajeneminen jätetään huomiotta (lasin $\\gamma \\approx 3\\alpha$ on noin neljäkymmentä kertaa etanolin kerrointa pienempi), ja putkessa olevan etanolin oma laajeneminen on pieni säiliöön verrattuna.",
+      "prompt": "Nestelämpömittarin säiliössä on $0{,}20\\,\\text{cm}^3$ etanolia ($\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$). Säiliöstä lähtee ohut putki, jonka poikkipinta-ala on $0{,}050\\,\\text{mm}^2$. Kuinka monta millimetriä nestepatsas nousee, kun lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $25\\,{}^\\circ\\text{C}$:seen? Lasin laajeneminen jätetään huomiotta (lasin $\\gamma \\approx 3\\alpha$ on noin neljäkymmentä kertaa etanolin kerrointa pienempi), ja putkessa olevan etanolin oma laajeneminen on pieni säiliöön verrattuna.",
       "answer": 44,
       "unit": "mm",
       "tolerance": 0.03,
@@ -337,7 +337,7 @@
         },
         {
           "value": 110,
-          "feedback": "Käytit loppulämpötilaa 25 °C lämpötilan muutoksen paikalla. Lämpötila nousee 15 °C:sta 25 °C:seen eli $\\Delta T = 10\\,\\text{K}$."
+          "feedback": "Käytit loppulämpötilaa $25\\,{}^\\circ\\text{C}$ lämpötilan muutoksen paikalla. Lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $25\\,{}^\\circ\\text{C}$:seen eli $\\Delta T = 10\\,\\text{K}$."
         }
       ],
       "solution": "**Annettu:** etanoli, $V_0 = 0{,}20\\,\\text{cm}^3$, $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (tehtävässä annettu), putken poikkipinta-ala $A = 0{,}050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Kysytty:** nestepatsaan nousu $h$ millimetreinä\n\n**Periaate:** Etanoli on nestettä ja laajenee lämmetessään, joten sen tilavuuden muutos on verrannollinen alkutilavuuteen ja lämpötilan muutokseen: $\\Delta V = \\gamma V_0 \\Delta T$. Lasin laajeneminen on noin neljäkymmentä kertaa pienempi ja jätetään huomiotta, joten koko tilavuuden kasvu menee ohueen putkeen. Putkessa nousevan patsaan tilavuus on lieriön tilavuus $\\Delta V = A h$.\n\n**Kaava:** $\\Delta V = \\gamma V_0 \\Delta T$ ja $\\Delta V = A h$, joten $\\gamma V_0 \\Delta T = A h$, josta\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Muunnokset:** Pinta-ala on neliömillimetreinä, joten tilavuus muunnetaan: $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, koska $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. Lämpötilan muutos on sama kelvineinä: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Vastaus:** $h = 44\\,\\text{mm}$, kaksi merkitsevää numeroa. Rajoittavia tietoja on neljä: $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0{,}20\\,\\text{cm}^3$, $A = 0{,}050\\,\\text{mm}^2$ ja kokonaisasteiden erotus $\\Delta T = 10\\,\\text{K}$ ovat kaikki kahden numeron arvoja.\n\n**Järkevyys:** Etanolin tilavuus kasvaa vain $\\gamma \\Delta T = 1{,}1\\,\\%$, mutta ohuessa putkessa pienikin tilavuus on pitkä patsas: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ kelviniä kohti, mikä on tavallisen lämpömittarin asteikon mittaluokka. Patsas nousee, koska neste lämpenee. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin $43\\,\\text{mm}$.",
@@ -354,20 +354,20 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Käsite",
-      "prompt": "Syksyllä järven vesi jäähtyy pinnalta käsin. Koko järvi on jo jäähtynyt 4 °C:seen, ja pintavesi jäähtyy edelleen 2 °C:seen. Mitä 2-asteiselle pintavedelle tapahtuu?",
+      "prompt": "Syksyllä järven vesi jäähtyy pinnalta käsin. Koko järvi on jo jäähtynyt $4\\,{}^\\circ\\text{C}$:seen, ja pintavesi jäähtyy edelleen $2\\,{}^\\circ\\text{C}$:seen. Mitä 2-asteiselle pintavedelle tapahtuu?",
       "choices": [
         {
           "text": "Se painuu pohjalle, koska kylmempi vesi on aina tiheämpää.",
-          "feedback": "Näin käy 4 °C:n yläpuolella. Vesi on kuitenkin poikkeus: 0 °C:n ja 4 °C:n välillä se laajenee jäähtyessään, joten 2-asteisen veden tiheys on pienempi kuin 4-asteisen, ja se jää pinnalle."
+          "feedback": "Näin käy $4\\,{}^\\circ\\text{C}$:n yläpuolella. Vesi on kuitenkin poikkeus: $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä se laajenee jäähtyessään, joten 2-asteisen veden tiheys on pienempi kuin 4-asteisen, ja se jää pinnalle."
         },
         {
-          "text": "Se jää pinnalle, koska 0 °C:n ja 4 °C:n välillä vesi laajenee jäähtyessään ja sen tiheys pienenee.",
+          "text": "Se jää pinnalle, koska $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä vesi laajenee jäähtyessään ja sen tiheys pienenee.",
           "correct": true,
-          "feedback": "Oikein. Veden tiheys on suurin noin 4 °C:ssa, joten tihein vesi pysyy pohjalla ja kylmempi vesi pinnalla, jossa se lopulta jäätyy. Siksi järvi jäätyy pinnalta alkaen ja pohjalla on talvellakin noin 4-asteista vettä."
+          "feedback": "Oikein. Veden tiheys on suurin noin $4\\,{}^\\circ\\text{C}$:ssa, joten tihein vesi pysyy pohjalla ja kylmempi vesi pinnalla, jossa se lopulta jäätyy. Siksi järvi jäätyy pinnalta alkaen ja pohjalla on talvellakin noin 4-asteista vettä."
         },
         {
-          "text": "Se sekoittuu koko järveen, joten järvi jäähtyy kauttaaltaan 0 °C:seen ja jäätyy pohjasta.",
-          "feedback": "Sekoittuminen vaatisi, että pintavesi olisi tiheämpää kuin alla oleva vesi. 0 °C:n ja 4 °C:n välillä vesi laajenee jäähtyessään, joten kylmä pintavesi on harvempaa ja jää pinnalle. Järvi jäätyy pinnalta, ei pohjasta."
+          "text": "Se sekoittuu koko järveen, joten järvi jäähtyy kauttaaltaan $0\\,{}^\\circ\\text{C}$:seen ja jäätyy pohjasta.",
+          "feedback": "Sekoittuminen vaatisi, että pintavesi olisi tiheämpää kuin alla oleva vesi. $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä vesi laajenee jäähtyessään, joten kylmä pintavesi on harvempaa ja jää pinnalle. Järvi jäätyy pinnalta, ei pohjasta."
         }
       ]
     },
@@ -376,14 +376,14 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Taulukko ja laskeminen",
-      "prompt": "Metallisauvan pituus on 20 °C:ssa 2,00 m. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
+      "prompt": "Metallisauvan pituus on $20\\,{}^\\circ\\text{C}$:ssa $2{,}00\\,\\text{m}$. Taulukossa ovat sauvan pituuden muutoksen esimerkkiarvot eri lämpötiloissa (laskettuja arvoja, eivät mittauksia).\n\n| $T$ (°C) | 20 | 60 | 100 |\n|---|---|---|---|\n| $\\Delta L$ (mm) | 0 | 1,84 | 3,68 |\n\nLaske metallin pituuden lämpötilakerroin $\\alpha$. Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.",
       "answer": 23,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.02,
       "hints": [
-        "Kuinka paljon $\\Delta L$ kasvaa, kun lämpötila nousee 40 K? Pysyykö kasvu samana joka välillä?",
-        "Kaavasta $\\Delta L = \\alpha L_0 \\Delta T$ saadaan $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. Lämpötilan muutos lasketaan 20 °C:sta, jossa $L_0$ on mitattu.",
-        "Esimerkiksi 60 °C:n sarakkeesta: $\\alpha = \\dfrac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
+        "Kuinka paljon $\\Delta L$ kasvaa, kun lämpötila nousee $40\\,\\text{K}$? Pysyykö kasvu samana joka välillä?",
+        "Kaavasta $\\Delta L = \\alpha L_0 \\Delta T$ saadaan $\\alpha = \\dfrac{\\Delta L}{L_0 \\Delta T}$. Lämpötilan muutos lasketaan $20\\,{}^\\circ\\text{C}$:sta, jossa $L_0$ on mitattu.",
+        "Esimerkiksi $60\\,{}^\\circ\\text{C}$:n sarakkeesta: $\\alpha = \\dfrac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}}$."
       ],
       "mistakes": [
         {
@@ -392,7 +392,7 @@
         },
         {
           "value": 15.3,
-          "feedback": "Käytit lämpötilaa 60 °C lämpötilan muutoksen paikalla. Pituus on mitattu 20 °C:ssa, joten $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$."
+          "feedback": "Käytit lämpötilaa $60\\,{}^\\circ\\text{C}$ lämpötilan muutoksen paikalla. Pituus on mitattu $20\\,{}^\\circ\\text{C}$:ssa, joten $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$."
         }
       ],
       "solution": "**Annettu:** metallisauva, $L_0 = 2{,}00\\,\\text{m}$ lämpötilassa $T_0 = 20\\,{}^\\circ\\text{C}$; taulukosta $\\Delta L = 1{,}84\\,\\text{mm}$ lämpötilassa $60\\,{}^\\circ\\text{C}$ ja $\\Delta L = 3{,}68\\,\\text{mm}$ lämpötilassa $100\\,{}^\\circ\\text{C}$\n\n**Kysytty:** pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$\n\n**Periaate:** Kiinteän aineen pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen, ja verrannollisuuskerroin $\\alpha$ on aineelle ominainen vakio. Taulukossa $\\Delta L$ kaksinkertaistuu, kun lämpötilan muutos $\\Delta T$ ($40\\,\\text{K} \\to 80\\,\\text{K}$) kaksinkertaistuu, joten verrannollisuus pätee eikä sauva muuta olomuotoaan.\n\n**Kaava:** $\\Delta L = \\alpha L_0 \\Delta T$, josta\n\n$$\\alpha = \\frac{\\Delta L}{L_0 \\Delta T}$$\n\n**Muunnokset:** $\\Delta L = 1{,}84\\,\\text{mm} = 1{,}84 \\cdot 10^{-3}\\,\\text{m}$, jotta pituusyksiköt supistuvat. $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, sama kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\alpha &= \\frac{1{,}84 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 40\\,\\text{K}} \\\\ &= 2{,}3 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{K}} \\\\ &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\end{aligned}$$\n\n**Vastaus:** $\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, kaksi merkitsevää numeroa. Rajoittava tieto on lämpötilaero $\\Delta T = 60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 40\\,\\text{K}$, joka on kokonaisasteiden erotuksena kahden numeron arvo; $\\Delta L = 1{,}84\\,\\text{mm}$ ja $L_0 = 2{,}00\\,\\text{m}$ ovat kolmen numeron arvoja eivätkä rajoita.\n\n**Järkevyys:** Toinen sarake antaa saman: $\\dfrac{3{,}68 \\cdot 10^{-3}\\,\\text{m}}{2{,}00\\,\\text{m} \\cdot 80\\,\\text{K}} = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Arvo on yhtä suuri kuin taulukon alumiinin $\\alpha$ ja metallien tavanomaisella alueella $10$–$25 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Jos $\\Delta T$:n paikalla olisi $60\\,\\text{K}$, tulos olisi $15 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, mikä ei sopisi toiseen sarakkeeseen."

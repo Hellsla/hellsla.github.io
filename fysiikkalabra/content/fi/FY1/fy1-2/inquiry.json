@@ -174,7 +174,7 @@
       "type": "interpret",
       "title": "Voyager 2 -mallin lähtötiedot ja arvot",
       "source": "model",
-      "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus 15,341 km/s; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
+      "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus $15{,}341\\,\\text{km/s}$; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
       "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Heliopaussi on raja, jonka ulkopuolella Auringon hiukkastuuli ei enää hallitse avaruutta. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Vuosi | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nArvot ovat kunkin vuoden 5. marraskuuta. Sama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
       "question": {
         "type": "choice",
@@ -329,7 +329,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Voyager 2 etääntyy Auringosta nopeudella 15,341 km/s. Kuinka monta astronomista yksikköä se etääntyy vuodessa? Käytä arvoja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Vastaa yksikössä AU/a.",
+      "prompt": "Voyager 2 etääntyy Auringosta nopeudella $15{,}341\\,\\text{km/s}$. Kuinka monta astronomista yksikköä se etääntyy vuodessa? Käytä arvoja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Vastaa yksikössä AU/a.",
       "answer": 3.236,
       "unit": "AU/a",
       "tolerance": 0.02,
@@ -365,7 +365,7 @@
       "choices": [
         {
           "text": "Kaksi, koska nolla lopussa ei merkitse mitään.",
-          "feedback": "Loppunolla on merkitsevä, koska se kertoo, että mittaus on tehty tuhannesosien tarkkuudella. Muista, että $3{,}0\\,\\text{m}$ ja $3\\,\\text{m}$ eivät ole sama tulos: ensimmäisessä on kaksi merkitsevää numeroa, jälkimmäisessä yksi."
+          "feedback": "Loppunolla on merkitsevä, koska se kertoo, että lukema on ilmoitettu kymmenestuhannesosametrin eli $0{,}1\\,\\text{mm}$:n tarkkuudella. Muista, että $3{,}0\\,\\text{m}$ ja $3\\,\\text{m}$ eivät ole sama tulos: ensimmäisessä on kaksi merkitsevää numeroa, jälkimmäisessä yksi."
         },
         {
           "text": "Kolme.",

@@ -66,7 +66,7 @@
 **Muunnokset:** Lämpötilan lasku on sama kelvineinä: $\Delta T = 18\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 18\,\text{K}$. Sulamislämpö $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** $m_\text{j} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}30\,\text{kg} \cdot 18\,\text{K}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{22\,626\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 0{,}06774\,\text{kg} = 67{,}74\,\text{g}$
 **Vastaus:** $68\,\text{g}$, kaksi merkitsevää numeroa, koska massa $0{,}30\,\text{kg}$ ja lämpötilan muutos $18\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 18\,\text{K}$ ovat kahdella numerolla.
-**Järkevyys:** Arvio: vesi luovuttaa noin $4 \cdot 0{,}3 \cdot 18 \approx 22\,\text{kJ}$, ja $22\,\text{kJ} / 334\,\tfrac{\text{kJ}}{\text{kg}} \approx 0{,}066\,\text{kg}$. Noin 68 g on kaksi tai kolme jääkuutiota, mikä on vähän verrattuna vesimäärään, koska sulaminen on energiaintensiivistä.
+**Järkevyys:** Arvio: vesi luovuttaa noin $4 \cdot 0{,}3 \cdot 18 \approx 22\,\text{kJ}$, ja $22\,\text{kJ} / 334\,\tfrac{\text{kJ}}{\text{kg}} \approx 0{,}066\,\text{kg}$. Noin $68\,\text{g}$ on kaksi tai kolme jääkuutiota, mikä on vähän verrattuna vesimäärään, koska sulaminen on energiaintensiivistä.
 
 ## fy3-14-L2-03
 **Annettu:** jää $m = 0{,}40\,\text{kg}$, $T_\text{alku} = -10\,{}^\circ\text{C}$, loppu vesi $0\,{}^\circ\text{C}$; teho $P = 800\,\text{W}$; taulukosta $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -92,7 +92,7 @@ $$\begin{aligned} t &= \dfrac{8400\,\text{J} + 133\,600\,\text{J}}{800\,\tfrac{\
 $$\begin{aligned} s &= \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3{,}975\,\text{kg}\cdot\text{K}}{0{,}0500\,\text{kg}} \\ &= 333\,105\,\tfrac{\text{J}}{\text{kg}} \\ &= 333{,}1\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 **Vastaus:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa, koska jään massa $0{,}0500\,\text{kg}$, veden massa $0{,}200\,\text{kg}$ ja lämpötilaero $30{,}0\,{}^\circ\text{C} - 8{,}1\,{}^\circ\text{C} = 21{,}9\,\text{K}$ ovat kolmella numerolla.
-**Järkevyys:** Tulos on lähellä taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$ (ero alle $0{,}3\,\%$). Pieni ero johtuu siitä, että lämpötila luettiin vain $0{,}1\,\text{K}$:n tarkkuudella: lukema $8{,}0\,{}^\circ\text{C}$ antaisi noin $335\,\tfrac{\text{kJ}}{\text{kg}}$. Tulos on positiivinen, kuten sulamislämmön kuuluu olla.
+**Järkevyys:** Tulos on lähellä taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$ (ero alle $0{,}3\,\%$). Pieni ero mahtuu jo lämpötilan lukematarkkuuden ($0{,}1\,\text{K}$) rajoihin, ja oikeassa kokeessa myös kalorimetrin lämpökapasiteetti ja lämpöhäviöt vaikuttaisivat: lukema $8{,}0\,{}^\circ\text{C}$ antaisi noin $335\,\tfrac{\text{kJ}}{\text{kg}}$. Tulos on positiivinen, kuten sulamislämmön kuuluu olla.
 
 ## fy3-14-L3-01
 **Annettu:** vesi $m_\text{v} = 0{,}600\,\text{kg}$, $T_\text{v} = 35{,}0\,{}^\circ\text{C}$; jää $T_\text{j} = -20\,{}^\circ\text{C}$; lopputila $0\,{}^\circ\text{C}$ ja kaikki jää juuri sulanut; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$

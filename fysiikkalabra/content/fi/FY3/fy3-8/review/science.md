@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 95f447a9c89c7a99
+CONTENT-HASH: bfbcfbf827b20b90
 
 ## Blocking
 
 ## Polish
-- inquiry.json:227 (johtopaatos model) — gives "ΔL = 6,0 mm" beside "12,0 mm", while pred-1/pred-2 feedback uses 6,00 mm and 12,0 mm; the precision is inconsistent — write 6,00 mm.
-- lesson.md:158 — "noin sadastuhannesosan pituudestaan jokaista kelviniä kohti": steel's 12 · 10⁻⁶ 1/K is about 1/83 000, so "runsaan sadastuhannesosan" is more accurate.
-- lessons/FY3/fy3-8/sim.js:70 — the lattice spacing is set from ΔL/L₀ = αΔT, so exp-1 confirms the program's arithmetic and does not show the physics emerging. The `model` text discloses it; acceptable.
+- content/fi/FY3/fy3-8/lesson.md:255 — the worked example's problem gives "12 · 10⁻⁶ 1/K" as plain text and "+$30\,{}^\circ\text{C}$" with the plus sign outside the math, while every other value with a unit is inline LaTeX — write `$12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$` and `$+30\,{}^\circ\text{C}$`.
+- content/fi/FY3/fy3-8/lesson.md:165 — "Kaasun hiukkaset ... lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän" names the absence of restraint but not the push: faster particles hit the walls harder, so at constant pressure the gas expands until the pressure is the same again. Fair at this level (the chapter on gas changes returns to it); one clause would complete the cause.
 
 ## Checked
-- All 12 exercise answers, recomputed independently, match answers.py and exercises.json (457 cm³ → 460, 52,08 m → 52, −51,75 mm → −52). Solutions are symbolic first; conversions and rounding are right.
-- Worked example: 12e-6 · 120 m · 60 K = 86,4 mm; the 0,072 % and the 60 mm order-of-magnitude estimate are correct.
-- pred-1/pred-2 model values (6,00 mm and 12,0 mm, 0,0600 %), kertaus (60 K, 333 K distractor), virhe (27,9 mm against 1,8 mm, ×15, 0,7 %) and check-2 (23, and the mistakes 46 and 15,3) are all correct.
-- siirto: 2,2 mm³ / 0,050 mm² = 44 mm; the mistakes 0,044 and 110 are right; with the glass included the answer is 42,9 ≈ 43 mm; ethanol/glass γ ≈ 41.
-- olomuodot table: 0,36 / 2,1 / 11 / 34 cm³; the check-3 claim that air's γ is about 100 times steel's 3α is correct (≈94).
-- The physics is correct: the anharmonic micro-model (asymmetric oscillation; Cem's symmetric-oscillation option is correctly marked wrong), γ ≈ 3α with its small-change condition, holes grow, the water anomaly at 4 °C, gases treated at constant pressure, the hook's comb joint overlapping less on a frosty morning, the bimetal strip bending toward the steel side.
-- Table values for α and γ (water 0,21, ethanol 1,1, petrol 0,95, air 3,4 · 10⁻³) are realistic.
-- sim.js: ΔT = T − 20 °C, ΔL = αL₀ΔT, amplitude ∝ √T (K), the ×100 exaggeration is labelled, particle size stays constant, and "alle 0,3 %" holds (maximum 0,23 %). simState carries dT, dL and rel for both experiments. exp-1 locks material and L₀ and varies T; exp-2 locks material and T and varies L₀, so each isolates its parameter.
-- Figures: the particle, flask (V₀ + ΔV in the neck) and rod figures are labelled exaggerated and consistent.
-- Exit ticket: 21 mm is correct; the hole and particle-size answers are correct.
+- One Python run recomputed every number: example ΔL = 86,4 mm → 86 mm, αΔT = 0,072 %; pred-1/pred-2 6,00 mm, 12,0 mm, 0,0600 %; virhe 28 mm vs 1,84 mm (×15, 0,7 %); siirto 44 mm (mistakes 0,044 and 110 mm; glass 40× smaller; 42,9 mm with glass); check-2 α = 23·10⁻⁶ 1/K from both columns (mistakes 46 and 15,3); check-3 air γ / steel 3α ≈ 94 ("noin sata"); exit ticket 21 mm; interpret table 0,36 / 2,1 / 11 / 34 cm³.
+- Tables: α and γ values realistic; air γ = 3,4·10⁻³ 1/K = 1/293 K at 20 °C and constant pressure.
+- Guardrail conditions stated: linear formulas for solids over about 100 K, liquids' γ only near the 20 °C of the table, γ ≈ 3α for small changes, gases at constant pressure.
+- Mechanism: asymmetric interaction (repulsion steep, attraction weakens gradually) explains the growth of the mean spacing; particles do not grow; Cem's symmetric-vibration distractor is correctly refuted; the sim box says it sets the spacing from the formula and draws symmetric vibration.
+- Water anomaly 0–4 °C, density maximum at 4 °C, lakes freeze from the top: correct in theory, virhekäsitys and check-1 (exactly one correct option).
+- Experiments: exp-1 locks material and L₀ and varies T; exp-2 locks material and T and varies L₀; simState gives dT, dL (m) and rel.
+- Simulation implements ΔL = αL₀ΔT from 20 °C with the lesson's α values, exaggeration 100× stated, "alle 0,3 %" true (max 0,23 %).
+- Exactly one correct option in every choice item; each distractor's feedback right.
+- Hash identical at start and end.

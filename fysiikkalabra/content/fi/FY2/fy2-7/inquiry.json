@@ -320,7 +320,7 @@
     },
     {
      "text": "Kumpikaan putki ei häviä, koska vesi pysyy putkessa.",
-     "feedback": "Vesi pysyy putkessa, mutta sen lämpö siirtyy putken seinän ja eristeen läpi ympäristöön. Siksi kaukolämpöverkon häviö on noin $9\\,\\%$."
+     "feedback": "Vesi pysyy putkessa, mutta siitä siirtyy energiaa lämpönä putken seinän ja eristeen läpi ympäristöön. Siksi kaukolämpöverkon häviö on noin $9\\,\\%$."
     }
    ]
   },

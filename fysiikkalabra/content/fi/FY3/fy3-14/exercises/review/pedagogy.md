@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a8e5afefa991582e
-
-> Carried over from the lesson's review (content/fi/FY3/fy3-14/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+CONTENT-HASH: 497163bfee90ee02
 ## Blocking
-
 ## Polish
-- none
+- exercises.json fy3-14-L1-01…L3-03 — all temperatures, masses and powers are now LaTeX, but L1-02 etc. keep plain "kJ/kg" in the closing instruction; fine as unit labels, but check that "$0{,}050\,\text{kg}$:n" style endings look consistent with the lesson (they do).
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well; the Miksi question is now two short sentences, as house rules allow; captures fy3-14-fig-1/2 at 390 px unchanged by the diff.
+- Delta (numbers with units to inline LaTeX; two Järkevyys sentences reworded): no number, answer or tolerance changed.
+- Recomputed L2-04: 333 kJ/kg from the given 8,1 °C; the reworded Järkevyys (lukematarkkuus, kalorimetrin kapasiteetti) is accurate and more honest than the earlier explanation.
+- Case endings after math units are correct (`$0{,}20\,\text{kg}$:n`, `$0\,{}^\circ\text{C}$:seen`, `$800\,\text{W}$:n`).
+- Levels and counts unchanged; none repeats the worked example.
+- No captures available; phone layout rests on the passing layout checks.

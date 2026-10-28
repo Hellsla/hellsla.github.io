@@ -1,13 +1,13 @@
 {
  "version": 1,
- "contribution": "Massa on suoraan verrannollinen tilavuuteen, ja verrannollisuuskerroin on aineen tiheys: m = ρV on FY1:n ensimmäinen lineaarinen malli, josta ratkaistaan massa, tilavuus tai tiheys sekä luetaan kulmakertoimena mittauksista, myös astian massan ollessa mukana.",
+ "contribution": "Massa on suoraan verrannollinen tilavuuteen, ja verrannollisuuskerroin on aineen tiheys: m = ρV on lineaarinen malli, josta ratkaistaan massa, tilavuus tai tiheys sekä luetaan kulmakertoimena mittauksista, myös astian massan ollessa mukana.",
  "learn": [
   "Osaat laskea kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
   "Osaat selittää, miksi massa on suoraan verrannollinen tilavuuteen ja mitä suoran kulmakerroin kertoo.",
   "Osaat määrittää aineen tiheyden mittaustuloksista ja tunnistaa aineen taulukon avulla."
  ],
  "prior": [
-  "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat origon kautta kulkevalla suoralla, ja sen kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",
+  "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat mittausepävarmuuden rajoissa origon kautta kulkevalla suoralla, ja sen kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",
   "Mittaustuloksissa on aina virhettä, ja tulos ilmoitetaan sopivalla määrällä merkitseviä numeroita (luku *Mittaaminen ja mittauksen luotettavuus*)",
   "Suureet lasketaan SI-yksiköissä ja yksiköt muunnetaan potenssien avulla (luku *Suureet, yksiköt ja SI-järjestelmä*)"
  ],
@@ -25,7 +25,7 @@
    "type": "choice",
    "title": "Kertaa: suoraan verrannollisuus",
    "optional": true,
-   "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet asettuvat suoralle, joka kulkee origon kautta. Mitä tämä kertoo suureiden riippuvuudesta?",
+   "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle. Mitä tämä kertoo suureiden riippuvuudesta?",
    "choices": [
     {
      "text": "Suure $y$ on suoraan verrannollinen suureeseen $x$: suhde $y : x$ on vakio, ja se on suoran kulmakerroin.",

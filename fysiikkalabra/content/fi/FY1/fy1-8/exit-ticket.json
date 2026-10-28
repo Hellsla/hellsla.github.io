@@ -9,6 +9,6 @@
   },
   {
     "q": "Mitä mittauspöytäkirjaan kirjataan, ja miksi epätavalliselta näyttävää mittausta ei poisteta hiljaa?",
-    "a": "Pöytäkirjaan kirjataan tutkimuskysymys, päivämäärä, välineet ja tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Epätavallinen mittaus merkitään ja selitetään, koska poistaminen valitsisi tuloksen niin, että se sopii odotukseen, eikä tutkimus enää testaisi hypoteesia."
+    "a": "Pöytäkirjaan kirjataan tutkimuskysymys, päivämäärä, välineet ja tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Selvästi poikkeava mittaus tarkistetaan, merkitään ja selitetään, ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista, koska silloin tulos valittaisiin sopimaan odotukseen eikä tutkimus enää testaisi hypoteesia. Mahdollinen hylkääminen on perusteltava ja dokumentoitava."
   }
 ]

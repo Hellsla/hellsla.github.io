@@ -332,3 +332,12 @@ Exam questions are studied for patterns only (§7); every task is original, with
   same tasks, points, criteria and links (`practice.py check`); Selkeä suomi clarifies the language and keeps the
   physics terms and the cognitive demand.
 
+
+## 10. Physics accuracy and consistency (teacher's brief 2026-10-28, after the FY1–FY3 audit)
+- `docs/physics-guardrails.md` is the short physics reference every writer and science reviewer follows: A/B/C
+  findings, measurement terms, outliers, fits, a law's conditions where it is used, particles and phase changes,
+  heat and efficiency, task assumptions and rubrics. One explanation is worded the same in every place it appears.
+- `scripts/physics_phrases.py` warns (lint) about known wrong claims taught as fact and `test_physics_phrases.py`
+  (CI) keeps the corrected ones from coming back; `scripts/concepts.py <concept>` gathers a concept's passages from
+  every chapter for a cross-chapter review (README "Physics consistency"). A new recurring error: add a line to the
+  guardrails, and a rule with right and wrong example sentences when it can be matched with high precision.

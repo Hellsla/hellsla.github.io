@@ -140,6 +140,18 @@ pictures, templates and scripts are shared by every language.
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
+## Physics consistency
+Lessons are reviewed one by one; three small tools keep one physics idea the same across chapters (teacher 2026-10-28):
+- `docs/physics-guardrails.md`: the rules the FY1–FY3 audit (`docs/audits/fy1-fy3-physics-audit.md`) found broken,
+  with the agreed Finnish wordings. Every developer and science-reviewer packet carries it.
+- `python scripts/physics_phrases.py [<folder>]`: high-precision warnings for known wrong claims taught as fact (a wrong
+  option, a named misconception and a stated model are skipped); the lint prints them, `test_physics_phrases.py` (CI)
+  tests every rule on right and wrong sentences and fails if one is taught again.
+- `python scripts/concepts.py list | packet <concept> | changed [<ref>]`: the sentences about one concept (uncertainty,
+  fit, internal-energy, temperature, phase-change, efficiency, heat-transfer, gas, fuel) from every chapter, with file
+  and place, in a packet of about 15–25 k tokens instead of the courses' 2 MB of sources; `changed` names the concepts a
+  pull request touches, so a concept-wide correction gets one cross-chapter science review (`.claude/commands/lesson.md`).
+
 ## Sovella itsenäisesti
 Each course ends with a few independent, exam-style tasks (teacher 2026-10-28; principles in NOTES.md §9), a part of
 their own like an exercise set:

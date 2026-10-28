@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4ab013bb23ca27b4
+CONTENT-HASH: 7a1f623a266eb77d
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (L2-01, Periaate) — "Energiat lasketaan yhteen, ja energia on additiivinen" says the same thing twice. Use "Kokonaisenergia on osien summa".
-- exercises/solutions.md (L1-01, Järkevyys) — the comparison with a match's 1 kJ is weak. A clearer check is "$54\,\text{kJ}$ is about 54 match flames, a sensible amount for a battery that runs a phone all day".
+- content/fi/FY2/fy2-2/exercises/solutions.md:99 — 140 TJ : 790 TJ ≈ 18 % is nearer a fifth than "noin kuudesosan" (the six comes from rounding up); say "vajaan viidesosan" or "noin 18 %".
+- content/fi/FY2/fy2-2/exercises/exercises.json (L3-01) — the comparison uses daily averages; "keskimäärin" for the production too (or "vuorokauden keskiarvona") would make clear that peak demand and outages are ignored (C).
 
 ## Checked
-- Hash 4ab013bb23ca27b4 at start and end. All round-2 blocking items are fixed: $(200\,\text{g})$ and $100\,\text{g}$ are in LaTeX in exercises.json and solutions.md. Both round-2 polish items are fixed too: L1-04 now rounds to the whole megajoule, and L1-03 says about 90 tankfuls.
-- All 12 answers recomputed independently in one script. They match answers.py and exercises.json, and each rounded student answer is inside its tolerance: 54 000 J, 2,3, 140 GJ, 3,0 MJ, 33, 3,0 MJ, 1,3 GJ, 6,0 kJ, 950, 6, 3200, $1{,}2 \cdot 10^{7}\,\textsf{l}$ (3,8 % < 5 %).
-- Data: 790 TJ a day (stat.fi gives 79,8 TWh for 2023, which is 787 TJ). OL3 gives 138 TJ net and 372 TJ thermal a day. 4,5 kg of U-235 matches 370 TJ. A TNT tonne is 4,184 GJ. 72 GJ a house is 20 MWh and is marked as an example.
-- L2-03 physics is right: the absorbed light becomes heat, so the answer is 6,0 kJ. In L3-01, rounding up with 5 against 6 units is justified.
-- Every solution has all seven parts and solves symbolically first, with conversions by substitution and colon division. Subtraction and addition round by the least precise datum (L1-04, L2-01).
-- Scope: no work, $E_k$, $E_p$, $Q = cm\Delta T$ or efficiency products. No ×, and no plain numbers with units in the texts (scripted scan).
+- All 12 answers recomputed independently in one script; all agree with answers.py and exercises.json (2,27 → 2,3; 33,3 → 33; 1,28 → 1,3 GJ; 954,5 → 950; ceil(5,64) = 6; 3194 → 3200; 1,16·10⁷ l).
+- Units and tolerances fit the data's significant figures; L1-04 and the wind-farm-type subtractions justify rounding by the least precise datum.
+- Data realistic: chocolate 22 MJ/kg, petrol 32 MJ/l, TNT 4,184 GJ/t, Finland 790 TJ/day (2023), OL3 1600 MW → 140 TJ/day and ≈4300 MW thermal → 370 TJ/day, 4,5 kg U-235 at 8,2·10¹³ J/kg.
+- L2-03 states the assumption (light absorbed in the room) that makes the 6,0 kJ answer right.
+- L3-02: the combined-heat-and-power remark is qualitative and correct (higher condensing temperature, slightly less electricity), within FY2 scope.
+- Every solution has the seven parts, solves symbolically before substituting, and its reasonableness check is a real estimate.
+- Notation (E_alussa, prefixes substituted by their values) matches the lesson.

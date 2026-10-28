@@ -145,7 +145,7 @@
   },
   {
     "term": "mittaus",
-    "definition": "Suureen arvon määrittäminen vertaamalla sitä yksikköön mittarilla tai mittausmenetelmällä. Mittaustulos on lukuarvo yksikköineen, ja siihen kuuluu aina arvio virheestä.",
+    "definition": "Suureen arvon määrittäminen vertaamalla sitä yksikköön mittarilla tai mittausmenetelmällä. Mittaustulos on lukuarvo yksikköineen, ja siihen kuuluu arvio sen epävarmuudesta.",
     "lessons": [
       "fy1-3"
     ],
@@ -170,7 +170,7 @@
   },
   {
     "term": "karkea virhe",
-    "definition": "Yksittäinen selvä erehdys mittauksessa, esimerkiksi väärin luettu tai kirjattu lukema tai väärä yksikkö. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei keskiarvoisteta, vaan tulos tarkistetaan, jätetään pois ja mitataan uudelleen.",
+    "definition": "Yksittäinen selvä erehdys mittauksessa, esimerkiksi väärin luettu tai kirjattu lukema tai väärä yksikkö. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei keskiarvoisteta, vaan tulos tarkistetaan ja mitataan tarvittaessa uudelleen. Tulos jätetään pois vain, jos virheen syy löytyy, ja poisjättö kirjataan.",
     "lessons": [
       "fy1-3"
     ],
@@ -196,7 +196,7 @@
   },
   {
     "term": "satunnaisvirhe",
-    "definition": "Virhe, joka vaihtelee sattumanvaraisesti mittauksesta toiseen ja voi olla kumpaan suuntaan tahansa, esimerkiksi käsin otetun ajan reaktioviive. Toistamalla mittaus ja ottamalla keskiarvo sitä saadaan pienennettyä. Sen suuruutta arvioidaan vaihteluvälin puolikkaalla.",
+    "definition": "Virhe, joka vaihtelee sattumanvaraisesti mittauksesta toiseen ja voi olla kumpaan suuntaan tahansa, esimerkiksi käsin otetun ajan reaktioviive. Toistamalla mittaus ja ottamalla keskiarvo sen vaikutusta tulokseen saadaan pienennettyä. Koulukokeissa sen aiheuttamaa hajontaa arvioidaan usein likimääräisesti vaihteluvälin puolikkaalla.",
     "lessons": [
       "fy1-3"
     ],
@@ -233,7 +233,7 @@
   },
   {
     "term": "mittausepävarmuus",
-    "definition": "Arvio siitä, kuinka paljon mittaustulos voi enintään poiketa todellisesta arvosta, esimerkiksi ±1 kPa. Se piirretään kuvaajaan epävarmuusjanana, ja siitä saadaan tuloksen epävarmuus, kun suora piirretään jyrkimmän ja loivimman mahdollisen suoran väliin.",
+    "definition": "Mittaustulokseen liittyvä epävarmuus eli arvio siitä, kuinka paljon tulos voi poiketa oikeasta arvosta, esimerkiksi ±1 kPa. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa. Kuvaajaan se piirretään epävarmuusjanana, ja sovitetun suoran kulmakertoimen ja vakiotermin epävarmuutta voi arvioida jyrkimmän ja loivimman janoihin sopivan suoran avulla.",
     "lessons": [
       "fy3-13"
     ],
@@ -367,7 +367,7 @@
   },
   {
     "term": "hyötysuhde",
-    "definition": "Hyödyksi saadun energian tai tehon suhde laitteeseen otettuun energiaan tai tehoon: η = E_a/E_o = P_a/P_o (lämpövoimakoneella η = W/Q₁). Hyötysuhde ilmoitetaan usein prosentteina, ja se on aina alle 100 %.",
+    "definition": "Hyödyksi saadun energian tai tehon suhde laitteeseen otettuun energiaan tai tehoon: η = E_a/E_o = P_a/P_o (lämpövoimakoneella η = W/Q₁). Hyötysuhde ilmoitetaan usein prosentteina, ja se on enintään 100 %. Todellisissa laitteissa se jää usein alle 100 %, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen.",
     "lessons": [
       "fy2-4",
       "fy3-11"
@@ -818,7 +818,7 @@
   },
   {
     "term": "lämpökerroin",
-    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä.",
+    "definition": "Lämpöpumpun luovuttaman lämpötehon suhde sen käyttämään sähkötehoon. Esimerkiksi lämpökerroin 3 tarkoittaa, että 1 kW:n sähköteholla saadaan 3 kW lämpöä. Lämpökerroin ei ole hyötysuhde: se voi olla yli 1, koska osa lämmöstä siirretään ulkoilmasta eikä tule sähköstä.",
     "lessons": [
       "fy3-11"
     ],
@@ -894,7 +894,7 @@
   },
   {
     "term": "lämpötila",
-    "definition": "Lämpötila kertoo aineen hiukkasten keskimääräisestä liike-energiasta. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
+    "definition": "Lämpötila kuvaa aineen hiukkasten lämpöliikkeen voimakkuutta; harvassa kaasussa se kertoo hiukkasten keskimääräisestä liike-energiasta. Lämpötila ei ole sama asia kuin aineen energia. Sitä mitataan celsiusasteina (°C) tai kelvineinä (K).",
     "lessons": [
       "fy3-3"
     ],

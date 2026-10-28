@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b23b73f81e2a6b5b
+CONTENT-HASH: f6ea8ce2311e052c
+
+Round 2 and 3: re-check of round-1 Blocking items against the fix diffs (tolerance is relative).
+
 ## Blocking
+- none. Round-1 item L2-02 (answer 10.67, solution "noin 11 mm") is resolved: relative tolerance 0.04 accepts 10,24–11,10, so 11 and 10,7 pass.
+
 ## Polish
-- solutions.md L3-02 Sijoitus/Vastaus — the chain ends "= 2,0 µm" and the answer says "2 µm": a student sees two forms. Add "pyöristettynä yhteen merkitsevään numeroon 2 µm" to the Sijoitus end, or end the chain at "0{,}0020 mm = 2 µm". The exercise stores answer 2.0 with tolerance 0.02 (accepts 1,96–2,04 only if relative; if absolute, still accepts 2); fine either way.
-- Earlier unaddressed Polish still open (not part of this diff): repeated formula in every "Kaava" line (e.g. L3-03 "Kysytty on Δx_sys = …"), L3-03 duplicates L2-02's two steps and karkea virhe is not practised, intro sentence about units gives away L2-03, "kerrotaan tuhannella" without a written substitution in L3-02 Muunnokset.
+- exercises.json fy1-3-L2-03 text — "12,4 cm" and "123 mm" are plain text while "$0{,}125\,\text{m}$" is LaTeX; write all three as LaTeX.
+- solutions.md fy1-3-L1-05 Vastaus — still says "virhe-arvio" while the task and Kysytty say "epävarmuus"; use one term.
+- exercises.json fy1-3-L1-05 prompt — gives the half-interval rule in the situation and then asks for it; shorten the situation.
+- Earlier open items (repeated formula in Kaava lines, L3-03 duplicating L2-02) stand.
+
 ## Checked
-- L1-02: "kulunut nauhan alkupää tai väärä nollakohta" is physically right for a reading that is too large (a worn start shifts the zero inward), so the earlier physics slip is fixed; the percentage and "suuri virhe mittanauhalle" reasoning is unchanged and consistent.
-- L3-02: answer now follows the lesson's rule (virhe-arvio yhteen merkitsevään numeroon) and the reason is stated; the reasonableness check (2 % of 0,1 mm, 500 % for one sheet) still holds.
-- L3-03: 0,025 cm ≈ 0,03 cm follows the same one-figure rule, "noin kymmenesosa" (0,03 vs 0,26) is correct, and the next sentence (7,98–8,03 cm) is unaffected.
-- Finnish of the three changed passages is correct; no new terms; answers in exercises.json unchanged and consistent.
+- LaTeX conversion of numbers with units in the tasks listed in the delta; values, units and answers unchanged.
+- L2-02 reasoning (each reading 9–12 mm too large, mean between) correct; L1-05 Järkevyys honest about total uncertainty.
+- Finnish of changed passages correct.
+- Round 3: L1-02 now writes the mittausvirhe as $x - x_\text{oikea}$ in Kysytty, Kaava and Sijoitus (no Δx), matching the lesson; wording is correct, +0,3 cm unchanged, and Δ is no longer overloaded.
+- Hash unchanged at the end.

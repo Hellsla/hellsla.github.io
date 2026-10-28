@@ -8,7 +8,7 @@
     "a": "$\\eta_\\text{kok} = (30\\,\\text{MW} + 55\\,\\text{MW})/100\\,\\text{MW} = 0{,}85 = 85\\,\\%$. Hukkalämmön teho on $100\\,\\text{MW} - 85\\,\\text{MW} = 15\\,\\text{MW}$."
   },
   {
-    "q": "Vesivoimalaitoksen hyötysuhde on noin 90 %, mutta lauhdevoimalaitoksen noin 40 %. Miksi ero on näin suuri?",
+    "q": "Vesivoimalaitoksen hyötysuhde on noin $90\\,\\%$, mutta lauhdevoimalaitoksen noin $40\\,\\%$. Miksi ero on näin suuri?",
     "a": "Vesivoimalaitos muuttaa veden liike-energian suoraan mekaaniseksi energiaksi turbiinissa, eikä se ole lämpövoimakone. Siksi sen ei tarvitse luovuttaa lämpöä kylmempään ympäristöön. Lauhdevoimalaitos on lämpövoimakone, ja sen lauhduttimeen siirtyy aina suuri osa polttoaineen energiasta."
   }
 ]

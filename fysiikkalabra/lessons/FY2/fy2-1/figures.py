@@ -87,7 +87,7 @@ def forms():
 # ---------------------------------------------------------------- energy changes form: a torch
 def chain():
     f = Fig("fy21-chain", 250, "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, "
-            "ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. "
+            "ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpönuoli on leveämpi. "
             "Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.")
     cy = 118
     _name(f, 80, 26, "kemiallinen")

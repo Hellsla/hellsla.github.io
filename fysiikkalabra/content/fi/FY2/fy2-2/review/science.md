@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 33a9fce30d742d8f
+CONTENT-HASH: 67c061c7a989048f
 
 ## Blocking
 
 ## Polish
-- lesson.md:181 (Esimerkki, Tulos) — the rounding cites significant figures, but this is a subtraction, and the transfer task and L1-04 use the right rule (the least precise datum decides). Justify "kymmenen kilojoulen tarkkuudella"; the answer stays.
-- inquiry.json:181 (ketju solution, Vastaus) — the same: "kaksi merkitsevää numeroa kuten tiedoissa $34\,\text{MJ}$" for a difference.
-- lesson.md:98 — "Kun kahden energian kertaluku on hyvin erilainen, vertailuun riittää yksi jakolasku" is followed by $32\,\text{MJ}$ against $10\,\text{MJ}$, which are about the same order of magnitude. Reword it.
-- lang/fi.json:247 `n_jaristys` — "M 9" is a plain numeral in the readout. Add a `t_jaristys` such as `\text{maanjäristys,}\ M\,9`, as was done for the other numbered names.
+- content/fi/FY2/fy2-2/inquiry.json:298 — the correct option says the battery's energy ends "lähes kokonaan" as thermal energy, while its feedback (and the first option's feedback) says "lopulta kaikki päätyy lämpönä ympäristöön" — use one wording in option and feedback (C either way; "lähes kokonaan" is the safer one, since some light may leave the room).
+- content/fi/FY2/fy2-2/inquiry.json:332 — "Noin $100$ … kaksi merkitsevää numeroa": the integer 100 does not show two figures; write $1{,}0 \cdot 10^{2}$ or drop the figure count.
+- content/fi/FY2/fy2-2/inquiry.json:59 — petrol 32 MJ/l and food 10 MJ are compared as like quantities; one clause from the food/fuel guardrail (the food value is energy the body can use, the fuel value energy released in combustion) would keep the comparison exact (C, not a finding).
 
 ## Checked
-- Hash 33a9fce30d742d8f at start and end. All round-2 blocking items are fixed: ennuste-1 ratio in LaTeX, tarkistus-2 mistakes $0{,}1$ and $0{,}01$ in LaTeX, and `t_*` TeX names used in the readout and the canvas (koe-2 capture checked).
-- One script recomputed every lesson-answers.py value and matched each one: 340 kJ, 3,2, $6{,}25 \cdot 10^{20}\,\text{J}$ (625 EJ, given as 620), 41 days, 600 kJ, 1800 kJ, 66 MJ, 51 GJ, 100, 2500 J. The numeric mistakes and their feedback are right.
-- All 28 sim values recomputed from their stated sources and found right: photon, AA cell, banana, petrol, LPG, OL3, Finland's electricity a day and a year, Finland's total energy, sunlight on Earth, M 9, the Sun's output.
-- Sim code: prefixes and rungs are right from $10^{-19}$ to $10^{26}$, lg() places objects correctly, and the dot means source and the ring means estimate. The model box says the values are rounded orders of magnitude.
-- Experiments: initial `kohde` names match the `n_*` strings. simState gives E_MJ 10 and 32, and E_EJ 620 for both koe-2 objects.
-- Predictions: the right options are correct, and the "tuhat vuotta" feedback is right ($6 \cdot 10^{23}\,\text{J}$, about 40 days of sunlight).
-- Figures are to scale: the ladder is 33,2 px a decade with 1,6 GJ and 140 TJ placed right, and the Sankey widths are 96 = 24 + 72 for 800 = 200 + 600.
-- The worked example, siirto and tarkistus-2 are solved symbolically first, with conversions by substitution and real checks.
-- Scope: no $E_k$, $E_p$, work, force, $Q = cm\Delta T$ or efficiency products.
-- House rules: no ×, written division with a colon, and no plain numbers with units outside LaTeX (scripted scan).
+- Prefix ladder, conversions, the common-mistake sum and the worked example (450 kJ − 110 kJ = 340 kJ, two figures justified, symbolic first) recomputed.
+- Sun to Earth in one hour 1361 W/m² · πR² · 3600 s = 6,25·10²⁰ J vs 620 EJ (2023, Energy Institute): the "noin vuoden" option is the only correct one; the "tuhat vuotta" feedback (≈41 days, "noin 40") is right.
+- Chain table 100 → 40 → 38 → 34 MJ: 66 MJ, mistakes 60 and 34 and their feedback right; transfer 360 − 9 − 300 = 51 GJ, rounding to the gigajoule justified; lightning 1,0 GJ : 10 MJ = 100.
+- Figures: Sankey widths 24:72:96 = 200:600:800 to scale; ladder at 33,2 px per decade places 10 MJ, 1,6 GJ (50 l · 32 MJ/l) and 140 TJ (1600 MW · 24 h = 138 TJ) correctly.
+- Sim data: every object's value against its source string (photon 550 nm, AA 2,5 Ah · 1,5 V, U-235 8,2·10¹³ J/kg, Finland 79,8 TWh → 7,9·10¹⁴ J/day, M9 ≈ 2·10¹⁸ J, IAU L☉); filled/ring marking matches the source type.
+- Experiments: initial kohde values exist as select options; E_MJ and E_EJ are in simState; vary key matches the adapter.
+- Every choice item has exactly one correct option, and each distractor's feedback names the actual error.
+- Energy conservation and dispersal into thermal energy stated consistently in theory, summary, misconception, checks and exit ticket; "lämpöenergia" use within the FY2 allowance; no E_k/E_p formulas (scope).

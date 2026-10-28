@@ -3,7 +3,7 @@
   "contribution": "Energian säilymisestä ja tehosta edetään yhden laitteen hyötysuhteeseen: opiskelija erottaa hyötyenergian ja häviöt, lukee mittakaavaan piirretyn energiavirtakuvion, laskee hyötysuhteen energioista ja tehoista ja huomaa, ettei se riipu käyntiajasta, kun laite käy tasaisella teholla, sekä erottaa mallin oletuksen todellisen laitteen käyttäytymisestä.",
   "learn": [
     "Osaat laskea laitteen hyötysuhteen energioiden tai tehojen suhteena.",
-    "Osaat selittää, miksi hyötysuhde on aina alle $100\\,\\%$, vaikka energia säilyy.",
+    "Osaat selittää, miksi hyötysuhde on enintään $100\\,\\%$ ja miksi se jää todellisissa laitteissa usein sen alle.",
     "Osaat lukea energiavirtakuviota ja päätellä siitä hyödyn ja häviöiden osuudet."
   ],
   "prior": [
@@ -302,7 +302,7 @@
         {
           "text": "Suhde on laskettu väärin päin: hyötysuhde on hyötyteho jaettuna otetulla teholla, $2{,}4 : 8{,}0 = 0{,}30$ eli $30\\,\\%$.",
           "correct": true,
-          "feedback": "Oikein. Hyötysuhde kertoo, kuinka suuri osa otetusta tehosta on hyötyä, joten otettu teho on jakajana. Hyötysuhde on aina alle $100\\,\\%$, joten tulos $330\\,\\%$ olisi pitänyt herättää epäilyksen heti."
+          "feedback": "Oikein. Hyötysuhde kertoo, kuinka suuri osa otetusta tehosta on hyötyä, joten otettu teho on jakajana. Hyötysuhde ei voi olla yli $100\\,\\%$, joten tulos $330\\,\\%$ olisi pitänyt herättää epäilyksen heti."
         },
         {
           "text": "Laskussa ei ole virhettä: ledilamppu on niin tehokas, että se tuottaa enemmän energiaa kuin ottaa.",
@@ -310,7 +310,7 @@
         },
         {
           "text": "Hyötysuhteeseen pitäisi laskea mukaan myös lämpö, koska lamppu lämpenee.",
-          "feedback": "Lämpö on lampun häviö, ei hyötyä. Jos lämpö laskettaisiin mukaan, hyötysuhde olisi $(2{,}4 + 5{,}6) : 8{,}0 = 100\\,\\%$ eikä se kertoisi mitään lampun hyvyydestä."
+          "feedback": "Lämpö on lampun häviö, ei hyötyä, koska lampun hyödyksi on määritelty valo. Jos lämpö laskettaisiin mukaan, hyötysuhde olisi $(2{,}4 + 5{,}6) : 8{,}0 = 100\\,\\%$ eikä se kertoisi mitään lampun hyvyydestä."
         },
         {
           "text": "Tehot olisi pitänyt ensin muuttaa energioiksi kertomalla ne ajalla, koska hyötysuhde lasketaan energioista.",
@@ -372,7 +372,7 @@
         },
         {
           "text": "Hyötysuhde nousee $100\\,\\%$:iin, kun laite on ollut päällä tarpeeksi pitkään.",
-          "feedback": "Hyötysuhde on laitteen ominaisuus, joka pysyy suunnilleen samana käyntiajasta riippumatta. Käytännössä osa energiasta muuttuu aina lämmöksi, joten hyötysuhde on aina alle $100\\,\\%$."
+          "feedback": "Hyötysuhde on laitteen ominaisuus, joka pysyy suunnilleen samana käyntiajasta riippumatta. Käyntiaika ei poista häviöitä: jos osa energiasta muuttuu lämmöksi, joka ei ole laitteen hyötyä, hyötysuhde jää alle $100\\,\\%$ yhtä lailla alussa kuin pitkän käytön jälkeen."
         }
       ]
     },
@@ -397,7 +397,7 @@
         },
         {
           "value": 125,
-          "feedback": "Jaoit otetun energian hyötyenergialla ($2{,}5 : 2{,}0$). Suhde on väärin päin: hyötysuhteessa otettu energia on jakajana, ja tulos on aina alle $100\\,\\%$."
+          "feedback": "Jaoit otetun energian hyötyenergialla ($2{,}5 : 2{,}0$). Suhde on väärin päin: hyötysuhteessa otettu energia on jakajana. Hyötyenergia ei voi olla suurempi kuin otettu energia, joten tulos on enintään $100\\,\\%$."
         }
       ],
       "solution": "**Annettu:** otettu energia $E_\\text{o} = 2{,}5\\,\\text{kJ}$ ja häviöt $E_\\text{h} = 0{,}50\\,\\text{kJ}$\n\n**Kysytty:** moottorin hyötysuhde $\\eta$ prosentteina\n\n**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Hyötyenergiaa ei annettu, mutta energia säilyy, joten se saadaan otetun energian ja häviöiden erotuksena.\n\n**Kaava:** $E_\\text{a} = E_\\text{o} - E_\\text{h}$ ja $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, joten $\\eta = \\dfrac{E_\\text{o} - E_\\text{h}}{E_\\text{o}}$\n\n**Muunnokset:** Ei tarvita: kaikki energiat ovat kilojouleina, joten yksiköt supistuvat. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $E_\\text{a} = 2{,}5\\,\\text{kJ} - 0{,}50\\,\\text{kJ} = 2{,}0\\,\\text{kJ}$, joten $\\eta = \\dfrac{2{,}0\\,\\text{kJ}}{2{,}5\\,\\text{kJ}} = 0{,}80 = 0{,}80 \\cdot 100\\,\\% = 80\\,\\%$\n\n**Vastaus:** $80\\,\\%$, kaksi merkitsevää numeroa kuten annetuissa energioissa.\n\n**Järkevyys:** Häviöt ovat $0{,}50 : 2{,}5 = 20\\,\\%$ otetusta energiasta, ja $80\\,\\% + 20\\,\\% = 100\\,\\%$. Tulos on alle $100\\,\\%$ ja lähellä sähkömoottorin tyypillistä $90\\,\\%$."
@@ -407,7 +407,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä",
-      "prompt": "Selitä, miksi hyötysuhde on aina alle $100\\,\\%$, vaikka energia ei häviä mihinkään. Käytä esimerkkinä hehkulamppua.",
+      "prompt": "Hehkulampun hyötysuhde jää selvästi alle $100\\,\\%$, vaikka energia ei häviä mihinkään. Selitä, miksi.",
       "criteria": [
         "Sanon, että energia säilyy: otettu energia on hyötyenergian ja häviöiden summa.",
         "Sanon, että hehkulampussa suurin osa sähköenergiasta muuttuu lämmöksi eikä valoksi.",

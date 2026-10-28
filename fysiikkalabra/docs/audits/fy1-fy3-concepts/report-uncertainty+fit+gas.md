@@ -1,0 +1,22 @@
+# Concept reports: uncertainty, fit, gas (fi), science reviewer 2026-10-28
+
+## uncertainty
+1. content/fi/FY1/fy1-8/inquiry.json (kertaus.choices[2], correct option) — "$4{,}7\,\text{s} \pm 0{,}2\,\text{s}$ … pyöristettynä ylöspäin" breaks fy1-3's rounding convention (two digits when the first digit is 1); fy1-8's own pöytäkirja and L1-05 keep $0{,}15\,\text{s}$ — fix: "$4{,}74\,\text{s} \pm 0{,}15\,\text{s}$: keskiarvo ja epävarmuuden yksinkertaisena arviona puolet vaihteluvälistä, kahdella numerolla, koska ensimmäinen numero on 1." (feedbacks to match; keep exactly one correct option).
+2. content/fi/FY1/fy1-3/lesson.md (~line 22) — "ja keskiarvo vaimentaa sitä [hajontaa]" contradicts exp-1 — fix: "ja keskiarvossa satunnaisvirheen vaikutus vaimenee, vaikka yksittäisten tulosten hajonta ei pienene."
+3. content/fi/FY1/fy1-3/lesson.md (~line 131) — "karkea virhe, joka poistetaan" — fix: "karkea virhe, joka etsitään ja jätetään pois vain perustellusta ja kirjatusta syystä".
+4. content/fi/FY3/fy3-13/exercises/solutions.md (~lines 559, 563) — "järjestelmällinen virhe" — fix: "systemaattinen virhe".
+5. content/fi/FY3/fy3-13/exercises/exercises.json (L1-05) and lesson.md (~lines 59, 465) — "mittarin/Painemittarin epävarmuus on ±1 kPa" contradicts the lesson's own distinction (instrument error limit ≠ measurement uncertainty) — fix: "paineen lukeman epävarmuudeksi arvioidaan $1{,}0\,\text{kPa}$" (adapt).
+6. content/fi/FY1/fy1-8/inquiry.json (tarkistus-2.prompt, solution "Kysytty") — half range called "keskiarvon suhteellinen epävarmuus" — fix: "Mikä on suhteellinen epävarmuus prosentteina, kun epävarmuutena käytetään keskiarvolle varovaista arviota, puolta vaihteluvälistä?"
+7. content/fi/FY1/fy1-8/exercises/exercises.json (fy1-8-L2-01) and solutions.md (~line 57) — same as 6.
+8. content/fi/FY1/fy1-4/exercises/solutions.md (fy1-4-L3-03) — "virhe enintään 0,1 … enintään 0,2" (hard limit, "virhe") — fix: "$y$-lukeman epävarmuus on noin $0{,}1$, joten kahden lukeman erotuksen epävarmuus on varovaisesti arvioiden noin $2 \cdot 0{,}1 = 0{,}2$" (answer unchanged). NOTE: fy1-4/exercises is being piloted by another thread: make only this text replacement.
+9. content/fi/FY3/fy3-10/inquiry.json (punnitus-vertailu.choices[1].feedback) — "joten heliumia ei ole enempää" — fix: "joten mittaus ei osoita, että heliumia olisi enemmän: ainemäärät ovat samat mittaustarkkuuden rajoissa."
+
+## fit
+10. content/fi/FY1/fy1-8/inquiry.json (graafi-kysymys.solution; graafi.text) — uniform motion ⇒ line through origin, contradicts fy1-5 tarkistus-1 — fix: "Auto liikkuu tasaisesti, ja kello käynnistetään, kun auto ohittaa lähtöviivan, joten hetkellä $t = 0$ matka on $s = 0$: matka on suoraan verrannollinen aikaan, $s = vt$, ja suora kulkee origon kautta." (same reason in graafi.text)
+11. content/fi/FY3/fy3-13/exercises/solutions.md (fy3-13-L2-04, ~line 107) — "lämpötilan virhe Δθ siirtää pistettä suoraa pitkin" (A) — fix: "lämpötilan virhe $\Delta\theta$ siirtää pistettä vaakasuunnassa, ja suoran kohdalla se vastaa pystysuuntaista poikkeamaa $k\,\Delta\theta$".
+12. content/fi/FY1/fy1-7/lesson.md (~line 56; also inquiry.json kertaus.prompt, prior[0]) — "pisteet asettuvat suoralle, joka kulkee origon kautta" — fix: "pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle".
+13. content/fi/FY3/fy3-13/inquiry.json (ennuste-2.choices[3].feedback) — fix: "kun pisteet ovat suoralla ja riippuvuuden oletetaan pysyvän samanlaisena mittausalueen ulkopuolella, suoran jatke antaa arvion".
+
+## gas
+14. content/fi/FY3/fy3-13/inquiry.json (prior[0], kertaus.choices[1].feedback); content/fi/FY3/fy3-9/inquiry.json (prior[1], contribution); content/fi/FY3/fy3-10/inquiry.json (prior[1]) — p ∝ T recaps drop "harva kaasu" — fix fy3-13/fy3-9: "Kun tilavuus ja kaasun määrä pysyvät samoina, harvan kaasun paine on verrannollinen kelvinlämpötilaan (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"; fy3-10: "Kun kaasun määrä pysyy samana, harvan kaasun paine vakiotilavuudessa ja tilavuus vakiopaineessa ovat verrannollisia kelvinlämpötilaan (luku *Kaasujen tilanmuutokset ja Boylen laki*)" (check the chapter titles against meta.json).
+15. content/fi/FY3/fy3-13/lesson.md (Tiivistelmä, first bullet) and exercises.json (fy3-13-L1-02) — "Suljetussa astiassa" drops "jäykkä" — fix: "Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lineaarinen funktio lämpötilasta: $p = p_0 + k\theta$."

@@ -17,6 +17,7 @@ import json, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 import courses, i18n
 import check_solutions as solution_rules
+import physics_phrases
 from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
@@ -33,6 +34,8 @@ class Lint:
         self.folder = folder; self.out = []; self.errors = 0; self.form_errors = 0
         try: self.state = review_status(folder)["state"]
         except Exception: self.state = "draft"
+        try: self.ex_state = review_status(folder, "exercises")["state"]   # the exercise set is reviewed apart (README "Exercises")
+        except Exception: self.ex_state = self.state
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
     def form(self, f, line, msg):
@@ -43,7 +46,8 @@ class Lint:
     def page(self, f, line, msg):
         """A lesson-page rule of 2026-10-26 (CLAUDE.md "Lesson page"). An error for a lesson being written or edited
         (its reviews are not current); a lesson reviewed before the rule reports it as a warning until it is next edited."""
-        if self.state == "draft": self.err(f, line, msg)
+        state = self.ex_state if f.startswith("exercises/") or f == "solutions.md" else self.state
+        if state == "draft": self.err(f, line, msg)
         else: self.warn(f, line, msg + " (page rule 2026-10-26: fix when the lesson is next edited)")
 
 
@@ -478,6 +482,8 @@ def lint(folder):
     check_inquiry(L, folder)
     for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
         if courses.lesson_file(folder, f).exists(): check_chapter_refs(L, f, courses.lesson_file(folder, f).read_text())
+    for f, line, rid, msg, s in physics_phrases.problems(folder):   # review warnings, docs/physics-guardrails.md
+        L.warn(f, line, f"physics [{rid}]: {msg} (docs/physics-guardrails.md): «{s[:90]}»")
     return L
 
 

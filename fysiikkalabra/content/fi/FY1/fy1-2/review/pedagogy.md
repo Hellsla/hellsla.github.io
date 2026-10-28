@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5e3c67f583461927
+CONTENT-HASH: 0de2fc46804dab65
+
 ## Blocking
+- none.
+
 ## Polish
-- lesson.md:349 — `(1{,}502\cdot10^{4} : 3600)\,\text{h}` drops the unit of the divisor, so the substitution of 1 h = 3600 s is not visible; write `1{,}502\cdot10^{4}\,\text{s} : 3600\,\text{s} = 4{,}17` and then `4{,}17\,\text{h}` (as the exercise solutions now do).
-- inquiry.json (task 3 criterion) — "kirjoittamalla yksikön paikalle sen arvo" is still a little abstract; "sen arvo toisessa yksikössä", as in the experiment-2 criterion, is clearer (carried from round 2, optional).
+- inquiry.json tarkistus-1, first option feedback — "kymmenestuhannesosametrin eli $0{,}1\,\text{mm}$:n tarkkuudella" is correct ($0{,}0001\,\text{m}$) but "kymmenestuhannesosametri" is a heavy word for 16-year-olds. Suggest: "lukema on ilmoitettu $0{,}1\,\text{mm}$:n tarkkuudella ($0{,}0250\,\text{m} = 25{,}0\,\text{mm}$)".
+- lesson.md Etuliitteet — the figure shows only thousand-steps; the new exception sentence for senti and desi is right, but the glossary/figure does not show them. Fine as is; optional mention in the figure caption.
+
 ## Checked
-- Delta round 3 read in context: area-conversion feedback now substitutes the whole square (1 km² = (1000 m)² = 10^6 m²), which closes my round-2 polish; wrong-option feedback "ei 10^3 m²" repairs the misconception without restating the answer.
-- Voyager hints and solution: no division by a "km/AU" factor any more; "montako AU:ta matkaan mahtuu" with `:` and 1 AU = 1,496·10^8 km is a substitution a first-year student can follow; answer 3,236 AU/a and the reasonableness check unchanged and correct.
-- Mercury light-time solution: 193,1 s : 60 s = 3,219 min, colon for division, \cdot for products, no ×; stays seven-step complete.
-- Mistake feedback for 193 and 484000000 no longer gives the operation away before the student reasons; it points to the unit relation instead.
-- Worked example (Neptune) formula and values unchanged; 4,17 h correct.
-- Earlier-approved parts (captures sim-390, fig 1-3) not changed by the diff; not re-opened.
+- Diff: LaTeX conversion of $15{,}341\,\text{km/s}$ in source_note and task prompt; values unchanged, task answer 3,236 AU/a still follows.
+- Prefix sentence "Yleisimmät etuliitteet etenevät tuhannen kertoimen portain (poikkeuksia ovat senti $10^{-2}$ ja desi $10^{-1}$)" is correct and grammatical; it removes the false claim that all prefixes step by 1000.
+- Check item 1 still has exactly one correct option (kolme); the changed feedback is arithmetically right ($0{,}0250\,\text{m}$: last digit is $0{,}1\,\text{mm}$) and still repairs the "trailing zero means nothing" misconception.
+- No other lesson text touched; hash unchanged at the end.
