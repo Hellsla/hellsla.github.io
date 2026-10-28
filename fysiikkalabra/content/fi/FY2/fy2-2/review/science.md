@@ -1,24 +1,21 @@
 VERDICT: FAIL
-CONTENT-HASH: d175129d0f7ac9c5
+CONTENT-HASH: 668eb210f7a5ef23
 
 ## Blocking
-- inquiry.json:96 (ennuste-2, "Noin tuhat vuotta") — $6 \cdot 10^{23}\,\text{J}$ is not "koko Auringon energia yhden sekunnin aikana" ($3{,}8 \cdot 10^{26}\,\text{J}$, about 600 times more) — say it equals about a thousand hours (about 40 days) of sunlight on the Earth.
-- inquiry.json:328 (tarkistus-2, mistake 0.1) — 0,1 is $1{,}0 : 10$ without converting, not the inverted ratio (0,01) — make the feedback about the missing conversion.
-- inquiry.json:274 (siirto, mistake 51000) — 51 000 is the right answer in MJ, not "0,30 TJ = 300 000 GJ" (that gives a negative number) — the feedback should say $51\,000\,\text{MJ} = 51\,\text{GJ}$.
-- lang/fi.json:194 and sims.fy2-2 `s_*` (readout) — the teacher's rule requires LaTeX for readout values, but the source lines show numbers and units as plain text ("32 MJ", "1361 W/m²", "46 MJ/kg", "3600:lla", "1600 MW") — write each as `$…$`, as `s_uraani` already does.
+- inquiry.json:63 (ennuste-1, correct option) — "suhde on noin 3,2" is a number outside LaTeX (teacher's rule: everything in LaTeX) — write $32\,\text{MJ} : 10\,\text{MJ} \approx 3{,}2$.
+- inquiry.json:329 (tarkistus-2, mistake 0.0001) — "Lukuarvot 1,0 ja 10" are plain-text numbers — write $1{,}0$ and $10$.
+- lang/fi.json:193 `valittu` with `n_suklaa`, `n_kaasu`, `n_tankki`, `n_aurinko_s`, `n_aurinko_h`, `n_aurinko` — the readout (and the experiment's Alkutila line) shows "suklaalevy 200 g", "kaasupullo 11 kg", "bensiinitankki 50 l", "Aurinko Maahan, 1 h" as plain text, but the teacher requires LaTeX for numbers with units in sim readouts. The canvas sets them as \text words, not number and unit — give each object a TeX name (e.g. `\text{suklaalevy}\ 200\,\text{g}`) and use it in the readout and the canvas. The select can keep the plain name.
 
 ## Polish
-- lesson.md:69 — $1\,\text{J} = 1\,\text{N}\cdot\text{m}$ brings in force and work (FY3); drop it.
-- inquiry.json:270 — mistake 50.7 is unreachable and inside the tolerance; delete it. The rounding cites significant figures for a subtraction where 300 GJ is known only to 10 GJ.
-- inquiry.json:259 — 360 GJ a day is an average 4,2 MW, high for one turbine; say "tuulivoimapuisto".
-- inquiry.json:241 — "kilo on tuhat joulea" → "kilo tarkoittaa tuhatta".
-- lang/fi.json:201 `s_sydan` — 1 J is the beat's mechanical output, not what the heart "needs". `s_bensiini` names no source (Tilastokeskus: 43 MJ/kg at 0,75 kg/l).
+- inquiry.json:328 — the value 0.0001 is not a likely mistake: the unconverted ratio is 0,1 (already listed), and the inverted, converted one is 0,01. Use 0.01, with feedback about the inverted ratio.
+- inquiry.json:181 (ketju solution, Järkevyys) — "$100 - 40 = 60$, … megajoulea" drops the units inside the chain; write $100\,\text{MJ} - 40\,\text{MJ} = 60\,\text{MJ}$ etc.
 
 ## Checked
-- lesson-answers.py recomputed: 340 kJ, 3,2, $6{,}25 \cdot 10^{20}\,\text{J}$, 66 MJ, 51 GJ, 100, 2500 J.
-- All 28 sim values recomputed, with sensible source/estimate labels.
-- Web-verified: Tilastokeskus 2023 79,8 TWh and 1,32 million TJ; OL3 1600 MW; Energy Institute 620 EJ.
-- Figures to scale (log ladder, Sankey 450 = 110 + 340).
-- Experiments: names match, simState gives E_MJ and k (20,79).
-- Worked example: symbolic first, substitution, real check.
-- Scope and form: no FY3/FY4 content, no ×, LaTeX canvas.
+- Hash 668eb210f7a5ef23 at start and end. All round-1 blocking items fixed (thousand-years option, 0,1 and 51 000 feedbacks, LaTeX in the `s_*` source lines).
+- Recomputed in one script, matching lesson-answers.py: 340 kJ, 3,2, $6{,}25 \cdot 10^{20}\,\text{J}$ (625 EJ, shown as 620), 41 days, 600 kJ, 66 MJ, 51 GJ, 100, 2500 J.
+- All 28 sim values recomputed (photon $3{,}6 \cdot 10^{-19}\,\text{J}$, AA 13,5 kJ, banana 456 kJ, OL3 $1{,}38 \cdot 10^{14}\,\text{J}$, M 9 $2{,}0 \cdot 10^{18}\,\text{J}$, U-235 $8{,}2 \cdot 10^{13}\,\text{J}$ …).
+- Web-verified (stat.fi): electricity 79,8 TWh in 2023; total energy 1,32 million TJ in 2023. Energy Institute 620 EJ (2023), and IAU $3{,}828 \cdot 10^{26}\,\text{W}$ agree.
+- Figures to scale: the ladder positions (33,2 px per decade) and the Sankey widths (96 = 24 + 72 for 800 = 200 + 600).
+- Experiments: initial names match the lang names; simState gives E_MJ and E_EJ (620 for both koe-2 objects).
+- Worked example: symbolic first, conversion by substitution, rounding justified, a real check.
+- Scope: no $E_k$, $E_p$, work, force or $Q = cm\Delta T$; N·m removed; no ×; written division uses a colon.

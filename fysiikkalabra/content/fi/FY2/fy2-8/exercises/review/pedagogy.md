@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: e6d7ee0e2e1ea72d
+CONTENT-HASH: 3f12bb56f3517b66
 
 ## Blocking
 
 ## Polish
-- solutions.md L2-03, L3-01, L3-03 (`\dfrac{m}{e}`, `\dfrac{m_\text{bensa}}{E}`, `\dfrac{120\,\text{km}}{100\,\text{km}}`, `\dfrac{74 \cdot 30 \cdot 36\,\text{g}}{25}`) — the teacher's rule is written division with a colon, as the lesson does ($820 : 12$). Write `E = m : e`, `V = 120\,\text{km} : 100\,\text{km} \cdot 6{,}0\,\textsf{l}` and so on.
-- The set is 12 of 12 the same `m = e \cdot E` computation. Level 3 is "reasoning" in name only: L3-02 is a sum of two products. Give two level-3 tasks a closing interpretive sentence the student answers (not only a number), for example in L3-01 "Mitä tulos kertoo sähköauton hyödystä kivihiilisähköllä?", and add one task that uses a non-emission criterion (land use, transport) so the exercises cover the slot's täsmennys.
-- L1-01, 02, 04, 05 are the same one-step task (energy in kWh, one coefficient); only the context changes. Replace one with a task that gives the emission and asks for E or the comparison (L2-03 already does the former), or make L1-03 the model for others (a quantity per 100 km).
-- exercises.json carries no common-mistake feedback, unlike the inquiry's numeric items. The expected slips (GWh not converted, answer in g instead of kg or t, L2-04 dividing by 3,6) could be given `mistakes` with a repairing message, if the schema allows.
-- L2-04 and L3-01 use combustion-only coefficients (g/MJ) beside the lifecycle coefficients of the table. The tasks say so, which is good; add one line to L2-04's solution saying why a g/kWh value of a fuel and of electricity are not the same thing (the solution's "Järkevyys" already hints at it).
+- exercises.json L3-02 — the task is the longest in the set (about 90 words: two yields, a unit relation, a numeric and an interpretive question). Fix: split into situation (city, two options with yields), then the numeric question, then the interpretive sentence as its own last line; the interpretive answer is not checked, so say "Perustele lyhyesti" to mark it as a written part.
+- exercises.json L3-02 — the numeric answer (100 km²) checks only the biomass area, while the question asks to compare with the solar park; the student can skip the solar calculation. Fix: ask for the ratio of the areas as the numeric answer (50 kertaa) and keep the km² values in the solution.
+- exercises.json L1-04 — a level 1 task with no situation, only two coefficients and a ratio, and it no longer uses m = e · E. Fix: open with a situation ("Naapurit vertailevat sähkönsä päästöjä: ...") and state the question last; keep it as the single comparison item.
+- Still open from round 1: no `mistakes` feedback in exercises.json for the expected slips (GWh not converted, grams instead of kg or t); add if the schema allows.
 
 ## Checked
-- Levels 5 / 4 / 3 per the rubric; level 2 has a unit conversion (L2-01, L2-04), a rearrangement (L2-03) and a difference of two cases (L2-02); no task repeats the worked example (4800 kWh, gas, tonnes) as it stands.
-- Answers recomputed: 72, 2,46, 216, 172,2, 1,176, 460, 2,9088, 24 490, 248,4, 736, 20 320, 4,14; the rounded values stay inside every tolerance, so a student rounding to the data's figures is accepted.
-- Every solution has the seven parts: given, asked, principle explained in words, symbolic formula, conversions (or "ei tarvita" with a reason), substitution with units, answer with significant figures, check with a rounded estimate.
-- Conversions are by substitution (1 g = 0,001 kg, 1 GWh = 10^6 kWh, g/MJ · MJ/kWh), no helper quantity beyond what is needed.
-- Finnish: no errors found; context labels ("Esimerkkitalous", "Esimerkkitilanne") mark invented situations; real data (bensiini 32 MJ/l, 69 g/MJ, diesel 36 MJ/l, 74 g/MJ) are plausible and match the lesson's tarkistus-2.
-- 1280 px capture: the answer and solution open in one column, with no empty area.
-- Hash at the end: e6d7ee0e2e1ea72d (unchanged).
+- Levels 5 / 4 / 3 per the rubric; no task repeats the worked example (gas, 4800 kWh, tonnes).
+- Round-1 polish closed: written division uses a colon in the solutions (`E = 12 \cdot 10^{6}\,\text{g} : 490\,\text{g/kWh}`, `m_\text{auto} : m_\text{bussi}`); symbolic `\dfrac{E}{q}` in L3-02 may stay (NOTES §1).
+- Round-1 polish closed: L3-01 and L3-02 now end with an interpretive question and the solution has a "Johtopäätös" (coal electricity gives no benefit over petrol; land use is what the coefficient does not show); the slot's täsmennys (land use) is practised.
+- Answers recomputed: L1-04 490 : 41 = 11,95 → 12 (tolerance covers 11,8 to 12,2); L3-02 100 GWh : 0,010 GWh/ha = 10 000 ha = 100 km²; solar 200 ha = 2,0 km², ratio 50; L3-01 736 → 740; L3-03 4,14 → 4,1. Consistent with answers.py.
+- Every changed solution keeps the seven parts: given, asked, principle in words (L3-02 explains yield per hectare by analogy with e · E), symbols first, conversions by substitution (1 ha = 0,01 km²), significant figures stated, rounded-number check.
+- L2-04 solution now says why g/kWh of a fuel differs from the table's g/kWh of electricity.
+- LaTeX: every number with unit in the diff is now in `$...$`; decimal comma in the source; case endings (`$100\,\text{km}$:llä`) correct.
+- Levels 3 yield data are marked as rounded example values, not statistics.
+- Hash at the end: 3f12bb56f3517b66 (unchanged).

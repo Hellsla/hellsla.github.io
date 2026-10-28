@@ -1,20 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: 2d9f3d441f3cfbfa
+CONTENT-HASH: fdfbc1a91389a62a
 
 ## Blocking
-- exercises.json (all texts), solutions.md:49 — Problem: quantities are plain text ("2,0 kg", "12 t", "400 kg", "1200 kJ", "40 g", "1,8 GJ", "85 %", "48 MJ", "25 %", "120 MJ", "2,4 kg", "36 t", "35 %", "3600 s"). The teacher's rule is everything in LaTeX. — Fix: put each one in `$…$`.
-- solutions.md:26 (L1-03) — Problem: the conversion is a rule ("megajoulet jaetaan tuhannella"). — Fix: substitute: $312\,000\,\text{MJ} = 312\,000 \cdot (1 : 1000)\,\text{GJ}$.
+- solutions.md:99 (fy2-5-L3-01, Järkevyys) — Problem: the check claims the difference "$8{,}0\,\text{kg} - 2{,}79\,\text{kg}$ on yli kaksi kertaa öljyn massa". That is false: 5,21 : 2,79 ≈ 1,87. A reasonableness check that states a wrong fact misleads. — Fix: say the difference is just under twice the oil mass. Or check with the ratio: the wood mass is 43 : 15 ≈ 2,9 times the oil mass, so the difference is about 1,9 times it: $1{,}87 \cdot 2{,}79\,\text{kg} \approx 5{,}2\,\text{kg}$.
 
 ## Polish
-- L1-02, L1-03 — Problem: these use the lesson table's maakaasu 49 MJ/kg (IPCC gives 48,0) and kivihiili 26 (top of the range); see the lesson report. — Fix: follow any correction there. The answers are consistent with the H the tasks give.
-- solutions.md:49 (L1-05) — Problem: 40 g is not "hieman alle puolet" of 100 g. — Fix: use a real estimate, e.g. $25 \cdot 0{,}04 = 1\,\text{MJ}$.
-- L3-03 — Problem: the solution is not symbolic first. — Fix: write $P = \eta H m : t$ before substituting.
-- L1-01 — Problem (language only): "Moottorisahan huoltoasemalta" reads oddly.
+- solutions.md:29 (L1-03) — Problem: "polttoainetta kuluu kymmeniä tonneja", but the task burns 12 t per hour. — Fix: "noin kymmenen tonnia".
+- exercises.json:82 (L3-01) — Problem: "Mökin lämmitykseen tarvitaan energiaa 120 MJ" could be read as useful heat. The lesson stresses that released energy is not useful energy. — Fix: "polttoaineesta pitää vapautua energiaa $120\,\text{MJ}$".
+- L1-03, L1-04, L2-01 — Problem: the significant figures of 12 000 kg, 400 kg and 40 g are ambiguous. The solutions do justify their 2 s.f. by the other datum. — Fix (optional): 12,0 t and so on, or leave as is.
 
 ## Checked
-- All 12 answers were recomputed independently. They match answers.py, and each is within tolerance (the largest gap is 1,2 %, L3-01).
-- The conversions in answers.py are right: t → kg, GJ → MJ, kJ → MJ and MJ/s = MW.
-- Each solution solves symbolically first (m = E : H; E_sisään = E_hyöty : η) and justifies its rounding.
-- Magnitudes are realistic: about 6 l of petrol per 100 km, a 35 MW peat plant, nuts at 24 MJ/kg, 12 MJ per day for a hiker.
-- Scope: one efficiency and P = E : t. There is no chain product, no work and no Q = cmΔT. No × appears, and division uses a colon.
-- The levels have 5, 4 and 3 tasks, and none repeats the worked example.
+- All 12 answers were recomputed independently in one script. They match answers.py and exercises.json, and every one is within tolerance (largest gap 0,78 %, L2-04). Rounding to the data's figures stays inside tolerance.
+- answers.py uses the right physics on every line: E = Hm, m = E : H, E_hyöty = η E_sisään, E_sisään = E_hyöty : η, and P = E_hyöty : t with MJ/s = MW.
+- Every solution has the seven parts. Each is symbolic first, and its conversions are by substitution (GJ → MJ, t → kg, kJ → MJ). The round-1 L3-03 and L1-05 issues are fixed.
+- The H values match the lesson table, whose IPCC 2006 and Tilastokeskus values are verified. Kevyt polttoöljy at 43 MJ/kg is realistic.
+- Magnitudes are realistic: about 6 l per 100 km at 0,74 kg/l, a 35 MW peat plant from 100 MW of fuel, nuts at 24 MJ/kg, 12 MJ per day for a hiker, and bread at 1200 kJ per 100 g.
+- Everything is in LaTeX, written division uses a colon, and no × appears. Scope is FY2 only. The levels hold 5, 4 and 3 tasks, and none repeats the worked example.

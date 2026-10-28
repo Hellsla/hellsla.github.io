@@ -1,20 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: b6bb4eadf0fe7919
+CONTENT-HASH: 496ce1f4ea7cc86f
 
 ## Blocking
-- lesson.md:53, :130; inquiry.json:67, :105 — Problem: no source has a year (the scope note requires one), and some values do not match the named source. Tilastokeskus *Polttoaineluokitus 2024/2025, määritelmät* gives jyrsinturve 9–11 GJ/t at 40–50 % moisture (lesson.md:101 says 40 %) and polttopuu 13–15 GJ/t at 20–25 % moisture, so the "kuiva" puu is air-dry (fully dry wood is about 19 MJ/kg). Tilastokeskus gives maakaasu per m³n, not 49 MJ/kg (IPCC 2006: 48,0). Kivihiili 26, bensiini, diesel, pelletti and the Fineli values could not be checked (the sources were unreachable). — Fix: cite each value's table and year, use "ilmakuiva (kosteus 20–25 %)", peat moisture 40–50 % and maakaasu 48 (IPCC), and name the Fineli items ("peruna, keitetty") and the year.
-- lesson.md:3 — Problem: the Miksi premise contradicts the lesson's own efficiency point. Useful energy per kg is about equal: 43 · 0,25 ≈ 11 MJ for a car and 15 · 0,75 ≈ 11 MJ for a stove. — Fix: ask why one kilogram of petrol *releases* almost three times as much energy as one kilogram of wood.
-- lesson.md:1, :30, :101, :106, :133, :172, :183; inquiry.json hook, :62–67, :137, the siirto and tarkistus-2 prompts; exit-ticket.json q2–q3 — Problem: quantities and symbols are plain text ("43 MJ/kg", "6,0 kg", "40 %", "E = Hm", "0,230 kg", "1500 kJ"). The teacher's rule is everything in LaTeX. — Fix: put each one in `$…$`.
-- lesson.md:152, :164; inquiry.json:338, :343, :350 — Problem: the kWh conversion is a rule ("jakamalla … 3,6"). — Fix: substitute: $90\,\text{MJ} = 90 \cdot (1 : 3{,}6)\,\text{kWh} = 25\,\text{kWh}$.
+- lesson.md:43 (taulukon otsake `$H$ (MJ/kg)`); inquiry.json:139 (`15 MJ/kg`), :175 (`yksikössä MJ/kg`), :187 (`kJ`, `100 g`), :203 (`yksiköissä MJ/kg`), :226 (`kJ-luku`), :311 (`yksikkö MJ/kg`); exit-ticket.json:11 (`yksikössä MJ/kg`) — Problem: these units and quantities are plain text. The teacher's rule is everything in LaTeX. — Fix: write `$\text{MJ/kg}$`, `$100\,\text{g}$`, `$\text{kJ}$` and so on, as in the inquiry table at :107. While editing :139, also change "kuivan polttopuun" to "ilmakuivan polttopuun" so the note matches the 15 MJ/kg it cites.
 
 ## Polish
-- lesson.md:39 — Problem: 129 MJ from two-figure data. — Fix: 130 MJ.
-- lesson.md:104 — Problem: a label's energy is metabolisable energy, not combustion heat. — Fix: say "vastaa lämpöarvoa".
-- inquiry.json:359 — Problem: "$17 \cdot 10\,\text{MJ}$" drops units. — Fix: substitute with units.
+- lesson-answers.py:19–20 — Problem: the line labelled "misconception: wet wood" computes 10 kg of *wood* (150 MJ). The only task that uses it, tarkistus-3 (inquiry.json:360), uses *pellets*: 17 · 10 = 170 MJ, with a ratio of 430 : 170 ≈ 2,5. Neither number is computed. The text the students see is correct. — Fix: compute `17 * 10` and `430 / 170` under a tarkistus-3 comment.
+- lesson-answers.py — Problem: lesson.md:39 (129 MJ) and exit-ticket q2–q3 (75 MJ, 15 MJ/kg) are not computed (all right). — Fix: add a line each.
+- lesson.md:53 — Problem: the bensiini note says ethanol is the reason for rounding to 43. It is plausible (E10 ≈ 42,5 MJ/kg) but unsourced. — Fix: keep it, but label it "tyypillinen arvo" as for the pellets, or cite Tilastokeskus' moottoribensiini value.
 
 ## Checked
-- All lesson and inquiry numbers were recomputed in one script, and all match.
-- Figure 2's bars are to scale (68 px per 10 MJ/kg). Figures 1 and 3 are right.
-- Each prediction's correct option, the feedbacks, the error-spotting item and the siirto mistakes are right.
-- Scope: E = Hm, one efficiency, kWh. There is no work, no Q = cmΔT and no chain efficiency. No × appears, and division uses a colon.
-- The worked example is staged, solved symbolically first, and its check is real.
+- The data with a named source is verified. IPCC 2006 NCV (via EU MRR Annex VI): maakaasu 48,0, motor gasoline 44,3, gas/diesel oil 43,0 and other bituminous coal 25,8 TJ/Gg, all as cited. Tilastokeskus *Polttoaineluokitus*: jyrsinturve 9–11 GJ/t at 40–50 % moisture, halot/pilkkeet 13–15 GJ/t at 20–25 %, as cited. Pellet 17, food values and dry wood ≈ 19 MJ/kg are realistic.
+- Every lesson and inquiry number, the siirto and tarkistus-2 mistake values included, was recomputed in one script. All match.
+- Figure 2 is to scale at 6,8 px per MJ/kg, and every bar is right. Figures 1 and 3 are right.
+- Every correct option and feedback is physically right, and so is the food-label caveat.
+- The worked example has all seven stages. It is symbolic first, the kWh conversion is by substitution, its 2 s.f. are justified and its check is real.
+- Scope: E = Hm, one efficiency, P = E : t and kWh. There is no Q = cmΔT, no chain product and no FY3/FY4 content. There is no ×, division uses a colon, and the Miksi premise is fixed.

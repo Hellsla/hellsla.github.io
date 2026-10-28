@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 4afa2160cff0bd47
+VERDICT: PASS
+CONTENT-HASH: 95d069fcaa4bb4ac
 
 ## Blocking
-- exercises.json:4–96 (all 12 texts) — Every number and unit is plain text ("500 MWh", "4,0 %", "2,5 kW"). The teacher's standing rule is that everything is in LaTeX. — Write `$500\,\text{MWh}$`, `$4{,}0\,\%$` and so on, as the fy2-1, fy2-4, fy2-5 and fy2-6 sets do.
-- exercises.json:96 / solutions.md:118 (L3-03) — The answer field says 25.2, but the solution's Vastaus says "$25\,\text{MWh}$, kaksi merkitsevää numeroa". — Pick one. With 150 kW taken as three figures, use $25{,}2\,\text{MWh}$ in both places.
-- solutions.md:116 (L3-03) — "$25\,200 : 1000\,\text{MWh}$" is not a conversion by substitution, and it reads as dividing by 1000 MWh. — Write $1\,\text{kWh} = 0{,}001\,\text{MWh}$, then $25\,200\,\text{kWh} = 25\,200 \cdot 0{,}001\,\text{MWh} = 25{,}2\,\text{MWh}$.
-- solutions.md:75 (L2-03) — The Kaava line puts a number in the equation ($E_\text{häviö} = 0{,}04 \cdot E$), so it is not solved symbolically first. — Write $E_\text{häviö} = p\,E$ (with $p$ the loss share) and substitute $p = 0{,}04$ afterwards.
 
 ## Polish
-- L2-01, L2-02, L2-04 — The misconception the lesson names (adding $p$ of the *delivered* energy) gives 998,4 / 1984 / 1046. All three are inside the tolerances (0,16 %, 0,8 %, 0,3 %), so the check cannot tell the wrong method from the right one. At $p = 4\,\%$ no tolerance can separate them. If the set should catch the mistake, give one of these tasks a larger loss (a storage round trip, e.g. $\eta = 75\,\%$).
-- L2-03 — "noin 4 %" has one significant figure, so say why 3,3 TWh carries two (the 83 TWh), or answer $\approx 3\,\text{TWh}$.
+- solutions.md:108 (L3-02) — The answer "$13{,}0\,\text{MWh}$, kolme merkitsevää numeroa" is overstated. The difference of 455 and 442 MWh is known only to about 1 MWh, because 500 and 520 MWh limit the precision. — Use "$13\,\text{MWh}$, kaksi merkitsevää numeroa, koska erotus on pienten lukujen erotus". The answer field 13.0 can stay.
+- solutions.md:96 (L3-01) — "$91{,}0\,\% = 0{,}910$" skips the substitution step "$91{,}0 : 100$" that every other solution shows. — Add it for both η.
+- solutions.md:77 (L2-03) — "$96\,000\,\text{MWh} : 8760\,\text{h} = 10{,}96\,\text{MW}$" uses the unit step MWh/h = MW without stating it. — In Muunnokset, add "$1\,\text{MWh} : 1\,\text{h} = 1\,\text{MW}$".
 
 ## Checked
-- All 12 answers recomputed independently in one script. All match answers.py and exercises.json within tolerance (L2-03 3,32 to 3,3; L2-04 1055 to 1050; L3-01 21,04 to 21).
-- L2-03 data verified: Energiateollisuus Sähkövuosi 2024 gives a total use of 83 TWh with losses of 4 %.
-- Each solution's principle fits its task: the loss share is taken of the energy sent; power loss times time gives energy; in L3-02 the losses add and the share of power equals the share of energy at steady power.
-- The reasonableness checks are real checks (sums back to the input, estimates).
-- No FY3 content and no chain-efficiency product. No ×; division is written with a colon; GWh→MWh and the % conversions are written by substitution, apart from L3-03.
+- I recomputed all 12 answers independently in one script. All match answers.py and exercises.json within tolerance: L2-03 gives 10,96 → 11, L3-01 21,04 → 21 and L3-03 65,7 → 66.
+- Round 1 is fixed. All task texts are in LaTeX. L3-03 converts kWh to MWh by substitution. The L2-03 Kaava is symbolic, with $p$ as the loss share. The answer and the solution agree in every task.
+- The wrong-base misconception (taking the share of the delivered energy) now falls outside tolerance in L1-01 (496), L2-01 (120), L2-02 (1440), L2-04 (1152) and L3-01 (18).
+- L2-02 converts GWh to MWh by substitution, and L2-03 converts TWh to MWh by substitution.
+- Each principle fits its task: the loss share is taken of the energy (or power) sent; steady power times time gives energy; L3-02 compares the delivered energies.
+- The magnitudes are realistic: house heating 20 MWh a year, battery and network losses 4–20 %, and an 11 MW mean loss power for 2,4 TWh.
+- The reasonableness checks are real: sums back to the input, estimates, and the 25 % ratio in L2-04.
+- No FY3 content and no chain-efficiency product. There is no ×, and written division uses a colon; the solutions keep their fractions only in formulas and substitutions.

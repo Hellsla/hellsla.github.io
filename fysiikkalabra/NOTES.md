@@ -17,7 +17,8 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   or a long side) as rows with the equals signs in one column, each row wrapping after an operator on a phone
   (`scripts/mathlayout.py`, §8), so never hand-split a chain or rewrite it as display maths for the layout's sake. Inline SVG labels are LaTeX as well (§3). A symbol or formula named in the student's text is inline maths
   everywhere: `lesson.md`, `inquiry.json`, `exercises.json`, `exit-ticket.json` ("$T$:hen", "$(V, p)$-kuvaaja"); a
-  number with its unit alone in prose stays plain ("98 N"). The experiments' Alkutila line and table headers turn
+  number with its unit in prose is maths too ($98\,\text{N}$, $4{,}0\,\%$; teacher 2026-10-28, as FY1 and FY2 do), only
+  an `aria-label` stays plain text. The experiments' Alkutila line and table headers turn
   a symbol in `names`/`measure` labels into maths at build time (scripts/inquiry.py `tex_name`). The simulation too
   (teacher 2026-10-26, "latexilla kaikki"): every label drawn on the canvas is a `p.text('$…$', x, y)` string, words
   as `\text{}`, numbers with `{,}`, units `\,\text{kPa}` (`templates/sim-embed.js` draws a `$…$` string with KaTeX
@@ -55,6 +56,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   `lesson-answers.py` (one commented line per step, each prints `{id: value}`; 2026-10-28: the exercises are a part of
   their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
+- Data provenance (2026-10-28, FY2): an `interpret` table of official statistics is `source: statistics` with the
+  source and year in `source_note`; invented realistic numbers are `source: example` (Keksitty esimerkkiaineisto), never
+  `simulated` or `measured`.
 - Understanding before formulas (teacher 2026-10-28, FY1): a unit conversion substitutes the unit
   (`4{,}2\,\text{km} = 4{,}2 \cdot 1000\,\text{m}`, `1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}`), never a general
   conversion formula; no helper quantities or ratio formulas the student does not need (the essential idea must not

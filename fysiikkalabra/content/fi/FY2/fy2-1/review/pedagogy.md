@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 3b99abb0c4aac723
+CONTENT-HASH: fd714c1abef54a93
 
 ## Blocking
 (none)
 
 ## Polish
-1. lesson.md "Energia muuttuu muotoa" — "lamppu muuttaa sähköenergian säteilyksi eli valoksi ja lämmöksi" makes säteily and lämpö one thing, while the figure and the seven forms keep them apart (lämpöenergia is particle motion). Fix: "lamppu muuttaa sähköenergian valoksi eli säteilyenergiaksi ja lämpöenergiaksi."
-2. Neighbour overlap (Energian muuttuminen ja yksikkö joule): the joule and prefix work (retrieval item pr-etuliite, MJ line in Ydinajatus, mJ/GJ conversions) and the nuclear chain in check-1 belong there; the goals here are forms and conservation. Keep kJ↔J as the minimum, move the chain-ordering check to the next chapter or make it "name the forms".
-3. inquiry.json `prior` item 2 (nopeus, luku *Tasainen liike*) is not used anywhere in the lesson; replace with something the lesson builds on or drop it.
-4. exp-1 intro suggests t = 1, 2, 3 s; the skater is nearly at the bottom only at 1 s (Ep 63 J) and is back up the far side at 2 s, so pred-1's "pohjalla" is checked only approximately. Add "t = 1,0 s on lähellä pohjaa" to the intro so the student reads the right row.
-5. Hook "Minne pallon energia meni?" has no answer field and its only closers are optional (reflect) or late (check-3). The data task uses the ball, so it is covered; consider making reflect core or letting pred-2 mention the ball.
+1. inquiry.json `hook` / `pred-2` — "Minne pallon energia meni?" is closed only by `reflect` and check-3 (late) and the data task; the ball is not tied to the skater tables during Tutki. Fix: let the pred-2 prompt or the johtopäätös prompt say "sama kuin pomppivalla pallolla", or keep `reflect` core as it is.
+2. inquiry.json `check-1` — the nuclear-plant chain overlaps the neighbour chapter's chain thinking (energy conversion chains, Hyötysuhde); it tests "name the form" which the lesson does cover, so keep only if the prompt stays "missä muodossa", not the chain order. Currently fine; do not extend it.
+3. inquiry.json `check-2` solution, Periaate — "suurin osa lämpöenergiasta lähtee lampusta näkymättömänä lämpösäteilynä" blurs lämpöenergia and säteilyenergia, which the lesson keeps apart. Fix: "lämpöenergia lämmittää lampun ja ympäristön".
+4. lesson.md figure 1 (`energialajit`) — two stray short dashes beside the lightning bolt (sähköenergia) read as artefacts at 390 px. Fix: remove them or draw them as clear contacts.
+5. inquiry.json `exp-2` intro — three rows (0, 8, 16 s) show 981, 469 and 143 J mechanical; a fourth optional row near the middle of the run would show the heat growing smoothly, but three suffice for the prediction. Taste only.
 
 ## Checked
-- Learning path from the hook through prediction, sim, table, theory, example holds; no formulas E_k or E_p are taught (FY2 scope kept).
-- Predictions 1 and 2 can be refuted by the tables; wrong-option feedback repairs the misconception.
-- Figures 1-3 at 390 px: recognisable, legible, labels LaTeX, colour plus hatching for heat; figure 3 sums to 800 J in every column. Stray short dashes near the lightning bolt in figure 1 only.
-- Worked example: seven single-step stages, symbolic first, conversion by substitution, rounding and check justified.
-- Sim at 390 and 1280 px: picture, bar and graph with LaTeX labels; text behind Käyttöohje, Mallin oletukset, Laskennan selitys; locked controls greyed with "(vakio)".
-- Data task, siirto and checks: hints progress, mistake values give feedback, solutions complete.
-- Finnish: no case or grammar errors found.
-- Workload: heavy but core path trimmed by optional items.
-- Neighbour overlap with Energian muuttuminen (see 2); no overlap with Teho or Hyötysuhde beyond incidental percentages.
+- Round-1 polish items are fixed: lamp wording (valoksi ja lämpöenergiaksi), joule/prefix work cut to kJ and J only, unused speed prior removed, exp-1 intro names t = 1,0 s as near the bottom.
+- Learning path hook, prediction, sim, tables, theory, example, transfer holds for a 17-year-old with only the prefix prerequisite; no E_k or E_p formulas taught (FY2 scope kept); prior item has a chapter name, no ids.
+- Predictions 1 and 2 can be refuted by the exp tables (981 J constant; mechanical falls, heat grows); each wrong option's feedback repairs its misconception; no answer disclosed before commitment.
+- Figures 1-3 at 390 px: recognisable, legible, LaTeX labels, heat red plus hatching (not colour alone); figure 3 sums to 800 J in every column and stands next to the paragraph it explains.
+- Worked example: seven single-step stages, symbolic first, kJ to J by substitution, rounding and reasonableness justified.
+- Sim at 390 and 1280 px: picture, bar and graph labelled; Käyttöohje, Mallin oletukset, Laskennan selitys closed; controls, readout and the experiment cards fit; no wall of text, no paragraph near 120 words.
+- Siirto, data task and checks: three progressive hints, mistake values with repairing feedback, complete seven-part solutions; exit ticket tests the core idea (conservation, "kuluminen" as conversion, friction).
+- Finnish: no grammar or case errors found; glossary terms used correctly.
+- Workload: one lesson, core path trimmed by optional items.

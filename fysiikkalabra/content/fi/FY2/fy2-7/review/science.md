@@ -1,20 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: b6e1d96d15ea188c
+CONTENT-HASH: 5e17e209235f27bb
 
 ## Blocking
-- lesson.md:231 — The rounding justification is false: "$9{,}0\,\%$ tunnetaan kolmen numeron tarkkuudella". $9{,}0\,\%$ has two significant figures. $\eta = 0{,}910$ (from $100\,\% - 9{,}0\,\%$) has three, so 223 MWh is fine. The loss $22{,}05\,\text{MWh}$, however, carries the two figures of $9{,}0\,\%$, as the exercise solution L3-01 itself says. — Answer $E_\text{häviö} \approx 22\,\text{MWh}$ with two figures and justify each result by its own data ($\eta$ three figures; the loss share two).
-- inquiry.json:315 (tarkistus-2) — The listed mistake value 496 (adding 9 % of the delivered energy, $455 \cdot 1{,}09 = 495{,}95$) is 0,8 % from 500, inside the relative tolerance 0,02. The wrong method is graded correct and its feedback never fires. — Either set the tolerance to 0,005 (500 has two significant figures, and a student's $5{,}0 \cdot 10^2$ is exact) or use a larger loss share, e.g. $\eta = 75\,\%$: $607$ vs $569$.
-- lesson.md:11, :113, :248; inquiry.json:19 — These numbers with units are plain text: "110–400 kV", "20 kV", "0,4 kV", "230 V", "4 %", "83 TWh", "36 TWh", "32,7 TWh", "9 %". The teacher's standing rule is that everything is in LaTeX. — Write them as `$110\text{–}400\,\text{kV}$`, `$4\,\%$`, `$83\,\text{TWh}$` and so on.
+- inquiry.json:143 ("sahko" table) — The cells "noin 4 %" and "9,2 %" are percentages in plain text inside a task. That breaks the teacher's standing rule that everything is in LaTeX. The other cells ("noin 83", "noin 3", "36,0", "3,3") are bare numbers as well. — Write each cell in LaTeX: `$\approx 4\,\%$`, `$9{,}2\,\%$`, `$\approx 83$`, `$36{,}0$` and so on. Do the same for the bare numbers in the "kl" table (line 111: 36,0 and 32,7) and the "jannite" table (line 174: 20 / 0,80 …), which have their units only in the column headers.
 
 ## Polish
-- lesson.md:141, :138 — The labels "potentiaali" and "pumppuvoima" should read $\text{potentiaalienergia}$ and $\text{pumppuvoimala}$, matching the text.
-- inquiry.json "jannite" — 100 MW at 20 kV needs 5000 A, which is unrealistic even for a labelled model. A 10 MW example would be more believable.
-- lesson.md:113 — "Kuuma vesi on ympäristöä selvästi lämpimämpää, ja siksi … suhteessa suurempi" reads as the only cause. Add that heat leaks through the insulation along the whole length of the pipe network, as the johtopäätös model answer already says.
+- inquiry.json:190 ("jannite" choice feedback) — "häviö pienenee $400$-kertaiseksi" literally says the loss grows 400-fold. — Write "pienenee $400$:sosaan" or "$400$ kertaa pienemmäksi", as the correct option already does.
+- lesson.md:152 — "Sähköä ei varastoida sellaisenaan" is true at the scale of the grid, but capacitors do store electrical energy directly. — Add "suuria määriä" if wanted.
 
 ## Checked
-- Data verified against energia.fi: Sähkövuosi 2024 (83 TWh total use, losses 4 % of it); Kaukolämpötilasto 2024 Taulukko 1 (36 000 / 32 700 GWh). The 9,2 % is correctly called an estimate.
-- The high-voltage explanation is qualitative and correct, with no $P = UI$; the model table follows $1:U^2$. The ennuste-2 feedbacks are correct.
-- No FY3 content: no U-value, no conduction formula, no chain-efficiency product.
-- The grid voltages are correct, and the Sankey widths are to scale.
-- Every lesson-answers.py and inquiry number recomputed; all match. The other mistake values lie outside tolerance.
-- No ×; division is written with a colon; the worked example is solved symbolically first.
+- I recomputed every number of lesson.md, inquiry.json and exit-ticket.json in one script. All match lesson-answers.py: example 222,95 → 223 MWh and 22,05 → 22 MWh (the rounding is now justified per datum); kl 9,17 → 9,2 %; siirto 15 %; tarkistus-2 500 MWh; exit 768 MWh and 48 kWh.
+- Every mistake value is now outside its tolerance: kl 10,1 and 3,3; siirto 85 and 17,6; tarkistus-2 281 and 469. The exact answers lie inside.
+- The "jannite" model table follows the $1 : U^2$ scaling (0,80 → 0,0264 → 0,0020 MW). The 10 MW / 10 km example is plausible and labelled as a model. Its percentages, 8,0 %, 0,26 % and 0,020 %, are correct.
+- The data is unchanged from round 1, where it was verified (Energiateollisuus, Sähkövuosi 2024: about 83 TWh with about 4 % losses; Kaukolämpötilasto 2024: 36,0 / 32,7 TWh). The 9 % is still marked as an estimate. The "sahko" comparison holds: about 3 TWh in each network, and 83 : 36 > 2.
+- The grid voltages are correct (110–400 kV, 20 kV, 0,4 kV, 230 V). The high-voltage reasoning is qualitative and correct, with no $P = UI$.
+- The Sankey is to scale (77 : 80 = 96 %, 3 : 80 ≈ 4 %; 73 : 80 ≈ 91 %, 7 : 80 ≈ 9 %). The figure labels are in LaTeX and read correctly.
+- Every correct option and feedback in kertaus, ennuste-1/2, virhe, tarkistus-1/3 and johtopäätös is physically right. Losses are always heat to the surroundings, so energy is conserved.
+- No FY3 content: no Q = cmΔT, no U-value, no chain product, no $P = I^2R$.
+- Prose and task texts outside the tables are all in LaTeX. There is no ×, written division uses a colon, the % → decimal conversions are written by substitution, and the worked example is solved symbolically first.

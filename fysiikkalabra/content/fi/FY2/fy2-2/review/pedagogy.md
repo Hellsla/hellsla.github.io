@@ -1,21 +1,22 @@
 VERDICT: FAIL
-CONTENT-HASH: d175129d0f7ac9c5
+CONTENT-HASH: 668eb210f7a5ef23
 
 ## Blocking
-- inquiry.json koe-2 (`measure` k, intro "Taulukon luku $k$") — the student must compare an abstract helper quantity ("k = 20,8", the exponent) that the sim readout does not otherwise need, while the sim already shows $6{,}2 \cdot 10^{20}\,\text{J}$ and 620 EJ; this is the "oleellinen häviää" pattern — measure the energy itself (e.g. $E$ in EJ or as mantissa and power of ten), drop $k$ from intro, johtopäätös model answer ("$k \approx 20{,}8$") and calc.
-- sim (assets/sims/fy2/fy2-2, shots fy2-2-sim-390/1280) — canvas labels (item names, "$3{,}2 \cdot 10^{7}\,\text{J}$", axis values) render at about 9-10 px on phone and desktop, below the 17 px rule; and the slider "Näkymän keskikohta $10^{7,5}$ J" is an abstract value with no meaning for the student (the Kohde menu already moves the view). Enlarge the labels (fewer items per view, or taller canvas), remove or hide the slider and keep the two buttons and Kohde.
+- inquiry.json:332 (tarkistus-2 solution) — written division as `\dfrac{E_\text{salama}}{E_\text{ruoka}}` breaks the teacher's rule "division a colon"; the lesson text and calc already write `32 MJ : 10 MJ` — fix: `N = E_\text{salama} : E_\text{ruoka} = 1000\,\text{MJ} : 10\,\text{MJ} = 100`.
 
 ## Polish
-- lesson.md "Kaava: Energian säilyminen" — restates $E_\text{alussa} = E_\text{lopussa}$ as its own Kaava, the law of the previous chapter *Energialajit ja energian säilyminen*; this chapter's own new content is joule, prefixes and substitution ($1\,\text{kJ} = 1000\,\text{J}$). Make the Kaava section about the unit conversion and call the conservation a reminder.
-- fig "sailyminen" and the example use the same banana numbers, so the figure above the example shows 340 kJ before the student has staged the solution; use other numbers in one of them. The "Yleinen virhekäsitys" sum $2{,}2\,\text{MJ} + 800\,\text{kJ}$ is also exercise L2-01.
-- ketju figure: wheat/plant step has no label (Aurinko → puuro skips "kasvi"); add "Kasvi".
-- Finnish: sim readout "Lähde (lähteestä): Taulukkoarvo" is garbled, write "Lähde: taulukkoarvo"; exit ticket 1 "kuinka monta jouleja" → "kuinka monta joulea".
-- ennuste-2 is a pure guess (no premise to argue from); add one sentence of context (e.g. Aurinko paistaa Maahan jatkuvasti) or mark it optional.
+- Koe 1 and koe 2 are table look-ups: both items sit in the same sim view and the readout gives the value, so the experiment confirms a table, not a result that emerges. Acceptable for a unit lesson; consider asking the student to count the steps between the two points on the ladder before reading the numbers.
+- fy2-2-sim-1280.png and fy2-2-lab-1280-1.png — the sticky sim card ends at the "Mallin oletukset" row and "Laskennan selitys" is not visible; check whether this is only the capture's viewport height, otherwise the box is unreachable.
+- lesson.md, paragraph after fig 1: "Kuvan esimerkissä puuron $800\,\text{kJ}$" points to the figure below it (fig 2), not the one just seen; write "Seuraavan kuvan esimerkissä".
+- ennuste-2 prompt is leading ("ihmisten voimalat ... pieniä pisteitä"); still argumentable, but a neutral premise would let the student reason from a number instead.
+- Kertaus, esimerkki, ketju, siirto and tarkistus-1 all use the same subtraction E_alussa − E_osa; variety is thin but the goals are met.
 
 ## Checked
-- Path: hook answered by ketju, theory, example; goals met; workload ok with optional items.
-- Prediction/experiment gating and feedback repair misconceptions; koe-1 and koe-2 can refute.
-- Worked example: seven stages, symbols before numbers, conversion by substitution.
-- Figures 1-3 legible at 390; figure 1 beside paragraph at 1280; table fits.
-- Overlap: no Teho, Hyötysuhde or FY3 content except the Kaava duplicate above.
-- Solutions of ketju, siirto, tarkistus-2 follow all seven parts.
+- Path: hook (Aurinko → puuro → liike → lämpö) is answered by fig 1, theory and example; goals only energy chain, joule and prefixes; no Teho, Hyötysuhde or FY3 content.
+- Round 1 blockers fixed: koe-2 measures E in EJ (no abstract k), sim slider gone, labels legible in sim-390 and sim-1280.
+- Figures 1-3 legible at 390, labelled in LaTeX, "kasvi" added, fig 2 uses different numbers than the example.
+- Predictions: gated reveal after min 2 measurements; each option's feedback repairs its misconception; both can be refuted.
+- Worked example: seven stages, symbols before numbers, unit conversion by substitution, check of the sum.
+- Solutions of ketju, siirto and tarkistus-2 have all seven parts and explain the principle.
+- Finnish: glossary terms right, case after number+unit right, "joulea" fixed; \cdot used, no ×.
+- Workload about one hour with optional items; koe-2 table and phone layout fit in 390 captures.

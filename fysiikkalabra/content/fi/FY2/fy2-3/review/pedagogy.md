@@ -1,22 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 150f1def688a5bf2
+VERDICT: PASS
+CONTENT-HASH: 704ca126f528bedf
 
 ## Blocking
-- inquiry.json activity `mittari` (table, shot stage-tutki-390-1) — the four-column table does not fit the phone: the "televisio (kJ)" column is cut off and needs sideways scrolling, so the student cannot see the third device's data. Teacher's rule: tables fit 360 px — shorten the headers (`keitin`, `tosteri`, `televisio`, with "Energia (kJ)" said once above or in the text) so all four columns show without scrolling.
 
 ## Polish
-- inquiry.json `ennuste-1` — the hook ("lamppu on päällä tuntikausia") already gives away "Lamppu, koska pidempään", so the prediction can hardly be wrong. Better to ask for a number or a size order ("kuinka kauan lampun pitää palaa, jotta se muuntaa saman kuin kuivain?"), which the `aika` table can then refute or confirm.
-- `aika` question — the answer 15 h is a row in the table (0,54 MJ), a lookup. Drop the 15 h row from the table so the student must compute t = E : P and then check.
-- lesson.md (fig 1 and 2) — television is 100 W in the figures but 80 W in the table and the example. Use one value (80 W).
-- lesson.md "Tätä valmiustilan tehoa on tyypillisesti pari wattia laitetta kohti" → "Valmiustilan teho on tyypillisesti pari wattia laitetta kohti."
-- No power-plant-scale example (MW only in the prefix list); the course is about energy production. One line (e.g. a power plant's MW against a kettle's kW, with a named source) would link to the next chapters.
+- inquiry.json `ennuste-1` options ("Noin 15 tuntia.", "Noin 150 tuntia.", "Noin tunnin.", "Noin viisi minuuttia") and `aika` options/feedback ("24 tunnissa", "5 tunnissa") — numbers with units in plain text, against the everything-LaTeX rule — write `$15\,\text{h}$`, `$150\,\text{h}$`, `$1\,\text{h}$`, `$5\,\text{min}$`.
+- inquiry.json `hook` — "lamppu on usein päällä tuntikausia" still hints that the lamp wins in time, but the prediction now asks for a number, so it can be refuted; acceptable, softer wording ("pitkään") would be tidier.
+- lesson.md Esimerkki, stage Tulos — "teho ja päivittäinen käyttöaika on annettu" → "ovat annetut" (plural subject).
+- lesson.md Kilowattitunti — "Joulemuodossa tunti on" → "Jouleina laskettaessa tunti on".
+- Opening Miksi question ("sähkölaskua ei voi päätellä pelkästä laitteen tehosta") is answered, but the power-plant scale appears only as one OL3 sentence; fine for the slot, the later chapters carry it.
 
 ## Checked
-- Goals: P = ΔE/Δt, W, kWh and the bill covered; no work, force or FY3 content; the opening question is answered by the prediction, tables and `pohdi`.
-- Learning path: retrieval, prediction, tables, theory, staged example, error-spotting, numeric transfer, 3 checks follow; workload one lesson, with optional items marked.
-- Figures: bars and E–t graph are legible, scaled, LaTeX-labelled and sit right after the paragraphs they explain (1280 px captures).
-- Worked example: 7 stages, one step each; conversions by substitution (80 : 1000 kW), 2 significant figures justified, reasonableness check.
-- Prediction/feedback: every wrong option's feedback repairs its misconception with numbers; no answer disclosed before commitment.
-- Finnish, glossary terms and the cases after number+unit are correct; no paragraph over 120 words.
-- Phone captures: Pohdinta, Ennusta, example and the tasks are readable; no other clipping.
-- Exit ticket tests the core idea (Q3); hash unchanged at the end.
+- Round 1 blocking fixed: the `mittari` table now shows all four columns at 390 px (stage-tutki-390-1), no scrolling.
+- Round 1 polish done: prediction asks for a duration, 15 h row removed from `aika`, television 80 W in both figures, table and example, OL3 line added.
+- Goals: P = ΔE/Δt, W, kWh, bill; no work, force or FY3 content; opening question answered via prediction, tables, `pohdi`.
+- Activities fit a simulation-free topic: committed numeric prediction, two data tables the student reads, conclusion `explain`, error-spotting, numeric transfer; one lesson of work, extras optional.
+- Figures: bar chart and E–t graph legible, LaTeX labels, scaled, right after their paragraphs (fig-1/2 390 px, theory-1280).
+- Worked example: seven stages, one step each, symbols before numbers, 2 s.f. justified, reasonableness check.
+- Feedback repairs misconceptions with numbers; nothing disclosed before commitment.
+- Exit ticket Q3 tests the core idea (power and time together); phone and 1280 px captures clean, no text wall.
+- Hash unchanged at end.

@@ -1,19 +1,20 @@
 VERDICT: FAIL
-CONTENT-HASH: 29181ffcb4929ba7
+CONTENT-HASH: d05f871e4dfe3077
 
 ## Blocking
-- exercises/solutions.md:39 (L1-04) — "$9{,}0\,\text{MJ}$ kolmestatoista" is wrong: the gas gave 12 MJ — "kahdestatoista".
-- exercises/solutions.md:118 (L3-03) — the task asks how much petrol would give the same energy (370 TJ), but the solution compares only one kilogram (2,6 million litres) — add $V = \dfrac{E}{E_\text{litra}} = \dfrac{370 \cdot 10^{6}\,\text{MJ}}{32\,\text{MJ/l}} \approx 1{,}2 \cdot 10^{7}\,\text{l}$ (about 12 million litres) against 4,5 kg of uranium, with its rounding and check (CLAUDE.md Lesson form 7).
+- exercises/exercises.json:14, :72 (L1-02, L2-04) — "(200 g)" is a number with a unit in plain text (teacher's rule: everything in LaTeX) — $(200\,\text{g})$.
+- exercises/exercises.json:48 (L2-01) — "100 gramman" — $100\,\text{g}$:n.
+- exercises/solutions.md:12, :52, :82 — "suklaalevy (200 g)" / "(100 g)" in plain text — write them in LaTeX in the same way.
 
 ## Polish
-- exercises/solutions.md:56, 67 (L2-01, L2-02) — "$800 : 1000\,\text{MJ}$" reads as 800 divided by 1000 MJ. Substitute the prefix instead: $800\,\text{kJ} = 800 \cdot 10^{3}\,\text{J} = 0{,}80 \cdot 10^{6}\,\text{J} = 0{,}80\,\text{MJ}$, or $(800 : 1000)\,\text{MJ}$.
-- exercises/solutions.md:65 (L2-02) — in $E = V \cdot E_\text{litra}$ the units do not close unless $E_\text{litra} = 32\,\text{MJ/l}$ and $V = 40\,\text{l}$; write them so.
-- exercises.json L1-02 and L2-01 — one chocolate bar has 4,4 MJ and the other 2,2 MJ; name the bars' masses (200 g and 100 g), which match 2200 kJ per 100 g.
-- exercises/solutions.md:38 (L1-04) — "tasalukujen" is unclear; say that the difference is given to tenths of a megajoule as in 9,0 MJ.
+- exercises/solutions.md:38 (L1-04) — the rounding cites 9,0 MJ, but in a subtraction the least precise datum decides, and 12 MJ is known only to the whole megajoule. Either give the gas as $12{,}0\,\text{MJ}$ or justify $3{,}0\,\text{MJ}$ differently.
+- exercises/solutions.md:29 (L1-03) — $140\,\text{GJ} : 1{,}6\,\text{GJ} \approx 90$ tankfuls, not "noin sataa".
 
 ## Checked
-- Recomputed all 12 answers in one script against answers.py and exercises.json: 54 000 J, 4400 kJ, 140 GJ, 3,0 MJ, 22, 3,0 MJ, 1,3 GJ, 6,0 kJ, 2200, 5,6, 230 TJ, 4,5 kg all agree.
-- Data verified: Tilastokeskus 2023 electricity 79,8 TWh → 787 TJ a day (790 TJ); OL3 1600 MW → 138 TJ a day, 4300 MW thermal → 372 TJ; U-235 $8{,}2 \cdot 10^{13}\,\text{J/kg}$; petrol 32 MJ/l; banana 450 kJ.
-- L2-03 physics right: the absorbed light also becomes heat, so all 6,0 kJ ends up as heat.
-- Every solution has the seven parts, solved symbolically first; rounding and the checks are real.
-- Scope: no work, $Q = cm\Delta T$, $E_k$/$E_p$ or chain-efficiency products; no ×; division with a colon or a fraction.
+- Hash d05f871e4dfe3077 at start and end. The round-1 blocking items are fixed: "kahdestatoista" in L1-04, and the L3-03 solution now computes the full $1{,}2 \cdot 10^{7}\,\text{l}$.
+- All 12 answers recomputed independently in one script, matching answers.py and exercises.json, and every one is inside its tolerance after rounding: 54 000 J, 2,3, 140 GJ, 3,0 MJ, 33, 3,0 MJ, 1,3 GJ, 6,0 kJ, 950, 6, 3200, $1{,}2 \cdot 10^{7}\,\text{l}$ (3,8 % < 5 %).
+- Data: the stat.fi figure of 79,8 TWh in 2023 gives 787 TJ a day (790 TJ). OL3 is 1600 MW (138 TJ a day) and 4300 MW thermal (372 TJ). 4,5 kg of U-235 a day matches 370 TJ. The TNT tonne is 4,184 GJ. 72 GJ (20 MWh) a house is marked as an example.
+- L2-03 physics right: the absorbed light becomes heat, so the answer is 6,0 kJ.
+- L3-03 check: about 300 tanker trucks; 4,5 kg of uranium (about 240 cm³) fits in a palm.
+- Every solution has the seven parts, solved symbolically first, with conversions by substitution and colon division in prose.
+- Scope: no work, $E_k$, $E_p$, $Q = cm\Delta T$ or chain-efficiency products; no ×.

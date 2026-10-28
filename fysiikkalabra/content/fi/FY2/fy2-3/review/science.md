@@ -1,21 +1,22 @@
 VERDICT: FAIL
-CONTENT-HASH: 150f1def688a5bf2
+CONTENT-HASH: 704ca126f528bedf
 
 ## Blocking
-- lesson.md:105 — the price 20 snt/kWh is labelled "Energiavirasto, 2025", but it is unverifiable (Energiavirasto's site refused access). The published statistic is Tilastokeskus, *Sähkön hinta kuluttajatyypeittäin* (13rb): a household's total price (energy + transfer + taxes) averaged 17,6 snt/kWh in 2025, for 5 000–15 000 kWh/a. — Cite that source and value: "Tilastokeskus 2025: noin 18 snt/kWh kokonaishintana". Keep 20 snt/kWh only as an explicitly labelled round example price (esimerkkihinta).
-- lesson.md:130 and inquiry.json:224 (siirto solution) — "$80\,\text{W} = 80 : 1000\,\text{kW}$" and "$2{,}5 : 1000\,\text{kW}$" are dimensionally wrong as written: 80 : (1000 kW) has the unit 1/kW. They are also not conversions by substitution (teacher rule). — Write $80\,\text{W} = 80 \cdot 10^{-3}\,\text{kW} = 0{,}080\,\text{kW}$ (substituting $1\,\text{W} = 10^{-3}\,\text{kW}$).
-- lesson.md:8, 95–101, 103, 155; exit-ticket.json:12; inquiry.json prompts (e.g. ennuste-1, virhe) — quantities with units appear as plain text (2000 J, 1800 W, 0,15 kWh, the table's powers, "8760 tuntia", 43,8 kWh partly). The teacher's rule is that everything is in LaTeX. — Put every number-with-unit in $…$ (e.g. $1800\,\text{W}$:n).
+- lesson.md:155 — "'kilowattitunti sekunnissa' ei ole teho" is physically wrong: energy per time is a power (1 kWh/s = 3,6 MW). — Use a real mix-up instead: "teho on 2 kWh" is wrong; it is 2 kW.
+- lesson.md:10 (bar figure aria-label) — it says "televisio 100 W … 100 J", but the figure, table and graph use 80 W. — Write 80 W and 80 J.
+- lesson.md:142–148 (Esimerkki) — 192 snt becomes 1,9 € with no conversion shown (teacher rule: conversion by substitution). — Add $192\,\text{snt} = 192 \cdot 0{,}01\,\text{€} = 1{,}92\,\text{€}$.
+- exit-ticket.json:12 — "$1095\,\text{min} = 18{,}25\,\text{h}$" is not a conversion by substitution. — Substitute $1\,\text{min} = \tfrac{1}{60}\,\text{h}$.
+- Numbers with units are plain prose (teacher's all-LaTeX rule) at lesson.md:108 and 112 ("30 vuorokautta"), and at inquiry.json:61, 66, 85, 88, 126, 195, 205, 221, 224 and 259 ("15 tuntia", "60 sekunnissa", "900 euroa", "365 vuorokautta", "90 minuutin" …). The table cells at inquiry.json:78 and 106 are plain numbers too. — Put each in $…$.
 
 ## Polish
-- lesson.md:103 — "pari wattia laitetta kohti" is high for current devices. EU ecodesign caps standby at 0,5–1 W; older devices draw a few watts. — Write "alle wattista muutamaan wattiin".
-- lesson.md bar figure — the television is 100 W in both figures but 80 W in the table and the worked example. — Name it "esimerkkilaite" or align the values.
-- inquiry.json:3 — "kilowattitunti on teho kertaa aika" — Write "energia (kWh) on teho kertaa aika": the kilowatt-hour is a unit.
-- inquiry.json:18 — "sähkömittari pyörii" describes an old electromechanical meter; current meters are digital. — Write "mittarin lukema kasvaa".
-- exit-ticket.json:7 — "joulina" → "jouleina". In answer 3, round 43,8 and 36,5 kWh to two significant figures (44 and 37 kWh), matching 5,0 W and 3,0 min.
+- exit-ticket.json:12 — "kuten tehot 5,0 W ja 3,0 min": 3,0 min is not a power. — Write "kuten lähtötiedot".
+- lesson-answers.py, `inq-check2-ilman-muunnosta` — it computes 1,2 : 90 = 0,0133, but the mistake value in inquiry.json:274 is 13,3. — Compute 1200 / 90.
+- glossary.json "teho" (shown with this lesson) contains P = W/t and P = Fv, which are FY3/FY4 content. This is not a lesson file; flag it to the glossary's owner.
 
 ## Checked
-- Recomputed every lesson, inquiry and exit-ticket number (tables, predictions, siirto 21,9 kWh, check 2 800 W, mistake values, example 1,92 €): all correct.
-- Both figures to scale; graph slopes match 2000, 1000 and 100 W.
-- P = ΔE/Δt and its conditions (steady conversion → E = Pt) are stated. 1 kWh = 3,6 MJ is shown by substitution.
-- Scope: no work, no force, no Q = cmΔT, no E_k/E_p, no chain efficiencies. No × anywhere. Written division uses a colon; formulas keep fractions.
-- Worked example: seven complete stages, real check.
+- I recomputed every lesson, inquiry and exit-ticket number in one script. All are correct, and so are the correct options and the feedback numbers.
+- Both figures are to scale: the graph slopes are 2000, 1000 and 80 W, and the bars are 400 : 200 : 16 px.
+- Olkiluoto 3 is about 1600 MW electrical, verified in TVO's 2022 release.
+- The Tilastokeskus 2025 figure "noin 18 snt/kWh" agrees with table 13rb (17,6 snt/kWh, found in round 1; the API was unreachable this round). 20 snt/kWh is labelled as an example price.
+- All round-1 blockers are fixed.
+- Scope is FY2. There is no ×, and written divisions use a colon.

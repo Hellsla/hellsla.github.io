@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: b6bb4eadf0fe7919
+CONTENT-HASH: 496ce1f4ea7cc86f
 
 ## Blocking
 
 ## Polish
-1. lesson.md (Kaava, esimerkki 3,0 kg) — "= 129 MJ" kuvaa kolmea numeroa, vaikka massa on 3,0 kg; sivu opettaa pyöristämään tiedon tarkkuuteen — kirjoita "$\approx 130\,\text{MJ}$".
-2. lesson.md (Kaava, taulukon johdanto) — "tehollisia lämpöarvoja" jää selittämättä 16-vuotiaalle — "(lämpöarvo, kun savukaasun vesihöyryn tiivistymislämpöä ei lasketa mukaan)" tai jätä sana pois.
-3. lesson.md (Yleinen virhekäsitys) — kolme virhekäsitystä yhdessä kappaleessa ja perään irrallinen kappale (säkki vs. kanisteri, hiilidioksidi) — jaa kolmeksi lyhyeksi luetelmakohdaksi ja siirrä säkki/kanisteri-vertailu Kaava-osan esimerkiksi tai tehtävään (tarkistus-3 toistaa sen jo).
-4. inquiry.json (ennuste-2, taulukko, rakenna) — ennuste-1:n palaute antaa jo 43 ja 15 MJ/kg, joten ennuste-2 on väitettävissä vasta sen jälkeen, ja taulukko- ja rakenna-tehtävät ovat helppoja ja osin saman asian toistoa (rakenna on laskettu itse kaavasta) — tee rakenna valinnaiseksi tai yhdistä taulukkoon; tunti riittää vasta silloin kevyesti.
-5. inquiry.json (prior) — Teho (luku *Teho*) puuttuu pohjatiedoista, vaikka tarkistus-1:n palaute viittaa siihen ja tehtävä L3-03 käyttää sitä; virhe-tehtävän vastausvaihtoehto "koska puu on raskasta" on turhan koominen — lisää pohjatieto, vaihda houkuttelevampi väärä perustelu.
+1. inquiry.json (ennuste-2) — ennuste-1:n palaute antaa jo puun 15 MJ/kg, joten ennuste-2 (suklaa vs. puu) on osin laskettavissa ennen todistetta; ennustus on silti perusteltavissa ravinto vs. polttoaine -vastakohdalla — jos tunti käy ahtaaksi, tee ennuste-2 valinnaiseksi tai poista luvut ennuste-1:n palautteesta.
+2. inquiry.json (rakenna) — taulukko on laskettu itse kaavasta (vahvistaa aritmetiikan, ei fysiikkaa); jo valinnainen, pidä se niin. Jos se jää pois, "suoraan verrannollinen" -perustelu on vain Ydinajatuksen kappaleessa.
+3. lesson.md (Ydinajatus, 1280 px) — kuva 1 on kahden kappaleen korkuisen tekstin vieressä ja jättää oikealle tyhjää tilaa kappaleen 2 kohdalla; harkitse kuvan siirtoa ensimmäisen kappaleen jälkeen alle kapeammaksi (mallina fy3-6). Ei estä oppimista.
+4. lesson.md (Kaava, Lähteet) — lähdekappale on tiheä (kuusi lähdettä, GJ/t ja MJ/kg sekaisin); opiskelijalle riittäisi taulukon alle "Lähteet: Tilastokeskus (2017), IPCC (2006), pyöristetty", yksityiskohdat voi viedä suljetun laatikon taakse.
+5. lesson.md (Yleinen virhekäsitys) — viimeinen irrallinen lause hiilidioksidista on kappale ilman omaa ajatusta; siirrä viimeiseksi luetelmakohdaksi tai poista (ympäristö kuuluu seuraavaan lukuun).
 
 ## Checked
-- Polku: hook, kertaus, kaksi ennustetta, taulukkoaineisto, johtopäätös, teoria, esimerkki, siirto: seurattavissa fy2-2:n pohjalta; avauskysymykseen vastataan (johtopäätös, pohdi).
-- Ei simulaatiota, ja se sopii aiheeseen: aineisto ja taulukot ovat toiminnan kohde, ei koristetta.
-- Vaihtoehtojen palautteet korjaavat virhekäsityksen (lämpötila, kesto, yksikkö) eivätkä toista vastausta; ennen sitoutumista mitään ei paljasteta.
-- Kuvat 1-3 (390 ja 1280 px): tunnistettavia, selkeitä, LaTeX-nimiöt, väri ei ainoa koodaus (arvot kirjoitettu pylväiden viereen).
-- Esimerkki: seitsemän vaihetta, yksi askel kussakin; ratkaisu symbolisesti ensin, yksikkömuunnos erikseen; ei toista tehtäviä.
-- Sivu 390 ja 1280 px: ei leikkautumista, yksi lukupalsta, taulukot mahtuvat.
-- Siirto, tarkistukset, poistumislippu (kolme korttia, ydinajatus) ja niiden ratkaisut seurattavissa; tolerancet sopivat pyöristykseen.
-- Suomi: termit lämpöarvo, polttoaine, kemiallinen energia glossaarin mukaan; luvut nimetty luvun nimellä.
-- Työmäärä: ydinpolku mahtuu tuntiin, kun valinnaiset jätetään (ks. Polish 4).
+- Kierroksen 1 huomautukset korjattu: 129 MJ ≈ 130 MJ, "tehollinen lämpöarvo" selitetty, virhekäsitykset luetelmana, Teho pohjatiedoissa.
+- Polku: hook, ennusteet, taulukkoaineisto, johtopäätös, teoria, esimerkki, siirto; seurattavissa fy2-2:n pohjalta, avauskysymykseen vastataan.
+- Ei simulaatiota, ja se sopii aiheeseen: taulukot ja pakkausmerkintä ovat toiminnan kohde.
+- Palautteet korjaavat virhekäsityksen (lämpötila, kesto, yksikkö); ennen sitoutumista mitään ei paljasteta.
+- Kuvat 1-3 (390 ja 1280 px): tunnistettavia, LaTeX-nimiöt, arvot pylväiden vieressä, väri ei ainoa koodaus, kuva 2 mittakaavassa.
+- Esimerkki: seitsemän vaihetta, yksi askel kussakin, symbolit ennen lukuja, yksikkömuunnos erikseen.
+- Siirto ja tarkistukset: ratkaisut seurattavissa, tolerancet sopivat pyöristykseen; poistumislippu testaa ydinajatuksen.
+- Suomi: glossaarin termit, luvut nimetty luvun nimellä, desimaalipilkku, LaTeX yksiköissä.
+- Työmäärä: ydinpolku mahtuu tuntiin valinnaiset pois jätettynä.

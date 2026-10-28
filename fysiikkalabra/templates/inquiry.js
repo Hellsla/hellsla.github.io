@@ -24,6 +24,14 @@
     const a = Math.abs(x), s = a >= 100 ? x.toFixed(0) : a >= 10 ? x.toFixed(1) : a >= 1 ? x.toFixed(2) : x.toPrecision(3);
     return s.replace('.', (L10N.format || {}).decimal || ',').replace('-', '−');
   };
+  // a value with its unit as maths (teacher 2026-10-28, "kaikki LaTeXilla"): 1,0 s -> $1{,}0\,\text{s}$
+  const fiTex = (x, u) => {
+    if (typeof x !== 'number' || !Number.isFinite(x)) return String(x);
+    const n = fi(x).replace(/,/g, '{,}').replace('−', '-');
+    const unitTex = u ? '\\,' + (u === '%' ? '\\%' : '\\text{' + u + '}') : '';
+    return '$' + n + unitTex + '$';
+  };
+  const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
 
@@ -130,7 +138,7 @@
     const start = ex.querySelector('.exp-start'), rec = ex.querySelector('.exp-record'), reset = ex.querySelector('.exp-reset');
     const tbody = ex.querySelector('tbody'), status = ex.querySelector('.exp-status'), question = ex.querySelector('.exp-question');
     let rows = [], armed = false;
-    const say = (t) => { status.textContent = t; };
+    const say = (t) => { status.textContent = t; if (t.includes('$')) typeset(status); };
     [start, rec].forEach((b) => { b.disabled = true; });
     if (question) question.hidden = true;
     const announce = () => {
@@ -139,14 +147,16 @@
       if (question) question.hidden = rows.length < min;
     };
     whenAdapter((A) => {
-      const unit = (k) => (A && A.params && A.params[k] && A.params[k].unit ? ' ' + A.params[k].unit : '');
+      const unit = (k) => (A && A.params && A.params[k] && A.params[k].unit ? A.params[k].unit : '');
       const render = () => {
         tbody.innerHTML = '';
         rows.forEach((r) => {
           const tr = document.createElement('tr');
-          tr.innerHTML = `<td>${fi(r.vary)}${unit(vary)}</td>` + measure.map((k) => `<td>${fi(r[k])}${unit(k)}</td>`).join('');
+          const td = (x, u) => `<td data-plain="${fi(x)}${u ? ' ' + u : ''}">${fiTex(x, u)}</td>`;   // plain text for the copied notes
+          tr.innerHTML = td(r.vary, unit(vary)) + measure.map((k) => td(r[k], unit(k))).join('');
           tbody.appendChild(tr);
         });
+        typeset(tbody);
       };
       if (!A) {
         say(msg('exp_no_sim'));
@@ -212,7 +222,7 @@
     const act = document.getElementById(eid), tb = act && act.querySelector('table.exp-table');
     if (!tb) return '';
     let cols = []; try { cols = JSON.parse(tb.dataset.cols || '[]'); } catch (e) { cols = []; }
-    const rows = [...tb.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map((td) => td.textContent.trim()).join('\t'));
+    const rows = [...tb.querySelectorAll('tbody tr')].map((tr) => [...tr.children].map((td) => (td.dataset.plain || td.textContent).trim()).join('\t'));
     const title = act.querySelector('h3')?.textContent.trim() || eid;
     return [title, cols.join('\t'), ...(rows.length ? rows : [msg('copy_no_rows')])].join('\n');
   };
