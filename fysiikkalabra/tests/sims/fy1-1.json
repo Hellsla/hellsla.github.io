@@ -365,10 +365,10 @@
   "note": "Proxima Centauri: its size label is 4{,}0\\cdot10^{16}\\,\\text{m}"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Proxima Centauri}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{etäisyys Proxima Centauriin}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
-  "note": "Proxima Centauri: its name label"
+  "note": "Proxima Centauri: its label names the distance (physics audit wording)"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(21.6);",
