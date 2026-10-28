@@ -1,0 +1,20 @@
+{
+  "id": "fy1-1",
+  "course": "FY1",
+  "title": "Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet",
+  "goals": [
+    "LOPS FY1: tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
+    "LOPS FY1: tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "fysiikka",
+    "malli",
+    "kymmenpotenssi",
+    "suuruusluokka",
+    "valovuosi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

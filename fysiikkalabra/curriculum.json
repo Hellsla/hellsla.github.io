@@ -31,6 +31,7 @@
       "Globaali- ja kulttuuriosaaminen",
       "Monitieteinen ja luova osaaminen"
     ],
+    "initialized": "2026-10-27",
     "lessons": [
       {
         "id": "fy1-1",
@@ -40,12 +41,13 @@
           "LOPS FY1: tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin"
         ],
         "prerequisites": [],
-        "sim": false,
+        "sim": true,
         "glossary": [
           "fysiikka",
           "malli",
           "kymmenpotenssi",
-          "suuruusluokka"
+          "suuruusluokka",
+          "valovuosi"
         ]
       },
       {
@@ -58,13 +60,14 @@
         "prerequisites": [
           "fy1-1"
         ],
-        "sim": false,
+        "sim": true,
         "glossary": [
           "suure",
           "yksikkö",
           "SI-järjestelmä",
           "etuliite",
-          "merkitsevä numero"
+          "merkitsevä numero",
+          "astronominen yksikkö"
         ]
       },
       {
@@ -180,6 +183,11 @@
           "raportti"
         ]
       }
+    ],
+    "scope_notes": [
+      "FY1 is the first course: no prior physics beyond comprehensive school. Motion stays at s = vt (and s = s0 + vt) and v = gt as linear models; forces, Newton's laws, energy and vectors are FY2/FY4.",
+      "Teacher's brief 2026-10-27 (Lauri): interactive scale simulations. fy1-1 has a 'Scale of the Universe' style zoom from the Planck length (about 1,6·10^-35 m) to the observable universe (diameter about 8,8·10^26 m), one power of ten at a time; fy1-2 has an 'If the Moon were only 1 pixel' style scrollable solar system to true scale, with Voyager 2 on it.",
+      "Voyager 2 data (teacher's brief 2026-10-27): distance, speed and one-way signal time computed from a chosen date with the uniform-motion model d = d0 + v(t - t0) from source data: heliopause crossing 2018-11-05 at 119,7 AU from the Sun (NASA/JPL), heliocentric speed 15,341 km/s (JPL Voyager mission status); 1 AU = 149 597 870,7 km, c = 299 792 458 m/s. Label the values as model values with their source (source: model); the model gives about 143 AU for February 2026, matching JPL's 143,05 AU. fy1-5 uses Voyager 2 as an example of s = s0 + vt."
     ]
   },
   "FY2": {

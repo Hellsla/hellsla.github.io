@@ -1,0 +1,192 @@
+[
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')].map(x=>x.value), s=document.querySelector('#sim-root select'), c=document.querySelector('#sim-root input[type=checkbox]'); const S=window.simState; return s.value==='1' && r.join()==='0.3,0' && !c.checked && S.aineisto==='1' && S.n===6 && S.showBest===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: data set 1 (cart), k = 0,30 m/s, b = 0, best line hidden (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 0.758288,
+  "tol": 1e-05,
+  "note": "on load: d for k = 0,30, b = 0 on the cart data = 0,758 m"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')]; return r.length===2 && r[0].min==='0' && r[0].max==='1.2' && r[0].step==='0.01' && r[1].min==='-0.5' && r[1].max==='1' && r[1].step==='0.01' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders; on data set 1 k runs 0–1,2 m/s and b −0,5–1 m in steps of 0,01"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelector('#sim-root select').options].map(x=>x.value+':'+x.textContent).join('|'); return o==='1:1: kärry radalla|2:2: neste mittalasissa|3:3: kahvin jäähtyminen' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "data set select: three data sets"
+ },
+ {
+  "expr": "(() => { const c=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const b=document.querySelectorAll('#sim-root button').length; return c.indexOf('canvas')<c.indexOf('controls') && c.indexOf('controls')<c.indexOf('readout') && b===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; nothing animates, so no button and no speed control"
+ },
+ {
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===4 && l[0].startsWith('Aineisto') && l[1].includes('Kulmakerroin') && l[2].includes('Vakiotermi') && document.querySelector('#sim-root input[type=checkbox]').parentElement.textContent.includes('Näytä laskettu paras suora') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "controls: Aineisto, Kulmakerroin, Vakiotermi and the checkbox Näytä laskettu paras suora"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='aineisto,b,k' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares aineisto, k and b"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('1'); K(0.5); B(0);",
+  "expr": "window.simState.k",
+  "expected": 0.5,
+  "tol": 1e-09,
+  "note": "slider k sets simState.k"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 0.122474,
+  "tol": 1e-05,
+  "note": "k = 0,50, b = 0 on the cart data: deviations 0,1; −0,2; 0,1; 0,1; −0,1; −0,1 m, d = sqrt(0,09/6) = 0,122 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('1'); K(0.5); B(0.25);",
+  "expr": "window.simState.b",
+  "expected": 0.25,
+  "tol": 1e-09,
+  "note": "slider b sets simState.b"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 0.292973,
+  "tol": 1e-05,
+  "note": "k = 0,50, b = 0,25 m: d = 0,285 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('1');",
+  "expr": "window.simState.kBest",
+  "expected": 0.48,
+  "tol": 1e-05,
+  "note": "cart data: least-squares k = 0,480 m/s"
+ },
+ {
+  "expr": "window.simState.bBest",
+  "expected": 0.053333,
+  "tol": 1e-05,
+  "note": "cart data: least-squares b = 0,0533 m"
+ },
+ {
+  "expr": "window.simState.dBest",
+  "expected": 0.116428,
+  "tol": 1e-05,
+  "note": "cart data: smallest possible d = 0,116 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('2');",
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')], S=window.simState; return S.aineisto==='2' && r[0].max==='2' && r[1].max==='150' && r[0].value==='0.4' && r[1].value==='40' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "data set 2: slider ranges become k 0–2 g/ml and b 0–150 g, start values 0,40 and 40"
+ },
+ {
+  "expr": "window.simState.kBest",
+  "expected": 0.786857,
+  "tol": 1e-05,
+  "note": "liquid data: least-squares k = 0,787 g/ml"
+ },
+ {
+  "expr": "window.simState.bBest",
+  "expected": 62.253333,
+  "tol": 0.0001,
+  "note": "liquid data: least-squares b = 62,3 g (the empty glass)"
+ },
+ {
+  "expr": "window.simState.dBest",
+  "expected": 1.134621,
+  "tol": 1e-05,
+  "note": "liquid data: smallest possible d = 1,13 g"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; K(0.8); B(0);",
+  "expr": "window.simState.d",
+  "expected": 61.34547,
+  "tol": 0.0001,
+  "note": "liquid data, k = 0,80 g/ml, b = 0: d = 61,3 g (the line through the origin does not fit)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; B(60);",
+  "expr": "window.simState.d",
+  "expected": 1.807392,
+  "tol": 0.0001,
+  "note": "liquid data, k = 0,80 g/ml, b = 60 g: d = 1,81 g"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('3');",
+  "expr": "window.simState.kBest",
+  "expected": -1.924286,
+  "tol": 1e-05,
+  "note": "coffee data: least-squares k = −1,92 °C/min"
+ },
+ {
+  "expr": "window.simState.dBest",
+  "expected": 5.7885,
+  "tol": 0.0001,
+  "note": "coffee data: even the best line leaves d = 5,8 °C (a curve, not a line)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; K(-1.9); B(80);",
+  "expr": "window.simState.d",
+  "expected": 5.797044,
+  "tol": 0.0001,
+  "note": "coffee data, k = −1,90, b = 80 °C: d = 5,80 °C"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')]; return r[0].min==='-3' && r[0].max==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "data set 3: k runs −3…1 °C/min"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; DS('1'); SB(true);",
+  "expr": "window.simState.showBest ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "checkbox shows the calculated best line"
+ },
+ {
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Laskettu paras suora') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout then lists the best line's k, b and d"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=document.querySelector('#sim-root select'), C=document.querySelector('#sim-root input[type=checkbox]'); const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const DS=(v)=>{S.value=v;ev(S);}; const K=(v)=>{R[0].value=v;ev(R[0]);}; const B=(v)=>{R[1].value=v;ev(R[1]);}; const SB=(on)=>{C.checked=on;ev(C);}; SB(false);",
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Laskettu paras suora') ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "best line hidden again: readout shows only d"
+ },
+ {
+  "expr": "document.querySelector('#sim-root .readout').textContent.includes('Keskimääräinen poikkeama') ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout shows the mean deviation d"
+ }
+]

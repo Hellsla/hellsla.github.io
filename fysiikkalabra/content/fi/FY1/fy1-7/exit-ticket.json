@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Alumiinikappaleen tilavuus on $40\\,\\text{cm}^3$ ja massa $108\\,\\text{g}$. Mikä on alumiinin tiheys yksikössä $\\text{g/cm}^3$?",
+    "a": "$\\rho = \\dfrac{m}{V} = \\dfrac{108\\,\\text{g}}{40\\,\\text{cm}^3} = 2{,}7\\,\\tfrac{\\text{g}}{\\text{cm}^3}$."
+  },
+  {
+    "q": "Kuution tilavuus kaksinkertaistuu, mutta aine pysyy samana. Mitä tapahtuu kuution massalle ja tiheydelle?",
+    "a": "Massa kaksinkertaistuu, koska massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$. Tiheys ei muutu, koska se on aineen ominaisuus ja suhde $m/V$ pysyy samana."
+  },
+  {
+    "q": "Vesipullon tilavuus on $1{,}5\\,\\text{dm}^3$. Kuinka suuri on veden massa ($\\rho = 1000\\,\\text{kg/m}^3$)? Mitä muunnosta tarvitaan?",
+    "a": "Tilavuus muunnetaan kuutiometreiksi: $1{,}5\\,\\text{dm}^3 = 1{,}5 \\cdot 10^{-3}\\,\\text{m}^3$. Silloin $m = \\rho V = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 1{,}5 \\cdot 10^{-3}\\,\\text{m}^3 = 1{,}5\\,\\text{kg}$."
+  }
+]

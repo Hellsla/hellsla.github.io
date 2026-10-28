@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "contribution": "Mittauspisteistä tulee kuvaaja ja lineaarinen malli: opiskelija sovittaa suoran, määrittää sen kulmakertoimen ja vakiotermin kaukana toisistaan olevista suoran pisteistä, tulkitsee ne fysikaalisesti ja tunnistaa, milloin suora ei sovi.",
+  "learn": [
+    "Osaat esittää mittaukset kuvaajana ja sovittaa pisteisiin suoran.",
+    "Osaat määrittää suoran kulmakertoimen ja vakiotermin ja kertoa, mitä ne tarkoittavat.",
+    "Tunnistat, milloin lineaarinen malli ei sovi mittauksiin."
+  ],
+  "prior": [
+    "Jokaiseen mittaukseen kuuluu satunnaisvirhe, joka hajottaa tulokset molempiin suuntiin (luku *Mittaaminen ja mittauksen luotettavuus*)",
+    "Suure ilmoitetaan arvona ja yksikkönä, ja kuvaajan akselille kirjoitetaan suure ja sen yksikkö (luku *Suureet, yksiköt ja SI-järjestelmä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kärryn paikka mitataan radalta joka sekunti, ja tulokset piirretään kuvaajaan. Pisteet asettuvat suunnilleen suoralle, mutta mikään suora ei kulje niistä kaikkien kautta. Kaksi oppilasta piirtää eri suorat, ja kumpikin väittää, että hänen suoransa kertoo kärryn vauhdin.",
+      "question": "Miten päätetään, mikä suora kuvaa mittauksia parhaiten, ja mitä suoran kulmakerroin kertoo?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: mittausvirheet",
+      "prompt": "Kärryn paikka mitataan samalla mittanauhalla monta kertaa samasta kohdasta. Tulokset vaihtelevat hieman, välillä suuntaan ja välillä toiseen. Mikä virhe aiheuttaa vaihtelun?",
+      "choices": [
+        {
+          "text": "Systemaattinen virhe, koska mittanauha on väärin kalibroitu.",
+          "feedback": "Systemaattinen virhe siirtäisi kaikkia tuloksia samaan suuntaan (luku *Mittaaminen ja mittauksen luotettavuus*). Nyt tulokset vaihtelevat molempiin suuntiin, ja se on satunnaisvirheen tunnusmerkki."
+        },
+        {
+          "text": "Satunnaisvirhe: lukeminen ja mittanauhan asettaminen vaihtelevat hieman joka kerralla.",
+          "correct": true,
+          "feedback": "Oikein. Satunnaisvirhe hajottaa tulokset molempiin suuntiin keskiarvon ympärille (luku *Mittaaminen ja mittauksen luotettavuus*). Samasta syystä mittauspisteet eivät osu täsmälleen suoralle, ja siksi sovitamme niihin suoran."
+        },
+        {
+          "text": "Moka: mittaaja on virheellisesti laskenut jonkin tuloksen.",
+          "feedback": "Moka olisi yksittäinen selvästi väärä tulos. Vaihtelu kuuluu jokaiseen mittaukseen, vaikka kukaan ei tekisi mokia (luku *Mittaaminen ja mittauksen luotettavuus*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: mikä viiva kuvaa kärryä",
+      "prompt": "Kärryn paikka $s$ mitattiin radan alusta lukien ajan $t$ funktiona kuutena hetkenä $t = 1\\,\\text{s},\\ 2\\,\\text{s},\\ \\dots,\\ 6\\,\\text{s}$. Paikat olivat $0{,}6$; $0{,}8$; $1{,}6$; $2{,}1$; $2{,}4$ ja $2{,}9\\,\\text{m}$. Kärry lähti liikkeelle paikasta $s = 0$ hetkellä $t = 0$. Mikä viiva kuvaa kärryn liikettä parhaiten?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Murtoviiva, joka yhdistää peräkkäiset mittauspisteet ja kulkee siten jokaisen mittauspisteen kautta.",
+          "feedback": "Esimerkkiaineisto kumoaa tämän. Murtoviivan osat nousisivat kulmakertoimilla $0{,}2$, $0{,}8$, $0{,}5$, $0{,}3$ ja $0{,}5\\,\\text{m/s}$, ikään kuin kärry vaihtaisi vauhtiaan jatkuvasti. Viiva seuraa myös satunnaisvirheitä. Kokeessa suora, jonka kulmakerroin on noin $0{,}5\\,\\text{m/s}$, sopii yhtä hyvin kaikkiin pisteisiin."
+        },
+        {
+          "text": "Origon kautta kulkeva suora, joka kulkee lähellä kaikkia pisteitä ja jonka molemmin puolin on pisteitä.",
+          "correct": true,
+          "feedback": "Esimerkkiaineisto tukee tätä: keskimääräinen poikkeama $d$ on pienin, kun kulmakerroin on noin $0{,}5\\,\\text{m/s}$ ($d \\approx 0{,}12\\,\\text{m}$), ja pisteitä on suoran molemmin puolin. Suora ei kulje yhdenkään pisteen kautta, mutta se kuvaa liikkeen yleistä suuntaa."
+        },
+        {
+          "text": "Origon ja ensimmäisen mittauspisteen $(1\\,\\text{s};\\ 0{,}6\\,\\text{m})$ kautta kulkeva suora.",
+          "feedback": "Esimerkkiaineisto kumoaa tämän. Suoran kulmakerroin olisi $0{,}60\\,\\text{m/s}$, ja keskimääräinen poikkeama kasvaisi arvoon $0{,}44\\,\\text{m}$, noin nelinkertaiseksi parhaaseen suoraan verrattuna ($0{,}12\\,\\text{m}$). Yksi piste sisältää oman virheensä, eikä sen pitäisi ratkaista suoraa yksin."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: mihin suora osuu pystyakselilla",
+      "prompt": "Mittalasiin kaadettiin nestettä, ja mittalasin ja nesteen yhteismassa $m$ punnittiin nesteen tilavuuden $V$ funktiona. Tilavuuksilla $20$, $40$, $60$, $80$, $100$ ja $120\\,\\text{ml}$ yhteismassat olivat $78{,}5$; $92{,}3$; $110{,}9$; $124{,}0$; $142{,}2$ ja $156{,}1\\,\\text{g}$. Pisteisiin sovitetaan suora, ja sitä jatketaan vasemmalle pystyakselille, jossa $V = 0$. Mihin kohtaan suora osuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Kohtaan $m = 0\\,\\text{g}$, koska ilman nestettä ei ole massaa.",
+          "feedback": "Esimerkkiaineisto kumoaa tämän. Punnittiin lasin ja nesteen yhteismassa, ja tyhjäkin lasi painaa. Jos suora pakotetaan origon kautta kulmakertoimella $0{,}80\\,\\text{g/ml}$, keskimääräinen poikkeama on noin $61\\,\\text{g}$, kun se oikealla vakiotermillä on vain noin $1\\,\\text{g}$."
+        },
+        {
+          "text": "Tyhjän mittalasin massan kohdalle, koska kun nestettä on nolla, jäljelle jää vain lasi.",
+          "correct": true,
+          "feedback": "Esimerkkiaineisto tukee tätä: poikkeama $d$ on pienin, kun vakiotermi on noin $61\\,\\text{g}$ (noin $1\\,\\text{g}$), ja se on tyhjän lasin massa. Vakiotermi $b$ on $y$:n arvo silloin, kun $x = 0$."
+        },
+        {
+          "text": "Ensimmäisen mittauspisteen kohdalle, noin $78{,}5\\,\\text{g}$.",
+          "feedback": "Esimerkkiaineisto kumoaa tämän. Ensimmäisessä pisteessä on jo $20\\,\\text{ml}$ nestettä. Suora jatkuu vasemmalle, ja sen massa pienenee nestettä vähennettäessä noin $0{,}79\\,\\text{g}$ millilitraa kohti, joten $V = 0$ kohdassa massa on noin $78{,}5\\,\\text{g} - 20\\,\\text{ml} \\cdot 0{,}79\\,\\text{g/ml} \\approx 63\\,\\text{g}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Säädä suoraa niin, että se kulkee pisteiden joukon keskeltä, ja seuraa keskimääräistä poikkeamaa $d$.",
+      "howto": "Valitse aineisto. Säädä kulmakerrointa $k$ ja vakiotermiä $b$ liukusäätimillä, kunnes oranssi suora kulkee pisteiden joukon keskeltä. Punaiset janat näyttävät kunkin pisteen poikkeaman suorasta, ja keskimääräinen poikkeama $d$ päivittyy lukemiin. Valintaruudulla voit piirtää laskennan antaman parhaan suoran katkoviivalla ja verrata sitä omaasi.",
+      "model": "Aineistot ovat esimerkkiaineistoa, eivät oikeita mittauksia, ja niiden arvot ovat mallin arvoja. Malli olettaa, että $x$-arvot ovat tarkkoja ja satunnaisvirhe on vain $y$-arvoissa, ja että suureiden riippuvuus on suora $y = kx + b$. Aineistossa 3 riippuvuus on kaareva, joten suora kuvaa sitä vain karkeasti.",
+      "calc": "Kunkin pisteen poikkeama suorasta on $e_i = y_i - (kx_i + b)$. Keskimääräinen poikkeama on neliöiden keskiarvon neliöjuuri:\n\n$$d = \\sqrt{\\frac{e_1^2 + e_2^2 + \\dots + e_N^2}{N}}$$\n\nse on pieni, kun suora on lähellä kaikkia pisteitä. Laskettu paras suora on se, jolla $d$ on pienin mahdollinen, eli pienimmän neliösumman suora:\n\n$$\\begin{aligned} k &= \\frac{S_{xy}}{S_{xx}} \\\\ b &= \\bar{y} - k\\bar{x} \\end{aligned}$$\n\nmissä $\\bar{x}$ ja $\\bar{y}$ ovat keskiarvoja, $S_{xy}$ on tulojen $(x_i - \\bar{x})(y_i - \\bar{y})$ summa ja $S_{xx}$ neliöiden $(x_i - \\bar{x})^2$ summa. Tätä laskua ei tarvitse osata: lukiossa suora sovitetaan silmällä tai laskimen avulla."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: etsi kulmakerroin",
+      "intro": "Testaa ennuste 1. Aineisto on kärryn mittaus ja suora kulkee origon kautta ($b = 0$). Muuta vain kulmakerrointa $k$ ja kirjaa vähintään kolme mittausta: yksi, jossa suora on mielestäsi parhaimmillaan, sekä sen molemmin puolin. Katso samalla, kuinka punaiset janat lyhenevät ja pitenevät.",
+      "initial": {
+        "aineisto": "1",
+        "k": 0.3,
+        "b": 0
+      },
+      "locked": [
+        "aineisto",
+        "b"
+      ],
+      "vary": "k",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "kulmakerroin k",
+        "b": "vakiotermi b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "m/s",
+        "b": "m"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (m)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: etsi vakiotermi",
+      "intro": "Testaa ennuste 2. Aineisto on mittalasin ja nesteen yhteismassa. Kulmakerroin on lukittu arvoon $0{,}80\\,\\text{g/ml}$, ja suora lähtee origosta ($b = 0$). Muuta vain vakiotermiä $b$ ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$.",
+      "initial": {
+        "aineisto": "2",
+        "k": 0.8,
+        "b": 0
+      },
+      "locked": [
+        "aineisto",
+        "k"
+      ],
+      "vary": "b",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "kulmakerroin k",
+        "b": "vakiotermi b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "g/ml",
+        "b": "g"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (g)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: kahvi jäähtyy",
+      "intro": "Tässä aineistossa kahvikupin lämpötila on mitattu ajan funktiona. Vakiotermi on lukittu arvoon $80\\,{}^\\circ\\text{C}$. Muuta kulmakerrointa ja kirjaa vähintään kolme mittausta, joiden joukossa on pienin löytämäsi poikkeama $d$. Laita myös valintaruutu päälle ja katso, missä kohdissa pisteet ovat parhaan suoran ylä- ja alapuolella.",
+      "initial": {
+        "aineisto": "3",
+        "k": -1,
+        "b": 80
+      },
+      "locked": [
+        "aineisto",
+        "b"
+      ],
+      "vary": "k",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "kulmakerroin k",
+        "b": "vakiotermi b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "°C/min",
+        "b": "°C"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (°C)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Pienin saavutettu poikkeama on noin $5{,}8\\,{}^\\circ\\text{C}$, kun lämpötila muuttuu mittauksissa $60\\,{}^\\circ\\text{C}$. Sopiiko suora tähän aineistoon? Mistä päättelet?",
+        "choices": [
+          {
+            "text": "Sopii, koska poikkeama $5{,}8\\,{}^\\circ\\text{C}$ on pieni verrattuna $60\\,{}^\\circ\\text{C}$:n muutokseen.",
+            "feedback": "Poikkeaman koko ei yksin ratkaise sopivuutta. Ratkaisevaa on poikkeamien suunta: jos pisteet ovat suoran yläpuolella kuvaajan päissä ja alapuolella keskellä, poikkeamissa on kuvio, eikä suora sovi."
+          },
+          {
+            "text": "Ei sovi: pisteet ovat suoran yläpuolella päissä ja alapuolella keskellä.",
+            "correct": true,
+            "feedback": "Oikein. Satunnaisvirheessä poikkeamat vaihtelisivat molempiin suuntiin sattumanvaraisesti. Kun ne muodostavat kuvion (päissä ylös, keskellä alas), riippuvuus on kaareva eikä lineaarinen malli sovi."
+          },
+          {
+            "text": "Ei sovi, koska mikään suora ei kulje kaikkien pisteiden kautta, vaikka mittaukset olisivat tarkkoja.",
+            "feedback": "Missään aineistossa suora ei kulje kaikkien pisteiden kautta, koska mittauksissa on aina satunnaisvirhettä. Sopivuuden ratkaisee se, ovatko poikkeamat satunnaisia vai muodostavatko ne kuvion."
+          },
+          {
+            "text": "Sopii, koska kaikki poikkeamat ovat suunnilleen yhtä pitkiä ja pisteet ovat lähellä suoraa.",
+            "feedback": "Pituudet vaihtelevat, ja poikkeaman pituus ei kerro mallin sopivuutta. Tarkista poikkeamien suunta: päissä ylöspäin ja keskellä alaspäin tarkoittaa, että riippuvuus on kaareva."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten löytyy sopiva suora",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten löysit suoran, joka sopii pisteisiin parhaiten? Mitä kulmakertoimelle ja vakiotermille tapahtui? Mitä ne kertovat kärrystä ja mittalasista?",
+      "model": "Kokeessa 1 keskimääräinen poikkeama oli pienin, kun kulmakerroin oli noin $0{,}5\\,\\text{m/s}$ ($d \\approx 0{,}12\\,\\text{m}$), ja se kasvoi molempiin suuntiin: $0{,}76\\,\\text{m}$ kulmakertoimella $0{,}30\\,\\text{m/s}$ ja $0{,}44\\,\\text{m}$ kulmakertoimella $0{,}60\\,\\text{m/s}$. Kulmakerroin kertoo, että kärry liikkui noin $0{,}5\\,\\text{m}$ jokaisessa sekunnissa. Kokeessa 2 poikkeama oli noin $61\\,\\text{g}$, kun $b = 0$, ja pieneni pienimpään arvoonsa noin $1\\,\\text{g}$, kun $b \\approx 61\\,\\text{g}$. Vakiotermi on siis tyhjän mittalasin massa, koska kun nestettä on nolla, jäljelle jää lasi. Suora ei kulkenut yhdenkään pisteen kautta, mutta pisteitä oli sen molemmin puolin. Arvot ovat esimerkkiaineiston mallin laskemia.",
+      "criteria": [
+        "Kerroin, millä kulmakertoimella ja vakiotermillä $d$ oli pienin, ja annoin luvut.",
+        "Selitin, että poikkeama kasvaa, kun suora siirtyy pois pisteiden joukon keskeltä.",
+        "Tulkitsin kulmakertoimen (nopeus) ja vakiotermin (tyhjän lasin massa) fysikaalisesti.",
+        "Totesin, että suora ei kulje jokaisen pisteen kautta mutta sovitus on silti hyvä."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi esimerkkiaineiston lukemiin. Palaa sitten alun kysymykseen: miten päätetään, mikä suora kuvaa mittauksia parhaiten, ja mitä sen kulmakerroin kertoo? Mainitse myös, miksi eri oppilaiden suorat voivat olla hieman erilaiset.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija määrittää kärryn kuvaajan kulmakertoimen mittauspisteistä $(1{,}0\\,\\text{s};\\ 0{,}6\\,\\text{m})$ ja $(2{,}0\\,\\text{s};\\ 0{,}8\\,\\text{m})$:\n\n$$k = \\frac{0{,}8\\,\\text{m} - 0{,}6\\,\\text{m}}{2{,}0\\,\\text{s} - 1{,}0\\,\\text{s}} = 0{,}2\\,\\text{m/s}$$\n\nMuut mittauspisteet kuitenkin antavat noin $0{,}5\\,\\text{m/s}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Kulmakerroin on pitänyt laskea jakamalla aikaero matkaerolla, eli laskemalla $\\Delta t / \\Delta s$ eikä $\\Delta s / \\Delta t$.",
+          "feedback": "Kulmakerroin on $\\Delta y / \\Delta x$ eli matkan muutos jaettuna ajan muutoksella. Käänteinen suhde antaisi yksikön s/m, joka ei ole nopeus."
+        },
+        {
+          "text": "Pisteet on luettu mittauksista eikä sovitetulta suoralta, ja ne ovat liian lähellä toisiaan.",
+          "correct": true,
+          "feedback": "Oikein. Pisteet pitää lukea sovitetulta suoralta kaukana toisistaan, esimerkiksi $(0\\,\\text{s};\\ 0\\,\\text{m})$ ja $(6{,}0\\,\\text{s};\\ 3{,}0\\,\\text{m})$, jolloin $k = 0{,}50\\,\\text{m/s}$. Kahden lähekkäisen mittauspisteen erotukseen vaikuttaa kummankin pisteen satunnaisvirhe, eikä erotus ole suuri virheeseen verrattuna. Peräkkäisten mittauspisteiden väliltä laskettuna kulmakertoimet olisivat $0{,}2$, $0{,}8$, $0{,}5$, $0{,}3$ ja $0{,}5\\,\\text{m/s}$. Kaukana olevat pisteet sovitetulta suoralta antavat luotettavan arvon."
+        },
+        {
+          "text": "Laskussa ei ole virhettä: kulmakerroin saadaan aina kahdesta peräkkäisestä mittauspisteestä, koska ne ovat lähimpänä toisiaan.",
+          "feedback": "Tulos $0{,}2\\,\\text{m/s}$ eroaa muista väleistä, joten yksi pisteväli ei kerro koko liikkeestä. Peräkkäisistä pareista saataisiin $0{,}2$, $0{,}8$, $0{,}5$, $0{,}3$ ja $0{,}5\\,\\text{m/s}$, ja nämä satunnaisvirheen hajottamat arvot ovat kaikki epäluotettavia."
+        },
+        {
+          "text": "Kulmakerroin olisi pitänyt laskea yhdestä pisteestä jakamalla $s$ ajalla $t$, esimerkiksi $0{,}6\\,\\text{m} / 1{,}0\\,\\text{s}$.",
+          "feedback": "Yksi piste antaa $0{,}60\\,\\text{m/s}$ (1 s), $0{,}40\\,\\text{m/s}$ (2 s) ja $0{,}53\\,\\text{m/s}$ (3 s): jokaisen oman virheen mukainen arvo. Lisäksi $s/t$ antaa kulmakertoimen vain, jos suora kulkee origon kautta. Suoralta luetut kaksi kaukaista pistettä ovat luotettavampi tapa."
+        }
+      ]
+    },
+    {
+      "id": "kuvaajasta",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Lue kulmakerroin kuvaajasta",
+      "source": "simulated",
+      "text": "Kuvaajassa on pyöräilijän matka $s$ ajan $t$ funktiona. Mittauspisteisiin sovitettu suora kulkee ruudukon risteyskohtien kautta, ja kaksi niistä on merkitty pisteinä $P_1$ ja $P_2$. Koordinaatteja ei ole kirjoitettu näkyviin: lue ne akseleilta.\n\n<svg viewBox=\"0 0 600 350\" role=\"img\" aria-label=\"Kuvaaja mittakaavassa: pyöräilijän matka s ajan t funktiona. Suora leikkaa pystyakselin kohdassa 5 km ja kulkee ruudukon risteyskohtien (1,0 h; 20 km) ja (3,0 h; 50 km) kautta. Pisteet P₁ ja P₂ on merkitty suoralle.\" style=\"max-width:100%;font-size:24px\">\n  <line x1=\"203\" y1=\"300\" x2=\"203\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"309.5\" y1=\"300\" x2=\"309.5\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"416.5\" y1=\"300\" x2=\"416.5\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"260\" x2=\"470\" y2=\"260\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"220\" x2=\"470\" y2=\"220\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"180\" x2=\"470\" y2=\"180\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"140\" x2=\"470\" y2=\"140\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"100\" x2=\"470\" y2=\"100\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"95\" y1=\"300\" x2=\"484\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M496,300 L483,306 L483,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"96\" y1=\"301\" x2=\"96\" y2=\"46\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M96,34 L102,47 L90,47 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"203\" y1=\"300\" x2=\"203\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"193\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$1$</div></foreignObject>\n  <line x1=\"309.5\" y1=\"300\" x2=\"309.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"299.5\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$2$</div></foreignObject>\n  <line x1=\"416.5\" y1=\"300\" x2=\"416.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"406.5\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$3$</div></foreignObject>\n  <line x1=\"89\" y1=\"260\" x2=\"96\" y2=\"260\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"245.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$10$</div></foreignObject>\n  <line x1=\"89\" y1=\"220\" x2=\"96\" y2=\"220\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"205.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$20$</div></foreignObject>\n  <line x1=\"89\" y1=\"180\" x2=\"96\" y2=\"180\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"165.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$30$</div></foreignObject>\n  <line x1=\"89\" y1=\"140\" x2=\"96\" y2=\"140\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"125.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$40$</div></foreignObject>\n  <line x1=\"89\" y1=\"100\" x2=\"96\" y2=\"100\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"85.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$50$</div></foreignObject>\n  <foreignObject x=\"66\" y=\"305.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$0$</div></foreignObject>\n  <foreignObject x=\"502\" y=\"285.5\" width=\"62\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$t\\ (\\text{h})$</div></foreignObject>\n  <foreignObject x=\"86\" y=\"3.5\" width=\"74\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$s\\ (\\text{km})$</div></foreignObject>\n  <polyline points=\"96,280 470,70\" fill=\"none\" stroke=\"#1f2933\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"203\" cy=\"220\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"416.5\" cy=\"100\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <foreignObject x=\"219\" y=\"235.5\" width=\"50\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2\">$P_1$</div></foreignObject>\n  <foreignObject x=\"350.5\" y=\"115.5\" width=\"50\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2\">$P_2$</div></foreignObject>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Lue pisteiden $P_1$ ja $P_2$ koordinaatit kuvaajasta ja laske suoran kulmakerroin. Vastaa yksikössä km/h.",
+        "answer": 15,
+        "unit": "km/h",
+        "tolerance": 0.02,
+        "hints": [
+          "Mistä kohdasta akselilta luet pisteen koordinaatin? Kulje pisteestä ruudukkoa pitkin akselille.",
+          "Kulmakerroin on $\\Delta s / \\Delta t$: pystysuuntainen muutos jaettuna vaakasuuntaisella muutoksella.",
+          "Kun $P_1$ on kohdassa $t = 1{,}0\\,\\text{h}$ ja $P_2$ kohdassa $t = 3{,}0\\,\\text{h}$, aikaväli on $\\Delta t = 2{,}0\\,\\text{h}$. Lue vastaavat matkat pystyakselilta."
+        ],
+        "mistakes": [
+          {
+            "value": 16.7,
+            "feedback": "Jaoit pisteen $P_2$ matkan sen ajalla ($50/3{,}0$), mikä kelpaa vain, jos suora kulkee origon kautta. Tämä suora leikkaa pystyakselin kohdassa $5\\,\\text{km}$, joten lasketaan muutokset: $\\Delta s / \\Delta t$."
+          },
+          {
+            "value": 0.067,
+            "feedback": "Jaoit aikaeron matkaerolla ($\\Delta t / \\Delta s$). Kulmakerroin on pystysuuntainen muutos jaettuna vaakasuuntaisella, eli $\\Delta s / \\Delta t$, ja sen yksikkö on km/h."
+          }
+        ],
+        "solution": "**Annettu:** kuvaajan suora, jolla ovat merkityt pisteet $P_1$ ja $P_2$; akseleilla matka $s$ (km) ja aika $t$ (h)\n\n**Kysytty:** suoran kulmakerroin $k$ eli pyöräilijän nopeus yksikössä km/h\n\n**Periaate:** Matka-aikakuvaajan suoran kulmakerroin on nopeus, ja se on $\\Delta s / \\Delta t$ millä tahansa kahdella suoran pisteellä. Luetaan kaksi kaukana toisistaan olevaa pistettä sovitetulta suoralta, jolloin lukemavirhe vaikuttaa tulokseen vähän.\n\n**Kuvaajan lukeminen:** Piste $P_1$ on ruudukon risteyksessä, jossa $t_1 = 1{,}0\\,\\text{h}$ ja $s_1 = 20\\,\\text{km}$ (vaaka-akselin luku suoraan alapuolella, pystyakselin luku suoraan vasemmalla). Piste $P_2$ on risteyksessä $t_2 = 3{,}0\\,\\text{h}$ ja $s_2 = 50\\,\\text{km}$. Kulmakerroin lasketaan näistä lukemista.\n\n**Kaava:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina, ja tulos kysytään yksikössä km/h.\n\n**Sijoitus:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2{,}0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Vastaus:** $15\\,\\text{km/h}$, kaksi merkitsevää numeroa, koska ajat on luettu kahden numeron tarkkuudella ($1{,}0\\,\\text{h}$ ja $3{,}0\\,\\text{h}$).\n\n**Järkevyys:** Tarkistus kolmannella pisteellä: kun $t = 2{,}0\\,\\text{h}$, suora on kuvaajassa noin $35\\,\\text{km}$, ja $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2{,}0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. Nopeus $15\\,\\text{km/h}$ on tavallisen pyöräilyn luokkaa."
+      }
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kasvin pituutta $h$ seurattiin vuorokausien $t$ funktiona, ja mittauspisteisiin sovitettu suora kulkee pisteiden $(2{,}0\\,\\text{vrk};\\ 5{,}6\\,\\text{cm})$ ja $(10{,}0\\,\\text{vrk};\\ 12{,}0\\,\\text{cm})$ kautta. Monentenako vuorokautena mittauksen alusta kasvi on suoran mukaan 20 cm pitkä, kun suoraa jatketaan mittausalueen yli? Vastaa vuorokausina.",
+      "answer": 20,
+      "unit": "vrk",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on suoran kulmakerroin ja mitä yksikköä se käyttää? Laske se suoran kahdesta pisteestä.",
+        "Suoran yhtälö on $h = kt + b$. Kun $k$ tunnetaan, vakiotermin $b$ saa yhdestä pisteestä: $b = h_1 - k t_1$.",
+        "$k = \\dfrac{12{,}0 - 5{,}6}{10{,}0 - 2{,}0}\\,\\tfrac{\\text{cm}}{\\text{vrk}} = 0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}}$, $b = 5{,}6\\,\\text{cm} - 0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot 2{,}0\\,\\text{vrk} = 4{,}0\\,\\text{cm}$, ja $t = \\dfrac{h - b}{k}$."
+      ],
+      "mistakes": [
+        {
+          "value": 25,
+          "feedback": "Laskit $t = h/k = 20/0{,}80$ ikään kuin suora kulkisi origon kautta. Suoralla on vakiotermi $b = 4{,}0\\,\\text{cm}$: kasvi oli jo 4,0 cm pitkä mittauksen alussa, joten tarvitaan $t = (h - b)/k$."
+        },
+        {
+          "value": 16,
+          "feedback": "Vähensit vakiotermin ($20 - 4{,}0 = 16\\,\\text{cm}$), mutta et jakanut tulosta kulmakertoimella. Pituuden muutos $16\\,\\text{cm}$ jaetaan kasvuvauhdilla $0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}}$, jolloin saadaan aika."
+        }
+      ],
+      "solution": "**Annettu:** suoran pisteet $(t_1;\\ h_1) = (2{,}0\\,\\text{vrk};\\ 5{,}6\\,\\text{cm})$ ja $(t_2;\\ h_2) = (10{,}0\\,\\text{vrk};\\ 12{,}0\\,\\text{cm})$; pituus $h = 20\\,\\text{cm}$\n\n**Kysytty:** aika $t$, jolla $h = 20\\,\\text{cm}$\n\n**Periaate:** Kasvu on tasaista, joten pituus noudattaa suoraa $h = kt + b$. Kulmakerroin lasketaan suoran kahdesta kaukana toisistaan olevasta pisteestä ja vakiotermi yhdestä pisteestä. Aika ratkaistaan yhtälöstä, kun pituus tunnetaan. Ennuste ulottuu mitatun alueen ulkopuolelle ja olettaa kasvun jatkuvan samanlaisena.\n\n**Kaava:** $k = \\dfrac{h_2 - h_1}{t_2 - t_1}$, $b = h_1 - k t_1$ ja $h = kt + b$, josta\n\n$$t = \\frac{h - b}{k}$$\n\n**Muunnokset:** Ei tarvita: pituudet ovat senttimetreinä ja ajat vuorokausina.\n\n**Sijoitus:** $k = \\dfrac{12{,}0\\,\\text{cm} - 5{,}6\\,\\text{cm}}{10{,}0\\,\\text{vrk} - 2{,}0\\,\\text{vrk}} = 0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}}$, $b = 5{,}6\\,\\text{cm} - 0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}} \\cdot 2{,}0\\,\\text{vrk} = 4{,}0\\,\\text{cm}$ ja $t = \\dfrac{20\\,\\text{cm} - 4{,}0\\,\\text{cm}}{0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}}} = 20\\,\\text{vrk}$\n\n**Vastaus:** $20\\,\\text{vrk}$, kaksi merkitsevää numeroa, koska kulmakerroin $0{,}80\\,\\tfrac{\\text{cm}}{\\text{vrk}}$ on kahden numeron tarkkuudella.\n\n**Järkevyys:** Kasvi on 20 vuorokaudessa kasvanut $20 \\cdot 0{,}80 = 16\\,\\text{cm}$ alkupituudesta $4{,}0\\,\\text{cm}$, eli $4{,}0 + 16 = 20\\,\\text{cm}$. Kasvu ei jatku todellisuudessa samana, joten ennuste on vain arvio.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään suoran yhtälöä tai kulmakertoimen kaavaa suoraan, tason 2 tehtävissä tarvitaan muunnos tai kaksi vaihetta, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kahden suureen mittauspisteisiin sovitettu suora ei kulje origon kautta, vaan leikkaa $y$-akselin kohdassa $b = 3\\,\\text{cm}$. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Suureet ovat suoraan verrannolliset, koska kuvaaja on suora.",
+          "feedback": "Suoraan verrannollisuudessa suora kulkee origon kautta, eli $b = 0$. Suora kuvaaja yksin ei riitä: vakiotermin pitää olla nolla."
+        },
+        {
+          "text": "Kaksinkertainen $x$ ei anna kaksinkertaista $y$:tä, koska $y = kx + b$ ja $b$ ei ole nolla.",
+          "correct": true,
+          "feedback": "Oikein. Jos $x$ kaksinkertaistuu, $kx$ kaksinkertaistuu mutta $b$ pysyy samana, joten $y$ ei kaksinkertaistu. Esimerkiksi taksimatka, jossa on alkumaksu, ei maksa kaksinkertaista kaksinkertaisella matkalla."
+        },
+        {
+          "text": "Kulmakerroin on nolla, koska suora ei lähde origosta.",
+          "feedback": "Kulmakerroin kertoo suoran jyrkkyyden eikä sitä, mistä suora alkaa. Suora voi olla jyrkkä ja silti leikata $y$-akselin kohdassa $b = 3\\,\\text{cm}$. Kulmakerroin on nolla vain vaakasuoralla suoralla."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskenta",
+      "prompt": "Patikkaretken matka $s$ ajan $t$ funktiona noudattaa mittauksiin sovitettua suoraa, joka kulkee pisteiden $(1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$ kautta. Retkeläinen oli siis jo kulkenut matkaa, kun kello käynnistettiin. Monen tunnin kohdalla matka on 25 km? Vastaa tunteina.",
+      "answer": 7.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kysytään: aikaa vai matkaa? Mikä suoran yhtälön suure on tunnettu?",
+        "Suoran yhtälö on $s = kt + b$. Laske ensin kulmakerroin $k$ kahdesta pisteestä ja sitten vakiotermi $b = s_1 - kt_1$.",
+        "$k = \\dfrac{19{,}0 - 7{,}0}{5{,}0 - 1{,}0}\\,\\tfrac{\\text{km}}{\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$ ja $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$; ratkaise $t = (s - b)/k$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.3,
+          "feedback": "Laskit $t = s/k = 25/3{,}0$ ikään kuin suora kulkisi origon kautta. Vakiotermi $b = 4{,}0\\,\\text{km}$ on matka kellon käynnistyshetkellä, joten $t = (25 - 4{,}0)/3{,}0$."
+        },
+        {
+          "value": 5.5,
+          "feedback": "Vaihdoit kulmakertoimen ja vakiotermin: suora $s = 4{,}0\\,t + 3{,}0$ antaisi $t = (25 - 3{,}0)/4{,}0 = 5{,}5\\,\\text{h}$. Oikeassa suorassa kulmakerroin on $3{,}0\\,\\text{km/h}$ (nopeus) ja vakiotermi $4{,}0\\,\\text{km}$ (matka kellon käynnistyshetkellä)."
+        }
+      ],
+      "solution": "**Annettu:** suoran pisteet $(t_1;\\ s_1) = (1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(t_2;\\ s_2) = (5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$; matka $s = 25\\,\\text{km}$\n\n**Kysytty:** aika $t$, jolla $s = 25\\,\\text{km}$\n\n**Periaate:** Matka kasvaa tasaisesti, joten matka noudattaa suoraa $s = kt + b$. Kulmakerroin lasketaan suoran kahdesta pisteestä ja vakiotermi yhdestä, ja aika ratkaistaan suoran yhtälöstä.\n\n**Kaava:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ ja $s = kt + b$, josta\n\n$$t = \\frac{s - b}{k}$$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina.\n\n**Sijoitus:** $k = \\dfrac{19{,}0\\,\\text{km} - 7{,}0\\,\\text{km}}{5{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$ ja $t = \\dfrac{25\\,\\text{km} - 4{,}0\\,\\text{km}}{3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7{,}0\\,\\text{h}$\n\n**Vastaus:** $7{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Järkevyys:** Tarkistus: $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7{,}0\\,\\text{h} + 4{,}0\\,\\text{km} = 25\\,\\text{km}$. Vauhti $3{,}0\\,\\text{km/h}$ on kävelyn luokkaa. Aika on lyhyempi kuin $25 / 3{,}0 \\approx 8{,}3\\,\\text{h}$, koska lähtömatka $4{,}0\\,\\text{km}$ on jo kuljettu."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä, miksi mittauspisteitä ei yhdistetä murtoviivaksi ja miksi suoran kulmakerroin lasketaan kahdesta kaukana toisistaan olevasta suoran pisteestä eikä kahdesta mittauspisteestä.",
+      "criteria": [
+        "Sanon, että jokaisessa mittauksessa on satunnaisvirhe, jonka murtoviiva toistaisi.",
+        "Sanon, että sovitettu suora kuvaa yleistä riippuvuutta ja kulkee pisteiden joukon keskeltä.",
+        "Perustelen, että kaukana toisistaan olevilla pisteillä $\\Delta y$ on suuri verrattuna lukemavirheeseen, joten kulmakertoimen virhe on pieni.",
+        "Sanon, että pisteet luetaan sovitetulta suoralta eikä yksittäisistä mittauspisteistä."
+      ],
+      "model": "Jokaiseen mittaukseen kuuluu satunnaisvirhe, joten pisteet hajaantuvat mallin ympärille. Murtoviiva yhdistäisi myös nämä virheet ja antaisi jyrkästi vaihtelevan, epäuskottavan riippuvuuden. Sovitettu suora kulkee pisteiden joukon keskeltä ja kuvaa ilmiön yleistä riippuvuutta. Kulmakerroin $k = \\Delta y / \\Delta x$ lasketaan suoran kahdesta pisteestä, koska suoralla virheet on jo tasattu. Pisteet valitaan kaukana toisistaan, koska silloin $\\Delta y$ on suuri verrattuna lukemavirheeseen ja kulmakertoimen suhteellinen virhe pienenee. Esimerkiksi $\\Delta x$:n kymmenkertaistaminen pienentää suhteellista virhettä kymmenesosaan.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

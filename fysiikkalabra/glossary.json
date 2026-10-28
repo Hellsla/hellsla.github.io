@@ -72,6 +72,81 @@
     "locked": false
   },
   {
+    "term": "mittaus",
+    "definition": "Suureen arvon määrittäminen vertaamalla sitä yksikköön mittarilla tai mittausmenetelmällä. Mittaustulos on lukuarvo yksikköineen, ja siihen kuuluu aina arvio virheestä.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "mittausvirhe",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittausvirhe",
+    "definition": "Mittaustuloksen ja suureen oikean arvon erotus: virhe = tulos − oikea arvo. Virhe kuuluu jokaiseen mittaukseen, eikä se ole sama asia kuin moka. Virhettä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "satunnaisvirhe",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "systemaattinen virhe",
+    "definition": "Virhe, joka on jokaisessa mittauksessa suunnaltaan ja suuruudeltaan lähes sama, esimerkiksi mittarin väärä nollakohta. Toistaminen ja keskiarvo eivät pienennä sitä. Se huomataan vertaamalla tulosta toiseen menetelmään tai tunnettuun vertailuarvoon, ja se korjataan.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "oikeellisuus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
+    "term": "satunnaisvirhe",
+    "definition": "Virhe, joka vaihtelee sattumanvaraisesti mittauksesta toiseen ja voi olla kumpaan suuntaan tahansa, esimerkiksi käsin otetun ajan reaktioviive. Toistamalla mittaus ja ottamalla keskiarvo sitä saadaan pienennettyä. Sen suuruutta arvioidaan vaihteluvälin puolikkaalla.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "toistettavuus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
+    "term": "toistettavuus",
+    "definition": "Se, kuinka lähelle toisiaan samalla tavalla toistetut saman suureen mittaustulokset osuvat. Hyvä toistettavuus tarkoittaa pientä satunnaisvirhettä, mutta ei takaa, että tulos on oikea.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "satunnaisvirhe",
+      "oikeellisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikeellisuus",
+    "definition": "Se, kuinka lähellä mittaustulos on suureen oikeaa arvoa. Hyvä oikeellisuus tarkoittaa pientä systemaattista virhettä. Tulos voi olla hyvin toistettava mutta silti väärä.",
+    "lessons": [
+      "fy1-3"
+    ],
+    "see_also": [
+      "systemaattinen virhe",
+      "toistettavuus"
+    ],
+    "locked": false
+  },
+  {
     "term": "mittausepävarmuus",
     "definition": "Arvio siitä, kuinka paljon mittaustulos voi enintään poiketa todellisesta arvosta, esimerkiksi ±1 kPa. Se piirretään kuvaajaan epävarmuusjanana, ja siitä saadaan tuloksen epävarmuus, kun suora piirretään jyrkimmän ja loivimman mahdollisen suoran väliin.",
     "lessons": [
@@ -375,7 +450,8 @@
     "term": "kiihtyvyys",
     "definition": "Nopeuden muutos aikayksikössä. Yksikkö m/s².",
     "lessons": [
-      "fy4-4"
+      "fy4-4",
+      "fy1-6"
     ],
     "see_also": [
       "nopeus"
@@ -407,6 +483,32 @@
     "locked": false
   },
   {
+    "term": "kulmakerroin",
+    "definition": "Suoran y = kx + b jyrkkyyttä kuvaava luku k: y:n muutos jaettuna x:n muutoksella, k = Δy/Δx. Kulmakertoimen yksikkö on y:n yksikkö jaettuna x:n yksiköllä. Matka-aikakuvaajassa kulmakerroin on nopeus.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kuvaaja",
+      "lineaarinen malli",
+      "suoran sovitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kuvaaja",
+    "definition": "Kahden suureen riippuvuutta esittävä piirros, jossa jokainen mittaus on piste (x, y). Akseleilla ovat suureet yksikköineen, ja asteikon askeleet ovat yhtä suuret yhtä suurille arvoille. Pisteitä ei yhdistetä murtoviivaksi, vaan niihin sovitetaan malli.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "lineaarinen malli",
+      "suoran sovitus",
+      "mittausvirhe"
+    ],
+    "locked": false
+  },
+  {
     "term": "lauhdevoimalaitos",
     "definition": "Lämpövoimalaitos, joka tuottaa vain sähköä. Turbiinista tuleva höyry tiivistetään lauhduttimessa, ja sen lämpö siirtyy hukkalämpönä esimerkiksi mereen.",
     "lessons": [
@@ -427,6 +529,19 @@
     "see_also": [
       "energia",
       "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lineaarinen malli",
+    "definition": "Malli, jossa kahden suureen riippuvuus on suora y = kx + b. Jos vakiotermi b on nolla, suureet ovat suoraan verrannolliset. Malli pätee vain mitatulla alueella ja sen lähellä, ja jos pisteet poikkeavat suorasta systemaattisesti, malli ei sovi.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kulmakerroin",
+      "kuvaaja",
+      "ekstrapolointi"
     ],
     "locked": false
   },
@@ -580,7 +695,8 @@
     "term": "massa",
     "definition": "Massa kertoo, kuinka paljon ainetta kappaleessa on. Massan yksikkö on kilogramma (kg), ja massa on sama kaikkialla, toisin kuin paino.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy1-7"
     ],
     "see_also": [
       "paino"
@@ -638,7 +754,8 @@
     "term": "nopeus",
     "definition": "Nopeus on paikan muutosnopeus: v = Δx/Δt. Se on vektorisuure, joten etumerkki kertoo suunnan. Nopeuden itseisarvo |v| on vauhti. Tasaisessa liikkeessä nopeus on vakio ja yksikkö on m/s.",
     "lessons": [
-      "fy4-1"
+      "fy4-1",
+      "fy1-5"
     ],
     "see_also": [
       "siirtymä",
@@ -688,7 +805,8 @@
     "term": "paikka",
     "definition": "Kappaleen paikka x kertoo, missä kappale on valittuun origoon nähden x-akselilla. Paikan etumerkki kertoo, kummalla puolella origoa kappale on; yksikkö on metri (m).",
     "lessons": [
-      "fy4-1"
+      "fy4-1",
+      "fy1-5"
     ],
     "see_also": [
       "siirtymä",
@@ -760,7 +878,8 @@
     "term": "putoamiskiihtyvyys",
     "definition": "Kiihtyvyys, jolla vapaasti putoava kappale liikkuu, kun ilmanvastusta ei ole. Maan pinnalla sen arvo on g = 9,81 m/s², ja sama luku kertoo, kuinka monta newtonia yhden kilogramman massan paino on.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy1-6"
     ],
     "see_also": [
       "paino",
@@ -802,6 +921,20 @@
     "see_also": [
       "höyrystymislämpö",
       "lämpömäärä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suoran sovitus",
+    "definition": "Mittauspisteiden läpi piirrettävän suoran valinta niin, että suora kulkee pisteiden joukon keskeltä: lähellä kaikkia pisteitä ja suunnilleen yhtä monen pisteen ylä- ja alapuolella. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Sovituksesta luetaan kulmakerroin ja vakiotermi.",
+    "lessons": [
+      "fy1-4"
+    ],
+    "see_also": [
+      "kuvaaja",
+      "kulmakerroin",
+      "lineaarinen malli",
+      "mittausvirhe"
     ],
     "locked": false
   },
@@ -856,9 +989,23 @@
     "term": "tiheys",
     "definition": "Aineen massa tilavuutta kohti, ρ = m/V, yksikkö kg/m³. Veden tiheys on noin 1000 kg/m³.",
     "lessons": [
-      "fy3-4"
+      "fy3-4",
+      "fy1-7"
     ],
     "see_also": [
+      "massa",
+      "tilavuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tilavuus",
+    "definition": "Tilavuus kertoo, kuinka suuren tilan kappale tai aine viemää. SI-yksikkö on kuutiometri (m³); 1 dm³ = 1 l = 0,001 m³ ja 1 cm³ = 1 ml = 10⁻⁶ m³.",
+    "lessons": [
+      "fy1-7"
+    ],
+    "see_also": [
+      "tiheys",
       "massa"
     ],
     "locked": false
@@ -922,6 +1069,18 @@
     "see_also": [
       "energia",
       "teho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vapaa pudotus",
+    "definition": "Putoaminen, jossa kappaleeseen ei vaikuta ilmanvastus. Levosta lähtevän kappaleen nopeus kasvaa joka sekunti saman verran: v = gt, missä g = 9,81 m/s².",
+    "lessons": [
+      "fy1-6"
+    ],
+    "see_also": [
+      "putoamiskiihtyvyys",
+      "kiihtyvyys"
     ],
     "locked": false
   },
@@ -998,6 +1157,240 @@
       "hydrostaattinen paine",
       "ilmanpaine",
       "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tutkimus",
+    "definition": "Järjestelmällinen tapa vastata kysymykseen mittaamalla. Tutkimus alkaa tutkimuskysymyksestä ja hypoteesista, etenee suunnitelman ja mittausten kautta ja päättyy johtopäätökseen, jonka tulokset perustelevat.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "hypoteesi",
+      "muuttuja",
+      "raportti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hypoteesi",
+    "definition": "Perusteltu ja testattava ennuste tutkimuskysymykseen, esimerkiksi ”jos auto liikkuu vakionopeudella, matka on verrannollinen aikaan”. Hypoteesista pitää seurata mitattava tulos, joka voi osoittautua vääräksi.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "muuttuja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuttuja",
+    "definition": "Suure, jonka arvo voi vaihdella tutkimuksessa. Reilussa kokeessa muutetaan yhtä muuttujaa (muutettava), mitataan toista (mitattava) ja pidetään muut samoina (vakioitavat).",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "hypoteesi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittauspöytäkirja",
+    "definition": "Kokeen aikana tehty kirjaus: tutkimuskysymys, päivämäärä, välineet ja niiden tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Lukemia ei korjata tai poisteta hiljaa.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "raportti",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "raportti",
+    "definition": "Kirjallinen kuvaus tutkimuksesta niin, että toinen voi toistaa sen: tutkimuskysymys ja hypoteesi, menetelmä, tulokset, pohdinta ja johtopäätös.",
+    "lessons": [
+      "fy1-8"
+    ],
+    "see_also": [
+      "tutkimus",
+      "mittauspöytäkirja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasainen liike",
+    "definition": "Liike suoraa pitkin vakionopeudella: kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat. Paikka on s = s₀ + vt, ja (t, s)-kuvaaja on suora, jonka kulmakerroin on nopeus v.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "nopeus",
+      "paikka",
+      "matka",
+      "suoraan verrannollisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "matka",
+    "definition": "Kappaleen liikkeessään kulkema pituus, yksikkö metri (m). Kun kappale liikkuu suoraa pitkin yhteen suuntaan, matka on paikan muutos Δs = s − s₀, tasaisessa liikkeessä vt. Paikka kertoo, missä kappale on, matka sen, kuinka pitkän tien se on kulkenut.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "paikka",
+      "nopeus",
+      "tasainen liike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suoraan verrannollisuus",
+    "definition": "Kaksi suuretta ovat suoraan verrannollisia, kun niiden suhde on vakio: jos toinen kaksinkertaistuu, myös toinen kaksinkertaistuu. Kuvaaja on origon kautta kulkeva suora, ja suhde on sen kulmakerroin. Tasaisessa liikkeessä matka Δs on suoraan verrannollinen aikaan: Δs/t = v.",
+    "lessons": [
+      "fy1-5"
+    ],
+    "see_also": [
+      "tasainen liike",
+      "nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fysiikka",
+    "definition": "Luonnontiede, joka tutkii aineen, energian, avaruuden ja ajan perusilmiöitä. Fysiikka etsii säännönmukaisuuksia havainnoista ja kokeista, kuvaa ne malleilla ja testaa mallit mittauksilla.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "malli",
+      "kymmenpotenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "malli",
+    "definition": "Yksinkertaistettu kuvaus ilmiöstä, josta voi päätellä ennusteita. Mallia testataan kokeilla ja mittauksilla, ja se on voimassa vain tietyissä oloissa: malli ei ole koko totuus.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "fysiikka",
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kymmenpotenssi",
+    "definition": "Luku 10ⁿ, missä n on kokonaisluku. Kymmenpotenssimuodossa luku kirjoitetaan muotoon a · 10ⁿ, missä 1 ≤ a < 10; eksponentin kasvu yhdellä kymmenkertaistaa luvun.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suuruusluokka",
+    "definition": "Lukua lähinnä oleva kymmenpotenssi. Luvun a · 10ⁿ suuruusluokka on 10ⁿ, kun a on alle noin 3, ja 10ⁿ⁺¹, kun a on yli noin 3. Kokojen suhde on karkeasti 10 potenssiin suuruusluokkien ero.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "kymmenpotenssi",
+      "malli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valovuosi",
+    "definition": "Pituuden yksikkö: matka, jonka valo kulkee tyhjiössä yhdessä vuodessa, noin 9,46 · 10¹⁵ m. Valovuosi on matka eikä aika.",
+    "lessons": [
+      "fy1-1"
+    ],
+    "see_also": [
+      "kymmenpotenssi",
+      "suuruusluokka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suure",
+    "definition": "Mitattava ominaisuus, kuten pituus, massa tai aika. Suureen arvo kirjoitetaan lukuarvon ja yksikön tulona: l = 12,0 cm. Suureen symboli kirjoitetaan kursiivilla.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "SI-järjestelmä",
+      "mittaus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yksikkö",
+    "definition": "Sovittu mitta, johon suuretta verrataan. Yksikkö kirjoitetaan lukuarvon perään pystykirjaimin, esimerkiksi metri (m) tai sekunti (s). Ilman yksikköä lukuarvo ei kerro suureesta mitään.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "suure",
+      "SI-järjestelmä",
+      "etuliite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "SI-järjestelmä",
+    "definition": "Kansainvälisesti sovittu yksikköjärjestelmä, jossa on seitsemän perusyksikköä: metri, kilogramma, sekunti, ampeeri, kelvin, mooli ja kandela. Muut yksiköt, kuten m/s ja N, johdetaan perusyksiköistä.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "suure",
+      "yksikkö",
+      "etuliite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "etuliite",
+    "definition": "Yksikön eteen liitettävä kymmenpotenssin lyhenne: kilo (k) 10³, mega (M) 10⁶, giga (G) 10⁹, milli (m) 10⁻³, mikro (µ) 10⁻⁶. Esimerkiksi 1 km = 10³ m.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "SI-järjestelmä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "merkitsevä numero",
+    "definition": "Lukuarvon numero, joka kertoo mittauksen tarkkuudesta. Ensimmäisestä nollasta eroavasta numerosta alkaen kaikki numerot loppunollat mukaan lukien ovat merkitseviä. Kerto- ja jakolaskun tulos annetaan niin monella merkitsevällä numerolla kuin epätarkimmassa tekijässä on.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "mittausepävarmuus",
+      "mittaus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "astronominen yksikkö",
+    "definition": "Maan ja Auringon keskimääräinen etäisyys, 1 AU = 149 597 870,7 km ≈ 1,496 · 10⁸ km. Valo kulkee yhden AU:n noin 8,3 minuutissa.",
+    "lessons": [
+      "fy1-2"
+    ],
+    "see_also": [
+      "yksikkö",
+      "etuliite"
     ],
     "locked": false
   }

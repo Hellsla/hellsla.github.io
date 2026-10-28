@@ -1,0 +1,20 @@
+{
+  "id": "fy1-6",
+  "course": "FY1",
+  "title": "Putoamiskiihtyvyys: v = gt",
+  "goals": [
+    "Temaattinen tarkastelu: putoamiskiihtyvyyttä voidaan käsitellä (t,v)-kuvaajan lineaarisena mallina v = gt",
+    "Kokeellisesti: eri massaisten kappaleiden putoamisliike"
+  ],
+  "prerequisites": [
+    "fy1-5"
+  ],
+  "glossary": [
+    "putoamiskiihtyvyys",
+    "kiihtyvyys",
+    "vapaa pudotus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

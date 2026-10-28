@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Mikä ero on muutettavalla ja mitattavalla muuttujalla? Anna esimerkki leluauton kokeesta.",
+    "a": "Muutettavan muuttujan arvot valitsee tutkija, esimerkiksi matkan $s$. Mitattavan muuttujan arvo luetaan mittarista, esimerkiksi aika $t$. Muut asiat, kuten auto, paristot ja alusta, pidetään vakioina, jotta tuloksen muutos voidaan kytkeä muutettuun muuttujaan."
+  },
+  {
+    "q": "Ajan epävarmuus on $0{,}2\\,\\text{s}$. Kuinka pitkä aika pitää vähintään mitata, jotta suhteellinen epävarmuus on enintään $2{,}0\\,\\%$?",
+    "a": "$t \\ge \\dfrac{\\Delta t}{\\varepsilon_\\text{max}} = \\dfrac{0{,}2\\,\\text{s}}{0{,}020} = 10\\,\\text{s}$."
+  },
+  {
+    "q": "Mitä mittauspöytäkirjaan kirjataan, ja miksi epätavalliselta näyttävää mittausta ei poisteta hiljaa?",
+    "a": "Pöytäkirjaan kirjataan tutkimuskysymys, päivämäärä, välineet ja tarkkuus, vakioidut asiat, lukemat yksiköineen ja havainnot. Epätavallinen mittaus merkitään ja selitetään, koska poistaminen valitsisi tuloksen niin, että se sopii odotukseen, eikä tutkimus enää testaisi hypoteesia."
+  }
+]
