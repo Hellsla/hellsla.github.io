@@ -144,6 +144,8 @@ expect("screenshots of fy4-1 in its review folder", code == 0 and (L / "review/s
 h = run("reviews.py", "hash", "fy4-1")[1].strip()
 for n in ("science", "pedagogy"): (L / f"review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h}\n\n## Blocking\n")
 for n in ("science", "pedagogy"): (src / f"review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {fy3_hash}\n\n## Blocking\n")
+fy3_ex_hash = run("reviews.py", "hash", "fy3-2", "--exercises")[1].strip()   # its real PASS carries over a split the copy has no history for
+for n in ("science", "pedagogy"): (src / f"exercises/review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {fy3_ex_hash}\n\n## Blocking\n")
 code, out = run("build.py")
 site = T / "site"
 expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-1.html").is_file() and all((site / p).is_file() for p in ("sims/fy4/fy4-1/sim.js", "sims/fy4/fy4-1/sim.css", "pics/fy4/kalteva-taso.svg")), out)
