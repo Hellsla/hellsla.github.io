@@ -268,6 +268,8 @@ e = errs_of(lambda d: [c.__setitem__("correct", False) for c in d["activities"][
 e = errs_of(lambda d: act(d, "siirto").__setitem__("hints", ["a", "b", "c", "d"])); check("at most three hints", any("hints" in x for x in e), str(e))
 e = errs_of(lambda d: act(d, "siirto").__setitem__("answer", "240")); check("numeric answer must be a number", any("answer" in x for x in e), str(e))
 e = errs_of(lambda d: act(d, "check-3").pop("model")); check("explain needs a model answer", any("model" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3")["criteria"].__setitem__(0, "Osaan selittää työn.")); check("a confidence statement is not a criterion", any("how sure" in x for x in e), str(e))
+e = errs_of(lambda d: act(d, "check-3").__setitem__("figure", "fy3-9/hero")); check("a task's figure must carry information", any("figure" in x for x in e), str(e))
 types = {a["type"] for a in good["activities"]}
 check("pilot exercises every implemented type but text", types >= set(inquiry.TYPES) - {"text"}, str(set(inquiry.TYPES) - types))
 named = lesson_md.replace("\n## Kaava\n", "\n## Kaava: Työ ja teho\n")
@@ -425,6 +427,12 @@ with sync_playwright() as pw:
     check("the model answer waits for the student's own answer", not ex.locator(".model").is_visible() and "oma vastauksesi" in ex.locator(".explain-status").inner_text())
     ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
     ex.locator(".show-model").click(); check("model answer and criteria shown", ex.locator(".model").is_visible() and ex.locator("ul.criteria input[type=checkbox]").count() == 4)
+    boxes = ex.locator("ul.criteria input[type=checkbox]"); boxes.nth(0).check(); boxes.nth(1).check(); ex.locator(".check-criteria").click()
+    check("what is missing: the two unticked criteria and where to practise", ex.locator(".crit-missing li").count() == 2 and ex.locator(".crit-practice").is_visible()
+          and ex.locator(".crit-practice a[href='#exercises']").count() == 1, ex.locator(".crit-result").inner_text())
+    boxes.nth(2).check(); boxes.nth(3).check(); ex.locator(".check-criteria").click()
+    check("all criteria ticked: nothing missing, no practice pointer", ex.locator(".crit-missing li").count() == 0 and not ex.locator(".crit-practice").is_visible())
+    check("no chapter-level Osaan / Tarvitsen self-assessment", pg.locator(".selfcheck, #arvioi").count() == 0)
 
     # persistence survives a reload (per-device convenience only)
     pg.reload(); pg.wait_for_function("window.simState && window.simAdapter", timeout=3000)

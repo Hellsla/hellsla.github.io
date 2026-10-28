@@ -62,7 +62,7 @@ Level 1: one formula, values given, 5 problems. Level 2: two steps or a conversi
 meta.json          id, course, title, goals, prerequisites, glossary, sim (true | "<sim folder>" | false), solutions (all; first and none are not used since 2026-10-27)
 lesson.md          Ydinajatus, Kaava, Esimerkki (staged), misconception, summary; inline SVG figures
 inquiry.json       the inquiry sequence: contribution, prior, activities by stage (format in docs/inquiry.md)
-exit-ticket.json   3 quick checks
+exit-ticket.json   1–3 quick questions the checks do not ask
 review/            science.md, pedagogy.md (legacy.md on a prototype), carry.tsv, developer.md, checks.txt, usage.tsv; packets and shots git-ignored
 exercises/         the exercise set, reviewed apart from the lesson (teacher 2026-10-28, README "Exercises"):
   exercises.json   three levels (schema in README)         solutions.md    one complete solution per exercise (CLAUDE.md Lesson form 7, NOTES §3)
@@ -79,7 +79,8 @@ Simulations live in `assets/sims/<course>/<name>/` (sim.js exposing `window.simS
 
 ## Exam readiness (teacher's brief 2026-10-28, NOTES.md §9; a guiding principle for every course)
 - **Inquiry stays the foundation.** The stages keep their purpose; exam-style questions are not spread into every stage. Progression is visible at the module level: understanding → guided application (Sovella, exercises 1–2) → independent application (level 3, a transfer task without hints) → exam-style transfer (Sovella itsenäisesti).
-- **Arvioi osaamistasi** closes the Tarkista stage of every lesson automatically from `learn` (Osaan / Tarvitsen vielä harjoitusta, kept in the browser). Never write separate self-assessment statements or extra checks for it.
+- **Self-assessment** (teacher 2026-10-28): no chapter-level "Osaan / Tarvitsen vielä harjoitusta" checklist. Written answers are self-assessed against the model answer's observable criteria, then "what is missing" and where to practise (NOTES.md §11); multiple-choice checks are graded by the page; the point-based rubric stays in Sovella itsenäisesti.
+- **Figures** (NOTES.md §11): find an existing figure in `docs/figures/catalog.json` (`python scripts/figcat.py find …`) before drawing one; a task shows a figure by its id (`"figure": "fy1-4/scatter-points"`), never a pasted SVG; a variant without the answer is drawn from the same data in the owner's figures.py.
 - **Sovella itsenäisesti**: each course ends with 2–4 original module-end tasks (FY1 about 2, later about 3), written once per course with `/practice <COURSE>` (`content/<lang>/<COURSE>/sovella/`, README "Sovella itsenäisesti"): authentic situation and source material, parts with points, nothing that names the model, then behind one button a complete worked solution, common mistakes and the shared rubric for self-assessment. Never relabel chapter exercises; prefer replacing a weak activity over adding one.
 - **Competencies** (`competencies.json`): concept, math, graph, experiment, communication, transfer. Consider them for every course, never as quotas, never off-curriculum. `scripts/coverage.py <COURSE>` writes the evidence-based report `docs/coverage/<COURSE>.md`; a gap is closed by a better activity, not by tagging.
 - **Token economy**: generate once, reuse. Shared rubric criteria by key (texts once in `lang/<lang>.json`), one rubric component, deterministic checks (`practice.py check`, `test_practice.py`, `coverage.py --check`) before any review, no new agents, no model at runtime, translate only new or changed text.

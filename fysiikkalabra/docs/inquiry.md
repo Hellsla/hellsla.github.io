@@ -4,7 +4,7 @@ A lesson folder may carry `inquiry.json`. When it does, `scripts/build.py` lays 
 and the student acts before being told: a phenomenon, a prediction, an investigation, the model, a transfer task,
 three checks. Without the file the lesson renders in the classic layout (theory, simulation, exercises, exit
 ticket), byte for byte as before. The lesson's other files are unchanged by the framework: `lesson.md` still holds
-the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` the three quick checks, the simulation the physics.
+the theory, `exercises.json` the 5/4/3 exercises, `exit-ticket.json` one to three quick questions (NOTES.md §11), the simulation the physics.
 `inquiry.json` only says where those parts go and adds the activities between them.
 
 The pedagogical brief behind this format is `docs/inquiry-spec.md`. Pilot: `content/fi/FY3/fy3-2/inquiry.json`.

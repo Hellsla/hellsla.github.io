@@ -370,15 +370,14 @@ def build_language(lang):
                 if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
                                                                      re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>',
-                     "selfcheck": practice.selfcheck_html(inq.get("learn"), lambda t: nbsp_units(render_md(t)), bool(ex))}   # Arvioi osaamistasi (teacher 2026-10-28)
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             main = f'<article id="teoria" class="inquiry">{body}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main)
-                .replace("{{scripts}}", '<script src="inquiry.js"></script><script src="selfassess.js"></script>' if inq else "")
+                .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))

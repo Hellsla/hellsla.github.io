@@ -21,8 +21,9 @@ A course's module-end tasks are a part of their own, like a lesson's exercise se
 The page site/<COURSE>-sovella.html is published when both reviews PASS for the current hash (build.py); the course
 page links it. Criteria name a shared key of competencies.json (its text is in lang/<lang>.json "criteria", so it is
 written and translated once) or carry their own `text` and competency `tag`; a part's points are the sum of its
-criteria. The same rubric component (rubric_html, templates/selfassess.js) scores every task of every course, and
-selfcheck_html is the chapter's optional "Arvioi osaamistasi", built from the lesson's own learning goals (`learn`).
+criteria. The same rubric component (rubric_html, templates/selfassess.js) scores every task of every course (the
+chapter-level "Arvioi osaamistasi" of 2026-10-28 was removed by the teacher the same day: guided self-assessment of
+written answers lives in the explain tasks, scripts/inquiry.py).
 Nothing here needs a model at runtime: links for a weak competency come from the task's `links`.
 """
 import hashlib, importlib.util, json, re, subprocess, sys, pathlib, html as _h
@@ -300,23 +301,6 @@ def rubric_html(task, md, parts=None, lead=None):
             f'<p class="rubric-total" aria-live="polite">{T("js.rubric_partial", got=0, max=mx, left=sum(len(p["criteria"]) for p in task["parts"]))}</p>'
             f'<p class="rubric-note">{T("practice.rubric_note")}</p>'
             + (f'<div class="rubric-more" hidden><p>{T("practice.practise_more")}</p><ul>{links}</ul></div>' if links else "") + '</div>')
-
-
-def selfcheck_html(learn, md, has_exercises=True):
-    """Arvioi osaamistasi: the chapter's own learning goals (inquiry.json `learn`, already translated with the lesson),
-    each with Osaan / Tarvitsen vielä harjoitusta; the second shows where to go back to. Optional, closed at first,
-    kept in this browser only (templates/selfassess.js). No new statements are written for it."""
-    if not learn: return ""
-    T = i18n.t; inline = lambda s: re.sub(r"^<p>(.*)</p>$", r"\1", md(s).strip(), flags=re.S)
-    nxt = T("selfcheck.next" if has_exercises else "selfcheck.next_no_exercises")
-    items = "".join(
-        f'<li data-goal="{i}"><fieldset><legend>{inline(g)}</legend><div class="sc-options">'
-        f'<label><input type="radio" name="arvioi-{i}" value="ok"> <span>{T("selfcheck.ok")}</span></label>'
-        f'<label><input type="radio" name="arvioi-{i}" value="practice"> <span>{T("selfcheck.practice")}</span></label></div></fieldset>'
-        f'<p class="selfcheck-next" hidden>{nxt}</p></li>' for i, g in enumerate(learn))
-    return (f'<details class="selfcheck" id="arvioi"><summary><span class="sc-title">{T("selfcheck.title")}</span> '
-            f'<span class="opt-tag">{T("selfcheck.optional")}</span></summary><div class="selfcheck-body"><p class="selfcheck-lead">{T("selfcheck.lead")}</p>'
-            f'<ol class="selfcheck-list">{items}</ol><p class="selfcheck-summary" aria-live="polite"></p></div></details>')
 
 
 def _with_figures(solution_html, body):
