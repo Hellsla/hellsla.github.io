@@ -1,0 +1,22 @@
+{
+ "Kaavakuva: energialajit esimerkein. Mekaaninen energia on potentiaalienergiaa (kallion reunalla oleva pallo) ja liike-energiaa (vierivä pallo). Lisäksi kuvassa ovat lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen, ei mittakaavassa.": "Schematic diagram: forms of energy with examples. Mechanical energy is potential energy (a ball at the edge of a cliff) and kinetic energy (a rolling ball). The picture also shows thermal energy (a hot coffee cup), chemical energy (a battery), radiant energy (the Sun), electrical energy (lightning) and nuclear energy (an atomic nucleus). The picture is schematic, not to scale.",
+ "mekaaninen energia": "mechanical energy",
+ "potentiaali-": "potential",
+ "energia": "energy",
+ "liike-": "kinetic",
+ "lämpö-": "thermal",
+ "kemiallinen": "chemical",
+ "säteily-": "radiant",
+ "sähkö-": "electrical",
+ "ydin-": "nuclear",
+ "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämmöksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Schematic diagram: energy changes in a torch (flashlight). The battery contains chemical energy. It changes into electrical energy, and the bulb changes the electrical energy into light and thermal energy. Most of it changes into heat, so the heat arrow is wider. The picture is schematic, and the width of the arrows is not to scale.",
+ "paristo": "battery",
+ "lamppu": "bulb",
+ "valo": "light",
+ "Kaavakuva: skeittari half-pipessä kolmella hetkellä ja kunkin hetken energiat pylväinä. Alussa skeittari on reunalla levossa, ja koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole, liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa, ja jokaisen pylvään kokonaiskorkeus vastaa 800 joulea eli kaikilla hetkillä energiaa on yhtä paljon.": "Schematic diagram: a skateboarder in a half-pipe at three moments, with the energies at each moment as bars. At the start the skateboarder is at rest at the edge, and all the energy, 800 J, is potential energy. In the middle there is 300 J of potential energy, 450 J of kinetic energy and 50 J of thermal energy. At the bottom there is no potential energy, 700 J of kinetic energy and 100 J of thermal energy. The heights of the bars are to scale, and the total height of every bar corresponds to 800 joules, so there is the same amount of energy at every moment.",
+ "alussa": "start",
+ "välillä": "middle",
+ "lopussa": "end",
+ "kokonaisenergia ": "total energy",
+ "lämpö": "heat"
+}

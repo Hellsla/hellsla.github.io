@@ -1,0 +1,20 @@
+{
+  "id": "fy2-4",
+  "course": "FY2",
+  "title": "Efficiency",
+  "goals": [
+    "LOPS FY2: energy production, power, efficiency and energy transfer",
+    "Clarification: efficiency is treated as defined through energy or power, η = E_a/E_o = P_a/P_o"
+  ],
+  "prerequisites": [
+    "fy2-3"
+  ],
+  "glossary": [
+    "efficiency",
+    "useful energy",
+    "losses"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-3-L1-01",
+      "level": 1,
+      "text": "Oppilas mittaa pienen kuulan putoamisajan neljä kertaa ja saa tulokset 0,52 s, 0,48 s, 0,55 s ja 0,49 s. Mikä on mittaussarjan keskiarvo?",
+      "answer": 0.51,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-02",
+      "level": 1,
+      "text": "Vertailukappaleen pituus tunnetaan tarkasti: se on 20,0 cm. Mittanauha antaa kappaleen pituudeksi 20,3 cm. Mikä on mittausvirhe etumerkkeineen?",
+      "answer": 0.3,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-03",
+      "level": 1,
+      "text": "Heilurin kymmenen heilahduksen aika mitataan käsikellolla viisi kertaa, ja tulokset ovat 12,4 s, 12,9 s, 12,6 s, 12,2 s ja 12,7 s. Mikä on tulosten vaihteluvälin puolikas?",
+      "answer": 0.35,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-04",
+      "level": 1,
+      "text": "Keittiövaaka näyttää tyhjänä lukeman 1,2 g, vaikka sen päällä ei ole mitään. Vaa'alle pannaan kappale, ja vaaka näyttää 48,7 g. Mikä on kappaleen massa?",
+      "answer": 47.5,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-05",
+      "level": 1,
+      "text": "Viivaimen pienin asteikkoväli on 1,0 mm. Yksittäisen lukeman virhe-arvio on puoli asteikkoväliä. Kuinka suuri virhe-arvio on?",
+      "answer": 0.5,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-3-L2-01",
+      "level": 2,
+      "text": "Kuulan vierimisaika mitataan kuusi kertaa: 1,84 s, 1,91 s, 1,78 s, 1,88 s, 1,96 s ja 1,82 s. Satunnaisvirheen arvioksi otetaan vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
+      "answer": 4.83,
+      "unit": "%",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy1-3-L2-02",
+      "level": 2,
+      "text": "Mittanauhan alkupää on kulunut. Tarkasti 1,000 m pitkä sauva mitataan nauhalla kolme kertaa, ja lukemat ovat 1,012 m, 1,009 m ja 1,011 m. Kuinka monta millimetriä liikaa nauha keskimäärin näyttää?",
+      "answer": 10.67,
+      "unit": "mm",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy1-3-L2-03",
+      "level": 2,
+      "text": "Lasiputken pituus mitataan kolme kertaa, ja tulokset on kirjattu eri yksiköillä: 12,4 cm, 0,125 m ja 123 mm. Mikä on keskiarvo senttimetreinä?",
+      "answer": 12.4,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L2-04",
+      "level": 2,
+      "text": "Sama pituus mitataan viisi kertaa kahdella mittarilla. Mittari A antaa tulokset 5,2 cm, 5,6 cm, 5,4 cm, 5,3 cm ja 5,5 cm. Mittari B antaa tulokset 5,40 cm, 5,43 cm, 5,41 cm, 5,42 cm ja 5,44 cm. Kuinka moninkertainen on mittarin A tulosten vaihteluvälin puolikas mittarin B vastaavaan verrattuna?",
+      "answer": 10,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-3-L3-01",
+      "level": 3,
+      "text": "Käsin otetussa ajanotossa kello käynnistetään aina 0,18 s liian myöhään. Se pysäytetään aina 0,12 s liian myöhään. Viiveet ovat joka kerralla samat. Mikä on ajanoton systemaattinen virhe eli lukema miinus oikea aika? Anna vastaus etumerkkeineen.",
+      "answer": -0.06,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L3-02",
+      "level": 3,
+      "text": "Paperipinossa on 250 samanlaista arkkia. Pinon paksuus mitataan viivaimella, jonka pienin asteikkoväli on 1,0 mm. Lukeman virhe-arvio on puoli asteikkoväliä. Mikä on yhden arkin paksuuden virhe-arvio, kun kaikki arkit ovat yhtä paksuja? Anna vastaus mikrometreinä. Yksi mikrometri on tuhannesosa millimetristä.",
+      "answer": 2.0,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L3-03",
+      "level": 3,
+      "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on 8,00 cm. Tanko mitataan työntömitalla viisi kertaa. Lukemat ovat 8,24 cm, 8,27 cm, 8,25 cm, 8,29 cm ja 8,25 cm. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
+      "answer": 0.26,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fy1-5",
+  "course": "FY1",
+  "title": "Tasainen liike: s = vt",
+  "goals": [
+    "LOPS FY1: graafinen malli ja lineaarinen malli",
+    "Temaattinen tarkastelu: liikeilmiöistä esimerkkinä tasainen liike",
+    "Taidot: suoraan verrannollisuus, esim. s = vt"
+  ],
+  "prerequisites": [
+    "fy1-4"
+  ],
+  "glossary": [
+    "tasainen liike",
+    "nopeus",
+    "paikka",
+    "matka",
+    "suoraan verrannollisuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "contribution": "From conservation of energy and power, the student moves on to the efficiency of a single device. The student separates useful energy from losses, reads an energy flow diagram drawn to scale, calculates efficiency from energies and from powers, notices that it does not depend on running time when the device runs at constant power, and separates a model's assumption from the behaviour of a real device.",
+  "learn": [
+    "You can calculate the efficiency of a device as a ratio of energies or powers.",
+    "You can explain why efficiency is always below $100\\,\\%$ even though energy is conserved.",
+    "You can read an energy flow diagram and work out the shares of useful energy and losses from it."
+  ],
+  "prior": [
+    "Energy is neither created nor destroyed. It changes form, and part of it often becomes heat (chapter *Forms of energy and conservation of energy*)",
+    "The unit of energy is the joule, and when energy is transformed, part of it ends up as heat (chapter *Energy transformations and the joule*)",
+    "Power tells how fast energy is transferred, the unit is the watt, and at constant power energy is power multiplied by time (chapter *Power P = ΔE/Δt*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Two lamps are lit in a room, an incandescent lamp and an LED lamp, and they shine equally brightly. The incandescent lamp takes a power of $60\\,\\text{W}$ from the electricity grid, the LED lamp only $10\\,\\text{W}$. When you touch the lamps after they have been on for a moment, the incandescent lamp is burning hot and the LED lamp is only lukewarm.",
+      "question": "Where does the electrical energy taken by the incandescent lamp go, and how can you measure how good a device is?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: power and energy",
+      "prompt": "A device takes a power of $40\\,\\text{W}$ from the electricity grid and is switched on for $30\\,\\text{s}$. How much energy does the device take?",
+      "choices": [
+        {
+          "text": "$70\\,\\text{J}$",
+          "feedback": "You added the power and the time. Power and time are different quantities and cannot be added. Energy is power multiplied by time, $E = P \\cdot t$ (chapter *Power P = ΔE/Δt*)."
+        },
+        {
+          "text": "$1200\\,\\text{J}$",
+          "correct": true,
+          "feedback": "Correct. Power tells how fast energy is transferred, so at constant power energy is power multiplied by time: $40\\,\\text{W} \\cdot 30\\,\\text{s} = 1200\\,\\text{J}$ (chapter *Power P = ΔE/Δt*)."
+        },
+        {
+          "text": "$1.3\\,\\text{J}$",
+          "feedback": "You divided the power by the time ($40 : 30$). Then the unit would be $\\text{W} : \\text{s}$, not joule, so the result is not energy. Power is already energy divided by time, so energy is found by multiplying power by time (chapter *Power P = ΔE/Δt*)."
+        },
+        {
+          "text": "$0.75\\,\\text{J}$",
+          "feedback": "You divided the time by the power ($30 : 40$). A watt is a joule per second, so energy is found by multiplying power by time: $E = P \\cdot t$ (chapter *Power P = ΔE/Δt*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: efficiency of a petrol engine",
+      "prompt": "The petrol engine of a car takes a power of $60\\,\\text{kW}$ from the chemical energy of the fuel. What fraction of this power becomes the useful power needed to move the car? Hint: remember the hot incandescent lamp from Think about it. Do the engine and the exhaust pipe of a car get hot while driving?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About $90\\,\\%$, because a modern engine wastes only a little energy.",
+          "feedback": "Not quite. The typical efficiency of a petrol engine is about $25\\,\\%$ (the value of the simulation model). About $90\\,\\%$ is typical for an electric motor and a kettle, but in a petrol engine most of the energy of the fuel is released as hot exhaust gases and as heat of the engine."
+        },
+        {
+          "text": "About $60\\,\\%$.",
+          "feedback": "Not quite. If the efficiency were $60\\,\\%$, the losses would be only $24\\,\\text{kW}$. However, the exhaust gases and the cooling carry away most of the energy of the fuel as heat: the typical efficiency is about $25\\,\\%$ (the value of the simulation model)."
+        },
+        {
+          "text": "About $25\\,\\%$, because most of the energy of the fuel becomes heat.",
+          "correct": true,
+          "feedback": "Right. The typical efficiency is about $25\\,\\%$ (the value of the simulation model), so the useful power is $15\\,\\text{kW}$ and the loss power $45\\,\\text{kW}$. The real efficiency depends on the driving situation: at a small load, such as in city driving, it is clearly lower."
+        },
+        {
+          "text": "About $5\\,\\%$, because the engine gets as hot as an incandescent lamp.",
+          "feedback": "Not quite. The efficiency of an incandescent lamp is about $5\\,\\%$, but the typical efficiency of a petrol engine is about $25\\,\\%$ (the value of the simulation model). Still, getting hot is a sign of losses, and an engine has them too."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: running time and efficiency",
+      "prompt": "An incandescent lamp burns first for $10\\,\\text{s}$ and then, at the same power, for $20\\,\\text{s}$. How does the efficiency of the lamp $\\eta = E_\\text{a} : E_\\text{o}$ change when it is calculated for each time?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "The efficiency doubles, because the lamp gives light for longer.",
+          "feedback": "Not quite. A lamp that burns for longer gives more light energy, but it also takes more electrical energy. At constant power both energies are power multiplied by time, $E = P \\cdot t$, so they both double and their ratio does not change."
+        },
+        {
+          "text": "The efficiency stays the same, because the useful energy and the energy taken both double.",
+          "correct": true,
+          "feedback": "Right. At constant power $E_\\text{a} = P_\\text{a} \\cdot t$ and $E_\\text{o} = P_\\text{o} \\cdot t$, so the time cancels from the ratio. The reason is this calculation, not the simulation: the model of the simulation assumes that efficiency is constant, so it only repeats the assumption. A real lamp runs steadily once it has warmed up."
+        },
+        {
+          "text": "The efficiency decreases, because the lamp gets hot and the losses grow.",
+          "feedback": "The idea is physical, but it does not fit a lamp that burns steadily. The loss energy grows with time, but the useful energy and the energy taken grow in the same proportion, because at constant power $E = P \\cdot t$. The lamp warms up only in the moment right after switching on; the model of the simulation assumes that efficiency is constant, so it cannot test this."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a device and adjust the power taken. See how the incoming arrow divides into useful energy and losses.",
+      "howto": "Choose a device from the menu. Adjust the power taken $P_\\text{o}$ and the time $t$ with the sliders. The green arrow is the useful power $P_\\text{a}$ and the orange arrow the loss power $P_\\text{h}$. The readouts show the powers and the energies in the time $t$. The speed only changes how fast the stripes move in the arrows.",
+      "model": "In the model, each device has a constant efficiency. The values are typical rounded values, not measurements of any particular device: incandescent lamp $5\\,\\%$, LED lamp $30\\,\\%$, kettle $90\\,\\%$, electric motor $90\\,\\%$, petrol engine of a car $25\\,\\%$ and solar panel $20\\,\\%$. The efficiency of a real device depends on the load: strongly for a petrol engine, because at a small load it is clearly lower, and only a little for an electric motor when it runs close to the power it was designed for. So the model does not tell how efficiency depends on the power taken. The model assumes that the device runs at constant power. The losses are heat, and in a solar panel they also include reflected light. The readouts of the simulation are values of the model, not measurements.",
+      "calc": "The useful power is $P_\\text{a} = \\eta \\cdot P_\\text{o}$ and the loss power $P_\\text{h} = P_\\text{o} - P_\\text{a}$. In the time $t$ the energies are $E_\\text{o} = P_\\text{o} \\cdot t$, $E_\\text{a} = \\eta \\cdot E_\\text{o}$ and $E_\\text{h} = E_\\text{o} - E_\\text{a}$. In the picture the incoming arrow is always $100\\,\\text{px}$ thick, the useful arrow $\\eta \\cdot 100\\,\\text{px}$ and the loss arrow $(1 - \\eta) \\cdot 100\\,\\text{px}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: petrol engine",
+      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori, ja sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska todellisen moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Mallin hyötysuhde $25\\,\\%$ on tyypillinen arvo, jonka malli saa lähtötietona: simulaatio ei mittaa sitä moottorista vaan laskee sen avulla energiat.",
+      "initial": {
+        "laite": "auto",
+        "Po": 60000,
+        "t": 10
+      },
+      "locked": [
+        "laite",
+        "Po"
+      ],
+      "vary": "t",
+      "names": {
+        "laite": "laite",
+        "Po": "otettu teho P_o",
+        "t": "aika t"
+      },
+      "units": {
+        "laite": "",
+        "Po": "W",
+        "t": "s"
+      },
+      "measure": [
+        {
+          "key": "Eo",
+          "label": "E_o (J)"
+        },
+        {
+          "key": "Ea",
+          "label": "E_a (J)"
+        },
+        {
+          "key": "Eh",
+          "label": "E_h (J)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "For each row of the table, calculate the quotient $E_\\text{h} : E_\\text{o}$. What fraction of the energy taken by the engine becomes losses in the model? Answer as a percentage. You get the efficiency from this when you remember that the useful energy and the losses together make up the whole energy taken.",
+        "answer": 75,
+        "unit": "%",
+        "tolerance": 0.02,
+        "hints": [
+          "The share of losses is the share of the loss energy in the energy taken. Choose one row of the table and read $E_\\text{h}$ and $E_\\text{o}$ from it.",
+          "The share is $\\dfrac{E_\\text{h}}{E_\\text{o}}$. Convert the ratio to a percentage by multiplying it by $100\\,\\%$.",
+          "For example, in the row $t = 10\\,\\text{s}$ the energy taken is $600\\,000\\,\\text{J}$ and the loss energy $450\\,000\\,\\text{J}$, so $450\\,000 : 600\\,000 = 0.75$."
+        ],
+        "mistakes": [
+          {
+            "value": 25,
+            "feedback": "You calculated the share of the useful energy $E_\\text{a} : E_\\text{o}$, that is, the efficiency. The question asked for the share of the losses, so divide the loss energy $E_\\text{h}$ by the energy taken $E_\\text{o}$. The shares add up to $100\\,\\%$."
+          },
+          {
+            "value": 0.75,
+            "feedback": "The ratio $0.75$ is correct, but the question asked for a percentage. Multiply it by $100\\,\\%$: $0.75 \\cdot 100\\,\\% = 75\\,\\%$."
+          }
+        ],
+        "solution": "**Given:** a row of the table with time $t = 10\\,\\text{s}$, energy taken $E_\\text{o} = 600\\,000\\,\\text{J}$ and loss energy $E_\\text{h} = 450\\,000\\,\\text{J}$ (values of the model, power taken locked at $60\\,\\text{kW}$)\n\n**Find:** the share of the losses in the energy taken, as a percentage\n\n**Principle:** The share is calculated by dividing the loss energy by the energy taken. The share is the same on every row, because the engine runs at constant power: both energies are power multiplied by time, and the time cancels from the ratio.\n\n**Formula:** $\\text{share} = \\dfrac{E_\\text{h}}{E_\\text{o}}$\n\n**Conversions:** Not needed: both energies are in joules, so the units cancel. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $\\text{share} = \\dfrac{450\\,000\\,\\text{J}}{600\\,000\\,\\text{J}} = 0.75 = 0.75 \\cdot 100\\,\\% = 75\\,\\%$\n\n**Answer:** $75\\,\\%$, two significant figures, because the efficiency of the model is given to two figures. The efficiency is the rest: $100\\,\\% - 75\\,\\% = 25\\,\\%$.\n\n**Reasonableness:** The useful energy is $E_\\text{a} = 150\\,000\\,\\text{J}$ and $150\\,000\\,\\text{J} + 450\\,000\\,\\text{J} = 600\\,000\\,\\text{J}$. The share is below $100\\,\\%$ and it is the largest part, as for a petrol engine, whose exhaust gases and cooling carry away a large part of the energy."
+      },
+      "values": {
+        "laite": {
+          "auto": "auton bensiinimoottori"
+        }
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: energy and power",
+      "intro": "Testaa ennuste 2. Laite on hehkulamppu ja sen otettu teho on lukittu arvoon $40\\,\\text{W}$. Muuta vain aikaa $t$ ja kirjaa vähintään kolme mittausta. Katso otettua energiaa $E_\\text{o}$ ja hyötyenergiaa $E_\\text{a}$.",
+      "initial": {
+        "laite": "lamppu",
+        "Po": 40,
+        "t": 10
+      },
+      "locked": [
+        "laite",
+        "Po"
+      ],
+      "vary": "t",
+      "names": {
+        "laite": "laite",
+        "Po": "otettu teho P_o",
+        "t": "aika t"
+      },
+      "units": {
+        "laite": "",
+        "Po": "W",
+        "t": "s"
+      },
+      "measure": [
+        {
+          "key": "Eo",
+          "label": "E_o (J)"
+        },
+        {
+          "key": "Ea",
+          "label": "E_a (J)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "The useful power of the lamp here is $2.0\\,\\text{W}$, so the ratio of the powers $P_\\text{a} : P_\\text{o}$ is $5\\,\\%$. From the rows of the table, calculate the ratio of the energies $E_\\text{a} : E_\\text{o}$. What do you notice?",
+        "choices": [
+          {
+            "text": "The ratio of the energies is $5\\,\\%$ on every row, the same as the ratio of the powers, even though the energies grow with time.",
+            "correct": true,
+            "feedback": "Correct. The energies are $E_\\text{o} = P_\\text{o} \\cdot t$ and $E_\\text{a} = P_\\text{a} \\cdot t$, so the time cancels: $E_\\text{a} : E_\\text{o} = P_\\text{a} : P_\\text{o}$. The efficiency is the same whether it is calculated from energies or from powers."
+          },
+          {
+            "text": "The ratio of the energies grows with time, because the useful energy keeps accumulating.",
+            "feedback": "The useful energy accumulates, but so does the energy taken, at the same rate. Calculate, for example, the rows $t = 10\\,\\text{s}$ and $t = 20\\,\\text{s}$: on both, $E_\\text{a} : E_\\text{o}$ is $5\\,\\%$."
+          },
+          {
+            "text": "The ratio of the energies decreases with time, because the loss energy grows faster than the useful energy.",
+            "feedback": "The loss energy and the useful energy both grow steadily with time, and their ratio stays the same. Check by calculating the ratio on two different rows."
+          }
+        ]
+      },
+      "optional": true,
+      "values": {
+        "laite": {
+          "lamppu": "hehkulamppu"
+        }
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what efficiency depends on",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Based on your table, write: how is efficiency calculated from energies and powers? Did it change when the running time changed, and why? What did the experiment tell you about the petrol engine?",
+      "model": "In experiment 1 the petrol engine took a constant power of $60\\,\\text{kW}$. The energies grew with time: when $t = 10\\,\\text{s}$, $E_\\text{o} = 600\\,\\text{kJ}$ and $E_\\text{a} = 150\\,\\text{kJ}$, and when $t = 20\\,\\text{s}$, $E_\\text{o} = 1200\\,\\text{kJ}$ and $E_\\text{a} = 300\\,\\text{kJ}$. The ratio $E_\\text{a} : E_\\text{o} = 25\\,\\%$ stayed the same, because at constant power $E = P \\cdot t$ and the time cancels. The same ratio is obtained from the powers: $15\\,\\text{kW} : 60\\,\\text{kW} = 25\\,\\%$. The remaining $75\\,\\%$ was losses, that is, heat. So efficiency does not depend on running time when the device runs steadily. The values are values of the simulation model. In the model the efficiency is constant even when the power taken changes, but that is an assumption of the model: the efficiency of a real engine depends on the load.",
+      "criteria": [
+        "I said that efficiency is the share of useful energy (or power) in the energy (or power) taken, and I gave a calculation with numbers.",
+        "I stated that the efficiency did not change when the running time changed.",
+        "I explained why the efficiency calculated from energies and from powers is the same (the time cancels).",
+        "I said that the losses of a petrol engine are a large part of the power taken and that they are heat."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the readouts of the simulation. Then return to the opening question: where does the electrical energy taken by the incandescent lamp go, and how can you measure how good a device is?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the efficiency of an LED lamp. The lamp takes a power of $8.0\\,\\text{W}$ and gives a light power of $2.4\\,\\text{W}$. The student calculates $\\eta = 8.0\\,\\text{W} : 2.4\\,\\text{W} = 3.3 = 330\\,\\%$ and concludes that the lamp produces more energy than it takes. What is the error?",
+      "choices": [
+        {
+          "text": "The ratio is the wrong way round: efficiency is the useful power divided by the power taken, $2.4 : 8.0 = 0.30$, that is, $30\\,\\%$.",
+          "correct": true,
+          "feedback": "Correct. Efficiency tells what share of the power taken is useful, so the power taken is the divisor. Efficiency is always below $100\\,\\%$, so the result $330\\,\\%$ should have raised suspicion straight away."
+        },
+        {
+          "text": "There is no error in the calculation: an LED lamp is so efficient that it produces more energy than it takes.",
+          "feedback": "No device produces extra energy, because energy is conserved: the sum of the useful energy and the losses is the energy taken. An efficiency of $330\\,\\%$ would break this, so the calculation is wrong."
+        },
+        {
+          "text": "The heat should also be counted in the efficiency, because the lamp warms up.",
+          "feedback": "The heat is a loss of the lamp, not a benefit. If the heat were counted in, the efficiency would be $(2.4 + 5.6) : 8.0 = 100\\,\\%$ and it would tell nothing about how good the lamp is."
+        },
+        {
+          "text": "The powers should first have been converted to energies by multiplying them by time, because efficiency is calculated from energies.",
+          "feedback": "The conversion is not necessary. Efficiency can be calculated directly from the powers, because both are multiplied by the same time and the time cancels out. The error is turning the ratio the wrong way round."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "Radiation energy of $4.5\\,\\text{MJ}$ hits a solar panel during one hour. The efficiency of the panel is $20\\,\\%$. What is the average electrical power of the panel? Give the answer in watts.",
+      "answer": 250,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "What do you want from the panel as useful output, and what is the energy taken here? Power tells how fast energy is transferred.",
+        "First calculate the useful energy $E_\\text{a} = \\eta \\cdot E_\\text{o}$ and then divide it by the time: $P_\\text{a} = E_\\text{a} : t$. Convert megajoules to joules and the hour to seconds.",
+        "$E_\\text{a} = 0.20 \\cdot 4.5 \\cdot 10^{6}\\,\\text{J} = 9.0 \\cdot 10^{5}\\,\\text{J}$ and $t = 1 \\cdot 3600\\,\\text{s}$, so $P_\\text{a} = \\dfrac{E_\\text{a}}{t}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1250,
+          "feedback": "You divided the whole energy taken by the time and forgot the efficiency. That is the power hitting the panel. Only $20\\,\\%$ of it becomes electricity, so multiply by the efficiency."
+        },
+        {
+          "value": 15000,
+          "feedback": "You used $60\\,\\text{s}$ in place of an hour. An hour has $60 \\cdot 60\\,\\text{s} = 3600\\,\\text{s}$, so divide the useful energy by $3600\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** energy hitting the panel $E_\\text{o} = 4.5\\,\\text{MJ}$, time $t = 1\\,\\text{h}$ and efficiency $\\eta = 20\\,\\%$\n\n**Find:** the average electrical power of the panel, that is, the useful power $P_\\text{a}$ in watts\n\n**Principle:** The electrical energy is the useful energy of the panel, and the efficiency tells what share of the energy that hits the panel becomes electricity. Power is energy divided by time, so the useful power is found from the useful energy and the time.\n\n**Formula:** $E_\\text{a} = \\eta \\cdot E_\\text{o}$ and $P_\\text{a} = \\dfrac{E_\\text{a}}{t}$, so $P_\\text{a} = \\dfrac{\\eta \\cdot E_\\text{o}}{t}$\n\n**Conversions:** $4.5\\,\\text{MJ} = 4.5 \\cdot 10^{6}\\,\\text{J}$, $1\\,\\text{h} = 60 \\cdot 60\\,\\text{s} = 3600\\,\\text{s}$ and $20\\,\\% = 20 \\cdot 0.01 = 0.20$.\n\n**Substitution:** $P_\\text{a} = \\dfrac{0.20 \\cdot 4.5 \\cdot 10^{6}\\,\\text{J}}{3600\\,\\text{s}} = \\dfrac{900\\,000\\,\\text{J}}{3600\\,\\text{s}} = 250\\,\\text{W}$\n\n**Answer:** $250\\,\\text{W}$ or $2.5 \\cdot 10^{2}\\,\\text{W}$, two significant figures, as in the energy $4.5\\,\\text{MJ}$ and the efficiency $20\\,\\%$.\n\n**Reasonableness:** The average power hitting the panel is $4.5 \\cdot 10^{6}\\,\\text{J} : 3600\\,\\text{s} = 1250\\,\\text{W}$, and one fifth of it is $250\\,\\text{W}$. The power is below the power hitting the panel, as it must be."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. At level 1 you calculate the efficiency or a quantity of its formula directly, at level 2 you need two steps or a unit conversion, and at level 3 you reason in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The efficiency of a device is $40\\,\\%$. Which statement is true?",
+      "choices": [
+        {
+          "text": "$60\\,\\%$ of the energy taken by the device disappears.",
+          "feedback": "Energy does not disappear. Energy is conserved, and the losses are energy that has changed into a useless form, usually heat. The energy taken is the sum of the useful energy and the losses."
+        },
+        {
+          "text": "$60\\,\\%$ of the energy taken by the device becomes losses, usually heat.",
+          "correct": true,
+          "feedback": "Correct. The useful energy is $40\\,\\%$ of the energy taken, and because of conservation of energy the remaining $60\\,\\%$ is losses. The losses are usually heat, which spreads into the surroundings."
+        },
+        {
+          "text": "The efficiency is small because the device has a low power.",
+          "feedback": "The power of a device does not determine its efficiency. A high-power and a low-power device can have the same efficiency, because efficiency is the share of useful energy in the energy taken."
+        },
+        {
+          "text": "The efficiency rises to $100\\,\\%$ when the device has been on long enough.",
+          "feedback": "Efficiency is a property of the device that stays roughly the same regardless of running time. In practice some of the energy always becomes heat, so efficiency is always below $100\\,\\%$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "An electric motor takes electrical energy of $2.5\\,\\text{kJ}$, and its losses are $0.50\\,\\text{kJ}$. What is the efficiency of the motor? Give the answer as a percentage.",
+      "answer": 80,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "What you know: the energy taken and the losses. You need the useful energy for the efficiency. Where can you get it?",
+        "Energy is conserved, so $E_\\text{o} = E_\\text{a} + E_\\text{h}$. Solve $E_\\text{a}$ from it and then calculate $\\eta = E_\\text{a} : E_\\text{o}$.",
+        "$E_\\text{a} = 2.5\\,\\text{kJ} - 0.50\\,\\text{kJ} = 2.0\\,\\text{kJ}$, so $\\eta = \\dfrac{2.0\\,\\text{kJ}}{2.5\\,\\text{kJ}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 20,
+          "feedback": "You calculated the share of the losses $E_\\text{h} : E_\\text{o} = 0.50 : 2.5$. Efficiency is the share of the useful energy, so you first need the useful energy $E_\\text{a} = E_\\text{o} - E_\\text{h}$."
+        },
+        {
+          "value": 125,
+          "feedback": "You divided the energy taken by the useful energy ($2.5 : 2.0$). The ratio is the wrong way round: in efficiency the energy taken is the divisor, and the result is always below $100\\,\\%$."
+        }
+      ],
+      "solution": "**Given:** energy taken $E_\\text{o} = 2.5\\,\\text{kJ}$ and losses $E_\\text{h} = 0.50\\,\\text{kJ}$\n\n**Find:** the efficiency $\\eta$ of the motor as a percentage\n\n**Principle:** Efficiency is the share of the useful energy in the energy taken. The useful energy was not given, but energy is conserved, so it is found as the difference between the energy taken and the losses.\n\n**Formula:** $E_\\text{a} = E_\\text{o} - E_\\text{h}$ and $\\eta = \\dfrac{E_\\text{a}}{E_\\text{o}}$, so $\\eta = \\dfrac{E_\\text{o} - E_\\text{h}}{E_\\text{o}}$\n\n**Conversions:** Not needed: all energies are in kilojoules, so the units cancel. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $E_\\text{a} = 2.5\\,\\text{kJ} - 0.50\\,\\text{kJ} = 2.0\\,\\text{kJ}$, so $\\eta = \\dfrac{2.0\\,\\text{kJ}}{2.5\\,\\text{kJ}} = 0.80 = 0.80 \\cdot 100\\,\\% = 80\\,\\%$\n\n**Answer:** $80\\,\\%$, two significant figures, as in the given energies.\n\n**Reasonableness:** The losses are $0.50 : 2.5 = 20\\,\\%$ of the energy taken, and $80\\,\\% + 20\\,\\% = 100\\,\\%$. The result is below $100\\,\\%$ and close to the typical $90\\,\\%$ of an electric motor."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain why efficiency is always below $100\\,\\%$ even though energy does not vanish anywhere. Use an incandescent lamp as an example.",
+      "criteria": [
+        "I say that energy is conserved: the energy taken is the sum of the useful energy and the losses.",
+        "I say that in an incandescent lamp most of the electrical energy becomes heat, not light.",
+        "I say that the heat is a loss here, because the purpose of the lamp is to give light.",
+        "I give an example with numbers, for instance $60\\,\\text{W}$ power taken, $3\\,\\text{W}$ of light and $57\\,\\text{W}$ of heat."
+      ],
+      "model": "Energy is conserved, so the energy taken by an incandescent lamp divides into useful energy, that is, light, and losses. In the lamp an electric current heats the filament very hot, and only a small part of the energy leaves as light. For example, of a $60\\,\\text{W}$ lamp about $3\\,\\text{W}$ is light and the remaining $57\\,\\text{W}$ is heat that spreads into the surroundings. The heat is a loss here, because the purpose of the lamp is to give light. The efficiency $3\\,\\text{W} : 60\\,\\text{W} = 5\\,\\%$ is below $100\\,\\%$, because the useful energy is only a part of the energy taken. No energy is lost: $3\\,\\text{W} + 57\\,\\text{W} = 60\\,\\text{W}$.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "The scale shows $0.5\\,\\text{g}$ when empty. The mean of ten weighings of an object is $20.4\\,\\text{g}$, and the readings vary only between $20.3\\,\\text{g}$ and $20.5\\,\\text{g}$. Which error dominates and what is the mass of the object?",
+    "a": "Systematic error dominates: the readings are close to each other, so random error is small ($\\Delta m = 0.1\\,\\text{g}$), but the zero reading $0.5\\,\\text{g}$ is in every reading. The mass is $m = 20.4\\,\\text{g} - 0.5\\,\\text{g} = 19.9\\,\\text{g}$."
+  },
+  {
+    "q": "Why does taking the mean reduce random error but not systematic error?",
+    "a": "Random error pushes in a different direction each time, so results that are too large and too small partly cancel each other in the mean. A systematic error is in the same direction in every measurement, so it is just as large in the mean too."
+  },
+  {
+    "q": "A measurement result is $t = 4.52\\,\\text{s} \\pm 0.09\\,\\text{s}$. Calculate the relative error as a percentage.",
+    "a": "$\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\% = \\dfrac{0.09\\,\\text{s}}{4.52\\,\\text{s}} \\cdot 100\\,\\% \\approx 2\\,\\%$, one significant figure like the error estimate $0.09\\,\\text{s}$."
+  }
+]

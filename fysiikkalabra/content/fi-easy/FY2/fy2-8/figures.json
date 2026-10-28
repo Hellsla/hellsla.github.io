@@ -1,0 +1,23 @@
+{
+ "Periaatekuva, ei mittakaavassa: kasvihuoneilmiö. Auringon säteily (oranssi nuoli), näkyvä valo ja lähi-infrapuna, kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä ylöspäin (punaiset nuolet), ja ilmakehän kasvihuonekaasut imevät sen. Kaasut säteilevät energian uudelleen: osa palaa takaisin alas maanpinnalle ja osa karkaa avaruuteen. Nuolten paksuus havainnollistaa suuntaa, ei tarkkoja energioita.": "Periaatekuva, ei mittakaavassa: kasvihuoneilmiö. Auringon säteily (oranssi nuoli) on näkyvää valoa ja lähi-infrapunaa. Se kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä ylöspäin (punaiset nuolet). Ilmakehän kasvihuonekaasut imevät sen. Kaasut säteilevät energian uudelleen. Osa energiasta palaa takaisin alas maanpinnalle ja osa karkaa avaruuteen. Nuolten paksuus näyttää suunnan, ei tarkkoja energioita.",
+ "ilmakehä (kasvihuonekaasut)": "ilmakehä (kasvihuonekaasut)",
+ "maanpinta": "maanpinta",
+ "auringon": "auringon",
+ "säteily": "säteily",
+ "lämpö-": "lämpö-",
+ "takaisin": "takaisin",
+ "alas": "alas",
+ "avaruuteen": "avaruuteen",
+ "Vaakapylväskaavio sähköntuotannon elinkaaren päästökertoimista yksikössä g hiilidioksidiekvivalenttia kilowattituntia kohti (IPCC AR5, työryhmä III, liite III, pyöristetyt mediaanit): kivihiili 820, maakaasu 490, biomassa 230, aurinkosähkö 41–48, vesivoima 24, ydinvoima 12 ja tuulivoima 11–12. Pylväiden pituudet ovat mittakaavassa: kivihiilen pylväs on noin 70 kertaa ydinvoiman pylvään pituinen. Fossiilisten polttoaineiden pylväät ovat tummanharmaita, muiden tuotantotapojen vaaleanharmaita; selite on kuvan alla.": "Vaakapylväskaavio sähköntuotannon elinkaaren päästökertoimista. Yksikkö on gramma hiilidioksidiekvivalenttia kilowattituntia kohti (IPCC AR5, työryhmä III, liite III, pyöristetyt mediaanit). Arvot ovat: kivihiili 820, maakaasu 490, biomassa 230, aurinkosähkö 41–48, vesivoima 24, ydinvoima 12 ja tuulivoima 11–12. Pylväiden pituudet ovat mittakaavassa. Kivihiilen pylväs on noin 70 kertaa ydinvoiman pylvään pituinen. Fossiilisten polttoaineiden pylväät ovat tummanharmaita ja muiden tuotantotapojen pylväät vaaleanharmaita. Selite on kuvan alla.",
+ "CO": "CO",
+ "-ekv.": "-ekv.",
+ "kivihiili": "kivihiili",
+ "maakaasu": "maakaasu",
+ "biomassa": "biomassa",
+ "aurinko": "aurinko",
+ "vesivoima": "vesivoima",
+ "ydinvoima": "ydinvoima",
+ "tuuli": "tuuli",
+ "fossiilinen": "fossiilinen",
+ "muu": "muu"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "The data points lie roughly along a straight line, but not exactly. How do you draw a line on the graph, and why are the points not joined into a broken line?",
+    "a": "The line is drawn so that it runs through the middle of the set of points: it is close to all the points, and there are roughly equal numbers of points on both sides of it. A broken line would join the random measurement errors too, but a straight line shows the general relationship in the phenomenon."
+  },
+  {
+    "q": "A line passes through the points $(2.0\\,\\text{s};\\ 5.0\\,\\text{m})$ and $(6.0\\,\\text{s};\\ 11.0\\,\\text{m})$. What is its equation $s = kt + b$?",
+    "a": "$k = \\dfrac{11.0\\,\\text{m} - 5.0\\,\\text{m}}{6.0\\,\\text{s} - 2.0\\,\\text{s}} = 1.5\\,\\text{m/s}$ and $b = 5.0\\,\\text{m} - 1.5\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 2.0\\,\\text{s} = 2.0\\,\\text{m}$, so $s = 1.5\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 2.0\\,\\text{m}$."
+  },
+  {
+    "q": "The line of the measurements crosses the $y$-axis at $b = 80\\,\\text{g}$. What does $b$ tell you when $y$ is the combined mass of a measuring cylinder and a liquid and $x$ is the volume of the liquid? Is the mass directly proportional to the volume?",
+    "a": "The constant term $b$ is the combined mass when there is $0\\,\\text{ml}$ of liquid, that is, the mass of the empty measuring cylinder, $80\\,\\text{g}$. The combined mass is not directly proportional to the volume, because the line does not pass through the origin: doubling the volume does not double the combined mass."
+  }
+]

@@ -1,0 +1,20 @@
+{
+ "Periaatekuva, ei mittakaavassa: kasa polttopuuta sisältää kemiallista energiaa. Palaessaan puu muuttuu liekiksi, jossa kemiallinen energia vapautuu lämpönä ja valona. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla.": "Schematic illustration, not to scale: a pile of firewood contains chemical energy. When it burns, the wood turns into a flame in which the chemical energy is released as heat and light. The energy released is found by multiplying the mass of the fuel by the heat of combustion.",
+ "kemiallinen": "chemical",
+ "energia": "energy",
+ "palaminen": "burning",
+ "lämpö ja valo": "heat and light",
+ "Vaakapylväskaavio polttoaineiden lämpöarvoista yksikössä MJ/kg, pyöristettyjä arvoja: maakaasu 49, bensiini 43, diesel 43, kivihiili 26, puupelletti 17, polttopuu 15 ja turve 10. Pylväiden pituudet ovat mittakaavassa: maakaasun pylväs on noin viisi kertaa turpeen pylvään pituinen.": "Horizontal bar chart of the heats of combustion of fuels in MJ/kg, rounded values: natural gas 49, petrol 43, diesel 43, coal 26, wood pellets 17, firewood 15 and peat 10. The bar lengths are to scale: the bar for natural gas is about five times as long as the bar for peat.",
+ "MJ/kg": "MJ/kg",
+ "maakaasu": "natural gas",
+ "bensiini": "petrol",
+ "diesel": "diesel",
+ "kivihiili": "coal",
+ "puupelletti": "wood pellets",
+ "polttopuu": "firewood",
+ "turve": "peat",
+ "Periaatekuva ravintoarvomerkinnästä, esimerkki eikä todellinen tuote: pakkauksessa lukee energia 2200 kJ sadassa grammassa. Kun energia muutetaan megajouleiksi ja massa kilogrammoiksi, saadaan lämpöarvoa vastaava luku 22 MJ/kg.": "Schematic illustration of a nutrition label, an example and not a real product: the package says energy 2200 kJ per hundred grams. When the energy is converted to megajoules and the mass to kilograms, you get a number corresponding to the heat of combustion, 22 MJ/kg.",
+ "Ravintoarvo": "Nutritional value",
+ "sadassa grammassa": "per 100 g",
+ "esimerkki": "example"
+}

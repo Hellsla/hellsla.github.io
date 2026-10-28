@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-6-L1-01",
+      "level": 1,
+      "text": "A ball is released from rest, and air resistance is ignored. What is the speed of the ball when $3.0\\,\\text{s}$ have passed since the start of the fall?",
+      "answer": 29.43,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-02",
+      "level": 1,
+      "text": "An apple comes off a branch and falls from rest to the ground in $0.80\\,\\text{s}$. Air resistance is ignored. What is the speed of the apple when it hits the ground?",
+      "answer": 7.848,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-03",
+      "level": 1,
+      "text": "On the surface of the Moon the acceleration of free fall is $1.62\\,\\text{m/s}^2$. An astronaut drops a stone, which falls from rest for $4.0\\,\\text{s}$. What is the speed of the stone after this time?",
+      "answer": 6.48,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-04",
+      "level": 1,
+      "text": "The $(t, v)$ graph of a freely falling object is a straight line through the points $(0\\,\\text{s};\\, 0\\,\\text{m/s})$ and $(5.0\\,\\text{s};\\, 49\\,\\text{m/s})$. What is the acceleration of free fall?",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-05",
+      "level": 1,
+      "text": "On Mars the acceleration of free fall is $3.71\\,\\text{m/s}^2$. An object falls on Mars from rest for $6.0\\,\\text{s}$ without air resistance. What is the speed of the object?",
+      "answer": 22.26,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-6-L2-01",
+      "level": 2,
+      "text": "A ball is released from rest and hits the ground at a speed of $12.0\\,\\text{m/s}$. Air resistance is ignored. How long did the ball fall?",
+      "answer": 1.223242,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-02",
+      "level": 2,
+      "text": "A stone is released from rest and hits the water at a speed of $54.0\\,\\text{km/h}$. Air resistance is ignored. How long did the stone fall?",
+      "answer": 1.529052,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-03",
+      "level": 2,
+      "text": "The speed of a falling object is $12.0\\,\\text{m/s}$ at some moment, and there is no air resistance. How large is the speed $1.50\\,\\text{s}$ later?",
+      "answer": 26.715,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-04",
+      "level": 2,
+      "text": "The speed of a freely falling object is measured at two moments: $9.7\\,\\text{m/s}$ at the moment $t = 1.0\\,\\text{s}$ and $29.3\\,\\text{m/s}$ at the moment $t = 3.0\\,\\text{s}$. Calculate the acceleration of free fall from these measurements.",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-6-L3-01",
+      "level": 3,
+      "text": "In a vacuum chamber two balls with masses $0.50\\,\\text{kg}$ and $4.0\\,\\text{kg}$ are dropped from rest at the same time. How many times as large is the speed of the heavier ball as the speed of the lighter ball when $1.5\\,\\text{s}$ have passed since the start of the fall?",
+      "answer": 1.0,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-02",
+      "level": 3,
+      "text": "An unknown planet has no atmosphere. There the speed of a stone dropped from rest is $14.8\\,\\text{m/s}$ after $4.0\\,\\text{s}$. After how many seconds from the start of the fall is the speed of the stone $30.0\\,\\text{m/s}$?",
+      "answer": 8.108108,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-03",
+      "level": 3,
+      "text": "A ball is dropped from rest in air, and its speed is measured to be $25.0\\,\\text{m/s}$ after $3.00\\,\\text{s}$. By how many $\\text{m/s}$ is the speed smaller than the speed the ball would have in free fall without air resistance?",
+      "answer": 4.43,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

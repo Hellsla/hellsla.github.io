@@ -1,0 +1,20 @@
+{
+  "id": "fy1-7",
+  "course": "FY1",
+  "title": "Tiheys: m = ρV",
+  "goals": [
+    "Temaattinen tarkastelu: tiheysmittaukset",
+    "Taidot: suoraan verrannollisuus, esim. m = ρV; suureen ratkaiseminen lineaarisesta mallista"
+  ],
+  "prerequisites": [
+    "fy1-4"
+  ],
+  "glossary": [
+    "tiheys",
+    "massa",
+    "tilavuus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

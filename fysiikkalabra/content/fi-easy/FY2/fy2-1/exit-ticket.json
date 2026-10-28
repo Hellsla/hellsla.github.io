@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Leluauton paristosta vapautuu kemiallista energiaa $5{,}0\\,\\text{kJ}$. Auto saa liike-energiaa $1{,}2\\,\\text{kJ}$. Mihin energialajiin loppu energia muuttuu, ja kuinka paljon sitä on?",
+    "a": "Lämpöenergiaksi, koska energia säilyy: $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{k} = 5{,}0\\,\\text{kJ} - 1{,}2\\,\\text{kJ} = 3{,}8\\,\\text{kJ}$."
+  },
+  {
+    "q": "Sähkölaskussa maksetaan ”kulutetusta” sähköenergiasta. Miksi energiaa ei silti voi kuluttaa loppuun?",
+    "a": "Energia ei häviä vaan muuttuu toiseen muotoon. Laite muuttaa sähköenergian esimerkiksi valoksi, liikkeeksi ja lämmöksi. Laskussa maksetaan siitä, että helposti hyödynnettävä sähköenergia muuttuu muiksi muodoiksi. Lopulta energia on lämpöenergiaa, joka leviää ympäristöön."
+  },
+  {
+    "q": "Skeittari laskee kitkallisessa half-pipessä reunalta pohjalle. Mitkä energiat muuttuvat ja miten? Mikä pysyy samana?",
+    "a": "Potentiaalienergia pienenee ja liike-energia kasvaa. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi. Siksi $E_\\text{p} + E_\\text{k}$ pienenee ja $E_\\text{lämpö}$ kasvaa. Kokonaisenergia $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$ pysyy samana."
+  }
+]

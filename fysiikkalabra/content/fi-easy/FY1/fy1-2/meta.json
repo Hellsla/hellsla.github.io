@@ -1,0 +1,23 @@
+{
+  "id": "fy1-2",
+  "course": "FY1",
+  "title": "Suureet, yksiköt ja SI-järjestelmä",
+  "goals": [
+    "LOPS FY1: suure ja yksikkö sekä SI-järjestelmä",
+    "Taidot: yksikkömuunnokset, merkitsevät numerot, kymmenpotenssit ja etuliitteet"
+  ],
+  "prerequisites": [
+    "fy1-1"
+  ],
+  "glossary": [
+    "suure",
+    "yksikkö",
+    "SI-järjestelmä",
+    "etuliite",
+    "merkitsevä numero",
+    "astronominen yksikkö"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -791,7 +791,20 @@
     "practise_link": "{{competency}}, luku {{chapter}}",
     "course_lead": "Moduulin lopuksi voit kokeilla, osaatko käyttää oppimaasi itse niin kuin ylioppilaskokeessa. Mallivastaukset ja pisteytysohjeet aukeavat, kun olet ratkaissut tehtävän itse.",
     "course_count": "{{n}} tehtävää · {{points}} pistettä",
-    "kind_own": "oma työ"
+    "kind_own": "oma työ",
+    "step_names": {
+      "Annettu": "Annettu",
+      "Kysytty": "Kysytty",
+      "Periaate": "Periaate",
+      "Kaava": "Kaava",
+      "Muunnokset": "Muunnokset",
+      "Sijoitus": "Sijoitus",
+      "Vastaus": "Vastaus",
+      "Järkevyys": "Järkevyys",
+      "Mallivastaus": "Mallivastaus",
+      "Kuvaaja": "Kuvaaja",
+      "Kuvaajan lukeminen": "Kuvaajan lukeminen"
+    }
   },
   "competency": {
     "concept": "Käsitteellinen ymmärrys",

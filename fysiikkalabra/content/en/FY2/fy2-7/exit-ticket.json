@@ -1,0 +1,14 @@
+[
+  {
+    "q": "$800\\,\\text{MWh}$ is fed into the electricity grid, and $4.0\\,\\%$ of the sent energy is lost in the grid. How much energy arrives?",
+    "a": "$96.0\\,\\%$ arrives, so $\\eta = 0.960$. $E_\\text{arrived} = \\eta\\, E_\\text{sent} = 0.960 \\cdot 800\\,\\text{MWh} = 768\\,\\text{MWh}$."
+  },
+  {
+    "q": "Why is long-distance electricity transmission done at high voltage?",
+    "a": "The same power is transferred at high voltage with a smaller electric current. The larger the current, the more the wire heats up, so at high voltage the loss that turns into heat is small."
+  },
+  {
+    "q": "The loss power of a district heating pipe is $2.0\\,\\text{kW}$. How much energy is lost in the pipe in a day? Where does the lost energy go?",
+    "a": "$E_\\text{loss} = P_\\text{loss} \\cdot t = 2.0\\,\\text{kW} \\cdot 24\\,\\text{h} = 48\\,\\text{kWh}$. The energy does not disappear but turns into heat in the surroundings, that is, in the ground."
+  }
+]

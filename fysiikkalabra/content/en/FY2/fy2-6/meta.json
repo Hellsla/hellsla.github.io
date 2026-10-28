@@ -1,0 +1,25 @@
+{
+  "id": "fy2-6",
+  "course": "FY2",
+  "title": "Ways of producing energy and how they compare",
+  "goals": [
+    "LOPS FY2: knows different forms of energy and ways of producing energy",
+    "LOPS FY2: can compare orders of magnitude related to different ways of producing energy and their environmental effects",
+    "Thematic study: national energy production and consumption"
+  ],
+  "prerequisites": [
+    "fy2-4",
+    "fy2-5"
+  ],
+  "glossary": [
+    "energiantuotanto",
+    "renewable energy",
+    "ydinvoima",
+    "vesivoima",
+    "tuulivoima",
+    "aurinkoenergia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

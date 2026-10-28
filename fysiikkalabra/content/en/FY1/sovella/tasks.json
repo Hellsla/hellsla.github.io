@@ -1,0 +1,291 @@
+{
+  "intro": "Two tasks bring together the skills of measuring, graphs and investigating from this module. In the third you assess your own investigation report.",
+  "tasks": [
+    {
+      "id": "fy1-s1",
+      "title": "A rolling ball on video",
+      "source": "example",
+      "source_note": "The data was made up as an example of this kind of measurement. It is not the result of a real measurement.",
+      "text": "A student lets a ball roll down a short ramp onto the floor and films the motion from the side with a phone. A video analysis app gives the position $s$ of the centre of the ball, measured from the starting point, every $0.20\\,\\text{s}$. The lower end of the ramp is about $16\\,\\text{cm}$ from the starting point. In the video, one pixel corresponds to $2.5\\,\\text{mm}$ on the floor.\n\n| $t\\ (\\text{s})$ | $s\\ (\\text{mm})$ |\n|---|---|\n| $0.0$ | $0.0$ |\n| $0.2$ | $38.9$ |\n| $0.4$ | $157.9$ |\n| $0.6$ | $320.9$ |\n| $0.8$ | $477.4$ |\n| $1.0$ | $640.2$ |\n| $1.2$ | $799.2$ |\n| $1.4$ | $957.3$ |\n| $1.6$ | $1120.0$ |\n| $1.8$ | $1277.2$ |\n| $2.0$ | $1439.6$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Draw the $(t, s)$ graph of the data and fit a model to the points it suits.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The line is fitted to the points taken on the floor; the points at the start of the ramp do not affect it."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Use the graph to determine the speed of the ball on the floor. Justify which measurement points you used.",
+          "answer": {
+            "value": 0.8,
+            "unit": "m/s"
+          },
+          "criteria": [
+            {
+              "text": "Justifies why the speed is determined from the points taken on the floor ($t \\geq 0.4\\,\\text{s}$ or $t \\geq 0.6\\,\\text{s}$): on the ramp the speed is still increasing.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 0.80\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "The app gives the positions to a precision of $0.1\\,\\text{mm}$. Estimate how precisely the position of the ball is really known. Give the speed from part b to a justified precision.",
+          "criteria": [
+            {
+              "text": "Estimates the uncertainty of the position as about one pixel, that is, a few millimetres, and bases the estimate on the pixel size of the video.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Explains that the decimals on the screen come from calculation and do not tell the precision of the measurement.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Gives the speed with two or three significant figures and justifies the number by the uncertainty of the position and the scatter of the points.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The student's partner extends the fitted line and concludes that after $10\\,\\text{s}$ the ball is about $7.8\\,\\text{m}$ from the starting point. Evaluate this conclusion. Also explain why the fitted line does not pass through the origin.",
+          "criteria": [
+            {
+              "text": "States that the model has been tested only over the measurement interval $0.4\\text{–}2.0\\,\\text{s}$ and that extending the line to $10\\,\\text{s}$ is uncertain.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Names a physical reason why the motion does not continue the same way, for example rolling resistance slows the ball or the floor ends.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains the negative constant term: on the ramp the ball moved more slowly than its speed on the floor, so the line of the floor motion crosses the $s$-axis below the origin.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy1-5",
+        "experiment": "fy1-3",
+        "concept": "fy1-5",
+        "transfer": "fy1-4"
+      }
+    },
+    {
+      "id": "fy1-s2",
+      "title": "A race between two balls",
+      "source": "example",
+      "source_note": "The lab report and the measurements were made up as an example.",
+      "text": "A group investigated whether the mass of a ball affects how long the ball takes to roll down a ramp. Here is the group's lab report.\n\n> **Research question.** Do heavy balls roll faster?\n>\n> **Hypothesis.** A heavy ball is faster, because gravity pulls it more.\n>\n> **Equipment.** A ramp $1.2\\,\\text{m}$ long, a pile of books, a steel ball ($110\\,\\text{g}$), a solid plastic ball of the same size ($16\\,\\text{g}$) and a phone stopwatch app that shows thousandths of a second.\n>\n> **Method.** We raised the upper end of the ramp on a pile of books. We released the steel ball from the upper end of the ramp, and Eetu started the timing when the ball set off. The plastic ball hardly started to move, so we gave it a small push from roughly the same spot. In between, one book was taken from the pile, because it was needed in another lesson. The timing was stopped when the ball hit the wall at the end of the ramp.\n>\n> **Results.** Steel ball $2.437\\,\\text{s}$, plastic ball $2.109\\,\\text{s}$.\n>\n> **Conclusion.** The plastic ball was $0.328\\,\\text{s}$ faster, so the hypothesis is wrong: a light ball rolls faster. Light objects always move faster than heavy ones.\n\nAfter the teacher's feedback, the group corrected their method and measured again:\n\n| Measurement | steel ball $t\\ (\\text{s})$ | plastic ball $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2.31$ | $2.40$ |\n| $2$ | $2.45$ | $2.33$ |\n| $3$ | $2.38$ | $2.47$ |\n| $4$ | $2.29$ | $2.36$ |\n| $5$ | $2.42$ | $2.44$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 8,
+          "text": "Find four significant weaknesses in the first lab report. For each one, tell why it weakens the investigation and how it is fixed.",
+          "criteria": [
+            {
+              "text": "The first weakness is named, and it is justified why it weakens the investigation.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The fix for the first weakness removes the problem.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The second weakness is named, and it is justified why it weakens the investigation.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The fix for the second weakness removes the problem.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The third weakness is named, and it is justified why it weakens the investigation.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The fix for the third weakness removes the problem.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The fourth weakness is named, and it is justified why it weakens the investigation.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "The fix for the fourth weakness removes the problem.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "From the new measurements, calculate the mean rolling time of each ball and its uncertainty. Can you say from the measurements that the rolling times of the balls differ?",
+          "answer": {
+            "value": 0.03,
+            "unit": "s"
+          },
+          "criteria": [
+            {
+              "text": "The means are correct: steel $2.37\\,\\text{s}$, plastic $2.40\\,\\text{s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "For example half of the range: $\\Delta t \\approx 0.08\\,\\text{s}$ and $0.07\\,\\text{s}$."
+            },
+            {
+              "text": "Compares the difference of the means, $0.03\\,\\text{s}$, with the uncertainties and concludes that a difference cannot be shown.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The means are given to the nearest hundredth of a second, like the measurements."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Write a new conclusion for the group.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Answers the question of whether mass affects the rolling time."
+            },
+            {
+              "text": "States the result with its uncertainties: the times are the same within the measurement precision.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Limits the conclusion to the conditions studied (solid balls of the same size, this ramp) and does not generalise it to all objects.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "math": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy1-s3",
+      "kind": "own",
+      "title": "Assess your own investigation report",
+      "text": "In the chapter *Your own experimental investigation: planning, carrying out and reporting* you planned and carried out your own experiment and wrote a report about it. Take out your report and assess it with the criteria below. The criteria also tell what belongs in a good investigation report, so you can use them already while writing your report.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "own",
+          "points": 14,
+          "text": "Assess your report.",
+          "criteria": [
+            {
+              "text": "The research question concerns the relationship between two measurable quantities, and the hypothesis is a justified prediction that a measurement can disprove.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "The method shows the varied quantity, the measured quantity and the quantities kept constant, the equipment and the measurement range so precisely that someone else could repeat the experiment.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "The measurements are in a table that shows the quantities, the units and the repeats.",
+              "tag": "communication",
+              "points": 2
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1
+            },
+            {
+              "text": "The result (for example a mean or a slope) is calculated correctly, and its uncertainty is estimated.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "The conclusion compares the result with the hypothesis and does not generalise outside the measurement range."
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The report also tells how the experiment could be improved."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "communication": "fy1-8",
+        "graph": "fy1-4",
+        "math": "fy1-3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fy1-4",
+  "course": "FY1",
+  "title": "Graphing and fitting a straight line",
+  "goals": [
+    "LOPS FY1: presenting results graphically",
+    "LOPS FY1: graphical model and linear model",
+    "Skills: fitting a straight line and interpreting its equation, finding the slope from a graph"
+  ],
+  "prerequisites": [
+    "fy1-3"
+  ],
+  "glossary": [
+    "kuvaaja",
+    "linear model",
+    "kulmakerroin",
+    "fitting a straight line"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

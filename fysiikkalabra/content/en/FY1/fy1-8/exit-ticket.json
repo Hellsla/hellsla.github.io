@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What is the difference between the independent and the dependent variable? Give an example from the toy car experiment.",
+    "a": "The investigator chooses the values of the independent variable, for example the distance $s$. The value of the dependent variable is read from an instrument, for example the time $t$. Other things, such as the car, the batteries and the surface, are kept constant, so that the change in the result can be linked to the changed variable."
+  },
+  {
+    "q": "The uncertainty of the time is $0.2\\,\\text{s}$. How long a time must be measured at least for the relative uncertainty to be at most $2.0\\,\\%$?",
+    "a": "$t \\ge \\dfrac{\\Delta t}{\\varepsilon_\\text{max}} = \\dfrac{0.2\\,\\text{s}}{0.020} = 10\\,\\text{s}$."
+  },
+  {
+    "q": "What goes in a lab record, and why is a measurement that looks unusual not quietly deleted?",
+    "a": "The lab record contains the research question, the date, the equipment and its accuracy, the controlled variables, the readings with their units, and observations. An unusual measurement is marked and explained, because deleting it would choose the result to fit the expectation, and the investigation would no longer test the hypothesis."
+  }
+]

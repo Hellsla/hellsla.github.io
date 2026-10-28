@@ -1,0 +1,23 @@
+{
+  "id": "fy1-3",
+  "course": "FY1",
+  "title": "Measuring and the reliability of a measurement",
+  "goals": [
+    "LOPS FY1: measuring, collecting results and assessing reliability",
+    "Clarification: sources of systematic and random error, repeatability of experiments"
+  ],
+  "prerequisites": [
+    "fy1-2"
+  ],
+  "glossary": [
+    "mittaus",
+    "mittausvirhe",
+    "gross error",
+    "systematic error",
+    "satunnaisvirhe",
+    "toistettavuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

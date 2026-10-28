@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-5-L1-01",
+      "level": 1,
+      "text": "Pyöräilijä ajaa tasaisesti nopeudella 5,5 m/s. Kuinka pitkän matkan hän kulkee 20 sekunnissa?",
+      "answer": 110,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-02",
+      "level": 1,
+      "text": "Juoksija kulkee tasaisella vauhdilla 360 m ajassa 45 s. Mikä on hänen nopeutensa?",
+      "answer": 8.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-03",
+      "level": 1,
+      "text": "Kävelijä etenee tasaisesti nopeudella 1,4 m/s. Kuinka monta sekuntia 560 m:n matka kestää?",
+      "answer": 400,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-04",
+      "level": 1,
+      "text": "Kappale liikkuu tasaisesti lähtöpisteestään ja kulkee ajassa 4,0 s matkan 18 m. Kuinka pitkän matkan se kulkee ajassa 10 s?",
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-05",
+      "level": 1,
+      "text": "Tasaisesti liikkuvan kärryn paikka lähtöpisteestä mitattuna on hetkellä 2,0 s kohdassa 7,0 m ja hetkellä 6,0 s kohdassa 21 m. Laske kärryn nopeus paikan muutoksen ja aikavälin avulla.",
+      "answer": 3.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-5-L2-01",
+      "level": 2,
+      "text": "Auto ajaa tasaisella nopeudella 54 km/h. Kuinka pitkän matkan se kulkee 14 sekunnissa? Vastaa metreinä.",
+      "answer": 210,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-02",
+      "level": 2,
+      "text": "Linja-auto ajaa tasaisesti nopeudella 36 km/h. Kuinka monta sekuntia 4,5 km:n matka kestää?",
+      "answer": 450,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-03",
+      "level": 2,
+      "text": "Retkeilijä on kohdassa, joka on 1,5 km:n päässä mökistä. Hän kävelee suoraa polkua mökistä poispäin tasaisesti nopeudella 1,5 m/s. Kuinka kaukana mökistä hän on 10 minuutin kuluttua? Vastaa kilometreinä.",
+      "answer": 2.4,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-04",
+      "level": 2,
+      "text": "Salaman jälkeen ukkosen jyrähdys kuuluu 5,0 s kuluttua. Ääni etenee ilmassa tasaisesti nopeudella 343 m/s, ja valon kulkuaika on niin pieni, että se jätetään huomiotta. Kuinka kaukana salama iski? Vastaa kilometreinä.",
+      "answer": 1.7,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-5-L3-01",
+      "level": 3,
+      "text": "Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018. Silloin sen etäisyys Auringosta oli 119,7 AU (NASA/JPL). Sen nopeus Aurinkoon nähden on 15,341 km/s (JPL). Oleta nopeus vakioksi. Kuinka monta vuorokautta heliopaussin ylityksestä kuluu, ennen kuin luotain on mallin mukaan 150 AU:n päässä Auringosta? Käytä arvoja 1 AU = 149 597 870,7 km ja 1 vrk = 86 400 s. Tulos on mallin arvo.",
+      "answer": 3420,
+      "unit": "vrk",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-02",
+      "level": 3,
+      "text": "Voyager 2 on mallin mukaan 150 AU:n etäisyydellä Maasta. Radiosignaali etenee tyhjiössä tasaisesti nopeudella 299 792 458 m/s. Komento lähtee Maasta luotaimelle. Luotain vastaa, ja vastaus saapuu Maahan. Kuinka monta tuntia tähän kuluu? Luotaimen liike ja sen käsittelyaika vastausta varten jätetään huomiotta. Käytä arvoa 1 AU = 149 597 870,7 km. Perustele, miksi liikkeen voi jättää huomiotta.",
+      "answer": 41.6,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-03",
+      "level": 3,
+      "text": "Koulun ovelta lähtee kaksi ystävää samaa suoraa katua pitkin samaan suuntaan. Ensimmäinen kävelee tasaisesti nopeudella 1,5 m/s. Toinen lähtee ovelta 40 s myöhemmin pyörällä ja ajaa tasaisesti nopeudella 4,5 m/s. Kuinka kaukana ovelta pyöräilijä saavuttaa kävelijän?",
+      "answer": 90,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

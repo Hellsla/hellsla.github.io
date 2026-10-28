@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-3-L1-01",
+      "level": 1,
+      "text": "A kettle transforms $1.80 \\cdot 10^{5}\\,\\text{J}$ of electrical energy in $90.0\\,\\text{s}$. Calculate the power of the kettle.",
+      "answer": 2000,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-02",
+      "level": 1,
+      "text": "The power of an LED lamp is $8.0\\,\\text{W}$. How much energy does the lamp transform in $5.0\\,\\text{s}$?",
+      "answer": 40,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-03",
+      "level": 1,
+      "text": "The power of a microwave oven is $1200\\,\\text{W}$. How long does it take for the oven to transform $72\\,000\\,\\text{J}$ of energy?",
+      "answer": 60,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-04",
+      "level": 1,
+      "text": "The power of an electric sauna heater is $3.5\\,\\text{kW}$. Give the power in watts.",
+      "answer": 3500,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-05",
+      "level": 1,
+      "text": "The power of a heater is $1.5\\,\\text{kW}$, and it is on for $2.0\\,\\text{h}$. How much energy does it consume in kilowatt-hours?",
+      "answer": 3.0,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-3-L2-01",
+      "level": 2,
+      "text": "The power of an electric sauna heater is $6.0\\,\\text{kW}$, and it is on for $150\\,\\text{min}$. The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$. How much does heating the sauna cost? Give the answer in euros.",
+      "answer": 3.0,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-02",
+      "level": 2,
+      "text": "A phone battery can hold $15\\,\\text{Wh}$ of energy. Give the energy in joules.",
+      "answer": 54000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-03",
+      "level": 2,
+      "text": "A device consumes $0.40\\,\\text{kWh}$ of energy in $20\\,\\text{min}$. Calculate the average power of the device in watts.",
+      "answer": 1200,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-04",
+      "level": 2,
+      "text": "In a shop six emergency exit lights are on, each at a power of $1.5\\,\\text{W}$, for the whole year. A year has $8760\\,\\text{h}$. How much energy do the lights consume in a year in total? Give the answer in kilowatt-hours.",
+      "answer": 79,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-3-L3-01",
+      "level": 3,
+      "text": "A light is on for $4.0\\,\\text{h}$ a day for the whole year, $365\\,\\text{days}$. An old incandescent bulb ($60\\,\\text{W}$) is replaced with an LED lamp ($8.0\\,\\text{W}$). The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$. How many euros are saved in a year?",
+      "answer": 15,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L3-02",
+      "level": 3,
+      "text": "A household consumes $3.0 \\cdot 10^{3}\\,\\text{kWh}$ of electrical energy in a year. A year has $8760\\,\\text{h}$. Calculate the average power of the household in watts. Is it greater or smaller than the sum of the rated powers of the household's appliances, and why?",
+      "answer": 340,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L3-03",
+      "level": 3,
+      "text": "An electric car consumes $18\\,\\text{kWh}$ per hundred kilometres when driving. The car is charged from a wall socket at a power of $2.3\\,\\text{kW}$ for $8.0\\,\\text{h}$. How long a distance does the charging energy last, when charging losses are ignored?",
+      "answer": 100,
+      "unit": "km",
+      "tolerance": 0.03
+    }
+  ]
+}

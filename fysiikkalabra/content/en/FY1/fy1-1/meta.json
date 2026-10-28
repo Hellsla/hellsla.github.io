@@ -1,0 +1,26 @@
+{
+  "id": "fy1-1",
+  "course": "FY1",
+  "title": "Physics as a science and the scales of the universe",
+  "goals": [
+    "LOPS FY1: becomes familiar with physics as a systematic science based on experiments",
+    "LOPS FY1: becomes familiar with the scales of matter and of the universe"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "fysiikka",
+    "malli",
+    "kymmenpotenssi",
+    "suuruusluokka",
+    "valovuosi",
+    "molekyyli",
+    "atomiydin",
+    "alkeishiukkanen",
+    "galaksi",
+    "observable universe",
+    "perusvuorovaikutus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

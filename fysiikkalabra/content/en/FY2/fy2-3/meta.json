@@ -1,0 +1,20 @@
+{
+  "id": "fy2-3",
+  "course": "FY2",
+  "title": "Power: P = ΔE/Δt",
+  "goals": [
+    "LOPS FY2: energy production, power, efficiency and energy transfer",
+    "Clarification: power is introduced as the quantity P = ΔE/Δt; the concept of work is not yet used in this module"
+  ],
+  "prerequisites": [
+    "fy2-2"
+  ],
+  "glossary": [
+    "teho",
+    "watti",
+    "kilowattitunti"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

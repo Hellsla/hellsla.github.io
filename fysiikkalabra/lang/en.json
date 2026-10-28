@@ -791,7 +791,20 @@
     "practise_link": "{{competency}}, chapter {{chapter}}",
     "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
     "course_count": "{{n}} tasks · {{points}} points",
-    "kind_own": "own work"
+    "kind_own": "own work",
+    "step_names": {
+      "Annettu": "Given",
+      "Kysytty": "Find",
+      "Periaate": "Principle",
+      "Kaava": "Formula",
+      "Muunnokset": "Conversions",
+      "Sijoitus": "Substitution",
+      "Vastaus": "Answer",
+      "Järkevyys": "Reasonableness",
+      "Mallivastaus": "Model answer",
+      "Kuvaaja": "Graph",
+      "Kuvaajan lukeminen": "Reading the graph"
+    }
   },
   "competency": {
     "concept": "Conceptual understanding",

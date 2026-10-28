@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-7-L1-01",
+      "level": 1,
+      "text": "A power plant feeds $500\\,\\text{MWh}$ of electrical energy into the electricity grid in a day. In the grid, $4.0\\,\\%$ of the sent energy is lost. How much energy arrives? Give your answer in megawatt-hours.",
+      "answer": 480,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-02",
+      "level": 1,
+      "text": "A heating plant feeds $360\\,\\text{MWh}$ of thermal energy into the district heating network in a week, and $327\\,\\text{MWh}$ reaches the customers. How much energy is lost in the network? Give your answer in megawatt-hours.",
+      "answer": 33,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-03",
+      "level": 1,
+      "text": "$80.0\\,\\text{MWh}$ of electricity is sent into the national grid, and $76.8\\,\\text{MWh}$ reaches the users. What is the efficiency of the transfer? Give your answer as a percentage.",
+      "answer": 96.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-04",
+      "level": 1,
+      "text": "A power plant feeds an electric power of $125\\,\\text{MW}$ into the network, and $4.0\\,\\%$ of the sent power is lost in the network. How much power arrives? Give your answer in megawatts.",
+      "answer": 120,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-05",
+      "level": 1,
+      "text": "Heat escapes steadily from a district heating pipe into the surroundings at a power of $2.5\\,\\text{kW}$. How much energy is lost in a day? Give your answer in kilowatt-hours.",
+      "answer": 60,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-7-L2-01",
+      "level": 2,
+      "text": "In a poorly insulated district heating network, $20\\,\\%$ of the energy sent into the network is lost, and $600\\,\\text{MWh}$ reaches the customers in a week. How much energy is lost in the network in a week? Give your answer in megawatt-hours.",
+      "answer": 150,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-02",
+      "level": 2,
+      "text": "A district of the city needs $1.20\\,\\text{GWh}$ of heat per week. The efficiency of the old district heating network is $80\\,\\%$. How much energy must the heating plant feed into the network per week? Give your answer in megawatt-hours.",
+      "answer": 1500,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-03",
+      "level": 2,
+      "text": "$2.40\\,\\text{TWh}$ of electrical energy is fed into the electricity grid of a region in a year (an example situation), and $4.0\\,\\%$ of the sent energy is lost in the grid. What is the average power of the losses, when a year has $8760\\,\\text{h}$? Give your answer in megawatts.",
+      "answer": 11,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-04",
+      "level": 2,
+      "text": "A building needs district heating steadily at a power of $40.0\\,\\text{kW}$. In the old district heating network $20\\,\\%$ of the sent power is lost. How much energy must the heating plant feed into the network in a day for this building? Give your answer in kilowatt-hours.",
+      "answer": 1200,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-7-L3-01",
+      "level": 3,
+      "text": "The customers of a district heating network need $600\\,\\text{MWh}$ of heat per week. The loss of the network is $9.0\\,\\%$ of the sent energy. The insulation of the pipes is improved, and the loss decreases to $6.0\\,\\%$. How much less energy must the heating plant feed into the network per week? Give your answer in megawatt-hours.",
+      "answer": 21,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-02",
+      "level": 3,
+      "text": "Two district heating networks serve similar customers. Network A is sent $500\\,\\text{MWh}$ per week and its efficiency is $91.0\\,\\%$. Network B is sent $520\\,\\text{MWh}$ per week and its efficiency is $85.0\\,\\%$. Which network brings more heat to customers and how many megawatt-hours more? Give the size of the difference in megawatt-hours as your answer.",
+      "answer": 13.0,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-03",
+      "level": 3,
+      "text": "The loss power of a district heating pipework is steadily $150\\,\\text{kW}$. The heating of one detached house uses $20\\,\\text{MWh}$ in a year. The loss of the pipework in a year corresponds to the annual heating energy of how many houses, when a year has $8760\\,\\text{h}$?",
+      "answer": 66,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ]
+}

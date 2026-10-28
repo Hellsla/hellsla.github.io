@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-7-L1-01",
+      "level": 1,
+      "text": "A grey metal ingot is weighed at a recycling point. Its mass is 340 g and its volume is 30.0 cm³. What is the density of the substance of the ingot? Give your answer in g/cm³.",
+      "answer": 11.3,
+      "unit": "g/cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-02",
+      "level": 1,
+      "text": "The volume of an aluminium plate is 35.0 cm³, and the density of aluminium is 2.70 g/cm³. What is the mass of the plate? Give your answer in grams.",
+      "answer": 94.5,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-03",
+      "level": 1,
+      "text": "In the chemistry classroom, 316 g of ethanol is measured on a balance. Its density is 0.79 g/cm³. What is the volume of the liquid? Give your answer in cubic centimetres.",
+      "answer": 400,
+      "unit": "cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-04",
+      "level": 1,
+      "text": "The volume of a concrete slab is 0.75 m³. The density of concrete is 2400 kg/m³. What is the mass of the slab? Give your answer in kilograms.",
+      "answer": 1800,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-05",
+      "level": 1,
+      "text": "The mass of a block of ice is 36.8 kg and its volume is 0.0400 m³. What is the density of ice? Give your answer in kg/m³.",
+      "answer": 920,
+      "unit": "kg/m³",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-7-L2-01",
+      "level": 2,
+      "text": "The dimensions of a gold ingot are $10.0\\,\\text{cm} \\cdot 5.0\\,\\text{cm} \\cdot 2.0\\,\\text{cm}$. The density of gold is 19 300 kg/m³. What is the mass of the ingot? Give your answer in kilograms.",
+      "answer": 1.9,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-02",
+      "level": 2,
+      "text": "In a laboratory there is a bottle containing 2.5 dm³ of ethanol. The density of ethanol is 790 kg/m³. What is the mass of the liquid? Give your answer in kilograms.",
+      "answer": 2.0,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-03",
+      "level": 2,
+      "text": "The mass of a steel ball is 33.0 g. When the ball is lowered into a measuring cylinder containing 50.0 ml of water, the water rises to the reading 54.2 ml. What is the density of the substance of the ball? Give your answer in kg/m³.",
+      "answer": 7900,
+      "unit": "kg/m³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-04",
+      "level": 2,
+      "text": "The mass of an empty measuring flask is 215 g. When 250 cm³ of an unknown liquid is poured into the flask, the balance shows 412 g. What is the density of the liquid? Give your answer in kg/m³.",
+      "answer": 788,
+      "unit": "kg/m³",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-7-L3-01",
+      "level": 3,
+      "text": "A copper object and an aluminium object have the same mass. How many times as large is the volume of the aluminium object compared with the volume of the copper object? Use the densities in the table.",
+      "answer": 3.32,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L3-02",
+      "level": 3,
+      "text": "An object is made by casting together 100 cm³ of aluminium and 50 cm³ of iron. The volumes are assumed to add up. What is the average density of the object? Give your answer in g/cm³.",
+      "answer": 4.4,
+      "unit": "g/cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L3-03",
+      "level": 3,
+      "text": "A round copper wire has a diameter of 1.0 mm and a mass of 0.50 kg. How long is the wire? The cross-section of the wire is a circle with area $\\pi r^2$, and the volume of the wire is the area times the length.",
+      "answer": 71,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

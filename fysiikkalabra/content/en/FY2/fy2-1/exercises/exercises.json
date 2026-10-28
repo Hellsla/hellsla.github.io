@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-1-L1-01",
+      "level": 1,
+      "text": "A stone is at rest high up on a cliff, and its potential energy is $50\\,\\text{J}$. The stone falls to the ground, where the potential energy is zero. Air resistance is ignored. What is the kinetic energy of the stone just before it hits the ground?",
+      "answer": 50.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-02",
+      "level": 1,
+      "text": "A plant leaf absorbs radiant energy of $245\\,\\text{J}$ from the Sun. Through photosynthesis the leaf changes $6.0\\,\\text{J}$ of it into chemical energy, and the rest changes into thermal energy. How much thermal energy is produced?",
+      "answer": 239.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-03",
+      "level": 1,
+      "text": "A solar panel receives radiant energy of $800\\,\\text{J}$ and changes $160\\,\\text{J}$ of it into electrical energy. The rest changes into thermal energy. How much thermal energy is produced?",
+      "answer": 640.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-04",
+      "level": 1,
+      "text": "In each situation, name the form of energy that the energy is in at the start and the useful form of energy that it changes into. a) Firewood burns in a fireplace and warms a room. b) A solar panel produces electricity. c) Water flows down from a reservoir into a turbine that turns a generator.",
+      "answer": "a) kemiallinen energia → lämpöenergia; b) säteilyenergia → sähköenergia; c) veden potentiaalienergia → (liike-energia →) sähköenergia",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-05",
+      "level": 1,
+      "text": "A sledge starts from rest at the top of a hill. At the top its potential energy is $600\\,\\text{J}$, and on the way down friction changes $90\\,\\text{J}$ of energy into thermal energy. At the bottom of the hill the potential energy is zero. What is the kinetic energy of the sledge at the bottom of the hill?",
+      "answer": 510.0,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-1-L2-01",
+      "level": 2,
+      "text": "An electric scooter sets off. Chemical energy of $3.00\\,\\text{kJ}$ is released from its battery, and the scooter and rider gain kinetic energy of $2150\\,\\text{J}$ from it. The rest changes into thermal energy in the battery, the motor and the tyres. How many joules of thermal energy are produced?",
+      "answer": 850.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-02",
+      "level": 2,
+      "text": "A child starts from rest at the top of a water slide. At the bottom her kinetic energy is $2400\\,\\text{J}$, and on the way friction has changed $0.60\\,\\text{kJ}$ of energy into thermal energy. The bottom is the zero level of potential energy. What was the potential energy of the child at the top? Answer in kilojoules.",
+      "answer": 3.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-03",
+      "level": 2,
+      "text": "A child sitting on a swing is pulled to the side and released from rest. At the highest point the potential energy of the child and the swing is $0.36\\,\\text{kJ}$, when the zero level is the lowest point of the swing. The swing keeps swinging in smaller and smaller swings until it stops at the lowest point. Sound is ignored. How many joules of thermal energy are produced in total?",
+      "answer": 360.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-04",
+      "level": 2,
+      "text": "Electrical energy of $360\\,\\text{kJ}$ goes into a kettle. Of this, $331\\,\\text{kJ}$ is transferred to the water as thermal energy, and the rest warms the kettle and the surroundings. How many joules of energy end up in the kettle and the surroundings?",
+      "answer": 29000.0,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-1-L3-01",
+      "level": 3,
+      "text": "The energies of a skateboarder are measured at three points in a half-pipe. At point A the skateboarder is at rest and her potential energy is $900\\,\\text{J}$. At point B the potential energy is $400\\,\\text{J}$ and the kinetic energy $480\\,\\text{J}$. At point C the potential energy is zero and the kinetic energy $750\\,\\text{J}$. Friction keeps changing mechanical energy into thermal energy. How much thermal energy is produced between points B and C?",
+      "answer": 130,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-02",
+      "level": 3,
+      "text": "A rubber ball is dropped on the floor. The mechanical energy of the ball is $5.00\\,\\text{J}$ when dropped, $4.00\\,\\text{J}$ after the first bounce and $3.20\\,\\text{J}$ after the second bounce. How much more thermal energy is produced in the first bounce than in the second?",
+      "answer": 0.2,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-03",
+      "level": 3,
+      "text": "In a nuclear power plant, the nuclear reactions in the reactor heat water into steam, the steam turns a turbine and the turbine turns a generator, which produces electricity. The steam leaving the turbine is cooled with seawater, which warms up. a) Name the forms of energy at each stage of the chain. b) The plant turns only about a third of the nuclear energy released in the reactor into electrical energy. Use the law of conservation of energy to explain where the rest of the energy goes and why it has not been lost.",
+      "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmannesta päätyy lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

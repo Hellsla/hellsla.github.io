@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "contribution": "The student learns to compare ways of producing energy using orders of magnitude: the power of a single power plant, the annual energy $E = P \\cdot t$ and the distribution of electricity production in Finland, and to tell weather-dependent, controllable and steady production apart.",
+  "learn": [
+    "You can calculate the annual energy or average power of a power plant with the formula $E = P \\cdot t$.",
+    "You can group power plants into weather-dependent, controllable and base load, and justify the grouping.",
+    "You can compare ways of producing energy using orders of magnitude and criteria."
+  ],
+  "prior": [
+    "Power tells you how quickly energy is transferred, $P = E : t$ (chapter *Power P = ΔE/Δt*)",
+    "The energy of a fuel is calculated with the heat of combustion, $E = Hm$ (chapter *Fuels and heat of combustion E = Hm*)",
+    "Efficiency tells you what fraction of the energy is useful (chapter *Efficiency*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a frosty morning at eight o'clock Finland wakes up: heating, industry and trains use more electricity than almost ever. There is little wind, and the Sun will not rise for another hour. Still, the lights are on. The electricity comes from nuclear power plants, hydropower plants, fuel-fired power plants and a little from wind.",
+      "question": "Why does the electricity grid need many different kinds of power plants, instead of just one best one?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: power and energy",
+      "prompt": "A device has a power of $2\\,\\text{kW}$ and it is switched on for $3\\,\\text{h}$. How much energy does it use?",
+      "choices": [
+        {
+          "text": "$6\\,\\text{kWh}$",
+          "correct": true,
+          "feedback": "Correct. Energy is power multiplied by time, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (chapter *Power P = ΔE/Δt*). Today the same method tells you how much electricity a power plant produces."
+        },
+        {
+          "text": "$0.67\\,\\text{kWh}$",
+          "feedback": "Here the power was divided by time. Energy is found by multiplying: $E = P t$, and the unit kWh is the product of a kilowatt and an hour (chapter *Power P = ΔE/Δt*)."
+        },
+        {
+          "text": "$6\\,\\text{kW}$",
+          "feedback": "The number is right but the unit is not. Power is measured in kilowatts, energy in kilowatt-hours: $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction: the most electricity",
+      "prompt": "Which energy source produced the most electricity in Finland in 2024?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Wind power, because a lot of new wind turbines have been built.",
+          "feedback": "Wind power was the second largest, and its share is growing fast, but it was not the largest. Compare the bars in the table in the Investigate step."
+        },
+        {
+          "text": "Nuclear power, because it runs steadily almost all year.",
+          "correct": true,
+          "feedback": "Nuclear power was the largest source, about $31\\,\\text{TWh}$. Steady running is the reason: although there are few nuclear power plants, they produce almost continuously at rated power. Check the figures in the Investigate step."
+        },
+        {
+          "text": "Hydropower, because Finland has a lot of rivers and lakes.",
+          "feedback": "Hydropower produces a significant amount, but Finnish rivers are fairly gentle and low-lying, so its share remains below nuclear and wind power. Compare the bars in the Investigate step."
+        },
+        {
+          "text": "Fossil fuels, because they are cheap and easy to transport.",
+          "feedback": "The share of fossil fuels in Finnish electricity production is nowadays only a few per cent. Check the figures in the table in the Investigate step."
+        }
+      ]
+    },
+    {
+      "id": "data-fi",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Electricity production in Finland in 2024",
+      "source": "statistics",
+      "source_note": "Tilastokeskus: Sähkön ja lämmön tuotanto 2024 (ydinvoiman ja bioperäisten polttoaineiden luvut johdettu prosenttiosuuksista, pyöristetty; muut lähteet = kokonaistuotanto vähennettynä muilla riveillä).",
+      "text": "The table shows electricity production in Finland in 2024 by energy source. Total production was $79.9\\,\\text{TWh}$. It also includes small other sources, which are collected on the last row.\n\n| Source | $E$ (TWh) |\n|---|---|\n| nuclear power | $31$ |\n| wind power | $20.2$ |\n| hydropower | $14.1$ |\n| biofuels | $9.5$ |\n| fossil fuels and peat | $3.4$ |\n| solar power | $0.9$ |\n| other sources | $0.8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the average power of wind power over the year, when a year has $8760\\,\\text{h}$. Give the answer in gigawatts.",
+        "answer": 2.31,
+        "unit": "GW",
+        "tolerance": 0.02,
+        "hints": [
+          "The average power is found by dividing the energy by time: $P = E : t$.",
+          "First convert terawatt-hours to kilowatt-hours: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
+          "$P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2306,
+            "feedback": "The result is correct in megawatts but not in gigawatts. A gigawatt is a thousand megawatts, so $2306\\,\\text{MW} = 2.306 \\cdot 1000\\,\\text{MW} = 2.31\\,\\text{GW}$."
+          },
+          {
+            "value": 0.0023,
+            "feedback": "You converted terawatt-hours incorrectly: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$, not $10^{6}\\,\\text{kWh}$."
+          }
+        ],
+        "solution": "**Given:** energy $E = 20.2\\,\\text{TWh}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the average power $P$ of wind power in gigawatts\n\n**Principle:** The average power is the power at which the same energy would be produced steadily over the whole year, so $E = P t$.\n\n**Formula:** $E = P t$, so $P = \\dfrac{E}{t}$\n\n**Conversions:** $20.2\\,\\text{TWh} = 20.2 \\cdot 10^{9}\\,\\text{kWh}$, and finally kilowatts to gigawatts: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Substitution:** $P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h} = 2\\,305\\,936\\,\\text{kW} \\approx 2.31 \\cdot 10^{6}\\,\\text{kW} = 2.31\\,\\text{GW}$\n\n**Answer:** $2.31\\,\\text{GW}$, three significant figures like the energy $20.2\\,\\text{TWh}$; the number of hours in a year, $8760\\,\\text{h}$, is an exact number.\n\n**Reasonableness:** Estimate: $20 \\cdot 10^{9}\\,\\text{kWh} : 9000\\,\\text{h} \\approx 2.2 \\cdot 10^{6}\\,\\text{kW} = 2.2\\,\\text{GW}$. The average power is smaller than the combined rated power of the wind turbines, because the wind varies."
+      }
+    },
+    {
+      "id": "data-yksikko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The power of a single power plant",
+      "source": "example",
+      "source_note": "Tyypillisiä, pyöristettyjä tehoja; Olkiluoto 3 on Suomen suurin voimalayksikkö.",
+      "text": "The table shows typical powers of individual power plants. The values are indicative and rounded.\n\n| Power plant | Power |\n|---|---|\n| solar panels of a detached house | $5\\,\\text{kW}$ |\n| wind turbine | $5\\,\\text{MW}$ |\n| large hydropower plant | $100\\,\\text{MW}$ |\n| Olkiluoto 3 | $1600\\,\\text{MW}$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "How many $5.0\\,\\text{MW}$ wind turbines are needed for their rated power to be equal to the rated power of Olkiluoto 3, $1600\\,\\text{MW}$?",
+        "answer": 320,
+        "unit": "kpl",
+        "tolerance": 0.02,
+        "hints": [
+          "We compare the same quantity, power: how many times does $5.0\\,\\text{MW}$ fit into $1600\\,\\text{MW}$?",
+          "Both powers are already in megawatts, so no unit conversions are needed.",
+          "$N = 1600\\,\\text{MW} : 5.0\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.0031,
+            "feedback": "You divided the smaller power by the larger one. The question asks how many wind turbines are needed, so the larger power is divided by the smaller one."
+          }
+        ],
+        "solution": "**Given:** power of a wind turbine $P_\\text{t} = 5.0\\,\\text{MW}$, power of Olkiluoto 3 $P_\\text{O} = 1600\\,\\text{MW}$\n\n**Find:** the number of wind turbines $N$\n\n**Principle:** Rated powers are added together, so the combined power of $N$ turbines is $N P_\\text{t}$. We want it to be equal to the power of Olkiluoto 3.\n\n**Formula:** $N P_\\text{t} = P_\\text{O}$, so $N = \\dfrac{P_\\text{O}}{P_\\text{t}}$\n\n**Conversions:** Not needed: both powers are in megawatts, so the unit cancels.\n\n**Substitution:** $N = 1600\\,\\text{MW} : 5.0\\,\\text{MW} = 320$\n\n**Answer:** $320$ wind turbines, two significant figures like the power of a wind turbine, $5.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $1600 : 5 = 320$. In reality many more would be needed, because a wind turbine produces in a year only a part of its rated power, while Olkiluoto 3 runs almost all the time."
+      }
+    },
+    {
+      "id": "data-viikko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Wind and nuclear power over a week",
+      "source": "example",
+      "source_note": "Keksitty, pyöristetty esimerkkiviikko; suuruusluokat vastaavat Suomen talvea. Tuulivoiman nimellisteho: Suomen Tuulivoimayhdistys 2024.",
+      "text": "The table shows an example week in January: the power of consumption, nuclear power and wind power as daily averages in gigawatts. The combined rated power of Finnish wind turbines was about $8\\,\\text{GW}$ at the end of 2024.\n\n| Day | Consumption $(\\text{GW})$ | Nuclear $(\\text{GW})$ | Wind $(\\text{GW})$ |\n|---|---|---|---|\n| Mon | $11.3$ | $4.3$ | $6.4$ |\n| Tue | $11.9$ | $4.3$ | $5.1$ |\n| Wed | $12.6$ | $4.3$ | $2.2$ |\n| Thu | $13.1$ | $4.3$ | $0.4$ |\n| Fri | $12.7$ | $4.3$ | $1.1$ |\n| Sat | $11.4$ | $4.3$ | $3.6$ |\n| Sun | $10.8$ | $4.3$ | $5.8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "The rest of the consumption is produced in other ways: with hydropower, fuel-fired power plants and imported electricity. How much power had to be produced in these other ways on Thursday? Give the answer in gigawatts.",
+        "answer": 8.4,
+        "unit": "GW",
+        "tolerance": 0.02,
+        "hints": [
+          "Production must match consumption at every moment: the sum of the powers of all sources equals consumption.",
+          "The power of the other sources is the part of consumption that nuclear and wind power do not cover.",
+          "$P_\\text{m} = 13.1\\,\\text{GW} - 4.3\\,\\text{GW} - 0.4\\,\\text{GW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 8.8,
+            "feedback": "You subtracted only nuclear power from consumption. Wind power also produced $0.4\\,\\text{GW}$ on Thursday."
+          },
+          {
+            "value": 12.7,
+            "feedback": "You subtracted only wind power from consumption. Nuclear power produced $4.3\\,\\text{GW}$ on Thursday."
+          },
+          {
+            "value": 0.6,
+            "feedback": "This is the figure for Monday, when the wind blew well. Calculate in the same way from the Thursday row."
+          }
+        ],
+        "solution": "**Given:** consumption on Thursday $P_\\text{cons} = 13.1\\,\\text{GW}$, power of nuclear power $P_\\text{n} = 4.3\\,\\text{GW}$ and power of wind power $P_\\text{t} = 0.4\\,\\text{GW}$ (from the table)\n\n**Find:** the power $P_\\text{m}$ of the other ways of producing electricity in gigawatts\n\n**Principle:** Electricity cannot be stored in the grid, so production must match consumption at every moment: the sum of the powers of all sources is the power of consumption. The part that nuclear and wind power do not produce must be produced in other ways.\n\n**Formula:** $P_\\text{cons} = P_\\text{n} + P_\\text{t} + P_\\text{m}$, so $P_\\text{m} = P_\\text{cons} - P_\\text{n} - P_\\text{t}$\n\n**Conversions:** Not needed: all powers are in gigawatts.\n\n**Substitution:** $P_\\text{m} = 13.1\\,\\text{GW} - 4.3\\,\\text{GW} - 0.4\\,\\text{GW} = 8.4\\,\\text{GW}$\n\n**Answer:** $8.4\\,\\text{GW}$, to one decimal place like the powers in the table, because the difference is as precise as the numbers it is calculated from.\n\n**Reasonableness:** The result is smaller than consumption, as it should be. On Monday the same calculation gives only $11.3\\,\\text{GW} - 4.3\\,\\text{GW} - 6.4\\,\\text{GW} = 0.6\\,\\text{GW}$, so the other power plants had to raise their power many times over on Thursday, because the wind died down."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: why are many types of power plant needed?",
+      "prompt": "Use the tables and the frosty morning situation from the beginning. Why does Finnish electricity production have many energy sources, and why can you not see from the rated power of wind power how much wind power actually produces?",
+      "model": "Finnish production is divided among several sources: in 2024 nuclear power produced about $31\\,\\text{TWh}$, wind power $20\\,\\text{TWh}$ and hydropower $14\\,\\text{TWh}$. In the example week the power of nuclear power stayed at $4.3\\,\\text{GW}$ all the time, but the power of wind power varied between $0.4$ and $6.4\\,\\text{GW}$, although its rated power is about $8\\,\\text{GW}$. The average power of wind power is therefore only a part of its rated power. When the wind died down and consumption grew, the other ways of producing electricity had to raise their power, so controllable power plants such as hydropower are needed. This is why power plants cannot be compared by rated power alone: annual production is the average power multiplied by time, $E = P \\cdot t$.",
+      "criteria": [
+        "I named at least three energy sources and their order of magnitude.",
+        "I used the table to explain why weather-dependent production needs controllable production alongside it.",
+        "I distinguished rated power from annual production.",
+        "I used the equation $E = P \\cdot t$."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your prediction",
+      "prompt": "Compare your prediction with the figures for Finnish electricity production. Would you change your prediction? What would happen to the electricity grid if nuclear power disappeared and no controllable production replaced it?",
+      "predictions": [
+        "ennuste-1"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "prompt": "A student calculates the average power of a power plant when the annual energy is $14\\,\\text{GWh}$. She writes $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ and wonders why the result is huge. Where is the mistake?",
+      "choices": [
+        {
+          "text": "She multiplied the energy by time. The average power is found by dividing the energy by time: $P = E : t = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1.6\\,\\text{MW}$.",
+          "correct": true,
+          "feedback": "Correct. The formula $E = P t$ is solved for power by dividing by time. The mistake could have been spotted from the units: GWh times h is not a unit of power, and the result would be larger than the power of all the power plants in Finland."
+        },
+        {
+          "text": "A year does not have $8760\\,\\text{h}$ but $365\\,\\text{h}$.",
+          "feedback": "A year has $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$. The mistake is not in the number of hours but in multiplying the energy by time."
+        },
+        {
+          "text": "The power should have been given in megawatts, and the formula is otherwise correct.",
+          "feedback": "The unit does not fix the result. If the power were calculated correctly, you would get $1.6\\,\\text{MW}$; the multiplication gives the wrong quantity, because the energy was multiplied by time instead of power."
+        },
+        {
+          "text": "There is no mistake in the calculation, because the power plant is big.",
+          "feedback": "The average power of a single wind turbine is of the order of megawatts. $123\\,000\\,\\text{GW}$ would be tens of times the average power of all the power plants in the world."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The power of Olkiluoto 3 is $1600\\,\\text{MW}$. How many terawatt-hours would it produce in a year if it ran at full power for the whole year ($8760\\,\\text{h}$)? Give the answer in terawatt-hours.",
+      "answer": 14.0,
+      "unit": "TWh",
+      "tolerance": 0.02,
+      "hints": [
+        "The power and the time are known, so the energy is found by multiplying them together.",
+        "Convert the power to kilowatts: $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}$. The product is then in kilowatt-hours.",
+        "$E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}$, and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 14016,
+          "feedback": "The result is correct in gigawatt-hours. A terawatt-hour is a thousand times a gigawatt-hour: $14\\,016\\,\\text{GWh} = 14.016 \\cdot 1000\\,\\text{GWh} = 14.0\\,\\text{TWh}$."
+        },
+        {
+          "value": 0.00018,
+          "feedback": "You divided the power by time. Energy is power multiplied by time: $E = P t$."
+        }
+      ],
+      "solution": "**Given:** power $P = 1600\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in terawatt-hours\n\n**Principle:** The power is constant when the plant runs at full power, so the energy is the power multiplied by time.\n\n**Formula:** $E = P t$\n\n**Conversions:** $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW} = 1.6 \\cdot 10^{6}\\,\\text{kW}$ and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14.016 \\cdot 10^{9}\\,\\text{kWh} = 14.0\\,\\text{TWh}$\n\n**Answer:** $14.0\\,\\text{TWh}$, three significant figures like the power $1600\\,\\text{MW}$.\n\n**Reasonableness:** This is an upper limit: actual production is smaller, because the plant is out of use at times. Total production in Finland was $79.9\\,\\text{TWh}$, and $14.0 : 79.9 \\approx 18\\,\\%$, so one plant would produce at most almost a fifth.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In Level 1 exercises you use the formula $E = P \\cdot t$ directly, Level 2 exercises have a unit conversion or an average power, and Level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A frosty evening: consumption grows quickly and the wind dies down. Which power plant can raise its power fastest and so balance the grid?",
+      "choices": [
+        {
+          "text": "A hydropower plant, because the flow through the turbine can be increased in an instant.",
+          "correct": true,
+          "feedback": "Correct. Hydropower is highly controllable: the water led to the turbine can be increased in seconds or minutes, and the reservoir stores energy."
+        },
+        {
+          "text": "A wind turbine, because wind power is renewable.",
+          "feedback": "Renewable does not mean controllable. The power of a wind turbine depends on the wind, and it cannot be raised when the wind dies down."
+        },
+        {
+          "text": "Solar panels, because the Sun is always in the sky.",
+          "feedback": "The power of solar electricity depends on radiation, and on a frosty evening there is no sunlight at all. It is not controllable."
+        },
+        {
+          "text": "A nuclear power plant, because it has the most power.",
+          "feedback": "A nuclear power plant is powerful but slow to adjust. It is meant to keep a steady base load, not to follow quick changes in consumption."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "The average power of a wind turbine over the year is $1.0\\,\\text{MW}$. How much energy does it produce in a year ($8760\\,\\text{h}$)? Give the answer in gigawatt-hours.",
+      "answer": 8.8,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Energy is the average power multiplied by time.",
+        "Convert the power to kilowatts: $1.0\\,\\text{MW} = 1.0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$.",
+        "$E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h}$, and $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8760,
+          "feedback": "The result is correct in megawatt-hours. A gigawatt-hour is a thousand times a megawatt-hour: $8760\\,\\text{MWh} = 8.76 \\cdot 1000\\,\\text{MWh} = 8.76\\,\\text{GWh}$."
+        }
+      ],
+      "solution": "**Given:** average power $P = 1.0\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in gigawatt-hours\n\n**Principle:** The average power is the power at which the plant would produce the same energy steadily, so $E = P t$.\n\n**Formula:** $E = P t$\n\n**Conversions:** $1.0\\,\\text{MW} = 1.0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ and finally $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8.76 \\cdot 10^{6}\\,\\text{kWh} = 8.76\\,\\text{GWh}$\n\n**Answer:** $8.8\\,\\text{GWh}$, two significant figures like the average power $1.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} = 9 \\cdot 1000\\,\\text{MWh} = 9\\,\\text{GWh}$. The annual energy of a single power plant is gigawatt-hours, not terawatt-hours, which fits the size of one power plant."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and compare",
+      "prompt": "Compare nuclear power and wind power using at least three criteria (for example power, controllability, storability, environment). Which is suitable as base load and why?",
+      "criteria": [
+        "I compare at least three criteria.",
+        "I say that nuclear power runs steadily and wind power varies with the weather.",
+        "I justify choosing base load by saying that production is predictable.",
+        "I mention at least one environmental effect of each."
+      ],
+      "model": "The unit power of a nuclear power plant is large (Olkiluoto 3 about $1600\\,\\text{MW}$), and it runs steadily at almost rated power, so its annual production is large. A wind turbine is smaller (about $5\\,\\text{MW}$) and its power varies with the wind, so its average power is only a part of its rated power. Neither can be adjusted quickly: adjusting nuclear power is slow and you cannot add wind. Nuclear power is suitable as base load, because its production is steady and predictable. Wind power produces no carbon dioxide in use, and nuclear power produces radioactive waste, which must be stored safely."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. First answer them yourself and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "fy2-2",
+  "course": "FY2",
+  "title": "Energy transformations and the joule",
+  "goals": [
+    "LOPS FY2: forms of energy, conservation and transformation of energy",
+    "Clarification: energy is introduced as a quantity whose unit is the joule, but the forms of energy are examined without the expressions that belong to each form, such as E_k = ½mv² and E_p = mgh (the expressions belong to module FY4)"
+  ],
+  "prerequisites": [
+    "fy2-1"
+  ],
+  "glossary": [
+    "joule",
+    "mechanical energy",
+    "thermal energy",
+    "chemical energy"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

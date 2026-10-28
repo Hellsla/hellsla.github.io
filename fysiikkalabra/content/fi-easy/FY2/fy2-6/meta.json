@@ -1,0 +1,25 @@
+{
+  "id": "fy2-6",
+  "course": "FY2",
+  "title": "Energiantuotantotavat ja niiden vertailu",
+  "goals": [
+    "LOPS FY2: tuntee eri energialajeja ja energiantuotantotapoja",
+    "LOPS FY2: osaa vertailla eri energiantuotantotapoja ja niiden ympäristövaikutusten suuruusluokkia",
+    "Temaattinen tarkastelu: kansallinen energiantuotanto ja -kulutus"
+  ],
+  "prerequisites": [
+    "fy2-4",
+    "fy2-5"
+  ],
+  "glossary": [
+    "energiantuotanto",
+    "uusiutuva energia",
+    "ydinvoima",
+    "vesivoima",
+    "tuulivoima",
+    "aurinkoenergia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

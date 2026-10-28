@@ -190,7 +190,7 @@ def check(code, lang=i18n.SOURCE, seen=None):
             from check_solutions import check_steps
             needed = list(STEPS.get(kind, []))
             if kind == "calc" and "**" + GRAPH_STEP in body: needed.insert(needed.index("Kaava"), GRAPH_STEP)
-            for m in check_steps(body, needed): P(f"solution: {m}")
+            for m in check_steps(body, [T("practice.step_names").get(n, n) for n in needed]): P(f"solution: {m}")   # the language's step names
             if kind == "graph" and "<svg" not in body: P("a graph part's solution shows the model graph (<svg data-fig> from figures.py)")
             a = p.get("answer")
             if a is not None and not (isinstance(a, dict) and isinstance(a.get("value"), (int, float)) and "unit" in a): P("answer must be {value, unit[, tolerance]}")

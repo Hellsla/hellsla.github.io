@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "contribution": "Final chapter of the course: the greenhouse effect in qualitative terms, the link between fuels and climate change, and the comparison of ways of producing energy by life-cycle emission factors ($m = e \\cdot E$), so that the student can weigh the grounds of the sustainability debate.",
+  "learn": [
+    "You can explain the greenhouse effect and why burning fuels strengthens it.",
+    "You can calculate an emission from the emission factor and the energy, and compare ways of producing energy.",
+    "You can justify a choice using several criteria for comparison."
+  ],
+  "prior": [
+    "When a fuel burns, chemical energy is released, and energy is measured in joules and kilowatt-hours (chapter *Fuels and heat of combustion E = Hm*)",
+    "Ways of producing energy differ in power, availability and environmental effects (chapter *Ways of producing energy and how they compare*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Before industrialisation the atmosphere contained about $280\\,\\text{ppm}$ of carbon dioxide, that is, $280$ molecules per million molecules of the atmosphere. Now the concentration is about $420\\,\\text{ppm}$ (NOAA measurements, 2023), and the rise is largely caused by burning fuels for electricity, heat and transport. Even so, carbon dioxide is less than half a part per thousand of the atmosphere.",
+      "question": "How can such a small part of the atmosphere change the temperature of the whole Earth, and why does it matter how electricity is produced?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: burning a fuel",
+      "optional": true,
+      "prompt": "Petrol burns in a car engine. Which description is physically correct?",
+      "choices": [
+        {
+          "text": "Chemical energy changes into kinetic energy and heat, and the carbon of the petrol leaves as carbon dioxide in the exhaust gases.",
+          "correct": true,
+          "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion E = Hm*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning brings carbon dioxide with it."
+        },
+        {
+          "text": "When petrol burns, it changes completely into energy, so no carbon or other matter is left in the exhaust gases.",
+          "feedback": "Matter does not turn into energy. In burning, the atoms are rearranged, and the carbon ends up in carbon dioxide molecules. Both energy and matter are conserved: chemical energy changes into heat and kinetic energy, but the carbon atoms do not disappear."
+        },
+        {
+          "text": "When petrol burns, it produces energy out of nothing, so the engine gets more energy than the fuel originally contained.",
+          "feedback": "Energy does not appear out of nothing. The energy the engine gets comes from the chemical energy of the fuel, and part of it becomes waste heat (chapter *Fuels and heat of combustion E = Hm*)."
+        },
+        {
+          "text": "The carbon of the petrol burns away and disappears, so the exhaust gases contain only water vapour and warm air.",
+          "feedback": "Petrol is a hydrocarbon, and its carbon ends up as carbon dioxide when it burns. Water vapour comes from the hydrogen, but carbon dioxide is the most important greenhouse gas in exhaust gas."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: an atmosphere without greenhouse gases",
+      "justify": true,
+      "prompt": "Imagine that all the greenhouse gases were removed from the atmosphere, but the Sun shone as strongly as it does now. What would happen to the mean temperature of the ground?",
+      "choices": [
+        {
+          "text": "It would rise, because the atmosphere would no longer stop the Sun's radiation from reaching the ground.",
+          "feedback": "Greenhouse gases already let most of the Sun's radiation through, so removing them would not increase the energy reaching the ground. They act in the other direction: they slow down the escape of the ground's thermal radiation."
+        },
+        {
+          "text": "It would fall by tens of degrees, because the thermal radiation of the ground would escape almost freely into space.",
+          "correct": true,
+          "feedback": "Correct. Greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation, and part of the energy returns to the ground. Without the natural greenhouse effect the mean temperature would be about $-18\\,{}^\\circ\\text{C}$ instead of the real $+15\\,{}^\\circ\\text{C}$, that is, about $33\\,\\text{K}$ lower."
+        },
+        {
+          "text": "It would stay the same, because the temperature of the ground is decided only by how strongly the Sun shines.",
+          "feedback": "The temperature depends not only on how much energy arrives but also on how fast energy leaves. Greenhouse gases slow down the leaving, just as a blanket slows down the escape of heat from a person: it is warmer under a blanket even though the heat source is the same."
+        },
+        {
+          "text": "It would fall only a few degrees, because there are very few greenhouse gases in the atmosphere.",
+          "feedback": "A small concentration does not mean a small effect. Greenhouse gases absorb thermal radiation very effectively, and even though carbon dioxide is less than half a part per thousand of the atmosphere, the natural greenhouse effect raises the temperature by about $33\\,\\text{K}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the largest and smallest emissions",
+      "justify": true,
+      "prompt": "The same amount of electricity is produced with coal, natural gas, biomass or wind power. Which of these has the largest life-cycle emissions per kilowatt-hour produced, and which the smallest?",
+      "choices": [
+        {
+          "text": "Largest with coal and smallest with wind power, because a wind turbine does not burn anything.",
+          "correct": true,
+          "feedback": "Correct. Burning releases carbon dioxide for every kilowatt-hour produced, and the energy of coal comes mostly from the burning of carbon. Natural gas contains a lot of hydrogen as well as carbon, and hydrogen burns into water, so its emission is smaller. A wind turbine does not burn anything. In the next step you see from the table how large the differences are."
+        },
+        {
+          "text": "Largest with biomass and smallest with wind power, because wood contains more carbon than coal.",
+          "feedback": "Coal contains more carbon per mass than wood. The carbon of biomass was also bound into plants only recently, and new growth binds it back, so the emission of biomass is smaller than that of fossil fuels but not zero. Check the order from the table in the next step."
+        },
+        {
+          "text": "Largest with natural gas and smallest with biomass, because gas leaks easily and wood grows back.",
+          "feedback": "Gas leaks increase the emissions of natural gas, but coal produces even more carbon dioxide for the same energy, because its energy comes mostly from the burning of carbon. The emissions of biomass are not the smallest: growing, harvesting and transport cause emissions, and a wind turbine does not burn anything."
+        },
+        {
+          "text": "About equal for all of them, because each produces the same amount of electrical energy.",
+          "feedback": "The same energy does not mean the same emissions. The emission depends on whether carbon dioxide is released from burning for every kilowatt-hour produced, as with coal and natural gas, or not, as with wind power, which does not burn anything."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Data: life-cycle emissions per kilowatt-hour",
+      "text": "Annex III of Working Group III of the IPCC Fifth Assessment Report (AR5, 2014) collects the results of hundreds of life-cycle calculations. Below are the rounded medians: grams of carbon dioxide equivalent per kilowatt-hour produced.\n\n| Way of producing energy | $e\\ (\\text{g/kWh})$ |\n|---|---|\n| Coal | 820 |\n| Natural gas | 490 |\n| Biomass | 230 |\n| Solar power | 41–48 |\n| Hydropower | 24 |\n| Nuclear power | 12 |\n| Wind power | 11–12 |\n\nThe figures are not measurements of a single power plant but medians of several studies, so they describe a typical plant.",
+      "question": {
+        "type": "numeric",
+        "prompt": "$1000\\,\\text{kWh}$ of electricity is produced with coal. How many kilograms of carbon dioxide equivalent are produced during the life cycle? Give the answer in kilograms.",
+        "answer": 820,
+        "unit": "kg",
+        "tolerance": 0.02,
+        "hints": [
+          "The figure in the table gives grams per kilowatt-hour. How many kilowatt-hours are produced?",
+          "The emission is $m = e \\cdot E$, where $e = 820\\,\\text{g/kWh}$ and $E = 1000\\,\\text{kWh}$.",
+          "$m = 820\\,\\text{g/kWh} \\cdot 1000\\,\\text{kWh} = 820\\,000\\,\\text{g}$. Finally convert grams into kilograms: $1\\,\\text{g} = 0.001\\,\\text{kg}$."
+        ],
+        "mistakes": [
+          {
+            "value": 820000,
+            "feedback": "This is the emission in grams. The task asks for kilograms, so $820\\,000\\,\\text{g} = 820\\,000 \\cdot 0.001\\,\\text{kg} = 820\\,\\text{kg}$."
+          }
+        ],
+        "solution": "**Given:** energy $E = 1000\\,\\text{kWh}$; from the table the emission factor of coal $e = 820\\,\\text{g/kWh}$\n\n**Find:** emission $m$ in kilograms\n\n**Principle:** The emission is directly proportional to the energy produced, and the emission factor gives the emission per kilowatt-hour. So the emission is obtained by multiplying the energy by the emission factor.\n\n**Formula:** $m = e \\cdot E$\n\n**Conversions:** The kilowatt-hours cancel, so the result comes out in grams. Grams are converted into kilograms: $1\\,\\text{g} = 0.001\\,\\text{kg}$.\n\n**Substitution:** $m = 820\\,\\text{g/kWh} \\cdot 1000\\,\\text{kWh} = 820\\,000\\,\\text{g} = 820\\,000 \\cdot 0.001\\,\\text{kg} = 820\\,\\text{kg}$\n\n**Answer:** $820\\,\\text{kg} = 8.2 \\cdot 10^{2}\\,\\text{kg}$, two significant figures like the rounded median $820\\,\\text{g/kWh}$, whose zero is a rounding zero (likewise for natural gas $490\\,\\text{g/kWh}$).\n\n**Reasonableness:** With rounded numbers $800\\,\\text{g/kWh} \\cdot 1000\\,\\text{kWh} = 800\\,000\\,\\text{g} = 800\\,000 \\cdot 0.001\\,\\text{kg} = 800\\,\\text{kg}$, which is close to the result. With coal, one kilowatt-hour causes an emission of less than a kilogram, so a thousand kilowatt-hours cause less than $1000\\,\\text{kg}$."
+      }
+    },
+    {
+      "id": "alkupera",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Where do the emissions of wind power come from?",
+      "text": "In the table the emission factor of wind power is $11\\text{–}12\\,\\text{g/kWh}$. A wind turbine does not burn anything.",
+      "question": {
+        "type": "choice",
+        "prompt": "Where do the life-cycle emissions of wind power mainly come from?",
+        "choices": [
+          {
+            "text": "From making the materials of the turbine, transport, construction, maintenance and dismantling.",
+            "correct": true,
+            "feedback": "Correct. Life-cycle emissions include all stages: making steel, concrete and copper, transport and construction, and maintenance and dismantling. They are divided by the energy produced over the whole lifetime of the turbine, which is why the factor is small."
+          },
+          {
+            "text": "From the wind, because air contains carbon dioxide, which is released into the air when the rotor turns.",
+            "feedback": "A turning rotor does not release carbon dioxide from the air. The air passes the turbine and its composition does not change. The emissions come from making and building the turbine."
+          },
+          {
+            "text": "From the warming of the rotor and generator as they change the kinetic energy of the wind into electricity.",
+            "feedback": "The warming of the rotor and generator is waste heat (chapter *Ways of producing energy and how they compare*), and it is small. Waste heat is not a carbon dioxide emission; the emissions come from making the materials and from transport."
+          },
+          {
+            "text": "From nowhere, because the figure $11\\text{–}12\\,\\text{g/kWh}$ is a measurement error and the real emission is zero.",
+            "feedback": "The figure is not a measurement error. It is the median of the life-cycle emissions from several studies, and it is small but not zero."
+          }
+        ]
+      }
+    },
+    {
+      "id": "muut-perusteet",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "What does the emission factor not tell?",
+      "text": "The emission factors of nuclear power and wind power are almost equally small in the table, about $12\\,\\text{g/kWh}$. Even so, both are discussed eagerly.",
+      "question": {
+        "type": "choice",
+        "prompt": "What else should you know before you can say which is the better choice?",
+        "choices": [
+          {
+            "text": "What other effects they have, for example waste, safety, land use and dependence on the weather.",
+            "correct": true,
+            "feedback": "Correct. The emission factor is one measure, and it tells only about greenhouse gases. For nuclear power it is small, but radioactive waste and safety are other criteria. For wind power, weather-dependent production and land use matter. A sustainable choice weighs all of them."
+          },
+          {
+            "text": "Nothing: wind power is better, because its emission factor in the table is about $1\\,\\text{g/kWh}$ smaller.",
+            "feedback": "The difference of $1\\,\\text{g/kWh}$ is small compared with the uncertainty of the figures, because they are medians of several studies. When the climate effect is practically the same, other criteria decide, such as waste, safety, land use and dependence on the weather."
+          },
+          {
+            "text": "Only the price: when the emissions are equally small, the cheaper way of producing energy is always the more sustainable choice.",
+            "feedback": "Price is an important criterion, but not the only one. The cheapest way may produce radioactive waste, take a lot of land or depend on the weather. A sustainable energy economy weighs the environment, the economy and society together."
+          },
+          {
+            "text": "Only the accuracy of the measurements: the factors are medians, so the right choice becomes clear with a more accurate measurement.",
+            "feedback": "A more accurate measurement might change the factors slightly, but it would still tell only about greenhouse gases. Waste, safety, land use and dependence on the weather do not show in the emission factor at all, so they are assessed separately."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Go back to your predictions",
+      "prompt": "Compare your predictions with the explanation of the greenhouse effect and the table of emission factors. Then return to the question at the start: how can a small concentration of carbon dioxide change the temperature of the whole Earth, and why does the way electricity is produced matter?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates how much carbon dioxide equivalent is produced when $3600\\,\\text{kWh}$ of electricity is produced with wind power ($e = 12\\,\\text{g/kWh}$). The student writes\n\n$$\\begin{aligned} m &= E : e \\\\ &= 3600\\,\\text{kWh} : 12\\,\\text{g/kWh} \\\\ &= 300\\,\\text{kg} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The emission is the emission factor times the energy, not the energy divided by the factor. The correct calculation is $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0.001\\,\\text{kg} \\approx 43\\,\\text{kg}$.",
+          "correct": true,
+          "feedback": "Correct. The unit reveals the error: $\\text{kWh} : \\text{g/kWh}$ does not give a mass but $\\text{kWh}^2/\\text{g}$. In the multiplication $\\text{g/kWh} \\cdot \\text{kWh}$ the kilowatt-hours cancel and grams are left. The result $43\\,\\text{kg}$ is also reasonable: the same electricity from gas would give about $41$ times more."
+        },
+        {
+          "text": "The emission factor of wind power is zero, so the emission is $0\\,\\text{kg}$.",
+          "feedback": "Wind power is not emission-free: its life-cycle emission factor is $11\\text{–}12\\,\\text{g/kWh}$, because the turbine is made, transported and built. The principle of the calculation ($m = e \\cdot E$) is still correct; the error is in the calculation itself."
+        },
+        {
+          "text": "There is no other error in the calculation except that the result should be given in tonnes.",
+          "feedback": "The unit is not the only error. The division gives the wrong size and the wrong unit ($\\text{kWh}^2/\\text{g}$). With multiplication the result is $43\\,\\text{kg}$, not $300\\,\\text{kg}$."
+        },
+        {
+          "text": "The energy should first have been converted into megajoules, because the emission factor is given without kilowatt-hours.",
+          "feedback": "The emission factor is given exactly in the unit $\\text{g/kWh}$, so the energy in kilowatt-hours can be used directly. Converting to megajoules would need $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ and would make the calculation needlessly complicated."
+        }
+      ]
+    },
+    {
+      "id": "kuljetus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Where should the wood chips come from?",
+      "text": "An example municipality builds a heating plant that burns forest wood chips. The chips could be brought by lorry either from the municipality's own forests about $50\\,\\text{km}$ away or from another region about $400\\,\\text{km}$ away. The chips are moist and airy, so a lorry load holds little energy. (The municipality is an invented example.)",
+      "question": {
+        "type": "choice",
+        "prompt": "Which source is better for the climate, and which criterion decides?",
+        "choices": [
+          {
+            "text": "The nearby forest, because the load contains little energy and every kilometre driven adds to the life-cycle emissions.",
+            "correct": true,
+            "feedback": "Correct. Transport is part of the life-cycle emissions. When the load holds little energy, many loads are needed for the same energy, and over $400\\,\\text{km}$ each load travels about eight times the distance of $50\\,\\text{km}$. That is why biomass should be used close to where it grows."
+          },
+          {
+            "text": "Neither, because the emission factor of biomass counts only burning, and transport is left out of the life cycle completely.",
+            "feedback": "The life-cycle emission factor includes all stages: growing, harvesting, transport and the power plant. For biomass it is exactly the carbon dioxide from burning that is counted as zero, so the share of transport shows in the factor."
+          },
+          {
+            "text": "The distant region, because then the municipality's own forests are spared and the municipality's land use stays small.",
+            "feedback": "Land use does not disappear but moves elsewhere: the chips grow in the forests of the other region. For the climate, distant sourcing is worse, because bulky chips need many loads and each load travels a longer distance."
+          },
+          {
+            "text": "The distant region, because the emissions of a lorry do not depend on the distance driven but only on the size of the load.",
+            "feedback": "A lorry burns diesel the whole way, so its emission grows with the distance driven: a distance eight times as long produces about eight times the emission per load."
+          }
+        ]
+      }
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply: the electricity of a city",
+      "prompt": "A city needs $100\\,\\text{GWh}$ of electricity a year. The electricity is produced with natural gas, whose life-cycle emission factor is $490\\,\\text{g/kWh}$. How many tonnes of carbon dioxide equivalent are produced per year? Give the answer in tonnes. (The city is an invented example.)",
+      "answer": 49000,
+      "unit": "t",
+      "tolerance": 0.02,
+      "hints": [
+        "Convert the energy into kilowatt-hours, because the emission factor is in the unit $\\text{g/kWh}$. How many kilowatt-hours is one gigawatt-hour?",
+        "$1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$, so $E = 100 \\cdot 10^{6}\\,\\text{kWh}$. Substitute into the formula $m = e \\cdot E$.",
+        "$m = 490\\,\\text{g/kWh} \\cdot 100 \\cdot 10^{6}\\,\\text{kWh} = 4.9 \\cdot 10^{10}\\,\\text{g}$. Convert grams into tonnes: $1\\,\\text{g} = 10^{-6}\\,\\text{t}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.049,
+          "feedback": "You left the energy in gigawatt-hours: $490\\,\\text{g/kWh} \\cdot 100 = 49\\,000\\,\\text{g} = 49\\,000 \\cdot 10^{-6}\\,\\text{t} = 0.049\\,\\text{t}$. The emission factor is in the unit $\\text{g/kWh}$, so the energy must first be converted into kilowatt-hours: $100\\,\\text{GWh} = 100 \\cdot 10^{6}\\,\\text{kWh}$."
+        },
+        {
+          "value": 49000000000.0,
+          "feedback": "This is the emission in grams. The task asks for tonnes, and $1\\,\\text{t} = 10^{6}\\,\\text{g}$, so $4.9 \\cdot 10^{10}\\,\\text{g} = 4.9 \\cdot 10^{10} \\cdot 10^{-6}\\,\\text{t} = 4.9 \\cdot 10^{4}\\,\\text{t}$."
+        }
+      ],
+      "solution": "**Given:** energy $E = 100\\,\\text{GWh}$; emission factor $e = 490\\,\\text{g/kWh}$\n\n**Find:** emission $m$ in tonnes\n\n**Principle:** The emission is directly proportional to the energy produced: all kilowatt-hours are produced in the same way and each causes the same emission $e$.\n\n**Formula:** $m = e \\cdot E$\n\n**Conversions:** $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$, so $E = 100 \\cdot 10^{6}\\,\\text{kWh}$. Finally $1\\,\\text{g} = 10^{-6}\\,\\text{t}$.\n\n**Substitution:** $m = 490\\,\\text{g/kWh} \\cdot 100 \\cdot 10^{6}\\,\\text{kWh} = 4.9 \\cdot 10^{10}\\,\\text{g} = 4.9 \\cdot 10^{10} \\cdot 10^{-6}\\,\\text{t} = 4.9 \\cdot 10^{4}\\,\\text{t}$\n\n**Answer:** $4.9 \\cdot 10^{4}\\,\\text{t} = 49\\,000\\,\\text{t}$, two significant figures like the emission factor $490\\,\\text{g/kWh}$.\n\n**Reasonableness:** With rounded numbers $500\\,\\text{g/kWh} \\cdot 100 \\cdot 10^{6}\\,\\text{kWh} = 5 \\cdot 10^{10}\\,\\text{g} = 5 \\cdot 10^{10} \\cdot 10^{-6}\\,\\text{t} = 50\\,000\\,\\text{t}$, which is close to the result. One kilowatt-hour causes an emission of less than a kilogram, and there are a hundred million kilowatt-hours, so the emission is tens of thousands of tonnes."
+    },
+    {
+      "id": "perustele",
+      "stage": "sovella",
+      "type": "explain",
+      "title": "Justify: how does the city produce its electricity?",
+      "prompt": "The city replaces its old coal power plant and will in future produce $100\\,\\text{GWh}$ of electricity a year. The options are a natural gas power plant, a wind farm, a nuclear power plant or a plant that runs on biomass. Choose one and write a justification in the following order:\n\n1. **Claim:** which option do you choose?\n2. **Evidence:** calculate the yearly emissions for the way you chose and compare them with one other option. Also mention at least two other criteria for comparison (for example land use, waste, safety, dependence on the weather).\n3. **Physics reason:** why is the chosen way better or worse for the climate?\n4. **Counterargument:** what is the strongest argument against your choice, and how do you answer it?\n5. **Limitation:** what did you leave out (for example price), and why could it matter?",
+      "pair": "Swap justifications with a partner. Can you find each of the five parts in your partner's text? What was the strongest argument, and would it change your own choice?",
+      "model": "I choose wind power. Emissions: $12\\,\\text{g/kWh} \\cdot 100 \\cdot 10^{6}\\,\\text{kWh} = 1.2 \\cdot 10^{9}\\,\\text{g} = 1.2 \\cdot 10^{9} \\cdot 10^{-6}\\,\\text{t} = 1200\\,\\text{t}$, whereas with natural gas they would be $490\\,\\text{g/kWh} \\cdot 100 \\cdot 10^{6}\\,\\text{kWh} = 4.9 \\cdot 10^{10}\\,\\text{g} = 4.9 \\cdot 10^{10} \\cdot 10^{-6}\\,\\text{t} = 49\\,000\\,\\text{t}$, about $41$ times as much. The emission factor of wind power is small because emissions arise only in making and building the turbines, not in burning; when gas is burnt, carbon combines with oxygen and carbon dioxide is released for every kilowatt-hour produced. Other criteria: wind power needs a lot of area and affects the landscape, but it produces no radioactive waste and uses no fuel, so no fuel transport is needed. Production depends on the weather, so regulating power or storage is needed. The strongest counterargument is that the wind does not always blow. I answer that wind power can be complemented, for example, by hydropower, whose production can be regulated, and by an interconnected electricity grid. I left out the price and the transmission of electricity, which can be decisive for the final decision.",
+      "criteria": [
+        "I made a clear claim and chose one option.",
+        "I calculated the emission correctly with the formula $m = e \\cdot E$: I converted gigawatt-hours into kilowatt-hours and grams into tonnes, and compared the result with another option.",
+        "I used at least two other criteria for comparison (land use, waste, safety, transport, dependence on the weather).",
+        "I explained with physics why the emission factor is small or large (burning releases carbon dioxide, life-cycle emissions come from manufacture and transport).",
+        "I gave the strongest counterargument and answered it, and I did not claim that any option is emission-free.",
+        "I said what I left out (for example the price)."
+      ]
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 exercises you calculate an emission with the formula $m = e \\cdot E$, level 2 exercises need a conversion or rearranging the formula, and level 3 needs reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Which statement about the greenhouse effect is correct?",
+      "choices": [
+        {
+          "text": "Greenhouse gases let most of the Sun's radiation through but slow down the escape of thermal radiation into space.",
+          "correct": true,
+          "feedback": "Correct. This is the core of the greenhouse effect, and the natural greenhouse effect keeps the Earth habitable. Human activity does not cause the greenhouse effect but strengthens it by adding carbon dioxide and methane."
+        },
+        {
+          "text": "Greenhouse gases stop the Sun's radiation from reaching the ground and warm the atmosphere in that way.",
+          "feedback": "Sunlight passes mostly through greenhouse gases. The gases act on the thermal radiation of the ground, which they absorb and partly radiate back down."
+        },
+        {
+          "text": "The greenhouse effect is entirely caused by humans and began only with industrialisation in the 1800s.",
+          "feedback": "The natural greenhouse effect has existed as long as there have been greenhouse gases in the atmosphere, and it raises the temperature by about $33\\,\\text{K}$. Humans have strengthened it."
+        },
+        {
+          "text": "The greenhouse effect means the thinning of the ozone layer, which lets more of the Sun's radiation through.",
+          "feedback": "Ozone depletion is a different phenomenon: it is related to ultraviolet radiation. The greenhouse effect is about the slowing down of the thermal radiation of the ground."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Emission of a journey",
+      "prompt": "A car uses $6.0$ litres of petrol per hundred kilometres. The energy content of petrol is about $32\\,\\text{MJ}$ per litre, and the emission factor of its burning is about $69\\,\\text{g/MJ}$ (IPCC default value). How many kilograms of carbon dioxide are released over a distance of $120\\,\\text{km}$ from burning alone? Give the answer in kilograms.",
+      "answer": 16,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate how many litres of petrol are used over $120\\,\\text{km}$, and then how much energy is released by burning.",
+        "The petrol used is $V = 1.2 \\cdot 6.0\\,\\textsf{l} = 7.2\\,\\textsf{l}$, and the energy is $E = V \\cdot 32\\,\\text{MJ/}\\textsf{l}$.",
+        "$E = 7.2\\,\\textsf{l} \\cdot 32\\,\\text{MJ/}\\textsf{l} = 230.4\\,\\text{MJ}$ and $m = 69\\,\\text{g/MJ} \\cdot 230.4\\,\\text{MJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 13.2,
+          "feedback": "You calculated the emission for a hundred kilometres ($6.0\\,\\textsf{l}$), but the distance is $120\\,\\text{km}$. The petrol used is $1.2 \\cdot 6.0\\,\\textsf{l} = 7.2\\,\\textsf{l}$."
+        },
+        {
+          "value": 15900,
+          "feedback": "This is the emission in grams. The task asks for kilograms: $15\\,900\\,\\text{g} = 15\\,900 \\cdot 0.001\\,\\text{kg} \\approx 16\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** distance $s = 120\\,\\text{km}$; consumption $6.0\\,\\textsf{l}$ per hundred kilometres; energy content $32\\,\\text{MJ/}\\textsf{l}$; emission factor $e = 69\\,\\text{g/MJ}$\n\n**Find:** emission $m$ in kilograms\n\n**Principle:** The burning of petrol releases carbon dioxide in proportion to the energy released, so the emission is the emission factor times the energy, $m = e \\cdot E$. The factor is given per megajoule, so the energy is calculated in megajoules.\n\n**Formula:** $E = V \\cdot 32\\,\\text{MJ/}\\textsf{l}$ and $m = e \\cdot E$\n\n**Conversions:** Amount of petrol: $V = (120\\,\\text{km} : 100\\,\\text{km}) \\cdot 6.0\\,\\textsf{l} = 1.2 \\cdot 6.0\\,\\textsf{l} = 7.2\\,\\textsf{l}$. Finally $1\\,\\text{g} = 0.001\\,\\text{kg}$.\n\n**Substitution:** $E = 7.2\\,\\textsf{l} \\cdot 32\\,\\text{MJ/}\\textsf{l} = 230.4\\,\\text{MJ}$, $m = 69\\,\\text{g/MJ} \\cdot 230.4\\,\\text{MJ} = 15\\,898\\,\\text{g} = 15\\,898 \\cdot 0.001\\,\\text{kg} = 15.9\\,\\text{kg}$\n\n**Answer:** $16\\,\\text{kg}$, two significant figures like the consumption $6.0\\,\\textsf{l}$ and the emission factor $69\\,\\text{g/MJ}$.\n\n**Reasonableness:** With rounded numbers $7\\,\\textsf{l} \\cdot 30\\,\\text{MJ/}\\textsf{l} \\cdot 70\\,\\text{g/MJ} = 14\\,700\\,\\text{g} = 14\\,700 \\cdot 0.001\\,\\text{kg} \\approx 15\\,\\text{kg}$, which is close to the result. A litre of petrol releases $32 \\cdot 69\\,\\text{g} = 2208\\,\\text{g} = 2208 \\cdot 0.001\\,\\text{kg} \\approx 2.2\\,\\text{kg}$ of carbon dioxide, so $7.2$ litres release about $7.2 \\cdot 2.2\\,\\text{kg} \\approx 16\\,\\text{kg}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "optional": true,
+      "prompt": "Explain why the natural greenhouse effect is useful but its strengthening is a problem. Also say why burning fuels strengthens the effect.",
+      "criteria": [
+        "I said that greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation.",
+        "I mentioned that the natural effect raises the mean temperature from about $-18\\,{}^\\circ\\text{C}$ to about $+15\\,{}^\\circ\\text{C}$.",
+        "I explained that burning releases carbon dioxide, so more radiation-absorbing gases remain in the atmosphere.",
+        "I linked the strengthening to climate change, that is, to the rise of the mean temperature."
+      ],
+      "model": "The Sun warms the ground with radiation that the greenhouse gases of the atmosphere let mostly through. The warm ground sends out energy as thermal radiation, which the greenhouse gases absorb and partly radiate back down. That is why the ground is at about $+15\\,{}^\\circ\\text{C}$ and not at about $-18\\,{}^\\circ\\text{C}$, and the effect keeps the Earth habitable. When fuels burn, carbon combines with oxygen and is released as carbon dioxide. When there is more of the gas, thermal radiation escapes more and more slowly, so the effect gets stronger and the mean temperature rises: that is climate change."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

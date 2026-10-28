@@ -1,0 +1,23 @@
+{
+  "id": "fy1-2",
+  "course": "FY1",
+  "title": "Quantities, units and the SI system",
+  "goals": [
+    "LOPS FY1: quantity and unit, and the SI system",
+    "Skills: unit conversions, significant figures, powers of ten and prefixes"
+  ],
+  "prerequisites": [
+    "fy1-1"
+  ],
+  "glossary": [
+    "suure",
+    "unit",
+    "SI system",
+    "etuliite",
+    "significant figure",
+    "astronomical unit"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

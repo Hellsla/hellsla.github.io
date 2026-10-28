@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy1-1-L1-01",
+      "level": 1,
+      "text": "The diameter of a red blood cell is $7.5\\cdot10^{-6}\\,\\text{m}$. How many micrometres is that? One micrometre is $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
+      "answer": 7.5,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-02",
+      "level": 1,
+      "text": "The order of magnitude of the size of a hydrogen atom is $10^{-10}\\,\\text{m}$ and that of an ant $10^{-2}\\,\\text{m}$. How many orders of magnitude are there between them?",
+      "answer": 8,
+      "unit": "suuruusluokkaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-03",
+      "level": 1,
+      "text": "The diameter of Earth is $1.27\\cdot10^{7}\\,\\text{m}$. Give it in kilometres.",
+      "answer": 12700,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-04",
+      "level": 1,
+      "text": "The diameter of a lead atom is about $3.5\\cdot10^{-10}\\,\\text{m}$ and the diameter of its nucleus about $1.4\\cdot10^{-14}\\,\\text{m}$. How many times larger is the atom than its nucleus?",
+      "answer": 25000,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-05",
+      "level": 1,
+      "text": "The thickness of a hair is $7.0\\cdot10^{-5}\\,\\text{m}$ and the diameter of a red blood cell $7.5\\cdot10^{-6}\\,\\text{m}$. How many times thicker is the hair than the red blood cell?",
+      "answer": 9.33,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-1-L2-01",
+      "level": 2,
+      "text": "The diameter of the Milky Way is about $1.0\\cdot10^{5}$ light-years, and one light-year is $9.46\\cdot10^{15}\\,\\text{m}$. The diameter of the observable universe is about $8.8\\cdot10^{26}\\,\\text{m}$. How many Milky Way diameters would fit in a row across the diameter of the observable universe? Give the answer in thousands.",
+      "answer": 930.2,
+      "unit": "tuhatta",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-02",
+      "level": 2,
+      "text": "Proxima Centauri is $4.0\\cdot10^{16}\\,\\text{m}$ away. How many years does light take to travel the distance, when the speed of light is $2.998\\cdot10^{8}\\,\\text{m/s}$ and one year is $3.156\\cdot10^{7}\\,\\text{s}$?",
+      "answer": 4.23,
+      "unit": "a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-03",
+      "level": 2,
+      "text": "The circumference of Earth is $4.0\\cdot10^{7}\\,\\text{m}$. How many people $1.7\\,\\text{m}$ tall would have to be placed end to end for the line to reach around Earth? Give the answer in millions.",
+      "answer": 23.5,
+      "unit": "miljoonaa ihmistä",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-1-L2-04",
+      "level": 2,
+      "text": "The diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$ and the diameter of Earth $1.27\\cdot10^{7}\\,\\text{m}$. The volume of a sphere is directly proportional to the third power of the diameter. How many times larger is the volume of the Sun than the volume of Earth? Give the answer in millions.",
+      "answer": 1.31,
+      "unit": "miljoonaa kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-1-L3-01",
+      "level": 3,
+      "text": "We make a scale model in which Earth is a sphere with a diameter of $1.0\\,\\text{cm}$, and all other distances are drawn on the same scale. The distance of Earth from the Sun is $1.50\\cdot10^{11}\\,\\text{m}$ and the diameter of Earth $1.27\\cdot10^{7}\\,\\text{m}$. How far from the sphere would the Sun be in the scale model?",
+      "answer": 118,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-02",
+      "level": 3,
+      "text": "The Planck length is $1.6\\cdot10^{-35}\\,\\text{m}$, the size of a proton $1.7\\cdot10^{-15}\\,\\text{m}$ and the height of a person $1.7\\,\\text{m}$. Which difference of orders of magnitude is larger: between the Planck length and the proton, or between the proton and a person? Give the larger difference as a number of powers of ten.",
+      "answer": 20,
+      "unit": "suuruusluokkaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-03",
+      "level": 3,
+      "text": "In a picture taken with an electron microscope, a virus with a diameter of $1.0\\cdot10^{-7}\\,\\text{m}$ appears $5.0\\,\\text{cm}$ wide. The picture is not altered in any way. How wide would a red blood cell with a diameter of $7.5\\cdot10^{-6}\\,\\text{m}$ appear in the same picture? Give the answer in centimetres.",
+      "answer": 375,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

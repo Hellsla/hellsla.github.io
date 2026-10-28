@@ -1,0 +1,21 @@
+{
+  "id": "fy2-2",
+  "course": "FY2",
+  "title": "Energian muuntuminen ja yksikkö joule",
+  "goals": [
+    "LOPS FY2: energialajit, energian säilyminen ja muuntuminen",
+    "Täsmennys: energia esitellään suureena, jonka yksikkö on joule. Energialajeja tarkastellaan ilman kunkin energialajin kaavoja, kuten E_k = ½mv² ja E_p = mgh. Nämä kaavat kuuluvat moduuliin FY4."
+  ],
+  "prerequisites": [
+    "fy2-1"
+  ],
+  "glossary": [
+    "joule",
+    "mekaaninen energia",
+    "lämpöenergia",
+    "kemiallinen energia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

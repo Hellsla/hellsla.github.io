@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "contribution": "Transferring energy: how electricity and district heating reach users, transmission loss as a percentage of the sent energy, efficiency of the transfer and storage as transferring energy in time; high voltage is justified qualitatively without formulas of electricity.",
+  "learn": [
+    "You can explain how electrical energy and thermal energy are transferred from the power plant to the user.",
+    "You can calculate the energy that arrives and the energy that is lost from a loss percentage.",
+    "You can explain why long-distance electricity transmission uses high voltage."
+  ],
+  "prior": [
+    "Power tells the rate at which energy is transferred: $P = \\Delta E : \\Delta t$ (chapter *Power P = ΔE/Δt*)",
+    "Efficiency is the share of the energy used that is obtained as useful energy (chapter *Efficiency*)",
+    "Energy does not disappear but changes form, often into heat (chapter *Forms of energy and conservation of energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The wall socket in your yard gives $230\\,\\text{V}$, but in the wires of the power lines across the field the voltage is hundreds of kilovolts. In winter steam rises from a district heating manhole at the edge of the street: hot water runs underground for kilometres.",
+      "question": "Why is energy transferred like this, and how much of it is wasted on the way?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: efficiency",
+      "optional": true,
+      "prompt": "A pump takes $8.0\\,\\text{kWh}$ of electrical energy, and $6.0\\,\\text{kWh}$ of it turns into useful energy. What is the efficiency of the pump?",
+      "choices": [
+        {
+          "text": "$0.75$, because efficiency is the useful energy divided by the energy used: $6.0\\,\\text{kWh} : 8.0\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Correct. Efficiency is the share of the energy used that is obtained as useful energy, $\\eta = E_\\text{useful} : E_\\text{used} = 6.0 : 8.0 = 0.75$, or $75\\,\\%$ (chapter *Efficiency*). The efficiency of a transfer is calculated in the same way today: the energy that arrives is divided by the energy sent."
+        },
+        {
+          "text": "$1.33$, because the energy used is divided by the useful energy: $8.0\\,\\text{kWh} : 6.0\\,\\text{kWh}$.",
+          "feedback": "Efficiency cannot be over $1$, because you cannot get more useful energy than the energy you use. The divisor is always the energy used, not the useful energy."
+        },
+        {
+          "text": "$0.25$, because efficiency is the share of the energy that is lost.",
+          "feedback": "$0.25$ is the share of the loss, $2.0 : 8.0$. Efficiency tells the share that is obtained as useful energy, so it is $1 - 0.25 = 0.75$."
+        },
+        {
+          "text": "$2.0\\,\\text{kWh}$, because efficiency is the difference between the energy used and the useful energy.",
+          "feedback": "The difference $8.0\\,\\text{kWh} - 6.0\\,\\text{kWh} = 2.0\\,\\text{kWh}$ is the energy that is lost. Efficiency is a share without a unit, not an energy."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how much electricity is lost",
+      "justify": true,
+      "prompt": "A power plant feeds electricity into the grid, and it travels through the national grid and the distribution network to the wall socket. About what share of the electrical energy fed into the grid is lost on the way in Finland?",
+      "choices": [
+        {
+          "text": "About $0.1\\,\\%$, because the electricity grid is almost lossless.",
+          "feedback": "The loss is larger. When a current flows in a wire, the wire always gets warm, and in thousands of kilometres of wires and in many transformers the losses add up. In Finland the losses are about $4\\,\\%$ of consumption (Finnish Energy, 2024)."
+        },
+        {
+          "text": "About $4\\,\\%$, so most of the electricity arrives but the loss is still significant.",
+          "correct": true,
+          "feedback": "Correct. In Finland the losses of the grid in 2024 were about $4\\,\\%$ of electricity consumption (Finnish Energy, Sähkövuosi 2024). That is about $3\\,\\text{TWh}$ a year, so even a small percentage is a large amount of energy."
+        },
+        {
+          "text": "About $25\\,\\%$, because over a long distance a quarter of the energy has time to be lost.",
+          "feedback": "If a quarter of the sent energy turned into heat, every fourth unit produced by power plants would only heat wires and transformers. Long distances are covered with high voltage precisely so that the loss stays small, in Finland at about $4\\,\\%$."
+        },
+        {
+          "text": "About half, because at least half of the energy is always lost.",
+          "feedback": "If half were lost, power plants would have to produce twice what users need. The loss is not a fixed share but depends on the voltage, the distance and the wires, and in Finland it is about $4\\,\\%$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: why high voltage",
+      "justify": true,
+      "layout": "models",
+      "prompt": "Long power lines use voltages of $110\\text{–}400\\,\\text{kV}$. Which explanation fits best?",
+      "choices": [
+        {
+          "text": "More energy can be transferred at high voltage than at low voltage, because high voltage is stronger electricity.",
+          "feedback": "The power to be transferred can be the same even at a low voltage. What matters is how large an electric current is needed: the required power is obtained either with a high voltage and a small current or with a low voltage and a large current."
+        },
+        {
+          "text": "The same power is transferred at high voltage with a smaller electric current, and the wire gets less warm, so the loss is smaller.",
+          "correct": true,
+          "feedback": "Correct. The energy used to heat a wire depends on the current: a larger current heats the wire more. At a high voltage the same power is obtained with a small current, and the loss is much smaller (the table in the investigation part)."
+        },
+        {
+          "text": "High voltage makes the wire conduct electricity better, so the losses get smaller.",
+          "feedback": "The material and thickness of the wire do not change when the voltage changes. The loss gets smaller because the same power is transferred with a smaller current."
+        },
+        {
+          "text": "High voltage is safer, so the pylons can be built lower.",
+          "feedback": "High voltage is more dangerous, and that is why power lines are high up on pylons. The reason for high voltage is to reduce losses, not safety."
+        }
+      ]
+    },
+    {
+      "id": "kl",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "District heating: how much is left on the way?",
+      "source": "statistics",
+      "source_note": "Energiateollisuus, Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "text": "In 2024 heat was supplied to the district heating networks of Finland, and customers used part of it. The difference is mostly the loss of the network, so the result is an estimate.\n\n| | Energy (TWh) |\n|---|---|\n| Heat supplied to the network | $36.0$ |\n| Heat used by customers | $32.7$ |\n\nFirst calculate the loss in terawatt-hours and then its share of the heat supplied to the network.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What percentage of the thermal energy supplied to the network did not reach the customers? Give your answer as a percentage.",
+        "answer": 9.2,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "First calculate how much energy was left on the way: sent energy minus arrived energy.",
+          "$E_\\text{loss} = 36.0\\,\\text{TWh} - 32.7\\,\\text{TWh}$.",
+          "The share is the loss divided by the sent energy: $3.3\\,\\text{TWh} : 36.0\\,\\text{TWh}$. Finally multiply by one hundred to get a percentage."
+        ],
+        "mistakes": [
+          {
+            "value": 10.1,
+            "feedback": "You divided the loss by the energy used by customers, $32.7\\,\\text{TWh}$. The loss percentage is calculated from the energy sent into the network, so the divisor is $36.0\\,\\text{TWh}$."
+          },
+          {
+            "value": 3.3,
+            "feedback": "This is the loss in terawatt-hours, not a percentage. Divide the loss by the sent energy and give the share as a percentage."
+          }
+        ],
+        "solution": "**Given:** energy supplied to the network $E_\\text{sent} = 36.0\\,\\text{TWh}$ and energy used by customers $E_\\text{arrived} = 32.7\\,\\text{TWh}$ (Finnish Energy, 2024)\n\n**Find:** the share of the loss in the sent energy as a percentage\n\n**Principle:** Energy does not disappear. What is sent but does not reach customers has turned into heat in the surroundings, that is, it is transmission loss. The share is calculated from the sent energy, because the percentage tells what part of the heat fed into the network was lost.\n\n**Formula:** $E_\\text{loss} = E_\\text{sent} - E_\\text{arrived}$ and $\\text{share} = \\dfrac{E_\\text{loss}}{E_\\text{sent}}$\n\n**Conversions:** No unit conversions, because both energies are in terawatt-hours. The share is changed into a percentage by multiplying by one hundred: $0.0917 = 0.0917 \\cdot 100\\,\\% = 9.17\\,\\%$.\n\n**Substitution:** $E_\\text{loss} = 36.0\\,\\text{TWh} - 32.7\\,\\text{TWh} = 3.3\\,\\text{TWh}$, and $\\text{share} = 3.3\\,\\text{TWh} : 36.0\\,\\text{TWh} = 0.0917 = 9.17\\,\\%$\n\n**Answer:** $9.2\\,\\%$, two significant figures, because the difference $3.3\\,\\text{TWh}$ is known to two figures.\n\n**Reasonableness:** Ten per cent of $36.0\\,\\text{TWh}$ would be $3.6\\,\\text{TWh}$, and the loss $3.3\\,\\text{TWh}$ is a little smaller, so about $9\\,\\%$ is of the right size. It is more than twice the loss of about $4\\,\\%$ in the electricity grid."
+      }
+    },
+    {
+      "id": "sahko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Electricity grid and district heating side by side",
+      "source": "statistics",
+      "source_note": "Energiateollisuus, Sähkövuosi 2024 ja Kaukolämpötilasto 2024 (luvut pyöristetty)",
+      "text": "The table shows the loss of the electricity grid and of the district heating network in 2024. The loss of the electricity grid is about $4\\,\\%$ of electricity consumption, which is used here as the energy sent into the grid; the figure for district heating is from the previous data. The figures for electricity are rounded.\n\n| | Sent (TWh) | Loss (TWh) | Share (%) |\n|---|---|---|---|\n| Electricity grid | $83$ | $3$ | $4$ |\n| District heating network | $36.0$ | $3.3$ | $9.2$ |\n\nCompare the loss as energy and as a share of the sent energy.",
+      "question": {
+        "type": "choice",
+        "prompt": "Which conclusion from the table is correct?",
+        "choices": [
+          {
+            "text": "As energy the losses are about equal, but in district heating the loss is more than twice as large a share of the sent energy.",
+            "correct": true,
+            "feedback": "Correct. In both networks about $3\\,\\text{TWh}$ is lost, but more than twice as much energy is fed into the electricity grid as into the district heating network, so the share is $4\\,\\%$ for electricity and $9.2\\,\\%$ for district heating. That is why the loss of the electricity grid is significant even though its share is small."
+          },
+          {
+            "text": "The loss of the electricity grid is smaller, because its percentage is smaller.",
+            "feedback": "A percentage tells a share, not an amount of energy. Much more energy is fed into the electricity grid, so even a small share is about $3\\,\\text{TWh}$ as energy, the same as in district heating."
+          },
+          {
+            "text": "The loss of the district heating network is relatively smaller, because less energy is fed into it.",
+            "feedback": "The share is calculated by dividing the loss by the sent energy: $3.3 : 36.0 = 9.2\\,\\%$. A smaller sent energy makes the share larger, not smaller."
+          },
+          {
+            "text": "The loss percentage is the same in both, because about $3\\,\\text{TWh}$ is lost in both.",
+            "feedback": "The same loss as energy does not mean the same share: the share depends on how much energy is fed into the network. For electricity $3 : 83 \\approx 4\\,\\%$ and for district heating $3.3 : 36.0 = 9.2\\,\\%$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "jannite",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The same power at different voltages",
+      "source": "model",
+      "text": "The table shows example values calculated by a model: a power of $10\\,\\text{MW}$ is transferred over a distance of $10\\,\\text{km}$ with similar wires at three different voltages. The values are examples of orders of magnitude, not measurements of a real line. The higher the voltage, the smaller the electric current needed to transfer the same power.\n\n| Voltage (kV) | Power lost (MW) |\n|---|---|\n| $20$ | $0.80$ |\n| $110$ | $0.026$ |\n| $400$ | $0.0020$ |\n\nWork out from the table what percentage of the transferred power is lost at each voltage, and compare them.",
+      "question": {
+        "type": "choice",
+        "prompt": "Which conclusion from the table is correct?",
+        "choices": [
+          {
+            "text": "When the voltage increases, the power lost in transferring the same power decreases, and the loss decreases much more than the voltage increases.",
+            "correct": true,
+            "feedback": "Correct. The voltage grows from $20\\,\\text{kV}$ to $400\\,\\text{kV}$, that is, $20$ times larger, but the power lost decreases from $0.80\\,\\text{MW}$ to $0.0020\\,\\text{MW}$, that is, $400$ times smaller: $0.80 : 0.0020 = 400$. At $20\\,\\text{kV}$, $8.0\\,\\%$ of the transferred power of $10\\,\\text{MW}$ is lost, at $400\\,\\text{kV}$ only $0.020\\,\\%$."
+          },
+          {
+            "text": "The power lost increases when the voltage increases, because high voltage is stronger.",
+            "feedback": "The numbers in the table go the other way: at $20\\,\\text{kV}$, $0.80\\,\\text{MW}$ is lost and at $400\\,\\text{kV}$ only $0.0020\\,\\text{MW}$. At a high voltage the electric current is small, and a small current heats the wire little."
+          },
+          {
+            "text": "The power lost decreases in the same ratio as the voltage increases, so doubling the voltage halves the loss.",
+            "feedback": "The voltage grows $20$ times larger, but the loss becomes $400$ times smaller, not $20$ times smaller. So the loss decreases much faster than the voltage increases."
+          },
+          {
+            "text": "The loss is practically the same at all voltages, because the power is the same.",
+            "feedback": "The power transferred is the same, but the loss is not: $0.80\\,\\text{MW}$, $0.026\\,\\text{MW}$ and $0.0020\\,\\text{MW}$ are of very different sizes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: why is energy transferred like this?",
+      "prompt": "Based on the data, write: Why do power lines use high voltage? What share of the energy is lost in the electricity grid and in the district heating network? What happens to the lost energy?",
+      "model": "The same power is transferred at high voltage with a smaller electric current, and a wire gets warmer as the current grows. In the example of the model, when $10\\,\\text{MW}$ is transferred, $8.0\\,\\%$ is lost at $20\\,\\text{kV}$ but only $0.020\\,\\%$ at $400\\,\\text{kV}$, so long distances are covered with high voltage. In Finland the loss of the electricity grid in 2024 was about $4\\,\\%$ and that of the district heating network about $9\\,\\%$ (Finnish Energy). The loss of district heating is larger because hot water is clearly warmer than its surroundings and heat escapes through the insulation along the whole way. The loss does not disappear but turns into heat in the surroundings, so the energy is conserved, but the user gets no benefit from it.",
+      "criteria": [
+        "I explained that at high voltage the same power is transferred with a smaller electric current and therefore the wire gets less warm.",
+        "I used numbers: the loss of the electricity grid about $4\\,\\%$ and that of district heating about $9\\,\\%$.",
+        "I said that the loss is heat in the surroundings and that energy does not disappear.",
+        "I mentioned that the $10\\,\\text{MW}$ values in the table were examples from a model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Would you change your prediction?",
+      "optional": true,
+      "prompt": "Look at your predictions and the results of the data.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "$500\\,\\text{MWh}$ is fed into the electricity grid and the loss is $4\\,\\%$ of the sent energy. A student calculates: the energy that arrives is $500\\,\\text{MWh} - 4\\,\\text{MWh} = 496\\,\\text{MWh}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The percentage was subtracted as megawatt-hours. Correct: $4\\,\\%$ is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, and $480\\,\\text{MWh}$ arrives.",
+          "correct": true,
+          "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ and the energy that arrives is $500\\,\\text{MWh} - 20\\,\\text{MWh} = 480\\,\\text{MWh}$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
+        },
+        {
+          "text": "The loss should be calculated from the energy that arrives, not from the sent energy.",
+          "feedback": "The loss percentage is calculated from the sent energy, because it tells what share of the energy fed into the network was lost. The energy that arrives is not known before the calculation."
+        },
+        {
+          "text": "The energy does not decrease at all, because energy does not disappear.",
+          "feedback": "Energy does not disappear, but some of it turns into heat in the surroundings. The energy that arrives at the user is smaller than the sent energy, and the difference is the loss."
+        },
+        {
+          "text": "There is no error in the calculation, because the loss is small.",
+          "feedback": "The subtraction of $4\\,\\text{MWh}$ is wrong: a percentage and a megawatt-hour are different units, and one cannot be subtracted from the other. The loss is $20\\,\\text{MWh}$, so $480\\,\\text{MWh}$ arrives."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A home battery is charged with electricity, and $12.0\\,\\text{kWh}$ is taken from the grid. Later $10.2\\,\\text{kWh}$ of electricity is obtained back from the battery. What percentage of the energy put into the store turns into heat? Give your answer as a percentage.",
+      "answer": 15,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "A battery is a store: it transfers energy in time. What is the energy put in and what is the energy obtained back?",
+        "Energy does not disappear, so the loss is the energy put in minus the energy obtained back: $12.0\\,\\text{kWh} - 10.2\\,\\text{kWh}$.",
+        "The share is calculated from the energy put in: $1.8\\,\\text{kWh} : 12.0\\,\\text{kWh}$, and the result is multiplied by one hundred to get a percentage."
+      ],
+      "mistakes": [
+        {
+          "value": 85,
+          "feedback": "This is the share obtained back, that is, the efficiency, $10.2 : 12.0 = 0.85$. The question asks for the share that turns into heat, which is $100\\,\\% - 85\\,\\% = 15\\,\\%$."
+        },
+        {
+          "value": 17.6,
+          "feedback": "You divided the loss by the energy obtained back, $10.2\\,\\text{kWh}$. The share is calculated from the energy put into the store, $12.0\\,\\text{kWh}$."
+        }
+      ],
+      "solution": "**Given:** energy put into the store $E_\\text{sent} = 12.0\\,\\text{kWh}$ and energy obtained back $E_\\text{arrived} = 10.2\\,\\text{kWh}$\n\n**Find:** the share of the energy that turns into heat, as a percentage of the energy put in\n\n**Principle:** A battery transfers energy in time, and some of the energy turns into heat in charging and discharging. Energy is conserved, so the loss is the difference between the energy put in and the energy obtained back. The share is calculated from the energy put in.\n\n**Formula:** $E_\\text{loss} = E_\\text{sent} - E_\\text{arrived}$ and $\\text{share} = \\dfrac{E_\\text{loss}}{E_\\text{sent}}$\n\n**Conversions:** No unit conversions, because both energies are in kilowatt-hours. The share is changed into a percentage by multiplying by one hundred.\n\n**Substitution:** $E_\\text{loss} = 12.0\\,\\text{kWh} - 10.2\\,\\text{kWh} = 1.8\\,\\text{kWh}$, and $\\text{share} = 1.8\\,\\text{kWh} : 12.0\\,\\text{kWh} = 0.150 = 0.150 \\cdot 100\\,\\% = 15\\,\\%$\n\n**Answer:** $15\\,\\%$, two significant figures, because the difference $1.8\\,\\text{kWh}$ is known to two figures.\n\n**Reasonableness:** The share obtained back is $10.2 : 12.0 = 0.85$, or $85\\,\\%$, and $85\\,\\% + 15\\,\\% = 100\\,\\%$. The loss is larger than the loss of the electricity grid and of the district heating network, which is believable for a store in which energy is converted twice."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 exercises use the formulas directly, level 2 exercises solve the sent energy or convert units, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two district heating pipes transfer the same thermal energy. One is insulated with thick insulation and the other with thin. Which pipe has the larger loss and why?",
+      "choices": [
+        {
+          "text": "The pipe with thin insulation, because more heat escapes through it into the surroundings.",
+          "correct": true,
+          "feedback": "Correct. Hot water is warmer than its surroundings, and heat escapes through the pipe along the whole way. Thick insulation slows this down, so with thin insulation more heat goes into the surroundings and less arrives."
+        },
+        {
+          "text": "The pipe with thick insulation, because the insulation takes energy into itself.",
+          "feedback": "Insulation does not use up energy. Its job is to slow down the heat getting into the surroundings, so thick insulation reduces the loss."
+        },
+        {
+          "text": "The loss is the same, because the energy transferred is the same.",
+          "feedback": "The energy transferred is the same, but the loss is not. The thickness of the insulation affects how much heat escapes into the surroundings on the way."
+        },
+        {
+          "text": "Neither pipe loses anything, because the water stays in the pipe.",
+          "feedback": "The water stays in the pipe, but its heat passes through the pipe wall and the insulation into the surroundings. That is why the loss of the district heating network is about $9\\,\\%$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "In an old district heating network, customers receive $375\\,\\text{MWh}$ of heat per week (an example situation). The efficiency of the network is $75\\,\\%$. How much energy must the heating plant feed into the network? Give your answer in megawatt-hours.",
+      "answer": 500,
+      "unit": "MWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Efficiency tells what share of the sent energy arrives.",
+        "$\\eta = E_\\text{arrived} : E_\\text{sent}$, so $E_\\text{sent} = E_\\text{arrived} : \\eta$. Change $75\\,\\%$ into a decimal number.",
+        "$E_\\text{sent} = 375\\,\\text{MWh} : 0.75$."
+      ],
+      "mistakes": [
+        {
+          "value": 281,
+          "feedback": "You multiplied the arrived energy by the efficiency. The sent energy must be larger than the arrived energy, so divide by the efficiency."
+        },
+        {
+          "value": 469,
+          "feedback": "You added $25\\,\\%$ of the arrived energy to it. The loss percentage is taken of the sent energy, not of the arrived energy, so divide by $0.75$."
+        }
+      ],
+      "solution": "**Given:** arrived energy $E_\\text{arrived} = 375\\,\\text{MWh}$ and efficiency $\\eta = 75\\,\\%$\n\n**Find:** the energy to be fed into the network $E_\\text{sent}$ in megawatt-hours\n\n**Principle:** Efficiency is the share of the sent energy that arrives. When the arrived energy and the efficiency are known, the sent energy is obtained by dividing.\n\n**Formula:** $\\eta = \\dfrac{E_\\text{arrived}}{E_\\text{sent}}$, so $E_\\text{sent} = \\dfrac{E_\\text{arrived}}{\\eta}$\n\n**Conversions:** $75\\,\\% = 75 : 100 = 0.75$. The unit of energy stays megawatt-hours.\n\n**Substitution:** $E_\\text{sent} = 375\\,\\text{MWh} : 0.75 = 500\\,\\text{MWh}$\n\n**Answer:** $5.0 \\cdot 10^2\\,\\text{MWh}$, two significant figures, because the efficiency $75\\,\\%$ is the least precise value.\n\n**Reasonableness:** The loss is $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$, which is $25\\,\\%$ of $500\\,\\text{MWh}$. The sent energy is larger than the arrived energy, as it should be."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and justify",
+      "optional": true,
+      "prompt": "Wind power is produced at night, when not much electricity is needed. Explain how energy can be transferred in time and why not all the energy comes back even with storage.",
+      "criteria": [
+        "I named at least one store (battery, pumped-storage plant or heat store) and said what form of energy is stored in it.",
+        "I explained that energy is put into the store when there is too much of it and taken into use later.",
+        "I said that in the conversions some of the energy turns into heat, so the loss is like a transmission loss."
+      ],
+      "model": "The extra wind electricity produced at night can be put into a store. In a battery the energy is stored as chemical energy, in a pumped-storage plant water is pumped to the upper reservoir and is stored as potential energy, and in a heat store hot water keeps thermal energy. In the daytime the energy is taken back from the store into use, so the energy has been transferred in time. In storage the energy is converted into another form and back, and in every conversion some of it turns into heat in the surroundings. That is why the energy obtained back is smaller than the energy put in, and the difference is a loss, as in transmission loss."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. First answer yourself and only then open the answer."
+    }
+  ]
+}

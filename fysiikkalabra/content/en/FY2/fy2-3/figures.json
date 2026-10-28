@@ -1,0 +1,8 @@
+{
+ "Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 100 W vain 100 J. Pylvään pituus on suoraan verrannollinen tehoon.": "Graph to scale: horizontal bars show how much energy a device transforms in one second. A kettle with a power of 2000 W transforms 2000 J, a toaster of 1000 W transforms 1000 J and a television of 100 W only 100 J. The length of a bar is directly proportional to the power.",
+ "energiaa muuntuu yhdessä sekunnissa": "energy transformed in one second",
+ "vedenkeitin": "kettle",
+ "tosteri": "toaster",
+ "televisio": "television",
+ "Kuvaaja: energia ajan funktiona kolmelle laitteelle, jotka muuntavat energiaa tasaisesti. Vedenkeittimen 2000 W suora nousee jyrkimmin, tosterin 1000 W suora puolet loivemmin ja television 80 W suora lähes vaakasuoraan. Suoran kulmakerroin on teho: vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä ja kuvaaja on mittakaavassa.": "Graph: energy as a function of time for three devices that transform energy steadily. The 2000 W line of the kettle rises most steeply, the 1000 W line of the toaster half as gently and the 80 W line of the television almost horizontally. The slope of a line is the power: on the kettle's line 40 kJ is used in 20 seconds. The scales are evenly spaced and the graph is to scale."
+}
