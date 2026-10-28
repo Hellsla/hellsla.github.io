@@ -1,18 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: ca8d24e8bdfff5b9
-
+VERDICT: PASS
+CONTENT-HASH: db6b52d85406321f
 ## Blocking
-- solutions.md L2-03 Kaava/Muunnokset — the conversion is a formula with two factors, $A_\text{ha} = A\cdot k_1 / k_2$, exactly what the teacher rejected (2026-10-28: understanding, not formulas) — use the replace-the-unit way of L1-04: "$1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja $10^{4}\,\text{m}^2 = 1\,\text{ha}$, joten $2{,}4\cdot10^{6}\,\text{m}^2 = 2{,}4\cdot10^{2}\cdot10^{4}\,\text{m}^2 = 240\,\text{ha}$".
-
 ## Polish
-- solutions.md L1-01 and L1-02 Kaava — "$l = x\cdot1\,\mu\text{m}$ … $l_\text{mm} = x\cdot10^{-3}$" introduces a bare x; write "$82\,\mu\text{m} = 82\cdot10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$" directly (same for 384 400 km).
-- solutions.md L3-02 Kaava — $N = \frac{a\cdot1\,\text{AU}}{D}\cdot\frac{1\,\text{px}}{W}$ is heavy; state the two steps in words (km to px, px to screens).
-- solutions.md L1-05 Järkevyys — fraction used as an operation; write "$1{,}4\cdot10^{6} : 3{,}5\cdot10^{3} = 0{,}4\cdot10^{3}$". Same for L2-02 (500), L3-01/L3-03 divisions by unit quotients ($\text{km/AU}$, $\text{s/h}$, $\text{km/px}$): the replacing-the-unit way ("$1\,\text{h} = 3600\,\text{s}$") is clearer.
-- solutions.md L1-02 Vastaus — the sentence about trailing zeros and "sadan kilometrin tarkkuus" is hard for a student and contradicts "neljä merkitsevää numeroa"; shorten.
-
+- solutions.md fy1-2-L1-01 Periaate/Kaava — `1 µm = 10^{-3} mm` is stated as a jump from µ = 10^{-6} and milli = 10^{-3}. Show the substitution: "$1\,\mu\text{m} = 10^{-6}\,\text{m} = 10^{-6}\cdot1000\,\text{mm} = 10^{-3}\,\text{mm}$" (or 1 mm = 1000 µm), as the student otherwise guesses the direction.
+- solutions.md fy1-2-L1-02 Vastaus/Järkevyys — Vastaus says "neljä merkitsevää numeroa" and then calls the trailing zeros unclear; the Järkevyys "10^8 m = 100 Mm ja 10^9 m = 1000 Mm välissä" is clumsy. Say "384 400 km = 3,844·10^5 km, neljä merkitsevää numeroa" and check "noin 400 tuhatta km on noin 400 Mm".
+- solutions.md fy1-2-L2-03 Kaava — `10^{6} : 10^{4}\,\text{ha}` mixes units. Write `1\,\text{km}^2 = 10^{6}\,\text{m}^2 = 10^{6}\cdot\dfrac{1}{10^{4}}\,\text{ha} = 100\,\text{ha}` (1 m² = 10^{-4} ha by substitution).
+- exercises.json L1-02 is two prefix steps (km to Mm) at level 1; acceptable as given, but L1-02 and L2-01/L2-02 practise prefixes while "merkitsevät numerot" (slot goal) is tested only by L1-03; consider a rounding point in one level-2 task.
+- solutions.md L2-01 Muunnokset — `3{,}2\cdot10^{9}\,\text{1/s}` reads oddly; `3{,}2\cdot10^{9}\,\dfrac{1}{\text{s}}` as in the Sijoitus.
 ## Checked
-- Delta: L1-04 now replaces km by 1000 m, with no factor k; clear and consistent with the lesson's method.
-- Colon in L2-03 and L3-01 Järkevyys is correct and the arithmetic holds ($10^{6} : 10^{4}$; $525\,600 : 8{,}3 \approx 63\,000$).
-- No × or \times, no $\Delta$ misuse anywhere; counts 5/4/3; situation first, question last.
-- Neither L3 task repeats the Neptune example (L3-03 is Voyager round trip, which uses it only as a method).
-- Finnish and case after number+unit correct in the solutions read.
+- Counts 5/4/3 per the course; none repeats the worked example (L3-03 resembles it but adds the round trip, a real second idea); L3-02 numbers verified (674,4).
+- Situation first, question last, everyday or lesson contexts, all data given (ha, GHz, Mm stated in the task).
+- Solutions: all seven steps, principle explained, conversions by substitution (1 km = 1000 m written in place), `\cdot` never ×, colon for division; answers rechecked (1,7; 15341; 1,3255; 63250; 40,2).
+- Finnish: case after number+unit ("5,0 ms:ssa", "145 AU:n") correct; no glossary slips.
+- Captures: stage-exercises-390 and open-exercises-1280-3: calculations wrap, nothing clipped.

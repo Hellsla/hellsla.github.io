@@ -103,7 +103,7 @@
 **Kysytty:** näyttöjen lukumäärä $N$
 **Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Näyttöjen lukumäärä on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
 **Kaava:** $N = \dfrac{a\cdot 1\,\text{AU}}{D}\cdot\dfrac{1\,\text{px}}{W}$
-**Muunnokset:** Matka kilometreinä: $30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Kuvapisteinä: $\dfrac{4{,}498\cdot10^{9}\,\text{km}}{3474\,\text{km/px}} = 1{,}295\cdot10^{6}\,\text{px}$.
+**Muunnokset:** Matka kilometreinä: $30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1{,}295\cdot10^{6}$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
 **Vastaus:** $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
 **Järkevyys:** Neptunus on noin 1,3 miljoonan kuvapisteen päässä, ja 1,3 miljoonaa jaettuna kahdella tuhannella on noin 650. Tulos on samaa suuruusluokkaa, joten matkaa ei voi vierittää kuvassa yhdellä vilkaisulla.
@@ -114,6 +114,6 @@
 **Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa ajan. Komento ja vahvistus kulkevat kumpikin matkan $d$, joten koko matka on $2d$ eikä pelkkä $d$.
 **Kaava:** $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 145\cdot 1{,}496\cdot10^{8}\,\text{km} = 2{,}169\cdot10^{10}\,\text{km}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
-**Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s} = \dfrac{1{,}447\cdot10^{5}\,\text{s}}{3600\,\text{s/h}} = 40{,}2\,\text{h}$
+**Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s}$. Tunteja on $1{,}447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40{,}2$, joten $t = 40{,}2\,\text{h}$
 **Vastaus:** $40{,}2\,\text{h}$, kolme merkitsevää numeroa kuten etäisyydessä $145\,\text{AU}$.
 **Järkevyys:** Yhteen suuntaan valolla kestää noin $145\cdot 8{,}3\,\text{min} = 1200\,\text{min} = 20\,\text{h}$, joten edestakaisin tulee noin 40 tuntia. Vastaus saapuu siis yli vuorokauden kuluttua.

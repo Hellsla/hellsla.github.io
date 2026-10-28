@@ -280,11 +280,11 @@
         {
           "text": "Hän kertoi vain yhdellä tuhannella. Neliökilometri on $(1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$, joten oikea tulos on $2{,}5\\cdot10^{6}\\,\\text{m}^2$.",
           "correct": true,
-          "feedback": "Oikein. Yksikkö on neliö, joten myös muunnoskerroin on neliö: $(10^{3})^2 = 10^{6}$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
+          "feedback": "Oikein. Yksikkö on neliö, joten sijoitetaan koko neliö: $1\\,\\text{km}^2 = (1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
         },
         {
           "text": "Hänen olisi pitänyt jakaa tuhannella, koska metri on pienempi kuin kilometri.",
-          "feedback": "Pienempään yksikköön siirryttäessä lukuarvo kasvaa, joten kertominen on oikea suunta. Virhe on kertoimessa: neliöyksikön kerroin on $10^{6}$, ei $10^{3}$."
+          "feedback": "Pienempään yksikköön siirryttäessä lukuarvo kasvaa, joten kertominen on oikea suunta. Virhe on siinä, mitä sijoitettiin: $1\\,\\text{km}^2 = 10^{6}\\,\\text{m}^2$, ei $10^{3}\\,\\text{m}^2$."
         },
         {
           "text": "Tulos pitää kirjoittaa kymmenpotenssimuodossa $2{,}5\\cdot10^{3}\\,\\text{m}^2$.",
@@ -292,7 +292,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä, koska yksi kilometri on tuhat metriä.",
-          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten myös muunnoskerroin on kahden tuhannen tulo, $1000\\cdot1000 = 10^{6}$."
+          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten $1\\,\\text{km}^2 = 1000\\,\\text{m}\\cdot1000\\,\\text{m} = 10^{6}\\,\\text{m}^2$."
         }
       ],
       "optional": true
@@ -335,20 +335,20 @@
       "tolerance": 0.02,
       "hints": [
         "Nopeus kertoo matkan sekunnissa. Kuinka monta sekuntia vuodessa on, ja mitä yksikköä matka on, kun nopeus on $\\text{km/s}$?",
-        "Matka vuodessa on $s = vt$, missä $t = 3{,}156\\cdot10^{7}\\,\\text{s}$. Muunna sitten kilometrit AU:ksi jakamalla luvulla $1{,}496\\cdot10^{8}\\,\\text{km/AU}$.",
-        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$, ja $\\dfrac{4{,}842\\cdot10^{8}\\,\\text{km}}{1{,}496\\cdot10^{8}\\,\\text{km/AU}}$."
+        "Matka vuodessa on $s = vt$, missä $t = 3{,}156\\cdot10^{7}\\,\\text{s}$. Laske sitten, montako AU:ta matkaan mahtuu, kun $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.",
+        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km}$."
       ],
       "mistakes": [
         {
           "value": 484000000,
-          "feedback": "Tuo luku on matka kilometreinä, $4{,}84\\cdot10^{8}\\,\\text{km}$. Kysyttiin AU:ina, joten jaa vielä AU:n pituudella $1{,}496\\cdot10^{8}\\,\\text{km/AU}$."
+          "feedback": "Tuo luku on matka kilometreinä, $4{,}84\\cdot10^{8}\\,\\text{km}$. Kysyttiin AU:ina, joten laske vielä, montako AU:ta ($1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$) matkaan mahtuu."
         },
         {
           "value": 3236,
           "feedback": "Käytit AU:n pituutena $1{,}496\\cdot10^{5}\\,\\text{km}$. AU on $1{,}496\\cdot10^{8}\\,\\text{km}$, tuhat kertaa pidempi, joten lukuarvo on tuhannesosa siitä."
         }
       ],
-      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** matka vuodessa $s$ yksikössä AU/a\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$ ja $s_\\text{AU} = \\dfrac{vt}{1\\,\\text{AU}}$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Matka muunnetaan AU:ksi jakamalla luvulla $1{,}496\\cdot10^{8}\\,\\text{km/AU}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km} = \\dfrac{4{,}842\\cdot10^{8}\\,\\text{km}}{1{,}496\\cdot10^{8}\\,\\text{km/AU}} = 3{,}236\\,\\text{AU}$\n\n**Vastaus:** $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
+      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** matka vuodessa $s$ yksikössä AU/a\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Lopuksi lasketaan, montako AU:ta matkaan mahtuu: $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km} = 3{,}236$, joten $s = 3{,}236\\,\\text{AU}$\n\n**Vastaus:** $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
     },
     {
       "id": "harjoitukset",
@@ -399,14 +399,14 @@
       "mistakes": [
         {
           "value": 193,
-          "feedback": "Tuo luku on aika sekunteina, noin $193\\,\\text{s}$. Kysyttiin minuutteja, joten jaa vielä luvulla $60\\,\\text{s/min}$."
+          "feedback": "Tuo luku on aika sekunteina, noin $193\\,\\text{s}$. Kysyttiin minuutteja. Minuutissa on $60\\,\\text{s}$, joten laske vielä, montako minuuttia $193\\,\\text{s}$ on."
         },
         {
           "value": 0.0536,
           "feedback": "Muunsit sekunnit tunneiksi ($193\\,\\text{s} : 3600$), vaikka kysyttiin minuutteja. Yksi minuutti on $60\\,\\text{s}$."
         }
       ],
-      "solution": "**Annettu:** etäisyys $a = 0{,}387\\,\\text{AU}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$, $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$\n\n**Kysytty:** valon kulkuaika $t$ minuutteina\n\n**Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan $t = s : c$. Matka on ensin muunnettava AU:sta kilometreiksi, jotta se sopii nopeuden yksikköön.\n\n**Kaava:** $s = a\\cdot1\\,\\text{AU}$ ja $t = \\dfrac{s}{c}$, josta $t = \\dfrac{a\\cdot1\\,\\text{AU}}{c}$\n\n**Muunnokset:** $s = 0{,}387\\cdot1{,}496\\cdot10^{8}\\,\\text{km} = 5{,}790\\cdot10^{7}\\,\\text{km}$. Lopuksi sekunnit minuuteiksi: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{5{,}790\\cdot10^{7}\\,\\text{km}}{2{,}998\\cdot10^{5}\\,\\text{km/s}} = 193{,}1\\,\\text{s} = \\dfrac{193{,}1\\,\\text{s}}{60\\,\\text{s/min}} = 3{,}219\\,\\text{min}$\n\n**Vastaus:** $3{,}22\\,\\text{min}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}387\\,\\text{AU}$.\n\n**Järkevyys:** Yhden AU:n valo kulkee noin $8{,}3\\,\\text{min}$, ja Merkurius on noin 0,4 AU:n päässä, joten aika on noin $0{,}4\\cdot8{,}3\\,\\text{min} = 3{,}3\\,\\text{min}$. Tulos on samaa suuruusluokkaa."
+      "solution": "**Annettu:** etäisyys $a = 0{,}387\\,\\text{AU}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$, $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$\n\n**Kysytty:** valon kulkuaika $t$ minuutteina\n\n**Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa kulkuajan $t = s : c$. Matka on ensin muunnettava AU:sta kilometreiksi, jotta se sopii nopeuden yksikköön.\n\n**Kaava:** $s = a\\cdot1\\,\\text{AU}$ ja $t = \\dfrac{s}{c}$, josta $t = \\dfrac{a\\cdot1\\,\\text{AU}}{c}$\n\n**Muunnokset:** $s = 0{,}387\\cdot1{,}496\\cdot10^{8}\\,\\text{km} = 5{,}790\\cdot10^{7}\\,\\text{km}$. Lopuksi sekunnit minuuteiksi: $1\\,\\text{min} = 60\\,\\text{s}$.\n\n**Sijoitus:** $t = \\dfrac{5{,}790\\cdot10^{7}\\,\\text{km}}{2{,}998\\cdot10^{5}\\,\\text{km/s}} = 193{,}1\\,\\text{s}$. Minuutteja on $193{,}1\\,\\text{s} : 60\\,\\text{s} = 3{,}219$, joten $t = 3{,}219\\,\\text{min}$\n\n**Vastaus:** $3{,}22\\,\\text{min}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}387\\,\\text{AU}$.\n\n**Järkevyys:** Yhden AU:n valo kulkee noin $8{,}3\\,\\text{min}$, ja Merkurius on noin 0,4 AU:n päässä, joten aika on noin $0{,}4\\cdot8{,}3\\,\\text{min} = 3{,}3\\,\\text{min}$. Tulos on samaa suuruusluokkaa."
     },
     {
       "id": "tarkistus-3",

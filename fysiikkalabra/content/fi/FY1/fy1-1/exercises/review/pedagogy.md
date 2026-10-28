@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 261a3b605b57982d
+CONTENT-HASH: 2df6a3c752c09239
 
 ## Blocking
 - none.
 
 ## Polish
-- solutions.md L1-01 Muunnokset — "muuta muokkausta ei tarvita" — "muuta muunnosta ei tarvita".
-- solutions.md L2-01 Kaava — $N = D/d$ uses bare D and d; use descriptive subscripts ($d_\text{maailmankaikkeus}$, $d_\text{Linnunrata}$) as in L1-04, L1-05.
-- solutions.md L2-02 Kaava/Muunnokset — s to a still divides by $3{,}156\cdot10^{7}\,\text{s/a}$ as a formula; for understanding write "1 a = 3,156·10^7 s, joten $1{,}334\cdot10^{8}\,\text{s} = 4{,}23\,\text{a}$" (replace the unit by its value).
-- exercises.json L1-04 — the atom/nucleus ratio is still the worked example's method and context; a non-atomic pair (hius/virus) would avoid the echo.
+- exercises.json L1-04 — the atom/nucleus ratio still repeats the worked example's context; a non-atomic pair (hius/virus) would avoid the echo.
+- solutions.md L2-04 Järkevyys — the last sentence ("tilavuuksien suhde kertoo, kuinka moneen Maan tilavuuteen...") repeats Kysytty and Vastaus; cut it and keep the sentence about empty space between solid balls.
+- solutions.md L2-02 Sijoitus — "$1{,}334\cdot10^{8}\,\text{s} : 3{,}156\cdot10^{7}\,\text{s} = 4{,}23$" shows the colon between quantities with units; it works, but add "(yksiköt supistuvat)" for a student who has just met the unit-cancelling idea.
 
 ## Checked
-- Delta: the colon replaces the fraction wherever division appears in running text and in Järkevyys; no × or \times left; errors/steps no longer use $\Delta n$ (descriptive "askelia").
-- L1-01, L1-03 now convert by replacing the unit by its value; clear and shorter, no formula to memorise.
-- L1-04, L1-05 use descriptive subscripts ($d_\text{atomi}$, $d_\text{ydin}$, $d_\text{hius}$, $d_\text{punasolu}$) instead of $d_2/d_1$; matches the lesson's $k$ formula.
-- L1-02 and L3-02 explain the exponent difference as steps in plain words; L3-02 Kysytty matches the task.
-- Counts 5/4/3; situation first, question last; Finnish and case after number+unit correct.
-- Solutions keep all seven parts; numbers match exercises.json answers.
+- Delta: L2-04 now asks "Kuinka monta kertaa suurempi Auringon tilavuus on kuin Maan tilavuus?" instead of "kuinka monta Maan kokoista palloa mahtuisi"; this removes the packing misreading, and the answer 1,31 miljoonaa kertaa matches $109{,}4^{3} = 1{,}31\cdot10^{6}$. Situation first, question last as its own sentence.
+- L2-04 solution: Kysytty, Vastaus and Järkevyys now agree with the task; the note on voids between spheres is a good addition.
+- L2-02 solution: the formula line holds only $t = s/c$; the year conversion is in Muunnokset in plain words (1 vuosi = 3,156·10^7 s, jaetaan) and replaces the former unit-quotient formula; the numbers match the answer 4,23 a.
+- Counts remain 5/4/3; no exercise repeats the example's numbers; the units and cases are correct.
+- The seven solution parts are present in both changed solutions.
+- Phone: the exercise captures were regenerated; nothing clipped in the 1280 px exercise captures (the 390 px exercise stage capture shows only the stage heading).
+- Hash unchanged at the end.

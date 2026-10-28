@@ -8,7 +8,7 @@
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
 
 ### Karkea virhe
-**Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistyy vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään ja poistetaan: poikkeava tulos tarkistetaan, ja jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
+**Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistetään kerran vahingossa vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään ja poistetaan: poikkeava tulos tarkistetaan, ja jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
 
 ### Satunnaisvirhe
 **Satunnaisvirhe** vaihtelee mittauksesta toiseen sattumanvaraisesti ja voi olla kumpaan suuntaan tahansa. Käsikellolla kuulan vierimisaikaa mitattaessa se syntyy reaktioajasta: välillä kello käynnistyy hieman liian aikaisin ja välillä liian myöhään. Myös asteikon lukeminen kahden viivan väliltä tuo satunnaisvirhettä. Se näkyy hajontana: samasta suureesta saadaan joka kerta vähän eri luku. Toistamalla mittaus hajonta tulee näkyviin, ja keskiarvo vaimentaa sitä, koska liian suuret ja liian pienet tulokset kumoavat osin toisensa.
@@ -101,7 +101,7 @@ Satunnaisvirheen suuruus arvioidaan vaihteluvälin puolikkaana:
 ```latex
 \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
-missä $\Delta x$ on virhe-arvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio on karkea arvio, ei tarkka raja: yksittäinen tulos voi joskus jäädä sen ulkopuolelle.
+missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Merkintä on sama kuin mittausvirheellä, koska virhearvio kertoo, kuinka suuri mittausvirhe tuloksessa arviolta on; virhearvio on aina positiivinen. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio on karkea arvio, ei tarkka raja: yksittäinen tulos voi joskus jäädä sen ulkopuolelle.
 
 <svg data-fig="range-half" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja: kuusi mittaustulosta aika-akselilla. Suurin tulos t_max ja pienin tulos t_min rajaavat vaihteluvälin, jonka pituus on t_max − t_min. Keskiarvo on merkitty pystyviivalla. Vaihteluvälin puolikas Δt on arvio satunnaisvirheestä, ja tulos ilmoitetaan muodossa keskiarvo plus miinus Δt." style="max-width:100%;font-size:24px">
   <circle cx="143.5" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>

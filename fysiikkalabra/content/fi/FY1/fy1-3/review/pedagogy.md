@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 60ac1e5410bf6b4f
+CONTENT-HASH: 19b5ecc68b950a1c
 
 ## Blocking
-(none)
+- none.
 
 ## Polish
-- lesson.md Ydinajatus / Kaava / Esimerkki — one symbol, two meanings: mittausvirhe is the signed difference $\Delta x = x - x_\text{oikea}$, but later $\Delta x = (x_\text{max}-x_\text{min})/2$ is the error estimate (example $\Delta t = 0{,}12\,\text{s}$) while exp-2 uses $\Delta t = \bar t - T = 0{,}30\,\text{s}$ — name the estimate once as "virhe-arvio $\Delta x$ (vaihteluvälin puolikas)" and say that the signed difference is the error the estimate tries to bound; or add one sentence making the link.
-- lesson.md Ydinajatus — "kolmeen lajiin" but the figure shows only random and systematic error; gross error has no picture. A small marker of one outlier in the dot plot would make karkea virhe visible.
-- inquiry.json "karkea" — good new task, but it comes only after the theory and never shows the outlier on a graph; consider showing the six values as dots (as in the example figure) or keep it as is if workload matters.
-- inquiry.json "karkea" feedback 3 — "ääripäät eivät ole aina virheellisiä" is excellent; add that with the data alone the student cannot know, so the check reveals the cause (supports "tarkistetaan").
-- Workload: three experiments plus data, karkea, siirto and exercises is a lot for one hour; exp-3, virhe and check-3 are optional, keep them so.
+- lesson.md Ydinajatus vs Kaava (and Tiivistelmä bullets 1 and 3), sim `Δt_sat`/`Δt`/`Δt_sys` — the symbol Δx now means the signed error x − x_oikea in Ydinajatus but the positive half-range estimate in Kaava, and the Tiivistelmä uses both within three bullets; a first-time student cannot tell they differ. Add one sentence after the half-range formula: "Merkintä Δx tarkoittaa tässä virheen suuruuden arviota (virhe-arvio), ei yksittäisen tuloksen etumerkillistä virhettä."
+- inquiry.json `karkea` — the correct option is much longer than the three distractors (it carries the whole procedure), so length gives it away; shorten it to "Tarkistaa tuloksen 4,31 s ja jättää sen pois, jos se on selvästi virheellinen." and keep the "kirjaa syy, mittaa uudelleen" in the feedback.
+- lesson.md Karkea virhe — "kello käynnistyy vasta, kun kuula on jo liikkeellä" is a reaction-time effect that, if it recurs every time, is systematic; write "kello unohtuu käynnistää ja käynnistyy vasta, kun kuula on jo liikkeellä (yksittäinen unohdus)".
+- Karkea virhe appears in one choice task only; exit ticket, check-3 criteria and the simulation do not touch it. If the teacher wants it to stick, add a criterion to check-3 ("karkea virhe poistetaan, ei keskiarvoisteta") or a fourth exit question. A dot plot with one far point beside the `karkea` task would help.
+- Karkea task is not optional but "Etsi virhe" is; both are short, workload stays one lesson.
 
 ## Checked
-- Hash same at start and end.
-- Δx used as the error symbol in Ydinajatus, summary and solutions; karkea virhe has its own theory subsection, glossary term, choice task and exit-ticket relevance.
-- Notation: \cdot for multiplication, no x; colon in division in tasks and feedback.
-- Opening question (reliable result, common clock error) answered by exp-1/exp-2, the thermometer data and the zero-correction.
-- Predictions can be refuted by the sim; locks and reveal tested.
-- Figure error-types legible at 390 px; staged example has seven one-step stages.
-- Feedback repairs misconceptions (karkea, siirto mistakes, virhe).
-- Finnish and glossary terms correct.
+- Learning path: hook, retrieval, two committed predictions, two experiments with min 3, conclusion, theory, reflect; goals of the slot (virhelajit, toistettavuus, keskiarvo, virhe-arvio) covered, opening question answered in reflect.
+- New section "Karkea virhe": defined, one concrete example (3,52 s / 3,25 s), what to do (check, drop, remeasure, record), contrasted in the misconception paragraph and Tiivistelmä; about 100 words.
+- `karkea` choice arithmetic verified: others within 0,2 s, mean shift about 0,2 s, estimate 0,62 s vs 0,09 s (about seven times), 3,07 s is 0,05 s below 3,12 s; each distractor feedback repairs its misconception (including "ääripäät aina virheellisiä").
+- Glossary terms match; no letter or position references to options; Finnish correct, case after number+unit fine.
+- Figures: error-types legible at 390 px and 1280 px, colour plus labels (not colour alone); worked example staged in seven steps with figure at the problem.
+- Simulation at 390 px: picture, controls, readout understandable; text behind Käyttöohje, Mallin oletukset, Laskennan selitys; values labelled model values.
+- Exercises and their solutions not judged here.

@@ -298,20 +298,20 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä on alkupaikka, ja mikä on nopeus? Ovatko yksiköt yhteensopivia?",
-        "Käytä kaavaa $s = s_0 + vt$. Muunna nopeus ensin yksikköön m/s: jaa luku 3,6:lla.",
-        "$v = (21{,}6 : 3{,}6)\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
+        "Käytä kaavaa $s = s_0 + vt$. Muunna nopeus ensin yksikköön m/s sijoittamalla $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$.",
+        "$v = 21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$, ja $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s}$."
       ],
       "mistakes": [
         {
           "value": 1092,
-          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin: $21{,}6\\,\\text{km/h} = (21{,}6 : 3{,}6)\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$."
+          "feedback": "Käytit nopeutta 21,6 suoraan metreinä sekunnissa. Muunna ensin sijoittamalla: $21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$."
         },
         {
           "value": 270,
           "feedback": "Laskit vain kuljetun matkan $vt$. Pyöräilijä oli aikavälin alussa jo 120 m:n päässä lähtöviivasta, joten paikka on $s_0 + vt$."
         }
       ],
-      "solution": "**Annettu:** alkupaikka $s_0 = 120\\,\\text{m}$, nopeus $v = 21{,}6\\,\\text{km/h}$, aika $t = 45\\,\\text{s}$\n\n**Kysytty:** paikka $s$ lähtöviivasta metreinä\n\n**Periaate:** Pyöräilijän nopeus on vakio, joten liike on tasaista, ja paikka seuraa lineaarista mallia. Alkupaikka ei ole nolla, joten se on lisättävä kuljettuun matkaan.\n\n**Kaava:** $s = s_0 + vt$\n\n**Muunnokset:** $v = 21{,}6\\,\\text{km/h} = \\dfrac{21{,}6}{3{,}6}\\,\\text{m/s} = 6{,}0\\,\\text{m/s}$. Aika ja alkupaikka ovat jo SI-yksiköissä.\n\n**Sijoitus:** $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s} = 120\\,\\text{m} + 270\\,\\text{m} = 390\\,\\text{m}$\n\n**Vastaus:** $390\\,\\text{m}$, kaksi merkitsevää numeroa kuten ajassa $45\\,\\text{s}$.\n\n**Järkevyys:** Nopeus $6\\,\\text{m/s}$ on noin $22\\,\\text{km/h}$, ja $45\\,\\text{s}$ on kolme neljäsosaa minuutista, joten matkaa kertyy noin $6 \\cdot 45 \\approx 270\\,\\text{m}$. Alkupaikka $120\\,\\text{m}$ lisää tähän, ja paikka on suurempi kuin alkupaikka, kuten pitääkin, kun pyöräilijä etenee poispäin."
+      "solution": "**Annettu:** alkupaikka $s_0 = 120\\,\\text{m}$, nopeus $v = 21{,}6\\,\\text{km/h}$, aika $t = 45\\,\\text{s}$\n\n**Kysytty:** paikka $s$ lähtöviivasta metreinä\n\n**Periaate:** Pyöräilijän nopeus on vakio, joten liike on tasaista, ja paikka seuraa lineaarista mallia. Alkupaikka ei ole nolla, joten se on lisättävä kuljettuun matkaan.\n\n**Kaava:** $s = s_0 + vt$\n\n**Muunnokset:** Sijoitetaan $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 21{,}6\\,\\text{km/h} = \\dfrac{21{,}6\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 6{,}0\\,\\text{m/s}$. Aika ja alkupaikka ovat jo SI-yksiköissä.\n\n**Sijoitus:** $s = 120\\,\\text{m} + 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 45\\,\\text{s} = 120\\,\\text{m} + 270\\,\\text{m} = 390\\,\\text{m}$\n\n**Vastaus:** $390\\,\\text{m}$, kaksi merkitsevää numeroa kuten ajassa $45\\,\\text{s}$.\n\n**Järkevyys:** Nopeus $6\\,\\text{m/s}$ on noin $22\\,\\text{km/h}$, ja $45\\,\\text{s}$ on kolme neljäsosaa minuutista, joten matkaa kertyy noin $6 \\cdot 45 \\approx 270\\,\\text{m}$. Alkupaikka $120\\,\\text{m}$ lisää tähän, ja paikka on suurempi kuin alkupaikka, kuten pitääkin, kun pyöräilijä etenee poispäin."
     },
     {
       "id": "harjoitukset",

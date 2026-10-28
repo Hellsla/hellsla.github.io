@@ -346,7 +346,7 @@ Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Tunneiksi muunnetaa
 t &= \frac{s}{c} \\
 &= \frac{4{,}503\cdot10^{9}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} \\
 &= 1{,}502\cdot10^{4}\,\text{s} \\
-&= \frac{1{,}502\cdot10^{4}}{3600}\,\text{h} = 4{,}17\,\text{h}
+&= (1{,}502\cdot10^{4} : 3600)\,\text{h} = 4{,}17\,\text{h}
 \end{aligned}
 ```
 

@@ -1,20 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 700f60a819aca0b5
+VERDICT: PASS
+CONTENT-HASH: 2a7e930288c2b5a4
 
 ## Blocking
-- exit-ticket.json item 2 answer — `$\text{B}$` is written with a single backslash, so JSON turns `\t` into a tab and the page shows "Kohde extB siis noin" (capture open-exit-1280) — write `$\\text{B}$`.
-- inquiry.json exp-1/exp-2/exp-3 `names.L` ("leveyden eksponentti") — the recorded table still opens with an unexplained column of L values (-9,00, -9,10 ...) next to n; after "Siirry kohteeseen vetyatomi" L is -9,10 while n is -10, which contradicts the revision's aim (the teacher's complaint was L values). The status line also says "Säädä leveyden eksponentti" — hide or rename the column ("näkymän leveys, ei tarvita") and change the hint text so only n is the student's number.
+- none.
 
 ## Polish
-- The core path is clear: opening question, "Siirry kohteeseen" (menu readable at 390 px), pred-1 and pred-2, and the ladder figure ("5 askelta ⇒ 10^5 = 100 000 kertaa suurempi") are good. But predictions and exp-1 ask for "suuruusluokkaa" (steps), while the section asks "kuinka monta kertaa"; add one sentence linking the two (askeleet → kertoja) at the experiment's question.
-- Menu has 44 entries, including both "avaruuden raja" and "havaittava maailmankaikkeus"; the student only needs about 8 named in the experiments. Group or shorten the list.
-- Workload: 5 theory sections, 3 predictions or experiments, 2 interpret items and 4 Sovella tasks in one lesson; consider moving more to optional.
-- Formula k = d_suurempi/d_pienempi: say in a sentence that the colon form (d_suurempi : d_pienempi) means the same.
+- inquiry.json exp-1/2/3 `initial` — the setup box still reads "Alkutila: L = -9" and the sim shows "Näkymän leveys W = 10^-9 m"; L is never explained to the student, who needs only n. Write the initial state in words ("alkutilassa lähin kohde on vesimolekyyli") or hide L from the box.
+- Predictions and exp-1 ask "montako suuruusluokkaa", the Kaava section "kuinka monta kertaa". Add one sentence at exp-1's question: "viisi suuruusluokkaa = viisi askelta = $10^{5}$-kertainen".
+- The "Siirry kohteeseen" menu has about 44 entries; the experiments name about 8. Group it (aine, maapallo, avaruus) or shorten it.
+- Workload is on the upper edge for one lesson (five theory sections, two predictions, two experiments, three optional items, four Sovella tasks). Consider making the Orion/neutron-star detail in the theory shorter.
+- Formula: add that $d_\text{suurempi} : d_\text{pienempi}$ means the same as the fraction (the exercises' solutions use the colon).
 
 ## Checked
-- Shots were stale (before the edits); regenerated with screenshot.py.
-- No × as a multiplication sign in lesson.md, inquiry.json or the exit ticket; \cdot is used throughout.
-- Fig 2 and fig 3 (ladder) are legible and clear at 390 px.
-- exp-1 intro, the preview and the menu items for vetyatomi, protoni, kvarkki and Neptunuksen radan säde exist.
-- Example is staged in seven steps; its solution follows the rubric.
-- The hash was unchanged at the end.
+- Teacher's concern: the essential is now clear. Fig 3 (ladder) says "5 askelta ⇒ 10^5 = 100 000 kertaa suurempi", and the prediction, experiment table (only n) and example all use the same rule: count the steps, then 10 to that power. No d_2/d_1 and no L values to compare remain in the table.
+- The menu "Siirry kohteeseen" is readable at 390 px and 1280 px; the table's single column "kohde, n" is clear. Exp-1 and exp-2 can refute the predictions (atom vs ydin 5 steps, Neptune vs Linnunrata 8).
+- The two earlier blockers are fixed: the exit ticket shows $\text{B}$ correctly (capture open-exit-1280) and the table no longer has an L column.
+- Predictions open without disclosing answers; each option's feedback repairs its misconception.
+- The example is staged in seven steps; solutions follow the seven-part rubric.
+- Shots were stale (before the last inquiry and sim edits); regenerated with screenshot.py before judging.
+- Finnish and notation consistent (\cdot, thin spaces, glossary terms).
+- Hash unchanged at the end.

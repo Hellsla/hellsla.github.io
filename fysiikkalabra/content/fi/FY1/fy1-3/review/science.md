@@ -1,21 +1,21 @@
 VERDICT: FAIL
-CONTENT-HASH: 60ac1e5410bf6b4f
+CONTENT-HASH: 19b5ecc68b950a1c
 
 ## Blocking
-- inquiry.json:394 (karkea, option "Lisätä virhe-arvioon …") — "paisuttaisi virhe-arvion noin kymmenkertaiseksi" is wrong: without 4,31 s the half-range is (3,25 − 3,07) s : 2 = 0,09 s, with it (4,31 − 3,07) s : 2 = 0,62 s, about 7 times (5 times against the worked example's 0,12 s) — write "noin seitsenkertaiseksi" or "moninkertaiseksi".
-- inquiry.json:499 (check-2) — the lesson's own rule (Esimerkki, Tulos: ε has the significant figures of Δx) gives Δt = 0,05 s (one figure) and ε = 2 %, which the relative tolerance 0.03 against 2.1 rejects (4,8 % off) — raise tolerance to 0.05 and say in the solution that 2 % (one figure, as Δt) is the strict rounding, 2,1 % the unrounded value.
+- inquiry.json:519 (check-2 solution, Vastaus) and exit-ticket.json:12 (item 3) — the rounding contradicts the lesson's own rule. A virhe-arvio has one figure (two if the first is 1), and ε has as many figures as Δx (Esimerkki, Tulos). So Δt = 0,05 s and 0,09 s both give ε = 2 %, but the page says "2,1 %, kaksi merkitsevää numeroa; erotus 0,10 s jaetaan tarkalla luvulla 2" and "2,0 %". The exercise set (L2-01) follows the rule, so the page teaches it both ways. Fix: in check-2's Vastaus write "$2\,\%$, yksi merkitsevä numero kuten virhe-arviossa $0{,}05\,\text{s}$ (laskimen arvo $2{,}08\,\%$)", and in the exit ticket write "$\approx 2\,\%$". Keep answer 2.1 with tolerance 0.05.
 
 ## Polish
-- inquiry.json:234 (exp-2 solution) — calls t̄ − T "Δt" while the sim's readout beside it shows "vaihteluvälin puolikas Δt = 0,250 s"; use Δt_sys (as L3-01 and the sim slider do).
-- inquiry.json:3 contribution — names only random and systematic error; add karkea virhe, now one of the three learn goals.
-- lesson.md:11 — "kello käynnistyy vasta, kun kuula on jo liikkeellä" is a gross error only once; add "kerran" so it is not confused with the constant start delay of L3-01 (systematic).
-- exit-ticket.json item 3 — 2,0 % has two figures while Δt = 0,09 s has one; same rule as check-2.
-- lessons/FY1/fy1-3/lesson-answers.py:38 — inq-ice-corrected (62,3 °C) is used nowhere; remove.
+- lesson.md:11 — "kello käynnistyy vasta, kun kuula on jo liikkeellä" reads like L3-01's constant (systematic) delay. Add "kerran".
+- inquiry.json:3 contribution — names only random and systematic error. Add karkea virhe.
+- lessons/FY1/fy1-3/lesson-answers.py:38 — inq-ice-corrected is unused. Remove it.
+- lesson.md — Δx stands for both the signed error and the half-range estimate. Add one sentence that says so.
+- inquiry.json exp-3 solution — writes 0,0850 s, but the readout shows 0,085 s.
 
 ## Checked
-- Teacher's rules 2026-10-28: no × or ÷ anywhere; \cdot in all products; the one division written as an operation (siirto Järkevyys) uses ':'; \frac elsewhere; Δx = x − x_oikea, Δt_sat, Δt_sys used; karkea virhe in theory, activity, summary, misconception and glossary.
-- Every lesson-answers.py number recomputed independently and in the live sim (simState at exp-1/2/3 settings): 2,6995 s, 0,085/0,525 s, ratio 6,18, −0,22 s, < 0,01 s, 0,25–0,26 s.
-- Worked example 3,18 s ± 0,12 s, 3,8 %; siirto 5,44 g and its four mistakes; check-2 2,08 %; ice data 1,5 °C, 0,1 °C, ×15.
-- Figures: error-types dots give means 2,41 s and 2,59 s (Δt_sys ≈ 0,19 s) as labelled; example-plot dots, mean and band to scale.
-- Formulas for mean, half-range, d/2, ε, Δx_sys and correction: correct with conditions; inside FY1 central contents.
-- Sim implements t_i = T + Δt_sys + Δt_sat g_i, rounded to 0,01 s; limits stated in Mallin oletukset.
+- Round-1 blockers: karkea now says seitsenkertaiseksi (0,09 → 0,62 s) ✓. The check-2 tolerance accepts 2 %, but its solution is still wrong (see Blocking).
+- Teacher's rules: no × or ÷; \cdot for products; ':' in the one division written as an operation; Δx = x − x_oikea; karkea virhe has its own section and appears in the activity, misconception, summary and goals.
+- One script recomputed all 12 lesson-answers.py values and the sim series: exp-1 −0,22 s and −0,0005 s with half-range 0,25–0,26 s; exp-2 2,6995 s; exp-3 0,085 / 0,525 s (ratio 6,18).
+- Worked example 3,18 s ± 0,12 s, 3,8 %. siirto 5,44 g with mistakes 5,6 / 27,2 / 4,8 / 28 g. Ice 1,5 / 0,1 °C. Exit ticket item 1: 19,9 g. karkea mean shift 0,19 s.
+- Figures: error-types means 2,41 s and 2,59 s; range-half band from the dots; example-plot to scale; zero-scale 47,5 g.
+- Formulas: correct, conditions stated, inside FY1 central contents.
+- Sim: implements t_i = T + Δt_sys + Δt_sat g_i, rounded to 0,01 s; readings stay on the axis; limits stated; each experiment locks the parameters it does not vary, and the measured keys exist in simState.

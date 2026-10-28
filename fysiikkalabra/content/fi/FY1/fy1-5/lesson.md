@@ -126,7 +126,7 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
 </svg>
 
 ### Yksiköt
-Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten $72\,\text{km/h} = 20\,\text{m/s}$, ja $1\,\text{min} = 60\,\text{s}$. Tähtitieteessä pitkät etäisyydet ilmoitetaan tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
+Muunna aina ennen sijoitusta yhteensopiviin yksiköihin (yleensä SI-yksiköihin): sijoita yksikön paikalle sen arvo. Esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$, joten $72\,\text{km/h} = \dfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. Samoin $1\,\text{min} = 60\,\text{s}$. Tähtitieteessä pitkät etäisyydet ilmoitetaan tähtitieteellisinä yksikköinä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
 
 ## Esimerkki
 Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 = 119{,}7\,\text{AU}$ Auringosta (NASA/JPL). Luotaimen nopeus Aurinkoon nähden on $v = 15{,}341\,\text{km/s}$ (JPL:n Voyager-lentotilanne). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?
@@ -178,5 +178,5 @@ Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika k
 - Tasaisessa liikkeessä nopeus on vakio, ja kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat: $s = s_0 + vt$.
 - Kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s$ on verrannollinen aikaan vain, kun $s_0 = 0$.
 - (t, s)-kuvaaja on suora. Sen kulmakerroin $\Delta s : \Delta t$ on nopeus, ja $s$-akselin leikkauskohta on alkupaikka $s_0$.
-- Muunna yksiköt ennen laskemista: $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+- Muunna yksiköt ennen laskemista sijoittamalla, esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$.
 - Tasainen liike on lineaarinen malli. Sen antamat arvot ovat mallin arvoja, joita voi verrata mittauksiin, kuten Voyager 2 -luotaimen etäisyyttä.

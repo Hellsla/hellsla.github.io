@@ -53,7 +53,7 @@
 **Kysytty:** matka $s$ metreinä
 **Periaate:** Auto ajaa vakionopeudella, joten liike on tasaista ja $s = vt$. Nopeus ja aika täytyy saada yhteensopiviin yksiköihin.
 **Kaava:** $s = vt$
-**Muunnokset:** $v = 54\,\text{km/h} = \dfrac{54}{3{,}6}\,\text{m/s} = 15\,\text{m/s}$, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
 **Sijoitus:** $s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Vastaus:** $210\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $54\,\text{km/h}$ ja ajassa $14\,\text{s}$.
 **Järkevyys:** Nopeus $54\,\text{km/h}$ on $0{,}9\,\text{km}$ minuutissa, ja $14\,\text{s}$ on noin $0{,}23\,\text{min}$, joten matka on noin $0{,}9 \cdot 0{,}23\,\text{km} \approx 0{,}21\,\text{km} = 210\,\text{m}$.
@@ -63,7 +63,7 @@
 **Kysytty:** aika $t$ sekunteina
 **Periaate:** Linja-auto ajaa vakionopeudella, joten matka on verrannollinen aikaan ja aika on matka jaettuna nopeudella.
 **Kaava:** $s = vt$, josta $t = \dfrac{s}{v}$
-**Muunnokset:** $v = \dfrac{36}{3{,}6}\,\text{m/s} = 10\,\text{m/s}$ ja $s = 4{,}5\,\text{km} = 4500\,\text{m}$.
+**Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ ja $s = 4{,}5\,\text{km} = 4500\,\text{m}$.
 **Sijoitus:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Vastaus:** $450\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $36\,\text{km/h}$ ja $4{,}5\,\text{km}$.
 **Järkevyys:** Kilometreinä ja tunteina: $4{,}5\,\text{km} : 36\,\text{km/h} = 0{,}125\,\text{h} = 7{,}5\,\text{min} = 450\,\text{s}$, mikä on sama tulos.
