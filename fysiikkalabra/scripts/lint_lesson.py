@@ -9,7 +9,8 @@ there is at least one ERROR. Run it before any reviewer starts: everything it ca
 round. When a new rule lands in NOTES.md, add the check here. The gate runs this too (`lint` check).
 
 It also runs the lesson's `answers.py` when present (`python -I answers.py` prints a JSON object
-{exercise id: numeric answer}) and compares every value with exercises.json within its tolerance.
+{exercise id: numeric answer}) and compares every value with exercises/exercises.json within its tolerance, and
+checks that `lesson-answers.py` (the numbers of the lesson text and inquiry.json, when there are any) runs.
 """
 import json, pathlib, re, subprocess, sys
 
@@ -223,7 +224,7 @@ def numbers_with_units(text):
 
 
 def check_exercises(L, folder):
-    f = folder / "exercises.json"
+    f = courses.lesson_file(folder, "exercises.json")
     if not f.exists(): L.err("exercises.json", 1, "missing"); return {}
     try: ex = json.loads(f.read_text())
     except json.JSONDecodeError as e: L.err("exercises.json", e.lineno, f"invalid JSON: {e.msg}"); return {}
@@ -273,7 +274,7 @@ def latex_plain(s):
 
 
 def check_solutions(L, folder, answers):
-    f = folder / "solutions.md"
+    f = courses.lesson_file(folder, "solutions.md")
     if not f.exists(): L.err("solutions.md", 1, "missing"); return
     text = f.read_text()
     check_text_rules(L, "solutions.md", text)
@@ -424,6 +425,14 @@ def check_answers_py(L, folder, answers):
         if not isinstance(v, (int, float)): L.err("answers.py", 1, f"{eid}: value {v!r} is not a number"); continue
         if abs(v - ans) > tol * max(1e-9, abs(ans)):
             L.err("answers.py", 1, f"{eid}: computes {v:g} but exercises.json says {ans:g} (tolerance {tol:g})")
+    f = courses.lesson_file(folder, "lesson-answers.py")   # the lesson's and the inquiry's own numbers, when it has any
+    if f.exists():
+        r = subprocess.run([sys.executable, "-I", str(f)], capture_output=True, text=True, cwd=f.parent, timeout=60)
+        try: ok = r.returncode == 0 and isinstance(json.loads(r.stdout.strip().splitlines()[-1]), dict)
+        except (json.JSONDecodeError, IndexError): ok = False
+        if not ok: L.err("lesson-answers.py", 1, "must run and print a JSON object {id: number} as its last line: " + ((r.stderr.strip().splitlines() or ["?"])[-1]))
+        elif set(json.loads(r.stdout.strip().splitlines()[-1])) & set(answers):
+            L.err("lesson-answers.py", 1, "an exercise id: the exercises' answers belong in answers.py, the exercise set's own file (README \"Exercises\")")
 
 
 def check_pictures(L, folder):
@@ -448,7 +457,7 @@ def lint(folder):
     check_answers_py(L, folder, answers)
     check_inquiry(L, folder)
     for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
-        if (folder / f).exists(): check_chapter_refs(L, f, (folder / f).read_text())
+        if courses.lesson_file(folder, f).exists(): check_chapter_refs(L, f, courses.lesson_file(folder, f).read_text())
     return L
 
 

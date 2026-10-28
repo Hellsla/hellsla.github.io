@@ -17,11 +17,15 @@
 Folders derived from the code (FY4, slug fy4), each published under site/ at the same relative path, so a page at
 site/fy4-1.html refers to them relatively and they work on GitHub Pages under any base path:
 
-  content/fi/FY4/<lesson-id>/      the lesson folders: the texts a visitor reads (lesson.md, inquiry.json, exercises.json,
-                                   solutions.md, exit-ticket.json, meta.json) and their reviews (review/); one tree per
-                                   language, content/<lang>/FY4/<lesson-id>/, Finnish (fi) the source (README "Languages")
-  lessons/FY4/<lesson-id>/         the lesson's language-neutral half, shared by every language: answers.py, figures.py,
-                                   sim.js (FY3) and sim-spec.md (CODE_FILES)
+  content/fi/FY4/<lesson-id>/      the lesson folders: the texts a visitor reads (lesson.md, inquiry.json, exit-ticket.json,
+                                   meta.json) and their reviews (review/); one tree per language,
+                                   content/<lang>/FY4/<lesson-id>/, Finnish (fi) the source (README "Languages")
+  content/fi/FY4/<lesson-id>/exercises/   the lesson's exercise set (EXERCISE_FILES: exercises.json, solutions.md) with
+                                   reviews of its own (exercises/review/), so exercises are written and reviewed without
+                                   the lesson text (teacher 2026-10-28, README "Exercises")
+  lessons/FY4/<lesson-id>/         the lesson's language-neutral half, shared by every language: answers.py (the
+                                   exercises' answers), lesson-answers.py (numbers of the lesson text and the inquiry,
+                                   when it has any), figures.py, sim.js (FY3) and sim-spec.md (CODE_FILES)
   assets/pics/fy4/<file>           pictures of the course; lesson text refers to them as pics/fy4/<file>
   assets/sims/fy4/<name>/          one simulation per folder: sim.js and its own sim.css and images; published as
                                    sims/fy4/<name>/ and found by the sim at document.getElementById('sim-root').dataset.base
@@ -37,7 +41,8 @@ ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file_
 DEFAULT_LEVELS = {"level1": 5, "level2": 4, "level3": 3}
 LESSON_ID = re.compile(r"^([a-z]+)(\d+)-([0-9][0-9a-z]*)$")
 PIC_REF = re.compile(r"""(?:src=["']|\]\()((?:pics/[a-z0-9]+|shared/pics)/[^"')\s]+)""")
-CODE_FILES = ("answers.py", "figures.py", "sim.js", "sim-spec.md")
+CODE_FILES = ("answers.py", "lesson-answers.py", "figures.py", "sim.js", "sim-spec.md")
+EXERCISE_FILES = ("exercises.json", "solutions.md")      # the texts of the exercise set, in <lesson folder>/exercises/
 SOURCE_LANG = "fi"
 BINARY = (".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif", ".mp4", ".webm", ".woff2")
 
@@ -102,9 +107,15 @@ def code_dir(folder):
     return ROOT / "lessons" / folder.parent.name / folder.name
 
 
+def exercise_dir(folder):
+    """<lesson folder>/exercises/: the exercise set's texts and its own review/."""
+    return folder / "exercises"
+
+
 def lesson_file(folder, name):
-    """A file of the lesson by its name: a CODE_FILES name in lessons/<COURSE>/<id>/, a text in the lesson folder."""
-    return (code_dir(folder) if name in CODE_FILES else folder) / name
+    """A file of the lesson by its name: a CODE_FILES name in lessons/<COURSE>/<id>/, an EXERCISE_FILES name in the
+    exercise folder, any other text in the lesson folder."""
+    return (code_dir(folder) if name in CODE_FILES else exercise_dir(folder) if name in EXERCISE_FILES else folder) / name
 
 
 def lesson_rel(folder, name):
@@ -160,6 +171,7 @@ def sim_files(folder, meta=None):
 
 
 TEXT_FILES = ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md")
+LESSON_TEXTS = tuple(n for n in TEXT_FILES if n not in EXERCISE_FILES)
 
 
 def pic_refs_in(texts):

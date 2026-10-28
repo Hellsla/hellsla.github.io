@@ -35,7 +35,7 @@ c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
 (T / "docs/lops2019").mkdir(parents=True)
 for f in (SRC / "docs/lops2019").glob("*.txt"): shutil.copy(f, T / "docs/lops2019")
-shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2")
+shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))   # its carries name commits of the real history
 shutil.copytree(SRC / "lessons/FY3/fy3-2", T / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
 (T / "tests/sims").mkdir(parents=True); shutil.copy(SRC / "tests/sims/fy3-2.json", T / "tests/sims")
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T), "CLAUDE_CONFIG_DIR": str(T / ".claude-config")}
@@ -79,8 +79,9 @@ expect("init-lesson writes FY4's slot into meta.json", code == 0 and meta["cours
 
 # 3. the fixture body: fy3-2 relabelled, simulation and picture in FY4's folders
 src = T / "content/fi/FY3/fy3-2"; src_code = T / "lessons/FY3/fy3-2"
+def text_file(d, n): return d / "exercises" / n if n in ("exercises.json", "solutions.md") else d / n   # courses.lesson_file
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    (L / n).write_text((src / n).read_text().replace("fy3-2", "fy4-1"))
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(text_file(src, n).read_text().replace("fy3-2", "fy4-1"))
 for n in ("answers.py", "sim-spec.md"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
@@ -163,7 +164,8 @@ git("checkout", "--", ".")
 
 # 9. a second lesson reuses the simulation: dependencies and impact
 run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/fi/FY4/fy4-2"; C2 = T / "lessons/FY4/fy4-2"; C2.mkdir(parents=True)
-for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"): (L2 / n).write_text((L / n).read_text().replace("fy4-1", "fy4-2"))
+for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
+    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(text_file(L, n).read_text().replace("fy4-1", "fy4-2"))
 for n in ("answers.py", "sim-spec.md"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
 m2 = json.loads((L2 / "meta.json").read_text()); m2.update(sim="fy4-1", glossary=meta["glossary"], prerequisites=[]); (L2 / "meta.json").write_text(json.dumps(m2, ensure_ascii=False, indent=2))
 (T / "tests/sims/fy4-2.json").write_text((T / "tests/sims/fy4-1.json").read_text())

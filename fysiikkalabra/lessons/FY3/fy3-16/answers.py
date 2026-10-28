@@ -1,4 +1,4 @@
-"""Every answer in exercises.json and the numeric activities of inquiry.json for fy3-16, computed from the task data (python -I answers.py).
+"""Every answer in exercises.json for fy3-16, computed from the task data (python -I answers.py).
 Energy bookkeeping: Q = c m ΔT, Q = s m, Q = r m, P = U A ΔT, P = c (m/t) ΔT. Prints {id: number} as JSON on the last line."""
 import json
 
@@ -30,12 +30,4 @@ E_wall = UA3 * 30 * 6.0 * 3600                            # wall energy in 6,0 h
 E_drinks = c_vesi * 0.50 * 24                             # 0,50 kg drinks 24 -> 0 °C: 4190 · 0,50 · 24 = 50 280 J
 # freezer ice at -10 °C must warm to 0 °C and melt: (c_ice 10 + s) per kg = 21 000 + 334 000 = 355 000 J/kg
 a["fy3-16-L3-03"] = (E_wall + E_drinks) / (c_jaa * 10 + s)   # m = 536 280 / 355 000 = 1,511 kg -> 1,5 kg
-# Inquiry numerics
-P_tut = 0.90 * 28                                         # tutki graph: U A = 0,90 W/K, ΔT = 28 K -> P = 25,2 W, plateau t = 334 000 / 25,2 = 13 254 s = 3,68 h
-a["tutki-energia"] = 25 * 3.7 * 3600 / 1e3                # E = P t = 25 W · 13 320 s = 333 000 J -> 333 kJ
-a["tutki-loyly"] = r * 0.25 / (0.25 * (c_vesi * 90 + r)) * 100   # löyly 0,25 kg, 10 -> 100 °C: 94 275 J + 565 000 J; vaporization share 565 000 / 659 275 = 85,7 % -> 86 %
-a["siirto"] = 0.15 * (c_vesi * 80 + r) / 6000             # 0,15 kg löyly, 6,0 kW: t = 0,15 (335 200 + 2 260 000) / 6000 = 64,9 s -> 65 s
-a["siirto-virhe-ei-hoyrystysta"] = 0.15 * c_vesi * 80 / 6000   # 8,4 s: vaporization forgotten
-a["siirto-virhe-ei-lammitysta"] = 0.15 * r / 6000          # 56,5 s: warming 20 -> 100 °C forgotten
-a["check-2"] = (c_jaa * 0.60 * 10 + s * 0.60) / 1e3       # ice pack -10 °C -> water 0 °C: 12 600 + 200 400 = 213 000 J -> 210 kJ
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

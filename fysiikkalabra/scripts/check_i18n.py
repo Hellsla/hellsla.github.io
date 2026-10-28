@@ -56,8 +56,8 @@ def check_lesson(fi, tr, lang, errs):
     rel = tr.relative_to(ROOT)
     for n in courses.TEXT_FILES:
         if n in courses.CODE_FILES: continue
-        a, b = fi / n, tr / n
-        if a.exists() != b.exists(): errs.append(f"{rel}/{n}: {'missing' if a.exists() else 'not in the Finnish lesson'}"); continue
+        a, b = courses.lesson_file(fi, n), courses.lesson_file(tr, n)
+        if a.exists() != b.exists(): errs.append(f"{b.relative_to(ROOT)}: {'missing' if a.exists() else 'not in the Finnish lesson'}"); continue
         if not a.exists(): continue
         if n.endswith(".json"):
             try: same_data(json.loads(a.read_text()), json.loads(b.read_text()), f"{rel}/{n}", errs)
@@ -67,7 +67,7 @@ def check_lesson(fi, tr, lang, errs):
             for k in sa:
                 if sa[k] != sb[k]: errs.append(f"{rel}/{n}: {k} differ from Finnish ({sb[k]} vs {sa[k]})"[:400])
             if n == "solutions.md" and re.findall(r"^## (\S+)", a.read_text(), re.M) != re.findall(r"^## (\S+)", b.read_text(), re.M):
-                errs.append(f"{rel}/solutions.md: the ## exercise ids differ from Finnish")
+                errs.append(f"{rel}/exercises/solutions.md: the ## exercise ids differ from Finnish")
     if courses.lesson_file(fi, "figures.py").exists():
         r = subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), fi.name, "--lang", lang, "--check"], capture_output=True, text=True)
         if r.returncode: errs.append(f"{rel}: figures.py --lang {lang}: " + (r.stdout + r.stderr).strip().splitlines()[-1])

@@ -35,21 +35,21 @@ session opened at the root, as a cloud session is, finds them; each starts by wo
 ```
 Everything course-specific comes from the course's entry in `curriculum.json` (LOPS goals and central contents,
 lesson slots, `scope_notes`, optional `exercise_levels`); `scripts/courses.py` resolves a lesson id to its course and
-folders. Lesson texts go to `content/fi/FY4/<id>/`, their code (`answers.py`, `figures.py`) to `lessons/FY4/<id>/`, pictures to `assets/pics/fy4/` (text refers to `pics/fy4/<file>`),
+folders. Lesson texts go to `content/fi/FY4/<id>/` (the exercises to its `exercises/`), their code (`answers.py`, `figures.py`) to `lessons/FY4/<id>/`, pictures to `assets/pics/fy4/` (text refers to `pics/fy4/<file>`),
 simulations to `assets/sims/fy4/<name>/` (published at `sims/fy4/<name>/`), shared assets to `assets/shared/`
 (`assets/README.md`). The course page `site/FY4.html` lists the slots and links each lesson once it is reviewed.
 
 ## The publishing rule
 `scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md` and
 `review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash covers the lesson
-files, its simulation folder, its pictures and its simulation tests, and ignores only line endings, trailing
+files, its simulation folder, its pictures and its simulation tests (not the exercise set: below), and ignores only line endings, trailing
 whitespace, blank-line runs and JSON layout; build scripts and templates are not content. What changed decides who
 reviews again (`reviews.py scope`): a physics change needs the science reviewer in full, a learning-design change the
 pedagogy reviewer, simulation code both, a figure's styling only the pedagogy reviewer, comments and tightened tests
 neither; a PASS carried over such a change is recorded in `review/carry.tsv` and re-checked by CI. A **legacy**
 lesson (`review/legacy.md`, written by `reviews.py legacy <id>` in the migration) was published before the
 pipeline and stays visible, labelled as a prototype, until a content edit retires the marker. Everything else
-is a **draft** and never reaches `site/`.
+is a **draft** and never reaches `site/`. The exercise set has the same rule of its own (Exercises, below).
 
 Merging a pull request is the teacher's publication decision. CI (`.github/workflows/fysiikkalabra-ci.yml`)
 lints every lesson, builds all previews, runs the review and course tests, the simulation tests, every lesson's
@@ -70,12 +70,40 @@ module, generated from the LOPS 2019 texts in `docs/lops2019/`. The reference le
 
 A lesson with `inquiry.json` is rendered as inquiry stages (Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella → Tarkista osaamisesi, then Tehtävät last) around the same theory, simulation, exercises and exit ticket; the page form (wide-screen columns, the closed Ennusta box, the simulation's boxes, named formula sections) is CLAUDE.md "Lesson page". Format, activity types, the simulation adapter, migration steps and tests: `docs/inquiry.md`; the teacher's brief: `docs/inquiry-spec.md`. Validate with `python scripts/inquiry.py <id>`, test with `python scripts/test_inquiry.py`.
 
+## Exercises
+A lesson's exercises are a part of their own (teacher 2026-10-28), so they can be added to and reworked without the
+lesson text, and without touching the lesson's reviews:
+
+```
+content/fi/<COURSE>/<id>/exercises/exercises.json   the tasks (schema below)
+content/fi/<COURSE>/<id>/exercises/solutions.md     one complete solution per task (CLAUDE.md "Lesson form" 7)
+content/fi/<COURSE>/<id>/exercises/review/          their own science.md, pedagogy.md, carry.tsv
+lessons/<COURSE>/<id>/answers.py                    every exercise answer (lesson-answers.py holds the lesson's own numbers)
+```
+
+- **Reviews**: `reviews.py hash|scope|carry <id> --exercises` work on the exercise set as the plain commands do on the
+  lesson; `reviews.py status` shows both. Changing an exercise stales only the exercise reviews; changing the lesson
+  only the lesson's.
+- **Publishing**: a lesson on the site shows the exercises both exercise reviewers last passed. While a new version
+  waits for review, the page keeps the previous one (taken from git, `reviews.published_exercises`) and the build
+  warns; when no version has passed yet, the page says the exercises are coming.
+- **Agents**: `/exercises <id> <task>` runs the developer and the two reviewers on the exercise set alone.
+  `review_packet.py <id> --role developer|science|pedagogy --exercises` writes their packets to
+  `exercises/review/`: the **exercise brief** (the lesson's formula sections, worked example, misconception and summary,
+  figures left out) and the current exercises, so an agent never reads the lesson text, the inquiry or the simulation.
+  A new lesson's first review covers both parts in one run per reviewer, which writes both reports.
+- **The split itself** (2026-10-28) moved `exercises.json` and `solutions.md` into `exercises/` and cut seven
+  `answers.py` files line for line into `answers.py` and `lesson-answers.py`. Every PASS from before carried over
+  (category `split`, `review/carry.tsv` and `exercises/review/carry.tsv`): `reviews.py verify` re-derives each one from
+  git history, checking that every file is the one that was passed and that each answers file's lines and values come
+  from the one passed `answers.py`.
+
 ## Exercise schema
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
-`answers.py` in `lessons/<course>/<id>/` computes every answer and prints `{id: value}`; the lint compares it with
-`exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
+`answers.py` in `lessons/<course>/<id>/` computes every exercise answer and prints `{id: value}`; the lint compares it with
+`exercises/exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
 Every exercise shows its complete worked solution from `solutions.md` behind its own *Näytä ratkaisu* button (`meta.solutions` is `all`, teacher 2026-10-27); `scripts/check_solutions.py --all` lists any missing or incomplete solution.
 
 ## Languages
@@ -83,17 +111,17 @@ Every text a visitor sees is outside the code, so a new language is two things a
 
 ```
 lang/<lang>.json                     short interface texts: menus, buttons, headings, messages, the simulations' labels
-content/<lang>/<COURSE>/<id>/        a lesson's texts: lesson.md, inquiry.json, exercises.json, solutions.md,
-                                     exit-ticket.json, meta.json (+ figures.json: the figures' words, below)
+content/<lang>/<COURSE>/<id>/        a lesson's texts: lesson.md, inquiry.json, exit-ticket.json, meta.json,
+                                     exercises/exercises.json, exercises/solutions.md (+ figures.json: the figures' words, below)
 content/<lang>/courses.json          course titles, goals and lesson titles ({"FY3": {"title", "tavoitteet", "lessons": {id: title}}})
 ```
 
 Finnish (`fi`) is the source: `lang/fi.json`, `content/fi/` and `curriculum.json`. To add English, copy
 `lang/fi.json` to `lang/en.json` and translate the values (keep every `{{placeholder}}`, formula, number and unit;
 `format` sets `html_lang`, `og_locale`, the decimal sign and the language's own name for the language menu), then
-copy a lesson folder from `content/fi/` to `content/en/` (without `review/`) and translate its texts. The `##`
+copy a lesson folder from `content/fi/` to `content/en/` (without `review/` and `exercises/review/`) and translate its texts. The `##`
 headings of lesson.md are translated through `sections` in the language file; inquiry.json keeps the Finnish keys.
-The code half of a lesson (`lessons/<COURSE>/<id>/`: answers.py, figures.py, sim.js, sim-spec.md), the simulations,
+The code half of a lesson (`lessons/<COURSE>/<id>/`: answers.py, lesson-answers.py, figures.py, sim.js, sim-spec.md), the simulations,
 pictures, templates and scripts are shared by every language.
 
 - **Figures**: `figures.py` is written once. `content/<lang>/<COURSE>/<id>/figures.json` maps each Finnish text it
@@ -103,7 +131,7 @@ pictures, templates and scripts are shared by every language.
   a key, a course title or a figure text, or when a translation differs from the Finnish lesson in anything but its
   texts: an answer, unit, tolerance, correct option, experiment setting, id, section, figure or formula.
 - **Reviews**: a translation is a lesson of its own for `reviews.py`: its hash covers its texts (and the simulation
-  with that language's labels), its reports go in its own `review/`, and `build.py` publishes it only when both
+  with that language's labels), its reports go in its own `review/` (and `exercises/review/` for its exercises), and `build.py` publishes it only when both
   reviews pass, like a Finnish lesson.
 - **Build**: Finnish stays at `site/`; every other language is built into `site/<lang>/` with the same page names,
   sharing the style, scripts, simulations and pictures of `site/`. While there is one language the pages have no
