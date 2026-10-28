@@ -90,7 +90,7 @@ def maths_quantities(text):
     return text
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
     text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(text_file(src, n).read_text().replace("fy3-2", "fy4-1")))
-for n in ("answers.py", "sim-spec.md"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))
+for n in ("answers.py", "sim-spec.md", "figures.py"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))   # figures.py: an exercise shows one of its figures by id
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
 shutil.copy(src_code / "sim.js", S / "sim.js"); (S / "sim.css").write_text("#sim-root canvas { border-radius: 6px; }\n")
@@ -176,7 +176,7 @@ git("checkout", "--", ".")
 run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/fi/FY4/fy4-2"; C2 = T / "lessons/FY4/fy4-2"; C2.mkdir(parents=True)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
     text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(text_file(L, n).read_text().replace("fy4-1", "fy4-2"))
-for n in ("answers.py", "sim-spec.md"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
+for n in ("answers.py", "sim-spec.md", "figures.py"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
 m2 = json.loads((L2 / "meta.json").read_text()); m2.update(sim="fy4-1", glossary=meta["glossary"], prerequisites=[]); (L2 / "meta.json").write_text(json.dumps(m2, ensure_ascii=False, indent=2))
 (T / "tests/sims/fy4-2.json").write_text((T / "tests/sims/fy4-1.json").read_text())
 code, out = run("courses.py", "deps")

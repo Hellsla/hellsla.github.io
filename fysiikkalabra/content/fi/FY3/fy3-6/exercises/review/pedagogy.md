@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 13bc0d2daf5f4e53
-## Blocking
+CONTENT-HASH: 09782c554ddc3f1d
 
+Delta review over the audit's PASS (13bc0d2daf5f4e53): L2-02 replaced by an ominaislämpökapasiteetti task from a heating line (figure fy3-6/heating-line).
+
+## Blocking
+- none
 ## Polish
-- exercises.json fy3-6-L3-02 and L3-03 — "2000 m²" and "1,0 m³" stay plain while the neighbouring kg, MJ, m are LaTeX (`$2000\,\text{m}^2$`, `$1{,}0\,\text{m}^3$`); convert for one number style. The same goes for "1,0 m³" in L3-03 text.
-- solutions.md fy3-6-L2-04 Järkevyys — "7,5-kertainen" and "noin 9 K" mix plain and LaTeX in one sentence ("noin $68\,\text{K}$ mutta … vesi lämpenee vain noin $9\,\text{K}$"): write the factor as $7{,}5$-kertainen too.
-- exercises.json fy3-6-L3-01 — "eikä vettä höyrysty" reads oddly; "eikä vesi höyrysty" is the plain Finnish.
+- Documented 870-930 vs tolerance 0,03 (873-927); align.
+- Task gives 'oleta, että kaikki lämmittimen energia siirtyy kappaleeseen' and 'Lue tarvittavat arvot' (good). Figure at 360 px readable; the end point (180 s; 60 °C) sits between labelled 160 and 200; faint grid.
 ## Checked
-- Delta judged in context: all text edits are unit-to-LaTeX conversions with correct case endings (`$96\,{}^\circ\text{C}$:seen`, `$0{,}50\,\text{kg}$:n jääpussi`, `$300\,{}^\circ\text{C}$:een`).
-- L3-03 rewording ("siihen varastoituu yhtä paljon energiaa kuin vesivarastoon") is clearer than "varastoi saman lämpömäärän", avoids saying the store "holds heat", and still has one answer; Periaate now says the store's internal energy rises by Q and is released on cooling.
-- L2-03 Periaate "siirtyy veteen ja kasvattaa sen sisäenergiaa" fits the lesson's vocabulary.
-- Answers re-derived: 0,63 MJ; 210 kJ; 720 kJ; -35 MJ; 19 kJ; 78 °C; 210 s; 54 °C; 27 °C; 12 kg; 3,6 K; 3,3 m³.
-- Levels 5/4/3; none repeats the example (substance identification); contexts are everyday Finnish ones; situation first, question last.
-- Solutions keep all seven steps and now use LaTeX units in the reasonableness checks.
+- Figure needed: $\Delta T=40$ K and $t=180$ s are only in the figure; $c=100\cdot180/(0{,}50\cdot40)=900$ J/(kg·K) verified.
+- L2 fit (read two points, $Pt=cm\Delta T$); replaces a kettle-time task; Kuvaajan lukeminen and stages present.

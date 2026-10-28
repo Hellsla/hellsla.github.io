@@ -1,5 +1,5 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-4` writes them into lesson.md."""
-from figlib import Fig, Axes, INK, MUTED, WHITE, COLD, HEAT, GOOD, RULE
+from figlib import Fig, Axes, INK, MUTED, WHITE, COLD, HEAT, GOOD, RULE, fi
 
 # the cart data of the lesson's first simulation case (t in s, s in m) and the line fitted to it
 CART = [(1, 0.6), (2, 0.8), (3, 1.6), (4, 2.1), (5, 2.4), (6, 2.9)]
@@ -80,4 +80,24 @@ def reading():
     return f.svg()
 
 
-FIGURES = {"scatter": scatter, "slope": slope, "kettle": kettle}
+def scatter_points():
+    """The data of `scatter` without the fitted line, for a task that asks the student to fit it (scripts/figcat.py
+    variant): axes to 9 s and 4,5 m so the line can be continued; the description lists the points, not the line."""
+    f = Fig("fy14-scatter-points", 350, "Kuvaaja mittakaavassa: kärryn kulkema matka s ajan t funktiona, kuusi mittauspistettä ilman sovitettua suoraa. "
+            "Pisteet ovat (1 s; 0,6 m), (2 s; 0,8 m), (3 s; 1,6 m), (4 s; 2,1 m), (5 s; 2,4 m) ja (6 s; 2,9 m). Aika-akseli jatkuu 9 sekuntiin "
+            "ja matka-akseli 4,5 metriin, ruudukon väli on 1 s ja 0,5 m.")
+    ax = Axes(f, (96, 300), (470, 52), x=(0, 9), y=(0, 4.5), xticks=[1, 2, 3, 4, 5, 6, 7, 8, 9], yticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5],
+              xlabel=r"t\ (\text{s})", ylabel=r"s\ (\text{m})", yfmt=lambda v: fi(v) if float(v).is_integer() else "")
+    for t, s in CART:
+        ax.point(t, s, COLD)
+    return f.svg()
+
+
+FIGURES = {"scatter": scatter, "slope": slope, "kettle": kettle, "scatter-points": scatter_points}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "scatter": "reveals: the fitted line s = 0,5 m/s · t (scatter-points is the same data without it)",
+    "scatter-points": "safe: the six points only, axes to 9 s for an extrapolation",
+    "slope": "reveals: the slope 0,5 and the intercept 1",
+    "kettle": "reveals: the fitted line, the two points read off and 40 °C at 2,5 min",
+}

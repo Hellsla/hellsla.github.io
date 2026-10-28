@@ -19,9 +19,10 @@
     {
       "id": "fy3-14-L1-03",
       "level": 1,
-      "text": "Termospullossa on $0{,}30\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Kuinka suuren lämpömäärän vesi luovuttaa, kun se jäähtyy $0\\,{}^\\circ\\text{C}$:seen? Anna vastaus kilojouleina.",
-      "answer": 25,
-      "unit": "kJ",
+      "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Kuvaajan pylväät näyttävät tämän seoksen kolme lämpömäärää: lämmön, jonka vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen, lämmön, jonka jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaatii, ja lämmön, jonka kaiken jään sulattaminen vaatisi. Lämpöä ei siirry astiaan eikä ympäristöön. Päättele kuvaajasta ensin, sulaako kaikki jää. Kuinka monta grammaa jäätä sulaa ennen lämpötasapainoa? Anna vastaus grammoina.",
+      "figure": "fy3-14/energy-bars",
+      "answer": 60,
+      "unit": "g",
       "tolerance": 0.02
     },
     {

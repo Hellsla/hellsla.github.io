@@ -27,7 +27,7 @@
     {
       "id": "fy1-8-L1-04",
       "level": 1,
-      "text": "Pöydän pituus mitataan viisi kertaa viivoittimella: 24,1 cm, 24,4 cm, 24,0 cm, 24,3 cm ja 24,2 cm. Epävarmuudeksi arvioidaan puolet mittausten vaihteluvälistä. Kuinka suuri epävarmuus on?",
+      "text": "Pöydän pituus mitataan viisi kertaa viivoittimella: $24{,}1\\,\\text{cm}$, $24{,}4\\,\\text{cm}$, $24{,}0\\,\\text{cm}$, $24{,}3\\,\\text{cm}$ ja $24{,}2\\,\\text{cm}$. Epävarmuudeksi arvioidaan puolet mittausten vaihteluvälistä. Kuinka suuri epävarmuus on?",
       "answer": 0.2,
       "unit": "cm",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy1-8-L2-03",
       "level": 2,
-      "text": "Mittauspöytäkirjassa auton paikka on 90 cm, kun aikaa on kulunut $2{,}0\\,\\text{s}$, ja 342 cm, kun aikaa on kulunut $8{,}0\\,\\text{s}$. Oleta liike tasaiseksi. Mikä on auton nopeus? Vastaa yksikössä m/s.",
+      "text": "Mittauspöytäkirjassa auton paikka on $90\\,\\text{cm}$, kun aikaa on kulunut $2{,}0\\,\\text{s}$, ja $342\\,\\text{cm}$, kun aikaa on kulunut $8{,}0\\,\\text{s}$. Oleta liike tasaiseksi. Mikä on auton nopeus? Vastaa yksikössä m/s.",
       "answer": 0.42,
       "unit": "m/s",
       "tolerance": 0.02

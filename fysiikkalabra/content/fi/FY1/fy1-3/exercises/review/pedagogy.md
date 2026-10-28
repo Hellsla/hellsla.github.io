@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f6ea8ce2311e052c
+CONTENT-HASH: c8939c0291044cc2
 
-Round 2 and 3: re-check of round-1 Blocking items against the fix diffs (tolerance is relative).
+Round 2: no round-1 Blocking item. Delta review of the diff: L1-03 tolerance 0,02 to 0,15; Vastaus line reworded.
 
 ## Blocking
-- none. Round-1 item L2-02 (answer 10.67, solution "noin 11 mm") is resolved: relative tolerance 0.04 accepts 10,24–11,10, so 11 and 10,7 pass.
-
+- none
 ## Polish
-- exercises.json fy1-3-L2-03 text — "12,4 cm" and "123 mm" are plain text while "$0{,}125\,\text{m}$" is LaTeX; write all three as LaTeX.
-- solutions.md fy1-3-L1-05 Vastaus — still says "virhe-arvio" while the task and Kysytty say "epävarmuus"; use one term.
-- exercises.json fy1-3-L1-05 prompt — gives the half-interval rule in the situation and then asks for it; shorten the situation.
-- Earlier open items (repeated formula in Kaava lines, L3-03 duplicating L2-02) stand.
-
+- exercises.json L1-03 text says 'Lue kuvasta pienin ja suurin tulos', which gives the method; fine at L1.
+- Dots 12,6 and 12,7 are close at 360 px (about 14 px apart) but separate; the extreme points are what matters.
 ## Checked
-- LaTeX conversion of numbers with units in the tasks listed in the delta; values, units and answers unchanged.
-- L2-02 reasoning (each reading 9–12 mm too large, mean between) correct; L1-05 Järkevyys honest about total uncertainty.
-- Finnish of changed passages correct.
-- Round 3: L1-02 now writes the mittausvirhe as $x - x_\text{oikea}$ in Kysytty, Kaava and Sijoitus (no Δx), matching the lesson; wording is correct, +0,3 cm unchanged, and Δ is no longer overloaded.
-- Hash unchanged at the end.
+- Tolerance is relative: 0,15 * 0,35 = 0,0525, so 0,2975-0,4025 s; both 0,35 s (exact half range) and 0,4 s (one significant figure) pass, and a student reading the extremes 0,1 s wrong either way still is graded fairly.
+- The new Vastaus line states both values and says both are accepted, with the reason (one significant figure for an uncertainty); consistent with the tolerance.
+- Rest of the set unchanged since round 1 (figure needed, Kuvaajan lukeminen present, (12,9 - 12,2)/2 = 0,35).

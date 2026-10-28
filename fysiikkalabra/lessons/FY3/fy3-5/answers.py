@@ -12,7 +12,7 @@ a["fy3-5-L1-03"] = 350 + (-100)                        # balloon in sauna: Q = +
 a["fy3-5-L1-04"] = -180 + (-320)                       # car engine power stroke: Q = −180 J, W = −320 J -> ΔU = −500 J
 a["fy3-5-L1-05"] = 15 + (-85)                          # tyre valve: Q = +15 J, air expands W = −85 J -> ΔU = −70 J
 # Level 2: two steps, one conversion or one rearrangement
-W_comp = 300 * 0.20                                    # compressor piston W = F s = 60 J (on the air, positive)
+W_comp = 0.20 * (200 + 400) / 2                        # figure fy3-5/piston-force: (0; 200 N) to (0,20 m; 400 N), W = area = s·(F₁+F₂)/2 = 60 J (on the air, positive)
 a["fy3-5-L2-01"] = 45 - W_comp                         # Q = ΔU − W = 45 J − 60 J = −15 J (heat leaves the air)
 Q_kettle = 2.0e3 * 90 / 1000                           # Q_in = P t = 2000 W · 90 s = 180 000 J = 180 kJ
 a["fy3-5-L2-02"] = Q_kettle + (-20)                    # ΔU = 180 kJ − 20 kJ = 160 kJ

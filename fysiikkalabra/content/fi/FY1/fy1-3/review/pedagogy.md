@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e655f47847d2a009
+CONTENT-HASH: 29df35bd1e2a8568
 
-Round 2: re-check of round-1 Blocking items against the fix diff.
+Delta review over the audit's PASS (e655f47847d2a009): check-c2 (resolution versus uncertainty of a hand-timed reading) added as a new check; exit ticket untouched (still three questions).
 
 ## Blocking
-- none. Round-1 item (check-2 answer 2.1 vs solution "2 %") is resolved by the rule `tolerance` is relative: 2.1 with 0.05 accepts 1,995–2,205, so 2 passes.
-
+- none
 ## Polish
-- lesson.md Kaava — "Keskiarvon epävarmuus on yleensä sitä pienempi, ja sitä pienempi, mitä enemmän mittauksia on" is garbled. Write: "Keskiarvon epävarmuus on yleensä pienempi kuin yksittäisen tuloksen, ja sitä pienempi, mitä enemmän mittauksia on."
-- inquiry.json exp-1 question — the correct option is two lines long and discloses the plateau value; shorten and keep the number in the feedback.
-- pred-2 prompt states the 0,30 s systematic error and an option offers "noin 0,30 s", so the prediction can be read off the prompt; consider dropping the number from the prompt.
-- Etsi-virhe and exit ticket: pick one rounding rule for the suhteellinen virhe (one significant figure like the virhe-arvio) and keep it in both.
-
+- check-c2 feedback for '0,005 s': the last sentence ('Tässä lukema on helppo kirjata, mutta ...') is muddled; say simply that half a division estimates the reading uncertainty of an analogue scale, but here the reaction time dominates.
+- The correct option is the longest one and ends with the reason ('koska ... käsin'), which cues it; shorten it or lengthen the distractors.
+- Correct option is not strictly 'the' uncertainty (0,1-0,2 s is typical reaction time); wording 'sekunnin kymmenesosien luokkaa' is fine.
 ## Checked
-- Diff: $\Delta x = x - x_\text{oikea}$ replaced by plain "erotus $x - x_\text{oikea}$" in Ydinajatus, summary and exp-2 solution, so $\Delta x$ now means only the uncertainty; this removes my earlier symbol-clash Polish. Grammar fine.
-- New pr-numerot feedback ("luettu kymmenesosina … kello näyttää sadasosat … tarkkuus ei silti ole sadasosa käsin") is correct, consistent with the lesson's resolution-vs-uncertainty paragraph, and the item still has one correct option.
-- exp-2 solution: "Kaava: erotus $\bar{t} - T$", substitution 2,70 − 2,40 = 0,30 s unchanged and correct.
-- Rest of the lesson unchanged since the full review; hand-checked numbers still hold.
-- Hash unchanged at the end.
+- check-c2 tests a key idea check-1 (random vs systematic) does not: display resolution is not the uncertainty. It is conceptual, not a calculation.
+- Distractors are genuine: 0,01 s (resolution as uncertainty), 0,005 s (half a division), no uncertainty (digital display); feedback repairs each.
+- Exit ticket untouched, stage text still 'kolme'; its questions are not in the diff and I did not judge them.
+- Titles renumbered 1-4.

@@ -21,8 +21,9 @@ A course's module-end tasks are a part of their own, like a lesson's exercise se
 The page site/<COURSE>-sovella.html is published when both reviews PASS for the current hash (build.py); the course
 page links it. Criteria name a shared key of competencies.json (its text is in lang/<lang>.json "criteria", so it is
 written and translated once) or carry their own `text` and competency `tag`; a part's points are the sum of its
-criteria. The same rubric component (rubric_html, templates/selfassess.js) scores every task of every course, and
-selfcheck_html is the chapter's optional "Arvioi osaamistasi", built from the lesson's own learning goals (`learn`).
+criteria. The same rubric component (rubric_html, templates/selfassess.js) scores every task of every course (the
+chapter-level "Arvioi osaamistasi" of 2026-10-28 was removed by the teacher the same day: guided self-assessment of
+written answers lives in the explain tasks, scripts/inquiry.py).
 Nothing here needs a model at runtime: links for a weak competency come from the task's `links`.
 """
 import hashlib, importlib.util, json, re, subprocess, sys, pathlib, html as _h
@@ -68,9 +69,17 @@ def files(code, lang=i18n.SOURCE):
 
 def content_hash(code, lang=i18n.SOURCE):
     from reviews import normalized
+    import figcat
     h = hashlib.sha256()
     for name, path in files(code, lang):
-        if path.is_file(): h.update(name.encode() + b"\0" + normalized(path.read_text(), name).encode() + b"\0")
+        if not path.is_file(): continue
+        text = figcat.without_reuse(path.read_text()) if name == "figures.py" else path.read_text()   # the REUSE note draws nothing
+        h.update(name.encode() + b"\0" + normalized(text, name).encode() + b"\0")
+    tasks = folder(code, lang) / "tasks.json"           # a figure of another chapter that a task refers to: the code that draws it
+    for fid in figcat.refs_in(tasks.read_text() if tasks.is_file() else ""):
+        if figcat.code_rel(fid) == (code_folder(code) / "figures.py").relative_to(ROOT).as_posix(): continue   # already in figures.py above
+        sl = figcat.slice_of(fid, lambda rel: (ROOT / rel).read_text() if (ROOT / rel).is_file() else None)
+        if sl: h.update(f"figure:{fid}".encode() + b"\0" + sl.encode() + b"\0")
     return h.hexdigest()[:16]
 
 
@@ -147,6 +156,8 @@ def check(code, lang=i18n.SOURCE, seen=None):
         if t not in tags: errs.append(f"competencies.json: criterion {k} has the unknown competency {t!r}")
     tasks = data.get("tasks")
     if not isinstance(tasks, list) or not tasks: return errs + [f"{where}/tasks.json: no tasks"]
+    import figcat                                      # "figure": "<id>" on a task or a part (scripts/figcat.py)
+    for _, msg in figcat.check_refs(json.dumps(data)): E(f"tasks.json: {msg}")
     for task in tasks:
         tid = task.get("id", "?"); W = lambda m: E(f"{tid}: {m}")
         if not re.fullmatch(rf"{slug}-s\d+", str(tid)): W(f"id must be {slug}-s<n>")
@@ -294,23 +305,6 @@ def rubric_html(task, md, parts=None, lead=None):
             + (f'<div class="rubric-more" hidden><p>{T("practice.practise_more")}</p><ul>{links}</ul></div>' if links else "") + '</div>')
 
 
-def selfcheck_html(learn, md, has_exercises=True):
-    """Arvioi osaamistasi: the chapter's own learning goals (inquiry.json `learn`, already translated with the lesson),
-    each with Osaan / Tarvitsen vielä harjoitusta; the second shows where to go back to. Optional, closed at first,
-    kept in this browser only (templates/selfassess.js). No new statements are written for it."""
-    if not learn: return ""
-    T = i18n.t; inline = lambda s: re.sub(r"^<p>(.*)</p>$", r"\1", md(s).strip(), flags=re.S)
-    nxt = T("selfcheck.next" if has_exercises else "selfcheck.next_no_exercises")
-    items = "".join(
-        f'<li data-goal="{i}"><fieldset><legend>{inline(g)}</legend><div class="sc-options">'
-        f'<label><input type="radio" name="arvioi-{i}" value="ok"> <span>{T("selfcheck.ok")}</span></label>'
-        f'<label><input type="radio" name="arvioi-{i}" value="practice"> <span>{T("selfcheck.practice")}</span></label></div></fieldset>'
-        f'<p class="selfcheck-next" hidden>{nxt}</p></li>' for i, g in enumerate(learn))
-    return (f'<details class="selfcheck" id="arvioi"><summary><span class="sc-title">{T("selfcheck.title")}</span> '
-            f'<span class="opt-tag">{T("selfcheck.optional")}</span></summary><div class="selfcheck-body"><p class="selfcheck-lead">{T("selfcheck.lead")}</p>'
-            f'<ol class="selfcheck-list">{items}</ol><p class="selfcheck-summary" aria-live="polite"></p></div></details>')
-
-
 def _with_figures(solution_html, body):
     """A solution with its figures: the SVG is kept out of the step layout (nl2br would put <br> inside it) and put back
     as a block of its own."""
@@ -325,6 +319,8 @@ def render(code, lang, md, solution_html, title):
     T = i18n.t; data = load(code, lang)
     sols = solution_blocks((folder(code, lang) / "solutions.md").read_text() if (folder(code, lang) / "solutions.md").is_file() else "")
     inline = lambda s: re.sub(r"^<p>(.*)</p>$", r"\1", md(s).strip(), flags=re.S)
+    import figcat
+    fig = lambda x: figcat.figure_html(x["figure"], lang) if x.get("figure") else ""   # a task's or a part's figure by its id
     body = (f'<header class="practice-head"><span class="eyebrow">{T("practice.eyebrow", code=code)}</span><h1>{T("practice.title")}</h1>'
             f'<p class="lead">{T("practice.lead")}</p>' + (md(data["intro"]) if data.get("intro") else "")
             + f'<p class="howto">{T("practice.howto")}</p></header>')
@@ -335,7 +331,7 @@ def render(code, lang, md, solution_html, title):
         badge = ((f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' if src else '<p class="source">')
                  + (f'{" · " if src else ""}{inline(task["source_note"])}' if task.get("source_note") else "") + '</p>') if (src or task.get("source_note")) else ""
         parts = "" if own else "<ol class=\"parts\">" + "".join(
-            f'<li><span class="part-id">{p["id"]})</span> <span class="part-text">{inline(p["text"])}</span> <span class="pts">{T("practice.points", n=p["points"])}</span></li>'
+            f'<li><span class="part-id">{p["id"]})</span> <span class="part-text">{inline(p["text"])}</span> <span class="pts">{T("practice.points", n=p["points"])}</span>{fig(p)}</li>'
             for p in task["parts"]) + "</ol>"
         if own:
             reveal = (f'<details class="reveal"><summary>{T("practice.own_reveal")}</summary><div class="reveal-body">'
@@ -348,7 +344,7 @@ def render(code, lang, md, solution_html, title):
                       f'<div class="reveal-body"><h3>{T("practice.solution")}</h3>{sol}{extra}<h3>{T("practice.rubric")}</h3>{rubric_html(task, md)}</div></details>')
         pts = T("practice.task_points", n=total(task)) if not own else T("practice.kind_own")
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
-                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}</div>{parts}{reveal}</div></section>')
+                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{reveal}</div></section>')
         toc += (f'<a href="#{tid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{esc(task["title"])}</span></a>')
     return body, toc
 

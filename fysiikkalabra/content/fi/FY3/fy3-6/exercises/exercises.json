@@ -53,10 +53,11 @@
     {
       "id": "fy3-6-L2-02",
       "level": 2,
-      "text": "Vedenkeittimen teho on $2{,}4\\,\\text{kW}$. Keittimessä on $1{,}5\\,\\text{kg}$ vettä, jonka lämpötila on $15\\,{}^\\circ\\text{C}$. Kuinka kauan veden lämmittäminen $95\\,{}^\\circ\\text{C}$:seen kestää? Oleta, että kaikki keittimen energia siirtyy veteen. Anna vastaus sekunteina.",
-      "answer": 210,
-      "unit": "s",
-      "tolerance": 0.02
+      "text": "Sähkölämmitin lämmittää $0{,}50\\,\\text{kg}$:n metallikappaletta tasaisella $100\\,\\text{W}$:n teholla. Kuvaajassa on kappaleen lämpötila ajan funktiona. Mikä on metallin ominaislämpökapasiteetti? Lue tarvittavat arvot kuvaajasta ja oleta, että kaikki lämmittimen energia siirtyy kappaleeseen.",
+      "figure": "fy3-6/heating-line",
+      "answer": 900,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03
     },
     {
       "id": "fy3-6-L2-03",

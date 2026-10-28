@@ -1,5 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-14` writes them into lesson.md."""
 import herolib as H
+from figlib import Fig, INK, RULE_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, ICE, ICE_EDGE, fi
 
 
 def hero():
@@ -30,4 +31,35 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero}
+def energy_bars():
+    """A task-only picture, to scale: three heats of one water-and-ice mixture as horizontal bars on a kJ axis, grid every
+    5 kJ. The water gives off 25 kJ cooling to 0 °C, warming the ice to 0 °C needs 5 kJ and melting all of it 60 kJ."""
+    f = Fig("fy314-bars", 290, "Pylväskuvaaja mittakaavassa: kolme lämpömäärää kilojouleina samasta seoksesta, jossa on vettä ja "
+            "pakkasessa ollutta jäätä. Ruudukon väli on 5 kJ ja numerot joka 10 kJ:n kohdalla. Ylin pylväs, veden luovuttama "
+            "lämpömäärä sen jäähtyessä 0 °C:seen, päättyy kohtaan 25 kJ. Keskimmäinen, jään lämmittämiseen 0 °C:seen tarvittava "
+            "lämpömäärä, päättyy kohtaan 5 kJ. Alin, kaiken jään sulattamiseen tarvittava lämpömäärä, päättyy kohtaan 60 kJ.")
+    X = lambda q: 30 + q * 6.6
+    ya = 236
+    for q in range(0, 71, 5):
+        f.line(X(q), 20, X(q), ya, RULE_LIGHT, 1.5)
+    bars = [(25, HOT_LIGHT, HOT, r"\text{vesi luovuttaa jäähtyessään } 0\,{}^\circ\text{C}\text{:seen}"),
+            (5, COLD_LIGHT, COLD, r"\text{jään lämmittäminen } 0\,{}^\circ\text{C}\text{:seen}"),
+            (60, ICE, ICE_EDGE, r"\text{kaiken jään sulattaminen}")]
+    for k, (q, fill, edge, label) in enumerate(bars):
+        y = 50 + k * 66
+        f.tex(X(0) + 4, y - 16, label, "start", bg=True)
+        f.rect(X(0), y, X(q) - X(0), 28, fill, edge, 2.5)
+    f.arrow(X(0), ya, X(70) + 24, ya, INK, 2.5, 13)
+    for q in range(0, 71, 5):
+        f.line(X(q), ya, X(q), ya + 7, INK, 2)
+        if q % 10 == 0:
+            f.tex(X(q), ya + 26, fi(q), "middle")
+    f.tex(X(70) + 30, ya, r"Q\ (\text{kJ})", "start")
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "energy-bars": energy_bars}
+
+REUSE = {
+    "energy-bars": "safe: three heats of a water-and-ice mixture as bars, which melts and how much is to be worked out",
+}

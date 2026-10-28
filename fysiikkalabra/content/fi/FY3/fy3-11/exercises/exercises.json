@@ -27,9 +27,10 @@
     {
       "id": "fy3-11-L1-04",
       "level": 1,
-      "text": "Moottorisahan moottorissa palavasta polttoaineesta siirtyy minuutissa lämpö $840\\,\\text{kJ}$. Samassa ajassa moottorista siirtyy pakokaasujen ja kuumien pintojen kautta ympäristöön lämpö $670\\,\\text{kJ}$. Kuinka suuren työn moottori tekee minuutissa?",
-      "answer": 170,
-      "unit": "kJ",
+      "text": "Pienen kaasumoottorin sylinterissä olevaa kaasua lämmitetään, ja kaasu työntää mäntää eteenpäin. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona laajenemisen aikana. Kuinka suuren työn kaasu tekee laajetessaan? Lue tarvittavat arvot kuvaajasta. Anna vastaus jouleina.",
+      "figure": "fy3-11/pv-isobaari",
+      "answer": 750,
+      "unit": "J",
       "tolerance": 0.02
     },
     {
@@ -88,7 +89,7 @@
       "id": "fy3-11-L3-02",
       "level": 3,
       "text": "Omakotitalon lämmittämiseen kuluu vuodessa $16{,}0\\,\\text{MWh}$ lämpöä. Talossa on nyt suora sähkölämmitys, jossa sähkövastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen. Omistaja harkitsee lämpöpumppua, joka ottaisi lämpöä ulkoilmasta ja hoitaisi koko lämmityksen. Pumpun lämpökerroin on vuoden keskiarvona 2,50. Kuinka monta megawattituntia sähköä pumppu säästäisi vuodessa? Kuinka paljon lämpöä se ottaisi vuoden aikana ulkoilmasta? Perustele energian säilymisen avulla, miksi pumppu ei ole ikiliikkuja, vaikka se luovuttaa taloon enemmän lämpöä kuin käyttää sähköä.",
-      "answer": 9.60,
+      "answer": 9.6,
       "unit": "MWh",
       "tolerance": 0.02
     },

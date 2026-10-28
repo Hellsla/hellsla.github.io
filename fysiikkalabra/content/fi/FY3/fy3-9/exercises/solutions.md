@@ -19,14 +19,15 @@
 **Järkevyys:** Paine kasvaa, joten tilavuuden täytyy pienentyä. Painesuhde on $280/160 = 1{,}75$, ja $24{,}0\,\textsf{l} / 1{,}75 \approx 13{,}7\,\textsf{l}$. Tulo $pV$ on $3840\,\text{kPa}\cdot\textsf{l}$ alussa ja lopussa. Puristunut ilma toimii jousena, joka työntää vettä hanoihin, vaikka pumppu ei käy.
 
 ## fy3-9-L1-03
-**Annettu:** $V_1 = 1{,}00\,\textsf{l}$, $p_1 = 430\,\text{kPa}$, $V_2 = 1{,}50\,\textsf{l}$ (pullon koko), lämpötila vakio, ilmaa ei ole päässyt ulos
+**Annettu:** kuvaajan mittauspiste ruudukon risteyksessä $V_1 = 20\,\text{ml}$, $p_1 = 100\,\text{kPa}$; $V_2 = 25\,\text{ml}$; lämpötila ja ilman määrä pysyvät samoina
 **Kysytty:** ilman paine $p_2$ kilopascaleina
-**Periaate:** Ilman määrä pysyy samana ja lämpötilaksi oletetaan vakio, joten ilma noudattaa Boylen lakia. Kun vesi on suihkunnut ulos, ilma laajenee täyttämään koko pullon, ja sen paine pienenee.
+**Periaate:** Ilman määrä ja lämpötila pysyvät samoina, joten ilma noudattaa Boylen lakia: tulo $pV$ on vakio. Siksi painetta ei lueta pisteiden väliin vedetyltä janalta, sillä $(V, p)$-kuvaaja on kaari eikä suora.
+**Kuvaajan lukeminen:** Valitaan piste, joka on tarkasti ruudukon risteyksessä: $(20\,\text{ml};\ 100\,\text{kPa})$. Myös piste $(40\,\text{ml};\ 50\,\text{kPa})$ antaa saman tulon $pV = 2000\,\text{kPa}\cdot\text{ml}$, mikä tukee sitä, että lämpötila pysyi samana.
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $p_2 = \dfrac{p_1 V_1}{V_2}$
-**Muunnokset:** Yksikköjä ei tarvitse muuntaa: litrat supistuvat osamäärässä, ja paine saadaan kilopascaleina.
-**Sijoitus:** $p_2 = \dfrac{430\,\text{kPa} \cdot 1{,}00\,\textsf{l}}{1{,}50\,\textsf{l}} = 286{,}67\,\text{kPa}$
-**Vastaus:** $p_2 \approx 287\,\text{kPa}$, kolme merkitsevää numeroa. Paine $430\,\text{kPa}$ sekä tilavuudet $1{,}00\,\textsf{l}$ ja $1{,}50\,\textsf{l}$ ovat kaikki kolmen numeron arvoja.
-**Järkevyys:** Ilma laajenee 1,5-kertaiseksi, joten paine on $1/1{,}5 = 2/3$ alkuperäisestä: $430\,\text{kPa} \cdot \tfrac{2}{3} \approx 287\,\text{kPa}$. Paine on yhä lähes kolminkertainen ilmanpaineeseen $101\,\text{kPa}$ verrattuna, joten ilmaa suihkuaa vielä ulos ja raketti saa lisää vauhtia. Todellisuudessa ilma laajenee niin nopeasti, että se jäähtyy, joten paine jää hieman pienemmäksi.
+**Muunnokset:** Ei tarvita: millilitrat supistuvat osamäärässä, ja paine saadaan kilopascaleina.
+**Sijoitus:** $p_2 = \dfrac{100\,\text{kPa} \cdot 20\,\text{ml}}{25\,\text{ml}} = 80\,\text{kPa}$
+**Vastaus:** $p_2 = 80\,\text{kPa}$, kaksi merkitsevää numeroa kuten tilavuudessa $25\,\text{ml}$ ja kuvaajalta luetussa tilavuudessa $20\,\text{ml}$.
+**Järkevyys:** Tilavuus $25\,\text{ml}$ on mitattujen $20\,\text{ml}$ ja $30\,\text{ml}$ välissä, joten paineen on oltava niiden paineiden $100\,\text{kPa}$ ja $67\,\text{kPa}$ välissä, ja $80\,\text{kPa}$ on. Pisteiden väliin vedetyltä janalta luettu arvo olisi noin $83\,\text{kPa}$, liian suuri, koska kaari kulkee janan alapuolella.
 
 ## fy3-9-L1-04
 **Annettu:** $V_1 = 3{,}0\,\textsf{l}$, $\theta_1 = 22\,{}^\circ\text{C}$, $\theta_2 = -18\,{}^\circ\text{C}$, paine vakio

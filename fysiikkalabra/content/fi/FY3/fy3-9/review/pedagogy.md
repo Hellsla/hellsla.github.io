@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d990e0039cdcf7a7
-## Blocking
+CONTENT-HASH: 5ab65f98fb4b6715
 
+Round 2: the round-1 Blocking item (exit q2 repeated check-3) is fixed. Delta review of the diff: exit q2 removed, stage text 'Lopuksi yksi nopea kysymys', check-c2 correct feedback reworded.
+
+## Blocking
+- none
 ## Polish
-- lesson.md Ydinajatus, paragraph "Boylen laki voidaan todentaa kokeellisesti …" — about 150 words with five steps (setup, slowness, table column 1/V, line, sim). Split after "…huoneenlämpöön." so the graph argument ("Kun tulokset piirretään …") is its own paragraph, or add a ### heading "Boylen lain todentaminen".
-- inquiry.json sim `text` and siirto prompt, "ideaalikaasua" / "pullon ilma on ideaalikaasua" — the term is used before the lesson (or the course so far) defines it; add half a sentence at first use ("ideaalikaasu on harva kaasu, jonka hiukkaset vaikuttavat toisiinsa vain törmätessään").
-- inquiry.json kertaus, pred-1/2/3, siirto, exit ticket — plain "3,0 cm²", "100 kPa", "50 ml", "72,0 kPa", "1,50 litran" sit next to LaTeX values (e.g. `$3{,}3 \cdot 10^{8}$ N`); convert the plain numbers with units to one style.
-- inquiry.json pred-1/pred-2 — prompts say "50 ml ilmaa" and "25 ml" while feedback quotes "200 000 Pa"; keeping Pa and kPa in one thread is correct but the switch is abrupt. Say "200 000 Pa eli 200 kPa" at first mention.
+- The 40 ml to 25 ml calculation is the same skill as check-2; fine as the single quick item, though a concept question (what stays constant, why the process must be slow) would add more.
+- check-c2: the correct option is the longest and carries the numbers; shorten it or lengthen the others.
+- The reworded sentence is somewhat circular ('vain kelvinasteikon nollakohta on absoluuttinen nollapiste: paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä'); it is correct and a student can follow it, but 'koska verrannollisuus edellyttää nollapisteen, jossa paine on nolla' would be plainer.
 ## Checked
-- Path: airplane crisp-bag hook -> optional retrieval (p = F/A) -> three predictions (p halves V, isobaric heating by kelvin ratio, graph shape) -> sim with locked mode/T -> isobaric experiment with the gamma = 1/293 link to the previous chapter -> interpret table of syringe data with one outlier -> conclusion -> theory -> staged example -> checks. Hook question answered in the reflect (101/78) and Johtopäätös. Slot goals (Boylen todentaminen, kääntäen verrannollisuus graafisesti, uusi sarake 1/V) met.
-- The sim computes pV/T = vakio, and the page says so (calc, pred-3 feedback, Johtopäätös); the invented syringe data with a real, explainable outlier (fast compression heats) supplies the genuinely testable evidence. Good design.
-- Numbers re-derived: pV = 5,00 J; 60,2 ml and 0,171 ml/K; 3,4·10⁻³ = 1/293; syringe rows 5040/5050/5040/5430/5040 (outlier +8 %); virhe 250 vs 40 kPa; siirto 1,07 l (2,1 and 0,00107 distractors); check-2 120 kPa (108, 0,12); exit tickets 160 kPa and 308/280 = 1,1.
-- Each choice item still has exactly one correct option; distractor feedback repairs the misconception (celsius ratio, "50 % less volume -> 50 % more pressure", p ∝ V, gas weight).
-- Guardrail edits (kireä pussi: pressure slightly above cabin pressure; vapaasti laajeneva pussi) are consistent in Ydinajatus, Esimerkki and reflect.
-- Example: seven one-step stages, units cancel stated, sig-figure rationale and pV check.
-- Round 2: re-check of round-1 Blocking items against the fix diff. None were open (PASS). Changes: isobaric and isochoric statements now carry "kun kaasun määrä pysyy samana ja kaasu on harvaa" and the extrapolation line is called a model prediction (real gas liquefies before 0 K); both are correct, consistent with the Summary, and grammatical. check-3 prompt gains "Mitä muuta koejärjestelyssä on varmistettava?", which the existing criterion about a tight syringe (constant amount) answers; one correct reading, no problem.
+- Round-1 Blocking: the table (1/V, p) question is gone; check-3 still asks it.
+- Guardrail: the old claim that particle motion ends at 0 K is gone; the new sentence says only that the zero point of kelvin is absolute and proportionality needs it. No false statement.
+- 308,15 / 280,15 = 1,0999; 100 * 40 / 25 = 160 kPa recomputed. Stage text 'yksi' matches one question.

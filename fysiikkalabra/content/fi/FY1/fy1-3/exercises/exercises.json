@@ -11,7 +11,7 @@
     {
       "id": "fy1-3-L1-02",
       "level": 1,
-      "text": "Vertailukappaleen pituus tunnetaan tarkasti: se on 20,0 cm. Mittanauha antaa kappaleen pituudeksi 20,3 cm. Mikä on mittausvirhe etumerkkeineen?",
+      "text": "Vertailukappaleen pituus tunnetaan tarkasti: se on $20{,}0\\,\\text{cm}$. Mittanauha antaa kappaleen pituudeksi $20{,}3\\,\\text{cm}$. Mikä on mittausvirhe etumerkkeineen?",
       "answer": 0.3,
       "unit": "cm",
       "tolerance": 0.02
@@ -19,10 +19,11 @@
     {
       "id": "fy1-3-L1-03",
       "level": 1,
-      "text": "Heilurin kymmenen heilahduksen aika mitataan käsikellolla viisi kertaa, ja tulokset ovat $12{,}4\\,\\text{s}$, $12{,}9\\,\\text{s}$, $12{,}6\\,\\text{s}$, $12{,}2\\,\\text{s}$ ja $12{,}7\\,\\text{s}$. Mikä on tulosten vaihteluvälin puolikas?",
+      "text": "Heilurin kymmenen heilahduksen aika mitataan käsikellolla viisi kertaa. Kuvaan on merkitty jokainen tulos pisteenä aika-akselille. Lue kuvasta pienin ja suurin tulos. Mikä on tulosten vaihteluvälin puolikas?",
+      "figure": "fy1-3/pendulum-dots",
       "answer": 0.35,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.15
     },
     {
       "id": "fy1-3-L1-04",
@@ -61,7 +62,7 @@
     {
       "id": "fy1-3-L2-03",
       "level": 2,
-      "text": "Lasiputken pituus mitataan kolme kertaa, ja tulokset on kirjattu eri yksiköillä: 12,4 cm, $0{,}125\\,\\text{m}$ ja 123 mm. Mikä on keskiarvo senttimetreinä?",
+      "text": "Lasiputken pituus mitataan kolme kertaa, ja tulokset on kirjattu eri yksiköillä: $12{,}4\\,\\text{cm}$, $0{,}125\\,\\text{m}$ ja $123\\,\\text{mm}$. Mikä on keskiarvo senttimetreinä?",
       "answer": 12.4,
       "unit": "cm",
       "tolerance": 0.02
@@ -69,7 +70,7 @@
     {
       "id": "fy1-3-L2-04",
       "level": 2,
-      "text": "Sama pituus mitataan viisi kertaa kahdella mittarilla. Mittari A antaa tulokset 5,2 cm, 5,6 cm, 5,4 cm, 5,3 cm ja 5,5 cm. Mittari B antaa tulokset 5,40 cm, 5,43 cm, 5,41 cm, 5,42 cm ja 5,44 cm. Kuinka moninkertainen on mittarin A tulosten vaihteluvälin puolikas mittarin B vastaavaan verrattuna?",
+      "text": "Sama pituus mitataan viisi kertaa kahdella mittarilla. Mittari A antaa tulokset $5{,}2\\,\\text{cm}$, $5{,}6\\,\\text{cm}$, $5{,}4\\,\\text{cm}$, $5{,}3\\,\\text{cm}$ ja $5{,}5\\,\\text{cm}$. Mittari B antaa tulokset $5{,}40\\,\\text{cm}$, $5{,}43\\,\\text{cm}$, $5{,}41\\,\\text{cm}$, $5{,}42\\,\\text{cm}$ ja $5{,}44\\,\\text{cm}$. Kuinka moninkertainen on mittarin A tulosten vaihteluvälin puolikas mittarin B vastaavaan verrattuna?",
       "answer": 10,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -95,7 +96,7 @@
     {
       "id": "fy1-3-L3-03",
       "level": 3,
-      "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on 8,00 cm. Tanko mitataan työntömitalla viisi kertaa, ja lukemat ovat 8,24 cm, 8,27 cm, 8,25 cm, 8,29 cm ja 8,25 cm. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
+      "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on $8{,}00\\,\\text{cm}$. Tanko mitataan työntömitalla viisi kertaa, ja lukemat ovat $8{,}24\\,\\text{cm}$, $8{,}27\\,\\text{cm}$, $8{,}25\\,\\text{cm}$, $8{,}29\\,\\text{cm}$ ja $8{,}25\\,\\text{cm}$. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
       "answer": 0.26,
       "unit": "cm",
       "tolerance": 0.02

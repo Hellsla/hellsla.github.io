@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 497163bfee90ee02
+CONTENT-HASH: 4cfa8a8208c7ac15
+
+Delta review over the audit's PASS (497163bfee90ee02): L1-03 (water cooling) replaced by a figure task fy3-14/energy-bars (three heats as bars).
+
 ## Blocking
+- none
 ## Polish
-- exercises.json fy3-14-L1-01…L3-03 — all temperatures, masses and powers are now LaTeX, but L1-02 etc. keep plain "kJ/kg" in the closing instruction; fine as unit labels, but check that "$0{,}050\,\text{kg}$:n" style endings look consistent with the lesson (they do).
+- level: the task needs a comparison (5 ≤ 25 < 65), a subtraction and the division by s, with a conclusion; that is L2 work under an L1 label. Acceptable, but say it in the hint or move it to L2 at the next edit.
+- the solution could add the common mistake 25 kJ / 334 kJ/kg = 75 g (ignoring the warming of the ice).
 ## Checked
-- Delta (numbers with units to inline LaTeX; two Järkevyys sentences reworded): no number, answer or tolerance changed.
-- Recomputed L2-04: 333 kJ/kg from the given 8,1 °C; the reworded Järkevyys (lukematarkkuus, kalorimetrin kapasiteetti) is accurate and more honest than the earlier explanation.
-- Case endings after math units are correct (`$0{,}20\,\text{kg}$:n`, `$0\,{}^\circ\text{C}$:seen`, `$800\,\text{W}$:n`).
-- Levels and counts unchanged; none repeats the worked example.
-- No captures available; phone layout rests on the passing layout checks.
+- Figure needed: the text names the three heats but gives no numbers; 25, 5 and 60 kJ are read from the bars (grid 5 kJ, numbers every 10 kJ). The description lists them without the answer.
+- (25 − 5) kJ / 334 kJ/kg = 59,9 g; answer 60 g, 2 % band 58,8-61,2; energy balance 25 kJ right.
+- 360 px capture: bars and labels legible, bar ends on grid; colour supplemented by labels.
+- Kuvaajan lukeminen present; Finnish clear; LaTeX in new text.

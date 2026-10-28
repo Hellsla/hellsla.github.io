@@ -315,10 +315,36 @@
    ]
   },
   {
+   "id": "check-c2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Tiheys on aineen ominaisuus",
+   "prompt": "Rautakuution tilavuus kaksinkertaistuu, mutta aine pysyy rautana. Mitä tapahtuu kuution massalle ja tiheydelle?",
+   "choices": [
+    {
+     "text": "Massa kaksinkertaistuu ja tiheys pysyy samana.",
+     "feedback": "Oikein. Massa on suoraan verrannollinen tilavuuteen, $m = \\rho V$, joten kaksinkertainen tilavuus tarkoittaa kaksinkertaista massaa. Tiheys $\\rho = m : V$ ei muutu, koska suhde pysyy samana: se on raudan ominaisuus.",
+     "correct": true
+    },
+    {
+     "text": "Massa ja tiheys kaksinkertaistuvat.",
+     "feedback": "Massa kaksinkertaistuu, mutta tiheys ei. Jos sekä massa että tilavuus kasvavat kaksinkertaisiksi, suhde $m : V$ pysyy samana. Tiheys ei kerro kappaleen kokoa vaan sitä, kuinka paljon massaa on tilavuusyksikössä."
+    },
+    {
+     "text": "Massa pysyy samana ja tiheys puolittuu.",
+     "feedback": "Massa ei pysy samana: kaksinkertainen rautakuutio sisältää kaksi kertaa niin paljon rautaa, joten sen massa kaksinkertaistuu. Tiheys ei puolitu, koska suhde $m : V$ pysyy samana."
+    },
+    {
+     "text": "Massa kaksinkertaistuu ja tiheys puolittuu.",
+     "feedback": "Tiheys ei puolitu. Kun tilavuus kaksinkertaistuu ja massa kaksinkertaistuu, suhde $\\rho = m : V$ pysyy samana. Tiheys pienenisi vain, jos tilavuus kasvaisi ilman, että massa kasvaa."
+    }
+   ]
+  },
+  {
    "id": "tarkistus-2",
    "stage": "tarkista",
    "type": "numeric",
-   "title": "2. Laskutehtävä",
+   "title": "3. Laskutehtävä",
    "prompt": "Mäntykuution särmä on $20{,}0\\,\\text{cm}$ ja männyn tiheys $500\\,\\text{kg/m}^3$. Kuinka suuri on kuution massa? Vastaa kilogrammoina.",
    "answer": 4.0,
    "unit": "kg",
@@ -344,7 +370,7 @@
    "id": "tarkistus-3",
    "stage": "tarkista",
    "type": "explain",
-   "title": "3. Selitä ja perustele",
+   "title": "4. Selitä ja perustele",
    "optional": true,
    "prompt": "Opiskelija mittaa tuntemattoman metallipalan massan ja tilavuuden ja laskee tiheydeksi $8{,}9\\,\\text{g/cm}^3$. Hän sanoo: \"Pala on kuparia.\" Selitä, miksi tiheys on hyvä tapa tunnistaa aine ja miksi päätelmä ei silti ole täysin varma.",
    "criteria": [
@@ -359,7 +385,7 @@
    "id": "lahtolippu",
    "stage": "tarkista",
    "type": "exit",
-   "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
   }
  ]
 }

@@ -390,10 +390,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Suoran piirtäminen",
+      "prompt": "Kuusi mittauspistettä asettuu suurin piirtein suoralle, mutta ei täsmälleen. Miten kuvaajaan piirretään sovitus?",
+      "choices": [
+        {
+          "text": "Pisteet yhdistetään murtoviivaksi, jotta kaikki mittaukset tulevat mukaan.",
+          "feedback": "Murtoviiva seuraisi myös jokaisen mittauksen satunnaista virhettä. Toisen mittauskerran pisteet olisivat vähän muualla, ja viiva olisi erilainen, vaikka ilmiö on sama. Suora kuvaa ilmiön yleistä riippuvuutta."
+        },
+        {
+          "text": "Suora piirretään pisteiden joukon keskeltä niin, että pisteitä on sen molemmin puolin suunnilleen yhtä paljon.",
+          "feedback": "Oikein. Mittausvirheet ovat satunnaisia, joten pisteet poikkeavat suorasta kumpaankin suuntaan. Hyvä sovitus kulkee lähellä kaikkia pisteitä, eikä sen tarvitse osua yhteenkään.",
+          "correct": true
+        },
+        {
+          "text": "Suora piirretään kahden ensimmäisen pisteen kautta, koska ne on mitattu ensin.",
+          "feedback": "Kaksi pistettä kertoo suoran suunnan huonosti: kummassakin on oma mittausvirheensä, ja se vaikuttaa suoran jyrkkyyteen. Sovituksessa otetaan huomioon kaikki pisteet."
+        },
+        {
+          "text": "Suora piirretään aina origon kautta, koska kaksi suuretta ovat verrannolliset.",
+          "feedback": "Suoran ei tarvitse kulkea origon kautta. Suoraan verrannollisuudessa näin on, mutta jos pisteet osoittavat suoran leikkaavan $y$-akselin muualla, vakiotermi $b$ ei ole nolla ja suora piirretään pisteiden mukaan."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskenta",
+      "title": "3. Laskenta",
       "prompt": "Patikkaretken matka $s$ ajan $t$ funktiona noudattaa mittauksiin sovitettua suoraa, joka kulkee pisteiden $(1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$ kautta. Retkeläinen oli siis jo kulkenut matkaa, kun kello käynnistettiin. Oletetaan, että hän jatkaa samaa vauhtia myös viimeisen mittauksen jälkeen. Monen tunnin kohdalla matka on $25\\,\\text{km}$? Vastaa tunteina.",
       "answer": 7.0,
       "unit": "h",
@@ -419,7 +445,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä, miksi mittauspisteitä ei yhdistetä murtoviivaksi ja miksi suoran kulmakerroin lasketaan kahdesta kaukana toisistaan olevasta suoran pisteestä eikä kahdesta mittauspisteestä.",
       "criteria": [
         "Sanon, että jokaisessa mittauksessa on satunnaisvirhe, jonka murtoviiva toistaisi.",
@@ -434,7 +460,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

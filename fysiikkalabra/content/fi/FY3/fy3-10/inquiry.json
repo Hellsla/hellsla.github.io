@@ -455,10 +455,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kelvinlämpötila",
+      "prompt": "Jäykkään, suljettuun astiaan on suljettu ilmaa, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes ilman lämpötila on $40\\,{}^\\circ\\text{C}$. Mitä ilman paineelle tapahtuu?",
+      "choices": [
+        {
+          "text": "Paine kaksinkertaistuu, koska lämpötila kaksinkertaistuu.",
+          "feedback": "Tämä on houkutteleva, koska luvut $20$ ja $40$ näyttävät kaksinkertaistuvan. Paine on kuitenkin verrannollinen kelvinlämpötilaan, ei celsiusasteisiin. Kelvineinä lämpötila muuttuu arvosta $293{,}15\\,\\text{K}$ arvoon $313{,}15\\,\\text{K}$, joten paine kasvaa vain noin $7\\,\\%$."
+        },
+        {
+          "text": "Paine kasvaa noin $7\\,\\%$, koska kelvinlämpötila kasvaa arvosta $293\\,\\text{K}$ arvoon $313\\,\\text{K}$.",
+          "correct": true,
+          "feedback": "Oikein. Tilavuus ja ainemäärä pysyvät samoina, joten $p = nRT/V$ on verrannollinen kelvinlämpötilaan ja $p_2/p_1 = T_2/T_1 = 313{,}15\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 1{,}07$. Lämpötilan on oltava kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
+        },
+        {
+          "text": "Paine ei muutu, koska astian tilavuus ja ilman määrä pysyvät samoina.",
+          "feedback": "Tilavuus ja ainemäärä pysyvät samoina, mutta niiden lisäksi paine riippuu lämpötilasta: $p = nRT/V$. Kun lämpötila nousee, hiukkaset liikkuvat nopeammin ja osuvat seinään useammin ja voimakkaammin, joten paine kasvaa noin $7\\,\\%$."
+        },
+        {
+          "text": "Paine kasvaa $20\\,\\%$, koska lämpötila nousee $20$ astetta.",
+          "feedback": "Lämpötilan nousu asteina ei ole prosentti. Paineen suhteellinen muutos on kelvinlämpötilojen suhde miinus yksi: $(313{,}15 - 293{,}15)\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 0{,}068$ eli noin $7\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Ennuste simulaation tilalle",
+      "title": "3. Ennuste simulaation tilalle",
       "prompt": "Simulaation vertailutilassa ($N = 100$, $T = 300\\,\\text{K}$, $V = 100\\,\\%$) paine on $p/p_\\text{ref} = 1{,}00$. Hiukkasmäärä kasvatetaan 150:een, lämpötila nostetaan $450\\,\\text{K}$:iin ja tilavuus pienennetään $75\\,\\%$:iin. Mikä on tilanyhtälön ennuste $p/p_\\text{ref}$?",
       "answer": 3.0,
       "unit": "",
@@ -484,7 +510,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä punnituksen avulla",
+      "title": "4. Selitä punnituksen avulla",
       "prompt": "Selitä punnituksen ja tilanyhtälön avulla, miksi kahdessa yhtä suuressa astiassa on samassa paineessa ja lämpötilassa yhtä monta moolia kaasua, olipa kaasu mikä tahansa. Miksi kaasut silti painavat eri verran?",
       "criteria": [
         "Sanon, että punnituksessa $m/M$ eli ainemäärä oli kaikilla kaasuilla lähes sama.",
@@ -499,7 +525,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

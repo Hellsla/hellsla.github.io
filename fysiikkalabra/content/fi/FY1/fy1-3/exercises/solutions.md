@@ -19,14 +19,15 @@
 **Järkevyys:** Tulos $20{,}3\,\text{cm}$ on suurempi kuin oikea arvo $20{,}0\,\text{cm}$, joten virheen pitää olla positiivinen. Suhteessa pituuteen virhe on $\dfrac{0{,}3\,\text{cm}}{20{,}0\,\text{cm}} \approx 1{,}5\,\%$, mikä on mittanauhalle suuri virhe (nauha on tavallisesti tarkka noin millimetrin), joten syy on todennäköisesti systemaattinen, esimerkiksi kulunut nauhan alkupää tai väärä nollakohta.
 
 ## fy1-3-L1-03
-**Annettu:** $t = 12{,}4\,\text{s}$, $12{,}9\,\text{s}$, $12{,}6\,\text{s}$, $12{,}2\,\text{s}$ ja $12{,}7\,\text{s}$; pienin tulos $t_\text{min} = 12{,}2\,\text{s}$ ja suurin $t_\text{max} = 12{,}9\,\text{s}$
+**Annettu:** kuvan viisi tulosta aika-akselilla; pienin tulos $t_\text{min} = 12{,}2\,\text{s}$ ja suurin $t_\text{max} = 12{,}9\,\text{s}$
 **Kysytty:** vaihteluvälin puolikas $\Delta t$ yksikössä $\text{s}$
-**Periaate:** Tulosten hajonta kertoo satunnaisvirheen suuruudesta. Yksinkertaisin arvio on vaihteluvälin eli suurimman ja pienimmän tuloksen erotuksen puolikas, koska yksittäinen tulos voi poiketa keskikohdasta kumpaan suuntaan tahansa.
+**Periaate:** Tulosten hajonta kertoo satunnaisvirheen suuruudesta. Yksinkertaisin arvio on vaihteluvälin eli suurimman ja pienimmän tuloksen erotuksen puolikas, koska yksittäinen tulos voi poiketa keskikohdasta kumpaan suuntaan tahansa. Vaihteluvälin määräävät vain kaksi ääripäätä, joten muita pisteitä ei tarvita.
+**Kuvaajan lukeminen:** Akselin pystyviivat ovat $0{,}1\,\text{s}$:n välein ja numerot $0{,}2\,\text{s}$:n välein. Vasemmanpuoleisin piste on viivalla $12{,}2\,\text{s}$, joten $t_\text{min} = 12{,}2\,\text{s}$. Oikeanpuoleisin piste on viivalla, joka on yhden välin verran numeron $12{,}8$ oikealla puolella, joten $t_\text{max} = 12{,}9\,\text{s}$. Muut pisteet ovat kohdissa $12{,}4\,\text{s}$, $12{,}6\,\text{s}$ ja $12{,}7\,\text{s}$.
 **Kaava:** $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t = \dfrac{12{,}9\,\text{s} - 12{,}2\,\text{s}}{2} = \dfrac{0{,}7\,\text{s}}{2} = 0{,}35\,\text{s}$
-**Vastaus:** $0{,}35\,\text{s}$, kaksi merkitsevää numeroa; jakaja $2$ on tarkka luku. Tämä on vaihteluvälin puolikas tarkasti. Ilmoitettuna virhe-arviona se pyöristettäisiin yhteen merkitsevään numeroon, $0{,}4\,\text{s}$.
-**Järkevyys:** Vaihteluväli on $0{,}7\,\text{s}$, ja sen puolikas on pienempi kuin vaihteluväli, kuten pitää. Vaihteluvälin keskikohta on $12{,}55\,\text{s}$, ja $12{,}55\,\text{s} \pm 0{,}35\,\text{s}$ antaa juuri välin $12{,}2\,\text{s}$–$12{,}9\,\text{s}$.
+**Vastaus:** $0{,}35\,\text{s}$ on vaihteluvälin tarkka puolikas. Epävarmuus ilmoitetaan yhdellä merkitsevällä numerolla, joten raportissa se on $0{,}4\,\text{s}$. Kumpikin vastaus hyväksytään.
+**Järkevyys:** Kuvassa pisteiden ääripäiden väli on seitsemän ruutua eli $0{,}7\,\text{s}$, ja sen puolikas on pienempi kuin vaihteluväli, kuten pitää. Vaihteluvälin keskikohta on $12{,}55\,\text{s}$, ja $12{,}55\,\text{s} \pm 0{,}35\,\text{s}$ antaa juuri välin $12{,}2\,\text{s}$–$12{,}9\,\text{s}$, jolle kaikki pisteet osuvat.
 
 ## fy1-3-L1-04
 **Annettu:** vaa'an lukema tyhjänä (nollalukema) $m_0 = 1{,}2\,\text{g}$, lukema kappaleen kanssa $m_\text{lukema} = 48{,}7\,\text{g}$

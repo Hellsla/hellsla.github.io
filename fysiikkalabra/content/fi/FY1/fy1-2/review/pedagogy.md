@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0de2fc46804dab65
+CONTENT-HASH: f1e51863252e1f24
+
+Delta review over the audit's PASS (0de2fc46804dab65): check-c2 (light travel time proportional to distance) converted from the exit ticket; exit now two questions.
 
 ## Blocking
-- none.
-
+- none
 ## Polish
-- inquiry.json tarkistus-1, first option feedback — "kymmenestuhannesosametrin eli $0{,}1\,\text{mm}$:n tarkkuudella" is correct ($0{,}0001\,\text{m}$) but "kymmenestuhannesosametri" is a heavy word for 16-year-olds. Suggest: "lukema on ilmoitettu $0{,}1\,\text{mm}$:n tarkkuudella ($0{,}0250\,\text{m} = 25{,}0\,\text{mm}$)".
-- lesson.md Etuliitteet — the figure shows only thousand-steps; the new exception sentence for senti and desi is right, but the glossary/figure does not show them. Fine as is; optional mention in the figure caption.
-
+- check-c2 and tarkistus-2 (numeric, light time to Mercury) both ask t = s/c; c2 is mostly the multiply-by-9,5 step. Consider making c2 about the reasoning 'same speed, so time scales with distance' with ratio-only numbers, or keeping tarkistus-2 as the sole light-time item.
+- inquiry.json tarkistus-2 prompt still has plain '0,387 AU:n' (not LaTeX).
 ## Checked
-- Diff: LaTeX conversion of $15{,}341\,\text{km/s}$ in source_note and task prompt; values unchanged, task answer 3,236 AU/a still follows.
-- Prefix sentence "Yleisimmät etuliitteet etenevät tuhannen kertoimen portain (poikkeuksia ovat senti $10^{-2}$ ja desi $10^{-1}$)" is correct and grammatical; it removes the false claim that all prefixes step by 1000.
-- Check item 1 still has exactly one correct option (kolme); the changed feedback is arithmetically right ($0{,}0250\,\text{m}$: last digit is $0{,}1\,\text{mm}$) and still repairs the "trailing zero means nothing" misconception.
-- No other lesson text touched; hash unchanged at the end.
+- Distractors: 8,3 min (speed same, so same time), 0,87 min (divided), 9,5 min (distance number used as minutes) are real misconceptions; feedbacks repair without pointing at other options. Check: 9,5*8,3=78,85, 8,3/9,5=0,87.
+- Exit ticket: two left (conversion of km and mm; another), no repeat of a check; text says 'kaksi'.
+- Titles renumbered 1-4.

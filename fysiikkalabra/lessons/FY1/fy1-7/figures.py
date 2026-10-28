@@ -96,4 +96,40 @@ def displacement():
     return f.svg()
 
 
-FIGURES = {"cubes": cubes, "graph": m_v_graph, "displacement": displacement}
+def cylinders_read():
+    """A task-only variant of `displacement`: two measuring cylinders with a fine scale and no values written; the student reads both levels."""
+    f = Fig("fy17-cyl", 404, "Kuva mittalasista ennen ja jälkeen metallikappaleen upottamisen. Asteikko on 0–100 ml, numerot joka 20 ml:n kohdalla ja "
+            "pienet viivat joka 2 ml:n kohdalla. Vasemmassa mittalasissa vesi yltää merkkiin 40 ml. Kun kappale on upotettu, vesi yltää oikeassa mittalasissa merkkiin 50 ml.")
+    f.defs_add(f'<linearGradient id="fy17-water2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{WATER_LIGHT}"/><stop offset="1" stop-color="{WATER}"/></linearGradient>')
+    top, bot, w = 50, 360, 80            # cylinder from 0 ml (bottom) to 100 ml (top)
+    per = (bot - top) / 100
+    def cyl(cx, ml, piece):
+        x0, x1 = cx - w / 2, cx + w / 2
+        y = bot - ml * per
+        f.rect(x0, top - 10, w, bot - top + 10, GLASS)
+        f.rect(x0 + 2, y, w - 4, bot - y - 2, "url(#fy17-water2)")
+        f.line(x0 + 2, y, x1 - 2, y, WHITE, 2.5)
+        if piece:
+            f.rect(cx - 16, bot - 40, 32, 36, IRON, INK, 2.5, 3)
+        f.path(f"M{x0},{top - 10} V{bot} H{x1} V{top - 10}", stroke=INK, w=3)
+        for k in range(0, 101, 2):
+            yy = bot - k * per
+            f.line(x0 - (10 if k % 10 == 0 else 5), yy, x0, yy, INK, 2 if k % 10 == 0 else 1.2)
+        for k in range(20, 101, 20):
+            f.tex(x0 - 16, bot - k * per, str(k), "end", MUTED, w=48)
+        f.tex(x0 - 16, top - 30, r"\text{ml}", "end", MUTED, w=48)
+    cyl(150, 40, False)
+    cyl(400, 50, True)
+    f.tex(150, 388, r"\text{ennen}", "middle", w=100)
+    f.tex(400, 388, r"\text{jälkeen}", "middle", w=100)
+    return f.svg()
+
+
+FIGURES = {"cubes": cubes, "graph": m_v_graph, "displacement": displacement, "cylinders-read": cylinders_read}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "cubes": "reveals: the masses 5,0 g, 27 g and 79 g of 10 cm³ cubes",
+    "graph": "reveals: the densities of water, aluminium and iron",
+    "displacement": "reveals: the volume 30 ml",
+    "cylinders-read": "safe: two measuring cylinders before and after, levels to be read from a fine scale (displacement is the lesson figure)",
+}

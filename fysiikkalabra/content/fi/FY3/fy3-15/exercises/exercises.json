@@ -27,8 +27,9 @@
     {
       "id": "fy3-15-L1-04",
       "level": 1,
-      "text": "Lauhdevoimalaitokseen tuodaan polttoaineen energiaa teholla $800\\,\\text{MW}$, ja laitoksen sähköteho on $320\\,\\text{MW}$. Kuinka suuri teho siirtyy voimalaitoksesta lämpönä ympäristöön? Anna vastaus megawatteina.",
-      "answer": 480,
+      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_0$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Missä vaiheessa teho pienenee eniten, ja kuinka suuri teho siirtyy tässä vaiheessa lämpönä ympäristöön? Lue arvot kuvasta. Anna vastaus megawatteina.",
+      "figure": "fy3-15/chain-bars",
+      "answer": 200,
       "unit": "MW",
       "tolerance": 0.02
     },

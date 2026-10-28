@@ -11,7 +11,7 @@ a = {}
 a["fy3-2-L1-01"] = 80 * 25 / 1000                      # moped: W = F s = 80 N · 25 m = 2000 J -> 2,0 kJ
 a["fy3-2-L1-02"] = 150 * 1.2                           # shelf: W = G h = 150 N · 1,2 m = 180 J
 a["fy3-2-L1-03"] = 36e3 / 12 / 1000                    # lift motor: P = W / t = 36 000 J / 12 s = 3000 W -> 3,0 kW
-a["fy3-2-L1-04"] = 35 * 6.0                            # sledge, rectangle under (s,F): W = F s = 35 N · 6,0 m = 210 J
+a["fy3-2-L1-04"] = 25 * 6.0 + 10 * (10 - 6.0)           # figure fy3-2/pull-steps: two rectangles, 25 N over 0–6 m and 10 N over 6–10 m: 150 J + 40 J = 190 J
 a["fy3-2-L1-05"] = 20 * 3.0                            # sledge pulled: P = F v = 20 N · 3,0 m/s = 60 W
 # Level 2: rearrangement, conversion or two steps
 a["fy3-2-L2-01"] = 45e3 / 1.5e3                        # tractor: s = W / F = 45 000 J / 1500 N = 30 m

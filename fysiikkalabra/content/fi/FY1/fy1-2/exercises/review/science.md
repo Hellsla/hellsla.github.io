@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4157a622aabadf49
+CONTENT-HASH: e66a67c219672d7e
+
+Delta review over the audit's PASS (4157a622aabadf49): L1-04 (km/s → m/s) replaced by a ruler-reading figure task (fy1-2/ruler-read); numbers with units elsewhere turned into LaTeX.
 
 ## Blocking
-
+(none)
 ## Polish
-- solutions.md L2-03 Kaava — "$10^{6} : 10^{4}\,\text{ha}$" reads as $10^{6} : (10^{4}\,\text{ha})$. Write "$1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja hehtaareja on $10^{6}\,\text{m}^2 : 10^{4}\,\text{m}^2 = 100$, joten $1\,\text{km}^2 = 100\,\text{ha}$".
-- answers.py comments — they still say "km/AU", "m/km" and "s/a". Students never see them, but they could be aligned with the house rule.
-
+- solutions.md:39 — "kolme merkitsevää numeroa kuten lukemat": 2,0 cm has two figures; the real reason is that both readings are to 0,1 cm, so the difference 11,6 cm keeps the tenths. Say "kuten erotus 11,6 cm, koska lukemat ovat millimetrin tarkkuudella".
+- Figure at 360 px: millimetre ticks are about 1,7 px apart; the dashed guides help, and the tolerance (±2,3 mm) forgives a 1–2 mm misreading, so not blocking.
 ## Checked
-- Round-2 blocker fixed: L3-03 now counts the hours, $1{,}447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40{,}2$, with no s/h factor.
-- Round-2 polish fixed: L3-02 names the scale ("jokainen $3474\,\text{km}$ on yksi kuvapiste") and counts pixels with ":", consistent with L1-05.
-- One script recomputed all 12 answers independently. Each one equals answers.py: 0,082; 384,4; 1,702; 15 341; 400,7; 1,6·10⁷; 500; 240; 1,3255; 63 247; 674,4; 40,2. Tolerance 0.02 accepts correct rounding.
-- Regression scan of exercises.json and solutions.md: no ×, \times or ÷; \cdot in products; conversions by substituting the unit's value or by counting with ":"; no conversion-factor units.
-- Every solution has all seven parts, solves symbolically first, justifies its significant figures and makes a real reasonableness estimate.
-- Scope is FY1 ($s = vt$, $t = s : c$, $N = ft$, area as a product).
-- Content hash is identical at the start and the end.
+- Figure code: rod from X(2,0) to X(13,6) at 36 units/cm, mm/5 mm/cm ticks, numbers 0–15; description matches.
+- Recomputed (13,6 − 2,0) cm = 11,6 cm = 116 mm; answers.py 116; tolerance 0,02 → 113,7…118,3 mm accepts any reasonable reading, rejects the wrong method "right end only" (136 mm).
+- LaTeX conversions (384 400 km, 1,85 m, 0,92 m, 3474 km, 15,341 km/s) leave values unchanged; answers unchanged.

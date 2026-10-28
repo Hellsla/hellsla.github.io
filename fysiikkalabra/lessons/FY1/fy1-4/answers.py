@@ -12,9 +12,10 @@ a["fy1-4-L1-04"] = (14.0 - 20.0) / (4.0 - 0.0)            # candle: k = (14,0 �
 a["fy1-4-L1-05"] = 1.2 / 250 * 1000                       # paper: line through origin, m = k N, k = 1,2 kg/250 = 4,8 g per sheet
 # Level 2: two steps, one conversion or one rearrangement
 a["fy1-4-L2-01"] = (1.50 - 0.30) * 1000 / ((10.0 - 2.0) * 60)   # 1,20 km = 1200 m, 8,0 min = 480 s -> k = 2,5 m/s
-k2 = (15.0 - 7.0) / (6.0 - 2.0)                           # tank: k = 8,0 cm / 4,0 min = 2,0 cm/min
-b2 = 7.0 - k2 * 2.0                                       # b = 7,0 cm − 2,0 · 2,0 = 3,0 cm
-a["fy1-4-L2-02"] = k2 * 10.0 + b2                         # level at 10,0 min = 2,0 · 10,0 + 3,0 = 23 cm
+pts = [(1, 0.6), (2, 0.8), (3, 1.6), (4, 2.1), (5, 2.4), (6, 2.9)]   # the points of figure fy1-4/scatter-points (figures.py CART)
+tm, sm = sum(t for t, _ in pts) / 6, sum(s for _, s in pts) / 6
+k2 = sum((t - tm) * (s - sm) for t, s in pts) / sum((t - tm) ** 2 for t, _ in pts)   # least-squares slope 0,48 m/s (a by-eye line: 0,47…0,50)
+a["fy1-4-L2-02"] = round(sm + k2 * (8.0 - tm), 1)        # cart at 8,0 s: 1,733 + 0,48 · 4,5 = 3,89 m -> 3,9 m (tolerance 0,08: 3,6…4,2 m)
 k3 = (9.9 - 3.9) / (9.0 - 3.0)                            # canister: k = 6,0 kg / 6,0 l = 1,0 kg/l
 a["fy1-4-L2-03"] = 3.9 - k3 * 3.0                         # b = m1 − k V1 = 3,9 − 1,0 · 3,0 = 0,9 kg (empty canister)
 a["fy1-4-L2-04"] = (4.0 + 2.5 * 10) / (4.0 + 2.5 * 5.0)   # taxi fare 29,0 € / 16,5 € = 1,757 -> 1,8

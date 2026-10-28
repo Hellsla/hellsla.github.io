@@ -127,4 +127,31 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}
+def two_liquids():
+    """The (h, p) lines of two liquids with the same surface pressure, for a task (scripts/figcat.py variant of
+    `pressure-depth`): the student reads the slopes off grid crossings; the description lists the points, not the densities."""
+    f = Fig("fy34-two-liquids", 340, "Kuvaaja mittakaavassa: kahden nesteen paine p kilopascaleina syvyyden h funktiona, kun h on 0–10 m. "
+            "Molemmissa paine pinnalla on 100 kPa. Neste A: suora kulkee pisteiden (0 m; 100 kPa), (5 m; 150 kPa) ja (10 m; 200 kPa) kautta. "
+            "Neste B: suora kulkee pisteiden (0 m; 100 kPa), (5 m; 175 kPa) ja (10 m; 250 kPa) kautta. "
+            "Ruudukon väli on 1 m ja 25 kPa.")
+    ax = Axes(f, (100, 290), (470, 62), x=(0, 11), y=(0, 275), xticks=list(range(1, 11)), yticks=list(range(25, 251, 25)),
+              xlabel=r"h\ (\text{m})", ylabel=r"p\ (\text{kPa})",
+              xfmt=lambda v: fi(v) if v % 2 == 0 else "", yfmt=lambda v: fi(v) if v % 50 == 0 else "")
+    for pts, col, name in [([(0, 100), (10, 200)], WATER, "A"), ([(0, 100), (10, 250)], COPPER, "B")]:
+        ax.line(pts, col, 3.5)
+        f.tex(ax.X(10) + 14, ax.Y(pts[1][1]), r"\text{" + name + "}", "start", col)
+    for h, p in [(0, 100), (5, 150), (10, 200)]:
+        ax.point(h, p, WATER)
+    for h, p in [(5, 175), (10, 250)]:
+        ax.point(h, p, COPPER)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth, "two-liquids": two_liquids}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "pressure-area": "reveals: p1 = 3 p2 for the same force",
+    "water-column": "reveals: the derivation p = ρgh",
+    "pressure-depth": "reveals: about 199 kPa at 10 m",
+    "two-liquids": "safe: two (h, p) lines with the same surface pressure 100 kPa; the description lists their points, not the densities",
+}

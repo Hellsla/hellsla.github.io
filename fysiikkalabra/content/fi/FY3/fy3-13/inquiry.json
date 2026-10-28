@@ -35,7 +35,7 @@
           "feedback": "Tilavuus pysyy samana, mutta hiukkaset liikkuvat kuumemmassa kaasussa nopeammin: ne osuvat seinään sekä useammin että kovempaa, joten paine kasvaa."
         },
         {
-          "text": "Paine kasvaa 20 kPa, koska lämpötila nousee 20 astetta.",
+          "text": "Paine kasvaa $20\\,\\text{kPa}$, koska lämpötila nousee 20 astetta.",
           "feedback": "Paineen muutos ei ole yhtä suuri kuin lämpötilan muutos, koska suureilla on eri yksiköt. Paine muuttuu suhteessa kelvinlämpötilaan, ja muutoksen suuruus riippuu paineen alkuarvosta."
         }
       ],
@@ -103,7 +103,7 @@
         "prompt": "Pisteet eivät osu täsmälleen samalle suoralle. Mikä on paras perustelu sille, että aineistoon silti piirretään suora?",
         "choices": [
           {
-            "text": "Jokaisessa pisteessä on mittausepävarmuus, ja kaikki pisteet ovat alle 1 kPa:n päässä samasta suorasta. Pisteiden vaihtelu ylös ja alas selittyy mittausepävarmuudella, joten suora vedetään pisteiden joukon keskeltä.",
+            "text": "Jokaisessa pisteessä on mittausepävarmuus, ja kaikki pisteet ovat alle $1\\,\\text{kPa}$:n päässä samasta suorasta. Pisteiden vaihtelu ylös ja alas selittyy mittausepävarmuudella, joten suora vedetään pisteiden joukon keskeltä.",
             "correct": true,
             "feedback": "Oikein. Kun poikkeamat ovat pienempiä kuin epävarmuus ja vaihtelevat satunnaisesti, suora sopii aineistoon. Siksi suoran ei tarvitse osua jokaiseen pisteeseen vaan kulkea epävarmuusjanojen kautta."
           },
@@ -140,7 +140,7 @@
         "mistakes": [
           {
             "value": -296,
-            "feedback": "Käytit nollapaineen lämpötilan kaavassa pisteen A painetta 108,6 kPa suoran paineen $p_0$ sijasta. $p_0$ on paine lämpötilassa $0\\,{}^\\circ\\text{C}$, ja pisteen A lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Vähennä ensin $k \\cdot 20{,}0\\,{}^\\circ\\text{C}$."
+            "feedback": "Käytit nollapaineen lämpötilan kaavassa pisteen A painetta $108{,}6\\,\\text{kPa}$ suoran paineen $p_0$ sijasta. $p_0$ on paine lämpötilassa $0\\,{}^\\circ\\text{C}$, ja pisteen A lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Vähennä ensin $k \\cdot 20{,}0\\,{}^\\circ\\text{C}$."
           },
           {
             "value": 276,
@@ -298,7 +298,7 @@
       "mistakes": [
         {
           "value": -307,
-          "feedback": "Käytit pisteen $30{,}0\\,{}^\\circ\\text{C}$ painetta 133,0 kPa nollakohdan kaavassa. Kaavassa tarvitaan paine lämpötilassa $0\\,{}^\\circ\\text{C}$: $p_0 = 133{,}0\\,\\text{kPa} - k \\cdot 30{,}0\\,{}^\\circ\\text{C} = 120{,}0\\,\\text{kPa}$."
+          "feedback": "Käytit pisteen $30{,}0\\,{}^\\circ\\text{C}$ painetta $133{,}0\\,\\text{kPa}$ nollakohdan kaavassa. Kaavassa tarvitaan paine lämpötilassa $0\\,{}^\\circ\\text{C}$: $p_0 = 133{,}0\\,\\text{kPa} - k \\cdot 30{,}0\\,{}^\\circ\\text{C} = 120{,}0\\,\\text{kPa}$."
         },
         {
           "value": 277,
@@ -331,7 +331,7 @@
           "feedback": "Epävarmuus ei tarkoita virheiden lukumäärää. Se kuvaa tulokseen liittyvää epävarmuutta: tässä sitä, kuinka laajalla välillä mittauksiin sopivat suorat leikkaavat nollapaineen."
         },
         {
-          "text": "Painemittari näytti jokaisessa pisteessä 18 kPa väärin.",
+          "text": "Painemittari näytti jokaisessa pisteessä $18\\,\\text{kPa}$ väärin.",
           "feedback": "Yksiköt kertovat, ettei näin ole: luku 18 on lämpötilan epävarmuus celsiusasteina, ei paineen epävarmuus kilopascaleina."
         },
         {
@@ -341,10 +341,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Suora ja mittauspisteet",
+      "prompt": "Ryhmä mittasi suljetun kaasun paineen kuudessa lämpötilassa ja piirsi pisteet $(\\theta, p)$-koordinaatistoon. Mikään suora ei kulje kaikkien pisteiden kautta. Miten ryhmän kannattaa toimia, kun se jatkaa kuvaajaa nollapaineeseen?",
+      "choices": [
+        {
+          "text": "Piirretään yksi suora pisteiden joukon keskeltä niin, että se kulkee epävarmuusjanojen kautta, ja jatketaan sitä nollapaineeseen.",
+          "correct": true,
+          "feedback": "Oikein. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten poikkeama suorasta ei ole virhe. Sovitettu suora kuvaa koko aineistoa: se voi kulkea jonkin pisteen kautta, mutta sen ei tarvitse. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä."
+        },
+        {
+          "text": "Yhdistetään pisteet murtoviivalla ja jatketaan sen viimeistä osaa nollapaineeseen, koska silloin kuvaaja kulkee jokaisen mittauspisteen kautta.",
+          "feedback": "Houkutteleva, koska murtoviiva ei jätä yhtään mittausta huomiotta. Se kuitenkin seuraa myös jokaisen pisteen satunnaista heittoa, eikä se ole malli. Viimeinen osa riippuu vain kahdesta vierekkäisestä pisteestä, joten sen suunta voi heittää paljon ja nollakohta siirtyä kauas. Sovitettu suora käyttää kaikkia pisteitä."
+        },
+        {
+          "text": "Mittaus on epäonnistunut, koska huolellisesti mitatut pisteet ovat aina täsmälleen samalla suoralla. Koko mittaus tehdään uudelleen.",
+          "feedback": "Mittausepävarmuuden vuoksi pisteet eivät yleensä osu täsmälleen samalle suoralle, vaikka mittaus on tehty huolella. Pieni heitto suoran molemmin puolin kuuluu mittaukseen. Selvästi poikkeava mittaustulos tarkistetaan ja mittaus voidaan tarvittaessa toistaa, mutta pieni heitto ei ole syy hylätä koko mittausta."
+        },
+        {
+          "text": "Poistetaan suorasta eniten poikkeavia pisteitä, kunnes loput ovat täsmälleen samalla suoralla.",
+          "feedback": "Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista. Mahdollinen hylkääminen on perusteltava ja dokumentoitava. Pisteiden heitto suoran ympärillä kertoo mittausepävarmuudesta, ja sen avulla arvioidaan, kuinka paljon jyrkin ja loivin aineistoon sopiva suora eroavat toisistaan."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Nollapiste kahdesta pisteestä",
+      "title": "3. Nollapiste kahdesta pisteestä",
       "prompt": "Suoralta luetaan pisteet $(15{,}0\\,{}^\\circ\\text{C};\\ 108{,}0\\,\\text{kPa})$ ja $(95{,}0\\,{}^\\circ\\text{C};\\ 137{,}0\\,\\text{kPa})$. Määritä lämpötila, jossa suora antaa paineeksi nollan. Vastaa celsiusasteina.",
       "answer": -283,
       "unit": "°C",
@@ -367,7 +393,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja arvioi",
+      "title": "4. Selitä ja arvioi",
       "prompt": "Miksi ekstrapoloinnilla saatu absoluuttisen nollapisteen arvo on epävarmempi kuin mitkään mittausalueella luetut paineet, ja miten epävarmuutta voitaisiin pienentää?",
       "criteria": [
         "Sanon, että tulos saadaan suoran jatkeesta alueelta, jolla ei ole mitattu mitään, ja että pienikin virhe suoran kulmakertoimessa kasvaa pitkällä matkalla.",
@@ -382,7 +408,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

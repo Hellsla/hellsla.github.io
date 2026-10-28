@@ -1,6 +1,6 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-10` writes them into lesson.md."""
 import math, random
-from figlib import Fig, INK, MUTED, WHITE, RULE, ALUMINIUM, IRON, COPPER, COLD, COLD_LIGHT, HEAT, fi
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, ALUMINIUM, IRON, COPPER, COLD, COLD_LIGHT, HEAT, fi
 import herolib as H
 
 HE, AIR, CO2 = COLD, IRON, COPPER           # one colour per gas, the same in every figure of the lesson
@@ -159,4 +159,28 @@ def scene():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scene": scene, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}
+def pt_lines():
+    """Task figure (no lesson.md block): the pressure of two gas samples in equal rigid vessels against the kelvin
+    temperature. Each line is p = (nR/V) T with V = 2,00 l; A: n = 0,0602 mol (0,25 kPa/K), B: n = 0,0361 mol (0,15 kPa/K).
+    The points are on gridline crossings; the description lists them and not the amounts of substance."""
+    f = Fig("fy310-pt-lines", 330, "Kuvaaja mittakaavassa: kahden samanlaisen, suljetun ja jäykän astian kaasun paine p kelvinlämpötilan T "
+            "funktiona, kun astioita lämmitetään. Molemmat mittaussarjat ovat suoria. Kaasun A pisteet ovat (200 K; 50 kPa) ja "
+            "(400 K; 100 kPa), kaasun B pisteet (200 K; 30 kPa) ja (400 K; 60 kPa). Ruudukon väli on 100 K ja 10 kPa.")
+    a = Axes(f, (96, 280), (430, 56), x=(0, 450), y=(0, 110), xticks=[100, 200, 300, 400], yticks=list(range(10, 111, 10)),
+             xlabel=r"T\ (\text{K})", ylabel=r"p\ (\text{kPa})", yfmt=lambda v: fi(v) if v % 20 == 0 else "")
+    for k, col, name in ((0.25, HEAT, "A"), (0.15, COLD, "B")):
+        a.line([(100, k * 100), (400, k * 400)], col, 3.5)
+        for t in (200, 400):
+            a.point(t, k * t, col)
+        f.tex(a.X(400) + 14, a.Y(k * 400) - 2, r"\text{" + name + "}", "start", col)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors, "pt-suorat": pt_lines}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "mole-masses": "reveals: the molar masses of He, air and CO2",
+    "helium-ilma": "reveals: n = 0,21 mol and the masses 0,83 g and 6,0 g",
+    "paine-ja-tekijat": "reveals: the pressure doubles with 2N, 2T or V/2",
+    "pt-suorat": "safe: two p(T) lines of equal rigid vessels as read points on gridlines; the amounts of substance are not shown",
+}
