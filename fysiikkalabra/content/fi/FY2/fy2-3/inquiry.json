@@ -86,7 +86,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: lamppu ja hiustenkuivain",
-      "intro": "Testaa ennuste. Laite A on hiustenkuivain ($1800\\,\\text{W}$), joka on päällä $5\\,\\text{min}$. Laite B on lamppu ($10\\,\\text{W}$). Muuta vain lampun käyttöaikaa $t_\\text{B}$ ja kirjaa vähintään kolme mittausta: yksi, jossa lampun energia $E_\\text{B}$ on pienempi kuin kuivaimen energia $E_\\text{A}$, yksi, jossa se on suurempi, ja yksi, jossa ne ovat yhtä suuret. Katso myös kuvaajaa.",
+      "intro": "Testaa ennuste. Laite A on hiustenkuivain ($1800\\,\\text{W}$), joka on päällä $5\\,\\text{min}$. Laite B on lamppu ($10\\,\\text{W}$). Muuta vain lampun käyttöaikaa $t_\\text{B}$ ja kirjaa vähintään kolme mittausta: yksi, jossa lampun energia $E_\\text{B}$ on pienempi kuin kuivaimen energia $E_\\text{A}$, yksi, jossa se on suurempi, ja yksi, jossa ne ovat yhtä suuret. Hienosäädä aikaa tarvittaessa nuolinäppäimillä minuutti kerrallaan. Katso myös kuvaajaa.",
       "initial": {
         "A": "kuivain",
         "tA": 5,
@@ -101,9 +101,9 @@
       "vary": "tB",
       "names": {
         "A": "laite A",
-        "tA": "käyttöaika t_A",
+        "tA": "käyttöaika $t_\\text{A}$",
         "B": "laite B",
-        "tB": "käyttöaika t_B"
+        "tB": "käyttöaika $t_\\text{B}$"
       },
       "units": {
         "A": "",
@@ -114,11 +114,11 @@
       "measure": [
         {
           "key": "EA_kJ",
-          "label": "E_A (kJ)"
+          "label": "$E_\\text{A}\\ (\\text{kJ})$"
         },
         {
           "key": "EB_kJ",
-          "label": "E_B (kJ)"
+          "label": "$E_\\text{B}\\ (\\text{kJ})$"
         }
       ],
       "min": 3,
@@ -207,9 +207,9 @@
       "vary": "tA",
       "names": {
         "A": "laite A",
-        "tA": "käyttöaika t_A",
+        "tA": "käyttöaika $t_\\text{A}$",
         "B": "laite B",
-        "tB": "käyttöaika t_B"
+        "tB": "käyttöaika $t_\\text{B}$"
       },
       "units": {
         "A": "",
@@ -220,7 +220,7 @@
       "measure": [
         {
           "key": "EA_kWh",
-          "label": "E_A (kWh)"
+          "label": "$E_\\text{A}\\ (\\text{kWh})$"
         }
       ],
       "min": 3,

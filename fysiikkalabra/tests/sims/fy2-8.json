@@ -1,15 +1,15 @@
 [
  {
-  "expr": "(() => { const S=window.simState, s=document.querySelectorAll('#sim-root select'); return S.co2===420 && s[0].value==='420' && s[1].value==='1' && S.Teq===15 && S.nopeus===1 ? 1 : 0 })()",
+  "expr": "(() => { const S=window.simState, s=document.querySelectorAll('#sim-root select'); return S.co2===420 && s[0].value==='420' && s[1].value==='1' && S.Teq===16 && S.nopeus===1 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "on load: nykyinen määrä 420 ppm, settles at +15 °C, speed normaali (must run before any setup)"
+  "note": "on load: nykyinen määrä 420 ppm, settles at +16 °C, speed normaali (must run before any setup)"
  },
  {
-  "expr": "window.simState.T",
-  "expected": 15,
-  "tol": 1e-09,
-  "note": "starts settled at +15 °C"
+  "expr": "(() => { const S=window.simState; return S.T >= 15 && S.T < 16 && S.tila==='lampenee' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "starts at today's measured +15 °C and still warms towards +16 °C"
  },
  {
   "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===2 && o(0)==='0:ei kasvihuonekaasuja|280:esiteollinen määrä|420:nykyinen määrä|560:hiilidioksidia kaksinkertaisesti' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",

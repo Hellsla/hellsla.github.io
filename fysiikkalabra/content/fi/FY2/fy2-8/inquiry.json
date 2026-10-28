@@ -68,7 +68,7 @@
         },
         {
           "text": "Se laskisi vain muutaman asteen, koska kasvihuonekaasuja on ilmakehässä hyvin vähän.",
-          "feedback": "Pieni pitoisuus ei tarkoita pientä vaikutusta. Kasvihuonekaasut imevät lämpösäteilyä erittäin tehokkaasti, ja vaikka hiilidioksidia on alle puoli promillea ilmakehästä, luonnollinen kasvihuoneilmiö nostaa lämpötilaa noin $33\\,\\text{K}$."
+          "feedback": "Pieni pitoisuus ei tarkoita pientä vaikutusta. Kasvihuonekaasut imevät lämpösäteilyä erittäin tehokkaasti. Tärkein niistä on vesihöyry, ja hiilidioksidia on alle puoli promillea ilmakehästä, mutta yhdessä ne nostavat lämpötilaa luonnollisen kasvihuoneilmiön kautta noin $33\\,\\text{K}$."
         }
       ],
       "reveal": {
@@ -109,7 +109,7 @@
       "type": "sim",
       "text": "Valitse kasvihuonekaasujen määrä ja seuraa säteilyä ilmakehässä ja lämpömittaria.",
       "howto": "Valitse valikosta kasvihuonekaasujen määrä. Keltaiset lyhyet aallot ovat auringon säteilyä, punaiset pitkät aallot maanpinnan lämpösäteilyä. Kun kasvihuonekaasumolekyyli imee lämpösäteilyä, se hehkuu ja lähettää säteilyn eteenpäin satunnaiseen suuntaan, ylös tai alas. Lämpömittari näyttää maanpinnan keskilämpötilan, ja lukemissa on arvo, johon lämpötila asettuu. Selitteessä ovat ilmakehän molekyylit: typpi $\\text{N}_2$ ja happi $\\text{O}_2$ eivät juuri ime lämpösäteilyä, hiilidioksidi $\\text{CO}_2$, vesihöyry $\\text{H}_2\\text{O}$ ja metaani $\\text{CH}_4$ imevät. Nopeus muuttaa kuvan ja lämpenemisen tahtia.",
-      "model": "Simulaatio on havainnollistus, ei laskumalli. Se ei laske lämpötilaa, vaan lämpötilat ovat pyöristettyjä lähdearvoja: ilman kasvihuonekaasuja noin $-18\\,{}^\\circ\\text{C}$, esiteollisella ajalla ($\\text{CO}_2$-pitoisuus $280\\,\\text{ppm}$) noin $+14\\,{}^\\circ\\text{C}$ ja nykyisin ($420\\,\\text{ppm}$) noin $+15\\,{}^\\circ\\text{C}$, sillä vuosina 2011–2020 maapallo oli noin $1{,}1\\,{}^\\circ\\text{C}$ lämpimämpi kuin 1850–1900 (IPCC AR6, 2021). Kun hiilidioksidia on kaksinkertaisesti esiteolliseen verrattuna ($560\\,\\text{ppm}$), lämpenemisen paras arvio on noin $3\\,{}^\\circ\\text{C}$, todennäköisesti $2{,}5\\text{–}4\\,{}^\\circ\\text{C}$ (IPCC AR6), eli noin $+17\\,{}^\\circ\\text{C}$, kun lämpötila on ehtinyt asettua. Todellisuudessa asettuminen kestää vuosikymmeniä tai vuosisatoja. Säteilyn aallot eivät ole mittakaavassa: todellinen ilmakehä imee suurimman osan maanpinnan lämpösäteilystä jo nykyisellä määrällä, ja kuvassa tasojen eroa on korostettu. Kuvassa ei näy pilvien ja jään heijastamaa auringon säteilyä eikä vesihöyryn määrän muutosta lämpötilan mukana.",
+      "model": "Simulaatio on havainnollistus, ei laskumalli. Se ei laske lämpötilaa, vaan lämpötilat ovat pyöristettyjä lähdearvoja: ilman kasvihuonekaasuja noin $-18\\,{}^\\circ\\text{C}$, esiteollisella ajalla ($\\text{CO}_2$-pitoisuus $280\\,\\text{ppm}$) noin $+14\\,{}^\\circ\\text{C}$ ja nykyisin ($420\\,\\text{ppm}$) mitattuna noin $+15\\,{}^\\circ\\text{C}$, sillä vuosina 2011–2020 maapallo oli noin $1{,}1\\,{}^\\circ\\text{C}$ lämpimämpi kuin 1850–1900 (IPCC AR6, 2021). Nykyinen lämpötila ei ole vielä asettunut: samalla pitoisuudella maapallo lämpenee yhä, ja ilmastoherkkyyden paras arvio (alla) antaa asettuneeksi lämpötilaksi noin $+16\\,{}^\\circ\\text{C}$. Simulaatio alkaa nykyhetkestä, $+15\\,{}^\\circ\\text{C}$:sta. Kun hiilidioksidia on kaksinkertaisesti esiteolliseen verrattuna ($560\\,\\text{ppm}$), lämpenemisen paras arvio on noin $3\\,{}^\\circ\\text{C}$, todennäköisesti $2{,}5\\text{–}4\\,{}^\\circ\\text{C}$ (IPCC AR6), eli noin $+17\\,{}^\\circ\\text{C}$, kun lämpötila on ehtinyt asettua. Todellisuudessa asettuminen kestää vuosikymmeniä tai vuosisatoja. Säteilyn aallot eivät ole mittakaavassa: todellinen ilmakehä imee suurimman osan maanpinnan lämpösäteilystä jo nykyisellä määrällä, ja kuvassa tasojen eroa on korostettu. Kuvassa ei näy pilvien ja jään heijastamaa auringon säteilyä eikä vesihöyryn määrän muutosta lämpötilan mukana.",
       "calc": "Maanpinta lähettää kuvassa lämpösäteilyä sitä tiheämmin, mitä lämpimämpi se on. Lämpötila lähestyy valitun tason arvoa vähitellen: normaalinopeudella ero puolittuu noin kahdessa sekunnissa. Lämpösäteilyn kulkua ja lämpötilan laskemista säteilystä käsitellään FY3-kurssilla luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*."
     },
     {
@@ -117,27 +117,30 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe: kasvihuonekaasujen määrä",
-      "intro": "Testaa ennuste 1. Muuta kasvihuonekaasujen määrää ja kirjaa jokainen taso: ei kasvihuonekaasuja, esiteollinen, nykyinen ja kaksinkertainen hiilidioksidi. Katso, mitä lämpösäteilylle tapahtuu ilmakehässä ja miten lämpömittari muuttuu.",
+      "intro": "Testaa ennuste 1. Muuta kasvihuonekaasujen määrää ja kirjaa jokainen taso: ei kasvihuonekaasuja, esiteollinen, nykyinen ja kaksinkertainen hiilidioksidi. Tason $0\\,\\text{ppm}$ ilmakehästä on poistettu myös vesihöyry ja metaani. Odota jokaisella tasolla, kunnes lämpömittari on asettunut, ja katso, mitä lämpösäteilylle tapahtuu ilmakehässä.",
       "initial": {
         "co2": "420"
       },
       "locked": [],
       "vary": "co2",
       "names": {
-        "co2": "CO_2-pitoisuus"
+        "co2": "$\\text{CO}_2$-pitoisuus"
       },
       "units": {
         "co2": "ppm"
       },
       "values": {
         "co2": {
-          "420": "nykyinen määrä"
+          "0": "ei kasvihuonekaasuja, ei vesihöyryäkään",
+          "280": "esiteollinen määrä",
+          "420": "nykyinen määrä",
+          "560": "hiilidioksidia kaksinkertaisesti"
         }
       },
       "measure": [
         {
           "key": "Teq",
-          "label": "asettunut T (°C)"
+          "label": "asettuva $T\\ ({}^\\circ\\text{C})$"
         }
       ],
       "min": 3,
@@ -148,7 +151,7 @@
           {
             "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan siitä takaisin alas, joten energia pääsee avaruuteen hitaammin ja maanpinta pysyy lämpimämpänä.",
             "correct": true,
-            "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla, mutta lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kaasuja lämpötila on noin $-18\\,{}^\\circ\\text{C}$, nykyisin noin $+15\\,{}^\\circ\\text{C}$, ja kun hiilidioksidia lisätään, lämpötila nousee edelleen. Lämpötila ei myöskään nouse heti, vaan vähitellen."
+            "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla, mutta lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kasvihuonekaasuja, myös ilman vesihöyryä, lämpötila olisi noin $-18\\,{}^\\circ\\text{C}$. Kun hiilidioksidia lisätään, lämpötila nousee, mutta vähitellen: nykyisellä pitoisuudella maapallo on noin $+15\\,{}^\\circ\\text{C}$ ja lämpenee yhä kohti noin $+16\\,{}^\\circ\\text{C}$:ta."
           },
           {
             "text": "Kasvihuonekaasut päästävät auringon säteilyä läpi paremmin kuin muut kaasut, joten maanpinnalle tulee enemmän energiaa.",

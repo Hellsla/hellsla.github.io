@@ -2,9 +2,10 @@
 // molecules absorb part of it and send it on in a random direction, some of it back down to the ground.
 // Qualitative FY2 model, no radiative balance (that is FY3, "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos"):
 // the four levels of the select carry the ground's mean temperature as rounded source values, the sim does not compute
-// them. Without greenhouse gases about −18 °C, pre-industrial (CO2 280 ppm) about +14 °C, today (420 ppm) about +15 °C
-// (IPCC AR6 WG1 2021: 1,1 °C warmer in 2011–2020 than in 1850–1900), CO2 doubled (560 ppm) about +17 °C once the
-// temperature has settled (IPCC AR6: equilibrium climate sensitivity best estimate 3 °C). The ground temperature moves
+// them. Without greenhouse gases about −18 °C; pre-industrial (CO2 280 ppm) about +14 °C; CO2 doubled (560 ppm) about
+// +17 °C once settled (IPCC AR6 WG1 2021: equilibrium climate sensitivity best estimate 3 °C). Today (420 ppm) the mean
+// is about +15 °C measured (IPCC AR6: 1,1 °C warmer in 2011–2020 than in 1850–1900) but not settled: with the same
+// sensitivity 420 ppm settles at about 14 + 3 · log2(420 : 280) ≈ +16 °C, so the sim starts at +15 °C and still warms.
 // towards the level's value gradually, to show that warming lags the change in the gases (in reality decades).
 // The photons are a picture, not to scale: yellow short waves = sunlight, red long waves = heat radiation; the ground
 // sends heat radiation the faster the warmer it is ((T/255 K)^4, so the picture brightens as it warms). The share
@@ -15,10 +16,10 @@ new p5((p) => {
   const LEV = {
     0:   { T: -18, a: 0,    co2: 0, h2o: 0, ch4: 0, name: 'ei' },
     280: { T: 14,  a: 0.80, co2: 4, h2o: 6, ch4: 1, name: 'esi' },
-    420: { T: 15,  a: 0.84, co2: 6, h2o: 6, ch4: 1, name: 'nyt' },
+    420: { T: 16,  a: 0.84, co2: 6, h2o: 6, ch4: 1, name: 'nyt' },
     560: { T: 17,  a: 0.88, co2: 8, h2o: 6, ch4: 1, name: 'tupla' },
   };
-  const ORDER = ['0', '280', '420', '560'], INIT = '420';
+  const ORDER = ['0', '280', '420', '560'], INIT = '420', T_NOW = 15;   // today's measured mean, still rising towards the 420 ppm value
   const ATM0 = 92, ATM1 = 292, GROUND = 300, XR = 462;                    // atmosphere band, ground line, right edge of the scene
   const TT = 128, TB = 318, TMIN = -30, TMAX = 30, TX = 556;               // thermometer: top/bottom of the scale, tube x
   const SUN = { x: 50, y: 42 };
@@ -65,7 +66,7 @@ new p5((p) => {
     });
   };
 
-  function reset() { sel.selected(INIT); selSp.selected('1'); T = LEV[INIT].T; ph = []; rings = []; }
+  function reset() { sel.selected(INIT); selSp.selected('1'); T = T_NOW; ph = []; rings = []; }
 
   p.draw = () => {
     const key = sel.value(), L = LEV[key], speed = Number(selSp.value());
