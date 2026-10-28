@@ -1,11 +1,7 @@
 {
   "version": 1,
   "contribution": "Paine $p = F/A$ kertoo, miten voima jakautuu pinnalle, ja nesteessä paine kasvaa syvyyden mukana suorana $p = p_0 + \\rho g h$, jonka vakiotermi on ilmanpaine ja kulmakerroin $\\rho g$.",
-  "learn": [
-    "Osaat laskea paineen voimasta ja pinta-alasta ja selittää, miten voima jakautuu pinnalle.",
-    "Osaat laskea nesteen paineen eri syvyyksillä.",
-    "Tulkitset paineen ja syvyyden kuvaajan vakiotermin ja kulmakertoimen."
-  ],
+  "learn": ["Osaat laskea paineen voimasta ja pinta-alasta ja selittää, miten voima jakautuu pinnalle.", "Osaat laskea nesteen paineen eri syvyyksillä.", "Tulkitset paineen ja syvyyden kuvaajan vakiotermin ja kulmakertoimen."],
   "prior": [
     "Paino on voima, $G = mg$, ja $g = 9{,}81\\,\\text{m/s}^2$ (luku *Voima vuorovaikutuksen mittana ja paino*)",
     "Paine on tilanmuuttuja, joka syntyy mikromallissa hiukkasten törmäyksistä seinämään (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"
