@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 106a6f42772f0a62
+CONTENT-HASH: d4871eb2be378354
 
-Round 2: re-check of round-1 Blocking items against the fix diff.
+Delta review over the audit's PASS (106a6f42772f0a62): check-c2 added from the exit-ticket "lämpöä kivessä" question, exit ticket 3 → 2, titles renumbered.
 
 ## Blocking
-
+- none
 ## Polish
-- lesson.md:47 (Ydinajatus) — resolved, but the general clause "olomuodon muuttuessa sisäenergia muuttuu, vaikka lämpötila pysyy samana" still comes before the example that gives the condition. The example now names the condition (pure ice at normal pressure, 0 °C), so it does not leave a wrong picture. Tighter: "olomuodon muuttuessa sisäenergia voi muuttua lämpötilan pysyessä samana: kun esimerkiksi …".
-- inquiry.json:113 `kokeile.model` — the adiabatic formula T₂ = T₁(V₁/V₂)^(γ−1) is outside FY3's central contents. It is fine in a closed box as a check on the model, but "(tätä kaavaa ei tarvitse osata)" would keep the scope clear.
-
+- inquiry.json:366 — "Se mittaa hiukkasten keskimääräistä liike-energiaa" (said here of a stone and water) is a fair simplification, but lesson.md says it more carefully (lämpöliikkeen voimakkuus; mean kinetic energy in a gas). Suggest "Se kuvaa hiukkasten lämpöliikkeen voimakkuutta" to match the guardrail.
 ## Checked
-- Round-1 A, exit-ticket.json:8: now "lämpöä siirtyy, kun kiven ja sen ympäristön välillä on lämpötilaero". This is correct (radiation and the surrounding air are covered) and matches the glossary definition of heat. Resolved.
-- Round-1 B, lesson.md:47: the example "puhdas jää sulaa normaalipaineessa … pysyy 0 °C:ssa" states the guardrail condition and is correct physics. The Finnish is grammatical. Resolved.
-- The diff touches nothing else in the lesson. Theory, inquiry, sim and figures are unchanged from the full review at the previous hash: the simulation numbers were recomputed in node (13,14 / 19,06 / 12,37 J) and every worked number was rechecked.
-- The changed lines do not affect any option, answer key or solution.
+- check-c2 (kuuma kivi veteen): exactly one correct option; "kivessä on paljon lämpöä", "lämpö on kadonnut" and "lämpötilaa siirtyy" are each wrong, and their feedback keeps heat (energy in transfer) and internal energy apart, as the guardrail requires.
+- Net direction (hot → cold) and energy conservation stated correctly; no claim that a body holds heat.
+- exit-ticket.json now 2 questions and the exit stage says "Lopuksi kaksi"; the removed question is the one converted into check-c2.
+- later tarkista titles renumbered 3. and 4.; LaTeX unit conversions in inquiry.json are mathematically unchanged.

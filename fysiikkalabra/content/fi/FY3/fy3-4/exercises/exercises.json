@@ -65,7 +65,7 @@
       "figure": "fy3-4/two-liquids",
       "answer": 6.0,
       "unit": "m",
-      "tolerance": 0.03
+      "tolerance": 0.04
     },
     {
       "id": "fy3-4-L2-04",

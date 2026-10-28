@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ca26f894b74a6477
+CONTENT-HASH: 05834f00772d9c82
+
+Delta review over the audit's PASS (ca26f894b74a6477): check-c2 (order-of-magnitude difference) converted from the exit ticket; exit now two questions.
 
 ## Blocking
-- none.
-
+- none
 ## Polish
-- lesson.md "Suuruusluokka" — "kymmenpotenssien akselilla lähin" appears in the definition and the summary, but the lesson never shows or names the axis; a student may read it as jargon. A half-sentence ("eli kymmenpotenssien jonossa $10^{3}, 10^{4}, 10^{5}\ldots$ lähin") would ground it.
-- Earlier polish items (L in the setup box, "suuruusluokkaa" vs "kertaa", long Siirry-menu, workload) are untouched by this diff and still stand.
-
+- inquiry.json check-c2 vs check-2: both end in a ratio of sizes, but c2 tests the concept (difference of exponents = ratio 10^n) and check-2 the calculation with mantissas; acceptable, could be sharper if check-2 stayed numeric only.
 ## Checked
-- Diff is three wording changes (definition, summary bullet, one option's feedback); no number, formula or answer changed.
-- Option feedback "lähempänä kohtaa $10^{17}$ kuin kohtaa $10^{16}$" is correct for $4{,}0\cdot10^{16}$ on a log axis and still repairs the "ignore the coefficient" misconception.
-- The definition still agrees with the glossary and the threshold "yli noin 3" is unchanged; the multiple-choice item still has one correct option.
-- Finnish grammar of the changed sentences is correct.
-- Hash unchanged at the end.
+- check-c2 tests a concept check-1 (reading the order of magnitude of one value) does not: exponent difference is a power-of-ten ratio.
+- Distractors are real misconceptions: 5x (difference read as factor), 10^11 (exponents added), 8/3 (exponents divided); each feedback repairs it and none points at another option.
+- Correct answer is not the longest or a fixed place (options are shuffled).
+- Exit ticket: two questions left (fundamental interaction, models tested by experiment); neither repeats a check; lahtolippu text says 'kaksi'.
+- Titles renumbered 1-4; LaTeX in prompt and feedback.

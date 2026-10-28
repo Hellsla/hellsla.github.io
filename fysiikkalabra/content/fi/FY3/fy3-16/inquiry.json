@@ -1,7 +1,11 @@
 {
   "version": 1,
   "contribution": "Aiemmat tunnit antoivat osat: lämpömäärä $Q = cm\\Delta T$, sulamis- ja höyrystymislämpö sekä rakennusosan läpi johtuva teho $P = UA\\Delta T$. Tämä tunti yhdistää ne energiakirjanpidoksi arjen tilanteissa: tuleva energia kuluu lämpenemiseen tai olomuodon muutokseen, ja olomuodon muutoksen aikana lämpötila pysyy vakiona.",
-  "learn": ["Osaat yhdistää lämpömäärän, sulamis- ja höyrystymislämmön sekä rakennusosan läpi johtuvan tehon yhdeksi energiakirjanpidoksi.", "Osaat perustella, kuluuko tuleva energia lämpenemiseen vai olomuodon muutokseen.", "Osaat ratkaista arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."],
+  "learn": [
+    "Osaat yhdistää lämpömäärän, sulamis- ja höyrystymislämmön sekä rakennusosan läpi johtuvan tehon yhdeksi energiakirjanpidoksi.",
+    "Osaat perustella, kuluuko tuleva energia lämpenemiseen vai olomuodon muutokseen.",
+    "Osaat ratkaista arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."
+  ],
   "prior": [
     "Lämpömäärä lämmittäessä on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen)",
     "Sulaminen ja höyrystyminen vaativat energiaa (jäätyminen ja tiivistyminen vapauttavat sitä), mutta lämpötila ei muutu, $Q = sm$ ja $Q = rm$ (luku Olomuodon muutokset)",
@@ -317,25 +321,25 @@
       "id": "check-c2",
       "stage": "tarkista",
       "type": "choice",
-      "title": "2. Lämpötila sulamisen aikana",
-      "prompt": "Kylmälaukussa on jäätä ja vettä lämpötilassa $0\\,{}^\\circ\\text{C}$, ja seinien läpi tulee koko ajan lämpöä. Kun jäätä on vielä jäljellä, laukun sisälämpötila ei nouse. Mikä selittää tämän?",
+      "title": "2. Sulamislämpö kylmälaukussa",
+      "prompt": "Kylmälaukkuun voi laittaa joko $1{,}0\\,\\text{kg}$ jäätä tai $1{,}0\\,\\text{kg}$ vettä, kumpikin lämpötilassa $0\\,{}^\\circ\\text{C}$. Kumpi pitää laukun sisällön kylmänä pidempään, ja miksi?",
       "choices": [
         {
-          "text": "Seinän läpi tuleva energia kuluu jään sulattamiseen eikä lämpötilan nostamiseen.",
-          "correct": true,
-          "feedback": "Oikein. Sulaessaan jää ottaa energiaa, joka muuttaa jään rakenteen nesteeksi: $Q = sm$. Energia ei nosta lämpötilaa vaan menee olomuodon muutokseen, joten lämpötila pysyy sulamispisteessä, kunnes kaikki jää on sulanut."
+          "text": "Yhtä kauan, koska kumpikin on lämpötilassa $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Sama lämpötila ei tarkoita, että aine voi ottaa vastaan yhtä paljon energiaa. Jään on ensin sulattava, ja sulaminen sitoo $334\\,\\text{kJ}$ kilogrammaa kohti ennen kuin lämpötila voi nousta."
         },
         {
-          "text": "Eriste estää lämpöä tulemasta laukkuun, kunnes kaikki jää on sulanut.",
-          "feedback": "Eriste hidastaa lämmön tuloa, mutta lämpöä tulee laukkuun koko ajan, ja tehon voi laskea kaavalla $P = UA\\Delta T$. Lämpötila pysyy vakiona siksi, että tuleva energia kuluu sulamiseen, ei siksi, että energiaa ei tulisi."
+          "text": "Jää, koska sen sulaminen sitoo noin $334\\,\\text{kJ}$ ennen kuin lämpötila alkaa nousta.",
+          "feedback": "Oikein. Laukkuun tuleva energia kuluu ensin jään sulattamiseen, ja lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa. Saman veden lämmittäminen $0\\,{}^\\circ\\text{C}$:sta $8\\,{}^\\circ\\text{C}$:seen sitoo vain $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1{,}0\\,\\text{kg} \\cdot 8\\,\\text{K} \\approx 34\\,\\text{kJ}$, noin kymmenesosan.",
+          "correct": true
         },
         {
-          "text": "Jään ottama energia katoaa, joten laukun energia ei kasva.",
-          "feedback": "Energia ei katoa. Sulamisessa tuleva energia varastoituu veden hiukkasten sisäenergiaan, ja kun vesi jäätyy uudelleen, sama energia vapautuu. Lämpötila ei kasva, koska energia ei lisää hiukkasten liike-energiaa vaan irrottaa ne jäähilasta."
+          "text": "Vesi, koska vesi johtaa lämpöä paremmin ja jäähdyttää ruoat nopeammin.",
+          "feedback": "Hyvä lämmönjohtavuus tasaa lämpötilat nopeasti, mutta se ei kerro, kuinka paljon energiaa aine voi ottaa vastaan lämpenemättä. Jään sulaminen sitoo paljon enemmän energiaa kuin saman veden lämpeneminen muutamalla asteella."
         },
         {
-          "text": "Jää ja vesi ovat samassa lämpötilassa, ja samassa lämpötilassa olevat aineet eivät lämpene.",
-          "feedback": "Aine lämpenee, jos siihen tulee energiaa ja se ei kulu muuhun. Jään ja veden lämpötila on sama, mutta laukkuun tuleva energia kuluu jään sulattamiseen. Heti kun jää on sulanut, sama teho alkaa lämmittää vettä."
+          "text": "Jää, koska jää on kylmempää kuin vesi.",
+          "feedback": "Tässä molemmat ovat lämpötilassa $0\\,{}^\\circ\\text{C}$, joten ero ei johdu lämpötilasta. Jää kestää pidempään, koska sen sulaminen sitoo energiaa ennen kuin lämpötila voi nousta."
         }
       ]
     },

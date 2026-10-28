@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f6ea8ce2311e052c
+CONTENT-HASH: 674ef574eb28d802
 
-Round 2 and 3: re-check of round-1 Blocking items against the fix diffs (tolerance is relative).
+Delta review over the audit's PASS (f6ea8ce2311e052c): one exercise replaced by a figure task, LaTeX units.
 
 ## Blocking
-- none. Round-1 item L2-02 (answer 10.67, solution "noin 11 mm") is resolved: relative tolerance 0.04 accepts 10,24–11,10, so 11 and 10,7 pass.
-
+- none
 ## Polish
-- exercises.json fy1-3-L2-03 text — "12,4 cm" and "123 mm" are plain text while "$0{,}125\,\text{m}$" is LaTeX; write all three as LaTeX.
-- solutions.md fy1-3-L1-05 Vastaus — still says "virhe-arvio" while the task and Kysytty say "epävarmuus"; use one term.
-- exercises.json fy1-3-L1-05 prompt — gives the half-interval rule in the situation and then asks for it; shorten the situation.
-- Earlier open items (repeated formula in Kaava lines, L3-03 duplicating L2-02) stand.
-
+- exercises.json L1-03 text says 'Lue kuvasta pienin ja suurin tulos', which gives the method; fine at L1, but let the student find it at L2 if desired.
+- Dots 12,6 and 12,7 are close at 360 px (about 14 px apart) but separate; the extreme points are what matters.
 ## Checked
-- LaTeX conversion of numbers with units in the tasks listed in the delta; values, units and answers unchanged.
-- L2-02 reasoning (each reading 9–12 mm too large, mean between) correct; L1-05 Järkevyys honest about total uncertainty.
-- Finnish of changed passages correct.
-- Round 3: L1-02 now writes the mittausvirhe as $x - x_\text{oikea}$ in Kysytty, Kaava and Sijoitus (no Δx), matching the lesson; wording is correct, +0,3 cm unchanged, and Δ is no longer overloaded.
-- Hash unchanged at the end.
+- Figure needed: the five times appear only in the figure now, text gives none. Extreme dots sit on gridlines (12,2 and 12,9 = one gridline right of the 12,8 label).
+- (12,9-12,2)/2 = 0,35 s correct; solution reads 12,4, 12,6, 12,7 consistently with the description.
+- Figure has no mean or range marked; aria-label lists the data, not the answer; **Kuvaajan lukeminen:** present; LaTeX in all changed numbers.

@@ -26,7 +26,7 @@
 **Kaava:** $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$. Kaava on jo ratkaistu kysytyn suureen suhteen: $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t = \dfrac{12{,}9\,\text{s} - 12{,}2\,\text{s}}{2} = \dfrac{0{,}7\,\text{s}}{2} = 0{,}35\,\text{s}$
-**Vastaus:** $0{,}35\,\text{s}$, kaksi merkitsevää numeroa; jakaja $2$ on tarkka luku. Tämä on vaihteluvälin puolikas tarkasti. Ilmoitettuna virhe-arviona se pyöristettäisiin yhteen merkitsevään numeroon, $0{,}4\,\text{s}$.
+**Vastaus:** $0{,}35\,\text{s}$ on vaihteluvälin tarkka puolikas. Epävarmuus ilmoitetaan yhdellä merkitsevällä numerolla, joten raportissa se on $0{,}4\,\text{s}$. Kumpikin vastaus hyväksytään.
 **Järkevyys:** Kuvassa pisteiden ääripäiden väli on seitsemän ruutua eli $0{,}7\,\text{s}$, ja sen puolikas on pienempi kuin vaihteluväli, kuten pitää. Vaihteluvälin keskikohta on $12{,}55\,\text{s}$, ja $12{,}55\,\text{s} \pm 0{,}35\,\text{s}$ antaa juuri välin $12{,}2\,\text{s}$–$12{,}9\,\text{s}$, jolle kaikki pisteet osuvat.
 
 ## fy1-3-L1-04

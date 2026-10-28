@@ -65,7 +65,7 @@
       "figure": "fy3-3/extrapolation-points",
       "answer": 47.5,
       "unit": "kPa",
-      "tolerance": 0.05
+      "tolerance": 0.08
     },
     {
       "id": "fy3-3-L2-04",

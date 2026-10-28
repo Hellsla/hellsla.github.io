@@ -1,17 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: d990e0039cdcf7a7
+VERDICT: FAIL
+CONTENT-HASH: a58c8532ef458c62
 
-Round 2: re-check of round-1 Blocking items against the fix diff.
+Delta review over the audit's PASS (d990e0039cdcf7a7): new choice check-c2 (Kelvin temperature, rigid bottle 7 -> 35 °C) from the exit ticket, checks renumbered, exit text "kaksi", lesson-answers.py added.
 
 ## Blocking
-
+- inquiry.json:424 — (A, guardrail "Absolute zero") check-c2's correct-option feedback says "vasta kelvinasteikon nollakohdassa hiukkasten liike loppuu". At absolute zero the particles' energy is at its lowest; their motion does not stop entirely. Fix: "Suhde lasketaan kelvineinä, koska kelvinasteikon nollakohta on absoluuttinen nollapiste, jossa hiukkasten energia on pienimmillään." (the lint's physics_phrases rule should catch this; check why it did not).
 ## Polish
-- content/fi/FY3/fy3-9/lesson.md:124 — the isochoric pressure rise still gets no mechanism in the theory (pred-2's feedback has it: faster particles hit more often and harder); one clause would close the causal chain. The isochoric sentence relies on the condition stated in the sentence before it ("Kun kaasun määrä pysyy samana ja kaasu on harvaa"), which reads correctly.
-
+- none
 ## Checked
-- Round-1 item 1 resolved: the condition "suljettu / kaasun määrä pysyy samana, harva kaasu" is now in the theory (:124), the formula section (:340) and the summary (:480), matching inquiry.json's contribution and prior; the extrapolation is marked "Jatke on mallin ennuste: todellinen kaasu tiivistyy nesteeksi ennen kuin 0 K saavutetaan" — physically right.
-- Round-1 item 2 resolved: check-3's prompt now asks "Mitä muuta koejärjestelyssä on varmistettava?", so the fourth criterion (no leak, fixed amount of gas) asks only what the task asks; the model answer already covers it.
-- The changed lines are grammatical Finnish, carry no numbers, and change no correct option, answer or feedback.
-- The rest of the lesson is unchanged since my full review at bff7149aaf35caf4 (all numbers recomputed then: example 1,036 l, pred-1 200 kPa, pred-2 60,2 ml, ruisku 5430 vs 5040 kPa·ml, siirto 1,07 l, check-2 120 kPa, exit ticket 160 kPa and ×1,1).
-- Simulation, experiments and figures unchanged and consistent with the model.
-- Hash identical at start and end.
+- T2/T1 = 308,15/280,15 = 1,0999 -> "noin 10 %" and "≈ 1,10"; option text 280 K -> 308 K consistent.
+- Distractor "viisinkertaiseksi" (35/7 = 5) wrong, feedback right (Celsius zero not the temperature zero).
+- Distractor "28 %": 28 K / 280,15 K = 0,0999 -> 10 %; feedback right.
+- Distractor "ei muutu": wrong; kinetic explanation (more frequent, harder hits) right.
+- Exactly one correct option; condition (rigid, closed bottle, same volume) stated in the prompt.
+- lesson-answers.py reproduces 1,0999, 9,99 %, 5 and 9,99 %.
+- Removed exit question is the one converted to check-c2; two remain; text "kaksi" matches.

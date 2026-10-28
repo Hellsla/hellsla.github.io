@@ -477,7 +477,7 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "2. Mitä g kertoo",
-      "prompt": "Vapaasti putoavan pallon $(t, v)$-kuvaajan kulmakerroin on $g = 9{,}81\\,\\text{m/s}^2$. Mitä tämä luku kertoo pallon liikkeestä?",
+      "prompt": "Levosta pudotetun, vapaasti putoavan pallon $(t, v)$-kuvaajan kulmakerroin on $g = 9{,}81\\,\\text{m/s}^2$. Mitä tämä luku kertoo pallon liikkeestä?",
       "choices": [
         {
           "text": "Pallon nopeus on koko ajan $9{,}81\\,\\text{m/s}$.",

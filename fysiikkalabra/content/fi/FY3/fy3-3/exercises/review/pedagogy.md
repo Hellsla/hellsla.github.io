@@ -1,12 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: d88a831999bf6f9a
-## Blocking
+VERDICT: FAIL
+CONTENT-HASH: 74b0725cf058af36
 
+Delta review over the audit's PASS (d88a831999bf6f9a): L2-03 replaced by an extrapolation from a point graph (figure fy3-3/extrapolation-points).
+
+## Blocking
+- exercises.json:62-69 / solutions.md (L2-03) — tolerance 0,05 (45,1-49,9 kPa) does not accept every reasonable line, which NOTES §11 requires of a by-eye fit. The last point is at $102{,}5\,\text{kPa}$, not on a grid line (100 is the nearest); a student reading it as 100 and using it with (0; 75) gets $50\,\text{kPa}$ and is marked wrong, and the solution itself accepts 45-50 (50 is outside, 45 is outside by 0,1). The four middle points are off-grid too. Fix: widen to 0,08 (43,7-51,3), or put the last point on a crossing ((100 °C; 100 kPa), answer 50 kPa) and say the range.
 ## Polish
-- exercises.json fy3-3-L2-02, L2-03, L3-01, L3-02 — temperatures are now LaTeX but the pressures in the same sentence stay plain ("90,0 kPa", "123 kPa", "110 kPa", "300 kPa", "150 kPa"); the line shows two number styles. Convert them to `$90{,}0\,\text{kPa}$` etc.
+- Level 2 fits (read, slope, extrapolate); text says 'Oleta lineaarisesti' once, good. Figure at 360 px readable, but only 0 °C and 100 °C labelled on x beyond -100/-50; the faint grid makes 102,5 hard to read.
+- The description lists 82, 89, 96 which no one can read exactly; harmless (only extremes needed) but the points are not exactly collinear (0,28 vs 0,26 kPa/°C), so which pair is used changes the answer by about 2 kPa.
 ## Checked
-- Delta judged in context: the exercise edits are unit-to-LaTeX conversions with correct Finnish case endings (`$20\,{}^\circ\text{C}$:sta … `$45\,{}^\circ\text{C}$:een`); each still has one unambiguous answer.
-- Answers re-derived: 294 K; 77 °C; -196 °C; 25 K; -270 °C; 60 °C; 102 kPa; 87 kPa; 400,15/100,15 = 4,0; 300·308,15/288,15 = 321 kPa; 127 °C; -127 °C; all inside the stated significant figures.
-- Levels 5/4/3 as in the course; none repeats the example (the example extrapolates to zero pressure, L2-03 extrapolates to a given temperature).
-- Solution edits: L1-02 now says "normaalipaineessa"; L2-04 Periaate no longer claims more than the lesson teaches; L3-03 Periaate states the proportionality as the task's premise, limited to dilute gas, then why it needs kelvins. All three read clearly and keep all seven steps.
-- L3-03 premise sentence is part of the task text, so a student can follow the solution without outside knowledge.
+- Figure needed: no values in the text; data (0; 75) ... (100; 102,5) only in figure/description; the old task had the points in the text.
+- $k=27{,}5/100=0{,}275$, $p=75-27{,}5=47{,}5$ kPa verified; solution has Kuvaajan lukeminen and all 7 stages.
+- Not a repeat of check-2 (table, zero-pressure temperature), a different quantity.

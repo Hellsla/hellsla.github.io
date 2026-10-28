@@ -1,9 +1,5 @@
 [
   {
-    "q": "Kappaleen massa on $3{,}0\\,\\text{kg}$. Mitä sen massalle ja painolle tapahtuu, kun se viedään Maasta Kuuhun ($g = 1{,}62\\,\\text{m/s}^2$)?",
-    "a": "Massa pysyy $3{,}0\\,\\text{kg}$:na. Paino pienenee Maan 29 N:sta Kuun 4,9 N:iin, eli noin kuudesosaan, koska Kuun ja kappaleen välinen vuorovaikutus on heikompi kuin Maan ja kappaleen."
-  },
-  {
     "q": "Voimamittarin jousi venyy 3,0 cm, kun siihen vaikuttaa 8,0 N:n voima. Kuinka paljon jousi venyy 20 N:n voimalla?",
     "a": "7,5 cm. Venymä on suoraan verrannollinen voimaan, ja voima on 2,5-kertainen: $2{,}5 \\cdot 3{,}0\\,\\text{cm} = 7{,}5\\,\\text{cm}$."
   }

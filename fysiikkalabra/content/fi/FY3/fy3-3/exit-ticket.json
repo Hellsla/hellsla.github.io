@@ -2,9 +2,5 @@
   {
     "q": "Miksi suljetun astian kaasun paine kasvaa, kun kaasu lämpenee?",
     "a": "Lämpötilan noustessa hiukkasten keskimääräinen liike-energia kasvaa, eli hiukkaset liikkuvat nopeammin. Ne osuvat seinään useammin ja kovempaa, joten paine kasvaa."
-  },
-  {
-    "q": "Mikä on lämpötila $0\\,\\text{K}$ celsiusasteina, ja miksi sitä sanotaan absoluuttiseksi nollapisteeksi?",
-    "a": "$-273{,}15\\,{}^\\circ\\text{C}$ (noin $-273\\,{}^\\circ\\text{C}$). Kylmempää lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
   }
 ]

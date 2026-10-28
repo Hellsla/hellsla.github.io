@@ -468,7 +468,7 @@
         {
           "text": "Paine kasvaa noin $7\\,\\%$, koska kelvinlämpötila kasvaa arvosta $293\\,\\text{K}$ arvoon $313\\,\\text{K}$.",
           "correct": true,
-          "feedback": "Oikein. Tilavuus ja ainemäärä pysyvät samoina, joten $p = nRT/V$ on verrannollinen kelvinlämpötilaan ja $p_2/p_1 = T_2/T_1 = 313{,}15\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 1{,}07$. Lämpötilan on oltava kelvineinä, koska vasta kelvinasteikon nollakohdassa hiukkasten liike loppuu."
+          "feedback": "Oikein. Tilavuus ja ainemäärä pysyvät samoina, joten $p = nRT/V$ on verrannollinen kelvinlämpötilaan ja $p_2/p_1 = T_2/T_1 = 313{,}15\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 1{,}07$. Lämpötilan on oltava kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
         },
         {
           "text": "Paine ei muutu, koska astian tilavuus ja ilman määrä pysyvät samoina.",
@@ -525,7 +525,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

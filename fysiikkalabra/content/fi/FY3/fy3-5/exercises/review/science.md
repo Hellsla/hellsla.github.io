@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a3a64a7608c7dd0a
+CONTENT-HASH: 37e15a3d153f0c4c
 
-Round 2: re-check of round-1 Blocking items against the fix diff.
+Delta review over the audit's PASS (a3a64a7608c7dd0a): L2-01 now reads a varying piston force from figure piston-force (area of a trapezoid).
 
 ## Blocking
-
+- none
 ## Polish
-- solutions.md fy3-5-L2-03 — "800 J = 0,8 kJ … yksi merkitsevä numero" while the answer is 800 J; "0,8 kJ (sadan joulen tarkkuudella)" says the same more cleanly.
-- fy3-5-L1-05 — the escaping air also gains kinetic energy (the jet). This is fine at this level (C), but "kun ilma on pysähtynyt" would make ΔU = Q + W exact.
-
+- solutions.md:59 says −14,5…−15,5 J is accepted, but tolerance 0,03 on −15 accepts −14,55…−15,45 J. Both end points are exact grid crossings, so no reasonable reading falls in the gap. Narrow the stated range, or set tolerance 0.034.
 ## Checked
-- Round-1 B, exercises.json fy3-5-L3-01: the task now says "ja ilmaa voi pitää ideaalikaasuna". This matches the solution's reasoning (constant T and an ideal gas give ΔU = 0, so Q = −W = −18 J) and the wording of L3-03. Resolved.
-- The answer (−18 J), the unit, the tolerance and answers.py are unchanged and still correct. The added clause is grammatical.
-- The diff touches no other exercise. All twelve answers were recomputed in the full review at the previous hash: 570 J, −8,4 kJ, 250 J, −500 J, −70 J, −15 J, 160 kJ, 800 J, 40 s, −18 J, 1,7 m, 310 J.
+- Recomputed: W = (200 N + 400 N)/2 · 0,20 m = 60 J on the air (positive), Q = ΔU − W = 45 − 60 = −15 J; answers.py −15.
+- Sign of work right (the surroundings do work on the gas, W > 0); Q < 0 means heat leaves the air, as the task defines.
+- Figure piston-force: (0; 200 N) and (0,20 m; 400 N) on the 0,05 m × 50 N grid crossings; no area shaded; the description lists the end points only.
+- Wrong methods rejected: F_max·s gives −35, F_min·s gives +5, the wrong sign of W gives +105.

@@ -86,7 +86,7 @@
 **Kaava:** $pV = nRT$, josta $n = \dfrac{pV}{RT}$ ja $n_\text{A} - n_\text{B} = \dfrac{(p_\text{A} - p_\text{B})\,V}{RT}$
 **Muunnokset:** $p_\text{A} - p_\text{B} = (100 - 60)\,\text{kPa} = 40\,\text{kPa} = 40\,000\,\text{Pa}$ ja $V = 2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$. Lämpötila on jo kelvineinä.
 **Sijoitus:** $n_\text{A} - n_\text{B} = \dfrac{40\,000\,\text{Pa} \cdot 0{,}00200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{80\,\text{J}}{3324\,\tfrac{\text{J}}{\text{mol}}} = 0{,}0241\,\text{mol}$
-**Vastaus:** $n_\text{A} - n_\text{B} \approx 0{,}024\,\text{mol}$, kaksi merkitsevää numeroa, koska tilavuus ja paineiden lukemat ovat kuvaajasta kahden numeron tarkkuudella. Erikseen $n_\text{A} \approx 0{,}060\,\text{mol}$ ja $n_\text{B} \approx 0{,}036\,\text{mol}$. Pisteet luetaan ruudukon risteyksistä, joten hyväksytty väli on kapea: $0{,}0233$–$0{,}0247\,	ext{mol}$.
+**Vastaus:** $n_\text{A} - n_\text{B} \approx 0{,}024\,\text{mol}$, kaksi merkitsevää numeroa, koska tilavuus ja paineiden lukemat ovat kuvaajasta kahden numeron tarkkuudella. Erikseen $n_\text{A} \approx 0{,}060\,\text{mol}$ ja $n_\text{B} \approx 0{,}036\,\text{mol}$. Pisteet luetaan ruudukon risteyksistä, joten hyväksytty väli on kapea: $0{,}0233$–$0{,}0247\,\text{mol}$.
 **Järkevyys:** Suoran A kulmakerroin on suurempi, joten kaasua on A:ssa enemmän ja erotus on positiivinen. Paineiden suhde $100 : 60$ on myös ainemäärien suhde: $0{,}060 / 0{,}036 \approx 1{,}7$.
 
 ## fy3-10-L3-01

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b41a8c9ef224a497
+CONTENT-HASH: 0944393120c8dd63
+
+Delta review over the audit's PASS (b41a8c9ef224a497): L1-04 (800 − 320 MW) replaced by a figure task (fy3-15/chain-bars: P0 = 400, P1 = 350, P2 = 150, P3 = 140 MW; largest drop and its heat).
 
 ## Blocking
-
+- none
 ## Polish
-- exercises/exercises.json:6 (L1-01) and solutions.md L1-01 — "turbiini muuttaa veden liike-energiasta": a hydro turbine takes mainly the energy of the water's drop (head), not its flow speed; write "veden mekaanisesta energiasta" (E_p itself is FY4).
-- exercises/exercises.json (L3-02) — "1 GWh = 3,60 · 10¹² J" and "1 kt = 10⁶ kg" are plain text inside a LaTeX-converted task; write them as inline LaTeX like the other values.
-
+- exercises/solutions.md:35 — "Pylväiden päät ovat ruudukon viivoilla": P3 = 140 MW is not on a gridline (grid 50 MW); the screenshot shows it just under 150. The answer does not need it, but write "P0, P1 ja P2 ovat ruudukon viivoilla; P3 on hieman alle 150 MW, noin 140 MW".
 ## Checked
-- All 12 answers recomputed in one script with my own formulas: 90,16 %; 42,0 %; 4,20 kW; 480 MW; 90,0 %; 108,66 MW; 43,08 %; 166,7 t; 7,160 t/s; 205,5 MW (η_kok 67,6 %); 13,64 kt; 87,72 kWh — all match answers.py and exercises.json.
-- L3-03 comparison right: direct electric 263 kWh, oil 111 kWh, heat pump 87,7 kWh; lämpökerroin defined as in the prerequisite chapter (ε = Q_sisälle/E_s), not called an efficiency; resistance heating counted at 100 %.
-- L3-01 end points and interpolation right (40 % and 88 % bounds, 0,17 MW electricity lost per MW heat); the "why not comparable" reasoning follows the lesson (value of electricity vs heat).
-- L3-02: denominator is purchased fuel vs wind; 273 wagons of 50 t check right.
-- L2-04: Q = cmΔT applies (water only warms), mass-flow check 2,70·10⁸ W.
-- Rounding reasons name the limiting data; tolerance 0,02 fits the significant figures.
-- Notation (η₁η₂η₃, P_h, η_kok, P_L = c q_m ΔT) and wording match the lesson brief; guardrail on efficiency ≤ 100 % and CHP respected; scope within FY3.
+- Figure code and screenshot: bars at 400, 350, 150, 140 MW; y ticks every 50 MW, labels every 100.
+- Drops: 50 MW (boiler), 200 MW (steam cycle), 10 MW (generator and transformer); largest P1 − P2 = 200 MW; answers.py = 200.
+- Tolerance 0,02 -> 196–204 MW; rejects P0 − P3 = 260 MW and P0 − P1 = 50 MW.
+- Balance 50 + 200 + 10 = 260 = 400 − 140; steam cycle 150/350 = 0,43, plant 0,35, generator stage 0,93: plausible.
+- Steady operation and energy conservation stated; heat to surroundings = drop in a stage, consistent with the lesson.

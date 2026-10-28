@@ -1,18 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: dabb1dac42fbf787
+VERDICT: FAIL
+CONTENT-HASH: 060da49ab2ef0a3e
+
+Delta review over the audit's PASS (dabb1dac42fbf787): new check-c2 (heat transfer mode, converted from an exit question), titles renumbered, exit ticket cut to two questions.
+
 ## Blocking
+- exit-ticket.json:6-7 — "Miksi ilmakehän hiilidioksidin lisääntyminen nostaa maanpinnan lämpötilaa, vaikka Auringosta tuleva teho ei muutu?" repeats check-3, whose criteria 2-3 are exactly this answer (CO2 absorbs more, less leaves, warms until a new balance). Remove it (exit "yksi nopea kysymys") or replace it with a question no check asks.
 ## Polish
-- inquiry.json pred-1 and pred-2 — Bea is the right speaker in both; vary the right name (e.g. Cem right in pred-2) so students cannot guess by speaker.
-- inquiry.json pred-1 Aino (conduction "peitto") — the table never contradicts her directly, because the model states "maanpinta luovuttaa energiaa vain lämpösäteilynä"; the refutation sits only in her feedback and in `tase` option 4. Add to the `tase` text one sentence that space is vacuum so conduction cannot carry energy out, so the evidence rather than the model assumption rules it out.
-- lesson.md Ydinajatus — "koska niissä energiaa kuljettavat lisäksi ja pääosin vapaat elektronit" is hard to parse; "koska niissä energiaa kuljettavat hiukkasvärähtelyjen lisäksi ja pääosin vapaat elektronit".
-- lesson.md Esimerkki problem line — "120 m²" and "20,0 m²" are plain text while the U-values are LaTeX; write "$120\,\text{m}^2$" and "$20{,}0\,\text{m}^2$" (same in `virhe`, `siirto` and the exit ticket: 1,5 m², 4,0 m², 50 m²).
-- inquiry.json check-1 repeats the hook's clear-night/cloudy-night scenario almost word for word; fine as a transfer, but a different case (e.g. frost on a clear spring night, or a lake that stays warmer under cloud) would test transfer.
+- check-c2 has three options, the others at least four; the correct option is longest. A fourth distractor (heat "rises" so it cannot reach the face / the air carries it) would be a real misconception.
+- exit-ticket.json:2 — the U-value calculation is a standard L1 exercise; acceptable.
 ## Checked
-- Opening question (why +15 °C) is answered in Kasvihuoneilmiö and by the tase table; hook does not disclose.
-- Slot goals met (heat transfer modes, U-value, energy balance, greenhouse effect, climate change); no extra content.
-- Investigation by tables with commit-first numeric (tase-ennusta, 150 W/m²) then interpret items; fits a topic with no sim; model values labelled "esimerkkiarvoja".
-- Numbers checked: 150, 3,0 K, 140, 0,461 kWh, example 1454 W and 34,9 kWh, virhe 45 W, distractors 0,749 and 460,8.
-- Each choice item has exactly one correct option; feedback repairs the misconception.
-- Example has seven stages, symbolic first; ΔT in K vs °C explained.
-- Finnish reads well; case endings (+15 °C:een, −18 °C:n) fine.
-- Figures judged from alt texts only (no captures in packet); `scene` sits after Tiivistelmä in the source, presumably the learn-box picture placed by the template.
+- check-c2 tests the three transfer modes in a real case (radiation through air), a key concept that check-1 (greenhouse effect) does not; not a calculation.
+- Distractors (conduction through air, convection) are real misconceptions; feedback gives an observable repair (air insulates; shielding stops the warmth at once); no option points at another.
+- Exit question on the three modes was removed because the check now asks it: right.
+- LaTeX/Finnish fine; renumbering and "kaksi" consistent.

@@ -23,7 +23,7 @@
       "figure": "fy1-3/pendulum-dots",
       "answer": 0.35,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.15
     },
     {
       "id": "fy1-3-L1-04",

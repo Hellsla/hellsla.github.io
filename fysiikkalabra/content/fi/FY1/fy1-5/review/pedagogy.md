@@ -1,19 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 54faa4daccae4100
+VERDICT: FAIL
+CONTENT-HASH: 05078343c9b2846f
+
+Delta review over the audit's PASS (54faa4daccae4100): check-c2 (horizontal line in an (t, s) graph) added; exit ticket not shortened, only LaTeX.
 
 ## Blocking
-(none)
-
+- exit-ticket.json: three questions remain and all repeat a check. Q3 (miksi Voyager 2:n arvo on mallin arvo eikä mittaus) is the same question as tarkistus-3 (explain); Q1 (s0+vt, onko paikka suoraan verrannollinen) repeats tarkistus-1 (suoran ei-origon kautta, paikka vs matka verrannollinen); Q2 (nopeus ja alkupaikka suorasta) repeats tarkistus-2 (alkupaikka suorasta). NOTES §11: an exit question that only repeats a check is removed. Remove Q3 and Q1 (or replace them with a question no check asks, e.g. a uniform-motion numeric from the speed in a different unit), and set the exit stage text to the new count.
 ## Polish
-- lesson.md:131 (Yksiköt) and inquiry.json siirto — the km/h → m/s substitution is now correct and taught once with a worked chain (72 km/h = 72·1000 m : 3600 s). The reverse direction appears unexplained in the siirto solution Järkevyys ("6 m/s on noin 22 km/h"). Add "koska 1 m/s on 3600 m tunnissa eli 3,6 km/h" or drop the km/h figure.
-- lesson.md Esimerkki, Yksikkömuunnokset — "jakamalla luvulla 149 597 870,7 km/AU" is a factor step; by substitution: "1 km = 1/149 597 870,7 AU". Works as is for a 17-year-old; consider the substitution wording for consistency.
-- inquiry.json ennuste-2 prompt gives the 2,0 s value (10 m) before asking for 4,0 s; fine as a scaffold, but the "20 m" lure is then very tempting. Keep.
-
+- check-c2 has three options only; a fourth, e.g. 'paikka kasvaa tasaisesti', would add a real misconception (line direction vs speed).
+- Option 3 feedback of c2 ('suoruus ei yksin kerro') is good.
 ## Checked
-- Round-2 blocker fixed: no "3,6", "jaa 3,6:lla" or `(21,6 : 3,6)` left in lesson.md, inquiry.json, exit ticket; hints, mistake feedback (1092 m = 120 + 21,6·45) and solution all use 1 km = 1000 m, 1 h = 3600 s. 21,6·1000 : 3600 = 6,0 m/s, answer 390 m.
-- Teacher's notation: products with \cdot, ":" for quotients in text and checks, no ×; display fractions only in formulas and the substitution chain.
-- Learning path: retrieval of slope, two predictions (shape; doubling time with s0 ≠ 0) before the experiments, which can refute them; the Voyager hook is answered by the example and the reflect item.
-- Slot goals (linear model, direct proportionality, s = vt) covered, nothing from FY2/FY4; workload one lesson, retrieval/reflect/explain optional.
-- Worked example: seven stages, one step each, AU/vrk conversion shown, reasonableness check against JPL.
-- Figures (motion strip, (t,s) graph): LaTeX labels checked in the source only; no captures were available in this packet, so legibility on a phone is taken from the passing layout checks.
-- Finnish: case endings after number+unit correct; glossary terms (matka, paikka, nopeus) used consistently.
+- check-c2 tests a concept the other checks do not: a horizontal line in an (t, s) graph is rest, slope is velocity (not a calculation).
+- Distractors: 4 m/s (reads the s value as speed, confuses (t, s) and (t, v)), moves uniformly because straight; feedback repairs both, none points at another.
+- Titles renumbered 1-4; LaTeX in prompts and feedback; stage text still says 'kolme' consistently with three exit questions.

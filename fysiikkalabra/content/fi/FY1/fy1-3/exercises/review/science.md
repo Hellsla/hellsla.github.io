@@ -1,19 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: f6ea8ce2311e052c
+VERDICT: FAIL
+CONTENT-HASH: 674ef574eb28d802
+
+Delta review over the audit's PASS (f6ea8ce2311e052c): L1-03 now reads five pendulum times off fy1-3/pendulum-dots; LaTeX in L1-02, L2-03, L2-04, L3-03.
 
 ## Blocking
-
+- exercises.json:24–26 with solutions.md:29 — (B, assessment) L1-03, now rewritten: the range 12,9 s − 12,2 s = 0,7 s has one significant figure (NOTES §2, difference of readings), and this chapter reports an uncertainty to one figure; the solution itself says the reported estimate is 0,4 s, but tolerance 0,02 (0,343…0,357) rejects 0,4. Fix: accept both, e.g. answer 0,35 with tolerance 0,15 (0,30…0,40), and change "kaksi merkitsevää numeroa; jakaja 2 on tarkka" to say 0,35 is the exact half and 0,4 its one-figure rounding, both accepted.
 ## Polish
-- solutions.md L1-02 Vastaus — the task asks for the sign, so give $+0{,}3\,\text{cm}$ (the Sijoitus line already does). The closing guess "todennäköisesti systemaattinen" rests on one reading; "voi olla systemaattinen" is safer.
-- exercises.json L1-03 — a student who applies the lesson's rounding enters $0{,}4\,\text{s}$, which is 14 % off with tolerance 0.02. The answer is not wrong, but a tolerance of 0.15 would accept both.
-- solutions.md L3-02 — the chain ends at "$= 2{,}0\,\mu\text{m}$" while Vastaus gives "$2\,\mu\text{m}$". L3-01 says "lähes kokonaan" where two thirds of the delay cancels.
-
+(none)
 ## Checked
-- Round 2: re-check of round-1 Blocking items against the fix diff. (Round 3 follow-up: the leftover Δx notation.)
-- L1-02 now writes mittausvirhe as $x - x_\text{oikea}$ in Kysytty, Kaava and Sijoitus, with no Δx. This matches the lesson. Δx is left only for uncertainties (L1-05, L3-02), and $\Delta x_\text{sys}$ (L3-03) keeps the lesson's own subscripted notation. The answer +0,3 cm, the unit and the tolerance are unchanged, and the solution still has its seven parts.
-- From the round-1 full review, unchanged:
-  - one script recomputed all 12 answers (0,51 s; +0,3 cm; 0,35 s; 47,5 g; 0,5 mm; 4,83 %; 10,67 mm; 12,4 cm; 10; −0,06 s; 2,0 µm; 0,26 cm), and all match answers.py;
-  - the rounded answers stay inside the tolerances;
-  - the guardrail terms are kept apart, and the scale-reading wording is the agreed one;
-  - the physics of the zero-point error, tape wear, start/stop delays and stacking is right.
-- Hash identical at start and end.
+- Figure (shot and code): axis 12,0–13,0 s, gridlines and ticks every 0,1 s, numbers every 0,2 s; dots on 12,2, 12,4, 12,6, 12,7, 12,9 s, no stacking (distinct 0,1 s bins); description matches.
+- Kuvaajan lukeminen is right (12,9 one gridline right of 12,8); (12,9 − 12,2)/2 = 0,35 s; answers.py 0,35; midpoint 12,55 ± 0,35 covers all dots.
+- LaTeX conversions: 20,3 − 20,0 = 0,3 cm; L2-03 mean (12,4 + 12,5 + 12,3)/3 = 12,4 cm; L2-04 0,2/0,02 = 10; L3-03 mean 8,26 − 8,00 = 0,26 cm. Values unchanged.

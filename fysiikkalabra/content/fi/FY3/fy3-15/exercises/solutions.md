@@ -32,7 +32,7 @@
 **Annettu:** kuvan pylväistä luettuna $P_0 = 400\,\text{MW}$, $P_1 = 350\,\text{MW}$, $P_2 = 150\,\text{MW}$ ja $P_3 = 140\,\text{MW}$
 **Kysytty:** vaihe, jossa teho pienenee eniten, ja siinä ympäristöön lämpönä siirtyvä teho
 **Periaate:** Voimalaitos toimii tasaisesti ja energia säilyy, joten kun teho pienenee vaiheessa, ero siirtyy lämpönä ympäristöön. Vaiheessa ulos tuleva teho on pienempi kuin sisään tuleva, ja ero on siinä syntyvä hukkalämpö.
-**Kuvaajan lukeminen:** Pylväiden päät ovat ruudukon viivoilla, ja ne kertovat tehot $400$, $350$, $150$ ja $140\,\text{MW}$. Tehon pieneneminen vaiheittain on $P_0 - P_1 = 50\,\text{MW}$ kattilassa, $P_1 - P_2 = 200\,\text{MW}$ höyrykierrossa ja $P_2 - P_3 = 10\,\text{MW}$ generaattorissa ja muuntajassa. Suurin pudotus on pylväiden $P_1$ ja $P_2$ välissä eli höyrykierrossa.
+**Kuvaajan lukeminen:** Pylväiden $P_0$, $P_1$ ja $P_2$ päät ovat ruudukon viivoilla, ja ne kertovat tehot $400$, $350$ ja $150\,\text{MW}$. Sähköteho $P_3$ on vähän viivan $150\,\text{MW}$ alapuolella, noin $140\,\text{MW}$; sitä ei tarvita vastaukseen. Tehon pieneneminen vaiheittain on $P_0 - P_1 = 50\,\text{MW}$ kattilassa, $P_1 - P_2 = 200\,\text{MW}$ höyrykierrossa ja $P_2 - P_3 = 10\,\text{MW}$ generaattorissa ja muuntajassa. Suurin pudotus on pylväiden $P_1$ ja $P_2$ välissä eli höyrykierrossa.
 **Kaava:** $P_\text{h} = P_\text{sisään} - P_\text{ulos}$, tässä $P_\text{h} = P_1 - P_2$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat megawatteina.
 **Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4c5aa43d224fa957
+CONTENT-HASH: 5d476fe889e2eff9
+
+Delta review over the audit's PASS (4c5aa43d224fa957): new check-c2 (fitting a line through scattered points), titles renumbered, one exit question removed, plain numbers with units turned into LaTeX.
+
 ## Blocking
+- none
 ## Polish
-- inquiry.json kertaus title "Kertaa edelliseltä tunnilta", its feedback ("Tänään tutkitaan"), ennuste-1 feedbacks ("Edellisellä tunnilla", "edellisen tunnin tulokseen") — the prerequisite is the chapter *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*, not the preceding lesson. Use "Kertaa aiemmalta tunnilta" and "luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*" (as fy3-12 does).
-- inquiry.json prior item 2 and kertaus feedback — chapter name lacks the italics the house form needs: "(luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)".
-- inquiry.json `suora` solution "Vastaus" — "lopuksi vähennys $20{,}0 - 296$ antaa tuloksen kokonaisina asteina" refers to a subtraction that is not in this solution (it computes $-p_0/k = -275{,}8$); replace with "tulos $-275{,}8\,{}^\circ\text{C}$ pyöristetään kolmeen numeroon, $-276\,{}^\circ\text{C}$".
-- Investigation uses simulated data (honestly labelled), so the slot's "kokeellisesti" is met on paper only; if the teacher has a gas thermometer, a line in the lesson suggesting a real run would make the lesson an experiment.
-- lesson.md Kaava — five formulas with two different meanings of $p_0$/$p_1$ in a row; a one-line pointer "tässä $p_0$ on paine lämpötilassa $0\,{}^\circ\text{C}$" before the last formula would help a first-time reader.
+- check-c2 restates the Tutki-stage choice "Pisteet eivät osu täsmälleen samalle suoralle. Mikä on paras perustelu …" (its correct option almost word for word). It works as retrieval, but a different angle (what the spread of points tells about the uncertainty of the zero point) would test more.
+- the correct option stands first and is the one with "epävarmuusjanojen"; the order of the options in check-c2 should vary.
 ## Checked
-- Round 2: re-check of round-1 Blocking items against the fix diff (none were open); fy3-13 inquiry.json: the pointe feedback on the mutka option now says 'satunnaisia mittausvirheitä, jotka mahtuvat mittausepävarmuuden rajoihin' (consistent with the guardrail; the option stays wrong, one correct option unchanged). No new wording problems.
-- Opening question (how to find the lowest temperature from ordinary-range data) is answered by suora, epavarmuus and the Esimerkki; the slot's three goals (straighten data, extrapolate, estimate uncertainty) are all practised.
-- Predictions precede the evidence; ennuste-2 (tens of degrees) is genuinely refutable by the epavarmuus table; each wrong option has repairing feedback.
-- Recomputed: both bounding lines touch exactly the stated uncertainty bars (10 and 85 °C; 25 and 100 °C), θ0 −276,0, −258,7, −294,8, Δ 18,08; suora −276, siirto −277, tarkistus-2 −283, distractors −296/−307/−298, exit ticket 0,36.
-- `aariviiva` feedback matches the figure description (s2 misses 10, 70, 85, 100 °C); one correct option per choice.
-- Example has seven stages; the 0 °C reading is flagged as extrapolation.
-- Uncertainty wording follows the guardrail (not an absolute bound); ± results consistent in lesson, conclusion, checks and exit ticket.
-- Figures judged from alt texts and source; no captures were provided.
+- check-c2 tests a key concept of the chapter (a fitted line vs connecting the dots, outlier rejection), not a calculation, and tarkistus-1 asks what ± means instead.
+- Distractors are real student ideas (zigzag line, "measurement failed", delete outliers until the line fits); each feedback repairs and none points at another option.
+- Removed exit question ("miksi suora ei kulje kaikkien pisteiden kautta") is now the check: right. Remaining exit questions (slope, −270 ± 12 vs −273,15) are not repeats.
+- LaTeX conversions ($20\,\text{kPa}$, $108{,}6\,\text{kPa}$, $18\,\text{kPa}$ …) correct; Finnish clear; "kaksi" matches.
