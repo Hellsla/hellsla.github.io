@@ -325,7 +325,16 @@ def experiment_html(a, md, lid):
     nm = lambda k: esc(names.get(k, k))
     tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
-    fmt = lambda k, v: f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(units[k])}" if units.get(k) else "") + "</span>"   # name, value and unit on one line
+    words = a.get("values", {})   # {param: {value: words}}: a select's option named in words, not by its index
+    def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
+        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        u = units.get(k, "")
+        if isinstance(v, (int, float)) and re.fullmatch(r"[A-Za-z/%]*", u):
+            num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
+            if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000
+            unit = ("\\," + ("\\%" if u == "%" else "\\text{" + u + "}")) if u else ""
+            return f'<span class="nobr">{tn(k)} = ${esc(num)}{unit}$</span>'
+        return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(tn(k) for k in a["locked"]) or T("inquiry.nothing_locked")
     cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
