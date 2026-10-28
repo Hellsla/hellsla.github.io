@@ -67,7 +67,7 @@
               "points": 1
             },
             {
-              "text": "Explains that the decimals on the screen come from calculation and do not tell the precision of the measurement.",
+              "text": "Explains that the decimals on the screen come from calculation and do not show the precision of the measurement.",
               "tag": "concept",
               "points": 1
             },
@@ -115,13 +115,13 @@
       "title": "A race between two balls",
       "source": "example",
       "source_note": "The lab report and the measurements were made up as an example.",
-      "text": "A group investigated whether the mass of a ball affects how long the ball takes to roll down a ramp. Here is the group's lab report.\n\n> **Research question.** Do heavy balls roll faster?\n>\n> **Hypothesis.** A heavy ball is faster, because gravity pulls it more.\n>\n> **Equipment.** A ramp $1.2\\,\\text{m}$ long, a pile of books, a steel ball ($110\\,\\text{g}$), a solid plastic ball of the same size ($16\\,\\text{g}$) and a phone stopwatch app that shows thousandths of a second.\n>\n> **Method.** We raised the upper end of the ramp on a pile of books. We released the steel ball from the upper end of the ramp, and Eetu started the timing when the ball set off. The plastic ball hardly started to move, so we gave it a small push from roughly the same spot. In between, one book was taken from the pile, because it was needed in another lesson. The timing was stopped when the ball hit the wall at the end of the ramp.\n>\n> **Results.** Steel ball $2.437\\,\\text{s}$, plastic ball $2.109\\,\\text{s}$.\n>\n> **Conclusion.** The plastic ball was $0.328\\,\\text{s}$ faster, so the hypothesis is wrong: a light ball rolls faster. Light objects always move faster than heavy ones.\n\nAfter the teacher's feedback, the group corrected their method and measured again:\n\n| Measurement | steel ball $t\\ (\\text{s})$ | plastic ball $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2.31$ | $2.40$ |\n| $2$ | $2.45$ | $2.33$ |\n| $3$ | $2.38$ | $2.47$ |\n| $4$ | $2.29$ | $2.36$ |\n| $5$ | $2.42$ | $2.44$ |",
+      "text": "A group investigated whether the mass of a ball affects how long the ball takes to roll down a ramp. Here is the group's lab report.\n\n> **Research question.** Do heavy balls roll faster?\n>\n> **Hypothesis.** A heavy ball is faster, because gravity pulls on it more.\n>\n> **Equipment.** A ramp $1.2\\,\\text{m}$ long, a pile of books, a steel ball ($110\\,\\text{g}$), a solid plastic ball of the same size ($16\\,\\text{g}$) and a phone stopwatch app that shows thousandths of a second.\n>\n> **Method.** We raised the upper end of the ramp on a pile of books. We released the steel ball from the upper end of the ramp, and Eetu started the timing when the ball set off. The plastic ball hardly started to move, so we gave it a small push from roughly the same spot. In between, one book was taken from the pile, because it was needed in another lesson. The timing was stopped when the ball hit the wall at the end of the ramp.\n>\n> **Results.** Steel ball $2.437\\,\\text{s}$, plastic ball $2.109\\,\\text{s}$.\n>\n> **Conclusion.** The plastic ball was $0.328\\,\\text{s}$ faster, so the hypothesis is wrong: a light ball rolls faster. Light objects always move faster than heavy ones.\n\nAfter the teacher's feedback, the group corrected their method and measured again:\n\n| Measurement | steel ball $t\\ (\\text{s})$ | plastic ball $t\\ (\\text{s})$ |\n|---|---|---|\n| $1$ | $2.31$ | $2.40$ |\n| $2$ | $2.45$ | $2.33$ |\n| $3$ | $2.38$ | $2.47$ |\n| $4$ | $2.29$ | $2.36$ |\n| $5$ | $2.42$ | $2.44$ |",
       "parts": [
         {
           "id": "a",
           "kind": "word",
           "points": 8,
-          "text": "Find four significant weaknesses in the first lab report. For each one, tell why it weakens the investigation and how it is fixed.",
+          "text": "Find four significant weaknesses in the first lab report. For each one, explain why it weakens the investigation and how to fix it.",
           "criteria": [
             {
               "text": "The first weakness is named, and it is justified why it weakens the investigation.",
@@ -231,7 +231,7 @@
       "id": "fy1-s3",
       "kind": "own",
       "title": "Assess your own investigation report",
-      "text": "In the chapter *Your own experimental investigation: planning, carrying out and reporting* you planned and carried out your own experiment and wrote a report about it. Take out your report and assess it with the criteria below. The criteria also tell what belongs in a good investigation report, so you can use them already while writing your report.",
+      "text": "In the chapter *Your own experimental investigation: planning, carrying out and reporting* you planned and carried out your own experiment and wrote a report about it. Take out your report and assess it with the criteria below. The criteria also show what belongs in a good investigation report, so you can already use them while writing your report.",
       "parts": [
         {
           "id": "a",
@@ -275,7 +275,7 @@
             {
               "key": "error_sources",
               "points": 2,
-              "detail": "The report also tells how the experiment could be improved."
+              "detail": "The report also explains how the experiment could be improved."
             }
           ]
         }
