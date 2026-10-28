@@ -1,21 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 15412e00f1e4b741
+VERDICT: FAIL
+CONTENT-HASH: f8483829c7f45bab
 
 ## Blocking
+- assets/sims/fy2/fy2-8/sim.js:18 (with inquiry.json:112, :151, :140) — the 420 ppm level gives today's observed, still-rising temperature (+15 °C, from AR6's 1,1 °C for 2011–2020) as its "settled" value `Teq`. After about 20 s the readout says "asettunut", and koe-1 records it in the column "asettunut T". The 560 ppm level uses an equilibrium value (ECS 3 °C). So the sim mixes a transient value with an equilibrium one, and it tells the student that warming at today's concentration is finished. That contradicts the lag the sim exists to show. With the lesson's own ECS, 420 ppm settles at 14 + 3 · log₂(420 : 280) ≈ +15,8 → about **+16 °C**. Fix: set the 420 level's T to +16 (source: AR6 ECS 3 °C), keep "nykyisin noin +15 °C" as today's measured value in `model` and in the koe-1 feedback, and say that at today's concentration the temperature is still rising towards about +16 °C. Alternatively, label the 420 value "nykyinen (ei vielä asettunut)" and stop calling it settled.
+- content/fi/FY2/fy2-8/inquiry.json:127, :140 (and :134) — the experiment's labels are not LaTeX (teacher's standing rule). `names.co2` shows on the page literally as "CO_2-pitoisuus" (shot exp-koe-1-390-1), and the measure label "asettunut T (°C)" has a plain T and °C. The table also lists the "0" level as "CO₂-pitoisuus 0 ppm → −18 °C", but that level also removes all water vapour and methane. The row therefore claims that CO₂ alone accounts for the whole 33 K. Fix: `names.co2` "$\text{CO}_2$-pitoisuus"; measure label "asettunut $T$ ($^\circ\text{C}$)" or whatever form the page renders; give `values.co2` entries for "0" ("ei kasvihuonekaasuja, ei vesihöyryä"), "280" and "560".
 
 ## Polish
-- inquiry.json:384, 392 (ennuste-2 feedbacks) — "kivihiilen energia tulee lähes kokonaan hiilen palamisesta" overstates: in bituminous coal hydrogen gives roughly a fifth of the heating value (carbon ~75–80 %). — Say "suurimmaksi osaksi hiilen palamisesta"; the comparison with methane (much more hydrogen) still holds.
-- lesson.md:181–189, inquiry.json:405 (aineisto table) — the table values (820, 490, …, 41–48, 11–12) are plain text; write them as $820$, $41\text{–}48$ for consistency with the LaTeX rule.
-- lesson.md:179 — "$1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$" skips the joules; "$= 3\,600\,000\,\text{J} = 3{,}6\,\text{MJ}$" shows the step.
+- inquiry.json:140 — the measured key `Teq` is the level's constant, so a student can record a row before the thermometer has moved. Consider recording `T` with "Kirjaa mittaus" after the reading says "asettunut", or say in the intro to wait for it.
+- lesson.md Ydinajatus — "kasvihuonekaasuja on hyvin vähän" (ennuste-1 feedback) cites only CO₂'s 0,42 ‰. Water vapour, the main absorber, is about 0,4 % on average. That is still small, so this is not wrong.
+- packet vs disk: the packet's sim.js shows literal Finnish strings where the file on disk uses `__()` (same hash). Check review_packet.py's rendering.
 
 ## Checked
-- Recomputed in one script with my own formulas: all 21 lesson-answers.py values and every lesson/inquiry/exit-ticket number (example 2 352 000 g = 2,352 t → 2,4 t, check 2,5 t, wind 57,6 → 58 kg, 490 : 12 ≈ 41; aineisto 820 kg, mistake 820 000; virhe 43 200 g ≈ 43 kg vs the student's 300; siirto 4,9·10¹⁰ g = 49 000 t, mistakes 0,049 t and 4,9·10¹⁰; wind 1200 t; tarkistus-2 7,2 l → 230,4 MJ → 15,9 kg → 16 kg, mistakes 13,2 kg and 15 900 g, check 14,7 kg and 2,2 kg/l; ticket 120 g, ≈ 70; 33 K; 420 ppm = 0,42 ‰). All match; rounded student answers stay inside 2 % tolerance.
-- Round-3 blocker fixed: no student-visible number left outside LaTeX (only years, list numbers and titles remain).
-- Round-3 polish taken: "ei tuota radioaktiivista jätettä eikä käytä polttoainetta" in the perustele model.
-- Data and sources right: IPCC AR5 WG III Annex III medians (coal 820, gas CC 490, dedicated biomass 230, PV rooftop 41 / utility 48, hydro 24, nuclear 12, wind onshore 11 / offshore 12); IPCC default petrol ≈ 69 g/MJ, ≈ 32 MJ/l realistic; NOAA 2023 ≈ 420 ppm vs 280 ppm; −18 → +15 °C.
-- m = e · E correct, units and meaning stated; inside FY2 central contents; no radiative-balance model, FY3 named by chapter only.
-- Worked example: seven stages, symbolic first, conversions shown, 2 s.f. justified, reasonableness check real.
-- Emissions chart to scale (0,440 px per g/kWh, all bars within 0,5 px; solar bar at the range midpoint); greenhouse figure marked not to scale, arrows physically right (solar through, IR absorbed, re-emitted down and to space).
-- Every correct option and feedback's physics checked: kertaus, both predictions, alkuperä, muut perusteet, virhe (kWh²/g unit argument), kuljetus (400 : 50 = 8), tarkistus-1, model answers of perustele and tarkistus-3.
-- Biomass treatment correct: biogenic combustion CO₂ counted zero in AR5's 230, its decades-long re-uptake lag stated.
-- Invented situations marked as examples; division written with a colon.
+- Every lesson, inquiry and exit-ticket number recomputed in one script; all match lesson-answers.py (2,352 t → 2,4 t; 57,6 kg; 820 kg; 43,2 kg; 49 000 t; 0,049 t; 1200 t; 15,9 kg → 16 kg; 13,2 kg; 68 and 41 ratios).
+- IPCC AR5 WG3 Annex III medians (820/490/230/41–48/24/12/11–12) and their rooftop/utility and onshore/offshore assignment are correct; the 69 g/MJ gasoline factor and 32 MJ/l are sound.
+- m = e · E: units, conditions and scope are right. The lesson has no radiative balance and defers it to FY3.
+- Sim physics: sunlight passes at every level; IR rate ∝ (T/255 K)⁴; absorbed share 0 / 0,80 / 0,84 / 0,88, exaggerated as stated; re-emission up or down at random; nothing in the sim creates energy.
+- Time constant 3 s gives a half-life of 2,08 s, which matches "puolittuu noin kahdessa sekunnissa"; speed changes only the pace.
+- −18 °C → +15 °C (33 K), 280 → 420 ppm (< 0,5 ‰) and pre-industrial +14 °C are consistent.
+- Every correct option and every feedback in the predictions, koe-1, aineisto, alkuperä, muut perusteet, virhe (kWh²/g), kuljetus (8×) and tarkistus 1–3 is physically right.
+- Figures: the greenhouse diagram is qualitative and labelled not to scale; the bar chart is to scale (361 px : 820 ≈ 0,44 px per g/kWh for every bar).
+- Worked example and numeric solutions: all seven steps present, symbolic before numbers, and the rounding is justified.

@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 65d19b8aad653586
+CONTENT-HASH: 1cd4b5de867dc84f
 
 ## Blocking
 
 ## Polish
-- lesson.md:179–180 (Kilowattitunti) — the hand split puts both rows' `&` at the left edge, so the second `=` sits under "1 kWh" and not under the first `=`. CLAUDE.md "Readability" also says never to split a chain by hand for the layout. The maths is correct. — Either align on the `=` (`1\,\text{kWh} &= 1000\,\text{W}\cdot 3600\,\text{s}\\ &= 3\,600\,000\,\text{J}`) or go back to one inline chain and let mathlayout wrap it.
-- inquiry.json (tarkistus-2 mistake 0.8 and solution Järkevyys) — $90\,\text{min} = 1{,}5\,\text{h}$ is still written without a substitution step. — Write $90 \cdot (1\,\text{h} : 60) = 1{,}5\,\text{h}$ once.
-- inquiry.json (siirto mistake 21900) — "tulos 21 900" is a bare number. — Write $21\,900\,\text{Wh}$.
-- inquiry.json (siirto solution Järkevyys) — $60\,\text{Wh} = 0{,}06\,\text{kWh}$ has no substitution step. — Write $60 \cdot 10^{-3}\,\text{kWh}$.
-- lesson.md (Esimerkki, Tulos) — the two significant figures are said to come from "teho ja päivittäinen käyttöaika", but $80\,\text{W}$ is ambiguous. — Base the count on $4{,}0\,\text{h}$ and $20\,\text{snt/kWh}$.
+- inquiry.json:117,121,223 — measure labels `E_A (kJ)` etc. show the unit as plain text in the experiment table header (koe shots part 2), against the all-LaTeX label rule — make the header LaTeX (`$E_\text{A}\ (\text{kJ})$`) or fix the shared table renderer.
+- sim.js:133 — `fP` drops trailing zeros: canvas $P_\text{A} = 2\,\text{kW}$ beside readout $2000\,\text{W}$ — show W on the canvas or keep $2{,}0\,\text{kW}$.
+- inquiry.json:81 `model`, sim.js:53 — "sama määrä kierroksia kilowattituntia kohti": disc speed ∝ P in real time, but its turns do not count the model's E and it spins regardless of the slider — say only that its speed shows the power.
+- lesson.md:35,126,140 and inquiry.json — symbol products as $P\,t$ while the example uses $E \cdot \text{yksikköhinta}$ — use `\cdot` throughout if the teacher's rule covers symbol products.
+- inquiry.json tarkistus-2 mistake 0.8 — "kerro 1000:lla" is not a substitution — write $0{,}8\,\text{kW} = 0{,}8 \cdot 1000\,\text{W}$.
 
 ## Checked
-- The hash was `65d19b8aad653586` at the start and at the end.
-- The new two-row display is correct: 1 kWh = 1000 W · 3600 s = 3 600 000 J, which agrees with the glossary, the summary (3,6 MJ) and exit ticket 2.
-- I recomputed all 21 lesson-answers.py values with my own formulas in one script, and every one matches: 0,54 MJ, 0,864 MJ, 15 h, 120/60/4,8 kJ, 1000 W, 9,6 kWh → 1,92 €, 21,9 kWh (mistakes 21 900 and 0,9125), 4,38 €, 800 W (mistake 13,3), 0,24 and 0,15 kWh, and 800 000 kettles.
-- Exit ticket: 2000 W; 43,8 kWh against 36,5 kWh.
-- Every correct option and every distractor's feedback is right: 1 h is under 1/10, 150 h gives 5,4 MJ, 5 h gives 0,18 MJ, and dividing by three still gives 300 €.
-- Graph figure: ticks at x = 212,7 and y = 216,7; the line ends at 60 s are 120, 60 and 4,8 kJ, so the slopes are 2000, 1000 and 80 W; ΔE = 40 kJ over Δt = 20 s. The bar figure is 400 : 200 : 16 px, which is to scale.
-- The worked example has seven stages, is solved symbolically first, converts by substitution, and its check is real (1 kWh runs the television 12,5 h).
-- Magnitudes are realistic: appliance powers, standby power, Olkiluoto 3 at about 1600 MW, and 20 snt/kWh labelled as an example price against Tilastokeskus 2025 at about 18 snt/kWh.
-- Scope is FY2: P = ΔE/Δt, E = Pt, kWh and price, with no work or force. The data are labelled as model values.
+- All numbers of lesson.md, inquiry.json, exit ticket and lesson-answers.py recomputed in one script: all match.
+- Every correct option and every feedback/mistake number (ennuste-1 incl. 150 h → 5,4 MJ, mittari, virhe, tarkistukset, koe mistakes, siirto).
+- koe-1: A, tA, B locked, tB varied; at tB = 900 min EB_kJ = EA_kJ = 540 exactly; measured keys in simState; reveal after 3 rows.
+- koe-2: A, B, tB locked, tA varied; tA = 30 min gives EA_kWh = 1 exactly.
+- sim.js: E = P t (t in s); graph slope P·3600/f consistent with the plotted point, one scale for both, dashed extension clipped, 1–2–5 axes; canvas and readouts LaTeX (shots 1280/390); speed affects only the disc.
+- Model box states the constant-power assumption, typical rounded ratings, fridge/thermostat caveat, model values not measurements.
+- Figures 1 and 2 to scale (bars 400/200/16 px; lines and ΔE/Δt = 40 kJ : 20 s = 2000 W).
+- P = ΔE/Δt, E = P t, t = E : P, 1 kWh = 3,6 MJ with conditions; inside FY2 scope, no work or force.
+- Worked example: seven stages, conversions by substitution, 2-figure rounding justified, real reasonableness check.
+- OL3 ~1600 MW (TVO) and price ~18 snt/kWh (Tilastokeskus 2025) sourced and realistic.

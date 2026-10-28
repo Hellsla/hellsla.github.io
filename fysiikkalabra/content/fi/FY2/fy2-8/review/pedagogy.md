@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 15412e00f1e4b741
+CONTENT-HASH: f8483829c7f45bab
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json `kertaus`, `ennuste-2`, `tarkistus-1`, `virhe` — the correct option is still the longest in each (carried from earlier rounds). Shorten it or lengthen the distractors.
-- inquiry.json `alkupera` — the "mittausvirhe" distractor is a strawman (unchanged).
-- Figure `greenhouse` — the sunlight arrow could carry a short "läpäisee" label (taste).
-- Workload — the core path is about an hour; keep the pair exchange in `perustele` optional.
+- inquiry.json koe-1 `names`/`measure` — the experiment panel and table show the raw text "CO_2-pitoisuus" (underscore visible in fy2-8-exp-koe-1-390-1.png), against the LaTeX-labels rule — write it as `$\text{CO}_2$-pitoisuus` (or "Hiilidioksidipitoisuus") and "asettunut T" likewise.
+- inquiry.json koe-1 — the table gives only "asettunut T", a looked-up source value, so the student records rather than discovers it. The 390 px captures show the tolerable result: the prediction can be refuted (-18 °C refutes "nousisi" and "pysyisi ennallaan"). Optionally add a second measured column (share of thermal radiation escaping) so the experiment shows the mechanism, not only the temperature.
+- inquiry.json "kuljetus" title "Mistä hake kannattaa hakea?" — awkward; use "Mistä haketta kannattaa ostaa?".
+- inquiry.json workload — about 16 activities (two predictions, three interpret items, example, error item, transfer, explain, three checks, exit ticket, exercises) is more than an hour for the core path; the optional flags help, so consider marking "alkupera" or "kuljetus" optional.
+- lesson.md "Tuotantotapoja verrataan elinkaaren päästöillä" — "vertaillaan" should be "verrataan" ("Siksi tuotantotavat verrataan elinkaaren päästöillä").
 
 ## Checked
-- Full review after a figure change: both figures seen at 390 px, the greenhouse figure also beside its paragraph at 1280 px. The greenhouse figure is recognisable and uncluttered, with LaTeX labels, a sun, an atmosphere band, and the three arrow directions that the caption and text describe. Colour (orange for sunlight, red for heat) is matched by arrow direction and labels, so it is never the only carrier.
-- The emissions bar chart is on one scale. Fossil bars are dark and the others light, with a legend and printed values, so the contrast does not rely on colour alone. The thin nuclear and wind bars are legible through their labels, and the text says they are narrow but not zero.
-- Learning path: the opening question (how can a tiny share of the air matter, and why does the way of producing electricity matter?) is answered by the theory, the table and the model answer. The slot goals (climate, land use, transport, CO2 emissions) are all covered, nothing beyond them. FY3 content is pointed to by chapter name, not taught.
-- Activities fit the topic: two predictions that data can refute (the table), then a data table, a source-of-emissions question, and a "what the factor does not tell" question. There is no empty simulation. The `kuljetus` item covers transport and land use.
-- Example: seven stages, one step each, the unit chain g -> kg -> t shown in full, the answer set apart, and a reasonableness check. It does not repeat the exercises.
-- Each option's feedback repairs the misconception it reveals. No answer is disclosed before a commitment, and Ennusta 2 defers the numbers to the table.
-- Finnish: "arvosta noin −18 °C arvoon noin +15 °C" is fine, and the terms match the glossary. No wall of text: the paragraphs are short, with content-naming subheadings.
-- Exit ticket: three questions testing the core ideas (the radiation mechanism, the calculation, low-emission is not zero-emission).
-- Phone captures: nothing clipped in the stages or the example. The exercise set is out of scope (reviewed separately).
-- Hash at start and end: 15412e00f1e4b741.
+- Learning path: the hook question (small share, big effect, why the production method matters) is answered by Ydinajatus (thermal radiation absorbed by few molecules) and by the emission table with m = e·E; both slot goals are covered, and the FY2 scope is respected (qualitative greenhouse effect, FY3 pointed to by chapter name).
+- Ennusta 1 is a committed prediction whose reveal waits for koe-1 (min 3); the sim has a level for each option, so the experiment can refute "nousisi" and "pysyisi ennallaan"; wrong-option feedback repairs the misconception (blanket analogy, small share does not mean small effect).
+- No answer is disclosed before the student acts; the simulation's model values are named as source values, not computed (Mallin oletukset), and the model-versus-reality caveat is stated.
+- Simulation at 390 px: picture, thermometer, legend, readout and the three closed boxes are readable, with text kept short; the controls are usable.
+- Figures: the greenhouse figure shows sun, upward and downward arrows and colour with labels; the emissions bar chart is to scale, with a legend and values, and is legible at 390 px.
+- Worked example is staged in seven steps with the symbolic solution first; the arithmetic (490·4800 g = 2,352 t; 490:12 ≈ 41) is correct; it is not repeated in the exercises.
+- Transfer and explain tasks have hints, common-mistake feedback and a model answer with criteria; "Etsi virhe" repairs the division mistake through units.
+- Exit ticket tests the core idea (radiation, m = e·E, why wind is not emission-free).
+- Finnish checked: glossary terms (kasvihuoneilmiö, päästökerroin, ilmastonmuutos, kestävä energiatalous) used consistently; one verb slip listed above.
+- Exercise set not judged (reviewed apart).
