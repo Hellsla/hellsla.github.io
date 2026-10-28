@@ -113,3 +113,9 @@ def hero():
 
 
 FIGURES = {"hero": hero, "two-ways": two_ways, "energy-balance": energy_balance, "work-sign": work_sign}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "two-ways": "safe: work and heat as two ways, no values",
+    "energy-balance": "reveals: ΔU = Q + W and the sign convention",
+    "work-sign": "reveals: the sign of W in compression and expansion",
+}

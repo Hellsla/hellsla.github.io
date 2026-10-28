@@ -304,3 +304,13 @@ def interactions():
 FIGURES = {"hero": hero, "scale-axis": scale_axis, "ladder": ladder,
            "matter-ladder": matter_ladder, "atom-stadium": atom_stadium, "cosmic-address": cosmic_address,
            "object-types": object_types, "interactions": interactions}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "scale-axis": "reveals: the sizes from proton to universe as powers of ten",
+    "ladder": "reveals: a hydrogen atom is about 10^5 times a proton",
+    "matter-ladder": "reveals: the sizes of molecule, atom, nucleus and proton",
+    "atom-stadium": "reveals: the atom-to-nucleus size ratio",
+    "cosmic-address": "reveals: the sizes of the nested structures",
+    "object-types": "reveals: the sizes of the objects",
+    "interactions": "safe: the four interactions, no values",
+}

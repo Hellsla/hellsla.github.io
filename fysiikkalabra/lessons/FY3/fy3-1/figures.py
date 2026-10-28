@@ -140,3 +140,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "forcemeter": forcemeter, "force-extension": force_extension, "weight-mass": weight_mass}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "forcemeter": "safe: double weight, double extension, no values",
+    "force-extension": "reveals: the points and x/F = 0,4 cm/N",
+    "weight-mass": "reveals: the weights of 100 kg on Earth, Mars and the Moon",
+}

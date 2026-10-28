@@ -24,3 +24,7 @@ def graph():
 
 
 FIGURES = {"fy3-s1-graph": graph}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "fy3-s1-graph": "reveals: the model graph of task fy3-s1 (its solution)",
+}

@@ -53,10 +53,11 @@
     {
       "id": "fy1-4-L2-02",
       "level": 2,
-      "text": "Vesisäiliön pinnan korkeus $h$ kasvaa tasaisesti ajan $t$ funktiona. Sovitettu suora kulkee pisteiden $(2{,}0\\,\\text{min};\\ 7{,}0\\,\\text{cm})$ ja $(6{,}0\\,\\text{min};\\ 15{,}0\\,\\text{cm})$ kautta. Kuinka korkealla pinta on 10,0 minuutin kohdalla, kun suoraa jatketaan mittausalueen yli? Anna vastaus senttimetreinä.",
-      "answer": 23,
-      "unit": "cm",
-      "tolerance": 0.02
+      "text": "Kuvaajassa on tasaisesti liikkuvan kärryn kulkema matka $s$ ajan $t$ funktiona kuudessa mittauksessa. Sovita pisteisiin silmämääräisesti suora (piirrä pisteet ruutupaperille tai aseta viivoitin kuvan päälle) ja arvioi sen avulla, kuinka pitkän matkan kärry on kulkenut hetkellä $t = 8{,}0\\,\\text{s}$, kun liike jatkuu samanlaisena. Anna vastaus metreinä.",
+      "figure": "fy1-4/scatter-points",
+      "answer": 3.9,
+      "unit": "m",
+      "tolerance": 0.08
     },
     {
       "id": "fy1-4-L2-03",

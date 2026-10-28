@@ -194,6 +194,39 @@ def reviewer_rules(role, lid, both=False):
                "\nThe exercise set (exercises/, answers.py) is reviewed apart from the lesson and is not yours to judge here.\n"))
 
 
+def figures_used(folder, role, names=("exercises.json",)):
+    """The figures the tasks show by id (scripts/figcat.py): the description and what it gives away for every role, the
+    code that draws it (its data) for the science reviewer. Never an SVG body: the captures show the drawing."""
+    import figcat
+    ids = figcat.refs_in(" ".join(courses.lesson_file(folder, n).read_text() for n in names if courses.lesson_file(folder, n).is_file()))
+    if not ids: return ""
+    cat = {f["id"]: f for f in figcat.load()["figures"]}
+    out = "\n## Figures the tasks show (by id; scripts/figcat.py)\n"
+    for fid in ids:
+        f = cat.get(fid) or {"description": "(not in the catalog: python scripts/figcat.py build)", "reuse": "?"}
+        out += f"- `{fid}` ({f.get('kind', '?')}; reuse: {f['reuse']}): {f['description']}\n"
+        if role == "science":
+            out += f"```python\n# {figcat.code_rel(fid)}\n{figcat.slice_of(fid, lambda r: (ROOT / r).read_text())}\n```\n"
+    if role != "developer":
+        out += ("Check that the figure gives every value the task needs, that its description gives the same information to a reader "
+                "who cannot see it, and that neither gives the answer away.\n")
+    return out
+
+
+def figures_available(folder):
+    """What a writer of tasks may show (scripts/figcat.py): the course's figures that carry information, one line each,
+    and how to refer to one or make a task variant of it. The catalog, not lesson.md or an SVG, is where to look."""
+    import figcat
+    code = courses.course_of(folder.name)
+    lines = [l for l in figcat.find([], course=code) if " illustration " not in l and " unmanaged " not in l]
+    return ("\n## Figures you can show in a task (docs/figures/catalog.json; reuse before drawing)\n"
+            "Refer to one with `\"figure\": \"<id>\"` in the task. A figure marked `reveals: …` shows a result: make a variant from the same data "
+            "in that lesson's figures.py (`\"<name>-points\": lambda: <name>(fit=False)` or a small function, with a description that lists the data, "
+            "not the answer; README \"Figures in tasks\"). `python scripts/figcat.py show <id>` prints one figure's entry and its code; "
+            "`python scripts/figcat.py find <words> --course FY3` searches. Do not open lesson.md, published HTML or SVG bodies to look for figures.\n"
+            "```\n" + "\n".join(lines) + "\n```\n")
+
+
 def exercise_packet(folder, role, fix=False):
     """The packet of the exercise set (module docstring): reviewers judge exercises.json, solutions.md and answers.py
     from the exercise brief; the developer writes or fixes them from it."""
@@ -216,13 +249,13 @@ def exercise_packet(folder, role, fix=False):
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
                 out += "\n## The exercise set\n" + "".join(block(courses.lesson_file(folder, n)) for n in files if role == "science" or n != "answers.py")
-            out += shots(folder, role, "exercises") + exercise_rules(role, lid)
+            out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid)
     else:
         mode = "fix" if fix else "write"
         out, meta = header(folder, role, mode, "exercises")
         out += ("\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope") + "\n\n"
                 + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n" + guardrails())
-        out += exercise_brief(folder)
+        out += exercise_brief(folder) + figures_used(folder, role) + figures_available(folder)
         out += (f"\n## Where files go\n- `{ex.relative_to(ROOT)}/exercises.json` (schema: README \"Exercise schema\") and `{ex.relative_to(ROOT)}/solutions.md` (one `## <id>` block each)\n"
                 f"- `{courses.lesson_rel(folder, 'answers.py')}`: the exercises' answers, one commented line per step, printing `{{id: value}}`\n"
                 f"- never the lesson's files (lesson.md, inquiry.json, exit-ticket.json, meta.json, lesson-answers.py, figures, the simulation): a finding about those goes in your report as \"not fixable here\"\n")

@@ -349,9 +349,9 @@ CHAPTER_REF = re.compile(r"\b[Ff][Yy]\d-\d+\b(?![-\w])|\b[Oo]ppitunni(?:lla|n|st
 def check_chapter_refs(L, name, text):
     """A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): 'luvussa Paine ja hydrostaattinen
     paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
-    and solution headings are not shown as text and are skipped."""
+    and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth")."""
     for i, ln in enumerate(text.splitlines(), 1):
-        if re.match(r"\s*(\"id\"|## fy)", ln): continue
+        if re.match(r"\s*(\"id\"|\"figure\"|## fy)", ln): continue
         for m in CHAPTER_REF.finditer(ln):
             L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 
@@ -482,9 +482,21 @@ def lint(folder):
     check_inquiry(L, folder)
     for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
         if courses.lesson_file(folder, f).exists(): check_chapter_refs(L, f, courses.lesson_file(folder, f).read_text())
+    check_figure_refs(L, folder)
     for f, line, rid, msg, s in physics_phrases.problems(folder):   # review warnings, docs/physics-guardrails.md
         L.warn(f, line, f"physics [{rid}]: {msg} (docs/physics-guardrails.md): «{s[:90]}»")
     return L
+
+
+def check_figure_refs(L, folder):
+    """"figure": "<id>" in a task names a figure that some figures.py draws (scripts/figcat.py, NOTES §11)."""
+    import figcat
+    for f in ("inquiry.json", "exercises.json", "exit-ticket.json"):
+        p = courses.lesson_file(folder, f)
+        if not p.exists(): continue
+        text = p.read_text()
+        for fid, msg in figcat.check_refs(text):
+            L.err(f, text.count("\n", 0, max(text.find(f'"{fid}"'), 0)) + 1, msg)
 
 
 def check_inquiry(L, folder):

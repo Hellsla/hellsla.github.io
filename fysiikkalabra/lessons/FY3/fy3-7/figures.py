@@ -149,3 +149,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "micro-model": micro_model, "heating-curve": heating_curve, "phase-diagram": phase_diagram}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "micro-model": "safe: the three phases as particles",
+    "heating-curve": "reveals: which part is melting and which boiling",
+    "phase-diagram": "reveals: a lower pressure lowers the boiling point",
+}

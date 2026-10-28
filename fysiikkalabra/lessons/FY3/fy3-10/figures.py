@@ -160,3 +160,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "mole-masses": mole_masses, "helium-ilma": helium_air, "paine-ja-tekijat": pressure_factors}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "mole-masses": "reveals: the molar masses of He, air and CO2",
+    "helium-ilma": "reveals: n = 0,21 mol and the masses 0,83 g and 6,0 g",
+    "paine-ja-tekijat": "reveals: the pressure doubles with 2N, 2T or V/2",
+}

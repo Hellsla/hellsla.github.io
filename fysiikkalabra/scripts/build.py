@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, i18n, inquiry, mathlayout, practice
+import courses, figcat, i18n, inquiry, mathlayout, practice
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -208,7 +208,7 @@ def solutions_of(text):
     return out
 
 
-def exercise_html(e, solution_html):
+def exercise_html(e, solution_html, read=None):
     ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
     check = ""
@@ -219,7 +219,8 @@ def exercise_html(e, solution_html):
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
-    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{check}'
+    fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
+    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -318,7 +319,7 @@ def build_language(lang):
             ex_html += f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} <span class=\"count\">{T('lesson.level_count', n=len(items))}</span></summary><ol>"
             for i, e in enumerate(items):
                 show = publish == "all" or (publish == "first" and i == 0)
-                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None)
+                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read)
             ex_html += "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(

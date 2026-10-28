@@ -128,3 +128,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "pressure-area": pressure_area, "water-column": water_column, "pressure-depth": pressure_depth}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "pressure-area": "reveals: p1 = 3 p2 for the same force",
+    "water-column": "reveals: the derivation p = ρgh",
+    "pressure-depth": "reveals: about 199 kPa at 10 m",
+}
