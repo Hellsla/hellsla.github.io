@@ -1,8 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 1c47ee655224e3ab
+VERDICT: PASS
+CONTENT-HASH: 4c5aa43d224fa957
 
 ## Blocking
-- inquiry.json:116 (aineisto, feedback of the "mutkia" option) — **A, definition**: "poikkeamat vaihtelevat ylös ja alas, joten ne ovat mittausepävarmuutta" calls the deviations themselves the uncertainty. The guardrails keep the terms apart: a deviation is a (random) measurement error, while the uncertainty is the estimate of how large it may be. This lesson's own theory defines it that way (lesson.md:239) — write "joten ne ovat satunnaisia mittausvirheitä, jotka mahtuvat mittausepävarmuuden rajoihin".
 
 ## Polish
 - inquiry.json:112 (aineisto, feedback of the "poistaa" option) — "kaikki pisteet ovat luotettavia" overclaims. A deviation smaller than the uncertainty gives no reason to reject a point, but it does not prove the point reliable — say "ei ole syytä hylätä yhtään pistettä".
@@ -10,6 +9,7 @@ CONTENT-HASH: 1c47ee655224e3ab
 - lessons/FY3/fy3-13/answers.py:22 — the key "L2-03-gauge-zero" is not an exercise id in the JSON that "the lint compares with exercises.json". Move it to a comment or to lesson-answers.py.
 
 ## Checked
+- Round 2: re-check of round-1 Blocking items against the fix diff. inquiry.json:116 now reads "ne ovat satunnaisia mittausvirheitä, jotka mahtuvat mittausepävarmuuden rajoihin": the error/uncertainty terms are kept apart, the sentence is grammatical, and the option is still a correct distractor with exactly one correct option in aineisto.
 - Recomputed in one script: the best line (0; 101,3)–(100; 138,0) gives k = 0,367 and θ₀ = −276,0 °C (a least-squares fit gives −276,2); the extreme lines give −258,66 and −294,81 °C, so Δθ₀ = 18,08 °C. The steep line touches the bars at 10 and 85 °C and the shallow one at 25 and 100 °C, and every residual of the best line is under 1 kPa. suora −275,8 °C; virhe −316 → −276 °C; siirto −276,9 °C; tarkistus-2 −282,9 °C; kertaus 313/293 = 1,068; s₂ misses the bars at 10, 70, 85 and 100 °C (measured from the SVG); the exit ticket gives 0,36 kPa/°C and −282…−258 °C.
 - The SVG coordinates of all four figures match the data and the lines. The main figure is to scale: −276, −259 and −295 °C.
 - Guardrails: the fit sentence ("yleensä"), uncertainty versus the manufacturer's error limit, the slope from two far points on the fitted line, the extrapolation range and its assumption, "todennäköisesti", and "the interval is an estimate, not a guaranteed limit" are all present and agree between the theory, the example, the inquiry and the summary.

@@ -48,7 +48,7 @@
       "text": "Leluauton ajoaikaa mitataan viisi kertaa, ja tulokset ovat $7{,}8\\,\\text{s}$, $8{,}2\\,\\text{s}$, $7{,}9\\,\\text{s}$, $8{,}1\\,\\text{s}$ ja $8{,}0\\,\\text{s}$. Epävarmuuden yksinkertaiseksi ja varovaiseksi arvioksi otetaan puolet vaihteluvälistä. Kuinka suuri on tuloksen suhteellinen epävarmuus prosentteina?",
       "answer": 2.5,
       "unit": "%",
-      "tolerance": 0.02
+      "tolerance": 0.21
     },
     {
       "id": "fy1-8-L2-02",
@@ -82,7 +82,7 @@
       "text": "Oppilas sovittaa mittauspisteisiin (matka ajan funktiona) kaksi suoraa: jyrkimmän, jonka kulmakerroin on $0{,}463\\,\\text{m/s}$, ja loivimman, jonka kulmakerroin on $0{,}397\\,\\text{m/s}$. Mittauspisteet mahtuvat näiden suorien väliin. Epävarmuudeksi otetaan puolet suorien kulmakertoimien erotuksesta. Kuinka suuri on nopeuden epävarmuus?",
       "answer": 0.033,
       "unit": "m/s",
-      "tolerance": 0.02
+      "tolerance": 0.1
     },
     {
       "id": "fy1-8-L3-02",

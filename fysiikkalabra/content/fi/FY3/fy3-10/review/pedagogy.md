@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f53689a1dbdda5ef
+CONTENT-HASH: 901e18a6fefc4a77
 
 ## Blocking
 
@@ -18,3 +18,4 @@ CONTENT-HASH: f53689a1dbdda5ef
 - Each choice item has one correct option; Etsi virhe (20 K instead of 293 K) is unambiguous; exit ticket (0,601 mol; equal n but heavier CO2; p doubles) tests the core idea.
 - Solutions follow the seven parts with symbols first; the model-value versus example-data distinction is stated in the conclusion.
 - Figures judged from aria-labels (no captures): scale claims (speed ratio 2,7:1, masses) agree with the numbers. Workload is heavy but optional items (kertaus, reflect, virhe, siirto, check-3) are marked.
+- Round 2: re-check of round-1 Blocking items against the fix diff. There were none; the diff changes two sentences in Ydinajatus and Kaava to mark the weighing masses as example values ("esimerkkipunnituksessa (keksityt arvot, joissa on punnituksen hajontaa)", "Esimerkkipunnituksesta saadaan"). Grammatical, consistent with the inquiry's source note, no number or answer changed.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 934ee6f37f33aaf8
+CONTENT-HASH: 106a6f42772f0a62
 ## Blocking
 
 ## Polish
@@ -13,3 +13,4 @@ CONTENT-HASH: 934ee6f37f33aaf8
 - Corrected first-law condition ("eikä liike- tai potentiaalienergia muutu") is clear and does not add FY4 content.
 - Prior item now reads "Kaasun mikromalli", matching the fy3-3 chapter.
 - Task answer 5,4 J re-derived: -0,60 + 75·0,080 = 5,4; exit ticket 180 J correct.
+- Round 2: re-check of round-1 Blocking items against the fix diff. None were open (PASS). Changed lines: Ydinajatus now adds the example "puhdas jää sulaa normaalipaineessa … lämpötila pysyy $0\,{}^\circ\text{C}$:ssa" (concrete, correct, Finnish fine; it makes the first paragraph about 165 words, so the earlier split suggestion now matters more); exit-ticket answer "lämpöä siirtyy, kun kiven ja sen ympäristön välillä on lämpötilaero" is accurate and clearer.

@@ -79,7 +79,7 @@
     {
       "id": "fy3-5-L3-01",
       "level": 3,
-      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti, ja mäntä työntää ilmaa $0{,}15\\,\\text{m}$:n matkan keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
+      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti, ja mäntä työntää ilmaa $0{,}15\\,\\text{m}$:n matkan keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa, ja ilmaa voi pitää ideaalikaasuna. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
       "answer": -18,
       "unit": "J",
       "tolerance": 0.02

@@ -134,7 +134,7 @@
         ],
         "solution": "**Annettu:** polttoaineteho $P_0 = 500\\,\\text{MW}$, kattilan hyötysuhde $\\eta_1 = 0{,}920$ ja höyrykierron $\\eta_2 = 0{,}460$ (taulukosta)\n\n**Kysytty:** höyrykierrossa häviävä teho $P_\\text{häviö}$ megawatteina\n\n**Periaate:** Vaiheet ovat peräkkäin, ja kunkin ulostuloteho on seuraavan sisäänmenoteho. Energia säilyy, joten vaiheeseen tulevan ja siitä lähtevän tehon erotus ei katoa vaan siirtyy lämpönä ympäristöön. Höyrykiertoon tulee vain kattilan ulostuloteho, ei koko polttoaineteho.\n\n**Kaava:** $P_1 = \\eta_1 P_0$ ja $P_2 = \\eta_2 P_1$, joten\n\n$$P_\\text{häviö} = P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$$\n\n**Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_1 = 0{,}920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ ja $P_2 = 0{,}460 \\cdot 460\\,\\text{MW} = 211{,}6\\,\\text{MW}$, joten $P_\\text{häviö} = 460\\,\\text{MW} - 211{,}6\\,\\text{MW} = 248{,}4\\,\\text{MW}$\n\n**Vastaus:** $248\\,\\text{MW}$, kolme merkitsevää numeroa, koska hyötysuhteet $0{,}920$ ja $0{,}460$ ovat kolmella numerolla ja polttoaineteho $500\\,\\text{MW}$ on annettu megawatin tarkkuudella.\n\n**Järkevyys:** Arvio: $0{,}540 \\cdot 460\\,\\text{MW} \\approx 250\\,\\text{MW}$. Kattila häviää $500\\,\\text{MW} - 460\\,\\text{MW} = 40\\,\\text{MW}$ ja generaattori ja muuntaja noin $12\\,\\text{MW}$, joten höyrykierto häviää selvästi eniten: noin puolet polttoainetehosta. Tase: $40 + 248{,}4 + 11{,}6 + 200 = 500\\,\\text{MW}$, kun sähköteho on $0{,}945 \\cdot 211{,}6\\,\\text{MW} = 200\\,\\text{MW}$."
       },
-      "source": "simulated",
+      "source": "example",
       "source_note": "esimerkkilaitoksen hyötysuhteet"
     },
     {
@@ -170,7 +170,7 @@
         ],
         "solution": "**Annettu:** polttoaineteho $P_0 = 400\\,\\text{MW}$; täyden kaukolämmön tilassa (taulukosta) sähköteho $P_\\text{s} = 120\\,\\text{MW}$ ja kaukolämpöteho $P_\\text{k} = 232\\,\\text{MW}$\n\n**Kysytty:** hukkalämmön teho $P_\\text{h}$ megawatteina täyden kaukolämmön tilassa\n\n**Periaate:** Energia säilyy ja laitos toimii tasaisesti, joten polttoaineteho jakautuu kokonaan sähköksi, kaukolämmöksi ja hukkalämmöksi. Sekä sähkö että kaukolämpö ovat hyödyksi saatua tehoa, joten hukkaa on vain se, mitä jää jäljelle.\n\n**Kaava:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, joten $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$\n\n**Muunnokset:** Kaikki tehot ovat megawatteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW} = 48\\,\\text{MW}$\n\n**Vastaus:** $48\\,\\text{MW}$, kaksi merkitsevää numeroa. Tehot on annettu megawatin tarkkuudella, ja vähennyslaskun tulos säilyttää saman tarkkuuden.\n\n**Järkevyys:** Tase täsmää: $120 + 232 + 48 = 400\\,\\text{MW}$. Kokonaishyötysuhde on $\\dfrac{120 + 232}{400} = 0{,}88$, kun pelkässä sähköntuotannossa se on $\\dfrac{160}{400} = 0{,}40$ ja hukkalämpö $240\\,\\text{MW}$. Sähköä menetetään vain $40\\,\\text{MW}$, mutta hukkalämpö pienenee $192\\,\\text{MW}$, joten kaukolämpö otetaan pääosin hukkalämmöstä."
       },
-      "source": "simulated",
+      "source": "example",
       "source_note": "esimerkkilaitoksen luvut, eivät yhden laitoksen mittauksia"
     },
     {

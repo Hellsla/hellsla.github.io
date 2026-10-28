@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bff7149aaf35caf4
+CONTENT-HASH: d990e0039cdcf7a7
 ## Blocking
 
 ## Polish
@@ -14,3 +14,4 @@ CONTENT-HASH: bff7149aaf35caf4
 - Each choice item still has exactly one correct option; distractor feedback repairs the misconception (celsius ratio, "50 % less volume -> 50 % more pressure", p ∝ V, gas weight).
 - Guardrail edits (kireä pussi: pressure slightly above cabin pressure; vapaasti laajeneva pussi) are consistent in Ydinajatus, Esimerkki and reflect.
 - Example: seven one-step stages, units cancel stated, sig-figure rationale and pV check.
+- Round 2: re-check of round-1 Blocking items against the fix diff. None were open (PASS). Changes: isobaric and isochoric statements now carry "kun kaasun määrä pysyy samana ja kaasu on harvaa" and the extrapolation line is called a model prediction (real gas liquefies before 0 K); both are correct, consistent with the Summary, and grammatical. check-3 prompt gains "Mitä muuta koejärjestelyssä on varmistettava?", which the existing criterion about a tight syringe (constant amount) answers; one correct reading, no problem.

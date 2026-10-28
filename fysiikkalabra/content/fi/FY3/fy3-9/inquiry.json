@@ -438,7 +438,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä koe",
-      "prompt": "Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään $(1/V, p)$-koordinaatistoon eikä pelkästään $(V, p)$-koordinaatistoon.",
+      "prompt": "Boylen lakia todennetaan ruiskulla ja painemittarilla. Selitä, miksi mäntää liikutetaan hitaasti ja miksi tulokset piirretään $(1/V, p)$-koordinaatistoon eikä pelkästään $(V, p)$-koordinaatistoon. Mitä muuta koejärjestelyssä on varmistettava?",
       "criteria": [
         "Sanon, että Boylen laki koskee isotermistä tilanmuutosta, ja nopea puristus lämmittää ilmaa, jolloin paine on liian suuri.",
         "Sanon, että $(V, p)$-pisteet asettuvat kaarelle, josta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta.",
