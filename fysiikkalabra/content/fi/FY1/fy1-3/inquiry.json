@@ -3,7 +3,7 @@
   "contribution": "Mittaustulos on arvio, jolla on virhe: **satunnaisvirhe** hajauttaa tuloksia ja pienenee keskiarvolla, **systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan eikä poistu toistolla, ja luotettavuus on sekä toistettavuutta että oikeellisuutta.",
   "learn": [
     "Erotat karkean virheen, satunnaisvirheen ja systemaattisen virheen ja tunnistat niiden lähteitä.",
-    "Osaat laskea keskiarvon ja arvioida tuloksen virheen vaihteluvälin puolikkaalla.",
+    "Osaat laskea keskiarvon ja arvioida tulosten hajontaa vaihteluvälin puolikkaalla.",
     "Osaat korjata systemaattisen virheen ja arvioida, onko mittaus toistettava ja oikea."
   ],
   "prior": [
@@ -25,13 +25,13 @@
       "prompt": "Kello näyttää kuulan vierimisajaksi $2{,}40\\,\\text{s}$. Mitä viimeinen nolla kertoo?",
       "choices": [
         {
-          "text": "Aika on mitattu sadasosasekunnin tarkkuudella, ja nolla on merkitsevä numero.",
+          "text": "Kello näyttää sadasosasekunnit, ja nolla on merkitsevä numero.",
           "correct": true,
-          "feedback": "Oikein. Merkitsevät numerot kertovat mittauksen tarkkuuden: $2{,}40\\,\\text{s}$ on ilmoitettu kolmella merkitsevällä numerolla, ja viimeinen on sadasosien paikalla. Tässä luvussa tarkkuuden arviointi saa tarkemman muodon: virhe-arvion."
+          "feedback": "Oikein. $2{,}40\\,\\text{s}$ on ilmoitettu kolmella merkitsevällä numerolla, ja viimeinen on sadasosien paikalla: kello näyttää sadasosat. Käsin otetun ajan epävarmuus voi silti olla paljon suurempi, koska reaktioaika vaihtelee. Tässä luvussa opit arvioimaan sen."
         },
         {
           "text": "Nolla on turha ja sen voi jättää pois, sillä $2{,}4\\,\\text{s}$ on sama tulos.",
-          "feedback": "Lukuina arvot ovat samat, mutta mittaustuloksina eivät: $2{,}4\\,\\text{s}$ kertoo kymmenesosan tarkkuudesta ja $2{,}40\\,\\text{s}$ sadasosan. Loppunolla ilmoittaa, että sadasosat on oikeasti mitattu."
+          "feedback": "Lukuina arvot ovat samat, mutta mittaustuloksina eivät: $2{,}4\\,\\text{s}$ kertoo, että lukema on luettu kymmenesosina, ja $2{,}40\\,\\text{s}$, että kello näyttää sadasosat. Loppunollaa ei siis saa jättää pois. Lukeman tarkkuus ei silti ole sadasosa, kun aika otetaan käsin."
         },
         {
           "text": "Kuula vierii täsmälleen 2,40 sekuntia eikä yhtään enempää.",
@@ -231,7 +231,7 @@
             "feedback": "Ero ei ole nolla. Satunnainen osa on vaimentunut, mutta systemaattinen virhe $+0{,}30\\,\\text{s}$ on yhä mukana jokaisessa tuloksessa ja siis keskiarvossa."
           }
         ],
-        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\Delta t = \\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** $\\Delta t = \\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta t = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
+        "solution": "**Annettu:** rivin $n = 40$ keskiarvo taulukosta $\\bar{t} = 2{,}70\\,\\text{s}$ (mallin arvo) ja oikea aika $T = 2{,}40\\,\\text{s}$\n\n**Kysytty:** keskiarvon ja oikean ajan erotus eli mittausvirhe $\\bar{t} - T$ yksikössä $\\text{s}$\n\n**Periaate:** Mittausvirhe on tuloksen ja oikean arvon erotus. Satunnainen osa on 40 toiston keskiarvossa jo lähes kumoutunut, joten jäljelle jäävä erotus kertoo systemaattisen virheen.\n\n**Kaava:** erotus $\\bar{t} - T$\n\n**Muunnokset:** Molemmat ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\bar{t} - T = 2{,}70\\,\\text{s} - 2{,}40\\,\\text{s} = 0{,}30\\,\\text{s}$\n\n**Vastaus:** $0{,}30\\,\\text{s}$, kaksi merkitsevää numeroa kuten taulukon keskiarvossa. Erotus on sama kuin asetettu systemaattinen virhe $+0{,}30\\,\\text{s}$.\n\n**Järkevyys:** Erotus on positiivinen, koska kello näyttää liikaa. Se on lähes täsmälleen asetettu $0{,}30\\,\\text{s}$, joten 40 toistoa vaimensi satunnaisen osan mutta ei poistanut systemaattista virhettä."
       }
     },
     {
@@ -288,7 +288,7 @@
             "feedback": "Tämä on satunnaisvirheiden suhde $\\dfrac{0{,}30}{0{,}05}$. Kysyttiin taulukon vaihteluvälin puolikkaiden suhdetta, ja se on lähes sama mutta ei täsmälleen, koska tulokset on pyöristetty sadasosiin."
           }
         ],
-        "solution": "**Annettu:** taulukosta vaihteluvälin puolikkaat $\\Delta t_1 = 0{,}0850\\,\\text{s}$ (satunnaisvirhe $0{,}05\\,\\text{s}$) ja $\\Delta t_2 = 0{,}525\\,\\text{s}$ (satunnaisvirhe $0{,}30\\,\\text{s}$), mallin arvoja\n\n**Kysytty:** suhde $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Periaate:** Mitä suurempi satunnaisvirhe on, sitä enemmän tulokset hajaantuvat ja sitä suurempi on vaihteluvälin puolikas. Hajonta on suoraan verrannollinen satunnaisvirheen suuruuteen, joten suhteen pitäisi olla lähellä satunnaisvirheiden suhdetta.\n\n**Kaava:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Muunnokset:** Molemmat ovat sekunteina ja suhteessa yksiköt supistuvat, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{0{,}525\\,\\text{s}}{0{,}0850\\,\\text{s}} = 6{,}2$\n\n**Vastaus:** $6{,}2$ kertaa, kaksi merkitsevää numeroa kuten taulukon pienemmässä puolikkaassa.\n\n**Järkevyys:** Satunnaisvirheiden suhde on $\\dfrac{0{,}30}{0{,}05} = 6$, ja saatu $6{,}2$ on lähellä sitä. Pieni ero johtuu siitä, että mallin lukemat pyöristetään sadasosasekuntiin."
+        "solution": "**Annettu:** taulukosta vaihteluvälin puolikkaat $\\Delta t_1 = 0{,}0850\\,\\text{s}$ (satunnaisvirhe $0{,}05\\,\\text{s}$) ja $\\Delta t_2 = 0{,}525\\,\\text{s}$ (satunnaisvirhe $0{,}30\\,\\text{s}$), mallin arvoja\n\n**Kysytty:** suhde $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Periaate:** Mitä suurempi satunnaisvirhe on, sitä enemmän tulokset hajaantuvat ja sitä suurempi on vaihteluvälin puolikas. Hajonta on suoraan verrannollinen satunnaisvirheen suuruuteen, joten suhteen pitäisi olla lähellä satunnaisvirheiden suhdetta.\n\n**Kaava:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Muunnokset:** Molemmat ovat sekunteina ja suhteessa yksiköt supistuvat, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{0{,}525\\,\\text{s}}{0{,}0850\\,\\text{s}} = 6{,}2$\n\n**Vastaus:** $6{,}2$ kertaa. Kaksi merkitsevää numeroa riittää: lukemat on pyöristetty sadasosasekunteihin, joten pienempi puolikas $0{,}0850\\,\\text{s}$ on epävarma jo toisessa numerossaan, vaikka taulukko näyttää kolme.\n\n**Järkevyys:** Satunnaisvirheiden suhde on $\\dfrac{0{,}30}{0{,}05} = 6$, ja saatu $6{,}2$ on lähellä sitä. Pieni ero johtuu siitä, että mallin lukemat pyöristetään sadasosasekuntiin."
       }
     },
     {
@@ -381,17 +381,17 @@
           "feedback": "Keskiarvo vaimentaa satunnaisvirhettä, mutta tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, kun muut ovat $0{,}2\\,\\text{s}$:n sisällä. Se on todennäköisesti karkea virhe, ja mukaan otettuna se siirtäisi keskiarvoa noin $0{,}2\\,\\text{s}$ ylöspäin."
         },
         {
-          "text": "Tarkistaa tuloksen $4{,}31\\,\\text{s}$. Jos syy löytyy tai se on selvästi muista poikkeava, jättää sen pois, mitata uudelleen ja kirjata poiston syy muistiin.",
+          "text": "Tarkistaa tuloksen $4{,}31\\,\\text{s}$ ja mitata tarvittaessa uudelleen. Tulos jätetään pois vain, jos sille löytyy selvä syy, esimerkiksi myöhään pysäytetty kello, ja poisjättö perustellaan ja kirjataan.",
           "correct": true,
-          "feedback": "Oikein. Tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, joten se on todennäköisesti karkea virhe, esimerkiksi myöhään pysäytetty kello tai väärin kirjattu lukema. Karkeaa virhettä ei keskiarvoisteta vaan se poistetaan, ja tilalle tehdään uusi mittaus."
+          "feedback": "Oikein. Tulos $4{,}31\\,\\text{s}$ poikkeaa muista yli sekunnin, joten se on todennäköisesti karkea virhe, esimerkiksi myöhään pysäytetty kello tai väärin kirjattu lukema. Jos tarkistus paljastaa karkean virheen, tulos jätetään pois, syy kirjataan ja tilalle tehdään uusi mittaus. Pelkkä poikkeaminen muista ei vielä ole syy poistaa tulosta."
         },
         {
           "text": "Jättää pois suurimman ja pienimmän tuloksen, $4{,}31\\,\\text{s}$ ja $3{,}07\\,\\text{s}$, koska ääripäät ovat aina virheellisiä.",
-          "feedback": "Ääripäät eivät ole automaattisesti virheellisiä: $3{,}07\\,\\text{s}$ on vain $0{,}05\\,\\text{s}$ seuraavaa tulosta pienempi, ja se kuuluu tavalliseen hajontaan. Pois jätetään vain tulos, joka poikkeaa selvästi muista tai jonka syy tiedetään, tässä $4{,}31\\,\\text{s}$."
+          "feedback": "Ääripäät eivät ole automaattisesti virheellisiä: $3{,}07\\,\\text{s}$ on vain $0{,}05\\,\\text{s}$ seuraavaa tulosta pienempi, ja se kuuluu tavalliseen hajontaan. Selvästi poikkeava tulos, tässä $4{,}31\\,\\text{s}$, tarkistetaan, ja se jätetään pois vain, jos virheen syy löytyy."
         },
         {
           "text": "Lisätä virhe-arvioon $\\Delta t$ tuloksen $4{,}31\\,\\text{s}$ verran, jotta kaikki tulokset mahtuvat väliin.",
-          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin seitsenkertaiseksi, $0{,}09\\,\\text{s}$:sta $0{,}62\\,\\text{s}$:iin. Selvästi poikkeava tulos tarkistetaan ja jätetään pois."
+          "feedback": "Virhe-arvio kuvaa satunnaisvirhettä eli tavallista hajontaa. Karkea virhe ei ole hajontaa vaan erehdys, joten sen mukaan ottaminen paisuttaisi virhe-arvion noin seitsenkertaiseksi, $0{,}09\\,\\text{s}$:sta $0{,}62\\,\\text{s}$:iin. Selvästi poikkeava tulos tarkistetaan ja mittaus toistetaan tarvittaessa; tulos jätetään pois vain perustellusta ja kirjatusta syystä."
         }
       ]
     },
@@ -489,10 +489,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Resoluutio ja epävarmuus",
+      "prompt": "Oppilas ottaa kuulan vierimisajan käsin sekuntikellolla, joka näyttää sadasosasekunnit. Kello pysähtyy lukemaan $2{,}47\\,\\text{s}$. Mikä on järkevin arvio tämän yksittäisen ajan epävarmuudesta?",
+      "choices": [
+        {
+          "text": "Sekunnin kymmenesosien luokkaa, esimerkiksi noin $0{,}2\\,\\text{s}$, koska kello käynnistetään ja pysäytetään käsin.",
+          "correct": true,
+          "feedback": "Oikein. Näytön pienin askel $0{,}01\\,\\text{s}$ on kellon resoluutio, mutta mittauksen kokonaisepävarmuuteen vaikuttaa myös mittausmenetelmä. Reaktioaika vaihtelee käynnistyksessä ja pysäytyksessä, joten käsin otetun ajan epävarmuus on sekunnin kymmenesosien luokkaa. Toistamalla mittauksen voit arvioida hajonnan vaihteluvälin puolikkaalla."
+        },
+        {
+          "text": "$0{,}01\\,\\text{s}$, koska kello näyttää sadasosasekunnit.",
+          "feedback": "Houkutteleva, koska näytön tarkkuus näkyy suoraan lukemassa. $0{,}01\\,\\text{s}$ on kuitenkin kellon resoluutio eli pienin askel, jonka näyttö voi näyttää. Se ei yksin kerro epävarmuutta: käsin otetussa ajassa vaihteleva reaktioaika tuo epävarmuuden, joka on sekunnin kymmenesosien luokkaa."
+        },
+        {
+          "text": "$0{,}005\\,\\text{s}$ eli puolet näytön pienimmästä askeleesta.",
+          "feedback": "Puolet pienimmästä asteikkovälistä on yksinkertainen arvio lukeman epävarmuudesta, kun arvo luetaan asteikolta. Mittauksen kokonaisepävarmuuteen vaikuttavat kuitenkin myös mittausmenetelmä ja muut virhelähteet. Tässä lukema on helppo kirjata, mutta käsin käynnistetty ja pysäytetty kello tuo reaktioajan vuoksi sekunnin kymmenesosien epävarmuuden."
+        },
+        {
+          "text": "Epävarmuutta ei ole, koska digitaalinen näyttö ei vaadi asteikon tulkintaa.",
+          "feedback": "Digitaalinen näyttö poistaa asteikon tulkinnan, mutta ei mittausmenetelmän epävarmuutta. Jokaiseen mittaustulokseen kuuluu epävarmuus. Käsin otetussa ajassa sen aiheuttaa ennen kaikkea reaktioaika, joka vaihtelee mittauksesta toiseen."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskeminen",
+      "title": "3. Laskeminen",
       "prompt": "Kuulan vierimisaika mitataan viisi kertaa ja tulokset ovat $2{,}36\\,\\text{s}$, $2{,}41\\,\\text{s}$, $2{,}38\\,\\text{s}$, $2{,}46\\,\\text{s}$ ja $2{,}39\\,\\text{s}$. Virhe-arvio on vaihteluvälin puolikas. Kuinka monta prosenttia se on keskiarvosta?",
       "answer": 2.1,
       "unit": "%",
@@ -522,7 +548,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä omin sanoin, miten erotat toisistaan satunnaisen ja systemaattisen virheen, mitä toistaminen niille tekee ja mitä toistettavuus ja oikeellisuus tarkoittavat.",
       "criteria": [
         "Sanon, että satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy tulosten hajontana, kun taas systemaattinen virhe on joka mittauksessa samaan suuntaan.",

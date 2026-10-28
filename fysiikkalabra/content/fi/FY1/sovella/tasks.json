@@ -169,7 +169,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Laske uusista mittauksista kummankin kuulan vierimisajan keskiarvo ja sen epävarmuus. Voiko mittausten perusteella sanoa, että kuulien vierimisajat eroavat?",
+          "text": "Laske uusista mittauksista kummankin kuulan vierimisajan keskiarvo ja arvioi tulosten epävarmuus. Voiko mittausten perusteella sanoa, että kuulien vierimisajat eroavat?",
           "answer": {
             "value": 0.03,
             "unit": "s"
@@ -183,10 +183,10 @@
             {
               "key": "uncertainty",
               "points": 1,
-              "detail": "Esimerkiksi vaihteluvälin puolikas: $\\Delta t \\approx 0{,}08\\,\\text{s}$ ja $0{,}07\\,\\text{s}$."
+              "detail": "Esimerkiksi vaihteluvälin puolikas yksinkertaisena, varovaisena arviona: $\\Delta t \\approx 0{,}08\\,\\text{s}$ ja $0{,}07\\,\\text{s}$."
             },
             {
-              "text": "Vertaa keskiarvojen eroa $0{,}03\\,\\text{s}$ epävarmuuksiin ja päättelee, ettei eroa voi osoittaa.",
+              "text": "Vertaa keskiarvojen eroa $0{,}03\\,\\text{s}$ epävarmuuksiin ja päättelee, ettei eroa voi osoittaa, koska ero ei ole selvästi epävarmuuksia suurempi.",
               "tag": "experiment",
               "points": 1
             },
@@ -209,7 +209,7 @@
               "detail": "Vastaa kysymykseen, vaikuttaako massa vierimisaikaan."
             },
             {
-              "text": "Kertoo tuloksen epävarmuuksineen: ajat ovat samat mittaustarkkuuden rajoissa.",
+              "text": "Kertoo tuloksen epävarmuuksineen: aikojen välillä ei havaittu eroa mittausepävarmuuden rajoissa.",
               "tag": "communication",
               "points": 1
             },

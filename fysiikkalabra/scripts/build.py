@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, i18n, inquiry, mathlayout, practice
+import courses, figcat, i18n, inquiry, mathlayout, practice
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -208,7 +208,7 @@ def solutions_of(text):
     return out
 
 
-def exercise_html(e, solution_html):
+def exercise_html(e, solution_html, read=None):
     ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
     check = ""
@@ -219,7 +219,8 @@ def exercise_html(e, solution_html):
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
-    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{check}'
+    fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
+    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -318,7 +319,7 @@ def build_language(lang):
             ex_html += f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} <span class=\"count\">{T('lesson.level_count', n=len(items))}</span></summary><ol>"
             for i, e in enumerate(items):
                 show = publish == "all" or (publish == "first" and i == 0)
-                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None)
+                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read)
             ex_html += "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(
@@ -369,15 +370,14 @@ def build_language(lang):
                 if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
                                                                      re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>',
-                     "selfcheck": practice.selfcheck_html(inq.get("learn"), lambda t: nbsp_units(render_md(t)), bool(ex))}   # Arvioi osaamistasi (teacher 2026-10-28)
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             main = f'<article id="teoria" class="inquiry">{body}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
                 .replace("{{toc}}", toc).replace("{{main}}", main)
-                .replace("{{scripts}}", '<script src="inquiry.js"></script><script src="selfassess.js"></script>' if inq else "")
+                .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
         (out / name).write_text(rebase(html))

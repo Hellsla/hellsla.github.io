@@ -41,7 +41,7 @@ and fails if the change was not what the row says. A reviewer whose last verdict
 """
 import datetime, difflib, hashlib, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n, inquiry
+import courses, figcat, i18n, inquiry
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy")
@@ -83,7 +83,17 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)"}
 
 
+FIGURE_TEXTS = {"lesson": ("inquiry.json", "exit-ticket.json"), "exercises": ("exercises.json",)}   # texts whose "figure": "<id>" the hash follows
+
+
 def find_lesson(lid): return courses.find_lesson(lid)
+
+
+def figure_paths(folder):
+    """figures.py of every figure the lesson's texts refer to by id (another chapter's too), for git log."""
+    texts = " ".join(courses.lesson_file(folder, n).read_text() for n in FIGURE_TEXTS["lesson"] + FIGURE_TEXTS["exercises"]
+                     if courses.lesson_file(folder, n).is_file())
+    return sorted({figcat.code_rel(f) for f in figcat.refs_in(texts) if figcat.code_rel(f)})
 
 
 def normalized(text, name):
@@ -122,6 +132,7 @@ class Source:
         """What the reviews judge of a file: a simulation's JavaScript with its texts from lang/fi.json put back in
         place (i18n.resolve_js), so moving a text to the language file changes nothing here, while changing it there
         changes the lesson like any other content change; every other file as it is."""
+        if rel.startswith("figure:"): return figcat.slice_of(rel[7:], self.read)   # the code that draws a referenced figure
         data = self.read(rel, binary)
         if data is None or binary or not rel.endswith(".js"): return data
         lang = self.read(f"lang/{self.lang}.json")
@@ -170,6 +181,11 @@ def entries(folder, src, part="lesson"):
     out = [(n, at(n), False) for n in PARTS[part]]
     texts = courses.EXERCISE_FILES if part == "exercises" else courses.LESSON_TEXTS if part == "lesson" else courses.TEXT_FILES
     refs = courses.pic_refs_in(src.read(at(n)) for n in texts)
+    if part != "all":                                  # figures a task refers to by id (scripts/figcat.py): their drawing code, and their words in a translation
+        for fid in figcat.refs_in(" ".join(src.read(at(n)) or "" for n in FIGURE_TEXTS[part])):
+            out.append((f"figure:{fid}", f"figure:{fid}", False))
+            tf = figcat.text_folder(figcat.split_id(fid)[0], src.lang) if src.lang != i18n.SOURCE else None
+            if tf: out.append((f"figures.json:{fid}", (tf / "figures.json").relative_to(ROOT).as_posix(), False))
     if part == "exercises": return out + [(r, f"assets/{r}", r.lower().endswith(courses.BINARY)) for r in refs]
     out += [(f"tests/sims/{lid}.json", f"tests/sims/{lid}.json", False)]
     meta_text = src.read(at("meta.json"))
@@ -264,7 +280,7 @@ def published_exercises(folder):
         if r is None or r[0] != "PASS": return None
         passed[name] = {r[1]} | {c["to"] for c in carries(folder, "exercises") if c["reviewer"] == name and c["from"] == r[1]}
     log = (git("log", "--format=%H", "-n", "80", "--", courses.exercise_dir(folder).relative_to(ROOT).as_posix(), folder.relative_to(ROOT).as_posix(),
-               courses.lesson_rel(folder, "answers.py")) or "").split()
+               courses.lesson_rel(folder, "answers.py"), *figure_paths(folder)) or "").split()
     for c in log:
         hs = {hash_at(c, folder, "exercises"), hash_at(c, folder, "all")}
         if all(hs & passed[n] for n in REVIEWS): return Commit(c)
@@ -372,6 +388,7 @@ def strip_hero(text):
 
 def classify(path, diff_lines, lid):
     """Categories of one file's unified diff (its +/- lines)."""
+    if path.startswith(("figure:", "a/figure:", "b/figure:")): return {"figure"}   # a referenced figure's drawing code
     name = path.split("/")[-1]
     py, code = name.endswith(".py"), name.endswith(".js")
     binary = name.lower().endswith(courses.BINARY)
@@ -538,7 +555,7 @@ def scope(folder, part="lesson"):
     """For each reviewer of `part`: {'mode': none|delta|full, 'base': commit|None, 'why': ..., 'diff': ..., 'categories': [...]}."""
     lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
     log = (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
-               legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json") or "").split()
+               legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
     out, cache = {}, {}
     for name in REVIEWS:
         rep = report(folder, name, part)

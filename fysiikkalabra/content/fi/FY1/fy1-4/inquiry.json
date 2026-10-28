@@ -32,11 +32,11 @@
         {
           "text": "Satunnaisvirhe: lukeminen ja mittanauhan asettaminen vaihtelevat hieman joka kerralla.",
           "correct": true,
-          "feedback": "Oikein. Satunnaisvirhe hajottaa tulokset molempiin suuntiin keskiarvon ympärille (luku *Mittaaminen ja mittauksen luotettavuus*). Samasta syystä mittauspisteet eivät osu täsmälleen suoralle, ja siksi sovitamme niihin suoran."
+          "feedback": "Oikein. Satunnaisvirhe hajottaa tulokset molempiin suuntiin keskiarvon ympärille (luku *Mittaaminen ja mittauksen luotettavuus*). Samasta syystä mittauspisteet eivät yleensä osu kaikki täsmälleen suoralle, ja siksi sovitamme niihin suoran."
         },
         {
-          "text": "Moka: mittaaja on virheellisesti laskenut jonkin tuloksen.",
-          "feedback": "Moka olisi yksittäinen selvästi väärä tulos. Vaihtelu kuuluu jokaiseen mittaukseen, vaikka kukaan ei tekisi mokia (luku *Mittaaminen ja mittauksen luotettavuus*)."
+          "text": "Karkea virhe: mittaaja on erehtynyt ja laskenut jonkin tuloksen väärin.",
+          "feedback": "Karkea virhe olisi yksittäinen selvästi väärä tulos. Vaihtelu kuuluu jokaiseen mittaukseen, vaikka kukaan ei erehtyisi (luku *Mittaaminen ja mittauksen luotettavuus*)."
         }
       ],
       "optional": true
@@ -87,7 +87,7 @@
         {
           "text": "Tyhjän mittalasin massan kohdalle, koska kun nestettä on nolla, jäljelle jää vain lasi.",
           "correct": true,
-          "feedback": "Esimerkkiaineisto tukee tätä: poikkeama $d$ on pienin, kun vakiotermi on noin $61\\,\\text{g}$ (noin $1\\,\\text{g}$), ja se on tyhjän lasin massa. Vakiotermi $b$ on $y$:n arvo silloin, kun $x = 0$."
+          "feedback": "Esimerkkiaineisto tukee tätä: poikkeama $d$ on pienin, kun vakiotermi on noin $61\\,\\text{g}$ ($d \\approx 1\\,\\text{g}$), ja se on tyhjän lasin massa. Vakiotermi $b$ on $y$:n arvo silloin, kun $x = 0$."
         },
         {
           "text": "Ensimmäisen mittauspisteen kohdalle, noin $78{,}5\\,\\text{g}$.",
@@ -220,7 +220,7 @@
           },
           {
             "text": "Ei sovi, koska mikään suora ei kulje kaikkien pisteiden kautta, vaikka mittaukset olisivat tarkkoja.",
-            "feedback": "Missään aineistossa suora ei kulje kaikkien pisteiden kautta, koska mittauksissa on aina satunnaisvirhettä. Sopivuuden ratkaisee se, ovatko poikkeamat satunnaisia vai muodostavatko ne kuvion."
+            "feedback": "Mitatussa aineistossa suora ei yleensä kulje kaikkien pisteiden kautta, koska mittauksissa on satunnaisvirhettä. Sopivuuden ratkaisee se, ovatko poikkeamat satunnaisia vai muodostavatko ne kuvion."
           },
           {
             "text": "Sopii, koska kaikki poikkeamat ovat suunnilleen yhtä pitkiä ja pisteet ovat lähellä suoraa.",
@@ -299,7 +299,7 @@
         },
         {
           "text": "Kulmakerroin olisi pitänyt laskea yhdestä pisteestä jakamalla $s$ ajalla $t$, esimerkiksi $0{,}6\\,\\text{m} : 1{,}0\\,\\text{s}$.",
-          "feedback": "Yksi piste antaa $0{,}60\\,\\text{m/s}$ (1 s), $0{,}40\\,\\text{m/s}$ (2 s) ja $0{,}53\\,\\text{m/s}$ (3 s): jokaisen oman virheen mukainen arvo. Lisäksi $s : t$ antaa kulmakertoimen vain, jos suora kulkee origon kautta. Suoralta luetut kaksi kaukaista pistettä ovat luotettavampi tapa."
+          "feedback": "Yksi piste antaa $0{,}60\\,\\text{m/s}$ ($1\\,\\text{s}$), $0{,}40\\,\\text{m/s}$ ($2\\,\\text{s}$) ja $0{,}53\\,\\text{m/s}$ ($3\\,\\text{s}$): jokaisen oman virheen mukainen arvo. Lisäksi $s : t$ antaa kulmakertoimen vain, jos suora kulkee origon kautta. Suoralta luetut kaksi kaukaista pistettä ovat luotettavampi tapa."
         }
       ]
     },
@@ -390,11 +390,37 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Suoran piirtäminen",
+      "prompt": "Kuusi mittauspistettä asettuu suurin piirtein suoralle, mutta ei täsmälleen. Miten kuvaajaan piirretään sovitus?",
+      "choices": [
+        {
+          "text": "Pisteet yhdistetään murtoviivaksi, jotta kaikki mittaukset tulevat mukaan.",
+          "feedback": "Murtoviiva seuraisi myös jokaisen mittauksen satunnaista virhettä. Toisen mittauskerran pisteet olisivat vähän muualla, ja viiva olisi erilainen, vaikka ilmiö on sama. Suora kuvaa ilmiön yleistä riippuvuutta."
+        },
+        {
+          "text": "Suora piirretään pisteiden joukon keskeltä niin, että pisteitä on sen molemmin puolin suunnilleen yhtä paljon.",
+          "feedback": "Oikein. Mittausvirheet ovat satunnaisia, joten pisteet poikkeavat suorasta kumpaankin suuntaan. Hyvä sovitus kulkee lähellä kaikkia pisteitä, eikä sen tarvitse osua yhteenkään.",
+          "correct": true
+        },
+        {
+          "text": "Suora piirretään kahden ensimmäisen pisteen kautta, koska ne on mitattu ensin.",
+          "feedback": "Kaksi pistettä kertoo suoran suunnan huonosti: kummassakin on oma mittausvirheensä, ja se vaikuttaa suoran jyrkkyyteen. Sovituksessa otetaan huomioon kaikki pisteet."
+        },
+        {
+          "text": "Suora piirretään aina origon kautta, koska kaksi suuretta ovat verrannolliset.",
+          "feedback": "Suoran ei tarvitse kulkea origon kautta. Suoraan verrannollisuudessa näin on, mutta jos pisteet osoittavat suoran leikkaavan $y$-akselin muualla, vakiotermi $b$ ei ole nolla ja suora piirretään pisteiden mukaan."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskenta",
-      "prompt": "Patikkaretken matka $s$ ajan $t$ funktiona noudattaa mittauksiin sovitettua suoraa, joka kulkee pisteiden $(1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$ kautta. Retkeläinen oli siis jo kulkenut matkaa, kun kello käynnistettiin. Monen tunnin kohdalla matka on 25 km? Vastaa tunteina.",
+      "title": "3. Laskenta",
+      "prompt": "Patikkaretken matka $s$ ajan $t$ funktiona noudattaa mittauksiin sovitettua suoraa, joka kulkee pisteiden $(1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$ kautta. Retkeläinen oli siis jo kulkenut matkaa, kun kello käynnistettiin. Oletetaan, että hän jatkaa samaa vauhtia myös viimeisen mittauksen jälkeen. Monen tunnin kohdalla matka on $25\\,\\text{km}$? Vastaa tunteina.",
       "answer": 7.0,
       "unit": "h",
       "tolerance": 0.02,
@@ -413,13 +439,13 @@
           "feedback": "Vaihdoit kulmakertoimen ja vakiotermin: suora $s = 4{,}0\\,t + 3{,}0$ antaisi $t = (25 - 3{,}0) : 4{,}0 = 5{,}5\\,\\text{h}$. Oikeassa suorassa kulmakerroin on $3{,}0\\,\\text{km/h}$ (nopeus) ja vakiotermi $4{,}0\\,\\text{km}$ (matka kellon käynnistyshetkellä)."
         }
       ],
-      "solution": "**Annettu:** suoran pisteet $(t_1;\\ s_1) = (1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(t_2;\\ s_2) = (5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$; matka $s = 25\\,\\text{km}$\n\n**Kysytty:** aika $t$, jolla $s = 25\\,\\text{km}$\n\n**Periaate:** Matka kasvaa tasaisesti, joten matka noudattaa suoraa $s = kt + b$. Kulmakerroin lasketaan suoran kahdesta pisteestä ja vakiotermi yhdestä, ja aika ratkaistaan suoran yhtälöstä.\n\n**Kaava:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ ja $s = kt + b$, josta\n\n$$t = \\frac{s - b}{k}$$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina.\n\n**Sijoitus:** $k = \\dfrac{19{,}0\\,\\text{km} - 7{,}0\\,\\text{km}}{5{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$ ja $t = \\dfrac{25\\,\\text{km} - 4{,}0\\,\\text{km}}{3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7{,}0\\,\\text{h}$\n\n**Vastaus:** $7{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Järkevyys:** Tarkistus: $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7{,}0\\,\\text{h} + 4{,}0\\,\\text{km} = 25\\,\\text{km}$. Vauhti $3{,}0\\,\\text{km/h}$ on kävelyn luokkaa. Aika on lyhyempi kuin $25\\,\\text{km} : 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8{,}3\\,\\text{h}$, koska lähtömatka $4{,}0\\,\\text{km}$ on jo kuljettu."
+      "solution": "**Annettu:** suoran pisteet $(t_1;\\ s_1) = (1{,}0\\,\\text{h};\\ 7{,}0\\,\\text{km})$ ja $(t_2;\\ s_2) = (5{,}0\\,\\text{h};\\ 19{,}0\\,\\text{km})$; matka $s = 25\\,\\text{km}$\n\n**Kysytty:** aika $t$, jolla $s = 25\\,\\text{km}$\n\n**Periaate:** Matka kasvaa tasaisesti, joten matka noudattaa suoraa $s = kt + b$. Kulmakerroin lasketaan suoran kahdesta pisteestä ja vakiotermi yhdestä, ja aika ratkaistaan suoran yhtälöstä.\n\n**Kaava:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ ja $s = kt + b$, josta\n\n$$t = \\frac{s - b}{k}$$\n\n**Muunnokset:** Ei tarvita: matkat ovat kilometreinä ja ajat tunteina.\n\n**Sijoitus:** $k = \\dfrac{19{,}0\\,\\text{km} - 7{,}0\\,\\text{km}}{5{,}0\\,\\text{h} - 1{,}0\\,\\text{h}} = 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7{,}0\\,\\text{km} - 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}0\\,\\text{h} = 4{,}0\\,\\text{km}$ ja $t = \\dfrac{25\\,\\text{km} - 4{,}0\\,\\text{km}}{3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7{,}0\\,\\text{h}$\n\n**Vastaus:** $7{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten kulmakertoimessa $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Järkevyys:** Tarkistus: $3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7{,}0\\,\\text{h} + 4{,}0\\,\\text{km} = 25\\,\\text{km}$. Vauhti $3{,}0\\,\\text{km/h}$ on kävelyn luokkaa. Aika on lyhyempi kuin $25\\,\\text{km} : 3{,}0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8{,}3\\,\\text{h}$, koska lähtömatka $4{,}0\\,\\text{km}$ on jo kuljettu. Aika $7{,}0\\,\\text{h}$ on mittausten ulkopuolella, joten tulos pätee vain, jos vauhti todella pysyy samana."
     },
     {
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä, miksi mittauspisteitä ei yhdistetä murtoviivaksi ja miksi suoran kulmakerroin lasketaan kahdesta kaukana toisistaan olevasta suoran pisteestä eikä kahdesta mittauspisteestä.",
       "criteria": [
         "Sanon, että jokaisessa mittauksessa on satunnaisvirhe, jonka murtoviiva toistaisi.",
@@ -434,7 +460,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

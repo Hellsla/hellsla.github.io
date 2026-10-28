@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 53a1d878271ce998
+CONTENT-HASH: 3b497c3d74b89ea1
+
+Round 2: exit ticket 2 → 1 (the greenhouse question removed), stage text "Lopuksi yksi".
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (conduction, convection, radiation; P = UAΔT; energy balance and greenhouse effect) are correct; new subheadings 'Rakennuksen lämpöhäviöt', 'Energiatasapaino', 'Kasvihuoneilmiö', 'Ilmastonmuutos' head matching paragraphs, no text changed; `Kaava: Lämpöteho ja U-arvo` fits. Nothing in the diff changes the physics, numbers or answers.
+- Remaining exit question: P = UAΔT = 0,20 · 50 · 30 = 300 W, ΔT = 20 − (−10) = 30 K (recomputed).
+- Count 1 matches "Lopuksi yksi".

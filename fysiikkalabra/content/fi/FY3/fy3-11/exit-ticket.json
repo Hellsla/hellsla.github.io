@@ -4,11 +4,7 @@
     "a": "$W_\\text{k} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0{,}000\\,50\\,\\text{m}^3 = 100\\,\\text{J}$."
   },
   {
-    "q": "Automoottoriin syötetään polttoaineen energiaa teholla 60 kW, ja moottorin hyötysuhde on 30 %. Kuinka suuri on mekaaninen teho, ja minne loput energiasta menee?",
-    "a": "Mekaaninen teho on 0,30 · 60 kW = 18 kW. Loput 42 kW siirtyy lämpönä ympäristöön pakokaasujen ja jäähdyttimen kautta."
-  },
-  {
-    "q": "Ilmalämpöpumppu luovuttaa sisälle noin kolme kertaa niin paljon lämpöä kuin se käyttää sähköä. Miksi tämä ei riko energian säilymistä?",
-    "a": "Pumppu ei tuota lämpöä tyhjästä, vaan siirtää sitä ulkoilmasta sisälle. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähkön summa, joten energia säilyy."
+    "q": "Automoottoriin syötetään polttoaineen energiaa teholla $60\\,\\text{kW}$, ja moottorin hyötysuhde on $30\\,\\%$. Kuinka suuri on mekaaninen teho, ja minne loput energiasta menee?",
+    "a": "Mekaaninen teho on 0,30 · $60\\,\\text{kW}$ = $18\\,\\text{kW}$. Loput $42\\,\\text{kW}$ siirtyy lämpönä ympäristöön pakokaasujen ja jäähdyttimen kautta."
   }
 ]

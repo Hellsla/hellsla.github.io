@@ -1,14 +1,6 @@
 [
   {
-    "q": "Nostat 10 kg:n laatikon 1,0 m ylöspäin ja kannat sitä sitten 5,0 m vaakasuoraan tasaisella vauhdilla. Kuinka suuren työn kannatteleva voimasi tekee yhteensä?",
-    "a": "Noin 98 J. Nosto tekee työn $W = mgh = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}0\\,\\text{m} \\approx 98\\,\\text{J}$. Vaakasuora kantaminen ei tee työtä, koska voima on kohtisuorassa liikettä vastaan."
-  },
-  {
-    "q": "$(s, F)$-kuvaajassa voima on vaakasuora jana 40 N:n korkeudella välillä 0–0,50 m. Mitä kuvaajan ja $s$-akselin väliin jäävä pinta-ala kertoo, ja kuinka suuri se on?",
+    "q": "$(s, F)$-kuvaajassa voima on vaakasuora jana $40\\,\\text{N}$:n korkeudella välillä $0\\text{–}0{,}50\\,\\text{m}$. Mitä kuvaajan ja $s$-akselin väliin jäävä pinta-ala kertoo, ja kuinka suuri se on?",
     "a": "Pinta-ala kertoo voiman tekemän työn: $40\\,\\text{N} \\cdot 0{,}50\\,\\text{m} = 20\\,\\text{J}$."
-  },
-  {
-    "q": "Kaksi hissiä nostaa saman kuorman samalle korkeudelle, toinen kaksi kertaa nopeammin. Kumpi tekee enemmän työtä ja kumman teho on suurempi?",
-    "a": "Työ on sama molemmilla. Nopeamman hissin teho on kaksinkertainen."
   }
 ]

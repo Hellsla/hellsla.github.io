@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c049419582c3b6e6
+CONTENT-HASH: 06cb066353b21674
+
+Delta review over the audit's PASS (c049419582c3b6e6): one exercise replaced by a figure task, LaTeX units.
 
 ## Blocking
-(none)
-
+- none
 ## Polish
-- solutions.md:9 and :19 — Järkevyys lines give "29 m/s ≈ 106 km/h" and "7,8 m/s ≈ 28 km/h" without the meaning. The lesson explains it (3600 m in an hour = 3,6 km), so a short "(1 m/s = 3,6 km/h)" reminder would close the loop; not blocking, since they are plausibility checks.
-- Round-2 polish (table row label "ilmanvastus" vs. the control name Ympäristö) still stands where it applies.
-
+- Level L2 fits (read, derive g_B, solve for t). B at 2,5 s is between gridlines, so the student must compute, not read; fine, the tolerance 3 % (+-0,075 s) is too tight for eye reading but the intended route is calculation.
+- A shortcut exists (B is twice as steep, so half the time).
 ## Checked
-- Delta: the 54,0 km/h Muunnokset now reads "sijoitetaan 1 km = 1000 m ja 1 h = 3600 s: 54,0·1000 m : 3600 s = 15,0 m/s"; arithmetic right, t = 15,0 : 9,81 = 1,53 s unchanged.
-- Consistent with the lesson's by-meaning conversion; the m/s → km/h exercise direction (if any) follows the lesson's reasoning, no bare factor remains.
-- No "3,6" factor, no ×, no "/" as division in the solutions; \cdot and ":" used.
-- Counts 5/4/3 and contexts unchanged; Finnish correct in the changed line.
+- Figure needed: the text gives no speeds or accelerations; A and B only in the figure. 360 px: two lines in blue and orange, labelled A and B (colour not alone), y labels 10-40, x 1-6; crossings (5 s; 20) and (5 s; 40) on gridlines.
+- g_A=20/5=4,0, g_B=40/5=8,0 m/s^2, t_B=20/8,0=2,5 s correct; answers.py (20/5.0)*5.0/(40/5.0) = 2,5; **Kuvaajan lukeminen:** present.
+- Replaced task (stone, km/h conversion) is covered elsewhere in the set (L1-04 style conversions); the set still has conversion practice.

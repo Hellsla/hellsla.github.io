@@ -69,14 +69,15 @@
 **Järkevyys:** Kaksi ja puoli litraa vettä on $2{,}5\,\text{kg}$. Etanoli on vettä kevyempää, joten sen massa on hieman pienempi, noin $0{,}79 \cdot 2{,}5\,\text{kg} \approx 2{,}0\,\text{kg}$.
 
 ## fy1-7-L2-03
-**Annettu:** kuulan massa $m = 33{,}0\,\text{g}$; vesi ennen $V_1 = 50{,}0\,\text{ml}$ ja jälkeen $V_2 = 54{,}2\,\text{ml}$
-**Kysytty:** kuulan aineen tiheys $\rho$ yksikössä $\text{kg/m}^3$
-**Periaate:** Upotettu kuula syrjäyttää oman tilavuutensa verran vettä, joten kuulan tilavuus on lukemien erotus. Tiheys on massa tilavuutta kohti.
-**Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V} = \dfrac{m}{V_2 - V_1}$
-**Muunnokset:** $V = 54{,}2\,\text{ml} - 50{,}0\,\text{ml} = 4{,}2\,\text{ml} = 4{,}2\,\text{cm}^3 = 4{,}2 \cdot 10^{-6}\,\text{m}^3$ ja $33{,}0\,\text{g} = 0{,}0330\,\text{kg}$.
-**Sijoitus:** $\rho = \dfrac{0{,}0330\,\text{kg}}{4{,}2 \cdot 10^{-6}\,\text{m}^3} = 7857\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $7900\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska lukemien erotus $4{,}2\,\text{ml}$ on kahden numeron tarkkuudella, vaikka massa ja lukemat ovat tarkempia.
-**Järkevyys:** Tulos on lähellä raudan tiheyttä $7870\,\tfrac{\text{kg}}{\text{m}^3}$, ja teräs on pääosin rautaa. Arvio: $33\,\text{g} : 4\,\text{cm}^3 \approx 8\,\tfrac{\text{g}}{\text{cm}^3}$.
+**Annettu:** metallikappaleen massa $m = 89{,}0\,\text{g}$; kuva mittalasista ennen ja jälkeen kappaleen upottamisen
+**Kysytty:** kappaleen aineen tiheys $\rho$ yksikössä $\text{kg/m}^3$
+**Periaate:** Upotettu kappale syrjäyttää oman tilavuutensa verran vettä, joten kappaleen tilavuus on veden lukemien erotus. Tiheys on massa tilavuutta kohti.
+**Kuvaajan lukeminen:** Asteikon numerot ovat $20\,\text{ml}$ välein, pitkät viivat $10\,\text{ml}$ välein ja pienet viivat $2\,\text{ml}$ välein. Ennen upotusta vesi yltää merkkiin $V_1 = 40\,\text{ml}$. Upotuksen jälkeen vesi yltää pitkään viivaan numeroiden $40$ ja $60$ puolivälissä, $V_2 = 50\,\text{ml}$. Vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
+**Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V}$
+**Muunnokset:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 1{,}0 \cdot 10^{-5}\,\text{m}^3$ ja $89{,}0\,\text{g} = 0{,}0890\,\text{kg}$.
+**Sijoitus:** $\rho = \dfrac{0{,}0890\,\text{kg}}{1{,}0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
+**Vastaus:** $8900\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska tilavuus $10\,\text{ml}$ luetaan asteikolta noin $1\,\text{ml}$:n tarkkuudella.
+**Järkevyys:** Arvio: $89\,\text{g} : 10\,\text{cm}^3 \approx 9\,\tfrac{\text{g}}{\text{cm}^3}$, mikä on $9000\,\tfrac{\text{kg}}{\text{m}^3}$. Tulos on lähellä kuparin tiheyttä $8960\,\tfrac{\text{kg}}{\text{m}^3}$, joten kappale voi olla kuparia.
 
 ## fy1-7-L2-04
 **Annettu:** tyhjän pullon massa $m_0 = 215\,\text{g}$, nesteen tilavuus $V = 250\,\text{cm}^3$ ja pullon sekä nesteen yhteismassa $m_\text{yht} = 412\,\text{g}$
@@ -119,4 +120,4 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Muunnokset:** Säde $r = 0{,}50\,\text{mm} = 0{,}50 \cdot 10^{-3}\,\text{m}$, joten $r^2 = 2{,}5 \cdot 10^{-7}\,\text{m}^2$.
 **Sijoitus:** $V = \dfrac{0{,}50\,\text{kg}}{8960\,\tfrac{\text{kg}}{\text{m}^3}} = 5{,}58 \cdot 10^{-5}\,\text{m}^3$ ja $A = \pi \cdot 2{,}5 \cdot 10^{-7}\,\text{m}^2 = 7{,}85 \cdot 10^{-7}\,\text{m}^2$, joten $L = \dfrac{5{,}58 \cdot 10^{-5}\,\text{m}^3}{7{,}85 \cdot 10^{-7}\,\text{m}^2} = 71{,}1\,\text{m}$
 **Vastaus:** $71\,\text{m}$, kaksi merkitsevää numeroa, koska halkaisija $1{,}0\,\text{mm}$ tunnetaan kahden numeron tarkkuudella.
-**Järkevyys:** Puoli kiloa kuparia on tilavuudeltaan vain noin $56\,\text{cm}^3$, eli puoli desilitraa. Ohueksi, tuhannesosametrin paksuiseksi langaksi vedettynä se riittää kymmenien metrien pituudelle, joten 71 m on uskottava.
+**Järkevyys:** Puoli kiloa kuparia on tilavuudeltaan vain noin $56\,\text{cm}^3$, eli puoli desilitraa. Ohueksi, tuhannesosametrin paksuiseksi langaksi vedettynä se riittää kymmenien metrien pituudelle, joten $71\,\text{m}$ on uskottava.

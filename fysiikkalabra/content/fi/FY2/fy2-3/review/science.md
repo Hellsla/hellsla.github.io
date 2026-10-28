@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a0ea33a66467fe5e
+CONTENT-HASH: a521877d291249c4
 
 ## Blocking
 
 ## Polish
-- sim.js:133 — `fP` drops trailing zeros: canvas $P_\text{A} = 2\,\text{kW}$ beside readout $2000\,\text{W}$ — show W on the canvas or keep $2{,}0\,\text{kW}$.
-- inquiry.json:81 `model`, sim.js:53 — "sama määrä kierroksia kilowattituntia kohti": disc speed ∝ P in real time, but its turns do not count the model's E and it spins regardless of the slider — say only that its speed shows the power.
-- lesson.md:35,126,140 and inquiry.json — symbol products as $P\,t$ while the example uses $E \cdot \text{yksikköhinta}$ — use `\cdot` throughout if the teacher's rule covers symbol products.
-- inquiry.json tarkistus-2 mistake 0.8 — "kerro 1000:lla" is not a substitution — write $0{,}8\,\text{kW} = 0{,}8 \cdot 1000\,\text{W}$.
+- content/fi/FY2/fy2-3/inquiry.json:81 — the sim's Mallin oletukset says the powers are "luvun taulukon tyypillisiä pyöristettyjä arvoja", but the table has an LED lamp at 8 W and no toaster, while the sim uses a 10 W lamp and a 1000 W toaster — say "tyypillisiä pyöristettyjä arvoja" without "luvun taulukon", or add the 10 W lamp and the toaster to the table (internal consistency only; the values are plausible).
+- content/fi/FY2/fy2-3/lesson.md:108 — the 2025 price figure (Tilastokeskus, about 18 snt/kWh in total) carries no table or period; name the statistic (for example the household total price, a given quarter) so it can be checked.
+- glossary.json "teho" (shown with this lesson) — adds "P = W/t" and "P = Fv", which FY2's scope and this slot exclude ("työn käsitettä ei tässä moduulissa vielä käytetä"); the shared entry is not in this lesson's hash, but the page's term box contradicts the slot.
 
 ## Checked
-- All numbers of lesson.md, inquiry.json, exit ticket and lesson-answers.py recomputed in one script: all match.
-- koe-1: A, tA, B locked, tB varied; at tB = 900 min EB_kJ = EA_kJ = 540 exactly; measured keys in simState; reveal after 3 rows.
-- koe-2: A, B, tB locked, tA varied; tA = 30 min gives EA_kWh = 1 exactly.
-- sim.js: E = P t (t in s); graph slope P·3600/f consistent with the plotted point, one scale for both, dashed extension clipped, 1–2–5 axes; canvas and readouts LaTeX (shots 1280/390); speed affects only the disc.
-- Model box states the constant-power assumption, typical rounded ratings, fridge/thermostat caveat, model values not measurements.
-- Figures 1 and 2 to scale (bars 400/200/16 px; lines and ΔE/Δt = 40 kJ : 20 s = 2000 W).
-- P = ΔE/Δt, E = P t, t = E : P, 1 kWh = 3,6 MJ with conditions; inside FY2 scope, no work or force.
-- Worked example: seven stages, conversions by substitution, 2-figure rounding justified, real reasonableness check.
-- Round 2: experiment names/measure labels now LaTeX (table header renders, koe-1 shot); arrow-key sentence true (slider step 1 min).
-- OL3 ~1600 MW (TVO) and price ~18 snt/kWh (Tilastokeskus 2025) sourced and realistic.
+- P = ΔE/Δt defined as the rate of conversion or transfer, the mean-power condition for uneven use stated, E = P t and t = E/P only "tasaisella teholla"; no work or force in the lesson (scope).
+- 1 kWh = 1000 W · 3600 s = 3,6 MJ; kW·h = kWh shown; "teho on 2 kWh" misconception correct.
+- Figures to scale: bars 400 : 200 : 16 px = 2000 : 1000 : 80 J; graph lines end at 120, 60 and 4,8 kJ at 60 s (1,83 px/kJ, 6,43 px/s), and the slope triangle 40 kJ / 20 s = 2000 W.
+- Worked example recomputed: 0,080 kW · 120 h = 9,6 kWh, 192 snt = 1,92 € → 1,9 €; symbolic first, rounding and check right.
+- Every number in inquiry.json and the exit ticket recomputed independently (15 h, 540 kJ, 864 kJ, 30 min, 21,9 → 22 kWh, 800 W, 0,90 €, 43,8 vs 36,5 kWh, 0,15 vs 0,24 kWh, 800 000 kettles); agrees with lesson-answers.py.
+- Each choice item has exactly one correct option; every distractor's feedback names the actual error with correct numbers (the 150 h and 1 h options included).
+- Experiments: koe-1 locks A, tA, B and varies tB; the slider (1–1440 min, 1 min steps) reaches 900 min where EB_kJ = EA_kJ = 540; koe-2 reaches EA_kWh = 1 at 30 min; measured keys are in simState.
+- sim.js implements E = P t with t in seconds, the disc turning in proportion to P (fixed turns per kWh), solid line to the device's time and dashed beyond; the constant-power assumption and the duty-cycling of fridge, sauna heater and kettle are stated in the model box.

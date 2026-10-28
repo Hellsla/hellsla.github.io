@@ -1,5 +1,5 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-5` writes them into lesson.md."""
-from figlib import Fig, INK, MUTED, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD_LIGHT, ALUMINIUM
+from figlib import Fig, Axes, fi, INK, MUTED, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD_LIGHT, ALUMINIUM
 import herolib as H
 
 
@@ -79,6 +79,21 @@ def work_sign():
     return f.svg()
 
 
+def piston_force():
+    """Task variant: the force of a piston on the air it compresses, as a straight (s, F) line from (0; 200 N) to (0,20 m; 400 N).
+    No area shaded and no work written: the student reads the two end points and finds the area."""
+    f = Fig("fy35-piston-force", 330, "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s "
+            "funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti pisteestä (0 m; 200 N) pisteeseen (0,20 m; 400 N). "
+            "Ruudukon väli on 0,05 m ja 50 N.")
+    ax = Axes(f, (96, 280), (470, 56), x=(0, 0.25), y=(0, 450), xticks=[0.05, 0.10, 0.15, 0.20, 0.25],
+              yticks=[50, 100, 150, 200, 250, 300, 350, 400, 450], xlabel=r"s\ (\text{m})", ylabel=r"F\ (\text{N})",
+              xfmt=lambda v: fi(v, 2), yfmt=lambda v: fi(v) if v % 100 == 0 else "")
+    ax.line([(0, 200), (0.2, 400)], HEAT, 3)
+    ax.point(0, 200, HEAT)
+    ax.point(0.2, 400, HEAT)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: hands pumping a bicycle tyre, the bottom of the pump getting hot."""
     f = H.hero("fy35-hero", "Kuvitus: kädet painavat jalkapumpun kahvaa alas, ja letku vie ilman polkupyörän renkaaseen. Pumpun "
@@ -112,4 +127,11 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "two-ways": two_ways, "energy-balance": energy_balance, "work-sign": work_sign}
+FIGURES = {"hero": hero, "two-ways": two_ways, "energy-balance": energy_balance, "work-sign": work_sign, "piston-force": piston_force}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "two-ways": "safe: work and heat as two ways, no values",
+    "energy-balance": "reveals: ΔU = Q + W and the sign convention",
+    "work-sign": "reveals: the sign of W in compression and expansion",
+    "piston-force": "safe: a piston's force on the air as a straight (s, F) line, the end points listed, no area or work",
+}

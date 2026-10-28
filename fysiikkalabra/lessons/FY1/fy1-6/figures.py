@@ -76,4 +76,25 @@ def same_fall():
     return f.svg()
 
 
-FIGURES = {"free-fall": free_fall, "vt-graph": vt_graph, "same-fall": same_fall}
+def two_planets():
+    """A task-only picture: the (t,v) lines of bodies dropped from rest on two planets without an atmosphere; no slope marked."""
+    f = Fig("fy16-two", 340, "(t,v)-kuvaaja mittakaavassa: kaksi suoraa origosta, planeetan A ja planeetan B pinnalla levosta pudotetun kappaleen nopeus v ajan t funktiona. "
+            "Ruudukon väli on 1 s ja 5 m/s. Planeetan A suora kulkee ruudukon risteyksen (5 s; 20 m/s) kautta ja planeetan B suora risteyksen (5 s; 40 m/s) kautta. "
+            "Aika-akseli ulottuu 6 sekuntiin.")
+    ax = Axes(f, (96, 300), (470, 60), x=(0, 6), y=(0, 40), xticks=[1, 2, 3, 4, 5, 6], yticks=[5, 10, 15, 20, 25, 30, 35, 40],
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
+    ax.line([(0, 0), (6, 24)], COLD, 3.5)
+    ax.line([(0, 0), (5, 40)], HEAT, 3.5)
+    f.tex(ax.X(6) + 8, ax.Y(24), r"\text{A}", "start", COLD)
+    f.tex(ax.X(5) + 8, ax.Y(40) - 14, r"\text{B}", "start", HEAT)
+    return f.svg()
+
+
+FIGURES = {"free-fall": free_fall, "vt-graph": vt_graph, "same-fall": same_fall, "two-planets": two_planets}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "free-fall": "reveals: the fall distances and speeds at 0–3 s",
+    "vt-graph": "reveals: the slope g = 9,81 m/s²",
+    "same-fall": "reveals: equal speeds for 1 kg and 5 kg",
+    "two-planets": "safe: two (t,v) lines from the origin, grid crossings to read, no slopes written (vt-graph is the lesson figure)",
+}

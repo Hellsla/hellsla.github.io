@@ -3,7 +3,7 @@
   {
    "id": "fy1-7-L1-01",
    "level": 1,
-   "text": "Kierrätyspisteellä punnitaan harmaa metallinen harkko. Sen massa on 340 g ja tilavuus 30,0 cm³. Kuinka suuri on harkon aineen tiheys? Anna vastaus yksikössä g/cm³.",
+   "text": "Kierrätyspisteellä punnitaan harmaa metallinen harkko. Sen massa on $340\\,\\text{g}$ ja tilavuus $30{,}0\\,\\text{cm}^3$. Kuinka suuri on harkon aineen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
    "answer": 11.3,
    "unit": "g/cm³",
    "tolerance": 0.02
@@ -11,7 +11,7 @@
   {
    "id": "fy1-7-L1-02",
    "level": 1,
-   "text": "Alumiinilevyn tilavuus on 35,0 cm³, ja alumiinin tiheys on 2,70 g/cm³. Kuinka suuri on levyn massa? Anna vastaus grammoina.",
+   "text": "Alumiinilevyn tilavuus on $35{,}0\\,\\text{cm}^3$, ja alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$. Kuinka suuri on levyn massa? Anna vastaus grammoina.",
    "answer": 94.5,
    "unit": "g",
    "tolerance": 0.02
@@ -19,7 +19,7 @@
   {
    "id": "fy1-7-L1-03",
    "level": 1,
-   "text": "Kemian luokassa mitataan vaa'alla 316 g etanolia, jonka tiheys on 0,79 g/cm³. Kuinka suuri on nesteen tilavuus? Anna vastaus kuutiosenttimetreinä.",
+   "text": "Kemian luokassa mitataan vaa'alla $316\\,\\text{g}$ etanolia, jonka tiheys on $0{,}79\\,\\text{g/cm}^3$. Kuinka suuri on nesteen tilavuus? Anna vastaus kuutiosenttimetreinä.",
    "answer": 400,
    "unit": "cm³",
    "tolerance": 0.02
@@ -27,7 +27,7 @@
   {
    "id": "fy1-7-L1-04",
    "level": 1,
-   "text": "Betonilaatan tilavuus on 0,75 m³. Betonin tiheys on 2400 kg/m³. Kuinka suuri on laatan massa? Anna vastaus kilogrammoina.",
+   "text": "Betonilaatan tilavuus on $0{,}75\\,\\text{m}^3$. Betonin tiheys on $2400\\,\\text{kg/m}^3$. Kuinka suuri on laatan massa? Anna vastaus kilogrammoina.",
    "answer": 1800,
    "unit": "kg",
    "tolerance": 0.02
@@ -35,7 +35,7 @@
   {
    "id": "fy1-7-L1-05",
    "level": 1,
-   "text": "Jäälohkon massa on 36,8 kg ja tilavuus 0,0400 m³. Kuinka suuri on jään tiheys? Anna vastaus yksikössä kg/m³.",
+   "text": "Jäälohkon massa on $36{,}8\\,\\text{kg}$ ja tilavuus $0{,}0400\\,\\text{m}^3$. Kuinka suuri on jään tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
    "answer": 920,
    "unit": "kg/m³",
    "tolerance": 0.02
@@ -45,7 +45,7 @@
   {
    "id": "fy1-7-L2-01",
    "level": 2,
-   "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on 19 300 kg/m³. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
+   "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on $19\\,300\\,\\text{kg/m}^3$. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
    "answer": 1.9,
    "unit": "kg",
    "tolerance": 0.02
@@ -53,7 +53,7 @@
   {
    "id": "fy1-7-L2-02",
    "level": 2,
-   "text": "Laboratoriossa on pullo, jossa on 2,5 dm³ etanolia. Etanolin tiheys on 790 kg/m³. Kuinka suuri on nesteen massa? Anna vastaus kilogrammoina.",
+   "text": "Laboratoriossa on pullo, jossa on $2{,}5\\,\\text{dm}^3$ etanolia. Etanolin tiheys on $790\\,\\text{kg/m}^3$. Kuinka suuri on nesteen massa? Anna vastaus kilogrammoina.",
    "answer": 2.0,
    "unit": "kg",
    "tolerance": 0.02
@@ -61,15 +61,16 @@
   {
    "id": "fy1-7-L2-03",
    "level": 2,
-   "text": "Teräskuulan massa on 33,0 g. Kun kuula upotetaan mittalasiin, jossa on vettä 50,0 ml, vesi nousee lukemaan 54,2 ml. Kuinka suuri on kuulan aineen tiheys? Anna vastaus yksikössä kg/m³.",
-   "answer": 7900,
+   "text": "Metallikappaleen massa on $89{,}0\\,\\text{g}$. Kuvassa on mittalasi ennen kappaleen upottamista ja sen jälkeen. Kuinka suuri on kappaleen aineen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
+   "figure": "fy1-7/cylinders-read",
+   "answer": 8900,
    "unit": "kg/m³",
-   "tolerance": 0.02
+   "tolerance": 0.03
   },
   {
    "id": "fy1-7-L2-04",
    "level": 2,
-   "text": "Tyhjän mittapullon massa on 215 g. Kun pulloon kaadetaan 250 cm³ tuntematonta nestettä, vaaka näyttää 412 g. Kuinka suuri on nesteen tiheys? Anna vastaus yksikössä kg/m³.",
+   "text": "Tyhjän mittapullon massa on $215\\,\\text{g}$. Kun pulloon kaadetaan $250\\,\\text{cm}^3$ tuntematonta nestettä, vaaka näyttää $412\\,\\text{g}$. Kuinka suuri on nesteen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
    "answer": 788,
    "unit": "kg/m³",
    "tolerance": 0.02
@@ -87,7 +88,7 @@
   {
    "id": "fy1-7-L3-02",
    "level": 3,
-   "text": "Kappale tehdään valamalla yhteen 100 cm³ alumiinia ja 50 cm³ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Anna vastaus yksikössä g/cm³.",
+   "text": "Kappale tehdään valamalla yhteen $100\\,\\text{cm}^3$ alumiinia ja $50\\,\\text{cm}^3$ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
    "answer": 4.4,
    "unit": "g/cm³",
    "tolerance": 0.02
@@ -95,7 +96,7 @@
   {
    "id": "fy1-7-L3-03",
    "level": 3,
-   "text": "Pyöreän kuparilangan halkaisija on 1,0 mm ja massa 0,50 kg. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus.",
+   "text": "Pyöreän kuparilangan halkaisija on $1{,}0\\,\\text{mm}$ ja massa $0{,}50\\,\\text{kg}$. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus.",
    "answer": 71,
    "unit": "m",
    "tolerance": 0.02

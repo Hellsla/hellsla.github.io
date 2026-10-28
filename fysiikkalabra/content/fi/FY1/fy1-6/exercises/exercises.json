@@ -53,10 +53,11 @@
     {
       "id": "fy1-6-L2-02",
       "level": 2,
-      "text": "Kivi päästetään putoamaan levosta, ja se osuu veteen nopeudella $54{,}0\\,\\text{km/h}$. Ilmanvastus jätetään huomiotta. Kuinka kauan kivi putosi?",
-      "answer": 1.529052,
+      "text": "Kuvassa on kahdella ilmattomalla planeetalla levosta pudotettujen kappaleiden $(t, v)$-kuvaajat. Kuinka monen sekunnin kuluttua pudotuksesta planeetan B kappaleella on sama nopeus kuin planeetan A kappaleella on $5{,}0\\,\\text{s}$:n kuluttua pudotuksesta?",
+      "figure": "fy1-6/two-planets",
+      "answer": 2.5,
       "unit": "s",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy1-6-L2-03",

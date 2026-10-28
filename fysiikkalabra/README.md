@@ -140,6 +140,18 @@ pictures, templates and scripts are shared by every language.
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
+## Physics consistency
+Lessons are reviewed one by one; three small tools keep one physics idea the same across chapters (teacher 2026-10-28):
+- `docs/physics-guardrails.md`: the rules the FY1–FY3 audit (`docs/audits/fy1-fy3-physics-audit.md`) found broken,
+  with the agreed Finnish wordings. Every developer and science-reviewer packet carries it.
+- `python scripts/physics_phrases.py [<folder>]`: high-precision warnings for known wrong claims taught as fact (a wrong
+  option, a named misconception and a stated model are skipped); the lint prints them, `test_physics_phrases.py` (CI)
+  tests every rule on right and wrong sentences and fails if one is taught again.
+- `python scripts/concepts.py list | packet <concept> | changed [<ref>]`: the sentences about one concept (uncertainty,
+  fit, internal-energy, temperature, phase-change, efficiency, heat-transfer, gas, fuel) from every chapter, with file
+  and place, in a packet of about 15–25 k tokens instead of the courses' 2 MB of sources; `changed` names the concepts a
+  pull request touches, so a concept-wide correction gets one cross-chapter science review (`.claude/commands/lesson.md`).
+
 ## Sovella itsenäisesti
 Each course ends with a few independent, exam-style tasks (teacher 2026-10-28; principles in NOTES.md §9), a part of
 their own like an exercise set:
@@ -163,5 +175,29 @@ criteria, competency tags and shared keys (`competencies.json`), their texts in 
 complete solutions, answers against answers.py, figures against figures.py and translations against Finnish;
 `test_practice.py` proves each check fires. `build.py` publishes `site/<COURSE>-sovella.html` when both reviews pass
 (`build.py <COURSE>-sovella` previews it) and links it from the course page. Every lesson with `learn` also gets
-*Arvioi osaamistasi* after its checks. `python scripts/coverage.py <COURSE>` writes `docs/coverage/<COURSE>.md`.
+`python scripts/coverage.py <COURSE>` writes `docs/coverage/<COURSE>.md` and `python scripts/assessment.py <COURSE>`
+`docs/assessment/<COURSE>.md` (checks, figure tasks, exit ticket and possible repeats per chapter).
+
+## Figures in tasks
+Figures are drawn once, in `lessons/<COURSE>/<id>/figures.py` (or `lessons/<COURSE>/sovella/figures.py`) with
+`scripts/figlib.py`. The catalog `docs/figures/catalog.json` (`python scripts/figcat.py build`; CI: `--check`) makes
+them findable without opening a lesson: one line per figure with its id `<owner>/<name>`, kind, description,
+labels, source, where it is used and a `reuse` note (`safe`, `reveals: …`, `decorative`, `unchecked`; the only hand
+annotation, `REUSE = {name: note}` in figures.py). Lesson topics are stored once per lesson in `lessons`.
+```
+python scripts/figcat.py find paine syvyys --course FY3    # id, kind, reuse, use count, chapter | description
+python scripts/figcat.py show fy3-9/boyle-points           # the entry and the code that draws it (no SVG)
+python scripts/figcat.py render fy3-9/boyle-points --lang en
+```
+A task refers to a figure by id, and the build draws it in the page's language:
+```json
+{ "id": "fy3-9-L1-03", "level": 1, "text": "Kuvaajassa on …", "figure": "fy3-9/boyle-points", "answer": 80, "unit": "kPa", "tolerance": 0.03 }
+```
+The same key works on inquiry tasks (hook, text, choice, numeric, explain, interpret and an interpret task's
+`question`) and on Sovella tasks and parts. A variant for a task (the same data without the fitted line or curve) is
+one more FIGURES entry in the owner's figures.py with its own description. The exercise set's hash (and a lesson's,
+for its inquiry tasks; Sovella's, for another chapter's figure) covers the code slice that draws each referenced
+figure (`figcat.source_slice`), so only a change to that figure stales the review. In another language the figure's
+words come from the owner's `content/<lang>/…/figures.json`, its decimal sign from `lang/<lang>.json`.
+`python scripts/test_figcat.py` tests all of this.
 

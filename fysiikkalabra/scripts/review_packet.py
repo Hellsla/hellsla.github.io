@@ -136,19 +136,26 @@ def shots(folder, role, part="lesson"):
             "| file | shows | px | ≈ tokens |\n|---|---|---|---|\n" + "\n".join(rows) + "\n")
 
 
+def guardrails():
+    """The physics guardrails (docs/physics-guardrails.md, teacher 2026-10-28): every science reviewer and developer packet."""
+    g = ROOT / "docs/physics-guardrails.md"
+    return "\n## Physics guardrails (docs/physics-guardrails.md)\n" + g.read_text().split("\n", 1)[1] + "\n" if g.exists() else ""
+
+
 def exercise_rules(role, lid):
     """What a reviewer of the exercise set judges, and where its report goes."""
     what = ("1. Every task's physics: the right law for the situation, its conditions met, data realistic (units, magnitudes, signs), inside the course's central contents and scope notes above and what the brief's lesson teaches.\n"
             "2. answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare; `unit` and `tolerance` fit the data's significant figures.\n"
             "3. solutions.md: every solution complete (NOTES §3 Complete solutions), the stated principle really applies and its reason is right, the unknown solved symbolically before substitution, conversions right, rounding justified by the really limiting datum, the reasonableness check a real check.\n"
-            "4. Notation and symbols the same as in the brief's lesson."
+            "4. Notation and symbols the same as in the brief's lesson.\n"
+            "5. docs/physics-guardrails.md (below): terms, a law\'s conditions, exact boundary cases, assumptions stated in the task, safety statements; the solutions say what the brief\'s lesson says; an answer that agrees with its solution can still use the wrong model."
             if role == "science" else
             "1. Levels per the rubric (CLAUDE.md \"Exercise levels\" and the counts above); none repeats the worked example in the brief; together they practise the slot's goals, no more.\n"
             "2. Each task: the situation first, the question last as its own sentence; everyday contexts a 17-year-old recognises; the data needed and no trap the lesson did not prepare.\n"
             "3. Every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
             "4. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
             "5. Phone usability of the exercise captures listed above: nothing clipped, a long calculation still readable at 360 px.")
-    return (f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
+    return ((guardrails() if role == "science" else "") + f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
             f"## Report: write `exercises/review/{role}.md` (in the lesson folder), under 400 words, findings only\n"
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid} --exercises>` run at the start and again at the end "
             f"(if it changed, the exercises were edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
@@ -157,11 +164,14 @@ def exercise_rules(role, lid):
 
 
 def reviewer_rules(role, lid, both=False):
-    what = ("1. Every formula: correct, conditions stated, inside the course's central contents and scope notes above.\n2. Units, magnitudes, signs; nothing unrealistic.\n"
-            "3. answers.py and lesson-answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare.\n"
-            "4. solutions.md, every numeric task's solution and the worked example: complete (NOTES §3 Complete solutions), reasoning right, the stated principle really applies and its reason is right, unknown solved symbolically before substitution, conversions right, rounding justified, the reasonableness check a real check.\n"
-            "5. Figures (SVG numbers) and the simulation code: physically correct, the sim implements the lesson's model, its limits are said, nothing misleads.\n"
-            "6. inquiry.json: every correct option, every feedback's physics and numbers, each experiment's setup isolates its varied parameter."
+    what = ("1. Definitions: every scientific term used correctly and the same as in the earlier chapters (docs/physics-guardrails.md).\n"
+            "2. Physical models: the law fits the situation, its assumptions and limits are stated where it is used, inside the course's central contents and scope notes above.\n"
+            "3. Causality: each explanation names the actual mechanism, not a label (why the pressure rises, where the energy goes).\n"
+            "4. Quantitative correctness: equations, dimensions, units, magnitudes, signs; answers.py and lesson-answers.py compute the right physics from the task text (recompute all answers in ONE python call with your own formulas: an answer that agrees with its solution can still use the wrong model); solutions.md, every numeric task's solution and the worked example complete (NOTES §3 Complete solutions), unknown solved symbolically first, conversions right, rounding justified by the really limiting datum, the reasonableness check a real check; figures' numbers and the simulation code implement the lesson's model.\n"
+            "5. Pedagogical simplifications: a simplification is kept when it suits the level (C); one that leaves a wrong picture, or is stated as universal though true only under a condition, is a finding (A or B, guardrails).\n"
+            "6. Internal consistency: the lesson agrees with itself (theory, summary, goals, sim boxes, captions) and with the chapters it builds on; the lint's `physics [...]` warnings above are judged, not ignored.\n"
+            "7. Assessment correctness: in inquiry.json every correct option is right and exactly one is right where one is asked for, every distractor is really wrong and its feedback says why correctly, each experiment's setup isolates its varied parameter, model answers and the exit ticket say what the theory says.\n"
+            "Report substantive issues, not rewrites of style. Classify each Blocking item A (error) or B (unstated condition)."
             if role == "science" else
             "1. Learning path: a 17-year-old with only the prerequisites can follow; the opening question is answered; the slot's goals, no more.\n"
             "2. The activities fit the topic: predictions before evidence where the topic allows, an investigation, data, a graph or a model that the student acts on; no simulation or game for its own sake; workload one lesson.\n"
@@ -171,7 +181,7 @@ def reviewer_rules(role, lid, both=False):
             "6. Phone usability from the captures: nothing clipped, controls and readout understandable. The inquiry mechanics (gating, locking, "
             "reveal, option feedback, 360 px) are already tested (checks above); open the preview in Playwright only for what a capture cannot show, "
             "such as whether the simulation makes sense when you move it.")
-    return (f"\n## What you judge (only this; the deterministic checks above are not repeated)\n{what}\n\n"
+    return ((guardrails() if role == "science" else "") + f"\n## What you judge (only this; the deterministic checks above are not repeated)\n{what}\n\n"
             f"## Report: write `review/{role}.md`, under 400 words, findings only\n"
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid}>` run at the start and again at the end "
             f"(if it changed, the lesson was edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
@@ -182,6 +192,39 @@ def reviewer_rules(role, lid, both=False):
                f"line 2 `CONTENT-HASH: <python3 scripts/reviews.py hash {lid} --exercises>`, findings about the exercise set only. `review/{role}.md` then holds "
                f"the findings about everything else. A finding about both goes in both.\n" if both else
                "\nThe exercise set (exercises/, answers.py) is reviewed apart from the lesson and is not yours to judge here.\n"))
+
+
+def figures_used(folder, role, names=("exercises.json",)):
+    """The figures the tasks show by id (scripts/figcat.py): the description and what it gives away for every role, the
+    code that draws it (its data) for the science reviewer. Never an SVG body: the captures show the drawing."""
+    import figcat
+    ids = figcat.refs_in(" ".join(courses.lesson_file(folder, n).read_text() for n in names if courses.lesson_file(folder, n).is_file()))
+    if not ids: return ""
+    cat = {f["id"]: f for f in figcat.load()["figures"]}
+    out = "\n## Figures the tasks show (by id; scripts/figcat.py)\n"
+    for fid in ids:
+        f = cat.get(fid) or {"description": "(not in the catalog: python scripts/figcat.py build)", "reuse": "?"}
+        out += f"- `{fid}` ({f.get('kind', '?')}; reuse: {f['reuse']}): {f['description']}\n"
+        if role == "science":
+            out += f"```python\n# {figcat.code_rel(fid)}\n{figcat.slice_of(fid, lambda r: (ROOT / r).read_text())}\n```\n"
+    if role != "developer":
+        out += ("Check that the figure gives every value the task needs, that its description gives the same information to a reader "
+                "who cannot see it, and that neither gives the answer away.\n")
+    return out
+
+
+def figures_available(folder):
+    """What a writer of tasks may show (scripts/figcat.py): the course's figures that carry information, one line each,
+    and how to refer to one or make a task variant of it. The catalog, not lesson.md or an SVG, is where to look."""
+    import figcat
+    code = courses.course_of(folder.name)
+    lines = [l for l in figcat.find([], course=code) if " illustration " not in l and " unmanaged " not in l]
+    return ("\n## Figures you can show in a task (docs/figures/catalog.json; reuse before drawing)\n"
+            "Refer to one with `\"figure\": \"<id>\"` in the task. A figure marked `reveals: …` shows a result: make a variant from the same data "
+            "in that lesson's figures.py (`\"<name>-points\": lambda: <name>(fit=False)` or a small function, with a description that lists the data, "
+            "not the answer; README \"Figures in tasks\"). `python scripts/figcat.py show <id>` prints one figure's entry and its code; "
+            "`python scripts/figcat.py find <words> --course FY3` searches. Do not open lesson.md, published HTML or SVG bodies to look for figures.\n"
+            "```\n" + "\n".join(lines) + "\n```\n")
 
 
 def exercise_packet(folder, role, fix=False):
@@ -206,13 +249,13 @@ def exercise_packet(folder, role, fix=False):
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
                 out += "\n## The exercise set\n" + "".join(block(courses.lesson_file(folder, n)) for n in files if role == "science" or n != "answers.py")
-            out += shots(folder, role, "exercises") + exercise_rules(role, lid)
+            out += figures_used(folder, role) + shots(folder, role, "exercises") + exercise_rules(role, lid)
     else:
         mode = "fix" if fix else "write"
         out, meta = header(folder, role, mode, "exercises")
         out += ("\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope") + "\n\n"
-                + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n")
-        out += exercise_brief(folder)
+                + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n" + guardrails())
+        out += exercise_brief(folder) + figures_used(folder, role) + figures_available(folder)
         out += (f"\n## Where files go\n- `{ex.relative_to(ROOT)}/exercises.json` (schema: README \"Exercise schema\") and `{ex.relative_to(ROOT)}/solutions.md` (one `## <id>` block each)\n"
                 f"- `{courses.lesson_rel(folder, 'answers.py')}`: the exercises' answers, one commented line per step, printing `{{id: value}}`\n"
                 f"- never the lesson's files (lesson.md, inquiry.json, exit-ticket.json, meta.json, lesson-answers.py, figures, the simulation): a finding about those goes in your report as \"not fixable here\"\n")
@@ -267,7 +310,11 @@ def packet(folder, role, fix=False):
         has_sim = d is not None or courses.lesson_file(folder, "sim-spec.md").exists() or meta.get("sim")
         out += "\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n"
         if has_sim: out += "\n" + sections("NOTES.md", "4. Simulations and pages") + "\n"
+        out += guardrails()
         own = c["paths"]["sims"] / lid
+        out += figures_available(folder)
+        import assessment                              # the chapter's checks, figure tasks, exit ticket and repeats (NOTES.md §11)
+        out += "\n## Assessment audit of this chapter (scripts/assessment.py)\n```\n" + json.dumps(assessment.chapter(folder), ensure_ascii=False) + "\n```\n"
         out += (f"\n## Where files go\n- lesson texts: `{folder.relative_to(ROOT)}/` (meta.json, lesson.md, inquiry.json, exit-ticket.json); the exercise set: `{courses.exercise_dir(folder).relative_to(ROOT)}/` (exercises.json, solutions.md)\n"
                 f"- code: `{courses.code_dir(folder).relative_to(ROOT)}/` (answers.py: the exercises' answers; lesson-answers.py: the numbers of the lesson text and the inquiry; figures.py; sim-spec.md)\n"
                 f"- simulation: " + (f"`{folder.relative_to(ROOT)}/sim.js` (this course keeps sims in lesson folders)" if c.get("lesson_folder_sims")
@@ -316,9 +363,10 @@ def batch(ids, role):
     """One delta packet for many lessons (module docstring)."""
     out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
            f"(in your context; if it is not, read it), in particular \"Lesson page\" (2026-10-26).\n")
+    if role == "science": out += guardrails()
     if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if "Figures." in l or "Textbook illustrations" in l or l.startswith("  ")) + "\n"
     out += ("\n## What you judge\nEach lesson below passed your review earlier; only its diff changed. Judge the diff in its context (the files are on disk "
-            "if you need more): " + ("is the formula section named after the right law, and does nothing in the diff change the physics?"
+            "if you need more): " + ("is every claim the diff changes or adds right by the physics guardrails below, worded as the rest of the lesson and the chapters it builds on say it, and does every changed choice still have exactly one correct option with feedback that says why the others are wrong?"
                                      if role == "science" else
                                      "is the law's name clear to a student; does the lead of the simulation say what to do and do its boxes hold the rest under fitting names; "
                                      "do the recoloured figures read well (captures listed per lesson), with colour that carries the physics, never alone, and labels legible?")

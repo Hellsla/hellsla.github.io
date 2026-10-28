@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 291c84fe2e358c04
+CONTENT-HASH: 37e15a3d153f0c4c
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-5/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Delta review over the audit's PASS (a3a64a7608c7dd0a): L2-01 now reads a varying piston force from figure piston-force (area of a trapezoid).
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- solutions.md:59 says −14,5…−15,5 J is accepted, but tolerance 0,03 on −15 accepts −14,55…−15,45 J. Both end points are exact grid crossings, so no reasonable reading falls in the gap. Narrow the stated range, or set tolerance 0.034.
 ## Checked
-batch delta review: new `learn` goals (heat and work transfer energy, internal energy is a property of the system; first law) are correct; `Kaava: Termodynamiikan ensimmäinen pääsääntö` fits. Nothing in the diff changes the physics, numbers or answers.
+- Recomputed: W = (200 N + 400 N)/2 · 0,20 m = 60 J on the air (positive), Q = ΔU − W = 45 − 60 = −15 J; answers.py −15.
+- Sign of work right (the surroundings do work on the gas, W > 0); Q < 0 means heat leaves the air, as the task defines.
+- Figure piston-force: (0; 200 N) and (0,20 m; 400 N) on the 0,05 m × 50 N grid crossings; no area shaded; the description lists the end points only.
+- Wrong methods rejected: F_max·s gives −35, F_min·s gives +5, the wrong sign of W gives +105.

@@ -2,13 +2,5 @@
   {
     "q": "Ruiskussa on 40 ml ilmaa 100 kPa:n paineessa. Mäntää painetaan, kunnes tilavuus on 25 ml, eikä lämpötila muutu. Mikä on paine?",
     "a": "Boylen lain mukaan $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml} / 25\\,\\text{ml} = 160\\,\\text{kPa}$."
-  },
-  {
-    "q": "Mittausten $(V, p)$-pisteet asettuvat kaarelle. Miten taulukkoa muokataan, jotta kääntäen verrannollisuus näkyy suorana, ja millainen suoran pitää olla?",
-    "a": "Lasketaan uusi sarake $1/V$ ja piirretään $p$ $1/V$:n funktiona. Jos $p$ on kääntäen verrannollinen $V$:hen, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $pV$."
-  },
-  {
-    "q": "Suljetun pullon ilma lämpenee 7 °C:sta 35 °C:seen. Kasvaako paine viisinkertaiseksi? Perustele.",
-    "a": "Ei kasva. Paine on verrannollinen kelvinlämpötilaan, joka kasvaa 280 K:stä 308 K:iin. Paine kasvaa vain kertoimella $308/280 = 1{,}1$ eli noin 10 %."
   }
 ]

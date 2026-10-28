@@ -10,7 +10,8 @@ a = {}
 a["fy3-11-L1-01"] = 480e3 * 0.0250 / 1000          # locomotive steam: W_k = pΔV = 480 000 Pa · 0,0250 m³ = 12 000 J -> 12,0 kJ
 a["fy3-11-L1-02"] = 101e3 * 1.70e-3                # sauna steam: 1,70 l = 0,00170 m³, W_k = pΔV = 101 000 Pa · 0,00170 m³ = 171,7 J -> 172 J
 a["fy3-11-L1-03"] = 1600 / 4300 * 100              # OL3: η = P_sähkö/P_lämpö = 1600 MW / 4300 MW = 0,3721 -> 37 %
-a["fy3-11-L1-04"] = 840 - 670                      # chainsaw, per minute: W = Q₁ − Q₂ = 840 kJ − 670 kJ = 170 kJ
+# fy3-11/pv-isobaari: p = 250 kPa read at the gridline, V from 1,0 l to 4,0 l (gridline crossings)
+a["fy3-11-L1-04"] = 250e3 * (4.0 - 1.0) * 1e-3     # W_k = pΔV = 250 000 Pa · 0,0030 m³ = 750 J
 a["fy3-11-L1-05"] = 2.6 / 12 * 100                 # cottage generator: η = W/Q₁ = 2,6 kWh / 12 kWh = 0,2167 -> 22 %
 # Level 2: two steps or a conversion
 W_sahko = 3830 * 3.6e9                             # condensing plant, one day: 3830 MWh · 3,6·10⁹ J/MWh = 1,379·10¹³ J

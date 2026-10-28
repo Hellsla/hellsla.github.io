@@ -6,7 +6,7 @@ import json, math
 a = {}
 # Level 1: one formula, values given
 a["fy1-1-L1-01"] = 7.5e-6 / 1e-6                     # red blood cell: 7,5·10⁻⁶ m / (10⁻⁶ m/µm) = 7,5 µm
-a["fy1-1-L1-02"] = -2 - (-10)                        # orders 10⁻² m (ant) and 10⁻¹⁰ m (atom): Δn = n₂ − n₁ = −2 − (−10) = 8
+a["fy1-1-L1-02"] = -2 - (-10)                        # figure fy1-1/scale-marks: ant at 10⁻² m, atom at 10⁻¹⁰ m (read off the gridlines): Δn = n₂ − n₁ = −2 − (−10) = 8
 a["fy1-1-L1-03"] = 1.27e7 / 1000                     # Earth: 1,27·10⁷ m / 1000 m/km = 1,27·10⁴ km = 12 700 km
 a["fy1-1-L1-04"] = 3.5e-10 / 1.4e-14                # lead atom / its nucleus: k = 3,5·10⁻¹⁰ m / 1,4·10⁻¹⁴ m = 2,5·10⁴
 a["fy1-1-L1-05"] = 7.0e-5 / 7.5e-6                   # hair / red blood cell: k = 7,0·10⁻⁵ / 7,5·10⁻⁶ = 9,33

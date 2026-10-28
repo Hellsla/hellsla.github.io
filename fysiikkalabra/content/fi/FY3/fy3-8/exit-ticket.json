@@ -1,14 +1,6 @@
 [
   {
-    "q": "Kuinka paljon 25 m pitkä kupariputki pitenee, kun se lämpenee 10 °C:sta 60 °C:seen ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$)?",
+    "q": "Kuinka paljon $25\\,\\text{m}$ pitkä kupariputki pitenee, kun se lämpenee $10\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:seen ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$)?",
     "a": "$\\Delta L = \\alpha L_0 \\Delta T = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 25\\,\\text{m} \\cdot 50\\,\\text{K} \\approx 0{,}021\\,\\text{m}$ eli noin 21 mm."
-  },
-  {
-    "q": "Teräslevyssä on pyöreä reikä. Kun levyä lämmitetään, suureneeko vai pieneneekö reikä?",
-    "a": "Reikä suurenee. Kaikki levyn mitat kasvavat samassa suhteessa kuin valokuvaa suurennettaessa, myös reiän halkaisija."
-  },
-  {
-    "q": "Teräskuula laajenee lämmetessään. Kasvavatko teräksen hiukkaset? Selitä mikromallin avulla.",
-    "a": "Eivät. Lämmetessä hiukkaset värähtelevät voimakkaammin, ja koska niiden on helpompi loitota toisistaan kuin puristua yhteen, niiden keskimääräinen etäisyys kasvaa. Hiukkaset pysyvät samankokoisina."
   }
 ]

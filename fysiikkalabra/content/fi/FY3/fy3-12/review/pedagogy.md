@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 53a1d878271ce998
-## Blocking
+CONTENT-HASH: 3b497c3d74b89ea1
 
-## Polish
+Round 2: the round-1 Blocking item (greenhouse question repeated check-3) is fixed. Delta review of the diff: exit q2 removed, stage text 'Lopuksi yksi nopea kysymys'.
+
+## Blocking
 - none
+## Polish
+- check-c2 has three options, the others at least four; the correct option is longest. A fourth distractor (heat 'rises' so it cannot reach the face) would be a real misconception.
+- The one exit question (U-value, $P = UA\Delta T$) is a standard L1 calculation; acceptable.
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well; the four new ### subheadings (Rakennuksen lämpöhäviöt, Energiatasapaino, Kasvihuoneilmiö, Ilmastonmuutos) name one idea each and open a paragraph.
+- Round-1 Blocking: the CO2 warming question is gone; check-3 asks it.
+- 0,20 * 50 * 30 = 300 W recomputed. Stage text 'yksi' matches one question.
+- check-c2 and titles 1-4 as in round 1.

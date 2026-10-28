@@ -36,7 +36,7 @@
 **Muunnokset:** Voima on newtoneina ja ala neliömetreinä, joten tulos tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $p = \dfrac{750\,\text{N}}{0{,}0025\,\text{m}^2} = 300\,000\,\text{Pa} = 300\,\text{kPa}$
 **Vastaus:** $300\,\text{kPa}$, kaksi merkitsevää numeroa kuten alassa $0{,}0025\,\text{m}^2$ (nollat ovat paikan pitäjiä).
-**Järkevyys:** Yhden jalan ala on $0{,}0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, esimerkiksi $2{,}5\,\text{cm} \times 2{,}5\,\text{cm}$, mikä on uskottava jalan koko. Paine on noin kolme ilmanpainetta, joten raskaan kiukaan jalat voivat painua pehmeään lattiaan. Jos ala olisi kymmenkertainen, paine olisi vain kymmenesosa.
+**Järkevyys:** Yhden jalan ala on $0{,}0025\,\text{m}^2 / 4 \approx 6\,\text{cm}^2$, esimerkiksi $2{,}5\,\text{cm} \cdot 2{,}5\,\text{cm}$, mikä on uskottava jalan koko. Paine on noin kolme ilmanpainetta, joten raskaan kiukaan jalat voivat painua pehmeään lattiaan. Jos ala olisi kymmenkertainen, paine olisi vain kymmenesosa.
 
 ## fy3-4-L1-05
 **Annettu:** syvyys $h = 0{,}45\,\text{m}$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
@@ -69,14 +69,15 @@
 **Järkevyys:** Vesi antaa noin $10\,\text{kPa}$ metriä kohti, joten $350\,\text{kPa}$ vastaa noin $35\,\text{m}$. Tarkka arvo on hieman suurempi, koska $g < 10\,\text{m/s}^2$. Takaisin laskettuna $\rho g h = 1000 \cdot 9{,}81 \cdot 35{,}7\,\text{Pa} \approx 350\,\text{kPa}$. Vesitornit ovat tämän korkuisia.
 
 ## fy3-4-L2-03
-**Annettu:** hydrostaattinen paine $\Delta p = 7{,}22\,\text{kPa}$, syvyys $h = 0{,}800\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** rypsiöljyn tiheys $\rho$ yksikössä $\text{kg/m}^3$
-**Periaate:** Säiliön öljy on levossa, joten pohjan hydrostaattinen paine on $\Delta p = \rho g h$. Paine, syvyys ja $g$ tunnetaan, joten tiheys saadaan ratkaisemalla kaava $\rho$:n suhteen.
-**Kaava:** $\Delta p = \rho g h$, josta $\rho = \dfrac{\Delta p}{g h}$
-**Muunnokset:** $7{,}22\,\text{kPa} = 7220\,\text{Pa}$, jotta tulos tulee yksikössä $\text{kg/m}^3$.
-**Sijoitus:** $\rho = \dfrac{7220\,\text{Pa}}{9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}800\,\text{m}} = \dfrac{7220\,\text{Pa}}{7{,}848\,\tfrac{\text{m}^2}{\text{s}^2}} = 919{,}98\,\tfrac{\text{kg}}{\text{m}^3}$
-**Vastaus:** $920\,\text{kg/m}^3$, kolme merkitsevää numeroa kuten paineessa $7{,}22\,\text{kPa}$ ja syvyydessä $0{,}800\,\text{m}$.
-**Järkevyys:** Öljy kelluu veden päällä, joten sen tiheyden pitää olla alle $1000\,\text{kg/m}^3$, ja tulos on. Takaisin laskettuna $920 \cdot 9{,}81 \cdot 0{,}800\,\text{Pa} \approx 7220\,\text{Pa}$. Jos öljyn tiheys olisi veden luokkaa, paine olisi noin $7{,}8\,\text{kPa}$.
+**Annettu:** kuvaajasta luettuna molemmissa nesteissä $p_0 = 100\,\text{kPa}$; suora A kulkee pisteen $(10\,\text{m};\ 200\,\text{kPa})$ kautta ja suora B pisteen $(10\,\text{m};\ 250\,\text{kPa})$ kautta; $h_\text{B} = 4{,}0\,\text{m}$
+**Kysytty:** syvyys $h_\text{A}$, jossa nesteen A paine on sama kuin nesteen B paine syvyydessä $h_\text{B}$
+**Periaate:** Nesteessä $p = p_0 + \rho g h$, joten $(h, p)$-kuvaaja on suora, jonka kulmakerroin $k = \rho g$ on suurempi tiheämmällä nesteellä. Tiheyksiä ei tarvitse laskea, vaan kulmakertoimet luetaan kuvaajalta.
+**Kuvaajan lukeminen:** Suorat alkavat samasta pisteestä $(0\,\text{m};\ 100\,\text{kPa})$ ja päättyvät ruudukon risteyksiin. Siis $k_\text{A} = \dfrac{(200 - 100)\,\text{kPa}}{10\,\text{m}} = 10\,\tfrac{\text{kPa}}{\text{m}}$ ja $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\tfrac{\text{kPa}}{\text{m}}$.
+**Kaava:** $p_0 + k_\text{A} h_\text{A} = p_0 + k_\text{B} h_\text{B}$, josta $h_\text{A} = \dfrac{k_\text{B}}{k_\text{A}}\, h_\text{B}$
+**Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat suhteessa $k_\text{B}/k_\text{A}$.
+**Sijoitus:** $h_\text{A} = \dfrac{15\,\text{kPa/m}}{10\,\text{kPa/m}} \cdot 4{,}0\,\text{m} = 6{,}0\,\text{m}$
+**Vastaus:** $h_\text{A} = 6{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten syvyydessä $4{,}0\,\text{m}$. Silmällä luettu arvo $5{,}8$–$6{,}2\,\text{m}$ hyväksytään.
+**Järkevyys:** Neste A on harvempaa, joten saman paineen saavuttamiseen tarvitaan suurempi syvyys kuin $4{,}0\,\text{m}$. Tarkistus: $100\,\text{kPa} + 10\,\tfrac{\text{kPa}}{\text{m}} \cdot 6{,}0\,\text{m} = 160\,\text{kPa} = 100\,\text{kPa} + 15\,\tfrac{\text{kPa}}{\text{m}} \cdot 4{,}0\,\text{m}$.
 
 ## fy3-4-L2-04
 **Annettu:** ylipaine $\Delta p = 0{,}85\,\text{bar}$ (tehtävän mukaan $1\,\text{bar} = 100\,\text{kPa}$), kannen ala $A = 380\,\text{cm}^2$
@@ -96,7 +97,7 @@
 **Muunnokset:** $6{,}0\,\text{kPa} = 6000\,\text{Pa}$. Massa on jo kilogrammoina.
 **Sijoitus:** $G = 85\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 833{,}85\,\text{N}$; $A = \dfrac{833{,}85\,\text{N}}{6000\,\text{Pa}} = 0{,}13898\,\text{m}^2$
 **Vastaus:** $0{,}14\,\text{m}^2$, kaksi merkitsevää numeroa kuten paineessa $6{,}0\,\text{kPa}$ ja massassa $85\,\text{kg}$.
-**Järkevyys:** Takaisin laskettuna $833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \approx 5960\,\text{Pa}$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \times 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
+**Järkevyys:** Takaisin laskettuna $833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \approx 5960\,\text{Pa}$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \cdot 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
 
 ## fy3-4-L3-02
 **Annettu:** letkun korkeus kannen yläpuolella $h = 4{,}0\,\text{m}$, kannen ala $A = 0{,}25\,\text{m}^2$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$; letkun vesimäärä $0{,}40\,\textsf{l}$

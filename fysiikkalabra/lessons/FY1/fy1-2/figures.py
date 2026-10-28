@@ -97,4 +97,30 @@ def conversion():
     return f.svg()
 
 
-FIGURES = {"quantity": quantity, "prefixes": prefixes, "conversion": conversion}
+def ruler_read():
+    """A task-only picture: a rod beside a ruler, its left end NOT at zero, so the length is a difference of two readings."""
+    f = Fig("fy12-ruler", 190, "Kuva mittakaavassa: alumiinitanko viivaimen vieressä. Viivain näyttää 0 cm – 15 cm, numerot joka senttimetrin kohdalla ja "
+            "pienet viivat joka millimetrin kohdalla. Tangon vasen pää on kohdassa 2,0 cm ja oikea pää kohdassa 13,6 cm; tanko ei siis ala nollakohdasta.")
+    x0, u = 28, 36                                    # 36 units per cm
+    X = lambda c: x0 + u * c
+    f.rect(X(2.0), 24, X(13.6) - X(2.0), 36, ALUMINIUM, INK, 2.5)
+    f.line(X(2.0) + 8, 30, X(13.6) - 8, 30, WHITE, 3)
+    f.line(X(2.0), 62, X(2.0), 90, MUTED, 1.5, "5 4"); f.line(X(13.6), 62, X(13.6), 90, MUTED, 1.5, "5 4")
+    f.rect(x0 - 12, 64, 15 * u + 24, 58, SAND_LIGHT, INK, 2.5, 4)
+    for i in range(151):
+        c = i / 10
+        f.line(X(c), 64, X(c), 64 + (24 if i % 10 == 0 else 16 if i % 5 == 0 else 9), INK, 2 if i % 10 == 0 else 1.5)
+    for c in range(0, 16):
+        f.tex(X(c), 108, str(c), "middle", w=34)
+    f.tex(X(15) + 4, 160, r"\text{cm}", "end", MUTED, w=50)
+    return f.svg()
+
+
+FIGURES = {"quantity": quantity, "prefixes": prefixes, "conversion": conversion, "ruler-read": ruler_read}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "quantity": "reveals: the reading l = 12,0 cm",
+    "prefixes": "reveals: every prefix's power of ten",
+    "conversion": "reveals: 1 AU = 1,496·10^8 km and the light time 499 s",
+    "ruler-read": "safe: a rod beside a ruler, both ends to be read (quantity is the lesson figure)",
+}

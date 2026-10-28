@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bc5536b6e38b6e01
+CONTENT-HASH: 9ffef901b29d1bfd
+
+Round 2: re-check of round-1 Blocking items against the fix diff.
 
 ## Blocking
-None.
 
 ## Polish
-- Round-1 points handled: a) model answer now has two ramp points and the 0,4 s point on the line; b) accepts t ≥ 0,4 s or t ≥ 0,6 s; c) mentions sub-pixel centroids; d) stays qualitative.
-- The fit range is now inconsistent in places. The solution uses 0,4–2,0 s, but `answers.py` (comment and `floor` filter) still fits t ≥ 0,6 s. A fit on 0,4–2,0 s gives v = 0,7998 m/s and s0 = −0,1609 m, so c's "0,799 m/s" is the t ≥ 0,6 s value. Either range gives 0,80 m/s, −0,16 m and 7,8 m, so nothing changes at the stated precision. Align answers.py (or write "noin 0,80 m/s" in c).
-- figures.py alt text still says "Kolme ensimmäistä pistettä ovat rampilta ja kaartuvat ylöspäin". The figure colours only two points (t < 0,3) and the model answer says two, so update the alt text.
+- content/fi/FY1/sovella/solutions.md:115 — the "more exact" check compares the difference 0,03 s with each mean's uncertainty (0,031 s and 0,025 s); the fair comparison is with the uncertainty of the difference, about 0,04 s ("ero on sitä pienempi") — clearer, and the conclusion is unchanged.
+- fy1-s1 b has no `### Hyväksytään myös`: a slope from a regression line (0,800 m/s with t ≥ 0,4 s, 0,799 m/s with t ≥ 0,6 s) or from two other well-separated points of the line is equally correct; say so, since `graph_read` otherwise reads as one method only.
 
 ## Checked
-- Recomputed both fits: t ≥ 0,4 s gives k = 0,7998 m/s, s0 = −0,1609 m, s(10 s) = 7,84 m, residuals within ±2 mm. t ≥ 0,6 s gives 0,7993 / −0,1601 / 7,83. Read-off points (0,6; 0,32) and (2,0; 1,44) give 0,80 m/s. Both ramp points lie above the floor line (+0,16 m and +0,04 m), as the model answer says.
-- d criterion "testattu vain 0,4–2,0 s", tagged transfer, matches the solution (1,6 s span, more than 6× extrapolation).
-- s2 edits (tuhannesosasekunnit, split flaws list, vacuum sentence removed) leave the numbers unchanged: 2,37 ± 0,08 s, 2,40 ± 0,07 s, difference 0,03 s. The half-range convention is fine, and the SEM alternative is accepted.
-- Points unchanged: 12 / 15 / 14. Criteria sum to each part's points.
-- Scope unchanged (FY1 only). Data still labelled as examples.
-- Content hash bc5536b6e38b6e01 at start and end.
+- Round-1 item resolved: the task (tasks.json:172) now asks to "arvioi tulosten epävarmuus", and the solution (solutions.md:108–109) calls half the range "yksinkertainen arvio yksittäisten mittausten hajonnasta … yksinkertaisena, varovaisena epävarmuusarviona vertailussa" and keeps the mean's own uncertainty apart ("on yleensä tätä pienempi"). This matches the guardrail; the criterion detail at :186 already used the same wording.
+- The answer key (0,03 s), the means 2,37 s and 2,40 s, the estimates 0,08 s and 0,07 s, and the conclusion (the difference cannot be shown) are unchanged and still agree.
+- The changed lines are grammatical and introduce nothing new in physics.
+- The rest is unchanged since my full review at eaea0b645c267870 (floor speed 0,80 m/s, intercept −0,16 m, extrapolation questioned, ramp data consistent, points 12/15/14).
+- Hash identical at start and end.

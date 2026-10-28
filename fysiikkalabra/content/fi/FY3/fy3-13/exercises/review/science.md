@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bef587d75c7fd0ed
+CONTENT-HASH: c8f7da1224c3ff71
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-13/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Delta review over the audit's PASS (0af6ca31258def39): numbers with units in L2-01, L2-03, L3-01 and L3-02 turned into LaTeX; no exercise replaced in this diff.
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (linearise, extrapolate to zero pressure, steepest/shallowest line uncertainty) match the contribution and the investigation; `Kaava: Nollapaineen lämpötila` fits. Nothing in the diff changes the physics, numbers or answers.
+- L2-01: 1,050 bar and 1,360 bar unchanged; answer −256 °C unchanged.
+- L2-03: 101,0 kPa, 9,0 kPa, 31,0 kPa unchanged; answer −270 °C unchanged.
+- L3-01: extreme-line points 105,0/138,0 and 107,0/136,0 kPa unchanged; answer 20,3 °C unchanged.
+- L3-02: 100,0 kPa unchanged; answer 28,2 kPa unchanged.
+- LaTeX units (\text{bar}, \text{kPa}) correct; solutions.md and answers.py untouched.

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bef587d75c7fd0ed
+CONTENT-HASH: c8f7da1224c3ff71
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-13/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Delta review over the audit's PASS (0af6ca31258def39): only plain numbers with units turned into LaTeX (L2-01, L2-03, L3-01, L3-02); no exercise was replaced here (the chapter's figure tasks are unchanged).
+
 ## Blocking
-
+- none
 ## Polish
 - none
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well.
+- Maths in the converted text unchanged: 1,050 and 1,360 bar, 101,0 kPa, 9,0 and 31,0 kPa, 105,0-138,0 kPa, 100,0 kPa, 77,0 K, all with right units and decimal commas.
+- No new figure, so no capture to judge; level and answers untouched.

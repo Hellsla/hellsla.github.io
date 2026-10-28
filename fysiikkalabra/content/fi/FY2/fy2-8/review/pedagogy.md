@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e7519d68054da63a
+CONTENT-HASH: b2efb99bdf33c286
 
 ## Blocking
-(none)
 
 ## Polish
-- inquiry.json workload: about 16 activities; consider marking "alkupera" or "kuljetus" optional (carried).
-- inquiry.json "kuljetus" title "Mistä hake kannattaa hakea?" is awkward; "Mistä haketta kannattaa ostaa?" reads better (carried).
-- koe-1 intro "Tason 0 ppm": the menu says "ei kasvihuonekaasuja", so 0 ppm may read as CO2 only; reword (carried).
+- inquiry.json kertaus feedback (correct option) — "jokainen hiilipitoisesta polttoaineesta polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia" is heavy and hard to read; write "kun energiaa otetaan polttamalla hiilipitoista polttoainetta, jokaisen energiamäärän mukana vapautuu hiilidioksidia".
+- lesson.md "Polttoaineet yhdistävät energian ja ilmaston" — the new last sentence about hydrogen ("vedyn palaessa syntyy vain vettä") introduces a fuel the course has not met and stands after the main claim as an aside; keep as a short caveat, or give it its own line ("Poikkeus: ...") so the rule "enemmän energiaa, enemmän CO2" stays clean.
+- Round 2 polish (workload, "Mistä hake kannattaa hakea?", "Tason 0 ppm") carried and still not blocking.
 
 ## Checked
-- Delta: "lähes kokonaan" became "suurimmaksi osaksi" in two ennuste-2 feedbacks (the correct option and the "maakaasu/biomassa" option). The change is grammatical Finnish and has no numbers or symbols; it keeps the causal reason (coal energy comes mostly from burning carbon) and discloses nothing new.
-- The rest of the lesson is unchanged since round 2, so the round 2 findings stand.
+- Delta narrows "polttoaine" to "fossiilinen / hiilipitoinen polttoaine" in learn, hook, one retrieval feedback, the ennuste-2 feedback, the explain prompt, criterion and model answer, and the summary; the set is consistent, and biomass is still treated separately in the lesson (not emission-free).
+- The new ennuste feedback on "kaasut tuottavat itse lämpöä" repairs the misconception better (atmosphere re-radiates energy it received, mainly the surface's thermal radiation) and keeps "energia on alun perin peräisin Auringosta".
+- "Auringosta maanpinnalle tulevaa energiaa" removes an ambiguity in the option about blocking sunlight; correct Finnish.
+- Lesson's "palaa täydellisesti" is a fair, short condition for C + O2 -> CO2; no numbers or answer changed.
+- Each multiple-choice item still has exactly one correct option; no answer disclosed earlier.

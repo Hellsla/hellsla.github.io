@@ -3,15 +3,15 @@
 > **Miksi** kymmenen oppilasta saa samasta kuulan vierimisajasta kymmenen eri tulosta, vaikka kaikki käyttävät samaa kelloa?
 
 ## Ydinajatus
-**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos ei ole koskaan täsmälleen suureen oikea arvo, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus on **mittausvirhe** $\Delta x = x - x_\text{oikea}$. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Fysiikassa virhe arvioidaan ja ilmoitetaan tuloksen mukana.
+**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä hieman suureen oikeasta arvosta, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Oikeaa arvoa ja siksi virhettäkään ei yleensä tunneta, joten fysiikassa arvioidaan, kuinka suuri virhe voi olla, ja tämä arvio eli mittausepävarmuus ilmoitetaan tuloksen mukana.
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
 
 ### Karkea virhe
-**Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistetään kerran vahingossa vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään ja poistetaan: poikkeava tulos tarkistetaan, ja jos se on selvästi virheellinen, se jätetään pois laskuista ja mittaus tehdään uudelleen. Poisjätetty tulos ja sen syy kirjataan muistiin.
+**Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistetään kerran vahingossa vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään: poikkeava tulos tarkistetaan ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista: se jätetään pois laskuista vain, jos virheen syy löytyy, ja poisjättö perustellaan ja kirjataan.
 
 ### Satunnaisvirhe
-**Satunnaisvirhe** vaihtelee mittauksesta toiseen sattumanvaraisesti ja voi olla kumpaan suuntaan tahansa. Käsikellolla kuulan vierimisaikaa mitattaessa se syntyy reaktioajasta: välillä kello käynnistyy hieman liian aikaisin ja välillä liian myöhään. Myös asteikon lukeminen kahden viivan väliltä tuo satunnaisvirhettä. Se näkyy hajontana: samasta suureesta saadaan joka kerta vähän eri luku. Toistamalla mittaus hajonta tulee näkyviin, ja keskiarvo vaimentaa sitä, koska liian suuret ja liian pienet tulokset kumoavat osin toisensa.
+**Satunnaisvirhe** vaihtelee mittauksesta toiseen sattumanvaraisesti ja voi olla kumpaan suuntaan tahansa. Käsikellolla kuulan vierimisaikaa mitattaessa se syntyy reaktioajasta: välillä kello käynnistyy hieman liian aikaisin ja välillä liian myöhään. Myös asteikon lukeminen kahden viivan väliltä tuo satunnaisvirhettä. Se näkyy hajontana: samasta suureesta saadaan joka kerta vähän eri luku. Toistamalla mittaus hajonta tulee näkyviin, ja keskiarvossa satunnaisvirheen vaikutus vaimenee, vaikka yksittäisten tulosten hajonta ei pienene: liian suuret ja liian pienet tulokset kumoavat osin toisensa.
 
 ### Systemaattinen virhe
 **Systemaattinen virhe** on joka mittauksessa suunnaltaan ja suuruudeltaan lähes sama. Se syntyy esimerkiksi väärästä nollakohdasta (vaaka näyttää tyhjänä $1{,}2\,\text{g}$), huonosti säädetystä mittarista tai mittaustavasta, kuten asteikon katsomisesta vinosti. Kaikki tulokset siirtyvät samaan suuntaan, joten ne voivat olla tiiviisti ryhmässä mutta väärässä paikassa. Toistaminen ja keskiarvo eivät poista sitä. Se huomataan vertaamalla tulosta tunnettuun vertailuarvoon tai toiseen mittaustapaan, ja sitten se korjataan.
@@ -97,11 +97,11 @@ Toistetun mittauksen paras arvio on tulosten keskiarvo:
 ```
 missä $\bar{x}$ on keskiarvo, $x_1, x_2, \dots, x_n$ ovat yksittäiset mittaustulokset ja $n$ on mittausten lukumäärä. Keskiarvo summaa tulokset ja jakaa summan lukumäärällä, joten yhden tuloksen heitto vaikuttaa siihen sitä vähemmän, mitä enemmän mittauksia on.
 
-Satunnaisvirheen suuruus arvioidaan vaihteluvälin puolikkaana:
+Tässä kurssissa toistettujen tulosten hajontaa eli satunnaisvirheen suuruutta arvioidaan yksinkertaisella likimääräisellä menetelmällä, vaihteluvälin puolikkaana:
 ```latex
 \Delta x = \frac{x_\text{max} - x_\text{min}}{2}
 ```
-missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Merkintä on sama kuin mittausvirheellä, koska virhearvio kertoo, kuinka suuri mittausvirhe tuloksessa arviolta on; virhearvio on aina positiivinen. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio on karkea arvio, ei tarkka raja: yksittäinen tulos voi joskus jäädä sen ulkopuolelle.
+missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin tulos. Virhearvio eli **mittausepävarmuus** ei ole itse mittausvirhe, jota ei tunneta, vaan arvio siitä, kuinka suuri mittausvirhe voi olla; se on aina positiivinen. Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio on karkea arvio, ei ehdoton raja: yksittäinen tulos voi joskus jäädä sen ulkopuolelle. Vaihteluvälin puolikas kuvaa yksittäisten tulosten hajontaa. Keskiarvon epävarmuus on yleensä sitä pienempi, ja sitä pienempi, mitä enemmän mittauksia on, joten keskiarvolle $\Delta x$ on varovainen arvio. Menetelmä sopii tämän kurssin muutaman toiston mittauksiin; tarkemmat menetelmät perustuvat tilastolliseen hajontaan.
 
 <svg data-fig="range-half" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja: kuusi mittaustulosta aika-akselilla. Suurin tulos t_max ja pienin tulos t_min rajaavat vaihteluvälin, jonka pituus on t_max − t_min. Keskiarvo on merkitty pystyviivalla. Vaihteluvälin puolikas Δt on arvio satunnaisvirheestä, ja tulos ilmoitetaan muodossa keskiarvo plus miinus Δt." style="max-width:100%;font-size:24px">
   <circle cx="143.5" cy="158" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
@@ -131,11 +131,13 @@ missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin 
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
 
-Virhe-arvio pyöristetään yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee. Kun mittaus tehdään vain kerran, virhe-arvio on puoli asteikkoväliä $d$:
+Virhe-arvio pyöristetään yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee.
+
+Kun mittaus tehdään vain kerran ja arvo luetaan asteikolta, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä asteikkovälistä $d$:
 ```latex
 \Delta x = \frac{d}{2}
 ```
-Viivaimella, jonka pienin asteikkoväli on $1{,}0\,\text{mm}$, yksittäisen lukeman virhe-arvio on siis $0{,}5\,\text{mm}$.
+Viivaimella, jonka pienin asteikkoväli on $1{,}0\,\text{mm}$, lukeman epävarmuudeksi voidaan näin arvioida $0{,}5\,\text{mm}$. Mittauksen kokonaisepävarmuuteen voivat kuitenkin vaikuttaa myös mittausmenetelmä, mittalaite ja muut virhelähteet. Pienin asteikkoväli tai näytön viimeisen numeron askel on mittalaitteen **resoluutio**, eikä se yksin kerro epävarmuutta: käsikello näyttää sadasosasekunnit, mutta käsin otetun ajan epävarmuus on reaktioajan vuoksi sekunnin kymmenesosien luokkaa.
 
 Virhe-arvion suhdetta tulokseen kutsutaan suhteelliseksi virheeksi:
 ```latex
@@ -251,12 +253,12 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tu
 **Järkevyys.** Väli $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eli $3{,}06\,\text{s}$–$3{,}30\,\text{s}$ kattaa viisi kuudesta tuloksesta. Tulos $3{,}31\,\text{s}$ jää juuri sen ulkopuolelle, mikä sopii siihen, että virhe-arvio on karkea. Suhteellinen virhe on muutaman prosentin, mikä on tavallista käsin otetulle ajalle. Toistot kuitenkin kertovat vain satunnaisvirheestä: systemaattisen virheen paljastaisi vasta vertailu toiseen mittaustapaan.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe, joka poistetaan, mutta satunnais- ja systemaattinen virhe kuuluvat myös taitavan mittaajan tulokseen, ja siksi ne arvioidaan ja ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
+Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä, ja hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe, joka etsitään ja jätetään pois vain perustellusta ja kirjatusta syystä, mutta satunnais- ja systemaattinen virhe kuuluvat myös taitavan mittaajan tulokseen, ja siksi ne arvioidaan ja ilmoitetaan. Kolmas on laskea keskiarvo erilaisissa yksiköissä olevista luvuista: tulokset muunnetaan ensin samaan yksikköön.
 
 ## Tiivistelmä
-- Mittausvirhe on tuloksen ja oikean arvon erotus, $\Delta x = x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen, ja se arvioidaan ja ilmoitetaan tuloksen mukana.
-- Karkea virhe on yksittäinen erehdys, kuten väärin luettu tai kirjattu lukema. Se näkyy selvästi muista poikkeavana tuloksena, joka tarkistetaan ja jätetään pois.
-- Satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy hajontana. Keskiarvo $\bar{x}$ vaimentaa sitä, ja sen suuruutta arvioidaan vaihteluvälin puolikkaalla $\Delta x$.
+- Mittausvirhe on tuloksen ja oikean arvon erotus $x - x_\text{oikea}$. Virhe kuuluu jokaiseen mittaukseen. Sitä ei yleensä tunneta, mutta sen mahdollinen suuruus arvioidaan mittausepävarmuutena ja ilmoitetaan tuloksen mukana.
+- Karkea virhe on yksittäinen erehdys, kuten väärin luettu tai kirjattu lukema. Se näkyy usein selvästi muista poikkeavana tuloksena, joka tarkistetaan; tulos jätetään pois vain, jos virheen syy löytyy, ja syy kirjataan.
+- Satunnaisvirhe vaihtelee mittauksesta toiseen ja näkyy hajontana. Keskiarvossa $\bar{x}$ satunnaisvirheen vaikutus vaimenee, vaikka yksittäisten tulosten hajonta ei pienene. Tässä kurssissa hajontaa arvioidaan likimääräisesti vaihteluvälin puolikkaalla $\Delta x$, joka on keskiarvolle varovainen epävarmuusarvio.
 - Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä toistaminen poista sitä. Se huomataan vertailuarvolla ja korjataan: $x = x_\text{lukema} - \Delta x_\text{sys}$.
 - Toistettavuus kertoo satunnaisvirheestä ja oikeellisuus systemaattisesta virheestä. Luotettava mittaus on sekä toistettava että oikea.
 - Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$ yksikköineen. Virhe-arvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja tulos samaan desimaaliin.

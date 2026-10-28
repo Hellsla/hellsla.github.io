@@ -4,7 +4,8 @@ Usage: python scripts/figures.py <lesson-id> [--lang <code>] [--check]
 figures.py in lessons/<COURSE>/<id>/ (the same for every language) defines FIGURES = {name: function returning the SVG string} with scripts/figlib.py.
 Each `<svg ... data-fig="<name>" ...>...</svg>` block in lesson.md is replaced by the figure of that name; a name
 without a block in lesson.md is reported, so a new figure is placed by hand once (paste `<svg data-fig="name"></svg>`
-on its own line after the paragraph it explains) and kept in step from then on. --check only reports whether
+on its own line after the paragraph it explains) and kept in step from then on; a figure that only a task shows
+("figure": "<id>" in exercises.json, inquiry.json or tasks.json, scripts/figcat.py) has no block and is not reported. --check only reports whether
 lesson.md is up to date (exit 1 if not). --tag a,b,c names the existing figures of lesson.md in order (data-fig),
 once, before figures.py takes them over.
 
@@ -27,9 +28,14 @@ if "--tag" in sys.argv:
 spec = importlib.util.spec_from_file_location("figures", courses.lesson_file(folder, "figures.py"))
 mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
 md = folder / "lesson.md"; text = md.read_text(); new = text
+import figcat                                   # figures that only tasks show, by "figure": "<id>" (scripts/figcat.py)
+task_only = {figcat.split_id(f)[1] for p in (courses.ROOT / "content").rglob("*.json") for f in figcat.refs_in(p.read_text())
+             if figcat.split_id(f)[0] == folder.name}
 for name, fn in mod.FIGURES.items():
     pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
-    if not pat.search(new): print(f"no <svg data-fig=\"{name}\"> in lesson.md: place it after its paragraph"); continue
+    if not pat.search(new):
+        if name not in task_only: print(f"no <svg data-fig=\"{name}\"> in lesson.md: place it after its paragraph (or refer to it from a task, \"figure\": \"{folder.name}/{name}\")")
+        continue
     svg = fn()
     if 'data-fig=' not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
     new = pat.sub(lambda m: svg, new, count=1)

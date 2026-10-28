@@ -17,6 +17,7 @@ import json, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
 import courses, i18n
 import check_solutions as solution_rules
+import physics_phrases
 from courses import ROOT
 UNITS = r"(?:N/kg|m/s²|m/s|km/h|kPa/°C|kPa|MPa|Pa|°C|K|N|kg|g|km|cm|mm|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
 NUM = r"[−-]?\d+(?:,\d+)?"
@@ -33,6 +34,8 @@ class Lint:
         self.folder = folder; self.out = []; self.errors = 0; self.form_errors = 0
         try: self.state = review_status(folder)["state"]
         except Exception: self.state = "draft"
+        try: self.ex_state = review_status(folder, "exercises")["state"]   # the exercise set is reviewed apart (README "Exercises")
+        except Exception: self.ex_state = self.state
 
     def err(self, f, line, msg): self.errors += 1; self.out.append(f"ERROR {f}:{line} {msg}")
     def form(self, f, line, msg):
@@ -43,7 +46,8 @@ class Lint:
     def page(self, f, line, msg):
         """A lesson-page rule of 2026-10-26 (CLAUDE.md "Lesson page"). An error for a lesson being written or edited
         (its reviews are not current); a lesson reviewed before the rule reports it as a warning until it is next edited."""
-        if self.state == "draft": self.err(f, line, msg)
+        state = self.ex_state if f.startswith("exercises/") or f == "solutions.md" else self.state
+        if state == "draft": self.err(f, line, msg)
         else: self.warn(f, line, msg + " (page rule 2026-10-26: fix when the lesson is next edited)")
 
 
@@ -345,9 +349,9 @@ CHAPTER_REF = re.compile(r"\b[Ff][Yy]\d-\d+\b(?![-\w])|\b[Oo]ppitunni(?:lla|n|st
 def check_chapter_refs(L, name, text):
     """A student sees chapter names, never lesson ids (teacher's rule 2026-10-26): 'luvussa Paine ja hydrostaattinen
     paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
-    and solution headings are not shown as text and are skipped."""
+    and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth")."""
     for i, ln in enumerate(text.splitlines(), 1):
-        if re.match(r"\s*(\"id\"|## fy)", ln): continue
+        if re.match(r"\s*(\"id\"|\"figure\"|## fy)", ln): continue
         for m in CHAPTER_REF.finditer(ln):
             L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 
@@ -357,7 +361,7 @@ def check_exit_ticket(L, folder):
     if not f.exists(): L.err("exit-ticket.json", 1, "missing"); return
     try: q = json.loads(f.read_text())
     except json.JSONDecodeError as e: L.err("exit-ticket.json", e.lineno, f"invalid JSON: {e.msg}"); return
-    if len(q) != 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 3")
+    if not 1 <= len(q) <= 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 1–3 that the checks and exercises do not already ask (NOTES §11)")
     for i, item in enumerate(q, 1):
         if not item.get("q") or not item.get("a"): L.err("exit-ticket.json", 1, f"question {i} needs q and a")
         if re.search(r"\d\.\d", re.sub(r"\$[^$]*\$", "", item.get("q", "") + item.get("a", ""))): L.err("exit-ticket.json", 1, f"question {i}: decimal point; use a comma")
@@ -478,7 +482,21 @@ def lint(folder):
     check_inquiry(L, folder)
     for f in ("lesson.md", "solutions.md", "inquiry.json", "exercises.json", "exit-ticket.json"):
         if courses.lesson_file(folder, f).exists(): check_chapter_refs(L, f, courses.lesson_file(folder, f).read_text())
+    check_figure_refs(L, folder)
+    for f, line, rid, msg, s in physics_phrases.problems(folder):   # review warnings, docs/physics-guardrails.md
+        L.warn(f, line, f"physics [{rid}]: {msg} (docs/physics-guardrails.md): «{s[:90]}»")
     return L
+
+
+def check_figure_refs(L, folder):
+    """"figure": "<id>" in a task names a figure that some figures.py draws (scripts/figcat.py, NOTES §11)."""
+    import figcat
+    for f in ("inquiry.json", "exercises.json", "exit-ticket.json"):
+        p = courses.lesson_file(folder, f)
+        if not p.exists(): continue
+        text = p.read_text()
+        for fid, msg in figcat.check_refs(text):
+            L.err(f, text.count("\n", 0, max(text.find(f'"{fid}"'), 0)) + 1, msg)
 
 
 def check_inquiry(L, folder):

@@ -8,7 +8,8 @@
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset.
    4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js, progressive hints.
-   5. Explanations: model answer and self-assessment criteria once the student has written an answer of their own; a
+   5. Explanations: model answer and self-assessment criteria once the student has written an answer of their own, then
+      the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
    7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them.
@@ -240,6 +241,17 @@
       if (m.length) { say(msg('explain_measure_first', { experiments: m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') })); return; }
       if (ta.value.trim().length < MIN_CHARS) { say(msg('explain_write_first')); ta.focus(); return; }
       say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
+    });
+    // own answer → model answer → observable criteria → what is missing → where to practise (teacher 2026-10-28)
+    const critBtn = ex.querySelector('.check-criteria'), result = ex.querySelector('.crit-result');
+    if (critBtn && result) critBtn.addEventListener('click', () => {
+      const boxes = [...ex.querySelectorAll('ul.criteria input[type=checkbox]')];
+      const missingCrit = boxes.filter((b) => !b.checked).map((b) => b.closest('label').querySelector('span').innerHTML);
+      result.querySelector('.crit-msg').textContent = msg(missingCrit.length ? 'criteria_missing' : 'criteria_all');
+      result.querySelector('.crit-missing').innerHTML = missingCrit.map((h) => '<li>' + h + '</li>').join('');
+      result.querySelector('.crit-practice').hidden = !missingCrit.length;
+      result.hidden = false;
+      if (missingCrit.length) ta.focus();
     });
     if (copy) copy.addEventListener('click', () => {
       const title = ex.closest('.activity')?.querySelector('h3')?.textContent.trim() || msg('copy_conclusion');

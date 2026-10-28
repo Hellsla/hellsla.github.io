@@ -124,6 +124,9 @@
     "show_model": "Näytä mallivastaus ja arviointi",
     "model_answer": "Mallivastaus",
     "self_assess": "Arvioi oma vastauksesi",
+    "self_assess_lead": "Rastita kohdat, jotka omassa vastauksessasi jo on.",
+    "criteria_done": "Mitä vastauksestani puuttuu?",
+    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
     "nothing_locked": "ei mitään",
     "setup": "Alkutila:",
     "locked": "Vakiona:",
@@ -173,6 +176,8 @@
     "exp_reset": "Simulaatio ja taulukko nollattu.",
     "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.",
     "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.",
+    "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.",
+    "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:",
     "copy_no_rows": "(ei mittauksia)",
     "copy_conclusion": "Johtopäätös",
     "copy_not_written": "(ei vielä kirjoitettu)",
@@ -184,8 +189,7 @@
     "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.",
     "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen</a>.",
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
-    "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
-    "selfcheck_summary": "Osaan {{ok}} / {{n}} tavoitetta."
+    "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"
   },
   "sims": {
     "fy2-2": {
@@ -736,7 +740,7 @@
       "o_au": "Maan radan säde (1 AU)",
       "o_neptune": "Neptunuksen radan säde",
       "o_ly": "1 valovuosi",
-      "o_proxima": "Proxima Centauri",
+      "o_proxima": "etäisyys Proxima Centauriin",
       "o_milky": "Linnunrata",
       "o_universe": "havaittava maailmankaikkeus",
       "o_quark": "kvarkki",
@@ -868,14 +872,5 @@
     "error_sources": "Tärkeimmät virhelähteet on nimetty ja kerrottu, miten ne vaikuttavat tulokseen.",
     "assumptions": "Oletus on nimetty, ja sen vaikutus tulokseen on perusteltu.",
     "conclusion": "Johtopäätös vastaa kysymykseen ja perustuu aineistoon."
-  },
-  "selfcheck": {
-    "title": "Arvioi osaamistasi",
-    "lead": "Mieti luvun tavoitteita: miltä osaaminen nyt tuntuu? Valintasi tallentuu vain tähän selaimeen.",
-    "ok": "Osaan",
-    "practice": "Tarvitsen vielä harjoitusta",
-    "next": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
-    "next_no_exercises": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a>.",
-    "optional": "valinnainen"
   }
 }

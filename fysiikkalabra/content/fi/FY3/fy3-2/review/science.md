@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 692e3c67259f2b1a
+CONTENT-HASH: bfec5c76baad670d
+
+Round 2: exit ticket 2 → 1 (the two-lifts question removed), stage text "Lopuksi yksi".
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (when a force does work, W = Fs and work as area under the (s,F) graph, power) match the theory; `Kaava: Työ ja teho` is the right name. Nothing in the diff changes the physics, numbers or answers.
+- Remaining exit question: area under the (s, F) line = work, 40 N · 0,50 m = 20 J (recomputed).
+- Count 1 matches "Lopuksi yksi".

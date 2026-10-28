@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 787e6606857686dd
+CONTENT-HASH: 2c3491834a24668e
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-11/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Delta review over the audit's PASS (7ade301110d15aed): L1-04 (chainsaw W = Q1 − Q2) replaced by a figure task (fy3-11/pv-isobaari, work in an isobaric expansion); L3-02 answer 9.60 -> 9.6 (same value).
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (W = pΔV as area under (V,p), engine must reject heat to the cold reservoir, efficiency) are correct; new subheadings 'Lämpövoimakone toistaa liikettään', 'Hyötysuhde', 'Jäähdytyskone ja lämpöpumppu' head matching paragraphs, no text changed; `Kaava: Kaasun työ ja hyötysuhde` fits. Nothing in the diff changes the physics, numbers or answers.
+- Figure code: horizontal segment at p = 250 kPa from V = 1 to 4 l, grid 1 l / 50 kPa, every y tick labelled; end points on grid crossings; arrow shows expansion; no area or work value; screenshot matches the description.
+- W_k = 250 000 Pa · 0,0030 m³ = 750 J (= 750 kPa·l); answers.py = 750.
+- Tolerance 0,02 -> 735–765 J (the solution says so); rejects p·V2 = 1000 J and p·V1 = 250 J.
+- Positive work in expansion, units (Pa·m³ = J, kPa·l = J) and 2 s.f. reasoning right; task text gives no values from the figure.
+- L3-02: 9.6 equals 9.60, unit and tolerance unchanged.

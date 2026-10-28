@@ -9,7 +9,9 @@ a = {}
 # Level 1: one formula, values given
 a["fy3-14-L1-01"] = s * 0.050 / 1e3                      # ice 0,050 kg melts at 0 °C: Q = s m = 334 000 · 0,050 = 16 700 J -> 16,7 kJ (17)
 a["fy3-14-L1-02"] = s * 0.25 / 1e3                       # 0,25 kg water freezes at 0 °C: heat released = s m = 334 000 · 0,25 = 83 500 J -> 83,5 kJ (84)
-a["fy3-14-L1-03"] = c_v * 0.30 * 20 / 1e3                # 0,30 kg water cools 20 -> 0 °C: Q = c m ΔT = 4190 · 0,30 · 20 = 25 140 J -> 25 kJ
+Q_vb, Q_lb, Q_sb = 25e3, 5e3, 60e3                       # read off figure fy3-14/energy-bars: water gives 25 kJ, warming the ice needs 5 kJ, melting all 60 kJ
+# 5 kJ <= 25 kJ < 5 kJ + 60 kJ: the ice warms to 0 °C, part of it melts, T = 0 °C; m_s = (Q_v − c_j m_j ΔT_j) / s
+a["fy3-14-L1-03"] = (Q_vb - Q_lb) / s * 1e3               # (25 000 J − 5000 J) / 334 000 J/kg = 0,05988 kg = 59,9 g -> 60 g
 a["fy3-14-L1-04"] = 60e3 / s * 1e3                       # 60 kJ melts m = Q / s = 60 000 / 334 000 = 0,1796 kg = 179,6 g (180 g)
 a["fy3-14-L1-05"] = c_j * 0.20 * 12 / 1e3                # ice 0,20 kg warms −12 -> 0 °C: Q = c_j m ΔT = 2100 · 0,20 · 12 = 5040 J -> 5,0 kJ
 # Level 2: two steps, one conversion or one rearrangement

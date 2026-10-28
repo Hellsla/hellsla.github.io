@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d1ec05d52a27bba2
+CONTENT-HASH: 09782c554ddc3f1d
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-6/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Delta review over the audit's PASS (13bc0d2daf5f4e53): L2-02 replaced by figure task heating-line (c from P, m and the graph).
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- solutions.md:69 says 870…930 J/(kg·K) is accepted, but tolerance 0,03 on 900 accepts 873…927. The readings are exact grid crossings; narrow the stated range or set tolerance 0.034.
 ## Checked
-batch delta review: new `learn` goals (Q = cmΔT, meaning of c, calorimetric equilibrium temperature or unknown c) match the lesson (calorimetry section covers the unknown c); `Kaava: Lämpömäärä ja lämpötasapaino` fits. Nothing in the diff changes the physics, numbers or answers.
+- Recomputed: c = Pt/(mΔT) = 100 W · 180 s / (0,50 kg · 40 K) = 900 J/(kg·K); answers.py 900; it matches aluminium 900 in the lesson table.
+- Figure heating-line: (0 s; 20 °C) and (180 s; 60 °C) on 20 s × 10 °C grid crossings; the description has no slope and no c.
+- Assumption "all the heater's energy goes into the block" is stated (guardrail: linear heating only with small losses); two significant figures from 0,50 kg are justified.

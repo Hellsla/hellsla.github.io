@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1148bc79f3cd67b1
+CONTENT-HASH: d7d0fa102f301d1d
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-10/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: solutions.md:89 tab character replaced by "\text{mol}"; the round-1 blocking item is fixed.
 
 ## Blocking
-
+- none
 ## Polish
-- The first goal could say 'ideaalikaasun mallissa' (equal moles in all gases holds for ideal gases).
-
+- exercises/solutions.md:89 — "koska tilavuus ja paineiden lukemat ovat … kahden numeron tarkkuudella": the volume 2,00 l has three; the limiting datum is the read pressure difference 40 kPa. Name that one.
+- exercises.json:91 (L3-02) — "$1{,}20\,\text{m}$ × $1{,}00\,\text{m}$": a × in text; NOTES §1 asks for \cdot.
 ## Checked
-batch delta review: new `learn` goals (Avogadro: equal p, V, T give equal n; pV = nRT; pressure as particle collisions) are correct; `Kaava: Ideaalikaasun tilanyhtälö` fits. Nothing in the diff changes the physics, numbers or answers.
+- Line 89 now ends "$0{,}0233$–$0{,}0247\,\text{mol}$"; no literal tab left.
+- n_A − n_B = 40 000 Pa · 0,00200 m³/(8,31 · 400 K) = 0,02407 mol; tolerance 0,03 → 0,0233–0,0248 mol, matches the stated range.

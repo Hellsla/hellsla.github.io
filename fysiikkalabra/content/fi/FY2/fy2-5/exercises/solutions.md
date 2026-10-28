@@ -39,22 +39,22 @@
 **Järkevyys:** Turpeen lämpöarvo on pieni, joten sata kilogrammaa antaa vasta $1000\,\text{MJ}$. Neljä kertaa enemmän massaa antaa neljä kertaa enemmän energiaa, $4000\,\text{MJ}$.
 
 ## fy2-5-L1-05
-**Annettu:** pähkinät, energiapitoisuus $H = 24\,\tfrac{\text{MJ}}{\text{kg}}$ ja massa $m = 0{,}040\,\text{kg}$
+**Annettu:** pähkinät, energiasisältö $e = 24\,\tfrac{\text{MJ}}{\text{kg}}$ ja massa $m = 0{,}040\,\text{kg}$
 **Kysytty:** pähkinöiden sisältämä energia $E$ megajouleina
-**Periaate:** Ruoan kemiallinen energia lasketaan samalla tavalla kuin polttoaineen: energiapitoisuus on energia kilogrammaa kohti, joten energia on sen ja massan tulo.
-**Kaava:** $E = Hm$
+**Periaate:** Ruoan energia lasketaan samalla tavalla kuin polttoaineen: energiasisältö on elimistön hyödynnettävissä oleva energia kilogrammaa kohti, joten energia on sen ja massan tulo. Energiasisältö ei ole lämpöarvo, vaikka sen yksikkö on sama.
+**Kaava:** $E = em$
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja vastaus halutaan megajouleina.
-**Sijoitus:** $E = 24\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}040\,\text{kg} = 0{,}96\,\text{MJ}$
+**Sijoitus:** $E = em = 24\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}040\,\text{kg} = 0{,}96\,\text{MJ}$
 **Vastaus:** $0{,}96\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}040\,\text{kg}$.
 **Järkevyys:** Arvio pyöristetyillä luvuilla: $25\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}04\,\text{kg} = 1\,\text{MJ}$, joten $0{,}96\,\text{MJ}$ on oikeaa suuruusluokkaa. Se on noin $1000\,\text{kJ}$, tyypillinen pienen välipalan energia.
 
 ## fy2-5-L2-01
 **Annettu:** merkinnän mukaan $1200\,\text{kJ}$ sadassa grammassa, viipaleen massa $m = 40\,\text{g}$
 **Kysytty:** viipaleen energia $E$ kilojouleina
-**Periaate:** Merkintä kertoo ruoan lämpöarvon samalla tavalla kuin polttoaineella: energian massayksikköä kohti. Se on ensin muutettava megajouleiksi kilogrammaa kohti, ja sitten käytetään lakia $E = Hm$.
-**Kaava:** $E = Hm$, missä lämpöarvo $H$ on merkinnän energia jaettuna merkinnän massalla
+**Periaate:** Merkintä kertoo ruoan energiasisällön eli elimistön hyödynnettävissä olevan energian massayksikköä kohti. Se ei ole lämpöarvo, mutta lasku tehdään samalla tavalla: merkintä muutetaan megajouleiksi kilogrammaa kohti ja kerrotaan massalla.
+**Kaava:** $E = em$, missä energiasisältö $e$ on merkinnän energia jaettuna merkinnän massalla
 **Muunnokset:** $1200\,\text{kJ} = 1200 \cdot (1 : 1000)\,\text{MJ} = 1{,}2\,\text{MJ}$, $100\,\text{g} = 100 \cdot (1 : 1000)\,\text{kg} = 0{,}100\,\text{kg}$ ja $40\,\text{g} = 40 \cdot (1 : 1000)\,\text{kg} = 0{,}040\,\text{kg}$.
-**Sijoitus:** $H = 1{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ ja $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}040\,\text{kg} = 0{,}48\,\text{MJ} = 480\,\text{kJ}$
+**Sijoitus:** $e = 1{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ ja $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}040\,\text{kg} = 0{,}48\,\text{MJ} = 480\,\text{kJ}$
 **Vastaus:** $480\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $40\,\text{g}$.
 **Järkevyys:** Viipale on $40\,\%$ sadasta grammasta, ja $40\,\%$ luvusta $1200\,\text{kJ}$ on $0{,}4 \cdot 1200\,\text{kJ} = 480\,\text{kJ}$. Tulos on pienempi kuin $1200\,\text{kJ}$, kuten pitää.
 
@@ -99,10 +99,10 @@
 **Järkevyys:** Puun massa on noin $2{,}9$-kertainen öljyn massaan verrattuna, sillä $43 : 15 = 2{,}87$. Siksi $2{,}87 \cdot 2{,}79\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}87 - 1 = 1{,}87$ kertaa öljyn massa: $1{,}87 \cdot 2{,}79\,\text{kg} \approx 5{,}2\,\text{kg}$, kuten pitää.
 
 ## fy2-5-L3-02
-**Annettu:** ruoan energiapitoisuus $H = 18\,\tfrac{\text{MJ}}{\text{kg}}$, massa $m = 2{,}4\,\text{kg}$, päiväkulutus $12\,\text{MJ}$
+**Annettu:** ruoan energiasisältö $e = 18\,\tfrac{\text{MJ}}{\text{kg}}$, massa $m = 2{,}4\,\text{kg}$, päiväkulutus $12\,\text{MJ}$
 **Kysytty:** päivän annosten määrä $N$, jonka ruoasta saadaan (desimaalilukuna)
-**Periaate:** Ruoan sisältämä kokonaisenergia saadaan lailla $E = Hm$. Annoksia saadaan niin monta kuin päiväkulutus mahtuu kokonaisenergiaan, joten $N = E : \text{päiväkulutus}$.
-**Kaava:** $E = Hm$ ja päivien määrä $N = \dfrac{E}{12\,\text{MJ}}$
+**Periaate:** Ruoasta saatava kokonaisenergia saadaan kertomalla energiasisältö massalla, samoin kuin polttoaineella lailla $E = Hm$. Annoksia saadaan niin monta kuin päiväkulutus mahtuu kokonaisenergiaan, joten $N = E : \text{päiväkulutus}$.
+**Kaava:** $E = em$ ja päivien määrä $N = \dfrac{E}{12\,\text{MJ}}$
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja energia megajouleina.
 **Sijoitus:** $E = 18\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}4\,\text{kg} = 43{,}2\,\text{MJ}$ ja $N = 43{,}2\,\text{MJ} : 12\,\text{MJ} = 3{,}6$
 **Vastaus:** $3{,}6$ päivän annosta, kaksi merkitsevää numeroa kuten tiedoissa $2{,}4\,\text{kg}$ ja $18\,\tfrac{\text{MJ}}{\text{kg}}$.

@@ -457,7 +457,7 @@
       "choices": [
         {
           "text": "$10^{16}\\,\\text{m}$",
-          "feedback": "Jätit kerroinosan huomiotta. Kun kerroinosa on yli noin 3, lähin kymmenpotenssi on seuraava: luku $4{,}0\\cdot10^{16}$ on lähempänä arvoa $10^{17}$ kuin arvoa $10^{16}$."
+          "feedback": "Jätit kerroinosan huomiotta. Kun kerroinosa on yli noin 3, lähin kymmenpotenssi on seuraava: kymmenpotenssien akselilla luku $4{,}0\\cdot10^{16}$ on lähempänä kohtaa $10^{17}$ kuin kohtaa $10^{16}$."
         },
         {
           "text": "$10^{17}\\,\\text{m}$",
@@ -475,10 +475,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Suuruusluokkien ero",
+      "prompt": "Kohteen $\\text{A}$ koon suuruusluokka on $10^{3}\\,\\text{m}$ ja kohteen $\\text{B}$ koon suuruusluokka $10^{8}\\,\\text{m}$. Kuinka monta kertaa suurempi $\\text{B}$ on suuruusluokan tarkkuudella?",
+      "choices": [
+        {
+          "text": "Noin $5$ kertaa suurempi",
+          "feedback": "Laskit suuruusluokkien eron $8-3 = 5$ ja luit sen kokojen suhteeksi. Ero 5 kertoo kymmenpotenssin askelten määrän, ja jokainen askel on kymmenkertainen koko, joten suhde on $10^{5}$."
+        },
+        {
+          "text": "Noin $10^{5}$ eli satatuhatta kertaa suurempi",
+          "feedback": "Oikein. Suuruusluokkien välissä on $8-3 = 5$ askelta, ja jokainen askel on kymmenkertainen koko: $10\\cdot10\\cdot10\\cdot10\\cdot10 = 10^{5}$.",
+          "correct": true
+        },
+        {
+          "text": "Noin $10^{11}$ kertaa suurempi",
+          "feedback": "Laskit eksponentit yhteen: $3+8 = 11$. Kokojen suhde on jakolasku, ja kymmenpotenssien jakolaskussa eksponentit vähennetään: $10^{8}/10^{3} = 10^{8-3}$."
+        },
+        {
+          "text": "Noin $8/3 \\approx 2{,}7$ kertaa suurempi",
+          "feedback": "Jaoit eksponentit keskenään. Koko on kymmenpotenssi, ei eksponentti: suhde on $10^{8}/10^{3}$, ja se on eksponenttien erotus ylhäällä, $10^{8-3} = 10^{5}$."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskeminen",
+      "title": "3. Laskeminen",
       "prompt": "Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m}$ ja neutronitähden halkaisija noin $2{,}4\\cdot10^{4}\\,\\text{m}$, vaikka neutronitähden massa on suurempi kuin Auringon. Kuinka monta kertaa Auringon halkaisija on neutronitähden halkaisijaa suurempi?",
       "answer": 57917,
       "unit": "kertaa",
@@ -504,7 +530,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä omin sanoin, mitä suuruusluokkien ero kertoo kahden kohteen koosta ja miksi simulaatio ei voi näyttää esimerkiksi Linnunrataa ja atomia samassa kuvassa oikeassa kokosuhteessa. Käytä sanoja malli, kymmenpotenssi ja suuruusluokka.",
       "criteria": [
         "Sanon, että suuruusluokkien ero on kymmenpotenssin askelten määrä ja että jokainen askel on kymmenkertainen koko.",
@@ -519,7 +545,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

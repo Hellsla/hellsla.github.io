@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a8e5afefa991582e
-## Blocking
+CONTENT-HASH: e561d782886c645f
 
-## Polish
+Delta review over the audit's PASS (a5fd473fe9aaac0d): new check-c2 (cold ice cube in 0 °C water, converted from an exit question), titles renumbered, one exit question removed.
+
+## Blocking
 - none
+## Polish
+- check-c2: the prompt gives no amounts, so only the first phase is determined; "Mitä astiassa tapahtuu, kun lämpötilat alkavat tasoittua?" is fine, but say "ensin" to be exact.
+- exit-ticket.json:6 — the mixing question (0,10 kg water 10 °C + 0,10 kg ice) is now close to the new L1-03 figure task; keep or replace with a concept question.
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well; the Miksi question is now two short sentences, as house rules allow; captures fy3-14-fig-1/2 at 390 px unchanged by the diff.
+- check-c2 tests a key idea check-1 (slush stays at 0 °C) does not: water must freeze to warm the cold ice, so freezing releases energy. Conceptual, no calculation.
+- Distractors are real (ice melts at once, nothing happens, water supercools); feedback explains with 334 kJ/kg and 0 °C equilibrium; no option points at another.
+- Removed exit question (equilibrium at 0 °C) was covered by check-1: right.
+- LaTeX in the new check; Finnish clear; "kaksi" matches.

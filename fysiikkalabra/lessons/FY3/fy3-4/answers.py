@@ -15,7 +15,10 @@ a["fy3-4-L1-05"] = rho_w * g * 0.45                    # ρgh = 4414,5 Pa -> 440
 A_heel = 1.5e-4                                        # 1,5 cm² = 1,5 · 10⁻⁴ m²
 a["fy3-4-L2-01"] = 600 / A_heel / 1e6                  # p = F/A = 4 000 000 Pa = 4,0 MPa
 a["fy3-4-L2-02"] = 350e3 / (rho_w * g)                 # h = p/(ρg) = 35,68 m -> 35,7 m (water tower)
-a["fy3-4-L2-03"] = 7.22e3 / (g * 0.800)                # ρ = p/(gh) = 919,98 kg/m³ -> 920 kg/m³ (rapeseed oil)
+k_A = (200 - 100) / 10                                 # figure fy3-4/two-liquids: line A through (0 m; 100 kPa), (10 m; 200 kPa): 10 kPa/m
+k_B = (250 - 100) / 10                                 # line B through (0 m; 100 kPa), (10 m; 250 kPa): 15 kPa/m
+p_B4 = 100 + k_B * 4.0                                 # liquid B at 4,0 m: 160 kPa
+a["fy3-4-L2-03"] = (p_B4 - 100) / k_A                  # liquid A reaches 160 kPa at h = 60 / 10 = 6,0 m
 p_cooker = 0.85 * 100e3                                # 0,85 bar = 85 kPa = 85 000 Pa
 A_lid = 380e-4                                         # 380 cm² = 0,0380 m²
 a["fy3-4-L2-04"] = p_cooker * A_lid / 1000             # F = pA = 3230 N -> 3,2 kN

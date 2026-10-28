@@ -174,7 +174,7 @@
       "type": "interpret",
       "title": "Voyager 2 -mallin lähtötiedot ja arvot",
       "source": "model",
-      "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus 15,341 km/s; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
+      "source_note": "NASA/JPL: heliopaussin ylitys 2018-11-05 etäisyydellä 119,7 AU, nopeus $15{,}341\\,\\text{km/s}$; $1\\,\\text{AU} = 149\\,597\\,870{,}7\\,\\text{km}$, $c = 299\\,792\\,458\\,\\text{m/s}$.",
       "text": "Simulaatio laskee Voyager 2:n paikan olettamalla, että luotain etenee heliopaussin ylityksen jälkeen vakionopeudella. Heliopaussi on raja, jonka ulkopuolella Auringon hiukkastuuli ei enää hallitse avaruutta. Näin lasketut etäisyydet ja signaalin kulkuajat Auringosta (neljä päivää, ei mittauksia):\n\n| Vuosi | $d$ (AU) | $d$ (km) | $t$ (h) |\n|---|---|---|---|\n| 2018 | $119{,}7$ | $1{,}79\\cdot10^{10}$ | $16{,}6$ |\n| 2022 | $132{,}6$ | $1{,}98\\cdot10^{10}$ | $18{,}4$ |\n| 2026 | $145{,}6$ | $2{,}18\\cdot10^{10}$ | $20{,}2$ |\n| 2030 | $158{,}5$ | $2{,}37\\cdot10^{10}$ | $22{,}0$ |\n\nArvot ovat kunkin vuoden 5. marraskuuta. Sama etäisyys on kirjoitettu kolmella tavalla: AU:na, kilometreinä ja valon kulkuaikana tunteina.",
       "question": {
         "type": "choice",
@@ -329,7 +329,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Voyager 2 etääntyy Auringosta nopeudella 15,341 km/s. Kuinka monta astronomista yksikköä se etääntyy vuodessa? Käytä arvoja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Vastaa yksikössä AU/a.",
+      "prompt": "Voyager 2 etääntyy Auringosta nopeudella $15{,}341\\,\\text{km/s}$. Kuinka monta astronomista yksikköä se etääntyy vuodessa? Käytä arvoja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Vastaa yksikössä AU/a.",
       "answer": 3.236,
       "unit": "AU/a",
       "tolerance": 0.02,
@@ -365,7 +365,7 @@
       "choices": [
         {
           "text": "Kaksi, koska nolla lopussa ei merkitse mitään.",
-          "feedback": "Loppunolla on merkitsevä, koska se kertoo, että mittaus on tehty tuhannesosien tarkkuudella. Muista, että $3{,}0\\,\\text{m}$ ja $3\\,\\text{m}$ eivät ole sama tulos: ensimmäisessä on kaksi merkitsevää numeroa, jälkimmäisessä yksi."
+          "feedback": "Loppunolla on merkitsevä, koska se kertoo, että lukema on ilmoitettu kymmenestuhannesosametrin eli $0{,}1\\,\\text{mm}$:n tarkkuudella. Muista, että $3{,}0\\,\\text{m}$ ja $3\\,\\text{m}$ eivät ole sama tulos: ensimmäisessä on kaksi merkitsevää numeroa, jälkimmäisessä yksi."
         },
         {
           "text": "Kolme.",
@@ -383,10 +383,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Matka ja aika",
+      "prompt": "Valo kulkee Auringosta Maahan ($1{,}0\\,\\text{AU}$) noin $8{,}3\\,\\text{min}$. Kuinka kauan valolla kestää kulkea Auringosta Saturnukseen, joka on $9{,}5\\,\\text{AU}$:n päässä?",
+      "choices": [
+        {
+          "text": "Noin $8{,}3\\,\\text{min}$, koska valon nopeus on sama",
+          "feedback": "Valon nopeus on todella sama, mutta juuri siksi aika riippuu matkasta. Tasaisella nopeudella $t = s/c$, joten kun matka on 9,5-kertainen, myös aika on 9,5-kertainen."
+        },
+        {
+          "text": "Noin $79\\,\\text{min}$",
+          "feedback": "Oikein. Nopeus $c$ pysyy samana, joten aika on suoraan verrannollinen matkaan: $t = s/c$. Matka on 9,5-kertainen, joten aika on $9{,}5\\cdot8{,}3\\,\\text{min} \\approx 79\\,\\text{min}$.",
+          "correct": true
+        },
+        {
+          "text": "Noin $0{,}87\\,\\text{min}$",
+          "feedback": "Jaoit ajan matkalla. Pidempi matka vie pidempään eikä lyhyempään: aika kasvaa samassa suhteessa kuin matka, joten se kerrotaan luvulla 9,5, ei jaeta."
+        },
+        {
+          "text": "Noin $9{,}5\\,\\text{min}$",
+          "feedback": "Käytit matkan lukuarvoa 9,5 aikana minuutteina. Yksi AU vie $8{,}3\\,\\text{min}$, joten yhden AU:n aika kerrotaan matkalla: $9{,}5\\cdot8{,}3\\,\\text{min}$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Valon kulkuaika",
+      "title": "3. Valon kulkuaika",
       "prompt": "Merkurius on keskimäärin 0,387 AU:n etäisyydellä Auringosta. Kuinka monta minuuttia valolla kestää kulkea Auringosta Merkuriukseen? Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Vastaa minuutteina.",
       "answer": 3.22,
       "unit": "min",
@@ -412,7 +438,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi tähtitieteessä etäisyyksiä ilmoitetaan astronomisina yksikköinä tai valon kulkuaikana kilometrien sijaan. Mitä tarvitaan, jotta voi siirtyä yksiköstä toiseen?",
       "model": "Kilometreinä tähtitieteelliset etäisyydet olisivat valtavia lukuja: Neptunus on noin $4{,}5\\cdot10^{9}\\,\\text{km}$ ja Voyager 2 yli $2\\cdot10^{10}\\,\\text{km}$. Astronominen yksikkö $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ on Maan ja Auringon etäisyys, joten Neptunus on $30{,}1\\,\\text{AU}$ ja luvun suuruuden voi verrata Maahan. Valon kulkuaika kertoo, kuinka kauan viesti on matkalla: Voyager 2:lle noin 20 tuntia. Yksiköstä toiseen siirrytään kirjoittamalla yksikön paikalle sen arvo, esimerkiksi $30{,}1\\,\\text{AU} = 30{,}1\\cdot1{,}496\\cdot10^{8}\\,\\text{km}$; valon kulkuaikaan siirrytään jakamalla matka valon nopeudella, $t = s : c$. Suure pysyy samana, vain lukuarvo muuttuu.",
       "criteria": [
@@ -428,7 +454,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

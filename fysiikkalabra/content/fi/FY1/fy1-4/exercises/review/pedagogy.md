@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 829ef450183dcb7a
+CONTENT-HASH: b8ad0d8a294d0e11
+
+Delta review over the audit's PASS (eddc57610d8a36e9): one exercise replaced by a figure task, LaTeX units.
 
 ## Blocking
-- none.
-
+- none
 ## Polish
-- solutions.md fy1-4-L3-03 Annettu/Kaava — $\Delta$ now means three things in one solution: the difference $\Delta y$, $\Delta x$ (slope), the reading error $\Delta y_\text{luku}$ and the slope's error $\Delta k$; a 17-year-old will mix them. Keep $\Delta y$, $\Delta x$ for differences only and write the slope's error as "kulmakertoimen virhe-arvio $\Delta k$" with the reading error named once in words ("lukemavirhe $0{,}1$"), or add one sentence "Δ kirjoitetaan sekä erotukselle että virhe-arviolle: erotus on $y_2 - y_1$, virhe-arvio on pieni lisäys tulokseen".
-- solutions.md L3-03 Kaava — $\dfrac{(\Delta k : k)_\text{lähellä}}{(\Delta k : k)_\text{kaukana}}$ mixes a colon inside a fraction; write the ratio with the descriptive subscripts and in two steps (virhe lähellä = 0,20, virhe kaukana = 0,0125, suurempi : pienempi = 16), as the size-comparison rule asks.
-- exercises.json fy1-4-L3-03 — the task ends with an instruction and a justification request after the question; put the situation, the worst-case convention, then one question ("Kuinka monta kertaa suurempi … ? Perustele.").
-
+- Task says 'aseta viivoitin kuvan päälle': on a phone a ruler is awkward; 'piirrä silmämääräisesti suora' with the grid is enough.
+- The lesson's own scatter figure shows the same data with the fit s = 0,5 m/s t; a student who remembers it gets 4,0 m without the figure (inside the tolerance). Acceptable, the figure still is needed to read the points.
+- Level L2 fits (fit then extrapolate).
 ## Checked
-- Delta: the four "/" divisions in Järkevyys (L1-03, L1-04, L1-05, L3-03) are now colons, with correct values (6 : 0,6 = 10; 20 : 1,5 ≈ 13; 1,20 km : 8,0 min = 0,15 km/min; 8,0 : 0,5 = 16).
-- L3-03 errors are written with $\Delta$ and the arithmetic stays correct (0,2 : 1,0 = 0,20; 0,2 : 16 = 0,0125; ratio 16).
-- No other " / " divisions remain in solutions.md.
-- No × or \times; multiplication is \cdot throughout.
-- Counts 5/4/3; situation first; contexts (kynttilä, taksi, kahvi, kopiopaperi) recognisable; L3-01 is a new context, not the worked example.
-- Finnish and case after number+unit correct.
+- Figure needed: the text gives no values; the six points are only in the figure. 360 px: points clear, grid 1 s by 0,5 m, y axis labelled 1-4, axes extend to 9 s so extrapolation is possible.
+- Computed least-squares slope 8,4/17,5 = 0,48 m/s, s(8 s) = 1,733+0,48*4,5 = 3,89 m; tolerance 0,08 gives 3,6-4,2 m, matching the solution; the by-eye line through origin gives 3,87 m.
+- Solution has **Kuvaajan lukeminen:** and says the answer is a range; aria-label lists data not the fit.

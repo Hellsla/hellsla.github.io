@@ -1,6 +1,6 @@
 # Graafinen esitys ja suoran sovittaminen
 
-> **Miksi** mittauspisteet eivät koskaan osu täsmälleen samalle suoralle, ja silti niiden läpi piirretystä yhdestä suorasta voi lukea luonnonlain?
+> **Miksi** mittauspisteet eivät yleensä osu kaikki täsmälleen samalle suoralle, ja silti niihin sovitetusta yhdestä suorasta voi lukea suureiden välisen riippuvuuden?
 
 ## Ydinajatus
 ### Kuvaaja kokoaa mittaukset yhteen
@@ -65,14 +65,14 @@ Kuvaajaan kuuluvat akselit, joiden päähän on kirjoitettu suure ja sen yksikk�
 </svg>
 
 ### Suora sovitetaan, pisteitä ei yhdistetä
-Mittauspisteet eivät asetu täsmälleen suoralle, koska jokaiseen mittaukseen kuuluu satunnaisvirhe (luku *Mittaaminen ja mittauksen luotettavuus*). Pisteitä ei siksi yhdistetä murtoviivaksi, sillä viiva seuraisi myös virheitä. Pisteisiin sovitetaan sen sijaan yksi suora, joka kulkee pisteiden joukon keskeltä.
+Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden, erityisesti satunnaisvirheen, vuoksi (luku *Mittaaminen ja mittauksen luotettavuus*). Pisteitä ei siksi yhdistetä murtoviivaksi, sillä viiva seuraisi myös virheitä. Pisteisiin sovitetaan sen sijaan yksi suora, joka kulkee pisteiden joukon keskeltä.
 
 Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen mukaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta, ja ylä- ja alapuolen poikkeamat kumoavat toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana, sen syy kannattaa selvittää, eikä pistettä suljeta automaattisesti pois.
 
 ### Lineaarinen malli
-Jos pisteet asettuvat suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla.
+Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla.
 
-Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Malli pätee mitatulla alueella. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi kaikki pisteet ovat suoran yläpuolella päissä ja alapuolella keskellä, lineaarinen malli ei sovi.
+Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset osoittavat mallin päteväksi vain mitatulla alueella. Jos suoraa jatketaan mitatun alueen ulkopuolelle, oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi kaikki pisteet ovat suoran yläpuolella päissä ja alapuolella keskellä, lineaarinen malli ei sovi.
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora, jonka yhtälö on
@@ -151,7 +151,7 @@ Vedenkeittimen veden lämpötilaa $T$ mitattiin joka minuutti:
 | 4 | 52,4 |
 | 5 | 59,6 |
 
-Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päättele sen avulla, milloin veden lämpötila on 40 °C. Keittimen teho on vakio.
+Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päättele sen avulla, milloin veden lämpötila on $40\,{}^\circ\text{C}$. Keittimen teho on vakio, ja lämpöhäviöt ovat pieniä.
 
 <svg data-fig="kettle" viewBox="0 0 600 350" role="img" aria-label="Kuvaaja mittakaavassa: vedenkeittimen veden lämpötila T ajan t funktiona. Kuusi mittauspistettä minuutin välein on suoran T = 8,0 °C/min · t + 20 °C ympärillä. Suoralta on luettu kaksi kaukana toisistaan olevaa pistettä, (0 min; 20 °C) ja (5,0 min; 60 °C). Katkoviiva näyttää, että suora saavuttaa 40 °C:n lämpötilan ajassa 2,5 min." style="max-width:100%;font-size:24px">
   <line x1="158.5" y1="300" x2="158.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -211,7 +211,7 @@ Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päätte
 
 <!-- vaihe -->
 
-**Periaate.** Keittimen teho on vakio, joten veden lämpötila nousee tasaisesti ja lineaarinen malli $T = kt + b$ sopii. Suora piirretään niin, että pisteitä on sen molemmin puolin ja jokainen on lähellä suoraa. Kulmakerroin lasketaan suoran pisteistä $A$ ja $B$, ei mittauspisteistä.
+**Periaate.** Keittimen teho on vakio ja lämpöhäviöt ovat tällä lämpötila-alueella pieniä, joten veden lämpötila nousee lähes tasaisesti ja lineaarinen malli $T = kt + b$ sopii. Suora piirretään niin, että pisteitä on sen molemmin puolin ja jokainen on lähellä suoraa. Kulmakerroin lasketaan suoran pisteistä $A$ ja $B$, ei mittauspisteistä.
 
 <!-- vaihe -->
 
@@ -247,14 +247,14 @@ t &= \frac{T - b}{k} \\
 
 <!-- vaihe -->
 
-**Tulos.** Suoran yhtälö on $T = 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot t + 20\,{}^\circ\text{C}$, ja lämpötila 40 °C saavutetaan noin 2,5 minuutin kuluttua. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska $k$ määräytyy kahden numeron tarkkuudella luetuista pisteistä.
+**Tulos.** Suoran yhtälö on $T = 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot t + 20\,{}^\circ\text{C}$, ja lämpötila $40\,{}^\circ\text{C}$ saavutetaan noin 2,5 minuutin kuluttua. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, koska $k$ määräytyy kahden numeron tarkkuudella luetuista pisteistä.
 
 <!-- vaihe -->
 
-**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on veden lämpötila ennen lämmitystä, eli huoneenlämpö, ja kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Mittaustaulukossa 40 °C ylittyy kolmannen ja neljännen mittauksen välissä, kun $T$ on 36,5 °C kahden minuutin ja 43,8 °C kolmen minuutin kohdalla, joten 2,5 min on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
+**Järkevyys.** Vakiotermi $20\,{}^\circ\text{C}$ on veden lämpötila ennen lämmitystä, eli huoneenlämpö, ja kulmakerroin $8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}$ kertoo lämpenemisvauhdin. Mittaustaulukossa $40\,{}^\circ\text{C}$ ylittyy kolmannen ja neljännen mittauksen välissä, kun $T$ on $36{,}5\,{}^\circ\text{C}$ kahden minuutin ja $43{,}8\,{}^\circ\text{C}$ kolmen minuutin kohdalla, joten $2{,}5\,\text{min}$ on oikealla välillä. Pisteet poikkeavat suorasta enintään noin yhden asteen.
 
 ## Yleinen virhekäsitys
-Moni yhdistää mittauspisteet toisiinsa viivalla tai pakottaa suoran kulkemaan jonkin mittauspisteen kautta, vaikka piste on vain yksi virheellinen mittaus. Suora sovitetaan pisteiden joukkoon, ja se kulkee pisteiden välistä.
+Moni yhdistää mittauspisteet toisiinsa viivalla tai pakottaa suoran kulkemaan jonkin mittauspisteen kautta, vaikka siinäkin pisteessä on mittausepävarmuutta. Suora sovitetaan koko pistejoukkoon; se voi kulkea jonkin pisteen kautta, mutta sen ei tarvitse.
 
 Toinen virhe on laskea kulmakerroin kahdesta mittauspisteestä. Tällöin kummankin pisteen virhe vaikuttaa tulokseen, ja jos pisteet ovat vielä lähellä toisiaan, tulos on epävarma. Pisteet luetaan sovitetulta suoralta ja kauas toisistaan.
 

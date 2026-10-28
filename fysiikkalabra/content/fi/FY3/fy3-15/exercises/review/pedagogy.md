@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 815608ac4be2fcff
+CONTENT-HASH: 449906b56c123714
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-15/review/pedagogy.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: no round-1 Blocking item. Delta review of the diff: Kuvaajan lukeminen of L1-04 solution.
+
 ## Blocking
-
-## Polish
 - none
+## Polish
+- the answer field grades only 200 MW, not which stage; the stage is named in the solution only.
+- one plain quantity remains in L1-03 (20,0 m²).
 ## Checked
-batch delta review: the learn list holds 2-3 one-line goals from the student's side (Osaat/Erotat/Tunnistat), each matching the slot's goals and the lesson's content; Finnish reads well.
+- Round-1 Polish done: only P0, P1, P2 are said to lie on gridlines; P3 is 'vähän viivan 150 MW alapuolella, noin 140 MW' and not needed for the answer. No false claim.
+- Drops 50, 200, 10 MW sum to 260 = 400 - 140; 350 - 150 = 200 MW, largest drop is the steam cycle. Figure needed, level L1 fits.

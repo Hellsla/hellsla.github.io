@@ -10,7 +10,7 @@ a = {}
 a["fy1-2-L1-01"] = 82 / 1000                            # 82 um = 82 · 10^-6 m = 82 · 10^-3 mm = 0,082 mm
 a["fy1-2-L1-02"] = 384400 / 1000                        # 1 Mm = 10^6 m = 10^3 km -> 384 400 km / 1000 = 384,4 Mm
 a["fy1-2-L1-03"] = 1.85 * 0.92                          # A = l w = 1,702 m^2 -> 1,7 m^2 (two significant figures, from 0,92 m)
-a["fy1-2-L1-04"] = 15.341 * 1000                        # 15,341 km/s · 1000 m/km = 15 341 m/s
+a["fy1-2-L1-04"] = (13.6 - 2.0) * 10                       # figure fy1-2/ruler-read: ends at 2,0 cm and 13,6 cm -> 11,6 cm · 10 mm/cm = 116 mm
 a["fy1-2-L1-05"] = 1.392e6 / MOON                       # 1,392e6 km / 3474 km per px = 400,69 px
 # Level 2: two steps, a conversion plus a formula
 a["fy1-2-L2-01"] = 3.2e9 * 5.0e-3                   # 3,2 GHz = 3,2e9 1/s, 5,0 ms = 5,0e-3 s: N = f t = 1,6e7

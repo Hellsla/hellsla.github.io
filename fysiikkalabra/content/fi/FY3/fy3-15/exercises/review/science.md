@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 815608ac4be2fcff
+CONTENT-HASH: 449906b56c123714
 
-> Carried over from the lesson's review (content/fi/FY3/fy3-15/review/science.md) when the exercises got a folder and reviews
-> of their own (2026-10-28). That review passed the whole lesson, these exercises, solutions and answers.py included,
-> at the CONTENT-HASH above; `reviews.py carry --exercises` recorded that the PASS holds for the moved files. The report
-> below is the original, word for word: findings about the lesson text are not about this exercise set.
+Round 2: L1-04 Kuvaajan lukeminen no longer claims P3 is on a gridline (round-1 Polish item applied).
 
 ## Blocking
-
+- none
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: new `learn` goals (chain efficiency as product, condenser as the largest loss, CHP raises total efficiency but lowers electricity) agree with the lesson's Sankey and CHP figures; `Kaava: Voimalaitoksen hyötysuhde` fits. Nothing in the diff changes the physics, numbers or answers.
+- New text: P0, P1, P2 on gridlines (400, 350, 150 MW); P3 a little under the 150 MW line, about 140 MW, not needed for the answer. Matches the figure (grid 50 MW) and the task (only P1 − P2 is asked).
+- Drops 50, 200, 10 MW; largest P1 − P2 = 200 MW; answers.py 200.

@@ -184,5 +184,26 @@ def hero():
     return f.svg()
 
 
+def boyle_points():
+    """The measurements of `boyle-graphs`' upper panel without the curve, for a task (scripts/figcat.py variant): the
+    student reads points off and uses pV = vakio; the description gives the points, not the constant."""
+    f = Fig("fy39-boyle-points", 330, "Kuvaaja mittakaavassa: ilman paine p tilavuuden V funktiona vakiolämpötilassa, viisi mittauspistettä "
+            "ilman piirrettyä käyrää. Pisteet ovat (10 ml; 200 kPa), (15 ml; 133 kPa), (20 ml; 100 kPa), (30 ml; 67 kPa) ja (40 ml; 50 kPa). "
+            "Ruudukon väli on 5 ml ja 25 kPa.")
+    a = Axes(f, (96, 280), (430, 56), x=(0, 45), y=(0, 250), xticks=[5, 10, 15, 20, 25, 30, 35, 40, 45], yticks=[25, 50, 75, 100, 125, 150, 175, 200, 225, 250],
+             xlabel=r"V\ (\text{ml})", ylabel=r"p\ (\text{kPa})", xfmt=lambda v: fi(v) if v % 10 == 0 else "", yfmt=lambda v: fi(v) if v % 50 == 0 else "")
+    for v in [10, 15, 20, 30, 40]:
+        a.point(v, K / v, WATER)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "micro-boyle": micro_boyle, "boyle-graphs": boyle_graphs, "absolute-zero": absolute_zero,
-           "iso-processes": iso_processes}
+           "iso-processes": iso_processes, "boyle-points": boyle_points}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "micro-boyle": "reveals: half the volume gives twice the pressure",
+    "boyle-graphs": "reveals: pV = 2000 kPa·ml and the straight p(1/V) line (boyle-points: the points only)",
+    "boyle-points": "safe: five (V, p) points without the curve; the description lists the points",
+    "absolute-zero": "reveals: the extrapolation to 0 K",
+    "iso-processes": "safe: the isobaric and isochoric setups, no values",
+}

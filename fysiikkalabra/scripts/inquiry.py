@@ -35,6 +35,7 @@ LEAD_WORDS = 30                                   # a sim activity's visible lea
 CARD_TYPES = ("choice", "numeric", "explain", "experiment", "interpret", "reflect", "exit")   # a task: one card holds its heading, instructions, answers and feedback
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
+FIGURE_TYPES = ("hook", "text", "choice", "numeric", "explain", "interpret")   # may carry "figure": "<id>" (scripts/figcat.py)
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
 SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
@@ -101,11 +102,19 @@ def _check_numeric(a, path, errs):
             errs.append(f"{path}.mistakes[{i}]: {{\"value\": number, \"feedback\": text}}")
 
 
+CONFIDENCE = re.compile(r"^\s*(?:Osaan|Ymmärrän|Tiedän|Olen varma|Pystyn|Tunnen|Hallitsen|I can|I understand|I know)\b", re.I)
+
+
 def _check_explain(a, path, errs):
     if not isinstance(a.get("prompt"), str): errs.append(f"{path}.prompt: a string is required")
     if not isinstance(a.get("criteria"), list) or not a["criteria"] or not all(isinstance(c, str) for c in a["criteria"]):
         errs.append(f"{path}.criteria: a non-empty list of self-assessment criteria")
     if not isinstance(a.get("model"), str) or not a["model"].strip(): errs.append(f"{path}.model: a model answer is required")
+    for i, c in enumerate(a.get("criteria") or []):
+        if isinstance(c, str) and CONFIDENCE.match(c):
+            errs.append(f"{path}.criteria[{i}]: a criterion names something the answer shows (\"Vastaus kertoo, että …\"), not how sure the student feels")
+    if "practice" in a and not (isinstance(a["practice"], str) and a["practice"].strip()):
+        errs.append(f"{path}.practice: where to practise the missing reasoning, markdown with a link (default: the theory and the exercises)")
 
 
 def validate(folder, inquiry, lesson_md):
@@ -139,6 +148,11 @@ def validate(folder, inquiry, lesson_md):
         t = a.get("type")
         if t not in TYPES: E(f"{p}.type: one of {', '.join(TYPES)}"); continue
         path = f"{lid} inquiry.json: {p}"
+        for where, x in ((p, a), (f"{p}.question", a.get("question"))):
+            if isinstance(x, dict) and "figure" in x:
+                import figcat
+                if t not in FIGURE_TYPES: E(f"{where}.figure: a figure goes on a {', '.join(FIGURE_TYPES)} task")
+                for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
         hints = a.get("hints")
@@ -275,6 +289,14 @@ def choice_order(choices, lid, aid, salt=None):
     return rest + [c for c in choices if no_error.match(c["text"])]
 
 
+def fig_of(a):
+    """The figure a task refers to by its id ("figure": "fy1-4/scatter-points", scripts/figcat.py), drawn in the page's
+    language from the one figures.py that owns it; empty without one."""
+    if not a.get("figure"): return ""
+    import figcat
+    return figcat.figure_html(a["figure"], T.lang)
+
+
 def choice_html(a, md, lid, aid):
     opts = ""
     for i, c in enumerate(choice_order(a["choices"], lid, aid)):
@@ -285,7 +307,7 @@ def choice_html(a, md, lid, aid):
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
     pending = f'<p class="pending" tabindex="-1" hidden>{T("inquiry.pending")}</p>' if reveal else ""
-    return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{sol}'
+    return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{fig_of(a)}{sol}'
             f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')
 
@@ -294,7 +316,7 @@ def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
-    return (f'<div class="numeric">{task_text(inline(md, a["prompt"]))}'
+    return (f'<div class="numeric">{task_text(inline(md, a["prompt"]))}{fig_of(a)}'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{T("inquiry.answer")}" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
@@ -302,18 +324,24 @@ def numeric_html(a, md, aid):
 
 
 def explain_html(a, md, aid):
-    """A written explanation. The model answer opens only after the student has written their own (inquiry.js); a
-    conclusion with "after" also waits for the measurements of those experiments, and offers to copy the tables and
-    the student's own text for their notes."""
+    """A written explanation, assessed by the student in a guided sequence (teacher 2026-10-28): their own answer first;
+    the model answer opens only after it (inquiry.js); then observable criteria from the model answer to tick; then
+    "what is missing" lists the unticked criteria as the reasoning to add, with where to practise it (the task's own
+    `practice`, markdown, or the theory and the exercises). A conclusion with "after" also waits for the measurements of
+    those experiments, and offers to copy the tables and the student's own text for their notes. No grading, no model."""
     crit = "".join(f'<li><label><input type="checkbox"> <span>{inline(md, c)}</span></label></li>' for c in a["criteria"])
     pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
-    return (f'<div class="explain"{attrs}>{task_text(inline(md, a["prompt"]))}<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
+    return (f'<div class="explain"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model")}</button>{copy}</div>'
             f'<p class="explain-status" role="status" aria-live="polite"></p>'
-            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4><ul class="criteria">{crit}</ul></div></div>')
+            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4>'
+            f'<p class="crit-lead">{T("inquiry.self_assess_lead")}</p><ul class="criteria">{crit}</ul>'
+            f'<div class="choice-actions"><button type="button" class="check-criteria">{T("inquiry.criteria_done")}</button></div>'
+            f'<div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul>'
+            f'<p class="crit-practice" hidden>{md(a["practice"]) if a.get("practice") else T("inquiry.further_practice")}</p></div></div></div>')
 
 
 def question_html(q, md, lid, aid):
@@ -487,8 +515,8 @@ def render(folder, inquiry, parts, md):
     def act(a):
         t, aid = a["type"], a["id"]
         head = f'<h3>{esc(a["title"])}</h3>' if a.get("title") else ""
-        if t == "hook": content = f'<div class="hook">{md(a["text"])}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
-        elif t == "text": content = md(a["text"])
+        if t == "hook": content = f'<div class="hook">{md(a["text"])}{fig_of(a)}</div>' + (f'<p class="question">{inline(md, a["question"])}</p>' if a.get("question") else "")
+        elif t == "text": content = md(a["text"]) + fig_of(a)
         elif t == "choice": content = choice_html(a, md, lid, aid)
         elif t == "numeric": content = numeric_html(a, md, aid)
         elif t == "explain": content = explain_html(a, md, aid)
@@ -501,7 +529,7 @@ def render(folder, inquiry, parts, md):
         elif t == "interpret":
             src = a.get("source")
             badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
-            content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
+            content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory": content = "".join(parts["sections"][s] for s in a["sections"])
         elif t == "sim":
             lead, info = sim_parts(a, md)
@@ -532,7 +560,6 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
-        if any(a["type"] == "exit" for a in items): inner += parts.get("selfcheck", "")   # Arvioi osaamistasi after the checks (scripts/practice.py)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
