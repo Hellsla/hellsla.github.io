@@ -299,19 +299,19 @@
   "expr": "window.simState.nakyvat.split(',').includes('au') ? 1 : 0",
   "expected": 1,
   "tol": 0,
-  "note": "Maan rata (1 AU): in view at L = 12.1"
+  "note": "Maan radan säde (1 AU): in view at L = 12.1"
  },
  {
   "expr": "window.simState.labels.some(l => l.s === \"$1{,}5\\\\cdot10^{11}\\\\,\\\\text{m}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
-  "note": "Maan rata (1 AU): its size label is 1{,}5\\cdot10^{11}\\,\\text{m}"
+  "note": "Maan radan säde (1 AU): its size label is 1{,}5\\cdot10^{11}\\,\\text{m}"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Maan rata (1 AU)}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Maan radan säde (1 AU)}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
-  "note": "Maan rata (1 AU): its name label"
+  "note": "Maan radan säde (1 AU): its name label"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(13.6);",
@@ -327,7 +327,7 @@
   "note": "Neptunuksen rata: its size label is 4{,}5\\cdot10^{12}\\,\\text{m}"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Neptunuksen rata}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Neptunuksen radan säde}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "Neptunuksen rata: its name label"
@@ -550,7 +550,7 @@
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true})); r.dispatchEvent(new Event('change',{bubbles:true}));}; const C=(i,v)=>{sel[i].value=v; sel[i].dispatchEvent(new Event('change',{bubbles:true}));}; const B=(t)=>[...document.querySelectorAll('#sim-root button')].find(b=>b.textContent.startsWith(t)); S(-9.4);",
-  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$W = 10^{-9{,}4}\\\\,\\\\text{m}$') && x.includes('vetyatomi') && x.includes('$1{,}1\\\\cdot10^{-10}\\\\,\\\\text{m}$') && x.includes('Näkyvissä 4 kohdetta') && x.includes('gammasäteily') && x.includes('vesimolekyyli') ? 1 : 0 })()",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$W = 10^{-9{,}4}\\\\,\\\\text{m}$') && x.includes('vetyatomi') && x.includes('$1{,}1\\\\cdot10^{-10}\\\\,\\\\text{m}$') && x.includes('Näkyvissä $4$ kohdetta') && x.includes('gammasäteily') && x.includes('vesimolekyyli') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
   "note": "readout at L = -9,4: view width, nearest object, its size, and the four objects in view"
@@ -880,7 +880,7 @@
   "note": "gammasäteily: its size label"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{gammasäteily}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{gammasäteilyn aallonpituus}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "gammasäteily: its name label"
@@ -1032,7 +1032,7 @@
   "note": "Saturnuksen rata: its size label"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Saturnuksen rata}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Saturnuksen radan säde}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "Saturnuksen rata: its name label"
@@ -1051,7 +1051,7 @@
   "note": "heliopaussi: its size label"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{heliopaussi}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{heliopaussin etäisyys}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "heliopaussi: its name label"
@@ -1070,7 +1070,7 @@
   "note": "Oort-pilvi: its size label"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Oort-pilvi}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Oort-pilven säde}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "Oort-pilvi: its name label"

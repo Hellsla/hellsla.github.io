@@ -113,7 +113,7 @@
       "type": "sim",
       "text": "Zoomaa Planckin pituudesta havaittavaan maailmankaikkeuteen. Kaikki kuvaan mahtuvat kohteet näkyvät yhtä aikaa oikeassa kokosuhteessa, ja alareunan palkki on $10^{k}\\,\\text{m}$ pitkä.",
       "howto": "Paina *Lähennä ×10* tai *Loitonna ×10*: näkymän leveys muuttuu kymmenesosaksi tai kymmenkertaiseksi, ja kuva liukuu uuteen mittakaavaan. Kohteet seisovat rinnakkain koon mukaan: pienin vasemmalla, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Muutaman pikselin kokoinen kohde on piste, josta viiva osoittaa sen nimeen. Voit myös vetää *Näkymän leveys* -liukusäädintä, vetää kuvaa sivusuunnassa tai napsauttaa kartan kohtaa. Kun kuva on valittuna, nuolinäppäimet ylös ja alas sekä hiiren rulla zoomaavat. *Käynnistä* zoomaa automaattisesti, ja *Suunta* ja *Nopeus* valitsevat suunnan ja vauhdin. Kartan pisteet ovat kohteita, ja vaalea kaista näyttää, mitkä koot mahtuvat kuvaan nyt. Jos kuvassa ei ole mitään, siirry kartalla jonkin pisteen luo.",
-      "model": "Koot ovat pyöristettyjä suuruusluokka-arvoja, eivät tarkkoja mittaustuloksia. Arvot ovat kirjallisuudesta pyöristettyjä mallin arvoja: Planckin pituus on luonnonvakioista laskettu suure, astronominen yksikkö $1\\,\\text{AU}$ ja valovuosi ovat sovittuja määritelmiä, protonin ja atomin koot perustuvat sirontakokeisiin ja kvanttimekaniikan malliin, Linnunradan koko on arvio (noin $10^{5}$ valovuotta, epävarmuus kymmeniä prosentteja) ja maailmankaikkeuden halkaisija päätellään havainnoista kosmologisen mallin avulla. Hiuksen, punasolun, muurahaisen, kolikon, pallon, valaan ja ihmisen koot ovat tyypillisiä arvoja, ja yksilöt vaihtelevat. Kvarkin koko on havainnoista saatu yläraja. Vesimolekyylin koko on tyypillinen arvo, neutronitähden halkaisija on havaintoihin ja malleihin perustuva tyypillinen arvo (noin $20$–$25\\,\\text{km}$), ja Linnunradan keskustan mustan aukon Sgr A* kooksi on piirretty sen tapahtumahorisontin halkaisija, joka on laskettu sen massasta (noin $4{,}3$ miljoonaa Auringon massaa). Musta aukko ei ole kiinteä pallo: piirretty raja on tapahtumahorisontti, ja sen ympärillä hehkuva kaasu ja neutronitähden säteilykeilat ovat havainnollistuksia. ja ytimien, atomien ja Kuun sekä Jupiterin koot ovat pyöristettyjä taulukkoarvoja. Piirrokset ovat havainnollistuksia. Planckin pituudella ruudukko on vain symboli, koska pituuden rakenteesta ei ole havaintoja. Vetyatomin elektronipilvi on todennäköisyyskuva, ja sen ydin on piirretty liian suureksi. Radoilla tähdet ja planeetat ovat suurennettuja pisteitä, ja ratojen koko on niiden säde, vaikka kuva piirretään halkaisijan mukaan. Linnunrata ja maailmankaikkeus ovat taiteilijan näkemyksiä.",
+      "model": "Koot ovat pyöristettyjä suuruusluokka-arvoja, eivät tarkkoja mittaustuloksia. Arvot ovat kirjallisuudesta pyöristettyjä mallin arvoja: Planckin pituus on luonnonvakioista laskettu suure, astronominen yksikkö $1\\,\\text{AU}$ ja valovuosi ovat sovittuja määritelmiä, protonin ja atomin koot perustuvat sirontakokeisiin ja kvanttimekaniikan malliin, Linnunradan koko on arvio (noin $10^{5}$ valovuotta, epävarmuus kymmeniä prosentteja) ja maailmankaikkeuden halkaisija päätellään havainnoista kosmologisen mallin avulla. Hiuksen, punasolun, muurahaisen, kolikon, pallon, valaan ja ihmisen koot ovat tyypillisiä arvoja, ja yksilöt vaihtelevat. Kvarkin koko on havainnoista saatu yläraja. Vesimolekyylin koko on tyypillinen arvo, neutronitähden halkaisija on havaintoihin ja malleihin perustuva tyypillinen arvo (noin $20$–$25\\,\\text{km}$), ja Linnunradan keskustan mustan aukon Sgr A* kooksi on piirretty sen tapahtumahorisontin halkaisija, joka on laskettu sen massasta (noin $4{,}3$ miljoonaa Auringon massaa). Musta aukko ei ole kiinteä pallo: piirretty raja on tapahtumahorisontti, ja sen ympärillä hehkuva kaasu ja neutronitähden säteilykeilat ovat havainnollistuksia. Ytimien, atomien ja Kuun sekä Jupiterin koot ovat pyöristettyjä taulukkoarvoja. Piirrokset ovat havainnollistuksia. Planckin pituudella ruudukko on vain symboli, koska pituuden rakenteesta ei ole havaintoja. Vetyatomin elektronipilvi on todennäköisyyskuva, ja sen ydin on piirretty liian suureksi. Radoilla tähdet ja planeetat ovat suurennettuja pisteitä, ja ratojen kooksi on merkitty niiden säde, vaikka kuva piirretään halkaisijan mukaan. Linnunrata ja maailmankaikkeus ovat taiteilijan näkemyksiä.",
       "calc": "Näkymän leveys on $W = 10^{L}\\,\\text{m}$, ja se vastaa kuvassa $560$ pikseliä. Kohde, jonka koko on $d$, piirretään kuvaan leveydelle $\\dfrac{d}{W}\\cdot560$ pikseliä. Esimerkiksi kun $L = -9$, vetyatomi on $\\dfrac{1{,}1\\cdot10^{-10}}{10^{-9}}\\cdot560 \\approx 62$ pikseliä leveä. Kohde näkyy, kun sen koko on noin $\\dfrac{1}{2000}$–$3$ kertaa näkymän leveys eli noin $0{,}3$–$1700$ pikseliä: alle $4$ pikselin kohde on piste, ja kuvaa suurempi kohde rajautuu kuvan reunaan. Kohteen kokoa muutetaan siis vain liu'uttamalla $L$-arvoa, ja kaikki kuvan kohteet muuttuvat samassa suhteessa. Alareunan palkin pituus on $10^{k}\\,\\text{m}$, missä $k$ on suurin kokonaisluku, joka ei ylitä lukua $L$. Kun $L$ kasvaa yhdellä, kaikki kohteet pienenevät kymmenesosaan."
     },
     {
@@ -121,7 +121,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: aineen portaat",
-      "intro": "Testaa ennuste 1. Alkutila asettaa $L = -9$, jolloin lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Lähennä sitten painikkeella *Lähennä ×10* tai liukusäätimellä ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava portaista: vetyatomi (noin $L = -9{,}4$), protoni eli vetyatomin ydin (noin $L = -14{,}5$) ja kvarkki (noin $L = -17$). Merkitse muistiin, mikä kohde kullakin rivillä on. Taulukon $n$ on lähimmän kohteen suuruusluokan eksponentti; kvarkin arvo on yläraja.",
+      "intro": "Testaa ennuste 1. Alkutila asettaa $L = -9$, jolloin lähin kohde on vesimolekyyli. Paina *Kirjaa mittaus*. Lähennä sitten liukusäätimellä (painike *Lähennä ×10* hyppää vain kokonaisiin $L$-arvoihin ja ohittaa vetyatomin) ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava portaista: vetyatomi (noin $L = -9{,}4$), protoni eli vetyatomin ydin (noin $L = -14{,}5$) ja kvarkki (noin $L = -17$). Merkitse muistiin, mikä kohde kullakin rivillä on. Taulukon $n$ on lähimmän kohteen suuruusluokan eksponentti; kvarkin arvo on yläraja.",
       "initial": {
         "L": -9
       },
@@ -170,7 +170,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 2: Maan osoite",
-      "intro": "Testaa ennuste 2. Alkutila asettaa $L = 7{,}7$, jolloin lähin kohde on Maa. Kirjaa rivi. Loitonna sitten ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava: Aurinko (noin $L = 9{,}7$), Neptunuksen rata (noin $L = 13{,}5$) ja Linnunrata (noin $L = 21{,}5$). Merkitse muistiin, mikä kohde kullakin rivillä on. Halutessasi jatka havaittavaan maailmankaikkeuteen asti ($L = 27{,}5$).",
+      "intro": "Testaa ennuste 2. Alkutila asettaa $L = 7{,}7$, jolloin lähin kohde on Maa. Kirjaa rivi. Loitonna sitten ja kirjaa rivi aina, kun *Kooltaan lähin kohde* on seuraava: Aurinko (noin $L = 9{,}7$), Neptunuksen radan säde (noin $L = 13{,}5$) ja Linnunrata (noin $L = 21{,}5$). Merkitse muistiin, mikä kohde kullakin rivillä on. Halutessasi jatka havaittavaan maailmankaikkeuteen asti ($L = 27{,}5$).",
       "initial": {
         "L": 7.7
       },
@@ -284,7 +284,8 @@
             "feedback": "Teoria ei yksin kerro, minkä kokoinen protoni on: koon ratkaisee mittaus. Teoria auttaa tulkitsemaan mittauksia, mutta sen ennusteet testataan kokeilla."
           }
         ]
-      }
+      },
+      "optional": true
     },
     {
       "id": "theory",
@@ -303,7 +304,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi simulaation lukemiin. Kuinka suuri ero atomin ja sen ytimen välillä on, ja miten Aurinkokunta, Linnunrata ja havaittava maailmankaikkeus liittyvät toisiinsa? Mikä kokojen ero yllätti sinut eniten?",
+      "prompt": "Vertaa ennusteitasi simulaation lukemiin. Kuinka suuri ero atomin ja sen ytimen välillä on, ja miten Aurinkokunta, Linnunrata ja havaittava maailmankaikkeus liittyvät toisiinsa? Mikä kokojen ero yllätti sinut eniten? Palaa myös alun kysymykseen: protonista havaittavaan maailmankaikkeuteen on noin $27-(-15) = 42$ suuruusluokkaa ja Planckin pituudesta noin 62.",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -358,12 +359,12 @@
       "type": "choice",
       "title": "Mikä vuorovaikutus?",
       "justify": true,
-      "prompt": "Mikä perusvuorovaikutus selittää kunkin ilmiön?\n\n1. Maa kiertää Aurinkoa.\n2. Villapaitaan hangattu ilmapallo vetää puoleensa pieniä paperinpaloja.\n3. Heliumytimen kaksi protonia ja kaksi neutronia pysyvät yhdessä.\n4. Radioaktiivisen hiili-14-ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni (beetahajoaminen).",
+      "prompt": "Mikä perusvuorovaikutus selittää kunkin ilmiön?\n\n1. Pudotettu avainnippu putoaa lattialle.\n2. Jääkaappimagneetti pysyy kiinni jääkaapin ovessa.\n3. Heliumytimen kaksi protonia ja kaksi neutronia pysyvät yhdessä.\n4. Banaanissa on hieman radioaktiivista kalium-40:tä. Joskus sen ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni.",
       "choices": [
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 heikko",
           "correct": true,
-          "feedback": "Oikein. Maan ja Auringon massat vetävät toisiaan gravitaation takia. Hangattu pallo saa sähkövarauksen, joka vetää paperia sähkömagneettisesti. Ytimen osat pitää yhdessä vahvan vuorovaikutuksen jäännösvaikutus, ja neutronin muuttumisen protoniksi aiheuttaa heikko vuorovaikutus."
+          "feedback": "Oikein. Maa ja avainnippu vetävät toisiaan gravitaation takia. Magneetin ja teräsoven välinen voima on magneettinen eli sähkömagneettinen. Ytimen osat pitää yhdessä vahvan vuorovaikutuksen jäännösvaikutus, ja neutronin muuttumisen protoniksi (beetahajoaminen) aiheuttaa heikko vuorovaikutus."
         },
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 gravitaatio, 4 heikko",
@@ -375,11 +376,11 @@
         },
         {
           "text": "1 sähkömagneettinen, 2 sähkömagneettinen, 3 vahva, 4 heikko",
-          "feedback": "Maa ja Aurinko ovat kokonaisuutena lähes sähköisesti neutraaleja, joten niiden välillä ei ole merkittävää sähköistä voimaa. Maan rata johtuu gravitaatiosta, joka vaikuttaa kaikkien massojen välillä ja on aina vetävä."
+          "feedback": "Avainnippu ja Maa ovat kokonaisuutena lähes sähköisesti neutraaleja, joten niiden välillä ei ole merkittävää sähköistä voimaa. Putoaminen johtuu gravitaatiosta, joka vaikuttaa kaikkien massojen välillä ja on aina vetävä."
         },
         {
           "text": "1 gravitaatio, 2 sähkömagneettinen, 3 vahva, 4 vahva",
-          "feedback": "Beetahajoamisessa neutroni muuttuu protoniksi, eli hiukkasen laji muuttuu. Tällaisen muutoksen aiheuttaa heikko vuorovaikutus. Vahva vuorovaikutus sitoo kvarkit ja ytimen osat yhteen, mutta se ei muuta neutronia protoniksi."
+          "feedback": "Kalium-40:n hajoamisessa (beetahajoaminen) neutroni muuttuu protoniksi, eli hiukkasen laji muuttuu. Tällaisen muutoksen aiheuttaa heikko vuorovaikutus. Vahva vuorovaikutus sitoo kvarkit ja ytimen osat yhteen, mutta se ei muuta neutronia protoniksi."
         }
       ]
     },

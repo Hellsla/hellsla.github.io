@@ -103,7 +103,7 @@ Kun halutaan tietää, kuinka monta kertaa koko $d_2$ on suurempi kuin koko $d_1
 k = \frac{d_2}{d_1} = \frac{a_2}{a_1}\cdot 10^{\,n_2-n_1}
 ```
 
-Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ ovat kokojen $d_1$ ja $d_2$ kerroinosat ja $n_1$ ja $n_2$ niiden eksponentit. Karkeasti $k \approx 10^{\Delta n}$, missä $\Delta n = n_2 - n_1$ on suuruusluokkien ero eli kymmenpotenssien lukumäärä.
+Tässä $k$ on kokojen suhde (kerroin, jolla ei ole yksikköä), $a_1$ ja $a_2$ ovat kokojen $d_1$ ja $d_2$ kerroinosat ja $n_1$ ja $n_2$ niiden eksponentit. Karkeasti $k \approx 10^{\Delta n}$, missä $\Delta n = n_2 - n_1$ on eksponenttien ero. Se on likimain suuruusluokkien ero eli kymmenpotenssien lukumäärä. Suuruusluokkien ero saadaan täsmälleen, kun kumpikin koko pyöristetään ensin suuruusluokakseen.
 
 <svg data-fig="ladder" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva, ei mittakaavassa: viisi tikapuuaskelmaa, joissa koko on kymmenkertaistunut jokaisella askeleella 10 potenssiin n1, n1 plus 1, n1 plus 2 ja niin edelleen aina 10 potenssiin n2 asti. Suuruusluokkien ero on askelten lukumäärä n2 miinus n1, ja kokojen suhde d2 per d1 on noin 10 potenssiin n2 miinus n1." style="max-width:100%;font-size:24px">
   <rect x="28" y="228" width="56" height="34" rx="3" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>

@@ -180,7 +180,7 @@ new p5((p) => {
     const vb = ySbL - 1.09 * fh - 4 - 0.32 * fh, nb = vb - 1.43 * fh - 2, yb = nb - 0.9 * fh - 14;
     geo = { mapTop: mapY - 16, yb };
     readout.html(__('rivi_leveys', { L: Lfmt(L) }) + '<br>' + __('rivi_kohde', { nimi: __('o_' + M.id), lat: M.lat }) + '<br>' +
-      (vis.length ? __('rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => __('o_' + it.o.id)).join(', ') }) : __('rivi_tyhja')));
+      (vis.length ? __('rivi_nakyvissa', { n: vis.length, nimet: vis.map((it) => `$\\text{${__('o_' + it.o.id)}}$`).join(', ') }) : __('rivi_tyhja')));
     window.simState = { L, logW: L, W, tavoite: tgt === null ? L : tgt, kohde: mi, kohdeLog: M.logM, kohdeId: M.id, kohdeExp: Math.round(M.logM), nVis: vis.length, nakyvat: vis.map((it) => it.o.id).join(','),
       palkkiK: kk, palkkiPx: barPx, running, dir, speed, labels: null };
     labels = [];
