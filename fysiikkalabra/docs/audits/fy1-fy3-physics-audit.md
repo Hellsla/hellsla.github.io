@@ -47,7 +47,7 @@ By course (C = acceptable simplifications kept, from the "checked, fine" lists):
 | Shared (glossary) | 3 | 2 | 1 | 0 | 0 | 0 | 3 | 0 |
 | **Total** | **174** | **31** | **143** | **79** | 10 | 54 | 75 | 45 |
 
-Status: 172 corrected, 2 `check`, 79 kept (C).
+Status: all 174 corrected, 79 kept (C). The independent reviews afterwards found 15 more (8 A, 7 B; section 9), all corrected.
 
 ## 4. Findings
 
