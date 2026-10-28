@@ -94,7 +94,7 @@
 **Periaate:** Valovuosi on pituusyksikkö, ei aikayksikkö: se on matka, jonka valo kulkee vuodessa. Valo etenee tasaisella nopeudella, joten annettu kaava $s = ct$ antaa matkan kilometreinä, ja sen jälkeen matka jaetaan AU:n pituudella.
 **Kaava:** $L = c\,t$ ja $L_\text{AU} = \dfrac{c\,t}{1\,\text{AU}}$
 **Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Matka kilometreinä jaetaan lopuksi arvolla $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$.
-**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}461\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}461\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
+**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $L_\text{AU} = \dfrac{9{,}462\cdot10^{12}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600/8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
