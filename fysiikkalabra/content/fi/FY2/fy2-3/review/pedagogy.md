@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 65d19b8aad653586
+CONTENT-HASH: a0ea33a66467fe5e
 
 ## Blocking
+(none)
 
 ## Polish
-- Earlier polish items (exit-ticket parenthetical mid-sentence; "Sijoitetaan 1 kJ" as a conversion) are unchanged and remain wording niceties only.
+- inquiry.json koe-1 intro — "nuolinäppäimillä" helps on a laptop, but a phone has no arrow keys, so hitting t_B = 900 min by touch is still hard. Fix: +/- minute buttons, or "likimain yhtä suuret".
+- Round 1 polish still open and not blocking: the 10 W lamp and 1000 W toaster missing from the power table; the johtopaatos criterion "Käytin yhtälöä E = P t" before the theory stage; the hours/minutes axis mismatch; the workload.
 
 ## Checked
-- Round 5 delta: the kWh definition chain in "Kilowattitunti" is split into two aligned rows (`&1 kWh = 1000 W · 3600 s` / `&= 3 600 000 J`); numbers, symbols and units are identical to before, so the physics and learning path are unchanged.
-- The chain is short; the two-row form reads clearly, and the "Kilowattitunti on siis energian yksikkö, ei tehon" conclusion still follows directly. No paragraph grows, no figure moved.
-- Caveat: CLAUDE.md says never to split a chain by hand for the layout (mathlayout.py wraps long chains). This chain is short, so manual aligned rows are not needed; consistency, not a learning issue, so not blocking. Layout checks at 360, 768 and 1280 px pass.
-- Hash unchanged at start and end of the review.
+- The diff changes only the koe-1 intro (the arrow-key sentence) and puts the names and labels of the quantities in LaTeX (\text{A}$, \text{A}\ (\text{kJ})$), as the house rules require.
+- The new sentence does not disclose an answer and does not alter the experiment's set-up, locks or measures.
+- The LaTeX labels are consistent with the rest of the lesson's notation (sub-index in upright type).
+- Nothing else is touched; the round 1 conclusions still apply.

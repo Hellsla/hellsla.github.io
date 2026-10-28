@@ -1,0 +1,114 @@
+[
+ {
+  "expr": "(() => { const S=window.simState, s=document.querySelectorAll('#sim-root select'); return S.co2===420 && s[0].value==='420' && s[1].value==='1' && S.Teq===16 && S.nopeus===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: nykyinen määrä 420 ppm, settles at +16 °C, speed normaali (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.T >= 15 && S.T < 16 && S.tila==='lampenee' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "starts at today's measured +15 °C and still warms towards +16 °C"
+ },
+ {
+  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); return document.querySelectorAll('#sim-root select').length===2 && o(0)==='0:ei kasvihuonekaasuja|280:esiteollinen määrä|420:nykyinen määrä|560:hiilidioksidia kaksinkertaisesti' && o(1)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: four levels by CO2 ppm, speed hidas · normaali · nopea"
+ },
+ {
+  "expr": "(() => { const c=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'||e.className==='sim-canvas'?'canvas':e.className); return c.indexOf('canvas')<c.indexOf('controls') && c.indexOf('controls')<c.indexOf('readout') && document.querySelectorAll('#sim-root input[type=range]').length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; no slider"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='co2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares co2"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s).join('|'); return L.includes('\\\\text{Aurinko}') && L.includes('\\\\text{ilmakehä}') && L.includes('\\\\text{maanpinta}') && L.includes('-18\\\\,{}^\\\\circ\\\\text{C}') && L.includes('+15\\\\,{}^\\\\circ\\\\text{C}') && L.includes('$+15\\\\,{}^\\\\circ\\\\text{C}') && L.includes('\\\\text{CO}_2') && L.includes('\\\\text{H}_2\\\\text{O}') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas labels (LaTeX): Sun, atmosphere, ground, thermometer marks and value, molecule key"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one legend line of at most 15 words"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; SEL(0,'0');",
+  "expr": "window.simState.Teq",
+  "expected": -18,
+  "tol": 0,
+  "note": "no greenhouse gases: settles at -18 °C"
+ },
+ {
+  "expr": "window.simState.kasvihuonekaasuja",
+  "expected": 0,
+  "tol": 0,
+  "note": "no greenhouse molecules drawn"
+ },
+ {
+  "expr": "window.simState.a",
+  "expected": 0,
+  "tol": 0,
+  "note": "nothing absorbs the heat radiation"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.T < 15 && S.T > -18 && S.tila==='jaahtyy' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the temperature falls gradually, not at once"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; SEL(0,'280');",
+  "expr": "window.simState.Teq",
+  "expected": 14,
+  "tol": 0,
+  "note": "pre-industrial 280 ppm: about +14 °C"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; SEL(0,'560');",
+  "expr": "window.simState.Teq",
+  "expected": 17,
+  "tol": 0,
+  "note": "CO2 doubled 560 ppm: about +17 °C once settled (IPCC AR6 best estimate 3 °C)"
+ },
+ {
+  "expr": "window.simState.kasvihuonekaasuja",
+  "expected": 15,
+  "tol": 0,
+  "note": "8 CO2 + 6 H2O + 1 CH4 drawn"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; SEL(1,'2');",
+  "expr": "window.simState.nopeus",
+  "expected": 2,
+  "tol": 0,
+  "note": "speed nopea"
+ },
+ {
+  "expr": "window.simState.Teq",
+  "expected": 17,
+  "tol": 0,
+  "note": "speed does not change the settled temperature"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout').textContent; return r.includes('560') && r.includes('asettuu') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout names the CO2 level and the settling value"
+ }
+]

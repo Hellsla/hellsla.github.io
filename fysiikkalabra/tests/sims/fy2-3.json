@@ -1,0 +1,127 @@
+[
+ {
+  "expr": "(() => { const S=window.simState, s=document.querySelectorAll('#sim-root select'), r=document.querySelectorAll('#sim-root input[type=range]'); return S.A==='kuivain' && S.B==='lamppu' && s[0].value==='kuivain' && s[1].value==='lamppu' && s[2].value==='1' && Number(r[0].value)===5 && Number(r[1].value)===60 && S.nopeus===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: A hiustenkuivain 5 min, B lamppu 60 min, speed normaali (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.EA",
+  "expected": 540000,
+  "tol": 1e-09,
+  "note": "E_A = 1800 W · 300 s = 540 000 J"
+ },
+ {
+  "expr": "window.simState.EB",
+  "expected": 36000,
+  "tol": 1e-09,
+  "note": "E_B = 10 W · 3600 s = 36 000 J"
+ },
+ {
+  "expr": "window.simState.EA_kWh",
+  "expected": 0.15,
+  "tol": 1e-09,
+  "note": "540 000 J = 0,15 kWh"
+ },
+ {
+  "expr": "(() => { const c=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'||e.className==='sim-canvas'?'canvas':e.className); return c.indexOf('canvas')<c.indexOf('controls') && c.indexOf('controls')<c.indexOf('readout') && document.querySelectorAll('#sim-root button').length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout; no button"
+ },
+ {
+  "expr": "(() => { const o=(i)=>[...document.querySelectorAll('#sim-root select')[i].options].map(x=>x.value+':'+x.textContent).join('|'); const d='lamppu:lamppu|televisio:televisio|jaakaappi:jääkaappi|tosteri:tosteri|kuivain:hiustenkuivain|keitin:vedenkeitin|kiuas:sähkökiuas'; return document.querySelectorAll('#sim-root select').length===3 && o(0)===d && o(1)===d && o(2)==='0.5:hidas|1:normaali|2:nopea' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: laite A and B with seven devices, speed hidas 0,5 · normaali 1 · nopea 2"
+ },
+ {
+  "expr": "(() => { const r=[...document.querySelectorAll('#sim-root input[type=range]')]; return r.length===2 && r.every(x=>x.min==='1' && x.max==='1440' && x.step==='1') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two time sliders 1–1440 min in steps of 1 min"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='A,B,tA,tB' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares A, tA, B and tB"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s).join('|'); return L.includes('\\\\text{hiustenkuivain}') && L.includes('P_\\\\text{A} = 1{,}8\\\\,\\\\text{kW}') && L.includes('P_\\\\text{B} = 10\\\\,\\\\text{W}') && L.includes('E_\\\\text{A} = 540\\\\,\\\\text{kJ}') && L.includes('E\\\\ (\\\\text{kJ})') && L.includes('t\\\\ (\\\\text{h})') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas labels (LaTeX): device, powers, energy, axis names"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one legend line of at most 15 words"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; const RNG=(i,v)=>{R[i].value=v;ev(R[i]);}; RNG(1,900);",
+  "expr": "window.simState.EB_kJ",
+  "expected": 540,
+  "tol": 1e-09,
+  "note": "lamp 10 W for 900 min = 15 h: 540 kJ, the hair dryer's 5 min"
+ },
+ {
+  "expr": "window.simState.EA_kJ",
+  "expected": 540,
+  "tol": 1e-09,
+  "note": "E_A unchanged"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; const RNG=(i,v)=>{R[i].value=v;ev(R[i]);}; SEL(0,'keitin'); RNG(0,30);",
+  "expr": "window.simState.EA_kWh",
+  "expected": 1,
+  "tol": 1e-09,
+  "note": "kettle 2000 W for 30 min = 1 kWh"
+ },
+ {
+  "expr": "window.simState.PA",
+  "expected": 2000,
+  "tol": 0,
+  "note": "kettle P = 2000 W"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; const RNG=(i,v)=>{R[i].value=v;ev(R[i]);}; SEL(1,'kiuas'); RNG(1,60);",
+  "expr": "window.simState.EB",
+  "expected": 28800000,
+  "tol": 1e-09,
+  "note": "sauna stove 8 kW for 1 h = 28,8 MJ"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout').textContent; return /28[,.]8\\s*MJ/.test(r) && /8\\s*kWh/.test(r) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout writes 28,8 MJ = 8 kWh"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; const RNG=(i,v)=>{R[i].value=v;ev(R[i]);}; SEL(1,'jaakaappi'); RNG(1,1440);",
+  "expr": "window.simState.EB_kWh",
+  "expected": 2.4,
+  "tol": 1e-09,
+  "note": "fridge 100 W for 24 h = 2,4 kWh"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')], S=[...document.querySelectorAll('#sim-root select')]; const ev=(e)=>{e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));}; const SEL=(i,v)=>{S[i].value=v;ev(S[i]);}; const RNG=(i,v)=>{R[i].value=v;ev(R[i]);}; SEL(2,'2');",
+  "expr": "window.simState.nopeus",
+  "expected": 2,
+  "tol": 0,
+  "note": "speed nopea"
+ },
+ {
+  "expr": "window.simState.EB_kWh",
+  "expected": 2.4,
+  "tol": 1e-09,
+  "note": "speed does not change the physics"
+ }
+]
