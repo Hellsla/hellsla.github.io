@@ -61,10 +61,10 @@ expect("figures.py --lang en writes the figures with the language's decimal sign
 code, out = run("check_i18n.py")
 expect("translated lesson, course titles and figure texts: complete", code == 0 and "en: 0 error(s)" in out, out)
 
-ex = json.loads((en_dir / "exercises.json").read_text()); ex["level1"][0]["answer"] += 1; (en_dir / "exercises.json").write_text(json.dumps(ex, ensure_ascii=False))
+ex = json.loads((en_dir / "exercises/exercises.json").read_text()); ex["level1"][0]["answer"] += 1; (en_dir / "exercises/exercises.json").write_text(json.dumps(ex, ensure_ascii=False))
 code, out = run("check_i18n.py")
 expect("a translation that changes an answer is an error", code == 1 and "answer" in out and "differs from Finnish" in out, out)
-ex["level1"][0]["answer"] -= 1; (en_dir / "exercises.json").write_text(json.dumps(ex, ensure_ascii=False))
+ex["level1"][0]["answer"] -= 1; (en_dir / "exercises/exercises.json").write_text(json.dumps(ex, ensure_ascii=False))
 md = (en_dir / "lesson.md").read_text(); m = re.search(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", re.sub(r"<svg\b.*?</svg>", "", md, flags=re.S))
 (en_dir / "lesson.md").write_text(md.replace(m.group(0), m.group(0)[:-1] + "+1$", 1))
 code, out = run("check_i18n.py")

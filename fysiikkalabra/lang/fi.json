@@ -76,6 +76,7 @@
     ],
     "solution_answer_step": "Vastaus",
     "check_howto": "Kirjoita vastaus ja paina Tarkista. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.",
+    "exercises_pending": "Tämän oppitunnin tehtävät ovat vielä tarkastettavina. Ne tulevat tähän, kun tarkastus on valmis.",
     "notice_legacy": "Prototyyppiversio: tämä oppitunti on julkaistu ennen nykyistä tarkistuskäytäntöä ja odottaa uudistusta. Sisältö voi vielä muuttua.",
     "notice_draft": "Luonnos: tätä oppituntia ei ole vielä tarkistettu.",
     "why_marker": "Miksi",

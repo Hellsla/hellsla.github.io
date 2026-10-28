@@ -58,10 +58,10 @@ def blocks_of(text):
 
 
 def exercise_problems(folder):
-    f = folder / "exercises.json"
+    f = courses.lesson_file(folder, "exercises.json")
     if not f.exists(): return [("exercises.json", 1, "missing")]
     ex = [e for items in json.loads(f.read_text()).values() for e in items]
-    s = folder / "solutions.md"
+    s = courses.lesson_file(folder, "solutions.md")
     blocks = blocks_of(s.read_text()) if s.exists() else []
     found = {eid: (line, body) for eid, line, body in blocks}
     out = []

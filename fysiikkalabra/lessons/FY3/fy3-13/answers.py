@@ -19,6 +19,7 @@ a["fy3-13-L2-02"] = (th_hi - th_lo) / 2                 # Δθ0 = (−263,16 −
 p_a1, p_a2 = 101.0 + 9.0, 101.0 + 31.0                  # gauge + atmosphere = absolute pressure: 110,0 and 132,0 kPa
 k2 = (p_a2 - p_a1) / (90.0 - 30.0)                      # k = 22,0 kPa / 60,0 °C = 0,3667 kPa/°C
 a["fy3-13-L2-03"] = 30.0 - p_a1 / k2                    # θ0 = 30,0 − 110,0/0,3667 = −270,0 °C
+a["L2-03-gauge-zero"] = 30.0 - 9.0 / k2                                    # gauge pressure zero at 5,45 °C
 a["fy3-13-L2-04"] = 0.36 * 0.5 / 1.0 * 100              # temperature error in pressure: 0,36 · 0,5 = 0,18 kPa = 18 % of 1,0 kPa
 # Level 3: reasoning or an unfamiliar context
 k_s, p0_s = (138.0 - 105.0) / 80.0, 105.0 - (138.0 - 105.0) / 80.0 * 20.0   # steep end-point line: k = 0,4125, p0 = 96,75 kPa
@@ -26,20 +27,4 @@ k_l, p0_l = (136.0 - 107.0) / 80.0, 107.0 - (136.0 - 107.0) / 80.0 * 20.0   # sh
 a["fy3-13-L3-01"] = (-p0_s / k_s - (-p0_l / k_l)) / 2  # θ0: −275,17 and −234,55 °C; Δθ0 = 20,3 °C
 a["fy3-13-L3-02"] = 100.0 * 77 / 273.15                 # p proportional to T in kelvin: p(77 K) = 100 kPa · 77/273,15 = 28,2 kPa
 a["fy3-13-L3-03"] = (273.15 - 262.0) / 6.0              # deviation 11,15 °C over uncertainty 6 °C = 1,86 times
-# Lesson and inquiry numbers (not exercises): data θ 10…100 °C, p 105…138 kPa, ±1 kPa
-th, p = [10, 25, 40, 55, 70, 85, 100], [105, 110, 116, 122, 127, 132, 138]
-ks, p0s = (133 - 104) / (85 - 10), 104 - (133 - 104) / (85 - 10) * 10      # steepest line through bar ends (10;104), (85;133): 0,3867 kPa/°C, 100,13 kPa
-kl, p0l = (137 - 111) / (100 - 25), 111 - (137 - 111) / (100 - 25) * 25    # shallowest line through bar ends (25;111), (100;137): 0,3467 kPa/°C, 102,33 kPa
-assert all(abs(p0s + ks * t - q) <= 1 + 1e-9 and abs(p0l + kl * t - q) <= 1 + 1e-9 for t, q in zip(th, p))   # both pass every ±1 kPa bar
-a["esimerkki-theta0"] = -101.3 / ((138.0 - 101.3) / 100)                   # best line read at (0;101,3), (100;138,0): θ0 = −276,0 °C
-a["esimerkki-theta0-max"] = -100.1 / 0.387                                # steep line as printed: −258,7 °C (exact −258,97)
-a["esimerkki-theta0-min"] = -102.3 / 0.347                                # shallow line as printed: −294,8 °C (exact −295,19)
-a["epavarmuus"] = (a["esimerkki-theta0-max"] - a["esimerkki-theta0-min"]) / 2   # Δθ0 = 18,07 °C ≈ 18 °C (exact lines 18,11)
-a["epavarmuus-exact"] = (-p0s / ks - (-p0l / kl)) / 2                      # 18,11 °C
-k_ab = (134.3 - 108.6) / 70                                                # suora: k from A, B
-a["suora"] = 20 - 108.6 / k_ab                                             # θ0 = θA − pA/k = −275,8 °C
-a["siirto"] = 30 - 133.0 / (26.0 / 60)                                     # −276,9 °C
-a["tarkistus-2"] = 15 - 108 / (29 / 80)                                    # −282,9 °C
-a["s2-misses"] = sum(abs(98.9 + 0.42 * t - q) > 1 for t, q in zip(th, p))  # candidate s2: p = 98,9 + 0,42θ (through (55;122)) misses 4 bars: 10, 70, 85, 100 °C
-a["L2-03-gauge-zero"] = 30.0 - 9.0 / k2                                    # gauge pressure zero at 5,45 °C
 print(json.dumps({key: round(v, 6) for key, v in a.items()}))

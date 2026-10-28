@@ -47,8 +47,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   significant figures, and a student rounding to them stays inside the relative `tolerance` (0,02 as a rule; `77 K`
   has two figures, so −196 °C needs 0,03 or a whole-number task). A coefficient with a power of ten counts its
   mantissa: `9,0 · 10⁻⁶ 1/K`, not `9 · 10⁻⁶`.
-- Compute every answer in `answers.py` (one commented line per step, prints `{id: value}`); the lint re-runs
-  it. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
+- Compute every exercise answer in `answers.py` and every number of the lesson text and the inquiry in
+  `lesson-answers.py` (one commented line per step, each prints `{id: value}`; 2026-10-28: the exercises are a part of
+  their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
 - A difference of readings has the figures of the difference, not of the readings: 38 °C − 31 °C = 7 K has one
   significant figure, so a task whose answer carries two gives its temperatures as 38,0 °C and 31,0 °C; a rounding
@@ -134,7 +135,7 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   A task whose text refers to a graph adds `**Kuvaajan lukeminen:**` after Periaate: which points or which area are
   read, at which values, and how the answer follows. A task answered in words (`answer` a string) has `**Kysytty:**`,
   `**Periaate:**` and `**Mallivastaus:**` with the reasoning. A complete solution is about 100–220 words. The model
-  is `content/fi/FY3/fy3-6/solutions.md` and its inquiry tasks `siirto` and `tarkistus-2`. (2026-10-27, all lessons)
+  is `content/fi/FY3/fy3-6/exercises/solutions.md` and its inquiry tasks `siirto` and `tarkistus-2`. (2026-10-27, all lessons)
 - **Every language version is as complete** (teacher 2026-10-27). A translated or S2 (Finnish as a second language)
   version of a lesson keeps every solution step and justification; S2 writes shorter sentences, opens each concept
   the first time it appears ("ominaislämpökapasiteetti eli se, kuinka paljon energiaa yhden kilogramman lämmittäminen

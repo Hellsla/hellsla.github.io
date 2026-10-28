@@ -1,9 +1,9 @@
 """Role-specific packet, so an agent starts from what its role needs and nothing else.
 
-  python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix]
+  python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix] [--exercises]
   python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy
 
-Writes review/packet-<role>.md and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
+Writes review/packet-<role>.md (with --exercises exercises/review/packet-<role>.md) and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
 is one line naming the file ("Read content/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full.").
 CLAUDE.md, the house rules, reaches every agent by itself (Claude Code attaches it, at the latest when the agent reads
 a file of the project), so no packet repeats it; NOTES.md sections are included where the role needs them.
@@ -20,14 +20,21 @@ names, which it must read before editing anyway.
 A *batch* packet (review-batch/packet-<role>.md, git-ignored) gathers the delta reviews of many lessons for one reviewer
 run, when each change is small and of the same kind (a law named, a sim text moved into its boxes, figures recoloured):
 one agent start and one set of rules instead of one per lesson. Each lesson keeps its own report and hash; a lesson
-whose change needs a full review, or none, is left out and named."""
+whose change needs a full review, or none, is left out and named.
+
+An *exercise* packet (`--exercises`, teacher 2026-10-28, README "Exercises") is about the exercise set alone: its
+reviews, hash and scope are its own (`reviews.py ... --exercises`). In place of the lesson's files it carries the
+**exercise brief**: what of the lesson an exercise writer or reviewer needs (the formula sections, the worked example
+not to repeat, the misconception, the summary; figure bodies left out) and the current exercises, so no agent reads
+the lesson text, the inquiry or the simulation to work on exercises."""
 import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n
-from reviews import ROOT, find_lesson, content_hash, scope, SVG_LINE
+from reviews import ROOT, find_lesson, content_hash, scope, review_dir, SVG_LINE
 
 SVG = re.compile(r"(<svg\b[^>]*>).*?(</svg>)", re.S)
-LESSON_FILES = ("meta.json", "lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md", "sim.js")
+LESSON_FILES = ("meta.json", "lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "lesson-answers.py", "exit-ticket.json", "sim-spec.md", "sim.js")
+EXERCISES = ("exercises.json", "solutions.md", "answers.py")
 
 
 def sections(path, *names):
@@ -38,6 +45,35 @@ def sections(path, *names):
         m = re.search(rf"^## {re.escape(name)}.*?(?=^## |\Z)", text, re.S | re.M)
         if m: out.append(m.group(0).strip())
     return "\n\n".join(out)
+
+
+def items(path, section, *leads):
+    """The bullet items of a NOTES.md section that start with one of the bold leads (`- **Complete solutions**`)."""
+    m = re.search(rf"^## {re.escape(section)}.*?(?=^## |\Z)", (ROOT / path).read_text(), re.S | re.M)
+    if not m: return ""
+    found = re.findall(r"^- \*\*.*?(?=^- |\Z)", m.group(0), re.S | re.M)
+    return "\n".join(b.rstrip() for b in found if any(b.startswith(f"- **{l}") for l in leads))
+
+
+BRIEF_SECTIONS = ("Kaava", "Esimerkki", "Yleinen virhekäsitys", "Tiivistelmä")
+
+
+def exercise_brief(folder):
+    """What of the lesson an exercise writer or reviewer needs (module docstring): the lesson's formula sections with
+    their symbols and conditions, the worked example (which no exercise repeats), the misconception and the summary,
+    figure bodies left out; then the levels the course asks for."""
+    f = folder / "lesson.md"
+    text = f.read_text() if f.exists() else ""
+    parts = [m.group(0).strip() for m in re.finditer(r"^## (.+?)$.*?(?=^## |\Z)", text, re.S | re.M)
+             if m.group(1).split(":")[0].strip() in BRIEF_SECTIONS]
+    body = SVG.sub(lambda m: "<!-- figure omitted -->", "\n\n".join(parts))
+    body = re.sub(r"<foreignObject.*?</foreignObject>|<(?:div|figure|figcaption)[^>]*>|</(?:div|figure|figcaption)>", "", body, flags=re.S)
+    levels = courses.course(courses.course_of(folder.name))["exercise_levels"]
+    return (f"\n## Exercise brief: the lesson as far as the exercises need it\nFrom `{f.relative_to(ROOT)}` "
+            f"({', '.join(BRIEF_SECTIONS)}; figures left out). Use its symbols and notation; an exercise needs nothing the lesson does not teach "
+            f"(Level 3 may combine it with the prerequisites or an unfamiliar context). Do not open the lesson file, inquiry.json or the simulation.\n\n"
+            f"Levels in this course: {', '.join(f'{k} {v}' for k, v in levels.items())} (CLAUDE.md \"Exercise levels\"; ids `{folder.name}-L<level>-NN`).\n\n"
+            f"~~~~markdown\n{body.strip()}\n~~~~\n")
 
 
 def block(path, label=None, collapse_svg=False):
@@ -56,7 +92,7 @@ def sim_code(folder, meta):
     return [(f"{p.relative_to(ROOT).as_posix()}", p) for p in sorted(d[1].rglob("*")) if p.is_file() and p.suffix in (".js", ".css", ".json", ".md")]
 
 
-def header(folder, role, mode):
+def header(folder, role, mode, part="lesson"):
     meta = json.loads((folder / "meta.json").read_text())
     lid = folder.name; c = courses.course(courses.course_of(lid)); s = courses.slot(lid)
     titles = {l["id"]: l["title"] for k in courses.codes() for l in courses.curriculum()[k].get("lessons", [])}
@@ -65,7 +101,8 @@ def header(folder, role, mode):
     checks = (folder / "review/checks.txt").read_text().strip() if (folder / "review/checks.txt").exists() else "(check_lesson.py has not been run)"
     bullets = lambda xs: "\n".join(f"- {x}" for x in xs)
     out = (f"# Packet: {lid} — {meta['title']} ({c['code']} {c['title']})\n"
-           f"Role: **{role}**. Mode: **{mode}**. Content hash now: `{content_hash(folder)}`.\n"
+           + (f"Part: **exercises** (the exercise set `{courses.exercise_dir(folder).relative_to(ROOT)}/` and `answers.py`, reviewed apart from the lesson).\n" if part == "exercises" else "")
+           + f"Role: **{role}**. Mode: **{mode}**. Content hash now: `{content_hash(folder, part)}`.\n"
            f"House rules: `CLAUDE.md` (in your context; if it is not, read `{(ROOT / 'CLAUDE.md').relative_to(ROOT)}` first). This packet adds what CLAUDE.md does not hold.\n\n"
            f"## Course {c['code']}: {c['title']} (LOPS 2019, {c.get('op', '?')} op, {c.get('type', '')})\n"
            f"Source: {courses.curriculum().get('_source', {}).get('modules', 'docs/lops2019/')}.\n\n**Tavoitteet**\n{bullets(c.get('tavoitteet', []))}\n\n"
@@ -82,24 +119,46 @@ def header(folder, role, mode):
     d = courses.sim_dir(folder, meta); users = courses.deps().get(d[2], []) if d and d[0] != "lesson" else []
     sim_line = ("none" if d is None else f"`{courses.lesson_file(folder, 'sim.js').relative_to(ROOT)}` (lesson folder, FY3 layout)" if d[0] == "lesson"
                 else f"`{d[1].relative_to(ROOT)}/` ({d[0]}; used by {', '.join(users) or lid})")
-    out += (f"\n## Assets\nSimulation: {sim_line}. Pictures folder of the course: `{c['paths']['pics'].relative_to(ROOT)}/` "
-            f"(text refers to `pics/{c['slug']}/<file>`); pictures this lesson uses: {', '.join(courses.pic_refs(folder)) or 'none'}.\n"
-            f"\n## Deterministic checks (already run: do not repeat them)\n```\n{checks}\n```\n")
+    if part == "lesson":
+        out += (f"\n## Assets\nSimulation: {sim_line}. Pictures folder of the course: `{c['paths']['pics'].relative_to(ROOT)}/` "
+                f"(text refers to `pics/{c['slug']}/<file>`); pictures this lesson uses: {', '.join(courses.pic_refs(folder)) or 'none'}.\n")
+    out += f"\n## Deterministic checks (already run: do not repeat them)\n```\n{checks}\n```\n"
     return out, meta
 
 
-def shots(folder, role):
+def shots(folder, role, part="lesson"):
     f = folder / "review" / "shots.md"
     if not f.exists(): return "\n## Screenshots\n(none yet: the orchestrator runs python scripts/screenshot.py first)\n"
     rows = [l for l in f.read_text().splitlines() if l.startswith("| review/")]
-    if role == "science": rows = [l for l in rows if re.search(r"-(fig-\d+|sim|exp-[^|]*)-\d+", l)]   # what carries physics: figures, the sim, experiments
+    if part == "exercises": rows = [l for l in rows if "exercises" in l.split("|")[1]]      # the exercise levels, closed and with solutions open
+    elif role == "science": rows = [l for l in rows if re.search(r"-(fig-\d+|sim|exp-[^|]*)-\d+", l)]   # what carries physics: figures, the sim, experiments
     return ("\n## Screenshots (open only what your questions need, with the Read tool; paths relative to the lesson folder)\n"
             "| file | shows | px | ≈ tokens |\n|---|---|---|---|\n" + "\n".join(rows) + "\n")
 
 
-def reviewer_rules(role, lid):
+def exercise_rules(role, lid):
+    """What a reviewer of the exercise set judges, and where its report goes."""
+    what = ("1. Every task's physics: the right law for the situation, its conditions met, data realistic (units, magnitudes, signs), inside the course's central contents and scope notes above and what the brief's lesson teaches.\n"
+            "2. answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare; `unit` and `tolerance` fit the data's significant figures.\n"
+            "3. solutions.md: every solution complete (NOTES §3 Complete solutions), the stated principle really applies and its reason is right, the unknown solved symbolically before substitution, conversions right, rounding justified by the really limiting datum, the reasonableness check a real check.\n"
+            "4. Notation and symbols the same as in the brief's lesson."
+            if role == "science" else
+            "1. Levels per the rubric (CLAUDE.md \"Exercise levels\" and the counts above); none repeats the worked example in the brief; together they practise the slot's goals, no more.\n"
+            "2. Each task: the situation first, the question last as its own sentence; everyday contexts a 17-year-old recognises; the data needed and no trap the lesson did not prepare.\n"
+            "3. Every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
+            "4. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
+            "5. Phone usability of the exercise captures listed above: nothing clipped, a long calculation still readable at 360 px.")
+    return (f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
+            f"## Report: write `exercises/review/{role}.md` (in the lesson folder), under 400 words, findings only\n"
+            f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid} --exercises>` run at the start and again at the end "
+            f"(if it changed, the exercises were edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
+            f"`## Polish` (at most five, same format; language, style and taste go here, never under Blocking), `## Checked` (at most ten one-line items). "
+            f"Never edit a lesson or exercise file. Read nothing the packet already gives you; never open lesson.md, inquiry.json or the simulation.\n")
+
+
+def reviewer_rules(role, lid, both=False):
     what = ("1. Every formula: correct, conditions stated, inside the course's central contents and scope notes above.\n2. Units, magnitudes, signs; nothing unrealistic.\n"
-            "3. answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare.\n"
+            "3. answers.py and lesson-answers.py: each line computes the right physics from the task text; recompute all answers in ONE python call and compare.\n"
             "4. solutions.md, every numeric task's solution and the worked example: complete (NOTES §3 Complete solutions), reasoning right, the stated principle really applies and its reason is right, unknown solved symbolically before substitution, conversions right, rounding justified, the reasonableness check a real check.\n"
             "5. Figures (SVG numbers) and the simulation code: physically correct, the sim implements the lesson's model, its limits are said, nothing misleads.\n"
             "6. inquiry.json: every correct option, every feedback's physics and numbers, each experiment's setup isolates its varied parameter."
@@ -117,7 +176,63 @@ def reviewer_rules(role, lid):
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid}>` run at the start and again at the end "
             f"(if it changed, the lesson was edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
             f"`## Polish` (at most five, same format; language, style and taste go here, never under Blocking), `## Checked` (at most ten one-line items). "
-            f"Never edit a lesson file. Read nothing the packet already gives you; investigate what the judgement needs.\n")
+            f"Never edit a lesson file. Read nothing the packet already gives you; investigate what the judgement needs.\n"
+            + (f"\n## Second report: the exercise set\nThe exercises (`exercises/exercises.json`, `exercises/solutions.md`, `answers.py`) are reviewed apart from the lesson "
+               f"(README \"Exercises\") and need a review too, so judge them in this run and write a second report, `exercises/review/{role}.md`, in the same format: "
+               f"line 2 `CONTENT-HASH: <python3 scripts/reviews.py hash {lid} --exercises>`, findings about the exercise set only. `review/{role}.md` then holds "
+               f"the findings about everything else. A finding about both goes in both.\n" if both else
+               "\nThe exercise set (exercises/, answers.py) is reviewed apart from the lesson and is not yours to judge here.\n"))
+
+
+def exercise_packet(folder, role, fix=False):
+    """The packet of the exercise set (module docstring): reviewers judge exercises.json, solutions.md and answers.py
+    from the exercise brief; the developer writes or fixes them from it."""
+    lid = folder.name; ex = courses.exercise_dir(folder)
+    files = ("exercises.json", "solutions.md", "answers.py")
+    if role in ("science", "pedagogy"):
+        sc = scope(folder, "exercises")[role]; mode = sc["mode"]
+        out, meta = header(folder, role, mode, "exercises")
+        if mode == "none":
+            out += (f"\n## No review needed\nSince the version you passed only this changed: {sc['why']} (categories: {', '.join(sc['categories'])}). "
+                    f"It is outside your judgement (scripts/reviews.py RULES); `python scripts/reviews.py carry {lid} --exercises` records that your PASS carries over.\n")
+        else:
+            out += exercise_brief(folder)
+            if mode == "delta":
+                prev = (review_dir(folder, "exercises") / f"{role}.md").read_text()
+                out += (f"\n## Delta review\nYou passed this exercise set earlier (report below). Since then only the diff below changed ({sc['why']}). "
+                        f"Judge the diff in its context (the current files are on disk if you need more). If the change cannot be judged reliably this way, "
+                        f"write `ESCALATE: full review needed` as line 3 of your report (verdict FAIL) and stop.\n\n### Your previous report\n```\n{prev.strip()}\n```\n"
+                        f"### Changes since the version you passed\n```diff\n{sc['diff'].strip()}\n```\n")
+            else:
+                if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
+                out += "\n## The exercise set\n" + "".join(block(courses.lesson_file(folder, n)) for n in files if role == "science" or n != "answers.py")
+            out += shots(folder, role, "exercises") + exercise_rules(role, lid)
+    else:
+        mode = "fix" if fix else "write"
+        out, meta = header(folder, role, mode, "exercises")
+        out += ("\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope") + "\n\n"
+                + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n")
+        out += exercise_brief(folder)
+        out += (f"\n## Where files go\n- `{ex.relative_to(ROOT)}/exercises.json` (schema: README \"Exercise schema\") and `{ex.relative_to(ROOT)}/solutions.md` (one `## <id>` block each)\n"
+                f"- `{courses.lesson_rel(folder, 'answers.py')}`: the exercises' answers, one commented line per step, printing `{{id: value}}`\n"
+                f"- never the lesson's files (lesson.md, inquiry.json, exit-ticket.json, meta.json, lesson-answers.py, figures, the simulation): a finding about those goes in your report as \"not fixable here\"\n")
+        if fix:
+            out += "\n## Findings to resolve (every Blocking item; Polish items only when the orchestrator lists them)\n"
+            for n in ("science", "pedagogy"):
+                f = review_dir(folder, "exercises") / f"{n}.md"
+                if f.exists(): out += f"### {n}\n```\n{f.read_text().strip()}\n```\n"
+            out += "\n## The exercise set's files (open the ones a finding names; Edit needs a Read first)\n" + "\n".join(
+                f"- `{courses.lesson_rel(folder, n)}` ({courses.lesson_file(folder, n).stat().st_size} bytes)" for n in files if courses.lesson_file(folder, n).is_file()) + "\n"
+        else:
+            out += "\n## The exercise set now (keep every id that exists; new tasks get the next free number of their level)\n" + "".join(block(courses.lesson_file(folder, n)) for n in files)
+        out += ("\n## Your task\n" + ("Resolve every Blocking finding and exactly the Polish items the orchestrator lists; change nothing else, so the reviewers judge a small diff. "
+                                      if fix else "Write the exercises your prompt asks for (new tasks, or the whole set for a new lesson), each with its complete solution; none repeats the worked example or another task. ")
+                + "Compute every answer in answers.py first. "
+                f"Finish with `python3 scripts/lint_lesson.py {lid}` and `python3 scripts/check_solutions.py {lid}` until neither reports an error, "
+                f"then write exercises/review/developer.md (`VERDICT: DONE` or `VERDICT: BLOCKED` + reason, what changed per file, ≤ 200 words).\n")
+    f = review_dir(folder, "exercises") / f"packet-{role}.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
+    print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
+    return mode
 
 
 def packet(folder, role, fix=False):
@@ -138,12 +253,13 @@ def packet(folder, role, fix=False):
                         f"### Changes since the version you passed\n```diff\n{sc['diff'].strip()}\n```\n")
             else:
                 if sc["why"] != "no earlier PASS": out += f"\n## Full review\nReason: {sc['why']}.\n"
+                both = scope(folder, "exercises")[role]["mode"] == "full"   # a new lesson: one reviewer run judges both parts, two reports
+                names = [n for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "lesson-answers.py", "exit-ticket.json", "sim-spec.md")
+                         if (both or n not in EXERCISES) and (role == "science" or not n.endswith(".py"))]
+                for n in names: out += block(courses.lesson_file(folder, n), courses.lesson_rel(folder, n) if n in EXERCISES[:2] else None, collapse_svg=(role == "pedagogy" and n == "lesson.md"))
                 if role == "science":
-                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim-spec.md"): out += block(courses.lesson_file(folder, n))
                     for label, p in sim_code(folder, meta): out += block(p, label)
-                else:
-                    for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json", "sim-spec.md"): out += block(courses.lesson_file(folder, n), collapse_svg=(n == "lesson.md"))
-            out += shots(folder, role) + reviewer_rules(role, lid)
+            out += shots(folder, role) + reviewer_rules(role, lid, mode == "full" and both)
     else:
         mode = "fix" if fix else "draft"
         out, meta = header(folder, role, mode)
@@ -152,7 +268,8 @@ def packet(folder, role, fix=False):
         out += "\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n"
         if has_sim: out += "\n" + sections("NOTES.md", "4. Simulations and pages") + "\n"
         own = c["paths"]["sims"] / lid
-        out += (f"\n## Where files go\n- lesson files: `{folder.relative_to(ROOT)}/` (meta.json, lesson.md, inquiry.json, exercises.json, solutions.md, answers.py, exit-ticket.json, sim-spec.md)\n"
+        out += (f"\n## Where files go\n- lesson texts: `{folder.relative_to(ROOT)}/` (meta.json, lesson.md, inquiry.json, exit-ticket.json); the exercise set: `{courses.exercise_dir(folder).relative_to(ROOT)}/` (exercises.json, solutions.md)\n"
+                f"- code: `{courses.code_dir(folder).relative_to(ROOT)}/` (answers.py: the exercises' answers; lesson-answers.py: the numbers of the lesson text and the inquiry; figures.py; sim-spec.md)\n"
                 f"- simulation: " + (f"`{folder.relative_to(ROOT)}/sim.js` (this course keeps sims in lesson folders)" if c.get("lesson_folder_sims")
                                      else f"`{own.relative_to(ROOT)}/sim.js` with its own `sim.css` and images when it has them (meta.json `\"sim\": true`); "
                                           f"images load from `document.getElementById('sim-root').dataset.base`") + "\n"
@@ -229,4 +346,4 @@ if __name__ == "__main__":
     a = sys.argv[1:]
     if len(a) == 4 and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"): batch(a[1].split(","), a[3]); sys.exit(0)
     if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "developer"): sys.exit(__doc__)
-    packet(find_lesson(a[0]), a[2], fix="--fix" in a)
+    (exercise_packet if "--exercises" in a else packet)(find_lesson(a[0]), a[2], fix="--fix" in a)

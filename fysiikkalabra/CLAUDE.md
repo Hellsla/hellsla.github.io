@@ -17,7 +17,7 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 - SI units, upright with a thin space: `9,81 m/s²`. Decimal comma in Finnish text, decimal point in JSON.
 - g = 9,81 m/s², always in m/s² (never N/kg). Three significant figures in final answers unless the data has fewer.
 - Vectors bold in LaTeX (`\mathbf{F}`), magnitudes plain. Every formula appears once in display LaTeX with its symbols named.
-- Every exercise has `answer`, `unit` and `tolerance`; the data carries the significant figures the answer should have, and a student rounding to them stays inside the tolerance. `answers.py` computes every answer.
+- Every exercise has `answer`, `unit` and `tolerance`; the data carries the significant figures the answer should have, and a student rounding to them stays inside the tolerance. `answers.py` computes every exercise answer; `lesson-answers.py` the numbers of the lesson text and the inquiry.
 
 ## Lesson form (human decisions 2026-10-25, every lesson)
 1. **Visualise.** `## Ydinajatus` and `## Kaava: <law>` each have at least one inline SVG figure right after the paragraph it explains, and any other theory point with a picture (p = F/A) gets a simple one; every label inside a figure is LaTeX (`foreignObject`, NOTES.md §3, teacher 2026-10-26), and so is every label and value in a simulation's canvas and readout (NOTES.md §1); graphs and figures are of printed-textbook quality (NOTES.md §3 Graphs, Print quality); no paragraph over about 120 words.
@@ -62,21 +62,24 @@ Level 1: one formula, values given, 5 problems. Level 2: two steps or a conversi
 meta.json          id, course, title, goals, prerequisites, glossary, sim (true | "<sim folder>" | false), solutions (all; first and none are not used since 2026-10-27)
 lesson.md          Ydinajatus, Kaava, Esimerkki (staged), misconception, summary; inline SVG figures
 inquiry.json       the inquiry sequence: contribution, prior, activities by stage (format in docs/inquiry.md)
-exercises.json     three levels (schema in README)         solutions.md    one complete solution per exercise (CLAUDE.md Lesson form 7, NOTES §3)
 exit-ticket.json   3 quick checks
 review/            science.md, pedagogy.md (legacy.md on a prototype), carry.tsv, developer.md, checks.txt, usage.tsv; packets and shots git-ignored
+exercises/         the exercise set, reviewed apart from the lesson (teacher 2026-10-28, README "Exercises"):
+  exercises.json   three levels (schema in README)         solutions.md    one complete solution per exercise (CLAUDE.md Lesson form 7, NOTES §3)
+  review/          its own science.md, pedagogy.md, carry.tsv, developer.md
 ```
 `lessons/<course>/<id>/`, the same for every language:
 ```
-answers.py         computes every answer                   figures.py      the lesson's figures (scripts/figures.py writes them into lesson.md)
+answers.py         computes every exercise answer (part of the exercise set)    figures.py      the lesson's figures (scripts/figures.py writes them into lesson.md)
+lesson-answers.py  the numbers of lesson.md and inquiry.json, when there are any (part of the lesson)
 sim-spec.md        the simulation's one-paragraph spec: what the student can find out with it
 sim.js             FY3 only: the lesson's simulation (its visible texts are in lang/fi.json "sims", called with __('key'))
 ```
 Simulations live in `assets/sims/<course>/<name>/` (sim.js exposing `window.simState` and `defineSimAdapter()`, its sim.css and images; FY3's stay as `sim.js` in `lessons/FY3/<id>/`; every text a simulation shows is in `lang/fi.json` under `sims.<name>`, never a literal in sim.js), pictures in `assets/pics/<course>/` referred to as `pics/<course>/<file>`; `assets/shared/` only for what several courses use (`assets/README.md`).
 
 ## Pipeline
-- **developer** writes and fixes, **science-reviewer** and **pedagogy-reviewer** judge independently; each works from a packet file (`scripts/review_packet.py`) that its prompt names. `/lesson <id>` (`.claude/commands/lesson.md` at the repository root, beside `.claude/agents/`: routing, budgets, steps) runs a round; `python scripts/check_lesson.py <id>` runs every deterministic check before any review.
-- **The rule** (`scripts/reviews.py`): a lesson is on the site when both reviews say PASS for its current content hash. The hash covers the lesson files, its simulation folder, its pictures and its simulation tests; formatting, build scripts, templates and configuration never stale a review. What changed decides who looks again (`reviews.py scope`: none, delta or full per reviewer); a PASS that holds over a change its reviewer need not see is recorded in `review/carry.tsv` (`reviews.py carry`) and re-derived by CI. There are no status fields and nothing to edit by hand. `review/legacy.md` marks a prototype lesson published before this pipeline until any content change retires it.
+- **developer** writes and fixes, **science-reviewer** and **pedagogy-reviewer** judge independently; each works from a packet file (`scripts/review_packet.py`) that its prompt names. `/lesson <id>` (`.claude/commands/lesson.md` at the repository root, beside `.claude/agents/`: routing, budgets, steps) runs a round; `/exercises <id> <task>` (`.claude/commands/exercises.md`) works on a lesson's exercises alone, from an exercise packet that carries the lesson's formulas and worked example (the exercise brief) instead of the lesson; `python scripts/check_lesson.py <id>` runs every deterministic check before any review.
+- **The rule** (`scripts/reviews.py`): a lesson is on the site when both reviews say PASS for its current content hash. Its exercise set has its own hash and its own two reviews (`exercises/review/`, `--exercises`): the page shows the version they last passed, so new exercises never take the lesson off the site. The hash covers the lesson files, its simulation folder, its pictures and its simulation tests; formatting, build scripts, templates and configuration never stale a review. What changed decides who looks again (`reviews.py scope`: none, delta or full per reviewer); a PASS that holds over a change its reviewer need not see is recorded in `review/carry.tsv` (`reviews.py carry`) and re-derived by CI. There are no status fields and nothing to edit by hand. `review/legacy.md` marks a prototype lesson published before this pipeline until any content change retires it.
 - Merging the pull request is the teacher's publication decision. CI rebuilds `site/` and fails if the committed copy differs; a lesson whose reviews went stale is left out with a WARNING, never silently.
 
 ## Never

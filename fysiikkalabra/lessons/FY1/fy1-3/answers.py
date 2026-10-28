@@ -1,4 +1,4 @@
-"""Every answer in exercises.json and inquiry.json for fy1-3, computed from the task data (python -I answers.py).
+"""Every answer in exercises.json for fy1-3, computed from the task data (python -I answers.py).
 Mean x̄ = (x1 + ... + xn) / n, half-range Δx = (x_max − x_min) / 2, error = result − true value, zero correction x = reading − zero reading.
 The simulation's fixed series G is the same list as in assets/sims/fy1/fy1-3/sim.js: reading i = round(T + δ_sys + δ_sat · G[i], 0,01 s).
 Prints {id: number} as JSON on the last line; the lint and the gate compare it with exercises.json."""
@@ -37,24 +37,4 @@ a["fy1-3-L2-04"] = half([5.2, 5.6, 5.4, 5.3, 5.5]) / half([5.40, 5.43, 5.41, 5.4
 a["fy1-3-L3-01"] = -0.18 + 0.12                                    # reading = true − start delay + stop delay: error = −0,18 s + 0,12 s = −0,06 s
 a["fy1-3-L3-02"] = 0.5 / 250 * 1000                                # one sheet: 0,5 mm / 250 = 0,002 mm = 2,0 µm
 a["fy1-3-L3-03"] = mean([8.24, 8.27, 8.25, 8.29, 8.25]) - 8.00    # systematic error = mean − true = 8,26 cm − 8,00 cm = 0,26 cm
-
-# Inquiry numbers (inquiry.json), not exercises
-r, m = sim(40, 0.15, 0.30)
-a["inq-exp2-vir"] = m - T                                          # experiment 2, n = 40: mean − T = 2,6995 s − 2,40 s = 0,2995 s (about 0,30 s)
-a["inq-exp3-suhde"] = half(sim(40, 0.30, 0.0)[0]) / half(sim(40, 0.05, 0.0)[0])    # half-range at δ_sat 0,30 s over that at 0,05 s: 0,525 / 0,085 = 6,2
-coins = [27.9, 28.1, 28.0, 27.8, 28.2]
-a["inq-siirto"] = (mean(coins) - 0.8) / 5                          # one coin: (28,0 g − 0,8 g) / 5 = 5,44 g
-a["inq-siirto-ilman-korjausta"] = mean(coins) / 5                  # mistake: zero error forgotten = 5,6 g
-a["inq-siirto-ei-jakoa"] = mean(coins) - 0.8                       # mistake: five coins, not one = 27,2 g
-a["inq-siirto-korjaus-per-kolikko"] = mean(coins) / 5 - 0.8        # mistake: zero error subtracted from one coin = 4,8 g
-t5 = [2.36, 2.41, 2.38, 2.46, 2.39]
-a["inq-check2"] = half(t5) / mean(t5) * 100                        # relative error = 0,05 s / 2,40 s = 2,1 %
-ex = [3.12, 3.25, 3.07, 3.31, 3.19, 3.15]
-a["inq-example-mean"] = mean(ex)                                   # worked example: mean = 19,09 s / 6 = 3,18 s
-a["inq-example-half"] = half(ex)                                   # half-range = (3,31 s − 3,07 s) / 2 = 0,12 s
-a["inq-example-rel"] = half(ex) / mean(ex) * 100                   # relative error = 0,12 s / 3,18 s = 3,8 %
-ice = [1.4, 1.6, 1.5, 1.5, 1.6, 1.4, 1.5, 1.5]
-a["inq-ice-zero"] = mean(ice)                                      # thermometer in melting ice: mean reading 1,5 °C, true 0 °C
-a["inq-ice-corrected"] = 62.3 - mean(ice)                          # 62,3 °C − 1,5 °C = 60,8 °C
-
 print(json.dumps(a))

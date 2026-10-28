@@ -2,6 +2,9 @@
 
 Without an argument only lessons whose reviews are current are built (scripts/reviews.py: state reviewed, or
 legacy for a prototype lesson kept visible by the teacher), into site/ (committed, served by GitHub Pages).
+The exercise set is reviewed on its own (exercises/, README "Exercises"): a published page shows the exercises
+both reviewers last passed (reviews.published_exercises: the working tree, or an earlier commit while a new
+version waits for review), and a note instead when no version has passed yet.
 With a lesson id that lesson is built regardless of its state into the git-ignored preview/; with --all every
 lesson is (CI uses this to test drafts too). So a draft can never end up in the published folder.
 The plain build renders into site.tmp/, checks that every expected page is there and swaps it in only then,
@@ -24,7 +27,7 @@ output folder, so every reference is relative and works on GitHub Pages under an
 stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
 import courses, i18n, inquiry, mathlayout
 from i18n import t as T
 
@@ -195,13 +198,11 @@ def example_md(lesson_md):
     return lesson_md[:m.start(1)] + STEP.join(stage(p) for p in m.group(1).split(STEP)) + lesson_md[m.end(1):]
 
 
-def solutions_of(folder):
+def solutions_of(text):
     """{exercise id: html} from solutions.md, one `## id` block each: every bold step (**Annettu:**, **Periaate:**, ...)
     starts a paragraph of its own so the steps read one by one on a phone; other line breaks are kept (nl2br)."""
-    f = folder / "solutions.md"
-    if not f.exists(): return {}
     out = {}
-    for block in re.split(r"^## ", f.read_text(), flags=re.M)[1:]:
+    for block in re.split(r"^## ", text or "", flags=re.M)[1:]:
         head, _, body = block.partition("\n")
         out[head.strip()] = solution_html(body)
     return out
@@ -299,13 +300,20 @@ def build_language(lang):
         except ValueError as e: sys.exit(str(e))
         meta["state"] = rs["state"]; states[meta["id"]] = rs
         if rs["state"] == "draft" and not (only or build_all): continue   # publish only lessons whose reviews are current
-        missing = [f for f in ("lesson.md", "exercises.json", "solutions.md", "exit-ticket.json") if not (folder / f).exists()]
+        missing = [f for f in ("lesson.md", "exit-ticket.json") if not (folder / f).exists()]
+        if (only or build_all): missing += [f"exercises/{f}" for f in courses.EXERCISE_FILES if not courses.lesson_file(folder, f).exists()]
         if missing:                                      # a draft still being written: skip it instead of failing the whole build
             print("skipped", meta["id"], "(missing " + ", ".join(missing) + ")"); continue
-        ex = json.loads((folder / "exercises.json").read_text())
+        try: ex_src = WorkTree() if (only or build_all) else published_exercises(folder)   # a preview shows the exercises as they are
+        except ValueError as e: sys.exit(f"{meta['id']} exercises: {e}")
+        ex_text = ex_src and ex_src.read(courses.lesson_rel(folder, "exercises.json")); sol_text = ex_src and ex_src.read(courses.lesson_rel(folder, "solutions.md"))
+        if not (only or build_all) and not isinstance(ex_src, WorkTree):
+            print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {meta['id']}: exercise reviews are not current; "
+                  + (f"the page keeps the exercises last reviewed (commit {ex_src.sha[:7]})" if ex_src else "no version has passed yet, the page says the exercises are coming"))
+        ex = json.loads(ex_text) if ex_text else {}
         publish = meta.get("solutions", "all")
-        solutions = solutions_of(folder) if publish != "none" else {}
-        ex_html = ""
+        solutions = solutions_of(sol_text) if publish != "none" else {}
+        ex_html = "" if ex else f'<p class="notice" role="note">{T("lesson.exercises_pending")}</p>'
         for lvl, items in ex.items():
             ex_html += f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} <span class=\"count\">{T('lesson.level_count', n=len(items))}</span></summary><ol>"
             for i, e in enumerate(items):
@@ -336,7 +344,7 @@ def build_language(lang):
             css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
             sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
                    f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script><!--sim-info--></section>')
-        for ref in courses.pic_refs(folder):              # pictures the text refers to, at the same relative path
+        for ref in courses.pic_refs_in([(courses.lesson_file(folder, n).read_text() if courses.lesson_file(folder, n).exists() else "") for n in courses.LESSON_TEXTS] + [ex_text, sol_text]):   # pictures the text refers to, at the same relative path
             if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
         name = f"{meta['id']}.html"
@@ -350,7 +358,7 @@ def build_language(lang):
                    + f'<a href="#exit">{inquiry.exit_title()}</a><a href="#exercises">{inquiry.exercises_title()}</a>')
             main = (f'<article id="teoria">{lesson_html}</article>\n'
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n'
-                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto}{ex_html}</section>')
+                    f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
             lesson_html = lesson_html.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
@@ -360,7 +368,7 @@ def build_language(lang):
                 m = re.match(r'<h2(?: data-section="([^"]*)")?>(.*?)</h2>', piece)
                 if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
                                                                      re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
-            parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto}{ex_html}',
+            parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             main = f'<article id="teoria" class="inquiry">{body}</article>'
