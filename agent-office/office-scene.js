@@ -6,6 +6,7 @@ window.AgentOfficeScene = {
     const tr=value=>window.OfficeI18n?.t(value) ?? value;
     const C = {ink:'#ece4ce',muted:'#b8b8a9',gold:'#edba70',blue:'#8cb8e0',pink:'#e9a1b4',green:'#9ccb9b',red:'#e89885',amber:'#d7b474'};
     const floor=window.OfficeFloor;
+    const duration=()=>options.wholeWebReview?.()?42:window.OfficeProcessing.duration;
     const stations=floor.zones,home=floor.home;
     const colors = {orchestrator:'#c2ad80',support:'#a9b5db',chatgpt:'#82cbb6',checks:C.amber,teacher:'#e5dfbd',developer:C.gold,science:C.blue,pedagogy:C.pink,repository:'#b6c79f',gatekeeper:'#719b95',site:'#a69ac3'};
     const looks = {
@@ -123,7 +124,7 @@ window.AgentOfficeScene = {
       journeys[role+'CoffeeReturn']=journeys[role+'Coffee'].slice().reverse();
     }
     function coffeeBreak(state,review){
-      const loop=Math.floor(options.phase()/42);
+      const loop=Math.floor(options.phase()/duration());
       if(!state || loop%2)return null;
       const first=Object.keys(review.roles).find(role=>review.roles[role].collectStart===14);
       const choice=(parseInt(state.hash?.slice(-1) || '0',16)+Math.floor(loop/2))%3;
@@ -137,7 +138,7 @@ window.AgentOfficeScene = {
     }
     function mug(x,y){box(x-6,y-5,12,10,'#e8dfc6');box(x+6,y-3,4,6,'#c6bb9c');box(x-4,y-5,8,2,'#75604c');}
     function reviewProgress(state){
-      const cycle=options.phase()%42;
+      const cycle=options.phase()%duration();
       // Timing illustrates independent work; it is not inferred from session durations.
       // Vary which role finishes first, deterministically for each lesson version.
       const first=parseInt(state?.hash?.slice(-1) || '0',16)%2?'pedagogy':'science';
@@ -159,13 +160,13 @@ window.AgentOfficeScene = {
       return {cycle,roles,received,needsRevision,ready:Boolean(state?.eligible) && received===2};
     }
     function nextHandoff(){
-      if(options.wholeWebReview?.())return [0,7,14,21,28,35].find(moment=>moment>options.phase()%42+.001) ?? 0;
+      if(options.wholeWebReview?.())return [0,7,14,21,28,35,37,38,39,40].find(moment=>moment>options.phase()%42+.001) ?? 0;
       const review=reviewProgress(options.state());
-      const moments=[0,7,14,21,28,31.5,32,34,35,38,39,40.5,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
+      const moments=[0,7,10,10.875,11.75,12.625,13.5,14,17,21,28,31.5,32,34,35,37,38,39,40,42,43,44.5,46,47.5,49,52,55,...Object.values(review.roles).flatMap(role=>[role.collectStart,(role.collectStart+role.collectEnd)/2,role.collectEnd,...(role.available?[role.reportStart,role.arrival,role.reportEnd]:[])])];
       return [...new Set(moments)].sort((a,b)=>a-b).find(moment=>moment>review.cycle+.001) ?? 0;
     }
-    function actors(state,review,coffee){
-      const cycle=options.phase()%42,step=Math.floor(cycle/7),f=(cycle%7)/7;
+    function actors(state,review,coffee,testing){
+      const cycle=options.phase()%duration(),step=Math.floor(cycle/7),f=(cycle%7)/7;
       const positions=Object.fromEntries(Object.entries(home).map(([id,p])=>[id,[...p]]));
       const packets={};const moving={};const busy=new Set();
       const walk=(id,points,t,kind,color)=>{positions[id]=position(points,t);moving[id]=!options.still();busy.add(id);if(kind)packets[id]={kind,color:color||colors[id]};};
@@ -178,11 +179,10 @@ window.AgentOfficeScene = {
         if(step===1)packets.teacher={kind:'WEBPAGE',color:colors.teacher};
         if(step===3)walk('chatgpt',journeys.feedback,f,f<.5?'SUGGESTIONS':null);
         if(step===4)walk('teacher',journeys.revision,f,'CHANGE BRIEF');
-        if(step===5)walk('developer',journeys.retest,f,f<.5?'RECHECK':null);
+
       }else if(state){
         if(step===0 && !(options.round?.()?.index>0))walk('teacher',journeys.brief,f,'BRIEF');
-        if(step===1){if(!(options.round?.()?.index>0))walk('teacher',journeys.briefReturn,f);walk('developer',journeys.checks,f,'MATERIAL');}
-        if(step===2)walk('developer',journeys.checksReturn,f);
+        if(step===1 && !(options.round?.()?.index>0))walk('teacher',journeys.briefReturn,f);
         for(const role of ['science','pedagogy']){
           const r=review.roles[role];
           if(r.collecting){const progress=(cycle-r.collectStart)/(r.collectEnd-r.collectStart);walk(role,journeys[role],progress,progress>=.5?'COPY':null);}
@@ -200,11 +200,15 @@ window.AgentOfficeScene = {
           else if(cycle<39){positions.teacher=[...floor.seats.publication];positions.teacher.facing=[1,0];positions.repository.facing=[-1,0];busy.add('teacher');busy.add('repository');}
           else walk('teacher',journeys.publicationReturn,(cycle-39)/3);
         }
-        if(step===5 && review.needsRevision)walk('developer',journeys.retest,f,f<.5?'RETEST':null,C.amber);
-        if(step===5 && review.ready && approved && cycle>=39){
-          walk('repository',journeys.publish,(cycle-39)/3,'FOR PUBLICATION',C.green);
-        }
 
+        if(review.ready && approved && cycle>=39 && cycle<43)walk('repository',journeys.publish,(cycle-39)/4,'FOR PUBLICATION',C.green);
+        else if(review.ready && approved && cycle>=43 && cycle<47)walk('repository',journeys.publishReturn,(cycle-43)/4);
+
+      }
+      if(testing){
+        if(testing.stage==='delivery')walk('developer',journeys.checks,testing.travel,'MATERIAL');
+        else if(testing.stage==='working'){positions.developer=[925,525];positions.developer.facing=[1,0];busy.add('developer');}
+        else walk('developer',journeys.checksReturn,testing.travel);
       }
       if(coffee && !busy.has(coffee.role)){
         if(coffee.f<1/3)walk(coffee.role,journeys[coffee.role+'Coffee'],coffee.f*3);
@@ -218,14 +222,14 @@ window.AgentOfficeScene = {
         }
       }
       for(const sender of ['developer','science','pedagogy']){
-        if(busy.has(sender) && Math.hypot(positions[sender][0]-925,positions[sender][1]-525)<70){
+        if(testing?.stage!=='working' && busy.has(sender) && Math.hypot(positions[sender][0]-925,positions[sender][1]-525)<70){
           positions[sender].facing=[1,0];positions.checks.facing=[-1,0];busy.add('checks');
         }
       }
       figurePositions=[];
       for(const id of Object.keys(home).sort((a,b)=>positions[a][1]-positions[b][1])){
         const point=positions[id],[x,y]=point;
-        const working=!busy.has(id) && coffee?.role!==id && id!=='chatgpt' && Math.hypot(x-home[id][0],y-home[id][1])<1;
+        const working=!busy.has(id) && coffee?.role!==id && id!=='chatgpt' && (id!=='checks' || testing?.stage==='working') && Math.hypot(x-home[id][0],y-home[id][1])<1;
         person(x,y,id,moving[id],Boolean(packets[id]),point.facing || [1,0],working);
         figurePositions.push({id,x,y});
         const awayFromDesk=Math.hypot(x-home[id][0],y-home[id][1])>28;
@@ -252,6 +256,10 @@ window.AgentOfficeScene = {
       if((!state && !options.wholeWebReview?.()) || options.speechEnabled?.()===false || options.phase()%6>4.5)return null;
       const {step,coffee,positions,packets}=actors;let speaker,message;
       if(options.wholeWebReview?.()){({speaker,message}=window.OfficeWebReview.frame(options.phase()));}
+      else if(step>=6){
+        speaker='repository';const release=window.OfficeProcessing.publication(options.phase(),state);
+        message=release.deployed?'Publication is recorded for this version.':release.failed?'The publishing step needs another look.':release.stage==='unverified'?'The pages are prepared. Waiting for deployment evidence.':release.approved?'The approved pages are being prepared for publication.':'Publication still needs Lauri’s approval.';
+      }
       else if(step===5 && review.needsRevision){speaker='checks';message='New version. Running the checks again.';}
       else if(coffee?.seated){speaker=coffee.role;message=speaker==='developer'?'Refactoring my caffeine levels.':speaker==='teacher'?'A brief pause. The universe can wait.':'A peer review of this coffee is now in progress.';}
       else if(step===0 && options.round?.()?.index>0){speaker='developer';message='Next recorded stage. Back to the material.';}
@@ -283,11 +291,14 @@ window.AgentOfficeScene = {
       const external=options.wholeWebReview?.();
       const state=external?null:options.state(),review=reviewProgress(state);
       const approved=publicationApproved(state,review),coffee=external?null:coffeeBreak(state,review);
+      const retry=external || (review.needsRevision && review.cycle>=35);
+      const testing=window.OfficeProcessing.testing(options.phase(),{external,retry,material:Boolean(state || external)});
+      const publication=window.OfficeProcessing.publication(options.phase(),state);
       ctx.imageSmoothingEnabled=false;
-      floor.draw(ctx,{review,approved,external});
-      const activity=actors(state,review,coffee),quote=speech(state,review,activity);
+      floor.draw(ctx,{review,approved,external,testing,publication});
+      const activity=actors(state,review,coffee,testing),quote=speech(state,review,activity);
       return {step:activity.step,speech:quote,caption:this.caption(activity.step,state,review),
-        publicationApproved:approved,positions:activity.positions};
+        publicationApproved:approved,testing,publication,positions:activity.positions};
     }
     function caption(step,state,review=reviewProgress(state)){
       if(options.wholeWebReview?.())return window.OfficeWebReview.frame(options.phase()).caption;
@@ -298,11 +309,13 @@ window.AgentOfficeScene = {
       const reportCaption=review.needsRevision?'A failed, stale or invalid review blocks approval. The material must return for revision or renewed review.':review.ready?'Both independent reports have arrived and PASS the current version. The review desk is ready.':review.received===1?`${name(first)} report received. Waiting for ${waiting.toLowerCase()} to finish independently.`:Object.values(review.roles).every(role=>!role.available)?'No review reports are recorded for this version. The desk keeps waiting.':'The reviewers work independently and return reports at different times.';
       return [
         options.round?.()?.index>0?'The next recorded stage starts at development. Approvals always belong to their recorded content version.':'Lauri brings a brief to the developer.',
-        'The developer brings the material packet to automatic checks.',
+        review.cycle<10?'The developer brings the material packet to automatic checks.':review.cycle<13.5?'The test operator works through calculations, simulation, exercises and mobile layout while the material waits.':'The test operator checks the results before the reviewers collect their copies.',
         'The reviewers collect separate copies at different times and review independently, in parallel.',
         reportCaption,
         review.ready?(review.cycle<31.5?'The orchestrator takes the reviewed material from the shared inbox to the publisher.':'Lauri walks to the publisher to discuss the material before the publication decision.'):review.needsRevision?'The reviewers return their feedback separately. The developer revises the material before new checks and reviews.':`Still waiting for ${waiting.toLowerCase()} review. Nothing proceeds to the publication desk.`,
-        review.needsRevision?'The developer takes the revised material back to the test runner. New independent reviews must follow.':!review.ready?`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`:review.cycle<38?'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':review.cycle<39?(publicationApproved(state,review)?'Approval is recorded for this version. The publisher can prepare the material for publication.':'Lauri and the publisher wait: publication approval is not recorded for this version.'):(publicationApproved(state,review)?'The publisher takes the approved material to the website preview. Deployment itself remains unverified.':'No publication approval is recorded. The publisher keeps the material at the desk.')
+        review.needsRevision?'The developer takes the revised material back to the test runner. New independent reviews must follow.':!review.ready?`The review desk keeps waiting for ${waiting.toLowerCase()}. No publication handoff is made.`:review.cycle<38?'Lauri discusses the proposal with the publisher. The publication decision comes after this visit.':review.cycle<39?(publicationApproved(state,review)?'Approval is recorded for this version. The publisher can prepare the material for publication.':'Lauri and the publisher wait: publication approval is not recorded for this version.'):(publicationApproved(state,review)?'The publisher delivers the approved page bundle to the web publishing station.':'No publication approval is recorded. The publisher keeps the material at the desk.'),
+        review.needsRevision?'The revised material waits for fresh independent reviews.':!publicationApproved(state,review)?'The web publishing station waits for Lauri’s recorded approval.':review.cycle<43?'The publisher hands the approved files to the web publishing station.':'The web publishing station prepares the approved page bundle before deployment.',
+        review.needsRevision?'The revised material waits for fresh independent reviews.':!publicationApproved(state,review)?'The web publishing station waits for Lauri’s recorded approval.':window.OfficeProcessing.publication(options.phase(),state).deployed?'Publication is recorded for this version. The website display can now show it as published.':window.OfficeProcessing.publication(options.phase(),state).failed?'A publishing failure is recorded. The website is not marked as published.':'The page bundle is prepared, but successful deployment is not recorded. The website remains a preview.'
       ][step];
     }
     function hit(p){

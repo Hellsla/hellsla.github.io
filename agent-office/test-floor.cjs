@@ -1,7 +1,7 @@
 // node agent-office/test-floor.cjs — routes, fixtures and conversations share one floor.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const sandbox={window:{}};vm.createContext(sandbox);
-for(const file of ['office-web-review.js','office-floor.js','office-scene.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),sandbox);
+for(const file of ['office-web-review.js','office-processing.js','office-floor.js','office-scene.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),sandbox);
 const floor=sandbox.window.OfficeFloor;
 const obstacles=[...floor.walls,[477,382,242,42],[400,664,186,32]];
 const blocked=(x,y)=>obstacles.some(([left,top,width,height])=>x>left&&x<left+width&&y>top&&y<top+height);
@@ -20,7 +20,7 @@ const state={id:'test',hash:'abc',science:{status:'PASS'},pedagogy:{status:'PASS
 const scene=sandbox.window.AgentOfficeScene.create({getContext:()=>ctx},{state:()=>state,phase:()=>phase,still:()=>true,wholeWebReview:()=>external,speechEnabled:()=>true});
 for(const status of ['PASS','FAIL','stale','missing']){
   state.science.status=status;state.eligible=status==='PASS';
-  for(phase=0;phase<42;phase+=.25){
+  for(phase=0;phase<sandbox.window.OfficeProcessing.duration;phase+=.25){
     const result=scene.draw();
     assert.equal(Object.keys(result.positions).length,9,'Nine human roles; inbox and display are fixtures');
     for(const [role,[x,y]] of Object.entries(result.positions))assert(!blocked(x,y),`${role} walks through a wall at ${phase}`);

@@ -10,7 +10,7 @@ window.OfficeFloor = {
     {id:'chatgpt',x:40,y:390,w:310,h:160},{id:'orchestrator',x:490,y:380,w:155,h:145},
     {id:'gatekeeper',x:650,y:440,w:85,h:70},{id:'checks',x:960,y:400,w:200,h:160},
     {id:'lounge',x:40,y:620,w:300,h:220},{id:'teacher',x:380,y:635,w:230,h:205},
-    {id:'repository',x:710,y:635,w:245,h:205},{id:'site',x:980,y:625,w:185,h:160}
+    {id:'repository',x:710,y:635,w:245,h:205},{id:'site',x:980,y:625,w:185,h:153},{id:'publishing',x:970,y:785,w:187,h:62}
   ],
   // Door gaps are part of the walls, not painted-on symbols.
   walls:[
@@ -33,12 +33,12 @@ window.OfficeFloor = {
     pedagogyFeedback:[[1030,220],[1040,290],[1040,355],[260,355],[260,290],[230,255],[260,290],[260,355],[1040,355],[1040,290],[1030,220]],
     decision:[[595,470],[535,575],[835,575],[950,640],[950,745],[950,640],[835,575],[535,575],[595,470]],
     publicationVisit:[[470,745],[590,790],[640,790],[640,575],[710,575],[710,640],[710,745]],
-    publish:[[835,745],[900,805],[1090,805],[1090,755]],
+    publish:[[835,745],[900,805],[945,805]],
     request:[[470,745],[590,790],[640,790],[640,575],[390,575],[390,470],[300,470]],
     feedback:[[140,470],[140,525],[300,525],[300,500],[300,525],[140,525],[140,470]],
     revision:[[300,470],[390,470],[390,575],[450,575],[450,355],[260,355],[260,290],[230,255]]
   },
-  draw(ctx,{review,approved,external}) {
+  draw(ctx,{review,approved,external,testing,publication}) {
     const ink='#e7e1cf',muted='#b7beb2',wall='#424d4b',wood='#b29974';
     const b=(x,y,w,h,c)=>{ctx.fillStyle=c;ctx.fillRect(x,y,w,h);};
     const t=(s,x,y,c=muted,size=12,align='left')=>{ctx.font=`${size}px monospace`;ctx.textAlign=align;ctx.fillStyle=c;ctx.fillText(window.OfficeI18n?.t(s) ?? s,x,y);};
@@ -99,6 +99,13 @@ window.OfficeFloor = {
     chair(140,458,'#547b73');chair(300,458,'#547b73');
     // The check runner operates recognisable testing equipment.
     t('TESTING STATION',970,406,'#e2d1a8',13);desk(1040,488,'#d8bc79',156);
+    if(testing){
+      b(991,420,68,37,'#30494d');t(testing.stage==='working'?'Testing':testing.stage==='delivery'?'Incoming':'Results',1025,432,'#e4d9b9',8,'center');
+      t(testing.stage==='working'?testing.task:testing.stage==='delivery'?'Material':'Check notes',1025,445,'#e6c688',8,'center');
+      b(996,450,57,3,'#546564');b(996,450,57*testing.progress,3,'#d4b675');
+      b(929,500,28,22,'#536963');if(testing.stage!=='delivery')paper(932,502,20,17);
+      t(testing.stage==='working'?'Working through the checks':testing.stage==='delivery'?'Receiving material':'Reviewing results',1040,566,'#e2d1a8',10,'center');
+    }
     b(1135,432,20,96,'#30464a');for(let i=0;i<5;i++){b(1138,439+i*16,14,10,'#677c78');b(1140,442+i*16,3,3,'#b5c898');}
     // Coffee corner and informal shared table.
     t('COFFEE & CONVERSATION',57,644,'#e0dbc1',13);
@@ -115,8 +122,18 @@ window.OfficeFloor = {
     t(approved?'Ready to publish':review.ready?(review.cycle>=35?'Discuss proposal':'Waiting for Lauri'):'Waiting for reviewed work',835,818,'#d4ddc8',10,'center');
     b(984,637,165,111,'#31474b');b(991,644,151,97,'#e2e2d0');b(991,644,151,17,'#728f80');
     t('FYSIIKKALABRA',1066,681,'#4c6b62',12,'center');b(1004,693,48,32,'#b5c8b1');b(1063,693,61,4,'#9aada0');b(1063,704,53,4,'#a8b6a5');b(1063,715,59,4,'#a8b6a5');
-    t(external?'Webpage to discuss':'Website preview',1066,774,'#d3dccc',11,'center');
-    plant(1140,818);plant(590,808);
+    t(external?'Webpage to discuss':publication?.deployed?'Published version':'Website preview',1066,774,'#d3dccc',11,'center');
+    // Approved HTML/CSS reaches an automation console before the website output.
+    t('WEB PUBLISHING',1066,793,'#c9dce0',11,'center');
+    b(979,804,171,34,'#425b60');b(1009,808,134,25,'#263f46');b(979,837,171,5,'#a7a58c');
+    b(982,809,21,24,'#c9c6ac');if(['working','published','failed','unverified'].includes(publication?.stage))paper(985,812,15,17);
+    const release=publication?.stage || 'waiting';
+    const releaseLabel=release==='working'?publication.task:release==='published'?'Publication recorded':release==='failed'?'Publishing needs attention':release==='unverified'?'Awaiting evidence':release==='delivery'?'Receiving approved pages':'Waiting for approval';
+    t(releaseLabel,1075,823,release==='published'?'#b7d8a3':'#c9d7ce',9,'center');
+    if(release==='working'){b(1015,828,119,3,'#4a6265');b(1015,828,119*publication.progress,3,'#9fbec4');}
+    if(publication?.transfer)paper(1058,810-115*publication.transferProgress,17,22);
+    if(publication?.deployed){b(1125,648,8,8,'#769f68');b(1127,650,4,4,'#d5e8c5');}
+    plant(590,808);
     // Main entrance and an unobstructed common circulation space.
     b(496,843,78,10,'#c5b08b');b(494,861,82,8,'#54635b');b(485,819,100,18,'#6f7460');t('WELCOME',535,832,'#e4deca',10,'center');
   }

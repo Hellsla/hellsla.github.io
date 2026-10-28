@@ -23,7 +23,7 @@ window.OfficeJourney = {
     for(const item of chain.reverse()){
       const state=history.snapshots?.[item.snapshot]?.find(material=>material.id===materialId);
       if(!state)continue;
-      const key=JSON.stringify([state.hash,state.science,state.pedagogy,state.checks,state.eligible,state.included,state.legacy,state.publicationDecision || null,state.work || null,state.exercises || null]);
+      const key=JSON.stringify([state.hash,state.science,state.pedagogy,state.checks,state.eligible,state.included,state.legacy,state.publicationDecision || null,state.deploymentDecision || null,state.work || null,state.exercises || null]);
       if(key===lastKey)continue;
       if(state.hash!==lastHash){version++;lastHash=state.hash;}
       frames.push({state,event:item,version});lastKey=key;

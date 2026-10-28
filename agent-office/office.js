@@ -18,7 +18,9 @@
   const wholeWebReview=()=>$('replay-mode').value==='website';
   const orchestrator={id:'orchestrator',name:'Orchestrator',label:'THE COORDINATION DESK',color:'#c2ad80',path:'.claude/commands/lesson.md · .claude/commands/exercises.md',description:'Coordinates packets, checks, parallel reviewers, correction rounds and review scope. Committed usage files record orchestrator entries. This is coordination work performed by the command session, not a fourth dedicated agent definition. No private conversations or exact working times are inferred.'};
   const support={id:'support',name:'General-purpose agent',label:'RECORDED SUPPORT WORK',color:'#a9b5db',path:'Committed review/usage.tsv · agent=general-purpose',description:'Committed usage files include additional general-purpose agent work. The log does not establish a permanent specialty or its exact brief, so this office shows recorded support work without inventing a reviewer or an approval role.'};
-  const officeRoles = [orchestrator,support,chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],website,lounge];
+  const publishing={id:'publishing',name:'Web publishing',label:'AFTER LAURI’S APPROVAL',color:'#93b7c2',path:'Prepared HTML/CSS · GitHub Pages',description:'An automated station receives the approved page bundle from the publisher, prepares it and hands it to deployment. The earlier preview build remains part of development and testing. The visible processing time is illustrative. Only an explicit deployment record matching this material version can mark the website as published; approval or existing HTML alone is insufficient.'};
+  const officeRoles = [orchestrator,support,chatgpt,teacher,...roles.slice(0,3),checks,gatekeeper,roles[3],publishing,website,lounge];
+  const stageDuration=()=>wholeWebReview()?42:window.OfficeProcessing.duration;
   const days = [...new Set(history.events.map(e=>e.day))].sort().reverse();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let selected = [], minute = 0, playing = false, lastFrame = 0, lastPaint = 0, phase = 0;
@@ -57,7 +59,7 @@
     if($('clock').title!==title)$('clock').title=title;
   }
   function syncJourney(){
-    const index=$('replay-mode').value==='walkthrough' && journey.length?Math.min(Math.floor(phase/42),journey.length-1):-1;
+    const index=$('replay-mode').value==='walkthrough' && journey.length?Math.min(Math.floor(phase/stageDuration()),journey.length-1):-1;
     const frame=index<0?selectedFrame:journey[index];
     if(!frame)return;
     if(index===journeyIndex && lessonState===frame.state && snapshotEvent===frame.event)return;
@@ -80,7 +82,10 @@
     $('stage-reviews').dataset.state=state?.eligible?'PASS':state && [state.science.status,state.pedagogy.status].includes('FAIL')?'FAIL':'unknown';
     $('stage-gate').dataset.state=state?(state.eligible?'PASS':'FAIL'):'unknown';
     $('gate-status').textContent=state?(state.eligible?'OPEN · current or recorded carried PASS':'CLOSED · both current approvals required'):'No material selected';
-    $('stage-publish').dataset.state='unknown';
+    $('stage-publish').dataset.state=state?.publicationDecision?.contentHash===state?.hash && state?.publicationDecision?.status==='approved'?'PASS':'unknown';
+    const deployment=window.OfficeProcessing.publication(49,state);
+    $('stage-deploy').dataset.state=deployment.deployed?'PASS':deployment.failed?'FAIL':'unknown';
+    $('deployment-status').textContent=t(deployment.deployed?'Publication recorded for this version':deployment.failed?'Recorded publishing failure':'Deployment not recorded');
     const statuses=state?[state.science.status,state.pedagogy.status]:[];
     $('handoff-status').textContent=!state?'Select an event or a different material to inspect the gate.':state.eligible?'Review gate cleared. Automated checks and Lauri’s publication decision remain separate.':statuses.includes('FAIL')?'Return to developer: a reviewer found a blocking issue. Fix it, run checks and request independent review again.':statuses.includes('stale')?'Return to review: the material changed after approval. Earlier PASS reports cannot open this gate.':'Waiting for both independent reviewers. A missing or invalid approval keeps the gate closed.';
     const work=state?.work;
@@ -105,7 +110,7 @@
   }
   function showRole(role) {
     $('role-name').textContent = role.name;
-    const hasPortrait=!['lounge','gatekeeper','site'].includes(role.id);
+    const hasPortrait=!['lounge','gatekeeper','site','publishing'].includes(role.id);
     $('role-portrait-frame').hidden=!hasPortrait;
     if(hasPortrait){
       window.AgentOfficeScene.create($('role-portrait'),{phase:()=>0,still:()=>true}).portrait(role.id);
@@ -127,7 +132,7 @@
   });
   for(const day of days){const option=document.createElement('option');option.value=day;option.textContent=dayLabel(day);$('day').append(option);}
   function setPlaying(value){
-    if(value && $('replay-mode').value==='walkthrough' && journey.length && phase>=journey.length*42-.001)phase=0;
+    if(value && $('replay-mode').value==='walkthrough' && journey.length && phase>=journey.length*stageDuration()-.001)phase=0;
     playing=value && (wholeWebReview() || selected.length>0);
     $('play').replaceChildren(document.createTextNode(playing?'Ⅱ ':'▶ '),Object.assign(document.createElement('span'),{textContent:playing?'Pause':'Play'}));
     $('play').setAttribute('aria-label',`${playing?'Pause':'Play'} ${wholeWebReview()?'whole webpage review':$('replay-mode').value==='history'?'day history':'material journey'}`);
@@ -175,8 +180,8 @@
   $('lesson').addEventListener('change',()=>{phase=0;workflowKey='';update();draw();});
   $('play').addEventListener('click',()=>{if($('replay-mode').value==='history' && minute>=1439.9)seek(0);setPlaying(!playing);});
   $('next').addEventListener('click',()=>{setPlaying(false);const event=selected.find(e=>e.minute>minute+0.001);seek(event?event.minute:1439.999);});
-  $('next-stage').addEventListener('click',()=>{setPlaying(false);if(journey.length){phase=Math.min(Math.floor(phase/42)+1,journey.length-1)*42;draw();}});
-  $('next-handoff').addEventListener('click',()=>{setPlaying(false);const next=scene.nextHandoff();phase=Math.floor(phase/42)*42+next;if(next===0)phase+=42;if(!wholeWebReview() && journey.length && phase>=journey.length*42)phase=journey.length*42-.001;draw();});
+  $('next-stage').addEventListener('click',()=>{setPlaying(false);if(journey.length){phase=Math.min(Math.floor(phase/stageDuration())+1,journey.length-1)*stageDuration();draw();}});
+  $('next-handoff').addEventListener('click',()=>{setPlaying(false);const next=scene.nextHandoff();phase=Math.floor(phase/stageDuration())*stageDuration()+next;if(next===0)phase+=stageDuration();if(!wholeWebReview() && journey.length && phase>=journey.length*stageDuration())phase=journey.length*stageDuration()-.001;draw();});
   $('replay-mode').addEventListener('change',()=>{
     setPlaying(false);phase=0;journeyIndex=-2;syncJourney();
     document.body.classList.toggle('website-review',wholeWebReview());
@@ -229,7 +234,7 @@
       minute=Math.min(1439.999,minute+step);update();if(minute>=1439.999)setPlaying(false);
     }
     const animating=playing && !$('motion').checked && !document.hidden && !$('role-dialog').open && !$('about-dialog').open;
-    if(animating){phase+=dt*Number($('speed').value);if($('replay-mode').value==='walkthrough' && journey.length && phase>=journey.length*42){phase=journey.length*42-.001;setPlaying(false);}}
+    if(animating){phase+=dt*Number($('speed').value);if($('replay-mode').value==='walkthrough' && journey.length && phase>=journey.length*stageDuration()){phase=journey.length*stageDuration()-.001;setPlaying(false);}}
     if(animating || now-lastPaint>250){draw();lastPaint=now;}
     requestAnimationFrame(frame);
   }
@@ -260,7 +265,8 @@
   window.addEventListener('office-language-change',()=>{
     for(const option of $('day').options)option.textContent=dayLabel(option.value);
     $('office-date').textContent=selected.length?dayLabel($('day').value):'No history available';
-    workflowKey='';update();setPlaying(playing);languageButtons();
+    const savedPhase=phase;
+    workflowKey='';update();phase=savedPhase;journeyIndex=-2;syncJourney();setPlaying(playing);languageButtons();
     if($('role-dialog').open)showRole(officeRoles.find(role=>role.id===$('role-dialog').dataset.role));
     draw();i18n.apply();
   });

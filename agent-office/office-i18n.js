@@ -276,7 +276,36 @@
     'The publisher takes the approved material to the website preview. Deployment itself remains unverified.':'Julkaisija vie hyväksytyn aineiston verkkosivun esikatseluun. Julkaisun onnistumista ei ole varmistettu.',
     'No publication approval is recorded. The publisher keeps the material at the desk.':'Julkaisulupaa ei ole tallennettu. Julkaisija säilyttää aineiston pöydällään.'
   });
+  Object.assign(fi, {
+    'Web publishing':'Verkkojulkaisu','WEB PUBLISHING':'VERKKOJULKAISU','AFTER LAURI’S APPROVAL':'LAURIN HYVÄKSYNNÄN JÄLKEEN',
+    'Prepared HTML/CSS · GitHub Pages':'Valmisteltu HTML/CSS · GitHub Pages',
+    'Calculations':'Laskelmat','Simulation':'Simulaatio','Exercises':'Tehtävät','Mobile layout':'Mobiilinäkymä',
+    'Testing':'Testaus','Incoming':'Saapuva','Results':'Tulokset','Material':'Aineisto','Check notes':'Testihuomiot',
+    'Working through the checks':'Testaa aineistoa','Receiving material':'Vastaanottaa aineistoa','Reviewing results':'Käy tulokset läpi',
+    'Collecting pages':'Sivujen koonti','Checking the bundle':'Pakettitarkistus','Preparing upload':'Siirron valmistelu','Deployment handoff':'Julkaisusiirto',
+    'Receiving approved pages':'Vastaanottaa aineiston','Waiting for approval':'Odottaa julkaisulupaa','Awaiting evidence':'Odottaa vahvistusta',
+    'Publication recorded':'Julkaisu vahvistettu','Published version':'Julkaistu versio','Publishing needs attention':'Julkaisu vaatii huomiota',
+    '5. Publication decision':'5. Julkaisupäätös','Proposal, then Lauri’s approval':'Ehdotus ja Laurin hyväksyntä','6. Web publishing':'6. Verkkojulkaisu',
+    'Deployment not recorded':'Julkaisua ei ole vahvistettu','Publication recorded for this version':'Tämän version julkaisu on vahvistettu','Recorded publishing failure':'Tallennettu julkaisuvirhe',
+    'The test operator works through calculations, simulation, exercises and mobile layout while the material waits.':'Testaaja käy läpi laskelmat, simulaation, tehtävät ja mobiilinäkymän aineiston odottaessa.',
+    'The test operator checks the results before the reviewers collect their copies.':'Testaaja käy tulokset läpi ennen kuin arvioijat hakevat kopionsa.',
+    'The publisher delivers the approved page bundle to the web publishing station.':'Julkaisija vie hyväksytyn sivupaketin verkkojulkaisupisteeseen.',
+    'The publisher hands the approved files to the web publishing station.':'Julkaisija luovuttaa hyväksytyt tiedostot verkkojulkaisupisteeseen.',
+    'The web publishing station prepares the approved page bundle before deployment.':'Verkkojulkaisupiste valmistelee hyväksytyn sivupaketin ennen julkaisua.',
+    'The revised material waits for fresh independent reviews.':'Korjattu aineisto odottaa uusia riippumattomia arvioita.',
+    'The web publishing station waits for Lauri’s recorded approval.':'Verkkojulkaisupiste odottaa Laurin tallennettua hyväksyntää.',
+    'Publication is recorded for this version. The website display can now show it as published.':'Tämän version julkaisu on vahvistettu. Verkkosivun näyttö voi nyt näyttää sen julkaistuna.',
+    'A publishing failure is recorded. The website is not marked as published.':'Julkaisuvirhe on tallennettu. Verkkosivua ei merkitä julkaistuksi.',
+    'The page bundle is prepared, but successful deployment is not recorded. The website remains a preview.':'Sivupaketti on valmisteltu, mutta onnistunutta julkaisua ei ole vahvistettu. Verkkosivu näkyy edelleen esikatseluna.',
+    'The approved pages are being prepared for publication.':'Hyväksyttyjä sivuja valmistellaan julkaistaviksi.',
+    'Publication still needs Lauri’s approval.':'Julkaisu odottaa vielä Laurin hyväksyntää.',
+    'Publication is recorded for this version.':'Tämän version julkaisu on vahvistettu.',
+    'The publishing step needs another look.':'Julkaisuvaihe vaatii uuden tarkastelun.',
+    'The pages are prepared. Waiting for deployment evidence.':'Sivut on valmisteltu. Odotetaan julkaisuvahvistusta.'
+  });
   const descriptions = {
+    publishing:'Automaattinen piste vastaanottaa hyväksytyn sivupaketin julkaisijalta, valmistelee sen ja siirtää sen julkaisuun. Esikatselu on rakennettu jo kehityksen ja testauksen yhteydessä. Näkyvä käsittelyaika on havainnollistus. Vain tälle sisältöversiolle tallennettu julkaisuvahvistus voi näyttää verkkosivun julkaistuna; hyväksyntä tai HTML-tiedosto ei yksin riitä.',
+
     orchestrator:'Koordinoi tehtäväpaketit, testit, rinnakkaiset arvioijat, korjauskierrokset ja arvioinnin laajuuden. Käyttölokeissa on orkestroijan merkintöjä. Tämä on komentoa ajavan istunnon koordinointityötä, ei neljäs erikseen määritelty agentti. Yksityisiä keskusteluja tai tarkkoja työaikoja ei päätellä.',
     support:'Tallennetuissa käyttölokeissa on myös yleisagenttien työtä. Lokista ei selviä pysyvää erikoisalaa tai täsmällistä toimeksiantoa. Huone kuvaa tallennettua tukityötä, ei keksittyä arvioijaa tai hyväksyntäroolia.',
 

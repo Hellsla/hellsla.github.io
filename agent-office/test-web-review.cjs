@@ -1,7 +1,7 @@
 // node agent-office/test-web-review.cjs — no dependencies.
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const sandbox={window:{}};vm.createContext(sandbox);
-for(const file of ['office-web-review.js','office-floor.js','office-scene.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),sandbox);
+for(const file of ['office-web-review.js','office-processing.js','office-floor.js','office-scene.js'])vm.runInContext(fs.readFileSync(__dirname+'/'+file,'utf8'),sandbox);
 const labels=[];
 const ctx={fillRect(...values){assert(values.every(Number.isFinite));},fillText(value){labels.push(value);},measureText(value){return {width:value.length*7};},save(){},restore(){},translate(){},scale(){}};
 const state={id:'lesson',hash:'123abc',title:'A recorded lesson',eligible:true,science:{status:'PASS'},pedagogy:{status:'PASS'},checks:{passed:8,failed:0},included:true,publicationDecision:{status:'approved',contentHash:'123abc'}};
@@ -13,7 +13,7 @@ for(let index=0;index<6;index++){
   assert.equal(result.step,index);
   assert.equal(result.caption,sandbox.window.OfficeWebReview.stages[index].caption);
   assert(!labels.some(text=>/RECORDED PASS|APPROVED|8 SAVED PASSES|A recorded lesson/.test(text)),'External illustration cannot reuse lesson approvals or claim completion');
-  assert.equal(scene.nextHandoff(),index===5?0:(index+1)*7);
+  assert.equal(scene.nextHandoff(),index===5?37:(index+1)*7);
 }
 assert.equal(scene.hit({x:140,y:470}),'chatgpt','The external review room is inspectable');
 for(phase=0;phase<42;phase+=0.4)scene.draw(); // Exercise intermediate courier positions.
