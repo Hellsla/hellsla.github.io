@@ -19,7 +19,7 @@ def project():
     (tmp / "content/fi/FY3").mkdir(parents=True); (tmp / "tests/sims").mkdir(parents=True)
     shutil.copytree(SRC / "content/fi/FY3" / LESSON, tmp / "content/fi/FY3" / LESSON, ignore=shutil.ignore_patterns("review"))
     shutil.copytree(SRC / "lessons/FY3" / LESSON, tmp / "lessons/FY3" / LESSON, ignore=shutil.ignore_patterns("__pycache__"))
-    for f in ("glossary.json", "curriculum.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, tmp / f)
+    for f in ("glossary.json", "curriculum.json", "competencies.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, tmp / f)
     shutil.copytree(SRC / "content/_gold", tmp / "content/_gold")
     shutil.copy(SRC / "tests/sims" / f"{LESSON}.json", tmp / "tests/sims")
     shutil.copytree(SRC / "scripts", tmp / "scripts", ignore=shutil.ignore_patterns("__pycache__"))

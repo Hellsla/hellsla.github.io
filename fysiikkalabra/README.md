@@ -139,3 +139,29 @@ pictures, templates and scripts are shared by every language.
   when a lesson is not translated yet).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
+
+## Sovella itsenäisesti
+Each course ends with a few independent, exam-style tasks (teacher 2026-10-28; principles in NOTES.md §9), a part of
+their own like an exercise set:
+
+```
+content/<lang>/<COURSE>/sovella/tasks.json     the tasks (schema below)
+content/<lang>/<COURSE>/sovella/solutions.md   ## <task id>, ### a) … per part, ### Yleisiä virheitä, ### Hyväksytään myös
+content/<lang>/<COURSE>/sovella/review/        science.md, pedagogy.md (hash: practice.py hash <COURSE>)
+lessons/<COURSE>/sovella/answers.py            every number of the solutions; figures.py the model graphs
+```
+```json
+{"intro": "…", "tasks": [{"id": "fy3-s1", "title": "Aurinkokeräin", "source": "example", "source_note": "…", "text": "situation + data (markdown)",
+  "parts": [{"id": "a", "kind": "graph|calc|word", "points": 3, "text": "…", "answer": {"value": 240, "unit": "W", "tolerance": 0.08},
+             "criteria": [{"key": "graph_axes", "points": 1}, {"key": "units_precision", "points": 1, "detail": "…"},
+                          {"text": "task-specific criterion", "tag": "transfer", "points": 1}]}],
+  "links": {"graph": "fy3-13", "math": "fy3-6"}}]}
+```
+A task of `"kind": "own"` (with one part of kind `own`) is a rubric for the student's own work, such as the FY1
+investigation report, and has no solution. `python scripts/practice.py check` (CI) checks ids, points against
+criteria, competency tags and shared keys (`competencies.json`), their texts in every language, chapter links,
+complete solutions, answers against answers.py, figures against figures.py and translations against Finnish;
+`test_practice.py` proves each check fires. `build.py` publishes `site/<COURSE>-sovella.html` when both reviews pass
+(`build.py <COURSE>-sovella` previews it) and links it from the course page. Every lesson with `learn` also gets
+*Arvioi osaamistasi* after its checks. `python scripts/coverage.py <COURSE>` writes `docs/coverage/<COURSE>.md`.
+

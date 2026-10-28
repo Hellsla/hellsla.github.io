@@ -25,6 +25,10 @@ jobs:
       - run: python scripts/lint_lesson.py --all
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
+      - name: Sovella itsenäisesti tasks (points, criteria, competencies, links, solutions, answers, translations) and their tests (teacher 2026-10-28)
+        run: python scripts/practice.py check && python scripts/test_practice.py
+      - name: competency coverage reports are current (docs/coverage/)
+        run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py

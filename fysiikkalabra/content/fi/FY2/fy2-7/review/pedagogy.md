@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0f62fc0cf6c3305e
+CONTENT-HASH: d429e7d288d64404
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: feedback wording '400 kertaa pienemmäksi' (correct Finnish), numbers and reasoning unchanged and the feedback still repairs by giving the 20x versus 400x contrast; figures 1-4 captures legible.
+- Delta (lesson.md, Sijoitus stage): `245\,MWh - 222,95\,MWh` became `(245 - 222,95)\,MWh`; 245 - 222,95 = 22,05, so the result and the later reasonableness check are unchanged.
+- The step stays symbolic-first (E_häviö = E_lähtö - E_perille) and the stage keeps one step; the shared unit in parentheses is standard and readable at 17-year-old level.
+- Rest of the lesson as passed in the previous round; content hash identical at start and end.
