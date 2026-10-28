@@ -9,6 +9,6 @@
   },
   {
     "q": "Miksi tuulivoimaa ei voi sanoa täysin päästöttömäksi, ja kuinka paljon pienemmät sen päästöt ovat kuin kivihiilellä?",
-    "a": "Voimalan valmistus, kuljetukset, rakentaminen ja purku aiheuttavat päästöjä, joten elinkaaren päästökerroin on noin $12\\,\\text{g/kWh}$. Kivihiilellä se on noin $820\\,\\text{g/kWh}$, joten kivihiilen päästöt ovat noin 70-kertaiset."
+    "a": "Voimalan valmistus, kuljetukset, rakentaminen ja purku aiheuttavat päästöjä, joten elinkaaren päästökerroin on noin $12\\,\\text{g/kWh}$. Kivihiilellä se on noin $820\\,\\text{g/kWh}$, joten kivihiilen päästöt ovat noin $70$-kertaiset."
   }
 ]

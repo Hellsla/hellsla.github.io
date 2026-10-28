@@ -178,7 +178,7 @@
         "tolerance": 0.02,
         "hints": [
           "Kuinka monta megajoulea on $2200\\,\\text{kJ}$ ja kuinka monta kilogrammaa on $100\\,\\text{g}$?",
-          "$2200\\,\\text{kJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$.",
+          "$2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.",
           "Lämpöarvo on energia jaettuna massalla: $H = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg}$."
         ],
         "mistakes": [
@@ -188,10 +188,10 @@
           },
           {
             "value": 0.022,
-            "feedback": "Jaoit energian megajouleina lukua $100$ eli grammoja, vaikka massa pitää ilmoittaa kilogrammoina: $100\\,\\text{g} = 0{,}100\\,\\text{kg}$."
+            "feedback": "Jaoit energian megajouleina lukua $100$ eli grammoja, vaikka massa pitää ilmoittaa kilogrammoina: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$."
           }
         ],
-        "solution": "**Annettu:** energia $2200\\,\\text{kJ}$ massaa $100\\,\\text{g}$ kohti\n\n**Kysytty:** lämpöarvo $H$ yksikössä $\\text{MJ/kg}$\n\n**Periaate:** Lämpöarvo on energia yhtä kilogrammaa kohti, ja pakkausmerkintä antaa energian sadalle grammalle. Merkintä muutetaan siis yksikköön megajoulea kilogrammaa kohti.\n\n**Kaava:** $H = \\dfrac{E}{m}$\n\n**Muunnokset:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$.\n\n**Sijoitus:** $H = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Vastaus:** $22\\,\\text{MJ/kg}$, kaksi merkitsevää numeroa kuten luvussa $2200\\,\\text{kJ}$.\n\n**Järkevyys:** Polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$ ja bensiinin $43\\,\\text{MJ/kg}$. Suklaan lämpöarvo on näiden välissä, mikä on uskottava tulos: suklaa sisältää paljon rasvaa ja sokeria."
+        "solution": "**Annettu:** energia $2200\\,\\text{kJ}$ massaa $100\\,\\text{g}$ kohti\n\n**Kysytty:** lämpöarvo $H$ yksikössä $\\text{MJ/kg}$\n\n**Periaate:** Lämpöarvo on energia yhtä kilogrammaa kohti, ja pakkausmerkintä antaa energian sadalle grammalle. Merkintä muutetaan siis yksikköön megajoulea kilogrammaa kohti.\n\n**Kaava:** $H = \\dfrac{E}{m}$\n\n**Muunnokset:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.\n\n**Sijoitus:** $H = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Vastaus:** $22\\,\\text{MJ/kg}$, kaksi merkitsevää numeroa kuten luvussa $2200\\,\\text{kJ}$.\n\n**Järkevyys:** Polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$ ja bensiinin $43\\,\\text{MJ/kg}$. Suklaan lämpöarvo on näiden välissä, mikä on uskottava tulos: suklaa sisältää paljon rasvaa ja sokeria."
       }
     },
     {
@@ -246,7 +246,7 @@
       "prompt": "Opiskelija laskee, kuinka paljon energiaa vapautuu, kun poltetaan $250\\,\\text{g}$ ilmakuivaa polttopuuta ($H = 15\\,\\text{MJ/kg}$):\n\n$$\\begin{aligned} E &= Hm \\\\ &= 15\\,\\text{MJ/kg} \\cdot 250 \\\\ &= 3750\\,\\text{MJ} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Massaa ei ole muutettu kilogrammoiksi: $250\\,\\text{g} = 0{,}250\\,\\text{kg}$, joten $E = 3{,}75\\,\\text{MJ}$.",
+          "text": "Massaa ei ole muutettu kilogrammoiksi: $250\\,\\text{g} = 250 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}250\\,\\text{kg}$, joten $E = 3{,}75\\,\\text{MJ}$.",
           "feedback": "Oikein. Lämpöarvo on energia kilogrammaa kohti, joten massa on laskettava kilogrammoina. Tuloksen olisi voinut huomata vääräksi: $3750\\,\\text{MJ}$ olisi $250\\,\\text{kg}$ puuta vastaava energia, ja $250\\,\\text{g}$ on tuhannesosa siitä.",
           "correct": true
         },

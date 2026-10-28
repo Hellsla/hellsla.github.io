@@ -98,7 +98,7 @@ Päästökerroin kertoo, montako grammaa hiilidioksidiekvivalenttia syntyy yhtä
 
 Taulukon lähde on IPCC:n viides arviointiraportti (AR5, 2014), työryhmä III, liite III: elinkaaren päästöjen mediaanit pyöristettyinä, yksikkö gramma hiilidioksidiekvivalenttia kilowattituntia kohti. Aurinkosähkön alaraja on kattopaneeleille, yläraja voimalaitoskokoluokalle; tuulivoiman alaraja on maalla, yläraja merellä. Biomassan luku koskee energiaa varten kasvatettua biomassaa. Siinä ovat viljelyn, korjuun, kuljetusten ja voimalan päästöt, mutta polton hiilidioksidi on laskettu nollaksi, koska uusi kasvu sitoo sen takaisin. Luku ei siis näytä sitä, että sitoutuminen kestää vuosikymmeniä.
 
-<svg data-fig="emissions" viewBox="0 0 600 450" role="img" aria-label="Vaakapylväskaavio sähköntuotannon elinkaaren päästökertoimista yksikössä g hiilidioksidiekvivalenttia kilowattituntia kohti (IPCC AR5, työryhmä III, liite III, pyöristetyt mediaanit): kivihiili 820, maakaasu 490, biomassa 230, aurinkosähkö 41–48, vesivoima 24, ydinvoima 12 ja tuulivoima 11–12. Pylväiden pituudet ovat mittakaavassa: kivihiilen pylväs on noin 70 kertaa ydinvoiman pylvään pituinen. Fossiilisten polttoaineiden pylväät ovat tummanharmaita, muiden tuotantotapojen vaaleanharmaita; selite on kuvan alla." style="max-width:100%;font-size:24px">
+<svg data-fig="emissions" viewBox="0 0 600 450" role="img" aria-label="Vaakapylväskaavio sähköntuotannon elinkaaren päästökertoimista yksikössä g hiilidioksidiekvivalenttia kilowattituntia kohti (IPCC AR5, työryhmä III, liite III, pyöristetyt mediaanit): kivihiili 820, maakaasu 490, biomassa 230, aurinkosähkö 41–48, vesivoima 24, ydinvoima 12 ja tuulivoima 11–12. Pylväiden pituudet ovat mittakaavassa: kivihiilen pylväs on noin $70$ kertaa ydinvoiman pylvään pituinen. Fossiilisten polttoaineiden pylväät ovat tummanharmaita, muiden tuotantotapojen vaaleanharmaita; selite on kuvan alla." style="max-width:100%;font-size:24px">
   <foreignObject x="150" y="9.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$e\ \left(\text{g}\ \text{CO}_2\text{-ekv.}/\text{kWh}\right)$</div></foreignObject>
   <line x1="238" y1="52" x2="238" y2="352" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="326" y1="52" x2="326" y2="352" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -143,7 +143,7 @@ Taulukon lähde on IPCC:n viides arviointiraportti (AR5, 2014), työryhmä III, 
   <foreignObject x="386" y="409.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{muu}$</div></foreignObject>
 </svg>
 
-Kuvassa kaikki pylväät on piirretty samaan mittakaavaan. Tummat pylväät ovat fossiilisia polttoaineita, vaaleat muita tuotantotapoja. Kivihiilen päästökerroin on noin 70-kertainen ydin- ja tuulivoimaan verrattuna ($820 : 12 \approx 68$). Ydin- ja tuulivoiman pylväät ovat kapeita mutta eivät nollia: niidenkin elinkaareen kuuluu rakentamista ja kuljetuksia.
+Kuvassa kaikki pylväät on piirretty samaan mittakaavaan. Tummat pylväät ovat fossiilisia polttoaineita, vaaleat muita tuotantotapoja. Kivihiilen päästökerroin on noin $70$-kertainen ydin- ja tuulivoimaan verrattuna ($820 : 12 \approx 68$). Ydin- ja tuulivoiman pylväät ovat kapeita mutta eivät nollia: niidenkin elinkaareen kuuluu rakentamista ja kuljetuksia.
 
 ## Esimerkki
 Esimerkkiperhe käyttää sähköä $4800\,\text{kWh}$ vuodessa. Sähkö tuotetaan maakaasulla, jonka elinkaaren päästökerroin on $490\,\text{g/kWh}$. Kuinka monta tonnia hiilidioksidiekvivalenttia perheen sähkönkäytöstä syntyy vuodessa? (Perhe on keksitty esimerkki, ei tilasto.)
@@ -188,7 +188,7 @@ m &= e \cdot E \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Pyöristetyillä luvuilla $500\,\text{g/kWh} \cdot 5000\,\text{kWh} = 2\,500\,000\,\text{g} = 2\,500\,000 \cdot 10^{-6}\,\text{t} = 2{,}5\,\text{t}$, mikä on lähellä tulosta. Jos sama sähkö tuotettaisiin tuulivoimalla, päästö olisi $12\,\text{g/kWh} \cdot 4800\,\text{kWh} = 57\,600\,\text{g} = 57\,600 \cdot 0{,}001\,\text{kg} \approx 58\,\text{kg}$, noin 41 kertaa pienempi ($490 : 12 \approx 41$).
+**Järkevyys.** Pyöristetyillä luvuilla $500\,\text{g/kWh} \cdot 5000\,\text{kWh} = 2\,500\,000\,\text{g} = 2\,500\,000 \cdot 10^{-6}\,\text{t} = 2{,}5\,\text{t}$, mikä on lähellä tulosta. Jos sama sähkö tuotettaisiin tuulivoimalla, päästö olisi $12\,\text{g/kWh} \cdot 4800\,\text{kWh} = 57\,600\,\text{g} = 57\,600 \cdot 0{,}001\,\text{kg} \approx 58\,\text{kg}$, noin $41$ kertaa pienempi ($490 : 12 \approx 41$).
 
 ## Yleinen virhekäsitys
 **"Tuuli-, aurinko- ja ydinvoima ovat päästöttömiä."** Ne ovat pienipäästöisiä, eivät päästöttömiä: voimaloiden rakentaminen, polttoaineen valmistus ja kuljetukset aiheuttavat päästöjä, tuulivoimalla ja ydinvoimalla noin $12\,\text{g/kWh}$. Kivihiilellä luku on noin $820\,\text{g/kWh}$.

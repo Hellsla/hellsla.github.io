@@ -53,7 +53,7 @@
 **Kysytty:** viipaleen energia $E$ kilojouleina
 **Periaate:** Merkintä kertoo ruoan lämpöarvon samalla tavalla kuin polttoaineella: energian massayksikköä kohti. Se on ensin muutettava megajouleiksi kilogrammaa kohti, ja sitten käytetään lakia $E = Hm$.
 **Kaava:** $E = Hm$, missä lämpöarvo $H$ on merkinnän energia jaettuna merkinnän massalla
-**Muunnokset:** $1200\,\text{kJ} = 1200 \cdot (1 : 1000)\,\text{MJ} = 1{,}2\,\text{MJ}$, $100\,\text{g} = 0{,}100\,\text{kg}$ ja $40\,\text{g} = 0{,}040\,\text{kg}$.
+**Muunnokset:** $1200\,\text{kJ} = 1200 \cdot (1 : 1000)\,\text{MJ} = 1{,}2\,\text{MJ}$, $100\,\text{g} = 100 \cdot (1 : 1000)\,\text{kg} = 0{,}100\,\text{kg}$ ja $40\,\text{g} = 40 \cdot (1 : 1000)\,\text{kg} = 0{,}040\,\text{kg}$.
 **Sijoitus:** $H = 1{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ ja $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}040\,\text{kg} = 0{,}48\,\text{MJ} = 480\,\text{kJ}$
 **Vastaus:** $480\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $40\,\text{g}$.
 **Järkevyys:** Viipale on $40\,\%$ sadasta grammasta, ja $40\,\%$ luvusta $1200\,\text{kJ}$ on $0{,}4 \cdot 1200\,\text{kJ} = 480\,\text{kJ}$. Tulos on pienempi kuin $1200\,\text{kJ}$, kuten pitää.

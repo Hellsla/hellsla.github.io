@@ -241,7 +241,7 @@
       "type": "interpret",
       "source": "simulated",
       "title": "Esimerkkiaineisto: pomppiva pallo",
-      "text": "Kumipallo pudotetaan lattialle. Taulukossa on pallon mekaaninen energia pudotushetkellä ja kunkin pompun jälkeen (simuloitu esimerkkiaineisto, ei oikea koe). Pallo ja lattia muodostavat eristetyn systeemin, ja ääntä ei oteta huomioon.\n\n| Pomppuja | Mekaaninen energia $E$ (J) |\n|---|---|\n| 0 | $0{,}60$ |\n| 1 | $0{,}48$ |\n| 2 | $0{,}38$ |\n| 3 | $0{,}31$ |",
+      "text": "Kumipallo pudotetaan lattialle. Taulukossa on pallon mekaaninen energia pudotushetkellä ja kunkin pompun jälkeen (simuloitu esimerkkiaineisto, ei oikea koe). Pallo ja lattia muodostavat eristetyn systeemin, ja ääntä ei oteta huomioon.\n\n| Pomppuja | Mekaaninen energia $E_\\text{mek}\\ (\\text{J})$ |\n|---|---|\n| $0$ | $0{,}60$ |\n| $1$ | $0{,}48$ |\n| $2$ | $0{,}38$ |\n| $3$ | $0{,}31$ |",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka paljon mekaanista energiaa on muuttunut lämpöenergiaksi kolmen pompun aikana? Vastaa jouleina.",
@@ -250,7 +250,7 @@
         "tolerance": 0.02,
         "hints": [
           "Mitä mekaaniselle energialle ja lämpöenergialle tapahtuu pompun aikana? Mihin energia mekaanisesta energiasta menee?",
-          "Energia säilyy, joten mekaanisen energian pieneneminen on yhtä suuri kuin lämpöenergian kasvu: $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{lopussa}$.",
+          "Energia säilyy, joten mekaanisen energian pieneneminen on yhtä suuri kuin lämpöenergian kasvu: $E_\\text{lämpö} = E_\\text{alussa} - E_\\text{mek}$, missä $E_\\text{mek}$ on pallon mekaaninen energia lopussa.",
           "Lue taulukosta alkuarvo ($0$ pomppua) ja loppuarvo ($3$ pomppua) ja vähennä: $0{,}60\\,\\text{J} - 0{,}31\\,\\text{J}$."
         ],
         "mistakes": [
@@ -339,7 +339,7 @@
         },
         {
           "text": "Liike-energia muuttuu jarrutuksessa kemialliseksi energiaksi.",
-          "feedback": "Jarrutuksessa ei tapahdu kemiallisia reaktioita. Jarrujen kitka muuttaa liike-energian lämpöenergiaksi."
+          "feedback": "Tavallisissa kitkajarruissa ei tapahdu kemiallisia reaktioita. Jarrujen kitka muuttaa liike-energian lämpöenergiaksi."
         }
       ]
     },

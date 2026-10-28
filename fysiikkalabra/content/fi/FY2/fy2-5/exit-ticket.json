@@ -9,6 +9,6 @@
   },
   {
     "q": "Pakkauksessa lukee: energia $1500\\,\\text{kJ}$ sadassa grammassa. Mikä on ruoan energiapitoisuus yksikössä $\\text{MJ/kg}$, ja miksi se on sama asia kuin lämpöarvo?",
-    "a": "$1500\\,\\text{kJ} = 1{,}5\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$, joten energiapitoisuus on $1{,}5\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 15\\,\\text{MJ/kg}$. Se on energia massayksikköä kohti, kuten lämpöarvo."
+    "a": "$1500\\,\\text{kJ} = 1500 \\cdot (1 : 1000)\\,\\text{MJ} = 1{,}5\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$, joten energiapitoisuus on $1{,}5\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 15\\,\\text{MJ/kg}$. Se on energia massayksikköä kohti, kuten lämpöarvo."
   }
 ]

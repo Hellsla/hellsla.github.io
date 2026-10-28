@@ -38,7 +38,7 @@ t &= \frac{E}{P}
 ```
 Tehon yksikkö on watti: $1\,\text{W} = 1\,\text{J/s}$. Etuliitteet toimivat kuten muillakin suureilla (luku *Suureet, yksiköt ja SI-järjestelmä*): $1\,\text{kW} = 1000\,\text{W}$ ja $1\,\text{MW} = 10^{6}\,\text{W}$. Voimalaitosten teho mitataan megawateissa: Olkiluoto 3 -ydinvoimalayksikön sähköteho on noin $1600\,\text{MW}$ (TVO), eli noin $800\,000$ vedenkeittimen verran.
 
-Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lähtee origosta. Suoran jyrkkyys on teho: mitä suurempi teho, sitä jyrkemmin energia kasvaa. Kuvassa vedenkeittimen suoralla energia kasvaa $40\,\text{kJ}$ aikavälillä $20\,\text{s}$, joten $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
+Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lähtee origosta. Suoran jyrkkyys on teho: mitä suurempi teho, sitä jyrkemmin energia kasvaa. Kuvassa vedenkeittimen suoralla energia kasvaa $40\,\text{kJ}$ aikavälillä $20\,\text{s}$. Sijoitetaan $1\,\text{kJ} = 1000\,\text{J}$: $40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$, joten $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
 
 <svg data-fig="graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: energia ajan funktiona kolmelle laitteelle, jotka muuntavat energiaa tasaisesti. Vedenkeittimen 2000 W suora nousee jyrkimmin, tosterin 1000 W suora puolet loivemmin ja television 80 W suora lähes vaakasuoraan. Suoran kulmakerroin on teho: vedenkeittimen suoralla 40 kJ kuluu 20 sekunnissa. Asteikot ovat tasavälisiä ja kuvaaja on mittakaavassa." style="max-width:100%;font-size:24px">
   <line x1="212.5" y1="290" x2="212.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

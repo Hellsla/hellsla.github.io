@@ -6,4 +6,4 @@ ok   answer positions
 ok   layout 360 px
 ok   layout 768 px
 ok   layout 1280 px
-fy2-3: draft (science=stale, pedagogy=stale); exercises: draft (science=stale, pedagogy=stale)
+fy2-3: draft (science=stale, pedagogy=stale); exercises: reviewed (science=PASS, pedagogy=PASS)

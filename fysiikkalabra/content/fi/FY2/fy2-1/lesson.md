@@ -18,7 +18,7 @@ Energiaa on monessa muodossa, ja jokaista muotoa sanotaan **energialajiksi**. En
 
 Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\text{mek} = E_\text{p} + E_\text{k}$.
 
-<svg data-fig="energialajit" viewBox="0 0 600 396" role="img" aria-label="Kaavakuva: energialajit esimerkein. Mekaaninen energia on potentiaalienergiaa (kallion reunalla oleva pallo) ja liike-energiaa (vierivä pallo). Lisäksi kuvassa ovat lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen, ei mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="energialajit" viewBox="0 0 600 396" role="img" aria-label="Kaavakuva: energialajit esimerkein. Mekaaninen energia on potentiaalienergiaa (hyllyn reunalla oleva pallo) ja liike-energiaa (vierivä pallo). Lisäksi kuvassa ovat lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen, ei mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy21-pot" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient><radialGradient id="fy21-kin" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient></defs>
   <line x1="30" y1="44" x2="270" y2="44" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="30" y1="44" x2="30" y2="54" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
