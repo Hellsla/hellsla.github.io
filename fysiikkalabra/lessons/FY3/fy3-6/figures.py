@@ -226,3 +226,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "water-sand": water_sand, "c-bars": c_bars, "calorimeter": calorimeter}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "water-sand": "reveals: sand warms about five times as much",
+    "c-bars": "safe: table values to read (c of six materials)",
+    "calorimeter": "reveals: the equilibrium temperature 24,5 °C",
+}

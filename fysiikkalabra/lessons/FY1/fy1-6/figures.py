@@ -77,3 +77,9 @@ def same_fall():
 
 
 FIGURES = {"free-fall": free_fall, "vt-graph": vt_graph, "same-fall": same_fall}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "free-fall": "reveals: the fall distances and speeds at 0–3 s",
+    "vt-graph": "reveals: the slope g = 9,81 m/s²",
+    "same-fall": "reveals: equal speeds for 1 kg and 5 kg",
+}

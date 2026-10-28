@@ -14,7 +14,7 @@ a = {}
 # Level 1: one formula, values given
 a["fy3-9-L1-01"] = 101 * 30.0 / 45.0                     # syringe pulled 30,0 -> 45,0 ml: p₂ = p₁V₁/V₂ = 67,33 kPa -> 67,3 kPa
 a["fy3-9-L1-02"] = 160 * 24.0 / 280                      # cottage pressure tank air 24,0 l, 160 -> 280 kPa: V₂ = p₁V₁/p₂ = 13,71 l -> 13,7 l
-a["fy3-9-L1-03"] = 430 * 1.00 / 1.50                     # water rocket air 1,00 -> 1,50 l: p₂ = 430 kPa · 1,00 l / 1,50 l = 286,7 kPa -> 287 kPa
+a["fy3-9-L1-03"] = 100 * 20 / 25                          # graph fy3-9/boyle-points: (20 ml; 100 kPa) on the grid, p₂ = p₁V₁/V₂ = 80 kPa at 25 ml
 a["fy3-9-L1-04"] = 3.0 * K(-18) / K(22)                  # balloon, isobaric 295,15 K -> 255,15 K: V₂ = V₁T₂/T₁ = 2,593 l -> 2,6 l
 a["fy3-9-L1-05"] = 101 * K(-18) / K(22)                  # chest freezer, isochoric 295,15 K -> 255,15 K: p₂ = p₁T₂/T₁ = 87,31 kPa -> 87,3 kPa
 # Level 2: two steps, a conversion or a rearrangement

@@ -160,3 +160,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "particles": particles, "rod-expansion": rod_expansion, "volume-expansion": volume_expansion}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "particles": "safe: particles farther apart when warm, no values",
+    "rod-expansion": "safe: a longer warm rod, no values",
+    "volume-expansion": "safe: the liquid rises in the tube, no values",
+}

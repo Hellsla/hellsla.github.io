@@ -164,11 +164,11 @@ class Axes:
         for t in xticks:
             if t == x[0]: continue
             fig.line(X(t), self.y0, X(t), self.y0 + 7, INK, 2)
-            fig.tex(X(t), self.y0 + 24, xf(t), "middle")
+            if xf(t) != "": fig.tex(X(t), self.y0 + 24, xf(t), "middle")     # an empty format: a tick and gridline without a number
         for t in yticks:
             if t == y[0]: continue
             fig.line(self.x0 - 7, Y(t), self.x0, Y(t), INK, 2)
-            fig.tex(self.x0 - 12, Y(t), yf(t), "end")
+            if yf(t) != "": fig.tex(self.x0 - 12, Y(t), yf(t), "end")
         if origin_label and x[0] == 0 and y[0] == 0:
             fig.tex(self.x0 - 10, self.y0 + 20, "0", "end")
         # the axis titles beyond the arrow tips, where no data, tick or gridline can reach them: leave about

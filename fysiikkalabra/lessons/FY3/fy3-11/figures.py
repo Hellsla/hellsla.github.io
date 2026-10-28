@@ -131,3 +131,10 @@ def hero():
 
 
 FIGURES = {"hero": hero, "piston-work": piston_work, "heat-engine": heat_engine, "heat-pump": heat_pump, "pv-work": pv_work}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "piston-work": "reveals: the derivation W = pΔV",
+    "heat-engine": "reveals: the efficiency 40 %",
+    "heat-pump": "reveals: Q_sisälle = 3 E_s",
+    "pv-work": "reveals: the work is the area under the line",
+}

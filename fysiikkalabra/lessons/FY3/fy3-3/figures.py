@@ -178,3 +178,10 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "system": system, "micro-model": micro_model, "kelvin-scale": kelvin_scale, "extrapolation": extrapolation}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "system": "safe: a gas as a system and its state variables",
+    "micro-model": "reveals: the hot gas has the higher pressure",
+    "kelvin-scale": "reveals: the K–°C conversions",
+    "extrapolation": "reveals: the zero-pressure temperature about −270 °C",
+}

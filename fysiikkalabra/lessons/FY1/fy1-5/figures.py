@@ -55,3 +55,8 @@ def graph():
 
 
 FIGURES = {"motion": motion, "graph": graph}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "motion": "safe: equal spacing at equal times, no distances",
+    "graph": "reveals: the slope 3 m/s of both lines and s0 = 5 m",
+}

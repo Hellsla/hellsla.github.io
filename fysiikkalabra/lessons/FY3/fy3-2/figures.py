@@ -192,3 +192,11 @@ def hero():
 
 FIGURES = {"hero": hero, "carry-lift": carry_lift, "joule": joule, "work-graphs": work_graphs, "spring-work": spring_work,
            "lift-work": lift_work}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "carry-lift": "reveals: carrying horizontally does no work",
+    "joule": "safe: Joule's setup, no values",
+    "work-graphs": "reveals: the work is the area under the graph",
+    "spring-work": "reveals: the triangle area under F = 0–40 N over 0,20 m",
+    "lift-work": "reveals: W = Gh at constant speed",
+}

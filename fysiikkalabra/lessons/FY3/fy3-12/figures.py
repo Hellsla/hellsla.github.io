@@ -143,3 +143,9 @@ def scene():
 
 
 FIGURES = {"hero": hero, "scene": scene, "heat-transfer": heat_transfer, "energy-balance": energy_balance, "wall-temperature": wall_temperature}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "heat-transfer": "reveals: which mechanism is which",
+    "energy-balance": "safe: the Earth's energy flows, no values",
+    "wall-temperature": "reveals: the temperature drop is mostly in the insulation",
+}

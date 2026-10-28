@@ -97,3 +97,9 @@ def displacement():
 
 
 FIGURES = {"cubes": cubes, "graph": m_v_graph, "displacement": displacement}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "cubes": "reveals: the masses 5,0 g, 27 g and 79 g of 10 cm³ cubes",
+    "graph": "reveals: the densities of water, aluminium and iron",
+    "displacement": "reveals: the volume 30 ml",
+}

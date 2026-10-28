@@ -98,3 +98,9 @@ def conversion():
 
 
 FIGURES = {"quantity": quantity, "prefixes": prefixes, "conversion": conversion}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "quantity": "reveals: the reading l = 12,0 cm",
+    "prefixes": "reveals: every prefix's power of ten",
+    "conversion": "reveals: 1 AU = 1,496·10^8 km and the light time 499 s",
+}
