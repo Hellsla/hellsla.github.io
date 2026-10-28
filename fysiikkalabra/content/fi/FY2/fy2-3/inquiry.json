@@ -66,7 +66,97 @@
           "text": "Noin $150\\,\\text{h}$.",
           "feedback": "Niin kauan lamppu muuntaisi $10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} = 5\\,400\\,000\\,\\text{J}$, kymmenkertaisesti kuivaimen energian. Tarvittava aika on kymmenesosa tästä."
         }
-      ]
+      ],
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      }
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Vertaa kahden laitteen energiamittareita ja kuvaajan suoria: kumpi muuntaa energiaa nopeammin, kumpi enemmän?",
+      "howto": "Valitse laitteet A ja B valikoista ja säädä kummankin käyttöaikaa liukusäätimellä minuutin välein, enintään vuorokausi eli $1440\\,\\text{min}$. Energiamittarin kiekko pyörii sitä nopeammin, mitä suurempi laitteen teho on. Kuvaajassa on kummankin laitteen energia ajan funktiona: yhtenäinen viiva päättyy laitteen käyttöaikaan, ja katkoviiva jatkaa samaa suoraa. Lukemissa energia on jouleina ja kilowattitunteina. Nopeus muuttaa vain kiekkojen pyörimistä.",
+      "model": "Laitteiden tehot ovat luvun taulukon tyypillisiä pyöristettyjä arvoja, eivät minkään tietyn laitteen mittauksia: lamppu $10\\,\\text{W}$, televisio $80\\,\\text{W}$, jääkaappi $100\\,\\text{W}$, tosteri $1000\\,\\text{W}$, hiustenkuivain $1800\\,\\text{W}$, vedenkeitin $2000\\,\\text{W}$ ja sähkökiuas $8000\\,\\text{W}$. Malli olettaa, että laite käy koko käyttöajan tasaisella teholla. Todellinen jääkaappi käy vain osan ajasta, ja kiukaan tai keittimen termostaatti katkaisee virran välillä. Energiamittarin kiekko pyörii samalla tavalla kuin vanhoissa sähkömittareissa: sama määrä kierroksia jokaista kilowattituntia kohti. Simulaation lukemat ovat mallin arvoja, eivät mittauksia.",
+      "calc": "Kun laite käy tasaisella teholla $P$ ajan $t$, se muuntaa energian $E = P\\,t$. Simulaatio muuntaa ensin minuutit sekunneiksi, $1\\,\\text{min} = 60\\,\\text{s}$, ja kilowattitunnit saadaan sijoittamalla $1\\,\\text{kWh} = 3\\,600\\,000\\,\\text{J}$. Kuvaajan suoran kulmakerroin on teho: energia kasvaa joka tunnissa määrän $P \\cdot 1\\,\\text{h}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: lamppu ja hiustenkuivain",
+      "intro": "Testaa ennuste. Laite A on hiustenkuivain ($1800\\,\\text{W}$), joka on päällä $5\\,\\text{min}$. Laite B on lamppu ($10\\,\\text{W}$). Muuta vain lampun käyttöaikaa $t_\\text{B}$ ja kirjaa vähintään kolme mittausta: yksi, jossa lampun energia $E_\\text{B}$ on pienempi kuin kuivaimen energia $E_\\text{A}$, yksi, jossa se on suurempi, ja yksi, jossa ne ovat yhtä suuret. Hienosäädä aikaa tarvittaessa nuolinäppäimillä minuutti kerrallaan. Katso myös kuvaajaa.",
+      "initial": {
+        "A": "kuivain",
+        "tA": 5,
+        "B": "lamppu",
+        "tB": 60
+      },
+      "locked": [
+        "A",
+        "tA",
+        "B"
+      ],
+      "vary": "tB",
+      "names": {
+        "A": "laite A",
+        "tA": "käyttöaika $t_\\text{A}$",
+        "B": "laite B",
+        "tB": "käyttöaika $t_\\text{B}$"
+      },
+      "units": {
+        "A": "",
+        "tA": "min",
+        "B": "",
+        "tB": "min"
+      },
+      "measure": [
+        {
+          "key": "EA_kJ",
+          "label": "$E_\\text{A}\\ (\\text{kJ})$"
+        },
+        {
+          "key": "EB_kJ",
+          "label": "$E_\\text{B}\\ (\\text{kJ})$"
+        }
+      ],
+      "min": 3,
+      "values": {
+        "A": {
+          "kuivain": "hiustenkuivain"
+        },
+        "B": {
+          "lamppu": "lamppu"
+        }
+      },
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka kauan lampun täytyy palaa, jotta se muuntaa saman energian kuin hiustenkuivain viidessä minuutissa? Vastaa tunteina.",
+        "answer": 15,
+        "unit": "h",
+        "tolerance": 0.02,
+        "hints": [
+          "Etsi taulukosta rivi, jolla $E_\\text{B}$ on yhtä suuri kuin $E_\\text{A}$, ja lue siltä lampun käyttöaika $t_\\text{B}$ minuutteina.",
+          "Liukusäätimen aika on minuutteina. Tunneiksi muunnetaan sijoittamalla $1\\,\\text{min} = \\dfrac{1}{60}\\,\\text{h}$.",
+          "Laskemalla: kuivaimen energia on $E = P\\,t = 1800\\,\\text{W} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$, ja lampulta sama energia vie ajan $t = E : P$."
+        ],
+        "mistakes": [
+          {
+            "value": 900,
+            "feedback": "Lampun käyttöaika on oikein, mutta minuutteina. Muunna tunneiksi sijoittamalla $1\\,\\text{min} = \\dfrac{1}{60}\\,\\text{h}$: $900\\,\\text{min} = 900 \\cdot \\dfrac{1}{60}\\,\\text{h}$."
+          },
+          {
+            "value": 54000,
+            "feedback": "Tämä on lampun käyttöaika sekunteina. Kysyttiin tunteja: sijoita $1\\,\\text{s} = \\dfrac{1}{3600}\\,\\text{h}$."
+          },
+          {
+            "value": 5,
+            "feedback": "Viidessä minuutissa lamppu muuntaa vain $10\\,\\text{W} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$. Katso taulukosta, millä käyttöajalla $E_\\text{B}$ on yhtä suuri kuin $E_\\text{A}$."
+          }
+        ],
+        "solution": "**Annettu:** hiustenkuivaimen teho $P_\\text{A} = 1800\\,\\text{W}$ ja käyttöaika $t_\\text{A} = 5{,}0\\,\\text{min}$; lampun teho $P_\\text{B} = 10\\,\\text{W}$ (mallin tyypilliset tehot). Taulukossa $E_\\text{B} = E_\\text{A} = 540\\,\\text{kJ}$, kun $t_\\text{B} = 900\\,\\text{min}$.\n\n**Kysytty:** lampun käyttöaika $t_\\text{B}$ tunteina, kun $E_\\text{B} = E_\\text{A}$\n\n**Periaate:** Molemmat laitteet käyvät tasaisella teholla, joten kumpikin muuntaa energian $E = P\\,t$. Ensin lasketaan kuivaimen energia, sitten aika, jossa lamppu muuntaa saman energian.\n\n**Kaava:** $E_\\text{A} = P_\\text{A}\\,t_\\text{A}$ ja $t_\\text{B} = \\dfrac{E_\\text{A}}{P_\\text{B}}$\n\n**Muunnokset:** Sijoitetaan $1\\,\\text{min} = 60\\,\\text{s}$: $5{,}0\\,\\text{min} = 5{,}0 \\cdot 60\\,\\text{s} = 300\\,\\text{s}$. Lopuksi sijoitetaan $1\\,\\text{h} = 3600\\,\\text{s}$ eli $1\\,\\text{s} = \\dfrac{1}{3600}\\,\\text{h}$.\n\n**Sijoitus:** $E_\\text{A} = 1800\\,\\text{W} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$ ja $t_\\text{B} = \\dfrac{540\\,000\\,\\text{J}}{10\\,\\text{W}} = 54\\,000\\,\\text{s} = 54\\,000 \\cdot \\dfrac{1}{3600}\\,\\text{h} = 15\\,\\text{h}$\n\n**Vastaus:** $t_\\text{B} = 15\\,\\text{h}$, kaksi merkitsevää numeroa kuten lampun tehossa $10\\,\\text{W}$ ja käyttöajassa $5{,}0\\,\\text{min}$. Sama tulos luetaan simulaation taulukosta: $900\\,\\text{min} = 900 \\cdot \\dfrac{1}{60}\\,\\text{h} = 15\\,\\text{h}$.\n\n**Järkevyys:** Lampun teho on $1800 : 10 = 180$ kertaa pienempi kuin kuivaimen, joten saman energian muuntamiseen kuluu $180$ kertaa pidempi aika: $180 \\cdot 5{,}0\\,\\text{min} = 900\\,\\text{min}$. Kuvaajassa lampun loiva suora nousee kuivaimen pisteen korkeudelle vasta paljon myöhemmin."
+      }
     },
     {
       "id": "mittari",
@@ -97,35 +187,73 @@
       }
     },
     {
-      "id": "aika",
+      "id": "koe-2",
       "stage": "tutki",
-      "type": "interpret",
-      "title": "Lampun energia ajan kuluessa",
-      "source": "model",
-      "source_note": "Laskettu lampun nimellistehosta $10\\,\\text{W}$ ja kuivaimen tehosta $1800\\,\\text{W}$; esimerkkiaineisto, ei mittaus.",
-      "text": "Hiustenkuivain muuntaa $5{,}0\\,\\text{min}$:ssa $0{,}54\\,\\text{MJ}$ sähköenergiaa. Taulukossa on $10\\,\\text{W}$:n lampun muuntama energia, kun se palaa yhtäjaksoisesti.\n\n| aika | lampun energia (MJ) |\n| --- | --- |\n| $1\\,\\text{h}$ | $0{,}036$ |\n| $5\\,\\text{h}$ | $0{,}18$ |\n| $24\\,\\text{h}$ | $0{,}86$ |\n\nLampun teho on koko ajan sama $10\\,\\text{W}$. Silti sen muuntama energia kasvaa ajan mukana.",
+      "type": "experiment",
+      "title": "Koe 2: kilowattitunti",
+      "optional": true,
+      "intro": "Laite A on vedenkeitin ($2000\\,\\text{W}$). Muuta vain sen käyttöaikaa $t_\\text{A}$ ja kirjaa vähintään kolme mittausta. Katso energiaa $E_\\text{A}$ kilowattitunteina.",
+      "initial": {
+        "A": "keitin",
+        "tA": 10,
+        "B": "lamppu",
+        "tB": 60
+      },
+      "locked": [
+        "A",
+        "B",
+        "tB"
+      ],
+      "vary": "tA",
+      "names": {
+        "A": "laite A",
+        "tA": "käyttöaika $t_\\text{A}$",
+        "B": "laite B",
+        "tB": "käyttöaika $t_\\text{B}$"
+      },
+      "units": {
+        "A": "",
+        "tA": "min",
+        "B": "",
+        "tB": "min"
+      },
+      "measure": [
+        {
+          "key": "EA_kWh",
+          "label": "$E_\\text{A}\\ (\\text{kWh})$"
+        }
+      ],
+      "min": 3,
+      "values": {
+        "A": {
+          "keitin": "vedenkeitin"
+        },
+        "B": {
+          "lamppu": "lamppu"
+        }
+      },
       "question": {
-        "type": "choice",
-        "prompt": "Laske, kuinka kauan lampun täytyy palaa, jotta se on muuntanut saman energian kuin kuivain viidessä minuutissa. Tarkista tulos taulukosta.",
-        "choices": [
+        "type": "numeric",
+        "prompt": "Kuinka monta minuuttia vedenkeittimen täytyy olla päällä, jotta se muuntaa tasan $1\\,\\text{kWh}$ energiaa? Vastaa minuutteina.",
+        "answer": 30,
+        "unit": "min",
+        "tolerance": 0.02,
+        "hints": [
+          "Etsi liukusäätimellä käyttöaika, jolla $E_\\text{A} = 1\\,\\text{kWh}$, tai laske se.",
+          "Kun teho on kilowatteina ja aika tunteina, $E = P\\,t$ antaa suoraan kilowattitunteja. Ratkaise $t = E : P$.",
+          "$t = 1\\,\\text{kWh} : 2{,}0\\,\\text{kW} = 0{,}50\\,\\text{h}$. Muunna lopuksi minuuteiksi."
+        ],
+        "mistakes": [
           {
-            "text": "Viisi minuuttia, koska energian pitää kertyä samassa ajassa.",
-            "feedback": "Samassa ajassa lamppu muuntaa vain $10\\,\\text{W} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$, koska sen teho on pieni. Pienellä teholla sama energia vie paljon pidempään."
+            "value": 0.5,
+            "feedback": "Aika on oikein, mutta tunteina. Kysyttiin minuutteja: $0{,}50\\,\\text{h} = 0{,}50 \\cdot 60\\,\\text{min}$."
           },
           {
-            "text": "Noin $15\\,\\text{h}$.",
-            "correct": true,
-            "feedback": "Oikein: $t = E : P = 540\\,000\\,\\text{J} : 10\\,\\text{W} = 54\\,000\\,\\text{s} = 15\\,\\text{h}$. Tarkistus taulukosta: $15\\,\\text{h}$ on rivien $5\\,\\text{h}$ ($0{,}18\\,\\text{MJ}$) ja $24\\,\\text{h}$ ($0{,}86\\,\\text{MJ}$) välissä, ja $0{,}54\\,\\text{MJ}$ on niiden välissä."
-          },
-          {
-            "text": "Noin $5\\,\\text{h}$.",
-            "feedback": "Viidessä tunnissa lamppu on muuntanut vasta $0{,}18\\,\\text{MJ}$, kolmasosan kuivaimen $0{,}54\\,\\text{MJ}$:sta."
-          },
-          {
-            "text": "Noin $24\\,\\text{h}$.",
-            "feedback": "$24\\,\\text{h}$:ssa lamppu muuntaa $0{,}86\\,\\text{MJ}$, mikä on enemmän kuin kuivaimen $0{,}54\\,\\text{MJ}$. Sama energia saavutetaan jo aiemmin, kun lasketaan $t = E : P$."
+            "value": 1800,
+            "feedback": "Tämä on aika sekunteina. Kysyttiin minuutteja: $1800\\,\\text{s} = 1800 \\cdot \\dfrac{1}{60}\\,\\text{min}$."
           }
-        ]
+        ],
+        "solution": "**Annettu:** vedenkeittimen teho $P = 2000\\,\\text{W}$ (mallin tyypillinen teho) ja energia $E = 1\\,\\text{kWh}$\n\n**Kysytty:** käyttöaika $t$ minuutteina\n\n**Periaate:** Keitin käy tasaisella teholla, joten energia on teho kertaa aika. Kun teho on kilowatteina ja energia kilowattitunteina, aika saadaan tunteina.\n\n**Kaava:** $E = P\\,t$, josta $t = \\dfrac{E}{P}$\n\n**Muunnokset:** Sijoitetaan $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$: $2000\\,\\text{W} = 2000 \\cdot 10^{-3}\\,\\text{kW} = 2{,}0\\,\\text{kW}$. Lopuksi sijoitetaan $1\\,\\text{h} = 60\\,\\text{min}$.\n\n**Sijoitus:** $t = \\dfrac{1\\,\\text{kWh}}{2{,}0\\,\\text{kW}} = 0{,}50\\,\\text{h} = 0{,}50 \\cdot 60\\,\\text{min} = 30\\,\\text{min}$\n\n**Vastaus:** $t = 30\\,\\text{min}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\\,\\text{kW}$. Simulaation taulukossa $E_\\text{A} = 1\\,\\text{kWh}$, kun $t_\\text{A} = 30\\,\\text{min}$.\n\n**Järkevyys:** Kilowattitunti on energia, jonka $1\\,\\text{kW}$:n laite muuntaa tunnissa. Keittimen teho on kaksinkertainen, joten siltä kuluu puolet tunnista."
       }
     },
     {
@@ -133,13 +261,16 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös: teho ja aika",
-      "prompt": "Kirjoita taulukoiden perusteella: miksi $10\\,\\text{W}$:n lamppu voi muuntaa enemmän energiaa kuin $1800\\,\\text{W}$:n hiustenkuivain? Miten teho ja aika ratkaisevat yhdessä muuntuneen energian?",
-      "model": "Teho kertoo, kuinka paljon energiaa muuntuu sekunnissa: kuivaimella $1800\\,\\text{J}$ ja lampulla $10\\,\\text{J}$. Muuntunut energia on teho kertaa aika, joten pieni teho riittää, kun aikaa on paljon: lamppu muuntaa vuorokaudessa $0{,}86\\,\\text{MJ}$ ja kuivain viidessä minuutissa $0{,}54\\,\\text{MJ}$. Lampun täytyy palaa noin $15\\,\\text{h}$, jotta se saavuttaa kuivaimen viiden minuutin energian. Luvut on laskettu nimellistehoista, eivät mitattu.",
+      "prompt": "Kirjoita mittaustesi ja kuvaajan perusteella: miksi $10\\,\\text{W}$:n lamppu voi muuntaa enemmän energiaa kuin $1800\\,\\text{W}$:n hiustenkuivain? Miten teho ja aika ratkaisevat yhdessä muuntuneen energian?",
+      "model": "Teho kertoo, kuinka paljon energiaa muuntuu sekunnissa: kuivaimella $1800\\,\\text{J}$ ja lampulla $10\\,\\text{J}$. Muuntunut energia on teho kertaa aika, joten pieni teho riittää, kun aikaa on paljon. Kokeessa kuivain muunsi viidessä minuutissa $540\\,\\text{kJ}$, ja lampun energia oli yhtä suuri, kun $t_\\text{B} = 900\\,\\text{min} = 15\\,\\text{h}$. Pidemmällä käyttöajalla lamppu muuntaa enemmän: vuorokaudessa $864\\,\\text{kJ}$. Kuvaajassa lampun suora on loiva, koska teho on pieni, mutta se jatkuu pitkälle. Luvut ovat simulaation mallin arvoja nimellistehoista, eivät mittauksia.",
       "criteria": [
         "Sanoin, että teho on energia sekunnissa.",
         "Käytin yhtälöä $E = P\\,t$ ja otin ajan huomioon.",
-        "Perustelin lukuarvoilla, että lamppu muuntaa enemmän.",
-        "Muistin, että luvut ovat nimellistehoista laskettuja."
+        "Perustelin mittauksillani, millä käyttöajalla lamppu muuntaa saman tai enemmän energiaa.",
+        "Muistin, että simulaation luvut ovat mallin arvoja."
+      ],
+      "after": [
+        "koe-1"
       ]
     },
     {
