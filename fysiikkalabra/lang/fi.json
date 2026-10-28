@@ -182,7 +182,10 @@
     "reflect_supported": "aineisto tukee ennustettasi.",
     "reflect_not_supported": "aineisto ei tue ennustettasi.",
     "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.",
-    "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen</a>."
+    "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen</a>.",
+    "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
+    "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
+    "selfcheck_summary": "Osaan {{ok}} / {{n}} tavoitetta."
   },
   "sims": {
     "fy2-2": {
@@ -804,5 +807,62 @@
       "jaahtyy": "jäähtyy",
       "asettunut": "asettunut"
     }
+  },
+  "practice": {
+    "title": "Sovella itsenäisesti",
+    "eyebrow": "{{code}} · moduulin lopuksi",
+    "page_title": "{{code}} · Sovella itsenäisesti",
+    "description": "{{code}} {{title}}: itsenäisesti ratkaistavat tehtävät, mallivastaukset ja pisteytysohjeet itsearviointiin.",
+    "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käyttää. Päätä itse, mitkä ilmiöt ja mallit tilanteeseen liittyvät, ratkaise tehtävä paperille ja perustele ratkaisusi, kuten ylioppilaskokeessa.",
+    "howto": "Ratkaise ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
+    "points": "{{n}} p",
+    "task_points": "{{n}} pistettä",
+    "reveal": "Näytä mallivastaus ja pisteytys",
+    "reveal_hint": "Avaa vasta, kun oma ratkaisusi on valmis.",
+    "own_reveal": "Avaa arviointikriteerit",
+    "solution": "Mallivastaus",
+    "rubric": "Pisteytys ja itsearviointi",
+    "rubric_lead": "Vertaa ratkaisuasi mallivastaukseen ja valitse jokaisesta kohdasta pisteet, jotka ratkaisusi mielestäsi ansaitsee. Osapisteet ovat mahdollisia, ja myös muu fysikaalisesti oikea ratkaisutapa kelpaa.",
+    "own_rubric_lead": "Valitse jokaisesta kohdasta pisteet, jotka raporttisi mielestäsi ansaitsee.",
+    "rubric_note": "Pisteet ovat oma arviosi, eivät tarkistettu arvosana. Pisteytys on Fysiikkalabran oma, ylioppilaskokeen hyvän vastauksen piirteiden mukaan laadittu, eikä se ole YTL:n virallinen.",
+    "criterion_points": "Pisteet kohdasta: {{text}}",
+    "mistakes": "Yleisiä virheitä",
+    "also": "Hyväksytään myös",
+    "practise_more": "Harjoittele lisää:",
+    "practise_link": "{{competency}}, luku {{chapter}}",
+    "course_lead": "Moduulin lopuksi voit kokeilla, osaatko soveltaa oppimaasi itsenäisesti ylioppilaskokeen tapaan. Mallivastaukset ja pisteytysohjeet avautuvat oman ratkaisun jälkeen.",
+    "course_count": "{{n}} tehtävää · {{points}} pistettä",
+    "kind_own": "oma työ"
+  },
+  "competency": {
+    "concept": "Käsitteellinen ymmärrys",
+    "math": "Matemaattinen ratkaisu",
+    "graph": "Kuvaajat ja aineiston analyysi",
+    "experiment": "Kokeellinen päättely",
+    "communication": "Fysikaalinen selittäminen",
+    "transfer": "Mallin valinta ja soveltaminen"
+  },
+  "criteria": {
+    "graph_axes": "Akseleilla ovat oikeat suureet ja yksiköt, ja asteikot ovat tasavälisiä.",
+    "graph_points": "Jokainen mittaus on merkitty erillisenä pisteenä oikealle paikalleen.",
+    "graph_fit": "Malli on sovitettu niihin pisteisiin, joihin se sopii, eikä pisteitä ole yhdistetty murtoviivaksi.",
+    "graph_read": "Kulmakerroin tai muu suure on luettu kuvaajalta näkyvästi, kahdesta kaukana toisistaan olevasta suoran pisteestä.",
+    "equation": "Lähtöyhtälö on oikea, ja kysytty suure on ratkaistu siitä ennen lukuarvojen sijoittamista.",
+    "calculation": "Lukuarvot on sijoitettu yksiköineen, ja lasku on oikein.",
+    "units_precision": "Vastauksessa on oikea yksikkö ja lähtötietoja vastaava tarkkuus.",
+    "reasonableness": "Tuloksen järkevyys on arvioitu.",
+    "uncertainty": "Mittauksen epävarmuus on arvioitu.",
+    "error_sources": "Tärkeimmät virhelähteet on nimetty ja kerrottu, miten ne vaikuttavat tulokseen.",
+    "assumptions": "Oletus on nimetty, ja sen vaikutus tulokseen on perusteltu.",
+    "conclusion": "Johtopäätös vastaa kysymykseen ja perustuu aineistoon."
+  },
+  "selfcheck": {
+    "title": "Arvioi osaamistasi",
+    "lead": "Mieti luvun tavoitteita: miltä osaaminen nyt tuntuu? Valintasi tallentuu vain tähän selaimeen.",
+    "ok": "Osaan",
+    "practice": "Tarvitsen vielä harjoitusta",
+    "next": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
+    "next_no_exercises": "Kertaa <a href=\"#selita\">teoriatiivistelmä</a>.",
+    "optional": "valinnainen"
   }
 }

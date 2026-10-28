@@ -28,7 +28,7 @@ REAL = snapshot()
 KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
-for f in ("curriculum.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
+for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content/_gold", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
 c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)

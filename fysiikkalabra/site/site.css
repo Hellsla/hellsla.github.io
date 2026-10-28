@@ -435,3 +435,48 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
 @media (min-width:85rem) and (max-height:34rem){.lesson-page>nav.toc{position:static}}
 .nobr{white-space:nowrap}
 .katex .katex-mathml{width:1px;height:1px;overflow:hidden}   /* the screen-reader copy of a formula is clipped but would still widen its scroll box */
+
+/* Self-assessment (teacher's brief 2026-10-28, scripts/practice.py): Arvioi osaamistasi at the end of a chapter, and the
+   Sovella itsenäisesti page with its shared rubric. Both use the existing levels: a closed box like the optional tasks,
+   task cards, tinted panels inside them; the point buttons and choices are whole 44 px targets. */
+details.selfcheck{max-width:calc(var(--measure) + 3rem);margin:1.25rem 0 0;border:1px dashed #cfc6b2;border-radius:var(--card-radius);padding:0 1rem;background:transparent}
+details.selfcheck>summary{min-height:48px;gap:.2rem .5rem;flex-wrap:wrap;font:600 var(--fs-ui) var(--sans);color:var(--ink-2)}
+details.selfcheck>summary .sc-title{color:var(--accent-deep);font-weight:700;font-size:var(--fs-body)}
+details.selfcheck[open]{background:var(--surface);border-style:solid;border-color:var(--line)}
+details.selfcheck[open]>summary{border-bottom:1px solid var(--line-2)}
+.selfcheck-body{padding:.8rem .3rem 1rem}.selfcheck-lead{margin:0 0 .8rem;color:var(--ink-2)}
+ol.selfcheck-list{margin:0;padding:0;list-style:none}ol.selfcheck-list>li{margin:0 0 1rem}
+ol.selfcheck-list fieldset,fieldset.crit{margin:0;padding:0;border:0;min-width:0}
+ol.selfcheck-list legend{padding:0;margin-bottom:.4rem}
+.sc-options{display:flex;flex-wrap:wrap;gap:.4rem}
+.sc-options label,.crit-points label{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:0 .9rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:500 var(--fs-ui) var(--sans);cursor:pointer}
+.sc-options label:has(input:checked),.crit-points label:has(input:checked){border-color:var(--accent-deep);background:var(--accent-soft);color:var(--accent-deep);font-weight:700}
+.sc-options input,.crit-points input{accent-color:var(--accent);margin:0}
+.selfcheck-next{margin:.5rem 0 0;padding:.45rem .8rem;background:var(--bg-tint);border-radius:8px;font-size:var(--fs-inner)}
+.selfcheck-summary{margin:0;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);min-height:1.2em}
+
+.practice-head{margin:0 0 2rem;max-width:var(--measure)}.practice-head h1{margin:.2rem 0 .8rem}
+.practice-task>h2 .pts{margin-left:auto;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);white-space:nowrap}
+.practice-task .situation table{margin:.6rem 0 1rem}.practice-task .situation blockquote{margin:.8rem 0;padding:.6rem 1rem;border-left:3px solid var(--line);background:var(--bg);border-radius:0 8px 8px 0;font-size:var(--fs-inner)}
+ol.parts{list-style:none;margin:1rem 0;padding:0;border-top:1px solid var(--line-2)}
+ol.parts>li{display:grid;grid-template-columns:1.8rem 1fr auto;gap:.2rem .5rem;padding:.6rem 0;border-bottom:1px solid var(--line-2)}
+.part-id{font-weight:700}.pts{font:600 var(--fs-small) var(--sans);color:var(--ink-2);white-space:nowrap}
+details.reveal{margin:1rem 0 0;border-top:1px solid var(--line)}
+details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.reveal-hint{font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
+.reveal-body>h3{margin:1.4rem 0 .6rem}.reveal-body>h3:first-child{margin-top:.6rem}
+h4.sol-part{margin:1rem 0 .4rem;font:700 var(--fs-body) var(--sans)}
+.reveal-body .steps{padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
+.reveal-body .steps p{margin:0 0 .5rem}.reveal-body .steps strong{color:var(--accent-deep)}.reveal-body .steps svg{display:block;margin:.6rem auto}
+.rubric{font-size:var(--fs-inner)}.rubric-lead{color:var(--ink-2)}
+.rubric-part{margin:0 0 1rem;padding:.7rem .9rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
+.rubric-part-h{display:flex;justify-content:space-between;margin:0 0 .4rem;font-weight:700}
+fieldset.crit{padding:.5rem 0;border-top:1px solid var(--line-2)}.rubric-part-h+fieldset.crit,.rubric-part>fieldset.crit:first-child{border-top:0}
+fieldset.crit legend{float:left;width:100%;padding:0;margin-bottom:.4rem}fieldset.crit legend+*{clear:both}
+fieldset.crit legend .pts{margin-left:.3rem}.crit-detail{display:block;color:var(--ink-2);margin-top:.15rem}
+.crit-points{display:flex;flex-wrap:wrap;gap:.4rem}.crit-points label{min-width:44px;justify-content:center;padding:0 .7rem}
+.rubric-total{margin:.6rem 0 .3rem;font:700 var(--fs-body) var(--sans);color:var(--accent-deep)}
+.rubric-note{margin:0 0 .6rem;font-size:var(--fs-small);color:var(--ink-2)}
+.rubric-more{padding:.6rem .9rem;background:var(--accent-soft);border-radius:8px}.rubric-more p{margin:0 0 .3rem;font-weight:600}.rubric-more ul{margin:0;padding-left:1.2rem}
+@media (max-width:600px){ol.parts>li{grid-template-columns:1.6rem 1fr}ol.parts>li .pts{grid-column:2}.reveal-body .steps{padding:.7rem .75rem}.rubric-part{padding:.6rem .6rem}}
+@media print{details.selfcheck,.crit-points,.rubric-total,.rubric-more{display:none!important}}

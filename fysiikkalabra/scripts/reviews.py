@@ -626,7 +626,7 @@ def impact(ref):
             users = deps.get(m.group(1), [])
             lessons |= set(users); exercises |= set(users) if m.group(1).startswith(("pics/", "shared/pics/")) else set()   # a picture may be in either part
             print(f"{n}: used by {', '.join(users) or 'no lesson yet'}"); continue
-        if n.startswith(("scripts/", "templates/", "curriculum.json", "glossary.json", ".claude/", "docs/", "site/")) or n.endswith((".md", ".yml")):
+        if n.startswith(("scripts/", "templates/", "curriculum.json", "competencies.json", "glossary.json", ".claude/", "docs/", "site/")) or n.endswith((".md", ".yml")):
             tooling.append(n)
     if tooling: print(f"tooling, templates, config or docs ({len(tooling)} file(s)): no review; CI re-runs every check and rebuilds every page")
     for lid in sorted(lessons | exercises):
