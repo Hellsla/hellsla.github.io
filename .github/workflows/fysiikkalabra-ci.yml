@@ -29,6 +29,8 @@ jobs:
         run: python scripts/practice.py check && python scripts/test_practice.py
       - name: the figure catalog is current and figures in tasks resolve, render and hash as they should (scripts/figcat.py)
         run: python scripts/figcat.py build --check && python scripts/test_figcat.py
+      - name: assessment audits are current (docs/assessment/)
+        run: python scripts/assessment.py --all --check
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all

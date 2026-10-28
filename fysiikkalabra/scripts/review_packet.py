@@ -301,6 +301,9 @@ def packet(folder, role, fix=False):
         out += "\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n"
         if has_sim: out += "\n" + sections("NOTES.md", "4. Simulations and pages") + "\n"
         own = c["paths"]["sims"] / lid
+        out += figures_available(folder)
+        import assessment                              # the chapter's checks, figure tasks, exit ticket and repeats (NOTES.md §11)
+        out += "\n## Assessment audit of this chapter (scripts/assessment.py)\n```\n" + json.dumps(assessment.chapter(folder), ensure_ascii=False) + "\n```\n"
         out += (f"\n## Where files go\n- lesson texts: `{folder.relative_to(ROOT)}/` (meta.json, lesson.md, inquiry.json, exit-ticket.json); the exercise set: `{courses.exercise_dir(folder).relative_to(ROOT)}/` (exercises.json, solutions.md)\n"
                 f"- code: `{courses.code_dir(folder).relative_to(ROOT)}/` (answers.py: the exercises' answers; lesson-answers.py: the numbers of the lesson text and the inquiry; figures.py; sim-spec.md)\n"
                 f"- simulation: " + (f"`{folder.relative_to(ROOT)}/sim.js` (this course keeps sims in lesson folders)" if c.get("lesson_folder_sims")

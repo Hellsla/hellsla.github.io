@@ -99,11 +99,19 @@ def _check_numeric(a, path, errs):
             errs.append(f"{path}.mistakes[{i}]: {{\"value\": number, \"feedback\": text}}")
 
 
+CONFIDENCE = re.compile(r"^\s*(?:Osaan|Ymmärrän|Tiedän|Olen varma|Pystyn|Tunnen|Hallitsen|I can|I understand|I know)\b", re.I)
+
+
 def _check_explain(a, path, errs):
     if not isinstance(a.get("prompt"), str): errs.append(f"{path}.prompt: a string is required")
     if not isinstance(a.get("criteria"), list) or not a["criteria"] or not all(isinstance(c, str) for c in a["criteria"]):
         errs.append(f"{path}.criteria: a non-empty list of self-assessment criteria")
     if not isinstance(a.get("model"), str) or not a["model"].strip(): errs.append(f"{path}.model: a model answer is required")
+    for i, c in enumerate(a.get("criteria") or []):
+        if isinstance(c, str) and CONFIDENCE.match(c):
+            errs.append(f"{path}.criteria[{i}]: a criterion names something the answer shows (\"Vastaus kertoo, että …\"), not how sure the student feels")
+    if "practice" in a and not (isinstance(a["practice"], str) and a["practice"].strip()):
+        errs.append(f"{path}.practice: where to practise the missing reasoning, markdown with a link (default: the theory and the exercises)")
 
 
 def validate(folder, inquiry, lesson_md):
@@ -313,9 +321,11 @@ def numeric_html(a, md, aid):
 
 
 def explain_html(a, md, aid):
-    """A written explanation. The model answer opens only after the student has written their own (inquiry.js); a
-    conclusion with "after" also waits for the measurements of those experiments, and offers to copy the tables and
-    the student's own text for their notes."""
+    """A written explanation, assessed by the student in a guided sequence (teacher 2026-10-28): their own answer first;
+    the model answer opens only after it (inquiry.js); then observable criteria from the model answer to tick; then
+    "what is missing" lists the unticked criteria as the reasoning to add, with where to practise it (the task's own
+    `practice`, markdown, or the theory and the exercises). A conclusion with "after" also waits for the measurements of
+    those experiments, and offers to copy the tables and the student's own text for their notes. No grading, no model."""
     crit = "".join(f'<li><label><input type="checkbox"> <span>{inline(md, c)}</span></label></li>' for c in a["criteria"])
     pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
     after = a.get("after") or []
@@ -324,7 +334,11 @@ def explain_html(a, md, aid):
     return (f'<div class="explain"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model")}</button>{copy}</div>'
             f'<p class="explain-status" role="status" aria-live="polite"></p>'
-            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4><ul class="criteria">{crit}</ul></div></div>')
+            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4>'
+            f'<p class="crit-lead">{T("inquiry.self_assess_lead")}</p><ul class="criteria">{crit}</ul>'
+            f'<div class="choice-actions"><button type="button" class="check-criteria">{T("inquiry.criteria_done")}</button></div>'
+            f'<div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul>'
+            f'<p class="crit-practice" hidden>{md(a["practice"]) if a.get("practice") else T("inquiry.further_practice")}</p></div></div></div>')
 
 
 def question_html(q, md, lid, aid):
@@ -543,7 +557,6 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
-        if any(a["type"] == "exit" for a in items): inner += parts.get("selfcheck", "")   # Arvioi osaamistasi after the checks (scripts/practice.py)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '

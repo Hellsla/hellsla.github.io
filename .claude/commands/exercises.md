@@ -12,7 +12,7 @@ Work on the exercises of lesson $ARGUMENTS. Work in `fysiikkalabra/` (`cd fysiik
 
 **Counts.** The levels hold the course's counts (CLAUDE.md "Exercise levels", `curriculum.json` `exercise_levels`), and the lint fails on any other count. If the task asks for more tasks than that, stop before step 1 and tell the teacher the counts need changing first.
 
-1. `python scripts/review_packet.py <id> --role developer --exercises`, then the developer.
+1. `python scripts/review_packet.py <id> --role developer --exercises`, then the developer. The packet lists the course's figures from `docs/figures/catalog.json` (NOTES.md §11): a task that needs a picture reuses one by id or a variant of it; after any figures.py change run `python scripts/figcat.py build` and commit the catalog.
 2. `python scripts/check_lesson.py <id>` (lint with the complete-solution rules, LaTeX, build, layout with every solution open at 360, 768 and 1280 px). On FAIL run the developer with `--role developer --exercises --fix` and the failing lines; at most twice.
 3. `python scripts/screenshot.py <id>`, then `python scripts/reviews.py scope <id> --exercises`. A reviewer whose mode is `none` is not run: `python scripts/reviews.py carry <id> --exercises`. For the others `python scripts/review_packet.py <id> --role science --exercises` / `--role pedagogy --exercises` and the two reviewers in parallel. Then `python scripts/reviews.py status <id>`.
 4. If the exercises are `reviewed`: go to 6. ESCALATE and FAIL as in `/lesson` step 4 (classify A/B/C, the developer `--exercises --fix` names the A and B Polish items), then from step 2. At most three review rounds.

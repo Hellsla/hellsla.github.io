@@ -357,7 +357,7 @@ def check_exit_ticket(L, folder):
     if not f.exists(): L.err("exit-ticket.json", 1, "missing"); return
     try: q = json.loads(f.read_text())
     except json.JSONDecodeError as e: L.err("exit-ticket.json", e.lineno, f"invalid JSON: {e.msg}"); return
-    if len(q) != 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 3")
+    if not 1 <= len(q) <= 3: L.err("exit-ticket.json", 1, f"{len(q)} questions, expected 1–3 that the checks and exercises do not already ask (NOTES §11)")
     for i, item in enumerate(q, 1):
         if not item.get("q") or not item.get("a"): L.err("exit-ticket.json", 1, f"question {i} needs q and a")
         if re.search(r"\d\.\d", re.sub(r"\$[^$]*\$", "", item.get("q", "") + item.get("a", ""))): L.err("exit-ticket.json", 1, f"question {i}: decimal point; use a comma")
