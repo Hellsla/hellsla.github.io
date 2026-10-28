@@ -103,7 +103,7 @@
       "type": "interpret",
       "title": "Polttoaineiden lämpöarvot",
       "source": "statistics",
-      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017); maakaasu, kivihiili, diesel, bensiini: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006); puupelletti: tyypillinen arvo. Tehollisia lämpöarvoja, pyöristetty",
+      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017); maakaasu, kivihiili ja diesel: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006); bensiini: suomalaisen etanolia sisältävän bensiinin tyypillinen arvo (puhtaalle bensiinille IPCC 2006 antaa $44{,}3\\,\\text{MJ/kg}$); puupelletti: tyypillinen arvo. Tehollisia lämpöarvoja, pyöristetty",
       "text": "Taulukossa on yleisten polttoaineiden lämpöarvot $H$. Lämpöarvo on yhdestä kilogrammasta polttoainetta vapautuva energia.\n\n| Polttoaine | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| maakaasu | 48 |\n| bensiini | 43 |\n| diesel | 43 |\n| kivihiili | 26 |\n| puupelletti | 17 |\n| polttopuu (ilmakuiva) | 15 |\n| turve (jyrsinturve) | 10 |",
       "question": {
         "type": "choice",
