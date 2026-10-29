@@ -36,10 +36,10 @@
     "note": "adapter declares F (N), m (kg), alku and suunta"
   },
   {
-    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
     "expected": 1,
     "tol": 0,
-    "note": "canvas is 600x400"
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
   },
   {
     "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'levosta'); I(L[2],'oikea'); I(R[0],2);",

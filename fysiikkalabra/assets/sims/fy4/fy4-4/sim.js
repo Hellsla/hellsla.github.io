@@ -9,11 +9,13 @@
 // to one scale (11 px per newton), so the pull is short beside the weight, as it is. Bottom: the (t, v_x) graph.
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const g = 9.81, S = 11;                                                   // m/s², px per newton in the force diagram
-  const X0 = 20, PX = 182, TOP = 150;                                      // track: x = 0 m at px 20, 182 px per metre, its top at y 150
+  const g = 9.81;                                                          // m/s²
+  let laid = false, S = 11, PX = 182, W = 406, narrow = false, OY = 0;                   // px per newton; px per metre of the track; width of the situation panel; phone layout; the panel's top on the canvas
+  const X0 = 20, TOP = 150;                                                // track: x = 0 m at px 20, its top at y 150 of the situation panel
+  const HN = { sit: 196, dia: 320, gra: 282 };                             // panel heights when stacked on a phone (canvas 600 wide)
   const V0 = 1.5, TMAX = 1.0, DT = 0.05;                                   // initial speed when moving (m/s), run length (s), sampling (s)
-  const D = { x: 506, y: 205, w: 64, h: 40 };                              // force diagram: the cart as a rectangle
-  const GR = { x0: 58, x1: 380, y0: 294, k: 16 };                          // graph: t = 0 and t = 1 s, v = 0 and px per m/s
+  const D = { x: 506, y: 205, w: 64, h: 40 };                              // force diagram: the cart as a rectangle (set per layout)
+  const GR = { x0: 58, x1: 380, y0: 98, k: 16 };                           // graph: t = 0 and t = 1 s, v = 0 (from the panel's top) and px per m/s (set per layout)
   const RED = [201, 42, 42], BLUE = [25, 113, 194], ORANGE = [232, 89, 12], INKC = [31, 41, 51], MUTEDC = [107, 116, 128];
   let btn, slF, lF, selM, selAlku, selSuunta, selSpeed, readout;
   let U = 1;                                                                 // stroke/marker scale: grows on a narrow screen, where the canvas is shown smaller
@@ -59,6 +61,7 @@ new p5((p) => {
     p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
+    window.addEventListener('resize', () => p.redraw());
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { F: { input: slF.elt, unit: 'N' }, m: { input: selM.elt, unit: 'kg' }, alku: { input: selAlku.elt, unit: '' }, suunta: { input: selSuunta.elt, unit: '' } },
@@ -84,27 +87,37 @@ new p5((p) => {
                                  a: aMeas === null ? '\\ldots' : tx(aMeas, 2) }));
     window.simState = { F: M.F, m: M.m, alku: selAlku.value(), suunta: selSuunta.value(), Fx: M.Fx, G: M.G, N: M.G, sumFx: M.Fx, sumFy: 0,
                         aModel: M.a, t, x, v, a: aMeas, running, done, labels: null };
-    const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    U = Math.max(1, k * 0.8);
-    const fh = Math.round(11 * k * (k > 1.3 ? 1.12 : 1));
+    const cw = document.getElementById('sim-root').clientWidth || 600, k = Math.max(1, 600 / cw);
+    setLayout(cw < 500);
+    U = narrow ? 0.8 * k : Math.max(1, k * 0.8);
+    const fh = narrow ? Math.round(14 * k) : Math.round(11 * k * (k > 1.3 ? 1.12 : 1));   // phone: about 14 CSS px on screen
     labels = [];
     p.background(250);
-    situation(M, x, v, fh);
-    diagram(M, fh);
-    graph(M, fh, k);
+    OY = 0; p.push(); situation(M, x, v, fh); p.pop();
+    OY = narrow ? HN.sit : 0; p.push(); p.translate(0, OY); diagram(M, fh); p.pop();
+    OY = narrow ? HN.sit + HN.dia : 196; p.push(); p.translate(0, OY); graph(M, fh, k); p.pop();
     window.simState.labels = labels;
   };
 
+  // wide screen: the 600×400 picture; phone (the sim's box under 500 px): the three panels stacked at the full 600 width, so labels stay readable
+  function setLayout(n) {
+    if (n === narrow && laid) return;
+    laid = true;
+    narrow = n;
+    if (n) { W = 600; PX = 270; S = 10; D.x = 300; D.y = 155; GR.x0 = 70; GR.x1 = 570; GR.y0 = 140; GR.k = 18; p.resizeCanvas(600, HN.sit + HN.dia + HN.gra); }
+    else { W = 406; PX = 182; S = 11; D.x = 506; D.y = 205; GR.x0 = 58; GR.x1 = 380; GR.y0 = 98; GR.k = 16; p.resizeCanvas(600, 400); }
+  }
+
   // --- the situation picture: the lab wall, the track on the bench with its scale, the winches, the cart, v and a beside it ---
   function situation(M, x, v, fh) {
-    grect(0, 0, 406, TOP, [[240, 244, 248], [225, 232, 240]], 0);
-    grect(0, TOP, 406, 46, [[233, 201, 138], [217, 178, 106]], 0);
+    grect(0, 0, W, TOP, [[240, 244, 248], [225, 232, 240]], 0);
+    grect(0, TOP, W, 46, [[233, 201, 138], [217, 178, 106]], 0);
     p.noStroke(); p.fill(196, 204, 212); p.rect(X0, TOP, 2 * PX, 7);       // the aluminium track
     p.stroke(138, 150, 163); p.strokeWeight(1.5); p.line(X0, TOP + 3.5, X0 + 2 * PX, TOP + 3.5);
     p.stroke(...INKC); p.strokeWeight(1);                                  // the scale on the bench edge: 0,1 m ticks
     for (let i = 0; i <= 20; i++) { const xx = X0 + i * PX / 10; p.line(xx, TOP + 9, xx, TOP + (i % 5 ? 14 : 20)); }
     for (const [s, xm] of [['$0$', 0], ['$1{,}0\\,\\text{m}$', 1], ['$2{,}0$', 2]]) lab(s, X0 + xm * PX, TOP + 34, 'c', fh, INKC);
-    for (const [wx, on] of [[3, M.dir < 0], [388, M.dir > 0]]) {           // the winches; the pulling one has a lit lamp
+    for (const [wx, on] of [[3, M.dir < 0], [X0 + 2 * PX + 4, M.dir > 0]]) {           // the winches; the pulling one has a lit lamp
       grect(wx, TOP - 30, 15, 34, [[134, 142, 150], [96, 104, 112]], 3);
       p.noStroke(); p.fill(on && M.F > 0 ? 43 : 160, on && M.F > 0 ? 138 : 160, on && M.F > 0 ? 62 : 160); p.circle(wx + 7.5, TOP - 22, 6);
       p.fill(70); p.circle(wx + 7.5, TOP - 9, 9);
@@ -112,7 +125,7 @@ new p5((p) => {
     const cx = X0 + PX * x, top = TOP - 26;
     if (M.F > 0) {                                                          // the string from the cart to the pulling winch
       p.stroke(120, 90, 50); p.strokeWeight(1.5 * U);
-      if (M.dir > 0) p.line(cx + 18, top + 8, 395, top + 8); else p.line(cx - 18, top + 8, 10, top + 8);
+      if (M.dir > 0) p.line(cx + 18, top + 8, X0 + 2 * PX + 11, top + 8); else p.line(cx - 18, top + 8, 10, top + 8);
     }
     grect(cx - 18, top, 36, 17, [[120, 160, 200], [60, 100, 150]], 3);
     p.noStroke(); p.fill(31, 41, 51); p.circle(cx - 10, TOP - 5, 10); p.circle(cx + 10, TOP - 5, 10);
@@ -121,25 +134,26 @@ new p5((p) => {
     for (let i = 0; i < nb; i++) grect(cx - 15 + (i % 2) * 16, top - 10 - Math.floor(i / 2) * 10, 14, 9, [[160, 166, 172], [100, 106, 112]], 1);
     motion(cx, 86, v, 18, BLUE, '$\\overline{v}$', fh);
     if (t > 0) motion(cx, 58, M.a, 12, ORANGE, '$\\overline{a}$', fh);
-    lab(__('tilannekuva'), 10, 22, 'l', fh, INKC);
-    lab(`$t = ${tx(t, 2)}\\,\\text{s}$`, 398, 22, 'r', fh, INKC);
+    const ty = narrow ? fh + 2 : 22;
+    lab(__('tilannekuva'), 10, ty, 'l', fh, INKC);
+    lab(`$t = ${tx(t, 2)}\\,\\text{s}$`, W - 8, ty, 'r', fh, INKC);
   }
   function motion(x0, y, val, scale, col, name, fh) {                      // a thin arrow with an open head beside the cart
     if (Math.abs(val) < 0.02) return;
-    const dir = Math.sign(val), room = dir > 0 ? 398 - x0 : x0 - 6;
+    const dir = Math.sign(val), room = dir > 0 ? W - 8 - x0 : x0 - 6;
     const L = dir * Math.max(10, Math.min(Math.abs(val) * scale, room)), x2 = x0 + L;
     p.stroke(...col); p.strokeWeight(2.5 * U); p.line(x0, y, x2, y);
     p.line(x2, y, x2 - dir * 8 * U, y - 5 * U); p.line(x2, y, x2 - dir * 8 * U, y + 5 * U);
     p.textSize(fh); const w = p.textWidth(name);
-    if (dir > 0 ? x2 + 6 + w < 400 : x2 - 6 - w > 0) lab(name, x2 + dir * 6, y + fh * 0.36, dir > 0 ? 'l' : 'r', fh, col);
+    if (dir > 0 ? x2 + 6 + w < W - 6 : x2 - 6 - w > 0) lab(name, x2 + dir * 6, y + fh * 0.36, dir > 0 ? 'l' : 'r', fh, col);
     else lab(name, x0 - dir * 6, y + fh * 0.36, dir > 0 ? 'r' : 'l', fh, col);
   }
 
   // --- the force diagram: the cart as a plain rectangle; G from the centre, N from the bottom face beside it, the pull from the side ---
   function diagram(M, fh) {
-    p.noStroke(); p.fill(255); p.rect(406, 0, 194, 400);
-    p.stroke(220); p.strokeWeight(1); p.line(406, 0, 406, 400);
-    lab(__('voimakuvio'), 414, 22, 'l', fh, INKC);
+    p.noStroke(); p.fill(255);
+    if (narrow) { p.rect(0, 0, 600, HN.dia); p.stroke(220); p.strokeWeight(1); p.line(0, 0, 600, 0); lab(__('voimakuvio'), 10, fh + 2, 'l', fh, INKC); }
+    else { p.rect(406, 0, 194, 400); p.stroke(220); p.strokeWeight(1); p.line(406, 0, 406, 400); lab(__('voimakuvio'), 414, 22, 'l', fh, INKC); }
     p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2); p.rect(D.x - D.w / 2, D.y - D.h / 2, D.w, D.h);
     arrow([D.x, D.y], [0, -M.G], '$\\overline{G}$', fh, [fh * 0.9, -fh * 0.6]);
     arrow([D.x - 14, D.y + D.h / 2], [0, M.G], '$\\overline{N}$', fh, [0, -14]);
@@ -157,8 +171,9 @@ new p5((p) => {
 
   // --- the (t, v_x) graph: the samples so far as blue points; when the run ends, the fitted line (orange) and its slope a_x ---
   function graph(M, fh, k) {
-    const X = (tt) => GR.x0 + tt * (GR.x1 - GR.x0), Y = (vv) => GR.y0 - vv * GR.k;
-    p.noStroke(); p.fill(255); p.rect(0, 196, 406, 204);
+    const X = (tt) => GR.x0 + tt * (GR.x1 - GR.x0), Y = (vv) => GR.y0 - vv * GR.k, yb = narrow ? GR.y0 + 5 * GR.k + fh + 2 : 398 - fh * 0.3 - 196, yt = narrow ? fh + 2 : 2 + fh * 0.6;   // panel-local
+    if (narrow) { p.stroke(220); p.strokeWeight(1); p.line(0, 0, W, 0); }
+    p.noStroke(); p.fill(255); p.rect(0, 0, W, narrow ? HN.gra : 204);
     p.stroke(227, 220, 203); p.strokeWeight(1);
     for (let i = 1; i <= 10; i++) p.line(X(i / 10), Y(5), X(i / 10), Y(-5));
     for (let j = -5; j <= 5; j++) if (j) p.line(X(0), Y(j), X(1), Y(j));
@@ -166,16 +181,16 @@ new p5((p) => {
     p.line(X(0), Y(0), X(1) + 12, Y(0)); p.line(X(0), Y(-5), X(0), Y(5) - 12);
     p.noStroke(); p.fill(...INKC);
     p.triangle(X(1) + 18, Y(0), X(1) + 9, Y(0) - 4, X(1) + 9, Y(0) + 4); p.triangle(X(0), Y(5) - 18, X(0) - 4, Y(5) - 9, X(0) + 4, Y(5) - 9);
-    const vt = k > 1.5 ? [-4, 0, 4] : [-4, -2, 0, 2, 4];
+    const vt = [-4, -2, 0, 2, 4];
     for (const j of vt) lab(`$${tx(j, 0)}$`, X(0) - 6, Y(j) + fh * 0.36, 'r', fh, MUTEDC);
-    const tt = k > 1.5 ? [0.5, 1] : [0.2, 0.4, 0.6, 0.8, 1];
-    for (const s of tt) lab(`$${tx(s, 1)}$`, X(s), 398 - fh * 0.3, 'c', fh, MUTEDC);
-    lab('$v_x\\ (\\text{m/s})$', X(0) + 8, 198 + fh * 0.6, 'l', fh, INKC);
-    lab('$t\\ (\\text{s})$', 398, Y(0) - 10, 'r', fh, INKC);
+    const tt = k > 1.5 && !narrow ? [0.5, 1] : [0.2, 0.4, 0.6, 0.8, 1];
+    for (const s of tt) lab(`$${tx(s, 1)}$`, X(s), yb, 'c', fh, MUTEDC);
+    lab('$v_x\\ (\\text{m/s})$', X(0) + 8, yt, 'l', fh, INKC);
+    lab('$t\\ (\\text{s})$', W - 8, Y(0) - 10, 'r', fh, INKC);
     if (done && samples.length > 1) {
       const t1 = samples[samples.length - 1][0], v0 = samples.reduce((s, q) => s + q[1], 0) / samples.length - aMeas * samples.reduce((s, q) => s + q[0], 0) / samples.length;
       p.stroke(...ORANGE); p.strokeWeight(2.5 * U); p.line(X(0), Y(v0), X(t1), Y(v0 + aMeas * t1));
-      lab(`$a_x = ${tx(aMeas, 2)}\\,\\text{m/s}^2$`, 398, 214, 'r', fh, ORANGE);
+      lab(`$a_x = ${tx(aMeas, 2)}\\,\\text{m/s}^2$`, W - 8, narrow ? yt : 18, 'r', fh, ORANGE);
     }
     p.noStroke(); p.fill(...BLUE);
     for (const [a, b] of samples) if (a <= t + 1e-9) p.circle(X(a), Y(b), 7 * U);
@@ -186,7 +201,7 @@ new p5((p) => {
     p.textStyle(p.NORMAL); p.textAlign(p.LEFT, p.BASELINE); p.textSize(size);
     const w = p.textWidth(s), x0 = align === 'r' ? x - w : align === 'c' ? x - w / 2 : x;
     p.noStroke(); p.fill(...(col || INKC)); p.text(s, x0, y);
-    labels.push({ s, x0, y0: y - 0.75 * size, x1: x0 + w, y1: y + 0.25 * size });
+    labels.push({ s, x0, y0: OY + y - 0.75 * size, x1: x0 + w, y1: OY + y + 0.25 * size });
   }
   function grect(x, y, w, h, stops, r = 4) {
     const c = p.drawingContext; c.save(); const gr = c.createLinearGradient(x, y, x, y + h);

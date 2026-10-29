@@ -32,7 +32,7 @@
 **Annettu:** $m = 12\,\text{kg}$, vetävä voima $F = 38\,\text{N}$ vaakasuoraan, kitkavoima $F_\mu = 20\,\text{N}$
 **Kysytty:** laatikon kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kiihtyvyyden määrää kokonaisvoima Newtonin toisen lain mukaan, ei vetävä voima yksin. Pystysuunnassa laatikko ei kiihdy, joten pystysuorat voimat kumoavat toisensa ja kokonaisvoima on vaakasuora.
-**Voimakuvio:** Laatikko suorakulmiona, positiivinen suunta vedon suuntaan. Paino $\overline{G}$ keskipisteestä alas ja lattian tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Narun jännitysvoima $\overline{F}$ eteenpäin ja lattian kitkavoima $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin, vetävää voimaa lyhyempänä.
+**Voimakuvio:** Laatikko suorakulmiona, positiivinen suunta vedon suuntaan. Paino $\overline{G}$ keskipisteestä alas ja lattian tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Vetävä voima $\overline{F}$ eteenpäin ja lattian kitkavoima $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin, vetävää voimaa lyhyempänä.
 **Kaava:** Vaakasuunnassa $F - F_\mu = ma$, joten $a = \dfrac{F - F_\mu}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{38\,\text{N} - 20\,\text{N}}{12\,\text{kg}} = \dfrac{18\,\text{N}}{12\,\text{kg}} = 1{,}5\,\text{m/s}^2$
