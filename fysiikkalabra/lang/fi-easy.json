@@ -901,7 +901,7 @@
       "voima": "Voima $F = {{F}}\\,\\text{N}$",
       "kulma": "Kulma $\\alpha = {{a}}^\\circ$",
       "massa": "Massa",
-      "komponentit": "Näytä voiman $\\mathbf{F}$ komponentit",
+      "komponentit": "Näytä voiman $\\overline{F}$ komponentit",
       "selite": "Punaiset nuolet ovat voimia. Katkoviivat ovat komponentteja. Sininen nuoli on nopeus.",
       "tilannekuva": "$\\text{Tilannekuva}$",
       "voimakuvio": "$\\text{Voimakuvio}$",

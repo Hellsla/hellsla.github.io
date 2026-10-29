@@ -7,7 +7,7 @@
 
 ## Kaava
 ```latex
-\mathbf{F} = m\,\mathbf{a}
+\overline{F} = m\,\overline{a}
 ```
 missä F on kokonaisvoima (N), m massa (kg) ja a kiihtyvyys (m/s²).
 

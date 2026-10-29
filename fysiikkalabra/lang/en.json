@@ -901,7 +901,7 @@
       "voima": "Force $F = {{F}}\\,\\text{N}$",
       "kulma": "Angle $\\alpha = {{a}}^\\circ$",
       "massa": "Mass",
-      "komponentit": "Show the components of the force $\\mathbf{F}$",
+      "komponentit": "Show the components of the force $\\overline{F}$",
       "selite": "Red arrows are forces, dashed arrows components and the blue arrow the velocity.",
       "tilannekuva": "$\\text{Situation}$",
       "voimakuvio": "$\\text{Free-body diagram}$",

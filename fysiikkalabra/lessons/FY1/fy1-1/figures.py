@@ -270,7 +270,7 @@ def interactions():
     ex, ey = sx + 96, sy
     f.circle(ex, ey, 10, WATER, INK, 2)
     f.arrow(ex - 13, ey, sx + 32, sy, HOT, 3, 12)
-    f.tex(sx + 66, sy - 22, r"\mathbf{F}", "middle", HOT, w=30)
+    f.tex(sx + 66, sy - 22, r"\overline{F}", "middle", HOT, w=30)
     f.tex(x + W / 2, y + 176, r"\text{Maa kiertää Aurinkoa}", "middle")
     # electromagnetic: a nucleus (+) and an electron (−) attract
     x, y = 12 + W + g, 12

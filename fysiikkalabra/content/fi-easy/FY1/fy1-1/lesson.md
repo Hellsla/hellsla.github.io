@@ -352,7 +352,7 @@ Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnet
   <circle cx="228" cy="116" r="10" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
   <line x1="215" y1="116" x2="175" y2="116" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
   <path d="M164,116 L176,110.5 L176,121.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="183" y="79.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}$</div></foreignObject>
+  <foreignObject x="183" y="79.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
   <foreignObject x="36.5" y="173.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{Maa kiertää Aurinkoa}$</div></foreignObject>
   <circle cx="398" cy="104" r="18" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="386" y="89.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$+$</div></foreignObject>

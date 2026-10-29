@@ -58,7 +58,7 @@ check("an object 'still moving forward' needs no forward force: a sliding stone 
 # drawing
 f = Fig("t", 300, "t"); FBD(f, 1, body=(300, 100, 60, 40), a_dir=(0, 0)).force("G", (0, -100), (300, 100), "gravity").force("N", (0, 100), (315, 120), "normal", surface=0).draw()
 s = f.svg()
-check("the arrows are as long as the forces (scale), labels bold", "\\mathbf{G}" in s and "M300,200 " in s and "M315,20 " in s, s[:400])
+check("the arrows are as long as the forces (scale), labels bold", "\\overline{G}" in s and "M300,200 " in s and "M315,20 " in s, s[:400])
 check("the body is drawn as a plain rectangle", '<rect x="270" y="80" width="60" height="40"' in s, s[:400])
 try:
     FBD(Fig("bad", 300, "t"), 1, body=(0, 0, 40, 40), a_dir=(0, 0)).force("G", (0, -100), (0, 0), "gravity").draw(); ok = False
@@ -98,10 +98,10 @@ check("weight and normal force on one line are refused (they must be told apart)
 check("weight and normal force 6 units apart are refused", refused(gn(6), "one line", body=box, wrong="x"))
 check("weight and normal force side by side, 14 units apart, are drawn", not refused(gn(14), "one line", body=box, wrong="x"))
 check("velocity, acceleration and force have distinct colours", len({FORCE, VELOCITY, ACCEL, NET}) == 4)
-f = Fig("m", 300, "t"); d = FBD(f, 1, body=box); d.motion(r"\mathbf{v}", (1, 0), (60, 40)); d.motion(r"\mathbf{a}", (1, 0), (60, 20))
+f = Fig("m", 300, "t"); d = FBD(f, 1, body=box); d.motion(r"\overline{v}", (1, 0), (60, 40)); d.motion(r"\overline{a}", (1, 0), (60, 20))
 s = f.svg()
 check("motion() draws velocity blue and acceleration orange", VELOCITY in s and ACCEL in s and FORCE not in s)
-try: FBD(Fig("m", 300, "t"), 1, body=box).motion(r"\mathbf{v}", (1, 0), (100, 100)); ok = False
+try: FBD(Fig("m", 300, "t"), 1, body=box).motion(r"\overline{v}", (1, 0), (100, 100)); ok = False
 except ValueError: ok = True
 check("a velocity arrow on the body is refused", ok)
 print(f"{fails} failure(s)"); sys.exit(1 if fails else 0)
