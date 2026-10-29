@@ -57,7 +57,10 @@
   <line x1="263.5" y1="126" x2="816.5" y2="214" stroke="#1f2933" stroke-width="16" stroke-linecap="round"/>
   <line x1="263.5" y1="126" x2="816.5" y2="214" stroke="#c4ccd4" stroke-width="10" stroke-linecap="round"/>
   <circle cx="540" cy="170" r="14" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <path d="M531,176 L542,290 L553,176 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <g transform="rotate(9 540 170)">
+  <path d="M530,176 L540,294 L550,176 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <circle cx="540" cy="170" r="14" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
   <path d="M490,298 A60,60 0 0 0 590,298" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <line x1="516" y1="306" x2="516" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="528" y1="304" x2="528" y2="314" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>

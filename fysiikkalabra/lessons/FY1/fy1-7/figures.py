@@ -2,7 +2,7 @@
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, WATER, WATER_LIGHT, GLASS, SAND, SAND_LIGHT, GRAIN,
                     ALUMINIUM, METAL_EDGE, IRON, HEAT, n)
 import math
-from figlib import HOT, PAPER
+from figlib import PAPER
 import herolib as H
 from figlib import COLD_LIGHT, GOOD_LIGHT, HEAT_LIGHT
 from herolib import grad, steel
@@ -31,7 +31,9 @@ def hero():
     lx, ly = cx - L * math.cos(t), top - L * math.sin(t); rx, ry = cx + L * math.cos(t), top + L * math.sin(t)
     f.line(lx, ly, rx, ry, INK, 16, cap="round"); f.line(lx, ly, rx, ry, ALUMINIUM, 10, cap="round")
     f.circle(cx, top, 14, IRON, INK, 3)
-    f.path(f"M{cx - 9},{top + 6} L{cx + 2},{top + 120} L{cx + 13},{top + 6} Z", HOT, INK, 2)                  # the pointer, swung off the middle
+    f.add(f'<g transform="rotate(9 {cx} {top})">')                       # the pointer is fixed to the beam and turns with it
+    f.path(f"M{cx - 10},{top + 6} L{cx},{top + 124} L{cx + 10},{top + 6} Z", IRON, INK, 2)
+    f.add("</g>"); f.circle(cx, top, 14, IRON, INK, 3)
     f.path(f"M{cx - 50},{top + 128} A60,60 0 0 0 {cx + 50},{top + 128}", stroke=INK, w=3)
     for k in range(-2, 3): f.line(cx + 12 * k, top + 132 + abs(k) * 2, cx + 12 * k, top + 142 + abs(k) * 2, INK, 2)
     for x, y, cube, side, lit in ((lx, ly, ALUMINIUM, METAL_EDGE, WHITE), (rx, ry, IRON, INK, METAL_EDGE)):
