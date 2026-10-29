@@ -951,6 +951,25 @@
       "lukemat_a": "$\\text{A}$: <strong>$x_\\text{A} = {{xa}}\\,\\text{m}$</strong>, $v_\\text{A} = {{va}}\\,\\text{m/s}$, $a_\\text{A} = {{aa}}\\,\\text{m/s}^2$<br>",
       "lukemat_b": "$\\text{B}$: <strong>$x_\\text{B} = {{xb}}\\,\\text{m}$</strong>, $v_\\text{B} = {{vb}}\\,\\text{m/s}$, $a_\\text{B} = {{ab}}\\,\\text{m/s}^2$<br>",
       "lukemat_ero": "$x_\\text{B} - x_\\text{A} = {{gap}}\\,\\text{m}$"
+    },
+    "fy4-3": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "pinta": "Surface",
+      "matto": "carpet",
+      "puu": "wooden floor",
+      "jaa": "ice",
+      "kitkaton": "frictionless (thought experiment)",
+      "lahtonopeus": "Initial speed $v_0 = {{v}}\\,\\text{m/s}$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "The red arrows are the forces acting on the box, the blue arrow is the velocity.",
+      "tilannekuva": "$\\text{Situation}$",
+      "voimakuvio": "$\\text{Force diagram}$",
+      "lukemat": "$F = {{F}}\\,\\text{N}$, $F_\\mu = {{Fmu}}\\,\\text{N}$, <strong>$\\Sigma F_x = {{sx}}\\,\\text{N}$</strong><br>$G = {{G}}\\,\\text{N}$, $N = {{N}}\\,\\text{N}$<br>$v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$, $t = {{t}}\\,\\text{s}$"
     }
   },
   "practice": {
