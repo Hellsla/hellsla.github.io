@@ -8,10 +8,10 @@ from herolib import grad, steel
 def hero():
     """The chapter's opening illustration: a kilogram of petrol and a kilogram of firewood on equal scales, each beside its own fire; the petrol's fire is far larger."""
     f = H.hero("fy25-hero", "Kuvitus: kaksi samanlaista vaakaa, joiden lukemat ovat samat. Vasemmalla vaa'alla bensiinikanisteri, oikealla halkoja. "
-               "Kummankin takana palaa tulisijassa sama aine: bensiinin liekki on selvästi suurempi kuin puun.")
+               "Kummankin vieressä palaa tulimaljassa sama aine: bensiinin liekki on selvästi suurempi kuin puun.")
     H.tiles(f, 440, 80, RULE_LIGHT, PAPER)
     f.rect(0, 440, 1200, 26, RULE, INK, 3); f.rect(0, 466, 1200, 134, RULE_LIGHT)
-    for x in (400, 800): f.line(x, 466, x, 600, INK, 2)
+    for x in (360, 840): f.line(x, 466, x, 600, INK, 2)
     def fire(cx, base, sc, gid):
         """A steel fire bowl on legs with a flame of size sc."""
         f.circle(cx, base - 90 * sc, 150 * sc, H.glow(f, gid + "g", HEAT_LIGHT, HEAT))
@@ -20,21 +20,21 @@ def hero():
         f.path(f"M{n(cx - 34 * sc)},{base} Q{n(cx - 46 * sc)},{n(base - 60 * sc)} {n(cx)},{n(base - 126 * sc)} Q{n(cx + 46 * sc)},{n(base - 50 * sc)} {n(cx + 34 * sc)},{base} Z", HEAT_LIGHT)
         f.path(f"M{cx - 80},{base - 6} Q{cx},{base + 40} {cx + 80},{base - 6} Z", steel(f, gid + "s"), INK, 3)
         for dx in (-50, 50): f.line(cx + dx, base + 14, cx + dx * 1.3, base + 54, INK, 4)
-    fire(300, 250, 1.0, "fy25h-f1"); fire(900, 250, 0.45, "fy25h-f2")
-    for cx in (300, 900):
+    fire(480, 386, 1.0, "fy25h-f1"); fire(1050, 386, 0.45, "fy25h-f2")
+    for cx in (210, 740):
         f.rect(cx - 160, 410, 320, 30, steel(f, f"fy25h-sc{cx}", vertical=True), INK, 3, 8)
         f.rect(cx - 180, 396, 360, 16, METAL_EDGE, INK, 2, 4)
         f.rect(cx - 44, 416, 88, 20, INK, None, 0, 4)
         for k in range(3): f.rect(cx - 36 + 25 * k, 419, 20, 14, GOOD_LIGHT, None, 0, 2)
     # petrol can: red steel with an X-pressing, a spout and a handle
-    cx = 300
+    cx = 210
     f.path(f"M{cx - 96},396 V270 L{cx - 56},232 H{cx + 96} V396 Z", grad(f, "fy25h-can", HOT_LIGHT, HOT, horizontal=True), INK, 3)
     f.rect(cx - 10, 238, 80, 22, INK, None, 0, 8)
     f.path(f"M{cx - 82},270 L{cx - 114},214 L{cx - 92},204 L{cx - 62},256", grad(f, "fy25h-spout", ALUMINIUM, METAL_EDGE), INK, 3)
     f.path(f"M{cx - 66},300 L{cx + 66},380 M{cx + 66},300 L{cx - 66},380", stroke=HOT_LIGHT, w=10, extra='stroke-linecap="round"')
     f.path(f"M{cx - 70},288 H{cx + 70} V388 H{cx - 70} Z", stroke=INK, w=2, extra='fill="none" stroke-opacity="0.4"')
     # firewood: split birch logs with bark and end grain
-    cx = 900
+    cx = 740
     for k, (dx, dy) in enumerate(((-72, 0), (0, 0), (72, 0), (-36, -60), (36, -60), (0, -120))):
         y = 366 + dy
         f.add(f'<ellipse cx="{cx + dx - 74}" cy="{y}" rx="16" ry="30" fill="{SAND_DARK}" stroke="{INK}" stroke-width="2"/>')
