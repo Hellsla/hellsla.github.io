@@ -753,6 +753,12 @@
       "Vuorovaikutusosaaminen"
     ],
     "initialized": "2026-10-26",
+    "scope_notes": [
+      "FY4 continues FY1 (teacher 2026-10-29): build on FY1's measurement, graphs and the linear model (luku *Tasainen liike – nopeus, paikka ja kuvaajat*) without re-teaching them; FY4.1 (position, displacement, signed velocity) is the bridge and stays as it is.",
+      "Distinguish scalar and vector quantities where it matters (displacement, velocity, force), magnitudes plain and vectors bold in LaTeX.",
+      "Introduce acceleration from observations and graphs before the formula; develop Newton's laws one at a time, each from physical situations and, where possible, measured or simulated data, before equations.",
+      "Keep independent reasoning: complete model solutions, explain tasks with guided self-assessment, and a Sovella itsenäisesti task count that follows the module's goals."
+    ],
     "lessons": [
       {
         "id": "fy4-1",

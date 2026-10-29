@@ -6,7 +6,7 @@ effort: medium
 ---
 Work on the Sovella itsenäisesti tasks of $ARGUMENTS. Work in `fysiikkalabra/` (`cd fysiikkalabra` first). The tasks are a part of their own (README "Sovella itsenäisesti", NOTES.md §9, teacher 2026-10-28): `content/fi/<COURSE>/sovella/` (tasks.json, solutions.md, review/) and `lessons/<COURSE>/sovella/` (answers.py, figures.py). This run never touches lesson files or their reviews. You coordinate; agents work from packets, and you read only the scripts' output and the agents' reports.
 
-**When.** Once per course, after its lessons, as part of producing the course: 2–4 tasks (FY1 about 2, later courses about 3), each 12–20 points, plus at most one `own` rubric for the course's own investigation. Fewer, better tasks; never relabel chapter exercises. **Token economy**: no lesson texts in any packet; shared criteria by key; translate only new or changed text.
+**When.** Once per course, after its lessons, as part of producing the course: as many tasks as the module's goals and extent call for (teacher 2026-10-29: evaluate first; FY1 has 2, FY2 1, FY3 3; never three by default), each 12–20 points, plus at most one `own` rubric for the course's own investigation. Fewer, better tasks; never relabel chapter exercises. **Token economy**: no lesson texts in any packet; shared criteria by key; translate only new or changed text.
 
 **Routing** as in `/lesson`: developer Sonnet medium (Opus medium for a demanding physics model or after two failed checks), science reviewer Opus medium, pedagogy reviewer Sonnet medium. Prompt: `Read <packet path> and follow it. Course: <COURSE>. Task: <the teacher's words>. Round: <n>.`
 
