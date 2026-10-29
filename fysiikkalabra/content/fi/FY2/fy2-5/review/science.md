@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ae55f09d91206de5
+CONTENT-HASH: 7389c7df46a53f06
 
 ## Blocking
 
 ## Polish
-- content/fi/FY2/fy2-5/inquiry.json:60 and :64 — "Mittaukset kumoavat tämän" / "Mittausten mukaan" refer to the rounded table values the student has not measured; write "Taulukkoarvot" (guardrail: say whether a number is measured, tabulated or calculated).
-- content/fi/FY2/fy2-5/inquiry.json:96 — the "ei voi verrata" feedback compares the label's 2200 kJ and the wood's combustion 1500 kJ "suoraan"; add "suuruusluokaltaan" or the same caveat the correct option's feedback gives (label = usable energy, H = combustion energy), so the item stays consistent with the guardrail sentence in the theory.
-- content/fi/FY2/fy2-5/lesson.md:6 — "varastoituna aineen atomien ja molekyylien väliseen rakenteeseen" is vague; "atomien välisiin sidoksiin, jotka palaessa järjestyvät uudelleen" names the mechanism (C, not a finding).
+- lesson.md Kaava table and inquiry.json taulukko — polttopuu 15 MJ/kg is the top of the cited 13–15 GJ/t range (midpoint 14); "rounded" is stated, so acceptable; consider "noin 14–15" or a note. C-level.
+- inquiry.json ennuste-1 feedback — "Mittaukset kumoavat tämän" speaks of table values (rounded reference data), not the lesson's own measurements; "Taulukon arvot" would be more exact.
 
 ## Checked
-- E = Hm with H as energy released per kilogram, mass in kg stated; proportionality argued from the table; "lämpöarvo ei ole lämpötila", "palaessa ei synny energiaa" and released ≠ useful energy (hyötysuhde) stated consistently in theory, misconceptions, summary and checks.
-- Nuclear fuel separated from chemical fuel; CO₂ attributed to carbon-containing fuels (guardrail).
-- Food and fuel guardrail sentence used verbatim in theory, the ruoka item, the conclusion, the summary and the exit ticket; the reason (not all food is absorbed) is right.
-- Table values checked against their cited sources (IPCC 2006: natural gas 48,0, coal 25,8, diesel 43,0, petrol 44,3; ethanol-blend petrol ≈ 43; Tilastokeskus wood 13–15 GJ/t, milled peat 9–11 GJ/t); net (tehollinen) heating value correctly defined; dry wood ≈ 19 MJ/kg and the moisture mechanism right.
-- Bar chart to scale at 6,8 px per MJ/kg (48 → 326,5 px … 10 → 68 px); food table (Fineli order of magnitude) right.
-- Worked example 15 · 6,0 = 90 MJ = 25 kWh, symbolic first, rounding and check right, flue-gas loss noted.
-- Every inquiry and exit-ticket number recomputed (2,9; 1500 vs 2200 kJ; 22 MJ/kg with mistakes 2200 and 0,022; 3,75 vs 3750 MJ; 6,348 → 6,3 MJ with mistakes 10,6, 4,2 and 6350; 11,94 → 12 kWh with 43 and 155; 170 vs 430 MJ; 75 MJ; 15 MJ/kg).
-- Each choice item has exactly one correct option, and every distractor's feedback names the actual error.
+- Recomputed all lesson and inquiry numbers in one script: 43:15 = 2,87; 90 MJ = 25 kWh; 129 MJ; 22 / 10 / 30 / 3 MJ/kg for the food table; wood table 15/30/60/120; check 2 gives 60 vs 43 MJ; check 5 gives 170 / 430 MJ, ratio 2,5; siirto 10,58 → 6,348 MJ (mistake values 10,6, 4,2, 6350 all match); 43 : 3,6 = 11,94 kWh.
+- Heating values agree with the cited sources (IPCC 2006 gas 48,0, coal 25,8, diesel 43,0; Tilastokeskus wood and peat); effective vs gross value stated correctly; dry wood about 19 MJ/kg is right.
+- Bar-chart geometry is to scale (6,8 px per MJ/kg, grid lines at 10–50); the aria-label "five times" (48 : 10) is fair.
+- Food versus fuel wording matches the guardrail sentence in theory, summary, options, feedback and model answers.
+- Exactly one correct option in every choice item; every distractor is wrong and its feedback is correct.
+- Scope: no work, Q = cm ΔT or chain efficiencies; the efficiency use is single-device, within FY2.
+- Nuclear "fuel" caveat and CO2 note (carbon-containing fuels only) are right.

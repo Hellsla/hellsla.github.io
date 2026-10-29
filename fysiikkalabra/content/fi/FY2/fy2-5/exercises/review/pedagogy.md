@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e9677835c145266c
+CONTENT-HASH: 4f4044aba1139dc3
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md fy2-5-L1-05 Periaate — the sentence "Energiasisältö ei ole lämpöarvo, vaikka sen yksikkö on sama" is a concept note on a level-1 task; correct, but it may confuse before the student has seen the contrast. Keep, or trim to "Se ei ole lämpöarvo" as in L2-01.
-- Earlier polish (L3-02 "perustele laskusi" checks nothing; L1-01...05 same structure) is untouched by this diff and still open.
+- solutions.md fy2-5-L1-02 Kuvaajan lukeminen — "pylvään pää on myös vähän ennen ruudukon viivaa 50" is a second reading cue that duplicates the printed value 48; fine, or trim to the printed label.
+- exercises.json fy2-5-L1-02 — after the change the task only transcribes 48 from a figure that repeats the lesson table; acceptable at level 1, but the figure is needed (the text no longer gives H).
+- Earlier open polish (L3-02 "perustele laskusi", L1-05 concept note) is untouched by this diff.
 
 ## Checked
-- Delta renames food data from energiapitoisuus/H to energiasisältö/e in L1-05, L2-01 and L3-02 (texts, Annettu, Periaate, Kaava, Sijoitus); consistent with the lesson's e and E = em.
-- Grep confirms no remaining "energiapitoisuus" or food H in these exercises; answers (0,96 MJ, 480 kJ, 3,6) unchanged.
-- The new principle lines say why the food calculation is analogous but not the same quantity; Finnish correct.
+- Delta: L1-02 now shows figure fy2-5/lampoarvot and drops H from the text; the figure prints 48 at the maakaasu bar (bar length matches 48 on the gridlines).
+- Figure description gives maakaasu 48 and all other values to a reader who cannot see it, and does not give the answer 96 MJ.
+- Solution explains how to read the value and the unit MJ/kg before applying E = Hm; the unit note now explains why the result is in MJ.
+- answers.py comment and answer 96 unchanged and consistent; Finnish correct.

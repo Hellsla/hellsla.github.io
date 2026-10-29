@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e13ddfe39bad5ca6
+CONTENT-HASH: 52d1d3417776fda8
 
 ## Blocking
 
 ## Polish
-- content/fi/FY2/fy2-4/exercises/solutions.md:101 — L3-02 "Vastaus: 2083 s eli noin 2,1·10³ s, kaksi merkitsevää numeroa": lead with the rounded value (2,1·10³ s, about 35 min) so the four-figure number is not read as the answer's precision.
+- solutions.md L2-03 — Vastaus gives 0,23 kWh while answers.py and exercises.json hold 0,228; inside the 2 % tolerance, but state "0,228 kWh, eli 0,23 kWh" so they agree.
+- exercises.json L1-02 — same data as the lesson's Etsi virhe item; physics right.
 
 ## Checked
-- All 12 answers recomputed independently in one script and compared with answers.py and exercises.json: 85 %, 30 %, 3,0 W, 2000 J, 4,0 kJ, 96 kJ, 54 W, 0,228 → 0,23 kWh, 45 kW, 1,5, 2083 s, 180 J; all agree, and each rounded answer lies inside its 2 % tolerance.
-- Every task uses one device's efficiency η = E_a/E_o = P_a/P_o with E_o = E_a + E_h, inside FY2 scope (no chain products, no heat-engine cycle).
-- Steady power is stated or implied wherever P_a/P_o or E = P t is used (L1-02, L2-01, L2-03, L3-02).
-- L2-02 reasoning (equal light power → equal P_a) is right, and its check (10 W LED ≈ 60 W filament lamp) is realistic.
-- L3-01 handles mixed J and kJ correctly (each device's ratio in its own unit); L3-03 reads η from arrow thicknesses as the lesson teaches.
-- Data realistic (motor 85–90 %, LED 30 %, filament 5 %, petrol 25 %, panel 20 %); solutions complete in seven parts, symbolic first, conversions explicit, rounding justified, checks real.
-- Notation (E_a, E_o, E_h, P_a, P_o, P_h, η) the same as in the lesson.
+- All 12 answers recomputed in one script with own formulas: 85, 30, 3,0, 2000, 4,0, 96, 54, 0,228, 45, 1,5, 2083,3, 180: all agree with answers.py and exercises.json.
+- Units and conversions (kW, min, h, kWh, MJ) right; units and tolerances fit the 2-s.f. data.
+- Each solution is symbolic first, states the principle, and has a real reasonableness check.
+- L2-04 and L3-02 use P_o = P_a/eta and E_a = P_a t correctly (steady power stated by device running).
+- L3-03 figure: grid 20 px, input 160 px = 8 squares, useful 2, loss 6, aligned to the grid; 180 J follows; figure gives only E_o, no answer disclosed.
+- Notation matches the lesson (E_o, E_a, E_h, P_o, P_a, P_h, eta); no FY3 content.
