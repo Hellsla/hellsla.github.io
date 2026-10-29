@@ -45,6 +45,8 @@ def check(goals, lang):
             elif not re.fullmatch(r"[a-zåäö-]+m[aä]{2}n", first.lower()): errs.append(f"learn[{i}]: the first word \"{first}\" is no -maan/-mään verb; \"Tällä tunnilla opit\" continues with one (\"laskemaan …\")")
             else:
                 if FI_FINITE.search(head): warns.append(f"learn[{i}]: a finite verb (\"{FI_FINITE.search(head).group(0)}\") inside the goal; keep the skills parallel (\"laskemaan … ja selittämään …\")")
+                later = s[len(head):]
+                if re.search(r"(?:^|[.!?]\s+)(?:Opit|Osaat|Sinä)\b", later): warns.append(f"learn[{i}]: a later sentence starts \"Opit …\"/\"Osaat …\" and repeats the heading; join the skills in one clause (\"… ja selittämään …\")")
                 if FI_FIRST_INF.search(head): warns.append(f"learn[{i}]: \"{FI_FIRST_INF.search(head).group(0)}\" breaks the parallel form; write -maan/-mään (\"… ja selittämään …\")")
         elif lang == "en":
             if EN_BAD_START.match(s): errs.append(f"learn[{i}]: \"{first} …\" does not follow \"In this lesson, you will learn to\"; start with the verb (\"calculate …\", \"explain …\")")

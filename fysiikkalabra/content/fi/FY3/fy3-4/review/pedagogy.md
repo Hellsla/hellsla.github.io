@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 05b9db87c0c765b3
+CONTENT-HASH: d194591925297ae9
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 05b9db87c0c765b3
 - none
 
 ## Checked
-batch delta review: the packet's diff is empty (0 changed wording lines, hash equal to the passed version). Judged the simulation LaTeX pass from the 390 px simulation capture: canvas labels and readouts are KaTeX in one typeface, legible at 390 px, the lead is short, Käyttöohje / Mallin oletukset / Laskennan selitys boxes are closed and hold the rest, controls are not hidden, colour carries meaning and is backed by labels. Law name, Finnish and figure captures unchanged since the earlier PASS.
+batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.

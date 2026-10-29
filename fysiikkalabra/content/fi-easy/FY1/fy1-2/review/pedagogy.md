@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6ab117fbca2eb636
+CONTENT-HASH: ece440276d1b99d3
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- inquiry.json activities[6].text — dense Finnish intro left as is → split into short sentences ("neljä päivää, ei mittauksia" written out)
-- inquiry.json activities[12].choices[1].feedback — participle "siirryttäessä" → "Kun siirryt pienempään yksikköön…"
-- inquiry.json activities[14].solution — Periaate, Vastaus, Järkevyys split into short sentences
-- inquiry.json activities[17].solution — Periaate, Järkevyys split into short sentences
 
 ## Polish
-- Many short prompts/choices are identical to Finnish; they are already plain.
+- None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Selkeä suomi quality of lesson.md, inquiry prompts/feedback/solutions, exit ticket and figure descriptions; no steps, hints or feedback dropped, same cognitive demand, correct choice still unambiguous.
-- Update 2026-10-28: reviewed the newly translated fields intro, source_note, names, word units (pcs, million km) and string answers; button names in *asterisks* match the sim labels and lang exp_record; check_i18n shows no fy1-2 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 item, renumbered titles, exit ticket trimmed to two questions), figures.json (ruler-read description) and prefix sentence.
+batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.

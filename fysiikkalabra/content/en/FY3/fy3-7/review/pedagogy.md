@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b51385f43d5981a8
-
+CONTENT-HASH: 9f0770e497b50f9b
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- (none needed: translation matches the Finnish; no blocking issues found)
-
+(none)
 ## Polish
-- none
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, figures.json (each value translates its own key). Pedagogy: naturalness and consistent terms (terms.md, lang labels, **Given:** … step labels); question/option/feedback correspondence; 
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (incl. the new check-c2 item, wording of the particle-model explanations, math-wrapped units), exit-ticket.json (now two questions), figures.json (new melting-curve text).
+batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.

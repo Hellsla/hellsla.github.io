@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b5693f207e2ab3f8
+CONTENT-HASH: 9d3ad72f000cfde4
 
 ## Blocking
 - none
 
 ## Polish
-- Pressure readout "p ≈ 0 (suhteellinen ...)" at start may puzzle a student before collisions are counted; one clause saying the value settles after a moment would help.
-- Thermometer labels (100 K, 600 K) sit at the 10 px floor.
+- none
 
 ## Checked
-batch delta review: the packet's diff is empty (0 changed wording lines, hash equal to the passed version). Judged the simulation LaTeX pass from the 390 px simulation capture: canvas labels and readouts are KaTeX in one typeface, legible at 390 px, the lead is short, Käyttöohje / Mallin oletukset / Laskennan selitys boxes are closed and hold the rest, controls are not hidden, colour carries meaning and is backed by labels. Law name, Finnish and figure captures unchanged since the earlier PASS.
+batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.

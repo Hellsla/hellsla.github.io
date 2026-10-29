@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 60484f7ab437d787
+CONTENT-HASH: c2f482a04c915d4b
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- (none needed)
 
 ## Polish
-- inquiry activity 16 solution: "syrjäyttämä ulkoilma" is a rare word; could be explained (ilma, jonka pallo syrjäyttää).
+- A goal keeps a short second sentence of explanation after the -maan/-mään clause; it reads acceptably in Selkeä suomi, but folding it into the clause would be tidier.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, feedback, hints, solutions, experiment texts and names, source_note), exit-ticket.json, meta.json and figures.json (each value translates its own key) compared with the reviewed Finnish; sim labels checked with i18n.py resolve (Reset measurement, Speed, Number of particles, Temperature, Volume); sentences short, physics terms kept, steps/hints/feedback kept, long blocks genuinely simplified (not identical to Finnish).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson text, inquiry (prior, units as math, simulation-pressure wording, new check-c2 item, renumbered check items, one-question exit ticket), exit ticket and the new figure description against the new Finnish.
+batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.

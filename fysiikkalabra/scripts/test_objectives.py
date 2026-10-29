@@ -42,6 +42,7 @@ for lang, goals in BAD.items():
 
 SUSPECT = {   # broken parallel form: a warning for a person to look at
     "fi": ["laskemaan tehon ja selittää, miksi lasku riippuu ajasta.", "laskemaan tehon ja osaat selittää sen."],
+    "fi-easy": ["vertailemaan polttoaineita energiasisällön perusteella. Opit myös selittämään, miten ruoka eroaa."],   # caught by the 2026-10-29 review
     "en": ["calculate power and can explain why.", "calculates the power."],
 }
 for lang, goals in SUSPECT.items():

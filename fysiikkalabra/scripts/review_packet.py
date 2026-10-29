@@ -1,7 +1,7 @@
 """Role-specific packet, so an agent starts from what its role needs and nothing else.
 
   python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix] [--exercises]
-  python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy
+  python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy [--lang en]
 
 Writes review/packet-<role>.md (with --exercises exercises/review/packet-<role>.md) and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
 is one line naming the file ("Read content/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full.").
@@ -359,25 +359,35 @@ def batch_diff(diff, role):
     return "\n".join(keep).strip() + (f"\n# ({svg // 2} figure line(s) restyled, not shown: see the captures)" if svg else "")
 
 
-def batch(ids, role):
+def batch(ids, role, lang=courses.SOURCE_LANG):
     """One delta packet for many lessons (module docstring)."""
     out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
            f"(in your context; if it is not, read it), in particular \"Lesson page\" (2026-10-26).\n")
     if role == "science": out += guardrails()
     if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if "Figures." in l or "Textbook illustrations" in l or l.startswith("  ")) + "\n"
+    lang_arg = "" if lang == courses.SOURCE_LANG else f" --lang {lang}"
+    folders = {lid: courses.find_lesson(lid, lang) for lid in ids}
+    cats = {c for lid in ids for c in scope(folders[lid])[role]["categories"]}
+    goals_only = cats == {"objective-form"}
+    heading = ("\"In this lesson, you will learn to\" as natural English (a bare verb: \"calculate …\")" if lang == "en" else
+               "\"Tällä tunnilla opit\" (a lowercase -maan/-mään verb, parallel forms: \"laskemaan … ja selittämään …\")"
+               + ("; Selkeä suomi: short and plain, the key terms kept" if lang == "fi-easy" else ""))
+    judge = (f"only the learning goals (`learn`) changed: each must complete the page's heading {heading}, and say the same as before: "
+             "the same skill, the same demand, the same physics (NOTES.md §8 \"The opening\")." if goals_only else
+             "is every claim the diff changes or adds right by the physics guardrails below, worded as the rest of the lesson and the chapters it builds on say it, and does every changed choice still have exactly one correct option with feedback that says why the others are wrong?"
+             if role == "science" else
+             "is the law's name clear to a student; does the lead of the simulation say what to do and do its boxes hold the rest under fitting names; "
+             "do the recoloured figures read well (captures listed per lesson), with colour that carries the physics, never alone, and labels legible?")
     out += ("\n## What you judge\nEach lesson below passed your review earlier; only its diff changed. Judge the diff in its context (the files are on disk "
-            "if you need more): " + ("is every claim the diff changes or adds right by the physics guardrails below, worded as the rest of the lesson and the chapters it builds on say it, and does every changed choice still have exactly one correct option with feedback that says why the others are wrong?"
-                                     if role == "science" else
-                                     "is the law's name clear to a student; does the lead of the simulation say what to do and do its boxes hold the rest under fitting names; "
-                                     "do the recoloured figures read well (captures listed per lesson), with colour that carries the physics, never alone, and labels legible?")
+            "if you need more): " + judge
             + " If one lesson's change cannot be judged this way, write `ESCALATE: full review needed` as line 3 of that lesson's report (verdict FAIL) and go on.\n"
             "\n## Reports: one per lesson\nFor every lesson below write `<its folder>/review/" + role + ".md`, under 250 words: line 1 `VERDICT: PASS` or "
-            "`VERDICT: FAIL`, line 2 `CONTENT-HASH: <python3 scripts/reviews.py hash <id>>` (run it at the start and the end for every lesson: if it changed, "
+            "`VERDICT: FAIL`, line 2 `CONTENT-HASH: <python3 scripts/reviews.py hash <id>" + lang_arg + ">` (run it at the start and the end for every lesson: if it changed, "
             "that lesson was edited, redo it), then `## Blocking` (FAIL if and only if non-empty), `## Polish` (at most three), `## Checked` (one line: \"batch delta review: ...\"). "
             "Never edit a lesson file.\n")
     skipped = []
     for lid in ids:
-        folder = find_lesson(lid); sc = scope(folder)[role]
+        folder = folders[lid]; sc = scope(folder)[role]
         if sc["mode"] != "delta": skipped.append(f"{lid} ({sc['mode']}: {sc['why']})"); continue
         meta = json.loads((folder / "meta.json").read_text())
         out += f"\n## {lid} — {meta['title']}\nFolder `{folder.relative_to(ROOT)}`. Changed: {sc['why']} (categories: {', '.join(sc['categories'])}).\n"
@@ -386,12 +396,13 @@ def batch(ids, role):
             out += "Captures (paths relative to the lesson folder):\n" + "\n".join(rows) + "\n"
         out += f"```diff\n{batch_diff(sc['diff'], role)}\n```\n"
     if skipped: out += "\n## Not in this batch\n" + "\n".join(f"- {x}" for x in skipped) + "\n"
-    f = ROOT / "review-batch" / f"packet-{role}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
+    f = ROOT / "review-batch" / f"packet-{role}{'' if lang == courses.SOURCE_LANG else '-' + lang}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {len(ids) - len(skipped)} lessons, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens" + (f"; not in it: {'; '.join(skipped)}" if skipped else ""))
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    if len(a) == 4 and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"): batch(a[1].split(","), a[3]); sys.exit(0)
+    if len(a) in (4, 6) and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"):
+        batch(a[1].split(","), a[3], *(a[5:6] if a[4:5] == ["--lang"] else [])); sys.exit(0)
     if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "developer"): sys.exit(__doc__)
     (exercise_packet if "--exercises" in a else packet)(find_lesson(a[0]), a[2], fix="--fix" in a)
