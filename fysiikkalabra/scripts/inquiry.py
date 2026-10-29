@@ -243,19 +243,26 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
-GREEK = {"Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha "}
+GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
-SYMBOL = re.compile(r"[A-Za-zΔρθηγα][A-Za-zΔρθηγα₀-₉_/]*")
+SYMBOL = re.compile(r"[A-Za-zΔρθηγαΣ][A-Za-zΔρθηγαΣ₀-₉_/]*(?<=[A-Za-z₀-₉])(?:_[0-9]+)?|[A-Za-zΔΣ][A-Za-zΔρθηγαΣ₀-₉_/]*_[0-9]+")
+UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
+
+
+def unit_tex(u):
+    """m/s² -> \\text{m/s}^2, % -> \\%: a unit as maths (teacher 2026-10-28, "kaikki LaTeXilla")."""
+    if u == "%": return "\\%"
+    return "\\text{" + u.rstrip("²³") + "}" + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
 
 
 def is_symbol(tok):
     """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
-    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγα₀-₉_/]", tok)))
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγα₀-₉_/Σ]", tok)))
 
 
 def sym_tex(tok):
     """ΔL/L₀ -> \\Delta L/L_0, p_ref -> p_\\text{ref}, x_B -> x_\\text{B}."""
-    out = re.sub(r"_(\w+)", lambda m: r"_\text{" + m.group(1) + "}", tok)
+    out = re.sub(r"_(\w+)", lambda m: "_" + (m.group(1) if re.fullmatch(r"[0-9]+|[a-z]", m.group(1)) else r"\text{" + m.group(1) + "}"), tok)   # v_0, F_x italic; x_B, p_ref upright
     out = re.sub(r"[₀-₉]+", lambda m: "_" + "".join(SUBS[c] for c in m.group(0)) if len(m.group(0)) == 1 else "_{" + "".join(SUBS[c] for c in m.group(0)) + "}", out)
     for k, v in GREEK.items(): out = out.replace(k, v)
     return out.strip()
@@ -265,7 +272,10 @@ def tex_name(s):
     """An experiment's quantity name or table label on the page, with its symbol as maths (NOTES 1): "massa m" ->
     "massa $m$", "θ" -> "$\\theta$", "ΔT (K)" -> "$\\Delta T$ (K)", "p mitattu" -> "$p$ mitattu". Plain words stay."""
     toks = str(s).split(" ")
-    for i in ([0, len(toks) - 1] if len(toks) > 1 else [0]):
+    unit = len(toks) > 1 and re.fullmatch(r"\((" + UNIT.pattern + r")\)", toks[-1])
+    if unit: toks[-1] = "($" + unit_tex(unit.group(1)) + "$)"   # "(m/s²)" -> "($\\text{m/s}^2$)"
+    last = len(toks) - (2 if unit else 1)
+    for i in sorted({0, last}):
         if is_symbol(toks[i]): toks[i] = "$" + sym_tex(toks[i]) + "$"
     return esc(" ".join(toks))
 
@@ -392,10 +402,10 @@ def experiment_html(a, md, lid):
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
         u = units.get(k, "")
-        if isinstance(v, (int, float)) and re.fullmatch(r"[A-Za-z/%]*", u):
+        if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
             num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
             if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000
-            unit = ("\\," + ("\\%" if u == "%" else "\\text{" + u + "}")) if u else ""
+            unit = ("\\," + unit_tex(u)) if u else ""
             return f'<span class="nobr">{tn(k)} = ${esc(num)}{unit}$</span>'
         return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
