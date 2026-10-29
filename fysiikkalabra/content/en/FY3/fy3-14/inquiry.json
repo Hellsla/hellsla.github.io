@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "A change of state enters the calculation of thermal equilibrium: the latent heat of fusion of ice decides whether all the ice melts, so before calculating the temperature, the quantity of heat given out by the water is compared with the quantity of heat the ice needs.",
   "learn": [
-    "You can explain why ice cools a drink so effectively when it melts.",
-    "You can work out by comparing quantities of heat whether all the ice melts.",
-    "You can calculate the temperature of thermal equilibrium when part of the substance melts."
+    "explain why ice cools a drink so effectively when it melts.",
+    "work out by comparing quantities of heat whether all the ice melts.",
+    "calculate the temperature of thermal equilibrium when part of the substance melts."
   ],
   "prior": [
     "The quantity of heat needed to change a temperature is $Q = cm\\Delta T$ (chapter Heating and cooling of a substance: Q = cmΔT)",

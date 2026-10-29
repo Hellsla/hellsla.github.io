@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "A change in temperature also changes the size of an object. In this lesson you find out by experiment what the change in the length of a rod depends on, and the particle model explains why a solid expands when it is heated.",
   "learn": [
-    "You can explain with the particle model why a solid expands when it is heated.",
-    "You investigate by experiment what the change in the length of a rod depends on.",
-    "You can calculate the change in the length and volume of an object when its temperature changes."
+    "explain with the particle model why a solid expands when it is heated.",
+    "investigate by experiment what the change in the length of a rod depends on.",
+    "calculate the change in the length and volume of an object when its temperature changes."
   ],
   "prior": [
     "Temperature describes how strongly the particles move in random thermal motion; in a gas it tells you the average kinetic energy of the particles (chapter *Thermodynamic system, state variables and temperature*)",

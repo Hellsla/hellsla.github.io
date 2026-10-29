@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Falling is the first motion in which the speed itself changes: the $(t, v)$ graph of free fall is a straight line through the origin whose slope is the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$, and experiments show that in a vacuum mass does not affect falling but in air air resistance does.",
   "learn": [
-    "You can calculate the speed of a freely falling object with the formula $v = gt$.",
-    "You can read the acceleration of free fall from the slope of the $(t, v)$ graph.",
-    "You can conclude from experiments when mass affects falling and when it does not."
+    "calculate the speed of a freely falling object with the formula $v = gt$.",
+    "read the acceleration of free fall from the slope of the $(t, v)$ graph.",
+    "conclude from experiments when mass affects falling and when it does not."
   ],
   "prior": [
     "In uniform motion the distance is the product of speed and time, $s = vt$ (chapter *Uniform motion: s = vt*)",

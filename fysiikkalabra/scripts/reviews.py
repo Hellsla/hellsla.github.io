@@ -57,6 +57,7 @@ RULES = {                       # category: (science, pedagogy)
     "style":          ("none",  "delta"),   # colours, strokes, fonts, classes in a figure; a simulation's sim.css
     "label-position": ("none",  "delta"),   # a figure label moved by at most 40 units, its text unchanged
     "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
+    "objective-form": ("none",  "delta"),   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
     "numbers":        ("full",  "delta"),   # a changed line carries a number, formula, symbol or unit
@@ -73,7 +74,8 @@ RULES = {                       # category: (science, pedagogy)
 }
 WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
-       "relocated": "the sim's text moved word for word into its lead and boxes", "section-name": "a section named after its law",
+       "relocated": "the sim's text moved word for word into its lead and boxes",
+       "objective-form": "learning goals rephrased to complete their heading, symbols and numbers unchanged", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
        "structure": "headings, stages, display blocks or inquiry structure changed", "objectives": "meta goals or prerequisites changed",
@@ -445,6 +447,24 @@ def relocated(old, new):
     return json.dumps(o, ensure_ascii=False) if moved else None
 
 
+def _math_and_numbers(s):
+    """The formulas ($…$) and the numbers of a text, in order: what a grammatical rephrasing must keep."""
+    return re.findall(r"\$[^$]*\$", s), re.findall(r"\d+(?:[.,]\d+)?", re.sub(r"\$[^$]*\$", " ", s))
+
+
+def objective_form(old, new):
+    """The old inquiry.json with `learn` replaced by the new one when only the goals' wording changed (the same
+    number of goals, each keeping its formulas and numbers: "Osaat laskea … $P = E : t$" → "laskemaan … $P = E : t$");
+    None otherwise. The grammar itself is checked by scripts/objectives.py, the meaning by the pedagogy reviewer."""
+    try: o, n = json.loads(old), json.loads(new)
+    except (json.JSONDecodeError, TypeError): return None
+    a, b = o.get("learn"), n.get("learn")
+    if not (isinstance(a, list) and isinstance(b, list)) or a == b or len(a) != len(b): return None
+    if not all(isinstance(x, str) and isinstance(y, str) and _math_and_numbers(x) == _math_and_numbers(y) for x, y in zip(a, b)): return None
+    o["learn"] = b
+    return json.dumps(o, ensure_ascii=False)
+
+
 def test_change(rel, base):
     """'tests' when every assertion of the base version is still there, as strict; 'tests-weakened' otherwise."""
     try:
@@ -532,10 +552,15 @@ def changes(folder, base, part="lesson", split=False):
             if HERO.findall(a or "") != HERO.findall(b or ""): cats.add("illustration")
             if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
             n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
+        goals = objective_form(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
+        if goals is not None:                          # the goals rephrased; whatever else changed is classified as usual
+            cats.add("objective-form"); ra = goals; a = _view(ra, rel, False)
+            if a == b: n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         moved = relocated(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
         if moved is not None:                          # the moved text is "relocated"; whatever else changed is classified as usual
             cats.add("relocated"); a2 = _view(moved, rel, False)
             cats |= classify(rel, list(difflib.unified_diff(a2.splitlines(), b.splitlines(), lineterm="", n=2)), folder.name) if a2 != b else set()
+        elif goals is not None: cats |= classify(rel, list(difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=2)), folder.name)
         else: cats |= classify(rel, lines, folder.name)
         n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---")))
         diff += lines

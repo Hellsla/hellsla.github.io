@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Putoamisliike on ensimmäinen liike, jossa nopeus itse muuttuu. Vapaan pudotuksen $(t, v)$-kuvaaja on origon kautta kulkeva suora. Suoran kulmakerroin on putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$. Kokeet osoittavat, ettei massa vaikuta putoamiseen tyhjiössä. Ilmassa ilmanvastus vaikuttaa putoamiseen.",
   "learn": [
-    "Osaat laskea vapaasti putoavan kappaleen nopeuden kaavalla $v = gt$.",
-    "Osaat lukea putoamiskiihtyvyyden $(t, v)$-kuvaajan kulmakertoimesta.",
-    "Osaat päätellä kokeista, milloin massa vaikuttaa putoamiseen ja milloin ei."
+    "laskemaan vapaasti putoavan kappaleen nopeuden kaavalla $v = gt$.",
+    "lukemaan putoamiskiihtyvyyden $(t, v)$-kuvaajan kulmakertoimesta.",
+    "päättelemään kokeista, milloin massa vaikuttaa putoamiseen ja milloin ei."
   ],
   "prior": [
     "Tasaisessa liikkeessä matka on nopeuden ja ajan tulo, $s = vt$ (luku *Tasainen liike: s = vt*)",

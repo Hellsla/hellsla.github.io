@@ -13,6 +13,7 @@ import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
 import mathlayout
+import courses, objectives
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -126,10 +127,11 @@ def validate(folder, inquiry, lesson_md):
     if not isinstance(inquiry.get("contribution"), str) or not inquiry["contribution"].strip(): E("contribution: one sentence on what this lesson adds that earlier lessons did not")
     learn = inquiry.get("learn")
     if not (isinstance(learn, list) and 2 <= len(learn) <= 3 and all(isinstance(x, str) and x.strip() for x in learn)):
-        E("learn: two or three learning goals from the student's side, shown under \"Tällä tunnilla opit\" (\"Osaat laskea …\", \"Tunnistat …\"; teacher 2026-10-27)")
+        E("learn: two or three learning goals from the student's side, each completing the heading \"Tällä tunnilla opit\" (\"laskemaan …\", \"selittämään …\"; teacher 2026-10-27, grammar 2026-10-29: scripts/objectives.py)")
     else:
         for i, x in enumerate(learn):
             if len(x.split()) > 22: E(f"learn[{i}]: {len(x.split())} words; a goal is one short line (at most about 20 words), the explanation belongs to the theory")
+        for m in objectives.check(learn, courses.lang_of(folder))[0]: E(m)
     prior = inquiry.get("prior", [])
     if not isinstance(prior, list) or not all(isinstance(x, str) and x.strip() for x in prior): E("prior: a list of short strings (what the student already knows, with the lesson it comes from)")
     acts = inquiry.get("activities")

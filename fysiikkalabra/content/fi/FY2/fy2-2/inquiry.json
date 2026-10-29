@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Energia saa yksikön joule ja etuliitteet kJ, MJ, GJ ja TJ: energian säilyminen ja muuntuminen näytetään ketjuina, joissa osa muuttuu joka vaiheessa lämpöenergiaksi, ja arjen ja yhteiskunnan energioita verrataan suuruusluokittain tikapuilla.",
   "learn": [
-    "Osaat selittää energiaketjun ja sen, mihin energia lopulta muuttuu.",
-    "Osaat ilmoittaa energian jouleina ja etuliitteillä kJ, MJ, GJ ja TJ.",
-    "Osaat vertailla arjen ja yhteiskunnan energioita suuruusluokittain."
+    "selittämään energiaketjun ja sen, mihin energia lopulta muuttuu.",
+    "ilmoittamaan energian jouleina ja etuliitteillä kJ, MJ, GJ ja TJ.",
+    "vertailemaan arjen ja yhteiskunnan energioita suuruusluokittain."
   ],
   "prior": [
     "Energia esiintyy eri muodoissa ja säilyy (luku *Energialajit ja energian säilyminen*)",

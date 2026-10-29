@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The pressure, volume and temperature of a gas are linked: in an isothermal change $pV$ stays constant (Boyle's law), inverse proportionality is verified as a straight line in the $(1/V, p)$ coordinate system, and when the amount of gas stays the same, the volume of a dilute gas at constant pressure is proportional to the temperature in kelvins, as is the pressure at constant volume (chapter *Thermodynamic system, state variables and temperature*).",
   "learn": [
-    "You can use Boyle's law: in an isothermal change the product of pressure and volume stays constant.",
-    "You can show inverse proportionality as a straight line by plotting pressure against the reciprocal of volume.",
-    "You can explain how the volume of a gas depends on the temperature in kelvins at constant pressure."
+    "use Boyle's law: in an isothermal change the product of pressure and volume stays constant.",
+    "show inverse proportionality as a straight line by plotting pressure against the reciprocal of volume.",
+    "explain how the volume of a gas depends on the temperature in kelvins at constant pressure."
   ],
   "prior": [
     "Pressure is force per unit area, $p = F/A$, and atmospheric pressure is about 101 kPa (chapter *Pressure and hydrostatic pressure*)",

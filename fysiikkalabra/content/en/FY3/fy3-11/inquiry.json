@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "When a gas expands it does work $W_\\text{g} = p\\,\\Delta V$, which shows up as an area in the $(V, p)$ graph. A piston engine that repeats its motion can turn heat into work only by giving up part of the heat to something colder. This limits the efficiency $\\eta = W/Q_1$ and makes combined heat and power production and heat pumps worthwhile.",
   "learn": [
-    "You can calculate the work done by an expanding gas and interpret it as an area in the pressure–volume graph.",
-    "You can explain why a heat engine turns heat into work only by releasing part of it to something colder.",
-    "You can calculate the efficiency of a heat engine."
+    "calculate the work done by an expanding gas and interpret it as an area in the pressure–volume graph.",
+    "explain why a heat engine turns heat into work only by releasing part of it to something colder.",
+    "calculate the efficiency of a heat engine."
   ],
   "prior": [
     "The first law $\\Delta U = Q + W$, where $W$ is the work done on the system by the surroundings, and conservation of energy (chapter *Internal energy, heat and conservation of energy*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Absolute zero is determined experimentally: the measurement data are turned into a straight line, the line is extended to zero pressure (extrapolation), and the uncertainty of the result is estimated using the steepest and the shallowest line that still fit.",
   "learn": [
-    "You can turn measurement data into a straight line and extend the line to zero pressure.",
-    "You can determine absolute zero experimentally by extrapolation.",
-    "You can estimate the uncertainty of a result using the steepest and the shallowest line that fit."
+    "turn measurement data into a straight line and extend the line to zero pressure.",
+    "determine absolute zero experimentally by extrapolation.",
+    "estimate the uncertainty of a result using the steepest and the shallowest line that fit."
   ],
   "prior": [
     "When the volume and the amount of gas stay the same, the pressure of a dilute gas is proportional to the temperature in kelvins, and absolute zero is the zero point of the kelvin scale (chapter *Thermodynamic system, state variables and temperature*)",

@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: a51c7922cd1a0cf3
-
+CONTENT-HASH: 9d48f0d378e62add
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- inquiry.json activities[13].text — "level 2 exercises solve the sent energy" → "solve for the sent energy"
-- inquiry.json activities[0].text — "The wall socket in your yard" (literal) → "The wall socket at home"
-
+(none)
 ## Polish
-- Worked-example step "Given and find." follows the Finnish non-standard label "Tunnetut ja kysytty."; left as is.
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): readability for 16–18-year-olds, terms vs terms.md (transmission loss, electricity grid, district heating, efficiency), step labels, options and feedback still match, correct choices unambiguous.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) against the new Finnish.
+batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.

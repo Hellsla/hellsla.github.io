@@ -2,9 +2,9 @@
  "version": 1,
  "contribution": "Energian siirtäminen: sähkön ja kaukolämmön kulku käyttäjille, siirtohäviö prosenttina lähtevästä energiasta, siirron hyötysuhde ja varastointi energian siirtämisenä ajassa; korkea jännite perustellaan laadullisesti ilman sähköopin kaavoja.",
  "learn": [
-  "Osaat selittää, miten sähköenergia ja lämpöenergia siirtyvät voimalaitokselta käyttäjälle.",
-  "Osaat laskea perille tulevan ja häviävän energian häviöprosentista.",
-  "Osaat perustella, miksi pitkät sähkönsiirrot tehdään korkealla jännitteellä."
+  "selittämään, miten sähköenergia ja lämpöenergia siirtyvät voimalaitokselta käyttäjälle.",
+  "laskemaan perille tulevan ja häviävän energian häviöprosentista.",
+  "perustelemaan, miksi pitkät sähkönsiirrot tehdään korkealla jännitteellä."
  ],
  "prior": [
   "Teho kertoo energian siirtymisen nopeuden: $P = \\Delta E : \\Delta t$ (luku *Teho*)",

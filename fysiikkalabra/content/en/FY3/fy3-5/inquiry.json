@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Heat and work are two ways of transferring energy into or out of a system, and their sum is the change in the internal energy of the system: $\\Delta U = Q + W$, the first law of thermodynamics. Heat is a transfer of energy; internal energy is a property of the system.",
   "learn": [
-    "You distinguish heat, work and internal energy: heat and work transfer energy, while internal energy is a property of the system.",
-    "You can apply the first law of thermodynamics."
+    "distinguish heat, work and internal energy: heat and work transfer energy, while internal energy is a property of the system.",
+    "apply the first law of thermodynamics."
   ],
   "prior": [
     "Work $W = Fs$ transfers energy, and in Joule's experiment work heated water (chapter *Work and energy*)",

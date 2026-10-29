@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "A gas is seen as a thermodynamic system whose state is described by temperature, pressure and volume. The micro model explains pressure as collisions of particles and temperature as the average kinetic energy of the particles, and this is why temperatures are compared in kelvins from absolute zero.",
   "learn": [
-    "You can describe a gas as a thermodynamic system whose state is given by temperature, pressure and volume.",
-    "You can use the micro model to explain what pressure and temperature are.",
-    "You can justify why temperatures are compared in kelvins from absolute zero."
+    "describe a gas as a thermodynamic system whose state is given by temperature, pressure and volume.",
+    "use the micro model to explain what pressure and temperature are.",
+    "justify why temperatures are compared in kelvins from absolute zero."
   ],
   "prior": [
     "Celsius scale: water freezes at $0\\,{}^\\circ\\text{C}$ and boils at $100\\,{}^\\circ\\text{C}$ at normal pressure (lower secondary school physics)",

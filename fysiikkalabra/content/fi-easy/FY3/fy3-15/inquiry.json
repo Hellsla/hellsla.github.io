@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Voimalaitos muuttaa energiaa vaihe vaiheelta. Koko ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$. Lauhdevoimalaitoksen suurin häviö on lämpö, joka siirtyy höyrykierrosta lauhduttimeen. Yhteistuotannossa tämä lämpö käytetään kaukolämpönä. Silloin kokonaishyötysuhde nousee, mutta sähköä saadaan vähemmän.",
   "learn": [
-    "Osaat laskea energiantuotannon ketjun hyötysuhteen vaiheiden hyötysuhteiden tulona.",
-    "Tunnistat lauhdevoimalaitoksen suurimman energiahäviön.",
-    "Osaat selittää, miksi yhteistuotannossa kokonaishyötysuhde nousee mutta sähköä saadaan vähemmän."
+    "laskemaan energiantuotannon ketjun hyötysuhteen vaiheiden hyötysuhteiden tulona.",
+    "tunnistamaan lauhdevoimalaitoksen suurimman energiahäviön.",
+    "selittämään, miksi yhteistuotannossa kokonaishyötysuhde nousee mutta sähköä saadaan vähemmän."
   ],
   "prior": [
     "Hyötysuhde $\\eta = W/Q_1$ ja lämpövoimakoneen energiatase $Q_1 = W + Q_2$ (luku Kaasun tekemä työ ja lämpövoimakone)",

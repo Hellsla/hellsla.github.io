@@ -507,6 +507,9 @@ def check_inquiry(L, folder):
     except ValueError as e: L.err("inquiry.json", 1, f"not valid JSON: {e}"); return
     for msg in inquiry.validate(folder, data, (folder / "lesson.md").read_text() if (folder / "lesson.md").exists() else ""):
         L.err("inquiry.json", 1, msg.split("inquiry.json: ", 1)[-1])
+    import objectives
+    for msg in objectives.check(data.get("learn") if isinstance(data, dict) else None, courses.lang_of(folder))[1]:
+        L.warn("inquiry.json", 1, msg)
     for a in data.get("activities", []) if isinstance(data, dict) else []:
         if isinstance(a, dict) and a.get("type") == "sim" and len((a.get("text") or "").split()) > inquiry.LEAD_WORDS:
             L.page("inquiry.json", 1, f"the sim activity's text is {len(a['text'].split())} words; keep a lead of at most {inquiry.LEAD_WORDS} words and move the rest to howto, model and calc (Käyttöohje, Mallin oletukset, Laskennan selitys)")

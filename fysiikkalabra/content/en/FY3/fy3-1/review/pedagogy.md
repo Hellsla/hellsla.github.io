@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 03d80ed870e7662d
-
+CONTENT-HASH: b797c64f66fbfada
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- inquiry.json activities[17].prompt — same awkward astronaut sentence as the lesson hook → 'weighs only about one sixth as much on the Moon as on Earth, even though no part of the astronaut has gone missing'
-
+(none)
 ## Polish
-- 'he' for the astronaut remains in activities[17].model and exercise L2-03; acceptable, could be made neutral.
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): English reads naturally for 16–18-year-olds; terms match terms.md (force meter, extension, acceleration of free fall, celestial body, weight/mass); stage and step labels match lang/en.json; experiment intros name the right controls (mass m, celestial body); correct choices unambiguous and each feedback matches its option.
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked unit-in-math wrapping, the new check-c2 item, trimmed exit ticket, new figure description, lesson text.
+batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.

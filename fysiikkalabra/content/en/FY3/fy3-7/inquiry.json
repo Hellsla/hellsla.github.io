@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Heat does not always raise the temperature: when a pure substance changes state at constant pressure, the energy transferred changes the interactions between the particles at a constant temperature, and the quantity of heat needed is $Q = sm$ or $Q = rm$.",
   "learn": [
-    "You can explain where the energy goes when a pure substance changes state at constant pressure and temperature.",
-    "You can calculate the quantity of heat needed for melting and vaporisation."
+    "explain where the energy goes when a pure substance changes state at constant pressure and temperature.",
+    "calculate the quantity of heat needed for melting and vaporisation."
   ],
   "prior": [
     "The quantity of heat $Q = cm\\Delta T$ and the specific heat capacity of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (chapter *Heating and cooling of a substance*)",

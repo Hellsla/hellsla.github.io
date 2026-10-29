@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Mittaustulos on arvio, jossa on virhe. **Satunnaisvirhe** hajauttaa tuloksia, ja keskiarvo pienentää sitä. **Systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan, eikä toisto poista sitä. Luotettavuus tarkoittaa sekä toistettavuutta että oikeellisuutta.",
   "learn": [
-    "Erotat karkean virheen, satunnaisvirheen ja systemaattisen virheen toisistaan. Tunnistat myös, mistä ne syntyvät.",
-    "Osaat laskea keskiarvon. Osaat myös arvioida tulosten hajontaa vaihteluvälin puolikkaalla.",
-    "Osaat korjata systemaattisen virheen. Osaat myös arvioida, onko mittaus toistettava ja oikea."
+    "erottamaan karkean virheen, satunnaisvirheen ja systemaattisen virheen toisistaan ja tunnistamaan, mistä ne syntyvät.",
+    "laskemaan keskiarvon ja arvioimaan tulosten hajontaa vaihteluvälin puolikkaalla.",
+    "korjaamaan systemaattisen virheen ja arvioimaan, onko mittaus toistettava ja oikea."
   ],
   "prior": [
     "Mittaustulos ilmoitetaan lukuarvona ja yksikkönä. Merkitsevät numerot kertovat tuloksen tarkkuudesta (luku *Suureet, yksiköt ja SI-järjestelmä*)"

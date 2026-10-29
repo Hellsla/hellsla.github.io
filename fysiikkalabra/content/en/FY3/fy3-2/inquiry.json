@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The word *work* gets a precise meaning: force in the direction of motion times distance, $W = Fs$, which is the area under the $(s, F)$ graph. Power tells you how fast the work is done.",
   "learn": [
-    "You recognise when a force does work in the physics sense.",
-    "You can calculate work from force and distance, and as the area under a force–distance graph.",
-    "You can explain what power tells you about doing work."
+    "recognise when a force does work in the physics sense.",
+    "calculate work from force and distance, and as the area under a force–distance graph.",
+    "explain what power tells you about doing work."
   ],
   "prior": [
     "Weight $G = mg$ and force as a measure of interaction (chapter *Force as a measure of interaction and weight G = mg*)",

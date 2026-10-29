@@ -263,8 +263,12 @@ What the writer still owns:
   conclusion, a few words, never a sentence run. No new coloured boxes: headings, spacing and type do the work.
 - **Never thin the physics to shorten text.** Keep the causal chain and the reasons (why the mean spacing of the
   particles grows when they vibrate harder, not just "they move more"); restructure, do not cut.
-- **The opening** (`inquiry.json`): `learn` holds 2–3 goals from the student's side, each one line ("Osaat laskea …",
-  "Tunnistat …", "Osaat selittää …"); the explanation belongs to the theory. `prior` is a list, one fact per item,
+- **The opening** (`inquiry.json`): `learn` holds 2–3 goals from the student's side, each one line that completes the
+  heading "Tällä tunnilla opit" (teacher 2026-10-29): "laskemaan …", "tunnistamaan …", "vertailemaan … ja selittämään …"
+  (third infinitive illative -maan/-mään, lowercase, parallel forms; never "Osaat …"/"Opit …" under the heading).
+  Selkeä suomi: the same form, shorter; a short second sentence may explain. English: "In this lesson, you will learn
+  to" + "calculate …", "explain …" (bare verb, natural English, not a mirror of the Finnish). Module goals, Pohjatiedot,
+  rubrics and summaries keep their own grammar. `scripts/objectives.py` checks it; the explanation belongs to the theory. `prior` is a list, one fact per item,
   ending with the chapter it comes from as `(luku *<chapter title>*)` (the page turns it into a quiet link; never an
   id). The Miksi question is one question, or two short sentences when it has two ideas. `contribution` stays as the
   reviewers' one-sentence statement of what the lesson adds; the page does not show it.

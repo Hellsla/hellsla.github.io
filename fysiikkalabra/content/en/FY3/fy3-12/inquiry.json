@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The energy bookkeeping of the first law extends to powers: heat transfers by conduction, convection and thermal radiation, the power conducted through a building part is $P = UA\\Delta T$, and the temperature of an object stays constant when the power coming into it and the power leaving it are equal, which explains the greenhouse effect and climate change.",
   "learn": [
-    "You recognise the ways heat transfers: conduction, convection and thermal radiation.",
-    "You can calculate the thermal power conducted through a building part.",
-    "You can use energy balance to explain the greenhouse effect and climate change."
+    "recognise the ways heat is transferred: conduction, convection and thermal radiation.",
+    "calculate the thermal power conducted through a building part.",
+    "use energy balance to explain the greenhouse effect and climate change."
   ],
   "prior": [
     "Heat and work change internal energy, $\\Delta U = Q + W$, and energy is conserved (chapter *Internal energy, heat and conservation of energy*)",

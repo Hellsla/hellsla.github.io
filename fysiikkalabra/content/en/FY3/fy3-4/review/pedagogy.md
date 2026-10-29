@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9992fcb3c9cbce90
-
+CONTENT-HASH: d538e6ef55b43a42
 ## Blocking
-(none left)
-
-## Fixed
-- inquiry.json activities[0].text — 'swimming-pool diving tank' (hyppyallas) → 'diving pool' (the lesson's inquiry text; done in en only, it was the one unnatural term).
-
+(none)
 ## Polish
-- none
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Lesson.md, meta, inquiry.json (incl. sim labels via i18n resolve: *Show gauge pressure only* matches the sim; experiment intro/names/solutions), exit-ticket.json, figures.json (each value translates its own key) read against the reviewed Finnish.
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (incl. new check-c2 items), exit ticket and figure texts against the new Finnish; no issues found.
+batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.

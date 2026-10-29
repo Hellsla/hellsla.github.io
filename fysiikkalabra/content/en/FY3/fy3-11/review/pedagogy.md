@@ -1,17 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 6a250e96e0e41497
-
+CONTENT-HASH: 738ad504ed25803e
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- content/en/FY3/fy3-11/lesson.md (Refrigerator and heat pump) — "three times the power of the electric power it uses" was clumsy and could be read as comparing the wrong powers → "three times as much heating power as the electric power it uses"
-- content/en/FY3/fy3-11/meta.json glossary — "yhteistuotanto" and "lauhdevoimalaitos" were left in Finnish → "combined heat and power", "condensing power plant"
-
+(none)
 ## Polish
-- The experiment tables show the select value "sama paine" / "jäähdytys ensin" in Finnish in the setup line and rows, because the Finnish inquiry.json has no `values` map ({paluu: {...}}). A `values` map in en is refused by check_i18n (keys differ from Finnish). Add it to the Finnish source first, then en can show "at the same pressure" / "cool first".
-
+(none)
 ## Checked
-- Update 2026-10-28: meta.json glossary terms restored to English (the update tool had reverted them to Finnish); pages unchanged.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, hints, feedback, solutions, experiment names/intros), exit-ticket.json, meta.json, figures.json and the sim labels (lang/en.json sims.fy3-11). Pedagogy: natural reading level, term consistency with terms.md and the sim labels, step labels and button names; correct choices and feedback still match.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 heat-pump item, units, feedback), exit ticket, figure description.
+batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.

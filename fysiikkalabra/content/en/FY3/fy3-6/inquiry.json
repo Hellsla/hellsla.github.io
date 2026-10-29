@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The quantity of heat gets its formula $Q = cm\\Delta T$: the specific heat capacity of a substance decides how much its temperature changes, and conservation of energy gives the equilibrium temperature of a calorimeter and the $c$ of an unknown substance.",
   "learn": [
-    "You can calculate the heat that changes the temperature of a substance.",
-    "You can explain what the specific heat capacity tells about a substance.",
-    "You can use conservation of energy to find a calorimeter's equilibrium temperature or an unknown substance's specific heat capacity."
+    "calculate the heat that changes the temperature of a substance.",
+    "explain what the specific heat capacity tells about a substance.",
+    "use conservation of energy to find a calorimeter's equilibrium temperature or an unknown substance's specific heat capacity."
   ],
   "prior": [
     "Heat is energy that is transferred because of a temperature difference, and the energy transferred is the quantity of heat $Q$ (chapter *Internal energy, heat and conservation of energy*)",

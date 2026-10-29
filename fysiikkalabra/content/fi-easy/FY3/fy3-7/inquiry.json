@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpömäärä ei aina nosta lämpötilaa. Kun puhtaan aineen olomuoto muuttuu vakiopaineessa, siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia. Lämpötila pysyy silloin vakiona. Tarvittava lämpömäärä on $Q = sm$ tai $Q = rm$.",
   "learn": [
-    "Osaat selittää, mihin energia menee, kun puhtaan aineen olomuoto muuttuu vakiopaineessa ja lämpötila pysyy vakiona.",
-    "Osaat laskea sulamiseen ja höyrystymiseen tarvittavan lämpömäärän."
+    "selittämään, mihin energia menee, kun puhtaan aineen olomuoto muuttuu vakiopaineessa ja lämpötila pysyy vakiona.",
+    "laskemaan sulamiseen ja höyrystymiseen tarvittavan lämpömäärän."
   ],
   "prior": [
     "Lämpömäärä $Q = cm\\Delta T$ ja veden ominaislämpökapasiteetti $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (luku *Aineen lämpeneminen ja jäähtyminen*)",

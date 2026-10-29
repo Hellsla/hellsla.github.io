@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The student learns to compare ways of producing energy using orders of magnitude: the power of a single power plant, the annual energy $E = P \\cdot t$ and the distribution of electricity production in Finland, and to tell weather-dependent, controllable and steady production apart.",
   "learn": [
-    "You can calculate the annual energy or average power of a power plant with the formula $E = P \\cdot t$.",
-    "You can group power plants into weather-dependent, controllable and base load, and justify the grouping.",
-    "You can compare ways of producing energy using orders of magnitude and criteria."
+    "calculate the annual energy or average power of a power plant with the formula $E = P \\cdot t$.",
+    "group power plants into weather-dependent, controllable and base load, and justify the grouping.",
+    "compare ways of producing energy using orders of magnitude and criteria."
   ],
   "prior": [
     "Power tells you how quickly energy is transferred, $P = E : t$ (chapter *Power P = ΔE/Δt*)",

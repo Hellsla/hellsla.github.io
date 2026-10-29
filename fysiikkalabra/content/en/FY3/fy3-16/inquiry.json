@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The earlier lessons gave the parts: the quantity of heat $Q = cm\\Delta T$, latent heat of fusion and of vaporisation, and the power conducted through a building part $P = UA\\Delta T$. This lesson combines them into energy bookkeeping in everyday situations: the incoming energy is used for heating or for a change of state, and during a change of state the temperature stays constant.",
   "learn": [
-    "You can combine heat, latent heats of fusion and vaporisation, and conducted power into one energy balance.",
-    "You can justify whether the incoming energy is used for heating or for a change of state.",
-    "You can solve multi-step problems about everyday heat phenomena."
+    "combine heat, latent heats of fusion and vaporisation, and conducted power into one energy balance.",
+    "justify whether the incoming energy is used for heating or for a change of state.",
+    "solve multi-step problems about everyday heat phenomena."
   ],
   "prior": [
     "The quantity of heat when heating is $Q = cm\\Delta T$ (chapter *Heating and cooling of a substance: Q = cmΔT*)",

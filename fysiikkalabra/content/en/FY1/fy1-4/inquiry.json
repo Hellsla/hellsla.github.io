@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Data points become a graph and a linear model: the student fits a straight line, finds its slope and constant term from points on the line that are far apart, interprets them physically and recognises when a straight line does not fit.",
   "learn": [
-    "You can present measurements as a graph and fit a straight line to the points.",
-    "You can find the slope and constant term of a line and say what they mean.",
-    "You can recognise when a linear model does not fit the measurements."
+    "present measurements as a graph and fit a straight line to the points.",
+    "find the slope and constant term of a line and say what they mean.",
+    "recognise when a linear model does not fit the measurements."
   ],
   "prior": [
     "Every measurement contains random error, which scatters the results in both directions (chapter *Measuring and the reliability of a measurement*)",
