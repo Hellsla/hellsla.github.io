@@ -1,6 +1,6 @@
 [
   {
-    "q": "Miksi kahden kappaleen paikat täytyy mitata samasta origosta, samaan suuntaan ja samalla kellolla? Sen jälkeen kohtaamishetken voi ratkaista.",
+    "q": "Miksi kahden kappaleen paikat täytyy mitata samasta origosta, samaan suuntaan ja samalla kellolla, jotta kohtaamishetken voi ratkaista?",
     "a": "Kohtaaminen tarkoittaa, että paikat ovat samat samalla hetkellä: $x_\\text{A} = x_\\text{B}$. Yhtälö kertoo jotain vain, jos molemmat paikat on mitattu samasta koordinaatistosta ja samalta hetkeltä. Jos kappaleilla olisi eri origo tai eri kello, yhtä suuret luvut eivät tarkoittaisi samaa paikkaa samalla hetkellä."
   },
   {
