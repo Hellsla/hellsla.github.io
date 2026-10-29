@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: c61d1449074a7c36
+VERDICT: PASS
+CONTENT-HASH: e946aeb0cf3ea333
 
 ## Blocking
-- exercises/solutions.md:35 (L1-04) — A: "pystysuoran ruudukkoviivan $x = 30\,\text{m}$" is wrong. In a (t,x) graph the line x = 30 m is horizontal. — Write "vaakasuoran ruudukkoviivan $x = 30\,\text{m}$".
 
 ## Polish
-- L2-04 "Vastaus: 3,8 s eli 3,75 s": state which value is the answer (3,8 s) and that 3,75 s is the unrounded value.
-- L3-01: the task could say "ensimmäisen kerran" is the smaller root. The solution says this already; the task is fine as it is.
+- lessons/FY4/fy4-12/figures.py:232 — the kaksi_karrya docstring says B starts "from 30 m", but the drawing (which L1-04 and L2-04 read) starts it at 40 m. — Fix the comment.
+- L3-02 — "Kuinka lähelle bussia" treats the bus as a point. That is fine at this level (C); if wanted, add "(bussin takaosaan)".
 
 ## Checked
-- One script recomputed every answer from the task text with its own meeting-root model. All 12 agree with answers.py and exercises.json (L3-01 4 − √6 = 1,5505 s; L3-03 roots 10 s and −18 s).
-- Figure fy4-12/kaksi-karrya (A 0→60 m and B 40→20 m in 10 s) gives v_A = 6,0 m/s, v_B = −2,0 m/s, a meeting at 5,0 s and 30 m, and a 10 m gap at 3,75 s.
-- Unit conversions are right: 90 and 72 km/h become 25 and 20 m/s, 18 km/h becomes 5,0 m/s, and 12 km / 144 km/h = 5,0 min.
-- L3-01 says correctly that both positive roots are meetings. L3-03 rejects its negative root with a reason.
-- Every solution is solved symbolically first. The rounding follows the data, and the reasonableness checks are real substitutions.
-- Standing rules: \cdot is used and × never appears. All symbols are in LaTeX.
+- One script recomputed all 12 answers from the task text with a general meeting-root solver (L3-02 by a numeric minimum of the gap). All agree with exercises.json and answers.py: 4,0; 20; 24; 5,0; 35; 30; 5,0; 9,0; 3,75; 2,0; 4,0; 10.
+- L3-01 roots are 2,0 s and 8,0 s, and both are named as meetings. In L3-02 the discriminant is −4 m²/s² < 0, the minimum gap at v_bus = v_runner is 4,0 m, and the 5,0 m values at 6 s and 10 s are checked. L3-03 rejects the root −18 s with a reason.
+- Round-1 A (L1-04, "vaakasuoran ruudukkoviivan") is fixed. L2-04 states 3,8 s as the answer and 3,75 s as the unrounded value. The 2 % tolerance accepts 3,8.
+- Figure fy4-12/kaksi-karrya: A goes 0→60 m and B 40→20 m in 10 s. The meeting at 5,0 s and 30 m lies on the grid as the L1-04 solution reads it.
+- Conversions are right: 90/72 km/h = 25/20 m/s, and 12 km / 144 km/h = 5,0 min.
+- Every solution has all seven parts, is solved symbolically first, rounds by the data, and has a real check by substitution.
+- Standing rules: all symbols are in LaTeX, multiplication uses \cdot and × never appears. No vectors or arrows appear in this set.

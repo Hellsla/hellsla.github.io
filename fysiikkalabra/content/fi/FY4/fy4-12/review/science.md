@@ -1,22 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: a261e297b6f6d732
+VERDICT: PASS
+CONTENT-HASH: cbee12aed8d34c3a
 
 ## Blocking
-- lesson.md:623 — B: the summary says "Positiivinen juuri on kohtaamishetki, ja negatiivinen juuri ei kuulu tilanteeseen" as a general rule for every uniformly accelerated case. Case 5 / exp-3 has two positive roots (1,55 s and 6,45 s), and both are meetings. — State the condition: "Jokainen positiivinen juuri on kohtaaminen (niitä voi olla kaksi); negatiivinen juuri on ennen lähtöä eikä kuulu tilanteeseen."
-- lesson.md:624 and inquiry.json:3 (contribution) — B: "Etumatka on suurimmillaan, kun nopeudet ovat yhtä suuret" is stated as universal. It holds only when the one ahead is faster at first, as with a chaser starting from rest. The misconception section already says "suurimmillaan tai pienimmillään". — Add the condition, e.g. "kun takana oleva lähtee hitaampana", or write "välimatka on suurimmillaan tai pienimmillään".
-- inquiry.json:545 (check-3) — A: "Auto lähtee levosta pyöräilijän edestä" puts the car ahead of the cyclist (as "bussi lähtee juoksijan edestä" does in sim-spec). The model answer and criteria assume the cyclist is ahead with a lead that grows. With the car ahead, the gap closes first. — State the start: "Auto lähtee levosta, kun pyöräilijä on sen edellä (tai ohittaa sen)."
 
 ## Polish
-- lesson.md:385 — "eivät kohtaisi": add "jos ne lähtevät eri paikoista".
-- lesson.md:401 — units "(m)", "(m/s²)" are plain text; the standing rule wants every symbol in LaTeX: $\text{m/s}^2$.
-- inquiry.json:178,246,307 — the measure label "x_B − x_A" has no unit "(m)".
-- sim.js:103 — case 5 draws the bus as a car and the runner as a cyclist (howto explains it).
+- inquiry.json:322 (exp-3, option "Kerran") — "juoksija saavuttaa bussin ja jää sen jälkeen pysyvästi bussin taakse" contradicts itself: reaching the bus and then falling back without passing would be a touch. The option is still wrong and its feedback is right. — For example: "Kerran: juoksija ohittaa bussin ja pysyy sen jälkeen edellä."
+- inquiry.json:473 (siirto, Periaate) — "Ohitushetken jälkeen nopeus saadaan …" reads as "after the passing". — Write "Kun ohitushetki tunnetaan, nopeus saadaan …".
+- lessons/FY4/fy4-12/figures.py:232 — the kaksi_karrya docstring says B starts "from 30 m", but the code draws it from 40 m. — Fix the comment.
+- Sim canvas at 390 px (shots exp-*-390-1) — the ruler's "150" runs into "$x\ (\text{m})$", and the graph's "$x\ (\text{m})$" overlaps lane B. This is a layout problem, not a physics one.
 
 ## Checked
-- One script recomputed every lesson, inquiry and exit-ticket number and each mistake value. All agree.
-- The figures are to scale and match the text (vt areas are 9 m each).
-- sim.js implements x = x0 + v0 t + at²/2. The simState keys exist in every experiment, and its limits are stated.
-- Experiments: tapaus is locked and t is varied, which isolates the parameter. 8,0 s can be reached on the slider.
-- Every prediction, Etsi virhe and check-1 has exactly one correct option, and its distractor feedback is right.
-- Standing rules: \cdot is used throughout and × never appears. Vectors are written \overline{v} and \overline{a}. Velocity arrows are blue and acceleration arrows orange. Body colours are green and brown, so they never use a quantity colour. No forces are drawn.
-- The scope stays within FY4 tasainen/tasaisesti kiihtyvä liike.
+- One script recomputed every number from the task data with my own meeting-root model: the head-on figure (12 s, 36 m), the same-place pass (6,0 s, 36 m, 12 m/s, maximum gap 9,0 m), the worked example (roots −2,0 and 8,0 s, 64 m, 16 m/s, gap 25 m at 3,0 s), cases 1–5 (10 s/50 m; 5,0 s; −10 s; 4 ± √6 s), the transfer task (8,0 s, 96 m, 24 m/s), check-2 and its mistakes (6,0; 15; 30; 10 s), pr-paikka (25/50/10) and exit ticket 3. All agree with the text and lesson-answers.py.
+- Round-1 B and A findings are fixed: the summary allows two positive roots, the largest gap carries "kun takana oleva lähtee hitaampana" (this is true for any constant accelerations, because the relative speed is linear in t), and check-3 states that the cyclist is ahead.
+- Figures 2–6 and the example figure are to scale and match their data. The two vt areas are ±9 m.
+- sim.js implements x = x0 + v0 t + at²/2 and the meeting roots on 0 < t ≤ 12 s. Every case stays on its axes. The Mallin oletukset box states the limits (points, constant a, model values).
+- Experiments: tapaus is locked and t is varied. 10 s and 8,0 s lie on the 0,5 s slider grid. The keys xA, xB, vA, gap and meetings exist in simState.
+- Every prediction, Etsi virhe, ei-kohtaa, exp-3 and check-1 has exactly one correct option. Each distractor's feedback gives the right reason.
+- Model answers (johtopäätös, check-3) and the exit ticket agree with the theory.
+- Standing rules: every symbol is in LaTeX (the canvas, readout and table headers render as LaTeX). Multiplication uses \cdot and × never appears. Vectors are \overline{v} and \overline{a}, with no \vec or \mathbf. Velocity arrows are blue (#1971c2) and acceleration arrows orange, distinct from the green and brown body colours. No forces are drawn here.
+- Scope: within FY4 tasainen / tasaisesti kiihtyvä suoraviivainen liike.

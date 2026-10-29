@@ -1,17 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: c61d1449074a7c36
+VERDICT: PASS
+CONTENT-HASH: e946aeb0cf3ea333
 
 ## Blocking
-- exercises.json L3-01 — same situation and numbers as the lesson's optional experiment 3 (bus, runner at -5,0 m, 4,0 m/s, 1,0 m/s²), whose feedback states 1,55 s and 6,45 s: the answer is disclosed before the student acts — change the data (e.g. runner at -8,0 m, 5,0 m/s, bus 1,0 m/s²) and recompute answers.py and the solution.
-- exercises.json L2-02 and L3-03, solutions.md L2-02 — "ohittavat toisensa" for bodies moving towards each other contradicts the lesson's glossary (ohitus = overtaking; head-on is kohtaaminen) — write "kohtaavat" / "ovat samassa kohdassa".
+(none)
 
 ## Polish
-- L2-03, L3-02 and the lesson's "Sovella uuteen tilanteeseen" are the same start-from-rest overtaking (t = 2v/a); L3-02 is a one-step rearrangement, not level-3 reasoning. Replace L3-02 with a case needing two ideas (a graph-based or a "do they meet at all?" task).
-- L1-05 needs only x = v t; the meeting adds nothing. Give B's velocity and ask where they meet.
-- No exercise asks the student to sketch or explain a (t,x) graph; add one with a short justification.
-- L3-03 "Kulkijat ... ohittavat" is vague: name the scooter and the cyclist.
+- L3-02: the prompt asks "Saavuttaako juoksija bussin?" but only the 4,0 m is graded; add to the prompt "Perustele vihkoon" or accept the gap alone as evidence. The task idea (minimum gap when speeds are equal) mirrors the lesson's maximum-gap argument, which is good transfer.
+- L2-03 asks for a sketch and justification but only `t` is checked; the solution's "Kuvaajan lukeminen" lets the student self-assess, which is enough.
+- L2-02 "Kaksi junaa lähtee" reads better as "lähtevät" in formal Finnish.
 
 ## Checked
-- Levels 5/4/3 as required; none repeats the worked example (L3-01 repeats exp-3, above).
-- Solutions follow the seven parts; L2-04 and L1-04 show how the graph is read; unit conversions correct.
-- Answers and tolerances accept the correctly rounded value (3,75 / 3,8; 1,55 / 1,6).
+- Round 1 blocking fixed: L3-01 now uses runner -8,0 m, 5,0 m/s, bus 1,0 m/s² (answer 2,0 s) and no longer repeats exp-3; no "ohittavat" for head-on cases remain (L2-02, L3-03 say "kohtaavat").
+- Levels 5/4/3; none repeats the worked example; L3-02 now needs two ideas (no meeting, closest approach), L1-05 asks for the place with a given velocity, L2-03 has the sketch and justification, L3-03 names scooter and cyclist.
+- Solutions follow the seven parts, symbolic first, units and conversions shown (L2-01, L2-02); L1-04 and L2-04 show how the graph is read.
+- Answers verified: L3-02 gap 4,0 m, L3-03 10 s, L2-04 3,75 s with tolerance accepting 3,8 s.
+- `kaksi-karrya` figure is the variant without the crossing marked; its description does not give the answer.
+- Finnish and glossary terms (kohtaaminen vs ohitus) consistent with the lesson.
