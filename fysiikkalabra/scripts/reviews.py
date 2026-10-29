@@ -58,6 +58,7 @@ RULES = {                       # category: (science, pedagogy)
     "label-position": ("none",  "delta"),   # a figure label moved by at most 40 units, its text unchanged
     "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
     "objective-form": ("none",  "delta"),
+    "notation":       ("none",  "none"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
     "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
@@ -77,6 +78,7 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
+       "notation": "vector symbols rewritten with an overline, nothing else",
        "objective-form": "learning goals rephrased to complete their heading, symbols and numbers unchanged", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
@@ -550,6 +552,9 @@ def split_from(old, new):
     return a is not None and bool(b) and all(k in a and a[k] == v for k, v in b.items())
 
 
+VECTOR = re.compile(r"\\(?:mathbf|vec)\{([A-Za-z])\}")
+
+
 def changes(folder, base, part="lesson", split=False):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -570,6 +575,9 @@ def changes(folder, base, part="lesson", split=False):
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
+        if not binary and ra and rb and VECTOR.search(ra):   # \\mathbf{F} → \\overline{F}: the teacher's notation, nothing else
+            ra = VECTOR.sub(r"\\overline{\1}", ra); a = _view(ra, rel, False)
+            if a == b: cats.add("notation"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         if rel.endswith("/lesson.md") and (strip_hero(a), strip_hero(b)) != (a, b):   # a label-free opening illustration
             a2, b2 = strip_hero(a), strip_hero(b)
             if HERO.findall(a or "") != HERO.findall(b or ""): cats.add("illustration")
