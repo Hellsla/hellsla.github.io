@@ -56,9 +56,9 @@ check("an object 'still moving forward' needs no forward force: a sliding stone 
       problems(lambda d: d.force("G", (0, -mg), (0, 0), "gravity").force("N", (0, mg), (0, 0), "normal", surface=0)
                .force("F_mu", (-2, 0), (0, 0), "friction", surface=0), a_dir=(-1, 0)) == [])
 # drawing
-f = Fig("t", 300, "t"); FBD(f, 1, body=(300, 100, 60, 40), a_dir=(0, 0)).force("G", (0, -100), (300, 100), "gravity").force("N", (0, 100), (300, 100), "normal", surface=0).draw()
+f = Fig("t", 300, "t"); FBD(f, 1, body=(300, 100, 60, 40), a_dir=(0, 0)).force("G", (0, -100), (300, 100), "gravity").force("N", (0, 100), (315, 120), "normal", surface=0).draw()
 s = f.svg()
-check("the arrows are as long as the forces (scale), labels bold", "\\mathbf{G}" in s and "M300,200 " in s and "M300,0 " in s, s[:400])
+check("the arrows are as long as the forces (scale), labels bold", "\\mathbf{G}" in s and "M300,200 " in s and "M315,20 " in s, s[:400])
 check("the body is drawn as a plain rectangle", '<rect x="270" y="80" width="60" height="40"' in s, s[:400])
 try:
     FBD(Fig("bad", 300, "t"), 1, body=(0, 0, 40, 40), a_dir=(0, 0)).force("G", (0, -100), (0, 0), "gravity").draw(); ok = False
@@ -89,6 +89,14 @@ check("on a slope: friction up the slope from the lower front corner is drawn",
       not refused(fr(corner, (20 * c, 20 * s_)), "friction", body=(100, 100, 80, 60, th), wrong="x"))
 check("on a slope: friction from the middle of the bottom side is refused",
       refused(fr((100 + 30 * s_, 100 + 30 * c), (20 * c, 20 * s_)), "friction", body=(100, 100, 80, 60, th), wrong="x"))
+check("weight off the geometric centre is refused",
+      refused(lambda d: d.force("G", (0, -50), (110, 100), "gravity"), "geometric centre", body=box, wrong="x"))
+check("a normal force from inside the body is refused",
+      refused(lambda d: d.force("N", (0, 50), (100, 100), "normal", surface=0), "contact surface", body=box, wrong="x"))
+gn = lambda dx: (lambda d: d.force("G", (0, -50), (100, 100), "gravity").force("N", (0, 50), (100 + dx, 130), "normal", surface=0))
+check("weight and normal force on one line are refused (they must be told apart)", refused(gn(0), "one line", body=box, wrong="x"))
+check("weight and normal force 6 units apart are refused", refused(gn(6), "one line", body=box, wrong="x"))
+check("weight and normal force side by side, 14 units apart, are drawn", not refused(gn(14), "one line", body=box, wrong="x"))
 check("velocity, acceleration and force have distinct colours", len({FORCE, VELOCITY, ACCEL, NET}) == 4)
 f = Fig("m", 300, "t"); d = FBD(f, 1, body=box); d.motion(r"\mathbf{v}", (1, 0), (60, 40)); d.motion(r"\mathbf{a}", (1, 0), (60, 20))
 s = f.svg()

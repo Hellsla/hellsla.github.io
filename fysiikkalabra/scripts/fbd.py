@@ -21,7 +21,9 @@ Vectors are in newtons with y pointing up; the figure's y points down, the FBD c
 of application and its length is scale times the force, so relative lengths are physically right by construction.
 
 draw() always refuses (ValueError) a diagram that breaks a drawing convention: no body rectangle (a point particle), a
-force that does not start on the body, a friction arrow that neither starts nor ends on the body's outline or that runs
+force that does not start on the body, a weight that does not start at the body's geometric centre, a normal force
+that does not start at the contact surface, weight and normal force drawn along one line so that they cannot be told
+apart, a friction arrow that neither starts nor ends on the body's outline or that runs
 along a side of it (start it at a corner, or end it at the surface), a velocity or acceleration arrow on the body.
 
 It also refuses a diagram that breaks a rule a student is assessed on: two forces with one symbol, weight
@@ -44,6 +46,7 @@ from figlib import Fig, INK, MUTED, WHITE, RULE, n, translate
 FORCE, FORCE_LIGHT, VELOCITY, ACCEL, NET = "#c92a2a", "#f2a69c", "#1971c2", "#e8590c", "#2b8a3e"
 BODY, BODY_EDGE = "#f6f1e6", INK      # the plain rectangle of a force diagram
 EDGE = 1.5          # figure units: how close to the body's outline a point counts as on it
+APART = 12          # figure units: the least gap between weight and normal-force arrows that run side by side
 KINDS = ("gravity", "normal", "friction", "tension", "applied", "buoyancy", "drag", "spring", "electric", "other")
 TOL = 0.02          # relative to the largest force: drawing tolerance of the checks
 
@@ -204,9 +207,30 @@ class FBD:
                 if not any(ends) or any(self._where(m) != "out" for m in mid):
                     out.append(f"{s}: friction starts or ends on the body's outline and is drawn outside it, never along a side "
                                "from the middle of it (start it at a corner)")
+        cx, cy = self.body[:2]
+        for x in self.forces:
+            if x["kind"] == "gravity" and x["at"] and math.hypot(x["at"][0] - cx, x["at"][1] - cy) > EDGE:
+                out.append(f"{x['sym']}: the weight starts at the body's geometric centre")
+            if x["kind"] == "normal" and x["at"] and self._where(x["at"]) == "in" and not x.get("push"):
+                out.append(f"{x['sym']}: a normal force starts at the contact surface")
+        for gw in (x for x in self.forces if x["kind"] == "gravity"):
+            for nf in (x for x in self.forces if x["kind"] == "normal"):
+                if self._overlap(gw, nf):
+                    out.append(f"{gw['sym']} and {nf['sym']} run along one line: draw them apart so both can be told apart "
+                               f"(at least {APART} units side by side)")
         for c in self.comps:
             if c["at"] is not None and self._where(c["at"]) == "out": out.append(f"{c['sym']} must start on the body")
         return out
+
+    def _overlap(self, a, b):
+        """Two parallel arrows closer than APART to each other along a common stretch."""
+        (a1, a2), (b1, b2) = self._ends(a), self._ends(b)
+        u = _unit((a2[0] - a1[0], a2[1] - a1[1])); v = _unit((b2[0] - b1[0], b2[1] - b1[1]))
+        if abs(_cross(u, v)) > 0.05: return False
+        side = abs(_cross(u, (b1[0] - a1[0], b1[1] - a1[1])))
+        if side >= APART: return False
+        ta = sorted((0.0, _dot(u, (a2[0] - a1[0], a2[1] - a1[1])))); tb = sorted(_dot(u, (p[0] - a1[0], p[1] - a1[1])) for p in (b1, b2))
+        return min(ta[1], tb[1]) - max(ta[0], tb[0]) > 4
 
     def draw(self, label_size=None):
         p = self.conventions() + ([] if self.wrong else self.check())

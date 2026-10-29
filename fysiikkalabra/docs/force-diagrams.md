@@ -75,6 +75,9 @@ The teacher's drawing rules (2026-10-29) hold in every course, figure, simulatio
 - **Each force starts at its point of application** on the rectangle: weight at the centre (of mass), the normal
   force at the contact surface, tension where the rope is attached. A push from outside (a handle, a ceiling) may
   instead end at its point of application, so its arrow stays off the body.
+- **Weight and normal force are told apart.** The weight starts at the body's geometric centre; the normal force
+  starts at the contact surface, perpendicular to it. When they are parallel, draw them side by side, never along
+  one line (`fbd.py` refuses less than 12 units apart along a common stretch).
 - **Friction starts or ends at the body's outline**, outside the body, at the corner of the contact surface. It is
   never drawn along a side starting from the middle of it.
 - **No point-particle diagrams.** They are not used in Finnish upper secondary physics: never draw one, never
