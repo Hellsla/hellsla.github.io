@@ -111,11 +111,11 @@
 **Järkevyys:** Jos juna kulkisi koko ajan $95\,\text{s}$ nopeudella $15{,}0\,\text{m/s}$, matka olisi $1425\,\text{m}$; kiihdytys ja jarrutus vievät tästä puolet omista osuuksistaan, $150\,\text{m} + 112{,}5\,\text{m}$, joten $1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}$. Reilun kilometrin asemaväli on metrolle tavallinen.
 
 ## fy4-2-L3-03
-**Annettu:** sovitettu polynomi $y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3{,}10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1{,}20\,\text{m}$, ylöspäin positiivinen; hetki $t = 0{,}50\,\text{s}$
-**Kysytty:** pallon nopeus $v$ etumerkkeineen yksikössä $\text{m/s}$ hetkellä $0{,}50\,\text{s}$
+**Annettu:** sovitettu polynomi $y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3{,}10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1{,}20\,\text{m}$, ylöspäin positiivinen; hetki $t = 0{,}500\,\text{s}$
+**Kysytty:** pallon nopeus $v$ etumerkkeineen yksikössä $\text{m/s}$ hetkellä $0{,}500\,\text{s}$
 **Periaate:** Polynomia verrataan tasaisesti kiihtyvän liikkeen paikan yhtälöön $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. Kertoimista luetaan alkunopeus $v_0 = 3{,}10\,\text{m/s}$ ja $\tfrac{1}{2}\,a = -4{,}86\,\text{m/s}^2$, joten $a = -9{,}72\,\text{m/s}^2$. Nopeus saadaan sitten yhtälöstä $v = v_0 + a\,t$.
 **Kaava:** Polynomin $y = A\,t^2 + B\,t + C$ kertoimista $v_0 = B$ ja $a = 2A$, joten $v = B + 2A\,t$
 **Muunnokset:** Kertoimet ovat SI-yksiköissä ja aika sekunteina. Muunnoksia ei tarvita.
-**Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}50\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
-**Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa kuten polynomin kertoimissa. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
-**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}50\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.
+**Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
+**Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
+**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.

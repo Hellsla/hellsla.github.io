@@ -11,18 +11,19 @@ new p5((p) => {
   const VEL = [25, 113, 194], ACC = [232, 89, 12], INKC = [31, 41, 51], MUT = [107, 116, 128];
   // wide layout 600 x 400; on a phone (#sim-root < 500 px) the panels stack at full width on a 600 x 700 canvas, with
   // labels and strokes multiplied by 600 / clientWidth (setLayout)
-  let ROAD, RULER_Y, CS, G1, G2, H = 400, narrow = false, sk = 1;
+  let ROAD, RULER_Y, CS, G1, G2, curH = 400, H = 400, narrow = false, sk = 1;
   function setLayout() {
     narrow = (document.getElementById('sim-root').clientWidth || 600) < 500;
-    H = narrow ? 700 : 400; sk = narrow ? k : 1;
+    H = narrow ? 785 : 400; sk = narrow ? k : 1;
     if (narrow) {
-      ROAD = { x0: 50, x1: 430, y: 130, h: 26 }; RULER_Y = 180; CS = 1.7;
-      G1 = { x0: 96, x1: 490, y0: 420, y1: 304 }; G2 = { x0: 96, x1: 490, y0: 650, y1: 534 };
+      ROAD = { x0: 40, x1: 500, y: 130, h: 26 }; RULER_Y = 180; CS = 1.7;
+      G1 = { x0: 78, x1: 510, y0: 465, y1: 295 }; G2 = { x0: 78, x1: 510, y0: 735, y1: 585 };
     } else {
       ROAD = { x0: 30, x1: 492, y: 78, h: 22 }; RULER_Y = 116; CS = 1;
       G1 = { x0: 64, x1: 258, y0: 350, y1: 192 }; G2 = { x0: 372, x1: 540, y0: 350, y1: 192 };
     }
-    if (p.height !== H) p.resizeCanvas(600, H);
+    if (H !== curH) { curH = H; p.resizeCanvas(600, H); setTimeout(() => p.redraw(), 0); return false; }   // the resize clears the drawing state: draw again next frame
+    return true;
   }
   let btn, slV0, slA, slT, lV0, lA, lT, selSp, readout;
   let tau = 0, tmax = 0, running = false, k = 1, labels = [], vmax = 6;
@@ -82,7 +83,7 @@ new p5((p) => {
     window.simState = { v0: q.v0, a: q.a, t: tau, x, v, tmax, running, speed, labels: null };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    setLayout();
+    if (!setLayout()) return;
     const fh = Math.round((narrow ? 13 : 11) * k);
     labels = [];
     // scales follow the motion over the whole run (0…T): sample x and v
@@ -165,7 +166,7 @@ new p5((p) => {
     let i = 0;
     for (let y = sy.lo; y <= sy.hi + 1e-9; y += sy.step, i++) if (narrow ? Math.round(y / sy.step) % 2 === 0 : (k <= 1.5 || i % 2 === 0 || Math.abs(y) < 1e-9)) lab(`$${tx(y, 0)}$`, G.x0 - 7, GY(y) + fh * 0.36, 'r', fh);
     lab('$t\\ (\\text{s})$', G.x1 + 16, G.y0 + 4 + fh, 'l', fh);
-    lab(ylab, G.x0 - 4, G.y1 - (narrow ? 36 : 18), 'r', fh);
+    if (narrow) lab(ylab, 6, G.y1 - 36, 'l', fh); else lab(ylab, G.x0 - 4, G.y1 - 18, 'r', fh);
     return { GX, GY };
   }
 

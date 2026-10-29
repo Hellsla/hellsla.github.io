@@ -97,7 +97,7 @@
     {
       "id": "fy4-2-L3-03",
       "level": 3,
-      "text": "Pallo heitetään suoraan ylöspäin, ja videoanalyysilla mitataan sen korkeus $y$ ajan funktiona. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}50\\,\\text{s}$? Anna vastaus etumerkkeineen.",
+      "text": "Pallo heitetään suoraan ylöspäin, ja videoanalyysilla mitataan sen korkeus $y$ ajan funktiona. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02
