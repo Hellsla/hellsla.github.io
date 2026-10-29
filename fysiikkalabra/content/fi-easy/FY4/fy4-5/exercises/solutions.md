@@ -2,7 +2,7 @@
 **Annettu:** $m = 1{,}5\,\text{kg}$, lamppu on paikallaan; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** johdon jännitysvoima $T$ yksikössä $\text{N}$. Jännitysvoima on voima, jolla johto vetää lamppua.
 **Periaate:** Lamppu on levossa. Silloin Newtonin toisen lain mukaan siihen vaikuttavien voimien summa on nolla.
-**Voimakuvio:** Lamppu on piirretty pisteenä, ja $y$-akseli osoittaa ylös. Lamppuun vaikuttavat Maa ja johto. Paino $\mathbf{G}$ osoittaa alas. Johdon jännitysvoima $\mathbf{T}$ osoittaa johtoa pitkin ylös. Nuolet ovat yhtä pitkät.
+**Voimakuvio:** Lamppu on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Lamppuun vaikuttavat Maa ja johto. Paino $\mathbf{G}$ osoittaa alas. Johdon jännitysvoima $\mathbf{T}$ osoittaa johtoa pitkin ylös. Nuolet ovat yhtä pitkät.
 **Kaava:** $T - mg = 0$, joten $T = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $T = 1{,}5\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 14{,}715\,\text{N}$
@@ -24,7 +24,7 @@
 **Annettu:** $m = 0{,}50\,\text{kg}$, käden voima $F = 20\,\text{N}$ vaakasuoraan seinää kohti, kirja on paikallaan; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** seinän kitkavoima $F_\mu$ yksikössä $\text{N}$. Kitkavoima on voima, joka estää kirjaa liukumasta.
 **Periaate:** Kirja on levossa. Silloin voimien summa on nolla sekä vaaka- että pystysuunnassa. Seinä on pystysuora. Siksi sen tukivoima on vaakasuora ja sen kitkavoima on pystysuora.
-**Voimakuvio:** Kirja on piirretty pisteenä. Akseli $x$ osoittaa seinää kohti ja $y$ ylös. Käden voima $\mathbf{F}$ osoittaa seinää kohti. Seinän tukivoima $\mathbf{N}$ osoittaa seinästä poispäin. Molemmat ovat vaakasuoria. Paino $\mathbf{G}$ osoittaa alas. Seinän kitkavoima $\mathbf{F}_\mu$ osoittaa ylös, koska kirja yrittää liukua alas.
+**Voimakuvio:** Kirja on piirretty suorakulmiona. Akseli $x$ osoittaa seinää kohti ja $y$ ylös. Käden voima $\mathbf{F}$ osoittaa seinää kohti. Seinän tukivoima $\mathbf{N}$ osoittaa seinästä poispäin. Molemmat ovat vaakasuoria. Paino $\mathbf{G}$ osoittaa alas. Seinän kitkavoima $\mathbf{F}_\mu$ osoittaa ylös, koska kirja yrittää liukua alas.
 **Kaava:** $y$: $F_\mu - mg = 0$, joten $F_\mu = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $F_\mu = 0{,}50\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 4{,}905\,\text{N}$
@@ -35,7 +35,7 @@
 **Annettu:** $m = 65\,\text{kg}$, hissi liikkuu tasaisella nopeudella; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** lattian tukivoima $N$ yksikössä $\text{N}$. Tukivoima on voima, jolla lattia työntää ihmistä ylöspäin.
 **Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla. Silloin Newtonin toisen lain mukaan voimien summa on nolla, vaikka ihminen liikkuu.
-**Voimakuvio:** Ihminen on piirretty pisteenä, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas. Lattian tukivoima $\mathbf{N}$ osoittaa ylös. Nuolet ovat yhtä pitkät. Nopeutta ei piirretä voimaksi.
+**Voimakuvio:** Ihminen on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas. Lattian tukivoima $\mathbf{N}$ osoittaa ylös. Nuolet ovat yhtä pitkät. Nopeutta ei piirretä voimaksi.
 **Kaava:** $N - mg = 0$, joten $N = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 65\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 637{,}65\,\text{N}$
@@ -46,6 +46,7 @@
 **Annettu:** $T = 250\,\text{N}$, kulma vaakatasoon $\alpha = 40^\circ$
 **Kysytty:** jännitysvoiman vaakakomponentti $T_x$ yksikössä $\text{N}$. Vaakakomponentti on se osa voimasta, joka osoittaa vaakasuoraan.
 **Periaate:** Voima ja sen komponentit muodostavat suorakulmaisen kolmion. Voima on kolmion pisin sivu eli hypotenuusa. Vaakakomponentti on kulman $\alpha$ viereinen kateetti.
+**Voimakuvio:** Köyden voima $\mathbf{T}$ on yksi yhtenäinen nuoli. Se lähtee kiinnityskohdasta vinosti ylös $40^\circ$:n kulmassa. Komponentit $T_x$ ja $T_y$ piirretään katkoviivoin samasta kohdasta.
 **Kaava:** $T_x = T\cos\alpha$
 **Muunnokset:** Voima on newtoneina ja kulma asteina. Muunnoksia ei tarvita. Laskimen asteikko on DEG.
 **Sijoitus:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191{,}5\,\text{N}$
@@ -56,7 +57,7 @@
 **Annettu:** $m = 15\,\text{kg}$, $T = 60\,\text{N}$, $\alpha = 30^\circ$, pulkka liikkuu tasaisella nopeudella
 **Kysytty:** lumen kitkavoima $F_\mu$ yksikössä $\text{N}$
 **Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla. Silloin voimien summa on nolla myös liikkeen suunnassa. Kitka on yhtä suuri kuin narun voiman vaakakomponentti.
-**Voimakuvio:** Pulkka on piirretty pisteenä. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas. Lumen tukivoima $\mathbf{N}$ osoittaa ylös, ja se on painoa lyhyempi. Narun jännitysvoima $\mathbf{T}$ osoittaa vinosti ylös eteenpäin. Lumen kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Komponentti $T_x$ on piirretty katkoviivalla.
+**Voimakuvio:** Pulkka on piirretty suorakulmiona. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas. Lumen tukivoima $\mathbf{N}$ osoittaa ylös, ja se on painoa lyhyempi. Narun jännitysvoima $\mathbf{T}$ osoittaa vinosti ylös eteenpäin. Lumen kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Komponentti $T_x$ on piirretty katkoviivalla.
 **Kaava:** $x$: $T\cos\alpha - F_\mu = 0$, joten $F_\mu = T\cos\alpha$
 **Muunnokset:** Voima on newtoneina. Muunnoksia ei tarvita. Massaa ei tarvita, koska kitka saadaan vaakasuunnan yhtälöstä.
 **Sijoitus:** $F_\mu = 60\,\text{N}\cdot\cos 30^\circ = 51{,}96\,\text{N}$
@@ -67,7 +68,7 @@
 **Annettu:** $m = 60\,\text{kg}$, kiihtyvyys ylöspäin $a = 1{,}2\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** lattian tukivoima $N$ yksikössä $\text{N}$
 **Periaate:** Ihminen kiihtyy ylöspäin hissin mukana. Siksi kokonaisvoima osoittaa ylös. Newtonin toisen lain mukaan se on $ma$.
-**Voimakuvio:** Ihminen on piirretty pisteenä, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on pidempi. Kiihtyvyys piirretään erikseen, ei voimaksi.
+**Voimakuvio:** Ihminen on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on pidempi. Kiihtyvyys piirretään erikseen, ei voimaksi.
 **Kaava:** $N - mg = ma$, joten $N = m(g + a)$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 60\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}2\,\text{m/s}^2) = 60\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 = 660{,}6\,\text{N}$
@@ -78,7 +79,7 @@
 **Annettu:** $m = 40\,\text{kg}$, $F = 120\,\text{N}$ kulmassa $\alpha = 30^\circ$ vaakatason alapuolelle, $F_\mu = 80\,\text{N}$
 **Kysytty:** laatikon kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Laatikko kiihtyy vaakasuunnassa. Newtonin toisen lain mukaan vaakasuuntaisten voimakomponenttien summa on $ma$. Pystysuuntaista yhtälöä ei tarvita, koska kitka on annettu.
-**Voimakuvio:** Laatikko on piirretty pisteenä. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas. Lattian tukivoima $\mathbf{N}$ osoittaa ylös, ja se on painoa pidempi. Kahvan voima $\mathbf{F}$ osoittaa vinosti alas eteenpäin. Kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Komponentit $F_x$ ja $F_y$ on piirretty katkoviivalla.
+**Voimakuvio:** Laatikko on piirretty suorakulmiona. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas. Lattian tukivoima $\mathbf{N}$ osoittaa ylös, ja se on painoa pidempi. Kahvan voima $\mathbf{F}$ osoittaa vinosti alas eteenpäin. Kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Komponentit $F_x$ ja $F_y$ on piirretty katkoviivalla.
 **Kaava:** $x$: $F\cos\alpha - F_\mu = ma$, joten $a = \dfrac{F\cos\alpha - F_\mu}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja massa kilogrammoina. Tulos tulee suoraan yksikössä $\text{m/s}^2$.
 **Sijoitus:** $a = \dfrac{120\,\text{N}\cdot\cos 30^\circ - 80\,\text{N}}{40\,\text{kg}} = \dfrac{103{,}9\,\text{N} - 80\,\text{N}}{40\,\text{kg}} = 0{,}598\,\text{m/s}^2$
@@ -89,7 +90,7 @@
 **Annettu:** $m = 50\,\text{kg}$, $F_1 = 30\,\text{N}$ ja $F_2 = 40\,\text{N}$ vaakasuoraan, kohtisuorassa toisiaan vastaan; kitkaa ei ole
 **Kysytty:** kelkan kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kokonaisvoima on voimien vektorisumma. Newtonin toisen lain mukaan se määrää kiihtyvyyden. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa.
-**Voimakuvio:** Kelkka on piirretty pisteenä ylhäältä katsottuna. Akseli $x$ osoittaa voiman $\mathbf{F}_1$ suuntaan ja $y$ voiman $\mathbf{F}_2$ suuntaan. Sivulta katsottuna paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Ne ovat yhtä pitkät.
+**Voimakuvio:** Kelkka on piirretty suorakulmiona ylhäältä katsottuna. Akseli $x$ osoittaa voiman $\mathbf{F}_1$ suuntaan ja $y$ voiman $\mathbf{F}_2$ suuntaan. Sivulta katsottuna paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Ne ovat yhtä pitkät.
 **Kaava:** $\Sigma F_x = F_1$ ja $\Sigma F_y = F_2$, joten $\Sigma F = \sqrt{F_1^2 + F_2^2}$. Newtonin toisesta laista $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja massa kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F = \sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}$ ja $a = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1{,}0\,\text{m/s}^2$
@@ -100,7 +101,7 @@
 **Annettu:** $m = 70\,\text{kg}$, hissi liikkuu ylöspäin ja hidastaa, kiihtyvyyden suuruus $1{,}5\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** lattian tukivoima $N$ yksikössä $\text{N}$
 **Periaate:** Ylöspäin liikkuva hissi hidastuu. Silloin sen kiihtyvyys osoittaa alas, vaikka nopeus osoittaa ylös. Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas.
-**Voimakuvio:** Ihminen on piirretty pisteenä, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on lyhyempi. Nopeus $\mathbf{v}$ ylös ja kiihtyvyys $\mathbf{a}$ alas piirretään kuvion viereen ohuina nuolina. Ne eivät ole voimia. Kiihtyvyyden komponentti on $a_y = -1{,}5\,\text{m/s}^2$.
+**Voimakuvio:** Ihminen on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on lyhyempi. Nopeus $\mathbf{v}$ ylös (sininen) ja kiihtyvyys $\mathbf{a}$ alas (oranssi) piirretään kuvion viereen ohuina nuolina. Ne eivät ole voimia. Kiihtyvyyden komponentti on $a_y = -1{,}5\,\text{m/s}^2$.
 **Kaava:** $N - mg = m a_y$, joten $N = m(g + a_y)$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 581{,}7\,\text{N}$
@@ -111,7 +112,7 @@
 **Annettu:** $m = 19\,\text{kg}$, alkunopeus $v_0 = 2{,}0\,\text{m/s}$, loppunopeus $v = 0$, aika $\Delta t = 20\,\text{s}$; hidastuminen tasaista
 **Kysytty:** kitkavoima $F_\mu$ yksikössä $\text{N}$
 **Periaate:** Kiven vauhti muuttuu tasaisesti. Siksi kiihtyvyys on $a = \dfrac{\Delta v}{\Delta t}$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Newtonin toisen lain mukaan liikkeen suuntainen kokonaisvoima on $ma$. Ainoa vaakasuora voima on kitka.
-**Voimakuvio:** Kivi on piirretty pisteenä. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas ja jään tukivoima $\mathbf{N}$ ylös. Kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Eteenpäin vievää voimaa ei ole, koska heittäjä ei enää koske kiveen.
+**Voimakuvio:** Kivi on piirretty suorakulmiona. Akseli $x$ osoittaa liikkeen suuntaan ja $y$ ylös. Paino $\mathbf{G}$ osoittaa alas ja jään tukivoima $\mathbf{N}$ ylös. Kitkavoima $\mathbf{F}_\mu$ osoittaa taaksepäin. Eteenpäin vievää voimaa ei ole, koska heittäjä ei enää koske kiveen.
 **Kaava:** $a_x = \dfrac{v - v_0}{\Delta t}$ ja $x$: $-F_\mu = m a_x$, joten $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
 **Muunnokset:** Massa on kilogrammoina, nopeudet yksikössä $\text{m/s}$ ja aika sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $F_\mu = \dfrac{19\,\text{kg}\cdot(2{,}0\,\text{m/s} - 0)}{20\,\text{s}} = 19\,\text{kg}\cdot 0{,}10\,\text{m/s}^2 = 1{,}9\,\text{N}$
@@ -122,7 +123,7 @@
 **Annettu:** $m = 4{,}0\,\text{g}$, noste $F_\text{noste} = 0{,}10\,\text{N}$, pallo on paikallaan katossa; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** katon tukivoima $N$ yksikössä $\text{N}$. Noste on voima, jolla ilma työntää palloa ylöspäin.
 **Periaate:** Pallo on levossa. Newtonin toisen lain mukaan voimien summa on silloin nolla. Katto koskettaa palloa yläpuolelta. Sen tukivoima on kohtisuorassa kattoa vastaan ja työntää palloa pois katosta eli alas.
-**Voimakuvio:** Pallo on piirretty pisteenä, ja $y$-akseli osoittaa ylös. Noste $\mathbf{F}_\text{noste}$ osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas. Katon tukivoima $\mathbf{N}$ osoittaa myös alas. Nosteen nuoli on yhtä pitkä kuin painon ja tukivoiman nuolet yhteensä. Ilmanvastusta ei ole, koska pallo ei liiku.
+**Voimakuvio:** Pallo on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Noste $\mathbf{F}_\text{noste}$ osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas. Katon tukivoima $\mathbf{N}$ osoittaa myös alas. Nosteen nuoli on yhtä pitkä kuin painon ja tukivoiman nuolet yhteensä. Ilmanvastusta ei ole, koska pallo ei liiku.
 **Kaava:** $F_\text{noste} - mg - N = 0$, joten $N = F_\text{noste} - mg$
 **Muunnokset:** $m = 4{,}0\,\text{g} = 4{,}0 \cdot 0{,}001\,\text{kg} = 0{,}0040\,\text{kg}$
 **Sijoitus:** $N = 0{,}10\,\text{N} - 0{,}0040\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}10\,\text{N} - 0{,}03924\,\text{N} = 0{,}06076\,\text{N}$

@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1bb16197ef174c7b
+CONTENT-HASH: 294c630836cf3089
 
 ## Blocking
-- none
 
 ## Polish
-- scripts/check_i18n.py does not list `detail` (a rubric criterion's specifics) in TEXT_KEYS, so it reports the translated check-3 criteria details as errors; the translation is right and the checker needs `detail` added (outside this review's scope; the content hash does not change when it is fixed).
-- lang/en.json (not a lesson file): the sim's canvas title reads "Situation" where the lesson says "situation diagram".
 
 ## Checked
-- Checked (full translation review against the reviewed Finnish): lesson.md (core idea, eight steps, the two representations, the YTL scoring paragraph, formula section, staged worked example 2.96 m/s² / 71.8 N rounded to 3.0 m/s² and 72 N, reasonableness 118 N = 72 N + 46 N, misconception, summary), inquiry.json (hook, review, both predictions with the model values 196/146 N and 5.0/2.5 m/s², sim texts, exp-1 numeric solution 50 N, exp-2 choice, conclusion model, spring-balance data 4.9 N, error-finding, elevator, fish 23 N, checks incl. sign 51 N, draw-it-yourself 52 N / 148 N), exit ticket, meta. Decimal points throughout, units and LaTeX preserved; no wrong option became right; the elevator options keep empty texts and the four figure descriptions only list arrow lengths. Force symbols G, N, T, F_mu, F consistent with the figure labels; buoyancy is F_b in the helium figure via figures.json. Fixed: the experiments' column name `tilanne` translated (situation), the six check-3 rubric details translated from Finnish, the sim howto now names the options as the sim shows them. figures.py --lang en --check up to date; preview at 360 px: no overflow, no page errors, sim labels in English, figures render.
+- Delta e71366d4 (fifth rule: G at the geometric centre, N from the contact surface perpendicular to it, G and N never on one line):
+  - esimerkki: N moved to x = 290, from the bottom face (y = 207), with G from the centre (270; 185). That is 20 px apart. N is still 71,8 N to scale (82,5 px at 1,151 px/N).
+  - heliumpallo: F_noste and G now start at the centre (515; 490) of the 480–550 rectangle. N still pushes down, ends on the top face at x = 495 and is 20 px from G. F_noste = G + N (100 = 40 + 60 px) is unchanged.
+- The rule holds in the other figures, which this commit did not change: tilanne 20 px, suunnat lattia 15 px, hissi a–d 12 px, virhe 20 px, malli-tyonto 30 px, malli-pulkka 24 px and malli-hissi 12 px apart. On the slope, N is perpendicular and not parallel to G. The sim draws N 14 px left of G at the bottom face.
+- The rendered PNGs (contact sheet) show N and G clearly side by side in every diagram. The arrow lengths and directions are unchanged.
+- From my earlier reviews this round: the four drawing rules, the lift options (exactly one error each), every recomputed number, and no point-model text.
+- In lesson.md, the SVG coordinate changes of e71366d4 are identical to the Finnish source's (diff of the changed lines matches). The figure descriptions are unchanged and still describe the arrows correctly. The physics text is unchanged from my last review of this version.

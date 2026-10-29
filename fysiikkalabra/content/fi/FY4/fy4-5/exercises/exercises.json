@@ -39,7 +39,7 @@
     {
       "id": "fy4-5-L1-05",
       "level": 1,
-      "text": "Laatikkoa vedetään köydellä, jonka jännitysvoima on $250\\,\\text{N}$ ja joka on $40^\\circ$:n kulmassa vaakatasoon nähden. Piirrä köyden voima ja sen komponentit katkoviivoin. Kuinka suuri on jännitysvoiman vaakakomponentti?",
+      "text": "Laatikkoa vedetään köydellä, jonka jännitysvoima on $250\\,\\text{N}$ ja joka on $40^\\circ$:n kulmassa vaakatasoon nähden. Piirrä köyden voima ja katkoviivoin sen komponentit. Kuinka suuri on jännitysvoiman vaakakomponentti?",
       "answer": 190,
       "unit": "N",
       "tolerance": 0.02

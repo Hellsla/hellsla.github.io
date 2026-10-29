@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5ea8f43966d623bc
+CONTENT-HASH: 479ba762a742d257
 
 ## Blocking
 
 ## Polish
-- solutions.md:9 (L1-01): "14,7 N ≈ 15 N, kaksi merkitsevää numeroa" names two answers. Give one: "Vastaus: 15 N, kaksi merkitsevää numeroa kuten massassa 1,5 kg (laskettu arvo 14,7 N)."
-- solutions.md:45-53 (L1-05): the task now asks for a drawing, but the solution has no Voimakuvio step. Add one, for example: "Voimakuvio: köyden voima T vinosti ylös 40° kulmassa, komponentit T_x ja T_y katkoviivoin."
-- exercises.json L2-01: the sled pulled at 30° on snow is close to the worked example. Kept on purpose.
+- ruutu figure — the arrows start from the middles of the sides. That is fine for reading a grid, but a short note in the L1-02 solution would help ("nuolet on sijoitettu luettavuuden vuoksi sivujen keskelle").
 
 ## Checked
-- The levels are 5/4/3. Level 3 combines deceleration direction, kinematics and a downward normal force.
-- In the draw tasks L2-01 and L3-01, the student draws "ennen kuin avaat ratkaisun". The model figures appear only in the solution.
-- The ruutu figure is legible and gives every value. Its description does not give the answer.
-- Every solution with forces names the diagram before the equation and states the axes and signs.
-- The L1-05 significant-figure reason is now correct.
-- The contexts are everyday ones. The question comes last. The case after number+unit is correct.
+- Delta 000c8ad0. L1-05 wording: "Piirrä köyden voima ja katkoviivoin sen komponentit" is unambiguous, and the solution now has a Voimakuvio step before the formula.
+- L3-01 solution names the course colours (sininen v, oranssi a).
+- malli-hissi: the N label no longer touches the rectangle. Pictorial tilannekuva, rectangle, and v and a beside the diagram.
+- From the first pass, still valid: no point model, level counts 5/4/3, none repeats the example, each solution starts from the diagram, case after number+unit correct, figure descriptions give the data without the answer.

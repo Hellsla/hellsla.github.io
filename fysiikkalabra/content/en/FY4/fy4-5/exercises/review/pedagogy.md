@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5f6ed52f872299ba
+CONTENT-HASH: ac954186c2e0480c
 
 ## Blocking
 - none
@@ -8,4 +8,6 @@ CONTENT-HASH: 5f6ed52f872299ba
 - none
 
 ## Checked
-- Checked (full translation review): each task keeps the situation first and the question last; the draw-before-opening instruction stays in L2-01 and L3-01; every fbd solution keeps its Free-body diagram step before Formula (L1-02 reads the grid, L1-05 is a component task, as in Finnish). Wording polish: L3-03 now speaks of the buoyancy arrow's length, not the force's.
+- Scope: solutions.md (free-body-diagram lines of the solutions: "as a rectangle", no point model; every figure line).
+- Natural English wording; terms consistent (free-body diagram / situation diagram; voimakuvio / tilannekuva); the situation-diagram vs force-diagram distinction is clear to a student; figure alt texts read well and match the redrawn figures.
+- `figures.py fy4-5 --lang en --check` up to date; `check_i18n.py` 0 errors. Synced to Finnish commit 000c8ad0 (push sentence, friction wording, objects drawn as they look, check-3 details, howto checkbox name, L1-05 task and Voimakuvio line, L3-01 colours, new suunnat description); re-checked, no problems.

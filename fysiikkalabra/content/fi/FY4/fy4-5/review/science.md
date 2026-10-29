@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7985c5caf17e486c
+CONTENT-HASH: 323719bbcc0ccf96
 
 ## Blocking
 
 ## Polish
-- lessons/FY4/fy4-5/figures.py:249 (`malli-tyonto`) — the figure still draws the floor line, although its description says "Kuviossa on vain laatikko". — Drop the floor line, or say "laatikko lattialla".
-- inquiry.json:60 — the feedback counts a component among "kolme voimaa", against step 7. — Reword, for example "kaksi voimaa ja narun voiman pystykomponentti".
-- inquiry.json:508 — the `fbd_magnitudes` criterion asks for "komponentit katkoviivalla", but the model figure draws none. — Add F_x as a dashed component, or drop the clause.
-- figures.py:282 — the docstring says L3-02; the figure belongs to L3-01.
+- sim.js:139 — in push mode at about 40°, the F_x label still touches F's arrowhead at the sled's corner. — Offset it in push mode.
+- review/shots and site/sims/fy4/fy4-5/sim.js are still the old point-model versions. — Regenerate and rebuild before publishing.
 
 ## Checked
-- `malli-tyonto` now shows only the box, apart from the floor line noted under Polish. F starts at the back top corner, where the handle is fixed, and points down and forward at 30°. N = 147,7 N > G = 117,7 N, F_μ = F_x = 52 N, and the net force is zero. The figure agrees with `fbd_object`, with `fbd_representation` and with guide step 3.
-- sim.js:121: in the body model the push arrow starts on the sled, and the components start from the same point.
-- The new hook and reflect questions ask about the normal force. The lesson and experiment 2 answer them (N = G ∓ F sin α); this replaces the old acceleration question, whose answer depended on friction.
-- Lift options hissi a–d: the option texts are empty, and each figure's description lists its arrows. Exactly one option is correct, and each distractor has one error. The added prompt sentence gives nothing away.
-- The lesson prose is unchanged since my last review: the guide, the worked example (a = 2,96 m/s², N = 71,8 N) and all other figures were checked then.
-- All inquiry numbers and mistake values were recomputed in one script and agree (146 N, 50 N, 5,0/2,5 m/s², 4,886 N, 22,62 N, 51,22 N, 52/148 N).
-- Every numeric solution writes its Voimakuvio step before its Kaava step.
-- The exit ticket and the YTL citations match the theory and the force-diagrams table.
+- Delta e71366d4 (fifth rule: G at the geometric centre, N from the contact surface perpendicular to it, G and N never on one line):
+  - esimerkki: N moved to x = 290, from the bottom face (y = 207), with G from the centre (270; 185). That is 20 px apart. N is still 71,8 N to scale (82,5 px at 1,151 px/N).
+  - heliumpallo: F_noste and G now start at the centre (515; 490) of the 480–550 rectangle. N still pushes down, ends on the top face at x = 495 and is 20 px from G. F_noste = G + N (100 = 40 + 60 px) is unchanged.
+- The rule holds in the other figures, which this commit did not change: tilanne 20 px, suunnat lattia 15 px, hissi a–d 12 px, virhe 20 px, malli-tyonto 30 px, malli-pulkka 24 px and malli-hissi 12 px apart. On the slope, N is perpendicular and not parallel to G. The sim draws N 14 px left of G at the bottom face.
+- The rendered PNGs (contact sheet) show N and G clearly side by side in every diagram. The arrow lengths and directions are unchanged.
+- From my earlier reviews this round: the four drawing rules, the lift options (exactly one error each), every recomputed number, and no point-model text.
