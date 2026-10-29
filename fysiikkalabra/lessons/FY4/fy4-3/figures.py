@@ -234,7 +234,7 @@ def kone():
     """Esimerkki: an airliner in level flight at constant velocity; on its diagram the two thrusts equal the drag, lift equals weight."""
     f = Fig("fy43-kone", 330, "Kaksi kuvaa matkustajakoneesta, joka lentää vaakasuoraan tasaisella nopeudella. Vasemmalla tilannekuva: kone "
             "ja sen yllä ohut sininen nuoli v oikealle. Oikealla koneen voimakuvio, kone suorakulmiona. Paino G keskipisteestä alas ja "
-            "siipien nostovoima F noste ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta "
+            "siipien nostovoima F nosto ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta "
             "eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v lähtee takareunasta taaksepäin ja on yhtä pitkä kuin työntövoimat "
             "yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa.")
     f.tex(150, 24, r"\text{tilannekuva}", "middle", MUTED)
@@ -249,7 +249,7 @@ def kone():
     cx, cy, w, h = 470, 170, 110, 50
     d = FBD(f, 0.8, body=(cx, cy, w, h), a_dir=(0, 0))
     d.force("G", (0, -100), (cx, cy), "gravity", lab=(-22, -6))
-    d.force("F_noste", (0, 100), (cx + 30, cy), "other", tex=r"\overline{F}_\text{noste}", lab=(34, -2))
+    d.force("F_nosto", (0, 100), (cx + 30, cy), "other", tex=r"\overline{F}_\text{nosto}", lab=(34, -2))
     d.force("F_1", (48, 0), (cx + w / 2, cy - 12), "applied", tex=r"\overline{F}_1", lab=(14, -20))
     d.force("F_2", (48, 0), (cx + w / 2, cy + 12), "applied", tex=r"\overline{F}_2", lab=(14, 20))
     d.force("F_v", (-96, 0), (cx - w / 2, cy), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-8, -22))

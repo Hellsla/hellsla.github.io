@@ -16,7 +16,7 @@ new p5((p) => {
   const FLOOR = 132, X0 = 46, PXM = 42;                               // situation: floor level, x = −0,5 m at X0, px per metre
   const GRW = { x0: 56, y0: 362, x1: 300, y1: 224, tmax: 6, vmax: 3.5 }; // the (t, v) graph's plot area and ranges (wide)
   const DW = { x: 482, y: 300, w: 72, h: 44 };                         // force diagram: the box (centre, size) (wide)
-  // narrow screens (sim-root < 500 px wide): the three panels stack at full width, 600 x 720
+  // narrow screens (sim-root < 500 px wide): the three panels stack at full width, 600 x 740
   const GRN = { x0: 74, y0: 424, x1: 520, y1: 246, tmax: 6, vmax: 3.5 }, DN = { x: 400, y: 600, w: 94, h: 57 };
   let GR = GRW, D = DW, S = S0, narrow = false, sk = 1, OY = 0;
   const RED = [201, 42, 42], BLUE = [25, 113, 194], INKC = [31, 41, 51], MUTEDC = [107, 116, 128];
