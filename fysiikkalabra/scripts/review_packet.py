@@ -346,7 +346,7 @@ def packet(folder, role, fix=False):
     return mode
 
 
-def batch_diff(diff, role):
+def batch_diff(diff, role, headings_only=True):
     """The part of a lesson's diff a batch reviewer reads: restyled figure lines are counted, not shown (the pedagogy
     reviewer sees them in the captures, the science reviewer need not); the science reviewer gets only the headings."""
     keep, svg = [], 0
@@ -354,7 +354,7 @@ def batch_diff(diff, role):
         body = l[1:] if l[:1] in "+- " and not l.startswith(("+++", "---")) else None
         if body is not None and SVG_LINE.match(body):
             svg += l[:1] in "+-"; continue
-        if role == "science" and body is not None and not body.startswith("## "): continue
+        if role == "science" and headings_only and body is not None and not body.startswith("## "): continue
         keep.append(l)
     return "\n".join(keep).strip() + (f"\n# ({svg // 2} figure line(s) restyled, not shown: see the captures)" if svg else "")
 
@@ -376,8 +376,8 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
              "the same skill, the same demand, the same physics (NOTES.md §8 \"The opening\")." if goals_only else
              "is every claim the diff changes or adds right by the physics guardrails below, worded as the rest of the lesson and the chapters it builds on say it, and does every changed choice still have exactly one correct option with feedback that says why the others are wrong?"
              if role == "science" else
-             "is the law's name clear to a student; does the lead of the simulation say what to do and do its boxes hold the rest under fitting names; "
-             "do the recoloured figures read well (captures listed per lesson), with colour that carries the physics, never alone, and labels legible?")
+             "is the changed text clear to a 16–19-year-old, in good language, consistent with the rest of the lesson and with the tasks, feedback and solutions it touches; "
+             "where the change is a law's name, a simulation's lead and boxes or recoloured figures: is the name clear, does the lead say what to do, do the figures read well (captures listed per lesson) with colour that carries the physics, never alone?")
     out += ("\n## What you judge\nEach lesson below passed your review earlier; only its diff changed. Judge the diff in its context (the files are on disk "
             "if you need more): " + judge
             + " If one lesson's change cannot be judged this way, write `ESCALATE: full review needed` as line 3 of that lesson's report (verdict FAIL) and go on.\n"
@@ -394,7 +394,8 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
         if role == "pedagogy" and (folder / "review/shots.md").exists():
             rows = [l for l in (folder / "review/shots.md").read_text().splitlines() if re.search(r"-(fig-\d+-390|fig-row-1280|sim-390)", l)]
             out += "Captures (paths relative to the lesson folder):\n" + "\n".join(rows) + "\n"
-        out += f"```diff\n{batch_diff(sc['diff'], role)}\n```\n"
+        styling = set(sc["categories"]) <= {"style", "label-position", "section-name", "illustration", "relocated"}   # the science reviewer needs the text of any other change
+        out += f"```diff\n{batch_diff(sc['diff'], role, headings_only=styling)}\n```\n"
     if skipped: out += "\n## Not in this batch\n" + "\n".join(f"- {x}" for x in skipped) + "\n"
     f = ROOT / "review-batch" / f"packet-{role}{'' if lang == courses.SOURCE_LANG else '-' + lang}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {len(ids) - len(skipped)} lessons, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens" + (f"; not in it: {'; '.join(skipped)}" if skipped else ""))

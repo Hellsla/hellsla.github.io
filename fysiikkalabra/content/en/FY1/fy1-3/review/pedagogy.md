@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 7a94ce2c89ed2208
+CONTENT-HASH: 06035496fc87d116
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- None.
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+batch delta review: new paragraph is placed right after the half-range figure, short, clear, uses established terms (hajonta/lukeman epävarmuus), and 'kuten alla' points to the reading-uncertainty paragraph two blocks later; consistent with the lesson; no tasks or feedback touched.

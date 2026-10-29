@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: d22f7ef778b7602a
-
+CONTENT-HASH: 6f1546792d4e9872
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- None.
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+batch delta review: title now describes the content and matches goals and meta; en dash/colon style consistent with the course's other titles; no other text affected.

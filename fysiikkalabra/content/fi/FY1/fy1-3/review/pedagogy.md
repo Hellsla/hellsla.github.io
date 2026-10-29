@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f527967b06b64200
-
+CONTENT-HASH: 266d673c4ee0a236
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- None.
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+batch delta review: new paragraph is placed right after the half-range figure, short, clear, uses established terms (hajonta/lukeman epävarmuus), and 'kuten alla' points to the reading-uncertainty paragraph two blocks later; consistent with the lesson; no tasks or feedback touched.

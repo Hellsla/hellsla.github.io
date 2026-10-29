@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 21c5fc8e9ac0a590
-
-Round 2: exit ticket 3 → 1 (new train question), stage text "Lopuksi yksi".
-
+CONTENT-HASH: 6f1546792d4e9872
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- None.
 ## Checked
-- New exit question: 20 min = 1/3 h, s = 90 km/h · 1/3 h = 30 km (recomputed); uniform motion stated; consistent units (h) explained; the lesson's conversion paragraph (lesson.md:129) supports it.
-- Count 1 matches "Lopuksi yksi nopea kysymys".
-- check-c2 and the rest unchanged since the round-1 PASS.
+batch delta review: title change only (and objective rephrasings); new title names the contents (speed, position, graphs) and matches the goals and the s = s0 + vt model; no physics claim, option or number changed.
