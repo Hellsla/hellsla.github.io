@@ -5,30 +5,41 @@ Colours: warm grey = energy taken in, green = useful energy, orange = losses (he
 from figlib import Fig, INK, MUTED, RULE, RULE_LIGHT, WHITE, GLASS, HEAT, HEAT_LIGHT, GOOD, GOOD_LIGHT, ALUMINIUM
 from figlib import HOT, METAL_EDGE
 import herolib as H
+from figlib import COLD, IRON, SAND_DARK
+from herolib import steel
 
 
 def hero():
     """The chapter's opening illustration: an incandescent bulb and an LED bulb shining equally bright, heat rising only from the first."""
-    f = H.hero("fy24-hero", "Kuvitus: kaksi kattolamppua rinnakkain pimeässä huoneessa. Vasemmalla hehkulamppu, jonka hehkulanka hohtaa ja "
-               "jonka yläpuolella väreilee lämpöä; oikealla ledilamppu. Molempien valokeilat ovat yhtä kirkkaat.")
-    f.rect(0, 0, 1200, 600, "#2b3440")
-    f.rect(0, 0, 1200, 40, INK)
-    for cx, led in ((370, False), (830, True)):
-        f.add(f'<path d="M{cx - 60},300 L{cx - 230},600 H{cx + 230} L{cx + 60},300 Z" fill="{HEAT_LIGHT}" fill-opacity="0.28"/>')
-        f.add(f'<circle cx="{cx}" cy="260" r="120" fill="{HEAT_LIGHT}" fill-opacity="0.25"/>')
-        f.line(cx, 40, cx, 160, INK, 4)
-        f.rect(cx - 26, 160, 52, 50, ALUMINIUM, INK, 3, 4)
-        for k in range(3): f.line(cx - 26, 172 + 12 * k, cx + 26, 176 + 12 * k, METAL_EDGE, 2)
+    f = H.hero("fy24-hero", "Kuvitus: kaksi kattolamppua rinnakkain illalla huoneessa pöydän yllä. Vasemmalla hehkulamppu, jonka hehkulanka "
+               "hohtaa ja jonka ympärillä väreilee lämpöä; oikealla ledilamppu. Molempien valokeilat pöydälle ovat yhtä kirkkaat.")
+    f.rect(0, 0, 1200, 600, H.grad(f, "fy24h-wall", INK, IRON))
+    f.rect(0, 0, 1200, 34, INK)
+    H.wood(f, 80, 500, 1040, 28, "fy24h-table")
+    f.rect(110, 528, 26, 72, SAND_DARK, INK, 2); f.rect(1064, 528, 26, 72, SAND_DARK, INK, 2)
+    for cx, led in ((360, False), (840, True)):
+        f.add(f'<path d="M{cx - 60},300 L{cx - 250},500 H{cx + 250} L{cx + 60},300 Z" fill="{HEAT_LIGHT}" fill-opacity="0.3"/>')
+        f.add(f'<ellipse cx="{cx}" cy="502" rx="250" ry="16" fill="{HEAT_LIGHT}" fill-opacity="0.55"/>')
+        f.circle(cx, 262, 150, H.glow(f, f"fy24h-g{cx}", HEAT_LIGHT, HEAT_LIGHT))
+        f.line(cx, 34, cx, 156, ALUMINIUM, 4)
+        f.rect(cx - 28, 154, 56, 58, steel(f, f"fy24h-cap{cx}"), INK, 3, 4)
+        for k in range(4): f.path(f"M{cx - 28},{166 + 11 * k} L{cx + 28},{171 + 11 * k}", stroke=METAL_EDGE, w=2)
         if led:
-            f.path(f"M{cx - 30},210 L{cx - 70},260 Q{cx - 78},340 {cx},346 Q{cx + 78},340 {cx + 70},260 L{cx + 30},210 Z", WHITE, INK, 3)
-            f.path(f"M{cx - 54},270 Q{cx},250 {cx + 54},270 L{cx + 50},310 Q{cx},326 {cx - 50},310 Z", "#fff4d6")
-            for k in range(5): f.circle(cx - 36 + 18 * k, 292, 5, HEAT_LIGHT)
+            f.path(f"M{cx - 32},212 L{cx - 74},262 Q{cx - 82},346 {cx},352 Q{cx + 82},346 {cx + 74},262 L{cx + 32},212 Z", H.grad(f, "fy24h-led", WHITE, GLASS), INK, 3)
+            f.path(f"M{cx - 56},270 Q{cx},250 {cx + 56},270 L{cx + 52},314 Q{cx},330 {cx - 52},314 Z", WHITE)
+            for k in range(6): f.rect(cx - 46 + 16 * k, 284, 12, 12, HEAT_LIGHT, INK, 1.5, 2)
+            f.rect(cx - 40, 214, 80, 24, ALUMINIUM, INK, 2)
+            for k in range(5): f.line(cx - 32 + 16 * k, 216, cx - 32 + 16 * k, 236, METAL_EDGE, 2)      # the cool heat sink
         else:
-            f.path(f"M{cx - 30},210 L{cx - 40},236 Q{cx - 92},270 {cx - 80},318 Q{cx - 60},356 {cx},356 Q{cx + 60},356 {cx + 80},318 Q{cx + 92},270 {cx + 40},236 L{cx + 30},210 Z", "#fff4d6", INK, 3)
-            f.path(f"M{cx - 10},212 L{cx - 22},290 M{cx + 10},212 L{cx + 22},290", stroke=METAL_EDGE, w=2)
-            f.path(f"M{cx - 22},290 q6,-12 11,0 t11,0 t11,0 t11,0", stroke=HEAT, w=4)
-            f.add(f'<circle cx="{cx}" cy="292" r="30" fill="{HEAT}" fill-opacity="0.25"/>')
-            H.shimmer(f, [cx - 140, cx - 104, cx + 104, cx + 140], 330, 130, HOT)
+            f.path(f"M{cx - 32},212 L{cx - 42},238 Q{cx - 96},272 {cx - 84},322 Q{cx - 62},362 {cx},362 Q{cx + 62},362 {cx + 84},322 Q{cx + 96},272 {cx + 42},238 L{cx + 32},212 Z", H.grad(f, "fy24h-bulb", WHITE, HEAT_LIGHT), INK, 3)
+            f.path(f"M{cx - 10},214 L{cx - 24},294 M{cx + 10},214 L{cx + 24},294", stroke=METAL_EDGE, w=2.5)
+            f.circle(cx, 296, 40, H.glow(f, "fy24h-fil", HEAT_LIGHT, HEAT))
+            f.path(f"M{cx - 24},294 q6,-12 12,0 t12,0 t12,0 t12,0", stroke=HOT, w=4)
+            H.shimmer(f, [cx - 150, cx - 112, cx + 112, cx + 150], 340, 140, HOT)
+            H.shimmer(f, [cx - 30, cx + 30], 150, 90, HOT)
+    # a book and a cup on the table, lit alike
+    f.rect(230, 470, 140, 30, COLD, INK, 2.5, 3); f.rect(240, 474, 124, 8, WHITE)
+    f.path("M800,456 h60 l-6,44 h-48 Z", WHITE, INK, 2.5); f.path("M860,466 q22,4 0,24", stroke=INK, w=4)
     return f.svg()
 
 

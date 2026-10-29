@@ -3,45 +3,50 @@ import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, GLASS, WATER, WATER_LIGHT, n)
 from figlib import ALUMINIUM, COLD_LIGHT, GOOD, GOOD_LIGHT, HOT_LIGHT, IRON, SAND_DARK, SAND_LIGHT
 import herolib as H
+from figlib import METAL_EDGE
+from herolib import grad, steel
 
 
 def hero():
     """The chapter's opening illustration: a nuclear plant, a hydro plant, wind turbines and a combined heat and power plant feed one grid to a town."""
     f = H.hero("fy26-hero", "Kuvitus: suomalainen maisema, jossa on ydinvoimala meren rannalla, vesivoimala joen padolla, tuulivoimaloita ja "
                "savupiipullinen polttoainevoimala. Kaikista lähtevät voimalinjat samaan verkkoon, joka vie sähkön kaupunkiin.")
-    H.sky(f, "fy26h", 420); H.cloud(f, 300, 80, 0.7); H.cloud(f, 900, 60, 0.6)
-    H.forest(f, 330, 46, 30, GOOD, seed=7)
-    f.rect(0, 340, 1200, 260, GOOD_LIGHT)
-    f.path("M0,430 Q120,420 260,440 L260,600 H0 Z", WATER_LIGHT)
-    # nuclear plant by the sea: a domed reactor hall and a turbine hall
-    f.rect(40, 330, 150, 80, ALUMINIUM, INK, 3)
-    f.rect(150, 300, 60, 110, WHITE, INK, 3)
-    f.path("M150,300 Q180,250 210,300 Z", WHITE, INK, 3)
-    f.rect(70, 290, 18, 40, IRON, INK, 2)
-    # hydro plant: river through a dam
-    f.path("M330,600 Q360,500 420,440 L470,440 Q440,520 470,600 Z", WATER)
-    f.add(f'<ellipse cx="425" cy="396" rx="130" ry="16" fill="{WATER_LIGHT}" stroke="{WATER}" stroke-width="2"/>')   # the reservoir behind the dam
-    f.rect(320, 436, 190, 18, ALUMINIUM, INK, 3)
-    f.rect(380, 400, 110, 50, SAND_LIGHT, INK, 3)
-    f.path("M380,400 H490 L470,380 H400 Z", IRON, INK, 2)
-    for k in range(3): f.rect(394 + k * 32, 414, 18, 26, GLASS, INK, 2)
-    # wind turbines
-    for k, (x, h) in enumerate(((600, 210), (690, 180), (770, 200))): H.wind_turbine(f, x, 400, h, 0.4 + 1.3 * k, 0.9)
-    # CHP plant with chimney
-    f.rect(840, 330, 120, 80, SAND_DARK, INK, 3)
-    f.rect(930, 180, 26, 150, HOT_LIGHT, INK, 3)
-    for k in range(3): f.rect(930, 200 + k * 40, 26, 8, WHITE)
-    H.smoke(f, 950, 160, 0.8, RULE, 0.8)
-    # town on the right
-    for k, (x, w, h, c) in enumerate(((1020, 50, 120, COLD_LIGHT), (1074, 40, 160, SAND_LIGHT), (1118, 60, 100, HOT_LIGHT))):
-        f.rect(x, 410 - h, w, h, c, INK, 3)
-        for j in range(int(h / 34)): f.rect(x + 10, 410 - h + 12 + j * 32, w - 20, 14, GLASS, INK, 1.5)
-    # one grid joining them, from the plants to the town
-    pts = [(250, 540), (530, 540), (810, 540), (1000, 540)]
-    arms = [H.pylon(f, x, y, 110, 0.7) for x, y in pts]
+    H.sky(f, "fy26h", 360); H.cloud(f, 300, 70, 0.7); H.cloud(f, 760, 50, 0.6)
+    H.hills(f, "fy26h", 250, [ALUMINIUM, METAL_EDGE], amp=34, seed=6)
+    H.forest(f, 320, 40, 24, GOOD, seed=7, depth=20)
+    f.rect(0, 336, 1200, 264, grad(f, "fy26h-land", GOOD_LIGHT, SAND_LIGHT, y1=336, y2=600))
+    # the sea on the left, a nuclear plant on its shore
+    f.path("M0,380 Q140,372 300,392 Q250,480 260,600 H0 Z", grad(f, "fy26h-sea", WATER_LIGHT, WATER))
+    for x, y in ((40, 420), (120, 470), (60, 530)): f.path(f"M{x},{y} q20,-6 40,0 t40,0", stroke=WHITE, w=3, extra='stroke-opacity="0.7"')
+    f.rect(30, 300, 130, 80, steel(f, "fy26h-turb"), INK, 3)
+    for k in range(4): f.rect(42 + k * 30, 316, 18, 20, GLASS, INK, 1.5)
+    f.path("M150,380 V290 Q190,228 230,290 V380 Z", grad(f, "fy26h-dome", WHITE, ALUMINIUM, horizontal=True), INK, 3)
+    f.rect(80, 262, 16, 40, IRON, INK, 2)
+    # hydro plant: reservoir, a concrete dam across the river, the power house below it
+    f.add(f'<path d="M330,346 Q420,330 520,346 L500,372 H350 Z" fill="{grad(f, "fy26h-res", WATER_LIGHT, WATER)}" stroke="{WATER}" stroke-width="2"/>')
+    f.path("M340,372 H510 L520,410 H330 Z", grad(f, "fy26h-dam", RULE_LIGHT, RULE), INK, 3)
+    f.rect(380, 410, 90, 44, SAND_LIGHT, INK, 3); f.path("M374,410 H476 L462,396 H388 Z", IRON, INK, 2)
+    for k in range(3): f.rect(390 + k * 26, 420, 16, 22, GLASS, INK, 1.5)
+    f.path("M400,454 Q370,520 330,600 H470 Q450,520 460,454 Z", grad(f, "fy26h-riv", WATER_LIGHT, WATER))
+    # wind turbines on the ridge
+    for k, (x, h) in enumerate(((610, 230), (700, 190), (790, 214))): H.wind_turbine(f, x, 380, h, 0.4 + 1.3 * k, 0.95)
+    # CHP plant: boiler house, a striped chimney, a light plume
+    f.rect(850, 300, 140, 90, grad(f, "fy26h-chp", SAND_LIGHT, SAND_DARK), INK, 3)
+    for k in range(3): f.rect(866 + k * 40, 324, 26, 34, GLASS, INK, 1.5)
+    f.rect(960, 150, 30, 150, WHITE, INK, 3)
+    for k in range(3): f.rect(960, 166 + k * 44, 30, 12, HOT_LIGHT, INK, 1.5)
+    H.smoke(f, 976, 132, 0.8, RULE, 0.8)
+    # town
+    for k, (x, w, h, c) in enumerate(((1030, 54, 140, COLD_LIGHT), (1086, 44, 180, SAND_LIGHT), (1132, 64, 110, HOT_LIGHT))):
+        f.rect(x, 390 - h, w, h, c, INK, 3)
+        for j in range(int(h / 34)):
+            for i in range(int((w - 10) / 18)): f.rect(x + 7 + i * 18, 390 - h + 12 + j * 32, 11, 14, GLASS, INK, 1)
+    # one grid joining them
+    pts = [(250, 540), (560, 530), (840, 540), (1060, 530)]
+    arms = [H.pylon(f, x, y, 120, 0.75) for x, y in pts]
     for a, b in zip(arms, arms[1:]):
         for p, q in zip(a, b): H.wire(f, p, q, 14, INK, 1.5)
-    for a, b in ((arms[0][2], (205, 410)), (arms[1][2], (490, 430)), (arms[2][3], (900, 410)), (arms[3][3], (1040, 410))): H.wire(f, a, b, 6, INK, 1.5)
+    for a, b in ((arms[0][2], (200, 330)), (arms[1][2], (476, 430)), (arms[1][3], (700, 390)), (arms[2][3], (920, 390)), (arms[3][3], (1090, 390))): H.wire(f, a, b, 6, INK, 1.5)
     return f.svg()
 
 

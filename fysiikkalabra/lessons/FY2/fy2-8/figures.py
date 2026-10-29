@@ -4,33 +4,35 @@ from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, 
                     ALUMINIUM, METAL_EDGE, IRON, HOT, HOT_LIGHT, n)
 from figlib import GOOD, GOOD_LIGHT, ICE
 import herolib as H
+from herolib import grad
 
 
 def hero():
     """The chapter's opening illustration: one house, one socket, and two ways to make its electricity: a coal plant under smoke or wind turbines under a clear sky."""
     f = H.hero("fy28-hero", "Kuvitus: keskellä talo, johon sähkö tulee voimalinjaa pitkin. Vasemmalla hiilivoimala, jonka savupiipusta nousee "
                "tumma savu harmaalle taivaalle; oikealla tuulivoimaloita kirkkaan taivaan alla. Talon seinässä on pistorasia.")
-    f.rect(0, 0, 600, 600, H.grad(f, "fy28h-grey", ALUMINIUM, GLASS)); f.rect(600, 0, 600, 600, H.grad(f, "fy28h-sky", ICE, GLASS))
-    H.sun(f, "fy28h", 760, 100, 44)
-    H.forest(f, 380, 40, 30, GOOD, seed=9)
-    f.rect(0, 390, 1200, 210, GOOD_LIGHT)
-    # coal plant
-    f.rect(60, 300, 200, 110, IRON, INK, 3)
-    for k in range(4): f.rect(80 + k * 46, 330, 26, 30, GLASS, INK, 2)
-    f.rect(200, 170, 34, 130, HOT_LIGHT, INK, 3)
-    for k in range(2): f.rect(200, 190 + k * 46, 34, 10, WHITE)
-    H.smoke(f, 222, 150, 1.0, INK, 0.55); H.smoke(f, 330, 110, 0.9, INK, 0.4); H.smoke(f, 430, 80, 0.7, INK, 0.25)
-    f.path("M30,420 h70 l20,-30 h50 l20,30 h60 v20 h-220 Z", INK)
+    f.rect(0, 0, 600, 600, grad(f, "fy28h-grey", METAL_EDGE, ALUMINIUM)); f.rect(600, 0, 600, 600, grad(f, "fy28h-sky", ICE, GLASS))
+    H.sun(f, "fy28h", 860, 90, 44)
+    H.cloud(f, 1060, 70, 0.6)
+    H.hills(f, "fy28h", 330, [ALUMINIUM, METAL_EDGE], amp=30, seed=11)
+    H.forest(f, 380, 40, 26, GOOD, seed=9, depth=20)
+    f.rect(0, 396, 1200, 204, grad(f, "fy28h-land", GOOD_LIGHT, SAND_LIGHT, y1=396, y2=600))
+    # coal plant with a coal heap, conveyor and chimney
+    f.rect(60, 290, 210, 120, grad(f, "fy28h-plant", IRON, METAL_EDGE), INK, 3)
+    for k in range(4): f.rect(80 + k * 48, 316, 28, 34, GLASS, INK, 2)
+    f.rect(200, 120, 40, 170, HOT_LIGHT, INK, 3)
+    for k in range(3): f.rect(200, 136 + k * 50, 40, 12, WHITE, INK, 1.5)
+    H.smoke(f, 222, 100, 1.1, INK, 0.6); H.smoke(f, 340, 60, 0.9, INK, 0.45); H.smoke(f, 450, 30, 0.7, INK, 0.3)
+    f.path("M20,430 h80 l30,-46 h40 l30,46 h70 v14 h-250 Z", INK)
+    f.line(150, 392, 230, 330, IRON, 6)
     # wind turbines
-    for k, (x, h) in enumerate(((890, 210), (990, 180), (1090, 220))): H.wind_turbine(f, x, 410, h, 0.3 + 1.1 * k, 1.0)
-    # the house in the middle with its socket
-    H.house(f, 520, 470, 160, 120, SAND_LIGHT, HOT)
-    f.rect(546, 428, 36, 36, WHITE, INK, 2, 5)
-    f.circle(564, 446, 12, ALUMINIUM, INK, 2); f.circle(559, 446, 2.5, INK); f.circle(569, 446, 2.5, INK)
-    # lines from both sides to the house
-    a = H.pylon(f, 360, 500, 120, 0.7); b = H.pylon(f, 820, 500, 120, 0.7)
-    for p in a[2:]: H.wire(f, (250, 330), p, 10, INK, 1.5); H.wire(f, p, (530, 380), 10, INK, 1.5)
-    for p in b[2:]: H.wire(f, (900, 330), p, 10, INK, 1.5); H.wire(f, p, (670, 380), 10, INK, 1.5)
+    for k, (x, h) in enumerate(((880, 220), (990, 190), (1110, 240))): H.wind_turbine(f, x, 420, h, 0.3 + 1.1 * k, 1.0)
+    # the house with its socket
+    H.red_house(f, 500, 480, 200, 120)
+    f.rect(588, 430, 30, 30, WHITE, INK, 2, 5); f.circle(603, 445, 10, ALUMINIUM, INK, 2); f.circle(599, 445, 2.5, INK); f.circle(607, 445, 2.5, INK)
+    a = H.pylon(f, 380, 520, 130, 0.72); b = H.pylon(f, 820, 520, 130, 0.72)
+    for p in a[2:]: H.wire(f, (250, 330), p, 10, INK, 1.5); H.wire(f, p, (520, 380), 10, INK, 1.5)
+    for p in b[2:]: H.wire(f, (880, 330), p, 10, INK, 1.5); H.wire(f, p, (680, 380), 10, INK, 1.5)
     return f.svg()
 
 

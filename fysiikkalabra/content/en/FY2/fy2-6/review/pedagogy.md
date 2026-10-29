@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 10157c2a0277bb7f
-
+CONTENT-HASH: d424c59ddc523fb8
 ## Blocking
 
 ## Polish
-- The dam and the reservoir are small at 360 px, though the plant now reads as hydropower at 1200 px.
-- The power lines are faint at 360 px.
 
 ## Checked
-batch delta review: the redrawn hero: a dam wall and a reservoir now make the hydropower plant recognisable, so the aria-label's "joen padolla" is true of the picture; all plants still join one grid; the drawing is identical to the fi version apart from the aria-label, and the translated aria-label (unchanged, already passed a translation review) still describes it; no text in the image, figure palette.
+batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.

@@ -2,54 +2,112 @@
 
 > **Why** do a kilogram of petrol and a kilogram of air-dried firewood release different amounts of energy when they burn, even though both are just burning matter?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: two identical scales showing the same reading. On the left scale a petrol can, on the right firewood. Above each is a flame: the petrol&#x27;s flame is clearly larger." class="fig-hero" style="max-width:100%;font-size:24px">
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="0" y="470" width="1200" height="130" fill="#d9b26a"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="190" y="430" width="300" height="40" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="170" y="416" width="340" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="300" y="438" width="80" height="24" rx="4" fill="#1f2933"/>
-  <rect x="308" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <rect x="330" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <rect x="352" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <rect x="710" y="430" width="300" height="40" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="690" y="416" width="340" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="820" y="438" width="80" height="24" rx="4" fill="#1f2933"/>
-  <rect x="828" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <rect x="850" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <rect x="872" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
-  <path d="M250,416 V250 L290,210 H430 V416 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="330" y="214" width="70" height="20" rx="6" fill="#1f2933"/>
-  <path d="M264,250 L234,196 L254,188 L282,236" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M280,300 L400,390 M400,300 L280,390" fill="none" stroke="#f2a69c" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M283,170 Q264,84.5 330.5,-10.5 Q340,65.5 368.5,56 Q420,113 397,170 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M311.5,170 Q302,122.5 340,71 Q378,132 368.5,170 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <ellipse cx="720" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="720" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="860" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="860" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="790" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="790" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="930" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="930" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="860" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="860" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="1000" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="1000" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="755" cy="330" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="755" y="302" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="895" cy="330" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="895" cy="330" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="825" cy="330" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="825" y="302" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="965" cy="330" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="965" cy="330" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="790" cy="274" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="790" y="246" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="930" cy="274" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="930" cy="274" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
-  <path d="M830,230 Q820,185 855,135 Q860,175 875,170 Q902,200 890,230 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M845,230 Q840,205 860,178 Q880,210 875,230 Z" fill="#ffc078" stroke-linejoin="round"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: two identical scales showing the same reading. On the left scale a petrol can, on the right firewood. Beside each, the same substance burns in a fire bowl: the petrol&#x27;s flame is clearly larger than the wood&#x27;s." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy25h-f1g" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><linearGradient id="fy25h-f1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25h-f1s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy25h-f2g" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><linearGradient id="fy25h-f2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25h-f2s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy25h-sc210" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy25h-sc740" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy25h-can" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy25h-spout" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="440" fill="#f6f1e6"/>
+  <line x1="0" y1="0" x2="0" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="80" y1="0" x2="80" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="160" y1="0" x2="160" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="240" y1="0" x2="240" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="320" y1="0" x2="320" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="400" y1="0" x2="400" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="480" y1="0" x2="480" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="560" y1="0" x2="560" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="640" y1="0" x2="640" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="720" y1="0" x2="720" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="800" y1="0" x2="800" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="880" y1="0" x2="880" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="0" x2="960" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1040" y1="0" x2="1040" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1120" y1="0" x2="1120" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1200" y1="0" x2="1200" y2="440" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="80" x2="1200" y2="80" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="160" x2="1200" y2="160" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="240" x2="1200" y2="240" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="320" x2="1200" y2="320" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="440" width="1200" height="26" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="466" width="1200" height="134" fill="#e3dccb"/>
+  <line x1="360" y1="466" x2="360" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="840" y1="466" x2="840" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <circle cx="480" cy="296" r="150" fill="url(#fy25h-f1g)"/>
+  <path d="M410,386 Q380,276 466,156 Q476,256 514,236 Q580,316 550,386 Z" fill="url(#fy25h-f1)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M446,386 Q434,326 480,260 Q526,336 514,386 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M400,380 Q480,426 560,380 Z" fill="url(#fy25h-f1s)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="430" y1="400" x2="415" y2="440" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="530" y1="400" x2="545" y2="440" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <circle cx="1050" cy="345.5" r="67.5" fill="url(#fy25h-f2g)"/>
+  <path d="M1018.5,386 Q1005,336.5 1043.5,282.5 Q1048,327.5 1065.5,318.5 Q1095,354.5 1081.5,386 Z" fill="url(#fy25h-f2)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1034.5,386 Q1029.5,359 1050,329.5 Q1070.5,363.5 1065.5,386 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M970,380 Q1050,426 1130,380 Z" fill="url(#fy25h-f2s)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="1000" y1="400" x2="985" y2="440" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="1100" y1="400" x2="1115" y2="440" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="50" y="410" width="320" height="30" rx="8" fill="url(#fy25h-sc210)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="30" y="396" width="360" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="166" y="416" width="88" height="20" rx="4" fill="#1f2933"/>
+  <rect x="174" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <rect x="199" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <rect x="224" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <rect x="580" y="410" width="320" height="30" rx="8" fill="url(#fy25h-sc740)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="560" y="396" width="360" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="696" y="416" width="88" height="20" rx="4" fill="#1f2933"/>
+  <rect x="704" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <rect x="729" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <rect x="754" y="419" width="20" height="14" rx="2" fill="#b2f2bb"/>
+  <path d="M114,396 V270 L154,232 H306 V396 Z" fill="url(#fy25h-can)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="200" y="238" width="80" height="22" rx="8" fill="#1f2933"/>
+  <path d="M128,270 L96,214 L118,204 L148,256" fill="url(#fy25h-spout)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M144,300 L276,380 M276,300 L144,380" fill="none" stroke="#f2a69c" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M140,288 H280 V388 H140 Z" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" fill="none" stroke-opacity="0.4"/>
+  <ellipse cx="594" cy="366" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="594" y="336" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="608" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="642" y="366" width="18" height="6" fill="#1f2933"/>
+  <rect x="676" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="710" y="366" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="742" cy="366" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="742" cy="366" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="666" cy="366" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="666" y="336" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="680" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="714" y="366" width="18" height="6" fill="#1f2933"/>
+  <rect x="748" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="782" y="366" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="814" cy="366" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="814" cy="366" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="738" cy="366" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="738" y="336" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="752" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="786" y="366" width="18" height="6" fill="#1f2933"/>
+  <rect x="820" y="336" width="18" height="6" fill="#1f2933"/>
+  <rect x="854" y="366" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="886" cy="366" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="886" cy="366" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="630" cy="306" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="630" y="276" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="644" y="276" width="18" height="6" fill="#1f2933"/>
+  <rect x="678" y="306" width="18" height="6" fill="#1f2933"/>
+  <rect x="712" y="276" width="18" height="6" fill="#1f2933"/>
+  <rect x="746" y="306" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="778" cy="306" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="778" cy="306" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="702" cy="306" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="702" y="276" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="716" y="276" width="18" height="6" fill="#1f2933"/>
+  <rect x="750" y="306" width="18" height="6" fill="#1f2933"/>
+  <rect x="784" y="276" width="18" height="6" fill="#1f2933"/>
+  <rect x="818" y="306" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="850" cy="306" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="850" cy="306" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="666" cy="246" rx="16" ry="30" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="666" y="216" width="148" height="60" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="680" y="216" width="18" height="6" fill="#1f2933"/>
+  <rect x="714" y="246" width="18" height="6" fill="#1f2933"/>
+  <rect x="748" y="216" width="18" height="6" fill="#1f2933"/>
+  <rect x="782" y="246" width="18" height="6" fill="#1f2933"/>
+  <ellipse cx="814" cy="246" rx="16" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="814" cy="246" rx="8" ry="15" fill="none" stroke="#a97a35" stroke-width="2"/>
 </svg>
 
 ## Key idea

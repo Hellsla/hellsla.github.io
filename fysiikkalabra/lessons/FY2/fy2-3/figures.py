@@ -3,50 +3,55 @@ from figlib import Fig, Axes, INK, MUTED, HEAT, HEAT_LIGHT, COLD, WHITE
 import math
 from figlib import ALUMINIUM, GOOD_LIGHT, HOT, IRON, PAPER, RULE, RULE_LIGHT, SAND, SAND_LIGHT, n
 import herolib as H
+from figlib import HOT_LIGHT, METAL_EDGE
+from herolib import grad, steel
 
 
 def hero():
     """The chapter's opening illustration: a powerful kettle on for minutes, a small lamp on all evening, and the electricity meter between them."""
-    f = H.hero("fy23-hero", "Kuvitus: keittiössä vasemmalla höyryävä vedenkeitin, jonka vieressä kello näyttää lyhyttä aikaa, ja oikealla pieni "
-               "pöytävalaisin, jonka vieressä kello näyttää pitkää aikaa. Keskellä seinällä sähkömittari.")
-    f.rect(0, 0, 1200, 600, PAPER)
-    for k in range(1, 6): f.line(0, k * 70, 1200, k * 70, RULE_LIGHT, 2)
-    f.rect(0, 400, 1200, 200, SAND_LIGHT); f.rect(0, 400, 1200, 22, SAND, INK, 2)
-    # kettle
-    x = 230
-    f.path(f"M{x - 80},400 L{x - 64},250 Q{x},230 {x + 64},250 L{x + 80},400 Z", ALUMINIUM, INK, 3)
-    f.path(f"M{x + 64},270 Q{x + 130},280 {x + 80},370", stroke=INK, w=12, extra='stroke-linecap="round"')
-    f.path(f"M{x - 64},280 L{x - 110},248 L{x - 72},318 Z", ALUMINIUM, INK, 3)
-    f.rect(x - 90, 392, 180, 12, INK, None, 0, 3)
-    f.circle(x + 40, 370, 8, HOT)
+    f = H.hero("fy23-hero", "Kuvitus: keittiössä vasemmalla höyryävä vedenkeitin, jonka yllä kello näyttää lyhyttä aikaa, ja oikealla pieni "
+               "pöytävalaisin, jonka yllä kello näyttää pitkää aikaa. Keskellä seinällä sähkömittari, josta johto kulkee laitteille.")
+    H.tiles(f, 400)
+    f.rect(0, 400, 1200, 26, RULE, INK, 3); f.rect(0, 426, 1200, 174, RULE_LIGHT)
+    for x in (300, 600, 900): f.line(x, 426, x, 600, INK, 2)
+    for x in (270, 330, 570, 630, 870, 930): f.rect(x - 4, 450, 8, 44, METAL_EDGE, rx=4)
+    # wall cable from the meter to the two devices
+    f.path("M600,330 V370 H300 V400 M600,370 H930 V400", stroke=INK, w=4, extra='stroke-linejoin="round"')
+    # kettle: steel body, black handle and base, glowing switch, steam
+    x = 240
+    f.add(f'<ellipse cx="{x}" cy="400" rx="110" ry="10" fill="{INK}" fill-opacity="0.2"/>')
+    f.rect(x - 100, 384, 200, 16, INK, None, 0, 4)
+    f.path(f"M{x - 86},384 L{x - 70},210 Q{x},188 {x + 70},210 L{x + 86},384 Z", steel(f, "fy23h-kettle"), INK, 3)
+    f.path(f"M{x + 70},226 Q{x + 150},236 {x + 92},360", stroke=INK, w=16, extra='stroke-linecap="round"')
+    f.path(f"M{x - 70},240 L{x - 124},206 L{x - 80},288 Z", steel(f, "fy23h-spout"), INK, 3)
+    f.path(f"M{x - 60},196 Q{x},176 {x + 60},196 L{x + 50},206 Q{x},192 {x - 50},206 Z", INK)
+    f.rect(x + 56, 330, 22, 14, HOT, INK, 2, 4); f.circle(x + 67, 337, 12, H.glow(f, "fy23h-led", HOT_LIGHT, HOT))
     for k in range(3):
-        f.path(f"M{x - 112 + k * 16},236 q-14,-24 0,-48 t0,-48", stroke=WHITE, w=10, extra='stroke-linecap="round"')
-        f.path(f"M{x - 112 + k * 16},236 q-14,-24 0,-48 t0,-48", stroke=RULE, w=2, extra='stroke-linecap="round" stroke-opacity="0.6"')
-    # lamp
-    x = 960
-    f.path(f"M{x - 70},400 h140 l-30,-20 h-80 Z", IRON, INK, 3)
-    f.line(x, 380, x, 230, INK, 6)
-    f.add(f'<path d="M{x - 160},420 L{x - 46},230 H{x + 46} L{x + 160},420 Z" fill="{HEAT_LIGHT}" fill-opacity="0.35"/>')
-    f.path(f"M{x - 70},240 L{x - 40},150 H{x + 40} L{x + 70},240 Z", HEAT, INK, 3)
-    f.circle(x, 238, 14, HEAT_LIGHT, INK, 2)
-    # clocks: a short time (a quarter of a turn) and a long time (an almost full turn)
+        d = f"M{x - 126 + k * 14},196 c-14,-24 14,-40 0,-64 s14,-40 0,-64"
+        f.path(d, stroke=RULE, w=20, extra='stroke-linecap="round" stroke-opacity="0.5"'); f.path(d, stroke=WHITE, w=14, extra='stroke-linecap="round"')
+    # table lamp with its warm cone of light
+    x = 940
+    f.add(f'<path d="M{x - 70},248 L{x - 200},426 H{x + 200} L{x + 70},248 Z" fill="{HEAT_LIGHT}" fill-opacity="0.3"/>')
+    f.path(f"M{x - 80},400 h160 l-30,-24 h-100 Z", grad(f, "fy23h-base", IRON, INK), INK, 3)
+    f.line(x, 380, x, 250, INK, 7)
+    f.path(f"M{x - 86},252 L{x - 50},150 H{x + 50} L{x + 86},252 Z", grad(f, "fy23h-shade", HEAT_LIGHT, HEAT), INK, 3)
+    f.circle(x, 250, 16, H.glow(f, "fy23h-bulb", WHITE, HEAT_LIGHT))
+    # clocks: a short time and a long time, the elapsed part shaded
     for cx, t1 in ((420, 0.08), (780, 0.92)):
-        f.circle(cx, 140, 56, WHITE, INK, 3)
+        f.circle(cx, 150, 64, WHITE, INK, 4)
         a = t1 * 2 * math.pi
-        if t1 > 0.5:
-            d = f"M{cx},140 L{cx},84 A56,56 0 1 1 {n(cx + 56 * math.sin(a))},{n(140 - 56 * math.cos(a))} Z"
-        else:
-            d = f"M{cx},140 L{cx},84 A56,56 0 0 1 {n(cx + 56 * math.sin(a))},{n(140 - 56 * math.cos(a))} Z"
+        d = f"M{cx},150 L{cx},92 A58,58 0 {1 if t1 > 0.5 else 0} 1 {n(cx + 58 * math.sin(a))},{n(150 - 58 * math.cos(a))} Z"
         f.add(f'<path d="{d}" fill="{COLD}" fill-opacity="0.3"/>')
         for k in range(12):
-            b = k * math.pi / 6; f.line(cx + 46 * math.sin(b), 140 - 46 * math.cos(b), cx + 52 * math.sin(b), 140 - 52 * math.cos(b), MUTED, 2)
-        f.line(cx, 140, cx + 40 * math.sin(a), 140 - 40 * math.cos(a), INK, 4, cap="round"); f.circle(cx, 140, 5, INK)
-    # electricity meter
-    f.rect(540, 190, 120, 170, WHITE, INK, 3, 8)
-    f.rect(560, 214, 80, 34, INK, None, 0, 3)
-    for k in range(4): f.rect(566 + k * 18, 220, 14, 22, GOOD_LIGHT if k < 3 else HEAT_LIGHT, None, 0, 2)
-    f.circle(600, 300, 26, ALUMINIUM, INK, 2); f.line(600, 300, 618, 284, HOT, 3, cap="round")
-    f.path("M600,360 V400", stroke=INK, w=4)
+            b = k * math.pi / 6; f.line(cx + 50 * math.sin(b), 150 - 50 * math.cos(b), cx + 58 * math.sin(b), 150 - 58 * math.cos(b), INK if k % 3 == 0 else MUTED, 3 if k % 3 == 0 else 2)
+        f.line(cx, 150, cx + 44 * math.sin(a), 150 - 44 * math.cos(a), INK, 5, cap="round"); f.circle(cx, 150, 6, INK)
+    # electricity meter with its counter and spinning disc
+    f.rect(530, 170, 140, 160, grad(f, "fy23h-meter", WHITE, ALUMINIUM), INK, 3, 10)
+    f.rect(550, 192, 100, 36, INK, None, 0, 4)
+    for k in range(5): f.rect(556 + k * 18, 198, 14, 24, GOOD_LIGHT if k < 4 else HEAT_LIGHT, None, 0, 2)
+    f.add(f'<ellipse cx="600" cy="276" rx="44" ry="12" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="2"/>')
+    f.rect(592, 266, 16, 20, HOT, None, 0, 2)
+    f.rect(560, 304, 80, 12, IRON, INK, 1.5, 3)
     return f.svg()
 
 

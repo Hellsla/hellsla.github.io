@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b186faa2ed8438a6
+CONTENT-HASH: af7b905bc1b0ad37
 
 ## Blocking
 
 ## Polish
-- The shirts use palette meaning colours (cold blue, stable green, energy orange); neutral clothing would keep those colours free.
+- Hahmot ja kellot pitelevät kädet ovat kömpelöitä (käsi tulee kellon takaa); kevyt hahmojen viimeistely nostaisi tasoa FY3:n kuviin.
+- Lähtö- ja maaliviivat ovat lämpötilan punaista; muste katkoviivana riittäisi.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: two groups with stopwatches showing different readings beside a toy-car track with a tape measure. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Leluauto radalla mittanauhan vieressä, lähtö- ja maaliviivat, kaksi ryhmää omine sekuntikelloineen, joiden viisarit ovat eri kohdissa: kysymyksen tilanne. Luettava 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

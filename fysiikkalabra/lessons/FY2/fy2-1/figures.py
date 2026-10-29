@@ -6,38 +6,45 @@ from figlib import (Fig, Axes, INK, MUTED, WHITE, GLASS, HEAT_LIGHT, HEAT, HOT, 
                     IRON, COPPER, SAND, SAND_DARK, GRAIN, n, fi)
 from figlib import PAPER
 import herolib as H
+from figlib import COLD_LIGHT, ICE, RULE_LIGHT
+from herolib import grad
 
 POT, KIN, THM = COLD, HEAT_LIGHT, HOT          # potential, kinetic and thermal energy: the same colours as in the simulation
 
 
 def hero():
-    """The chapter's opening illustration: a ball bouncing ever lower across a floor until it lies still."""
-    f = H.hero("fy21-hero", "Kuvitus: pallo pomppii lattialla vasemmalta oikealle. Katkoviivoin piirretyt kaaret madaltuvat pomppu pomppulta, "
-               "ja lopussa pallo on levossa lattialla. Jokaisessa osumakohdassa pieni lämpöväre.")
-    f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 0, 1200, 460, H.grad(f, "fy21h-wall", WHITE, PAPER))
-    f.rect(0, 460, 1200, 140, SAND, None)
-    for k in range(13): f.line(k * 100, 460, k * 100 - 40, 600, GRAIN, 2)
-    f.line(0, 460, 1200, 460, GRAIN, 3)
-    r, y0 = 30, 430
-    xs, hs = [80, 360, 600, 790, 930, 1030], [360, 230, 140, 80, 40]
-    d = f"M{xs[0]},{y0 - 380}"
-    d += f" Q{xs[0] + 60},{y0 - 380} {xs[0] + 140},{y0}"
-    xa = xs[0] + 140
-    for k, h in enumerate(hs[1:]):
-        xb = xa + (300 - 60 * k) if k < 3 else xa + 90
-        d += f" Q{n((xa + xb) / 2)},{n(y0 - 2 * h)} {n(xb)},{y0}"; xa = xb
+    """The chapter's opening illustration: a ball bouncing ever lower across a gym floor until it lies still."""
+    f = H.hero("fy21-hero", "Kuvitus: liikuntasalin puulattialla pomppiva pallo vasemmalta oikealle. Katkoviivoin piirretyt kaaret madaltuvat "
+               "pomppu pomppulta, ja lopussa pallo on levossa lattialla. Jokaisessa osumakohdassa pieni lämpöväre.")
+    f.rect(0, 0, 1200, 440, grad(f, "fy21h-wall", WHITE, PAPER))
+    for k in range(3): f.rect(0, 40 + k * 4, 1200, 2, RULE_LIGHT)
+    for x0 in (60, 900):                                                     # wall bars
+        for k in range(2): f.rect(x0 + k * 220, 60, 16, 380, SAND, INK, 2, 3)
+        for k in range(12): f.rect(x0 + 16, 80 + k * 30, 204, 9, SAND_DARK, INK, 1.5, 4)
+    f.rect(420, 70, 360, 170, grad(f, "fy21h-win", ICE, COLD_LIGHT), INK, 3, 4)
+    for x in (540, 660): f.line(x, 70, x, 240, INK, 3)
+    # wooden floor with boards in perspective and a court line
+    f.rect(0, 440, 1200, 160, grad(f, "fy21h-floor", SAND_DARK, SAND, y1=440, y2=600))
+    for k in range(-6, 19): f.line(k * 80, 600, 600 + (k * 80 - 600) * 0.55, 440, GRAIN, 1.5)
+    f.path("M0,520 Q600,500 1200,520", stroke=HOT, w=5)
+    f.line(0, 440, 1200, 440, INK, 3)
+    r, y0 = 32, 420
+    hs = [370, 240, 150, 90, 50, 24]; xa = 100
+    d = f"M{xa},{y0 - hs[0]} Q{xa + 60},{y0 - hs[0]} {xa + 140},{y0}"; xa += 140; tops = [(100, y0 - hs[0])]
+    widths = [270, 210, 160, 120, 84]
+    for h, w in zip(hs[1:], widths):
+        xb = xa + w; d += f" Q{n((xa + xb) / 2)},{n(y0 - 2 * h)} {n(xb)},{y0}"
+        H.shimmer(f, [xa - 14, xa + 14], 436, 44); tops.append(((xa + xb) / 2, y0 - h)); xa = xb
+    H.shimmer(f, [xa - 14, xa + 14], 436, 30)
     f.path(d, stroke=MUTED, w=3, extra='stroke-dasharray="10 10"')
-    # bounces: shimmer at each landing, ghost balls at tops
-    xa = xs[0] + 140; tops = []
-    for k, h in enumerate(hs[1:]):
-        xb = xa + (300 - 60 * k) if k < 3 else xa + 90
-        H.shimmer(f, [xa - 14, xa + 14], 456, 40)
-        tops.append(((xa + xb) / 2, y0 - h)); xa = xb
-    f.add(f'<circle cx="{xs[0]}" cy="{y0 - 380}" r="{r}" fill="{HOT}" fill-opacity="0.3"/>')
-    for x, y in tops: f.add(f'<circle cx="{n(x)}" cy="{n(y)}" r="{r}" fill="{HOT}" fill-opacity="0.3"/>')
-    f.circle(xa + 60, y0, r, HOT, INK, 3)
-    f.path(f"M{n(xa + 40)},{y0 - 14} Q{n(xa + 60)},{y0 - 24} {n(xa + 80)},{y0 - 14}", stroke=WHITE, w=4, extra='stroke-linecap="round" stroke-opacity="0.7"')
+    f.defs_add(f'<radialGradient id="fy21h-ball" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="{HOT_LIGHT}"/><stop offset="1" stop-color="{HOT}"/></radialGradient>')
+    def ball(x, y, op):
+        f.add(f'<g opacity="{op}"><circle cx="{n(x)}" cy="{n(y)}" r="{r}" fill="url(#fy21h-ball)" stroke="{INK}" stroke-width="3"/>'
+              f'<path d="M{n(x - r)},{n(y)} Q{n(x)},{n(y + 14)} {n(x + r)},{n(y)} M{n(x)},{n(y - r)} Q{n(x - 14)},{n(y)} {n(x)},{n(y + r)}" fill="none" stroke="{INK}" stroke-width="2"/></g>')
+    for x, y in tops: ball(x, y, 0.3)
+    xr = xa + 70
+    f.add(f'<ellipse cx="{n(xr)}" cy="{y0 + 30}" rx="34" ry="7" fill="{GRAIN}" fill-opacity="0.5"/>')
+    ball(xr, y0 + 2, 1)
     return f.svg()
 
 

@@ -2,8 +2,10 @@
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, WATER, WATER_LIGHT, GLASS, SAND, SAND_LIGHT, GRAIN,
                     ALUMINIUM, METAL_EDGE, IRON, HEAT, n)
 import math
-from figlib import HOT, PAPER
+from figlib import PAPER
 import herolib as H
+from figlib import COLD_LIGHT, GOOD_LIGHT, HEAT_LIGHT
+from herolib import grad, steel
 
 # densities in g/cm3 (the lesson's table) and the cube of 10 cm3 (edge about 2,15 cm)
 RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
@@ -11,34 +13,46 @@ RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
 
 def hero():
     """The chapter's opening illustration: two cubes of the same size tip a balance, a measuring cylinder waits beside them."""
-    f = H.hero("fy17-hero", "Kuvitus: vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea alumiininen ja tumma rautainen. "
-               "Vaaka kallistuu rautakuution puolelle. Vieressä mittalasi, jossa on vettä.")
-    f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 470, 1200, 130, SAND, None); f.line(0, 470, 1200, 470, GRAIN, 3)
-    # the balance: beam tilted towards the iron cube (right)
-    cx, top = 560, 200; t = math.radians(10)
-    f.path(f"M{cx - 90},470 L{cx - 60},440 H{cx + 60} L{cx + 90},470 Z", IRON, INK, 3)
-    f.rect(cx - 12, top, 24, 240, ALUMINIUM, INK, 3, 4)
-    L = 260
+    f = H.hero("fy17-hero", "Kuvitus: laboratorion pöydällä vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea alumiininen ja "
+               "tumma rautainen. Vaaka kallistuu rautakuution puolelle. Vieressä mittalasi, jossa on vettä.")
+    H.tiles(f, 430)
+    H.window(f, 60, 50, 220, 230, "fy17h-win")
+    f.rect(820, 120, 340, 14, RULE, INK, 3, 3)                               # a shelf with bottles
+    for k, (x, h, c) in enumerate(((850, 70, COLD_LIGHT), (910, 90, GOOD_LIGHT), (980, 60, HEAT_LIGHT), (1040, 84, GLASS), (1100, 66, COLD_LIGHT))):
+        f.rect(x, 120 - h, 40, h, c, INK, 2.5, 6); f.rect(x + 12, 120 - h - 14, 16, 16, IRON, INK, 2)
+    f.rect(0, 430, 1200, 26, RULE, INK, 3); f.rect(0, 456, 1200, 144, RULE_LIGHT)
+    for x in (300, 900): f.line(x, 456, x, 600, INK, 2)
+    for x in (270, 330, 870, 930): f.rect(x - 4, 480, 8, 44, METAL_EDGE, rx=4)
+    # the balance: a heavy foot, a pillar, the beam tilted towards the iron cube
+    cx, top = 540, 170; t = math.radians(9)
+    f.path(f"M{cx - 120},430 L{cx - 90},398 H{cx + 90} L{cx + 120},430 Z", grad(f, "fy17h-foot", IRON, INK), INK, 3)
+    f.rect(cx - 14, top, 28, 230, steel(f, "fy17h-pillar"), INK, 3, 4)
+    L = 280
     lx, ly = cx - L * math.cos(t), top - L * math.sin(t); rx, ry = cx + L * math.cos(t), top + L * math.sin(t)
-    f.line(lx, ly, rx, ry, INK, 14, cap="round"); f.line(lx, ly, rx, ry, ALUMINIUM, 8, cap="round")
-    f.circle(cx, top, 12, IRON, INK, 3)
-    f.path(f"M{cx - 10},{top - 8} L{cx},{top - 70} L{cx + 10},{top - 8} Z", HOT, INK, 2)
-    for x, y, cube, edge in ((lx, ly, ALUMINIUM, METAL_EDGE), (rx, ry, IRON, INK)):
-        pan = y + 130
-        f.line(x, y, x - 70, pan, MUTED, 2); f.line(x, y, x + 70, pan, MUTED, 2)
-        f.path(f"M{n(x - 90)},{n(pan)} Q{n(x)},{n(pan + 34)} {n(x + 90)},{n(pan)} Z", ALUMINIUM, INK, 3)
-        s = 84; bx, by = x - s / 2, pan - s
+    f.line(lx, ly, rx, ry, INK, 16, cap="round"); f.line(lx, ly, rx, ry, ALUMINIUM, 10, cap="round")
+    f.circle(cx, top, 14, IRON, INK, 3)
+    f.add(f'<g transform="rotate(9 {cx} {top})">')                       # the pointer is fixed to the beam and turns with it
+    f.path(f"M{cx - 10},{top + 6} L{cx},{top + 124} L{cx + 10},{top + 6} Z", IRON, INK, 2)
+    f.add("</g>"); f.circle(cx, top, 14, IRON, INK, 3)
+    f.path(f"M{cx - 50},{top + 128} A60,60 0 0 0 {cx + 50},{top + 128}", stroke=INK, w=3)
+    for k in range(-2, 3): f.line(cx + 12 * k, top + 132 + abs(k) * 2, cx + 12 * k, top + 142 + abs(k) * 2, INK, 2)
+    for x, y, cube, side, lit in ((lx, ly, ALUMINIUM, METAL_EDGE, WHITE), (rx, ry, IRON, INK, METAL_EDGE)):
+        pan = y + 150
+        f.line(x, y, x - 80, pan, MUTED, 2.5); f.line(x, y, x + 80, pan, MUTED, 2.5)
+        f.path(f"M{n(x - 100)},{n(pan)} Q{n(x)},{n(pan + 40)} {n(x + 100)},{n(pan)} Z", steel(f, f"fy17h-pan{int(x)}"), INK, 3)
+        s = 90; bx, by = x - s / 2 - 10, pan - s
         f.rect(bx, by, s, s, cube, INK, 3)
-        f.path(f"M{n(bx)},{n(by)} l22,-18 h{s} l-22,18 Z", WHITE if cube == ALUMINIUM else METAL_EDGE, INK, 3)
-        f.path(f"M{n(bx + s)},{n(by)} l22,-18 v{s} l-22,18 Z", METAL_EDGE if cube == ALUMINIUM else "#4b535b", INK, 3)
-    # measuring cylinder
-    x0, w = 960, 96
-    f.rect(x0 - 20, 452, w + 40, 18, GLASS, INK, 3, 4)
-    f.rect(x0, 260, w, 192, WATER_LIGHT, None)
-    f.add(f'<rect x="{x0}" y="160" width="{w}" height="292" fill="{GLASS}" fill-opacity="0.35" stroke="{INK}" stroke-width="3"/>')
-    f.path(f"M{x0},260 Q{x0 + w / 2},270 {x0 + w},260", stroke=WATER, w=3)
-    for k in range(13): f.line(x0, 440 - k * 22, x0 + (28 if k % 2 == 0 else 16), 440 - k * 22, INK, 2)
+        f.path(f"M{n(bx)},{n(by)} l24,-20 h{s} l-24,20 Z", lit, INK, 3)
+        f.path(f"M{n(bx + s)},{n(by)} l24,-20 v{s} l-24,20 Z", side, INK, 3)
+    # measuring cylinder with water and its meniscus
+    x0, w = 960, 104
+    f.rect(x0 - 24, 410, w + 48, 20, GLASS, INK, 3, 4)
+    f.rect(x0, 250, w, 160, grad(f, "fy17h-water", WATER_LIGHT, WATER))
+    f.add(f'<rect x="{x0}" y="130" width="{w}" height="280" fill="{GLASS}" fill-opacity="0.35" stroke="{INK}" stroke-width="3"/>')
+    f.path(f"M{x0 - 8},130 H{x0 + w + 8} l-6,10 H{x0 - 2} Z", GLASS, INK, 2)
+    f.path(f"M{x0},250 Q{x0 + w / 2},262 {x0 + w},250", stroke=WATER, w=3)
+    for k in range(14): f.line(x0, 396 - k * 20, x0 + (30 if k % 2 == 0 else 16), 396 - k * 20, INK, 2)
+    f.add(f'<rect x="{x0 + 8}" y="140" width="10" height="266" fill="{WHITE}" fill-opacity="0.6"/>')
     return f.svg()
 
 

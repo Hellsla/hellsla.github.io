@@ -2,24 +2,32 @@
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, HEAT, GLASS, IRON, n
 from figlib import HEAT_LIGHT
 import herolib as H
+import math
+from figlib import COPPER, METAL_EDGE, SAND, SAND_LIGHT, WATER, WATER_LIGHT
+from herolib import grad
 
 
 def hero():
     """The chapter's opening illustration: Voyager 2 far from the Sun, its earlier positions at equal time steps equally spaced on a straight line."""
-    f = H.hero("fy15-hero", "Kuvitus: Aurinko vasemmalla avaruudessa, Voyager 2 -luotain oikealla. Luotaimen takana suoralla jäljellä "
-               "tasavälein haaleita merkkejä sen aiemmista paikoista yhtä pitkin aikavälein; seuraavat paikat jatkuvat eteenpäin katkoviivana.")
-    H.space(f, seed=5, count=90)
-    f.defs_add(f'<radialGradient id="fy15h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="0.6" stop-color="{HEAT}"/><stop offset="1" stop-color="{HEAT}" stop-opacity="0"/></radialGradient>')
-    f.circle(40, 470, 130, "url(#fy15h-sun)"); f.circle(40, 470, 54, HEAT_LIGHT)
-    x0, y0, x1, y1 = 140, 440, 1120, 130
+    f = H.hero("fy15-hero", "Kuvitus: Aurinko ja planeettojen radat vasemmalla, Voyager 2 -luotain oikealla kaukana avaruudessa. Luotaimen takana "
+               "suoralla jäljellä tasavälein merkkejä sen aiemmista paikoista yhtä pitkin aikavälein; seuraavat paikat jatkuvat eteenpäin katkoviivana.")
+    H.space(f, seed=5, count=120)
+    f.circle(70, 480, 200, H.glow(f, "fy15h-glow"))
+    f.circle(70, 480, 70, grad(f, "fy15h-sun", HEAT_LIGHT, HEAT))
+    for r in (140, 200, 300, 420):
+        f.add(f'<ellipse cx="70" cy="480" rx="{r}" ry="{n(r * 0.32)}" fill="none" stroke="{METAL_EDGE}" stroke-width="1.5" stroke-dasharray="4 7"/>')
+    H.planet(f, "fy15h-earth", 70 + 140, 480 - 12, 9, WATER_LIGHT, WATER)
+    H.planet(f, "fy15h-jup", 70 + 300 * math.cos(-0.5), 480 + 96 * math.sin(-0.5), 24, SAND_LIGHT, COPPER, bands=4)
+    H.planet(f, "fy15h-sat", 70 + 420 * math.cos(-0.25), 480 + 134 * math.sin(-0.25), 18, SAND_LIGHT, SAND, rings=True)
+    x0, y0, x1, y1 = 170, 452, 1180, 110
     def at(t): return x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
-    f.line(*at(0), *at(0.66), WHITE, 2)
-    f.line(*at(0.7), *at(1), WHITE, 2, dash="10 10")
+    f.line(*at(0), *at(0.7), WHITE, 2.5)
+    f.line(*at(0.72), *at(1), WHITE, 2.5, dash="10 10")
     for k in range(8):
-        x, y = at(0.08 + k * 0.08); f.circle(x, y, 9, COLD_LIGHT, WHITE, 2)
+        x, y = at(0.07 + k * 0.08); f.circle(x, y, 10, COLD_LIGHT, WHITE, 2)
     for k in range(3):
-        x, y = at(0.76 + k * 0.08); f.add(f'<circle cx="{n(x)}" cy="{n(y)}" r="9" fill="none" stroke="{WHITE}" stroke-width="2" stroke-dasharray="4 4"/>')
-    H.probe(f, *at(0.72), 0.7)
+        x, y = at(0.79 + k * 0.08); f.add(f'<circle cx="{n(x)}" cy="{n(y)}" r="10" fill="none" stroke="{WHITE}" stroke-width="2" stroke-dasharray="4 4"/>')
+    H.probe(f, *at(0.71), 0.8)
     return f.svg()
 
 

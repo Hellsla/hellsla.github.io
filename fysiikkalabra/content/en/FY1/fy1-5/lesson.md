@@ -2,8 +2,8 @@
 
 > **Why** can the position of the Voyager 2 probe be calculated in advance for any day, even though it is more than 20 billion kilometres from the Sun?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Sun on the left in space, the Voyager 2 probe on the right. Behind the probe, faint marks of its earlier positions lie evenly spaced on a straight line, one for each equal time step; the next positions continue ahead as a dashed line." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy15h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.6" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Sun and the orbits of the planets on the left, the Voyager 2 probe far away in space on the right. Behind the probe, marks of its earlier positions lie evenly spaced on a straight track, one for each equal time step; the next positions continue ahead as a dashed line." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy15h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><linearGradient id="fy15h-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><radialGradient id="fy15h-earth" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><radialGradient id="fy15h-jup" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#b8622d"/></radialGradient><radialGradient id="fy15h-sat" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></radialGradient><linearGradient id="probe-bus-887" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
   <circle cx="67.5" cy="505" r="1.98799" fill="#ffffff"/>
   <circle cx="187" cy="322" r="2.14204" fill="#ffffff"/>
@@ -95,29 +95,79 @@
   <circle cx="585.5" cy="142.5" r="2.5483" fill="#ffffff"/>
   <circle cx="1038.5" cy="430" r="1.66823" fill="#ffffff"/>
   <circle cx="185" cy="184.5" r="1.67186" fill="#ffffff"/>
-  <circle cx="40" cy="470" r="130" fill="url(#fy15h-sun)"/>
-  <circle cx="40" cy="470" r="54" fill="#ffc078"/>
-  <line x1="140" y1="440" x2="787" y2="235.5" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="826" y1="223" x2="1120" y2="130" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-dasharray="10 10"/>
-  <circle cx="218.5" cy="415" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="297" cy="390.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="375" cy="365.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="453.5" cy="341" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="532" cy="316" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="610.5" cy="291" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="689" cy="266.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="767" cy="241.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="885" cy="204.5" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
-  <circle cx="963" cy="179.5" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
-  <circle cx="1041.5" cy="155" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
-  <line x1="845.5" y1="217" x2="950.5" y2="189" stroke="#8a96a3" stroke-width="2.8" stroke-linecap="butt"/>
-  <line x1="845.5" y1="217" x2="922.5" y2="266" stroke="#8a96a3" stroke-width="2.8" stroke-linecap="butt"/>
-  <circle cx="950.5" cy="189" r="6.3" fill="#6c757d"/>
-  <rect x="915.5" y="261.5" width="15.5" height="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="841.5" y="207" width="31" height="19.5" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="838.5" cy="217" rx="11" ry="43.5" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="840" cy="217" rx="7" ry="31" fill="#eef5f9"/>
-  <line x1="838.5" y1="217" x2="815" y2="217" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
+  <circle cx="481" cy="90.5" r="2.23668" fill="#ffffff"/>
+  <circle cx="573" cy="573" r="2.49907" fill="#ffffff"/>
+  <circle cx="895" cy="231.5" r="1.5028" fill="#ffffff"/>
+  <circle cx="253" cy="335" r="1.82873" fill="#ffffff"/>
+  <circle cx="143.5" cy="168.5" r="1.59587" fill="#ffffff"/>
+  <circle cx="555.5" cy="68.5" r="1.05611" fill="#ffffff"/>
+  <circle cx="590.5" cy="585.5" r="1.44419" fill="#ffffff"/>
+  <circle cx="230" cy="454" r="2.46037" fill="#ffffff"/>
+  <circle cx="819" cy="568.5" r="2.43015" fill="#ffffff"/>
+  <circle cx="1056.5" cy="105" r="1.38201" fill="#ffffff"/>
+  <circle cx="755.5" cy="525.5" r="2.01197" fill="#ffffff"/>
+  <circle cx="587" cy="291.5" r="1.16813" fill="#ffffff"/>
+  <circle cx="657.5" cy="575" r="2.58029" fill="#ffffff"/>
+  <circle cx="1101" cy="416.5" r="2.58129" fill="#ffffff"/>
+  <circle cx="234.5" cy="182" r="1.47218" fill="#ffffff"/>
+  <circle cx="541.5" cy="72.5" r="1.16295" fill="#ffffff"/>
+  <circle cx="331.5" cy="260.5" r="1.30583" fill="#ffffff"/>
+  <circle cx="843" cy="462.5" r="1.93078" fill="#ffffff"/>
+  <circle cx="246" cy="593.5" r="2.3793" fill="#ffffff"/>
+  <circle cx="108" cy="115" r="1.75612" fill="#ffffff"/>
+  <circle cx="896.5" cy="210" r="2.01082" fill="#ffffff"/>
+  <circle cx="131.5" cy="476.5" r="1.72748" fill="#ffffff"/>
+  <circle cx="743" cy="580.5" r="2.58442" fill="#ffffff"/>
+  <circle cx="774" cy="345.5" r="1.7779" fill="#ffffff"/>
+  <circle cx="153.5" cy="224.5" r="2.04725" fill="#ffffff"/>
+  <circle cx="963" cy="316.5" r="1.42588" fill="#ffffff"/>
+  <circle cx="169" cy="450.5" r="1.28408" fill="#ffffff"/>
+  <circle cx="369.5" cy="98" r="2.29877" fill="#ffffff"/>
+  <circle cx="405.5" cy="25.5" r="1.40079" fill="#ffffff"/>
+  <circle cx="357" cy="35" r="1.77323" fill="#ffffff"/>
+  <circle cx="70" cy="480" r="200" fill="url(#fy15h-glow)"/>
+  <circle cx="70" cy="480" r="70" fill="url(#fy15h-sun)"/>
+  <ellipse cx="70" cy="480" rx="140" ry="45" fill="none" stroke="#8a96a3" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <ellipse cx="70" cy="480" rx="200" ry="64" fill="none" stroke="#8a96a3" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <ellipse cx="70" cy="480" rx="300" ry="96" fill="none" stroke="#8a96a3" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <ellipse cx="70" cy="480" rx="420" ry="134.5" fill="none" stroke="#8a96a3" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <circle cx="210" cy="468" r="9" fill="url(#fy15h-earth)"/>
+  <circle cx="333.5" cy="434" r="24" fill="url(#fy15h-jup)"/>
+  <path d="M315,419.5 Q333.5,421.5 351.5,419.5" fill="none" stroke="#a97a35" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
+  <path d="M311,429 Q333.5,431 355.5,429" fill="none" stroke="#a97a35" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
+  <path d="M311,439 Q333.5,440.5 355.5,439" fill="none" stroke="#a97a35" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
+  <path d="M315,448.5 Q333.5,450.5 351.5,448.5" fill="none" stroke="#a97a35" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
+  <ellipse cx="477" cy="447" rx="38" ry="9" fill="none" stroke="#e9c98a" stroke-width="5" transform="rotate(-14 477 447)"/>
+  <circle cx="477" cy="447" r="18" fill="url(#fy15h-sat)"/>
+  <path d="M439,447 A38,9 0 0 0 514.5,447" fill="none" stroke="#e9c98a" stroke-width="5" transform="rotate(-14 477 447)"/>
+  <line x1="170" y1="452" x2="877" y2="212.5" stroke="#ffffff" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="897" y1="206" x2="1180" y2="110" stroke="#ffffff" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="10 10"/>
+  <circle cx="240.5" cy="428" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="321.5" cy="400.5" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="402.5" cy="373.5" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="483" cy="346" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="564" cy="318.5" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="644.5" cy="291.5" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="725.5" cy="264" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="806.5" cy="236.5" r="10" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="968" cy="182" r="10" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="1048.5" cy="154.5" r="10" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="1129.5" cy="127" r="10" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="903" y1="201" x2="1087" y2="113" stroke="#8a96a3" stroke-width="1.6" stroke-linecap="butt"/>
+  <line x1="911" y1="217" x2="1007" y2="297" stroke="#6c757d" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="967" y="259" width="21" height="17.5" rx="3.2" fill="#6c757d" stroke="#1f2933" stroke-width="1.6"/>
+  <rect x="984.5" y="273" width="21" height="17.5" rx="3.2" fill="#6c757d" stroke="#1f2933" stroke-width="1.6"/>
+  <rect x="1002.5" y="287.5" width="21" height="17.5" rx="3.2" fill="#6c757d" stroke="#1f2933" stroke-width="1.6"/>
+  <line x1="911" y1="206" x2="999" y2="161" stroke="#6c757d" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="991" y="147" width="27" height="21" rx="2.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.6"/>
+  <circle cx="999" cy="143.5" r="5.6" fill="#1f2933"/>
+  <path d="M884,188.5 h32 l9.5,10.5 v21 l-9.5,10.5 h-32 Z" fill="url(#probe-bus-887)" stroke="#1f2933" stroke-width="1.6" stroke-linejoin="round"/>
+  <ellipse cx="876" cy="209" rx="16" ry="59" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="879" cy="209" rx="10.5" ry="45" fill="#eef5f9" stroke="#c4ccd4" stroke-width="1"/>
+  <path d="M879,209 L871,153" fill="none" stroke="#c4ccd4" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M879,209 L871,265" fill="none" stroke="#c4ccd4" stroke-width="1.2" stroke-linejoin="round"/>
+  <line x1="874.5" y1="209" x2="840.5" y2="209" stroke="#1f2933" stroke-width="2.4" stroke-linecap="butt"/>
+  <circle cx="839" cy="209" r="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
 </svg>
 
 ## Key idea

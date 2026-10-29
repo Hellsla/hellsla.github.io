@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 33f26e072b72f1e9
+CONTENT-HASH: 60e35047f53afefa
 
 ## Blocking
 
 ## Polish
-- The empty chalkboard takes the upper third; a smaller board would give the ramp and the stopwatches more room at 360 px.
+- 360 px:ssä viisarien erot ovat juuri ja juuri näkyvissä; pidemmät ja hieman hajautetummat viisarit tekisivät hajonnasta (kuvan ydin) selvän.
+- Viisarit ovat lämpötilan punaista #c92a2a; muste #1f2933 olisi palettisääntöjen mukaisempi.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: tilted track, rolling ball and ten stopwatches stopped at slightly different readings. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Luokka, kalteva alumiinikouru, teräskuula välikuvineen ja kymmenen kättä sekuntikelloineen: kymmenen eri lukemaa samasta vierimisestä, kuten kysymys. Hajonta on uskottavan pieni. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

@@ -2,72 +2,105 @@
 
 > **Why** can you not work out an electricity bill from the power of a device alone?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: in a kitchen, a steaming kettle on the left, with a clock beside it showing a short time, and a small table lamp on the right, with a clock beside it showing a long time. In the middle on the wall is an electricity meter." class="fig-hero" style="max-width:100%;font-size:24px">
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <line x1="0" y1="70" x2="1200" y2="70" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="140" x2="1200" y2="140" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="210" x2="1200" y2="210" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="280" x2="1200" y2="280" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="350" x2="1200" y2="350" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="0" y="400" width="1200" height="200" fill="#f1dfb5"/>
-  <rect x="0" y="400" width="1200" height="22" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <path d="M150,400 L166,250 Q230,230 294,250 L310,400 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M294,270 Q360,280 310,370" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M166,280 L120,248 L158,318 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="140" y="392" width="180" height="12" rx="3" fill="#1f2933"/>
-  <circle cx="270" cy="370" r="8" fill="#c92a2a"/>
-  <path d="M118,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M118,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
-  <path d="M134,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M134,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
-  <path d="M150,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M150,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
-  <path d="M890,400 h140 l-30,-20 h-80 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="960" y1="380" x2="960" y2="230" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M800,420 L914,230 H1006 L1120,420 Z" fill="#ffc078" fill-opacity="0.35"/>
-  <path d="M890,240 L920,150 H1000 L1030,240 Z" fill="#e8590c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="960" cy="238" r="14" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="420" cy="140" r="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <path d="M420,140 L420,84 A56,56 0 0 1 447,91 Z" fill="#1971c2" fill-opacity="0.3"/>
-  <line x1="420" y1="94" x2="420" y2="88" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="443" y1="100" x2="446" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="460" y1="117" x2="465" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="466" y1="140" x2="472" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="460" y1="163" x2="465" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="443" y1="180" x2="446" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="186" x2="420" y2="192" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="397" y1="180" x2="394" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="163" x2="375" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="374" y1="140" x2="368" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="117" x2="375" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="397" y1="100" x2="394" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="140" x2="439.5" y2="105" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="420" cy="140" r="5" fill="#1f2933"/>
-  <circle cx="780" cy="140" r="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <path d="M780,140 L780,84 A56,56 0 1 1 753,91 Z" fill="#1971c2" fill-opacity="0.3"/>
-  <line x1="780" y1="94" x2="780" y2="88" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="803" y1="100" x2="806" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="820" y1="117" x2="825" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="826" y1="140" x2="832" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="820" y1="163" x2="825" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="803" y1="180" x2="806" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="780" y1="186" x2="780" y2="192" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="757" y1="180" x2="754" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="740" y1="163" x2="735" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="734" y1="140" x2="728" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="740" y1="117" x2="735" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="757" y1="100" x2="754" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="780" y1="140" x2="760.5" y2="105" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="780" cy="140" r="5" fill="#1f2933"/>
-  <rect x="540" y="190" width="120" height="170" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="560" y="214" width="80" height="34" rx="3" fill="#1f2933"/>
-  <rect x="566" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
-  <rect x="584" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
-  <rect x="602" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
-  <rect x="620" y="220" width="14" height="22" rx="2" fill="#ffc078"/>
-  <circle cx="600" cy="300" r="26" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="600" y1="300" x2="618" y2="284" stroke="#c92a2a" stroke-width="3" stroke-linecap="round"/>
-  <path d="M600,360 V400" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: in a kitchen, a steaming kettle on the left with a clock above it showing a short time, and a small table lamp on the right with a clock above it showing a long time. In the middle on the wall is an electricity meter, with wires running from it to the appliances." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy23h-kettle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy23h-spout" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy23h-led" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f2a69c"/><stop offset="0.55" stop-color="#c92a2a" stop-opacity="0.8"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0"/></radialGradient><linearGradient id="fy23h-base" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy23h-shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><radialGradient id="fy23h-bulb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffc078" stop-opacity="0.8"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy23h-meter" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="400" fill="#ffffff"/>
+  <line x1="0" y1="0" x2="0" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="75" y1="0" x2="75" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="0" x2="150" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="225" y1="0" x2="225" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="375" y1="0" x2="375" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="450" y1="0" x2="450" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="525" y1="0" x2="525" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="0" x2="600" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="675" y1="0" x2="675" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="750" y1="0" x2="750" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="825" y1="0" x2="825" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="0" x2="900" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="975" y1="0" x2="975" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="0" x2="1050" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1125" y1="0" x2="1125" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1200" y1="0" x2="1200" y2="400" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="75" x2="1200" y2="75" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="150" x2="1200" y2="150" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="225" x2="1200" y2="225" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="400" width="1200" height="26" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="426" width="1200" height="174" fill="#e3dccb"/>
+  <line x1="300" y1="426" x2="300" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="426" x2="600" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="426" x2="900" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="266" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="326" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="566" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="626" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="866" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <rect x="926" y="450" width="8" height="44" rx="4" fill="#8a96a3"/>
+  <path d="M600,330 V370 H300 V400 M600,370 H930 V400" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linejoin="round"/>
+  <ellipse cx="240" cy="400" rx="110" ry="10" fill="#1f2933" fill-opacity="0.2"/>
+  <rect x="140" y="384" width="200" height="16" rx="4" fill="#1f2933"/>
+  <path d="M154,384 L170,210 Q240,188 310,210 L326,384 Z" fill="url(#fy23h-kettle)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M310,226 Q390,236 332,360" fill="none" stroke="#1f2933" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M170,240 L116,206 L160,288 Z" fill="url(#fy23h-spout)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M180,196 Q240,176 300,196 L290,206 Q240,192 190,206 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="296" y="330" width="22" height="14" rx="4" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="307" cy="337" r="12" fill="url(#fy23h-led)"/>
+  <path d="M114,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#c9c2b2" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.5"/>
+  <path d="M114,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M128,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#c9c2b2" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.5"/>
+  <path d="M128,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M142,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#c9c2b2" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.5"/>
+  <path d="M142,196 c-14,-24 14,-40 0,-64 s14,-40 0,-64" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M870,248 L740,426 H1140 L1010,248 Z" fill="#ffc078" fill-opacity="0.3"/>
+  <path d="M860,400 h160 l-30,-24 h-100 Z" fill="url(#fy23h-base)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="940" y1="380" x2="940" y2="250" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
+  <path d="M854,252 L890,150 H990 L1026,252 Z" fill="url(#fy23h-shade)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="940" cy="250" r="16" fill="url(#fy23h-bulb)"/>
+  <circle cx="420" cy="150" r="64" fill="#ffffff" stroke="#1f2933" stroke-width="4"/>
+  <path d="M420,150 L420,92 A58,58 0 0 1 448,99 Z" fill="#1971c2" fill-opacity="0.3"/>
+  <line x1="420" y1="100" x2="420" y2="92" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="445" y1="106.5" x2="449" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="463.5" y1="125" x2="470" y2="121" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="470" y1="150" x2="478" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="463.5" y1="175" x2="470" y2="179" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="445" y1="193.5" x2="449" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="200" x2="420" y2="208" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="395" y1="193.5" x2="391" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="376.5" y1="175" x2="370" y2="179" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="370" y1="150" x2="362" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="376.5" y1="125" x2="370" y2="121" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="395" y1="106.5" x2="391" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="150" x2="441" y2="111.5" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="420" cy="150" r="6" fill="#1f2933"/>
+  <circle cx="780" cy="150" r="64" fill="#ffffff" stroke="#1f2933" stroke-width="4"/>
+  <path d="M780,150 L780,92 A58,58 0 1 1 752,99 Z" fill="#1971c2" fill-opacity="0.3"/>
+  <line x1="780" y1="100" x2="780" y2="92" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="805" y1="106.5" x2="809" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="823.5" y1="125" x2="830" y2="121" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="830" y1="150" x2="838" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="823.5" y1="175" x2="830" y2="179" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="805" y1="193.5" x2="809" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="780" y1="200" x2="780" y2="208" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="755" y1="193.5" x2="751" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="736.5" y1="175" x2="730" y2="179" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="730" y1="150" x2="722" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="736.5" y1="125" x2="730" y2="121" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="755" y1="106.5" x2="751" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="780" y1="150" x2="759" y2="111.5" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="780" cy="150" r="6" fill="#1f2933"/>
+  <rect x="530" y="170" width="140" height="160" rx="10" fill="url(#fy23h-meter)" stroke="#1f2933" stroke-width="3"/>
+  <rect x="550" y="192" width="100" height="36" rx="4" fill="#1f2933"/>
+  <rect x="556" y="198" width="14" height="24" rx="2" fill="#b2f2bb"/>
+  <rect x="574" y="198" width="14" height="24" rx="2" fill="#b2f2bb"/>
+  <rect x="592" y="198" width="14" height="24" rx="2" fill="#b2f2bb"/>
+  <rect x="610" y="198" width="14" height="24" rx="2" fill="#b2f2bb"/>
+  <rect x="628" y="198" width="14" height="24" rx="2" fill="#ffc078"/>
+  <ellipse cx="600" cy="276" rx="44" ry="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="592" y="266" width="16" height="20" rx="2" fill="#c92a2a"/>
+  <rect x="560" y="304" width="80" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
 </svg>
 
 ## Key idea

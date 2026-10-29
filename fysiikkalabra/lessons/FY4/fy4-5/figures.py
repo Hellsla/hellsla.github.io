@@ -6,6 +6,8 @@ from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, C
 from fbd import FBD, ground, FORCE
 from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON, n
 import herolib as H
+from figlib import COLD, METAL_EDGE
+from herolib import grad, rnd
 
 g = 9.81
 BOX, BOX_EDGE = SAND_LIGHT, "#a97a35"
@@ -15,31 +17,43 @@ def hero():
     """The chapter's opening illustration: a sled pulled by a rope slanting up leaves a shallower track than an identical sled standing still."""
     f = H.hero("fy45-hero", "Kuvitus: talvinen piha. Vasemmalla pulkka seisoo paikallaan ja on painunut syvälle lumeen. Oikealla lapsi vetää "
                "samanlaista pulkkaa narusta vinosti ylöspäin, ja sen jättämä jälki lumessa on matalampi.")
-    H.sky(f, "fy45h", 380, ICE, WHITE)
-    H.forest(f, 300, 70, 36, GOOD, seed=3)
-    for k in range(30): f.circle(H.rnd(k, 1) * 1200, H.rnd(k, 2) * 280, 3, WHITE)
-    f.rect(0, 360, 1200, 240, WHITE)
-    f.path("M0,360 Q300,348 600,362 T1200,356 V380 H0 Z", COLD_LIGHT)
-    def sled(x, y, sink):
-        f.add(f'<ellipse cx="{x}" cy="{y + 2}" rx="104" ry="{8 + sink}" fill="{COLD_LIGHT}"/>')
-        for rx_ in (x - 70, x + 70): f.rect(rx_ - 6, y - 4, 12, 18, IRON, INK, 2)
-        f.path(f"M{x - 104},{y + 14} H{x + 100} Q{x + 120},{y + 14} {x + 118},{y}", stroke=IRON, w=5, extra='stroke-linecap="round"')
-        f.path(f"M{x - 96},{y - 34} Q{x - 100},{y} {x - 70},{y} H{x + 84} Q{x + 112},{y} {x + 106},{y - 30} Z", HOT, INK, 3)
-        f.path(f"M{x - 86},{y - 28} H{x + 96}", stroke=HOT_LIGHT, w=4)
-        top = y + 20 - sink
-        f.add(f'<path d="M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6} V{y + 40} H{x - 150} Z" fill="{WHITE}"/>')
-        f.path(f"M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6}", stroke=COLD_LIGHT, w=3)
+    H.sky(f, "fy45h", 330, ICE, GLASS)
+    H.sun(f, "fy45h", 1040, 90, 40, rays=False)
+    H.hills(f, "fy45h", 230, [WHITE, GLASS], amp=36, seed=4)
+    H.forest(f, 300, 70, 30, GOOD, seed=3, depth=40)
+    for k in range(12): f.path(f"M{n(rnd(k, 4) * 1200)},{n(300 - 40 * rnd(k, 6))} l8,-14 l8,14 Z", WHITE)
+    H.red_house(f, 60, 352, 300, 130, snow=True)
+    for k in range(30):                                     # a picket fence along the yard
+        x = 380 + k * 28
+        if x > 1200: break
+        f.path(f"M{x},{352} V{312} l9,-10 l9,10 V352 Z", WHITE, METAL_EDGE, 2)
+    f.rect(370, 322, 830, 8, WHITE, METAL_EDGE, 2)
+    H.birch(f, 1150, 360, 250, leaves=False)
+    f.path("M0,350 Q300,336 600,350 T1200,346 V600 H0 Z", grad(f, "fy45h-snow", WHITE, COLD_LIGHT, y1=340, y2=600))
+    for k in range(26): f.path(f"M{n(rnd(k, 9) * 1200)},{n(370 + rnd(k, 2) * 220)} q14,-4 28,0", stroke=ICE, w=2, extra='stroke-linecap="round"')
+    for k in range(4): f.add(f'<ellipse cx="{885 + k * 42}" cy="{n(522 + (k % 2) * 12)}" rx="14" ry="6" fill="{COLD_LIGHT}" stroke="{ICE_EDGE}" stroke-width="1.5"/>')   # the child's footprints
+    def sled(x, y, sink, tid):
+        """A plastic sled, front to the right, its bottom `sink` below the snow surface at y."""
+        w, h = 300, 74; top = y + sink - h
+        f.add(f'<ellipse cx="{x}" cy="{y + 4}" rx="{w / 2 + 34}" ry="{14 + sink * 0.5}" fill="{COLD_LIGHT}"/>')
+        f.path(f"M{x - w / 2},{top + 8} Q{x - w / 2 - 6},{y + sink} {x - w / 2 + 30},{y + sink} H{x + w / 2 - 50} "
+               f"Q{x + w / 2 + 10},{y + sink} {x + w / 2 + 18},{top - 10} L{x + w / 2 - 8},{top - 12} Q{x + w / 2 - 20},{top + 20} {x + w / 2 - 60},{top + 20} "
+               f"H{x - w / 2 + 26} L{x - w / 2 + 20},{top} Z", grad(f, tid, HOT_LIGHT, HOT), INK, 3)
+        f.path(f"M{x - w / 2 + 30},{top + 30} H{x + w / 2 - 70}", stroke=HOT_LIGHT, w=5, extra='stroke-linecap="round" stroke-opacity="0.8"')
+        for hx in (x - w / 2 + 44, x + w / 2 - 92): f.rect(hx, top + 38, 34, 14, WHITE, INK, 2, 7)
+        # the snow in front of the sled covers its sunken bottom
+        f.path(f"M{x - w / 2 - 50},{y} Q{x - w / 2 - 20},{y - 14} {x - w / 2 + 10},{y - 4} H{x + w / 2 - 10} Q{x + w / 2 + 20},{y - 14} {x + w / 2 + 50},{y} "
+               f"V{y + 60} H{x - w / 2 - 50} Z", "url(#fy45h-snow)")
+        f.path(f"M{x - w / 2 - 50},{y} Q{x - w / 2 - 20},{y - 14} {x - w / 2 + 10},{y - 4} H{x + w / 2 - 10} Q{x + w / 2 + 20},{y - 14} {x + w / 2 + 50},{y}", stroke=ICE_EDGE, w=2.5)
+        return x + w / 2 + 4, top - 8
     # the sled standing still: deep in the snow
-    sled(260, 470, 26)
-    # the pulled sled with its shallower track behind it
-    x, y = 700, 470
-    f.path(f"M500,{y + 16} H{x - 100}", stroke=COLD_LIGHT, w=6, extra='stroke-linecap="round"')
-    sled(x, y, 2)
-    hx, hy = 936, 404
-    f.line(x + 100, y - 28, hx, hy, COPPER, 4, cap="round")
-    H.person(f, 990, 520, HEAT, INK, 0.48)
-    f.path(f"M{n(990 - 0.48 * 26)},{n(520 - 0.48 * 236)} L{hx},{hy}", stroke=HEAT, w=11, extra='stroke-linecap="round"')
-    f.circle(hx, hy, 7, SAND_LIGHT)
+    sled(250, 470, 40, "fy45h-s1")
+    # the pulled sled: shallow, a faint shallow track behind it
+    for dy in (-6, 8): f.path(f"M440,{470 + dy} H{560}", stroke=ICE_EDGE, w=3, extra='stroke-linecap="round" stroke-opacity="0.7"')
+    fx, fy = sled(700, 470, 6, "fy45h-s2")
+    hand = (1010, 330)
+    f.line(fx, fy, *hand, COPPER, 5, cap="round")
+    H.walker(f, 1050, 520, COLD, INK, 0.62, lean=26, hand=hand, winter=True, stride=0.9)
     return f.svg()
 
 

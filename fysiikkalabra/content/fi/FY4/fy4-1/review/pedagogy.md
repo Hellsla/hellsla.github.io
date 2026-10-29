@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 20d74f02d39131b2
+CONTENT-HASH: 49e92411e3fdd92d
 
 ## Blocking
 
 ## Polish
-- The bike is drawn side-on on a path seen obliquely from above; acceptable as a flat-style convention.
+- Pyöräilijä on karkea (vartalo paksuna viivana, yksi jalka); viimeistely kuten fy2-2.
+- Pyöräilijä on osin polun ulkopuolella; sijoittaminen polulle juuri ennen lippua vahvistaisi 'palaa lähtöön'.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: a loop round a lake, a start flag, clockwise ink arrows, the cyclist near the end of the loop; no velocity, acceleration or force arrows. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Metsäjärvi vinosti ylhäältä, hiekkapolku ympäri, lähtölippu ja -viiva, pyöräilijä palaamassa lähtöön, mustekarvaiset suuntanuolet johdonmukaisesti samaan kiertosuuntaan: kuljettu matka ilman siirtymää näkyy. Nuolet ovat kulkusuunnan merkkejä eivätkä nopeusvektoreita; värisääntö ei rikkoudu. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

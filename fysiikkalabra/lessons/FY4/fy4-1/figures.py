@@ -3,37 +3,55 @@ from figlib import (Fig, Axes, INK, MUTED, RULE_LIGHT, WHITE, COLD, HEAT, SAND_L
 import math
 from figlib import GOOD, GOOD_LIGHT, HOT, IRON, SAND, SAND_DARK, WATER, WATER_LIGHT
 import herolib as H
+from figlib import GRAIN, METAL_EDGE, n
+from herolib import grad, rnd
 
 
 def hero():
     """The chapter's opening illustration: a cyclist rides once round a lake and comes back to the start flag: a long path, no change of place."""
-    f = H.hero("fy41-hero", "Kuvitus: ylhäältä vinosti nähty järvi, jonka ympäri kiertää polku. Lähtöpaikalla on lippu, ja polulla ajaa "
-               "pyöräilijä, joka on kiertämässä järven ympäri takaisin lähtöpaikkaan. Nuolet näyttävät kiertosuunnan.")
-    f.rect(0, 0, 1200, 600, GOOD_LIGHT)
-    for k in range(34):
-        x, y = 60 + H.rnd(k, 2) * 1080, 120 + H.rnd(k, 6) * 450
-        if (x - 600) ** 2 / 480 ** 2 + (y - 340) ** 2 / 230 ** 2 > 1: f.circle(x, y, 14 + 10 * H.rnd(k, 8), GOOD, INK, 2)
-    f.add(f'<ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="{SAND}" stroke-width="40"/>')
-    f.add(f'<ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="{SAND_DARK}" stroke-width="2" stroke-dasharray="2 10"/>')
-    f.add(f'<ellipse cx="600" cy="340" rx="370" ry="156" fill="{WATER_LIGHT}" stroke="{WATER}" stroke-width="3"/>')
-    for k in range(5): f.path(f"M{430 + k * 70},{300 + 18 * (k % 2)} q16,-8 32,0", stroke=WHITE, w=3)
-    for t in (1.0, 2.3, 3.6, 4.9, 5.9):
-        x, y = 600 + 430 * math.cos(t), 340 + 200 * math.sin(t)
-        dx, dy = -math.sin(t) * 430, math.cos(t) * 200; L = math.hypot(dx, dy)
-        f.arrow(x - dx / L * 34, y - dy / L * 34, x + dx / L * 34, y + dy / L * 34, INK, 4, 16)
-    # start flag at the bottom
-    fx, fy = 600, 540
-    f.line(fx, fy, fx, fy - 90, INK, 4); f.path(f"M{fx},{fy - 90} l50,14 l-50,14 Z", HOT, INK, 2)
-    f.add(f'<ellipse cx="{fx}" cy="{fy}" rx="16" ry="6" fill="{IRON}"/>')
-    # cyclist on the path, seen from the side, on the right
-    x, y = 980, 452
-    for wx in (x - 36, x + 36): f.circle(wx, y, 22, "none", INK, 4)
-    f.path(f"M{x - 36},{y} L{x - 8},{y} L{x + 18},{y - 36} L{x - 18},{y - 36} Z M{x - 8},{y} L{x - 22},{y - 46} M{x + 36},{y} L{x + 22},{y - 50}", stroke=HOT, w=4, extra='stroke-linejoin="round"')
-    f.path(f"M{x - 22},{y - 50} L{x - 2},{y - 100}", stroke=COLD, w=18, extra='stroke-linecap="round"')
-    f.path(f"M{x - 4},{y - 92} L{x + 24},{y - 54}", stroke=COLD, w=8, extra='stroke-linecap="round"')
-    f.path(f"M{x - 22},{y - 50} L{x - 4},{y - 24} L{x - 8},{y}", stroke=INK, w=8, extra='stroke-linecap="round" stroke-linejoin="round"')
-    f.circle(x + 6, y - 116, 13, SAND_LIGHT)
-    f.path(f"M{x - 8},{y - 120} Q{x + 4},{y - 136} {x + 20},{y - 120} Z", HOT, INK, 2)
+    f = H.hero("fy41-hero", "Kuvitus: järvi metsän keskellä vinosti ylhäältä nähtynä, ja sen ympäri kiertää hiekkapolku. Polun lähtöpaikalla "
+               "on lippu ja lähtöviiva. Etualalla pyöräilijä ajaa polkua kohti lähtöpaikkaa: hän on kiertänyt järven ympäri. "
+               "Nuolet polulla näyttävät kiertosuunnan.")
+    H.sky(f, "fy41h", 200)
+    H.cloud(f, 220, 70, 0.7); H.cloud(f, 980, 50, 0.55)
+    H.hills(f, "fy41h", 150, [ALUMINIUM, METAL_EDGE], amp=40, seed=3)
+    H.forest(f, 196, 34, 22, IRON, seed=5, depth=20)
+    H.forest(f, 216, 40, 26, GOOD, seed=8, depth=12)
+    f.rect(0, 226, 1200, 374, grad(f, "fy41h-grass", GOOD_LIGHT, SAND_LIGHT, y1=226, y2=600))
+    cx, cy = 600, 360
+    # gravel path round the lake, its edges and texture
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="500" ry="168" fill="{SAND}" stroke="{GRAIN}" stroke-width="3"/>')
+    f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="452" ry="132" fill="{GOOD_LIGHT}" stroke="{GRAIN}" stroke-width="3"/>')
+    for k in range(90):
+        t = k / 90 * 2 * math.pi; rr = 476 + 16 * (rnd(k, 3) - 0.5)
+        f.circle(cx + rr * math.cos(t), cy + rr * 150 / 476 * math.sin(t), 2 + 1.5 * rnd(k, 7), GRAIN)
+    # lake with shore sand, reeds and ripples
+    f.add(f'<ellipse cx="{cx}" cy="{cy - 6}" rx="420" ry="112" fill="{SAND_LIGHT}"/>')
+    f.add(f'<ellipse cx="{cx}" cy="{cy - 8}" rx="400" ry="100" fill="{grad(f, "fy41h-lake", WATER_LIGHT, WATER)}" stroke="{WATER}" stroke-width="3"/>')
+    for x, y, w in ((360, 320, 110), (560, 300, 140), (760, 340, 120), (480, 380, 90), (690, 395, 100)):
+        f.path(f"M{x},{y} q{w / 4},-6 {w / 2},0 t{w / 2},0", stroke=WHITE, w=3, extra='stroke-linecap="round" stroke-opacity="0.75"')
+    for k in range(9):
+        x = 250 + k * 14 if k < 5 else 880 + (k - 5) * 14; y = 352 + 18 * (k % 3)
+        f.line(x, y, x - 4, y - 34, GOOD, 3, cap="round"); f.add(f'<ellipse cx="{n(x - 4)}" cy="{n(y - 34)}" rx="4" ry="10" fill="{COPPER}"/>')
+    # spruces around, larger nearer
+    for k, (x, yb, h) in enumerate(((60, 300, 110), (130, 330, 130), (1080, 300, 110), (1150, 340, 140), (40, 470, 170), (1130, 500, 180),
+                                    (200, 270, 80), (980, 262, 80), (330, 230, 60), (860, 232, 64))):
+        H.spruce(f, x, yb, h)
+    # direction arrows along the path (clockwise on the page)
+    for t in (1.25, 2.6, 3.7, 4.6, 5.5):
+        x, y = cx + 476 * math.cos(t), cy + 150 * math.sin(t)
+        dx, dy = -math.sin(t) * 476, math.cos(t) * 150; L = math.hypot(dx, dy)
+        f.arrow(x - dx / L * 30, y - dy / L * 30, x + dx / L * 30, y + dy / L * 30, INK, 4, 16)
+    # start line and flag at the front of the path
+    sx, sy = 600, cy + 150
+    f.path(f"M{sx - 6},{sy - 22} L{sx + 6},{sy + 22}", stroke=WHITE, w=10)
+    f.line(sx + 20, sy + 30, sx + 20, sy - 90, INK, 5)
+    f.path(f"M{sx + 20},{sy - 90} Q{sx + 60},{sy - 104} {sx + 96},{sy - 82} Q{sx + 60},{sy - 64} {sx + 20},{sy - 60} Z", HOT, INK, 3)
+    f.add(f'<ellipse cx="{sx + 20}" cy="{sy + 30}" rx="18" ry="6" fill="{GRAIN}"/>')
+    # the cyclist on the near path, riding towards the start (to the left: mirrored)
+    f.add('<g transform="translate(1760,0) scale(-1,1)">')
+    H.rider(f, 780, 920, 492, 40, COLD, HEAT, HOT)
+    f.add("</g>")
     return f.svg()
 
 
