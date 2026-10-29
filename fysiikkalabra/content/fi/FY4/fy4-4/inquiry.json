@@ -92,7 +92,7 @@
         },
         {
           "text": "Kärry ei lähde liikkeelle, jos vetävä voima on pienempi kuin kärryn paino.",
-          "feedback": "Vaakasuoralla radalla paino on pystysuora, ja radan tukivoima kumoaa sen. Vaakasuoraa veto ei tarvitse voittaa painoa: jo $1{,}0\\,\\text{N}$ kiihdyttää kärryä, jonka paino on lähes $10\\,\\text{N}$. Mallin arvoissa kiihtyvyys on silloin $1{,}0\\,\\text{m/s}^2$."
+          "feedback": "Vaakasuoralla radalla paino on pystysuora, ja radan tukivoima kumoaa sen. Vaakasuora veto ei tarvitse voittaa painoa: jo $1{,}0\\,\\text{N}$ kiihdyttää kärryä, jonka paino on lähes $10\\,\\text{N}$. Mallin arvoissa kiihtyvyys on silloin $1{,}0\\,\\text{m/s}^2$."
         }
       ]
     },
@@ -101,6 +101,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Ennuste 3: voima liikettä vastaan",
+      "optional": true,
       "justify": true,
       "reveal": {
         "after": "exp-3",
@@ -174,11 +175,11 @@
       "measure": [
         {
           "key": "sumFx",
-          "label": "ΣF_x (N)"
+          "label": "$\\Sigma F_x$ (N)"
         },
         {
           "key": "a",
-          "label": "a_x (m/s²)"
+          "label": "$a_x$ (m/s$^2$)"
         }
       ],
       "min": 2
@@ -225,11 +226,11 @@
       "measure": [
         {
           "key": "m",
-          "label": "m (kg)"
+          "label": "$m$ (kg)"
         },
         {
           "key": "a",
-          "label": "a_x (m/s²)"
+          "label": "$a_x$ (m/s$^2$)"
         }
       ],
       "min": 2
@@ -239,6 +240,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 3: voima liikettä vastaan",
+      "optional": true,
       "intro": "Testaa kolmas ennuste. Alkutila valitsee voiman $2{,}0\\,\\text{N}$, massan $1{,}0\\,\\text{kg}$ ja kärryn, joka liikkuu alussa oikealle. Muuta vain narun suuntaa. Seuraa ajon aikana sinistä ja oranssia nuolta ja kuvaajan pisteitä. Kirjaa mittaus kummallakin suunnalla.",
       "initial": {
         "alku": "vauhdissa",
@@ -277,15 +279,15 @@
       "measure": [
         {
           "key": "sumFx",
-          "label": "ΣF_x (N)"
+          "label": "$\\Sigma F_x$ (N)"
         },
         {
           "key": "a",
-          "label": "a_x (m/s²)"
+          "label": "$a_x$ (m/s$^2$)"
         },
         {
           "key": "v",
-          "label": "v_x lopussa (m/s)"
+          "label": "$v_x$ lopussa (m/s)"
         }
       ],
       "min": 2,
@@ -401,13 +403,13 @@
       "tolerance": 0.02,
       "hints": [
         "Kokonaisvoima saadaan laista $\\Sigma F = ma$. Mitä sinun pitää tietää ensin, ja mistä sen saat?",
-        "Kiihtyvyys on nopeuden muutos jaettuna ajalla: $a = \\dfrac{\\Delta v}{\\Delta t}$. Muunna nopeus ensin yksikköön m/s.",
+        "Kiihtyvyys on nopeuden muutos jaettuna ajalla: $a = \\dfrac{\\Delta v}{\\Delta t}$. Muunna nopeus ensin yksikköön $\\text{m/s}$.",
         "$72\\,\\text{km/h} = 20\\,\\text{m/s}$, joten $a = \\dfrac{0 - 20\\,\\text{m/s}}{4{,}0\\,\\text{s}} = -5{,}0\\,\\text{m/s}^2$. Kerro massalla."
       ],
       "mistakes": [
         {
           "value": 25200,
-          "feedback": "Käytit nopeutta $72$ sellaisenaan. Nopeus on muunnettava yksikköön m/s ennen kuin kiihtyvyys lasketaan: $72\\,\\text{km/h} = 72 : 3{,}6\\,\\text{m/s} = 20\\,\\text{m/s}$."
+          "feedback": "Käytit nopeutta $72$ sellaisenaan. Nopeus on muunnettava yksikköön $\\text{m/s}$ ennen kuin kiihtyvyys lasketaan: $72\\,\\text{km/h} = 72 : 3{,}6\\,\\text{m/s} = 20\\,\\text{m/s}$."
         },
         {
           "value": 5.0,
@@ -455,7 +457,7 @@
       "type": "numeric",
       "title": "2. Laskeminen",
       "fbd": "equations",
-      "prompt": "Ostoskärryä, jonka massa on $18\\,\\text{kg}$, työnnetään vaakasuoralla lattialla vaakasuoralla $30\\,\\text{N}$:n voimalla. Pyörien vierimisvastus ja muu kitka jarruttavat kärryä yhteensä $12\\,\\text{N}$:n voimalla. Kuinka suuri on kärryn kiihtyvyys? Vastaa yksikössä $\\text{m/s}^2$.",
+      "prompt": "Ostoskärryä, jonka massa on $18\\,\\text{kg}$, työnnetään vaakasuoralla lattialla $30\\,\\text{N}$:n voimalla. Pyörien vierimisvastus ja muu kitka jarruttavat kärryä yhteensä $12\\,\\text{N}$:n voimalla. Kuinka suuri on kärryn kiihtyvyys? Vastaa yksikössä $\\text{m/s}^2$.",
       "answer": 1.0,
       "unit": "m/s²",
       "tolerance": 0.02,

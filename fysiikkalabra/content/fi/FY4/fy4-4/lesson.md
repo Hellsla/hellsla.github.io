@@ -431,7 +431,7 @@ Newtonin toinen laki eli dynamiikan peruslaki kokoaa havainnot yhteen yhtälöö
 ```latex
 \Sigma\overline{F} = m\overline{a}
 ```
-missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma eli kokonaisvoima (N), $m$ kappaleen massa (kg) ja $\overline{a}$ sen kiihtyvyys (m/s²). Voiman yksikkö määritellään tästä laista: yksi newton on voima, joka antaa yhden kilogramman massalle kiihtyvyyden $1\,\text{m/s}^2$. Siis $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
+missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma eli kokonaisvoima ($\text{N}$), $m$ kappaleen massa ($\text{kg}$) ja $\overline{a}$ sen kiihtyvyys ($\text{m/s}^2$). Voiman yksikkö määritellään tästä laista: yksi newton on voima, joka antaa yhden kilogramman massalle kiihtyvyyden $1\,\text{m/s}^2$. Siis $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 
 ### Kokonaisvoima osoittaa kiihtyvyyden suuntaan
 Laki on vektoriyhtälö: kokonaisvoima ja kiihtyvyys osoittavat aina samaan suuntaan. Nopeuden suunta voi olla toinen. Kuvan nosturi kannattelee laatikkoa köydellä. Kun laatikko nousee kiihtyen, köyden voima on painoa suurempi ja kokonaisvoima osoittaa ylös. Kun laatikko nousee hidastuen, köyden voima on painoa pienempi: kokonaisvoima ja kiihtyvyys osoittavat alas, vaikka laatikko liikkuu yhä ylöspäin. Levossa ja tasaisessa nousussa köyden voima ja paino ovat yhtä suuret.
@@ -542,20 +542,32 @@ Rakennusnosturi nostaa betonielementtiä, jonka massa on $480\,\text{kg}$. Köyd
 
 **Voimakuvio.** Elementti piirretään suorakulmiona. Paino $\overline{G}$ lähtee keskipisteestä alas, ja köyden jännitysvoima $\overline{T}$ lähtee yläpinnasta ylös. Positiivinen suunta valitaan ylös.
 
-<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Betonielementin voimakuvio, elementti suorakulmiona. Köyden jännitysvoima T lähtee yläpinnasta ylös, ja paino G lähtee keskipisteestä alas. Nuoli T on vähän pidempi kuin nuoli G. Oikealla erillään oranssi kiihtyvyysnuoli ylös. Vasemmalla pieni nuoli y ylös: positiivinen suunta on ylös." style="max-width:100%;font-size:24px">
-  <rect x="245" y="165" width="110" height="50" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="300" y1="165" x2="300" y2="47" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,30 L308,48 L292,48 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="309.5" y="27.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}$</div></foreignObject>
-  <line x1="300" y1="190" x2="300" y2="295.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,312.5 L292,294.5 L308,294.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="309.5" y="292" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="430" y1="220" x2="430" y2="162" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M436.5,173 L430,160 L423.5,173" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="413.5" y="119.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <line x1="120" y1="300" x2="120" y2="245" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M120,236 L124.5,246 L115.5,246 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="110" y="203.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
+<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Betonielementin voimakuvio, elementti suorakulmiona. Köyden jännitysvoima T lähtee yläpinnasta ylös, ja paino G lähtee keskipisteestä alas. Nuoli T on vähän pidempi kuin nuoli G. Oikealla erillään oranssi kiihtyvyysnuoli ylös. Oikealla pieni nuoli y ylös: positiivinen suunta on ylös. Vasemmalla tilannekuva: nosturin koukku nostaa betonielementtiä köydellä." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy44-ex-elem" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <line x1="110" y1="20" x2="110" y2="138" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M110,138 q-14,5 -12,19 q5,12 17,7" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="104" y1="168" x2="66" y2="200" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="116" y1="168" x2="154" y2="200" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="46" y="200" width="128" height="60" rx="2" fill="url(#fy44-ex-elem)" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="46" y1="220" x2="174" y2="220" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="46" y1="240" x2="174" y2="240" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="8" y1="296" x2="212" y2="296" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
+  <foreignObject x="37.5" y="335.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
+  <foreignObject x="333.5" y="335.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{voimakuvio}$</div></foreignObject>
+  <line x1="228" y1="20" x2="228" y2="340" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 5"/>
+  <rect x="285" y="165" width="110" height="50" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="340" y1="165" x2="340" y2="47" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M340,30 L348,48 L332,48 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="349.5" y="27.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{T}$</div></foreignObject>
+  <line x1="340" y1="190" x2="340" y2="295.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M340,312.5 L332,294.5 L348,294.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="349.5" y="292" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="470" y1="220" x2="470" y2="162" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M476.5,173 L470,160 L463.5,173" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="453.5" y="119.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <line x1="560" y1="300" x2="560" y2="245" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M560,236 L564.5,246 L555.5,246 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="550" y="203.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
 </svg>
 
 <!-- vaihe -->
@@ -594,7 +606,7 @@ Rakennusnosturi nostaa betonielementtiä, jonka massa on $480\,\text{kg}$. Köyd
 **Järkevyys.** Köyden voima on vain noin kymmenen prosenttia suurempi kuin paino $4{,}71\,\text{kN}$, joten kiihtyvyydenkin pitää olla noin kymmenesosa putoamiskiihtyvyydestä: $0{,}1\cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$. Jos painon unohtaisi, tulos olisi $5200\,\text{N} : 480\,\text{kg} \approx 10{,}8\,\text{m/s}^2$. Se on enemmän kuin putoamiskiihtyvyys ja aivan liian suuri nosturille.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että liikkeen suuntaan vaikuttaa aina voima ja että kokonaisvoima osoittaa liikkeen suuntaan. Kokonaisvoima osoittaa kuitenkin kiihtyvyyden suuntaan. Ylöspäin heitetty pallo nousee, vaikka siihen vaikuttaa vain alaspäin osoittava paino, ja siksi se hidastuu. Hidastuvassa liikkeessä kokonaisvoima osoittaa nopeutta vastaan. Toinen virhe on ajatella, että vakiovoima pitää yllä vakionopeutta. Kun kokonaisvoima on vakio eikä nolla, nopeus muuttuu tasaisesti. Kolmas virhe on sekoittaa massa ja paino. Vaakasuoralla radalla paino ei vastusta liikettä, koska tukivoima kumoaa sen: kiihtyvyyttä pienentää massa.
+Moni ajattelee, että liikkeen suuntaan vaikuttaa aina voima ja että kokonaisvoima osoittaa liikkeen suuntaan. Kokonaisvoima osoittaa kuitenkin kiihtyvyyden suuntaan. Kun ilmanvastus jätetään huomiotta, ylöspäin heitetty pallo nousee, vaikka siihen vaikuttaa vain alaspäin osoittava paino, ja siksi se hidastuu. Hidastuvassa liikkeessä kokonaisvoima osoittaa nopeutta vastaan. Toinen virhe on ajatella, että vakiovoima pitää yllä vakionopeutta. Kun kokonaisvoima on vakio eikä nolla, nopeus muuttuu tasaisesti. Kolmas virhe on sekoittaa massa ja paino. Vaakasuoralla radalla paino ei vastusta liikettä, koska tukivoima kumoaa sen: kiihtyvyyttä pienentää massa.
 
 ## Tiivistelmä
 - Kun kokonaisvoima on nolla, nopeus ei muutu. Kun se ei ole nolla, kappale kiihtyy kokonaisvoiman suuntaan.

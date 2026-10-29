@@ -214,14 +214,23 @@ def esimerkki():
     G = m * g; a = (T - G) / m
     f = Fig("fy44-esimerkki", 360, "Betonielementin voimakuvio, elementti suorakulmiona. Köyden jännitysvoima T lähtee yläpinnasta ylös, ja "
             "paino G lähtee keskipisteestä alas. Nuoli T on vähän pidempi kuin nuoli G. Oikealla erillään oranssi kiihtyvyysnuoli ylös. "
-            "Vasemmalla pieni nuoli y ylös: positiivinen suunta on ylös.")
-    cx, cy, w, h = 300, 190, 110, 50
+            "Oikealla pieni nuoli y ylös: positiivinen suunta on ylös. Vasemmalla tilannekuva: nosturin koukku nostaa betonielementtiä köydellä.")
+    # situation picture (left): the crane's hook on the rope lifts the concrete element, which accelerates up
+    f.line(110, 20, 110, 138, INK, 3)
+    f.path("M110,138 q-14,5 -12,19 q5,12 17,7", stroke=IRON, w=5)
+    f.line(104, 168, 66, 200, INK, 2); f.line(116, 168, 154, 200, INK, 2)
+    f.rect(46, 200, 128, 60, grad(f, "fy44-ex-elem", SAND_DARK, SAND), INK, 2.5, 2)
+    f.line(46, 220, 174, 220, GRAIN, 1.5); f.line(46, 240, 174, 240, GRAIN, 1.5)
+    f.line(8, 296, 212, 296, GRAIN, 3)
+    f.tex(110, 350, r"\text{tilannekuva}", "middle", MUTED); f.tex(400, 350, r"\text{voimakuvio}", "middle", MUTED)
+    f.line(228, 20, 228, 340, RULE_LIGHT, 1.5, "4 5")
+    cx, cy, w, h = 340, 190, 110, 50
     d = FBD(f, 0.026, body=(cx, cy, w, h), m=m, a=(0, a))
     d.force("T", (0, T), (cx, cy - h / 2), "tension", rope=(0, 1), lab=(26, 12))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(26, -6))
     d.draw()
-    d.motion(r"\overline{a}", (0, 1), (430, 220), 60)
-    f.arrow(120, 300, 120, 236, MUTED, 2, 10); f.tex(120, 218, r"y", "middle", MUTED)
+    d.motion(r"\overline{a}", (0, 1), (470, 220), 60)
+    f.arrow(560, 300, 560, 236, MUTED, 2, 10); f.tex(560, 218, r"y", "middle", MUTED)
     return f.svg()
 
 
