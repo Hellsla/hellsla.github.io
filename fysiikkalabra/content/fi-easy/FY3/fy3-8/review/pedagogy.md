@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 19507699d7a719c2
+CONTENT-HASH: 53a1321f7866ba94
 
 ## Blocking
 (none left; see Fixed)
@@ -16,3 +16,4 @@ CONTENT-HASH: 19507699d7a719c2
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, experiment intros/names, howto/model), exit-ticket.json, meta.json and figures.json against the Finnish; sim labels sims.fy3-8 resolved in the language. Compared register, term consistency with terms.md and lang labels, and that each question, hint and feedback still matches its option. Checked Selkeä suomi: short sentences, terms kept and explained, no steps or feedback dropped.
 - Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson texts (unit formatting, interactions wording, water/liquid caveat), the new check-c2 hole item, the trimmed exit ticket, the new activity titles and the figure description against the new Finnish.
+- Update 2026-10-29 (sim LaTeX PR #132): pred-3 is now revealed after the theory section (reveal after theory, min 1) and exp-1 says "Testaa ennuste 1", both matching the Finnish; the waiting note lang/fi-easy.json inquiry.pending_theory ("Ennusteesi on tallessa. Saat palautteen, kun olet lukenut teoriaosan.") is short and plain, in the register of the existing pending note. Sim labels (KaTeX) and the rest of the translation re-compared with the current Finnish: complete, level kept.

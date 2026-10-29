@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 19507699d7a719c2
+CONTENT-HASH: 53a1321f7866ba94
 
 ## Blocking
 (none left; see Fixed)
@@ -16,3 +16,4 @@ CONTENT-HASH: 19507699d7a719c2
 ## Checked
 - Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, experiment intros/names, howto/model), exit-ticket.json, meta.json and figures.json against the Finnish; sim labels sims.fy3-8 resolved in the language. Compared physics statements, signs, 'at least/at most', quantities, units, symbols in prose, chapter titles from courses.json, decimal sign, step labels.
 - Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson texts (unit formatting, interactions wording, water/liquid caveat), the new check-c2 hole item, the trimmed exit ticket, the new activity titles and the figure description against the new Finnish.
+- Update 2026-10-29 (sim LaTeX PR #132): pred-3 reveal {after: theory, min: 1} and exp-1 intro "Testaa ennuste 1." match the Finnish source exactly; pred-3 still has Bea alone correct and all four feedbacks translate the Finnish physics (asymmetric vibration, particles keep their size, heat is transferred energy); no other text still refers to prediction 3 being tested in experiment 1. lang/fi-easy.json inquiry.pending_theory "Ennusteesi on tallessa. Saat palautteen, kun olet lukenut teoriaosan." says the same as the Finnish and the built page carries it. The Finnish source and this translation changed only in these lines since the last PASS; check_i18n 0 errors; test_sims fy3-8 PASS in this language.

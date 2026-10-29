@@ -158,7 +158,7 @@
         "Vml": 50
       },
       "names": {
-        "mode": "tilanmuutos",
+        "mode": "change of state",
         "Vml": "volume V",
         "Tc": "θ"
       },
@@ -194,7 +194,7 @@
         "Tc": 20
       },
       "names": {
-        "mode": "tilanmuutos",
+        "mode": "change of state",
         "Vml": "volume V",
         "Tc": "θ"
       },
