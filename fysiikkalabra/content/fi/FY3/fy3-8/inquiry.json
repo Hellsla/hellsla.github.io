@@ -109,8 +109,8 @@
       "prompt": "Neljä opiskelijaa selittää, mitä teräksen sisällä tapahtuu, kun se lämpenee ja pitenee. Kenen selitys sopii hiukkasmalliin?",
       "justify": true,
       "reveal": {
-        "after": "exp-1",
-        "min": 2
+        "after": "theory",
+        "min": 1
       },
       "choices": [
         {
@@ -145,7 +145,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: vain lämpötila muuttuu",
-      "intro": "Testaa ennusteet 1 ja 3. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi $70\\,{}^\\circ\\text{C}$ ja $120\\,{}^\\circ\\text{C}$, ja kokeile myös pakkasta, esimerkiksi $-30\\,{}^\\circ\\text{C}$. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
+      "intro": "Testaa ennuste 1. Aine ja alkupituus ovat vakioita, ja vain lämpötilaa muutetaan. Kirjaa pituuden muutos ainakin kahdessa lämpötilassa, esimerkiksi $70\\,{}^\\circ\\text{C}$ ja $120\\,{}^\\circ\\text{C}$, ja kokeile myös pakkasta, esimerkiksi $-30\\,{}^\\circ\\text{C}$. Seuraa samalla, mitä mikromallin hiukkasille ja niiden väleille tapahtuu.",
       "initial": {
         "material": "teräs",
         "L0": 10,

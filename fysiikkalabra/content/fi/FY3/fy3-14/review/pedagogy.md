@@ -1,15 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: e561d782886c645f
 
-Delta review over the audit's PASS (a5fd473fe9aaac0d): new check-c2 (cold ice cube in 0 °C water, converted from an exit question), titles renumbered, one exit question removed.
-
 ## Blocking
 - none
+
 ## Polish
-- check-c2: the prompt gives no amounts, so only the first phase is determined; "Mitä astiassa tapahtuu, kun lämpötilat alkavat tasoittua?" is fine, but say "ensin" to be exact.
-- exit-ticket.json:6 — the mixing question (0,10 kg water 10 °C + 0,10 kg ice) is now close to the new L1-03 figure task; keep or replace with a concept question.
+- The readout gives the final state (24,7 g ice left) before Sekoita is pressed; make sure the prediction stage precedes it.
+- The mass slider label sits beside the Sekoita button, slightly cramped.
+
 ## Checked
-- check-c2 tests a key idea check-1 (slush stays at 0 °C) does not: water must freeze to warm the cold ice, so freezing releases energy. Conceptual, no calculation.
-- Distractors are real (ice melts at once, nothing happens, water supercools); feedback explains with 334 kJ/kg and 0 °C equilibrium; no option points at another.
-- Removed exit question (equilibrium at 0 °C) was covered by check-1: right.
-- LaTeX in the new check; Finnish clear; "kaksi" matches.
+batch delta review: the packet's diff is empty (0 changed wording lines, hash equal to the passed version). Judged the simulation LaTeX pass from the 390 px simulation capture: canvas labels and readouts are KaTeX in one typeface, legible at 390 px, the lead is short, Käyttöohje / Mallin oletukset / Laskennan selitys boxes are closed and hold the rest, controls are not hidden, colour carries meaning and is backed by labels. Law name, Finnish and figure captures unchanged since the earlier PASS.

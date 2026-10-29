@@ -113,8 +113,8 @@
       "prompt": "Four students explain what happens inside steel when it warms up and gets longer. Whose explanation fits the particle model?",
       "justify": true,
       "reveal": {
-        "after": "exp-1",
-        "min": 2
+        "after": "theory",
+        "min": 1
       },
       "choices": [
         {
@@ -149,7 +149,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the temperature changes",
-      "intro": "Test predictions 1 and 3. The substance and the initial length are constant, and only the temperature is changed. Record the change in length at at least two temperatures, for example $70\\,{}^\\circ\\text{C}$ and $120\\,{}^\\circ\\text{C}$, and also try a freezing temperature, for example $-30\\,{}^\\circ\\text{C}$. Also watch what happens to the particles of the micro model and the gaps between them.",
+      "intro": "Test prediction 1. The substance and the initial length are constant, and only the temperature is changed. Record the change in length at at least two temperatures, for example $70\\,{}^\\circ\\text{C}$ and $120\\,{}^\\circ\\text{C}$, and also try a freezing temperature, for example $-30\\,{}^\\circ\\text{C}$. Also watch what happens to the particles of the micro model and the gaps between them.",
       "initial": {
         "material": "teräs",
         "L0": 10,

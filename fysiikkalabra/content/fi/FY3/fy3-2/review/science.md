@@ -1,12 +1,9 @@
 VERDICT: PASS
 CONTENT-HASH: bfec5c76baad670d
 
-Round 2: exit ticket 2 → 1 (the two-lifts question removed), stage text "Lopuksi yksi".
-
 ## Blocking
-- none
+
 ## Polish
-- none
+
 ## Checked
-- Remaining exit question: area under the (s, F) line = work, 40 N · 0,50 m = 20 J (recomputed).
-- Count 1 matches "Lopuksi yksi".
+batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash bfec5c76baad670d; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.

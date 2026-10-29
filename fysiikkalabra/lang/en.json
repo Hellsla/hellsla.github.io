@@ -116,6 +116,7 @@
     "no_error": "There is no error in the calculation|There is no error in the reasoning",
     "justify": "Justification (optional)",
     "pending": "Your prediction is saved. Feedback appears when you have made the measurements.",
+    "pending_theory": "Your prediction is saved. Feedback appears when you have read the theory section.",
     "commit": "Answer",
     "show_solution": "Show the solution",
     "answer": "Answer",

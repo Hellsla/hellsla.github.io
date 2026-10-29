@@ -26,3 +26,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T19:42Z	fy3-7	FY3	general-purpose	other	claude-sonnet-5-5	medium	batch/11	2	25444	1	285	19530	5628	5694	5	39	6		0.0208	transcript	2a3cac725df8
 2026-10-26T19:42Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6		836769	13	4882	792576	39298	39579	38	364	46		0.3056	transcript	07e80d8722d9
 2026-10-26T19:42Z	fy3-7	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	0602223d0c6a
+2026-10-28T15:36Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	411420	12	4280	324592	82536	83047	6	39	13		0.3141	transcript	6f6eb163c817
+2026-10-28T15:36Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5		full	1	659898	16	9670	550732	99480	99883	8	100	10		0.8010	transcript	e68bba27616a
+2026-10-28T15:36Z	fy3-7	FY3	general-purpose	other	claude-sonnet-5-5			2	225377	10	2097	197957	25313	52633	5	132	7		0.1239	transcript	872b7358dc0c
+2026-10-28T15:36Z	fy3-7	FY3	general-purpose	other	claude-sonnet-5-5			2	1105667	28	24756	1011212	69671	97233	14	249	18		0.6240	transcript	c62c3688fecd
+2026-10-28T15:36Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5		full	2	1231246	30	9762	1144469	76985	104580	15	125	17		0.8092	transcript	630549579b84
+2026-10-28T15:36Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	398389	12	2799	345455	50123	77780	6	27	10		0.2224	transcript	3d81011e992f
+2026-10-28T15:36Z	fy3-7	FY3	orchestrator	orchestrate	claude-opus-5-5		session/13	2	6521923	60	18946	6354443	148474	19298	390	177112	557		2.5525	transcript	17d72958257d
+2026-10-28T15:36Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5		full	1	1623832	34	9988	1495507	118303	119839	17	141	19		1.0905	transcript	7226717fd73c
+2026-10-28T15:36Z	fy3-7	FY3	general-purpose	other	claude-sonnet-5-5			2	2829930	82	15461	2712454	101933	102117	34	1999	35		0.9521	transcript	68ed7e317d38
+2026-10-28T15:36Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	586785	16	6757	493521	86491	87129	8	59	16		0.3825	transcript	3c5c55474fa7

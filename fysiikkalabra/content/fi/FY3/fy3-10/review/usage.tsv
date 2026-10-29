@@ -38,3 +38,14 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T19:42Z	fy3-10	FY3	science-reviewer	review	claude-opus-5-5	medium	batch/3		1659337	17	10483	1548690	100147	100395	25	324	28		1.0202	transcript	1595177b3ac6
 2026-10-26T19:42Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6		836769	13	4882	792576	39298	39579	38	364	46		0.3056	transcript	07e80d8722d9
 2026-10-26T19:42Z	fy3-10	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	c4630878ba88
+2026-10-28T15:36Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	526049	14	6635	455255	64145	91821	7	53	16		0.3178	transcript	616a73b006c0
+2026-10-28T15:36Z	fy3-10	FY3	science-reviewer	review	claude-opus-5-5		full	1	923737	18	10908	789436	123375	123889	9	110	11		0.9930	transcript	faa91fd3053b
+2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	1872989	44	25527	1764564	82854	110531	22	282	32		0.8154	transcript	a87dc621da91
+2026-10-28T15:36Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	345820	10	2846	285097	57867	85324	5	61	8		0.2302	transcript	8d9e6e1cd3ca
+2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	772586	28	7464	722944	42150	69508	14	388	16		0.3247	transcript	c72c5cddc2b0
+2026-10-28T15:36Z	fy3-10	FY3	science-reviewer	review	claude-opus-5-5		full	2	1897499	40	10883	1790079	96497	124129	20	138	21		1.0583	transcript	5dd9e21e43ba
+2026-10-28T15:36Z	fy3-10	FY3	orchestrator	orchestrate	claude-opus-5-5		session/13	2	6521923	60	18946	6354443	148474	19298	390	177112	557		2.5525	transcript	a81f61c2d515
+2026-10-28T15:36Z	fy3-10	FY3	science-reviewer	review	claude-opus-5-5		full	1	1343437	26	7104	1198793	137514	138417	13	78	13		1.0695	transcript	b32fb8e5140d
+2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	3124708	84	16219	3010418	97987	98059	38	1943	40		1.0094	transcript	742553caa8fd
+2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	340335	14	4022	307354	28945	56671	7	181	8		0.1741	transcript	8dd9399b0e57
+2026-10-28T15:36Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	1235860	28	9516	1152207	74109	102303	14	115	21		0.5109	transcript	c042851464f4

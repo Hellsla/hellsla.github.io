@@ -19,3 +19,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T19:42Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5	medium	batch/4		954780	12	6946	876801	71021	71210	23	290	24		0.6694	transcript	e0fda9fb388b
 2026-10-26T19:42Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6		423220	7	4168	385576	33469	33647	21	250	25		0.2025	transcript	3568742d5835
 2026-10-26T19:42Z	fy3-4	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	b9160343b7ad
+2026-10-28T15:36Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	315262	10	2684	265268	47300	74788	5	57	9		0.1982	transcript	b88f814a3444
+2026-10-28T15:36Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	569972	16	5856	481470	82630	83351	8	49	17		0.3615	transcript	0a229870778a
+2026-10-28T15:36Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		full	1	522709	14	6035	425589	91071	91561	7	61	9		0.6612	transcript	fefa875097aa
+2026-10-28T15:36Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		full	2	617923	16	4678	546587	66642	94329	8	64	9		0.5362	transcript	f5e4044399e1
+2026-10-28T15:36Z	fy3-4	FY3	general-purpose	other	claude-sonnet-5-5			2	1164431	32	19820	1082742	61837	89526	16	207	23		0.5694	transcript	b6d69c83e7ef
+2026-10-28T15:36Z	fy3-4	FY3	general-purpose	other	claude-sonnet-5-5			2	183561	8	2252	154290	27011	54326	4	95	6		0.1209	transcript	aae028cc3a7c
+2026-10-28T15:36Z	fy3-4	FY3	orchestrator	orchestrate	claude-opus-5-5		session/13	2	6521923	60	18946	6354443	148474	19298	390	177112	557		2.5525	transcript	8c0966b48608
+2026-10-28T15:36Z	fy3-4	FY3	general-purpose	other	claude-sonnet-5-5			2	1034463	36	7695	956814	69918	69990	17	1787	18		0.4432	transcript	7d0b8046302e
+2026-10-28T15:36Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		full	1	1111761	26	9581	989624	112530	113472	13	106	14		0.9523	transcript	139a1fc84450
+2026-10-28T15:36Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	595393	20	4216	511733	79424	80294	10	48	14		0.3431	transcript	2a67694a1cb3

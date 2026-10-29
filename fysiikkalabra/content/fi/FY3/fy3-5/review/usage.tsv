@@ -25,3 +25,14 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T19:42Z	fy3-5	FY3	general-purpose	other	claude-sonnet-5-5	medium	batch/11	2	25444	1	285	19530	5628	5694	5	39	6		0.0208	transcript	2a3cac725df8
 2026-10-26T19:42Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6		423220	7	4168	385576	33469	33647	21	250	25		0.2025	transcript	3568742d5835
 2026-10-26T19:42Z	fy3-5	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	f584ad559698
+2026-10-28T15:36Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		full	2	934795	22	4863	857081	72829	100455	11	77	11		0.6329	transcript	d4d6b9251655
+2026-10-28T15:36Z	fy3-5	FY3	general-purpose	other	claude-sonnet-5-5			2	475964	18	5327	438324	32295	59735	9	285	12		0.2217	transcript	a20d6413b302
+2026-10-28T15:36Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		full	1	1020399	24	11287	905989	103099	103510	12	119	14		0.9225	transcript	0a99358412a9
+2026-10-28T15:36Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		delta	2	198817	8	1747	169594	27468	54888	4	21	5		0.1201	transcript	3b6827fa42c5
+2026-10-28T15:36Z	fy3-5	FY3	general-purpose	other	claude-sonnet-5-5			2	721594	22	14608	651633	55331	82846	11	145	16		0.4148	transcript	834cccbd3495
+2026-10-28T15:36Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	402133	12	4603	316586	80932	81484	6	42	13		0.3117	transcript	04148cf6c19a
+2026-10-28T15:36Z	fy3-5	FY3	orchestrator	orchestrate	claude-opus-5-5		session/13	2	6521923	60	18946	6354443	148474	19298	390	177112	557		2.5525	transcript	fbf4f574518a
+2026-10-28T15:36Z	fy3-5	FY3	general-purpose	other	claude-sonnet-5-5			2	703280	20	6719	616551	79990	80368	10	1432	13		0.3905	transcript	13e70442c928
+2026-10-28T15:36Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	755226	20	5303	665452	84451	86657	10	137	17		0.3973	transcript	eb0d4eb25add
+2026-10-28T15:36Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		full	1	1474459	32	9151	1345119	120157	121251	16	103	18		1.0530	transcript	3f22f2099712
+2026-10-28T15:36Z	fy3-5	FY3	general-purpose	other	claude-sonnet-5-5			2	448848	16	4999	406977	36856	64879	8	120	8		0.2236	transcript	ab7ceb934008

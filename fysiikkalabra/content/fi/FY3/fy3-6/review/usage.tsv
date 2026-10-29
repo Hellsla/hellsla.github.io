@@ -19,3 +19,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-26T19:42Z	fy3-6	FY3	science-reviewer	review	claude-opus-5-5	medium	batch/3		1063975	14	8213	972666	83082	83362	21	255	23		0.7743	transcript	5db99028d53f
 2026-10-26T19:42Z	fy3-6	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6		423220	7	4168	385576	33469	33647	21	250	25		0.2025	transcript	3568742d5835
 2026-10-26T19:42Z	fy3-6	FY3	orchestrator	orchestrate	claude-opus-5-5		session/17		1834289	19	7895	1773594	52781	13638	166	3676	191		0.7822	transcript	834f235b5363
+2026-10-28T15:36Z	fy3-6	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	334743	10	2303	278474	53956	81389	5	21	9		0.2136	transcript	839316705f16
+2026-10-28T15:36Z	fy3-6	FY3	general-purpose	other	claude-sonnet-5-5			2	645460	28	3900	574742	66790	60723	12	751	14		0.3210	transcript	a7194ef575bf
+2026-10-28T15:36Z	fy3-6	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	419224	12	4611	330049	84552	84998	6	41	13		0.3235	transcript	1eab9048a4ce
+2026-10-28T15:36Z	fy3-6	FY3	science-reviewer	review	claude-opus-5-5		full	2	1152894	28	6386	1063543	82937	110432	14	93	16		0.7552	transcript	147da647e865
+2026-10-28T15:36Z	fy3-6	FY3	general-purpose	other	claude-sonnet-5-5			2	1594106	38	27117	1490271	76680	104366	19	261	24		0.7610	transcript	6d230a8a40ec
+2026-10-28T15:36Z	fy3-6	FY3	science-reviewer	review	claude-opus-5-5		full	1	686878	16	8365	573776	104721	105308	8	88	10		0.8057	transcript	152d96234979
+2026-10-28T15:36Z	fy3-6	FY3	orchestrator	orchestrate	claude-opus-5-5		session/13	2	6521923	60	18946	6354443	148474	19298	390	177112	557		2.5525	transcript	d78397a576a0
+2026-10-28T15:36Z	fy3-6	FY3	general-purpose	other	claude-sonnet-5-5			2	1843116	48	15238	1736318	91512	91804	24	1868	26		0.7285	transcript	d23307f6b68b
+2026-10-28T15:36Z	fy3-6	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	790117	20	5634	694202	90261	90958	10	80	17		0.4209	transcript	303338a1aced
+2026-10-28T15:36Z	fy3-6	FY3	science-reviewer	review	claude-opus-5-5		full	1	956008	22	7678	836215	112093	112928	11	86	12		0.8814	transcript	301defbe323c
