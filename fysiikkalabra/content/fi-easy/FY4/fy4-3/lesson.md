@@ -400,7 +400,7 @@ Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään e
   <foreignObject x="336.5" y="199.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
 </svg>
 
-Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi. Kivi liukuisi samaan suuntaan loputtomiin. Tämä on **Newtonin ensimmäinen laki** eli **jatkavuuden laki**. Laki sanoo: jos kappaleeseen vaikuttavien voimien summa on nolla, kappale pysyy levossa tai liikkuu suoraan tasaisella nopeudella. Voimaa tarvitaan liikkeen *muuttamiseen*, ei liikkeen ylläpitämiseen. Kappale haluaa säilyttää liiketilansa. Tätä sanotaan **inertiaksi** eli hitaudeksi.
+Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi. Kivi liukuisi samaan suuntaan loputtomiin. Tämä on **Newtonin ensimmäinen laki** eli **jatkavuuden laki**. Laki sanoo: jos kappaleeseen vaikuttavien voimien summa on nolla, kappale pysyy levossa tai liikkuu suoraan tasaisella nopeudella. Voimaa tarvitaan liikkeen *muuttamiseen*, ei liikkeen ylläpitämiseen. Kappaleen liiketila ei muutu itsestään. Tätä sanotaan **inertiaksi** eli hitaudeksi.
 
 Arjessa näyttää siltä, että liike loppuu itsestään. Syy on se, että maan päällä kitka ja ilmanvastus hidastavat lähes kaikkea, mikä liikkuu. Pyörä pysähtyy, kun polkeminen loppuu, koska tie ja ilma jarruttavat sitä. Syy ei ole se, että "liikkeen voima" kuluisi loppuun. Mitä pienempi kitka on, sitä kauemmin liike jatkuu: jäällä pidemmälle kuin asfaltilla ja avaruudessa lähes loputtomiin.
 

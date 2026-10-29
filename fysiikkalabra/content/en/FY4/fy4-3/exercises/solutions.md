@@ -24,12 +24,12 @@
 **Given:** force of the skater on the board $F_{\text{SB}} = 90\,\text{N}$ towards the board
 **Find:** the force of the board on the skater $F_{\text{BS}}$ in $\text{N}$
 **Principle:** Newton's third law: the skater and the board interact, so the board acts on the skater with an equally large but oppositely directed force. The law holds regardless of whether either of them moves.
-**Force diagram:** Choose the skater as the object and draw her as a rectangle; the positive direction is away from the board. Her weight acts down, the normal force of the ice up and the force of the board $\overline{F}_{\text{BS}}$ away from the board, ending at the skater's side. Her own force on the board $\overline{F}_{\text{SB}}$ acts on the board, so it does not belong in her diagram but is the reaction force of the force asked for.
+**Force diagram:** Choose the skater as the object and draw the skater as a rectangle; the positive direction is away from the board. The skater's weight acts down, the normal force of the ice up and the force of the board $\overline{F}_{\text{BS}}$ away from the board, ending at the skater's side. The skater's own force on the board $\overline{F}_{\text{SB}}$ acts on the board, so it does not belong in the skater's diagram but is the reaction force of the force asked for.
 **Formula:** $\overline{F}_{\text{BS}} = -\overline{F}_{\text{SB}}$, so in magnitudes $F_{\text{BS}} = F_{\text{SB}}$
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_{\text{BS}} = F_{\text{SB}} = 90\,\text{N}$
 **Answer:** $90\,\text{N}$ on the skater, directed away from the board, two significant figures like the force $90\,\text{N}$.
-**Reasonableness:** The skater starts to glide away from the board, so a force away from the board has acted on her. Its cause is the board. The board does not move, because it is fixed to the ice and the structures of the rink, which act on it with their own forces.
+**Reasonableness:** The skater starts to glide away from the board, so a force away from the board has acted on the skater. Its cause is the board. The board does not move, because it is fixed to the ice and the structures of the rink, which act on it with their own forces.
 
 ## fy4-3-L1-04
 **Given:** force of the road on the tyres forwards $F = 620\,\text{N}$, air resistance $F_\text{a} = 380\,\text{N}$, the velocity is constant and the road is straight
@@ -73,12 +73,12 @@
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_\text{d} = F_{\text{SW}} = 65\,\text{N}$
 **Answer:** $65\,\text{N}$ backwards, two significant figures like the force $65\,\text{N}$.
-**Reasonableness:** The swimmer moves forwards only because the water pushes her; without a reaction force, pulling with the hands would not move her anywhere. If she pushed the water harder, the forward force would increase and she would accelerate until the drag grew equally large.
+**Reasonableness:** The swimmer moves forwards only because the water pushes the swimmer; without a reaction force, pulling with the hands would not move the swimmer anywhere. If the swimmer pushed the water harder, the forward force would increase and she would accelerate until the drag grew equally large.
 
 ## fy4-3-L2-03
 **Given:** mass with equipment $m = 85\,\text{kg}$, the velocity is constant and straight down; $g = 9.81\,\text{m/s}^2$
 **Find:** the air resistance $F_\text{d}$ in $\text{N}$
-**Principle:** The skydiver descends in a straight line at constant velocity, so by Newton's first law the net force is zero. The Earth (weight, down) and the air (resistance, up, against the motion) act on her.
+**Principle:** The skydiver descends in a straight line at constant velocity, so by Newton's first law the net force is zero. The Earth (weight, down) and the air (resistance, up, against the motion) act on the skydiver.
 **Force diagram:** The skydiver and the parachute as a rectangle, positive direction up. The weight $\overline{G}$ down from the centre and the air resistance $\overline{F}_\text{d}$ up, equally long. The velocity, directed down, is drawn separately and is not a force.
 **Formula:** $F_\text{d} - G = 0$ and $G = mg$, so $F_\text{d} = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.

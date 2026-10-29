@@ -19,7 +19,7 @@
     {
       "id": "fy4-3-L1-03",
       "level": 1,
-      "text": "A skater stands on the ice and pushes the board of the rink with the hands with a force of $90\\,\\text{N}$. With what force does the board push the skater?",
+      "text": "A skater stands on the ice and pushes the boards of the rink with their hands with a force of $90\\,\\text{N}$. With what force do the boards push the skater?",
       "answer": 90,
       "unit": "N",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy4-3-L2-02",
       "level": 2,
-      "text": "A swimmer swims straight in the horizontal direction at constant velocity. Her weight is $720\\,\\text{N}$ and the buoyancy of the water is equally large. She pushes the water backwards with her hands and feet with an average force of $65\\,\\text{N}$. How large is the average drag of the water on the swimmer?",
+      "text": "A swimmer swims straight in the horizontal direction at constant velocity. The swimmer's weight is $720\\,\\text{N}$ and the buoyancy of the water is equally large. She pushes the water backwards with the hands and feet with an average force of $65\\,\\text{N}$. How large is the average drag of the water on the swimmer?",
       "answer": 65,
       "unit": "N",
       "tolerance": 0.02
