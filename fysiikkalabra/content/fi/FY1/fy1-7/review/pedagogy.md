@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c0b2f8958eecb27e
+CONTENT-HASH: b9f7aafeb33e7e43
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- None.
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: equal aluminium and iron cubes, the balance tipping to iron, a measuring cylinder. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.

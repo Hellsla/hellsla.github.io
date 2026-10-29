@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e4e7aaa1204bbf55
+CONTENT-HASH: 7506931c7f2866cb
 ## Blocking
 
 ## Polish
-- None.
+
 ## Checked
-batch delta review: new paragraph is placed right after the half-range figure, short, clear, uses established terms (hajonta/lukeman epävarmuus), and 'kuten alla' points to the reading-uncertainty paragraph two blocks later; consistent with the lesson; no tasks or feedback touched.
+batch delta review: the hero aria-label has short simple sentences, keeps all content of the Finnish description and matches the picture.

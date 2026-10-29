@@ -92,12 +92,12 @@
   <circle cx="470" cy="160" r="50" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <ellipse cx="482" cy="160" rx="34" ry="28" fill="#ffc078" stroke="#1f2933" stroke-width="3"/>
   <rect x="448" y="260" width="44" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <g transform="translate(630,212)" opacity="0.3"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
-  <g transform="translate(720,212) rotate(-12)" opacity="0.3"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
-  <g transform="translate(630,300)" opacity="0.55"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
-  <g transform="translate(720,300) rotate(-12)" opacity="0.55"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
-  <g transform="translate(630,396)" opacity="1"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
-  <g transform="translate(720,396) rotate(-12)" opacity="1"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(630,204) scale(0.85)" opacity="0.3"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,204) rotate(-12) scale(0.85)" opacity="0.3"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(630,276) scale(0.85)" opacity="0.55"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,276) rotate(-12) scale(0.85)" opacity="0.55"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(630,396) scale(0.85)" opacity="1"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,396) rotate(-12) scale(0.85)" opacity="1"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
   <line x1="580" y1="396" x2="760" y2="396" stroke="#e8590c" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
 </svg>
 

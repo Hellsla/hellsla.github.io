@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ad78f59a8ea63a57
+CONTENT-HASH: 23baf5a271a5c3ad
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The ruler lies parallel to and below the fitted line, not along it; laying it against the line would match "vedetty viivaimen avulla".
+- More of the points sit on or below the line than above; a more even scatter would show what a fit balances.
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: graph paper with scattered points and one fitted line. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.

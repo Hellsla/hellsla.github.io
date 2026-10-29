@@ -15,12 +15,13 @@
   <path d="M150,300 Q180,250 210,300 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <rect x="70" y="290" width="18" height="40" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <path d="M330,600 Q360,500 420,440 L470,440 Q440,520 470,600 Z" fill="#2f74b5" stroke-linejoin="round"/>
+  <ellipse cx="425" cy="396" rx="130" ry="16" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
+  <rect x="320" y="436" width="190" height="18" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
   <rect x="380" y="400" width="110" height="50" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
   <path d="M380,400 H490 L470,380 H400 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <rect x="394" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
   <rect x="426" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
   <rect x="458" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <path d="M330,400 Q360,380 380,400" fill="none" stroke="#2f74b5" stroke-width="4" stroke-linejoin="round"/>
   <path d="M593.5,400 L597.5,190 H602.5 L606.5,400 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M604,192 Q625,158 650.5,70 L596,188 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M596.5,192.5 Q615,227.5 678.5,294 L603.5,187.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>

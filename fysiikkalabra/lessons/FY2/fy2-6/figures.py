@@ -20,10 +20,11 @@ def hero():
     f.rect(70, 290, 18, 40, IRON, INK, 2)
     # hydro plant: river through a dam
     f.path("M330,600 Q360,500 420,440 L470,440 Q440,520 470,600 Z", WATER)
+    f.add(f'<ellipse cx="425" cy="396" rx="130" ry="16" fill="{WATER_LIGHT}" stroke="{WATER}" stroke-width="2"/>')   # the reservoir behind the dam
+    f.rect(320, 436, 190, 18, ALUMINIUM, INK, 3)
     f.rect(380, 400, 110, 50, SAND_LIGHT, INK, 3)
     f.path("M380,400 H490 L470,380 H400 Z", IRON, INK, 2)
     for k in range(3): f.rect(394 + k * 32, 414, 18, 26, GLASS, INK, 2)
-    f.path("M330,400 Q360,380 380,400", stroke=WATER, w=4)
     # wind turbines
     for k, (x, h) in enumerate(((600, 210), (690, 180), (770, 200))): H.wind_turbine(f, x, 400, h, 0.4 + 1.3 * k, 0.9)
     # CHP plant with chimney

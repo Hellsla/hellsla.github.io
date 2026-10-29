@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 3fb227ca67158abb
+CONTENT-HASH: e786b6e742993ca7
 ## Blocking
-(none)
+
 ## Polish
-(none)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+batch delta review: the hero aria-label is a faithful, natural English translation of the Finnish description and matches the picture.

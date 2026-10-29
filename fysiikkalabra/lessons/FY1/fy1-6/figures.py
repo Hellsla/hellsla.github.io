@@ -28,12 +28,12 @@ def hero():
     f.add(f'<ellipse cx="{x + 12}" cy="{yf - 310}" rx="34" ry="28" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="3"/>')
     f.rect(x - 22, yf - 210, 44, 30, ALUMINIUM, INK, 2, 4)
     def hammer(cx, cy, op):
-        g = f'<g transform="translate({n(cx)},{n(cy)})" opacity="{op}"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="{SAND}" stroke="{INK}" stroke-width="2"/>'
+        g = f'<g transform="translate({n(cx)},{n(cy)}) scale(0.85)" opacity="{op}"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="{SAND}" stroke="{INK}" stroke-width="2"/>'
         return g + f'<rect x="-22" y="-52" width="44" height="18" rx="3" fill="{IRON}" stroke="{INK}" stroke-width="2"/></g>'
     def feather(cx, cy, op):
-        return (f'<g transform="translate({n(cx)},{n(cy)}) rotate(-12)" opacity="{op}"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>'
+        return (f'<g transform="translate({n(cx)},{n(cy)}) rotate(-12) scale(0.85)" opacity="{op}"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>'
                 f'<path d="M0,40 L0,-40" stroke="{INK}" stroke-width="2"/></g>')
-    for k, (y, op) in enumerate(((212, 0.3), (300, 0.55), (396, 1))):
+    for k, (y, op) in enumerate(((204, 0.3), (276, 0.55), (396, 1))):   # 24 t² below the hand at t = 1, 2, 3: the gaps grow (3 : 5)
         f.add(hammer(x + 160, y, op)); f.add(feather(x + 250, y, op))
     f.line(x + 110, 396, x + 290, 396, HEAT, 2, dash="8 6")
     return f.svg()

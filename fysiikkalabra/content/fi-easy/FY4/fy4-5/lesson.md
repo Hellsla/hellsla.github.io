@@ -38,35 +38,35 @@
   <circle cx="213.5" cy="215" r="3" fill="#ffffff"/>
   <rect x="0" y="360" width="1200" height="240" fill="#ffffff"/>
   <path d="M0,360 Q300,348 600,362 T1200,356 V380 H0 Z" fill="#d0e6fb" stroke-linejoin="round"/>
-  <ellipse cx="260" cy="472" rx="104" ry="26" fill="#d0e6fb"/>
+  <ellipse cx="260" cy="472" rx="104" ry="34" fill="#d0e6fb"/>
   <rect x="184" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="324" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <path d="M156,484 H360 Q380,484 378,470" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M164,436 Q160,470 190,470 H344 Q372,470 366,440 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M174,442 H356" fill="none" stroke="#f2a69c" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M110,478 Q132,462 154,472 H384 Q406,462 428,478 V510 H110 Z" fill="#ffffff"/>
-  <path d="M110,478 Q132,462 154,472 H384 Q406,462 428,478" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M110,470 Q132,454 154,464 H384 Q406,454 428,470 V510 H110 Z" fill="#ffffff"/>
+  <path d="M110,470 Q132,454 154,464 H384 Q406,454 428,470" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
   <path d="M500,486 H600" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-  <ellipse cx="700" cy="472" rx="104" ry="12" fill="#d0e6fb"/>
+  <ellipse cx="700" cy="472" rx="104" ry="10" fill="#d0e6fb"/>
   <rect x="624" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <rect x="764" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <path d="M596,484 H800 Q820,484 818,470" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M604,436 Q600,470 630,470 H784 Q812,470 806,440 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M614,442 H796" fill="none" stroke="#f2a69c" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M550,492 Q572,476 594,486 H824 Q846,476 868,492 V510 H550 Z" fill="#ffffff"/>
-  <path d="M550,492 Q572,476 594,486 H824 Q846,476 868,492" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="800" y1="442" x2="960" y2="350" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
-  <path d="M984,520 L987.5,427 H1012.5 L1016,520 H1003.5 L1000,458 L996.5,520 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M979,433 Q976.5,365 1000,361.5 Q1023.5,365 1021,433 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M981.5,373.5 L975,433" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="975" cy="438" r="6.82" fill="#f1dfb5"/>
-  <path d="M1018.5,373.5 L1025,433" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="1025" cy="438" r="6.82" fill="#f1dfb5"/>
-  <rect x="994.5" y="349" width="11" height="15" fill="#f1dfb5"/>
-  <circle cx="1000" cy="336.5" r="18.6" fill="#f1dfb5"/>
-  <path d="M981,336.5 Q981.5,314 1000,315.5 Q1020,315.5 1019,334 Q1003.5,326.5 981,336.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M982,373 L960,350" fill="none" stroke="#e8590c" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="960" cy="350" r="7" fill="#f1dfb5"/>
+  <path d="M550,494 Q572,478 594,488 H824 Q846,478 868,494 V510 H550 Z" fill="#ffffff"/>
+  <path d="M550,494 Q572,478 594,488 H824 Q846,478 868,494" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="800" y1="442" x2="936" y2="404" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M977.5,520 L980.5,448 H999.5 L1002.5,520 H993 L990,472 L987,520 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M973.5,453 Q972,400 990,397 Q1008,400 1006.5,453 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M975.5,406.5 L971,453" fill="none" stroke="#e8590c" stroke-width="10.56" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="971" cy="456.5" r="5.28" fill="#f1dfb5"/>
+  <path d="M1004.5,406.5 L1009,453" fill="none" stroke="#e8590c" stroke-width="10.56" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1009" cy="456.5" r="5.28" fill="#f1dfb5"/>
+  <rect x="985.5" y="387.5" width="8.5" height="11.5" fill="#f1dfb5"/>
+  <circle cx="990" cy="378" r="14.4" fill="#f1dfb5"/>
+  <path d="M975,378 Q975.5,360.5 990,361.5 Q1005.5,361.5 1005,376 Q993,370 975,378 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M977.5,406.5 L936,404" fill="none" stroke="#e8590c" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="936" cy="404" r="7" fill="#f1dfb5"/>
 </svg>
 
 ## Ydinajatus

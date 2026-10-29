@@ -4,7 +4,7 @@ as it is drawn. The situation is a separate pictorial situation picture (tilanne
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, COPPER, ICE, ICE_EDGE, COLD_LIGHT, GLASS, fi
 from fbd import FBD, ground, FORCE
-from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON
+from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON, n
 import herolib as H
 
 g = 9.81
@@ -30,15 +30,15 @@ def hero():
         f.add(f'<path d="M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6} V{y + 40} H{x - 150} Z" fill="{WHITE}"/>')
         f.path(f"M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6}", stroke=COLD_LIGHT, w=3)
     # the sled standing still: deep in the snow
-    sled(260, 470, 18)
+    sled(260, 470, 26)
     # the pulled sled with its shallower track behind it
     x, y = 700, 470
     f.path(f"M500,{y + 16} H{x - 100}", stroke=COLD_LIGHT, w=6, extra='stroke-linecap="round"')
-    sled(x, y, 4)
-    hx, hy = 960, 350
+    sled(x, y, 2)
+    hx, hy = 936, 404
     f.line(x + 100, y - 28, hx, hy, COPPER, 4, cap="round")
-    H.person(f, 1000, 520, HEAT, INK, 0.62)
-    f.path(f"M{1000 - 18},{520 - 147} L{hx},{hy}", stroke=HEAT, w=14, extra='stroke-linecap="round"')
+    H.person(f, 990, 520, HEAT, INK, 0.48)
+    f.path(f"M{n(990 - 0.48 * 26)},{n(520 - 0.48 * 236)} L{hx},{hy}", stroke=HEAT, w=11, extra='stroke-linecap="round"')
     f.circle(hx, hy, 7, SAND_LIGHT)
     return f.svg()
 

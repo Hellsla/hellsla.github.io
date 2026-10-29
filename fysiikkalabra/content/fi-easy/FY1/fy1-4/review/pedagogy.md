@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b78e817b216c2989
-
+CONTENT-HASH: 33cf10a684f8be1a
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+batch delta review: the hero aria-label has short simple sentences, keeps all content of the Finnish description and matches the picture.
