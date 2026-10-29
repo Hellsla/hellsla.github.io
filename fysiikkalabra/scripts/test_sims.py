@@ -6,7 +6,8 @@ the assertions are written against the Finnish page, so a page in another langua
 and the generic sweep passes: at 360, 390 and 1280 px every combination of each slider's min/mid/max, each select
 option and each checkbox state is set, two frames are drawn, and then every number in simState must be finite and,
 when the sim exposes label boxes (simState.labels = [{s, x0, y0, x1, y1}, ...] in canvas coordinates), no label may
-leave the 600×400 canvas or overlap another one. Sims without label boxes get the finiteness sweep only, with a
+leave the canvas (600×400, or 600 wide and taller when the sim stacks its panels on a narrow screen) or overlap
+another one. Sims without label boxes get the finiteness sweep only, with a
 note. The KaTeX labels sim-embed.js draws over the canvas (p.text of a $…$ string) are checked the same way from the
 page: each stays inside the canvas and none overlaps another. One line per sim; details only on failure."""
 import json, sys, pathlib, itertools
@@ -40,7 +41,9 @@ SWEEP_JS = """async (combos) => {
     const L = S.labels;
     if (boxes(L)) { hasBoxes = true;
       const where = `[${c.r.join(',')}|${c.s.join(',')}|${c.c.join(',')}]`;
-      for (const a of L) if (a.x0 < 0 || a.y0 < 0 || a.x1 > 600 || a.y1 > 400) bad.push(`${where} "${a.s}" leaves the canvas`);
+      const cw = root.querySelector('canvas'), dpr = window.devicePixelRatio || 1;   // 600×400, or taller when a sim stacks its panels on a phone (2026-10-29)
+      const W = cw ? cw.width / dpr : 600, H = cw ? cw.height / dpr : 400;
+      for (const a of L) if (a.x0 < 0 || a.y0 < 0 || a.x1 > W || a.y1 > H) bad.push(`${where} "${a.s}" leaves the canvas`);
       for (let i = 0; i < L.length; i++) for (let j = i + 1; j < L.length; j++) { const a = L[i], b = L[j];
         if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) bad.push(`${where} "${a.s}" overlaps "${b.s}"`); }
     }

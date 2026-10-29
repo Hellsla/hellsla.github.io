@@ -165,6 +165,12 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   reuses one the course has. Reuse before creating; changing a folder another lesson uses re-opens that lesson's
   reviews, so it needs the teacher's word. FY3's sims stay as `sim.js` in their lesson folders. (2026-10-26)
 - p5.js instance mode, a 600×400 canvas inside `#sim-root`, `window.simState` updated every frame.
+- **Readable on a phone** (2026-10-29, fy4-3, fy4-4: reviewers failed three-panel sims shrunk to 0,6 at 390 px). The page
+  scales the canvas to `#sim-root`'s width, so a 600-px picture is drawn at about 0,6 on a phone. A sim with several
+  panels (picture, graph, force diagram) stacks them on a narrow screen: when `#sim-root.clientWidth < 500`,
+  `resizeCanvas(600, <taller>)` and draw each panel at the full 600 width, one under another, with label fonts and
+  strokes multiplied by `600 / clientWidth` so that labels read at about 14 CSS px. `test_sims.py` checks the label
+  boxes against the canvas's actual size; a test asserting 600×400 is written for the wide layout only.
   `templates/sim-embed.js` resizes and scales the canvas, pauses it off-screen, lowers the frame rate under
   `prefers-reduced-motion` and sets the page font; sims never handle resizing themselves.
 - Every animated simulation has a **speed control** (a `select` "Nopeus": hidas · normaali · nopea, default so that a
