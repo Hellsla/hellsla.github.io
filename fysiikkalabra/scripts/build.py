@@ -50,6 +50,8 @@ else:
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
+if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
+    shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
@@ -500,7 +502,7 @@ def build_language(lang):
     total = sum(len(m.get("lessons", [])) for _, m in modules)
     home = (
         f'<section class="hero"><span class="eyebrow">{T("site.home_eyebrow")}</span>'
-        f'<h1>{T("site.name")}</h1>'
+        f'<h1 class="logo"><img src="brand/{T("site.logo")}" alt="{T("site.name")}: {T("site.subtitle")}"></h1>'
         f'<p class="tagline">{T("site.home_tagline")}</p>'
         f'<p class="lead">{T("site.home_lead")}</p>'
         + latest + '</section>'

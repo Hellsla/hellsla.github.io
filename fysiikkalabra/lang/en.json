@@ -1,5 +1,5 @@
 {
-  "_about": "Short interface texts of Fysiikkalabra in Finnish, the source language (scripts/i18n.py). A new language: copy this file to lang/<code>.json and translate the values; keep every {{placeholder}}, formula, number and unit as it is.",
+  "_about": "Short interface texts of Ruukkilabra in Finnish, the source language (scripts/i18n.py). A new language: copy this file to lang/<code>.json and translate the values; keep every {{placeholder}}, formula, number and unit as it is.",
   "format": {
     "html_lang": "en",
     "og_locale": "en_GB",
@@ -15,13 +15,15 @@
     "Tiivistelmä": "Summary"
   },
   "site": {
-    "name": "Fysiikkalabra",
-    "home_aria": "Fysiikkalabra, home page",
+    "name": "Ruukkilabra",
+    "home_aria": "Ruukkilabra, home page",
+    "subtitle": "Upper secondary physics",
+    "logo": "ruukkilabra-logo-en.svg",
     "main_menu": "Main menu",
     "modules": "Modules",
     "portfolio": "← Portfolio",
     "breadcrumb": "Path",
-    "footer": "Fysiikkalabra · upper secondary school physics, LOPS 2019",
+    "footer": "Ruukkilabra · upper secondary school physics, LOPS 2019",
     "back_to_course": "← {{course}} module",
     "back_to_portfolio": "← Back to the portfolio",
     "course_type_required": "Compulsory",
@@ -886,7 +888,7 @@
     "rubric": "Marking and self-assessment",
     "rubric_lead": "Compare your solution with the model answer and, for each item, choose the points you think your solution earns. Part marks are possible, and any other physically correct method is accepted too.",
     "own_rubric_lead": "For each item, choose the points you think your report earns.",
-    "rubric_note": "The points are your own estimate, not a checked grade. The marking is Fysiikkalabra's own, written according to the features of a good matriculation examination answer, and it is not official marking by the Matriculation Examination Board (YTL).",
+    "rubric_note": "The points are your own estimate, not a checked grade. The marking is Ruukkilabra's own, written according to the features of a good matriculation examination answer, and it is not official marking by the Matriculation Examination Board (YTL).",
     "criterion_points": "Points for: {{text}}",
     "mistakes": "Common mistakes",
     "also": "Also accepted",
