@@ -197,9 +197,9 @@ def check_lesson_form(L, text):
             L.warn("lesson.md", text.count("\n", 0, m.start()) + 1, f"## {m.group(1)}: {words} words in {paras} paragraphs without a ### subheading; give each main idea a short subheading that names it (NOTES 8, teacher 2026-10-27)")
     body, line = section(text, "Esimerkki")
     if body:
-        stages = body.count("<!-- vaihe -->")
-        if not 3 <= stages <= 7:
-            L.form("lesson.md", line, f"worked example has {stages} stages; write the 7 stages of check_solutions.py separated by `<!-- vaihe -->` lines (human rule 4)")
+        stages = body.count("<!-- vaihe -->"); most = 8 if "equations" in solution_rules.fbd_plan(L.folder.name) else 7   # + Voimakuvio
+        if not 3 <= stages <= most:
+            L.form("lesson.md", line, f"worked example has {stages} stages; write the {most} stages of check_solutions.py separated by `<!-- vaihe -->` lines (human rule 4)")
         start = text.find(body)
         for m in re.finditer(r"```latex\n(.*?)```|\$\$(.*?)\$\$", body, flags=re.S):
             frag = m.group(1) or m.group(2)

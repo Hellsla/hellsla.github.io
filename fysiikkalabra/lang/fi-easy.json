@@ -845,6 +845,29 @@
       "lampenee": "lämpenee",
       "jaahtyy": "jäähtyy",
       "asettunut": "asettunut"
+    },
+    "fy4-5": {
+      "kaynnista": "Käynnistä",
+      "tauko": "Tauko",
+      "alusta": "Alusta",
+      "tapa": "Tilanne",
+      "veto": "vedetään narusta",
+      "tyonto": "työnnetään kahvasta",
+      "voima": "Voima $F = {{F}}\\,\\text{N}$",
+      "kulma": "Kulma $\\alpha = {{a}}^\\circ$",
+      "massa": "Massa",
+      "malli": "Voimakuvio",
+      "pistemalli": "pisteenä",
+      "kappalemalli": "kappaleena",
+      "komponentit": "Näytä voiman $\\mathbf{F}$ komponentit",
+      "selite": "Punaiset nuolet ovat voimia. Katkoviivat ovat komponentteja. Sininen nuoli on nopeus.",
+      "tilannekuva": "$\\text{Tilannekuva}$",
+      "voimakuvio": "$\\text{Voimakuvio}$",
+      "lukemat": "$G = {{G}}\\,\\text{N}$, $N = {{N}}\\,\\text{N}$<br>$F_x = {{Fx}}\\,\\text{N}$, $|F_y| = {{Fy}}\\,\\text{N}$<br>$\\Sigma F_x = {{sx}}\\,\\text{N}$, <strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea"
     }
   },
   "practice": {
@@ -876,6 +899,7 @@
       "Annettu": "Annettu",
       "Kysytty": "Kysytty",
       "Periaate": "Periaate",
+      "Voimakuvio": "Voimakuvio",
       "Kaava": "Kaava",
       "Muunnokset": "Muunnokset",
       "Sijoitus": "Sijoitus",

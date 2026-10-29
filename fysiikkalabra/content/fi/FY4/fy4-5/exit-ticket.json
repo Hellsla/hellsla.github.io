@@ -1,0 +1,16 @@
+[
+  {
+    "q": "Pallo on heitetty suoraan ylös, ja se on juuri ratansa korkeimmassa kohdassa. Mitkä voimat palloon vaikuttavat, kun ilmanvastus jätetään huomiotta?",
+    "fbd": "identify",
+    "a": "Vain paino $\\mathbf{G}$, joka osoittaa alas. Heittäjän käsi ei enää koske palloon, joten ylöspäin vievää voimaa ei ole. Korkeimmassa kohdassa nopeus on hetken nolla, mutta kiihtyvyys on silloinkin $g$ alaspäin."
+  },
+  {
+    "q": "Miksi voiman komponentit piirretään voimakuvioon katkoviivalla, ja mitä tapahtuu, jos laskussa käytetään sekä voimaa että sen komponentteja?",
+    "a": "Komponentit eivät ole uusia voimia, vaan ne yhdessä korvaavat voiman. Katkoviiva erottaa ne voimista. Jos laskuun otetaan sekä voima että sen komponentit, sama voima tulee mukaan kahdesti ja tulos on väärä."
+  },
+  {
+    "q": "Laatikkoa vedetään vaakasuoralla lattialla narulla, joka on kulmassa $\\alpha$ vaakatasoon nähden. Narun jännitysvoima on $T$, kitkavoima $F_\\mu$ ja laatikon massa $m$. Kirjoita pystysuuntainen liikeyhtälö ja ratkaise siitä tukivoima $N$.",
+    "fbd": "equations",
+    "a": "Pystysuunnassa laatikko ei kiihdy, joten $N + T\\sin\\alpha - mg = 0$ ja $N = mg - T\\sin\\alpha$. Kitka on vaakasuora, joten se ei kuulu pystysuuntaiseen yhtälöön."
+  }
+]

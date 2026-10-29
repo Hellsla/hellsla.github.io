@@ -16,6 +16,11 @@ reasonable (NOTES.md §1, §3 "Complete solutions"). The rule covers:
 - `inquiry.json`: every `numeric` task (the transfer task, the checks, an experiment's question) has a `solution`
   with the same steps as an exercise.
 
+Force diagrams (teacher 2026-10-29, docs/force-diagrams.md): a task tagged `"fbd": "draw"` or `"equations"` has a
+`**Voimakuvio:**` step after the principle (the chosen object, its forces with their causes and directions, the
+axes), so no equation comes before the diagram; and in a lesson whose curriculum plan has "equations" the worked
+example has the stage Voimakuvio after Periaate.
+
 lint_lesson.py reports these as errors, so check_lesson.py and CI fail on a missing solution; this script lists
 them for the whole site at once. Exit status 1 on any finding.
 """
@@ -26,6 +31,18 @@ import courses
 LABELS = ["Annettu", "Kysytty", "Periaate", "Kaava", "Muunnokset", "Sijoitus", "Vastaus", "Järkevyys"]
 WORD_LABELS = ["Kysytty", "Periaate", "Mallivastaus"]
 GRAPH_LABEL = "Kuvaajan lukeminen"
+FBD_LABEL = "Voimakuvio"
+
+
+def with_fbd(needed, task):
+    """The steps of a task that forms equations from a force diagram: the diagram right after the principle."""
+    if not (isinstance(task, dict) and task.get("fbd") in ("draw", "equations")) or "Periaate" not in needed: return needed
+    i = needed.index("Periaate") + 1
+    return needed[:i] + [FBD_LABEL] + needed[i:]
+
+
+def fbd_plan(lid):
+    return next((l.get("fbd") or [] for l in courses.course(courses.course_of(lid)).get("lessons", []) if l["id"] == lid), [])
 GRAPH = re.compile(r"kuvaaj|kuvaa?jasta|\(t,\s*x\)|-kuvaaja", re.I)
 EXAMPLE_STAGES = ["Tunnetut ja kysytty", "Periaate", "Kaava ratkaistuna", "Yksikkömuunnokset", "Sijoitus", "Tulos", "Järkevyys"]
 
@@ -72,6 +89,7 @@ def exercise_problems(folder):
         if not body.strip(): out.append(("solutions.md", line, f"{eid}: the solution is empty")); continue
         needed = WORD_LABELS if isinstance(e.get("answer"), str) else LABELS
         if GRAPH.search(e.get("text", "")): needed = needed[:3] + [GRAPH_LABEL] + needed[3:]
+        needed = with_fbd(needed, e)
         out += [("solutions.md", line, f"{eid}: {m}") for m in check_steps(body, needed)]
     ids = {e["id"] for e in ex}
     out += [("solutions.md", line, f"{eid}: a solution for an exercise that does not exist") for eid, line, _ in blocks if eid not in ids]
@@ -87,9 +105,10 @@ def example_problems(folder):
     line = text.count("\n", 0, m.start()) + 1
     stages = m.group(1).split("<!-- vaihe -->")[1:]
     leads = [(re.match(r"\s*\*\*([^*]+?)\.?\*\*", st) or [None, ""])[1].rstrip(".") for st in stages]
-    if leads != EXAMPLE_STAGES:
+    want = with_fbd(EXAMPLE_STAGES, {"fbd": "equations"}) if "equations" in fbd_plan(folder.name) else EXAMPLE_STAGES
+    if leads != want:
         return [("lesson.md", line, "the worked example's stages are " + (" · ".join(leads) or "none")
-                 + "; write " + " · ".join(EXAMPLE_STAGES) + " (teacher 2026-10-27, NOTES §3)")]
+                 + "; write " + " · ".join(want) + " (teacher 2026-10-27, NOTES §3; Voimakuvio: docs/force-diagrams.md)")]
     return [("lesson.md", line, f"worked example: the stage '{lead}' is empty") for lead, st in zip(leads, stages)
             if not re.sub(r"\*\*[^*]+\*\*", "", st).strip()]
 
@@ -113,7 +132,7 @@ def inquiry_problems(folder):
         name = a.get("id") or f"{where}'s question"
         sol = a.get("solution") or ""
         if not sol.strip(): out.append(("inquiry.json", 1, f"numeric {name}: no solution (every task has one, teacher 2026-10-27)")); continue
-        out += [("inquiry.json", 1, f"numeric {name}: {m}") for m in check_steps(sol, LABELS)]
+        out += [("inquiry.json", 1, f"numeric {name}: {m}") for m in check_steps(sol, with_fbd(LABELS, a))]
     return out
 
 

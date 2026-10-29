@@ -845,6 +845,29 @@
       "lampenee": "warming",
       "jaahtyy": "cooling",
       "asettunut": "settled"
+    },
+    "fy4-5": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "tapa": "Situation",
+      "veto": "pulled by a rope",
+      "tyonto": "pushed by a handle",
+      "voima": "Force $F = {{F}}\\,\\text{N}$",
+      "kulma": "Angle $\\alpha = {{a}}^\\circ$",
+      "massa": "Mass",
+      "malli": "Free-body diagram",
+      "pistemalli": "as a point particle",
+      "kappalemalli": "as an object",
+      "komponentit": "Show the components of the force $\\mathbf{F}$",
+      "selite": "Red arrows are forces, dashed arrows components and the blue arrow the velocity.",
+      "tilannekuva": "$\\text{Situation}$",
+      "voimakuvio": "$\\text{Free-body diagram}$",
+      "lukemat": "$G = {{G}}\\,\\text{N}$, $N = {{N}}\\,\\text{N}$<br>$F_x = {{Fx}}\\,\\text{N}$, $|F_y| = {{Fy}}\\,\\text{N}$<br>$\\Sigma F_x = {{sx}}\\,\\text{N}$, <strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast"
     }
   },
   "practice": {
@@ -876,6 +899,7 @@
       "Annettu": "Given",
       "Kysytty": "Find",
       "Periaate": "Principle",
+      "Voimakuvio": "Free-body diagram",
       "Kaava": "Formula",
       "Muunnokset": "Conversions",
       "Sijoitus": "Substitution",

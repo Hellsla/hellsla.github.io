@@ -1975,5 +1975,66 @@
       "mekaaninen energia"
     ],
     "locked": false
+  },
+  {
+    "term": "voimakuvio",
+    "definition": "Kuva, jossa valittu kappale on piirretty yksinään ja siihen vaikuttavat voimat nuolina. Jokaisella nuolella on nimi, ja sen suunta ja suhteellinen pituus vastaavat voimaa. Nopeutta ja kiihtyvyyttä ei piirretä voimiksi.",
+    "lessons": [
+      "fy4-5"
+    ],
+    "see_also": [
+      "kokonaisvoima",
+      "tukivoima",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisvoima",
+    "definition": "Kappaleeseen vaikuttavien voimien vektorisumma ΣF. Newtonin toisen lain mukaan ΣF = ma, joten kokonaisvoima on samansuuntainen kuin kiihtyvyys. Se ei ole yksi voima lisää.",
+    "lessons": [
+      "fy4-5"
+    ],
+    "see_also": [
+      "voimakuvio",
+      "voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "komponentti",
+    "definition": "Voiman osa valitun akselin suuntaan, esimerkiksi Fx = F cos α ja Fy = F sin α. Komponentit yhdessä korvaavat voiman laskussa; ne eivät ole uusia voimia.",
+    "lessons": [
+      "fy4-5"
+    ],
+    "see_also": [
+      "voimakuvio",
+      "kokonaisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tukivoima",
+    "definition": "Pinnan voima kappaleeseen, joka koskettaa sitä. Tukivoima N on kohtisuorassa pintaa vastaan ja työntää kappaletta poispäin pinnasta: lattia ylös, katto alas, seinä sivulle.",
+    "lessons": [
+      "fy4-5"
+    ],
+    "see_also": [
+      "voimakuvio",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jännitysvoima",
+    "definition": "Narun, köyden tai vaijerin voima kappaleeseen, johon se on kiinnitetty. Jännitysvoima T vaikuttaa narun suuntaisesti ja vetää kappaletta narua kohti.",
+    "lessons": [
+      "fy4-5"
+    ],
+    "see_also": [
+      "voimakuvio",
+      "voima"
+    ],
+    "locked": false
   }
 ]

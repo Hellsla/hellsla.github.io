@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "contribution": "Kappaleeseen vaikuttavat voimat piirretään **voimakuvioon** kahdeksan vaiheen menetelmällä: valitaan kappale, etsitään vuorovaikutukset, piirretään ja nimetään voimat oikeisiin suuntiin, erotetaan voimat nopeudesta ja komponenteista ja kirjoitetaan vasta sitten liikeyhtälöt $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$.",
+  "learn": [
+    "tunnistamaan kappaleeseen vaikuttavat voimat ja piirtämään niistä voimakuvion.",
+    "erottamaan voimat niiden komponenteista ja päättelemään voimien yhteisvaikutuksen.",
+    "muodostamaan liikeyhtälöt voimakuvion avulla."
+  ],
+  "prior": [
+    "Newtonin toinen laki $\\Sigma\\mathbf{F} = m\\mathbf{a}$ luvusta *Newtonin toinen laki*",
+    "Suorakulmaisen kolmion sini ja kosini"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kaksi lasta vetää pulkkaa jäällä. Toinen vetää lyhyestä narusta vinosti ylöspäin, toinen työntää pulkkaa takaa kahvasta, joka osoittaa vinosti alaspäin. Molemmat käyttävät yhtä suurta voimaa. Jäällä kitka on pieni, mutta pulkan jalakset painavat jäätä vasten eri tavalla.",
+      "question": "Mitkä voimat pulkkaan vaikuttavat kummassakin tapauksessa, ja painaako pulkka jäätä yhtä suurella voimalla kuin seistessään paikallaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: liukuva kiekko",
+      "optional": true,
+      "fbd": "identify",
+      "prompt": "Jääkiekko on lyöty, ja se liukuu nyt yksin jäällä kohti maalia. Mitkä voimat vaikuttavat kiekkoon liu'un aikana, kun ilmanvastus jätetään huomiotta?",
+      "choices": [
+        {
+          "text": "Paino, jään tukivoima ja jään pieni kitkavoima.",
+          "correct": true,
+          "feedback": "Oikein. Kiekkoon vaikuttavat vain kappaleet, jotka koskettavat sitä tai vetävät sitä: Maa ja jää. Maila ei enää koske kiekkoon, joten sen voima loppui lyönnin päättyessä. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että liike jatkuu ilman eteenpäin vetävää voimaa."
+        },
+        {
+          "text": "Paino, jään tukivoima, kitkavoima ja eteenpäin vievä lyönnin voima.",
+          "feedback": "Lyönnin voima vaikutti vain sen ajan, kun maila kosketti kiekkoa. Liukuvaan kiekkoon ei vaikuta mikään kappale eteenpäin. Kiekko liikkuu, koska sillä on nopeus, ei siksi, että jokin työntäisi sitä."
+        },
+        {
+          "text": "Vain paino ja eteenpäin vievä voima, koska jää ei vaikuta liukuvaan kiekkoon.",
+          "feedback": "Kiekko ei vajoa jään läpi, joten jää tukee sitä: tukivoima on yhtä suuri kuin paino. Eteenpäin vievää voimaa ei ole, koska mikään kappale ei työnnä kiekkoa liu'un aikana."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: tukivoima vinossa vedossa",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "fbd": "identify",
+      "prompt": "Pulkkaa vedetään vaakasuoralla jäällä narulla, joka nousee vinosti ylöspäin. Pulkka pysyy jään pinnalla. Miten jään tukivoima $N$ vertautuu pulkan painoon $G$?",
+      "choices": [
+        {
+          "text": "$N$ on yhtä suuri kuin $G$, koska pulkka ei liiku pystysuunnassa.",
+          "feedback": "Pystysuuntaisten voimien summa on nolla, mutta pystysuunnassa on kolme voimaa: paino alas, tukivoima ylös ja narun voiman pystykomponentti ylös. Mallin arvoissa kulmalla $30^\\circ$ paino on $196\\,\\text{N}$ ja tukivoima vain $146\\,\\text{N}$."
+        },
+        {
+          "text": "$N$ on pienempi kuin $G$.",
+          "correct": true,
+          "feedback": "Oikein. Narun voiman pystykomponentti kannattelee osan painosta, joten jään tarvitsee tukea vähemmän. Mallin arvoissa kulmalla $30^\\circ$ tukivoima on $146\\,\\text{N}$ ja paino $196\\,\\text{N}$: erotus $50\\,\\text{N}$ on juuri narun voiman pystykomponentti."
+        },
+        {
+          "text": "$N$ on suurempi kuin $G$, koska veto painaa pulkkaa jäätä vasten.",
+          "feedback": "Ylöspäin vinosti vetävä naru nostaa pulkkaa eikä paina sitä jäätä vasten. Mallin arvoissa tukivoima pienenee, kun kulma kasvaa: $196\\,\\text{N}$ vaakasuoralla vedolla ja $146\\,\\text{N}$ kulmalla $30^\\circ$. Painaminen tapahtuu vinossa *työnnössä*, jossa voima osoittaa alaspäin."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kulma ja kiihtyvyys",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Narun voima pidetään yhtä suurena, mutta vetokulmaa kasvatetaan vaakasuorasta $60^\\circ$:een. Kitka jäällä jätetään huomiotta. Mitä pulkan kiihtyvyydelle tapahtuu?",
+      "choices": [
+        {
+          "text": "Kiihtyvyys pienenee, kun kulma kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Pulkkaa kiihdyttää vain narun voiman vaakakomponentti $F\\cos\\alpha$, ja se pienenee kulman kasvaessa. Mallin arvoissa kiihtyvyys on $5{,}0\\,\\text{m/s}^2$ vaakasuoralla vedolla ja $2{,}5\\,\\text{m/s}^2$ kulmalla $60^\\circ$."
+        },
+        {
+          "text": "Kiihtyvyys pysyy samana, koska narun voima on yhtä suuri.",
+          "feedback": "Voiman suuruus on sama, mutta sen suunta muuttuu. Liikkeen suuntaan vaikuttaa vain vaakakomponentti $F\\cos\\alpha$. Mallin arvoissa kiihtyvyys putoaa $5{,}0\\,\\text{m/s}^2$:stä $2{,}5\\,\\text{m/s}^2$:een."
+        },
+        {
+          "text": "Kiihtyvyys kasvaa, koska pulkka painaa jäätä vähemmän.",
+          "feedback": "Tukivoima todella pienenee, mutta kun kitkaa ei ole, se ei vaikuta vaakasuuntaiseen liikkeeseen. Kiihdyttävä vaakakomponentti $F\\cos\\alpha$ pienenee, joten kiihtyvyys pienenee: mallin arvoissa $5{,}0\\,\\text{m/s}^2$:stä $2{,}5\\,\\text{m/s}^2$:een."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa pulkkaa vedetään narulla tai työnnetään kahvasta jäällä. Vasemmalla on tilannekuva ja oikealla pulkan voimakuvio, jonka nuolten pituudet ovat mittakaavassa.",
+      "howto": "Valitse *Tilanne* (veto tai työntö) ja säädä voimaa $F$ ja kulmaa $\\alpha$. Voimakuvio päivittyy heti. Paina *Käynnistä*, niin pulkka lähtee liikkeelle, ja *Alusta*, niin se pysähtyy alkuun. *Voimakuvio*-valinnalla näet kuvion pistemallina tai kappalemallina, ja *Komponentit*-ruutu näyttää voiman $F$ komponentit katkoviivoin. *Nopeus* hidastaa tai nopeuttaa liikettä muuttamatta lukemia. Lukemat ovat kuvan alla.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Jää on vaakasuora ja kitka jätetään huomiotta, joten pulkkaan vaikuttavat vain paino $\\mathbf{G}$, jään tukivoima $\\mathbf{N}$ ja narun tai kahvan voima $\\mathbf{F}$. Voima on niin pieni, ettei pulkka nouse jäästä. Ilmanvastusta ei ole. Nopeuden sininen nuoli on tilannekuvassa, ei voimakuviossa, koska nopeus ei ole voima.",
+      "calc": "Voiman komponentit ovat $F_x = F\\cos\\alpha$ ja $F_y = F\\sin\\alpha$. Vedossa $F_y$ osoittaa ylös, työnnössä alas. Pystysuunnassa pulkka ei kiihdy, joten $N + F_y - G = 0$ vedossa ja $N - F_y - G = 0$ työnnössä, ja $G = mg$, $g = 9{,}81\\,\\text{m/s}^2$. Vaakasuunnassa $F_x = ma$, joten $a = \\dfrac{F\\cos\\alpha}{m}$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vetokulma muuttuu",
+      "fbd": "equations",
+      "intro": "Testaa ennusteet. Alkutila valitsee vedon, voiman $F = 100\\,\\text{N}$ ja massan $20\\,\\text{kg}$, jolloin pulkan paino on $196\\,\\text{N}$. Muuta vain kulmaa $\\alpha$. Kirjaa mittaus ainakin kulmilla $0^\\circ$, $30^\\circ$ ja $60^\\circ$, ja katso joka kerta, miten voimakuvion nuolet muuttuvat.",
+      "initial": {
+        "tapa": "veto",
+        "F": 100,
+        "m": "20",
+        "alpha": 0
+      },
+      "names": {
+        "alpha": "kulma α",
+        "F": "voima F",
+        "m": "massa m",
+        "tapa": "tilanne"
+      },
+      "units": {
+        "alpha": "°",
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "tapa": {
+          "veto": "veto narulla"
+        }
+      },
+      "locked": [
+        "tapa",
+        "F",
+        "m"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "N",
+          "label": "N (N)"
+        },
+        {
+          "key": "Fx",
+          "label": "F_x (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kulmalla $30^\\circ$ tukivoima on pienempi kuin paino $196\\,\\text{N}$. Kuinka suuri on narun voiman pystykomponentti $F_y$ silloin? Laske se taulukon tukivoimasta ja painosta. Vastaa newtoneina.",
+        "answer": 50,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Pulkka ei kiihdy pystysuunnassa, joten pystysuuntaisten voimien summa on nolla.",
+          "Ylös vaikuttavat $N$ ja $F_y$, alas $G$: $N + F_y - G = 0$.",
+          "$F_y = G - N = 196\\,\\text{N} - N$, missä $N$ on taulukon rivin $30^\\circ$ tukivoima."
+        ],
+        "mistakes": [
+          {
+            "value": 146,
+            "feedback": "Tämä on tukivoima $N$. Pystykomponentti on se osa painosta, jota tukivoima ei kannattele: $F_y = G - N$."
+          },
+          {
+            "value": 87,
+            "feedback": "Tämä on vaakakomponentti $F_x = F\\cos 30^\\circ$. Pystykomponentti on $F\\sin 30^\\circ$, ja sen saa myös tukivoimasta: $F_y = G - N$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta kulmalla $\\alpha = 30^\\circ$ tukivoima $N = 146\\,\\text{N}$; paino $G = 196\\,\\text{N}$ ($m = 20\\,\\text{kg}$); voima $F = 100\\,\\text{N}$\n\n**Kysytty:** narun voiman pystykomponentti $F_y$ yksikössä $\\text{N}$\n\n**Periaate:** Pulkka pysyy jään pinnalla, joten se ei kiihdy pystysuunnassa. Newtonin toisen lain mukaan pystysuuntaisten voimien summa on silloin nolla.\n\n**Voimakuvio:** Pulkka pisteenä, $y$-akseli ylös. Ylös vaikuttavat tukivoima $N$ ja narun voiman pystykomponentti $F_y$, alas paino $G$. Vaakakomponentti $F_x$ osoittaa liikkeen suuntaan, mutta se ei vaikuta pystysuuntaiseen yhtälöön.\n\n**Kaava:** $N + F_y - G = 0$, joten $F_y = G - N$\n\n**Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_y = 196\\,\\text{N} - 146\\,\\text{N} = 50\\,\\text{N}$\n\n**Vastaus:** $50\\,\\text{N}$, kahden merkitsevän numeron tarkkuudella, koska mallin lukemat ovat kokonaisina newtoneina ja erotus on kymmenien newtonien luku.\n\n**Järkevyys:** Trigonometrialla $F_y = F\\sin\\alpha = 100\\,\\text{N}\\cdot\\sin 30^\\circ = 50\\,\\text{N}$, sama tulos. Pystykomponentti on pienempi kuin voima $100\\,\\text{N}$, kuten komponentin pitää olla."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: työntö kahvasta",
+      "optional": true,
+      "intro": "Vaihda vetäminen työntämiseen. Alkutila valitsee työnnön, voiman $F = 100\\,\\text{N}$ ja massan $20\\,\\text{kg}$. Muuta kulmaa ja kirjaa tukivoima ainakin kahdella kulmalla.",
+      "initial": {
+        "tapa": "tyonto",
+        "F": 100,
+        "m": "20",
+        "alpha": 0
+      },
+      "names": {
+        "alpha": "kulma α",
+        "F": "voima F",
+        "m": "massa m",
+        "tapa": "tilanne"
+      },
+      "units": {
+        "alpha": "°",
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "tapa": {
+          "tyonto": "työntö kahvasta"
+        }
+      },
+      "locked": [
+        "tapa",
+        "F",
+        "m"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "N",
+          "label": "N (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Miksi tukivoima on työnnössä suurempi kuin paino $196\\,\\text{N}$?",
+        "choices": [
+          {
+            "text": "Kahvan voiman pystykomponentti osoittaa alas, joten jään on tuettava painon lisäksi sitä.",
+            "correct": true,
+            "feedback": "Oikein. Pystysuunnassa $N - F_y - G = 0$, joten $N = G + F_y$. Vedossa komponentti osoitti ylös ja tukivoima pieneni."
+          },
+          {
+            "text": "Työnnettäessä pulkan massa kasvaa, koska työntäjä nojaa siihen.",
+            "feedback": "Massa pysyy $20\\,\\text{kg}$:na. Työntäjä vaikuttaa pulkkaan voimalla $\\mathbf{F}$, ja sen alaspäin osoittava komponentti lisää tukivoimaa."
+          },
+          {
+            "text": "Liikkuvaan pulkkaan vaikuttaa liikkeen suuntainen lisävoima, joka painaa sitä jäätä vasten.",
+            "feedback": "Liike ei aiheuta voimaa. Ainoat voimat ovat paino, tukivoima ja kahvan voima. Tukivoima kasvaa, koska kahvan voiman pystykomponentti osoittaa alas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Selitä mittaustesi ja voimakuvion avulla, miksi tukivoima ja kiihtyvyys pienenevät, kun vetokulma kasvaa ja voima pysyy samana.",
+      "criteria": [
+        "Vastaus kertoo, että narun voima jaetaan vaakakomponenttiin $F\\cos\\alpha$ ja pystykomponenttiin $F\\sin\\alpha$.",
+        "Vastaus kertoo, että pystykomponentti kannattelee osan painosta, joten tukivoima on $G - F\\sin\\alpha$.",
+        "Vastaus kertoo, että vain vaakakomponentti kiihdyttää pulkkaa, joten $a = \\dfrac{F\\cos\\alpha}{m}$ pienenee kulman kasvaessa.",
+        "Vastaus käyttää mittaustulosta, esimerkiksi tukivoimaa tai kiihtyvyyttä kahdella eri kulmalla."
+      ],
+      "model": "Narun voima $F = 100\\,\\text{N}$ jakautuu komponentteihin $F_x = F\\cos\\alpha$ ja $F_y = F\\sin\\alpha$. Kun kulma kasvaa, pystykomponentti kasvaa ja kannattelee suuremman osan painosta, joten jään tukivoima $N = G - F\\sin\\alpha$ pienenee: mallin arvoissa $196\\,\\text{N}$ vaakasuoralla vedolla ja $146\\,\\text{N}$ kulmalla $30^\\circ$. Samalla vaakakomponentti pienenee, ja koska kitkaa ei ole, vain se kiihdyttää pulkkaa: $a = \\dfrac{F\\cos\\alpha}{m}$ on $5{,}0\\,\\text{m/s}^2$ kulmalla $0^\\circ$ ja $2{,}5\\,\\text{m/s}^2$ kulmalla $60^\\circ$. Voima ei siis vaikuta vain suuruudellaan vaan myös suunnallaan."
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus jousivaa'alla",
+      "optional": true,
+      "source": "example",
+      "fbd": "equations",
+      "text": "Opiskelija vetää puupalikkaa pöydällä jousivaa'alla, jonka naru on $30^\\circ$:n kulmassa vaakatasoon nähden. Palikan massa on $0{,}60\\,\\text{kg}$. Kun palikka liikkuu tasaisella nopeudella, vaaka näyttää viidellä vedolla lukemat $2{,}1\\,\\text{N}$, $1{,}9\\,\\text{N}$, $2{,}0\\,\\text{N}$, $2{,}0\\,\\text{N}$ ja $2{,}0\\,\\text{N}$, keskimäärin $2{,}0\\,\\text{N}$. Piirrä palikan voimakuvio vihkoon ennen kuin vastaat.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on pöydän tukivoima palikkaan, kun vaa'an voima on $2{,}0\\,\\text{N}$? Vastaa newtoneina.",
+        "answer": 4.9,
+        "unit": "N",
+        "tolerance": 0.02,
+        "hints": [
+          "Piirrä voimakuvio: paino, tukivoima, kitka ja vaa'an voima. Mitkä niistä ovat pystysuoria tai niillä on pystykomponentti?",
+          "Palikka ei kiihdy pystysuunnassa: $N + F\\sin\\alpha - mg = 0$.",
+          "$N = mg - F\\sin\\alpha = 0{,}60\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 - 2{,}0\\,\\text{N}\\cdot\\sin 30^\\circ$."
+        ],
+        "mistakes": [
+          {
+            "value": 5.9,
+            "feedback": "Tämä on palikan paino $mg$. Vaa'an voiman pystykomponentti osoittaa ylös ja kannattelee osan painosta, joten tukivoima on painoa pienempi."
+          },
+          {
+            "value": 6.9,
+            "feedback": "Lisäsit vaa'an voiman pystykomponentin painoon. Naru vetää ylöspäin, joten komponentti pienentää tukivoimaa: $N = mg - F\\sin\\alpha$."
+          }
+        ],
+        "solution": "**Annettu:** $m = 0{,}60\\,\\text{kg}$, vaa'an voima $F = 2{,}0\\,\\text{N}$ (viiden lukeman keskiarvo), kulma $\\alpha = 30^\\circ$; palikka liikkuu tasaisella nopeudella; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** pöydän tukivoima $N$ yksikössä $\\text{N}$\n\n**Periaate:** Palikka liikkuu tasaisesti ja pysyy pöydällä, joten sen kiihtyvyys on nolla. Newtonin toisen lain mukaan voimien summa on nolla kummassakin suunnassa; tukivoiman antaa pystysuunta.\n\n**Voimakuvio:** Palikka pisteenä, $x$ liikkeen suuntaan ja $y$ ylös. Paino $\\mathbf{G}$ alas, tukivoima $\\mathbf{N}$ ylös, kitka $\\mathbf{F}_\\mu$ taaksepäin ja vaa'an voima $\\mathbf{F}$ vinosti ylös eteenpäin. Pystysuunnassa ovat $N$, $F\\sin\\alpha$ ja $G$.\n\n**Kaava:** $N + F\\sin\\alpha - mg = 0$, joten $N = mg - F\\sin\\alpha$\n\n**Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $N = 0{,}60\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 - 2{,}0\\,\\text{N}\\cdot\\sin 30^\\circ = 5{,}886\\,\\text{N} - 1{,}0\\,\\text{N} = 4{,}886\\,\\text{N}$\n\n**Vastaus:** $4{,}9\\,\\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\\,\\text{kg}$ ja voimassa $2{,}0\\,\\text{N}$.\n\n**Järkevyys:** Tukivoima on vähän pienempi kuin paino $5{,}9\\,\\text{N}$, koska naru nostaa palikkaa $1{,}0\\,\\text{N}$:n voimalla. Vaakasuunnasta kitka on $F\\cos\\alpha \\approx 1{,}7\\,\\text{N}$, pienempi kuin vaa'an voima, kuten vinossa vedossa pitääkin."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Voimakuvion piirtäminen",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit tukivoiman suuruudesta ja voiman suunnan merkityksestä? Palaa myös alun pulkkaan: miten jään tukivoima eroaa vedossa ja työnnössä, ja miksi?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "fbd": "error",
+      "figure": "fy4-5/virhe",
+      "prompt": "Laatikkoa on tönäisty, ja nyt se liukuu yksin vaakasuoralla lattialla oikealle ja hidastuu. Opiskelija piirsi siitä kuvan mukaisen voimakuvion. Mikä kuviossa on väärin?",
+      "choices": [
+        {
+          "text": "Voimaa $\\mathbf{F}$ ei ole: mikään kappale ei enää työnnä laatikkoa.",
+          "correct": true,
+          "feedback": "Oikein. Tönäisy loppui, kun käsi irtosi laatikosta. Liukuvaan laatikkoon vaikuttavat vain paino, lattian tukivoima ja kitka. Koska vaakasuunnassa on vain kitka, laatikko hidastuu."
+        },
+        {
+          "text": "Kitkavoiman pitäisi osoittaa oikealle, liikkeen suuntaan.",
+          "feedback": "Kitka vastustaa liukumista pinnan suhteen. Laatikko liukuu oikealle, joten kitka osoittaa vasemmalle, kuten kuviossa. Virhe on muualla: voimalla $\\mathbf{F}$ ei ole aiheuttajaa."
+        },
+        {
+          "text": "Tukivoiman pitäisi olla pidempi kuin paino, koska laatikko liikkuu.",
+          "feedback": "Pystysuunnassa laatikko ei kiihdy, joten tukivoima ja paino ovat yhtä suuret, kuten kuviossa. Liike vaakasuunnassa ei muuta tätä. Virhe on voimassa $\\mathbf{F}$, jolla ei ole aiheuttajaa."
+        },
+        {
+          "text": "Paino pitäisi piirtää laatikon alapinnasta, koska laatikko on lattialla.",
+          "feedback": "Kappalemallissa paino piirretään keskipisteestä, kuten kuviossa. Lattia vaikuttaa alapinnasta tukivoimalla ja kitkalla. Virhe on voimassa $\\mathbf{F}$: mikään ei enää työnnä laatikkoa."
+        }
+      ]
+    },
+    {
+      "id": "hissi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse oikea voimakuvio",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "Ihminen seisoo hississä. Hissi lähtee liikkeelle ylöspäin ja kiihtyy. Missä kuviossa ihmisen voimakuvio on oikein? Kuvioissa ihminen on piste. Vertaa nuolia huolellisesti: kussakin väärässä kuviossa on yksi virhe.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-5/hissi-a",
+          "correct": true,
+          "feedback": "Oikein. Ihminen kiihtyy ylöspäin, joten kokonaisvoiman on osoitettava ylös: $N - G = ma$, eli $N > G$."
+        },
+        {
+          "text": "",
+          "figure": "fy4-5/hissi-b",
+          "feedback": "Yhtä pitkät nuolet tarkoittavat, että kokonaisvoima on nolla. Silloin ihminen olisi levossa tai liikkuisi tasaisesti. Kiihtyvässä hississä tukivoiman on oltava painoa suurempi."
+        },
+        {
+          "text": "",
+          "figure": "fy4-5/hissi-c",
+          "feedback": "Nopeus ei ole voima. Mikään kappale ei aiheuta voimaa $\\mathbf{v}$, joten se ei kuulu voimakuvioon. Muuten kuvio olisi oikein."
+        },
+        {
+          "text": "",
+          "figure": "fy4-5/hissi-d",
+          "feedback": "Tällöin kokonaisvoima osoittaisi alas, ja ihmisen kiihtyvyys olisi alaspäin. Näin käy, kun ylöspäin liikkuva hissi hidastuu, ei kun se lähtee kiihtyen ylös."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "prompt": "Kalastaja nostaa $2{,}0\\,\\text{kg}$:n kalaa siimalla suoraan ylöspäin niin, että kala kiihtyy ylöspäin $1{,}5\\,\\text{m/s}^2$:n kiihtyvyydellä. Kuinka suuri on siiman jännitysvoima? Ilmanvastus jätetään huomiotta. Vastaa newtoneina.",
+      "answer": 22.62,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kalan voimakuvio. Mitkä kaksi voimaa kalaan vaikuttavat, ja kumpi on suurempi, kun kala kiihtyy ylös?",
+        "Valitse $y$-akseli ylös. Liikeyhtälö on $T - mg = ma$.",
+        "$T = m(g + a) = 2{,}0\\,\\text{kg}\\cdot(9{,}81\\,\\text{m/s}^2 + 1{,}5\\,\\text{m/s}^2)$."
+      ],
+      "mistakes": [
+        {
+          "value": 19.62,
+          "feedback": "Tämä on kalan paino $mg$. Se riittäisi, jos kala nousisi tasaisella nopeudella. Kiihtyvä nosto vaatii lisäksi voiman $ma$."
+        },
+        {
+          "value": 16.62,
+          "feedback": "Vähensit kiihtyvyyden. Kala kiihtyy ylöspäin, joten kokonaisvoima osoittaa ylös ja jännitysvoima on painoa suurempi: $T = m(g + a)$."
+        },
+        {
+          "value": 3.0,
+          "feedback": "Tämä on vain kokonaisvoima $ma$. Siiman on lisäksi kannateltava kalan paino: $T = mg + ma$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 2{,}0\\,\\text{kg}$, kiihtyvyys ylöspäin $a = 1{,}5\\,\\text{m/s}^2$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** siiman jännitysvoima $T$ yksikössä $\\text{N}$\n\n**Periaate:** Kala kiihtyy, joten siihen vaikuttavien voimien summa ei ole nolla. Newtonin toisen lain mukaan kokonaisvoima on $ma$ kiihtyvyyden suuntaan eli ylöspäin.\n\n**Voimakuvio:** Kala pisteenä, $y$-akseli ylös. Siiman jännitysvoima $\\mathbf{T}$ ylös ja paino $\\mathbf{G}$ alas. $\\mathbf{T}$ on pidempi, koska kokonaisvoima osoittaa ylös. Kiihtyvyys piirretään erikseen, ei voimaksi.\n\n**Kaava:** $T - mg = ma$, joten $T = m(g + a)$\n\n**Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\\text{m/s}^2$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $T = 2{,}0\\,\\text{kg}\\cdot(9{,}81\\,\\text{m/s}^2 + 1{,}5\\,\\text{m/s}^2) = 2{,}0\\,\\text{kg}\\cdot 11{,}31\\,\\text{m/s}^2 = 22{,}62\\,\\text{N}$\n\n**Vastaus:** $23\\,\\text{N}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\\,\\text{kg}$ ja kiihtyvyydessä $1{,}5\\,\\text{m/s}^2$.\n\n**Järkevyys:** Kalan paino on noin $20\\,\\text{N}$. Kiihtyvä nosto vaatii enemmän, ja $23\\,\\text{N}$ on vähän suurempi. Ylimäärä $3\\,\\text{N}$ on $ma = 2{,}0\\,\\text{kg}\\cdot 1{,}5\\,\\text{m/s}^2$. Jos kala laskettaisiin alas samalla kiihtyvyydellä, siima tarvitsisi vain $m(g - a) \\approx 17\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä jokaisessa tehtävässä ensin voimakuvio vihkoon, vaikka tehtävä ei sitä erikseen pyytäisi. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat syventäviä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "fbd": "identify",
+      "prompt": "Kirja lepää vaakasuoralla pöydällä. Mikä väite kirjan voimakuviosta on oikein?",
+      "choices": [
+        {
+          "text": "Kuviossa ovat paino ja pöydän tukivoima, ja ne ovat yhtä suuret, koska kirja ei kiihdy.",
+          "correct": true,
+          "feedback": "Oikein. Kirjaan vaikuttavat Maa ja pöytä. Voimat ovat yhtä suuret Newtonin toisen lain takia: kiihtyvyys on nolla, joten kokonaisvoima on nolla."
+        },
+        {
+          "text": "Kuviossa on kolme voimaa: paino, pöydän tukivoima ja lisäksi kirjan oma voima, jolla se painaa pöytää.",
+          "feedback": "Kirjan voima pöytään vaikuttaa pöytään, ei kirjaan. Voimakuvioon tulevat vain voimat, jotka vaikuttavat valittuun kappaleeseen."
+        },
+        {
+          "text": "Paino ja pöydän tukivoima ovat Newtonin kolmannen lain voimapari, joten ne ovat aina yhtä suuret.",
+          "feedback": "Voimaparin voimat vaikuttavat eri kappaleisiin. Pöydän tukivoiman pari on kirjan voima pöytään, ja painon pari on kirjan vetovoima Maahan. Paino ja tukivoima ovat yhtä suuret, koska kirja ei kiihdy."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "fbd": "equations",
+      "prompt": "Kauppaa varten tehty kyltti, jonka massa on $8{,}0\\,\\text{kg}$, roikkuu kahden yhtä pitkän vaijerin varassa. Kumpikin vaijeri on $50^\\circ$:n kulmassa vaakatasoon nähden, ja kyltti on paikallaan. Kuinka suuri on kummankin vaijerin jännitysvoima? Vastaa newtoneina.",
+      "answer": 51.22,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kyltin voimakuvio: paino ja kaksi jännitysvoimaa $\\mathbf{T}_1$ ja $\\mathbf{T}_2$. Tilanne on symmetrinen, joten $T_1 = T_2 = T$.",
+        "Vaakakomponentit kumoavat toisensa. Pystysuunnassa $2T\\sin 50^\\circ - mg = 0$.",
+        "$T = \\dfrac{mg}{2\\sin 50^\\circ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 39.24,
+          "feedback": "Jaoit painon tasan kahdelle vaijerille. Vaijerit ovat vinossa, joten vain niiden pystykomponentit kannattelevat kylttiä: $2T\\sin 50^\\circ = mg$."
+        },
+        {
+          "value": 61.05,
+          "feedback": "Käytit kosinia. Kulma $50^\\circ$ on vaakatasoon nähden, joten pystykomponentti on $T\\sin 50^\\circ$."
+        },
+        {
+          "value": 102.4,
+          "feedback": "Unohdit toisen vaijerin. Kumpikin vaijeri kannattelee puolet: $2T\\sin 50^\\circ = mg$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 8{,}0\\,\\text{kg}$, vaijereiden kulma vaakatasoon $\\alpha = 50^\\circ$, kyltti on paikallaan; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** yhden vaijerin jännitysvoima $T$ yksikössä $\\text{N}$\n\n**Periaate:** Kyltti on paikallaan, joten Newtonin toisen lain mukaan voimien summa on nolla kummassakin suunnassa. Tilanne on symmetrinen, joten vaijereiden jännitysvoimat ovat yhtä suuret.\n\n**Voimakuvio:** Kyltti pisteenä, $x$ oikealle ja $y$ ylös. Paino $\\mathbf{G}$ alas, jännitysvoima $\\mathbf{T}_1$ vinosti ylös vasemmalle ja $\\mathbf{T}_2$ vinosti ylös oikealle, molemmat $50^\\circ$ vaakatasosta. Niiden vaakakomponentit $T\\cos 50^\\circ$ kumoavat toisensa, ja pystykomponentit $T\\sin 50^\\circ$ osoittavat ylös.\n\n**Kaava:** $y$: $2T\\sin\\alpha - mg = 0$, joten $T = \\dfrac{mg}{2\\sin\\alpha}$\n\n**Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $T = \\dfrac{8{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2}{2\\cdot\\sin 50^\\circ} = \\dfrac{78{,}48\\,\\text{N}}{1{,}532} = 51{,}22\\,\\text{N}$\n\n**Vastaus:** $51\\,\\text{N}$, kaksi merkitsevää numeroa kuten massassa $8{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Jos vaijerit olisivat pystysuorat, kumpikin kantaisi puolet painosta, $39\\,\\text{N}$. Vinot vaijerit tarvitsevat enemmän, koska vain osa voimasta on pystysuuntaista, joten $51\\,\\text{N} > 39\\,\\text{N}$ on järkevä. Mitä loivemmassa vaijerit ovat, sitä suurempi jännitysvoima tarvitaan."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-5/malli-tyonto",
+      "prompt": "Laatikkoa, jonka massa on $12\\,\\text{kg}$, työnnetään vaakasuoralla lattialla kahvasta, joka osoittaa $30^\\circ$:n kulmassa vinosti alaspäin. Työntövoima on $60\\,\\text{N}$, ja laatikko liukuu tasaisella nopeudella. Lattian ja laatikon välillä on kitkaa. Piirrä laatikon voimakuvio paperille kappalemallina. Kirjoita sitten liikeyhtälöt vaaka- ja pystysuunnassa ja laske kitkavoima ja tukivoima.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain laatikko, ei kahvaa, työntäjää eikä lattiaa voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Neljä voimaa: paino, lattian tukivoima, lattian kitkavoima ja kahvan voima. Ei liikkeen suuntaista lisävoimaa."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino alas, tukivoima ylös, kitka taaksepäin ja kahvan voima vinosti alas eteenpäin."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino keskipisteestä, tukivoima ja kitka alapinnasta, kahvan voima kahvan kohdalta; jokaisella oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Tukivoima on pidempi kuin paino, ja kitka on yhtä pitkä kuin kahvan voiman vaakakomponentti; komponentit katkoviivalla."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$F\\cos 30^\\circ - F_\\mu = 0$ ja $N - mg - F\\sin 30^\\circ = 0$, joten $F_\\mu \\approx 52\\,\\text{N}$ ja $N \\approx 148\\,\\text{N}$."
+        }
+      ],
+      "model": "Laatikkoon vaikuttavat Maa, lattia ja kahva. Maan vetovoima eli paino $\\mathbf{G}$ osoittaa keskipisteestä alas. Lattia vaikuttaa alapinnasta kahdella voimalla: tukivoima $\\mathbf{N}$ osoittaa kohtisuoraan ylös ja kitkavoima $\\mathbf{F}_\\mu$ taaksepäin, koska laatikko liukuu eteenpäin. Kahvan voima $\\mathbf{F}$ osoittaa vinosti alas eteenpäin. Liikkeen suuntaista lisävoimaa ei ole. Laatikko liukuu tasaisesti, joten kokonaisvoima on nolla. Kun $x$ osoittaa eteenpäin ja $y$ ylös: $x$: $F\\cos 30^\\circ - F_\\mu = 0$, joten $F_\\mu = 60\\,\\text{N}\\cdot\\cos 30^\\circ \\approx 52\\,\\text{N}$. $y$: $N - mg - F\\sin 30^\\circ = 0$, joten $N = 12\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 + 60\\,\\text{N}\\cdot\\sin 30^\\circ \\approx 148\\,\\text{N}$. Tukivoima on painoa $118\\,\\text{N}$ suurempi, koska kahvan voiman pystykomponentti painaa laatikkoa lattiaa vasten."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
