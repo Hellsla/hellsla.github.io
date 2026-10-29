@@ -203,7 +203,7 @@ def esimerkki():
     P = (cx + w / 2, cy - h / 2)                                   # the rope's attachment: the front top corner
     d = FBD(f, 1.15, body=(cx, cy, w, h), m=m, a=(a, 0))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(20, -4))
-    d.force("N", (0, N), (cx + 20, cy + h / 2), "normal", surface=0, lab=(-20, 6))
+    d.force("N", (0, N), (cx + 20, cy + h / 2), "normal", surface=0, lab=(-30, 6))
     d.force("T", (F * math.cos(al), F * math.sin(al)), P, "tension", rope=(math.cos(al), math.sin(al)), lab=(16, -10))
     d.force("F_mu", (-Fmu, 0), (cx - w / 2, cy + h / 2), "friction", surface=0, lab=(-10, -16))
     d.component("T_x", "T", (1, 0), lab=(0, 24)); d.component("T_y", "T", (0, 1), lab=(-28, 4))
