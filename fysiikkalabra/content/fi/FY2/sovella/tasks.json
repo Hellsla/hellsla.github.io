@@ -101,7 +101,7 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Vuoden sähkön voisi tuottaa myös noin $40$ aurinkopuistolla. Selitä aineiston avulla, miksi aurinkopuistot auttaisivat tammikuun huippuiltana vähän. Mitkä taulukon tuotantotavat voisivat tuottaa tehoa tyynenä pakkasiltana, ja mitä rajoituksia niillä on?",
+          "text": "Vuoden sähkön voisi tuottaa myös noin $40$ aurinkopuistolla. Arvioi aineiston avulla, kuinka paljon aurinkopuistot auttaisivat tammikuun huippuiltana. Mitkä taulukon tuotantotavat voisivat tuottaa tehoa tyynenä pakkasiltana, ja mitä rajoituksia niillä on?",
           "criteria": [
             {
               "text": "Käyttää aineistoa: talvella aurinkovoimasta tulee vain noin $4\\,\\%$ vuoden energiasta (keskimäärin noin $7\\,\\text{MW}$), ja pimeänä iltana teho on nolla.",
@@ -129,7 +129,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Selvä suositus, joka kattaa sekä vuoden energian että talven huipputehon. Pisteen saa perusteluista, ei valitusta tuotantotavasta."
+              "detail": "Selvä suositus, joka kattaa vuoden energian ja joko kattaa talven huipputehon tai arvioi puuttuvan tehon ja kertoo, miten se hoidetaan. Pisteen saa perusteluista, ei valitusta tuotantotavasta."
             },
             {
               "text": "Osoittaa laskemalla, että suosituksen vuosienergia kattaa kulutuksen, ja laskee sen vuotuisen päästön ja vertaa sitä ainakin yhteen toiseen vaihtoehtoon.",

@@ -3,7 +3,7 @@
 ### a)
 **Annettu:** tuulivoimalan nimellisteho $P_\text{n} = 5{,}0\,\text{MW}$, käyttöaste $k = 0{,}32$, vuoden pituus $t = 8760\,\text{h}$ ja kaupungin vuosikulutus $E = 380\,\text{GWh}$
 **Kysytty:** tarvittavien tuulivoimaloiden määrä $N$
-**Periaate:** Tuulivoimala ei käy koko vuotta nimellisteholla, koska tuuli vaihtelee. Käyttöaste kertoo vuoden keskitehon: $P_\text{keski} = k \cdot P_\text{n}$. Keskiteho on vakio koko vuoden, joten vuoden energia on keskiteho kertaa aika. Kun yhden voimalan vuosienergia tiedetään, voimaloiden määrä on kulutus jaettuna sillä. Määrä on kokonaisluku, ja sen on oltava vähintään laskettu arvo.
+**Periaate:** Tuulivoimala ei käy koko vuotta nimellisteholla, koska tuuli vaihtelee. Käyttöaste kertoo vuoden keskitehon: $P_\text{keski} = k \cdot P_\text{n}$. Teho vaihtelee, mutta vuoden energia on keskiteho kertaa aika. Kun yhden voimalan vuosienergia tiedetään, voimaloiden määrä on kulutus jaettuna sillä. Määrä on kokonaisluku, ja sen on oltava vähintään laskettu arvo.
 **Kaava:** $E_1 = k \cdot P_\text{n} \cdot t$ ja $N = \dfrac{E}{E_1}$
 **Muunnokset:** Kun teho on megawatteina ja aika tunteina, energia on megawattitunteina: $1\,\text{GWh} = 1000\,\text{MWh}$.
 **Sijoitus:** $E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} = 14\,016\,\text{MWh} = 14{,}0\,\text{GWh}$ ja $N = \dfrac{380\,\text{GWh}}{14{,}0\,\text{GWh}} = 27{,}1$
@@ -31,12 +31,12 @@
 **Järkevyys:** Talvi on neljännes vuodesta, ja sille osuu noin kolmannes sekä tuotannosta että kulutuksesta, joten talven keskitehot ovat vuoden keskitehoja ($45\,\text{MW}$ ja $43\,\text{MW}$) suurempia, kuten kuuluukin. Kumpikin keskiteho on huipputehoa $80\,\text{MW}$ pienempi, kuten keskiarvon pitääkin olla.
 
 ### d)
-**Kysytty:** miksi aurinkopuistot auttavat huippuiltana vähän, ja mitkä tuotantotavat voisivat tuottaa tehoa tyynenä pakkasiltana rajoituksineen
+**Kysytty:** kuinka paljon aurinkopuistot auttavat huippuiltana, ja mitkä tuotantotavat voisivat tuottaa tehoa tyynenä pakkasiltana rajoituksineen
 **Periaate:** Vuoden energia ei kerro, onko tehoa saatavilla juuri silloin, kun sitä tarvitaan. Huippuiltana ratkaisee teho sillä hetkellä. Sen voivat tuottaa voimalat, joiden tehoa voi säätää tai jotka käyvät tasaisesti säästä riippumatta. Säädettävyys ja sääriippuvuus ovat ominaisuuksia, joilla on rajansa, eivät ehdottomia luokkia.
 **Mallivastaus:** Yhden aurinkopuiston vuosienergia on $0{,}11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9{,}6\,\text{GWh}$, joten $40$ puistoa tuottaa noin $385\,\text{GWh}$ vuodessa. Talvella siitä tulee taulukon mukaan vain $4\,\%$ eli noin $15\,\text{GWh}$, mikä vastaa keskitehoa $\dfrac{15\,400\,\text{MWh}}{2160\,\text{h}} \approx 7\,\text{MW}$. Tammikuun iltana on pimeää, joten teho huipun aikaan on nolla. Aurinkosähkö tuotetaan pääosin kesällä, jolloin kulutus on pienimmillään.
 
 Tyynenä pakkasiltana tehoa voisivat tuottaa
-- *maakaasuvoimala* ($50\,\text{MW}$): tehoa voi nostaa nopeasti, mutta kaasu on tuontipolttoainetta ja päästökerroin on suurin vaihtoehdoista
+- *maakaasuvoimala* ($50\,\text{MW}$): tehoa voi nostaa nopeasti, mutta kaasu on tuontipolttoainetta ja päästökerroin on uusista vaihtoehdoista suurin
 - *biomassavoimala* ($40\,\text{MW}$): säädettävä, mutta käynnistyy hitaammin, ja polttoainetta on kuljetettava ja varastoitava
 - *vesivoimaosuus* ($20\,\text{MW}$): tehoa voi säätää nopeasti, mutta vuoden energia riippuu sateista, joten vettä ei voi käyttää rajattomasti
 - *pieni ydinvoimala* ($60\,\text{MW}$): käy tasaisesti säästä riippumatta ja on siksi käynnissä myös huippuiltana, mutta tehoa ei voi nostaa nimellistehoa suuremmaksi, eikä voimalaa ole vielä saatavilla
@@ -60,7 +60,7 @@ Tyynenä pakkasiltana tehoa voisivat tuottaa
 *Oletukset.* Oletin, että käyttöasteet ovat joka vuosi samat. Tuulisuus ja sademäärä vaihtelevat, joten huonona vuonna biomassavoimala käy enemmän ja päästö kasvaa. Oletin myös, että kulutus pysyy $380\,\text{GWh}$:ssa. Jos lämmitys ja liikenne sähköistyvät, kulutus kasvaa ja tuulivoimaloita tarvitaan lisää. Hinta ja sähköverkon vahvistaminen jäivät laskematta, vaikka ne voivat ratkaista päätöksen.
 
 ### Hyväksytään myös
-Mikä tahansa tuotantotapa tai yhdistelmä saa täydet pisteet, kun suositus kattaa vuoden energian ja talven huipun, päästö on laskettu oikein, rajoitukset on käsitelty ja vastaperuste ja oletukset on esitetty. Esimerkiksi:
+Mikä tahansa tuotantotapa tai yhdistelmä saa täydet pisteet, kun suositus kattaa vuoden energian ja kattaa talven huipun tai arvioi puuttuvan tehon ja sen hoitamisen, päästö on laskettu oikein, rajoitukset on käsitelty ja vastaperuste ja oletukset on esitetty. Esimerkiksi:
 - *Pieni ydinvoimala.* Se tuottaa $0{,}90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh}$ vuodessa eli enemmän kuin kaupunki tarvitsee, ja koko kulutuksen päästö olisi vain $12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4{,}6 \cdot 10^{3}\,\text{t}$. Perustelussa on käsiteltävä, että voimalaa ei vielä ole saatavilla ja rakentaminen kestää yli kymmenen vuotta (mitä kaupunki tekee sillä välin), että huipusta puuttuu $20\,\text{MW}$ ja että käytetty polttoaine on loppusijoitettava.
 - *Tuulivoima ja maakaasuvoimala varavoimana.* Kun kaasuvoimala käy vain tyynillä jaksoilla, päästö jää pieneksi. Perustelussa arvioidaan, kuinka suuri osa energiasta tuotetaan kaasulla, ja lasketaan sen päästö.
 - *Kaksi biomassavoimalaa.* Ne kattavat huipun $80\,\text{MW}$ ja vuoden energian käyttöasteella $\dfrac{380\,000\,\text{MWh}}{80\,\text{MW} \cdot 8760\,\text{h}} \approx 0{,}54$. Päästö $230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8{,}7 \cdot 10^{4}\,\text{t}$ on noin $72\,\%$ pienempi kuin kivihiilellä. Perustelussa käsitellään hakkeen saatavuus, kuljetukset ja hiilen hidas sitoutuminen.
