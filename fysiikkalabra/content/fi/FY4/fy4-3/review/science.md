@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 246a981427da374e
+CONTENT-HASH: 8031d09d8d0ecd87
 
 ## Blocking
 
 ## Polish
-- figures.py:252 — The lift label is still $\overline{F}_\text{noste}$. docs/force-diagrams.md reserves this symbol for buoyancy, and the exercises use it that way. Use e.g. $\overline{F}_\text{nosto}$.
-- sim.js:19 — The comment says "600 x 720", but the code sets H = 740.
 
 ## Checked
-- Round-3 diff (d22358db..HEAD): only figure `kone` (lesson.md:535, figures.py) changed. The physics text, inquiry, answers and sim are unchanged since round 2.
-- `kone`: the body rect is x 415–525, and the whole force diagram stays right of the divider at x = 300. The drag tip is at x = 338 and its label at x = 307.5–352.5, clear of the pictured plane's nose (x = 276).
-- `kone` proportions: G 80 = lift 80; F1 + F2 = 2 × 38.5 = 77 = drag 77. This matches $2F_1 - F_\text{v} = 0$ and lift = weight. Thrust starts from the front edge, drag from the rear edge and G from the centre. The aria-label agrees.
-- Recomputed: worked example drag 2 × 48 kN = 96 kN; siirto 420 + 260 = 680 N. The other numbers were recomputed in round 2 and are unchanged: push forces, slide distances and times, the frictionless case, exp-1 and the collision data.
-- Definitions, every choice item's single correct option and its distractor feedback, the other force diagrams (curling, skaters, car, lamp, sim), and the FY4 scope: unchanged and passed in round 2.
+- Hash 8031d09d8d0ecd87 at start and end. Diff since the round-3 PASS (e7406627..9ef32611): only lesson.md:535/559, figures.py:237/252 and sim.js:19.
+- `kone`: the lift is now $\overline{F}_\text{nosto}$, and the aria-label says "nostovoima F nosto". It matches the text at lesson.md:533 ("siipien nostovoima"). "Noste" is no longer used for lift; it stays reserved for buoyancy, which is used only in the exercises' balloon task. The label box and the proportions (G = lift, F1 + F2 = F_v) are unchanged.
+- sim.js:19: the comment now says 600 x 740, which agrees with `H = narrow ? 740 : 400` (sim.js:100).
+- Recomputed in one script with my own formulas: worked example F_v = 2 × 48 kN = 96 kN; sim G = 98,1 N, push a = 9,0 m/s², hand force 130/110/100/90 N, slide 1,125/2,25/4,5 m in 0,75/1,5/3,0 s, frictionless 12 m in 4,0 s; collision peak 4,0 N over 0,10 s; siirto 420 + 260 = 680 N (the 160 N mistake is correctly flagged as a mistake). All agree with lesson-answers.py.
+- Definitions, the first and third laws with their conditions, every choice item's single correct option and its distractor feedback, the force diagrams (curling, skaters, car, lamp, aircraft, sim), the experiments' set-ups and the FY4 scope: unchanged since the round-2 full review and the round-3 figure check, which passed them.
