@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9550d44a916340b5
+CONTENT-HASH: 8d72396766fb2769
 
 ## Blocking
 None.
 
 ## Polish
-- Part d states the conclusion in the prompt ("aurinkopuistot auttaisivat tammikuun huippuiltana vähän"); the student only explains it. Rephrase to "Auttaisivatko aurinkopuistot ...? Perustele aineiston avulla." so the judgement is theirs.
+- Part d now asks the student to estimate the help (fixed; the judgement is theirs). Remaining diff: wording fixes only, no numbers changed.
 - Workload: five parts, 18 points, long source material. Heavy for a 1 op module end but acceptable as the teacher's adapted fy2-8 city task; consider noting about 60-90 min in the intro.
 - Part c prompt "Riittääkö tuulivoima talvella" plus the stated 80 MW peak guides the student towards the energy/power distinction; acceptable at FY2 level.
-- docs/coverage/FY2.md does not exist (only FY1, FY3), so coverage gaps could not be judged. Create it or confirm it is not required for FY2.
+- Coverage doc is generated later; out of scope.
 - Self-assessment is not visible in the packet (criteria/points only); I assumed the page renders it from the criteria.
 
 ## Checked
@@ -18,4 +18,4 @@ None.
 - FY2 scope respected: no chain efficiencies, no FY3/FY4 content; P = E : t, kWh/GWh and prefixes only.
 - Solutions are staged (given, asked, principle, formula, conversions, answer, reasonableness) and learnable; the model answer is internally consistent (65 MW local at the peak, 15 MW import).
 - Common mistakes are real and tied to the parts (nominal power without k, rounding down, GWh to kWh, energy vs power, "emission-free", nuclear as non-adjustable).
-- Hash checked at start and end: 9550d44a916340b5.
+- Re-review after wording fixes; hash 8d72396766fb2769.
