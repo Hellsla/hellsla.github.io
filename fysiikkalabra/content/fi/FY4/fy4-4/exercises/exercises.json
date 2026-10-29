@@ -27,7 +27,7 @@
     {
       "id": "fy4-4-L1-04",
       "level": 1,
-      "text": "Laatikkoa, jonka massa on $12\\,\\text{kg}$, vedetään vaakasuoralla lattialla $38\\,\\text{N}$:n voimalla. Lattian kitkavoima laatikkoon on $20\\,\\text{N}$. Piirrä laatikon voimakuvio. Kuinka suuri on laatikon kiihtyvyys?",
+      "text": "Laatikkoa, jonka massa on $12\\,\\text{kg}$, vedetään vaakasuoralla lattialla vaakasuoraan suuntaan $38\\,\\text{N}$:n voimalla. Lattian kitkavoima laatikkoon on $20\\,\\text{N}$. Piirrä laatikon voimakuvio. Kuinka suuri on laatikon kiihtyvyys?",
       "answer": 1.5,
       "unit": "m/s²",
       "tolerance": 0.02,
