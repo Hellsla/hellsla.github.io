@@ -24,6 +24,7 @@
 **Annettu:** luistelijan voima laitaan $F_{\text{LK}} = 90\,\text{N}$ laitaa kohti
 **Kysytty:** laidan voima luistelijaan $F_{\text{KL}}$ yksikössä $\text{N}$
 **Periaate:** Newtonin kolmas laki: luistelija ja laita vuorovaikuttavat, joten laita vaikuttaa luistelijaan yhtä suurella mutta vastakkaissuuntaisella voimalla. Laki pätee riippumatta siitä, liikkuuko kumpikaan.
+**Voimakuvio:** Valitaan kappaleeksi luistelija, joka piirretään suorakulmiona; positiivinen suunta on laidasta poispäin. Luistelijaan vaikuttavat paino alas, jään tukivoima ylös ja laidan voima $\overline{F}_{\text{KL}}$ luistelijasta poispäin, päättyen luistelijan kylkeen. Hänen oma voimansa laitaan $\overline{F}_{\text{LK}}$ vaikuttaa laitaan, joten se ei kuulu hänen kuvioonsa vaan on kysytyn voiman vastavoima.
 **Kaava:** $\overline{F}_{\text{KL}} = -\overline{F}_{\text{LK}}$, joten suuruuksina $F_{\text{KL}} = F_{\text{LK}}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_{\text{KL}} = F_{\text{LK}} = 90\,\text{N}$
@@ -38,13 +39,14 @@
 **Kaava:** $F - F_\text{i} - F_\text{r} = 0$, joten $F_\text{r} = F - F_\text{i}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{r} = 620\,\text{N} - 380\,\text{N} = 240\,\text{N}$
-**Vastaus:** $240\,\text{N}$, newtonin tarkkuudella kuten annetut voimat, joten kolme merkitsevää numeroa.
+**Vastaus:** $240\,\text{N}$, kymmenen newtonin tarkkuudella kuten annetut voimat, joten kaksi merkitsevää numeroa.
 **Järkevyys:** Vastusten summa $380\,\text{N} + 240\,\text{N} = 620\,\text{N}$ on yhtä suuri kuin eteenpäin vievä voima, joten nopeus ei muutu. Vierimisvastus on pienempi kuin ilmanvastus, mikä sopii maantienopeuksiin, joilla ilmanvastus on autolle suurin vastus.
 
 ## fy4-3-L1-05
 **Annettu:** kirjan massa $m = 0{,}65\,\text{kg}$, Maan voima kirjaan on kirjan paino; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kirjan voima Maahan $F$ yksikössä $\text{N}$
 **Periaate:** Maa ja kirja vetävät toisiaan. Newtonin kolmannen lain mukaan kirja vetää Maata yhtä suurella voimalla kuin Maa kirjaa, mutta vastakkaiseen suuntaan eli ylöspäin. Maan voima kirjaan on paino $G = mg$.
+**Voimakuvio:** Valitaan kappaleeksi kirja, joka piirretään suorakulmiona; positiivinen suunta on ylös. Kirjaan vaikuttavat paino $\overline{G}$ keskipisteestä alas ja pöydän tukivoima $\overline{N}$ alapinnasta ylös. Paino on Maan voima kirjaan, ja sen vastavoima on kirjan voima $\overline{F}$ Maahan, joka vaikuttaa Maahan eikä kuulu kirjan kuvioon.
 **Kaava:** $F = G$ ja $G = mg$, joten $F = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}65\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 6{,}3765\,\text{N}$
@@ -58,14 +60,14 @@
 **Voimakuvio:** Alempi kirja suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}_1$ keskipisteestä alas, ylemmän kirjan voima $\overline{F}_2$ yläpinnasta alas ja pöydän tukivoima $\overline{N}$ alapinnasta ylös.
 **Kaava:** $N - G_1 - F_2 = 0$ ja $F_2 = G_2$, joten $F = N = G_1 + G_2$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
-**Sijoitus:** $F = 8{,}0\,\text{N} + 5{,}0\,\text{N} = 13{,}0\,\text{N}$
-**Vastaus:** $13{,}0\,\text{N}$ alaspäin. Summa on kymmenesosanewtonin tarkkuudella kuten painot $8{,}0\,\text{N}$ ja $5{,}0\,\text{N}$, joten siinä on kolme merkitsevää numeroa.
+**Sijoitus:** $F = 8{,}0\,\text{N} + 5{,}0\,\text{N} = 13\,\text{N}$
+**Vastaus:** $13\,\text{N}$ alaspäin. Summa on kymmenesosanewtonin tarkkuudella kuten painot $8{,}0\,\text{N}$ ja $5{,}0\,\text{N}$, joten siinä on kaksi merkitsevää numeroa.
 **Järkevyys:** Pöytä kannattelee molempia kirjoja, joten sen on tuettava niiden yhteistä painoa. Ylempi kirja ei kuitenkaan koske pöytää: sen paino välittyy pöytään alemman kirjan kautta voimaparien ketjuna.
 
 ## fy4-3-L2-02
-**Annettu:** uimarin voima veteen $F_{\text{UV}} = 65\,\text{N}$ taaksepäin, uimari ui suoraan tasaisella nopeudella
+**Annettu:** uimarin voima veteen $F_{\text{UV}} = 65\,\text{N}$ taaksepäin, uimarin paino $720\,\text{N}$ ja veden noste yhtä suuri, uimari ui suoraan vaakasuunnassa tasaisella nopeudella
 **Kysytty:** veden vastus uimariin $F_\text{v}$ yksikössä $\text{N}$
-**Periaate:** Kolmannen lain mukaan vesi työntää uimaria eteenpäin yhtä suurella voimalla $F_{\text{VU}} = 65\,\text{N}$; se vie uimaria eteenpäin. Uimari liikkuu tasaisella nopeudella, joten ensimmäisen lain mukaan vaakasuuntaisten voimien summa on nolla: veden vastus taaksepäin on yhtä suuri kuin veden työntö eteenpäin.
+**Periaate:** Kolmannen lain mukaan vesi työntää uimaria eteenpäin yhtä suurella voimalla $F_{\text{VU}} = 65\,\text{N}$; se vie uimaria eteenpäin. Uimari liikkuu tasaisella nopeudella, joten ensimmäisen lain mukaan vaakasuuntaisten voimien summa on nolla. Paino ja noste ovat pystysuoria eivätkä vaikuta vaakasuuntaiseen tasapainoon, joten niitä ei tarvita: veden vastus taaksepäin on yhtä suuri kuin veden työntö eteenpäin.
 **Voimakuvio:** Uimari suorakulmiona, positiivinen suunta eteenpäin. Veden työntö $\overline{F}_{\text{VU}}$ eteenpäin ja veden vastus $\overline{F}_\text{v}$ taaksepäin. Pystysuunnassa noste ja paino kumoavat toisensa.
 **Kaava:** $F_{\text{VU}} - F_\text{v} = 0$ ja $F_{\text{VU}} = F_{\text{UV}}$, joten $F_\text{v} = F_{\text{UV}}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.

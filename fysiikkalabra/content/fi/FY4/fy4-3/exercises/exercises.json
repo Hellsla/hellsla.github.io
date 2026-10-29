@@ -53,7 +53,7 @@
     {
       "id": "fy4-3-L2-02",
       "level": 2,
-      "text": "Uimari ui suoraan tasaisella nopeudella. Hän työntää käsillään ja jaloillaan vettä taaksepäin keskimäärin $65\\,\\text{N}$:n voimalla. Kuinka suuri on veden vastus uimariin keskimäärin?",
+      "text": "Uimari ui suoraan vaakasuunnassa tasaisella nopeudella. Hänen painonsa on $720\\,\\text{N}$ ja veden noste yhtä suuri. Hän työntää käsillään ja jaloillaan vettä taaksepäin keskimäärin $65\\,\\text{N}$:n voimalla. Kuinka suuri on veden vastus uimariin keskimäärin?",
       "answer": 65,
       "unit": "N",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy4-3-L3-01",
       "level": 3,
-      "text": "Kuumailmapallo laskeutuu suoraan alas tasaisella nopeudella. Pallon, sen sisällä olevan kuuman ilman, korin ja matkustajien yhteinen paino on $4{,}62\\,\\text{kN}$, ja ympäröivän ilman noste on $4{,}35\\,\\text{kN}$. Kuinka suuri on ilmanvastus palloon, ja mihin suuntaan se osoittaa? Vastaa kilonewtoneina.",
+      "text": "Kuumailmapallo laskeutuu suoraan alas tasaisella nopeudella. Pallon, sen sisällä olevan kuuman ilman, korin ja matkustajien yhteinen paino on $4{,}62\\,\\text{kN}$, ja ympäröivän ilman noste on $4{,}35\\,\\text{kN}$. Kuinka suuri on ilmanvastus palloon, ja mihin suuntaan se osoittaa? Vastaa suuruus kilonewtoneina ja kerro suunta sanoin; vain suuruus tarkistetaan.",
       "answer": 0.27,
       "unit": "kN",
       "tolerance": 0.02

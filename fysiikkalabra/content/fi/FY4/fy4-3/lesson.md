@@ -362,7 +362,7 @@
 Kun kaksi kappaletta vaikuttavat toisiinsa, niiden välillä on **vuorovaikutus**: käsi työntää laatikkoa, naru vetää pulkkaa ja Maa vetää omenaa. Vuorovaikutuksen voimakkuutta kuvaa **voima**, jonka yksikkö on newton ($\text{N}$). Voima on vektori, jolla on suuruus ja suunta, ja sitä merkitään $\overline{F}$. Jokaisella voimalla on aiheuttaja, joka on aina toinen kappale. Kosketusvoimissa kappaleet koskettavat toisiaan. Maan vetovoima eli **paino** $\overline{G}$ ja magneettien voimat vaikuttavat myös etäältä.
 
 ### Liike jatkuu ilman voimaa
-Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään ei enää työnnä kiveä eteenpäin, mutta kivi liukuu silti kymmeniä metrejä. Liu'un aikana kiveen vaikuttavat vain Maa ja jää. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa. Vaakasuunnassa on vain jään pieni kitkavoima, joka osoittaa taaksepäin ja hidastaa kiveä hyvin vähitellen.
+Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään ei enää työnnä kiveä eteenpäin, mutta kivi liukuu silti kymmeniä metrejä. Liu'un aikana kiveen vaikuttavat vain Maa ja jää (ilmanvastus on hyvin pieni). Pystysuunnassa paino ja jään tukivoima eli jään kiveä ylöspäin tukeva, pintaa vastaan kohtisuora voima kumoavat toisensa. Vaakasuunnassa on vain jään pieni kitkavoima eli pintojen välinen liikettä vastustava voima, joka osoittaa taaksepäin ja hidastaa kiveä hyvin vähitellen.
 
 <svg data-fig="curling" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaa liukuvasta curlingkivestä. Vasemmalla tilannekuva: kivi liukuu jäällä oikealle, ja sen yllä ohut sininen nuoli v näyttää nopeuden oikealle. Heittäjän käsi on jäänyt kauas taakse. Oikealla voimakuvio: kivi suorakulmiona. Paino G osoittaa keskipisteestä alas, jään tukivoima N alapinnasta ylös yhtä pitkänä, ja jään pieni kitkavoima alapinnan takakulmasta vasemmalle. Eteenpäin osoittavaa voimaa ei ole. Kuva ei ole mittakaavassa: kitkavoiman nuoli on piirretty selvyyden vuoksi todellista pidemmäksi." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43c-ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy43c-granite" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="0.55" stop-color="#8a96a3"/><stop offset="1" stop-color="#6c757d"/></linearGradient></defs>
@@ -471,7 +471,7 @@ missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma el
 
 Kokonaisvoima nolla ei tarkoita, ettei voimia olisi, vaan että ne kumoavat toisensa. Suoralla tiellä tasaisella nopeudella ajavaan autoon vaikuttavat paino ja tien tukivoima pystysuunnassa sekä tien renkaisiin kohdistama voima eteenpäin ja ilmanvastus taaksepäin. Koska nopeus ei muutu, eteenpäin vievä voima on yhtä suuri kuin ilmanvastus, kun vierimisvastus jätetään huomiotta.
 
-<svg data-fig="auto" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa autosta, joka ajaa suoralla tiellä tasaisella nopeudella. Vasemmalla tilannekuva: auto ja sen yllä ohut sininen nuoli v oikealle. Oikealla auton voimakuvio, auto suorakulmiona. Paino G keskipisteestä alas ja tien tukivoima N alapinnasta ylös, yhtä pitkinä. Tien voima F renkaisiin lähtee alapinnan etukulmasta eteenpäin, ja ilmanvastus F v lähtee keulasta taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
+<svg data-fig="auto" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa autosta, joka ajaa suoralla tiellä tasaisella nopeudella. Vasemmalla tilannekuva: auto ja sen yllä ohut sininen nuoli v oikealle. Oikealla auton voimakuvio, auto suorakulmiona. Paino G keskipisteestä alas ja tien tukivoima N alapinnasta ylös, yhtä pitkinä. Tien voima F renkaisiin lähtee alapinnan etukulmasta eteenpäin, ja ilmanvastus F v lähtee auton takasivulta taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43a-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
   <foreignObject x="77.5" y="9.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
   <rect x="16" y="236" width="270" height="34" fill="#c9c2b2"/>
@@ -530,7 +530,43 @@ Matkustajakone lentää vaakasuoraan suoraan eteenpäin tasaisella nopeudella $8
 
 <!-- vaihe -->
 
-**Periaate.** Newtonin kolmannen lain mukaan kaasut työntävät kutakin moottoria eteenpäin yhtä suurella voimalla $F_1$; se on moottorin työntövoima. Kone lentää suoraan tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla. Vaakasuunnassa koneeseen vaikuttavat vain kaksi työntövoimaa eteenpäin ja ilmanvastus taaksepäin, joten ne kumoavat toisensa. Pystysuunnassa siipien nostovoima ja paino kumoavat toisensa.
+**Periaate.** Newtonin kolmannen lain mukaan kaasut työntävät kutakin moottoria eteenpäin yhtä suurella voimalla $F_1$; se on moottorin työntövoima. Kone lentää suoraan tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla. Vaakasuunnassa koneeseen vaikuttavat vain kaksi työntövoimaa $\overline{F}_1$ ja $\overline{F}_2$ eteenpäin (molemmat $48\,\text{kN}$) ja ilmanvastus $\overline{F}_\text{v}$ taaksepäin, joten ne kumoavat toisensa. Pystysuunnassa siipien nostovoima ja paino kumoavat toisensa. Voimakuviossa kone on suorakulmio ja siihen vaikuttavat voimat ovat nuolia:
+
+<svg data-fig="kone" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa matkustajakoneesta, joka lentää vaakasuoraan tasaisella nopeudella. Vasemmalla tilannekuva: kone ja sen yllä ohut sininen nuoli v oikealle. Oikealla koneen voimakuvio, kone suorakulmiona. Paino G keskipisteestä alas ja siipien nostovoima F noste ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v lähtee takareunasta taaksepäin ja on yhtä pitkä kuin työntövoimat yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy43k-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
+  <foreignObject x="77.5" y="9.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
+  <path d="M44,214 Q40,196 62,192 L226,190 Q262,188 276,176 L262,214 Q150,230 44,214 Z" fill="url(#fy43k-body)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M62,192 L48,150 L74,150 L104,192 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M138,200 L196,200 L120,250 L100,250 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="160" cy="238" r="9" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="130" cy="244" r="9" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="150" y="198" width="10" height="8" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="170" y="198" width="10" height="8" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="190" y="198" width="10" height="8" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="210" y="198" width="10" height="8" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="230" y="198" width="10" height="8" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="124" y1="128" x2="198" y2="128" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M187,134.5 L200,128 L187,121.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="205.5" y="109.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <line x1="300" y1="20" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="383.5" y="9.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{voimakuvio}$</div></foreignObject>
+  <rect x="381" y="145" width="130" height="50" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="446" y1="170" x2="446" y2="253" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M446,270 L438,252 L454,252 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="407.5" y="249.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="476" y1="170" x2="476" y2="87" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M476,70 L484,88 L468,88 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="462.5" y="53.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{noste}$</div></foreignObject>
+  <line x1="511" y1="158" x2="542" y2="158" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M559,158 L541,166 L541,150 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="550.5" y="123.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <line x1="511" y1="182" x2="542" y2="182" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M559,182 L541,190 L541,174 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="550.5" y="187.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
+  <line x1="381" y1="170" x2="302" y2="170" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M285,170 L303,162 L303,178 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="254.5" y="133.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+</svg>
 
 <!-- vaihe -->
 

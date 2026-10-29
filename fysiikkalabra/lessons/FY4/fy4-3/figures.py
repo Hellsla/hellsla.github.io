@@ -205,7 +205,7 @@ def auto():
     f = Fig("fy43-auto", 330, "Kaksi kuvaa autosta, joka ajaa suoralla tiellä tasaisella nopeudella. Vasemmalla tilannekuva: auto ja sen "
             "yllä ohut sininen nuoli v oikealle. Oikealla auton voimakuvio, auto suorakulmiona. Paino G keskipisteestä alas ja tien "
             "tukivoima N alapinnasta ylös, yhtä pitkinä. Tien voima F renkaisiin lähtee alapinnan etukulmasta eteenpäin, ja "
-            "ilmanvastus F v lähtee keulasta taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa.")
+            "ilmanvastus F v lähtee auton takasivulta taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa.")
     f.tex(150, 24, r"\text{tilannekuva}", "middle", MUTED)
     f.rect(16, 236, 270, 34, "#c9c2b2", None)
     f.line(16, 236, 286, 236, INK, 2.5, cap="round")
@@ -226,6 +226,33 @@ def auto():
     d.force("N", (0, 96), (cx - 22, cy + h / 2), "normal", surface=0, lab=(-22, 6))
     d.force("F", (52, 0), (cx + w / 2, cy + h / 2), "friction", surface=0, lab=(14, 18))
     d.force("F_v", (-52, 0), (cx - w / 2, cy - 6), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-6, -22))
+    d.draw()
+    return f.svg()
+
+
+def kone():
+    """Esimerkki: an airliner in level flight at constant velocity; on its diagram the two thrusts equal the drag, lift equals weight."""
+    f = Fig("fy43-kone", 330, "Kaksi kuvaa matkustajakoneesta, joka lentää vaakasuoraan tasaisella nopeudella. Vasemmalla tilannekuva: kone "
+            "ja sen yllä ohut sininen nuoli v oikealle. Oikealla koneen voimakuvio, kone suorakulmiona. Paino G keskipisteestä alas ja "
+            "siipien nostovoima F noste ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta "
+            "eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v lähtee takareunasta taaksepäin ja on yhtä pitkä kuin työntövoimat "
+            "yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa.")
+    f.tex(150, 24, r"\text{tilannekuva}", "middle", MUTED)
+    f.path("M44,214 Q40,196 62,192 L226,190 Q262,188 276,176 L262,214 Q150,230 44,214 Z", grad(f, "fy43k-body", WHITE, COLD_LIGHT), INK, 2.5)
+    f.path("M62,192 L48,150 L74,150 L104,192 Z", COLD, INK, 2)                        # tail fin
+    f.path("M138,200 L196,200 L120,250 L100,250 Z", ALUMINIUM, INK, 2)                # wing
+    f.circle(160, 238, 9, IRON, INK, 2); f.circle(130, 244, 9, IRON, INK, 2)          # engines
+    for x in range(150, 250, 20): f.rect(x, 198, 10, 8, GLASS, INK, 1.5, 2)
+    FBD(f, 1).motion(r"\overline{v}", (1, 0), (124, 128), 76)
+    f.line(300, 20, 300, 320, RULE, 1.5, "6 6")
+    f.tex(450, 24, r"\text{voimakuvio}", "middle", MUTED)
+    cx, cy, w, h = 446, 170, 130, 50
+    d = FBD(f, 1.0, body=(cx, cy, w, h), a_dir=(0, 0))
+    d.force("G", (0, -100), (cx, cy), "gravity", lab=(-22, -6))
+    d.force("F_noste", (0, 100), (cx + 30, cy), "other", tex=r"\overline{F}_\text{noste}", lab=(34, -2))
+    d.force("F_1", (48, 0), (cx + w / 2, cy - 12), "applied", tex=r"\overline{F}_1", lab=(14, -20))
+    d.force("F_2", (48, 0), (cx + w / 2, cy + 12), "applied", tex=r"\overline{F}_2", lab=(14, 20))
+    d.force("F_v", (-96, 0), (cx - w / 2, cy), "drag", v_rel=(1, 0), tex=r"\overline{F}_\text{v}", lab=(-8, -22))
     d.draw()
     return f.svg()
 
@@ -300,7 +327,7 @@ def malli_lamppu():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "curling": curling, "luistelijat": luistelijat, "auto": auto,
+FIGURES = {"hero": hero, "curling": curling, "luistelijat": luistelijat, "auto": auto, "kone": kone,
            "anturit": anturit, "malli-lamppu": malli_lamppu}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
@@ -308,6 +335,7 @@ REUSE = {
     "curling": "reveals: the forces on a sliding curling stone after release (no forward force; theory figure)",
     "luistelijat": "reveals: the third-law pair of two skaters pushing apart, equal and opposite on two diagrams",
     "auto": "reveals: the force diagram of a car at constant velocity, forward force and drag equal",
+    "kone": "reveals: the force diagram of an airliner in level flight (thrusts equal drag; the worked example)",
     "anturit": "safe: example force-sensor readings of two colliding carts (the student reads the equal and opposite forces)",
     "malli-lamppu": "reveals: the model diagram of a lamp hanging at rest (shown after the drawing attempt)",
 }

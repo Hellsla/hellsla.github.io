@@ -48,7 +48,7 @@
       "justify": true,
       "reveal": {
         "after": "exp-1",
-        "min": 2
+        "min": 4
       },
       "fbd": "identify",
       "prompt": "Käsi työntää laatikkoa ja päästää irti, kun laatikon nopeus on $3{,}0\\,\\text{m/s}$. Laatikko liukuu kuviteltua täysin kitkatonta pintaa pitkin, eikä ilmanvastusta ole. Mitä laatikon nopeudelle tapahtuu irrotuksen jälkeen?",
@@ -81,7 +81,7 @@
       "choices": [
         {
           "text": "Raskas kärry B vaikuttaa kevyeen kärryyn A suuremmalla voimalla, koska sen massa on suurempi.",
-          "feedback": "Massa ei määrää vuorovaikutuksen voimaa. Kevyt kärry muuttaa liikettään enemmän, mutta se johtuu sen pienemmästä massasta, ei suuremmasta voimasta. Esimerkkiaineistossa anturit näyttävät joka hetki yhtä suurta lukemaa, enimmillään noin $4\\,\\text{N}$."
+          "feedback": "Massa ei tee voimista erisuuria: kärryt vaikuttavat toisiinsa yhtä suurin voimin. Kevyt kärry muuttaa liikettään enemmän, mutta se johtuu sen pienemmästä massasta, ei suuremmasta voimasta. Esimerkkiaineistossa anturit näyttävät joka hetki yhtä suurta lukemaa, enimmillään noin $4\\,\\text{N}$."
         },
         {
           "text": "Kevyt kärry A vaikuttaa raskaaseen kärryyn B suuremmalla voimalla, koska se liikkuu ja törmää.",
@@ -108,7 +108,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: liukuminen eri pinnoilla",
-      "intro": "Testaa ennuste 1. Alkutila asettaa lähtönopeudeksi $v_0 = 3{,}0\\,\\text{m/s}$ ja pinnaksi maton. Paina *Käynnistä* ja odota, että ajo päättyy, ja kirjaa sitten mittaus. Toista puulattialla, jäällä ja kitkattomalla pinnalla. Katso joka kerta voimakuviota irrotuksen jälkeen: mitkä voimat jäävät?",
+      "intro": "Testaa ennuste 1. Alkutila asettaa lähtönopeudeksi $v_0 = 3{,}0\\,\\text{m/s}$ ja pinnaksi maton. Paina *Käynnistä* ja odota, että ajo päättyy, ja kirjaa sitten mittaus. Toista puulattialla, jäällä ja kitkattomalla pinnalla: kirjaa kaikki neljä pintaa, koska ennuste koskee kitkatonta pintaa. Katso joka kerta voimakuviota irrotuksen jälkeen: mitkä voimat jäävät?",
       "initial": {
         "pinta": "matto",
         "v0": 3
@@ -143,7 +143,7 @@
           "label": "v_loppu (m/s)"
         }
       ],
-      "min": 2,
+      "min": 4,
       "question": {
         "type": "numeric",
         "prompt": "Mallin kitkavoimat ovat matolla $40\\,\\text{N}$, puulattialla $20\\,\\text{N}$ ja jäällä $10\\,\\text{N}$. Vertaa taulukkosi liukumatkoja: miten liukumatka muuttuu, kun kitkavoima puolittuu? Kuinka pitkälle laatikko liukuisi samalla lähtönopeudella pinnalla, jonka kitkavoima on vain $5{,}0\\,\\text{N}$? Vastaa metreinä.",
@@ -251,6 +251,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
+      "optional": true,
       "fbd": "identify",
       "prompt": "Opiskelija päättelee: ”Hevonen ei voi saada kärryä liikkeelle, koska kärry vetää hevosta taaksepäin yhtä suurella voimalla kuin hevonen vetää kärryä eteenpäin. Voimat kumoavat toisensa.” Mikä päättelyssä on virhe?",
       "choices": [
@@ -297,7 +298,7 @@
           "feedback": "Tasainen nopeus tarkoittaa, että peräkärryyn vaikuttavien voimien *summa* on nolla, ei että jokin voima olisi nolla. Koukku vetää peräkärryä eteenpäin vastusten suuruisella voimalla."
         }
       ],
-      "solution": "**Annettu:** peräkärryn ilmanvastus $F_\\text{i} = 420\\,\\text{N}$ ja vierimisvastus $F_\\text{r} = 260\\,\\text{N}$ taaksepäin, nopeus on vakio ja tie suora\n\n**Kysytty:** peräkärryn voima auton vetokoukkuun $F_{\\text{PA}}$ yksikössä $\\text{N}$\n\n**Periaate:** Peräkärry liikkuu suoraviivaisesti tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla: vetokoukun voima $F_{\\text{AP}}$ eteenpäin on yhtä suuri kuin vastukset yhteensä. Newtonin kolmannen lain mukaan peräkärry vetää koukkua yhtä suurella voimalla taaksepäin.\n\n**Kaava:** $F_{\\text{AP}} - F_\\text{i} - F_\\text{r} = 0$ ja $F_{\\text{PA}} = F_{\\text{AP}}$, joten $F_{\\text{PA}} = F_\\text{i} + F_\\text{r}$\n\n**Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_{\\text{PA}} = 420\\,\\text{N} + 260\\,\\text{N} = 680\\,\\text{N}$\n\n**Vastaus:** $680\\,\\text{N}$ taaksepäin, kymmenen newtonin tarkkuudella kuten annetut voimat.\n\n**Järkevyys:** Jos koukku vetäisi peräkärryä heikommin kuin $680\\,\\text{N}$, vastukset hidastaisivat sitä, ja vahvemmin vedettynä se kiihtyisi. Auton moottorin on voitettava oman ilmanvastuksen ja vierimisvastuksen lisäksi tämä $680\\,\\text{N}$, joten peräkärry lisää polttoaineen kulutusta."
+      "solution": "**Annettu:** peräkärryn ilmanvastus $F_\\text{i} = 420\\,\\text{N}$ ja vierimisvastus $F_\\text{r} = 260\\,\\text{N}$ taaksepäin, nopeus on vakio ja tie suora\n\n**Kysytty:** peräkärryn voima auton vetokoukkuun $F_{\\text{PA}}$ yksikössä $\\text{N}$\n\n**Periaate:** Peräkärry liikkuu suoraviivaisesti tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla: vetokoukun voima $F_{\\text{AP}}$ eteenpäin on yhtä suuri kuin vastukset yhteensä. Newtonin kolmannen lain mukaan peräkärry vetää koukkua yhtä suurella voimalla taaksepäin.\n\n**Voimakuvio:** Valitaan kappaleeksi peräkärry, ja se piirretään suorakulmiona. Siihen vaikuttavat vaakasuunnassa kolme voimaa: vetokoukun voima $\\overline{F}_{\\text{AP}}$ eteenpäin sekä ilmanvastus $\\overline{F}_\\text{i}$ ja vierimisvastus $\\overline{F}_\\text{r}$ taaksepäin. Pystysuunnassa ovat vielä paino ja tien tukivoima, jotka kumoavat toisensa. Auton voima koukkuun ei kuulu peräkärryn kuvioon, koska se vaikuttaa autoon. Positiivinen suunta on eteenpäin.\n\n**Kaava:** $\\Sigma F_x = F_{\\text{AP}} - F_\\text{i} - F_\\text{r} = 0$ ja $F_{\\text{PA}} = F_{\\text{AP}}$, joten $F_{\\text{PA}} = F_\\text{i} + F_\\text{r}$\n\n**Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_{\\text{PA}} = 420\\,\\text{N} + 260\\,\\text{N} = 680\\,\\text{N}$\n\n**Vastaus:** $680\\,\\text{N}$ taaksepäin, kymmenen newtonin tarkkuudella kuten annetut voimat.\n\n**Järkevyys:** Jos koukku vetäisi peräkärryä heikommin kuin $680\\,\\text{N}$, vastukset hidastaisivat sitä, ja vahvemmin vedettynä se kiihtyisi. Tien voiman auton renkaisiin on kumottava auton oman ilmanvastuksen ja vierimisvastuksen lisäksi tämä $680\\,\\text{N}$, joten peräkärry lisää polttoaineen kulutusta."
     },
     {
       "id": "tehtavat",
@@ -359,7 +360,7 @@
       "fbd": "draw",
       "draw": true,
       "model_figure": "fy4-3/malli-lamppu",
-      "prompt": "Lamppu roikkuu paikallaan katosta pystysuoran johdon varassa. Piirrä lampun voimakuvio paperille: lamppu suorakulmiona ja jokainen voima vaikutuskohdastaan. Kirjoita sitten kunkin voiman viereen sen vastavoima: mikä kappale vaikuttaa mihin kappaleeseen ja mihin suuntaan.",
+      "prompt": "Lamppu roikkuu paikallaan katosta pystysuoran johdon varassa. Piirrä lampun voimakuvio paperille: lamppu suorakulmiona ja jokainen voima vaikutuskohdastaan. Valinnainen jatko: kirjoita sitten kunkin voiman viereen sen vastavoima eli mikä kappale vaikuttaa mihin kappaleeseen ja mihin suuntaan.",
       "criteria": [
         {
           "key": "fbd_object",
@@ -381,8 +382,8 @@
           "key": "fbd_magnitudes",
           "detail": "Nuolet ovat yhtä pitkät, koska lamppu on levossa."
         },
-        "Vastaus nimeää painon vastavoimaksi lampun vetovoiman Maahan ylöspäin ja jännitysvoiman vastavoimaksi lampun voiman johtoon alaspäin.",
-        "Vastaus perustelee, että vastavoimat vaikuttavat Maahan ja johtoon, eivät lamppuun, joten ne eivät kuulu lampun voimakuvioon."
+        "Valinnainen jatko: vastaus nimeää painon vastavoimaksi lampun vetovoiman Maahan ylöspäin ja jännitysvoiman vastavoimaksi lampun voiman johtoon alaspäin.",
+        "Valinnainen jatko: vastaus perustelee, että vastavoimat vaikuttavat Maahan ja johtoon, eivät lamppuun, joten ne eivät kuulu lampun voimakuvioon."
       ],
       "model": "Lamppuun vaikuttavat Maa ja johto. Maan vetovoima eli paino $\\overline{G}$ osoittaa keskipisteestä alas, ja johdon jännitysvoima $\\overline{T}$ osoittaa kiinnityskohdasta ylös johtoa pitkin. Lamppu on levossa, joten ensimmäisen lain mukaan voimat kumoavat toisensa ja nuolet ovat yhtä pitkät. Painon vastavoima on lampun yhtä suuri vetovoima Maahan ylöspäin, ja jännitysvoiman vastavoima on lampun voima johtoon alaspäin. Kumpikaan vastavoima ei vaikuta lamppuun, joten ne eivät kuulu sen voimakuvioon. Paino ja jännitysvoima eivät ole voima ja vastavoima, vaikka ne ovat yhtä suuret ja vastakkaissuuntaiset: ne vaikuttavat samaan kappaleeseen ja kuuluvat eri vuorovaikutuksiin."
     },

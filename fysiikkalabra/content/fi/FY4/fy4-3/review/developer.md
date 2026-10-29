@@ -1,10 +1,10 @@
 VERDICT: DONE
 
-Round 1 draft. check_lesson.py fy4-3 shows ok on every line; check_choices, coverage (identify plan) and check_solutions are clean.
+Round 1 (fix). check_lesson.py fy4-3: every line ok.
 
-- `content/fi/FY4/fy4-3/lesson.md`: The Miksi question is about a curling stone, with a hero image under it. Ydinajatus has three subheadings: interaction, the first law with the curling force diagram, and the third law with two skaters drawn on separate diagrams. The section `## Kaava: Newtonin ensimmäinen ja kolmas laki` gives ΣF̄ = 0̄ ⇔ v̄ vakio, F̄_AB = −F̄_BA and G = mg, with a force diagram of a car at constant velocity. The worked example is a jet at constant velocity, in 7 stages. Then the misconception section and the summary.
-- `inquiry.json`: two predictions. Experiment exp-1 slides a box on different surfaces. A force-sensor collision graph serves as interpret evidence (source: example). Also an error-spotting horse-and-cart task, a trailer transfer task, three checks (check-3 is a drawing task) and the exit ticket. Tags are `identify` plus one `draw`.
-- `exercises/`: 5/4/3 exercises with complete solutions. `exit-ticket.json` has 2 questions.
-- `lessons/FY4/fy4-3/`: figures.py has 6 figures; all force diagrams use fbd.py, the hero uses herolib. Also answers.py, lesson-answers.py and sim-spec.md.
-- New sim `assets/sims/fy4/fy4-3/sim.js`: the hand's push, then the slide, a (t, v) graph and a live force diagram. Its texts are in `lang/fi.json` under `sims.fy4-3`. `tests/sims/fy4-3.json` has 19 assertions.
-- `glossary.json`: added jatkavuuden laki, voima ja vastavoima and inertia.
+- lessons/FY4/fy4-3/figures.py: new figure `kone` (aircraft force diagram, fbd.py); auto figure description "takasivulta taaksepäin".
+- lesson.md: `kone` figure and F_1, F_2, F_v naming in the Esimerkki Periaate stage; tukivoima and kitkavoima explained at first use; air resistance noted; auto aria-label fixed.
+- inquiry.json: siirto "Voimakuvio:" step and "tien voiman renkaisiin" wording; pred-1/exp-1 min 4 (frictionless row required); "Massa ei tee voimista erisuuria"; virhe optional; check-3 second step optional.
+- exercises.json / solutions.md: Voimakuvio steps in L1-03 and L1-05; L2-02 varied (weight and buoyancy as distractors); L2-01 "13 N"; L3-01 prompt names size and direction; L1-04 "kymmenen newtonin tarkkuudella".
+
+Not fixable here: sim readable at 390 px with graph and diagram stacked. It needs a taller canvas, but test_sims.py and tests/sims/fy4-3.json fix the canvas at 600x400. A larger label font at narrow widths made labels overlap, so it was reverted. sim.js is unchanged.
