@@ -370,7 +370,7 @@
         "Sanon, että lopulta suuri osa on lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu.",
         "Selitän, miksi hajaantunut lämpöenergia ei ole enää helposti hyödynnettävissä."
       ],
-      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi, joka hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
+      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi, joka hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei enää helposti saa kerättyä takaisin käyttöön. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
     },
     {
       "id": "lahtolippu",

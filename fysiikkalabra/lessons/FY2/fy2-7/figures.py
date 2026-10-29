@@ -20,7 +20,7 @@ def pylon(f, cx, base=206, top=112):
 
 
 def grid():
-    f = Fig("fy27-grid", 332, "Kaavakuva sähköverkon reitistä voimalaitokselta kotiin. Vasemmalta oikealle: voimalaitos ja muuntaja, kantaverkon "
+    f = Fig("fy27-grid", 332, "Kaavakuva sähköverkon reitistä voimalaitokselta kotiin. Vasemmalta oikealle: voimalaitos ja sen muuntaja, kantaverkon "
             "voimalinja (jännite 110 kV:sta 400 kV:iin), sähköasema, jakeluverkon pylväät (20 kV) ja koti (0,4 kV, pistorasiassa 230 V). "
             "Alla oranssi nuoli kuvaa energian kulkua voimalaitokselta kotiin. Kuva ei ole mittakaavassa.")
     g = 206
@@ -54,8 +54,10 @@ def grid():
     f.rect(536, 182, 14, 24, WHITE, INK, 2); f.rect(558, 182, 16, 14, GLASS, INK, 2)
     # voltage labels above
     f.tex(245, 62, r"110\text{–}400\,\text{kV}", "middle", w=170)
-    f.tex(476, 108, r"20\,\text{kV}", "middle", w=100)
+    f.tex(476, 116, r"20\,\text{kV}", "middle", w=100)
     f.tex(556, 62, r"0{,}4\,\text{kV}", "middle", w=100)
+    f.tex(130, 100.5, r"\text{muuntaja}", "middle", w=90)
+    f.line(130, 118, 130, 171, MUTED, 1.5, "4 4")
     f.line(556, 82, 556, 130, RULE, 1.5, "5 5")
     # names below
     f.tex(88, 262, r"\text{voimalaitos}", "middle", w=140)
@@ -123,12 +125,15 @@ def storage():
     f.rect(420, 92, 100, 118, SAND_LIGHT, INK, 3, 14)
     f.rect(430, 102, 80, 98, "url(#fy27-hot)", INK, 2, 8)
     f.line(470, 82, 470, 92, INK, 4); f.line(470, 210, 470, 222, INK, 4)
-    f.tex(100, 252, r"\text{akku}", "middle", w=90)
-    f.tex(255, 252, r"\text{pumppuvoima}", "middle", w=190)
-    f.tex(470, 252, r"\text{lämpövarasto}", "middle", w=190)
+    f.tex(100, 267, r"\text{akku}", "middle", w=90)
+    f.tex(255, 267, r"\text{pumppuvoimala}", "middle", w=190)
+    f.tex(470, 267, r"\text{lämpövarasto}", "middle", w=190)
     f.tex(100, 40, r"\text{kemiallinen}", "middle", w=150)
-    f.tex(255, 40, r"\text{potentiaali}", "middle", w=140)
+    f.tex(283, 28.5, r"\text{potentiaali-}", "middle", w=190)
+    f.tex(283, 56.5, r"\text{energia}", "middle", w=190)
     f.tex(470, 40, r"\text{lämpö}", "middle", w=100)
+    f.tex(251, 92.5, r"\text{yläallas}", "middle", w=110)
+    f.tex(231, 224.5, r"\text{alaallas}", "middle", w=110)
     f.line(184, 20, 184, 280, RULE, 2, "6 6"); f.line(380, 20, 380, 280, RULE, 2, "6 6")
     return f.svg()
 

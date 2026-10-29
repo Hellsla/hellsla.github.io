@@ -4,7 +4,7 @@ from figlib import Fig, Axes, INK, MUTED, HEAT, HEAT_LIGHT, COLD, WHITE
 
 def bars():
     f = Fig("fy23-bars", 330, "Kuvaaja mittakaavassa: vaakapylväät näyttävät, kuinka paljon energiaa laite muuntaa yhdessä sekunnissa. "
-            "Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 100 W vain 100 J. "
+            "Vedenkeitin, jonka teho on 2000 W, muuntaa 2000 J, tosteri 1000 W 1000 J ja televisio 80 W vain 80 J. "
             "Pylvään pituus on suoraan verrannollinen tehoon.")
     f.defs_add(f'<linearGradient id="fy23-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HEAT}"/></linearGradient>')
     f.tex(300, 26, r"\text{energiaa muuntuu yhdessä sekunnissa}", "middle")

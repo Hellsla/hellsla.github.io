@@ -78,7 +78,7 @@ def tikapuut():
     for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
         f.tex(X(k), y0 + 30, lab, "middle", w=90)
     f.tex(300, 350, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
-    items = [(0, 252, r"\text{omena}\ 1\,\text{J}", "start", 150), (3, 214, r"\text{tulitikku}\ 1\,\text{kJ}", "end", 190),
+    items = [(0, 252, r"\text{omena metrin ylös}\ 1\,\text{J}", "start", 240), (3, 214, r"\text{tulitikku}\ 1\,\text{kJ}", "end", 190),
              (7, 176, r"\text{päivän ruoka}\ 10\,\text{MJ}", "end", 260), (9.2, 138, r"\text{bensiinitankki}\ 1{,}6\,\text{GJ}", "end", 300),
              (14.14, 100, r"\text{Olkiluoto 3, vrk}\ 140\,\text{TJ}", "end", 340)]
     for k, y, lab, anc, wd in items:

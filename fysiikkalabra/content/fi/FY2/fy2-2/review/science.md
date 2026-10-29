@@ -1,19 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 67c061c7a989048f
+VERDICT: FAIL
+CONTENT-HASH: b8d7e629c4b251af
 
 ## Blocking
+- lesson.md:161, 282; inquiry.json tarkistus-3 model — B: lämpöenergia ei "voi enää käyttää hyödyksi" / "ei voi kerätä takaisin" / "ei voi enää kerätä takaisin ja käyttää". Väite pätee vain, kun lämpö on hajaantunut ympäristön lämpötilaan; ympäristöön siirtyvä lämpö lämmittää esim. huoneen, ja yhteistuotannossa se otetaan talteen (itse L3-02-ratkaisu sanoo näin). Tarkistus-3:n kriteeri ja sanasto sanovat oikein "ei enää helposti hyödynnettävissä". Fix: korvaa kolme kohtaa sanoilla "ei ole enää helposti hyödynnettävissä".
+- lesson.md:229 (kuva tikapuut, nimiö "omena 1 J") — B: energia-asteikolla nimiö lukee, että omenan energia on 1 J, mutta saman luvun tarkistus-2 antaa omenan energiaksi 300 kJ (ruoka). 1 J pätee vain omenan nostamiselle metrin (aria-label ja sim sanovat niin). Fix: nimiö "omena metrin ylös 1 J".
 
 ## Polish
-- content/fi/FY2/fy2-2/inquiry.json:298 — the correct option says the battery's energy ends "lähes kokonaan" as thermal energy, while its feedback (and the first option's feedback) says "lopulta kaikki päätyy lämpönä ympäristöön" — use one wording in option and feedback (C either way; "lähes kokonaan" is the safer one, since some light may leave the room).
-- content/fi/FY2/fy2-2/inquiry.json:332 — "Noin $100$ … kaksi merkitsevää numeroa": the integer 100 does not show two figures; write $1{,}0 \cdot 10^{2}$ or drop the figure count.
-- content/fi/FY2/fy2-2/inquiry.json:59 — petrol 32 MJ/l and food 10 MJ are compared as like quantities; one clause from the food/fuel guardrail (the food value is energy the body can use, the fuel value energy released in combustion) would keep the comparison exact (C, not a finding).
+- inquiry.json ennuste-1 / koe-1: ruoan 10 MJ on ravintoarvo (elimistön hyödynnettävä), bensiinin 32 MJ lämpöarvo (palamisessa vapautuva); ohjeistuksen mukainen yksi lause eron sanomiseksi sopisi koe-1:n intron.
+- inquiry.json siirto solution: "kaikki tiedot tunnetaan gigajoulen tarkkuudella" on oletus (360 GJ voi olla kahdella numerolla); sano "oletetaan".
+- lesson.md:103: tasaisella ajolla energia kuluu ilmanvastukseen ja vierintävastukseen, ei vain pysähtyessä; "pysähtyessä" voi jättää pois.
 
 ## Checked
-- Prefix ladder, conversions, the common-mistake sum and the worked example (450 kJ − 110 kJ = 340 kJ, two figures justified, symbolic first) recomputed.
-- Sun to Earth in one hour 1361 W/m² · πR² · 3600 s = 6,25·10²⁰ J vs 620 EJ (2023, Energy Institute): the "noin vuoden" option is the only correct one; the "tuhat vuotta" feedback (≈41 days, "noin 40") is right.
-- Chain table 100 → 40 → 38 → 34 MJ: 66 MJ, mistakes 60 and 34 and their feedback right; transfer 360 − 9 − 300 = 51 GJ, rounding to the gigajoule justified; lightning 1,0 GJ : 10 MJ = 100.
-- Figures: Sankey widths 24:72:96 = 200:600:800 to scale; ladder at 33,2 px per decade places 10 MJ, 1,6 GJ (50 l · 32 MJ/l) and 140 TJ (1600 MW · 24 h = 138 TJ) correctly.
-- Sim data: every object's value against its source string (photon 550 nm, AA 2,5 Ah · 1,5 V, U-235 8,2·10¹³ J/kg, Finland 79,8 TWh → 7,9·10¹⁴ J/day, M9 ≈ 2·10¹⁸ J, IAU L☉); filled/ring marking matches the source type.
-- Experiments: initial kohde values exist as select options; E_MJ and E_EJ are in simState; vary key matches the adapter.
-- Every choice item has exactly one correct option, and each distractor's feedback names the actual error.
-- Energy conservation and dispersal into thermal energy stated consistently in theory, summary, misconception, checks and exit ticket; "lämpöenergia" use within the FY2 allowance; no E_k/E_p formulas (scope).
+- Recomputed all numbers in one script: 340 kJ, 600 kJ, 66 MJ, 51 GJ, 100, 7,3, 3,2; sun 1361 W/m2 · pi R2 · 3600 s = 6,25e20 J = 625 EJ vs 620 EJ (2023), 1000 h = 41 d.
+- Joule/omena (0,1 kg · 9,81 · 1 m = 0,98 J), prefix ladder, figure sailyminen widths (24/72/96 = 200/600/800) and tikapuut positions (1,6 GJ, 140 TJ) are to scale.
+- Predictions: exactly one correct option, distractor feedbacks right; experiments isolate "kohde", simState gives E_MJ and E_EJ.
+- Sim values (AA 2,5 Ah·1,5 V = 14 kJ, U-235 8,2e13 J/kg, OL3 138 TJ/vrk, 28 objects) fit lesson; limits stated.
+- Scope: no E_k/E_p expressions, no W=Fs, no chain-efficiency product. Exit ticket, example, ketju table consistent.
+- Hash start = end.
