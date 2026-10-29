@@ -1,4 +1,7 @@
-# Fysiikkalabra
+# Ruukkilabra (Fysiikkalabra)
+
+The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondary physics* (teacher 2026-10-29); the
+folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
 written and reviewed with Claude Code agents, served by GitHub Pages from the committed `site/` folder at

@@ -1,5 +1,5 @@
 {
-  "_about": "Short interface texts of Fysiikkalabra in Finnish, the source language (scripts/i18n.py). A new language: copy this file to lang/<code>.json and translate the values; keep every {{placeholder}}, formula, number and unit as it is.",
+  "_about": "Short interface texts of Ruukkilabra in Finnish, the source language (scripts/i18n.py). A new language: copy this file to lang/<code>.json and translate the values; keep every {{placeholder}}, formula, number and unit as it is.",
   "format": {
     "html_lang": "fi",
     "og_locale": "fi_FI",
@@ -15,13 +15,15 @@
     "Tiivistelmä": "Tiivistelmä"
   },
   "site": {
-    "name": "Fysiikkalabra",
-    "home_aria": "Fysiikkalabra, etusivu",
+    "name": "Ruukkilabra",
+    "home_aria": "Ruukkilabra, etusivu",
+    "subtitle": "Lukion fysiikka",
+    "logo": "ruukkilabra-logo-fi.svg",
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
     "portfolio": "← Portfolio",
     "breadcrumb": "Polku",
-    "footer": "Fysiikkalabra · lukion fysiikka, LOPS 2019",
+    "footer": "Ruukkilabra · lukion fysiikka, LOPS 2019",
     "back_to_course": "← {{course}}-moduuli",
     "back_to_portfolio": "← Takaisin portfolioon",
     "course_type_required": "Pakollinen",
@@ -886,7 +888,7 @@
     "rubric": "Pisteytys ja itsearviointi",
     "rubric_lead": "Vertaa ratkaisuasi mallivastaukseen ja valitse jokaisesta kohdasta pisteet, jotka ratkaisusi mielestäsi ansaitsee. Osapisteet ovat mahdollisia, ja myös muu fysikaalisesti oikea ratkaisutapa kelpaa.",
     "own_rubric_lead": "Valitse jokaisesta kohdasta pisteet, jotka raporttisi mielestäsi ansaitsee.",
-    "rubric_note": "Pisteet ovat oma arviosi, eivät tarkistettu arvosana. Pisteytys on Fysiikkalabran oma, ylioppilaskokeen hyvän vastauksen piirteiden mukaan laadittu, eikä se ole YTL:n virallinen.",
+    "rubric_note": "Pisteet ovat oma arviosi, eivät tarkistettu arvosana. Pisteytys on Ruukkilabran oma, ylioppilaskokeen hyvän vastauksen piirteiden mukaan laadittu, eikä se ole YTL:n virallinen.",
     "criterion_points": "Pisteet kohdasta: {{text}}",
     "mistakes": "Yleisiä virheitä",
     "also": "Hyväksytään myös",
