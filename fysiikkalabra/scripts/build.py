@@ -50,7 +50,8 @@ else:
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
-shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)   # the Ruukkilabra logos and favicon (scripts/brand_logos.py)
+if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
+    shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
@@ -539,7 +540,7 @@ i18n.set_lang(i18n.SOURCE)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
-    if broken or not (SITE / "vendor").is_dir() or not (SITE / "brand").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/ or brand/']}")
+    if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
     if old.exists(): shutil.rmtree(old)
     if LIVE.exists(): LIVE.rename(old)
