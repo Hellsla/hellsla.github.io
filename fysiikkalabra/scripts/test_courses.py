@@ -151,7 +151,7 @@ site = T / "site"
 expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-1.html").is_file() and all((site / p).is_file() for p in ("sims/fy4/fy4-1/sim.js", "sims/fy4/fy4-1/sim.css", "pics/fy4/kalteva-taso.svg")), out)
 expect("FY4.html links fy4-1 and lists the other FY4 slots as coming; FY3.html does not list it",
        'href="fy4-1.html"' in (site / "FY4.html").read_text() and "tulossa" in (site / "FY4.html").read_text() and "fy4-1" not in (site / "FY3.html").read_text())
-nolang = lambda f: re.sub(r'<a class="lang" [^>]*>[^<]*</a>|<nav class="chapter-nav".*?</nav>', "", f.read_text(), flags=re.S)   # the real site has its translations and neighbouring chapters to link to
+nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>', "", f.read_text(), flags=re.S)   # the real site has its translations and neighbouring chapters to link to
 expect("fy3-2 is built exactly as the real site has it", nolang(site / "fy3-2.html") == nolang(SRC / "site/fy3-2.html") and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
 code, out = run("check_choices.py", "--all", "--site")
 expect("answer positions are checked per course on the site", code == 0 and "FY4:" in out and "FY3:" in out, out)

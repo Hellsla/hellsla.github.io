@@ -21,15 +21,16 @@
     "logo": "ruukkilabra-logo-en.svg",
     "main_menu": "Main menu",
     "modules": "Modules",
-    "portfolio": "← Portfolio",
     "breadcrumb": "Path",
     "footer": "Ruukkilabra · upper secondary school physics, LOPS 2019",
     "back_to_course": "← {{course}} module",
     "back_to_portfolio": "← Back to the portfolio",
     "course_type_required": "Compulsory",
     "course_type_optional": "Optional",
-    "lessons_ready": "{{done}} / {{n}} lessons ready",
-    "lessons_planned": "{{n}} lessons planned",
+    "lessons_planned": {
+      "one": "{{n}} lesson planned",
+      "other": "{{n}} lessons planned"
+    },
     "lesson_prototype": "prototype",
     "lesson_coming": "coming soon",
     "course_goals": "Module goals",
@@ -37,10 +38,7 @@
     "course_lessons": "Lessons",
     "course_title": "{{code}} · {{title}}",
     "course_description": "{{code}} {{title}}: lessons, simulations and exercises for an upper secondary physics module. {{done}} / {{n}} lessons ready.",
-    "latest_lesson": "Latest lesson:",
-    "home_eyebrow": "Physics · LOPS 2019 · Simulations",
-    "home_lead": "Upper secondary physics through investigation and experiment. Make a prediction, investigate the phenomenon with a simulation, build an explanation and test what you can do. The lessons follow the Finnish National Core Curriculum for Upper Secondary Schools 2019 (LOPS).",
-    "home_count": "{{built}} / {{total}} lessons ready",
+    "home_lead": "Make a prediction, investigate the phenomenon with a simulation or data, and build the explanation yourself.",
     "home_description": "Upper secondary physics through investigation: predictions, simulations, explanations and exercises, LOPS 2019 modules FY1–FY8.",
     "credits": "{{n}} cr",
     "home_tagline": "Investigate. Understand. Apply.",
@@ -60,10 +58,52 @@
       "Do the core exercises; the others are extra practice, and level 3 is challenging application.",
       "At the end of a chapter, go on to Next chapter."
     ],
-    "home_count_note": "Complete modules {{complete}}, modules in progress {{partial}} and planned {{planned}}. The number counts published lessons, not your own progress. New lessons are published as they are completed.",
-    "module_complete": "complete",
-    "module_partial": "in progress",
-    "module_planned": "planned"
+    "language": "Language",
+    "language_choose": "Choose a language",
+    "lang_unavailable": "page not available yet, goes to the module page",
+    "unavailable_note": "<strong>{{title}}</strong> is not available in this language yet. Below you can see the lessons of this module and which of them you can already open.",
+    "home_title": "Upper secondary physics through investigation.",
+    "choose_module": "Choose a module",
+    "try_lesson": "Try a lesson",
+    "modules_lead": "Physics modules of the Finnish core curriculum (LOPS 2019). The numbers show published lessons, not your own progress.",
+    "upcoming": "Coming soon",
+    "upcoming_lead": "No lessons of these modules have been published yet. A module's page shows its planned lessons and goals.",
+    "open_module": "Open module →",
+    "open_lesson": "Open lesson →",
+    "featured_heading": "Sample lesson",
+    "featured_lead": "The chapter moves from a question and a prediction to an investigation, the theory and a check of what you can do.",
+    "lessons_all": {
+      "one": "{{n}} lesson",
+      "other": "{{n}} lessons"
+    },
+    "lessons_available": {
+      "one": "{{n}} lesson available",
+      "other": "{{n}} lessons available"
+    },
+    "lessons_coming": {
+      "one": "{{n}} more coming",
+      "other": "{{n}} more coming"
+    },
+    "course_goals_show": {
+      "one": "Show the goal",
+      "other": "Show all {{n}} goals"
+    },
+    "home_start_short": [
+      "Choose a module and start from its first chapter, or from the chapter your class is working on.",
+      "Predict first, and open the answers only after you have tried yourself.",
+      "At the end of a chapter, go on to Next chapter."
+    ],
+    "home_start_more": "More study tips",
+    "module_question": {
+      "FY1": "How does physics measure and explain the world, from protons to galaxies?",
+      "FY2": "Where does our energy come from, and how does using it affect the environment?",
+      "FY3": "How is energy transferred as heat and work, and how does it change matter?",
+      "FY4": "How do forces change the motion of an object?",
+      "FY5": "Why do objects rotate and oscillate, and how do waves travel?",
+      "FY6": "How does electric current flow in a circuit and transfer energy?",
+      "FY7": "How are electricity and magnetism linked, and what is light?",
+      "FY8": "Why is the energy of an atom quantised, and where does radiation come from?"
+    }
   },
   "lesson": {
     "steps_nav": "Steps of the lesson",
@@ -89,7 +129,10 @@
     "example_next": "Show the next step",
     "example_all": "Show all",
     "level": "Level {{n}}",
-    "level_count": "{{n}} exercises",
+    "level_count": {
+      "one": "{{n}} exercise",
+      "other": "{{n}} exercises"
+    },
     "answer_for": "Answer to exercise {{id}}",
     "check": "Check",
     "answer": "Answer",
@@ -877,7 +920,10 @@
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
     "points": "{{n}} p",
-    "task_points": "{{n}} points",
+    "task_points": {
+      "one": "{{n}} point",
+      "other": "{{n}} points"
+    },
     "reveal": "Show the model answer and marking",
     "reveal_hint": "Open only when your own solution is ready.",
     "own_reveal": "Open the assessment criteria",
@@ -892,7 +938,7 @@
     "practise_more": "Practise more:",
     "practise_link": "{{competency}}, chapter {{chapter}}",
     "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
-    "course_count": "{{n}} tasks · {{points}} points",
+    "course_count": "{{tasks}} · {{points}}",
     "kind_own": "own work",
     "step_names": {
       "Annettu": "Given",
@@ -907,6 +953,10 @@
       "Mallivastaus": "Model answer",
       "Kuvaaja": "Graph",
       "Kuvaajan lukeminen": "Reading the graph"
+    },
+    "tasks_n": {
+      "one": "{{n}} task",
+      "other": "{{n}} tasks"
     }
   },
   "competency": {

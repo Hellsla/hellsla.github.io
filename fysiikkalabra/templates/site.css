@@ -57,23 +57,39 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
 a{color:var(--accent-deep);text-underline-offset:.18em}
-a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
 .page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px}
 main.reading{max-width:var(--measure);margin-inline:auto;container:content / inline-size;font-size:var(--fs-body);line-height:var(--lh)}
 main p,main ul,main ol{margin:0 0 1em}main li>p{margin:0 0 .5em}
 @media (min-width:64rem){main.lesson{max-width:72rem;margin-inline:auto}}   /* from a small laptop up: room for a figure or the simulation (its 600 px canvas at native size from 1280 px) beside the reading column */
 
-/* header */
-header.top{display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;padding-bottom:12px;margin-bottom:8px;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-height:40px}
+/* header (teacher 2026-10-29): the compact brand, the modules link and the language control; Portfolio is in the footer.
+   One row at every width: the modules link gives way on a narrow phone (the brand and the breadcrumb lead to it there),
+   every target is at least 44 px. */
+header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 12px;padding-bottom:10px;margin-bottom:8px;border-bottom:1px solid var(--line);position:relative;z-index:40}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-height:44px;min-width:0;border-radius:8px}
 .brand-mark{width:40px;height:40px;flex:none}
-.brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green)}
+.brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green);overflow-wrap:break-word}
 .brand-name small{font:700 .68rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
-header.top nav{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
-header.top nav a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;font-size:var(--fs-small);color:var(--ink-2);text-decoration:none;border-radius:999px}
-header.top nav a:hover{color:var(--ink);background:var(--bg-tint)}
-header.top nav a.pill{background:var(--accent-deep);color:#fff;font-weight:700;margin-left:4px}
-header.top nav a.pill:hover{background:var(--accent)}
+header.top nav{display:flex;align-items:center;gap:4px;flex:none;margin-left:auto}
+header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
+header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
+header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
+@media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
+.lang-menu{position:relative;margin:0}
+.lang-menu>summary{gap:.4rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);list-style:none}
+.lang-menu>summary::-webkit-details-marker{display:none}
+.lang-menu>summary::before,.lang-menu[open]>summary::before{content:none;display:none}
+.lang-menu>summary::after{content:"";width:.45rem;height:.45rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);flex:none}
+.lang-menu[open]>summary::after{transform:translateY(2px) rotate(-135deg)}
+.lang-list{position:absolute;right:0;top:calc(100% + 6px);z-index:50;list-style:none;margin:0;padding:.35rem;min-width:13.5rem;max-width:min(18rem,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 28px rgba(20,23,30,.12)}
+.lang-list li{margin:0}
+.lang-list a.lang{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:8px;color:var(--ink);font:600 var(--fs-ui) var(--sans);text-decoration:none}
+.lang-list a.lang:hover{background:var(--bg-tint);color:var(--accent-deep)}
+.lang-list a.lang:active{background:var(--line)}
+.lang-note{display:block;padding:0 .75rem .45rem;margin-top:-.3rem;font-size:.8125rem;line-height:1.35;color:var(--ink-2)}
 .crumbs{font-size:var(--fs-small);color:var(--ink-2);margin:.4rem 0 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:0 .25rem}
 .crumbs a{color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:40px;padding:0 .3rem;margin:0 -.3rem;text-decoration:none}
 
@@ -82,9 +98,6 @@ h1,h2,h3,h4{color:var(--ink);line-height:var(--lh-head)}
 h1{font:500 var(--fs-title)/1.12 var(--serif);letter-spacing:-.02em;margin:.2rem 0 1rem}
 h2{font:700 var(--fs-h2)/var(--lh-head) var(--sans);letter-spacing:-.01em;margin:2.4rem 0 .75rem}
 h3{font:700 var(--fs-h3)/var(--lh-head) var(--sans);margin:1.6rem 0 .5rem}
-.hero h1{font-size:clamp(2.2rem,5vw,2.9rem)}
-.hero h1.logo{margin:.2rem 0 1.1rem;line-height:0}
-.hero h1.logo img{display:block;height:clamp(64px,13vw,104px);width:auto;max-width:100%}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 var(--fs-small) var(--sans);color:var(--accent-deep);letter-spacing:.08em;text-transform:uppercase;margin:.4rem 0 .6rem}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
 .lead{font:400 1.2rem/1.5 var(--serif);color:var(--ink-2);max-width:36rem}
@@ -100,35 +113,108 @@ li{margin:.4rem 0}
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;background:#f6f1e6}   /* the chapter's opening illustration under the Miksi question (figlib Fig hero) */
 
-/* front page and module pages */
-.hero{padding:1.6rem 0 .6rem}
-.latest{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;margin:.4rem 0 1.2rem;font-size:var(--fs-ui)}
-.tagline{font:500 clamp(1.35rem,3.2vw,1.7rem)/1.25 var(--serif);color:var(--accent-deep);margin:-.4rem 0 .6rem}
-/* the learning model (teacher 2026-10-29): the six stages in order, a numbered row that wraps, then a short start guide */
-.path h2,.start h2{margin-top:1.6rem}
-.path-steps{list-style:none;counter-reset:step;padding:0;margin:.8rem 0;display:grid;grid-template-columns:1fr;gap:.6rem}
-@media (min-width:40rem){.path-steps{grid-template-columns:repeat(2,1fr)}}@media (min-width:64rem){.path-steps{grid-template-columns:repeat(3,1fr)}}
-.path-steps li{counter-increment:step;margin:0;display:flex;flex-direction:column;gap:.15rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem .8rem;font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
-.path-steps strong{font:700 var(--fs-h3)/1.25 var(--sans);color:var(--ink)}
-.path-steps strong::before{content:counter(step) ". ";color:var(--accent-deep)}
-.start ul{max-width:44rem;margin:.6rem 0 0;padding-left:1.2rem;font-size:var(--fs-ui);line-height:1.5}
-.start li{margin:.3rem 0}.start li::marker{color:var(--accent)}
-.card .status{display:inline-block;margin-left:.35rem;padding:.05rem .5rem;border-radius:999px;font-size:.75rem;font-weight:700;border:1px solid var(--line);color:var(--ink-2)}
-.card .status-complete{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
-.card .status-partial{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-deep)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:.9rem;margin:1rem 0}
-.card{display:flex;flex-direction:column;gap:.3rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--ink);background:var(--surface);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 22px rgba(20,23,30,.08)}
-.card.live{border-color:var(--accent)}
-.card .code{align-self:flex-start;font:700 .75rem var(--sans);letter-spacing:.08em;color:var(--accent-deep);background:var(--accent-soft);border-radius:999px;padding:.15rem .65rem}
-.card .ctitle{font:500 1.2rem/1.25 var(--serif);margin-top:.3rem}
-.card .meta,.card .state{font-size:var(--fs-small);color:var(--ink-2)}
-.card .bar{display:block;height:6px;background:var(--bg-tint);border-radius:3px;overflow:hidden;margin-top:.35rem}
-.card .bar span{display:block;height:100%;background:var(--accent)}
-ol.lessons{padding-left:1.4rem}ol.lessons li{padding:.15rem 0}
-ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.live a{font-weight:600}
+/* front page (teacher 2026-10-29, "editorial textbook"): a headline and two actions, then the module catalogue as
+   lightly divided rows (one link each, stretched over its row), the upcoming modules in a compact list, one sample
+   lesson, the six stages in a compact numbered row and a short start guide. Neutral rules, no cards and no bars:
+   the numbers are what is published, never a student's progress. Green is the brand and the interaction colour,
+   copper only a thin accent (its text shade --copper-ink keeps 5:1 on the cream). */
+:root{--copper:#b85f2a;--copper-ink:#a3521f}
+main.home{max-width:68rem;margin-inline:0;font-size:var(--fs-body);line-height:var(--lh)}
+main.home section{margin:0}
+main.home,main.reading:not(.lesson){hyphens:auto;overflow-wrap:break-word}   /* long Finnish compounds wrap with enlarged text instead of running off a phone */
+main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 .4rem}
+.section-lead{font-size:var(--fs-ui);color:var(--ink-2);max-width:40rem;margin:0 0 1rem}
+.home-intro{padding:clamp(1.4rem,4vw,3.2rem) 0 clamp(1.6rem,4vw,2.6rem);max-width:44rem}
+.motto{display:flex;align-items:center;gap:.7rem;margin:0 0 .7rem;font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper-ink)}
+.motto::before{content:"";width:28px;height:2px;background:var(--copper);flex:none}
+.home-intro h1{font:500 clamp(2.1rem,1.5rem + 3vw,3.5rem)/1.06 var(--serif);letter-spacing:-.025em;margin:0 0 .8rem;color:var(--ink)}
+.home-intro .lead{font:400 clamp(1.125rem,1.05rem + .3vw,1.3rem)/1.5 var(--sans);color:var(--ink-2);max-width:36rem;margin:0 0 1.4rem}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.4rem;margin:0}
+a.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 1rem var(--sans);text-decoration:none;border:2px solid var(--accent-deep)}
+a.button:hover{background:var(--accent)}a.button:active{background:#0f3d21}
+a.quiet-link{display:inline-flex;align-items:center;min-height:44px;font:600 1rem var(--sans);color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25em}
+a.quiet-link::after{content:"→";margin-left:.4em;text-decoration:none;display:inline-block}
+a.quiet-link:hover{text-decoration-thickness:2px}
+.catalogue{padding-top:.4rem}
+.mod-list,.up-list{list-style:none;margin:0;padding:0}
+.mod-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);column-gap:.9rem;row-gap:.3rem;margin:0;padding:1.15rem .5rem 1.2rem;border-top:1px solid var(--line)}
+.mod-row:last-child{border-bottom:1px solid var(--line)}
+.mod-row:hover{background:color-mix(in srgb,var(--bg-tint) 60%,transparent)}
+.mod-row:active{background:var(--bg-tint)}
+.mod-code{font:700 var(--fs-small)/1.5 var(--sans);letter-spacing:.06em;color:var(--accent-deep)}
+.mod-main{min-width:0}
+.mod-title{font:500 clamp(1.3rem,1.2rem + .4vw,1.5rem)/1.2 var(--serif);margin:0 0 .25rem;letter-spacing:-.01em}
+.mod-link{color:var(--ink);text-decoration:none}
+.mod-link::after{content:"";position:absolute;inset:0;z-index:1}   /* the whole row is the link's target */
+.mod-row:hover .mod-link{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px}
+.mod-q{margin:0;font-size:1rem;line-height:1.5;color:var(--ink-2);max-width:34rem}
+.mod-meta{display:flex;flex-wrap:wrap;gap:.1rem .9rem;margin:.15rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.mod-avail{font-weight:700;color:var(--ink)}
+.mod-go{justify-self:start;font:700 var(--fs-ui)/1.4 var(--sans);color:var(--accent-deep);margin-top:.15rem}
+.mod-row:hover .mod-go{text-decoration:underline}
+@supports selector(:has(*)){.mod-link:focus-visible{outline:none}.mod-row:has(.mod-link:focus-visible),.featured-row:has(.featured-link:focus-visible){outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}}
+@media (min-width:64rem){
+  .mod-row{grid-template-columns:4rem minmax(0,1fr) 13rem 9rem;align-items:baseline;padding:1.3rem .75rem}
+  .mod-meta{grid-column:3;flex-direction:column;margin:0}
+  .mod-go{grid-column:4;justify-self:end;margin:0}
+}
+.upcoming{margin-top:2.8rem!important}
+.upcoming h2{font-size:1.375rem!important}
+.up-list{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+@media (min-width:64rem){.up-list{grid-template-columns:1fr 1fr;column-gap:2rem}}
+.up-list li{margin:0;display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding:.15rem .25rem .55rem}
+@media (min-width:40rem){.up-list li{flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 .8rem;padding:.2rem .25rem}}
+.up-list a{display:flex;align-items:baseline;gap:.6rem;max-width:100%;min-height:44px;padding:.55rem 0 .2rem;color:var(--ink);text-decoration:none;font-size:1rem}
+.up-list a .mod-code{line-height:1.5;flex:none}.up-list .up-title{min-width:0}
+.up-list a:hover .up-title{text-decoration:underline;color:var(--accent-deep)}
+.up-meta{font-size:var(--fs-small);color:var(--ink-2)}
+.featured{margin-top:3.6rem!important}
+.featured-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem 2.2rem;margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+@media (min-width:48rem){.featured-row{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start}}
+.featured-fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#f6f1e6}
+.featured-text h3{font:500 clamp(1.35rem,1.25rem + .4vw,1.6rem)/1.2 var(--serif);margin:.2rem 0 .6rem}
+.featured-link{color:var(--ink);text-decoration:none}
+.featured-link::after{content:"";position:absolute;inset:0;z-index:1}
+.featured-row:hover .featured-link{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px}
+.featured-meta{margin:0;font:700 var(--fs-small)/1.4 var(--sans);letter-spacing:.04em;color:var(--accent-deep)}
+.featured-q{font:400 1.1875rem/1.45 var(--serif);margin:0 0 .7rem;padding-left:.9rem;border-left:2px solid var(--copper)}
+.featured-lead{font-size:1rem;color:var(--ink-2);margin:0 0 .8rem}
+.featured-go{font:700 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.featured-row:hover .featured-go{text-decoration:underline}
+/* the learning model: the six stage names the lessons use, a compact numbered sequence on thin rules */
+.path{margin-top:3.6rem!important}
+.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
+.path-steps li::before{content:counter(step);grid-row:span 2;font:600 1.25rem/1.2 var(--serif);color:var(--copper-ink)}
+.path-steps strong{font:700 1rem/1.35 var(--sans);color:var(--ink)}
+@media (min-width:48rem){.path-steps{grid-template-columns:repeat(3,1fr);column-gap:1.6rem}}
+@media (min-width:72rem){.path-steps{grid-template-columns:repeat(6,1fr);column-gap:1.2rem;border-top:0}.path-steps li{display:flex;flex-direction:column;gap:.15rem;border-bottom:0;border-top:2px solid var(--line);padding:.7rem 0 0}.path-steps li::before{margin-bottom:.1rem}}
+.start{margin-top:3rem!important;max-width:44rem}
+.start-steps{margin:.8rem 0 .6rem;padding-left:1.4rem;font-size:1rem;line-height:1.55}
+.start-steps li{margin:.35rem 0}.start-steps li::marker{color:var(--accent-deep);font-weight:700}
+details.more-tips{margin:.4rem 0 0;border-top:1px solid var(--line-2)}
+details.more-tips>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+details.more-tips ul{margin:.3rem 0 0;padding-left:1.3rem;font-size:1rem;line-height:1.55;color:var(--ink-2)}
+details.more-tips li{margin:.35rem 0}
+/* module page: the lessons first (available ones are links, the rest marked coming), then Sovella, then the goals
+   behind one disclosure; a note at #unavailable-<id> is shown when a language link from a page not published in
+   this language lands here */
+.mod-status{font:600 var(--fs-ui) var(--sans);color:var(--ink);margin:-.2rem 0 1.2rem}
+p.unavailable{display:none;margin:0 0 1.2rem;padding:.75rem 1rem;border:1px solid var(--line);border-left:4px solid var(--copper);border-radius:10px;background:var(--surface);font-size:var(--fs-ui);line-height:1.5}
+p.unavailable:target{display:block}p.unavailable:focus{outline:none}p.unavailable:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+ol.lessons{list-style:none;padding:0;margin:.6rem 0 1.4rem;border-top:1px solid var(--line)}
+ol.lessons li{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6rem;margin:0;padding:.15rem 0;border-bottom:1px solid var(--line-2)}
+ol.lessons .l-num{flex:0 0 1.8rem;text-align:right;font:600 var(--fs-small)/1 var(--sans);color:var(--ink-2);font-variant-numeric:tabular-nums}
+ol.lessons li.live a{display:inline-flex;align-items:center;min-height:44px;flex:1 1 9rem;min-width:0;hyphens:auto;overflow-wrap:break-word;padding:.35rem 0;font-weight:700;color:var(--accent-deep);text-decoration:none}
+ol.lessons li.live a::after{content:"→";margin-left:.5em;flex:none}
+ol.lessons li.live a:hover{text-decoration:underline}
+ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.soon>span:not(.l-num):not(.tag){flex:1 1 9rem;min-width:0;padding:.6rem 0;hyphens:auto;overflow-wrap:break-word}
+ol.lessons li>.tag{margin-left:auto}
+ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:0 .55rem;line-height:1.6}
+ul.practice-link{padding-left:0;list-style:none}ul.practice-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+details.goals>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+details.goals>p{margin:.6rem 0 .3rem}
 .count{color:var(--ink-2);font-size:var(--fs-small);font-weight:400}
-p.count{font-size:var(--fs-ui);max-width:44rem}p.count strong{color:var(--ink);font-weight:700}
 .back{margin-top:2rem}
 
 /* boxes that open: one summary style, a level-3 element in 15 px */
@@ -185,7 +271,7 @@ details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--li
 details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
 
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
-footer.bottom a{display:inline-flex;align-items:center;min-height:40px}
+footer.bottom a{display:inline-flex;align-items:center;min-height:44px}
 .crumbs:empty{display:none}
 
 /* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */

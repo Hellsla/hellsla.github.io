@@ -342,7 +342,7 @@ def render(code, lang, md, solution_html, title):
             extra = "".join(f'<h3>{T("practice.mistakes" if h == "Yleisiä virheitä" else "practice.also")}</h3>{md(b)}' for h, b in s["extra"].items())
             reveal = (f'<details class="reveal"><summary>{T("practice.reveal")} <span class="reveal-hint">{T("practice.reveal_hint")}</span></summary>'
                       f'<div class="reveal-body"><h3>{T("practice.solution")}</h3>{sol}{extra}<h3>{T("practice.rubric")}</h3>{rubric_html(task, md)}</div></details>')
-        pts = T("practice.task_points", n=total(task)) if not own else T("practice.kind_own")
+        pts = T.count("practice.task_points", total(task)) if not own else T("practice.kind_own")
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
                  f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{reveal}</div></section>')
         toc += (f'<a href="#{tid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{esc(task["title"])}</span></a>')

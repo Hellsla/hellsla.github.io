@@ -142,8 +142,9 @@ pictures, templates and scripts are shared by every language.
   reviews pass, like a Finnish lesson.
 - **Build**: Finnish stays at `site/`; every other language is built into `site/<lang>/` with the same page names,
   sharing the style, scripts, simulations and pictures of `site/`. While there is one language the pages have no
-  language menu; with two or more, each page links to the same page in the other languages (to their front page
-  when a lesson is not translated yet).
+  language menu; with two or more, each page has a language control linking to the same page in the other languages;
+  when that language has not published the page, the link goes to its module page, whose note `#unavailable-<id>`
+  says so (teacher 2026-10-29; `scripts/test_home.py`).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 

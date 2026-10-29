@@ -57,6 +57,12 @@ class T:
             if self.lang == SOURCE: raise
             v = lookup(strings(SOURCE), key)
         return fill(v, vals) if isinstance(v, str) else v
+    def count(self, key, n, **vals):
+        """A text with a number: the value is {"one": "{{n}} oppitunti", "other": "{{n}} oppituntia"}, so 1 never reads
+        "1 oppituntia" or "1 lessons". t.count("site.lessons_n", 8) -> "8 oppituntia"."""
+        v = self(key)
+        if isinstance(v, dict): v = v["one" if n == 1 else "other"]
+        return fill(v, dict(vals, n=n))
     def has(self, key):
         try: lookup(strings(SOURCE), key); return True
         except KeyError: return False

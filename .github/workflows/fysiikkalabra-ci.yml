@@ -44,6 +44,8 @@ jobs:
         run: python scripts/test_fbd.py
       - name: every lesson has Edellinen luku / Seuraava luku in the teaching order (teacher 2026-10-29)
         run: python scripts/test_chapter_nav.py site
+      - name: front page and module pages list what each language published, one link per row, language links land on a note (teacher 2026-10-29)
+        run: python scripts/test_home.py
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - run: python scripts/reviews.py verify
