@@ -11,11 +11,14 @@
 // at the rear bottom corner); no point-particle diagram (Finnish upper secondary). Every canvas text goes through lab(),
 // which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const g = 9.81, M = 10, RUNUP = 0.5, LANE = 12, S = 0.7;            // m/s², kg, m, m, px per newton in the diagram
+  const g = 9.81, M = 10, RUNUP = 0.5, LANE = 12, S0 = 0.7;           // m/s², kg, m, m, px per newton in the diagram (wide)
   const FRICTION = { matto: 40, puu: 20, jaa: 10, kitkaton: 0 };     // N, model values of the sliding friction
   const FLOOR = 132, X0 = 46, PXM = 42;                               // situation: floor level, x = −0,5 m at X0, px per metre
-  const GR = { x0: 56, y0: 362, x1: 300, y1: 224, tmax: 6, vmax: 3.5 }; // the (t, v) graph's plot area and ranges
-  const D = { x: 482, y: 300, w: 72, h: 44 };                         // force diagram: the box (centre, size)
+  const GRW = { x0: 56, y0: 362, x1: 300, y1: 224, tmax: 6, vmax: 3.5 }; // the (t, v) graph's plot area and ranges (wide)
+  const DW = { x: 482, y: 300, w: 72, h: 44 };                         // force diagram: the box (centre, size) (wide)
+  // narrow screens (sim-root < 500 px wide): the three panels stack at full width, 600 x 720
+  const GRN = { x0: 74, y0: 424, x1: 520, y1: 246, tmax: 6, vmax: 3.5 }, DN = { x: 400, y: 600, w: 94, h: 57 };
+  let GR = GRW, D = DW, S = S0, narrow = false, sk = 1, OY = 0;
   const RED = [201, 42, 42], BLUE = [25, 113, 194], INKC = [31, 41, 51], MUTEDC = [107, 116, 128];
   let btn, selPinta, slV0, lV0, selSpeed, readout;
   let x, v, t, tRel, phase, running, trace, result, labels = [];
@@ -89,12 +92,18 @@ new p5((p) => {
       v: tx(v, 2), s: tx(Math.max(0, x), 2), t: tx(tRel, 2) }));
     window.simState = { pinta: P.pinta, v0: P.v0, m: M, F, Fmu, sumFx, G, N: G, v, x, t, tRel, phase, running,
       s: result ? result.s : null, tl: result ? result.tl : null, vl: result ? result.vl : null, labels: null };
-    const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const fh = Math.round(11 * k);
+    const cw = document.getElementById('sim-root').clientWidth || 600;
+    narrow = cw < 500;
+    const k = Math.max(1, 600 / cw);
+    sk = narrow ? k : 1;                                                // strokes grow with the label size on a phone
+    const fh = narrow ? Math.round(14 * k) : Math.round(11 * k);
+    const H = narrow ? 740 : 400;
+    if (p.__H !== H) { p.__H = H; p.resizeCanvas(600, H); setTimeout(() => p.redraw(), 0); return; }   // the resize clears the drawing state: draw again next frame             // sim-embed.js keeps the box 600 wide and sizes it to the page
+    GR = narrow ? GRN : GRW; D = narrow ? DN : DW; S = narrow ? 0.8 : S0;
     labels = [];
     p.background(250);
-    situation(P, fh, k, pushing);
-    graph(fh, k);
+    situation(P, fh, narrow ? 1.2 : k, pushing);
+    graph(fh, narrow ? 1 : k);
     diagram(F, Fmu, G, fh);
     window.simState.labels = labels;
   };
@@ -125,7 +134,7 @@ new p5((p) => {
       p.line(cx + len / 2, yv, cx + len / 2 - 8, yv - 5); p.line(cx + len / 2, yv, cx + len / 2 - 8, yv + 5);
       lab('$\\overline{v}$', Math.min(cx + len / 2 + 6, 590 - fh), yv + fh * 0.36, 'l', fh, BLUE);
     }
-    lab(__('tilannekuva'), 10, 20, 'l', fh, INKC);
+    lab(__('tilannekuva'), 10, narrow ? 12 + fh : 20, 'l', fh, INKC);
   }
   // the surroundings: a room for the mat and the wooden floor, a rink for the ice, an empty grid for the thought experiment
   function backdrop(kind) {
@@ -173,48 +182,50 @@ new p5((p) => {
 
   // --- the (t, v) graph of the run so far ---
   function graph(fh, k) {
-    p.noStroke(); p.fill(255); p.rect(0, 180, 336, 220);
-    p.stroke(220); p.strokeWeight(1); p.line(0, 180, 600, 180); p.line(336, 180, 336, 400);
+    p.noStroke(); p.fill(255); p.rect(0, 180, narrow ? 600 : 336, narrow ? 270 : 220);
+    p.stroke(220); p.strokeWeight(1); p.line(0, 180, 600, 180);
+    if (narrow) p.line(0, 450, 600, 450); else p.line(336, 180, 336, 400);
     const TX = (tt) => GR.x0 + tt / GR.tmax * (GR.x1 - GR.x0), VY = (vv) => GR.y0 - vv / GR.vmax * (GR.y0 - GR.y1);
     p.stroke(227, 220, 203); p.strokeWeight(1);
     for (let i = 1; i <= GR.tmax; i++) p.line(TX(i), GR.y0, TX(i), GR.y1);
     for (let j = 1; j <= 3; j++) p.line(GR.x0, VY(j), GR.x1, VY(j));
-    p.stroke(...INKC); p.strokeWeight(2); p.line(GR.x0, GR.y0, GR.x1 + 14, GR.y0); p.line(GR.x0, GR.y0, GR.x0, GR.y1 - 14);
+    p.stroke(...INKC); p.strokeWeight(2 * sk); p.line(GR.x0, GR.y0, GR.x1 + 14, GR.y0); p.line(GR.x0, GR.y0, GR.x0, GR.y1 - 14);
     p.noStroke(); p.fill(...INKC);
-    p.triangle(GR.x1 + 20, GR.y0, GR.x1 + 10, GR.y0 - 4, GR.x1 + 10, GR.y0 + 4);
-    p.triangle(GR.x0, GR.y1 - 20, GR.x0 - 4, GR.y1 - 10, GR.x0 + 4, GR.y1 - 10);
+    p.triangle(GR.x1 + 20, GR.y0, GR.x1 + 10, GR.y0 - 4 * sk, GR.x1 + 10, GR.y0 + 4 * sk);
+    p.triangle(GR.x0, GR.y1 - 20, GR.x0 - 4 * sk, GR.y1 - 10, GR.x0 + 4 * sk, GR.y1 - 10);
     for (let i = 1; i <= GR.tmax; i++) if (k <= 1.5 || i % 2 === 0) lab(`$${i}$`, TX(i), GR.y0 + 6 + fh, 'c', fh, MUTEDC);
     for (let j = 1; j <= 3; j++) lab(`$${j}$`, GR.x0 - 6, VY(j) + fh * 0.36, 'r', fh, MUTEDC);
     lab('$0$', GR.x0 - 6, GR.y0 + 6 + fh * 0.6, 'r', fh, MUTEDC);
     lab('$v\\ (\\text{m/s})$', GR.x0 + 8, GR.y1 - 14, 'l', fh, INKC);
     lab('$t\\ (\\text{s})$', GR.x1 + 24, GR.y0 - fh * 0.9, 'r', fh, INKC);
-    p.noFill(); p.stroke(...BLUE); p.strokeWeight(3); p.beginShape();
+    p.noFill(); p.stroke(...BLUE); p.strokeWeight(3 * sk); p.beginShape();
     for (const [tt, vv] of trace) { if (tt > GR.tmax) break; p.vertex(TX(tt), VY(vv)); }
     p.endShape();
-    if (t <= GR.tmax) { p.noStroke(); p.fill(...BLUE); p.circle(TX(t), VY(v), 9); }
+    if (t <= GR.tmax) { p.noStroke(); p.fill(...BLUE); p.circle(TX(t), VY(v), 9 * sk); }
   }
 
   // --- the force diagram: the box a plain rectangle; G from the centre, N from the bottom face, the push ending at the
   //     rear side, friction from the rear bottom corner; one scale for every setting ---
   function diagram(F, Fmu, G, fh) {
-    lab(__('voimakuvio'), 348, 214, 'l', fh, INKC);
-    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2); p.rect(D.x - D.w / 2, D.y - D.h / 2, D.w, D.h);
+    if (narrow) { p.noStroke(); p.fill(255); p.rect(0, 450, 600, 290); }
+    lab(__('voimakuvio'), narrow ? 10 : 348, narrow ? 450 + fh * 1.5 : 214, 'l', fh, INKC);
+    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2 * sk); p.rect(D.x - D.w / 2, D.y - D.h / 2, D.w, D.h);
     const left = D.x - D.w / 2, bottom = D.y + D.h / 2;
-    arrow([D.x, D.y], [0, -G], '$\\overline{G}$', [16, 4], fh, 'l');
-    arrow([D.x - 18, bottom], [0, G], '$\\overline{N}$', [-14, -4], fh, 'r');
+    arrow([D.x, D.y], [0, -G], '$\\overline{G}$', [10 * sk, 4], fh, 'l');
+    arrow([D.x - 18, bottom], [0, G], '$\\overline{N}$', [-10 * sk, -4], fh, 'r');
     if (F > 0) {
       const tail = [left - F * S, D.y - 8];
-      arrow(tail, [F, 0], '$\\overline{F}$', [F * S / 2, -14], fh, 'c', true);
+      arrow(tail, [F, 0], '$\\overline{F}$', [F * S / 2, -14 * sk], fh, 'c', true);
     }
     if (Fmu > 0) arrow([left, bottom], [-Fmu, 0], '$\\overline{F}_\\mu$', [0, 0], fh, 'c', false, true);
   }
   // an arrow from `at` along vec (newtons, y up), at least 12 px long so that a small force still shows; the label at
   // the tip plus off (or at its middle for a push, under it for friction)
   function arrow(at, vec, name, off, fh, align, mid, below) {
-    let L = Math.hypot(vec[0], vec[1]) * S; if (L < 0.5) return; L = Math.max(L, 12);
+    let L = Math.hypot(vec[0], vec[1]) * S; if (L < 0.5) return; L = Math.max(L, 12 * sk);
     const ux = vec[0] / Math.hypot(vec[0], vec[1]), uy = -vec[1] / Math.hypot(vec[0], vec[1]);
-    const x2 = at[0] + ux * L, y2 = at[1] + uy * L, a = Math.atan2(uy, ux), H = Math.min(11, L * 0.6);
-    p.stroke(...RED); p.strokeWeight(3.5); p.line(at[0], at[1], x2 - H * 0.8 * ux, y2 - H * 0.8 * uy);
+    const x2 = at[0] + ux * L, y2 = at[1] + uy * L, a = Math.atan2(uy, ux), H = Math.min(11 * sk, L * 0.6);
+    p.stroke(...RED); p.strokeWeight(3.5 * sk); p.line(at[0], at[1], x2 - H * 0.8 * ux, y2 - H * 0.8 * uy);
     p.noStroke(); p.fill(...RED);
     p.triangle(x2, y2, x2 - H * Math.cos(a - 0.42), y2 - H * Math.sin(a - 0.42), x2 - H * Math.cos(a + 0.42), y2 - H * Math.sin(a + 0.42));
     if (mid) lab(name, at[0] + off[0], at[1] + off[1], 'c', fh, RED);

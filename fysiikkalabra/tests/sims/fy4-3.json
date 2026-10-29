@@ -36,10 +36,10 @@
   "note": "adapter declares pinta and v0 (m/s)"
  },
  {
-  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?740:400) ? 1 : 0; })()",
   "expected": 1,
   "tol": 0,
-  "note": "canvas is 600x400"
+  "note": "canvas is 600x400 on a wide screen, 600x740 (stacked panels) when #sim-root is under 500 px"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'matto');",
