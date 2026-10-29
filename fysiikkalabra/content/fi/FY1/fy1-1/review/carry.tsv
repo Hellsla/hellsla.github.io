@@ -4,3 +4,5 @@ date	reviewer	from	to	base	categories
 2026-10-28	pedagogy	ca26f894b74a6477	aeb2e62b44a9f8b7	fc3aec294e7d	tests-weakened
 2026-10-28	pedagogy	05834f00772d9c82	3453b6f46da44c91	a19ce6e31986	tests-weakened
 2026-10-29	science	3453b6f46da44c91	9e289ba1fbb14553	aff0bfefdeb1	objective-form
+2026-10-29	science	3453b6f46da44c91	f8b99118907ecee9	aff0bfefdeb1	notation,objective-form
+2026-10-29	pedagogy	9e289ba1fbb14553	f8b99118907ecee9	fac0d31585b7	notation

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 053a725bd0d21a9e
+CONTENT-HASH: c596656e13871bae
 
 ## Blocking
 - none
@@ -8,6 +8,4 @@ CONTENT-HASH: 053a725bd0d21a9e
 - none
 
 ## Checked
-- Scope: solutions.md (free-body-diagram lines of the solutions: "as a rectangle", no point model; every figure line).
-- Natural plain Finnish with short sentences and common words, one idea per sentence; terms consistent (free-body diagram / situation diagram; voimakuvio / tilannekuva); the situation-diagram vs force-diagram distinction is clear to a student; figure alt texts read well and match the redrawn figures.
-- `figures.py fy4-5 --lang fi-easy --check` up to date; `check_i18n.py` 0 errors. Synced to Finnish commit 000c8ad0 (push sentence, friction wording, objects drawn as they look, check-3 details, howto checkbox name, L1-05 task and Voimakuvio line, L3-01 colours, new suunnat description); re-checked, no problems.
+- Delta (categories illustration, notation; base aa23438): only the 11 "Free-body diagram" lines of solutions.md changed, \mathbf -> \overline for G, N, F, T, v, a, F_mu, F_b; no number, step, answer or diagram description changed. No \mathbf left; the notation matches the lesson and the redrawn figures. The diagram still comes before any equation in each solution.
