@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kärryn nopeus on $-3{,}0\\,\\text{m/s}$ ja kiihtyvyys $+1{,}0\\,\\text{m/s}^2$. Kasvaako vai pieneneekö kärryn vauhti? Perustele.",
+    "a": "Vauhti pienenee. Nopeus ja kiihtyvyys ovat vastakkaissuuntaiset, joten nopeus muuttuu joka sekunti $+1{,}0\\,\\text{m/s}$ kohti nollaa: $-3{,}0\\,\\text{m/s}$, $-2{,}0\\,\\text{m/s}$, $-1{,}0\\,\\text{m/s}$. Positiivinen kiihtyvyys ei siis aina tarkoita kiihtymistä."
+  },
+  {
+    "q": "Raskas teräskuula ja kevyt puukuula pudotetaan yhtä aikaa samalta korkeudelta. Ilmanvastus on pieni. Kumpi osuu maahan ensin?",
+    "a": "Ne osuvat maahan yhtä aikaa. Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä $g = 9{,}81\\,\\text{m/s}^2$ massasta riippumatta, joten niiden nopeudet ja paikat ovat joka hetki samat."
+  },
+  {
+    "q": "Kärryn $(t,x)$-kuvaaja on ylöspäin kaartuva käyrä. Miten kuvaajasta luetaan kärryn nopeus hetkellä $t = 2{,}0\\,\\text{s}$?",
+    "a": "Piirretään käyrälle tangentti kohtaan $t = 2{,}0\\,\\text{s}$ eli suora, joka sivuaa käyrää siinä pisteessä. Tangentilta valitaan kaksi kaukana toisistaan olevaa pistettä, ja hetkellinen nopeus on niiden paikan muutos jaettuna ajan muutoksella, $v = \\dfrac{\\Delta x}{\\Delta t}$."
+  }
+]

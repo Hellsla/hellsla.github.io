@@ -1,0 +1,455 @@
+{
+  "version": 1,
+  "contribution": "Kiihtyvyys $a = \\Delta v / \\Delta t$ nopeuden muutoksena ja sen etumerkki, tasaisesti kiihtyvän liikkeen $(t,v)$-kuvaaja (kulmakerroin kiihtyvyys, pinta-ala siirtymä), $(t,x)$-käyrän tangentti hetkellisenä nopeutena, yhtälöt $v = v_0 + at$ ja $x = x_0 + v_0 t + \\tfrac12 at^2$ toisen asteen yhtälöineen sekä putoamiskiihtyvyyden määrittäminen polynomisovituksella.",
+  "learn": [
+    "selittämään, mitä kiihtyvyys kertoo nopeuden muutoksesta, ja tulkitsemaan sen etumerkin.",
+    "laskemaan tasaisesti kiihtyvän liikkeen nopeuden, paikan ja ajan sekä lukemaan niitä $(t,v)$- ja $(t,x)$-kuvaajista.",
+    "määrittämään putoamiskiihtyvyyden sovittamalla mittauspisteisiin toisen asteen polynomin."
+  ],
+  "prior": [
+    "Nopeus on paikan muutos jaettuna ajan muutoksella, ja $(t,x)$-kuvaajan kulmakerroin on nopeus (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
+    "Vapaasti putoavan kappaleen nopeus kasvaa joka sekunti noin $9{,}81\\,\\text{m/s}$ (luku *Putoamiskiihtyvyys*)",
+    "Toisen asteen yhtälön ratkaisukaava matematiikasta"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pudotat kiven kevyen liikenteen sillalta jokeen, ja ystäväsi kuvaa putoamista puhelimella. Videolta näkyy, että ensimmäisen puolen sekunnin aikana kivi putoaa noin $1{,}2\\,\\text{m}$. Kun aikaa on kulunut kokonainen sekunti, kivi on pudonnut jo lähes $5\\,\\text{m}$. Jälkimmäisen puolen sekunnin aikana se siis putoaa paljon pidemmän matkan kuin ensimmäisen, vaikka aikaa kuluu yhtä paljon.",
+      "question": "Mikä kiven liikkeessä muuttuu niin, että se kulkee jokaisessa yhtä pitkässä aikavälissä pidemmän matkan kuin edellisessä?"
+    },
+    {
+      "id": "pr-nopeus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa luvusta Paikka, nopeus ja tasainen liike kuvaajina",
+      "prompt": "Kärryn $(t,x)$-kuvaaja on suora, joka kulkee pisteiden $(0\\,\\text{s};\\, 2{,}0\\,\\text{m})$ ja $(4{,}0\\,\\text{s};\\, 14\\,\\text{m})$ kautta. Mikä on kärryn nopeus?",
+      "choices": [
+        {
+          "text": "$3{,}0\\,\\text{m/s}$",
+          "correct": true,
+          "feedback": "Oikein: nopeus on suoran kulmakerroin $v = \\dfrac{14\\,\\text{m} - 2{,}0\\,\\text{m}}{4{,}0\\,\\text{s} - 0\\,\\text{s}} = 3{,}0\\,\\text{m/s}$. Tässä luvussa sama ajatus siirtyy nopeuteen: kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin."
+        },
+        {
+          "text": "$3{,}5\\,\\text{m/s}$",
+          "feedback": "Jaoit loppupaikan ajalla: $\\dfrac{14\\,\\text{m}}{4{,}0\\,\\text{s}}$. Kärry ei lähde origosta vaan paikasta $2{,}0\\,\\text{m}$, joten nopeus lasketaan paikan muutoksesta $\\Delta x = 14\\,\\text{m} - 2{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "$12\\,\\text{m/s}$",
+          "feedback": "Luku $12\\,\\text{m}$ on paikan muutos $\\Delta x$, ei nopeus. Nopeus saadaan, kun paikan muutos jaetaan siihen kuluneella ajalla $4{,}0\\,\\text{s}$."
+        },
+        {
+          "text": "$0{,}33\\,\\text{m/s}$",
+          "feedback": "Jaoit ajan muutoksen paikan muutoksella. Nopeus on paikan muutos jaettuna ajan muutoksella: $v = \\dfrac{\\Delta x}{\\Delta t}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: matkat peräkkäisinä sekunteina",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Kärry lähtee levosta ja kiihtyy tasaisesti: sen nopeus kasvaa joka sekunti $2{,}0\\,\\text{m/s}$. Kuinka pitkän matkan kärry kulkee kolmannen sekunnin aikana verrattuna ensimmäisen sekunnin matkaan?",
+      "choices": [
+        {
+          "text": "Yhtä pitkän matkan, koska kiihtyvyys pysyy samana koko ajan.",
+          "feedback": "Vakio kiihtyvyys tarkoittaa, että nopeus kasvaa joka sekunti yhtä paljon, ei että matka pysyy samana. Mallin arvoissa kärry kulkee ensimmäisen sekunnin aikana $1{,}0\\,\\text{m}$ ja kolmannen aikana $9{,}0\\,\\text{m} - 4{,}0\\,\\text{m} = 5{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "Kolme kertaa pidemmän matkan, koska kolmas sekunti on kolmas.",
+          "feedback": "Nopeus on kolmannen sekunnin lopussa kolminkertainen, mutta kolmannen sekunnin aikana kärry ei kulje koko ajan sillä nopeudella. Mallin arvoissa ensimmäisen sekunnin matka on $1{,}0\\,\\text{m}$ ja kolmannen $5{,}0\\,\\text{m}$."
+        },
+        {
+          "text": "Viisi kertaa pidemmän matkan, koska keskinopeus on viisinkertainen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: paikat ovat $1{,}0\\,\\text{m}$, $4{,}0\\,\\text{m}$ ja $9{,}0\\,\\text{m}$, joten sekuntien matkat ovat $1{,}0\\,\\text{m}$, $3{,}0\\,\\text{m}$ ja $5{,}0\\,\\text{m}$. Kolmannen sekunnin keskinopeus $5{,}0\\,\\text{m/s}$ on viisinkertainen ensimmäisen sekunnin keskinopeuteen $1{,}0\\,\\text{m/s}$ verrattuna."
+        },
+        {
+          "text": "Yhdeksän kertaa pidemmän matkan, koska matka kasvaa ajan neliössä.",
+          "feedback": "Ajan neliössä kasvaa kokonaismatka lähtöpaikasta: hetkellä $3{,}0\\,\\text{s}$ kärry on paikassa $9{,}0\\,\\text{m}$. Kolmannen sekunnin matka on kuitenkin paikkojen erotus $9{,}0\\,\\text{m} - 4{,}0\\,\\text{m} = 5{,}0\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: hetki, jolloin nopeus on nolla",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Kärry liikkuu alussa positiiviseen suuntaan nopeudella $6{,}0\\,\\text{m/s}$, ja sen kiihtyvyys on koko ajan $-2{,}0\\,\\text{m/s}^2$. Hetkellä $t = 3{,}0\\,\\text{s}$ kärryn nopeus on nolla. Mikä on kiihtyvyys sillä hetkellä, ja mitä sen jälkeen tapahtuu?",
+      "choices": [
+        {
+          "text": "Kiihtyvyys on nolla, koska nopeus on nolla, ja kärry jää paikalleen.",
+          "feedback": "Kiihtyvyys kertoo nopeuden muutoksen, ei nopeutta. Mallin arvoissa nopeus on hetkellä $2{,}0\\,\\text{s}$ $+2{,}0\\,\\text{m/s}$, hetkellä $3{,}0\\,\\text{s}$ nolla ja hetkellä $4{,}0\\,\\text{s}$ $-2{,}0\\,\\text{m/s}$: se muuttuu nollan kohdallakin $-2{,}0\\,\\text{m/s}$ sekunnissa."
+        },
+        {
+          "text": "Kiihtyvyys on yhä $-2{,}0\\,\\text{m/s}^2$, ja kärry lähtee liikkumaan taaksepäin yhä nopeammin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: nopeus on $+2{,}0\\,\\text{m/s}$, $0$ ja $-2{,}0\\,\\text{m/s}$ hetkillä $2{,}0\\,\\text{s}$, $3{,}0\\,\\text{s}$ ja $4{,}0\\,\\text{s}$, ja paikka alkaa pienentyä hetken $3{,}0\\,\\text{s}$ jälkeen. Kiihtyvyys pysyy samana, ja nopeus vaihtaa etumerkkiä."
+        },
+        {
+          "text": "Kiihtyvyys on yhä $-2{,}0\\,\\text{m/s}^2$, mutta kärry jää paikalleen, koska jarrutus päättyy.",
+          "feedback": "Jos kiihtyvyys on yhä $-2{,}0\\,\\text{m/s}^2$, nopeus muuttuu edelleen $-2{,}0\\,\\text{m/s}$ joka sekunti. Mallin arvoissa nopeus on hetkellä $4{,}0\\,\\text{s}$ $-2{,}0\\,\\text{m/s}$, joten kärry ei jää paikalleen."
+        },
+        {
+          "text": "Kiihtyvyys muuttuu positiiviseksi, koska kärry kääntyy ja alkaa liikkua takaisin.",
+          "feedback": "Etumerkkiä vaihtaa nopeus, ei kiihtyvyys. Mallin arvoissa nopeus pienenee tasaisesti $2{,}0\\,\\text{m/s}$:sta $-2{,}0\\,\\text{m/s}$:iin hetkien $2{,}0\\,\\text{s}$ ja $4{,}0\\,\\text{s}$ välillä, joten kiihtyvyys on koko ajan $-2{,}0\\,\\text{m/s}^2$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa kärry ajaa suoraa tietä vakiokiihtyvyydellä, ja sen $(t,x)$- ja $(t,v)$-kuvaajat piirtyvät samalla.",
+      "howto": "Valitse alkunopeus $v_0$ ja kiihtyvyys $a$ liukusäätimillä. Paina *Käynnistä* tai vedä *Hetki $t$* -liukusäädintä. Haaleat kärryt näyttävät paikan kokonaisin sekunnein. Sininen nuoli on nopeus ja oranssi kiihtyvyys, ja nuolen pituus kertoo suuruuden. $(t,x)$-kuvaajan sininen katkoviiva on käyrän tangentti nykyhetkellä, ja $(t,v)$-kuvaajan varjostettu alue ulottuu hetkestä 0 nykyhetkeen.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Kärry lähtee hetkellä $t = 0$ paikasta $x_0 = 0$, ja sen kiihtyvyys pysyy koko ajan samana. Kitkaa, ilmanvastusta ja kärryn kokoa ei huomioida. Tien asteikko ja kuvaajien asteikot mukautuvat valittuun liikkeeseen.",
+      "calc": "Nopeus lasketaan yhtälöstä $v = v_0 + a\\,t$ ja paikka yhtälöstä $x = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Tangentin kulmakerroin on sama kuin lukemien nopeus $v$. $(t,v)$-kuvaajan varjostetun alueen pinta-ala on siirtymä $x - x_0$; aika-akselin alapuolinen osa lasketaan negatiivisena."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: matkat peräkkäisinä sekunteina",
+      "intro": "Testaa ennuste 1. Alkutila asettaa $v_0 = 0$ ja $a = 2{,}0\\,\\text{m/s}^2$ ja lukitsee ne. Paina ensin *Käynnistä* ja katso haaleita kärryjä. Kirjaa sitten paikka ja nopeus hetkillä $t = 1{,}0\\,\\text{s}$, $2{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$ vetämällä *Hetki $t$* -liukusäädintä.",
+      "initial": {
+        "v0": 0,
+        "a": 2,
+        "t": 0
+      },
+      "names": {
+        "t": "t",
+        "v0": "v_0",
+        "a": "a"
+      },
+      "units": {
+        "t": "s",
+        "v0": "m/s",
+        "a": "m/s²"
+      },
+      "locked": [
+        "v0",
+        "a"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "x",
+          "label": "x (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske taulukosta, kuinka pitkän matkan kärry kulkee kolmannen sekunnin aikana eli hetkestä $2{,}0\\,\\text{s}$ hetkeen $3{,}0\\,\\text{s}$. Vastaa metreinä.",
+        "answer": 5.0,
+        "unit": "m",
+        "tolerance": 0.02,
+        "hints": [
+          "Matka yhden sekunnin aikana on paikan muutos sen sekunnin alusta loppuun.",
+          "Käytä sarakkeen $x$ lukuja riveiltä $t = 2{,}0\\,\\text{s}$ ja $t = 3{,}0\\,\\text{s}$: $\\Delta x = x_2 - x_1$.",
+          "$\\Delta x = x(3{,}0\\,\\text{s}) - x(2{,}0\\,\\text{s}) = 9{,}0\\,\\text{m} - 4{,}0\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 9.0,
+            "feedback": "Tämä on kärryn paikka hetkellä $3{,}0\\,\\text{s}$ eli matka lähdöstä. Kolmannen sekunnin matka on paikkojen erotus $x(3{,}0\\,\\text{s}) - x(2{,}0\\,\\text{s})$."
+          },
+          {
+            "value": 6.0,
+            "feedback": "Tämä on nopeus hetkellä $3{,}0\\,\\text{s}$. Kolmannen sekunnin aikana nopeus kasvaa $4{,}0\\,\\text{m/s}$:sta $6{,}0\\,\\text{m/s}$:iin, joten kärry ei kulje koko sekuntia nopeudella $6{,}0\\,\\text{m/s}$. Laske matka paikkojen erotuksena."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta kärryn paikat $x_1 = 4{,}0\\,\\text{m}$ hetkellä $t_1 = 2{,}0\\,\\text{s}$ ja $x_2 = 9{,}0\\,\\text{m}$ hetkellä $t_2 = 3{,}0\\,\\text{s}$; kärry liikkuu koko ajan positiiviseen suuntaan\n\n**Kysytty:** kolmannen sekunnin aikana kuljettu matka $\\Delta x$ metreinä\n\n**Periaate:** Kärry ei käänny, joten sekunnin aikana kuljettu matka on sama kuin paikan muutos eli loppupaikka miinus alkupaikka. Nopeutta ei voi kertoa ajalla, koska nopeus muuttuu sekunnin aikana.\n\n**Kaava:** $\\Delta x = x_2 - x_1$. Kaava on jo ratkaistu kysytyn suureen suhteen.\n\n**Muunnokset:** Molemmat paikat ovat metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta x = 9{,}0\\,\\text{m} - 4{,}0\\,\\text{m} = 5{,}0\\,\\text{m}$\n\n**Vastaus:** $5{,}0\\,\\text{m}$, kaksi merkitsevää numeroa kuten simulaation lukemissa.\n\n**Järkevyys:** Ensimmäisen sekunnin matka on $1{,}0\\,\\text{m} - 0 = 1{,}0\\,\\text{m}$ ja toisen $4{,}0\\,\\text{m} - 1{,}0\\,\\text{m} = 3{,}0\\,\\text{m}$, joten matkat kasvavat suhteessa $1 : 3 : 5$. Kolmannen sekunnin keskinopeus on nopeuksien $4{,}0\\,\\text{m/s}$ ja $6{,}0\\,\\text{m/s}$ keskiarvo $5{,}0\\,\\text{m/s}$, ja se antaa yhdessä sekunnissa saman $5{,}0\\,\\text{m}$."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: jarrutus ja kääntyminen",
+      "intro": "Testaa ennuste 2. Alkutila asettaa $v_0 = 6\\,\\text{m/s}$ ja $a = -2{,}0\\,\\text{m/s}^2$ ja lukitsee ne. Paina *Käynnistä* ja seuraa nuolia. Kirjaa sitten paikka ja nopeus hetkillä $t = 2{,}0\\,\\text{s}$, $3{,}0\\,\\text{s}$ ja $4{,}0\\,\\text{s}$.",
+      "initial": {
+        "v0": 6,
+        "a": -2,
+        "t": 0
+      },
+      "names": {
+        "t": "t",
+        "v0": "v_0",
+        "a": "a"
+      },
+      "units": {
+        "t": "s",
+        "v0": "m/s",
+        "a": "m/s²"
+      },
+      "locked": [
+        "v0",
+        "a"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "x",
+          "label": "x (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukon nopeuksista näkyy hetkien $2{,}0\\,\\text{s}$, $3{,}0\\,\\text{s}$ ja $4{,}0\\,\\text{s}$ välillä?",
+        "choices": [
+          {
+            "text": "Nopeus pienenee joka sekunti $2{,}0\\,\\text{m/s}$, myös nollan ohi negatiiviseksi.",
+            "correct": true,
+            "feedback": "Oikein. Nopeudet $2{,}0\\,\\text{m/s}$, $0$ ja $-2{,}0\\,\\text{m/s}$ muuttuvat joka sekunti $-2{,}0\\,\\text{m/s}$, joten $a = \\dfrac{\\Delta v}{\\Delta t} = -2{,}0\\,\\text{m/s}^2$ myös hetkellä, jolloin $v = 0$. $(t,v)$-kuvaaja on yksi suora, joka leikkaa aika-akselin."
+          },
+          {
+            "text": "Nopeus pienenee nollaan ja pysyy sen jälkeen nollana.",
+            "feedback": "Taulukossa nopeus on hetkellä $4{,}0\\,\\text{s}$ $-2{,}0\\,\\text{m/s}$ eikä nolla. Kärry pysähtyy vain hetkeksi ja lähtee sitten takaisin."
+          },
+          {
+            "text": "Nopeuden suuruus kasvaa hetken $3{,}0\\,\\text{s}$ jälkeen, joten kiihtyvyys muuttuu positiiviseksi.",
+            "feedback": "Vauhti kasvaa, koska nopeus ja kiihtyvyys ovat nyt samansuuntaiset: molemmat ovat negatiivisia. Kiihtyvyys pysyy arvossa $-2{,}0\\,\\text{m/s}^2$, kuten nopeuden muutos $-2{,}0\\,\\text{m/s}$ joka sekunti näyttää."
+          },
+          {
+            "text": "Kärry pysähtyy hetkellä $3{,}0\\,\\text{s}$ origoon, koska nopeus on silloin nolla.",
+            "feedback": "Nopeus on nolla, mutta paikka on taulukon mukaan $9{,}0\\,\\text{m}$ eikä nolla. Kärry palaa origoon vasta hetkellä $6{,}0\\,\\text{s}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös kokeista",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Kirjoita johtopäätös kokeista 1 ja 2: mitä kiihtyvyys kertoo nopeudesta, miksi levosta kiihtyvä kärry kulkee joka sekunti pidemmän matkan ja mitä tapahtuu hetkellä, jolloin nopeus on nolla?",
+      "criteria": [
+        "Kerron, että kiihtyvyys on nopeuden muutos sekunnissa ja että taulukoissa nopeus muuttui joka sekunti saman verran.",
+        "Selitän pidemmät matkat sillä, että myöhemmän sekunnin aikana keskinopeus on suurempi, ja mainitsen matkat $1{,}0\\,\\text{m}$, $3{,}0\\,\\text{m}$ ja $5{,}0\\,\\text{m}$ tai niiden suhteen.",
+        "Kerron, että kokeessa 2 kiihtyvyys oli $-2{,}0\\,\\text{m/s}^2$ myös silloin, kun nopeus oli nolla, ja kärry lähti sen jälkeen takaisin.",
+        "Sanon, että luvut ovat simulaation mallin arvoja."
+      ],
+      "model": "Simulaation mallin arvoissa nopeus muuttui joka sekunti kiihtyvyyden verran: kokeessa 1 se kasvoi $2{,}0\\,\\text{m/s}$ sekunnissa ja kokeessa 2 pieneni $2{,}0\\,\\text{m/s}$ sekunnissa. Kokeessa 1 kärryn paikat olivat $1{,}0\\,\\text{m}$, $4{,}0\\,\\text{m}$ ja $9{,}0\\,\\text{m}$, joten sekuntien matkat olivat $1{,}0\\,\\text{m}$, $3{,}0\\,\\text{m}$ ja $5{,}0\\,\\text{m}$. Matka kasvaa, koska myöhemmän sekunnin aikana kärryn keskinopeus on suurempi. Kokeessa 2 nopeus oli $2{,}0\\,\\text{m/s}$, $0$ ja $-2{,}0\\,\\text{m/s}$: kiihtyvyys oli $-2{,}0\\,\\text{m/s}^2$ myös hetkellä, jolloin nopeus oli nolla, ja siksi kärry lähti liikkumaan takaisin."
+    },
+    {
+      "id": "putoaminen",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Putoamiskiihtyvyyden määrittäminen",
+      "source": "example",
+      "figure": "fy4-2/fall-points",
+      "text": "Teräskuula pudotetaan mittanauhan vierestä ja kuvataan videolle. Videoanalyysiohjelmalla luetaan kuulan putoamismatka $s$ yhdeksästä kuvasta $0{,}05\\,\\text{s}$:n välein. Ensimmäinen kuva on otettu juuri irrottamisen jälkeen, joten kuulalla on jo pieni nopeus. Ilmanvastus on näin lyhyellä matkalla pieni.\n\n| $t$ (s) | $s$ (m) |\n|---|---|\n| 0,00 | 0,002 |\n| 0,05 | 0,018 |\n| 0,10 | 0,065 |\n| 0,15 | 0,128 |\n| 0,20 | 0,223 |\n| 0,25 | 0,338 |\n| 0,30 | 0,477 |\n| 0,35 | 0,646 |\n| 0,40 | 0,832 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Sovita pisteisiin toisen asteen polynomi $s = A\\,t^2 + B\\,t + C$ laskimella tai taulukkolaskennalla. Laske sovituksen kertoimesta putoamiskiihtyvyys. Vastaa yksikössä m/s².",
+        "answer": 9.77,
+        "unit": "m/s²",
+        "tolerance": 0.02,
+        "hints": [
+          "Vertaa polynomia paikan yhtälöön $x = x_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Mikä polynomin kerroin vastaa termiä $\\tfrac{1}{2}\\,a$?",
+          "Taulukkolaskennassa valitse pisteille toisen asteen polynomisovitus (trendiviiva) ja näytä sen yhtälö. Laskimessa valitse toisen asteen regressio.",
+          "Sovituksen kerroin on noin $A \\approx 4{,}9\\,\\text{m/s}^2$. Koska $\\tfrac{1}{2}\\,a = A$, on $a = 2A$."
+        ],
+        "mistakes": [
+          {
+            "value": 4.88,
+            "feedback": "Tämä on polynomin kerroin $A$. Paikan yhtälössä $t^2$:n kerroin on $\\tfrac{1}{2}\\,a$, joten kiihtyvyys on kaksi kertaa kerroin: $a = 2A$."
+          },
+          {
+            "value": 10.4,
+            "feedback": "Laskit kiihtyvyyden yhdestä pisteestä kaavalla $a = \\dfrac{2s}{t^2}$. Se olettaa, että kuula lähti levosta hetkellä 0, mutta kuulalla oli jo pieni alkunopeus, ja yksittäisen pisteen virhe vaikuttaa suoraan tulokseen. Sovitus käyttää kaikkia pisteitä."
+          }
+        ],
+        "solution": "**Annettu:** yhdeksän mittauspistettä $(t, s)$ taulukosta hetkestä $0$ hetkeen $0{,}40\\,\\text{s}$; ilmanvastus on pieni\n\n**Kysytty:** putoamiskiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Kun ilmanvastus on pieni, kuula putoaa vakiokiihtyvyydellä, joten sen paikka on ajan toisen asteen funktio $s = s_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Mittauspisteet eivät yleensä osu täsmälleen samalle käyrälle mittausepävarmuuden vuoksi, joten kaikkiin pisteisiin sovitetaan polynomi $s = A\\,t^2 + B\\,t + C$ ja kiihtyvyys luetaan sen kertoimesta.\n\n**Kuvaajan lukeminen:** Pisteet nousevat ylöspäin kaartuvana käyränä, joten nopeus kasvaa. Toisen asteen sovitus antaa kertoimet $A \\approx 4{,}88\\,\\text{m/s}^2$, $B \\approx 0{,}126\\,\\text{m/s}$ ja $C \\approx 0{,}001\\,\\text{m}$. Kerroin $B$ on kuulan pieni alkunopeus ensimmäisessä kuvassa.\n\n**Kaava:** Kertoimia vertaamalla $\\tfrac{1}{2}\\,a = A$, joten $a = 2A$\n\n**Muunnokset:** Matkat ovat metreinä ja ajat sekunteina, joten $A$ on yksikössä $\\text{m/s}^2$. Muunnoksia ei tarvita.\n\n**Sijoitus:** $a = 2 \\cdot 4{,}884\\,\\text{m/s}^2 \\approx 9{,}77\\,\\text{m/s}^2$\n\n**Vastaus:** $9{,}77\\,\\text{m/s}^2$, kolme merkitsevää numeroa kuten matkoissa, jotka on luettu millimetrin tarkkuudella.\n\n**Järkevyys:** Tulos poikkeaa taulukkoarvosta $9{,}81\\,\\text{m/s}^2$ alle prosentin, mikä sopii videolta luettujen paikkojen epävarmuuteen. Karkea tarkistus: viimeisessä pisteessä $\\tfrac{1}{2} \\cdot 9{,}77\\,\\text{m/s}^2 \\cdot (0{,}40\\,\\text{s})^2 \\approx 0{,}78\\,\\text{m}$, ja alkunopeuden osuus $0{,}126\\,\\text{m/s} \\cdot 0{,}40\\,\\text{s} \\approx 0{,}05\\,\\text{m}$ nostaa sen mitattuun $0{,}83\\,\\text{m}$:iin."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi taulukoihin. Mitä opit matkoista peräkkäisinä sekunteina ja kiihtyvyydestä hetkellä, jolloin nopeus on nolla? Palaa myös alun kiveen: miksi se kulkee jokaisessa aikavälissä pidemmän matkan?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Auto lähtee levosta, ja sen kiihtyvyys on $3{,}0\\,\\text{m/s}^2$. Opiskelija laskee, kuinka pitkän matkan auto kulkee $4{,}0\\,\\text{s}$:ssa. Hän laskee ensin loppunopeuden $v = a\\,t = 12\\,\\text{m/s}$ ja sitten matkan $\\Delta x = v\\,t = 12\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 48\\,\\text{m}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Hän laski kuin auto olisi ajanut koko ajan loppunopeudella; oikein $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2 = 24\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Oikein. Nopeus kasvaa nollasta $12\\,\\text{m/s}$:iin, joten keskinopeus on vain $6{,}0\\,\\text{m/s}$ ja matka $6{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 24\\,\\text{m}$, sama kuin $\\tfrac{1}{2}\\,a\\,t^2$. $(t,v)$-kuvaajassa matka on kolmion ala, ei suorakulmion."
+        },
+        {
+          "text": "Loppunopeus on laskettu väärin: sen pitäisi olla kiihtyvyys jaettuna ajalla, $3{,}0 : 4{,}0$.",
+          "feedback": "Kiihtyvyys kertoo nopeuden kasvun sekunnissa, joten neljässä sekunnissa nopeus kasvaa $4 \\cdot 3{,}0\\,\\text{m/s} = 12\\,\\text{m/s}$. Loppunopeus on oikein; virhe on matkan laskussa."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska matka on aina nopeus kertaa aika.",
+          "feedback": "Matka on nopeus kertaa aika vain, kun nopeus pysyy vakiona. Tässä nopeus kasvaa nollasta $12\\,\\text{m/s}$:iin, joten kertoimeksi kelpaa vain keskinopeus."
+        },
+        {
+          "text": "Matka pitäisi laskea kaavalla $\\Delta x = a\\,t^2$, mutta tulos $48\\,\\text{m}$ on silti oikea.",
+          "feedback": "Kaavasta puuttuu kerroin $\\tfrac{1}{2}$: $(t,v)$-kuvaajassa matka on kolmion ala $\\tfrac{1}{2} \\cdot 12\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 24\\,\\text{m}$, ei $48\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Matkustajakone lähtee kiitotien alusta levosta ja kiihtyy tasaisesti. Se tarvitsee irtoamiseen nopeuden $75\\,\\text{m/s}$, ja kiitotietä on käytettävissä $1500\\,\\text{m}$. Kuinka suuri koneen kiihtyvyyden on vähintään oltava? Vastaa yksikössä m/s².",
+      "answer": 1.875,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Tuntemattomia on kaksi, kiihtyvyys ja aika. Kirjoita nopeudelle ja siirtymälle omat yhtälöt.",
+        "Levosta lähtevälle $v = a\\,t$ ja $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$. Ratkaise ensimmäisestä $t$ ja sijoita se toiseen.",
+        "$\\Delta x = \\tfrac{1}{2}\\,a \\cdot \\left(\\tfrac{v}{a}\\right)^2 = \\tfrac{v^2}{2a}$, joten $a = \\tfrac{v^2}{2\\,\\Delta x}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.75,
+          "feedback": "Unohdit kertoimen $\\tfrac{1}{2}$. Kun nopeus kasvaa nollasta, keskinopeus on puolet loppunopeudesta, joten $\\Delta x = \\tfrac{v^2}{2a}$ ja $a = \\tfrac{v^2}{2\\,\\Delta x}$."
+        },
+        {
+          "value": 0.05,
+          "feedback": "Jaoit nopeuden matkalla. Tulos ei ole kiihtyvyys: yksikkö on $\\tfrac{1}{\\text{s}}$. Kirjoita yhtälöt $v = a\\,t$ ja $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$ ja poista niistä aika."
+        }
+      ],
+      "solution": "**Annettu:** alkunopeus $v_0 = 0$, irtoamisnopeus $v = 75\\,\\text{m/s}$, kiitotien pituus $\\Delta x = 1500\\,\\text{m}$; kiihtyvyys on vakio\n\n**Kysytty:** pienin kiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Kone kiihtyy tasaisesti levosta, joten $v = a\\,t$ ja $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$. Pienin kiihtyvyys on se, jolla nopeus $75\\,\\text{m/s}$ saavutetaan juuri kiitotien lopussa. Aikaa ei tunneta, joten se poistetaan yhtälöistä.\n\n**Kaava:** Ensimmäisestä yhtälöstä $t = \\tfrac{v}{a}$. Sijoitus toiseen: $\\Delta x = \\tfrac{1}{2}\\,a \\left(\\tfrac{v}{a}\\right)^2 = \\tfrac{v^2}{2a}$, joten $a = \\dfrac{v^2}{2\\,\\Delta x}$\n\n**Muunnokset:** Nopeus on yksikössä $\\text{m/s}$ ja matka metreinä, joten $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m}} = \\text{m/s}^2$. Muunnoksia ei tarvita.\n\n**Sijoitus:** $a = \\dfrac{(75\\,\\text{m/s})^2}{2 \\cdot 1500\\,\\text{m}} = \\dfrac{5625\\,\\text{m}^2/\\text{s}^2}{3000\\,\\text{m}} \\approx 1{,}875\\,\\text{m/s}^2$\n\n**Vastaus:** $1{,}9\\,\\text{m/s}^2$, kaksi merkitsevää numeroa kuten nopeudessa $75\\,\\text{m/s}$.\n\n**Järkevyys:** Kiihtyvyydellä $1{,}875\\,\\text{m/s}^2$ nopeus $75\\,\\text{m/s}$ saavutetaan ajassa $t = 75\\,\\text{m/s} : 1{,}875\\,\\text{m/s}^2 = 40\\,\\text{s}$. Keskinopeus on $37{,}5\\,\\text{m/s}$, ja $37{,}5\\,\\text{m/s} \\cdot 40\\,\\text{s} = 1500\\,\\text{m}$, eli juuri kiitotien pituus. Noin $40\\,\\text{s}$:n lentoonlähtö ja kiihtyvyys noin $0{,}2\\,g$ vastaavat matkustajakoneen kokemusta."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Taso 1 käyttää yhtä kaavaa, taso 2 vaatii kaksi vaihetta tai yksikkömuunnoksen ja taso 3 päättelyä. Piirrä $(t,v)$-kuvaaja vihkoon aina, kun se auttaa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Pallo heitetään suoraan ylöspäin, ja ilmanvastus on pieni. Mikä on pallon nopeus ja kiihtyvyys lakipisteessä?",
+      "choices": [
+        {
+          "text": "$v = 0$ ja $a = 9{,}81\\,\\text{m/s}^2$ alaspäin",
+          "correct": true,
+          "feedback": "Oikein. Pallo on lakipisteessä hetken paikallaan, mutta nopeus muuttuu koko ajan: ennen lakipistettä ylöspäin, sen jälkeen alaspäin. Kiihtyvyys on koko lennon ajan $g$ alaspäin."
+        },
+        {
+          "text": "$v = 0$ ja $a = 0$, koska pallo on paikallaan",
+          "feedback": "Jos kiihtyvyys olisi nolla, nopeus ei muuttuisi ja pallo jäisi leijumaan lakipisteeseen. Kiihtyvyys kertoo nopeuden muutoksen, ja nopeus muuttuu ylöspäin suunnatusta alaspäin suunnatuksi."
+        },
+        {
+          "text": "$v = 9{,}81\\,\\text{m/s}$ alaspäin ja $a = 0$",
+          "feedback": "Lakipisteessä pallo vaihtaa suuntaa, joten sen nopeus on siinä hetken nolla. Arvo $9{,}81$ on kiihtyvyyden suuruus $\\text{m/s}^2$:na, ei nopeus."
+        },
+        {
+          "text": "$v = 0$ ja $a = 9{,}81\\,\\text{m/s}^2$ ylöspäin",
+          "feedback": "Kiihtyvyyden suunta ei käänny lakipisteessä. Nousun aikana nopeus pienenee ja laskun aikana kasvaa alaspäin, joten kiihtyvyys osoittaa koko ajan alaspäin."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaajan tulkinta",
+      "figure": "fy4-2/check-tv",
+      "prompt": "Kuvaaja esittää sähköpotkulaudan nopeuden ajan funktiona. Kuinka pitkän matkan potkulauta kulkee hetkestä $0$ hetkeen $8{,}0\\,\\text{s}$? Vastaa metreinä.",
+      "answer": 32,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä $(t,v)$-kuvaajan osa kertoo siirtymän?",
+        "Siirtymä on suoran ja aika-akselin väliin jäävä pinta-ala hetkestä $0$ hetkeen $8{,}0\\,\\text{s}$. Alue on puolisuunnikas: suorakulmio ja sen päällä kolmio.",
+        "Suorakulmio $2{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s}$ ja kolmio $\\tfrac{1}{2} \\cdot 4{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 48,
+          "feedback": "Kerroit loppunopeuden $6{,}0\\,\\text{m/s}$ koko ajalla. Nopeus kasvoi $2{,}0\\,\\text{m/s}$:sta, joten pinta-ala on puolisuunnikas eikä suorakulmio."
+        },
+        {
+          "value": 16,
+          "feedback": "Laskit vain suorakulmion $2{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s}$. Lisää sen päällä oleva kolmio, joka syntyy nopeuden kasvusta."
+        },
+        {
+          "value": 0.5,
+          "feedback": "Tämä on suoran kulmakerroin eli kiihtyvyys $\\text{m/s}^2$:na. Matka on kuvaajan alle jäävä pinta-ala."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajasta nopeus $v_0 = 2{,}0\\,\\text{m/s}$ hetkellä $0$ ja $v = 6{,}0\\,\\text{m/s}$ hetkellä $t = 8{,}0\\,\\text{s}$; kuvaaja on suora\n\n**Kysytty:** kuljettu matka $\\Delta x$ metreinä\n\n**Periaate:** $(t,v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala on siirtymä. Nopeus on koko ajan positiivinen, joten siirtymä on sama kuin kuljettu matka. Suora kuvaaja tarkoittaa tasaista kiihtymistä, joten alue on puolisuunnikas.\n\n**Kuvaajan lukeminen:** Suora alkaa pisteestä $(0;\\, 2{,}0\\,\\text{m/s})$ ja päättyy pisteeseen $(8{,}0\\,\\text{s};\\, 6{,}0\\,\\text{m/s})$. Kumpikin piste on ruudukon viivojen risteyksessä, joten arvot luetaan tarkasti.\n\n**Kaava:** Puolisuunnikkaan ala on keskinopeus kertaa aika: $\\Delta x = \\dfrac{v_0 + v}{2} \\cdot t$\n\n**Muunnokset:** Nopeudet ovat yksikössä $\\text{m/s}$ ja aika sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Delta x = \\dfrac{2{,}0\\,\\text{m/s} + 6{,}0\\,\\text{m/s}}{2} \\cdot 8{,}0\\,\\text{s} = 4{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 32\\,\\text{m}$\n\n**Vastaus:** $32\\,\\text{m}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa.\n\n**Järkevyys:** Sama pinta-ala kahtena palana: suorakulmio $2{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m}$ ja kolmio $\\tfrac{1}{2} \\cdot 4{,}0\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m}$, yhteensä $32\\,\\text{m}$. Tulos on suurempi kuin pienimmällä nopeudella kuljettu $16\\,\\text{m}$ ja pienempi kuin suurimmalla nopeudella kuljettu $48\\,\\text{m}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä alun ilmiö: miksi sillalta pudotettu kivi kulkee jokaisen sekunnin aikana pidemmän matkan kuin edellisen sekunnin aikana? Käytä käsitteitä nopeus, kiihtyvyys ja keskinopeus.",
+      "criteria": [
+        "Sanon, että kiven kiihtyvyys on vakio $g = 9{,}81\\,\\text{m/s}^2$ alaspäin, joten nopeus kasvaa joka sekunti saman verran.",
+        "Sanon, että myöhemmän sekunnin aikana kiven keskinopeus on suurempi, joten se kulkee samassa ajassa pidemmän matkan.",
+        "Perustelen luvuilla, esimerkiksi ensimmäisen ja toisen sekunnin matkoilla tai $(t,v)$-kuvaajan pinta-aloilla.",
+        "Mainitsen oletuksen, että ilmanvastus on pieni."
+      ],
+      "model": "Kun ilmanvastus on pieni, kivi putoaa vakiokiihtyvyydellä $g = 9{,}81\\,\\text{m/s}^2$ alaspäin. Sen nopeus kasvaa joka sekunti noin $9{,}8\\,\\text{m/s}$: ensimmäisen sekunnin aikana nollasta $9{,}8\\,\\text{m/s}$:iin ja toisen aikana $9{,}8\\,\\text{m/s}$:sta $19{,}6\\,\\text{m/s}$:iin. Koska nopeus kasvaa tasaisesti, keskinopeus on alku- ja loppunopeuden keskiarvo: ensimmäisellä sekunnilla $4{,}9\\,\\text{m/s}$ ja toisella $14{,}7\\,\\text{m/s}$. Matka on keskinopeus kertaa aika, joten kivi putoaa ensimmäisen sekunnin aikana $4{,}9\\,\\text{m}$ ja toisen aikana $14{,}7\\,\\text{m}$, kolme kertaa enemmän. $(t,v)$-kuvaajassa matkat ovat suoran alle jäävät pinta-alat, jotka kasvavat suhteessa $1 : 3 : 5 : 7$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
