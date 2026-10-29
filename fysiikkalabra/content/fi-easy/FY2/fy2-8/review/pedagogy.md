@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 43c8f8bd26c7d024
+CONTENT-HASH: 453829cb08be8da1
 
 ## Blocking
+- none
 
 ## Polish
-- None.
+- none
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Selkeä suomi: lauseet lyhyitä, termit samat kuin suomessa, vaativuus sama (tulos on perusteltava energiasta, biomassa ei ole päästötön, vertailu per kilowattitunti). Oikea vaihtoehto ei ole pisin (check_choices puhdas), palaute käännetty jokaiselle vaihtoehdolle, lähtölippu kaksi kysymystä kuten suomessa.

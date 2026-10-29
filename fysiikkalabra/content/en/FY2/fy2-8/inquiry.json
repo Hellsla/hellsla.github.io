@@ -149,7 +149,7 @@
         "prompt": "Compare the rows of the table and the picture of the simulation. What explains why the ground is warmer with greenhouse gases than without them?",
         "choices": [
           {
-            "text": "Greenhouse gases absorb thermal radiation from the ground and send part of it back down, so energy escapes to space more slowly and the ground stays warmer.",
+            "text": "Greenhouse gases absorb the ground's thermal radiation and send part of it back down, so energy leaves more slowly.",
             "correct": true,
             "feedback": "Correct. Solar radiation reaches the ground in the same way at all levels, but the passage of thermal radiation changes: greenhouse gas molecules absorb it and send part of it back. Without greenhouse gases, including water vapour, the temperature would be about $-18\\,{}^\\circ\\text{C}$. When carbon dioxide is added, the temperature rises, but gradually: at the present concentration the Earth is about $+15\\,{}^\\circ\\text{C}$ and is still warming towards about $+16\\,{}^\\circ\\text{C}$."
           },
@@ -292,9 +292,9 @@
       "prompt": "A student calculates how much carbon dioxide equivalent is produced when $3600\\,\\text{kWh}$ of electricity is produced with wind power ($e = 12\\,\\text{g/kWh}$). The student writes\n\n$$\\begin{aligned} m &= E : e \\\\ &= 3600\\,\\text{kWh} : 12\\,\\text{g/kWh} \\\\ &= 300\\,\\text{kg} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The emission is the emission factor times the energy, not the energy divided by the factor. The correct calculation is $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0.001\\,\\text{kg} \\approx 43\\,\\text{kg}$.",
+          "text": "The emission is the emission factor times the energy, not the energy divided by the factor: $m = e \\cdot E \\approx 43\\,\\text{kg}$.",
           "correct": true,
-          "feedback": "Correct. The unit reveals the error: $\\text{kWh} : \\text{g/kWh}$ does not give a mass but $\\text{kWh}^2/\\text{g}$. In the multiplication $\\text{g/kWh} \\cdot \\text{kWh}$ the kilowatt-hours cancel and grams are left. The result $43\\,\\text{kg}$ is also reasonable: the same electricity from gas would give about $41$ times more."
+          "feedback": "Correct: $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0.001\\,\\text{kg} \\approx 43\\,\\text{kg}$. The unit reveals the error: $\\text{kWh} : \\text{g/kWh}$ does not give a mass but $\\text{kWh}^2/\\text{g}$. In the multiplication $\\text{g/kWh} \\cdot \\text{kWh}$ the kilowatt-hours cancel and grams are left. The result $43\\,\\text{kg}$ is also reasonable: the same electricity from gas would give about $41$ times more."
         },
         {
           "text": "The emission factor of wind power is zero, so the emission is $0\\,\\text{kg}$.",
@@ -416,10 +416,54 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Is biomass electricity emission-free?",
+      "prompt": "A power plant burns wood grown for energy. Which statement about its climate effect is correct?",
+      "choices": [
+        {
+          "text": "Emissions are produced: the carbon dioxide from burning stays in the air for decades, and harvesting and transport add to it.",
+          "correct": true,
+          "feedback": "Correct. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transporting cause emissions of their own. According to the IPCC life-cycle assessment, the emission factor of biomass electricity is about $230\\,\\text{g/kWh}$."
+        },
+        {
+          "text": "No emissions are produced at all, because wood is a renewable fuel and the forest always grows back.",
+          "feedback": "Renewable does not mean emission-free. The carbon dioxide from burning stays in the atmosphere until new growth binds it back over decades, and growing, harvesting and transporting cause emissions of their own."
+        },
+        {
+          "text": "The effect is exactly the same as with coal, because carbon dioxide is produced when either one burns.",
+          "feedback": "Carbon dioxide is released from both, but the carbon of coal has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of wood was bound only during the last decades, and new growth binds it back. The life-cycle emission factor is about $820\\,\\text{g/kWh}$ for coal and about $230\\,\\text{g/kWh}$ for biomass."
+        }
+      ]
+    },
+    {
+      "id": "check-c3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. A reasoned comparison",
+      "prompt": "The annual emission of a coal power plant is $900\\,000\\,\\text{t}$ and that of a natural gas power plant $100\\,000\\,\\text{t}$ of carbon dioxide equivalent. A student concludes that natural gas is the better way of producing energy for the climate. What is still missing from the comparison?",
+      "choices": [
+        {
+          "text": "The electrical energy the plants produce in a year, so that the emissions can be compared per kilowatt-hour.",
+          "correct": true,
+          "feedback": "Correct. A large plant can produce many times more electricity than a small one, so total emissions alone do not tell about the way of producing energy. Ways of producing energy are compared by the emission per unit of energy produced, that is, by emission factors, when the annual emission is divided by the electricity produced in a year."
+        },
+        {
+          "text": "Nothing: when the annual emission is smaller, the way of producing energy is always better for the climate.",
+          "feedback": "The total emission also depends on how much electricity the plant produces. Without the energy produced we do not know which one produces the same electricity with smaller emissions. That is why the annual emission is divided by the electricity produced in a year."
+        },
+        {
+          "text": "The rated powers of the plants, because the emissions of a higher-powered plant are always larger.",
+          "feedback": "The rated power is the greatest power at which the plant can run, and it does not tell the energy produced during the year. The comparison needs the emission per unit of energy produced: the annual emission is divided by the electricity produced in a year."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Emission of a journey",
+      "title": "4. Emission of a journey",
       "prompt": "A car uses $6.0$ litres of petrol per hundred kilometres. The energy content of petrol is about $32\\,\\text{MJ}$ per litre, and the emission factor of its burning is about $69\\,\\text{g/MJ}$ (IPCC default value). How many kilograms of carbon dioxide are released over a distance of $120\\,\\text{km}$ from burning alone? Give the answer in kilograms.",
       "answer": 16,
       "unit": "kg",
@@ -445,7 +489,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "5. Explain",
       "optional": true,
       "prompt": "Explain why the natural greenhouse effect is useful but its strengthening is a problem. Also say why burning fossil fuels strengthens the effect.",
       "criteria": [
@@ -460,7 +504,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first by yourself and only then open the answer."
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
     }
   ]
 }
