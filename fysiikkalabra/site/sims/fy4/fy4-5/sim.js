@@ -93,7 +93,7 @@ new p5((p) => {
       const len = Math.min(80, 14 + v * 12), yv = y0 - 40;
       p.stroke(...BLUE); p.strokeWeight(2.5); p.line(SLED.x - len / 2, yv, SLED.x + len / 2, yv);
       p.line(SLED.x + len / 2, yv, SLED.x + len / 2 - 9, yv - 5); p.line(SLED.x + len / 2, yv, SLED.x + len / 2 - 9, yv + 5);
-      lab('$\\mathbf{v}$', SLED.x + len / 2 + 8, yv + fh * 0.36, 'l', fh, BLUE);
+      lab('$\\overline{v}$', SLED.x + len / 2 + 8, yv + fh * 0.36, 'l', fh, BLUE);
     }
     lab(__('tilannekuva'), 10, 22, 'l', fh, INKC);
     lab(`$v = ${tx(v, 1)}\\,\\text{m/s}$`, 10, 22 + fh * 1.5, 'l', fh, BLUE);
@@ -109,14 +109,14 @@ new p5((p) => {
     const pG = [D.x, D.y], pN = [D.x - 14, D.y + h / 2];   // N left of G, clear of the F_y label
     const pF = f.push ? [D.x - w / 2, D.y - h / 2] : [D.x + w / 2, D.y - h / 2];   // the handle's or the rope's corner
     const F = [f.Fx, f.Fy];
-    arrow(pG, [0, -f.G], '$\\mathbf{G}$', fh, k);
-    arrow(pN, [0, f.N], '$\\mathbf{N}$', fh, k);
+    arrow(pG, [0, -f.G], '$\\overline{G}$', fh, k);
+    arrow(pN, [0, f.N], '$\\overline{N}$', fh, k);
     if (f.F > 0) {
       // a pull starts at the rope's corner; a push ends at the handle's corner, so the arrow stays off the sled
       const tail = f.push ? [pF[0] - F[0] * S, pF[1] + F[1] * S] : pF;
-      arrow(tail, F, '$\\mathbf{F}$', fh, k, f.push);
+      arrow(tail, F, '$\\overline{F}$', fh, k, f.push);
       if (cbKomp.checked() && f.al > 0.01) {
-        dashed(tail, [F[0], 0], '$\\mathbf{F}_x$', fh, k); dashed(tail, [0, F[1]], '$\\mathbf{F}_y$', fh, k);
+        dashed(tail, [F[0], 0], '$\\overline{F}_x$', fh, k); dashed(tail, [0, F[1]], '$\\overline{F}_y$', fh, k);
       }
     }
   }

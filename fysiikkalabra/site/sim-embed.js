@@ -34,7 +34,7 @@
 (() => {
   const Base = window.p5;
   if (!Base || Base.__fysiikkalabra) return;
-  const W = 600, H = 400;
+  const W = 600; let H = 400;
   const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const font = (getComputedStyle(document.body).fontFamily.split(',')[0] || '').replace(/["']/g, '').trim();
   const foldNotes = (root) => {
@@ -87,7 +87,7 @@
         };
         sketch(p);
         const setup = p.setup, draw = p.draw;
-        let s = 1;
+        let s = 1, internal = false;
         let layer = null, labels = [], used = 0;
         const text = p.text;
         // the canvas and its KaTeX layer share a box (.sim-canvas); fit() sizes the canvas to that box, so the page can
@@ -143,10 +143,15 @@
           if (!el || !p.canvas) return;
           const w = Math.min(W, el.clientWidth || W);
           const ns = Math.max(0.3, w / W);
-          if (Math.abs(ns - s) < 0.002) return;
+          if (Math.abs(ns - s) < 0.002 && p.height === Math.round(H * s)) return;
           s = ns;
-          p.resizeCanvas(Math.round(W * s), Math.round(H * s), true);
+          internal = true; p.resizeCanvas(Math.round(W * s), Math.round(H * s), true); internal = false;
           p.redraw();
+        };
+        const rc = p.resizeCanvas;           // a sketch that stacks its panels on a phone asks for p.resizeCanvas(600, taller): the box keeps its 600 width
+        p.resizeCanvas = function (w, h, ...r) {
+          if (internal) return rc.call(p, w, h, ...r);
+          if (w === W && h !== H) { H = h; s = 0; fit(); }
         };
         p.setup = () => {
           if (setup) setup();
