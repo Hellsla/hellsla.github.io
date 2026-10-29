@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b8d7e629c4b251af
+CONTENT-HASH: 26425e989f6aba71
 
 ## Blocking
 - none
@@ -18,3 +18,4 @@ CONTENT-HASH: b8d7e629c4b251af
 - Staged example one step per stage; unit conversion shown by replacing the prefix.
 - Checks test concepts with misconception distractors; explain criteria observable.
 - layout 1280 px now OK for fy2-2 (check_layout fy2-2 --width 1280); the packet's FAIL did not reproduce.
+- Delta after science fixes: "ei enää helposti" wording (lesson, virhekäsitys, tarkistus-3 model) reads naturally and fits the glossary; tikapuut label "omena metrin ylös 1 J" fits at 390 px without overlap.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3ee235a22720fbdc
+CONTENT-HASH: 35bb79f01c3f4ed3
 
 ## Blocking
 (none)
@@ -19,3 +19,4 @@ CONTENT-HASH: 3ee235a22720fbdc
 - Heat vs thermal energy wording matches guardrails (net transfer, body has thermal energy).
 - Scope: no E_k/E_p formulas in the lesson text; consistent with FY2 scope.
 - Summary, goals, options, exit ticket and sim boxes agree.
+- Delta: the opening question now reads "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the clause that gave away the answer is gone, no physics claim changed.

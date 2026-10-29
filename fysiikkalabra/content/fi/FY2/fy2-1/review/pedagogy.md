@@ -1,8 +1,8 @@
-VERDICT: FAIL
-CONTENT-HASH: 3ee235a22720fbdc
+VERDICT: PASS
+CONTENT-HASH: 35bb79f01c3f4ed3
 
 ## Blocking
-- lesson.md:3 — the "Miksi" banner, shown above the hook on the first screen (top-390 capture), says "vaikka energia ei koskaan katoa" and so gives the answer to the opening question "Minne pallon energia meni?" before the student commits; it also makes pred-2's option "energia häviää" obviously wrong — fix: make the banner a neutral question, e.g. "**Miksi** pomppiva pallo pysähtyy lopulta lattialle?", and keep "energia ei katoa" for the reflect and theory.
+- none (the banner at lesson.md:3 is now the neutral question "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the answer is no longer disclosed before the hook)
 
 ## Polish
 - inquiry.json (learn, 3rd bullet) — "miksi energian kuluminen on muuttumista eikä häviämistä" names the conclusion on the first screen — fix: "selittämään, mihin energia menee, kun liike pysähtyy."
