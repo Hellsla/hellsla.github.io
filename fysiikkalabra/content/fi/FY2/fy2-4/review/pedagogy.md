@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1780061339aa30c3
+CONTENT-HASH: 8abc86d61268b96c
 
 ## Blocking
 (none)
@@ -19,4 +19,4 @@ CONTENT-HASH: 1780061339aa30c3
 - Sim at 390 px: controls and readout clear; model assumptions stated in "Mallin oletukset".
 - Finnish read through: no errors found.
 - Workload fits one lesson.
-- Hash unchanged at end. check_layout 1280 px now OK for fy2-4 (packet showed FAIL).
+- Delta 01da3ae6 (ennuste-2 option texts): lengths now similar, each still a plausible misconception, nothing gives the answer away. Hash 8abc86d61268b96c. check_layout 1280 px now OK for fy2-4 (packet showed FAIL).

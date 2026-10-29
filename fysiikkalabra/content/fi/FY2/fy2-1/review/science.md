@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 35bb79f01c3f4ed3
+CONTENT-HASH: 99fba7d73147c1cf
 
 ## Blocking
 (none)
@@ -20,3 +20,4 @@ CONTENT-HASH: 35bb79f01c3f4ed3
 - Scope: no E_k/E_p formulas in the lesson text; consistent with FY2 scope.
 - Summary, goals, options, exit ticket and sim boxes agree.
 - Delta: the opening question now reads "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the clause that gave away the answer is gone, no physics claim changed.
+- Delta 2 (option rebalancing, pred-2, exp-1, virhe): correct options still right, same one correct; distractors still wrong for the reason their feedback gives; feedback matches.

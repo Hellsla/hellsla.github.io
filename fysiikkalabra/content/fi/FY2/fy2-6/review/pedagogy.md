@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 251c772de007ee67
+CONTENT-HASH: bb7a7bd3ea1f9bb7
 
 ## Blocking
 - none
@@ -19,3 +19,4 @@ CONTENT-HASH: 251c772de007ee67
 - Figures legible at 390 px and 1280 px; wide layout passes (checks.txt says FAIL but check_layout at 1280 px now passes).
 - Tarkista checks have misconception distractors; exit ticket tests the core idea (weather dependence needs adjustable power).
 - Finnish reads at the right level, units and cases correct; workload fits one lesson (optional items marked).
+- Option rebalance (commit 01da3ae6): virhe and tarkistus-1 options now similar in length and tone, distractors are real misconceptions, answers not given away, feedback still carries the explanation.

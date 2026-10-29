@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5fe14e5e01d2768a
+CONTENT-HASH: bbce289c9b4b1f34
 
 ## Blocking
 
@@ -21,3 +21,4 @@ CONTENT-HASH: 5fe14e5e01d2768a
 - Exit ticket numbers verified (44 vs 37 kWh) and tests the core idea.
 - Finnish: case forms after number+unit correct apart from "wateissa".
 - Figures: not opened (no captures listed); described adequately in aria-labels.
+- Option rebalance (01da3ae6): kertaus, mittari, virhe distractors stay real misconceptions, similar tone; answers not revealed in option text; feedback still teaches. Polish: virhe's correct option is still the longest (it states the corrected result) — drop "ja hinta 0,90 €".

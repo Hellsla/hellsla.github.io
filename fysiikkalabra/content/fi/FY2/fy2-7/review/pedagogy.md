@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b356ea48282f972e
+CONTENT-HASH: f9f9e2931bcf38c1
 
 ## Blocking
 
@@ -20,3 +20,4 @@ CONTENT-HASH: b356ea48282f972e
 - Exit ticket tests the core idea (high voltage, lower current, lower loss).
 - Explain criteria observable and match the prompt; model answer labels 10 MW values as model.
 - Finnish and number+unit cases fine apart from the item above.
+- Option-balance delta (01da3ae6): correct options in kertaus, sahko, virhe shortened, distractors lengthened; still plausible misconceptions, similar length and tone, correct option no longer reveals itself, and feedback carries the full explanation.

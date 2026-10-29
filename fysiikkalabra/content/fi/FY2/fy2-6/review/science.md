@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 251c772de007ee67
+CONTENT-HASH: bb7a7bd3ea1f9bb7
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 251c772de007ee67
 - Teacher brief 2026-10-29: classifications are properties, not categories (text, table intro, summary, check-ominaisuudet); hydro controllable yet rain-dependent; nuclear steady but can reduce (Olkiluoto example); peat clarified. Consistent across theory, options, feedback, exit ticket.
 - All predictions/choices have exactly one correct option; distractor feedback is right (nuclear largest, hydro quick response).
 - Scope: no FY3 content; no chain efficiencies.
+- Option-text rebalance (01da3ae6): correct options still correct, distractors still wrong, feedback matches each text.

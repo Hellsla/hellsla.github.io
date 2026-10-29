@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7389c7df46a53f06
+CONTENT-HASH: 6ed4d6b44c49c784
 
 ## Blocking
 - none
@@ -11,6 +11,7 @@ CONTENT-HASH: 7389c7df46a53f06
 - inquiry.json rakenna (optional) — the student only reads a prepared table; no act of choosing or computing E : m; acceptable as optional.
 
 ## Checked
+- Delta 01da3ae6 (option rebalancing in kertaus, taulukko, rakenna, tarkistus-1): correct options unchanged in meaning, distractors still real misconceptions and now similar in length and tone; no option gives the answer away; moved explanation in rakenna feedback still teaches.
 - Delta: Miksi (lesson.md:3) no longer states the ratio; ennuste-1 answer not disclosed before the student commits.
 - Learning path: prerequisites (joule, kWh, conservation) suffice; slot goals E = Hm and chemical energy covered; no FY3 content; workload one lesson.
 - Predictions before evidence; options' feedback repairs the misconception; no letter references.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 26425e989f6aba71
+CONTENT-HASH: 90a722405dc493b9
 
 ## Blocking
 - none
@@ -19,3 +19,4 @@ CONTENT-HASH: 26425e989f6aba71
 - Checks test concepts with misconception distractors; explain criteria observable.
 - layout 1280 px now OK for fy2-2 (check_layout fy2-2 --width 1280); the packet's FAIL did not reproduce.
 - Delta after science fixes: "ei enää helposti" wording (lesson, virhekäsitys, tarkistus-3 model) reads naturally and fits the glossary; tikapuut label "omena metrin ylös 1 J" fits at 390 px without overlap.
+- Delta (option rebalancing in kertaus, virhe, tarkistus-1): options now similar in length and tone, distractors remain real misconceptions, nothing gives the answer away, correct options' feedback still teaches.

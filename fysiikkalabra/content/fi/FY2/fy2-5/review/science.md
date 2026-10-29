@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7389c7df46a53f06
+CONTENT-HASH: 6ed4d6b44c49c784
 
 ## Blocking
 
@@ -15,3 +15,4 @@ CONTENT-HASH: 7389c7df46a53f06
 - Exactly one correct option in every choice item; every distractor is wrong and its feedback is correct.
 - Scope: no work, Q = cm ΔT or chain efficiencies; the efficiency use is single-device, within FY2.
 - Nuclear "fuel" caveat and CO2 note (carbon-containing fuels only) are right.
+- Delta (option-text rebalance in inquiry.json): every changed correct option still correct, every changed distractor still wrong, feedback matches.

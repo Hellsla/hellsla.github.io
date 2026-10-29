@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 35bb79f01c3f4ed3
+CONTENT-HASH: 99fba7d73147c1cf
 
 ## Blocking
 - none (the banner at lesson.md:3 is now the neutral question "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the answer is no longer disclosed before the hook)
@@ -17,3 +17,4 @@ CONTENT-HASH: 35bb79f01c3f4ed3
 - Sim at 390 px: controls, readout and the colour key (blue, orange, hatched red) readable; locked controls shown as "(vakio)".
 - Checks 1–4 and the exit ticket test the core idea; distractors are real misconceptions; feedback repairs them.
 - Finnish and glossary terms correct; 1280 px captures use the wide layout without clipping.
+- Rebalance (01da3ae6): option texts of pred-2, exp-1 and virhe are now similar in length (correct not the longest); distractors remain real misconceptions, feedback of the correct options carries the shortened reasoning and still teaches; nothing gives the answer away.

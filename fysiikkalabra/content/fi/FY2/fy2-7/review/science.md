@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b356ea48282f972e
+CONTENT-HASH: f9f9e2931bcf38c1
 
 ## Blocking
 (none)
@@ -17,3 +17,4 @@ CONTENT-HASH: b356ea48282f972e
 - Sankey proportions (80 / 77 / 3 and 73 / 7 px) match 96/4 and 91/9; electricity base (consumption incl. losses as input) stated.
 - Scope: no Q = cmΔT, no P = UI or I^2R formulas, no chain efficiencies; data sourced (Energiateollisuus 2024) and examples marked.
 - Worked example symbolic first, rounding reasons sound; exit ticket and summary agree with theory.
+- Delta (commit 01da3ae6, option texts rebalanced): every changed option re-read; correct options still correct and match feedback, distractors still wrong with fitting feedback.

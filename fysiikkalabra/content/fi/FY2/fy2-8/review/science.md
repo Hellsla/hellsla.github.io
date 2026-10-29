@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7e3a56e6bf3861b1
+CONTENT-HASH: cbab112da685283e
 
 ## Blocking
 (none)
@@ -18,3 +18,4 @@ CONTENT-HASH: 7e3a56e6bf3861b1
 - Experiment koe-1 isolates co2; Teq keys exist in simState; 0 ppm caveat (no water vapour) stated.
 - All predictions, feedbacks, numerics (820 kg, 49 000 t, 15,9 kg, 43 kg, 2,352 t, 58 kg, ratios 41 and 68) recomputed OK.
 - Biomass, transport (8x distance), checks and exit ticket consistent with theory.
+- Rebalanced option texts (koe-1 first option, virhe correct option) verified: same physics, numbers unchanged (43 kg, 41x).

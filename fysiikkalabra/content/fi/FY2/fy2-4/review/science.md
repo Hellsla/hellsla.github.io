@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1780061339aa30c3
+CONTENT-HASH: 8abc86d61268b96c
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 1780061339aa30c3
 - ennuste-2: tasaisella teholla aika supistuu; feedback honest that the sim assumes constant eta.
 - sim.js: P_a = eta P_o, E = P t, arrows to scale; simState keys match experiments; koe-1/koe-2 locks isolate t; initial values lie in slider ranges.
 - Scope: no work, no chain efficiencies, no Carnot; consistent theory, summary, glossary, model box.
+- Delta 01da3ae6: ennuste-2 option texts reworded only; correct option unchanged and right, distractors still wrong, feedback matches.
