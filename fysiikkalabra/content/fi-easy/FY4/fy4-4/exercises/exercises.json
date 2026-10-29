@@ -1,0 +1,111 @@
+{
+  "level1": [
+    {
+      "id": "fy4-4-L1-01",
+      "level": 1,
+      "text": "Leikkiautoon, jonka massa on $2{,}5\\,\\text{kg}$, vaikuttaa vaakasuora kokonaisvoima $6{,}0\\,\\text{N}$. Kuinka suuri on leikkiauton kiihtyvyys?",
+      "answer": 2.4,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-02",
+      "level": 1,
+      "text": "Pyöräilijän ja polkupyörän yhteismassa on $80\\,\\text{kg}$. He kiihtyvät vaakasuoralla tiellä kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima heihin vaikuttaa?",
+      "answer": 120,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-03",
+      "level": 1,
+      "text": "Kappaleeseen vaikuttaa kokonaisvoima $45\\,\\text{N}$, ja kappaleen kiihtyvyys on $3{,}0\\,\\text{m/s}^2$. Mikä on kappaleen massa?",
+      "answer": 15,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-04",
+      "level": 1,
+      "text": "Laatikon massa on $12\\,\\text{kg}$. Laatikkoa vedetään vaakasuoralla lattialla vaakasuoraan $38\\,\\text{N}$:n voimalla. Lattian kitkavoima laatikkoon on $20\\,\\text{N}$. Piirrä laatikon voimakuvio. Kuinka suuri on laatikon kiihtyvyys?",
+      "answer": 1.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L1-05",
+      "level": 1,
+      "text": "Rakennustyömaalla nostetaan $8{,}0\\,\\text{kg}$:n ämpäriä köydellä suoraan ylöspäin tasaisella nopeudella. Piirrä ämpärin voimakuvio. Kuinka suuri on köyden jännitysvoima?",
+      "answer": 78.48,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-4-L2-01",
+      "level": 2,
+      "text": "Henkilöauton massa on $1200\\,\\text{kg}$. Auto kiihtyy vaakasuoralla tiellä levosta nopeuteen $90\\,\\text{km/h}$ tasaisesti $10\\,\\text{s}$:ssa. Kuinka suuri on autoon vaikuttava kokonaisvoima kiihdytyksen aikana?",
+      "answer": 3000,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L2-02",
+      "level": 2,
+      "text": "Hissikorin massa matkustajineen on $900\\,\\text{kg}$. Hissi lähtee liikkeelle alaspäin kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$. Kuinka suuri on kannatinköyden jännitysvoima kiihdytyksen aikana?",
+      "answer": 7479,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-03",
+      "level": 2,
+      "text": "Nosturi laskee $120\\,\\text{kg}$:n kuormaa alaspäin nopeudella $2{,}0\\,\\text{m/s}$. Juuri ennen maata kuorma hidastuu tasaisesti ja pysähtyy $2{,}0\\,\\text{s}$:ssa. Kuinka suuri on köyden jännitysvoima hidastumisen aikana?",
+      "answer": 1297,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-04",
+      "level": 2,
+      "text": "Kaksi lasta vetää $30\\,\\text{kg}$:n kärryä vaakasuoralla pihalla vaakasuorilla naruilla vastakkaisiin suuntiin. Toinen vetää $60\\,\\text{N}$:n voimalla ja toinen $45\\,\\text{N}$:n voimalla. Kitka jätetään huomiotta. Kuinka suuri on kärryn kiihtyvyys?",
+      "answer": 0.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-4-L3-01",
+      "level": 3,
+      "text": "Opiskelijan massa on $60{,}0\\,\\text{kg}$, ja hän seisoo hississä henkilövaa'an päällä. Vaaka mittaa voiman, jolla se tukee opiskelijaa. Vaaka näyttää voiman kilogrammoina eli jakaa voiman luvulla $9{,}81\\,\\text{m/s}^2$. Kun hissi lähtee liikkeelle, vaaka näyttää hetken $54{,}0\\,\\text{kg}$. Kuinka suuri on hissin kiihtyvyys, ja mihin suuntaan se osoittaa?",
+      "answer": 0.981,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L3-02",
+      "level": 3,
+      "text": "Tyhjän puutavara-auton massa on $10\\,\\text{t}$. Se kiihtyy levosta nopeuteen $36\\,\\text{km/h}$ tasaisesti $8{,}0\\,\\text{s}$:ssa. Täyteen lastattuna auton massa on $25\\,\\text{t}$. Oletetaan, että kokonaisvoima on kiihdytyksen aikana sama kuin tyhjällä autolla. Kuinka kauan lastatulta autolta kestää kiihtyä levosta nopeuteen $36\\,\\text{km/h}$?",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L3-03",
+      "level": 3,
+      "text": "Lapsi liukuu pulkalla vaakasuoralla lumella. Pulkan ja lapsen yhteismassa on $30\\,\\text{kg}$, ja nopeus on aluksi $4{,}0\\,\\text{m/s}$. Kukaan ei vedä eikä työnnä pulkkaa. Lumen kitkavoima on $18\\,\\text{N}$, eikä ilmanvastusta oteta huomioon. Kuinka kauan kestää, ennen kuin pulkka pysähtyy?",
+      "answer": 6.667,
+      "unit": "s",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

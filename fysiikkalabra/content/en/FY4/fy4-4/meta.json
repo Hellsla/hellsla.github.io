@@ -1,0 +1,26 @@
+{
+  "id": "fy4-4",
+  "course": "FY4",
+  "title": "Newton's second law",
+  "goals": [
+    "LOPS FY4: interaction and force between objects, and Newton's laws",
+    "LOPS FY4: the equation of motion",
+    "Free-body diagram: rest, constant velocity, speeding-up and slowing-down motion in the vertical or horizontal direction (examples A and E); the net force in the direction of the acceleration, not necessarily in the direction of the velocity; the equation ΣF = ma only after the forces."
+  ],
+  "prerequisites": [
+    "fy4-2",
+    "fy4-3"
+  ],
+  "glossary": [
+    "voima",
+    "kiihtyvyys",
+    "massa",
+    "kokonaisvoima",
+    "newton",
+    "tukivoima",
+    "voimakuvio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

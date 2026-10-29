@@ -1,0 +1,111 @@
+{
+  "level1": [
+    {
+      "id": "fy4-4-L1-01",
+      "level": 1,
+      "text": "A horizontal net force of $6.0\\,\\text{N}$ acts on a toy car of mass $2.5\\,\\text{kg}$. What is the acceleration of the toy car?",
+      "answer": 2.4,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-02",
+      "level": 1,
+      "text": "A cyclist and a bicycle with a total mass of $80\\,\\text{kg}$ accelerate on a horizontal road with an acceleration of $1.5\\,\\text{m/s}^2$. What is the net force acting on them?",
+      "answer": 120,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-03",
+      "level": 1,
+      "text": "A net force of $45\\,\\text{N}$ acts on an object, and its acceleration is $3.0\\,\\text{m/s}^2$. What is the mass of the object?",
+      "answer": 15,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-04",
+      "level": 1,
+      "text": "A box of mass $12\\,\\text{kg}$ is pulled on a horizontal floor with a horizontal force of $38\\,\\text{N}$. The friction force from the floor on the box is $20\\,\\text{N}$. Draw the free-body diagram of the box. What is the acceleration of the box?",
+      "answer": 1.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L1-05",
+      "level": 1,
+      "text": "At a building site a bucket of mass $8.0\\,\\text{kg}$ is lifted straight up on a rope at constant velocity. Draw the free-body diagram of the bucket. What is the tension in the rope?",
+      "answer": 78.48,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-4-L2-01",
+      "level": 2,
+      "text": "A passenger car of mass $1200\\,\\text{kg}$ accelerates uniformly on a horizontal road from rest to a velocity of $90\\,\\text{km/h}$ in $10\\,\\text{s}$. What is the net force acting on the car during the acceleration?",
+      "answer": 3000,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L2-02",
+      "level": 2,
+      "text": "An elevator car with its passengers has a mass of $900\\,\\text{kg}$. It starts to move downward with an acceleration of $1.5\\,\\text{m/s}^2$. What is the tension in the supporting rope during the acceleration?",
+      "answer": 7479,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-03",
+      "level": 2,
+      "text": "A crane lowers a load of $120\\,\\text{kg}$ downward at a velocity of $2.0\\,\\text{m/s}$. Just before the ground the load slows down uniformly and stops in $2.0\\,\\text{s}$. What is the tension in the rope during the slowing down?",
+      "answer": 1297,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-04",
+      "level": 2,
+      "text": "Two children pull a cart of $30\\,\\text{kg}$ in a horizontal yard with horizontal ropes in opposite directions. One pulls with a force of $60\\,\\text{N}$ and the other with a force of $45\\,\\text{N}$. Friction is ignored. What is the acceleration of the cart?",
+      "answer": 0.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-4-L3-01",
+      "level": 3,
+      "text": "A student of mass $60.0\\,\\text{kg}$ stands on a bathroom scale in an elevator. The scale measures the force with which it supports the student and shows it in kilograms, that is, divides the force by $9.81\\,\\text{m/s}^2$. When the elevator starts to move, the scale shows $54.0\\,\\text{kg}$ for a moment. What is the acceleration of the elevator, and in which direction does it point?",
+      "answer": 0.981,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L3-02",
+      "level": 3,
+      "text": "An empty timber truck of mass $10\\,\\text{t}$ accelerates uniformly from rest to a velocity of $36\\,\\text{km/h}$ in $8.0\\,\\text{s}$. Fully loaded, its mass is $25\\,\\text{t}$. Assume that the net force during the acceleration is the same as for the empty truck. How long does it take the loaded truck to accelerate from rest to $36\\,\\text{km/h}$?",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L3-03",
+      "level": 3,
+      "text": "A child slides on a sled on horizontal snow. The total mass of the sled and the child is $30\\,\\text{kg}$, and the velocity is $4.0\\,\\text{m/s}$ at the start. Nobody pulls or pushes the sled. The friction force from the snow is $18\\,\\text{N}$, and air resistance is not taken into account. How long does it take before the sled stops?",
+      "answer": 6.667,
+      "unit": "s",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}
