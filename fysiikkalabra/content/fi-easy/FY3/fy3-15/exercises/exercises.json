@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-15-L1-01",
+      "level": 1,
+      "text": "Vesivoimalaitoksen turbiini muuttaa veden liike-energiasta mekaaniseksi energiaksi $92{,}0\\,\\%$. Generaattori muuttaa turbiinin akselin energiasta sähköksi $98{,}0\\,\\%$. Mikä on koko laitoksen hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 90.2,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-02",
+      "level": 1,
+      "text": "Tuulivoimalan roottorin pyyhkäisemän ilmavirran liike-energian teho on $2{,}50\\,\\text{MW}$. Voimala tuottaa sähköverkkoon tehoa $1{,}05\\,\\text{MW}$. Mikä on voimalan hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 42.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-03",
+      "level": 1,
+      "text": "Katolle asennetun aurinkopaneelin pinta-ala on 20,0 m². Siihen osuu auringon säteilyä teholla $1{,}00\\,\\text{kW}$ jokaista neliömetriä kohti. Paneelin hyötysuhde on 0,210. Kuinka suuren sähkötehon paneeli tuottaa? Anna vastaus kilowatteina.",
+      "answer": 4.2,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-04",
+      "level": 1,
+      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa. $P_0$ on polttoaineteho. $P_1$ on teho kattilan jälkeen. $P_2$ on teho höyrykierron jälkeen. $P_3$ on sähköteho. Missä vaiheessa teho pienenee eniten? Kuinka suuri teho siirtyy tässä vaiheessa lämpönä ympäristöön? Lue arvot kuvasta. Anna vastaus megawatteina.",
+      "figure": "fy3-15/chain-bars",
+      "answer": 200,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-05",
+      "level": 1,
+      "text": "Yhteistuotantolaitoksen polttoaineteho on $250\\,\\text{MW}$. Laitos tuottaa sähköä $75{,}0\\,\\text{MW}$ ja kaukolämpöä $150\\,\\text{MW}$. Mikä on laitoksen kokonaishyötysuhde? Anna vastaus prosentteina.",
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-15-L2-01",
+      "level": 2,
+      "text": "Turvetta polttavan lauhdevoimalaitoksen polttoaineteho on $300\\,\\text{MW}$. Kattilan hyötysuhde on 0,880, höyrykierron (turbiini ja lauhdutin) 0,420 ja generaattorin 0,980. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina.",
+      "answer": 109,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-02",
+      "level": 2,
+      "text": "Lauhdevoimalaitoksen koko energiaketjun hyötysuhde on 0,380. Kattilan hyötysuhde on 0,900 ja generaattorin 0,980. Mikä on höyrykierron eli turbiinin ja lauhduttimen hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 43.1,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-03",
+      "level": 2,
+      "text": "Puuhaketta polttava lauhdevoimalaitos tuottaa sähköä keskimäärin teholla $150\\,\\text{MW}$. Koko laitoksen hyötysuhde on 0,360. Puuhakkeen lämpöarvo on $9{,}00\\,\\text{MJ/kg}$. Montako tonnia haketta laitos polttaa tunnissa? Anna vastaus tonneina.",
+      "answer": 167,
+      "unit": "t",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-04",
+      "level": 2,
+      "text": "Rannikon lauhdevoimalaitoksen lauhduttimeen siirtyy lämpöä teholla $270\\,\\text{MW}$. Lauhdutinta jäähdyttävä merivesi lämpenee $9{,}00\\,\\text{K}$. Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$. Kuinka monta tonnia vettä lauhduttimen läpi virtaa sekunnissa? Anna vastaus tonneina sekunnissa.",
+      "answer": 7.16,
+      "unit": "t/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-15-L3-01",
+      "level": 3,
+      "text": "Yhteistuotantolaitoksen polttoaineteho on $600\\,\\text{MW}$. Kun laitos tuottaa pelkkää sähköä, sähköteho on $240\\,\\text{MW}$. Kun kaikki lauhduttimen lämpö johdetaan kaukolämpöverkkoon, sähköteho on $180\\,\\text{MW}$ ja kaukolämpöteho $348\\,\\text{MW}$. Näiden tilojen välissä sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa. Kaukolämpöverkko tarvitsee nyt lämpöä $200\\,\\text{MW}$. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina. Laske myös laitoksen kokonaishyötysuhde. Perustele, miksi sähkön ja lämmön yhteenlaskettu hyötysuhde ei silti kerro, kumpi tuotantotapa on kannattavampi.",
+      "answer": 206,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-02",
+      "level": 3,
+      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh}$ = 3,60 · 10¹² J). Ajatellaan, että sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa. Laitoksen hyötysuhde on 0,380, ja hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$. Kuinka monta kilotonnia hiiltä (1 kt = 10⁶ kg) vuodessa poltettaisiin? Selitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen hyötysuhteita.",
+      "answer": 13.6,
+      "unit": "kt",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-03",
+      "level": 3,
+      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä. Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Voimajohdoissa ja muuntajissa menetetään $5{,}0\\,\\%$. Talon sähkömittariin tulee siis 0,950 · 0,400 = 0,380 osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00. Kuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina. Vertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900). Päättele, mikä tavoista säästää polttoainetta eniten.",
+      "answer": 87.7,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

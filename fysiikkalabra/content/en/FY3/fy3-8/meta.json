@@ -1,0 +1,19 @@
+{
+  "id": "fy3-8",
+  "course": "FY3",
+  "title": "Thermal expansion",
+  "goals": [
+    "LOPS FY3: thermal expansion",
+    "Clarification: micro model of thermal expansion; solids, liquids and gases"
+  ],
+  "prerequisites": [
+    "fy3-3"
+  ],
+  "glossary": [
+    "thermal expansion",
+    "coefficient of linear expansion",
+    "coefficient of volume expansion"
+  ],
+  "sim": true,
+  "image": false
+}

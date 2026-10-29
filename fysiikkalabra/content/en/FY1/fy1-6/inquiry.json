@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "contribution": "Falling is the first motion in which the speed itself changes: the $(t, v)$ graph of free fall is a straight line through the origin whose slope is the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$, and experiments show that in a vacuum mass does not affect falling but in air air resistance does.",
+  "learn": [
+    "You can calculate the speed of a freely falling object with the formula $v = gt$.",
+    "You can read the acceleration of free fall from the slope of the $(t, v)$ graph.",
+    "You can conclude from experiments when mass affects falling and when it does not."
+  ],
+  "prior": [
+    "In uniform motion the distance is the product of speed and time, $s = vt$ (chapter *Uniform motion: s = vt*)",
+    "The slope of a straight-line graph tells how much the quantity on the vertical axis changes when the quantity on the horizontal axis increases by one (chapter *Graphs and fitting a straight line*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In 1971, on the Apollo 15 mission, astronaut David Scott held a hammer in one hand and a falcon feather in the other on the surface of the Moon and let them go at the same time. They hit the lunar surface at the same moment. At home the same experiment does not work: the hammer falls straight down, but the feather drifts slowly.",
+      "question": "Does the speed of a falling object increase steadily, and does a heavy object fall faster than a light one?"
+    },
+    {
+      "id": "pr-matka",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review the previous chapter",
+      "prompt": "A cart moves at a constant speed of $6.0\\,\\text{m/s}$. How far does it travel in $5.0\\,\\text{s}$?",
+      "choices": [
+        {
+          "text": "$1.2\\,\\text{m}$",
+          "feedback": "You divided the speed by the time. Speed tells how many metres are travelled per second, so the distance is found by multiplying the speed by the time: $s = vt$."
+        },
+        {
+          "text": "$30\\,\\text{m}$",
+          "feedback": "Correct: $s = vt = 6.0\\,\\text{m/s} \\cdot 5.0\\,\\text{s} = 30\\,\\text{m}$. In uniform motion the speed stays the same. In this chapter you investigate motion in which the speed itself changes.",
+          "correct": true
+        },
+        {
+          "text": "$11\\,\\text{m}$",
+          "feedback": "You added the speed and the time. The units $\\text{m/s}$ and $\\text{s}$ are not the same quantity, so they cannot be added. The distance comes from the product $s = vt$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how the speed increases",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "A ball is released from rest where there is no air. Its speed after $1.0\\,\\text{s}$ is about $10\\,\\text{m/s}$. What is the speed after $3.0\\,\\text{s}$?",
+      "choices": [
+        {
+          "text": "About $10\\,\\text{m/s}$, because the speed stays the same once the motion has started.",
+          "feedback": "In the table the speed keeps increasing from one second to the next. In uniform motion the speed is constant, but the speed of a falling object changes all the time."
+        },
+        {
+          "text": "About $20\\,\\text{m/s}$, because the speed first increases and then slows down.",
+          "feedback": "In the table the increase in speed is equally large every second and does not slow down: every second the speed increases by about $9.81\\,\\text{m/s}$."
+        },
+        {
+          "text": "About $30\\,\\text{m/s}$, because the speed increases by the same amount every second.",
+          "feedback": "The values of the model support this: in the table the speed increases by about $9.81\\,\\text{m/s}$ every second, so in three seconds it is about $29.4\\,\\text{m/s}$.",
+          "correct": true
+        },
+        {
+          "text": "About $90\\,\\text{m/s}$, because the increase in speed gets larger every second.",
+          "feedback": "If the increase grew, the differences between consecutive speeds in the table would grow. They are equal, so the speed is directly proportional to time."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: does mass matter",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "layout": "models",
+      "prompt": "Two balls of the same size, with masses $1.0\\,\\text{kg}$ and $8.0\\,\\text{kg}$, are released from rest at the same time where there is no air. How do their speeds compare when $3.0\\,\\text{s}$ have passed since the start of the fall?",
+      "choices": [
+        {
+          "text": "The heavier ball is faster, and its speed is about eight times as large.",
+          "feedback": "In the table the speed of the heavy ball is not eight times as large. Mass does not multiply the speed in the formula $v = gt$, so making the mass eight times as large does not change the speed."
+        },
+        {
+          "text": "The heavier ball is slightly faster, but the difference is small.",
+          "feedback": "In the table the difference is not small but zero: the speeds of the balls are the same regardless of mass."
+        },
+        {
+          "text": "The speeds of the balls are equal.",
+          "feedback": "The values of the model support this: when the mass $m_\\text{B}$ changes, the speed of ball B does not change and is the same as the speed of ball A, about $29.4\\,\\text{m/s}$.",
+          "correct": true
+        },
+        {
+          "text": "The lighter ball is faster, because it is easier to get moving.",
+          "feedback": "In the table the light ball is not faster. Mass does not affect how quickly the speed increases, so neither ball gets an advantage."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation two balls of the same size fall from rest, and their speeds are plotted on the $(t, v)$ graph.",
+      "howto": "Press *Drop* or drag the *Moment $t$* slider and watch how the balls fall and how the graph is drawn. Choose the *Environment* (vacuum or air) and adjust the masses of the balls. The length of the arrow is the speed, and the points mark whole seconds. The dashed line is the formula $v = gt$.",
+      "model": "The values are model values calculated by the simulation, not measurements. The balls are the same size, and they start from rest. In a vacuum only the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$ acts. In air the diameter of the ball is $0.20\\,\\text{m}$, and the air slows the ball more the faster it moves. Wind and the rotation of the ball are ignored.",
+      "calc": "In a vacuum the speed is calculated with the formula $v = gt$. The quotient $v : t$ tells how much the speed has increased per second on average since the ball started from rest. In air the increase in speed slows down as the speed grows, and the speed approaches a terminal speed. For a light ball the terminal speed is smaller than for a heavy one, so $v : t$ stays smaller for the light ball."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: does the speed increase steadily",
+      "intro": "Test prediction 1. The initial state selects a vacuum and sets the masses of the balls to $1.0\\,\\text{kg}$ and $8.0\\,\\text{kg}$. Press *Drop* and watch how the graph is drawn. Then stop the clock by dragging the *Moment $t$* slider and record the speeds at three or more moments, for example $1.0\\,\\text{s}$, $2.0\\,\\text{s}$ and $3.0\\,\\text{s}$.",
+      "initial": {
+        "ilma": "0",
+        "mA": 1,
+        "mB": 8,
+        "t": 0
+      },
+      "locked": [
+        "ilma",
+        "mA",
+        "mB"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "moment t",
+        "ilma": "ilmanvastus",
+        "mA": "mass m_A",
+        "mB": "mass m_B"
+      },
+      "units": {
+        "ilma": "(no air: vacuum)",
+        "t": "s",
+        "mA": "kg",
+        "mB": "kg"
+      },
+      "measure": [
+        {
+          "key": "vA",
+          "label": "v_A (m/s)"
+        },
+        {
+          "key": "vB",
+          "label": "v_B (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Using two rows of the table, calculate the increase in the speed of ball A per second, $\\dfrac{\\Delta v}{\\Delta t}$. Give the answer in $\\text{m/s}^2$.",
+        "answer": 9.81,
+        "unit": "m/s²",
+        "tolerance": 0.02,
+        "hints": [
+          "The increase in speed per second is the change in speed divided by the change in time. Choose two rows and read the speed and time of ball A from them.",
+          "$\\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$. Use the column $v_\\text{A}$.",
+          "If the rows are $t = 1.0\\,\\text{s}$ and $t = 3.0\\,\\text{s}$, then $\\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_\\text{A}(3.0\\,\\text{s}) - v_\\text{A}(1.0\\,\\text{s})}{3.0\\,\\text{s} - 1.0\\,\\text{s}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 19.6,
+            "feedback": "This is the change in speed $\\Delta v$ over two seconds. Divide it by the change in time $\\Delta t = 2.0\\,\\text{s}$ to get the change in one second."
+          },
+          {
+            "value": 29.4,
+            "feedback": "This is the speed at the moment $3.0\\,\\text{s}$, not the increase in speed per second. Calculate the difference between the speeds of the two rows and divide it by the difference between the times."
+          }
+        ],
+        "solution": "**Given:** two rows of the table, for example $t_1 = 1.0\\,\\text{s}$, $v_1 = 9.81\\,\\text{m/s}$ and $t_2 = 3.0\\,\\text{s}$, $v_2 = 29.4\\,\\text{m/s}$ (model values for ball A in a vacuum)\n\n**Find:** the increase in speed per second $\\dfrac{\\Delta v}{\\Delta t}$ in $\\text{m/s}^2$\n\n**Principle:** If the speed increases by the same amount every second, any two rows of the table give the same quotient. This quotient is the change in speed divided by the change in time, that is, the acceleration.\n\n**Formula:** $\\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$\n\n**Conversions:** The speeds are in $\\text{m/s}$ and the times in seconds, so the result comes directly in $\\text{m/s}^2$. No conversions are needed.\n\n**Substitution:** $\\dfrac{\\Delta v}{\\Delta t} = \\dfrac{29.4\\,\\text{m/s} - 9.81\\,\\text{m/s}}{3.0\\,\\text{s} - 1.0\\,\\text{s}} = \\dfrac{19.6\\,\\text{m/s}}{2.0\\,\\text{s}} = 9.8\\,\\text{m/s}^2$\n\n**Answer:** $9.8\\,\\text{m/s}^2$, two significant figures, because the time interval $2.0\\,\\text{s}$ has two figures.\n\n**Reasonableness:** Another pair of rows gives the same result: for example $t = 2.0\\,\\text{s}$ and $t = 4.0\\,\\text{s}$ give $\\dfrac{39.2\\,\\text{m/s} - 19.6\\,\\text{m/s}}{2.0\\,\\text{s}} = 9.8\\,\\text{m/s}^2$. The result is also the same for ball B, so mass does not affect the result. The positive sign fits the fact that the speed increases."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: does mass matter in a vacuum",
+      "intro": "Test prediction 2. The initial state selects a vacuum and the moment $t = 3.0\\,\\text{s}$ and sets the mass of ball A to $1.0\\,\\text{kg}$. Change the mass of ball B with the slider and record the speeds for at least three masses, for example $0.5\\,\\text{kg}$, $3.0\\,\\text{kg}$ and $8.0\\,\\text{kg}$.",
+      "initial": {
+        "ilma": "0",
+        "t": 3,
+        "mA": 1,
+        "mB": 1
+      },
+      "locked": [
+        "ilma",
+        "t",
+        "mA"
+      ],
+      "vary": "mB",
+      "names": {
+        "mB": "mass m_B",
+        "t": "moment t",
+        "ilma": "ilmanvastus",
+        "mA": "mass m_A"
+      },
+      "units": {
+        "ilma": "(no air: vacuum)",
+        "mB": "kg",
+        "t": "s",
+        "mA": "kg"
+      },
+      "measure": [
+        {
+          "key": "vA",
+          "label": "v_A (m/s)"
+        },
+        {
+          "key": "vB",
+          "label": "v_B (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table show about the effect of mass on speed in a vacuum?",
+        "choices": [
+          {
+            "text": "The speed is the same for all masses, about $29.4\\,\\text{m/s}$.",
+            "feedback": "Correct. The mass of ball B was changed to many times its value, but its speed did not change and was the same as that of ball A on every row. In a vacuum mass does not affect the speed.",
+            "correct": true
+          },
+          {
+            "text": "The speed increases when the mass increases.",
+            "feedback": "Look at the column $v_\\text{B}$: its numbers do not increase even though the mass $m_\\text{B}$ increases. If mass mattered, the column would contain different numbers."
+          },
+          {
+            "text": "The speed decreases when the mass increases.",
+            "feedback": "The column $v_\\text{B}$ stays the same on all rows and does not decrease. The heavier ball is not slower."
+          },
+          {
+            "text": "Nothing can be concluded from the table, because ball A stays the same all the time.",
+            "feedback": "Ball A is the point of comparison: its speed stays the same, and the speed of ball B is the same as the speed of ball A on every row. This is exactly what shows that mass does not matter."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: what about in air",
+      "intro": "Now air is included. The initial state selects air and the moment $t = 4.0\\,\\text{s}$ and sets the mass of ball A to $1.0\\,\\text{kg}$. The balls are the same size. Change the mass of ball B and record the speeds for at least three masses, for example $0.1\\,\\text{kg}$, $1.0\\,\\text{kg}$ and $10\\,\\text{kg}$. Compare the numbers with the value $gt = 39.2\\,\\text{m/s}$.",
+      "initial": {
+        "ilma": "1",
+        "t": 4,
+        "mA": 1,
+        "mB": 1
+      },
+      "locked": [
+        "ilma",
+        "t",
+        "mA"
+      ],
+      "vary": "mB",
+      "names": {
+        "mB": "mass m_B",
+        "t": "moment t",
+        "ilma": "ilmanvastus",
+        "mA": "mass m_A"
+      },
+      "units": {
+        "ilma": "(air present)",
+        "mB": "kg",
+        "t": "s",
+        "mA": "kg"
+      },
+      "measure": [
+        {
+          "key": "vA",
+          "label": "v_A (m/s)"
+        },
+        {
+          "key": "vB",
+          "label": "v_B (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table tell about falling in air?",
+        "choices": [
+          {
+            "text": "In air, of two balls of the same size the heavier one is faster, but both stay below the value $gt = 39.2\\,\\text{m/s}$.",
+            "feedback": "Correct. The speed of ball B increases with mass but does not exceed $39.2\\,\\text{m/s}$. Air slows a light ball more, so in air the speed differs from the formula $v = gt$ more the lighter the ball is.",
+            "correct": true
+          },
+          {
+            "text": "In air mass has no effect at all, just as in a vacuum.",
+            "feedback": "In the table the speed of ball B changes when the mass changes: for the light ball it is clearly smaller than for the heavy one. In a vacuum the same change had no effect."
+          },
+          {
+            "text": "In air the light ball is faster, because air supports the heavy ball more.",
+            "feedback": "In the table the light ball is slower, not faster. Air slows the light ball more than the heavy one."
+          },
+          {
+            "text": "In air the speed of the balls exceeds $gt$, because the air pushes the ball downwards.",
+            "feedback": "None of the speeds in the table exceeds $39.2\\,\\text{m/s}$. Air slows falling down and does not speed it up."
+          }
+        ]
+      }
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "optional": true,
+      "source": "simulated",
+      "title": "Example data: the speed of a ball from video frames",
+      "text": "The fall of a steel ball is filmed, and the speed of the ball is calculated from the frames at different moments. Every measurement has a small error, so the points do not fall exactly on the same straight line. The data is here as a table and as a $(t, v)$ graph (simulated example data, not a real experiment).\n\n| $t$ (s) | $v$ (m/s) |\n|---|---|\n| 0.1 | 1.0 |\n| 0.2 | 2.0 |\n| 0.3 | 2.9 |\n| 0.4 | 3.9 |\n| 0.5 | 4.9 |\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"The (t,v) graph of the example data: five points at the moments 0.1 - 0.5 seconds and a straight line fitted to them through the origin. The speed increases from about 1.0 metres per second at 0.1 s to about 4.9 metres per second at 0.5 s. The points lie roughly evenly on both sides of the line.\" style=\"max-width:100%;font-size:24px\">\n  <line x1=\"160\" y1=\"296\" x2=\"160\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"224\" y1=\"296\" x2=\"224\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"288\" y1=\"296\" x2=\"288\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"352\" y1=\"296\" x2=\"352\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"416\" y1=\"296\" x2=\"416\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"480\" y1=\"296\" x2=\"480\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"257\" x2=\"480\" y2=\"257\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"218\" x2=\"480\" y2=\"218\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"179\" x2=\"480\" y2=\"179\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"140\" x2=\"480\" y2=\"140\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"101\" x2=\"480\" y2=\"101\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"62\" x2=\"480\" y2=\"62\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"95\" y1=\"296\" x2=\"494\" y2=\"296\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M506,296 L493,302 L493,290 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"96\" y1=\"297\" x2=\"96\" y2=\"48\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M96,36 L102,49 L90,49 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"296\" x2=\"160\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"137.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.1$</div></foreignObject>\n  <line x1=\"224\" y1=\"296\" x2=\"224\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"201.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.2$</div></foreignObject>\n  <line x1=\"288\" y1=\"296\" x2=\"288\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"265.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.3$</div></foreignObject>\n  <line x1=\"352\" y1=\"296\" x2=\"352\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"329.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.4$</div></foreignObject>\n  <line x1=\"416\" y1=\"296\" x2=\"416\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"393.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.5$</div></foreignObject>\n  <line x1=\"480\" y1=\"296\" x2=\"480\" y2=\"303\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"457.5\" y=\"305.5\" width=\"45\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$0.6$</div></foreignObject>\n  <line x1=\"89\" y1=\"257\" x2=\"96\" y2=\"257\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"242.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$1$</div></foreignObject>\n  <line x1=\"89\" y1=\"218\" x2=\"96\" y2=\"218\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"203.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$2$</div></foreignObject>\n  <line x1=\"89\" y1=\"179\" x2=\"96\" y2=\"179\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"164.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$3$</div></foreignObject>\n  <line x1=\"89\" y1=\"140\" x2=\"96\" y2=\"140\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"125.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$4$</div></foreignObject>\n  <line x1=\"89\" y1=\"101\" x2=\"96\" y2=\"101\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"86.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$5$</div></foreignObject>\n  <line x1=\"89\" y1=\"62\" x2=\"96\" y2=\"62\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"64\" y=\"47.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$6$</div></foreignObject>\n  <foreignObject x=\"66\" y=\"301.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$0$</div></foreignObject>\n  <foreignObject x=\"512\" y=\"281.5\" width=\"62\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"86\" y=\"5.5\" width=\"87\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$v\\ (\\text{m/s})$</div></foreignObject>\n  <polyline points=\"96,296 480,66.5\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"160\" cy=\"257\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"224\" cy=\"218\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"288\" cy=\"183\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"352\" cy=\"144\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"416\" cy=\"105\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <foreignObject x=\"313.5\" y=\"51.5\" width=\"183\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c\"><span style=\"background:#ffffff;padding:0 5px;border-radius:3px\">$\\text{fitted line}$</span></div></foreignObject>\n</svg>\n\nA straight line has been fitted to the points through the origin so that the points lie roughly evenly on both sides of it. Time is measured from the moment the ball was released from rest, so according to the model $v = gt$ the line passes through the origin.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Choose a point on the fitted line far from the origin and read its $t$ and $v$ from the graph. Calculate the slope of the line using this point and the origin. Give the answer in $\\text{m/s}^2$.",
+        "answer": 9.8,
+        "unit": "m/s²",
+        "tolerance": 0.03,
+        "hints": [
+          "Read the point from the line, not from the table. Choose a point far from the origin, for example near the moment $t = 0.5\\,\\text{s}$.",
+          "$g = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$. The other point is the origin $(0\\,\\text{s};\\, 0\\,\\text{m/s})$.",
+          "At the moment $t = 0.5\\,\\text{s}$ the line is slightly below the grid line $5\\,\\text{m/s}$, at about $4.9\\,\\text{m/s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.1,
+            "feedback": "You divided the time by the speed. The slope is the rise divided by the run: $\\dfrac{\\Delta v}{\\Delta t}$."
+          }
+        ],
+        "solution": "**Given:** two points on the fitted line: the origin $(t_1;\\, v_1) = (0\\,\\text{s};\\, 0\\,\\text{m/s})$ and a point read from the graph $(t_2;\\, v_2) \\approx (0.50\\,\\text{s};\\, 4.9\\,\\text{m/s})$\n\n**Find:** the slope of the line, that is, the acceleration of free fall $g$ in $\\text{m/s}^2$\n\n**Principle:** The ball is in free fall, so its $(t, v)$ graph is a straight line, and the slope of the line is the acceleration of free fall. The measurements contain error, so the slope is calculated from points on the fitted line and not from a single measurement.\n\n**Reading the graph:** The origin is given. Read the other point at the moment $t = 0.50\\,\\text{s}$: from this position go up to the line and from there left to the $v$ axis. The line is slightly below the grid line $5\\,\\text{m/s}$, so we read $v_2 \\approx 4.9\\,\\text{m/s}$. The grid lines are $1\\,\\text{m/s}$ apart, so the value can be read to about a tenth. For points far apart the reading error is small compared with the change.\n\n**Formula:** $g = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v_2 - v_1}{t_2 - t_1}$\n\n**Conversions:** The speed is in $\\text{m/s}$ and the time in seconds, so no conversions are needed.\n\n**Substitution:** $g = \\dfrac{4.9\\,\\text{m/s} - 0\\,\\text{m/s}}{0.50\\,\\text{s} - 0\\,\\text{s}} = \\dfrac{4.9\\,\\text{m/s}}{0.50\\,\\text{s}} = 9.8\\,\\text{m/s}^2$\n\n**Answer:** $9.8\\,\\text{m/s}^2$, two significant figures, because the value read from the graph, $4.9\\,\\text{m/s}$, and the time $0.50\\,\\text{s}$ have two figures. The measured points deviate from the line by about $0.1\\,\\text{m/s}$, so as a rough estimate the uncertainty of the slope with this data is about $0.2\\,\\text{m/s}^2$.\n\n**Reasonableness:** The result is close to the table value $9.81\\,\\text{m/s}^2$. Check from the table: the last measurement gives $\\dfrac{4.9\\,\\text{m/s}}{0.5\\,\\text{s}} = 9.8\\,\\text{m/s}^2$ and the middle one $\\dfrac{2.9\\,\\text{m/s}}{0.3\\,\\text{s}} = 9.7\\,\\text{m/s}^2$, which is the same order of magnitude. The slope is positive, because the graph rises."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "after": [
+        "exp-1",
+        "exp-2",
+        "exp-3"
+      ],
+      "title": "Conclusion from the experiments",
+      "prompt": "Write a conclusion based on your experiments: How does the speed of a falling object change in a vacuum? Does mass affect it? What does air change? Use the numbers from your tables.",
+      "criteria": [
+        "I say that in a vacuum the speed increases by the same amount every second, about $9.81\\,\\text{m/s}$, and I name this the acceleration of free fall $g$.",
+        "I use the numbers in the table to say that in a vacuum the speeds of balls with different masses are the same.",
+        "I say that in air the speed stays smaller than $gt$ and that the difference is larger for the light ball.",
+        "I say that the numbers are values from the simulation model, not measurements."
+      ],
+      "model": "According to the values of the simulation model, in a vacuum the speed increases by the same amount every second: at the moments $1.0\\,\\text{s}$, $2.0\\,\\text{s}$ and $3.0\\,\\text{s}$ the speed was about $9.8\\,\\text{m/s}$, $19.6\\,\\text{m/s}$ and $29.4\\,\\text{m/s}$. The increase in speed per second is therefore constant, $g = 9.81\\,\\text{m/s}^2$, and the speed is $v = gt$. The mass of the ball did not matter: when the mass of ball B changed, its speed on every row was the same as the speed of ball A. In air the speed stayed smaller than $gt$: at the moment $4.0\\,\\text{s}$ the speed of the light ball ($0.1\\,\\text{kg}$) was only about $10.5\\,\\text{m/s}$, whereas that of the heavy ball ($10\\,\\text{kg}$) was about $37.5\\,\\text{m/s}$ and the value of the formula is $39.2\\,\\text{m/s}$. The difference comes from the air, not from mass as such. The numbers in experiments 1 and 2 are values of the simulation model, and they repeat the formula $v = gt$ rather than prove it; the effect of air shows only in experiment 3."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the tables and graphs. What did you find out about the increase in speed and the effect of mass? Go back also to the hammer and the feather at the start: why did they fall equally fast on the Moon but differently on Earth?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Find the error",
+      "prompt": "A student calculates the speed of a ball dropped from rest in a vacuum after $2.0\\,\\text{s}$. She writes: \"The acceleration of free fall is $9.81\\,\\text{m/s}^2$, so the speed of the ball is $9.81\\,\\text{m/s}$.\" Where is the error?",
+      "choices": [
+        {
+          "text": "She treats acceleration as speed. The speed is $v = gt = 9.81\\,\\text{m/s}^2 \\cdot 2.0\\,\\text{s} = 19.6\\,\\text{m/s}$.",
+          "feedback": "Correct. The number $9.81\\,\\text{m/s}^2$ tells how much the speed increases every second. The speed is found by multiplying it by the elapsed time.",
+          "correct": true
+        },
+        {
+          "text": "She should include the mass of the ball, because a heavy ball falls faster.",
+          "feedback": "Mass is not part of the formula $v = gt$. In a vacuum all objects fall with the same acceleration, so mass does not change the speed."
+        },
+        {
+          "text": "The result is correct, because at the start of the fall the speed is $9.81\\,\\text{m/s}$.",
+          "feedback": "At the start the ball is at rest and the speed is zero. The speed $9.81\\,\\text{m/s}$ is reached only after one second."
+        },
+        {
+          "text": "The unit should be $\\text{m}$, because the ball travels a distance.",
+          "feedback": "The unit of speed is $\\text{m/s}$. The error is not in the unit but in the fact that time was not used in the calculation."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A researcher drops a stone on an unknown planet that has no atmosphere. The stone starts from rest, and its speed after $2.0\\,\\text{s}$ is $7.4\\,\\text{m/s}$. What is the speed of the stone after $3.0\\,\\text{s}$? Give the answer in $\\text{m/s}$.",
+      "answer": 11.1,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Which number tells how much the speed increases per second? Work it out from the given data.",
+        "The acceleration of free fall is $g = \\dfrac{v}{t}$ and the speed later is $v = gt$. The $g$ of the planet is not the value for Earth.",
+        "$g = \\dfrac{7.4\\,\\text{m/s}}{2.0\\,\\text{s}}$, and then $v = g \\cdot 3.0\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 29.4,
+          "feedback": "You used the acceleration of free fall of Earth, $9.81\\,\\text{m/s}^2$. This is a different planet, and its $g$ must be calculated from the given measurement."
+        },
+        {
+          "value": 22.2,
+          "feedback": "You multiplied the speed $7.4\\,\\text{m/s}$ by the time $3.0\\,\\text{s}$. Speed is not acceleration: first divide the speed by the time to get the increase in speed per second."
+        },
+        {
+          "value": 3.7,
+          "feedback": "This is the acceleration of free fall of the planet in $\\text{m/s}^2$. The question asked for the speed at the moment $3.0\\,\\text{s}$, so multiply by the time as well."
+        }
+      ],
+      "solution": "**Given:** the stone starts from rest, $v_1 = 7.4\\,\\text{m/s}$ at the moment $t_1 = 2.0\\,\\text{s}$, the desired moment is $t_2 = 3.0\\,\\text{s}$; there is no atmosphere\n\n**Find:** the speed of the stone $v_2$ at the moment $t_2$ in $\\text{m/s}$\n\n**Principle:** With no atmosphere the stone is in free fall, so the speed is directly proportional to time: $v = gt$. The $g$ of the planet is not the value for Earth, but it is constant, so it can be found from the given measurement and used to calculate the speed at the second moment.\n\n**Formula:** $g = \\dfrac{v_1}{t_1}$ and $v_2 = g\\,t_2$, so $v_2 = \\dfrac{v_1}{t_1}\\,t_2$\n\n**Conversions:** The speeds are in $\\text{m/s}$ and the times in seconds, so no conversions are needed.\n\n**Substitution:** $g = \\dfrac{7.4\\,\\text{m/s}}{2.0\\,\\text{s}} = 3.7\\,\\text{m/s}^2$ and $v_2 = 3.7\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{s} = 11.1\\,\\text{m/s}$\n\n**Answer:** $11\\,\\text{m/s}$, two significant figures as in the data $7.4\\,\\text{m/s}$ and $2.0\\,\\text{s}$.\n\n**Reasonableness:** The speed is directly proportional to time, so $3.0\\,\\text{s}$ is one and a half times $2.0\\,\\text{s}$ and the speed must be one and a half times as large: $1.5 \\cdot 7.4\\,\\text{m/s} = 11.1\\,\\text{m/s}$. The $g = 3.7\\,\\text{m/s}^2$ of the planet is smaller than the $9.81\\,\\text{m/s}^2$ of Earth, so the speed is smaller than on Earth in the same time ($29.4\\,\\text{m/s}$)."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more at three levels. Level 1 exercises use one formula, and level 3 requires reasoning. Level 1 is enough for basic competence; levels 2 and 3 are optional and deepen your skills, so do them if level 1 goes well. Draw the $(t, v)$ graph in your notebook whenever it helps."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "An object falls from rest in a vacuum. What does its $(t, v)$ graph look like?",
+      "choices": [
+        {
+          "text": "A rising straight line starting from the origin, with slope $g$.",
+          "feedback": "Correct. The speed increases by the same amount every second and is zero at the moment $t = 0$. The slope $\\dfrac{\\Delta v}{\\Delta t}$ of the line is the acceleration of free fall.",
+          "correct": true
+        },
+        {
+          "text": "A horizontal line, because the acceleration of free fall is constant.",
+          "feedback": "What is constant is the acceleration, that is, the increase in speed per second, not the speed. A horizontal line would mean that the speed does not change, but the speed of a falling object increases."
+        },
+        {
+          "text": "A curve starting from the origin that gets steeper with time.",
+          "feedback": "The curve would get steeper if the increase in speed per second grew. It is constant, however, so the graph is a straight line."
+        },
+        {
+          "text": "A descending straight line, because the object falls downwards.",
+          "feedback": "The graph is not the path of the object. The magnitude of the speed increases, so the $(t, v)$ graph rises."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. What g tells us",
+      "prompt": "The slope of the $(t, v)$ graph of a freely falling ball dropped from rest is $g = 9.81\\,\\text{m/s}^2$. What does this number tell you about the motion of the ball?",
+      "choices": [
+        {
+          "text": "The speed of the ball is $9.81\\,\\text{m/s}$ all the time.",
+          "feedback": "The number $g$ is not a speed. If the speed were constant, the $(t, v)$ graph would be horizontal. The speed of a falling ball increases: it is $v = g\\,t$, for example $9.81\\,\\text{m/s}^2\\cdot 3.0\\,\\text{s} \\approx 29.4\\,\\text{m/s}$ after three seconds."
+        },
+        {
+          "text": "The speed of the ball increases by $9.81\\,\\text{m/s}$ every second.",
+          "feedback": "Correct. Acceleration is the change in speed per second: $g = \\dfrac{\\Delta v}{\\Delta t}$. So after one second the speed is $9.81\\,\\text{m/s}$, after two seconds $19.6\\,\\text{m/s}$, and so on.",
+          "correct": true
+        },
+        {
+          "text": "The ball falls $9.81\\,\\text{m}$ every second.",
+          "feedback": "The unit $\\text{m/s}^2$ is not a distance. The number tells how much the speed changes per second, not how far the ball travels. The distance also grows every second, because the ball moves faster and faster."
+        },
+        {
+          "text": "The speed of the ball increases by $9.81\\,\\text{m/s}$ during the first second, but after that the increase slows down.",
+          "feedback": "Without air resistance the acceleration is constant, so the speed increases by the same amount every second. That is why the graph is a straight line: after two seconds the speed is $2\\cdot9.81\\,\\text{m/s} \\approx 19.6\\,\\text{m/s}$, not less."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Calculating",
+      "prompt": "A ball is released from rest in a vacuum. After how many seconds is the speed of the ball $108\\,\\text{km/h}$? Give the answer in seconds.",
+      "answer": 3.058,
+      "unit": "s",
+      "tolerance": 0.02,
+      "hints": [
+        "What unit must the speed have so that it can be used together with the number $g$?",
+        "First convert $\\text{km/h}$ to $\\text{m/s}$ by substituting $1\\,\\text{km} = 1000\\,\\text{m}$ and $1\\,\\text{h} = 3600\\,\\text{s}$. Then solve the time from the formula $v = gt$.",
+        "$t = \\dfrac{v}{g}$, where $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 11.0,
+          "feedback": "You divided directly by the number $108$ and did not convert the speed to $\\text{m/s}$. The acceleration of free fall $g$ is in $\\text{m/s}^2$, so the speed must be in $\\text{m/s}$."
+        },
+        {
+          "value": 30,
+          "feedback": "This is the speed in $\\text{m/s}$, so the conversion was correct. The question asked for the time, however: divide the speed by $g$ as well."
+        },
+        {
+          "value": 0.327,
+          "feedback": "You divided $g$ by the speed. From $v = gt$ the time is $t = \\dfrac{v}{g}$."
+        }
+      ],
+      "solution": "**Given:** the ball starts from rest, final speed $v = 108\\,\\text{km/h}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the time $t$ in $\\text{s}$\n\n**Principle:** The ball is in free fall in a vacuum and starts from rest, so the speed is directly proportional to time: $v = gt$. When the speed is known, the time is found by solving $t$ from the formula.\n\n**Formula:** $v = g\\,t$, so $t = \\dfrac{v}{g}$\n\n**Conversions:** The speed is converted to $\\text{m/s}$, because $g$ is in $\\text{m/s}^2$: substitute $1\\,\\text{km} = 1000\\,\\text{m}$ and $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 30.0\\,\\text{m/s}$.\n\n**Substitution:** $t = \\dfrac{30.0\\,\\text{m/s}}{9.81\\,\\text{m/s}^2} = 3.058\\,\\text{s}$\n\n**Answer:** $3.06\\,\\text{s}$, three significant figures as in the speed $108\\,\\text{km/h}$.\n\n**Reasonableness:** The speed increases by about $10\\,\\text{m/s}$ every second, so reaching $30\\,\\text{m/s}$ takes about $3\\,\\text{s}$, which matches the result. Check by back-calculation: $9.81\\,\\text{m/s}^2 \\cdot 3.06\\,\\text{s} = 30.0\\,\\text{m/s}$, and the units $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$ agree."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain",
+      "prompt": "Explain in your own words why a feather falls more slowly than a hammer in air but equally fast in a vacuum, and how the acceleration of free fall can be read from a $(t, v)$ graph.",
+      "criteria": [
+        "I say that in a vacuum all objects have the same acceleration of free fall $g$ regardless of mass.",
+        "I say that air slows a light, wide object, the feather, more than a small, dense object.",
+        "I say that the acceleration of free fall is the slope $\\dfrac{\\Delta v}{\\Delta t}$ of the line on the $(t, v)$ graph.",
+        "I use the units correctly: speed in $\\text{m/s}$ and acceleration in $\\text{m/s}^2$."
+      ],
+      "model": "The acceleration of free fall $g = 9.81\\,\\text{m/s}^2$ is the same for all objects when there is no air resistance, so in a vacuum a feather and a hammer fall equally fast, as was seen on the Moon. In air the air slows a wide, light feather much more than a hammer, so the feather falls more slowly. The difference is caused by the air, not by mass as such. The acceleration of free fall is read from the $(t, v)$ graph as the slope of the line: choose two points on the line far apart from each other and calculate $g = \\dfrac{\\Delta v}{\\Delta t}$. When the object starts from rest, the line starts from the origin."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, one quick question. Answer on your own first and only then open the answer."
+    }
+  ]
+}

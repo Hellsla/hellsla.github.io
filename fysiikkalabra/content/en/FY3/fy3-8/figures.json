@@ -1,0 +1,16 @@
+{
+ "Kuvitus: auto ajaa pitkää siltaa pitkin poispäin katsojasta. Etualalla tien poikki kulkee kampamainen teräsliitos, jonka hampaat lomittuvat ja jättävät väliinsä raon sillan lämpölaajenemista varten.": "Illustration: a car drives away from the viewer along a long bridge. In the foreground a comb-shaped steel joint crosses the road, its teeth interlocking and leaving a gap between them to allow for the thermal expansion of the bridge.",
+ "Kuvitus: rautatiekiskot helteellä. Kiskojen yllä väreilee kuumuus, ja kahden kiskon jatkoskohdassa on pieni rako lämpölaajenemista varten.": "Illustration: railway rails in a heatwave. Heat shimmers above the rails, and at the joint between two rails there is a small gap to allow for thermal expansion.",
+ "Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin ja niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀, mutta hiukkaset ovat yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna.": "The same row of particles cold and warm. When warm, the particles vibrate more strongly and their average distance d is greater than the distance d₀ of the cold row, but the particles are the same size. The change in distance is drawn exaggerated.",
+ "kylmä": "cold",
+ "lämmin": "warm",
+ "hiukkaset yhtä suuria, välit liioiteltu": "particles the same size, gaps exaggerated",
+ "Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna.": "The same rod cold and warm: the warm rod is longer, and the change in length ΔL is marked at the end of the rod. The rod is fixed to a wall at its left end. The expansion is drawn exaggerated.",
+ "kylmä, lämpötila ": "cold, temperature ",
+ "lämmin, lämpötila ": "warm, temperature ",
+ "laajeneminen liioiteltu": "expansion exaggerated",
+ "Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna.": "Thermal expansion of the volume of a liquid. The same amount of liquid in a flask with a thin tube as its neck: when cold, the volume of the liquid is V₀ and the surface is lower; when warm, the liquid has expanded and the surface rises in the thin tube. The change in volume ΔV is marked in the tube. The expansion is drawn exaggerated.",
+ "kylmä, ": "cold, ",
+ "pinta": "surface",
+ "Kuvaaja mittakaavassa: metallipalkin pituuden muutos ΔL millimetreinä lämpötilan T funktiona celsiusasteina. Mittaus alkaa lämpötilassa 20 °C, jolloin ΔL on 0 mm, ja päättyy lämpötilaan 70 °C, jolloin ΔL on 3,0 mm. Mittauspisteet ovat suoralla. Ruudukon väli on 10 °C ja 0,5 mm.": "Graph to scale: the change in length ΔL of a metal beam in millimetres as a function of temperature T in degrees Celsius. The measurement starts at a temperature of 20 °C, where ΔL is 0 mm, and ends at a temperature of 70 °C, where ΔL is 3.0 mm. The measurement points lie on a straight line. The grid spacing is 10 °C and 0.5 mm."
+}

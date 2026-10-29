@@ -1,0 +1,21 @@
+{
+  "id": "fy3-13",
+  "course": "FY3",
+  "title": "Determining absolute zero",
+  "goals": [
+    "LOPS FY3: temperature",
+    "Experimental: determining absolute zero (extrapolation)",
+    "Specification: turning measurement data into a straight line, extrapolating to zero pressure and estimating the uncertainty of the result"
+  ],
+  "prerequisites": [
+    "fy3-3"
+  ],
+  "glossary": [
+    "absolute zero",
+    "ekstrapolointi",
+    "measurement uncertainty"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,9 @@
+{
+ "Energiavirtakuvio mittakaavassa: hehkulamppu ottaa sähköenergiaa 100 J. Sähkö kulkee vasemmalta lampun kuvaan. Oikealle jatkuu ohut vihreä nuoli, valon energia 5 J, ja paksu oranssi nuoli, lämmön energia 95 J. Nuolten paksuudet ovat suhteessa energioihin, joten valon osuus on 5 prosenttia tulevasta energiasta.": "Energiavirtakuvio mittakaavassa: hehkulamppu ottaa sähköenergiaa 100 J. Sähkö kulkee vasemmalta lampun kuvaan. Oikealle jatkuu ohut vihreä nuoli, joka on valon energia 5 J. Oikealle jatkuu myös paksu oranssi nuoli, joka on lämmön energia 95 J. Nuolten paksuudet ovat suhteessa energioihin. Valon osuus on siis 5 prosenttia tulevasta energiasta.",
+ "hehkulamppu": "hehkulamppu",
+ "sähkö": "sähkö",
+ "valo": "valo",
+ "lämpö": "lämpö",
+ "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W; hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W; hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu, mutta ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.": "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W. Hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W. Hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu. Ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.",
+ "ledilamppu": "ledilamppu"
+}

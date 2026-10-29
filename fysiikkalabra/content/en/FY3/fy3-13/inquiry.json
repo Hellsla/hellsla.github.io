@@ -1,0 +1,418 @@
+{
+  "version": 1,
+  "contribution": "Absolute zero is determined experimentally: the measurement data are turned into a straight line, the line is extended to zero pressure (extrapolation), and the uncertainty of the result is estimated using the steepest and the shallowest line that still fit.",
+  "learn": [
+    "You can turn measurement data into a straight line and extend the line to zero pressure.",
+    "You can determine absolute zero experimentally by extrapolation.",
+    "You can estimate the uncertainty of a result using the steepest and the shallowest line that fit."
+  ],
+  "prior": [
+    "When the volume and the amount of gas stay the same, the pressure of a dilute gas is proportional to the temperature in kelvins, and absolute zero is the zero point of the kelvin scale (chapter *Thermodynamic system, state variables and temperature*)",
+    "The temperature of a gas tells you the average kinetic energy of the particles, and pressure comes from particles colliding with the wall (chapter Thermodynamic system, state variables and temperature)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a frosty night, a car tyre is softer in the morning than it was the previous afternoon: when the air cools, its pressure decreases. Could the pressure keep decreasing if the cooling continued? In a school laboratory, you rarely get below $-20\\,{}^\\circ\\text{C}$, and yet physics knows at which temperature the pressure of a gas would be zero.",
+      "question": "How can the lowest possible temperature be determined from measurements made at quite ordinary temperatures?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review from the previous lesson",
+      "prompt": "The temperature of the air in a closed rigid container rises from $20\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$. The volume of the container and the amount of air stay the same. Which statement is true?",
+      "choices": [
+        {
+          "text": "The pressure doubles, because the temperature doubles.",
+          "feedback": "The ratio of temperatures is calculated in kelvins, not in degrees Celsius. The readings in kelvins are $293\\,\\text{K}$ and $313\\,\\text{K}$, so the temperature does not double, and neither does the pressure."
+        },
+        {
+          "text": "The pressure increases by about $7\\,\\%$, because the pressure is proportional to the temperature in kelvins: $313\\,\\text{K}$ / $293\\,\\text{K}$ ≈ 1.07.",
+          "correct": true,
+          "feedback": "Correct. In the chapter Thermodynamic system, state variables and temperature, the pressure of a dilute gas is proportional to the temperature in kelvins when the volume and the amount of gas stay the same. Today you investigate what follows from this when the line is extended downwards."
+        },
+        {
+          "text": "The pressure stays the same, because the volume does not change.",
+          "feedback": "The volume stays the same, but the particles move faster in a hotter gas: they hit the wall both more often and harder, so the pressure increases."
+        },
+        {
+          "text": "The pressure increases by $20\\,\\text{kPa}$, because the temperature rises by 20 degrees.",
+          "feedback": "The change in pressure is not equal to the change in temperature, because the quantities have different units. The pressure changes in proportion to the temperature in kelvins, and the size of the change depends on the initial value of the pressure."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: what happens to the pressure at colder temperatures",
+      "prompt": "The pressure of a gas in a closed container is measured in the temperature range 10–$100\\,{}^\\circ\\text{C}$. Three students predict how the pressure would behave if the gas could be cooled colder and colder. Which prediction is justified?",
+      "justify": true,
+      "layout": "models",
+      "choices": [
+        {
+          "text": "The pressure is proportional to the Celsius temperature, so it is zero already at $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "The zero of the Celsius scale is the freezing point of water, and the motion of the gas particles does not stop there. In the previous lesson, the pressure was proportional to the temperature in kelvins. Check from the data in the Investigate section how large the pressure is near $0\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The pressure decreases steadily along a straight line and is zero somewhere clearly below $0\\,{}^\\circ\\text{C}$.",
+          "correct": true,
+          "feedback": "The prediction fits the result of the previous lesson: the pressure is proportional to the temperature in kelvins, so it changes by the same amount for every degree. Check from the data in the Investigate section whether the points are on a straight line."
+        },
+        {
+          "text": "The pressure decreases more and more slowly and approaches zero but never reaches it.",
+          "feedback": "If the decrease in pressure slowed down, the measurement points would bend into a curve. Check from the data in the Investigate section whether the pressure changes by the same amount for every degree."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: how precisely absolute zero can be found",
+      "prompt": "The measurement is made in the temperature range 10–$100\\,{}^\\circ\\text{C}$, and the uncertainty of the pressure reading is estimated as $\\pm 1\\,\\text{kPa}$, that is, about one percent of the reading. The line is extended more than $270\\,{}^\\circ\\text{C}$ beyond the measurement range. How precisely is the temperature at zero pressure determined in this way?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "To within less than a degree, because the uncertainty of the pressure is only about one percent.",
+          "feedback": "The uncertainty of the pressure is small within the measurement range, but the line is extended by more than 270 degrees. Think about what happens to a small error in the slope of the line along the way. In the Investigate section you calculate how far apart the zero points of the lines that fit are."
+        },
+        {
+          "text": "To within a few degrees, because the one-percent uncertainty is preserved in the extension too.",
+          "feedback": "The relative uncertainty is not preserved when the line is extended: a small error in the slope grows larger the farther you extend it. In the Investigate section you see how much the zero points of the lines that fit differ."
+        },
+        {
+          "text": "To within tens of degrees, because a small error in the slope grows in the extension.",
+          "correct": true,
+          "feedback": "The reasoning is correct: a small error in the slope of a line grows larger the farther you extend the line. In the Investigate section you calculate the uncertainty yourself from the steepest and the shallowest line that fit."
+        },
+        {
+          "text": "Not at all, because zero pressure has not been measured and it cannot be deduced.",
+          "feedback": "Extrapolation is not guessing: when the points are on a line and the dependence is assumed to stay the same outside the measurement range, the extension of the line gives an estimate, and the uncertainty tells you how reliable the estimate is. In the Investigate section you estimate the uncertainty yourself."
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurements: pressure as a function of temperature",
+      "text": "The table gives the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to the imprecision of the pressure gauge has been added; they are not the results of a real measurement. The uncertainty of the pressure reading is estimated as $\\pm 1\\,\\text{kPa}$, which shows in the graph as vertical uncertainty bars. The picture is enlarged, and the vertical axis starts at 95 kPa.\n\n| θ (°C) | p (kPa) |\n| --- | --- |\n| 10 | 105 |\n| 25 | 110 |\n| 40 | 116 |\n| 55 | 122 |\n| 70 | 127 |\n| 85 | 132 |\n| 100 | 138 |\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Gas pressure as a function of temperature in a sealed container: seven measurement points in the temperature range 10–100 °C, each with a vertical uncertainty bar of ±1 kPa. The points rise almost along a straight line, but they do not all lie on the same line. The picture is enlarged: the vertical axis starts at 95 kPa.\" style=\"max-width:100%;font-size:24px\">\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"174.4\" y1=\"300.0\" x2=\"174.4\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"262.7\" y1=\"300.0\" x2=\"262.7\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"351.1\" y1=\"300.0\" x2=\"351.1\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"439.5\" y1=\"300.0\" x2=\"439.5\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"527.8\" y1=\"300.0\" x2=\"527.8\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"275.0\" x2=\"572.0\" y2=\"275.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"225.0\" x2=\"572.0\" y2=\"225.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"175.0\" x2=\"572.0\" y2=\"175.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"125.0\" x2=\"572.0\" y2=\"125.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"75.0\" x2=\"572.0\" y2=\"75.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"580.0\" y2=\"300.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"42.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<foreignObject x=\"51\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$0$</div></foreignObject>\n<foreignObject x=\"139.364\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$20$</div></foreignObject>\n<foreignObject x=\"227.727\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$40$</div></foreignObject>\n<foreignObject x=\"316.091\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$60$</div></foreignObject>\n<foreignObject x=\"404.455\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$80$</div></foreignObject>\n<foreignObject x=\"492.818\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"258\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"208\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$110$</div></foreignObject>\n<foreignObject x=\"14\" y=\"158\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$120$</div></foreignObject>\n<foreignObject x=\"14\" y=\"108\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$130$</div></foreignObject>\n<foreignObject x=\"14\" y=\"58\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$140$</div></foreignObject>\n<foreignObject x=\"430\" y=\"262\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\theta\\ (^\\circ\\text{C})$</div></foreignObject>\n<foreignObject x=\"92\" y=\"2\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$p\\ (\\text{kPa})$</div></foreignObject>\n<line x1=\"130.2\" y1=\"255.0\" x2=\"130.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"255.0\" x2=\"137.2\" y2=\"255.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"245.0\" x2=\"137.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"130.2\" cy=\"250.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"196.5\" y1=\"230.0\" x2=\"196.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"230.0\" x2=\"203.5\" y2=\"230.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"220.0\" x2=\"203.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"196.5\" cy=\"225.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"262.7\" y1=\"200.0\" x2=\"262.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"200.0\" x2=\"269.7\" y2=\"200.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"190.0\" x2=\"269.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"262.7\" cy=\"195.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"329.0\" y1=\"170.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"170.0\" x2=\"336.0\" y2=\"170.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"329.0\" cy=\"165.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"395.3\" y1=\"145.0\" x2=\"395.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"145.0\" x2=\"402.3\" y2=\"145.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"135.0\" x2=\"402.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"395.3\" cy=\"140.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"461.5\" y1=\"120.0\" x2=\"461.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"120.0\" x2=\"468.5\" y2=\"120.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"110.0\" x2=\"468.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"461.5\" cy=\"115.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"527.8\" y1=\"90.0\" x2=\"527.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"90.0\" x2=\"534.8\" y2=\"90.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"80.0\" x2=\"534.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"527.8\" cy=\"85.0\" r=\"4.5\" fill=\"#1f2933\"/>\n</svg>",
+      "question": {
+        "type": "choice",
+        "prompt": "The points are not exactly on the same line. What is the best justification for still drawing a line through the data?",
+        "choices": [
+          {
+            "text": "Every point has a measurement uncertainty, and all the points are less than $1\\,\\text{kPa}$ from the same line. The variation of the points up and down is explained by the measurement uncertainty, so the line is drawn through the middle of the group of points.",
+            "correct": true,
+            "feedback": "Correct. When the deviations are smaller than the uncertainty and vary randomly, a line fits the data. So the line does not have to hit every point, only pass through the uncertainty bars."
+          },
+          {
+            "text": "A line is always the correct model, so points that do not lie on it are erroneous and should be removed.",
+            "feedback": "Points are not removed on the grounds that they are not on the line. Here the deviation is smaller than the uncertainty, so all the points are reliable and belong in the data."
+          },
+          {
+            "text": "The points show bends, so the pressure does not depend linearly on temperature.",
+            "feedback": "A bend would correspond to a systematic deviation, for example points that are first above the line and then below it. Here the deviations vary up and down, so they are random measurement errors that fit within the measurement uncertainty."
+          }
+        ]
+      },
+      "source": "simulated",
+      "source_note": "calculated from the ideal gas model, spread added"
+    },
+    {
+      "id": "suora",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "From the line to zero pressure",
+      "text": "The best-fit line has been drawn through the points. Two points far apart have been read from it: A $(20.0\\,{}^\\circ\\text{C};\\ 108.6\\,\\text{kPa})$ and B $(90.0\\,{}^\\circ\\text{C};\\ 134.3\\,\\text{kPa})$. Two points give the slope of the line, and the slope and the equation of the line give the temperature at zero pressure.\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Measurement points and the best-fit line drawn through them. Two points have been read from the line: A at 20.0 °C and 108.6 kPa, and B at 90.0 °C and 134.3 kPa. The picture is enlarged: the vertical axis starts at 95 kPa.\" style=\"max-width:100%;font-size:24px\">\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"174.4\" y1=\"300.0\" x2=\"174.4\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"262.7\" y1=\"300.0\" x2=\"262.7\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"351.1\" y1=\"300.0\" x2=\"351.1\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"439.5\" y1=\"300.0\" x2=\"439.5\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"527.8\" y1=\"300.0\" x2=\"527.8\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"275.0\" x2=\"572.0\" y2=\"275.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"225.0\" x2=\"572.0\" y2=\"225.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"175.0\" x2=\"572.0\" y2=\"175.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"125.0\" x2=\"572.0\" y2=\"125.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"75.0\" x2=\"572.0\" y2=\"75.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"580.0\" y2=\"300.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"42.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<foreignObject x=\"51\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$0$</div></foreignObject>\n<foreignObject x=\"139.364\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$20$</div></foreignObject>\n<foreignObject x=\"227.727\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$40$</div></foreignObject>\n<foreignObject x=\"316.091\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$60$</div></foreignObject>\n<foreignObject x=\"404.455\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$80$</div></foreignObject>\n<foreignObject x=\"492.818\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"258\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"208\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$110$</div></foreignObject>\n<foreignObject x=\"14\" y=\"158\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$120$</div></foreignObject>\n<foreignObject x=\"14\" y=\"108\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$130$</div></foreignObject>\n<foreignObject x=\"14\" y=\"58\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$140$</div></foreignObject>\n<foreignObject x=\"430\" y=\"262\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\theta\\ (^\\circ\\text{C})$</div></foreignObject>\n<foreignObject x=\"92\" y=\"2\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$p\\ (\\text{kPa})$</div></foreignObject>\n<line x1=\"86.0\" y1=\"268.7\" x2=\"572.0\" y2=\"67.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"130.2\" y1=\"255.0\" x2=\"130.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"255.0\" x2=\"137.2\" y2=\"255.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"245.0\" x2=\"137.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"130.2\" cy=\"250.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"196.5\" y1=\"230.0\" x2=\"196.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"230.0\" x2=\"203.5\" y2=\"230.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"220.0\" x2=\"203.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"196.5\" cy=\"225.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"262.7\" y1=\"200.0\" x2=\"262.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"200.0\" x2=\"269.7\" y2=\"200.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"190.0\" x2=\"269.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"262.7\" cy=\"195.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"329.0\" y1=\"170.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"170.0\" x2=\"336.0\" y2=\"170.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"329.0\" cy=\"165.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"395.3\" y1=\"145.0\" x2=\"395.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"145.0\" x2=\"402.3\" y2=\"145.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"135.0\" x2=\"402.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"395.3\" cy=\"140.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"461.5\" y1=\"120.0\" x2=\"461.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"120.0\" x2=\"468.5\" y2=\"120.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"110.0\" x2=\"468.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"461.5\" cy=\"115.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"527.8\" y1=\"90.0\" x2=\"527.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"90.0\" x2=\"534.8\" y2=\"90.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"80.0\" x2=\"534.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"527.8\" cy=\"85.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<circle cx=\"174.4\" cy=\"232.0\" r=\"9\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3\"/>\n<foreignObject x=\"122.364\" y=\"188.03\" width=\"44\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$A$</div></foreignObject>\n<circle cx=\"483.6\" cy=\"103.7\" r=\"9\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3\"/>\n<foreignObject x=\"493.636\" y=\"113.685\" width=\"44\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$B$</div></foreignObject>\n</svg>\n\nBelow is the same line over the whole temperature range. The dashed line is the extension of the line beyond the measurement range, and it meets zero pressure at $\\theta_0$. From the picture you can see roughly where it is; the exact value is calculated.\n\n<svg viewBox=\"0 0 600 368\" role=\"img\" aria-label=\"The same best-fit line over the whole temperature range from −300 °C to 100 °C, starting from a pressure of 0 kPa. The measurement points are only in the range 10–100 °C. The dashed extension of the line extrapolates from the measurement range towards colder temperatures and meets zero pressure at θ₀, which you calculate in the exercise. The picture is to scale.\" style=\"max-width:100%;font-size:24px\">\n<line x1=\"78.0\" y1=\"270.0\" x2=\"78.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"202.0\" y1=\"270.0\" x2=\"202.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"326.0\" y1=\"270.0\" x2=\"326.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"450.0\" y1=\"270.0\" x2=\"450.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"574.0\" y1=\"270.0\" x2=\"574.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"78.0\" y1=\"190.0\" x2=\"574.0\" y2=\"190.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"78.0\" y1=\"110.0\" x2=\"574.0\" y2=\"110.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"78.0\" y1=\"30.0\" x2=\"574.0\" y2=\"30.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"78.0\" y1=\"270.0\" x2=\"582.0\" y2=\"270.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"78.0\" y1=\"270.0\" x2=\"78.0\" y2=\"22.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<foreignObject x=\"43\" y=\"274\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">${-}300$</div></foreignObject>\n<foreignObject x=\"167\" y=\"274\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">${-}200$</div></foreignObject>\n<foreignObject x=\"291\" y=\"274\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">${-}100$</div></foreignObject>\n<foreignObject x=\"415\" y=\"274\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$0$</div></foreignObject>\n<foreignObject x=\"530\" y=\"274\" width=\"68\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$100$</div></foreignObject>\n<foreignObject x=\"6\" y=\"173\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$50$</div></foreignObject>\n<foreignObject x=\"6\" y=\"93\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$100$</div></foreignObject>\n<foreignObject x=\"6\" y=\"13\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$150$</div></foreignObject>\n<foreignObject x=\"424\" y=\"226\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\theta\\ (^\\circ\\text{C})$</div></foreignObject>\n<foreignObject x=\"86\" y=\"0\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$p\\ (\\text{kPa})$</div></foreignObject>\n<line x1=\"108.0\" y1=\"270.0\" x2=\"462.4\" y2=\"102.1\" stroke=\"#1f2933\" stroke-width=\"3\" stroke-dasharray=\"10 7\"/>\n<line x1=\"462.4\" y1=\"102.1\" x2=\"574.0\" y2=\"49.2\" stroke=\"#1f2933\" stroke-width=\"4\"/>\n<circle cx=\"462.4\" cy=\"102.0\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"481.0\" cy=\"94.0\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"499.6\" cy=\"84.4\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"518.2\" cy=\"74.8\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"536.8\" cy=\"66.8\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"555.4\" cy=\"58.8\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"574.0\" cy=\"49.2\" r=\"4\" fill=\"#1f2933\"/>\n<circle cx=\"108.0\" cy=\"270.0\" r=\"7\" fill=\"#ffffff\" stroke=\"#c92a2a\" stroke-width=\"3\"/>\n<foreignObject x=\"60\" y=\"300\" width=\"150\" height=\"40\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$\\theta_0 = \\,?$</div></foreignObject><line x1=\"108.0\" y1=\"302\" x2=\"108.0\" y2=\"279\" stroke=\"#1f2933\" stroke-width=\"1.5\"/>\n<foreignObject x=\"204\" y=\"76\" width=\"200\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$\\text{extrapolation}$</div></foreignObject><line x1=\"264\" y1=\"114\" x2=\"264\" y2=\"184\" stroke=\"#1f2933\" stroke-width=\"1.5\"/><foreignObject x=\"300\" y=\"6\" width=\"152\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\text{measurement range}$</div></foreignObject><path d=\"M462,48 V32 H574 V48\" fill=\"none\" stroke=\"#1f2933\" stroke-width=\"2\"/>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the slope of the line from points A and B, and then the temperature at which the line gives a pressure of zero. Give your answer in degrees Celsius.",
+        "answer": -276,
+        "unit": "°C",
+        "tolerance": 0.02,
+        "hints": [
+          "What is the slope $k = \\Delta p / \\Delta\\theta$ of the line between points A and B?",
+          "The equation of the line is $p = p_0 + k\\theta$. Substitute the values of point A and solve $p_0$, the pressure at $0\\,{}^\\circ\\text{C}$. Zero pressure: $\\theta_0 = -p_0/k$.",
+          "$k = \\dfrac{(134.3 - 108.6)\\,\\text{kPa}}{(90.0 - 20.0)\\,{}^\\circ\\text{C}}$, and $p_0 = 108.6\\,\\text{kPa} - k \\cdot 20.0\\,{}^\\circ\\text{C}$."
+        ],
+        "mistakes": [
+          {
+            "value": -296,
+            "feedback": "In the formula for the temperature at zero pressure, you used the pressure of point A, $108.6\\,\\text{kPa}$, instead of the pressure $p_0$ of the line. $p_0$ is the pressure at $0\\,{}^\\circ\\text{C}$, and the temperature of point A is $20.0\\,{}^\\circ\\text{C}$. First subtract $k \\cdot 20.0\\,{}^\\circ\\text{C}$."
+          },
+          {
+            "value": 276,
+            "feedback": "The sign is missing. The temperature at zero pressure is negative in degrees Celsius, because the line continues below zero: $\\theta_0 = -p_0/k$."
+          }
+        ],
+        "solution": "**Given:** points read from the line $A = (20.0\\,{}^\\circ\\text{C};\\ 108.6\\,\\text{kPa})$ and $B = (90.0\\,{}^\\circ\\text{C};\\ 134.3\\,\\text{kPa})$\n\n**Find:** the temperature $\\theta_0$ in degrees Celsius at which the line gives a pressure of zero\n\n**Principle:** The flask is sealed and rigid, so the amount and volume of the gas stay constant and the pressure is a linear function of temperature, $p = p_0 + k\\theta$. So two points on the line are enough to determine the line, and the line can be extended (extrapolated) all the way to zero pressure.\n\n**Reading the graph:** Points A and B are read far apart from the best-fit line, because a long distance reduces the effect of a reading error on the slope. The pressure of a point is read from the vertical axis at its temperature: A at $\\theta = 20.0\\,{}^\\circ\\text{C}$ and B at $\\theta = 90.0\\,{}^\\circ\\text{C}$. The readings are given in the problem, and the vertical axis of the picture starts at $95\\,\\text{kPa}$, so the zero point is not read from the picture.\n\n**Formula:** The slope, the pressure of the line at $0\\,{}^\\circ\\text{C}$ and the temperature at zero pressure:\n\n$$\\begin{aligned} k &= \\frac{p_B - p_A}{\\theta_B - \\theta_A} \\\\ p_0 &= p_A - k\\theta_A \\\\ \\theta_0 &= -\\frac{p_0}{k} \\end{aligned}$$\n\n**Conversions:** No conversions are needed: the pressures are in kilopascals, so the kPa cancels in the quotient $p_0/k$ and the result is in degrees Celsius. The temperature difference $90.0\\,{}^\\circ\\text{C} - 20.0\\,{}^\\circ\\text{C} = 70.0\\,{}^\\circ\\text{C}$ is the same in kelvins.\n\n**Substitution:** $k = \\dfrac{(134.3 - 108.6)\\,\\text{kPa}}{(90.0 - 20.0)\\,{}^\\circ\\text{C}} = \\dfrac{25.7\\,\\text{kPa}}{70.0\\,{}^\\circ\\text{C}} = 0.36714\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$. Then $p_0 = 108.6\\,\\text{kPa} - 0.36714\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot 20.0\\,{}^\\circ\\text{C} = 101.26\\,\\text{kPa}$ and $\\theta_0 = -\\dfrac{101.26\\,\\text{kPa}}{0.36714\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}} = -275.8\\,{}^\\circ\\text{C}$.\n\n**Answer:** $-276\\,{}^\\circ\\text{C}$, three significant figures, because the pressure difference $25.7\\,\\text{kPa}$ and the temperature difference $70.0\\,{}^\\circ\\text{C}$ are known to three figures; finally the subtraction $20.0 - 296$ gives the result in whole degrees.\n\n**Reasonableness:** Estimate: the pressure rises by about $0.37\\,\\text{kPa}$ per degree, so $101\\,\\text{kPa}$ runs out after about $101/0.37 \\approx 270$ degrees. The result is close to $-273.15\\,{}^\\circ\\text{C}$, and the difference is small compared with the extrapolation distance of $270\\,{}^\\circ\\text{C}$. The dashed line in the picture meets zero pressure at the point that your result gives."
+      },
+      "source": "simulated",
+      "source_note": "same example data as above"
+    },
+    {
+      "id": "aariviiva",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Is the line acceptable as a limit line?",
+      "text": "To estimate the uncertainty, you look for the steepest line that still passes through every uncertainty bar. Two candidates, $s_1$ and $s_2$, have been drawn in the picture. Check each bar: does the line pass through it or miss it?\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Measurement points with error bars and two steep lines. Line s1 passes through every ±1 kPa error bar and touches the ends of the bars at 10 °C and 85 °C. Line s2 is even steeper: it passes below the bars at 10 °C and above them at 70 °C, 85 °C and 100 °C. The picture is enlarged: the vertical axis starts at 95 kPa.\" style=\"max-width:100%;font-size:24px\">\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"174.4\" y1=\"300.0\" x2=\"174.4\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"262.7\" y1=\"300.0\" x2=\"262.7\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"351.1\" y1=\"300.0\" x2=\"351.1\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"439.5\" y1=\"300.0\" x2=\"439.5\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"527.8\" y1=\"300.0\" x2=\"527.8\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"275.0\" x2=\"572.0\" y2=\"275.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"225.0\" x2=\"572.0\" y2=\"225.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"175.0\" x2=\"572.0\" y2=\"175.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"125.0\" x2=\"572.0\" y2=\"125.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"75.0\" x2=\"572.0\" y2=\"75.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"580.0\" y2=\"300.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"42.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<foreignObject x=\"51\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$0$</div></foreignObject>\n<foreignObject x=\"139.364\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$20$</div></foreignObject>\n<foreignObject x=\"227.727\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$40$</div></foreignObject>\n<foreignObject x=\"316.091\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$60$</div></foreignObject>\n<foreignObject x=\"404.455\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$80$</div></foreignObject>\n<foreignObject x=\"492.818\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"258\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"208\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$110$</div></foreignObject>\n<foreignObject x=\"14\" y=\"158\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$120$</div></foreignObject>\n<foreignObject x=\"14\" y=\"108\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$130$</div></foreignObject>\n<foreignObject x=\"14\" y=\"58\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$140$</div></foreignObject>\n<foreignObject x=\"430\" y=\"262\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\theta\\ (^\\circ\\text{C})$</div></foreignObject>\n<foreignObject x=\"92\" y=\"2\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$p\\ (\\text{kPa})$</div></foreignObject>\n<line x1=\"86.0\" y1=\"274.3\" x2=\"563.2\" y2=\"65.5\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"86.0\" y1=\"280.5\" x2=\"563.2\" y2=\"53.7\" stroke=\"#6b7480\" stroke-width=\"3\" stroke-dasharray=\"9 6\"/>\n<line x1=\"130.2\" y1=\"255.0\" x2=\"130.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"255.0\" x2=\"137.2\" y2=\"255.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"245.0\" x2=\"137.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"130.2\" cy=\"250.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"196.5\" y1=\"230.0\" x2=\"196.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"230.0\" x2=\"203.5\" y2=\"230.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"220.0\" x2=\"203.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"196.5\" cy=\"225.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"262.7\" y1=\"200.0\" x2=\"262.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"200.0\" x2=\"269.7\" y2=\"200.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"190.0\" x2=\"269.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"262.7\" cy=\"195.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"329.0\" y1=\"170.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"170.0\" x2=\"336.0\" y2=\"170.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"329.0\" cy=\"165.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"395.3\" y1=\"145.0\" x2=\"395.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"145.0\" x2=\"402.3\" y2=\"145.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"135.0\" x2=\"402.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"395.3\" cy=\"140.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"461.5\" y1=\"120.0\" x2=\"461.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"120.0\" x2=\"468.5\" y2=\"120.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"110.0\" x2=\"468.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"461.5\" cy=\"115.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"527.8\" y1=\"90.0\" x2=\"527.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"90.0\" x2=\"534.8\" y2=\"90.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"80.0\" x2=\"534.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"527.8\" cy=\"85.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<foreignObject x=\"494\" y=\"12\" width=\"50\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$s_2$</div></foreignObject><line x1=\"534\" y1=\"48\" x2=\"545\" y2=\"59\" stroke=\"#1f2933\" stroke-width=\"1.5\"/>\n<foreignObject x=\"558\" y=\"88\" width=\"40\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$s_1$</div></foreignObject><line x1=\"566\" y1=\"88\" x2=\"558\" y2=\"72\" stroke=\"#1f2933\" stroke-width=\"1.5\"/>\n</svg>",
+      "question": {
+        "type": "choice",
+        "prompt": "Which of the lines is acceptable as the steepest limit line?",
+        "choices": [
+          {
+            "text": "Only $s_1$, because $s_2$ misses several bars.",
+            "correct": true,
+            "feedback": "Correct. $s_1$ passes through every bar and touches the ends of the bars at $10\\,{}^\\circ\\text{C}$ and $85\\,{}^\\circ\\text{C}$, so it cannot be turned any steeper. $s_2$ falls below the lowest bar and passes above the three highest bars."
+          },
+          {
+            "text": "Only $s_2$, because a limit line must be as steep as possible.",
+            "feedback": "A limit line is the steepest line that still passes through every bar. Look at the bars at $10\\,{}^\\circ\\text{C}$ and $85\\,{}^\\circ\\text{C}$: $s_2$ misses them, so it does not meet the condition for a limit line."
+          },
+          {
+            "text": "Both, because both pass through most of the bars.",
+            "feedback": "In this method the condition for a limit line is that it passes through every bar, so even one missed bar is enough to reject a line as a limit line. $s_2$ misses the bars at the temperatures 10, 70, 85 and $100\\,{}^\\circ\\text{C}$."
+          },
+          {
+            "text": "Neither, because neither passes through the midpoints of the points.",
+            "feedback": "A limit line does not have to hit the points, only pass through the bars; it is allowed to touch the end of a bar. $s_1$ meets this at every point."
+          }
+        ]
+      },
+      "optional": true
+    },
+    {
+      "id": "epavarmuus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "How precise is the result?",
+      "text": "Other lines than the best-fit line can be drawn through the points. The picture shows two limit lines that still pass through all the uncertainty bars. The steepest touches the ends of the bars at $10\\,{}^\\circ\\text{C}$ and $85\\,{}^\\circ\\text{C}$: $p = 100.1\\,\\text{kPa} + 0.387\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$. The shallowest touches them at $25\\,{}^\\circ\\text{C}$ and $100\\,{}^\\circ\\text{C}$: $p = 102.3\\,\\text{kPa} + 0.347\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$. Within the measurement range they are almost the same, but when you extrapolate they move apart.\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Measurement points with error bars and two limit lines that still pass through all the error bars: the steepest line p = 100.1 kPa + 0.387 kPa/°C · θ touches the ends of the bars at 10 °C and 85 °C, and the shallowest line p = 102.3 kPa + 0.347 kPa/°C · θ at 25 °C and 100 °C. The picture is enlarged: the vertical axis starts at 95 kPa.\" style=\"max-width:100%;font-size:24px\">\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"174.4\" y1=\"300.0\" x2=\"174.4\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"262.7\" y1=\"300.0\" x2=\"262.7\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"351.1\" y1=\"300.0\" x2=\"351.1\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"439.5\" y1=\"300.0\" x2=\"439.5\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"527.8\" y1=\"300.0\" x2=\"527.8\" y2=\"50.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"275.0\" x2=\"572.0\" y2=\"275.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"225.0\" x2=\"572.0\" y2=\"225.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"175.0\" x2=\"572.0\" y2=\"175.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"125.0\" x2=\"572.0\" y2=\"125.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"75.0\" x2=\"572.0\" y2=\"75.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"580.0\" y2=\"300.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<line x1=\"86.0\" y1=\"300.0\" x2=\"86.0\" y2=\"42.0\" stroke=\"#1f2933\" stroke-width=\"3\"/>\n<foreignObject x=\"51\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$0$</div></foreignObject>\n<foreignObject x=\"139.364\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$20$</div></foreignObject>\n<foreignObject x=\"227.727\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$40$</div></foreignObject>\n<foreignObject x=\"316.091\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$60$</div></foreignObject>\n<foreignObject x=\"404.455\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$80$</div></foreignObject>\n<foreignObject x=\"492.818\" y=\"304\" width=\"70\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"258\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$100$</div></foreignObject>\n<foreignObject x=\"14\" y=\"208\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$110$</div></foreignObject>\n<foreignObject x=\"14\" y=\"158\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$120$</div></foreignObject>\n<foreignObject x=\"14\" y=\"108\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$130$</div></foreignObject>\n<foreignObject x=\"14\" y=\"58\" width=\"64\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$140$</div></foreignObject>\n<foreignObject x=\"430\" y=\"262\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\theta\\ (^\\circ\\text{C})$</div></foreignObject>\n<foreignObject x=\"92\" y=\"2\" width=\"150\" height=\"34\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:left\">$p\\ (\\text{kPa})$</div></foreignObject>\n<line x1=\"86.0\" y1=\"274.3\" x2=\"572.0\" y2=\"61.7\" stroke=\"#6b7480\" stroke-width=\"3\" stroke-dasharray=\"9 6\"/>\n<line x1=\"86.0\" y1=\"263.3\" x2=\"572.0\" y2=\"72.7\" stroke=\"#6b7480\" stroke-width=\"3\" stroke-dasharray=\"9 6\"/>\n<line x1=\"130.2\" y1=\"255.0\" x2=\"130.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"255.0\" x2=\"137.2\" y2=\"255.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"123.2\" y1=\"245.0\" x2=\"137.2\" y2=\"245.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"130.2\" cy=\"250.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"196.5\" y1=\"230.0\" x2=\"196.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"230.0\" x2=\"203.5\" y2=\"230.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"189.5\" y1=\"220.0\" x2=\"203.5\" y2=\"220.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"196.5\" cy=\"225.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"262.7\" y1=\"200.0\" x2=\"262.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"200.0\" x2=\"269.7\" y2=\"200.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"255.7\" y1=\"190.0\" x2=\"269.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"262.7\" cy=\"195.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"329.0\" y1=\"170.0\" x2=\"329.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"170.0\" x2=\"336.0\" y2=\"170.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"322.0\" y1=\"160.0\" x2=\"336.0\" y2=\"160.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"329.0\" cy=\"165.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"395.3\" y1=\"145.0\" x2=\"395.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"145.0\" x2=\"402.3\" y2=\"145.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"388.3\" y1=\"135.0\" x2=\"402.3\" y2=\"135.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"395.3\" cy=\"140.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"461.5\" y1=\"120.0\" x2=\"461.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"120.0\" x2=\"468.5\" y2=\"120.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"454.5\" y1=\"110.0\" x2=\"468.5\" y2=\"110.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"461.5\" cy=\"115.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<line x1=\"527.8\" y1=\"90.0\" x2=\"527.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"90.0\" x2=\"534.8\" y2=\"90.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><line x1=\"520.8\" y1=\"80.0\" x2=\"534.8\" y2=\"80.0\" stroke=\"#1f2933\" stroke-width=\"2.5\"/><circle cx=\"527.8\" cy=\"85.0\" r=\"4.5\" fill=\"#1f2933\"/>\n<foreignObject x=\"440\" y=\"14\" width=\"150\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\text{steepest line}$</div></foreignObject><line x1=\"550\" y1=\"52\" x2=\"550\" y2=\"68\" stroke=\"#1f2933\" stroke-width=\"1.5\"/>\n<foreignObject x=\"430\" y=\"176\" width=\"150\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right\">$\\text{shallowest line}$</div></foreignObject><line x1=\"506\" y1=\"174\" x2=\"506\" y2=\"102\" stroke=\"#1f2933\" stroke-width=\"1.5\"/>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the temperature at zero pressure $\\theta_0 = -p_0/k$ for each limit line, and use them to determine the uncertainty of the result $\\Delta\\theta_0$, that is, half of the interval. Give your answer in degrees Celsius.",
+        "answer": 18.1,
+        "unit": "°C",
+        "tolerance": 0.03,
+        "hints": [
+          "First calculate $\\theta_0 = -p_0/k$ for each line, using its own $p_0$ and $k$.",
+          "The larger value is the less negative number. The uncertainty is half of the interval: $\\Delta\\theta_0 = (\\theta_{0,\\text{max}} - \\theta_{0,\\text{min}})/2$.",
+          "Steepest line: $-100.1/0.387 \\approx -258.7\\,{}^\\circ\\text{C}$, shallowest: $-102.3/0.347 \\approx -294.8\\,{}^\\circ\\text{C}$."
+        ],
+        "mistakes": [
+          {
+            "value": 36.1,
+            "feedback": "You calculated the width of the whole interval. The uncertainty is given as half of it, because the result is written in the form $\\theta_0 \\pm \\Delta\\theta_0$: the interval extends $\\Delta\\theta_0$ in each direction from the midpoint."
+          }
+        ],
+        "solution": "**Given:** the steepest limit line $p = 100.1\\,\\text{kPa} + 0.387\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$ and the shallowest $p = 102.3\\,\\text{kPa} + 0.347\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}} \\cdot \\theta$\n\n**Find:** the uncertainty $\\Delta\\theta_0$ in degrees Celsius, that is, half of the interval between the zero points\n\n**Principle:** The limit lines pass through all the uncertainty bars, so they fit the data just as well as the best-fit line. The true line probably lies between them, and their temperatures at zero pressure bound the estimated interval for the zero point. The result is written in the form $\\theta_0 \\pm \\Delta\\theta_0$, so the uncertainty is half of the interval.\n\n**Reading the graph:** In the picture, the lines almost overlap in the measurement range but move apart when extrapolated. The equations of the limit lines (the values $p_0$ and slopes $k$) are given in the text of the problem, so they are read from there and not from the picture.\n\n**Formula:** For each line $0 = p_0 + k\\theta_0$, and the uncertainty is half of the interval:\n\n$$\\begin{aligned} \\theta_0 &= -\\frac{p_0}{k} \\\\ \\Delta\\theta_0 &= \\frac{\\theta_{0,\\text{max}} - \\theta_{0,\\text{min}}}{2} \\end{aligned}$$\n\n**Conversions:** No conversions are needed: $p_0$ is in kilopascals and $k$ in the unit $\\text{kPa}/{}^\\circ\\text{C}$, so the quotient is in degrees Celsius. The difference of temperatures is the same in kelvins.\n\n**Substitution:** $\\theta_{0,\\text{max}} = -\\dfrac{100.1\\,\\text{kPa}}{0.387\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}} = -258.66\\,{}^\\circ\\text{C}$ and $\\theta_{0,\\text{min}} = -\\dfrac{102.3\\,\\text{kPa}}{0.347\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}} = -294.81\\,{}^\\circ\\text{C}$. So $\\Delta\\theta_0 = \\dfrac{-258.66\\,{}^\\circ\\text{C} - (-294.81\\,{}^\\circ\\text{C})}{2} = 18.08\\,{}^\\circ\\text{C}$.\n\n**Answer:** $18\\,{}^\\circ\\text{C}$ (exactly $18.1\\,{}^\\circ\\text{C}$), two significant figures, because the zero points $-259\\,{}^\\circ\\text{C}$ and $-295\\,{}^\\circ\\text{C}$ are known to three figures, that is, in whole degrees, and their difference $36\\,{}^\\circ\\text{C}$ is a two-figure number.\n\n**Reasonableness:** The larger value $\\theta_{0,\\text{max}}$ is less negative, so the difference is positive. The midpoint of the interval is $\\dfrac{-258.66 + (-294.81)}{2} = -276.7\\,{}^\\circ\\text{C}$, close to the result of the best-fit line, $-276\\,{}^\\circ\\text{C}$. The result $-276 \\pm 18\\,{}^\\circ\\text{C}$ contains the value $-273.15\\,{}^\\circ\\text{C}$. The uncertainty is large because the zero point is more than $270\\,{}^\\circ\\text{C}$ from the measurement range: a small difference in the slope grows over a long distance."
+      },
+      "source": "simulated",
+      "source_note": "same example data as above"
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: where is the zero point of temperature?",
+      "prompt": "Write your result in the form $\\theta_0 \\pm \\Delta\\theta_0$ and compare it with absolute zero, $-273.15\\,{}^\\circ\\text{C}$. Does the result agree with it? Where does the uncertainty come from, and how could it be reduced?",
+      "model": "The best-fit line gives $\\theta_0 \\approx -276\\,{}^\\circ\\text{C}$, and the limit lines give the uncertainty $\\Delta\\theta_0 \\approx 18\\,{}^\\circ\\text{C}$, so the result is $(-276 \\pm 18)\\,{}^\\circ\\text{C}$. The value $-273.15\\,{}^\\circ\\text{C}$ is inside the interval, so the result agrees with it. The uncertainty is large because the line is extended far beyond the measurement range ($10$–$100\\,{}^\\circ\\text{C}$), and a small difference in the slope grows large in the extrapolation. A more precise pressure gauge, more measurement points and a wider temperature range would reduce it. The data were model-based example data; with real measurements, the result and the uncertainty would be their own.",
+      "criteria": [
+        "I gave the uncertainty of the result.",
+        "I compared the result with the value $-273.15\\,{}^\\circ\\text{C}$ using the uncertainty interval.",
+        "I explained why extrapolation increases the uncertainty.",
+        "I suggested at least one way to reduce the uncertainty."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the data. Then return to the question at the start: how can the lowest possible temperature be determined from measurements made at ordinary temperatures? Why is the result only an estimate, and what causes its uncertainty?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student solves the temperature at zero pressure. They read the point $(40\\,{}^\\circ\\text{C};\\ 116\\,\\text{kPa})$ from the line, calculate the slope $0.367\\,\\text{kPa}/{}^\\circ\\text{C}$ and write: $\\theta_0 = -\\dfrac{116\\,\\text{kPa}}{0.367\\,\\text{kPa}/{}^\\circ\\text{C}} \\approx -316\\,{}^\\circ\\text{C}$. Where is the error?",
+      "choices": [
+        {
+          "text": "In the formula $\\theta_0 = -p_0/k$ you must substitute the pressure at $0\\,{}^\\circ\\text{C}$, not the pressure of the point at $40\\,{}^\\circ\\text{C}$. The correct calculation is $\\theta_0 = 40\\,{}^\\circ\\text{C} - \\dfrac{116\\,\\text{kPa}}{0.367\\,\\text{kPa}/{}^\\circ\\text{C}} \\approx -276\\,{}^\\circ\\text{C}$.",
+          "correct": true,
+          "feedback": "Correct. The formula $\\theta_0 = -p_0/k$ assumes that the temperature of the point is $0\\,{}^\\circ\\text{C}$. When the point is elsewhere, the temperature $\\theta_1$ must be included: $\\theta_0 = \\theta_1 - p_1/k$."
+        },
+        {
+          "text": "The slope should be calculated in kelvins, so the number changes.",
+          "feedback": "A change in temperature is the same in degrees Celsius and in kelvins, so the slope is the same with the unit kPa/K and kPa/°C. The error is elsewhere."
+        },
+        {
+          "text": "The line must not be extended beyond the measurement range, so the calculation cannot be done.",
+          "feedback": "Extrapolation is allowed when an estimate of the uncertainty goes with it and you state the assumption that the dependence stays the same outside the measurement range. The error is in the calculation, not in the method."
+        },
+        {
+          "text": "The pressure should be converted to pascals before the calculation.",
+          "feedback": "Kilopascals work, because the unit cancels: the pressure is divided by the slope, whose unit contains the same kilopascal."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "Another group used a larger flask. From the line fitted to their points, the points $(30.0\\,{}^\\circ\\text{C};\\ 133.0\\,\\text{kPa})$ and $(90.0\\,{}^\\circ\\text{C};\\ 159.0\\,\\text{kPa})$ were read. At what temperature does the line give a pressure of zero? Give your answer in degrees Celsius.",
+      "answer": -277,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the slope $k = \\Delta p/\\Delta\\theta$ between the two points.",
+        "Use the equation of the line $p = p_0 + k\\theta$ and solve $p_0$, the pressure at $0\\,{}^\\circ\\text{C}$. Then $\\theta_0 = -p_0/k$.",
+        "$k = \\dfrac{26.0\\,\\text{kPa}}{60.0\\,{}^\\circ\\text{C}}$, $p_0 = 133.0\\,\\text{kPa} - k \\cdot 30.0\\,{}^\\circ\\text{C}$."
+      ],
+      "mistakes": [
+        {
+          "value": -307,
+          "feedback": "You used the pressure $133.0\\,\\text{kPa}$ of the point at $30.0\\,{}^\\circ\\text{C}$ in the formula for the zero point. The formula needs the pressure at $0\\,{}^\\circ\\text{C}$: $p_0 = 133.0\\,\\text{kPa} - k \\cdot 30.0\\,{}^\\circ\\text{C} = 120.0\\,\\text{kPa}$."
+        },
+        {
+          "value": 277,
+          "feedback": "The sign is missing: the pressure of a gas decreases when the temperature falls, so the zero pressure is below zero in degrees Celsius."
+        }
+      ],
+      "solution": "**Given:** points read from the line $(\\theta_1, p_1) = (30.0\\,{}^\\circ\\text{C};\\ 133.0\\,\\text{kPa})$ and $(\\theta_2, p_2) = (90.0\\,{}^\\circ\\text{C};\\ 159.0\\,\\text{kPa})$\n\n**Find:** the temperature $\\theta_0$ in degrees Celsius at which the line gives a pressure of zero\n\n**Principle:** The size of the flask does not matter: the flask is sealed and rigid, so the amount and volume of the gas stay constant and the pressure is a linear function of temperature. So the line through two points can be extended to zero pressure in the same way as in the other experiments, and the zero point is a property of the line.\n\n**Formula:** The slope and the temperature at zero pressure (the line through point 1, $p = 0$):\n\n$$\\begin{aligned} k &= \\frac{p_2 - p_1}{\\theta_2 - \\theta_1} \\\\ \\theta_0 &= \\theta_1 - \\frac{p_1}{k} \\end{aligned}$$\n\n**Conversions:** No conversions are needed: the pressures are in kilopascals, so the kPa cancels in the quotient $p_1/k$ and the result is in degrees Celsius. The temperature difference $90.0\\,{}^\\circ\\text{C} - 30.0\\,{}^\\circ\\text{C} = 60.0\\,{}^\\circ\\text{C}$ is the same in kelvins.\n\n**Substitution:** $k = \\dfrac{(159.0 - 133.0)\\,\\text{kPa}}{(90 - 30)\\,{}^\\circ\\text{C}} = \\dfrac{26.0\\,\\text{kPa}}{60.0\\,{}^\\circ\\text{C}} = 0.43333\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$ and $\\theta_0 = 30.0\\,{}^\\circ\\text{C} - \\dfrac{133.0\\,\\text{kPa}}{0.43333\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}} = 30\\,{}^\\circ\\text{C} - 306.92\\,{}^\\circ\\text{C} = -276.92\\,{}^\\circ\\text{C}$\n\n**Answer:** $-277\\,{}^\\circ\\text{C}$, three significant figures, because the pressure difference $26.0\\,\\text{kPa}$ and the temperature difference $60.0\\,{}^\\circ\\text{C}$ are known to three figures; finally the subtraction $30.0 - 307$ gives the result in whole degrees.\n\n**Reasonableness:** In the larger flask the pressure and the slope are larger, but their ratio is almost the same, so the result is close to $-273.15\\,{}^\\circ\\text{C}$. Check: the pressure of the line at $0\\,{}^\\circ\\text{C}$ is $133.0 - 0.43333 \\cdot 30 = 120.0\\,\\text{kPa}$, and $-120.0/0.43333 = -276.9\\,{}^\\circ\\text{C}$ gives the same zero point.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 problems you read the slope or the zero point from a line, level 2 problems have two steps, and level 3 requires reasoning and estimating the uncertainty."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. What the uncertainty tells you",
+      "prompt": "A group's result is $\\theta_0 = -276 \\pm 18\\,{}^\\circ\\text{C}$. What does $\\pm 18\\,{}^\\circ\\text{C}$ mean?",
+      "choices": [
+        {
+          "text": "The true zero point is probably in the interval $-294\\,{}^\\circ\\text{C}$ … $-258\\,{}^\\circ\\text{C}$, because the lines that fit the points meet zero pressure within this interval.",
+          "correct": true,
+          "feedback": "Correct. The uncertainty tells you over how wide an interval the lines that fit the measurement data meet zero pressure. The accepted value $-273.15\\,{}^\\circ\\text{C}$ lies in the interval, so the result agrees with it."
+        },
+        {
+          "text": "Eighteen errors were made in the measurement.",
+          "feedback": "Uncertainty does not mean the number of errors. It describes the uncertainty attached to the result: here, over how wide an interval the lines that fit the measurements cross zero pressure."
+        },
+        {
+          "text": "The pressure gauge showed $18\\,\\text{kPa}$ too much or too little at every point.",
+          "feedback": "The units show that this is not the case: the number 18 is the uncertainty of the temperature in degrees Celsius, not the uncertainty of the pressure in kilopascals."
+        },
+        {
+          "text": "The result is certainly correct, because the number 18 is small.",
+          "feedback": "Uncertainty does not guarantee that the result is correct. It only tells you the precision of the measurement; a systematic error, for example a poorly calibrated gauge, could shift the whole result."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. The line and the measurement points",
+      "prompt": "A group measured the pressure of a sealed gas at six temperatures and plotted the points on a $(\\theta, p)$ coordinate grid. No line passes through all the points. What should the group do when it extends the graph to zero pressure?",
+      "choices": [
+        {
+          "text": "Draw one line through the middle of the group of points so that it passes through the uncertainty bars, and extend it to zero pressure.",
+          "correct": true,
+          "feedback": "Correct. In real sets of measurements the points are usually not exactly on one line, because of measurement uncertainty, so a deviation from the line is not an error. The fitted line describes the whole data set: it may pass through some point, but it does not have to. The slope is read from the line using two points that are far apart."
+        },
+        {
+          "text": "Join the points with a broken line and extend its last part to zero pressure, because then the graph passes through every measurement point.",
+          "feedback": "It is tempting, because a broken line does not ignore any measurement. But it also follows the random scatter of every point, and it is not a model. The last part depends on only two neighbouring points, so its direction can vary a lot and the zero point can move far away. The fitted line uses all the points."
+        },
+        {
+          "text": "The measurement has failed, because carefully measured points are always exactly on the same line. The whole measurement is done again.",
+          "feedback": "Because of measurement uncertainty the points usually do not fall exactly on the same line, even when the measurement has been made carefully. A small scatter on both sides of the line is part of the measurement. A clearly deviating result is checked and the measurement can be repeated if necessary, but a small scatter is no reason to reject the whole measurement."
+        },
+        {
+          "text": "Remove the points that deviate most from the line until the rest are exactly on the same line.",
+          "feedback": "A result is not removed just because it differs from the others. Any rejection must be justified and documented. The scatter of the points around the line tells you about the measurement uncertainty, and it is used to estimate how much the steepest and the shallowest line that fit the data differ from each other."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Zero point from two points",
+      "prompt": "The points $(15.0\\,{}^\\circ\\text{C};\\ 108.0\\,\\text{kPa})$ and $(95.0\\,{}^\\circ\\text{C};\\ 137.0\\,\\text{kPa})$ are read from the line. Determine the temperature at which the line gives a pressure of zero. Give your answer in degrees Celsius.",
+      "answer": -283,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "Calculate the slope $k = \\Delta p/\\Delta\\theta$.",
+        "$\\theta_0 = \\theta_1 - p_1/k$, when the point $(\\theta_1, p_1)$ is on the line.",
+        "$k = \\dfrac{29.0\\,\\text{kPa}}{80.0\\,{}^\\circ\\text{C}} = 0.3625\\,\\text{kPa}/{}^\\circ\\text{C}$."
+      ],
+      "mistakes": [
+        {
+          "value": -298,
+          "feedback": "You used the pressure of the point at $15.0\\,{}^\\circ\\text{C}$ directly in the formula for the zero point. The temperature $15.0\\,{}^\\circ\\text{C}$ must be included: $\\theta_0 = 15.0\\,{}^\\circ\\text{C} - p_1/k$."
+        }
+      ],
+      "optional": true,
+      "solution": "**Given:** points read from the line $(\\theta_1, p_1) = (15.0\\,{}^\\circ\\text{C};\\ 108.0\\,\\text{kPa})$ and $(\\theta_2, p_2) = (95.0\\,{}^\\circ\\text{C};\\ 137.0\\,\\text{kPa})$\n\n**Find:** the temperature $\\theta_0$ in degrees Celsius at which the line gives a pressure of zero\n\n**Principle:** In a closed rigid container, the amount and volume of the gas stay constant, so the pressure is a linear function of temperature. Two points on the line determine the line, and the line is extended by extrapolation to $p = 0$.\n\n**Formula:** The slope and the temperature at zero pressure:\n\n$$\\begin{aligned} k &= \\frac{p_2 - p_1}{\\theta_2 - \\theta_1} \\\\ \\theta_0 &= \\theta_1 - \\frac{p_1}{k} \\end{aligned}$$\n\n**Conversions:** No conversions are needed: the pressures are in kilopascals, so the kPa cancels in the quotient $p_1/k$ and the result is in degrees Celsius. The temperature difference $95.0\\,{}^\\circ\\text{C} - 15.0\\,{}^\\circ\\text{C} = 80.0\\,{}^\\circ\\text{C}$ is the same in kelvins.\n\n**Substitution:** $k = \\dfrac{(137.0 - 108.0)\\,\\text{kPa}}{(95.0 - 15.0)\\,{}^\\circ\\text{C}} = \\dfrac{29.0\\,\\text{kPa}}{80.0\\,{}^\\circ\\text{C}} = 0.3625\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$ and $\\theta_0 = 15.0\\,{}^\\circ\\text{C} - \\dfrac{108.0\\,\\text{kPa}}{0.3625\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}} = 15.0\\,{}^\\circ\\text{C} - 297.93\\,{}^\\circ\\text{C} = -282.93\\,{}^\\circ\\text{C}$\n\n**Answer:** $-283\\,{}^\\circ\\text{C}$, three significant figures, because the pressure difference $29.0\\,\\text{kPa}$ and the temperature difference $80.0\\,{}^\\circ\\text{C}$ are known to three figures; finally the subtraction $15.0 - 298$ gives the result in whole degrees.\n\n**Reasonableness:** The pressure rises by about $0.36\\,\\text{kPa}$ per degree, so $108.0\\,\\text{kPa}$ corresponds to about $300$ degrees, and $15 - 300 \\approx -285\\,{}^\\circ\\text{C}$. The result is close to $-273.15\\,{}^\\circ\\text{C}$ but about $10\\,{}^\\circ\\text{C}$ below it, which is typical: a small error in a two-point line grows in a long extrapolation."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and evaluate",
+      "prompt": "Why is the value of absolute zero obtained by extrapolation more uncertain than any of the pressures read within the measurement range, and how could the uncertainty be reduced?",
+      "criteria": [
+        "I say that the result comes from the extension of the line, from a region where nothing has been measured, and that even a small error in the slope of the line grows over a long distance.",
+        "I say that the uncertainty is estimated by drawing the steepest and the shallowest line that still pass through the uncertainty bars.",
+        "I give at least two ways to reduce the uncertainty: a more precise pressure gauge, more measurement points or a wider measurement range.",
+        "I mention that extrapolation assumes that the line stays straight, although a real gas liquefies before reaching the zero point."
+      ],
+      "model": "The measured pressure is known only in the range 10–$100\\,{}^\\circ\\text{C}$, and absolute zero is more than $270\\,{}^\\circ\\text{C}$ away from it. There is a small uncertainty in the slope of the line, because the points have a measurement uncertainty, and when the line is extended far, a small error in the slope grows into a large error at the zero point. The uncertainty is estimated by drawing the steepest and the shallowest line that still pass through the uncertainty bars; the interval between their zero points gives the uncertainty. It can be reduced with a more precise pressure gauge, more points and a wider measurement range, so that the direction of the line is known better. In addition, the method assumes that the line stays straight, although a real gas liquefies before the zero point.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

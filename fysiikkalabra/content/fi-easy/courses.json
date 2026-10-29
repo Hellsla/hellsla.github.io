@@ -1,0 +1,201 @@
+{
+  "FY1": {
+    "title": "Fysiikka luonnontieteenä",
+    "tavoitteet": [
+      "tutustuu fysiikkaan tieteenä, joka tutkii asioita järjestelmällisesti ja kokeilemalla",
+      "tutustuu siihen, kuinka pieniä ja suuria asioita maailmankaikkeudessa on",
+      "tutustuu menetelmiin, joilla fysiikassa hankitaan tietoa",
+      "osaa suunnitella ja tehdä yksinkertaisia luonnontieteellisiä kokeita",
+      "saa kokemuksia, jotka herättävät ja lisäävät kiinnostusta fysiikkaan ja sen opiskeluun"
+    ],
+    "lessons": {
+      "fy1-1": "Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet",
+      "fy1-2": "Suureet, yksiköt ja SI-järjestelmä",
+      "fy1-3": "Mittaaminen ja mittauksen luotettavuus",
+      "fy1-4": "Graafinen esitys ja suoran sovittaminen",
+      "fy1-5": "Tasainen liike: s = vt",
+      "fy1-6": "Putoamiskiihtyvyys: v = gt",
+      "fy1-7": "Tiheys: m = ρV",
+      "fy1-8": "Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi"
+    }
+  },
+  "FY2": {
+    "title": "Fysiikka, ympäristö ja yhteiskunta",
+    "tavoitteet": [
+      "tutustuu energiaan, joka on fysiikan tärkeä käsite",
+      "tuntee erilaisia energialajeja ja tapoja tuottaa energiaa",
+      "osaa vertailla eri energiantuotantotapoja ja niiden ympäristövaikutusten suuruusluokkia",
+      "saa taitoja osallistua ympäristöä ja teknologiaa koskevaan keskusteluun ja päätöksiin kestävän energiatalouden kannalta"
+    ],
+    "lessons": {
+      "fy2-1": "Energialajit ja energian säilyminen",
+      "fy2-2": "Energian muuntuminen ja yksikkö joule",
+      "fy2-3": "Teho P = ΔE/Δt",
+      "fy2-4": "Hyötysuhde",
+      "fy2-5": "Polttoaineet ja lämpöarvo E = Hm",
+      "fy2-6": "Energiantuotantotavat ja niiden vertailu",
+      "fy2-7": "Energian siirtäminen: sähkö ja lämpö",
+      "fy2-8": "Energiantuotanto, ympäristö ja ilmastonmuutos"
+    }
+  },
+  "FY3": {
+    "title": "Energia ja lämpö",
+    "tavoitteet": [
+      "ymmärtää energian paremmin: energia on fysiikan tärkeä käsite",
+      "osaa tutkia ilmiöitä, jotka liittyvät aineen termodynaamiseen tilaan ja olomuodon muutoksiin",
+      "osaa käyttää termodynamiikan käsitteitä ja malleja, kun tarkastelee energiantuotannon ratkaisuja ja kestävää tulevaisuutta",
+      "tunnistaa, miksi energiatasapaino ja lämmön siirtyminen ovat tärkeitä ilmastonmuutoksessa"
+    ],
+    "lessons": {
+      "fy3-1": "Voima vuorovaikutuksen mittana ja paino G = mg",
+      "fy3-2": "Työ ja energia",
+      "fy3-3": "Termodynaaminen systeemi, tilanmuuttujat ja lämpötila",
+      "fy3-13": "Absoluuttisen nollapisteen määrittäminen",
+      "fy3-4": "Paine ja hydrostaattinen paine",
+      "fy3-5": "Sisäenergia, lämpömäärä ja energian säilyminen",
+      "fy3-6": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+      "fy3-7": "Olomuodon muutokset",
+      "fy3-14": "Lämpötasapaino olomuodon muuttuessa",
+      "fy3-8": "Lämpölaajeneminen",
+      "fy3-9": "Kaasujen tilanmuutokset ja Boylen laki",
+      "fy3-10": "Ideaalikaasun tilanyhtälö pV = nRT",
+      "fy3-11": "Kaasun tekemä työ ja lämpövoimakone",
+      "fy3-15": "Energiantuotanto ja voimalaitosten hyötysuhde",
+      "fy3-12": "Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos",
+      "fy3-16": "Soveltava tunti: lämpöilmiöt arjessa"
+    }
+  },
+  "FY4": {
+    "title": "Voima ja liike",
+    "tavoitteet": [
+      "osaa tutkia kokeilemalla voimaan ja liikkeeseen liittyviä ilmiöitä",
+      "osaa tehdä kuvaajia mittausaineistosta ja tulkita niitä",
+      "ymmärtää, miksi säilymislait ovat tärkeitä fysiikassa",
+      "tuntee voimaan ja liikkeeseen liittyviä turvallisuusasioita"
+    ],
+    "lessons": {
+      "fy4-1": "Paikka, nopeus ja tasainen liike kuvaajina",
+      "fy4-2": "Kiihtyvyys ja tasaisesti kiihtyvä liike",
+      "fy4-12": "Kahden kappaleen liike: kohtaaminen ja ohitus",
+      "fy4-3": "Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki",
+      "fy4-4": "Newtonin toinen laki",
+      "fy4-5": "Voimakuvio ja voimien yhteisvaikutus",
+      "fy4-13": "Liikeyhtälö kytketyille kappaleille",
+      "fy4-6": "Paino, kitka ja kalteva taso",
+      "fy4-14": "Ilmanvastus ja putoaminen ilmassa",
+      "fy4-7": "Liike-energia, potentiaalienergia ja mekaaninen energia",
+      "fy4-8": "Mekaanisen energian säilyminen ja energiaperiaate",
+      "fy4-15": "Vesi- ja tuulivoima energian muuntajina",
+      "fy4-9": "Liikemäärä ja impulssi",
+      "fy4-10": "Liikemäärän säilyminen ja yksiulotteiset törmäykset",
+      "fy4-11": "Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny",
+      "fy4-16": "Soveltava tunti: hissi, laskuvarjo ja kelkkamäki"
+    }
+  },
+  "FY5": {
+    "title": "Jaksollinen liike ja aallot",
+    "tavoitteet": [
+      "osaa kuvata planeettojen liikettä ympyräliikkeenä",
+      "tutustuu värähtelyn ja aaltoliikkeen perusteisiin tutkimalla mekaanista värähtelyä ja ääntä",
+      "osaa kuvata jaksollista liikettä fysiikan ja matematiikan käsitteillä",
+      "osaa kuvata mekaanista värähtelyä ja ääntä jaksollisena liikkeenä"
+    ],
+    "lessons": {
+      "fy5-1": "Momentti ja vääntövaikutus",
+      "fy5-2": "Tasapaino kiertymisen suhteen",
+      "fy5-3": "Tasainen ympyräliike: kulmanopeus ja ratanopeus",
+      "fy5-4": "Normaalikiihtyvyys ja keskeisvoima",
+      "fy5-5": "Gravitaatiolaki ja planetaarinen liike",
+      "fy5-6": "Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
+      "fy5-7": "Harmoninen voima ja värähtelyliike",
+      "fy5-8": "Harmonisen voiman potentiaalienergia",
+      "fy5-9": "Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+      "fy5-10": "Diffraktio ja interferenssi",
+      "fy5-11": "Seisovat aallot",
+      "fy5-12": "Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+      "fy5-14": "Akustiikka ja äänentoisto",
+      "fy5-15": "Ultraäänikuvaus",
+      "fy5-13": "Äänen intensiteettitaso ja kuulon suojaaminen",
+      "fy5-16": "Soveltava tunti: värähtelyt ja aallot rakenteissa ja luonnossa"
+    }
+  },
+  "FY6": {
+    "title": "Sähkö",
+    "tavoitteet": [
+      "osaa tutkia kokeilemalla sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
+      "osaa käyttää kentän ja potentiaalin käsitteitä, kun kuvaa sähkökenttää",
+      "tuntee turvallisuusasioita, jotka liittyvät sähkölaitteisiin ja sähköenergian siirtoon"
+    ],
+    "lessons": {
+      "fy6-1": "Sähkövaraus, sähkövirta ja jännite",
+      "fy6-2": "Resistanssi ja Ohmin laki",
+      "fy6-12": "Mittaukset virtapiirissä",
+      "fy6-3": "Sähköteho ja Joulen laki",
+      "fy6-13": "Sähkölaitteet kotona: teho, energia ja kustannus",
+      "fy6-4": "Vastusten sarja- ja rinnankytkennät",
+      "fy6-5": "Kirchhoffin lait",
+      "fy6-14": "Potentiaali ja jännitteet virtapiirissä",
+      "fy6-6": "Akut, lähdejännite ja sisäinen resistanssi",
+      "fy6-7": "Coulombin laki",
+      "fy6-8": "Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia",
+      "fy6-9": "Kondensaattori ja kondensaattorin energia",
+      "fy6-15": "Kondensaattorin varaaminen ja purkaminen",
+      "fy6-10": "Puolijohteet, diodi ja LED",
+      "fy6-11": "Sähköturvallisuus",
+      "fy6-16": "Soveltava tunti: sähköauto ja kodin sähköjärjestelmä"
+    }
+  },
+  "FY7": {
+    "title": "Sähkömagnetismi ja valo",
+    "tavoitteet": [
+      "ymmärtää, että induktio on sähkömagnetismin tärkeä ilmiö",
+      "ymmärtää, miten sähköenergiaa tuotetaan ja siirretään, ja miksi se on tärkeää yhteiskunnalle",
+      "tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
+      "ymmärtää, että valo on sähkömagneettinen ilmiö"
+    ],
+    "lessons": {
+      "fy7-1": "Magnetismi, magneettinen dipoli ja magneettikenttä",
+      "fy7-2": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
+      "fy7-3": "Virtajohtimen magneettikenttä ja johtimien välinen voima",
+      "fy7-13": "Sähkömoottori ja kaiutin",
+      "fy7-4": "Sähkömagneettinen induktio",
+      "fy7-5": "Lenzin laki ja pyörrevirrat",
+      "fy7-6": "Generaattori ja vaihtovirran synty",
+      "fy7-7": "Muuntaja ja sähköenergian siirto",
+      "fy7-8": "Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "fy7-9": "Valon heijastuminen ja taittuminen",
+      "fy7-14": "Valon dispersio ja sateenkaari",
+      "fy7-10": "Kokonaisheijastuminen ja valokuitu",
+      "fy7-11": "Valon interferenssi ja diffraktio",
+      "fy7-15": "Ohuen kalvon interferenssi",
+      "fy7-12": "Valon polarisaatio",
+      "fy7-16": "Soveltava tunti: induktio ja valo nykytekniikassa"
+    }
+  },
+  "FY8": {
+    "title": "Aine, säteily ja kvantittuminen",
+    "tavoitteet": [
+      "tuntee ionisoivan säteilyn vaikutukset ja tutustuu säteilyn turvalliseen käyttöön",
+      "tutustuu kvanttifysiikkaan perustuvaan maailmankuvaan alkeishiukkasista kosmologiaan asti",
+      "ymmärtää, miksi kvantittumiseen perustuva teknologia on tärkeää nyky-yhteiskunnassa"
+    ],
+    "lessons": {
+      "fy8-1": "Valosähköinen ilmiö ja fotoni",
+      "fy8-2": "Atomien spektrit ja energian kvantittuminen",
+      "fy8-3": "Bohrin malli ja aaltomekaaninen atomimalli",
+      "fy8-13": "Hiukkasten aaltoluonne ja de Broglien aallonpituus",
+      "fy8-4": "Laser ja kvanttirakenteet",
+      "fy8-14": "LED, laserdiodi ja Planckin vakio",
+      "fy8-5": "Atomiytimen rakenne ja radioaktiivinen hajoaminen",
+      "fy8-6": "Hajoamislaki ja puoliintumisaika",
+      "fy8-7": "Massan ja energian ekvivalenssi ja ytimen sidosenergia",
+      "fy8-8": "Fissio, fuusio ja ydinvoima",
+      "fy8-9": "Ionisoiva säteily: lajit, läpäisykyky ja biologiset vaikutukset",
+      "fy8-15": "Säteilyturvallisuus ja säteilyannos",
+      "fy8-10": "Säteilyn sovellukset lääketieteessä ja teknologiassa",
+      "fy8-11": "Hiukkasfysiikan standardimalli",
+      "fy8-12": "Maailmankaikkeuden kehitys",
+      "fy8-16": "Ilmastonmuutos ja kasvihuoneilmiö säteilyn kannalta"
+    }
+  }
+}

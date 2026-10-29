@@ -1,0 +1,25 @@
+{
+  "id": "fy3-15",
+  "course": "FY3",
+  "title": "Energiantuotanto ja voimalaitosten hyötysuhde",
+  "goals": [
+    "LOPS FY3: energian säilyminen, sisäenergia, energian siirtyminen ja lämpömäärä",
+    "Temaattinen tarkastelu: energiantuotanto",
+    "Täsmennys: voimalaitostyyppien energiaketjut ja hyötysuhteet, lauhde- ja yhteistuotanto"
+  ],
+  "prerequisites": [
+    "fy3-11"
+  ],
+  "glossary": [
+    "hyötysuhde",
+    "lauhdevoimalaitos",
+    "yhteistuotanto",
+    "hukkalämpö",
+    "kaukolämpö",
+    "energiaketju",
+    "kokonaishyötysuhde"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

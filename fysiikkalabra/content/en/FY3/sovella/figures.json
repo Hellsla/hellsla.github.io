@@ -1,0 +1,4 @@
+{
+ "Kuvaaja: veden lämpötila T ajan t funktiona. Pisteiden kautta kulkee loiveneva käyrä. Alkuun piirretty tangentti nousee 0,85 kelviniä minuutissa, ja hetkien 40 min ja 60 min pisteiden kautta kulkeva suora nousee 0,43 kelviniä minuutissa.": "Graph: water temperature T as a function of time t. A levelling-off curve passes through the points. The tangent drawn at the start rises 0.85 kelvin per minute, and the line through the points at 40 min and 60 min rises 0.43 kelvin per minute.",
+ "tangentti: ": "tangent: "
+}

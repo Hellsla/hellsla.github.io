@@ -1,0 +1,22 @@
+{
+  "id": "fy3-7",
+  "course": "FY3",
+  "title": "Changes of state",
+  "goals": [
+    "LOPS FY3: changes of state",
+    "Thematic study: the specific latent heat of vaporisation can be determined by heating water with an immersion heater in an open calorimeter on a balance",
+    "Clarification: micro model for the states of matter and their changes"
+  ],
+  "prerequisites": [
+    "fy3-6"
+  ],
+  "glossary": [
+    "olomuoto",
+    "latent heat of fusion",
+    "latent heat of vaporisation",
+    "heating curve",
+    "faasikaavio"
+  ],
+  "sim": true,
+  "image": false
+}

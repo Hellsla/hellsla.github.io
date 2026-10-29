@@ -1,0 +1,23 @@
+{
+  "id": "fy1-5",
+  "course": "FY1",
+  "title": "Uniform motion: s = vt",
+  "goals": [
+    "LOPS FY1: graphical model and linear model",
+    "Thematic study: uniform motion as an example of the phenomena of motion",
+    "Skills: direct proportionality, e.g. s = vt"
+  ],
+  "prerequisites": [
+    "fy1-4"
+  ],
+  "glossary": [
+    "uniform motion",
+    "nopeus",
+    "paikka",
+    "matka",
+    "direct proportionality"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

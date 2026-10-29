@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-12-L1-01",
+      "level": 1,
+      "text": "Hirsimökin yläpohjan pinta-ala on 45 m² ja U-arvo $0{,}24\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Mökissä on $22\\,{}^\\circ\\text{C}$ ja ulkona $-18\\,{}^\\circ\\text{C}$. Kuinka suuri lämpöteho johtuu yläpohjan läpi ulos?",
+      "answer": 432,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-02",
+      "level": 1,
+      "text": "Vanhan omakotitalon ulko-ovesta tehtiin mittaus. Sen mukaan oven läpi johtuu lämpöä $96\\,\\text{W}$:n teholla, kun sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-19\\,{}^\\circ\\text{C}$. Oven pinta-ala on 2,0 m². Mikä on oven U-arvo?",
+      "answer": 1.2,
+      "unit": "W/(m²·K)",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-03",
+      "level": 1,
+      "text": "Kaukolämmitetyn kerrostaloasunnon ulkoseinän pinta-ala on 28 m² ja U-arvo $0{,}25\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Pakkasyönä seinän läpi johtuu ulos lämpöä $210\\,\\text{W}$:n teholla. Kuinka suuri on sisä- ja ulkolämpötilan ero?",
+      "answer": 30,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-04",
+      "level": 1,
+      "text": "Omakotitalosta johtuu pakkasyönä lämpöä ulos keskimäärin $3{,}5\\,\\text{kW}$:n teholla. Yö kestää 14 tuntia. Kuinka monta kilowattituntia lämpöä talon lämmityksen on tuotettava yön aikana, jotta sisälämpötila pysyy ennallaan?",
+      "answer": 49,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-05",
+      "level": 1,
+      "text": "Kuvassa on maapallon energiavirtoja neliömetriä kohti ilmakehän ylärajalla. Maapallon keskilämpötila pysyy vakiona. Kuinka suuri teho neliömetriä kohti lähtee avaruuteen lämpösäteilynä? Lue tarvittavat arvot kuvasta.",
+      "figure": "fy3-12/earth-flows",
+      "answer": 239,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-12-L2-01",
+      "level": 2,
+      "text": "Kesämökin seinien pinta-ala on 70 m² ja U-arvo $0{,}50\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Yläpohjan pinta-ala on 50,0 m² ja U-arvo $0{,}30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Muiden rakenteiden läpi johtuva lämpö jätetään huomiotta. Talviviikonloppuna mökkiä lämmittävät sähköpatterit. Niiden yhteisteho on $2{,}0\\,\\text{kW}$. Mikä on alin ulkolämpötila, jossa patterit pystyvät pitämään mökissä $20\\,{}^\\circ\\text{C}$?",
+      "answer": -20,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-02",
+      "level": 2,
+      "text": "Omakotitalon yläpohjan pinta-ala on 130 m² ja U-arvo $0{,}090\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Lämmityskausi kestää 230 vuorokautta. Sen aikana sisä- ja ulkolämpötilan ero on keskimäärin $21\\,\\text{K}$. Talo on kaukolämmössä, ja lämmön hinta on 0,11 €/kWh. Kuinka paljon yläpohjan läpi karkaava lämpö maksaa lämmityskauden aikana?",
+      "answer": 149,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-03",
+      "level": 2,
+      "text": "Rintamamiestalon vanhojen kaksilasisten ikkunoiden U-arvo on $2{,}8\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Ne vaihdetaan kolmilasisiin ikkunoihin, joiden U-arvo on $0{,}80\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Ikkunoiden yhteispinta-ala on 14 m². Pakkasviikko kestää 7 vuorokautta. Sisällä on koko viikon $21\\,{}^\\circ\\text{C}$ ja ulkona $-24\\,{}^\\circ\\text{C}$. Kuinka monta kilowattituntia lämpöä vaihto säästää tänä aikana?",
+      "answer": 212,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-04",
+      "level": 2,
+      "text": "Lumi ja jää heijastavat auringonvaloa paljon paremmin kuin tumma merenpinta tai maa. Oletetaan hypoteettisesti, että lumen ja jään väheneminen pienentäisi maapallon heijastamaa osuutta Auringon säteilystä $30{,}0\\,\\%$:sta $29{,}0\\,\\%$:iin. Todellinen muutos on pienempi. Auringosta tulee keskimäärin $340\\,\\text{W/m}^2$. Kuinka paljon maapallon imemä teho neliömetriä kohti kasvaisi? Vertaa tulosta nykyiseen energiaepätasapainoon, joka on noin $1{,}0\\,\\text{W/m}^2$.",
+      "answer": 3.4,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-12-L3-01",
+      "level": 3,
+      "text": "Hiihtoretkelle pakataan termospulloon $0{,}60\\,\\text{kg}$ kuumaa kahvia. Pullossa on kaksi sisäkkäistä seinää. Niiden välistä on poistettu ilma, ja seinien pinnat ovat kiiltävät. Selitä, mitä lämmön siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja miten. Minkä kautta lämpöä silti karkaa? Pullosta karkaa lämpöä keskimäärin $1{,}4\\,\\text{W}$:n teholla. Kuinka monta kelviniä kahvi jäähtyy 10,0 tunnissa? Kahvin ominaislämpökapasiteetti on sama kuin veden, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "answer": 20,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-02",
+      "level": 3,
+      "text": "Kasvihuonekaasujen lisääntymisen vuoksi maapallo saa nykyään keskimäärin $1{,}0\\,\\text{W/m}^2$ enemmän tehoa kuin säteilee avaruuteen. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$. Kuinka paljon ylimääräistä energiaa maapallolle kertyy vuodessa (365 vuorokautta)? Noin $90\\,\\%$ siitä varastoituu meriin. Oletetaan, että se lämmittää tasaisesti merien ylintä 700 metrin kerrosta. Kerroksen massa on $2{,}6 \\cdot 10^{20}\\,\\text{kg}$ ja ominaislämpökapasiteetti $4{,}0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kuinka monta kelviniä kerros lämpenee kymmenessä vuodessa? Miksi suuri vesimassa hidastaa ilmaston lämpenemistä?",
+      "answer": 0.139,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-03",
+      "level": 3,
+      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu. Sen lämpökerroin on lämmityskaudella keskimäärin 2,8. Yläpohjaan puhalletaan lisää eristevillaa. Silloin yläpohjan U-arvo pienenee $0{,}35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:sta $0{,}10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:iin. Yläpohjan pinta-ala on 100 m². Lämmityskausi kestää $5800\\,\\text{h}$. Sen aikana sisä- ja ulkolämpötilan ero on keskimäärin $19\\,\\text{K}$. Kuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa? Naapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
+      "answer": 984,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

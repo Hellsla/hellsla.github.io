@@ -1,0 +1,19 @@
+{
+  "id": "fy3-16",
+  "course": "FY3",
+  "title": "Applied lesson: heat phenomena in everyday life",
+  "goals": [
+    "LOPS FY3: conservation of energy, internal energy, transfer of energy and quantity of heat",
+    "LOPS FY3: heating and cooling of matter and changes of state",
+    "Clarification: applied lesson, not revision: the ideas of the module are combined in a new, everyday situation (sauna, cool bag, coolant)"
+  ],
+  "prerequisites": [
+    "fy3-6",
+    "fy3-7",
+    "fy3-12"
+  ],
+  "glossary": [],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The points $(20\\,{}^\\circ\\text{C};\\ 110\\,\\text{kPa})$ and $(70\\,{}^\\circ\\text{C};\\ 128\\,\\text{kPa})$ are read from the line. Calculate the slope of the line.",
+    "a": "$k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1} = \\dfrac{(128 - 110)\\,\\text{kPa}}{(70 - 20)\\,{}^\\circ\\text{C}} = 0.36\\,\\dfrac{\\text{kPa}}{{}^\\circ\\text{C}}$."
+  },
+  {
+    "q": "The result was $\\theta_0 = -270 \\pm 12\\,{}^\\circ\\text{C}$. Does the result agree with the value $-273.15\\,{}^\\circ\\text{C}$?",
+    "a": "It does. The uncertainty interval is $-282\\,{}^\\circ\\text{C} \\ldots -258\\,{}^\\circ\\text{C}$, and the accepted value $-273.15\\,{}^\\circ\\text{C}$ lies in it."
+  }
+]

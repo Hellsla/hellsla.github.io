@@ -1,0 +1,20 @@
+{
+  "id": "fy1-6",
+  "course": "FY1",
+  "title": "Acceleration of free fall: v = gt",
+  "goals": [
+    "Thematic approach: the acceleration of free fall can be treated as a linear model of the (t,v) graph, v = gt",
+    "Experimental: the motion of falling objects with different masses"
+  ],
+  "prerequisites": [
+    "fy1-5"
+  ],
+  "glossary": [
+    "putoamiskiihtyvyys",
+    "kiihtyvyys",
+    "free fall"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "contribution": "A power plant converts energy step by step, and the efficiency of the chain is the product of the efficiencies of the steps, $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$. The biggest loss of a condensing power plant is the heat transferred to the condenser in the steam cycle. In combined heat and power production this heat is used as district heating, so the overall efficiency rises but less electricity is produced.",
+  "learn": [
+    "You can calculate the efficiency of an energy production chain as the product of the efficiencies of its steps.",
+    "You can identify the biggest energy loss of a condensing power plant.",
+    "You can explain why the overall efficiency rises in combined heat and power production but less electricity is produced."
+  ],
+  "prior": [
+    "Efficiency $\\eta = W/Q_1$ and the energy balance of a heat engine $Q_1 = W + Q_2$ (chapter Work done by a gas and the heat engine)",
+    "Quantity of heat $Q = cm\\,\\Delta T$ and specific heat capacity (chapter Heating and cooling of a substance: Q = cmΔT)",
+    "Power is energy per unit time, and energy is conserved (chapter Work and energy)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The fuel power of a condensing power plant is $500\\,\\text{MW}$, but only $200\\,\\text{MW}$ goes to the electricity grid. Energy is still conserved: it cannot disappear anywhere. At the same time the cooling water leaving the condenser of the plant is clearly warmer than the sea water coming in.",
+      "question": "In which step of the energy chain does the most energy of the fuel end up as something other than electricity, and could it be put to use?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review from earlier lessons",
+      "prompt": "A heat engine takes heat $Q_1 = 800\\,\\text{MJ}$ from a hot source and does work $W = 280\\,\\text{MJ}$. How much heat $Q_2$ is released to the colder surroundings? The engine works in cycles, so its internal energy at the end of a cycle is the same as at the start.",
+      "choices": [
+        {
+          "text": "$Q_2 = 1080\\,\\text{MJ}$",
+          "feedback": "You added the heats: $Q_1 + W$. The energy coming out of the engine cannot be greater than the energy that went in. From conservation of energy $Q_1 = W + Q_2$, so $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+        },
+        {
+          "text": "$Q_2 = 520\\,\\text{MJ}$",
+          "correct": true,
+          "feedback": "Correct: $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$. The efficiency of the engine is $\\eta = W/Q_1 = 0.35$. In this lesson the same calculation is done for a whole power plant and its steps."
+        },
+        {
+          "text": "$Q_2 = 280\\,\\text{MJ}$",
+          "feedback": "This is the work $W$ done by the engine, not the heat released to the colder surroundings. Conservation of energy says $Q_1 = W + Q_2$, so $Q_2 = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+        },
+        {
+          "text": "$Q_2 = 0$, because energy is conserved.",
+          "feedback": "Conservation of energy does not mean that all the energy turns into work. A heat engine must release part of the heat to the colder surroundings, and energy is conserved precisely because of that: $800\\,\\text{MJ} = 280\\,\\text{MJ} + Q_2$, so $Q_2 = 520\\,\\text{MJ}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: in which step is the most energy lost?",
+      "justify": true,
+      "prompt": "The chain of a condensing power plant is fuel, boiler, turbine and condenser, generator and transformer, electricity grid. The fuel power is $500\\,\\text{MW}$ and the electric power is $200\\,\\text{MW}$, so a total of $300\\,\\text{MW}$ is transferred to the surroundings as heat along the chain. In which step do you think the most is lost?",
+      "choices": [
+        {
+          "text": "In the boiler, when the flue gases carry away part of the energy of the fuel.",
+          "feedback": "The flue gases carry away some, but the boiler is one of the most efficient parts of the plant: in a modern boiler over $90\\,\\%$ of the energy of the fuel goes into the steam. The table in the Investigate part shows how much each step really loses."
+        },
+        {
+          "text": "In the turbine and condenser: the steam expands in the turbine and condenses in the condenser.",
+          "correct": true,
+          "feedback": "The table in the Investigate part supports this: the efficiency of the turbine and condenser, that is the steam cycle, is only 0.46, so about half of all the energy of the fuel is lost there. The reason is not friction but the fact that a heat engine must release heat to the colder surroundings."
+        },
+        {
+          "text": "In the generator, when the energy of rotation turns into electricity.",
+          "feedback": "The generator is one of the most efficient machines, because it does not have the unavoidable loss of a heat engine. The values for the steps are in the table in the Investigate part."
+        },
+        {
+          "text": "In the power lines of the electricity grid, when electricity travels to consumers.",
+          "feedback": "Transmission losses are only a few per cent, because electricity is transmitted at a high voltage and a low current. A bigger loss is in some earlier step; check the table in the Investigate part."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 2: what happens to electricity in combined heat and power production?",
+      "justify": true,
+      "prompt": "A plant that produces only electricity is changed into a combined heat and power plant: the heat of the condenser is led into the district heating network to heat a city. The fuel power stays the same. Four students answer what happens to the electric power.",
+      "choices": [
+        {
+          "text": "Aino: The electric power stays the same, because the turbine and generator work as before. District heating is just heat that would otherwise go to the sea.",
+          "feedback": "District heating requires the steam to be condensed so hot that its heat is good enough to heat buildings. Then the difference in pressure and temperature of the steam across the turbine gets smaller, and the turbine does less work. The second table in the Investigate part shows how much electricity is lost."
+        },
+        {
+          "text": "Bea: The electric power decreases by as much as district heating is obtained, because there is only a certain amount of energy in the fuel.",
+          "feedback": "District heating is taken from the waste heat of the condenser, not from electricity. If the electric power decreased by as much as heat is obtained, combined production would gain nothing. In the table in the Investigate part, electricity decreases by only a small part of the added heat."
+        },
+        {
+          "text": "Cem: The electric power decreases, but much less than district heating is obtained, because the heat of the condenser was wasted before anyway.",
+          "correct": true,
+          "feedback": "The second table in the Investigate part supports this: when $232\\,\\text{MW}$ of district heating is taken, the electric power decreases by only $40\\,\\text{MW}$. For every megawatt of district heating about $0.17\\,\\text{MW}$ of electricity is lost."
+        },
+        {
+          "text": "Daniel: The electric power increases, because a hotter condenser raises the pressure of the steam and the turbine gets more work.",
+          "feedback": "The work of the turbine depends on how much the pressure and temperature of the steam drop as it passes through the turbine. When the condenser is hotter, the steam leaves the turbine at a higher pressure, and the difference gets smaller. So less electricity is obtained, not more."
+        }
+      ]
+    },
+    {
+      "id": "ketju",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Follow the power along the energy chain",
+      "text": "The table shows the steps of the energy chain of an example condensing power plant. The turbine and the condenser together form the steam cycle. With this table you test your first prediction: calculate how much power is lost in each step. The fuel power is $P_0 = 500\\,\\text{MW}$. The output power of the boiler is $\\eta_1 P_0$, the output power of the steam cycle is $\\eta_2$ times this, and so on. The loss of a step is the difference between the power going in and the power coming out.\n\n| Step | Efficiency |\n|---|---|\n| Boiler | 0.920 |\n| Steam cycle | 0.460 |\n| Generator and transformer | 0.945 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "How much power is lost in the steam cycle, that is in the turbine and the condenser? Give your answer in megawatts.",
+        "answer": 248,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "What is the power going into the steam cycle, that is the output power of the boiler, when the fuel power is $500\\,\\text{MW}$?",
+          "The power going into the steam cycle is $P_1 = \\eta_1 P_0$ and the power coming out of it is $P_2 = \\eta_2 P_1$. The loss is $P_1 - P_2$.",
+          "$P_1 = 0.920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ and $P_2 = 0.460 \\cdot 460\\,\\text{MW}$. Subtract."
+        ],
+        "mistakes": [
+          {
+            "value": 270,
+            "feedback": "You calculated $0.540 \\cdot 500\\,\\text{MW}$, that is the loss fraction of the whole fuel power. However, only the output power of the boiler, $P_1 = 0.920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$, goes into the steam cycle, so the loss is $0.540 \\cdot 460\\,\\text{MW}$."
+          },
+          {
+            "value": 211.6,
+            "feedback": "This is the power $P_2$ coming out of the steam cycle, not the loss. The loss is the difference between the power going in and the power coming out, $P_1 - P_2 = 460\\,\\text{MW} - 211.6\\,\\text{MW}$."
+          },
+          {
+            "value": 288.4,
+            "feedback": "You subtracted $P_2$ from the fuel power $P_0$, so the $40\\,\\text{MW}$ loss of the boiler is included too. The power going into the steam cycle is the output power of the boiler, $P_1 = 460\\,\\text{MW}$, so the loss is $P_1 - P_2$."
+          },
+          {
+            "value": 300,
+            "feedback": "This is the loss of the whole chain, $500\\,\\text{MW} - 200\\,\\text{MW}$. You are asked only for the share of the steam cycle: $P_1 - P_2$, where $P_1 = 0.920 \\cdot 500\\,\\text{MW}$ and $P_2 = 0.460 \\cdot P_1$."
+          }
+        ],
+        "solution": "**Given:** fuel power $P_0 = 500\\,\\text{MW}$, efficiency of the boiler $\\eta_1 = 0.920$ and of the steam cycle $\\eta_2 = 0.460$ (from the table)\n\n**Find:** the power lost in the steam cycle $P_\\text{loss}$ in megawatts\n\n**Principle:** The steps are in series, and the output power of each is the input power of the next. Energy is conserved, so the difference between the power going into a step and the power leaving it does not disappear but is transferred to the surroundings as heat. Only the output power of the boiler goes into the steam cycle, not the whole fuel power.\n\n**Formula:** $P_1 = \\eta_1 P_0$ and $P_2 = \\eta_2 P_1$, so\n\n$$P_\\text{loss} = P_1 - P_2 = (1 - \\eta_2)\\,\\eta_1 P_0$$\n\n**Conversions:** The efficiencies are dimensionless and the power is already in megawatts, so no conversions are needed.\n\n**Substitution:** $P_1 = 0.920 \\cdot 500\\,\\text{MW} = 460\\,\\text{MW}$ and $P_2 = 0.460 \\cdot 460\\,\\text{MW} = 211.6\\,\\text{MW}$, so $P_\\text{loss} = 460\\,\\text{MW} - 211.6\\,\\text{MW} = 248.4\\,\\text{MW}$\n\n**Answer:** $248\\,\\text{MW}$, three significant figures, because the efficiencies $0.920$ and $0.460$ have three figures and the fuel power $500\\,\\text{MW}$ is given to the nearest megawatt.\n\n**Reasonableness:** Estimate: $0.540 \\cdot 460\\,\\text{MW} \\approx 250\\,\\text{MW}$. The boiler loses $500\\,\\text{MW} - 460\\,\\text{MW} = 40\\,\\text{MW}$ and the generator and transformer about $12\\,\\text{MW}$, so the steam cycle clearly loses the most: about half of the fuel power. Balance: $40 + 248.4 + 11.6 + 200 = 500\\,\\text{MW}$, when the electric power is $0.945 \\cdot 211.6\\,\\text{MW} = 200\\,\\text{MW}$."
+      },
+      "source": "example",
+      "source_note": "efficiencies of an example plant"
+    },
+    {
+      "id": "kaukolampo",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Electricity and district heating from the same fuel",
+      "text": "The fuel power of a combined heat and power plant is $400\\,\\text{MW}$. The table shows the two extreme modes of the plant; heat means district heating power and electricity means electric power, both in megawatts. Between them the electric power decreases approximately linearly as the district heating power increases. With this table you test your second prediction.\n\n| Mode | Heat | Electricity |\n|---|---|---|\n| Electricity only | 0 | 160 |\n| Full district heating | 232 | 120 |\n\nCalculate the power of waste heat $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$ in the full district heating mode. You need the values of the electricity only mode just for comparison.",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large is the power of waste heat when the plant produces full district heating? Give your answer in megawatts.",
+        "answer": 48,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Energy is conserved: the fuel power is divided into electricity, district heating and waste heat.",
+          "The power of waste heat is the part that is not put to use: $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$.",
+          "$P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 280,
+            "feedback": "You subtracted only the electric power from the fuel power. District heating is useful power too, so subtract it as well: $400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW}$."
+          },
+          {
+            "value": 168,
+            "feedback": "You subtracted only the district heating from the fuel power. The electric power $120\\,\\text{MW}$ is useful power too, so subtract that as well."
+          },
+          {
+            "value": 240,
+            "feedback": "This is the power of waste heat when the plant produces only electricity: $400\\,\\text{MW} - 160\\,\\text{MW}$. You are asked about the full district heating mode, where there is $120\\,\\text{MW}$ of electricity and $232\\,\\text{MW}$ of district heating."
+          }
+        ],
+        "solution": "**Given:** fuel power $P_0 = 400\\,\\text{MW}$; in the full district heating mode (from the table) electric power $P_\\text{s} = 120\\,\\text{MW}$ and district heating power $P_\\text{k} = 232\\,\\text{MW}$\n\n**Find:** the power of waste heat $P_\\text{h}$ in megawatts in the full district heating mode\n\n**Principle:** Energy is conserved and the plant runs steadily, so the fuel power is divided entirely into electricity, district heating and waste heat. Both electricity and district heating are useful power, so only what is left over is wasted.\n\n**Formula:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, so $P_\\text{h} = P_0 - P_\\text{s} - P_\\text{k}$\n\n**Conversions:** All powers are in megawatts, so no conversions are needed.\n\n**Substitution:** $P_\\text{h} = 400\\,\\text{MW} - 120\\,\\text{MW} - 232\\,\\text{MW} = 48\\,\\text{MW}$\n\n**Answer:** $48\\,\\text{MW}$, two significant figures. The powers are given to the nearest megawatt, and the result of the subtraction keeps the same precision.\n\n**Reasonableness:** The balance works out: $120 + 232 + 48 = 400\\,\\text{MW}$. The overall efficiency is $\\dfrac{120 + 232}{400} = 0.88$, while with electricity production alone it is $\\dfrac{160}{400} = 0.40$ and the waste heat is $240\\,\\text{MW}$. Only $40\\,\\text{MW}$ of electricity is lost, but the waste heat decreases by $192\\,\\text{MW}$, so district heating is mostly taken from waste heat."
+      },
+      "source": "example",
+      "source_note": "figures of an example plant, not measurements of a single plant"
+    },
+    {
+      "id": "kaukolampo-tarve",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "District heating as needed",
+      "text": "The same plant can also work between the extreme modes. Use the values of the previous table.",
+      "question": {
+        "type": "numeric",
+        "prompt": "A city needs $174\\,\\text{MW}$ of district heating. How large is the electric power of the plant then? Give your answer in megawatts.",
+        "answer": 130,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "What percentage of the district heating power of full combined production is $174\\,\\text{MW}$?",
+          "Because the change is linear, the electric power has dropped by the same fraction of the $40\\,\\text{MW}$ drop that full combined production causes.",
+          "$174/232 = 0.75$, so the electric power is $160\\,\\text{MW} - 0.75 \\cdot 40\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 160,
+            "feedback": "This is the mode with electricity only, where no district heating is taken at all. Producing district heating reduces the electric power."
+          },
+          {
+            "value": 120,
+            "feedback": "This is the electric power of full combined production, when $232\\,\\text{MW}$ of district heating is taken. Now less district heating is needed, so less electricity is lost."
+          },
+          {
+            "value": 150,
+            "feedback": "You used the fraction $(232 - 174)/232 = 0.25$, so you lost only a quarter of the $40\\,\\text{MW}$. The district heating power $174\\,\\text{MW}$ is $174/232 = 0.75$ of full combined production, so three quarters of the $40\\,\\text{MW}$ is lost."
+          }
+        ],
+        "solution": "**Given:** fuel power $P_0 = 400\\,\\text{MW}$; extreme modes from the previous table: electricity only $P_\\text{s,0} = 160\\,\\text{MW}$ and full district heating $P_\\text{k,full} = 232\\,\\text{MW}$ with electric power $P_\\text{s,full} = 120\\,\\text{MW}$; now $P_\\text{k} = 174\\,\\text{MW}$\n\n**Find:** the electric power $P_\\text{s}$ in megawatts\n\n**Principle:** According to the problem the electric power decreases linearly as the district heating power increases, so in an intermediate mode the electric power has dropped by the same fraction of the drop of full combined production as the district heating power is a fraction of the full district heating power.\n\n**Formula:** $P_\\text{s} = P_\\text{s,0} - \\dfrac{P_\\text{k}}{P_\\text{k,full}}\\,(P_\\text{s,0} - P_\\text{s,full})$\n\n**Conversions:** All powers are in megawatts and the fraction is dimensionless, so no conversions are needed.\n\n**Substitution:** $P_\\text{s} = 160\\,\\text{MW} - \\dfrac{174\\,\\text{MW}}{232\\,\\text{MW}} \\cdot (160\\,\\text{MW} - 120\\,\\text{MW}) = 160\\,\\text{MW} - 0.75 \\cdot 40\\,\\text{MW} = 130\\,\\text{MW}$\n\n**Answer:** $130\\,\\text{MW}$, three significant figures. The powers are given to the nearest megawatt, and the result has the same precision.\n\n**Reasonableness:** The result is between the extreme values $120\\,\\text{MW}$ and $160\\,\\text{MW}$, and the district heating power $174\\,\\text{MW}$ is three quarters of the full value, so the electric power is three quarters of the way towards the smaller value. Limiting case: when $P_\\text{k} = 232\\,\\text{MW}$, the formula gives $160 - 40 = 120\\,\\text{MW}$. The overall efficiency is $\\dfrac{130 + 174}{400} = 0.76$, which is between $0.40$ and $0.88$ of the modes."
+      },
+      "optional": true
+    },
+    {
+      "id": "tyypit",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Compare types of power plants",
+      "text": "The table shows typical efficiencies of power plant types. The denominator of the efficiency is the power brought into the plant: the fuel power in a combustion plant, the power of flowing water in a hydropower plant, the power of the air flowing through the rotor in a wind turbine, and the power of the radiation hitting the panel in a solar panel.\n\n| Plant | Efficiency |\n|---|---|\n| Condensing power plant | 0.38–0.42 |\n| Nuclear power plant | about 0.35 |\n| Combined heat and power (solid fuel), electricity | 0.25–0.35 |\n| Combined heat and power, total | 0.85–0.90 |\n| Hydropower plant | about 0.90 |\n| Wind turbine | 0.40–0.45 |\n| Solar panel | about 0.20 |",
+      "question": {
+        "type": "choice",
+        "prompt": "The efficiency of a hydropower plant is more than twice that of a condensing power plant. What explains the difference best?",
+        "choices": [
+          {
+            "text": "A hydropower plant is not a heat engine, so it does not have to release heat to the colder surroundings. The turbine takes the kinetic energy of the water directly.",
+            "correct": true,
+            "feedback": "Correct. In a condensing power plant the energy goes through heat, and a heat engine always releases part of the heat to the condenser. In a hydropower plant mechanical energy turns into mechanical energy and then into electricity, and the losses come only from friction, flow losses and electrical losses."
+          },
+          {
+            "text": "Water is a better source of energy than fuel, because there is more of it.",
+            "feedback": "The amount of the energy source does not affect the efficiency, which is the ratio of the power coming out to the power going in. The difference comes from how the energy turns into electricity: through heat in a combustion plant, directly in a hydropower plant."
+          },
+          {
+            "text": "The generator of a hydropower plant is much better than the generator of a condensing power plant.",
+            "feedback": "The generators are similar, and the efficiency of both is over 0.95. The difference arises in the step that produces the rotation: about half of the energy is lost in the steam cycle, less than a tenth in a water turbine."
+          },
+          {
+            "text": "A hydropower plant has no losses at all.",
+            "feedback": "There are always losses: friction and flow losses in the water turbine and electrical losses in the generator. That is why the efficiency is about 0.90, not 1."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: where is energy lost?",
+      "prompt": "Based on the tables, write briefly in which step of the energy chain a condensing power plant loses the most power and why, and what combined heat and power production changes. Why can the efficiency of a hydropower plant be much higher?",
+      "model": "The most power is lost in the steam cycle, $248\\,\\text{MW}$ or about half of the fuel power: a heat engine always releases part of the heat to the condenser, and better technology does not remove this completely. In combined heat and power production the same heat is used as district heating: the electric power decreases from $160\\,\\text{MW}$ to $120\\,\\text{MW}$, but the overall efficiency rises to $(120 + 232)/400 = 88\\,\\%$. In a hydropower plant the energy does not go through heat, but mechanical energy turns into electricity, so there are losses only from friction, flow losses and electrical losses. The values in the tables are example and typical values, not measurements of one plant.",
+      "criteria": [
+        "I named the steam cycle as the biggest loss and justified it with the limitation of a heat engine.",
+        "I distinguished the electrical efficiency from the overall efficiency in combined heat and power production.",
+        "I explained the difference of a hydropower plant by the fact that the energy does not go through heat."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the Investigate part and the formulas $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$ and $P_\\text{h} = P_0 - P_\\text{useful}$. Then return to the question at the start: in which step of the energy chain does the most energy of the fuel end up as something other than electricity, why can it not be avoided, and how can it be put to use?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The efficiency of the boiler of a power plant is $0.90$, of the steam cycle $0.40$ and of the generator and transformer $0.95$. A student calculates: “The efficiency of the whole chain is the mean of these, $(0.90 + 0.40 + 0.95)/3 = 0.75$, so with a fuel power of $1000\\,\\text{MW}$ the electric power is $750\\,\\text{MW}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "The efficiencies should be added: $0.90 + 0.40 + 0.95 = 2.25$.",
+          "feedback": "The efficiency cannot be over 1, because a plant cannot produce more than is brought into it. In steps in series each step receives only the output of the previous one, so the factors are multiplied."
+        },
+        {
+          "text": "The efficiencies are multiplied: $0.90 \\cdot 0.40 \\cdot 0.95 = 0.342$, so the electric power is $342\\,\\text{MW}$.",
+          "correct": true,
+          "feedback": "Correct. The boiler gives out $900\\,\\text{MW}$, the steam cycle $360\\,\\text{MW}$ of that and the generator $342\\,\\text{MW}$ of that. The mean would give $750\\,\\text{MW}$, which would be more than twice as much: the worst step, the steam cycle, limits everything that comes after it."
+        },
+        {
+          "text": "The efficiency of the generator should be left out, because it does not affect the result.",
+          "feedback": "The generator does matter: it is one of the steps of the chain, and all its loss is missing from the power going to the electricity grid. Without it the result would be $0.90 \\cdot 0.40 \\cdot 1000\\,\\text{MW} = 360\\,\\text{MW}$, not $342\\,\\text{MW}$."
+        },
+        {
+          "text": "There is no error in the calculation, because energy is conserved and the mean describes the whole chain.",
+          "feedback": "Conservation of energy does not mean that the mean describes the chain. If there were $750\\,\\text{MW}$ of electricity, there would be only $250\\,\\text{MW}$ of waste heat, even though the steam cycle alone releases $540\\,\\text{MW}$ to the condenser. The efficiencies are multiplied."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The fuel power of a condensing power plant is $400\\,\\text{MW}$, the efficiency of the boiler is $0.900$, of the steam cycle $0.450$ and of the generator and transformer $0.960$. The heat of the flue gases is recovered, so the efficiency of the boiler rises to $0.950$. The fuel power stays the same. How many megawatts more electricity does the plant produce? Give your answer in megawatts.",
+      "answer": 8.64,
+      "unit": "MW",
+      "tolerance": 0.03,
+      "hints": [
+        "First calculate the electric power before and after the improvement. What is the efficiency of the chain in each case?",
+        "The efficiency of the chain is the product of the three steps, and the electric power is $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$. Only $\\eta_1$ changes.",
+        "Before: $0.90 \\cdot 0.45 \\cdot 0.96 = 0.3888$. After: $0.95 \\cdot 0.45 \\cdot 0.96 = 0.4104$. Multiply by the fuel power and subtract."
+      ],
+      "mistakes": [
+        {
+          "value": 20,
+          "feedback": "This is the increase in the power of the steam after the boiler: $0.05 \\cdot 400\\,\\text{MW}$. The steam cycle and the generator reduce the increase further: only the fraction $0.45 \\cdot 0.96 = 0.432$ of it comes out as electricity."
+        },
+        {
+          "value": 164,
+          "feedback": "This is the electric power after the improvement, $0.4104 \\cdot 400\\,\\text{MW}$, not the increase. Subtract from it the electric power before the improvement, $0.3888 \\cdot 400\\,\\text{MW} = 155.5\\,\\text{MW}$."
+        }
+      ],
+      "solution": "**Given:** fuel power $P_0 = 400\\,\\text{MW}$ (stays the same), efficiency of the steam cycle $\\eta_2 = 0.450$ and of the generator and transformer $\\eta_3 = 0.960$; efficiency of the boiler before the improvement $\\eta_1 = 0.900$ and after it $\\eta_1' = 0.950$\n\n**Find:** the increase in electric power $\\Delta P$ in megawatts\n\n**Principle:** The steps are in series, and each lets through only its own efficiency's share of the power coming into it, so the electric power is the fuel power multiplied by all three efficiencies. The fuel power and the last two steps stay the same, so only the change in the efficiency of the boiler affects the increase.\n\n**Formula:** $P_3 = \\eta_1\\,\\eta_2\\,\\eta_3\\,P_0$ before and $P_3' = \\eta_1'\\,\\eta_2\\,\\eta_3\\,P_0$ after, from which\n\n$$\\Delta P = P_3' - P_3 = (\\eta_1' - \\eta_1)\\,\\eta_2\\,\\eta_3\\,P_0$$\n\n**Conversions:** The efficiencies are dimensionless and the power is already in megawatts, so no conversions are needed.\n\n**Substitution:** $\\Delta P = (0.950 - 0.900) \\cdot 0.450 \\cdot 0.960 \\cdot 400\\,\\text{MW} = 0.050 \\cdot 172.8\\,\\text{MW} = 8.64\\,\\text{MW}$\n\n**Answer:** $8.6\\,\\text{MW}$, two significant figures, because the difference of the efficiencies $0.950 - 0.900 = 0.050$ is given with two figures (the exact calculated value is $8.64\\,\\text{MW}$).\n\n**Reasonableness:** Before the improvement the electric power is $0.3888 \\cdot 400\\,\\text{MW} = 155.52\\,\\text{MW}$ and after it $0.4104 \\cdot 400\\,\\text{MW} = 164.16\\,\\text{MW}$, and the difference is $8.64\\,\\text{MW}$. The increase is only about $5.6\\,\\%$ of the earlier electric power. The extra power of the steam is $0.05 \\cdot 400\\,\\text{MW} = 20\\,\\text{MW}$, but the steam cycle and the generator turn only the fraction $0.450 \\cdot 0.960 = 0.432$ of it into electricity.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise more on three levels. Level 1 problems use one formula, level 3 requires reasoning."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The efficiency of a wind turbine is $0.42$ and of a coal-fired condensing power plant $0.40$. A student reasons: “So a wind turbine is only slightly better than a coal power plant.” What is the problem with the reasoning?",
+      "choices": [
+        {
+          "text": "The denominators of the efficiencies are different things: bought fuel in a coal power plant, the power of the air flow in a wind turbine, which is neither bought nor used up. The numbers do not tell about the use of fuel.",
+          "correct": true,
+          "feedback": "Correct. The $\\eta = 0.40$ of a coal power plant means that 2.5 times as much coal has to be burned as the energy of the electricity. The $\\eta = 0.42$ of a wind turbine tells what fraction of the kinetic energy of the air flowing through the rotor is turned into electricity, but the wind blows without anything being burned. The comparison requires looking at fuel use, emissions and costs."
+        },
+        {
+          "text": "The efficiency of the wind turbine has been calculated wrongly, because no power plant can exceed an efficiency of 0.40.",
+          "feedback": "A wind turbine is not a heat engine, so it does not have to release heat to the colder surroundings, and the efficiency of about $40\\,\\%$ of a condensing power plant is not a limit for it."
+        },
+        {
+          "text": "The efficiency of the coal power plant should be added to electricity and district heating.",
+          "feedback": "A condensing power plant produces only electricity and no district heating. Adding electricity and heat applies to a combined heat and power plant, and even then it is the overall efficiency, not a comparison with wind power."
+        },
+        {
+          "text": "There is no problem in the reasoning: the numbers tell directly which plant is better.",
+          "feedback": "The numbers describe different things. A wind turbine has no fuel, so the efficiency does not tell how much fuel is saved. This problem continues in the practice problems where the amount of fuel is calculated."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Why the efficiencies differ",
+      "prompt": "The efficiency of a hydropower plant is about $0.9$, but that of a condensing power plant about $0.4$. What explains the difference?",
+      "choices": [
+        {
+          "text": "A hydropower plant is not a heat engine: the turbine converts the kinetic energy of the water directly into mechanical energy, and no heat has to be released to a colder place. In a condensing power plant a large part of the energy of the fuel goes into the cooling water in the condenser.",
+          "correct": true,
+          "feedback": "Correct. A heat engine must release part of the heat to a colder environment, and in a condensing power plant this happens in the condenser. A hydropower plant has no such compulsory release of heat, so the losses are left to friction and flow resistance."
+        },
+        {
+          "text": "The machines of a hydropower plant have less friction than the machines of a condensing power plant.",
+          "feedback": "There is little friction in both, and reducing it would not raise the efficiency of a condensing power plant anywhere near that of a hydropower plant. The difference comes from the fact that a condensing power plant is a heat engine and has to release heat to a colder environment."
+        },
+        {
+          "text": "The boiler of a condensing power plant wastes most of the energy of the fuel.",
+          "feedback": "The boiler releases only a little to the surroundings: its efficiency in the example of the chapter is $0.910$, while the efficiency of the steam cycle is $0.440$. The largest loss occurs in the steam cycle, where the condenser releases heat to the cooling water."
+        },
+        {
+          "text": "The kinetic energy of water is free, so its efficiency is easier to calculate.",
+          "feedback": "The price of energy does not affect the size of the efficiency: it is the ratio of the useful power to the power brought in. The difference comes from the physics of the plant type: a condensing power plant is a heat engine and a hydropower plant is not."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Calculating",
+      "prompt": "The fuel power of a combined heat and power plant is $360\\,\\text{MW}$, the electric power $108\\,\\text{MW}$ and the power of waste heat $36\\,\\text{MW}$. How large is the district heating power? Give your answer in megawatts.",
+      "answer": 216,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "hints": [
+        "Into which three parts is the fuel power divided?",
+        "Energy is conserved: $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$. Solve this for $P_\\text{k}$.",
+        "$P_\\text{k} = P_0 - P_\\text{s} - P_\\text{h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 252,
+          "feedback": "You subtracted only the electric power from the fuel power: $360\\,\\text{MW} - 108\\,\\text{MW} = 252\\,\\text{MW}$. Part of that, $36\\,\\text{MW}$, is waste heat, and only the rest goes to district heating."
+        },
+        {
+          "value": 324,
+          "feedback": "This is $360\\,\\text{MW} - 36\\,\\text{MW}$, where the electric power was not subtracted. Part of the fuel power turns into electricity, and that is not district heating."
+        }
+      ],
+      "solution": "**Given:** fuel power $P_0 = 360\\,\\text{MW}$, electric power $P_\\text{s} = 108\\,\\text{MW}$ and power of waste heat $P_\\text{h} = 36\\,\\text{MW}$\n\n**Find:** the district heating power $P_\\text{k}$ in megawatts\n\n**Principle:** Energy is conserved and the plant runs steadily, so the fuel power is divided entirely into three parts: electricity, district heating and waste heat. No power disappears or appears, so the district heating power is what is left when electricity and waste are subtracted.\n\n**Formula:** $P_0 = P_\\text{s} + P_\\text{k} + P_\\text{h}$, so $P_\\text{k} = P_0 - P_\\text{s} - P_\\text{h}$\n\n**Conversions:** All powers are already in megawatts, so no conversions are needed.\n\n**Substitution:** $P_\\text{k} = 360\\,\\text{MW} - 108\\,\\text{MW} - 36\\,\\text{MW} = 216\\,\\text{MW}$\n\n**Answer:** $216\\,\\text{MW}$, three significant figures. The powers are given to the nearest megawatt, and in a subtraction the result keeps the same precision.\n\n**Reasonableness:** The balance works out: $108\\,\\text{MW} + 216\\,\\text{MW} + 36\\,\\text{MW} = 360\\,\\text{MW}$. The overall efficiency is $\\dfrac{108\\,\\text{MW} + 216\\,\\text{MW}}{360\\,\\text{MW}} = 0.900$, which is in the usual range of 85–$90\\,\\%$ for combined production. The district heating power is greater than the electric power, as is usual in a combined heat and power plant."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and compare",
+      "prompt": "A city is considering a power plant. The efficiency of a condensing power plant is 0.40. The overall efficiency of a combined heat and power plant is 0.88, but only 0.30 of the fuel power is electricity. Explain why the combined heat and power plant is not simply more than twice as good as the condensing power plant, and say what information is needed for the comparison.",
+      "criteria": [
+        "I say that the overall efficiency adds together electricity and district heating, which are forms of energy of different value.",
+        "I notice that the combined heat and power plant produces electricity from only 0.30 of the fuel power, not 0.40, so less electricity is obtained.",
+        "I explain that the benefit of district heating depends on whether heat is needed (season, district heating network).",
+        "I mention that the comparison must take into account what the heat replaces and how much fuel is used in total."
+      ],
+      "model": "The overall efficiency $0.88$ is calculated as the sum of electricity and district heating, $(P_\\text{s} + P_\\text{k})/P_0$. Electricity and heat are not equally valuable: electricity can be used for anything, district heating is good only for heating and only nearby. The share of electricity is smaller in the combined heat and power plant, $0.30$ compared with $0.40$ in the condensing power plant, so less electricity is obtained from the same fuel. Combined production pays off when heat is really needed, because otherwise a separate heating plant would be needed, burning more fuel. So the comparison needs the electricity and heat demand of the city in different seasons, as well as the alternative way to produce heat and its efficiency.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, one quick question. Answer first yourself and only then open the answer."
+    }
+  ]
+}

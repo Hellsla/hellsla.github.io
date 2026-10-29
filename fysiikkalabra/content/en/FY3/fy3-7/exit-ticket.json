@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Crushed ice is heated. The temperature rises to $0\\,{}^\\circ\\text{C}$ and then stays at $0\\,{}^\\circ\\text{C}$ until all the ice has melted, even though energy is transferred all the time. Use the micro model to explain where the energy goes.",
+    "a": "The energy transferred during melting changes the interactions between the particles: the regular arrangement of the ice breaks down, and the interaction energy between the particles increases. The water molecules themselves stay intact. The temperature stays at $0\\,{}^\\circ\\text{C}$, so the average kinetic energy of the particles does not increase until all the ice has melted."
+  },
+  {
+    "q": "A heating curve has rising and horizontal parts. What happens in each, and which formula applies?",
+    "a": "On the rising parts the substance warms up and $Q = cm\\Delta T$. On the horizontal parts the substance changes state at a constant temperature and $Q = sm$ (melting) or $Q = rm$ (vaporisation)."
+  }
+]

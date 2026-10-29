@@ -1,0 +1,10 @@
+[
+  {
+    "q": "How large a quantity of heat is needed when $2.0\\,\\text{kg}$ of water is heated from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$ ($c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$)?",
+    "a": "$Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 2.0\\,\\text{kg} \\cdot 50\\,\\text{K} = 419\\,000\\,\\text{J} \\approx 420\\,\\text{kJ}$."
+  },
+  {
+    "q": "A kilogram of water and a kilogram of iron receive the same quantity of heat in a sauna. Whose temperature rises more, and about how many times as much?",
+    "a": "The iron's. Its specific heat capacity, $450\\,\\text{J/(kg}\\cdot\\text{K)}$, is about one ninth of that of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$, so the same quantity of heat raises the temperature of the iron about nine times as much."
+  }
+]

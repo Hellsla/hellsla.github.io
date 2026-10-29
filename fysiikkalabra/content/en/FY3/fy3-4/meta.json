@@ -1,0 +1,24 @@
+{
+  "id": "fy3-4",
+  "course": "FY3",
+  "title": "Pressure and hydrostatic pressure",
+  "goals": [
+    "LOPS FY3: temperature, pressure and hydrostatic pressure",
+    "Skills: the equation of a straight line with a constant term, p = ρgh + p₀",
+    "Clarification: force can be treated as a scalar quantity, because the force caused by pressure is always perpendicular to the surface"
+  ],
+  "prerequisites": [
+    "fy3-1",
+    "fy3-3"
+  ],
+  "glossary": [
+    "paine",
+    "pascal",
+    "hydrostatic pressure",
+    "ilmanpaine",
+    "tiheys",
+    "ylipaine"
+  ],
+  "sim": true,
+  "image": false
+}

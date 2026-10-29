@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-11-L1-01",
+      "level": 1,
+      "text": "Steam flows from the boiler into the cylinder of a steam locomotive on a heritage railway and pushes the piston. While the piston moves, the pressure of the steam stays at 480.0 kPa, and the volume of the steam in the cylinder grows by 0.0250 m³. How much work does the steam do while the piston moves? Give the answer in kilojoules.",
+      "answer": 12.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-02",
+      "level": 1,
+      "text": "Water is thrown on the stones of a sauna stove. When one gram of water evaporates, the resulting steam at $100\\,{}^\\circ\\text{C}$ takes up 1.70 litres more space than the water did. The evaporation takes place at atmospheric pressure, which is 101 kPa. How much work does the steam do as it pushes the surrounding air out of the way?",
+      "answer": 172,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-03",
+      "level": 1,
+      "text": "The reactor of the third nuclear power plant unit at Olkiluoto produces steam with a thermal power of 4.30 · 10³ MW, and the electric power of the unit is 1.60 · 10³ MW. What is the efficiency of the unit? Give the answer as a percentage.",
+      "answer": 37.2,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-04",
+      "level": 1,
+      "text": "The gas in the cylinder of a small gas engine is heated, and the gas pushes a piston forward. The graph shows the pressure $p$ of the gas as a function of the volume $V$ during the expansion. How much work does the gas do as it expands? Read the values you need from the graph. Give the answer in joules.",
+      "figure": "fy3-11/pv-isobaari",
+      "answer": 750,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-05",
+      "level": 1,
+      "text": "A generator at a cottage produces $2.60\\,\\text{kWh}$ of electricity in an evening. In the same time the energy of the petrol burnt in the engine of the generator is $12.0\\,\\text{kWh}$. What is the efficiency of the generator? Give the answer as a percentage.",
+      "answer": 21.7,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-11-L2-01",
+      "level": 2,
+      "text": "A condensing power plant that burns wood chips and peat produces $3\\,830\\,\\text{MWh}$ of electricity in a day. In the same time the energy of the fuel burnt in the boiler is $33.6\\,\\text{TJ}$ ($1\\,\\text{TJ} = 10^{12}\\,\\text{J}$). What is the efficiency of the plant? Give the answer as a percentage.",
+      "answer": 41.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-02",
+      "level": 2,
+      "text": "In the boiler of an old steamship that sails on Lake Saimaa, $120\\,\\text{kg}$ of birch logs are burnt in an hour. The heat of combustion of air-dry birch is $15\\,\\text{MJ/kg}$, that is, $15\\,\\text{MJ}$ of energy is released when a kilogram burns. The steam engine of the ship does work at an average power of $45\\,\\text{kW}$. What is the overall efficiency of the boiler and the steam engine? Give the answer as a percentage.",
+      "answer": 9.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-03",
+      "level": 2,
+      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at 125 kPa and its volume grows by 1.60 litres. By how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
+      "answer": 500,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-04",
+      "level": 2,
+      "text": "The diesel engine of an archipelago ferry turns the propeller with a mechanical power of $480\\,\\text{kW}$. The efficiency of the engine is $40.0\\,\\%$. How much heat power is transferred to the surroundings with the exhaust gases and the cooling water?",
+      "answer": 720,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-11-L3-01",
+      "level": 3,
+      "text": "A city combined heat and power plant burns wood chips at a power of $320\\,\\text{MW}$ and at the same time produces $96\\,\\text{MW}$ of electricity and $180\\,\\text{MW}$ of district heating. If the plant did not exist, the same electric power would be produced in a condensing power plant with an efficiency of $40.0\\,\\%$, and the same district heating in a heating plant whose boiler heats the water of the district heating network with an efficiency of $90.0\\,\\%$. How much more fuel power would such separate production need? Justify why the heating plant reaches a much higher efficiency than the condensing power plant.",
+      "answer": 120,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L3-02",
+      "level": 3,
+      "text": "Heating a detached house takes $16.0\\,\\text{MWh}$ of heat a year. The house now has direct electric heating, in which electric resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room. The owner is considering a heat pump that would take heat from the outdoor air and take care of all the heating. The coefficient of performance of the pump is 2.50 as a yearly average. How many megawatt-hours of electricity would the pump save in a year? How much heat would it take from the outdoor air during the year? Use conservation of energy to justify why the pump is not a perpetual motion machine even though it gives the house more heat than the electricity it uses.",
+      "answer": 9.6,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L3-03",
+      "level": 3,
+      "text": "A petrol car uses $6.00\\,\\textsf{l}$ of petrol over $100\\,\\text{km}$ when it drives on a main road at a steady speed of $80.0\\,\\text{km/h}$. The density of petrol is $0.750\\,\\text{kg/l}$ and its heat of combustion is $43.0\\,\\text{MJ/kg}$. The efficiency of the engine is $28.0\\,\\%$. What is the average mechanical power of the engine? Give the answer in kilowatts. Where does the rest of the energy of the fuel go, and why does an electric car, whose motor has an efficiency of about $90\\,\\%$, need much less energy for the same distance?",
+      "answer": 12.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ]
+}

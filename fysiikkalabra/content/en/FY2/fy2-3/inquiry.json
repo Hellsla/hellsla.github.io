@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "contribution": "Power is the rate at which energy is transformed or transferred, $P = \\Delta E : \\Delta t$, and energy in kilowatt-hours is power in kilowatts times time in hours: an electricity bill is explained by the power of a device and its usage time without the concept of work.",
+  "learn": [
+    "You can calculate power, energy or time with the formula $P = E : t$.",
+    "You can explain why an electricity bill depends on both power and time.",
+    "You can calculate electrical energy in kilowatt-hours and its cost."
+  ],
+  "prior": [
+    "Energy is measured in joules, and it is transformed from one form to another (chapter *Energy transformations and the joule*)",
+    "Energy is neither created nor destroyed (chapter *Forms of energy and conservation of energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In the kitchen a kettle hums and the water heats up in a couple of minutes. At the same time a small lamp is on in the hallway, and nobody needs its light. The reading of the electricity meter rises because of both, but it rises clearly faster because of the kettle. Still, the lamp is often on for hours, while the kettle is on only for a moment.",
+      "question": "Which uses more electrical energy, a device that works fast or a device that is on for a long time, and how can you compare them?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: energy and the joule",
+      "prompt": "A lamp transforms electrical energy into light and heat. Which statement is correct (chapter *Energy transformations and the joule*)?",
+      "choices": [
+        {
+          "text": "Electrical energy disappears when the lamp is on.",
+          "feedback": "Energy does not disappear. In the chapter *Forms of energy and conservation of energy* we agreed that energy only changes into another form: in a lamp electrical energy changes into light and heat."
+        },
+        {
+          "text": "Energy is measured in joules, and electrical energy is transformed into other forms of energy in the lamp.",
+          "correct": true,
+          "feedback": "Correct. The unit of energy is the joule (J), and the total energy is conserved: electrical energy is transformed into light and heat. Today we add time: how fast this transformation happens."
+        },
+        {
+          "text": "The joule is the rate at which energy is transformed.",
+          "feedback": "The joule is a unit of energy, not of rate. The rate is given by a new quantity, power, whose unit is joule per second."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction: how long the lamp has to burn",
+      "prompt": "The power of a hair dryer is $1800\\,\\text{W}$, and it is used for $5.0\\,\\text{min}$. The power of the hallway lamp is $10\\,\\text{W}$. How long does the lamp have to burn to transform the same amount of electrical energy as the dryer?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "About $5\\,\\text{min}$, because the energy has to build up in the same time.",
+          "feedback": "In the same time the lamp transforms only $10\\,\\text{J/s} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$, while the dryer transforms $1800\\,\\text{J/s} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$. The power of the lamp is small, so much more time is needed."
+        },
+        {
+          "text": "About $1\\,\\text{h}$.",
+          "feedback": "In an hour the lamp transforms $10\\,\\text{J/s} \\cdot 3600\\,\\text{s} = 36\\,000\\,\\text{J}$, which is less than a tenth of the dryer's $540\\,000\\,\\text{J}$. Clearly more time is needed."
+        },
+        {
+          "text": "About $15\\,\\text{h}$.",
+          "correct": true,
+          "feedback": "Correct: the power of the lamp is 180 times smaller than that of the dryer, so 180 times more time is needed than $300\\,\\text{s}$, which is $54\\,000\\,\\text{s} = 15\\,\\text{h}$. As a calculation $t = E : P = 540\\,000\\,\\text{J} : 10\\,\\text{W}$."
+        },
+        {
+          "text": "About $150\\,\\text{h}$.",
+          "feedback": "In that time the lamp would transform $10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} = 5\\,400\\,000\\,\\text{J}$, ten times the energy of the dryer. The time needed is a tenth of this."
+        }
+      ],
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      }
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Compare the energy meters and the graph lines of two devices: which one transforms energy faster, and which one transforms more?",
+      "howto": "Choose devices A and B from the menus and set the usage time of each with the slider in steps of one minute, up to a day, that is $1440\\,\\text{min}$. The disc of the energy meter turns faster the greater the power of the device. The graph shows the energy of each device as a function of time: the solid line ends at the usage time of the device, and the dashed line continues the same straight line. The readings give the energy in joules and in kilowatt-hours. The speed only changes how fast the discs turn.",
+      "model": "The powers of the devices are typical rounded values from the table in the chapter, not measurements of any particular device: lamp $10\\,\\text{W}$, television $80\\,\\text{W}$, refrigerator $100\\,\\text{W}$, toaster $1000\\,\\text{W}$, hair dryer $1800\\,\\text{W}$, kettle $2000\\,\\text{W}$ and electric sauna heater $8000\\,\\text{W}$. The model assumes that a device runs at a constant power for the whole usage time. A real refrigerator runs only part of the time, and the thermostat of a sauna heater or a kettle switches the current off now and then. The disc of the energy meter turns like in old electricity meters: the same number of turns for every kilowatt-hour. The readings of the simulation are values of the model, not measurements.",
+      "calc": "When a device runs at a constant power $P$ for a time $t$, it transforms the energy $E = P\\,t$. The simulation first converts minutes to seconds, $1\\,\\text{min} = 60\\,\\text{s}$, and the kilowatt-hours are obtained by substituting $1\\,\\text{kWh} = 3\\,600\\,000\\,\\text{J}$. The slope of the line in the graph is the power: every hour the energy grows by $P \\cdot 1\\,\\text{h}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: lamp and hair dryer",
+      "intro": "Test the prediction. Device A is a hair dryer ($1800\\,\\text{W}$) that is on for $5\\,\\text{min}$. Device B is a lamp ($10\\,\\text{W}$). Change only the usage time $t_\\text{B}$ of the lamp and record at least three measurements: one where the energy $E_\\text{B}$ of the lamp is smaller than the energy $E_\\text{A}$ of the dryer, one where it is greater, and one where they are equal. Fine-tune the time with the arrow keys one minute at a time if needed. Look at the graph too.",
+      "initial": {
+        "A": "kuivain",
+        "tA": 5,
+        "B": "lamppu",
+        "tB": 60
+      },
+      "locked": [
+        "A",
+        "tA",
+        "B"
+      ],
+      "vary": "tB",
+      "names": {
+        "A": "device A",
+        "tA": "usage time $t_\\text{A}$",
+        "B": "device B",
+        "tB": "usage time $t_\\text{B}$"
+      },
+      "units": {
+        "A": "",
+        "tA": "min",
+        "B": "",
+        "tB": "min"
+      },
+      "measure": [
+        {
+          "key": "EA_kJ",
+          "label": "$E_\\text{A}\\ (\\text{kJ})$"
+        },
+        {
+          "key": "EB_kJ",
+          "label": "$E_\\text{B}\\ (\\text{kJ})$"
+        }
+      ],
+      "min": 3,
+      "values": {
+        "A": {
+          "kuivain": "hiustenkuivain"
+        },
+        "B": {
+          "lamppu": "lamppu"
+        }
+      },
+      "question": {
+        "type": "numeric",
+        "prompt": "How long does the lamp have to burn to transform the same amount of energy as the hair dryer in five minutes? Answer in hours.",
+        "answer": 15,
+        "unit": "h",
+        "tolerance": 0.02,
+        "hints": [
+          "Find the row in the table where $E_\\text{B}$ equals $E_\\text{A}$, and read the usage time $t_\\text{B}$ of the lamp in minutes from it.",
+          "The time on the slider is in minutes. Convert to hours by substituting $1\\,\\text{min} = \\dfrac{1}{60}\\,\\text{h}$.",
+          "By calculation: the energy of the dryer is $E = P\\,t = 1800\\,\\text{W} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$, and the lamp needs the time $t = E : P$ for the same energy."
+        ],
+        "mistakes": [
+          {
+            "value": 900,
+            "feedback": "The usage time of the lamp is correct, but in minutes. Convert to hours by substituting $1\\,\\text{min} = \\dfrac{1}{60}\\,\\text{h}$: $900\\,\\text{min} = 900 \\cdot \\dfrac{1}{60}\\,\\text{h}$."
+          },
+          {
+            "value": 54000,
+            "feedback": "This is the usage time of the lamp in seconds. The question asked for hours: substitute $1\\,\\text{s} = \\dfrac{1}{3600}\\,\\text{h}$."
+          },
+          {
+            "value": 5,
+            "feedback": "In five minutes the lamp transforms only $10\\,\\text{W} \\cdot 300\\,\\text{s} = 3000\\,\\text{J}$. Look in the table for the usage time at which $E_\\text{B}$ equals $E_\\text{A}$."
+          }
+        ],
+        "solution": "**Given:** power of the hair dryer $P_\\text{A} = 1800\\,\\text{W}$ and usage time $t_\\text{A} = 5.0\\,\\text{min}$; power of the lamp $P_\\text{B} = 10\\,\\text{W}$ (typical powers of the model). In the table $E_\\text{B} = E_\\text{A} = 540\\,\\text{kJ}$ when $t_\\text{B} = 900\\,\\text{min}$.\n\n**Find:** usage time $t_\\text{B}$ of the lamp in hours when $E_\\text{B} = E_\\text{A}$\n\n**Principle:** Both devices run at a constant power, so each transforms the energy $E = P\\,t$. First we calculate the energy of the dryer, then the time in which the lamp transforms the same energy.\n\n**Formula:** $E_\\text{A} = P_\\text{A}\\,t_\\text{A}$ and $t_\\text{B} = \\dfrac{E_\\text{A}}{P_\\text{B}}$\n\n**Conversions:** Substitute $1\\,\\text{min} = 60\\,\\text{s}$: $5.0\\,\\text{min} = 5.0 \\cdot 60\\,\\text{s} = 300\\,\\text{s}$. Finally substitute $1\\,\\text{h} = 3600\\,\\text{s}$, that is $1\\,\\text{s} = \\dfrac{1}{3600}\\,\\text{h}$.\n\n**Substitution:** $E_\\text{A} = 1800\\,\\text{W} \\cdot 300\\,\\text{s} = 540\\,000\\,\\text{J}$ and $t_\\text{B} = \\dfrac{540\\,000\\,\\text{J}}{10\\,\\text{W}} = 54\\,000\\,\\text{s} = 54\\,000 \\cdot \\dfrac{1}{3600}\\,\\text{h} = 15\\,\\text{h}$\n\n**Answer:** $t_\\text{B} = 15\\,\\text{h}$, two significant figures like the power of the lamp $10\\,\\text{W}$ and the usage time $5.0\\,\\text{min}$. The same result can be read from the table of the simulation: $900\\,\\text{min} = 900 \\cdot \\dfrac{1}{60}\\,\\text{h} = 15\\,\\text{h}$.\n\n**Reasonableness:** The power of the lamp is $1800 : 10 = 180$ times smaller than that of the dryer, so transforming the same energy takes $180$ times as long: $180 \\cdot 5.0\\,\\text{min} = 900\\,\\text{min}$. In the graph the gentle line of the lamp reaches the height of the dryer's point only much later."
+      }
+    },
+    {
+      "id": "mittari",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Energy meter readings",
+      "source": "model",
+      "source_note": "Calculated from the appliances' rated powers (kettle $2000\\,\\text{W}$, toaster $1000\\,\\text{W}$, television $80\\,\\text{W}$); example data, not a measurement.",
+      "text": "An energy meter is connected to three devices, and the reading is recorded every $20\\,\\text{s}$. The table shows the meter reading in kilojoules ($\\text{kJ}$) after the device is switched on.\n\n| $t$ (s) | kettle | toaster | television |\n| --- | --- | --- | --- |\n| $0$ | $0$ | $0$ | $0$ |\n| $20$ | $40$ | $20$ | $1.6$ |\n| $40$ | $80$ | $40$ | $3.2$ |\n| $60$ | $120$ | $60$ | $4.8$ |\n\nThe reading grows steadily. Plotted against time, the readings form a straight line whose steepness can be read from the table.",
+      "question": {
+        "type": "choice",
+        "prompt": "From which numbers in the table can you see how fast the toaster transforms energy?",
+        "choices": [
+          {
+            "text": "From the reading $60\\,\\text{kJ}$, because it is the greatest energy of the toaster.",
+            "feedback": "The reading $60\\,\\text{kJ}$ only tells how much energy has been transformed in $60\\,\\text{s}$. The rate is found when the energy is divided by time."
+          },
+          {
+            "text": "From the increase in energy divided by time: $20\\,\\text{kJ}$ in each interval of $20\\,\\text{s}$, that is $1000\\,\\text{J}$ per second.",
+            "correct": true,
+            "feedback": "Correct. The increase in energy $\\Delta E = 20\\,000\\,\\text{J}$ divided by the time $\\Delta t = 20\\,\\text{s}$ is $1000\\,\\text{J/s} = 1000\\,\\text{W}$. The same quotient is found from any interval, because the growth is steady."
+          },
+          {
+            "text": "From the time $60\\,\\text{s}$, because a long time means a high power.",
+            "feedback": "Time alone does not tell the power. Power is energy per unit of time: the same power keeps adding more energy as time goes on."
+          }
+        ]
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the kilowatt-hour",
+      "optional": true,
+      "intro": "Device A is a kettle ($2000\\,\\text{W}$). Change only its usage time $t_\\text{A}$ and record at least three measurements. Look at the energy $E_\\text{A}$ in kilowatt-hours.",
+      "initial": {
+        "A": "keitin",
+        "tA": 10,
+        "B": "lamppu",
+        "tB": 60
+      },
+      "locked": [
+        "A",
+        "B",
+        "tB"
+      ],
+      "vary": "tA",
+      "names": {
+        "A": "device A",
+        "tA": "usage time $t_\\text{A}$",
+        "B": "device B",
+        "tB": "usage time $t_\\text{B}$"
+      },
+      "units": {
+        "A": "",
+        "tA": "min",
+        "B": "",
+        "tB": "min"
+      },
+      "measure": [
+        {
+          "key": "EA_kWh",
+          "label": "$E_\\text{A}\\ (\\text{kWh})$"
+        }
+      ],
+      "min": 3,
+      "values": {
+        "A": {
+          "keitin": "vedenkeitin"
+        },
+        "B": {
+          "lamppu": "lamppu"
+        }
+      },
+      "question": {
+        "type": "numeric",
+        "prompt": "For how many minutes does the kettle have to be on to transform exactly $1\\,\\text{kWh}$ of energy? Answer in minutes.",
+        "answer": 30,
+        "unit": "min",
+        "tolerance": 0.02,
+        "hints": [
+          "Use the slider to find the usage time at which $E_\\text{A} = 1\\,\\text{kWh}$, or calculate it.",
+          "When the power is in kilowatts and the time in hours, $E = P\\,t$ gives kilowatt-hours directly. Solve $t = E : P$.",
+          "$t = 1\\,\\text{kWh} : 2.0\\,\\text{kW} = 0.50\\,\\text{h}$. Finally convert to minutes."
+        ],
+        "mistakes": [
+          {
+            "value": 0.5,
+            "feedback": "The time is correct, but in hours. The question asked for minutes: $0.50\\,\\text{h} = 0.50 \\cdot 60\\,\\text{min}$."
+          },
+          {
+            "value": 1800,
+            "feedback": "This is the time in seconds. The question asked for minutes: $1800\\,\\text{s} = 1800 \\cdot \\dfrac{1}{60}\\,\\text{min}$."
+          }
+        ],
+        "solution": "**Given:** power of the kettle $P = 2000\\,\\text{W}$ (typical power of the model) and energy $E = 1\\,\\text{kWh}$\n\n**Find:** usage time $t$ in minutes\n\n**Principle:** The kettle runs at a constant power, so the energy is power times time. When the power is in kilowatts and the energy in kilowatt-hours, the time is obtained in hours.\n\n**Formula:** $E = P\\,t$, from which $t = \\dfrac{E}{P}$\n\n**Conversions:** Substitute $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$: $2000\\,\\text{W} = 2000 \\cdot 10^{-3}\\,\\text{kW} = 2.0\\,\\text{kW}$. Finally substitute $1\\,\\text{h} = 60\\,\\text{min}$.\n\n**Substitution:** $t = \\dfrac{1\\,\\text{kWh}}{2.0\\,\\text{kW}} = 0.50\\,\\text{h} = 0.50 \\cdot 60\\,\\text{min} = 30\\,\\text{min}$\n\n**Answer:** $t = 30\\,\\text{min}$, two significant figures like the power $2.0\\,\\text{kW}$. In the table of the simulation $E_\\text{A} = 1\\,\\text{kWh}$ when $t_\\text{A} = 30\\,\\text{min}$.\n\n**Reasonableness:** A kilowatt-hour is the energy that a $1\\,\\text{kW}$ device transforms in an hour. The power of the kettle is double that, so it takes half an hour."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: power and time",
+      "prompt": "Write, based on your measurements and the graph: why can a $10\\,\\text{W}$ lamp transform more energy than a $1800\\,\\text{W}$ hair dryer? How do power and time together determine the energy transformed?",
+      "model": "Power tells how much energy is transformed per second: $1800\\,\\text{J}$ for the dryer and $10\\,\\text{J}$ for the lamp. The energy transformed is power times time, so a small power is enough when there is a lot of time. In the experiment the dryer transformed $540\\,\\text{kJ}$ in five minutes, and the energy of the lamp was equal when $t_\\text{B} = 900\\,\\text{min} = 15\\,\\text{h}$. With a longer usage time the lamp transforms more: in a day $864\\,\\text{kJ}$. In the graph the line of the lamp is gentle because the power is small, but it continues a long way. The numbers are values of the simulation model calculated from rated powers, not measurements.",
+      "criteria": [
+        "I said in words that power is energy per second.",
+        "I used the equation $E = P\\,t$ and took time into account.",
+        "I used my measurements to justify the usage time at which the lamp transforms the same amount of energy or more.",
+        "I remembered that the numbers of the simulation are values of a model."
+      ],
+      "after": [
+        "koe-1"
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your prediction",
+      "prompt": "Compare your prediction with the numbers $E = P\\,t$. What does power tell and what does it not tell? Return to the opening question: why can you not work out an electricity bill from the power alone?",
+      "predictions": [
+        "ennuste-1"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates what a $1500\\,\\text{W}$ heater costs when it is on for $3.0\\,\\text{h}$ and the price is $20\\,\\text{c/kWh}$. They write $E = 1500 \\cdot 3.0\\,\\text{kWh} = 4500\\,\\text{kWh}$ and the cost $4500 \\cdot 0.20\\,\\text{€} = 900\\,\\text{€}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The power was not converted to kilowatts: correct is $E = 1.5\\,\\text{kW} \\cdot 3.0\\,\\text{h} = 4.5\\,\\text{kWh}$, and the cost is $0.90\\,\\text{€}$.",
+          "correct": true,
+          "feedback": "Correct. You get kilowatt-hours only when the power is in kilowatts: $1500\\,\\text{W} = 1.5\\,\\text{kW}$. The error also shows up in the reasonableness check: $900\\,\\text{€}$ for three hours of heating would be impossible."
+        },
+        {
+          "text": "The time should have been converted to seconds before the calculation.",
+          "feedback": "Seconds are needed when energy is calculated in joules. For kilowatt-hours the time in hours is fine, as long as the power is in kilowatts. The error is in the unit of power."
+        },
+        {
+          "text": "The cost should be divided by three, because the heater was on for three hours.",
+          "feedback": "The three hours are already included in the energy. Dividing would not fix the error: the result would still be far from the correct $0.90\\,\\text{€}$, because the power was left in watts."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "The result $900\\,\\text{€}$ is impossible: three hours of heating would cost more than a month of electricity. The power was left in watts, although kWh needs kilowatts."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Standby for a year",
+      "prompt": "A television and a game console are on standby with a total power of $2.5\\,\\text{W}$ for the whole year, $365\\,\\text{days}$. How much energy does this consume in a year? Give the answer in kilowatt-hours.",
+      "answer": 21.9,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Is the power constant? How many hours are there in a year?",
+        "Use $E = P\\,t$. Convert the power to kilowatts so that the result comes out in kilowatt-hours.",
+        "$E = 0.0025\\,\\text{kW} \\cdot 8760\\,\\text{h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 21900,
+          "feedback": "The power was left in watts. For kilowatt-hours $2.5\\,\\text{W} = 0.0025\\,\\text{kW}$; the result 21 900 would be watt-hours."
+        },
+        {
+          "value": 0.9125,
+          "feedback": "You used $365\\,\\text{h}$ as the time. A year has $365\\,\\text{days}$, that is $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$."
+        }
+      ],
+      "solution": "**Given:** power $P = 2.5\\,\\text{W}$ (constant), time $365\\,\\text{days}$\n\n**Find:** energy $E$ in kilowatt-hours\n\n**Principle:** The standby power is steady, so the energy transformed is power times time.\n\n**Formula:** $E = P\\,t$\n\n**Conversions:** $2.5\\,\\text{W} = 2.5 \\cdot 10^{-3}\\,\\text{kW} = 0.0025\\,\\text{kW}$ (substituting $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$) and $365\\,\\text{days} = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$.\n\n**Substitution:** $E = 0.0025\\,\\text{kW} \\cdot 8760\\,\\text{h} = 21.9\\,\\text{kWh}$\n\n**Answer:** $22\\,\\text{kWh}$, two significant figures as in the power $2.5\\,\\text{W}$.\n\n**Reasonableness:** In a day about $2.5\\,\\text{W} \\cdot 24\\,\\text{h} = 60\\,\\text{Wh} = 0.06\\,\\text{kWh}$ is consumed, and in $365\\,\\text{days}$ about $22\\,\\text{kWh}$. The cost would be about $22 \\cdot 0.20\\,\\text{€} \\approx 4.4\\,\\text{€}$: small but pointless."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 exercises use the formula $P = E : t$ directly, level 2 exercises convert units and calculate prices, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Device A is on at a power of $500\\,\\text{W}$ for four hours. Device B is on at a power of $1500\\,\\text{W}$ for one hour. Which one transforms more electrical energy?",
+      "choices": [
+        {
+          "text": "Device B, because its power is greater.",
+          "feedback": "Power alone does not decide. Device B transforms $1.5\\,\\text{kW} \\cdot 1\\,\\text{h} = 1.5\\,\\text{kWh}$, but device A transforms in its longer time $0.5\\,\\text{kW} \\cdot 4\\,\\text{h} = 2.0\\,\\text{kWh}$."
+        },
+        {
+          "text": "Device A, because $0.5\\,\\text{kW} \\cdot 4\\,\\text{h} = 2.0\\,\\text{kWh}$ is more than $1.5\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Correct. Energy is power times time, and a long time compensates for a smaller power: A transforms $2.0\\,\\text{kWh}$ and B $1.5\\,\\text{kWh}$."
+        },
+        {
+          "text": "The same amount, because power times time is 1500 for both.",
+          "feedback": "The products are not equal: $500\\,\\text{W} \\cdot 4\\,\\text{h} = 2000\\,\\text{Wh}$ and $1500\\,\\text{W} \\cdot 1\\,\\text{h} = 1500\\,\\text{Wh}$, so A transforms more."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Power of a washing machine",
+      "prompt": "A washing machine consumes $1.2\\,\\text{kWh}$ of energy during a wash programme of $90\\,\\text{min}$. What is its average power? Give the answer in watts.",
+      "answer": 800,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Power is energy divided by time. In which units must the energy and the time be for the result to be in watts?",
+        "$P = E : t$. Convert $1.2\\,\\text{kWh}$ to joules and $90\\,\\text{min}$ to seconds.",
+        "$1.2\\,\\text{kWh} = 1.2 \\cdot 3\\,600\\,000\\,\\text{J}$ and $90\\,\\text{min} = 5400\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.8,
+          "feedback": "You calculated the energy in kilowatt-hours and the time in hours, so the result is in kilowatts: $1.2\\,\\text{kWh} : 1.5\\,\\text{h} = 0.8\\,\\text{kW}$. The question asked for watts, so multiply by 1000."
+        },
+        {
+          "value": 13.3,
+          "feedback": "You divided the energy given in watt-hours by minutes ($1200\\,\\text{Wh} : 90\\,\\text{min}$). The time has to be converted to hours, $90\\,\\text{min} = 1.5\\,\\text{h}$, or the energy to joules and the time to seconds."
+        }
+      ],
+      "solution": "**Given:** energy $E = 1.2\\,\\text{kWh}$, time $t = 90\\,\\text{min}$\n\n**Find:** average power $P$ in watts\n\n**Principle:** Power is the energy transformed divided by the time it takes; the average power describes the whole wash.\n\n**Formula:** $P = \\dfrac{E}{t}$\n\n**Conversions:** $1.2\\,\\text{kWh} = 1.2 \\cdot 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 4\\,320\\,000\\,\\text{J}$ and $90\\,\\text{min} = 90 \\cdot 60\\,\\text{s} = 5400\\,\\text{s}$.\n\n**Substitution:** $P = \\dfrac{4\\,320\\,000\\,\\text{J}}{5400\\,\\text{s}} = 800\\,\\dfrac{\\text{J}}{\\text{s}} = 800\\,\\text{W}$\n\n**Answer:** $8.0 \\cdot 10^{2}\\,\\text{W}$, two significant figures as in the energy $1.2\\,\\text{kWh}$.\n\n**Reasonableness:** In kilowatt-hours and hours $1.2\\,\\text{kWh} : 1.5\\,\\text{h} = 0.8\\,\\text{kW} = 800\\,\\text{W}$. This is smaller than the $2000\\,\\text{W}$ of a kettle but greater than the $80\\,\\text{W}$ of a television, which fits a washing machine that heats water only part of the time."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "A family wants to reduce its electricity bill. Explain why both the power of a device and its usage time must be taken into account, and give two ways to reduce consumption.",
+      "criteria": [
+        "I say that energy is power times time, $E = P\\,t$.",
+        "I mention that the size of the bill depends on the amount of kWh and the price.",
+        "I give two ways: for example a lower power or a shorter usage time.",
+        "I mention standby or a small device that is on for a long time."
+      ],
+      "model": "An electricity bill is the energy consumed in kilowatt-hours times the price, and energy is power times time. So a high power for a short time, like a hair dryer, and a low power for a long time, like a device on standby, can consume the same amount. Consumption can be reduced by choosing a low-power device, for example an $8\\,\\text{W}$ LED lamp instead of a $60\\,\\text{W}$ incandescent bulb, or by shortening the time by switching off lights and devices that are not in use. Standby can be cut off with the power switch.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

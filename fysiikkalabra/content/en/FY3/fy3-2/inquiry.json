@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "contribution": "The word *work* gets a precise meaning: force in the direction of motion times distance, $W = Fs$, which is the area under the $(s, F)$ graph. Power tells you how fast the work is done.",
+  "learn": [
+    "You recognise when a force does work in the physics sense.",
+    "You can calculate work from force and distance, and as the area under a force–distance graph.",
+    "You can explain what power tells you about doing work."
+  ],
+  "prior": [
+    "Weight $G = mg$ and force as a measure of interaction (chapter *Force as a measure of interaction and weight G = mg*)",
+    "Reading a graph: axes, units, slope of a straight line"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "You carry a heavy backpack along a level corridor. Your shoulders get tired and you get out of breath. A lift raises the same backpack up three floors, and it does not seem to make any effort at all. In everyday language, both *do work*.",
+      "question": "What should the word work mean in physics, so that the amount of work can be measured unambiguously?"
+    },
+    {
+      "id": "pr-paino",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: weight",
+      "prompt": "The mass of the backpack is $10\\,\\text{kg}$. How large is the gravitational force $G = mg$ acting on it?",
+      "choices": [
+        {
+          "text": "10 N",
+          "feedback": "You mixed up mass and weight. Weight is a force: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$."
+        },
+        {
+          "text": "98 N",
+          "correct": true,
+          "feedback": "Correct: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. This is the force you need to hold the backpack up."
+        },
+        {
+          "text": "$9.8\\,\\text{kg}$",
+          "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is the unit of mass."
+        },
+        {
+          "text": "981 N",
+          "feedback": "The acceleration of free fall is $9.81\\,\\text{m/s}^2$, not 98.1. The result is $10 \\cdot 9.81\\,\\text{N} \\approx 98\\,\\text{N}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the distance doubles",
+      "prompt": "A crate is pulled along the floor by a 60 N force in the direction of motion, first $10\\,\\text{m}$ and then $20\\,\\text{m}$. The force stays the same. What happens to the work done by the force?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The work stays the same, because the force does not change.",
+          "feedback": "The model values show that the work increases even though the force stays the same. Work also depends on distance: the area under the $(s, F)$ graph gets wider as $s$ increases."
+        },
+        {
+          "text": "The work doubles.",
+          "correct": true,
+          "feedback": "The model values support this: over $10\\,\\text{m}$ $W = 600\\,\\text{J}$ and over $20\\,\\text{m}$ $W = 1200\\,\\text{J}$. The same force over twice the distance does twice the work, $W = Fs$."
+        },
+        {
+          "text": "The work becomes four times as large.",
+          "feedback": "The model values show a doubling, not a fourfold increase. Four times the work would need both the force and the distance to double; now only the distance changed."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the same pull, more slowly",
+      "prompt": "The same pull (60 N, $10\\,\\text{m}$) is done first in 5 seconds and then in 20 seconds. What happens to the work and the power?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The slower pull does less work.",
+          "feedback": "According to the model values the work is the same, $600\\,\\text{J}$, for both times. The work $W = Fs$ does not depend on time; time affects the power."
+        },
+        {
+          "text": "The work is the same, but the power falls to a quarter.",
+          "correct": true,
+          "feedback": "The model values support this: $W = 600\\,\\text{J}$ in both, and the power $P = W/t$ drops from $120\\,\\text{W}$ to $30\\,\\text{W}$ when the time becomes four times as long."
+        },
+        {
+          "text": "The work and the power stay the same.",
+          "feedback": "The work stays the same, but the power does not: according to the model values $P = W/t$ decreases from $120\\,\\text{W}$ to $30\\,\\text{W}$. Power tells you how fast the work is done."
+        },
+        {
+          "text": "The slower pull does more work, because the force acts for longer.",
+          "feedback": "The model values show the same work, $600\\,\\text{J}$. Work is not determined by how long the force acts but by the distance moved in the direction of the force. A longer time means a smaller power."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 3: the backpack in the corridor",
+      "prompt": "You carry a backpack that weighs 98 N for $20\\,\\text{m}$ along a level corridor at a steady speed. Three students explain how much work your supporting force does on the backpack. Who is right? The simulation does not test this, because in it the force is always in the direction of motion; compare your prediction with the model and the figure in the Theory summary.",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Aino: $W = Fs = 98\\,\\text{N} \\cdot 20\\,\\text{m} \\approx 2.0\\,\\text{kJ}$, because the force acts over the whole distance.",
+          "feedback": "The formula $W = Fs$ holds only when the force is in the direction of motion. The supporting force points up, but the backpack moves sideways. Come back to this in the Theory summary."
+        },
+        {
+          "text": "Bea: $W = 0$, because the force is perpendicular to the motion and no energy is transferred to the backpack.",
+          "correct": true,
+          "feedback": "Exactly: a force perpendicular to the motion does no work. Your muscles still use energy to maintain the force, but that is not work done on the backpack. The evidence is in the figure and the model in the Theory summary: work is calculated only from the force in the direction of motion, and the supporting force has none."
+        },
+        {
+          "text": "Cem: The work is something between zero and $2.0\\,\\text{kJ}$, because part of the force is in the direction of motion.",
+          "feedback": "At a steady speed along a level corridor no horizontal force is needed on the backpack (air resistance is ignored), so the supporting force is vertical and its work is zero. The Theory summary returns to this."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a crate is pulled with a constant force. Adjust the force, the distance and the time, press *Pull* and watch how the area under the $(s,F)$ graph fills up. The values $W$ and $P$ are model values calculated by the simulation, not measurements of a real crate.",
+      "howto": "*Speed* only changes the pace of the animation: the crate moves the distance $s$ in the simulated time $t$, and $W$ and $P$ stay the same.",
+      "model": "The crate moves at a constant speed: the friction force is equal to the pulling force. The work done by the pulling force increases the internal energy of the crate and the floor, that is, the surfaces get warmer. The simulation calculates the values from the formulas $W = Fs$ and $P = W/t$, so it shows the consequences of the model; it does not measure them."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the distance changes",
+      "intro": "Test prediction 1. Keep the force and time constant and change only the distance. Record the work for at least two distances, for example $5\\,\\text{m}$, $10\\,\\text{m}$ and $20\\,\\text{m}$. Press *Pull* before recording so that you see the area of the graph fill up.",
+      "initial": {
+        "F": 60,
+        "s": 10,
+        "t": 5
+      },
+      "units": {
+        "F": "N",
+        "s": "m",
+        "t": "s"
+      },
+      "locked": [
+        "F",
+        "t"
+      ],
+      "vary": "s",
+      "measure": [
+        {
+          "key": "W",
+          "label": "W (J)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the time changes",
+      "intro": "Test prediction 2. Now the force and distance are constant and only the time changes. Record the work and power for at least two times, for example $5\\,\\text{s}$, $10\\,\\text{s}$ and $20\\,\\text{s}$. What happens to the work? And to the power?",
+      "initial": {
+        "F": 60,
+        "s": 10,
+        "t": 5
+      },
+      "units": {
+        "F": "N",
+        "s": "m",
+        "t": "s"
+      },
+      "locked": [
+        "F",
+        "s"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "W",
+          "label": "W (J)"
+        },
+        {
+          "key": "P",
+          "label": "P (W)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does work depend on?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "In two or three sentences, write what you can conclude from your tables: how did the work depend on distance and on time, and how did the power depend on time? Did the results support your prediction 2? Finally, think about why the simulation readings alone do not prove the formula $W = Fs$ correct.",
+      "model": "When only the distance doubled, the work also doubled (for example $600\\,\\text{J} \\to 1200\\,\\text{J}$): work is directly proportional to distance. When only the time changed, the work stayed at $600\\,\\text{J}$, but the power decreased ($5\\,\\text{s}$: $120\\,\\text{W}$, $20\\,\\text{s}$: $30\\,\\text{W}$): work does not depend on time, power does. The simulation calculates its readings from the formula $W = Fs$, so it shows what the model predicts but does not prove the model. Experimental justification comes from real measurements, such as Joule's experiment below.",
+      "criteria": [
+        "I described how the work changed when the distance changed and that it stayed the same when the time changed.",
+        "I distinguished work from power: time affected only the power.",
+        "I justified my answer with the readings from my table.",
+        "I distinguished the values calculated by the model from real measurements."
+      ]
+    },
+    {
+      "id": "joule",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Joule's experiment: where does the work go?",
+      "text": "In Joule's experiment a falling weight turns a paddle wheel in a vessel of water. The weight does work, the paddles stir the water, and the temperature of the water rises even though the water is not heated. The table shows the work done by the weight, $W = Gh$, and the increase in the internal energy of the water, $\\Delta U$, calculated from the rise in the temperature of the water.\n\n| Drops | $W$ (J) | $\\Delta U$ (J) |\n|---|---|---|\n| 10 | 196 | 194 |\n| 20 | 392 | 389 |\n| 30 | 588 | 583 |",
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table tell you about the work done by the weight and the internal energy of the water?",
+        "choices": [
+          {
+            "text": "The internal energy of the water always increases by the same amount, regardless of the work done.",
+            "feedback": "Read the rows again: when the work doubles, the increase in the internal energy of the water also doubles."
+          },
+          {
+            "text": "The internal energy of the water increases (within the accuracy of the measurement) by as much as the weight does work: work transfers energy to the water.",
+            "correct": true,
+            "feedback": "This is the result of Joule's experiment. The water was not heated; the weight did work, and the same warming could also have been produced by heating. So work and heat are two ways of transferring energy, and both are measured in joules. The small difference is in the same direction in every row, so it probably arises because some of the energy is transferred to the surroundings as heat. Joule himself measured in 1850 that about $4.16\\,\\text{J}$ of work warms one gram of water by one degree; the present value is $4.19\\,\\text{J}$."
+          },
+          {
+            "text": "The work turns into heat in the water, and the water stores this heat.",
+            "feedback": "Heat is not a substance stored in the water. Heat means energy transferred because of a temperature difference, and in this experiment the water was not heated at all. The work done by the weight increased the internal energy of the water, and that is why the temperature rose."
+          },
+          {
+            "text": "About half of the work ends up in the water.",
+            "feedback": "Compare the columns: $196\\,\\text{J}$ and $194\\,\\text{J}$ differ by only about one percent. Almost all of the work increases the internal energy of the water."
+          }
+        ]
+      },
+      "source": "simulated",
+      "source_note": "invented values similar to Joule's experiment, not Joule's own measurements"
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with your measurements and with the model $W = Fs$. Also return to the opening question: why is carrying a backpack along a level corridor not work in the physics sense, even though your shoulders get tired?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the spring example like this: $W = Fs = 40\\,\\text{N} \\cdot 0.20\\,\\text{m} = 8.0\\,\\text{J}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The unit should be W, not J.",
+          "feedback": "The joule is the unit of work, and $1\\,\\text{J} = 1\\,\\text{N}\\cdot\\text{m}$. The unit is correct; the error is elsewhere."
+        },
+        {
+          "text": "The force is not 40 N over the whole distance. The work is the area of the triangle under the $(s, F)$ graph, $\\tfrac{1}{2} \\cdot 40\\,\\text{N} \\cdot 0.20\\,\\text{m} = 4.0\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. $W = Fs$ holds for a constant force. When the force increases steadily from zero, the average force is half of the peak value, and the work is half of the student's result."
+        },
+        {
+          "text": "The distance should be $20\\,\\text{m}$, not $0.20\\,\\text{m}$.",
+          "feedback": "The spring was stretched 20 cm, and $20\\,\\text{cm} = 0.20\\,\\text{m}$. The unit conversion is correct."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "The formula $W = Fs$ applies to a constant force. Here the force increases from zero to 40 N, so it is 40 N only at the end of the distance."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "An electric scooter travels at a steady $5.0\\,\\text{m/s}$. The motor pushes the scooter with a 48 N force in the direction of motion, which cancels friction and air resistance. How large is the power of the motor? Give your answer in watts.",
+      "answer": 240,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Power is work per unit time. How far does the scooter travel in one second, and how much work does the force do over that distance?",
+        "When the force is in the direction of motion, $P = \\dfrac{W}{t} = \\dfrac{Fs}{t} = Fv$.",
+        "Substitute: $P = Fv = 48\\,\\text{N} \\cdot 5.0\\,\\text{m/s}$. Remember that $1\\,\\text{N}\\cdot\\text{m/s} = 1\\,\\text{W}$."
+      ],
+      "mistakes": [
+        {
+          "value": 9.6,
+          "feedback": "You divided the force by the speed. Power is force times speed: $P = Fv$."
+        },
+        {
+          "value": 0.24,
+          "feedback": "The result is in watts, not kilowatts: $48\\,\\text{N} \\cdot 5.0\\,\\text{m/s} = 240\\,\\text{W}$."
+        }
+      ],
+      "solution": "**Given:** force $F = 48\\,\\text{N}$ (in the direction of motion), speed $v = 5.0\\,\\text{m/s}$, motion at a steady speed\n\n**Find:** power of the motor $P$ in watts\n\n**Principle:** Power is work per unit time. The scooter moves at a steady speed and the force of the motor is constant and in the direction of motion, so the distance travelled in one second is $v$ and the work done in one second is $F v$.\n\n**Formula:** $P = \\dfrac{W}{t}$, $W = F s$ and $s = v t$, so\n\n$$P = \\frac{F v t}{t} = F v$$\n\n**Unit conversions:** The force is in newtons and the speed in metres per second, so the product comes directly in watts: $1\\,\\text{N}\\cdot\\tfrac{\\text{m}}{\\text{s}} = 1\\,\\text{W}$.\n\n**Substitution:** $P = 48\\,\\text{N} \\cdot 5.0\\,\\tfrac{\\text{m}}{\\text{s}} = 240\\,\\text{W}$\n\n**Answer:** $240\\,\\text{W}$, two significant figures like the speed $5.0\\,\\text{m/s}$.\n\n**Reasonableness:** Check through time: in one second the scooter travels $5.0\\,\\text{m}$, the work is $48\\,\\text{N} \\cdot 5.0\\,\\text{m} = 240\\,\\text{J}$ and the power is $\\tfrac{240\\,\\text{J}}{1\\,\\text{s}} = 240\\,\\text{W}$. A little over two hundred watts is a typical riding power for a scooter on level ground.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. Level 1 exercises use one formula; level 3 requires reasoning."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A spring is stretched first from 0 cm to 10 cm and then from 10 cm to 20 cm. The force increases steadily with the extension. Compared with the first stretch, the second stretch requires",
+      "choices": [
+        {
+          "text": "the same work, because the extension increases by the same amount.",
+          "feedback": "The force is larger in the second interval, so the area under the $(s, F)$ graph is larger there. Draw the triangle and split it with a vertical line at 10 cm."
+        },
+        {
+          "text": "twice the work, because the force is twice as large at the end.",
+          "feedback": "The final force is twice as large, but work is the area, not the final force. The area of the triangle 0–20 cm is four times that of the triangle 0–10 cm, so the interval 10–20 cm is 4 − 1 = 3 parts."
+        },
+        {
+          "text": "three times the work.",
+          "correct": true,
+          "feedback": "Correct. The $(s, F)$ graph is a triangle: the area of the interval 0–10 cm is 1 part and that of 0–20 cm is 4 parts, so the area of the interval 10–20 cm is 3 parts."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Carrying and work",
+      "prompt": "You lift a crate that weighs $98.1\\,\\text{N}$ upwards $1.0\\,\\text{m}$ at a steady speed. Then you carry it $5.0\\,\\text{m}$ horizontally at a steady speed. How much work does your supporting force do in total?",
+      "choices": [
+        {
+          "text": "About $98\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. In the lift the force is upwards and the motion is upwards, so $W = G h = 98.1\\,\\text{N} \\cdot 1.0\\,\\text{m} \\approx 98\\,\\text{J}$. When carrying horizontally, the supporting force is vertical and the motion is horizontal, so the force is perpendicular to the motion and does no work."
+        },
+        {
+          "text": "About $590\\,\\text{J}$.",
+          "feedback": "You multiplied the force by the whole distance, $98.1\\,\\text{N} \\cdot 6.0\\,\\text{m} \\approx 590\\,\\text{J}$. Work is the product of the force and the distance moved in the direction of the force. Over the horizontal distance the force is not in the direction of motion, so its contribution is zero."
+        },
+        {
+          "text": "About $490\\,\\text{J}$, because carrying is harder than lifting.",
+          "feedback": "Getting tired is not work in the physics sense. When carrying horizontally, the supporting force is perpendicular to the motion, so the work is zero even though the muscles get tired. The value $490\\,\\text{J}$ would be $98.1\\,\\text{N} \\cdot 5.0\\,\\text{m}$."
+        },
+        {
+          "text": "$0\\,\\text{J}$, because the speed of the crate does not change.",
+          "feedback": "The work done by a force does not depend on whether the speed changes. In the lift the supporting force and the displacement point in the same direction, so the force does positive work, $98\\,\\text{J}$. Only over the horizontal part is the work zero."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Graph and calculation",
+      "prompt": "In an $(s, F)$ graph the force in the direction of motion is 30 N from 0–$4.0\\,\\text{m}$ and then falls steadily to zero from 4.0–$8.0\\,\\text{m}$. How much work does the force do over the whole $8.0\\,\\text{m}$? Give your answer in joules.",
+      "answer": 180,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "Sketch the graph: a rectangle followed by a triangle. The work is the sum of these areas.",
+        "$W = W_1 + W_2 = F s_1 + \\tfrac{1}{2} F s_2$.",
+        "$W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 240,
+          "feedback": "You calculated $30\\,\\text{N} \\cdot 8.0\\,\\text{m}$, but the force is not 30 N over the whole distance. The second part is a triangle whose area is half that of the rectangle."
+        },
+        {
+          "value": 120,
+          "feedback": "You forgot the second part. The area of the triangle is $\\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} = 60\\,\\text{J}$."
+        }
+      ],
+      "optional": true,
+      "solution": "**Given:** force $F = 30\\,\\text{N}$ (in the direction of motion) constant over the distance $s_1 = 4.0\\,\\text{m}$ (0–$4.0\\,\\text{m}$); then the force falls steadily to zero over the distance $s_2 = 4.0\\,\\text{m}$ (4.0–$8.0\\,\\text{m}$)\n\n**Find:** work $W$ done over the whole $8.0\\,\\text{m}$ in joules\n\n**Principle:** The force changes, so the formula $W = F s$ does not apply to the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the part falling steadily to zero is a triangle.\n\n**Reading the graph:** The graph has a horizontal segment at the height $30\\,\\text{N}$ from $0\\ldots 4.0\\,\\text{m}$ and, continuing from it, a straight segment down to zero from $4.0\\ldots 8.0\\,\\text{m}$. The rectangle has height $30\\,\\text{N}$ and width $4.0\\,\\text{m}$. The triangle has height $30\\,\\text{N}$ and base $4.0\\,\\text{m}$.\n\n**Formula:** $W = A_\\text{rectangle} + A_\\text{triangle}$, so\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Conversions:** The force is in newtons and the distances in metres, so no conversions are needed: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Substitution:** $W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Answer:** $180\\,\\text{J}$, two significant figures like the given values $30\\,\\text{N}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** The average force is $\\tfrac{180\\,\\text{J}}{8.0\\,\\text{m}} = 22.5\\,\\text{N}$, which lies between the peak value $30\\,\\text{N}$ and zero. The work is less than $30\\,\\text{N} \\cdot 8.0\\,\\text{m} = 240\\,\\text{J}$ and greater than the rectangle alone, $120\\,\\text{J}$, because the force is not zero over the latter distance."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and transfer",
+      "prompt": "Explain in your own words why the motor of a lift does the same work regardless of the lifting speed, but needs a greater power for a faster lift. Use the concepts work and power, and units.",
+      "criteria": [
+        "I say that the work $W = Fs$ depends on the lifting force and the lifting height, not on time.",
+        "I say that power is work divided by time, $P = W/t$, or force times speed, $P = Fv$.",
+        "I use units correctly: work in joules, power in watts.",
+        "I connect the reasoning to the lift: the same load and height, a shorter time."
+      ],
+      "model": "The lifting force of the lift is equal to the weight of the load, and the distance is the lifting height. The work $W = Fs = Gh$ depends only on these, not on how long the lift takes. A faster lift does the same work in a shorter time, so its power $P = W/t$ is greater; for example, a lift that is twice as fast needs twice the power. Work is measured in joules and power in watts, $1\\,\\text{W} = 1\\,\\text{J/s}$.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, one quick question. Answer it yourself first and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-5-L1-01",
+      "level": 1,
+      "text": "Pullataikinaa vaivataan käsin. Vaivatessa kädet tekevät taikinaan työn $450\\,\\text{J}$. Lämpimistä käsistä siirtyy taikinaan lämpömäärä $120\\,\\text{J}$. Taikina on systeemi. Kuinka paljon taikinan sisäenergia muuttuu?",
+      "answer": 570,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-02",
+      "level": 1,
+      "text": "Kuppi kuumaa kahvia jäähtyy mökin pöydällä. Kahvista siirtyy ympäristöön lämpömäärä $8{,}4\\,\\text{kJ}$. Kahviin ei tehdä työtä, eikä kahvi tee työtä. Kuinka paljon kahvin sisäenergia muuttuu? Anna vastaus etumerkkeineen kilojouleina.",
+      "answer": -8.4,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-03",
+      "level": 1,
+      "text": "Juhlailmapallo viedään lämpimään saunaan. Pallon ilmaan siirtyy lämpömäärä $350\\,\\text{J}$. Samalla pallo laajenee, ja ilma tekee ympäristöön työn $100\\,\\text{J}$. Kuinka paljon pallon ilman sisäenergia muuttuu?",
+      "answer": 250,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-04",
+      "level": 1,
+      "text": "Henkilöauton moottorin sylinterissä polttoaine on palanut. Kuuma palokaasu laajenee ja työntää mäntää. Kaasu tekee mäntään työn $320\\,\\text{J}$. Samalla kaasusta siirtyy sylinterin seiniin lämpömäärä $180\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu? Anna vastaus etumerkkeineen.",
+      "answer": -500,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-05",
+      "level": 1,
+      "text": "Polkupyörän renkaasta päästetään ilmaa ulos venttiilin kautta. Ulos purkautuva ilma laajenee ja tekee ympäristöön työn $85\\,\\text{J}$. Samalla siihen ehtii siirtyä ympäristöstä lämpömäärä $15\\,\\text{J}$. Kuinka paljon purkautuvan ilman sisäenergia muuttuu? Anna vastaus etumerkkeineen.",
+      "answer": -70,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-5-L2-01",
+      "level": 2,
+      "text": "Kompressorin mäntä puristaa sylinterissä olevaa ilmaa. Kuvaajassa on männän ilmaan kohdistama voima $F$ männän kulkeman matkan $s$ funktiona puristuksen aikana. Ilman sisäenergia kasvaa puristuksessa $45\\,\\text{J}$. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Lue tarvittavat arvot kuvaajasta. Anna vastaus etumerkkeineen. Negatiivinen $Q$ tarkoittaa, että lämpöä siirtyy ilmasta pois.",
+      "figure": "fy3-5/piston-force",
+      "answer": -15,
+      "unit": "J",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-5-L2-02",
+      "level": 2,
+      "text": "Vedenkeittimen vastus siirtää veteen energiaa lämpönä. Teho on tasainen $2{,}0\\,\\text{kW}$, ja aika on 90 sekuntia. Samaan aikaan vedestä siirtyy keittimen kuoren kautta ympäristöön lämpömäärä $20\\,\\text{kJ}$. Kuinka paljon veden sisäenergia kasvaa? Anna vastaus kilojouleina.",
+      "answer": 160,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-03",
+      "level": 2,
+      "text": "Saimaalla liikennöivän höyrylaivan koneen sylinterissä höyry laajenee ja tekee mäntään työn $2{,}0\\,\\text{kJ}$. Samalla höyryn sisäenergia pienenee $1{,}2\\,\\text{kJ}$. Kuinka suuri lämpömäärä höyryyn siirtyy? Anna vastaus jouleina.",
+      "answer": 800,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-04",
+      "level": 2,
+      "text": "Pakastemustikoista tehtyä smoothieta sekoitetaan tehosekoittimessa. Terä tekee smoothieen työtä $250\\,\\text{W}$:n teholla. Smoothie on keittiön ilmaa kylmempää. Sekoituksen aikana siihen siirtyy kannun seinien kautta lämpömäärä $2{,}0\\,\\text{kJ}$. Sekoituksen jälkeen smoothien sisäenergia on kasvanut $12\\,\\text{kJ}$. Kuinka kauan sekoitin oli päällä?",
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-5-L3-01",
+      "level": 3,
+      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti. Mäntä työntää ilmaa $0{,}15\\,\\text{m}$:n matkan keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa. Ilmaa voi pitää ideaalikaasuna. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen. Perustele, miksi ilman sisäenergia ei muutu.",
+      "answer": -18,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-02",
+      "level": 3,
+      "text": "Lukion fysiikan tunnilla tehdään Joulen kokeen kaltainen mittaus. Narun varassa oleva $5{,}0\\,\\text{kg}$:n punnus laskeutuu hitaasti tasaisella nopeudella ja pyörittää siipipyörää vedessä. Vesiastia on hyvin eristetty. Punnus nostetaan aina takaisin ylös ja päästetään alas, yhteensä 12 kertaa. Kuinka korkealta punnuksen on joka kerta laskeuduttava, jotta veden sisäenergia kasvaa kaikkiaan $1{,}0\\,\\text{kJ}$? Oleta, että punnuksen menettämä energia siirtyy siipipyörän tekemänä työnä veteen.",
+      "answer": 1.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-03",
+      "level": 3,
+      "text": "Sylinterissä oleva kaasu viedään kahdella eri tavalla samasta alkulämpötilasta samaan loppulämpötilaan. Kaasun määrä ei muutu. Kaasua voi pitää ideaalikaasuna. Ideaalikaasun hiukkasten välisten vuorovaikutusten energia on merkityksettömän pieni. Tavassa A kaasuun siirtyy lämpömäärä $400\\,\\text{J}$, ja kaasu tekee ympäristöön työn $150\\,\\text{J}$. Tavassa B kaasu tekee ympäristöön työn $60\\,\\text{J}$. Kuinka suuri lämpömäärä kaasuun siirtyy tavassa B? Perustele, miksi kaasun sisäenergian muutos on molemmissa tavoissa sama.",
+      "answer": 310,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "contribution": "The earlier lessons gave the parts: the quantity of heat $Q = cm\\Delta T$, latent heat of fusion and of vaporisation, and the power conducted through a building part $P = UA\\Delta T$. This lesson combines them into energy bookkeeping in everyday situations: the incoming energy is used for heating or for a change of state, and during a change of state the temperature stays constant.",
+  "learn": [
+    "You can combine heat, latent heats of fusion and vaporisation, and conducted power into one energy balance.",
+    "You can justify whether the incoming energy is used for heating or for a change of state.",
+    "You can solve multi-step problems about everyday heat phenomena."
+  ],
+  "prior": [
+    "The quantity of heat when heating is $Q = cm\\Delta T$ (chapter *Heating and cooling of a substance: Q = cmΔT*)",
+    "Melting and vaporisation need energy (freezing and condensation release it), but the temperature does not change, $Q = sm$ and $Q = rm$ (chapter *Changes of state*)",
+    "The power conducted through a building part is $P = UA\\Delta T$ (chapter *Heat transfer, energy balance and climate change*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a trip, a cool bag contains an ice pack and bottles of drinks. It is hot outside, and the walls of the bag let in a little heat all the time. For a few hours the drinks are ice cold. Then there is nothing left of the ice but water, and a couple of hours later the drinks are no longer cold.",
+      "question": "At the start, the same power comes through the wall all the time. Why do the drinks stay cold for hours but then warm up quickly?"
+    },
+    {
+      "id": "pr-teho",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revise the previous lesson",
+      "prompt": "Two cool bags have the same insulation and the same temperature difference between the inside and the outside, but the total area of the walls of one is twice as large. How much more power is conducted through the walls of the larger bag, when $P = UA\\Delta T$?",
+      "choices": [
+        {
+          "text": "The same amount, because the insulation and the temperature difference are the same.",
+          "feedback": "The insulation and the temperature difference are the same, but the power also depends on the area: $P = UA\\Delta T$ is directly proportional to the area $A$. More heat is conducted through a larger surface."
+        },
+        {
+          "text": "Twice the power, because $P$ is directly proportional to the area $A$.",
+          "feedback": "Correct. When $U$ and $\\Delta T$ stay the same and $A$ doubles, $P = UA\\Delta T$ also doubles.",
+          "correct": true
+        },
+        {
+          "text": "Half, because in the larger bag the heat is spread over a larger area.",
+          "feedback": "In the formula $A$ is a factor and not a divisor. The larger the surface, the more heat can pass through it, so the power increases."
+        },
+        {
+          "text": "Four times the power, because the area is multiplied by two on both sides of the wall.",
+          "feedback": "The formula $P = UA\\Delta T$ contains the area only once. Doubling the area doubles the power, it does not quadruple it."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "justify": true,
+      "title": "Prediction 1: how does the inside temperature develop?",
+      "prompt": "A cool bag contains a $1.0\\,\\text{kg}$ ice pack and drinks, and everything is at $0\\,{}^\\circ\\text{C}$ at the start. It is $28\\,{}^\\circ\\text{C}$ outside, and the walls insulate well but not perfectly. Four students predict how the inside temperature of the bag will develop over the next few hours. Whose prediction do you think is best?",
+      "choices": [
+        {
+          "text": "Aino: The temperature rises at once and steadily, because it is warm outside. The ice only slows down the rise.",
+          "feedback": "If the ice only slowed down the rise, a bag filled with ice would warm up in the same way as an empty one. What happens to the temperature when the energy is used to melt ice? Check the graph in the Investigate step."
+        },
+        {
+          "text": "Bea: The insulation is so good that no heat gets in at all, so the temperature stays at $0\\,{}^\\circ\\text{C}$ however long you wait.",
+          "feedback": "If no heat got in, the ice would never melt. But a power $P = UA\\Delta T$, although a small one, comes through the wall. Look at the graph in the Investigate step to see what happens when the ice has run out."
+        },
+        {
+          "text": "Cem: The temperature stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice left, because the incoming energy melts the ice. When the ice has run out, the temperature starts to rise.",
+          "feedback": "The graph and the table in the Investigate step test this: see what happens to the temperature when energy comes in all the time, and when it starts to rise.",
+          "correct": true
+        },
+        {
+          "text": "Dan: Ice produces cold, so the inside temperature first drops below $0\\,{}^\\circ\\text{C}$ and only then rises.",
+          "feedback": "Ice does not produce cold: because of the temperature difference, energy moves on net from the warmer object to the colder one. The ice is already at its melting point, so the incoming energy melts it and does not change its temperature. Can the temperature drop below $0\\,{}^\\circ\\text{C}$ when energy comes into the bag? Look at the graph in the Investigate step."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a hot day",
+      "prompt": "In the same bag, $1.0\\,\\text{kg}$ of ice lasts 4.3 hours when it is $24\\,{}^\\circ\\text{C}$ outside. How long does the ice last when it is $36\\,{}^\\circ\\text{C}$ outside, that is, when the temperature difference is 1.5 times as large?",
+      "choices": [
+        {
+          "text": "The same time, because the amount of ice is the same and its latent heat of fusion is the same.",
+          "feedback": "The energy needed to melt the ice is the same, but it comes in at different powers. The greater the power at which energy is transferred, the sooner it has been used up. The table in the Investigate step shows how the time depends on the temperature difference."
+        },
+        {
+          "text": "About 2.9 hours, because the power is 1.5 times as large and the same energy is transferred 1.5 times faster.",
+          "feedback": "The table in the Investigate step tests this: check whether the time is inversely proportional to the temperature difference.",
+          "correct": true
+        },
+        {
+          "text": "About 2.2 hours, because the time becomes shorter by the same percentage as the temperature difference increases: the difference increases by $50\\,\\%$, so the time becomes $50\\,\\%$ shorter.",
+          "feedback": "This is a tempting model, but the time does not become shorter in the same proportion as the difference increases. The difference increases from $24\\,\\text{K}$ to $36\\,\\text{K}$, which is 1.5 times as large, so the power becomes 1.5 times as large and the time is $\\tfrac{1}{1.5} \\approx 0.67$ times as long, not half. Check in the table what happens to the product $Pt$."
+        }
+      ]
+    },
+    {
+      "id": "kayra",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Inside temperature as a function of time",
+      "text": "The graph shows the inside temperature of a cool bag calculated with a model. The bag contains $1.0\\,\\text{kg}$ of ice, everything is at $0\\,{}^\\circ\\text{C}$ at the start, and it is $28\\,{}^\\circ\\text{C}$ outside. The product of the $U$-value and the area of the walls, $UA$, is $0.90\\,\\text{W/K}$, so as long as the inside is at $0\\,{}^\\circ\\text{C}$, the power through the wall is $P = UA\\Delta T = 0.90\\,\\text{W/K} \\cdot 28\\,\\text{K} = 25\\,\\text{W}$. The numbers are *example values calculated with a model*, not measurements, and the model assumes that everything inside is at the same temperature all the time.\n\n<svg viewBox=\"0 0 600 372\" role=\"img\" aria-label=\"Graph of the inside temperature of a cool bag as a function of time, according to the model. The temperature stays at 0 °C for about 3.7 hours while the ice melts, and then starts to rise towards the outside temperature of 28 °C. The rise is steep at first and slows down as the temperature difference becomes smaller. The axes are to scale.\" style=\"max-width:100%;font-size:24px\">\n  <line x1=\"84\" y1=\"300.0\" x2=\"516\" y2=\"300.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"84\" y1=\"218.0\" x2=\"516\" y2=\"218.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"84\" y1=\"136.0\" x2=\"516\" y2=\"136.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"84\" y1=\"54.0\" x2=\"516\" y2=\"54.0\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"84.0\" y1=\"48\" x2=\"84.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"138.0\" y1=\"48\" x2=\"138.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"192.0\" y1=\"48\" x2=\"192.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"246.0\" y1=\"48\" x2=\"246.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"300.0\" y1=\"48\" x2=\"300.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"354.0\" y1=\"48\" x2=\"354.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"408.0\" y1=\"48\" x2=\"408.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"462.0\" y1=\"48\" x2=\"462.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"516.0\" y1=\"48\" x2=\"516.0\" y2=\"300\" stroke=\"#e3dccb\" stroke-width=\"1.5\"/>\n  <line x1=\"84\" y1=\"70.4\" x2=\"516\" y2=\"70.4\" stroke=\"#6b7480\" stroke-width=\"2\" stroke-dasharray=\"7 6\"/>\n  <path d=\"M84,300 H526\" stroke=\"#1f2933\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M532,300 L520,294 V306 Z\" fill=\"#1f2933\"/>\n  <path d=\"M84,300 V40\" stroke=\"#1f2933\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M84,34 L78,46 H90 Z\" fill=\"#1f2933\"/>\n  <line x1=\"84.0\" y1=\"300\" x2=\"84.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"73\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$0$</div></foreignObject>\n  <line x1=\"138.0\" y1=\"300\" x2=\"138.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"127\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$1$</div></foreignObject>\n  <line x1=\"192.0\" y1=\"300\" x2=\"192.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"181\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$2$</div></foreignObject>\n  <line x1=\"246.0\" y1=\"300\" x2=\"246.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"235\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$3$</div></foreignObject>\n  <line x1=\"300.0\" y1=\"300\" x2=\"300.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"289\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$4$</div></foreignObject>\n  <line x1=\"354.0\" y1=\"300\" x2=\"354.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"343\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$5$</div></foreignObject>\n  <line x1=\"408.0\" y1=\"300\" x2=\"408.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"397\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$6$</div></foreignObject>\n  <line x1=\"462.0\" y1=\"300\" x2=\"462.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"451\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$7$</div></foreignObject>\n  <line x1=\"516.0\" y1=\"300\" x2=\"516.0\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"505\" y=\"309\" width=\"22\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;color:#6b7480;\">$8$</div></foreignObject>\n  <line x1=\"77\" y1=\"300.0\" x2=\"84\" y2=\"300.0\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"36\" y=\"285\" width=\"36\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right;color:#6b7480;\">$0$</div></foreignObject>\n  <line x1=\"77\" y1=\"218.0\" x2=\"84\" y2=\"218.0\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"36\" y=\"203\" width=\"36\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right;color:#6b7480;\">$10$</div></foreignObject>\n  <line x1=\"77\" y1=\"136.0\" x2=\"84\" y2=\"136.0\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"36\" y=\"121\" width=\"36\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right;color:#6b7480;\">$20$</div></foreignObject>\n  <line x1=\"77\" y1=\"54.0\" x2=\"84\" y2=\"54.0\" stroke=\"#1f2933\" stroke-width=\"2\"/><foreignObject x=\"36\" y=\"39\" width=\"36\" height=\"30\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right;color:#6b7480;\">$30$</div></foreignObject>\n  <foreignObject x=\"8\" y=\"0\" width=\"150\" height=\"40\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\">$T\\ (^\\circ\\text{C})$</div></foreignObject>\n  <foreignObject x=\"538\" y=\"280\" width=\"62\" height=\"38\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\">$t\\ (\\text{h})$</div></foreignObject>\n  <foreignObject x=\"420\" y=\"26.4\" width=\"100\" height=\"38\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:right;color:#6b7480;\">$28\\,{}^\\circ\\text{C}$</div></foreignObject>\n  <path d=\"M84.0,300.0 L282.7,300.0\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n  <path d=\"M282.7,300.0 L288.1,282.9 L293.5,267.1 L298.9,252.5 L304.3,238.9 L309.7,226.4 L315.1,214.8 L320.5,204.0 L325.9,194.1 L331.3,184.9 L336.7,176.3 L342.1,168.5 L347.5,161.2 L352.9,154.4 L358.3,148.2 L363.7,142.4 L369.1,137.0 L374.5,132.1 L379.9,127.5 L385.3,123.2 L390.7,119.3 L396.1,115.7 L401.5,112.3 L406.9,109.2 L412.3,106.3 L417.7,103.6 L423.1,101.1 L428.5,98.9 L433.9,96.7 L439.3,94.8 L444.7,93.0 L450.1,91.3 L455.5,89.7 L460.9,88.3 L466.3,87.0 L471.7,85.7 L477.1,84.6 L482.5,83.5 L487.9,82.6 L493.3,81.6 L498.7,80.8 L504.1,80.0 L509.5,79.3 L514.9,78.7 L516.0,78.5\" fill=\"none\" stroke=\"#c92a2a\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <line x1=\"282.7\" y1=\"300.0\" x2=\"282.7\" y2=\"190.0\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-dasharray=\"5 5\"/>\n  <foreignObject x=\"276.7\" y=\"140.0\" width=\"150\" height=\"44\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\">$t_0$</div></foreignObject>\n  <foreignObject x=\"114.8\" y=\"256\" width=\"137\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;\">$\\text{ice melts}$</div></foreignObject>\n  <foreignObject x=\"316.5\" y=\"222\" width=\"189\" height=\"36\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"text-align:center;\">$\\text{water warms up}$</div></foreignObject>\n</svg>\n\nThe vertical grid lines of the graph are one hour apart.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Read from the graph for how many hours the temperature stays at $0\\,{}^\\circ\\text{C}$, and calculate the energy $E = Pt$ transferred into the bag through the walls during the plateau. Give your answer in kilojoules.",
+        "answer": 333,
+        "unit": "kJ",
+        "tolerance": 0.04,
+        "hints": [
+          "The plateau is the horizontal part of the graph. Read the time at the point where the curve starts to rise.",
+          "Energy is power times time, $E = Pt$, and hours are converted to seconds: $1\\,\\text{h} = 3600\\,\\text{s}$.",
+          "The power is $25\\,\\text{W}$ and the duration of the plateau is about $3.7\\,\\text{h} \\approx 13\\,300\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 92.5,
+            "feedback": "This is power times hours, $25 \\cdot 3.7$. Energy comes out in watts and seconds, so the hours have to be converted into seconds by multiplying by 3600, and the joules are converted into kilojoules."
+          },
+          {
+            "value": 5.55,
+            "feedback": "An hour is 3600 seconds, not 60 seconds. Multiply the time by 3600, not by 60."
+          }
+        ],
+        "solution": "**Given:** duration of the plateau read from the graph $t \\approx 3.7\\,\\text{h}$ (the curve starts to rise at $t_0$), power $P = 0.90\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot 28\\,\\text{K} \\approx 25\\,\\text{W}$; ice $1.0\\,\\text{kg}$\n\n**Find:** energy $E$ transferred through the walls during the plateau, in kilojoules\n\n**Principle:** As long as there is ice in the bag, the inside stays at $0\\,{}^\\circ\\text{C}$, so the temperature difference and the power through the wall are constant. The energy transferred at constant power is power times time, and it is used to melt the ice, because the temperature does not change on the plateau.\n\n**Reading the graph:** The plateau is the horizontal part of the curve at $0\\,{}^\\circ\\text{C}$. It ends at $t_0$, where the curve starts to rise; the vertical lines are one hour apart, and $t_0$ lies between the $3\\,\\text{h}$ and $4\\,\\text{h}$ lines, at about $3.7\\,\\text{h}$.\n\n**Formula:** $E = P\\,t$\n\n**Conversions:** $t = 3.7\\,\\text{h} = 3.7 \\cdot 3600\\,\\text{s} = 13\\,320\\,\\text{s}$, so that a watt times a second is a joule. Finally $1\\,\\text{kJ} = 1000\\,\\text{J}$.\n\n**Substitution:** $E = 25\\,\\text{W} \\cdot 13\\,320\\,\\text{s} = 333\\,000\\,\\text{J} = 333\\,\\text{kJ}$\n\n**Answer:** $3.3 \\cdot 10^2\\,\\text{kJ}$ (calculator value $333\\,\\text{kJ}$), two significant figures, because the time $3.7\\,\\text{h}$ read from the graph is known to only two figures.\n\n**Reasonableness:** Melting the ice needs $s\\,m = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 1.0\\,\\text{kg} = 334\\,\\text{kJ}$, and the result is almost exactly the same. So all the energy that came through the wall during the whole plateau was used to melt ice and none to raise the temperature. Reverse check: melting the ice takes $t = \\tfrac{334\\,\\text{kJ}}{25\\,\\text{W}} \\approx 3.7\\,\\text{h}$, which matches the time read from the graph."
+      },
+      "source": "model"
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Duration and temperature difference",
+      "text": "The table shows the model-calculated time the $1.0\\,\\text{kg}$ of ice lasts in the same bag ($UA = 0.90\\,\\text{W/K}$) when the outside temperature varies. The inside is at $0\\,{}^\\circ\\text{C}$ all the time, so the temperature difference $\\Delta T$ is the outside temperature in degrees Celsius. The numbers are *example values*, not measurements.\n\n| $\\Delta T$ (K) | $P$ (W) | $t$ (h) |\n|---|---|---|\n| 12 | 10.8 | 8.59 |\n| 18 | 16.2 | 5.73 |\n| 24 | 21.6 | 4.30 |\n| 30 | 27.0 | 3.44 |\n| 36 | 32.4 | 2.86 |",
+      "question": {
+        "type": "choice",
+        "prompt": "For each row, calculate the product $P t$ (convert the hours to seconds). What does the table show?",
+        "choices": [
+          {
+            "text": "The product $Pt$ is about $334\\,\\text{kJ}$ in every row, so melting the ice always needs the same energy, and the time is inversely proportional to the power.",
+            "feedback": "Correct. For example $10.8\\,\\text{W} \\cdot 8.59 \\cdot 3600\\,\\text{s} \\approx 334\\,\\text{kJ}$ and $32.4\\,\\text{W} \\cdot 2.86 \\cdot 3600\\,\\text{s} \\approx 334\\,\\text{kJ}$. The energy is always $sm$, and the length of the time depends on the power at which the energy comes in.",
+            "correct": true
+          },
+          {
+            "text": "The time is directly proportional to the temperature difference: when the difference increases, the ice lasts longer.",
+            "feedback": "In the table the time decreases when the temperature difference increases. A greater difference means a greater power, and the same energy is used up faster."
+          },
+          {
+            "text": "The power does not affect the time, because the amount of ice is the same all the time.",
+            "feedback": "In the table the time changes from 8.59 hours to 2.86 hours as the power increases. The amount of ice and the energy needed to melt it are the same, but the energy is used up at different rates."
+          },
+          {
+            "text": "The product $Pt$ increases when the temperature difference increases, because melting uses more energy.",
+            "feedback": "Calculate even just two rows: the product is the same for both. The energy used for melting, $sm$, depends only on the mass of the ice and not on how quickly the energy comes in."
+          }
+        ]
+      },
+      "source": "model"
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides how long the ice lasts?",
+      "prompt": "Using the graph and the table, write briefly why the temperature stays at $0\\,{}^\\circ\\text{C}$ for so long, what the energy that has come through the wall is used for, and how the time depends on the temperature difference.",
+      "model": "As long as there is ice, the inside temperature stays at $0\\,{}^\\circ\\text{C}$: the energy coming through the wall is used to melt ice and does not raise the temperature. During the plateau the energy that comes in is $Pt \\approx 334\\,\\text{kJ}$, which is the latent heat of fusion $sm$ of $1.0\\,\\text{kg}$ of ice. In every row of the table $Pt$ is the same, so $t = \\dfrac{sm}{UA\\,\\Delta T}$: the time is inversely proportional to the temperature difference. When $\\Delta T$ becomes three times as large ($12\\,\\text{K} \\to 36\\,\\text{K}$), the time becomes a third ($8.6\\,\\text{h} \\to 2.9\\,\\text{h}$). The values were calculated with a model that assumes the inside temperature is uniform; in a real bag the ice would melt unevenly and the lid would leak more.",
+      "criteria": [
+        "I explained the plateau: the energy is used for melting, not for raising the temperature.",
+        "I stated that $Pt$ is constant and equal to $sm$.",
+        "I described that $t$ is inversely proportional to $\\Delta T$.",
+        "I distinguished the values of the model from measurements."
+      ]
+    },
+    {
+      "id": "loyly",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Where does the energy of the sauna water go?",
+      "text": "The sauna stones are at $300\\,{}^\\circ\\text{C}$, and water taken from a well is thrown on them. The water warms to the boiling point $100\\,{}^\\circ\\text{C}$ and vaporises completely, and the energy is taken from the stones. The table gives the initial values of the problem; the energies are calculated with the formulas $Q = cm\\Delta T$ and $Q = rm$.\n\n| Quantity | Value |\n|---|---|\n| mass of water $m$ | $0.25\\,\\text{kg}$ |\n| initial temperature of the water | $10\\,{}^\\circ\\text{C}$ |\n| specific heat capacity $c$ | $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ |\n| specific latent heat of vaporisation $r$ | $2260\\,\\text{kJ/kg}$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the energies used for heating and for vaporising the water. What percentage of the total energy absorbed by the water is used for vaporisation? Give your answer as a percentage.",
+        "answer": 86,
+        "unit": "%",
+        "tolerance": 0.02,
+        "hints": [
+          "The total energy has two stages: warming from $10\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$ and vaporisation. Calculate each separately.",
+          "Heating is $Q_1 = cm\\Delta T$, where $\\Delta T = 90\\,\\text{K}$, and vaporisation is $Q_2 = rm$. The share is $\\dfrac{Q_2}{Q_1 + Q_2}$.",
+          "$Q_1 = 4190 \\cdot 0.25 \\cdot 90\\,\\text{J} \\approx 94\\,\\text{kJ}$ and $Q_2 = 2260 \\cdot 0.25\\,\\text{kJ} = 565\\,\\text{kJ}$. Divide $Q_2$ by the sum $Q_1 + Q_2$ and convert to a percentage."
+        ],
+        "mistakes": [
+          {
+            "value": 14.3,
+            "feedback": "This is the share of the warming of the water, $\\dfrac{94\\,\\text{kJ}}{659\\,\\text{kJ}}$. The share of vaporisation is the rest: $100\\,\\% - 14.3\\,\\% = 85.7\\,\\%$."
+          },
+          {
+            "value": 6.0,
+            "feedback": "This is the ratio of the energies of vaporisation and heating, $\\dfrac{565\\,\\text{kJ}}{94\\,\\text{kJ}}$. The share is obtained by dividing by the total energy $659\\,\\text{kJ}$."
+          }
+        ],
+        "solution": "**Given:** water $m = 0.25\\,\\text{kg}$, $T_\\text{initial} = 10\\,{}^\\circ\\text{C}$, boiling point $100\\,{}^\\circ\\text{C}$; from the table $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ and $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** share of vaporisation in the total energy absorbed by the water, as a percentage\n\n**Principle:** The water absorbs energy in two stages, one after the other: first it warms up to $100\\,{}^\\circ\\text{C}$ ($Q_1 = c\\,m\\,\\Delta T$) and then it vaporises at this temperature, which does not change ($Q_2 = r\\,m$). The share is the energy of vaporisation divided by the total energy.\n\n**Formula:** $\\text{share} = \\dfrac{Q_2}{Q_1 + Q_2} = \\dfrac{r\\,m}{c\\,m\\,\\Delta T + r\\,m}$\n\n**Conversions:** $\\Delta T = 100\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 90\\,\\text{K}$, the same in kelvins. $r = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$, so that both energies are in joules. Finally the quotient is multiplied by one hundred to give a percentage.\n\n**Substitution:** $Q_1 = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.25\\,\\text{kg} \\cdot 90\\,\\text{K} = 94\\,275\\,\\text{J}$ and $Q_2 = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0.25\\,\\text{kg} = 565\\,000\\,\\text{J}$, so the share is $\\dfrac{565\\,000\\,\\text{J}}{94\\,275\\,\\text{J} + 565\\,000\\,\\text{J}} = 0.857 = 85.7\\,\\%$\n\n**Answer:** $86\\,\\%$, two significant figures, because the change in temperature $90\\,\\text{K}$ ($100\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C}$) has two figures; the mass cancels.\n\n**Reasonableness:** Vaporisation takes almost all the energy, even though the temperature does not change during it. The share does not depend on the mass, because $m$ cancels: a smaller or larger amount of water would give the same percentage. Estimate: $r$ is about $2260\\,\\text{kJ/kg}$ and heating takes about $4.19 \\cdot 90 \\approx 380\\,\\text{kJ/kg}$, so the share is $\\tfrac{2260}{2640} \\approx 86\\,\\%$. The share is between 0 and $100\\,\\%$, as it should be. This is why the stones cool down so clearly when the sauna water vaporises."
+      },
+      "optional": true
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Go back to your predictions",
+      "prompt": "Compare your predictions with the graph and the tables. Then go back to the question at the start: why do the drinks stay cold for hours and then warm up quickly, even though the same power comes through the wall all the time at the start? At what stage is the energy used for a change of state, and at what stage for raising the temperature? In Prediction 2 the table does not only confirm the correct answer but also rejects the tempting model \"the time becomes shorter by the same percentage as the difference increases\": what happens to the product $Pt$, and why is the time inversely proportional to the power?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "prompt": "$0.80\\,\\text{kg}$ of ice ($0\\,{}^\\circ\\text{C}$) and $0.60\\,\\text{kg}$ of water ($25\\,{}^\\circ\\text{C}$) are mixed in an insulated container. A student calculates the final state as a weighted average: $T = \\dfrac{0.80 \\cdot 0 + 0.60 \\cdot 25}{0.80 + 0.60}\\,{}^\\circ\\text{C} \\approx 10.7\\,{}^\\circ\\text{C}$. Where is the mistake?",
+      "choices": [
+        {
+          "text": "The temperatures should be converted into kelvins before the average is calculated.",
+          "feedback": "A weighted average gives the same result in kelvins and in degrees Celsius, because the scales differ only by a constant. The mistake is elsewhere: the calculation does not include the melting of the ice."
+        },
+        {
+          "text": "The calculation did not take the melting of the ice into account: the water can give out only $4190 \\cdot 0.60 \\cdot 25\\,\\text{J} \\approx 63\\,\\text{kJ}$, but melting all the ice would need $334\\,\\text{kJ/kg} \\cdot 0.80\\,\\text{kg} \\approx 267\\,\\text{kJ}$. The ice melts only partly, and the temperature is $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Correct. The water cools to $0\\,{}^\\circ\\text{C}$ and melts $63\\,\\text{kJ} / 334\\,\\text{kJ/kg} \\approx 0.19\\,\\text{kg}$ of ice. About $0.61\\,\\text{kg}$ of ice is left, and the temperature of the mixture is $0\\,{}^\\circ\\text{C}$.",
+          "correct": true
+        },
+        {
+          "text": "The mass of the ice should be multiplied by the latent heat of fusion, but nothing needs to be done for the water.",
+          "feedback": "For the water you have to calculate the energy given out, $cm\\Delta T$. This is the energy that the melting of the ice is compared with, so both energies are needed."
+        },
+        {
+          "text": "There is no mistake in the calculation, because the temperature of the mixture is always between the initial temperatures.",
+          "feedback": "The result is indeed between the initial temperatures, but a weighted average assumes that all the substance is liquid. Melting the ice needs energy that the 25-degree water here cannot supply."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The power of a sauna stove is $6.0\\,\\text{kW}$, and assume that all of it is transferred to the stones. $0.15\\,\\text{kg}$ of sauna water at $20\\,{}^\\circ\\text{C}$ is thrown on the stones. The water warms to $100\\,{}^\\circ\\text{C}$ and vaporises completely, and all the energy needed is taken from the stones. For how many seconds must the stove run for the stones to get the same energy back? Use the values $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ and $r = 2260\\,\\text{kJ/kg}$.",
+      "answer": 65,
+      "unit": "s",
+      "tolerance": 0.02,
+      "hints": [
+        "How much energy was taken from the stones? The water has to both warm up and vaporise.",
+        "The energy taken from the stones is $Q = cm\\Delta T + rm$, and the energy produced by the stove is $Pt$. These are equal.",
+        "$Q = 0.15\\,\\text{kg} \\cdot (4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K} + 2\\,260\\,000\\,\\text{J/kg}) \\approx 389\\,\\text{kJ}$. Divide by the power $6000\\,\\text{W}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.4,
+          "feedback": "You calculated only the warming of the water from $20\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$. The water also vaporises, and vaporisation takes most of the energy: $rm$."
+        },
+        {
+          "value": 56.5,
+          "feedback": "You calculated only the vaporisation. The water first warms from $20\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$, and that also takes energy: $cm\\Delta T$."
+        }
+      ],
+      "solution": "**Given:** power of the stove $P = 6.0\\,\\text{kW}$, all of it is transferred to the stones; water $m = 0.15\\,\\text{kg}$, $T_\\text{initial} = 20\\,{}^\\circ\\text{C}$, warms to $100\\,{}^\\circ\\text{C}$ and vaporises; $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ and $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** time $t$ in seconds for which the stove has to run\n\n**Principle:** Energy is conserved: the energy transferred from the stones to the water is the heating $c\\,m\\,\\Delta T$ and the vaporisation $r\\,m$, because the water goes through both stages and the temperature does not change during vaporisation. The stones get the same energy back when the stove has produced it at constant power: $P\\,t$.\n\n**Formula:** $P\\,t = m\\,(c\\,\\Delta T + r)$, so\n\n$$t = \\frac{m\\,(c\\,\\Delta T + r)}{P}$$\n\n**Conversions:** $\\Delta T = 100\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C} = 80\\,\\text{K}$, the same in kelvins. $r = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ and $P = 6.0\\,\\text{kW} = 6000\\,\\text{W}$, so that $t$ comes out in seconds.\n\n**Substitution:** The expression in brackets is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K} + 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} = 335\\,200\\,\\tfrac{\\text{J}}{\\text{kg}} + 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} = 2\\,595\\,200\\,\\tfrac{\\text{J}}{\\text{kg}}$, so\n\n$$\\begin{aligned} t &= \\dfrac{0.15\\,\\text{kg} \\cdot 2\\,595\\,200\\,\\tfrac{\\text{J}}{\\text{kg}}}{6000\\,\\text{W}} \\\\ &= \\dfrac{389\\,280\\,\\text{J}}{6000\\,\\text{W}} \\\\ &= 64.88\\,\\text{s} \\end{aligned}$$\n\n**Answer:** $65\\,\\text{s}$, two significant figures like the mass $0.15\\,\\text{kg}$ and the power $6.0\\,\\text{kW}$.\n\n**Reasonableness:** Estimate: $0.15\\,\\text{kg}$ needs about $0.15 \\cdot 2.6\\,\\text{MJ} \\approx 390\\,\\text{kJ}$, and $\\tfrac{390\\,\\text{kJ}}{6\\,\\text{kW}} \\approx 65\\,\\text{s}$. Vaporisation takes $339\\,\\text{kJ}$, which is $87\\,\\%$ of the energy, and without it the time would be only $8.4\\,\\text{s}$. So vaporising a very small amount of water takes the whole power of the stove for a minute.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises"
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The ice in a cool bag has just melted completely, and there is water at $0\\,{}^\\circ\\text{C}$ inside. The same power is coming through the wall as a moment ago. What happens to the inside temperature next, and why?",
+      "choices": [
+        {
+          "text": "It stays at $0\\,{}^\\circ\\text{C}$, because the water is already cold.",
+          "feedback": "The temperature stays at $0\\,{}^\\circ\\text{C}$ only as long as the change of state is going on. When the ice has run out, the energy is no longer used for melting but raises the temperature of the water."
+        },
+        {
+          "text": "It rises, because the energy is no longer used to melt ice but to heat the water, $Q = cm\\Delta T$.",
+          "feedback": "Correct. The power is the same as before, but the destination has changed: the energy now raises the temperature of the water. The temperature rises quickly at first and slows down as the difference from the outside temperature becomes smaller.",
+          "correct": true
+        },
+        {
+          "text": "It drops, because the melted ice cools the water.",
+          "feedback": "The melted ice is already water, and water cannot cool itself. Energy comes into the bag all the time, so the inside temperature does not drop."
+        },
+        {
+          "text": "It jumps straight to the outside temperature, because the insulation does not work without ice.",
+          "feedback": "The insulation works just as well without ice, and the power is the same as before. When there is water, its heat capacity ($C = cm$) slows down the warming, so the temperature rises gradually."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Latent heat of fusion in the cool bag",
+      "prompt": "You can put into a cool bag either $1.0\\,\\text{kg}$ of ice or $1.0\\,\\text{kg}$ of water, both at $0\\,{}^\\circ\\text{C}$. Which keeps the contents of the bag cold for longer, and why?",
+      "choices": [
+        {
+          "text": "Equally long, because both are at $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "The same temperature does not mean that a substance can absorb the same amount of energy. The ice has to melt first, and melting absorbs $334\\,\\text{kJ}$ per kilogram before the temperature can rise."
+        },
+        {
+          "text": "Ice, because its melting absorbs about $334\\,\\text{kJ}$ before the temperature starts to rise.",
+          "feedback": "Correct. The energy coming into the bag is first used to melt the ice, and the temperature stays at $0\\,{}^\\circ\\text{C}$. Warming the same water from $0\\,{}^\\circ\\text{C}$ to $8\\,{}^\\circ\\text{C}$ absorbs only $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1.0\\,\\text{kg} \\cdot 8\\,\\text{K} \\approx 34\\,\\text{kJ}$, about a tenth as much.",
+          "correct": true
+        },
+        {
+          "text": "Water, because water conducts heat better and cools the food faster.",
+          "feedback": "Ice actually conducts heat better than water. However, thermal conductivity only tells how fast temperatures even out, not how much energy a substance can absorb without warming up. Melting ice absorbs much more energy than warming the same water by a few degrees."
+        },
+        {
+          "text": "Ice, because ice is colder than water.",
+          "feedback": "Here both are at $0\\,{}^\\circ\\text{C}$, so the difference is not due to temperature. The ice lasts longer because its melting absorbs energy before the temperature can rise."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Two destinations of energy",
+      "prompt": "A $0.60\\,\\text{kg}$ ice pack taken from the freezer is at $-10\\,{}^\\circ\\text{C}$. How much energy is needed for the ice to warm to $0\\,{}^\\circ\\text{C}$ and melt completely into water at $0\\,{}^\\circ\\text{C}$? The specific heat capacity of ice is $2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Give your answer in kilojoules.",
+      "answer": 210,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "The energy has two destinations that come one after the other: warming and melting.",
+        "Warming is $Q_1 = cm\\Delta T$ and melting is $Q_2 = sm$ ($s = 334\\,\\text{kJ/kg}$). The total energy is $Q_1 + Q_2$.",
+        "$Q_1 = 2100 \\cdot 0.60 \\cdot 10\\,\\text{J} = 12.6\\,\\text{kJ}$ and $Q_2 = 334 \\cdot 0.60\\,\\text{kJ} \\approx 200\\,\\text{kJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 200,
+          "feedback": "You calculated only the melting. The ice is at $-10\\,{}^\\circ\\text{C}$ at the start, and it first has to warm to $0\\,{}^\\circ\\text{C}$, which takes energy $cm\\Delta T$."
+        },
+        {
+          "value": 12.6,
+          "feedback": "You calculated only the warming of the ice. After that the ice still melts, and melting takes much more energy: $sm$."
+        }
+      ],
+      "solution": "**Given:** ice $m = 0.60\\,\\text{kg}$, $T_\\text{initial} = -10\\,{}^\\circ\\text{C}$, end result water at $0\\,{}^\\circ\\text{C}$; $c_\\text{ice} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$; from the table $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** energy $Q$ needed to warm and melt the ice, in kilojoules\n\n**Principle:** The energy has two destinations, one after the other. First the ice warms from $-10\\,{}^\\circ\\text{C}$ to the melting point $0\\,{}^\\circ\\text{C}$ ($c\\,m\\,\\Delta T$), and only then does it melt at $0\\,{}^\\circ\\text{C}$, when the temperature does not change ($s\\,m$). The total energy is the sum of these.\n\n**Formula:** $Q = Q_1 + Q_2 = c_\\text{ice}\\,m\\,\\Delta T + s\\,m$\n\n**Conversions:** $\\Delta T = 0\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 10\\,\\text{K}$, the same in kelvins. $s = 334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ and finally $1\\,\\text{kJ} = 1000\\,\\text{J}$.\n\n**Substitution:** $Q = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0.60\\,\\text{kg} \\cdot 10\\,\\text{K} + 334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0.60\\,\\text{kg} = 12\\,600\\,\\text{J} + 200\\,400\\,\\text{J} = 213\\,000\\,\\text{J} = 213\\,\\text{kJ}$\n\n**Answer:** $210\\,\\text{kJ}$, two significant figures like the mass $0.60\\,\\text{kg}$.\n\n**Reasonableness:** Melting takes $\\tfrac{200.4}{213} \\approx 94\\,\\%$ of the energy, because $s$ is much larger than $c\\,\\Delta T = 21\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. Estimate: $0.6 \\cdot 350\\,\\text{kJ} \\approx 210\\,\\text{kJ}$. Melting alone would give $200\\,\\text{kJ}$ and warming alone $12.6\\,\\text{kJ}$, so either one on its own is too small."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and transfer",
+      "prompt": "Sauna water is thrown on $25\\,\\text{kg}$ of sauna stones. Using conservation of energy and the change of state, explain why the temperature of the stones drops at once and why the steam feels hot on your skin. Why would this not work if the vaporisation of water did not need energy?",
+      "criteria": [
+        "I say that the water gets its energy from the stones, so the internal energy and the temperature of the stones decrease.",
+        "I explain that most of the energy is used for vaporisation, $Q = rm$, and that during vaporisation the temperature stays at $100\\,{}^\\circ\\text{C}$.",
+        "I explain that the steam condenses on the skin and gives out the same energy that it took in when it vaporised, so the warming of the skin is large.",
+        "I state that if vaporisation did not need energy, the stones would cool down only by the small amount of energy used to heat the water (for example about $13\\,\\%$ with $0.20\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$)."
+      ],
+      "model": "The sauna water gets the energy it needs from the hot stones, so the internal energy and the temperature of the stones decrease. For example, warming $0.20\\,\\text{kg}$ of water from $20\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$ takes only $67\\,\\text{kJ}$, but vaporisation takes $452\\,\\text{kJ}$, because vaporising each kilogram takes $2260\\,\\text{kJ}$. During vaporisation the water stays at $100\\,{}^\\circ\\text{C}$, but the energy is used for the change of state and does not raise the temperature, and this is why the stones cool down. When the steam condenses on the skin, it gives back the same energy that it took in when it vaporised, and this is why the skin warms up strongly. If vaporisation did not need energy, the temperature of the stones would drop much less, and the steam would bring hardly any extra energy to the skin.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}

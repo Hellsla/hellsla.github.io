@@ -1,0 +1,6 @@
+[
+  {
+    "q": "The efficiencies of the steps of the energy chain of a power plant are $\\eta_1 = 0.90$, $\\eta_2 = 0.50$ and $\\eta_3 = 0.96$. What is the efficiency of the whole chain?",
+    "a": "The efficiencies are multiplied: $\\eta = \\eta_1 \\eta_2 \\eta_3 = 0.90 \\cdot 0.50 \\cdot 0.96 = 0.432 \\approx 43\\,\\%$. They are not added or averaged."
+  }
+]

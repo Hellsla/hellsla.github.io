@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-4-L1-01",
+      "level": 1,
+      "text": "An electric motor takes electrical energy of $400\\,\\text{J}$ and gives $340\\,\\text{J}$ of kinetic energy. What is the efficiency of the motor? Give the answer as a percentage.",
+      "answer": 85,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-02",
+      "level": 1,
+      "text": "An LED lamp takes a power of $8.0\\,\\text{W}$ from the electricity grid and gives a light power of $2.4\\,\\text{W}$. What is the efficiency of the lamp? Give the answer as a percentage.",
+      "answer": 30,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-03",
+      "level": 1,
+      "text": "The efficiency of an incandescent lamp is $5.0\\,\\%$, and the lamp takes a power of $60\\,\\text{W}$ from the electricity grid. How large is the light power given by the lamp? Give the answer in watts.",
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-04",
+      "level": 1,
+      "text": "The efficiency of an electric motor is $90\\,\\%$, and it gives useful energy of $1800\\,\\text{J}$. How much electrical energy did the motor take? Give the answer in joules.",
+      "answer": 2000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-05",
+      "level": 1,
+      "text": "Radiation energy of $5.0\\,\\text{kJ}$ hits a solar panel, and the efficiency of the panel is $20\\,\\%$. How much energy becomes losses? Give the answer in kilojoules.",
+      "answer": 4.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-4-L2-01",
+      "level": 2,
+      "text": "An electric motor takes a power of $1.0\\,\\text{kW}$ from the electricity grid, and its efficiency is $80\\,\\%$. The motor runs for $2.0\\,\\text{min}$. How much kinetic energy does the motor give? Give the answer in kilojoules.",
+      "answer": 96,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-02",
+      "level": 2,
+      "text": "An LED lamp with an efficiency of $30\\,\\%$ takes a power of $9.0\\,\\text{W}$. An incandescent lamp with an efficiency of $5.0\\,\\%$ gives the same light power. How large a power does the incandescent lamp take from the electricity grid? Give the answer in watts.",
+      "answer": 54,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-03",
+      "level": 2,
+      "text": "An incandescent lamp with an electrical power of $60\\,\\text{W}$ and an efficiency of $5.0\\,\\%$ burns for $4.0\\,\\text{h}$. How much electrical energy becomes heat? Give the answer in kilowatt-hours.",
+      "answer": 0.228,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-04",
+      "level": 2,
+      "text": "The efficiency of the petrol engine of a car is $25\\,\\%$, and the engine gives a power of $15\\,\\text{kW}$ to move the car. How large is the loss power, that is, the power that becomes heat? Give the answer in kilowatts.",
+      "answer": 45,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-4-L3-01",
+      "level": 3,
+      "text": "Device A takes energy of $200\\,\\text{J}$ and gives useful energy of $150\\,\\text{J}$. Device B takes energy of $4.0\\,\\text{kJ}$, and its losses are $2.0\\,\\text{kJ}$. How many times as large is the efficiency of device A compared with the efficiency of device B?",
+      "answer": 1.5,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-02",
+      "level": 3,
+      "text": "A radiation power of $1.2\\,\\text{kW}$ hits a solar panel, and the efficiency of the panel is $20\\,\\%$. How long does the panel need to produce $0.50\\,\\text{MJ}$ of electrical energy? Give the answer in seconds.",
+      "answer": 2083.33,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-03",
+      "level": 3,
+      "text": "An energy flow diagram is drawn to a scale in which the arrow of the energy entering the device is $6.0\\,\\text{cm}$ thick and corresponds to an energy of $240\\,\\text{J}$. The arrow of the useful energy is $1.5\\,\\text{cm}$ thick. How much energy becomes losses? Give the answer in joules.",
+      "answer": 180,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-2-L1-01",
+      "level": 1,
+      "text": "The battery of a smartphone stores energy of $54\\,\\text{kJ}$. Give the energy in joules.",
+      "answer": 54000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-02",
+      "level": 1,
+      "text": "The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$, and the energy of an adult's day's food is about $10\\,\\text{MJ}$. How many chocolate bars correspond in energy to a day's food?",
+      "answer": 2.3,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-03",
+      "level": 1,
+      "text": "A wind farm produces electrical energy of $0.14\\,\\text{TJ}$ in a day. Give the energy in gigajoules.",
+      "answer": 140,
+      "unit": "GJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-04",
+      "level": 1,
+      "text": "Gas with a chemical energy of $12\\,\\text{MJ}$ is burned on a gas cooker. Of this, $9.0\\,\\text{MJ}$ is transferred to the water in the pan, and the rest heats the air of the kitchen. How much energy is transferred to the air of the kitchen? Give the answer in megajoules.",
+      "answer": 3.0,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-05",
+      "level": 1,
+      "text": "The energy of an adult's day's food is about $10\\,\\text{MJ}$. The energy of an apple is, for example, $300\\,\\text{kJ}$. How many apples correspond in energy to a day's food?",
+      "answer": 33,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-2-L2-01",
+      "level": 2,
+      "text": "On a hike you eat a $100\\,\\text{g}$ chocolate bar with an energy of $2.2\\,\\text{MJ}$ and a bag of nuts with an energy of $800\\,\\text{kJ}$. How much energy do you get in total? Give the answer in megajoules.",
+      "answer": 3.0,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-02",
+      "level": 2,
+      "text": "A car has $40\\,\\textsf{l}$ of petrol, and one litre of petrol contains $32\\,\\text{MJ}$ of energy. How much energy is there in the tank? Give the answer in gigajoules.",
+      "answer": 1.3,
+      "unit": "GJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-03",
+      "level": 2,
+      "text": "An LED lamp receives electrical energy of $6.0\\,\\text{kJ}$. It turns $1.5\\,\\text{kJ}$ of it into light, and the rest turns into thermal energy in the lamp. The light hits the walls and surfaces of the room and is absorbed by them. How much energy has finally turned into thermal energy in the room? Give the answer in kilojoules.",
+      "answer": 6.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-04",
+      "level": 2,
+      "text": "The energy of explosives is often given in tonnes of TNT: by convention, one tonne of TNT corresponds to about $4.2\\,\\text{GJ}$. The energy of a chocolate bar ($200\\,\\text{g}$) is $4.4\\,\\text{MJ}$. How many chocolate bars correspond in energy to one tonne of TNT?",
+      "answer": 950,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-2-L3-01",
+      "level": 3,
+      "text": "In Finland, on average about $790\\,\\text{TJ}$ of electrical energy is consumed per day (calculated from Statistics Finland data for 2023). An Olkiluoto 3 nuclear power plant unit produces electrical energy of $140\\,\\text{TJ}$ per day. What is the smallest number of such units whose output would cover the whole consumption? Give the answer as a whole number.",
+      "answer": 6,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L3-02",
+      "level": 3,
+      "text": "In the reactor of a nuclear power plant unit, thermal energy of $370\\,\\text{TJ}$ is released per day. Of this, $140\\,\\text{TJ}$ turns into electricity, and the rest is carried into the sea by the cooling water. Heating a detached house takes, for example, $72\\,\\text{GJ}$ per year. The energy transferred to the sea in one day corresponds to a year's heating for how many detached houses?",
+      "answer": 3200,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L3-03",
+      "level": 3,
+      "text": "In the reactor of a nuclear power plant unit, energy of $370\\,\\text{TJ}$ is released per day, and about $4.5\\,\\text{kg}$ of uranium-235 undergoes fission for it. How many litres of petrol would have to be burned to get the same energy, when a litre of petrol contains $32\\,\\text{MJ}$ of energy? Compare the result with the amount of uranium.",
+      "answer": 12000000.0,
+      "unit": "l",
+      "tolerance": 0.05
+    }
+  ]
+}

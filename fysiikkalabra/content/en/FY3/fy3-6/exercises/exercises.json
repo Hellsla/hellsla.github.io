@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-6-L1-01",
+      "level": 1,
+      "text": "$1.8\\,\\text{kg}$ of water at a temperature of $12\\,{}^\\circ\\text{C}$ is poured into the tank of a coffee maker. The coffee maker heats the water to $96\\,{}^\\circ\\text{C}$. How large is the quantity of heat transferred to the water? Give the answer in megajoules.",
+      "answer": 0.63,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-02",
+      "level": 1,
+      "text": "A cast-iron frying pan of mass $2.4\\,\\text{kg}$ is lifted from the stove onto a table in a cabin. The temperature of the pan falls from $220\\,{}^\\circ\\text{C}$ to $25\\,{}^\\circ\\text{C}$. How large a quantity of heat does the pan give out to the surroundings? Give the answer in kilojoules.",
+      "answer": 210,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-03",
+      "level": 1,
+      "text": "A children's sandpit contains $50\\,\\text{kg}$ of sand. During the morning the Sun heats the sand from $14\\,{}^\\circ\\text{C}$ to $32\\,{}^\\circ\\text{C}$. How large is the quantity of heat transferred to the sand? Give the answer in kilojoules.",
+      "answer": 720,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-04",
+      "level": 1,
+      "text": "A cabin hot tub contains $1200\\,\\text{kg}$ of water. During the night the water cools from $38.0\\,{}^\\circ\\text{C}$ to $31.0\\,{}^\\circ\\text{C}$. How large is the quantity of heat $Q$ transferred to the water? Give the answer with its sign in megajoules (a negative $Q$ means that the water gives out heat).",
+      "answer": -35,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-05",
+      "level": 1,
+      "text": "A $0.50\\,\\text{kg}$ bag of ice from the freezer is put into a cool bag. The temperature of the ice rises from $-22\\,{}^\\circ\\text{C}$ to $-4.0\\,{}^\\circ\\text{C}$, and the ice does not melt yet. How large is the quantity of heat transferred to the ice? Give the answer in kilojoules.",
+      "answer": 19,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-6-L2-01",
+      "level": 2,
+      "text": "$160\\,\\text{g}$ of water at a temperature of $95\\,{}^\\circ\\text{C}$ is poured into a mug. The tea is too hot to drink, so $40\\,\\text{g}$ of cold water at a temperature of $8.0\\,{}^\\circ\\text{C}$ is added. What is the temperature of the water after mixing? Assume that no heat is transferred to the mug or the air.",
+      "answer": 78,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-02",
+      "level": 2,
+      "text": "An electric heater heats a metal object of mass $0.50\\,\\text{kg}$ at a constant power of $100\\,\\text{W}$. The graph shows the temperature of the object as a function of time. What is the specific heat capacity of the metal? Read the values you need from the graph and assume that all the energy of the heater is transferred to the object.",
+      "figure": "fy3-6/heating-line",
+      "answer": 900,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-6-L2-03",
+      "level": 2,
+      "text": "A hot-water tank in a cabin contains $80\\,\\text{kg}$ of water at a temperature of $9.0\\,{}^\\circ\\text{C}$. The electric resistor of the tank gives out a quantity of heat of $15\\,\\text{MJ}$ to the water. What is the final temperature of the water, when heat losses are not taken into account?",
+      "answer": 54,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-04",
+      "level": 2,
+      "text": "An aluminium ladle of mass $0.25\\,\\text{kg}$ and temperature $95\\,{}^\\circ\\text{C}$ has warmed up on the sauna benches. The ladle is dropped into a bucket that contains $0.40\\,\\text{kg}$ of water at a temperature of $18\\,{}^\\circ\\text{C}$. What is the common final temperature of the water and the ladle? Assume that no heat is transferred to the bucket or the air.",
+      "answer": 27,
+      "unit": "°C",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-6-L3-01",
+      "level": 3,
+      "text": "In the old days the washing water in a smoke sauna was heated by dropping hot stones from the stove into a wooden bucket. The bucket holds $20\\,\\text{kg}$ of lake water at a temperature of $10\\,{}^\\circ\\text{C}$, and the stove has heated the stones to $300\\,{}^\\circ\\text{C}$. How many kilograms of stones must be dropped into the bucket so that the temperature of the water rises to $40\\,{}^\\circ\\text{C}$? The specific heat capacity of the stones is $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Assume that no heat is transferred to the bucket or the air and that no water vaporises. Justify what the final temperature of the stones is.",
+      "answer": 12,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L3-02",
+      "level": 3,
+      "text": "At a cabin shore there is a shallow bay with an area of 2000 m² and a mean depth of $1.2\\,\\text{m}$. On a sunny summer day the water of the bay receives energy of $18\\,\\text{MJ}$ from the Sun for each square metre of the surface. A cubic metre of water has a mass of $1000\\,\\text{kg}$. Assume that the energy stays in the water and the water mixes evenly. By how many kelvins does the temperature of the water in the bay rise during the day? Also justify why the result does not depend on the area of the bay.",
+      "answer": 3.6,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L3-03",
+      "level": 3,
+      "text": "A heat store is being planned for a cabin, in which summer solar heat is stored. The options are 1.0 m³ of water, whose mass is $1000\\,\\text{kg}$, or dry sand, of which there is $1600\\,\\text{kg}$ in a cubic metre. The temperature of each store varies between $20\\,{}^\\circ\\text{C}$ and $70\\,{}^\\circ\\text{C}$. How many cubic metres of sand are needed for it to store as much energy as the water store? Justify why the ratio of the volumes is smaller than the ratio of the specific heat capacities.",
+      "answer": 3.3,
+      "unit": "m³",
+      "tolerance": 0.02
+    }
+  ]
+}

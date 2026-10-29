@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "contribution": "Kun kaasu laajenee, se tekee työn $W_\\text{k} = p\\,\\Delta V$. Työ näkyy $(V, p)$-kuvaajassa pinta-alana. Mäntäkone toistaa liikettään. Se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään paikkaan. Tämä rajoittaa hyötysuhdetta $\\eta = W/Q_1$. Siksi yhteistuotanto ja lämpöpumput ovat kannattavia.",
+  "learn": [
+    "Osaat laskea laajenevan kaasun tekemän työn. Osaat myös lukea sen paineen ja tilavuuden kuvaajan pinta-alana.",
+    "Osaat selittää, miksi lämpövoimakone voi muuttaa lämpöä työksi vain silloin, kun se luovuttaa osan lämmöstä kylmempään.",
+    "Osaat laskea lämpövoimakoneen hyötysuhteen."
+  ],
+  "prior": [
+    "Ensimmäinen pääsääntö $\\Delta U = Q + W$. Siinä $W$ on työ, jonka ympäristö tekee systeemiin. Lisäksi energian säilyminen (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Isobaarinen tilanmuutos: paine pysyy vakiona, ja kaasun tilavuus kasvaa, kun lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*)",
+    "Työ on voima kertaa matka. Lisäksi $(s, F)$-kuvaajan pinta-ala (luku *Työ ja energia*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Museoveturin sylinterissä kuuma höyry työntää mäntää. Mäntä pyörittää veturin pyöriä. Suuri lauhdevoimalaitos tekee periaatteessa saman: höyry laajenee turbiinissa ja pyörittää generaattoria. Laitokseen tuodaan polttoaineen energiaa teholla $1000\\,\\text{MW}$. Sähköverkkoon lähtee vain noin $400\\,\\text{MW}$. Energia kuitenkin säilyy, kuten ensimmäinen pääsääntö sanoo.",
+      "question": "Voisiko parempi tekniikka muuttaa kaiken polttoaineen energian sähköksi? Voiko osan, joka ei muutu sähköksi, vielä käyttää hyödyksi?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa aiemmilta tunneilta",
+      "prompt": "Sylinterissä olevaa kaasua lämmitetään. Paine pysyy vakiona (isobaarinen tilanmuutos, luku *Kaasujen tilanmuutokset ja Boylen laki*). Kaasuun siirtyy lämpö $Q = 400\\,\\text{J}$. Kaasu laajenee ja työntää mäntää. Siksi ympäristö tekee kaasuun työn $W = -150\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu (luku *Sisäenergia, lämpömäärä ja energian säilyminen*: $\\Delta U = Q + W$)?",
+      "choices": [
+        {
+          "text": "$\\Delta U = 550\\,\\text{J}$",
+          "feedback": "Näin käy, jos työn etumerkki unohdetaan ja työ lisätään sisäenergiaan. Laajeneva kaasu luovuttaa energiaa, kun se työntää mäntää. Siksi $W$ on negatiivinen: $\\Delta U = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$."
+        },
+        {
+          "text": "$\\Delta U = 250\\,\\text{J}$",
+          "correct": true,
+          "feedback": "Oikein: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Osa lämmöstä lähti ulos työnä, kun kaasu työnsi mäntää. Tällä tunnilla kaasun tekemää työtä merkitään $W_\\text{k}$. Tässä $W_\\text{k} = 150\\,\\text{J}$ ja $\\Delta U = Q - W_\\text{k}$. Tunnilla lasketaan, kuinka suuri tuo työ on."
+        },
+        {
+          "text": "$\\Delta U = 400\\,\\text{J}$",
+          "feedback": "Lämmön lisäksi myös työ muuttaa sisäenergiaa. Kun kaasu laajenee ja työntää mäntää, energiaa siirtyy ympäristöön. Siksi sisäenergia kasvaa vähemmän kuin tuotu lämpö: $\\Delta U = 400\\,\\text{J} - 150\\,\\text{J} = 250\\,\\text{J}$."
+        },
+        {
+          "text": "$\\Delta U = 0$, koska paine pysyy vakiona.",
+          "feedback": "Vakiopaine ei tarkoita, että sisäenergia pysyy vakiona. Isobaarisessa lämmityksessä kaasun lämpötila nousee (luku *Kaasujen tilanmuutokset ja Boylen laki*). Siksi sisäenergia kasvaa: $\\Delta U = Q + W = 250\\,\\text{J}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kaasun tekemä työ",
+      "prompt": "Sylinterissä olevaa kaasua lämmitetään. Punnukset pitävät paineen $200\\,\\text{kPa}$:ssa. Kaasun tilavuus kasvaa $1{,}0\\,\\text{l}$:sta $2{,}5\\,\\text{l}$:aan. Kuinka suuren työn $W_\\text{k}$ kaasu tekee, kun se nostaa mäntää? ($1\\,\\text{l} = 0{,}001\\,\\text{m}^3$)",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$W_\\text{k} = 200\\,\\text{J}$, koska työ määräytyy paineesta, joka pysyy $200\\,\\text{kPa}$:ssa.",
+          "feedback": "Kokeessa paine on joka rivillä 200 kPa. Mallissa $W_\\text{k}$ kasvaa kuitenkin tilavuuden muutoksen mukana: $\\Delta V = 1{,}00\\,\\text{l}$ antaa $200\\,\\text{J}$ ja $\\Delta V = 1{,}50\\,\\text{l}$ antaa $300\\,\\text{J}$. Pelkkä paine ei tee työtä. Mäntä tekee työtä vain silloin, kun se liikkuu."
+        },
+        {
+          "text": "$W_\\text{k} = 300\\,\\text{J}$",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Lämpö $Q = 750\\,\\text{J}$ vie tilavuuden 1,0 litrasta 2,5 litraan, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$. $(V, p)$-kuvaajan oranssi suorakulmio on 200 kPa korkea ja $1{,}5\\,\\textsf{l}$ leveä: $200\\,000\\,\\text{Pa} \\cdot 0{,}0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+        },
+        {
+          "text": "$W_\\text{k} = 500\\,\\text{J}$",
+          "feedback": "Tässä paine on kerrottu lopputilavuudella $2{,}5\\,\\textsf{l}$. Kokeessa $(V, p)$-kuvaajan oranssi suorakulmio alkaa kohdasta $1{,}0\\,\\textsf{l}$, koska työtä tehdään vain laajenemisen aikana. Suorakulmion leveys on $\\Delta V = 1{,}5\\,\\text{l}$, ja malli antaa $W_\\text{k} = 300\\,\\text{J}$."
+        },
+        {
+          "text": "$W_\\text{k} = 300\\,000\\,\\text{J}$",
+          "feedback": "Tässä pascalit on kerrottu litroilla. Kokeessa malli antaa 1,5 litran laajenemiselle $W_\\text{k} = 300\\,\\text{J}$. Tilavuus pitää muuttaa kuutiometreiksi: $1{,}5\\,\\text{l} = 0{,}0015\\,\\text{m}^3$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa kaasua lämmitetään sylinterissä. Kaksi punnusta painaa mäntää. Kaasun paine on $200\\,\\text{kPa}$.",
+      "howto": "Valitse lämpö $Q$ ja paina *Lämmitä*. Mäntä nousee, ja $(V, p)$-kuvaajaan täyttyy kaasun tekemä työ. Paina sitten *Palauta mäntä*. Valinnalla *samassa paineessa* punnukset työntävät männän takaisin. Valinnalla *jäähdytä ensin* kaasu jäähtyy ensin paineeseen $p_2$ (liukusäädin). *Nopeus* muuttaa vain tahtia, ei tuloksia. Oranssi pinta-ala on kaasun tekemä työ $W_\\text{k}$. Sininen pinta-ala on kaasuun tehty työ. Palkeissa sama väri tarkoittaa samaa energiaa.",
+      "model": "Lukemat ovat mallin arvoja. Sylinterissä on yksiatomista ideaalikaasua. Mäntä on kitkaton ja painoton, eikä sen yläpuolella ole ilmaa. Paineen aiheuttavat siis punnukset: kaksi punnusta antaa paineen $200\\,\\text{kPa}$, ja alempi punnus yksin antaa paineen $p_2$. Kuuma levy on aina kaasua kuumempi ja kylmä vesi on aina kaasua kylmempi. Lämpöä ei karkaa muualle. Alkutilavuus on $V_1 = 1{,}00\\,\\text{l}$.",
+      "calc": "Sisäenergian muutos on $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. Vakiopaineessa $p_1$ kaasun tekemä työ on $W_\\text{k} = p_1\\Delta V$. Lisäksi $Q = \\Delta U + W_\\text{k} = \\tfrac{5}{2}p_1\\Delta V$, joten $\\Delta V = \\dfrac{2Q}{5p_1}$. Vaihtoehdossa *jäähdytä ensin* ylempi punnus siirretään ylös hyllylle ja alhaalta otetaan uusi punnus. Kun mäntä on lukittu, tilavuus ei muutu. Kierroksen nettotyö $W = (p_1 - p_2)\\Delta V$ on punnuksen nostamiseen kulunut energia, ja $Q_1 - Q_2 = W$. Hyötysuhde on $\\eta = \\dfrac{W}{Q_1}$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: lämmitys vakiopaineessa",
+      "intro": "Testaa ennuste 1. Paine pysyy 200 kPa:ssa, koska punnukset eivät muutu. Muuta vain lämpöä $Q$, esimerkiksi $500\\,\\text{J}$, $750\\,\\text{J}$ ja $1000\\,\\text{J}$. Paina joka kerta *Lämmitä*. Kirjaa mittaus vasta, kun mäntä on pysähtynyt. Kirjaa ainakin rivi $Q = 1000\\,\\text{J}$.",
+      "initial": {
+        "Qin": 500,
+        "paluu": "sama paine",
+        "p2": 100
+      },
+      "names": {
+        "Qin": "lämpö Q",
+        "paluu": "männän paluu",
+        "p2": "paine p₂"
+      },
+      "units": {
+        "Qin": "J",
+        "p2": "kPa"
+      },
+      "locked": [
+        "paluu"
+      ],
+      "vary": "Qin",
+      "measure": [
+        {
+          "key": "dV",
+          "label": "ΔV (l)"
+        },
+        {
+          "key": "dU",
+          "label": "ΔU (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske rivin $Q = 1000\\,\\text{J}$ tilavuuden muutoksesta kaasun tekemä työ $W_\\text{k} = p\\,\\Delta V$. Paine on $p = 200\\,\\text{kPa}$. Vastaa jouleina.",
+        "answer": 400,
+        "unit": "J",
+        "tolerance": 0.02,
+        "hints": [
+          "Paine pysyy vakiona. Siksi työ on $(V, p)$-kuvaajan oranssin suorakulmion pinta-ala. Suorakulmion korkeus on $p$ ja leveys on $\\Delta V$.",
+          "Muunna yksiköt: $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ ja $1\\,\\text{l} = 0{,}001\\,\\text{m}^3$.",
+          "Rivillä $\\Delta V = 2{,}00\\,\\text{l} = 0{,}002\\,00\\,\\text{m}^3$."
+        ],
+        "mistakes": [
+          {
+            "value": 400000,
+            "feedback": "Kerroit pascalit litroilla. Muunna tilavuus ensin kuutiometreiksi: $2{,}00\\,\\text{l} = 0{,}002\\,00\\,\\text{m}^3$."
+          },
+          {
+            "value": 600,
+            "feedback": "Tässä paine on kerrottu lopputilavuudella $3{,}0\\,\\textsf{l}$. Tulos on sattumalta sama kuin rivin $\\Delta U$. Työtä tehdään vain laajenemisen aikana. Käytä siis tilavuuden muutosta $\\Delta V = 2{,}00\\,\\text{l}$."
+          },
+          {
+            "value": 1000,
+            "feedback": "Tämä on koko lämpö $Q$. Kaasu lämpenee, joten osa lämmöstä jää kaasun sisäenergiaksi. Työ on vain $p\\,\\Delta V$."
+          }
+        ],
+        "solution": "**Annettu:** mittausrivi, jolla $Q = 1000\\,\\text{J}$ ja paine pysyy vakiona, $p = 200\\,\\text{kPa}$; taulukosta tilavuuden muutos $\\Delta V = 2{,}00\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W_\\text{k}$ jouleina\n\n**Periaate:** Paine pysyy vakiona, koska punnukset eivät muutu. Siksi kaasun voima mäntään on koko laajenemisen ajan sama. Silloin työ on paine kertaa tilavuuden muutos. Se on myös $(V, p)$-kuvaajan suorakulmion pinta-ala.\n\n**Kaava:** $W_\\text{k} = p\\,\\Delta V$\n\n**Muunnokset:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ ja $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, joten $2{,}00\\,\\textsf{l} = 0{,}00200\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W_\\text{k} = 200\\,000\\,\\text{Pa} \\cdot 0{,}00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Vastaus:** $400\\,\\text{J}$, kolme merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $2{,}00\\,\\textsf{l}$ (kolme numeroa). Paine $200\\,\\text{kPa}$ on simulaation asetusarvo, jota ei mitata. Siksi se ei rajoita tarkkuutta.\n\n**Järkevyys:** Arvio: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. Työ on pienempi kuin koko lämpö $Q = 1000\\,\\text{J}$, kuten pitääkin. Osa lämmöstä jää sisäenergiaksi: rivillä $\\Delta U = 600\\,\\text{J}$ ja $\\Delta U + W_\\text{k} = 1000\\,\\text{J} = Q$. Mallin yksiatomiselle kaasulle työksi menee vakiopaineessa aina $\\tfrac{2}{5}$ lämmöstä."
+      }
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 2: kaikki lämpö työksi?",
+      "prompt": "Kerran laajeneva kaasu ei vielä ole kone. Kone tekee työtä jatkuvasti vain, jos se toistaa liikettään. Mäntä on saatava takaisin alas, ja kierroksen lopussa kaasu on taas alkutilassa. Voiko kone toistaa tämän niin, että kaikki kuumasta lähteestä saatu lämpö muuttuu työksi? Neljä opiskelijaa vastaa.",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aino: Kyllä. Kun mäntä painetaan heti takaisin alas samassa paineessa, sisäenergiaan mennyt lämpö palaa. Kaasun työ jää talteen.",
+          "feedback": "Kokeen paluutapa A kumoaa tämän: nettotyö on $W = 0$. Punnukset painavat männän alas samassa paineessa. Palautukseen kuluu sama $200\\,\\text{J}$:n työ, jonka kaasu teki noustessaan. Kaasu luovuttaa kylmään veteen koko lämmön $Q_2 = 500\\,\\text{J}$."
+        },
+        {
+          "text": "Bea: Ei. Mäntä saadaan alas pienemmällä työllä kuin se nousi vain, jos kaasu jäähdytetään ensin. Jäähdytyksessä osa lämmöstä siirtyy kylmempään.",
+          "correct": true,
+          "feedback": "Kokeen mallin arvot tukevat tätä. Paluutapa B antaa nettotyön $W = 100\\,\\text{J}$. Kuumalta levyltä tulleesta lämmöstä $Q_1 = 650\\,\\text{J}$ siirtyy kuitenkin kylmään veteen $Q_2 = 550\\,\\text{J}$. Kummassakaan paluutavassa $Q_2$ ei ole nolla."
+        },
+        {
+          "text": "Cem: Kyllä, kunhan kitka poistetaan. Lämpöä menee hukkaan vain kitkan takia.",
+          "feedback": "Simulaation mäntä on kitkaton, ja silti kylmään veteen siirtyy lämpöä kummassakin paluutavassa: A:ssa $500\\,\\text{J}$ ja B:ssä $550\\,\\text{J}$. Kitkan poistaminen ei poista lämpöä $Q_2$. Ilman jäähdytystä mäntä ei palaa alas pienemmällä työllä."
+        },
+        {
+          "text": "Daniel: Ei, koska kierroksessa osa energiasta kuluu loppuun.",
+          "feedback": "Energiaa ei kulu loppuun. Paluutavassa B malli antaa $Q_1 = 650\\,\\text{J}$ ja $W + Q_2 = 100\\,\\text{J} + 550\\,\\text{J} = 650\\,\\text{J}$. Kaikki energia on tallella. Osa siitä vain siirtyy lämpönä kylmään veteen."
+        }
+      ]
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kaksi tapaa palauttaa mäntä",
+      "intro": "Testaa ennuste 2. Lämpö $Q = 500\\,\\text{J}$ ja paine $p_2 = 100\\,\\text{kPa}$ on lukittu. Muuta vain sitä, miten mäntä palaa. Paina *Lämmitä* ja sitten *Palauta mäntä*. Kirjaa mittaus vasta, kun kierros on valmis. Hyötysuhde $\\eta$ näkyy vasta silloin. Sillä vain vertaillaan tapoja A ja B.\n\n**Tapa A.** Punnukset painavat männän alas samassa paineessa.\n\n**Tapa B.**\n\n1. Mäntä lukitaan ylös, ja ylempi punnus siirretään hyllylle.\n2. Kylmä vesi jäähdyttää kaasua. Tilavuus ei muutu, joten paine laskee arvoon $p_2$.\n3. Mäntä laskeutuu paineessa $p_2$.\n4. Alhaalla lisätään uusi punnus. Kuuma levy lämmittää kaasun takaisin alkutilaan.\n\n$Q_1$ on kaikki lämpö kuumalta levyltä. $Q_2$ on kaikki lämpö kylmään veteen. $W$ on kierroksen nettotyö.",
+      "initial": {
+        "Qin": 500,
+        "p2": 100,
+        "paluu": "sama paine"
+      },
+      "names": {
+        "Qin": "lämpö Q",
+        "paluu": "männän paluu",
+        "p2": "paine p₂"
+      },
+      "units": {
+        "Qin": "J",
+        "p2": "kPa"
+      },
+      "locked": [
+        "Qin",
+        "p2"
+      ],
+      "vary": "paluu",
+      "measure": [
+        {
+          "key": "Q1",
+          "label": "Q₁ (J)"
+        },
+        {
+          "key": "Q2",
+          "label": "Q₂ (J)"
+        },
+        {
+          "key": "W",
+          "label": "W (J)"
+        },
+        {
+          "key": "eta",
+          "label": "η (%)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Kierroksen B jälkeen $(V, p)$-kuvaajaan jää oranssi suorakulmio paineiden 100 kPa ja 200 kPa väliin. Mitä sen pinta-ala kertoo?",
+        "choices": [
+          {
+            "text": "Kierroksen nettotyön: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1{,}0\\,\\text{l} = 100\\,\\text{J}$.",
+            "correct": true,
+            "feedback": "Oikein. Kaasu teki noustessaan $200\\,\\text{J}$:n työn. Paluussa paineessa 100 kPa kaasuun tehtiin $100\\,\\text{J}$:n työ (sininen). Erotus $100\\,\\text{J}$ on sama kuin $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$. Se on punnuksen nostamiseen kulunut energia."
+          },
+          {
+            "text": "Kylmään veteen siirtyneen lämmön $Q_2$.",
+            "feedback": "Malli antaa $Q_2 = 550\\,\\text{J}$, mutta suorakulmio on 100 kPa korkea ja $1{,}0\\,\\textsf{l}$ leveä eli $100\\,\\text{J}$. $(V, p)$-kuvaajan pinta-ala on työtä, ei lämpöä. Lämpö näkyy vain palkeissa."
+          },
+          {
+            "text": "Kaasun tekemän työn männän noustessa.",
+            "feedback": "Noustessaan kaasu teki $200\\,\\text{J}$:n työn, jonka pinta-ala ulottuu $V$-akselille asti. Sen alaosa on viivoitettu sinisellä. Se on paluussa kaasuun tehty $100\\,\\text{J}$:n työ. Jäljelle jäävä oranssi osa on nettotyö $100\\,\\text{J}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mihin lämpö kuluu?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Käytä omia taulukoitasi. Kirjoita lyhyesti kolme asiaa. (1) Mihin kokeen 1 lämpö $Q$ jakautui? (2) Kumpi paluutapa antoi nettotyötä, ja miksi? (3) Voiko kone muuttaa kaiken kuumalta levyltä saamansa lämmön työksi?",
+      "model": "Kokeessa 1 vain osa lämmöstä muuttui työksi. Esimerkiksi rivillä $Q = 1000\\,\\text{J}$ tilavuus kasvoi $2{,}0\\,\\text{l}$, joten kaasu teki työn $p\\,\\Delta V = 400\\,\\text{J}$. Loput $600\\,\\text{J}$ jäi sisäenergiaksi ($\\Delta U$). Kokeessa 2 tapa A palautti männän samassa paineessa. Nettotyö oli $W = 0$, ja kaikki lämpö meni kylmään veteen. Tapa B jäähdytti kaasun ensin. Silloin mäntä laskeutui pienemmässä paineessa, ja nettotyö oli $100\\,\\text{J}$. Silloinkin kylmään veteen siirtyi $Q_2 = 550\\,\\text{J}$ lämmöstä $Q_1 = 650\\,\\text{J}$, joten $\\eta = 100/650 \\approx 15\\,\\%$. Toistuvasti toimiva kone ei siis voi muuttaa kaikkea lämpöä työksi, vaikka energia säilyy: $Q_1 = W + Q_2$. Luvut ovat simulaation mallin arvoja. Malli on kitkaton, joten todellisen koneen hyötysuhde on pienempi.",
+      "criteria": [
+        "Käytin omia lukemiani (esim. $\\Delta V$, $Q_1$, $Q_2$, $W$).",
+        "Kerroin, että vain osa lämmöstä muuttuu työksi. Loput on sisäenergiaa tai siirtyy kylmään.",
+        "Selitin, miksi tapa B antaa nettotyötä mutta tapa A ei.",
+        "Totesin, että $Q_2$ ei ole nolla, vaikka energia säilyy."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavoihin $W_\\text{k} = p\\,\\Delta V$, $W = Q_1 - Q_2$ ja $\\eta = W/Q_1$. Palaa sitten alun kysymykseen. Minne polttoaineen energiasta se osa menee, joka ei muutu sähköksi? Miksi parempikaan tekniikka ei saa sitä kokonaan sähköksi? Miten sen voi silti käyttää hyödyksi?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Sylinterissä oleva kaasu laajenee vakiopaineessa $200\\,\\text{kPa}$. Sen tilavuus kasvaa $1{,}2\\,\\text{l}$. Samalla kaasuun siirtyy lämpö $600\\,\\text{J}$. Opiskelija laskee sisäenergian muutoksen näin: $W_\\text{k} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0{,}0012\\,\\text{m}^3 = 240\\,\\text{J}$, joten $\\Delta U = Q + W_\\text{k} = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Litrojen muunnoksessa: $1{,}2\\,\\text{l}$ on $1{,}2\\,\\text{m}^3$.",
+          "feedback": "Litra on kuutiodesimetri, ja $1\\,\\text{l} = 0{,}001\\,\\text{m}^3$. Siksi $1{,}2\\,\\text{l} = 0{,}0012\\,\\text{m}^3$. Muunnos on oikein, ja kaasun tekemä työ on todella $240\\,\\text{J}$. Virhe on muualla."
+        },
+        {
+          "text": "Työn etumerkissä: työtä tekevä kaasu luovuttaa energiaa, joten $\\Delta U = Q - W_\\text{k} = 360\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Oikein. Kaasu tekee $240\\,\\text{J}$:n työn, joten osa tuodusta lämmöstä lähtee työnä ulos: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. Sama tulos saadaan luvun *Sisäenergia, lämpömäärä ja energian säilyminen* kaavasta $\\Delta U = Q + W$. Silloin ympäristön kaasuun tekemä työ on $W = -W_\\text{k} = -240\\,\\text{J}$."
+        },
+        {
+          "text": "Lämmön etumerkissä: $Q$ on negatiivinen, koska kaasu luovuttaa energiaa laajetessaan.",
+          "feedback": "Lämpö siirtyy kaasuun, joten $Q = +600\\,\\text{J}$. Kaasu luovuttaa energiaa työnä, ei lämpönä. Siksi työ vähennetään: $\\Delta U = Q - W_\\text{k}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Kokeessa 1 sisäenergia kasvoi aina vähemmän kuin tuotu lämpö, koska kaasu teki työtä. Työtä tekevän kaasun sisäenergia ei voi kasvaa enempää kuin tuotu lämpö $600\\,\\text{J}$: $\\Delta U = Q - W_\\text{k}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "suunnittele",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Suunnittele kaupungin energiantuotanto",
+      "text": "Kaupunki tarvitsee sähköä $300\\,\\text{MW}$ ja kaukolämpöä $500\\,\\text{MW}$. Vertaa kolmea vaihtoehtoa. Laske, kuinka suuren polttoainetehon kukin tarvitsee. Oletukset:\n\n- **Lauhdevoimalaitos:** sähköä $40\\,\\%$ polttoainetehosta.\n- **Sähkölämmitys:** $1\\,\\text{MW}$ sähköä antaa $1\\,\\text{MW}$ lämpöä.\n- **Yhteistuotantolaitos:** sähköä $45\\,\\%$ ja kaukolämpöä $40\\,\\%$ polttoainetehosta.\n- **Lämpöpumppu:** lämpökerroin 3,0.\n\nVaihtoehdot:\n\n1. **Lauhdevoimala ja sähkölämmitys.** Lauhdevoimalaitos tuottaa kaiken sähkön, myös lämmitykseen käytettävän.\n2. **Yhteistuotanto.** Yhteistuotantolaitos tuottaa kaiken kaukolämmön. Samalla syntyy sähköä enemmän kuin kaupunki tarvitsee.\n3. **Yhteistuotanto ja lämpöpumppu.** Osa laitoksen sähköstä käytetään lämpöpumpussa. Pumppu ottaa lämpöä puhdistetusta jätevedestä. Laitos mitoitetaan niin, että kaupunki saa sähköä ja lämpöä juuri tarpeen verran.\n\nYhteistuotantolaitoksen oletus vastaa maakaasua polttavaa laitosta. Puuta polttavassa laitoksessa sähkön osuus on pienempi, kuten Esimerkissä.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske ensin vaihtoehtojen 1 ja 2 polttoaineteho. Kuinka suuren polttoainetehon vaihtoehto 3 tarvitsee? Vastaa megawatteina.",
+        "answer": 800,
+        "unit": "MW",
+        "tolerance": 0.02,
+        "hints": [
+          "Merkitse yhteistuotantolaitoksen polttoainetehoa $P$ ja lämpöpumpun sähkötehoa $P_\\text{pumppu}$. Kaupungin sähkön ja lämmön on täytettävä kaksi ehtoa. Mitkä ne ovat?",
+          "Kaupungille jää sähköä $0{,}45P - P_\\text{pumppu} = 300\\,\\text{MW}$. Lämpöä tulee laitokselta ja pumpulta: $0{,}40P + 3P_\\text{pumppu} = 500\\,\\text{MW}$.",
+          "Ensimmäisestä ehdosta $P_\\text{pumppu} = 0{,}45P - 300\\,\\text{MW}$. Sijoita se toiseen ehtoon: $0{,}40P + 1{,}35P - 900\\,\\text{MW} = 500\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2000,
+            "feedback": "Tämä on vaihtoehdon 1 polttoaineteho: sähköä tarvitaan $300\\,\\text{MW} + 500\\,\\text{MW} = 800\\,\\text{MW}$, ja $800\\,\\text{MW}/0{,}40 = 2000\\,\\text{MW}$. Vaihtoehdossa 3 lämpö tulee yhteistuotannosta ja lämpöpumpusta."
+          },
+          {
+            "value": 1250,
+            "feedback": "Tämä on vaihtoehdon 2 polttoaineteho, $500\\,\\text{MW}/0{,}40$. Vaihtoehdossa 3 lämpöpumppu tuottaa osan lämmöstä laitoksen ylimääräisellä sähköllä. Siksi laitos voi olla pienempi."
+          },
+          {
+            "value": 941,
+            "feedback": "Jaoit koko tarpeen $800\\,\\text{MW}$ kokonaishyötysuhteella $85\\,\\%$. Lämpöpumppu tuo kuitenkin lisää lämpöä jätevedestä, joten polttoainetta tarvitaan vielä vähemmän. Kirjoita sähkölle ja lämmölle omat ehtonsa."
+          },
+          {
+            "value": 667,
+            "feedback": "Mitoitit laitoksen pelkän sähkön mukaan ilman lämpöpumppua: $300\\,\\text{MW}/0{,}45$. Silloin lämpöä tulisi vain $0{,}40 \\cdot 667\\,\\text{MW} \\approx 267\\,\\text{MW}$. Lisäksi pumppukin tarvitsee sähköä."
+          }
+        ],
+        "solution": "**Annettu:** kaupungin sähkön tarve $P_\\text{e} = 300\\,\\text{MW}$ ja kaukolämmön tarve $P_\\text{l} = 500\\,\\text{MW}$; lauhdevoimalan hyötysuhde $0{,}40$, yhteistuotantolaitoksen sähköä $0{,}45P$ ja lämpöä $0{,}40P$ polttoainetehosta $P$, lämpöpumpun lämpökerroin $3{,}0$; vaihtoehto 3 tarkasteltavana\n\n**Kysytty:** vaihtoehdon 3 polttoaineteho $P$ megawatteina (vertailuksi vaihtoehtojen 1 ja 2 polttoaineteho)\n\n**Periaate:** Vaihtoehdoissa 1 ja 2 yksi laitos ratkaisee tehon. Polttoaineteho on hyötyteho jaettuna hyötysuhteella. Vaihtoehdossa 3 laitoksen sähköstä osa menee lämpöpumpulle. Siksi sähkön ja lämmön tase on kirjoitettava erikseen. Energia säilyy: pumppu luovuttaa lämpöä kolme kertaa sähkötehonsa verran, ja erotus tulee jätevedestä.\n\n**Kaava:** Vaihtoehto 1: $P = \\dfrac{P_\\text{e} + P_\\text{l}}{0{,}40}$. Vaihtoehto 2: $P = \\dfrac{P_\\text{l}}{0{,}40}$. Vaihtoehdossa 3 ehdot ovat $0{,}45P - P_\\text{pumppu} = P_\\text{e}$ ja $0{,}40P + 3P_\\text{pumppu} = P_\\text{l}$. Eliminoimalla $P_\\text{pumppu}$:\n\n$$P = \\frac{P_\\text{l} + 3P_\\text{e}}{0{,}40 + 3 \\cdot 0{,}45}$$\n\n**Muunnokset:** Kaikki tehot ovat megawatteina ja hyötysuhteet desimaalilukuina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Vaihtoehto 1: $P = \\dfrac{300\\,\\text{MW} + 500\\,\\text{MW}}{0{,}40} = 2000\\,\\text{MW}$. Vaihtoehto 2: $P = \\dfrac{500\\,\\text{MW}}{0{,}40} = 1250\\,\\text{MW}$, ja sähköä syntyy $0{,}45 \\cdot 1250\\,\\text{MW} = 562{,}5\\,\\text{MW}$, eli $262{,}5\\,\\text{MW}$ yli tarpeen. Vaihtoehto 3: $P = \\dfrac{500\\,\\text{MW} + 3 \\cdot 300\\,\\text{MW}}{0{,}40 + 3 \\cdot 0{,}45} = \\dfrac{1400\\,\\text{MW}}{1{,}75} = 800\\,\\text{MW}$.\n\n**Vastaus:** $800\\,\\text{MW}$, kaksi merkitsevää numeroa. Rajoittavia tietoja ovat hyötysuhteet $0{,}40$ ja $0{,}45$ (kaksi numeroa). Kaupungin tarpeet $300\\,\\text{MW}$ ja $500\\,\\text{MW}$ sekä lämpökerroin $3{,}0$ ovat tehtävän mitoitusarvoja. Ne luetaan vähintään kaksinumeroisiksi ($3{,}0 \\cdot 10^2$, $5{,}0 \\cdot 10^2$), joten tulos on $8{,}0 \\cdot 10^2\\,\\text{MW}$.\n\n**Järkevyys:** Tase uudelleen: pumpun sähköteho on $0{,}45 \\cdot 800\\,\\text{MW} - 300\\,\\text{MW} = 60\\,\\text{MW}$, ja se luovuttaa lämpöä $3 \\cdot 60\\,\\text{MW} = 180\\,\\text{MW}$. Siitä $120\\,\\text{MW}$ tulee jätevedestä. Laitos antaa lämpöä $0{,}40 \\cdot 800\\,\\text{MW} = 320\\,\\text{MW}$, ja yhteensä $320\\,\\text{MW} + 180\\,\\text{MW} = 500\\,\\text{MW}$ kuten tarve. Laitoksen häviöt $0{,}15 \\cdot 800\\,\\text{MW} = 120\\,\\text{MW}$ korvautuvat jätevedestä otetulla $120\\,\\text{MW}$:lla. Vaihtoehto 3 tarvitsee vain $40\\,\\%$ vaihtoehdon 1 polttoaineesta."
+      }
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Suuri lämpöpumppu tuottaa kaukolämpöä. Se ottaa lämpöä puhdistetusta jätevedestä ja luovuttaa sen kaukolämpöverkkoon. Pumpun sähköteho on $9{,}00\\,\\text{MW}$ ja lämpökerroin 3,50. Kuinka suuren lämpötehon pumppu ottaa jätevedestä? Vastaa megawatteina.",
+      "answer": 22.5,
+      "unit": "MW",
+      "tolerance": 0.03,
+      "hints": [
+        "Mistä kahdesta lähteestä kaukolämpöverkkoon luovutettu lämpö tulee?",
+        "Lämpökerroin on $\\varepsilon = P_\\text{sisälle}/P_\\text{pumppu}$. Energia säilyy: $P_\\text{sisälle} = P_\\text{jätevesi} + P_\\text{pumppu}$.",
+        "Verkkoon luovutettu teho on $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu} = 3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$. Vähennä siitä sähköteho."
+      ],
+      "mistakes": [
+        {
+          "value": 31.5,
+          "feedback": "Tämä on kaukolämpöverkkoon luovutettu teho. Siitä $9{,}00\\,\\text{MW}$ on pumpun käyttämää sähköä. Jätevedestä tulee siis $31{,}5\\,\\text{MW} - 9{,}00\\,\\text{MW}$."
+        },
+        {
+          "value": 2.57,
+          "feedback": "Jaoit sähkötehon lämpökertoimella. Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa sähkötehoon verrattuna. Luovutettu teho on siis $3{,}5 \\cdot 9{,}0\\,\\text{MW}$."
+        }
+      ],
+      "solution": "**Annettu:** lämpöpumpun sähköteho $P_\\text{pumppu} = 9{,}00\\,\\text{MW}$, lämpökerroin $\\varepsilon = 3{,}50$\n\n**Kysytty:** jätevedestä otettu lämpöteho $P_\\text{jätevesi}$ megawatteina\n\n**Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämpötehon pumppu luovuttaa verkkoon sähkötehoonsa verrattuna. Energia säilyy: verkkoon luovutettu teho on pumpun sähköteho ja jätevedestä otettu teho yhteensä. Pumppu vain siirtää lämpöä.\n\n**Kaava:** $P_\\text{sisälle} = \\varepsilon P_\\text{pumppu}$ ja $P_\\text{sisälle} = P_\\text{jätevesi} + P_\\text{pumppu}$, joten\n\n$$\\begin{aligned} &P_\\text{jätevesi} \\\\ &= P_\\text{sisälle} - P_\\text{pumppu} \\\\ &= (\\varepsilon - 1) P_\\text{pumppu} \\end{aligned}$$\n\n**Muunnokset:** Teho on jo megawatteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $P_\\text{jätevesi} = (3{,}50 - 1) \\cdot 9{,}00\\,\\text{MW} = 2{,}50 \\cdot 9{,}00\\,\\text{MW} = 22{,}5\\,\\text{MW}$\n\n**Vastaus:** $22{,}5\\,\\text{MW}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat sähköteho $9{,}00\\,\\text{MW}$ ja erotus $\\varepsilon - 1 = 3{,}50 - 1 = 2{,}50$ (kolme numeroa, koska kokonaisluku $1$ on tarkka). Molemmat on annettu kolmella numerolla.\n\n**Järkevyys:** Verkkoon menee $3{,}50 \\cdot 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$, josta $22{,}5\\,\\text{MW} + 9{,}00\\,\\text{MW} = 31{,}5\\,\\text{MW}$ täsmää. Jätevedestä tuleva teho on suurempi kuin sähköteho, kuten pitääkin, kun lämpökerroin on yli 2. Pumppu ei luo energiaa vaan siirtää sitä.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 3 tehtävät vaativat päättelyä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Teräksisessä kaasupullossa on paineistettua typpeä. Paine on $20\\,\\text{MPa}$. Pullo seisoo hyllyllä vuoden. Kuinka suuren työn kaasu tekee sinä aikana?",
+      "choices": [
+        {
+          "text": "Suuren työn, koska paine on suuri ja vaikuttaa pullon seiniin koko vuoden.",
+          "feedback": "Paine saa aikaan voiman. Työtä tehdään kuitenkin vain, kun voiman kohde liikkuu. Pullon seinät eivät liiku eikä kaasun tilavuus muutu, joten $W_\\text{k} = p\\,\\Delta V = 0$."
+        },
+        {
+          "text": "Ei lainkaan työtä, koska kaasun tilavuus ei muutu.",
+          "correct": true,
+          "feedback": "Oikein. Kaasun tekemä työ on $W_\\text{k} = p\\,\\Delta V$, ja nyt $\\Delta V = 0$. Paine kertoo vain, että kaasu voisi tehdä työtä, jos se pääsisi laajenemaan."
+        },
+        {
+          "text": "Työn, joka on yhtä suuri kuin kaasun sisäenergia.",
+          "feedback": "Sisäenergia on kaasuun varastoitunutta energiaa, ei tehtyä työtä. Työ siirtää energiaa vain, kun tilavuus muuttuu. Hyllyllä seisovan pullon kaasu ei tee työtä lainkaan."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lämpöpumppu",
+      "prompt": "Lämpöpumppu käyttää sähköä $1{,}0\\,\\text{kWh}$. Samalla se luovuttaa taloon lämpöä $3{,}0\\,\\text{kWh}$. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Pumppu luo ylimääräiset $2{,}0\\,\\text{kWh}$ energiaa, koska se on niin tehokas laite.",
+          "feedback": "Mikään laite ei luo energiaa tyhjästä. Energia säilyy aina. Pumppu on tehokas siksi, että se siirtää lämpöä. Se ei tuota lämpöä itse. Ylimääräinen $2{,}0\\,\\text{kWh}$ on otettu ulkoilmasta."
+        },
+        {
+          "text": "Pumppu ottaa ulkoilmasta lämpöä $2{,}0\\,\\text{kWh}$. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähköenergian summa.",
+          "correct": true,
+          "feedback": "Oikein. Energian säilymisen mukaan $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Siksi $Q_\\text{ulko} = 3{,}0\\,\\text{kWh} - 1{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$. Pumppu siirtää lämpöä kylmästä ulkoilmasta lämpimään sisälle. Siihen tarvitaan sähköä. Lämpökerroin on $\\varepsilon = 3{,}0\\,\\text{kWh} / 1{,}0\\,\\text{kWh} = 3{,}0$."
+        },
+        {
+          "text": "Sähkö muuttuu lämmöksi pumpussa kolminkertaisella hyötysuhteella.",
+          "feedback": "Hyötysuhde ei voi olla yli $100\\,\\%$. Sähköstä ei saa enempää energiaa kuin sitä tuli. Sähkövastus muuttaisi $1{,}0\\,\\text{kWh}$ sähköä täsmälleen $1{,}0\\,\\text{kWh}$ lämmöksi. Lämpöpumpun lämpökerroin $3{,}0$ on eri asia kuin hyötysuhde. Suurin osa luovutetusta lämmöstä on siirretty ulkoa."
+        },
+        {
+          "text": "Ylimääräinen lämpö syntyy pumpun kitkasta ja muista häviöistä.",
+          "feedback": "Kitka ja häviöt muuttavat osan sähköstä lämmöksi. Se on kuitenkin osa sähköenergiaa $1{,}0\\,\\text{kWh}$. Se ei voi selittää kahta lisäkilowattituntia. Suurin osa luovutetusta lämmöstä on lämpöä, joka on siirretty ulkoilmasta."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Kuvaaja ja laskeminen",
+      "prompt": "Kaasun $(V, p)$-kuvaaja on vaakasuora jana korkeudella $p = 150\\,\\text{kPa}$. Jana alkaa kohdasta $V = 2{,}0\\,\\text{l}$ ja päättyy kohtaan $V = 5{,}0\\,\\text{l}$. Kuinka suuren työn $W_\\text{k}$ kaasu tekee? Vastaa jouleina.",
+      "answer": 450,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä janan ja $V$-akselin väliin jäävä pinta-ala tarkoittaa? Minkä muotoinen se on?",
+        "Suorakulmion pinta-ala on $W_\\text{k} = p\\,\\Delta V$. Tässä $\\Delta V = V_2 - V_1$.",
+        "$\\Delta V = 5{,}0\\,\\text{l} - 2{,}0\\,\\text{l} = 3{,}0\\,\\text{l} = 0{,}0030\\,\\text{m}^3$."
+      ],
+      "mistakes": [
+        {
+          "value": 450000,
+          "feedback": "Kerroit pascalit litroilla. Muunna tilavuus kuutiometreiksi: $3{,}0\\,\\text{l} = 0{,}0030\\,\\text{m}^3$."
+        },
+        {
+          "value": 750,
+          "feedback": "Käytit lopputilavuutta $5{,}0\\,\\text{l}$. Työ on pinta-ala vain laajenemisen aikana. Leveys on siis tilavuuden muutos $\\Delta V = 3{,}0\\,\\text{l}$."
+        }
+      ],
+      "solution": "**Annettu:** $(V, p)$-kuvaaja on vaakasuora jana, jolla $p = 150\\,\\text{kPa}$, alkutilavuus $V_1 = 2{,}0\\,\\textsf{l}$ ja lopputilavuus $V_2 = 5{,}0\\,\\textsf{l}$\n\n**Kysytty:** kaasun tekemä työ $W_\\text{k}$ jouleina\n\n**Periaate:** Kaasun tekemä työ on $(V, p)$-kuvaajan ja $V$-akselin väliin jäävä pinta-ala. Jana on vaakasuora, joten paine pysyy vakiona. Silloin alue on suorakulmio, ja työ on paine kertaa tilavuuden muutos.\n\n**Kuvaajan lukeminen:** Suorakulmion korkeus on janan korkeus $p = 150\\,\\text{kPa}$. Leveys on janan alku- ja loppupisteen väli $V_2 - V_1 = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$. Alku- ja loppupisteen arvoja ei kerrota keskenään. Niiden erotus on leveys.\n\n**Kaava:** $W_\\text{k} = p\\,\\Delta V$, missä $\\Delta V = V_2 - V_1$\n\n**Muunnokset:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ ja $\\Delta V = 3{,}0\\,\\textsf{l} = 3{,}0 \\cdot 10^{-3}\\,\\text{m}^3 = 0{,}0030\\,\\text{m}^3$. Silloin $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Sijoitus:** $W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Vastaus:** $450\\,\\text{J}$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuuden muutos $\\Delta V = 5{,}0\\,\\textsf{l} - 2{,}0\\,\\textsf{l} = 3{,}0\\,\\textsf{l}$ (lukemien erotuksella on yksi desimaali ja kaksi numeroa). Paine $150\\,\\text{kPa}$ on vähintään kahden numeron arvo.\n\n**Järkevyys:** Työ on positiivinen, koska tilavuus kasvaa. Arvio: $1{,}5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. Jos olisi käytetty lopputilavuutta $5{,}0\\,\\textsf{l}$, tulos olisi $750\\,\\text{J}$. Se vastaisi koko suorakulmiota nollatilavuudesta asti. Laajenemisen aikana työtä tehdään vain välillä $2{,}0$–$5{,}0\\,\\textsf{l}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Selitä ja siirrä",
+      "prompt": "Ystäväsi ehdottaa: ”Rakennetaan niin hyvä voimalaitos, ettei se tarvitse lauhdutinta lainkaan. Silloin kaikki polttoaineen energia muuttuu sähköksi.” Selitä, miksi tämä ei onnistu. Kerro myös, miten lauhduttimen lämmön voi silti käyttää hyödyksi.",
+      "criteria": [
+        "Sanon, että lämpövoimakoneen on aina luovutettava osa lämmöstä kylmempään ympäristöön (toinen pääsääntö). Siksi $\\eta < 100\\,\\%$.",
+        "Käytän energian säilymistä: $Q_1 = W + Q_2$. Luovutettu lämpö on se osa, joka ei muutu työksi.",
+        "Erotan häviöiden vähentämisen (kitka) siitä, että lämpöä on luovutettava periaatteessakin.",
+        "Kerron, että yhteistuotannossa luovutettu lämpö johdetaan kaukolämpöverkkoon. Silloin kokonaishyötysuhde nousee 85–$90\\,\\%$:iin."
+      ],
+      "model": "Lämpövoimakone muuttaa lämpöä työksi vain, kun se luovuttaa osan lämmöstä kylmempään ympäristöön. Tämä on termodynamiikan toinen pääsääntö. Simulaation mäntä näytti syyn. Mäntä saadaan takaisin pienemmällä työllä kuin se nousi vain, jos kaasu jäähdytetään. Voimalaitoksessa lauhdutin tekee saman. Ilman sitä höyry ei tiivistyisi takaisin vedeksi, eikä kierto jatkuisi. Energia säilyy, $Q_1 = W + Q_2$. Siksi sähköksi muuttuva osa $W$ on aina pienempi kuin polttoaineesta saatu lämpö $Q_1$. Kitkan vähentäminen nostaa hyötysuhdetta jonkin verran, mutta luovutettavaa lämpöä $Q_2$ ei voi poistaa. Lauhduttimen lämmön voi kuitenkin johtaa mereen laskemisen sijaan kaukolämpöverkkoon. Tällainen yhteistuotantolaitos saa polttoaineen energiasta hyödyksi sähkönä ja lämpönä yhteensä 85–$90\\,\\%$. Tämä on kokonaishyötysuhde. Lämpöä $Q_2$ luovutetaan yhä, mutta se käytetään hyödyksi. Sähköä ei saada enempää."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

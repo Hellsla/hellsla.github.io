@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kuinka suuri lämpömäärä tarvitaan $0{,}20\\,\\text{kg}$:n jään sulattamiseen $0\\,{}^\\circ\\text{C}$:ssa ($s = 334\\,\\text{kJ/kg}$)?",
+    "a": "$Q = sm = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0{,}20\\,\\text{kg} = 66{,}8\\,\\text{kJ} \\approx 67\\,\\text{kJ}$. Lämpötila ei muutu sulamisen aikana."
+  },
+  {
+    "q": "Sekoitetaan $0{,}10\\,\\text{kg}$ vettä ($10\\,{}^\\circ\\text{C}$) ja $0{,}10\\,\\text{kg}$ jäätä ($0\\,{}^\\circ\\text{C}$). Sulaako kaikki jää? Perustele luvuilla.",
+    "a": "Ei sula. Vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen $Q = cm\\Delta T = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}10\\,\\text{kg} \\cdot 10\\,\\text{K} \\approx 4{,}2\\,\\text{kJ}$. Kaiken jään sulattaminen vaatii $sm = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}} \\cdot 0{,}10\\,\\text{kg} = 33{,}4\\,\\text{kJ}$. Sulaa vain noin $12{,}5\\,\\text{g}$. Lämpötila on $0\\,{}^\\circ\\text{C}$."
+  }
+]

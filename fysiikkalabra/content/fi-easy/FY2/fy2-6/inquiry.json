@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "contribution": "Oppilas oppii vertailemaan energiantuotantotapoja suuruusluokkien avulla. Hän tarkastelee yhden voimalan tehoa, vuosienergiaa $E = P \\cdot t$ ja Suomen sähköntuotannon jakaumaa. Hän oppii erottamaan sääriippuvaisen, säädettävän ja tasaisen tuotannon.",
+  "learn": [
+    "Osaat laskea voimalan vuosienergian tai keskitehon kaavalla $E = P \\cdot t$.",
+    "Osaat jakaa voimalat sääriippuvaisiin, säädettäviin ja perusvoimaan. Osaat myös perustella jaon.",
+    "Osaat vertailla tuotantotapoja suuruusluokkien ja kriteerien avulla."
+  ],
+  "prior": [
+    "Teho kertoo energian siirtymisen nopeuden, $P = E : t$ (luku *Teho*)",
+    "Polttoaineen energia lasketaan lämpöarvolla, $E = Hm$ (luku *Polttoaineet ja lämpöarvo*)",
+    "Hyötysuhde kertoo, kuinka suuri osa energiasta on hyödyllistä (luku *Hyötysuhde*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pakkasaamuna kello kahdeksan Suomi herää. Lämmitys, teollisuus ja junat käyttävät sähköä enemmän kuin melkein koskaan. Tuulee heikosti, ja aurinko nousee vasta tunnin päästä. Silti valot palavat. Sähköä tulee ydinvoimaloista, vesivoimaloista ja polttoainevoimaloista. Vähän sähköä tulee myös tuulesta.",
+      "question": "Miksi sähköverkko tarvitsee monta erilaista voimalaa? Miksi ei riitä yksi paras voimala?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: teho ja energia",
+      "prompt": "Laitteen teho on $2\\,\\text{kW}$ ja se on päällä $3\\,\\text{h}$. Kuinka paljon energiaa laite kuluttaa?",
+      "choices": [
+        {
+          "text": "$6\\,\\text{kWh}$",
+          "correct": true,
+          "feedback": "Oikein. Energia on teho kerrottuna ajalla, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (luku *Teho*). Tänään samalla laskutavalla lasketaan, kuinka paljon sähköä voimala tuottaa."
+        },
+        {
+          "text": "$0{,}67\\,\\text{kWh}$",
+          "feedback": "Tässä teho on jaettu ajalla. Energia lasketaan kertomalla: $E = P t$. Yksikkö kWh on kilowatin ja tunnin tulo (luku *Teho*)."
+        },
+        {
+          "text": "$6\\,\\text{kW}$",
+          "feedback": "Luku on oikein, mutta yksikkö ei ole. Teho mitataan kilowatteina ja energia kilowattitunteina: $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste: eniten sähköä",
+      "prompt": "Mikä energialähde tuotti Suomessa eniten sähköä vuonna 2024?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Tuulivoima, koska uusia tuulivoimaloita on rakennettu paljon.",
+          "feedback": "Tuulivoima oli toiseksi suurin, ja sen osuus kasvaa nopeasti. Se ei kuitenkaan ollut suurin. Vertaa pylväitä Tutki-vaiheen taulukossa."
+        },
+        {
+          "text": "Ydinvoima, koska se käy tasaisesti lähes koko vuoden.",
+          "correct": true,
+          "feedback": "Ydinvoima oli suurin lähde, noin $31\\,\\text{TWh}$. Syy on tasainen käynti. Ydinvoimaloita on vähän, mutta ne tuottavat melkein jatkuvasti nimellisteholla. Tarkista luvut Tutki-vaiheessa."
+        },
+        {
+          "text": "Vesivoima, koska Suomessa on paljon jokia ja järviä.",
+          "feedback": "Vesivoima tuottaa paljon sähköä. Suomen joet ovat kuitenkin melko tasaisia ja alavia, joten vesivoiman osuus jää pienemmäksi kuin ydinvoiman ja tuulivoiman. Vertaa pylväitä Tutki-vaiheessa."
+        },
+        {
+          "text": "Fossiiliset polttoaineet, koska ne ovat halpoja ja helposti kuljetettavia.",
+          "feedback": "Fossiilisten polttoaineiden osuus Suomen sähköntuotannossa on nykyisin vain muutama prosentti. Tarkista luvut Tutki-vaiheen taulukosta."
+        }
+      ]
+    },
+    {
+      "id": "data-fi",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Suomen sähköntuotanto 2024",
+      "source": "statistics",
+      "source_note": "Tilastokeskus: Sähkön ja lämmön tuotanto 2024. Ydinvoiman ja bioperäisten polttoaineiden luvut on laskettu prosenttiosuuksista ja pyöristetty. Muut lähteet = kokonaistuotanto, josta on vähennetty muut rivit.",
+      "text": "Taulukossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin. Kokonaistuotanto oli $79{,}9\\,\\text{TWh}$. Siihen kuuluu myös pieniä muita lähteitä. Ne on koottu viimeiselle riville.\n\n| Lähde | $E$ (TWh) |\n|---|---|\n| ydinvoima | $31$ |\n| tuulivoima | $20{,}2$ |\n| vesivoima | $14{,}1$ |\n| bioperäiset polttoaineet | $9{,}5$ |\n| fossiiliset polttoaineet ja turve | $3{,}4$ |\n| aurinkosähkö | $0{,}9$ |\n| muut lähteet | $0{,}8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske tuulivoiman keskiteho vuoden aikana, kun vuodessa on $8760\\,\\text{h}$. Vastaa gigawatteina.",
+        "answer": 2.31,
+        "unit": "GW",
+        "tolerance": 0.02,
+        "hints": [
+          "Keskiteho saadaan jakamalla energia ajalla: $P = E : t$.",
+          "Muuta ensin teravattitunnit kilowattitunneiksi: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
+          "$P = 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}$, ja lopuksi $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2306,
+            "feedback": "Tulos on oikea megawatteina, mutta ei gigawatteina. Gigawatti on tuhat megawattia, joten $2306\\,\\text{MW} = 2{,}306 \\cdot 1000\\,\\text{MW} = 2{,}31\\,\\text{GW}$."
+          },
+          {
+            "value": 0.0023,
+            "feedback": "Muutit teravattitunnit väärin. Oikein on $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$, ei $10^{6}\\,\\text{kWh}$."
+          }
+        ],
+        "solution": "**Annettu:** energia $E = 20{,}2\\,\\text{TWh}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** tuulivoiman keskiteho $P$ gigawatteina\n\n**Periaate:** Keskiteho on teho, jolla tuotettaisiin sama energia tasaisesti koko vuoden ajan. Siksi $E = P t$.\n\n**Kaava:** $E = P t$, josta $P = \\dfrac{E}{t}$\n\n**Muunnokset:** $20{,}2\\,\\text{TWh} = 20{,}2 \\cdot 10^{9}\\,\\text{kWh}$, ja lopuksi kilowatit gigawateiksi: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Sijoitus:** $P = 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h} = 2\\,305\\,936\\,\\text{kW} \\approx 2{,}31 \\cdot 10^{6}\\,\\text{kW} = 2{,}31\\,\\text{GW}$\n\n**Vastaus:** $2{,}31\\,\\text{GW}$, kolme merkitsevää numeroa kuten energiassa $20{,}2\\,\\text{TWh}$; vuoden tuntimäärä $8760\\,\\text{h}$ on tarkka luku.\n\n**Järkevyys:** Arvio: $20 \\cdot 10^{9}\\,\\text{kWh} : 9000\\,\\text{h} \\approx 2{,}2 \\cdot 10^{6}\\,\\text{kW} = 2{,}2\\,\\text{GW}$. Keskiteho on pienempi kuin tuulivoimaloiden yhteenlaskettu nimellisteho. Syy on se, että tuuli vaihtelee."
+      }
+    },
+    {
+      "id": "data-yksikko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Yhden voimalan teho",
+      "source": "example",
+      "source_note": "Tyypillisiä, pyöristettyjä tehoja. Olkiluoto 3 on Suomen suurin voimalayksikkö.",
+      "text": "Taulukossa on tyypillisiä yksittäisten voimalaitosten tehoja. Arvot ovat likimääräisiä ja pyöristettyjä.\n\n| Voimala | Teho |\n|---|---|\n| omakotitalon aurinkopaneelit | $5\\,\\text{kW}$ |\n| tuulivoimala | $5\\,\\text{MW}$ |\n| suuri vesivoimalaitos | $100\\,\\text{MW}$ |\n| Olkiluoto 3 | $1600\\,\\text{MW}$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta $5{,}0\\,\\text{MW}$:n tuulivoimalaa tarvitaan, jotta niiden nimellisteho on yhtä suuri kuin Olkiluoto 3:n nimellisteho $1600\\,\\text{MW}$?",
+        "answer": 320,
+        "unit": "kpl",
+        "tolerance": 0.02,
+        "hints": [
+          "Verrataan samaa suuretta, tehoa: kuinka monta kertaa $5{,}0\\,\\text{MW}$ mahtuu lukuun $1600\\,\\text{MW}$?",
+          "Molemmat tehot ovat jo megawatteina, joten yksikkömuunnoksia ei tarvita.",
+          "$N = 1600\\,\\text{MW} : 5{,}0\\,\\text{MW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.0031,
+            "feedback": "Jaoit pienemmän tehon suuremmalla. Kysymys on, kuinka monta tuulivoimalaa tarvitaan. Siksi suurempi teho jaetaan pienemmällä."
+          }
+        ],
+        "solution": "**Annettu:** tuulivoimalan teho $P_\\text{t} = 5{,}0\\,\\text{MW}$, Olkiluoto 3:n teho $P_\\text{O} = 1600\\,\\text{MW}$\n\n**Kysytty:** tuulivoimaloiden lukumäärä $N$\n\n**Periaate:** Nimellistehot lasketaan yhteen, joten $N$ voimalan yhteisteho on $N P_\\text{t}$. Yhteistehon halutaan olevan yhtä suuri kuin Olkiluoto 3:n teho.\n\n**Kaava:** $N P_\\text{t} = P_\\text{O}$, josta $N = \\dfrac{P_\\text{O}}{P_\\text{t}}$\n\n**Muunnokset:** Ei tarvita: molemmat tehot ovat megawatteina, joten yksikkö supistuu.\n\n**Sijoitus:** $N = 1600\\,\\text{MW} : 5{,}0\\,\\text{MW} = 320$\n\n**Vastaus:** $320$ tuulivoimalaa, kaksi merkitsevää numeroa kuten tuulivoimalan tehossa $5{,}0\\,\\text{MW}$.\n\n**Järkevyys:** Arvio: $1600 : 5 = 320$. Saman vuosienergian tuottamiseen tarvittaisiin paljon enemmän tuulivoimaloita. Tuulivoimalan keskiteho on vain osa sen nimellistehosta, mutta Olkiluoto 3 käy lähes koko ajan lähellä nimellistehoaan."
+      }
+    },
+    {
+      "id": "data-viikko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tuuli ja ydinvoima viikon aikana",
+      "source": "example",
+      "source_note": "Keksitty, pyöristetty esimerkkiviikko. Suuruusluokat vastaavat Suomen talvea. Tuulivoiman nimellisteho: Suomen Tuulivoimayhdistys 2024.",
+      "text": "Taulukossa on esimerkkiviikko tammikuussa. Siinä on kulutuksen, ydinvoiman ja tuulivoiman teho vuorokauden keskiarvona gigawatteina. Suomen tuulivoimaloiden yhteenlaskettu nimellisteho oli vuoden 2024 lopussa noin $8\\,\\text{GW}$.\n\n| Päivä | Kulutus $(\\text{GW})$ | Ydin $(\\text{GW})$ | Tuuli $(\\text{GW})$ |\n|---|---|---|---|\n| ma | $11{,}3$ | $4{,}3$ | $6{,}4$ |\n| ti | $11{,}9$ | $4{,}3$ | $5{,}1$ |\n| ke | $12{,}6$ | $4{,}3$ | $2{,}2$ |\n| to | $13{,}1$ | $4{,}3$ | $0{,}4$ |\n| pe | $12{,}7$ | $4{,}3$ | $1{,}1$ |\n| la | $11{,}4$ | $4{,}3$ | $3{,}6$ |\n| su | $10{,}8$ | $4{,}3$ | $5{,}8$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Loput kulutuksesta tuotetaan muilla tavoilla: vesivoimalla, polttoainevoimaloilla ja tuontisähköllä. Kuinka suuri teho piti torstaina tuottaa näillä muilla tavoilla? Vastaa gigawatteina.",
+        "answer": 8.4,
+        "unit": "GW",
+        "tolerance": 0.02,
+        "hints": [
+          "Tuotannon on vastattava kulutusta joka hetki. Kaikkien lähteiden tehojen summa on yhtä suuri kuin kulutus.",
+          "Muiden lähteiden teho on se osa kulutuksesta, jota ydinvoima ja tuulivoima eivät kata.",
+          "$P_\\text{m} = 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} - 0{,}4\\,\\text{GW}$."
+        ],
+        "mistakes": [
+          {
+            "value": 8.8,
+            "feedback": "Vähensit kulutuksesta vain ydinvoiman. Myös tuulivoima tuotti torstaina $0{,}4\\,\\text{GW}$."
+          },
+          {
+            "value": 12.7,
+            "feedback": "Vähensit kulutuksesta vain tuulivoiman. Myös ydinvoima tuotti torstaina $4{,}3\\,\\text{GW}$."
+          },
+          {
+            "value": 0.6,
+            "feedback": "Tämä on maanantain luku, jolloin tuuli puhalsi hyvin. Laske samalla tavalla torstain rivin luvuista."
+          }
+        ],
+        "solution": "**Annettu:** torstain kulutus $P_\\text{kul} = 13{,}1\\,\\text{GW}$, ydinvoiman teho $P_\\text{y} = 4{,}3\\,\\text{GW}$ ja tuulivoiman teho $P_\\text{t} = 0{,}4\\,\\text{GW}$ (taulukosta)\n\n**Kysytty:** muiden tuotantotapojen teho $P_\\text{m}$ gigawatteina\n\n**Periaate:** Sähköä ei voi varastoida verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Kaikkien lähteiden tehojen summa on kulutuksen teho. Ydinvoima ja tuulivoima eivät tuota kaikkea tehoa. Loput on tuotettava muilla tavoilla.\n\n**Kaava:** $P_\\text{kul} = P_\\text{y} + P_\\text{t} + P_\\text{m}$, josta $P_\\text{m} = P_\\text{kul} - P_\\text{y} - P_\\text{t}$\n\n**Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina.\n\n**Sijoitus:** $P_\\text{m} = 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} - 0{,}4\\,\\text{GW} = 8{,}4\\,\\text{GW}$\n\n**Vastaus:** $8{,}4\\,\\text{GW}$, yhden desimaalin tarkkuudella kuten taulukon tehot. Erotus on yhtä tarkka kuin luvut, joista se lasketaan.\n\n**Järkevyys:** Tulos on pienempi kuin kulutus, kuten pitääkin. Maanantaina sama lasku antaa vain $11{,}3\\,\\text{GW} - 4{,}3\\,\\text{GW} - 6{,}4\\,\\text{GW} = 0{,}6\\,\\text{GW}$, joten muiden voimaloiden piti torstaina nostaa tehoaan moninkertaiseksi. Syy on se, että tuuli tyyntyi."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miksi tarvitaan monta voimalatyyppiä?",
+      "prompt": "Käytä taulukoita ja alun pakkasaamun tilannetta. Miksi Suomen sähköntuotannossa on monta energialähdettä? Miksi tuulivoiman nimellistehosta ei näe, kuinka paljon tuulivoima tuottaa?",
+      "model": "Suomen tuotanto jakautuu usealle lähteelle. Vuonna 2024 ydinvoima tuotti noin $31\\,\\text{TWh}$, tuulivoima $20\\,\\text{TWh}$ ja vesivoima $14\\,\\text{TWh}$. Esimerkkiviikolla ydinvoiman teho pysyi koko ajan $4{,}3\\,\\text{GW}$:ssa. Tuulivoiman teho vaihteli välillä $0{,}4$–$6{,}4\\,\\text{GW}$, vaikka nimellisteho on noin $8\\,\\text{GW}$. Tuulivoiman keskiteho on siis vain osa nimellistehosta. Kun tuuli tyyntyi ja kulutus kasvoi, muiden tuotantotapojen piti nostaa tehoaan. Siksi tarvitaan säädettäviä voimaloita, kuten vesivoimaa. Voimaloita ei voi vertailla pelkän nimellistehon perusteella. Vuosituotanto on keskiteho kerrottuna ajalla, $E = P \\cdot t$.",
+      "criteria": [
+        "Mainitsin vähintään kolme energialähdettä ja niiden suuruusluokan.",
+        "Selitin taulukon avulla, miksi sääriippuvainen tuotanto tarvitsee rinnalleen säädettävää tuotantoa.",
+        "Erotin nimellistehon ja vuosituotannon toisistaan.",
+        "Käytin yhtälöä $E = P \\cdot t$."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteeseesi",
+      "prompt": "Vertaa ennustettasi Suomen sähköntuotannon lukuihin. Muuttaisitko ennustettasi? Mitä tapahtuisi sähköverkolle, jos ydinvoima poistuisi ja mikään säädettävä tuotanto ei korvaisi sitä?",
+      "predictions": [
+        "ennuste-1"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee voimalan keskitehon, kun vuosienergia on $14\\,\\text{GWh}$. Hän kirjoittaa $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ ja ihmettelee, että tulos on valtava. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Hän kertoi energian ajalla. Keskiteho saadaan jakamalla energia ajalla: $P = E : t = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$.",
+          "correct": true,
+          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
+        },
+        {
+          "text": "Vuodessa ei ole $8760\\,\\text{h}$, vaan $365\\,\\text{h}$.",
+          "feedback": "Vuodessa on $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$. Virhe ei ole tuntimäärässä. Virhe on se, että energia kerrottiin ajalla."
+        },
+        {
+          "text": "Teho olisi pitänyt ilmoittaa megawatteina, ja kaava on muuten oikein.",
+          "feedback": "Yksikkö ei korjaa tulosta. Oikein laskettuna teho olisi $1{,}6\\,\\text{MW}$. Kertolasku antaa väärän suureen eikä tehoa. Syy on se, että energia kerrottiin ajalla eikä jaettu ajalla."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska voimala on iso.",
+          "feedback": "Yksittäisen tuulivoimalan keskiteho on megawattien luokkaa. Tulos $123\\,000\\,\\text{GW}$ olisi kymmeniä kertoja koko maailman voimaloiden keskiteho."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Olkiluoto 3:n teho on $1600\\,\\text{MW}$. Kuinka monta teravattituntia se tuottaisi vuodessa, jos se toimisi koko vuoden ($8760\\,\\text{h}$) täydellä teholla? Vastaa teravattitunteina.",
+      "answer": 14.0,
+      "unit": "TWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Teho ja aika tunnetaan, joten energia saadaan kertomalla ne keskenään.",
+        "Muuta teho kilowateiksi: $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}$. Tulo on silloin kilowattitunteina.",
+        "$E = 1{,}6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}$, ja lopuksi $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 14016,
+          "feedback": "Tulos on oikea gigawattitunteina. Teravattitunti on tuhat kertaa gigawattituntia suurempi: $14\\,016\\,\\text{GWh} = 14{,}016 \\cdot 1000\\,\\text{GWh} = 14{,}0\\,\\text{TWh}$."
+        },
+        {
+          "value": 0.00018,
+          "feedback": "Jaoit tehon ajalla. Energia on teho kerrottuna ajalla: $E = P t$."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 1600\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ teravattitunteina\n\n**Periaate:** Teho on vakio, kun voimala toimii täydellä teholla, joten energia on teho kerrottuna ajalla.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW} = 1{,}6 \\cdot 10^{6}\\,\\text{kW}$ ja lopuksi $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1{,}6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14{,}016 \\cdot 10^{9}\\,\\text{kWh} = 14{,}0\\,\\text{TWh}$\n\n**Vastaus:** $14{,}0\\,\\text{TWh}$, kolme merkitsevää numeroa kuten tehossa $1600\\,\\text{MW}$.\n\n**Järkevyys:** Tämä on yläraja. Todellinen tuotanto on pienempi, koska laitos on välillä pois käytöstä. Suomen kokonaistuotanto oli $79{,}9\\,\\text{TWh}$, ja $14{,}0 : 79{,}9 \\approx 18\\,\\%$. Yksi laitos tuottaisi siis enimmillään lähes viidenneksen.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään kaavaa $E = P \\cdot t$ suoraan. Tason 2 tehtävissä on yksikkömuunnos tai keskiteho. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Pakkasilta: kulutus kasvaa nopeasti, ja tuuli tyyntyy. Mikä voimala pystyy nostamaan tehoaan nopeimmin ja tasapainottamaan siksi verkkoa?",
+      "choices": [
+        {
+          "text": "Vesivoimalaitos, koska virtausta turbiinin läpi voi lisätä hetkessä.",
+          "correct": true,
+          "feedback": "Oikein. Vesivoima on hyvin säädettävää. Turbiinille johdettavaa vettä voi lisätä sekunneissa tai minuuteissa. Lisäksi vesialtaaseen on varastoitu energiaa."
+        },
+        {
+          "text": "Tuulivoimala, koska tuulivoima on uusiutuvaa.",
+          "feedback": "Uusiutuva ei tarkoita säädettävää. Tuulivoimalan teho riippuu tuulesta, eikä sitä voi nostaa, kun tuuli tyyntyy."
+        },
+        {
+          "text": "Aurinkopaneelit, koska aurinko on aina taivaalla.",
+          "feedback": "Aurinkosähkön teho riippuu säteilystä. Pakkasillalla aurinkoa ei ole lainkaan. Aurinkosähkö ei ole säädettävää."
+        },
+        {
+          "text": "Ydinvoimala, koska siinä on eniten tehoa.",
+          "feedback": "Ydinvoimala on tehokas, mutta sen tehoa on hidas säätää. Ydinvoimala on tarkoitettu pitämään tasainen perusteho. Se ei seuraa kulutuksen nopeita muutoksia."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskutehtävä",
+      "prompt": "Tuulivoimalan keskiteho vuoden aikana on $1{,}0\\,\\text{MW}$. Kuinka paljon energiaa se tuottaa vuodessa ($8760\\,\\text{h}$)? Vastaa gigawattitunteina.",
+      "answer": 8.8,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Energia on keskiteho kerrottuna ajalla.",
+        "Muuta teho kilowateiksi: $1{,}0\\,\\text{MW} = 1{,}0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$.",
+        "$E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h}$, ja $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8760,
+          "feedback": "Tulos on oikea megawattitunteina. Gigawattitunti on tuhat kertaa megawattituntia suurempi: $8760\\,\\text{MWh} = 8{,}76 \\cdot 1000\\,\\text{MWh} = 8{,}76\\,\\text{GWh}$."
+        }
+      ],
+      "solution": "**Annettu:** keskiteho $P = 1{,}0\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ gigawattitunteina\n\n**Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian tasaisesti, joten $E = P t$.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $1{,}0\\,\\text{MW} = 1{,}0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ ja lopuksi $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8{,}76 \\cdot 10^{6}\\,\\text{kWh} = 8{,}76\\,\\text{GWh}$\n\n**Vastaus:** $8{,}8\\,\\text{GWh}$, kaksi merkitsevää numeroa kuten keskitehossa $1{,}0\\,\\text{MW}$.\n\n**Järkevyys:** Arvio: $1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} = 9 \\cdot 1000\\,\\text{MWh} = 9\\,\\text{GWh}$. Yhden voimalan vuosienergia on gigawattitunteja eikä teravattitunteja. Se sopii yhden voimalan kokoon."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja vertaile",
+      "prompt": "Vertaile ydinvoimaa ja tuulivoimaa vähintään kolmella kriteerillä (esimerkiksi teho, säädettävyys, varastoitavuus, ympäristö). Kumpi sopii perusvoimaksi? Perustele.",
+      "criteria": [
+        "Vertailen vähintään kolmea kriteeriä.",
+        "Sanon, että ydinvoima käy tasaisesti ja tuulivoima vaihtelee sään mukaan.",
+        "Perustelen perusvoiman valinnan sillä, että tuotanto on ennustettavaa.",
+        "Mainitsen ainakin yhden ympäristövaikutuksen kummastakin."
+      ],
+      "model": "Ydinvoimalan yksikköteho on suuri (Olkiluoto 3 noin $1600\\,\\text{MW}$). Se käy tasaisesti lähes nimellisteholla, joten sen vuosituotanto on suuri. Tuulivoimala on pienempi (noin $5\\,\\text{MW}$). Sen teho vaihtelee tuulen mukaan, joten keskiteho on vain osa nimellistehosta. Kumpaakaan ei voi säätää nopeasti. Ydinvoiman säätö on hidasta, ja tuulta ei voi lisätä. Ydinvoima sopii perusvoimaksi, koska sen tuotanto on tasaista ja ennustettavaa. Tuulivoima ei tuota hiilidioksidia käytössä. Ydinvoima synnyttää radioaktiivista jätettä, joka on varastoitava turvallisesti."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

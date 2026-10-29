@@ -1,0 +1,22 @@
+{
+ "Kuvitus: järven uimaranta aamupäivällä. Aurinko paistaa sekä hiekkaan että veteen. Hiekan yllä väreilee kuumuus, ja hiekkaan pistetyn lämpömittarin punainen pylväs on korkealla. Rantaveteen pistetyn lämpömittarin pylväs on matalalla, koska vesi on vielä viileää.": "Kuvitus: järven uimaranta aamupäivällä. Aurinko paistaa sekä hiekkaan että veteen. Hiekan yllä väreilee kuumuus. Hiekkaan pistetyn lämpömittarin punainen pylväs on korkealla. Rantaveteen pistetyn lämpömittarin pylväs on matalalla, koska vesi on vielä viileää.",
+ "Kuvitus: saunan kiuas. Kuumille kiville heitetään kauhalla vettä, ja kivistä nousee löylyhöyryä. Taustalla on puiset lauteet.": "Kuvitus: saunan kiuas. Kuumille kiville heitetään kauhalla vettä, ja kivistä nousee löylyhöyryä. Taustalla on puiset lauteet.",
+ "Kaavakuva: yhtä suuriin massoihin vettä ja hiekkaa siirtyy sama lämpömäärä Q, mitä kuvaavat yhtä pitkät nuolet. Veden lämpömittarin lukema nousee vähän, hiekan noin viisi kertaa enemmän, koska hiekan ominaislämpökapasiteetti 800 J/(kg·K) on noin viidesosa veden arvosta 4190 J/(kg·K). Lämpötilan nousut on piirretty mittakaavassa ja korostettu punaisella. Hiekkaa on astiassa tilavuutena vähemmän, koska se on tiheämpää kuin vesi.": "Kaavakuva: yhtä suuriin massoihin vettä ja hiekkaa siirtyy sama lämpömäärä Q. Sitä kuvaavat yhtä pitkät nuolet. Veden lämpömittarin lukema nousee vähän. Hiekan lukema nousee noin viisi kertaa enemmän, koska hiekan ominaislämpökapasiteetti 800 J/(kg·K) on noin viidesosa veden arvosta 4190 J/(kg·K). Lämpötilan nousut on piirretty mittakaavassa ja korostettu punaisella. Hiekkaa on astiassa tilavuutena vähemmän, koska se on tiheämpää kuin vesi.",
+ "sama ": "sama ",
+ " ja sama ": " ja sama ",
+ "vesi": "vesi",
+ "hiekka": "hiekka",
+ "Vaakapylväskaavio ominaislämpökapasiteeteista yksikössä J/(kg·K): vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385. Pylväiden pituudet ovat mittakaavassa: veden pylväs on noin viisi kertaa hiekan pylvään pituinen.": "Vaakapylväskaavio ominaislämpökapasiteeteista yksikössä J/(kg·K): vesi 4190, jää 2100, alumiini 900, hiekka 800, rauta 450 ja kupari 385. Pylväiden pituudet ovat mittakaavassa. Veden pylväs on noin viisi kertaa hiekan pylvään pituinen.",
+ "J/(kg": "J/(kg",
+ "jää": "jää",
+ "alumiini": "alumiini",
+ "rauta": "rauta",
+ "kupari": "kupari",
+ "Kalorimetri ennen ja jälkeen lämpötasapainon, periaatekuva, ei mittakaavassa. Ennen: eristetyssä astiassa on 0,300 kg vettä 20,0 °C:ssa ja sen yläpuolella langasta roikkuu 0,200 kg:n metallikappale 100,0 °C:ssa. Jälkeen: kappale on vedessä, ja sekä vesi että kappale ovat lämpötilassa 24,5 °C. Metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama.": "Kalorimetri ennen ja jälkeen lämpötasapainon, periaatekuva, ei mittakaavassa. Ennen: eristetyssä astiassa on 0,300 kg vettä 20,0 °C:ssa. Sen yläpuolella langasta roikkuu 0,200 kg:n metallikappale 100,0 °C:ssa. Jälkeen: kappale on vedessä. Sekä vesi että kappale ovat lämpötilassa 24,5 °C. Metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama.",
+ "ennen": "ennen",
+ "jälkeen": "jälkeen",
+ " kaikkialla": " kaikkialla",
+ "luovutettu": "luovutettu",
+ "vastaanotettu": "vastaanotettu",
+ "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina, kun kappaletta lämmitetään tasaisella teholla. Lämpötila nousee suoraviivaisesti pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). Ruudukon väli on 20 s ja 10 °C.": "Kuvaaja mittakaavassa: metallikappaleen lämpötila T celsiusasteina ajan t funktiona sekunteina. Kappaletta lämmitetään koko ajan samalla teholla. Lämpötila nousee suoraan viivaa pitkin pisteestä (0 s; 20 °C) pisteeseen (180 s; 60 °C). Ruudukon väli on 20 s ja 10 °C."
+}

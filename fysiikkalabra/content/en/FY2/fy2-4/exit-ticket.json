@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A device takes energy of $500\\,\\text{J}$ and gives useful energy of $350\\,\\text{J}$ from it. What is its efficiency, and where does the rest of the energy go?",
+    "a": "$\\eta = \\dfrac{350\\,\\text{J}}{500\\,\\text{J}} = 0.70 = 0.70 \\cdot 100\\,\\% = 70\\,\\%$. The remaining $500\\,\\text{J} - 350\\,\\text{J} = 150\\,\\text{J}$ is losses, usually heat that spreads into the surroundings. No energy has disappeared, because $350\\,\\text{J} + 150\\,\\text{J} = 500\\,\\text{J}$."
+  },
+  {
+    "q": "The efficiency of a device is $25\\,\\%$ and it takes a power of $200\\,\\text{W}$. How large are the useful power and the loss power?",
+    "a": "The useful power is $P_\\text{a} = 0.25 \\cdot 200\\,\\text{W} = 50\\,\\text{W}$. The loss power is $P_\\text{h} = 200\\,\\text{W} - 50\\,\\text{W} = 150\\,\\text{W}$."
+  },
+  {
+    "q": "It is claimed: “A high-power device always has a better efficiency than a low-power device.” Is the claim true? Justify your answer.",
+    "a": "It is not. Efficiency is the share of the useful power in the power taken, not the power itself. For example, $100\\,\\text{W}$ and $60\\,\\text{W}$ incandescent lamps have the same efficiency of about $5\\,\\%$, even though the high-power lamp takes more power."
+  }
+]

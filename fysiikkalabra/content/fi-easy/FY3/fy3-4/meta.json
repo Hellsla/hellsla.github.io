@@ -1,0 +1,24 @@
+{
+  "id": "fy3-4",
+  "course": "FY3",
+  "title": "Paine ja hydrostaattinen paine",
+  "goals": [
+    "LOPS FY3: lämpötila, paine ja hydrostaattinen paine",
+    "Taidot: suoran yhtälö, jossa on vakiotermi, p = ρgh + p₀",
+    "Täsmennys: voima voidaan käsitellä skalaarisuureena, sillä paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan"
+  ],
+  "prerequisites": [
+    "fy3-1",
+    "fy3-3"
+  ],
+  "glossary": [
+    "paine",
+    "pascal",
+    "hydrostaattinen paine",
+    "ilmanpaine",
+    "tiheys",
+    "ylipaine"
+  ],
+  "sim": true,
+  "image": false
+}

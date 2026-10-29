@@ -1,0 +1,419 @@
+{
+  "version": 1,
+  "contribution": "A gas is seen as a thermodynamic system whose state is described by temperature, pressure and volume. The micro model explains pressure as collisions of particles and temperature as the average kinetic energy of the particles, and this is why temperatures are compared in kelvins from absolute zero.",
+  "learn": [
+    "You can describe a gas as a thermodynamic system whose state is given by temperature, pressure and volume.",
+    "You can use the micro model to explain what pressure and temperature are.",
+    "You can justify why temperatures are compared in kelvins from absolute zero."
+  ],
+  "prior": [
+    "Celsius scale: water freezes at $0\\,{}^\\circ\\text{C}$ and boils at $100\\,{}^\\circ\\text{C}$ at normal pressure (lower secondary school physics)",
+    "Pumping extra air into a tyre makes it harder (everyday experience)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A bicycle is left outside in a frosty night, and in the morning the tyre gives way under your thumb. In the afternoon the same bicycle has stood in the sun, and the tyre is hard. The valve has been closed all the time, so the tyre holds the same air, and the rubber stretches so little that the volume of the tyre stays almost the same. The only thing that has changed is the temperature of the air.",
+      "question": "What happens to the air inside the tyre when it warms up, and why does it then push harder on the walls of the tyre?"
+    },
+    {
+      "id": "pr-pumppu",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: why does a tyre get harder?",
+      "prompt": "You pump more air into a bicycle tyre. Why does the tyre get harder?",
+      "choices": [
+        {
+          "text": "More air gets into the tyre, and the air pushes harder on the walls of the tyre from the inside.",
+          "correct": true,
+          "feedback": "Exactly: when more air is brought into the same space, its pressure on the walls of the tyre increases. In the opening phenomenon, however, no air is added. Something else makes the same air push harder on the walls."
+        },
+        {
+          "text": "The air is squeezed together in the tyre, so in the end there is less of it.",
+          "feedback": "Pumping increases the amount of air in the tyre; no air disappears anywhere. The air is squeezed into a smaller space, but that is exactly why it pushes harder on the walls of the tyre."
+        },
+        {
+          "text": "The rubber tightens from the strokes of the pump, and the air has nothing to do with it.",
+          "feedback": "An empty tyre does not get harder even if you tap it. The hardness comes from the air inside the tyre, which pushes the rubber outwards."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the gas warms up",
+      "prompt": "The temperature of a gas in a closed container is raised from $27\\,{}^\\circ\\text{C}$ to $327\\,{}^\\circ\\text{C}$. The volume of the container and the amount of gas stay the same. What happens to the pressure of the gas?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The pressure increases to about 12 times its value, because 327 is about 12 times 27.",
+          "feedback": "The theoretical value of the model increases from 100 to 200, so the pressure doubles. The zero of the Celsius scale is only the freezing point of water, and the particles are not at rest there. The ratio is calculated in kelvins: $27\\,{}^\\circ\\text{C}$ = $300\\,\\text{K}$ and $327\\,{}^\\circ\\text{C}$ = $600\\,\\text{K}$, and $600\\,\\text{K} / 300\\,\\text{K} = 2$."
+        },
+        {
+          "text": "The pressure doubles.",
+          "correct": true,
+          "feedback": "The results of the experiment support this: the theoretical value increases from 100 to 200, and the measured pressure varies around these values. In kelvins the temperature doubles, from $300\\,\\text{K}$ to $600\\,\\text{K}$, and the pressure increases in the same proportion."
+        },
+        {
+          "text": "The pressure stays the same, because no more gas enters the container.",
+          "feedback": "There are 80 particles in the experiment all the time, but the pressure still increases from 100 to about 200. The pressure does not depend only on the amount of gas but also on how fast the particles move."
+        },
+        {
+          "text": "The pressure increases in the same proportion as the mean speed of the particles, to about 1.4 times its value.",
+          "feedback": "The mean speed increases only 1.41 times, but the pressure doubles. A faster particle hits the wall harder and also more often, so both effects increase the pressure: $1.41 \\cdot 1.41 \\approx 2$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the container gets smaller",
+      "prompt": "The temperature of a gas stays at $300\\,\\text{K}$, and the volume of the container is halved from 2.0 dm³ to 1.0 dm³. The amount of gas does not change. What happens to the pressure, and why?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The pressure stays the same, because the temperature does not change.",
+          "feedback": "In the experiment the theoretical value increases from 50 to 100 although the temperature stays at $300\\,\\text{K}$. Temperature alone does not determine the pressure: when there is less room, the same particles hit the wall more often."
+        },
+        {
+          "text": "The pressure doubles, because the particles hit the wall more often.",
+          "correct": true,
+          "feedback": "The results of the experiment support this: the theoretical value increases from 50 to 100, but the mean speed stays at the reading 1.00. The particles do not hit the wall harder but more often, because the distance they travel from wall to wall becomes shorter."
+        },
+        {
+          "text": "The pressure doubles, because the particles move faster in a cramped space.",
+          "feedback": "The pressure does double, but in the experiment the mean speed stays at the reading 1.00. The speed of the particles depends on the temperature, not on the size of the container. In a smaller container the particles moving at the same speed simply hit the wall more often."
+        },
+        {
+          "text": "The pressure decreases, because there is less wall to hit.",
+          "feedback": "In the experiment the pressure increases from 50 to 100. There is less wall, but there are more collisions per length of wall, because the particles return to the wall more quickly."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 3: why does a warm gas push harder?",
+      "prompt": "Three students explain why the pressure of a gas in a closed container increases when the gas warms up. Whose explanation fits what you see in experiment 1?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aino: The particles expand when they warm up and fill more of the container, so they push on the walls.",
+          "feedback": "In the experiment the size of the particles does not change with temperature, but the pressure still increases. The size of the particles of a real gas does not grow when it warms up either; what changes is their motion."
+        },
+        {
+          "text": "Bea: The particles move faster, so they hit the wall more often and harder.",
+          "correct": true,
+          "feedback": "The results of the experiment support this: there are still 80 particles and their size is the same, but the mean speed increases with the temperature, and the pressure increases along with it."
+        },
+        {
+          "text": "Cem: Heat is a substance that flows into the gas and increases the amount of matter in the container.",
+          "feedback": "In the experiment the number of particles stays at 80 all the time. Heating does not add matter but increases the average kinetic energy of the particles that are already there."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The simulation is a micro model of a gas: 80 particles move in the container and bounce off the walls. Explore freely what temperature and volume do to the particles and the pressure.",
+      "model": "The model is simplified: it is two-dimensional, the particles do not collide with each other, and all the particles have the same speed, determined by the temperature. When the particles move faster, they hit the wall more often and harder. When the container is smaller, they hit the wall more often. In both cases the pressure increases. The measured pressure varies a little around the theoretical value.",
+      "calc": "The pressure is a relative number (100 = $300\\,\\text{K}$ and 1.0 dm³). The *measured* pressure is calculated from the collisions of the particles with the wall during the last 1.5 seconds, so it varies a little; the *theory* is the value calculated by the model. *Speed* changes only the pace of the animation: the pressure is calculated in simulated time, so it does not change the measured value."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the temperature changes",
+      "intro": "Test predictions 1 and 3. The volume is locked at 1.0 dm³, and only the temperature changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at $300\\,\\text{K}$) at at least two temperatures, for example $150\\,\\text{K}$, $300\\,\\text{K}$ and $600\\,\\text{K}$. After adjusting, wait a couple of seconds so that the measured pressure has time to settle to its new value. Compare the ratio of the temperatures in kelvins with the ratio of the pressures.",
+      "initial": {
+        "T": 300,
+        "V": 1
+      },
+      "units": {
+        "T": "K",
+        "V": "dm³"
+      },
+      "locked": [
+        "V"
+      ],
+      "vary": "T",
+      "measure": [
+        {
+          "key": "theta",
+          "label": "θ (°C)"
+        },
+        {
+          "key": "vRel",
+          "label": "v (rel.)"
+        },
+        {
+          "key": "pRel",
+          "label": "p measured"
+        },
+        {
+          "key": "pTheory",
+          "label": "p theory"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Further investigation: only the volume changes",
+      "intro": "Test prediction 2. The temperature is locked at $300\\,\\text{K}$, and only the volume changes. Record the pressure and the mean speed $v$ of the particles (relative to the mean speed at $300\\,\\text{K}$) at at least two volumes, for example 2.0 dm³ and 1.0 dm³. Wait a couple of seconds after adjusting before recording. Does the speed of the particles change? What then increases the pressure?",
+      "initial": {
+        "T": 300,
+        "V": 2
+      },
+      "units": {
+        "T": "K",
+        "V": "dm³"
+      },
+      "locked": [
+        "T"
+      ],
+      "vary": "V",
+      "measure": [
+        {
+          "key": "vRel",
+          "label": "v (rel.)"
+        },
+        {
+          "key": "pRel",
+          "label": "p measured"
+        },
+        {
+          "key": "pTheory",
+          "label": "p theory"
+        }
+      ],
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: temperature, speed and pressure",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Write a short conclusion based on the table of experiment 1. How many times greater did the pressure become when the temperature in kelvins doubled, and by how much did the speed of the particles increase? How does the micro model explain that the pressure increases more than the speed? Why must the ratio of the temperatures be calculated in kelvins?",
+      "model": "When the temperature rose from $300\\,\\text{K}$ to $600\\,\\text{K}$, the measured pressure doubled (about $100 \\to 200$), but the speed of the particles increased only about $1.41$ times. Faster particles hit the wall both more often and harder, so the pressure increases for two reasons and is proportional to the temperature in kelvins. In degrees Celsius the same change is $27\\,{}^\\circ\\text{C} \\to 327\\,{}^\\circ\\text{C}$, more than ten times, but the pressure only doubled, so the pressure follows the temperature in kelvins. The measured pressure of the simulation comes from counting simulated collisions, so it varies a little. The assumption of the model that the speed is determined by the temperature is, however, part of the model and not a measurement result.",
+      "criteria": [
+        "I used numbers to tell how the pressure and the speed changed.",
+        "I explained that the collisions are both more frequent and harder.",
+        "I justified why the ratios are calculated in kelvins.",
+        "I separated the assumptions of the model from the results of the simulation."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the results of the experiments and the micro model. Then return to the opening question: why is a bicycle tyre hard in the sun and soft in the frost, even though the air in it is the same? Use the words temperature, speed of the particles and collisions in your explanation.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "In a rigid closed tank the pressure of a gas is 120 kPa at $20\\,{}^\\circ\\text{C}$. The gas warms up to $40\\,{}^\\circ\\text{C}$. A student reasons: \"The temperature doubles, so the pressure doubles: $p = 2 \\cdot 120\\,\\text{kPa} = 240\\,\\text{kPa}$.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The pressure does not change at all, because the volume of the tank stays the same.",
+          "feedback": "Even at constant volume the pressure increases when the particles move faster. The student was right that the pressure increases; the error is in how much."
+        },
+        {
+          "text": "The ratio of the temperatures must be calculated in kelvins: $313\\,\\text{K} / 293\\,\\text{K} \\approx 1.07$, so the pressure is about 128 kPa.",
+          "correct": true,
+          "feedback": "Correct. The pressure is directly proportional to the temperature in kelvins, not to the Celsius temperature: $p_2 = 120\\,\\text{kPa} \\cdot \\dfrac{313.15\\,\\text{K}}{293.15\\,\\text{K}} \\approx 128\\,\\text{kPa}$. The zero of the Celsius scale is only the freezing point of water."
+        },
+        {
+          "text": "The rise in temperature is added to the pressure: 120 kPa + 20 kPa = 140 kPa.",
+          "feedback": "You cannot add kelvins or degrees Celsius to kilopascals, because they are different quantities. The pressure changes in the same proportion as the temperature in kelvins: by about $7\\,\\%$, to about 128 kPa."
+        },
+        {
+          "text": "There is no error in the reasoning.",
+          "feedback": "Physically the temperature does not double: in kelvins it rises from $293\\,\\text{K}$ to $313\\,\\text{K}$, only about $7\\,\\%$. The pressure increases in the same proportion, to about 128 kPa."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A glass jar is sealed with an airtight lid in a room where the air temperature is $20\\,{}^\\circ\\text{C}$ and the pressure is 101 kPa. The jar is heated in a water bath until the temperature of the air inside it is $80\\,{}^\\circ\\text{C}$. The volume of the jar and the amount of air stay the same. What is the pressure of the air in the jar? Give your answer in kilopascals.",
+      "answer": 122,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "hints": [
+        "Which state variables stay the same and which change? On which scale must the ratio of the temperatures be calculated?",
+        "When the volume and the amount of substance stay the same, the pressure is directly proportional to the temperature in kelvins: $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, so $p_2 = p_1 \\dfrac{T_2}{T_1}$.",
+        "First convert: $T_1 = 293.15\\,\\text{K}$ and $T_2 = 353.15\\,\\text{K}$. Substitute: $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353.15\\,\\text{K}}{293.15\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 404,
+          "feedback": "You calculated the ratio of the temperatures in degrees Celsius, $80/20 = 4$. The pressure is proportional to the temperature in kelvins: the ratio is $353\\,\\text{K} / 293\\,\\text{K} \\approx 1.20$."
+        },
+        {
+          "value": 83.8,
+          "feedback": "The ratio is upside down: the pressure decreased although the air warmed up. In warmer air the particles move faster, so the pressure must increase: $p_2 = p_1 \\cdot T_2/T_1$."
+        }
+      ],
+      "solution": "**Given:** air in a closed jar, $\\theta_1 = 20\\,{}^\\circ\\text{C}$, $p_1 = 101\\,\\text{kPa}$, $\\theta_2 = 80\\,{}^\\circ\\text{C}$; the volume of the jar and the amount of air stay the same\n\n**Find:** pressure of the air $p_2$ in kilopascals\n\n**Principle:** The volume and the amount of air are constant, so the pressure is directly proportional to the temperature in kelvins: the particles of the warmer air move faster and hit the wall more often and harder. The proportionality does not hold for the Celsius temperature.\n\n**Formula:** $\\dfrac{p_2}{p_1} = \\dfrac{T_2}{T_1}$, so\n\n$$p_2 = p_1\\,\\frac{T_2}{T_1}$$\n\n**Conversions:** The temperatures are converted to kelvins: $T_1 = 20 + 273.15 = 293.15\\,\\text{K}$ and $T_2 = 80 + 273.15 = 353.15\\,\\text{K}$. The pressure stays in kilopascals.\n\n**Substitution:** $p_2 = 101\\,\\text{kPa} \\cdot \\dfrac{353.15\\,\\text{K}}{293.15\\,\\text{K}} = 121.67\\,\\text{kPa}$\n\n**Answer:** $122\\,\\text{kPa}$, three significant figures like the pressure $101\\,\\text{kPa}$.\n\n**Reasonableness:** The temperature in kelvins rises by $60\\,\\text{K}$, or about $\\dfrac{60}{293} \\approx 20\\,\\%$, so the pressure rises by about $0.20 \\cdot 101\\,\\text{kPa} \\approx 21\\,\\text{kPa}$, and $101 + 21 \\approx 122\\,\\text{kPa}$. The temperature rises, so the pressure must increase. The ratio of Celsius temperatures $\\tfrac{80}{20} = 4$ would give an unreasonable $404\\,\\text{kPa}$. The pressure in the jar is greater than the outdoor air pressure of $101\\,\\text{kPa}$, so the lid bulges outwards.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more at three levels. The Level 1 exercises are scale conversions, and Level 3 requires you to use proportionality in kelvins."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The temperature of the air is $0\\,{}^\\circ\\text{C}$. What does the micro model say about the particles of the air?",
+      "choices": [
+        {
+          "text": "The particles have stopped, because the temperature is zero.",
+          "feedback": "$0\\,{}^\\circ\\text{C}$ is only the freezing point of water. In kelvins it is $273\\,\\text{K}$, so the particles are moving. The motion of the particles is at its smallest only at absolute zero, $0\\,\\text{K}$ = $-273.15\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The particles move, and their average kinetic energy is proportional to the temperature in kelvins, $273\\,\\text{K}$.",
+          "correct": true,
+          "feedback": "Correct. $0\\,{}^\\circ\\text{C}$ = $273.15\\,\\text{K}$ is far from absolute zero, and the average kinetic energy of the particles is proportional to the temperature in kelvins."
+        },
+        {
+          "text": "The particles have frozen stuck to each other, like water in ice.",
+          "feedback": "Water freezes at $0\\,{}^\\circ\\text{C}$, but air does not. For example, nitrogen, the main part of air, stays a gas down to about $-196\\,{}^\\circ\\text{C}$, and its particles move freely also at $0\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "The particles move only if the gas is heated.",
+          "feedback": "The particles of a gas move all the time, also without heating. Heating only increases their average kinetic energy."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Increase in temperature",
+      "prompt": "The temperature of the air rises from $10\\,{}^\\circ\\text{C}$ to $20\\,{}^\\circ\\text{C}$. What happens to the average kinetic energy of the particles?",
+      "choices": [
+        {
+          "text": "It doubles, because the numerical value of the temperature doubles.",
+          "feedback": "The zero of the Celsius scale has been chosen to be the freezing point of water, not absolute zero. The average kinetic energy of the particles is proportional to the temperature in kelvins, and in kelvins the temperature rises only from $283\\,\\text{K}$ to $293\\,\\text{K}$."
+        },
+        {
+          "text": "It increases by about $3.5\\,\\%$.",
+          "correct": true,
+          "feedback": "Correct. The average kinetic energy is proportional to the temperature in kelvins, so its ratio is $\\dfrac{293.15\\,\\text{K}}{283.15\\,\\text{K}} \\approx 1.035$, which means an increase of about $3.5\\,\\%$."
+        },
+        {
+          "text": "It increases by $10\\,\\%$, because the temperature rises by ten degrees.",
+          "feedback": "A temperature change of $10\\,\\text{K}$ is not a percentage as such. The relative increase is found by comparing the temperatures in kelvins: $10\\,\\text{K}/283.15\\,\\text{K} \\approx 3.5\\,\\%$."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Table and extrapolation",
+      "prompt": "The table shows the theoretical values of the simulation for the pressure (a relative number) when the volume is 1.0 dm³. They are values of the model, not measurements.\n\n| $\\theta$ (°C) | −123 | 27 | 177 |\n|---|---|---|---|\n| $p$ (rel.) | 50 | 100 | 150 |\n\nThe points are on the same line. Continue the line and find the temperature at which the pressure would be zero. Give your answer in degrees Celsius.",
+      "answer": -273,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "How much does the pressure change when the temperature rises by one degree Celsius?",
+        "The slope is $k = \\dfrac{\\Delta p}{\\Delta \\theta}$, and the pressure is zero when it has decreased from 100 to zero: $\\theta_0 = 27\\,\\text{°C} - \\dfrac{100}{k}$.",
+        "$k = \\dfrac{150 - 50}{177\\,\\text{°C} - (-123\\,\\text{°C})} = \\dfrac{100}{300\\,\\text{°C}}$, so a drop of 100 units needs $300\\,{}^\\circ\\text{C}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0,
+          "feedback": "$0\\,{}^\\circ\\text{C}$ is the freezing point of water, not the temperature of zero pressure: in the table the pressure is still 50 at $-123\\,{}^\\circ\\text{C}$. Continue the line to the left until the pressure drops to zero."
+        },
+        {
+          "value": -123,
+          "feedback": "$-123\\,{}^\\circ\\text{C}$ is the lowest temperature in the table, but the pressure there is still 50. The pressure drops 50 units for every $150\\,{}^\\circ\\text{C}$ of cooling, so you reach zero only $150\\,{}^\\circ\\text{C}$ lower."
+        }
+      ],
+      "solution": "**Given:** points $(-123\\,{}^\\circ\\text{C};\\ 50)$, $(27\\,{}^\\circ\\text{C};\\ 100)$ and $(177\\,{}^\\circ\\text{C};\\ 150)$ on the same line; $p$ is a relative number without a unit\n\n**Find:** temperature $\\theta_0$ at which $p = 0$, in degrees Celsius\n\n**Principle:** The points are on the same line, so the pressure changes steadily with the temperature. When the line is continued downwards outside the measured range, that is, extrapolated, the zero pressure is found where the line crosses the temperature axis.\n\n**Reading the graph:** Read two points from the table, for example the end points $(-123\\,{}^\\circ\\text{C};\\ 50)$ and $(177\\,{}^\\circ\\text{C};\\ 150)$. The third point $(27\\,{}^\\circ\\text{C};\\ 100)$ is on the same line, so the model is linear. Continue the line to the left until $p = 0$.\n\n**Formula:** $k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1}$ and line $p = p_a + k(\\theta - \\theta_a)$ through the point $(\\theta_a,\\, p_a) = (27\\,{}^\\circ\\text{C};\\ 100)$. When $p = 0$:\n\n$$\\theta_0 = \\theta_a - \\frac{p_a}{k}$$\n\n**Conversions:** No conversions are needed: the temperature difference $\\theta_2 - \\theta_1$ is the same in degrees Celsius and in kelvins, and the result is wanted in degrees Celsius. The unit of the slope is $\\tfrac{1}{{}^\\circ\\text{C}}$.\n\n**Substitution:** $k = \\dfrac{150 - 50}{(177 - (-123))\\,{}^\\circ\\text{C}} = \\dfrac{100}{300\\,{}^\\circ\\text{C}} = \\dfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}$, and $\\theta_0 = 27\\,{}^\\circ\\text{C} - \\dfrac{100}{\\tfrac{1}{3}\\,\\tfrac{1}{{}^\\circ\\text{C}}} = 27\\,{}^\\circ\\text{C} - 300\\,{}^\\circ\\text{C} = -273\\,{}^\\circ\\text{C}$\n\n**Answer:** $-273\\,{}^\\circ\\text{C}$, three significant figures like the temperatures in the table.\n\n**Reasonableness:** The pressure drops $50$ units for every $150\\,{}^\\circ\\text{C}$, so from the point $(-123\\,{}^\\circ\\text{C};\\ 50)$ it is another $150\\,{}^\\circ\\text{C}$ to zero: $-123 - 150 = -273\\,{}^\\circ\\text{C}$. The result is absolute zero, $-273.15\\,{}^\\circ\\text{C}$ or $0\\,\\text{K}$, because in the model the pressure is proportional to the temperature in kelvins."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain",
+      "prompt": "Use the micro model to explain why ratios of temperatures are compared in kelvins and not in degrees Celsius, and why a temperature in kelvins cannot be negative.",
+      "criteria": [
+        "I say that the temperature of a gas tells you the average kinetic energy of the particles.",
+        "I say that the zero of the Kelvin scale is absolute zero, where the kinetic energy is at its smallest, but the zero of the Celsius scale is only the freezing point of water.",
+        "I justify why the ratio is calculated in kelvins: kinetic energy and pressure are proportional to the temperature in kelvins.",
+        "I use an example or numbers correctly, for example $10\\,{}^\\circ\\text{C}$ → $20\\,{}^\\circ\\text{C}$ is $283\\,\\text{K}$ → $293\\,\\text{K}$ in kelvins."
+      ],
+      "model": "In the micro model of a gas, temperature tells you the average kinetic energy of the particles, and in a dilute gas the kinetic energy is directly proportional to the temperature in kelvins. The zero of the Kelvin scale is absolute zero, where the kinetic energy of the particles is at its smallest; nothing can be colder, so there are no negative temperatures in kelvins. The zero of the Celsius scale is only the freezing point of water, and the particles are nowhere near at rest there. This is why the ratio is calculated in kelvins: when the temperature rises from $10\\,{}^\\circ\\text{C}$ to $20\\,{}^\\circ\\text{C}$, it rises from $283\\,\\text{K}$ to $293\\,\\text{K}$, only about $3.5\\,\\%$, and the average kinetic energy of the particles does not double.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, one quick question. Answer it yourself first, and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "fy3-3",
+  "course": "FY3",
+  "title": "Termodynaaminen systeemi, tilanmuuttujat ja lämpötila",
+  "goals": [
+    "LOPS FY3: termodynaaminen systeemi ja tilanmuuttujat",
+    "LOPS FY3: lämpötila",
+    "Täsmennys: kaasusysteemin lämpötila, paine ja tilavuus liittyvät toisiinsa. Lisäksi opit lämpötilan mikromallin, kelvinasteikon ja absoluuttisen nollapisteen."
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "systeemi",
+    "tilanmuuttuja",
+    "paine",
+    "lämpötila",
+    "kelvin",
+    "absoluuttinen nollapiste"
+  ],
+  "sim": true,
+  "image": false
+}

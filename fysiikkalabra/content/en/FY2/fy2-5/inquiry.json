@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "contribution": "Chemical energy gets a formula: the heat of combustion $H$ of a fuel tells you the energy released per kilogram, and $E = Hm$ gives it for the whole mass. The energy content of food is given in the same unit, but it describes the energy the body can use.",
+  "learn": [
+    "You can calculate the energy released from a fuel using its heat of combustion and mass.",
+    "You can compare fuels and food by energy content and explain how food energy differs from the heat of combustion.",
+    "You can tell released energy apart from useful energy using efficiency."
+  ],
+  "prior": [
+    "Energy is neither created nor destroyed but transformed from one form to another (chapter *Forms of energy and conservation of energy*)",
+    "The unit of energy is the joule, and $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ (chapter *Energy transformations and the joule*)",
+    "Efficiency tells you what share of the energy taken in is useful (chapter *Efficiency*)",
+    "Power is energy per unit of time (chapter *Power P = ΔE/Δt*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "At a petrol station a car is filled with petrol, and in a cottage fireplace firewood is burnt. On the side of a chocolate bar it says \"energy $2200\\,\\text{kJ}$ per hundred grams\". In all three, energy is stored in the substance, and it is released when the substance burns or when the body uses it.",
+      "question": "Is the same amount of energy released from a kilogram of different substances, and how can you calculate the energy released?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: energy transformations",
+      "optional": true,
+      "prompt": "Firewood is burning in a fireplace and the room warms up. Which description of the energy transformation is correct?",
+      "choices": [
+        {
+          "text": "The chemical energy of the wood is transformed into heat and light. Energy is neither created nor lost.",
+          "feedback": "Correct. Chemical energy is stored in the structure of the wood, and when it burns it is transformed into heat and light (chapter *Energy transformations and the joule*). Today we calculate how much energy is released.",
+          "correct": true
+        },
+        {
+          "text": "The fire creates energy, because the fireplace is warm although the wood is cold.",
+          "feedback": "Energy does not appear out of nothing. The energy of the heat comes from the chemical energy of the wood, which is transformed into another form (chapter *Forms of energy and conservation of energy*)."
+        },
+        {
+          "text": "The kinetic energy of the wood is transformed into heat when the wood burns.",
+          "feedback": "The wood does not move, so it has no kinetic energy. In burning, the chemical energy of the substance is transformed."
+        },
+        {
+          "text": "Energy is lost in burning, when the wood turns into ash and smoke.",
+          "feedback": "Energy is not lost: the total energy is conserved (chapter *Forms of energy and conservation of energy*). Chemical energy is transformed into heat and light, and some of it is carried into the surroundings by the flue gases."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: petrol and firewood",
+      "justify": true,
+      "prompt": "You burn a kilogram of petrol and a kilogram of air-dried firewood. Which one releases more energy, and how much more?",
+      "choices": [
+        {
+          "text": "The same amount of energy is released from both, because the mass is the same.",
+          "feedback": "Measurements disprove this: about $43\\,\\text{MJ}$ is released from petrol and about $15\\,\\text{MJ}$ from air-dried wood. The same mass does not mean the same energy, because substances contain different amounts of chemical energy for their mass."
+        },
+        {
+          "text": "More is released from the wood, because wood burns for longer.",
+          "feedback": "The length of burning does not tell you the amount of energy released. According to measurements, a kilogram of wood releases about $15\\,\\text{MJ}$ and a kilogram of petrol about $43\\,\\text{MJ}$, so wood is weaker here."
+        },
+        {
+          "text": "About three times as much energy is released from the petrol.",
+          "feedback": "Correct. The heat of combustion of petrol is about $43\\,\\text{MJ/kg}$ and that of air-dried wood about $15\\,\\text{MJ/kg}$, and $43 : 15 \\approx 2.9$. The values are rounded typical figures (sources below the table in the Formula section of the chapter).",
+          "correct": true
+        },
+        {
+          "text": "About a hundred times as much energy is released from the petrol.",
+          "feedback": "The difference is much smaller: the heats of combustion of the most common fuels are all of the same order of magnitude, about $10$–$50\\,\\text{MJ/kg}$. The ratio of petrol to wood is only $43 : 15 \\approx 2.9$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: chocolate and firewood",
+      "justify": true,
+      "prompt": "The packaging of a chocolate bar says: energy $2200\\,\\text{kJ}$ per hundred grams. A hundred grams of air-dried firewood is burnt. Which one contains more chemical energy?",
+      "choices": [
+        {
+          "text": "The firewood, because it is a fuel and chocolate is only food.",
+          "feedback": "Food is also a store of chemical energy. A hundred grams of wood releases about $15\\,\\text{MJ/kg} \\cdot 0.100\\,\\text{kg} = 1.5\\,\\text{MJ} = 1500\\,\\text{kJ}$ when it burns, which is less than the $2200\\,\\text{kJ}$ of the chocolate."
+        },
+        {
+          "text": "The chocolate.",
+          "feedback": "Correct. The $2200\\,\\text{kJ}$ per hundred grams of chocolate is $22\\,\\text{MJ/kg}$, and that is more than the $1500\\,\\text{kJ}$ per hundred grams, or $15\\,\\text{MJ/kg}$, of wood. Both numbers are energy per unit of mass, but the label gives the energy the body can use. If chocolate were burned, slightly more energy would be released, so chocolate wins the comparison in that case too.",
+          "correct": true
+        },
+        {
+          "text": "They cannot be compared, because one is food and the other is a fuel.",
+          "feedback": "In both, the energy is chemical, and its amount is measured in joules. When you take a hundred grams of each, the energies can be compared directly: $2200\\,\\text{kJ}$ in chocolate, $1500\\,\\text{kJ}$ in wood."
+        }
+      ]
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Heats of combustion of fuels",
+      "source": "statistics",
+      "source_note": "Firewood and milled peat: Statistics Finland, Fuel Classification (2017); natural gas, coal and diesel: IPCC 2006 Guidelines, Volume 2, table of default heating values (2006); petrol: typical value for Finnish petrol containing ethanol (for pure petrol IPCC 2006 gives $44.3\\,\\text{MJ/kg}$); wood pellets: typical value. Net heats of combustion, rounded",
+      "text": "The table gives the heats of combustion $H$ of common fuels. The heat of combustion is the energy released from one kilogram of fuel.\n\n| Fuel | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| natural gas | 48 |\n| petrol | 43 |\n| diesel | 43 |\n| coal | 26 |\n| wood pellets | 17 |\n| firewood (air-dried) | 15 |\n| peat (milled peat) | 10 |\n",
+      "question": {
+        "type": "choice",
+        "prompt": "Which of the following statements is true according to the table?",
+        "choices": [
+          {
+            "text": "Gas and liquid fuels release more energy per kilogram than wood and peat.",
+            "feedback": "Correct. The heats of combustion of natural gas, petrol and diesel are $43$–$48\\,\\text{MJ/kg}$, and those of wood and peat only $10$–$15\\,\\text{MJ/kg}$.",
+            "correct": true
+          },
+          {
+            "text": "The same energy per kilogram is released from all fuels.",
+            "feedback": "The table disproves this: the heats of combustion vary from $10$ to $48\\,\\text{MJ/kg}$. Not every burning substance contains the same amount of energy."
+          },
+          {
+            "text": "Peat is the most effective fuel, because the largest amount of it is needed.",
+            "feedback": "The fact that a lot of peat is needed points to a small heat of combustion. A small $H$ means that little energy is released per kilogram, and more mass is needed to get the same energy."
+          },
+          {
+            "text": "The smaller the heat of combustion, the less fuel is needed.",
+            "feedback": "On the contrary: a small heat of combustion means that you get little energy from a kilogram, so a lot of fuel is needed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "rakenna",
+      "stage": "tutki",
+      "type": "interpret",
+      "optional": true,
+      "title": "How does energy depend on mass?",
+      "source": "model",
+      "source_note": "example: values calculated from burning air-dried firewood with a heat of combustion of $15\\,\\text{MJ/kg}$",
+      "text": "Different amounts of air-dried firewood are burnt. The table gives the mass $m$ of the wood burnt and the energy $E$ released from it.\n\n| $m$ ($\\text{kg}$) | $E$ ($\\text{MJ}$) |\n|---|---|\n| 1.0 | 15 |\n| 2.0 | 30 |\n| 4.0 | 60 |\n| 8.0 | 120 |\n",
+      "question": {
+        "type": "choice",
+        "prompt": "What can you conclude from the table?",
+        "choices": [
+          {
+            "text": "The energy released is directly proportional to the mass: $15\\,\\text{MJ}$ is released for each kilogram. This number is the heat of combustion of wood.",
+            "feedback": "Correct. When the mass doubles, the energy doubles, and $E : m = 15\\,\\text{MJ/kg}$ in every row. This is why the energy is calculated by multiplying the heat of combustion by the mass: $E = Hm$.",
+            "correct": true
+          },
+          {
+            "text": "Energy grows faster than mass, because a large pile burns hotter.",
+            "feedback": "In the table, double the mass gives double the energy, not more. The heat of combustion tells you the energy per kilogram, and it stays the same even if the pile is larger."
+          },
+          {
+            "text": "Energy does not depend on mass, because wood is always the same wood.",
+            "feedback": "It is the same wood in different amounts, and the energy released grows with the mass. Only the energy per kilogram is constant."
+          },
+          {
+            "text": "Four times the mass gives eight times the energy.",
+            "feedback": "Check the rows: $1.0\\,\\text{kg}$ gives $15\\,\\text{MJ}$ and $4.0\\,\\text{kg}$ gives $60\\,\\text{MJ}$, so four times the mass gives four times the energy."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ruoka",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "A package label converted to MJ/kg",
+      "source": "example",
+      "source_note": "example label, not the data of a real product",
+      "text": "The packaging of a chocolate bar says:\n\n| Nutritional value | per 100 g |\n|---|---|\n| energy | $2200\\,\\text{kJ}$ |\n\nWhen you convert the energy to megajoules and the mass to kilograms, the label gives the energy content $e$ of the chocolate in $\\text{MJ/kg}$. It is given in the same unit as the heat of combustion, but it describes the energy the body can use.\n",
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the energy content $e$ of the chocolate in $\\text{MJ/kg}$?",
+        "answer": 22,
+        "unit": "MJ/kg",
+        "tolerance": 0.02,
+        "hints": [
+          "How many megajoules is $2200\\,\\text{kJ}$ and how many kilograms is $100\\,\\text{g}$?",
+          "$2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.",
+          "The energy content is energy divided by mass: $e = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2200,
+            "feedback": "You have not converted the units: $\\text{kJ}$ is a thousandth of a megajoule and $100\\,\\text{g}$ is a tenth of a kilogram."
+          },
+          {
+            "value": 0.022,
+            "feedback": "You divided the energy in megajoules by the number $100$, that is by grams, although the mass must be in kilograms: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$."
+          }
+        ],
+        "solution": "**Given:** energy $2200\\,\\text{kJ}$ per mass $100\\,\\text{g}$\n\n**Find:** energy content $e$ in $\\text{MJ/kg}$\n\n**Principle:** The energy content is the energy per kilogram, and the label gives the energy the body can use for a hundred grams. So the label is converted to megajoules per kilogram, in the same way as a heat of combustion is given.\n\n**Formula:** $e = \\dfrac{E}{m}$\n\n**Conversions:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$.\n\n**Substitution:** $e = 2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Answer:** $22\\,\\text{MJ/kg}$, two significant figures, as in the number $2200\\,\\text{kJ}$.\n\n**Reasonableness:** The heat of combustion of firewood is $15\\,\\text{MJ/kg}$ and that of petrol $43\\,\\text{MJ/kg}$. The energy content of chocolate lies between them, which is a believable result: chocolate contains a lot of fat and sugar. The numbers are not quite the same quantity, but they are fine for comparing orders of magnitude."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does the heat of combustion tell you?",
+      "prompt": "Based on the tables and the package label, write: what does the heat of combustion tell you about a fuel, and how is it used to calculate the energy released from a mass? How does the label on food packaging relate to this?",
+      "model": "The heat of combustion $H$ tells you how much energy is released from one kilogram of fuel, and it is measured in $\\text{MJ/kg}$. In the table the heat of combustion of petrol is $43\\,\\text{MJ/kg}$ and that of air-dried wood $15\\,\\text{MJ/kg}$, so burning the same mass releases different amounts of energy. The energy is directly proportional to the mass, so the energy released is found by multiplying the heat of combustion by the mass: $E = Hm$, when the mass is in kilograms. The label on food packaging gives the energy for a hundred grams. When it is converted to megajoules per kilogram, you get the energy content of the food, for example $22\\,\\text{MJ/kg}$ for chocolate. It is given in the same unit as the heat of combustion, but it describes the energy the body can use, whereas the heat of combustion describes the energy released in burning.",
+      "criteria": [
+        "I said that the heat of combustion is energy per kilogram.",
+        "I wrote that the energy is found by multiplying the heat of combustion by the mass.",
+        "I mentioned a number from a table as an example.",
+        "I explained that the label on food packaging can be converted to $\\text{MJ/kg}$, but that it describes the energy the body can use and not the energy released in burning."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Go back to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the tables and the equation $E = Hm$. Then go back to the question at the start: is the same amount of energy released from a kilogram of different substances? What does the $\\text{kJ}$ figure on a package label tell you?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates how much energy is released when $250\\,\\text{g}$ of air-dried firewood ($H = 15\\,\\text{MJ/kg}$) is burnt:\n\n$$\\begin{aligned} E &= Hm \\\\ &= 15\\,\\text{MJ/kg} \\cdot 250 \\\\ &= 3750\\,\\text{MJ} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The mass has not been converted to kilograms: $250\\,\\text{g} = 250 \\cdot (1 : 1000)\\,\\text{kg} = 0.250\\,\\text{kg}$, so $E = 3.75\\,\\text{MJ}$.",
+          "feedback": "Correct. The heat of combustion is energy per kilogram, so the mass must be in kilograms. You could have noticed that the result was wrong: $3750\\,\\text{MJ}$ would be the energy of $250\\,\\text{kg}$ of wood, and $250\\,\\text{g}$ is a thousandth of that.",
+          "correct": true
+        },
+        {
+          "text": "The formula is wrong: the heat of combustion should be divided by the mass.",
+          "feedback": "The formula $E = Hm$ is correct: the heat of combustion is energy per unit of mass, so the energy is found by multiplying. The error is in the unit."
+        },
+        {
+          "text": "There is no error in the calculation, because the heat of combustion is in megajoules and the mass can then be written in grams.",
+          "feedback": "There is an error in the calculation: the heat of combustion is energy per kilogram, so the mass must be given in kilograms. A quarter of a kilogram of wood does not release thousands of megajoules, but only a fraction of the $15\\,\\text{MJ}$ of one kilogram."
+        },
+        {
+          "text": "The result should be converted to kilowatt-hours.",
+          "feedback": "Changing the unit does not fix the error: in megajoules or in kilowatt-hours, the number would still be a thousand times too large. First the mass must be converted to kilograms."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A camping stove gas cartridge contains $0.230\\,\\text{kg}$ of liquefied petroleum gas with a heat of combustion of about $46\\,\\text{MJ/kg}$. The efficiency of the stove is $60\\,\\%$. How much useful energy is obtained when all the gas in the cartridge is burnt? Give the answer in megajoules.",
+      "answer": 6.3,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "hints": [
+        "How much energy is released from the gas when it burns? Which law tells you?",
+        "The energy released is $E_\\text{in} = Hm$. The efficiency is $\\eta = \\dfrac{E_\\text{useful}}{E_\\text{in}}$ (chapter *Efficiency*), so $E_\\text{useful} = \\eta\\, E_\\text{in}$.",
+        "$E_\\text{in} = 46\\,\\text{MJ/kg} \\cdot 0.230\\,\\text{kg}$ and $E_\\text{useful} = 0.60 \\cdot E_\\text{in}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10.6,
+          "feedback": "You calculated only the energy released, $Hm$. Only $60\\,\\%$ of it is useful, because part of the heat goes into the surroundings."
+        },
+        {
+          "value": 4.2,
+          "feedback": "You calculated the wasted energy, that is $40\\,\\%$ of the energy released. The useful energy is $60\\,\\%$, that is $0.60 \\cdot E_\\text{in}$."
+        },
+        {
+          "value": 6350,
+          "feedback": "The mass was entered in grams. The heat of combustion is energy per kilogram, so the mass is $0.230\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** mass of the liquefied petroleum gas $m = 0.230\\,\\text{kg}$, heat of combustion $H = 46\\,\\text{MJ/kg}$ and efficiency of the stove $\\eta = 60\\,\\% = 0.60$\n\n**Find:** useful energy $E_\\text{useful}$ in megajoules\n\n**Principle:** When the gas burns, its chemical energy is released according to the heat of combustion. Of the energy released, only the share given by the efficiency is useful (chapter *Efficiency*), because part of the heat goes into the surroundings.\n\n**Formula:** $E_\\text{in} = Hm$ and $\\eta = \\dfrac{E_\\text{useful}}{E_\\text{in}}$, so $E_\\text{useful} = \\eta\\, E_\\text{in}$\n\n**Conversions:** Not needed: the mass is in kilograms and $60\\,\\% = 0.60$.\n\n**Substitution:** $E_\\text{in} = 46\\,\\text{MJ/kg} \\cdot 0.230\\,\\text{kg} = 10.58\\,\\text{MJ}$ and $E_\\text{useful} = 0.60 \\cdot 10.58\\,\\text{MJ} = 6.348\\,\\text{MJ}$\n\n**Answer:** $6.3\\,\\text{MJ}$, two significant figures like the data $46\\,\\text{MJ/kg}$ and $60\\,\\%$.\n\n**Reasonableness:** The energy released, $10.6\\,\\text{MJ}$, is of the right order of magnitude, because a quarter of a kilogram of fuel gives about $0.25 \\cdot 46\\,\\text{MJ} \\approx 11\\,\\text{MJ}$. The useful energy is smaller than that, about six tenths, as the efficiency of $60\\,\\%$ requires."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises"
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "What does the heat of combustion $H$ of a fuel tell you?",
+      "choices": [
+        {
+          "text": "How much energy is released from one kilogram of fuel when it burns.",
+          "feedback": "Correct. The unit $\\text{MJ/kg}$ tells you the energy per unit of mass, and the total energy is found by multiplying it by the mass: $E = Hm$.",
+          "correct": true
+        },
+        {
+          "text": "How hot the fuel burns, that is the temperature of its flame.",
+          "feedback": "The heat of combustion is not a temperature but energy per unit of mass. The temperature of the flame and the energy released are different things."
+        },
+        {
+          "text": "How much energy there is in the fuel altogether.",
+          "feedback": "The total energy also depends on the mass. The heat of combustion is the energy per kilogram, and the total energy is $E = Hm$."
+        },
+        {
+          "text": "How fast the fuel burns.",
+          "feedback": "The burning rate is related to power (chapter *Power P = ΔE/Δt*), not to the heat of combustion. The heat of combustion tells you how much energy is released, not how fast."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Unit conversion and energy",
+      "prompt": "The heat of combustion of petrol is $43\\,\\text{MJ/kg}$. How many kilowatt-hours of energy are released when $1.0\\,\\text{kg}$ of petrol is burnt? Give the answer in kilowatt-hours.",
+      "answer": 12,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the energy in megajoules. Then convert it to kilowatt-hours.",
+        "$E = Hm$ and $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ (chapter *Energy transformations and the joule*).",
+        "$E = 43\\,\\text{MJ/kg} \\cdot 1.0\\,\\text{kg} = 43\\,\\text{MJ}$. Since $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$, we have $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3.6$. Substitute this."
+      ],
+      "mistakes": [
+        {
+          "value": 43,
+          "feedback": "You calculated the energy in megajoules but did not convert it to kilowatt-hours. Since $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$, one megajoule is smaller than a kilowatt-hour, $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3.6$."
+        },
+        {
+          "value": 155,
+          "feedback": "You multiplied by $3.6$, but one kilowatt-hour is a large amount of energy, $3.6\\,\\text{MJ}$, so there are fewer kilowatt-hours than megajoules."
+        }
+      ],
+      "solution": "**Given:** heat of combustion of petrol $H = 43\\,\\text{MJ/kg}$ and mass $m = 1.0\\,\\text{kg}$\n\n**Find:** energy released $E$ in kilowatt-hours\n\n**Principle:** The chemical energy of petrol is released when it burns, and the heat of combustion gives the energy per kilogram. First the energy is calculated in megajoules, then it is converted to kilowatt-hours.\n\n**Formula:** $E = Hm$\n\n**Conversions:** $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3.6\\,\\text{MJ}$, so $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3.6$.\n\n**Substitution:** $E = 43\\,\\text{MJ/kg} \\cdot 1.0\\,\\text{kg} = 43\\,\\text{MJ} = 43 \\cdot (1\\,\\text{kWh} : 3.6) = 11.94\\,\\text{kWh}$\n\n**Answer:** $12\\,\\text{kWh}$, two significant figures like the data $43\\,\\text{MJ/kg}$ and $1.0\\,\\text{kg}$.\n\n**Reasonableness:** The kilowatt-hour is a large unit, so the number is smaller than in megajoules. Estimate: $3.6 \\cdot 12 = 43.2$, which is $43\\,\\text{MJ}$, so $12\\,\\text{kWh}$ is correct."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "optional": true,
+      "prompt": "A ten-kilogram sack of wood pellets and a ten-kilogram can of petrol are burnt. Which releases more energy, and how much? Also explain why released energy is not the same as the energy obtained as useful energy.",
+      "model": "The heat of combustion of pellets is about $17\\,\\text{MJ/kg}$ and that of petrol about $43\\,\\text{MJ/kg}$. By the law $E = Hm$, the pellets release $17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 170\\,\\text{MJ}$ and the petrol $43\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 430\\,\\text{MJ}$, so about $2.5$ times as much energy is released from the petrol. Only part of the energy released is transformed into a useful form, because part of the heat leaves with the flue gases and the surroundings in the boiler or the engine. The share that is useful is calculated with efficiency.",
+      "criteria": [
+        "I use the law $E = Hm$ and the mass in kilograms.",
+        "I say that more energy is released from petrol because its heat of combustion is greater.",
+        "I explain that part of the energy released is wasted and is not useful.",
+        "I mention efficiency."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

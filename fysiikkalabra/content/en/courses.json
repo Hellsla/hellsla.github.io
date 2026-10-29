@@ -1,0 +1,201 @@
+{
+  "FY1": {
+    "title": "Physics as a natural science",
+    "tavoitteet": [
+      "becomes familiar with physics as a systematic science based on experiments",
+      "becomes familiar with the scales of matter and of the universe",
+      "becomes familiar with the methods used to gather information in physics",
+      "can plan and carry out simple scientific experiments",
+      "gains experiences that awaken and deepen an interest in physics and in studying it"
+    ],
+    "lessons": {
+      "fy1-1": "Physics as a science and the scales of the universe",
+      "fy1-2": "Quantities, units and the SI system",
+      "fy1-3": "Measuring and the reliability of a measurement",
+      "fy1-4": "Graphs and fitting a straight line",
+      "fy1-5": "Uniform motion: s = vt",
+      "fy1-6": "Acceleration of free fall: v = gt",
+      "fy1-7": "Density: m = ρV",
+      "fy1-8": "Your own experimental investigation: planning, carrying out and reporting"
+    }
+  },
+  "FY2": {
+    "title": "Physics, environment and society",
+    "tavoitteet": [
+      "becomes familiar with energy as a central concept of physics",
+      "knows different forms of energy and ways of producing energy",
+      "can compare the orders of magnitude of different ways of producing energy and their environmental effects",
+      "gains the skills to take part in discussion and decision-making about the environment and technology from the point of view of a sustainable energy economy"
+    ],
+    "lessons": {
+      "fy2-1": "Forms of energy and conservation of energy",
+      "fy2-2": "Energy transformations and the joule",
+      "fy2-3": "Power P = ΔE/Δt",
+      "fy2-4": "Efficiency",
+      "fy2-5": "Fuels and heat of combustion E = Hm",
+      "fy2-6": "Ways of producing energy and how they compare",
+      "fy2-7": "Transferring energy: electricity and heat",
+      "fy2-8": "Energy production, the environment and climate change"
+    }
+  },
+  "FY3": {
+    "title": "Energy and heat",
+    "tavoitteet": [
+      "deepens their understanding of energy as a central concept of physics",
+      "can investigate phenomena related to the thermodynamic state of matter and to changes of state",
+      "can apply the concepts and models of thermodynamics when examining energy production solutions and building a sustainable future",
+      "recognises the importance of energy balance and heat transfer in climate change"
+    ],
+    "lessons": {
+      "fy3-1": "Force as a measure of interaction and weight G = mg",
+      "fy3-2": "Work and energy",
+      "fy3-3": "Thermodynamic system, state variables and temperature",
+      "fy3-13": "Determining absolute zero",
+      "fy3-4": "Pressure and hydrostatic pressure",
+      "fy3-5": "Internal energy, heat and conservation of energy",
+      "fy3-6": "Heating and cooling of a substance: Q = cmΔT",
+      "fy3-7": "Changes of state",
+      "fy3-14": "Thermal balance during a change of state",
+      "fy3-8": "Thermal expansion",
+      "fy3-9": "Changes of state of a gas and Boyle's law",
+      "fy3-10": "Equation of state of an ideal gas pV = nRT",
+      "fy3-11": "Work done by a gas and the heat engine",
+      "fy3-15": "Energy production and the efficiency of power plants",
+      "fy3-12": "Heat transfer, energy balance and climate change",
+      "fy3-16": "Applied lesson: heat phenomena in everyday life"
+    }
+  },
+  "FY4": {
+    "title": "Force and motion",
+    "tavoitteet": [
+      "can investigate phenomena related to force and motion experimentally",
+      "can produce and analyse graphs of measurement data",
+      "understands the importance of conservation laws in physics",
+      "knows safety aspects related to force and motion"
+    ],
+    "lessons": {
+      "fy4-1": "Position, velocity and uniform motion as graphs",
+      "fy4-2": "Acceleration and uniformly accelerated motion",
+      "fy4-12": "Motion of two bodies: meeting and overtaking",
+      "fy4-3": "Interaction and force: Newton's first and third laws",
+      "fy4-4": "Newton's second law",
+      "fy4-5": "Free-body diagrams and the combined effect of forces",
+      "fy4-13": "Equation of motion for connected bodies",
+      "fy4-6": "Weight, friction and the inclined plane",
+      "fy4-14": "Air resistance and falling through air",
+      "fy4-7": "Kinetic energy, potential energy and mechanical energy",
+      "fy4-8": "Conservation of mechanical energy and the work–energy principle",
+      "fy4-15": "Hydro and wind power as energy converters",
+      "fy4-9": "Momentum and impulse",
+      "fy4-10": "Conservation of momentum and one-dimensional collisions",
+      "fy4-11": "Road safety: braking, seat belts and airbags",
+      "fy4-16": "Applied lesson: lift, parachute and sledding hill"
+    }
+  },
+  "FY5": {
+    "title": "Periodic motion and waves",
+    "tavoitteet": [
+      "can model planetary motion as circular motion",
+      "becomes familiar with the basics of oscillation and wave motion by investigating mechanical oscillation and sound",
+      "can describe periodic motion with physical and mathematical concepts",
+      "can model mechanical oscillation and sound as periodic motion"
+    ],
+    "lessons": {
+      "fy5-1": "Moment and turning effect",
+      "fy5-2": "Equilibrium of rotation",
+      "fy5-3": "Uniform circular motion: angular speed and speed along the path",
+      "fy5-4": "Normal acceleration and centripetal force",
+      "fy5-5": "The law of gravitation and planetary motion",
+      "fy5-6": "Periodic motion: period, frequency and amplitude",
+      "fy5-7": "Harmonic force and oscillation",
+      "fy5-8": "Potential energy of a harmonic force",
+      "fy5-9": "Mechanical waves: production, propagation and reflection",
+      "fy5-10": "Diffraction and interference",
+      "fy5-11": "Standing waves",
+      "fy5-12": "Sound as wave motion: properties and propagation",
+      "fy5-14": "Acoustics and sound reproduction",
+      "fy5-15": "Ultrasound imaging",
+      "fy5-13": "Sound intensity level and protecting your hearing",
+      "fy5-16": "Applied lesson: oscillations and waves in structures and nature"
+    }
+  },
+  "FY6": {
+    "title": "Electricity",
+    "tavoitteet": [
+      "can investigate electrical phenomena experimentally and make basic electrical measurements",
+      "can use the concepts of field and potential to describe the electric field",
+      "knows safety aspects related to electrical devices and the transmission of electrical energy"
+    ],
+    "lessons": {
+      "fy6-1": "Electric charge, current and voltage",
+      "fy6-2": "Resistance and Ohm's law",
+      "fy6-12": "Measurements in an electric circuit",
+      "fy6-3": "Electric power and Joule's law",
+      "fy6-13": "Electrical appliances at home: power, energy and cost",
+      "fy6-4": "Resistors in series and in parallel",
+      "fy6-5": "Kirchhoff's laws",
+      "fy6-14": "Potential and voltages in an electric circuit",
+      "fy6-6": "Batteries, electromotive force and internal resistance",
+      "fy6-7": "Coulomb's law",
+      "fy6-8": "Uniform electric field, potential and potential energy",
+      "fy6-9": "Capacitor and the energy of a capacitor",
+      "fy6-15": "Charging and discharging a capacitor",
+      "fy6-10": "Semiconductors, the diode and the LED",
+      "fy6-11": "Electrical safety",
+      "fy6-16": "Applied lesson: the electric car and the home electrical system"
+    }
+  },
+  "FY7": {
+    "title": "Electromagnetism and light",
+    "tavoitteet": [
+      "understands the central importance of induction in electromagnetism",
+      "understands the physical basis of producing and transmitting electrical energy and its importance for society",
+      "recognises sources and effects of electromagnetic radiation",
+      "understands light as an electromagnetic phenomenon"
+    ],
+    "lessons": {
+      "fy7-1": "Magnetism, the magnetic dipole and the magnetic field",
+      "fy7-2": "Motion of a charged particle in electric and magnetic fields",
+      "fy7-3": "Magnetic field of a current-carrying wire and the force between wires",
+      "fy7-13": "Electric motor and loudspeaker",
+      "fy7-4": "Electromagnetic induction",
+      "fy7-5": "Lenz's law and eddy currents",
+      "fy7-6": "Generator and the production of alternating current",
+      "fy7-7": "Transformer and the transmission of electrical energy",
+      "fy7-8": "Electromagnetic radiation, the spectrum and black-body radiation",
+      "fy7-9": "Reflection and refraction of light",
+      "fy7-14": "Dispersion of light and the rainbow",
+      "fy7-10": "Total internal reflection and optical fibre",
+      "fy7-11": "Interference and diffraction of light",
+      "fy7-15": "Thin-film interference",
+      "fy7-12": "Polarisation of light",
+      "fy7-16": "Applied lesson: induction and light in modern technology"
+    }
+  },
+  "FY8": {
+    "title": "Matter, radiation and quantisation",
+    "tavoitteet": [
+      "knows the effects of ionising radiation and becomes familiar with the safe use of radiation",
+      "becomes familiar with the worldview based on quantum physics, from elementary particle physics to cosmology",
+      "understands the importance of technology based on quantisation in modern society"
+    ],
+    "lessons": {
+      "fy8-1": "The photoelectric effect and the photon",
+      "fy8-2": "Atomic spectra and the quantisation of energy",
+      "fy8-3": "Bohr model and the wave-mechanical model of the atom",
+      "fy8-13": "Wave nature of particles and the de Broglie wavelength",
+      "fy8-4": "Laser and quantum structures",
+      "fy8-14": "LED, laser diode and Planck constant",
+      "fy8-5": "Structure of the atomic nucleus and radioactive decay",
+      "fy8-6": "Law of decay and half-life",
+      "fy8-7": "Mass–energy equivalence and nuclear binding energy",
+      "fy8-8": "Fission, fusion and nuclear power",
+      "fy8-9": "Ionising radiation: types, penetration and biological effects",
+      "fy8-15": "Radiation safety and radiation dose",
+      "fy8-10": "Applications of radiation in medicine and technology",
+      "fy8-11": "The Standard Model of particle physics",
+      "fy8-12": "Evolution of the universe",
+      "fy8-16": "Climate change and the greenhouse effect from the point of view of radiation"
+    }
+  }
+}

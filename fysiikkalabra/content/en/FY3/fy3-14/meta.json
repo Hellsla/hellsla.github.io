@@ -1,0 +1,22 @@
+{
+  "id": "fy3-14",
+  "course": "FY3",
+  "title": "Thermal balance during a change of state",
+  "goals": [
+    "LOPS FY3: heating and cooling of matter and changes of state",
+    "LOPS FY3: conservation of energy",
+    "Clarification: ice melts in water: latent heat of fusion and warming in the same thermal equilibrium, does all the ice melt"
+  ],
+  "prerequisites": [
+    "fy3-6",
+    "fy3-7"
+  ],
+  "glossary": [
+    "specific latent heat of fusion",
+    "latent heat of fusion",
+    "thermal equilibrium"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": "fy1-8",
+  "course": "FY1",
+  "title": "Your own experimental investigation: planning, carrying out and reporting",
+  "goals": [
+    "LOPS FY1: planning and carrying out a simple experimental investigation",
+    "LOPS FY1: can plan and carry out simple scientific experiments",
+    "Skills: planning, carrying out and documenting an investigation"
+  ],
+  "prerequisites": [
+    "fy1-3",
+    "fy1-4"
+  ],
+  "glossary": [
+    "tutkimus",
+    "hypoteesi",
+    "muuttuja",
+    "lab record",
+    "raportti"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

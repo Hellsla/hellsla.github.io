@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy1-5-L1-01",
+      "level": 1,
+      "text": "A cyclist rides uniformly at $5.5\\,\\text{m/s}$. How far does the cyclist travel in 20 seconds?",
+      "answer": 110,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-02",
+      "level": 1,
+      "text": "A runner covers $360\\,\\text{m}$ in $45\\,\\text{s}$ at a steady pace. What is the runner's speed?",
+      "answer": 8.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-03",
+      "level": 1,
+      "text": "The graph shows the position of a walker as a function of time. The walker keeps moving uniformly in the same direction also beyond the graph. How many seconds pass from the start until the walker has travelled $150\\,\\text{m}$?",
+      "figure": "fy1-5/line-read",
+      "answer": 60,
+      "unit": "s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-5-L1-04",
+      "level": 1,
+      "text": "An object moves uniformly from its starting point and travels $18\\,\\text{m}$ in $4.0\\,\\text{s}$. How far does it travel in $10\\,\\text{s}$?",
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-05",
+      "level": 1,
+      "text": "The position of a uniformly moving trolley, measured from the starting point, is $7.0\\,\\text{m}$ at $2.0\\,\\text{s}$ and $21\\,\\text{m}$ at $6.0\\,\\text{s}$. Calculate the speed of the trolley using the change in position and the time interval.",
+      "answer": 3.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-5-L2-01",
+      "level": 2,
+      "text": "A car drives at a constant speed of $54\\,\\text{km/h}$. How far does it travel in 14 seconds? Give the answer in metres.",
+      "answer": 210,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-02",
+      "level": 2,
+      "text": "A bus drives uniformly at $36\\,\\text{km/h}$. How many seconds does a distance of $4.5\\,\\text{km}$ take?",
+      "answer": 450,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-03",
+      "level": 2,
+      "text": "A hiker is at a point $1.5\\,\\text{km}$ from a cabin. The hiker walks along a straight path away from the cabin, uniformly at $1.5\\,\\text{m/s}$. How far from the cabin is the hiker after 10 minutes? Give the answer in kilometres.",
+      "answer": 2.4,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-04",
+      "level": 2,
+      "text": "After a flash of lightning, the rumble of thunder is heard $5.0\\,\\text{s}$ later. Sound travels in air uniformly at $343\\,\\text{m/s}$, and the travel time of light is so small that it is ignored. How far away did the lightning strike? Give the answer in kilometres.",
+      "answer": 1.7,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-5-L3-01",
+      "level": 3,
+      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.7\\,\\text{AU}$ from the Sun (NASA/JPL), and its speed relative to the Sun is $15.341\\,\\text{km/s}$ (JPL). Assume the speed is constant. How many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
+      "answer": 3420,
+      "unit": "vrk",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-02",
+      "level": 3,
+      "text": "According to the model, Voyager 2 is at a distance of $150\\,\\text{AU}$ from the Earth. A radio signal travels in vacuum uniformly at $299\\,792\\,458\\,\\text{m/s}$. How many hours pass from the moment a command leaves the Earth to the moment the reply of the probe reaches the Earth? The motion of the probe and its processing time for the reply are ignored. Use the value $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$. Justify why the motion can be ignored.",
+      "answer": 41.6,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-03",
+      "level": 3,
+      "text": "Two friends set off from the school door along the same straight street in the same direction. The first walks uniformly at $1.5\\,\\text{m/s}$. The second leaves the door $40\\,\\text{s}$ later on a bicycle and rides uniformly at $4.5\\,\\text{m/s}$. How far from the door does the cyclist catch up with the walker?",
+      "answer": 90,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

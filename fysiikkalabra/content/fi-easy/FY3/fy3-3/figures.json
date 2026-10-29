@@ -1,0 +1,19 @@
+{
+ "Kuvitus: polkupyörä seisoo kuumalla asfaltilla kesähelteellä. Aurinko paistaa, asfaltin yllä väreilee kuumuus ja tolpan lämpömittarin punainen pylväs on korkealla.": "Kuvitus: polkupyörä seisoo kuumalla asfaltilla. On helteinen kesäpäivä. Aurinko paistaa, ja kuumuus väreilee asfaltin yllä. Tolpassa on lämpömittari, ja sen punainen pylväs on korkealla.",
+ "Kuvitus: sama polkupyörä lumisena pakkasaamuna. Lunta on maassa ja satulalla, ja tolpan lämpömittarin pylväs on matalalla.": "Kuvitus: sama polkupyörä on ulkona lumisena pakkasaamuna. Maassa ja satulalla on lunta. Tolpan lämpömittarin pylväs on matalalla.",
+ "Periaatekuva, ei mittakaavassa: kaasua sylinterissä, jonka yläpäätä sulkee liikkuva mäntä. Kaasu on termodynaaminen systeemi; sen rajapinta on piirretty katkoviivalla kaasun ympärille. Sylinterin seinät, mäntä ja koko muu maailma ovat ympäristöä. Systeemin tilaa kuvaavat tilanmuuttujat: paine p, tilavuus V ja lämpötila T.": "Periaatekuva, ei mittakaavassa. Kaasu on sylinterissä. Sylinterin yläpään sulkee mäntä, joka voi liikkua. Kaasu on termodynaaminen systeemi. Systeemin rajapinta on piirretty katkoviivalla kaasun ympärille. Sylinterin seinät, mäntä ja koko muu maailma ovat ympäristöä. Systeemin tilaa kuvaavat tilanmuuttujat: paine p, tilavuus V ja lämpötila T.",
+ "systeemi": "systeemi",
+ "rajapinta": "rajapinta",
+ "ympäristö": "ympäristö",
+ "Kaaviokuva kaasun mikromallista: kaksi samankokoista suljettua astiaa, joissa on yhtä monta hiukkasta. Kylmässä kaasussa nopeutta kuvaavat nuolet ovat lyhyitä, kuumassa pitkiä, ja kuuman kaasun paine p2 on suurempi kuin kylmän kaasun paine p1.": "Kaaviokuva kaasun mikromallista. Kuvassa on kaksi suljettua astiaa. Astiat ovat yhtä suuret, ja niissä on yhtä monta hiukkasta. Nuolet kuvaavat hiukkasten nopeutta. Kylmässä kaasussa nuolet ovat lyhyitä. Kuumassa kaasussa nuolet ovat pitkiä. Kuuman kaasun paine p2 on suurempi kuin kylmän kaasun paine p1.",
+ "kylmä kaasu": "kylmä kaasu",
+ "kuuma kaasu": "kuuma kaasu",
+ "Kelvinasteikko ja celsiusasteikko rinnakkain mittakaavassa: 0 K on −273,15 °C (absoluuttinen nollapiste), 273,15 K on 0 °C (vesi jäätyy) ja 373,15 K on 100 °C (vesi kiehuu). Asteikkojen välit ovat yhtä suuret, ja kelvinlukema saadaan lisäämällä celsiuslukemaan 273,15.": "Kelvinasteikko ja celsiusasteikko rinnakkain mittakaavassa. 0 K on −273,15 °C (absoluuttinen nollapiste). 273,15 K on 0 °C (vesi jäätyy). 373,15 K on 100 °C (vesi kiehuu). Asteikkojen välit ovat yhtä suuret. Kelvinlukema saadaan, kun celsiuslukemaan lisätään 273,15.",
+ "absoluuttinen nollapiste": "absoluuttinen nollapiste",
+ "vesi jäätyy": "vesi jäätyy",
+ "vesi kiehuu": "vesi kiehuu",
+ "Kaasun paine lämpötilan funktiona suljetussa astiassa: mittapisteet lämpötila-alueella 0–100 °C asettuvat suoralle, ja ekstrapoloitu suora kohtaa nollapaineen lämpötilassa noin −270 °C. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C.": "Kuvaaja näyttää, miten kaasun paine riippuu lämpötilasta suljetussa astiassa. Mittapisteet ovat lämpötila-alueella 0–100 °C, ja ne ovat suoralla. Suoraa on jatkettu eli ekstrapoloitu. Jatkettu suora kohtaa nollapaineen noin −270 °C:ssa. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C.",
+ "ekstrapolointi": "ekstrapolointi",
+ "mittaukset": "mittaukset",
+ "Kaasun paine lämpötilan funktiona suljetussa jäykässä astiassa: viisi mittauspistettä ilman piirrettyä suoraa. Pisteet ovat (0 °C; 75 kPa), (25 °C; 82 kPa), (50 °C; 89 kPa), (75 °C; 96 kPa) ja (100 °C; 102,5 kPa). Vaaka-akseli ulottuu −150 °C:een; ruudukon väli on 25 °C ja 25 kPa.": "Kaasun paine lämpötilan funktiona suljetussa jäykässä astiassa. Kuvassa on viisi mittauspistettä. Suoraa ei ole piirretty. Pisteet ovat (0 °C; 75 kPa), (25 °C; 82 kPa), (50 °C; 89 kPa), (75 °C; 96 kPa) ja (100 °C; 102,5 kPa). Vaaka-akseli ulottuu −150 °C:een. Ruudukon väli on 25 °C ja 25 kPa."
+}

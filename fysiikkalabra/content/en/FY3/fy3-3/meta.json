@@ -1,0 +1,21 @@
+{
+  "id": "fy3-3",
+  "course": "FY3",
+  "title": "Thermodynamic system, state variables and temperature",
+  "goals": [
+    "LOPS FY3: thermodynamic system and state variables",
+    "LOPS FY3: temperature",
+    "Clarification: the temperature, pressure and volume of a gas system are linked; micro model of temperature; the Kelvin scale and absolute zero"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "system",
+    "state variable",
+    "pressure",
+    "temperature",
+    "kelvin",
+    "absolute zero"
+  ],
+  "sim": true,
+  "image": false
+}

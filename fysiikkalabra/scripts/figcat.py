@@ -247,7 +247,9 @@ def _uses():
         for f in sorted(lang_dir.rglob("*")):
             if not f.is_file() or f.suffix not in (".md", ".json") or "/review/" in f.as_posix() + "/" or f.name == "figures.json": continue
             text = f.read_text(); rel = f.relative_to(ROOT / "content" / lang).as_posix()
-            parts = rel.split("/"); oid = parts[1] if parts[1] != "sovella" else f"{parts[0].lower()}-sovella"
+            parts = rel.split("/")
+            if len(parts) < 3: continue  # courses.json of a translation: names, no figures
+            oid = parts[1] if parts[1] != "sovella" else f"{parts[0].lower()}-sovella"
             for fid in refs_in(text): uses.setdefault(fid, []).append(f"{lang}:{rel}")
             if lang != i18n.SOURCE: continue
             for i, m in enumerate(re.finditer(r"<svg\b[^>]*>", text.replace('\\"', '"'))):

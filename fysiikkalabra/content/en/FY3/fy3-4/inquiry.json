@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "contribution": "Pressure $p = F/A$ tells how a force is spread over a surface, and in a liquid the pressure grows with depth as the straight line $p = p_0 + \\rho g h$, whose constant term is atmospheric pressure and whose slope is $\\rho g$.",
+  "learn": [
+    "You can calculate pressure from force and area and explain how a force is spread over a surface.",
+    "You can calculate the pressure of a liquid at different depths.",
+    "You can interpret the constant term and the slope of a graph of pressure against depth."
+  ],
+  "prior": [
+    "Weight is a force, $G = mg$, and $g = 9.81\\,\\text{m/s}^2$ (chapter *Force as a measure of interaction and weight G = mg*)",
+    "Pressure is a state variable that arises in the micro model from particles colliding with the wall (chapter *Thermodynamic system, state variables and temperature*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "You dive towards the bottom of a swimming-pool diving pool. Already at a depth of a couple of metres you feel pressure in your ears, and the lower you go, the more clearly you feel it. At the surface your ears feel nothing, even though the atmosphere presses on them too. The same thing loads the wall of a dam and your eardrum: the water above.",
+      "question": "How does pressure change as you go deeper in a liquid, and what does it depend on?"
+    },
+    {
+      "id": "pr-paino",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the weight of water",
+      "prompt": "A cubic metre of water (density $1000\\,\\text{kg/m}^3$) has a mass of $1000\\,\\text{kg}$. What is the weight $G = mg$ of this amount of water?",
+      "choices": [
+        {
+          "text": "1000 N",
+          "feedback": "You mixed up mass and weight. Weight is a force, and you get it by multiplying the mass by the acceleration of free fall: $G = mg = 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 9810\\,\\text{N}$."
+        },
+        {
+          "text": "about 9.8 kN",
+          "correct": true,
+          "feedback": "Correct: $G = mg = 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 9810\\,\\text{N} \\approx 9.8\\,\\text{kN}$. You need this weight of a column of water in this lesson."
+        },
+        {
+          "text": "102 N",
+          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs 9.81 N at the Earth's surface, so $1000\\,\\text{kg}$ weighs 9810 N."
+        },
+        {
+          "text": "$1000\\,\\text{kg}$",
+          "feedback": "The kilogram is the unit of mass. Weight is a force, and the unit of force is the newton: $G = mg = 9810\\,\\text{N}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the depth doubles",
+      "prompt": "A pressure gauge in a lake is at a depth of $5\\,\\text{m}$. It is lowered to a depth of $10\\,\\text{m}$. Atmospheric pressure of 101 kPa acts at the surface. What happens to the total pressure that the gauge shows?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The total pressure doubles, because the depth doubles.",
+          "feedback": "Your measurements show that the total pressure grows from about 150 kPa to 199 kPa, that is, only about 1.3 times. Only the part caused by the water doubles (about 49 kPa → 98 kPa). The atmospheric pressure of 101 kPa at the surface is the same at both depths, so the total pressure is not directly proportional to the depth."
+        },
+        {
+          "text": "The total pressure grows, but by less than a factor of two.",
+          "correct": true,
+          "feedback": "The values of the model support this: at $5\\,\\text{m}$ the total pressure in the model is about 150 kPa and at $10\\,\\text{m}$ about 199 kPa. The part caused by the water doubles (49 kPa → 98 kPa), but the atmospheric pressure of 101 kPa stays the same as the constant term."
+        },
+        {
+          "text": "The pressure stays the same, because the water is the same all the way down.",
+          "feedback": "Your measurements show an increase of about 49 kPa over five metres. The water is the same, but deeper down there is more water above, and the weight of this column of water presses on the gauge."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a denser liquid",
+      "prompt": "The gauge is held at a depth of $10\\,\\text{m}$, but ordinary water ($1000\\,\\text{kg/m}^3$) is replaced by water from the Dead Sea ($1240\\,\\text{kg/m}^3$), whose density is $24\\,\\%$ greater. What happens?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Nothing changes, because pressure depends only on the depth.",
+          "feedback": "The values of the model show that the pressure caused by the water grows from about 98 kPa to 122 kPa. The same depth of a denser liquid means a heavier column of liquid above the gauge."
+        },
+        {
+          "text": "The pressure caused by the water decreases, because you float better in denser water.",
+          "feedback": "The values of the model show an increase, not a decrease: about 98 kPa → 122 kPa. Floating is about buoyancy, which is a different thing. The column of liquid above the gauge is heavier when it is denser, so the pressure grows."
+        },
+        {
+          "text": "The pressure caused by the water grows by $24\\,\\%$, but the total pressure by less.",
+          "correct": true,
+          "feedback": "The values of the model support this: the part caused by the water grows from about 98 kPa to 122 kPa ($24\\,\\%$), but the total pressure only from about 199 kPa to 223 kPa (about $12\\,\\%$), because the atmospheric pressure of 101 kPa does not change."
+        },
+        {
+          "text": "The total pressure grows by $24\\,\\%$, in the same proportion as the density.",
+          "feedback": "According to the values of the model, the total pressure grows from about 199 kPa to 223 kPa, that is, about $12\\,\\%$. Only the part caused by the liquid grows with the density; the atmospheric pressure of 101 kPa stays the same."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 3: a narrow tube and a wide pool",
+      "prompt": "A narrow vertical tube and a wide pool are filled with water to the same height, $2.0\\,\\text{m}$. The pool holds a thousand times as much water as the tube. Three students explain where the pressure at the bottom is greater. Who is right?",
+      "justify": true,
+      "choices": [
+        {
+          "text": "Aino: in the pool, because it has more water and the water weighs more.",
+          "feedback": "The water in the pool does weigh more in total, but the weight is also spread over a bottom that is a thousand times larger. Pressure is force divided by area, $p = F/A$. In the theory summary the weight of the column of water is divided by the area of its base; see what happens to the area."
+        },
+        {
+          "text": "Bea: the pressure is the same, because above every point of the bottom there is a column of water of the same height.",
+          "correct": true,
+          "feedback": "Exactly: the pressure depends on how tall and how dense the column of liquid above the point is, not on the width of the container. The theory summary derives this from the weight of the column of water: the area cancels."
+        },
+        {
+          "text": "Cem: in the tube, because the narrow tube concentrates the weight of the water on a small area.",
+          "feedback": "The water in the tube weighs less, and it is spread over a smaller area. When the water is at the same height, the smaller weight and the smaller area cancel each other exactly. In the theory summary you can see why the area cancels."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a pressure gauge is lowered into a liquid.",
+      "howto": "Adjust the depth and the density and follow the reading of the gauge and the $(h, p)$ graph. The box *Show gauge pressure only* removes atmospheric pressure from the graph.",
+      "model": "Atmospheric pressure at the surface is a fixed 101 kPa, and the liquid is at rest and equally dense everywhere (its compression is ignored). The readings are values from a model, not measurements from a real lake.",
+      "calc": "Pressure grows steadily with depth: $p = p_0 + \\rho g h$, so every metre adds $\\rho g \\cdot 1\\,\\text{m}$ of pressure. The slope of the line, $\\rho g$, depends on the density, but at the surface ($h = 0$) the pressure is always the atmospheric pressure $p_0$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the depth changes",
+      "intro": "Test prediction 1. The liquid is water, and the density stays constant. Change only the depth and record the pressures at at least two depths, for example $5\\,\\text{m}$, $10\\,\\text{m}$, $15\\,\\text{m}$ and $20\\,\\text{m}$. Compare whether the total pressure increases in the same ratio as the depth, and by how much the pressure increases for every five metres.",
+      "initial": {
+        "h": 5,
+        "rho": 1000
+      },
+      "units": {
+        "h": "m",
+        "rho": "kg/m³"
+      },
+      "locked": [
+        "rho"
+      ],
+      "vary": "h",
+      "measure": [
+        {
+          "key": "pOver",
+          "label": "ρgh (kPa)"
+        },
+        {
+          "key": "pTotal",
+          "label": "p (kPa)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "By how many kilopascals does the pressure in water grow for every metre of depth? Read it from your measurements.",
+        "answer": 9.81,
+        "unit": "kPa",
+        "tolerance": 0.02,
+        "mistakes": [
+          {
+            "value": 9810,
+            "feedback": "This is in pascals. The question asked for kilopascals: $9810\\,\\text{Pa} = 9.81\\,\\text{kPa}$."
+          },
+          {
+            "value": 19.9,
+            "feedback": "You divided the total pressure by the depth ($199.1\\,\\text{kPa} / 10\\,\\text{m}$). The total pressure includes atmospheric pressure, which does not grow with depth. Calculate the increase from the difference between two depths: $(199.1 - 150.1)\\,\\text{kPa} / 5\\,\\text{m}$."
+          }
+        ],
+        "solution": "**Given:** water, $\\rho = 1000\\,\\text{kg/m}^3$ constant; measurements at two depths with $\\Delta h = 10.0\\,\\text{m} - 5.0\\,\\text{m} = 5.0\\,\\text{m}$ between them: at the depth $5.0\\,\\text{m}$ the total pressure is $p_1 = 150.1\\,\\text{kPa}$ and at the depth $10.0\\,\\text{m}$ the pressure is $p_2 = 199.1\\,\\text{kPa}$\n\n**Find:** the increase in pressure per metre of depth, $\\dfrac{\\Delta p}{\\Delta h}$, in $\\text{kPa/m}$\n\n**Principle:** In a liquid $p = p_0 + \\rho g h$, and because only the depth changes ($\\rho$ and $p_0$ stay the same), the pressure grows steadily: the increase per metre is always the same number $\\rho g$. Atmospheric pressure $p_0$ does not change with depth, so it cancels when we take the difference between the pressures at two depths.\n\n**Formula:** $p_2 - p_1 = \\rho g (h_2 - h_1)$, so\n\n$$\\frac{\\Delta p}{\\Delta h} = \\frac{p_2 - p_1}{h_2 - h_1} \\;(= \\rho g)$$\n\n**Conversions:** The pressures are already in kilopascals and the depths in metres, so the result comes directly in $\\text{kPa/m}$ and no conversions are needed. For comparison, $\\rho g = 1000 \\cdot 9.81\\,\\text{Pa/m} = 9.81\\,\\text{kPa/m}$.\n\n**Substitution:** $\\dfrac{\\Delta p}{\\Delta h} = \\dfrac{199.1\\,\\text{kPa} - 150.1\\,\\text{kPa}}{10.0\\,\\text{m} - 5.0\\,\\text{m}} = \\dfrac{49.0\\,\\text{kPa}}{5.0\\,\\text{m}} = 9.80\\,\\tfrac{\\text{kPa}}{\\text{m}}$\n\n**Answer:** $9.8\\,\\text{kPa/m}$ (from your readings), two significant figures, because the depth difference $5.0\\,\\text{m}$ is known to two figures, although the pressure difference $49.0\\,\\text{kPa}$ has three. The value of the model is $\\rho g = 9.81\\,\\text{kPa/m}$.\n\n**Reasonableness:** The increase is about $10\\,\\text{kPa}$ per metre, which fits the fact that $10\\,\\text{m}$ of water adds about one atmosphere ($101\\,\\text{kPa}$). Pressure grows in the same proportion as depth only for the gauge pressure: $5\\,\\text{m}$ gives $49\\,\\text{kPa}$ and $10\\,\\text{m}$ gives $98\\,\\text{kPa}$, which is double. The total pressure does not double ($150 \\to 199\\,\\text{kPa}$), because $101\\,\\text{kPa}$ is included in both."
+      },
+      "names": {
+        "h": "depth h",
+        "rho": "density ρ"
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Further investigation: only the density changes",
+      "intro": "Test prediction 2. The gauge stays at a depth of $10\\,\\text{m}$, and only the density of the liquid changes. Record the pressures for at least two densities, for example petrol 720, water 1000 and Dead Sea water $1240\\,\\text{kg/m}^3$. Which of the pressures increases in the same ratio as the density?",
+      "initial": {
+        "h": 10,
+        "rho": 1000
+      },
+      "units": {
+        "h": "m",
+        "rho": "kg/m³"
+      },
+      "locked": [
+        "h"
+      ],
+      "vary": "rho",
+      "measure": [
+        {
+          "key": "pOver",
+          "label": "ρgh (kPa)"
+        },
+        {
+          "key": "pTotal",
+          "label": "p (kPa)"
+        }
+      ],
+      "min": 2,
+      "names": {
+        "h": "depth h",
+        "rho": "density ρ"
+      },
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: how does pressure depend on depth?",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Based on your measurements, write how the gauge pressure $\\rho g h$ and the total pressure $p$ depended on the depth. Did the total pressure double when the depth doubled? What do the slope and the intercept on the vertical axis of the $(h, p)$ graph tell you?",
+      "model": "The gauge pressure grew in direct proportion to the depth: at $5\\,\\text{m}$ about $49\\,\\text{kPa}$ and at $10\\,\\text{m}$ about $98\\,\\text{kPa}$, that is, about $9.8\\,\\text{kPa}$ for every metre. The total pressure grew from $150\\,\\text{kPa}$ to $199\\,\\text{kPa}$ and did not double, because it includes the atmospheric pressure at the surface, $p_0 = 101\\,\\text{kPa}$, which does not depend on depth. The $(h, p)$ graph is a straight line whose slope is $\\rho g$ and which cuts the vertical axis at $p_0$. The simulation calculates the pressure from the formula, so it shows the model; real depth gauges and the experience of divers (about one more atmosphere for every $10\\,\\text{m}$) support it.",
+      "criteria": [
+        "I told how the gauge pressure depended on the depth and used numbers.",
+        "I explained why the total pressure did not double.",
+        "I interpreted the slope and the intercept.",
+        "I distinguished the values calculated by the model from measurements."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Go back to your predictions",
+      "prompt": "Compare your predictions with your measurements and with the model $p = p_0 + \\rho g h$. Which term explains why the total pressure does not double with the depth? Also go back to the opening question: how does pressure change as you go deeper, and why must the wall of a dam be thickest at the bottom?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The water in a pool is $4.0\\,\\text{m}$ deep. A student calculates the hydrostatic pressure at a point $1.0\\,\\text{m}$ above the bottom of the pool: $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.0\\,\\text{m} \\approx 9.8\\,\\text{kPa}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The depth is measured from the surface, not from the bottom: $h = 3.0\\,\\text{m}$, so $\\rho g h \\approx 29\\,\\text{kPa}$.",
+          "correct": true,
+          "feedback": "Correct. The pressure is determined by the column of water above the point, and its height is $4.0\\,\\text{m} - 1.0\\,\\text{m} = 3.0\\,\\text{m}$. So $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{m} \\approx 29\\,\\text{kPa}$."
+        },
+        {
+          "text": "The atmospheric pressure of 101 kPa is missing.",
+          "feedback": "The question asked for the hydrostatic pressure, that is, the gauge pressure $\\rho g h$, which does not include atmospheric pressure. In the total pressure it would be included. The error is in where the depth is measured from."
+        },
+        {
+          "text": "The result should be multiplied by the area of the bottom.",
+          "feedback": "Multiplying by the area would give a force, $F = pA$, not a pressure. The pressure $\\rho g h$ does not depend on the area. Check where the depth $h$ is measured from."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "The form of the calculation is correct, but $h$ is wrong. Depth is measured downwards from the surface of the liquid; a point $1.0\\,\\text{m}$ above the bottom is at a depth of $3.0\\,\\text{m}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A mercury barometer has a vertical glass tube that is closed at the top and whose lower end is in a dish of mercury. In the upper part of the tube, above the mercury, there is a vacuum, so the pressure at the top of the column is zero. The atmospheric pressure of 101 kPa holds the column of mercury up in the tube. How tall is the column? The density of mercury is $13\\,600\\,\\text{kg/m}^3$. Give the answer in metres.",
+      "answer": 0.757,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "At the level of the surface in the dish, the pressure inside the tube is equal to the pressure outside, that is, atmospheric pressure. What produces this pressure inside the tube?",
+        "At the top of the column the pressure is zero, so the hydrostatic pressure of the column equals atmospheric pressure: $\\rho g h = p_0$, so $h = \\dfrac{p_0}{\\rho g}$.",
+        "Substitute in pascals: $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10.3,
+          "feedback": "You used the density of water, $1000\\,\\text{kg/m}^3$. A column of water would indeed be about $10\\,\\text{m}$ tall, but mercury is 13.6 times denser, so the column is correspondingly shorter."
+        },
+        {
+          "value": 0.000757,
+          "feedback": "You substituted atmospheric pressure in kilopascals. When the density is in $\\text{kg/m}^3$ and $g$ in $\\text{m/s}^2$, the pressure must be substituted in pascals: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$."
+        }
+      ],
+      "solution": "**Given:** density of mercury $\\rho = 13\\,600\\,\\text{kg/m}^3$ (given in the problem), atmospheric pressure $p_0 = 101\\,\\text{kPa}$, pressure at the top of the column $0$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the height $h$ of the column of mercury in metres\n\n**Principle:** The column is at rest, so at the level of the liquid surface the pressure is the same in the dish and inside the tube. In the dish it is atmospheric pressure $p_0$, and in the tube it is produced by the hydrostatic pressure of the column of mercury, because above the column there is a vacuum ($p = 0$) and nothing else presses the column downwards. Therefore $p_0 = 0 + \\rho g h$.\n\n**Formula:** $p_0 = \\rho g h$, so\n\n$$h = \\frac{p_0}{\\rho g}$$\n\n**Conversions:** $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, so that the units $\\text{Pa} = \\text{kg}/(\\text{m}\\cdot\\text{s}^2)$ cancel to metres.\n\n**Substitution:** $h = \\dfrac{101\\,000\\,\\text{Pa}}{13\\,600\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2}} = \\dfrac{101\\,000\\,\\text{Pa}}{133\\,416\\,\\tfrac{\\text{kg}}{\\text{m}^2\\text{s}^2}} = 0.75703\\,\\text{m}$\n\n**Answer:** $0.757\\,\\text{m}$, three significant figures, like the density $13\\,600\\,\\text{kg/m}^3$ and the atmospheric pressure $101\\,\\text{kPa}$.\n\n**Reasonableness:** A column of water would be $101\\,\\text{kPa} / 9.81\\,\\text{kPa/m} \\approx 10.3\\,\\text{m}$ tall, and mercury is $13.6$ times denser, so the column is $10.3\\,\\text{m} / 13.6 \\approx 0.757\\,\\text{m}$. Checking backwards, $13\\,600 \\cdot 9.81 \\cdot 0.757\\,\\text{Pa} \\approx 101\\,000\\,\\text{Pa}$. About $76\\,\\text{cm}$ is a suitable height for a glass tube.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more at three levels. The Level 1 exercises use one formula; Level 3 requires combining two things."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The sensor membrane of a pressure gauge is turned at a depth of $4.0\\,\\text{m}$ to point in turn up, sideways and down. The liquid is at rest. What does the gauge show?",
+      "choices": [
+        {
+          "text": "The greatest reading when the membrane points up, because the water presses downwards.",
+          "feedback": "The weight of the column of water determines the size of the pressure, but in a liquid at rest the pressure acts equally in every direction. If the pressure sideways were smaller, the water would flow sideways and would not stay at rest."
+        },
+        {
+          "text": "The same reading in all positions.",
+          "correct": true,
+          "feedback": "Correct. The pressure depends only on the depth, the density and the pressure at the surface, and in a liquid at rest it acts equally in every direction. The force caused by pressure is always perpendicular to the membrane."
+        },
+        {
+          "text": "Zero when the membrane points sideways, because water does not press sideways.",
+          "feedback": "Water does press sideways: water squirts out of a hole in the side of a bottle, and a horizontal force acts on the vertical wall of a dam. In a liquid at rest the pressure is the same in every direction."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Shape of the container",
+      "prompt": "A narrow vertical tube and a wide pool are full of water to a height of $1.0\\,\\text{m}$. The pool holds a thousand times as much water as the tube. Where is the pressure at the bottom greater?",
+      "choices": [
+        {
+          "text": "In the pool, because it holds more water and so has a greater weight.",
+          "feedback": "The total weight of the water in the pool is greater, but it is also spread over a bottom area a thousand times as large. Pressure is force divided by area, and the pressure at the bottom depends only on the surface pressure, the density of the liquid and the depth, $p = p_0 + \\rho g h$."
+        },
+        {
+          "text": "In the tube, because the water is in a cramped space there.",
+          "feedback": "Being cramped does not increase pressure. The pressure at the bottom depends only on the depth, the density and the surface pressure. In the tube the column of water is as tall as in the pool, and its weight is spread over a small bottom area."
+        },
+        {
+          "text": "Equally great in both.",
+          "correct": true,
+          "feedback": "Correct. The depth $h$ is the same in both, the density is the same and the surface pressure is the same, so $p = p_0 + \\rho g h$ is the same. The width of the container does not matter: in the pool the greater weight is spread over a greater area."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Graph and calculation",
+      "prompt": "The $(h, p)$ graph of an unknown liquid is a straight line through the points ($0\\,\\text{m}$, 101 kPa) and ($8.0\\,\\text{m}$, 171 kPa). What is the density of the liquid? Give the answer in kg/m³.",
+      "answer": 890,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the slope of the graph tell you when $p = p_0 + \\rho g h$?",
+        "The slope is $\\rho g = \\dfrac{\\Delta p}{\\Delta h}$, so $\\rho = \\dfrac{\\Delta p}{g\\,\\Delta h}$.",
+        "$\\dfrac{\\Delta p}{\\Delta h} = \\dfrac{171\\,\\text{kPa} - 101\\,\\text{kPa}}{8.0\\,\\text{m}} = 8.75\\,\\text{kPa/m} = 8750\\,\\text{Pa/m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2180,
+          "feedback": "You divided the total pressure of 171 kPa by the depth. The constant term of the graph, 101 kPa, is atmospheric pressure, not pressure caused by the liquid. Use the slope, that is, the change in pressure: $(171 - 101)\\,\\text{kPa} / 8.0\\,\\text{m}$."
+        },
+        {
+          "value": 0.892,
+          "feedback": "The slope was in kilopascals per metre. Convert to pascals before dividing: $8.75\\,\\text{kPa/m} = 8750\\,\\text{Pa/m}$."
+        }
+      ],
+      "solution": "**Given:** two points of the line $(h, p)$: $(0\\,\\text{m},\\ 101\\,\\text{kPa})$ and $(8.0\\,\\text{m},\\ 171\\,\\text{kPa})$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the density of the liquid $\\rho$ in $\\text{kg/m}^3$\n\n**Principle:** In a liquid $p = p_0 + \\rho g h$, so the $(h, p)$ graph is a straight line whose constant term is the pressure at the surface $p_0$ and whose slope is $\\rho g$. The density therefore comes from the slope, when the density of the liquid is constant at all depths. The constant term does not affect the density.\n\n**Reading the graph:** From the point $h = 0$ we read $p_0 = 101\\,\\text{kPa}$ (atmospheric pressure at the surface) and from the point $h = 8.0\\,\\text{m}$ the pressure $171\\,\\text{kPa}$. The slope is the change in pressure divided by the change in depth: $\\Delta p = 171\\,\\text{kPa} - 101\\,\\text{kPa} = 70\\,\\text{kPa}$ and $\\Delta h = 8.0\\,\\text{m}$.\n\n**Formula:** slope $\\dfrac{\\Delta p}{\\Delta h} = \\rho g$, so\n\n$$\\rho = \\frac{\\Delta p}{g\\,\\Delta h}$$\n\n**Conversions:** $\\Delta p = 70\\,\\text{kPa} = 70\\,000\\,\\text{Pa}$, so that the result comes in $\\text{kg/m}^3$. At the same time the slope is $\\dfrac{70\\,000\\,\\text{Pa}}{8.0\\,\\text{m}} = 8750\\,\\text{Pa/m}$.\n\n**Substitution:** $\\rho = \\dfrac{70\\,000\\,\\text{Pa}}{9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8.0\\,\\text{m}} = \\dfrac{70\\,000\\,\\text{Pa}}{78.48\\,\\tfrac{\\text{m}^2}{\\text{s}^2}} = 891.9\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Answer:** $890\\,\\text{kg/m}^3$, two significant figures, because the pressure difference $\\Delta p = 70\\,\\text{kPa}$ and the depth difference $\\Delta h = 8.0\\,\\text{m}$ are given to two figures.\n\n**Reasonableness:** The slope for water would be $9.81\\,\\text{kPa/m}$, so $8.0\\,\\text{m}$ would give $78.5\\,\\text{kPa}$. The measured increase of $70\\,\\text{kPa}$ is slightly smaller, so the liquid is lighter than water, for example oil. Checking backwards, $890 \\cdot 9.81 \\cdot 8.0\\,\\text{Pa} \\approx 70\\,000\\,\\text{Pa}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and transfer",
+      "prompt": "A diver is at a depth of $3.0\\,\\text{m}$ and feels pressure in an ear. When the diver equalises the pressure by letting air from the throat into the middle ear, the feeling goes away. Use pressure to explain why a force acts on the eardrum at first and why it disappears when the pressure is equalised. Use the concepts pressure, gauge pressure and force.",
+      "criteria": [
+        "I say that at $3.0\\,\\text{m}$ the outside pressure is greater than atmospheric pressure by the hydrostatic pressure $\\rho g h$ (about 29 kPa).",
+        "I say that the air in the middle ear is at first at atmospheric pressure, so the pressure on the two sides of the eardrum is different.",
+        "I justify the force with the pressure difference and the area, $F = \\Delta p \\cdot A$, and say that the force is perpendicular to the membrane.",
+        "I explain that after equalising, the pressure is the same on both sides of the membrane, so the forces cancel."
+      ],
+      "model": "At the surface there is atmospheric pressure on both sides of the eardrum, so the forces cancel. At a depth of three metres the outside pressure is greater than atmospheric pressure by the gauge pressure $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{m} \\approx 29\\,\\text{kPa}$, but the air in the middle ear is still at atmospheric pressure. The pressure difference pushes the membrane inwards, perpendicular to its surface, with a force $F = \\Delta p \\cdot A$; if the area of the membrane is about $0.6\\,\\text{cm}^2$ (an approximation), the force is about 1.8 N. When the diver lets more air into the middle ear, its pressure rises to the same size as the outside pressure. Then the pressure on the two sides of the membrane is the same, the forces cancel and the feeling goes away.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

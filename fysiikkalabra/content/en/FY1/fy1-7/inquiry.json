@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "contribution": "Mass is directly proportional to volume, and the constant of proportionality is the density of the substance: m = ρV is a linear model. You solve it for mass, volume or density, and you read the density as a slope from measurements, even when the mass of a container is included.",
+  "learn": [
+    "You can calculate the mass, volume or density of an object with the formula $m = \\rho V$.",
+    "You can explain why mass is directly proportional to volume and what the slope of the line tells you.",
+    "You can determine the density of a substance from measurement results and identify the substance using a table."
+  ],
+  "prior": [
+    "In direct proportionality the measurement points lie, within the measurement uncertainty, on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphs and fitting a straight line*)",
+    "Measurement results always contain error, and a result is given with a suitable number of significant figures (chapter *Measuring and the reliability of a measurement*)",
+    "Quantities are calculated in SI units, and units are converted using powers of ten (chapter *Quantities, units and the SI system*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "At a recycling point there are two grey metal cubes on the table. They are exactly the same size, but one feels much heavier in your hand than the other. One is aluminium and the other is iron, but the cubes have no markings. On the table there are a balance and a ruler.",
+      "question": "Which quantities of the cubes should you measure so that you can work out what they are made of?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: direct proportionality",
+      "optional": true,
+      "prompt": "In an experiment the quantities $x$ and $y$ are measured. Within the measurement uncertainty, the measurement points lie on a straight line through the origin. What does this tell you about how the quantities depend on each other?",
+      "choices": [
+        {
+          "text": "The quantity $y$ is directly proportional to the quantity $x$: the ratio $y : x$ is constant, and it is the slope of the line.",
+          "correct": true,
+          "feedback": "Correct. A line through the origin has the form $y = kx$, so the ratio $y : x = k$ stays the same and doubling $x$ doubles $y$ (chapter *Graphs and fitting a straight line*). Today $y$ is mass, $x$ is volume and $k$ is density."
+        },
+        {
+          "text": "The quantities $x$ and $y$ are equal.",
+          "feedback": "The slope can be any number, not only 1. At the points of the line $y = kx$, $y$ is $k$ times $x$ (chapter *Graphs and fitting a straight line*)."
+        },
+        {
+          "text": "The quantity $y$ always increases by the same amount when $x$ increases, but $y$ may be non-zero at the start.",
+          "feedback": "This describes the line $y = kx + b$, where the constant $b$ is the intercept on the vertical axis. When the line passes through the origin, $b = 0$, and then $y$ is also zero when $x$ is zero."
+        },
+        {
+          "text": "The quantities do not depend on each other.",
+          "feedback": "If the quantities did not depend on each other, the points would lie on a horizontal line or be scattered. A line whose slope is not zero shows a clear dependence."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a piece three times as big",
+      "justify": true,
+      "prompt": "A piece of aluminium has a volume of $20\\,\\text{cm}^3$ and a mass of $54\\,\\text{g}$. What is the mass of a $60\\,\\text{cm}^3$ piece made of the same aluminium?",
+      "choices": [
+        {
+          "text": "$94\\,\\text{g}$, because the volume increases by $40\\,\\text{cm}^3$ and the mass increases by the same number.",
+          "feedback": "The mass does not increase by as many grams as the volume increases in cubic centimetres. Each cubic centimetre of aluminium has a mass of $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2.7\\,\\text{g/cm}^3$, so $40\\,\\text{cm}^3$ adds $108\\,\\text{g}$ of mass, which gives $162\\,\\text{g}$ in total."
+        },
+        {
+          "text": "$162\\,\\text{g}$, because the volume triples and so the mass triples too.",
+          "correct": true,
+          "feedback": "Correct. When mass is directly proportional to volume, three times the volume gives three times the mass: $3 \\cdot 54\\,\\text{g} = 162\\,\\text{g}$. You get the same result with density: $54\\,\\text{g} : 20\\,\\text{cm}^3 = 2.7\\,\\text{g/cm}^3$, and $2.7\\,\\text{g/cm}^3 \\cdot 60\\,\\text{cm}^3 = 162\\,\\text{g}$."
+        },
+        {
+          "text": "$108\\,\\text{g}$, because the mass grows more slowly than the volume and only doubles.",
+          "feedback": "In an object made of one substance, every cubic centimetre has the same mass, $2.7\\,\\text{g}$. Three times as many cubic centimetres have three times the mass, so the mass grows as fast as the volume: $162\\,\\text{g}$."
+        },
+        {
+          "text": "You cannot know, because mass also depends on the shape of the object.",
+          "feedback": "Shape does not affect mass when the substance and the volume are the same. The density $2.7\\,\\text{g/cm}^3$ is a property of the substance, so $60\\,\\text{cm}^3$ of aluminium has a mass of $162\\,\\text{g}$ whatever its shape."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: two substances in the same coordinate system",
+      "justify": true,
+      "prompt": "The masses and volumes of pieces of aluminium and iron are measured, and the results are plotted in the same coordinate system with volume on the horizontal axis and mass on the vertical axis. What kind of lines do you get?",
+      "choices": [
+        {
+          "text": "Two identical lines, because both substances are metals.",
+          "feedback": "What matters is the kind of substance, not whether it is a metal. The density of aluminium is $2.70\\,\\text{g/cm}^3$ and that of iron is $7.87\\,\\text{g/cm}^3$, so for the same volume the mass of iron is almost three times as large and its line is steeper."
+        },
+        {
+          "text": "Two lines through the origin, and the iron line is steeper.",
+          "correct": true,
+          "feedback": "Correct. At zero volume the mass is zero, so the lines start from the origin. The slope is the density, and the density of iron, $7.87\\,\\text{g/cm}^3$, is greater than that of aluminium, $2.70\\,\\text{g/cm}^3$, so for the same volume the iron piece has a greater mass and its line is steeper."
+        },
+        {
+          "text": "Two lines that do not pass through the origin, because every object always has some minimum mass.",
+          "feedback": "An object with zero volume contains no matter, so its mass is zero and the line passes through the origin. Only if a container or packaging is included do the measurement points shift upwards; this is covered later."
+        },
+        {
+          "text": "The iron line is less steep, because iron is dense and less volume fits into it.",
+          "feedback": "The vertical axis shows mass. A dense substance has a lot of mass per unit of volume, so its mass grows quickly with volume and the line is steep, not shallow."
+        }
+      ]
+    },
+    {
+      "id": "alumiini",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Aluminium pieces: is mass proportional to volume?",
+      "source": "simulated",
+      "text": "The table shows example data for five aluminium pieces of different sizes. The volume has been calculated from the dimensions and the mass measured with a balance. The numbers are *example values*, not real measurements, but they include the usual measurement error.\n\n| Piece | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 10.0 | 26.8 |\n| 2 | 20.0 | 54.4 |\n| 3 | 30.0 | 80.6 |\n| 4 | 40.0 | 108.4 |\n| 5 | 50.0 | 134.6 |\n\nCalculate the ratio $m : V$ for each row.",
+      "question": {
+        "type": "choice",
+        "prompt": "What can you conclude from the table?",
+        "choices": [
+          {
+            "text": "Mass increases with volume, so mass is directly proportional to volume.",
+            "feedback": "Mere increase is not enough for proportionality. The line $m = V + 5$ would also increase with volume. In proportionality the ratio $m : V$ is constant, and you have to calculate it: here it is about $2.7\\,\\text{g/cm}^3$ in every row."
+          },
+          {
+            "text": "The ratio $m : V$ is almost the same in every row, about $2.7\\,\\text{g/cm}^3$, so mass is directly proportional to volume. The small differences are caused by measurement error.",
+            "correct": true,
+            "feedback": "Correct. The ratios are $2.68$, $2.72$, $2.69$, $2.71$ and $2.69\\,\\text{g/cm}^3$, and they differ from their mean $2.70\\,\\text{g/cm}^3$ by less than one per cent. The constant ratio is the density of the substance, which for aluminium is about $2.7\\,\\text{g/cm}^3$."
+          },
+          {
+            "text": "The difference $m - V$ stays the same, so the mass is always the same amount greater than the volume.",
+            "feedback": "The differences are $16.8$, $34.4$, $50.6$, $68.4$ and $84.6$, so they increase. In addition, mass and volume have different units, and you cannot subtract one from the other. The correct comparison is the ratio $m : V$."
+          },
+          {
+            "text": "The ratio $m : V$ varies from $2.68$ to $2.72$, so mass is not proportional to volume.",
+            "feedback": "Measurement results always show small variation (chapter *Measuring and the reliability of a measurement*). Each ratio differs from the mean by less than one per cent, and the differences are not systematic, so the ratio is in practice constant."
+          }
+        ]
+      }
+    },
+    {
+      "id": "metalli",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Unknown metal",
+      "source": "simulated",
+      "text": "The table shows example data for pieces made of an unknown metal. The numbers are *example values*. You can calculate density in two ways: as the ratio $m : V$ of a single row, or as the ratio of the differences $\\Delta m : \\Delta V$ of two rows far apart. The latter uses the whole measuring range.\n\n| Piece | $V$ ($\\text{cm}^3$) | $m$ (g) |\n|---|---|---|\n| 1 | 5.0 | 45.1 |\n| 2 | 10.0 | 89.2 |\n| 3 | 15.0 | 135.0 |\n| 4 | 20.0 | 178.9 |\n| 5 | 25.0 | 224.3 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the density of the metal using the first and last rows and the formula $\\rho = \\Delta m : \\Delta V$. Finally, compare your result with the table in the book (the theory part of this chapter): aluminium $2.70$, iron $7.87$, copper $8.96$, lead $11.3$ and gold $19.3\\,\\text{g/cm}^3$. Give your answer in $\\text{g/cm}^3$.",
+        "answer": 8.96,
+        "unit": "g/cm³",
+        "tolerance": 0.02,
+        "hints": [
+          "What is the change in mass and what is the change in volume between the first and the last row?",
+          "$\\Delta m = 224.3\\,\\text{g} - 45.1\\,\\text{g}$ and $\\Delta V = 25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3$.",
+          "$\\rho = \\dfrac{179.2\\,\\text{g}}{20.0\\,\\text{cm}^3}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.112,
+            "feedback": "Volume and mass have swapped places. Density is mass divided by volume, so $\\Delta m$ goes in the numerator and $\\Delta V$ in the denominator."
+          },
+          {
+            "value": 7.17,
+            "feedback": "You divided the change in mass $179.2\\,\\text{g}$ by the volume of the last row, $25.0\\,\\text{cm}^3$. You must also take the change in volume: $25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3 = 20.0\\,\\text{cm}^3$."
+          }
+        ],
+        "solution": "**Given:** first row $V_1 = 5.0\\,\\text{cm}^3$, $m_1 = 45.1\\,\\text{g}$ and last row $V_5 = 25.0\\,\\text{cm}^3$, $m_5 = 224.3\\,\\text{g}$\n\n**Find:** the density $\\rho$ of the metal in $\\text{g/cm}^3$\n\n**Principle:** Mass is directly proportional to volume, so the measurement points lie on the line $m = \\rho V$, whose slope is the density. The slope is obtained as the ratio of the differences of two points far apart.\n\n**Formula:** $\\rho = \\dfrac{\\Delta m}{\\Delta V} = \\dfrac{m_5 - m_1}{V_5 - V_1}$\n\n**Conversions:** Not needed: the masses are in grams and the volumes in cubic centimetres, and the answer is asked in $\\text{g/cm}^3$.\n\n**Substitution:** $\\rho = \\dfrac{224.3\\,\\text{g} - 45.1\\,\\text{g}}{25.0\\,\\text{cm}^3 - 5.0\\,\\text{cm}^3} = \\dfrac{179.2\\,\\text{g}}{20.0\\,\\text{cm}^3} = 8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Answer:** $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, three significant figures like the measurement results.\n\n**Reasonableness:** The value matches copper in the table, $8.96\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, so the metal is probably copper. Check with a single row: $\\dfrac{224.3\\,\\text{g}}{25.0\\,\\text{cm}^3} = 8.97\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, which is almost the same."
+      }
+    },
+    {
+      "id": "neste",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Liquid in a container: what does the mass consist of?",
+      "source": "simulated",
+      "text": "Liquid is poured into a measuring flask, and the balance shows the total mass $m_\\text{tot}$ of the flask and the liquid. The table has example data. The numbers are *example values*.\n\n| $V$ ($\\text{cm}^3$) | $m_\\text{tot}$ (g) |\n|---|---|\n| 0 | 42.1 |\n| 20 | 57.9 |\n| 40 | 73.5 |\n| 60 | 89.6 |\n| 80 | 105.1 |\n\nInvestigate how much the mass increases for every $20\\,\\text{cm}^3$.",
+      "question": {
+        "type": "choice",
+        "prompt": "Which statement is correct?",
+        "choices": [
+          {
+            "text": "The total mass is directly proportional to volume, because the mass increases with volume.",
+            "feedback": "When the volume is zero, the total mass is still $42.1\\,\\text{g}$, and the ratios $m_\\text{tot} : V$ are $2.9$, $1.8$, $1.5$ and $1.3\\,\\text{g/cm}^3$, so they are not constant. In a proportional dependence the line would pass through the origin."
+          },
+          {
+            "text": "The total mass is not directly proportional to volume. However, the mass increases by almost the same amount, about $16\\,\\text{g}$, for every $20\\,\\text{cm}^3$, and the mass of the empty flask is about $42\\,\\text{g}$.",
+            "correct": true,
+            "feedback": "Correct. The increases are $15.8$, $15.6$, $16.1$ and $15.5\\,\\text{g}$. Volume and mass depend on each other linearly: $m_\\text{tot} = \\rho V + m_0$. The slope of the line, $(105.1 - 42.1)\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0.79\\,\\text{g/cm}^3$, is the density of the liquid, and the intercept $m_0 \\approx 42\\,\\text{g}$ is the mass of the flask."
+          },
+          {
+            "text": "The slope of the line is the mass of the empty flask, about $42\\,\\text{g}$.",
+            "feedback": "The mass of the empty flask is the intercept of the line on the vertical axis, that is, the mass when $V = 0$. The slope tells you how much the mass increases per unit of volume, and it is the density of the liquid."
+          },
+          {
+            "text": "The density of the liquid is obtained from the last row: $105.1\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 1.3\\,\\text{g/cm}^3$.",
+            "feedback": "The mass in the last row includes the flask. If the mass of the flask, $42.1\\,\\text{g}$, is subtracted, the mass of the liquid is $63.0\\,\\text{g}$ and the density is $63.0\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0.79\\,\\text{g/cm}^3$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: how are mass and volume related?",
+      "prompt": "Write based on the three tables: How do you know that the mass of the aluminium pieces is directly proportional to volume? How was the density of the unknown metal obtained? Which line, that of aluminium or that of the unknown metal, would be steeper in the coordinate system, and why? What must you do if a liquid is measured in a container?",
+      "model": "For the aluminium pieces the ratio $m : V$ was about $2.7\\,\\text{g/cm}^3$ in every row, so mass is directly proportional to volume and the ratio is the density of the substance. The density of the unknown metal was obtained from the differences of two points far apart, $\\rho = \\Delta m : \\Delta V = 179.2\\,\\text{g} : 20.0\\,\\text{cm}^3 = 8.96\\,\\text{g/cm}^3$, and it matched copper. The line of copper is steeper than that of aluminium, because its density, that is its slope, is greater. The total mass of a liquid with its container is not proportional to volume, because the mass of the empty container is included. So the mass of the container must be subtracted from the total mass, or the density must be read from the slope of the line, in which case the mass of the container is the intercept. The data were example values with small measurement error. So you can work out what the cubes are made of by measuring their mass and volume and calculating the density from them.",
+      "criteria": [
+        "I justified proportionality with the ratio $m : V$, not only with the increase in mass.",
+        "I calculated the density using two points far apart or as the ratio $m : V$.",
+        "I explained that the mass of the container must be subtracted or that it shows up as the intercept.",
+        "I mentioned that the data were example values or that measurements contain error.",
+        "I said which substance has the steeper line and why, and what to measure about the cubes."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the mass of a $250\\,\\text{cm}^3$ piece of aluminium: $m = \\rho V = 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 = 675\\,000\\,\\text{kg}$. The result is far too large. Where is the error?",
+      "choices": [
+        {
+          "text": "The volume is in cubic centimetres, although the density is in $\\text{kg/m}^3$. Correct: $250\\,\\text{cm}^3 = 2.5 \\cdot 10^{-4}\\,\\text{m}^3$ and $m = 0.675\\,\\text{kg}$.",
+          "correct": true,
+          "feedback": "Correct. The units must be converted to the same system: $250\\,\\text{cm}^3 = 250 \\cdot 10^{-6}\\,\\text{m}^3 = 2.5 \\cdot 10^{-4}\\,\\text{m}^3$, and $2700\\,\\text{kg/m}^3 \\cdot 2.5 \\cdot 10^{-4}\\,\\text{m}^3 = 0.675\\,\\text{kg}$. You could have spotted the wrong result with an estimate: a quarter of a litre of aluminium cannot weigh hundreds of tonnes."
+        },
+        {
+          "text": "The formula is wrong: mass should be calculated by dividing volume by density, $m = V : \\rho$.",
+          "feedback": "The formula $m = \\rho V$ is correct, because density is mass per volume. Check the units: $V : \\rho$ would give the unit $\\text{m}^3 \\cdot \\text{m}^3/\\text{kg}$, which is not a unit of mass."
+        },
+        {
+          "text": "Density must always be given in $\\text{g/cm}^3$, so $\\text{kg/m}^3$ is not acceptable.",
+          "feedback": "Both units are acceptable as long as they are consistent: $2700\\,\\text{kg/m}^3 = 2.70\\,\\text{g/cm}^3$. The error arises only when the units of density and volume are from different systems."
+        },
+        {
+          "text": "There is no error in the calculation; the piece really has a mass of thousands of kilograms.",
+          "feedback": "Estimate the result: $250\\,\\text{cm}^3$ is a quarter of a litre, so the piece is about the size of a palm. That much water would have a mass of $250\\,\\text{g}$, and aluminium is 2.7 times as dense, so the mass is about $0.7\\,\\text{kg}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A stone found in a river has a mass of $187\\,\\text{g}$. A measuring cylinder contains $120\\,\\text{ml}$ of water, and when the stone is lowered in, the reading is $190\\,\\text{ml}$. What is the density of the substance of the stone? Give your answer in $\\text{kg/m}^3$.",
+      "answer": 2700,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the volume of the stone? The stone displaces its own volume of water.",
+        "The volume is $V = V_2 - V_1 = 190\\,\\text{ml} - 120\\,\\text{ml}$. Then convert the mass to kilograms and the volume to cubic metres: $1\\,\\text{ml} = 1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$.",
+        "$\\rho = \\dfrac{0.187\\,\\text{kg}}{70 \\cdot 10^{-6}\\,\\text{m}^3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.67,
+          "feedback": "Your result is correct if it is in $\\text{g/cm}^3$. However, the question asks for $\\text{kg/m}^3$, and $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$."
+        },
+        {
+          "value": 984,
+          "feedback": "You used the final water reading, $190\\,\\text{ml}$, as the volume. The volume of the stone is the rise of the water level, $190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml}$."
+        },
+        {
+          "value": 2670000,
+          "feedback": "The mass is in grams and the volume in cubic metres, so the units are from different systems. Convert the mass to kilograms: $187\\,\\text{g} = 0.187\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** mass of the stone $m = 187\\,\\text{g}$; water reading before $V_1 = 120\\,\\text{ml}$ and after $V_2 = 190\\,\\text{ml}$\n\n**Find:** the density $\\rho$ of the substance of the stone in $\\text{kg/m}^3$\n\n**Principle:** A submerged stone displaces its own volume of water, so the volume of the stone is the difference of the readings. Density is mass divided by volume.\n\n**Formula:** $V = V_2 - V_1$ and $\\rho = \\dfrac{m}{V} = \\dfrac{m}{V_2 - V_1}$\n\n**Conversions:** $V = 190\\,\\text{ml} - 120\\,\\text{ml} = 70\\,\\text{ml} = 70\\,\\text{cm}^3 = 70 \\cdot 10^{-6}\\,\\text{m}^3 = 7.0 \\cdot 10^{-5}\\,\\text{m}^3$ and $m = 187\\,\\text{g} = 0.187\\,\\text{kg}$.\n\n**Substitution:** $\\rho = \\dfrac{0.187\\,\\text{kg}}{7.0 \\cdot 10^{-5}\\,\\text{m}^3} = 2671\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Answer:** $2.7 \\cdot 10^3\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, two significant figures, because the difference of the readings, $70\\,\\text{ml}$, is known to two figures.\n\n**Reasonableness:** Rocks are usually about 2.5 to 3 times as dense as water, and $2.7 \\cdot 10^3\\,\\text{kg/m}^3$ is in this range. Estimate: $190\\,\\text{g}$ and $70\\,\\text{cm}^3$ would give about $2.7\\,\\text{g/cm}^3$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 exercises use the formula $\\rho = m : V$ directly, in level 2 exercises you convert units or handle measurement results, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two identical bottles are filled so that each contains $0.50\\,\\text{kg}$ of liquid: one with water and the other with cooking oil, whose density is $920\\,\\text{kg/m}^3$. Which liquid takes up more space?",
+      "choices": [
+        {
+          "text": "The cooking oil, because its density is lower and so the same mass takes up a greater volume: $V = m : \\rho$.",
+          "correct": true,
+          "feedback": "Correct. The volume of the water is $0.50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 = 5.0 \\cdot 10^{-4}\\,\\text{m}^3$ and that of the oil is $0.50\\,\\text{kg} : 920\\,\\text{kg/m}^3 = 5.4 \\cdot 10^{-4}\\,\\text{m}^3$. The lower the density, the more volume per unit of mass."
+        },
+        {
+          "text": "The water, because the density of water is greater and a dense substance takes up more space.",
+          "feedback": "A dense substance packs into a small space: density is mass per volume, so with a high density the same mass takes up less space. From the formula $V = m : \\rho$ you can see that a greater $\\rho$ gives a smaller $V$."
+        },
+        {
+          "text": "The same amount, because the mass is the same.",
+          "feedback": "The same mass does not mean the same volume. The volume is $V = m : \\rho$, and it also depends on the density, which is different for different substances."
+        },
+        {
+          "text": "You cannot tell, because the particles of the substances are different.",
+          "feedback": "The solution does not need a particle model. The densities $1000\\,\\text{kg/m}^3$ and $920\\,\\text{kg/m}^3$ and the mass are enough: $V = m : \\rho$ gives the volumes."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Density is a property of a substance",
+      "prompt": "The volume of an iron cube doubles, but the substance stays iron. What happens to the mass and the density of the cube?",
+      "choices": [
+        {
+          "text": "The mass doubles and the density stays the same.",
+          "feedback": "Correct. Mass is directly proportional to volume, $m = \\rho V$, so double the volume means double the mass. The density $\\rho = m : V$ does not change, because the ratio stays the same: it is a property of iron.",
+          "correct": true
+        },
+        {
+          "text": "The mass and the density both double.",
+          "feedback": "The mass doubles, but the density does not. If both the mass and the volume double, the ratio $m : V$ stays the same. Density does not tell you the size of an object but how much mass there is in one unit of volume."
+        },
+        {
+          "text": "The mass stays the same and the density halves.",
+          "feedback": "The mass does not stay the same: a cube of iron with double the volume contains twice as much iron, so its mass doubles. The density does not halve, because the ratio $m : V$ stays the same."
+        },
+        {
+          "text": "The mass doubles and the density halves.",
+          "feedback": "The density does not halve. When the volume doubles and the mass doubles, the ratio $\\rho = m : V$ stays the same. The density would decrease only if the volume grew without the mass growing."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Calculation exercise",
+      "prompt": "The edge of a pine cube is $20.0\\,\\text{cm}$ and the density of pine is $500\\,\\text{kg/m}^3$. What is the mass of the cube? Give your answer in kilograms.",
+      "answer": 4.0,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the volume of the cube. The volume of a cube is the edge to the power of three.",
+        "Convert the edge to metres: $20.0\\,\\text{cm} = 0.200\\,\\text{m}$. The volume is $V = a^3$.",
+        "$m = \\rho a^3 = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot (0.200\\,\\text{m})^3$."
+      ],
+      "mistakes": [
+        {
+          "value": 4000000,
+          "feedback": "The volume is in cubic centimetres ($8000\\,\\text{cm}^3$), but the density is in $\\text{kg/m}^3$. Convert the edge to metres before calculating: $0.200\\,\\text{m}$."
+        },
+        {
+          "value": 100,
+          "feedback": "You used the edge $0.200\\,\\text{m}$ as the volume. The volume of a cube is the edge to the power of three, $a^3 = (0.200\\,\\text{m})^3 = 0.00800\\,\\text{m}^3$."
+        }
+      ],
+      "solution": "**Given:** edge of the cube $a = 20.0\\,\\text{cm}$; density of pine $\\rho = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Find:** the mass $m$ of the cube in kilograms\n\n**Principle:** The cube is pine all the way through, so the mass is density times volume. The volume of a cube is the edge to the power of three.\n\n**Formula:** $V = a^3$ and $m = \\rho V = \\rho a^3$\n\n**Conversions:** The density is in $\\text{kg/m}^3$, so the edge is converted to metres: $a = 20.0\\,\\text{cm} = 0.200\\,\\text{m}$.\n\n**Substitution:** $m = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot (0.200\\,\\text{m})^3 = 500\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 0.00800\\,\\text{m}^3 = 4.00\\,\\text{kg}$\n\n**Answer:** $4.00\\,\\text{kg}$, three significant figures like the edge $20.0\\,\\text{cm}$.\n\n**Reasonableness:** The volume of the cube is $8.00\\,\\text{dm}^3$, that is, eight litres. The same volume of water would be $8\\,\\text{kg}$, and pine is about half as dense as water, so the mass is about $4\\,\\text{kg}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and justify",
+      "optional": true,
+      "prompt": "A student measures the mass and volume of an unknown piece of metal and calculates a density of $8.9\\,\\text{g/cm}^3$. The student says: \"The piece is copper.\" Explain why density is a good way to identify a substance and why the conclusion is still not completely certain.",
+      "criteria": [
+        "I say that density is a property of the substance and does not depend on the size of the object.",
+        "I compare the result with the table value: the density of copper is $8.96\\,\\text{g/cm}^3$.",
+        "I mention measurement error: the result differs slightly from the table value, and the measurement of volume limits the accuracy.",
+        "I mention that different substances can have almost the same density or that the piece may be an alloy."
+      ],
+      "model": "Density $\\rho = m : V$ is a property of the substance: a large and a small piece of the same substance give the same result. That is why a measured density can be compared with table values. The result $8.9\\,\\text{g/cm}^3$ is very close to the value for copper, $8.96\\,\\text{g/cm}^3$, so copper is likely. The conclusion is not certain, because measurements always contain error, especially in the volume, and because other substances or alloys may have a density close to the same value. Other tests, such as colour or magnetism, add certainty."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}

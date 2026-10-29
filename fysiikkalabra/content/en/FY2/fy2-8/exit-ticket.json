@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What do greenhouse gases do to the Sun's radiation and to the thermal radiation of the ground?",
+    "a": "They let most of the Sun's radiation through but absorb the thermal radiation of the ground and radiate part of it back down. So thermal radiation escapes into space more slowly and the ground stays warmer."
+  },
+  {
+    "q": "$10\\,\\text{kWh}$ of electricity is used, and it has been produced with wind power, whose emission factor is $12\\,\\text{g/kWh}$. How much carbon dioxide equivalent is produced?",
+    "a": "$m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 10\\,\\text{kWh} = 120\\,\\text{g}$."
+  },
+  {
+    "q": "Why can wind power not be called completely emission-free, and by how much smaller are its emissions than those of coal?",
+    "a": "Making, transporting, building and dismantling the turbines cause emissions, so the life-cycle emission factor is about $12\\,\\text{g/kWh}$. For coal it is about $820\\,\\text{g/kWh}$, so the emissions of coal are about $70$ times as large."
+  }
+]

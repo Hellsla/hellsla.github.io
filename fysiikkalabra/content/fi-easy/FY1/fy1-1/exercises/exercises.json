@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy1-1-L1-01",
+      "level": 1,
+      "text": "Punasolun halkaisija on $7{,}5\\cdot10^{-6}\\,\\text{m}$. Kuinka monta mikrometriä se on? Yksi mikrometri on $1\\,\\mu\\text{m} = 10^{-6}\\,\\text{m}$.",
+      "answer": 7.5,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-02",
+      "level": 1,
+      "text": "Kuvassa on koon $d$ kymmenpotenssiakseli. Siihen on merkitty vetyatomi ja muurahainen. Montako suuruusluokkaa niiden koon välillä on?",
+      "figure": "fy1-1/scale-marks",
+      "answer": 8,
+      "unit": "suuruusluokkaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-03",
+      "level": 1,
+      "text": "Maan halkaisija on $1{,}27\\cdot10^{7}\\,\\text{m}$. Anna se kilometreinä.",
+      "answer": 12700,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-04",
+      "level": 1,
+      "text": "Lyijyatomin halkaisija on noin $3{,}5\\cdot10^{-10}\\,\\text{m}$ ja sen ytimen halkaisija noin $1{,}4\\cdot10^{-14}\\,\\text{m}$. Kuinka monta kertaa atomi on ydintään suurempi?",
+      "answer": 25000,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-05",
+      "level": 1,
+      "text": "Hiuksen paksuus on $7{,}0\\cdot10^{-5}\\,\\text{m}$ ja punasolun halkaisija $7{,}5\\cdot10^{-6}\\,\\text{m}$. Kuinka monta kertaa hius on punasolua paksumpi?",
+      "answer": 9.33,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy1-1-L2-01",
+      "level": 2,
+      "text": "Linnunradan halkaisija on noin $1{,}0\\cdot10^{5}$ valovuotta, ja yksi valovuosi on $9{,}46\\cdot10^{15}\\,\\text{m}$. Havaittavan maailmankaikkeuden halkaisija on noin $8{,}8\\cdot10^{26}\\,\\text{m}$. Kuinka monta Linnunradan halkaisijaa mahtuisi rivissä havaittavan maailmankaikkeuden halkaisijalle? Anna vastaus tuhansina.",
+      "answer": 930.2,
+      "unit": "tuhatta",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-02",
+      "level": 2,
+      "text": "Proxima Centauri on $4{,}0\\cdot10^{16}\\,\\text{m}$ päässä. Valon nopeus on $2{,}998\\cdot10^{8}\\,\\text{m/s}$, ja yksi vuosi on $3{,}156\\cdot10^{7}\\,\\text{s}$. Kuinka monta vuotta valolta kuluu matkaan?",
+      "answer": 4.23,
+      "unit": "a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-03",
+      "level": 2,
+      "text": "Maapallon ympärysmitta on $4{,}0\\cdot10^{7}\\,\\text{m}$. Kuinka monta $1{,}7\\,\\text{m}$ pitkää ihmistä pitäisi asettaa päästä päähän, jotta jono ulottuisi maapallon ympäri? Anna vastaus miljoonina.",
+      "answer": 23.5,
+      "unit": "miljoonaa ihmistä",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-1-L2-04",
+      "level": 2,
+      "text": "Auringon halkaisija on $1{,}39\\cdot10^{9}\\,\\text{m}$ ja Maan halkaisija $1{,}27\\cdot10^{7}\\,\\text{m}$. Pallon tilavuus on suoraan verrannollinen halkaisijan kolmanteen potenssiin. Kuinka monta kertaa suurempi Auringon tilavuus on kuin Maan tilavuus? Anna vastaus miljoonina.",
+      "answer": 1.31,
+      "unit": "miljoonaa kertaa",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy1-1-L3-01",
+      "level": 3,
+      "text": "Tehdään pienoismalli, jossa Maa on $1{,}0\\,\\text{cm}$ halkaisijaltaan oleva pallo. Kaikki muut etäisyydet piirretään samassa mittakaavassa. Maan etäisyys Auringosta on $1{,}50\\cdot10^{11}\\,\\text{m}$ ja Maan halkaisija $1{,}27\\cdot10^{7}\\,\\text{m}$. Kuinka kauas pallosta Aurinko olisi pienoismallissa?",
+      "answer": 118,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-02",
+      "level": 3,
+      "text": "Planckin pituus on $1{,}6\\cdot10^{-35}\\,\\text{m}$, protonin koko $1{,}7\\cdot10^{-15}\\,\\text{m}$ ja ihmisen pituus $1{,}7\\,\\text{m}$. Kumpi suuruusluokkien ero on suurempi: Planckin pituuden ja protonin vai protonin ja ihmisen? Anna suurempi ero kymmenpotenssien lukumääränä.",
+      "answer": 20,
+      "unit": "suuruusluokkaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-03",
+      "level": 3,
+      "text": "Elektronimikroskoopilla otetussa kuvassa virus näkyy $5{,}0\\,\\text{cm}$ leveänä. Viruksen halkaisija on $1{,}0\\cdot10^{-7}\\,\\text{m}$. Kuvaa ei muuteta mitenkään. Kuinka leveänä samassa kuvassa näkyisi punasolu, jonka halkaisija on $7{,}5\\cdot10^{-6}\\,\\text{m}$? Anna vastaus senttimetreinä.",
+      "answer": 375,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

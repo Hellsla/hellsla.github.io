@@ -1,0 +1,6 @@
+[
+  {
+    "q": "How many moles of gas are in a 10.0 litre container when the pressure is 150 kPa and the temperature is $27\\,{}^\\circ\\text{C}$ ($R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$)?",
+    "a": "$T = (27 + 273.15)\\,\\text{K} = 300.15\\,\\text{K}$, and $n = \\dfrac{pV}{RT} = \\dfrac{150\\,000\\,\\text{Pa} \\cdot 0.0100\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 300.15\\,\\text{K}} \\approx 0.601\\,\\text{mol}$."
+  }
+]

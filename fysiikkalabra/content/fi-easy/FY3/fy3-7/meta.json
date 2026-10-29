@@ -1,0 +1,22 @@
+{
+  "id": "fy3-7",
+  "course": "FY3",
+  "title": "Olomuodon muutokset",
+  "goals": [
+    "LOPS FY3: olomuodon muutokset",
+    "Temaattinen tarkastelu: ominaishöyrystymislämpö voidaan määrittää kuumentamalla vettä uppokuumentimella. Vesi on avoimessa kalorimetrissä vaa'an päällä.",
+    "Täsmennys: mikromalli olomuodoille ja niiden muutoksille"
+  ],
+  "prerequisites": [
+    "fy3-6"
+  ],
+  "glossary": [
+    "olomuoto",
+    "sulamislämpö",
+    "höyrystymislämpö",
+    "lämpenemiskäyrä",
+    "faasikaavio"
+  ],
+  "sim": true,
+  "image": false
+}

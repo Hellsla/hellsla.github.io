@@ -45,7 +45,10 @@ RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "enn
 def heading(title):
     """(key, shown) of a lesson.md `## ` heading. The formula section is named after its law, `## Kaava: Lämpömäärä`:
     the page shows "Lämpömäärä", while inquiry.json, the lint and the build keep using the key "Kaava". A heading
-    written in another language (lang "sections", `## Core idea`) has the key of the section it translates."""
+    written in another language (lang "sections", `## Core idea`) has the key of the section it translates; a lesson's
+    own section names its Finnish key at the end, `## The structure of matter {Aineen rakenne}`."""
+    own = re.match(r"(.+?)\s*\{([^{}$]+)\}\s*$", title.strip())
+    if own: return (own.group(2).strip(), own.group(1).strip())
     names = {v: k for k, v in T("sections").items() if not k.startswith("_")}
     m = re.match(r"(.+?):\s*(\S.*)$", title.strip())
     if m and names.get(m.group(1)) == "Kaava": return ("Kaava", m.group(2).strip())

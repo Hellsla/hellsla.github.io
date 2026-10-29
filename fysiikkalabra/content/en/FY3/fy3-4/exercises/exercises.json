@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-4-L1-01",
+      "level": 1,
+      "text": "A skier's weight is 720 N. It is spread evenly over the bases of the skis, whose total area is 0.30 m². How large is the pressure that the skis exert on the snow?",
+      "answer": 2400,
+      "unit": "Pa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-02",
+      "level": 1,
+      "text": "The deepest point of Lake Päijänne is at a depth of about $95\\,\\text{m}$. How large is the hydrostatic pressure there? The density of water is $1000\\,\\text{kg/m}^3$. Give the answer in kilopascals.",
+      "answer": 930,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-03",
+      "level": 1,
+      "text": "A pressure gauge has been installed on the bottom of a lake at a depth of $18.0\\,\\text{m}$. During a low-pressure weather system the atmospheric pressure at the surface of the lake is 98.5 kPa. What is the total pressure at the gauge? The density of water is $1000\\,\\text{kg/m}^3$.",
+      "answer": 275,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-04",
+      "level": 1,
+      "text": "The weight of a sauna stove is 750 N. The stove stands on four legs whose total area against the floor is 0.0025 m². How large is the pressure that the legs exert on the floor? Give the answer in kilopascals.",
+      "answer": 300,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-05",
+      "level": 1,
+      "text": "The depth of the water in a sauna bucket is $0.45\\,\\text{m}$. How large is the hydrostatic pressure at the bottom of the bucket? The density of water is $1000\\,\\text{kg/m}^3$.",
+      "answer": 4400,
+      "unit": "Pa",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-4-L2-01",
+      "level": 2,
+      "text": "A person's weight is 600 N. At the start of a step the person presses on a parquet floor for a moment with only the heel of a high-heeled shoe, whose contact area with the floor is 1.5 cm². How large is the pressure that the heel exerts on the floor? Give the answer in megapascals (MPa); the prefix mega means a million.",
+      "answer": 4.0,
+      "unit": "MPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L2-02",
+      "level": 2,
+      "text": "A house gets its water from a water tower. When the taps are closed, a pressure gauge at the tap in the cellar shows a gauge pressure of 350 kPa. How high above the tap is the water surface in the tower? The density of water is $1000\\,\\text{kg/m}^3$.",
+      "answer": 35.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L2-03",
+      "level": 2,
+      "text": "The graph shows the pressures of two liquids, A and B, as a function of depth. At the surface the pressure is the same in both. At what depth in liquid A is the pressure equal to the pressure in liquid B at a depth of $4.0\\,\\text{m}$?",
+      "figure": "fy3-4/two-liquids",
+      "answer": 6.0,
+      "unit": "m",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy3-4-L2-04",
+      "level": 2,
+      "text": "Inside a pressure cooker there is a gauge pressure of 0.85 bar (1 bar = 100 kPa). The area of the lid is 380 cm². How large a force does the gauge pressure exert on the lid? Give the answer in kilonewtons.",
+      "answer": 3.2,
+      "unit": "kN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-4-L3-01",
+      "level": 3,
+      "text": "A hiker's mass with a rucksack is $85\\,\\text{kg}$. Soft snow supports the hiker if the pressure on it is at most 6.0 kPa. When walking, the hiker is for a moment on only one foot. How large must the area of one snowshoe be at least, so that the hiker does not sink?",
+      "answer": 0.14,
+      "unit": "m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L3-02",
+      "level": 3,
+      "text": "The rainwater barrel at a cottage is full of water, and its tight lid is against the water. The area of the lid is 0.25 m². A thin vertical hose is installed through the lid and filled with water to a height of $4.0\\,\\text{m}$ above the lid. The hose holds only $0.40\\,\\textsf{l}$ of water. By how much does the force with which the water in the barrel presses on the lid increase? Give the answer in kilonewtons.",
+      "answer": 9.8,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L3-03",
+      "level": 3,
+      "text": "At the bottom of an oil separator well at a petrol station there is a $1.60\\,\\text{m}$ layer of water and on top of it a $0.40\\,\\text{m}$ layer of oil with a density of $850\\,\\text{kg/m}^3$. How large is the gauge pressure at the bottom of the well? The density of water is $1000\\,\\text{kg/m}^3$. Give the answer in kilopascals.",
+      "answer": 19,
+      "unit": "kPa",
+      "tolerance": 0.02
+    }
+  ]
+}

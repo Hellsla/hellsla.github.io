@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "contribution": "Energialle tulee yksikkö joule ja etuliitteet kJ, MJ, GJ ja TJ. Energian säilyminen ja muuntuminen näytetään ketjuina, joissa osa energiasta muuttuu joka vaiheessa lämpöenergiaksi. Arjen ja yhteiskunnan energioita verrataan suuruusluokittain tikapuilla.",
+  "learn": [
+    "Osaat selittää energiaketjun ja sen, mihin energia lopulta muuttuu.",
+    "Osaat ilmoittaa energian jouleina ja etuliitteillä kJ, MJ, GJ ja TJ.",
+    "Osaat vertailla arjen ja yhteiskunnan energioita suuruusluokittain."
+  ],
+  "prior": [
+    "Energia esiintyy eri muodoissa ja säilyy (luku *Energialajit ja energian säilyminen*)",
+    "Etuliitteet kilo, mega, giga ja tera ovat kymmenen potensseja (luku *Suureet, yksiköt ja SI-järjestelmä*)",
+    "Kymmenpotenssit ja suuruusluokat (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Aamulla syöt kaurapuuron ja lähdet pyörällä kouluun. Polkimet pyörivät ja vauhti pysyy yllä. Renkaat lämpenevät. Perillä jarrutat ja pysähdyt. Kaura kasvoi pellolla kesän ajan, ja koko ajan sen päällä paistoi Aurinko.",
+      "question": "Mistä pyörän liikkeen energia on peräisin? Mihin se lopulta menee, kun pysähdyt?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: energian säilyminen",
+      "optional": true,
+      "prompt": "Auto jarruttaa ja pysähtyy. Mikä kuvaus auton liike-energiasta on oikea (luku *Energialajit ja energian säilyminen*)?",
+      "choices": [
+        {
+          "text": "Liike-energia häviää, koska auto ei enää liiku.",
+          "feedback": "Energia ei häviä. Kun auto pysähtyy, sen liike-energia muuttuu muuksi energiaksi. Energiaa on yhteensä yhtä paljon kuin ennen jarrutusta."
+        },
+        {
+          "text": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä pääosin lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin ennen.",
+          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: liike-energiasta tulee lämpöenergiaa. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja. Lisäksi lasketaan energiaa jouleina.",
+          "correct": true
+        },
+        {
+          "text": "Liike-energia siirtyy tiehen ja jää sinne liike-energiana.",
+          "feedback": "Tie ei lähde liikkeelle. Energia ei siis jää sinne liike-energiana. Se muuttuu lämpöenergiaksi, joka lämmittää jarruja, renkaita ja tietä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: bensiiniä vai ruokaa",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Kumpi sisältää enemmän kemiallista energiaa: yksi litra bensiiniä vai aikuisen koko päivän ruoka?",
+      "choices": [
+        {
+          "text": "Päivän ruoka, koska ihminen jaksaa sillä toimia koko päivän.",
+          "feedback": "Taulukkoarvot kumoavat tämän: päivän ruoka on noin $10\\,\\text{MJ}$ ja litra bensiiniä noin $32\\,\\text{MJ}$. Jaksaminen ei kerro energian määrästä. Keho nimittäin muuttaa suuren osan ruoan energiasta lämpöenergiaksi."
+        },
+        {
+          "text": "Litra bensiiniä, noin kolminkertaisesti.",
+          "feedback": "Arvot tukevat tätä: litra bensiiniä on noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Suhde on siis $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3{,}2$. Pieni määrä polttoainetta sisältää paljon energiaa.",
+          "correct": true
+        },
+        {
+          "text": "Yhtä paljon, koska kummallakin voi liikkua suunnilleen saman matkan.",
+          "feedback": "Arvot kumoavat tämän: $32\\,\\text{MJ}$ ja $10\\,\\text{MJ}$. Matka ei kerro energian määrästä. Polttoaineen energiasta suuri osa muuttuu auton moottorissa lämpöenergiaksi."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: Aurinko ja ihmiskunta",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Aurinko lähettää Maahan säteilyenergiaa jatkuvasti. Auringon säteily lämmittää koko maapallon. Se pitää yllä tuulet, sateet ja kasvien kasvun. Ihmisten voimalat ja moottorit ovat sen rinnalla pieniä pisteitä Maan pinnalla. Kuinka pitkän ajan ihmiskunnan koko energiankäyttö (sähkö, lämmitys, liikenne, teollisuus) on yhteensä yhtä suuri kuin yhden tunnin auringonsäteily Maahan?",
+      "choices": [
+        {
+          "text": "Noin tunnin.",
+          "feedback": "Arvot kumoavat tämän: tunnin auringonsäteily Maahan on noin $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ihmiskunta käytti vuonna 2023 noin $6{,}2 \\cdot 10^{20}\\,\\text{J}$ koko vuodessa."
+        },
+        {
+          "text": "Noin vuoden.",
+          "feedback": "Arvot tukevat tätä: Auringosta tulee tunnissa noin $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ihmiskunnan energiankäyttö vuodessa oli noin $6{,}2 \\cdot 10^{20}\\,\\text{J}$ eli samaa suuruusluokkaa.",
+          "correct": true
+        },
+        {
+          "text": "Noin tuhat vuotta.",
+          "feedback": "Arvot kumoavat tämän: tuhannessa vuodessa ihmiskunta käyttäisi noin tuhatkertaisen määrän, $6 \\cdot 10^{23}\\,\\text{J}$. Sen verran auringonsäteilyä tulee Maahan noin tuhannessa tunnissa eli noin $40$ vuorokaudessa. Se ei tule yhdessä tunnissa."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Jokainen askel tikkailla on kymmenkertainen. Valitse kohde ja katso, mille askelmalle se osuu.",
+      "howto": "Valitse *Kohde*-valikosta energia. Näkymä siirtyy sen kohdalle. Valitun kohteen energia näkyy sen nimen alla. Painikkeilla liikut tikkailla ylös tai alas. Yksi painallus on yksi kymmenpotenssi. Täytetty piste tarkoittaa lähteestä tai laskusta saatua arvoa. Rengas tarkoittaa arviota. Valitun kohteen arvo ja lähde näkyvät myös tikapuiden alla.",
+      "model": "Arvot ovat pyöristettyjä suuruusluokkia. Ne eivät ole tarkkoja mittauksia. Salaman energia vaihtelee paljon, ja päivän ruoan energia riippuu ihmisestä. Jokaisella kohteella on lähde (taulukkoarvo, tilasto tai lasku) tai merkintä arviosta. Asteikko on logaritminen. Yhtä pitkä matka tikkailla tarkoittaa siis aina yhtä monta kertaa suurempaa energiaa.",
+      "calc": "Kunkin kohteen energia on kirjoitettu muodossa lukuarvo kertaa kymmenen potenssi, esimerkiksi $3{,}2 \\cdot 10^{7}\\,\\text{J}$. Etuliite saadaan korvaamalla potenssi sen arvolla: $10^{6}\\,\\text{J} = 1\\,\\text{MJ}$, joten $3{,}2 \\cdot 10^{7}\\,\\text{J} = 32 \\cdot 10^{6}\\,\\text{J} = 32\\,\\text{MJ}$. Kun vertaat kahta kohdetta, jaa suurempi energia pienemmällä: $32\\,\\text{MJ} : 10\\,\\text{MJ} = 3{,}2$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: bensiini ja ruoka",
+      "intro": "Testaa ennuste 1. Valitse *Kohde*-valikosta ensin päivän ruoka ja sitten litra bensiiniä. Kirjaa kummankin energia megajouleina. Voit kirjata myös banaanin ja suklaalevyn.",
+      "initial": {
+        "kohde": "päivän ruoka"
+      },
+      "locked": [],
+      "vary": "kohde",
+      "names": {
+        "kohde": "kohde"
+      },
+      "measure": [
+        {
+          "key": "E_MJ",
+          "label": "$E$ (MJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: Aurinko ja ihmiskunta",
+      "intro": "Testaa ennuste 2. Valitse *Kohde*-valikosta ensin Auringon säteily Maahan yhdessä tunnissa. Valitse sitten ihmiskunnan energiankäyttö vuodessa. Kirjaa kummankin energia eksajouleina ($1\\,\\text{EJ} = 10^{18}\\,\\text{J}$). Vertaa lukuja keskenään.",
+      "initial": {
+        "kohde": "Aurinko Maahan tunnissa"
+      },
+      "locked": [],
+      "vary": "kohde",
+      "names": {
+        "kohde": "kohde"
+      },
+      "measure": [
+        {
+          "key": "E_EJ",
+          "label": "$E$ (EJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "ketju",
+      "stage": "tutki",
+      "type": "interpret",
+      "source": "model",
+      "title": "Energiaketju voimalasta vedenkeittimeen",
+      "text": "Esimerkkiketju (laskettu malli, ei mittaus): polttoaineen kemiallinen energia muuttuu voimalaitoksessa sähköksi. Sähkö siirtyy verkon kautta kotiin, ja vedenkeitin lämmittää veden. Taulukossa on kussakin vaiheessa jäljellä oleva hyödyllinen energia.\n\n| Vaihe | Energia | Muoto |\n| --- | --- | --- |\n| Polttoaine | $100\\,\\text{MJ}$ | kemiallinen |\n| Voimala | $40\\,\\text{MJ}$ | sähkö |\n| Verkko | $38\\,\\text{MJ}$ | sähkö |\n| Vesi | $34\\,\\text{MJ}$ | lämpöenergia |",
+      "question": {
+        "id": "ketju-lampo",
+        "type": "numeric",
+        "prompt": "Kuinka monta megajoulea polttoaineen energiasta on päätynyt ketjun varrella muualle kuin veteen? Vastaa megajouleina.",
+        "answer": 66,
+        "unit": "MJ",
+        "tolerance": 0.02,
+        "hints": [
+          "Energia säilyy. Kuinka paljon energiaa oli alussa? Kuinka paljon sitä on lopussa vedessä?",
+          "Muualle kuin veteen päätynyt energia on alkuenergian ja veteen siirtyneen energian erotus: $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$.",
+          "$E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ}$."
+        ],
+        "mistakes": [
+          {
+            "value": 60,
+            "feedback": "Laskit vain sen energian, joka muuttui voimalaitoksessa lämpöenergiaksi: $100\\,\\text{MJ} - 40\\,\\text{MJ}$. Myös verkossa ja vedenkeittimessä energiaa muuttuu lämpöenergiaksi. Koko ketjun osuus on alkuenergian ja veteen jääneen energian erotus."
+          },
+          {
+            "value": 34,
+            "feedback": "$34\\,\\text{MJ}$ on veteen siirtynyt energia. Se ei ole muualle päätynyt energia. Kysytty on loput, kun alussa oli $100\\,\\text{MJ}$."
+          }
+        ],
+        "solution": "**Annettu:** polttoaineen kemiallinen energia $E_\\text{alussa} = 100\\,\\text{MJ}$ ja veteen siirtynyt energia $E_\\text{vesi} = 34\\,\\text{MJ}$\n\n**Kysytty:** muualle kuin veteen päätynyt energia $E_\\text{muu}$ megajouleina\n\n**Periaate:** Energia säilyy. Alkuenergia jakautuu siis kokonaan veteen ja muualle. Muu energia muuttui lämpöenergiaksi voimalaitoksessa, verkossa ja keittimessä. Se siirtyi lämpönä ympäristöön.\n\n**Kaava:** $E_\\text{alussa} = E_\\text{vesi} + E_\\text{muu}$, josta $E_\\text{muu} = E_\\text{alussa} - E_\\text{vesi}$\n\n**Muunnokset:** Ei tarvita. Kaikki energiat on annettu megajouleina.\n\n**Sijoitus:** $E_\\text{muu} = 100\\,\\text{MJ} - 34\\,\\text{MJ} = 66\\,\\text{MJ}$\n\n**Vastaus:** $66\\,\\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $34\\,\\text{MJ}$.\n\n**Järkevyys:** Vaiheiden lämmöt ovat $100\\,\\text{MJ} - 40\\,\\text{MJ} = 60\\,\\text{MJ}$, $40\\,\\text{MJ} - 38\\,\\text{MJ} = 2\\,\\text{MJ}$ ja $38\\,\\text{MJ} - 34\\,\\text{MJ} = 4\\,\\text{MJ}$. Ne tekevät yhteensä $60\\,\\text{MJ} + 2\\,\\text{MJ} + 4\\,\\text{MJ} = 66\\,\\text{MJ}$. Tämä on enemmän kuin veteen jäänyt energia. Voimalaitoksissa niin on."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: paljonko energiaa on ja mihin se menee?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi ja energiaketjun perusteella vastaukset kolmeen kysymykseen. Kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Miten Auringosta tuleva tunnin energia vertautui ihmiskunnan vuoden energiankäyttöön? Mihin muotoon ketjun energia lopulta päätyy?",
+      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Suuri osa muuttuu kuitenkin joka vaiheessa lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
+      "criteria": [
+        "Vertasin bensiiniä ja ruokaa luvuilla ja sanoin, kuinka moninkertainen ero on.",
+        "Sanoin, että Auringon tunti ja ihmiskunnan vuosi ovat samaa suuruusluokkaa.",
+        "Kerroin, että ketjun energia säilyy mutta päätyy suurelta osin lämpöenergiaksi.",
+        "Mainitsin, että arvot ovat pyöristettyjä suuruusluokkia."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi taulukoihin. Palaa sitten alun kysymykseen: mistä pyörän energia on peräisin, ja mihin se menee, kun pysähdyt? Kuvaile ketju vaihe vaiheelta.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija muuntaa energian $2{,}5\\,\\text{kJ}$ jouleiksi. Hän kirjoittaa $2{,}5\\,\\text{kJ} = 2{,}5 : 1000\\,\\text{J} = 0{,}0025\\,\\text{J}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Kilo tarkoittaa tuhatta, joten luku pitäisi kertoa tuhannella: $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
+          "feedback": "Oikein. Etuliite kilo tarkoittaa tuhatta. Kilojoulessa on siis tuhat joulea, ja jouleina luku on tuhatkertainen. Voit tarkistaa järkevyyden suuruusluokasta: joule on pienempi yksikkö kuin kilojoule, joten lukuarvon pitää kasvaa.",
+          "correct": true
+        },
+        {
+          "text": "Virhettä ei ole, koska pienempi yksikkö tarkoittaa pienempää lukua.",
+          "feedback": "Päinvastoin: joule on pienempi yksikkö kuin kilojoule. Samaan energiaan tarvitaan siis enemmän jouleja eli suurempi luku."
+        },
+        {
+          "text": "Tulos olisi pitänyt jakaa vielä sadalla, koska kilo on sata.",
+          "feedback": "Kilo on tuhat, ei sata. Muunnos tehdään korvaamalla etuliite arvollaan, $\\text{kJ} = 1000\\,\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Tuulivoimapuisto tuottaa vuorokaudessa sähköenergiaa $360\\,\\text{GJ}$. Sähköverkossa $9\\,\\text{GJ}$ muuttuu matkalla lämpöenergiaksi. Kuluttajat käyttävät sähköä $0{,}300\\,\\text{TJ}$. Loppu varastoidaan akkuun. Kuinka monta gigajoulea akkuun varastoidaan?",
+      "answer": 51,
+      "unit": "GJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin kaikkialle tuotettu sähköenergia menee? Energiaa ei häviä.",
+        "Kirjoita säilymislaki: tuotettu energia on yhtä suuri kuin lämpöenergiaksi muuttunut, kuluttajien käyttämä ja varastoitu energia yhteensä. Ratkaise varastoitu energia.",
+        "Muunna ensin samaan yksikköön: $0{,}300\\,\\text{TJ} = 0{,}300 \\cdot 1000\\,\\text{GJ}$. Laske sitten $E_\\text{akku} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 51000,
+          "feedback": "Luku $51\\,000$ on oikea tulos megajouleina: $51\\,000\\,\\text{MJ} = 51 \\cdot 1000\\,\\text{MJ} = 51\\,\\text{GJ}$. Kysytty on gigajouleina. Jätä vastaus siis gigajouleiksi."
+        },
+        {
+          "value": 351,
+          "feedback": "Vähensit vain verkon lämmön, $360\\,\\text{GJ} - 9\\,\\text{GJ}$. Myös kuluttajien käyttämä energia $300\\,\\text{GJ}$ pitää vähentää, ennen kuin saat akkuun jäävän energian."
+        }
+      ],
+      "solution": "**Annettu:** tuotettu sähköenergia $E_\\text{tuotettu} = 360\\,\\text{GJ}$, verkossa lämpöenergiaksi $E_\\text{lämpö} = 9\\,\\text{GJ}$, kuluttajat $E_\\text{käyttö} = 0{,}300\\,\\text{TJ}$\n\n**Kysytty:** akkuun varastoitu energia $E_\\text{akku}$ gigajouleina\n\n**Periaate:** Energia säilyy. Tuotettu energia jakautuu lämpöenergiaksi, kuluttajille ja akkuun. Mitään ei häviä, joten osat yhdessä ovat yhtä suuret kuin tuotettu energia.\n\n**Kaava:** $E_\\text{tuotettu} = E_\\text{lämpö} + E_\\text{käyttö} + E_\\text{akku}$, josta $E_\\text{akku} = E_\\text{tuotettu} - E_\\text{lämpö} - E_\\text{käyttö}$\n\n**Muunnokset:** Terajoule korvataan arvollaan: $0{,}300\\,\\text{TJ} = 0{,}300 \\cdot 1000\\,\\text{GJ} = 300\\,\\text{GJ}$.\n\n**Sijoitus:** $E_\\text{akku} = 360\\,\\text{GJ} - 9\\,\\text{GJ} - 300\\,\\text{GJ} = 51\\,\\text{GJ}$\n\n**Vastaus:** $51\\,\\text{GJ}$, kokonaisen gigajoulen tarkkuudella. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto. Kaikki tiedot ($360\\,\\text{GJ}$, $9\\,\\text{GJ}$ ja $0{,}300\\,\\text{TJ} = 300\\,\\text{GJ}$) tunnetaan gigajoulen tarkkuudella.\n\n**Järkevyys:** Akkuun jää pieni osa tuotetusta energiasta. Summa on oikein: $9\\,\\text{GJ} + 300\\,\\text{GJ} + 51\\,\\text{GJ} = 360\\,\\text{GJ}$. Verkossa lämpöenergiaksi muuttunut energia on pienin erä. Se sopii siihen, että siirtohäviöt ovat pieniä."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä muunnetaan etuliitteitä ja käytetään energian säilymistä. Tason 2 tehtävissä on myös toinen vaihe. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Akkuun on ladattu $54\\,\\text{kJ}$. Puhelimella katsellaan videota, ja akku tyhjenee. Mikä kuvaus akun energiasta on oikea?",
+      "choices": [
+        {
+          "text": "Akun energia on kulunut loppuun, joten sitä ei ole enää olemassa.",
+          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki on hajaantunut lämpönä ympäristöön."
+        },
+        {
+          "text": "Akun $54\\,\\text{kJ}$ on muuttunut puhelimessa muihin muotoihin, lopulta lähes kokonaan lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin alussa.",
+          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
+          "correct": true
+        },
+        {
+          "text": "Akun energia on kasvanut, koska puhelin lämpenee.",
+          "feedback": "Puhelimen lämpeneminen on akun energian muuttumista lämpöenergiaksi. Lämpöenergia ei ole uutta energiaa. Akun kemiallinen energia pienenee yhtä paljon kuin lämpöenergia kasvaa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Vertailu",
+      "prompt": "Salamanisku vapauttaa keskimäärin noin $1{,}0\\,\\text{GJ}$ energiaa. Päivän ruoan energia on $10\\,\\text{MJ}$. Montako päivän ruokaa salaman energia vastaa?",
+      "answer": 100,
+      "unit": "kpl",
+      "tolerance": 0.02,
+      "hints": [
+        "Kummankin energian on oltava samassa yksikössä, jotta voit verrata niitä.",
+        "$1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ}$.",
+        "Lukumäärä on salaman energia jaettuna päivän ruoan energialla: $1000\\,\\text{MJ} : 10\\,\\text{MJ}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.1,
+          "feedback": "Jaoit lukuarvot $1{,}0$ ja $10$ muuntamatta yksiköitä. Gigajoule on tuhat megajoulea. Muunna siis ensin: $1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ} = 1000\\,\\text{MJ}$. Jaa sitten $1000\\,\\text{MJ} : 10\\,\\text{MJ}$."
+        },
+        {
+          "value": 0.01,
+          "feedback": "Jaoit päivän ruoan energian salaman energialla ja muunsit yksiköt, $10\\,\\text{MJ} : 1000\\,\\text{MJ} = 0{,}01$. Suhde on käänteinen. Kysytään, montako ruokaa salaman energia vastaa. Jaa siis salaman energia ruoan energialla, $1000\\,\\text{MJ} : 10\\,\\text{MJ}$."
+        }
+      ],
+      "solution": "**Annettu:** salama $E_\\text{salama} = 1{,}0\\,\\text{GJ}$ ja päivän ruoka $E_\\text{ruoka} = 10\\,\\text{MJ}$\n\n**Kysytty:** päivän ruokien lukumäärä $N$\n\n**Periaate:** Lukumäärä saadaan, kun salaman energia jaetaan yhden päivän ruoan energialla. Molempien pitää olla samassa yksikössä.\n\n**Kaava:** $N = E_\\text{salama} : E_\\text{ruoka}$\n\n**Muunnokset:** $1{,}0\\,\\text{GJ} = 1{,}0 \\cdot 1000\\,\\text{MJ} = 1000\\,\\text{MJ}$\n\n**Sijoitus:** $N = E_\\text{salama} : E_\\text{ruoka} = 1000\\,\\text{MJ} : 10\\,\\text{MJ} = 100$\n\n**Vastaus:** Noin $100$ päivän ruokaa. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $1{,}0\\,\\text{GJ}$ ja $10\\,\\text{MJ}$.\n\n**Järkevyys:** Gigajoule on tuhat megajoulea ja ruoka on kymmenen. Suhde on siis tuhat jaettuna kymmenellä, noin sata. Salaman energia riittäisi ihmiselle yli kolmeksi kuukaudeksi. Salama vapauttaa sen kuitenkin sekunnin murto-osassa."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "optional": true,
+      "prompt": "Selitä, miksi sanotaan, ettei energiaa voi kuluttaa loppuun, vaikka bensiinitankki tyhjenee. Käytä esimerkkinä auton ajamista. Käytä sanoja energiaketju ja lämpöenergia.",
+      "criteria": [
+        "Sanon, että energia ei katoa vaan muuttaa muotoa.",
+        "Kuvaan ketjun: kemiallinen energia, liike, lämpö.",
+        "Sanon, että lopulta suuri osa on lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu.",
+        "Selitän, miksi hajaantunut lämpöenergia ei ole enää helposti hyödynnettävissä."
+      ],
+      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

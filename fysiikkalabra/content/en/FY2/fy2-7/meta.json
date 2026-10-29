@@ -1,0 +1,21 @@
+{
+  "id": "fy2-7",
+  "course": "FY2",
+  "title": "Transferring energy: electricity and heat",
+  "goals": [
+    "LOPS FY2: transferring energy",
+    "Clarification: the study of transferring energy can be limited to the transfer of electrical energy and thermal energy"
+  ],
+  "prerequisites": [
+    "fy2-3"
+  ],
+  "glossary": [
+    "electrical energy",
+    "district heating",
+    "electricity grid",
+    "transmission loss"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

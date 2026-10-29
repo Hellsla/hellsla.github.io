@@ -1,0 +1,9 @@
+{
+ "Energiavirtakuvio mittakaavassa: hehkulamppu ottaa sähköenergiaa 100 J. Sähkö kulkee vasemmalta lampun kuvaan. Oikealle jatkuu ohut vihreä nuoli, valon energia 5 J, ja paksu oranssi nuoli, lämmön energia 95 J. Nuolten paksuudet ovat suhteessa energioihin, joten valon osuus on 5 prosenttia tulevasta energiasta.": "Energy flow diagram to scale: an incandescent lamp takes electrical energy of 100 J. Electricity flows from the left into the picture of the lamp. To the right continue a thin green arrow, the light energy of 5 J, and a thick orange arrow, the heat energy of 95 J. The thicknesses of the arrows are proportional to the energies, so the share of light is 5 percent of the incoming energy.",
+ "hehkulamppu": "incandescent lamp",
+ "sähkö": "electricity",
+ "valo": "light",
+ "lämpö": "heat",
+ "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W; hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W; hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu, mutta ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.": "Two energy flow diagrams on the same scale. At the top, an incandescent lamp takes a power of 60 W and gives a light power of 3 W; the efficiency is 5 percent, and 57 W becomes heat. At the bottom, an LED lamp takes a power of 10 W and gives the same light power of 3 W; the efficiency is 30 percent, and 7 W becomes heat. In both, the green arrow of light power is equally thick, but the incoming arrow of the LED lamp is one sixth of the incoming arrow of the incandescent lamp.",
+ "ledilamppu": "LED lamp"
+}
