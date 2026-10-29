@@ -100,9 +100,19 @@ article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;backgr
 /* front page and module pages */
 .hero{padding:1.6rem 0 .6rem}
 .latest{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem;margin:.4rem 0 1.2rem;font-size:var(--fs-ui)}
-.how{list-style:none;padding:0;margin:1rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.75rem}
-.how li{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem 1.1rem;font-size:var(--fs-ui)}
-.how strong{display:block;font:700 var(--fs-h3) var(--sans);margin-bottom:.15rem}
+.tagline{font:500 clamp(1.35rem,3.2vw,1.7rem)/1.25 var(--serif);color:var(--accent-deep);margin:-.4rem 0 .6rem}
+/* the learning model (teacher 2026-10-29): the six stages in order, a numbered row that wraps, then a short start guide */
+.path h2,.start h2{margin-top:1.6rem}
+.path-steps{list-style:none;counter-reset:step;padding:0;margin:.8rem 0;display:grid;grid-template-columns:1fr;gap:.6rem}
+@media (min-width:40rem){.path-steps{grid-template-columns:repeat(2,1fr)}}@media (min-width:64rem){.path-steps{grid-template-columns:repeat(3,1fr)}}
+.path-steps li{counter-increment:step;margin:0;display:flex;flex-direction:column;gap:.15rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem .8rem;font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
+.path-steps strong{font:700 var(--fs-h3)/1.25 var(--sans);color:var(--ink)}
+.path-steps strong::before{content:counter(step) ". ";color:var(--accent-deep)}
+.start ul{max-width:44rem;margin:.6rem 0 0;padding-left:1.2rem;font-size:var(--fs-ui);line-height:1.5}
+.start li{margin:.3rem 0}.start li::marker{color:var(--accent)}
+.card .status{display:inline-block;margin-left:.35rem;padding:.05rem .5rem;border-radius:999px;font-size:.75rem;font-weight:700;border:1px solid var(--line);color:var(--ink-2)}
+.card .status-complete{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
+.card .status-partial{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-deep)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:.9rem;margin:1rem 0}
 .card{display:flex;flex-direction:column;gap:.3rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--ink);background:var(--surface);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 22px rgba(20,23,30,.08)}
@@ -115,6 +125,7 @@ article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;backgr
 ol.lessons{padding-left:1.4rem}ol.lessons li{padding:.15rem 0}
 ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.live a{font-weight:600}
 .count{color:var(--ink-2);font-size:var(--fs-small);font-weight:400}
+p.count{font-size:var(--fs-ui);max-width:44rem}p.count strong{color:var(--ink);font-weight:700}
 .back{margin-top:2rem}
 
 /* boxes that open: one summary style, a level-3 element in 15 px */
@@ -471,3 +482,21 @@ fieldset.crit legend .pts{margin-left:.3rem}.crit-detail{display:block;color:var
 .rubric-more{padding:.6rem .9rem;background:var(--accent-soft);border-radius:8px}.rubric-more p{margin:0 0 .3rem;font-weight:600}.rubric-more ul{margin:0;padding-left:1.2rem}
 @media (max-width:600px){ol.parts>li{grid-template-columns:1.6rem 1fr}ol.parts>li .pts{grid-column:2}.reveal-body .steps{padding:.7rem .75rem}.rubric-part{padding:.6rem .6rem}}
 @media print{.crit-points,.rubric-total,.rubric-more{display:none!important}}
+/* Edellinen luku / Seuraava luku (teacher 2026-10-29, build.py chapter_nav): two large targets at the end of a
+   lesson, side by side when there is room, stacked on a phone; the chapter's name says where a link goes. */
+nav.chapter-nav{max-width:calc(var(--measure) + 3rem);display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin:3rem 0 1rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+nav.chapter-nav a{display:flex;flex-direction:column;gap:.2rem;min-height:44px;padding:.75rem 1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);color:var(--ink);text-decoration:none;font-size:var(--fs-small);line-height:1.35;overflow-wrap:anywhere}
+nav.chapter-nav a.next{text-align:right;grid-column:2}
+nav.chapter-nav .dir{font-weight:700;color:var(--accent-deep)}
+nav.chapter-nav .name{font-size:var(--fs-inner, 1rem);color:var(--ink)}
+nav.chapter-nav a:hover{border-color:var(--accent);background:var(--accent-soft)}
+nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (max-width:40rem){nav.chapter-nav{grid-template-columns:1fr}nav.chapter-nav a.next{grid-column:1;text-align:left}}
+nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
+/* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
+.practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
+fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
+/* the exercise path (teacher 2026-10-29): which exercises are core, extra and challenging, said once and marked */
+.ex-path{max-width:calc(var(--measure) + 3rem);margin:0 0 1rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}
+.level-lead{margin:.2rem 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
+.ex-core{display:inline-block;margin:0 .5rem .25rem 0;padding:.05rem .55rem;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent-deep);font-size:.8125rem;font-weight:700;vertical-align:.1em}
