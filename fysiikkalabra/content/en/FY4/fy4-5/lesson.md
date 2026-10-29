@@ -5,9 +5,9 @@
 ## Key idea
 Usually several forces act on an object at the same time. The Earth pulls it down, the surface supports it, a rope pulls and the ground resists the motion. Each force describes one interaction between the object and some other object. The motion is decided by the **combined effect** of these forces, the **net force** $\Sigma\mathbf{F}$, which is the vector sum of the forces. In the chapter *Newton's second law* you learn that the net force determines the acceleration: $\Sigma\mathbf{F} = m\mathbf{a}$.
 
-To include every force and to keep anything extra out of the calculation, the forces are first drawn in a **free-body diagram**. It is a different picture from the **situation diagram**. The situation diagram shows the whole situation: the surface, the rope, the person pulling and the direction of motion. The free-body diagram shows only the chosen object and the forces acting on it, as arrows. The direction of an arrow is the direction of the force, and the lengths of the arrows tell which force is larger.
+To include every force and to keep anything extra out of the calculation, the forces are first drawn in a **free-body diagram**. It is a different picture from the **situation diagram**. The situation diagram shows the whole situation: the surface, the rope, the person pulling and the direction of motion. The free-body diagram shows only the chosen object, simplified to a rectangle, and the forces acting on it, as arrows. The direction of an arrow is the direction of the force, and the lengths of the arrows tell which force is larger.
 
-<svg data-fig="tilanne" viewBox="0 0 600 340" role="img" aria-label="Two pictures of the same situation. On the left the situation diagram: a box is pulled along the floor by a rope that rises obliquely, and above the box a thin blue arrow shows the velocity to the right. On the right the free-body diagram: only the box and the forces acting on it as red arrows. The weight G points straight down from the centre, the normal force N from the floor points straight up from the bottom surface and is shorter than the weight, the tension T of the rope starts from the attachment point obliquely up and to the right, and the friction force from the floor points to the left from the bottom surface. The velocity is not drawn in the free-body diagram." style="max-width:100%;font-size:24px">
+<svg data-fig="tilanne" viewBox="0 0 600 340" role="img" aria-label="Two pictures of the same situation. On the left the situation diagram: a box is pulled along the floor by a rope that rises obliquely, and above the box a thin blue arrow shows the velocity to the right. On the right the free-body diagram: only the box, drawn as a rectangle, and the forces acting on it as red arrows. The weight G points straight down from the centre, the normal force N from the floor points straight up from the bottom surface and is shorter than the weight, the tension T of the rope starts from the attachment point obliquely up and to the right, and the friction force from the floor starts from the back corner of the bottom surface and points to the left. The velocity is not drawn in the free-body diagram." style="max-width:100%;font-size:24px">
   <foreignObject x="46" y="7.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation diagram}$</div></foreignObject>
   <line x1="20" y1="200" x2="280" y2="200" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="20" y1="200" x2="10" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -35,7 +35,7 @@ To include every force and to keep anything extra out of the calculation, the fo
   <foreignObject x="172" y="91.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\mathbf{v}$</div></foreignObject>
   <line x1="300" y1="20" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="346" y="7.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{free-body diagram}$</div></foreignObject>
-  <rect x="400" y="140" width="80" height="60" rx="3" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5"/>
+  <rect x="400" y="140" width="80" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="440" y1="170" x2="440" y2="266" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M440,283 L432,265 L448,265 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="450" y="264.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
@@ -45,9 +45,9 @@ To include every force and to keep anything extra out of the calculation, the fo
   <line x1="480" y1="160" x2="515" y2="140" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M530,131 L518.5,147.5 L510,133 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="540.5" y="105" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
-  <line x1="418" y1="200" x2="400.5" y2="200" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M383.5,200 L401.5,192 L401.5,208 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="353" y="169.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
+  <line x1="400" y1="200" x2="382.5" y2="200" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M365.5,200 L383.5,192 L383.5,208 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="335" y="167.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
 </svg>
 
 In the figure, a box is pulled along by a rope that points obliquely upward. The force of the rope points both forward and upward. The upward part helps to hold the box up, so the floor does not have to support it as much as when the box stands still. That is why the normal force $N$ is smaller than the weight $G$. The velocity is not drawn in the free-body diagram, because velocity is not a force.
@@ -57,19 +57,19 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 
 1. **Choose the object.** Decide whose forces you draw. Only forces that act **on this object** go into the diagram. Forces that the object itself exerts on others do not belong in it.
 2. **Find the interactions.** List everything that acts on the object: the Earth (weight), every surface the object touches (normal force and friction), every rope (tension), a push or a pull, and air or water (drag and buoyancy). Every force has a cause outside the object. Motion alone does not cause a force.
-3. **Draw the forces.** Draw one arrow for each force, starting from the object.
+3. **Draw the object and the forces.** Draw the object simplified to a rectangle. Draw one arrow for each force, starting from the object at the point where the force acts.
    - The weight $\mathbf{G}$ points straight down.
    - The normal force $\mathbf{N}$ is perpendicular to the contact surface and pushes the object away from the surface. It does not always point up: a ceiling pushes down and a wall pushes sideways.
-   - The friction force $\mathbf{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity.
+   - The friction force $\mathbf{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity. The friction arrow starts or ends at the edge of the object; it is not drawn along a side of the object.
    - The tension $\mathbf{T}$ acts along the rope and pulls the object toward the rope.
    - Air drag is drawn only when the situation and its assumptions call for it.
 4. **Name the forces.** Give each force its own symbol. Two similar forces are told apart with subscripts, for example $\mathbf{T}_1$ and $\mathbf{T}_2$.
 5. **Think about the magnitudes.** At rest and in uniform motion the net force is zero, so the arrows cancel each other. In accelerating motion the net force points in the direction of the acceleration, which is not always the direction of the velocity. Do not invent exact lengths if the data does not fix them.
-6. **Only forces.** Velocity, acceleration and displacement are not forces. If they are needed, they are drawn beside the object in a different style. The net force is not one more force.
+6. **Only forces.** Velocity, acceleration and displacement are not forces. If they are needed, they are drawn beside the object as thin arrows in different colours: in this course forces are red, velocity is blue and acceleration is orange. The net force is not one more force.
 7. **Components are not new forces.** When a force is split into components, the components together replace the force in the calculation. They are drawn with a dashed line so that they are not mistaken for forces.
 8. **Equation of motion.** Only now are the axes chosen and Newton's second law written component by component from the forces and signs of the diagram.
 
-<svg data-fig="suunnat" viewBox="0 0 600 620" role="img" aria-label="Four small free-body diagrams. Top left: a box rests on a horizontal floor, with the weight G straight down from the centre and an equally long normal force N up from the bottom surface. Top right: a box is at rest on an inclined slope, with the weight G straight down, the normal force N perpendicular to the slope and the friction force up along the slope. Bottom left: a lamp hangs from a cord, with the weight G down and the tension T of the cord up along the cord. Bottom right: a helium balloon is pressed against the ceiling and is at rest. Beside it is the free-body diagram of the balloon as a point: buoyancy up, weight down and, next to it, the normal force N from the ceiling down, away from the ceiling surface. The buoyancy arrow is as long as the weight and normal force arrows together." style="max-width:100%;font-size:24px">
+<svg data-fig="suunnat" viewBox="0 0 600 620" role="img" aria-label="Four small free-body diagrams in which the object is a rectangle. Top left: a box rests on a horizontal floor, with the weight G straight down from the centre and an equally long normal force N up from the bottom surface. Top right: a box is at rest on an inclined slope, with the weight G straight down, the normal force N perpendicular to the slope and the friction force up along the slope from the upper corner of the bottom surface. Bottom left: a lamp hangs from a cord, with the weight G down and the tension T of the cord up along the cord. Bottom right: a helium balloon is pressed against the ceiling and is at rest. Beside it is the free-body diagram of the balloon: buoyancy up from the centre, the weight down from the centre and the normal force N from the ceiling, which presses the top surface downward, away from the ceiling surface. The buoyancy arrow is as long as the weight and normal force arrows together." style="max-width:100%;font-size:24px">
   <line x1="300" y1="10" x2="300" y2="610" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="10" y1="310" x2="590" y2="310" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="115" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{floor}$</div></foreignObject>
@@ -88,7 +88,7 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
   <line x1="216" y1="200" x2="206" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="232" y1="200" x2="222" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="248" y1="200" x2="238" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="112" y="140" width="76" height="60" rx="3" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5"/>
+  <rect x="112" y="140" width="76" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="150" y1="170" x2="150" y2="252" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M150,269 L142,251 L158,251 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="160" y="250.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
@@ -114,16 +114,16 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
   <line x1="519" y1="167.5" x2="509" y2="179.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="533.5" y1="160.5" x2="523.5" y2="172.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="548" y1="154" x2="538" y2="166" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M401.2,222.3 L466.4,191.8 L441.1,137.5 L375.8,167.9 Z" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="385" y="150" width="72" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-25 421 180)"/>
   <line x1="421" y1="180" x2="421" y2="262" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M421,279 L413,261 L429,261 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="431" y="268.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
   <line x1="421" y1="213" x2="390.5" y2="147" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M383,131.5 L398,144.5 L383.5,151.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="357" y="111" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
-  <line x1="448.5" y1="200.5" x2="471" y2="190" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M486,182.5 L473.5,197.5 L466.5,183 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="473.5" y="190" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
+  <line x1="466.5" y1="192" x2="489" y2="181.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M504.5,174 L491.5,189 L484.5,174.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="492" y="181.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
   <foreignObject x="121" y="319.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{lamp}$</div></foreignObject>
   <line x1="70" y1="360" x2="230" y2="360" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="70" y1="360" x2="60" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -136,14 +136,14 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
   <line x1="182" y1="360" x2="172" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="198" y1="360" x2="188" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="214" y1="360" x2="204" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="150" y1="360" x2="150" y2="450" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M124,480 L176,480 L163,450 L137,450 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="150" y1="468" x2="150" y2="539" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,556 L142,538 L158,538 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="162" y="537.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="150" y1="450" x2="150" y2="379" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,362 L158,380 L142,380 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="162" y="367.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
+  <line x1="150" y1="360" x2="150" y2="446" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="122" y="446" width="56" height="40" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="150" y1="466" x2="150" y2="537" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,554 L142,536 L158,536 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="162" y="535.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="150" y1="446" x2="150" y2="375" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,358 L158,376 L142,376 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="162" y="363.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
   <foreignObject x="365" y="319.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{helium balloon}$</div></foreignObject>
   <line x1="316" y1="360" x2="430" y2="360" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="316" y1="360" x2="306" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -155,43 +155,21 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
   <line x1="412" y1="360" x2="402" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <circle cx="372" cy="402" r="40" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="372" y1="442" x2="368" y2="520" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="505" cy="495" r="6" fill="#1f2933"/>
-  <line x1="505" y1="495" x2="505" y2="412" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M505,395 L513,413 L497,413 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="528.5" y="392.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_\text{b}$</div></foreignObject>
-  <line x1="513" y1="495" x2="513" y2="518" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M513,535 L505,517 L521,517 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="521" y="518.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="497" y1="495" x2="497" y2="538" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M497,555 L489,537 L505,537 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="467" y="532.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
+  <rect x="480" y="470" width="70" height="40" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="523" y1="490" x2="523" y2="407" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M523,390 L531,408 L515,408 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="546.5" y="387.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_\text{b}$</div></foreignObject>
+  <line x1="523" y1="490" x2="523" y2="513" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M523,530 L515,512 L531,512 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="531" y="519.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="495" y1="410" x2="495" y2="453" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M495,470 L487,452 L503,452 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="465" y="389.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
 </svg>
 
 The figure shows four situations in which the directions of the forces often surprise people. On a slope the normal force is perpendicular to the slope, not vertical, and friction holds the box in place along the slope. On a helium balloon pressed against the ceiling the ceiling pushes downward.
 
-A free-body diagram can be drawn in two ways, and both are correct. In the **body model** the object is drawn with its shape, and each force starts from its point of action: the weight from the centre, the normal force and friction from the contact surface, and the tension from where the rope is attached. In the **point model** the object is a point, and all forces start from it. The point model is enough when the rotation of the object does not matter. Follow the model that the task uses.
-
-<svg data-fig="malli" viewBox="0 0 600 320" role="img" aria-label="Point-model free-body diagram of the same box as above: all four forces start from one point. The weight G points down, the normal force N points up and is shorter than the weight, the tension T of the rope points obliquely up and to the right, and the friction force points to the left. In the corner are the coordinate axes: x to the right and y up." style="max-width:100%;font-size:24px">
-  <circle cx="300" cy="150" r="7" fill="#1f2933"/>
-  <line x1="300" y1="150" x2="300" y2="246" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,263 L292,245 L308,245 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="310" y="244.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="300" y1="150" x2="300" y2="83" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,66 L308,84 L292,84 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="310" y="55.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
-  <line x1="300" y1="150" x2="335" y2="130" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M350,121 L338.5,137.5 L330,123 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="360.5" y="95" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
-  <line x1="300" y1="150" x2="282.5" y2="150" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M265.5,150 L283.5,142 L283.5,158 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="233" y="121.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
-  <line x1="80" y1="270" x2="117" y2="270" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M126,270 L116,274.5 L116,265.5 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <line x1="80" y1="270" x2="80" y2="233" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M80,224 L84.5,234 L75.5,234 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <foreignObject x="128" y="255.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$x$</div></foreignObject>
-  <foreignObject x="70" y="197.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
-</svg>
+In a free-body diagram the object is always a simplified rectangle, and each force starts from its point of action: the weight from the centre, the normal force and friction from the contact surface, and the tension from where the rope is attached. The arrow of a pushing force may also end at the point where the push acts. In the situation diagram the object may look as it really looks, but in the free-body diagram only the rectangle and the forces are drawn.
 
 The marking instructions of the matriculation examinations give task-specific points for the free-body diagram. For example, in the spring 2025 helium-balloon task a missing, extra or wrongly directed force cost all the points of the diagram, and so did drawing velocity or acceleration as a force on the balloon. In the autumn 2025 examination a missing name cost one point. The exact scoring varies from task to task, but every examination requires the same things: all the forces, no invented forces, correct directions and unambiguous names.
 
@@ -218,20 +196,21 @@ F_y &= F\sin\alpha
 ```
 where $F$ is the magnitude of the force (N), $F_x$ and $F_y$ are its components (N) and $\alpha$ is the angle. The components are not new forces. They replace the force $F$ in the calculation.
 
-<svg data-fig="komponentit" viewBox="0 0 600 300" role="img" aria-label="The force F starts from a point obliquely up and to the right at an angle alpha to the horizontal. The components drawn with dashed lines: the horizontal F x along the x-axis and the vertical F y along the y-axis. The components and the force form a right triangle whose hypotenuse is F. Labels: F x is F times cosine alpha and F y is F times sine alpha." style="max-width:100%;font-size:24px">
-  <line x1="110" y1="240" x2="260" y2="135" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M274,125.5 L263.5,142 L254.5,129 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="258" y="93" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}$</div></foreignObject>
-  <line x1="110" y1="240" x2="272" y2="240" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M261,246.5 L274,240 L261,233.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="257.5" y="247.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{x}$</div></foreignObject>
-  <line x1="110" y1="240" x2="110" y2="127.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M116.5,138.5 L110,125.5 L103.5,138.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="69.5" y="111" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{y}$</div></foreignObject>
-  <line x1="274" y1="240" x2="274" y2="125.5" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="110" y1="125.5" x2="274" y2="125.5" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <path d="M162,240 A52,52 0 0 0 152.6,210.2" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="174" y="207.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha$</div></foreignObject>
+<svg data-fig="komponentit" viewBox="0 0 600 300" role="img" aria-label="A force F acts on an object. It starts from the upper right corner of the object obliquely up and to the right at an angle alpha to the horizontal. The components drawn with dashed lines start from the same corner: the horizontal F x along the x-axis and the vertical F y along the y-axis. The components and the force form a right triangle whose hypotenuse is F. Labels: F x is F times cosine alpha and F y is F times sine alpha." style="max-width:100%;font-size:24px">
+  <rect x="30" y="230" width="80" height="56" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="110" y1="230" x2="260" y2="125" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M274,115.5 L263.5,132 L254.5,119 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="258" y="83" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}$</div></foreignObject>
+  <line x1="110" y1="230" x2="272" y2="230" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M261,236.5 L274,230 L261,223.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="257.5" y="237.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{x}$</div></foreignObject>
+  <line x1="110" y1="230" x2="110" y2="117.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M116.5,128.5 L110,115.5 L103.5,128.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="69.5" y="101" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{y}$</div></foreignObject>
+  <line x1="274" y1="230" x2="274" y2="115.5" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="110" y1="115.5" x2="274" y2="115.5" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <path d="M162,230 A52,52 0 0 0 152.6,200.2" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="174" y="197.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha$</div></foreignObject>
   <foreignObject x="390" y="105.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F_x = F\cos\alpha$</div></foreignObject>
   <foreignObject x="390" y="155.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F_y = F\sin\alpha$</div></foreignObject>
 </svg>
@@ -249,30 +228,30 @@ A sled of mass $12\,\text{kg}$ is pulled on horizontal snow by a rope that makes
 
 <!-- vaihe -->
 
-**Free-body diagram.** The sled is drawn as a point. The axes are chosen so that $x$ points in the direction of motion and $y$ points up. The force of the rope is split into the components $T_x = T\cos\alpha$ and $T_y = T\sin\alpha$, drawn with dashed lines.
+**Free-body diagram.** The sled is drawn as a rectangle, and the forces start from their points of action. The axes are chosen so that $x$ points in the direction of motion and $y$ points up. The force of the rope is split into the components $T_x = T\cos\alpha$ and $T_y = T\sin\alpha$, drawn with dashed lines.
 
-<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Free-body diagram of the sled as a point model. The weight G points down, the normal force N from the snow points up and is shorter than the weight, the tension T of the rope points obliquely up and to the right at an angle of 35 degrees with its components dashed, and the friction force from the snow points to the left. In the corner are the axes: x to the right, in the direction of motion, and y up." style="max-width:100%;font-size:24px">
-  <circle cx="290" cy="180" r="7" fill="#1f2933"/>
-  <line x1="290" y1="180" x2="290" y2="298.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M290,315.5 L282,297.5 L298,297.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="300" y="297" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="290" y1="180" x2="290" y2="114.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M290,97.5 L298,115.5 L282,115.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="302" y="89" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
-  <line x1="290" y1="180" x2="351.5" y2="137" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M365.5,127 L355.5,144 L346,131 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="371.5" y="102.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
-  <line x1="290" y1="180" x2="272.5" y2="180" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M255.5,180 L273.5,172 L273.5,188 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="223" y="149.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
-  <line x1="290" y1="180" x2="363.5" y2="180" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M352.5,186.5 L365.5,180 L352.5,173.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="349" y="189.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}_{x}$</div></foreignObject>
-  <line x1="290" y1="180" x2="290" y2="129" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M296.5,140 L290,127 L283.5,140" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="245.5" y="116.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}_{y}$</div></foreignObject>
-  <path d="M330,180 A40,40 0 0 0 322.8,157.1" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round"/>
-  <foreignObject x="338" y="151.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$35^\circ$</div></foreignObject>
+<svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Free-body diagram of the sled, drawn as a rectangle. The weight G points down from the centre, the normal force N from the snow points up from the bottom surface and is shorter than the weight, the tension T of the rope points from the upper front corner obliquely up and to the right at an angle of 35 degrees with its components dashed, and the friction force from the snow points to the left from the back corner of the bottom surface. In the corner are the axes: x to the right, in the direction of motion, and y up." style="max-width:100%;font-size:24px">
+  <rect x="210" y="163" width="120" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="270" y1="185" x2="270" y2="303.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M270,320.5 L262,302.5 L278,302.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="280" y="302" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="278" y1="207" x2="278" y2="141.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M278,124.5 L286,142.5 L270,142.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="248" y="116" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
+  <line x1="330" y1="163" x2="391.5" y2="120" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M405.5,110 L395.5,127 L386,114 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="411.5" y="85.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
+  <line x1="210" y1="207" x2="192.5" y2="207" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M175.5,207 L193.5,199 L193.5,215 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="149" y="176.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
+  <line x1="330" y1="163" x2="403.5" y2="163" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M392.5,169.5 L405.5,163 L392.5,156.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="389" y="172.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}_{x}$</div></foreignObject>
+  <line x1="330" y1="163" x2="330" y2="112" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M336.5,123 L330,110 L323.5,123" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="285.5" y="99.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}_{y}$</div></foreignObject>
+  <path d="M370.0,163.0 A40,40 0 0 0 362.8,140.1" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round"/>
+  <foreignObject x="378" y="134.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$35^\circ$</div></foreignObject>
   <line x1="70" y1="320" x2="107" y2="320" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <path d="M116,320 L106,324.5 L106,315.5 Z" fill="#6b7480" stroke-linejoin="round"/>
   <line x1="70" y1="320" x2="70" y2="283" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
@@ -324,8 +303,8 @@ A sled of mass $12\,\text{kg}$ is pulled on horizontal snow by a rope that makes
 A moving object does not need a force in the direction of its motion. Only the weight, the normal force and friction act on a sliding box, and there is no "force of motion": there is no object that would cause it. Another common mistake is to think that the normal force is always equal to the weight. The normal force is exactly as large as the situation requires: in an oblique pull it is smaller than the weight, and in an oblique push or in an elevator accelerating upward it is larger. A third mistake is to draw the components as forces in addition to the force itself, which puts the same force into the calculation twice.
 
 ## Summary
-- A free-body diagram contains only the chosen object and the forces acting on it. The situation diagram and the free-body diagram are different pictures.
-- Every force has a cause: the Earth, a surface, a rope, a pusher or the air. Velocity and acceleration are not forces.
+- A free-body diagram contains only the chosen object, as a rectangle, and the forces acting on it. The situation diagram and the free-body diagram are different pictures.
+- Every force has a cause: the Earth, a surface, a rope, a pusher or the air. Velocity and acceleration are not forces, and they are drawn in different colours from the forces.
 - The normal force is perpendicular to the surface, friction is parallel to the surface and tension is along the rope.
 - The net force is the vector sum of the forces, and $\Sigma\mathbf{F} = m\mathbf{a}$ is written by components: $\Sigma F_x = m a_x$ and $\Sigma F_y = m a_y$.
 - The components of an oblique force are $F\cos\alpha$ and $F\sin\alpha$. They replace the force in the calculation and are not new forces.

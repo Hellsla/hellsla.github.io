@@ -5,14 +5,15 @@
 // Horizontally ΣF_x = F cos α = m a. F ≤ 150 N and m ≥ 20 kg keep F sin α below G, so the sled never leaves the ice.
 // Left: the situation picture (tilannekuva) with the velocity v as a thin blue arrow beside the sled, never a force.
 // Right: the force diagram (voimakuvio) drawn to one fixed scale for every setting, so lengths can be compared: solid red
-// arrows are forces, dashed ones the components of F (checkbox), as a point particle or with the points of application.
+// arrows are forces, dashed ones the components of F (checkbox). The sled is a plain rectangle and every force starts at
+// its point of application on it (a push ends there, at the handle); no point-particle diagram (Finnish upper secondary).
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const g = 9.81, S = 0.32;                                              // m/s², px per newton in the force diagram
   const GROUND = 262, SLED = { x: 150, w: 92, h: 30 };                   // situation: ice level, sled position and size
-  const D = { x: 468, y: 196 };                                          // force diagram: the particle's point
+  const D = { x: 468, y: 196, w: 74, h: 30 };                            // force diagram: the sled's rectangle (centre, size)
   const RED = [201, 42, 42], BLUE = [25, 113, 194], INKC = [31, 41, 51];
-  let btn, slF, slA, lF, lA, selTapa, selM, selMalli, cbKomp, selSpeed, readout;
+  let btn, slF, slA, lF, lA, selTapa, selM, cbKomp, selSpeed, readout;
   let v = 0, scroll = 0, running = false, labels = [];
 
   const forces = () => {
@@ -38,8 +39,6 @@ new p5((p) => {
     const lm = p.createElement('label').parent(controls); p.createSpan(__('massa')).parent(lm); selM = p.createSelect().parent(lm);
     for (const m of [20, 30, 40]) selM.option(`${m} kg`, String(m));
     selM.selected('20');
-    const lmo = p.createElement('label').parent(controls); p.createSpan(__('malli')).parent(lmo); selMalli = p.createSelect().parent(lmo);
-    selMalli.option(__('pistemalli'), 'piste'); selMalli.option(__('kappalemalli'), 'kappale');
     const ls = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(ls); selSpeed = p.createSelect().parent(ls);
     selSpeed.option(__('hidas'), '0.5'); selSpeed.option(__('normaali'), '1'); selSpeed.option(__('nopea'), '2'); selSpeed.selected('1');
     const lk = p.createElement('label').parent(controls); cbKomp = p.createCheckbox('', false).parent(lk); p.createSpan(__('komponentit')).parent(lk);
@@ -50,7 +49,7 @@ new p5((p) => {
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { F: { input: slF.elt, unit: 'N' }, alpha: { input: slA.elt, unit: '°' }, m: { input: selM.elt, unit: 'kg' }, tapa: { input: selTapa.elt, unit: '' } },
-      reset: () => { slF.value(100); slA.value(30); selM.selected('20'); selTapa.selected('veto'); selMalli.selected('piste'); cbKomp.checked(false); restart(); },
+      reset: () => { slF.value(100); slA.value(30); selM.selected('20'); selTapa.selected('veto'); cbKomp.checked(false); restart(); },
       step: () => p.redraw(), pause: () => p.noLoop(), resume: () => p.loop(),
     });
   };
@@ -61,7 +60,7 @@ new p5((p) => {
     lF.html(__('voima', { F: tx(f.F, 0) })); lA.html(__('kulma', { a: tx(f.al * 180 / Math.PI, 0) }));
     const bt = running ? __('tauko') : __('kaynnista'); if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
     readout.html(__('lukemat', { G: tx(f.G, 0), N: tx(f.N, 0), Fx: tx(f.Fx, 0), Fy: tx(Math.abs(f.Fy), 0), sx: tx(f.sumFx, 0), a: tx(f.a, 2), v: tx(v, 1) }));
-    window.simState = { F: f.F, alpha: f.al * 180 / Math.PI, m: f.m, tapa: selTapa.value(), malli: selMalli.value(), komponentit: cbKomp.checked(),
+    window.simState = { F: f.F, alpha: f.al * 180 / Math.PI, m: f.m, tapa: selTapa.value(), komponentit: cbKomp.checked(),
                         G: f.G, N: f.N, Fx: f.Fx, Fy: f.Fy, sumFx: f.sumFx, sumFy: f.N + f.Fy - f.G, a: f.a, v, running, labels: null };
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     const fh = Math.round(11 * k);
@@ -100,39 +99,36 @@ new p5((p) => {
     lab(`$v = ${tx(v, 1)}\\,\\text{m/s}$`, 10, 22 + fh * 1.5, 'l', fh, BLUE);
   }
 
-  // --- the force diagram: one scale for every setting; point particle or the sled with points of application ---
+  // --- the force diagram: one scale for every setting; the sled a plain rectangle with the points of application ---
   function diagram(f, fh, k) {
     p.noStroke(); p.fill(255); p.rect(338, 0, 262, 400);
     p.stroke(220); p.strokeWeight(1); p.line(338, 0, 338, 400);
     lab(__('voimakuvio'), 350, 22, 'l', fh, INKC);
-    const obj = selMalli.value() === 'kappale';
-    const sx = (fx) => fx * S, sy = (fy) => -fy * S;
-    let pG = [D.x, D.y], pN = [D.x, D.y], pF = [D.x, D.y];
-    if (obj) {
-      const w = 70, h = 26;
-      grect(D.x - w / 2, D.y - h / 2, w, h, [[214, 120, 60], [176, 86, 40]], false, 4);
-      p.stroke(150, 170, 190); p.strokeWeight(2); p.line(D.x - 70, D.y + h / 2, D.x + 70, D.y + h / 2);   // the ice under it
-      pG = [D.x, D.y]; pN = [D.x, D.y + h / 2]; pF = f.push ? [D.x - w / 2 + 4, D.y - h / 2 + 4] : [D.x + w / 2, D.y - h / 2 + 4];
-    } else { p.noStroke(); p.fill(...INKC); p.circle(D.x, D.y, 9); }
+    const w = D.w, h = D.h;
+    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2); p.rect(D.x - w / 2, D.y - h / 2, w, h);
+    const pG = [D.x, D.y], pN = [D.x + 14, D.y + h / 2];
+    const pF = f.push ? [D.x - w / 2, D.y - h / 2] : [D.x + w / 2, D.y - h / 2];   // the handle's or the rope's corner
     const F = [f.Fx, f.Fy];
     arrow(pG, [0, -f.G], '$\\mathbf{G}$', fh, k);
     arrow(pN, [0, f.N], '$\\mathbf{N}$', fh, k);
     if (f.F > 0) {
-      const start = pF;   // every force starts on the sled: a push starts where the handle is fixed
-      arrow(start, F, '$\\mathbf{F}$', fh, k);
+      // a pull starts at the rope's corner; a push ends at the handle's corner, so the arrow stays off the sled
+      const tail = f.push ? [pF[0] - F[0] * S, pF[1] + F[1] * S] : pF;
+      arrow(tail, F, '$\\mathbf{F}$', fh, k, f.push);
       if (cbKomp.checked() && f.al > 0.01) {
-        dashed(start, [F[0], 0], '$\\mathbf{F}_x$', fh, k); dashed(start, [0, F[1]], '$\\mathbf{F}_y$', fh, k);
+        dashed(tail, [F[0], 0], '$\\mathbf{F}_x$', fh, k); dashed(tail, [0, F[1]], '$\\mathbf{F}_y$', fh, k);
       }
     }
   }
-  function arrow(at, vec, name, fh, k) {
+  function arrow(at, vec, name, fh, k, atTail) {
     const x2 = at[0] + vec[0] * S, y2 = at[1] - vec[1] * S, L = Math.hypot(x2 - at[0], y2 - at[1]);
     if (L < 1) return;
     const a = Math.atan2(y2 - at[1], x2 - at[0]), H = 12;
     p.stroke(...RED); p.strokeWeight(3.5); p.line(at[0], at[1], x2 - H * 0.8 * Math.cos(a), y2 - H * 0.8 * Math.sin(a));
     p.noStroke(); p.fill(...RED);
     p.triangle(x2, y2, x2 - H * Math.cos(a - 0.4), y2 - H * Math.sin(a - 0.4), x2 - H * Math.cos(a + 0.4), y2 - H * Math.sin(a + 0.4));
-    lab(name, x2 + 16 * Math.cos(a), y2 + 16 * Math.sin(a) + fh * 0.36, 'c', fh, RED);
+    if (atTail) lab(name, at[0] - 16 * Math.cos(a), at[1] - 16 * Math.sin(a) + fh * 0.36, 'c', fh, RED);
+    else lab(name, x2 + 16 * Math.cos(a), y2 + 16 * Math.sin(a) + fh * 0.36, 'c', fh, RED);
   }
   function dashed(at, vec, name, fh, k) {
     const x2 = at[0] + vec[0] * S, y2 = at[1] - vec[1] * S, L = Math.hypot(x2 - at[0], y2 - at[1]);

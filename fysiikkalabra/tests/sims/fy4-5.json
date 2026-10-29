@@ -1,9 +1,9 @@
 [
  {
-  "expr": "(() => { const S=window.simState; return S.F===100 && Math.abs(S.alpha-30)<1e-9 && S.m===20 && S.tapa==='veto' && S.malli==='piste' && S.komponentit===false && S.running===false && S.v===0 ? 1 : 0 })()",
+  "expr": "(() => { const S=window.simState; return S.F===100 && Math.abs(S.alpha-30)<1e-9 && S.m===20 && S.tapa==='veto' && S.malli===undefined && S.komponentit===false && S.running===false && S.v===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "on load: pull, F = 100 N, alpha = 30°, m = 20 kg, point model, no components, at rest (must run before any setup)"
+  "note": "on load: pull, F = 100 N, alpha = 30°, m = 20 kg, no components, at rest, no point-model option (must run before any setup)"
  },
  {
   "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='0' && R[0].max==='150' && R[0].step==='10' && R[1].min==='0' && R[1].max==='80' && R[1].step==='5' ? 1 : 0 })()",
@@ -12,10 +12,10 @@
   "note": "two sliders: F 0-150 N in steps of 10, alpha 0-80° in steps of 5"
  },
  {
-  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='veto,tyonto' && L[1]==='20,30,40' && L[2]==='piste,kappale' && L[3]==='0.5,1,2' ? 1 : 0 })()",
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='veto,tyonto' && L[1]==='20,30,40' && L[2]==='0.5,1,2' ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "selects: situation, mass, diagram model, speed"
+  "note": "selects: situation, mass, speed (no point-particle model: the diagram is always the sled as a rectangle)"
  },
  {
   "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",

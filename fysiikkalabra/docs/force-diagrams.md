@@ -66,25 +66,32 @@ positive direction.
 
 ## Representations
 
-- **Tilannekuva and voimakuvio are different figures.** A situation picture shows the objects, the surfaces and the
-  motion. A force diagram shows the chosen object and the forces on it, nothing else. When the difference matters,
-  draw the two separately, side by side or one under the other.
-- **Physical-object diagram.** The object is drawn with its shape and contacts. Each force starts at its point of
-  application: weight at the centre of mass, the normal force and friction at the contact surface, tension where the
-  rope is attached.
-- **Point-particle diagram.** When rotation does not matter, the object may be a point and every force starts at
-  that point. This is correct too. Never teach that all forces must start at the centre of mass, or that a
-  common-origin diagram is wrong. Follow the task's model.
+The teacher's drawing rules (2026-10-29) hold in every course, figure, simulation, task and solution:
+
+- **Tilannekuva and voimakuvio are different figures.** The situation picture (tilannekuva) is always pictorial: it
+  shows the objects as they look, the surfaces and the motion. The force diagram (voimakuvio) shows only the chosen
+  object, simplified to a plain rectangle (rotated with its surface on a slope), and the forces on it, nothing else.
+  Draw the two separately, side by side or one under the other.
+- **Each force starts at its point of application** on the rectangle: weight at the centre (of mass), the normal
+  force at the contact surface, tension where the rope is attached. A push from outside (a handle, a ceiling) may
+  instead end at its point of application, so its arrow stays off the body.
+- **Friction starts or ends at the body's outline**, outside the body, at the corner of the contact surface. It is
+  never drawn along a side starting from the middle of it.
+- **No point-particle diagrams.** They are not used in Finnish upper secondary physics: never draw one, never
+  present one as an option, never write a solution "as a point". `fbd.py` refuses a diagram without a body.
 - **Visual conventions** (`scripts/fbd.py`, every course):
   - a force is a solid red arrow with a filled head and a bold symbol;
   - a component is thinner, dashed and of the same colour, with an open head;
-  - velocity and acceleration are thin blue arrows with an open head, drawn beside the body, never from it;
+  - velocity is a thin blue arrow and acceleration a thin orange arrow, with an open head, drawn beside the body,
+    never on it: force (red), velocity (blue) and acceleration (orange) always have different colours;
   - the net force is a hollow green arrow labelled $\Sigma\mathbf{F}$, away from the forces.
   
   Colour is never the only difference: the line style and the symbol carry the meaning too.
 - **Lengths.** `fbd.py` draws every arrow at scale × force, so its length is right by construction. It refuses a
   diagram whose forces do not sum to $m\mathbf{a}$, or that breaks a direction rule. A deliberately wrong figure
-  (a distractor, an error to find) says why with `wrong="…"`.
+  (a distractor, an error to find) says why with `wrong="…"`. The drawing rules above (a body rectangle, forces
+  starting on it, friction at the outline, velocity and acceleration off the body) are checked for every figure,
+  a deliberately wrong one too (`scripts/test_fbd.py`).
 
 ## Practice: four levels of independence
 
@@ -132,7 +139,10 @@ The science reviewer checks every force diagram, model diagram, option figure an
 - [ ] velocity or acceleration is not drawn as a force;
 - [ ] the diagram agrees with the motion and the stated assumptions (the net force and the acceleration);
 - [ ] components are not double-counted with their force;
-- [ ] the equations match the diagram (axes, signs, trigonometry).
+- [ ] the equations match the diagram (axes, signs, trigonometry);
+- [ ] the drawing rules hold: a pictorial situation picture, the object a rectangle in the force diagram, no
+      point-particle diagram anywhere (figures, simulation, texts, solutions), friction from the outline, and
+      force, velocity and acceleration in different colours.
 
 The pedagogy reviewer checks:
 

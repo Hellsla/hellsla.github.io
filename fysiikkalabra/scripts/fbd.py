@@ -1,39 +1,49 @@
 """Force diagrams (voimakuviot) for lesson figures, with their physics checked as they are drawn (docs/force-diagrams.md).
 
-A figure function in a lesson's figures.py draws the situation with figlib and puts the forces on it with an FBD:
+A force diagram (voimakuvio) draws the object alone as a plain rectangle (FBD body=, rotated on a slope) with each force
+starting at its point of application on it; the situation itself goes into a separate pictorial situation picture
+(tilannekuva). Point-particle diagrams are not used in Finnish upper secondary physics, so FBD refuses them.
+
+A figure function in a lesson's figures.py draws with figlib and puts the forces on the body with an FBD:
 
     from figlib import Fig
     from fbd import FBD, ground
     def rest():
         f = Fig("fy45-lepo", 300, "Voimakuvio: laatikko lattialla levossa. ...")
         ground(f, 120, 480, 230)
-        f.rect(240, 150, 120, 80, SAND_LIGHT, INK, 2.5)
-        d = FBD(f, scale=0.9, m=12, a=(0, 0))                 # px per newton; mass and acceleration if known
+        d = FBD(f, scale=0.9, body=(300, 190, 120, 80), m=12, a=(0, 0))   # px per newton; the rectangle (cx, cy, w, h[, angle])
         d.force("G", (0, -118), (300, 190), kind="gravity")   # vector in newtons, x right, y UP; point of application
-        d.force("N", (0, 118), (300, 150), kind="normal", surface=0)
+        d.force("N", (0, 118), (300, 230), kind="normal", surface=0)
         d.draw()
         return f.svg()
 
 Vectors are in newtons with y pointing up; the figure's y points down, the FBD converts. Each arrow starts at its point
 of application and its length is scale times the force, so relative lengths are physically right by construction.
 
-draw() refuses (ValueError) a diagram that breaks a rule a student is assessed on: two forces with one symbol, weight
+draw() always refuses (ValueError) a diagram that breaks a drawing convention: no body rectangle (a point particle), a
+force that does not start on the body, a friction arrow that neither starts nor ends on the body's outline or that runs
+along a side of it (start it at a corner, or end it at the surface), a velocity or acceleration arrow on the body.
+
+It also refuses a diagram that breaks a rule a student is assessed on: two forces with one symbol, weight
 not vertically down, a normal force not perpendicular to its surface or pointing into it, friction not along its
 surface, tension not along its rope pulling away from the object, buoyancy not up, a drag force not against the
 velocity relative to the air, a component that is not the projection of its force, or forces whose sum is not m·a
 (with m and a given) or not in the direction of a (only the direction given). A deliberately wrong diagram, a
 distractor of a choice or an error to find, says so: FBD(..., wrong="the normal force points down") skips the checks
-and keeps the reason in the source for the reviewers.
+and keeps the reason in the source for the reviewers (the conventions above still hold for it).
 
 Visual conventions (one for every course): a force is a solid red arrow with a filled head and a bold symbol; a
-component is a thinner dashed arrow of the same colour with an open head; velocity and acceleration are blue, thin,
-with an open head and a regular-weight symbol, and never start on the body (FBD.motion draws them beside it); the net
-force, when a teaching figure shows it, is a hollow arrow labelled \\Sigma\\mathbf{F} away from the body.
+component is a thinner dashed arrow of the same colour with an open head; velocity (blue) and acceleration (orange) are
+thin, with an open head and a regular-weight symbol, in colours of their own so that force, velocity and acceleration
+are never confused, and never on the body (FBD.motion draws them beside it); the net force, when a teaching figure
+shows it, is a hollow green arrow labelled \\Sigma\\mathbf{F} away from the body.
 """
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, n, translate
 
-FORCE, FORCE_LIGHT, MOTION, NET = "#c92a2a", "#f2a69c", "#1971c2", "#2b8a3e"
+FORCE, FORCE_LIGHT, VELOCITY, ACCEL, NET = "#c92a2a", "#f2a69c", "#1971c2", "#e8590c", "#2b8a3e"
+BODY, BODY_EDGE = "#f6f1e6", INK      # the plain rectangle of a force diagram
+EDGE = 1.5          # figure units: how close to the body's outline a point counts as on it
 KINDS = ("gravity", "normal", "friction", "tension", "applied", "buoyancy", "drag", "spring", "electric", "other")
 TOL = 0.02          # relative to the largest force: drawing tolerance of the checks
 
@@ -90,25 +100,29 @@ def ground(f, x1, x2, y, angle=0, color=INK, hatch=MUTED, below=True):
 
 
 class FBD:
-    def __init__(self, fig, scale, m=None, a=None, a_dir=None, g=9.81, wrong=None, particle=None):
+    def __init__(self, fig, scale, body=None, m=None, a=None, a_dir=None, g=9.81, wrong=None, draw_body=True):
         """scale: figure units per newton (for a diagram without numbers, per unit of your own). m, a: mass (kg) and
         acceleration (m/s², (ax, ay) with y up) when known, so the forces must sum to m·a; a_dir: only the
         acceleration's direction ((0, 0) for none, e.g. at rest or at constant velocity), so the sum must point that
-        way. particle: (x, y) to draw every force from one point (a point-particle model); otherwise each force
-        starts at its own point of application."""
-        self.f, self.s, self.m, self.a, self.a_dir, self.g, self.wrong, self.particle = fig, scale, m, a, a_dir, g, wrong, particle
+        way. body: the object as a rectangle (cx, cy, w, h) or (cx, cy, w, h, angle), centre in figure coordinates,
+        angle in degrees anticlockwise (a box on a slope); draw() draws it plainly unless draw_body=False (the figure
+        drew it). Each force starts at its own point of application on the body."""
+        if body is not None and len(body) == 4: body = (*body, 0)
+        self.f, self.s, self.m, self.a, self.a_dir, self.g, self.wrong = fig, scale, m, a, a_dir, g, wrong
+        self.body, self.draw_body = body, draw_body
         self.forces, self.comps, self.notes = [], [], []
 
-    def force(self, sym, vec, at=None, kind="other", name=None, surface=None, outward=None, rope=None, v_rel=None,
-              label=None, lab=None, tex=None):
+    def force(self, sym, vec, at, kind="other", name=None, surface=None, outward=None, rope=None, v_rel=None,
+              label=None, lab=None, tex=None, push=False):
         """sym: the plain symbol ("G", "N", "F_mu", "T_1") the checks know it by; tex: its LaTeX when not \\mathbf{sym}.
         surface: the contact surface's angle in degrees (0 horizontal; for normal and friction), outward: the unit
         normal pointing out of the surface towards the object (default up-left of the surface direction), rope: the
         direction along the rope away from the object, v_rel: the object's velocity relative to the air (drag).
-        lab: the label's offset (dx, dy) in figure units from the arrow tip (default along the arrow)."""
+        lab: the label's offset (dx, dy) in figure units from the arrow tip (default along the arrow). push=True draws
+        the arrow ending at its point of application, outside the body (a push from outside, e.g. a handle or a ceiling)."""
         if kind not in KINDS: raise ValueError(f"force {sym}: kind {kind!r} is not one of {KINDS}")
         self.forces.append(dict(sym=sym, vec=tuple(vec), at=at, kind=kind, name=name, surface=surface, outward=outward,
-                                rope=rope, v_rel=v_rel, lab=lab, tex=tex or _bold(sym)))
+                                rope=rope, v_rel=v_rel, lab=lab, tex=tex or _bold(sym), push=push))
         return self
 
     def component(self, sym, of, axis, lab=None, at=None, tex=None):
@@ -161,13 +175,49 @@ class FBD:
                 out.append("the net force must point in the direction of the acceleration")
         return out
 
+    def _local(self, p):
+        """p in the body's own frame: (u along its width, v along its height, up), from its centre."""
+        cx, cy, w, h, ang = self.body; c, s = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+        dx, dy = p[0] - cx, cy - p[1]
+        return dx * c + dy * s, -dx * s + dy * c
+
+    def _where(self, p):
+        """'in', 'edge' or 'out' of the body rectangle."""
+        u, v = self._local(p); w, h = self.body[2] / 2, self.body[3] / 2
+        if abs(u) <= w - EDGE and abs(v) <= h - EDGE: return "in"
+        if abs(u) <= w + EDGE and abs(v) <= h + EDGE: return "edge"
+        return "out"
+
+    def conventions(self):
+        """The drawing-convention problems (they hold for a deliberately wrong diagram too), as sentences."""
+        if self.body is None:
+            return ["draw the object as a rectangle (body=): point-particle force diagrams are not used"]
+        out = []
+        for x in self.forces:
+            s, p = x["sym"], x["at"]
+            if p is None: out.append(f"{s}: give its point of application on the body (at=)"); continue
+            if self._where(p) == "out": out.append(f"{s} must start on the body, at its point of application")
+            if x["kind"] == "friction":
+                p, q = self._ends(x)
+                ends = [self._where(p) == "edge", self._where(q) == "edge"]
+                mid = [(p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t) for t in (0.25, 0.5, 0.75)]
+                if not any(ends) or any(self._where(m) != "out" for m in mid):
+                    out.append(f"{s}: friction starts or ends on the body's outline and is drawn outside it, never along a side "
+                               "from the middle of it (start it at a corner)")
+        for c in self.comps:
+            if c["at"] is not None and self._where(c["at"]) == "out": out.append(f"{c['sym']} must start on the body")
+        return out
+
     def draw(self, label_size=None):
-        if not self.wrong:
-            p = self.check()
-            if p: raise ValueError(f"{self.f.fid}: " + "; ".join(p))
+        p = self.conventions() + ([] if self.wrong else self.check())
+        if p: raise ValueError(f"{self.f.fid}: " + "; ".join(p))
+        if self.draw_body:
+            cx, cy, w, h, ang = self.body
+            self.f.rect(cx - w / 2, cy - h / 2, w, h, BODY, BODY_EDGE, 2.5,
+                        extra=f'transform="rotate({n(-ang)} {n(cx)} {n(cy)})"' if ang else "")
         for x in self.forces: self._arrow(x, solid=True, size=label_size)
         for c in self.comps:
-            c = dict(c); c["at"] = c["at"] or self._start(next(x for x in self.forces if x["sym"] == c["of"]))
+            c = dict(c); c["at"] = c["at"] or next(x for x in self.forces if x["sym"] == c["of"])["at"]
             self._arrow(c, solid=False, size=label_size)
         return self
 
@@ -180,25 +230,37 @@ class FBD:
         self.f.tex(x2 + d[0], y2 + d[1], r"\Sigma\mathbf{F}", "middle", NET)
         return self
 
-    def motion(self, sym, vec, at, length=None, lab=None):
-        """A velocity or acceleration arrow beside the body (blue, thin, open head): not a force. vec gives the
-        direction (y up); length in figure units (default 70)."""
+    def motion(self, sym, vec, at, length=None, lab=None, kind=None):
+        """A velocity or acceleration arrow beside the body (thin, open head): not a force. kind: "velocity" (blue) or
+        "acceleration" (orange); by default from the symbol (\\mathbf{a} is an acceleration). vec gives the
+        direction (y up); length in figure units (default 70). With a body it must lie wholly outside it."""
+        kind = kind or ("acceleration" if r"\mathbf{a}" in sym else "velocity")
+        if kind not in ("velocity", "acceleration"): raise ValueError(f"motion {sym}: kind {kind!r}")
+        col = ACCEL if kind == "acceleration" else VELOCITY
         u = _unit(vec); L = length or 70
         x1, y1 = at; x2, y2 = x1 + u[0] * L, y1 - u[1] * L
-        self.f.line(x1, y1, x2 - u[0] * 2, y2 + u[1] * 2, MOTION, 2.5)
-        open_head(self.f, x2, y2, u[0], -u[1], MOTION, 2.5)
+        if self.body is not None and any(self._where((x1 + (x2 - x1) * t, y1 + (y2 - y1) * t)) != "out" for t in (0, 0.25, 0.5, 0.75, 1)):
+            raise ValueError(f"{self.f.fid}: {sym}: a {kind} arrow is not a force and is drawn beside the body, not on it")
+        self.f.line(x1, y1, x2 - u[0] * 2, y2 + u[1] * 2, col, 2.5)
+        open_head(self.f, x2, y2, u[0], -u[1], col, 2.5)
         d = lab or (u[0] * 22, -u[1] * 22 - 4)
-        self.f.tex(x2 + d[0], y2 + d[1], sym, "middle", MOTION)
+        self.f.tex(x2 + d[0], y2 + d[1], sym, "middle", col)
         return self
 
-    def _start(self, x): return self.particle or x["at"]
+    def _ends(self, x):
+        """The arrow's tail and tip in figure coordinates."""
+        (px, py), (vx, vy) = x["at"], x["vec"]
+        if x.get("push"): return (px - vx * self.s, py + vy * self.s), (px, py)
+        return (px, py), (px + vx * self.s, py - vy * self.s)
 
     def _arrow(self, x, solid, size):
-        x1, y1 = self._start(x)
-        x2, y2 = x1 + x["vec"][0] * self.s, y1 - x["vec"][1] * self.s
+        (x1, y1), (x2, y2) = self._ends(x)
         if solid: self.f.arrow(x1, y1, x2, y2, FORCE, 4, 18)
         else: dashed_arrow(self.f, x1, y1, x2, y2)
         u = _unit((x2 - x1, y2 - y1))
+        if x.get("push"):                                          # labelled at its tail, away from the body
+            d = x["lab"] or (-u[0] * 22, -u[1] * 22)
+            self.f.tex(x1 + d[0], y1 + d[1], x["tex"], "middle", FORCE, size=size); return
         d = x["lab"] or (u[0] * 24, u[1] * 24)
         self.f.tex(x2 + d[0], y2 + d[1], x["tex"], "middle", FORCE, size=size)
 
