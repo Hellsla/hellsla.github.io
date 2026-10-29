@@ -246,8 +246,8 @@ def kone():
     FBD(f, 1).motion(r"\overline{v}", (1, 0), (124, 128), 76)
     f.line(300, 20, 300, 320, RULE, 1.5, "6 6")
     f.tex(450, 24, r"\text{voimakuvio}", "middle", MUTED)
-    cx, cy, w, h = 446, 170, 130, 50
-    d = FBD(f, 1.0, body=(cx, cy, w, h), a_dir=(0, 0))
+    cx, cy, w, h = 470, 170, 110, 50
+    d = FBD(f, 0.8, body=(cx, cy, w, h), a_dir=(0, 0))
     d.force("G", (0, -100), (cx, cy), "gravity", lab=(-22, -6))
     d.force("F_noste", (0, 100), (cx + 30, cy), "other", tex=r"\overline{F}_\text{noste}", lab=(34, -2))
     d.force("F_1", (48, 0), (cx + w / 2, cy - 12), "applied", tex=r"\overline{F}_1", lab=(14, -20))
