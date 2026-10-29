@@ -3,7 +3,7 @@
   "contribution": "The student learns to compare ways of producing energy using orders of magnitude: the power of a single power plant, the annual energy $E = P \\cdot t$ and the distribution of electricity production in Finland, and to tell weather-dependent, controllable and steady production apart.",
   "learn": [
     "calculate the annual energy or average power of a power plant with the formula $E = P \\cdot t$.",
-    "group power plants into weather-dependent, controllable and base load, and justify the grouping.",
+    "classify power plants by weather dependence, controllability and steady base-load use, and justify the classification.",
     "compare ways of producing energy using orders of magnitude and criteria."
   ],
   "prior": [
@@ -289,7 +289,7 @@
         },
         {
           "text": "A nuclear power plant, because it has the most power.",
-          "feedback": "A nuclear power plant is powerful but slow to adjust. It is meant to keep a steady base load, not to follow quick changes in consumption."
+          "feedback": "A nuclear power plant has a lot of power, but it usually runs steadily. Its output can be reduced somewhat, but it is not used to follow quick changes in consumption."
         }
       ]
     },

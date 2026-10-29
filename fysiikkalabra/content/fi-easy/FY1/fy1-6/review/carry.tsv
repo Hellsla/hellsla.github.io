@@ -1,2 +1,4 @@
 date	reviewer	from	to	base	categories
 2026-10-29	science	8b9a53d3c7eaa6b9	72de55f498c3fd45	aff0bfefdeb1	objective-form
+2026-10-29	science	8b9a53d3c7eaa6b9	5718dbf125732989	aff0bfefdeb1	chapter-ref,objective-form
+2026-10-29	pedagogy	72de55f498c3fd45	5718dbf125732989	81c471494d96	chapter-ref

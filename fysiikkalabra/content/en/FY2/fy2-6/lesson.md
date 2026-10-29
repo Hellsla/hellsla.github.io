@@ -69,18 +69,18 @@ A power plant does not produce energy out of nothing. It converts the energy of 
 </svg>
 
 ### Renewable and non-renewable energy
-Water, wind and solar radiation are renewable: they do not run out when used. Biofuels such as wood are renewable when a new forest grows to replace the old one. Coal, oil, natural gas and peat are fossil fuels, and uranium is also a non-renewable resource. The emissions and climate effects of power plants are covered in chapter *Energy production, the environment and climate change*.
+Water, wind and solar radiation are renewable: they do not run out when used. Biofuels such as wood are renewable when a new forest grows to replace the old one. Coal, oil and natural gas are fossil fuels, and uranium is also a non-renewable resource. Peat grows in bogs so slowly, over thousands of years, that it is treated like the fossil fuels when emissions are counted; statistics often list it as a group of its own. The emissions and climate effects of power plants are covered in chapter *Energy production, the environment and climate change*.
 
-### Three groups: how a power plant works in the grid
-Large amounts of electricity cannot be stored directly in the grid, so production must match consumption at every moment. This is why power plants are grouped by how their output can be influenced.
+### Three properties: how a power plant works in the grid
+Large amounts of electricity cannot be stored directly in the grid, so production must match consumption at every moment. This is why power plants are described by how their output can be influenced. The groups are useful properties, not categories that exclude each other: hydropower is highly controllable but also depends on rainfall.
 
-| Group | Power plants | Power |
+| Property | Typical power plants | Power |
 |---|---|---|
 | Weather-&shy;dependent | wind, solar | varies with the weather |
 | Controllable | water, fuel | can be adjusted |
 | Base load | nuclear power | almost constant |
 
-In a hydropower plant the flow is increased or reduced quickly, but you cannot give orders to the wind or the Sun. A nuclear power plant prefers to run steadily, because changing its power is slow.
+In a hydropower plant the flow is increased or reduced quickly, but you cannot give orders to the wind or the Sun. A nuclear power plant usually runs steadily at almost full power, but its output can also be reduced when needed: for example, the Olkiluoto units have reduced their output when the price of electricity has been very low.
 
 ### Criteria for comparison
 Different ways of producing energy are compared with the same questions:
@@ -235,7 +235,7 @@ Rated power does not tell you how much electricity a power plant actually produc
 
 ## Summary
 - A power plant converts the energy of a natural resource into electricity; energy is conserved, but some of it becomes waste heat.
-- Power plants are weather-dependent (wind, solar), highly controllable (water, fuel) or steady base load (nuclear power).
+- Power plants are described by properties that do not exclude each other: weather-dependent (wind, solar), highly controllable (water, fuel) and base load that usually runs steadily (nuclear power).
 - The energy produced is $E = P \cdot t$; the average power is the annual energy divided by the number of hours in the year, $8760\,\text{h}$.
 - Power plants are compared by cost, power, transportability, storability, safety and environmental effects.
 - Orders of magnitude are compared with powers of ten: the rated power of Olkiluoto 3 is more than three hundred times the rated power of a wind turbine.

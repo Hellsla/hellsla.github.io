@@ -131,6 +131,8 @@ missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin 
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
 
+Vaihteluvälin puolikas on yksinkertainen arvio tulosten hajonnasta. Se ei ole yleinen tapa määrittää mittausepävarmuutta. Se ei paljasta systemaattista virhettä. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan. Jos kaikki tulokset ovat samat, hajontaa ei näy. Epävarmuus ei silti ole nolla. Silloin arvioidaan lukeman epävarmuus, kuten alla.
+
 Virhe-arvio pyöristetään yhteen merkitsevään numeroon. Jos sen ensimmäinen numero on 1, virhe-arvio pyöristetään kahteen merkitsevään numeroon. Tulos pyöristetään samaan desimaaliin: $3{,}18 \pm 0{,}12\,\text{s}$ eikä $3{,}1817 \pm 0{,}12\,\text{s}$. Näin tuloksessa ei ole numeroita, jotka virhe jo sotkee.
 
 Joskus mittaus tehdään vain kerran, ja arvo luetaan asteikolta. Yksinkertaisessa tilanteessa lukeman epävarmuudeksi voi arvioida esimerkiksi puolet pienimmästä asteikkovälistä $d$:

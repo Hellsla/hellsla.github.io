@@ -3,7 +3,7 @@
   "contribution": "Oppilas oppii vertailemaan energiantuotantotapoja suuruusluokkien avulla: yksittäisen voimalan teho, vuosienergia $E = P \\cdot t$ ja Suomen sähköntuotannon jakauma, sekä erottamaan sääriippuvaisen, säädettävän ja tasaisen tuotannon.",
   "learn": [
     "laskemaan voimalan vuosienergian tai keskitehon kaavalla $E = P \\cdot t$.",
-    "ryhmittelemään voimalat sääriippuvaisiin, säädettäviin ja perusvoimaan ja perustelemaan ryhmittelyn.",
+    "luokittelemaan voimaloita sääriippuvuuden, säädettävyyden ja tasaisen käytön perusteella ja perustelemaan luokittelun.",
     "vertailemaan tuotantotapoja suuruusluokkien ja kriteerien avulla."
   ],
   "prior": [
@@ -289,7 +289,7 @@
         },
         {
           "text": "Ydinvoimala, koska siinä on eniten tehoa.",
-          "feedback": "Ydinvoimala on tehokas mutta hidas säätää. Se on tarkoitettu pitämään tasainen perusteho, ei seuraamaan kulutuksen nopeita muutoksia."
+          "feedback": "Ydinvoimalassa on paljon tehoa, mutta sitä ajetaan yleensä tasaisesti. Sen tehoa voi laskea jonkin verran, mutta sitä ei käytetä seuraamaan kulutuksen nopeita muutoksia."
         }
       ]
     },

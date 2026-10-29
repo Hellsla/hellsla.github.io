@@ -69,18 +69,18 @@ Voimalaitos ei tuota energiaa tyhjästä, vaan muuttaa luonnonvaran energian sä
 </svg>
 
 ### Uusiutuva ja uusiutumaton energia
-Vesi, tuuli ja auringonsäteily ovat uusiutuvia: ne eivät lopu käytettäessä. Bioperäiset polttoaineet, kuten puu, ovat uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy, maakaasu ja turve ovat fossiilisia, ja uraanikin on uusiutumaton luonnonvara. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
+Vesi, tuuli ja auringonsäteily ovat uusiutuvia: ne eivät lopu käytettäessä. Bioperäiset polttoaineet, kuten puu, ovat uusiutuvia, kun uusi metsä kasvaa tilalle. Kivihiili, öljy ja maakaasu ovat fossiilisia, ja uraanikin on uusiutumaton luonnonvara. Turve kasvaa suolla niin hitaasti, tuhansien vuosien aikana, että se rinnastetaan päästöjen laskennassa fossiilisiin polttoaineisiin; tilastoissa se on usein omana ryhmänään. Voimaloiden päästöt ja ilmastovaikutukset käsitellään luvussa *Energiantuotanto, ympäristö ja ilmastonmuutos*.
 
-### Kolme ryhmää: miten voimala toimii verkossa
-Sähköä ei voi varastoida suuria määriä suoraan verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Siksi voimalat ryhmitellään sen mukaan, kuinka niiden tehoon voi vaikuttaa.
+### Kolme ominaisuutta: miten voimala toimii verkossa
+Sähköä ei voi varastoida suuria määriä suoraan verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Siksi voimaloita kuvataan sen mukaan, kuinka niiden tehoon voi vaikuttaa. Ryhmät ovat hyödyllisiä ominaisuuksia, eivät toisensa poissulkevia luokkia: vesivoima on hyvin säädettävää mutta riippuu myös sateista.
 
-| Ryhmä | Voimalat | Teho |
+| Ominaisuus | Tyypillisiä voimaloita | Teho |
 |---|---|---|
 | Sää&shy;riippuvainen | tuuli, aurinko | vaihtelee sään mukaan |
 | Säädettävä | vesi, poltto&shy;aine | voidaan säätää |
 | Perusvoima | ydinvoima | lähes vakio |
 
-Vesivoimalaitoksessa virtausta lisätään tai vähennetään nopeasti, mutta tuulta ja aurinkoa ei voi käskeä. Ydinvoimala käy mieluiten tasaisesti, koska sen tehon muuttaminen on hidasta.
+Vesivoimalaitoksessa virtausta lisätään tai vähennetään nopeasti, mutta tuulta ja aurinkoa ei voi käskeä. Ydinvoimalaa ajetaan yleensä tasaisesti lähes täydellä teholla, mutta sen tehoa voi tarvittaessa myös laskea: esimerkiksi Olkiluodon yksiköt ovat vähentäneet tehoaan, kun sähkön hinta on ollut hyvin matala.
 
 ### Vertailun kriteerit
 Eri tuotantotapoja vertaillaan samoilla kysymyksillä:
@@ -235,7 +235,7 @@ Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Tuulivoi
 
 ## Tiivistelmä
 - Voimalaitos muuttaa luonnonvaran energian sähköksi; energia säilyy, mutta osa muuttuu hukkalämmöksi.
-- Voimalat ovat sääriippuvaisia (tuuli, aurinko), hyvin säädettäviä (vesi, polttoaine) tai tasaista perusvoimaa (ydinvoima).
+- Voimaloita kuvataan ominaisuuksilla, jotka eivät sulje toisiaan pois: sääriippuvainen (tuuli, aurinko), hyvin säädettävä (vesi, polttoaine) ja yleensä tasaisesti ajettava perusvoima (ydinvoima).
 - Tuotettu energia on $E = P \cdot t$; keskiteho on vuosienergia jaettuna vuoden tuntimäärällä $8760\,\text{h}$.
 - Voimaloita vertaillaan hinnan, tehon, kuljetettavuuden, varastoitavuuden, turvallisuuden ja ympäristövaikutusten mukaan.
 - Suuruusluokat vertaillaan kymmenen potensseilla: Olkiluoto 3:n nimellisteho on yli kolmesataa tuulivoimalan nimellistehoa.

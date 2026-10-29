@@ -131,6 +131,8 @@ where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\te
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
 
+Half of the range is a simple estimate of the scatter of the results, not a general method for finding the measurement uncertainty. It does not reveal a systematic error, which shifts all results in the same direction. If all the results are the same, no scatter shows, but the uncertainty is still not zero: then the reading uncertainty is estimated, as below.
+
 The error estimate is rounded to one significant figure, or to two if the first figure is 1. The result is rounded to the same decimal place: $3.18 \pm 0.12\,\text{s}$ and not $3.1817 \pm 0.12\,\text{s}$. This way the result has no figures that the error already blurs.
 
 When the measurement is made only once and the value is read from a scale, in a simple situation the uncertainty of the reading can be estimated, for example, as half of the smallest scale division $d$:

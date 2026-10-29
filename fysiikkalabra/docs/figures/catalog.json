@@ -5,7 +5,7 @@
   "fy1-2":{"course":"FY1","title":"Suureet, yksiköt ja SI-järjestelmä","topics":["suure","yksikkö","SI-järjestelmä","etuliite","merkitsevä numero","astronominen yksikkö"]},
   "fy1-3":{"course":"FY1","title":"Mittaaminen ja mittauksen luotettavuus","topics":["mittaus","mittausvirhe","karkea virhe","mittausepävarmuus","systemaattinen virhe","satunnaisvirhe","toistettavuus"]},
   "fy1-4":{"course":"FY1","title":"Graafinen esitys ja suoran sovittaminen","topics":["kuvaaja","lineaarinen malli","kulmakerroin","suoran sovitus"]},
-  "fy1-5":{"course":"FY1","title":"Tasainen liike: s = vt","topics":["tasainen liike","nopeus","paikka","matka","suoraan verrannollisuus"]},
+  "fy1-5":{"course":"FY1","title":"Tasainen liike – nopeus, paikka ja kuvaajat","topics":["tasainen liike","nopeus","paikka","matka","suoraan verrannollisuus"]},
   "fy1-6":{"course":"FY1","title":"Putoamiskiihtyvyys: v = gt","topics":["putoamiskiihtyvyys","kiihtyvyys","vapaa pudotus"]},
   "fy1-7":{"course":"FY1","title":"Tiheys: m = ρV","topics":["tiheys","massa","tilavuus"]},
   "fy1-8":{"course":"FY1","title":"Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi","topics":["tutkimus","hypoteesi","muuttuja","mittauspöytäkirja","raportti"]},
