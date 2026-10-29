@@ -273,7 +273,7 @@ def tex_name(s):
     "massa $m$", "θ" -> "$\\theta$", "ΔT (K)" -> "$\\Delta T$ (K)", "p mitattu" -> "$p$ mitattu". Plain words stay."""
     toks = str(s).split(" ")
     unit = len(toks) > 1 and re.fullmatch(r"\((" + UNIT.pattern + r")\)", toks[-1])
-    if unit: toks[-1] = "($" + unit_tex(unit.group(1)) + "$)"   # "(m/s²)" -> "($\\text{m/s}^2$)"
+    if unit: toks[-1] = "$(" + unit_tex(unit.group(1)) + ")$"   # "(m/s²)" -> "$(\\text{m/s}^2)$", one unbreakable piece
     last = len(toks) - (2 if unit else 1)
     for i in sorted({0, last}):
         if is_symbol(toks[i]): toks[i] = "$" + sym_tex(toks[i]) + "$"

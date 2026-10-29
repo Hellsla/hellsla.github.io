@@ -18,10 +18,13 @@ new p5((p) => {
     '5': { A: { x0: 0, v0: 0, a: 1 }, B: { x0: -5, v0: 4, a: 0 }, xmin: -10, xmax: 85, tick: 20 },
   };
   const COL = { A: [43, 138, 62], B: [138, 95, 34] }, BLUE = [25, 113, 194], ORANGE = [232, 89, 12], INKC = [31, 41, 51];
-  const LANE = { x0: 24, x1: 520, yA: 8, yB: 122, h: 56 }, RULER_Y = 84;
-  const G = { x0: 78, x1: 470, y0: 356, y1: 204 };                       // graph box: t 0…12, x xmin…xmax
+  // Two layouts (NOTES.md §4 "Readable on a phone"): 600×400 side by side on a wide screen; on a phone (#sim-root narrower
+  // than 500 px) the canvas is 600×575, the road and the (t,x) graph each at the full width, one under the other.
+  const WIDE = { lane: { x0: 24, x1: 520, yA: 8, yB: 122, h: 56 }, ruler: 84, g: { x0: 78, x1: 470, y0: 356, y1: 204 }, H: 400 };
+  const NARROW = { lane: { x0: 24, x1: 505, yA: 8, yB: 126, h: 56 }, ruler: 84, g: { x0: 62, x1: 490, y0: 476, y1: 252 }, H: 575 };
+  let LANE = WIDE.lane, RULER_Y = WIDE.ruler, G = WIDE.g, narrow = false, CH = 400;   // road lanes, ruler row, graph box (t 0…12, x xmin…xmax), layout, canvas height
   let btn, sl, lSl, selCase, selSp, readout;
-  let tau = 0, tmax = 0, running = false, k = 1, K = 1, labels = [];   // k: canvas px per CSS px; K: stroke/marker scale on a narrow screen
+  let fixing = false, curH = 400, tau = 0, tmax = 0, running = false, k = 1, K = 1, labels = [];   // k: canvas px per CSS px; K: stroke/marker scale on a narrow screen
 
   // --- the physics: position and velocity of a body at time t ---
   const pos = (c, t) => c.x0 + c.v0 * t + 0.5 * c.a * t * t;
@@ -84,6 +87,9 @@ new p5((p) => {
     window.simState = { tapaus: selCase.value(), t: tau, xA, xB, vA, vB, aA: A.a, aB: B.a, gap: xB - xA,
       meetings: mt.filter((m) => m <= tmax + 1e-9).length, tmax, running, speed, labels: null };
 
+    narrow = document.getElementById('sim-root').clientWidth < 500;
+    ({ lane: LANE, ruler: RULER_Y, g: G, H: CH } = narrow ? NARROW : WIDE);
+    if (curH !== CH && !fixing) { fixing = true; setTimeout(() => { fixing = false; curH = CH; p.resizeCanvas(600, CH, true); p.redraw(); }, 0); }   // sim-embed.js keeps the 600 width and scales the box
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
     K = Math.min(k, 1.6);
     const ts = (x) => Math.round(x * k), fh = ts(14);                    // 14 CSS px labels at every width
@@ -170,19 +176,21 @@ new p5((p) => {
     p.stroke(60); p.strokeWeight(1.5 * K); p.noFill(); p.line(G.x0, G.y0, G.x1 + 8, G.y0); p.line(G.x0, G.y0, G.x0, G.y1 - 8);
     p.noStroke(); p.fill(60);
     p.triangle(G.x1 + 14, G.y0, G.x1 + 6, G.y0 - 4, G.x1 + 6, G.y0 + 4); p.triangle(G.x0, G.y1 - 14, G.x0 - 4, G.y1 - 6, G.x0 + 4, G.y1 - 6);
-    for (let s = 0; s <= T; s += 2) lab(`$${s}$`, GX(s), G.y0 + 4 + fh, 'c', fh);
+    for (let s = 0; s <= T; s += 2) lab(`$${s}$`, GX(s), G.y0 + (narrow ? 10 : 4) + fh, 'c', fh);
     const ystep = Math.max(1, Math.ceil(1.3 * fh / ((G.y0 - G.y1) * cs.tick / (cs.xmax - cs.xmin))));   // thin the x ticks when 14 px labels would touch
     for (let m = Math.ceil(cs.xmin / cs.tick) * cs.tick, i = 0; m <= cs.xmax; m += cs.tick, i++) if (i % ystep === 0) lab(`$${m}$`, G.x0 - 8, GY(m) + fh * 0.36, 'r', fh);
-    lab('$t\\ (\\text{s})$', G.x1 + 20, G.y0 + 4 + fh, 'l', fh);
-    lab('$x\\ (\\text{m})$', G.x0 + 8, G.y1 - 10, 'l', fh);
+    lab('$t\\ (\\text{s})$', G.x1 + (narrow ? 26 : 20), G.y0 + (narrow ? 10 : 4) + fh, 'l', fh);
+    lab('$x\\ (\\text{m})$', G.x0 + 8, G.y1 - (narrow ? 16 : 10), 'l', fh);
     // legend: bodies (graph colours and markers) and the two arrows
-    const lx = 490, ly = 208 + 4 * K, dy = ts(20), ll = 24 * K;
+    const ll = 24 * K, dy = ts(20);
+    const slot = (i) => narrow ? [60 + i * 135, G.y0 + 10 + fh + 40] : [490, 208 + 4 * K + i * dy];   // a row under the graph on a phone, a column beside it otherwise
+    let [lx, ly] = slot(0);
     p.stroke(...COL.A); p.strokeWeight(3.2 * K); p.line(lx, ly, lx + ll, ly); p.fill(...COL.A); p.stroke(255); p.strokeWeight(1.5); p.circle(lx + ll / 2, ly, 8 * K);
-    p.stroke(...COL.B); p.strokeWeight(3.2 * K); p.line(lx, ly + dy, lx + ll, ly + dy); p.fill(...COL.B); p.stroke(255); p.strokeWeight(1.5); p.rect(lx + ll / 2 - 4 * K, ly + dy - 4 * K, 8 * K, 8 * K, 1.5);
-    arrow(lx, ly + 2 * dy, lx + ll, ly + 2 * dy, BLUE); arrow(lx, ly + 3 * dy, lx + ll, ly + 3 * dy, ORANGE);
-    const tx0 = lx + ll + 10;
-    lab('$\\text{A}$', tx0, ly + fh * 0.36, 'l', fh); lab('$\\text{B}$', tx0, ly + dy + fh * 0.36, 'l', fh);
-    lab('$\\overline{v}$', tx0, ly + 2 * dy + fh * 0.36, 'l', fh); lab('$\\overline{a}$', tx0, ly + 3 * dy + fh * 0.36, 'l', fh);
+    [lx, ly] = slot(1);
+    p.stroke(...COL.B); p.strokeWeight(3.2 * K); p.line(lx, ly, lx + ll, ly); p.fill(...COL.B); p.stroke(255); p.strokeWeight(1.5); p.rect(lx + ll / 2 - 4 * K, ly - 4 * K, 8 * K, 8 * K, 1.5);
+    [lx, ly] = slot(2); arrow(lx, ly, lx + ll, ly, BLUE);
+    [lx, ly] = slot(3); arrow(lx, ly, lx + ll, ly, ORANGE);
+    [['$\\text{A}$', 0], ['$\\text{B}$', 1], ['$\\overline{v}$', 2], ['$\\overline{a}$', 3]].forEach(([s, i]) => { const [x, y] = slot(i); lab(s, x + ll + 10, y + fh * 0.36, 'l', fh); });
   }
 
   // every canvas text: drawn at its place, its ink box pushed to simState.labels (canvas coordinates)

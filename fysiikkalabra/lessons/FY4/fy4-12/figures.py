@@ -229,7 +229,7 @@ def esimerkki():
 
 
 def kaksi_karrya():
-    """For tasks: two carts' (t,x) graphs without the answer: A is a line from the origin, B a line from 30 m, they cross."""
+    """For tasks: two carts' (t,x) graphs without the answer: A is a line from the origin, B a line from 40 m, they cross."""
     f = Fig("fy412-kaksi-karrya", 340, "(t,x)-kuvaaja mittakaavassa kahdesta tasaisesta liikkeestä. Kärry A lähtee paikasta 0 m ja kulkee tasaisesti paikkaan 60 m hetkeen 10 s mennessä. "
             "Kärry B lähtee paikasta 40 m ja kulkee tasaisesti paikkaan 20 m hetkeen 10 s mennessä. Suorat leikkaavat toisensa kuvaajan sisällä. Kohtaamispistettä ei ole merkitty.")
     ax = Axes(f, (92, 296), (470, 52), x=(0, 12), y=(0, 70), xticks=[2, 4, 6, 8, 10, 12], yticks=[10, 20, 30, 40, 50, 60, 70],

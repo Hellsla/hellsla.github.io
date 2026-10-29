@@ -48,10 +48,10 @@
   "note": "adapter declares t (s) and tapaus"
  },
  {
-  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth<500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
   "expected": 1,
   "tol": 0,
-  "note": "canvas is 600x400"
+  "note": "canvas is 600x400 in the wide layout (a phone stacks the road and the graph on a taller canvas)"
  },
  {
   "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(10);",

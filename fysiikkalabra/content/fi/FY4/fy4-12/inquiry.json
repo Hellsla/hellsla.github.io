@@ -317,8 +317,8 @@
             "feedback": "Etumatka $x_\\text{B} - x_\\text{A}$ muuttaa merkkiä taulukossa. Merkin vaihtuminen tarkoittaa, että paikat ovat jossain vaiheessa samat."
           },
           {
-            "text": "Kerran: juoksija saavuttaa bussin ja jää sen jälkeen pysyvästi bussin taakse.",
-            "feedback": "Juoksija saavuttaa bussin, mutta ei jää sen taakse heti. Bussin nopeus kasvaa koko ajan, ja myöhemmin se ohittaa juoksijan. Etumatka vaihtaa merkkiä kahdesti."
+            "text": "Kerran: juoksija ohittaa bussin ja pysyy sen jälkeen edellä.",
+            "feedback": "Juoksija ohittaa bussin, mutta ei jää edelle pysyvästi. Bussin nopeus kasvaa koko ajan, ja myöhemmin se ohittaa juoksijan. Etumatka vaihtaa merkkiä kahdesti."
           },
           {
             "text": "Kaksi kertaa: ensin juoksija saavuttaa bussin ja myöhemmin bussi ohittaa juoksijan.",
@@ -468,7 +468,7 @@
           "feedback": "Tämä on saavuttamishetki sekunteina. Kysyttiin nopeutta: kerro vielä aika kiihtyvyydellä."
         }
       ],
-      "solution": "**Annettu:** moottoripyörä $x_0 = 0$, $v_0 = 0$, $a = 3{,}0\\,\\text{m/s}^2$; kuorma-auto tasaisella nopeudella $v = 12\\,\\text{m/s}$ samasta paikasta; molemmat ovat hetkellä $t = 0$ viivalla\n\n**Kysytty:** moottoripyörän nopeus $v_\\text{M}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Moottoripyörä saavuttaa kuorma-auton, kun paikat ovat yhtä suuret. Moottoripyörän liike on tasaisesti kiihtyvää ja kuorma-auton tasaista, ja molemmat lähtevät samasta paikasta. Ohitushetken jälkeen nopeus saadaan kiihtyvyydestä ja ajasta.\n\n**Kaava:** $\\tfrac12\\,a\\,t^2 = v\\,t$, joten $t = \\dfrac{2v}{a}$ ($t = 0$ on lähtö). Nopeus on $v_\\text{M} = a\\,t = a \\cdot \\dfrac{2v}{a} = 2v$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3{,}0\\,\\text{m/s}^2} = 8{,}0\\,\\text{s}$ ja $v_\\text{M} = 3{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 24\\,\\text{m/s}$\n\n**Vastaus:** $24\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Moottoripyörän nopeus on kaksi kertaa kuorma-auton nopeus, kuten ohituksessa samasta paikasta lähdettäessä pitääkin. Paikat ovat samat: $\\tfrac12 \\cdot 3{,}0\\,\\text{m/s}^2 \\cdot (8{,}0\\,\\text{s})^2 = 96\\,\\text{m}$ ja $12\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 96\\,\\text{m}$."
+      "solution": "**Annettu:** moottoripyörä $x_0 = 0$, $v_0 = 0$, $a = 3{,}0\\,\\text{m/s}^2$; kuorma-auto tasaisella nopeudella $v = 12\\,\\text{m/s}$ samasta paikasta; molemmat ovat hetkellä $t = 0$ viivalla\n\n**Kysytty:** moottoripyörän nopeus $v_\\text{M}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Moottoripyörä saavuttaa kuorma-auton, kun paikat ovat yhtä suuret. Moottoripyörän liike on tasaisesti kiihtyvää ja kuorma-auton tasaista, ja molemmat lähtevät samasta paikasta. Kun ohitushetki tunnetaan, nopeus saadaan kiihtyvyydestä ja ajasta.\n\n**Kaava:** $\\tfrac12\\,a\\,t^2 = v\\,t$, joten $t = \\dfrac{2v}{a}$ ($t = 0$ on lähtö). Nopeus on $v_\\text{M} = a\\,t = a \\cdot \\dfrac{2v}{a} = 2v$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3{,}0\\,\\text{m/s}^2} = 8{,}0\\,\\text{s}$ ja $v_\\text{M} = 3{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 24\\,\\text{m/s}$\n\n**Vastaus:** $24\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Moottoripyörän nopeus on kaksi kertaa kuorma-auton nopeus, kuten ohituksessa samasta paikasta lähdettäessä pitääkin. Paikat ovat samat: $\\tfrac12 \\cdot 3{,}0\\,\\text{m/s}^2 \\cdot (8{,}0\\,\\text{s})^2 = 96\\,\\text{m}$ ja $12\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 96\\,\\text{m}$."
     },
     {
       "id": "tehtavat",
