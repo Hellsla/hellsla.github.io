@@ -26,16 +26,16 @@
       "prompt": "Lamppu muuntaa sähköenergiaa valoksi ja lämmöksi. Mikä väite on oikea (luku *Energian muuntuminen ja yksikkö joule*)?",
       "choices": [
         {
-          "text": "Sähköenergia katoaa, kun lamppu palaa.",
+          "text": "Sähköenergia katoaa, kun lamppu palaa, joten energiaa on lopuksi vähemmän kuin alussa.",
           "feedback": "Energia ei katoa. Luvussa *Energialajit ja energian säilyminen* sovittiin, että energia vain muuntuu toiseen muotoon: lampussa sähköenergia muuttuu valoksi ja lämmöksi."
         },
         {
-          "text": "Energia mitataan jouleina, ja sähköenergia muuntuu lampussa toisiin energialajeihin.",
+          "text": "Lampussa sähköenergia muuntuu toisiksi energialajeiksi, joita mitataan jouleina.",
           "correct": true,
           "feedback": "Oikein. Energian yksikkö on joule (J), ja kokonaisenergia säilyy: sähköenergia muuntuu valoksi ja lämmöksi. Tänään lisätään mukaan aika: kuinka nopeasti tämä muuntuminen tapahtuu."
         },
         {
-          "text": "Joule on se nopeus, jolla energia muuntuu.",
+          "text": "Joule on se nopeus, jolla lamppu muuntaa sähköenergiaa valoksi ja lämmöksi.",
           "feedback": "Joule on energian yksikkö, ei nopeuden. Nopeudesta kertoo uusi suure, teho, jonka yksikkö on joule sekunnissa."
         }
       ],
@@ -171,16 +171,16 @@
         "prompt": "Mistä taulukon luvuista nähdään, kuinka nopeasti tosteri muuntaa energiaa?",
         "choices": [
           {
-            "text": "Lukemasta $60\\,\\text{kJ}$, koska se on tosterin suurin energia.",
+            "text": "Lukemasta $60\\,\\text{kJ}$, koska se on tosterin suurin energia koko mittauksen aikana.",
             "feedback": "Lukema $60\\,\\text{kJ}$ kertoo vain, kuinka paljon energiaa on muuntunut $60\\,\\text{s}$:ssa. Nopeus saadaan, kun energia jaetaan ajalla."
           },
           {
-            "text": "Energian lisäyksestä jaettuna ajalla: $20\\,\\text{kJ}$ jokaisessa $20\\,\\text{s}$:n välissä, eli $1000\\,\\text{J}$ sekunnissa.",
+            "text": "Energian lisäyksestä jaettuna ajalla: $20\\,\\text{kJ}$ jokaisessa $20\\,\\text{s}$:n välissä.",
             "correct": true,
             "feedback": "Oikein. Energian lisäys $\\Delta E = 20\\,000\\,\\text{J}$ jaettuna ajalla $\\Delta t = 20\\,\\text{s}$ on $1000\\,\\text{J/s} = 1000\\,\\text{W}$. Sama osamäärä saadaan mistä tahansa aikavälistä, koska kasvu on tasaista."
           },
           {
-            "text": "Ajasta $60\\,\\text{s}$, koska pitkä aika tarkoittaa suurta tehoa.",
+            "text": "Ajasta $60\\,\\text{s}$, koska pitkä käyttöaika tarkoittaa, että tosterin teho on suuri.",
             "feedback": "Aika yksin ei kerro tehoa. Teho on energia aikaa kohti: sama teho tuottaa lisää energiaa koko ajan."
           }
         ]
@@ -309,12 +309,12 @@
       "prompt": "Opiskelija laskee, mitä $1500\\,\\text{W}$:n lämmitin maksaa, kun se on päällä $3{,}0\\,\\text{h}$ ja hinta on $20\\,\\text{snt/kWh}$. Hän kirjoittaa $E = 1500 \\cdot 3{,}0\\,\\text{kWh} = 4500\\,\\text{kWh}$ ja hinnaksi $4500 \\cdot 0{,}20\\,\\text{€} = 900\\,\\text{€}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Tehoa ei muutettu kilowateiksi: oikein $E = 1{,}5\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 4{,}5\\,\\text{kWh}$, ja hinta on $0{,}90\\,\\text{€}$.",
+          "text": "Tehoa ei muutettu kilowateiksi: $1{,}5\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 4{,}5\\,\\text{kWh}$ ja hinta $0{,}90\\,\\text{€}$.",
           "correct": true,
           "feedback": "Oikein. Kilowattituntia saadaan vain, kun teho on kilowatteina: $1500\\,\\text{W} = 1{,}5\\,\\text{kW}$. Virheen huomaa myös järkevyydestä: $900\\,\\text{€}$ kolmen tunnin lämmityksestä olisi mahdoton."
         },
         {
-          "text": "Aika olisi pitänyt muuttaa sekunneiksi ennen laskua.",
+          "text": "Aika olisi pitänyt muuttaa sekunneiksi ennen laskua, koska tunti ei ole SI-yksikkö.",
           "feedback": "Sekunteja tarvitaan, kun energia lasketaan jouleina. Kilowattitunteihin sopii aika tunteina, kunhan teho on kilowatteina. Virhe on tehon yksikössä."
         },
         {

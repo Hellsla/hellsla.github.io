@@ -149,7 +149,7 @@
         "prompt": "Vertaa taulukon rivejä ja simulaation kuvaa. Mikä selittää, miksi maanpinta on kasvihuonekaasujen kanssa lämpimämpi kuin ilman niitä?",
         "choices": [
           {
-            "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan siitä takaisin alas, joten energia pääsee avaruuteen hitaammin ja maanpinta pysyy lämpimämpänä.",
+            "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan takaisin alas, joten energia poistuu hitaammin.",
             "correct": true,
             "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla, mutta lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kasvihuonekaasuja, myös ilman vesihöyryä, lämpötila olisi noin $-18\\,{}^\\circ\\text{C}$. Kun hiilidioksidia lisätään, lämpötila nousee, mutta vähitellen: nykyisellä pitoisuudella maapallo on noin $+15\\,{}^\\circ\\text{C}$ ja lämpenee yhä kohti noin $+16\\,{}^\\circ\\text{C}$:ta."
           },
@@ -292,9 +292,9 @@
       "prompt": "Opiskelija laskee, kuinka paljon hiilidioksidiekvivalenttia syntyy, kun $3600\\,\\text{kWh}$ sähköä tuotetaan tuulivoimalla ($e = 12\\,\\text{g/kWh}$). Hän kirjoittaa\n\n$$\\begin{aligned} m &= E : e \\\\ &= 3600\\,\\text{kWh} : 12\\,\\text{g/kWh} \\\\ &= 300\\,\\text{kg} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Päästö on päästökerroin kertaa energia, ei energia jaettuna kertoimella. Oikein $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0{,}001\\,\\text{kg} \\approx 43\\,\\text{kg}$.",
+          "text": "Päästö on päästökerroin kertaa energia, ei energia jaettuna kertoimella: $m = e \\cdot E \\approx 43\\,\\text{kg}$.",
           "correct": true,
-          "feedback": "Oikein. Yksikkö paljastaa virheen: $\\text{kWh} : \\text{g/kWh}$ ei anna massaa vaan $\\text{kWh}^2/\\text{g}$. Kertolaskussa $\\text{g/kWh} \\cdot \\text{kWh}$ kilowattitunnit supistuvat ja jäljelle jäävät grammat. Tulos $43\\,\\text{kg}$ on myös järkevä: sama sähkö kaasulla antaisi noin $41$ kertaa enemmän."
+          "feedback": "Oikein: $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0{,}001\\,\\text{kg} \\approx 43\\,\\text{kg}$. Yksikkö paljastaa virheen: $\\text{kWh} : \\text{g/kWh}$ ei anna massaa vaan $\\text{kWh}^2/\\text{g}$. Kertolaskussa $\\text{g/kWh} \\cdot \\text{kWh}$ kilowattitunnit supistuvat ja jäljelle jäävät grammat. Tulos $43\\,\\text{kg}$ on myös järkevä: sama sähkö kaasulla antaisi noin $41$ kertaa enemmän."
         },
         {
           "text": "Tuulivoiman päästökerroin on nolla, joten päästö on $0\\,\\text{kg}$.",

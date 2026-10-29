@@ -89,16 +89,16 @@
       },
       "choices": [
         {
-          "text": "Hyötysuhde kaksinkertaistuu, koska lamppu antaa valoa pidempään.",
+          "text": "Hyötysuhde kaksinkertaistuu, koska lamppu antaa valoa kaksi kertaa pidempään.",
           "feedback": "Ei osu. Pidempään palava lamppu antaa enemmän valoenergiaa, mutta se myös ottaa enemmän sähköenergiaa. Tasaisella teholla molemmat energiat ovat teho kerrottuna ajalla, $E = P \\cdot t$, joten ne kaksinkertaistuvat ja niiden suhde ei muutu."
         },
         {
-          "text": "Hyötysuhde pysyy samana, koska hyötyenergia ja otettu energia kasvavat kumpikin kaksinkertaisiksi.",
+          "text": "Hyötysuhde pysyy samana, koska molemmat energiat kaksinkertaistuvat.",
           "correct": true,
           "feedback": "Osuu. Tasaisella teholla $E_\\text{a} = P_\\text{a} \\cdot t$ ja $E_\\text{o} = P_\\text{o} \\cdot t$, joten aika supistuu suhteesta. Peruste on tämä lasku, ei simulaatio: simulaation malli olettaa hyötysuhteen vakioksi, joten se vain toistaa oletuksen. Todellinen lamppu käy tasaisesti, kun se on ensin lämmennyt."
         },
         {
-          "text": "Hyötysuhde pienenee, koska lamppu kuumenee ja häviöt kasvavat.",
+          "text": "Hyötysuhde pienenee, koska lamppu kuumenee pidempään ja häviöt kasvavat.",
           "feedback": "Ajatus on fysikaalinen, mutta se ei osu tasaisesti palavaan lamppuun. Häviöenergia kasvaa ajan mukana, mutta samassa suhteessa kasvavat hyötyenergia ja otettu energia, koska tasaisella teholla $E = P \\cdot t$. Lamppu lämpenee vain syttymisen jälkeisen hetken; simulaation malli olettaa hyötysuhteen vakioksi, joten se ei voi testata tätä."
         }
       ],

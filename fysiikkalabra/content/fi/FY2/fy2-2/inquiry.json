@@ -28,16 +28,16 @@
       "prompt": "Auto jarruttaa ja pysähtyy. Mikä kuvaus sen liike-energiasta on oikea (luku *Energialajit ja energian säilyminen*)?",
       "choices": [
         {
-          "text": "Liike-energia häviää, koska auto ei enää liiku.",
+          "text": "Liike-energia häviää, koska auto ei enää liiku eikä sillä siksi ole energiaa.",
           "feedback": "Energia ei häviä. Kun auto pysähtyy, sen liike-energia muuttuu muuksi energiaksi, ja energiaa on yhteensä yhtä paljon kuin ennen jarrutusta."
         },
         {
-          "text": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä pääosin lämpöenergiaksi, ja energiaa on yhteensä yhtä paljon kuin ennen.",
-          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: liike-energiasta tulee lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja ja lasketaan energiaa jouleina.",
+          "text": "Liike-energia muuttuu pääosin lämpöenergiaksi, ja energian kokonaismäärä säilyy.",
+          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: jarruissa, renkaissa ja tiessä liike-energiasta tulee lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja ja lasketaan energiaa jouleina.",
           "correct": true
         },
         {
-          "text": "Liike-energia siirtyy tiehen ja jää sinne liike-energiana.",
+          "text": "Liike-energia siirtyy jarrutuksessa tiehen ja jää sinne liike-energiana.",
           "feedback": "Tie ei lähde liikkeelle, joten energia ei jää sinne liike-energiana. Se muuttuu lämpöenergiaksi, joka lämmittää jarruja, renkaita ja tietä."
         }
       ]
@@ -237,7 +237,7 @@
       "prompt": "Opiskelija muuntaa energian $2{,}5\\,\\text{kJ}$ jouleiksi ja kirjoittaa $2{,}5\\,\\text{kJ} = 2{,}5 : 1000\\,\\text{J} = 0{,}0025\\,\\text{J}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Kilo tarkoittaa tuhatta, joten luku pitäisi kertoa tuhannella: $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
+          "text": "Kilojoule on tuhat joulea, joten oikein on $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
           "feedback": "Oikein. Etuliite kilo tarkoittaa tuhatta, joten kilojoulessa on tuhat joulea, ja jouleina luku on tuhatkertainen. Järkevyyden voi tarkistaa suuruusluokasta: joule on kilojoulea pienempi yksikkö, joten lukuarvon pitää kasvaa.",
           "correct": true
         },
@@ -246,7 +246,7 @@
           "feedback": "Päinvastoin: joule on pienempi yksikkö kuin kilojoule, joten samaan energiaan tarvitaan enemmän jouleja, eli suurempi luku."
         },
         {
-          "text": "Tulos olisi pitänyt jakaa vielä sadalla, koska kilo on sata.",
+          "text": "Tulos olisi pitänyt jakaa vielä sadalla, koska etuliite kilo tarkoittaa sataa.",
           "feedback": "Kilo on tuhat, ei sata. Muunnos tehdään korvaamalla etuliite arvollaan, $\\text{kJ} = 1000\\,\\text{J}$."
         }
       ]
@@ -291,16 +291,16 @@
       "prompt": "Akkuun on ladattu $54\\,\\text{kJ}$. Puhelimella katsellaan videota, ja akku tyhjenee. Mikä kuvaus akun energiasta on oikea?",
       "choices": [
         {
-          "text": "Akun energia on kulunut loppuun, joten sitä ei ole enää olemassa.",
+          "text": "Akun energia on kulunut videon katselussa loppuun, joten sitä ei ole enää olemassa.",
           "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi, ja lopulta kaikki on hajaantunut lämpönä ympäristöön."
         },
         {
-          "text": "Akun $54\\,\\text{kJ}$ on muuttunut puhelimessa muihin muotoihin, lopulta lähes kokonaan lämpöenergiaksi, ja energiaa on yhteensä yhtä paljon kuin alussa.",
+          "text": "Akun $54\\,\\text{kJ}$ on muuttunut lähes kokonaan lämpöenergiaksi, eikä energiaa ole hävinnyt.",
           "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi, ja lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
           "correct": true
         },
         {
-          "text": "Akun energia on kasvanut, koska puhelin lämpenee.",
+          "text": "Akun energia on kasvanut, koska puhelin lämpenee videon katselun aikana.",
           "feedback": "Puhelimen lämpeneminen on akun energian muuttumista lämpöenergiaksi. Lämpöenergia ei ole uutta energiaa, vaan akun kemiallinen energia pienenee yhtä paljon kuin lämpöenergia kasvaa."
         }
       ]
