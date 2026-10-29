@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 945681e19d0a7f71
+CONTENT-HASH: 8b72ddfd68744298
 
 ## Blocking
 
@@ -7,6 +7,7 @@ CONTENT-HASH: 945681e19d0a7f71
 - solutions.md L1 Järkevyys: "noin kaksi pikajuoksuradan pituutta" for 180 m is 1,8 lengths; say "lähes kaksi".
 
 ## Checked
-- Delta: L1 Järkevyys now converts 12 m/s to about 43 km/h correctly and gives an everyday reference; the earlier 40 km/h claim is repaired.
-- Delta: L3-02 answer now explains why 1162,5 m is given as 1160 m (three significant figures, the trailing zero not significant); the earlier Polish is resolved.
-- Rest of the set unchanged from the previous PASS: levels 5/4/3, none repeats the example, seven-step solutions.
+- Delta: L3-03 time is now 0,500 s in the task, Given, Asked, Sijoitus and Järkevyys, consistently; the answer -1,76 m/s is unchanged.
+- Delta: the new justification of three significant figures (coefficients and time all have three) is correct and complete.
+- Levels 5/4/3 as before; none repeats the example; seven-step solutions unchanged elsewhere.
+- Hash unchanged at the end.
