@@ -41,8 +41,8 @@ SWEEP_JS = """async (combos) => {
     const L = S.labels;
     if (boxes(L)) { hasBoxes = true;
       const where = `[${c.r.join(',')}|${c.s.join(',')}|${c.c.join(',')}]`;
-      const cw = root.querySelector('canvas'), dpr = window.devicePixelRatio || 1;   // 600×400, or taller when a sim stacks its panels on a phone (2026-10-29)
-      const W = cw ? cw.width / dpr : 600, H = cw ? cw.height / dpr : 400;
+      const cw = root.querySelector('canvas');   // 600 wide in sim coordinates (sim-embed.js may shrink the backing store); 400 high, or taller when a sim stacks its panels on a phone (2026-10-29)
+      const W = 600, H = cw && cw.width ? Math.round(600 * cw.height / cw.width) : 400;
       for (const a of L) if (a.x0 < 0 || a.y0 < 0 || a.x1 > W || a.y1 > H) bad.push(`${where} "${a.s}" leaves the canvas`);
       for (let i = 0; i < L.length; i++) for (let j = i + 1; j < L.length; j++) { const a = L[i], b = L[j];
         if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) bad.push(`${where} "${a.s}" overlaps "${b.s}"`); }
