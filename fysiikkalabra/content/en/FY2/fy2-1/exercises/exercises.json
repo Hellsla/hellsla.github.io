@@ -19,8 +19,9 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "A solar panel receives radiant energy of $800\\,\\text{J}$ and changes $160\\,\\text{J}$ of it into electrical energy. The rest changes into thermal energy. How much energy is changed into thermal energy?",
-      "answer": 640.0,
+      "text": "A skater starts from rest at point A on the rim of a half-pipe and slides down a slope with friction, past point B, to point C at the bottom. The bars in the figure show his potential energy and kinetic energy at each point, with the bottom as the zero level of potential energy. Read the energies from the figure. How much energy has friction changed into thermal energy when the skater has moved from point A to point C?",
+      "figure": "fy2-1/kitka-pylvaat",
+      "answer": 200.0,
       "unit": "J",
       "tolerance": 0.02
     },

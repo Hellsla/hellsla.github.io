@@ -294,6 +294,54 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Nimellisteho ja tuotanto",
+      "prompt": "Tuulivoimalan nimellisteho on $5{,}0\\,\\text{MW}$. Mitä tämä luku kertoo voimalasta?",
+      "choices": [
+        {
+          "text": "Suurimman tehon, jolla voimala voi toimia, kun tuulee tarpeeksi.",
+          "correct": true,
+          "feedback": "Oikein. Nimellisteho on suurin teho, jolla voimala voi toimia. Tuuli ei puhalla aina sopivalla nopeudella. Siksi tuulivoimalan keskiteho vuoden aikana on usein vain noin kolmannes nimellistehosta."
+        },
+        {
+          "text": "Tehon, jolla voimala tuottaa sähköä aina, kun sen roottori pyörii.",
+          "feedback": "Heikolla tuulella roottori pyörii, mutta voimala tuottaa vain osan nimellistehostaan. Nimellisteho on suurin teho, jolla voimala voi toimia. Se saavutetaan vain, kun tuulee tarpeeksi kovaa."
+        },
+        {
+          "text": "Voimalan keskimääräisen tehon koko vuoden aikana.",
+          "feedback": "Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Tuulivoimalalla se on selvästi pienempi kuin nimellisteho, koska tuuli vaihtelee."
+        },
+        {
+          "text": "Energian, jonka voimala tuottaa yhden vuoden aikana.",
+          "feedback": "Megawatti on tehon yksikkö, ei energian. Vuodessa tuotettu energia lasketaan keskitehosta kaavalla $E = P \\cdot t$. Se ilmoitetaan esimerkiksi gigawattitunteina."
+        }
+      ]
+    },
+    {
+      "id": "check-ominaisuudet",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Ominaisuudet eivät sulje toisiaan pois",
+      "prompt": "Voimaloita kuvataan ominaisuuksilla: sääriippuvainen, hyvin säädettävä ja yleensä tasaisesti ajettava perusvoima. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Vesivoima on hyvin säädettävää, mutta sen vuosituotanto riippuu silti sateista.",
+          "correct": true,
+          "feedback": "Oikein. Ominaisuudet eivät sulje toisiaan pois. Altaan vettä voi päästää turbiineille tarpeen mukaan, joten vesivoima on hyvin säädettävää. Altaisiin ja jokiin tulevan veden määrä riippuu kuitenkin sateista ja lumen sulamisesta."
+        },
+        {
+          "text": "Vesivoima ei riipu säästä lainkaan, koska vesi on varastoitu altaaseen.",
+          "feedback": "Allas tasaa vaihtelua lyhyellä aikavälillä. Altaisiin tulevan veden määrä riippuu kuitenkin sateista ja lumen sulamisesta. Kuivana vuonna vesivoimaa tuotetaan vähemmän."
+        },
+        {
+          "text": "Ydinvoimalan tehoa ei voi muuttaa lainkaan, joten se on aina perusvoimaa.",
+          "feedback": "Ydinvoimalan tehoa voi laskea jonkin verran. Sitä ajetaan yleensä tasaisesti, joten se toimii perusvoimana. Perusvoima kuvaa käyttötapaa. Se ei tarkoita, ettei tehoa voisi muuttaa."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
@@ -333,7 +381,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+      "text": "Lopuksi on yksi nopea kysymys. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
     }
   ]
 }

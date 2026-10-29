@@ -64,7 +64,7 @@ The cyclist's chain begins with the Sun. Radiation energy is stored in a plant a
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-At every step, part of the energy turns into thermal energy, which is transferred as heat to the surroundings and spreads out. Even so, no energy disappears: as stated in chapter *Forms of energy and conservation of energy*, there is the same amount of energy at the start and at the end of the chain. In the example in the figure, the $800\,\text{kJ}$ of the porridge is divided into motion and thermal energy, and the parts add up to the same amount as at the start. Thermal energy spreads so widely that it can no longer be put to use, and this is why energy seems to "run out".
+At every step, part of the energy turns into thermal energy, which is transferred as heat to the surroundings and spreads out. Even so, no energy disappears: as stated in chapter *Forms of energy and conservation of energy*, there is the same amount of energy at the start and at the end of the chain. In the example in the figure, the $800\,\text{kJ}$ of the porridge is divided into motion and thermal energy, and the parts add up to the same amount as at the start. Thermal energy spreads so widely that it is no longer easy to put to use, and this is why energy seems to "run out".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Scale diagram (example): of the 800 kJ of chemical energy in the cyclist&#x27;s morning porridge, the muscles turn 200 kJ into motion and 600 kJ into thermal energy. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow." style="max-width:100%;font-size:24px">
   <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
@@ -123,7 +123,7 @@ The orders of magnitude of everyday energies are collected in the figure, where 
   <foreignObject x="130" y="335.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{each step is a factor of 10}$</div></foreignObject>
   <line x1="96" y1="264" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="96" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="106" y="237.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{apple}\ 1\,\text{J}$</div></foreignObject>
+  <foreignObject x="106" y="237.5" width="240" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{apple lifted one metre}\ 1\,\text{J}$</div></foreignObject>
   <line x1="195.5" y1="226" x2="195.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="195.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="-4.5" y="199.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{match}\ 1\,\text{kJ}$</div></foreignObject>
@@ -185,7 +185,7 @@ E_\text{heat} &= E_\text{start} - E_\text{motion} \\
 **Reasonableness.** More energy turns into thermal energy than into motion, as is usual in human muscles: the body warms up when you cycle. The sum checks out: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$, which is the same as at the start.
 
 ## Common misconception
-Many people think that energy runs out when the speed slows down or the battery goes flat. Energy does not run out and does not disappear. It changes form, and a large part ends up as heat in the surroundings, from where it cannot be collected back for use.
+Many people think that energy runs out when the speed slows down or the battery goes flat. Energy does not run out and does not disappear. It changes form, and a large part ends up as heat in the surroundings, from where it can no longer easily be collected back for use.
 
 Another mistake is to add energies in different units, for example $1.5\,\text{MJ} + 300\,\text{kJ} = 301.5$. A prefix is a multiplier, so the energies are first converted to the same unit.
 

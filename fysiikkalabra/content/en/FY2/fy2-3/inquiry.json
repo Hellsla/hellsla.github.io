@@ -383,10 +383,62 @@
       ]
     },
     {
+      "id": "check-sama-energia",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Same energy, different power",
+      "prompt": "Two kettles each heat one litre of water from the same starting temperature to boiling, and each transforms the same amount of electrical energy to do it. The power of kettle A is $2000\\,\\text{W}$ and that of kettle B is $1000\\,\\text{W}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "B is on twice as long as A, and the same amount of energy is used.",
+          "correct": true,
+          "feedback": "Correct. Energy is power times time, $E = Pt$. When the energy is the same, half the power needs twice the time. Power tells how fast energy is transformed, not how much of it is used in total."
+        },
+        {
+          "text": "B uses half as much energy, because its power is half as great.",
+          "feedback": "A lower power means that less energy is transformed per second, not that less is used in total. The water needs the same energy, so B is on twice as long, and the product $Pt$ is the same for both."
+        },
+        {
+          "text": "A uses twice as much energy, because its power is twice as great.",
+          "feedback": "A greater power transforms energy faster, but A is on for only half as long as B. The product $E = Pt$ is the same for both, because the same amount of water is heated."
+        },
+        {
+          "text": "Both are on for the same time, because they heat the same amount of water.",
+          "feedback": "The same amount of water needs the same energy, but A transforms it twice as fast. The time is $t = E : P$, so with half the power B needs twice the time."
+        }
+      ]
+    },
+    {
+      "id": "check-kilowattitunti",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. The kilowatt-hour",
+      "prompt": "A family's electricity bill says that the consumption for the month was $350\\,\\text{kWh}$. What does this number tell?",
+      "choices": [
+        {
+          "text": "How much electrical energy the family used during the month.",
+          "correct": true,
+          "feedback": "Correct. The kilowatt-hour is a unit of energy, power times time: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J}$. The electricity bill is based on the energy used."
+        },
+        {
+          "text": "How great the total power of the family's devices was.",
+          "feedback": "Power is given in watts or kilowatts. A kilowatt-hour is power multiplied by time, so it is a unit of energy: $350\\,\\text{kWh}$ is the electrical energy used during the month."
+        },
+        {
+          "text": "How much the electrical power grew per hour during the month.",
+          "feedback": "A change of power per hour would be kilowatts per hour, $\\text{kW/h}$. The kilowatt-hour $\\text{kWh}$ is the product kilowatt times hour, that is energy, not a change of power."
+        },
+        {
+          "text": "How many hours the devices were on during the month.",
+          "feedback": "The kilowatt-hour contains both power and time. The same $350\\,\\text{kWh}$ can come from a high power over a short time or a low power over a long time, so the usage time cannot be deduced from it."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Power of a washing machine",
+      "title": "4. Power of a washing machine",
       "prompt": "A washing machine consumes $1.2\\,\\text{kWh}$ of energy during a wash programme of $90\\,\\text{min}$. What is its average power? Give the answer in watts.",
       "answer": 800,
       "unit": "W",
@@ -412,7 +464,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "5. Explain and transfer",
       "prompt": "A family wants to reduce its electricity bill. Explain why both the power of a device and its usage time must be taken into account, and give two ways to reduce consumption.",
       "criteria": [
         "I say that energy is power times time, $E = P\\,t$.",
@@ -427,7 +479,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first yourself and only then open the answer."
+      "text": "Finally, one quick question. Answer first yourself and only then open the answer."
     }
   ]
 }

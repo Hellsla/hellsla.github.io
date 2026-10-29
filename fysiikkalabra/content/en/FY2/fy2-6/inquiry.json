@@ -294,6 +294,54 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Rated power and production",
+      "prompt": "The rated power of a wind turbine is $5.0\\,\\text{MW}$. What does this figure tell you about the turbine?",
+      "choices": [
+        {
+          "text": "The greatest power at which the turbine can run when there is enough wind.",
+          "correct": true,
+          "feedback": "Correct. The rated power is the greatest power at which the turbine can run. The wind does not always blow at a suitable speed, so the average power of a wind turbine over a year is often only about a third of its rated power."
+        },
+        {
+          "text": "The power at which the turbine produces electricity whenever its rotor is turning.",
+          "feedback": "In a light wind the rotor turns, but the turbine produces only part of its rated power. The rated power is the greatest power at which the turbine can run, and it is reached only in a strong enough wind."
+        },
+        {
+          "text": "The average power of the turbine over the whole year.",
+          "feedback": "The average power is the energy produced in a year divided by the number of hours in the year. For a wind turbine it is clearly smaller than the rated power, because the wind varies."
+        },
+        {
+          "text": "The energy the turbine produces in one year.",
+          "feedback": "The megawatt is a unit of power, not of energy. The energy produced in a year is found from the average power with the formula $E = P \\cdot t$, and it is given in, for example, gigawatt-hours."
+        }
+      ]
+    },
+    {
+      "id": "check-ominaisuudet",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Properties do not exclude each other",
+      "prompt": "Power plants are described by properties: weather-dependent, highly controllable, and base load that usually runs steadily. Which statement is true?",
+      "choices": [
+        {
+          "text": "Hydropower is highly controllable, but its annual production still depends on rainfall.",
+          "correct": true,
+          "feedback": "Correct. The properties do not exclude each other. Water from a reservoir can be let through the turbines as needed, so hydropower is highly controllable, but the amount of water flowing into reservoirs and rivers depends on rain and melting snow."
+        },
+        {
+          "text": "Hydropower does not depend on the weather at all, because the water is stored in a reservoir.",
+          "feedback": "A reservoir evens out variation over the short term, but the amount of water flowing into it depends on rain and melting snow. In a dry year less hydropower is produced."
+        },
+        {
+          "text": "The output of a nuclear power plant cannot be changed at all, so it is always base load.",
+          "feedback": "The output of a nuclear power plant can be reduced somewhat. It usually runs steadily, so it works as base load, but base load describes how the plant is used, not that its output could not be changed."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
@@ -333,7 +381,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. First answer them yourself and only then open the answer."
+      "text": "Finally, one quick question. First answer it yourself and only then open the answer."
     }
   ]
 }

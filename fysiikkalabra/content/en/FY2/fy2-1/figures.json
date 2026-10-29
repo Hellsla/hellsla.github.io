@@ -18,5 +18,6 @@
  "välillä": "middle",
  "lopussa": "end",
  "kokonaisenergia ": "total energy",
- "lämpö": "heat"
+ "lämpö": "heat",
+ "Kaavakuva ja pylväskaavio: skeittari lähtee levosta half-pipen reunalta kohdasta A, ohittaa kohdan B rinteessä ja tulee pohjalle kohtaan C. Half-pipessä on kitkaa. Pylväät näyttävät kussakin kohdassa potentiaalienergian ja liike-energian jouleina; energia-akselin ruudukon väli on 100 J. Kohdassa A potentiaalienergia on 700 J ja liike-energia 0 J, kohdassa B potentiaalienergia 300 J ja liike-energia 300 J, kohdassa C potentiaalienergia 0 J ja liike-energia 500 J. Lämpöenergiaa kuvassa ei ole.": "Schematic diagram and bar chart: a skater starts from rest at point A on the rim of a half-pipe, passes point B on the slope and arrives at point C at the bottom. The half-pipe has friction. At each point the bars show the potential energy and the kinetic energy in joules; the gridlines of the energy axis are 100 J apart. At point A the potential energy is 700 J and the kinetic energy 0 J, at point B the potential energy is 300 J and the kinetic energy 300 J, and at point C the potential energy is 0 J and the kinetic energy 500 J. The figure does not show thermal energy."
 }

@@ -306,10 +306,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Etuliitteet ja suuruus",
+      "prompt": "Suklaalevyn pakkauksessa lukee energia $2{,}2\\,\\text{MJ}$. Omenan energia on $300\\,\\text{kJ}$. Kumpi sisältää enemmän energiaa? Kuinka moninkertaisesti?",
+      "choices": [
+        {
+          "text": "Suklaalevy, noin $7$ kertaa enemmän kuin omena.",
+          "correct": true,
+          "feedback": "Oikein. Lukuja voi verrata vasta samassa yksikössä. $2{,}2\\,\\text{MJ} = 2{,}2 \\cdot 1000\\,\\text{kJ} = 2200\\,\\text{kJ}$. Sitten $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Omena, koska luku $300$ on suurempi kuin $2{,}2$.",
+          "feedback": "Luvut eivät ole samassa yksikössä. Megajoule on tuhat kilojoulea. Kun $2{,}2\\,\\text{MJ}$ muutetaan kilojouleiksi, saadaan $2200\\,\\text{kJ}$. Se on enemmän kuin omenan $300\\,\\text{kJ}$."
+        },
+        {
+          "text": "Suklaalevy, noin $1000$ kertaa enemmän kuin omena.",
+          "feedback": "Tuhat on etuliitteiden mega ja kilo suhde. Myös lukuarvot $2{,}2$ ja $300$ pitää ottaa huomioon. Samassa yksikössä $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Suklaalevy, noin $7000$ kertaa enemmän kuin omena.",
+          "feedback": "Muunsit megajoulet kilojouleiksi kertoimella miljoona. Megajoulessa on miljoona joulea, mutta vain tuhat kilojoulea. Siis $2{,}2\\,\\text{MJ} = 2200\\,\\text{kJ}$ ja $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Vertailu",
+      "title": "3. Vertailu",
       "prompt": "Salamanisku vapauttaa keskimäärin noin $1{,}0\\,\\text{GJ}$ energiaa. Päivän ruoan energia on $10\\,\\text{MJ}$. Montako päivän ruokaa salaman energia vastaa?",
       "answer": 100,
       "unit": "kpl",
@@ -335,7 +361,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "optional": true,
       "prompt": "Selitä, miksi sanotaan, ettei energiaa voi kuluttaa loppuun, vaikka bensiinitankki tyhjenee. Käytä esimerkkinä auton ajamista. Käytä sanoja energiaketju ja lämpöenergia.",
       "criteria": [
@@ -344,13 +370,13 @@
         "Sanon, että lopulta suuri osa on lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu.",
         "Selitän, miksi hajaantunut lämpöenergia ei ole enää helposti hyödynnettävissä."
       ],
-      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
+      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei enää helposti saa kerättyä takaisin käyttöön. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
     }
   ]
 }

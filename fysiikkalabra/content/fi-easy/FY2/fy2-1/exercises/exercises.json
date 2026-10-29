@@ -19,8 +19,9 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "Aurinkopaneeli vastaanottaa säteilyenergiaa $800\\,\\text{J}$ ja muuttaa siitä sähköenergiaksi $160\\,\\text{J}$. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi?",
-      "answer": 640.0,
+      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A. Hän laskee rinnettä, jossa on kitkaa, kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa. Pohja on potentiaalienergian nollataso. Lue energiat kuvasta. Kuinka paljon energiaa kitka on muuttanut lämpöenergiaksi, kun skeittari on edennyt kohdasta A kohtaan C?",
+      "figure": "fy2-1/kitka-pylvaat",
+      "answer": 200.0,
       "unit": "J",
       "tolerance": 0.02
     },

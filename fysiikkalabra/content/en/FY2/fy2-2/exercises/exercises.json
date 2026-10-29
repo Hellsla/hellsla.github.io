@@ -35,8 +35,9 @@
     {
       "id": "fy2-2-L1-05",
       "level": 1,
-      "text": "The energy of an adult's day's food is about $10\\,\\text{MJ}$. The energy of an apple is, for example, $300\\,\\text{kJ}$. How many apples correspond in energy to a day's food?",
-      "answer": 33,
+      "text": "The figure shows the order of magnitude of the energy of three things on a power-of-ten scale, and each small step is a factor of ten. Read the energy of an AA battery and of a lightning flash from the figure in joules. How many AA batteries correspond in energy to one lightning flash?",
+      "figure": "fy2-2/tikapuut-kohteet",
+      "answer": 100000,
       "unit": "kpl",
       "tolerance": 0.02
     }

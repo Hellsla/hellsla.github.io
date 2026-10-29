@@ -14,7 +14,7 @@
  "GJ": "GJ",
  "TJ": "TJ",
  "jokainen väli on 10-kertainen": "each step is a factor of 10",
- "omena": "apple",
+ "omena metrin ylös": "apple lifted one metre",
  "tulitikku": "match",
  "päivän ruoka": "day's food",
  "bensiinitankki": "petrol tank",
@@ -22,5 +22,9 @@
  "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.": "Scale diagram (example): of the 800 kJ of chemical energy in the cyclist's morning porridge, the muscles turn 200 kJ into motion and 600 kJ into thermal energy. The width of the arrows is proportional to the energy, and the combined width of the branches equals the width of the original arrow.",
  "liike: ": "motion: ",
  "lämpö: ": "heat: ",
- "nuolen leveys kuvaa energian määrää": "the width of the arrow shows the amount of energy"
+ "nuolen leveys kuvaa energian määrää": "the width of the arrow shows the amount of energy",
+ "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin. Asteikolla on merkitty 1 J, 1 kJ, 1 MJ, 1 GJ ja 1 TJ, ja jokainen pieni väli on kymmenkertainen. Kolme pistettä on merkitty suuruusluokan kohdalle: AA-paristo on yhden pienen välin verran 1 kJ:n oikealla puolella, kupillisen teevettä kiehauttaminen (teeveden kiehautus) kaksi pientä väliä 1 kJ:n oikealla puolella ja salama kohdassa 1 GJ.": "Graph to scale: energy in joules on a power-of-ten scale from 1 J to 10 TJ. The scale is marked 1 J, 1 kJ, 1 MJ, 1 GJ and 1 TJ, and each small step is a factor of ten. Three points are marked at an order of magnitude: the AA battery is one small step to the right of 1 kJ, boiling a cup of tea water is two small steps to the right of 1 kJ, and lightning is at 1 GJ.",
+ "AA-paristo": "AA battery",
+ "teeveden kiehautus": "boiling tea water",
+ "salama": "lightning"
 }

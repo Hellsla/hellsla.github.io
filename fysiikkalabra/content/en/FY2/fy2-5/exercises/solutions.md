@@ -9,11 +9,12 @@
 **Reasonableness:** One kilogram gives $43\,\text{MJ}$, so two kilograms give twice as much, about $2 \cdot 40\,\text{MJ} = 80\,\text{MJ}$. The result is of the right order of magnitude and positive.
 
 ## fy2-5-L1-02
-**Given:** natural gas, mass $m = 2.0\,\text{kg}$ and heat of combustion $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$
+**Given:** natural gas, mass $m = 2.0\,\text{kg}$; heat of combustion $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$ is read from the figure
 **Find:** the energy $E$ released, in megajoules
 **Principle:** When the gas burns, its chemical energy is transformed into heat. The energy released is proportional to the mass, so we use the definition of the heat of combustion.
+**Reading the graph:** The top bar of the bar chart is natural gas, and the number $48$ is printed at its end. The unit on the horizontal axis is $\text{MJ/kg}$, so $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$; the end of the bar is also a little before the grid line $50$.
 **Formula:** $E = Hm$
-**Conversions:** Not needed: the mass is in kilograms.
+**Conversions:** Not needed: the mass is in kilograms and the heat of combustion in megajoules per kilogram, so the energy comes out in megajoules.
 **Substitution:** $E = 48\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 96\,\text{MJ}$
 **Answer:** $96\,\text{MJ}$, two significant figures like the mass $2.0\,\text{kg}$.
 **Reasonableness:** The heat of combustion of gas is about $50\,\tfrac{\text{MJ}}{\text{kg}}$, so two kilograms give about $100\,\text{MJ}$. The result is slightly smaller, because $48 < 50$.

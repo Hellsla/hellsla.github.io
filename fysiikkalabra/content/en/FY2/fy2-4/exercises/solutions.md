@@ -109,11 +109,12 @@
 **Reasonableness:** The useful power is only $240\,\text{W}$, so $0.50\,\text{MJ}$ takes more than half an hour: $2083\,\text{s} : 60 = 35\,\text{min}$. If the efficiency were $100\,\%$, it would take $500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}$, and a time five times as long corresponds to an efficiency of $20\,\%$.
 
 ## fy2-4-L3-03
-**Given:** in the energy flow diagram the thickness $6.0\,\text{cm}$ of the incoming arrow corresponds to the energy $E_\text{o} = 240\,\text{J}$; the thickness of the arrow of the useful energy is $1.5\,\text{cm}$
+**Given:** from the figure, the electrical energy entering the motor $E_\text{o} = 240\,\text{J}$, and the thicknesses of the arrows in squares: incoming arrow $d_\text{o} = 8$ squares, useful energy arrow $d_\text{a} = 2$ squares and loss arrow $d_\text{h} = 6$ squares
 **Find:** the energy that becomes losses, $E_\text{h}$, in joules
-**Principle:** In a diagram drawn to scale, the thickness of an arrow is proportional to energy, so the efficiency is the ratio of the thickness of the useful arrow to the thickness of the incoming arrow. The losses are found from conservation of energy: $E_\text{h} = E_\text{o} - E_\text{a}$.
-**Formula:** $\eta = \dfrac{d_\text{a}}{d_\text{o}}$ (arrow thickness $d$), $E_\text{a} = \eta \cdot E_\text{o}$ and $E_\text{h} = E_\text{o} - E_\text{a}$
-**Conversions:** Not needed: the thicknesses are in the same unit (cm), so they cancel.
-**Substitution:** $\eta = \dfrac{1.5\,\text{cm}}{6.0\,\text{cm}} = 0.25$, so $E_\text{a} = 0.25 \cdot 240\,\text{J} = 60\,\text{J}$ and $E_\text{h} = 240\,\text{J} - 60\,\text{J} = 180\,\text{J}$
-**Answer:** $180\,\text{J}$ or $1.8 \cdot 10^{2}\,\text{J}$, two significant figures, as in the thicknesses of the arrows.
-**Reasonableness:** The useful arrow is a quarter of the incoming arrow, so the loss arrow must be three quarters, that is, $4.5\,\text{cm}$ thick: $0.75 \cdot 240\,\text{J} = 180\,\text{J}$. The thicknesses of the useful and loss arrows together, $1.5\,\text{cm} + 4.5\,\text{cm} = 6.0\,\text{cm}$, are the thickness of the incoming arrow.
+**Principle:** In an energy flow diagram drawn to scale, the thickness of an arrow is proportional to energy. So one square always corresponds to the same energy, and the thickness and the energy of the incoming arrow tell how much. Energy is conserved, so the thicknesses of the outgoing arrows add up to the thickness of the incoming arrow.
+**Reading the graph:** The incoming arrow spans eight squares from top to bottom. The green arrow of useful energy on the right edge is two squares thick and the orange loss arrow is six squares thick; the thickness is read from the straight part of the arrow, before the head. Check: $2 + 6 = 8$ squares.
+**Formula:** $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, so $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
+**Conversions:** Not needed: the thicknesses are in the same unit (squares), so they cancel, and the energy is in joules.
+**Substitution:** $E_\text{h} = \dfrac{6}{8} \cdot 240\,\text{J} = 0.75 \cdot 240\,\text{J} = 180\,\text{J}$
+**Answer:** $180\,\text{J}$ or $1.8 \cdot 10^{2}\,\text{J}$, two significant figures, as in the incoming energy $240\,\text{J}$.
+**Reasonableness:** One square corresponds to the energy $240\,\text{J} : 8 = 30\,\text{J}$, so the useful energy is $2 \cdot 30\,\text{J} = 60\,\text{J}$ and the losses $6 \cdot 30\,\text{J} = 180\,\text{J}$; together $240\,\text{J}$, as conservation of energy requires. The efficiency is $60\,\text{J} : 240\,\text{J} = 25\,\%$, which is possible for a small toy motor, for example.

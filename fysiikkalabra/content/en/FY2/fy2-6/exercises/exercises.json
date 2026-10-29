@@ -27,8 +27,9 @@
     {
       "id": "fy2-6-L1-04",
       "level": 1,
-      "text": "In 2024 Finland produced a total of $79.9\\,\\text{TWh}$ of electricity, and the share of wind power was $20.2\\,\\text{TWh}$ (Statistics Finland). What percentage of the electricity was produced by wind power?",
-      "answer": 25.3,
+      "text": "The bar chart in the figure shows electricity production in Finland in 2024 by energy source (Statistics Finland). Total production was $79.9\\,\\text{TWh}$. Read from the figure the production of the weather-dependent sources, wind power and solar power. What percentage of the electricity did they produce together?",
+      "figure": "fy2-6/fi-bars",
+      "answer": 26.4,
       "unit": "%",
       "tolerance": 0.02
     },

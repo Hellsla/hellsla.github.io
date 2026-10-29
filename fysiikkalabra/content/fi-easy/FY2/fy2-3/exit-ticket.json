@@ -1,13 +1,5 @@
 [
   {
-    "q": "Vedenkeitin muuntaa $60\\,\\text{s}$:ssa $120\\,000\\,\\text{J}$ sähköenergiaa. Mikä on sen teho?",
-    "a": "$P = \\dfrac{E}{t} = \\dfrac{120\\,000\\,\\text{J}}{60\\,\\text{s}} = 2000\\,\\text{W}$, eli $2{,}0\\,\\text{kW}$."
-  },
-  {
-    "q": "Mikä on $1\\,\\text{kWh}$ jouleina, ja onko kilowattitunti tehon vai energian yksikkö?",
-    "a": "$1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J}$. Kilowattitunti on energian yksikkö, koska se on teho (kW) kertaa aika (h)."
-  },
-  {
     "q": "Miksi $5{,}0\\,\\text{W}$:n valmiustila voi kuluttaa vuodessa enemmän energiaa kuin $2000\\,\\text{W}$:n vedenkeitin, jota käytetään $3{,}0\\,\\text{min}$ päivässä?",
     "a": "Energia on teho kertaa aika. Valmiustila on päällä $8760\\,\\text{h}$ vuodessa. Muunnetaan ensin teho kilowateiksi: sijoitetaan $1\\,\\text{W} = 10^{-3}\\,\\text{kW}$, joten $5{,}0\\,\\text{W} = 5{,}0 \\cdot 10^{-3}\\,\\text{kW} = 0{,}0050\\,\\text{kW}$. Valmiustila kuluttaa $0{,}0050\\,\\text{kW} \\cdot 8760\\,\\text{h} = 43{,}8\\,\\text{kWh} \\approx 44\\,\\text{kWh}$. Keitin on päällä $3{,}0\\,\\text{min} \\cdot 365 = 1095\\,\\text{min}$. Sijoitetaan $1\\,\\text{min} = 1\\,\\text{h} : 60$, joten $1095\\,\\text{min} = 1095 \\cdot (1\\,\\text{h} : 60) = 18{,}25\\,\\text{h}$. Keitin kuluttaa $2{,}0\\,\\text{kW} \\cdot 18{,}25\\,\\text{h} = 36{,}5\\,\\text{kWh} \\approx 37\\,\\text{kWh}$. Tulokset pyöristetään kahteen merkitsevään numeroon, kuten lähtötiedot. Pieni teho pitkään voittaa suuren tehon lyhyen ajan."
   }

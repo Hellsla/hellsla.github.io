@@ -9,11 +9,12 @@
 **Järkevyys:** Yksi kilogramma antaa $43\,\text{MJ}$. Kaksi kilogrammaa antaa siis kaksinkertaisen määrän, noin $2 \cdot 40\,\text{MJ} = 80\,\text{MJ}$. Tulos on oikeaa suuruusluokkaa, ja se on positiivinen.
 
 ## fy2-5-L1-02
-**Annettu:** maakaasu, massa $m = 2{,}0\,\text{kg}$ ja lämpöarvo $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$
+**Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$ luetaan kuvasta
 **Kysytty:** vapautuva energia $E$ megajouleina
 **Periaate:** Kun kaasu palaa, sen kemiallinen energia muuntuu lämmöksi. Vapautuva energia on verrannollinen massaan. Siksi käytetään lämpöarvon määritelmää.
+**Kuvaajan lukeminen:** Pylväskaavion ylin pylväs on maakaasun. Sen päässä on luku $48$. Vaaka-akselin yksikkö on $\text{MJ/kg}$, joten $H = 48\,\tfrac{\text{MJ}}{\text{kg}}$. Pylvään pää on myös vähän ennen ruudukon viivaa $50$.
 **Kaava:** $E = Hm$
-**Muunnokset:** Ei tarvita: massa on kilogrammoina.
+**Muunnokset:** Ei tarvita: massa on kilogrammoina ja lämpöarvo megajouleina kilogrammaa kohti. Siksi energia tulee megajouleina.
 **Sijoitus:** $E = 48\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 96\,\text{MJ}$
 **Vastaus:** $96\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$.
 **Järkevyys:** Kaasun lämpöarvo on noin $50\,\tfrac{\text{MJ}}{\text{kg}}$. Kahdesta kilogrammasta saadaan siis noin $100\,\text{MJ}$. Tulos on hieman pienempi, koska $48 < 50$.

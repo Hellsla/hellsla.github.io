@@ -9,14 +9,15 @@
 **Reasonableness:** The loss is $4.0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}$, and $480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}$, so the energy is conserved. The arriving energy is smaller than the sent energy, as it should be.
 
 ## fy2-7-L1-02
-**Given:** sent energy $E_\text{sent} = 360\,\text{MWh}$ and arrived energy $E_\text{arrived} = 327\,\text{MWh}$
+**Given:** energy sent into the district heating network $E_\text{sent} = 360\,\text{MWh}$; the share of the loss is read from the figure
 **Find:** the loss $E_\text{loss}$ in megawatt-hours
-**Principle:** Energy does not disappear. What is sent but does not arrive has turned into heat in the surroundings, that is, it is transmission loss.
-**Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$
-**Conversions:** Not needed: both energies are in megawatt-hours.
-**Substitution:** $E_\text{loss} = 360\,\text{MWh} - 327\,\text{MWh} = 33\,\text{MWh}$
-**Answer:** $33\,\text{MWh}$, two significant figures, because both energies are given as whole megawatt-hours and the least precise value limits the precision of the difference.
-**Reasonableness:** The share of the loss in the sent energy is $33 : 360 \approx 0.092$, or about $9\,\%$, which matches the usual loss of a district heating network.
+**Principle:** Energy does not disappear. The part of the sent energy that does not arrive turns into heat in the surroundings on the way, that is, it is transmission loss. The share of the loss is taken of the sent energy, so the loss is the share times the sent energy.
+**Reading the graph:** The lower energy flow in the figure is the district heating network. At its branch that curves downward it says $9\,\%$ (loss), and at the branch that continues to the end it says $91\,\%$ (arrives); together they are the $100\,\%$ of the sent flow. So the share of the loss is $9\,\% = 0.09$. The upper flow is the electricity grid and is not needed.
+**Formula:** $E_\text{loss} = 0.09 \cdot E_\text{sent}$
+**Conversions:** Percentage to decimal number: $9\,\% = 9 \cdot 0.01 = 0.09$. The energy stays in megawatt-hours.
+**Substitution:** $E_\text{loss} = 0.09 \cdot 360\,\text{MWh} = 32.4\,\text{MWh}$
+**Answer:** about $32\,\text{MWh}$, two significant figures, because the percentage in the figure is rounded to whole percent.
+**Reasonableness:** One tenth of $360\,\text{MWh}$ is $36\,\text{MWh}$, and $9\,\%$ is a little less than a tenth, so about $32\,\text{MWh}$ is the right order of magnitude. The energy that arrives is $360\,\text{MWh} - 32.4\,\text{MWh} \approx 328\,\text{MWh}$, or $91\,\%$, as in the figure.
 
 ## fy2-7-L1-03
 **Given:** sent energy $E_\text{sent} = 80.0\,\text{MWh}$ and arrived energy $E_\text{arrived} = 76.8\,\text{MWh}$

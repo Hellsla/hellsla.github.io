@@ -1,6 +1,6 @@
 # Fuels and heat of combustion E = Hm
 
-> **Why** does a kilogram of petrol release almost three times as much energy as a kilogram of air-dried firewood, even though both are just burning matter?
+> **Why** do a kilogram of petrol and a kilogram of air-dried firewood release different amounts of energy when they burn, even though both are just burning matter?
 
 ## Key idea
 In this chapter a fuel means a chemical fuel: a substance whose chemical energy is released by burning it. The uranium in a nuclear power plant is also called a fuel, but nuclear fuel does not burn: its energy is nuclear energy (chapter *Forms of energy and conservation of energy*). Chemical energy is energy stored in the structure of the atoms and molecules of a substance. When a fuel burns, the structure changes and energy is released as heat and light. Energy does not appear out of nothing: chemical energy is transformed into another form. The same is true of food: your body slowly "burns" food and releases energy from it.

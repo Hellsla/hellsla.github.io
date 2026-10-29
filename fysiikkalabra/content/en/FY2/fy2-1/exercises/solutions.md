@@ -19,14 +19,15 @@
 **Reasonableness:** The chemical energy and thermal energy together are $6.0\,\text{J} + 239\,\text{J} = 245\,\text{J}$, as at the start. Only $6.0\,\text{J} : 245\,\text{J} \approx 0.02$, about two per cent, changes into chemical energy, and plants are known to capture only a small part of the energy of sunlight; the leaf warms up in the sun.
 
 ## fy2-1-L1-03
-**Given:** radiant energy arriving at the panel $E_\text{rad} = 800\,\text{J}$, electrical energy produced $E_\text{elec} = 160\,\text{J}$
-**Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
-**Principle:** The panel changes part of the radiant energy into electrical energy and the rest into thermal energy. Nothing is lost, so energy is conserved: $E_\text{initial} = E_\text{final}$.
-**Formula:** $E_\text{rad} = E_\text{elec} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{rad} - E_\text{elec}$
+**Given:** energies read from the figure at points A and C: $E_\text{p,A} = 700\,\text{J}$, $E_\text{k,A} = 0\,\text{J}$, $E_\text{p,C} = 0\,\text{J}$ and $E_\text{k,C} = 500\,\text{J}$
+**Find:** energy changed into thermal energy $E_\text{thermal}$ between points A and C in $\text{J}$
+**Principle:** The skater, the half-pipe and the air form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. Friction changes part of the mechanical energy into thermal energy, so at the end the energy is mechanical energy and thermal energy.
+**Reading the graph:** At point A there is only the blue potential-energy bar, and its top is at the gridline $700\,\text{J}$; there is no kinetic energy because the skater is at rest. At point C there is only the orange kinetic-energy bar, and its top is at the line $500\,\text{J}$; there is no potential energy because the bottom is the zero level. The bars of point B are not needed.
+**Formula:** $E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{thermal}$, so $E_\text{thermal} = (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})$
 **Conversions:** All energies are in joules, so no conversions are needed.
-**Substitution:** $E_\text{thermal} = 800\,\text{J} - 160\,\text{J} = 640\,\text{J}$
-**Answer:** $640\,\text{J}$, three significant figures as in the radiant energy $800\,\text{J}$.
-**Reasonableness:** The electrical and thermal energy together are $160\,\text{J} + 640\,\text{J} = 800\,\text{J}$, so the total energy is the same as at the start. $160\,\text{J} : 800\,\text{J} = 0.20$, or $20\,\%$, changes into electricity, which is a typical share for a present-day solar panel.
+**Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J}) = 200\,\text{J}$
+**Answer:** $200\,\text{J}$, to the nearest hundred joules, because the lengths of the bars are read from the $100\,\text{J}$ gridlines.
+**Reasonableness:** The mechanical energy decreases from $700\,\text{J}$ to $500\,\text{J}$, as it must on a track with friction. At point B the mechanical energy is $300\,\text{J} + 300\,\text{J} = 600\,\text{J}$, so by then only $100\,\text{J}$ has changed into thermal energy, and the thermal energy grows along the whole way. Check: $500\,\text{J} + 200\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L1-04
 **Find:** in each situation, the form of energy at the start and the useful form of energy into which the energy changes

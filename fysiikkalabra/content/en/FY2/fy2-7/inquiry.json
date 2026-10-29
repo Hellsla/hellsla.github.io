@@ -325,10 +325,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Where does the loss go?",
+      "prompt": "In the electricity grid $4\\,\\%$ of the electrical energy fed into the grid is lost and does not reach the users. What happens to this energy?",
+      "choices": [
+        {
+          "text": "On the way it turns into heat, which is transferred to the surrounding air.",
+          "correct": true,
+          "feedback": "Correct. The electric current heats the wires, and the heat is transferred to the surroundings. Energy does not disappear: the energy fed in is the sum of the energy that arrives and the heat transferred to the surroundings."
+        },
+        {
+          "text": "It disappears on the way, because it cannot be delivered all the way.",
+          "feedback": "Energy does not disappear. Loss means that some of the energy turns into heat on the way and is transferred to the surroundings, so it cannot be used at the socket. The energy that arrives and the heat together equal the energy fed in."
+        },
+        {
+          "text": "It stays stored in the wires and returns to the grid later.",
+          "feedback": "Wires do not store electrical energy. The energy counted as loss turns into heat in the wires and is transferred to the surrounding air, and it cannot be turned back into electricity."
+        },
+        {
+          "text": "It returns to the power plant as unused electricity.",
+          "feedback": "Loss is not unused electricity that would return to the power plant. It arises when the current flows through the wires and heats them, and this heat is transferred to the surroundings."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "3. Calculation",
       "prompt": "In an old district heating network, customers receive $375\\,\\text{MWh}$ of heat per week (an example situation). The efficiency of the network is $75\\,\\%$. How much energy must the heating plant feed into the network? Give your answer in megawatt-hours.",
       "answer": 500,
       "unit": "MWh",
@@ -354,7 +380,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and justify",
+      "title": "4. Explain and justify",
       "optional": true,
       "prompt": "Wind power is produced at night, when not much electricity is needed. Explain how energy can be transferred in time and why not all the energy comes back even with storage.",
       "criteria": [
@@ -368,7 +394,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. First answer yourself and only then open the answer."
+      "text": "Finally, one quick question. First answer yourself and only then open the answer."
     }
   ]
 }

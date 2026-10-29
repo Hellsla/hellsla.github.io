@@ -35,8 +35,9 @@
     {
       "id": "fy2-2-L1-05",
       "level": 1,
-      "text": "Aikuisen päivän ruoan energia on noin $10\\,\\text{MJ}$. Omenan energia on esimerkiksi $300\\,\\text{kJ}$. Kuinka monta omenaa vastaa energialtaan päivän ruokaa?",
-      "answer": 33,
+      "text": "Kuvan kymmenpotenssiasteikolle on merkitty kolmen asian energian suuruusluokka. Jokainen pieni väli on kymmenkertainen. Lue kuvasta AA-pariston ja salaman energia jouleina. Kuinka monta AA-paristoa vastaa energialtaan yhtä salamaa?",
+      "figure": "fy2-2/tikapuut-kohteet",
+      "answer": 100000,
       "unit": "kpl",
       "tolerance": 0.02
     }
