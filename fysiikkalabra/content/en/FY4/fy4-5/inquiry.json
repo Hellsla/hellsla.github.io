@@ -57,7 +57,7 @@
       "choices": [
         {
           "text": "$N$ is equal to $G$, because the sled does not move vertically.",
-          "feedback": "The sum of the vertical forces is zero, but there are three forces in the vertical direction: the weight down, the normal force up and the vertical component of the rope force up. In the model values at an angle of $30^\\circ$ the weight is $196\\,\\text{N}$ and the normal force only $146\\,\\text{N}$."
+          "feedback": "The sum of the vertical forces is zero, but two forces and the vertical component of the rope force act in the vertical direction: the weight down, the normal force up and the vertical component up. In the model values at an angle of $30^\\circ$ the weight is $196\\,\\text{N}$ and the normal force only $146\\,\\text{N}$."
         },
         {
           "text": "$N$ is smaller than $G$.",
@@ -102,7 +102,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "In the simulation a sled on ice is pulled by a rope or pushed from a handle. On the left is the situation diagram and on the right the free-body diagram of the sled, with the lengths of the arrows to scale.",
-      "howto": "Choose *Situation* (pull or push) and adjust the force $F$ and the angle $\\alpha$. The free-body diagram updates immediately. Press *Start* and the sled starts to move; press *Reset* and it stops at the start. The *Components* box shows the components of the force $F$ with dashed lines. *Speed* slows down or speeds up the motion without changing the readings. The readings are under the picture.",
+      "howto": "Choose *Situation* (pull or push) and adjust the force $F$ and the angle $\\alpha$. The free-body diagram updates immediately. Press *Start* and the sled starts to move; press *Reset* and it stops at the start. The *Show the components of the force F* box shows the components of the force $F$ with dashed lines. *Speed* slows down or speeds up the motion without changing the readings. The readings are under the picture.",
       "model": "The values are model values calculated by the simulation. The ice is horizontal and friction is ignored, so only the weight $\\mathbf{G}$, the normal force $\\mathbf{N}$ from the ice and the force $\\mathbf{F}$ of the rope or handle act on the sled. The force is so small that the sled does not lift off the ice. There is no air drag. The blue arrow of the velocity is in the situation diagram, not in the free-body diagram, because velocity is not a force.",
       "calc": "The components of the force are $F_x = F\\cos\\alpha$ and $F_y = F\\sin\\alpha$. In a pull $F_y$ points up and in a push down. Vertically the sled does not accelerate, so $N + F_y - G = 0$ in a pull and $N - F_y - G = 0$ in a push, with $G = mg$ and $g = 9.81\\,\\text{m/s}^2$. Horizontally $F_x = ma$, so $a = \\dfrac{F\\cos\\alpha}{m}$."
     },
@@ -501,11 +501,11 @@
         },
         {
           "key": "fbd_representation",
-          "detail": "The weight from the centre, the normal force and friction from the bottom surface, the force of the handle from where the handle is attached; the friction arrow starts or ends at the edge of the box; each with its own symbol."
+          "detail": "The weight from the centre, the normal force and friction from the bottom surface, the arrow of the force of the handle starts or ends at the point where the handle is attached; the friction arrow starts or ends at the edge of the box; each with its own symbol."
         },
         {
           "key": "fbd_magnitudes",
-          "detail": "The normal-force arrow is longer than the weight arrow, and the friction arrow is as long as the horizontal component of the force of the handle; components dashed."
+          "detail": "The normal-force arrow is longer than the weight arrow, and the friction arrow is as long as the horizontal component of the force of the handle; if the components are drawn, they are dashed."
         },
         {
           "key": "fbd_equations",

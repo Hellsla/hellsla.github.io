@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8e28baefc5966084
+CONTENT-HASH: 479ba762a742d257
 
 ## Blocking
 
 ## Polish
-- solutions.md L1-05 — the task asks the student to draw the rope force and its dashed components, but the solution has no Voimakuvio step. — Add one line before Kaava: "T vinosti ylös 40° kulmassa, T_x ja T_y katkoviivoin".
-- solutions.md L1-01 Vastaus — "14,7 N ≈ 15 N, kaksi merkitsevää numeroa" mixes two precisions. — Give 15 N as the answer and 14,7 N only as the intermediate value.
-- lessons/FY4/fy4-5/figures.py:258 — the `malli_hissi_jarru` docstring says L3-02, but the figure belongs to L3-01.
 
 ## Checked
-- I recomputed all twelve answers in one script with my own formulas: 14,7; 15; 4,9; 637,7; 191,5 N; 52,0; 660,6 N; 0,598 m/s²; 1,0 m/s²; 581,7; 1,9; 0,0608 N. All agree with answers.py and exercises.json within tolerance.
-- No solution describes a point model. Every diagram step says "suorakulmiona" (L2-04: seen from above, with G and N from the side).
-- `ruutu`: 32 px = 10 N, F1 40 N, F2 25 N, F3 = F4 = 30 N, drawn from the sides of a rectangle. The description gives the same data and not the 15 N.
-- `malli-pulkka` is to scale: G 147 N, N 117 N, T 60 N at 30° from the front top corner, F_μ = T_x = 52 N from the back bottom corner, and ΣF = 0.
-- `malli-hissi`: N 594 N < G 687 N, with v blue up and a orange down, both off the body, and the lift drawn as a pictorial situation picture.
-- Directions: the wall's friction points up on the book (L1-03). The ceiling's N points down on the balloon, with F_noste = G + N (L3-03). The curling stone has no forward force (L3-02). A lift slowing upward has a_y < 0 (L3-01).
-- Rounding follows the limiting datum. The units and the g → kg conversion in L3-03 are right.
+- Delta 000c8ad0. L1-05 now has a Voimakuvio step: T as a solid arrow from the attachment point at 40°, and T_x, T_y dashed from the same point. It matches the reworded task. T_x = 191,5 N ≈ 190 N.
+- L3-01 names the colours: v blue, a orange, beside the diagram, not forces. This agrees with `malli-hissi` (N 594 N < G 687 N). The `malli_hissi_jarru` docstring now says L3-01.
+- L1-01 "14,7 N ≈ 15 N" is kept as settled (tolerance 0,03). Not a finding.
+- From my full review this round: all twelve answers recomputed in one script agree with answers.py and exercises.json. `ruutu` (40/25/30/30 N, ΣF = 15 N) and `malli-pulkka` (to scale, F_μ = T_x = 52 N) are right. Directions are right in L1-03, L3-02 and L3-03, and every solution draws a rectangle, not a point.

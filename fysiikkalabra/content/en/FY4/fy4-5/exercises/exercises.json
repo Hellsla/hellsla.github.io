@@ -39,7 +39,7 @@
     {
       "id": "fy4-5-L1-05",
       "level": 1,
-      "text": "A box is pulled with a rope whose tension is $250\\,\\text{N}$ and which makes an angle of $40^\\circ$ with the horizontal. Draw the force of the rope and its components with dashed lines. How large is the horizontal component of the tension?",
+      "text": "A box is pulled with a rope whose tension is $250\\,\\text{N}$ and which makes an angle of $40^\\circ$ with the horizontal. Draw the force of the rope and, with dashed lines, its components. How large is the horizontal component of the tension?",
       "answer": 190,
       "unit": "N",
       "tolerance": 0.02

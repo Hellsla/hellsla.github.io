@@ -57,10 +57,10 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 
 1. **Choose the object.** Decide whose forces you draw. Only forces that act **on this object** go into the diagram. Forces that the object itself exerts on others do not belong in it.
 2. **Find the interactions.** List everything that acts on the object: the Earth (weight), every surface the object touches (normal force and friction), every rope (tension), a push or a pull, and air or water (drag and buoyancy). Every force has a cause outside the object. Motion alone does not cause a force.
-3. **Draw the object and the forces.** Draw the object simplified to a rectangle. Draw one arrow for each force, starting from the object at the point where the force acts.
+3. **Draw the object and the forces.** Draw the object simplified to a rectangle. Draw one arrow for each force, starting at the point where the force acts. The arrow of a pushing force may also end at that point.
    - The weight $\mathbf{G}$ points straight down.
    - The normal force $\mathbf{N}$ is perpendicular to the contact surface and pushes the object away from the surface. It does not always point up: a ceiling pushes down and a wall pushes sideways.
-   - The friction force $\mathbf{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity. The friction arrow starts or ends at the edge of the object; it is not drawn along a side of the object.
+   - The friction force $\mathbf{F}_\mu$ is parallel to the contact surface. Its direction comes from the direction in which the object slides, or tends to slide, relative to the surface. It does not always oppose the velocity. The friction arrow starts at a corner of the contact surface, outside the object, or ends there. It is not drawn along a side of the object from the middle of the side.
    - The tension $\mathbf{T}$ acts along the rope and pulls the object toward the rope.
    - Air drag is drawn only when the situation and its assumptions call for it.
 4. **Name the forces.** Give each force its own symbol. Two similar forces are told apart with subscripts, for example $\mathbf{T}_1$ and $\mathbf{T}_2$.
@@ -69,81 +69,63 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 7. **Components are not new forces.** When a force is split into components, the components together replace the force in the calculation. They are drawn with a dashed line so that they are not mistaken for forces.
 8. **Equation of motion.** Only now are the axes chosen and Newton's second law written component by component from the forces and signs of the diagram.
 
-<svg data-fig="suunnat" viewBox="0 0 600 620" role="img" aria-label="Four small free-body diagrams in which the object is a rectangle. Top left: a box rests on a horizontal floor, with the weight G straight down from the centre and an equally long normal force N up from the bottom surface. Top right: a box is at rest on an inclined slope, with the weight G straight down, the normal force N perpendicular to the slope and the friction force up along the slope from the upper corner of the bottom surface. Bottom left: a lamp hangs from a cord, with the weight G down and the tension T of the cord up along the cord. Bottom right: a helium balloon is pressed against the ceiling and is at rest. Beside it is the free-body diagram of the balloon: buoyancy up from the centre, the weight down from the centre and the normal force N from the ceiling, which presses the top surface downward, away from the ceiling surface. The buoyancy arrow is as long as the weight and normal force arrows together." style="max-width:100%;font-size:24px">
+<svg data-fig="suunnat" viewBox="0 0 600 620" role="img" aria-label="Four situations. Each has a small situation picture on the left and the free-body diagram of the object on the right, in which the object is a rectangle and no surfaces are drawn. Top left: a box rests on a horizontal floor, with the weight G straight down from the centre and an equally long normal force N up from the bottom surface. Top right: a box is at rest on an inclined slope; in the free-body diagram the rectangle is tilted like the slope, with the weight G straight down, the normal force N perpendicular to the bottom surface and the friction force up along the slope from the upper corner of the bottom surface. Bottom left: a lamp hangs from a cord, with the weight G down and the tension T of the cord up from the top surface. Bottom right: a helium balloon is pressed against the ceiling and is at rest: buoyancy up from the centre, the weight down from the centre and the normal force N from the ceiling, which presses the top surface downward, away from the ceiling surface. The buoyancy arrow is as long as the weight and normal force arrows together." style="max-width:100%;font-size:24px">
   <line x1="300" y1="10" x2="300" y2="610" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="10" y1="310" x2="590" y2="310" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="115" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{floor}$</div></foreignObject>
-  <line x1="40" y1="200" x2="260" y2="200" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <line x1="40" y1="200" x2="30" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="56" y1="200" x2="46" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="72" y1="200" x2="62" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="88" y1="200" x2="78" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="104" y1="200" x2="94" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="120" y1="200" x2="110" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="136" y1="200" x2="126" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="152" y1="200" x2="142" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="168" y1="200" x2="158" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="184" y1="200" x2="174" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="200" x2="190" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="216" y1="200" x2="206" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="232" y1="200" x2="222" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="248" y1="200" x2="238" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="112" y="140" width="76" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="150" y1="170" x2="150" y2="252" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,269 L142,251 L158,251 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="160" y="250.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="168" y1="200" x2="168" y2="118" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M168,101 L176,119 L160,119 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="178" y="90.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
+  <line x1="20" y1="190" x2="120" y2="190" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <line x1="20" y1="190" x2="10" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="36" y1="190" x2="26" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="52" y1="190" x2="42" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="68" y1="190" x2="58" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="84" y1="190" x2="74" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="190" x2="90" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="190" x2="106" y2="202" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="42" y="146" width="56" height="44" rx="3" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5"/>
+  <rect x="185" y="138" width="60" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="215" y1="160" x2="215" y2="231" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,248 L207,230 L223,230 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="225" y="229.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="230" y1="182" x2="230" y2="111" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M230,94 L238,112 L222,112 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="240" y="83.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
   <foreignObject x="415" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{slope}$</div></foreignObject>
-  <line x1="316" y1="262" x2="559" y2="148.5" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <line x1="316" y1="262" x2="306" y2="274" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="330.5" y1="255" x2="320.5" y2="267" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="345" y1="248.5" x2="335" y2="260.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="359.5" y1="241.5" x2="349.5" y2="253.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="374" y1="235" x2="364" y2="247" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="388.5" y1="228" x2="378.5" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="403" y1="221.5" x2="393" y2="233.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="417.5" y1="214.5" x2="407.5" y2="226.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="432" y1="208" x2="422" y2="220" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="446.5" y1="201" x2="436.5" y2="213" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="461" y1="194.5" x2="451" y2="206.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="475.5" y1="187.5" x2="465.5" y2="199.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="490" y1="181" x2="480" y2="193" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="504.5" y1="174" x2="494.5" y2="186" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="519" y1="167.5" x2="509" y2="179.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="533.5" y1="160.5" x2="523.5" y2="172.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="548" y1="154" x2="538" y2="166" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="385" y="150" width="72" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-25 421 180)"/>
-  <line x1="421" y1="180" x2="421" y2="262" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M421,279 L413,261 L429,261 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="431" y="268.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="421" y1="213" x2="390.5" y2="147" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M383,131.5 L398,144.5 L383.5,151.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="357" y="111" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
-  <line x1="466.5" y1="192" x2="489" y2="181.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M504.5,174 L491.5,189 L484.5,174.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="492" y="181.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
+  <line x1="312" y1="230" x2="421" y2="179.5" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <line x1="312" y1="230" x2="302" y2="242" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="326.5" y1="223" x2="316.5" y2="235" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="341" y1="216.5" x2="331" y2="228.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="355.5" y1="209.5" x2="345.5" y2="221.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="370" y1="203" x2="360" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="384.5" y1="196" x2="374.5" y2="208" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="399" y1="189.5" x2="389" y2="201.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="413.5" y1="182.5" x2="403.5" y2="194.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M350.1,212.3 L389.9,193.7 L375.6,162.8 L335.7,181.4 Z" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="462" y="128" width="60" height="44" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-25 492 150)"/>
+  <line x1="492" y1="150" x2="492" y2="221" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M492,238 L484,220 L500,220 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="502" y="227.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="490.5" y1="175" x2="464" y2="118" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M456.5,102.5 L471.5,115.5 L457,122.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="430.5" y="82" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{N}$</div></foreignObject>
+  <line x1="528.5" y1="157.5" x2="547" y2="148.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M562,141.5 L549.5,156.5 L542.5,142 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="545.5" y="151" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{F}_{\mu}$</div></foreignObject>
   <foreignObject x="121" y="319.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{lamp}$</div></foreignObject>
-  <line x1="70" y1="360" x2="230" y2="360" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <line x1="70" y1="360" x2="60" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="86" y1="360" x2="76" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="102" y1="360" x2="92" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="118" y1="360" x2="108" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="134" y1="360" x2="124" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="150" y1="360" x2="140" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="166" y1="360" x2="156" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="182" y1="360" x2="172" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="198" y1="360" x2="188" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="214" y1="360" x2="204" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="150" y1="360" x2="150" y2="446" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="122" y="446" width="56" height="40" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="150" y1="466" x2="150" y2="537" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,554 L142,536 L158,536 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="162" y="535.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
-  <line x1="150" y1="446" x2="150" y2="375" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,358 L158,376 L142,376 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="162" y="363.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
+  <line x1="30" y1="360" x2="110" y2="360" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <line x1="30" y1="360" x2="20" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="46" y1="360" x2="36" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="62" y1="360" x2="52" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="78" y1="360" x2="68" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="94" y1="360" x2="84" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="70" y1="360" x2="70" y2="440" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M48,470 L92,470 L81,440 L59,440 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="190" y="452" width="50" height="36" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="215" y1="470" x2="215" y2="530" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,547 L207,529 L223,529 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="227" y="528.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{G}$</div></foreignObject>
+  <line x1="215" y1="452" x2="215" y2="392" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M215,375 L223,393 L207,393 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="227" y="380.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\mathbf{T}$</div></foreignObject>
   <foreignObject x="365" y="319.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{helium balloon}$</div></foreignObject>
   <line x1="316" y1="360" x2="430" y2="360" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="316" y1="360" x2="306" y2="348" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -169,7 +151,7 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 
 The figure shows four situations in which the directions of the forces often surprise people. On a slope the normal force is perpendicular to the slope, not vertical, and friction holds the box in place along the slope. On a helium balloon pressed against the ceiling the ceiling pushes downward.
 
-In a free-body diagram the object is always a simplified rectangle, and each force starts from its point of action: the weight from the centre, the normal force and friction from the contact surface, and the tension from where the rope is attached. The arrow of a pushing force may also end at the point where the push acts. In the situation diagram the object may look as it really looks, but in the free-body diagram only the rectangle and the forces are drawn.
+In a free-body diagram the object is always a simplified rectangle, and each force starts from its point of action: the weight from the centre, the normal force and friction from the contact surface, and the tension from where the rope is attached. The arrow of a pushing force may also end at the point where the push acts. In the situation diagram objects are drawn as they look, but in the free-body diagram only the rectangle and the forces are drawn.
 
 The marking instructions of the matriculation examinations give task-specific points for the free-body diagram. For example, in the spring 2025 helium-balloon task a missing, extra or wrongly directed force cost all the points of the diagram, and so did drawing velocity or acceleration as a force on the balloon. In the autumn 2025 examination a missing name cost one point. The exact scoring varies from task to task, but every examination requires the same things: all the forces, no invented forces, correct directions and unambiguous names.
 

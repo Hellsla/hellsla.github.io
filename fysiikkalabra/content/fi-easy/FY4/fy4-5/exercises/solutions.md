@@ -46,6 +46,7 @@
 **Annettu:** $T = 250\,\text{N}$, kulma vaakatasoon $\alpha = 40^\circ$
 **Kysytty:** jännitysvoiman vaakakomponentti $T_x$ yksikössä $\text{N}$. Vaakakomponentti on se osa voimasta, joka osoittaa vaakasuoraan.
 **Periaate:** Voima ja sen komponentit muodostavat suorakulmaisen kolmion. Voima on kolmion pisin sivu eli hypotenuusa. Vaakakomponentti on kulman $\alpha$ viereinen kateetti.
+**Voimakuvio:** Köyden voima $\mathbf{T}$ on yksi yhtenäinen nuoli. Se lähtee kiinnityskohdasta vinosti ylös $40^\circ$:n kulmassa. Komponentit $T_x$ ja $T_y$ piirretään katkoviivoin samasta kohdasta.
 **Kaava:** $T_x = T\cos\alpha$
 **Muunnokset:** Voima on newtoneina ja kulma asteina. Muunnoksia ei tarvita. Laskimen asteikko on DEG.
 **Sijoitus:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191{,}5\,\text{N}$
@@ -100,7 +101,7 @@
 **Annettu:** $m = 70\,\text{kg}$, hissi liikkuu ylöspäin ja hidastaa, kiihtyvyyden suuruus $1{,}5\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** lattian tukivoima $N$ yksikössä $\text{N}$
 **Periaate:** Ylöspäin liikkuva hissi hidastuu. Silloin sen kiihtyvyys osoittaa alas, vaikka nopeus osoittaa ylös. Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas.
-**Voimakuvio:** Ihminen on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on lyhyempi. Nopeus $\mathbf{v}$ ylös ja kiihtyvyys $\mathbf{a}$ alas piirretään kuvion viereen ohuina nuolina. Ne eivät ole voimia. Kiihtyvyyden komponentti on $a_y = -1{,}5\,\text{m/s}^2$.
+**Voimakuvio:** Ihminen on piirretty suorakulmiona, ja $y$-akseli osoittaa ylös. Paino $\mathbf{G}$ osoittaa alas ja tukivoima $\mathbf{N}$ ylös. Tukivoima on lyhyempi. Nopeus $\mathbf{v}$ ylös (sininen) ja kiihtyvyys $\mathbf{a}$ alas (oranssi) piirretään kuvion viereen ohuina nuolina. Ne eivät ole voimia. Kiihtyvyyden komponentti on $a_y = -1{,}5\,\text{m/s}^2$.
 **Kaava:** $N - mg = m a_y$, joten $N = m(g + a_y)$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 581{,}7\,\text{N}$

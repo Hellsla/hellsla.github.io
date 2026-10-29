@@ -46,6 +46,7 @@
 **Given:** $T = 250\,\text{N}$, angle to the horizontal $\alpha = 40^\circ$
 **Find:** the horizontal component $T_x$ of the tension in $\text{N}$
 **Principle:** The force and its components form a right triangle whose hypotenuse is the force. The horizontal component is the leg adjacent to the angle $\alpha$.
+**Free-body diagram:** The force $\mathbf{T}$ of the rope as one solid arrow from the attachment point obliquely up at an angle of $40^\circ$, and the components $T_x$ and $T_y$ with dashed lines from the same point.
 **Formula:** $T_x = T\cos\alpha$
 **Conversions:** The force is in newtons and the angle in degrees, so no conversions are needed; the calculator is in DEG mode.
 **Substitution:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191.5\,\text{N}$
@@ -100,7 +101,7 @@
 **Given:** $m = 70\,\text{kg}$, the elevator moves upward and slows down, magnitude of the acceleration $1.5\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
 **Find:** the normal force $N$ of the floor in $\text{N}$
 **Principle:** An elevator moving upward is slowing down, so its acceleration points down even though the velocity points up. By Newton's second law the net force points in the direction of the acceleration, that is down.
-**Free-body diagram:** The person as a rectangle, $y$-axis up. The weight $\mathbf{G}$ down and the normal force $\mathbf{N}$ up, the normal force shorter. The velocity $\mathbf{v}$ up and the acceleration $\mathbf{a}$ down are drawn beside the diagram as thin arrows, not as forces. The component of the acceleration is $a_y = -1.5\,\text{m/s}^2$.
+**Free-body diagram:** The person as a rectangle, $y$-axis up. The weight $\mathbf{G}$ down and the normal force $\mathbf{N}$ up, the normal force shorter. The velocity $\mathbf{v}$ up (blue) and the acceleration $\mathbf{a}$ down (orange) are drawn beside the diagram as thin arrows, not as forces. The component of the acceleration is $a_y = -1.5\,\text{m/s}^2$.
 **Formula:** $N - mg = m a_y$, so $N = m(g + a_y)$
 **Conversions:** The mass is in kilograms and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 581.7\,\text{N}$
