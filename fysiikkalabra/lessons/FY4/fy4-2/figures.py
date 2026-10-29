@@ -18,7 +18,7 @@ def hero():
     f = H.hero("fy42-hero", "Kuvitus: kevyen liikenteen silta joen yllä kesäpäivänä. Sillan keskellä nuori pudottaa kiven kaiteen yli, "
                "ja rannalla ystävä kuvaa putoamista puhelimella. Kivi on piirretty viiteen kohtaan yhtä pitkin aikavälein: "
                "välit kasvavat alaspäin suhteessa 1 : 3 : 5 : 7, ja kiven vieressä oleva sininen nopeusnuoli pitenee joka "
-               "kerta yhtä paljon. Alimmassa kohdassa kivi osuu veteen ja vesi roiskuu. Mittakaava ei ole tarkka, välien suhteet ovat.")
+               "kerta yhtä paljon. Oikealla oleva mittatikku näyttää viisi korkeutta: sen vuorotellen sävytetyt osat ovat kiven kulkemat matkat, ja ne kasvavat 1 : 3 : 5 : 7. Alimmassa kohdassa kivi osuu veteen ja vesi roiskuu. Mittakaava ei ole tarkka, välien suhteet ovat.")
     H.sky(f, "fy42h", 380, ICE, GLASS)
     H.sun(f, "fy42h", 1060, 92, 44, rays=False)
     for bx, by, w in ((330, 60, 22), (366, 46, 18), (700, 104, 20)):     # swallows far away
@@ -100,23 +100,31 @@ def hero():
         f.add(f'<ellipse cx="{ux}" cy="{uy}" rx="24" ry="10" fill="{COPPER}" stroke="{INK}" stroke-width="2"/>')
         f.circle(ux + 20, uy - 14, 8, GOOD, INK, 2); f.path(f"M{ux + 27},{uy - 15} l9,2 l-9,3 Z", HEAT_LIGHT, INK, 1)
         f.path(f"M{ux - 30},{uy + 10} q12,5 24,0 t24,0 t24,0", stroke=WHITE, w=2, extra='stroke-linecap="round" stroke-opacity="0.8"')
-    # the stone at equal time steps: y = y0 + k n², gaps 1 : 3 : 5 : 7; velocity arrow grows linearly
-    x0, y0, k = 636, 156, (522 - 156) / 16
-    for i in range(5):
-        y = y0 + k * i * i
-        op = "1" if i in (0, 4) else "0.55"
-        f.add(f'<g opacity="{op}">')
-        f.add(f'<ellipse cx="{x0}" cy="{n(y)}" rx="12" ry="10" fill="{IRON}" stroke="{INK}" stroke-width="2"/>')
-        f.add(f'<ellipse cx="{x0 - 4}" cy="{n(y - 3)}" rx="4" ry="3" fill="{ALUMINIUM}"/>')
+    # the stone at equal time steps: y = y0 + k n², gaps 1 : 3 : 5 : 7; velocity arrow grows linearly.
+    # A measuring staff on the right marks the five heights; its bands are the gaps (1, 3, 5, 7 units), alternately tinted.
+    x0, y0, yw = 640, 156, 556
+    k = (yw - y0) / 16
+    ys = [y0 + k * i * i for i in range(5)]
+    sx = x0 + 84                                               # the staff
+    for i in range(4):                                         # bands between the heights
+        f.add(f'<rect x="{sx}" y="{n(ys[i])}" width="26" height="{n(ys[i + 1] - ys[i])}" fill="{WATER if i % 2 == 0 else WHITE}" '
+              f'stroke="{INK}" stroke-width="2"/>')
+    for y in ys:                                               # guide from each stone to its tick, behind the arrows
+        f.line(x0 + 28, y, sx, y, MUTED, 1.5, "7 6")
+        f.line(sx - 8, y, sx + 34, y, INK, 3)
+    for i, y in enumerate(ys):
+        f.add(f'<g opacity="{"1" if i in (0, 4) else "0.8"}">')
+        f.add(f'<ellipse cx="{x0}" cy="{n(y)}" rx="27" ry="12.5" fill="{IRON}" stroke="{INK}" stroke-width="2.5"/>')
+        f.add(f'<ellipse cx="{x0 - 9}" cy="{n(y - 4)}" rx="9" ry="4" fill="{ALUMINIUM}"/>')
         f.add("</g>")
         if i:
             L = 19 * i
-            f.arrow(x0 + 44, y - L / 2, x0 + 44, y + L / 2, V_COL, 5, 14)
+            f.arrow(x0 + 46, y - L / 2, x0 + 46, y + L / 2, V_COL, 6, 15)
     # the splash where the stone hits the water
-    for dx, dy, r in ((-30, -18, 5), (-20, -34, 4), (24, -22, 5), (34, -8, 4), (10, -40, 3.5), (-40, -4, 3.5)):
-        f.circle(x0 + dx, 522 + dy, r, WATER_LIGHT, WATER, 1.5)
-    for rx, op in ((24, 0.9), (40, 0.6), (56, 0.35)):
-        f.add(f'<ellipse cx="{x0}" cy="534" rx="{rx}" ry="{rx * 0.2:g}" fill="none" stroke="{WHITE}" stroke-width="3" stroke-opacity="{op}"/>')
+    for dx, dy, r in ((-34, -18, 5), (-22, -36, 4), (26, -22, 5), (38, -8, 4), (10, -42, 3.5), (-44, -4, 3.5)):
+        f.circle(x0 + dx, yw + dy, r, WATER_LIGHT, WATER, 1.5)
+    for rx, op in ((26, 0.9), (44, 0.6), (62, 0.35)):
+        f.add(f'<ellipse cx="{x0}" cy="{yw + 13}" rx="{rx}" ry="{rx * 0.2:g}" fill="none" stroke="{WHITE}" stroke-width="3" stroke-opacity="{op}"/>')
     return f.svg()
 
 
@@ -176,9 +184,9 @@ def tv_graph():
     f.tex(a.X(0.6), a.Y(8.6), r"a = \dfrac{\Delta v}{\Delta t}", "start", A_COL)
     f.line(316, 30, 316, 300, RULE, 1.5, "6 6")
     b = Axes(f, (360, 290), (500, 70), xlabel="t", ylabel="v", **kw)
-    for end, col, tx in ((8.5, V_COL, "a > 0"), (5, MUTED, "a = 0"), (1.5, INK, "a < 0")):
+    for end, col, tx, tcol in ((8.5, V_COL, "a > 0", A_COL), (5, MUTED, "a = 0", MUTED), (1.5, INK, "a < 0", INK)):
         b.line([(0, 5), (10, end)], col, 4)
-        f.tex(b.X(10) + 10, b.Y(end), tx, "start", col)
+        f.tex(b.X(10) + 10, b.Y(end), tx, "start", tcol)
     b.point(0, 5, INK)
     f.tex(b.x0 - 10, b.Y(5), "v_0", "end")
     return f.svg()

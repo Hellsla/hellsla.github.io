@@ -2,7 +2,7 @@
 
 > **Miksi** sillalta pudotettu kivi kulkee jokaisen sekunnin aikana pidemmän matkan kuin edellisen sekunnin aikana?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kevyen liikenteen silta joen yllä kesäpäivänä. Sillan keskellä nuori pudottaa kiven kaiteen yli, ja rannalla ystävä kuvaa putoamista puhelimella. Kivi on piirretty viiteen kohtaan yhtä pitkin aikavälein: välit kasvavat alaspäin suhteessa 1 : 3 : 5 : 7, ja kiven vieressä oleva sininen nopeusnuoli pitenee joka kerta yhtä paljon. Alimmassa kohdassa kivi osuu veteen ja vesi roiskuu. Mittakaava ei ole tarkka, välien suhteet ovat." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kevyen liikenteen silta joen yllä kesäpäivänä. Sillan keskellä nuori pudottaa kiven kaiteen yli, ja rannalla ystävä kuvaa putoamista puhelimella. Kivi on piirretty viiteen kohtaan yhtä pitkin aikavälein: välit kasvavat alaspäin suhteessa 1 : 3 : 5 : 7, ja kiven vieressä oleva sininen nopeusnuoli pitenee joka kerta yhtä paljon. Oikealla oleva mittatikku näyttää viisi korkeutta: sen vuorotellen sävytetyt osat ovat kiven kulkemat matkat, ja ne kasvavat 1 : 3 : 5 : 7. Alimmassa kohdassa kivi osuu veteen ja vesi roiskuu. Mittakaava ei ole tarkka, välien suhteet ovat." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy42h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy42h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy42h-river" gradientUnits="userSpaceOnUse" x1="0" y1="330" x2="0" y2="600"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy42h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="520"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy42h-pier" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.4" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy42h-deck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy42h-rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="380" fill="url(#fy42h-sky)"/>
   <circle cx="1060" cy="92" r="70.5" fill="#ffffff" fill-opacity="0.5"/>
@@ -318,43 +318,57 @@
   <circle cx="302" cy="572" r="8" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
   <path d="M309,571 l9,2 l-9,3 Z" fill="#ffc078" stroke="#1f2933" stroke-width="1" stroke-linejoin="round"/>
   <path d="M252,596 q12,5 24,0 t24,0 t24,0" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.8"/>
+  <rect x="724" y="156" width="26" height="25" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
+  <rect x="724" y="181" width="26" height="75" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="724" y="256" width="26" height="125" fill="#2f74b5" stroke="#1f2933" stroke-width="2"/>
+  <rect x="724" y="381" width="26" height="175" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="668" y1="156" x2="724" y2="156" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="716" y1="156" x2="758" y2="156" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="668" y1="181" x2="724" y2="181" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="716" y1="181" x2="758" y2="181" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="668" y1="256" x2="724" y2="256" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="716" y1="256" x2="758" y2="256" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="668" y1="381" x2="724" y2="381" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="716" y1="381" x2="758" y2="381" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="668" y1="556" x2="724" y2="556" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <line x1="716" y1="556" x2="758" y2="556" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <g opacity="1">
-  <ellipse cx="636" cy="156" rx="12" ry="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="632" cy="153" rx="4" ry="3" fill="#c4ccd4"/>
+  <ellipse cx="640" cy="156" rx="27" ry="12.5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="631" cy="152" rx="9" ry="4" fill="#c4ccd4"/>
   </g>
-  <g opacity="0.55">
-  <ellipse cx="636" cy="179" rx="12" ry="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="632" cy="176" rx="4" ry="3" fill="#c4ccd4"/>
+  <g opacity="0.8">
+  <ellipse cx="640" cy="181" rx="27" ry="12.5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="631" cy="177" rx="9" ry="4" fill="#c4ccd4"/>
   </g>
-  <line x1="680" y1="169.5" x2="680" y2="175.5" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M680,188.5 L673.5,174.5 L686.5,174.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <g opacity="0.55">
-  <ellipse cx="636" cy="247.5" rx="12" ry="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="632" cy="244.5" rx="4" ry="3" fill="#c4ccd4"/>
+  <line x1="686" y1="171.5" x2="686" y2="176.5" stroke="#1971c2" stroke-width="6" stroke-linecap="butt"/>
+  <path d="M686,190.5 L679,175.5 L693,175.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <g opacity="0.8">
+  <ellipse cx="640" cy="256" rx="27" ry="12.5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="631" cy="252" rx="9" ry="4" fill="#c4ccd4"/>
   </g>
-  <line x1="680" y1="228.5" x2="680" y2="253.5" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M680,266.5 L673.5,252.5 L686.5,252.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <g opacity="0.55">
-  <ellipse cx="636" cy="362" rx="12" ry="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="632" cy="359" rx="4" ry="3" fill="#c4ccd4"/>
+  <line x1="686" y1="237" x2="686" y2="261" stroke="#1971c2" stroke-width="6" stroke-linecap="butt"/>
+  <path d="M686,275 L679,260 L693,260 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <g opacity="0.8">
+  <ellipse cx="640" cy="381" rx="27" ry="12.5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="631" cy="377" rx="9" ry="4" fill="#c4ccd4"/>
   </g>
-  <line x1="680" y1="333.5" x2="680" y2="377.5" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M680,390.5 L673.5,376.5 L686.5,376.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="686" y1="352.5" x2="686" y2="395.5" stroke="#1971c2" stroke-width="6" stroke-linecap="butt"/>
+  <path d="M686,409.5 L679,394.5 L693,394.5 Z" fill="#1971c2" stroke-linejoin="round"/>
   <g opacity="1">
-  <ellipse cx="636" cy="522" rx="12" ry="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="632" cy="519" rx="4" ry="3" fill="#c4ccd4"/>
+  <ellipse cx="640" cy="556" rx="27" ry="12.5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="631" cy="552" rx="9" ry="4" fill="#c4ccd4"/>
   </g>
-  <line x1="680" y1="484" x2="680" y2="547" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M680,560 L673.5,546 L686.5,546 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="606" cy="504" r="5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <circle cx="616" cy="488" r="4" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <circle cx="660" cy="500" r="5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <circle cx="670" cy="514" r="4" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <circle cx="646" cy="482" r="3.5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <circle cx="596" cy="518" r="3.5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
-  <ellipse cx="636" cy="534" rx="24" ry="4.8" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.9"/>
-  <ellipse cx="636" cy="534" rx="40" ry="8" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6"/>
-  <ellipse cx="636" cy="534" rx="56" ry="11.2" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.35"/>
+  <line x1="686" y1="518" x2="686" y2="580" stroke="#1971c2" stroke-width="6" stroke-linecap="butt"/>
+  <path d="M686,594 L679,579 L693,579 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <circle cx="606" cy="538" r="5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="618" cy="520" r="4" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="666" cy="534" r="5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="678" cy="548" r="4" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="650" cy="514" r="3.5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <circle cx="596" cy="552" r="3.5" fill="#a9d1f0" stroke="#2f74b5" stroke-width="1.5"/>
+  <ellipse cx="640" cy="569" rx="26" ry="5.2" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.9"/>
+  <ellipse cx="640" cy="569" rx="44" ry="8.8" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.6"/>
+  <ellipse cx="640" cy="569" rx="62" ry="12.4" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.35"/>
 </svg>
 
 ## Ydinajatus
@@ -497,7 +511,7 @@ Liike on **tasaisesti kiihtyvää**, kun kiihtyvyys pysyy vakiona: nopeus muuttu
   <foreignObject x="532" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
   <foreignObject x="350" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
   <polyline points="360,180 500,103" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="510" y="88.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$a > 0$</div></foreignObject>
+  <foreignObject x="510" y="88.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$a > 0$</div></foreignObject>
   <polyline points="360,180 500,180" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="510" y="165.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$a = 0$</div></foreignObject>
   <polyline points="360,180 500,257" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
@@ -537,14 +551,14 @@ Kiihtyvyys on nopeuden muutos jaettuna siihen kuluneella ajalla:
 ```latex
 a = \frac{\Delta v}{\Delta t}
 ```
-missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ nopeuden muutos ($\text{m/s}$) ja $\Delta t$ siihen kulunut aika ($\text{s}$). Kun kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$, jolloin nopeus on $v_0$, nopeus kasvaa joka sekunti määrän $a$:
+missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ nopeuden muutos ($\text{m/s}$) ja $\Delta t$ siihen kulunut aika ($\text{s}$). Kun kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$, jolloin nopeus on $v_0$, nopeus muuttuu joka sekunti määrän $a$:
 ```latex
 v = v_0 + a\,t
 ```
 missä $v$ on nopeus hetkellä $t$ ($\text{m/s}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$) ja $t$ aika ($\text{s}$).
 
-### Siirtymä on $(t,v)$-kuvaajan alle jäävä pinta-ala
-Tasaisessa liikkeessä siirtymä $v\,t$ on $(t,v)$-kuvaajan alle jäävän suorakulmion pinta-ala. Sama pätee, kun nopeus muuttuu: siirtymä on kuvaajan ja aika-akselin väliin jäävä pinta-ala. Tasaisesti kiihtyvässä liikkeessä alue jakautuu suorakulmioon, jonka ala on $v_0\,t$, ja kolmioon, jonka korkeus on nopeuden kasvu $a\,t$ ja leveys $t$. Kolmion ala on $\tfrac{1}{2} \cdot a\,t \cdot t = \tfrac{1}{2}\,a\,t^2$.
+### Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala
+Tasaisessa liikkeessä siirtymä $v\,t$ on $(t,v)$-kuvaajan alle jäävän suorakulmion pinta-ala. Sama pätee, kun nopeus muuttuu: siirtymä on kuvaajan ja aika-akselin väliin jäävä pinta-ala, jossa aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä alue jakautuu suorakulmioon, jonka ala on $v_0\,t$, ja kolmioon, jonka korkeus on nopeuden kasvu $a\,t$ ja leveys $t$. Kolmion ala on $\tfrac{1}{2} \cdot a\,t \cdot t = \tfrac{1}{2}\,a\,t^2$.
 
 <svg data-fig="area" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva (t,v)-kuvaajasta, ei lukuarvoja. Nopeus kasvaa suoraviivaisesti alkunopeudesta v0 hetkellä 0 nopeuteen v hetkellä t. Suoran alle jäävä alue on jaettu kahteen osaan: sininen suorakulmio, jonka korkeus on v0 ja leveys t, ja oranssi kolmio sen päällä, jonka korkeus on nopeuden kasvu at ja leveys t. Suorakulmion ala on v0 kertaa t ja kolmion ala puolet a t:n ja t:n tulosta; yhdessä ne ovat siirtymä Δx." style="max-width:100%;font-size:24px">
   <line x1="79" y1="300" x2="444" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -641,6 +655,6 @@ Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heite
 ## Tiivistelmä
 - Kiihtyvyys $a = \tfrac{\Delta v}{\Delta t}$ kertoo nopeuden muutoksen aikayksikössä, yksikkö $\text{m/s}^2$. Se on vektorisuure, ja suoralla etumerkki kertoo suunnan.
 - Vauhti kasvaa, kun kiihtyvyys ja nopeus ovat samansuuntaiset, ja pienenee, kun ne ovat vastakkaissuuntaiset.
-- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, jonka kulmakerroin on kiihtyvyys ja jonka alle jäävä pinta-ala on siirtymä.
+- Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, jonka kulmakerroin on kiihtyvyys ja jonka ja aika-akselin välinen pinta-ala on siirtymä; aika-akselin alapuolinen osa ($v < 0$) lasketaan negatiivisena.
 - $v = v_0 + a\,t$ ja $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. $(t,x)$-kuvaaja on käyrä, ja hetkellinen nopeus on sen tangentin kulmakerroin.
 - Vapaassa pudotuksessa kiihtyvyys on $g = 9{,}81\,\text{m/s}^2$ alaspäin. Sen voi määrittää sovittamalla mittauspisteisiin toisen asteen polynomin: $a = 2A$.

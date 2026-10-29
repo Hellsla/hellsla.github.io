@@ -47,7 +47,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\text{m/s}^2 \cdot \text{s}^2 = \text{m}$. Muunnoksia ei tarvita.
 **Sijoitus:** $\Delta x = \tfrac{1}{2} \cdot 0{,}40\,\text{m/s}^2 \cdot (30\,\text{s})^2 = \tfrac{1}{2} \cdot 0{,}40\,\text{m/s}^2 \cdot 900\,\text{s}^2 = 180\,\text{m}$
 **Vastaus:** $180\,\text{m}$ eli $1{,}8 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $0{,}40\,\text{m/s}^2$ ja ajassa $30\,\text{s}$.
-**Järkevyys:** Loppunopeus on $0{,}40\,\text{m/s}^2 \cdot 30\,\text{s} = 12\,\text{m/s}$, joten keskinopeus on $6{,}0\,\text{m/s}$ ja $6{,}0\,\text{m/s} \cdot 30\,\text{s} = 180\,\text{m}$. Puolessa minuutissa noin $40\,\text{km/h}$:n nopeuteen kiihtyvä juna ehtii hyvin laiturin pituuden verran.
+**Järkevyys:** Loppunopeus on $0{,}40\,\text{m/s}^2 \cdot 30\,\text{s} = 12\,\text{m/s}$, joten keskinopeus on $6{,}0\,\text{m/s}$ ja $6{,}0\,\text{m/s} \cdot 30\,\text{s} = 180\,\text{m}$. Loppunopeus $12\,\text{m/s} = 12 \cdot 3{,}6\,\text{km/h} \approx 43\,\text{km/h}$ on tavallinen vauhti, jolla juna lähtee asemalta, ja $180\,\text{m}$ on noin kaksi pikajuoksuradan pituutta ($100\,\text{m}$) eli suunnilleen asemalaiturin mittainen matka.
 
 ## fy4-2-L2-01
 **Annettu:** alkunopeus $v_0 = 72\,\text{km/h}$, loppunopeus $v = 0$, jarrutusaika $t = 4{,}0\,\text{s}$; jarrutus on tasaista
@@ -107,7 +107,7 @@
 **Kaava:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja ajat sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
 **Sijoitus:** $s = \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} + 15{,}0\,\text{m/s} \cdot 60{,}0\,\text{s} + \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 15{,}0\,\text{s} = 150\,\text{m} + 900\,\text{m} + 112{,}5\,\text{m} = 1162{,}5\,\text{m}$
-**Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa.
+**Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa. Tulos $1162{,}5\,\text{m}$ pyöristetään kolmeen merkitsevään numeroon, joten luvun lopun nolla ei ole merkitsevä; kilometreina asia näkyy selvemmin.
 **Järkevyys:** Jos juna kulkisi koko ajan $95\,\text{s}$ nopeudella $15{,}0\,\text{m/s}$, matka olisi $1425\,\text{m}$; kiihdytys ja jarrutus vievät tästä puolet omista osuuksistaan, $150\,\text{m} + 112{,}5\,\text{m}$, joten $1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}$. Reilun kilometrin asemaväli on metrolle tavallinen.
 
 ## fy4-2-L3-03

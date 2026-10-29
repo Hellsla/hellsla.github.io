@@ -1,12 +1,9 @@
 VERDICT: DONE
 
-Round 1 draft of the lesson Kiihtyvyys ja tasaisesti kiihtyvä liike. `check_lesson.py fy4-2` passes every check, including the layout at 360, 768 and 1280 px.
-
-- `lesson.md`: the Miksi question (a stone dropped from a bridge) with its hero. Ydinajatus covers acceleration and its sign, the (t,v) graph, the tangent as instantaneous velocity, and free fall. Kaava gives a = Δv/Δt, v = v₀ + at and x = x₀ + v₀t + ½at² from the area, plus a = 2A from a polynomial fit. The worked example has seven stages and solves a quadratic. Also a misconception section and a summary.
-- `figures.py`: the hero (herolib) and four theory figures: strobe, tv-graph, tangent and area. Four task figures are shown by id. Velocity is blue and acceleration orange everywhere.
-- `inquiry.json`: a hook and a retrieval item, two predictions, the simulation, two experiments with a conclusion, a free-fall data task (polynomial fit to get g), theory and reflection, the example, an error-spotting item, a transfer task, three checks and the exit ticket.
-- New simulation `assets/sims/fy4/fy4-2` with 36 assertions in `tests/sims/fy4-2.json`. Its texts are under `lang/fi.json` sims.fy4-2.
-- Exercises 5/4/3 with complete solutions. Their answers are computed in `answers.py`; the lesson's numbers are in `lesson-answers.py`.
-- `glossary.json`: three new terms.
-
-Not fixable here: the `article svg` rule in `templates/site.css` puts a figure border and padding on KaTeX's `\sqrt` svg. The square roots in the worked example and in the L3-01 solution show as empty boxes until that file is fixed.
+Round 1 fixes.
+- lesson.md: area under (t,v) counts v < 0 negatively (Kaava subsection and heading, Tiivistelmä); "muuttuu" instead of "kasvaa"; hero and a > 0 label regenerated from figures.py.
+- figures.py: hero stones larger (rx 27), with a measuring staff whose alternately tinted bands are the 1:3:5:7 gaps and dashed height guides; "a > 0" label orange.
+- sim.js: on a phone (#sim-root < 500 px) panels stack on a 600 x 700 canvas, labels and strokes scaled by k, cart 1,7x; velocity arrow scaled to the run's largest |v|; second, darker tint for v < 0 area.
+- inquiry.json: prior item 2 is a retrieval question; new experiment exp-3 (read a tangent, numeric with full solution); sim howto/calc mention arrow scale and darker tint.
+- exercises/solutions.md: L1-05 concrete reasonableness check (43 km/h, 180 m); L3-02 rounding note (1162,5 m to 1160 m).
+Experiment-panel LaTeX untouched (shared). check_lesson.py all ok.
