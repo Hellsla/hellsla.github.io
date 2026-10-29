@@ -1,0 +1,166 @@
+{
+  "intro": "Tässä on yksi laaja tehtävä. Se kokoaa moduulin taidot: energian, tehon ja sähköntuotannon ympäristövaikutukset. Päätät itse, mitä aineiston tietoja ja mitä malleja tarvitset. Lopuksi kirjoitat perustellun suosituksen. Oikeaa tuotantotapaa ei ole päätetty etukäteen. Pisteet tulevat perusteluista.",
+  "tasks": [
+    {
+      "id": "fy2-s1",
+      "title": "Kaupunki luopuu hiilivoimasta",
+      "source": "example",
+      "source_note": "Kaupunki, sen sähkönkulutus, voimaloiden tehot, käyttöasteet ja vuodenaikojen osuudet ovat keksittyjä esimerkkiarvoja. Niiden suuruusluokka vastaa suomalaisia voimaloita. Päästökertoimet ovat todellisia: IPCC:n viides arviointiraportti (AR5, 2014), työryhmä III, liite III. Ne ovat elinkaaren päästöjen mediaaneja, ja ne on pyöristetty.",
+      "text": "Esimerkkikaupungin vanha kivihiilivoimala suljetaan. Kaupunginvaltuusto pyytää sinulta suositusta. Se haluaa tietää, miten kaupungin sähkö tuotetaan jatkossa. Kaupunki on kytketty valtakunnan sähköverkkoon. Siksi se voi myös ostaa ja myydä sähköä.\n\n**Kaupungin sähkön tarve (esimerkki)**\n\n- Vuosikulutus on $E = 380\\,\\text{GWh}$. Tähän asti hiilivoimala on tuottanut koko tämän määrän.\n- Suurin tehon tarve on $P_\\text{huippu} = 80\\,\\text{MW}$. Se on tyynenä pakkasiltana tammikuussa.\n- Vuodessa on $8760\\,\\text{h}$. Talvikuukausissa joulu–helmikuu on $90$ vuorokautta.\n\n**Vaihtoehdot, yksi yksikkö kerrallaan (teho ja käyttöaste esimerkkiarvoja, päästökerroin IPCC AR5, 2014)**\n\nKäyttöaste $k$ kertoo, kuinka suuri osa nimellistehosta $P_\\text{n}$ on voimalan keskiteho vuoden aikana. Keskiteho on vuoden energia jaettuna vuoden ajalla. Säädettävälle voimalalle käyttöaste on tyypillinen arvo. Voimala voi tarvittaessa käydä enemmän tai vähemmän.\n\n| Voimala | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Maakaasu | $50$ | $0{,}60$ | $490$ |\n| Biomassa (hake) | $40$ | $0{,}70$ | $230$ |\n| Tuuli (maalla) | $5{,}0$ | $0{,}32$ | $11$ |\n| Aurinko (puisto) | $10$ | $0{,}11$ | $48$ |\n| Pieni ydinvoimala | $60$ | $0{,}90$ | $12$ |\n| Vesivoima (osuus) | $20$ | $0{,}50$ | $24$ |\n| Nykyinen hiilivoimala | $90$ | | $820$ |\n\nTaulukon $e$ on elinkaaren päästökerroin. Sen yksikkö on grammaa hiilidioksidiekvivalenttia kilowattituntia kohti. Siinä ovat mukana voimalan rakentaminen sekä polttoaineen tuotanto ja kuljetus. Biomassan luvussa polton hiilidioksidi on laskettu nollaksi. Syy on se, että uusi kasvu sitoo sen takaisin vuosikymmenten kuluessa.\n\n**Tuotantotapojen ominaisuuksia (esimerkki)**\n\n- *Maakaasu:* tehoa voi säätää nopeasti ylös ja alas. Kaasu tuodaan putkella tai laivalla. Siksi saatavuus ja hinta riippuvat tuonnista.\n- *Biomassa:* tehoa voi säätää, mutta hitaammin kuin kaasuvoimalassa. Haketta kuljetetaan rekoilla noin $30$ rekkakuormaa vuorokaudessa täydellä teholla. Sen tuottamiseen hakataan metsää.\n- *Tuulivoima:* tuotanto riippuu säästä. Tuotantoa voi rajoittaa, mutta ei lisätä. Tyynellä pakkasjaksolla tuulivoimaloiden yhteisteho voi olla useita päiviä alle $5\\,\\%$ nimellistehosta. Voimalat näkyvät ja kuuluvat. Niiden alue vie maata.\n- *Aurinkovoima:* tuotanto riippuu vuorokaudenajasta, vuodenajasta ja pilvisyydestä. Pimeänä talvi-iltana tuotanto on nolla. Puisto vie peltoa tai metsää noin $15\\,\\text{ha}$ jokaista nimellistehon kymmentä megawattia kohti.\n- *Pieni ydinvoimala:* se käy yleensä tasaisesti lähes nimellisteholla. Tehoa voi myös laskea. Tällaisia voimaloita ei vielä ole Suomessa käytössä. Luvitus ja rakentaminen kestävät arviolta yli kymmenen vuotta. Käytetty polttoaine on radioaktiivista jätettä, ja se on loppusijoitettava.\n- *Vesivoima:* tehoa voi säätää nopeasti. Vuoden energia kuitenkin riippuu sademäärästä. Se vaihtelee vuodesta toiseen noin $\\pm 20\\,\\%$. Alueen rakentamattomat kosket ovat suojeltuja. Siksi kaupunki voi vain ostaa osuuden olemassa olevasta voimalasta.\n\n**Osuus vuoden energiasta eri vuodenaikoina (esimerkki)**: kaupungin kulutus sekä tuuli- ja aurinkovoiman tuotanto\n\n| Kuukaudet | Kulutus | Tuuli | Aurinko |\n|---|---|---|---|\n| joulu–helmi | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| maalis–touko | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| kesä–elo | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| syys–marras | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka monta tuulivoimalaa tarvitaan, jotta ne tuottavat vuodessa yhtä paljon sähköä kuin kaupunki kuluttaa?",
+          "answer": {
+            "value": 28,
+            "unit": "",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Yhden voimalan vuosienergia on $E_1 = k \\cdot P_\\text{n} \\cdot t$. Voimaloiden määrä on $N = E : E_1$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_1 = 0{,}32 \\cdot 5{,}0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 14{,}0\\,\\text{GWh}$ ja $N \\approx 27{,}1$."
+            },
+            {
+              "text": "Pyöristää ylöspäin $28$ voimalaan ja perustelee: $27$ voimalaa tuottaisi liian vähän.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Laske kaupungin sähköntuotannon vuotuinen päästö kolmessa tapauksessa. Koko vuosikulutus tuotetaan kivihiilellä, maakaasulla tai tuulivoimalla. Kuinka monta prosenttia päästö pienenee maakaasulla ja tuulivoimalla, kun vertaat kivihiileen?",
+          "answer": {
+            "value": 186200,
+            "unit": "t",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m = e \\cdot E$. Energia on muutettu kilowattitunneiksi: $380\\,\\text{GWh} = 380 \\cdot 10^{6}\\,\\text{kWh}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Kivihiili $3{,}1 \\cdot 10^{5}\\,\\text{t}$, maakaasu $1{,}9 \\cdot 10^{5}\\,\\text{t}$ ja tuulivoima $4{,}2 \\cdot 10^{3}\\,\\text{t}$ vuodessa. Yksikkönä on tonni tai kilogramma."
+            },
+            {
+              "text": "Vertaa vaihtoehtoja: maakaasu pienentää päästöä noin $40\\,\\%$ ja tuulivoima noin $99\\,\\%$.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Oletetaan, että kaupunki rakentaa a-kohdan määrän tuulivoimaloita. Kuinka suuri on tuulivoimaloiden yhteinen keskiteho talvikuukausina joulu–helmikuu? Riittääkö tuulivoima talvella kaupungin tarpeeseen?",
+          "answer": {
+            "value": 58.1,
+            "unit": "MW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Käyttää vuodenaikataulukkoa: talven energia on $32\\,\\%$ tuulivoimaloiden vuosienergiasta ja $31\\,\\%$ kaupungin vuosikulutuksesta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Keskiteho on $P = E : t$. Aika on $t = 90 \\cdot 24\\,\\text{h} = 2160\\,\\text{h}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Tuulivoimaloiden keskiteho talvella on $\\approx 58\\,\\text{MW}$. Kaupungin keskimääräinen tarve on $\\approx 55\\,\\text{MW}$."
+            },
+            {
+              "text": "Päättelee, että talven energia riittää keskimäärin. Tyynenä pakkasiltana tuulivoimaloiden teho voi olla vain noin $7\\,\\text{MW}$, vaikka tarve on $80\\,\\text{MW}$.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Vuoden sähkön voisi tuottaa myös noin $40$ aurinkopuistolla. Arvioi aineiston avulla, kuinka paljon aurinkopuistot auttaisivat tammikuun huippuiltana. Mitkä taulukon tuotantotavat voisivat tuottaa tehoa tyynenä pakkasiltana? Mitä rajoituksia niillä on?",
+          "criteria": [
+            {
+              "text": "Käyttää aineistoa: talvella aurinkovoimasta tulee vain noin $4\\,\\%$ vuoden energiasta (keskimäärin noin $7\\,\\text{MW}$). Pimeänä iltana teho on nolla.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Nimeää vähintään kaksi vaihtoehtoa, joiden tehoa voi säätää tai jotka tuottavat tasaisesti (maakaasu, biomassa, vesivoima, ydinvoima, verkosta ostettu sähkö).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Kuvaa rajoitukset ominaisuuksina, ei ehdottomina luokkina. Esimerkiksi vesivoiman energia riippuu sateista. Ydinvoimala käy tasaisesti, mutta sen tehoa ei voi nostaa nimellistehoa suuremmaksi. Verkosta ostettu sähkö riippuu siitä, mitä muut tuottavat.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 5,
+          "text": "Kirjoita kaupunginvaltuustolle perusteltu suositus kaupungin sähköntuotannoksi. Suositus voi olla yksi tuotantotapa tai niiden yhdistelmä. Esitä laskelma vuoden energiasta ja päästöstä. Esitä myös vahvin vastaperuste ja vastauksesi siihen. Kerro lisäksi oletukset, joihin suosituksesi nojaa.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Selvä suositus, joka kattaa vuoden energian. Suositus joko kattaa talven huipputehon tai arvioi puuttuvan tehon ja kertoo, miten se hoidetaan. Pisteen saa perusteluista, ei valitusta tuotantotavasta."
+            },
+            {
+              "text": "Osoittaa laskemalla, että suosituksen vuosienergia kattaa kulutuksen. Laskee suosituksen vuotuisen päästön ja vertaa sitä ainakin yhteen toiseen vaihtoehtoon.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Käyttää päästöjen lisäksi vähintään kahta muuta aineiston perustetta oikein (tehon säätö tai sääriippuvuus, maankäyttö, polttoaineen saatavuus, jäte, turvallisuus, rakentamisaika).",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Esittää suosituksen vahvimman vastaperusteen ja vastaa siihen asiallisesti. Ei väitä mitään tuotantotapaa päästöttömäksi.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Esimerkiksi: käyttöaste ja vesivoiman energia ovat joka vuosi samat. Kulutus pysyy ennallaan tai sähköä saa verkosta. Lisäksi kerrotaan, miten oletus vaikuttaa suositukseen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy2-6",
+        "transfer": "fy2-8",
+        "concept": "fy2-6",
+        "graph": "fy2-6",
+        "communication": "fy2-8"
+      }
+    }
+  ]
+}
