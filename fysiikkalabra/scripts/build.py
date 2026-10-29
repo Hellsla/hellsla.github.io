@@ -556,7 +556,7 @@ def build_language(lang):
 
     stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
     home = (
-        f'<section class="intro" aria-labelledby="h-intro"><p class="motto">{T("site.home_tagline")}</p>'
+        f'<section class="home-intro" aria-labelledby="h-intro"><p class="motto">{T("site.home_tagline")}</p>'
         f'<h1 id="h-intro">{T("site.home_title")}</h1><p class="lead">{T("site.home_lead")}</p>'
         f'<p class="actions"><a class="button" href="#moduulit">{T("site.choose_module")}</a>'
         + (f'<a class="quiet-link" href="{sample_href}">{T("site.try_lesson")}</a>' if sample_href else "") + '</p></section>'
