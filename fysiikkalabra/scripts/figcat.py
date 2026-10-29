@@ -38,7 +38,7 @@ import courses, figlib, i18n
 ROOT = courses.ROOT
 CATALOG = ROOT / "docs" / "figures" / "catalog.json"
 KINDS = ("graph", "diagram", "illustration", "photo", "image")
-REF = re.compile(r'"figure"\s*:\s*"([^"]+)"')
+REF = re.compile(r'"(?:model_)?figure"\s*:\s*"([^"]+)"')
 FIG_ID = re.compile(r"^([a-z0-9-]+)/([A-Za-z0-9_-]+)$")
 PHOTO, IMAGE = (".jpg", ".jpeg", ".webp", ".avif"), (".png", ".svg", ".gif")
 

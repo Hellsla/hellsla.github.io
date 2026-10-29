@@ -1,0 +1,24 @@
+{
+  "id": "fy4-5",
+  "course": "FY4",
+  "title": "Voimakuvio ja voimien yhteisvaikutus",
+  "goals": [
+    "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+    "Taidot: voimakuvion piirtäminen; vektorisuureet; suorakulmaisen kolmion trigonometria",
+    "Kokeellisesti: kappaleeseen vaikuttavien voimien määrittäminen",
+    "Voimakuvio: luvun pääopetus, opiskelijan opas \"Voimakuvion piirtäminen\" (kahdeksan vaihetta); esimerkit A, B, C (veto kulmassa ja komponentit), E, H (heliumpallo katossa, haaste) ja I; vähintään yksi piirrä itse -tehtävä."
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "voimakuvio",
+    "kokonaisvoima",
+    "komponentti",
+    "tukivoima",
+    "jännitysvoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

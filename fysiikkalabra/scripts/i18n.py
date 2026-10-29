@@ -57,6 +57,9 @@ class T:
             if self.lang == SOURCE: raise
             v = lookup(strings(SOURCE), key)
         return fill(v, vals) if isinstance(v, str) else v
+    def has(self, key):
+        try: lookup(strings(SOURCE), key); return True
+        except KeyError: return False
 
 
 t = T()

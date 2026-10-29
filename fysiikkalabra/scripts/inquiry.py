@@ -37,6 +37,7 @@ CARD_TYPES = ("choice", "numeric", "explain", "experiment", "interpret", "reflec
 TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "sim", "exercises", "exit")
 QUESTION_TYPES = ("choice", "numeric", "explain")
 FIGURE_TYPES = ("hook", "text", "choice", "numeric", "explain", "interpret")   # may carry "figure": "<id>" (scripts/figcat.py)
+FBD_TAGS = ("identify", "select", "error", "draw", "equations")   # "fbd": the force-diagram skill a task practises (docs/force-diagrams.md)
 ID_RE = re.compile(r"^[a-z][a-z0-9-]{1,40}$")
 OPTIONAL_TYPES = ("hook", "text", "choice", "experiment", "interpret", "numeric", "explain", "reflect", "theory", "exit")   # may carry "optional": true
 SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statistics and example: teacher's FY2 rule 2026-10-28 (real sourced data / invented data said so)      # interpret "source"; its badge is lang "inquiry.source_<source>"
@@ -79,6 +80,10 @@ def _check_choice(a, path, errs):
             if not isinstance(c, dict) or not isinstance(c.get("text"), str): errs.append(f"{path}.choices[{i}].text: a string is required")
             if not isinstance(c.get("feedback"), str) or not c["feedback"].strip(): errs.append(f"{path}.choices[{i}].feedback: every choice needs misconception-specific feedback")
             if "correct" in c and not isinstance(c["correct"], bool): errs.append(f"{path}.choices[{i}].correct: true or false")
+            if isinstance(c, dict) and "figure" in c:
+                import figcat
+                for _, msg in (figcat.check_refs(json.dumps({"figure": c["figure"]})) if isinstance(c["figure"], str) else [(0, "an id such as \"fy4-5/vk-a\"")]): errs.append(f"{path}.choices[{i}].figure: {msg}")
+            if a.get("layout") == "figures" and isinstance(c, dict) and not c.get("figure"): errs.append(f"{path}.choices[{i}].figure: layout \"figures\" shows each option as a figure")
         if not any(c.get("correct") for c in ch if isinstance(c, dict)): errs.append(f"{path}.choices: one choice must have \"correct\": true")
         texts = [("prompt", a.get("prompt"))] + [(f"choices[{i}].{k}", c.get(k)) for i, c in enumerate(ch) if isinstance(c, dict) for k in ("text", "feedback")]
         for where, t in texts:
@@ -89,7 +94,7 @@ def _check_choice(a, path, errs):
         if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment or theory id>\", \"min\": n}}")
         elif "min" in r and (not isinstance(r["min"], int) or r["min"] < 1): errs.append(f"{path}.reveal.min: a positive integer")
     if "justify" in a and not isinstance(a["justify"], bool): errs.append(f"{path}.justify: true or false")
-    if a.get("layout") not in (None, "list", "models"): errs.append(f"{path}.layout: \"list\" or \"models\"")
+    if a.get("layout") not in (None, "list", "models", "figures"): errs.append(f"{path}.layout: \"list\", \"models\" or \"figures\" (each option a figure)")
 
 
 def _check_numeric(a, path, errs):
@@ -108,10 +113,20 @@ CONFIDENCE = re.compile(r"^\s*(?:Osaan|Ymmärrän|Tiedän|Olen varma|Pystyn|Tunn
 
 def _check_explain(a, path, errs):
     if not isinstance(a.get("prompt"), str): errs.append(f"{path}.prompt: a string is required")
-    if not isinstance(a.get("criteria"), list) or not a["criteria"] or not all(isinstance(c, str) for c in a["criteria"]):
-        errs.append(f"{path}.criteria: a non-empty list of self-assessment criteria")
+    crit = a.get("criteria")
+    if not isinstance(crit, list) or not crit or not all(isinstance(c, str) or (isinstance(c, dict) and isinstance(c.get("key"), str)) for c in crit):
+        errs.append(f"{path}.criteria: a non-empty list of self-assessment criteria (text, or {{\"key\": a shared criterion, \"detail\": its specifics}})")
+    else:
+        for i, c in enumerate(crit):
+            if isinstance(c, dict) and not T.has(f"criteria.{c['key']}"): errs.append(f"{path}.criteria[{i}].key: \"{c['key']}\" is not a shared criterion (lang \"criteria\")")
+    if "draw" in a and not isinstance(a["draw"], bool): errs.append(f"{path}.draw: true or false")
+    if a.get("draw") and not isinstance(a.get("model_figure"), str): errs.append(f"{path}.model_figure: a drawing task shows its model diagram by id (\"fy4-5/<name>\")")
+    if isinstance(a.get("model_figure"), str):
+        import figcat
+        for _, msg in figcat.check_refs(json.dumps({"figure": a["model_figure"]})): errs.append(f"{path}.model_figure: {msg}")
     if not isinstance(a.get("model"), str) or not a["model"].strip(): errs.append(f"{path}.model: a model answer is required")
     for i, c in enumerate(a.get("criteria") or []):
+        c = c.get("detail", "") if isinstance(c, dict) else c
         if isinstance(c, str) and CONFIDENCE.match(c):
             errs.append(f"{path}.criteria[{i}]: a criterion names something the answer shows (\"Vastaus kertoo, että …\"), not how sure the student feels")
     if "practice" in a and not (isinstance(a["practice"], str) and a["practice"].strip()):
@@ -157,6 +172,7 @@ def validate(folder, inquiry, lesson_md):
                 for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
+        if "fbd" in a and a["fbd"] not in FBD_TAGS: errs.append(f"{path}.fbd: one of {', '.join(FBD_TAGS)} (docs/force-diagrams.md)")
         hints = a.get("hints")
         if hints is not None and (not isinstance(hints, list) or len(hints) > 3 or not all(isinstance(h, str) for h in hints)):
             errs.append(f"{path}.hints: a list of at most three strings (question, representation, worked step)")
@@ -304,7 +320,7 @@ def choice_html(a, md, lid, aid):
     opts = ""
     for i, c in enumerate(choice_order(a["choices"], lid, aid)):
         opts += (f'<li><label><input type="radio" name="{esc(aid)}" value="{i}" data-correct="{"1" if c.get("correct") else "0"}">'
-                 f'<span>{inline(md, c["text"])}</span></label><div class="feedback" data-for="{i}" hidden>{md(c["feedback"])}</div></li>')
+                 f'<span>{inline(md, c["text"])}{fig_of(c)}</span></label><div class="feedback" data-for="{i}" hidden>{md(c["feedback"])}</div></li>')
     reveal = a.get("reveal") or {}
     attrs = f' data-reveal="{esc(reveal["after"])}" data-reveal-min="{reveal.get("min", 1)}"' if reveal else ""
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
@@ -326,21 +342,34 @@ def numeric_html(a, md, aid):
             f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
 
 
+def criterion_html(c, md):
+    """A self-assessment criterion: its own text, or a shared criterion by key (lang "criteria", e.g. the force-diagram
+    criteria fbd_*) with the task's specifics after it."""
+    if isinstance(c, str): return inline(md, c)
+    detail = f' <span class="crit-detail">{inline(md, c["detail"])}</span>' if c.get("detail") else ""
+    return inline(md, T(f"criteria.{c['key']}")) + detail
+
+
 def explain_html(a, md, aid):
     """A written explanation, assessed by the student in a guided sequence (teacher 2026-10-28): their own answer first;
     the model answer opens only after it (inquiry.js); then observable criteria from the model answer to tick; then
     "what is missing" lists the unticked criteria as the reasoning to add, with where to practise it (the task's own
     `practice`, markdown, or the theory and the exercises). A conclusion with "after" also waits for the measurements of
     those experiments, and offers to copy the tables and the student's own text for their notes. No grading, no model."""
-    crit = "".join(f'<li><label><input type="checkbox"> <span>{inline(md, c)}</span></label></li>' for c in a["criteria"])
+    crit = "".join(f'<li><label><input type="checkbox"> <span>{criterion_html(c, md)}</span></label></li>' for c in a["criteria"])
+    draw = a.get("draw")
     pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
-    return (f'<div class="explain"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>{pair}'
-            f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model")}</button>{copy}</div>'
+    own = (f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.drew_on_paper")}</span></label>'
+           f'<textarea rows="2" aria-label="{T("inquiry.draw_notes")}" placeholder="{esc(T("inquiry.draw_notes"))}"></textarea>' if draw else
+           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>')
+    model_fig = fig_of({"figure": a["model_figure"]}) if a.get("model_figure") else ""
+    return (f'<div class="explain{" draw" if draw else ""}"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}{own}{pair}'
+            f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model_drawing" if draw else "inquiry.show_model")}</button>{copy}</div>'
             f'<p class="explain-status" role="status" aria-live="polite"></p>'
-            f'<div class="model" hidden><h4>{T("inquiry.model_answer")}</h4>{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4>'
+            f'<div class="model" hidden><h4>{T("inquiry.model_drawing" if draw else "inquiry.model_answer")}</h4>{model_fig}{md(a["model"])}<h4>{T("inquiry.self_assess")}</h4>'
             f'<p class="crit-lead">{T("inquiry.self_assess_lead")}</p><ul class="criteria">{crit}</ul>'
             f'<div class="choice-actions"><button type="button" class="check-criteria">{T("inquiry.criteria_done")}</button></div>'
             f'<div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul>'

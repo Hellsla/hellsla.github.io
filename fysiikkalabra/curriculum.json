@@ -757,7 +757,8 @@
       "FY4 continues FY1 (teacher 2026-10-29): build on FY1's measurement, graphs and the linear model (luku *Tasainen liike – nopeus, paikka ja kuvaajat*) without re-teaching them; FY4.1 (position, displacement, signed velocity) is the bridge and stays as it is.",
       "Distinguish scalar and vector quantities where it matters (displacement, velocity, force), magnitudes plain and vectors bold in LaTeX.",
       "Introduce acceleration from observations and graphs before the formula; develop Newton's laws one at a time, each from physical situations and, where possible, measured or simulated data, before equations.",
-      "Keep independent reasoning: complete model solutions, explain tasks with guided self-assessment, and a Sovella itsenäisesti task count that follows the module's goals."
+      "Keep independent reasoning: complete model solutions, explain tasks with guided self-assessment, and a Sovella itsenäisesti task count that follows the module's goals.",
+      "Force diagrams are a core competency (teacher 2026-10-29, docs/force-diagrams.md): taught in full in Voimakuvio ja voimien yhteisvaikutus with the student guide \"Voimakuvion piirtäminen\", prepared in the chapters on Newton's laws and used again in every later chapter where forces act; each lesson's \"fbd\" lists the skills its tasks practise (identify, select, error, draw, equations; coverage.py checks), and every force chapter has a task where the student draws the diagram alone."
     ],
     "lessons": [
       {
@@ -819,7 +820,8 @@
         "title": "Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki",
         "goals": [
           "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
-          "Täsmennys: vuorovaikutuksen voima on yhtä suuri kummankin osapuolen kannalta"
+          "Täsmennys: vuorovaikutuksen voima on yhtä suuri kummankin osapuolen kannalta",
+          "Voimakuvio (docs/force-diagrams.md): jokainen voima on vuorovaikutus; erotetaan kappaleeseen kohdistuva voima ja toiseen kappaleeseen kohdistuva vastavoima yksinkertaisissa kahden kappaleen tilanteissa; curling-kivi irrotuksen jälkeen ilman eteenpäin työntävää voimaa (esimerkki I). Ei vielä täydellisiä voimakuvioita."
         ],
         "prerequisites": [
           "fy4-1"
@@ -831,6 +833,9 @@
           "jatkavuuden laki",
           "voima ja vastavoima",
           "inertia"
+        ],
+        "fbd": [
+          "identify"
         ]
       },
       {
@@ -838,7 +843,8 @@
         "title": "Newtonin toinen laki",
         "goals": [
           "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
-          "LOPS FY4: liikeyhtälö"
+          "LOPS FY4: liikeyhtälö",
+          "Voimakuvio: lepo, tasainen nopeus, kiihtyvä ja hidastuva liike pystysuunnassa tai vaakasuoralla (esimerkit A ja E); kokonaisvoima kiihtyvyyden suuntaan, ei välttämättä nopeuden suuntaan; yhtälö ΣF = ma vasta voimien jälkeen."
         ],
         "prerequisites": [
           "fy4-2",
@@ -850,6 +856,11 @@
           "kiihtyvyys",
           "massa",
           "kokonaisvoima"
+        ],
+        "fbd": [
+          "identify",
+          "select",
+          "equations"
         ]
       },
       {
@@ -858,7 +869,8 @@
         "goals": [
           "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
           "Taidot: voimakuvion piirtäminen; vektorisuureet; suorakulmaisen kolmion trigonometria",
-          "Kokeellisesti: kappaleeseen vaikuttavien voimien määrittäminen"
+          "Kokeellisesti: kappaleeseen vaikuttavien voimien määrittäminen",
+          "Voimakuvio: luvun pääopetus, opiskelijan opas \"Voimakuvion piirtäminen\" (kahdeksan vaihetta); esimerkit A, B, C (veto kulmassa ja komponentit), E, H (heliumpallo katossa, haaste) ja I; vähintään yksi piirrä itse -tehtävä."
         ],
         "prerequisites": [
           "fy4-4"
@@ -870,6 +882,13 @@
           "komponentti",
           "tukivoima",
           "jännitysvoima"
+        ],
+        "fbd": [
+          "identify",
+          "select",
+          "error",
+          "draw",
+          "equations"
         ]
       },
       {
@@ -877,7 +896,8 @@
         "title": "Liikeyhtälö kytketyille kappaleille",
         "goals": [
           "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
-          "Täsmennys: narulla tai väkipyörän yli kytketyt kappaleet, yhteinen kiihtyvyys ja langan jännitysvoima"
+          "Täsmennys: narulla tai väkipyörän yli kytketyt kappaleet, yhteinen kiihtyvyys ja langan jännitysvoima",
+          "Voimakuvio: oma voimakuvio kummallekin kappaleelle; sama vuorovaikutus antaa voiman ja vastavoiman eri kappaleille; kummankin kappaleen yhtälö erikseen (esimerkki F)."
         ],
         "prerequisites": [
           "fy4-4",
@@ -887,6 +907,11 @@
         "glossary": [
           "liikeyhtälö",
           "jännitysvoima"
+        ],
+        "fbd": [
+          "error",
+          "draw",
+          "equations"
         ]
       },
       {
@@ -895,7 +920,8 @@
         "goals": [
           "LOPS FY4: paino ja kitka",
           "Kokeellisesti: kitkakertoimen määrittäminen",
-          "Täsmennys: muitakin voimia kuten noste ja väliaineen vastusvoima voidaan käsitellä"
+          "Täsmennys: muitakin voimia kuten noste ja väliaineen vastusvoima voidaan käsitellä",
+          "Voimakuvio: paino pystysuoraan alas, tukivoima kohtisuoraan pintaa vastaan, lepo- ja liikekitka pinnan suuntaisia, painon komponentit katkoviivoin, yhtälöiden etumerkit (esimerkki D); kitka ei aina vastusta kappaleen liikettä (esimerkki J, laadullisesti)."
         ],
         "prerequisites": [
           "fy4-5"
@@ -908,6 +934,12 @@
           "liikekitka",
           "kitkakerroin",
           "kalteva taso"
+        ],
+        "fbd": [
+          "select",
+          "error",
+          "draw",
+          "equations"
         ]
       },
       {
@@ -915,7 +947,8 @@
         "title": "Ilmanvastus ja putoaminen ilmassa",
         "goals": [
           "LOPS FY4: paino ja kitka",
-          "Täsmennys: väliaineen vastusvoima kvalitatiivisesti, rajanopeus ja laskuvarjo"
+          "Täsmennys: väliaineen vastusvoima kvalitatiivisesti, rajanopeus ja laskuvarjo",
+          "Voimakuvio: putoava kappale kiihtyvässä vaiheessa ja rajanopeudella, ylöspäin liikkuva kappale ilmanvastuksen kanssa; kokonaisvoiman suunta voi erota liikkeen suunnasta (esimerkki G)."
         ],
         "prerequisites": [
           "fy4-4",
@@ -925,6 +958,11 @@
         "glossary": [
           "väliaineen vastus",
           "rajanopeus"
+        ],
+        "fbd": [
+          "identify",
+          "select",
+          "draw"
         ]
       },
       {
@@ -1045,14 +1083,19 @@
         "goals": [
           "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
           "LOPS FY4: mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
-          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa"
+          "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa",
+          "Voimakuvio: soveltavan tunnin tilanteissa oppilas piirtää voimakuvion itse ennen liikeyhtälöä."
         ],
         "prerequisites": [
           "fy4-4",
           "fy4-8"
         ],
         "sim": false,
-        "glossary": []
+        "glossary": [],
+        "fbd": [
+          "draw",
+          "equations"
+        ]
       }
     ]
   },

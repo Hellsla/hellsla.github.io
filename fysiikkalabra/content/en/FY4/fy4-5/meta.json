@@ -1,0 +1,24 @@
+{
+  "id": "fy4-5",
+  "course": "FY4",
+  "title": "Free-body diagrams and the combined effect of forces",
+  "goals": [
+    "LOPS FY4: the combined effect of forces, the free-body diagram and the equation of motion",
+    "Skills: drawing a free-body diagram; vector quantities; trigonometry of the right triangle",
+    "Experimental: determining the forces acting on an object",
+    "Free-body diagram: the main teaching of the chapter, the student's guide \"Drawing a free-body diagram\" (eight steps); examples A, B, C (a pull at an angle and components), E, H (a helium balloon against the ceiling, challenge) and I; at least one draw-it-yourself task."
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "voimakuvio",
+    "kokonaisvoima",
+    "komponentti",
+    "tukivoima",
+    "jännitysvoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

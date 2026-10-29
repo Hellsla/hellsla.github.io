@@ -1,0 +1,117 @@
+{
+  "level1": [
+    {
+      "id": "fy4-5-L1-01",
+      "level": 1,
+      "text": "Lamppu, jonka massa on $1{,}5\\,\\text{kg}$, roikkuu paikallaan pystysuoran johdon varassa. Piirrä lampun voimakuvio ja laske johdon jännitysvoima.",
+      "answer": 14.7,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-02",
+      "level": 1,
+      "text": "Kuvan voimakuviossa yksi ruutu vastaa $10\\,\\text{N}$:n voimaa. Kappaleeseen vaikuttaa neljä voimaa. Kuinka suuri on kappaleeseen vaikuttava kokonaisvoima?",
+      "answer": 15,
+      "unit": "N",
+      "tolerance": 0.02,
+      "figure": "fy4-5/ruutu"
+    },
+    {
+      "id": "fy4-5-L1-03",
+      "level": 1,
+      "text": "Opiskelija painaa $0{,}50\\,\\text{kg}$:n kirjaa pystysuoraa seinää vasten vaakasuoralla $20\\,\\text{N}$:n voimalla. Kirja pysyy paikallaan. Piirrä kirjan voimakuvio. Kuinka suuri on seinän kitkavoima kirjaan?",
+      "answer": 4.9,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-04",
+      "level": 1,
+      "text": "Ihminen, jonka massa on $65\\,\\text{kg}$, seisoo hississä, joka liikkuu ylöspäin tasaisella nopeudella. Piirrä ihmisen voimakuvio. Kuinka suuri on hissin lattian tukivoima ihmiseen?",
+      "answer": 640,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-05",
+      "level": 1,
+      "text": "Laatikkoa vedetään köydellä, jonka jännitysvoima on $250\\,\\text{N}$ ja joka on $40^\\circ$:n kulmassa vaakatasoon nähden. Piirrä köyden voima ja sen komponentit katkoviivoin. Kuinka suuri on jännitysvoiman vaakakomponentti?",
+      "answer": 190,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-5-L2-01",
+      "level": 2,
+      "text": "Pulkkaa, jonka massa on $15\\,\\text{kg}$, vedetään vaakasuoralla lumella narulla, joka on $30^\\circ$:n kulmassa vaakatasoon nähden. Narun jännitysvoima on $60\\,\\text{N}$, ja pulkka liikkuu tasaisella nopeudella. Piirrä pulkan voimakuvio vihkoon ennen kuin avaat ratkaisun. Kuinka suuri on lumen kitkavoima?",
+      "answer": 52,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-5/malli-pulkka"
+    },
+    {
+      "id": "fy4-5-L2-02",
+      "level": 2,
+      "text": "Ihminen, jonka massa on $60\\,\\text{kg}$, seisoo hississä. Hissi lähtee liikkeelle ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$. Kuinka suuri on lattian tukivoima ihmiseen kiihdytyksen aikana?",
+      "answer": 660,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-03",
+      "level": 2,
+      "text": "Laatikkoa, jonka massa on $40\\,\\text{kg}$, työnnetään vaakasuoralla lattialla kahvasta $120\\,\\text{N}$:n voimalla, joka osoittaa $30^\\circ$:n kulmassa vinosti alaspäin. Lattian kitkavoima laatikkoon on $80\\,\\text{N}$. Kuinka suuri on laatikon kiihtyvyys?",
+      "answer": 0.6,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-04",
+      "level": 2,
+      "text": "Kaksi lasta vetää $50\\,\\text{kg}$:n kelkkaa jäällä naruilla, jotka ovat vaakasuorat ja kohtisuorassa toisiaan vastaan. Toinen vetää $30\\,\\text{N}$:n ja toinen $40\\,\\text{N}$:n voimalla. Kitka jätetään huomiotta. Kuinka suuri on kelkan kiihtyvyys?",
+      "answer": 1.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-5-L3-01",
+      "level": 3,
+      "text": "Ihminen, jonka massa on $70\\,\\text{kg}$, seisoo hississä, joka liikkuu ylöspäin mutta hidastaa pysähtyessään. Hidastuvuus on $1{,}5\\,\\text{m/s}^2$. Piirrä ihmisen voimakuvio vihkoon ja merkitse nopeus ja kiihtyvyys erikseen sen viereen ennen kuin avaat ratkaisun. Kuinka suuri on lattian tukivoima?",
+      "answer": 580,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-5/malli-hissi"
+    },
+    {
+      "id": "fy4-5-L3-02",
+      "level": 3,
+      "text": "Curlingkivi, jonka massa on $19\\,\\text{kg}$, irtoaa heittäjän kädestä nopeudella $2{,}0\\,\\text{m/s}$ ja liukuu suoraan, kunnes se pysähtyy $20\\,\\text{s}$ kuluttua. Oletetaan, että kivi hidastuu tasaisesti ja ilmanvastus on merkityksettömän pieni. Kuinka suuri on jään kitkavoima kiveen liu'un aikana?",
+      "answer": 1.9,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L3-03",
+      "level": 3,
+      "text": "Heliumilmapallo, jonka massa kumeineen ja kaasuineen on $4{,}0\\,\\text{g}$, on noussut huoneen kattoon ja painuu paikallaan sitä vasten. Ilman noste palloon on $0{,}10\\,\\text{N}$. Naru on irti. Piirrä pallon voimakuvio ja laske, kuinka suurella voimalla katto vaikuttaa palloon.",
+      "answer": 0.061,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

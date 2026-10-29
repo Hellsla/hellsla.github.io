@@ -152,6 +152,10 @@
     "own_answer": "Your own answer",
     "show_model": "Show the model answer and assessment",
     "model_answer": "Model answer",
+    "drew_on_paper": "I have drawn the free-body diagram on paper.",
+    "draw_notes": "Notes (optional): for example the names of the forces",
+    "show_model_drawing": "Show the model diagram and assessment",
+    "model_drawing": "Model diagram",
     "self_assess": "Assess your own answer",
     "nothing_locked": "nothing",
     "setup": "Initial state:",
@@ -206,6 +210,7 @@
     "exp_reset": "Simulation and table reset.",
     "explain_measure_first": "Make the measurements first: {{experiments}}. Draw the conclusion from your own observations.",
     "explain_write_first": "Write your own answer first. Then you can compare it with the model answer.",
+    "explain_draw_first": "First draw the free-body diagram yourself on paper and tick the box. Then you can compare it with the model diagram.",
     "copy_no_rows": "(no measurements)",
     "copy_conclusion": "Conclusion",
     "copy_not_written": "(not written yet)",
@@ -840,6 +845,29 @@
       "lampenee": "warming",
       "jaahtyy": "cooling",
       "asettunut": "settled"
+    },
+    "fy4-5": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "tapa": "Situation",
+      "veto": "pulled by a rope",
+      "tyonto": "pushed by a handle",
+      "voima": "Force $F = {{F}}\\,\\text{N}$",
+      "kulma": "Angle $\\alpha = {{a}}^\\circ$",
+      "massa": "Mass",
+      "malli": "Free-body diagram",
+      "pistemalli": "as a point particle",
+      "kappalemalli": "as an object",
+      "komponentit": "Show the components of the force $\\mathbf{F}$",
+      "selite": "Red arrows are forces, dashed arrows components and the blue arrow the velocity.",
+      "tilannekuva": "$\\text{Situation}$",
+      "voimakuvio": "$\\text{Free-body diagram}$",
+      "lukemat": "$G = {{G}}\\,\\text{N}$, $N = {{N}}\\,\\text{N}$<br>$F_x = {{Fx}}\\,\\text{N}$, $|F_y| = {{Fy}}\\,\\text{N}$<br>$\\Sigma F_x = {{sx}}\\,\\text{N}$, <strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast"
     }
   },
   "practice": {
@@ -871,6 +899,7 @@
       "Annettu": "Given",
       "Kysytty": "Find",
       "Periaate": "Principle",
+      "Voimakuvio": "Free-body diagram",
       "Kaava": "Formula",
       "Muunnokset": "Conversions",
       "Sijoitus": "Substitution",
@@ -901,6 +930,12 @@
     "uncertainty": "The uncertainty of the measurement has been estimated.",
     "error_sources": "The main sources of error are named, and it is explained how they affect the result.",
     "assumptions": "The assumption is named, and its effect on the result is justified.",
-    "conclusion": "The conclusion answers the question and is based on the data."
+    "conclusion": "The conclusion answers the question and is based on the data.",
+    "fbd_object": "The object is clearly chosen, and only the forces acting on it are drawn.",
+    "fbd_forces": "Every force acting on the object is included, and there are no invented forces.",
+    "fbd_directions": "Every force points in the physically correct direction.",
+    "fbd_representation": "Each force arrow starts at a sensible point on the object, and each force has its own unambiguous name.",
+    "fbd_magnitudes": "The arrow lengths are in the right proportion where the sizes are known, and forces are not mixed up with components, velocity or acceleration.",
+    "fbd_equations": "The equations of motion come from the free-body diagram: the axes and the positive direction are chosen, and the signs are right."
   }
 }

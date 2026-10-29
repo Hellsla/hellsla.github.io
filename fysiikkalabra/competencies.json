@@ -20,6 +20,12 @@
     "uncertainty": "experiment",
     "error_sources": "experiment",
     "assumptions": "transfer",
-    "conclusion": "communication"
+    "conclusion": "communication",
+    "fbd_object": "concept",
+    "fbd_forces": "concept",
+    "fbd_directions": "concept",
+    "fbd_representation": "communication",
+    "fbd_magnitudes": "concept",
+    "fbd_equations": "math"
   }
 }
