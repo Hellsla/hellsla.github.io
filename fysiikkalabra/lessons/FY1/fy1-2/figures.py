@@ -4,29 +4,35 @@ from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, 
                     ALUMINIUM, WATER, WATER_LIGHT, SAND, SAND_LIGHT, GRAIN, GLASS, n)
 from figlib import SAND_DARK
 import herolib as H
+from figlib import COPPER, METAL_EDGE
+from herolib import grad
 
 
 def hero():
     """The chapter's opening illustration: one distance from the Sun to Voyager 2, measured against three rulers of different steps."""
-    f = H.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva. "
+    f = H.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva ja planeettoja. "
                "Viivan alla kolme samanpituista viivainta, joiden jakoviivat ovat eri tiheässä: sama matka kolmella eri yksiköllä.")
-    H.space(f, seed=3, count=80)
-    f.defs_add(f'<radialGradient id="fy12h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="0.6" stop-color="{HEAT}"/><stop offset="1" stop-color="{HEAT}" stop-opacity="0"/></radialGradient>')
-    f.circle(90, 200, 150, "url(#fy12h-sun)")
-    f.circle(90, 200, 62, HEAT_LIGHT)
-    for r, (rr, c) in zip((150, 205, 290), ((6, WATER_LIGHT), (5, HOT_LIGHT), (12, SAND_DARK))):
-        f.add(f'<path d="M{n(90 + r)},{n(200)} A{r},{r} 0 0 0 {n(90 + r * math.cos(-0.9))},{n(200 + r * math.sin(-0.9))}" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="4 6"/>')
-        f.circle(90 + r * math.cos(-0.5), 200 + r * math.sin(-0.5), rr, c)
-    f.line(160, 200, 990, 200, WHITE, 3, dash="12 10")
-    H.probe(f, 1030, 200, 0.85)
-    for k, (y, step, c) in enumerate(((340, 17, COLD_LIGHT), (428, 85, HEAT_LIGHT), (516, 212.5, GOOD_LIGHT))):
-        f.rect(160, y - 26, 850, 52, c, WHITE, 2.5, 6)
-        f.line(160, y - 50, 160, y - 32, WHITE, 2); f.line(1010, y - 50, 1010, y - 32, WHITE, 2)
+    H.space(f, seed=3, count=110)
+    f.add(f'<path d="M0,120 Q600,40 1200,160 L1200,230 Q600,120 0,200 Z" fill="{COLD_LIGHT}" fill-opacity="0.08"/>')   # the Milky Way's faint band
+    f.circle(60, 190, 210, H.glow(f, "fy12h-glow"))
+    f.circle(60, 190, 92, grad(f, "fy12h-sun", HEAT_LIGHT, HEAT))
+    for r in (190, 260, 380, 520):
+        f.add(f'<ellipse cx="60" cy="190" rx="{r}" ry="{n(r * 0.3)}" fill="none" stroke="{METAL_EDGE}" stroke-width="1.5" stroke-dasharray="4 7"/>')
+    H.planet(f, "fy12h-earth", 60 + 190 * math.cos(-1.2), 190 + 57 * math.sin(-1.2), 11, WATER_LIGHT, WATER)
+    H.planet(f, "fy12h-jup", 60 + 380 * math.cos(-1.5) + 140, 190 - 100, 30, SAND_LIGHT, COPPER, bands=4)
+    H.planet(f, "fy12h-sat", 640, 106, 22, SAND_LIGHT, SAND, rings=True)
+    f.line(160, 190, 960, 190, WHITE, 3, dash="12 10")
+    H.probe(f, 1010, 190, 0.95)
+    # three rulers of the same length, the marks of each a different unit
+    for k, (y, step, c, sub) in enumerate(((344, 17, COLD_LIGHT, 5), (432, 85, HEAT_LIGHT, 0), (520, 212.5, GOOD_LIGHT, 0))):
+        f.rect(160, y - 30, 800, 58, c, INK, 3, 6)
+        f.add(f'<rect x="160" y="{y - 30}" width="800" height="14" fill="{WHITE}" fill-opacity="0.45"/>')
         x, i = 160.0, 0
-        while x <= 1010.5:
-            long_ = (i % 5 == 0) if k == 0 else True
-            f.line(x, y - 26, x, y - 26 + (30 if long_ else 16), INK, 2.5 if long_ else 1.5)
-            x += step; i += 1
+        while x <= 960.5:
+            long_ = (i % sub == 0) if sub else True
+            f.line(x, y - 30, x, y - 30 + (32 if long_ else 16), INK, 2.5 if long_ else 1.5)
+            x += step * 800 / 850; i += 1
+        f.line(160, y - 56, 160, y - 34, WHITE, 2); f.line(960, y - 56, 960, y - 34, WHITE, 2)
     return f.svg()
 
 

@@ -2,30 +2,42 @@
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND, SAND_DARK, SAND_LIGHT, ALUMINIUM, METAL_EDGE, COLD, GOOD, GOOD_LIGHT, HEAT, fi
 from figlib import GLASS, HEAT_LIGHT, HOT, PAPER
 import herolib as H
+from figlib import GRAIN, HOT_LIGHT
+from herolib import grad
 
 
 def hero():
     """The chapter's opening illustration: one toy car on a track, two groups timing it with their own tape and stopwatch."""
-    f = H.hero("fy18-hero", "Kuvitus: lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin seisoo ryhmä, "
-               "ja kummallakin ryhmällä on oma sekuntikello; kellojen viisarit ovat pysähtyneet eri kohtiin.")
+    f = H.hero("fy18-hero", "Kuvitus: luokan lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin on ryhmä: "
+               "kummallakin on oma sekuntikello, ja kellojen viisarit ovat pysähtyneet eri kohtiin.")
     f.rect(0, 0, 1200, 600, PAPER)
-    f.path("M0,330 H1200 V600 H0 Z", SAND_LIGHT)
-    for k in range(7): f.line(-200 + k * 260, 600, 80 + k * 200, 330, SAND, 2)
-    f.line(0, 330, 1200, 330, SAND_DARK, 3)
-    # track and tape
-    f.path("M120,470 L1080,470 L1040,420 L160,420 Z", ALUMINIUM, INK, 3)
-    f.rect(140, 476, 920, 28, HEAT_LIGHT, INK, 2, 3)
-    for k in range(47): f.line(150 + k * 19.6, 476, 150 + k * 19.6, 476 + (16 if k % 5 == 0 else 8), INK, 1.5)
-    # toy car
-    x, y = 600, 446
-    f.path(f"M{x - 70},{y + 6} V{y - 18} Q{x - 64},{y - 26} {x - 40},{y - 28} L{x - 22},{y - 56} H{x + 30} L{x + 52},{y - 28} Q{x + 72},{y - 26} {x + 74},{y - 12} V{y + 6} Z", HOT, INK, 3)
-    f.path(f"M{x - 14},{y - 48} H{x + 26} L{x + 40},{y - 30} H{x - 26} Z", GLASS, INK, 2)
-    for wx in (x - 40, x + 44): f.circle(wx, y + 8, 15, INK); f.circle(wx, y + 8, 6, ALUMINIUM)
-    f.line(x - 120, y - 10, x - 84, y - 10, MUTED, 3, cap="round"); f.line(x - 130, y - 30, x - 90, y - 30, MUTED, 3, cap="round")
-    # two groups with their stopwatches
-    H.person(f, 90, 400, COLD, INK, 0.62); H.person(f, 200, 404, GOOD, INK, 0.6)
-    H.person(f, 1000, 400, HEAT, INK, 0.62); H.person(f, 1110, 404, COLD, INK, 0.6)
-    H.stopwatch(f, 250, 140, 56, 0.27); H.stopwatch(f, 950, 140, 56, 0.33)
+    H.window(f, 120, 40, 200, 170, "fy18h-w1"); H.window(f, 880, 40, 200, 170, "fy18h-w2")
+    f.rect(0, 300, 1200, 300, grad(f, "fy18h-floor", SAND, SAND_DARK, y1=300, y2=600))
+    for k in range(13): f.line(600 + (k - 6) * 60, 300, 600 + (k - 6) * 240, 600, GRAIN, 1.5)
+    f.line(0, 300, 1200, 300, INK, 3)
+    # track board in perspective with the tape along its front
+    f.path("M180,500 L1020,500 L940,400 L260,400 Z", grad(f, "fy18h-track", ALUMINIUM, METAL_EDGE), INK, 3)
+    f.path("M260,400 H940", stroke=WHITE, w=2)
+    for x in (300, 900): f.line(x, 400, x - 24, 500, HOT, 4, dash="10 8")         # start and finish marks
+    f.rect(170, 504, 860, 30, HEAT_LIGHT, INK, 2.5, 4)
+    for k in range(87): f.line(178 + k * 9.8, 504, 178 + k * 9.8, 504 + (18 if k % 10 == 0 else 12 if k % 5 == 0 else 7), INK, 1.5)
+    # toy car with its motion lines
+    x, y = 610, 466
+    f.path(f"M{x - 80},{y + 8} V{y - 22} Q{x - 72},{y - 32} {x - 44},{y - 34} L{x - 24},{y - 66} H{x + 34} L{x + 58},{y - 34} Q{x + 82},{y - 30} {x + 84},{y - 14} V{y + 8} Z", grad(f, "fy18h-car", HOT_LIGHT, HOT), INK, 3)
+    f.path(f"M{x - 16},{y - 58} H{x + 30} L{x + 46},{y - 36} H{x - 30} Z", GLASS, INK, 2)
+    f.line(x + 8, y - 58, x + 8, y - 36, INK, 2)
+    f.rect(x + 70, y - 22, 12, 8, HEAT_LIGHT, INK, 1.5, 2)
+    for wx in (x - 46, x + 50): f.circle(wx, y + 10, 18, INK); f.circle(wx, y + 10, 8, ALUMINIUM)
+    for k, (dx, dy) in enumerate(((150, -20), (130, -2), (160, 14))): f.line(x - dx, y + dy, x - dx + 40, y + dy, MUTED, 3, cap="round")
+    # two groups, each with its own stopwatch held up
+    for gx, shirts, turn in ((150, (COLD, GOOD), 0.27), (1050, (HEAT, COLD), 0.34)):
+        sgn = 1 if gx < 600 else -1
+        H.person(f, gx - 40 * sgn, 390, shirts[1], INK, 0.66)
+        H.person(f, gx + 40 * sgn, 396, shirts[0], INK, 0.7)
+        wx = gx + 110 * sgn
+        f.line(gx + 40 * sgn + 20 * sgn, 396 - 236 * 0.7, wx, 276, shirts[0], 16, cap="round")   # the arm holds the watch out
+        f.rect(wx - 12, 262, 24, 30, SAND_LIGHT, INK, 2, 10)
+        H.stopwatch(f, wx, 222, 44, turn)
     return f.svg()
 
 

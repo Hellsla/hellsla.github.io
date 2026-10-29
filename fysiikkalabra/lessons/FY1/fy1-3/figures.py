@@ -2,29 +2,45 @@
 from figlib import (Fig, INK, MUTED, WHITE, RULE_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE, IRON, GLASS, GOOD_LIGHT, fi)
 from figlib import PAPER, SAND, SAND_DARK, n
 import herolib as H
+from figlib import HEAT, SAND_LIGHT
+from herolib import rnd, steel
 
 
 def hero():
-    """The chapter's opening illustration: one ball rolling down a ramp, ten stopwatches stopped at slightly different times."""
-    f = H.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva kouru, jota pitkin kuula vierii. Pöydän edessä kymmenen sekuntikelloa rivissä; "
-               "niiden viisarit ovat pysähtyneet hieman eri kohtiin, vaikka ne mittasivat samaa vierimistä.")
+    """The chapter's opening illustration: one ball rolling down a ramp, ten hands with stopwatches stopped at slightly different times."""
+    f = H.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva alumiinikouru, jota pitkin teräskuula vierii. Etualalla kymmenen kättä pitää "
+               "sekuntikelloja; niiden viisarit ovat pysähtyneet hieman eri kohtiin, vaikka ne mittasivat samaa vierimistä.")
     f.rect(0, 0, 1200, 600, PAPER)
-    f.rect(0, 0, 1200, 250, H.grad(f, "fy13h-wall", WHITE, PAPER))
-    f.rect(330, 40, 540, 150, GOOD, INK, 3, 4)
-    f.rect(342, 52, 516, 126, "#2f5d3a")
-    # table and ramp
-    f.rect(120, 300, 960, 22, SAND, INK, 3, 4)
-    f.rect(150, 322, 24, 130, SAND_DARK, INK, 2); f.rect(1026, 322, 24, 130, SAND_DARK, INK, 2)
-    f.rect(250, 250, 18, 50, IRON, INK, 2)
-    f.path("M240,232 L960,288 L960,300 L240,246 Z", ALUMINIUM, INK, 3)
-    f.path("M960,300 h40 v-12 h-40", SAND_DARK, INK, 2)
-    x, y = 640, 232 + (288 - 232) * (640 - 240) / 720 - 18
-    for k, op in ((1, 0.18), (2, 0.1)):
-        f.add(f'<circle cx="{n(x - 44 * k)}" cy="{n(y - 44 * k * 56 / 720)}" r="16" fill="{IRON}" fill-opacity="{op}"/>')
-    f.circle(x, y, 16, IRON, INK, 3); f.circle(x - 5, y - 5, 5, WHITE)
-    # ten stopwatches, the hands a little apart
+    H.window(f, 70, 40, 220, 200, "fy13h-win")
+    H.window(f, 910, 40, 220, 200, "fy13h-win2")
+    f.rect(360, 40, 480, 210, GOOD, INK, 3, 4)
+    f.add(f'<rect x="374" y="54" width="452" height="182" fill="{INK}" fill-opacity="0.35"/>')
+    f.rect(360, 250, 480, 10, SAND, INK, 2)
+    for x in (420, 470): f.rect(x, 242, 24, 8, WHITE, None, 0, 2)
+    # table
+    H.wood(f, 60, 300, 1080, 30, "fy13h-top")
+    f.rect(90, 330, 30, 120, SAND_DARK, INK, 2); f.rect(1080, 330, 30, 120, SAND_DARK, INK, 2)
+    # ramp: an aluminium channel on a stand, a stop block at the end
+    f.rect(230, 214, 16, 86, steel(f, "fy13h-rod"), INK, 2)
+    f.rect(214, 292, 48, 10, IRON, INK, 2, 3)
+    f.rect(222, 206, 32, 16, IRON, INK, 2, 3)
+    f.path("M210,200 L990,282 L990,300 L210,218 Z", steel(f, "fy13h-ramp", vertical=True), INK, 3)
+    f.path("M210,200 L990,282", stroke=WHITE, w=2)
+    f.rect(990, 266, 26, 34, SAND_DARK, INK, 2, 3)
+    x = 600; y = 200 + (282 - 200) * (x - 210) / 780 - 20
+    for k, op in ((1, 0.2), (2, 0.1), (3, 0.06)):
+        f.add(f'<circle cx="{n(x - 56 * k)}" cy="{n(y - 56 * k * 82 / 780)}" r="20" fill="{IRON}" fill-opacity="{op}"/>')
+    f.defs_add(f'<radialGradient id="fy13h-ball" cx="0.35" cy="0.35" r="0.7"><stop offset="0" stop-color="{WHITE}"/><stop offset="0.5" stop-color="{ALUMINIUM}"/><stop offset="1" stop-color="{IRON}"/></radialGradient>')
+    f.circle(x, y, 20, "url(#fy13h-ball)", INK, 3)
+    # ten hands in front, each with a stopwatch stopped a little apart
     for k in range(10):
-        H.stopwatch(f, 150 + k * 100, 524, 40, 0.30 + 0.12 * (H.rnd(k, 4) - 0.5))
+        cx = 66 + k * 119; cy = 520 + 10 * (k % 2)
+        sleeve = (COLD, HEAT, GOOD, HOT, IRON)[k % 5]
+        f.path(f"M{cx - 26},600 L{cx - 22},{cy + 40} H{cx + 22} L{cx + 26},600 Z", sleeve, INK, 3)
+        f.add(f'<ellipse cx="{cx}" cy="{cy + 34}" rx="34" ry="26" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="2.5"/>')
+        H.stopwatch(f, cx, cy, 40, 0.30 + 0.12 * (rnd(k, 4) - 0.5))
+        for j in range(3): f.rect(cx + 28, cy - 18 + 16 * j, 20, 15, SAND_LIGHT, INK, 2, 7)   # fingers round the watch
+        f.rect(cx - 8, cy - 64, 16, 22, SAND_LIGHT, INK, 2, 8)                                 # the thumb on the button
     return f.svg()
 
 

@@ -3,6 +3,8 @@ from figlib import Fig, Axes, INK, MUTED, WHITE, COLD, HEAT, GOOD, RULE, fi
 import math
 from figlib import COLD_LIGHT, GLASS, HEAT_LIGHT, HOT_LIGHT, METAL_EDGE, SAND_DARK, SAND_LIGHT, n
 import herolib as H
+from figlib import ALUMINIUM, GOOD_LIGHT, GRAIN, IRON, SAND
+from herolib import grad, rnd
 
 # the cart data of the lesson's first simulation case (t in s, s in m) and the line fitted to it
 CART = [(1, 0.6), (2, 0.8), (3, 1.6), (4, 2.1), (5, 2.4), (6, 2.9)]
@@ -12,31 +14,42 @@ KETTLE = [(0, 20.8), (1, 27.9), (2, 36.5), (3, 43.8), (4, 52.4), (5, 59.6)]
 
 def hero():
     """The chapter's opening illustration: measured points on grid paper, scattered a little, and a ruler laid along the one line that fits them."""
-    f = H.hero("fy14-hero", "Kuvitus: ruutupaperi pöydällä. Paperilla on mittauspisteitä, jotka eivät osu täsmälleen samalle suoralle, "
-               "ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä.")
-    f.rect(0, 0, 1200, 600, SAND_LIGHT)
-    for k in range(9): f.line(0, 30 + k * 68, 1200, 14 + k * 68, SAND_DARK, 2)
-    f.path("M260,40 L960,24 L976,566 L276,580 Z", WHITE, INK, 2)
-    def P(u, v): return (276 + u * 700 - v * 16 / 540 * 0 + 0 * u, 580 - v * 540 + 0) if False else (268 + u * 700 + v * 8, 573 - v * 540 - u * 15)
-    for k in range(1, 20):
-        a, b = P(k / 20, 0), P(k / 20, 1); f.line(*a, *b, COLD_LIGHT, 1.5)
-        a, b = P(0, k / 20), P(1, k / 20); f.line(*a, *b, COLD_LIGHT, 1.5)
-    o, xe, ye = P(0.1, 0.1), P(0.92, 0.1), P(0.1, 0.92)
-    f.line(*o, *xe, INK, 3); f.line(*o, *ye, INK, 3)
-    pts = [(0.18, 0.2), (0.27, 0.33), (0.36, 0.34), (0.45, 0.47), (0.54, 0.5), (0.63, 0.61), (0.72, 0.66), (0.81, 0.79)]
-    a, b = P(0.12, 0.14), P(0.88, 0.85)
+    f = H.hero("fy14-hero", "Kuvitus: ruutupaperi työpöydällä. Paperilla on mittauspisteitä virhepalkkeineen; ne eivät osu täsmälleen samalle "
+               "suoralle, ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä, pyyhekumi ja laskin.")
+    f.rect(0, 0, 1200, 600, grad(f, "fy14h-desk", SAND_DARK, SAND, horizontal=True))
+    for k in range(10): f.path(f"M0,{24 + k * 64} q300,{n(-10 + 20 * rnd(k, 3))} 600,0 t600,0", stroke=GRAIN, w=1.5, extra='stroke-opacity="0.5"')
+    def P(u, v): return (268 + u * 680 + v * 10, 568 - v * 530 - u * 14)
+    corners = [P(-0.03, -0.03), P(1.03, -0.03), P(1.03, 1.03), P(-0.03, 1.03)]
+    f.add(f'<path d="M{" L".join(f"{n(x + 10)},{n(y + 12)}" for x, y in corners)} Z" fill="{INK}" fill-opacity="0.2"/>')   # shadow
+    f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in corners) + " Z", WHITE, INK, 2)
+    for k in range(1, 40):
+        w = 1.5 if k % 5 else 2.2
+        f.line(*P(k / 40, -0.02), *P(k / 40, 1.02), COLD_LIGHT, w); f.line(*P(-0.02, k / 40), *P(1.02, k / 40), COLD_LIGHT, w)
+    f.line(*P(0.08, 0.08), *P(0.95, 0.08), INK, 3); f.line(*P(0.08, 0.08), *P(0.08, 0.95), INK, 3)
+    f.path("M{},{} l-14,-6 v12 Z".format(*map(n, P(0.95, 0.08))).replace("l-14,-6 v12", "l-14,-7 v14"), INK)
+    for k in range(1, 9): f.line(*P(0.08 + k * 0.1, 0.08), *P(0.08 + k * 0.1, 0.065), INK, 2); f.line(*P(0.08, 0.08 + k * 0.1), *P(0.065, 0.08 + k * 0.1), INK, 2)
+    pts = [(0.17, 0.19, 0.04), (0.26, 0.33, 0.05), (0.35, 0.34, 0.04), (0.44, 0.47, 0.05), (0.53, 0.50, 0.04), (0.62, 0.61, 0.05), (0.71, 0.66, 0.04), (0.80, 0.79, 0.05)]
+    a, b = P(0.11, 0.135), P(0.89, 0.855)
     f.line(*a, *b, HEAT, 4, cap="round")
-    for u, v in pts:
-        x, y = P(u, v); f.circle(x, y, 9, COLD, INK, 2)
-    # the ruler along the line, below it
-    ang = math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
-    th = math.atan2(b[1] - a[1], b[0] - a[0]); cx, cy = (a[0] + b[0]) / 2 - math.sin(th) * 52, (a[1] + b[1]) / 2 + math.cos(th) * 52
-    g = f'<g transform="translate({n(cx)},{n(cy)}) rotate({n(ang)})"><rect x="-330" y="0" width="660" height="56" rx="4" fill="{GLASS}" fill-opacity="0.75" stroke="{METAL_EDGE}" stroke-width="2"/>'
-    g += "".join(f'<line x1="{-320 + 16 * k}" y1="0" x2="{-320 + 16 * k}" y2="{18 if k % 5 else 30}" stroke="{METAL_EDGE}" stroke-width="2"/>' for k in range(41))
+    for u, v, e in pts:
+        f.line(*P(u, v - e), *P(u, v + e), COLD, 2.5); f.line(*P(u - 0.01, v - e), *P(u + 0.01, v - e), COLD, 2.5); f.line(*P(u - 0.01, v + e), *P(u + 0.01, v + e), COLD, 2.5)
+        x, y = P(u, v); f.circle(x, y, 8, COLD, INK, 2)
+    # the transparent ruler laid beside the line
+    th = math.atan2(b[1] - a[1], b[0] - a[0]); cx, cy = (a[0] + b[0]) / 2 - math.sin(th) * 50, (a[1] + b[1]) / 2 + math.cos(th) * 50
+    g = (f'<g transform="translate({n(cx)},{n(cy)}) rotate({n(math.degrees(th))})"><rect x="-340" y="0" width="680" height="60" rx="5" fill="{GLASS}" fill-opacity="0.7" stroke="{METAL_EDGE}" stroke-width="2.5"/>'
+         f'<rect x="-336" y="40" width="672" height="16" rx="3" fill="{WHITE}" fill-opacity="0.5"/>')
+    g += "".join(f'<line x1="{-320 + 16 * k}" y1="0" x2="{-320 + 16 * k}" y2="{14 if k % 5 else 26}" stroke="{METAL_EDGE}" stroke-width="2"/>' for k in range(41))
     f.add(g + "</g>")
-    f.add(f'<g transform="translate(1040,300) rotate(-62)"><rect x="-150" y="-12" width="260" height="24" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="2"/>'
-          f'<path d="M110,-12 L150,0 L110,12 Z" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="2"/><path d="M138,-4 L150,0 L138,4 Z" fill="{INK}"/>'
-          f'<rect x="-176" y="-12" width="26" height="24" fill="{HOT_LIGHT}" stroke="{INK}" stroke-width="2"/></g>')
+    # pencil, eraser and calculator beside the paper
+    f.add(f'<g transform="translate(1060,330) rotate(-64)"><rect x="-170" y="-13" width="290" height="26" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="2"/>'
+          f'<line x1="-170" y1="0" x2="120" y2="0" stroke="{HEAT}" stroke-width="2"/><rect x="-196" y="-13" width="20" height="26" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="2"/>'
+          f'<rect x="-216" y="-13" width="22" height="26" rx="6" fill="{HOT_LIGHT}" stroke="{INK}" stroke-width="2"/>'
+          f'<path d="M120,-13 L162,0 L120,13 Z" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="2"/><path d="M148,-4 L162,0 L148,4 Z" fill="{INK}"/></g>')
+    f.add(f'<g transform="translate(120,470) rotate(-12)"><rect x="-50" y="-22" width="100" height="44" rx="8" fill="{HOT_LIGHT}" stroke="{INK}" stroke-width="2.5"/>'
+          f'<rect x="-50" y="-22" width="38" height="44" rx="8" fill="{COLD_LIGHT}" stroke="{INK}" stroke-width="2.5"/></g>')
+    f.add(f'<g transform="translate(130,190) rotate(8)"><rect x="-70" y="-110" width="140" height="220" rx="14" fill="{IRON}" stroke="{INK}" stroke-width="3"/>'
+          f'<rect x="-52" y="-92" width="104" height="44" rx="4" fill="{GOOD_LIGHT}" stroke="{INK}" stroke-width="2"/>'
+          + "".join(f'<rect x="{-52 + 28 * (k % 4)}" y="{-34 + 30 * (k // 4)}" width="22" height="22" rx="4" fill="{ALUMINIUM if k % 4 < 3 else HEAT_LIGHT}" stroke="{INK}" stroke-width="1.5"/>' for k in range(20)) + "</g>")
     return f.svg()
 
 

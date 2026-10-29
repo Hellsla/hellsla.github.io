@@ -2,38 +2,62 @@
 
 > **Why** does an incandescent lamp get so hot that it can burn your finger, even though its job is to give light, and why does an LED lamp shine just as brightly with much less electricity?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: two ceiling lamps side by side in a dark room. On the left an incandescent bulb whose filament glows and above which heat shimmers; on the right an LED bulb. Both cones of light are equally bright." class="fig-hero" style="max-width:100%;font-size:24px">
-  <rect x="0" y="0" width="1200" height="600" fill="#2b3440"/>
-  <rect x="0" y="0" width="1200" height="40" fill="#1f2933"/>
-  <path d="M310,300 L140,600 H600 L430,300 Z" fill="#ffc078" fill-opacity="0.28"/>
-  <circle cx="370" cy="260" r="120" fill="#ffc078" fill-opacity="0.25"/>
-  <line x1="370" y1="40" x2="370" y2="160" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <rect x="344" y="160" width="52" height="50" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <line x1="344" y1="172" x2="396" y2="176" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="344" y1="184" x2="396" y2="188" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="344" y1="196" x2="396" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M340,210 L330,236 Q278,270 290,318 Q310,356 370,356 Q430,356 450,318 Q462,270 410,236 L400,210 Z" fill="#fff4d6" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M360,212 L348,290 M380,212 L392,290" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M348,290 q6,-12 11,0 t11,0 t11,0 t11,0" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round"/>
-  <circle cx="370" cy="292" r="30" fill="#e8590c" fill-opacity="0.25"/>
-  <path d="M230,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M266,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M474,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M510,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M770,300 L600,600 H1060 L890,300 Z" fill="#ffc078" fill-opacity="0.28"/>
-  <circle cx="830" cy="260" r="120" fill="#ffc078" fill-opacity="0.25"/>
-  <line x1="830" y1="40" x2="830" y2="160" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <rect x="804" y="160" width="52" height="50" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <line x1="804" y1="172" x2="856" y2="176" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="804" y1="184" x2="856" y2="188" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="804" y1="196" x2="856" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M800,210 L760,260 Q752,340 830,346 Q908,340 900,260 L860,210 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M776,270 Q830,250 884,270 L880,310 Q830,326 780,310 Z" fill="#fff4d6" stroke-linejoin="round"/>
-  <circle cx="794" cy="292" r="5" fill="#ffc078"/>
-  <circle cx="812" cy="292" r="5" fill="#ffc078"/>
-  <circle cx="830" cy="292" r="5" fill="#ffc078"/>
-  <circle cx="848" cy="292" r="5" fill="#ffc078"/>
-  <circle cx="866" cy="292" r="5" fill="#ffc078"/>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: two ceiling lamps side by side above a table in a room in the evening. On the left an incandescent bulb whose filament glows and around which heat shimmers; on the right an LED bulb. Both cones of light on the table are equally bright." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy24h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#6c757d"/></linearGradient><linearGradient id="fy24h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy24h-g360" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#ffc078" stop-opacity="0.8"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy24h-cap360" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy24h-bulb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffc078"/></linearGradient><radialGradient id="fy24h-fil" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy24h-g840" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#ffc078" stop-opacity="0.8"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy24h-cap840" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy24h-led" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy24h-wall)"/>
+  <rect x="0" y="0" width="1200" height="34" fill="#1f2933"/>
+  <rect x="80" y="500" width="1040" height="28" rx="4" fill="url(#fy24h-table)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M90,507 q260,-1.5 520,0 t500,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <path d="M90,514 q260,-1.5 520,0 t500,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <path d="M90,521 q260,-1.5 520,0 t500,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
+  <rect x="110" y="528" width="26" height="72" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1064" y="528" width="26" height="72" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <path d="M300,300 L110,500 H610 L420,300 Z" fill="#ffc078" fill-opacity="0.3"/>
+  <ellipse cx="360" cy="502" rx="250" ry="16" fill="#ffc078" fill-opacity="0.55"/>
+  <circle cx="360" cy="262" r="150" fill="url(#fy24h-g360)"/>
+  <line x1="360" y1="34" x2="360" y2="156" stroke="#c4ccd4" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="332" y="154" width="56" height="58" rx="4" fill="url(#fy24h-cap360)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M332,166 L388,171" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M332,177 L388,182" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M332,188 L388,193" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M332,199 L388,204" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M328,212 L318,238 Q264,272 276,322 Q298,362 360,362 Q422,362 444,322 Q456,272 402,238 L392,212 Z" fill="url(#fy24h-bulb)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M350,214 L336,294 M370,214 L384,294" fill="none" stroke="#8a96a3" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="360" cy="296" r="40" fill="url(#fy24h-fil)"/>
+  <path d="M336,294 q6,-12 12,0 t12,0 t12,0 t12,0" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M210,340 q-12,-23.5 0,-46.5 t0,-46.5 t0,-46.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M248,340 q-12,-23.5 0,-46.5 t0,-46.5 t0,-46.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M472,340 q-12,-23.5 0,-46.5 t0,-46.5 t0,-46.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M510,340 q-12,-23.5 0,-46.5 t0,-46.5 t0,-46.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M330,150 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M390,150 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M780,300 L590,500 H1090 L900,300 Z" fill="#ffc078" fill-opacity="0.3"/>
+  <ellipse cx="840" cy="502" rx="250" ry="16" fill="#ffc078" fill-opacity="0.55"/>
+  <circle cx="840" cy="262" r="150" fill="url(#fy24h-g840)"/>
+  <line x1="840" y1="34" x2="840" y2="156" stroke="#c4ccd4" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="812" y="154" width="56" height="58" rx="4" fill="url(#fy24h-cap840)" stroke="#1f2933" stroke-width="3"/>
+  <path d="M812,166 L868,171" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M812,177 L868,182" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M812,188 L868,193" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M812,199 L868,204" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M808,212 L766,262 Q758,346 840,352 Q922,346 914,262 L872,212 Z" fill="url(#fy24h-led)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M784,270 Q840,250 896,270 L892,314 Q840,330 788,314 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <rect x="794" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="810" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="826" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="842" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="858" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="874" y="284" width="12" height="12" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="800" y="214" width="80" height="24" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="808" y1="216" x2="808" y2="236" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="824" y1="216" x2="824" y2="236" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="840" y1="216" x2="840" y2="236" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="856" y1="216" x2="856" y2="236" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="872" y1="216" x2="872" y2="236" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="230" y="470" width="140" height="30" rx="3" fill="#1971c2" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="240" y="474" width="124" height="8" fill="#ffffff"/>
+  <path d="M800,456 h60 l-6,44 h-48 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M860,466 q22,4 0,24" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
 </svg>
 
 ## Key idea

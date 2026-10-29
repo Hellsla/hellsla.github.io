@@ -2,40 +2,64 @@
 from figlib import (Fig, Axes, INK, MUTED, RULE_LIGHT, WHITE, COLD, HEAT, ALUMINIUM, IRON, METAL_EDGE, GOOD, fi)
 from figlib import HEAT_LIGHT, SAND, n
 import herolib as H
+from figlib import COLD_LIGHT, HOT
+from herolib import grad
 
 G = 9.81
 
 
 def hero():
     """The chapter's opening illustration: on the airless Moon a hammer and a feather fall side by side, level at every moment."""
-    f = H.hero("fy16-hero", "Kuvitus: astronautti Kuun pinnalla mustaa taivasta vasten, Maa taivaalla. Astronautti on pudottanut vasaran ja höyhenen "
-               "samaan aikaan; haaleat välikuvat näyttävät, että ne ovat joka hetki samalla korkeudella.")
-    H.space(f, seed=6, count=60)
-    H.earth(f, "fy16h", 1040, 120, 60)
-    f.path("M0,470 Q300,440 600,462 T1200,452 V600 H0 Z", ALUMINIUM)
-    for cx, cy, rx in ((180, 520, 60), (820, 540, 90), (1060, 500, 40), (460, 560, 34)):
-        f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{n(rx * 0.25)}" fill="{METAL_EDGE}"/><ellipse cx="{cx}" cy="{n(cy - 3)}" rx="{n(rx * 0.8)}" ry="{n(rx * 0.17)}" fill="{IRON}" fill-opacity="0.35"/>')
-    # astronaut: white suit, gold visor, arms out
-    x, yf = 470, 470
-    f.rect(x - 34, yf - 120, 28, 120, WHITE, INK, 3, 10); f.rect(x + 6, yf - 120, 28, 120, WHITE, INK, 3, 10)
-    f.rect(x - 66, yf - 262, 30, 110, ALUMINIUM, INK, 3, 8)
-    f.rect(x - 44, yf - 268, 88, 158, WHITE, INK, 3, 22)
-    f.path(f"M{x + 40},{yf - 240} L{x + 128},{yf - 290}", stroke=INK, w=30, extra='stroke-linecap="round"')
-    f.path(f"M{x + 40},{yf - 240} L{x + 128},{yf - 290}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
-    f.path(f"M{x - 40},{yf - 240} L{x - 20},{yf - 160}", stroke=INK, w=30, extra='stroke-linecap="round"')
-    f.path(f"M{x - 40},{yf - 240} L{x - 20},{yf - 160}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
-    f.circle(x, yf - 310, 50, WHITE, INK, 3)
-    f.add(f'<ellipse cx="{x + 12}" cy="{yf - 310}" rx="34" ry="28" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="3"/>')
-    f.rect(x - 22, yf - 210, 44, 30, ALUMINIUM, INK, 2, 4)
+    f = H.hero("fy16-hero", "Kuvitus: astronautti Kuun harmaalla pinnalla mustaa taivasta vasten, taustalla kuumoduuli ja taivaalla Maa. "
+               "Astronautti on pudottanut vasaran ja höyhenen samaan aikaan; haaleat välikuvat näyttävät, että ne ovat joka hetki samalla "
+               "korkeudella ja että niiden välimatkat kasvavat putoamisen aikana.")
+    H.space(f, seed=6, count=80)
+    H.earth(f, "fy16h", 1060, 110, 62)
+    f.path("M0,440 Q600,380 1200,450 V600 H0 Z", grad(f, "fy16h-ground", ALUMINIUM, METAL_EDGE))
+    f.path("M0,440 Q600,380 1200,450", stroke=WHITE, w=2, extra='stroke-opacity="0.5"')
+    for cx, cy, rx in ((140, 520, 70), (860, 540, 60), (1080, 500, 46), (420, 570, 40)):
+        f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{n(rx * 0.28)}" fill="{METAL_EDGE}" stroke="{ALUMINIUM}" stroke-width="3"/>')
+        f.add(f'<ellipse cx="{cx}" cy="{n(cy - rx * 0.06)}" rx="{n(rx * 0.75)}" ry="{n(rx * 0.16)}" fill="{IRON}" fill-opacity="0.4"/>')
+    # lunar module in the background: gold foil descent stage on four legs
+    lx, ly = 900, 430
+    for dx in (-70, 70): f.line(lx + dx * 0.6, ly - 40, lx + dx, ly + 10, METAL_EDGE, 4); f.add(f'<ellipse cx="{lx + dx}" cy="{ly + 12}" rx="12" ry="4" fill="{ALUMINIUM}" stroke="{INK}" stroke-width="2"/>')
+    f.rect(lx - 50, ly - 70, 100, 40, grad(f, "fy16h-foil", HEAT_LIGHT, SAND, horizontal=True), INK, 2)
+    f.path(f"M{lx - 40},{ly - 70} L{lx - 30},{ly - 112} H{lx + 34} L{lx + 44},{ly - 70} Z", ALUMINIUM, INK, 2)
+    f.rect(lx - 10, ly - 104, 22, 18, IRON, INK, 2, 3)
+    f.line(lx + 30, ly - 112, lx + 46, ly - 140, INK, 2); f.add(f'<ellipse cx="{lx + 48}" cy="{ly - 142}" rx="10" ry="4" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>')
+    # footprints
+    for k, x in enumerate(range(180, 380, 40)): f.add(f'<ellipse cx="{x}" cy="{454 + (k % 2) * 14 - k * 3}" rx="12" ry="5" fill="{IRON}" fill-opacity="0.55"/>')
+    # astronaut standing, the right arm out at shoulder height
+    x, yf = 440, 470
+    f.add(f'<ellipse cx="{x + 10}" cy="{yf + 4}" rx="70" ry="10" fill="{IRON}" fill-opacity="0.55"/>')
+    f.rect(x - 78, yf - 290, 46, 120, ALUMINIUM, INK, 3, 10)
+    for dx in (-36, 6):
+        f.rect(x + dx, yf - 130, 30, 124, WHITE, INK, 3, 10)
+        f.rect(x + dx - 4, yf - 22, 38, 22, ALUMINIUM, INK, 3, 6)
+        f.line(x + dx + 2, yf - 80, x + dx + 28, yf - 80, ALUMINIUM, 3)
+    f.rect(x - 52, yf - 300, 104, 180, WHITE, INK, 3, 26)
+    f.rect(x - 52, yf - 150, 104, 20, ALUMINIUM, INK, 2, 6)
+    f.rect(x - 24, yf - 250, 48, 34, COLD_LIGHT, INK, 2, 4)
+    for k in range(3): f.circle(x - 12 + 12 * k, yf - 233, 4, (HOT, GOOD, COLD)[k])
+    f.rect(x - 64, yf - 288, 20, 32, HOT, INK, 2, 3)          # the flag patch on the arm
+    f.path(f"M{x - 46},{yf - 270} L{x - 22},{yf - 180}", stroke=INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x - 46},{yf - 270} L{x - 22},{yf - 180}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
+    hx, hy = x + 150, yf - 282
+    f.path(f"M{x + 40},{yf - 270} L{hx},{hy}", stroke=INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x + 40},{yf - 270} L{hx},{hy}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
+    f.circle(hx + 6, hy, 15, ALUMINIUM, INK, 3)
+    f.circle(x, yf - 340, 54, WHITE, INK, 3)
+    f.rect(x - 36, yf - 368, 76, 50, grad(f, "fy16h-visor", HEAT_LIGHT, IRON), INK, 3, 22)
+    f.path(f"M{x - 22},{yf - 358} q14,-6 26,0", stroke=WHITE, w=4, extra='stroke-linecap="round"')
     def hammer(cx, cy, op):
-        g = f'<g transform="translate({n(cx)},{n(cy)}) scale(0.85)" opacity="{op}"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="{SAND}" stroke="{INK}" stroke-width="2"/>'
-        return g + f'<rect x="-22" y="-52" width="44" height="18" rx="3" fill="{IRON}" stroke="{INK}" stroke-width="2"/></g>'
+        return (f'<g transform="translate({n(cx)},{n(cy)}) scale(0.85)" opacity="{op}"><rect x="-5" y="-40" width="10" height="66" rx="4" fill="{SAND}" stroke="{INK}" stroke-width="2"/>'
+                f'<rect x="-24" y="-54" width="48" height="20" rx="3" fill="{IRON}" stroke="{WHITE}" stroke-width="2"/></g>')
     def feather(cx, cy, op):
-        return (f'<g transform="translate({n(cx)},{n(cy)}) rotate(-12) scale(0.85)" opacity="{op}"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>'
-                f'<path d="M0,40 L0,-40" stroke="{INK}" stroke-width="2"/></g>')
-    for k, (y, op) in enumerate(((204, 0.3), (276, 0.55), (396, 1))):   # 24 t² below the hand at t = 1, 2, 3: the gaps grow (3 : 5)
-        f.add(hammer(x + 160, y, op)); f.add(feather(x + 250, y, op))
-    f.line(x + 110, 396, x + 290, 396, HEAT, 2, dash="8 6")
+        return (f'<g transform="translate({n(cx)},{n(cy)}) rotate(-12) scale(0.85)" opacity="{op}"><path d="M0,34 Q-24,-8 0,-48 Q24,-8 0,34 Z" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>'
+                f'<path d="M0,44 L0,-44" stroke="{INK}" stroke-width="2"/>' + "".join(f'<path d="M0,{y} l{s * 16},-12" stroke="{ALUMINIUM}" stroke-width="1.5"/>' for y in (-24, -10, 4, 18) for s in (-1, 1)) + "</g>")
+    for k, (y, op) in enumerate(((hy + 34, 0.3), (hy + 106, 0.55), (hy + 226, 1))):   # 24 t² below the hand at t = 1, 2, 3: the gaps grow (3 : 5)
+        f.add(hammer(hx - 4, y, op)); f.add(feather(hx + 80, y, op))
+    f.line(hx - 40, hy + 226, hx + 120, hy + 226, WHITE, 2, dash="8 6")
     return f.svg()
 
 
