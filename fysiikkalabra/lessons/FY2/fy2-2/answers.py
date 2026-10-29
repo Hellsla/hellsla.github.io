@@ -9,7 +9,7 @@ a["fy2-2-L1-01"] = 54 * 1000                       # phone battery 54 kJ = 54 ·
 a["fy2-2-L1-02"] = 10 / 4.4                        # day's food 10 MJ : chocolate bar (200 g) 4,4 MJ = 2,27 -> 2,3 bars
 a["fy2-2-L1-03"] = 0.14 * 1000                     # wind farm 0,14 TJ = 0,14 · 1000 GJ = 140 GJ
 a["fy2-2-L1-04"] = 12 - 9.0                        # stove: 12 MJ − 9,0 MJ = 3,0 MJ warms the kitchen air
-a["fy2-2-L1-05"] = (10 * 1000) / 300               # day's food 10 MJ = 10 · 1000 kJ = 10 000 kJ; 10 000 kJ : 300 kJ = 33,3 apples
+a["fy2-2-L1-05"] = 1e9 / 1e4                          # read off fy2-2/tikapuut-kohteet: lightning 1 GJ = 10^9 J, AA battery 10 kJ = 10^4 J -> 10^5 batteries
 # Level 2: a conversion and a second step
 a["fy2-2-L2-01"] = 2.2 + 0.80                      # 800 kJ = 0,80 · 1000 kJ = 0,80 MJ, so 2,2 MJ + 0,80 MJ = 3,0 MJ
 a["fy2-2-L2-02"] = 40 * 32 / 1000                  # 40 l · 32 MJ/l = 1280 MJ = 1,28 · 1000 MJ = 1,28 GJ -> 1,3 GJ

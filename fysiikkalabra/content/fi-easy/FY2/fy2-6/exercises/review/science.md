@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 26868d6782bf8b51
+CONTENT-HASH: c3fa2fcc9a2e0233
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- solutions.md L3-03 Järkevyys — "tai tuontisähköä" had become "Tarvittaisiin myös" (or → also) → "Toinen vaihtoehto on tuontisähkö ja energiavarastot."
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md: all steps, numbers, answers, significant figures, decimal commas.
+Translation delta review against the reviewed Finnish: L1-04 figure-reading exercise (text, figure fy2-6/fi-bars, answer 26.4 %, unit and tolerance unchanged), solutions.md L1-04 (Annettu, Kuvaajan lukeminen step, 20.2 + 0.9 = 21.1 TWh of 79.9 TWh = 0.2641, three significant figures). Numbers, units and LaTeX preserved; the task does not give the readings away; figure is labelled in the language. Selkeä suomi keeps short sentences, same physics terms and the same cognitive demand. Science: statements about nuclear modulation, hydropower and rated versus average power are correct.

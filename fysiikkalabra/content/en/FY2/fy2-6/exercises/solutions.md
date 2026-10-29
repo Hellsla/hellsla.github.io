@@ -29,14 +29,15 @@
 **Reasonableness:** Estimate: $1.6 \cdot 25 = 40$, so $38\,\text{GWh}$ is of the right order of magnitude. When one plant produces $38\,\text{GWh}$ in a day, it produces over $10\,\text{TWh}$ in a year.
 
 ## fy2-6-L1-04
-**Given:** wind power $20.2\,\text{TWh}$, total production $79.9\,\text{TWh}$
-**Find:** the share of wind power as a percentage
-**Principle:** A share tells you what part of the whole a part is, so the part is divided by the whole and the result is given as a percentage.
-**Formula:** $\text{share} = \dfrac{E_\text{wind}}{E_\text{tot}}$
-**Conversions:** Not needed: both are in terawatt-hours, so the unit cancels. As a percentage, $1 = 100\,\%$.
-**Substitution:** $\text{share} = 20.2\,\text{TWh} : 79.9\,\text{TWh} = 0.2528 = 25.28\,\%$
-**Answer:** $25.3\,\%$, three significant figures like the energies $20.2\,\text{TWh}$ and $79.9\,\text{TWh}$.
-**Reasonableness:** $20 : 80 = 0.25$, so a quarter is correct. The share of wind power is clearly less than a half but greater than the share of hydropower.
+**Given:** total production $E_\text{tot} = 79.9\,\text{TWh}$; the production of wind power and solar power is read from the figure
+**Find:** the combined share of wind power and solar power in electricity production, as a percentage
+**Principle:** The power of wind and solar power depends on the weather, so they are weather-dependent ways of producing electricity. Their combined production is the sum of two bars, and the share is found by dividing it by the total production.
+**Reading the graph:** At the end of the wind power bar there is the number $20.2$ and at the end of the short solar power bar $0.9$. The unit of the horizontal axis is $\text{TWh}$, so $E_\text{wind} = 20.2\,\text{TWh}$ and $E_\text{solar} = 0.9\,\text{TWh}$.
+**Formula:** $\text{share} = \dfrac{E_\text{wind} + E_\text{solar}}{E_\text{tot}}$
+**Conversions:** Not needed: all the energies are in terawatt-hours, so the unit cancels. As a percentage, $1 = 100\,\%$.
+**Substitution:** $\text{share} = \dfrac{20.2\,\text{TWh} + 0.9\,\text{TWh}}{79.9\,\text{TWh}} = \dfrac{21.1\,\text{TWh}}{79.9\,\text{TWh}} = 0.2641 = 26.41\,\%$
+**Answer:** $26.4\,\%$, three significant figures like the energies $21.1\,\text{TWh}$ and $79.9\,\text{TWh}$.
+**Reasonableness:** $21 : 80 \approx 0.26$, so about a quarter. Almost all of the share is wind power, because the solar power bar is very short. The remaining three quarters or so were produced with nuclear power, hydropower and fuel-fired power.
 
 ## fy2-6-L1-05
 **Given:** power $P = 4.0\,\text{kW}$, time $t = 3.5\,\text{h}$

@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1a7607268cc48d1a
+CONTENT-HASH: 7adf7b7d136869eb
 
 ## Blocking
-- none left (fixes listed under Fixed)
-
-## Fixed
-- exercises.json level3[2] — "compared with the emission of the bus" (could be read as the whole bus) → "compared with that of the bus" (per passenger, as in the Finnish)
-- solutions.md fy2-8-L3-01 Conclusion — "would not reduce emissions, but they would be slightly larger" → "would not reduce emissions; they would be slightly larger"
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (13 texts and the units, now "times") and solutions.md (13 solutions, every step) against the Finnish: numbers, answers, significant figures, unit conversions, decimal points, \cdot. check_i18n en: 0 errors.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (no Finnish change in exercises; fossil-fuel wording only in lesson/inquiry)
+- Checked (batch delta review): exercise L1-05 now reads the emission factor from the figure fy2-8/emissions (answer 1.2 kg unchanged); solution gets the graph-reading step (bar between 400 and 600, a little before the middle, 490); L3-01 reasonableness and conclusion follow the softened Finnish (coal about 10 % above the limit, within the uncertainty, only burning counted for petrol). Numbers, units, significant figures and decimal point preserved. check_i18n: 0 errors.

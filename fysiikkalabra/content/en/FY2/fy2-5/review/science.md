@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 767bd8791d51447e
+CONTENT-HASH: 3deec891b7917418
 
 ## Blocking
-(none left; fixed items listed under Fixed)
-
-## Fixed
-- inquiry.json activities[6].question.solution — **Answer:** "like $2200\,\text{kJ}$ in the chapter" (mistranslated *luku* = number) → "as in the number $2200\,\text{kJ}$" (blocking)
-- inquiry.json activities[4] choice 2 — "because the most of it is needed" → "because the largest amount of it is needed"
-- inquiry.json activities[4].source_note — "calorific values" → "heating values" / "heats of combustion", "wood pellet" → "wood pellets" (term consistency with terms.md)
+(none)
 
 ## Polish
-- Bar chart (figure data) shows natural gas 49 MJ/kg while the table says 48; this comes from the Finnish figures.py, not the translation.
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (science): lesson.md (all sections, worked example steps, table, sources), inquiry.json (contribution, goals, prior-knowledge chapter titles vs content/en/courses.json, all prompts, choices, feedback, hints, mistakes, solutions, source_notes, criteria), exit-ticket.json, meta.json, figures.json. Physics meaning, heat of combustion term, decimal points, \cdot, step labels, chapter titles checked; no simulation in this lesson.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, figure labels, inquiry texts/feedback/solutions/model answer/criteria, exit ticket (nuclear-fuel note, moisture, food energy content vs heat of combustion, CO2 sentence).
+- Translation review against the reviewed Finnish (2026-10-29, after the option rebalance 01da3ae6): lesson.md opening question; choices of the energy-conversion check, the fuel table, the mass table and the concept check; new checks 2 (43 vs 15 MJ/kg, 1.0 kg vs 4.0 kg, 60 MJ vs 43 MJ, E = Hm) and 3 (22 MJ/kg food label vs 15 MJ/kg firewood); renumbered checks 4 and 5; exit ticket with the single E = Hm question. Physics, numbers, units, LaTeX, correct options and per-option feedback match the Finnish; figures labelled in the language. Natural textbook English, decimal point in text and LaTeX.

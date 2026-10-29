@@ -11,7 +11,8 @@
     {
       "id": "fy2-5-L1-02",
       "level": 1,
-      "text": "Kaasukattilassa poltetaan talvipäivänä $2{,}0\\,\\text{kg}$ maakaasua, jonka lämpöarvo on $48\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka paljon energiaa kaasusta vapautuu? Anna vastaus megajouleina.",
+      "text": "Kaasukattilassa poltetaan talvipäivänä $2{,}0\\,\\text{kg}$ maakaasua. Lue maakaasun lämpöarvo kuvan pylväskaaviosta. Kuinka paljon energiaa kaasusta vapautuu? Anna vastaus megajouleina.",
+      "figure": "fy2-5/lampoarvot",
       "answer": 96,
       "unit": "MJ",
       "tolerance": 0.02

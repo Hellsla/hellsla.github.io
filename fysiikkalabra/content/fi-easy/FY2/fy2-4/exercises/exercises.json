@@ -95,7 +95,8 @@
     {
       "id": "fy2-4-L3-03",
       "level": 3,
-      "text": "Energiavirtakuvio on piirretty mittakaavaan. Laitteeseen tulevan energian nuolen paksuus on $6{,}0\\,\\text{cm}$, ja se vastaa energiaa $240\\,\\text{J}$. Hyötyenergian nuolen paksuus on $1{,}5\\,\\text{cm}$. Kuinka paljon energiaa muuttuu häviöiksi? Anna vastaus jouleina.",
+      "text": "Kuvassa on sähkömoottorin energiavirtakuvio ruutupaperilla. Nuolten paksuudet on piirretty mittakaavaan. Moottoriin tuleva energia on merkitty kuvaan. Kuinka paljon energiaa muuttuu moottorissa häviöiksi? Anna vastaus jouleina.",
+      "figure": "fy2-4/grid",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02

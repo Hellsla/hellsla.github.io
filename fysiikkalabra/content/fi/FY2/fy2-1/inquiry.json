@@ -62,11 +62,11 @@
       "prompt": "Kitkallisessa half-pipessä skeittari liukuu edestakaisin, ja jokainen nousu jää edellistä matalammaksi, kunnes hän pysähtyy pohjalle. Mikä selitys sopii energiaan parhaiten?",
       "choices": [
         {
-          "text": "Liike kuluttaa energiaa, ja energia häviää kokonaan, kun skeittari pysähtyy.",
+          "text": "Liike kuluttaa energiaa, ja kun skeittari lopulta pysähtyy, energia on hävinnyt kokonaan.",
           "feedback": "Taulukossa kokonaisenergia pysyy samana koko ajan. Mekaaninen energia pienenee, mutta lämpöenergia kasvaa saman verran, joten mitään ei häviä."
         },
         {
-          "text": "Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten mekaaninen energia pienenee mutta kokonaisenergia pysyy samana.",
+          "text": "Kitka muuttaa mekaanista energiaa lämpöenergiaksi, ja kokonaisenergia pysyy samana.",
           "feedback": "Mallin arvot tukevat tätä: kuvaajassa punainen lämpöenergia kasvaa juuri sen verran kuin sininen ja oranssi yhdessä pienenevät, ja yläreuna pysyy vaakasuorana.",
           "correct": true
         },
@@ -75,7 +75,7 @@
           "feedback": "Energiaa on muissakin muodoissa kuin liike-energiana. Pysähtyneessä skeittarissa, half-pipessä ja ilmassa on lämpöenergiaa, ja kokonaisenergia on yhtä suuri kuin alussa."
         },
         {
-          "text": "Kitka siirtää energian half-pipeen, jossa se on edelleen potentiaalienergiaa.",
+          "text": "Kitka siirtää energian half-pipeen, jossa se on edelleen tallessa potentiaalienergiana.",
           "feedback": "Half-pipe ei ole noussut korkeammalle, joten potentiaalienergia ei ole kasvanut. Energia on muuttunut lämpöenergiaksi, jota näkyy kuvaajassa punaisena."
         }
       ]
@@ -143,20 +143,20 @@
         "prompt": "Mitä taulukko osoittaa half-pipessä ilman kitkaa?",
         "choices": [
           {
-            "text": "Kun $E_\\text{p}$ pienenee, $E_\\text{k}$ kasvaa saman verran, ja kokonaisenergia pysyy samana.",
+            "text": "$E_\\text{p}$ pienenee ja $E_\\text{k}$ kasvaa yhtä paljon, joten summa pysyy samana.",
             "feedback": "Oikein. Joka rivillä summa $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$ on $981\\,\\text{J}$. Energia vain vaihtaa muotoa potentiaalienergian ja liike-energian välillä, eikä lämpöenergiaa synny.",
             "correct": true
           },
           {
-            "text": "Kokonaisenergia kasvaa, koska skeittari saa vauhtia.",
+            "text": "Kokonaisenergia kasvaa, koska skeittari saa koko ajan lisää vauhtia.",
             "feedback": "Sarake $E$ on joka rivillä sama. Vauhti kasvaa, koska potentiaalienergiaa muuttuu liike-energiaksi, ei koska energiaa tulisi lisää."
           },
           {
-            "text": "Liike-energia on aina yhtä suuri kuin potentiaalienergia.",
+            "text": "Liike-energia on joka kohdassa yhtä suuri kuin potentiaalienergia.",
             "feedback": "Sarakkeiden $E_\\text{p}$ ja $E_\\text{k}$ arvot ovat eri riveillä erilaisia. Vain niiden summa pysyy samana."
           },
           {
-            "text": "Kokonaisenergia pienenee, koska liike-energiaa syntyy.",
+            "text": "Kokonaisenergia pienenee, koska alamäessä syntyy liike-energiaa.",
             "feedback": "Liike-energia ei synny tyhjästä vaan potentiaalienergiasta. Kokonaisenergia ei pienene, vaan sarake $E$ pysyy samana."
           }
         ]
@@ -325,20 +325,20 @@
       "prompt": "Opiskelija sanoo: ”Kun auto jarruttaa ja pysähtyy, sen liike-energia häviää, koska auto ei enää liiku.” Missä on virhe?",
       "choices": [
         {
-          "text": "Liike-energia ei häviä vaan muuttuu jarruissa ja renkaissa lämpöenergiaksi, ja energia säilyy.",
-          "feedback": "Oikein. Pysähtyneellä autolla ei ole liike-energiaa, mutta jarrut ja renkaat ovat lämmenneet. Lämpöenergia on yhtä suuri kuin auton alkuperäinen liike-energia.",
+          "text": "Liike-energia ei häviä vaan muuttuu jarruissa ja renkaissa lämpöenergiaksi.",
+          "feedback": "Oikein. Pysähtyneellä autolla ei ole liike-energiaa, mutta jarrut ja renkaat ovat lämmenneet. Lämpöenergia on yhtä suuri kuin auton alkuperäinen liike-energia, joten energia säilyy.",
           "correct": true
         },
         {
-          "text": "Liike-energia muuttuu potentiaalienergiaksi, koska auto pysähtyy.",
+          "text": "Liike-energia muuttuu potentiaalienergiaksi, kun auto pysähtyy eikä enää liiku.",
           "feedback": "Auto ei ole noussut korkeammalle, joten potentiaalienergia ei ole kasvanut. Energia on muuttunut lämpöenergiaksi."
         },
         {
-          "text": "Virhettä ei ole, koska levossa olevalla kappaleella ei ole energiaa.",
+          "text": "Virhettä ei ole, koska levossa olevalla kappaleella ei ole lainkaan energiaa.",
           "feedback": "Levossa olevalla kappaleella ei ole liike-energiaa, mutta sillä on muita energialajeja, ja kokonaisenergia säilyy. Jarrutuksessa energia siirtyy lämpöenergiaksi."
         },
         {
-          "text": "Liike-energia muuttuu jarrutuksessa kemialliseksi energiaksi.",
+          "text": "Liike-energia muuttuu jarrutuksessa jarrupalojen kemialliseksi energiaksi.",
           "feedback": "Tavallisissa kitkajarruissa ei tapahdu kemiallisia reaktioita. Jarrujen kitka muuttaa liike-energian lämpöenergiaksi."
         }
       ]
@@ -406,10 +406,32 @@
       ]
     },
     {
+      "id": "check-kitka",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kitka ja kokonaisenergia",
+      "prompt": "Skeittari laskee kitkallisessa half-pipessä reunalta pohjalle. Skeittari, half-pipe ja ympäröivä ilma ovat yhdessä eristetty systeemi. Mikä pysyy samana koko laskun ajan?",
+      "choices": [
+        {
+          "text": "Kokonaisenergia $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$, kun kaikki energialajit lasketaan mukaan.",
+          "correct": true,
+          "feedback": "Oikein. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi, joka lämmittää pyöriä, rataa ja ilmaa. Energiaa ei synny eikä katoa, joten kolmen energian summa pysyy samana, vaikka jokainen niistä muuttuu."
+        },
+        {
+          "text": "Mekaaninen energia $E_\\text{p} + E_\\text{k}$, koska potentiaalienergia muuttuu liike-energiaksi.",
+          "feedback": "Ilman kitkaa näin olisi. Kitkallisessa radassa osa mekaanisesta energiasta muuttuu lämpöenergiaksi, joten $E_\\text{p} + E_\\text{k}$ pienenee laskun aikana. Samana pysyy vasta summa, johon lämpöenergia on laskettu mukaan."
+        },
+        {
+          "text": "Ei mikään energia, koska kitka kuluttaa osan energiasta loppuun matkalla.",
+          "feedback": "Kitka ei hävitä energiaa vaan muuttaa mekaanista energiaa lämpöenergiaksi. Lämpöenergia on yhä olemassa radassa, pyörissä ja ilmassa, joten kokonaisenergia $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$ pysyy samana."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskeminen",
+      "title": "3. Laskeminen",
       "prompt": "Hehkulamppu ottaa sähköenergiaa $2{,}5\\,\\text{kJ}$ ja muuttaa siitä näkyväksi valoksi $0{,}12\\,\\text{kJ}$. Loppu muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi? Vastaa jouleina.",
       "answer": 2380,
       "unit": "J",
@@ -439,7 +461,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Selitä omin sanoin, miksi pomppiva pallo pysähtyy lopulta, vaikka energia ei katoa. Kerro, mitä energialajeja tapahtumassa on ja mitä energian säilymislaki sanoo.",
       "criteria": [
         "Sanon, että pallon alussa oleva potentiaalienergia muuttuu liike-energiaksi ja pompuissa osa muuttuu lämpöenergiaksi.",
@@ -453,7 +475,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

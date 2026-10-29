@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 13f8547519c56a93
+CONTENT-HASH: c9d01e7a4a722af4
+
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- (none new; the Finnish report's polish items apply equally)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- The translation follows the reviewed Finnish structure: stages, hints, mistakes, criteria and numbering (the new check is 2, calculation 3, explain 4).
+- Natural textbook English; prompts do not give the answer away; same cognitive demand as the Finnish.
+- Choice options are of similar length in check-kitka and the rebalanced items; the correct one is not the longest (check_choices.py clean for fy2-1).
+- Feedback per option is complete and explains why a distractor is wrong.
+- Layout at 360 and 1280 px is OK.

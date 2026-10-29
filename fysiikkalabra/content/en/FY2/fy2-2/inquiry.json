@@ -28,16 +28,16 @@
       "prompt": "A car brakes and stops. Which description of its kinetic energy is correct (chapter *Forms of energy and conservation of energy*)?",
       "choices": [
         {
-          "text": "The kinetic energy disappears, because the car is no longer moving.",
+          "text": "The kinetic energy disappears, because the car is no longer moving and so has no energy.",
           "feedback": "Energy does not disappear. When the car stops, its kinetic energy turns into other energy, and there is as much energy in total as before braking."
         },
         {
-          "text": "The kinetic energy turns mostly into thermal energy in the brakes, tyres and road, and there is as much energy in total as before.",
-          "feedback": "Correct. Energy is conserved and changes form: kinetic energy becomes thermal energy, which is transferred as heat to the surroundings and spreads out. Today we examine such chains and calculate energy in joules.",
+          "text": "The kinetic energy turns mostly into thermal energy, and the total amount of energy is conserved.",
+          "feedback": "Correct. Energy is conserved and changes form: in the brakes, tyres and road, kinetic energy becomes thermal energy, which is transferred as heat to the surroundings and spreads out. Today we examine such chains and calculate energy in joules.",
           "correct": true
         },
         {
-          "text": "The kinetic energy is transferred to the road and stays there as kinetic energy.",
+          "text": "The kinetic energy is transferred to the road in braking and stays there as kinetic energy.",
           "feedback": "The road does not start moving, so the energy does not stay there as kinetic energy. It turns into thermal energy, which warms the brakes, tyres and road."
         }
       ]
@@ -237,7 +237,7 @@
       "prompt": "A student converts the energy $2.5\\,\\text{kJ}$ to joules and writes $2.5\\,\\text{kJ} = 2.5 : 1000\\,\\text{J} = 0.0025\\,\\text{J}$. Where is the error?",
       "choices": [
         {
-          "text": "Kilo means a thousand, so the number should be multiplied by a thousand: $2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
+          "text": "A kilojoule is a thousand joules, so the correct one is $2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
           "feedback": "Correct. The prefix kilo means a thousand, so a kilojoule contains a thousand joules, and in joules the number is a thousand times larger. You can check the reasonableness from the order of magnitude: the joule is a smaller unit than the kilojoule, so the number must grow.",
           "correct": true
         },
@@ -246,7 +246,7 @@
           "feedback": "On the contrary: the joule is a smaller unit than the kilojoule, so the same energy needs more joules, that is, a larger number."
         },
         {
-          "text": "The result should have been divided by a hundred as well, because kilo is a hundred.",
+          "text": "The result should have been divided by a hundred as well, because the prefix kilo means a hundred.",
           "feedback": "Kilo is a thousand, not a hundred. The conversion is done by replacing the prefix with its value, $\\text{kJ} = 1000\\,\\text{J}$."
         }
       ]
@@ -291,17 +291,43 @@
       "prompt": "A battery has been charged with $54\\,\\text{kJ}$. A video is watched on a phone, and the battery runs flat. Which description of the energy of the battery is correct?",
       "choices": [
         {
-          "text": "The energy of the battery has run out, so it no longer exists.",
+          "text": "The energy of the battery has run out while watching the video, so it no longer exists.",
           "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and thermal energy, and in the end everything has spread as heat into the surroundings."
         },
         {
-          "text": "The $54\\,\\text{kJ}$ of the battery has turned into other forms in the phone, finally almost entirely into thermal energy, and there is as much energy in total as at the start.",
+          "text": "The $54\\,\\text{kJ}$ of the battery has turned almost entirely into thermal energy, and no energy has been lost.",
           "feedback": "Correct. Chemical energy turns into electricity, light, sound and thermal energy, and in the end everything ends up as heat in the surroundings. Energy is conserved.",
           "correct": true
         },
         {
-          "text": "The energy of the battery has increased, because the phone gets warm.",
+          "text": "The energy of the battery has increased, because the phone gets warm while the video is watched.",
           "feedback": "The phone getting warm is the energy of the battery turning into thermal energy. Thermal energy is not new energy; the chemical energy of the battery decreases by exactly as much as the thermal energy increases."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Prefixes and size",
+      "prompt": "The packaging of a chocolate bar says the energy is $2.2\\,\\text{MJ}$, and the energy of an apple is $300\\,\\text{kJ}$. Which contains more energy, and how many times as much?",
+      "choices": [
+        {
+          "text": "The chocolate bar, about $7$ times as much as the apple.",
+          "correct": true,
+          "feedback": "Correct. The numbers can be compared only in the same unit: $2.2\\,\\text{MJ} = 2.2 \\cdot 1000\\,\\text{kJ} = 2200\\,\\text{kJ}$, and $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7.3$."
+        },
+        {
+          "text": "The apple, because its number $300$ is greater than $2.2$.",
+          "feedback": "The numbers are not in the same unit: a megajoule is a thousand kilojoules. When $2.2\\,\\text{MJ}$ is converted to kilojoules, you get $2200\\,\\text{kJ}$, which is more than the apple's $300\\,\\text{kJ}$."
+        },
+        {
+          "text": "The chocolate bar, about $1000$ times as much as the apple.",
+          "feedback": "A thousand is the ratio of the prefixes mega and kilo, but the numbers $2.2$ and $300$ must be taken into account too. In the same unit, $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7.3$."
+        },
+        {
+          "text": "The chocolate bar, about $7000$ times as much as the apple.",
+          "feedback": "You converted megajoules to kilojoules with the factor one million. A megajoule is a million joules but only a thousand kilojoules: $2.2\\,\\text{MJ} = 2200\\,\\text{kJ}$, and $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7.3$."
         }
       ]
     },
@@ -309,7 +335,7 @@
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Comparison",
+      "title": "3. Comparison",
       "prompt": "A lightning strike releases on average about $1.0\\,\\text{GJ}$ of energy, and the energy of a day's food is $10\\,\\text{MJ}$. How many days' food does the energy of a lightning strike correspond to?",
       "answer": 100,
       "unit": "kpl",
@@ -335,7 +361,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain and transfer",
+      "title": "4. Explain and transfer",
       "optional": true,
       "prompt": "Explain why we say that energy cannot be used up, even though a petrol tank becomes empty. Use driving a car as an example and use the words energy chain and thermal energy.",
       "criteria": [
@@ -344,13 +370,13 @@
         "I say that in the end a large part is thermal energy, which is transferred as heat to the surroundings and spreads out.",
         "I explain why the thermal energy that has spread out can no longer easily be put to use."
       ],
-      "model": "In the engine of a car, the chemical energy of petrol turns into motion and thermal energy. When driving, air resistance, the tyres and the brakes turn the energy of the motion into thermal energy, which spreads into the air and the road. So no energy disappears: there is the same amount of energy at the start and at the end of the chain. The tank becomes empty because the energy has changed into a form that can no longer be collected back and used. That is why new energy is needed all the time, for example from fuel or from the Sun."
+      "model": "In the engine of a car, the chemical energy of petrol turns into motion and thermal energy. When driving, air resistance, the tyres and the brakes turn the energy of the motion into thermal energy, which spreads into the air and the road. So no energy disappears: there is the same amount of energy at the start and at the end of the chain. The tank becomes empty because the energy has changed into a form that can no longer easily be collected back for use. That is why new energy is needed all the time, for example from fuel or from the Sun."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first on your own and open the answer only after that."
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
     }
   ]
 }

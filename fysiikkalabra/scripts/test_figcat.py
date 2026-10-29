@@ -50,7 +50,7 @@ expect("show prints the entry and only the code that draws it", "def scatter_poi
 EX = T / "content/fi/FY1/fy1-4/exercises/exercises.json"; ORIG = EX.read_text()
 code, out = run(S / "build.py", "fy1-4")
 html = (T / "preview/fy1-4.html").read_text()
-expect("a referenced figure renders inside its exercise", re.search(r'<li id="fy1-4-L2-02">.*?data-fig="fy1-4/scatter-points".*?</li>', html, re.S) is not None, out)
+expect("a referenced figure renders inside its exercise", re.search(r'<li id="fy1-4-L2-02"[^>]*>.*?data-fig="fy1-4/scatter-points".*?</li>', html, re.S) is not None, out)
 expect("the rendered figure has its accessible description", 'aria-label="Kuvaaja mittakaavassa: kärryn' in html)
 
 

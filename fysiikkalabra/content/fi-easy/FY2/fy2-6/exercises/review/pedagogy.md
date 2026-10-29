@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 26868d6782bf8b51
+CONTENT-HASH: c3fa2fcc9a2e0233
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- solutions.md Periaate of L1-01, L1-04, L2-03, L3-01, L3-02, L3-03 and Muunnokset of L2-04 — long dense Finnish sentences → short sentences, no steps dropped
+(none)
 
 ## Polish
-- Level 1 task texts are near-identical to Finnish; they are already short.
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Task wording, Selkeä suomi in all solution steps, Finnish step labels kept.
+Translation delta review against the reviewed Finnish: L1-04 figure-reading exercise (text, figure fy2-6/fi-bars, answer 26.4 %, unit and tolerance unchanged), solutions.md L1-04 (Annettu, Kuvaajan lukeminen step, 20.2 + 0.9 = 21.1 TWh of 79.9 TWh = 0.2641, three significant figures). Numbers, units and LaTeX preserved; the task does not give the readings away; figure is labelled in the language. Selkeä suomi keeps short sentences, same physics terms and the same cognitive demand. Pedagogy: demand and scaffolding match the Finnish; the check is answerable from the lesson.

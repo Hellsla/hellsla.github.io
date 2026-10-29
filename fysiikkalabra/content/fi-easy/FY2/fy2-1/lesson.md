@@ -1,6 +1,6 @@
 # Energialajit ja energian säilyminen
 
-> **Miksi** pomppiva pallo pysähtyy lopulta lattialle, vaikka energia ei koskaan katoa?
+> **Miksi** pomppiva pallo pysähtyy lopulta lattialle?
 
 ## Ydinajatus
 **Energia** on suure. Sen avulla kerrotaan, mitä systeemissä (tarkasteltavassa kokonaisuudessa) tapahtuu, kun jokin liikkuu, lämpenee, loistaa tai muuttaa muotoaan. Energian tunnus on $E$ ja yksikkö on **joule**, $\text{J}$. Joule on pieni yksikkö. Siksi energia ilmoitetaan usein myös kilojouleina. Etuliite kilo tarkoittaa tuhatta, joten $1\,\text{kJ} = 1000\,\text{J}$.

@@ -28,7 +28,7 @@
       "prompt": "Pumppu ottaa sähköenergiaa $8{,}0\\,\\text{kWh}$. Siitä $6{,}0\\,\\text{kWh}$ muuttuu hyödylliseksi energiaksi. Kuinka suuri on pumpun hyötysuhde?",
       "choices": [
         {
-          "text": "$0{,}75$, koska hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla: $6{,}0\\,\\text{kWh} : 8{,}0\\,\\text{kWh}$.",
+          "text": "$0{,}75$, koska hyödyksi saatu energia jaetaan käytetyllä: $6{,}0 : 8{,}0$.",
           "correct": true,
           "feedback": "Oikein. Hyötysuhde on hyödyksi saadun energian osuus käytetystä energiasta, $\\eta = E_\\text{hyöty} : E_\\text{käytetty} = 6{,}0 : 8{,}0 = 0{,}75$ eli $75\\,\\%$ (luku *Hyötysuhde*). Siirron hyötysuhde lasketaan tänään samalla tavalla: perille tuleva energia jaetaan lähtevällä."
         },
@@ -37,7 +37,7 @@
           "feedback": "Hyötysuhde ei voi olla yli $1$, koska hyötyä ei voi saada enemmän kuin energiaa käytetään. Jakajana on aina käytetty energia, ei hyöty."
         },
         {
-          "text": "$0{,}25$, koska hyötysuhde on häviävän energian osuus.",
+          "text": "$0{,}25$, koska hyötysuhde on se osuus energiasta, joka häviää.",
           "feedback": "$0{,}25$ on häviön osuus, $2{,}0 : 8{,}0$. Hyötysuhde kertoo hyödyksi saadun osuuden, joten se on $1 - 0{,}25 = 0{,}75$."
         },
         {
@@ -146,12 +146,12 @@
         "prompt": "Mikä päätelmä taulukosta on oikea?",
         "choices": [
           {
-            "text": "Energiana häviöt ovat suunnilleen yhtä suuret, mutta kaukolämmössä häviö on yli kaksi kertaa suurempi osuus lähtevästä energiasta.",
+            "text": "Energiana häviöt ovat lähes samat, mutta kaukolämmössä osuus on yli kaksinkertainen.",
             "correct": true,
             "feedback": "Oikein. Molemmissa verkoissa häviää noin $3\\,\\text{TWh}$. Sähköverkkoon syötetään kuitenkin yli kaksi kertaa niin paljon energiaa kuin kaukolämpöverkkoon. Siksi sähkön osuus on $4\\,\\%$ ja kaukolämmön $9{,}2\\,\\%$. Sähköverkon häviö on merkittävä, vaikka osuus on pieni."
           },
           {
-            "text": "Sähköverkon häviö on pienempi, koska sen prosentti on pienempi.",
+            "text": "Sähköverkon häviö on myös energiana pienempi, koska sen häviöprosentti on pienempi.",
             "feedback": "Prosentti kertoo osuuden, ei energian määrää. Sähköverkkoon syötetään paljon enemmän energiaa. Siksi pienikin osuus on energiana noin $3\\,\\text{TWh}$, yhtä paljon kuin kaukolämmössä."
           },
           {
@@ -159,7 +159,7 @@
             "feedback": "Osuus lasketaan jakamalla häviö lähtevällä energialla: $3{,}3 : 36{,}0 = 9{,}2\\,\\%$. Pienempi lähtevä energia tekee osuudesta suuremman, ei pienemmän."
           },
           {
-            "text": "Häviöprosentti on molemmissa sama, koska molemmissa häviää noin $3\\,\\text{TWh}$.",
+            "text": "Häviöprosentti on molemmissa verkoissa sama, koska kummassakin häviää noin $3\\,\\text{TWh}$.",
             "feedback": "Sama häviö energiana ei tarkoita samaa osuutta. Osuus riippuu siitä, kuinka paljon energiaa verkkoon syötetään. Sähkössä $3 : 83 \\approx 4\\,\\%$ ja kaukolämmössä $3{,}3 : 36{,}0 = 9{,}2\\,\\%$."
           }
         ]
@@ -248,16 +248,16 @@
       "prompt": "Sähköverkkoon syötetään $500\\,\\text{MWh}$ ja häviö on $4\\,\\%$ lähtevästä energiasta. Opiskelija laskee: perille tulee $500\\,\\text{MWh} - 4\\,\\text{MWh} = 496\\,\\text{MWh}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Prosentti on vähennetty megawattitunteina. Oikein: $4\\,\\%$ on $0{,}04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, ja perille tulee $480\\,\\text{MWh}$.",
+          "text": "Prosentti on vähennetty megawattitunteina, vaikka häviö $4\\,\\%$ on $20\\,\\text{MWh}$.",
           "correct": true,
           "feedback": "Oikein. Häviö $4\\,\\%$ tarkoittaa neljää sadasosaa lähtevästä energiasta, $4 : 100 = 0{,}04$. Häviö on $0{,}04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, ja perille tulee $500\\,\\text{MWh} - 20\\,\\text{MWh} = 480\\,\\text{MWh}$. Arvion olisi voinut tehdä näin: kun $1\\,\\%$ on $5\\,\\text{MWh}$, neljä prosenttia on $20\\,\\text{MWh}$."
         },
         {
-          "text": "Häviö pitää laskea perille tulevasta energiasta eikä lähtevästä.",
+          "text": "Häviö pitää laskea perille tulevasta energiasta eikä verkkoon lähtevästä energiasta.",
           "feedback": "Häviöprosentti lasketaan lähtevästä energiasta. Se kertoo, kuinka suuri osa verkkoon syötetystä energiasta hävisi. Perille tuleva energia ei ole tiedossa ennen laskua."
         },
         {
-          "text": "Energia ei vähene lainkaan, koska energia ei katoa.",
+          "text": "Energia ei vähene matkalla lainkaan, koska energia ei koskaan katoa.",
           "feedback": "Energia ei katoa, mutta osa siitä muuttuu lämmöksi ympäristöön. Käyttäjälle perille tuleva energia on lähtevää pienempi, ja erotus on häviö."
         },
         {
@@ -325,10 +325,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Minne häviö menee?",
+      "prompt": "Sähköverkossa häviää $4\\,\\%$ verkkoon syötetystä sähköenergiasta. Tämä osa ei tule käyttäjille asti. Mitä tälle energialle tapahtuu?",
+      "choices": [
+        {
+          "text": "Se muuttuu matkalla lämmöksi. Lämpö siirtyy ympäröivään ilmaan.",
+          "correct": true,
+          "feedback": "Oikein. Sähkövirta lämmittää johtimia, ja lämpö siirtyy ympäristöön. Energia ei katoa: syötetty energia on perille tulevan energian ja ympäristöön siirtyneen lämmön summa."
+        },
+        {
+          "text": "Se katoaa matkalla, koska sitä ei saada perille asti.",
+          "feedback": "Energia ei katoa. Häviö tarkoittaa, että osa energiasta muuttuu matkalla lämmöksi ja siirtyy ympäristöön. Siksi sitä ei voi käyttää pistorasiassa. Perille tuleva energia ja lämpö ovat yhteensä yhtä suuret kuin syötetty energia."
+        },
+        {
+          "text": "Se jää johtimiin varastoon ja palaa verkkoon myöhemmin.",
+          "feedback": "Johtimet eivät varastoi sähköenergiaa. Häviöksi laskettu energia muuttuu johtimissa lämmöksi. Lämpö siirtyy ympäröivään ilmaan, eikä sitä saada takaisin sähköksi."
+        },
+        {
+          "text": "Se palaa voimalaitokselle käyttämättä jääneenä sähkönä.",
+          "feedback": "Häviö ei ole käyttämättä jäänyttä sähköä, joka palaisi voimalaitokselle. Häviö syntyy, kun virta kulkee johtimissa ja lämmittää niitä. Tämä lämpö siirtyy ympäristöön."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskutehtävä",
+      "title": "3. Laskutehtävä",
       "prompt": "Vanhassa kaukolämpöverkossa asiakkaille tulee $375\\,\\text{MWh}$ lämpöä viikossa (esimerkkitilanne). Verkon hyötysuhde on $75\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon? Vastaa megawattitunteina.",
       "answer": 500,
       "unit": "MWh",
@@ -354,7 +380,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja perustele",
+      "title": "4. Selitä ja perustele",
       "optional": true,
       "prompt": "Tuulivoimaa syntyy yöllä, kun sähköä ei tarvita paljon. Selitä, miten energiaa voidaan siirtää ajassa. Selitä myös, miksi varastoinnissakaan kaikki energia ei tule takaisin.",
       "criteria": [
@@ -368,7 +394,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+      "text": "Lopuksi on yksi nopea kysymys. Vastaa ensin itse. Avaa vastaus vasta sitten."
     }
   ]
 }

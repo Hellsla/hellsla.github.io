@@ -109,11 +109,12 @@
 **Järkevyys:** Hyötyteho on vain $240\,\text{W}$, joten $0{,}50\,\text{MJ}$ vie aikaa yli puoli tuntia: $2083\,\text{s} : 60 = 35\,\text{min}$. Jos hyötysuhde olisi $100\,\%$, aikaa kuluisi $500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}$, ja viisinkertainen aika vastaa hyötysuhdetta $20\,\%$.
 
 ## fy2-4-L3-03
-**Annettu:** energiavirtakuviossa tulonuolen paksuus $6{,}0\,\text{cm}$ vastaa energiaa $E_\text{o} = 240\,\text{J}$; hyötyenergian nuolen paksuus on $1{,}5\,\text{cm}$
+**Annettu:** kuvasta moottoriin tuleva sähköenergia $E_\text{o} = 240\,\text{J}$ sekä nuolten paksuudet ruutuina: tuleva nuoli $d_\text{o} = 8$ ruutua, hyötyenergian nuoli $d_\text{a} = 2$ ruutua ja häviöiden nuoli $d_\text{h} = 6$ ruutua
 **Kysytty:** häviöiksi muuttuva energia $E_\text{h}$ jouleina
-**Periaate:** Mittakaavaan piirretyssä kuviossa nuolen paksuus on verrannollinen energiaan, joten hyötysuhde on hyötynuolen paksuuden ja tulonuolen paksuuden suhde. Häviöt saadaan energian säilymisestä: $E_\text{h} = E_\text{o} - E_\text{a}$.
-**Kaava:** $\eta = \dfrac{d_\text{a}}{d_\text{o}}$ (nuolen paksuus $d$), $E_\text{a} = \eta \cdot E_\text{o}$ ja $E_\text{h} = E_\text{o} - E_\text{a}$
-**Muunnokset:** Ei tarvita: paksuudet ovat samassa yksikössä (cm), joten ne supistuvat.
-**Sijoitus:** $\eta = \dfrac{1{,}5\,\text{cm}}{6{,}0\,\text{cm}} = 0{,}25$, joten $E_\text{a} = 0{,}25 \cdot 240\,\text{J} = 60\,\text{J}$ ja $E_\text{h} = 240\,\text{J} - 60\,\text{J} = 180\,\text{J}$
-**Vastaus:** $180\,\text{J}$ eli $1{,}8 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten nuolten paksuuksissa.
-**Järkevyys:** Hyötynuoli on neljäsosa tulonuolesta, joten häviönuolen on oltava kolme neljäsosaa eli $4{,}5\,\text{cm}$ paksu: $0{,}75 \cdot 240\,\text{J} = 180\,\text{J}$. Hyöty- ja häviönuolen paksuudet yhteensä $1{,}5\,\text{cm} + 4{,}5\,\text{cm} = 6{,}0\,\text{cm}$ ovat tulonuolen paksuus.
+**Periaate:** Mittakaavaan piirretyssä energiavirtakuviossa nuolen paksuus on verrannollinen energiaan. Yksi ruutu vastaa siis aina samaa energiaa, ja tulevan nuolen paksuus ja energia kertovat, kuinka paljon. Energia säilyy, joten lähtevien nuolten paksuudet ovat yhteensä tulevan nuolen paksuus.
+**Kuvaajan lukeminen:** Tuleva nuoli ulottuu ylhäältä alas kahdeksan ruudun yli. Vihreä hyötyenergian nuoli on oikeassa reunassa kahden ruudun paksuinen ja oranssi häviöiden nuoli kuuden ruudun paksuinen; paksuus luetaan nuolen suorasta osasta ennen kärkeä. Tarkistus: $2 + 6 = 8$ ruutua.
+**Kaava:** $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, joten $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
+**Muunnokset:** Ei tarvita: paksuudet ovat samassa yksikössä (ruutuina), joten ne supistuvat, ja energia on jouleina.
+**Sijoitus:** $E_\text{h} = \dfrac{6}{8} \cdot 240\,\text{J} = 0{,}75 \cdot 240\,\text{J} = 180\,\text{J}$
+**Vastaus:** $180\,\text{J}$ eli $1{,}8 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tulevassa energiassa $240\,\text{J}$.
+**Järkevyys:** Yksi ruutu vastaa energiaa $240\,\text{J} : 8 = 30\,\text{J}$, joten hyötyenergia on $2 \cdot 30\,\text{J} = 60\,\text{J}$ ja häviöt $6 \cdot 30\,\text{J} = 180\,\text{J}$; yhteensä $240\,\text{J}$, kuten energian säilyminen vaatii. Hyötysuhde on $60\,\text{J} : 240\,\text{J} = 25\,\%$, mikä on mahdollinen esimerkiksi pienelle lelun moottorille.

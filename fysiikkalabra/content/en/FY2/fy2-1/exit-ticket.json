@@ -6,9 +6,5 @@
   {
     "q": "On an electricity bill you pay for the \"used\" electrical energy. Why can energy still not be used up?",
     "a": "Energy does not disappear but changes into another form: a device changes electrical energy into, for example, light, motion and thermal energy. The bill is for the fact that easily usable electrical energy is changed into other forms, finally into thermal energy that spreads into the surroundings."
-  },
-  {
-    "q": "A skateboarder slides from the edge to the bottom of a half-pipe with friction. Which energies change and how, and what stays the same?",
-    "a": "The potential energy decreases and the kinetic energy increases. Friction changes part of the mechanical energy into thermal energy, so $E_\\text{p} + E_\\text{k}$ decreases and $E_\\text{thermal}$ increases. The total energy $E_\\text{p} + E_\\text{k} + E_\\text{thermal}$ stays the same."
   }
 ]

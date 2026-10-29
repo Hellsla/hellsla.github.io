@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ec9d70e550c871ae
+CONTENT-HASH: 99fba7d73147c1cf
 
 ## Blocking
-- none
+- none (the banner at lesson.md:3 is now the neutral question "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the answer is no longer disclosed before the hook)
 
 ## Polish
-- none
+- inquiry.json (learn, 3rd bullet) — "miksi energian kuluminen on muuttumista eikä häviämistä" names the conclusion on the first screen — fix: "selittämään, mihin energia menee, kun liike pysähtyy."
+- inquiry.json siirto prompt — "Loppu energia muuttuu lämpöenergiaksi." — "Loput energiasta muuttuu lämpöenergiaksi."
+- inquiry.json exp-1 — the table has no row at the bottom (t = 1,0 s, E_p 63 J), though pred-1 asks about the bottom — say "lähellä pohjaa" in the pred-1 feedback or add "pohjalla" to the intro.
+- lesson.md:116 — radiant and nuclear energy have no task in the investigation; check-1 covers nuclear only — acceptable for the slot, consider one exercise on radiant energy (L1-02 does).
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+- Hook, 2 predictions, 2 experiments with locked variables, data task, explain and reflect form one lesson's workload; each experiment can refute its prediction (table sums, mechanical energy falling).
+- Example: one step per stage, kJ to J conversion shown, answer 120 J consistent (840 − 720); distinct from the siirto and exercises.
+- Figures 1–3 legible at 390 px; the sailyminen figure sums to 800 J at each moment and its description matches.
+- Sim at 390 px: controls, readout and the colour key (blue, orange, hatched red) readable; locked controls shown as "(vakio)".
+- Checks 1–4 and the exit ticket test the core idea; distractors are real misconceptions; feedback repairs them.
+- Finnish and glossary terms correct; 1280 px captures use the wide layout without clipping.
+- Rebalance (01da3ae6): option texts of pred-2, exp-1 and virhe are now similar in length (correct not the longest); distractors remain real misconceptions, feedback of the correct options carries the shortened reasoning and still teaches; nothing gives the answer away.

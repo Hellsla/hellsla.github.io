@@ -14,7 +14,7 @@
  "GJ": "GJ",
  "TJ": "TJ",
  "jokainen väli on 10-kertainen": "jokainen väli on 10-kertainen",
- "omena": "omena",
+ "omena metrin ylös": "omena metrin ylös",
  "tulitikku": "tulitikku",
  "päivän ruoka": "päivän ruoka",
  "bensiinitankki": "bensiinitankki",
@@ -22,5 +22,9 @@
  "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.": "Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta on 800 kJ. Lihakset muuttavat siitä liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan. Haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys.",
  "liike: ": "liike: ",
  "lämpö: ": "lämpö: ",
- "nuolen leveys kuvaa energian määrää": "nuolen leveys kuvaa energian määrää"
+ "nuolen leveys kuvaa energian määrää": "nuolen leveys kuvaa energian määrää",
+ "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin. Asteikolla on merkitty 1 J, 1 kJ, 1 MJ, 1 GJ ja 1 TJ, ja jokainen pieni väli on kymmenkertainen. Kolme pistettä on merkitty suuruusluokan kohdalle: AA-paristo on yhden pienen välin verran 1 kJ:n oikealla puolella, kupillisen teevettä kiehauttaminen (teeveden kiehautus) kaksi pientä väliä 1 kJ:n oikealla puolella ja salama kohdassa 1 GJ.": "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin. Asteikolla on merkitty 1 J, 1 kJ, 1 MJ, 1 GJ ja 1 TJ. Jokainen pieni väli on kymmenkertainen. Kolme pistettä on merkitty suuruusluokan kohdalle. AA-paristo on yhden pienen välin verran 1 kJ:n oikealla puolella. Teeveden kiehautus on kaksi pientä väliä 1 kJ:n oikealla puolella. Salama on kohdassa 1 GJ.",
+ "AA-paristo": "AA-paristo",
+ "teeveden kiehautus": "teeveden kiehautus",
+ "salama": "salama"
 }

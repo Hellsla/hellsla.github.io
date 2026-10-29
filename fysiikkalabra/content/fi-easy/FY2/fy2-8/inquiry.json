@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Ennen teollistumista ilmakehässä oli hiilidioksidia noin $280\\,\\text{ppm}$. Se tarkoittaa $280$ molekyyliä miljoonaa ilmakehän molekyyliä kohti. Nyt pitoisuus on noin $420\\,\\text{ppm}$ (NOAA:n mittaukset, 2023). Nousun syynä on suurelta osin se, että fossiilisia polttoaineita poltetaan sähkön, lämmön ja liikenteen tarpeisiin. Hiilidioksidia on silti alle puoli promillea ilmakehästä.",
+      "text": "Ennen teollistumista ilmakehässä oli hiilidioksidia noin $280\\,\\text{ppm}$. Se tarkoittaa $280$ molekyyliä miljoonaa ilmakehän molekyyliä kohti. Vuonna 2024 pitoisuus oli maailmanlaajuisesti keskimäärin noin $424\\,\\text{ppm}$ (WMO:n kasvihuonekaasutiedote 2025). Nousun syynä on suurelta osin se, että fossiilisia polttoaineita poltetaan sähkön, lämmön ja liikenteen tarpeisiin. Hiilidioksidia on silti alle puoli promillea ilmakehästä.",
       "question": "Miten näin pieni osa ilmakehästä voi muuttaa koko maapallon lämpötilaa? Miksi sillä on väliä, millä tavalla sähkö tuotetaan?"
     },
     {
@@ -109,7 +109,7 @@
       "type": "sim",
       "text": "Valitse kasvihuonekaasujen määrä ja seuraa säteilyä ilmakehässä ja lämpömittaria.",
       "howto": "Valitse valikosta kasvihuonekaasujen määrä. Keltaiset lyhyet aallot ovat auringon säteilyä. Punaiset pitkät aallot ovat maanpinnan lämpösäteilyä. Kun kasvihuonekaasumolekyyli imee lämpösäteilyä, se hehkuu ja lähettää säteilyn eteenpäin satunnaiseen suuntaan, ylös tai alas. Lämpömittari näyttää maanpinnan keskilämpötilan. Lukemissa on arvo, johon lämpötila asettuu. Selitteessä ovat ilmakehän molekyylit. Typpi $\\text{N}_2$ ja happi $\\text{O}_2$ eivät juuri ime lämpösäteilyä. Hiilidioksidi $\\text{CO}_2$, vesihöyry $\\text{H}_2\\text{O}$ ja metaani $\\text{CH}_4$ imevät. Nopeus muuttaa kuvan ja lämpenemisen tahtia.",
-      "model": "Simulaatio on havainnollistus, ei laskumalli. Se ei laske lämpötilaa. Lämpötilat ovat pyöristettyjä lähdearvoja: ilman kasvihuonekaasuja noin $-18\\,{}^\\circ\\text{C}$, esiteollisella ajalla ($\\text{CO}_2$-pitoisuus $280\\,\\text{ppm}$) noin $+14\\,{}^\\circ\\text{C}$ ja nykyisin ($420\\,\\text{ppm}$) mitattuna noin $+15\\,{}^\\circ\\text{C}$. Vuosina 2011–2020 maapallo oli noin $1{,}1\\,{}^\\circ\\text{C}$ lämpimämpi kuin 1850–1900 (IPCC AR6, 2021). Nykyinen lämpötila ei ole vielä asettunut. Samalla pitoisuudella maapallo lämpenee yhä. Ilmastoherkkyyden paras arvio (alla) antaa asettuneeksi lämpötilaksi noin $+16\\,{}^\\circ\\text{C}$. Simulaatio alkaa nykyhetkestä, $+15\\,{}^\\circ\\text{C}$:sta. Kun hiilidioksidia on kaksinkertaisesti esiteolliseen verrattuna ($560\\,\\text{ppm}$), lämpenemisen paras arvio on noin $3\\,{}^\\circ\\text{C}$, todennäköisesti $2{,}5\\text{–}4\\,{}^\\circ\\text{C}$ (IPCC AR6). Se on noin $+17\\,{}^\\circ\\text{C}$, kun lämpötila on ehtinyt asettua. Todellisuudessa asettuminen kestää vuosikymmeniä tai vuosisatoja. Säteilyn aallot eivät ole mittakaavassa. Todellinen ilmakehä imee suurimman osan maanpinnan lämpösäteilystä jo nykyisellä määrällä. Kuvassa tasojen eroa on korostettu. Kuvassa ei näy pilvien ja jään heijastamaa auringon säteilyä. Siinä ei näy myöskään vesihöyryn määrän muutosta lämpötilan mukana.",
+      "model": "Simulaatio on havainnollistus, ei laskumalli. Se ei laske lämpötilaa. Lämpötilat ovat pyöristettyjä lähdearvoja: ilman kasvihuonekaasuja noin $-18\\,{}^\\circ\\text{C}$, esiteollisella ajalla ($\\text{CO}_2$-pitoisuus $280\\,\\text{ppm}$) noin $+14\\,{}^\\circ\\text{C}$ ja nykyisin (simulaatiossa pyöristetty taso $420\\,\\text{ppm}$) mitattuna noin $+15\\,{}^\\circ\\text{C}$. Vuosina 2011–2020 maapallo oli noin $1{,}1\\,{}^\\circ\\text{C}$ lämpimämpi kuin 1850–1900 (IPCC AR6, 2021). Nykyinen lämpötila ei ole vielä asettunut. Samalla pitoisuudella maapallo lämpenee yhä. Ilmastoherkkyyden paras arvio (alla) antaa asettuneeksi lämpötilaksi noin $+16\\,{}^\\circ\\text{C}$. Simulaatio alkaa nykyhetkestä, $+15\\,{}^\\circ\\text{C}$:sta. Kun hiilidioksidia on kaksinkertaisesti esiteolliseen verrattuna ($560\\,\\text{ppm}$), lämpenemisen paras arvio on noin $3\\,{}^\\circ\\text{C}$, todennäköisesti $2{,}5\\text{–}4\\,{}^\\circ\\text{C}$ (IPCC AR6). Se on noin $+17\\,{}^\\circ\\text{C}$, kun lämpötila on ehtinyt asettua. Todellisuudessa asettuminen kestää vuosikymmeniä tai vuosisatoja. Säteilyn aallot eivät ole mittakaavassa. Todellinen ilmakehä imee suurimman osan maanpinnan lämpösäteilystä jo nykyisellä määrällä. Kuvassa tasojen eroa on korostettu. Kuvassa ei näy pilvien ja jään heijastamaa auringon säteilyä. Siinä ei näy myöskään vesihöyryn määrän muutosta lämpötilan mukana.",
       "calc": "Mitä lämpimämpi maanpinta on, sitä tiheämmin se lähettää kuvassa lämpösäteilyä. Lämpötila lähestyy valitun tason arvoa vähitellen. Normaalinopeudella ero puolittuu noin kahdessa sekunnissa. FY3-kurssilla käsitellään lämpösäteilyn kulkua. Siellä lämpötila myös lasketaan säteilystä. Se tehdään luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*."
     },
     {
@@ -149,7 +149,7 @@
         "prompt": "Vertaa taulukon rivejä ja simulaation kuvaa. Mikä selittää, miksi maanpinta on kasvihuonekaasujen kanssa lämpimämpi kuin ilman niitä?",
         "choices": [
           {
-            "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan siitä takaisin alas. Siksi energia pääsee avaruuteen hitaammin ja maanpinta pysyy lämpimämpänä.",
+            "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja lähettävät osan takaisin alas. Siksi energia poistuu hitaammin.",
             "correct": true,
             "feedback": "Oikein. Auringon säteily pääsee kaikilla tasoilla maanpinnalle samalla tavalla. Lämpösäteilyn kulku muuttuu: kasvihuonekaasumolekyylit imevät sitä ja lähettävät osan takaisin. Ilman kasvihuonekaasuja, myös ilman vesihöyryä, lämpötila olisi noin $-18\\,{}^\\circ\\text{C}$. Kun hiilidioksidia lisätään, lämpötila nousee, mutta vähitellen. Nykyisellä pitoisuudella maapallo on noin $+15\\,{}^\\circ\\text{C}$ ja lämpenee yhä kohti noin $+16\\,{}^\\circ\\text{C}$:ta."
           },
@@ -292,9 +292,9 @@
       "prompt": "Opiskelija laskee, kuinka paljon hiilidioksidiekvivalenttia syntyy, kun $3600\\,\\text{kWh}$ sähköä tuotetaan tuulivoimalla ($e = 12\\,\\text{g/kWh}$). Hän kirjoittaa\n\n$$\\begin{aligned} m &= E : e \\\\ &= 3600\\,\\text{kWh} : 12\\,\\text{g/kWh} \\\\ &= 300\\,\\text{kg} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Päästö on päästökerroin kertaa energia, ei energia jaettuna kertoimella. Oikein on $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0{,}001\\,\\text{kg} \\approx 43\\,\\text{kg}$.",
+          "text": "Päästö on päästökerroin kertaa energia, ei energia jaettuna kertoimella: $m = e \\cdot E \\approx 43\\,\\text{kg}$.",
           "correct": true,
-          "feedback": "Oikein. Yksikkö paljastaa virheen. Jakolasku $\\text{kWh} : \\text{g/kWh}$ ei anna massaa vaan $\\text{kWh}^2/\\text{g}$. Kertolaskussa $\\text{g/kWh} \\cdot \\text{kWh}$ kilowattitunnit supistuvat ja jäljelle jäävät grammat. Tulos $43\\,\\text{kg}$ on myös järkevä: sama sähkö kaasulla antaisi noin $41$ kertaa enemmän."
+          "feedback": "Oikein: $m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 3600\\,\\text{kWh} = 43\\,200\\,\\text{g} = 43\\,200 \\cdot 0{,}001\\,\\text{kg} \\approx 43\\,\\text{kg}$. Yksikkö paljastaa virheen. Jakolasku $\\text{kWh} : \\text{g/kWh}$ ei anna massaa vaan $\\text{kWh}^2/\\text{g}$. Kertolaskussa $\\text{g/kWh} \\cdot \\text{kWh}$ kilowattitunnit supistuvat ja jäljelle jäävät grammat. Tulos $43\\,\\text{kg}$ on myös järkevä: sama sähkö kaasulla antaisi noin $41$ kertaa enemmän."
         },
         {
           "text": "Tuulivoiman päästökerroin on nolla, joten päästö on $0\\,\\text{kg}$.",
@@ -416,10 +416,54 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Onko biomassasähkö päästötöntä?",
+      "prompt": "Voimala polttaa puuta, joka on kasvatettu energiaa varten. Mikä väite sen ilmastovaikutuksesta on oikea?",
+      "choices": [
+        {
+          "text": "Päästöjä syntyy: polton hiilidioksidi on ilmassa vuosikymmeniä, ja korjuu ja kuljetus lisäävät päästöjä.",
+          "correct": true,
+          "feedback": "Oikein. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Se vie vuosikymmeniä. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä. IPCC:n elinkaariarvion mukaan biomassasähkön päästökerroin on noin $230\\,\\text{g/kWh}$."
+        },
+        {
+          "text": "Päästöjä ei synny lainkaan, koska puu on uusiutuva polttoaine ja metsä kasvaa aina uudelleen.",
+          "feedback": "Uusiutuva ei tarkoita päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Se vie vuosikymmeniä. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä."
+        },
+        {
+          "text": "Vaikutus on täsmälleen sama kuin kivihiilellä, koska kummankin palaessa syntyy hiilidioksidia.",
+          "feedback": "Kummastakin vapautuu hiilidioksidia. Kivihiilen hiili on kuitenkin ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Puun hiili on sitoutunut vasta viime vuosikymmeninä, ja uusi kasvu sitoo sen takaisin. Elinkaaren päästökerroin on kivihiilellä noin $820\\,\\text{g/kWh}$ ja biomassalla noin $230\\,\\text{g/kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "check-c3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Perusteltu vertailu",
+      "prompt": "Kivihiilivoimalan vuosipäästö on $900\\,000\\,\\text{t}$ ja maakaasuvoimalan $100\\,000\\,\\text{t}$ hiilidioksidiekvivalenttia. Opiskelija päättelee, että maakaasu on ilmastolle parempi tuotantotapa. Mitä vertailusta vielä puuttuu?",
+      "choices": [
+        {
+          "text": "Voimaloiden vuodessa tuottama sähköenergia, jotta päästöt voi verrata kilowattituntia kohti.",
+          "correct": true,
+          "feedback": "Oikein. Suuri voimala voi tuottaa moninkertaisesti enemmän sähköä kuin pieni. Siksi kokonaispäästöt eivät yksin kerro tuotantotavasta. Tuotantotapoja verrataan päästöinä samaa tuotettua energiaa kohti eli päästökertoimilla. Silloin vuosipäästö jaetaan vuoden sähköntuotannolla."
+        },
+        {
+          "text": "Ei mitään: kun vuosipäästö on pienempi, tuotantotapa on aina ilmastolle parempi.",
+          "feedback": "Kokonaispäästö riippuu myös siitä, kuinka paljon sähköä voimala tuottaa. Ilman tuotettua energiaa ei tiedetä, kumpi tuottaa saman sähkön pienemmin päästöin. Siksi vuosipäästö jaetaan vuoden sähköntuotannolla."
+        },
+        {
+          "text": "Voimaloiden nimellistehot, koska suuritehoisemman voimalan päästöt ovat aina suuremmat.",
+          "feedback": "Nimellisteho on suurin teho, jolla voimala voi toimia. Se ei kerro vuoden aikana tuotettua energiaa. Vertailuun tarvitaan päästö samaa tuotettua energiaa kohti: vuosipäästö jaetaan vuoden sähköntuotannolla."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Matkan päästö",
+      "title": "4. Matkan päästö",
       "prompt": "Auto kuluttaa bensiiniä $6{,}0$ litraa sadalla kilometrillä. Bensiinin energiasisältö on noin $32\\,\\text{MJ}$ litraa kohti. Sen palamisen päästökerroin on noin $69\\,\\text{g/MJ}$ (IPCC:n oletusarvo). Kuinka monta kilogrammaa hiilidioksidia vapautuu $120\\,\\text{km}$:n matkalla pelkästä polttamisesta? Vastaa kilogrammoina.",
       "answer": 16,
       "unit": "kg",
@@ -445,7 +489,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "5. Selitä",
       "optional": true,
       "prompt": "Selitä, miksi luonnollinen kasvihuoneilmiö on hyödyllinen. Selitä myös, miksi sen voimistuminen on ongelma. Kerro lisäksi, miksi fossiilisten polttoaineiden polttaminen voimistaa ilmiötä.",
       "criteria": [
@@ -460,7 +504,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

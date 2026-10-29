@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1a7607268cc48d1a
+CONTENT-HASH: 7adf7b7d136869eb
 
 ## Blocking
-- none left (fixes listed under Fixed)
-
-## Fixed
-- solutions.md fy2-8-L3-02 Answer — "$50$ times the area of the solar park is needed as field area" → "the field area needed is $50$ times the area of the solar park"
-- exercises.json level3[1] — "What does land use tell about…" → "What does land use tell you about…"
+- none
 
 ## Polish
-- solutions.md fy2-8-L1-04 Formula line is long but faithful to the Finnish.
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): the step labels against lang/en.json (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness, Conclusion), and readability for 16–18-year-olds; no steps dropped.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (no Finnish change in exercises; fossil-fuel wording only in lesson/inquiry)
+- Checked (batch delta review): the figure-reading exercise keeps its demand (read the value, then m = e * E); the solution models how to read the value without giving the answer in the task text; the L3-01 conclusion keeps the argument about uncertainty and states the practical conclusion for low-emission electricity.

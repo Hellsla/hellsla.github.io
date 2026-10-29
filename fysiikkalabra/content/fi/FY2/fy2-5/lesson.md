@@ -1,6 +1,6 @@
 # Polttoaineet ja lämpöarvo E = Hm
 
-> **Miksi** kilogrammasta bensiiniä vapautuu lähes kolme kertaa enemmän energiaa kuin kilogrammasta ilmakuivaa polttopuuta, vaikka molemmat ovat vain palavaa ainetta?
+> **Miksi** kilogrammasta bensiiniä ja kilogrammasta ilmakuivaa polttopuuta vapautuu palaessa eri määrä energiaa, vaikka molemmat ovat vain palavaa ainetta?
 
 ## Ydinajatus
 Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta: ainetta, jonka kemiallista energiaa vapautetaan polttamalla. Myös ydinvoimalan uraania sanotaan polttoaineeksi, mutta ydinpolttoaine ei pala: sen energia on ydinenergiaa (luku *Energialajit ja energian säilyminen*). Kemiallinen energia on energiaa, joka on varastoituna aineen atomien ja molekyylien väliseen rakenteeseen. Kun polttoaine palaa, rakenne muuttuu ja energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä, vaan kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.

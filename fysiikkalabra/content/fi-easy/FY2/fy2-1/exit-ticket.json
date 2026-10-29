@@ -6,9 +6,5 @@
   {
     "q": "Sähkölaskussa maksetaan ”kulutetusta” sähköenergiasta. Miksi energiaa ei silti voi kuluttaa loppuun?",
     "a": "Energia ei häviä vaan muuttuu toiseen muotoon. Laite muuttaa sähköenergian esimerkiksi valoksi, liikkeeksi ja lämpöenergiaksi. Laskussa maksetaan siitä, että helposti hyödynnettävä sähköenergia muuttuu muiksi muodoiksi. Lopulta energia on lämpöenergiaa, joka leviää ympäristöön."
-  },
-  {
-    "q": "Skeittari laskee kitkallisessa half-pipessä reunalta pohjalle. Mitkä energiat muuttuvat ja miten? Mikä pysyy samana?",
-    "a": "Potentiaalienergia pienenee ja liike-energia kasvaa. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi. Siksi $E_\\text{p} + E_\\text{k}$ pienenee ja $E_\\text{lämpö}$ kasvaa. Kokonaisenergia $E_\\text{p} + E_\\text{k} + E_\\text{lämpö}$ pysyy samana."
   }
 ]

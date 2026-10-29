@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 597cddfebe1582b4
+CONTENT-HASH: 2705f20d32471ce1
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- exercises/solutions.md L1-04, L2-01, L2-03, L3-02 Principle — awkward calque "the share given by the efficiency of the energy taken" → "The efficiency tells what share of the energy (power) taken becomes useful energy/light/useful power"
+(none)
 
 ## Polish
-- (none)
+- none beyond the open polish of the Finnish reviews, which the translation follows.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): readability of task texts and solutions, exact step labels, questions ask the same thing at the same level.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked efficiency wording (lesson.md, inquiry.json feedback/prompt/goal, solutions.md Reasonableness) in the exercises against the new Finnish.
+- L3-03 figure-reading task and solution follow the Finnish: 240 J, 8/2/6 squares, E_h = 6/8 * 240 J = 180 J; units, LaTeX, number format preserved; the figure gives no answer. Step labels as in other en solutions.
+- Hash unchanged at end.

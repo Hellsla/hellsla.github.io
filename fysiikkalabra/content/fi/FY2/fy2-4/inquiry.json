@@ -89,16 +89,16 @@
       },
       "choices": [
         {
-          "text": "Hyötysuhde kaksinkertaistuu, koska lamppu antaa valoa pidempään.",
+          "text": "Hyötysuhde kaksinkertaistuu, koska lamppu antaa valoa kaksi kertaa pidempään.",
           "feedback": "Ei osu. Pidempään palava lamppu antaa enemmän valoenergiaa, mutta se myös ottaa enemmän sähköenergiaa. Tasaisella teholla molemmat energiat ovat teho kerrottuna ajalla, $E = P \\cdot t$, joten ne kaksinkertaistuvat ja niiden suhde ei muutu."
         },
         {
-          "text": "Hyötysuhde pysyy samana, koska hyötyenergia ja otettu energia kasvavat kumpikin kaksinkertaisiksi.",
+          "text": "Hyötysuhde pysyy samana, koska molemmat energiat kaksinkertaistuvat.",
           "correct": true,
           "feedback": "Osuu. Tasaisella teholla $E_\\text{a} = P_\\text{a} \\cdot t$ ja $E_\\text{o} = P_\\text{o} \\cdot t$, joten aika supistuu suhteesta. Peruste on tämä lasku, ei simulaatio: simulaation malli olettaa hyötysuhteen vakioksi, joten se vain toistaa oletuksen. Todellinen lamppu käy tasaisesti, kun se on ensin lämmennyt."
         },
         {
-          "text": "Hyötysuhde pienenee, koska lamppu kuumenee ja häviöt kasvavat.",
+          "text": "Hyötysuhde pienenee, koska lamppu kuumenee pidempään ja häviöt kasvavat.",
           "feedback": "Ajatus on fysikaalinen, mutta se ei osu tasaisesti palavaan lamppuun. Häviöenergia kasvaa ajan mukana, mutta samassa suhteessa kasvavat hyötyenergia ja otettu energia, koska tasaisella teholla $E = P \\cdot t$. Lamppu lämpenee vain syttymisen jälkeisen hetken; simulaation malli olettaa hyötysuhteen vakioksi, joten se ei voi testata tätä."
         }
       ],
@@ -377,10 +377,36 @@
       ]
     },
     {
+      "id": "check-patteri",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kun lämpö on hyötyä",
+      "prompt": "Sähköpatteri ottaa sähköverkosta tehon $1000\\,\\text{W}$ ja lämmittää huonetta. Patterin hyödyksi lasketaan huoneeseen siirtyvä lämpö. Mikä on patterin hyötysuhde?",
+      "choices": [
+        {
+          "text": "Lähes $100\\,\\%$, koska käytännössä kaikki sähkö muuttuu huoneen lämmöksi.",
+          "correct": true,
+          "feedback": "Oikein. Hyötysuhde riippuu siitä, mikä määritellään hyödyksi. Patterin hyöty on itse lämpö, ja käytännössä kaikki otettu sähköenergia muuttuu huonetta lämmittäväksi lämmöksi. Hyötysuhde on enintään $100\\,\\%$, ja tässä se on lähes $100\\,\\%$."
+        },
+        {
+          "text": "Selvästi alle $100\\,\\%$, koska lämpö on aina häviötä kuten hehkulampussa.",
+          "feedback": "Hehkulampussa lämpö on häviötä, koska lampun tehtävä on valaista. Patterin tehtävä on lämmittää, joten sama lämpö on sen hyötyä. Siksi patterin hyötysuhde on lähes $100\\,\\%$."
+        },
+        {
+          "text": "Alle $100\\,\\%$, koska minkään laitteen hyötysuhde ei voi olla $100\\,\\%$.",
+          "feedback": "Hyötysuhde on enintään $100\\,\\%$, ei aina sen alle. Todellisissa laitteissa se jää usein alle, kun osa energiasta ei päädy hyödylliseen käyttöön, mutta patterissa käytännössä kaikki sähköenergia päätyy huoneen lämmöksi."
+        },
+        {
+          "text": "Yli $100\\,\\%$, koska lämpöä syntyy enemmän kuin sähköä kuluu.",
+          "feedback": "Energia säilyy, joten huoneeseen ei voi siirtyä enempää energiaa kuin patteri ottaa sähköverkosta. Hyötysuhde on siksi enintään $100\\,\\%$; patterissa se on lähes $100\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Laskenta",
+      "title": "3. Laskenta",
       "prompt": "Sähkömoottori ottaa sähköenergiaa $2{,}5\\,\\text{kJ}$, ja sen häviöt ovat $0{,}50\\,\\text{kJ}$. Mikä on moottorin hyötysuhde? Vastaa prosentteina.",
       "answer": 80,
       "unit": "%",
@@ -406,7 +432,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "4. Selitä",
       "prompt": "Hehkulampun hyötysuhde jää selvästi alle $100\\,\\%$, vaikka energia ei häviä mihinkään. Selitä, miksi.",
       "criteria": [
         "Sanon, että energia säilyy: otettu energia on hyötyenergian ja häviöiden summa.",

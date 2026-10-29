@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d49790c6be151974
+CONTENT-HASH: 459115567103f08b
 
 ## Blocking
-(none left; list what you fixed under Fixed)
 
-## Fixed
-- lang/en.json sims.fy2-4.otettu_teho, tehot, energiat — readouts used $P_\text{in}$, $P_\text{use}$, $P_\text{loss}$ (and E_…) while the lesson, the canvas labels and the experiment questions use $_\text{o}$, $_\text{a}$, $_\text{h}$ → now o/a/h, so the readout matches $E_\text{h} : E_\text{o}$ in Experiment 1
 
 ## Polish
-- inquiry.json activities[5]/[6] `values.laite` ("auton bensiinimoottori", "hehkulamppu") still show Finnish in the en "Initial state" line; check_i18n rejects translating `values` (not a text key) — needs `values` added to check_i18n.TEXT_KEYS, then translate.
+- none beyond the open polish of the Finnish reviews, which the translation follows.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (all prose, worked example steps, misconception, summary; decimals, \cdot, chapter reference *Power P = ΔE/Δt*), figures.json, meta.json, exit-ticket.json, inquiry.json (all activities incl. experiment intros/names, hints, feedback, solutions) and the sim's en labels; physics, signs, ratios and numbers match the Finnish.
-- Update 2026-10-28: experiment option words (`values`) translated to match the English sim labels; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked efficiency wording (lesson.md, inquiry.json feedback/prompt/goal, solutions.md Reasonableness) against the new Finnish.
+- check-patteri and the rebalanced ennuste-2 options (and their feedback) follow the reviewed Finnish; physics, numbers, units, LaTeX and decimal sign preserved; correct options not the longest (check_choices clean for fy2-4).
+- Titles 3. and 4. renumbered; grid figure description and labels in the language, layout OK at 360 and 1280 px.
+- No answer given away; feedback per option translated fully. Natural textbook English.
+- Hash unchanged at end.

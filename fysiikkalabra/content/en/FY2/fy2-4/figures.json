@@ -5,5 +5,10 @@
  "valo": "light",
  "lämpö": "heat",
  "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W; hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W; hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu, mutta ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.": "Two energy flow diagrams on the same scale. At the top, an incandescent lamp takes a power of 60 W and gives a light power of 3 W; the efficiency is 5 percent, and 57 W becomes heat. At the bottom, an LED lamp takes a power of 10 W and gives the same light power of 3 W; the efficiency is 30 percent, and 7 W becomes heat. In both, the green arrow of light power is equally thick, but the incoming arrow of the LED lamp is one sixth of the incoming arrow of the incandescent lamp.",
- "ledilamppu": "LED lamp"
+ "ledilamppu": "LED lamp",
+ "Energiavirtakuvio mittakaavassa ruutupaperilla: sähkömoottoriin tulee sähköenergiaa 240 J. Tulevan nuolen paksuus on 8 ruutua. Moottorista lähtee oikealle vihreä hyötyenergian nuoli, liike-energia, jonka paksuus on 2 ruutua, ja alas kaartuva oranssi häviöiden nuoli, lämpö, jonka paksuus on 6 ruutua. Nuolten paksuudet ovat suhteessa energioihin; hyötyenergian ja häviöiden arvoja ei ole merkitty.": "Energy flow diagram to scale on squared paper: electrical energy of 240 J enters an electric motor. The thickness of the incoming arrow is 8 squares. A green arrow of useful energy, kinetic energy, leaves the motor to the right and is 2 squares thick, and an orange arrow of losses, heat, curves downward and is 6 squares thick. The thicknesses of the arrows are proportional to the energies; the values of the useful energy and the losses are not marked.",
+ "moottori": "motor",
+ "sähkömoottori": "electric motor",
+ "liike-energia": "kinetic energy",
+ "lämpö (häviöt)": "heat (losses)"
 }

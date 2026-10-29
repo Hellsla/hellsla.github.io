@@ -64,7 +64,7 @@ Pyöräilijän ketju alkaa Auringosta. Säteilyenergia sitoutuu kasvissa kemiall
   <path d="M518,232 L518,274 L510,274 L525,296 L540,274 L532,274 L532,232 Z" fill="#e8590c" stroke-linejoin="round"/>
 </svg>
 
-Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa: kuten luvussa *Energialajit ja energian säilyminen* todettiin, ketjun alussa ja lopussa sitä on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi, ja osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä voi enää käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
+Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön ja hajaantuu. Energiaa ei silti katoa: kuten luvussa *Energialajit ja energian säilyminen* todettiin, ketjun alussa ja lopussa sitä on yhtä paljon. Kuvan esimerkissä puuron $800\,\text{kJ}$ jakautuu liikkeeksi ja lämpöenergiaksi, ja osat ovat yhteensä yhtä paljon kuin alussa. Lämpöenergia hajaantuu niin laajalle, ettei sitä ole enää helppo käyttää hyödyksi, ja siksi energia tuntuu "kuluvan loppuun".
 
 <svg data-fig="sailyminen" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva mittakaavassa (esimerkki): pyöräilijän aamupuuron kemiallisesta energiasta 800 kJ lihakset muuttavat liikkeeksi 200 kJ ja lämpöenergiaksi 600 kJ. Nuolten leveys on verrannollinen energiaan, ja haarojen yhteinen leveys on yhtä suuri kuin alkuperäisen nuolen leveys." style="max-width:100%;font-size:24px">
   <rect x="40" y="112" width="192" height="96" fill="#ffc078" stroke="#e8590c" stroke-width="2"/>
@@ -123,7 +123,7 @@ Arjen energioiden suuruusluokat on koottu kuvaan, jossa jokainen väli on kymmen
   <foreignObject x="130" y="335.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jokainen väli on 10-kertainen}$</div></foreignObject>
   <line x1="96" y1="264" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="96" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="106" y="237.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omena}\ 1\,\text{J}$</div></foreignObject>
+  <foreignObject x="106" y="237.5" width="240" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omena metrin ylös}\ 1\,\text{J}$</div></foreignObject>
   <line x1="195.5" y1="226" x2="195.5" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="195.5" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="-4.5" y="199.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{tulitikku}\ 1\,\text{kJ}$</div></foreignObject>
@@ -185,7 +185,7 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 **Järkevyys.** Lämpöenergiaksi muuttuu enemmän energiaa kuin liikkeeksi, kuten ihmisen lihasten toiminnassa yleensä: keho lämpenee pyöräillessä. Summa tarkistuu: $110\,\text{kJ} + 340\,\text{kJ} = 450\,\text{kJ}$, eli sama kuin alussa.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että energia kuluu loppuun, kun vauhti hidastuu tai akku tyhjenee. Energia ei kulu eikä katoa. Se muuttaa muotoa, ja suuri osa päätyy lämpönä ympäristöön, josta sitä ei voi kerätä takaisin hyödyksi.
+Moni ajattelee, että energia kuluu loppuun, kun vauhti hidastuu tai akku tyhjenee. Energia ei kulu eikä katoa. Se muuttaa muotoa, ja suuri osa päätyy lämpönä ympäristöön, josta sitä ei enää helposti saa takaisin hyötykäyttöön.
 
 Toinen virhe on laskea yhteen energioita eri yksiköissä, esimerkiksi $1{,}5\,\text{MJ} + 300\,\text{kJ} = 301{,}5$. Etuliite on kerroin, joten energiat muunnetaan ensin samaan yksikköön.
 

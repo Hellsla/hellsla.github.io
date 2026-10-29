@@ -1,9 +1,5 @@
 [
   {
-    "q": "Mitä kasvihuonekaasut tekevät auringon säteilylle ja maanpinnan lämpösäteilylle?",
-    "a": "Ne päästävät auringon säteilyn suurelta osin läpi. Ne imevät maanpinnan lämpösäteilyn ja säteilevät osan siitä takaisin alas. Siksi lämpösäteily pääsee avaruuteen hitaammin ja maanpinta pysyy lämpimämpänä."
-  },
-  {
     "q": "Sähköä käytetään $10\\,\\text{kWh}$, ja se on tuotettu tuulivoimalla, jonka päästökerroin on $12\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia syntyy?",
     "a": "$m = e \\cdot E = 12\\,\\text{g/kWh} \\cdot 10\\,\\text{kWh} = 120\\,\\text{g}$."
   },

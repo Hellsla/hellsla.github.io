@@ -4,10 +4,6 @@
     "a": "Energian yksikkö on joule (J). Yksi kilojoule on $1000\\,\\text{J}$."
   },
   {
-    "q": "Muunna $3{,}2\\,\\text{MJ}$ kilojouleiksi etuliitteen arvoa käyttäen.",
-    "a": "$3{,}2\\,\\text{MJ} = 3{,}2 \\cdot 1000\\,\\text{kJ} = 3200\\,\\text{kJ}$."
-  },
-  {
     "q": "Taskulampun paristo luovuttaa $12\\,\\text{kJ}$, josta $3\\,\\text{kJ}$ muuttuu valoksi. Mihin loput $9\\,\\text{kJ}$ muuttuvat? Miksi energiaa ei ole kadonnut?",
     "a": "Loput $9\\,\\text{kJ}$ muuttuvat lämpöenergiaksi. Energiaa ei ole kadonnut. Valon energia ja lämpöenergia yhteensä on $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, eli sama kuin alussa."
   }

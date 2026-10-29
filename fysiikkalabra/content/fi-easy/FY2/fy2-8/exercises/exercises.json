@@ -35,7 +35,8 @@
     {
       "id": "fy2-8-L1-05",
       "level": 1,
-      "text": "Pyykkikone ja kuivausrumpu kuluttavat yhdessä yhden pyykkikerran aikana sähköä $2{,}4\\,\\text{kWh}$. Sähkö tuotetaan maakaasulla. Maakaasun elinkaaren päästökerroin on $490\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia yhdestä pyykkikerrasta syntyy? Anna vastaus kilogrammoina.",
+      "text": "Pyykkikone ja kuivausrumpu kuluttavat yhdessä yhden pyykkikerran aikana sähköä $2{,}4\\,\\text{kWh}$, ja sähkö tuotetaan maakaasulla. Lue maakaasusähkön elinkaaren päästökerroin kuvan pylväskaaviosta. Kuinka paljon hiilidioksidiekvivalenttia yhdestä pyykkikerrasta syntyy? Anna vastaus kilogrammoina.",
+      "figure": "fy2-8/emissions",
       "answer": 1.2,
       "unit": "kg",
       "tolerance": 0.03

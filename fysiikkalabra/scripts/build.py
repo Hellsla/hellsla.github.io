@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, mathlayout, practice
+import courses, figcat, i18n, inquiry, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -208,7 +208,17 @@ def solutions_of(text):
     return out
 
 
-def exercise_html(e, solution_html, read=None):
+def core_ids(ex):
+    """The core exercises (teacher 2026-10-29, "harjoituspolku"): those marked `"core": true`, or, in a level where none
+    is marked, the first two of levels 1 and 2. Level 3 is challenging practice, the rest additional practice."""
+    out = set()
+    for lvl, items in ex.items():
+        marked = [e["id"] for e in items if e.get("core")]
+        out |= set(marked) if any("core" in e for e in items) else ({e["id"] for e in items[:2]} if lvl[-1] in "12" else set())
+    return out
+
+
+def exercise_html(e, solution_html, read=None, core=False):
     ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
     check = ""
@@ -220,7 +230,8 @@ def exercise_html(e, solution_html, read=None):
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary><div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
-    return (f'<li id="{e["id"]}">{inquiry.task_text(nbsp_units(e["text"]))}{fig}{check}'
+    tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}>{tag}{inquiry.task_text(nbsp_units(e["text"]))}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -247,7 +258,10 @@ removed = []   # lessons on the live site that this build leaves out
 
 def rebase(html):
     """A page of another language lives in site/<lang>/ and shares the assets of site/ (style, scripts, vendor/, the
-    simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ ."""
+    simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ .
+    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)."""
+    html = svgids.namespace(html)
+    if svgids.duplicates(html): sys.exit(f"ERROR: repeated ids on a page: {', '.join(svgids.duplicates(html))} (scripts/svgids.py)")
     if not UP: return html
     keep = lambda v: re.match(r"[a-z]+:|#|/|\.\./", v) or re.match(r"[\w.-]+\.html(#|$)", v)
     return re.sub(r'\b(src|href|data-base)="([^"]*)"', lambda m: m.group(0) if keep(m.group(2)) else f'{m.group(1)}="{UP}{m.group(2)}"', html)
@@ -285,6 +299,32 @@ def course_text(code, mod):
     return out
 
 
+def chapter_nav(out, modules, built_ids, practice_built):
+    """Edellinen luku / Seuraava luku under every lesson and Sovella page of this language (teacher 2026-10-29). The
+    order is the module's lesson order in curriculum.json (the teaching order: FY3 is not numeric), only published
+    pages are linked, the first chapter leads back to the module page, the last to Sovella itsenäisesti when it is
+    published (else the module page), and the Sovella page back to the last chapter. Links stay in this language's
+    folder, so the language is kept; new chapters join the sequence when they are published."""
+    if only:                                       # a preview links the lessons a full build would publish, and itself
+        built_ids = built_ids | {f.name for f in courses.lessons(lang=T.lang) if review_status(f)["state"] != "draft"}
+    def link(cls, rel, href, direction, name):
+        return (f'<a class="{cls}" href="{href}"{f" rel={chr(34)}{rel}{chr(34)}" if rel else ""}>'
+                f'<span class="dir">{direction}</span><span class="name">{esc(name)}</span></a>')
+    for code, mod in modules:
+        seq = [(l["id"] + ".html", l["title"]) for l in mod.get("lessons", []) if l["id"] in built_ids]
+        if code in practice_built: seq.append((practice.page_name(code), T("practice.title")))
+        course = (f"{code}.html", T("lesson.chapter_course", course=code))
+        for i, (name, _) in enumerate(seq):
+            f = out / name
+            if not f.is_file(): continue
+            prev = seq[i - 1] if i else None; nxt = seq[i + 1] if i + 1 < len(seq) else None
+            nav = (f'<nav class="chapter-nav" aria-label="{esc(T("lesson.chapter_nav"))}">'
+                   + (link("prev", "prev", prev[0], T("lesson.chapter_prev"), prev[1]) if prev else link("prev up", "", course[0], T("lesson.chapter_up"), course[1]))
+                   + (link("next", "next", nxt[0], T("lesson.chapter_next"), nxt[1]) if nxt else link("next up", "", course[0], T("lesson.chapter_up"), course[1]))
+                   + "</nav>")
+            f.write_text(f.read_text().replace(f"<!--fl-chapter-nav:{name[:-5]}-->", nav))
+
+
 def build_language(lang):
     """Every lesson, course page and the front page of one language into OUTS[lang]."""
     global UP, HOME, URL, COURSES
@@ -315,11 +355,14 @@ def build_language(lang):
         publish = meta.get("solutions", "all")
         solutions = solutions_of(sol_text) if publish != "none" else {}
         ex_html = "" if ex else f'<p class="notice" role="note">{T("lesson.exercises_pending")}</p>'
+        core = core_ids(ex)
+        if ex: ex_html += f'<p class="ex-path">{T("lesson.exercise_path")}</p>'
         for lvl, items in ex.items():
-            ex_html += f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} <span class=\"count\">{T('lesson.level_count', n=len(items))}</span></summary><ol>"
+            ex_html += (f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} · {T('lesson.level_kind_' + lvl[-1])} "
+                        f"<span class=\"count\">{T('lesson.level_count', n=len(items))}</span></summary><p class=\"level-lead\">{T('lesson.level_lead_' + lvl[-1])}</p><ol>")
             for i, e in enumerate(items):
                 show = publish == "all" or (publish == "first" and i == 0)
-                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read)
+                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read, core=e["id"] in core)
             ex_html += "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(
@@ -376,7 +419,7 @@ def build_language(lang):
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))
                 .replace("{{strings}}", strings_block(skey)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=meta["course"])))
-                .replace("{{toc}}", toc).replace("{{main}}", main)
+                .replace("{{toc}}", toc).replace("{{main}}", main + f"<!--fl-chapter-nav:{meta['id']}-->")
                 .replace("{{scripts}}", '<script src="inquiry.js"></script>' if inq else "")
                 .replace("{{description}}", esc(description_of(meta, lesson_md))).replace("{{url}}", URL + name)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(name)))
@@ -399,7 +442,7 @@ def build_language(lang):
         ptitle = T("practice.title")
         html = (texts(tpl).replace("{{title}}", esc(ptitle)).replace("{{course}}", code).replace("{{notice}}", notice("reviewed" if ps["state"] == "reviewed" else "draft"))
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
-                .replace("{{toc}}", ptoc).replace("{{main}}", f'<article id="teoria" class="inquiry practice">{body}</article>')
+                .replace("{{toc}}", ptoc).replace("{{main}}", f'<article id="teoria" class="inquiry practice">{body}</article><!--fl-chapter-nav:{code}-sovella-->')
                 .replace("{{scripts}}", '<script src="selfassess.js"></script>')
                 .replace("{{description}}", esc(T("practice.description", code=code, title=course_text(code, curriculum[code])["title"]))).replace("{{url}}", URL + pname)
                 .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(pname)))
@@ -414,16 +457,19 @@ def build_language(lang):
     built_ids = {m["id"] for ms in built.values() for m in ms}
     legacy_ids = {m["id"] for ms in built.values() for m in ms if m["state"] == "legacy"}
 
-    cards = ""
+    cards = ""; status_count = {"complete": 0, "partial": 0, "planned": 0}
     for code, mod in modules:
         slots = mod.get("lessons", [])
         done = sum(1 for l in slots if l["id"] in built_ids)
         pct = round(100 * done / len(slots)) if slots else 0
         kind = T("site.course_type_required") if mod.get("type") == "pakollinen" else T("site.course_type_optional")
         state = T("site.lessons_ready", done=done, n=len(slots)) if done else T("site.lessons_planned", n=len(slots))
+        status = "complete" if slots and done == len(slots) else "partial" if done else "planned"   # publication, never a student's progress
+        status_count[status] += 1
         cards += (f'<a class="card{" live" if done else ""}" href="{code}.html"><span class="code">{code}</span>'
                   f'<span class="ctitle">{esc(mod["title"])}</span><span class="meta">{T("site.credits", n=mod.get("op", ""))} · {kind}</span>'
-                  f'<span class="bar" aria-hidden="true"><span style="width:{pct}%"></span></span><span class="state">{state}</span></a>')
+                  f'<span class="bar" aria-hidden="true"><span style="width:{pct}%"></span></span><span class="state">{state}'
+                  f' <span class="status status-{status}">{T("site.module_" + status)}</span></span></a>')
 
         items = ""
         for l in slots:
@@ -444,6 +490,8 @@ def build_language(lang):
         (out / f"{code}.html").write_text(page(T("site.course_title", code=code, title=mod["title"]), body,
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", desc))
 
+    chapter_nav(out, modules, built_ids, practice_built)
+
     latest = ""
     for code, mod in modules:                       # most recently planned published lesson of the highest module
         for l in mod.get("lessons", []):
@@ -452,11 +500,19 @@ def build_language(lang):
     home = (
         f'<section class="hero"><span class="eyebrow">{T("site.home_eyebrow")}</span>'
         f'<h1>{T("site.name")}</h1>'
+        f'<p class="tagline">{T("site.home_tagline")}</p>'
         f'<p class="lead">{T("site.home_lead")}</p>'
         + latest + '</section>'
-        + '<ul class="how">' + "".join(f'<li><strong>{T(f"site.home_{k}")}</strong>{T(f"site.home_{k}_text")}</li>' for k in ("theory", "sim", "tasks")) + '</ul>'
-        f'<h2 id="moduulit">{T("site.modules")}</h2>' f'<div class="cards">{cards}</div>'
-        f'<p class="count">{T("site.home_count", built=len(built_ids), total=total)}</p>')
+        # the learning model with the stage names the lessons use (lang inquiry.stage_*), then a short start guide
+        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2><ol class="path-steps">'
+        + "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
+        + '</ol></section>'
+        + f'<section class="start" aria-labelledby="h-start"><h2 id="h-start">{T("site.home_start")}</h2><ul>'
+        + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></section>'
+        f'<h2 id="moduulit">{T("site.modules")}</h2>'
+        f'<p class="count"><strong>{T("site.home_count", built=len(built_ids), total=total)}</strong> '
+        f'{T("site.home_count_note", **status_count)}</p>'
+        f'<div class="cards">{cards}</div>')
     (out / "index.html").write_text(page(T("site.name"), home, "", "index.html", T("site.home_description"), main_class=""))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)

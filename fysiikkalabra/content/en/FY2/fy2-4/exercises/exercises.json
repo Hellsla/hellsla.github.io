@@ -95,7 +95,8 @@
     {
       "id": "fy2-4-L3-03",
       "level": 3,
-      "text": "An energy flow diagram is drawn to a scale in which the arrow of the energy entering the device is $6.0\\,\\text{cm}$ thick and corresponds to an energy of $240\\,\\text{J}$. The arrow of the useful energy is $1.5\\,\\text{cm}$ thick. How much energy becomes losses? Give the answer in joules.",
+      "text": "The figure shows the energy flow diagram of an electric motor on squared paper. The thicknesses of the arrows are drawn to scale, and the energy entering the motor is marked in the figure. How much energy becomes losses in the motor? Give the answer in joules.",
+      "figure": "fy2-4/grid",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02

@@ -39,7 +39,7 @@ those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash
 `status` counts that PASS for the new hash. CI (`verify`) re-derives every carry that is in use from git history
 and fails if the change was not what the row says. A reviewer whose last verdict was FAIL always reviews in full.
 """
-import datetime, difflib, hashlib, json, os, pathlib, re, subprocess, sys, tempfile
+import datetime, difflib, functools, hashlib, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, figcat, i18n, inquiry
 
@@ -57,7 +57,8 @@ RULES = {                       # category: (science, pedagogy)
     "style":          ("none",  "delta"),   # colours, strokes, fonts, classes in a figure; a simulation's sim.css
     "label-position": ("none",  "delta"),   # a figure label moved by at most 40 units, its text unchanged
     "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
-    "objective-form": ("none",  "delta"),   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
+    "objective-form": ("none",  "delta"),
+    "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
     "numbers":        ("full",  "delta"),   # a changed line carries a number, formula, symbol or unit
@@ -75,6 +76,7 @@ RULES = {                       # category: (science, pedagogy)
 WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
+       "chapter-ref": "a chapter reference follows that chapter's new title",
        "objective-form": "learning goals rephrased to complete their heading, symbols and numbers unchanged", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
@@ -373,6 +375,7 @@ def _line(fname, body, lid):
         if s.startswith(('"image"', '"solutions"')): return "structure"
         if s.strip() in ("{", "}", "[", "]", "],", ""): return "comments"
         return "objectives"
+    if fname.endswith(".md") and s.startswith("# "): return "wording"      # the page title, the same as meta.json "title"
     if fname.endswith(".md") and (s.startswith("## ") or "<!-- vaihe -->" in body or s.startswith("```")): return "structure"
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
 
@@ -386,6 +389,22 @@ def strip_hero(text):
     if not text: return text
     out = re.sub(r"\n{3,}", "\n\n", HERO.sub(lambda m: "\n\n" if not re.search(r"<(foreignObject|text)\b", m.group(0)) else m.group(0), text))
     return out.rstrip("\n") + "\n" if text.endswith("\n") else out.rstrip("\n")       # a picture at the end leaves no blank line
+
+
+CHAPTER_REF = re.compile(r"\b((?:luku|luvussa|luvusta|luvun|luvuissa|chapter|chapters)\s+)\*([^*]+)\*", re.I)
+
+
+@functools.lru_cache(maxsize=None)
+def chapter_titles():
+    """Every current lesson title in every language (meta.json)."""
+    return frozenset(json.loads(f.read_text()).get("title", "") for f in (ROOT / "content").glob("*/*/*/meta.json"))
+
+
+def _chapter_refs_renamed(old, new):
+    """True when two lines differ only in the titles of chapter references and every new one is a current title."""
+    blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
+    if blank(old) != blank(new): return False
+    return all(m.group(2) in chapter_titles() for m in CHAPTER_REF.finditer(new))
 
 
 def classify(path, diff_lines, lid):
@@ -404,6 +423,10 @@ def classify(path, diff_lines, lid):
             for o in [l for l in rem if l.startswith("## ")]:
                 n = next((l for l in add if l.startswith("## ") and inquiry.heading(l[3:])[0] == inquiry.heading(o[3:])[0] and l != o), None)
                 if n is not None: cats.add("section-name"); rem.remove(o); add.remove(n)
+        if not (code or py):                           # "(luku *Tasainen liike: s = vt*)" → the chapter's current title
+            for o in list(rem):
+                n = next((l for l in add if l != o and _chapter_refs_renamed(o, l)), None)
+                if n is not None: cats.add("chapter-ref"); rem.remove(o); add.remove(n)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:

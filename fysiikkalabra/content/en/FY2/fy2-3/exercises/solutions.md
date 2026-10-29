@@ -29,14 +29,15 @@
 **Reasonableness:** The oven transforms $1200\,\text{J}$ in a second, and $60 \cdot 1200\,\text{J} = 72\,000\,\text{J}$. A minute is a typical heating time.
 
 ## fy2-3-L1-04
-**Given:** power $P = 3.5\,\text{kW}$
-**Find:** power in watts
-**Principle:** The prefix kilo means a thousand, so a kilowatt is a thousand watts. The power does not change, only the unit does.
-**Formula:** the prefix kilo is replaced by its value: $P = 3.5 \cdot 1000\,\text{W}$
-**Conversions:** In place of the kilowatt we write its value in watts, $1000\,\text{W}$.
-**Substitution:** $P = 3.5\,\text{kW} = 3.5 \cdot 1000\,\text{W} = 3500\,\text{W}$
-**Answer:** $3500\,\text{W}$ (that is $3.5 \cdot 10^{3}\,\text{W}$), two significant figures as in the given value $3.5\,\text{kW}$.
-**Reasonableness:** A watt is a unit a thousand times smaller than a kilowatt, so the numerical value must be a thousand times greater: from 3.5 to 3500.
+**Given:** the lines A and B of the graph, which show the energy $E$ transformed by the devices as a function of time $t$
+**Find:** the power $P$ in watts of the device whose line rises more steeply
+**Principle:** The device transforms energy steadily, so its power is the energy transformed divided by the time, $P = \Delta E : \Delta t$. In the graph this is the slope of the line, so the more steeply rising line A belongs to the device with the greater power.
+**Reading the graph:** Line A passes through the grid points $(40\,\text{s};\ 60\,\text{kJ})$ and $(80\,\text{s};\ 120\,\text{kJ})$. Between these points $\Delta E = 120\,\text{kJ} - 60\,\text{kJ} = 60\,\text{kJ}$ and $\Delta t = 80\,\text{s} - 40\,\text{s} = 40\,\text{s}$.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$
+**Conversions:** The power comes out in watts when the energy is in joules and the time in seconds: $60\,\text{kJ} = 60 \cdot 1000\,\text{J} = 60\,000\,\text{J}$.
+**Substitution:** $P = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\tfrac{\text{J}}{\text{s}} = 1500\,\text{W}$
+**Answer:** $1500\,\text{W}$, that is $1.5\,\text{kW}$, two significant figures, because the values are read from the gridlines to two-digit precision.
+**Reasonableness:** Line A rises $30\,\text{kJ}$ in $20\,\text{s}$, that is $1.5\,\text{kJ} = 1500\,\text{J}$ per second, which is the same result. Line B rises only $40\,\text{kJ}$ in $80\,\text{s}$, so its power is $500\,\text{W}$, a third of the power of A, and its line is less steep. Such a power is typical of a microwave oven.
 
 ## fy2-3-L1-05
 **Given:** power $P = 1.5\,\text{kW}$, time $t = 2.0\,\text{h}$

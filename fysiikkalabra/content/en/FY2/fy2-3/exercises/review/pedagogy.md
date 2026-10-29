@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 90c0d1e648eb332b
+CONTENT-HASH: ddf55eaa83079897
 
 ## Blocking
-(none left)
-
-## Fixed
-- exercises.json level3.2 — "How long a distance does the charging energy last" → "How far can the car drive on the charging energy"
-- solutions.md L1-04 Reasonableness — "A watt is a thousand times smaller unit than a kilowatt" → "a unit a thousand times smaller than a kilowatt"
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md: natural English, step labels match lang/en.json, same steps and reasoning as the Finnish.
+- Translation review against the reviewed Finnish (teacher's decision 2026-10-28), delta after the option rebalance: L1-04 now asks the learner to read two points from the steeper line and compute P = dE/dt; the Finnish demand is kept, no values are given in the task text, and the solution shows the reading, unit conversion kJ to J and a reasonableness check. Natural textbook English.

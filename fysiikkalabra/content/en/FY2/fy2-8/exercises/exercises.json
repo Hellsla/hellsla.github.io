@@ -35,7 +35,8 @@
     {
       "id": "fy2-8-L1-05",
       "level": 1,
-      "text": "A washing machine and a tumble dryer together use $2.4\\,\\text{kWh}$ of electricity for one load of laundry. The electricity is produced with natural gas, whose life-cycle emission factor is $490\\,\\text{g/kWh}$. How much carbon dioxide equivalent is produced by one load of laundry? Give the answer in kilograms.",
+      "text": "A washing machine and a tumble dryer together use $2.4\\,\\text{kWh}$ of electricity for one load of laundry, and the electricity is produced with natural gas. Read the life-cycle emission factor of natural gas electricity from the bar chart in the figure. How much carbon dioxide equivalent is produced by one load of laundry? Give the answer in kilograms.",
+      "figure": "fy2-8/emissions",
       "answer": 1.2,
       "unit": "kg",
       "tolerance": 0.03

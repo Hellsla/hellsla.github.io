@@ -39,14 +39,15 @@
 **Järkevyys:** Veteen menee suurin osa, $9{,}0\,\text{MJ}$ kahdestatoista. Tarkistus: $9{,}0\,\text{MJ} + 3\,\text{MJ} = 12\,\text{MJ}$, eli yhteensä yhtä paljon kuin alussa.
 
 ## fy2-2-L1-05
-**Annettu:** päivän ruoka $E_\text{ruoka} = 10\,\text{MJ}$ ja omena $E_\text{omena} = 300\,\text{kJ}$
-**Kysytty:** omenoiden lukumäärä $N$
-**Periaate:** Jokaisessa omenassa on sama energia, joten lukumäärä saadaan jakamalla päivän ruoan energia yhden omenan energialla, kun molemmat on ilmoitettu samassa yksikössä.
-**Kaava:** $N \cdot E_\text{omena} = E_\text{ruoka}$, josta $N = E_\text{ruoka} : E_\text{omena}$
-**Muunnokset:** Korvataan megajoulen etuliite sen arvolla: $10\,\text{MJ} = 10 \cdot 1000\,\text{kJ} = 10\,000\,\text{kJ}$
-**Sijoitus:** $N = 10\,000\,\text{kJ} : 300\,\text{kJ} = 33{,}3$
-**Vastaus:** Noin $33$ omenaa, kaksi merkitsevää numeroa kuten päivän ruoan energiassa $10\,\text{MJ}$.
-**Järkevyys:** Arvio: $300\,\text{kJ}$ on noin kolmasosa megajoulesta, joten megajouleen tarvitaan kolme omenaa ja kymmeneen megajouleen noin $30$. Yksiköt supistuvat, joten tulos on pelkkä lukumäärä.
+**Annettu:** kuvasta luetut energiat: AA-paristo $E_\text{p} = 10^{4}\,\text{J}$ ja salama $E_\text{s} = 10^{9}\,\text{J}$ (suuruusluokat)
+**Kysytty:** paristojen lukumäärä $N$, jonka energia on yhteensä yhtä suuri kuin salaman
+**Periaate:** Jokaisessa paristossa on sama energia, joten lukumäärä saadaan jakamalla salaman energia yhden pariston energialla. Kymmenpotenssiasteikolla jokainen väli on kymmenkertainen, joten energian kymmenen potenssi luetaan laskemalla välejä.
+**Kuvaajan lukeminen:** AA-pariston piste on yhden pienen välin verran kohdan $1\,\text{kJ} = 10^{3}\,\text{J}$ oikealla puolella, joten sen energia on $10 \cdot 10^{3}\,\text{J} = 10^{4}\,\text{J}$. Salaman piste on kohdassa $1\,\text{GJ} = 10^{9}\,\text{J}$. Pisteiden välissä on viisi pientä väliä.
+**Kaava:** $N \cdot E_\text{p} = E_\text{s}$, josta $N = E_\text{s} : E_\text{p}$
+**Muunnokset:** Kumpikin energia on luettu jouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** $N = 10^{9}\,\text{J} : 10^{4}\,\text{J} = 10^{9-4} = 10^{5} = 100\,000$
+**Vastaus:** Noin $100\,000$ paristoa. Tulos on suuruusluokka, koska kuvan energiat ovat suuruusluokkia.
+**Järkevyys:** Viisi kymmenkertaista väliä tarkoittaa kertomista viisi kertaa kymmenellä: $10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000$. Salaman energia on suuri, mutta se vapautuu hetkessä; samaan energiaan tarvitaan valtava määrä pieniä paristoja.
 
 ## fy2-2-L2-01
 **Annettu:** suklaalevy ($100\,\text{g}$) $E_1 = 2{,}2\,\text{MJ}$ ja pähkinät $E_2 = 800\,\text{kJ}$

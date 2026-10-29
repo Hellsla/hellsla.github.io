@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7a191ebd47e66838
+CONTENT-HASH: b773061d725e94b3
 
 ## Blocking
+(none)
+
+## Fixed
+- (none)
 
 ## Polish
-- None.
+- (none)
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Update 2026-10-29: translation follows the reviewed Finnish; demand and options' relative lengths balanced (check_choices clean for fy2-7); no answer given away in prompts or hints; feedback per option fully translated. Short sentences, same physics terms and numbers, same cognitive demand.

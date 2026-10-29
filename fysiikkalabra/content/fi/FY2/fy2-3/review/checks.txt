@@ -2,7 +2,7 @@ ok   lint
 ok   latex
 ok   build
 ok   sims
-ok   inquiry (61 passed, 0 failed)
+ok   inquiry (67 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 ok   layout 768 px

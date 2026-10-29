@@ -1,6 +1,6 @@
 # Forms of energy and conservation of energy
 
-> **Why** does a bouncing ball eventually come to rest on the floor, even though energy never disappears?
+> **Why** does a bouncing ball eventually come to rest on the floor?
 
 ## Key idea
 **Energy** is a quantity used to describe what happens in a system when something moves, warms up, gives off light or changes its form. The symbol for energy is $E$ and its unit is the **joule**, $\text{J}$. The joule is a small unit, so energies are often given in kilojoules too: the prefix kilo means a thousand, so $1\,\text{kJ} = 1000\,\text{J}$.

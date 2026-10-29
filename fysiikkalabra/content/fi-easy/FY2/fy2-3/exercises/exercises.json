@@ -27,8 +27,9 @@
     {
       "id": "fy2-3-L1-04",
       "level": 1,
-      "text": "Sähkökiukaan teho on $3{,}5\\,\\text{kW}$. Ilmoita teho watteina.",
-      "answer": 3500,
+      "text": "Kuvaajassa on kahden laitteen, A ja B, muuntama sähköenergia ajan funktiona. Kumpikin laite muuntaa energiaa tasaisesti. Lue kuvaajasta kaksi pistettä siltä suoralta, joka nousee jyrkemmin. Kuinka suuri on tämän laitteen teho? Anna vastaus watteina.",
+      "figure": "fy2-3/graph-ab",
+      "answer": 1500,
       "unit": "W",
       "tolerance": 0.02
     },

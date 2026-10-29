@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 97249688487855fc
+CONTENT-HASH: c725adc7428f7a3a
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- none
+(none)
 
 ## Polish
-- none
+- (none new beyond the Finnish exercise report)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (12 tasks) and solutions.md: every Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness step, numbers with decimal points, significant-figure reasoning, $\cdot$ and ratios with ':' match the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed exercise texts and solutions (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).
+- L1-03 now the figure-reading skater task: given values 700/0 J at A and 0/500 J at C, answer 200 J, tolerance 0.02 and the figure id are identical to the Finnish; recomputed 700 - 500 = 200 J, and B gives 600 J mechanical, 100 J thermal so far.
+- Solution steps in the same order as the Finnish (Given, Find, Principle, Reading the graph, Formula, Conversions, Substitution, Answer, Reasonableness); all formulas, units and rounding reasons preserved.
+- The task text does not state the answer and the figure description gives only the bar values.
+- Other exercises unchanged and still follow the Finnish.

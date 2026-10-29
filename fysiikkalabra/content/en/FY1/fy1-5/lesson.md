@@ -1,4 +1,4 @@
-# Uniform motion: s = vt
+# Uniform motion: speed, position and graphs
 
 > **Why** can the position of the Voyager 2 probe be calculated in advance for any day, even though it is more than 20 billion kilometres from the Sun?
 

@@ -19,14 +19,15 @@
 **Järkevyys:** Kemiallinen energia ja lämpöenergia ovat yhteensä $6{,}0\,\text{J} + 239\,\text{J} = 245\,\text{J}$, kuten alussa. Kemialliseksi energiaksi muuttuu vain $6{,}0\,\text{J} : 245\,\text{J} \approx 0{,}02$ eli noin kaksi prosenttia, ja kasvit tunnetusti sitovat vain pienen osan auringonvalon energiasta; lehti lämpenee auringossa.
 
 ## fy2-1-L1-03
-**Annettu:** paneeliin tuleva säteilyenergia $E_\text{säteily} = 800\,\text{J}$, syntyvä sähköenergia $E_\text{sähkö} = 160\,\text{J}$
-**Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
-**Periaate:** Paneeli muuttaa osan säteilyenergiasta sähköenergiaksi ja loput lämpöenergiaksi. Mitään ei häviä, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$.
-**Kaava:** $E_\text{säteily} = E_\text{sähkö} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{säteily} - E_\text{sähkö}$
+**Annettu:** kuvasta luetut energiat kohdissa A ja C: $E_\text{p,A} = 700\,\text{J}$, $E_\text{k,A} = 0\,\text{J}$, $E_\text{p,C} = 0\,\text{J}$ ja $E_\text{k,C} = 500\,\text{J}$
+**Kysytty:** lämpöenergiaksi muuttunut energia $E_\text{lämpö}$ kohtien A ja C välillä yksikössä $\text{J}$
+**Periaate:** Skeittari, half-pipe ja ilma muodostavat eristetyn systeemin, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi, joten lopussa energiaa on mekaanisena energiana ja lämpöenergiana.
+**Kuvaajan lukeminen:** Kohdassa A on vain sininen potentiaalienergian pylväs, ja sen yläreuna on ruudukon viivalla $700\,\text{J}$; liike-energiaa ei ole, koska skeittari on levossa. Kohdassa C on vain oranssi liike-energian pylväs, ja sen yläreuna on viivalla $500\,\text{J}$; potentiaalienergiaa ei ole, koska pohja on nollataso. Kohdan B pylväitä ei tarvita.
+**Kaava:** $E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{lämpö}$, joten $E_\text{lämpö} = (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
-**Sijoitus:** $E_\text{lämpö} = 800\,\text{J} - 160\,\text{J} = 640\,\text{J}$
-**Vastaus:** $640\,\text{J}$, kolme merkitsevää numeroa kuten säteilyenergiassa $800\,\text{J}$.
-**Järkevyys:** Sähköenergiaa ja lämpöenergiaa on yhteensä $160\,\text{J} + 640\,\text{J} = 800\,\text{J}$, joten kokonaisenergia on sama kuin alussa. Sähköksi muuttuu $160\,\text{J} : 800\,\text{J} = 0{,}20$ eli $20\,\%$, mikä on tavallinen osuus nykyiselle aurinkopaneelille.
+**Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J}) = 200\,\text{J}$
+**Vastaus:** $200\,\text{J}$, sadan joulen tarkkuudella, koska pylväiden pituudet luetaan ruudukon $100\,\text{J}$:n viivoilta.
+**Järkevyys:** Mekaaninen energia pienenee $700\,\text{J}$:stä $500\,\text{J}$:iin, kuten kitkallisessa radassa pitää. Kohdassa B mekaanista energiaa on $300\,\text{J} + 300\,\text{J} = 600\,\text{J}$, eli sen kohdalla on muuttunut lämpöenergiaksi vasta $100\,\text{J}$, ja lämpöenergia kasvaa koko matkan. Tarkistus: $500\,\text{J} + 200\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L1-04
 **Kysytty:** kussakin tilanteessa energialaji alussa ja hyödyllinen energialaji, joksi energia muuttuu

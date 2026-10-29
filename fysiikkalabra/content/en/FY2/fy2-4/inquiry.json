@@ -89,16 +89,16 @@
       },
       "choices": [
         {
-          "text": "The efficiency doubles, because the lamp gives light for longer.",
+          "text": "Efficiency doubles, because the lamp gives light for twice as long.",
           "feedback": "Not quite. A lamp that burns for longer gives more light energy, but it also takes more electrical energy. At constant power both energies are power multiplied by time, $E = P \\cdot t$, so they both double and their ratio does not change."
         },
         {
-          "text": "The efficiency stays the same, because the useful energy and the energy taken both double.",
+          "text": "Efficiency stays the same, because both energies double.",
           "correct": true,
           "feedback": "Right. At constant power $E_\\text{a} = P_\\text{a} \\cdot t$ and $E_\\text{o} = P_\\text{o} \\cdot t$, so the time cancels from the ratio. The reason is this calculation, not the simulation: the model of the simulation assumes that efficiency is constant, so it only repeats the assumption. A real lamp runs steadily once it has warmed up."
         },
         {
-          "text": "The efficiency decreases, because the lamp gets hot and the losses grow.",
+          "text": "Efficiency decreases, because the lamp heats up for longer and the losses grow.",
           "feedback": "The idea is physical, but it does not fit a lamp that burns steadily. The loss energy grows with time, but the useful energy and the energy taken grow in the same proportion, because at constant power $E = P \\cdot t$. The lamp warms up only in the moment right after switching on; the model of the simulation assumes that efficiency is constant, so it cannot test this."
         }
       ],
@@ -377,10 +377,36 @@
       ]
     },
     {
+      "id": "check-patteri",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. When heat is the benefit",
+      "prompt": "An electric heater takes a power of $1000\\,\\text{W}$ from the mains and heats a room. The benefit of the heater is counted as the heat transferred to the room. What is the efficiency of the heater?",
+      "choices": [
+        {
+          "text": "Almost $100\\,\\%$, because in practice all the electricity becomes heat in the room.",
+          "correct": true,
+          "feedback": "Correct. Efficiency depends on what is defined as the benefit. The benefit of a heater is the heat itself, and in practice all the electrical energy taken becomes heat that warms the room. Efficiency is at most $100\\,\\%$, and here it is almost $100\\,\\%$."
+        },
+        {
+          "text": "Clearly below $100\\,\\%$, because heat is always a loss, as in an incandescent lamp.",
+          "feedback": "In an incandescent lamp heat is a loss, because the job of a lamp is to give light. The job of a heater is to heat, so the same heat is its benefit. That is why the efficiency of a heater is almost $100\\,\\%$."
+        },
+        {
+          "text": "Below $100\\,\\%$, because no device can have an efficiency of $100\\,\\%$.",
+          "feedback": "Efficiency is at most $100\\,\\%$, not always below it. In real devices it is often below, when part of the energy does not end up in useful use, but in a heater in practice all the electrical energy ends up as heat in the room."
+        },
+        {
+          "text": "Over $100\\,\\%$, because more heat is produced than electricity is used.",
+          "feedback": "Energy is conserved, so no more energy can be transferred to the room than the heater takes from the mains. Efficiency is therefore at most $100\\,\\%$; in a heater it is almost $100\\,\\%$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "3. Calculation",
       "prompt": "An electric motor takes electrical energy of $2.5\\,\\text{kJ}$, and its losses are $0.50\\,\\text{kJ}$. What is the efficiency of the motor? Give the answer as a percentage.",
       "answer": 80,
       "unit": "%",
@@ -406,7 +432,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "4. Explain",
       "prompt": "The efficiency of an incandescent lamp stays clearly below $100\\,\\%$ even though energy does not vanish anywhere. Explain why.",
       "criteria": [
         "I say that energy is conserved: the energy taken is the sum of the useful energy and the losses.",

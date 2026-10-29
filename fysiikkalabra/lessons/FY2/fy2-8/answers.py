@@ -10,7 +10,7 @@ a["fy2-8-L1-01"] = e_vesi * 3000 / 1e3                 # hydro: m = 24 g/kWh · 
 a["fy2-8-L1-02"] = e_kivihiili * 3.0 / 1e3             # coal sauna: m = 820 · 3,0 kWh = 2460 g -> 2,5 kg
 a["fy2-8-L1-03"] = e_tuuli * 18                        # wind, electric car 100 km: m = 12 · 18 kWh = 216 g -> 220 g
 a["fy2-8-L1-04"] = e_kaasu / e_katto                  # same energy, gas vs rooftop PV: 490 : 41 = 11,95 -> 12 times
-a["fy2-8-L1-05"] = e_kaasu * 2.4 / 1e3                 # gas, laundry: m = 490 · 2,4 kWh = 1176 g -> 1,2 kg
+a["fy2-8-L1-05"] = e_kaasu * 2.4 / 1e3                 # gas, laundry, e read off fy2-8/emissions: m = 490 · 2,4 kWh = 1176 g -> 1,2 kg
 # Level 2: a conversion or a rearrangement
 a["fy2-8-L2-01"] = e_biomassa * 2.0e6 / 1e6            # biomass, 2,0 GWh = 2,0·10^6 kWh: m = 230 · 2,0·10^6 g = 4,6·10^8 g -> 460 t
 a["fy2-8-L2-02"] = (e_kivihiili - e_tuuli) * 3600 / 1e6   # switch coal -> wind, 3600 kWh: saving (820 − 12) · 3600 g = 2 908 800 g -> 2,9 t

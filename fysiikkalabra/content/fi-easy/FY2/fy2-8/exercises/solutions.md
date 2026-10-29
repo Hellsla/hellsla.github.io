@@ -38,9 +38,10 @@
 **Vastaus:** noin $12$ kertaa. Tuloksessa on kaksi merkitsevää numeroa, kuten kertoimessa $41\,\text{g/kWh}$.
 **Järkevyys:** Pyöristetyillä luvuilla $500 : 40 = 12{,}5$. Tämä on lähellä tulosta. Tarkistus kertolaskulla: yhdestä kilowattitunnista syntyy kattopaneeleilla $41\,\text{g}$. Lisäksi $12 \cdot 41\,\text{g} = 492\,\text{g}$. Se on lähes maakaasun $490\,\text{g}$.
 ## fy2-8-L1-05
-**Annettu:** energia $E = 2{,}4\,\text{kWh}$; maakaasun päästökerroin $e = 490\,\text{g/kWh}$
+**Annettu:** energia $E = 2{,}4\,\text{kWh}$; maakaasusähkön päästökerroin $e = 490\,\text{g/kWh}$ luetaan kuvasta
 **Kysytty:** päästö $m$ kilogrammoina
 **Periaate:** Maakaasulla tuotettu sähkö aiheuttaa saman elinkaaren päästön jokaista kilowattituntia kohti. Siksi päästö on kerroin kertaa energia.
+**Kuvaajan lukeminen:** Kuvan toinen pylväs ylhäältä on maakaasu. Se on tummanharmaa kuten fossiiliset polttoaineet, ja sen päässä on luku $490$. Pylväs päättyy ruudukon viivojen $400$ ja $600$ väliin, hieman ennen puoliväliä ($500$). Akselin yksikkö on $\text{g}\ \text{CO}_2\text{-ekv.}/\text{kWh}$, joten $e = 490\,\text{g/kWh}$.
 **Kaava:** $m = e \cdot E$
 **Muunnokset:** Kilowattitunnit supistuvat, ja tulos tulee grammoina. Lopuksi $1\,\text{g} = 0{,}001\,\text{kg}$.
 **Sijoitus:** $m = 490\,\text{g/kWh} \cdot 2{,}4\,\text{kWh} = 1176\,\text{g} = 1176 \cdot 0{,}001\,\text{kg} = 1{,}176\,\text{kg}$
@@ -95,8 +96,8 @@
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästö tulee grammoina.
 **Sijoitus:** $m_\text{bensa} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Vastaus:** $740\,\text{g/kWh}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulutuksessa $6{,}0\,\textsf{l}$ ja $18\,\text{kWh}$.
-**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Kivihiilisähköllä sähköauto olisi hieman huonompi. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) se olisi selvästi parempi. Pyöristettynä $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
-**Johtopäätös:** Kivihiilisähkön kerroin $820\,\text{g/kWh}$ on suurempi kuin raja $740\,\text{g/kWh}$. Kivihiilisähköllä ladattu sähköauto ei siis vähentäisi päästöjä. Päästöt olisivat hieman suuremmat kuin bensiiniautolla. Sähköauton ilmastohyöty syntyy vasta, kun sähkö tuotetaan vähäpäästöisesti. Vertailu on karkea, koska bensiinille on laskettu vain polttaminen.
+**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) sähköauton päästö jää selvästi rajan alle. Pyöristettynä $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
+**Johtopäätös:** Kivihiilisähkön kerroin $820\,\text{g/kWh}$ on vain noin $10\,\%$ suurempi kuin raja $740\,\text{g/kWh}$. Ero on pienempi kuin vertailun epävarmuus. Bensiinille on nimittäin laskettu vain polttaminen, ei esimerkiksi öljyn tuotannon, jalostuksen ja kuljetuksen päästöjä. Kivihiilisähköllä ladatun sähköauton päästövähennys on siis vertailun tarkkuudella pieni tai olematon. Vähäpäästöisellä sähköllä, kuten tuuli- tai vesivoimalla, sähköauto on selvästi parempi.
 
 ## fy2-8-L3-02
 **Annettu:** energia $E = 100\,\text{GWh}$ vuodessa; aurinkopuiston tuotto $q_\text{a} = 0{,}50\,\text{GWh/ha}$ ja energiapellon tuotto $q_\text{b} = 0{,}010\,\text{GWh/ha}$ vuodessa; $1\,\text{ha} = 0{,}01\,\text{km}^2$

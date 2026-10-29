@@ -62,11 +62,11 @@
       "prompt": "In a half-pipe with friction the skateboarder slides back and forth, and each rise is lower than the one before, until she stops at the bottom. Which explanation fits best in terms of energy?",
       "choices": [
         {
-          "text": "Motion uses up energy, and the energy disappears completely when the skateboarder stops.",
+          "text": "Motion uses up energy, and when the skateboarder finally stops, the energy has disappeared completely.",
           "feedback": "In the table the total energy stays the same all the time. The mechanical energy decreases, but the thermal energy increases by the same amount, so nothing disappears."
         },
         {
-          "text": "Friction changes mechanical energy into thermal energy, so the mechanical energy decreases but the total energy stays the same.",
+          "text": "Friction changes mechanical energy into thermal energy, and the total energy stays the same.",
           "feedback": "The values of the model support this: in the graph the red thermal energy grows exactly as much as the blue and orange together decrease, and the top edge stays horizontal.",
           "correct": true
         },
@@ -75,7 +75,7 @@
           "feedback": "There is energy in other forms than kinetic energy. The stopped skateboarder, the half-pipe and the air have thermal energy, and the total energy is equal to that at the start."
         },
         {
-          "text": "Friction transfers the energy to the half-pipe, where it is still potential energy.",
+          "text": "Friction transfers the energy to the half-pipe, where it is still stored as potential energy.",
           "feedback": "The half-pipe has not risen higher, so the potential energy has not increased. The energy has changed into thermal energy, which is shown in red in the graph."
         }
       ]
@@ -143,20 +143,20 @@
         "prompt": "What does the table show about the half-pipe without friction?",
         "choices": [
           {
-            "text": "When $E_\\text{p}$ decreases, $E_\\text{k}$ increases by the same amount, and the total energy stays the same.",
+            "text": "$E_\\text{p}$ decreases and $E_\\text{k}$ increases by the same amount, so the sum stays the same.",
             "feedback": "Correct. On every row the sum $E_\\text{p} + E_\\text{k} + E_\\text{thermal}$ is $981\\,\\text{J}$. Energy only changes form between potential energy and kinetic energy, and no thermal energy is produced.",
             "correct": true
           },
           {
-            "text": "The total energy increases, because the skateboarder gains speed.",
+            "text": "The total energy increases, because the skateboarder keeps gaining speed.",
             "feedback": "Column $E$ is the same on every row. The speed increases because potential energy changes into kinetic energy, not because more energy arrives."
           },
           {
-            "text": "The kinetic energy is always equal to the potential energy.",
+            "text": "The kinetic energy is equal to the potential energy at every point.",
             "feedback": "The values in columns $E_\\text{p}$ and $E_\\text{k}$ are different on different rows. Only their sum stays the same."
           },
           {
-            "text": "The total energy decreases, because kinetic energy is produced.",
+            "text": "The total energy decreases, because kinetic energy is produced on the way down.",
             "feedback": "Kinetic energy does not come from nothing but from potential energy. The total energy does not decrease; column $E$ stays the same."
           }
         ]
@@ -325,20 +325,20 @@
       "prompt": "A student says: \"When a car brakes and stops, its kinetic energy disappears, because the car is no longer moving.\" Where is the error?",
       "choices": [
         {
-          "text": "The kinetic energy does not disappear but changes into thermal energy in the brakes and tyres, and energy is conserved.",
-          "feedback": "Correct. A stopped car has no kinetic energy, but the brakes and tyres have warmed up. The thermal energy is equal to the original kinetic energy of the car.",
+          "text": "The kinetic energy does not disappear but changes into thermal energy in the brakes and tyres.",
+          "feedback": "Correct. A stopped car has no kinetic energy, but the brakes and tyres have warmed up. The thermal energy is equal to the original kinetic energy of the car, so energy is conserved.",
           "correct": true
         },
         {
-          "text": "The kinetic energy changes into potential energy, because the car stops.",
+          "text": "The kinetic energy changes into potential energy when the car stops and no longer moves.",
           "feedback": "The car has not risen higher, so the potential energy has not increased. The energy has changed into thermal energy."
         },
         {
-          "text": "There is no error, because an object at rest has no energy.",
+          "text": "There is no error, because an object at rest has no energy at all.",
           "feedback": "An object at rest has no kinetic energy, but it has other forms of energy, and the total energy is conserved. In braking the energy changes into thermal energy."
         },
         {
-          "text": "The kinetic energy changes into chemical energy in braking.",
+          "text": "The kinetic energy changes into chemical energy of the brake pads in braking.",
           "feedback": "No chemical reactions take place in ordinary friction brakes. The friction of the brakes changes the kinetic energy into thermal energy."
         }
       ]
@@ -406,10 +406,32 @@
       ]
     },
     {
+      "id": "check-kitka",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Friction and total energy",
+      "prompt": "A skater slides down a half-pipe with friction from the rim to the bottom. The skater, the half-pipe and the surrounding air together form an isolated system. What stays the same during the whole slide?",
+      "choices": [
+        {
+          "text": "The total energy $E_\\text{p} + E_\\text{k} + E_\\text{thermal}$, when all forms of energy are counted.",
+          "correct": true,
+          "feedback": "Correct. Friction changes part of the mechanical energy into thermal energy, which warms the wheels, the track and the air. Energy is neither created nor destroyed, so the sum of the three energies stays the same even though each of them changes."
+        },
+        {
+          "text": "The mechanical energy $E_\\text{p} + E_\\text{k}$, because potential energy changes into kinetic energy.",
+          "feedback": "Without friction this would be true. On a track with friction, part of the mechanical energy changes into thermal energy, so $E_\\text{p} + E_\\text{k}$ decreases during the slide. Only the sum that includes the thermal energy stays the same."
+        },
+        {
+          "text": "No energy, because friction uses up part of the energy along the way.",
+          "feedback": "Friction does not destroy energy but changes mechanical energy into thermal energy. The thermal energy still exists in the track, the wheels and the air, so the total energy $E_\\text{p} + E_\\text{k} + E_\\text{thermal}$ stays the same."
+        }
+      ]
+    },
+    {
       "id": "check-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Calculation",
+      "title": "3. Calculation",
       "prompt": "An incandescent bulb takes electrical energy of $2.5\\,\\text{kJ}$ and changes $0.12\\,\\text{kJ}$ of it into visible light. The rest changes into thermal energy. How much energy is changed into thermal energy? Answer in joules.",
       "answer": 2380,
       "unit": "J",
@@ -439,7 +461,7 @@
       "id": "check-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Explain",
+      "title": "4. Explain",
       "prompt": "Explain in your own words why a bouncing ball finally stops even though energy is not lost. Say which forms of energy are involved and what the law of conservation of energy says.",
       "criteria": [
         "I say that the potential energy of the ball at the start changes into kinetic energy and that in the bounces part of it changes into thermal energy.",
@@ -453,7 +475,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Finally, three quick questions. Answer first by yourself and only then open the answer."
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
     }
   ]
 }

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e65bc909801e7b5
+CONTENT-HASH: ae11bc9f9a4036e3
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-batch delta review (re-review): goal 2 is now one clause, "vertailemaan ... ja selittämään ...", completing "Tällä tunnilla opit"; all three goals use lowercase -maan/-mään verbs and keep the earlier skill, demand and terms.
+- Translation review against the reviewed Finnish (2026-10-29): the rebalanced options keep length within the same range per item (check_choices clean), the correct option is not the longest by design, distractors stay plausible misconceptions, feedback names the error without giving the next answer away, the opening question no longer states the ratio. Selkeä suomi: short sentences, same terms, decimal comma, every formula kept.

@@ -102,6 +102,8 @@ lessons/<COURSE>/<id>/answers.py                    every exercise answer (lesso
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
+Optional `"core": true` marks an exercise as a core exercise (*Ydintehtävä*, teacher 2026-10-29): the page tags it and the exercise path says core first, then extra practice, then the challenging level. Without any `core` flag the first two exercises of levels 1 and 2 are core (build.py `core_ids`).
+
 `answers.py` in `lessons/<course>/<id>/` computes every exercise answer and prints `{id: value}`; the lint compares it with
 `exercises/exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
 Every exercise shows its complete worked solution from `solutions.md` behind its own *Näytä ratkaisu* button (`meta.solutions` is `all`, teacher 2026-10-27); `scripts/check_solutions.py --all` lists any missing or incomplete solution.

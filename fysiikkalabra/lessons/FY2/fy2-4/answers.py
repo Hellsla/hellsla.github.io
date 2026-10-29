@@ -18,6 +18,6 @@ a["fy2-4-L2-04"] = 15 / 0.25 - 15                         # engine: P_o = P_a / 
 # Level 3: reasoning, two ideas, an unfamiliar context
 a["fy2-4-L3-01"] = (150 / 200) / ((4.0 - 2.0) / 4.0)      # A: 150/200 = 0,75; B: (4,0 − 2,0)/4,0 = 0,50; ratio 1,5
 a["fy2-4-L3-02"] = 0.50e6 / (0.20 * (1.2 * 1000))         # panel: 1,2 kW = 1200 W, 0,50 MJ = 500 000 J; t = E_a / (eta P_o) = 2083 s
-a["fy2-4-L3-03"] = 240 * (1 - 1.5 / 6.0)                  # Sankey: 6,0 cm = 240 J, eta = 1,5 cm / 6,0 cm = 0,25; E_h = 240 J · 0,75 = 180 J
+a["fy2-4-L3-03"] = 240 * 6 / 8                           # read off fy2-4/grid: input 8 squares = 240 J, loss arrow 6 squares -> 180 J
 # Inquiry tasks (not in exercises.json) are in lesson-answers.py
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

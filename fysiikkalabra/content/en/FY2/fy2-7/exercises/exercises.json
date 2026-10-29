@@ -11,10 +11,11 @@
     {
       "id": "fy2-7-L1-02",
       "level": 1,
-      "text": "A heating plant feeds $360\\,\\text{MWh}$ of thermal energy into the district heating network in a week, and $327\\,\\text{MWh}$ reaches the customers. How much energy is lost in the network? Give your answer in megawatt-hours.",
-      "answer": 33,
+      "text": "The figure shows the energy flows of the electricity grid and the district heating network. A heating plant feeds $360\\,\\text{MWh}$ of thermal energy into the district heating network in a week. Read from the figure what share of the energy sent into the district heating network is lost. How much energy is lost in the network during the week? Give your answer in megawatt-hours.",
+      "figure": "fy2-7/sankey",
+      "answer": 32.4,
       "unit": "MWh",
-      "tolerance": 0.02
+      "tolerance": 0.03
     },
     {
       "id": "fy2-7-L1-03",

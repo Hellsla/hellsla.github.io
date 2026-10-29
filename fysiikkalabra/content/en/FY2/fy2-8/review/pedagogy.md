@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9ea59e1ba94b1d87
+CONTENT-HASH: b9a8c43bd8d4c4fb
+
 ## Blocking
-(none)
+- none
+
 ## Polish
-(none)
+- none
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Checked (batch delta review): the same demand as the Finnish in every new and reworded item; correct options are not the longest (check_choices clean); feedback per option translated fully; the exit ticket is two questions as in Finnish and its first question was removed from the list, so the remaining pair keeps its order; the comparison item still makes the student ask for energy before comparing emissions.

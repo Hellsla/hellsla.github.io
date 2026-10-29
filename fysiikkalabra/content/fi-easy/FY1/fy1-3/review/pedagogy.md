@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9821b2f19d849450
-
+CONTENT-HASH: e4e7aaa1204bbf55
 ## Blocking
 
 ## Polish
 - None.
-
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+batch delta review: new paragraph is placed right after the half-range figure, short, clear, uses established terms (hajonta/lukeman epävarmuus), and 'kuten alla' points to the reading-uncertainty paragraph two blocks later; consistent with the lesson; no tasks or feedback touched.

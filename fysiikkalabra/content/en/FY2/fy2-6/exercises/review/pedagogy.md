@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e9d5b82fb5102683
+CONTENT-HASH: e9496b837c267421
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- exercises.json level2[3] — "The annual consumption of how many households would the plant cover?" → "How many households' annual consumption would the plant cover?"
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Task wording, step labels, answer phrasing and unit words (pcs, million, times).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked renewable wording (lesson.md) and the wind-turbine solution (inquiry.json) in the exercises against the new Finnish.
+Translation delta review against the reviewed Finnish: L1-04 figure-reading exercise (text, figure fy2-6/fi-bars, answer 26.4 %, unit and tolerance unchanged), solutions.md L1-04 (Annettu, Kuvaajan lukeminen step, 20.2 + 0.9 = 21.1 TWh of 79.9 TWh = 0.2641, three significant figures). Numbers, units and LaTeX preserved; the task does not give the readings away; figure is labelled in the language. Pedagogy: demand and scaffolding match the Finnish; the check is answerable from the lesson.

@@ -83,3 +83,7 @@ def emissions():
 
 
 FIGURES = {"greenhouse": greenhouse, "emissions": emissions}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "emissions": "safe: the lifecycle emission factors printed at the bars; the description gives coal/nuclear ≈ 70, so do not ask that ratio",
+}

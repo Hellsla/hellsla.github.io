@@ -8,7 +8,7 @@ a = {}
 a["fy2-6-L1-01"] = 2.5 * 168                # wind turbine, mean 2,5 MW for a week 168 h: E = 420 MWh
 a["fy2-6-L1-02"] = 120 * 8.0                # hydro plant, 120 MW for 8,0 h: E = 960 MWh
 a["fy2-6-L1-03"] = 1.6 * 24                 # OL3, 1,6 GW for 24 h: E = 38,4 GWh -> 38 GWh
-a["fy2-6-L1-04"] = 20.2 / 79.9 * 100        # wind share of production: 20,2 TWh : 79,9 TWh = 0,2528 -> 25,3 % (three figures)
+a["fy2-6-L1-04"] = (20.2 + 0.9) / 79.9 * 100  # read off fy2-6/fi-bars: wind 20,2 TWh + solar 0,9 TWh = 21,1 TWh of 79,9 TWh = 0,2641 -> 26,4 %
 a["fy2-6-L1-05"] = 4.0 * 3.5                # house solar panels, 4,0 kW for 3,5 h: E = 14 kWh
 # Level 2: two steps or a conversion
 P_ka = 0.32 * 25                            # wind farm: mean power 32 % of rated 25 MW = 8,0 MW

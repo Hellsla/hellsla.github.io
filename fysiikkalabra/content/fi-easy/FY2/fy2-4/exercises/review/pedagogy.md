@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 20c8e58c4485bea3
+CONTENT-HASH: b316575509db13fd
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- exercises/solutions.md (all 12 solutions) — file was byte-identical to the dense Finnish original → rewritten in Selkeä suomi: Periaate, Muunnokset, Vastaus and Järkevyys split into short main-clause sentences ("Vastauksessa on kaksi merkitsevää numeroa …", "Tunnemme molemmat energiat. Hyötysuhde on siis niiden suhde."), "muunnetaan" → "muutetaan"; no step, check or number removed
+(none)
 
 ## Polish
-- exercises.json task texts were already simplified and fine.
+- none beyond the open polish of the Finnish reviews, which the translation follows.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): task texts ask the same thing, solution steps complete with Finnish step labels, demand unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked efficiency wording (lesson.md, inquiry.json feedback/prompt/goal, solutions.md Reasonableness) in the exercises against the new Finnish.
+- L3-03 figure-reading task and solution follow the Finnish: 240 J, 8/2/6 squares, E_h = 6/8 * 240 J = 180 J; units, LaTeX, number format preserved; the figure gives no answer. Sentences shortened, same steps.
+- Hash unchanged at end.

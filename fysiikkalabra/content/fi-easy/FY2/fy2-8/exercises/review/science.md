@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 56c99a342400c0f8
+CONTENT-HASH: ac3ab83b5af60863
 
 ## Blocking
-- none left (fixes listed under Fixed)
-
-## Fixed
-- none needed for the physics; the language edits (see pedagogy.md) keep every number, symbol and step
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md against the Finnish: numbers, answers, units, significant figures, conversions, the count of $…$ formulas (check_i18n fi-easy: 0 errors).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (no Finnish change in exercises; fossil-fuel wording only in lesson/inquiry)
+- Selkeä suomi: tehtävä L1-05 lukee päästökertoimen kuvasta (vastaus 1,2 kg ennallaan); ratkaisuun lisätty kuvaajan lukemisen vaihe; L3-01 järkevyys ja johtopäätös seuraavat pehmennettyä suomea (kivihiili noin 10 % rajan yli, ero pienempi kuin epävarmuus). Luvut, yksiköt ja merkitsevät numerot säilyneet.

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 04ffee00d9faafe7
+CONTENT-HASH: a5463a15c9afb507
+
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- (none)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Translation review against the reviewed Finnish (2026-10-29 update): check-c2 keeps the same demand (unit conversion before comparison), the correct option is not the longest (check_choices clean), feedback per option is complete and does not give the answer away before the choice; exit-ticket intro says two questions and matches the two questions; step numbering 1-4 consistent; figures labelled in the language and layout checked at 360 and 1280 px.

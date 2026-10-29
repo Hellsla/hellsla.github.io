@@ -1,4 +1,4 @@
-# Tasainen liike: s = vt
+# Tasainen liike – nopeus, paikka ja kuvaajat
 
 > **Miksi** Voyager 2 -luotaimen paikan voi laskea etukäteen mille tahansa päivälle, vaikka se on yli 20 miljardin kilometrin päässä Auringosta?
 

@@ -7,7 +7,8 @@ a = {}
 # Level 1: one formula, values given
 a["fy2-1-L1-01"] = 50.0 + 0.0                        # stone: E_p at the top 50 J, E_k = 0, E_p at the ground 0 -> E_k = 50 J
 a["fy2-1-L1-02"] = 245.0 - 6.0                       # leaf: 245 J of radiation = 6,0 J chemical + thermal -> 239 J
-a["fy2-1-L1-03"] = 800.0 - 160.0                     # solar panel: 800 J of radiation -> 160 J electrical + thermal = 640 J
+# skater, read off fy2-1/kitka-pylvaat: E_p + E_k at A 700 J + 0 J, at C 0 J + 500 J; friction turned the difference into thermal energy
+a["fy2-1-L1-03"] = (700.0 + 0.0) - (0.0 + 500.0)
 # fy2-1-L1-04 is answered in words (naming the forms): no number
 a["fy2-1-L1-05"] = 600.0 - 90.0                      # sledge: E_p 600 J = E_k + 90 J -> E_k = 510 J
 # Level 2: a conversion, a rearrangement or two steps

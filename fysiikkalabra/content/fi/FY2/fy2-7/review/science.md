@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5ee0755d24f7360c
+CONTENT-HASH: f9f9e2931bcf38c1
 
 ## Blocking
+(none)
 
 ## Polish
-- lesson.md:248 — "häviö vähennetään yksikkönä prosentista" is hard to parse; e.g. "Kolmas virhe on vähentää prosenttiluku suoraan energiasta: häviö 4 % ei tarkoita 4 MWh …".
-- inquiry.json:348 — tarkistus-2 mistake 469 says "Häviöprosentti lasketaan lähtevästä energiasta", but the task gives a hyötysuhde 75 %, not a häviöprosentti; "Hyötysuhde ja häviön osuus lasketaan lähtevästä energiasta" fits the task.
-- lesson.md:115 — 4 % of 83 TWh is 3,3 TWh while the inquiry table rounds the loss to 3 TWh (3 : 83 = 3,6 %); harmless, but giving 3,3 TWh in the table would keep the two numbers consistent.
+- lesson.md "Siirtohäviö" and inquiry.json johtopaatos model — "kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä lämpimämpää" explains why district heat loses at all (conduction through insulation, grows with temperature difference), but the electricity grid loses by a different mechanism (Joule heating), so the "koska" over-claims as the cause of the difference between the two percentages (C/B). Say "lämpöä karkaa eristeen läpi ... ja siksi häviö on kaukolämmössä merkittävä" without presenting it as the reason for the comparison.
+- lesson.md "Muuntaja nostaa jännitteen..." — a transformer works only with alternating voltage; condition unstated (B, fine at FY2 level).
+- inquiry.json check-c2 correct option — "siirtyy ympäröivään ilmaan"; the lesson says "ympäristöön" (underground cables and pipes heat the ground). Use "ympäristöön".
+- lesson-answers.py — has exit-1 and exit-3 values, but exit-ticket.json holds only one question; stale.
 
 ## Checked
-- Worked example recomputed: 0,910 · 245 MWh = 222,95 → 223 MWh, loss 22,05 → 22 MWh; staged, symbolic first, figures justified (η 0,910 from 9,0 %, loss two figures), energy balance check real.
-- District heat 36,0 − 32,7 = 3,3 TWh, 9,17 → 9,2 % (mistakes 10,1 and 3,3 correct); "erotus pääosin häviötä, arvio" states the condition.
-- Voltage table consistent with P_häviö = (P/U)²R for one fixed R ≈ 3,2 Ω: 0,80 / 0,026 / 0,0020 MW; 20× voltage → 400× smaller loss; 8,0 % and 0,020 % correct; no FY-sähköoppi formula shown (qualitative, stated as later course).
-- Battery transfer 1,8 : 12,0 = 15 % (mistakes 85 and 17,6 correct); check-2 375 : 0,75 = 500 MWh (mistakes 281, 469 correct); exit ticket 768 MWh, 48 kWh; virhe item 20 MWh / 480 MWh.
-- Sankey figure to scale: 96/4 and 91/9 strip heights within 0,2 px.
-- Grid voltages 110–400 kV, 20 kV, 0,4 kV, 230 V correct; losses explained by current heating the conductor; district-heat loss by temperature difference through the insulation.
-- Every choice item has exactly one correct option; distractor feedback (incl. "korkea jännite voimakkaampaa", "johtaa paremmin", "turvallisempaa") says why it is wrong.
-- Energy conservation wording (häviö muuttuu lämmöksi ympäristöön, ei katoa) the same in theory, misconception, summary, model answers and exit ticket; storage converts forms with heat loss.
-- Statistics carry source and year (Energiateollisuus 2024); invented situations marked esimerkki / malli.
-- FY2 scope kept (no chain product, no conduction formula); hash identical at start and end.
+- Hash at start and end b356ea48282f972e; recomputed all lesson and inquiry numbers in one script (example 222,95/22,05 MWh; kaukolämpö 3,3 TWh = 9,17 % -> 9,2; wrong 10,1; sähkö 83 · 4 % = 3,3 TWh; 3 : 83 = 3,6 % ≈ 4; battery 15 %; check 375 : 0,75 = 500, wrong 281/469; Etsi virhe 480/20 MWh).
+- Voltage table: loss scales as 1/U^2 (0,80 -> 0,0264 at 110 kV -> 0,0020 at 400 kV); 8,0 % and 0,020 %; 400-fold vs 20-fold correct; labelled as model values, not measurements.
+- Exactly one correct option in every choice; each distractor wrong and its feedback right (incl. "kaksinkertainen jännite puolittaa häviön").
+- Sankey proportions (80 / 77 / 3 and 73 / 7 px) match 96/4 and 91/9; electricity base (consumption incl. losses as input) stated.
+- Scope: no Q = cmΔT, no P = UI or I^2R formulas, no chain efficiencies; data sourced (Energiateollisuus 2024) and examples marked.
+- Worked example symbolic first, rounding reasons sound; exit ticket and summary agree with theory.
+- Delta (commit 01da3ae6, option texts rebalanced): every changed option re-read; correct options still correct and match feedback, distractors still wrong with fitting feedback.

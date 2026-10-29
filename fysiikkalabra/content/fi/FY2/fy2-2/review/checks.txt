@@ -2,9 +2,9 @@ ok   lint
 ok   latex
 ok   build
 ok   sims
-ok   inquiry (64 passed, 0 failed)
+ok   inquiry (67 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 ok   layout 768 px
 ok   layout 1280 px
-fy2-2: draft (science=stale, pedagogy=stale); exercises: draft (science=stale, pedagogy=stale)
+fy2-2: draft (science=stale, pedagogy=stale); exercises: reviewed (science=PASS, pedagogy=PASS)

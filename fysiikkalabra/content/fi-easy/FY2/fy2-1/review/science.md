@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8f80347ef56d70fa
+CONTENT-HASH: 6610f42a5d078a6f
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- none
+(none)
 
 ## Polish
-- none
+- (none beyond the Finnish report's own polish items, which are carried unchanged)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (incl. intro, names, solutions, models), exit-ticket.json, figures.json: same physics, numbers with decimal comma, symbols and Finnish step labels; the simplified texts below keep every formula, value and reasoning step.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson, inquiry, exit ticket and figure texts (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).
+- Compared inquiry.json, lesson.md, exit-ticket.json and meta.json with the reviewed Finnish: every number, unit, `$...$` formula, correct option and experiment setting is preserved (decimal comma kept).
+- check-kitka: exactly one correct option (total energy including thermal); both distractors stay wrong for the reason their feedback gives; feedback is translated fully and states the physics as in Finnish (friction changes mechanical into thermal energy, nothing is destroyed).
+- Rebalanced options (pred-2, koe-1, virhe) follow the new Finnish wording; the correct option is not the longest; the added "so energy is conserved" in the virhe feedback matches.
+- Opening question no longer gives the answer away; exit ticket has two questions and the intro says two.
+- Figure texts: the new kitka-pylvaat description lists 700/0, 300/300, 0/500 J as in the figure, no thermal energy; figures up to date in the language.
+- Terms (Selkeä suomi, same physics terms) follow the glossary.

@@ -28,16 +28,16 @@
       "prompt": "Auto jarruttaa ja pysähtyy. Mikä kuvaus auton liike-energiasta on oikea (luku *Energialajit ja energian säilyminen*)?",
       "choices": [
         {
-          "text": "Liike-energia häviää, koska auto ei enää liiku.",
+          "text": "Liike-energia häviää, koska auto ei enää liiku eikä sillä siksi ole energiaa.",
           "feedback": "Energia ei häviä. Kun auto pysähtyy, sen liike-energia muuttuu muuksi energiaksi. Energiaa on yhteensä yhtä paljon kuin ennen jarrutusta."
         },
         {
-          "text": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä pääosin lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin ennen.",
-          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa: liike-energiasta tulee lämpöenergiaa. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja. Lisäksi lasketaan energiaa jouleina.",
+          "text": "Liike-energia muuttuu pääosin lämpöenergiaksi. Energian kokonaismäärä säilyy.",
+          "feedback": "Oikein. Energia säilyy ja vaihtaa muotoa. Jarruissa, renkaissa ja tiessä liike-energiasta tulee lämpöenergiaa. Lämpöenergia siirtyy lämpönä ympäristöön ja hajaantuu. Tänään tarkastellaan tällaisia ketjuja. Lisäksi lasketaan energiaa jouleina.",
           "correct": true
         },
         {
-          "text": "Liike-energia siirtyy tiehen ja jää sinne liike-energiana.",
+          "text": "Liike-energia siirtyy jarrutuksessa tiehen ja jää sinne liike-energiana.",
           "feedback": "Tie ei lähde liikkeelle. Energia ei siis jää sinne liike-energiana. Se muuttuu lämpöenergiaksi, joka lämmittää jarruja, renkaita ja tietä."
         }
       ]
@@ -237,7 +237,7 @@
       "prompt": "Opiskelija muuntaa energian $2{,}5\\,\\text{kJ}$ jouleiksi. Hän kirjoittaa $2{,}5\\,\\text{kJ} = 2{,}5 : 1000\\,\\text{J} = 0{,}0025\\,\\text{J}$. Missä on virhe?",
       "choices": [
         {
-          "text": "Kilo tarkoittaa tuhatta, joten luku pitäisi kertoa tuhannella: $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
+          "text": "Kilojoule on tuhat joulea, joten oikein on $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
           "feedback": "Oikein. Etuliite kilo tarkoittaa tuhatta. Kilojoulessa on siis tuhat joulea, ja jouleina luku on tuhatkertainen. Voit tarkistaa järkevyyden suuruusluokasta: joule on pienempi yksikkö kuin kilojoule, joten lukuarvon pitää kasvaa.",
           "correct": true
         },
@@ -246,7 +246,7 @@
           "feedback": "Päinvastoin: joule on pienempi yksikkö kuin kilojoule. Samaan energiaan tarvitaan siis enemmän jouleja eli suurempi luku."
         },
         {
-          "text": "Tulos olisi pitänyt jakaa vielä sadalla, koska kilo on sata.",
+          "text": "Tulos olisi pitänyt jakaa vielä sadalla, koska etuliite kilo tarkoittaa sataa.",
           "feedback": "Kilo on tuhat, ei sata. Muunnos tehdään korvaamalla etuliite arvollaan, $\\text{kJ} = 1000\\,\\text{J}$."
         }
       ]
@@ -291,17 +291,43 @@
       "prompt": "Akkuun on ladattu $54\\,\\text{kJ}$. Puhelimella katsellaan videota, ja akku tyhjenee. Mikä kuvaus akun energiasta on oikea?",
       "choices": [
         {
-          "text": "Akun energia on kulunut loppuun, joten sitä ei ole enää olemassa.",
+          "text": "Akun energia on kulunut videon katselussa loppuun, joten sitä ei ole enää olemassa.",
           "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki on hajaantunut lämpönä ympäristöön."
         },
         {
-          "text": "Akun $54\\,\\text{kJ}$ on muuttunut puhelimessa muihin muotoihin, lopulta lähes kokonaan lämpöenergiaksi. Energiaa on yhteensä yhtä paljon kuin alussa.",
+          "text": "Akun $54\\,\\text{kJ}$ on muuttunut lähes kokonaan lämpöenergiaksi. Energiaa ei ole hävinnyt.",
           "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
           "correct": true
         },
         {
-          "text": "Akun energia on kasvanut, koska puhelin lämpenee.",
+          "text": "Akun energia on kasvanut, koska puhelin lämpenee videon katselun aikana.",
           "feedback": "Puhelimen lämpeneminen on akun energian muuttumista lämpöenergiaksi. Lämpöenergia ei ole uutta energiaa. Akun kemiallinen energia pienenee yhtä paljon kuin lämpöenergia kasvaa."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Etuliitteet ja suuruus",
+      "prompt": "Suklaalevyn pakkauksessa lukee energia $2{,}2\\,\\text{MJ}$. Omenan energia on $300\\,\\text{kJ}$. Kumpi sisältää enemmän energiaa? Kuinka moninkertaisesti?",
+      "choices": [
+        {
+          "text": "Suklaalevy, noin $7$ kertaa enemmän kuin omena.",
+          "correct": true,
+          "feedback": "Oikein. Lukuja voi verrata vasta samassa yksikössä. $2{,}2\\,\\text{MJ} = 2{,}2 \\cdot 1000\\,\\text{kJ} = 2200\\,\\text{kJ}$. Sitten $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Omena, koska luku $300$ on suurempi kuin $2{,}2$.",
+          "feedback": "Luvut eivät ole samassa yksikössä. Megajoule on tuhat kilojoulea. Kun $2{,}2\\,\\text{MJ}$ muutetaan kilojouleiksi, saadaan $2200\\,\\text{kJ}$. Se on enemmän kuin omenan $300\\,\\text{kJ}$."
+        },
+        {
+          "text": "Suklaalevy, noin $1000$ kertaa enemmän kuin omena.",
+          "feedback": "Tuhat on etuliitteiden mega ja kilo suhde. Myös lukuarvot $2{,}2$ ja $300$ pitää ottaa huomioon. Samassa yksikössä $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Suklaalevy, noin $7000$ kertaa enemmän kuin omena.",
+          "feedback": "Muunsit megajoulet kilojouleiksi kertoimella miljoona. Megajoulessa on miljoona joulea, mutta vain tuhat kilojoulea. Siis $2{,}2\\,\\text{MJ} = 2200\\,\\text{kJ}$ ja $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
         }
       ]
     },
@@ -309,7 +335,7 @@
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Vertailu",
+      "title": "3. Vertailu",
       "prompt": "Salamanisku vapauttaa keskimäärin noin $1{,}0\\,\\text{GJ}$ energiaa. Päivän ruoan energia on $10\\,\\text{MJ}$. Montako päivän ruokaa salaman energia vastaa?",
       "answer": 100,
       "unit": "kpl",
@@ -335,7 +361,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "optional": true,
       "prompt": "Selitä, miksi sanotaan, ettei energiaa voi kuluttaa loppuun, vaikka bensiinitankki tyhjenee. Käytä esimerkkinä auton ajamista. Käytä sanoja energiaketju ja lämpöenergia.",
       "criteria": [
@@ -344,13 +370,13 @@
         "Sanon, että lopulta suuri osa on lämpöenergiaa, joka siirtyy lämpönä ympäristöön ja hajaantuu.",
         "Selitän, miksi hajaantunut lämpöenergia ei ole enää helposti hyödynnettävissä."
       ],
-      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei voi enää kerätä takaisin ja käyttää. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
+      "model": "Auton moottorissa bensiinin kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Ajaessa ilmanvastus, renkaat ja jarrut muuttavat liikkeen energian lämpöenergiaksi. Lämpöenergia hajaantuu ilmaan ja tiehen. Energiaa ei siis katoa: ketjun alussa ja lopussa sitä on yhtä paljon. Tankki tyhjenee, koska energia on muuttunut muotoon, jota ei enää helposti saa kerättyä takaisin käyttöön. Siksi energiaa tarvitaan jatkuvasti uutta, esimerkiksi polttoaineesta tai Auringosta."
     },
     {
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
     }
   ]
 }

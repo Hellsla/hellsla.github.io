@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c6ee49f01acca513
+CONTENT-HASH: e898ea7e4ef54019
 
 ## Blocking
-(none left)
-
-## Fixed
-- (none needed)
+(none)
 
 ## Polish
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): solutions.md and exercises.json are in short Selkeä suomi sentences ("Tee arvio", split Periaate/Vastaus sentences, "additiivinen" explained) with all steps and the same demand.
-- Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise text and solutions (L2-03 wording, L3-02 reasonableness).
+- exercises.json L1-05 (figure-reading: AA battery 10^4 J, lightning 10^9 J, N = 10^5 = 100 000) recomputed; text, figure id fy2-2/tikapuut-kohteet, answer, unit and tolerance equal the reviewed Finnish; solutions.md L1-05 steps, powers of ten and the reading of the graph match the figure (AA at 4 steps, lightning at 9); no value of the figure is given away in the text. Other exercises untouched. Selkeä suomi: short sentences, same physics terms and demand.

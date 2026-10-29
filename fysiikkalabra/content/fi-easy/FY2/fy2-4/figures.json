@@ -5,5 +5,10 @@
  "valo": "valo",
  "lämpö": "lämpö",
  "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W; hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W; hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu, mutta ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.": "Kaksi energiavirtakuviota samassa mittakaavassa. Ylhäällä hehkulamppu ottaa tehon 60 W ja antaa valotehoa 3 W. Hyötysuhde on 5 prosenttia, ja 57 W muuttuu lämmöksi. Alhaalla ledilamppu ottaa tehon 10 W ja antaa saman valotehon 3 W. Hyötysuhde on 30 prosenttia, ja 7 W muuttuu lämmöksi. Molemmissa vihreä valoteho-nuoli on yhtä paksu. Ledilampun tuleva nuoli on kuudesosa hehkulampun tulevasta nuolesta.",
- "ledilamppu": "ledilamppu"
+ "ledilamppu": "ledilamppu",
+ "Energiavirtakuvio mittakaavassa ruutupaperilla: sähkömoottoriin tulee sähköenergiaa 240 J. Tulevan nuolen paksuus on 8 ruutua. Moottorista lähtee oikealle vihreä hyötyenergian nuoli, liike-energia, jonka paksuus on 2 ruutua, ja alas kaartuva oranssi häviöiden nuoli, lämpö, jonka paksuus on 6 ruutua. Nuolten paksuudet ovat suhteessa energioihin; hyötyenergian ja häviöiden arvoja ei ole merkitty.": "Energiavirtakuvio mittakaavassa ruutupaperilla. Sähkömoottoriin tulee sähköenergiaa 240 J. Tulevan nuolen paksuus on 8 ruutua. Moottorista lähtee oikealle vihreä hyötyenergian nuoli, liike-energia. Sen paksuus on 2 ruutua. Alas kaartuu oranssi häviöiden nuoli, lämpö. Sen paksuus on 6 ruutua. Nuolten paksuudet ovat suhteessa energioihin. Hyötyenergian ja häviöiden arvoja ei ole merkitty.",
+ "moottori": "moottori",
+ "sähkömoottori": "sähkömoottori",
+ "liike-energia": "liike-energia",
+ "lämpö (häviöt)": "lämpö (häviöt)"
 }

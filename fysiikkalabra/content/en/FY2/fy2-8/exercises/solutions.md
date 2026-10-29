@@ -38,9 +38,10 @@
 **Answer:** about $12$ times, two significant figures like the factor $41\,\text{g/kWh}$.
 **Reasonableness:** With rounded numbers $500 : 40 = 12.5$, close to the result. Check by multiplication: one kilowatt-hour from rooftop panels causes $41\,\text{g}$, and $12 \cdot 41\,\text{g} = 492\,\text{g}$, which is almost the $490\,\text{g}$ of natural gas.
 ## fy2-8-L1-05
-**Given:** energy $E = 2.4\,\text{kWh}$; emission factor of natural gas $e = 490\,\text{g/kWh}$
+**Given:** energy $E = 2.4\,\text{kWh}$; emission factor of natural gas electricity $e = 490\,\text{g/kWh}$, read from the figure
 **Find:** emission $m$ in kilograms
 **Principle:** Electricity produced with natural gas causes the same life-cycle emission for every kilowatt-hour, so the emission is the factor times the energy.
+**Reading the graph:** The second bar from the top in the figure is natural gas, dark grey like the fossil fuels, and the number $490$ is at its end. The bar ends between the grid lines $400$ and $600$, a little before the middle ($500$). The unit of the axis is $\text{g}\ \text{CO}_2\text{-eq.}/\text{kWh}$, so $e = 490\,\text{g/kWh}$.
 **Formula:** $m = e \cdot E$
 **Conversions:** The kilowatt-hours cancel, and the result comes out in grams. Finally $1\,\text{g} = 0.001\,\text{kg}$.
 **Substitution:** $m = 490\,\text{g/kWh} \cdot 2.4\,\text{kWh} = 1176\,\text{g} = 1176 \cdot 0.001\,\text{kg} = 1.176\,\text{kg}$
@@ -95,8 +96,8 @@
 **Conversions:** Not needed: the litres and megajoules cancel, and the emission comes out in grams.
 **Substitution:** $m_\text{petrol} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Answer:** $740\,\text{g/kWh}$, two significant figures like the consumption $6.0\,\textsf{l}$ and $18\,\text{kWh}$.
-**Reasonableness:** The limit is close to the $820\,\text{g/kWh}$ of coal but below it: with coal electricity the electric car would be slightly worse, and with natural gas electricity ($490\,\text{g/kWh}$) and wind electricity ($12\,\text{g/kWh}$) clearly better. With rounded numbers $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
-**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is larger than the limit $740\,\text{g/kWh}$, so an electric car charged with coal electricity would not reduce emissions; they would be slightly larger than with the petrol car. The climate benefit of the electric car appears only when the electricity is produced with low emissions. The comparison is rough, because only burning has been counted for petrol.
+**Reasonableness:** The limit is close to the $820\,\text{g/kWh}$ of coal but below it. With natural gas electricity ($490\,\text{g/kWh}$) and wind electricity ($12\,\text{g/kWh}$) the emission of the electric car stays clearly below the limit. With rounded numbers $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
+**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is only about $10\,\%$ larger than the limit $740\,\text{g/kWh}$. The difference is smaller than the uncertainty of the comparison, because for petrol only burning has been counted and not, for example, the emissions from producing, refining and transporting the oil. With coal electricity the emission reduction of an electric car is therefore small or nonexistent, within the accuracy of the comparison. With low-emission electricity, such as wind or hydropower, the electric car is clearly better.
 
 ## fy2-8-L3-02
 **Given:** energy $E = 100\,\text{GWh}$ per year; yield of the solar park $q_\text{a} = 0.50\,\text{GWh/ha}$ and yield of the energy field $q_\text{b} = 0.010\,\text{GWh/ha}$ per year; $1\,\text{ha} = 0.01\,\text{km}^2$

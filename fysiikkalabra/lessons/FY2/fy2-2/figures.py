@@ -78,7 +78,7 @@ def tikapuut():
     for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
         f.tex(X(k), y0 + 30, lab, "middle", w=90)
     f.tex(300, 350, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
-    items = [(0, 252, r"\text{omena}\ 1\,\text{J}", "start", 150), (3, 214, r"\text{tulitikku}\ 1\,\text{kJ}", "end", 190),
+    items = [(0, 252, r"\text{omena metrin ylös}\ 1\,\text{J}", "start", 240), (3, 214, r"\text{tulitikku}\ 1\,\text{kJ}", "end", 190),
              (7, 176, r"\text{päivän ruoka}\ 10\,\text{MJ}", "end", 260), (9.2, 138, r"\text{bensiinitankki}\ 1{,}6\,\text{GJ}", "end", 300),
              (14.14, 100, r"\text{Olkiluoto 3, vrk}\ 140\,\text{TJ}", "end", 340)]
     for k, y, lab, anc, wd in items:
@@ -107,4 +107,33 @@ def sailyminen():
     return f.svg()
 
 
-FIGURES = {"ketju": ketju, "tikapuut": tikapuut, "sailyminen": sailyminen}
+def tikapuut_kohteet():
+    """A task figure: the same power-of-ten scale, other things placed on whole decades, no values printed."""
+    f = Fig("fy22-tikapuut-k", 330, "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin. Asteikolla on "
+            "merkitty 1 J, 1 kJ, 1 MJ, 1 GJ ja 1 TJ, ja jokainen pieni väli on kymmenkertainen. Kolme pistettä on merkitty suuruusluokan "
+            "kohdalle: AA-paristo on yhden pienen välin verran 1 kJ:n oikealla puolella, kupillisen teevettä kiehauttaminen (teeveden kiehautus) kaksi pientä väliä "
+            "1 kJ:n oikealla puolella ja salama kohdassa 1 GJ.")
+    x0, dx, y0 = 96, 33.2, 250
+    X = lambda k: x0 + k * dx
+    f.arrow(x0 - 30, y0, 586, y0, INK, 2.5, 13)
+    for k in range(0, 15):
+        major = k % 3 == 0
+        f.line(X(k), y0, X(k), y0 + (11 if major else 6), INK, 2 if major else 1.5)
+    for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
+        f.tex(X(k), y0 + 30, lab, "middle", w=90)
+    f.tex(300, 308, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
+    items = [(4, 196, r"\text{AA-paristo}", "end", 170), (5, 138, r"\text{teeveden kiehautus}", "start", 250),
+             (9, 80, r"\text{salama}", "start", 110)]
+    for k, y, lab, anc, wd in items:
+        f.line(X(k), y + 12, X(k), y0, MUTED, 1.5, "5 4")
+        f.circle(X(k), y0, 7, HEAT, WHITE, 2)
+        f.tex(X(k) + (10 if anc == "start" else -10), y, lab, anc, w=wd)
+    return f.svg()
+
+
+FIGURES = {"ketju": ketju, "tikapuut": tikapuut, "sailyminen": sailyminen, "tikapuut-kohteet": tikapuut_kohteet}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "tikapuut": "reveals: the energy of each thing placed on the scale, printed beside it",
+    "tikapuut-kohteet": "safe: three things on whole decades of the same scale (10 kJ, 100 kJ, 1 GJ), no values printed",
+}

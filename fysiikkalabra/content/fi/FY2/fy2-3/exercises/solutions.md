@@ -29,14 +29,15 @@
 **Järkevyys:** Uuni muuntaa $1200\,\text{J}$ sekunnissa, ja $60 \cdot 1200\,\text{J} = 72\,000\,\text{J}$. Minuutti on tyypillinen lämmitysaika.
 
 ## fy2-3-L1-04
-**Annettu:** teho $P = 3{,}5\,\text{kW}$
-**Kysytty:** teho watteina
-**Periaate:** Etuliite kilo tarkoittaa tuhatta, joten kilowatti on tuhat wattia. Teho ei muutu, vain yksikkö vaihtuu.
-**Kaava:** etuliite kilo korvataan arvollaan: $P = 3{,}5 \cdot 1000\,\text{W}$
-**Muunnokset:** Kilowatin paikalle kirjoitetaan sen arvo watteina, $1000\,\text{W}$.
-**Sijoitus:** $P = 3{,}5\,\text{kW} = 3{,}5 \cdot 1000\,\text{W} = 3500\,\text{W}$
-**Vastaus:** $3500\,\text{W}$ (eli $3{,}5 \cdot 10^{3}\,\text{W}$), kaksi merkitsevää numeroa kuten lähtötiedossa $3{,}5\,\text{kW}$.
-**Järkevyys:** Watti on tuhat kertaa pienempi yksikkö kuin kilowatti, joten lukuarvon pitää olla tuhatkertainen: 3,5:stä 3500:aan.
+**Annettu:** kuvaajan suorat A ja B, jotka kuvaavat laitteiden muuntamaa energiaa $E$ ajan $t$ funktiona
+**Kysytty:** jyrkemmin nousevan suoran laitteen teho $P$ watteina
+**Periaate:** Laite muuntaa energiaa tasaisesti, joten sen teho on muuntunut energia jaettuna ajalla, $P = \Delta E : \Delta t$. Kuvaajassa tämä on suoran kulmakerroin, joten jyrkemmin nouseva suora A kuuluu suuritehoisempaan laitteeseen.
+**Kuvaajan lukeminen:** Suora A kulkee ruudukon risteyskohtien $(40\,\text{s};\ 60\,\text{kJ})$ ja $(80\,\text{s};\ 120\,\text{kJ})$ kautta. Näiden pisteiden välillä $\Delta E = 120\,\text{kJ} - 60\,\text{kJ} = 60\,\text{kJ}$ ja $\Delta t = 80\,\text{s} - 40\,\text{s} = 40\,\text{s}$.
+**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$
+**Muunnokset:** Teho watteina saadaan, kun energia on jouleina ja aika sekunteina: $60\,\text{kJ} = 60 \cdot 1000\,\text{J} = 60\,000\,\text{J}$.
+**Sijoitus:** $P = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\tfrac{\text{J}}{\text{s}} = 1500\,\text{W}$
+**Vastaus:** $1500\,\text{W}$ eli $1{,}5\,\text{kW}$, kaksi merkitsevää numeroa, koska arvot luetaan ruudukon viivoilta kahden numeron tarkkuudella.
+**Järkevyys:** Suora A nousee $20\,\text{s}$:ssa $30\,\text{kJ}$, eli sekunnissa $1{,}5\,\text{kJ} = 1500\,\text{J}$, mikä on sama tulos. Suora B nousee $80\,\text{s}$:ssa vain $40\,\text{kJ}$, joten sen teho on $500\,\text{W}$, kolmasosa A:n tehosta, ja sen suora on loivempi. Tällainen teho on esimerkiksi mikroaaltouunilla.
 
 ## fy2-3-L1-05
 **Annettu:** teho $P = 1{,}5\,\text{kW}$, aika $t = 2{,}0\,\text{h}$

@@ -11,7 +11,8 @@
     {
       "id": "fy2-5-L1-02",
       "level": 1,
-      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas with a heat of combustion of $48\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ is burnt in a gas boiler. How much energy is released from the gas? Give the answer in megajoules.",
+      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas is burnt in a gas boiler. Read the heat of combustion of natural gas from the bar chart in the figure. How much energy is released from the gas? Give the answer in megajoules.",
+      "figure": "fy2-5/lampoarvot",
       "answer": 96,
       "unit": "MJ",
       "tolerance": 0.02

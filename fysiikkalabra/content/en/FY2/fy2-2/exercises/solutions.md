@@ -39,14 +39,15 @@
 **Reasonableness:** Most goes to the water, $9.0\,\text{MJ}$ out of twelve. Check: $9.0\,\text{MJ} + 3\,\text{MJ} = 12\,\text{MJ}$, which is the same total as at the start.
 
 ## fy2-2-L1-05
-**Given:** a day's food $E_\text{food} = 10\,\text{MJ}$ and an apple $E_\text{apple} = 300\,\text{kJ}$
-**Find:** number of apples $N$
-**Principle:** Every apple has the same energy, so the number is obtained by dividing the energy of a day's food by the energy of one apple, when both are given in the same unit.
-**Formula:** $N \cdot E_\text{apple} = E_\text{food}$, so $N = E_\text{food} : E_\text{apple}$
-**Conversions:** Replace the prefix mega with its value: $10\,\text{MJ} = 10 \cdot 1000\,\text{kJ} = 10\,000\,\text{kJ}$
-**Substitution:** $N = 10\,000\,\text{kJ} : 300\,\text{kJ} = 33.3$
-**Answer:** About $33$ apples, two significant figures as in the energy of a day's food, $10\,\text{MJ}$.
-**Reasonableness:** Estimate: $300\,\text{kJ}$ is about a third of a megajoule, so one megajoule takes three apples and ten megajoules about $30$. The units cancel, so the result is just a number.
+**Given:** energies read from the figure: AA battery $E_\text{b} = 10^{4}\,\text{J}$ and lightning $E_\text{l} = 10^{9}\,\text{J}$ (orders of magnitude)
+**Find:** number of batteries $N$ whose total energy equals that of the lightning flash
+**Principle:** Every battery has the same energy, so the number is obtained by dividing the energy of the lightning flash by the energy of one battery. On a power-of-ten scale every step is a factor of ten, so the power of ten of an energy is read by counting steps.
+**Reading the graph:** The AA battery point is one small step to the right of $1\,\text{kJ} = 10^{3}\,\text{J}$, so its energy is $10 \cdot 10^{3}\,\text{J} = 10^{4}\,\text{J}$. The lightning point is at $1\,\text{GJ} = 10^{9}\,\text{J}$. There are five small steps between the points.
+**Formula:** $N \cdot E_\text{b} = E_\text{l}$, so $N = E_\text{l} : E_\text{b}$
+**Conversions:** Both energies were read in joules, so no conversions are needed.
+**Substitution:** $N = 10^{9}\,\text{J} : 10^{4}\,\text{J} = 10^{9-4} = 10^{5} = 100\,000$
+**Answer:** About $100\,000$ batteries. The result is an order of magnitude, because the energies in the figure are orders of magnitude.
+**Reasonableness:** Five steps of a factor of ten means multiplying by ten five times: $10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000$. The energy of lightning is large, but it is released in an instant; the same energy takes an enormous number of small batteries.
 
 ## fy2-2-L2-01
 **Given:** chocolate bar ($100\,\text{g}$) $E_1 = 2.2\,\text{MJ}$ and nuts $E_2 = 800\,\text{kJ}$

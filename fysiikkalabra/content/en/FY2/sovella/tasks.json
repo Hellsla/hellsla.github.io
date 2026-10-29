@@ -1,0 +1,166 @@
+{
+  "intro": "One extended task brings together the skills of the module: energy, power and the environmental effects of energy production. You decide which data from the material and which models you need, and finally you write a justified recommendation. No production method has been chosen in advance as the right one: the points come from the reasoning.",
+  "tasks": [
+    {
+      "id": "fy2-s1",
+      "title": "A city gives up coal power",
+      "source": "example",
+      "source_note": "The city, its electricity consumption, the plants' powers, capacity factors and seasonal shares are invented example values whose order of magnitude matches Finnish power plants. The emission factors are real: the IPCC Fifth Assessment Report (AR5, 2014), Working Group III, Annex III, life-cycle emission medians, rounded.",
+      "text": "The old coal-fired power plant of an example city is being closed. The city council asks you for a recommendation on how the city's electricity should be produced in the future. The city is connected to the national electricity grid, so it can also buy and sell electricity.\n\n**The city's electricity demand (example)**\n\n- Annual consumption $E = 380\\,\\text{GWh}$. Until now the coal plant has produced all of it.\n- The highest power demand $P_\\text{peak} = 80\\,\\text{MW}$ occurs on a calm, frosty evening in January.\n- A year has $8760\\,\\text{h}$, and the winter months December–February have $90$ days.\n\n**The options, one unit at a time (power and capacity factor are example values, emission factor from IPCC AR5, 2014)**\n\nThe capacity factor $k$ is the plant's average power over a year divided by its rated power $P_\\text{n}$. For a controllable plant it is a typical value: the plant can run more or less when needed.\n\n| Power plant | $P_\\text{n}\\ (\\text{MW})$ | $k$ | $e\\ (\\tfrac{\\text{g}}{\\text{kWh}})$ |\n|---|---|---|---|\n| Natural gas | $50$ | $0.60$ | $490$ |\n| Biomass (wood chips) | $40$ | $0.70$ | $230$ |\n| Wind (onshore) | $5.0$ | $0.32$ | $11$ |\n| Solar (park) | $10$ | $0.11$ | $48$ |\n| Small nuclear | $60$ | $0.90$ | $12$ |\n| Hydro (share) | $20$ | $0.50$ | $24$ |\n| Existing coal plant | $90$ | | $820$ |\n\nIn the table, $e$ is the life-cycle emission factor in grams of carbon dioxide equivalent per kilowatt-hour. It includes the construction of the plant and the production and transport of the fuel. In the figure for biomass, the carbon dioxide from burning is counted as zero, because new growth binds it back over decades.\n\n**Properties of the production methods (example)**\n\n- *Natural gas:* the power can be adjusted quickly up and down. Gas is brought in by pipeline or ship, so availability and price depend on imports.\n- *Biomass:* the power can be adjusted, but more slowly than in a gas plant. Wood chips are transported by lorry, about $30$ lorry loads per day at full power, and forest is felled to produce them.\n- *Wind power:* production depends on the weather. Production can be curtailed but not increased. During a calm, frosty spell the combined output of the wind turbines can be below $5\\,\\%$ of the rated power for several days. The turbines can be seen and heard, and their area takes up land.\n- *Solar power:* production depends on the time of day, the season and cloud cover. On a dark winter evening production is zero. The park takes up about $15\\,\\text{ha}$ of field or forest for every ten megawatts of rated power.\n- *Small nuclear power plant:* usually runs steadily at almost rated power, and the power can also be reduced. Such plants are not yet in use in Finland; licensing and construction are estimated to take more than ten years. Spent fuel is radioactive waste that must be disposed of permanently.\n- *Hydropower:* the power can be adjusted quickly, but the energy of a year depends on rainfall and varies from year to year by about $\\pm 20\\,\\%$. The region's undeveloped rapids are protected, so the city can only buy a share of an existing plant.\n\n**Share of the annual energy in different seasons (example)**: the city's consumption and the production of wind and solar power\n\n| Months | Demand | Wind | Solar |\n|---|---|---|---|\n| Dec–Feb | $31\\,\\%$ | $32\\,\\%$ | $4\\,\\%$ |\n| Mar–May | $25\\,\\%$ | $23\\,\\%$ | $34\\,\\%$ |\n| Jun–Aug | $19\\,\\%$ | $17\\,\\%$ | $45\\,\\%$ |\n| Sep–Nov | $25\\,\\%$ | $28\\,\\%$ | $17\\,\\%$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How many wind turbines are needed to produce as much electricity in a year as the city consumes?",
+          "answer": {
+            "value": 28,
+            "unit": "",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The annual energy of one turbine $E_1 = k \\cdot P_\\text{n} \\cdot t$ and the number of turbines $N = E : E_1$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_1 = 0.32 \\cdot 5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 14.0\\,\\text{GWh}$ and $N \\approx 27.1$."
+            },
+            {
+              "text": "Rounds up to $28$ turbines and justifies it: $27$ turbines would produce too little.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the annual emission of the city's electricity production if the whole annual consumption is produced with coal, natural gas or wind power. By what percentage does the emission decrease in each alternative compared with coal?",
+          "answer": {
+            "value": 186200,
+            "unit": "t",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m = e \\cdot E$, and the energy has been converted to kilowatt-hours: $380\\,\\text{GWh} = 380 \\cdot 10^{6}\\,\\text{kWh}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Coal $3.1 \\cdot 10^{5}\\,\\text{t}$, natural gas $1.9 \\cdot 10^{5}\\,\\text{t}$ and wind power $4.2 \\cdot 10^{3}\\,\\text{t}$ per year, in tonnes or kilograms."
+            },
+            {
+              "text": "Compares the alternatives: natural gas reduces the emission by about $40\\,\\%$, wind power by about $99\\,\\%$.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Suppose the city builds the number of wind turbines from part a. What is the combined average power of the wind turbines in the winter months December–February? Is wind power enough for the city's needs in winter?",
+          "answer": {
+            "value": 58.1,
+            "unit": "MW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Uses the seasonal table: the winter energy is $32\\,\\%$ of the annual energy of the wind turbines and $31\\,\\%$ of the city's annual consumption.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The average power $P = E : t$, where $t = 90 \\cdot 24\\,\\text{h} = 2160\\,\\text{h}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The average power of the wind turbines in winter $\\approx 58\\,\\text{MW}$ and the city's average demand $\\approx 55\\,\\text{MW}$."
+            },
+            {
+              "text": "Concludes that the winter energy is enough on average, but on a calm, frosty evening the output of the wind turbines can be only about $7\\,\\text{MW}$ when the demand is $80\\,\\text{MW}$.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The annual electricity could also be produced by about $40$ solar parks. Using the material, estimate how much the solar parks would help on the peak evening in January. Which production methods in the table could produce power on a calm, frosty evening, and what limitations do they have?",
+          "criteria": [
+            {
+              "text": "Uses the material: in winter solar power gives only about $4\\,\\%$ of the annual energy (about $7\\,\\text{MW}$ on average), and on a dark evening the power is zero.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Names at least two controllable or steadily producing alternatives (natural gas, biomass, hydropower, nuclear power, electricity bought from the grid).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Describes their limitations as properties rather than absolute categories: for example, the energy of hydropower depends on rainfall, a nuclear plant runs steadily but its power cannot be raised above the rated power, and electricity bought from the grid depends on the production of others.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 5,
+          "text": "Write a justified recommendation to the city council for the city's electricity production. The recommendation may be one production method or a combination of them. Present a calculation of the annual energy and emission, the strongest counterargument and your answer to it, and the assumptions your recommendation relies on.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "A clear recommendation that covers the annual energy and either covers the winter peak power or estimates the missing power and says how it is handled. The point comes from the reasoning, not from the production method chosen."
+            },
+            {
+              "text": "Shows by calculation that the annual energy of the recommendation covers the consumption, calculates its annual emission and compares it with at least one other alternative.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Uses at least two other arguments from the material correctly besides emissions (controllability or weather dependence, land use, fuel availability, waste, safety, construction time).",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Presents the strongest counterargument to the recommendation and answers it properly, without claiming that any production method is emission-free.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "For example, that the capacity factors and the energy of hydropower are the same every year, that consumption stays unchanged or electricity can be obtained from the grid, and the effect of the assumption on the recommendation is explained."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy2-6",
+        "transfer": "fy2-8",
+        "concept": "fy2-6",
+        "graph": "fy2-6",
+        "communication": "fy2-8"
+      }
+    }
+  ]
+}

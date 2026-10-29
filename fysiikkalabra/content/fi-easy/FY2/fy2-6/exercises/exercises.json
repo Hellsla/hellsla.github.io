@@ -27,8 +27,9 @@
     {
       "id": "fy2-6-L1-04",
       "level": 1,
-      "text": "Suomessa tuotettiin vuonna 2024 sähköä yhteensä $79{,}9\\,\\text{TWh}$, ja tuulivoiman osuus oli $20{,}2\\,\\text{TWh}$ (Tilastokeskus). Kuinka monta prosenttia sähköstä tuotettiin tuulivoimalla?",
-      "answer": 25.3,
+      "text": "Kuvan pylväskaaviossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin (Tilastokeskus). Kokonaistuotanto oli $79{,}9\\,\\text{TWh}$. Tuulivoima ja aurinkosähkö ovat sääriippuvaisia tuotantotapoja. Lue kuvasta niiden tuotanto. Kuinka monta prosenttia sähköstä ne tuottivat yhteensä?",
+      "figure": "fy2-6/fi-bars",
+      "answer": 26.4,
       "unit": "%",
       "tolerance": 0.02
     },

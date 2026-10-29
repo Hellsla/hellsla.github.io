@@ -3,7 +3,7 @@
   "contribution": "Oppilas oppii vertailemaan energiantuotantotapoja suuruusluokkien avulla. Hän tarkastelee yhden voimalan tehoa, vuosienergiaa $E = P \\cdot t$ ja Suomen sähköntuotannon jakaumaa. Hän oppii erottamaan sääriippuvaisen, säädettävän ja tasaisen tuotannon.",
   "learn": [
     "laskemaan voimalan vuosienergian tai keskitehon kaavalla $E = P \\cdot t$.",
-    "jakamaan voimalat sääriippuvaisiin, säädettäviin ja perusvoimaan ja perustelemaan jaon.",
+    "luokittelemaan voimaloita sääriippuvuuden, säädettävyyden ja tasaisen käytön perusteella ja perustelemaan luokittelun.",
     "vertailemaan tuotantotapoja suuruusluokkien ja kriteerien avulla."
   ],
   "prior": [
@@ -215,16 +215,16 @@
       "prompt": "Opiskelija laskee voimalan keskitehon, kun vuosienergia on $14\\,\\text{GWh}$. Hän kirjoittaa $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ ja ihmettelee, että tulos on valtava. Missä on virhe?",
       "choices": [
         {
-          "text": "Hän kertoi energian ajalla. Keskiteho saadaan jakamalla energia ajalla: $P = E : t = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$.",
+          "text": "Energia kerrottiin ajalla, vaikka keskiteho on $P = E : t \\approx 1{,}6\\,\\text{MW}$.",
           "correct": true,
-          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
+          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla: $P = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
         },
         {
-          "text": "Vuodessa ei ole $8760\\,\\text{h}$, vaan $365\\,\\text{h}$.",
+          "text": "Vuodessa ei ole $8760\\,\\text{h}$ vaan $365\\,\\text{h}$, joten aika on laskussa väärin.",
           "feedback": "Vuodessa on $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$. Virhe ei ole tuntimäärässä. Virhe on se, että energia kerrottiin ajalla."
         },
         {
-          "text": "Teho olisi pitänyt ilmoittaa megawatteina, ja kaava on muuten oikein.",
+          "text": "Teho olisi pitänyt ilmoittaa megawatteina gigawattien sijaan, ja kaava on muuten oikein.",
           "feedback": "Yksikkö ei korjaa tulosta. Oikein laskettuna teho olisi $1{,}6\\,\\text{MW}$. Kertolasku antaa väärän suureen eikä tehoa. Syy on se, että energia kerrottiin ajalla eikä jaettu ajalla."
         },
         {
@@ -280,16 +280,64 @@
           "feedback": "Oikein. Vesivoima on hyvin säädettävää. Turbiinille johdettavaa vettä voi lisätä sekunneissa tai minuuteissa. Lisäksi vesialtaaseen on varastoitu energiaa."
         },
         {
-          "text": "Tuulivoimala, koska tuulivoima on uusiutuvaa.",
+          "text": "Tuulivoimala, koska tuulivoima on uusiutuvaa ja siksi aina käytettävissä.",
           "feedback": "Uusiutuva ei tarkoita säädettävää. Tuulivoimalan teho riippuu tuulesta, eikä sitä voi nostaa, kun tuuli tyyntyy."
         },
         {
-          "text": "Aurinkopaneelit, koska aurinko on aina taivaalla.",
+          "text": "Aurinkopaneelit, koska aurinko on aina taivaalla, vaikka sitä ei näkyisi.",
           "feedback": "Aurinkosähkön teho riippuu säteilystä. Pakkasillalla aurinkoa ei ole lainkaan. Aurinkosähkö ei ole säädettävää."
         },
         {
-          "text": "Ydinvoimala, koska siinä on eniten tehoa.",
-          "feedback": "Ydinvoimala on tehokas, mutta sen tehoa on hidas säätää. Ydinvoimala on tarkoitettu pitämään tasainen perusteho. Se ei seuraa kulutuksen nopeita muutoksia."
+          "text": "Ydinvoimala, koska siinä on eniten tehoa ja sitä voi siksi lisätä eniten.",
+          "feedback": "Ydinvoimalassa on paljon tehoa, mutta sitä ajetaan yleensä tasaisesti. Sen tehoa voi laskea jonkin verran. Sitä ei kuitenkaan käytetä seuraamaan kulutuksen nopeita muutoksia."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Nimellisteho ja tuotanto",
+      "prompt": "Tuulivoimalan nimellisteho on $5{,}0\\,\\text{MW}$. Mitä tämä luku kertoo voimalasta?",
+      "choices": [
+        {
+          "text": "Suurimman tehon, jolla voimala voi toimia, kun tuulee tarpeeksi.",
+          "correct": true,
+          "feedback": "Oikein. Nimellisteho on suurin teho, jolla voimala voi toimia. Tuuli ei puhalla aina sopivalla nopeudella. Siksi tuulivoimalan keskiteho vuoden aikana on usein vain noin kolmannes nimellistehosta."
+        },
+        {
+          "text": "Tehon, jolla voimala tuottaa sähköä aina, kun sen roottori pyörii.",
+          "feedback": "Heikolla tuulella roottori pyörii, mutta voimala tuottaa vain osan nimellistehostaan. Nimellisteho on suurin teho, jolla voimala voi toimia. Se saavutetaan vain, kun tuulee tarpeeksi kovaa."
+        },
+        {
+          "text": "Voimalan keskimääräisen tehon koko vuoden aikana.",
+          "feedback": "Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Tuulivoimalalla se on selvästi pienempi kuin nimellisteho, koska tuuli vaihtelee."
+        },
+        {
+          "text": "Energian, jonka voimala tuottaa yhden vuoden aikana.",
+          "feedback": "Megawatti on tehon yksikkö, ei energian. Vuodessa tuotettu energia lasketaan keskitehosta kaavalla $E = P \\cdot t$. Se ilmoitetaan esimerkiksi gigawattitunteina."
+        }
+      ]
+    },
+    {
+      "id": "check-ominaisuudet",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Ominaisuudet eivät sulje toisiaan pois",
+      "prompt": "Voimaloita kuvataan ominaisuuksilla: sääriippuvainen, hyvin säädettävä ja yleensä tasaisesti ajettava perusvoima. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Vesivoima on hyvin säädettävää, mutta sen vuosituotanto riippuu silti sateista.",
+          "correct": true,
+          "feedback": "Oikein. Ominaisuudet eivät sulje toisiaan pois. Altaan vettä voi päästää turbiineille tarpeen mukaan, joten vesivoima on hyvin säädettävää. Altaisiin ja jokiin tulevan veden määrä riippuu kuitenkin sateista ja lumen sulamisesta."
+        },
+        {
+          "text": "Vesivoima ei riipu säästä lainkaan, koska vesi on varastoitu altaaseen.",
+          "feedback": "Allas tasaa vaihtelua lyhyellä aikavälillä. Altaisiin tulevan veden määrä riippuu kuitenkin sateista ja lumen sulamisesta. Kuivana vuonna vesivoimaa tuotetaan vähemmän."
+        },
+        {
+          "text": "Ydinvoimalan tehoa ei voi muuttaa lainkaan, joten se on aina perusvoimaa.",
+          "feedback": "Ydinvoimalan tehoa voi laskea jonkin verran. Sitä ajetaan yleensä tasaisesti, joten se toimii perusvoimana. Perusvoima kuvaa käyttötapaa. Se ei tarkoita, ettei tehoa voisi muuttaa."
         }
       ]
     },
@@ -333,7 +381,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+      "text": "Lopuksi on yksi nopea kysymys. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
     }
   ]
 }
