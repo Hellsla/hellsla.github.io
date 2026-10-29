@@ -1,0 +1,16 @@
+[
+  {
+    "q": "A ball has been thrown straight up, and it is just at the highest point of its path. Which forces act on the ball when air drag is ignored?",
+    "fbd": "identify",
+    "a": "Only the weight $\\mathbf{G}$, which points down. The thrower's hand is no longer touching the ball, so there is no upward force. At the highest point the velocity is zero for a moment, but the acceleration is still $g$ downward."
+  },
+  {
+    "q": "Why are the components of a force drawn with a dashed line in the free-body diagram, and what happens if both the force and its components are used in the calculation?",
+    "a": "The components are not new forces, but together they replace the force. The dashed line sets them apart from the forces. If both the force and its components are included in the calculation, the same force is counted twice and the result is wrong."
+  },
+  {
+    "q": "A box is pulled on a horizontal floor by a rope that makes an angle $\\alpha$ with the horizontal. The tension in the rope is $T$, the friction force $F_\\mu$ and the mass of the box $m$. Write the vertical equation of motion and solve the normal force $N$ from it.",
+    "fbd": "equations",
+    "a": "Vertically the box does not accelerate, so $N + T\\sin\\alpha - mg = 0$ and $N = mg - T\\sin\\alpha$. Friction is horizontal, so it does not belong in the vertical equation."
+  }
+]

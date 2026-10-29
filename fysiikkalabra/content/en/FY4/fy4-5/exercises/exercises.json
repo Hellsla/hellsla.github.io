@@ -1,0 +1,117 @@
+{
+  "level1": [
+    {
+      "id": "fy4-5-L1-01",
+      "level": 1,
+      "text": "A lamp of mass $1.5\\,\\text{kg}$ hangs at rest from a vertical cord. Draw the free-body diagram of the lamp and calculate the tension in the cord.",
+      "answer": 14.7,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-02",
+      "level": 1,
+      "text": "In the free-body diagram of the figure one square corresponds to a force of $10\\,\\text{N}$. Four forces act on the object. How large is the net force acting on the object?",
+      "answer": 15,
+      "unit": "N",
+      "tolerance": 0.02,
+      "figure": "fy4-5/ruutu"
+    },
+    {
+      "id": "fy4-5-L1-03",
+      "level": 1,
+      "text": "A student presses a book of $0.50\\,\\text{kg}$ against a vertical wall with a horizontal force of $20\\,\\text{N}$. The book stays at rest. Draw the free-body diagram of the book. How large is the friction force from the wall on the book?",
+      "answer": 4.9,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-04",
+      "level": 1,
+      "text": "A person of mass $65\\,\\text{kg}$ stands in an elevator that moves upward at constant velocity. Draw the free-body diagram of the person. How large is the normal force from the floor of the elevator on the person?",
+      "answer": 640,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-05",
+      "level": 1,
+      "text": "A box is pulled with a rope whose tension is $250\\,\\text{N}$ and which makes an angle of $40^\\circ$ with the horizontal. Draw the force of the rope and its components with dashed lines. How large is the horizontal component of the tension?",
+      "answer": 190,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-5-L2-01",
+      "level": 2,
+      "text": "A sled of mass $15\\,\\text{kg}$ is pulled on horizontal snow by a rope that makes an angle of $30^\\circ$ with the horizontal. The tension in the rope is $60\\,\\text{N}$, and the sled moves at constant velocity. Draw the free-body diagram of the sled in your notebook before you open the solution. How large is the friction force from the snow?",
+      "answer": 52,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-5/malli-pulkka"
+    },
+    {
+      "id": "fy4-5-L2-02",
+      "level": 2,
+      "text": "A person of mass $60\\,\\text{kg}$ stands in an elevator. The elevator starts moving upward with an acceleration of $1.2\\,\\text{m/s}^2$. How large is the normal force from the floor on the person during the acceleration?",
+      "answer": 660,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-03",
+      "level": 2,
+      "text": "A box of mass $40\\,\\text{kg}$ is pushed on a horizontal floor from a handle with a force of $120\\,\\text{N}$ that points obliquely downward at an angle of $30^\\circ$. The friction force from the floor on the box is $80\\,\\text{N}$. How large is the acceleration of the box?",
+      "answer": 0.6,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-04",
+      "level": 2,
+      "text": "Two children pull a sled of $50\\,\\text{kg}$ on ice with ropes that are horizontal and perpendicular to each other. One pulls with a force of $30\\,\\text{N}$ and the other with $40\\,\\text{N}$. Friction is ignored. How large is the acceleration of the sled?",
+      "answer": 1.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-5-L3-01",
+      "level": 3,
+      "text": "A person of mass $70\\,\\text{kg}$ stands in an elevator that moves upward but slows down as it stops. The deceleration is $1.5\\,\\text{m/s}^2$. Draw the free-body diagram of the person in your notebook, and mark the velocity and the acceleration separately beside it, before you open the solution. How large is the normal force from the floor?",
+      "answer": 580,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-5/malli-hissi"
+    },
+    {
+      "id": "fy4-5-L3-02",
+      "level": 3,
+      "text": "A curling stone of mass $19\\,\\text{kg}$ leaves the thrower's hand at a velocity of $2.0\\,\\text{m/s}$ and slides straight until it stops after $20\\,\\text{s}$. Assume that the stone slows down uniformly and that air drag is negligibly small. How large is the friction force from the ice on the stone during the slide?",
+      "answer": 1.9,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L3-03",
+      "level": 3,
+      "text": "A helium balloon whose mass with its rubber and gas is $4.0\\,\\text{g}$ has risen to the ceiling of a room and is pressed against it at rest. The buoyancy on the balloon from the air is $0.10\\,\\text{N}$. The string is not attached. Draw the free-body diagram of the balloon and calculate the force with which the ceiling acts on the balloon.",
+      "answer": 0.061,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}
