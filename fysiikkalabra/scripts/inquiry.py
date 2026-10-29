@@ -522,6 +522,9 @@ def render(folder, inquiry, parts, md):
         elif t == "text": content = md(a["text"]) + fig_of(a)
         elif t == "choice": content = choice_html(a, md, lid, aid)
         elif t == "numeric": content = numeric_html(a, md, aid)
+        if t in ("choice", "numeric") and a.get("stage") == "tarkista":   # after a wrong check: a suggestion where to practise, never a verdict (teacher 2026-10-29)
+            hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
+            content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         elif t == "explain": content = explain_html(a, md, aid)
         elif t == "reflect":
             content = (f'<div class="reflect" data-predictions=\'{esc(json.dumps(a["predictions"]))}\'><p class="task">{inline(md, a["prompt"])}</p>'
