@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 649c34ec23addc11
+CONTENT-HASH: cb36ba3d505d55e8
 
 ## Blocking
-(none left; fixed items listed under Fixed)
-
-## Fixed
-- exercises.json fy2-5-L3-02 unit — "daily portions" → "daily rations" (matches the task text and solution)
+(none)
 
 ## Polish
-- "two significant figures like the data …" reads slightly stiffly; acceptable.
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (science): exercises.json (12 tasks: texts, units) and solutions.md (all steps Given … Reasonableness): numbers, quantities, efficiency direction, unit conversions, chapter titles (Efficiency, Power P = ΔE/Δt).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (energy content wording, e = em in solutions).
+- Translation review against the reviewed Finnish (2026-10-29): fy2-5-L1-02 sends the reader to figure fy2-5/lampoarvot, solution steps Given, Reading the graph, Conversions; H = 48 MJ/kg, E = 96 MJ unchanged; figure id and answer match the Finnish. Natural textbook English, decimal point in text and LaTeX.

@@ -215,16 +215,16 @@
       "prompt": "Opiskelija laskee voimalan keskitehon, kun vuosienergia on $14\\,\\text{GWh}$. Hän kirjoittaa $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ ja ihmettelee, että tulos on valtava. Missä on virhe?",
       "choices": [
         {
-          "text": "Hän kertoi energian ajalla. Keskiteho saadaan jakamalla energia ajalla: $P = E : t = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$.",
+          "text": "Energia kerrottiin ajalla, vaikka keskiteho on $P = E : t \\approx 1{,}6\\,\\text{MW}$.",
           "correct": true,
-          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
+          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla: $P = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
         },
         {
-          "text": "Vuodessa ei ole $8760\\,\\text{h}$, vaan $365\\,\\text{h}$.",
+          "text": "Vuodessa ei ole $8760\\,\\text{h}$ vaan $365\\,\\text{h}$, joten aika on laskussa väärin.",
           "feedback": "Vuodessa on $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$. Virhe ei ole tuntimäärässä. Virhe on se, että energia kerrottiin ajalla."
         },
         {
-          "text": "Teho olisi pitänyt ilmoittaa megawatteina, ja kaava on muuten oikein.",
+          "text": "Teho olisi pitänyt ilmoittaa megawatteina gigawattien sijaan, ja kaava on muuten oikein.",
           "feedback": "Yksikkö ei korjaa tulosta. Oikein laskettuna teho olisi $1{,}6\\,\\text{MW}$. Kertolasku antaa väärän suureen eikä tehoa. Syy on se, että energia kerrottiin ajalla eikä jaettu ajalla."
         },
         {
@@ -280,15 +280,15 @@
           "feedback": "Oikein. Vesivoima on hyvin säädettävää. Turbiinille johdettavaa vettä voi lisätä sekunneissa tai minuuteissa. Lisäksi vesialtaaseen on varastoitu energiaa."
         },
         {
-          "text": "Tuulivoimala, koska tuulivoima on uusiutuvaa.",
+          "text": "Tuulivoimala, koska tuulivoima on uusiutuvaa ja siksi aina käytettävissä.",
           "feedback": "Uusiutuva ei tarkoita säädettävää. Tuulivoimalan teho riippuu tuulesta, eikä sitä voi nostaa, kun tuuli tyyntyy."
         },
         {
-          "text": "Aurinkopaneelit, koska aurinko on aina taivaalla.",
+          "text": "Aurinkopaneelit, koska aurinko on aina taivaalla, vaikka sitä ei näkyisi.",
           "feedback": "Aurinkosähkön teho riippuu säteilystä. Pakkasillalla aurinkoa ei ole lainkaan. Aurinkosähkö ei ole säädettävää."
         },
         {
-          "text": "Ydinvoimala, koska siinä on eniten tehoa.",
+          "text": "Ydinvoimala, koska siinä on eniten tehoa ja sitä voi siksi lisätä eniten.",
           "feedback": "Ydinvoimalassa on paljon tehoa, mutta sitä ajetaan yleensä tasaisesti. Sen tehoa voi laskea jonkin verran. Sitä ei kuitenkaan käytetä seuraamaan kulutuksen nopeita muutoksia."
         }
       ]

@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec2af3ba30394f94
+CONTENT-HASH: 3deec891b7917418
+
 ## Blocking
 (none)
+
 ## Polish
 (none)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Translation review against the reviewed Finnish (2026-10-29): the rebalanced options keep length within the same range per item (check_choices clean), the correct option is not the longest by design, distractors stay plausible misconceptions, feedback names the error without giving the next answer away, the opening question no longer states the ratio. Natural textbook English, decimal point in text and LaTeX.

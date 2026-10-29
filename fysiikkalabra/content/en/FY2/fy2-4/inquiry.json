@@ -89,16 +89,16 @@
       },
       "choices": [
         {
-          "text": "The efficiency doubles, because the lamp gives light for longer.",
+          "text": "Efficiency doubles, because the lamp gives light for twice as long.",
           "feedback": "Not quite. A lamp that burns for longer gives more light energy, but it also takes more electrical energy. At constant power both energies are power multiplied by time, $E = P \\cdot t$, so they both double and their ratio does not change."
         },
         {
-          "text": "The efficiency stays the same, because the useful energy and the energy taken both double.",
+          "text": "Efficiency stays the same, because both energies double.",
           "correct": true,
           "feedback": "Right. At constant power $E_\\text{a} = P_\\text{a} \\cdot t$ and $E_\\text{o} = P_\\text{o} \\cdot t$, so the time cancels from the ratio. The reason is this calculation, not the simulation: the model of the simulation assumes that efficiency is constant, so it only repeats the assumption. A real lamp runs steadily once it has warmed up."
         },
         {
-          "text": "The efficiency decreases, because the lamp gets hot and the losses grow.",
+          "text": "Efficiency decreases, because the lamp heats up for longer and the losses grow.",
           "feedback": "The idea is physical, but it does not fit a lamp that burns steadily. The loss energy grows with time, but the useful energy and the energy taken grow in the same proportion, because at constant power $E = P \\cdot t$. The lamp warms up only in the moment right after switching on; the model of the simulation assumes that efficiency is constant, so it cannot test this."
         }
       ],

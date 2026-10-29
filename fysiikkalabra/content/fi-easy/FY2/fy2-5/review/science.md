@@ -1,21 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d8efcf324253b772
+CONTENT-HASH: ae11bc9f9a4036e3
 
 ## Blocking
-(none left; fixed items listed under Fixed)
-
-## Fixed
-- lesson.md:10 — "saman massan kohti" (ungrammatical) → "samaa massaa kohti" (blocking)
-- inquiry.json activities[2] choice 0 feedback — same grammar error → "samaa massaa kohti" (blocking)
-- lesson.md:21 — dense sentence on net heat of combustion → short sentences that explain tiivistymislämpö; removed added causal "koska" (rounding is not caused by batch variation)
-- inquiry.json prior[3], activities[14] choice 3 — chapter title "Teho" → "Teho P = ΔE/Δt" (content/fi-easy/courses.json)
-- inquiry.json activities[12].solution Periaate and Järkevyys, activities[14] choice 0 feedback, activities[15].solution Järkevyys — long sentences split
-- exit-ticket.json item 3 answer — split the long joten-sentence
-- figures.json — bar chart and nutrition-label descriptions simplified (figures regenerated)
+(none)
 
 ## Polish
-- Short choice texts and learn goals were already plain and are kept as in Finnish.
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28) (science): lesson.md, inquiry.json (all prompts, choices, feedback, hints, mistakes, solutions, source_notes), exit-ticket.json, meta.json, figures.json against the Finnish: same physics, numbers, tasks, steps, hints and feedback; correct choices still unambiguous; Finnish step labels kept.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, figure labels, inquiry texts/feedback/solutions/model answer/criteria, exit ticket (nuclear-fuel note, moisture, food energy content vs heat of combustion, CO2 sentence).
+- Translation review against the reviewed Finnish (2026-10-29, after the option rebalance 01da3ae6): lesson.md opening question; choices of the energy-conversion check, the fuel table, the mass table and the concept check; new checks 2 (43 vs 15 MJ/kg, 1.0 kg vs 4.0 kg, 60 MJ vs 43 MJ, E = Hm) and 3 (22 MJ/kg food label vs 15 MJ/kg firewood); renumbered checks 4 and 5; exit ticket with the single E = Hm question. Physics, numbers, units, LaTeX, correct options and per-option feedback match the Finnish; figures labelled in the language. Selkeä suomi: short sentences, same terms, decimal comma, every formula kept.

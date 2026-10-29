@@ -29,20 +29,20 @@
       "prompt": "Firewood is burning in a fireplace and the room warms up. Which description of the energy transformation is correct?",
       "choices": [
         {
-          "text": "The chemical energy of the wood is transformed into heat and light. Energy is neither created nor lost.",
+          "text": "The chemical energy of the wood is transformed into heat and light; energy is neither created nor lost.",
           "feedback": "Correct. Chemical energy is stored in the structure of the wood, and when it burns it is transformed into heat and light (chapter *Energy transformations and the joule*). Today we calculate how much energy is released.",
           "correct": true
         },
         {
-          "text": "The fire creates energy, because the fireplace is warm although the wood is cold.",
+          "text": "The fire creates new energy, because it is warm around the fireplace although the wood is cold.",
           "feedback": "Energy does not appear out of nothing. The energy of the heat comes from the chemical energy of the wood, which is transformed into another form (chapter *Forms of energy and conservation of energy*)."
         },
         {
-          "text": "The kinetic energy of the wood is transformed into heat when the wood burns.",
+          "text": "The kinetic energy of the wood is transformed into heat and light when the wood burns in the fireplace.",
           "feedback": "The wood does not move, so it has no kinetic energy. In burning, the chemical energy of the substance is transformed."
         },
         {
-          "text": "Energy is lost in burning, when the wood turns into ash and smoke.",
+          "text": "Energy is lost in burning, when the wood gradually turns into ash and flue gases.",
           "feedback": "Energy is not lost: the total energy is conserved (chapter *Forms of energy and conservation of energy*). Chemical energy is transformed into heat and light, and some of it is carried into the surroundings by the flue gases."
         }
       ]
@@ -110,20 +110,20 @@
         "prompt": "Which of the following statements is true according to the table?",
         "choices": [
           {
-            "text": "Gas and liquid fuels release more energy per kilogram than wood and peat.",
+            "text": "Natural gas, petrol and diesel release more energy per kilogram than wood and peat.",
             "feedback": "Correct. The heats of combustion of natural gas, petrol and diesel are $43$–$48\\,\\text{MJ/kg}$, and those of wood and peat only $10$–$15\\,\\text{MJ/kg}$.",
             "correct": true
           },
           {
-            "text": "The same energy per kilogram is released from all fuels.",
+            "text": "About the same amount of energy per kilogram is released from all the fuels in the table.",
             "feedback": "The table disproves this: the heats of combustion vary from $10$ to $48\\,\\text{MJ/kg}$. Not every burning substance contains the same amount of energy."
           },
           {
-            "text": "Peat is the most effective fuel, because the largest amount of it is needed.",
+            "text": "Peat is the most effective fuel in the table, because the largest amount of it is needed to get the same energy.",
             "feedback": "The fact that a lot of peat is needed points to a small heat of combustion. A small $H$ means that little energy is released per kilogram, and more mass is needed to get the same energy."
           },
           {
-            "text": "The smaller the heat of combustion, the less fuel is needed.",
+            "text": "The smaller the heat of combustion of a fuel, the less fuel is needed for the same energy.",
             "feedback": "On the contrary: a small heat of combustion means that you get little energy from a kilogram, so a lot of fuel is needed."
           }
         ]
@@ -143,16 +143,16 @@
         "prompt": "What can you conclude from the table?",
         "choices": [
           {
-            "text": "The energy released is directly proportional to the mass: $15\\,\\text{MJ}$ is released for each kilogram. This number is the heat of combustion of wood.",
-            "feedback": "Correct. When the mass doubles, the energy doubles, and $E : m = 15\\,\\text{MJ/kg}$ in every row. This is why the energy is calculated by multiplying the heat of combustion by the mass: $E = Hm$.",
+            "text": "Energy is directly proportional to mass, and $15\\,\\text{MJ/kg}$ is the heat of combustion of wood.",
+            "feedback": "Correct. When the mass doubles, the energy doubles, and $E : m = 15\\,\\text{MJ/kg}$ in every row: $15\\,\\text{MJ}$ is released for each kilogram. This is why the energy is calculated by multiplying the heat of combustion by the mass: $E = Hm$.",
             "correct": true
           },
           {
-            "text": "Energy grows faster than mass, because a large pile burns hotter.",
+            "text": "Energy grows faster than mass, because a large pile of wood burns hotter than a small one.",
             "feedback": "In the table, double the mass gives double the energy, not more. The heat of combustion tells you the energy per kilogram, and it stays the same even if the pile is larger."
           },
           {
-            "text": "Energy does not depend on mass, because wood is always the same wood.",
+            "text": "Energy does not depend on mass, because wood is always the same wood and burns in the same way.",
             "feedback": "It is the same wood in different amounts, and the energy released grows with the mass. Only the energy per kilogram is constant."
           },
           {
@@ -307,20 +307,20 @@
       "prompt": "What does the heat of combustion $H$ of a fuel tell you?",
       "choices": [
         {
-          "text": "How much energy is released from one kilogram of fuel when it burns.",
+          "text": "How much energy is released when one kilogram of fuel burns.",
           "feedback": "Correct. The unit $\\text{MJ/kg}$ tells you the energy per unit of mass, and the total energy is found by multiplying it by the mass: $E = Hm$.",
           "correct": true
         },
         {
-          "text": "How hot the fuel burns, that is the temperature of its flame.",
+          "text": "How hot the fuel burns, that is how high the temperature of its flame is.",
           "feedback": "The heat of combustion is not a temperature but energy per unit of mass. The temperature of the flame and the energy released are different things."
         },
         {
-          "text": "How much energy there is in the fuel altogether.",
+          "text": "How much energy there is in the whole amount of fuel altogether.",
           "feedback": "The total energy also depends on the mass. The heat of combustion is the energy per kilogram, and the total energy is $E = Hm$."
         },
         {
-          "text": "How fast the fuel burns.",
+          "text": "How fast the fuel burns and releases its energy.",
           "feedback": "The burning rate is related to power (chapter *Power P = ΔE/Δt*), not to the heat of combustion. The heat of combustion tells you how much energy is released, not how fast."
         }
       ]

@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 585b36619fe3a303
+CONTENT-HASH: 8c27f245eeedabca
+
 ## Blocking
 (none)
+
+## Fixed
+(none)
+
 ## Polish
 (none)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+Translation delta review against the reviewed Finnish: new choice checks 'Rated power and production' and 'Properties do not exclude each other' (one correct option each, feedback per option faithful and not revealing), the rebalanced option texts of the find-the-mistake and concept checks (correct option no longer longest, feedback updated), exit ticket reduced to one question, check numbering 4./5., lesson wording (peat, properties not categories, nuclear output can be reduced). Physics, numbers, units and LaTeX preserved; learn goals untouched. Pedagogy: demand and scaffolding match the Finnish; the check is answerable from the lesson.

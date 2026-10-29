@@ -28,16 +28,16 @@
       "prompt": "A car brakes and stops. Which description of its kinetic energy is correct (chapter *Forms of energy and conservation of energy*)?",
       "choices": [
         {
-          "text": "The kinetic energy disappears, because the car is no longer moving.",
+          "text": "The kinetic energy disappears, because the car is no longer moving and so has no energy.",
           "feedback": "Energy does not disappear. When the car stops, its kinetic energy turns into other energy, and there is as much energy in total as before braking."
         },
         {
-          "text": "The kinetic energy turns mostly into thermal energy in the brakes, tyres and road, and there is as much energy in total as before.",
-          "feedback": "Correct. Energy is conserved and changes form: kinetic energy becomes thermal energy, which is transferred as heat to the surroundings and spreads out. Today we examine such chains and calculate energy in joules.",
+          "text": "The kinetic energy turns mostly into thermal energy, and the total amount of energy is conserved.",
+          "feedback": "Correct. Energy is conserved and changes form: in the brakes, tyres and road, kinetic energy becomes thermal energy, which is transferred as heat to the surroundings and spreads out. Today we examine such chains and calculate energy in joules.",
           "correct": true
         },
         {
-          "text": "The kinetic energy is transferred to the road and stays there as kinetic energy.",
+          "text": "The kinetic energy is transferred to the road in braking and stays there as kinetic energy.",
           "feedback": "The road does not start moving, so the energy does not stay there as kinetic energy. It turns into thermal energy, which warms the brakes, tyres and road."
         }
       ]
@@ -237,7 +237,7 @@
       "prompt": "A student converts the energy $2.5\\,\\text{kJ}$ to joules and writes $2.5\\,\\text{kJ} = 2.5 : 1000\\,\\text{J} = 0.0025\\,\\text{J}$. Where is the error?",
       "choices": [
         {
-          "text": "Kilo means a thousand, so the number should be multiplied by a thousand: $2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
+          "text": "A kilojoule is a thousand joules, so the correct one is $2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
           "feedback": "Correct. The prefix kilo means a thousand, so a kilojoule contains a thousand joules, and in joules the number is a thousand times larger. You can check the reasonableness from the order of magnitude: the joule is a smaller unit than the kilojoule, so the number must grow.",
           "correct": true
         },
@@ -246,7 +246,7 @@
           "feedback": "On the contrary: the joule is a smaller unit than the kilojoule, so the same energy needs more joules, that is, a larger number."
         },
         {
-          "text": "The result should have been divided by a hundred as well, because kilo is a hundred.",
+          "text": "The result should have been divided by a hundred as well, because the prefix kilo means a hundred.",
           "feedback": "Kilo is a thousand, not a hundred. The conversion is done by replacing the prefix with its value, $\\text{kJ} = 1000\\,\\text{J}$."
         }
       ]
@@ -291,16 +291,16 @@
       "prompt": "A battery has been charged with $54\\,\\text{kJ}$. A video is watched on a phone, and the battery runs flat. Which description of the energy of the battery is correct?",
       "choices": [
         {
-          "text": "The energy of the battery has run out, so it no longer exists.",
+          "text": "The energy of the battery has run out while watching the video, so it no longer exists.",
           "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and thermal energy, and in the end everything has spread as heat into the surroundings."
         },
         {
-          "text": "The $54\\,\\text{kJ}$ of the battery has turned into other forms in the phone, finally almost entirely into thermal energy, and there is as much energy in total as at the start.",
+          "text": "The $54\\,\\text{kJ}$ of the battery has turned almost entirely into thermal energy, and no energy has been lost.",
           "feedback": "Correct. Chemical energy turns into electricity, light, sound and thermal energy, and in the end everything ends up as heat in the surroundings. Energy is conserved.",
           "correct": true
         },
         {
-          "text": "The energy of the battery has increased, because the phone gets warm.",
+          "text": "The energy of the battery has increased, because the phone gets warm while the video is watched.",
           "feedback": "The phone getting warm is the energy of the battery turning into thermal energy. Thermal energy is not new energy; the chemical energy of the battery decreases by exactly as much as the thermal energy increases."
         }
       ]

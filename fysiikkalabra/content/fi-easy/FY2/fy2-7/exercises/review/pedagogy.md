@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9f59d9300d78421c
+CONTENT-HASH: 57ec827dbcf284f3
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- solutions.md:104 — "ja tulokset verrataan" (ungrammatical) → "Sitten tuloksia verrataan."
+- (none)
 
 ## Polish
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercise texts and solutions are simplified (split sentences) without lowering demand; questions ask the same thing.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) in the exercises against the new Finnish.
+- Update 2026-10-29: figure-reading exercise keeps the Finnish demand; the solution names the figure's lower flow and the 9 % / 91 % labels; step labels as in other solutions. Short sentences, same demand.

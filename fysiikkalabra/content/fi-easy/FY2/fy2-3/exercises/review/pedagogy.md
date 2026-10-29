@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5fe9a6f0a4a96f6d
+CONTENT-HASH: eabb81996cdd2424
 
 ## Blocking
-(none left)
-
-## Fixed
-- solutions.md (all 11 solutions) — long sentences split, Vastaus lines as "Siinä on kaksi merkitsevää numeroa, kuten …", L3-02 explains nimellisteho
-- exercises.json level3.1 — compound question split, nimellisteho explained; level3.2 — charging time as its own sentence, question rephrased plainly
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md: Selkeä suomi without lowering demand; same tasks, steps and justifications.
+- Translation review against the reviewed Finnish (teacher's decision 2026-10-28), delta after the option rebalance: L1-04 now asks the learner to read two points from the steeper line and compute P = dE/dt; the Finnish demand is kept, no values are given in the task text, and the solution shows the reading, unit conversion kJ to J and a reasonableness check. Selkeä suomi: short sentences and common words, same physics terms and numbers, every $...$ kept; the demand is not lowered.

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8f18e4f9458696fe
+CONTENT-HASH: fa8e3fe39ce547c9
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- (none)
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Translation review against the reviewed Finnish (2026-10-29 update): check-c2 keeps the same demand (unit conversion before comparison), the correct option is not the longest (check_choices clean), feedback per option is complete and does not give the answer away before the choice; exit-ticket intro says two questions and matches the two questions; step numbering 1-4 consistent; figures labelled in the language and layout checked at 360 and 1280 px. Selkeä suomi: short sentences, same physics terms and demand.

@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 25908ffbf1d7d5d7
+CONTENT-HASH: 113874ec0a4faf28
 
 ## Blocking
-(none left)
-
-## Fixed
-- figures.json was empty (figures showed the dense Finnish descriptions) → filled: labels kept, both descriptions split into short sentences with the same content; figures redrawn
-- (all other changes are language-only, listed in pedagogy.md; every formula kept, check_i18n clean)
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all 18 activities incl. sim and both experiments), exit-ticket.json, meta.json, figures.json against content/fi/FY2/fy2-3: after simplification every statement keeps the same physics, numbers and comparisons (pienempi/suurempi, 180 kertaa, kymmenesosa); decimal comma kept.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md (average-power sentence) against the new Finnish.
+- Translation review against the reviewed Finnish (teacher's decision 2026-10-28), delta after the option rebalance: Translation delta review against the reviewed Finnish (commit 01da3ae6 included): the two new tarkista choice checks (same energy, different power; kilowatt-hour), the rebalanced option texts and feedback in activities 1, 2/5, 11 (energy review, energy-meter question, find-the-error), the renumbered titles 4 and 5, the one-question exit-ticket intro and the remaining standby exit question, figures.json for graph-ab. Physics preserved: E = Pt, t = E:P, 1 kWh = 3 600 000 J, 2000 W vs 1000 W, 350 kWh as energy not power, kW/h vs kWh; numbers, units and LaTeX identical to the Finnish; decimal comma. No answer is given away and each distractor feedback addresses its own misconception.

@@ -215,16 +215,16 @@
       "prompt": "A student calculates the average power of a power plant when the annual energy is $14\\,\\text{GWh}$. She writes $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ and wonders why the result is huge. Where is the mistake?",
       "choices": [
         {
-          "text": "She multiplied the energy by time. The average power is found by dividing the energy by time: $P = E : t = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1.6\\,\\text{MW}$.",
+          "text": "The energy was multiplied by time, although the average power is $P = E : t \\approx 1.6\\,\\text{MW}$.",
           "correct": true,
-          "feedback": "Correct. The formula $E = P t$ is solved for power by dividing by time. The mistake could have been spotted from the units: GWh times h is not a unit of power, and the result would be larger than the power of all the power plants in Finland."
+          "feedback": "Correct. The formula $E = P t$ is solved for power by dividing by time: $P = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1.6\\,\\text{MW}$. The mistake could have been spotted from the units: GWh times h is not a unit of power, and the result would be larger than the power of all the power plants in Finland."
         },
         {
-          "text": "A year does not have $8760\\,\\text{h}$ but $365\\,\\text{h}$.",
+          "text": "A year does not have $8760\\,\\text{h}$ but $365\\,\\text{h}$, so the time is wrong in the calculation.",
           "feedback": "A year has $365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$. The mistake is not in the number of hours but in multiplying the energy by time."
         },
         {
-          "text": "The power should have been given in megawatts, and the formula is otherwise correct.",
+          "text": "The power should have been given in megawatts instead of gigawatts, and the formula is otherwise correct.",
           "feedback": "The unit does not fix the result. If the power were calculated correctly, you would get $1.6\\,\\text{MW}$; the multiplication gives the wrong quantity, because the energy was multiplied by time instead of being divided by it."
         },
         {
@@ -280,15 +280,15 @@
           "feedback": "Correct. Hydropower is highly controllable: the water led to the turbine can be increased in seconds or minutes, and the reservoir stores energy."
         },
         {
-          "text": "A wind turbine, because wind power is renewable.",
+          "text": "A wind turbine, because wind power is renewable and so always available.",
           "feedback": "Renewable does not mean controllable. The power of a wind turbine depends on the wind, and it cannot be raised when the wind dies down."
         },
         {
-          "text": "Solar panels, because the Sun is always in the sky.",
+          "text": "Solar panels, because the Sun is always in the sky, even when it cannot be seen.",
           "feedback": "The power of solar electricity depends on radiation, and on a frosty evening there is no sunlight at all. It is not controllable."
         },
         {
-          "text": "A nuclear power plant, because it has the most power.",
+          "text": "A nuclear power plant, because it has the most power and so can increase it the most.",
           "feedback": "A nuclear power plant has a lot of power, but it usually runs steadily. Its output can be reduced somewhat, but it is not used to follow quick changes in consumption."
         }
       ]

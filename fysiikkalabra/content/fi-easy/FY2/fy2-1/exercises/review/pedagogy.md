@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1ade477e15903b38
+CONTENT-HASH: 20d0c49f99fa4bda
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- none
+(none)
 
 ## Polish
-- Short Given/Find/Formula lines are kept as in Finnish; they are already plain.
+- (none new beyond the Finnish exercise report)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json task texts and solutions.md: long Principle, Model answer and Reasonableness steps are already split into short sentences; demand, steps and Finnish step labels unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed exercise texts and solutions (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).
+- L1-03: situation first, question last, the reading of the figure is the demand as in Finnish; no hint toward the result.
+- Selkeä suomi: shorter sentences, same physics terms and numbers, same demand.
+- Figure is labelled in the language (only A, B, C and the description are text).
+- The solution models reading the bars from the 100 J gridlines and states the precision.

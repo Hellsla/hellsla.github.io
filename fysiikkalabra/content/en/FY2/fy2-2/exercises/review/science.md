@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 51bb82f2a4e7d35a
+CONTENT-HASH: 0c6259073c3e97d7
 
 ## Blocking
-(none left)
-
-## Fixed
-- solutions.md:119 (L3-03 Reasonableness) — "nuclear energy releases much more energy" → "much more nuclear energy is released from the same amount of matter than in burning" (matches the Finnish subject)
+(none)
 
 ## Polish
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): all 12 exercise texts in exercises.json and every solution step in solutions.md (L1-01…L3-03): given values, conversions, results, significant figures, "at least" rounding up in L3-01, energy split in L2-03 and L3-02, decimal points and \cdot.
-- Update 2026-10-28: reviewed the newly checked fields (experiment intros with *Kohde*/*Item* matching the sim label, column names, word units kpl/pcs, string answers); all correct, no changes; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise text and solutions (L2-03 wording, L3-02 reasonableness).
+- exercises.json L1-05 (figure-reading: AA battery 10^4 J, lightning 10^9 J, N = 10^5 = 100 000) recomputed; text, figure id fy2-2/tikapuut-kohteet, answer, unit and tolerance equal the reviewed Finnish; solutions.md L1-05 steps, powers of ten and the reading of the graph match the figure (AA at 4 steps, lightning at 9); no value of the figure is given away in the text. Other exercises untouched.

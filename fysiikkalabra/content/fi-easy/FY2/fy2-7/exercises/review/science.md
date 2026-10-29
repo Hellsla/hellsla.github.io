@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9f59d9300d78421c
+CONTENT-HASH: 57ec827dbcf284f3
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
 - (none)
@@ -11,5 +11,4 @@ CONTENT-HASH: 9f59d9300d78421c
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md against content/fi: numbers, units, answers, all solution steps present.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) in the exercises against the new Finnish.
+- Update 2026-10-29: exercise fy2-7-L1-02 now reads the loss share (9 %) from fy2-7/sankey: text and solution (Reading the graph step, 0.09 · 360 MWh = 32.4 MWh, about 32 MWh) match content/fi; answer 32.4, tolerance 0.03, figure id unchanged; no energies given away by the figure.

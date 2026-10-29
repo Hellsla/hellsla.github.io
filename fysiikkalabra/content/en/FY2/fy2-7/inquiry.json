@@ -28,7 +28,7 @@
       "prompt": "A pump takes $8.0\\,\\text{kWh}$ of electrical energy, and $6.0\\,\\text{kWh}$ of it turns into useful energy. What is the efficiency of the pump?",
       "choices": [
         {
-          "text": "$0.75$, because efficiency is the useful energy divided by the energy used: $6.0\\,\\text{kWh} : 8.0\\,\\text{kWh}$.",
+          "text": "$0.75$, because the useful energy is divided by the energy used: $6.0 : 8.0$.",
           "correct": true,
           "feedback": "Correct. Efficiency is the share of the energy used that is obtained as useful energy, $\\eta = E_\\text{useful} : E_\\text{used} = 6.0 : 8.0 = 0.75$, or $75\\,\\%$ (chapter *Efficiency*). The efficiency of a transfer is calculated in the same way today: the energy that arrives is divided by the energy sent."
         },
@@ -146,12 +146,12 @@
         "prompt": "Which conclusion from the table is correct?",
         "choices": [
           {
-            "text": "As energy the losses are about equal, but in district heating the loss is more than twice as large a share of the sent energy.",
+            "text": "As energy the losses are almost the same, but in district heating the share is more than double.",
             "correct": true,
             "feedback": "Correct. In both networks about $3\\,\\text{TWh}$ is lost, but more than twice as much energy is fed into the electricity grid as into the district heating network, so the share is $4\\,\\%$ for electricity and $9.2\\,\\%$ for district heating. That is why the loss of the electricity grid is significant even though its share is small."
           },
           {
-            "text": "The loss of the electricity grid is smaller, because its percentage is smaller.",
+            "text": "The loss of the electricity grid is smaller also as energy, because its loss percentage is smaller.",
             "feedback": "A percentage tells a share, not an amount of energy. Much more energy is fed into the electricity grid, so even a small share is about $3\\,\\text{TWh}$ as energy, the same as in district heating."
           },
           {
@@ -159,7 +159,7 @@
             "feedback": "The share is calculated by dividing the loss by the sent energy: $3.3 : 36.0 = 9.2\\,\\%$. A smaller sent energy makes the share larger, not smaller."
           },
           {
-            "text": "The loss percentage is the same in both, because about $3\\,\\text{TWh}$ is lost in both.",
+            "text": "The loss percentage is the same in both networks, because about $3\\,\\text{TWh}$ is lost in each.",
             "feedback": "The same loss as energy does not mean the same share: the share depends on how much energy is fed into the network. For electricity $3 : 83 \\approx 4\\,\\%$ and for district heating $3.3 : 36.0 = 9.2\\,\\%$."
           }
         ]
@@ -248,16 +248,16 @@
       "prompt": "$500\\,\\text{MWh}$ is fed into the electricity grid and the loss is $4\\,\\%$ of the sent energy. A student calculates: the energy that arrives is $500\\,\\text{MWh} - 4\\,\\text{MWh} = 496\\,\\text{MWh}$. Where is the error?",
       "choices": [
         {
-          "text": "The percentage was subtracted as megawatt-hours. Correct: $4\\,\\%$ is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, and $480\\,\\text{MWh}$ arrives.",
+          "text": "The percentage was subtracted as megawatt-hours, although the loss of $4\\,\\%$ is $20\\,\\text{MWh}$.",
           "correct": true,
           "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ and the energy that arrives is $500\\,\\text{MWh} - 20\\,\\text{MWh} = 480\\,\\text{MWh}$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
         },
         {
-          "text": "The loss should be calculated from the energy that arrives, not from the sent energy.",
+          "text": "The loss should be calculated from the energy that arrives, not from the energy sent into the network.",
           "feedback": "The loss percentage is calculated from the sent energy, because it tells what share of the energy fed into the network was lost. The energy that arrives is not known before the calculation."
         },
         {
-          "text": "The energy does not decrease at all, because energy does not disappear.",
+          "text": "The energy does not decrease on the way at all, because energy never disappears.",
           "feedback": "Energy does not disappear, but some of it turns into heat in the surroundings. The energy that arrives at the user is smaller than the sent energy, and the difference is the loss."
         },
         {

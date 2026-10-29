@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 97249688487855fc
+CONTENT-HASH: c725adc7428f7a3a
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- exercises/solutions.md fy2-1-L2-01 Reasonableness — 'which suits an electric motor, which is much more efficient' (double 'which') → split into two sentences
+(none)
 
 ## Polish
-- none
+- (none new beyond the Finnish exercise report)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json task texts and solutions.md model answers for natural English, consistent terms (Given/Find/…, Model answer, sledge, torch), same demand and steps as the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed exercise texts and solutions (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).
+- L1-03: situation first, question last, the reading of the figure is the demand as in Finnish; no hint toward the result.
+- Natural English; decimal point; same demand and level as the Finnish.
+- Figure is labelled in the language (only A, B, C and the description are text).
+- The solution models reading the bars from the 100 J gridlines and states the precision.

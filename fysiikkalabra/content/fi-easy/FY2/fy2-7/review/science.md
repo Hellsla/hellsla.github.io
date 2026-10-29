@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0c12449dd247c7d9
+CONTENT-HASH: b773061d725e94b3
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- figures.json — values were shifted: the label "koti" held the storage-figure description and "potentiaali" held the energy-flow description, so the storage figure showed a whole paragraph as the "koti" label and the sankey figure as "potentiaali" label, while their aria-labels kept the dense Finnish → fixed the four values and redrew figures (scripts/figures.py fy2-7 --lang fi-easy); lesson.md figures now show "koti"/"potentiaali" and the simplified descriptions.
+- (none)
 
 ## Polish
 - (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json against content/fi: same physics, numbers, comma decimals, formulas, chapter references, source notes. check_i18n fi-easy: 0 errors.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked district-heating feedback (inquiry.json) and the grid-loss Reasonableness (solutions.md) against the new Finnish.
+- Päivitys 2026-10-29 (Selkeä suomi) (translation follows the new Finnish, incl. the option rebalance 01da3ae6): check-c2 ("Where does the loss go?") with all options and feedback, renumbered titles, one-question exit ticket, rebalanced option texts of activities 1, 5, 11 against content/fi. Physics (heat to surroundings, energy conserved, loss share of sent energy), numbers, units, LaTeX and decimal sign preserved; the correct option is not the longest; figures labelled in the language (transformer, pumped storage, upper/lower pool).

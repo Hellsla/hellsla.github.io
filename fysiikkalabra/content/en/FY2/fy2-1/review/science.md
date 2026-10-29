@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eb8f1d1528f6cb4e
+CONTENT-HASH: c9d01e7a4a722af4
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- lang/en.json sims.fy2-1 rivi_2, rivi_3, e_lampo — the sim readout and legend wrote $E_\text{th}$ while the lesson, inquiry and exit ticket write $E_\text{thermal}$ → $E_\text{thermal}$ everywhere
+(none)
 
 ## Polish
-- none
+- (none beyond the Finnish report's own polish items, which are carried unchanged)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (Key idea, seven forms of energy, conservation law, worked example with all 7 stages, misconception, summary), inquiry.json (predictions, experiments incl. intro/names, example data and its solution, conclusion model, apply/check tasks with hints, mistakes and solutions), exit-ticket.json, figures.json, sim labels. Physics, signs, numbers (decimal point), units, $\cdot$, chapter reference (*Quantities, units and the SI system*) and step labels match the Finnish.
-- Update 2026-10-28: experiment option words (`values`) translated to match the English sim labels; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the changed lesson, inquiry, exit ticket and figure texts (heat vs. thermal energy wording, new figure text, tasks asking how much energy changes into thermal energy).
+- Compared inquiry.json, lesson.md, exit-ticket.json and meta.json with the reviewed Finnish: every number, unit, `$...$` formula, correct option and experiment setting is preserved (decimal point used in text and LaTeX).
+- check-kitka: exactly one correct option (total energy including thermal); both distractors stay wrong for the reason their feedback gives; feedback is translated fully and states the physics as in Finnish (friction changes mechanical into thermal energy, nothing is destroyed).
+- Rebalanced options (pred-2, koe-1, virhe) follow the new Finnish wording; the correct option is not the longest; the added "so energy is conserved" in the virhe feedback matches.
+- Opening question no longer gives the answer away; exit ticket has two questions and the intro says two.
+- Figure texts: the new kitka-pylvaat description lists 700/0, 300/300, 0/500 J as in the figure, no thermal energy; figures up to date in the language.
+- Terms (thermal energy, kinetic/potential energy, isolated system) follow the glossary.

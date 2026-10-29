@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9d48f0d378e62add
+CONTENT-HASH: 42422313678ad985
+
 ## Blocking
 (none)
+
+## Fixed
+- (none)
+
 ## Polish
-(none)
+- (none)
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Update 2026-10-29: translation follows the reviewed Finnish; demand and options' relative lengths balanced (check_choices clean for fy2-7); no answer given away in prompts or hints; feedback per option fully translated.

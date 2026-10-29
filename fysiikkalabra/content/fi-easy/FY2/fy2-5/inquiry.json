@@ -29,20 +29,20 @@
       "prompt": "Takassa palaa polttopuuta, ja huone lämpenee. Mikä kuvaus energian muuntumisesta on oikea?",
       "choices": [
         {
-          "text": "Puun kemiallinen energia muuntuu lämmöksi ja valoksi. Energiaa ei synny eikä häviä.",
+          "text": "Puun kemiallinen energia muuntuu lämmöksi ja valoksi; energiaa ei synny eikä häviä.",
           "feedback": "Oikein. Kemiallinen energia on varastoituna puun rakenteeseen. Palaessa se muuntuu lämmöksi ja valoksi (luku *Energian muuntuminen ja yksikkö joule*). Tänään lasketaan, kuinka paljon energiaa vapautuu.",
           "correct": true
         },
         {
-          "text": "Tuli luo energiaa, koska takassa on lämmintä, vaikka puu on kylmää.",
+          "text": "Tuli luo uutta energiaa, koska takan ympärillä on lämmintä, vaikka puu on kylmää.",
           "feedback": "Energiaa ei synny tyhjästä. Lämmön energia tulee puun kemiallisesta energiasta. Se muuntuu toiseen muotoon (luku *Energialajit ja energian säilyminen*)."
         },
         {
-          "text": "Puun liike-energia muuntuu lämmöksi, kun puu palaa.",
+          "text": "Puun liike-energia muuntuu lämmöksi ja valoksi, kun puu palaa takassa.",
           "feedback": "Puu ei liiku, joten sillä ei ole liike-energiaa. Palamisessa muuntuu aineen kemiallinen energia."
         },
         {
-          "text": "Energia häviää palamisessa, kun puu muuttuu tuhkaksi ja savuksi.",
+          "text": "Energia häviää palamisessa, kun puu muuttuu vähitellen tuhkaksi ja savukaasuiksi.",
           "feedback": "Energia ei häviä. Kokonaisenergia säilyy (luku *Energialajit ja energian säilyminen*). Kemiallinen energia muuntuu lämmöksi ja valoksi. Osa siirtyy savukaasujen mukana ympäristöön."
         }
       ]
@@ -110,20 +110,20 @@
         "prompt": "Mikä seuraavista väitteistä pitää taulukon perusteella paikkansa?",
         "choices": [
           {
-            "text": "Kaasu ja nestemäiset polttoaineet vapauttavat kilogrammaa kohti enemmän energiaa kuin puu ja turve.",
+            "text": "Maakaasu, bensiini ja diesel vapauttavat kilogrammaa kohti enemmän energiaa kuin puu ja turve.",
             "feedback": "Oikein. Maakaasun, bensiinin ja dieselin lämpöarvot ovat $43$–$48\\,\\text{MJ/kg}$, puun ja turpeen vain $10$–$15\\,\\text{MJ/kg}$.",
             "correct": true
           },
           {
-            "text": "Kaikista polttoaineista vapautuu kilogrammaa kohti sama energia.",
+            "text": "Kaikista taulukon polttoaineista vapautuu kilogrammaa kohti suunnilleen sama määrä energiaa.",
             "feedback": "Taulukko kumoaa tämän. Lämpöarvot vaihtelevat luvusta $10$ lukuun $48\\,\\text{MJ/kg}$. Kaikki palavat aineet eivät sisällä yhtä paljon energiaa."
           },
           {
-            "text": "Turve on tehokkain polttoaine, koska sitä tarvitaan eniten.",
+            "text": "Turve on taulukon tehokkain polttoaine, koska sitä tarvitaan saman energian saamiseksi eniten.",
             "feedback": "Turvetta tarvitaan paljon, koska sen lämpöarvo on pieni. Pieni $H$ tarkoittaa, että kilogrammasta vapautuu vähän energiaa. Saman energian saamiseksi tarvitaan silloin enemmän massaa."
           },
           {
-            "text": "Mitä pienempi lämpöarvo, sitä vähemmän polttoainetta tarvitaan.",
+            "text": "Mitä pienempi polttoaineen lämpöarvo on, sitä vähemmän polttoainetta tarvitaan samaan energiaan.",
             "feedback": "Päinvastoin. Pieni lämpöarvo tarkoittaa, että kilogrammasta saa vähän energiaa. Siksi polttoainetta tarvitaan paljon."
           }
         ]
@@ -143,16 +143,16 @@
         "prompt": "Mitä taulukosta voi päätellä?",
         "choices": [
           {
-            "text": "Vapautuva energia on suoraan verrannollinen massaan. Jokaista kilogrammaa kohti vapautuu $15\\,\\text{MJ}$. Tämä luku on puun lämpöarvo.",
-            "feedback": "Oikein. Kun massa kaksinkertaistuu, energia kaksinkertaistuu. Lisäksi $E : m = 15\\,\\text{MJ/kg}$ kaikilla riveillä. Siksi energia lasketaan kertomalla lämpöarvo massalla: $E = Hm$.",
+            "text": "Energia on suoraan verrannollinen massaan, ja $15\\,\\text{MJ/kg}$ on puun lämpöarvo.",
+            "feedback": "Oikein. Kun massa kaksinkertaistuu, energia kaksinkertaistuu. Lisäksi $E : m = 15\\,\\text{MJ/kg}$ kaikilla riveillä: jokaista kilogrammaa kohti vapautuu $15\\,\\text{MJ}$. Siksi energia lasketaan kertomalla lämpöarvo massalla: $E = Hm$.",
             "correct": true
           },
           {
-            "text": "Energia kasvaa nopeammin kuin massa, koska suuri kasa palaa kuumemmin.",
+            "text": "Energia kasvaa nopeammin kuin massa, koska suuri puukasa palaa kuumemmin kuin pieni.",
             "feedback": "Taulukossa kaksinkertainen massa antaa kaksinkertaisen energian, ei enemmän. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Se pysyy samana, vaikka kasa on suurempi."
           },
           {
-            "text": "Energia ei riipu massasta, koska puu on aina samaa puuta.",
+            "text": "Energia ei riipu massasta, koska puu on aina samaa puuta ja palaa samalla tavalla.",
             "feedback": "Puuta on eri määriä, ja vapautuva energia kasvaa massan mukana. Vain energia yhtä kilogrammaa kohti on vakio."
           },
           {
@@ -307,20 +307,20 @@
       "prompt": "Mitä polttoaineen lämpöarvo $H$ kertoo?",
       "choices": [
         {
-          "text": "Kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta palaessaan.",
+          "text": "Kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa.",
           "feedback": "Oikein. Lämpöarvon yksikkö $\\text{MJ/kg}$ kertoo energian massayksikköä kohti. Koko energia saadaan, kun lämpöarvo kerrotaan massalla: $E = Hm$.",
           "correct": true
         },
         {
-          "text": "Kuinka kuumana polttoaine palaa eli sen liekin lämpötilan.",
+          "text": "Kuinka kuumana polttoaine palaa eli kuinka korkea sen liekin lämpötila on.",
           "feedback": "Lämpöarvo ei ole lämpötila vaan energia massayksikköä kohti. Liekin lämpötila ja vapautuva energia ovat eri asioita."
         },
         {
-          "text": "Kuinka paljon energiaa polttoaineessa on yhteensä.",
+          "text": "Kuinka paljon energiaa koko polttoainemäärässä on yhteensä.",
           "feedback": "Kokonaisenergia riippuu myös massasta. Lämpöarvo on energia yhtä kilogrammaa kohti, ja kokonaisenergia on $E = Hm$."
         },
         {
-          "text": "Kuinka nopeasti polttoaine palaa.",
+          "text": "Kuinka nopeasti polttoaine palaa ja vapauttaa energiaansa.",
           "feedback": "Palamisnopeus liittyy tehoon (luku *Teho P = ΔE/Δt*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
         }
       ]
