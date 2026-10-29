@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: cbee12aed8d34c3a
+CONTENT-HASH: 6f2cf62a1b9423b6
 
 ## Blocking
 (none)
 
 ## Polish
-- Tutki at 390 px (`fy4-12-exp-exp-2-390-1.png`, `fy4-12-sim-390.png`): canvas and graph labels are about 9 px; in case 3 the lower graph's `x (m)` label touches road B and `150 x (m)` crowds the axis end. Readable, but give the labels a little more room (shared sim layout, sim.js).
-- Experiment tables at 390 px: headers wrap as "x_A ( m)" / "v_A ( m/s)"; use a non-breaking thin space before the unit in the `measure` labels (the round-1 clipping at 1280 px is fixed: `v_B` column dropped).
-- inquiry.json `sim.calc`: says the gap "on positiivinen, kun B on edellä, ja nolla kohtaamishetkellä"; exp-3 relies on its sign change (B behind = negative). Add "negatiivinen, kun B on takana".
-- No check or exit-ticket item on the (t,v)-intersection misconception (lesson text names it); acceptable, but one choice option in check-1 could use it.
+- inquiry.json `measure` labels (exp-1..3): at 390 px the headers still break as "x_A (" / "m)" (`fy4-12-exp-exp-2-390-2.png`, exp-3 likewise); use a non-breaking thin space before the unit (round-2 item, not yet applied).
+- inquiry.json `sim.calc`: still says the gap is "positiivinen, kun B on edellä, ja nolla kohtaamishetkellä"; exp-3 shows it negative (B behind, -5,0 m). Add "negatiivinen, kun B on takana".
+- `fy4-12-exp-exp-3-390-1.png` is 316 px wide and has no card border, unlike exp-1/2; probably a capture artefact of the optional experiment, but check the card frame at 390 px.
+- No check item uses the (t,v)-intersection misconception named in the lesson; acceptable.
 
 ## Checked
-- Round 1 items fixed: learn goal 3 no longer gives the answer away; the coefficients A, B, C are named in the worked example; "kaukana" is answered in the vt paragraph (25 m maximum lead, 36 m / 64 m); exp-3's roots are no longer an exercise answer.
-- Opening illustration matches the Miksi question (car at the line, cyclist ahead); all figure, sim and table labels are LaTeX.
-- Chapter names, no ids in student text; 360/768/1280 px: no clipping, one reading column, sim beside the experiments at 1280 px.
-- Predictions can be refuted (case 1, 3 tables); each option's feedback repairs its misconception; reveal gating min 2/3 fits the experiments.
-- Understanding over formulas: position-versus-speed at the meeting and the area argument for 2v are the core; the algebra serves them.
-- Worked example in seven stages, complete; figure data correct (36 m at 12 s; 9 m areas; 64 m at 8,0 s).
-- Workload fits one lesson (retrieval, exp-3 and reflect are optional); Finnish correct.
+- Phone: the simulation now stacks its panels at 390 px (road strip, graph, legend, controls, readout, closed boxes); canvas and graph labels are larger and legible, and the round-2 crowding of `x (m)` is gone.
+- 390 px Tutki: sim, buttons and table in one column, nothing clipped; 360/768/1280 px tests pass.
+- Opening illustration matches the Miksi question; the question is answered (ohitus at 8,0 s and 64 m, the car faster, the lead peaks at 3,0 s).
+- Predictions can be refuted (cases 1 and 3); each option's feedback repairs its misconception; reveal gating fits the experiments.
+- Worked example in seven complete stages; the A, B, C coefficients are named; figure data correct.
+- Core is understanding (position versus speed at the meeting, area argument for 2v); the algebra serves it. Workload is one lesson (retrieval, exp-3, reflect optional).
+- Finnish and glossary terms correct; chapter names, no ids.
 - Hash unchanged at the end.

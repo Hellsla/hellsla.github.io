@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cbee12aed8d34c3a
+CONTENT-HASH: 6f2cf62a1b9423b6
 
 ## Blocking
 
 ## Polish
-- inquiry.json:322 (exp-3, option "Kerran") — "juoksija saavuttaa bussin ja jää sen jälkeen pysyvästi bussin taakse" contradicts itself: reaching the bus and then falling back without passing would be a touch. The option is still wrong and its feedback is right. — For example: "Kerran: juoksija ohittaa bussin ja pysyy sen jälkeen edellä."
-- inquiry.json:473 (siirto, Periaate) — "Ohitushetken jälkeen nopeus saadaan …" reads as "after the passing". — Write "Kun ohitushetki tunnetaan, nopeus saadaan …".
-- lessons/FY4/fy4-12/figures.py:232 — the kaksi_karrya docstring says B starts "from 30 m", but the code draws it from 40 m. — Fix the comment.
-- Sim canvas at 390 px (shots exp-*-390-1) — the ruler's "150" runs into "$x\ (\text{m})$", and the graph's "$x\ (\text{m})$" overlaps lane B. This is a layout problem, not a physics one.
+- tests/sims/fy4-12.json (canvas assertion) — the 600×400 check now holds only on a wide screen, so nothing checks the phone canvas. This is acceptable: the change is layout only, and the physics assertions are unchanged and pass. — If wanted, assert `c.height===575` on a narrow root.
+- inquiry.json exp-3, correct option — "ensin juoksija saavuttaa bussin" is right, but the juoksija also passes the bus (the gap changes sign). Fine (C); optionally "saavuttaa ja ohittaa".
 
 ## Checked
-- One script recomputed every number from the task data with my own meeting-root model: the head-on figure (12 s, 36 m), the same-place pass (6,0 s, 36 m, 12 m/s, maximum gap 9,0 m), the worked example (roots −2,0 and 8,0 s, 64 m, 16 m/s, gap 25 m at 3,0 s), cases 1–5 (10 s/50 m; 5,0 s; −10 s; 4 ± √6 s), the transfer task (8,0 s, 96 m, 24 m/s), check-2 and its mistakes (6,0; 15; 30; 10 s), pr-paikka (25/50/10) and exit ticket 3. All agree with the text and lesson-answers.py.
-- Round-1 B and A findings are fixed: the summary allows two positive roots, the largest gap carries "kun takana oleva lähtee hitaampana" (this is true for any constant accelerations, because the relative speed is linear in t), and check-3 states that the cyclist is ahead.
-- Figures 2–6 and the example figure are to scale and match their data. The two vt areas are ±9 m.
-- sim.js implements x = x0 + v0 t + at²/2 and the meeting roots on 0 < t ≤ 12 s. Every case stays on its axes. The Mallin oletukset box states the limits (points, constant a, model values).
-- Experiments: tapaus is locked and t is varied. 10 s and 8,0 s lie on the 0,5 s slider grid. The keys xA, xB, vA, gap and meetings exist in simState.
-- Every prediction, Etsi virhe, ei-kohtaa, exp-3 and check-1 has exactly one correct option. Each distractor's feedback gives the right reason.
-- Model answers (johtopäätös, check-3) and the exit ticket agree with the theory.
-- Standing rules: every symbol is in LaTeX (the canvas, readout and table headers render as LaTeX). Multiplication uses \cdot and × never appears. Vectors are \overline{v} and \overline{a}, with no \vec or \mathbf. Velocity arrows are blue (#1971c2) and acceleration arrows orange, distinct from the green and brown body colours. No forces are drawn here.
-- Scope: within FY4 tasainen / tasaisesti kiihtyvä suoraviivainen liike.
+- One script recomputed every number from the task data with my own meeting-root model. All agree with the text and with lesson-answers.py: the figure (12 s, 36 m), the same-place pass (6,0 s, 36 m, 12 m/s, largest gap 9,0 m, both vt areas 9 m), the worked example (roots −2,0 s and 8,0 s, 64 m, 16 m/s, gap 25 m at 3,0 s), cases 1–5 (10 s and 50 m; −10 s; 4 ± √6 s = 1,55 s and 6,45 s), the transfer task (8,0 s, 96 m, 24 m/s), check-2 and its mistakes (6,0; 15; 30; 10 s), pr-paikka (25/50/10) and exit ticket 3.
+- Round-2 polish is fixed. The exp-3 "Kerran" option ("ohittaa … pysyy edellä") is now consistent and still wrong, and its feedback is right. The gaps at 0, 2, 6 and 7 s are −5, +1, +1 and −1,5 m, so the sign changes twice. The siirto Periaate now reads "Kun ohitushetki tunnetaan".
+- sim.js diff: only the layout changed (WIDE/NARROW lane, ruler and graph boxes, and the legend row). The physics and simState are untouched. GX, GY and X read the active box, so the graph and the ruler stay true to the model in both layouts. The 390 px captures show the axes and the starting positions correctly.
+- Experiments: tapaus is locked and t is varied. 10 s and 8,0 s lie on the 0,5 s grid. xA, xB, vA, gap and meetings exist in simState.
+- Each choice item has exactly one correct option, and every distractor's feedback gives the right reason.
+- Theory, summary, contribution, model answers and exit ticket all say the same thing. The largest gap carries the condition "kun takana oleva lähtee hitaampana", and two positive roots are allowed.
+- Scope: within FY4 "tasainen ja tasaisesti kiihtyvä suoraviivainen liike". The standing rules hold (LaTeX, \cdot, \overline{v}, blue v and orange a).

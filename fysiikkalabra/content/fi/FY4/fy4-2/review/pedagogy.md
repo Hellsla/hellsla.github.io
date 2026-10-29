@@ -1,19 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: b20a577adb43a192
+CONTENT-HASH: cacceb2e628b9b6e
 
 ## Blocking
-- inquiry.json exp-1/exp-2 "names"/initial-state box — the box "Alkutila: v_0 = 0 m/s, a = 2 m/s², t = 0 s. Vakiona: v_0, a." shows raw text (v_0, m/s²), not LaTeX (teacher rule: every label LaTeX) — render names/units through KaTeX in the shared component (or write them as $v_0$).
-- Simulation at 390 px (fy4-2-sim-390.png) — the two graphs shrink to about half width; axis ticks and labels are about 8 px and the car is tiny, so the sim is not readable on a phone — stack the graphs full width on narrow screens or raise the canvas font minimum (shared sim layout).
-- lesson.md hero figure — the Miksi question is about growing distances, but the stones are 8–12 px grey dots crowded near the rail; the 1:3:5:7 spacing and the arrows hardly read at 390 and 1280 px, unlike fy3-6 — enlarge the stones, add ghost trails or tick marks at the five heights so the growing gaps are visible.
+- Simulation at 390 px (review/shots/fy4-2-sim-390.png, fy4-2-exp-exp-1-390-1.png) — still unusable: the road scale, the (t,x) and (t,v) graphs overlap and are clipped at the right edge ("x (m)" collides with the 40 tick, "v (m/s)" with the 40 tick, the t axes are cut off), the graphs are not readable and the car is tiny; the 1280 px layout is fine — fix the shared sim layout for narrow widths (stack the two graphs full width below the road, scale the canvas text to the width).
 
 ## Polish
-- Prior item 2 cites luku *Putoamiskiihtyvyys* (a FY1 chapter) and states the lesson's own result; ask a retrieval instead.
-- The tangent goal is only in theory, exit ticket and one exercise; no inquiry activity has the student draw one.
-- exp-1 and exp-2 check the formula's arithmetic more than they test the prediction; fine for core path.
+- Prior item 2 cites luku *Putoamiskiihtyvyys* and asks what the lesson itself teaches; ask a true retrieval.
+- No inquiry activity has the student draw a tangent (exp-3 gives the endpoints).
+- Initial-state box: "a = 2 m/s²" uses fewer significant figures than the text "2,0 m/s²"; align.
+- exp-1 and exp-2 verify the formula more than they could refute the prediction; acceptable on the core path.
 
 ## Checked
-- Learning path from fy4-1 to goals; hook and Miksi match; Esimerkki 7 stages, numbers correct.
-- Predictions refutable by tables; feedback repairs misconceptions; no disclosure before action.
-- Chapter names, not ids, throughout. Figures 3-6 legible at 390 px; layout 1280 px fine.
-- Understanding over formulas: sound (v at zero, signs, strobe).
-- Exit ticket and Tarkista checks fit the core ideas.
+- Opening illustration redrawn: stones larger, 1:3:5:7 gauge and arrows read at 1280 px and 390 px; matches the Miksi question.
+- Experiment initial-state box is now LaTeX (v_0, a, m/s²).
+- Learning path fy4-1 to goals; predictions refutable; feedback repairs misconceptions; no disclosure before action.
+- Example in seven stages, symbolic first; solutions complete.
+- Figures 3-6 and 9 legible at 390 px; wide layout at 1280 px good.
+- Exit ticket and Tarkista checks fit the core ideas; Finnish fine.
