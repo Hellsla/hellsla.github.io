@@ -112,6 +112,7 @@ li{margin:.4rem 0}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
 article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;background:#f6f1e6}   /* the chapter's opening illustration under the Miksi question (figlib Fig hero) */
+article .katex svg{max-width:none;height:inherit;background:none;border:0;border-radius:0;padding:0}   /* KaTeX draws \sqrt and stretchy arrows as svg: the figure frame above must not box them (2026-10-29, fy4-2) */
 
 /* front page (teacher 2026-10-29, "editorial textbook"): a headline and two actions, then the module catalogue as
    lightly divided rows (one link each, stretched over its row), the upcoming modules in a compact list, one sample
