@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b9f7aafeb33e7e43
+CONTENT-HASH: 63d491389ccc4391
 
 ## Blocking
 
 ## Polish
-- None.
+- Osoitin osoittaa suoraan alas asteikon keskelle, vaikka varsi on kallellaan: palkkiin kiinnitetyn osoittimen pitäisi kääntyä palkin mukana. Nyt osoitin 'sanoo' tasapainoa.
+- Osoitin on lämpötilan punaista; muste tai teräs olisi neutraalimpi.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: equal aluminium and iron cubes, the balance tipping to iron, a measuring cylinder. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Laboratorion vaaka, samankokoiset vaalea alumiini- ja tumma rautakuutio, vaaka kallistuu raudan puolelle, vieressä mittalasi vedellä: kysymyksen molemmat puolet (paino ja tilavuuden mittaus). Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

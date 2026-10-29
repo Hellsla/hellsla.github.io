@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: dc9e9e670297c9dd
+CONTENT-HASH: 72394e13137908d8
 
 ## Blocking
 
 ## Polish
-- The probe sits at the right edge, outside the middle third; at 360 px it is a few pixels. Move it inward or enlarge it.
-- Ruler fills use the energy orange and the stable-state green, which carry other meanings in the palette; neutral tints would avoid a false reading.
+- Oranssi viivain käyttää energian/lämmön väriä ja vihreä 'oikean tilan' väriä; kolme neutraalimpaa sävyä (esim. lasi, alumiini, hiekka) välttäisi väreille annetut merkitykset.
+- Viivainten päätyjen pystyviivat voisi jatkaa katkoviivaan asti, jotta 'sama matka' näkyy suoraan.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: Sun, Voyager 2 and three equal-length rulers with different tick densities: one distance in three units. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Aurinko, planeettojen radat ja Voyager 2 mustalla avaruustaustalla, katkoviiva luotaimeen ja sen alla kolme samanpituista viivainta eri jakotiheydellä: kuva on juuri Miksi-kysymyksen 'sama matka, kolme yksikköä', ei pelkkä avaruusmaisema. Luotain ja viivaimet erottuvat 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

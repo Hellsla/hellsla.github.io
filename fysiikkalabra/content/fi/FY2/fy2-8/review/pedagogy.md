@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d50a9928881cd6f1
+CONTENT-HASH: a98e6bacbd290763
 
 ## Blocking
 
 ## Polish
-- None.
+- Taivas vaihtuu harmaasta siniseen terävänä pystyrajana keskellä; liukuva siirtymä näyttäisi luontevammalta.
+- Piipun vaaleanpunainen sävy on 'ennen nousua' -lämpötilaväri; harmaa tai valkopunainen raita tavallisina väreinä.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: the house and its socket fed by a smoking coal plant on one side and wind turbines on the other. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Talo pistorasioineen keskellä, vasemmalla hiilivoimala tumman savun ja harmaan taivaan alla, oikealla tuulivoimalat kirkkaalla taivaalla, molemmista voimalinja taloon: 'sama sähkö, eri päästöt', kuten kysymys. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

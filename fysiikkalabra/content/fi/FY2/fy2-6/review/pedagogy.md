@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b0f66656afcb41be
+CONTENT-HASH: 30276a519b285c66
 
 ## Blocking
 
 ## Polish
-- The dam and the reservoir are small at 360 px, though the plant now reads as hydropower at 1200 px.
-- The power lines are faint at 360 px.
+- Vesivoimalan pato lukee rakennuksena, jolla on sininen katto; padon takana näkyvä tekojärvi ja alapuolinen kuohu tekisivät siitä tunnistettavan.
+- Kolmen tuulivoimalan lavat menevät päällekkäin keskellä; turbiinien porrastus väljemmin selkeyttäisi 360 px:ssä.
 
 ## Checked
-batch delta review: the redrawn hero: a dam wall and a reservoir now make the hydropower plant recognisable, so the aria-label's "joen padolla" is true of the picture; all plants still join one grid; no text in the image, figure palette.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Suomalainen maisema: ydinvoimala rannalla, vesivoimala joella, kolme tuulivoimalaa, savupiipullinen polttoainevoimala ja kaupunki, kaikki samaan verkkoon: yhtäaikaisuus, josta kysymys kysyy. Runsas mutta jäsennelty. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

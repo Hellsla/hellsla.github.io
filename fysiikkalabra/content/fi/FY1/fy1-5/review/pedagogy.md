@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5ccf972d4860fdd7
+CONTENT-HASH: 0da2d50162748803
 
 ## Blocking
 
 ## Polish
-- The probe is outside the middle third and small at 360 px.
-- The past positions are filled light-blue dots, not the "haaleita merkkejä" of the aria-label; a lower opacity would match.
+- Luotaimen magnetometripuomi kulkee tulevien paikkojen katkoviivan päällä; puomin kääntäminen alaspäin selkeyttäisi kuvan oikeaa yläkulmaa.
+- Viimeisen merkin ja luotaimen väli on lyhyempi kuin muut välit; luotaimen sijoittaminen täsmälleen seuraavaan tasavälin kohtaan vahvistaisi viestiä.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: the probe's equally spaced past positions and dashed future ones on a straight path. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Aurinko ja sisäplaneetat, Voyager 2 kaukana, tasavälein olevat aiemmat paikat suoralla ja tulevat paikat katkoviivana: kuvaa suoraan tasaisen liikkeen ennustettavuutta. Merkkien välit ovat aidosti tasaiset. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

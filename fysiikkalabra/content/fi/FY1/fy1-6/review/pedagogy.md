@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c0191442e25c54a8
+CONTENT-HASH: 14228fc14bde79ec
 
 ## Blocking
 
 ## Polish
-- The guide line at equal height is still the energy orange; ink or muted grey would keep orange for energy.
-- The feather is still about 120 px beyond the releasing hand; bring both objects under the hand.
+- 360 px:ssä vasara ja höyhen ovat pieniä; niitä voisi suurentaa, sillä ne ovat kuvan aihe.
+- Aria-label puhuu haaleista välikuvista, mutta keskimmäinen vasara on lähes täysin peittävä; selvempi läpikuultavuus yhtenäistäisi.
+- Kuumoduuli on pelkkä laatikko; pieni yksityiskohta (folio, tikkaat) nostaisi tasoa muuhun kuvaan nähden.
 
 ## Checked
-batch delta review: the redrawn hero: the strobe gaps now grow (72 px, then 120 px, as 24 t² from the hand), so the images no longer suggest steady speed; hammer and feather are level in every image, and the aria-label still matches; no text in the image, figure palette.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Astronautti Kuun pinnalla, kuumoduuli ja Maa taivaalla, vasara ja höyhen kolmessa vaiheessa aina samalla korkeudella ja kasvavin välimatkoin (70 px, sitten 120 px): oikea tilanne ja oikea fysiikka. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

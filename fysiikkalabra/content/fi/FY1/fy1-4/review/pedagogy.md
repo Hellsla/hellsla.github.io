@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 23baf5a271a5c3ad
+CONTENT-HASH: 086a9e4f0d92d6a0
 
 ## Blocking
 
 ## Polish
-- The ruler lies parallel to and below the fitted line, not along it; laying it against the line would match "vedetty viivaimen avulla".
-- More of the points sit on or below the line than above; a more even scatter would show what a fit balances.
+- Viivain on suoran rinnalla eikä sen kohdalla; viivaimen reuna suoran alla kertoisi selvemmin, että suora on vedetty sillä.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: graph paper with scattered points and one fitted line. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Ruutupaperi, mittauspisteet virhepalkkeineen hieman suoran molemmin puolin, yksi sovitettu suora, viivain, kynä, kumi ja laskin: kysymyksen tilanne täsmälleen. Hyvä, siisti yksityiskohtaisuus; luettava 360 px:ssä. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.

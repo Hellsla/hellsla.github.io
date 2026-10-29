@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: df38225be8ac26d7
+CONTENT-HASH: a2b91603cd174032
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the hero aria-label is a faithful, natural English translation of the Finnish description and matches the picture.
+batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.

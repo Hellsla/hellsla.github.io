@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ce91bbf97f98e981
+CONTENT-HASH: b42c53a47138bbb5
 
 ## Blocking
 
 ## Polish
-- The Sun's arrow ends among the trees above the field, not in the grain; end it in the crop.
+- Pyöräilijä on muuta kuvaa karkeampi (yksi jalka, ei poljinta, vartalo paksuna viivana); kampi, polkimet ja toinen jalka tekisivät hahmosta painetun kirjan tasoisen.
+- Viljapelto päättyy jyrkkään vinoon reunaan; pehmeämpi reuna tai pellon jatkuminen taustalle.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: the energy chain Sun to grain to bread to cyclist, with filled energy arrows. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: uusi tekstitön avauskuva (data-fig="hero") Miksi-kysymyksen alla, kaappaukset 1200 ja 360 px sekä SVG. Aurinko, viljapelto, leipä ja pyöräilijä maantiellä, energian oranssit nuolet ketjussa: kysymyksen energiaketju selkeästi. Nuolten väri on energian väri, kuten kuuluu. Aria-label vastaa kuvaa, ei tekstiä, värit figuuripaletista.
