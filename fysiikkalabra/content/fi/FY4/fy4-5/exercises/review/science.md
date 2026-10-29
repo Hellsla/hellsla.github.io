@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5ea8f43966d623bc
+CONTENT-HASH: 8e28baefc5966084
 
 ## Blocking
 
 ## Polish
-- solutions.md L1-05 — the task now says "Piirrä köyden voima ja sen komponentit katkoviivoin", but the solution has no drawing step. — Add one Voimakuvio line before Kaava, for example "T vinosti ylös 40° kulmassa, T_x vaakasuoraan ja T_y pystysuoraan katkoviivoin".
-- solutions.md L1-01 Vastaus — the answer gives 14,7 N ≈ 15 N "kaksi merkitsevää numeroa", which mixes two precisions. — Give 15 N as the final answer and mention 14,7 N only as the intermediate value.
+- solutions.md L1-05 — the task asks the student to draw the rope force and its dashed components, but the solution has no Voimakuvio step. — Add one line before Kaava: "T vinosti ylös 40° kulmassa, T_x ja T_y katkoviivoin".
+- solutions.md L1-01 Vastaus — "14,7 N ≈ 15 N, kaksi merkitsevää numeroa" mixes two precisions. — Give 15 N as the answer and 14,7 N only as the intermediate value.
+- lessons/FY4/fy4-5/figures.py:258 — the `malli_hissi_jarru` docstring says L3-02, but the figure belongs to L3-01.
 
 ## Checked
-- L1-01: the answer is now 14.7 with tolerance 0.03, a limit of 0.441 N. Both 14,7 and 15 are accepted, and answers.py gives 14.715.
-- The L1-05 rounding sentence is now right. 191,5 N → 190 N is within tolerance, and so is 192.
-- The L3-01 wording change (draw before opening the solution) leaves the physics unchanged: N = m(g − 1,5) = 581,7 → 580 N, and the model figure `malli-hissi` agrees.
-- All 12 answers were recomputed in one script and agree with exercises.json and answers.py (largest difference 0,8 %).
-- Every fbd-tagged solution draws its diagram before its equations, with signs that follow the diagram.
-- Directions: the wall's N is horizontal and the friction on the book points up; the ceiling pushes the balloon down; the curling stone has no forward force; for the downward push, N > G.
-- Model figures: `malli-pulkka` has N < G and F_μ = T_x, with T_x dashed. In `malli-hissi`, N < G, and v and a are drawn as separate blue arrows.
-- The `ruutu` figure and its description give the forces without giving the answer away (15 N).
-- The units, the gram-to-kilogram conversion and the magnitudes are realistic.
+- I recomputed all twelve answers in one script with my own formulas: 14,7; 15; 4,9; 637,7; 191,5 N; 52,0; 660,6 N; 0,598 m/s²; 1,0 m/s²; 581,7; 1,9; 0,0608 N. All agree with answers.py and exercises.json within tolerance.
+- No solution describes a point model. Every diagram step says "suorakulmiona" (L2-04: seen from above, with G and N from the side).
+- `ruutu`: 32 px = 10 N, F1 40 N, F2 25 N, F3 = F4 = 30 N, drawn from the sides of a rectangle. The description gives the same data and not the 15 N.
+- `malli-pulkka` is to scale: G 147 N, N 117 N, T 60 N at 30° from the front top corner, F_μ = T_x = 52 N from the back bottom corner, and ΣF = 0.
+- `malli-hissi`: N 594 N < G 687 N, with v blue up and a orange down, both off the body, and the lift drawn as a pictorial situation picture.
+- Directions: the wall's friction points up on the book (L1-03). The ceiling's N points down on the balloon, with F_noste = G + N (L3-03). The curling stone has no forward force (L3-02). A lift slowing upward has a_y < 0 (L3-01).
+- Rounding follows the limiting datum. The units and the g → kg conversion in L3-03 are right.

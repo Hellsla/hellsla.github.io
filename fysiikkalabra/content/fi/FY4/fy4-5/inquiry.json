@@ -57,7 +57,7 @@
       "choices": [
         {
           "text": "$N$ on yhtä suuri kuin $G$, koska pulkka ei liiku pystysuunnassa.",
-          "feedback": "Pystysuuntaisten voimien summa on nolla, mutta pystysuunnassa on kolme voimaa: paino alas, tukivoima ylös ja narun voiman pystykomponentti ylös. Mallin arvoissa kulmalla $30^\\circ$ paino on $196\\,\\text{N}$ ja tukivoima vain $146\\,\\text{N}$."
+          "feedback": "Pystysuuntaisten voimien summa on nolla, mutta pystysuunnassa vaikuttavat kaksi voimaa ja narun voiman pystykomponentti: paino alas, tukivoima ylös ja pystykomponentti ylös. Mallin arvoissa kulmalla $30^\\circ$ paino on $196\\,\\text{N}$ ja tukivoima vain $146\\,\\text{N}$."
         },
         {
           "text": "$N$ on pienempi kuin $G$.",
@@ -102,7 +102,7 @@
       "stage": "tutki",
       "type": "sim",
       "text": "Simulaatiossa pulkkaa vedetään narulla tai työnnetään kahvasta jäällä. Vasemmalla on tilannekuva ja oikealla pulkan voimakuvio, jonka nuolten pituudet ovat mittakaavassa.",
-      "howto": "Valitse *Tilanne* (veto tai työntö) ja säädä voimaa $F$ ja kulmaa $\\alpha$. Voimakuvio päivittyy heti. Paina *Käynnistä*, niin pulkka lähtee liikkeelle, ja *Alusta*, niin se pysähtyy alkuun. *Komponentit*-ruutu näyttää voiman $F$ komponentit katkoviivoin. *Nopeus* hidastaa tai nopeuttaa liikettä muuttamatta lukemia. Lukemat ovat kuvan alla.",
+      "howto": "Valitse *Tilanne* (veto tai työntö) ja säädä voimaa $F$ ja kulmaa $\\alpha$. Voimakuvio päivittyy heti. Paina *Käynnistä*, niin pulkka lähtee liikkeelle, ja *Alusta*, niin se pysähtyy alkuun. Ruutu *Näytä voiman F komponentit* näyttää voiman $F$ komponentit katkoviivoin. *Nopeus* hidastaa tai nopeuttaa liikettä muuttamatta lukemia. Lukemat ovat kuvan alla.",
       "model": "Arvot ovat simulaation laskemia mallin arvoja. Jää on vaakasuora ja kitka jätetään huomiotta, joten pulkkaan vaikuttavat vain paino $\\mathbf{G}$, jään tukivoima $\\mathbf{N}$ ja narun tai kahvan voima $\\mathbf{F}$. Voima on niin pieni, ettei pulkka nouse jäästä. Ilmanvastusta ei ole. Nopeuden sininen nuoli on tilannekuvassa, ei voimakuviossa, koska nopeus ei ole voima.",
       "calc": "Voiman komponentit ovat $F_x = F\\cos\\alpha$ ja $F_y = F\\sin\\alpha$. Vedossa $F_y$ osoittaa ylös, työnnössä alas. Pystysuunnassa pulkka ei kiihdy, joten $N + F_y - G = 0$ vedossa ja $N - F_y - G = 0$ työnnössä, ja $G = mg$, $g = 9{,}81\\,\\text{m/s}^2$. Vaakasuunnassa $F_x = ma$, joten $a = \\dfrac{F\\cos\\alpha}{m}$."
     },
@@ -501,11 +501,11 @@
         },
         {
           "key": "fbd_representation",
-          "detail": "Paino keskipisteestä, tukivoima ja kitka alapinnasta, kahvan voima kahvan kiinnityskohdasta; kitkan nuoli alkaa tai päättyy laatikon reunaan; jokaisella oma tunnus."
+          "detail": "Paino keskipisteestä, tukivoima ja kitka alapinnasta, kahvan voiman nuoli alkaa tai päättyy kahvan kiinnityskohtaan; kitkan nuoli alkaa tai päättyy laatikon reunaan; jokaisella oma tunnus."
         },
         {
           "key": "fbd_magnitudes",
-          "detail": "Tukivoima on pidempi kuin paino, ja kitka on yhtä pitkä kuin kahvan voiman vaakakomponentti; komponentit katkoviivalla."
+          "detail": "Tukivoima on pidempi kuin paino, ja kitka on yhtä pitkä kuin kahvan voiman vaakakomponentti; jos komponentit piirretään, ne ovat katkoviivalla."
         },
         {
           "key": "fbd_equations",

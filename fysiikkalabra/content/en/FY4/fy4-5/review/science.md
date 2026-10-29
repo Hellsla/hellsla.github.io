@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1bb16197ef174c7b
+CONTENT-HASH: 6dc7154e3363a512
 
 ## Blocking
 - none
 
 ## Polish
-- scripts/check_i18n.py does not list `detail` (a rubric criterion's specifics) in TEXT_KEYS, so it reports the translated check-3 criteria details as errors; the translation is right and the checker needs `detail` added (outside this review's scope; the content hash does not change when it is fixed).
-- lang/en.json (not a lesson file): the sim's canvas title reads "Situation" where the lesson says "situation diagram".
+- none
 
 ## Checked
-- Checked (full translation review against the reviewed Finnish): lesson.md (core idea, eight steps, the two representations, the YTL scoring paragraph, formula section, staged worked example 2.96 m/s² / 71.8 N rounded to 3.0 m/s² and 72 N, reasonableness 118 N = 72 N + 46 N, misconception, summary), inquiry.json (hook, review, both predictions with the model values 196/146 N and 5.0/2.5 m/s², sim texts, exp-1 numeric solution 50 N, exp-2 choice, conclusion model, spring-balance data 4.9 N, error-finding, elevator, fish 23 N, checks incl. sign 51 N, draw-it-yourself 52 N / 148 N), exit ticket, meta. Decimal points throughout, units and LaTeX preserved; no wrong option became right; the elevator options keep empty texts and the four figure descriptions only list arrow lengths. Force symbols G, N, T, F_mu, F consistent with the figure labels; buoyancy is F_b in the helium figure via figures.json. Fixed: the experiments' column name `tilanne` translated (situation), the six check-3 rubric details translated from Finnish, the sim howto now names the options as the sim shows them. figures.py --lang en --check up to date; preview at 360 px: no overflow, no page errors, sim labels in English, figures render.
+- Scope: lesson.md changed passages (free-body-diagram intro, step 3 friction, new step 6 colours, object/point-of-action paragraph, worked-example diagram, summary), inquiry.json (sim howto, solutions, feedback, draw-it-yourself criteria and model answer, elevator prompt), the 13 figures.json entries.
+- Compared against the Finnish source (English version): physics unchanged and faithfully translated: friction from the body outline and direction from sliding relative to the surface, velocity blue / acceleration orange / force red, net force not a force, buoyancy/normal-force diagrams, numbers and units. No leftover point model, "as a point", pistemalli, kappalemalli or pisteenä in lesson.md, inquiry.json, solutions.md or figures.json (grep).
+- `figures.py fy4-5 --lang en --check` up to date; `check_i18n.py` 0 errors. Nothing needed fixing in this pass.

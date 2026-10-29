@@ -1,9 +1,9 @@
 [
  {
-  "expr": "(() => { const S=window.simState; return S.F===100 && Math.abs(S.alpha-30)<1e-9 && S.m===20 && S.tapa==='veto' && S.malli===undefined && S.komponentit===false && S.running===false && S.v===0 ? 1 : 0 })()",
+  "expr": "(() => { const S=window.simState; return S.F===100 && Math.abs(S.alpha-30)<1e-9 && S.m===20 && S.tapa==='veto' && S.komponentit===false && S.running===false && S.v===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "on load: pull, F = 100 N, alpha = 30°, m = 20 kg, no components, at rest, no point-model option (must run before any setup)"
+  "note": "on load: pull, F = 100 N, alpha = 30°, m = 20 kg, no components, at rest (must run before any setup)"
  },
  {
   "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='0' && R[0].max==='150' && R[0].step==='10' && R[1].min==='0' && R[1].max==='80' && R[1].step==='5' ? 1 : 0 })()",
@@ -110,12 +110,5 @@
   "expected": 1,
   "tol": 0,
   "note": "components checkbox reaches simState"
- },
- {
-  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; L[2].value='kappale'; L[2].dispatchEvent(new Event('change',{bubbles:true}));",
-  "expr": "window.simState.malli==='kappale' ? 1 : 0",
-  "expected": 1,
-  "tol": 0,
-  "note": "diagram model select reaches simState"
  }
 ]

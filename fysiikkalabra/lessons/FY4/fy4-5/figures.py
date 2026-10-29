@@ -64,44 +64,50 @@ def tilanne():
 
 
 def suunnat():
-    """Guide step 3: the directions of the common forces, four small force diagrams."""
-    f = Fig("fy45-suunnat", 620, "Neljä pientä voimakuviota, joissa kappale on suorakulmio. Vasemmalla ylhäällä laatikko lepää vaakasuoralla "
-            "lattialla: paino G keskipisteestä alas ja yhtä pitkä tukivoima N alapinnasta ylös. Oikealla ylhäällä laatikko on paikallaan "
-            "kaltevalla rinteellä: paino G suoraan alas, tukivoima N kohtisuoraan rinnettä vastaan ja kitkavoima alapinnan ylemmästä "
-            "kulmasta rinteen suuntaisesti ylös. Vasemmalla alhaalla lamppu roikkuu johdon varassa: paino G alas ja johdon "
-            "jännitysvoima T johtoa pitkin ylös. Oikealla alhaalla heliumilmapallo painuu kattoa vasten ja on paikallaan. Sen "
-            "vieressä pallon voimakuvio: noste keskipisteestä ylös, paino keskipisteestä alas ja katon tukivoima N, joka painaa yläpintaa alaspäin, "
-            "pois katon pinnasta. Nosteen nuoli on yhtä pitkä kuin painon ja tukivoiman nuolet yhteensä.")
+    """Guide step 3: the directions of the common forces, four panels, each a small situation picture (pictorial) with
+    the object's force diagram (a rectangle, no surfaces) beside it."""
+    f = Fig("fy45-suunnat", 620, "Neljä tilannetta. Kussakin on vasemmalla pieni tilannekuva ja oikealla kappaleen voimakuvio, jossa "
+            "kappale on suorakulmio eikä pintoja piirretä. Vasemmalla ylhäällä laatikko lepää vaakasuoralla lattialla: paino G "
+            "keskipisteestä alas ja yhtä pitkä tukivoima N alapinnasta ylös. Oikealla ylhäällä laatikko on paikallaan kaltevalla "
+            "rinteellä: voimakuviossa suorakulmio on kallellaan kuten rinteellä, paino G suoraan alas, tukivoima N kohtisuoraan "
+            "alapintaa vastaan ja kitkavoima alapinnan ylemmästä kulmasta rinteen suuntaisesti ylös. Vasemmalla alhaalla lamppu "
+            "roikkuu johdon varassa: paino G alas ja johdon jännitysvoima T yläpinnasta ylös. Oikealla alhaalla heliumilmapallo "
+            "painuu kattoa vasten ja on paikallaan: noste keskipisteestä ylös, paino keskipisteestä alas ja katon tukivoima N, "
+            "joka painaa yläpintaa alaspäin, pois katon pinnasta. Nosteen nuoli on yhtä pitkä kuin painon ja tukivoiman nuolet yhteensä.")
     f.line(300, 10, 300, 610, RULE, 1.5, "6 6"); f.line(10, 310, 590, 310, RULE, 1.5, "6 6")
-    # 1 floor
+    # 1 floor: situation left, diagram right
     f.tex(150, 24, r"\text{lattia}", "middle", MUTED)
-    ground(f, 40, 260, 200)
-    G1 = 90.0
-    (FBD(f, 1.1, body=(150, 170, 76, 60), a_dir=(0, 0)).force("G", (0, -G1), (150, 170), "gravity", lab=(20, -4))
-     .force("N", (0, G1), (168, 200), "normal", surface=0, lab=(20, 4)).draw())
-    # 2 slope 25°
+    ground(f, 20, 120, 190); box(f, 70, 168, 56, 44)
+    G1 = 80.0
+    (FBD(f, 1.1, body=(215, 160, 60, 44), a_dir=(0, 0)).force("G", (0, -G1), (215, 160), "gravity", lab=(20, -4))
+     .force("N", (0, G1), (230, 182), "normal", surface=0, lab=(20, 4)).draw())
+    # 2 slope 25°: situation left, the tilted rectangle right
     th = math.radians(25)
     f.tex(450, 24, r"\text{rinne}", "middle", MUTED)
-    x0, y0 = 316, 262
-    ground(f, x0, x0 + 268 * math.cos(th), y0, angle=25)
     t, nrm = (math.cos(th), math.sin(th)), (-math.sin(th), math.cos(th))
-    s = 130
-    bx, by = x0 + s * t[0], y0 - s * t[1]                          # middle of the contact face (figure coordinates)
-    cxs, cys = bx + 30 * nrm[0], by - 30 * nrm[1]
-    G2 = 90.0
-    d = FBD(f, 1.1, body=(cxs, cys, 72, 60, 25), a_dir=(0, 0))
-    d.force("G", (0, -G2), (cxs, cys), "gravity", lab=(20, 4))
-    d.force("N", (G2 * math.cos(th) * nrm[0], G2 * math.cos(th) * nrm[1]), (bx - 14 * t[0], by + 14 * t[1]), "normal", surface=25, lab=(-16, -6))
-    d.force("F_mu", (G2 * math.sin(th) * t[0], G2 * math.sin(th) * t[1]), (bx + 36 * t[0], by - 36 * t[1]), "friction", surface=25, lab=(4, 22))
+    x0, y0 = 312, 230
+    ground(f, x0, x0 + 120 * math.cos(th), y0, angle=25)
+    bx, by = x0 + 64 * t[0], y0 - 64 * t[1]
+    pts = [(bx - 22 * t[0], by + 22 * t[1]), (bx + 22 * t[0], by - 22 * t[1])]
+    f.path(f"M{pts[0][0]:.1f},{pts[0][1]:.1f} L{pts[1][0]:.1f},{pts[1][1]:.1f} L{pts[1][0] + 34 * nrm[0]:.1f},{pts[1][1] - 34 * nrm[1]:.1f} "
+           f"L{pts[0][0] + 34 * nrm[0]:.1f},{pts[0][1] - 34 * nrm[1]:.1f} Z", BOX, BOX_EDGE, 2.5)
+    G2 = 80.0
+    cx, cy, w, h = 492, 150, 60, 44
+    fx, fy = cx - (h / 2) * nrm[0], cy + (h / 2) * nrm[1]           # middle of the bottom face (figure coordinates)
+    d = FBD(f, 1.1, body=(cx, cy, w, h, 25), a_dir=(0, 0))
+    d.force("G", (0, -G2), (cx, cy), "gravity", lab=(20, 4))
+    d.force("N", (G2 * math.cos(th) * nrm[0], G2 * math.cos(th) * nrm[1]), (fx - 12 * t[0], fy + 12 * t[1]), "normal", surface=25, lab=(-16, -6))
+    d.force("F_mu", (G2 * math.sin(th) * t[0], G2 * math.sin(th) * t[1]), (fx + w / 2 * t[0], fy - w / 2 * t[1]), "friction", surface=25, lab=(0, 24))
     d.draw()
-    # 3 hanging lamp
+    # 3 hanging lamp: situation left, diagram right
     f.tex(150, 334, r"\text{lamppu}", "middle", MUTED)
-    ground(f, 70, 230, 360, below=False)
-    f.line(150, 360, 150, 446, INK, 2.5)
-    G3 = 80.0
-    (FBD(f, 1.1, body=(150, 466, 56, 40), a_dir=(0, 0)).force("G", (0, -G3), (150, 466), "gravity", lab=(22, -4))
-     .force("T", (0, G3), (150, 446), "tension", rope=(0, 1), lab=(22, 20)).draw())
-    # 4 helium balloon under the ceiling: the situation picture and, beside it, the balloon's force diagram
+    ground(f, 30, 110, 360, below=False)
+    f.line(70, 360, 70, 440, INK, 2.5)
+    f.path("M48,470 L92,470 L81,440 L59,440 Z", "#e9c98a", INK, 2.5)
+    G3 = 70.0
+    (FBD(f, 1.1, body=(215, 470, 50, 36), a_dir=(0, 0)).force("G", (0, -G3), (215, 470), "gravity", lab=(22, -4))
+     .force("T", (0, G3), (215, 452), "tension", rope=(0, 1), lab=(22, 20)).draw())
+    # 4 helium balloon under the ceiling: situation left, diagram right
     f.tex(450, 334, r"\text{heliumpallo}", "middle", MUTED)
     ground(f, 316, 430, 360, below=False)
     f.circle(372, 402, 40, "#f2a69c", INK, 2.5)
@@ -255,7 +261,7 @@ def malli_pulkka():
 
 
 def malli_hissi_jarru():
-    """Model diagram for exercise L3-02: a person in a lift moving up and slowing down (70 kg, a = 1,5 m/s² down)."""
+    """Model diagram for exercise L3-01: a person in a lift moving up and slowing down (70 kg, a = 1,5 m/s² down)."""
     m, a = 70.0, -1.5
     G = m * g; N = m * (g + a)
     f = Fig("fy45-malli-hissi", 340, "Mallikuvio: ihminen hississä, joka liikkuu ylöspäin ja hidastaa. Vasemmalla tilannekuvana hissikori "
@@ -268,7 +274,7 @@ def malli_hissi_jarru():
     cx, cy, w, h = 300, 170, 44, 90
     d = FBD(f, 0.17, body=(cx, cy, w, h), m=m, a=(0, a))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(22, -4))
-    d.force("N", (0, N), (cx - 12, cy + h / 2), "normal", surface=0, lab=(-22, 6))
+    d.force("N", (0, N), (cx - 12, cy + h / 2), "normal", surface=0, lab=(-26, 2))
     d.draw()
     d.motion(r"\mathbf{v}", (0, 1), (450, 200), 70)
     d.motion(r"\mathbf{a}", (0, -1), (520, 120), 50)
@@ -301,7 +307,7 @@ FIGURES = {"tilanne": tilanne, "suunnat": suunnat, "komponentit": komponentit, "
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "tilanne": "reveals: the forces on a box pulled at an angle with friction (a theory figure)",
-    "suunnat": "reveals: the force diagrams of a box on a floor and on a slope, a hanging lamp and a helium balloon under a ceiling",
+    "suunnat": "reveals: the situation pictures and force diagrams of a box on a floor and on a slope, a hanging lamp and a helium balloon under a ceiling",
     "komponentit": "safe: a force on an object and its components with the trigonometry, no situation",
     "esimerkki": "reveals: the force diagram of the worked example (sled pulled at 35°)",
     "virhe": "safe: a deliberately wrong diagram (forward force on a sliding box) for error-finding; its description lists the arrows, not the error",

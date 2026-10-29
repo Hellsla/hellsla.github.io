@@ -106,7 +106,7 @@ new p5((p) => {
     lab(__('voimakuvio'), 350, 22, 'l', fh, INKC);
     const w = D.w, h = D.h;
     p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2); p.rect(D.x - w / 2, D.y - h / 2, w, h);
-    const pG = [D.x, D.y], pN = [D.x + 14, D.y + h / 2];
+    const pG = [D.x, D.y], pN = [D.x - 14, D.y + h / 2];   // N left of G, clear of the F_y label
     const pF = f.push ? [D.x - w / 2, D.y - h / 2] : [D.x + w / 2, D.y - h / 2];   // the handle's or the rope's corner
     const F = [f.Fx, f.Fy];
     arrow(pG, [0, -f.G], '$\\mathbf{G}$', fh, k);
@@ -136,7 +136,7 @@ new p5((p) => {
     const a = Math.atan2(y2 - at[1], x2 - at[0]);
     p.stroke(...RED, 200); p.strokeWeight(2); p.drawingContext.setLineDash([6, 5]); p.line(at[0], at[1], x2, y2); p.drawingContext.setLineDash([]);
     p.noFill(); p.line(x2, y2, x2 - 10 * Math.cos(a - 0.5), y2 - 10 * Math.sin(a - 0.5)); p.line(x2, y2, x2 - 10 * Math.cos(a + 0.5), y2 - 10 * Math.sin(a + 0.5));
-    const off = vec[0] !== 0 ? [0, 16] : [18, 0];
+    const off = vec[0] !== 0 ? [0, 16] : [-18, 0];   // F_y labelled on its left, away from the label of F
     lab(name, x2 + off[0] + 10 * Math.cos(a), y2 + off[1] + 10 * Math.sin(a) + fh * 0.36, 'c', fh, RED);
   }
 
