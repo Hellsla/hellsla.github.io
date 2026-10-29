@@ -29,14 +29,15 @@
 **Järkevyys:** Arvio: $1{,}6 \cdot 25 = 40$, joten $38\,\text{GWh}$ on oikeaa suuruusluokkaa. Kun yksi voimala tuottaa vuorokaudessa $38\,\text{GWh}$, vuodessa se tuottaa yli $10\,\text{TWh}$.
 
 ## fy2-6-L1-04
-**Annettu:** tuulivoima $20{,}2\,\text{TWh}$, kokonaistuotanto $79{,}9\,\text{TWh}$
-**Kysytty:** tuulivoiman osuus prosentteina
-**Periaate:** Osuus kertoo, kuinka suuri osa kokonaisuudesta osa on, joten osa jaetaan kokonaisuudella ja tulos ilmoitetaan prosentteina.
-**Kaava:** $\text{osuus} = \dfrac{E_\text{tuuli}}{E_\text{yht}}$
-**Muunnokset:** Ei tarvita: molemmat ovat teravattitunteina, joten yksikkö supistuu. Prosentteina $1 = 100\,\%$.
-**Sijoitus:** $\text{osuus} = 20{,}2\,\text{TWh} : 79{,}9\,\text{TWh} = 0{,}2528 = 25{,}28\,\%$
-**Vastaus:** $25{,}3\,\%$, kolme merkitsevää numeroa kuten energioissa $20{,}2\,\text{TWh}$ ja $79{,}9\,\text{TWh}$.
-**Järkevyys:** $20 : 80 = 0{,}25$, joten neljäsosa on oikein. Tuulivoiman osuus on selvästi alle puolet mutta suurempi kuin vesivoiman.
+**Annettu:** kokonaistuotanto $E_\text{yht} = 79{,}9\,\text{TWh}$; kuvasta luetaan tuulivoiman ja aurinkosähkön tuotanto
+**Kysytty:** tuulivoiman ja aurinkosähkön yhteinen osuus sähköntuotannosta prosentteina
+**Periaate:** Tuuli- ja aurinkovoiman teho riippuu säästä, joten ne ovat sääriippuvaisia tuotantotapoja. Niiden yhteinen tuotanto on kahden pylvään summa, ja osuus saadaan jakamalla se kokonaistuotannolla.
+**Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$ ja aurinkosähkön lyhyen pylvään päässä $0{,}9$. Vaaka-akselin yksikkö on $\text{TWh}$, joten $E_\text{tuuli} = 20{,}2\,\text{TWh}$ ja $E_\text{aurinko} = 0{,}9\,\text{TWh}$.
+**Kaava:** $\text{osuus} = \dfrac{E_\text{tuuli} + E_\text{aurinko}}{E_\text{yht}}$
+**Muunnokset:** Ei tarvita: kaikki energiat ovat teravattitunteina, joten yksikkö supistuu. Prosentteina $1 = 100\,\%$.
+**Sijoitus:** $\text{osuus} = \dfrac{20{,}2\,\text{TWh} + 0{,}9\,\text{TWh}}{79{,}9\,\text{TWh}} = \dfrac{21{,}1\,\text{TWh}}{79{,}9\,\text{TWh}} = 0{,}2641 = 26{,}41\,\%$
+**Vastaus:** $26{,}4\,\%$, kolme merkitsevää numeroa kuten energioissa $21{,}1\,\text{TWh}$ ja $79{,}9\,\text{TWh}$.
+**Järkevyys:** $21 : 80 \approx 0{,}26$, eli noin neljäsosa. Lähes koko osuus on tuulivoimaa, koska aurinkosähkön pylväs on hyvin lyhyt. Loput noin kolme neljäsosaa tuotettiin ydin-, vesi- ja polttoainevoimalla.
 
 ## fy2-6-L1-05
 **Annettu:** teho $P = 4{,}0\,\text{kW}$, aika $t = 3{,}5\,\text{h}$

@@ -9,14 +9,15 @@
 **Järkevyys:** Häviö on $4{,}0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}$, ja $480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}$, joten energia säilyy. Perille tuleva energia on lähtevää pienempi, kuten pitääkin.
 
 ## fy2-7-L1-02
-**Annettu:** lähtevä energia $E_\text{lähtö} = 360\,\text{MWh}$ ja perille tuleva energia $E_\text{perille} = 327\,\text{MWh}$
+**Annettu:** kaukolämpöverkkoon lähtevä energia $E_\text{lähtö} = 360\,\text{MWh}$; häviön osuus luetaan kuvasta
 **Kysytty:** häviö $E_\text{häviö}$ megawattitunteina
-**Periaate:** Energia ei katoa. Se, mikä lähtee mutta ei tule perille, on muuttunut lämmöksi ympäristöön eli on siirtohäviötä.
-**Kaava:** $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$
-**Muunnokset:** Ei tarvita: molemmat energiat ovat megawattitunteina.
-**Sijoitus:** $E_\text{häviö} = 360\,\text{MWh} - 327\,\text{MWh} = 33\,\text{MWh}$
-**Vastaus:** $33\,\text{MWh}$, kaksi merkitsevää numeroa, koska molemmat energiat on annettu täysinä megawattitunteina ja epätarkin tieto rajoittaa erotuksen tarkkuutta.
-**Järkevyys:** Häviön osuus lähtevästä on $33 : 360 \approx 0{,}092$ eli noin $9\,\%$, mikä vastaa kaukolämpöverkon tavallista häviötä.
+**Periaate:** Energia ei katoa. Se osa lähtevästä energiasta, joka ei tule perille, muuttuu matkalla lämmöksi ympäristöön eli on siirtohäviötä. Häviön osuus lasketaan lähtevästä energiasta, joten häviö on osuus kertaa lähtevä energia.
+**Kuvaajan lukeminen:** Kuvan alempi energiavirta on kaukolämpöverkko. Sen alas kaartuvan häviöhaaran kohdalla lukee $9\,\%$ ja perille jatkuvan haaran kohdalla $91\,\%$, ja yhteensä ne ovat lähtevän virran $100\,\%$. Häviön osuus on siis $9\,\% = 0{,}09$. Ylempi virta on sähköverkko, eikä sitä tarvita.
+**Kaava:** $E_\text{häviö} = 0{,}09 \cdot E_\text{lähtö}$
+**Muunnokset:** Prosentit desimaaliluvuksi: $9\,\% = 9 \cdot 0{,}01 = 0{,}09$. Energia pysyy megawattitunteina.
+**Sijoitus:** $E_\text{häviö} = 0{,}09 \cdot 360\,\text{MWh} = 32{,}4\,\text{MWh}$
+**Vastaus:** noin $32\,\text{MWh}$, kaksi merkitsevää numeroa, koska kuvan prosenttiluku on pyöristetty täysiin prosentteihin.
+**Järkevyys:** Kymmenesosa $360\,\text{MWh}$:sta on $36\,\text{MWh}$, ja $9\,\%$ on vähän alle kymmenesosan, joten noin $32\,\text{MWh}$ on oikeaa suuruusluokkaa. Perille tulee $360\,\text{MWh} - 32{,}4\,\text{MWh} \approx 328\,\text{MWh}$, eli $91\,\%$, kuten kuvassa.
 
 ## fy2-7-L1-03
 **Annettu:** lähtevä energia $E_\text{lähtö} = 80{,}0\,\text{MWh}$ ja perille tuleva energia $E_\text{perille} = 76{,}8\,\text{MWh}$

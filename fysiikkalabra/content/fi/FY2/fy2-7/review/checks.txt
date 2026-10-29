@@ -1,7 +1,7 @@
 ok   lint
 ok   latex
 ok   build
-ok   inquiry (44 passed, 0 failed)
+ok   inquiry (47 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 ok   layout 768 px

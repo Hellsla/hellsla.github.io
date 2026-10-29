@@ -383,10 +383,62 @@
       ]
     },
     {
+      "id": "check-sama-energia",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Sama energia, eri teho",
+      "prompt": "Kaksi vedenkeitintä lämmittää kumpikin litran vettä samasta alkulämpötilasta kiehumaan, ja kumpikin muuntaa siihen yhtä paljon sähköenergiaa. Keittimen A teho on $2000\\,\\text{W}$ ja keittimen B $1000\\,\\text{W}$. Mikä väite on oikea?",
+      "choices": [
+        {
+          "text": "B on päällä kaksi kertaa niin kauan kuin A, ja energiaa kuluu yhtä paljon.",
+          "correct": true,
+          "feedback": "Oikein. Energia on teho kertaa aika, $E = Pt$. Kun energia on sama, puolet pienempi teho tarvitsee kaksinkertaisen ajan. Teho kertoo, kuinka nopeasti energiaa muuntuu, ei kuinka paljon sitä kuluu yhteensä."
+        },
+        {
+          "text": "B kuluttaa puolet vähemmän energiaa, koska sen teho on puolet pienempi.",
+          "feedback": "Pienempi teho tarkoittaa, että energiaa muuntuu sekunnissa vähemmän, ei että sitä kuluisi yhteensä vähemmän. Vesi tarvitsee saman energian, joten B on päällä kaksi kertaa niin kauan, ja tulo $Pt$ on molemmilla sama."
+        },
+        {
+          "text": "A kuluttaa kaksi kertaa enemmän energiaa, koska sen teho on kaksinkertainen.",
+          "feedback": "Suurempi teho muuntaa energiaa nopeammin, mutta A on päällä vain puolet B:n ajasta. Tulo $E = Pt$ on molemmilla sama, koska vettä lämmitetään yhtä paljon."
+        },
+        {
+          "text": "Molemmat ovat päällä yhtä kauan, koska ne lämmittävät yhtä paljon vettä.",
+          "feedback": "Sama vesimäärä tarvitsee saman energian, mutta A muuntaa sen kaksi kertaa nopeammin. Aika on $t = E : P$, joten puolet pienemmällä teholla B tarvitsee kaksinkertaisen ajan."
+        }
+      ]
+    },
+    {
+      "id": "check-kilowattitunti",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Kilowattitunti",
+      "prompt": "Perheen sähkölaskussa lukee, että kuukauden kulutus oli $350\\,\\text{kWh}$. Mitä tämä luku kertoo?",
+      "choices": [
+        {
+          "text": "Kuinka paljon sähköenergiaa perhe käytti kuukauden aikana.",
+          "correct": true,
+          "feedback": "Oikein. Kilowattitunti on energian yksikkö, teho kertaa aika: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J}$. Sähkölasku perustuu käytettyyn energiaan."
+        },
+        {
+          "text": "Kuinka suuri oli perheen laitteiden yhteenlaskettu teho.",
+          "feedback": "Teho ilmoitetaan watteina tai kilowatteina. Kilowattitunti on teho kerrottuna ajalla, joten se on energian yksikkö: $350\\,\\text{kWh}$ on kuukauden aikana käytetty sähköenergia."
+        },
+        {
+          "text": "Kuinka paljon sähkön teho kasvoi tunnissa kuukauden aikana.",
+          "feedback": "Tehon muutos tunnissa olisi kilowattia tunnissa, $\\text{kW/h}$. Kilowattitunti $\\text{kWh}$ on tulo kilowatti kertaa tunti, eli energia, ei tehon muutos."
+        },
+        {
+          "text": "Kuinka monta tuntia laitteet olivat päällä kuukauden aikana.",
+          "feedback": "Kilowattitunnissa on mukana sekä teho että aika. Sama $350\\,\\text{kWh}$ voi syntyä suuresta tehosta lyhyessä ajassa tai pienestä tehosta pitkässä ajassa, joten käyttöaikaa siitä ei voi päätellä."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Pesukoneen teho",
+      "title": "4. Pesukoneen teho",
       "prompt": "Pesukone kuluttaa pesuohjelman aikana energiaa $1{,}2\\,\\text{kWh}$ $90\\,\\text{min}$:n aikana. Mikä on sen keskiteho? Vastaa watteina.",
       "answer": 800,
       "unit": "W",
@@ -412,7 +464,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "5. Selitä ja siirrä",
       "prompt": "Perhe haluaa pienentää sähkölaskuaan. Selitä, miksi sekä laitteen teho että käyttöaika pitää ottaa huomioon, ja anna kaksi keinoa vähentää kulutusta.",
       "criteria": [
         "Sanon, että energia on teho kertaa aika, $E = P\\,t$.",
@@ -427,7 +479,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

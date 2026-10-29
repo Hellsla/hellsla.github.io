@@ -94,3 +94,7 @@ def etiketti():
 
 
 FIGURES = {"energia": energia, "lampoarvot": lampoarvot, "etiketti": etiketti}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "lampoarvot": "safe: rounded heating values of seven fuels printed at the bars (MJ/kg); a task computes E = Hm or compares fuels from them",
+}

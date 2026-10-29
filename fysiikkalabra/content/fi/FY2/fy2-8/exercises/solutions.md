@@ -38,9 +38,10 @@
 **Vastaus:** noin $12$ kertaa, kaksi merkitsevää numeroa kuten kertoimessa $41\,\text{g/kWh}$.
 **Järkevyys:** Pyöristetyillä luvuilla $500 : 40 = 12{,}5$, lähellä tulosta. Tarkistus kertolaskulla: yhdestä kilowattitunnista syntyy kattopaneeleilla $41\,\text{g}$, ja $12 \cdot 41\,\text{g} = 492\,\text{g}$, mikä on lähes maakaasun $490\,\text{g}$.
 ## fy2-8-L1-05
-**Annettu:** energia $E = 2{,}4\,\text{kWh}$; maakaasun päästökerroin $e = 490\,\text{g/kWh}$
+**Annettu:** energia $E = 2{,}4\,\text{kWh}$; maakaasusähkön päästökerroin $e = 490\,\text{g/kWh}$ luetaan kuvasta
 **Kysytty:** päästö $m$ kilogrammoina
 **Periaate:** Maakaasulla tuotettu sähkö aiheuttaa saman elinkaaren päästön jokaista kilowattituntia kohti, joten päästö on kerroin kertaa energia.
+**Kuvaajan lukeminen:** Kuvan toinen pylväs ylhäältä on maakaasu, tummanharmaa kuten fossiiliset polttoaineet, ja sen päässä on luku $490$. Pylväs päättyy ruudukon viivojen $400$ ja $600$ väliin, vähän puolivälin ohi. Akselin yksikkö on $\text{g}\ \text{CO}_2\text{-ekv.}/\text{kWh}$, joten $e = 490\,\text{g/kWh}$.
 **Kaava:** $m = e \cdot E$
 **Muunnokset:** Kilowattitunnit supistuvat, ja tulos tulee grammoina. Lopuksi $1\,\text{g} = 0{,}001\,\text{kg}$.
 **Sijoitus:** $m = 490\,\text{g/kWh} \cdot 2{,}4\,\text{kWh} = 1176\,\text{g} = 1176 \cdot 0{,}001\,\text{kg} = 1{,}176\,\text{kg}$

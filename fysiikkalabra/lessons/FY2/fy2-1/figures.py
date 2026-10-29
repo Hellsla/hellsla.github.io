@@ -2,7 +2,7 @@
 Colours: the energy forms keep the colours of the simulation (potential blue, kinetic light orange, thermal red, hatched);
 materials and arrows follow NOTES.md §3."""
 import math
-from figlib import (Fig, INK, MUTED, WHITE, GLASS, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, COLD, ALUMINIUM, METAL_EDGE,
+from figlib import (Fig, Axes, INK, MUTED, WHITE, GLASS, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, COLD, ALUMINIUM, METAL_EDGE,
                     IRON, COPPER, SAND, SAND_DARK, GRAIN, n, fi)
 
 POT, KIN, THM = COLD, HEAT_LIGHT, HOT          # potential, kinetic and thermal energy: the same colours as in the simulation
@@ -165,4 +165,46 @@ def conservation():
     return f.svg()
 
 
-FIGURES = {"energialajit": forms, "energian-muuttuminen": chain, "sailyminen": conservation}
+# ---------------------------------------------------------------- a task figure: the energies to read off, the thermal energy left out
+FRICTION = [("A", 700, 0), ("B", 300, 300), ("C", 0, 500)]     # (point, E_p, E_k) in joules, on the 100 J gridlines
+
+
+def friction_bars():
+    f = Fig("fy21-friction", 470, "Kaavakuva ja pylväskaavio: skeittari lähtee levosta half-pipen reunalta kohdasta A, ohittaa kohdan B "
+            "rinteessä ja tulee pohjalle kohtaan C. Half-pipessä on kitkaa. Pylväät näyttävät kussakin kohdassa potentiaalienergian ja "
+            "liike-energian jouleina; energia-akselin ruudukon väli on 100 J. Kohdassa A potentiaalienergia on 700 J ja liike-energia 0 J, "
+            "kohdassa B potentiaalienergia 300 J ja liike-energia 300 J, kohdassa C potentiaalienergia 0 J ja liike-energia 500 J. "
+            "Lämpöenergiaa kuvassa ei ole.")
+    # the half-pipe: A on the left rim, B on the slope, C at the bottom
+    W, top, HH, cx = 150, 46, 74, 300
+    bottom = top + HH
+    f.path(f"M{cx - W - 30},{top} L{cx - W},{top} Q{cx},{2 * bottom - top} {cx + W},{top} L{cx + W + 30},{top} L{cx + W + 30},{bottom + 16} "
+           f"L{cx - W - 30},{bottom + 16} Z", ALUMINIUM, None, 0)
+    f.path(f"M{cx - W - 30},{top} L{cx - W},{top} Q{cx},{2 * bottom - top} {cx + W},{top} L{cx + W + 30},{top}", "none", INK, 3)
+    _skater(f, cx - W - 14, top - 1, 0)
+    for lab, u in (("A", -1.0), ("B", -math.sqrt(300 / 700)), ("C", 0.0)):
+        x, y = cx + W * u, bottom - HH * u * u
+        f.circle(x, y, 6.5, INK, WHITE, 2)
+        f.tex(x + (14 if lab != "A" else 6), y + 24, rf"\text{{{lab}}}", "start", w=30)
+    # the energies at A, B and C
+    ax = Axes(f, (120, 420), (470, 190), x=(0, 3), y=(0, 800), xticks=[], yticks=[100, 200, 300, 400, 500, 600, 700, 800],
+              xlabel=None, ylabel=r"E\ (\text{J})")
+    bw = 40
+    for i, (lab, ep, ek) in enumerate(FRICTION):
+        xc = ax.X(i + 0.5)
+        for x0, val, col in ((xc - bw - 2, ep, POT), (xc + 2, ek, KIN)):
+            if val > 0: f.rect(x0, ax.Y(val), bw, ax.Y(0) - ax.Y(val), col, INK, 2)
+        f.tex(xc, ax.Y(0) + 26, rf"\text{{{lab}}}", "middle", w=30)
+    for lx, col, sym in ((500, POT, r"E_\text{p}"), (500, KIN, r"E_\text{k}")):
+        ly = 236 if sym.endswith("{p}") else 280
+        f.rect(lx, ly - 10, 20, 20, col, INK, 2)
+        f.tex(lx + 28, ly, sym, "start", w=60)
+    return f.svg()
+
+
+FIGURES = {"energialajit": forms, "energian-muuttuminen": chain, "sailyminen": conservation, "kitka-pylvaat": friction_bars}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "sailyminen": "reveals: every energy value at the three moments, the thermal energy included, and the total 800 J",
+    "kitka-pylvaat": "safe: E_p and E_k at A, B and C on 100 J gridlines; no thermal energy, no total, no value labels (other data than sailyminen)",
+}

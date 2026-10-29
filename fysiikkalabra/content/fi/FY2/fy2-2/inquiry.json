@@ -306,10 +306,36 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Etuliitteet ja suuruus",
+      "prompt": "Suklaalevyn pakkauksessa lukee energia $2{,}2\\,\\text{MJ}$, ja omenan energia on $300\\,\\text{kJ}$. Kumpi sisältää enemmän energiaa, ja kuinka moninkertaisesti?",
+      "choices": [
+        {
+          "text": "Suklaalevy, noin $7$ kertaa enemmän kuin omena.",
+          "correct": true,
+          "feedback": "Oikein. Lukuja voi verrata vasta samassa yksikössä: $2{,}2\\,\\text{MJ} = 2{,}2 \\cdot 1000\\,\\text{kJ} = 2200\\,\\text{kJ}$, ja $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Omena, koska sen lukuarvo $300$ on suurempi kuin $2{,}2$.",
+          "feedback": "Luvut eivät ole samassa yksikössä: megajoule on tuhat kilojoulea. Kun $2{,}2\\,\\text{MJ}$ muutetaan kilojouleiksi, saadaan $2200\\,\\text{kJ}$, mikä on enemmän kuin omenan $300\\,\\text{kJ}$."
+        },
+        {
+          "text": "Suklaalevy, noin $1000$ kertaa enemmän kuin omena.",
+          "feedback": "Tuhat on etuliitteiden mega ja kilo suhde, mutta lukuarvot $2{,}2$ ja $300$ pitää myös ottaa huomioon. Samassa yksikössä $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        },
+        {
+          "text": "Suklaalevy, noin $7000$ kertaa enemmän kuin omena.",
+          "feedback": "Muunsit megajoulet kilojouleiksi kertoimella miljoona. Megajoulessa on miljoona joulea mutta vain tuhat kilojoulea: $2{,}2\\,\\text{MJ} = 2200\\,\\text{kJ}$, ja $2200\\,\\text{kJ} : 300\\,\\text{kJ} \\approx 7{,}3$."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Vertailu",
+      "title": "3. Vertailu",
       "prompt": "Salamanisku vapauttaa keskimäärin noin $1{,}0\\,\\text{GJ}$ energiaa, ja päivän ruoan energia on $10\\,\\text{MJ}$. Montako päivän ruokaa salaman energia vastaa?",
       "answer": 100,
       "unit": "kpl",
@@ -335,7 +361,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä ja siirrä",
+      "title": "4. Selitä ja siirrä",
       "optional": true,
       "prompt": "Selitä, miksi sanotaan, ettei energiaa voi kuluttaa loppuun, vaikka bensiinitankki tyhjenee. Käytä esimerkkinä auton ajamista ja sanoja energiaketju ja lämpöenergia.",
       "criteria": [
@@ -350,7 +376,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

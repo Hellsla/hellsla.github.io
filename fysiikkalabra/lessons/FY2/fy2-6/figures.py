@@ -85,3 +85,7 @@ def unit_power():
 
 
 FIGURES = {"plants": plants, "fi-bars": fi_bars, "unit-power": unit_power}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "fi-bars": "safe: the 2024 production of each source printed at its bar (TWh); the total 79,9 TWh is only in the description, shares are not shown",
+}

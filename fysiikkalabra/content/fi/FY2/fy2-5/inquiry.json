@@ -326,10 +326,54 @@
       ]
     },
     {
+      "id": "check-massa",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Kilogrammaa kohti ja yhteensä",
+      "prompt": "Bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivan polttopuun $15\\,\\text{MJ/kg}$. Poltetaan $1{,}0\\,\\text{kg}$ bensiiniä ja $4{,}0\\,\\text{kg}$ polttopuuta. Kummasta vapautuu enemmän energiaa?",
+      "choices": [
+        {
+          "text": "Polttopuusta, koska sitä on enemmän ja siitä vapautuu yhteensä $60\\,\\text{MJ}$.",
+          "correct": true,
+          "feedback": "Oikein. Lämpöarvo on energia kilogrammaa kohti, ja kokonaisenergia riippuu myös massasta: $E = Hm$. Puusta vapautuu $15\\,\\text{MJ/kg} \\cdot 4{,}0\\,\\text{kg} = 60\\,\\text{MJ}$ ja bensiinistä $43\\,\\text{MJ/kg} \\cdot 1{,}0\\,\\text{kg} = 43\\,\\text{MJ}$."
+        },
+        {
+          "text": "Bensiinistä, koska sen lämpöarvo on lähes kolme kertaa puun lämpöarvo.",
+          "feedback": "Lämpöarvo kertoo energian yhtä kilogrammaa kohti, ei koko energiaa. Puuta on nelinkertainen massa, joten siitä vapautuu $E = Hm = 15\\,\\text{MJ/kg} \\cdot 4{,}0\\,\\text{kg} = 60\\,\\text{MJ}$, enemmän kuin bensiinin $43\\,\\text{MJ}$."
+        },
+        {
+          "text": "Bensiinistä, koska puusta vapautuu vain $15 : 4{,}0 \\approx 3{,}8\\,\\text{MJ}$.",
+          "feedback": "Lämpöarvo kerrotaan massalla, ei jaeta: jokainen kilogramma puuta vapauttaa $15\\,\\text{MJ}$, joten neljä kilogrammaa vapauttaa $E = Hm = 60\\,\\text{MJ}$. Suurempi massa antaa enemmän energiaa."
+        }
+      ]
+    },
+    {
+      "id": "check-c3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Ruoka ja polttoaine",
+      "prompt": "Suklaan energiasisällöksi saadaan ravintoarvomerkinnästä $22\\,\\text{MJ/kg}$, ja ilmakuivan polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$. Mikä väite on oikea?",
+      "choices": [
+        {
+          "text": "Yksikkö on sama, mutta suklaan luku kuvaa elimistön saamaa energiaa ja puun luku palamisessa vapautuvaa.",
+          "correct": true,
+          "feedback": "Oikein. Sekä ruoan energiasisältö että polttoaineen lämpöarvo voidaan ilmoittaa yksikössä $\\text{MJ/kg}$. Ruoan ravintoarvomerkintä kuvaa elimistön hyödynnettävissä olevaa energiaa, kun taas polttoaineen lämpöarvo kuvaa palamisessa vapautuvaa energiaa."
+        },
+        {
+          "text": "Luvut kuvaavat samaa energiaa, joten suklaa olisi lämmitykseen parempi polttoaine kuin puu.",
+          "feedback": "Sama yksikkö ei tarkoita, että luvut kuvaavat samaa asiaa. Ravintoarvomerkintä kuvaa elimistön hyödynnettävissä olevaa energiaa, lämpöarvo palamisessa vapautuvaa energiaa. Polttoaineita verrataan lämpöarvoilla, ei ravintoarvomerkinnöillä."
+        },
+        {
+          "text": "Lukuja ei voi verrata lainkaan, koska ruoan energia ilmoitetaan aina kilojouleina sataa grammaa kohti.",
+          "feedback": "Ravintoarvomerkinnän energia sadassa grammassa voidaan muuttaa yksikköön $\\text{MJ/kg}$, kuten tässä on tehty. Yksikkö on siis sama; ero on siinä, mitä energiaa luku kuvaa: elimistön hyödynnettävissä olevaa vai palamisessa vapautuvaa."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Yksikkömuunnos ja energia",
+      "title": "4. Yksikkömuunnos ja energia",
       "prompt": "Bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$. Kuinka monta kilowattituntia energiaa vapautuu, kun poltetaan $1{,}0\\,\\text{kg}$ bensiiniä? Vastaa kilowattitunteina.",
       "answer": 12,
       "unit": "kWh",
@@ -355,7 +399,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "5. Selitä",
       "optional": true,
       "prompt": "Kymmenen kilon säkki puupellettejä ja kymmenen kilon bensiinikanisteri poltetaan. Kumpi vapauttaa enemmän energiaa, ja kuinka paljon? Selitä myös, miksi vapautunut energia ei ole sama asia kuin hyödyksi saatu energia.",
       "model": "Pelletin lämpöarvo on noin $17\\,\\text{MJ/kg}$ ja bensiinin noin $43\\,\\text{MJ/kg}$. Lain $E = Hm$ mukaan pelleteistä vapautuu $17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 170\\,\\text{MJ}$ ja bensiinistä $43\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 430\\,\\text{MJ}$, joten bensiinistä vapautuu noin $2{,}5$ kertaa enemmän. Vapautuneesta energiasta vain osa muuttuu hyödylliseen muotoon, koska osa lämmöstä menee kattilassa tai moottorissa savukaasujen ja ympäristön mukana. Hyödyn osuus lasketaan hyötysuhteella.",

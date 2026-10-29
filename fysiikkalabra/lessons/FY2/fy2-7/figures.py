@@ -158,3 +158,7 @@ def sankey():
 
 
 FIGURES = {"grid": grid, "district": district, "storage": storage, "sankey": sankey}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "sankey": "safe: shows only the shares 96/4 % and 91/9 %, no energies",
+}

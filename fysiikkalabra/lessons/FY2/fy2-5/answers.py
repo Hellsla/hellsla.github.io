@@ -7,7 +7,7 @@ H = {"bensiini": 43, "diesel": 43, "maakaasu": 48, "kivihiili": 26, "turve": 10,
 a = {}
 # Level 1: E = H m, values given
 a["fy2-5-L1-01"] = H["bensiini"] * 2.0                    # 43 MJ/kg · 2,0 kg = 86 MJ
-a["fy2-5-L1-02"] = H["maakaasu"] * 2.0                    # 48 MJ/kg · 2,0 kg = 96 MJ
+a["fy2-5-L1-02"] = H["maakaasu"] * 2.0                    # H read off fy2-5/lampoarvot: 48 MJ/kg · 2,0 kg = 96 MJ
 a["fy2-5-L1-03"] = H["kivihiili"] * 12000                  # 26 MJ/kg · 12 000 kg = 312 000 MJ -> 310 000 MJ
 a["fy2-5-L1-04"] = H["turve"] * 400                       # 10 MJ/kg · 400 kg = 4000 MJ
 a["fy2-5-L1-05"] = 24 * 0.040                             # 24 MJ/kg · 0,040 kg = 0,96 MJ

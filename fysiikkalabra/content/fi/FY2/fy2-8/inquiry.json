@@ -416,10 +416,54 @@
       ]
     },
     {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Onko biomassasähkö päästötöntä?",
+      "prompt": "Voimala polttaa energiaa varten kasvatettua puuta. Mikä väite sen ilmastovaikutuksesta on oikea?",
+      "choices": [
+        {
+          "text": "Päästöjä syntyy: polton hiilidioksidi on ilmassa vuosikymmeniä, ja korjuu ja kuljetus lisäävät niitä.",
+          "correct": true,
+          "feedback": "Oikein. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä. IPCC:n elinkaariarvion mukaan biomassasähkön päästökerroin on noin $230\\,\\text{g/kWh}$."
+        },
+        {
+          "text": "Päästöjä ei synny lainkaan, koska puu on uusiutuva polttoaine ja metsä kasvaa aina uudelleen.",
+          "feedback": "Uusiutuva ei tarkoita päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu vuosikymmenten kuluessa sitoo sen takaisin, ja viljely, korjuu ja kuljetus aiheuttavat omia päästöjä."
+        },
+        {
+          "text": "Vaikutus on täsmälleen sama kuin kivihiilellä, koska kummankin palaessa syntyy hiilidioksidia.",
+          "feedback": "Kummastakin vapautuu hiilidioksidia, mutta kivihiilen hiili on ollut maan alla miljoonia vuosia, joten sen polttaminen lisää ilmakehän hiilidioksidia. Puun hiili on sitoutunut vasta vuosikymmenten aikana, ja uusi kasvu sitoo sen takaisin. Elinkaaren päästökerroin on kivihiilellä noin $820\\,\\text{g/kWh}$ ja biomassalla noin $230\\,\\text{g/kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "check-c3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Perusteltu vertailu",
+      "prompt": "Kivihiilivoimalan vuosipäästö on $900\\,000\\,\\text{t}$ ja maakaasuvoimalan $100\\,000\\,\\text{t}$ hiilidioksidiekvivalenttia. Opiskelija päättelee tästä, että maakaasu on ilmastolle parempi tuotantotapa. Mitä vertailusta vielä puuttuu?",
+      "choices": [
+        {
+          "text": "Voimaloiden vuodessa tuottama sähköenergia, jotta päästöt voi verrata kilowattituntia kohti.",
+          "correct": true,
+          "feedback": "Oikein. Suuri voimala voi tuottaa moninkertaisesti enemmän sähköä kuin pieni, joten kokonaispäästöt eivät yksin kerro tuotantotavasta. Tuotantotapoja verrataan päästöinä samaa tuotettua energiaa kohti eli päästökertoimilla, kun vuosipäästö jaetaan vuoden sähköntuotannolla."
+        },
+        {
+          "text": "Ei mitään: kun vuosipäästö on pienempi, myös tuotantotapa on aina ilmastolle parempi.",
+          "feedback": "Kokonaispäästö riippuu myös siitä, kuinka paljon sähköä voimala tuottaa. Ilman tuotettua energiaa ei tiedetä, kumpi tuottaa saman sähkön pienemmin päästöin. Siksi vuosipäästö jaetaan vuoden sähköntuotannolla."
+        },
+        {
+          "text": "Voimaloiden nimellistehot, koska suuritehoisemman voimalan päästöt ovat aina suuremmat.",
+          "feedback": "Nimellisteho on suurin teho, jolla voimala voi toimia, eikä se kerro vuoden aikana tuotettua energiaa. Vertailuun tarvitaan päästö samaa tuotettua energiaa kohti: vuosipäästö jaetaan vuoden sähköntuotannolla."
+        }
+      ]
+    },
+    {
       "id": "tarkistus-2",
       "stage": "tarkista",
       "type": "numeric",
-      "title": "2. Matkan päästö",
+      "title": "4. Matkan päästö",
       "prompt": "Auto kuluttaa bensiiniä $6{,}0$ litraa sadalla kilometrillä. Bensiinin energiasisältö on noin $32\\,\\text{MJ}$ litraa kohti, ja sen palamisen päästökerroin on noin $69\\,\\text{g/MJ}$ (IPCC:n oletusarvo). Kuinka monta kilogrammaa hiilidioksidia vapautuu $120\\,\\text{km}$:n matkalla pelkästä polttamisesta? Vastaa kilogrammoina.",
       "answer": 16,
       "unit": "kg",
@@ -445,7 +489,7 @@
       "id": "tarkistus-3",
       "stage": "tarkista",
       "type": "explain",
-      "title": "3. Selitä",
+      "title": "5. Selitä",
       "optional": true,
       "prompt": "Selitä, miksi luonnollinen kasvihuoneilmiö on hyödyllinen mutta sen voimistuminen on ongelma. Kerro myös, miksi fossiilisten polttoaineiden polttaminen voimistaa ilmiötä.",
       "criteria": [
@@ -460,7 +504,7 @@
       "id": "lahtolippu",
       "stage": "tarkista",
       "type": "exit",
-      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
     }
   ]
 }

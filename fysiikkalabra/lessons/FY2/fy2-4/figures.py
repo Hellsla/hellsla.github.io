@@ -91,4 +91,35 @@ def sankey_pair():
     return f.svg()
 
 
-FIGURES = {"lamp": sankey_lamp, "pair": sankey_pair}
+def sankey_grid():
+    """A task figure: a motor's energy-flow diagram on squared paper, the input labelled, the outputs without values."""
+    f = Fig("fy24-grid", 380, "Energiavirtakuvio mittakaavassa ruutupaperilla: sähkömoottoriin tulee sähköenergiaa 240 J. Tulevan "
+            "nuolen paksuus on 8 ruutua. Moottorista lähtee oikealle vihreä hyötyenergian nuoli, liike-energia, jonka paksuus on "
+            "2 ruutua, ja alas kaartuva oranssi häviöiden nuoli, lämpö, jonka paksuus on 6 ruutua. Nuolten paksuudet ovat suhteessa "
+            "energioihin; hyötyenergian ja häviöiden arvoja ei ole merkitty.")
+    sq = 20                                                            # one square of the paper, in figure units
+    ytop, H, eta = 80, 8 * sq, 0.25
+    flow(f, "fy24g", 30, ytop, H, eta, 310, 510, 200, xhead_in=190, xtip=550)
+    grid = "".join(f'<line x1="30" y1="{y}" x2="570" y2="{y}"/>' for y in range(60, 341, sq))
+    grid += "".join(f'<line x1="{x}" y1="60" x2="{x}" y2="340"/>' for x in range(30, 571, sq))
+    f.add(f'<g stroke="{INK}" stroke-opacity="0.22" stroke-width="1.2">{grid}</g>')   # over the arrows, so their squares can be counted
+    f.rect(190, 64, 120, 192, WHITE, INK, 2.5, rx=12)
+    f.circle(250, 150, 34, ALUMINIUM, INK, 2.5)                        # the motor: a housing, a shaft and a pulley
+    f.circle(250, 150, 12, WHITE, INK, 2.5)
+    f.rect(212, 186, 76, 14, ALUMINIUM, INK, 2, rx=3)
+    f.tex(250, 228, r"\text{moottori}", "middle", w=120)
+    f.tex(30, 20, r"\text{sähkömoottori}", "start", w=200)
+    f.tex(36, 54, r"E_\text{o} = 240\,\text{J}", "start", w=180, bg=True)
+    f.tex(36, 258, r"\text{sähkö}", "start", MUTED, w=90, bg=True)
+    f.tex(430, 50, r"\text{liike-energia}", "middle", GOOD, w=190, bg=True)
+    f.tex(430, 352, r"\text{lämpö (häviöt)}", "middle", w=210, bg=True)
+    return f.svg()
+
+
+FIGURES = {"lamp": sankey_lamp, "pair": sankey_pair, "grid": sankey_grid}
+# What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
+REUSE = {
+    "lamp": "reveals: the useful and wasted energy and the efficiency 5 %, printed",
+    "pair": "reveals: every power and both efficiencies, printed",
+    "grid": "safe: input 240 J labelled, output arrows 2 and 6 squares thick on squared paper, no output values or efficiency",
+}

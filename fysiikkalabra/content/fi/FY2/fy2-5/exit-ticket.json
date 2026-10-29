@@ -1,14 +1,6 @@
 [
   {
-    "q": "Mitä tarkoittaa, että dieselin lämpöarvo on noin $43\\,\\text{MJ/kg}$?",
-    "a": "Yhdestä kilogrammasta dieseliä vapautuu palaessa energiaa noin $43\\,\\text{MJ}$. Lämpöarvo on energia massayksikköä kohti."
-  },
-  {
     "q": "Kuinka paljon energiaa vapautuu, kun poltetaan $5{,}0\\,\\text{kg}$ ilmakuivaa polttopuuta ($H = 15\\,\\text{MJ/kg}$)?",
     "a": "$E = Hm = 15\\,\\text{MJ/kg} \\cdot 5{,}0\\,\\text{kg} = 75\\,\\text{MJ}$."
-  },
-  {
-    "q": "Pakkauksessa lukee: energia $1500\\,\\text{kJ}$ sadassa grammassa. Mikä on ruoan energiasisältö yksikössä $\\text{MJ/kg}$, ja miten se eroaa polttoaineen lämpöarvosta?",
-    "a": "$1500\\,\\text{kJ} = 1500 \\cdot (1 : 1000)\\,\\text{MJ} = 1{,}5\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$, joten energiasisältö on $1{,}5\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 15\\,\\text{MJ/kg}$. Se ilmoitetaan samassa yksikössä kuin lämpöarvo, mutta se kuvaa elimistön hyödynnettävissä olevaa energiaa, kun taas lämpöarvo kuvaa palamisessa vapautuvaa energiaa."
   }
 ]

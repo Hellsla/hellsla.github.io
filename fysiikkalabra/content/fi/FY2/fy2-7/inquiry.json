@@ -325,10 +325,36 @@
    ]
   },
   {
+   "id": "check-c2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Minne häviö menee?",
+   "prompt": "Sähköverkossa häviää $4\\,\\%$ verkkoon syötetystä sähköenergiasta, eikä tämä osa tule käyttäjille asti. Mitä tälle energialle tapahtuu?",
+   "choices": [
+    {
+     "text": "Se muuttuu matkalla lämmöksi, joka siirtyy ympäröivään ilmaan.",
+     "correct": true,
+     "feedback": "Oikein. Sähkövirta lämmittää johtimia, ja lämpö siirtyy ympäristöön. Energia ei katoa: syötetty energia on perille tulevan energian ja ympäristöön siirtyneen lämmön summa."
+    },
+    {
+     "text": "Se katoaa matkalla, koska sitä ei saada perille asti.",
+     "feedback": "Energia ei katoa. Häviö tarkoittaa, että osa energiasta muuttuu matkalla lämmöksi, joka siirtyy ympäristöön, eikä sitä siksi voi käyttää pistorasiassa. Perille tuleva energia ja lämpö ovat yhteensä yhtä suuret kuin syötetty energia."
+    },
+    {
+     "text": "Se jää johtimiin varastoon ja palaa verkkoon myöhemmin.",
+     "feedback": "Johtimet eivät varastoi sähköenergiaa. Häviöksi laskettu energia muuttuu johtimissa lämmöksi, joka siirtyy ympäröivään ilmaan, eikä sitä saada takaisin sähköksi."
+    },
+    {
+     "text": "Se palaa voimalaitokselle käyttämättä jääneenä sähkönä.",
+     "feedback": "Häviö ei ole käyttämättä jäänyttä sähköä, joka palaisi voimalaan. Se syntyy, kun virta kulkee johtimissa ja lämmittää niitä, ja tämä lämpö siirtyy ympäristöön."
+    }
+   ]
+  },
+  {
    "id": "tarkistus-2",
    "stage": "tarkista",
    "type": "numeric",
-   "title": "2. Laskutehtävä",
+   "title": "3. Laskutehtävä",
    "prompt": "Vanhassa kaukolämpöverkossa asiakkaille tulee $375\\,\\text{MWh}$ lämpöä viikossa (esimerkkitilanne). Verkon hyötysuhde on $75\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon? Vastaa megawattitunteina.",
    "answer": 500,
    "unit": "MWh",
@@ -354,7 +380,7 @@
    "id": "tarkistus-3",
    "stage": "tarkista",
    "type": "explain",
-   "title": "3. Selitä ja perustele",
+   "title": "4. Selitä ja perustele",
    "optional": true,
    "prompt": "Tuulivoimaa syntyy yöllä, kun sähköä ei tarvita paljon. Selitä, miten energiaa voidaan siirtää ajassa ja miksi varastoinnissakaan kaikki energia ei tule takaisin.",
    "criteria": [
@@ -368,7 +394,7 @@
    "id": "lahtolippu",
    "stage": "tarkista",
    "type": "exit",
-   "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+   "text": "Lopuksi yksi nopea kysymys. Vastaa ensin itse ja avaa vastaus vasta sitten."
   }
  ]
 }

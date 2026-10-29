@@ -6,7 +6,7 @@ import json
 a = {}
 # Level 1: one formula, values given
 a["fy2-7-L1-01"] = 500 * (1 - 0.040)                  # sent 500 MWh, loss 4,0 %: delivered = 0,960 · 500 MWh = 480 MWh
-a["fy2-7-L1-02"] = 360 - 327                          # district heat sent 360 MWh, delivered 327 MWh: loss = 33 MWh
+a["fy2-7-L1-02"] = 0.09 * 360                         # loss share 9 % read off fy2-7/sankey; 0,09 · 360 MWh = 32,4 MWh (about 32 MWh)
 a["fy2-7-L1-03"] = 76.8 / 80.0 * 100                  # sent 80,0 MWh, delivered 76,8 MWh: eta = 0,960 = 96,0 %
 a["fy2-7-L1-04"] = 125 * (1 - 0.040)                  # power sent 125 MW, loss 4,0 %: delivered 120,0 MW
 a["fy2-7-L1-05"] = 2.5 * 24                           # loss power 2,5 kW for 24 h: E = P t = 60 kWh
