@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "contribution": "Force is presented as an interaction between two objects: Newton's first law (motion continues without a force, a force changes motion) is investigated with a sliding box on different surfaces, and the third law (force and reaction force act on different objects) with force-sensor data from colliding carts; an unknown force is calculated from equilibrium situations.",
+  "learn": [
+    "explain with Newton's first law why motion continues without a forward force",
+    "identify a force and its reaction force and explain why they do not cancel each other",
+    "calculate an unknown force when an object is at rest or moves at constant velocity"
+  ],
+  "prior": [
+    "Velocity is a vector, and in uniform motion it stays the same in magnitude and direction (chapter *Position, velocity and uniform motion as graphs*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A curler slides a few metres with the stone and then lets go. The stone carries on alone along the ice and stops only tens of metres away, in the target area. The sweepers do not touch the stone, and nothing else pushes it after the release. When the stone hits another stone, both stones change their motion.",
+      "question": "Why does the stone keep moving although nothing pushes it any more, and what happens to each stone in the collision?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: uniform motion",
+      "optional": true,
+      "prompt": "The $(t, x)$ graph of an object is a rising straight line. What does it tell about the velocity of the object?",
+      "choices": [
+        {
+          "text": "The velocity is constant: the object travels the same distance every second.",
+          "correct": true,
+          "feedback": "Correct. The slope of the line is the velocity, and on a straight line it is the same everywhere. This chapter shows what uniform motion tells about the forces acting on an object."
+        },
+        {
+          "text": "The velocity increases steadily, because the position keeps increasing.",
+          "feedback": "The position increases, but by the same amount every second, so the velocity stays the same. An increasing velocity would show in the $(t, x)$ graph as a curve bending upwards (chapter *Position, velocity and uniform motion as graphs*)."
+        },
+        {
+          "text": "The object is at rest, because the graph is straight and not curved.",
+          "feedback": "The position of an object at rest does not change, so its $(t, x)$ graph is a horizontal line. A rising line means motion at constant velocity (chapter *Position, velocity and uniform motion as graphs*)."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: motion after release",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 4
+      },
+      "fbd": "identify",
+      "prompt": "A hand pushes a box and lets go when the speed of the box is $3.0\\,\\text{m/s}$. The box slides along an imagined completely frictionless surface, and there is no air resistance. What happens to the speed of the box after the release?",
+      "choices": [
+        {
+          "text": "The speed decreases gradually, and the box stops when the force of the push has been used up.",
+          "feedback": "The box does not carry the force of the push with it: the force acts only as long as the hand touches the box. On a frictionless surface nothing slows the box down. In the model values the speed is still $3.0\\,\\text{m/s}$ after $12\\,\\text{m}$, at the end of the track."
+        },
+        {
+          "text": "The speed stays the same all the way.",
+          "correct": true,
+          "feedback": "Correct. After the release only the weight and the normal force act on the box, and they cancel each other. When the net force is zero, the speed does not change: in the model values the box covers the $12\\,\\text{m}$ track in $4.0\\,\\text{s}$ and is still at $3.0\\,\\text{m/s}$ at the end."
+        },
+        {
+          "text": "The box stops at once when the hand lets go, because nothing pushes it any more.",
+          "feedback": "Motion does not need a pusher. If it did, every sliding object would stop the moment it was released. In the model values the box slides to the end of the track on the frictionless surface with the speed staying at $3.0\\,\\text{m/s}$, and even on a wooden floor it still slides $2.25\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: which pushes harder?",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "A light cart A ($0.50\\,\\text{kg}$) rolls towards a heavy cart B ($1.5\\,\\text{kg}$) and collides with it. A force sensor is attached to each cart, measuring the force the other cart exerts on it. How do the forces compare during the collision?",
+      "choices": [
+        {
+          "text": "The heavy cart B exerts a larger force on the light cart A, because its mass is larger.",
+          "feedback": "Mass does not make the forces different in size: the carts exert equally large forces on each other. The light cart changes its motion more, but that is because of its smaller mass, not a larger force. In the example data the sensors show equal readings at every moment, at most about $4\\,\\text{N}$."
+        },
+        {
+          "text": "The light cart A exerts a larger force on the heavy cart B, because it is moving and does the colliding.",
+          "feedback": "A moving object is not the stronger party in a collision. The carts press on each other in the same contact, so the forces are equally large and opposite in direction. In the example data the sensor readings are mirror images of each other at every moment."
+        },
+        {
+          "text": "The forces are equally large and opposite in direction throughout the collision.",
+          "correct": true,
+          "feedback": "Correct. The forces belong to the same interaction, so by Newton's third law they are equally large and opposite in direction at every moment. In the example data both sensors show at most about $4\\,\\text{N}$ in opposite directions."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A hand pushes the box into motion and lets go. Choose a surface and watch how the speed and the forces acting on the box change after the release.",
+      "howto": "Choose the *Surface* and the *Initial speed* $v_0$ and press *Start*. The hand pushes the box over a distance of $0.50\\,\\text{m}$ and lets go. The top shows the situation, the bottom left the graph of the speed and the bottom right the force diagram of the box. The run ends when the box stops or reaches the end of the $12\\,\\text{m}$ track; the readings $s$ and $t$ then give the sliding distance and sliding time from the release. *Reset* returns the box to the start. *Speed* slows down or speeds up the animation without changing the readings.",
+      "model": "The values are model values calculated by the simulation. The mass of the box is $10\\,\\text{kg}$, and its kinetic friction is constant: $40\\,\\text{N}$ on the carpet, $20\\,\\text{N}$ on the wooden floor and $10\\,\\text{N}$ on the ice. The frictionless surface is a thought experiment that does not exist in reality. There is no air resistance. When the box is at rest, there is no friction. A very small force is drawn at least as a short arrow so that it can be seen. The blue arrow of the velocity is in the situation picture, not in the force diagram, because velocity is not a force.",
+      "calc": "The weight is $G = mg = 10\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 = 98.1\\,\\text{N}$, and the floor supports the box with an equally large normal force $N$. During the push the force $F$ of the hand is so large that the speed of the box increases steadily from zero to $v_0$; for example on the wooden floor at $3.0\\,\\text{m/s}$ it is $110\\,\\text{N}$. After the release only friction acts in the horizontal direction, so $\\Sigma F_x = -F_\\mu$, and the speed decreases steadily. On the frictionless surface $\\Sigma F_x = 0$, and the speed stays the same."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: sliding on different surfaces",
+      "intro": "Test prediction 1. The initial state sets the initial speed to $v_0 = 3.0\\,\\text{m/s}$ and the surface to carpet. Press *Start*, wait for the run to end and then record the measurement. Repeat on the wooden floor, on the ice and on the frictionless surface: record all four surfaces, because the prediction concerns the frictionless surface. Each time, look at the force diagram after the release: which forces remain?",
+      "initial": {
+        "pinta": "matto",
+        "v0": 3
+      },
+      "names": {
+        "pinta": "pinta",
+        "v0": "initial speed v₀"
+      },
+      "units": {
+        "v0": "m/s"
+      },
+      "values": {
+        "pinta": {
+          "matto": "matto"
+        }
+      },
+      "locked": [
+        "v0"
+      ],
+      "vary": "pinta",
+      "measure": [
+        {
+          "key": "s",
+          "label": "s (m)"
+        },
+        {
+          "key": "tl",
+          "label": "t (s)"
+        },
+        {
+          "key": "vl",
+          "label": "v_final (m/s)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "numeric",
+        "prompt": "The friction forces of the model are $40\\,\\text{N}$ on the carpet, $20\\,\\text{N}$ on the wooden floor and $10\\,\\text{N}$ on the ice. Compare the sliding distances in your table: how does the sliding distance change when the friction force is halved? How far would the box slide with the same initial speed on a surface where the friction force is only $5.0\\,\\text{N}$? Answer in metres.",
+        "answer": 9.0,
+        "unit": "m",
+        "tolerance": 0.03,
+        "hints": [
+          "Record the sliding distance on at least two surfaces whose friction forces differ by a factor of two, for example the wooden floor and the ice.",
+          "In the model values the sliding distance is $1.125\\,\\text{m}$ on the carpet, $2.25\\,\\text{m}$ on the wooden floor and $4.5\\,\\text{m}$ on the ice. Calculate the product $F_\\mu\\cdot s$ for each surface.",
+          "The product is $45\\,\\text{N}\\cdot\\text{m}$ on every surface. Solve $s$ from the equation $5.0\\,\\text{N}\\cdot s = 45\\,\\text{N}\\cdot\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2.25,
+            "feedback": "You halved the sliding distance. In the table the sliding distance *increases* when the friction force decreases: on the ice ($10\\,\\text{N}$) the box slid twice as far as on the wooden floor ($20\\,\\text{N}$)."
+          },
+          {
+            "value": 4.5,
+            "feedback": "This is the sliding distance on the ice. The friction force $5.0\\,\\text{N}$ is half of the friction on the ice, so the sliding distance doubles once more."
+          },
+          {
+            "value": 5.625,
+            "feedback": "You continued the sliding distance in equal steps. In the table the sliding distance does not grow in equal steps but doubles every time the friction force is halved: the product $F_\\mu\\cdot s$ stays the same."
+          }
+        ],
+        "solution": "**Given:** model values at the initial speed $v_0 = 3.0\\,\\text{m/s}$: on the carpet $F_\\mu = 40\\,\\text{N}$ and $s = 1.125\\,\\text{m}$, on the wooden floor $20\\,\\text{N}$ and $2.25\\,\\text{m}$, on the ice $10\\,\\text{N}$ and $4.5\\,\\text{m}$; new friction force $F_\\mu = 5.0\\,\\text{N}$\n\n**Find:** the sliding distance $s$ in $\\text{m}$\n\n**Principle:** The table shows a regularity: when the friction force is halved, the sliding distance doubles. So the product of the friction force and the sliding distance is the same on every surface. We assume that the same rule also holds for a smaller friction.\n\n**Formula:** $F_\\mu s = F_{\\mu,1} s_1$, so $s = \\dfrac{F_{\\mu,1} s_1}{F_\\mu}$, where $F_{\\mu,1}$ and $s_1$ are the values of one row of the table\n\n**Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.\n\n**Substitution:** On the ice row $F_{\\mu,1} s_1 = 10\\,\\text{N}\\cdot 4.5\\,\\text{m} = 45\\,\\text{N}\\cdot\\text{m}$, so $s = 45\\,\\text{N}\\cdot\\text{m} : 5.0\\,\\text{N} = 9.0\\,\\text{m}$\n\n**Answer:** $9.0\\,\\text{m}$, two significant figures like the friction force $5.0\\,\\text{N}$.\n\n**Reasonableness:** The friction is half of the friction on the ice, so the distance must be twice the $4.5\\,\\text{m}$ of the ice, and it is. As the friction decreases towards zero, the sliding distance grows without limit: on a frictionless surface the box does not stop at all, and that is exactly what Newton's first law says."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Using your measurements and the force diagram, explain why the box slides after the release although the hand no longer pushes it, and what would happen if there were no friction at all.",
+      "criteria": [
+        "The answer says that after the release no forward force acts on the box: what remain are the weight, the normal force and friction.",
+        "The answer says that the box slows down because of friction and that a smaller friction gives a longer sliding distance.",
+        "The answer uses a measurement result, for example the sliding distance on two surfaces or the final speed on the frictionless surface.",
+        "The answer concludes that without friction the speed would stay the same, because the net force would be zero."
+      ],
+      "model": "During the push the hand acts on the box, but the force ends when the hand lets go. After that the force diagram has only the weight, the normal force and friction pointing backwards. The box continues its motion because it has a velocity, and only friction changes it. In the model values the box slid $1.125\\,\\text{m}$ on the carpet ($40\\,\\text{N}$), $2.25\\,\\text{m}$ on the wooden floor ($20\\,\\text{N}$) and $4.5\\,\\text{m}$ on the ice ($10\\,\\text{N}$): when the friction is halved, the sliding distance doubles. On the frictionless surface the net force is zero, and the speed stayed at $3.0\\,\\text{m/s}$ to the end of the track. Without friction the box would therefore slide at the same speed for ever, as Newton's first law says."
+    },
+    {
+      "id": "tormays",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Collision of two carts",
+      "source": "example",
+      "figure": "fy4-3/anturit",
+      "text": "Test prediction 2. A light cart A ($0.50\\,\\text{kg}$) rolls to the right along a track and collides with a heavy cart B ($1.5\\,\\text{kg}$) that is at rest. At the front of each cart there is a force sensor that measures the force the other cart exerts on it every hundredth of a second. A positive reading means a force to the right. The graph shows the readings of both sensors during the collision.",
+      "question": {
+        "type": "choice",
+        "prompt": "What does the graph tell about the forces the carts exert on each other?",
+        "choices": [
+          {
+            "text": "The forces are equally large and opposite in direction at every moment, although the masses are different.",
+            "correct": true,
+            "feedback": "Correct. The readings are mirror images of each other: when the sensor of A shows about $-4\\,\\text{N}$, the sensor of B shows about $+4\\,\\text{N}$. The small differences are scatter in the measurements. The forces begin, grow and end at the same time, because they belong to the same interaction."
+          },
+          {
+            "text": "A larger force acts on the heavy cart B, because its readings are positive.",
+            "feedback": "The sign tells the direction of the force, not its magnitude. The force on B points to the right and the force on A to the left, and the magnitude of each is at most about $4\\,\\text{N}$."
+          },
+          {
+            "text": "The forces are equal only at the peak at $0.10\\,\\text{s}$; at other times a larger force acts on the light cart.",
+            "feedback": "The readings are equal at every moment of measurement, not only at the peak: for example at $0.07\\,\\text{s}$ each is about $1.4\\,\\text{N}$ in opposite directions. The differences are only small scatter in the measurements."
+          }
+        ]
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the results of the experiment and the graph. Which of your ideas was right, and which would you change? Return also to the curling stone at the beginning: why does it slide, and what happens to each stone in the collision?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "fbd": "identify",
+      "prompt": "A student reasons: “The horse cannot get the cart moving, because the cart pulls the horse backwards with an equally large force as the horse pulls the cart forwards. The forces cancel each other.” What is the error in the reasoning?",
+      "choices": [
+        {
+          "text": "The forces act on different objects, so they do not cancel each other: the motion of the cart is determined by the forces acting on the cart.",
+          "correct": true,
+          "feedback": "Correct. The pull of the horse acts on the cart and the pull of the cart on the horse. The cart starts to move when the pull of the horse is larger than the resistance of the road on the cart. The horse, in turn, starts to move when the ground pushes its hooves forward more than the cart pulls it backwards."
+        },
+        {
+          "text": "In reality the cart pulls the horse more weakly than the horse pulls the cart, because otherwise nothing could start to move.",
+          "feedback": "Newton's third law always holds, also in accelerating motion: the forces of the horse and the cart on each other are equally large. The error is that forces acting on different objects are added together."
+        },
+        {
+          "text": "The force of the cart on the horse appears only after the cart has already started to move, so at the start only the pull of the horse acts.",
+          "feedback": "A force and its reaction force arise in the same interaction at the same moment. When the horse pulls the shafts, the shafts pull the horse immediately. The error is that forces acting on different objects are added together."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A car pulls a trailer along a straight road at constant velocity. The air resistance $420\\,\\text{N}$ and the rolling resistance $260\\,\\text{N}$ act backwards on the trailer. With what force does the trailer pull the tow hook of the car? Answer in newtons.",
+      "answer": 680,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "First choose the trailer as the object. Which horizontal forces act on it, and what does the constant velocity tell about their sum?",
+        "On the trailer, the forward force of the tow hook is as large as the resistances together. The force asked for, however, acts on the car: which law connects these two forces?",
+        "By Newton's third law the trailer pulls the hook backwards with the same force as the hook pulls the trailer forwards: $420\\,\\text{N} + 260\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 160,
+          "feedback": "You subtracted the resistances from each other. Both resistances point backwards, so the tow hook must cancel their sum."
+        },
+        {
+          "value": 420,
+          "feedback": "You included only the air resistance. The rolling resistance also brakes the trailer, so the hook pulls it forwards with the sum of the resistances."
+        },
+        {
+          "value": 0,
+          "feedback": "Constant velocity means that the *sum* of the forces acting on the trailer is zero, not that some force would be zero. The hook pulls the trailer forwards with a force as large as the resistances."
+        }
+      ],
+      "solution": "**Given:** air resistance of the trailer $F_\\text{a} = 420\\,\\text{N}$ and rolling resistance $F_\\text{r} = 260\\,\\text{N}$ backwards, the velocity is constant and the road is straight\n\n**Find:** the force of the trailer on the tow hook of the car $F_{\\text{TC}}$ in $\\text{N}$\n\n**Principle:** The trailer moves in a straight line at constant velocity, so by Newton's first law its net force is zero: the forward force $F_{\\text{CT}}$ of the tow hook is as large as the resistances together. By Newton's third law the trailer pulls the hook backwards with an equally large force.\n\n**Force diagram:** Choose the trailer as the object and draw it as a rectangle. Three forces act on it in the horizontal direction: the force of the tow hook $\\overline{F}_{\\text{CT}}$ forwards, and the air resistance $\\overline{F}_\\text{a}$ and rolling resistance $\\overline{F}_\\text{r}$ backwards. In the vertical direction there are also the weight and the normal force of the road, which cancel each other. The force of the car on the hook does not belong in the force diagram of the trailer, because it acts on the car. The positive direction is forwards.\n\n**Formula:** $\\Sigma F_x = F_{\\text{CT}} - F_\\text{a} - F_\\text{r} = 0$ and $F_{\\text{TC}} = F_{\\text{CT}}$, so $F_{\\text{TC}} = F_\\text{a} + F_\\text{r}$\n\n**Conversions:** The forces are in newtons, so no conversions are needed.\n\n**Substitution:** $F_{\\text{TC}} = 420\\,\\text{N} + 260\\,\\text{N} = 680\\,\\text{N}$\n\n**Answer:** $680\\,\\text{N}$ backwards, to the nearest ten newtons like the given forces.\n\n**Reasonableness:** If the hook pulled the trailer more weakly than $680\\,\\text{N}$, the resistances would slow it down, and if it pulled harder, the trailer would accelerate. The force of the road on the wheels of the car must cancel, in addition to the car's own air resistance and rolling resistance, this $680\\,\\text{N}$ as well, so the trailer increases fuel consumption."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further at three levels. In each task, first choose the object and think about which objects act on it. Level 1 is enough for basic competence; levels 2 and 3 are advanced."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "fbd": "identify",
+      "prompt": "A box moves on a horizontal conveyor belt at constant velocity with the belt. Which forces act on the box? Air resistance is ignored.",
+      "choices": [
+        {
+          "text": "Only the weight and the normal force of the belt.",
+          "correct": true,
+          "feedback": "Correct. The velocity of the box does not change, so the net force is zero. No horizontal force is needed, because the box does not tend to slide relative to the belt."
+        },
+        {
+          "text": "The weight, the normal force of the belt and a forward friction force from the belt that keeps the box moving.",
+          "feedback": "Motion does not need a forward force. If the belt pulled the box forwards and nothing pulled backwards, the net force would not be zero and the velocity of the box would change."
+        },
+        {
+          "text": "The weight, the normal force of the belt and a backward friction force, because the box is moving.",
+          "feedback": "Friction opposes sliding between surfaces. The box moves with the belt and does not slide relative to it, so there is no friction. If there were only a force pointing backwards, the box would slow down."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Force and reaction force",
+      "fbd": "identify",
+      "prompt": "A book rests on a horizontal table. Which force is the reaction force of the normal force the table exerts on the book?",
+      "choices": [
+        {
+          "text": "The force of the book pressing the table downwards.",
+          "correct": true,
+          "feedback": "Correct. The normal force and its reaction force belong to the contact between the book and the table: the table pushes the book up, and the book presses the table down with an equally large force."
+        },
+        {
+          "text": "The weight of the book, that is, the gravitational force of the Earth on the book.",
+          "feedback": "The weight and the normal force act on the same object, the book, so they cannot be a force and its reaction force. They are equally large because of the first law, since the book is at rest. The reaction force of the weight is the gravitational force of the book on the Earth."
+        },
+        {
+          "text": "The gravitational force of the book on the Earth.",
+          "feedback": "This is the reaction force of the weight: it belongs to the interaction between the Earth and the book. The normal force belongs to the interaction between the book and the table, so its reaction force is the force of the book on the table."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw it yourself",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-3/malli-lamppu",
+      "prompt": "A lamp hangs at rest from the ceiling on a vertical cord. Draw the force diagram of the lamp on paper: the lamp as a rectangle and each force from its point of application. Optional extension: then write next to each force its reaction force, that is, which object acts on which object and in which direction.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "The diagram has only the lamp, not the cord, the ceiling or the Earth with their forces."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Two forces: the weight and the tension of the cord. No other forces."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "The weight down and the tension up along the cord."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight from the centre, the tension from the point where the cord attaches to the top of the lamp; each with its own symbol."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "The arrows are equally long, because the lamp is at rest."
+        },
+        "Optional extension: the answer names the gravitational force of the lamp on the Earth, pointing up, as the reaction force of the weight, and the force of the lamp on the cord, pointing down, as the reaction force of the tension.",
+        "Optional extension: the answer explains that the reaction forces act on the Earth and the cord, not on the lamp, so they do not belong in the force diagram of the lamp."
+      ],
+      "model": "The Earth and the cord act on the lamp. The gravitational force of the Earth, the weight $\\overline{G}$, points down from the centre, and the tension of the cord $\\overline{T}$ points up along the cord from the point of attachment. The lamp is at rest, so by the first law the forces cancel each other and the arrows are equally long. The reaction force of the weight is the equally large gravitational force of the lamp on the Earth, pointing up, and the reaction force of the tension is the force of the lamp on the cord, pointing down. Neither reaction force acts on the lamp, so they do not belong in its force diagram. The weight and the tension are not a force and its reaction force, although they are equally large and opposite in direction: they act on the same object and belong to different interactions."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. First answer yourself and only then open the answer."
+    }
+  ]
+}

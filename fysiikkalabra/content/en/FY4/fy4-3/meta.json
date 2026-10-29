@@ -1,0 +1,23 @@
+{
+  "id": "fy4-3",
+  "course": "FY4",
+  "title": "Interaction and force: Newton's first and third laws",
+  "goals": [
+    "LOPS FY4: interaction between objects and force, and Newton's laws",
+    "Clarification: the force of an interaction is equally large from the point of view of both parties",
+    "Force diagram (docs/force-diagrams.md): every force is an interaction; in simple two-object situations, the force acting on an object is distinguished from the reaction force acting on the other object; a curling stone after release with no forward-pushing force (example I). No complete force diagrams yet."
+  ],
+  "prerequisites": [
+    "fy4-1"
+  ],
+  "glossary": [
+    "vuorovaikutus",
+    "voima",
+    "jatkavuuden laki",
+    "voima ja vastavoima",
+    "inertia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

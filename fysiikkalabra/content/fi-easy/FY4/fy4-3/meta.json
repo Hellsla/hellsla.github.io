@@ -1,0 +1,23 @@
+{
+  "id": "fy4-3",
+  "course": "FY4",
+  "title": "Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki",
+  "goals": [
+    "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+    "Täsmennys: vuorovaikutuksen voima on yhtä suuri kummallekin osapuolelle",
+    "Voimakuvio (docs/force-diagrams.md): jokainen voima on vuorovaikutus. Yksinkertaisissa kahden kappaleen tilanteissa erotetaan kappaleeseen kohdistuva voima ja toiseen kappaleeseen kohdistuva vastavoima. Curling-kivellä irrotuksen jälkeen ei ole eteenpäin työntävää voimaa (esimerkki I). Täydellisiä voimakuvioita ei vielä tehdä."
+  ],
+  "prerequisites": [
+    "fy4-1"
+  ],
+  "glossary": [
+    "vuorovaikutus",
+    "voima",
+    "jatkavuuden laki",
+    "voima ja vastavoima",
+    "inertia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
