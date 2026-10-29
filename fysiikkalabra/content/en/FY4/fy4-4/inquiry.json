@@ -148,7 +148,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "alussa",
+        "alku": "at the start",
         "suunta": "string pulls"
       },
       "units": {
@@ -157,10 +157,10 @@
       },
       "values": {
         "alku": {
-          "levosta": "levossa"
+          "levosta": "at rest"
         },
         "suunta": {
-          "oikea": "oikealle"
+          "oikea": "to the right"
         },
         "m": {
           "1": "$1.0\\,\\text{kg}$"
@@ -199,7 +199,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "alussa",
+        "alku": "at the start",
         "suunta": "string pulls"
       },
       "units": {
@@ -208,10 +208,10 @@
       },
       "values": {
         "alku": {
-          "levosta": "levossa"
+          "levosta": "at rest"
         },
         "suunta": {
-          "oikea": "oikealle"
+          "oikea": "to the right"
         },
         "m": {
           "0.5": "$0.50\\,\\text{kg}$"
@@ -251,7 +251,7 @@
       "names": {
         "F": "force F",
         "m": "mass m",
-        "alku": "alussa",
+        "alku": "at the start",
         "suunta": "string pulls"
       },
       "units": {
@@ -263,8 +263,8 @@
           "vauhdissa": "moving to the right"
         },
         "suunta": {
-          "oikea": "oikealle",
-          "vasen": "vasemmalle"
+          "oikea": "to the right",
+          "vasen": "to the left"
         },
         "m": {
           "1": "$1.0\\,\\text{kg}$"

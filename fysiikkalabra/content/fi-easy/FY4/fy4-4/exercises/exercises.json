@@ -11,7 +11,7 @@
     {
       "id": "fy4-4-L1-02",
       "level": 1,
-      "text": "Pyöräilijän ja polkupyörän yhteismassa on $80\\,\\text{kg}$. He kiihtyvät vaakasuoralla tiellä kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima heihin vaikuttaa?",
+      "text": "Pyöräilijän ja polkupyörän yhteismassa on $80\\,\\text{kg}$. Ne kiihtyvät vaakasuoralla tiellä kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$. Kuinka suuri kokonaisvoima niihin vaikuttaa?",
       "answer": 120,
       "unit": "N",
       "tolerance": 0.02

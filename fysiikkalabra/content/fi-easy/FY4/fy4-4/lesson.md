@@ -365,7 +365,7 @@ Kuvan vasemmalla puolella laatikko on levossa lattialla. Paino $\overline{G}$ ja
 </svg>
 
 ### Massa vastustaa nopeuden muutosta
-Kärryllä tehdyt mittaukset näyttävät kaksi sääntöä. Kun kokonaisvoima kaksinkertaistuu, kiihtyvyys kaksinkertaistuu. Kiihtyvyys on siis suoraan verrannollinen kokonaisvoimaan. Kun sama kokonaisvoima vaikuttaa kärryyn, jonka massa on kaksi kertaa suurempi, kiihtyvyys puolittuu. Massa kertoo, kuinka hidas kappale on, eli kuinka vaikeaa sen nopeutta on muuttaa. Kuvaajassa kummankin massan tulos on suora, joka kulkee origon kautta. Raskaamman kärryn suora on puolet loivempi.
+Kärryllä tehdyt mittaukset näyttävät kaksi sääntöä. Kun kokonaisvoima kaksinkertaistuu, kiihtyvyys kaksinkertaistuu. Kiihtyvyys on siis suoraan verrannollinen kokonaisvoimaan. Kun sama kokonaisvoima vaikuttaa kärryyn, jonka massa on kaksi kertaa suurempi, kiihtyvyys puolittuu. Massa kertoo kappaleen hitaudesta, eli siitä, kuinka vaikeaa sen nopeutta on muuttaa. Kuvaajassa kummankin massan tulos on suora, joka kulkee origon kautta. Raskaamman kärryn suora on puolet loivempi.
 
 <svg data-fig="kuvaaja" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa. Vaaka-akselilla on kokonaisvoima newtoneina, 0–3. Pystyakselilla on kiihtyvyys, 0–6 metriä sekunnin neliölle. Kuvassa on kaksi suoraa origon kautta, ja kummallakin on kolme pistettä. Massalla 0,50 kilogrammaa pisteet ovat 1 N ja 2, 2 N ja 4 sekä 3 N ja 6. Massalla 1,0 kilogrammaa pisteet ovat 1 N ja 1, 2 N ja 2 sekä 3 N ja 3. Katkoviivat näyttävät, että kokonaisvoimalla 2 N kevyemmän kärryn kiihtyvyys on 4 ja raskaamman kärryn 2." style="max-width:100%;font-size:24px">
   <line x1="138.5" y1="300" x2="138.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
