@@ -21,15 +21,16 @@
     "logo": "ruukkilabra-logo-fi.svg",
     "main_menu": "Päävalikko",
     "modules": "Moduulit",
-    "portfolio": "← Portfolio",
     "breadcrumb": "Polku",
     "footer": "Ruukkilabra · lukion fysiikka, LOPS 2019",
     "back_to_course": "← {{course}}-moduuli",
     "back_to_portfolio": "← Takaisin portfolioon",
     "course_type_required": "Pakollinen",
     "course_type_optional": "Valinnainen",
-    "lessons_ready": "{{done}} / {{n}} oppituntia valmiina",
-    "lessons_planned": "{{n}} oppituntia suunnitteilla",
+    "lessons_planned": {
+      "one": "{{n}} oppitunti suunnitteilla",
+      "other": "{{n}} oppituntia suunnitteilla"
+    },
     "lesson_prototype": "prototyyppi",
     "lesson_coming": "tulossa",
     "course_goals": "Moduulin tavoitteet",
@@ -37,10 +38,7 @@
     "course_lessons": "Oppitunnit",
     "course_title": "{{code}} · {{title}}",
     "course_description": "{{code}} {{title}}: lukion fysiikan moduulin oppitunnit, simulaatiot ja tehtävät. {{done}} / {{n}} oppituntia valmiina.",
-    "latest_lesson": "Uusin oppitunti:",
-    "home_eyebrow": "Fysiikka · LOPS 2019 · Simulaatiot",
-    "home_lead": "Lukion fysiikkaa tutkimalla ja kokeilemalla. Tee ennuste, tutki ilmiötä simulaatiolla, rakenna selitys ja testaa osaamisesi. Oppitunnit noudattavat lukion opetussuunnitelman perusteita 2019 (LOPS).",
-    "home_count": "{{built}} / {{total}} oppituntia valmiina",
+    "home_lead": "Tee ennuste, tutki ilmiötä simulaatiolla tai aineistolla ja rakenna selitys itse.",
     "home_description": "Lukion fysiikkaa tutkimalla ja kokeilemalla: ennusteet, simulaatiot, selitykset ja tehtävät, LOPS 2019:n moduulit FY1–FY8.",
     "credits": "{{n}} op",
     "home_tagline": "Tutki. Oivalla. Sovella.",
@@ -60,10 +58,52 @@
       "Tee ydintehtävät; muut tehtävät ovat lisäharjoitusta ja tason 3 tehtävät haastavaa soveltamista.",
       "Jatka luvun lopusta kohtaan Seuraava luku."
     ],
-    "home_count_note": "Valmiita moduuleja {{complete}}, keskeneräisiä {{partial}} ja suunnitteilla {{planned}}. Luku kertoo julkaistut oppitunnit, ei omaa edistymistäsi. Uusia oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat.",
-    "module_complete": "valmis",
-    "module_partial": "keskeneräinen",
-    "module_planned": "suunnitteilla"
+    "language": "Kieli",
+    "language_choose": "Valitse kieli",
+    "lang_unavailable": "sivu ei vielä saatavilla, vie moduulin sivulle",
+    "unavailable_note": "Sivu <strong>{{title}}</strong> ei ole vielä saatavilla tällä kielellä. Alla näet moduulin oppitunnit ja sen, mitkä niistä voit jo avata.",
+    "home_title": "Lukion fysiikkaa tutkimalla.",
+    "choose_module": "Valitse moduuli",
+    "try_lesson": "Kokeile oppituntia",
+    "modules_lead": "Lukion fysiikan moduulit (LOPS 2019). Määrät kertovat julkaistut oppitunnit, eivät omaa edistymistäsi.",
+    "upcoming": "Tulossa",
+    "upcoming_lead": "Näistä moduuleista ei ole vielä julkaistu oppitunteja. Moduulin sivulla näet sen suunnitellut oppitunnit ja tavoitteet.",
+    "open_module": "Avaa moduuli →",
+    "open_lesson": "Avaa oppitunti →",
+    "featured_heading": "Esimerkkioppitunti",
+    "featured_lead": "Luku etenee pohdinnasta ja ennusteesta tutkimukseen, teoriaan ja osaamisen tarkistamiseen.",
+    "lessons_all": {
+      "one": "{{n}} oppitunti",
+      "other": "{{n}} oppituntia"
+    },
+    "lessons_available": {
+      "one": "{{n}} oppitunti saatavilla",
+      "other": "{{n}} oppituntia saatavilla"
+    },
+    "lessons_coming": {
+      "one": "vielä {{n}} tulossa",
+      "other": "vielä {{n}} tulossa"
+    },
+    "course_goals_show": {
+      "one": "Näytä tavoite",
+      "other": "Näytä kaikki {{n}} tavoitetta"
+    },
+    "home_start_short": [
+      "Valitse moduuli ja aloita sen ensimmäisestä luvusta tai siitä luvusta, jota opiskelette tunnilla.",
+      "Ennusta ensin ja avaa vastaukset vasta, kun olet itse yrittänyt.",
+      "Jatka luvun lopusta kohtaan Seuraava luku."
+    ],
+    "home_start_more": "Lisää opiskeluvinkkejä",
+    "module_question": {
+      "FY1": "Miten fysiikka mittaa ja selittää maailmaa protonista galakseihin?",
+      "FY2": "Mistä saamamme energia tulee, ja miten sen käyttö vaikuttaa ympäristöön?",
+      "FY3": "Miten energia siirtyy lämpönä ja työnä, ja miten se muuttaa ainetta?",
+      "FY4": "Miten voimat muuttavat kappaleen liikettä?",
+      "FY5": "Miksi kappaleet pyörivät ja värähtelevät, ja miten aallot etenevät?",
+      "FY6": "Miten sähkövirta kulkee virtapiirissä ja siirtää energiaa?",
+      "FY7": "Miten sähkö ja magnetismi liittyvät toisiinsa, ja mitä valo on?",
+      "FY8": "Miksi atomin energia on kvantittunut, ja mistä säteily syntyy?"
+    }
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",
@@ -89,7 +129,10 @@
     "example_next": "Näytä seuraava vaihe",
     "example_all": "Näytä kaikki",
     "level": "Taso {{n}}",
-    "level_count": "{{n}} tehtävää",
+    "level_count": {
+      "one": "{{n}} tehtävä",
+      "other": "{{n}} tehtävää"
+    },
     "answer_for": "Vastaus tehtävään {{id}}",
     "check": "Tarkista",
     "answer": "Vastaus",
@@ -877,7 +920,10 @@
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käyttää. Päätä itse, mitkä ilmiöt ja mallit tilanteeseen liittyvät, ratkaise tehtävä paperille ja perustele ratkaisusi, kuten ylioppilaskokeessa.",
     "howto": "Ratkaise ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
-    "task_points": "{{n}} pistettä",
+    "task_points": {
+      "one": "{{n}} piste",
+      "other": "{{n}} pistettä"
+    },
     "reveal": "Näytä mallivastaus ja pisteytys",
     "reveal_hint": "Avaa vasta, kun oma ratkaisusi on valmis.",
     "own_reveal": "Avaa arviointikriteerit",
@@ -892,7 +938,7 @@
     "practise_more": "Harjoittele lisää:",
     "practise_link": "{{competency}}, luku {{chapter}}",
     "course_lead": "Moduulin lopuksi voit kokeilla, osaatko soveltaa oppimaasi itsenäisesti ylioppilaskokeen tapaan. Mallivastaukset ja pisteytysohjeet avautuvat oman ratkaisun jälkeen.",
-    "course_count": "{{n}} tehtävää · {{points}} pistettä",
+    "course_count": "{{tasks}} · {{points}}",
     "kind_own": "oma työ",
     "step_names": {
       "Annettu": "Annettu",
@@ -907,6 +953,10 @@
       "Mallivastaus": "Mallivastaus",
       "Kuvaaja": "Kuvaaja",
       "Kuvaajan lukeminen": "Kuvaajan lukeminen"
+    },
+    "tasks_n": {
+      "one": "{{n}} tehtävä",
+      "other": "{{n}} tehtävää"
     }
   },
   "competency": {

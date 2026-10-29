@@ -37,7 +37,7 @@ code, out = run("check_i18n.py")
 expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
-site_page = re.sub(r'<a class="lang" [^>]*>[^<]*</a>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
+site_page = re.sub(r'<details class="lang-menu">.*?</details>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
 expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else
@@ -96,7 +96,10 @@ expect("the numbers in the English page use a decimal point", re.search(r'data-a
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
 expect("the pages link to each other's language", f'href="en/{LESSON}.html" hreflang="en"' in fi_page and f'href="../{LESSON}.html" hreflang="fi"' in page, re.findall(r'<a class="lang"[^>]*>[^<]*</a>', fi_page + page))
 other = next(f.name for f in courses.lessons() if f.name != LESSON)
-expect("a page the other language lacks links to its front page", 'href="en/index.html" hreflang="en"' in (T / "site" / f"{other}.html").read_text())
+other_page = (T / "site" / f"{other}.html").read_text(); module = other.split("-")[0].upper()
+expect("a page the other language lacks links to that language's module page, whose note says the page is not available (teacher 2026-10-29)",
+       f'href="en/{module}.html#unavailable-{other}" hreflang="en"' in other_page and 'aria-describedby="lang-note-en"' in other_page
+       and f'id="unavailable-{other}"' in (T / f"site/en/{module}.html").read_text())
 expect("the English course page lists the translated lesson, the rest as coming", f'href="{LESSON}.html"' in (T / "site/en/FY3.html").read_text() and "(en)" in (T / "site/en/FY3.html").read_text())
 code, out = run("check_layout.py", "--site")
 expect("the English pages pass the 360 px layout check", code == 0, "\n".join(l for l in out.splitlines() if not l.startswith("OK ")) or out[-600:])
