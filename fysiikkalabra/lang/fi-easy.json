@@ -691,6 +691,20 @@
         "isokoorinen": "isokoorinen"
       }
     },
+    "fy4-2": {
+      "kaynnista": "Käynnistä",
+      "alusta": "Alusta",
+      "tauko": "Tauko",
+      "nopeus_toisto": "Nopeus (toisto)",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "alkunopeus": "Alkunopeus $v_0 = {{v}}\\,\\text{m/s}$",
+      "kiihtyvyys": "Kiihtyvyys $a = {{a}}\\,\\text{m/s}^2$",
+      "hetki": "Hetki $t = {{t}}\\,\\text{s}$",
+      "lukemat": "<strong>$t = {{t}}\\,\\text{s}$</strong><br>paikka <strong>$x = {{x}}\\,\\text{m}$</strong>, nopeus <strong>$v = {{v}}\\,\\text{m/s}$</strong>, kiihtyvyys $a = {{a}}\\,\\text{m/s}^2$",
+      "legend": "Sininen nuoli on nopeus ja oranssi nuoli on kiihtyvyys. Haalea kärry näyttää paikan kokonaisten sekuntien kohdalla."
+    },
     "fy4-1": {
       "kaynnista": "Käynnistä",
       "alusta": "Alusta",

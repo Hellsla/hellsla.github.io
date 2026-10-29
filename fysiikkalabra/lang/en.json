@@ -691,6 +691,20 @@
         "isokoorinen": "isochoric"
       }
     },
+    "fy4-2": {
+      "kaynnista": "Start",
+      "alusta": "Reset",
+      "tauko": "Pause",
+      "nopeus_toisto": "Speed (playback)",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "alkunopeus": "Initial velocity $v_0 = {{v}}\\,\\text{m/s}$",
+      "kiihtyvyys": "Acceleration $a = {{a}}\\,\\text{m/s}^2$",
+      "hetki": "Time $t = {{t}}\\,\\text{s}$",
+      "lukemat": "<strong>$t = {{t}}\\,\\text{s}$</strong><br>position <strong>$x = {{x}}\\,\\text{m}$</strong>, velocity <strong>$v = {{v}}\\,\\text{m/s}$</strong>, acceleration $a = {{a}}\\,\\text{m/s}^2$",
+      "legend": "The blue arrow is the velocity, the orange arrow the acceleration. A faint cart shows the position at whole seconds."
+    },
     "fy4-1": {
       "kaynnista": "Start",
       "alusta": "Reset",

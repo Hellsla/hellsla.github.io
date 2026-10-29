@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy4-2-L1-01",
+      "level": 1,
+      "text": "Auto lähtee liikennevaloista levosta ja saavuttaa nopeuden $25\\,\\text{m/s}$ ajassa $8{,}0\\,\\text{s}$. Kiihtyvyys on tasainen. Mikä on auton kiihtyvyys?",
+      "answer": 3.125,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-02",
+      "level": 1,
+      "text": "Pyöräilijä ajaa nopeudella $6{,}0\\,\\text{m/s}$ ja alkaa sitten jarruttaa. Jarrutuksen aikana kiihtyvyys on $-1{,}5\\,\\text{m/s}^2$. Mikä on pyöräilijän nopeus $3{,}0\\,\\text{s}$ jarrutuksen alkamisen jälkeen?",
+      "answer": 1.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-03",
+      "level": 1,
+      "text": "Kivi pudotetaan levosta kaivoon. Ilmanvastus on pieni. Kuinka pitkän matkan kivi putoaa ajassa $1{,}50\\,\\text{s}$?",
+      "answer": 11.03625,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-04",
+      "level": 1,
+      "text": "Kuvaaja esittää potkulaudan nopeuden ajan funktiona. Mikä on potkulaudan kiihtyvyys?",
+      "answer": 1.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tv"
+    },
+    {
+      "id": "fy4-2-L1-05",
+      "level": 1,
+      "text": "Juna lähtee asemalta levosta ja kiihtyy tasaisesti kiihtyvyydellä $0{,}40\\,\\text{m/s}^2$. Kuinka pitkän matkan juna kulkee ensimmäisen $30\\,\\text{s}$:n aikana?",
+      "answer": 180,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-2-L2-01",
+      "level": 2,
+      "text": "Auto ajaa nopeudella $72\\,\\text{km/h}$ ja jarruttaa tasaisesti. Se pysähtyy ajassa $4{,}0\\,\\text{s}$. Kuinka pitkän matkan auto kulkee jarrutuksen aikana?",
+      "answer": 40,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-02",
+      "level": 2,
+      "text": "Kuvaaja esittää levosta kiihtyvän kärryn paikan ajan funktiona. Käyrän pisteeseen $P$ hetkellä $4{,}0\\,\\text{s}$ on piirretty katkoviivana tangentti eli sivuava suora. Mikä on kärryn hetkellinen nopeus hetkellä $4{,}0\\,\\text{s}$?",
+      "answer": 4.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tangent"
+    },
+    {
+      "id": "fy4-2-L2-03",
+      "level": 2,
+      "text": "Pallo heitetään suoraan ylöspäin nopeudella $15{,}0\\,\\text{m/s}$. Ilmanvastus on pieni. Kuinka korkealle pallo nousee heittokohdasta?",
+      "answer": 11.467889908256879,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-04",
+      "level": 2,
+      "text": "Astronautti pudottaa Kuussa vasaran levosta $1{,}60\\,\\text{m}$:n korkeudelta. Vasara osuu pintaan $1{,}41\\,\\text{s}$:n kuluttua. Kuussa ei ole ilmakehää. Mikä on Kuun putoamiskiihtyvyys tämän mittauksen mukaan?",
+      "answer": 1.6095769830491427,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-2-L3-01",
+      "level": 3,
+      "text": "Pallo heitetään parvekkeelta suoraan ylöspäin nopeudella $8{,}00\\,\\text{m/s}$. Heittokohta on $6{,}00\\,\\text{m}$ maanpinnan yläpuolella. Pallo putoaa lopulta maahan parvekkeen viereen. Ilmanvastus on pieni. Kuinka kauan heitosta kuluu, ennen kuin pallo osuu maahan?",
+      "answer": 2.1896387439738114,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-02",
+      "level": 3,
+      "text": "Metrojuna lähtee asemalta levosta ja kiihtyy tasaisesti nopeuteen $15{,}0\\,\\text{m/s}$ ajassa $20{,}0\\,\\text{s}$. Sitten se ajaa tällä nopeudella $60{,}0\\,\\text{s}$. Lopuksi se jarruttaa tasaisesti seuraavalle asemalle ajassa $15{,}0\\,\\text{s}$. Kuinka pitkä on asemien välinen matka metreinä?",
+      "answer": 1162.5,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-03",
+      "level": 3,
+      "text": "Pallo heitetään suoraan ylöspäin, ja sen korkeus $y$ mitataan ajan funktiona videoanalyysilla. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
+      "answer": -1.7600000000000002,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}
