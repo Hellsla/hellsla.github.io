@@ -382,14 +382,14 @@ $(t,x)$-kuvaajassa kumpikin liike on oma viivansa samassa koordinaatistossa. Koh
   <foreignObject x="388" y="244" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kohtaaminen}$</div></foreignObject>
 </svg>
 
-Kohtaaminen ei tarkoita, että kappaleilla olisi sama nopeus. Leikkauspisteessä viivat ovat eri jyrkkiä, koska kappaleiden nopeudet ovat erisuuret. Jos kahden tasaisesti liikkuvan kappaleen nopeudet olisivat yhtä suuret, viivat olisivat yhdensuuntaiset ja kappaleiden välimatka pysyisi samana, joten ne eivät kohtaisi. Ohituksessa takaa tuleva kappale on kohtaamishetkellä nopeampi kuin ohitettava.
+Kohtaaminen ei tarkoita, että kappaleilla olisi sama nopeus. Leikkauspisteessä viivat ovat eri jyrkkiä, koska kappaleiden nopeudet ovat erisuuret. Jos kahden tasaisesti liikkuvan kappaleen nopeudet olisivat yhtä suuret, viivat olisivat yhdensuuntaiset ja kappaleiden välimatka pysyisi samana, joten ne eivät kohtaisi, jos ne lähtevät eri paikoista. Ohituksessa takaa tuleva kappale on kohtaamishetkellä nopeampi kuin ohitettava.
 
 ## Kaava: Kohtaamisehto
 Kohtaamishetki ja kohtaamispaikka saadaan kirjoittamalla kummankin kappaleen paikka ajan funktiona ja merkitsemällä paikat yhtä suuriksi:
 ```latex
 x_\text{A}(t) = x_\text{B}(t)
 ```
-missä $x_\text{A}(t)$ ja $x_\text{B}(t)$ ovat kappaleiden paikat samassa koordinaatistossa (m) ja $t$ on kohtaamishetki (s). Kun $t$ on ratkaistu, se sijoitetaan jompaankumpaan paikkafunktioon, ja tulos on kohtaamispaikka. Tarkistuksena toinen paikkafunktio antaa saman paikan.
+missä $x_\text{A}(t)$ ja $x_\text{B}(t)$ ovat kappaleiden paikat samassa koordinaatistossa ($\text{m}$) ja $t$ on kohtaamishetki ($\text{s}$). Kun $t$ on ratkaistu, se sijoitetaan jompaankumpaan paikkafunktioon, ja tulos on kohtaamispaikka. Tarkistuksena toinen paikkafunktio antaa saman paikan.
 
 Paikkafunktio riippuu liikkeen lajista. Tasaisessa liikkeessä se on $x = x_0 + v\,t$ (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Tasaisesti kiihtyvässä liikkeessä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*) se on
 ```latex
@@ -398,7 +398,7 @@ x &= x_0 + v_0\,t + \tfrac12\,a\,t^2 \\
 v &= v_0 + a\,t
 \end{aligned}
 ```
-missä $x_0$ on alkupaikka (m), $v_0$ alkunopeus (m/s), $a$ kiihtyvyys (m/s²), $t$ aika (s) ja $v$ nopeus hetkellä $t$ (m/s). Kaavat pätevät, kun liike on suoraviivaista ja kiihtyvyys on vakio. Kahden tasaisen liikkeen yhtälö on ensimmäisen asteen yhtälö, joten kappaleet kohtaavat enintään kerran. Jos toinen kiihtyy, yhtälö on toisen asteen yhtälö, ja viivoilla voi olla kaksi leikkauspistettä.
+missä $x_0$ on alkupaikka ($\text{m}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$), $t$ aika ($\text{s}$) ja $v$ nopeus hetkellä $t$ ($\text{m/s}$). Kaavat pätevät, kun liike on suoraviivaista ja kiihtyvyys on vakio. Kahden tasaisen liikkeen yhtälö on ensimmäisen asteen yhtälö, joten kappaleet kohtaavat enintään kerran. Jos toinen kiihtyy, yhtälö on toisen asteen yhtälö, ja viivoilla voi olla kaksi leikkauspistettä.
 
 Yksinkertaisin ohitus: auto lähtee levosta samasta paikasta, jossa pyöräilijä kulkee tasaisella nopeudella $v$. Autolle $x_\text{A} = \tfrac12 a t^2$ ja pyöräilijälle $x_\text{B} = v\,t$:
 ```latex
@@ -457,7 +457,7 @@ Ratkaisu $t = 0$ on lähtöhetki: kappaleet ovat silloin samassa paikassa. Ohitu
   <foreignObject x="110" y="255.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lähtö}$</div></foreignObject>
 </svg>
 
-Miksi auton täytyy saavuttaa kaksinkertainen nopeus? Syy näkyy $(t,v)$-kuvaajasta. Siirtymä on nopeuskuvaajan ja aika-akselin välinen pinta-ala, ja kahden kuvaajan väliin jäävä pinta-ala kertoo, paljonko etumatka muuttuu. Niin kauan kuin auto on pyöräilijää hitaampi, pyöräilijän etumatka kasvaa. Etumatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret, eikä se ole kohtaamishetki. Vasta sen jälkeen auto on nopeampi ja pienentää etumatkaa. Ohitus tapahtuu, kun etumatkan pieneneminen on yhtä suuri kuin aiempi kasvu: kuvassa kumpikin alue vastaa $9\,\text{m}$.
+Miksi auton täytyy saavuttaa kaksinkertainen nopeus? Syy näkyy $(t,v)$-kuvaajasta. Siirtymä on nopeuskuvaajan ja aika-akselin välinen pinta-ala, ja kahden kuvaajan väliin jäävä pinta-ala kertoo, paljonko etumatka muuttuu. Niin kauan kuin auto on pyöräilijää hitaampi, pyöräilijän etumatka kasvaa. Kun takana oleva lähtee hitaampana, etumatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret, eikä se ole kohtaamishetki. Vasta sen jälkeen auto on nopeampi ja pienentää etumatkaa. Ohitus tapahtuu, kun etumatkan pieneneminen on yhtä suuri kuin aiempi kasvu: kuvassa kumpikin alue vastaa $9\,\text{m}$. Siksi ohitus tulee vasta kaukana: auton on ensin kurottava umpeen etumatkan kasvu, ja tässä esimerkissä ohituspaikka on $36\,\text{m}$ lähdöstä, vaikka etumatka kasvoi enimmillään vain $9\,\text{m}$.
 
 <svg data-fig="vt" viewBox="0 0 600 350" role="img" aria-label="(t,v)-kuvaaja mittakaavassa samasta liikkeestä kuin edellinen kuvaaja. Auton nopeus kasvaa suorana nollasta, pyöräilijän nopeus on vakio 6,0 m/s. Hetkeen t = 3,0 s asti pyöräilijä on edellä ja etumatka kasvaa: suorien väliin jää pinta-ala, joka vastaa etumatkan kasvua 9 m. Hetkestä 3,0 s hetkeen 6,0 s auto pienentää etumatkaa, ja pinta-ala vastaa pienenemistä 9 m. Hetkellä t = 6,0 s auto on saavuttanut pyöräilijän." style="max-width:100%;font-size:24px">
   <line x1="186" y1="300" x2="186" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -505,7 +505,7 @@ Miksi auton täytyy saavuttaa kaksinkertainen nopeus? Syy näkyy $(t,v)$-kuvaaja
   <foreignObject x="312" y="168.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-9\,\text{m}$</div></foreignObject>
 </svg>
 
-Jos pyöräilijä on lähtiessä matkan $x_{0\text{B}}$ edellä, yhtälö on $\tfrac12 a t^2 = x_{0\text{B}} + v\,t$. Se ratkaistaan toisen asteen yhtälön ratkaisukaavalla, ja kohtaamishetki on positiivinen juuri. Negatiivinen juuri kuvaisi hetkeä ennen lähtöä, eikä se kuulu tilanteeseen. Jos positiivista juurta ei ole, kappaleet eivät kohtaa.
+Jos pyöräilijä on lähtiessä matkan $x_{0\text{B}}$ edellä, yhtälö on $\tfrac12 a t^2 = x_{0\text{B}} + v\,t$. Se ratkaistaan toisen asteen yhtälön ratkaisukaavalla, ja kohtaamishetki on positiivinen juuri. Negatiivinen juuri kuvaisi hetkeä ennen lähtöä, eikä se kuulu tilanteeseen; kaksi positiivista juurta olisi kaksi kohtaamista. Jos positiivista juurta ei ole, kappaleet eivät kohtaa.
 
 ## Esimerkki
 Pyöräilijä polkee suoraa tietä tasaisella nopeudella $6{,}0\,\text{m/s}$. Hetkellä $t = 0$ hän on $16\,\text{m}$ liikennevalojen pysäytysviivan edellä. Samalla hetkellä viivalla seisova auto lähtee liikkeelle ja kiihtyy tasaisesti kiihtyvyydellä $2{,}0\,\text{m/s}^2$ samaan suuntaan. Milloin auto ohittaa pyöräilijän ja kuinka kaukana pysäytysviivasta ohitus tapahtuu?
@@ -528,6 +528,7 @@ Pyöräilijä polkee suoraa tietä tasaisella nopeudella $6{,}0\,\text{m/s}$. He
 &t = \frac{v + \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}
 \end{aligned}
 ```
+Toisen asteen yhtälön $A t^2 + B t + C = 0$ kertoimet ovat tässä $A = \tfrac12 a$, $B = -v$ ja $C = -x_{0\text{B}}$, ja ratkaisukaava $t = \dfrac{-B \pm \sqrt{B^2 - 4AC}}{2A}$ antaa yllä olevan juuren.
 
 <!-- vaihe -->
 
@@ -620,5 +621,5 @@ Kolmas virhe on lukea $(t,v)$-kuvaajan leikkauspiste kohtaamiseksi. Siinä viiva
 - Kahden kappaleen paikat mitataan samassa koordinaatistossa: sama origo, sama positiivinen suunta ja sama kello.
 - Kappaleet kohtaavat, kun $x_\text{A}(t) = x_\text{B}(t)$. Yhtälöstä saadaan kohtaamishetki, ja sijoittamalla se paikkafunktioon kohtaamispaikka.
 - $(t,x)$-kuvaajassa kohtaaminen on viivojen leikkauspiste. Kohtaamisessa nopeudet ovat yleensä erisuuret.
-- Kun toinen liike on tasaisesti kiihtyvää, yhtälö on toisen asteen yhtälö. Positiivinen juuri on kohtaamishetki, ja negatiivinen juuri ei kuulu tilanteeseen.
-- Etumatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret, eikä se ole kohtaamishetki.
+- Kun toinen liike on tasaisesti kiihtyvää, yhtälö on toisen asteen yhtälö. Jokainen positiivinen juuri on kohtaaminen (niitä voi olla kaksi), ja negatiivinen juuri on ennen lähtöä eikä kuulu tilanteeseen.
+- Kun takana oleva lähtee hitaampana, etumatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret, eikä se ole kohtaamishetki.

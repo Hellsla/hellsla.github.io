@@ -21,7 +21,7 @@ new p5((p) => {
   const LANE = { x0: 24, x1: 520, yA: 8, yB: 122, h: 56 }, RULER_Y = 84;
   const G = { x0: 78, x1: 470, y0: 356, y1: 204 };                       // graph box: t 0…12, x xmin…xmax
   let btn, sl, lSl, selCase, selSp, readout;
-  let tau = 0, tmax = 0, running = false, k = 1, labels = [];
+  let tau = 0, tmax = 0, running = false, k = 1, K = 1, labels = [];   // k: canvas px per CSS px; K: stroke/marker scale on a narrow screen
 
   // --- the physics: position and velocity of a body at time t ---
   const pos = (c, t) => c.x0 + c.v0 * t + 0.5 * c.a * t * t;
@@ -85,7 +85,8 @@ new p5((p) => {
       meetings: mt.filter((m) => m <= tmax + 1e-9).length, tmax, running, speed, labels: null };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const ts = (x) => Math.round(x * k), fh = ts(11);
+    K = Math.min(k, 1.6);
+    const ts = (x) => Math.round(x * k), fh = ts(14);                    // 14 CSS px labels at every width
     labels = [];
     p.background(250);
     track(A, B, ts, fh);
@@ -104,8 +105,8 @@ new p5((p) => {
       if (Math.abs(v) > 0.05) arrow(cx, y + 11, cx + Math.sign(v) * (Math.abs(v) * 2.8 + 6), y + 11, BLUE);
       if (Math.abs(cart.a) > 0.05) arrow(cx, y + 25, cx + Math.sign(cart.a) * (Math.abs(cart.a) * 16 + 6), y + 25, ORANGE);
       // lane badge: the body's letter in its colour
-      p.noStroke(); p.fill(...c); p.circle(11, y + 14, 18);
-      lab(`$\\text{${who}}$`, 11, y + 14 + fh * 0.36, 'c', fh, [255, 255, 255], true);
+      p.noStroke(); p.fill(...c); p.circle(11 * K, y + 14, 18 * K);
+      lab(`$\\text{${who}}$`, 11 * K, y + 14 + fh * 0.36, 'c', fh, [255, 255, 255], true);
     }
     // the shared ruler (the x axis) with a marker for each body: A points down at it from above, B up at it from below
     p.stroke(60); p.strokeWeight(1.5); p.line(X(cs.xmin), RULER_Y, X(cs.xmax), RULER_Y);
@@ -140,9 +141,9 @@ new p5((p) => {
     p.pop();
   }
   function arrow(x1, y1, x2, y2, c) {
-    p.stroke(255, 255, 255, 220); p.strokeWeight(6); p.line(x1, y1, x2, y2);
-    p.stroke(...c); p.strokeWeight(3.5); p.line(x1, y1, x2, y2);
-    const a = Math.atan2(y2 - y1, x2 - x1), L = 8;
+    p.stroke(255, 255, 255, 220); p.strokeWeight(6 * K); p.line(x1, y1, x2, y2);
+    p.stroke(...c); p.strokeWeight(3.5 * K); p.line(x1, y1, x2, y2);
+    const a = Math.atan2(y2 - y1, x2 - x1), L = 8 * K;
     p.fill(...c); p.stroke(255, 255, 255, 220); p.strokeWeight(1.5);
     p.triangle(x2 + 3 * Math.cos(a), y2 + 3 * Math.sin(a), x2 - L * Math.cos(a - 0.5), y2 - L * Math.sin(a - 0.5), x2 - L * Math.cos(a + 0.5), y2 - L * Math.sin(a + 0.5));
   }
@@ -153,33 +154,35 @@ new p5((p) => {
     p.stroke(228); p.strokeWeight(1);
     for (let s = 2; s <= T; s += 2) p.line(GX(s), G.y0, GX(s), G.y1);
     for (let m = Math.ceil(cs.xmin / cs.tick) * cs.tick; m <= cs.xmax; m += cs.tick) p.line(G.x0, GY(m), G.x1, GY(m));
-    p.stroke(150); p.strokeWeight(1.5); p.line(G.x0, GY(0), G.x1, GY(0));            // x = 0
+    p.stroke(150); p.strokeWeight(1.5 * K); p.line(G.x0, GY(0), G.x1, GY(0));            // x = 0
     for (const [c, cart] of [[COL.A, A], [COL.B, B]]) {
-      p.noFill(); p.stroke(...c); p.strokeWeight(3.2); p.strokeJoin(p.ROUND);
+      p.noFill(); p.stroke(...c); p.strokeWeight(3.2 * K); p.strokeJoin(p.ROUND);
       if (tmax > 0) { p.beginShape(); for (let s = 0; s < tmax - 1e-9; s += 0.1) p.vertex(GX(s), GY(pos(cart, s))); p.vertex(GX(tmax), GY(pos(cart, tmax))); p.endShape(); }
       p.stroke(255); p.strokeWeight(1.5); p.fill(...c);
-      for (let s = 0; s <= Math.min(T, Math.floor(tmax + 1e-9)); s++) { if (cart === A) p.circle(GX(s), GY(pos(cart, s)), 8); else p.rect(GX(s) - 4, GY(pos(cart, s)) - 4, 8, 8, 1.5); }
+      for (let s = 0; s <= Math.min(T, Math.floor(tmax + 1e-9)); s++) { if (cart === A) p.circle(GX(s), GY(pos(cart, s)), 8 * K); else p.rect(GX(s) - 4 * K, GY(pos(cart, s)) - 4 * K, 8 * K, 8 * K, 1.5); }
     }
     // the present moment: a dashed vertical line and a ring on each line
     p.stroke(90); p.strokeWeight(1.2); p.drawingContext.setLineDash([5, 5]); p.line(GX(tau), G.y0, GX(tau), G.y1); p.drawingContext.setLineDash([]);
-    for (const [c, cart] of [[COL.A, A], [COL.B, B]]) { p.fill(255); p.stroke(...c); p.strokeWeight(3); p.circle(GX(tau), GY(pos(cart, tau)), 12); }
+    for (const [c, cart] of [[COL.A, A], [COL.B, B]]) { p.fill(255); p.stroke(...c); p.strokeWeight(3 * K); p.circle(GX(tau), GY(pos(cart, tau)), 12 * K); }
     // each meeting reached so far: a black ring where the two lines cross
-    for (const m of mt) if (m <= tmax + 1e-9) { p.noFill(); p.stroke(...INKC); p.strokeWeight(2.5); p.circle(GX(m), GY(pos(A, m)), 20); }
+    for (const m of mt) if (m <= tmax + 1e-9) { p.noFill(); p.stroke(...INKC); p.strokeWeight(2.5 * K); p.circle(GX(m), GY(pos(A, m)), 20 * K); }
     // axes
-    p.stroke(60); p.strokeWeight(1.5); p.noFill(); p.line(G.x0, G.y0, G.x1 + 8, G.y0); p.line(G.x0, G.y0, G.x0, G.y1 - 8);
+    p.stroke(60); p.strokeWeight(1.5 * K); p.noFill(); p.line(G.x0, G.y0, G.x1 + 8, G.y0); p.line(G.x0, G.y0, G.x0, G.y1 - 8);
     p.noStroke(); p.fill(60);
     p.triangle(G.x1 + 14, G.y0, G.x1 + 6, G.y0 - 4, G.x1 + 6, G.y0 + 4); p.triangle(G.x0, G.y1 - 14, G.x0 - 4, G.y1 - 6, G.x0 + 4, G.y1 - 6);
     for (let s = 0; s <= T; s += 2) lab(`$${s}$`, GX(s), G.y0 + 4 + fh, 'c', fh);
-    for (let m = Math.ceil(cs.xmin / cs.tick) * cs.tick; m <= cs.xmax; m += cs.tick) lab(`$${m}$`, G.x0 - 8, GY(m) + fh * 0.36, 'r', fh);
+    const ystep = Math.max(1, Math.ceil(1.3 * fh / ((G.y0 - G.y1) * cs.tick / (cs.xmax - cs.xmin))));   // thin the x ticks when 14 px labels would touch
+    for (let m = Math.ceil(cs.xmin / cs.tick) * cs.tick, i = 0; m <= cs.xmax; m += cs.tick, i++) if (i % ystep === 0) lab(`$${m}$`, G.x0 - 8, GY(m) + fh * 0.36, 'r', fh);
     lab('$t\\ (\\text{s})$', G.x1 + 20, G.y0 + 4 + fh, 'l', fh);
-    lab('$x\\ (\\text{m})$', G.x0 - 8, G.y1 - 12, 'r', fh);
+    lab('$x\\ (\\text{m})$', G.x0 + 8, G.y1 - 10, 'l', fh);
     // legend: bodies (graph colours and markers) and the two arrows
-    const lx = 492, ly = 214, dy = ts(22);
-    p.stroke(...COL.A); p.strokeWeight(3.2); p.line(lx, ly, lx + 26, ly); p.fill(...COL.A); p.stroke(255); p.strokeWeight(1.5); p.circle(lx + 13, ly, 8);
-    p.stroke(...COL.B); p.strokeWeight(3.2); p.line(lx, ly + dy, lx + 26, ly + dy); p.fill(...COL.B); p.stroke(255); p.strokeWeight(1.5); p.rect(lx + 9, ly + dy - 4, 8, 8, 1.5);
-    arrow(lx, ly + 2 * dy, lx + 24, ly + 2 * dy, BLUE); arrow(lx, ly + 3 * dy, lx + 24, ly + 3 * dy, ORANGE);
-    lab('$\\text{A}$', lx + 34, ly + fh * 0.36, 'l', fh); lab('$\\text{B}$', lx + 34, ly + dy + fh * 0.36, 'l', fh);
-    lab('$\\overline{v}$', lx + 34, ly + 2 * dy + fh * 0.36, 'l', fh); lab('$\\overline{a}$', lx + 34, ly + 3 * dy + fh * 0.36, 'l', fh);
+    const lx = 490, ly = 208 + 4 * K, dy = ts(20), ll = 24 * K;
+    p.stroke(...COL.A); p.strokeWeight(3.2 * K); p.line(lx, ly, lx + ll, ly); p.fill(...COL.A); p.stroke(255); p.strokeWeight(1.5); p.circle(lx + ll / 2, ly, 8 * K);
+    p.stroke(...COL.B); p.strokeWeight(3.2 * K); p.line(lx, ly + dy, lx + ll, ly + dy); p.fill(...COL.B); p.stroke(255); p.strokeWeight(1.5); p.rect(lx + ll / 2 - 4 * K, ly + dy - 4 * K, 8 * K, 8 * K, 1.5);
+    arrow(lx, ly + 2 * dy, lx + ll, ly + 2 * dy, BLUE); arrow(lx, ly + 3 * dy, lx + ll, ly + 3 * dy, ORANGE);
+    const tx0 = lx + ll + 10;
+    lab('$\\text{A}$', tx0, ly + fh * 0.36, 'l', fh); lab('$\\text{B}$', tx0, ly + dy + fh * 0.36, 'l', fh);
+    lab('$\\overline{v}$', tx0, ly + 2 * dy + fh * 0.36, 'l', fh); lab('$\\overline{a}$', tx0, ly + 3 * dy + fh * 0.36, 'l', fh);
   }
 
   // every canvas text: drawn at its place, its ink box pushed to simState.labels (canvas coordinates)

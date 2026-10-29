@@ -32,7 +32,7 @@
 **Annettu:** kuvaaja kärryjen paikoista: kärry A lähtee paikasta $0$ ja kärry B paikasta $40\,\text{m}$
 **Kysytty:** kohtaamishetki $t$ yksikössä $\text{s}$
 **Periaate:** Kärryt ovat samassa paikassa samalla hetkellä siinä pisteessä, jossa $(t,x)$-kuvaajan viivat leikkaavat. Kohtaamishetki on leikkauspisteen vaakakoordinaatti.
-**Kuvaajan lukeminen:** Viivat leikkaavat pisteessä, joka on pystysuoran ruudukkoviivan $x = 30\,\text{m}$ kohdalla. Sieltä pudotetaan pystysuora viiva aika-akselille: se osuu kohtaan $t = 5{,}0\,\text{s}$, kahden ruudukkoviivan ($4$ ja $6\,\text{s}$) puoliväliin.
+**Kuvaajan lukeminen:** Viivat leikkaavat pisteessä, joka on vaakasuoran ruudukkoviivan $x = 30\,\text{m}$ kohdalla. Sieltä pudotetaan pystysuora viiva aika-akselille: se osuu kohtaan $t = 5{,}0\,\text{s}$, kahden ruudukkoviivan ($4$ ja $6\,\text{s}$) puoliväliin.
 **Kaava:** $t = $ leikkauspisteen vaakakoordinaatti, luettuna kuvaajasta
 **Muunnokset:** Akselit ovat valmiiksi yksiköissä $\text{s}$ ja $\text{m}$, joten muunnoksia ei tarvita.
 **Sijoitus:** Luettu pari on $(t;\, x) = (5{,}0\,\text{s};\, 30\,\text{m})$. Laskentatarkistus kuvaajan päätepisteistä: A etenee $60\,\text{m}$ ajassa $10\,\text{s}$, joten $v_\text{A} = 6{,}0\,\text{m/s}$; B siirtyy $40\,\text{m}$:stä $20\,\text{m}$:iin eli $-20\,\text{m}$ ajassa $10\,\text{s}$, joten $v_\text{B} = -2{,}0\,\text{m/s}$. Yhtälö $6{,}0\,t = 40 - 2{,}0\,t$ antaa $t = \dfrac{40\,\text{m}}{8{,}0\,\text{m/s}} = 5{,}0\,\text{s}$.
@@ -40,14 +40,14 @@
 **Järkevyys:** Kohtaamispaikka $x = 6{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} = 30\,\text{m}$ on kummankin lähtöpaikan välissä ($0$ ja $40\,\text{m}$), kuten pitää. Kärry A on kulkenut $30\,\text{m}$ ja B $10\,\text{m}$, ja A on kolme kertaa nopeampi.
 
 ## fy4-12-L1-05
-**Annettu:** juoksija A: $x_0 = 0$, $v = 3{,}5\,\text{m/s}$; kohtaamishetki $t = 12\,\text{s}$
+**Annettu:** juoksija A: $x_{0\text{A}} = 0$, $v_\text{A} = 3{,}5\,\text{m/s}$; juoksija B: $x_{0\text{B}} = 60\,\text{m}$, $v_\text{B} = -2{,}5\,\text{m/s}$; molemmat liikkuvat tasaisesti
 **Kysytty:** kohtaamispaikka $x$ yksikössä $\text{m}$
-**Periaate:** Kohtaamispaikka on se paikka, jossa kumpikin juoksija on kohtaamishetkellä. Koska tiedetään hetki, riittää laskea yhden juoksijan paikka siihen hetkeen. A liikkuu tasaisesti origosta.
-**Kaava:** $x = x_0 + v\,t$, ja kun $x_0 = 0$, $x = v\,t$
+**Periaate:** Juoksijat kohtaavat, kun ne ovat samassa paikassa samalla hetkellä, joten $x_\text{A} = x_\text{B}$. Kun kohtaamishetki on ratkaistu, kohtaamispaikka on kummankin paikka sillä hetkellä. B:n nopeus on negatiivinen, koska B juoksee A:ta kohti eli negatiiviseen suuntaan.
+**Kaava:** $v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, joten $t = \dfrac{x_{0\text{B}}}{v_\text{A} - v_\text{B}}$ ja kohtaamispaikka $x = v_\text{A}\,t$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $x = 3{,}5\,\text{m/s} \cdot 12\,\text{s} = 42\,\text{m}$
-**Vastaus:** $42\,\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Tulos on positiivinen, koska A juoksee positiiviseen suuntaan. Vauhti $3{,}5\,\text{m/s}$ on noin $13\,\text{km/h}$, mikä on rennon juoksun vauhtia, ja $12\,\text{s}$:ssa sillä kuljetaan muutama kymmenen metriä.
+**Sijoitus:** $t = \dfrac{60\,\text{m}}{3{,}5\,\text{m/s} - (-2{,}5\,\text{m/s})} = \dfrac{60\,\text{m}}{6{,}0\,\text{m/s}} = 10\,\text{s}$ ja $x = 3{,}5\,\text{m/s} \cdot 10\,\text{s} = 35\,\text{m}$
+**Vastaus:** $35\,\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** Paikka on juoksijoiden lähtöpaikkojen $0$ ja $60\,\text{m}$ välissä, kuten pitää. B:n paikka samalla hetkellä: $60\,\text{m} - 2{,}5\,\text{m/s} \cdot 10\,\text{s} = 35\,\text{m}$. A on kulkenut $35\,\text{m}$ ja B $25\,\text{m}$, yhteensä $60\,\text{m}$.
 
 ## fy4-12-L2-01
 **Annettu:** linja-auto $v_\text{L} = 72\,\text{km/h}$, henkilöauto $v_\text{H} = 90\,\text{km/h}$, henkilöauto $d = 150\,\text{m}$ takana; molemmat tasaisia ja samaan suuntaan
@@ -62,7 +62,7 @@
 ## fy4-12-L2-02
 **Annettu:** asemien väli $D = 12\,\text{km}$, nopeudet $v_1 = 90\,\text{km/h}$ ja $v_2 = 54\,\text{km/h}$ kohti toisiaan, lähtö yhtä aikaa
 **Kysytty:** aika $t$ yksikössä $\text{min}$
-**Periaate:** Junat ohittavat toisensa, kun ne ovat samassa paikassa. Origo on ensimmäisellä asemalla ja positiivinen suunta toista asemaa kohti: $x_1 = v_1\,t$ ja $x_2 = D - v_2\,t$. Yhtälö $x_1 = x_2$ antaa ajan.
+**Periaate:** Junat kohtaavat, kun ne ovat samassa paikassa samalla hetkellä. Origo on ensimmäisellä asemalla ja positiivinen suunta toista asemaa kohti: $x_1 = v_1\,t$ ja $x_2 = D - v_2\,t$. Yhtälö $x_1 = x_2$ antaa ajan.
 **Kaava:** $v_1\,t = D - v_2\,t$, joten $t = \dfrac{D}{v_1 + v_2}$
 **Muunnokset:** Pidetään pituus kilometreinä ja nopeus yksikössä $\text{km/h}$, jolloin aika tulee tunteina: $t = \dfrac{12\,\text{km}}{144\,\text{km/h}}$. Lopuksi $1\,\text{h} = 60\,\text{min}$.
 **Sijoitus:** $t = \dfrac{12\,\text{km}}{90\,\text{km/h} + 54\,\text{km/h}} = \dfrac{12\,\text{km}}{144\,\text{km/h}} = 0{,}0833\,\text{h} = 0{,}0833 \cdot 60\,\text{min} = 5{,}0\,\text{min}$
@@ -70,14 +70,15 @@
 **Järkevyys:** Junat lähestyvät toisiaan nopeudella $144\,\text{km/h} = 2{,}4\,\text{km/min}$, joten $12\,\text{km}$ vie $12 : 2{,}4\,\text{min} = 5{,}0\,\text{min}$. Nopeampi juna kulkee $90\,\text{km/h} \cdot \tfrac{1}{12}\,\text{h} = 7{,}5\,\text{km}$ ja hitaampi $4{,}5\,\text{km}$, yhteensä $12\,\text{km}$.
 
 ## fy4-12-L2-03
-**Annettu:** pyöräilijä $v = 18\,\text{km/h}$ tasaisesti; auto $x_0 = 0$, $v_0 = 0$, $a = 2{,}5\,\text{m/s}^2$; molemmat ovat hetkellä $t = 0$ viivalla
-**Kysytty:** ohituspaikka $x$ viivasta laskettuna, yksikössä $\text{m}$
-**Periaate:** Ohitushetkellä paikat ovat samat: $\tfrac12\,a\,t^2 = v\,t$. Yhtälöllä on ratkaisu $t = 0$ (lähtö, jolloin kappaleet ovat samassa paikassa) ja ratkaisu $t = 2v/a$, joka on ohitus.
-**Kaava:** $\tfrac12\,a\,t^2 = v\,t$, joten $t = \dfrac{2v}{a}$ ja ohituspaikka $x = v\,t$
-**Muunnokset:** $v = 18\,\text{km/h} = 18 : 3{,}6\,\text{m/s} = 5{,}0\,\text{m/s}$.
-**Sijoitus:** $t = \dfrac{2 \cdot 5{,}0\,\text{m/s}}{2{,}5\,\text{m/s}^2} = 4{,}0\,\text{s}$, ja $x = 5{,}0\,\text{m/s} \cdot 4{,}0\,\text{s} = 20\,\text{m}$
-**Vastaus:** $20\,\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Auton paikka samalla hetkellä: $\tfrac12 \cdot 2{,}5\,\text{m/s}^2 \cdot (4{,}0\,\text{s})^2 = 20\,\text{m}$, sama kuin pyöräilijän. Auton nopeus on tällöin $2{,}5\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 10\,\text{m/s}$, kaksi kertaa pyöräilijän nopeus, kuten tällaisessa ohituksessa pitääkin.
+**Annettu:** kärry A: $x_{0\text{A}} = 6{,}0\,\text{m}$, $v_\text{A} = 3{,}0\,\text{m/s}$; kärry B: $x_{0\text{B}} = 42\,\text{m}$, $v_\text{B} = -1{,}0\,\text{m/s}$; molemmat liikkuvat tasaisesti
+**Kysytty:** kohtaamishetki $t$ yksikössä $\text{s}$, sekä kuvaajien hahmottelu ja perustelu
+**Periaate:** Tasaisessa liikkeessä $x = x_0 + v\,t$, joten $(t,x)$-kuvaaja on suora: lähtöpaikka on suoran alkupiste ja nopeus sen kulmakerroin. Kärryt kohtaavat, kun ne ovat samassa paikassa samalla hetkellä, eli kun suorat leikkaavat.
+**Kuvaajan lukeminen:** Hahmotelma tehdään näin. Piirrä aika vaaka-akselille ja paikka pystyakselille. A:n suora alkaa kohdasta $6{,}0\,\text{m}$ ja nousee $3{,}0\,\text{m}$ joka sekunti. B:n suora alkaa korkeammalta, kohdasta $42\,\text{m}$, ja laskee $1{,}0\,\text{m}$ joka sekunti, koska nopeus on negatiivinen. Nouseva viiva alkaa alempaa ja laskeva ylempää, joten ne kulkevat toisiaan kohti ja leikkaavat. Leikkauspiste kertoo hetken ja paikan, jossa kärryt ovat samassa kohdassa.
+**Kaava:** $x_\text{A} = x_\text{B}$, eli $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$. Ratkaistaan $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $t = \dfrac{42\,\text{m} - 6{,}0\,\text{m}}{3{,}0\,\text{m/s} - (-1{,}0\,\text{m/s})} = \dfrac{36\,\text{m}}{4{,}0\,\text{m/s}} = 9{,}0\,\text{s}$
+**Vastaus:** $9{,}0\,\text{s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** A:n paikka hetkellä $9{,}0\,\text{s}$ on $6{,}0\,\text{m} + 3{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{m}$ ja B:n $42\,\text{m} - 1{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{m}$. Paikat ovat samat, joten leikkauspiste on $(9{,}0\,\text{s};\, 33\,\text{m})$, kuten hahmotelmassa.
 
 ## fy4-12-L2-04
 **Annettu:** kuvaajasta: kärry A $x_0 = 0$ ja paikka $60\,\text{m}$ hetkellä $10\,\text{s}$; kärry B $x_0 = 40\,\text{m}$ ja paikka $20\,\text{m}$ hetkellä $10\,\text{s}$; liike on tasaista
@@ -87,28 +88,28 @@
 **Kaava:** $x_\text{B} - x_\text{A} = (40 - 2{,}0\,t) - 6{,}0\,t = 40 - 8{,}0\,t$. Asetetaan se arvoon $10\,\text{m}$: $t = \dfrac{40\,\text{m} - 10\,\text{m}}{8{,}0\,\text{m/s}}$
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $t = \dfrac{40\,\text{m} - 10\,\text{m}}{6{,}0\,\text{m/s} + 2{,}0\,\text{m/s}} = \dfrac{30\,\text{m}}{8{,}0\,\text{m/s}} = 3{,}75\,\text{s}$
-**Vastaus:** $3{,}8\,\text{s}$ eli $3{,}75\,\text{s}$, kaksi merkitsevää numeroa kuten välimatkassa $10\,\text{m}$.
+**Vastaus:** $3{,}8\,\text{s}$ (kaksi merkitsevää numeroa kuten välimatkassa $10\,\text{m}$). Pyöristämätön arvo on $3{,}75\,\text{s}$.
 **Järkevyys:** Välimatka pienenee $8{,}0\,\text{m}$ sekunnissa ja on alussa $40\,\text{m}$. Ajassa $3{,}75\,\text{s}$ se pienenee $30\,\text{m}$, joten jäljelle jää $10\,\text{m}$. Hetki on ennen kohtaamista $t = 5{,}0\,\text{s}$, kuten ensimmäiseltä kerralta pitääkin.
 
 ## fy4-12-L3-01
-**Annettu:** juoksija $x_{0\text{R}} = -5{,}0\,\text{m}$, $v = 4{,}0\,\text{m/s}$ (tasainen); bussi $x_0 = 0$, $v_0 = 0$, $a = 1{,}0\,\text{m/s}^2$
+**Annettu:** juoksija $x_{0\text{R}} = -8{,}0\,\text{m}$, $v = 5{,}0\,\text{m/s}$ (tasainen); bussi $x_0 = 0$, $v_0 = 0$, $a = 1{,}0\,\text{m/s}^2$
 **Kysytty:** ensimmäinen hetki $t$, jolloin juoksija on bussin kohdalla, yksikössä $\text{s}$
 **Periaate:** Kohtaaminen: $x_\text{B} = x_\text{R}$. Bussin paikka on $\tfrac12\,a\,t^2$ ja juoksijan $x_{0\text{R}} + v\,t$. Yhtälö on toisen asteen yhtälö, ja molemmat positiiviset juuret ovat kohtaamisia: ensimmäisellä kerralla juoksija saavuttaa bussin ja toisella bussi, joka on jo nopeampi, menee juoksijan ohi.
-**Kaava:** $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$, eli $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$. Ratkaisukaavasta $t = \dfrac{v \pm \sqrt{v^2 + 2\,a\,x_{0\text{R}}}}{a}$, ja ensimmäinen kohtaaminen on pienempi juuri
+**Kaava:** $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$, eli $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$. Kertoimet ovat $\tfrac12\,a$, $-v$ ja $-x_{0\text{R}}$, joten ratkaisukaavasta $t = \dfrac{v \pm \sqrt{v^2 + 2\,a\,x_{0\text{R}}}}{a}$, ja ensimmäinen kohtaaminen on pienempi juuri
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** Juurrettava on $v^2 + 2\,a\,x_{0\text{R}} = (4{,}0\,\text{m/s})^2 + 2 \cdot 1{,}0\,\text{m/s}^2 \cdot (-5{,}0\,\text{m}) = 6{,}0\,\text{m}^2/\text{s}^2$. Siis $t = \dfrac{4{,}0\,\text{m/s} - 2{,}45\,\text{m/s}}{1{,}0\,\text{m/s}^2} = 1{,}55\,\text{s}$
-**Vastaus:** $1{,}6\,\text{s}$ eli $1{,}55\,\text{s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa. Suurempi juuri $4{,}0 + \sqrt{6{,}0} = 6{,}4\,\text{s}$ on hetki, jolloin bussi ohittaa juoksijan.
-**Järkevyys:** Juoksija on hetkellä $1{,}55\,\text{s}$ paikassa $-5{,}0\,\text{m} + 4{,}0\,\text{m/s} \cdot 1{,}55\,\text{s} = 1{,}2\,\text{m}$, ja bussi on paikassa $\tfrac12 \cdot 1{,}0\,\text{m/s}^2 \cdot (1{,}55\,\text{s})^2 = 1{,}2\,\text{m}$. Bussin nopeus on silloin vasta $1{,}55\,\text{m/s}$, joten juoksija on selvästi nopeampi, kuten saavuttamisessa pitääkin.
+**Sijoitus:** Juurrettava on $v^2 + 2\,a\,x_{0\text{R}} = (5{,}0\,\text{m/s})^2 + 2 \cdot 1{,}0\,\text{m/s}^2 \cdot (-8{,}0\,\text{m}) = 9{,}0\,\text{m}^2/\text{s}^2$. Siis $t = \dfrac{5{,}0\,\text{m/s} - 3{,}0\,\text{m/s}}{1{,}0\,\text{m/s}^2} = 2{,}0\,\text{s}$
+**Vastaus:** $2{,}0\,\text{s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa. Suurempi juuri $5{,}0 + 3{,}0 = 8{,}0\,\text{s}$ on hetki, jolloin bussi ohittaa juoksijan.
+**Järkevyys:** Juoksija on hetkellä $2{,}0\,\text{s}$ paikassa $-8{,}0\,\text{m} + 5{,}0\,\text{m/s} \cdot 2{,}0\,\text{s} = 2{,}0\,\text{m}$, ja bussi on paikassa $\tfrac12 \cdot 1{,}0\,\text{m/s}^2 \cdot (2{,}0\,\text{s})^2 = 2{,}0\,\text{m}$. Bussin nopeus on silloin vasta $2{,}0\,\text{m/s}$, joten juoksija on selvästi nopeampi, kuten saavuttamisessa pitääkin.
 
 ## fy4-12-L3-02
-**Annettu:** pyöräilijä $v = 6{,}0\,\text{m/s}$ tasaisesti; moottoripyörä $x_0 = 0$, $v_0 = 0$, $a$ tuntematon vakio; ohitus hetkellä $t = 8{,}0\,\text{s}$; molemmat ovat hetkellä $t = 0$ viivalla
-**Kysytty:** kiihtyvyys $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Ohitushetkellä paikat ovat samat: $\tfrac12\,a\,t^2 = v\,t$. Tässä tunnetaan ohitushetki ja haetaan kiihtyvyys, joten yhtälö ratkaistaan kiihtyvyydelle. Ratkaisu $t = 0$ on lähtö eikä kuulu tähän kysymykseen.
-**Kaava:** $\tfrac12\,a\,t^2 = v\,t$. Jaetaan puolittain $t$:llä ($t \neq 0$): $\tfrac12\,a\,t = v$, joten $a = \dfrac{2v}{t}$
+**Annettu:** bussi $x_{0\text{B}} = 0$, $v_0 = 0$, $a = 0{,}50\,\text{m/s}^2$; juoksija $x_{0\text{R}} = -20\,\text{m}$, $v = 4{,}0\,\text{m/s}$ (tasainen); molemmat samaan suuntaan
+**Kysytty:** saavuttaako juoksija bussin, ja pienin välimatka $s_\text{min}$ yksikössä $\text{m}$
+**Periaate:** Kaksi ajatusta: kohtaaminen vaatii ei-negatiivisen juurrettavan, ja jos kohtaamista ei ole, välimatka on pienimmillään, kun nopeudet ovat yhtä suuret (ennen sitä juoksija lähestyy, sen jälkeen bussi etääntyy).
+**Kaava:** Kohtaaminen $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$ antaa $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$, ja juurrettava on $v^2 + 2\,a\,x_{0\text{R}}$. Nopeudet ovat yhtä suuret, kun $a\,t = v$, eli $t = \dfrac{v}{a}$. Välimatka on $s = x_\text{B} - x_\text{R} = \tfrac12\,a\,t^2 - x_{0\text{R}} - v\,t$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $a = \dfrac{2 \cdot 6{,}0\,\text{m/s}}{8{,}0\,\text{s}} = \dfrac{12\,\text{m/s}}{8{,}0\,\text{s}} = 1{,}5\,\text{m/s}^2$
-**Vastaus:** $1{,}5\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Moottoripyörän nopeus ohitushetkellä on $a\,t = 1{,}5\,\text{m/s}^2 \cdot 8{,}0\,\text{s} = 12\,\text{m/s}$, kaksi kertaa pyöräilijän $6{,}0\,\text{m/s}$. Paikat ovat samat: $\tfrac12 \cdot 1{,}5\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 = 48\,\text{m}$ ja $6{,}0\,\text{m/s} \cdot 8{,}0\,\text{s} = 48\,\text{m}$. Kiihtyvyys on noin kymmenesosa putoamiskiihtyvyydestä, mikä on rauhallista liikkeellelähtöä.
+**Sijoitus:** Juurrettava: $(4{,}0\,\text{m/s})^2 + 2 \cdot 0{,}50\,\text{m/s}^2 \cdot (-20\,\text{m}) = 16 - 20 = -4\,\text{m}^2/\text{s}^2 < 0$, joten juoksija ei saavuta bussia. Nopeudet ovat yhtä suuret hetkellä $t = \dfrac{4{,}0\,\text{m/s}}{0{,}50\,\text{m/s}^2} = 8{,}0\,\text{s}$. Silloin $s_\text{min} = \tfrac12 \cdot 0{,}50\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 + 20\,\text{m} - 4{,}0\,\text{m/s} \cdot 8{,}0\,\text{s} = 16\,\text{m} + 20\,\text{m} - 32\,\text{m} = 4{,}0\,\text{m}$
+**Vastaus:** Juoksija ei saavuta bussia; hän pääsee lähimmillään $4{,}0\,\text{m}$ päähän, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** Hetkellä $8{,}0\,\text{s}$ bussi on paikassa $16\,\text{m}$ ja juoksija paikassa $-20\,\text{m} + 32\,\text{m} = 12\,\text{m}$, joten väliä on $4{,}0\,\text{m}$. Hetkillä $6{,}0\,\text{s}$ ja $10\,\text{s}$ väli on $5{,}0\,\text{m}$, joten $4{,}0\,\text{m}$ on pienin. Väli ei mene nollaan.
 
 ## fy4-12-L3-03
 **Annettu:** skootteri $x_0 = 0$, $v_0 = 0$, $a = 2{,}0\,\text{m/s}^2$ positiiviseen suuntaan; pyöräilijä $x_0 = 180\,\text{m}$, nopeus $-8{,}0\,\text{m/s}$ (vastaan, tasainen)

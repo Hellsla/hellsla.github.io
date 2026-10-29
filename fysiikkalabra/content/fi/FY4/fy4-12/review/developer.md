@@ -1,14 +1,8 @@
 VERDICT: DONE
 
-Draft, round 1. check_lesson.py: every line ok (layout 360, 768, 1280).
-
-- meta.json: glossary adds kohtaaminen, ohitus.
-- lesson.md: Miksi question, hero, Ydinajatus (tilanne, kohtaus), Kaava: Kohtaamisehto (kaava, vt), staged example (car, cyclist 16 m ahead: 8,0 s, 64 m), misconception, summary.
-- inquiry.json: hook, predictions 1-3, sim, experiments 1-2 (3 optional), ei-kohtaa interpret, conclusion explain, example, error-spotting, transfer, three checks, exit.
-- exit-ticket.json: three questions.
-- exercises/exercises.json and solutions.md: 5/4/3 with complete solutions; two figure tasks (fy4-12/kaksi-karrya).
-- lessons/FY4/fy4-12: answers.py, lesson-answers.py, figures.py (hero, 7 figures), sim-spec.md.
-- assets/sims/fy4/fy4-12/sim.js, tests/sims/fy4-12.json (105 assertions), lang/fi.json sims.fy4-12.
-- glossary.json: two terms, fy4-12 added to paikka and kiihtyvyys.
-
-Colours: velocity blue, acceleration orange, bodies green and brown. Not mine: docs/coverage/FY4.md is stale and docs/figures/catalog.json was rebuilt.
+Round 1 fixes (all Blocking and the listed Polish items).
+- lesson.md: summary and misconception now state the conditions (every positive root is a meeting, up to two; largest gap only when the one behind starts slower); units in LaTeX; "jos ne lähtevät eri paikoista"; one sentence after the vt figure answering "vasta kaukana"; worked example names the coefficients A, B, C.
+- inquiry.json: learn goal 3 reworded; contribution and check-3 conditions added; "x_B − x_A (m)" labels; exp-2 loses the v_B column (its solution adjusted). Exp-3 keeps its numbers; L3-01 changed instead.
+- exercises.json, answers.py, solutions.md: L1-05 (B's velocity given, position asked), L2-02/L3-03 "kohtaavat" and named movers, L2-03 now a (t,x) sketch-and-explain task, L3-01 new data (2,0 s), L3-02 now "does the runner reach the bus? closest gap 4,0 m", L2-04 answer wording, L1-04 "vaakasuoran".
+- sim.js: 14 px labels at every width, arrow/graph/marker strokes scaled on narrow screens, thinned y ticks, legend moved. Kept case 5 drawing.
+check_lesson: all ok.

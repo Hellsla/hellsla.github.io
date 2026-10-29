@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "contribution": "Kahden kappaleen liike samassa koordinaatistossa: **kohtaaminen** on hetki, jolloin $x_\\text{A}(t) = x_\\text{B}(t)$, ja se ratkaistaan paikkafunktioista tai luetaan $(t, x)$-kuvaajien leikkauspisteestä. Kohtaamisessa vain paikat ovat samat, ei nopeudet: ohittaja on ohitushetkellä nopeampi, ja etumatka on suurimmillaan nopeuksien ollessa yhtä suuret.",
+  "contribution": "Kahden kappaleen liike samassa koordinaatistossa: **kohtaaminen** on hetki, jolloin $x_\\text{A}(t) = x_\\text{B}(t)$, ja se ratkaistaan paikkafunktioista tai luetaan $(t, x)$-kuvaajien leikkauspisteestä. Kohtaamisessa vain paikat ovat samat, ei nopeudet: ohittaja on ohitushetkellä nopeampi, ja kun takana oleva lähtee hitaampana, etumatka on suurimmillaan nopeuksien ollessa yhtä suuret.",
   "learn": [
     "laskemaan kahden kappaleen kohtaamishetken ja kohtaamispaikan paikkafunktioiden avulla.",
     "lukemaan kohtaamisen $(t, x)$-kuvaajien leikkauspisteestä.",
-    "selittämään, miksi kappaleiden nopeudet ovat kohtaamishetkellä yleensä erisuuret."
+    "selittämään, miten kappaleiden nopeudet liittyvät kohtaamiseen."
   ],
   "prior": [
     "Tasaisen liikkeen paikka $x = x_0 + v\\,t$ ja $(t, x)$-kuvaaja (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
@@ -175,7 +175,7 @@
         },
         {
           "key": "gap",
-          "label": "x_B − x_A"
+          "label": "x_B − x_A (m)"
         }
       ],
       "min": 2,
@@ -238,12 +238,8 @@
           "label": "v_A (m/s)"
         },
         {
-          "key": "vB",
-          "label": "v_B (m/s)"
-        },
-        {
           "key": "gap",
-          "label": "x_B − x_A"
+          "label": "x_B − x_A (m)"
         }
       ],
       "min": 3,
@@ -268,7 +264,7 @@
             "feedback": "Tämä on ohituspaikka metreinä. Kysyttiin auton nopeutta, joka on sarakkeessa $v_\\text{A}$."
           }
         ],
-        "solution": "**Annettu:** taulukosta hetkellä $t = 8{,}0\\,\\text{s}$: $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$, $v_\\text{A} = 16\\,\\text{m/s}$ ja $v_\\text{B} = 6{,}0\\,\\text{m/s}$; auton kiihtyvyys $a = 2{,}0\\,\\text{m/s}^2$ ja alkunopeus nolla\n\n**Kysytty:** auton nopeus $v_\\text{A}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Ohitushetki on hetki, jolloin paikat ovat samat, eli rivi, jolla $x_\\text{B} - x_\\text{A} = 0$. Auton nopeus luetaan samalta riviltä. Auton kiihtyvyys on vakio, joten nopeus kasvaa tasaisesti.\n\n**Kaava:** $v = v_0 + a\\,t$, ja kun $v_0 = 0$, $v_\\text{A} = a\\,t$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä ja $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v_\\text{A} = 2{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m/s}$\n\n**Vastaus:** $16\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa; sama luku on taulukon riviltä.\n\n**Järkevyys:** Auton nopeus $16\\,\\text{m/s}$ on suurempi kuin pyöräilijän $6{,}0\\,\\text{m/s}$, kuten ohituksessa pitääkin. Se on myös yli kaksi kertaa pyöräilijän nopeus: auton on ensin kuitenkin ehdittävä tasoittaa etumatka, jonka pyöräilijä sai, kun auto oli hitaampi."
+        "solution": "**Annettu:** taulukosta hetkellä $t = 8{,}0\\,\\text{s}$: $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$ ja $v_\\text{A} = 16\\,\\text{m/s}$; auton kiihtyvyys $a = 2{,}0\\,\\text{m/s}^2$ ja alkunopeus nolla\n\n**Kysytty:** auton nopeus $v_\\text{A}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Ohitushetki on hetki, jolloin paikat ovat samat, eli rivi, jolla $x_\\text{B} - x_\\text{A} = 0$. Auton nopeus luetaan samalta riviltä. Auton kiihtyvyys on vakio, joten nopeus kasvaa tasaisesti.\n\n**Kaava:** $v = v_0 + a\\,t$, ja kun $v_0 = 0$, $v_\\text{A} = a\\,t$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä ja $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v_\\text{A} = 2{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m/s}$\n\n**Vastaus:** $16\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa; sama luku on taulukon riviltä.\n\n**Järkevyys:** Auton nopeus $16\\,\\text{m/s}$ on suurempi kuin pyöräilijän (tapauksen asetuksista) $6{,}0\\,\\text{m/s}$, kuten ohituksessa pitääkin. Se on myös yli kaksi kertaa pyöräilijän nopeus: auton on ensin kuitenkin ehdittävä tasoittaa etumatka, jonka pyöräilijä sai, kun auto oli hitaampi."
       }
     },
     {
@@ -304,7 +300,7 @@
         },
         {
           "key": "gap",
-          "label": "x_B − x_A"
+          "label": "x_B − x_A (m)"
         },
         {
           "key": "meetings",
@@ -542,7 +538,7 @@
       "type": "explain",
       "optional": true,
       "title": "3. Selitä",
-      "prompt": "Auto lähtee levosta pyöräilijän edestä. Selitä omin sanoin, milloin pyöräilijän etumatka on suurimmillaan ja miksi ohitus tapahtuu vasta sen jälkeen.",
+      "prompt": "Auto lähtee levosta, kun pyöräilijä on sen edellä. Selitä omin sanoin, milloin pyöräilijän etumatka on suurimmillaan ja miksi ohitus tapahtuu vasta sen jälkeen.",
       "criteria": [
         "Sanon, että etumatka kasvaa niin kauan kuin pyöräilijä on nopeampi kuin auto.",
         "Sanon, että etumatka on suurimmillaan hetkellä, jolloin nopeudet ovat yhtä suuret.",
