@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d7903dc10ead1d01
+CONTENT-HASH: 6019a8dfafd212b2
 
 ## Blocking
 
 ## Polish
-- The insulation is filled with the heat-flow orange, and a wavy heat line runs inside the casing, which suggests the insulation is hot or leaking heat. A neutral insulation colour (for example a light grey or yellow foam) would keep orange for heat flow.
+- None.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: high-voltage lines, and a cut-away of the district-heating supply (red) and return (blue) pipes in thick insulation. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: the redrawn hero: the insulation is now sand-coloured foam with no heat wave, so orange no longer suggests hot or leaking insulation; the red supply and blue return pipes and the thick insulation layer read at 360 px; the aria-label matches; no text in the image, figure palette.

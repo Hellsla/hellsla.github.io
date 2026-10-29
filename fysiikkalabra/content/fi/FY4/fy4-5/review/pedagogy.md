@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 594b6eb5250b5d9f
+CONTENT-HASH: b785d877da16108d
 
 ## Blocking
 
 ## Polish
-- The difference in sinking (about 15 px) is subtle and barely visible at 360 px; a slightly deeper rut for the standing sled would read better without giving the answer away.
-- The aria-label says "lapsi", but the puller has adult proportions.
+- The rope rises only gently; a slightly steeper angle would make "vinosti ylöspäin" more obvious at 360 px.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: a standing sled sunk in the snow and a sled pulled by a rope angled upwards with a shallower track; no force arrows and no point-particle diagram. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: the redrawn hero: the puller now has child proportions, and the standing sled is sunk 26 px against 2 px, so the difference is visible at 360 px without force arrows giving anything away; no point-particle diagram; the aria-label matches; no text in the image, figure palette.

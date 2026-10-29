@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5baa25c47b482961
+CONTENT-HASH: b0f66656afcb41be
 
 ## Blocking
 
 ## Polish
-- The hydropower plant reads as a house over the river; a visible dam wall with a water-level drop would make it recognisable.
-- The power lines are faint at 360 px; a slightly heavier stroke would show the shared grid.
+- The dam and the reservoir are small at 360 px, though the plant now reads as hydropower at 1200 px.
+- The power lines are faint at 360 px.
 
 ## Checked
-Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: nuclear, hydro, wind and fuel plants on one grid that feeds a city. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.
+batch delta review: the redrawn hero: a dam wall and a reservoir now make the hydropower plant recognisable, so the aria-label's "joen padolla" is true of the picture; all plants still join one grid; no text in the image, figure palette.
