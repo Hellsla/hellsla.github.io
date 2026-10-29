@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9b2ff7780f6a3d07
+CONTENT-HASH: 323719bbcc0ccf96
 
 ## Blocking
 
 ## Polish
-- virhe figure — the μ subscript of F_μ touches the friction arrowhead. Move the label a little up or left.
-- assets/sims/fy4/fy4-5/sim.js — at 390 px the force diagram stays small (labels about 7 px). Enlarge it or stack it under the tilannekuva on phones. This was not introduced by this change.
+- Worked-example figure — since N moved right, its label sits right next to the label of the dashed component T_y (they nearly touch). Move the N label left (e.g. lab=(-30, 6)).
+- Optional: add a sentence to lesson.md:154 telling students the rule they will be marked on: "Piirrä paino ja tukivoima vierekkäin, ei samalle suoralle." / "Draw the weight and the normal force side by side, not along one line."
+- virhe figure — the μ subscript of F_μ touches the friction arrowhead.
+- sim.js — at 390 px the force diagram is small (labels about 7 px). This predates the change.
 
 ## Checked
-- Delta 000c8ad0. `suunnat`: every panel now pairs a pictorial tilannekuva (box on floor, box on slope, hanging lamp, balloon) with a rectangle-only diagram without surfaces. The rotated rectangle on the slope follows the rule. Friction leaves the up-slope corner. Labels are clear of arrows. The aria-label matches.
-- Step 3 (lesson.md:60) now carries the push exception that the check-3 model uses.
-- Friction rule (lesson.md:63) is clear, natural Finnish, and matches the figures.
-- lesson.md:154 now states the pictorial tilannekuva as the rule, not an option.
-- pred-1 feedback correctly counts "kaksi voimaa ja pystykomponentti", so a component is no longer called a force.
-- check-3 criteria now match malli-tyonto: the push may end at the handle, and components are dashed if drawn.
-- The sim howto names the checkbox as it appears in the sim. The sim edit only moves the N and F_y labels apart.
-- From the first pass, still valid: no point model anywhere, colour rule taught and applied, hissi a–d with one error each and feedback that names it, staged example with the diagram first, a real draw task, fbd plan covered.
+- Delta e71366d4 (rule 5): in the worked example, N now starts at the bottom surface 20 units right of the centre, clearly beside G. In the balloon diagram, G and the buoyancy both start at the centre; they point opposite ways with different lengths, which is easy to read. N pushes down onto the top surface. lattia, rinne, lamppu, hissi and the models already had G at the centre and N at the surface, apart.
+- The text was not changed. The point-of-application paragraph (lesson.md:154) still says "weight from the centre, normal force from the contact surface", which matches the figures.
+- From the earlier passes, still valid: suunnat pairs a pictorial tilannekuva with a rectangle-only diagram in every panel, no point model anywhere, the colour rule is taught and applied, hissi a–d each have one error and feedback that names it, the example is staged with the diagram first, check-3 is a real draw task, the fbd plan is covered.
