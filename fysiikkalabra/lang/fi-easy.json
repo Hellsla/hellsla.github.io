@@ -152,6 +152,10 @@
     "own_answer": "Oma vastaus",
     "show_model": "Näytä mallivastaus ja arviointi",
     "model_answer": "Mallivastaus",
+    "drew_on_paper": "Olen piirtänyt voimakuvion paperille.",
+    "draw_notes": "Muistiinpanot (vapaaehtoinen): esimerkiksi voimien nimet",
+    "show_model_drawing": "Näytä mallikuvio ja arviointi",
+    "model_drawing": "Mallikuvio",
     "self_assess": "Arvioi oma vastauksesi",
     "nothing_locked": "ei mitään",
     "setup": "Alkutila:",
@@ -206,6 +210,7 @@
     "exp_reset": "Simulaatio ja taulukko nollattu.",
     "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös perustuu omiin havaintoihisi.",
     "explain_write_first": "Kirjoita ensin oma vastauksesi. Sen jälkeen voit verrata sitä mallivastaukseen.",
+    "explain_draw_first": "Piirrä ensin voimakuvio itse paperille. Rastita sitten kohta. Sen jälkeen voit verrata kuviota mallikuvioon.",
     "copy_no_rows": "(ei mittauksia)",
     "copy_conclusion": "Johtopäätös",
     "copy_not_written": "(ei vielä kirjoitettu)",
@@ -901,6 +906,12 @@
     "uncertainty": "Mittauksen epävarmuus on arvioitu.",
     "error_sources": "Tärkeimmät virhelähteet on nimetty. On myös kerrottu, miten ne vaikuttavat tulokseen.",
     "assumptions": "Oletus on nimetty. On myös perusteltu, miten se vaikuttaa tulokseen.",
-    "conclusion": "Johtopäätös vastaa kysymykseen ja perustuu aineistoon."
+    "conclusion": "Johtopäätös vastaa kysymykseen ja perustuu aineistoon.",
+    "fbd_object": "Kappale on valittu selvästi. Kuviossa on vain ne voimat, jotka vaikuttavat tähän kappaleeseen.",
+    "fbd_forces": "Kaikki kappaleeseen vaikuttavat voimat ovat mukana. Kuviossa ei ole keksittyjä voimia.",
+    "fbd_directions": "Jokainen voima osoittaa oikeaan suuntaan.",
+    "fbd_representation": "Voimanuolet lähtevät kappaleesta sopivasta kohdasta. Jokaisella voimalla on oma selvä nimi.",
+    "fbd_magnitudes": "Nuolten pituudet ovat oikeassa suhteessa, kun suuruudet tiedetään. Voimia ei ole sekoitettu komponentteihin, nopeuteen tai kiihtyvyyteen.",
+    "fbd_equations": "Liikeyhtälöt on tehty voimakuviosta. Akselit ja positiivinen suunta on valittu, ja etumerkit ovat oikein."
   }
 }

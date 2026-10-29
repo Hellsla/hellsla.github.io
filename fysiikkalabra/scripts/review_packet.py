@@ -142,6 +142,18 @@ def guardrails():
     return "\n## Physics guardrails (docs/physics-guardrails.md)\n" + g.read_text().split("\n", 1)[1] + "\n" if g.exists() else ""
 
 
+def force_rules(lid):
+    """The force-diagram standard (docs/force-diagrams.md, teacher 2026-10-29) for a lesson whose curriculum entry plans
+    force-diagram practice ("fbd"): its writer and both reviewers judge every diagram against it."""
+    g = ROOT / "docs/force-diagrams.md"
+    try: plan = next(l.get("fbd") for l in courses.course(courses.course_of(lid)).get("lessons", []) if l["id"] == lid)
+    except StopIteration: plan = None
+    if not plan or not g.exists(): return ""
+    return (f"\n## Force diagrams (docs/force-diagrams.md)\nThis lesson's plan: {', '.join(plan)} (\"fbd\" tags on its tasks; "
+            "`python3 scripts/coverage.py FY4 --check` fails while a planned skill has no task). Every force figure is drawn with scripts/fbd.py.\n"
+            + g.read_text().split("\n", 1)[1] + "\n")
+
+
 def exercise_rules(role, lid):
     """What a reviewer of the exercise set judges, and where its report goes."""
     what = ("1. Every task's physics: the right law for the situation, its conditions met, data realistic (units, magnitudes, signs), inside the course's central contents and scope notes above and what the brief's lesson teaches.\n"
@@ -155,7 +167,7 @@ def exercise_rules(role, lid):
             "3. Every solution can be followed step by step by a student who could not solve the task (the principle explained, not just named; nothing skipped).\n"
             "4. Finnish: grammar, glossary terms, case after number+unit (80 N:n voimalla), reading level; give the corrected sentence.\n"
             "5. Phone usability of the exercise captures listed above: nothing clipped, a long calculation still readable at 360 px.")
-    return ((guardrails() if role == "science" else "") + f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
+    return ((guardrails() if role == "science" else "") + force_rules(lid) + f"\n## What you judge (only the exercise set; the deterministic checks above are not repeated)\n{what}\n\n"
             f"## Report: write `exercises/review/{role}.md` (in the lesson folder), under 400 words, findings only\n"
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid} --exercises>` run at the start and again at the end "
             f"(if it changed, the exercises were edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
@@ -181,7 +193,7 @@ def reviewer_rules(role, lid, both=False):
             "6. Phone usability from the captures: nothing clipped, controls and readout understandable. The inquiry mechanics (gating, locking, "
             "reveal, option feedback, 360 px) are already tested (checks above); open the preview in Playwright only for what a capture cannot show, "
             "such as whether the simulation makes sense when you move it.")
-    return ((guardrails() if role == "science" else "") + f"\n## What you judge (only this; the deterministic checks above are not repeated)\n{what}\n\n"
+    return ((guardrails() if role == "science" else "") + force_rules(lid) + f"\n## What you judge (only this; the deterministic checks above are not repeated)\n{what}\n\n"
             f"## Report: write `review/{role}.md`, under 400 words, findings only\n"
             f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/reviews.py hash {lid}>` run at the start and again at the end "
             f"(if it changed, the lesson was edited: redo the review). Then `## Blocking` (FAIL if and only if non-empty; each `file:line — problem — fix`), "
@@ -254,7 +266,7 @@ def exercise_packet(folder, role, fix=False):
         mode = "fix" if fix else "write"
         out, meta = header(folder, role, mode, "exercises")
         out += ("\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope") + "\n\n"
-                + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n" + guardrails())
+                + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Symbolic first", "Complete solutions", "Every language version") + "\n" + guardrails() + force_rules(lid))
         out += exercise_brief(folder) + figures_used(folder, role) + figures_available(folder)
         out += (f"\n## Where files go\n- `{ex.relative_to(ROOT)}/exercises.json` (schema: README \"Exercise schema\") and `{ex.relative_to(ROOT)}/solutions.md` (one `## <id>` block each)\n"
                 f"- `{courses.lesson_rel(folder, 'answers.py')}`: the exercises' answers, one commented line per step, printing `{{id: value}}`\n"
@@ -310,7 +322,7 @@ def packet(folder, role, fix=False):
         has_sim = d is not None or courses.lesson_file(folder, "sim-spec.md").exists() or meta.get("sim")
         out += "\n## Rules (NOTES.md; CLAUDE.md is in your context)\n" + sections("NOTES.md", "1. Maths in LaTeX", "2. Numbers, Finnish, scope", "3. Lesson form (human decisions 2026-10-25)", "5. Inquiry sequence (teacher's brief 2026-10-25)") + "\n"
         if has_sim: out += "\n" + sections("NOTES.md", "4. Simulations and pages") + "\n"
-        out += guardrails()
+        out += guardrails() + force_rules(lid)
         own = c["paths"]["sims"] / lid
         out += figures_available(folder)
         import assessment                              # the chapter's checks, figure tasks, exit ticket and repeats (NOTES.md §11)

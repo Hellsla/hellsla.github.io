@@ -265,6 +265,9 @@ def check_exercises(L, folder):
                 if k not in e: L.err("exercises.json", line, f"{eid}: missing {k}")
             if not str(eid).startswith(f"{lid}-L{lvl[-1]}-"): L.err("exercises.json", line, f"id {eid} does not match {lid}-L{lvl[-1]}-NN")
             if e.get("level") != int(lvl[-1]): L.err("exercises.json", line, f"{eid}: level field is {e.get('level')}, in {lvl}")
+            if "fbd" in e and e["fbd"] not in ("identify", "select", "error", "draw", "equations"):
+                L.err("exercises.json", line, f"{eid}: fbd is one of identify, select, error, draw, equations (docs/force-diagrams.md)")
+            if e.get("fbd") == "draw" and not e.get("model_figure"): L.err("exercises.json", line, f"{eid}: a drawing task shows its model diagram in the solution (\"model_figure\": \"<id>\")")
             tol = e.get("tolerance")
             if not isinstance(tol, (int, float)) or tol <= 0: L.err("exercises.json", line, f"{eid}: tolerance must be a positive number")
             text = e.get("text", "")
@@ -351,7 +354,7 @@ def check_chapter_refs(L, name, text):
     paine', not 'oppitunnilla fy3-4' or '(fy3-4)' or 'edellisellä oppitunnilla'. Exercise ids ("id": "fy3-4-L1-01")
     and solution headings are not shown as text and are skipped, and so is a figure id ("figure": "fy3-4/pressure-depth")."""
     for i, ln in enumerate(text.splitlines(), 1):
-        if re.match(r"\s*(\"id\"|\"figure\"|## fy)", ln): continue
+        if re.match(r"\s*(\"id\"|\"(?:model_)?figure\"|## fy)", ln): continue
         for m in CHAPTER_REF.finditer(ln):
             L.page(name, i, f"\"{m.group(0)}\": name the chapter, not the lesson id or 'the previous lesson' (teacher's rule 2026-10-26)")
 

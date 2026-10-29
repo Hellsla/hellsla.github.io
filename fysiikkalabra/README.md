@@ -104,6 +104,8 @@ lessons/<COURSE>/<id>/answers.py                    every exercise answer (lesso
 ```
 Optional `"core": true` marks an exercise as a core exercise (*Ydintehtävä*, teacher 2026-10-29): the page tags it and the exercise path says core first, then extra practice, then the challenging level. Without any `core` flag the first two exercises of levels 1 and 2 are core (build.py `core_ids`).
 
+Force-diagram tasks (docs/force-diagrams.md, teacher 2026-10-29): `"fbd": "identify" | "select" | "error" | "draw" | "equations"` says which force-diagram skill an exercise practises (`coverage.py` checks the lesson's plan in curriculum.json). A drawing task (`"fbd": "draw"`) asks the student to draw on paper and shows its model diagram, `"model_figure": "<owner>/<name>"`, at the top of the solution.
+
 `answers.py` in `lessons/<course>/<id>/` computes every exercise answer and prints `{id: value}`; the lint compares it with
 `exercises/exercises.json`. The page checks a typed answer within `tolerance` in the browser; nothing is stored or sent.
 Every exercise shows its complete worked solution from `solutions.md` behind its own *Näytä ratkaisu* button (`meta.solutions` is `all`, teacher 2026-10-27); `scripts/check_solutions.py --all` lists any missing or incomplete solution.

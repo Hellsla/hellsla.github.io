@@ -255,7 +255,8 @@
     btn.addEventListener('click', () => {
       const m = missing();
       if (m.length) { say(msg('explain_measure_first', { experiments: m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') })); return; }
-      if (ta.value.trim().length < MIN_CHARS) { say(msg('explain_write_first')); ta.focus(); return; }
+      const drew = ex.querySelector('.drew input');   // a drawing task: drawn on paper, the notes field is optional
+      if (drew ? !drew.checked : ta.value.trim().length < MIN_CHARS) { say(msg(drew ? 'explain_draw_first' : 'explain_write_first')); (drew || ta).focus(); return; }
       say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
     });
     // own answer → model answer → observable criteria → what is missing → where to practise (teacher 2026-10-28)

@@ -59,6 +59,12 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `exercises` | optional `text` | the three exercise levels (at most one) |
 | `exit` | optional `text` | the exit ticket (at most one) |
 
+Force diagrams (teacher 2026-10-29, docs/force-diagrams.md):
+- `"fbd": "identify" | "select" | "error" | "draw" | "equations"` on any task names the force-diagram skill it practises; `coverage.py` compares the tags with the lesson's plan in curriculum.json.
+- A `choice` option may carry its own `"figure": "<id>"`, and `layout: "figures"` shows the options as figures side by side (every option then has one). The figures' descriptions say what is drawn, never which is right.
+- An `explain` with `"draw": true` is a drawing task: the student draws on paper and ticks *Olen piirtänyt voimakuvion paperille* (a notes field is optional), then sees `"model_figure": "<id>"` above the `model` text and the criteria.
+- A criterion may be a shared one, `{"key": "fbd_forces", "detail": "…"}` (lang "criteria": `fbd_object`, `fbd_forces`, `fbd_directions`, `fbd_representation`, `fbd_magnitudes`, `fbd_equations`), with the task's specifics in `detail`.
+
 In the `tarkista` stage a wrong `choice` or `numeric` answer also shows where to practise (teacher 2026-10-29): by default the shared sentence `inquiry.check_practice` pointing at the chapter's exercises, or the activity's own optional `"practice"` text (Markdown, e.g. a link to a named exercise level). It is a suggestion only; nothing is graded or stored.
 
 Rules the validator enforces: `version` is 1; `contribution` is non-empty; `learn` holds two or three goals of at most about 20 words each, shown on the page under "Tällä tunnilla opit" and completing that sentence ("laskemaan …", English "calculate …"; `scripts/objectives.py`, teacher 2026-10-29) (teacher 2026-10-27; `prior` shows as the list "Pohjatiedot", its "(luku …)" as a link to that chapter); ids are unique; every choice has

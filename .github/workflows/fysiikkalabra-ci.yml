@@ -40,6 +40,8 @@ jobs:
       - run: python scripts/build.py --all
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
         run: python scripts/test_svgids.py && python scripts/svgids.py site
+      - name: force diagrams obey their physics (scripts/fbd.py, docs/force-diagrams.md)
+        run: python scripts/test_fbd.py
       - name: every lesson has Edellinen luku / Seuraava luku in the teaching order (teacher 2026-10-29)
         run: python scripts/test_chapter_nav.py site
       - run: python scripts/test_reviews.py

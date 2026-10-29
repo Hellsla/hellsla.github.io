@@ -23,6 +23,11 @@ formula is not independent model choice) is why graph construction counts only f
 graph_points criteria, and why the pedagogy reviewer judges the report's gaps. A gap is a competency with no
 independent production in the course, or none assessed in Sovella itsenäisesti; fewer than THIN rubric points in
 Sovella itsenäisesti is reported as thin evidence.
+
+Force diagrams (docs/force-diagrams.md, teacher 2026-10-29): a lesson's curriculum entry may plan the force-diagram
+skills it practises, "fbd": ["identify", "select", "error", "draw", "equations"], and its tasks say which one each
+practises ("fbd": "draw" on an inquiry activity, an exercise or an exit-ticket question). The report then has a
+section "Voimakuvio" per lesson, and --check fails when a built lesson lacks a planned skill.
 """
 import json, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -67,6 +72,51 @@ def evidence(code):
     return out
 
 
+FBD = ("identify", "select", "error", "draw", "equations")
+FBD_FI = {"identify": "tunnistaa voimat", "select": "valitsee oikean kuvion", "error": "löytää virheen", "draw": "piirtää itse", "equations": "liikeyhtälöt kuviosta"}
+
+
+def fbd_tags(code):
+    """{lesson id: {tag: [task ids]}} of the course's built lessons: the force-diagram skill each task practises."""
+    out = {}
+    for lesson in courses.course(code).get("lessons", []):
+        f = ROOT / "content" / i18n.SOURCE / code / lesson["id"]
+        if not (f / "meta.json").is_file(): continue
+        tags = out.setdefault(lesson["id"], {})
+        def add(x, tid):
+            if isinstance(x, dict) and x.get("fbd") in FBD: tags.setdefault(x["fbd"], []).append(tid)
+        if (f / "inquiry.json").is_file():
+            for a in json.loads((f / "inquiry.json").read_text())["activities"]: add(a, a["id"]); add(a.get("question"), a["id"])
+        if (f / "exercises" / "exercises.json").is_file():
+            for items in json.loads((f / "exercises" / "exercises.json").read_text()).values():
+                for e in items: add(e, e["id"])
+        if (f / "exit-ticket.json").is_file():
+            et = json.loads((f / "exit-ticket.json").read_text())
+            for i, q in enumerate(et if isinstance(et, list) else et.get("questions", [])): add(q, f"exit-{i + 1}")
+    return out
+
+
+def fbd_missing(code):
+    """[(lesson id, planned tag)] that a built lesson plans in curriculum.json but no task practises."""
+    tags = fbd_tags(code)
+    return [(l["id"], t) for l in courses.course(code).get("lessons", []) if l["id"] in tags for t in l.get("fbd", []) if not tags[l["id"]].get(t)]
+
+
+def fbd_section(code):
+    lessons = [l for l in courses.course(code).get("lessons", []) if l.get("fbd")]
+    if not lessons: return []
+    tags = fbd_tags(code)
+    lines = ["", "## Voimakuvio", "", "Suunnitelma `curriculum.json` (\"fbd\") ja tehtävät, joiden \"fbd\" kertoo harjoiteltavan taidon "
+             "(docs/force-diagrams.md). Monivalinta yksin ei osoita, että oppilas osaa piirtää voimakuvion: jokaisessa voimakuvioluvussa on piirrä itse -tehtävä.", "",
+             "| Luku | " + " | ".join(FBD_FI[t] for t in FBD) + " |", "|---|" + "---|" * len(FBD)]
+    for l in lessons:
+        got = tags.get(l["id"])
+        cells = [("–" if t not in l["fbd"] else "suunniteltu") if got is None else
+                 (str(len(got.get(t, []))) if got.get(t) else ("**puuttuu**" if t in l["fbd"] else "–")) for t in FBD]
+        lines.append(f"| {l['title']}{'' if got is not None else ' (ei vielä rakennettu)'} | " + " | ".join(cells) + " |")
+    return lines
+
+
 def report(code):
     T = i18n.T(i18n.SOURCE); fw = practice.framework()["competencies"]
     ev = evidence(code); titles = {l["id"]: l["title"] for l in courses.course(code).get("lessons", [])}
@@ -100,12 +150,13 @@ def report(code):
         lines.append(f"| {title} | " + " | ".join(f"{sum(e[2] == c for e in row)}" + ("*" if any(e[2] == c and e[4] for e in row) else "") for c in fw) + " |")
     lines += ["", "\\* = mukana itsenäistä tuottamista (tason 3 tehtävä tai vihjeetön lasku).", "",
               "## Aukot", ""] + ([f"- {g}" for g in gaps] or ["- Ei aukkoja tällä tarkkuudella; pedagogiikkatarkastaja arvioi, ovatko tehtävät aidosti itsenäisiä."])
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines + fbd_section(code)) + "\n"
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    codes = practice.courses_with() if "--all" in a else [x for x in a if not x.startswith("--")]
+    fbd_courses = [c for c in courses.codes() if any(l.get("fbd") for l in courses.course(c).get("lessons", []))]
+    codes = list(dict.fromkeys(practice.courses_with() + fbd_courses)) if "--all" in a else [x for x in a if not x.startswith("--")]
     if not codes: sys.exit(__doc__)
     bad = 0
     for code in codes:
@@ -113,6 +164,8 @@ if __name__ == "__main__":
         if "--check" in a:
             ok = out.is_file() and out.read_text() == text; bad += not ok
             print(("OK   " if ok else "STALE ") + str(out.relative_to(ROOT)) + ("" if ok else f" (python scripts/coverage.py {code})"))
+            for lid, t in fbd_missing(code):
+                bad += 1; print(f"MISSING {lid}: plans the force-diagram skill \"{t}\" but no task has \"fbd\": \"{t}\" (docs/force-diagrams.md)")
         else:
             out.parent.mkdir(parents=True, exist_ok=True); out.write_text(text); print("wrote", out.relative_to(ROOT))
     sys.exit(1 if bad else 0)

@@ -314,6 +314,11 @@ ul.choices label:has(input:focus-visible){outline:2px solid var(--accent);outlin
 ul.choices input:disabled+span{color:var(--ink-2)}ul.choices input:checked:disabled+span{color:var(--ink);font-weight:600}
 fieldset.choice.models ul.choices{display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
 fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;height:100%;box-sizing:border-box}
+fieldset.choice.figures ul.choices{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+fieldset.choice.figures ul.choices label{height:100%;box-sizing:border-box}fieldset.choice.figures ul.choices label>span{flex:1;min-width:0}
+fieldset.choice.figures .task-fig{margin:.3rem 0 0}
+.explain .drew{display:flex;gap:.6rem;align-items:flex-start;min-height:44px;padding:.5rem 0;cursor:pointer}.explain .drew input{margin:.25rem 0 0;width:1.15rem;height:1.15rem;flex:none;accent-color:var(--accent)}
+.crit-detail{color:var(--ink-2)}
 
 /* level 3: inside a task. Tinted panels, 15–16 px, no heading weight */
 .feedback{margin:.4rem 0 .2rem 1.6rem;padding:.55rem .9rem;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:var(--fs-inner)}
