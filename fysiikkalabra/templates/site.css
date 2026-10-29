@@ -103,11 +103,11 @@ article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;backgr
 .tagline{font:500 clamp(1.35rem,3.2vw,1.7rem)/1.25 var(--serif);color:var(--accent-deep);margin:-.4rem 0 .6rem}
 /* the learning model (teacher 2026-10-29): the six stages in order, a numbered row that wraps, then a short start guide */
 .path h2,.start h2{margin-top:1.6rem}
-.steps{list-style:none;counter-reset:step;padding:0;margin:.8rem 0;display:grid;grid-template-columns:1fr;gap:.6rem}
-@media (min-width:40rem){.steps{grid-template-columns:repeat(2,1fr)}}@media (min-width:64rem){.steps{grid-template-columns:repeat(3,1fr)}}
-.steps li{counter-increment:step;margin:0;display:flex;flex-direction:column;gap:.15rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem .8rem;font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
-.steps strong{font:700 var(--fs-h3)/1.25 var(--sans);color:var(--ink)}
-.steps strong::before{content:counter(step) ". ";color:var(--accent-deep)}
+.path-steps{list-style:none;counter-reset:step;padding:0;margin:.8rem 0;display:grid;grid-template-columns:1fr;gap:.6rem}
+@media (min-width:40rem){.path-steps{grid-template-columns:repeat(2,1fr)}}@media (min-width:64rem){.path-steps{grid-template-columns:repeat(3,1fr)}}
+.path-steps li{counter-increment:step;margin:0;display:flex;flex-direction:column;gap:.15rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem .8rem;font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
+.path-steps strong{font:700 var(--fs-h3)/1.25 var(--sans);color:var(--ink)}
+.path-steps strong::before{content:counter(step) ". ";color:var(--accent-deep)}
 .start ul{max-width:44rem;margin:.6rem 0 0;padding-left:1.2rem;font-size:var(--fs-ui);line-height:1.5}
 .start li{margin:.3rem 0}.start li::marker{color:var(--accent)}
 .card .status{display:inline-block;margin-left:.35rem;padding:.05rem .5rem;border-radius:999px;font-size:.75rem;font-weight:700;border:1px solid var(--line);color:var(--ink-2)}

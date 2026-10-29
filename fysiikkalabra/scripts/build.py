@@ -504,7 +504,7 @@ def build_language(lang):
         f'<p class="lead">{T("site.home_lead")}</p>'
         + latest + '</section>'
         # the learning model with the stage names the lessons use (lang inquiry.stage_*), then a short start guide
-        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2><ol class="steps">'
+        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2><ol class="path-steps">'
         + "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
         + '</ol></section>'
         + f'<section class="start" aria-labelledby="h-start"><h2 id="h-start">{T("site.home_start")}</h2><ul>'
