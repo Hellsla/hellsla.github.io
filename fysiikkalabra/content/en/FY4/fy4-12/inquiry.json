@@ -1,0 +1,557 @@
+{
+  "version": 1,
+  "contribution": "The motion of two bodies in the same coordinate system: a **meeting** is the moment when $x_\\text{A}(t) = x_\\text{B}(t)$, and it is solved from the position functions or read from the intersection of $(t, x)$ graphs. In a meeting only the positions are equal, not the velocities: the overtaking body is faster at the moment of overtaking, and when the one behind starts slower, the lead is greatest when the velocities are equal.",
+  "learn": [
+    "calculate the time and place of a meeting of two bodies using position functions.",
+    "read a meeting from the intersection of $(t, x)$ graphs.",
+    "explain how the velocities of the bodies are related to a meeting."
+  ],
+  "prior": [
+    "Position in uniform motion $x = x_0 + v\\,t$ and the $(t, x)$ graph (chapter *Position, velocity and uniform motion as graphs*)",
+    "Position in uniformly accelerated motion $x = x_0 + v_0 t + \\tfrac12 a t^2$ (chapter *Acceleration and uniformly accelerated motion*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The traffic light turns green. A car that was standing at the stop line starts moving and accelerates uniformly. At the same moment a cyclist who is $16\\,\\text{m}$ ahead of the line rides in the same direction at a constant velocity of $6.0\\,\\text{m/s}$. The car accelerates all the time, but the cyclist is still ahead for a long time.",
+      "question": "When and where does the car catch up with the cyclist, and which of them is faster then?"
+    },
+    {
+      "id": "pr-paikka",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Recall: position of an accelerating body",
+      "prompt": "A car starts from rest and accelerates uniformly at $2.0\\,\\text{m/s}^2$. What is the displacement of the car from its starting place after $5.0\\,\\text{s}$?",
+      "choices": [
+        {
+          "text": "$25\\,\\text{m}$",
+          "feedback": "Correct. The initial velocity is zero, so $x = \\tfrac12\\,a\\,t^2 = \\tfrac12 \\cdot 2.0\\,\\text{m/s}^2 \\cdot (5.0\\,\\text{s})^2 = 25\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "$50\\,\\text{m}$",
+          "feedback": "The half is missing here: $a\\,t^2 = 50\\,\\text{m}$. The velocity grows from zero, so the average velocity is only half of the final velocity, and the displacement is half of what the final velocity would give."
+        },
+        {
+          "text": "$10\\,\\text{m}$",
+          "feedback": "The product $a\\,t = 10\\,\\text{m/s}$ is the velocity of the car at $5.0\\,\\text{s}$, not the displacement. The unit of displacement is the metre, not metres per second."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: meeting head-on",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Body A starts from $10\\,\\text{m}$ and moves uniformly at $4.0\\,\\text{m/s}$ in the positive direction. Body B starts at the same moment from $70\\,\\text{m}$ and moves uniformly at $2.0\\,\\text{m/s}$ in the opposite direction. Where do the bodies meet?",
+      "choices": [
+        {
+          "text": "Halfway between the starting places, at $40\\,\\text{m}$, because each has been moving for the same time.",
+          "feedback": "Moving for the same time does not put the meeting in the middle: the faster body gets farther in the same time. With the values of the model the bodies meet at $50\\,\\text{m}$, and A has then travelled $40\\,\\text{m}$ but B only $20\\,\\text{m}$."
+        },
+        {
+          "text": "Closer to the starting place of B than to that of A, because A moves faster and gets farther in the same time.",
+          "feedback": "The values of the model support this: the bodies meet at $10\\,\\text{s}$ at the place $50\\,\\text{m}$. A has then travelled $4.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 40\\,\\text{m}$ and B $2.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 20\\,\\text{m}$. In the same time the distance travelled is directly proportional to the velocity.",
+          "correct": true
+        },
+        {
+          "text": "Closer to the starting place of A than to that of B, because the slower B gets less far and A meets it already at the start.",
+          "feedback": "The slower B travels less far, so the place of the meeting is closer to the starting place of B. A is faster and by the time of the meeting has travelled the longer distance, $40\\,\\text{m}$ and not $20\\,\\text{m}$."
+        },
+        {
+          "text": "They do not meet, because their velocities are different.",
+          "feedback": "Different velocities do not prevent a meeting. The bodies come toward each other, so the distance between them keeps decreasing and becomes zero: with the values of the model at $10\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: velocities at the moment of overtaking",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "A car starts from rest with an acceleration of $2.0\\,\\text{m/s}^2$. A cyclist is $16\\,\\text{m}$ ahead of the car and rides at a constant velocity of $6.0\\,\\text{m/s}$. The car catches up with the cyclist and overtakes her. How do the velocities of the bodies compare at the moment of overtaking?",
+      "choices": [
+        {
+          "text": "The velocity of the car is smaller than that of the cyclist, because the car started from rest.",
+          "feedback": "If the car were still slower, the lead of the cyclist would grow and the car would not catch up with her. With the values of the model the overtaking happens at $8.0\\,\\text{s}$, when the velocity of the car is $16\\,\\text{m/s}$ and that of the cyclist $6.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "The velocities are equal, because the bodies are at the same place.",
+          "feedback": "Position and velocity are different quantities. Being at the same place does not make the velocities the same: with the values of the model the car moves at $16\\,\\text{m/s}$ at the moment of overtaking and the cyclist at $6.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "The velocity of the car is greater than that of the cyclist.",
+          "feedback": "The values of the model support this: at $8.0\\,\\text{s}$ the bodies are at the same place, $64\\,\\text{m}$, the velocity of the car is $2.0\\,\\text{m/s}^2 \\cdot 8.0\\,\\text{s} = 16\\,\\text{m/s}$ and that of the cyclist $6.0\\,\\text{m/s}$. The car must be faster to get past the one ahead.",
+          "correct": true
+        },
+        {
+          "text": "The velocities cannot be compared until we know where the overtaking happens.",
+          "feedback": "The velocities can be compared as soon as the moment is known: it is the moment when the positions are equal. The place does not affect which body is faster. With the values of the model the car is faster at the moment of overtaking."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: the lead of the cyclist",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "In the same situation the cyclist is at first $16\\,\\text{m}$ ahead of the car. What happens to the lead of the cyclist before the overtaking?",
+      "choices": [
+        {
+          "text": "The lead decreases all the time, because the car accelerates and the cyclist does not accelerate at all.",
+          "feedback": "The car accelerates, but it starts from rest and is at first slower than the cyclist. Then the cyclist increases the lead: with the values of the model the lead is $25\\,\\text{m}$ at $3.0\\,\\text{s}$, and only after that does it decrease."
+        },
+        {
+          "text": "The lead grows first and decreases only afterwards; it is greatest when the velocities are equal.",
+          "feedback": "The values of the model support this: at $3.0\\,\\text{s}$ the velocities of the bodies are both $6.0\\,\\text{m/s}$ and the lead is greatest, $25\\,\\text{m}$. After that the car is faster and reduces the lead.",
+          "correct": true
+        },
+        {
+          "text": "The lead is greatest right at the start, because the car starts from rest and is then farthest from the cyclist.",
+          "feedback": "At the start the lead is $16\\,\\text{m}$, but the car is slower and the lead still grows. With the values of the model it is greatest only at $3.0\\,\\text{s}$, when the velocities are equal."
+        },
+        {
+          "text": "The lead stays $16\\,\\text{m}$ all the time, because the velocity of the cyclist is constant and she does not slow down.",
+          "feedback": "The lead depends on the motions of both. Even though the velocity of the cyclist is constant, the velocity of the car changes, and so the distance between them changes all the time."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Car A and cyclist B move on the same road. Their positions are shown on one axis and in the same $(t, x)$ graph.",
+      "howto": "Press *Start* or drag the *Time $t$* slider and choose a *Case*. The blue arrow shows the velocity $\\overline{v}$ and the orange arrow the acceleration $\\overline{a}$, and the length of the arrow tells the magnitude. The line in the graph is drawn for the moments you have visited, and a black ring appears at the meeting when you have visited the moment of the meeting. In case 5 body $\\text{A}$ is a bus and body $\\text{B}$ a runner.",
+      "model": "The values are model values calculated by the simulation, not measurements. The bodies move along a straight road with a constant acceleration ($a = 0$ in uniform motion), they are treated as points, and they pass through each other. Friction and air resistance are not taken into account, and the acceleration takes its value immediately at the start.",
+      "calc": "The position of each body is calculated with the formula $x = x_0 + v_0 t + \\tfrac12 a t^2$ and the velocity with $v = v_0 + a t$. The bodies meet at the moment when $x_\\text{A} = x_\\text{B}$. The reading $x_\\text{B} - x_\\text{A}$ is the lead of B: it is positive when B is ahead and zero at the moment of meeting."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: meeting head-on",
+      "intro": "Test prediction 1. The initial state chooses case 1, in which the bodies move toward each other. Record the readings at at least three different moments, for example $t = 0$, $t = 5.0\\,\\text{s}$ and $t = 10\\,\\text{s}$, and find the moment when the bodies are at the same place.",
+      "initial": {
+        "tapaus": "1",
+        "t": 0
+      },
+      "names": {
+        "t": "time t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "At what place do the bodies meet? Find in the table the moment when $x_\\text{A} = x_\\text{B}$ and read the position. Answer in metres.",
+        "answer": 50,
+        "unit": "m",
+        "tolerance": 0.02,
+        "hints": [
+          "At the moment of meeting the bodies are at the same place. In the row of which moment is the column $x_\\text{B} - x_\\text{A}$ zero?",
+          "The lead $x_\\text{B} - x_\\text{A}$ decreases by the same amount every second until it is zero. In the graph the lines intersect at the same point.",
+          "The lead is at first $60\\,\\text{m}$ and decreases by $6.0\\,\\text{m}$ every second, so it is zero at $10\\,\\text{s}$. Read the position in the row of this moment."
+        ],
+        "mistakes": [
+          {
+            "value": 40,
+            "feedback": "This is the midpoint of the starting places. The bodies move at different velocities, so they do not meet in the middle: A travels twice as far as B."
+          },
+          {
+            "value": 10,
+            "feedback": "This is the time of the meeting in seconds. The question asked for the place, so read the position column in the same row."
+          }
+        ],
+        "solution": "**Given:** from the table at $t = 10\\,\\text{s}$ the positions of the bodies $x_\\text{A} = 50\\,\\text{m}$ and $x_\\text{B} = 50\\,\\text{m}$; the lead $x_\\text{B} - x_\\text{A} = 0$\n\n**Find:** the place of the meeting $x$ in $\\text{m}$\n\n**Principle:** The bodies meet when they are at the same place at the same moment, that is, $x_\\text{A} = x_\\text{B}$. In the table this is the row where the lead is zero, and the place of the meeting is read from the same row.\n\n**Formula:** $x_\\text{A} = x_\\text{B}$, that is, $10 + 4.0\\,t = 70 - 2.0\\,t$. The time is $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4.0\\,\\text{m/s} + 2.0\\,\\text{m/s}}$, and the place is $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.\n\n**Substitution:** $t = \\dfrac{60\\,\\text{m}}{6.0\\,\\text{m/s}} = 10\\,\\text{s}$ and $x = 10\\,\\text{m} + 4.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Answer:** $50\\,\\text{m}$, two significant figures like the given values.\n\n**Reasonableness:** The position of B is $70\\,\\text{m} - 2.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, the same as that of A. The place of the meeting is between the starting places $10\\,\\text{m}$ and $70\\,\\text{m}$. A has travelled $40\\,\\text{m}$ and B $20\\,\\text{m}$, half the distance, because B is half as fast."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the car starts from rest",
+      "intro": "Test predictions 2 and 3. The initial state chooses case 3: the car starts from rest and the cyclist is $16\\,\\text{m}$ ahead. Record the readings at at least three different moments, for example $t = 0$, $t = 3.0\\,\\text{s}$, $t = 8.0\\,\\text{s}$ and $t = 12\\,\\text{s}$. Find the moment when the bodies are at the same place, and see what happens to the lead.",
+      "initial": {
+        "tapaus": "3",
+        "t": 0
+      },
+      "names": {
+        "t": "time t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "vA",
+          "label": "v_A (m/s)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the velocity of the car at the moment of overtaking? Find in the table the moment when $x_\\text{A} = x_\\text{B}$ and read the velocity of the car at that moment. Answer in m/s.",
+        "answer": 16,
+        "unit": "m/s",
+        "tolerance": 0.02,
+        "hints": [
+          "At the moment of overtaking the bodies are at the same place. In which row is the column $x_\\text{B} - x_\\text{A}$ zero?",
+          "The velocity of the car is in the column $v_\\text{A}$. Read it from the same row where the positions are equal.",
+          "Find the row where $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$. If your table has no such row, record the reading at $t = 8.0\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6.0,
+            "feedback": "This is the velocity of the cyclist. The question asked for the velocity of the car, so read the column $v_\\text{A}$."
+          },
+          {
+            "value": 64,
+            "feedback": "This is the place of the overtaking in metres. The question asked for the velocity of the car, which is in the column $v_\\text{A}$."
+          }
+        ],
+        "solution": "**Given:** from the table at $t = 8.0\\,\\text{s}$: $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$ and $v_\\text{A} = 16\\,\\text{m/s}$; the acceleration of the car $a = 2.0\\,\\text{m/s}^2$ and the initial velocity zero\n\n**Find:** the velocity of the car $v_\\text{A}$ at the moment of overtaking in $\\text{m/s}$\n\n**Principle:** The moment of overtaking is the moment when the positions are equal, that is, the row where $x_\\text{B} - x_\\text{A} = 0$. The velocity of the car is read from the same row. The acceleration of the car is constant, so the velocity grows uniformly.\n\n**Formula:** $v = v_0 + a\\,t$, and when $v_0 = 0$, $v_\\text{A} = a\\,t$\n\n**Conversions:** All quantities are in SI units and $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$, so no conversions are needed.\n\n**Substitution:** $v_\\text{A} = 2.0\\,\\text{m/s}^2 \\cdot 8.0\\,\\text{s} = 16\\,\\text{m/s}$\n\n**Answer:** $16\\,\\text{m/s}$, two significant figures like the given values; the same number is in the row of the table.\n\n**Reasonableness:** The velocity of the car, $16\\,\\text{m/s}$, is greater than that of the cyclist (from the settings of the case), $6.0\\,\\text{m/s}$, as it should be in overtaking. It is also more than twice the velocity of the cyclist: the car must first make up the lead that the cyclist gained while the car was slower."
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "optional": true,
+      "title": "Experiment 3: the runner and the bus",
+      "intro": "In case 5 the bus starts from rest and the runner is $5.0\\,\\text{m}$ behind it, moving at $4.0\\,\\text{m/s}$. Record the readings, for example at $t = 0$, $2.0\\,\\text{s}$, $6.0\\,\\text{s}$ and $7.0\\,\\text{s}$, and see how the lead $x_\\text{B} - x_\\text{A}$ and the number of meetings change.",
+      "initial": {
+        "tapaus": "5",
+        "t": 0
+      },
+      "names": {
+        "t": "time t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        },
+        {
+          "key": "meetings",
+          "label": "kohtaamisia"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "How many times are bus $\\text{A}$ and runner $\\text{B}$ at the same place during the time $0 \\ldots 12\\,\\text{s}$?",
+        "choices": [
+          {
+            "text": "Not once, because the runner is behind the bus at the start and the bus accelerates all the time.",
+            "feedback": "The lead $x_\\text{B} - x_\\text{A}$ changes sign in the table. A change of sign means that the positions are equal at some point."
+          },
+          {
+            "text": "Once: the runner overtakes the bus and stays ahead after that.",
+            "feedback": "The runner overtakes the bus but does not stay ahead for good. The velocity of the bus grows all the time, and later it overtakes the runner. The lead changes sign twice."
+          },
+          {
+            "text": "Twice: first the runner catches up with the bus and later the bus overtakes the runner.",
+            "feedback": "Correct. The lead changes sign twice, and the graph has two intersections. The quadratic equation has two positive roots, $1.55\\,\\text{s}$ and $6.45\\,\\text{s}$.",
+            "correct": true
+          },
+          {
+            "text": "Every second, because the bodies stay close to each other all the time and move in the same direction.",
+            "feedback": "Being close is not the same as being at the same place. The positions are equal only at the moments when the lead is exactly zero."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ei-kohtaa",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "What if the bodies do not meet?",
+      "source": "example",
+      "source_note": "An invented situation, not a measurement.",
+      "figure": "fy4-12/ei-kohtaa",
+      "text": "Car $\\text{A}$ drives at a constant velocity of $3.0\\,\\text{m/s}$ from the origin. Cyclist $\\text{B}$ is at the place $20\\,\\text{m}$ at $t = 0$ and rides in the same direction at $5.0\\,\\text{m/s}$. The meeting condition $x_\\text{A} = x_\\text{B}$ gives the equation $3.0\\,t = 20 + 5.0\\,t$, whose solution is $t = -10\\,\\text{s}$. You can check the situation in case 4 of the simulation.",
+      "question": {
+        "type": "choice",
+        "prompt": "What does the solution $t = -10\\,\\text{s}$ tell us?",
+        "choices": [
+          {
+            "text": "The bodies would have been at the same place $10\\,\\text{s}$ before the start; after the start they do not meet.",
+            "feedback": "Correct. The lines would intersect if they were continued backward in time. From $t = 0$ on, the cyclist is ahead and faster, so the lead only grows.",
+            "correct": true
+          },
+          {
+            "text": "The bodies meet $10\\,\\text{s}$ after the start, and the minus sign is just a calculation error.",
+            "feedback": "The minus sign is not a calculation error but the result of the solution. At $t = 10\\,\\text{s}$ the car is at $30\\,\\text{m}$ and the cyclist at $70\\,\\text{m}$, so they are far from each other."
+          },
+          {
+            "text": "The car moves backward, that is, in the negative direction at $3.0\\,\\text{m/s}$.",
+            "feedback": "The velocity of the car is $+3.0\\,\\text{m/s}$, so it moves in the positive direction. The negative number is a time, not a velocity."
+          },
+          {
+            "text": "The cyclist stops at the start, and the car catches up with her $10\\,\\text{s}$ later.",
+            "feedback": "The velocity of the cyclist is $5.0\\,\\text{m/s}$ all the time, and she does not stop. The car is slower, so it does not catch up with her."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "title": "Conclusion",
+      "prompt": "Using your tables, explain in your own words why the car is faster than the cyclist at the moment of overtaking, even though the bodies are then at the same place. Use the words position, velocity and lead.",
+      "criteria": [
+        "I say that a meeting means the same place at the same moment, not the same velocity.",
+        "I say that the car was at first slower than the cyclist, so the lead grew until the velocities were equal.",
+        "I say that after that the car was faster and reduced the lead until it was zero: at that moment the car is faster.",
+        "I refer to the readings in my table, for example the velocities $16\\,\\text{m/s}$ and $6.0\\,\\text{m/s}$ at the moment of overtaking."
+      ],
+      "model": "In a meeting only the positions are equal: $x_\\text{A} = x_\\text{B}$. With the values of the model the car starts from rest and is at first slower than the cyclist, so the lead of the cyclist grows from $16\\,\\text{m}$. At $3.0\\,\\text{s}$ the velocities are both $6.0\\,\\text{m/s}$ and the lead is greatest, $25\\,\\text{m}$. After that the car is faster and reduces the lead. For the lead to reach zero, the car must be faster until then, and at the moment of overtaking, $8.0\\,\\text{s}$, the velocity of the car is $16\\,\\text{m/s}$ and that of the cyclist $6.0\\,\\text{m/s}$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the tables and graphs. What did you find out about the place of the meeting, the velocities at the moment of overtaking and the change of the lead? Also return to the traffic light at the start: how can you see that the car catches up with the cyclist only far from the line?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Find the error",
+      "prompt": "A student solves the overtaking example: the car starts from rest with an acceleration of $2.0\\,\\text{m/s}^2$ and the cyclist is $16\\,\\text{m}$ ahead at $6.0\\,\\text{m/s}$. She writes: “The car catches up with the cyclist when the velocities are equal: $2.0\\,\\text{m/s}^2 \\cdot t = 6.0\\,\\text{m/s}$, so $t = 3.0\\,\\text{s}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "She set the velocities equal, although in a meeting the positions must be equal: $\\tfrac12\\,a\\,t^2 = 16\\,\\text{m} + v\\,t$.",
+          "feedback": "Correct. At $3.0\\,\\text{s}$ the velocities are equal, but the car is then still $25\\,\\text{m}$ behind the cyclist. The lead is then greatest. The overtaking happens only when the positions are equal.",
+          "correct": true
+        },
+        {
+          "text": "The velocity of the car should be calculated with the formula $v = \\tfrac12\\,a\\,t^2$ and not $v = a\\,t$.",
+          "feedback": "The formula $v = a\\,t$ is right for the velocity of the car when the initial velocity is zero. The formula $\\tfrac12\\,a\\,t^2$ is a position, not a velocity."
+        },
+        {
+          "text": "The $16\\,\\text{m}$ lead of the cyclist should have been subtracted from the velocity.",
+          "feedback": "The lead is a length and the velocity is a length per time, so they cannot be subtracted from each other. The lead belongs in the position equation, not in a comparison of velocities."
+        },
+        {
+          "text": "The result $3.0\\,\\text{s}$ is right, because the car overtakes when the acceleration has evened out the differences in velocity.",
+          "feedback": "Evening out the velocities is not overtaking. Then the bodies move equally fast, but the car is still $25\\,\\text{m}$ behind. Overtaking is the moment when the positions are equal: $8.0\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A motorcycle stands at a line. At the same moment a truck drives past the line at a constant velocity of $12\\,\\text{m/s}$. The motorcycle starts moving in the same direction and accelerates uniformly at $3.0\\,\\text{m/s}^2$. What is the velocity of the motorcycle when it catches up with the truck? Answer in m/s.",
+      "answer": 24,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Catching up is a meeting. Write the position of each body as a function of time and set the positions equal.",
+        "Motorcycle: $x = \\tfrac12\\,a\\,t^2$. Truck: $x = v\\,t$. Solve $t$ (other than $t = 0$) and then calculate the velocity of the motorcycle with $v = a\\,t$.",
+        "$\\tfrac12\\,a\\,t^2 = v\\,t$ gives $t = \\dfrac{2v}{a} = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3.0\\,\\text{m/s}^2}$. Multiply the result by the acceleration."
+      ],
+      "mistakes": [
+        {
+          "value": 12,
+          "feedback": "This is the velocity of the truck. You set the velocities equal, but that gives the moment when the lead is greatest, not the moment of catching up. In a meeting the positions must be equal."
+        },
+        {
+          "value": 96,
+          "feedback": "This is the place of catching up in metres. The question asked for the velocity of the motorcycle, which is $a\\,t$ at the moment of catching up."
+        },
+        {
+          "value": 8,
+          "feedback": "This is the time of catching up in seconds. The question asked for the velocity: multiply the time by the acceleration."
+        }
+      ],
+      "solution": "**Given:** motorcycle $x_0 = 0$, $v_0 = 0$, $a = 3.0\\,\\text{m/s}^2$; truck at a constant velocity $v = 12\\,\\text{m/s}$ from the same place; both are at the line at $t = 0$\n\n**Find:** the velocity of the motorcycle $v_\\text{M}$ at the moment of overtaking in $\\text{m/s}$\n\n**Principle:** The motorcycle catches up with the truck when the positions are equal. The motion of the motorcycle is uniformly accelerated and that of the truck is uniform, and both start from the same place. Once the moment of overtaking is known, the velocity comes from the acceleration and the time.\n\n**Formula:** $\\tfrac12\\,a\\,t^2 = v\\,t$, so $t = \\dfrac{2v}{a}$ ($t = 0$ is the start). The velocity is $v_\\text{M} = a\\,t = a \\cdot \\dfrac{2v}{a} = 2v$\n\n**Conversions:** All quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $t = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3.0\\,\\text{m/s}^2} = 8.0\\,\\text{s}$ and $v_\\text{M} = 3.0\\,\\text{m/s}^2 \\cdot 8.0\\,\\text{s} = 24\\,\\text{m/s}$\n\n**Answer:** $24\\,\\text{m/s}$, two significant figures like the given values.\n\n**Reasonableness:** The velocity of the motorcycle is twice the velocity of the truck, as it should be when overtaking from the same starting place. The positions are equal: $\\tfrac12 \\cdot 3.0\\,\\text{m/s}^2 \\cdot (8.0\\,\\text{s})^2 = 96\\,\\text{m}$ and $12\\,\\text{m/s} \\cdot 8.0\\,\\text{s} = 96\\,\\text{m}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. The tasks of level 1 use one formula, level 3 requires reasoning. Level 1 is enough for basic competence; levels 2 and 3 are optional and deepen your understanding. Write the position of each body as a function of time and draw the $(t, x)$ graph in your notebook whenever it helps."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The lines of the $(t, x)$ graph of two bodies intersect at $t = 6.0\\,\\text{s}$. What does this mean?",
+      "choices": [
+        {
+          "text": "The bodies are at the same place at $6.0\\,\\text{s}$.",
+          "feedback": "Correct. At the intersection of the $(t, x)$ graph both bodies have the same time and the same position, so the bodies meet.",
+          "correct": true
+        },
+        {
+          "text": "The velocities of the bodies are equal at $6.0\\,\\text{s}$.",
+          "feedback": "Equal velocities would show as equal steepness of the lines, not as an intersection. At the intersection the lines usually have different slopes, because the velocities are different."
+        },
+        {
+          "text": "The bodies have travelled the same distance by $6.0\\,\\text{s}$.",
+          "feedback": "An intersection tells the position, not the distance travelled. If the bodies started from different places, they may have travelled different distances when they meet."
+        },
+        {
+          "text": "One of the bodies stops at $6.0\\,\\text{s}$.",
+          "feedback": "Stopping would show as a horizontal section of the line. An intersection tells nothing about a change in either motion, only that the positions are equal."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate",
+      "prompt": "Body A starts from $0$ and moves uniformly at $2.0\\,\\text{m/s}$ in the positive direction. Body B starts at the same moment from $30\\,\\text{m}$ and moves uniformly at $3.0\\,\\text{m/s}$ in the negative direction. When do the bodies meet? Answer in seconds.",
+      "answer": 6.0,
+      "unit": "s",
+      "tolerance": 0.02,
+      "hints": [
+        "Write the position of each body as a function of time. The velocity of B is negative.",
+        "In a meeting $x_\\text{A} = x_\\text{B}$, that is, $2.0\\,t = 30 - 3.0\\,t$.",
+        "Move the $t$ terms to the same side: $5.0\\,t = 30$. Solve $t$."
+      ],
+      "mistakes": [
+        {
+          "value": 15,
+          "feedback": "You divided the distance $30\\,\\text{m}$ by the velocity of A only. B moves too, so the distance between them decreases at the sum of the velocities, $5.0\\,\\text{m/s}$."
+        },
+        {
+          "value": 30,
+          "feedback": "You subtracted the velocities: $3.0\\,\\text{m/s} - 2.0\\,\\text{m/s} = 1.0\\,\\text{m/s}$. The bodies move toward each other, so the distance between them decreases at the sum of the velocities."
+        },
+        {
+          "value": 10,
+          "feedback": "You divided the distance by the velocity of B only. A moves too, so the distance between them decreases at the sum of the velocities, $5.0\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Given:** body A: $x_{0\\text{A}} = 0$, $v_\\text{A} = 2.0\\,\\text{m/s}$; body B: $x_{0\\text{B}} = 30\\,\\text{m}$, $v_\\text{B} = -3.0\\,\\text{m/s}$; both uniform\n\n**Find:** the time of the meeting $t$ in $\\text{s}$\n\n**Principle:** The bodies meet when they are at the same place: $x_\\text{A} = x_\\text{B}$. Both move uniformly, so $x = x_0 + v\\,t$ for each. The velocity of B is negative, because it comes toward A.\n\n**Formula:** $x_{0\\text{A}} + v_\\text{A}\\,t = x_{0\\text{B}} + v_\\text{B}\\,t$, so $t = \\dfrac{x_{0\\text{B}} - x_{0\\text{A}}}{v_\\text{A} - v_\\text{B}}$\n\n**Conversions:** All quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $t = \\dfrac{30\\,\\text{m} - 0}{2.0\\,\\text{m/s} - (-3.0\\,\\text{m/s})} = \\dfrac{30\\,\\text{m}}{5.0\\,\\text{m/s}} = 6.0\\,\\text{s}$\n\n**Answer:** $6.0\\,\\text{s}$, two significant figures like the velocities.\n\n**Reasonableness:** The bodies approach each other at $2.0\\,\\text{m/s} + 3.0\\,\\text{m/s} = 5.0\\,\\text{m/s}$, so $30\\,\\text{m}$ takes $6.0\\,\\text{s}$. The positions: $x_\\text{A} = 2.0\\,\\text{m/s} \\cdot 6.0\\,\\text{s} = 12\\,\\text{m}$ and $x_\\text{B} = 30\\,\\text{m} - 3.0\\,\\text{m/s} \\cdot 6.0\\,\\text{s} = 12\\,\\text{m}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "optional": true,
+      "title": "3. Explain",
+      "prompt": "A car starts from rest while a cyclist is ahead of it. Explain in your own words when the lead of the cyclist is greatest and why the overtaking happens only after that.",
+      "criteria": [
+        "I say that the lead grows as long as the cyclist is faster than the car.",
+        "I say that the lead is greatest at the moment when the velocities are equal.",
+        "I say that after that the car is faster and reduces the lead, and the overtaking is the moment when the lead is zero.",
+        "I distinguish the moment when the velocities are equal from the moment when the positions are equal."
+      ],
+      "model": "The car starts from rest, so it is at first slower than the cyclist, who rides at a constant velocity. As long as the cyclist is faster, she advances more than the car and the lead grows. When the velocity of the car has grown equal to that of the cyclist, the lead no longer grows: it is greatest. After that the car is faster and reduces the lead. The overtaking happens only when the lead has been used up, so then the positions are equal and the car is faster. Equal velocities and equal positions are therefore different moments."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally three quick questions. Answer first by yourself and open the answer only after that."
+    }
+  ]
+}

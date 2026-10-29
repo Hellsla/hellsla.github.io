@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy4-12-L1-01",
+      "level": 1,
+      "text": "Kaksi kärryä liikkuu samalla suoralla radalla. Kärryn A paikka on $x_\\text{A} = 4{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot t$. Kärryn B paikka on $x_\\text{B} = 24\\,\\text{m} - 3{,}0\\,\\text{m/s} \\cdot t$. Milloin kärryt kohtaavat?",
+      "answer": 4.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-02",
+      "level": 1,
+      "text": "Pyöräilijä ajaa paikasta $0$ tasaisella nopeudella $8{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Juoksija on samalla hetkellä paikassa $60\\,\\text{m}$. Hän juoksee samaan suuntaan tasaisella nopeudella $5{,}0\\,\\text{m/s}$. Milloin pyöräilijä saavuttaa juoksijan?",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-03",
+      "level": 1,
+      "text": "Auto lähtee levosta origosta ja kiihtyy tasaisesti kiihtyvyydellä $3{,}0\\,\\text{m/s}^2$. Missä paikassa auto on $4{,}0\\,\\text{s}$ kuluttua?",
+      "answer": 24,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-04",
+      "level": 1,
+      "text": "Kuvaajassa on kahden kärryn paikat ajan funktiona. Lue kuvaajasta, milloin kärryt kohtaavat.",
+      "figure": "fy4-12/kaksi-karrya",
+      "answer": 5.0,
+      "unit": "s",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy4-12-L1-05",
+      "level": 1,
+      "text": "Juoksija A lähtee paikasta $0$ ja juoksee tasaisella nopeudella $3{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Juoksija B on samalla hetkellä paikassa $60\\,\\text{m}$. Hän juoksee A:ta vastaan tasaisella nopeudella $-2{,}5\\,\\text{m/s}$. Missä paikassa he kohtaavat?",
+      "answer": 35,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-12-L2-01",
+      "level": 2,
+      "text": "Linja-auto ajaa suoraa tietä tasaisella nopeudella $72\\,\\text{km/h}$. Henkilöauto on $150\\,\\text{m}$ linja-auton takana. Se ajaa samaan suuntaan tasaisella nopeudella $90\\,\\text{km/h}$. Kuinka monen sekunnin kuluttua henkilöauto saavuttaa linja-auton?",
+      "answer": 30,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-02",
+      "level": 2,
+      "text": "Kaksi junaa lähtee yhtä aikaa asemilta, jotka ovat $12\\,\\text{km}$ päässä toisistaan. Junat kulkevat rinnakkaisia raiteita toisiaan kohti. Niiden tasaiset nopeudet ovat $90\\,\\text{km/h}$ ja $54\\,\\text{km/h}$. Kuinka monen minuutin kuluttua ne kohtaavat?",
+      "answer": 5.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-03",
+      "level": 2,
+      "text": "Kärry A lähtee paikasta $6{,}0\\,\\text{m}$ ja liikkuu tasaisella nopeudella $3{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Kärry B lähtee samalla hetkellä paikasta $42\\,\\text{m}$ ja liikkuu tasaisella nopeudella $-1{,}0\\,\\text{m/s}$. Hahmottele paperille kummankin $(t,x)$-kuvaaja samaan koordinaatistoon. Perustele kuvaajista, miksi viivat leikkaavat ja mitä leikkauspiste kertoo. Ilmoita sitten, milloin kärryt kohtaavat.",
+      "answer": 9.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-04",
+      "level": 2,
+      "text": "Kuvaajassa on kahden kärryn paikat ajan funktiona. Kärryt liikkuvat tasaisesti. Laske kuvaajan lukemista ensin kärryjen nopeudet. Laske sitten, milloin kärryjen välimatka on ensimmäisen kerran $10\\,\\text{m}$.",
+      "figure": "fy4-12/kaksi-karrya",
+      "answer": 3.75,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-12-L3-01",
+      "level": 3,
+      "text": "Pysäkki on origo, ja bussi seisoo siinä. Juoksija on pysäkin takana paikassa $-8{,}0\\,\\text{m}$. Hän juoksee positiiviseen suuntaan tasaisella nopeudella $5{,}0\\,\\text{m/s}$. Hetkellä $t = 0$ bussi lähtee liikkeelle samaan suuntaan ja kiihtyy tasaisesti kiihtyvyydellä $1{,}0\\,\\text{m/s}^2$. Milloin juoksija saavuttaa bussin ensimmäisen kerran?",
+      "answer": 2.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-02",
+      "level": 3,
+      "text": "Bussi seisoo pysäkillä. Juoksija on bussin takana $20\\,\\text{m}$ päässä. Hetkellä $t = 0$ bussi lähtee liikkeelle samaan suuntaan ja kiihtyy tasaisesti kiihtyvyydellä $0{,}50\\,\\text{m/s}^2$. Juoksija juoksee samaan suuntaan tasaisella nopeudella $4{,}0\\,\\text{m/s}$. Saavuttaako juoksija bussin? Kuinka lähelle bussia hän pääsee?",
+      "answer": 4.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-03",
+      "level": 3,
+      "text": "Skootteri lähtee levosta kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$ kohti pyöräilijää. Pyöräilijä on $180\\,\\text{m}$ päässä ja ajaa skootteria vastaan tasaisella nopeudella $8{,}0\\,\\text{m/s}$. Skootteri ja pyöräilijä käyttävät eri kaistoja ja kohtaavat. Milloin ne ovat samassa kohdassa?",
+      "answer": 10,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}
