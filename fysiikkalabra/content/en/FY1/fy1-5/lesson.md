@@ -2,6 +2,124 @@
 
 > **Why** can the position of the Voyager 2 probe be calculated in advance for any day, even though it is more than 20 billion kilometres from the Sun?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Sun on the left in space, the Voyager 2 probe on the right. Behind the probe, faint marks of its earlier positions lie evenly spaced on a straight line, one for each equal time step; the next positions continue ahead as a dashed line." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy15h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.6" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
+  <circle cx="67.5" cy="505" r="1.98799" fill="#ffffff"/>
+  <circle cx="187" cy="322" r="2.14204" fill="#ffffff"/>
+  <circle cx="134" cy="264" r="2.04599" fill="#ffffff"/>
+  <circle cx="972.5" cy="304.5" r="2.59818" fill="#ffffff"/>
+  <circle cx="238.5" cy="285" r="2.37104" fill="#ffffff"/>
+  <circle cx="225.5" cy="416.5" r="1.42013" fill="#ffffff"/>
+  <circle cx="816.5" cy="514" r="1.12816" fill="#ffffff"/>
+  <circle cx="1118" cy="373.5" r="1.90319" fill="#ffffff"/>
+  <circle cx="806" cy="25.5" r="2.48986" fill="#ffffff"/>
+  <circle cx="1170.5" cy="22" r="2.35893" fill="#ffffff"/>
+  <circle cx="1046" cy="438.5" r="1.28271" fill="#ffffff"/>
+  <circle cx="633.5" cy="168.5" r="1.84923" fill="#ffffff"/>
+  <circle cx="1105.5" cy="210" r="1.43977" fill="#ffffff"/>
+  <circle cx="630.5" cy="180.5" r="2.1425" fill="#ffffff"/>
+  <circle cx="383.5" cy="598.5" r="1.66809" fill="#ffffff"/>
+  <circle cx="822" cy="157" r="1.47143" fill="#ffffff"/>
+  <circle cx="647.5" cy="318.5" r="1.65812" fill="#ffffff"/>
+  <circle cx="560" cy="359" r="2.43201" fill="#ffffff"/>
+  <circle cx="47" cy="101.5" r="2.58983" fill="#ffffff"/>
+  <circle cx="1080" cy="547.5" r="1.77716" fill="#ffffff"/>
+  <circle cx="1126.5" cy="350" r="2.38642" fill="#ffffff"/>
+  <circle cx="742" cy="66" r="2.16655" fill="#ffffff"/>
+  <circle cx="933.5" cy="89" r="1.07208" fill="#ffffff"/>
+  <circle cx="746.5" cy="528.5" r="1.72868" fill="#ffffff"/>
+  <circle cx="927" cy="273.5" r="1.39826" fill="#ffffff"/>
+  <circle cx="984" cy="56.5" r="2.45777" fill="#ffffff"/>
+  <circle cx="381" cy="85.5" r="1.36642" fill="#ffffff"/>
+  <circle cx="209" cy="567" r="1.22555" fill="#ffffff"/>
+  <circle cx="1132" cy="393.5" r="2.36878" fill="#ffffff"/>
+  <circle cx="1189" cy="558.5" r="1.63937" fill="#ffffff"/>
+  <circle cx="782" cy="416.5" r="2.32138" fill="#ffffff"/>
+  <circle cx="1119" cy="553" r="1.24454" fill="#ffffff"/>
+  <circle cx="704.5" cy="108" r="1.29287" fill="#ffffff"/>
+  <circle cx="809" cy="522.5" r="2.38228" fill="#ffffff"/>
+  <circle cx="769" cy="546" r="1.91026" fill="#ffffff"/>
+  <circle cx="277.5" cy="186" r="2.29025" fill="#ffffff"/>
+  <circle cx="933.5" cy="464" r="1.90999" fill="#ffffff"/>
+  <circle cx="1045" cy="258" r="2.3768" fill="#ffffff"/>
+  <circle cx="1133" cy="210" r="1.57841" fill="#ffffff"/>
+  <circle cx="318.5" cy="54.5" r="1.87647" fill="#ffffff"/>
+  <circle cx="63.5" cy="125" r="1.68473" fill="#ffffff"/>
+  <circle cx="1033" cy="79" r="2.35796" fill="#ffffff"/>
+  <circle cx="550" cy="348" r="2.12188" fill="#ffffff"/>
+  <circle cx="110.5" cy="165" r="2.34158" fill="#ffffff"/>
+  <circle cx="268.5" cy="450.5" r="2.24686" fill="#ffffff"/>
+  <circle cx="1062" cy="312" r="2.38072" fill="#ffffff"/>
+  <circle cx="902" cy="82.5" r="1.08375" fill="#ffffff"/>
+  <circle cx="83" cy="34.5" r="1.87482" fill="#ffffff"/>
+  <circle cx="529" cy="536.5" r="2.35132" fill="#ffffff"/>
+  <circle cx="1024" cy="207.5" r="1.43538" fill="#ffffff"/>
+  <circle cx="996.5" cy="327.5" r="1.05211" fill="#ffffff"/>
+  <circle cx="428.5" cy="292.5" r="1.26588" fill="#ffffff"/>
+  <circle cx="894.5" cy="226.5" r="1.05571" fill="#ffffff"/>
+  <circle cx="499.5" cy="206.5" r="1.29294" fill="#ffffff"/>
+  <circle cx="476" cy="221.5" r="1.63826" fill="#ffffff"/>
+  <circle cx="546" cy="502" r="1.14065" fill="#ffffff"/>
+  <circle cx="360" cy="481.5" r="1.72271" fill="#ffffff"/>
+  <circle cx="747.5" cy="582" r="1.75368" fill="#ffffff"/>
+  <circle cx="806.5" cy="264.5" r="1.58355" fill="#ffffff"/>
+  <circle cx="44.5" cy="400.5" r="1.32571" fill="#ffffff"/>
+  <circle cx="296.5" cy="576.5" r="2.04034" fill="#ffffff"/>
+  <circle cx="239" cy="506" r="1.3272" fill="#ffffff"/>
+  <circle cx="5.5" cy="417" r="1.61965" fill="#ffffff"/>
+  <circle cx="223" cy="220" r="2.38962" fill="#ffffff"/>
+  <circle cx="831" cy="27.5" r="2.05846" fill="#ffffff"/>
+  <circle cx="1052" cy="508" r="1.70297" fill="#ffffff"/>
+  <circle cx="828.5" cy="333" r="2.45481" fill="#ffffff"/>
+  <circle cx="1185.5" cy="131.5" r="1.23121" fill="#ffffff"/>
+  <circle cx="1139" cy="410.5" r="2.02484" fill="#ffffff"/>
+  <circle cx="573.5" cy="157.5" r="1.38892" fill="#ffffff"/>
+  <circle cx="752.5" cy="592" r="2.08505" fill="#ffffff"/>
+  <circle cx="1068" cy="469" r="1.42588" fill="#ffffff"/>
+  <circle cx="6.5" cy="539.5" r="1.0317" fill="#ffffff"/>
+  <circle cx="197.5" cy="397.5" r="1.39014" fill="#ffffff"/>
+  <circle cx="458.5" cy="249" r="2.02288" fill="#ffffff"/>
+  <circle cx="627.5" cy="83.5" r="1.13414" fill="#ffffff"/>
+  <circle cx="267.5" cy="4" r="2.19897" fill="#ffffff"/>
+  <circle cx="1110.5" cy="122.5" r="1.85855" fill="#ffffff"/>
+  <circle cx="973.5" cy="173.5" r="1.97425" fill="#ffffff"/>
+  <circle cx="1170" cy="470.5" r="2.15567" fill="#ffffff"/>
+  <circle cx="1004.5" cy="374" r="2.37011" fill="#ffffff"/>
+  <circle cx="267.5" cy="535" r="2.55557" fill="#ffffff"/>
+  <circle cx="284.5" cy="269.5" r="1.42345" fill="#ffffff"/>
+  <circle cx="739.5" cy="34.5" r="1.92314" fill="#ffffff"/>
+  <circle cx="287" cy="139" r="1.39416" fill="#ffffff"/>
+  <circle cx="1134.5" cy="523" r="1.57953" fill="#ffffff"/>
+  <circle cx="75.5" cy="457" r="2.05264" fill="#ffffff"/>
+  <circle cx="585.5" cy="142.5" r="2.5483" fill="#ffffff"/>
+  <circle cx="1038.5" cy="430" r="1.66823" fill="#ffffff"/>
+  <circle cx="185" cy="184.5" r="1.67186" fill="#ffffff"/>
+  <circle cx="40" cy="470" r="130" fill="url(#fy15h-sun)"/>
+  <circle cx="40" cy="470" r="54" fill="#ffc078"/>
+  <line x1="140" y1="440" x2="787" y2="235.5" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="826" y1="223" x2="1120" y2="130" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-dasharray="10 10"/>
+  <circle cx="218.5" cy="415" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="297" cy="390.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="375" cy="365.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="453.5" cy="341" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="532" cy="316" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="610.5" cy="291" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="689" cy="266.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="767" cy="241.5" r="9" fill="#d0e6fb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="885" cy="204.5" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="963" cy="179.5" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="1041.5" cy="155" r="9" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="845.5" y1="217" x2="950.5" y2="189" stroke="#8a96a3" stroke-width="2.8" stroke-linecap="butt"/>
+  <line x1="845.5" y1="217" x2="922.5" y2="266" stroke="#8a96a3" stroke-width="2.8" stroke-linecap="butt"/>
+  <circle cx="950.5" cy="189" r="6.3" fill="#6c757d"/>
+  <rect x="915.5" y="261.5" width="15.5" height="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="841.5" y="207" width="31" height="19.5" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <ellipse cx="838.5" cy="217" rx="11" ry="43.5" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <ellipse cx="840" cy="217" rx="7" ry="31" fill="#eef5f9"/>
+  <line x1="838.5" y1="217" x2="815" y2="217" stroke="#1f2933" stroke-width="1.75" stroke-linecap="butt"/>
+</svg>
+
 ## Key idea
 Uniform motion is motion along a straight line at constant speed: in equal intervals of time, the object travels equal distances. Speed tells you how far the object travels in one second, so its unit is metres per second (m/s). If a trolley moves two metres every second, its speed is $2\,\text{m/s}$.
 

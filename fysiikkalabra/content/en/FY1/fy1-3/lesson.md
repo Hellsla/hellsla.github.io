@@ -2,6 +2,204 @@
 
 > **Why** do ten students get ten different results for the rolling time of the same ball, even though they all use the same stopwatch?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a sloping channel on a classroom table with a ball rolling down it. In front of the table ten stopwatches stand in a row; their hands have stopped at slightly different places, although they all timed the same roll." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy13h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f1e6"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="0" width="1200" height="250" fill="url(#fy13h-wall)"/>
+  <rect x="330" y="40" width="540" height="150" rx="4" fill="#2b8a3e" stroke="#1f2933" stroke-width="3"/>
+  <rect x="342" y="52" width="516" height="126" fill="#2f5d3a"/>
+  <rect x="120" y="300" width="960" height="22" rx="4" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="150" y="322" width="24" height="130" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1026" y="322" width="24" height="130" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="250" y="250" width="18" height="50" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M240,232 L960,288 L960,300 L240,246 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M960,300 h40 v-12 h-40" fill="#e9c98a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="596" cy="241.5" r="16" fill="#6c757d" fill-opacity="0.18"/>
+  <circle cx="552" cy="238.5" r="16" fill="#6c757d" fill-opacity="0.1"/>
+  <circle cx="640" cy="245" r="16" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="635" cy="240" r="5" fill="#ffffff"/>
+  <rect x="143.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="147" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="150" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="150" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="150" y1="497" x2="150" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="163.5" y1="500.5" x2="165.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="173.5" y1="510.5" x2="177" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="177" y1="524" x2="181" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="173.5" y1="537.5" x2="177" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="163.5" y1="547.5" x2="165.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="551" x2="150" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="136.5" y1="547.5" x2="134.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="126.5" y1="537.5" x2="123" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="123" y1="524" x2="119" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="126.5" y1="510.5" x2="123" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="136.5" y1="500.5" x2="134.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="150" y1="524" x2="176.5" y2="526.5" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="150" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="243.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="247" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="250" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="250" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="250" y1="497" x2="250" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="263.5" y1="500.5" x2="265.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="273.5" y1="510.5" x2="277" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="277" y1="524" x2="281" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="273.5" y1="537.5" x2="277" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="263.5" y1="547.5" x2="265.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="250" y1="551" x2="250" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="236.5" y1="547.5" x2="234.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="226.5" y1="537.5" x2="223" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="223" y1="524" x2="219" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="226.5" y1="510.5" x2="223" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="236.5" y1="500.5" x2="234.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="250" y1="524" x2="272.5" y2="538" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="250" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="343.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="347" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="350" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="350" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="350" y1="497" x2="350" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="363.5" y1="500.5" x2="365.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="373.5" y1="510.5" x2="377" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="377" y1="524" x2="381" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="373.5" y1="537.5" x2="377" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="363.5" y1="547.5" x2="365.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="350" y1="551" x2="350" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="336.5" y1="547.5" x2="334.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="326.5" y1="537.5" x2="323" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="323" y1="524" x2="319" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="326.5" y1="510.5" x2="323" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="336.5" y1="500.5" x2="334.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="350" y1="524" x2="375" y2="533" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="350" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="443.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="447" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="450" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="450" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="450" y1="497" x2="450" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="463.5" y1="500.5" x2="465.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="473.5" y1="510.5" x2="477" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="477" y1="524" x2="481" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="473.5" y1="537.5" x2="477" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="463.5" y1="547.5" x2="465.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="450" y1="551" x2="450" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="436.5" y1="547.5" x2="434.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="426.5" y1="537.5" x2="423" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="423" y1="524" x2="419" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="426.5" y1="510.5" x2="423" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="436.5" y1="500.5" x2="434.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="450" y1="524" x2="476.5" y2="523" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="450" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="543.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="547" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="550" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="550" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="550" y1="497" x2="550" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="563.5" y1="500.5" x2="565.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="573.5" y1="510.5" x2="577" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="577" y1="524" x2="581" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="573.5" y1="537.5" x2="577" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="563.5" y1="547.5" x2="565.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="550" y1="551" x2="550" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="536.5" y1="547.5" x2="534.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="526.5" y1="537.5" x2="523" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="523" y1="524" x2="519" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="526.5" y1="510.5" x2="523" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="536.5" y1="500.5" x2="534.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="550" y1="524" x2="576.5" y2="524.5" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="550" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="643.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="647" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="650" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="650" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="650" y1="497" x2="650" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="663.5" y1="500.5" x2="665.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="673.5" y1="510.5" x2="677" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="677" y1="524" x2="681" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="673.5" y1="537.5" x2="677" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="663.5" y1="547.5" x2="665.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="650" y1="551" x2="650" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="636.5" y1="547.5" x2="634.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="626.5" y1="537.5" x2="623" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="623" y1="524" x2="619" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="626.5" y1="510.5" x2="623" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="636.5" y1="500.5" x2="634.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="650" y1="524" x2="676" y2="527.5" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="650" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="743.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="747" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="750" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="750" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="750" y1="497" x2="750" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="763.5" y1="500.5" x2="765.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="773.5" y1="510.5" x2="777" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="777" y1="524" x2="781" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="773.5" y1="537.5" x2="777" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="763.5" y1="547.5" x2="765.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="750" y1="551" x2="750" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="736.5" y1="547.5" x2="734.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="726.5" y1="537.5" x2="723" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="723" y1="524" x2="719" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="726.5" y1="510.5" x2="723" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="736.5" y1="500.5" x2="734.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="750" y1="524" x2="770.5" y2="540.5" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="750" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="843.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="847" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="850" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="850" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="850" y1="497" x2="850" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="863.5" y1="500.5" x2="865.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="873.5" y1="510.5" x2="877" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="877" y1="524" x2="881" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="873.5" y1="537.5" x2="877" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="863.5" y1="547.5" x2="865.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="850" y1="551" x2="850" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="836.5" y1="547.5" x2="834.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="826.5" y1="537.5" x2="823" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="823" y1="524" x2="819" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="826.5" y1="510.5" x2="823" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="836.5" y1="500.5" x2="834.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="850" y1="524" x2="875.5" y2="531" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="850" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="943.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="947" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="950" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="950" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="950" y1="497" x2="950" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="963.5" y1="500.5" x2="965.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="973.5" y1="510.5" x2="977" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="977" y1="524" x2="981" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="973.5" y1="537.5" x2="977" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="963.5" y1="547.5" x2="965.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="950" y1="551" x2="950" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="936.5" y1="547.5" x2="934.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="926.5" y1="537.5" x2="923" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="923" y1="524" x2="919" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="926.5" y1="510.5" x2="923" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="936.5" y1="500.5" x2="934.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="950" y1="524" x2="976.5" y2="522.5" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="950" cy="524" r="3.2" fill="#1f2933"/>
+  <rect x="1043.5" y="471" width="13" height="9.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1047" y="480" width="5.5" height="5.5" fill="#6c757d"/>
+  <circle cx="1050" cy="524" r="40" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="1050" cy="524" r="32.8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="1050" y1="497" x2="1050" y2="493" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1063.5" y1="500.5" x2="1065.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1073.5" y1="510.5" x2="1077" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1077" y1="524" x2="1081" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1073.5" y1="537.5" x2="1077" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1063.5" y1="547.5" x2="1065.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="551" x2="1050" y2="555" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1036.5" y1="547.5" x2="1034.5" y2="551" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1026.5" y1="537.5" x2="1023" y2="539.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1023" y1="524" x2="1019" y2="524" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1026.5" y1="510.5" x2="1023" y2="508.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1036.5" y1="500.5" x2="1034.5" y2="497" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1050" y1="524" x2="1075" y2="532" stroke="#c92a2a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="1050" cy="524" r="3.2" fill="#1f2933"/>
+</svg>
+
 ## Key idea
 A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement has a small error, even one made by a skilled measurer. The true value, and therefore the error too, is usually not known, so in physics we estimate how large the error can be, and this estimate, the **measurement uncertainty**, is stated together with the result.
 

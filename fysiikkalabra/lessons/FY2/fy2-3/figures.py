@@ -1,5 +1,53 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy2-3` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, HEAT, HEAT_LIGHT, COLD, WHITE
+import math
+from figlib import ALUMINIUM, GOOD_LIGHT, HOT, IRON, PAPER, RULE, RULE_LIGHT, SAND, SAND_LIGHT, n
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: a powerful kettle on for minutes, a small lamp on all evening, and the electricity meter between them."""
+    f = H.hero("fy23-hero", "Kuvitus: keittiössä vasemmalla höyryävä vedenkeitin, jonka vieressä kello näyttää lyhyttä aikaa, ja oikealla pieni "
+               "pöytävalaisin, jonka vieressä kello näyttää pitkää aikaa. Keskellä seinällä sähkömittari.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    for k in range(1, 6): f.line(0, k * 70, 1200, k * 70, RULE_LIGHT, 2)
+    f.rect(0, 400, 1200, 200, SAND_LIGHT); f.rect(0, 400, 1200, 22, SAND, INK, 2)
+    # kettle
+    x = 230
+    f.path(f"M{x - 80},400 L{x - 64},250 Q{x},230 {x + 64},250 L{x + 80},400 Z", ALUMINIUM, INK, 3)
+    f.path(f"M{x + 64},270 Q{x + 130},280 {x + 80},370", stroke=INK, w=12, extra='stroke-linecap="round"')
+    f.path(f"M{x - 64},280 L{x - 110},248 L{x - 72},318 Z", ALUMINIUM, INK, 3)
+    f.rect(x - 90, 392, 180, 12, INK, None, 0, 3)
+    f.circle(x + 40, 370, 8, HOT)
+    for k in range(3):
+        f.path(f"M{x - 112 + k * 16},236 q-14,-24 0,-48 t0,-48", stroke=WHITE, w=10, extra='stroke-linecap="round"')
+        f.path(f"M{x - 112 + k * 16},236 q-14,-24 0,-48 t0,-48", stroke=RULE, w=2, extra='stroke-linecap="round" stroke-opacity="0.6"')
+    # lamp
+    x = 960
+    f.path(f"M{x - 70},400 h140 l-30,-20 h-80 Z", IRON, INK, 3)
+    f.line(x, 380, x, 230, INK, 6)
+    f.add(f'<path d="M{x - 160},420 L{x - 46},230 H{x + 46} L{x + 160},420 Z" fill="{HEAT_LIGHT}" fill-opacity="0.35"/>')
+    f.path(f"M{x - 70},240 L{x - 40},150 H{x + 40} L{x + 70},240 Z", HEAT, INK, 3)
+    f.circle(x, 238, 14, HEAT_LIGHT, INK, 2)
+    # clocks: a short time (a quarter of a turn) and a long time (an almost full turn)
+    for cx, t1 in ((420, 0.08), (780, 0.92)):
+        f.circle(cx, 140, 56, WHITE, INK, 3)
+        a = t1 * 2 * math.pi
+        if t1 > 0.5:
+            d = f"M{cx},140 L{cx},84 A56,56 0 1 1 {n(cx + 56 * math.sin(a))},{n(140 - 56 * math.cos(a))} Z"
+        else:
+            d = f"M{cx},140 L{cx},84 A56,56 0 0 1 {n(cx + 56 * math.sin(a))},{n(140 - 56 * math.cos(a))} Z"
+        f.add(f'<path d="{d}" fill="{COLD}" fill-opacity="0.3"/>')
+        for k in range(12):
+            b = k * math.pi / 6; f.line(cx + 46 * math.sin(b), 140 - 46 * math.cos(b), cx + 52 * math.sin(b), 140 - 52 * math.cos(b), MUTED, 2)
+        f.line(cx, 140, cx + 40 * math.sin(a), 140 - 40 * math.cos(a), INK, 4, cap="round"); f.circle(cx, 140, 5, INK)
+    # electricity meter
+    f.rect(540, 190, 120, 170, WHITE, INK, 3, 8)
+    f.rect(560, 214, 80, 34, INK, None, 0, 3)
+    for k in range(4): f.rect(566 + k * 18, 220, 14, 22, GOOD_LIGHT if k < 3 else HEAT_LIGHT, None, 0, 2)
+    f.circle(600, 300, 26, ALUMINIUM, INK, 2); f.line(600, 300, 618, 284, HOT, 3, cap="round")
+    f.path("M600,360 V400", stroke=INK, w=4)
+    return f.svg()
 
 
 def bars():
@@ -54,7 +102,7 @@ def graph_ab():
     return f.svg()
 
 
-FIGURES = {"bars": bars, "graph": graph, "graph-ab": graph_ab}
+FIGURES = {"hero": hero, "bars": bars, "graph": graph, "graph-ab": graph_ab}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "graph": "reveals: the power of each line printed beside it and the slope triangle 40 kJ in 20 s",

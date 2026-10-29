@@ -2,6 +2,32 @@
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, GOOD, GOOD_LIGHT,
                     ALUMINIUM, WATER, WATER_LIGHT, SAND, SAND_LIGHT, GRAIN, GLASS, n)
+from figlib import SAND_DARK
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: one distance from the Sun to Voyager 2, measured against three rulers of different steps."""
+    f = H.hero("fy12-hero", "Kuvitus: avaruudessa Aurinko vasemmalla ja Voyager 2 -luotain oikealla, välissä katkoviiva. "
+               "Viivan alla kolme samanpituista viivainta, joiden jakoviivat ovat eri tiheässä: sama matka kolmella eri yksiköllä.")
+    H.space(f, seed=3, count=80)
+    f.defs_add(f'<radialGradient id="fy12h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="0.6" stop-color="{HEAT}"/><stop offset="1" stop-color="{HEAT}" stop-opacity="0"/></radialGradient>')
+    f.circle(90, 200, 150, "url(#fy12h-sun)")
+    f.circle(90, 200, 62, HEAT_LIGHT)
+    for r, (rr, c) in zip((150, 205, 290), ((6, WATER_LIGHT), (5, HOT_LIGHT), (12, SAND_DARK))):
+        f.add(f'<path d="M{n(90 + r)},{n(200)} A{r},{r} 0 0 0 {n(90 + r * math.cos(-0.9))},{n(200 + r * math.sin(-0.9))}" fill="none" stroke="{MUTED}" stroke-width="1.5" stroke-dasharray="4 6"/>')
+        f.circle(90 + r * math.cos(-0.5), 200 + r * math.sin(-0.5), rr, c)
+    f.line(160, 200, 990, 200, WHITE, 3, dash="12 10")
+    H.probe(f, 1030, 200, 0.85)
+    for k, (y, step, c) in enumerate(((340, 17, COLD_LIGHT), (428, 85, HEAT_LIGHT), (516, 212.5, GOOD_LIGHT))):
+        f.rect(160, y - 26, 850, 52, c, WHITE, 2.5, 6)
+        f.line(160, y - 50, 160, y - 32, WHITE, 2); f.line(1010, y - 50, 1010, y - 32, WHITE, 2)
+        x, i = 160.0, 0
+        while x <= 1010.5:
+            long_ = (i % 5 == 0) if k == 0 else True
+            f.line(x, y - 26, x, y - 26 + (30 if long_ else 16), INK, 2.5 if long_ else 1.5)
+            x += step; i += 1
+    return f.svg()
 
 
 def bracket(f, x0, x1, y, up=True, color=INK, w=2.5):
@@ -116,7 +142,7 @@ def ruler_read():
     return f.svg()
 
 
-FIGURES = {"quantity": quantity, "prefixes": prefixes, "conversion": conversion, "ruler-read": ruler_read}
+FIGURES = {"hero": hero, "quantity": quantity, "prefixes": prefixes, "conversion": conversion, "ruler-read": ruler_read}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "quantity": "reveals: the reading l = 12,0 cm",

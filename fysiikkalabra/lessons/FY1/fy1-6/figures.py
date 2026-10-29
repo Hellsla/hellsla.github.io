@@ -1,7 +1,42 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-6` writes them into lesson.md."""
 from figlib import (Fig, Axes, INK, MUTED, RULE_LIGHT, WHITE, COLD, HEAT, ALUMINIUM, IRON, METAL_EDGE, GOOD, fi)
+from figlib import HEAT_LIGHT, SAND, n
+import herolib as H
 
 G = 9.81
+
+
+def hero():
+    """The chapter's opening illustration: on the airless Moon a hammer and a feather fall side by side, level at every moment."""
+    f = H.hero("fy16-hero", "Kuvitus: astronautti Kuun pinnalla mustaa taivasta vasten, Maa taivaalla. Astronautti on pudottanut vasaran ja höyhenen "
+               "samaan aikaan; haaleat välikuvat näyttävät, että ne ovat joka hetki samalla korkeudella.")
+    H.space(f, seed=6, count=60)
+    H.earth(f, "fy16h", 1040, 120, 60)
+    f.path("M0,470 Q300,440 600,462 T1200,452 V600 H0 Z", ALUMINIUM)
+    for cx, cy, rx in ((180, 520, 60), (820, 540, 90), (1060, 500, 40), (460, 560, 34)):
+        f.add(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{n(rx * 0.25)}" fill="{METAL_EDGE}"/><ellipse cx="{cx}" cy="{n(cy - 3)}" rx="{n(rx * 0.8)}" ry="{n(rx * 0.17)}" fill="{IRON}" fill-opacity="0.35"/>')
+    # astronaut: white suit, gold visor, arms out
+    x, yf = 470, 470
+    f.rect(x - 34, yf - 120, 28, 120, WHITE, INK, 3, 10); f.rect(x + 6, yf - 120, 28, 120, WHITE, INK, 3, 10)
+    f.rect(x - 66, yf - 262, 30, 110, ALUMINIUM, INK, 3, 8)
+    f.rect(x - 44, yf - 268, 88, 158, WHITE, INK, 3, 22)
+    f.path(f"M{x + 40},{yf - 240} L{x + 128},{yf - 290}", stroke=INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x + 40},{yf - 240} L{x + 128},{yf - 290}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
+    f.path(f"M{x - 40},{yf - 240} L{x - 20},{yf - 160}", stroke=INK, w=30, extra='stroke-linecap="round"')
+    f.path(f"M{x - 40},{yf - 240} L{x - 20},{yf - 160}", stroke=WHITE, w=24, extra='stroke-linecap="round"')
+    f.circle(x, yf - 310, 50, WHITE, INK, 3)
+    f.add(f'<ellipse cx="{x + 12}" cy="{yf - 310}" rx="34" ry="28" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="3"/>')
+    f.rect(x - 22, yf - 210, 44, 30, ALUMINIUM, INK, 2, 4)
+    def hammer(cx, cy, op):
+        g = f'<g transform="translate({n(cx)},{n(cy)}) scale(0.85)" opacity="{op}"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="{SAND}" stroke="{INK}" stroke-width="2"/>'
+        return g + f'<rect x="-22" y="-52" width="44" height="18" rx="3" fill="{IRON}" stroke="{INK}" stroke-width="2"/></g>'
+    def feather(cx, cy, op):
+        return (f'<g transform="translate({n(cx)},{n(cy)}) rotate(-12) scale(0.85)" opacity="{op}"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="{WHITE}" stroke="{INK}" stroke-width="2"/>'
+                f'<path d="M0,40 L0,-40" stroke="{INK}" stroke-width="2"/></g>')
+    for k, (y, op) in enumerate(((204, 0.3), (276, 0.55), (396, 1))):   # 24 t² below the hand at t = 1, 2, 3: the gaps grow (3 : 5)
+        f.add(hammer(x + 160, y, op)); f.add(feather(x + 250, y, op))
+    f.line(x + 110, 396, x + 290, 396, HEAT, 2, dash="8 6")
+    return f.svg()
 
 
 def _ball(f, gid, cx, cy, r, light, dark):
@@ -90,7 +125,7 @@ def two_planets():
     return f.svg()
 
 
-FIGURES = {"free-fall": free_fall, "vt-graph": vt_graph, "same-fall": same_fall, "two-planets": two_planets}
+FIGURES = {"hero": hero, "free-fall": free_fall, "vt-graph": vt_graph, "same-fall": same_fall, "two-planets": two_planets}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "free-fall": "reveals: the fall distances and speeds at 0–3 s",

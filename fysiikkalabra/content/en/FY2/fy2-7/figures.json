@@ -1,4 +1,5 @@
 {
+ "Kuvitus: maisemassa korkeat voimalinjapylväät, joiden johdot kulkevat kauas. Etualalla maan läpi leikattu näkymä: kaukolämpöputket, joiden ympärillä on paksu eristekerros, vievät lämpöä talolle.": "Illustration: tall power line pylons in a landscape, their wires running far away. In the foreground a cut-away view through the ground: district heating pipes surrounded by a thick layer of insulation carry heat to a house.",
  "Kaavakuva sähköverkon reitistä voimalaitokselta kotiin. Vasemmalta oikealle: voimalaitos ja sen muuntaja, kantaverkon voimalinja (jännite 110 kV:sta 400 kV:iin), sähköasema, jakeluverkon pylväät (20 kV) ja koti (0,4 kV, pistorasiassa 230 V). Alla oranssi nuoli kuvaa energian kulkua voimalaitokselta kotiin. Kuva ei ole mittakaavassa.": "Schematic of the route of electricity from the power plant to the home. From left to right: power plant and its transformer, national grid power line (voltage from 110 kV to 400 kV), substation, distribution network poles (20 kV) and home (0.4 kV, 230 V at the socket). Below, an orange arrow shows the flow of energy from the power plant to the home. Not to scale.",
  "kV": "kV",
  "muuntaja": "transformer",

@@ -1,6 +1,48 @@
 """Figures of fy2-2 (scripts/figlib.py); `python scripts/figures.py fy2-2` writes them into lesson.md."""
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, GOOD, GOOD_LIGHT, COLD, COLD_LIGHT, SAND_LIGHT, SAND, GRAIN, ALUMINIUM, PAPER, n
+from figlib import IRON, SAND_DARK
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: sunlight grows the grain, the grain becomes bread, the bread moves the cyclist."""
+    f = H.hero("fy22-hero", "Kuvitus: Aurinko paistaa viljapellolle. Oranssit nuolet kulkevat Auringosta viljaan, viljasta leipään ja "
+               "leivästä polkupyöräilijään, joka ajaa tiellä: liikkeen energia on peräisin Auringosta.")
+    H.sky(f, "fy22h", 420)
+    H.sun(f, "fy22h", 120, 110, 54)
+    H.cloud(f, 760, 90, 0.8); H.cloud(f, 1040, 150, 0.6)
+    H.forest(f, 330, 50, 34, GOOD, seed=2)
+    f.rect(0, 360, 1200, 240, GOOD_LIGHT)
+    # grain field on the left
+    f.rect(0, 380, 420, 120, SAND, None)
+    for k in range(26):
+        x = 12 + k * 16
+        f.line(x, 500, x + 4, 400 + 10 * H.rnd(k), GRAIN, 2)
+        f.add(f'<ellipse cx="{n(x + 4)}" cy="{n(394 + 10 * H.rnd(k))}" rx="5" ry="12" fill="{SAND_DARK}" stroke="{GRAIN}" stroke-width="1.5"/>')
+    # road
+    f.path("M0,520 H1200 V600 H0 Z", IRON)
+    f.path("M0,560 H1200", stroke=WHITE, w=4, extra='stroke-dasharray="40 30"')
+    # bread on a little board
+    f.rect(470, 420, 150, 18, SAND_DARK, INK, 2, 4)
+    f.path("M482,420 Q480,360 545,356 Q610,360 608,420 Z", SAND, INK, 3)
+    for k in range(3): f.path(f"M{510 + 26 * k},384 q10,-10 18,0", stroke=GRAIN, w=3)
+    # cyclist
+    x, y = 900, 510
+    for wx in (x - 80, x + 80):
+        f.circle(wx, y - 50, 50, "none", INK, 6); f.circle(wx, y - 50, 6, INK)
+    f.path(f"M{x - 80},{y - 50} L{x - 20},{y - 50} L{x + 40},{y - 130} L{x - 40},{y - 130} Z M{x - 20},{y - 50} L{x - 46},{y - 150} M{x + 80},{y - 50} L{x + 50},{y - 160}", stroke=HOT, w=7, extra='stroke-linejoin="round"')
+    f.line(x - 62, y - 152, x - 30, y - 152, INK, 8, cap="round"); f.line(x + 40, y - 162, x + 70, y - 168, INK, 6, cap="round")
+    f.path(f"M{x - 46},{y - 158} L{x - 10},{y - 100} L{x - 20},{y - 50}", stroke=INK, w=18, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.path(f"M{x - 46},{y - 160} L{x - 2},{y - 260}", stroke=COLD, w=40, extra='stroke-linecap="round"')
+    f.path(f"M{x - 14},{y - 238} L{x + 54},{y - 168}", stroke=COLD, w=18, extra='stroke-linecap="round"')
+    f.circle(x + 56, y - 168, 10, SAND_LIGHT)
+    f.circle(x + 12, y - 296, 28, SAND_LIGHT)
+    f.path(f"M{x - 18},{y - 302} Q{x - 8},{y - 336} {x + 22},{y - 330} Q{x + 44},{y - 324} {x + 40},{y - 300} Z", HOT, INK, 2)
+    # the energy route
+    for (x1, y1, x2, y2) in ((190, 160, 270, 330), (420, 400, 466, 396), (630, 380, 820, 300)):
+        f.block_arrow(x1, y1, x2, y2, HEAT, shaft=14, head=34, headlen=26)
+    return f.svg()
 
 
 def sun(f, cx, cy):
@@ -131,7 +173,7 @@ def tikapuut_kohteet():
     return f.svg()
 
 
-FIGURES = {"ketju": ketju, "tikapuut": tikapuut, "sailyminen": sailyminen, "tikapuut-kohteet": tikapuut_kohteet}
+FIGURES = {"hero": hero, "ketju": ketju, "tikapuut": tikapuut, "sailyminen": sailyminen, "tikapuut-kohteet": tikapuut_kohteet}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "tikapuut": "reveals: the energy of each thing placed on the scale, printed beside it",

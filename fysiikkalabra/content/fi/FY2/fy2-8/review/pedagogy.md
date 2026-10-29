@@ -1,21 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cbab112da685283e
+CONTENT-HASH: d50a9928881cd6f1
 
 ## Blocking
-- none
 
 ## Polish
-- inquiry.json:koe-1 / lesson.md Ydinajatus — the experiment table shows nykyinen = +16 °C (settled) while the text and the thermometer say today is +15 °C; the model answer explains it, but one sentence at the experiment ("lukema +16 on asettunut arvo, ei nykyinen") would prevent confusion.
-- inquiry.json:alkupera and kuljetus — non-optional on top of three interpret tasks, siirto, a five-part perustele, four checks and the exercises; core path is heavy for one hour — mark alkupera and kuljetus `optional`.
-- lesson.md:206 — the example's sanity check switches to 10^-6 t while the solution uses 0,001·0,001; use one conversion chain so the stage is followed without a jump.
-- lesson.md:102 — "ja sitä ilmakehän kasvihuonekaasut imevät" is awkward; write "ja ilmakehän kasvihuonekaasut imevät sen".
+- None.
 
 ## Checked
-- Delta: koe-1 and virhe options rebalanced; correct no longer longest; worked solution moved to feedback after commitment; still correct.
-- Opening question (small share, why the production method matters) is answered by the sim, the table and the example; slot goals incl. land use and transport covered (kuljetus, muut-perusteet).
-- Ennuste-1 can be refuted by koe-1 (0 ppm gives -18 °C); ennuste-2 is settled by the aineisto table; feedback repairs each misconception.
-- Sim honestly labelled as illustration with source values (model text); phone capture 390 px unclipped, readout understandable.
-- Figures 1 and 2 legible at 390 px, colour paired with labels (legend, text), bars to scale.
-- Example staged one step per stage; no repeat in siirto/tarkistus-2; mistakes values verified (13,2; 15 900; 0,049).
-- Perustele has observable criteria and a model answer; exit ticket tests the core idea.
-- Finnish and glossary terms correct otherwise.
+Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: the house and its socket fed by a smoking coal plant on one side and wind turbines on the other. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.

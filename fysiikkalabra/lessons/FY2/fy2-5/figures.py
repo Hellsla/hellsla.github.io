@@ -1,5 +1,40 @@
 """Figures of fy2-5 (scripts/figlib.py); `python scripts/figures.py fy2-5` writes them into lesson.md."""
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, HOT, SAND, SAND_LIGHT, GRAIN, GLASS, GOOD, n)
+from figlib import ALUMINIUM, COPPER, GOOD_LIGHT, HOT_LIGHT, METAL_EDGE, PAPER, SAND_DARK
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: a kilogram of petrol and a kilogram of firewood on equal scales, the petrol's flame much larger."""
+    f = H.hero("fy25-hero", "Kuvitus: kaksi samanlaista vaakaa, joiden lukemat ovat samat. Vasemmalla vaa'alla bensiinikanisteri, oikealla "
+               "halkoja. Kummankin yläpuolella liekki: bensiinin liekki on selvästi suurempi.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    f.rect(0, 470, 1200, 130, SAND, None); f.line(0, 470, 1200, 470, GRAIN, 3)
+    def flame(cx, base, sc):
+        f.path(f"M{n(cx - 60 * sc)},{base} Q{n(cx - 80 * sc)},{n(base - 90 * sc)} {n(cx - 10 * sc)},{n(base - 190 * sc)} Q{n(cx)},{n(base - 110 * sc)} {n(cx + 30 * sc)},{n(base - 120 * sc)} "
+               f"Q{n(cx + 84 * sc)},{n(base - 60 * sc)} {n(cx + 60 * sc)},{base} Z", HEAT, INK, 2)
+        f.path(f"M{n(cx - 30 * sc)},{base} Q{n(cx - 40 * sc)},{n(base - 50 * sc)} {n(cx)},{n(base - 104 * sc)} Q{n(cx + 40 * sc)},{n(base - 40 * sc)} {n(cx + 30 * sc)},{base} Z", HEAT_LIGHT)
+    for cx in (340, 860):
+        f.rect(cx - 150, 430, 300, 40, ALUMINIUM, INK, 3, 8)
+        f.rect(cx - 170, 416, 340, 16, METAL_EDGE, INK, 2, 4)
+        f.rect(cx - 40, 438, 80, 24, INK, None, 0, 4)
+        for k in range(3): f.rect(cx - 32 + 22 * k, 442, 18, 16, GOOD_LIGHT, None, 0, 2)
+    # petrol can
+    cx = 340
+    f.path(f"M{cx - 90},416 V250 L{cx - 50},210 H{cx + 90} V416 Z", HOT, INK, 3)
+    f.rect(cx - 10, 214, 70, 20, INK, None, 0, 6)
+    f.path(f"M{cx - 76},250 L{cx - 106},196 L{cx - 86},188 L{cx - 58},236", ALUMINIUM, INK, 3)
+    f.path(f"M{cx - 60},300 L{cx + 60},390 M{cx + 60},300 L{cx - 60},390", stroke=HOT_LIGHT, w=8)
+    flame(cx, 170, 0.95)
+    # firewood
+    cx = 860
+    for k, (dx, dy) in enumerate(((-70, 0), (0, 0), (70, 0), (-35, -56), (35, -56), (0, -112))):
+        f.add(f'<ellipse cx="{cx + dx - 70}" cy="{386 + dy}" rx="16" ry="28" fill="{SAND_DARK}" stroke="{INK}" stroke-width="2"/>')
+        f.rect(cx + dx - 70, 358 + dy, 140, 56, COPPER, INK, 3)
+        f.add(f'<ellipse cx="{cx + dx + 70}" cy="{386 + dy}" rx="16" ry="28" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="3"/>')
+        f.add(f'<ellipse cx="{cx + dx + 70}" cy="{386 + dy}" rx="7" ry="13" fill="none" stroke="{GRAIN}" stroke-width="2"/>')
+    flame(cx, 230, 0.5)
+    return f.svg()
 
 
 def defs(f):
@@ -93,7 +128,7 @@ def etiketti():
     return f.svg()
 
 
-FIGURES = {"energia": energia, "lampoarvot": lampoarvot, "etiketti": etiketti}
+FIGURES = {"hero": hero, "energia": energia, "lampoarvot": lampoarvot, "etiketti": etiketti}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "lampoarvot": "safe: rounded heating values of seven fuels printed at the bars (MJ/kg); a task computes E = Hm or compares fuels from them",

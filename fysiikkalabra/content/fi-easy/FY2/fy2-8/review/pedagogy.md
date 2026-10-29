@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 453829cb08be8da1
-
+CONTENT-HASH: 24fb400f69f4c3f6
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Selkeä suomi: lauseet lyhyitä, termit samat kuin suomessa, vaativuus sama (tulos on perusteltava energiasta, biomassa ei ole päästötön, vertailu per kilowattitunti). Oikea vaihtoehto ei ole pisin (check_choices puhdas), palaute käännetty jokaiselle vaihtoehdolle, lähtölippu kaksi kysymystä kuten suomessa.
+batch delta review: the hero aria-label has short simple sentences, keeps all content of the Finnish description and matches the picture.

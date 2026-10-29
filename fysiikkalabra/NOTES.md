@@ -91,8 +91,8 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   scale (ΔT 20 px and 105 px for c 4190 and 800). Gradients and patterns go in the figure's own `<defs>` with ids
   prefixed by the lesson (`fy36-water`), because two figures share one page. A filled path makes an arrow (a gradient
   on a vertical line's stroke does not render). Leave room: labels outside the shapes, a dashed rule between panels.
-- **Opening illustration** (2026-10-26, teacher chose flat vector style; samples fy3-6, fy3-7). Each lesson may open
-  with a wide illustration of its Miksi scene right under the question: `Fig(..., width=1200, hero=True)` in
+- **Opening illustration** (2026-10-26, teacher chose flat vector style; samples fy3-6, fy3-7). Every chapter opens
+  (teacher 2026-10-29; `lint_lesson.py` errors without one) with a wide illustration of its Miksi scene right under the question: `Fig(..., width=1200, hero=True)` in
   figures.py (`data-fig="hero"`), 1200 × 600, figure palette plus the paper `#f6f1e6`, flat shapes, no text, the
   subject in the middle third so it reads at 360 px; site.css `.fig-hero` gives it the column width.
   A second everyday scene of the same phenomenon may sit beside the summary list: `H.scene(...)` (600 × 360,

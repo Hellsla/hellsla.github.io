@@ -39,7 +39,7 @@ those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash
 `status` counts that PASS for the new hash. CI (`verify`) re-derives every carry that is in use from git history
 and fails if the change was not what the row says. A reviewer whose last verdict was FAIL always reviews in full.
 """
-import datetime, difflib, functools, hashlib, json, os, pathlib, re, subprocess, sys, tempfile
+import datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, figcat, i18n, inquiry
 
@@ -575,6 +575,12 @@ def changes(folder, base, part="lesson", split=False):
             if HERO.findall(a or "") != HERO.findall(b or ""): cats.add("illustration")
             if a2 != b2: cats |= classify(rel, list(difflib.unified_diff((a2 or "").splitlines(), (b2 or "").splitlines(), lineterm="", n=2)), folder.name)
             n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
+        if rel.endswith("/figures.json") and a and b:   # a translation's words: an illustration's description is part of the illustration
+            heroes = {html.unescape(x) for s in (old.source(courses.lesson_rel(folder, "lesson.md")), new.source(courses.lesson_rel(folder, "lesson.md")))
+                      for x in re.findall(r'<svg\b[^>]*data-fig="(?:hero|scene)"[^>]*aria-label="([^"]*)"', s or "")}
+            keep = lambda s: "\n".join(l for l in s.splitlines() if not any(json.dumps(h, ensure_ascii=False) in l for h in heroes))
+            if heroes and keep(a) == keep(b):
+                cats.add("illustration"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue
         goals = objective_form(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
         if goals is not None:                          # the goals rephrased; whatever else changed is classified as usual
             cats.add("objective-form"); ra = goals; a = _view(ra, rel, False)

@@ -2,6 +2,43 @@
 
 > **Miksi** pomppiva pallo pysähtyy lopulta lattialle?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pallo pomppii lattialla vasemmalta oikealle. Katkoviivalla piirretyt kaaret ovat jokaisen pompun jälkeen matalampia. Lopussa pallo on paikallaan lattialla. Jokaisessa kohdassa, jossa pallo osuu lattiaan, on pieni lämpöväre." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy21h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f1e6"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="0" width="1200" height="460" fill="url(#fy21h-wall)"/>
+  <rect x="0" y="460" width="1200" height="140" fill="#d9b26a"/>
+  <line x1="0" y1="460" x2="-40" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="100" y1="460" x2="60" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="200" y1="460" x2="160" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="300" y1="460" x2="260" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="400" y1="460" x2="360" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="500" y1="460" x2="460" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="600" y1="460" x2="560" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="700" y1="460" x2="660" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="800" y1="460" x2="760" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="900" y1="460" x2="860" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1000" y1="460" x2="960" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1100" y1="460" x2="1060" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1200" y1="460" x2="1160" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="460" x2="1200" y2="460" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M80,50 Q140,50 220,430 Q370,-30 520,430 Q640,150 760,430 Q850,270 940,430 Q985,350 1030,430" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 10"/>
+  <path d="M206,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M234,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M506,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M534,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M746,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M774,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M926,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M954,456 q-12,-6.5 0,-13.5 t0,-13.5 t0,-13.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <circle cx="80" cy="50" r="30" fill="#c92a2a" fill-opacity="0.3"/>
+  <circle cx="370" cy="200" r="30" fill="#c92a2a" fill-opacity="0.3"/>
+  <circle cx="640" cy="290" r="30" fill="#c92a2a" fill-opacity="0.3"/>
+  <circle cx="850" cy="350" r="30" fill="#c92a2a" fill-opacity="0.3"/>
+  <circle cx="985" cy="390" r="30" fill="#c92a2a" fill-opacity="0.3"/>
+  <circle cx="1090" cy="430" r="30" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
+  <path d="M1070,416 Q1090,406 1110,416" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
+</svg>
+
 ## Ydinajatus
 **Energia** on suure. Sen avulla kerrotaan, mitä systeemissä (tarkasteltavassa kokonaisuudessa) tapahtuu, kun jokin liikkuu, lämpenee, loistaa tai muuttaa muotoaan. Energian tunnus on $E$ ja yksikkö on **joule**, $\text{J}$. Joule on pieni yksikkö. Siksi energia ilmoitetaan usein myös kilojouleina. Etuliite kilo tarkoittaa tuhatta, joten $1\,\text{kJ} = 1000\,\text{J}$.
 

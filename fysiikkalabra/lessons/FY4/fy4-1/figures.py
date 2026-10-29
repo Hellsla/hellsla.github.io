@@ -1,5 +1,40 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy4-1` writes them into lesson.md."""
 from figlib import (Fig, Axes, INK, MUTED, RULE_LIGHT, WHITE, COLD, HEAT, SAND_LIGHT, COPPER, ALUMINIUM, HEAT_LIGHT, fi)
+import math
+from figlib import GOOD, GOOD_LIGHT, HOT, IRON, SAND, SAND_DARK, WATER, WATER_LIGHT
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: a cyclist rides once round a lake and comes back to the start flag: a long path, no change of place."""
+    f = H.hero("fy41-hero", "Kuvitus: ylhäältä vinosti nähty järvi, jonka ympäri kiertää polku. Lähtöpaikalla on lippu, ja polulla ajaa "
+               "pyöräilijä, joka on kiertämässä järven ympäri takaisin lähtöpaikkaan. Nuolet näyttävät kiertosuunnan.")
+    f.rect(0, 0, 1200, 600, GOOD_LIGHT)
+    for k in range(34):
+        x, y = 60 + H.rnd(k, 2) * 1080, 120 + H.rnd(k, 6) * 450
+        if (x - 600) ** 2 / 480 ** 2 + (y - 340) ** 2 / 230 ** 2 > 1: f.circle(x, y, 14 + 10 * H.rnd(k, 8), GOOD, INK, 2)
+    f.add(f'<ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="{SAND}" stroke-width="40"/>')
+    f.add(f'<ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="{SAND_DARK}" stroke-width="2" stroke-dasharray="2 10"/>')
+    f.add(f'<ellipse cx="600" cy="340" rx="370" ry="156" fill="{WATER_LIGHT}" stroke="{WATER}" stroke-width="3"/>')
+    for k in range(5): f.path(f"M{430 + k * 70},{300 + 18 * (k % 2)} q16,-8 32,0", stroke=WHITE, w=3)
+    for t in (1.0, 2.3, 3.6, 4.9, 5.9):
+        x, y = 600 + 430 * math.cos(t), 340 + 200 * math.sin(t)
+        dx, dy = -math.sin(t) * 430, math.cos(t) * 200; L = math.hypot(dx, dy)
+        f.arrow(x - dx / L * 34, y - dy / L * 34, x + dx / L * 34, y + dy / L * 34, INK, 4, 16)
+    # start flag at the bottom
+    fx, fy = 600, 540
+    f.line(fx, fy, fx, fy - 90, INK, 4); f.path(f"M{fx},{fy - 90} l50,14 l-50,14 Z", HOT, INK, 2)
+    f.add(f'<ellipse cx="{fx}" cy="{fy}" rx="16" ry="6" fill="{IRON}"/>')
+    # cyclist on the path, seen from the side, on the right
+    x, y = 980, 452
+    for wx in (x - 36, x + 36): f.circle(wx, y, 22, "none", INK, 4)
+    f.path(f"M{x - 36},{y} L{x - 8},{y} L{x + 18},{y - 36} L{x - 18},{y - 36} Z M{x - 8},{y} L{x - 22},{y - 46} M{x + 36},{y} L{x + 22},{y - 50}", stroke=HOT, w=4, extra='stroke-linejoin="round"')
+    f.path(f"M{x - 22},{y - 50} L{x - 2},{y - 100}", stroke=COLD, w=18, extra='stroke-linecap="round"')
+    f.path(f"M{x - 4},{y - 92} L{x + 24},{y - 54}", stroke=COLD, w=8, extra='stroke-linecap="round"')
+    f.path(f"M{x - 22},{y - 50} L{x - 4},{y - 24} L{x - 8},{y}", stroke=INK, w=8, extra='stroke-linecap="round" stroke-linejoin="round"')
+    f.circle(x + 6, y - 116, 13, SAND_LIGHT)
+    f.path(f"M{x - 8},{y - 120} Q{x + 4},{y - 136} {x + 20},{y - 120} Z", HOT, INK, 2)
+    return f.svg()
 
 
 def _numberline(f, y, x0, step, label):
@@ -98,4 +133,4 @@ def jogger_graph():
     return f.svg()
 
 
-FIGURES = {"displacement": displacement, "round-trip": round_trip, "graph-slope": graph_slope, "jogger-graph": jogger_graph}
+FIGURES = {"hero": hero, "displacement": displacement, "round-trip": round_trip, "graph-slope": graph_slope, "jogger-graph": jogger_graph}

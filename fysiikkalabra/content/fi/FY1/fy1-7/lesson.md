@@ -2,6 +2,47 @@
 
 > **Miksi** kaksi samankokoista metallikuutiota voi tuntua kädessä aivan eri painoisilta, ja miten tuntemattoman kappaleen aineen voi päätellä pelkästä vaa'asta ja mittalasista?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea alumiininen ja tumma rautainen. Vaaka kallistuu rautakuution puolelle. Vieressä mittalasi, jossa on vettä." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="470" width="1200" height="130" fill="#d9b26a"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M470,470 L500,440 H620 L650,470 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="548" y="200" width="24" height="240" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <line x1="304" y1="155" x2="816" y2="245" stroke="#1f2933" stroke-width="14" stroke-linecap="round"/>
+  <line x1="304" y1="155" x2="816" y2="245" stroke="#c4ccd4" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="560" cy="200" r="12" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <path d="M550,192 L560,130 L570,192 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="304" y1="155" x2="234" y2="285" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="304" y1="155" x2="374" y2="285" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M214,285 Q304,319 394,285 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="262" y="201" width="84" height="84" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <path d="M262,201 l22,-18 h84 l-22,18 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M346,201 l22,-18 v84 l-22,18 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="816" y1="245" x2="746" y2="375" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="816" y1="245" x2="886" y2="375" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M726,375 Q816,409 906,375 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="774" y="291" width="84" height="84" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <path d="M774,291 l22,-18 h84 l-22,18 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M858,291 l22,-18 v84 l-22,18 Z" fill="#4b535b" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="940" y="452" width="136" height="18" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <rect x="960" y="260" width="96" height="192" fill="#a9d1f0"/>
+  <rect x="960" y="160" width="96" height="292" fill="#eef5f9" fill-opacity="0.35" stroke="#1f2933" stroke-width="3"/>
+  <path d="M960,260 Q1008.0,270 1056,260" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="960" y1="440" x2="988" y2="440" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="418" x2="976" y2="418" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="396" x2="988" y2="396" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="374" x2="976" y2="374" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="352" x2="988" y2="352" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="330" x2="976" y2="330" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="308" x2="988" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="286" x2="976" y2="286" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="264" x2="988" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="242" x2="976" y2="242" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="220" x2="988" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="198" x2="976" y2="198" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="960" y1="176" x2="988" y2="176" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+</svg>
+
 ## Ydinajatus
 
 Kappaleen massa $m$ kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Tilavuus $V$ kertoo, kuinka suuren tilan kappale vie; sen SI-yksikkö on kuutiometri ($\text{m}^3$). Kaksi samankokoista kappaletta voivat olla eri painoisia, jos ne ovat eri ainetta: kymmenen kuutiosenttimetrin mäntykuutio on kevyt, alumiinikuutio selvästi raskaampi ja rautakuutio raskain.

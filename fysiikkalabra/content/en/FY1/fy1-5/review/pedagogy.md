@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b03524f7a8a91901
+CONTENT-HASH: 87d111e9e4769a29
 ## Blocking
 
 ## Polish
-- None.
+
 ## Checked
-batch delta review: title now describes the content and matches goals and meta; en dash/colon style consistent with the course's other titles; no other text affected.
+batch delta review: the hero aria-label is a faithful, natural English translation of the Finnish description and matches the picture.

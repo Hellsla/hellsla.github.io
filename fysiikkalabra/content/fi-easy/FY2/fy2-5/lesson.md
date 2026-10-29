@@ -2,6 +2,56 @@
 
 > **Miksi** kilogrammasta bensiiniä ja kilogrammasta ilmakuivaa polttopuuta vapautuu palaessa eri määrä energiaa? Molemmat ovat kuitenkin vain palavaa ainetta.
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kaksi samanlaista vaakaa. Vaa&#x27;at näyttävät samaa lukemaa. Vasemmalla vaa&#x27;alla on bensiinikanisteri ja oikealla halkoja. Kummankin yläpuolella on liekki. Bensiinin liekki on selvästi suurempi." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <rect x="0" y="470" width="1200" height="130" fill="#d9b26a"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="190" y="430" width="300" height="40" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="170" y="416" width="340" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="300" y="438" width="80" height="24" rx="4" fill="#1f2933"/>
+  <rect x="308" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <rect x="330" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <rect x="352" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <rect x="710" y="430" width="300" height="40" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="690" y="416" width="340" height="16" rx="4" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="820" y="438" width="80" height="24" rx="4" fill="#1f2933"/>
+  <rect x="828" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <rect x="850" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <rect x="872" y="442" width="18" height="16" rx="2" fill="#b2f2bb"/>
+  <path d="M250,416 V250 L290,210 H430 V416 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="330" y="214" width="70" height="20" rx="6" fill="#1f2933"/>
+  <path d="M264,250 L234,196 L254,188 L282,236" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M280,300 L400,390 M400,300 L280,390" fill="none" stroke="#f2a69c" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M283,170 Q264,84.5 330.5,-10.5 Q340,65.5 368.5,56 Q420,113 397,170 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M311.5,170 Q302,122.5 340,71 Q378,132 368.5,170 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <ellipse cx="720" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="720" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="860" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="860" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="790" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="790" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="930" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="930" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="860" cy="386" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="860" y="358" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="1000" cy="386" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="1000" cy="386" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="755" cy="330" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="755" y="302" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="895" cy="330" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="895" cy="330" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="825" cy="330" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="825" y="302" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="965" cy="330" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="965" cy="330" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <ellipse cx="790" cy="274" rx="16" ry="28" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="790" y="246" width="140" height="56" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="930" cy="274" rx="16" ry="28" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="930" cy="274" rx="7" ry="13" fill="none" stroke="#a97a35" stroke-width="2"/>
+  <path d="M830,230 Q820,185 855,135 Q860,175 875,170 Q902,200 890,230 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M845,230 Q840,205 860,178 Q880,210 875,230 Z" fill="#ffc078" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta. Se on aine, jonka kemiallinen energia vapautetaan polttamalla. Myös ydinvoimalan uraania sanotaan polttoaineeksi. Ydinpolttoaine ei kuitenkaan pala. Sen energia on ydinenergiaa (luku *Energialajit ja energian säilyminen*). Kemiallinen energia on energiaa, joka on varastoituna aineen atomien ja molekyylien väliseen rakenteeseen. Kun polttoaine palaa, rakenne muuttuu. Silloin energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä. Kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.
 

@@ -2,6 +2,71 @@
 
 > **Miksi** mittauspisteet eivät yleensä osu kaikki täsmälleen samalle suoralle, ja silti niihin sovitetusta yhdestä suorasta voi lukea suureiden välisen riippuvuuden?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pöydällä on ruutupaperi. Paperilla on mittauspisteitä. Pisteet eivät ole tarkalleen samalla suoralla. Pisteiden poikki on piirretty viivaimella yksi suora. Vieressä on lyijykynä." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#f1dfb5"/>
+  <line x1="0" y1="30" x2="1200" y2="14" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="98" x2="1200" y2="82" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="166" x2="1200" y2="150" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="234" x2="1200" y2="218" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="302" x2="1200" y2="286" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="370" x2="1200" y2="354" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="438" x2="1200" y2="422" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="506" x2="1200" y2="490" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="574" x2="1200" y2="558" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M260,40 L960,24 L976,566 L276,580 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="303" y1="572" x2="311" y2="32" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="268.5" y1="546" x2="968.5" y2="531" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="338" y1="571.5" x2="346" y2="31.5" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="269" y1="519" x2="969" y2="504" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="373" y1="571" x2="381" y2="31" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="269" y1="492" x2="969" y2="477" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="408" y1="570" x2="416" y2="30" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="269.5" y1="465" x2="969.5" y2="450" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="443" y1="569" x2="451" y2="29" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="270" y1="438" x2="970" y2="423" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="478" y1="568.5" x2="486" y2="28.5" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="270.5" y1="411" x2="970.5" y2="396" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="513" y1="568" x2="521" y2="28" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="271" y1="384" x2="971" y2="369" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="548" y1="567" x2="556" y2="27" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="271" y1="357" x2="971" y2="342" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="583" y1="566" x2="591" y2="26" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="271.5" y1="330" x2="971.5" y2="315" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="618" y1="565.5" x2="626" y2="25.5" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="272" y1="303" x2="972" y2="288" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="653" y1="565" x2="661" y2="25" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="272.5" y1="276" x2="972.5" y2="261" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="688" y1="564" x2="696" y2="24" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="273" y1="249" x2="973" y2="234" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="723" y1="563" x2="731" y2="23" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="273" y1="222" x2="973" y2="207" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="758" y1="562.5" x2="766" y2="22.5" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="273.5" y1="195" x2="973.5" y2="180" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="793" y1="562" x2="801" y2="22" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="274" y1="168" x2="974" y2="153" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="828" y1="561" x2="836" y2="21" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="274.5" y1="141" x2="974.5" y2="126" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="863" y1="560" x2="871" y2="20" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="275" y1="114" x2="975" y2="99" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="898" y1="559.5" x2="906" y2="19.5" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="275" y1="87" x2="975" y2="72" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="933" y1="559" x2="941" y2="19" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="275.5" y1="60" x2="975.5" y2="45" stroke="#d0e6fb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="339" y1="517.5" x2="913" y2="505" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="339" y1="517.5" x2="345.5" y2="74.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="353" y1="495.5" x2="891" y2="101" stroke="#e8590c" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="395.5" cy="462.5" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="459.5" cy="390.5" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="522.5" cy="384" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="587" cy="312.5" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="650" cy="295" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="714" cy="234" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="777.5" cy="206" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="841.5" cy="134" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <g transform="translate(652.5,340) rotate(-36.5)"><rect x="-330" y="0" width="660" height="56" rx="4" fill="#eef5f9" fill-opacity="0.75" stroke="#8a96a3" stroke-width="2"/><line x1="-320" y1="0" x2="-320" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="-304" y1="0" x2="-304" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-288" y1="0" x2="-288" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-272" y1="0" x2="-272" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-256" y1="0" x2="-256" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-240" y1="0" x2="-240" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="-224" y1="0" x2="-224" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-208" y1="0" x2="-208" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-192" y1="0" x2="-192" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-176" y1="0" x2="-176" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-160" y1="0" x2="-160" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="-144" y1="0" x2="-144" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-128" y1="0" x2="-128" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-112" y1="0" x2="-112" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-96" y1="0" x2="-96" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-80" y1="0" x2="-80" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="-64" y1="0" x2="-64" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-48" y1="0" x2="-48" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-32" y1="0" x2="-32" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="-16" y1="0" x2="-16" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="0" y1="0" x2="0" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="16" y1="0" x2="16" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="32" y1="0" x2="32" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="48" y1="0" x2="48" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="64" y1="0" x2="64" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="80" y1="0" x2="80" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="96" y1="0" x2="96" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="112" y1="0" x2="112" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="128" y1="0" x2="128" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="144" y1="0" x2="144" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="160" y1="0" x2="160" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="176" y1="0" x2="176" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="192" y1="0" x2="192" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="208" y1="0" x2="208" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="224" y1="0" x2="224" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="240" y1="0" x2="240" y2="30" stroke="#8a96a3" stroke-width="2"/><line x1="256" y1="0" x2="256" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="272" y1="0" x2="272" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="288" y1="0" x2="288" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="304" y1="0" x2="304" y2="18" stroke="#8a96a3" stroke-width="2"/><line x1="320" y1="0" x2="320" y2="30" stroke="#8a96a3" stroke-width="2"/></g>
+  <g transform="translate(1040,300) rotate(-62)"><rect x="-150" y="-12" width="260" height="24" fill="#ffc078" stroke="#1f2933" stroke-width="2"/><path d="M110,-12 L150,0 L110,12 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/><path d="M138,-4 L150,0 L138,4 Z" fill="#1f2933"/><rect x="-176" y="-12" width="26" height="24" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/></g>
+</svg>
+
 ## Ydinajatus
 ### Kuvaaja kokoaa mittaukset yhteen
 Mittaat kaksi suuretta. Esimerkiksi mittaat kärryn kulkeman matkan $s$ eri ajanhetkillä $t$. Jokainen mittaus on kuvaajassa yksi piste. Pisteen vaakakoordinaatti on yhden suureen arvo. Pystykoordinaatti on toisen suureen arvo. Vaaka-akselille laitetaan yleensä se suure, jonka arvon mittaaja itse valitsee. Se voi olla myös suure, joka kasvaa tasaisesti, kuten aika. Pystyakselille laitetaan mitattava suure.

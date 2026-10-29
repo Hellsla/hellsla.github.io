@@ -2,6 +2,105 @@
 
 > **Miksi** astronautti Kuussa pudotti vasaran ja höyhenen samaan aikaan ja ne osuivat maahan yhtä aikaa, vaikka Maassa höyhen leijailee hitaasti alas?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: astronautti seisoo Kuun pinnalla. Taivas on musta, ja taivaalla näkyy Maa. Astronautti on pudottanut vasaran ja höyhenen samaan aikaan. Haaleat välikuvat näyttävät, että vasara ja höyhen ovat joka hetki samalla korkeudella." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy16h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy16h-clip"><circle cx="1040" cy="120" r="60"/></clipPath></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
+  <circle cx="1170" cy="132" r="1.36652" fill="#ffffff"/>
+  <circle cx="979" cy="0" r="2.19219" fill="#ffffff"/>
+  <circle cx="43" cy="599.5" r="1.21642" fill="#ffffff"/>
+  <circle cx="27" cy="437.5" r="1.16567" fill="#ffffff"/>
+  <circle cx="987" cy="137" r="1.57655" fill="#ffffff"/>
+  <circle cx="103" cy="213.5" r="1.45149" fill="#ffffff"/>
+  <circle cx="311.5" cy="253" r="2.13864" fill="#ffffff"/>
+  <circle cx="171.5" cy="347.5" r="2.33082" fill="#ffffff"/>
+  <circle cx="803.5" cy="489" r="1.48391" fill="#ffffff"/>
+  <circle cx="500.5" cy="524.5" r="2.12911" fill="#ffffff"/>
+  <circle cx="887" cy="338" r="2.44032" fill="#ffffff"/>
+  <circle cx="1013" cy="353.5" r="2.01357" fill="#ffffff"/>
+  <circle cx="837.5" cy="487" r="1.44702" fill="#ffffff"/>
+  <circle cx="1054.5" cy="119" r="1.57908" fill="#ffffff"/>
+  <circle cx="590" cy="245.5" r="1.35048" fill="#ffffff"/>
+  <circle cx="1002.5" cy="243" r="1.34652" fill="#ffffff"/>
+  <circle cx="382.5" cy="470" r="2.46813" fill="#ffffff"/>
+  <circle cx="1064" cy="285.5" r="1.01848" fill="#ffffff"/>
+  <circle cx="817" cy="305" r="1.19434" fill="#ffffff"/>
+  <circle cx="1128.5" cy="358.5" r="2.1448" fill="#ffffff"/>
+  <circle cx="699" cy="310.5" r="2.21278" fill="#ffffff"/>
+  <circle cx="1068" cy="288" r="1.87032" fill="#ffffff"/>
+  <circle cx="248.5" cy="312" r="1.93293" fill="#ffffff"/>
+  <circle cx="241.5" cy="5" r="2.14185" fill="#ffffff"/>
+  <circle cx="745" cy="503" r="1.97347" fill="#ffffff"/>
+  <circle cx="87" cy="4.5" r="2.16344" fill="#ffffff"/>
+  <circle cx="1082" cy="119" r="1.02046" fill="#ffffff"/>
+  <circle cx="968" cy="224" r="1.85541" fill="#ffffff"/>
+  <circle cx="1011" cy="450" r="2.49263" fill="#ffffff"/>
+  <circle cx="300" cy="396.5" r="1.05591" fill="#ffffff"/>
+  <circle cx="411" cy="3" r="1.57702" fill="#ffffff"/>
+  <circle cx="748" cy="554" r="1.93231" fill="#ffffff"/>
+  <circle cx="695" cy="362" r="1.93327" fill="#ffffff"/>
+  <circle cx="550.5" cy="312" r="1.05066" fill="#ffffff"/>
+  <circle cx="150.5" cy="536.5" r="1.73401" fill="#ffffff"/>
+  <circle cx="306.5" cy="277" r="1.79191" fill="#ffffff"/>
+  <circle cx="1153.5" cy="109.5" r="2.35188" fill="#ffffff"/>
+  <circle cx="1178" cy="105" r="1.68043" fill="#ffffff"/>
+  <circle cx="175.5" cy="116" r="1.98917" fill="#ffffff"/>
+  <circle cx="1081" cy="284" r="2.42495" fill="#ffffff"/>
+  <circle cx="333.5" cy="166" r="1.72597" fill="#ffffff"/>
+  <circle cx="309" cy="324" r="1.87081" fill="#ffffff"/>
+  <circle cx="927" cy="177.5" r="1.48987" fill="#ffffff"/>
+  <circle cx="291" cy="438" r="2.26872" fill="#ffffff"/>
+  <circle cx="1184" cy="182.5" r="2.43052" fill="#ffffff"/>
+  <circle cx="981" cy="92" r="1.80133" fill="#ffffff"/>
+  <circle cx="254" cy="163.5" r="2.19842" fill="#ffffff"/>
+  <circle cx="454" cy="305.5" r="2.16858" fill="#ffffff"/>
+  <circle cx="1136.5" cy="508" r="1.21393" fill="#ffffff"/>
+  <circle cx="581" cy="225.5" r="1.21905" fill="#ffffff"/>
+  <circle cx="219.5" cy="415" r="2.24394" fill="#ffffff"/>
+  <circle cx="967.5" cy="219" r="1.09038" fill="#ffffff"/>
+  <circle cx="911.5" cy="482.5" r="1.65531" fill="#ffffff"/>
+  <circle cx="708" cy="568.5" r="1.12914" fill="#ffffff"/>
+  <circle cx="1131" cy="28.5" r="2.18118" fill="#ffffff"/>
+  <circle cx="553" cy="453" r="2.32381" fill="#ffffff"/>
+  <circle cx="571.5" cy="99" r="2.40409" fill="#ffffff"/>
+  <circle cx="266.5" cy="369" r="2.55851" fill="#ffffff"/>
+  <circle cx="432.5" cy="2" r="1.07231" fill="#ffffff"/>
+  <circle cx="776" cy="211.5" r="1.96703" fill="#ffffff"/>
+  <circle cx="1040" cy="120" r="64" fill="#a5d8ff" fill-opacity="0.35"/>
+  <circle cx="1040" cy="120" r="60" fill="url(#fy16h-ocean)"/>
+  <g clip-path="url(#fy16h-clip)">
+  <path d="M998,84 Q1022,66 1043,83 Q1052,102 1034,114 Q1037,138 1022,156 Q1010,132 1004,117 Q986,102 998,84 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M1058,126 Q1082,117 1091,138 Q1082,162 1064,156 Q1052,144 1058,126 Z" fill="#e9c98a" stroke-linejoin="round"/>
+  <path d="M1016,72 q21,-5 42,0" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M1064,96 q18,-5 36,0" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M992,138 q15,-5 30,0" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M1046,168 q24,-5 48,0" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M1076,162 q12,-5 24,0" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.85"/>
+  </g>
+  <path d="M0,470 Q300,440 600,462 T1200,452 V600 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
+  <ellipse cx="180" cy="520" rx="60" ry="15" fill="#8a96a3"/><ellipse cx="180" cy="517" rx="48" ry="10" fill="#6c757d" fill-opacity="0.35"/>
+  <ellipse cx="820" cy="540" rx="90" ry="22.5" fill="#8a96a3"/><ellipse cx="820" cy="537" rx="72" ry="15.5" fill="#6c757d" fill-opacity="0.35"/>
+  <ellipse cx="1060" cy="500" rx="40" ry="10" fill="#8a96a3"/><ellipse cx="1060" cy="497" rx="32" ry="7" fill="#6c757d" fill-opacity="0.35"/>
+  <ellipse cx="460" cy="560" rx="34" ry="8.5" fill="#8a96a3"/><ellipse cx="460" cy="557" rx="27" ry="6" fill="#6c757d" fill-opacity="0.35"/>
+  <rect x="436" y="350" width="28" height="120" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="476" y="350" width="28" height="120" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="404" y="208" width="30" height="110" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="426" y="202" width="88" height="158" rx="22" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M510,230 L598,180" fill="none" stroke="#1f2933" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M510,230 L598,180" fill="none" stroke="#ffffff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M430,230 L450,310" fill="none" stroke="#1f2933" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M430,230 L450,310" fill="none" stroke="#ffffff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="470" cy="160" r="50" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="482" cy="160" rx="34" ry="28" fill="#ffc078" stroke="#1f2933" stroke-width="3"/>
+  <rect x="448" y="260" width="44" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <g transform="translate(630,204) scale(0.85)" opacity="0.3"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,204) rotate(-12) scale(0.85)" opacity="0.3"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(630,276) scale(0.85)" opacity="0.55"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,276) rotate(-12) scale(0.85)" opacity="0.55"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(630,396) scale(0.85)" opacity="1"><rect x="-4" y="-40" width="8" height="64" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/><rect x="-22" y="-52" width="44" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/></g>
+  <g transform="translate(720,396) rotate(-12) scale(0.85)" opacity="1"><path d="M0,30 Q-22,-8 0,-44 Q22,-8 0,30 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M0,40 L0,-40" stroke="#1f2933" stroke-width="2"/></g>
+  <line x1="580" y1="396" x2="760" y2="396" stroke="#e8590c" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+</svg>
+
 ## Ydinajatus
 Kun kappale päästetään putoamaan levosta, sen nopeus kasvaa. **Vapaa pudotus** on putoamista, jossa ilmanvastusta ei ole. Mittaukset näyttävät, että vapaassa pudotuksessa nopeus kasvaa joka sekunti yhtä paljon. Maan pinnalla se kasvaa $9{,}81\,\text{m/s}$ sekunnissa. Yhden sekunnin kuluttua nopeus on $9{,}81\,\text{m/s}$, kahden kuluttua $19{,}6\,\text{m/s}$ ja kolmen kuluttua $29{,}4\,\text{m/s}$. Kappale ei siis putoa tasaisella nopeudella kuten tasaisessa liikkeessä (luku *Tasainen liike – nopeus, paikka ja kuvaajat*). Se kiihtyy.
 

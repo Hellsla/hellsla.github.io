@@ -115,3 +115,75 @@ def earth(f, pre, cx, cy, r):
     for k, (dx, dy, w) in enumerate(((-40, -80, 70), (40, -40, 60), (-80, 30, 50), (10, 80, 80), (60, 70, 40))):
         f.path(f"M{n(cx + dx * u)},{n(cy + dy * u)} q{n(w * u / 2)},{n(-8 * u)} {n(w * u)},0", stroke=WHITE, w=7 * u, extra='stroke-linecap="round" stroke-opacity="0.85"')
     f.add("</g>")
+
+
+def stopwatch(f, cx, cy, r, turn, face=WHITE, hand=HOT):
+    """A stopwatch without numerals: the hand at `turn` of a full round (0 = up, clockwise)."""
+    f.rect(cx - r * 0.16, cy - r * 1.32, r * 0.32, r * 0.24, IRON, INK, 2, 3)
+    f.rect(cx - r * 0.07, cy - r * 1.1, r * 0.14, r * 0.14, IRON)
+    f.circle(cx, cy, r, ALUMINIUM, INK, 3)
+    f.circle(cx, cy, r * 0.82, face, INK, 2)
+    for k in range(12):
+        a = k * math.pi / 6; c, s = math.sin(a), -math.cos(a)
+        f.line(cx + c * r * 0.68, cy + s * r * 0.68, cx + c * r * 0.78, cy + s * r * 0.78, MUTED, 2)
+    a = turn * 2 * math.pi
+    f.line(cx, cy, cx + math.sin(a) * r * 0.66, cy - math.cos(a) * r * 0.66, hand, max(2, r * 0.07), cap="round")
+    f.circle(cx, cy, r * 0.08, INK)
+
+
+def probe(f, cx, cy, sc=1.0):
+    """A Voyager-style space probe: a white dish facing the viewer's left, a body and two booms."""
+    s = sc
+    f.line(cx, cy, cx + 150 * s, cy - 40 * s, METAL_EDGE, 4 * s)
+    f.line(cx, cy, cx + 110 * s, cy + 70 * s, METAL_EDGE, 4 * s)
+    f.circle(cx + 150 * s, cy - 40 * s, 9 * s, IRON)
+    f.rect(cx + 100 * s, cy + 64 * s, 22 * s, 14 * s, IRON, INK, 2)
+    f.rect(cx - 6 * s, cy - 14 * s, 44 * s, 28 * s, COPPER, INK, 2, 3)
+    f.add(f'<ellipse cx="{n(cx - 10 * s)}" cy="{n(cy)}" rx="{n(16 * s)}" ry="{n(62 * s)}" fill="{WHITE}" stroke="{INK}" stroke-width="{n(2.5 * s)}"/>')
+    f.add(f'<ellipse cx="{n(cx - 8 * s)}" cy="{n(cy)}" rx="{n(10 * s)}" ry="{n(44 * s)}" fill="{GLASS}"/>')
+    f.line(cx - 10 * s, cy, cx - 44 * s, cy, INK, 2.5 * s)
+
+
+def wind_turbine(f, x, ybase, h, turn=0.0, sc=1.0):
+    """A three-bladed wind turbine: tower foot at (x, ybase), hub h above it."""
+    f.path(f"M{n(x - 7 * sc)},{n(ybase)} L{n(x - 3 * sc)},{n(ybase - h)} H{n(x + 3 * sc)} L{n(x + 7 * sc)},{n(ybase)} Z", WHITE, INK, 2)
+    hy, L = ybase - h, h * 0.62
+    for k in range(3):
+        a = turn + k * 2 * math.pi / 3; c, s = math.sin(a), -math.cos(a)
+        px, py = -s, c
+        f.path(f"M{n(x + px * 5 * sc)},{n(hy + py * 5 * sc)} Q{n(x + c * L * 0.3 + px * 12 * sc)},{n(hy + s * L * 0.3 + py * 12 * sc)} {n(x + c * L)},{n(hy + s * L)} "
+               f"L{n(x - px * 5 * sc)},{n(hy - py * 5 * sc)} Z", WHITE, INK, 2)
+    f.circle(x, hy, 7 * sc, ALUMINIUM, INK, 2)
+
+
+def pylon(f, x, ybase, h, sc=1.0):
+    """A lattice transmission-line pylon; returns the points where its three conductors hang."""
+    w = 34 * sc
+    f.path(f"M{n(x - w)},{n(ybase)} L{n(x - 6 * sc)},{n(ybase - h)} H{n(x + 6 * sc)} L{n(x + w)},{n(ybase)}", stroke=IRON, w=3 * sc)
+    for k in range(1, 5):
+        y = ybase - h * k / 5; hw = w - (w - 6 * sc) * k / 5; y2 = ybase - h * (k - 1) / 5; hw2 = w - (w - 6 * sc) * (k - 1) / 5
+        f.line(x - hw2, y2, x + hw, y, IRON, 1.5 * sc); f.line(x + hw2, y2, x - hw, y, IRON, 1.5 * sc)
+    arms = []
+    for yy, half in ((ybase - h * 0.8, 52 * sc), (ybase - h, 34 * sc)):
+        f.line(x - half, yy, x + half, yy, IRON, 3 * sc)
+        arms += [(x - half, yy + 14 * sc), (x + half, yy + 14 * sc)]
+        for xx in (x - half, x + half): f.line(xx, yy, xx, yy + 14 * sc, INK, 2 * sc)
+    return arms
+
+
+def wire(f, a, b, sag=30, colour=INK, w=2):
+    mx, my = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2 + sag
+    f.path(f"M{n(a[0])},{n(a[1])} Q{n(mx)},{n(my)} {n(b[0])},{n(b[1])}", stroke=colour, w=w)
+
+
+def house(f, x, ybase, w, h, wall=SAND_LIGHT, roof=HOT, window=GLASS):
+    """A small detached house: lower-left corner at (x, ybase)."""
+    f.rect(x, ybase - h, w, h, wall, INK, 3)
+    f.path(f"M{n(x - 14)},{n(ybase - h)} L{n(x + w / 2)},{n(ybase - h - h * 0.62)} L{n(x + w + 14)},{n(ybase - h)} Z", roof, INK, 3)
+    f.rect(x + w * 0.14, ybase - h * 0.72, w * 0.26, h * 0.3, window, INK, 2)
+    f.rect(x + w * 0.58, ybase - h * 0.6, w * 0.24, h * 0.6, IRON, INK, 2)
+
+
+def smoke(f, x, y, sc=1.0, colour=MUTED, opacity=0.55):
+    for k, (dx, dy, r) in enumerate(((0, 0, 22), (26, -34, 30), (62, -70, 38), (108, -100, 46))):
+        f.add(f'<circle cx="{n(x + dx * sc)}" cy="{n(y + dy * sc)}" r="{n(r * sc)}" fill="{colour}" fill-opacity="{opacity}"/>')

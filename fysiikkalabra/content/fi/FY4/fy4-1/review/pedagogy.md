@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42c64583001b6d43
+CONTENT-HASH: 20d74f02d39131b2
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The bike is drawn side-on on a path seen obliquely from above; acceptable as a flat-style convention.
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: a loop round a lake, a start flag, clockwise ink arrows, the cyclist near the end of the loop; no velocity, acceleration or force arrows. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.

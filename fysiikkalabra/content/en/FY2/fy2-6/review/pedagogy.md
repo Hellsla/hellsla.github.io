@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8c27f245eeedabca
+CONTENT-HASH: 10157c2a0277bb7f
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
 
 ## Polish
-(none)
+- The dam and the reservoir are small at 360 px, though the plant now reads as hydropower at 1200 px.
+- The power lines are faint at 360 px.
 
 ## Checked
-Translation delta review against the reviewed Finnish: new choice checks 'Rated power and production' and 'Properties do not exclude each other' (one correct option each, feedback per option faithful and not revealing), the rebalanced option texts of the find-the-mistake and concept checks (correct option no longer longest, feedback updated), exit ticket reduced to one question, check numbering 4./5., lesson wording (peat, properties not categories, nuclear output can be reduced). Physics, numbers, units and LaTeX preserved; learn goals untouched. Pedagogy: demand and scaffolding match the Finnish; the check is answerable from the lesson.
+batch delta review: the redrawn hero: a dam wall and a reservoir now make the hydropower plant recognisable, so the aria-label's "joen padolla" is true of the picture; all plants still join one grid; the drawing is identical to the fi version apart from the aria-label, and the translated aria-label (unchanged, already passed a translation review) still describes it; no text in the image, figure palette.

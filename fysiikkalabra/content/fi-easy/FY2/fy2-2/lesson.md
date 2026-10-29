@@ -2,6 +2,105 @@
 
 > **Miksi** polkupyörän liike on lopulta peräisin Auringosta, ja miten energian määrän voi kertoa yhdellä luvulla?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: Aurinko paistaa viljapellolle. Oranssit nuolet kulkevat Auringosta viljaan, viljasta leipään ja leivästä pyöräilijään. Pyöräilijä ajaa tiellä. Liikkeen energia on siis peräisin Auringosta." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy22h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy22h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
+  <rect x="0" y="0" width="1200" height="420" fill="url(#fy22h-sky)"/>
+  <circle cx="120" cy="110" r="86.5" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M183,134 L211,134.5 L186.5,120.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M162.5,162.5 L186.5,176.5 L172.5,152.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M130.5,176.5 L144.5,201 L144,173 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M96,173 L95.5,201 L109.5,176.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M67.5,152.5 L53.5,176.5 L77.5,162.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M53.5,120.5 L29,134.5 L57,134 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M57,86 L29,85.5 L53.5,99.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M77.5,57.5 L53.5,43.5 L67.5,67.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M109.5,43.5 L95.5,19 L96,47 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M144,47 L144.5,19 L130.5,43.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M172.5,67.5 L186.5,43.5 L162.5,57.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M186.5,99.5 L211,85.5 L183,86 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <circle cx="120" cy="110" r="54" fill="url(#fy22h-sun)"/>
+  <path d="M688,106 Q686.5,79 718.5,82 Q731,53 763,63 Q792,47 808,77 Q837,80.5 833.5,106 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M986,162 Q985,141.5 1009,144 Q1018.5,122.5 1042.5,129.5 Q1064,117.5 1076,140.5 Q1097.5,143 1095,162 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,330 L12,307 L24.5,330 L37,305.5 L49.5,330 L65.5,297.5 L81,330 L96,298.5 L111.5,330 L133,281.5 L154.5,330 L172,292.5 L189.5,330 L207,292 L224.5,330 L242.5,292 L260,330 L278,291.5 L295.5,330 L313.5,292 L331,330 L346.5,297 L362.5,330 L383.5,282.5 L405,330 L425,285 L445.5,330 L459,302 L473,330 L492.5,287 L512,330 L531,289 L549.5,330 L571.5,281 L593,330 L609.5,295 L626,330 L647.5,282 L668.5,330 L685.5,293.5 L702.5,330 L720,293 L737,330 L754,294 L771,330 L784,304.5 L797,330 L810,305 L822.5,330 L838.5,296 L855,330 L875.5,283.5 L896.5,330 L914,291.5 L932,330 L945.5,303.5 L959,330 L976.5,292.5 L994,330 L1013.5,286.5 L1033,330 L1045.5,307 L1057.5,330 L1075.5,290 L1094,330 L1106.5,306.5 L1118.5,330 L1134.5,296.5 L1150.5,330 L1164,302 L1178,330 L1197.5,287.5 L1217,330 V360 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="0" y="360" width="1200" height="240" fill="#b2f2bb"/>
+  <rect x="0" y="380" width="420" height="120" fill="#d9b26a"/>
+  <line x1="12" y1="500" x2="16" y2="402" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="16" cy="396" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="28" y1="500" x2="32" y2="407.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="32" cy="401.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="44" y1="500" x2="48" y2="405.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="48" cy="399.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="60" y1="500" x2="64" y2="404.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="64" cy="398.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="76" y1="500" x2="80" y2="402.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="80" cy="396.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="92" y1="500" x2="96" y2="408" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="96" cy="402" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="108" y1="500" x2="112" y2="407.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="112" cy="401.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="124" y1="500" x2="128" y2="405" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="128" cy="399" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="140" y1="500" x2="144" y2="405" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="144" cy="399" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="156" y1="500" x2="160" y2="405" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="160" cy="399" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="172" y1="500" x2="176" y2="400" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="176" cy="394" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="188" y1="500" x2="192" y2="406" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="192" cy="400" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="204" y1="500" x2="208" y2="406" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="208" cy="400" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="220" y1="500" x2="224" y2="404" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="224" cy="398" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="236" y1="500" x2="240" y2="408.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="240" cy="402.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="252" y1="500" x2="256" y2="403.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="256" cy="397.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="268" y1="500" x2="272" y2="404" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="272" cy="398" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="284" y1="500" x2="288" y2="402.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="288" cy="396.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="300" y1="500" x2="304" y2="410" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="304" cy="404" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="316" y1="500" x2="320" y2="407" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="320" cy="401" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="332" y1="500" x2="336" y2="408.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="336" cy="402.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="348" y1="500" x2="352" y2="408.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="352" cy="402.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="364" y1="500" x2="368" y2="400.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="368" cy="394.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="380" y1="500" x2="384" y2="406.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="384" cy="400.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="396" y1="500" x2="400" y2="409.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="400" cy="403.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <line x1="412" y1="500" x2="416" y2="402.5" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <ellipse cx="416" cy="396.5" rx="5" ry="12" fill="#e9c98a" stroke="#a97a35" stroke-width="1.5"/>
+  <path d="M0,520 H1200 V600 H0 Z" fill="#6c757d" stroke-linejoin="round"/>
+  <path d="M0,560 H1200" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-dasharray="40 30"/>
+  <rect x="470" y="420" width="150" height="18" rx="4" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
+  <path d="M482,420 Q480,360 545,356 Q610,360 608,420 Z" fill="#d9b26a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M510,384 q10,-10 18,0" fill="none" stroke="#a97a35" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M536,384 q10,-10 18,0" fill="none" stroke="#a97a35" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M562,384 q10,-10 18,0" fill="none" stroke="#a97a35" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="820" cy="460" r="50" fill="none" stroke="#1f2933" stroke-width="6"/>
+  <circle cx="820" cy="460" r="6" fill="#1f2933"/>
+  <circle cx="980" cy="460" r="50" fill="none" stroke="#1f2933" stroke-width="6"/>
+  <circle cx="980" cy="460" r="6" fill="#1f2933"/>
+  <path d="M820,460 L880,460 L940,380 L860,380 Z M880,460 L854,360 M980,460 L950,350" fill="none" stroke="#c92a2a" stroke-width="7" stroke-linejoin="round" stroke-linejoin="round"/>
+  <line x1="838" y1="358" x2="870" y2="358" stroke="#1f2933" stroke-width="8" stroke-linecap="round"/>
+  <line x1="940" y1="348" x2="970" y2="342" stroke="#1f2933" stroke-width="6" stroke-linecap="round"/>
+  <path d="M854,352 L890,410 L880,460" fill="none" stroke="#1f2933" stroke-width="18" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M854,350 L898,250" fill="none" stroke="#1971c2" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M886,272 L954,342" fill="none" stroke="#1971c2" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="956" cy="342" r="10" fill="#f1dfb5"/>
+  <circle cx="912" cy="214" r="28" fill="#f1dfb5"/>
+  <path d="M882,208 Q892,174 922,180 Q944,186 940,210 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M183.5,163 L252.5,309.5 L243.5,313.5 L270,330 L274.5,299 L265.5,303.5 L196.5,157 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M420.5,407 L440.5,405 L441.5,415 L466,396 L438.5,381.5 L439.5,391.5 L419.5,393 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M632.5,386.5 L799,316.5 L802.5,326 L820,300 L789.5,294.5 L793.5,303.5 L627.5,373.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 ### Energia muuttuu muodosta toiseen
 Energia on suure. Sen avulla kuvataan, mitä systeemissä voi tapahtua. Energia esiintyy eri muodoissa. Muotoja ovat esimerkiksi mekaaninen energia, kemiallinen energia, sähköenergia, lämpöenergia, säteily ja ydinenergia (luku *Energialajit ja energian säilyminen*). Arjessa energia on harvoin vain yhdessä muodossa. Se muuttuu muodosta toiseen monessa vaiheessa. Vaiheet muodostavat ketjun.

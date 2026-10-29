@@ -1,5 +1,26 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-5` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, COLD, COLD_LIGHT, HEAT, GLASS, IRON, n
+from figlib import HEAT_LIGHT
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: Voyager 2 far from the Sun, its earlier positions at equal time steps equally spaced on a straight line."""
+    f = H.hero("fy15-hero", "Kuvitus: Aurinko vasemmalla avaruudessa, Voyager 2 -luotain oikealla. Luotaimen takana suoralla jäljellä "
+               "tasavälein haaleita merkkejä sen aiemmista paikoista yhtä pitkin aikavälein; seuraavat paikat jatkuvat eteenpäin katkoviivana.")
+    H.space(f, seed=5, count=90)
+    f.defs_add(f'<radialGradient id="fy15h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{HEAT_LIGHT}"/><stop offset="0.6" stop-color="{HEAT}"/><stop offset="1" stop-color="{HEAT}" stop-opacity="0"/></radialGradient>')
+    f.circle(40, 470, 130, "url(#fy15h-sun)"); f.circle(40, 470, 54, HEAT_LIGHT)
+    x0, y0, x1, y1 = 140, 440, 1120, 130
+    def at(t): return x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
+    f.line(*at(0), *at(0.66), WHITE, 2)
+    f.line(*at(0.7), *at(1), WHITE, 2, dash="10 10")
+    for k in range(8):
+        x, y = at(0.08 + k * 0.08); f.circle(x, y, 9, COLD_LIGHT, WHITE, 2)
+    for k in range(3):
+        x, y = at(0.76 + k * 0.08); f.add(f'<circle cx="{n(x)}" cy="{n(y)}" r="9" fill="none" stroke="{WHITE}" stroke-width="2" stroke-dasharray="4 4"/>')
+    H.probe(f, *at(0.72), 0.7)
+    return f.svg()
 
 
 def cart(f, cx, cy):
@@ -65,7 +86,7 @@ def line_read():
     return f.svg()
 
 
-FIGURES = {"motion": motion, "graph": graph, "line-read": line_read}
+FIGURES = {"hero": hero, "motion": motion, "graph": graph, "line-read": line_read}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "motion": "safe: equal spacing at equal times, no distances",

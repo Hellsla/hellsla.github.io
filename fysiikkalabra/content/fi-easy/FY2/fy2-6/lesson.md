@@ -2,6 +2,140 @@
 
 > **Miksi** Suomen sähköverkossa on yhtä aikaa ydinvoimaa, vesivoimaa, tuulivoimaa ja polttoainevoimaloita? Yksi voimalatyyppi voisi periaatteessa tuottaa kaiken sähkön.
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: suomalainen maisema. Meren rannalla on ydinvoimala ja joen padolla vesivoimala. Lisäksi on tuulivoimaloita ja polttoainevoimala, jossa on savupiippu. Kaikista voimaloista lähtee voimalinjoja samaan verkkoon. Verkko vie sähkön kaupunkiin." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy26h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="420" fill="url(#fy26h-sky)"/>
+  <path d="M237,94 Q235.5,70 263.5,73 Q275,48 303,56 Q328,42 342,69 Q367,71.5 364.5,94 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M846,72 Q845,51.5 869,54 Q878.5,32.5 902.5,39.5 Q924,27.5 936,50.5 Q957.5,53 955,72 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,330 L11.5,306 L23,330 L34.5,306.5 L46,330 L65,286.5 L83.5,330 L99,295.5 L114,330 L132,289.5 L149.5,330 L163.5,299.5 L177,330 L194.5,290.5 L211.5,330 L222.5,308 L233.5,330 L251.5,288 L270,330 L288.5,285.5 L307.5,330 L319.5,305.5 L331.5,330 L350,286 L368.5,330 L380,307 L391.5,330 L407,296 L422,330 L440.5,286.5 L459.5,330 L475,295 L490.5,330 L507.5,291.5 L524,330 L542,288.5 L560,330 L577,291 L594,330 L613.5,284.5 L632.5,330 L645,304 L657.5,330 L674,292 L690.5,330 L703,305 L715,330 L726,307.5 L737,330 L753,293.5 L769.5,330 L786.5,290 L804,330 L821.5,289 L839.5,330 L851.5,305 L863.5,330 L877,301.5 L890,330 L903,302 L916.5,330 L927,308.5 L937.5,330 L950.5,303.5 L963,330 L978,296.5 L993,330 L1007.5,298.5 L1022,330 L1037,296.5 L1052,330 L1069,290.5 L1086,330 L1099,302.5 L1112,330 L1131,285.5 L1150,330 L1161,307 L1172.5,330 L1187.5,297 L1202,330 V360 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="0" y="340" width="1200" height="260" fill="#b2f2bb"/>
+  <path d="M0,430 Q120,420 260,440 L260,600 H0 Z" fill="#a9d1f0" stroke-linejoin="round"/>
+  <rect x="40" y="330" width="150" height="80" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="150" y="300" width="60" height="110" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M150,300 Q180,250 210,300 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="70" y="290" width="18" height="40" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M330,600 Q360,500 420,440 L470,440 Q440,520 470,600 Z" fill="#2f74b5" stroke-linejoin="round"/>
+  <ellipse cx="425" cy="396" rx="130" ry="16" fill="#a9d1f0" stroke="#2f74b5" stroke-width="2"/>
+  <rect x="320" y="436" width="190" height="18" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="380" y="400" width="110" height="50" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <path d="M380,400 H490 L470,380 H400 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="394" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="426" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="458" y="414" width="18" height="26" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <path d="M593.5,400 L597.5,190 H602.5 L606.5,400 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M604,192 Q625,158 650.5,70 L596,188 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M596.5,192.5 Q615,227.5 678.5,294 L603.5,187.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M599.5,185.5 Q560,184 471,206 L600.5,194.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="600" cy="190" r="6.3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M683.5,400 L687.5,220 H692.5 L696.5,400 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M689.5,224.5 Q722,235 800.5,234.5 L690.5,215.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M686.5,217.5 Q661,240 622,308.5 L693.5,222.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M694,218.5 Q687,185 647,117 L686,221.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="690" cy="220" r="6.3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M763.5,400 L767.5,200 H772.5 L776.5,400 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M765.5,200.5 Q764.5,238.5 787.5,323 L774.5,199.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M771.5,196 Q739.5,176 655,154 L768.5,204 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M773,203.5 Q806,185.5 867.5,123.5 L767,196.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="770" cy="200" r="6.3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="840" y="330" width="120" height="80" fill="#e9c98a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="930" y="180" width="26" height="150" fill="#f2a69c" stroke="#1f2933" stroke-width="3"/>
+  <rect x="930" y="200" width="26" height="8" fill="#ffffff"/>
+  <rect x="930" y="240" width="26" height="8" fill="#ffffff"/>
+  <rect x="930" y="280" width="26" height="8" fill="#ffffff"/>
+  <circle cx="950" cy="160" r="17.5" fill="#c9c2b2" fill-opacity="0.8"/>
+  <circle cx="971" cy="133" r="24" fill="#c9c2b2" fill-opacity="0.8"/>
+  <circle cx="999.5" cy="104" r="30.5" fill="#c9c2b2" fill-opacity="0.8"/>
+  <circle cx="1036.5" cy="80" r="37" fill="#c9c2b2" fill-opacity="0.8"/>
+  <rect x="1020" y="290" width="50" height="120" fill="#d0e6fb" stroke="#1f2933" stroke-width="3"/>
+  <rect x="1030" y="302" width="30" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1030" y="334" width="30" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1030" y="366" width="30" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1074" y="250" width="40" height="160" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <rect x="1084" y="262" width="20" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1084" y="294" width="20" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1084" y="326" width="20" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1084" y="358" width="20" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1118" y="310" width="60" height="100" fill="#f2a69c" stroke="#1f2933" stroke-width="3"/>
+  <rect x="1128" y="322" width="40" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1128" y="354" width="40" height="14" fill="#eef5f9" stroke="#1f2933" stroke-width="1.5"/>
+  <path d="M226,540 L246,430 H254 L274,540" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="226" y1="540" x2="270" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="274" y1="540" x2="230" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="230" y1="518" x2="266" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="270" y1="518" x2="234" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="234" y1="496" x2="262" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="266" y1="496" x2="238" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="238" y1="474" x2="258" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="262" y1="474" x2="242" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="213.5" y1="452" x2="286.5" y2="452" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="213.5" y1="452" x2="213.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="286.5" y1="452" x2="286.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="226" y1="430" x2="274" y2="430" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="226" y1="430" x2="226" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="274" y1="430" x2="274" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M506,540 L526,430 H534 L554,540" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="506" y1="540" x2="550" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="554" y1="540" x2="510" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="510" y1="518" x2="546" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="550" y1="518" x2="514" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="514" y1="496" x2="542" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="546" y1="496" x2="518" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="518" y1="474" x2="538" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="542" y1="474" x2="522" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="493.5" y1="452" x2="566.5" y2="452" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="493.5" y1="452" x2="493.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="566.5" y1="452" x2="566.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="506" y1="430" x2="554" y2="430" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="506" y1="430" x2="506" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="554" y1="430" x2="554" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M786,540 L806,430 H814 L834,540" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="786" y1="540" x2="830" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="834" y1="540" x2="790" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="790" y1="518" x2="826" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="830" y1="518" x2="794" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="794" y1="496" x2="822" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="826" y1="496" x2="798" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="798" y1="474" x2="818" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="822" y1="474" x2="802" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="773.5" y1="452" x2="846.5" y2="452" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="773.5" y1="452" x2="773.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="846.5" y1="452" x2="846.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="786" y1="430" x2="834" y2="430" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="786" y1="430" x2="786" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="834" y1="430" x2="834" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M976,540 L996,430 H1004 L1024,540" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="976" y1="540" x2="1020" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="1024" y1="540" x2="980" y2="518" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="980" y1="518" x2="1016" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="1020" y1="518" x2="984" y2="496" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="984" y1="496" x2="1012" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="1016" y1="496" x2="988" y2="474" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="988" y1="474" x2="1008" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="1012" y1="474" x2="992" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="963.5" y1="452" x2="1036.5" y2="452" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="963.5" y1="452" x2="963.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="1036.5" y1="452" x2="1036.5" y2="462" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="976" y1="430" x2="1024" y2="430" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="976" y1="430" x2="976" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="1024" y1="430" x2="1024" y2="440" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M213.5,462 Q353.5,476 493.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M286.5,462 Q426.5,476 566.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M226,440 Q366,454 506,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M274,440 Q414,454 554,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M493.5,462 Q633.5,476 773.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M566.5,462 Q706.5,476 846.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M506,440 Q646,454 786,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M554,440 Q694,454 834,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M773.5,462 Q868.5,476 963.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M846.5,462 Q941.5,476 1036.5,462" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M786,440 Q881,454 976,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M834,440 Q929,454 1024,440" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M226,440 Q215.5,431 205,410" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M506,440 Q498,441 490,430" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M834,440 Q867,431 900,410" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M1024,440 Q1032,431 1040,410" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Voimalaitos ei tee energiaa tyhjästä. Se muuttaa luonnonvaran energian sähköksi ja usein myös lämmöksi. Luonnonvara voi olla putoava vesi, tuuli, auringon säteily, uraani tai polttoaine. Putoavan veden ja tuulen energia on liike-energiaa. Auringon energia on säteilyenergiaa. Uraanin energia on ydinenergiaa. Polttoaineen energia on kemiallista energiaa. Energia kulkee turbiinin ja generaattorin tai aurinkopaneelin kautta sähköverkkoon. Energia säilyy, mutta osa siitä päätyy aina lämpönä ympäristöön (luku *Hyötysuhde*).
 

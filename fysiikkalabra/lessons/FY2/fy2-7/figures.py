@@ -1,6 +1,35 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy2-7` writes them into lesson.md."""
 from figlib import (Fig, INK, MUTED, RULE, RULE_LIGHT, WHITE, GLASS, COLD, COLD_LIGHT, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, ALUMINIUM,
                     METAL_EDGE, IRON, GOOD, GOOD_LIGHT, WATER, WATER_LIGHT, SAND, SAND_LIGHT, n)
+from figlib import GRAIN
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: a high-voltage line across the land and, in a cut through the ground, a thickly insulated district heating pipe to a house."""
+    f = H.hero("fy27-hero", "Kuvitus: maisemassa korkeat voimalinjapylväät, joiden johdot kulkevat kauas. Etualalla maan läpi leikattu näkymä: "
+               "kaukolämpöputket, joiden ympärillä on paksu eristekerros, vievät lämpöä talolle.")
+    H.sky(f, "fy27h", 400); H.cloud(f, 220, 70, 0.6)
+    H.forest(f, 300, 40, 28, GOOD, seed=8)
+    f.rect(0, 310, 1200, 110, GOOD_LIGHT)
+    pts = [(80, 400, 230, 0.95), (420, 360, 180, 0.75), (680, 335, 140, 0.58), (860, 320, 110, 0.45)]
+    arms = [H.pylon(f, x, y, h, s) for x, y, h, s in pts]
+    for a, b in zip(arms, arms[1:]):
+        for p, q in zip(a, b): H.wire(f, p, q, 26, INK, 2)
+    H.house(f, 960, 420, 170, 110, SAND_LIGHT, HOT)
+    # the ground cut open: soil, a pipe pair in thick insulation running to the house
+    f.rect(0, 420, 1200, 180, SAND, None)
+    for k in range(40): f.circle(H.rnd(k, 3) * 1200, 440 + H.rnd(k, 9) * 150, 2 + 2 * H.rnd(k, 5), GRAIN)
+    f.line(0, 420, 1200, 420, INK, 3)
+    f.rect(0, 476, 860, 88, WHITE, INK, 3, 0)
+    f.rect(0, 486, 860, 68, SAND_LIGHT, None)
+    f.rect(0, 497, 860, 14, HOT, INK, 2); f.rect(0, 529, 860, 14, COLD, INK, 2)
+    f.path("M860,476 H1020 V420", stroke=INK, w=3)
+    f.rect(980, 420, 50, 144, SAND_LIGHT, INK, 3)
+    f.rect(988, 420, 12, 144, HOT, INK, 2); f.rect(1010, 420, 12, 144, COLD, INK, 2)
+    f.rect(860, 476, 120, 88, SAND_LIGHT, INK, 3)
+    f.rect(860, 497, 128, 14, HOT, INK, 2); f.rect(860, 529, 150, 14, COLD, INK, 2)
+    return f.svg()
 
 
 def wire(f, x1, y1, x2, y2, sag=10, w=2):
@@ -162,7 +191,7 @@ def sankey():
     return f.svg()
 
 
-FIGURES = {"grid": grid, "district": district, "storage": storage, "sankey": sankey}
+FIGURES = {"hero": hero, "grid": grid, "district": district, "storage": storage, "sankey": sankey}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "sankey": "safe: shows only the shares 96/4 % and 91/9 %, no energies",

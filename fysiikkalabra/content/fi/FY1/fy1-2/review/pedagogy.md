@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5ade7f04e3887b3e
+CONTENT-HASH: dc9e9e670297c9dd
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The probe sits at the right edge, outside the middle third; at 360 px it is a few pixels. Move it inward or enlarge it.
+- Ruler fills use the energy orange and the stable-state green, which carry other meanings in the palette; neutral tints would avoid a false reading.
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Batch delta review of the opening illustration only (hero, 1200 and 360 px captures, SVG, aria-label). It shows the Miksi scene: Sun, Voyager 2 and three equal-length rulers with different tick densities: one distance in three units. The aria-label matches the picture, the image has no text, it uses the figure palette and the subject reads at 360 px.

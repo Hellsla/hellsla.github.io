@@ -376,7 +376,7 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
     out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
            f"(in your context; if it is not, read it), in particular \"Lesson page\" (2026-10-26).\n")
     if role == "science": out += guardrails()
-    if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if "Figures." in l or "Textbook illustrations" in l or l.startswith("  ")) + "\n"
+    if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if any(k in l for k in ("Figures.", "Textbook illustrations", "Opening illustration")) or l.startswith("  ")) + "\n"
     lang_arg = "" if lang == courses.SOURCE_LANG else f" --lang {lang}"
     folders = {lid: courses.find_lesson(lid, lang) for lid in ids}
     cats = {c for lid in ids for c in scope(folders[lid])[role]["categories"]}

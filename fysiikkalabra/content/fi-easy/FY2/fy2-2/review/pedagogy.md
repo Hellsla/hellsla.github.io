@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: fa8e3fe39ce547c9
-
+CONTENT-HASH: 411ea42cabd4ce08
 ## Blocking
-(none)
 
 ## Polish
-- (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-10-29 update): check-c2 keeps the same demand (unit conversion before comparison), the correct option is not the longest (check_choices clean), feedback per option is complete and does not give the answer away before the choice; exit-ticket intro says two questions and matches the two questions; step numbering 1-4 consistent; figures labelled in the language and layout checked at 360 and 1280 px. Selkeä suomi: short sentences, same physics terms and demand.
+batch delta review: the hero aria-label has short simple sentences, keeps all content of the Finnish description and matches the picture.

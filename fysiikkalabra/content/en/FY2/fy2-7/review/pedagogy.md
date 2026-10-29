@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42422313678ad985
+CONTENT-HASH: 65001c92639bf41b
 
 ## Blocking
-(none)
-
-## Fixed
-- (none)
 
 ## Polish
-- (none)
+- None.
 
 ## Checked
-- Update 2026-10-29: translation follows the reviewed Finnish; demand and options' relative lengths balanced (check_choices clean for fy2-7); no answer given away in prompts or hints; feedback per option fully translated.
+batch delta review: the redrawn hero: the insulation is now sand-coloured foam with no heat wave, so orange no longer suggests hot or leaking insulation; the red supply and blue return pipes and the thick insulation layer read at 360 px; the aria-label matches; the drawing is identical to the fi version apart from the aria-label, and the translated aria-label (unchanged, already passed a translation review) still describes it; no text in the image, figure palette.

@@ -2,6 +2,143 @@
 
 > **Miksi** voimalinjojen jännite on satoja kilovoltteja, vaikka pistorasiasta saa vain $230\,\text{V}$, ja miksi kaukolämpöputket kääritään paksuun eristeeseen?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: maisemassa korkeat voimalinjapylväät, joiden johdot kulkevat kauas. Etualalla maan läpi leikattu näkymä: kaukolämpöputket, joiden ympärillä on paksu eristekerros, vievät lämpöä talolle." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy27h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="400" fill="url(#fy27h-sky)"/>
+  <path d="M166,82 Q165,61.5 189,64 Q198.5,42.5 222.5,49.5 Q244,37.5 256,60.5 Q277.5,63 275,82 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M0,300 L12.5,274.5 L25,300 L43,260.5 L61,300 L72.5,277.5 L84,300 L96,277 L107.5,300 L117.5,281.5 L127.5,300 L138,280.5 L148.5,300 L163,269 L178,300 L195,263 L212,300 L226.5,270 L241,300 L251.5,280.5 L262,300 L277,268.5 L291.5,300 L303.5,277 L315,300 L329,271 L343,300 L354,279.5 L365,300 L376.5,277.5 L388,300 L403.5,267.5 L418.5,300 L432.5,271 L446.5,300 L465,260 L483,300 L499,266 L515,300 L532,263.5 L548.5,300 L566.5,260.5 L584.5,300 L596.5,277 L608,300 L623,269 L638,300 L655.5,261 L673.5,300 L688.5,267 L704,300 L721,264 L737.5,300 L747.5,282 L757,300 L775,261.5 L792.5,300 L809.5,263 L826.5,300 L843.5,263.5 L860,300 L875.5,267.5 L891,300 L904,274 L916.5,300 L930.5,271.5 L944,300 L956.5,275 L969,300 L985,265 L1001.5,300 L1012,280 L1022.5,300 L1037,270 L1051.5,300 L1061.5,281.5 L1071.5,300 L1087.5,266 L1103.5,300 L1119,267.5 L1134,300 L1144,281.5 L1154,300 L1172.5,260 L1190.5,300 L1203,274.5 L1215.5,300 V330 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="0" y="310" width="1200" height="110" fill="#b2f2bb"/>
+  <path d="M47.5,400 L74.5,170 H85.5 L112.5,400" fill="none" stroke="#6c757d" stroke-width="2.85" stroke-linejoin="round"/>
+  <line x1="47.5" y1="400" x2="107" y2="354" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="112.5" y1="400" x2="53" y2="354" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="53" y1="354" x2="101.5" y2="308" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="107" y1="354" x2="58.5" y2="308" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="58.5" y1="308" x2="96.5" y2="262" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="101.5" y1="308" x2="63.5" y2="262" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="63.5" y1="262" x2="91" y2="216" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="96.5" y1="262" x2="69" y2="216" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
+  <line x1="30.5" y1="216" x2="129.5" y2="216" stroke="#6c757d" stroke-width="2.85" stroke-linecap="butt"/>
+  <line x1="30.5" y1="216" x2="30.5" y2="229.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
+  <line x1="129.5" y1="216" x2="129.5" y2="229.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
+  <line x1="47.5" y1="170" x2="112.5" y2="170" stroke="#6c757d" stroke-width="2.85" stroke-linecap="butt"/>
+  <line x1="47.5" y1="170" x2="47.5" y2="183.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
+  <line x1="112.5" y1="170" x2="112.5" y2="183.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
+  <path d="M394.5,360 L415.5,180 H424.5 L445.5,360" fill="none" stroke="#6c757d" stroke-width="2.25" stroke-linejoin="round"/>
+  <line x1="394.5" y1="360" x2="441.5" y2="324" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="445.5" y1="360" x2="398.5" y2="324" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="398.5" y1="324" x2="437" y2="288" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="441.5" y1="324" x2="403" y2="288" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="403" y1="288" x2="433" y2="252" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="437" y1="288" x2="407" y2="252" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="407" y1="252" x2="428.5" y2="216" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="433" y1="252" x2="411.5" y2="216" stroke="#6c757d" stroke-width="1.125" stroke-linecap="butt"/>
+  <line x1="381" y1="216" x2="459" y2="216" stroke="#6c757d" stroke-width="2.25" stroke-linecap="butt"/>
+  <line x1="381" y1="216" x2="381" y2="226.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="459" y1="216" x2="459" y2="226.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="394.5" y1="180" x2="445.5" y2="180" stroke="#6c757d" stroke-width="2.25" stroke-linecap="butt"/>
+  <line x1="394.5" y1="180" x2="394.5" y2="190.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="445.5" y1="180" x2="445.5" y2="190.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M660.5,335 L676.5,195 H683.5 L699.5,335" fill="none" stroke="#6c757d" stroke-width="1.74" stroke-linejoin="round"/>
+  <line x1="660.5" y1="335" x2="696.5" y2="307" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="699.5" y1="335" x2="663.5" y2="307" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="663.5" y1="307" x2="693" y2="279" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="696.5" y1="307" x2="667" y2="279" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="667" y1="279" x2="690" y2="251" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="693" y1="279" x2="670" y2="251" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="670" y1="251" x2="686.5" y2="223" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="690" y1="251" x2="673.5" y2="223" stroke="#6c757d" stroke-width="0.87" stroke-linecap="butt"/>
+  <line x1="650" y1="223" x2="710" y2="223" stroke="#6c757d" stroke-width="1.74" stroke-linecap="butt"/>
+  <line x1="650" y1="223" x2="650" y2="231" stroke="#1f2933" stroke-width="1.16" stroke-linecap="butt"/>
+  <line x1="710" y1="223" x2="710" y2="231" stroke="#1f2933" stroke-width="1.16" stroke-linecap="butt"/>
+  <line x1="660.5" y1="195" x2="699.5" y2="195" stroke="#6c757d" stroke-width="1.74" stroke-linecap="butt"/>
+  <line x1="660.5" y1="195" x2="660.5" y2="203" stroke="#1f2933" stroke-width="1.16" stroke-linecap="butt"/>
+  <line x1="699.5" y1="195" x2="699.5" y2="203" stroke="#1f2933" stroke-width="1.16" stroke-linecap="butt"/>
+  <path d="M844.5,320 L857.5,210 H862.5 L875.5,320" fill="none" stroke="#6c757d" stroke-width="1.35" stroke-linejoin="round"/>
+  <line x1="844.5" y1="320" x2="873" y2="298" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="875.5" y1="320" x2="847" y2="298" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="847" y1="298" x2="870.5" y2="276" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="873" y1="298" x2="849.5" y2="276" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="849.5" y1="276" x2="867.5" y2="254" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="870.5" y1="276" x2="852.5" y2="254" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="852.5" y1="254" x2="865" y2="232" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="867.5" y1="254" x2="855" y2="232" stroke="#6c757d" stroke-width="0.675" stroke-linecap="butt"/>
+  <line x1="836.5" y1="232" x2="883.5" y2="232" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
+  <line x1="836.5" y1="232" x2="836.5" y2="238.5" stroke="#1f2933" stroke-width="0.9" stroke-linecap="butt"/>
+  <line x1="883.5" y1="232" x2="883.5" y2="238.5" stroke="#1f2933" stroke-width="0.9" stroke-linecap="butt"/>
+  <line x1="844.5" y1="210" x2="875.5" y2="210" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
+  <line x1="844.5" y1="210" x2="844.5" y2="216.5" stroke="#1f2933" stroke-width="0.9" stroke-linecap="butt"/>
+  <line x1="875.5" y1="210" x2="875.5" y2="216.5" stroke="#1f2933" stroke-width="0.9" stroke-linecap="butt"/>
+  <path d="M30.5,229.5 Q206,254 381,226.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M129.5,229.5 Q294,254 459,226.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M47.5,183.5 Q221,213 394.5,190.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M112.5,183.5 Q279,213 445.5,190.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M381,226.5 Q515.5,255 650,231" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M459,226.5 Q584.5,255 710,231" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M394.5,190.5 Q527.5,223 660.5,203" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M445.5,190.5 Q572.5,223 699.5,203" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M650,231 Q743,260.5 836.5,238.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M710,231 Q797,260.5 883.5,238.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M660.5,203 Q752.5,235.5 844.5,216.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M699.5,203 Q787.5,235.5 875.5,216.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="960" y="310" width="170" height="110" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <path d="M946,310 L1045,242 L1144,310 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="984" y="341" width="44" height="33" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1058.5" y="354" width="41" height="66" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="0" y="420" width="1200" height="180" fill="#d9b26a"/>
+  <circle cx="323.5" cy="578" r="2.11229" fill="#a97a35"/>
+  <circle cx="504" cy="483" r="2.31142" fill="#a97a35"/>
+  <circle cx="356" cy="502.5" r="2.22303" fill="#a97a35"/>
+  <circle cx="1084" cy="516.5" r="3.62051" fill="#a97a35"/>
+  <circle cx="741.5" cy="456" r="2.39782" fill="#a97a35"/>
+  <circle cx="1088" cy="528.5" r="2.3757" fill="#a97a35"/>
+  <circle cx="825.5" cy="488.5" r="3.36054" fill="#a97a35"/>
+  <circle cx="145" cy="519.5" r="3.86312" fill="#a97a35"/>
+  <circle cx="1013.5" cy="500" r="3.34368" fill="#a97a35"/>
+  <circle cx="70.5" cy="490" r="3.95053" fill="#a97a35"/>
+  <circle cx="343.5" cy="555.5" r="3.74343" fill="#a97a35"/>
+  <circle cx="889.5" cy="484" r="3.05543" fill="#a97a35"/>
+  <circle cx="758.5" cy="563.5" r="3.84272" fill="#a97a35"/>
+  <circle cx="160" cy="565" r="3.05115" fill="#a97a35"/>
+  <circle cx="76" cy="588" r="2.63941" fill="#a97a35"/>
+  <circle cx="249.5" cy="496.5" r="3.36988" fill="#a97a35"/>
+  <circle cx="588.5" cy="489.5" r="3.07882" fill="#a97a35"/>
+  <circle cx="529" cy="460.5" r="2.93294" fill="#a97a35"/>
+  <circle cx="190.5" cy="473" r="2.0783" fill="#a97a35"/>
+  <circle cx="31.5" cy="551" r="3.80032" fill="#a97a35"/>
+  <circle cx="163.5" cy="454.5" r="3.87783" fill="#a97a35"/>
+  <circle cx="746" cy="440.5" r="3.23634" fill="#a97a35"/>
+  <circle cx="947" cy="541" r="3.55587" fill="#a97a35"/>
+  <circle cx="232" cy="550" r="3.24408" fill="#a97a35"/>
+  <circle cx="210" cy="510.5" r="3.54514" fill="#a97a35"/>
+  <circle cx="117" cy="532.5" r="3.63986" fill="#a97a35"/>
+  <circle cx="1191" cy="504.5" r="2.63532" fill="#a97a35"/>
+  <circle cx="86.5" cy="529" r="2.34837" fill="#a97a35"/>
+  <circle cx="962.5" cy="457.5" r="3.88696" fill="#a97a35"/>
+  <circle cx="464" cy="580.5" r="3.98168" fill="#a97a35"/>
+  <circle cx="903.5" cy="510.5" r="3.3036" fill="#a97a35"/>
+  <circle cx="1006" cy="495" r="3.865" fill="#a97a35"/>
+  <circle cx="597.5" cy="553" r="3.17458" fill="#a97a35"/>
+  <circle cx="185" cy="496.5" r="3.34807" fill="#a97a35"/>
+  <circle cx="466" cy="584.5" r="3.28199" fill="#a97a35"/>
+  <circle cx="831.5" cy="533" r="2.46242" fill="#a97a35"/>
+  <circle cx="1118" cy="548.5" r="3.55581" fill="#a97a35"/>
+  <circle cx="165.5" cy="493" r="3.74175" fill="#a97a35"/>
+  <circle cx="807" cy="510" r="3.88835" fill="#a97a35"/>
+  <circle cx="432" cy="565.5" r="2.53046" fill="#a97a35"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="0" y="476" width="860" height="88" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="0" y="486" width="860" height="68" fill="#f1dfb5"/>
+  <rect x="0" y="497" width="860" height="14" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="0" y="529" width="860" height="14" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <path d="M860,476 H1020 V420" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="980" y="420" width="50" height="144" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <rect x="988" y="420" width="12" height="144" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1010" y="420" width="12" height="144" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+  <rect x="860" y="476" width="120" height="88" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <rect x="860" y="497" width="128" height="14" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="860" y="529" width="150" height="14" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
+</svg>
+
 ## Ydinajatus
 
 Energiaa tuotetaan usein kaukana siitä, missä sitä käytetään: voimalaitos on kaupungin ulkopuolella, mutta lämmitin ja pistorasia ovat kotona. Energia täytyy siis siirtää käyttäjälle. Suomessa se tapahtuu kahdella tavalla: **sähköenergiana** sähköverkossa ja **lämpöenergiana** kaukolämpöverkon vesiputkissa.
