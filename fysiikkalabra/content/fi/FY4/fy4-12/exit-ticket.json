@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Miksi kahden kappaleen paikat täytyy mitata samasta origosta, samaan suuntaan ja samalla kellolla, ennen kuin kohtaamishetken voi ratkaista?",
+    "a": "Kohtaaminen tarkoittaa, että paikat ovat samat samalla hetkellä, $x_\\text{A} = x_\\text{B}$. Yhtälö kertoo jotain vain, jos molemmat paikat on mitattu samasta koordinaatistosta ja samasta aikahetkestä. Jos kappaleilla olisi eri origo tai eri kello, yhtä suuret luvut eivät tarkoittaisi samaa paikkaa samalla hetkellä."
+  },
+  {
+    "q": "Kahden kappaleen $(t, x)$-kuvaajan viivat eivät leikkaa kuvaajan alueella. Mitä se kertoo?",
+    "a": "Kappaleet eivät ole samassa paikassa millään kuvatulla hetkellä, joten ne eivät kohtaa tänä aikana. Viivat voivat silti leikata kuvaajan ulkopuolella, esimerkiksi myöhemmin tai ennen hetkeä $t = 0$. Ratkaisu, jossa $t < 0$, ei kuulu tilanteeseen."
+  },
+  {
+    "q": "Toisen asteen yhtälön $\\tfrac12\\,a\\,t^2 = x_0 + v\\,t$ ratkaisuina on $t = -2{,}0\\,\\text{s}$ ja $t = 8{,}0\\,\\text{s}$. Kumpi on kohtaamishetki ja miksi?",
+    "a": "Kohtaamishetki on $t = 8{,}0\\,\\text{s}$. Liike alkaa hetkellä $t = 0$, joten negatiivinen juuri $-2{,}0\\,\\text{s}$ olisi ennen lähtöä eikä kuulu tilanteeseen."
+  }
+]

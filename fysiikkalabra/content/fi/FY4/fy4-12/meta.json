@@ -1,0 +1,22 @@
+{
+  "id": "fy4-12",
+  "course": "FY4",
+  "title": "Kahden kappaleen liike: kohtaaminen ja ohitus",
+  "goals": [
+    "LOPS FY4: tasainen ja tasaisesti kiihtyvä suoraviivainen liike",
+    "Täsmennys: kahden kappaleen paikat samassa koordinaatistossa, kohtaamis- ja ohitushetki laskien ja kuvaajista"
+  ],
+  "prerequisites": [
+    "fy4-1",
+    "fy4-2"
+  ],
+  "glossary": [
+    "paikka",
+    "kiihtyvyys",
+    "kohtaaminen",
+    "ohitus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

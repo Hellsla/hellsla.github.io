@@ -1,0 +1,658 @@
+[
+ {
+  "expr": "(() => { const s=document.querySelectorAll('#sim-root select'); const S=window.simState; return s[0].value==='1' && s[1].value==='1' && document.querySelector('#sim-root input[type=range]').value==='0' && S.tapaus==='1' && S.t===0 && S.xA===10 && S.xB===70 && S.running===false && S.meetings===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: case 1, speed normaali, t = 0, A at 10 m and B at 70 m, not running, no meeting reached (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root input[type=range]'); return r.min==='0' && r.max==='12' && r.step==='0.5' && document.querySelectorAll('#sim-root input[type=range]').length===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider, the clock t: 0-12 s in steps of 0,5 s"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[0].options].map(x=>x.value+':'+x.textContent).join('|'); return o==='1:1: kohtaaminen vastakkain|2:2: ohitus tasaisella nopeudella|3:3: auto lähtee levosta|4:4: edellä oleva on nopeampi|5:5: juoksija ja bussi' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "case select: five cases"
+ },
+ {
+  "expr": "(() => { const o=[...document.querySelectorAll('#sim-root select')[1].options].map(x=>x.textContent+':'+x.value).join(','); return o==='hidas:0.5,normaali:1,nopea:2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "speed select hidas 0.5, normaali 1, nopea 2"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus (toisto)"
+ },
+ {
+  "expr": "(() => !document.querySelector('#sim-root details') && document.querySelectorAll('#sim-root p.note').length===0 ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box and no paragraph under the canvas: the legend is drawn on the canvas, explanations live in the lesson's inquiry.json"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='t,tapaus' && P.t.unit==='s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares t (s) and tapaus"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width===600 && c.height===400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(10);",
+  "expr": "window.simState.xA",
+  "expected": 50,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: both at 50 m (10 m + 4 m/s · 10 s = 70 m − 2 m/s · 10 s), the meeting is reached"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 50,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 4,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": -2,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: vB"
+ },
+ {
+  "expr": "window.simState.aA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: aA"
+ },
+ {
+  "expr": "window.simState.aB",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: aB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 1, t = 10 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(5);",
+  "expr": "window.simState.xA",
+  "expected": 30,
+  "tol": 1e-06,
+  "note": "case 1, t = 5 s: A at 30 m, B at 60 m, gap 30 m, no meeting yet"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 60,
+  "tol": 1e-06,
+  "note": "case 1, t = 5 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 30,
+  "tol": 1e-06,
+  "note": "case 1, t = 5 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 1, t = 5 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(12);",
+  "expr": "window.simState.xA",
+  "expected": 58,
+  "tol": 1e-06,
+  "note": "case 1, t = 12 s: they have passed each other: A 58 m, B 46 m"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 46,
+  "tol": 1e-06,
+  "note": "case 1, t = 12 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -12,
+  "tol": 1e-06,
+  "note": "case 1, t = 12 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 1, t = 12 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('2'); S(5);",
+  "expr": "window.simState.xA",
+  "expected": 35,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: A 7 m/s · 5 s = 35 m = 20 m + 3 m/s · 5 s"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 35,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 7,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: vB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 2, t = 5 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('2'); S(12);",
+  "expr": "window.simState.xA",
+  "expected": 84,
+  "tol": 1e-06,
+  "note": "case 2, t = 12 s: A has passed B: 84 m and 56 m"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 56,
+  "tol": 1e-06,
+  "note": "case 2, t = 12 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -28,
+  "tol": 1e-06,
+  "note": "case 2, t = 12 s: gap"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(0);",
+  "expr": "window.simState.xA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: the car at rest at 0, the cyclist 16 m ahead at 6,0 m/s, a_A = 2,0 m/s²"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 16,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: vB"
+ },
+ {
+  "expr": "window.simState.aA",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: aA"
+ },
+ {
+  "expr": "window.simState.aB",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: aB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 16,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 3, t = 0: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(3);",
+  "expr": "window.simState.xA",
+  "expected": 9,
+  "tol": 1e-06,
+  "note": "case 3, t = 3 s: equal speeds 6 m/s, the gap is greatest, 25 m"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 34,
+  "tol": 1e-06,
+  "note": "case 3, t = 3 s: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "case 3, t = 3 s: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "case 3, t = 3 s: vB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 25,
+  "tol": 1e-06,
+  "note": "case 3, t = 3 s: gap"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(8);",
+  "expr": "window.simState.xA",
+  "expected": 64,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: the car passes the cyclist at 64 m with 16 m/s against 6 m/s"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 64,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 16,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: vB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 3, t = 8 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(12);",
+  "expr": "window.simState.xA",
+  "expected": 144,
+  "tol": 1e-06,
+  "note": "case 3, t = 12 s: car 144 m and 24 m/s, cyclist 88 m"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 88,
+  "tol": 1e-06,
+  "note": "case 3, t = 12 s: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 24,
+  "tol": 1e-06,
+  "note": "case 3, t = 12 s: vA"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -56,
+  "tol": 1e-06,
+  "note": "case 3, t = 12 s: gap"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('4'); S(12);",
+  "expr": "window.simState.xA",
+  "expected": 36,
+  "tol": 1e-06,
+  "note": "case 4, t = 12 s: the faster cyclist ahead is 44 m ahead, no meeting"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 80,
+  "tol": 1e-06,
+  "note": "case 4, t = 12 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 44,
+  "tol": 1e-06,
+  "note": "case 4, t = 12 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 4, t = 12 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('4'); S(0);",
+  "expr": "window.simState.xA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 4, t = 0: A at 0, B 20 m ahead and faster"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 20,
+  "tol": 1e-06,
+  "note": "case 4, t = 0: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "case 4, t = 0: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 5,
+  "tol": 1e-06,
+  "note": "case 4, t = 0: vB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 20,
+  "tol": 1e-06,
+  "note": "case 4, t = 0: gap"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(0);",
+  "expr": "window.simState.xA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: bus at rest at 0 (a = 1,0 m/s²), runner 5,0 m behind at 4,0 m/s"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": -5,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: xB"
+ },
+ {
+  "expr": "window.simState.vA",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: vA"
+ },
+ {
+  "expr": "window.simState.vB",
+  "expected": 4,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: vB"
+ },
+ {
+  "expr": "window.simState.aA",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: aA"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -5,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 5, t = 0: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(1);",
+  "expr": "window.simState.xA",
+  "expected": 0.5,
+  "tol": 1e-06,
+  "note": "case 5, t = 1 s: the runner is still behind (bus 0,5 m, runner −1,0 m)"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": -1,
+  "tol": 1e-06,
+  "note": "case 5, t = 1 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -1.5,
+  "tol": 1e-06,
+  "note": "case 5, t = 1 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "case 5, t = 1 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(2);",
+  "expr": "window.simState.xA",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "case 5, t = 2 s: the runner has caught the bus (first meeting at 1,55 s) and is 1,0 m ahead"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 3,
+  "tol": 1e-06,
+  "note": "case 5, t = 2 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 5, t = 2 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 5, t = 2 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(6);",
+  "expr": "window.simState.xA",
+  "expected": 18,
+  "tol": 1e-06,
+  "note": "case 5, t = 6 s: the runner is still 1,0 m ahead of the bus"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 19,
+  "tol": 1e-06,
+  "note": "case 5, t = 6 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 5, t = 6 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 1,
+  "tol": 1e-06,
+  "note": "case 5, t = 6 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(7);",
+  "expr": "window.simState.xA",
+  "expected": 24.5,
+  "tol": 1e-06,
+  "note": "case 5, t = 7 s: the bus has passed the runner (second meeting at 6,45 s)"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 23,
+  "tol": 1e-06,
+  "note": "case 5, t = 7 s: xB"
+ },
+ {
+  "expr": "window.simState.gap",
+  "expected": -1.5,
+  "tol": 1e-06,
+  "note": "case 5, t = 7 s: gap"
+ },
+ {
+  "expr": "window.simState.meetings",
+  "expected": 2,
+  "tol": 1e-06,
+  "note": "case 5, t = 7 s: meetings"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('3'); S(8);",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$t = 8{,}0\\\\,\\\\text{s}$') && x.includes('$\\\\text{A}$: $x_\\\\text{A} = 64{,}0\\\\,\\\\text{m}$, $v_\\\\text{A} = 16{,}0\\\\,\\\\text{m/s}$, $a_\\\\text{A} = 2{,}0\\\\,\\\\text{m/s}^2$') && x.includes('$\\\\text{B}$: $x_\\\\text{B} = 64{,}0\\\\,\\\\text{m}$, $v_\\\\text{B} = 6{,}0\\\\,\\\\text{m/s}$, $a_\\\\text{B} = 0{,}0\\\\,\\\\text{m/s}^2$') && x.includes('$x_\\\\text{B} - x_\\\\text{A} = 0{,}0\\\\,\\\\text{m}$') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout is DOM text: t, then x, v and a of A and of B, then the gap, in case 3 at 8 s"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('5'); S(7);",
+  "expr": "(() => { const x=simText('#sim-root .readout'); return x.includes('$x_\\\\text{B} - x_\\\\text{A} = -1{,}5\\\\,\\\\text{m}$') && x.includes('$x_\\\\text{B} = 23{,}0\\\\,\\\\text{m}$') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "readout in case 5 at 7 s: B at 23,0 m, gap −1,5 m (negative: B is behind A)"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; S(7); C('2');",
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "choosing another case restarts the clock at 0"
+ },
+ {
+  "expr": "window.simState.tmax",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "... and clears the graph (tmax = 0)"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; S(7); [...document.querySelectorAll('#sim-root button')].find(b=>b.textContent==='Alusta').click();",
+  "expr": "window.simState.t",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "Alusta returns the clock to 0"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(6); S(2);",
+  "expr": "window.simState.tmax",
+  "expected": 6,
+  "tol": 1e-06,
+  "note": "the graph is drawn up to the furthest time visited: dragging back to 2 s keeps tmax = 6"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(6); [...document.querySelectorAll('#sim-root button')].find(b=>b.textContent==='Alusta').click();",
+  "expr": "window.simState.tmax",
+  "expected": 0,
+  "tol": 1e-06,
+  "note": "Alusta clears the graph"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(0); document.querySelectorAll('#sim-root select')[1].value='1'; [...document.querySelectorAll('#sim-root button')][0].click();",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button starts the playback"
+ },
+ {
+  "expr": "[...document.querySelectorAll('#sim-root button')][0].textContent==='Tauko' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button reads Tauko while playing"
+ },
+ {
+  "expr": "new Promise(res => { [...document.querySelectorAll('#sim-root button')][0].click(); const t0 = window.simState.t; setTimeout(() => res(window.simState.running ? -1 : (Math.abs(window.simState.t - t0) < 0.35 ? 1 : 0)), 500); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "pressing Tauko stops the playback; the time stays"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(0); const sp=document.querySelectorAll('#sim-root select')[1]; sp.value='2'; sp.dispatchEvent(new Event('change',{bubbles:true})); [...document.querySelectorAll('#sim-root button')][0].click();",
+  "expr": "new Promise(res => setTimeout(() => res(window.simState.t), 6600))",
+  "expected": 12,
+  "tol": 0,
+  "note": "nopea: after about 6 s the run has reached t = 12 s"
+ },
+ {
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "the run stops at t = 12 s"
+ },
+ {
+  "expr": "window.simState.xB",
+  "expected": 46,
+  "tol": 1e-06,
+  "note": "after the run in case 1 B is at 46 m"
+ },
+ {
+  "expr": "(() => { const r=document.querySelector('#sim-root input[type=range]'); return Number(r.value); })()",
+  "expected": 12,
+  "tol": 1e-06,
+  "note": "the clock slider follows the playback to 12 s"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; C('1'); S(0); document.querySelectorAll('#sim-root select')[1].value='1'; [...document.querySelectorAll('#sim-root button')][0].click(); S(3);",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "playback stopped by dragging the clock"
+ },
+ {
+  "setup": "const r=document.querySelector('#sim-root input[type=range]'); const sel=document.querySelectorAll('#sim-root select'); const C=(v)=>{sel[0].value=v; sel[0].dispatchEvent(new Event('change',{bubbles:true}));}; const S=(v)=>{r.value=v; r.dispatchEvent(new Event('input',{bubbles:true}));}; document.querySelectorAll('#sim-root select')[1].value='1'; C('1'); S(0);",
+  "expr": "(() => { const L=window.simState.labels.map(l=>l.s); return L.includes('$\\\\overline{v}$') && L.includes('$\\\\overline{a}$') && L.includes('$x\\\\ (\\\\text{m})$') && L.includes('$t\\\\ (\\\\text{s})$') && L.includes('$\\\\text{A}$') && L.includes('$\\\\text{B}$') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "every canvas text is a LaTeX label in simState.labels: the axis titles, the two letters and the legend's vectors v and a"
+ }
+]
