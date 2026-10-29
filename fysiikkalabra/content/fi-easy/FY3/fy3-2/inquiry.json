@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Sana *työ* saa tarkan merkityksen. Työ on voima kertaa matka, kun voima on liikkeen suuntainen: $W = Fs$. Se on $(s, F)$-kuvaajan pinta-ala. Teho kertoo, kuinka nopeasti työ tehdään.",
   "learn": [
-    "Tunnistat, milloin voima tekee työtä fysiikan merkityksessä.",
-    "Osaat laskea työn voimasta ja matkasta sekä voiman ja matkan kuvaajan pinta-alana.",
-    "Osaat selittää, mitä teho kertoo työn tekemisestä."
+    "tunnistamaan, milloin voima tekee työtä fysiikan merkityksessä.",
+    "laskemaan työn voimasta ja matkasta sekä voiman ja matkan kuvaajan pinta-alana.",
+    "selittämään, mitä teho kertoo työn tekemisestä."
   ],
   "prior": [
     "Painovoima $G = mg$ ja voima vuorovaikutuksen mittana (luku *Voima vuorovaikutuksen mittana ja paino*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "From conservation of energy and power, the student moves on to the efficiency of a single device. The student separates useful energy from losses, reads an energy flow diagram drawn to scale, calculates efficiency from energies and from powers, notices that it does not depend on running time when the device runs at constant power, and separates a model's assumption from the behaviour of a real device.",
   "learn": [
-    "You can calculate the efficiency of a device as a ratio of energies or powers.",
-    "You can explain why efficiency is at most $100\\,\\%$ and why in real devices it is often below that.",
-    "You can read an energy flow diagram and work out the shares of useful energy and losses from it."
+    "calculate the efficiency of a device as a ratio of energies or powers.",
+    "explain why efficiency is at most $100\\,\\%$ and why in real devices it is often below that.",
+    "read an energy flow diagram and work out the shares of useful energy and losses from it."
   ],
   "prior": [
     "Energy is neither created nor destroyed. It changes form, and part of it often becomes heat (chapter *Forms of energy and conservation of energy*)",

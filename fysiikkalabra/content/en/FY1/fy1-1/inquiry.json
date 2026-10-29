@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Physics builds models and tests them with measurements, and the sizes of objects are understood as powers of ten: a size is written in the form $a\\cdot10^{n}$, the ratio of sizes is found by dividing the larger size by the smaller, and each step of a power of ten is a tenfold size. With the zoom simulation the student compares an atom and its nucleus, and the Solar System and the Milky Way, and the theory brings together the structure of matter (molecule–atom–nucleus–nucleon–quark), Earth's place in the structures of the universe, the types of astronomical objects and the four fundamental interactions qualitatively.",
   "learn": [
-    "You can describe the structure of matter from molecules to quarks and Earth's place in the structures of the universe.",
-    "You can write a size in scientific notation and compare sizes using orders of magnitude.",
-    "You recognise the four fundamental interactions and can link a phenomenon to each."
+    "describe the structure of matter from molecules to quarks and Earth's place in the structures of the universe.",
+    "write a size in scientific notation and compare sizes using orders of magnitude.",
+    "recognise the four fundamental interactions and link a phenomenon to each."
   ],
   "prior": [
     "Powers from lower secondary school mathematics, for example $10^{3} = 1000$ and $10^{-2} = 0.01$",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kurssin päätösluku. Siinä käsitellään kasvihuoneilmiötä laadullisesti ja polttoaineiden yhteyttä ilmastonmuutokseen. Tuotantotapoja verrataan elinkaaren päästökertoimilla ($m = e \\cdot E$). Näin oppilas osaa punnita kestävyyskeskustelun perusteita.",
   "learn": [
-    "Osaat selittää kasvihuoneilmiön ja sen, miksi fossiilisten polttoaineiden polttaminen voimistaa sitä.",
-    "Osaat laskea päästön päästökertoimen ja energian avulla ja vertailla tuotantotapoja.",
-    "Osaat perustella valinnan useiden vertailuperusteiden avulla."
+    "selittämään kasvihuoneilmiön ja sen, miksi fossiilisten polttoaineiden polttaminen voimistaa sitä.",
+    "laskemaan päästön päästökertoimen ja energian avulla ja vertailemaan tuotantotapoja.",
+    "perustelemaan valinnan useiden vertailuperusteiden avulla."
   ],
   "prior": [
     "Polttoaineen palaessa kemiallinen energia vapautuu, ja energia mitataan jouleina ja kilowattitunteina (luku *Polttoaineet ja lämpöarvo E = Hm*)",

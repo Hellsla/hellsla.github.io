@@ -19,7 +19,7 @@ needs misconception-specific feedback`. Tests: `python scripts/test_inquiry.py`.
 {
   "version": 1,
   "contribution": "One sentence for the reviewers: what this lesson adds that earlier lessons did not (not shown on the page).",
-  "learn": ["Osaat laskea …", "Osaat selittää …", "Tunnistat …"],
+  "learn": ["laskemaan …", "selittämään …", "tunnistamaan …"],
   "prior": ["One fact the student already knows (luku *Chapter title*)", "..."],
   "activities": [ { "id": "pred-1", "stage": "ennusta", "type": "choice", "...": "..." } ]
 }
@@ -59,7 +59,7 @@ intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
 | `exercises` | optional `text` | the three exercise levels (at most one) |
 | `exit` | optional `text` | the exit ticket (at most one) |
 
-Rules the validator enforces: `version` is 1; `contribution` is non-empty; `learn` holds two or three goals of at most about 20 words each, shown on the page under "Tällä tunnilla opit" (teacher 2026-10-27; `prior` shows as the list "Pohjatiedot", its "(luku …)" as a link to that chapter); ids are unique; every choice has
+Rules the validator enforces: `version` is 1; `contribution` is non-empty; `learn` holds two or three goals of at most about 20 words each, shown on the page under "Tällä tunnilla opit" and completing that sentence ("laskemaan …", English "calculate …"; `scripts/objectives.py`, teacher 2026-10-29) (teacher 2026-10-27; `prior` shows as the list "Pohjatiedot", its "(luku …)" as a link to that chapter); ids are unique; every choice has
 feedback and exactly the correct options marked; `reveal.after` names an experiment or a theory section; `locked` does not contain
 `vary`; `theory` sections exist in `lesson.md` and appear once; `reflect.predictions` are activity ids; hints
 are at most three. What it cannot check, the reviewers do (below).

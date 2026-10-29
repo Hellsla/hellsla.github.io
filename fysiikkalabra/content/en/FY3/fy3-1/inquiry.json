@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Force gets its meaning as a measure of the strength of an interaction, which the spring of a force meter measures in newtons, and weight is distinguished from mass: $G = mg$ depends on both the object and the celestial body.",
   "learn": [
-    "You can explain why force measures the strength of an interaction and how a force meter measures it in newtons.",
-    "You can tell weight and mass apart.",
-    "You can calculate the weight of an object from its mass on different celestial bodies."
+    "explain why force measures the strength of an interaction and how a force meter measures it in newtons.",
+    "tell weight and mass apart.",
+    "calculate the weight of an object from its mass on different celestial bodies."
   ],
   "prior": [
     "Direct proportionality and a straight line through the origin, for example $s = vt$ (FY1)",

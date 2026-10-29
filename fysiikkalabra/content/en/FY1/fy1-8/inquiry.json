@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Earlier chapters have taught you to measure and to present results. This chapter puts the skills together into an experimental investigation: a question and a hypothesis, a fair experiment, choosing the measuring range on the basis of uncertainty, the lab record and the report.",
   "learn": [
-    "You can formulate a research question and a testable hypothesis.",
-    "You can plan a fair experiment: choose the variables, the measuring range and the repeats.",
-    "You can record measurements in a lab record and report a result with its uncertainty."
+    "formulate a research question and a testable hypothesis.",
+    "plan a fair experiment: choose the variables, the measuring range and the repeats.",
+    "record measurements in a lab record and report a result with its uncertainty."
   ],
   "prior": [
     "A measurement result has an uncertainty, and repeating the measurement gives a mean (chapter *Measuring and the reliability of a measurement*)",

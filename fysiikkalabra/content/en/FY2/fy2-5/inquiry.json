@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Chemical energy gets a formula: the heat of combustion $H$ of a fuel tells you the energy released per kilogram, and $E = Hm$ gives it for the whole mass. The energy content of food is given in the same unit, but it describes the energy the body can use.",
   "learn": [
-    "You can calculate the energy released from a fuel using its heat of combustion and mass.",
-    "You can compare fuels and food by energy content and explain how food energy differs from the heat of combustion.",
-    "You can tell released energy apart from useful energy using efficiency."
+    "calculate the energy released from a fuel using its heat of combustion and mass.",
+    "compare fuels and food by energy content and explain how food energy differs from the heat of combustion.",
+    "tell released energy apart from useful energy using efficiency."
   ],
   "prior": [
     "Energy is neither created nor destroyed but transformed from one form to another (chapter *Forms of energy and conservation of energy*)",

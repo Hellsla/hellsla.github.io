@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kurssin ensimmäinen luku antaa energian peruskäsitteet: seitsemän energialajia, joulen ja energian säilymislain eristetyssä systeemissä. Simulaatiossa kokonaisenergian vakiona pysyminen näkyy joulina, kun kitka muuttaa mekaanisen energian lämpöenergiaksi.",
   "learn": [
-    "Osaat nimetä energialajit ja tunnistaa, missä muodossa energiaa on.",
-    "Osaat laskea tuntemattoman energian säilymislain $E_\\text{alussa} = E_\\text{lopussa}$ avulla.",
-    "Osaat selittää, miksi energian kuluminen on muuttumista eikä häviämistä."
+    "nimeämään energialajit ja tunnistamaan, missä muodossa energiaa on.",
+    "laskemaan tuntemattoman energian säilymislain $E_\\text{alussa} = E_\\text{lopussa}$ avulla.",
+    "selittämään, miksi energian kuluminen on muuttumista eikä häviämistä."
   ],
   "prior": [
     "Etuliite kilo tarkoittaa tuhatta, joten $1\\,\\text{kJ} = 1000\\,\\text{J}$ (luku *Suureet, yksiköt ja SI-järjestelmä*)"

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "contribution": "Lämpötilan muutos muuttaa myös kappaleen kokoa: tällä tunnilla selvität kokeilla, mistä sauvan pituuden muutos riippuu, ja mikromalli selittää, miksi kiinteä aine laajenee lämmetessään.",
-  "learn": ["Osaat selittää hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään.", "Tutkit kokeilla, mistä sauvan pituuden muutos riippuu.", "Osaat laskea kappaleen pituuden ja tilavuuden muutoksen lämpötilan muuttuessa."],
+  "learn": ["selittämään hiukkasmallilla, miksi kiinteä aine laajenee lämmetessään.", "tutkimaan kokeilla, mistä sauvan pituuden muutos riippuu.", "laskemaan kappaleen pituuden ja tilavuuden muutoksen lämpötilan muuttuessa."],
   "prior": [
     "Lämpötila kuvaa hiukkasten lämpöliikkeen voimakkuutta; kaasussa se kertoo hiukkasten keskimääräisestä liike-energiasta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
     "Lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina, $T = \\theta + 273{,}15$ (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)"

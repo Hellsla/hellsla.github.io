@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Oppilas oppii vertailemaan energiantuotantotapoja suuruusluokkien avulla. Hän tarkastelee yhden voimalan tehoa, vuosienergiaa $E = P \\cdot t$ ja Suomen sähköntuotannon jakaumaa. Hän oppii erottamaan sääriippuvaisen, säädettävän ja tasaisen tuotannon.",
   "learn": [
-    "Osaat laskea voimalan vuosienergian tai keskitehon kaavalla $E = P \\cdot t$.",
-    "Osaat jakaa voimalat sääriippuvaisiin, säädettäviin ja perusvoimaan. Osaat myös perustella jaon.",
-    "Osaat vertailla tuotantotapoja suuruusluokkien ja kriteerien avulla."
+    "laskemaan voimalan vuosienergian tai keskitehon kaavalla $E = P \\cdot t$.",
+    "jakamaan voimalat sääriippuvaisiin, säädettäviin ja perusvoimaan ja perustelemaan jaon.",
+    "vertailemaan tuotantotapoja suuruusluokkien ja kriteerien avulla."
   ],
   "prior": [
     "Teho kertoo energian siirtymisen nopeuden, $P = E : t$ (luku *Teho*)",

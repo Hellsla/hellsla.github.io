@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Mass is directly proportional to volume, and the constant of proportionality is the density of the substance: m = ρV is a linear model. You solve it for mass, volume or density, and you read the density as a slope from measurements, even when the mass of a container is included.",
   "learn": [
-    "You can calculate the mass, volume or density of an object with the formula $m = \\rho V$.",
-    "You can explain why mass is directly proportional to volume and what the slope of the line tells you.",
-    "You can determine the density of a substance from measurement results and identify the substance using a table."
+    "calculate the mass, volume or density of an object with the formula $m = \\rho V$.",
+    "explain why mass is directly proportional to volume and what the slope of the line tells you.",
+    "determine the density of a substance from measurement results and identify the substance using a table."
   ],
   "prior": [
     "In direct proportionality the measurement points lie, within the measurement uncertainty, on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphs and fitting a straight line*)",

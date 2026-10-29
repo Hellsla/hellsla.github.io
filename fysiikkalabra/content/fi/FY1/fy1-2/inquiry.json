@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Suureen arvo on lukuarvo ja yksikkö, ja yksikön vaihtaminen muuttaa vain lukuarvoa: etuliitteet, kymmenpotenssit, merkitsevät numerot ja muunnokset kilometreistä astronomisiin yksikköihin ja valon kulkuaikaan ovat kurssin laskemisen yhteinen kieli.",
   "learn": [
-    "Osaat muuntaa yksiköitä etuliitteiden ja kymmenpotenssien avulla.",
-    "Osaat ilmoittaa laskun tuloksen oikealla määrällä merkitseviä numeroita.",
-    "Osaat ilmoittaa saman etäisyyden kilometreinä, astronomisina yksikköinä ja valon kulkuaikana."
+    "muuntamaan yksiköitä etuliitteiden ja kymmenpotenssien avulla.",
+    "ilmoittamaan laskun tuloksen oikealla määrällä merkitseviä numeroita.",
+    "ilmoittamaan saman etäisyyden kilometreinä, astronomisina yksikköinä ja valon kulkuaikana."
   ],
   "prior": [
     "Koot vaihtelevat Planckin pituudesta havaittavaan maailmankaikkeuteen yli kuudellakymmenellä kymmenpotenssilla (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Massa on suoraan verrannollinen tilavuuteen. Verrannollisuuskerroin on aineen tiheys. Kaava m = ρV on lineaarinen malli. Siitä ratkaistaan massa, tilavuus tai tiheys. Tiheyden voi myös lukea kulmakertoimena mittauksista, vaikka astian massa olisi mukana.",
   "learn": [
-    "Osaat laskea kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
-    "Osaat selittää, miksi massa on suoraan verrannollinen tilavuuteen. Osaat myös selittää, mitä suoran kulmakerroin kertoo.",
-    "Osaat määrittää aineen tiheyden mittaustuloksista. Osaat tunnistaa aineen taulukon avulla."
+    "laskemaan kappaleen massan, tilavuuden tai tiheyden kaavalla $m = \\rho V$.",
+    "selittämään, miksi massa on suoraan verrannollinen tilavuuteen ja mitä suoran kulmakerroin kertoo.",
+    "määrittämään aineen tiheyden mittaustuloksista ja tunnistamaan aineen taulukon avulla."
   ],
   "prior": [
     "Suoraan verrannollisessa riippuvuudessa mittauspisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta. Suoran kulmakerroin on suhde $y : x$ (luku *Graafinen esitys ja suoran sovittaminen*)",

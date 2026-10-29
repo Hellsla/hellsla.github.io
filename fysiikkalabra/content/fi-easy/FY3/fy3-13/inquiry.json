@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Absoluuttinen nollapiste määritetään kokeellisesti. Mittausaineisto muutetaan suoraksi. Suoraa jatketaan nollapaineeseen (ekstrapolointi). Tuloksen epävarmuus arvioidaan jyrkimmän ja loivimman sopivan suoran avulla.",
   "learn": [
-    "Osaat muuttaa mittausaineiston suoraksi ja jatkaa suoraa nollapaineeseen.",
-    "Osaat määrittää absoluuttisen nollapisteen kokeellisesti ekstrapoloimalla.",
-    "Osaat arvioida tuloksen epävarmuuden jyrkimmän ja loivimman sopivan suoran avulla."
+    "muuttamaan mittausaineiston suoraksi ja jatkamaan suoraa nollapaineeseen.",
+    "määrittämään absoluuttisen nollapisteen kokeellisesti ekstrapoloimalla.",
+    "arvioimaan tuloksen epävarmuuden jyrkimmän ja loivimman sopivan suoran avulla."
   ],
   "prior": [
     "Kun tilavuus ja kaasun määrä pysyvät samoina, harvan kaasun paine on verrannollinen kelvinlämpötilaan. Absoluuttinen nollapiste on kelvinasteikon nollakohta (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",

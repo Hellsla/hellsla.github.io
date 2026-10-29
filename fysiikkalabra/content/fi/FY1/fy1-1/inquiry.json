@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Fysiikka rakentaa malleja ja testaa ne mittauksilla, ja kohteiden koot käsitetään kymmenpotensseina: koko kirjoitetaan muodossa $a\\cdot10^{n}$, kokojen suhde saadaan jakamalla suurempi koko pienemmällä, ja jokainen kymmenpotenssin askel on kymmenkertainen koko. Zoomaussimulaatiolla opiskelija vertaa atomia ja sen ydintä sekä Aurinkokuntaa ja Linnunrataa, ja teoria kokoaa aineen rakenteen (molekyyli–atomi–ydin–nukleoni–kvarkki), Maan paikan maailmankaikkeuden rakenteissa, tähtitieteelliset kohdetyypit ja neljä perusvuorovaikutusta laadullisesti.",
   "learn": [
-    "Osaat kuvata aineen rakenteen molekyyleistä kvarkkeihin ja Maan paikan maailmankaikkeuden rakenteissa.",
-    "Osaat kirjoittaa koon kymmenpotenssimuotoon ja verrata kokoja suuruusluokkien avulla.",
-    "Tunnistat neljä perusvuorovaikutusta ja osaat liittää kuhunkin ilmiön."
+    "kuvaamaan aineen rakenteen molekyyleistä kvarkkeihin ja Maan paikan maailmankaikkeuden rakenteissa.",
+    "kirjoittamaan koon kymmenpotenssimuotoon ja vertaamaan kokoja suuruusluokkien avulla.",
+    "tunnistamaan neljä perusvuorovaikutusta ja liittämään kuhunkin ilmiön."
   ],
   "prior": [
     "Potenssit yläkoulun matematiikasta, esimerkiksi $10^{3} = 1000$ ja $10^{-2} = 0{,}01$",

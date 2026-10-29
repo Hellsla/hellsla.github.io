@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "A power plant converts energy step by step, and the efficiency of the chain is the product of the efficiencies of the steps, $\\eta = \\eta_1\\,\\eta_2\\,\\eta_3$. The biggest loss of a condensing power plant is the heat transferred to the condenser in the steam cycle. In combined heat and power production this heat is used as district heating, so the overall efficiency rises but less electricity is produced.",
   "learn": [
-    "You can calculate the efficiency of an energy production chain as the product of the efficiencies of its steps.",
-    "You can identify the biggest energy loss of a condensing power plant.",
-    "You can explain why the overall efficiency rises in combined heat and power production but less electricity is produced."
+    "calculate the efficiency of an energy production chain as the product of the efficiencies of its steps.",
+    "identify the biggest energy loss of a condensing power plant.",
+    "explain why the overall efficiency rises in combined heat and power production but less electricity is produced."
   ],
   "prior": [
     "Efficiency $\\eta = W/Q_1$ and the energy balance of a heat engine $Q_1 = W + Q_2$ (chapter Work done by a gas and the heat engine)",

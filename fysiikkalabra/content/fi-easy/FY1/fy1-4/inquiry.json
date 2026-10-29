@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Mittauspisteistä tulee kuvaaja ja lineaarinen malli. Opiskelija sovittaa pisteisiin suoran. Hän määrittää suoran kulmakertoimen ja vakiotermin kahdesta pisteestä, jotka ovat kaukana toisistaan. Hän tulkitsee ne fysikaalisesti. Hän myös tunnistaa, milloin suora ei sovi.",
   "learn": [
-    "Osaat esittää mittaukset kuvaajana ja sovittaa pisteisiin suoran.",
-    "Osaat määrittää suoran kulmakertoimen ja vakiotermin ja kertoa, mitä ne tarkoittavat.",
-    "Tunnistat, milloin lineaarinen malli ei sovi mittauksiin."
+    "esittämään mittaukset kuvaajana ja sovittamaan pisteisiin suoran.",
+    "määrittämään suoran kulmakertoimen ja vakiotermin ja kertomaan, mitä ne tarkoittavat.",
+    "tunnistamaan, milloin lineaarinen malli ei sovi mittauksiin."
   ],
   "prior": [
     "Jokaisessa mittauksessa on satunnaisvirhe. Se hajottaa tulokset molempiin suuntiin (luku *Mittaaminen ja mittauksen luotettavuus*)",

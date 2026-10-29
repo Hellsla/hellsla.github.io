@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Voima saa merkityksen vuorovaikutuksen voimakkuuden mittana. Voimamittarin jousi mittaa sitä newtoneina. Paino erotetaan massasta: $G = mg$ riippuu sekä kappaleesta että taivaankappaleesta.",
   "learn": [
-    "Osaat selittää, miksi voima kertoo vuorovaikutuksen voimakkuuden. Osaat myös selittää, miten voimamittari mittaa voimaa newtoneina.",
-    "Erotat painon ja massan toisistaan.",
-    "Osaat laskea kappaleen painon sen massasta eri taivaankappaleilla."
+    "selittämään, miksi voima kertoo vuorovaikutuksen voimakkuuden ja miten voimamittari mittaa voimaa newtoneina.",
+    "erottamaan painon ja massan toisistaan.",
+    "laskemaan kappaleen painon sen massasta eri taivaankappaleilla."
   ],
   "prior": [
     "Suoraan verrannollisuus ja origon kautta kulkeva suora, esimerkiksi $s = vt$ (FY1)",

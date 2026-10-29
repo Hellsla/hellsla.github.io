@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The first chapter of the course gives the basic concepts of energy: seven forms of energy, the joule and the law of conservation of energy in an isolated system. In the simulation you can see the total energy staying constant in joules while friction changes mechanical energy into thermal energy.",
   "learn": [
-    "You can name the forms of energy and recognise which form the energy is in.",
-    "You can calculate an unknown energy using the law of conservation of energy $E_\\text{initial} = E_\\text{final}$.",
-    "You can explain why using up energy means changing it, not losing it."
+    "name the forms of energy and recognise which form the energy is in.",
+    "calculate an unknown energy using the law of conservation of energy $E_\\text{initial} = E_\\text{final}$.",
+    "explain why using up energy means changing it, not losing it."
   ],
   "prior": [
     "The prefix kilo means a thousand, so $1\\,\\text{kJ} = 1000\\,\\text{J}$ (chapter *Quantities, units and the SI system*)"

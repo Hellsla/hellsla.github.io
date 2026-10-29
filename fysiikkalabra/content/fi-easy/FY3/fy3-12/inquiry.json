@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Ensimmäisen pääsäännön energiakirjanpito laajenee tehoihin. Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Rakennusosan läpi johtuva teho on $P = UA\\Delta T$. Kappaleen lämpötila pysyy vakiona, kun siihen tuleva ja siitä lähtevä teho ovat yhtä suuret. Tämä selittää kasvihuoneilmiön ja ilmastonmuutoksen.",
   "learn": [
-    "Tunnistat lämmön siirtymisen tavat: johtumisen, konvektion ja lämpösäteilyn.",
-    "Osaat laskea rakennusosan läpi johtuvan lämpötehon.",
-    "Osaat selittää energiatasapainon avulla kasvihuoneilmiön ja ilmastonmuutoksen."
+    "tunnistamaan lämmön siirtymisen tavat: johtumisen, konvektion ja lämpösäteilyn.",
+    "laskemaan rakennusosan läpi johtuvan lämpötehon.",
+    "selittämään energiatasapainon avulla kasvihuoneilmiön ja ilmastonmuutoksen."
   ],
   "prior": [
     "Lämpö ja työ muuttavat sisäenergiaa, $\\Delta U = Q + W$, ja energia säilyy (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",

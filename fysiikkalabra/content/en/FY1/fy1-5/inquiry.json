@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Linear model and direct proportionality in motion: the slope of the $(t, s)$ graph is the speed, the distance (not the position) is directly proportional to time, and the equation $s = s_0 + vt$ works as a calculation tool, for example for the distance of the Voyager 2 probe (a model value, source NASA/JPL).",
   "learn": [
-    "You can calculate the distance, time or speed in uniform motion with the formula $s = s_0 + vt$.",
-    "You can read the speed and the initial position from a $(t, s)$ graph.",
-    "You can explain when the distance is directly proportional to time and when the position is."
+    "calculate the distance, time or speed in uniform motion with the formula $s = s_0 + vt$.",
+    "read the speed and the initial position from a $(t, s)$ graph.",
+    "explain when the distance is directly proportional to time and when the position is."
   ],
   "prior": [
     "A straight line is fitted to measurement points, and its slope tells you how much $y$ changes when $x$ increases by one (chapter *Graphs and fitting a straight line*)",

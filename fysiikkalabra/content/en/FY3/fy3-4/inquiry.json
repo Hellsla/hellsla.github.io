@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Pressure $p = F/A$ tells how a force is spread over a surface, and in a liquid the pressure grows with depth as the straight line $p = p_0 + \\rho g h$, whose constant term is atmospheric pressure and whose slope is $\\rho g$.",
   "learn": [
-    "You can calculate pressure from force and area and explain how a force is spread over a surface.",
-    "You can calculate the pressure of a liquid at different depths.",
-    "You can interpret the constant term and the slope of a graph of pressure against depth."
+    "calculate pressure from force and area and explain how a force is spread over a surface.",
+    "calculate the pressure of a liquid at different depths.",
+    "interpret the constant term and the slope of a graph of pressure against depth."
   ],
   "prior": [
     "Weight is a force, $G = mg$, and $g = 9.81\\,\\text{m/s}^2$ (chapter *Force as a measure of interaction and weight G = mg*)",

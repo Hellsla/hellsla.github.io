@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Aiemmat luvut ovat opettaneet mittaamaan ja esittämään tuloksia. Tämä luku kokoaa taidot kokeelliseksi tutkimukseksi: kysymys ja hypoteesi, reilu koe, mittausalueen valinta epävarmuuden perusteella, mittauspöytäkirja ja raportti.",
   "learn": [
-    "Osaat muotoilla tutkimuskysymyksen ja testattavan hypoteesin.",
-    "Osaat suunnitella reilun kokeen: valita muuttujat, mittausalueen ja toistot.",
-    "Osaat kirjata mittaukset pöytäkirjaan ja raportoida tuloksen epävarmuuksineen."
+    "muotoilemaan tutkimuskysymyksen ja testattavan hypoteesin.",
+    "suunnittelemaan reilun kokeen: valitsemaan muuttujat, mittausalueen ja toistot.",
+    "kirjaamaan mittaukset pöytäkirjaan ja raportoimaan tuloksen epävarmuuksineen."
   ],
   "prior": [
     "Mittaustulokselle kuuluu epävarmuus, ja toistamalla mittaus saadaan keskiarvo (luku *Mittaaminen ja mittauksen luotettavuus*)",

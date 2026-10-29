@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Lineaarinen malli ja suoraan verrannollisuus liikkeessä: $(t, s)$-kuvaajan kulmakerroin on nopeus, matka (ei paikka) on suoraan verrannollinen aikaan, ja yhtälö $s = s_0 + vt$ toimii laskentavälineenä, esimerkiksi Voyager 2 -luotaimen etäisyydelle (mallin arvo, lähde NASA/JPL).",
   "learn": [
-    "Osaat laskea tasaisessa liikkeessä matkan, ajan tai nopeuden kaavalla $s = s_0 + vt$.",
-    "Osaat lukea $(t, s)$-kuvaajasta nopeuden ja alkupaikan.",
-    "Osaat selittää, milloin matka ja milloin paikka on suoraan verrannollinen aikaan."
+    "laskemaan tasaisessa liikkeessä matkan, ajan tai nopeuden kaavalla $s = s_0 + vt$.",
+    "lukemaan $(t, s)$-kuvaajasta nopeuden ja alkupaikan.",
+    "selittämään, milloin matka ja milloin paikka on suoraan verrannollinen aikaan."
   ],
   "prior": [
     "Mittauspisteisiin sovitetaan suora, ja sen kulmakerroin kertoo, kuinka paljon $y$ muuttuu, kun $x$ kasvaa yhdellä (luku *Graafinen esitys ja suoran sovittaminen*)",

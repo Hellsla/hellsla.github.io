@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kun kaasu laajenee, se tekee työn $W_\\text{k} = p\\,\\Delta V$. Työ näkyy $(V, p)$-kuvaajassa pinta-alana. Mäntäkone toistaa liikettään. Se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään paikkaan. Tämä rajoittaa hyötysuhdetta $\\eta = W/Q_1$. Siksi yhteistuotanto ja lämpöpumput ovat kannattavia.",
   "learn": [
-    "Osaat laskea laajenevan kaasun tekemän työn. Osaat myös lukea sen paineen ja tilavuuden kuvaajan pinta-alana.",
-    "Osaat selittää, miksi lämpövoimakone voi muuttaa lämpöä työksi vain silloin, kun se luovuttaa osan lämmöstä kylmempään.",
-    "Osaat laskea lämpövoimakoneen hyötysuhteen."
+    "laskemaan laajenevan kaasun tekemän työn ja lukemaan sen paineen ja tilavuuden kuvaajan pinta-alana.",
+    "selittämään, miksi lämpövoimakone voi muuttaa lämpöä työksi vain silloin, kun se luovuttaa osan lämmöstä kylmempään.",
+    "laskemaan lämpövoimakoneen hyötysuhteen."
   ],
   "prior": [
     "Ensimmäinen pääsääntö $\\Delta U = Q + W$. Siinä $W$ on työ, jonka ympäristö tekee systeemiin. Lisäksi energian säilyminen (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",

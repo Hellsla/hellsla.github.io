@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Teho on energian muuntumisen tai siirtymisen nopeus, $P = \\Delta E : \\Delta t$, ja energia kilowattitunteina on teho kilowatteina kertaa aika tunteina: sähkölasku selitetään laitteen tehosta ja käyttöajasta ilman työn käsitettä.",
   "learn": [
-    "Osaat laskea tehon, energian tai ajan kaavalla $P = E : t$.",
-    "Osaat selittää, miksi sähkölasku riippuu sekä tehosta että ajasta.",
-    "Osaat laskea sähköenergian kilowattitunteina ja sen hinnan."
+    "laskemaan tehon, energian tai ajan kaavalla $P = E : t$.",
+    "selittämään, miksi sähkölasku riippuu sekä tehosta että ajasta.",
+    "laskemaan sähköenergian kilowattitunteina ja sen hinnan."
   ],
   "prior": [
     "Energia mitataan jouleina, ja se muuntuu muodosta toiseen (luku *Energian muuntuminen ja yksikkö joule*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kemiallinen energia saa laskukaavan: polttoaineen lämpöarvo $H$ kertoo vapautuvan energian kilogrammaa kohti, ja $E = Hm$ antaa sen koko massalle. Ruoan energiasisältö ilmoitetaan samassa yksikössä, mutta se kuvaa elimistön hyödynnettävissä olevaa energiaa.",
   "learn": [
-    "Osaat laskea polttoaineesta vapautuvan energian lämpöarvon ja massan avulla.",
-    "Osaat vertailla polttoaineita ja ruokaa energiasisällön perusteella ja selittää, miten ruoan energiasisältö eroaa lämpöarvosta.",
-    "Osaat erottaa vapautuneen energian hyötyenergiasta hyötysuhteen avulla."
+    "laskemaan polttoaineesta vapautuvan energian lämpöarvon ja massan avulla.",
+    "vertailemaan polttoaineita ja ruokaa energiasisällön perusteella sekä selittämään, miten ruoan energiasisältö eroaa lämpöarvosta.",
+    "erottamaan vapautuneen energian hyötyenergiasta hyötysuhteen avulla."
   ],
   "prior": [
     "Energia ei synny eikä häviä, vaan muuntuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)",

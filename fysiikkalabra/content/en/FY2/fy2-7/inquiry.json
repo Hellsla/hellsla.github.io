@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Transferring energy: how electricity and district heating reach users, transmission loss as a percentage of the sent energy, efficiency of the transfer and storage as transferring energy in time; high voltage is justified qualitatively without formulas of electricity.",
   "learn": [
-    "You can explain how electrical energy and thermal energy are transferred from the power plant to the user.",
-    "You can calculate the energy that arrives and the energy that is lost from a loss percentage.",
-    "You can explain why long-distance electricity transmission uses high voltage."
+    "explain how electrical energy and thermal energy are transferred from the power plant to the user.",
+    "calculate the energy that arrives and the energy that is lost from a loss percentage.",
+    "explain why long-distance electricity transmission uses high voltage."
   ],
   "prior": [
     "Power tells the rate at which energy is transferred: $P = \\Delta E : \\Delta t$ (chapter *Power P = ΔE/Δt*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Energy gets the unit joule and the prefixes kJ, MJ, GJ and TJ: conservation and transformation of energy are shown as chains in which part turns into thermal energy at every step, and everyday and societal energies are compared by order of magnitude on a ladder.",
   "learn": [
-    "You can explain an energy chain and what the energy finally turns into.",
-    "You can give energy in joules and with the prefixes kJ, MJ, GJ and TJ.",
-    "You can compare everyday and societal energies by order of magnitude."
+    "explain an energy chain and what the energy finally turns into.",
+    "give energy in joules and with the prefixes kJ, MJ, GJ and TJ.",
+    "compare everyday and societal energies by order of magnitude."
   ],
   "prior": [
     "Energy appears in different forms and is conserved (chapter *Forms of energy and conservation of energy*)",

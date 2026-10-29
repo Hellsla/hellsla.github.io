@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Final chapter of the course: the greenhouse effect in qualitative terms, the link between fuels and climate change, and the comparison of ways of producing energy by life-cycle emission factors ($m = e \\cdot E$), so that the student can weigh the grounds of the sustainability debate.",
   "learn": [
-    "You can explain the greenhouse effect and why burning fossil fuels strengthens it.",
-    "You can calculate an emission from the emission factor and the energy, and compare ways of producing energy.",
-    "You can justify a choice using several criteria for comparison."
+    "explain the greenhouse effect and why burning fossil fuels strengthens it.",
+    "calculate an emission from the emission factor and the energy, and compare ways of producing energy.",
+    "justify a choice using several criteria for comparison."
   ],
   "prior": [
     "When a fuel burns, chemical energy is released, and energy is measured in joules and kilowatt-hours (chapter *Fuels and heat of combustion E = Hm*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Kaasun paine, tilavuus ja lämpötila liittyvät toisiinsa. Isotermisessä tilanmuutoksessa $pV$ pysyy vakiona (Boylen laki). Kääntäen verrannollisuus todennetaan suorana $(1/V, p)$-koordinaatistossa. Kun kaasun määrä pysyy samana, harvan kaasun tilavuus on vakiopaineessa verrannollinen kelvinlämpötilaan. Samoin paine on verrannollinen kelvinlämpötilaan vakiotilavuudessa (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*).",
   "learn": [
-    "Osaat käyttää Boylen lakia. Isotermisessä tilanmuutoksessa paineen ja tilavuuden tulo pysyy vakiona.",
-    "Osaat todentaa kääntäen verrannollisuuden suorana. Silloin painetta tarkastellaan tilavuuden käänteisluvun funktiona.",
-    "Osaat selittää, miten kaasun tilavuus riippuu kelvinlämpötilasta vakiopaineessa."
+    "käyttämään Boylen lakia. Isotermisessä tilanmuutoksessa paineen ja tilavuuden tulo pysyy vakiona.",
+    "todentamaan kääntäen verrannollisuuden suorana. Silloin painetta tarkastellaan tilavuuden käänteisluvun funktiona.",
+    "selittämään, miten kaasun tilavuus riippuu kelvinlämpötilasta vakiopaineessa."
   ],
   "prior": [
     "Paine on voima pinta-alaa kohti, $p = F/A$. Ilmanpaine on noin 101 kPa (luku *Paine ja hydrostaattinen paine*)",

@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "The value of a quantity is a numerical value and a unit, and changing the unit changes only the numerical value: prefixes, powers of ten, significant figures and conversions from kilometres to astronomical units and to the travel time of light are the common language of calculation in the course.",
   "learn": [
-    "You can convert units using prefixes and powers of ten.",
-    "You can give the result of a calculation with the right number of significant figures.",
-    "You can give the same distance in kilometres, in astronomical units and as the travel time of light."
+    "convert units using prefixes and powers of ten.",
+    "give the result of a calculation with the right number of significant figures.",
+    "give the same distance in kilometres, in astronomical units and as the travel time of light."
   ],
   "prior": [
     "Sizes range from the Planck length to the observable universe over more than sixty powers of ten (chapter *Physics as a science and the scales of the universe*)",

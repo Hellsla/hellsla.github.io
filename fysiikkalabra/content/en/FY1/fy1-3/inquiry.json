@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "A measurement result is an estimate that has an error: **random error** scatters the results and is reduced by taking the mean, **systematic error** shifts all results in the same direction and is not removed by repeating, and reliability means both repeatability and accuracy.",
   "learn": [
-    "You can tell gross error, random error and systematic error apart and recognise their sources.",
-    "You can calculate a mean and estimate the scatter of the results using half of the range.",
-    "You can correct a systematic error and judge whether a measurement is repeatable and accurate."
+    "tell gross error, random error and systematic error apart and recognise their sources.",
+    "calculate a mean and estimate the scatter of the results using half of the range.",
+    "correct a systematic error and judge whether a measurement is repeatable and accurate."
   ],
   "prior": [
     "A measurement result is given as a numerical value and a unit, and significant figures tell how precise it is (chapter *Quantities, units and the SI system*)"

@@ -2,8 +2,8 @@
   "version": 1,
   "contribution": "Lämpö ja työ ovat kaksi tapaa siirtää energiaa systeemiin tai siitä pois. Niiden summa on systeemin sisäenergian muutos: $\\Delta U = Q + W$. Tämä on termodynamiikan ensimmäinen pääsääntö. Lämpö on energian siirtymistä. Sisäenergia on systeemin ominaisuus.",
   "learn": [
-    "Osaat erottaa lämmön, työn ja sisäenergian toisistaan. Lämpö ja työ siirtävät energiaa. Sisäenergia on systeemin ominaisuus.",
-    "Osaat käyttää termodynamiikan ensimmäistä pääsääntöä."
+    "erottamaan lämmön, työn ja sisäenergian toisistaan. Lämpö ja työ siirtävät energiaa. Sisäenergia on systeemin ominaisuus.",
+    "käyttämään termodynamiikan ensimmäistä pääsääntöä."
   ],
   "prior": [
     "Työ $W = Fs$ siirtää energiaa. Joulen kokeessa työ lämmitti vettä (luku *Työ ja energia*)",

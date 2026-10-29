@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Energian säilymisestä ja tehosta siirrytään yhden laitteen hyötysuhteeseen. Opiskelija erottaa hyötyenergian ja häviöt. Hän lukee mittakaavaan piirretyn energiavirtakuvion ja laskee hyötysuhteen energioista ja tehoista. Hän huomaa, ettei hyötysuhde riipu käyntiajasta, kun laite käy tasaisella teholla. Hän myös erottaa mallin oletuksen todellisen laitteen käyttäytymisestä.",
   "learn": [
-    "Osaat laskea laitteen hyötysuhteen energioiden tai tehojen suhteena.",
-    "Osaat selittää, miksi hyötysuhde on enintään $100\\,\\%$ ja miksi se jää todellisissa laitteissa usein sen alle.",
-    "Osaat lukea energiavirtakuviota. Osaat päätellä siitä hyödyn ja häviöiden osuudet."
+    "laskemaan laitteen hyötysuhteen energioiden tai tehojen suhteena.",
+    "selittämään, miksi hyötysuhde on enintään $100\\,\\%$ ja miksi se jää todellisissa laitteissa usein sen alle.",
+    "lukemaan energiavirtakuviota ja päättelemään siitä hyödyn ja häviöiden osuudet."
   ],
   "prior": [
     "Energia ei synny eikä katoa. Se muuttaa muotoaan, ja osa siitä muuttuu usein lämmöksi (luku *Energialajit ja energian säilyminen*)",

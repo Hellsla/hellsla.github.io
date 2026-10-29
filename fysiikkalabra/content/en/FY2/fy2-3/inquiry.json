@@ -2,9 +2,9 @@
   "version": 1,
   "contribution": "Power is the rate at which energy is transformed or transferred, $P = \\Delta E : \\Delta t$, and energy in kilowatt-hours is power in kilowatts times time in hours: an electricity bill is explained by the power of a device and its usage time without the concept of work.",
   "learn": [
-    "You can calculate power, energy or time with the formula $P = E : t$.",
-    "You can explain why an electricity bill depends on both power and time.",
-    "You can calculate electrical energy in kilowatt-hours and its cost."
+    "calculate power, energy or time with the formula $P = E : t$.",
+    "explain why an electricity bill depends on both power and time.",
+    "calculate electrical energy in kilowatt-hours and its cost."
   ],
   "prior": [
     "Energy is measured in joules, and it is transformed from one form to another (chapter *Energy transformations and the joule*)",
