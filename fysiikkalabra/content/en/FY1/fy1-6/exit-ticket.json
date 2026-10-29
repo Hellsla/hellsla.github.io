@@ -1,0 +1,6 @@
+[
+  {
+    "q": "On the Moon the acceleration of free fall is $1.62\\,\\text{m/s}^2$. What is the speed of a stone dropped from rest after $3.0\\,\\text{s}$, and how many times greater would the speed be on Earth in the same time?",
+    "a": "On the Moon $v = gt = 1.62\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{s} \\approx 4.9\\,\\text{m/s}$. On Earth $v = 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{s} \\approx 29\\,\\text{m/s}$. The speed is directly proportional to the acceleration of free fall, so on Earth it is $9.81 : 1.62 \\approx 6.1$ times greater."
+  }
+]

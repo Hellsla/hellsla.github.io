@@ -1,0 +1,23 @@
+{
+ "Kuvitus: Maa avaruudesta nähtynä, ympärillään ohut ilmakehä. Kuvan vasemmassa reunassa paistaa Aurinko, ja tähdet tuikkivat mustalla taivaalla.": "Illustration: the Earth seen from space, with a thin atmosphere around it. The Sun shines at the left edge of the picture, and stars twinkle in the black sky.",
+ "Kuvitus: omakotitalo talviyönä. Lämpöä karkaa ulos ikkunoiden ja katon kautta, mitä kuvaavat oranssit nuolet. Maassa on lunta.": "Illustration: a detached house on a winter night. Heat escapes outwards through the windows and the roof, shown by orange arrows. There is snow on the ground.",
+ "Kolme lämmön siirtymistapaa, periaatekuva. Johtuminen: lämpö kulkee metallitangon läpi kuumasta päästä kylmään. Konvektio: lämmin vesi nousee kattilassa keskellä ja jäähtynyt vajoaa reunoilla, joten vesi kiertää. Säteily: kuuma kappale lähettää säteilyä, joka kulkee tyhjän tilan läpi.": "The three ways of heat transfer, schematic diagram. Conduction: heat travels through a metal rod from the hot end to the cold end. Convection: warm water rises in the middle of a pot and cooled water sinks at the edges, so the water circulates. Radiation: a hot object emits radiation, which travels through empty space.",
+ "kuuma": "hot",
+ "kylmä": "cold",
+ "johtuminen": "conduction",
+ "konvektio": "convection",
+ "säteily": "radiation",
+ "Maapallon energiatasapaino, periaatekuva. Auringosta tuleva säteily kulkee ilmakehän läpi maanpintaan; osa siitä heijastuu takaisin avaruuteen. Maanpinta säteilee lämpösäteilyä ylöspäin, ja ilmakehän kasvihuonekaasut säteilevät osan siitä takaisin alas.": "Energy balance of the Earth, schematic diagram. Radiation from the Sun passes through the atmosphere to the ground; part of it is reflected back into space. The ground radiates thermal radiation upwards, and the greenhouse gases of the atmosphere radiate part of it back down.",
+ "maanpinta": "ground",
+ "ilmakehä": "atmosphere",
+ "Aurinko": "Sun",
+ "heijastuu": "reflected",
+ "lämpösäteily": "heat radiation",
+ "takaisin": "back",
+ "Seinän poikkileikkaus ja lämpötilan kulku, periaatekuva. Seinässä on ohut sisälevy, paksu eristekerros ja ohut ulkoverhous. Lämpötila laskee sisältä 21 asteesta ulos miinus 15 asteeseen eli 36 kelviniä, ja suurin osa laskusta tapahtuu eristeessä. Lämpöteho P kulkee seinän läpi sisältä ulos.": "Cross-section of a wall and the course of the temperature, schematic diagram. The wall has a thin inner board, a thick layer of insulation and a thin outer cladding. The temperature falls from 21 degrees indoors to minus 15 degrees outdoors, that is, by 36 kelvins, and most of the fall happens in the insulation. The thermal power P passes through the wall from the inside to the outside.",
+ "eriste": "insulation",
+ "sisällä": "indoors",
+ "ulkona": "outdoors",
+ "Kaavakuva maapallon energiavirroista neliömetriä kohti ilmakehän ylärajalla. Auringosta tulee maapalloon säteilyä 341 W/m², ja siitä 102 W/m² heijastuu takaisin avaruuteen. Avaruuteen lähtevän lämpösäteilyn tehoa ei ole annettu. Maapallo on energiatasapainossa, joten sen lämpötila pysyy vakiona.": "Schematic diagram of the energy flows of the Earth per square metre at the top of the atmosphere. The Sun delivers 341 W/m² of radiation to the Earth, and 102 W/m² of it is reflected back into space. The power of the thermal radiation leaving into space is not given. The Earth is in energy balance, so its temperature stays constant.",
+ "maapallo": "Earth"
+}

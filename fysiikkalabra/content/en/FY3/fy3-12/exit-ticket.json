@@ -1,0 +1,6 @@
+[
+  {
+    "q": "The U-value of a wall is $0.20\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ and its area is 50 m². It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. How large is the thermal power transferred through the wall?",
+    "a": "$P = UA\\Delta T = 0.20\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 50\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 300\\,\\text{W}$."
+  }
+]

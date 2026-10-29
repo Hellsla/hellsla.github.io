@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "contribution": "Kemiallinen energia saa laskukaavan. Polttoaineen lämpöarvo $H$ kertoo vapautuvan energian kilogrammaa kohti. Kaava $E = Hm$ antaa energian koko massalle. Ruoan energiasisältö ilmoitetaan samassa yksikössä. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään.",
+  "learn": [
+    "Osaat laskea polttoaineesta vapautuvan energian lämpöarvon ja massan avulla.",
+    "Osaat vertailla polttoaineita ja ruokaa energiasisällön perusteella ja selittää, miten ruoan energiasisältö eroaa lämpöarvosta.",
+    "Osaat erottaa vapautuneen energian hyötyenergiasta hyötysuhteen avulla."
+  ],
+  "prior": [
+    "Energia ei synny eikä häviä, vaan muuntuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)",
+    "Energian yksikkö on joule, ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Energian muuntuminen ja yksikkö joule*)",
+    "Hyötysuhde kertoo, kuinka suuri osa otetusta energiasta on hyötyä (luku *Hyötysuhde*)",
+    "Teho on energia aikayksikköä kohti (luku *Teho P = ΔE/Δt*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Huoltoasemalla autoon tankataan bensiiniä. Mökin takassa poltetaan polttopuuta. Suklaalevyn kyljessä lukee \"energia $2200\\,\\text{kJ}$ sadassa grammassa\". Kaikissa kolmessa energiaa on varastoituna aineeseen. Energia vapautuu, kun aine palaa tai kun elimistö käyttää sen.",
+      "question": "Vapautuuko eri aineiden kilogrammasta yhtä paljon energiaa? Miten vapautuvan energian voi laskea?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: energian muuntuminen",
+      "optional": true,
+      "prompt": "Takassa palaa polttopuuta, ja huone lämpenee. Mikä kuvaus energian muuntumisesta on oikea?",
+      "choices": [
+        {
+          "text": "Puun kemiallinen energia muuntuu lämmöksi ja valoksi. Energiaa ei synny eikä häviä.",
+          "feedback": "Oikein. Kemiallinen energia on varastoituna puun rakenteeseen. Palaessa se muuntuu lämmöksi ja valoksi (luku *Energian muuntuminen ja yksikkö joule*). Tänään lasketaan, kuinka paljon energiaa vapautuu.",
+          "correct": true
+        },
+        {
+          "text": "Tuli luo energiaa, koska takassa on lämmintä, vaikka puu on kylmää.",
+          "feedback": "Energiaa ei synny tyhjästä. Lämmön energia tulee puun kemiallisesta energiasta. Se muuntuu toiseen muotoon (luku *Energialajit ja energian säilyminen*)."
+        },
+        {
+          "text": "Puun liike-energia muuntuu lämmöksi, kun puu palaa.",
+          "feedback": "Puu ei liiku, joten sillä ei ole liike-energiaa. Palamisessa muuntuu aineen kemiallinen energia."
+        },
+        {
+          "text": "Energia häviää palamisessa, kun puu muuttuu tuhkaksi ja savuksi.",
+          "feedback": "Energia ei häviä. Kokonaisenergia säilyy (luku *Energialajit ja energian säilyminen*). Kemiallinen energia muuntuu lämmöksi ja valoksi. Osa siirtyy savukaasujen mukana ympäristöön."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: bensiini ja polttopuu",
+      "justify": true,
+      "prompt": "Poltat kilogramman bensiiniä ja kilogramman ilmakuivaa polttopuuta. Kummasta vapautuu enemmän energiaa, ja kuinka paljon enemmän?",
+      "choices": [
+        {
+          "text": "Kummastakin vapautuu yhtä paljon energiaa, koska massa on sama.",
+          "feedback": "Mittaukset kumoavat tämän. Bensiinistä vapautuu noin $43\\,\\text{MJ}$ ja ilmakuivasta puusta noin $15\\,\\text{MJ}$. Sama massa ei tarkoita samaa energiaa. Aineet sisältävät eri määrän kemiallista energiaa samaa massaa kohti."
+        },
+        {
+          "text": "Puusta vapautuu enemmän, koska puuta palaa kauemmin.",
+          "feedback": "Palamisen kesto ei kerro vapautuvan energian määrää. Mittausten mukaan kilogramma puuta vapauttaa noin $15\\,\\text{MJ}$ ja kilogramma bensiiniä noin $43\\,\\text{MJ}$. Puu on siis tässä heikompi."
+        },
+        {
+          "text": "Bensiinistä vapautuu noin kolme kertaa enemmän energiaa.",
+          "feedback": "Oikein. Bensiinin lämpöarvo on noin $43\\,\\text{MJ/kg}$ ja ilmakuivan puun noin $15\\,\\text{MJ/kg}$, ja $43 : 15 \\approx 2{,}9$. Arvot ovat pyöristettyjä tyypillisiä lukuja (lähteet ovat taulukon alla luvun Kaava-osassa).",
+          "correct": true
+        },
+        {
+          "text": "Bensiinistä vapautuu noin sata kertaa enemmän energiaa.",
+          "feedback": "Ero on paljon pienempi. Tavallisimpien polttoaineiden lämpöarvot ovat kaikki samaa suuruusluokkaa, noin $10$–$50\\,\\text{MJ/kg}$. Bensiinin ja puun suhde on vain $43 : 15 \\approx 2{,}9$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: suklaa ja polttopuu",
+      "justify": true,
+      "prompt": "Suklaalevyn pakkauksessa lukee: energia $2200\\,\\text{kJ}$ sadassa grammassa. Sata grammaa ilmakuivaa polttopuuta poltetaan. Kumpi sisältää enemmän kemiallista energiaa?",
+      "choices": [
+        {
+          "text": "Polttopuu, koska se on polttoainetta ja suklaa on vain ravintoa.",
+          "feedback": "Ruokakin on kemiallisen energian varasto. Sata grammaa puuta vapauttaa palaessaan noin $15\\,\\text{MJ/kg} \\cdot 0{,}100\\,\\text{kg} = 1{,}5\\,\\text{MJ} = 1500\\,\\text{kJ}$. Se on vähemmän kuin suklaan $2200\\,\\text{kJ}$."
+        },
+        {
+          "text": "Suklaa.",
+          "feedback": "Oikein. Suklaan $2200\\,\\text{kJ}$ sadassa grammassa on $22\\,\\text{MJ/kg}$. Se on enemmän kuin puun $1500\\,\\text{kJ}$ sadassa grammassa eli $15\\,\\text{MJ/kg}$. Molemmat luvut ovat energiaa massayksikköä kohti. Pakkausmerkintä kertoo kuitenkin energian, jonka elimistö pystyy hyödyntämään. Jos suklaa palaisi, siitä vapautuisi vielä hieman enemmän energiaa. Suklaa voittaa vertailun silloinkin.",
+          "correct": true
+        },
+        {
+          "text": "Niitä ei voi verrata, koska toinen on ruokaa ja toinen polttoainetta.",
+          "feedback": "Molemmissa energia on kemiallista, ja sen määrä mitataan joulena. Kun kummastakin otetaan sata grammaa, energiat voi verrata suoraan: suklaassa $2200\\,\\text{kJ}$ ja puussa $1500\\,\\text{kJ}$."
+        }
+      ]
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Polttoaineiden lämpöarvot",
+      "source": "statistics",
+      "source_note": "Polttopuu ja jyrsinturve: Tilastokeskus, Polttoaineluokitus (2017). Maakaasu, kivihiili ja diesel: IPCC 2006 Guidelines, osa 2, oletuslämpöarvojen taulukko (2006). Bensiini: suomalaisen etanolia sisältävän bensiinin tyypillinen arvo (puhtaalle bensiinille IPCC 2006 antaa $44{,}3\\,\\text{MJ/kg}$). Puupelletti: tyypillinen arvo. Arvot ovat tehollisia lämpöarvoja, ja ne on pyöristetty.",
+      "text": "Taulukossa on yleisten polttoaineiden lämpöarvot $H$. Lämpöarvo on energia, joka vapautuu yhdestä kilogrammasta polttoainetta.\n\n| Polttoaine | $H$ ($\\text{MJ/kg}$) |\n|---|---|\n| maakaasu | 48 |\n| bensiini | 43 |\n| diesel | 43 |\n| kivihiili | 26 |\n| puupelletti | 17 |\n| polttopuu (ilmakuiva) | 15 |\n| turve (jyrsinturve) | 10 |\n",
+      "question": {
+        "type": "choice",
+        "prompt": "Mikä seuraavista väitteistä pitää taulukon perusteella paikkansa?",
+        "choices": [
+          {
+            "text": "Kaasu ja nestemäiset polttoaineet vapauttavat kilogrammaa kohti enemmän energiaa kuin puu ja turve.",
+            "feedback": "Oikein. Maakaasun, bensiinin ja dieselin lämpöarvot ovat $43$–$48\\,\\text{MJ/kg}$, puun ja turpeen vain $10$–$15\\,\\text{MJ/kg}$.",
+            "correct": true
+          },
+          {
+            "text": "Kaikista polttoaineista vapautuu kilogrammaa kohti sama energia.",
+            "feedback": "Taulukko kumoaa tämän. Lämpöarvot vaihtelevat luvusta $10$ lukuun $48\\,\\text{MJ/kg}$. Kaikki palavat aineet eivät sisällä yhtä paljon energiaa."
+          },
+          {
+            "text": "Turve on tehokkain polttoaine, koska sitä tarvitaan eniten.",
+            "feedback": "Turvetta tarvitaan paljon, koska sen lämpöarvo on pieni. Pieni $H$ tarkoittaa, että kilogrammasta vapautuu vähän energiaa. Saman energian saamiseksi tarvitaan silloin enemmän massaa."
+          },
+          {
+            "text": "Mitä pienempi lämpöarvo, sitä vähemmän polttoainetta tarvitaan.",
+            "feedback": "Päinvastoin. Pieni lämpöarvo tarkoittaa, että kilogrammasta saa vähän energiaa. Siksi polttoainetta tarvitaan paljon."
+          }
+        ]
+      }
+    },
+    {
+      "id": "rakenna",
+      "stage": "tutki",
+      "type": "interpret",
+      "optional": true,
+      "title": "Kuinka energia riippuu massasta?",
+      "source": "model",
+      "source_note": "esimerkki: lasketut arvot ilmakuivan polttopuun poltosta, kun lämpöarvo on $15\\,\\text{MJ/kg}$",
+      "text": "Ilmakuivaa polttopuuta poltetaan eri määriä. Taulukossa on poltetun puun massa $m$ ja siitä vapautuva energia $E$.\n\n| $m$ ($\\text{kg}$) | $E$ ($\\text{MJ}$) |\n|---|---|\n| 1,0 | 15 |\n| 2,0 | 30 |\n| 4,0 | 60 |\n| 8,0 | 120 |\n",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukosta voi päätellä?",
+        "choices": [
+          {
+            "text": "Vapautuva energia on suoraan verrannollinen massaan. Jokaista kilogrammaa kohti vapautuu $15\\,\\text{MJ}$. Tämä luku on puun lämpöarvo.",
+            "feedback": "Oikein. Kun massa kaksinkertaistuu, energia kaksinkertaistuu. Lisäksi $E : m = 15\\,\\text{MJ/kg}$ kaikilla riveillä. Siksi energia lasketaan kertomalla lämpöarvo massalla: $E = Hm$.",
+            "correct": true
+          },
+          {
+            "text": "Energia kasvaa nopeammin kuin massa, koska suuri kasa palaa kuumemmin.",
+            "feedback": "Taulukossa kaksinkertainen massa antaa kaksinkertaisen energian, ei enemmän. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Se pysyy samana, vaikka kasa on suurempi."
+          },
+          {
+            "text": "Energia ei riipu massasta, koska puu on aina samaa puuta.",
+            "feedback": "Puuta on eri määriä, ja vapautuva energia kasvaa massan mukana. Vain energia yhtä kilogrammaa kohti on vakio."
+          },
+          {
+            "text": "Nelinkertainen massa antaa kahdeksankertaisen energian.",
+            "feedback": "Tarkista rivit: $1{,}0\\,\\text{kg}$ antaa $15\\,\\text{MJ}$ ja $4{,}0\\,\\text{kg}$ antaa $60\\,\\text{MJ}$. Nelinkertainen massa antaa siis nelinkertaisen energian."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ruoka",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Pakkausmerkintä yksikköön MJ/kg",
+      "source": "example",
+      "source_note": "esimerkkimerkintä, ei oikean tuotteen tietoja",
+      "text": "Suklaalevyn pakkauksessa lukee:\n\n| Ravintoarvo | sadassa grammassa |\n|---|---|\n| energia | $2200\\,\\text{kJ}$ |\n\nMuuta energia megajouleiksi ja massa kilogrammoiksi. Silloin merkinnästä saa suklaan energiasisällön $e$ yksikössä $\\text{MJ/kg}$. Se ilmoitetaan samassa yksikössä kuin lämpöarvo. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään.\n",
+      "question": {
+        "type": "numeric",
+        "prompt": "Mikä on suklaan energiasisältö $e$ yksikössä $\\text{MJ/kg}$?",
+        "answer": 22,
+        "unit": "MJ/kg",
+        "tolerance": 0.02,
+        "hints": [
+          "Kuinka monta megajoulea on $2200\\,\\text{kJ}$ ja kuinka monta kilogrammaa on $100\\,\\text{g}$?",
+          "$2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.",
+          "Energiasisältö on energia jaettuna massalla: $e = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2200,
+            "feedback": "Et ole muuttanut yksiköitä. $\\text{kJ}$ on tuhannesosa megajoulesta, ja $100\\,\\text{g}$ on kymmenesosa kilogrammasta."
+          },
+          {
+            "value": 0.022,
+            "feedback": "Jaoit energian megajouleina luvulla $100$ eli grammoilla. Massa pitää kuitenkin ilmoittaa kilogrammoina: $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$."
+          }
+        ],
+        "solution": "**Annettu:** energia $2200\\,\\text{kJ}$ massaa $100\\,\\text{g}$ kohti\n\n**Kysytty:** energiasisältö $e$ yksikössä $\\text{MJ/kg}$\n\n**Periaate:** Energiasisältö on energia yhtä kilogrammaa kohti. Pakkausmerkintä antaa sadalle grammalle energian, jonka elimistö pystyy hyödyntämään. Merkintä muutetaan siis yksikköön megajoulea kilogrammaa kohti. Lämpöarvokin ilmoitetaan samalla tavalla.\n\n**Kaava:** $e = \\dfrac{E}{m}$\n\n**Muunnokset:** $2200\\,\\text{kJ} = 2200 \\cdot (1 : 1000)\\,\\text{MJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}100\\,\\text{kg}$.\n\n**Sijoitus:** $e = 2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$\n\n**Vastaus:** $22\\,\\text{MJ/kg}$, kaksi merkitsevää numeroa kuten luvussa $2200\\,\\text{kJ}$.\n\n**Järkevyys:** Polttopuun lämpöarvo on $15\\,\\text{MJ/kg}$ ja bensiinin $43\\,\\text{MJ/kg}$. Suklaan energiasisältö on näiden välissä. Tulos on uskottava, koska suklaa sisältää paljon rasvaa ja sokeria. Luvut eivät ole aivan sama suure. Suuruusluokan vertailuun ne kuitenkin käyvät."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä lämpöarvo kertoo?",
+      "prompt": "Kirjoita taulukoiden ja pakkausmerkinnän perusteella: mitä lämpöarvo kertoo polttoaineesta? Miten lämpöarvon avulla lasketaan massasta vapautuva energia? Miten ruoan pakkausmerkintä liittyy tähän?",
+      "model": "Lämpöarvo $H$ kertoo, kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta. Se mitataan yksiköissä $\\text{MJ/kg}$. Taulukossa bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$ ja ilmakuivan puun $15\\,\\text{MJ/kg}$. Saman massan polttaminen vapauttaa siis eri määrän energiaa. Energia on suoraan verrannollinen massaan. Vapautuva energia saadaan kertomalla lämpöarvo massalla: $E = Hm$, kun massa on kilogrammoina. Ruoan pakkausmerkintä kertoo energian sadalle grammalle. Kun se muutetaan megajouleiksi kilogrammaa kohti, saadaan ruoan energiasisältö, esimerkiksi $22\\,\\text{MJ/kg}$ suklaalle. Se ilmoitetaan samassa yksikössä kuin lämpöarvo. Se kuvaa kuitenkin energiaa, jonka elimistö pystyy hyödyntämään. Lämpöarvo taas kuvaa energiaa, joka vapautuu palamisessa.",
+      "criteria": [
+        "Sanoin, että lämpöarvo on energia yhtä kilogrammaa kohti.",
+        "Kirjoitin, että energia saadaan kertomalla lämpöarvo massalla.",
+        "Mainitsin esimerkkinä jonkin taulukon luvun.",
+        "Selitin, että ruoan pakkausmerkinnän voi muuttaa yksikköön $\\text{MJ/kg}$. Kirjoitin, että se kuvaa energiaa, jonka elimistö pystyy hyödyntämään, eikä palamisessa vapautuvaa energiaa."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi taulukkoihin ja yhtälöön $E = Hm$. Palaa sitten alun kysymykseen: vapautuuko eri aineiden kilogrammasta yhtä paljon energiaa? Mitä pakkausmerkinnän $\\text{kJ}$-luku kertoo?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee, kuinka paljon energiaa vapautuu, kun poltetaan $250\\,\\text{g}$ ilmakuivaa polttopuuta ($H = 15\\,\\text{MJ/kg}$):\n\n$$\\begin{aligned} E &= Hm \\\\ &= 15\\,\\text{MJ/kg} \\cdot 250 \\\\ &= 3750\\,\\text{MJ} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Massaa ei ole muutettu kilogrammoiksi: $250\\,\\text{g} = 250 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}250\\,\\text{kg}$, joten $E = 3{,}75\\,\\text{MJ}$.",
+          "feedback": "Oikein. Lämpöarvo on energia kilogrammaa kohti, joten massa pitää laskea kilogrammoina. Tuloksen olisi voinut huomata vääräksi. Energia $3750\\,\\text{MJ}$ vastaisi $250\\,\\text{kg}$ puuta, ja $250\\,\\text{g}$ on tuhannesosa siitä.",
+          "correct": true
+        },
+        {
+          "text": "Kaava on väärä: lämpöarvo pitäisi jakaa massalla.",
+          "feedback": "Kaava $E = Hm$ on oikein. Lämpöarvo on energia massayksikköä kohti, joten energia saadaan kertomalla. Virhe on yksikössä."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska lämpöarvo on megajouleina ja massan saa silloin kirjoittaa grammoina.",
+          "feedback": "Laskussa on virhe. Lämpöarvo on energia kilogrammaa kohti, joten massa pitää antaa kilogrammoina. Neljännes kilogrammaa puuta ei vapauta tuhansia megajoulea. Se vapauttaa vain osan yhden kilogramman energiasta $15\\,\\text{MJ}$."
+        },
+        {
+          "text": "Tulos pitäisi muuttaa kilowattitunneiksi.",
+          "feedback": "Yksikön vaihto ei korjaa virhettä. Megajouleina tai kilowattitunteina luku olisi silti tuhatkertainen. Ensin massa pitää muuttaa kilogrammoiksi."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Retkikeittimen kaasupatruunassa on $0{,}230\\,\\text{kg}$ nestekaasua. Sen lämpöarvo on noin $46\\,\\text{MJ/kg}$. Keittimen hyötysuhde on $60\\,\\%$. Kuinka paljon hyötyenergiaa saadaan, kun koko patruunan kaasu poltetaan? Vastaa megajouleina.",
+      "answer": 6.3,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon energiaa kaasusta vapautuu palaessaan? Mikä laki kertoo sen?",
+        "Vapautuva energia on $E_\\text{sisään} = Hm$. Hyötysuhde on $\\eta = \\dfrac{E_\\text{hyöty}}{E_\\text{sisään}}$ (luku *Hyötysuhde*), josta $E_\\text{hyöty} = \\eta\\, E_\\text{sisään}$.",
+        "$E_\\text{sisään} = 46\\,\\text{MJ/kg} \\cdot 0{,}230\\,\\text{kg}$ ja $E_\\text{hyöty} = 0{,}60 \\cdot E_\\text{sisään}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10.6,
+          "feedback": "Laskit vain vapautuvan energian $Hm$. Siitä vain $60\\,\\%$ on hyötyä, koska osa lämmöstä menee ympäristöön."
+        },
+        {
+          "value": 4.2,
+          "feedback": "Laskit hukkaenergian eli $40\\,\\%$ vapautuvasta energiasta. Hyötyenergia on $60\\,\\%$ eli $0{,}60 \\cdot E_\\text{sisään}$."
+        },
+        {
+          "value": 6350,
+          "feedback": "Syötit massan grammoina. Lämpöarvo on energia kilogrammaa kohti, joten massa on $0{,}230\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Annettu:** nestekaasun massa $m = 0{,}230\\,\\text{kg}$, lämpöarvo $H = 46\\,\\text{MJ/kg}$ ja keittimen hyötysuhde $\\eta = 60\\,\\% = 0{,}60$\n\n**Kysytty:** hyötyenergia $E_\\text{hyöty}$ megajouleina\n\n**Periaate:** Kun kaasu palaa, sen kemiallinen energia vapautuu lämpöarvon mukaan. Vapautuneesta energiasta vain osa on hyötyä. Hyötysuhde kertoo, kuinka suuri tämä osuus on (luku *Hyötysuhde*). Loput lämmöstä menee ympäristöön.\n\n**Kaava:** $E_\\text{sisään} = Hm$ ja $\\eta = \\dfrac{E_\\text{hyöty}}{E_\\text{sisään}}$, josta $E_\\text{hyöty} = \\eta\\, E_\\text{sisään}$\n\n**Muunnokset:** Ei tarvita: massa on kilogrammoina ja $60\\,\\% = 0{,}60$.\n\n**Sijoitus:** $E_\\text{sisään} = 46\\,\\text{MJ/kg} \\cdot 0{,}230\\,\\text{kg} = 10{,}58\\,\\text{MJ}$ ja $E_\\text{hyöty} = 0{,}60 \\cdot 10{,}58\\,\\text{MJ} = 6{,}348\\,\\text{MJ}$\n\n**Vastaus:** $6{,}3\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $46\\,\\text{MJ/kg}$ ja $60\\,\\%$.\n\n**Järkevyys:** Neljäsosa kilogrammaa polttoainetta antaa noin $0{,}25 \\cdot 46\\,\\text{MJ} \\approx 11\\,\\text{MJ}$. Vapautuva energia $10{,}6\\,\\text{MJ}$ on siis oikeaa suuruusluokkaa. Hyötyenergia on pienempi, noin kuusi kymmenesosaa siitä. Näin pitää olla, kun hyötysuhde on $60\\,\\%$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises"
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Mitä polttoaineen lämpöarvo $H$ kertoo?",
+      "choices": [
+        {
+          "text": "Kuinka paljon energiaa vapautuu yhdestä kilogrammasta polttoainetta palaessaan.",
+          "feedback": "Oikein. Lämpöarvon yksikkö $\\text{MJ/kg}$ kertoo energian massayksikköä kohti. Koko energia saadaan, kun lämpöarvo kerrotaan massalla: $E = Hm$.",
+          "correct": true
+        },
+        {
+          "text": "Kuinka kuumana polttoaine palaa eli sen liekin lämpötilan.",
+          "feedback": "Lämpöarvo ei ole lämpötila vaan energia massayksikköä kohti. Liekin lämpötila ja vapautuva energia ovat eri asioita."
+        },
+        {
+          "text": "Kuinka paljon energiaa polttoaineessa on yhteensä.",
+          "feedback": "Kokonaisenergia riippuu myös massasta. Lämpöarvo on energia yhtä kilogrammaa kohti, ja kokonaisenergia on $E = Hm$."
+        },
+        {
+          "text": "Kuinka nopeasti polttoaine palaa.",
+          "feedback": "Palamisnopeus liittyy tehoon (luku *Teho P = ΔE/Δt*), ei lämpöarvoon. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu. Se ei kerro, kuinka nopeasti."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Yksikkömuunnos ja energia",
+      "prompt": "Bensiinin lämpöarvo on $43\\,\\text{MJ/kg}$. Kuinka monta kilowattituntia energiaa vapautuu, kun poltetaan $1{,}0\\,\\text{kg}$ bensiiniä? Vastaa kilowattitunteina.",
+      "answer": 12,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "hints": [
+        "Ensin lasketaan energia megajouleina. Sitten se muutetaan kilowattitunneiksi.",
+        "$E = Hm$ ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Energian muuntuminen ja yksikkö joule*).",
+        "$E = 43\\,\\text{MJ/kg} \\cdot 1{,}0\\,\\text{kg} = 43\\,\\text{MJ}$. Koska $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$, on $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3{,}6$. Sijoita tämä."
+      ],
+      "mistakes": [
+        {
+          "value": 43,
+          "feedback": "Laskit energian megajouleina, mutta et muuttanut sitä kilowattitunneiksi. Koska $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$, yksi megajoule on pienempi kuin kilowattitunti: $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3{,}6$."
+        },
+        {
+          "value": 155,
+          "feedback": "Kerroit luvulla $3{,}6$. Yksi kilowattitunti on kuitenkin suuri energia, $3{,}6\\,\\text{MJ}$. Kilowattitunteja on siis vähemmän kuin megajoulea."
+        }
+      ],
+      "solution": "**Annettu:** bensiinin lämpöarvo $H = 43\\,\\text{MJ/kg}$ ja massa $m = 1{,}0\\,\\text{kg}$\n\n**Kysytty:** vapautuva energia $E$ kilowattitunteina\n\n**Periaate:** Bensiinin kemiallinen energia vapautuu palaessa. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Ensin lasketaan energia megajouleina. Sitten se muutetaan kilowattitunneiksi.\n\n**Kaava:** $E = Hm$\n\n**Muunnokset:** $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$, joten $1\\,\\text{MJ} = 1\\,\\text{kWh} : 3{,}6$.\n\n**Sijoitus:** $E = 43\\,\\text{MJ/kg} \\cdot 1{,}0\\,\\text{kg} = 43\\,\\text{MJ} = 43 \\cdot (1\\,\\text{kWh} : 3{,}6) = 11{,}94\\,\\text{kWh}$\n\n**Vastaus:** $12\\,\\text{kWh}$, kaksi merkitsevää numeroa kuten tiedoissa $43\\,\\text{MJ/kg}$ ja $1{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Kilowattitunti on suuri yksikkö, joten lukua tulee vähemmän kuin megajoulea. Tarkistus: $3{,}6 \\cdot 12 = 43{,}2$, mikä on $43\\,\\text{MJ}$. Tulos $12\\,\\text{kWh}$ on siis oikein."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "optional": true,
+      "prompt": "Kymmenen kilon säkki puupellettejä ja kymmenen kilon bensiinikanisteri poltetaan. Kumpi vapauttaa enemmän energiaa, ja kuinka paljon? Selitä myös, miksi vapautunut energia ei ole sama asia kuin hyödyksi saatu energia.",
+      "model": "Pelletin lämpöarvo on noin $17\\,\\text{MJ/kg}$ ja bensiinin noin $43\\,\\text{MJ/kg}$. Lain $E = Hm$ mukaan pelleteistä vapautuu $17\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 170\\,\\text{MJ}$ ja bensiinistä $43\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 10\\,\\text{kg} = 430\\,\\text{MJ}$. Bensiinistä vapautuu siis noin $2{,}5$ kertaa enemmän. Vapautuneesta energiasta vain osa muuttuu hyödylliseen muotoon. Osa lämmöstä menee kattilassa tai moottorissa savukaasujen ja ympäristön mukana. Hyödyn osuus lasketaan hyötysuhteella.",
+      "criteria": [
+        "Käytän lakia $E = Hm$ ja massaa kilogrammoina.",
+        "Sanon, että bensiinistä vapautuu enemmän, koska sen lämpöarvo on suurempi.",
+        "Selitän, että osa vapautuneesta energiasta menee hukkaan eikä ole hyötyä.",
+        "Mainitsen hyötysuhteen."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

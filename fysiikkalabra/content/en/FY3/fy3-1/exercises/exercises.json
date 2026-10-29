@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-1-L1-01",
+      "level": 1,
+      "text": "The mass of an object is $4.0\\,\\text{kg}$. What is its weight on Earth?",
+      "answer": 39,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-02",
+      "level": 1,
+      "text": "The spring of a force meter stretches 2.0 cm when an object with a weight of 4.0 N is hung on it. How many centimetres does the spring stretch when an object with a weight of 12 N is hung on it?",
+      "answer": 6.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-03",
+      "level": 1,
+      "text": "The mass of a measuring instrument left on the surface of the Moon is $30\\,\\text{kg}$. What is its weight on the Moon? Read the value of $g$ from the table of the lesson.",
+      "answer": 49,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-04",
+      "level": 1,
+      "text": "The graph shows the calibration measurements of the spring of a force meter. When an unknown object is hung on the spring, it stretches $3.5\\,\\text{cm}$. How great a force stretches the spring?",
+      "figure": "fy3-1/spring-points",
+      "answer": 7.0,
+      "unit": "N",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-1-L1-05",
+      "level": 1,
+      "text": "The mass of an object is $2.5\\,\\text{kg}$. What is its weight on Jupiter, where $g = 24.8\\,\\text{m/s}^2$?",
+      "answer": 62,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-1-L2-01",
+      "level": 2,
+      "text": "A force meter shows 49 N when an object is hung on it on Earth. What is the mass of the object?",
+      "answer": 5.0,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-02",
+      "level": 2,
+      "text": "The mass of a hen's egg is $60\\,\\text{g}$. What is its weight on Earth in newtons?",
+      "answer": 0.59,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-03",
+      "level": 2,
+      "text": "The mass of an astronaut with equipment is $145\\,\\text{kg}$. By how much is his weight on the Moon ($g = 1.62\\,\\text{m/s}^2$) smaller than on Earth ($g = 9.81\\,\\text{m/s}^2$)?",
+      "answer": 1190,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-04",
+      "level": 2,
+      "text": "The spring of a force meter stretches 1.5 cm when a $0.20\\,\\text{kg}$ object is hung on it on Earth. How great a force stretches the spring 4.5 cm?",
+      "answer": 5.9,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-1-L3-01",
+      "level": 3,
+      "text": "An object is hung on a force meter on Earth, and the meter shows 18 N. The same object is taken to Mars ($g = 3.71\\,\\text{m/s}^2$). What does the same meter show there?",
+      "answer": 6.8,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-02",
+      "level": 3,
+      "text": "On Earth a lifter can lift at most a mass of $22.0\\,\\text{kg}$, that is, the lifter can produce a force equal to the weight of this mass. How great a mass could the lifter lift on the Moon ($g = 1.62\\,\\text{m/s}^2$) with the same force?",
+      "answer": 133,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-03",
+      "level": 3,
+      "text": "The scale of a force meter has been made on Earth so that it shows, in kilograms, the number obtained by dividing the force by $9.81\\,\\text{m/s}^2$. On Mars ($g = 3.71\\,\\text{m/s}^2$) the meter shows $26\\,\\text{kg}$ for an object hung on it. What is the mass of the object?",
+      "answer": 69,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ]
+}

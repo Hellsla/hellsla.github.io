@@ -1,0 +1,6 @@
+[
+  {
+    "q": "Juna kulkee tasaisesti nopeudella $90\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee $20\\,\\text{min}$:ssa?",
+    "a": "Aika tunteina on $t = 20\\,\\text{min} = \\tfrac{1}{3}\\,\\text{h}$. Siksi $s = vt = 90\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot \\tfrac{1}{3}\\,\\text{h} = 30\\,\\text{km}$. Yksiköt sopivat yhteen, kun aika on tunteina."
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-4-L1-01",
+      "level": 1,
+      "text": "Sähkömoottori ottaa sähköenergiaa $400\\,\\text{J}$. Se antaa siitä liike-energiaa $340\\,\\text{J}$. Mikä on moottorin hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 85,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-02",
+      "level": 1,
+      "text": "Ledilamppu ottaa sähköverkosta tehon $8{,}0\\,\\text{W}$. Se antaa valotehoa $2{,}4\\,\\text{W}$. Mikä on lampun hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 30,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-03",
+      "level": 1,
+      "text": "Hehkulampun hyötysuhde on $5{,}0\\,\\%$. Lamppu ottaa sähköverkosta tehon $60\\,\\text{W}$. Kuinka suuri on lampun antama valoteho? Anna vastaus watteina.",
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-04",
+      "level": 1,
+      "text": "Sähkömoottorin hyötysuhde on $90\\,\\%$. Moottori antaa hyötyenergiaa $1800\\,\\text{J}$. Kuinka paljon sähköenergiaa moottori otti? Anna vastaus jouleina.",
+      "answer": 2000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L1-05",
+      "level": 1,
+      "text": "Aurinkopaneeliin osuu säteilyenergiaa $5{,}0\\,\\text{kJ}$. Paneelin hyötysuhde on $20\\,\\%$. Kuinka paljon energiaa muuttuu häviöiksi? Anna vastaus kilojouleina.",
+      "answer": 4.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-4-L2-01",
+      "level": 2,
+      "text": "Sähkömoottori ottaa sähköverkosta tehon $1{,}0\\,\\text{kW}$. Sen hyötysuhde on $80\\,\\%$. Moottori käy $2{,}0\\,\\text{min}$. Kuinka paljon liike-energiaa moottori antaa? Anna vastaus kilojouleina.",
+      "answer": 96,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-02",
+      "level": 2,
+      "text": "Ledilampun hyötysuhde on $30\\,\\%$, ja se ottaa tehon $9{,}0\\,\\text{W}$. Hehkulampun hyötysuhde on $5{,}0\\,\\%$, ja se antaa saman valotehon. Kuinka suuren tehon hehkulamppu ottaa sähköverkosta? Anna vastaus watteina.",
+      "answer": 54,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-03",
+      "level": 2,
+      "text": "Hehkulampun sähköteho on $60\\,\\text{W}$ ja hyötysuhde $5{,}0\\,\\%$. Lamppu palaa $4{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa muuttuu lämmöksi? Anna vastaus kilowattitunteina.",
+      "answer": 0.228,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L2-04",
+      "level": 2,
+      "text": "Auton bensiinimoottorin hyötysuhde on $25\\,\\%$. Moottori antaa auton liikuttamiseen tehon $15\\,\\text{kW}$. Kuinka suuri on häviöteho eli teho, joka muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "answer": 45,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-4-L3-01",
+      "level": 3,
+      "text": "Laite A ottaa energiaa $200\\,\\text{J}$ ja antaa hyötyenergiaa $150\\,\\text{J}$. Laite B ottaa energiaa $4{,}0\\,\\text{kJ}$. Laitteen B häviöt ovat $2{,}0\\,\\text{kJ}$. Kuinka moninkertainen laitteen A hyötysuhde on laitteen B hyötysuhteeseen verrattuna?",
+      "answer": 1.5,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-02",
+      "level": 3,
+      "text": "Aurinkopaneeliin osuu säteilyteho $1{,}2\\,\\text{kW}$. Paneelin hyötysuhde on $20\\,\\%$. Kuinka kauan paneelilta kuluu sähköenergian $0{,}50\\,\\text{MJ}$ tuottamiseen? Anna vastaus sekunteina.",
+      "answer": 2083.33,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-4-L3-03",
+      "level": 3,
+      "text": "Energiavirtakuvio on piirretty mittakaavaan. Laitteeseen tulevan energian nuolen paksuus on $6{,}0\\,\\text{cm}$, ja se vastaa energiaa $240\\,\\text{J}$. Hyötyenergian nuolen paksuus on $1{,}5\\,\\text{cm}$. Kuinka paljon energiaa muuttuu häviöiksi? Anna vastaus jouleina.",
+      "answer": 180,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ]
+}

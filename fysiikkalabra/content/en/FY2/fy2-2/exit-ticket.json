@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What is the unit of energy, and how many joules are there in one kilojoule?",
+    "a": "The unit of energy is the joule (J). One kilojoule is $1000\\,\\text{J}$."
+  },
+  {
+    "q": "Convert $3.2\\,\\text{MJ}$ to kilojoules using the value of the prefix.",
+    "a": "$3.2\\,\\text{MJ} = 3.2 \\cdot 1000\\,\\text{kJ} = 3200\\,\\text{kJ}$."
+  },
+  {
+    "q": "A torch battery gives out $12\\,\\text{kJ}$, of which $3\\,\\text{kJ}$ turns into light. What does the remaining $9\\,\\text{kJ}$ turn into, and why has no energy been lost?",
+    "a": "The remaining $9\\,\\text{kJ}$ turns into thermal energy. No energy has been lost, because the energy of the light and the thermal energy together is $3\\,\\text{kJ} + 9\\,\\text{kJ} = 12\\,\\text{kJ}$, which is the same as at the start."
+  }
+]

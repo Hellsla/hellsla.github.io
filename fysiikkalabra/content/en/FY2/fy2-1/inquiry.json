@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "contribution": "The first chapter of the course gives the basic concepts of energy: seven forms of energy, the joule and the law of conservation of energy in an isolated system. In the simulation you can see the total energy staying constant in joules while friction changes mechanical energy into thermal energy.",
+  "learn": [
+    "You can name the forms of energy and recognise which form the energy is in.",
+    "You can calculate an unknown energy using the law of conservation of energy $E_\\text{initial} = E_\\text{final}$.",
+    "You can explain why using up energy means changing it, not losing it."
+  ],
+  "prior": [
+    "The prefix kilo means a thousand, so $1\\,\\text{kJ} = 1000\\,\\text{J}$ (chapter *Quantities, units and the SI system*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A bouncing ball is dropped on the floor. The first bounce rises almost as high as the height from which the ball was dropped, the next bounce is lower and the next one lower still. In the end the ball lies still on the floor. At the start the ball had a lot of energy high up, but at the end it is neither high up nor moving.",
+      "question": "Where did the energy of the ball go?"
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: half-pipe without friction",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "A skateboarder is released from rest from a height of $2.0\\,\\text{m}$ on the wall of a half-pipe, and there is no friction. At the starting point her potential energy is $981\\,\\text{J}$ and her kinetic energy is zero. The zero level of potential energy is the bottom of the half-pipe. What energy does the skateboarder have at the bottom?",
+      "choices": [
+        {
+          "text": "The potential energy is zero and the kinetic energy is $981\\,\\text{J}$.",
+          "feedback": "The values of the model support this: in a frictionless half-pipe the potential energy changes completely into kinetic energy at the bottom, and the sum $E_\\text{p} + E_\\text{k}$ stays $981\\,\\text{J}$.",
+          "correct": true
+        },
+        {
+          "text": "Both the potential energy and the kinetic energy are zero, because the skateboarder is at the lowest point.",
+          "feedback": "At the bottom the speed is greatest, so there is a lot of kinetic energy. In the table the kinetic energy grows as the potential energy decreases."
+        },
+        {
+          "text": "The kinetic energy is greater than $981\\,\\text{J}$, because the speed has increased.",
+          "feedback": "The kinetic energy cannot exceed the initial energy, because energy is not created. In the table the total energy stays the same even though the speed increases."
+        },
+        {
+          "text": "The kinetic energy is less than $981\\,\\text{J}$, because moving uses up energy.",
+          "feedback": "Without friction nothing changes energy into thermal energy, so nothing is used up. In the table the kinetic energy and the potential energy together are always $981\\,\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 2: why the motion stops",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "In a half-pipe with friction the skateboarder slides back and forth, and each rise is lower than the one before, until she stops at the bottom. Which explanation fits best in terms of energy?",
+      "choices": [
+        {
+          "text": "Motion uses up energy, and the energy disappears completely when the skateboarder stops.",
+          "feedback": "In the table the total energy stays the same all the time. The mechanical energy decreases, but the thermal energy increases by the same amount, so nothing disappears."
+        },
+        {
+          "text": "Friction changes mechanical energy into thermal energy, so the mechanical energy decreases but the total energy stays the same.",
+          "feedback": "The values of the model support this: in the graph the red thermal energy grows exactly as much as the blue and orange together decrease, and the top edge stays horizontal.",
+          "correct": true
+        },
+        {
+          "text": "A skateboarder who has stopped has no energy, because only moving objects have energy.",
+          "feedback": "There is energy in other forms than kinetic energy. The stopped skateboarder, the half-pipe and the air have thermal energy, and the total energy is equal to that at the start."
+        },
+        {
+          "text": "Friction transfers the energy to the half-pipe, where it is still potential energy.",
+          "feedback": "The half-pipe has not risen higher, so the potential energy has not increased. The energy has changed into thermal energy, which is shown in red in the graph."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a $50\\,\\text{kg}$ skateboarder starts from rest from height $h_0$ on the wall of a half-pipe. The bar and the graph show the potential energy, kinetic energy and thermal energy in joules.",
+      "howto": "Press *Start* and watch the motion and energies of the skateboarder. You can also drag the *Moment $t$* slider and stop the picture at any moment you like. Choose *Friction* (none, small or large) as well as *Initial height $h_0$* and *Speed*. The blue part of the bar is $E_\\text{p}$, the orange part $E_\\text{k}$ and the red striped part $E_\\text{thermal}$. The dashed line next to the bar shows the total energy.",
+      "model": "The values are model values calculated by the simulation, not measurements. The mass of the skateboarder is $50\\,\\text{kg}$, and she starts from rest from height $h_0$ on the wall of the half-pipe. The edges of the half-pipe are $3.0\\,\\text{m}$ high, and the zero level is the bottom. Air resistance is ignored. On every metre of sliding, friction changes the same amount of the energy of motion into thermal energy, so the longer the distance the skateboarder slides, the more energy is changed into thermal energy.",
+      "calc": "The simulation calculates the motion of the skateboarder in small time steps. The potential energy is calculated from the height, the kinetic energy from the speed and the thermal energy from how much friction has changed the energy of motion along the way. The formulas for these are not needed in this chapter. The three energies are calculated separately and only then added together, so the sum staying the same is a result of the calculation, not an assumption. The numbers shown are rounded to whole joules."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: half-pipe without friction",
+      "intro": "Test prediction 1. The initial state selects a half-pipe without friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 1.0\\,\\text{s}$, $t = 2.0\\,\\text{s}$ and $t = 3.0\\,\\text{s}$. At $t = 1.0\\,\\text{s}$ the skateboarder is near the bottom. The energies are in joules, and the column $E$ is the sum of the three energies. See what it tells you.",
+      "initial": {
+        "kitka": 0,
+        "h0": 2.0,
+        "t": 0
+      },
+      "locked": [
+        "kitka",
+        "h0"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "t",
+        "kitka": "kitka",
+        "h0": "initial height $h_0$"
+      },
+      "units": {
+        "t": "s",
+        "h0": "m"
+      },
+      "values": {
+        "kitka": {
+          "0": "no friction"
+        }
+      },
+      "measure": [
+        {
+          "key": "Ep",
+          "label": "$E_\\text{p}$"
+        },
+        {
+          "key": "Ek",
+          "label": "$E_\\text{k}$"
+        },
+        {
+          "key": "Eth",
+          "label": "$E_\\text{thermal}$"
+        },
+        {
+          "key": "Ekok",
+          "label": "$E$"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table show about the half-pipe without friction?",
+        "choices": [
+          {
+            "text": "When $E_\\text{p}$ decreases, $E_\\text{k}$ increases by the same amount, and the total energy stays the same.",
+            "feedback": "Correct. On every row the sum $E_\\text{p} + E_\\text{k} + E_\\text{thermal}$ is $981\\,\\text{J}$. Energy only changes form between potential energy and kinetic energy, and no thermal energy is produced.",
+            "correct": true
+          },
+          {
+            "text": "The total energy increases, because the skateboarder gains speed.",
+            "feedback": "Column $E$ is the same on every row. The speed increases because potential energy changes into kinetic energy, not because more energy arrives."
+          },
+          {
+            "text": "The kinetic energy is always equal to the potential energy.",
+            "feedback": "The values in columns $E_\\text{p}$ and $E_\\text{k}$ are different on different rows. Only their sum stays the same."
+          },
+          {
+            "text": "The total energy decreases, because kinetic energy is produced.",
+            "feedback": "Kinetic energy does not come from nothing but from potential energy. The total energy does not decrease; column $E$ stays the same."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: with friction",
+      "intro": "Test prediction 2. The initial state selects small friction and an initial height of $2.0\\,\\text{m}$ and sets the clock to zero. Move the *Moment $t$* slider and record the energies at at least three moments, for example $t = 0\\,\\text{s}$, $t = 8.0\\,\\text{s}$ and $t = 16.0\\,\\text{s}$. The energies are in joules, and the column $E$ is the sum of the three energies. Compare the mechanical energy $E_\\text{p} + E_\\text{k}$ and the thermal energy on the rows.",
+      "initial": {
+        "kitka": 1,
+        "h0": 2.0,
+        "t": 0
+      },
+      "locked": [
+        "kitka",
+        "h0"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "t",
+        "kitka": "kitka",
+        "h0": "initial height $h_0$"
+      },
+      "units": {
+        "t": "s",
+        "h0": "m"
+      },
+      "values": {
+        "kitka": {
+          "1": "small friction"
+        }
+      },
+      "measure": [
+        {
+          "key": "Ep",
+          "label": "$E_\\text{p}$"
+        },
+        {
+          "key": "Ek",
+          "label": "$E_\\text{k}$"
+        },
+        {
+          "key": "Eth",
+          "label": "$E_\\text{thermal}$"
+        },
+        {
+          "key": "Ekok",
+          "label": "$E$"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table show about the mechanical energy $E_\\text{p} + E_\\text{k}$, the thermal energy and the total energy?",
+        "choices": [
+          {
+            "text": "The mechanical energy decreases and the thermal energy increases, and the total energy stays the same.",
+            "feedback": "Correct. The mechanical energy decreases from about $981\\,\\text{J}$ to about $143\\,\\text{J}$, and the thermal energy increases from zero to about $838\\,\\text{J}$. The total energy stays $981\\,\\text{J}$.",
+            "correct": true
+          },
+          {
+            "text": "The mechanical energy stays the same, but the total energy decreases.",
+            "feedback": "The columns show the opposite: the mechanical energy $E_\\text{p} + E_\\text{k}$ decreases, but column $E$ stays the same."
+          },
+          {
+            "text": "Both the mechanical energy and the total energy decrease, because friction uses up energy.",
+            "feedback": "Friction changes energy, it does not use it up. The total energy stays the same when the thermal energy is included."
+          },
+          {
+            "text": "The thermal energy decreases, because the skateboarder slows down.",
+            "feedback": "The thermal energy does not decrease but increases every time the skateboarder slides against friction. Column $E_\\text{thermal}$ grows as time goes on."
+          }
+        ]
+      }
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "source": "simulated",
+      "title": "Example data: the bouncing ball",
+      "text": "A rubber ball is dropped on the floor. The table shows the mechanical energy of the ball when dropped and after each bounce (simulated example data, not a real experiment). The ball and the floor form an isolated system, and sound is ignored.\n\n| Bounces | Mechanical energy $E_\\text{mech}\\ (\\text{J})$ |\n|---|---|\n| $0$ | $0.60$ |\n| $1$ | $0.48$ |\n| $2$ | $0.38$ |\n| $3$ | $0.31$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "How much mechanical energy has changed into thermal energy during three bounces? Answer in joules.",
+        "answer": 0.29,
+        "unit": "J",
+        "tolerance": 0.02,
+        "hints": [
+          "What happens to the mechanical energy and the thermal energy during a bounce? Where does the energy that leaves the mechanical energy go?",
+          "Energy is conserved, so the decrease of the mechanical energy equals the increase of the thermal energy: $E_\\text{thermal} = E_\\text{initial} - E_\\text{mech}$, where $E_\\text{mech}$ is the mechanical energy of the ball at the end.",
+          "Read the starting value ($0$ bounces) and the final value ($3$ bounces) from the table and subtract: $0.60\\,\\text{J} - 0.31\\,\\text{J}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.31,
+            "feedback": "This is the mechanical energy after the third bounce, not the energy that has changed. Subtract it from the initial energy $0.60\\,\\text{J}$."
+          },
+          {
+            "value": 0.6,
+            "feedback": "This is the initial energy of the ball. After three bounces the ball still has mechanical energy $0.31\\,\\text{J}$, so only part of the initial energy has changed."
+          },
+          {
+            "value": 0.12,
+            "feedback": "This is the energy that changed during the first bounce, $0.60\\,\\text{J} - 0.48\\,\\text{J}$. The question was about three bounces, so use the value after the third bounce as the final value."
+          }
+        ],
+        "solution": "**Given:** mechanical energy when dropped $E_\\text{initial} = 0.60\\,\\text{J}$ and after three bounces $E_\\text{mech} = 0.31\\,\\text{J}$ (from the table, simulated example data)\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The ball and the floor form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The mechanical energy that the ball is missing has not disappeared but has changed into thermal energy.\n\n**Formula:** $E_\\text{initial} = E_\\text{mech} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{initial} - E_\\text{mech}$\n\n**Conversions:** All energies are in joules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 0.60\\,\\text{J} - 0.31\\,\\text{J} = 0.29\\,\\text{J}$\n\n**Answer:** $0.29\\,\\text{J}$, two significant figures and two decimal places like the values in the table.\n\n**Reasonableness:** After three bounces there is still $0.31\\,\\text{J}$ of mechanical energy, and $0.31\\,\\text{J} + 0.29\\,\\text{J} = 0.60\\,\\text{J}$ is the initial energy. In each bounce about a fifth of the remaining energy changes into thermal energy ($0.12\\,\\text{J}$, $0.10\\,\\text{J}$, $0.07\\,\\text{J}$), and these three together are $0.29\\,\\text{J}$."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "title": "Conclusion from the experiments",
+      "prompt": "Write a conclusion based on your experiments: What happened to the potential energy and the kinetic energy? What did friction change? What happened to the total energy? Use the numbers from your tables.",
+      "criteria": [
+        "I say that without friction the potential energy and the kinetic energy change into each other and their sum stays the same.",
+        "I say that with friction the mechanical energy decreases and the thermal energy increases by the same amount.",
+        "I say that the total energy, including the thermal energy, stays the same, and that energy changes form but is not lost.",
+        "I use the numbers from the tables and say that they are values from the simulation model, not measurements."
+      ],
+      "model": "According to the values of the simulation model, the total energy stayed the same, $981\\,\\text{J}$, all the time in the frictionless half-pipe. At $1.0\\,\\text{s}$ it was $E_\\text{p} = 63\\,\\text{J}$ and $E_\\text{k} = 918\\,\\text{J}$, at $2.0\\,\\text{s}$ correspondingly $862\\,\\text{J}$ and $119\\,\\text{J}$, and at $3.0\\,\\text{s}$ $424\\,\\text{J}$ and $557\\,\\text{J}$. When the potential energy decreased, the kinetic energy increased by the same amount. With small friction the mechanical energy $E_\\text{p} + E_\\text{k}$ decreased: it was $981\\,\\text{J}$ at $0\\,\\text{s}$, $469\\,\\text{J}$ at $8.0\\,\\text{s}$ and $143\\,\\text{J}$ at $16.0\\,\\text{s}$. At the same time the thermal energy grew from zero to $512\\,\\text{J}$ and to $838\\,\\text{J}$, so the total energy stayed $981\\,\\text{J}$. So the energy was not lost but changed into thermal energy through friction. The numbers are model values, not measurements."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the tables and the graph. What did you find out about the conservation of energy? Also return to the bouncing ball at the start: where did its energy go?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Find the error",
+      "prompt": "A student says: \"When a car brakes and stops, its kinetic energy disappears, because the car is no longer moving.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The kinetic energy does not disappear but changes into thermal energy in the brakes and tyres, and energy is conserved.",
+          "feedback": "Correct. A stopped car has no kinetic energy, but the brakes and tyres have warmed up. The thermal energy is equal to the original kinetic energy of the car.",
+          "correct": true
+        },
+        {
+          "text": "The kinetic energy changes into potential energy, because the car stops.",
+          "feedback": "The car has not risen higher, so the potential energy has not increased. The energy has changed into thermal energy."
+        },
+        {
+          "text": "There is no error, because an object at rest has no energy.",
+          "feedback": "An object at rest has no kinetic energy, but it has other forms of energy, and the total energy is conserved. In braking the energy changes into thermal energy."
+        },
+        {
+          "text": "The kinetic energy changes into chemical energy in braking.",
+          "feedback": "No chemical reactions take place in ordinary friction brakes. The friction of the brakes changes the kinetic energy into thermal energy."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A cyclist rides up a hill at a constant speed. Chemical energy of $420\\,\\text{kJ}$ is released in her muscles. The potential energy of her and the bicycle increases by $85\\,\\text{kJ}$, and the kinetic energy does not change. The rest of the energy changes into thermal energy. How much energy is changed into thermal energy? Answer in kilojoules.",
+      "answer": 335,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Into which forms of energy does the chemical energy of the muscles change? Name them all.",
+        "Write the law of conservation of energy in words: the chemical energy is the increase in potential energy plus the thermal energy. Solve it for the thermal energy.",
+        "Both energies are in kilojoules, so you can subtract directly: chemical energy minus the increase in potential energy."
+      ],
+      "mistakes": [
+        {
+          "value": 505,
+          "feedback": "You added the energies together. The chemical energy is divided into two parts, so the thermal energy is the chemical energy minus the increase in potential energy."
+        },
+        {
+          "value": 85,
+          "feedback": "This is the increase in potential energy. The question was about thermal energy, that is, the part of the chemical energy that did not change into potential energy."
+        },
+        {
+          "value": 420,
+          "feedback": "This is the whole chemical energy. Part of it changed into potential energy, so subtract $85\\,\\text{kJ}$."
+        }
+      ],
+      "solution": "**Given:** chemical energy $E_\\text{chem} = 420\\,\\text{kJ}$, increase in potential energy $E_\\text{p} = 85\\,\\text{kJ}$, change in kinetic energy $0\\,\\text{kJ}$\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{kJ}$\n\n**Principle:** The cyclist, the bicycle and the surroundings form an isolated system, so energy is conserved: $E_\\text{initial} = E_\\text{final}$. The speed does not change, so the kinetic energy does not change. The chemical energy changes into potential energy and thermal energy.\n\n**Formula:** $E_\\text{chem} = E_\\text{p} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{chem} - E_\\text{p}$\n\n**Conversions:** Both energies are in kilojoules and the answer is asked in kilojoules, so no conversions are needed.\n\n**Substitution:** $E_\\text{thermal} = 420\\,\\text{kJ} - 85\\,\\text{kJ} = 335\\,\\text{kJ}$\n\n**Answer:** $335\\,\\text{kJ}$, in whole kilojoules, because both energies are given to the nearest kilojoule.\n\n**Reasonableness:** $85\\,\\text{kJ}$ ends up as potential energy and $335\\,\\text{kJ}$ as thermal energy, and together they are $420\\,\\text{kJ}$, the same as the chemical energy of the muscles. About four times as much energy is changed into thermal energy as into useful energy, and human muscles are known to be inefficient: the cyclist sweats."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. Level 1 exercises use one energy balance, and level 3 requires reasoning. Level 1 is enough for basic skills; levels 2 and 3 are optional and more advanced, so do them if level 1 goes well. Always start by writing the law of conservation of energy in words or symbols."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "In a nuclear power plant, the nuclear reactions in the reactor heat water, hot steam turns a turbine and the turbine turns a generator, which produces electricity. In which form of energy is the energy of the plant's uranium fuel before it is released?",
+      "choices": [
+        {
+          "text": "As nuclear energy.",
+          "feedback": "Correct. The energy of uranium is stored in atomic nuclei, and it is released in nuclear reactions. Only in the reactor does it change into thermal energy, from which the turbine and generator finally make electrical energy.",
+          "correct": true
+        },
+        {
+          "text": "As chemical energy.",
+          "feedback": "Chemical energy is in the chemical bonds of substances, and it is released in, for example, combustion. In a nuclear power plant nothing burns: the energy is released from atomic nuclei, so it is nuclear energy."
+        },
+        {
+          "text": "As thermal energy.",
+          "feedback": "The energy changes into thermal energy only in the reactor, when the nuclear reactions heat the water. Before that the energy is stored in the atomic nuclei of uranium, so it is nuclear energy."
+        },
+        {
+          "text": "As electrical energy.",
+          "feedback": "Electrical energy is the end result of the plant, not the starting point: the generator produces it only at the end. The energy of the fuel is nuclear energy stored in atomic nuclei."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "An incandescent bulb takes electrical energy of $2.5\\,\\text{kJ}$ and changes $0.12\\,\\text{kJ}$ of it into visible light. The rest changes into thermal energy. How much energy is changed into thermal energy? Answer in joules.",
+      "answer": 2380,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the electrical energy of the bulb change into? What do you know about the light?",
+        "The law of conservation of energy: $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$. Solve it for $E_\\text{thermal}$. Finally, check in which unit the answer is asked.",
+        "First convert to joules: $2.5\\,\\text{kJ} = 2.5 \\cdot 1000\\,\\text{J}$ and $0.12\\,\\text{kJ} = 0.12 \\cdot 1000\\,\\text{J}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.38,
+          "feedback": "This is the correct amount in kilojoules. The question asked for joules, so multiply by a thousand."
+        },
+        {
+          "value": 120,
+          "feedback": "This is the energy that changed into light, in joules. The question asked for thermal energy, so subtract it from the electrical energy."
+        },
+        {
+          "value": 2620,
+          "feedback": "You added the electrical energy and the light together. The electrical energy is divided into two parts, so subtract the light from the electrical energy."
+        }
+      ],
+      "solution": "**Given:** electrical energy $E_\\text{elec} = 2.5\\,\\text{kJ}$, visible light $E_\\text{light} = 0.12\\,\\text{kJ}$\n\n**Find:** energy changed into thermal energy $E_\\text{thermal}$ in $\\text{J}$\n\n**Principle:** The bulb changes electrical energy into visible light and thermal energy; the thermal energy warms the bulb and the surroundings, and part of it leaves the bulb as thermal radiation. Energy is neither created nor destroyed, so $E_\\text{initial} = E_\\text{final}$.\n\n**Formula:** $E_\\text{elec} = E_\\text{light} + E_\\text{thermal}$, so $E_\\text{thermal} = E_\\text{elec} - E_\\text{light}$\n\n**Conversions:** The prefix kilo means a thousand, so $2.5\\,\\text{kJ} = 2.5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$ and $0.12\\,\\text{kJ} = 0.12 \\cdot 1000\\,\\text{J} = 120\\,\\text{J}$.\n\n**Substitution:** $E_\\text{thermal} = 2500\\,\\text{J} - 120\\,\\text{J} = 2380\\,\\text{J}$\n\n**Answer:** $2.4 \\cdot 10^{3}\\,\\text{J}$, two significant figures, because the electrical energy $2.5\\,\\text{kJ}$ is given to the nearest hundred joules and limits the difference.\n\n**Reasonableness:** Only $120\\,\\text{J} : 2500\\,\\text{J} \\approx 0.05$, about five per cent, changes into visible light, which is typical for an incandescent bulb, and the rest is thermal energy. Checking backwards: $2380\\,\\text{J} + 120\\,\\text{J} = 2500\\,\\text{J}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain in your own words why a bouncing ball finally stops even though energy is not lost. Say which forms of energy are involved and what the law of conservation of energy says.",
+      "criteria": [
+        "I say that the potential energy of the ball at the start changes into kinetic energy and that in the bounces part of it changes into thermal energy.",
+        "I say that the mechanical energy of the stopped ball has changed into thermal energy, which has spread into the ball, the floor and the air.",
+        "I say that in an isolated system $E_\\text{initial} = E_\\text{final}$, that is, the total energy stays the same.",
+        "I say that when energy is said to be used up, it means changing into a form that is hard to use."
+      ],
+      "model": "When the ball has been dropped, it has potential energy high up. During the fall the potential energy changes into kinetic energy, and in the impact with the floor part of the kinetic energy changes into thermal energy, so the ball and the floor warm up slightly. This is why the next bounce is always lower. Finally the mechanical energy of the ball has changed completely into thermal energy, and the ball is at rest. However, energy has not been lost: in the isolated system formed by the ball, the floor and the air $E_\\text{initial} = E_\\text{final}$, so the total energy is the same as at the start. Here using up energy means that the useful mechanical energy has changed into thermal energy that has spread into the surroundings."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

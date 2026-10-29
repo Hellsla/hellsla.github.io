@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Vaaka näyttää tyhjänä $0{,}5\\,\\text{g}$. Kappaleen kymmenen punnituksen keskiarvo on $20{,}4\\,\\text{g}$. Lukemat vaihtelevat vain välillä $20{,}3\\,\\text{g}$–$20{,}5\\,\\text{g}$. Kumpi virhe hallitsee ja mikä on kappaleen massa?",
+    "a": "Systemaattinen virhe hallitsee. Lukemat ovat lähellä toisiaan, joten satunnaisvirhe on pieni ($\\Delta m = 0{,}1\\,\\text{g}$). Jokaisessa lukemassa on kuitenkin mukana nollalukema $0{,}5\\,\\text{g}$. Massa on $m = 20{,}4\\,\\text{g} - 0{,}5\\,\\text{g} = 19{,}9\\,\\text{g}$."
+  },
+  {
+    "q": "Miksi keskiarvon ottaminen pienentää satunnaisvirhettä mutta ei systemaattista virhettä?",
+    "a": "Satunnaisvirhe heittää kerta kerralta eri suuntaan. Siksi liian suuret ja liian pienet tulokset kumoavat osin toisensa keskiarvossa. Systemaattinen virhe on joka mittauksessa samaan suuntaan, joten se on yhtä suuri myös keskiarvossa."
+  },
+  {
+    "q": "Mittaustulos on $t = 4{,}52\\,\\text{s} \\pm 0{,}09\\,\\text{s}$. Laske suhteellinen virhe prosentteina.",
+    "a": "$\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\% = \\dfrac{0{,}09\\,\\text{s}}{4{,}52\\,\\text{s}} \\cdot 100\\,\\% \\approx 2\\,\\%$. Siinä on yksi merkitsevä numero, kuten virhearviossa $0{,}09\\,\\text{s}$."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The uncertainty of the time is $0.2\\,\\text{s}$. How long a time must be measured at least for the relative uncertainty to be at most $2.0\\,\\%$?",
+    "a": "$t \\ge \\dfrac{\\Delta t}{\\varepsilon_\\text{max}} = \\dfrac{0.2\\,\\text{s}}{0.020} = 10\\,\\text{s}$."
+  },
+  {
+    "q": "What goes in a lab record, and why is a measurement that looks unusual not quietly deleted?",
+    "a": "The lab record contains the research question, the date, the equipment and its accuracy, the controlled variables, the readings with their units, and observations. A clearly deviating measurement is checked, marked and explained, and it can be repeated if necessary. A result is not deleted just because it differs from the others, because then the result would be chosen to fit the expectation and the investigation would no longer test the hypothesis. Any rejection must be justified and documented."
+  }
+]

@@ -1,0 +1,17 @@
+{
+ "Kaavakuva samasta mittauksesta kahdella tavalla, aikaakseli mittakaavassa. Ylhäällä on satunnaisvirhe: kymmenen tulosta hajaantuu oikean arvon 2,40 s molemmin puolin, ja keskiarvo 2,41 s on lähellä oikeaa arvoa. Alhaalla on systemaattinen virhe: kymmenen tulosta on tiiviissä ryhmässä, mutta ryhmä on kokonaan oikean arvon oikealla puolella ja keskiarvo 2,59 s on noin 0,19 s liian suuri.": "Schematic of the same measurement in two ways, time axis to scale. At the top is random error: ten results scatter on both sides of the true value 2.40 s, and the mean 2.41 s is close to the true value. At the bottom is systematic error: ten results are in a tight group, but the group is entirely to the right of the true value and the mean 2.59 s is about 0.19 s too large.",
+ "Satunnaisvirhe: tulokset hajaantuvat": "Random error: the results scatter",
+ "oikea arvo": "true value",
+ "keskiarvo": "mean",
+ "Systemaattinen virhe: tulokset siirtyvät": "Systematic error: the results shift",
+ "sys": "sys",
+ "Kaavakuva, ei lukuarvoja: kuusi mittaustulosta aika-akselilla. Suurin tulos t_max ja pienin tulos t_min rajaavat vaihteluvälin, jonka pituus on t_max − t_min. Keskiarvo on merkitty pystyviivalla. Vaihteluvälin puolikas Δt on arvio satunnaisvirheestä, ja tulos ilmoitetaan muodossa keskiarvo plus miinus Δt.": "Schematic, no numerical values: six measurement results on a time axis. The largest result t_max and the smallest result t_min bound the range, whose length is t_max − t_min. The mean is marked with a vertical line. Half of the range Δt is an estimate of the random error, and the result is given as the mean plus or minus Δt.",
+ "max": "max",
+ "Kaavakuva, ei mittakaavassa: keittiövaaka kahdesti. Vasemmalla pannu on tyhjä, mutta vaaka näyttää 1,2 g, joten nollakohta on väärin. Oikealla pannulla on rautakappale ja vaaka näyttää 48,7 g. Kappaleen massa saadaan vähentämällä nollalukema lukemasta: 48,7 g miinus 1,2 g on 47,5 g.": "Schematic, not to scale: a kitchen scale shown twice. On the left the pan is empty, but the scale shows 1.2 g, so the zero is wrong. On the right the pan has an iron object and the scale shows 48.7 g. The mass of the object is obtained by subtracting the zero reading from the reading: 48.7 g minus 1.2 g is 47.5 g.",
+ "tyhjä: ": "empty: ",
+ "lukema ": "reading ",
+ "lukema": "reading",
+ "systemaattinen virhe: nollakohta": "systematic error: zero",
+ "Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s, keskiarvo 3,18 s ja tulos 3,18 s ± 0,12 s vihreällä palkilla.": "Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar.",
+ "Kuvaaja mittakaavassa: heilurin kymmenen heilahduksen aika t viidessä toistossa pisteinä aika-akselilla. Akseli kulkee 12,0 sekunnista 13,0 sekuntiin, pystyviivat ja pienet merkit joka 0,1 sekunnin kohdalla ja numerot joka 0,2 sekunnin kohdalla. Pisteet ovat kohdissa 12,2 s, 12,4 s, 12,6 s, 12,7 s ja 12,9 s.": "Graph to scale: the time t of ten swings of a pendulum in five repeats, shown as dots on a time axis. The axis runs from 12.0 seconds to 13.0 seconds, with vertical lines and small tick marks at every 0.1 seconds and numbers at every 0.2 seconds. The dots are at 12.2 s, 12.4 s, 12.6 s, 12.7 s and 12.9 s."
+}

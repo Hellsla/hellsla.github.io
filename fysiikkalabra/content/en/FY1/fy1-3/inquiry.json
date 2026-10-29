@@ -1,0 +1,568 @@
+{
+  "version": 1,
+  "contribution": "A measurement result is an estimate that has an error: **random error** scatters the results and is reduced by taking the mean, **systematic error** shifts all results in the same direction and is not removed by repeating, and reliability means both repeatability and accuracy.",
+  "learn": [
+    "You can tell gross error, random error and systematic error apart and recognise their sources.",
+    "You can calculate a mean and estimate the scatter of the results using half of the range.",
+    "You can correct a systematic error and judge whether a measurement is repeatable and accurate."
+  ],
+  "prior": [
+    "A measurement result is given as a numerical value and a unit, and significant figures tell how precise it is (chapter *Quantities, units and the SI system*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In a physics lesson the class measures the time a ball takes to roll from the top of a ramp to the bottom. Everyone has a similar hand stopwatch and presses it with their own hand. Still, the results are $2.18\\,\\text{s}$, $2.45\\,\\text{s}$, $2.68\\,\\text{s}$, $2.67\\,\\text{s}$, $2.40\\,\\text{s}$ and so on. The teacher says that the true time of the ball exists, but does not tell it.",
+      "question": "How can the class get a reliable result from these, and how can they know that the stopwatch is not wrong in the same way for everyone?"
+    },
+    {
+      "id": "pr-numerot",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revise significant figures",
+      "prompt": "The stopwatch shows the rolling time of the ball as $2.40\\,\\text{s}$. What does the last zero tell you?",
+      "choices": [
+        {
+          "text": "The stopwatch shows hundredths of a second, and the zero is a significant figure.",
+          "correct": true,
+          "feedback": "Correct. $2.40\\,\\text{s}$ is given with three significant figures, and the last one is in the hundredths place: the stopwatch shows the hundredths. The uncertainty of a time taken by hand can still be much larger, because reaction time varies. In this chapter you learn to estimate it."
+        },
+        {
+          "text": "The zero is useless and can be left out, because $2.4\\,\\text{s}$ is the same result.",
+          "feedback": "As numbers the values are the same, but as measurement results they are not: $2.4\\,\\text{s}$ says that the reading was taken in tenths, and $2.40\\,\\text{s}$ that the stopwatch shows hundredths. So the trailing zero must not be left out. Even so, the precision of the reading is not a hundredth when the time is taken by hand."
+        },
+        {
+          "text": "The ball rolls exactly 2.40 seconds and not a bit more.",
+          "feedback": "A measurement result does not give an exact value. The number of significant figures tells how far you can trust the result, not that the true value is exactly that."
+        },
+        {
+          "text": "The zero tells that the stopwatch has been set correctly.",
+          "feedback": "Digits tell the precision of a reading, not whether the stopwatch is correct. A stopwatch can show hundredths and still show the same amount too much every time."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: repeats and the mean",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "The rolling time of the ball is measured with a hand stopwatch. The stopwatch is otherwise flawless, but every measurement has a random error. The measurement is repeated 40 times and the mean is calculated. How does the mean compare with the true time as there are more and more measurements?",
+      "choices": [
+        {
+          "text": "The mean approaches the true time, even though the individual results still fluctuate.",
+          "correct": true,
+          "feedback": "Correct. In experiment 1 the difference of a single result from the true time was $-0.22\\,\\text{s}$ in the model values, but the difference of the mean of 40 results was less than $0.01\\,\\text{s}$. Results that are too large and too small cancel each other, but the individual results still fluctuate."
+        },
+        {
+          "text": "The mean is as far from the true time as a single result, because the error is always the same size.",
+          "feedback": "Random error is not the same size every time, nor in the same direction. In experiment 1 the difference of a single result from the true time was $-0.22\\,\\text{s}$, but the difference of the mean of 40 results was less than $0.01\\,\\text{s}$."
+        },
+        {
+          "text": "The mean moves away from the true time, because the errors pile up.",
+          "feedback": "Random errors do not pile up in the same direction: some push up and some down. In experiment 1 the difference of the mean from the true time became smaller as measurements were added."
+        },
+        {
+          "text": "The individual results begin to land on the same number when there are enough measurements.",
+          "feedback": "Repeating does not reduce the scatter of a single measurement. In experiment 1 half of the range stayed at about $0.25\\,\\text{s}$; only the mean settled."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the stopwatch is wrong",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "The stopwatch has a systematic error: it shows $0.30\\,\\text{s}$ too much in every measurement. In addition, the measurements have a random error. The measurement is repeated 40 times and the mean is calculated. Where does the mean settle as there are more and more measurements?",
+      "choices": [
+        {
+          "text": "At the true time, because repeating also removes the systematic error.",
+          "feedback": "Repeating cancels only the random part, because it pushes in both directions. A systematic error is in the same direction in every measurement, so it stays in the mean: in experiment 2 the mean settled about $0.30\\,\\text{s}$ above the true time."
+        },
+        {
+          "text": "About $0.30\\,\\text{s}$ above the true time: the random part is damped, but the systematic error remains.",
+          "correct": true,
+          "feedback": "Correct. In experiment 2 the mean settled close to $2.70\\,\\text{s}$ when the true time is $2.40\\,\\text{s}$. Repeating damps only the random error."
+        },
+        {
+          "text": "More than $0.30\\,\\text{s}$ above the true time, because the error grows with the repeats.",
+          "feedback": "The error does not grow with the repeats. The mean is the sum divided by the number, so the same $0.30\\,\\text{s}$ in every result stays the same in the mean too."
+        },
+        {
+          "text": "Nowhere, but the mean still varies as much as after the first repeats.",
+          "feedback": "The mean stabilises: in experiment 2 it changes a lot at the beginning but then approaches a certain value. This value is just not the true time."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The ball rolls down the ramp, and the hand stopwatch gives a reading every time. The points pile up on the time axis, and you see the mean and the true time. With the sliders you choose the number of repeats and the size of the two errors.",
+      "howto": "Press *Start* and the measurements are made one at a time. You can also drag the *Repetitions* slider to see the first $n$ results of the same series. *Random error* tells how much the results fluctuate, and *Systematic error* how much the stopwatch shows too much (plus) or too little (minus) every time. The orange point is the latest reading, the green dashed line is the true time and the black line is the mean.",
+      "model": "The values are model values calculated by the simulation, not measurements of a real experiment. The true rolling time of the ball is $T = 2.40\\,\\text{s}$. The model knows it, but in a real experiment it is not known. A reading is $t_i = T + \\Delta t_\\text{sys} + \\Delta t_\\text{ran}\\,g_i$ rounded to hundredths of a second, where $g_i$ is a fixed series of random numbers. The same series always starts from the beginning, so the experiment can be repeated. The number $\\Delta t_\\text{ran}$ is the typical deviation of a single reading; half of the range of many readings is larger than it.",
+      "calc": "The mean $\\bar{t}$ is the sum of the first $n$ readings divided by $n$. Half of the range is $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. The difference of the mean from the true time is $\\bar{t} - T$, and you can see it only in the model, because the true time is not usually known."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: random error and the mean",
+      "intro": "Test prediction 1. The initial state sets the random error to $0.15\\,\\text{s}$ and the systematic error to zero. Drag the *Repetitions* slider and record a measurement when $n = 1$, $n = 5$ and $n = 40$. Look at what happens to the mean and the range.",
+      "initial": {
+        "n": 1,
+        "sat": 0.15,
+        "sys": 0
+      },
+      "names": {
+        "n": "repetitions n",
+        "sat": "satunnaisvirhe",
+        "sys": "systematic error"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "sat",
+        "sys"
+      ],
+      "vary": "n",
+      "measure": [
+        {
+          "key": "mean",
+          "label": "mean (s)"
+        },
+        {
+          "key": "puoli",
+          "label": "half of the range (s)"
+        },
+        {
+          "key": "vir",
+          "label": "difference from true (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table show as $n$ grows?",
+        "choices": [
+          {
+            "text": "The difference of the mean from the true time becomes smaller, but half of the range does not go towards zero but settles at about $0.25\\,\\text{s}$ (in the row $n = 1$ it is zero, because there is only one result).",
+            "correct": true,
+            "feedback": "Correct. In the row $n = 1$ the mean is a single result and the difference from the true time is $-0.22\\,\\text{s}$, in the row $n = 40$ the difference is less than $0.01\\,\\text{s}$. Half of the range stays at about $0.25\\,\\text{s}$, because the individual measurements still fluctuate."
+          },
+          {
+            "text": "Both the difference of the mean and half of the range become smaller towards zero.",
+            "feedback": "The range does not become smaller: the individual measurements still fluctuate just as much. In the table half of the range is about $0.25\\,\\text{s}$ in the rows $n = 5$ and $n = 40$."
+          },
+          {
+            "text": "The mean stays the same for all $n$, and only the range changes.",
+            "feedback": "The mean changes: in the row $n = 1$ it is a single result $2.18\\,\\text{s}$, but in the row $n = 40$ it is almost the true time $2.40\\,\\text{s}$."
+          },
+          {
+            "text": "Both the difference of the mean and half of the range grow as the measurements increase.",
+            "feedback": "The difference of the mean does not grow but becomes smaller, because results that are too large and too small cancel each other. Only the range grows at first from zero, when more results come in."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a systematic error does not cancel",
+      "intro": "Test prediction 2. The initial state sets the random error to $0.15\\,\\text{s}$ and the systematic error to $+0.30\\,\\text{s}$. Record a measurement when $n = 1$, $n = 10$ and $n = 40$. The true time is $T = 2.40\\,\\text{s}$, which the model knows but which would not be known in a real experiment.",
+      "initial": {
+        "n": 1,
+        "sat": 0.15,
+        "sys": 0.3
+      },
+      "names": {
+        "n": "repetitions n",
+        "sat": "satunnaisvirhe",
+        "sys": "systematic error"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "sat",
+        "sys"
+      ],
+      "vary": "n",
+      "measure": [
+        {
+          "key": "mean",
+          "label": "mean (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Read the row $n = 40$ from the table and calculate the difference between the mean and the true time $T = 2.40\\,\\text{s}$. Answer in seconds.",
+        "answer": 0.3,
+        "unit": "s",
+        "tolerance": 0.05,
+        "hints": [
+          "A measurement error is the difference between the result and the true value. Here the result is the mean.",
+          "The difference is $\\bar{t} - T$, where $\\bar{t}$ is the mean of the row $n = 40$.",
+          "If the mean is $2.70\\,\\text{s}$, the difference is $2.70\\,\\text{s} - 2.40\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2.7,
+            "feedback": "This is the mean itself. The question asked for its difference from the true time: subtract $T = 2.40\\,\\text{s}$ from the mean."
+          },
+          {
+            "value": 0,
+            "feedback": "The difference is not zero. The random part has been damped, but the systematic error $+0.30\\,\\text{s}$ is still in every result and so in the mean."
+          }
+        ],
+        "solution": "**Given:** the mean of the row $n = 40$ from the table $\\bar{t} = 2.70\\,\\text{s}$ (model value) and the true time $T = 2.40\\,\\text{s}$\n\n**Find:** the difference between the mean and the true time, that is, the measurement error $\\bar{t} - T$ in the unit $\\text{s}$\n\n**Principle:** A measurement error is the difference between the result and the true value. The random part has already almost cancelled in the mean of 40 repeats, so the remaining difference tells the systematic error.\n\n**Formula:** difference $\\bar{t} - T$\n\n**Conversions:** Both times are in seconds, so no conversions are needed.\n\n**Substitution:** $\\bar{t} - T = 2.70\\,\\text{s} - 2.40\\,\\text{s} = 0.30\\,\\text{s}$\n\n**Answer:** $0.30\\,\\text{s}$, two significant figures like the mean in the table. The difference is the same as the set systematic error $+0.30\\,\\text{s}$.\n\n**Reasonableness:** The difference is positive, because the stopwatch shows too much. It is almost exactly the set $0.30\\,\\text{s}$, so 40 repeats damped the random part but did not remove the systematic error."
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "optional": true,
+      "title": "Experiment 3: the size of the random error",
+      "intro": "Find out how the spread of the results depends on the size of the random error. The initial state sets $n = 40$ and the systematic error to zero. Record a measurement when the random error is $0.05\\,\\text{s}$, $0.15\\,\\text{s}$ and $0.30\\,\\text{s}$.",
+      "initial": {
+        "n": 40,
+        "sat": 0.05,
+        "sys": 0
+      },
+      "names": {
+        "n": "repetitions n",
+        "sat": "satunnaisvirhe",
+        "sys": "systematic error"
+      },
+      "units": {
+        "sat": "s",
+        "sys": "s"
+      },
+      "locked": [
+        "n",
+        "sys"
+      ],
+      "vary": "sat",
+      "measure": [
+        {
+          "key": "puoli",
+          "label": "half of the range (s)"
+        },
+        {
+          "key": "mean",
+          "label": "mean (s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "How many times larger is half of the range when the random error is $0.30\\,\\text{s}$ than when it is $0.05\\,\\text{s}$?",
+        "answer": 6.2,
+        "unit": "kertaa",
+        "tolerance": 0.03,
+        "hints": [
+          "Read from the table half of the range for both values of random error.",
+          "The ratio is obtained by dividing half of the range for the larger random error by half of the range for the smaller random error.",
+          "From the rows $\\dfrac{0.525\\,\\text{s}}{0.0850\\,\\text{s}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6,
+            "feedback": "This is the ratio of the random errors $\\dfrac{0.30}{0.05}$. The question asked for the ratio of the halves of the range in the table, and it is almost the same but not exactly, because the results have been rounded to hundredths."
+          }
+        ],
+        "solution": "**Given:** from the table, halves of the range $\\Delta t_1 = 0.0850\\,\\text{s}$ (random error $0.05\\,\\text{s}$) and $\\Delta t_2 = 0.525\\,\\text{s}$ (random error $0.30\\,\\text{s}$), model values\n\n**Find:** the ratio $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Principle:** The larger the random error, the more the results scatter and the larger half of the range is. The scatter is directly proportional to the size of the random error, so the ratio should be close to the ratio of the random errors.\n\n**Formula:** $k = \\dfrac{\\Delta t_2}{\\Delta t_1}$\n\n**Conversions:** Both are in seconds and in the ratio the units cancel, so no conversions are needed.\n\n**Substitution:** $k = \\dfrac{0.525\\,\\text{s}}{0.0850\\,\\text{s}} = 6.2$\n\n**Answer:** $6.2$ times. Two significant figures are enough: the readings are rounded to hundredths of a second, so the smaller half of the range $0.0850\\,\\text{s}$ is uncertain already in its second figure, although the table shows three.\n\n**Reasonableness:** The ratio of the random errors is $\\dfrac{0.30}{0.05} = 6$, and the obtained $6.2$ is close to it. The small difference is due to the readings of the model being rounded to hundredths of a second."
+      }
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "source": "simulated",
+      "title": "Data: a thermometer in ice water",
+      "text": "A student checks a thermometer by immersing it in a mixture of melting ice and water, whose temperature is $0\\,{}^\\circ\\text{C}$. She reads the thermometer eight times (example data, not a real experiment).\n\n| Reading number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| Reading (${}^\\circ\\text{C}$) | 1.4 | 1.6 | 1.5 | 1.5 | 1.6 | 1.4 | 1.5 | 1.5 |\n\nThe mean of the readings is $1.5\\,{}^\\circ\\text{C}$ and half of the range is $0.1\\,{}^\\circ\\text{C}$.",
+      "question": {
+        "type": "choice",
+        "prompt": "What kind of error does the data show?",
+        "choices": [
+          {
+            "text": "Systematic error: the readings are in a tight group but about $1.5\\,{}^\\circ\\text{C}$ too large.",
+            "correct": true,
+            "feedback": "Correct. The readings vary only between $1.4\\,{}^\\circ\\text{C}$ and $1.6\\,{}^\\circ\\text{C}$ (good repeatability), but the true value is $0\\,{}^\\circ\\text{C}$. The thermometer shows about $1.5\\,{}^\\circ\\text{C}$ too much in every measurement. This was revealed only because the true value was known."
+          },
+          {
+            "text": "Random error: the readings vary, so the thermometer is unreliable.",
+            "feedback": "The variation is small, because half of the range is only $0.1\\,{}^\\circ\\text{C}$. The bigger problem is that the readings are nowhere near the true value $0\\,{}^\\circ\\text{C}$."
+          },
+          {
+            "text": "No error, because the readings are almost the same.",
+            "feedback": "Almost equal readings tell about repeatability, not accuracy. The true value is $0\\,{}^\\circ\\text{C}$, and every reading is more than one degree away from it."
+          },
+          {
+            "text": "Random error and systematic error are about equally large.",
+            "feedback": "The estimate of the random error is $0.1\\,{}^\\circ\\text{C}$ and the systematic error is $1.5\\,{}^\\circ\\text{C}$, so the systematic error is about fifteen times as large."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion from the experiments",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Write on the basis of experiments 1 and 2 and the thermometer data: what does taking the mean correct, what does it not correct, and how can a systematic error be noticed? Justify with the model values and the data.",
+      "criteria": [
+        "I say that repeats and the mean damp random error, and I justify it with experiment 1: the difference of the mean from the true time became smaller.",
+        "I say that a systematic error remains in the mean, and I justify it with experiment 2: the mean stayed about $0.30\\,\\text{s}$ above the true time.",
+        "I say that a systematic error can be noticed only by comparing with a known reference value or with another method of measurement, like ice water in the thermometer data.",
+        "I call the numbers of the simulation model values and not real measurements."
+      ],
+      "model": "In experiment 1 the difference of a single result from the true time was $-0.22\\,\\text{s}$ in the model values, but the difference of the mean of 40 results was less than $0.01\\,\\text{s}$, so the mean damps random error. Half of the range still stayed at about $0.25\\,\\text{s}$, because the individual measurements still fluctuate. In experiment 2 the stopwatch of the model had a systematic error $+0.30\\,\\text{s}$, and the mean of 40 repeats settled about $0.30\\,\\text{s}$ above the true time: the mean does not correct a systematic error. In the thermometer data the readings repeated well ($1.4\\,{}^\\circ\\text{C}$–$1.6\\,{}^\\circ\\text{C}$), but in ice water the true value is $0\\,{}^\\circ\\text{C}$. So the systematic error was noticed by comparing with a known reference value, and it is corrected by subtracting the error from the readings."
+    },
+    {
+      "id": "kaava-teoria",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with experiments 1 and 2. What does repeating correct and what does it not? Also return to the class at the beginning: how could they get a reliable result for the time of the ball, and how could they notice that the stopwatch is wrong for everyone?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "karkea",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Gross error",
+      "justify": true,
+      "prompt": "A student measures the rolling time of a ball six times with a hand stopwatch and gets the results $3.12\\,\\text{s}$, $3.25\\,\\text{s}$, $3.07\\,\\text{s}$, $4.31\\,\\text{s}$, $3.19\\,\\text{s}$ and $3.15\\,\\text{s}$. What should she do before calculating the mean?",
+      "choices": [
+        {
+          "text": "Calculate the mean of all six results, because the mean damps errors.",
+          "feedback": "The mean damps random error, but the result $4.31\\,\\text{s}$ differs from the others by more than a second, while the others are within $0.2\\,\\text{s}$ of each other. It is probably a gross error, and if it were included, it would move the mean about $0.2\\,\\text{s}$ up."
+        },
+        {
+          "text": "Check the result $4.31\\,\\text{s}$ and measure again if necessary. The result is left out only if there is a clear reason for it, for example a stopwatch stopped late, and leaving it out is justified and recorded.",
+          "correct": true,
+          "feedback": "Correct. The result $4.31\\,\\text{s}$ differs from the others by more than a second, so it is probably a gross error, for example a stopwatch stopped late or a wrongly recorded reading. If the check reveals a gross error, the result is left out, the reason is recorded and a new measurement is made in its place. Merely differing from the others is not yet a reason to remove a result."
+        },
+        {
+          "text": "Leave out the largest and smallest results, $4.31\\,\\text{s}$ and $3.07\\,\\text{s}$, because the extremes are always wrong.",
+          "feedback": "The extremes are not automatically wrong: $3.07\\,\\text{s}$ is only $0.05\\,\\text{s}$ smaller than the next result, and it belongs to the ordinary scatter. A result that clearly differs, here $4.31\\,\\text{s}$, is checked, and it is left out only if the cause of the error is found."
+        },
+        {
+          "text": "Add the result $4.31\\,\\text{s}$ to the error estimate $\\Delta t$ so that all results fit in the interval.",
+          "feedback": "The error estimate describes random error, that is, ordinary scatter. A gross error is not scatter but a mistake, so including it would inflate the error estimate about sevenfold, from $0.09\\,\\text{s}$ to $0.62\\,\\text{s}$. A result that clearly differs is checked and the measurement is repeated if necessary; the result is left out only for a justified and recorded reason."
+        }
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Find the error",
+      "prompt": "A student's ruler has a worn zero end, so all readings are about $0.4\\,\\text{cm}$ too large. She measures the length of a glass tube ten times and calculates the mean. She reasons: ten measurements cancel the errors, so the result is certainly correct. Where is the mistake?",
+      "choices": [
+        {
+          "text": "The mean cancels only random error. A worn zero end is a systematic error, which is in every reading and so also in the mean.",
+          "correct": true,
+          "feedback": "Correct. A systematic error does not vary from one measurement to the next, so the mean does not damp it. It is noticed by comparing with a known length and corrected by subtracting."
+        },
+        {
+          "text": "There should be a hundred measurements and not ten, and then the error would cancel.",
+          "feedback": "Adding repeats does not help, because the error is in the same direction in every reading. In experiment 2 the 40 measurements of the model did not remove the systematic error $0.30\\,\\text{s}$."
+        },
+        {
+          "text": "Only the smallest readings should be taken into the mean.",
+          "feedback": "Picking results does not help if all readings are too large in the same way. Besides, discarding results to suit your wishes would distort the result."
+        },
+        {
+          "text": "There is no error, because the readings are almost the same and so the ruler is accurate.",
+          "feedback": "Almost equal readings tell about repeatability, not accuracy. The zero end of the ruler is worn, so every reading is too large."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A kitchen scale shows $0.8\\,\\text{g}$ when empty. A student weighs five similar coins together five times and gets the readings $27.9\\,\\text{g}$, $28.1\\,\\text{g}$, $28.0\\,\\text{g}$, $27.8\\,\\text{g}$ and $28.2\\,\\text{g}$. What is the mass of one coin? Answer in grams.",
+      "answer": 5.44,
+      "unit": "g",
+      "tolerance": 0.02,
+      "hints": [
+        "Which kind of error is the zero reading of the scale and which kind is the variation of the readings? Each is handled differently.",
+        "First calculate the mean of the readings, then correct the zero by subtracting the zero reading, and finally divide by the number of coins.",
+        "The sum of the readings is $27.9 + 28.1 + 28.0 + 27.8 + 28.2$ grams. The mean $\\bar{m}$ is the sum divided by five, and the mass of one coin is $\\dfrac{\\bar{m} - 0.8\\,\\text{g}}{5}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.6,
+          "feedback": "You forgot to correct the zero. The scale shows $0.8\\,\\text{g}$ when empty, and it is in every reading. Subtract it from the mean before dividing."
+        },
+        {
+          "value": 27.2,
+          "feedback": "This is the corrected total mass of five coins. The question asked for one coin, so you still need to divide by five."
+        },
+        {
+          "value": 4.8,
+          "feedback": "You subtracted the zero reading from one coin. The zero reading is included once in the whole weighing, not for each coin: subtract it from the total mass before dividing by five."
+        },
+        {
+          "value": 28,
+          "feedback": "This is the mean of the readings. For the mass of a coin you still need the zero correction and division by the number of coins."
+        }
+      ],
+      "solution": "**Given:** zero reading of the scale $m_0 = 0.8\\,\\text{g}$; readings $27.9\\,\\text{g}$, $28.1\\,\\text{g}$, $28.0\\,\\text{g}$, $27.8\\,\\text{g}$ and $28.2\\,\\text{g}$; number of coins $N = 5$\n\n**Find:** the mass of one coin $m_\\text{coin}$ in the unit $\\text{g}$\n\n**Principle:** The variation of the readings is random error, which the mean damps. The zero reading $0.8\\,\\text{g}$ is a systematic error, which is in every reading and so in the mean, so it has to be subtracted. The total mass of five coins is finally divided by five.\n\n**Formula:** $\\bar{m} = \\dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$ and $m_\\text{coin} = \\dfrac{\\bar{m} - m_0}{N}$\n\n**Conversions:** All masses are in grams, so no conversions are needed.\n\n**Substitution:** The sum is $27.9\\,\\text{g} + 28.1\\,\\text{g} + 28.0\\,\\text{g} + 27.8\\,\\text{g} + 28.2\\,\\text{g} = 140.0\\,\\text{g}$, so $\\bar{m} = \\dfrac{140.0\\,\\text{g}}{5} = 28.0\\,\\text{g}$ and $m_\\text{coin} = \\dfrac{28.0\\,\\text{g} - 0.8\\,\\text{g}}{5} = \\dfrac{27.2\\,\\text{g}}{5} = 5.44\\,\\text{g}$\n\n**Answer:** $5.44\\,\\text{g}$, three significant figures: the difference $27.2\\,\\text{g}$ is known to three figures, and division by $5$ is exact.\n\n**Reasonableness:** Estimate: $28\\,\\text{g} : 5 \\approx 5.6\\,\\text{g}$, and the correction reduces the mass by $0.8\\,\\text{g} : 5 = 0.16\\,\\text{g}$, so $5.6\\,\\text{g} - 0.16\\,\\text{g} \\approx 5.44\\,\\text{g}$. The mass of a coin is of the order of a few grams, as with small coins, and the corrected mass is smaller than the reading, because the scale showed too much."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. Level 1 exercises use one formula, level 3 requires reasoning. Level 1 is enough for basic competence; levels 2 and 3 are optional and deepen your understanding, so do them if level 1 goes well. Convert all results to the same unit before calculating the mean."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The same quantity is measured ten times with an instrument. All readings are very close to each other, but all are clearly larger than the known reference value. What can you conclude?",
+      "choices": [
+        {
+          "text": "Repeatability is good, but the measurement has a systematic error, so the result is not accurate.",
+          "correct": true,
+          "feedback": "Correct. Readings close to each other mean a small random error. The fact that all are on the same side of the reference value reveals a systematic error."
+        },
+        {
+          "text": "Random error is large, because the results differ from the reference value.",
+          "feedback": "Random error shows as the scatter of the results among themselves. Here the results are close to each other, so random error is small; the difference from the reference value is systematic error."
+        },
+        {
+          "text": "The measurement is reliable, because the results repeat.",
+          "feedback": "Repeating tells only about repeatability. A reliable measurement must also be accurate, and here all readings are off in the same way."
+        },
+        {
+          "text": "A systematic error disappears when the mean of the results is calculated.",
+          "feedback": "The mean damps random error, because the deviations cancel each other. A systematic error is in the same direction in every result, so it stays in the mean."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Resolution and uncertainty",
+      "prompt": "A student times the rolling of a ball by hand with a stopwatch that shows hundredths of a second. The stopwatch stops at a reading of $2.47\\,\\text{s}$. What is the most reasonable estimate of the uncertainty of this single time?",
+      "choices": [
+        {
+          "text": "Of the order of tenths of a second, for example about $0.2\\,\\text{s}$, because the stopwatch is started and stopped by hand.",
+          "correct": true,
+          "feedback": "Correct. The smallest step of the display, $0.01\\,\\text{s}$, is the resolution of the stopwatch, but the total uncertainty of a measurement is also affected by the method of measurement. Reaction time varies in starting and stopping, so the uncertainty of a time taken by hand is of the order of tenths of a second. By repeating the measurement you can estimate the scatter with half of the range."
+        },
+        {
+          "text": "$0.01\\,\\text{s}$, because the stopwatch shows hundredths of a second.",
+          "feedback": "Tempting, because the precision of the display is visible directly in the reading. However, $0.01\\,\\text{s}$ is the resolution of the stopwatch, that is, the smallest step the display can show. It alone does not give the uncertainty: in a time taken by hand, the varying reaction time brings an uncertainty of the order of tenths of a second."
+        },
+        {
+          "text": "$0.005\\,\\text{s}$, that is, half of the smallest step of the display.",
+          "feedback": "Half of the smallest scale division is a simple estimate of the uncertainty of a reading when a value is read from a scale. However, the total uncertainty of a measurement is also affected by the method of measurement and other sources of error. Here the reading is easy to record, but a stopwatch started and stopped by hand brings, because of reaction time, an uncertainty of tenths of a second."
+        },
+        {
+          "text": "There is no uncertainty, because a digital display does not require interpreting a scale.",
+          "feedback": "A digital display removes the interpreting of a scale, but not the uncertainty of the method of measurement. Every measurement result has an uncertainty. In a time taken by hand it is caused above all by reaction time, which varies from one measurement to the next."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Calculation",
+      "prompt": "The rolling time of a ball is measured five times and the results are $2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$. The error estimate is half of the range. What percentage of the mean is it?",
+      "answer": 2.1,
+      "unit": "%",
+      "tolerance": 0.05,
+      "hints": [
+        "First calculate the mean and half of the range.",
+        "The relative error is $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
+        "The mean is $2.40\\,\\text{s}$ and half of the range is $\\dfrac{2.46\\,\\text{s} - 2.36\\,\\text{s}}{2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.2,
+          "feedback": "You forgot to halve the range. The whole range $0.10\\,\\text{s}$ divided by the mean gives $4.2\\,\\%$, but the error estimate is half of the range, $0.05\\,\\text{s}$."
+        },
+        {
+          "value": 0.05,
+          "feedback": "This is the error estimate in seconds. The relative error is obtained by dividing it by the mean and multiplying by a hundred to get percent."
+        },
+        {
+          "value": 0.021,
+          "feedback": "The ratio is correct but it is not yet in percent. Multiply it by a hundred."
+        }
+      ],
+      "solution": "**Given:** $t = 2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2.36\\,\\text{s}$, $t_\\text{max} = 2.46\\,\\text{s}$\n\n**Find:** the relative error $\\varepsilon$ as a percentage\n\n**Principle:** The estimate of random error is half of the range, and the relative error compares it with the result, which is the mean. The ratio has no unit, and you get percent by multiplying by a hundred.\n\n**Formula:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ and $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Conversions:** All times are in seconds, so no conversions are needed. The ratio is multiplied by a hundred to get percent.\n\n**Substitution:** $\\bar{t} = \\dfrac{12.00\\,\\text{s}}{5} = 2.40\\,\\text{s}$, $\\Delta t = \\dfrac{2.46\\,\\text{s} - 2.36\\,\\text{s}}{2} = 0.05\\,\\text{s}$ and $\\varepsilon = \\dfrac{0.05\\,\\text{s}}{2.40\\,\\text{s}} \\cdot 100\\,\\% = 2.1\\,\\%$\n\n**Answer:** $2\\,\\%$, one significant figure like the error estimate $0.05\\,\\text{s}$ (calculator value $2.08\\,\\%$).\n\n**Reasonableness:** Estimate: $0.05\\,\\text{s}$ is about $\\tfrac{1}{50}$ of the time $2.4\\,\\text{s}$, that is, about $2\\,\\%$. For a hand-timed measurement a random error of a few percent is usual."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain",
+      "prompt": "Explain in your own words how you tell random and systematic error apart, what repeating does to them, and what repeatability and accuracy mean.",
+      "criteria": [
+        "I say that random error varies from one measurement to the next and shows as scatter in the results, whereas a systematic error is in the same direction in every measurement.",
+        "I say that the mean damps random error but not systematic error.",
+        "I say that repeatability tells how close to each other the results are, and accuracy tells how close to the true value the result is.",
+        "I say how a systematic error can be noticed: by comparing with a known value or with another method."
+      ],
+      "model": "Random error varies each time and in either direction, so it shows as scatter in the results, for example the reaction time of a hand stopwatch. A systematic error is in the same direction in every measurement, for example a wrong zero. Repeating and the mean damp random error, because results that are too large and too small cancel each other, but a systematic error is just as large in the mean too. Repeatability tells how close to each other repeated results land, that is, how small the random error is. Accuracy tells how close to the true value the mean is, that is, how small the systematic error is. A systematic error can be noticed only by comparing the result with a known reference value or with another method of measurement."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer them yourself first, and only then open the answers."
+    }
+  ]
+}

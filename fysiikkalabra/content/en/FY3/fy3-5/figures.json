@@ -1,0 +1,21 @@
+{
+ "Kuvitus: kädet painavat jalkapumpun kahvaa alas, ja letku vie ilman polkupyörän renkaaseen. Pumpun alaosa on lämmennyt, mitä kuvaavat oranssi hehku ja väreilevät viivat.": "Illustration: hands push the handle of a foot pump down, and a hose leads air into a bicycle tyre. The lower part of the pump has warmed up, shown by an orange glow and wavy lines.",
+ "Kaksi tapaa muuttaa sisäenergiaa (kaaviokuva, ei mittakaavassa). Vasemmalla mäntä työntyy sylinteriin ja tekee ilmaan työn W, ja ilman hiukkaset liikkuvat nopeammin. Oikealla kuuma ja kylmä kappale koskettavat, ja lämpömäärä Q siirtyy kuumasta kylmään.": "Two ways to change internal energy (schematic, not to scale). On the left, a piston is pushed into the cylinder and does work W on the air, and the air particles move faster. On the right, a hot and a cold object touch, and a quantity of heat Q is transferred from the hot one to the cold one.",
+ "työ": "work",
+ "lämpö": "heat",
+ "ilma kuumenee": "air heats up",
+ "kuuma": "hot",
+ "kylmä": "cold",
+ "kuumasta kylmään": "from hot to cold",
+ "Energiakaavio: systeemiin tulee lämpömäärä Q ja työ W, ja systeemin sisäenergia muuttuu niiden summan verran. Ulos siirtyvä energia on negatiivista.": "Energy diagram: a quantity of heat Q and work W enter the system, and the internal energy of the system changes by their sum. Energy transferred out is negative.",
+ "systeemi": "system",
+ "tai": "or",
+ "ulos": "out",
+ "sisään positiivinen, ulos negatiivinen": "in positive, out negative",
+ "Työn etumerkki (kaaviokuva, ei mittakaavassa). Vasemmalla mäntää työnnetään sisään ja kaasu puristuu: ympäristö tekee kaasuun työn, joten W on positiivinen. Oikealla kaasu työntää mäntää ulos ja laajenee: kaasu tekee työn ympäristöön, joten W on negatiivinen.": "The sign of work (schematic, not to scale). On the left, the piston is pushed in and the gas is compressed: the surroundings do work on the gas, so W is positive. On the right, the gas pushes the piston out and expands: the gas does work on the surroundings, so W is negative.",
+ "puristus": "compression",
+ "laajeneminen": "expansion",
+ "ympäristö tekee työn": "surroundings do work",
+ "kaasu tekee työn": "gas does work",
+ "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti pisteestä (0 m; 200 N) pisteeseen (0,20 m; 400 N). Ruudukon väli on 0,05 m ja 50 N.": "(s,F) graph to scale: the force F of the piston on the air in newtons as a function of the distance s the piston moves during the compression. The force increases linearly from the point (0 m; 200 N) to the point (0.20 m; 400 N). The grid spacing is 0.05 m and 50 N."
+}

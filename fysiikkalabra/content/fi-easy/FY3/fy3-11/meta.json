@@ -1,0 +1,28 @@
+{
+  "id": "fy3-11",
+  "course": "FY3",
+  "title": "Kaasun tekemä työ ja lämpövoimakone",
+  "goals": [
+    "LOPS FY3: osaa soveltaa termodynamiikan käsitteitä ja malleja energiantuotannon ratkaisujen tarkastelussa",
+    "Temaattinen tarkastelu: kun tutkitaan, miten lämpövoimakone toimii, voidaan mallintaa energiantuotannon ratkaisuja ja käyttää termodynamiikan käsitteitä. Kiertoprosessit eivät kuulu keskeisiin sisältöihin."
+  ],
+  "prerequisites": [
+    "fy3-5",
+    "fy3-9"
+  ],
+  "glossary": [
+    "lämpövoimakone",
+    "hyötysuhde",
+    "kaasun tekemä työ",
+    "jäähdytyskone",
+    "lämpöpumppu",
+    "yhteistuotanto",
+    "lämpökerroin",
+    "lämpöarvo",
+    "hukkalämpö",
+    "kaukolämpö",
+    "lauhdevoimalaitos"
+  ],
+  "sim": true,
+  "image": false
+}

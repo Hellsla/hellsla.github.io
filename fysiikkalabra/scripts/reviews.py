@@ -1,6 +1,6 @@
 """Review state of a lesson and of its exercise set: one content hash each, two reviews each, no status fields.
 
-  python scripts/reviews.py hash <id> [--exercises]    the content hash (reviewers put it in their report)
+  python scripts/reviews.py hash <id> [--exercises] [--lang en]   the content hash (reviewers put it in their report)
   python scripts/reviews.py status [<id>]              reviewed | legacy | draft of the lesson and its exercises
   python scripts/reviews.py legacy <id>                write review/legacy.md: prototype content the teacher keeps visible
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
@@ -623,12 +623,12 @@ def impact(ref):
     deps, lessons, tooling, exercises = courses.deps(), set(), [], set()
     for n in sorted(names):
         if n.endswith((".gitkeep", "README.md")) and n.startswith("assets/"): continue
-        m = re.match(r"(?:content/[a-z]{2,3}/[^/]+|lessons/[^/]+)/([^/]+)/", n)
+        m = re.match(r"(?:content/[a-z]{2,3}(?:-[a-z]+)?/[^/]+|lessons/[^/]+)/([^/]+)/", n)
         if m and "/review/" not in n:
             if "/exercises/" in n or n.endswith("/answers.py"): exercises.add(m.group(1))
             else: lessons.add(m.group(1))
             continue
-        if re.fullmatch(r"lang/[a-z]{2,3}\.json", n):           # a simulation's texts: the lessons whose simulation block changed
+        if re.fullmatch(r"lang/[a-z]{2,3}(?:-[a-z]+)?\.json", n):           # a simulation's texts: the lessons whose simulation block changed
             old, new = (git("show", f"{ref}:./{n}") or "{}"), ((ROOT / n).read_text() if (ROOT / n).exists() else "{}")
             sims = lambda t: json.loads(t).get("sims", {})
             for key in sorted(set(sims(old)) | set(sims(new))):
@@ -658,6 +658,9 @@ def impact(ref):
 if __name__ == "__main__":
     a = sys.argv[1:]
     part = "exercises" if "--exercises" in a else "lesson"; a = [x for x in a if x != "--exercises"]
+    if "--lang" in a:                                   # a translation: content/<lang>/<COURSE>/<id>/ (README "Languages")
+        i = a.index("--lang"); LANG = a[i + 1]; del a[i:i + 2]
+        find_lesson = lambda lid: courses.find_lesson(lid, LANG)
     if not a: sys.exit(__doc__)
     if a[0] == "hash": print(content_hash(find_lesson(a[1]), part))
     elif a[0] == "status": print("\n".join(describe(f) for f in ([find_lesson(a[1])] if len(a) > 1 else courses.lessons())))
@@ -667,7 +670,7 @@ if __name__ == "__main__":
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
     elif a[0] == "verify":
         bad = 0
-        for f in courses.lessons():
+        for f in [f for lang in i18n.languages() for f in courses.lessons(lang=lang)]:
             try: print(describe(f))
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):

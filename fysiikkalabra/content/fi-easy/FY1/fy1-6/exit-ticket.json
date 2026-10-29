@@ -1,0 +1,6 @@
+[
+  {
+    "q": "Kuussa putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Kivi pudotetaan levosta. Kuinka suuri on kiven nopeus $3{,}0\\,\\text{s}$:n kuluttua? Kuinka monta kertaa suurempi nopeus olisi Maassa samassa ajassa?",
+    "a": "Kuussa $v = gt = 1{,}62\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{s} \\approx 4{,}9\\,\\text{m/s}$. Maassa $v = 9{,}81\\,\\text{m/s}^2 \\cdot 3{,}0\\,\\text{s} \\approx 29\\,\\text{m/s}$. Nopeus on suoraan verrannollinen putoamiskiihtyvyyteen. Siksi Maassa se on $9{,}81 : 1{,}62 \\approx 6{,}1$ kertaa suurempi."
+  }
+]

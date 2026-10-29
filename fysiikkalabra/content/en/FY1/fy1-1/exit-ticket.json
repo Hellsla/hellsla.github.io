@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A nucleus contains protons, which repel each other electrically. Which fundamental interaction still holds the nucleus together, and why does it not pull atoms that are farther apart together?",
+    "a": "The strong interaction, more precisely its residual effect between protons and neutrons. At distances the size of a nucleus, about $10^{-15}\\,\\text{m}$, it is stronger than the electric repulsion of the protons, but it does not reach beyond the nucleus, so the nuclei of different atoms are not pulled together by it."
+  },
+  {
+    "q": "Why is a model tested with an experiment in physics, even if it is logical and beautiful?",
+    "a": "Even a logical model can describe nature wrongly. Only a measurement tells whether a prediction derived from the model matches nature. If it does not, the model is changed or rejected."
+  }
+]

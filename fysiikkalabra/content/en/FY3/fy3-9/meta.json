@@ -1,0 +1,23 @@
+{
+  "id": "fy3-9",
+  "course": "FY3",
+  "title": "Changes of state of a gas and Boyle's law",
+  "goals": [
+    "LOPS FY3: changes of state of gases",
+    "Experimentally: verifying Boyle's law",
+    "Skills: inverse proportionality graphically p = constant·1/V; calculating a new table column, e.g. 1/V"
+  ],
+  "prerequisites": [
+    "fy3-4",
+    "fy3-8"
+  ],
+  "glossary": [
+    "tilanmuutos",
+    "isoterminen",
+    "isobaarinen",
+    "isokoorinen",
+    "Boyle's law"
+  ],
+  "sim": true,
+  "image": false
+}

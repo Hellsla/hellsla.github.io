@@ -270,7 +270,7 @@ def link_languages():
                     if other == lang: continue
                     target = m.group(1) if (OUTS[other] / m.group(1)).is_file() else "index.html"
                     href = os.path.relpath(OUTS[other] / target, OUTS[lang]).replace(os.sep, "/")
-                    out.append(f'<a class="lang" href="{href}" hreflang="{other}" lang="{other}">{esc(i18n.T(other)("format.language_name"))}</a>')
+                    out.append(f'<a class="lang" href="{href}" hreflang="{i18n.T(other)("format.html_lang")}" lang="{i18n.T(other)("format.html_lang")}">{esc(i18n.T(other)("format.language_name"))}</a>')
                 return "".join(out)
             f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", links, f.read_text()))
 

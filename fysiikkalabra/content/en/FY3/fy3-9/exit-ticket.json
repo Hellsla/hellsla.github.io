@@ -1,0 +1,6 @@
+[
+  {
+    "q": "A syringe contains 40 ml of air at a pressure of 100 kPa. The plunger is pressed until the volume is 25 ml, and the temperature does not change. What is the pressure?",
+    "a": "By Boyle's law $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 40\\,\\text{ml} / 25\\,\\text{ml} = 160\\,\\text{kPa}$."
+  }
+]

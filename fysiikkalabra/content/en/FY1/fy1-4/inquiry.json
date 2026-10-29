@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "contribution": "Data points become a graph and a linear model: the student fits a straight line, finds its slope and constant term from points on the line that are far apart, interprets them physically and recognises when a straight line does not fit.",
+  "learn": [
+    "You can present measurements as a graph and fit a straight line to the points.",
+    "You can find the slope and constant term of a line and say what they mean.",
+    "You can recognise when a linear model does not fit the measurements."
+  ],
+  "prior": [
+    "Every measurement contains random error, which scatters the results in both directions (chapter *Measuring and the reliability of a measurement*)",
+    "A quantity is given as a value and a unit, and the quantity and its unit are written on the axes of a graph (chapter *Quantities, units and the SI system*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The position of a trolley is measured on a track every second, and the results are plotted on a graph. The points lie roughly along a straight line, but no line passes through all of them. Two students draw different lines, and each claims that their line shows the speed of the trolley.",
+      "question": "How do you decide which line describes the measurements best, and what does the slope of the line tell you?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: measurement errors",
+      "prompt": "The position of a trolley is measured many times at the same spot with the same tape measure. The results vary slightly, sometimes in one direction and sometimes in the other. Which error causes the variation?",
+      "choices": [
+        {
+          "text": "Systematic error, because the tape measure is calibrated wrongly.",
+          "feedback": "A systematic error would shift all the results in the same direction (chapter *Measuring and the reliability of a measurement*). Here the results vary in both directions, which is the mark of random error."
+        },
+        {
+          "text": "Random error: the reading and the placing of the tape measure vary slightly each time.",
+          "correct": true,
+          "feedback": "Correct. Random error scatters the results in both directions around the mean (chapter *Measuring and the reliability of a measurement*). For the same reason the data points do not usually all land exactly on a straight line, and that is why we fit a line to them."
+        },
+        {
+          "text": "Gross error: the experimenter has made a mistake and calculated one of the results wrongly.",
+          "feedback": "A gross error would be a single clearly wrong result. The variation is part of every measurement, even if nobody makes a mistake (chapter *Measuring and the reliability of a measurement*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: which line describes the trolley",
+      "prompt": "The position $s$ of a trolley was measured from the start of the track as a function of time $t$ at six moments, $t = 1\\,\\text{s},\\ 2\\,\\text{s},\\ \\dots,\\ 6\\,\\text{s}$. The positions were $0.6$, $0.8$, $1.6$, $2.1$, $2.4$ and $2.9\\,\\text{m}$. The trolley started from the position $s = 0$ at $t = 0$. Which line describes the motion of the trolley best?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "A broken line that joins the successive data points and so passes through every data point.",
+          "feedback": "The example data refute this. The segments of the broken line would rise with slopes $0.2$, $0.8$, $0.5$, $0.3$ and $0.5\\,\\text{m/s}$, as if the trolley kept changing its speed. The line also follows the random errors. In the experiment, a line with a slope of about $0.5\\,\\text{m/s}$ fits all the points equally well."
+        },
+        {
+          "text": "A line through the origin that passes close to all the points and has points on both sides of it.",
+          "correct": true,
+          "feedback": "The example data support this: the mean deviation $d$ is smallest when the slope is about $0.5\\,\\text{m/s}$ ($d \\approx 0.12\\,\\text{m}$), and there are points on both sides of the line. The line does not pass through any single point, but it shows the general direction of the motion."
+        },
+        {
+          "text": "A line through the origin and the first data point $(1\\,\\text{s};\\ 0.6\\,\\text{m})$.",
+          "feedback": "The example data refute this. The slope of the line would be $0.60\\,\\text{m/s}$, and the mean deviation would grow to $0.44\\,\\text{m}$, about four times as large as for the best line ($0.12\\,\\text{m}$). A single point contains its own error, and it should not decide the line alone."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: where the line meets the vertical axis",
+      "prompt": "Liquid was poured into a measuring cylinder, and the combined mass $m$ of the cylinder and the liquid was weighed as a function of the volume $V$ of the liquid. At the volumes $20$, $40$, $60$, $80$, $100$ and $120\\,\\text{ml}$ the combined masses were $78.5$, $92.3$, $110.9$, $124.0$, $142.2$ and $156.1\\,\\text{g}$. A straight line is fitted to the points and extended to the left to the vertical axis, where $V = 0$. Where does the line meet the axis?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "At $m = 0\\,\\text{g}$, because without liquid there is no mass.",
+          "feedback": "The example data refute this. What was weighed was the combined mass of the cylinder and the liquid, and an empty cylinder has mass too. If the line is forced through the origin with a slope of $0.80\\,\\text{g/ml}$, the mean deviation is about $61\\,\\text{g}$, whereas with the correct constant term it is only about $1\\,\\text{g}$."
+        },
+        {
+          "text": "At the mass of the empty measuring cylinder, because when the amount of liquid is zero, only the cylinder remains.",
+          "correct": true,
+          "feedback": "The example data support this: the deviation $d$ is smallest when the constant term is about $61\\,\\text{g}$ ($d \\approx 1\\,\\text{g}$), and that is the mass of the empty cylinder. The constant term $b$ is the value of $y$ when $x = 0$."
+        },
+        {
+          "text": "At the first data point, about $78.5\\,\\text{g}$.",
+          "feedback": "The example data refute this. The first point already has $20\\,\\text{ml}$ of liquid. The line continues to the left, and its mass decreases by about $0.79\\,\\text{g}$ per millilitre as liquid is removed, so at $V = 0$ the mass is about $78.5\\,\\text{g} - 20\\,\\text{ml} \\cdot 0.79\\,\\text{g/ml} \\approx 63\\,\\text{g}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Adjust the line so that it runs through the middle of the set of points, and watch the mean deviation $d$.",
+      "howto": "Choose a data set. Adjust the slope $k$ and the constant term $b$ with the sliders until the orange line runs through the middle of the set of points. The red segments show the deviation of each point from the line, and the mean deviation $d$ updates in the readings. With the checkbox you can draw the best line given by the calculation as a dashed line and compare it with your own.",
+      "model": "The data sets are example data, not real measurements, and their values are values from the model. The model assumes that the $x$ values are exact and that the random error is only in the $y$ values, and that the relationship between the quantities is a straight line $y = kx + b$. In data set 3 the relationship is curved, so a straight line describes it only roughly.",
+      "calc": "The deviation of each point from the line is $e_i = y_i - (kx_i + b)$. The mean deviation is the square root of the mean of the squares:\n\n$$d = \\sqrt{\\frac{e_1^2 + e_2^2 + \\dots + e_N^2}{N}}$$\n\nIt is small when the line is close to all the points. The calculated best line is the one for which $d$ is as small as possible, that is, the least-squares line:\n\n$$\\begin{aligned} k &= \\frac{S_{xy}}{S_{xx}} \\\\ b &= \\bar{y} - k\\bar{x} \\end{aligned}$$\n\nwhere $\\bar{x}$ and $\\bar{y}$ are the means, $S_{xy}$ is the sum of the products $(x_i - \\bar{x})(y_i - \\bar{y})$ and $S_{xx}$ the sum of the squares $(x_i - \\bar{x})^2$. You do not need to know this calculation: in upper secondary school a line is fitted by eye or with a calculator."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: find the slope",
+      "intro": "Test prediction 1. The data set is the trolley measurements, and the line passes through the origin ($b = 0$). Change only the slope $k$ and record at least three measurements: one where you think the line is at its best, and one on each side of it. Also watch how the red segments get shorter and longer.",
+      "initial": {
+        "aineisto": "1",
+        "k": 0.3,
+        "b": 0
+      },
+      "locked": [
+        "aineisto",
+        "b"
+      ],
+      "vary": "k",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "slope k",
+        "b": "constant term b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "m/s",
+        "b": "m"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (m)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: find the constant term",
+      "intro": "Test prediction 2. The data set is the combined mass of a measuring cylinder and a liquid. The slope is locked at $0.80\\,\\text{g/ml}$ and the line starts from the origin ($b = 0$). Change only the constant term $b$ and record at least three measurements, one of which has the smallest deviation $d$ you can find.",
+      "initial": {
+        "aineisto": "2",
+        "k": 0.8,
+        "b": 0
+      },
+      "locked": [
+        "aineisto",
+        "k"
+      ],
+      "vary": "b",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "slope k",
+        "b": "constant term b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "g/ml",
+        "b": "g"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (g)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: coffee cools",
+      "intro": "In this data set the temperature of a coffee cup has been measured as a function of time. The constant term is locked at $80\\,{}^\\circ\\text{C}$. Change the slope and record at least three measurements, one of which has the smallest deviation $d$ you can find. Also tick the checkbox and see where the points are above and below the best-fit line.",
+      "initial": {
+        "aineisto": "3",
+        "k": -1,
+        "b": 80
+      },
+      "locked": [
+        "aineisto",
+        "b"
+      ],
+      "vary": "k",
+      "names": {
+        "aineisto": "aineisto",
+        "k": "slope k",
+        "b": "constant term b"
+      },
+      "units": {
+        "aineisto": "",
+        "k": "°C/min",
+        "b": "°C"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (°C)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "The smallest deviation reached is about $5.8\\,{}^\\circ\\text{C}$, when the temperature changes by $60\\,{}^\\circ\\text{C}$ in the measurements. Does a straight line fit this data set? How do you know?",
+        "choices": [
+          {
+            "text": "It fits, because the deviation $5.8\\,{}^\\circ\\text{C}$ is small compared with the change of $60\\,{}^\\circ\\text{C}$.",
+            "feedback": "The size of the deviation alone does not decide whether the line fits. What matters is the direction of the deviations: if the points are above the line at the ends of the graph and below it in the middle, the deviations form a pattern, and the line does not fit."
+          },
+          {
+            "text": "It does not fit: the points are above the line at the ends and below it in the middle.",
+            "correct": true,
+            "feedback": "Correct. With random error the deviations would vary in both directions by chance. When they form a pattern (up at the ends, down in the middle), the relationship is curved and the linear model does not fit."
+          },
+          {
+            "text": "It does not fit, because no line passes through all the points, even if the measurements were accurate.",
+            "feedback": "In measured data a line does not usually pass through all the points, because there is random error in measurements. Whether the line fits depends on whether the deviations are random or form a pattern."
+          },
+          {
+            "text": "It fits, because all the deviations are about the same length and the points are close to the line.",
+            "feedback": "The lengths vary, and the length of a deviation does not tell you whether the model fits. Check the direction of the deviations: up at the ends and down in the middle means that the relationship is curved."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: how to find a suitable line",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: how did you find the line that fits the points best? What happened to the slope and the constant term? What do they tell you about the trolley and the measuring cylinder?",
+      "model": "In experiment 1 the mean deviation was smallest when the slope was about $0.5\\,\\text{m/s}$ ($d \\approx 0.12\\,\\text{m}$), and it grew in both directions: $0.76\\,\\text{m}$ at a slope of $0.30\\,\\text{m/s}$ and $0.44\\,\\text{m}$ at a slope of $0.60\\,\\text{m/s}$. The slope tells you that the trolley moved about $0.5\\,\\text{m}$ in every second. In experiment 2 the deviation was about $61\\,\\text{g}$ when $b = 0$, and it decreased to its smallest value of about $1\\,\\text{g}$ when $b \\approx 61\\,\\text{g}$. So the constant term is the mass of the empty measuring cylinder, because when the amount of liquid is zero, only the cylinder remains. The line did not pass through any single point, but there were points on both sides of it. The values were calculated from the model of the example data.",
+      "criteria": [
+        "I said at which slope and constant term $d$ was smallest, and I gave the numbers.",
+        "I explained that the deviation grows when the line moves away from the middle of the set of points.",
+        "I interpreted the slope (speed) and the constant term (mass of the empty cylinder) physically.",
+        "I stated that the line does not pass through every point but the fit is still good."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the readings of the example data. Then return to the question at the start: how do you decide which line describes the measurements best, and what does its slope tell you? Also say why different students' lines can be slightly different.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student finds the slope of the graph of a trolley from the data points $(1.0\\,\\text{s};\\ 0.6\\,\\text{m})$ and $(2.0\\,\\text{s};\\ 0.8\\,\\text{m})$:\n\n$$k = \\frac{0.8\\,\\text{m} - 0.6\\,\\text{m}}{2.0\\,\\text{s} - 1.0\\,\\text{s}} = 0.2\\,\\text{m/s}$$\n\nThe other data points, however, give about $0.5\\,\\text{m/s}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The slope should have been calculated by dividing the time difference by the distance difference, that is, $\\Delta t : \\Delta s$ and not $\\Delta s : \\Delta t$.",
+          "feedback": "The slope is $\\Delta y : \\Delta x$, that is, the change in distance divided by the change in time. The inverse ratio would give the unit s/m, which is not a speed."
+        },
+        {
+          "text": "The points were read from the measurements and not from the fitted line, and they are too close together.",
+          "correct": true,
+          "feedback": "Correct. The points must be read from the fitted line and far apart, for example $(0\\,\\text{s};\\ 0\\,\\text{m})$ and $(6.0\\,\\text{s};\\ 3.0\\,\\text{m})$, which gives $k = 0.50\\,\\text{m/s}$. The difference between two data points close together is affected by the random error of both points, and the difference is not large compared with the error. Calculated between successive data points, the slopes would be $0.2$, $0.8$, $0.5$, $0.3$ and $0.5\\,\\text{m/s}$. Points far apart on the fitted line give a reliable value."
+        },
+        {
+          "text": "There is no error in the calculation: the slope is always found from two successive data points, because they are the closest to each other.",
+          "feedback": "The result $0.2\\,\\text{m/s}$ differs from the other intervals, so a single interval does not tell you about the whole motion. Successive pairs would give $0.2$, $0.8$, $0.5$, $0.3$ and $0.5\\,\\text{m/s}$, and these values, scattered by random error, are all unreliable."
+        },
+        {
+          "text": "The slope should have been calculated from one point by dividing $s$ by the time $t$, for example $0.6\\,\\text{m} : 1.0\\,\\text{s}$.",
+          "feedback": "One point gives $0.60\\,\\text{m/s}$ ($1\\,\\text{s}$), $0.40\\,\\text{m/s}$ ($2\\,\\text{s}$) and $0.53\\,\\text{m/s}$ ($3\\,\\text{s}$): each value follows the error of that point. In addition, $s : t$ gives the slope only if the line passes through the origin. Two distant points read from the line are a more reliable way."
+        }
+      ]
+    },
+    {
+      "id": "kuvaajasta",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Read the slope from a graph",
+      "source": "simulated",
+      "text": "The graph shows the distance $s$ of a cyclist as a function of time $t$. The line fitted to the data points passes through intersections of the grid, and two of them are marked as the points $P_1$ and $P_2$. The coordinates are not written out: read them from the axes.\n\n<svg viewBox=\"0 0 600 350\" role=\"img\" aria-label=\"Graph drawn to scale: the distance s of a cyclist as a function of time t. The line crosses the vertical axis at 5 km and passes through the grid intersections (1.0 h; 20 km) and (3.0 h; 50 km). The points P₁ and P₂ are marked on the line.\" style=\"max-width:100%;font-size:24px\">\n  <line x1=\"203\" y1=\"300\" x2=\"203\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"309.5\" y1=\"300\" x2=\"309.5\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"416.5\" y1=\"300\" x2=\"416.5\" y2=\"60\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"260\" x2=\"470\" y2=\"260\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"220\" x2=\"470\" y2=\"220\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"180\" x2=\"470\" y2=\"180\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"140\" x2=\"470\" y2=\"140\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"96\" y1=\"100\" x2=\"470\" y2=\"100\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"95\" y1=\"300\" x2=\"484\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M496,300 L483,306 L483,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"96\" y1=\"301\" x2=\"96\" y2=\"46\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M96,34 L102,47 L90,47 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"203\" y1=\"300\" x2=\"203\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"193\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$1$</div></foreignObject>\n  <line x1=\"309.5\" y1=\"300\" x2=\"309.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"299.5\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$2$</div></foreignObject>\n  <line x1=\"416.5\" y1=\"300\" x2=\"416.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"406.5\" y=\"309.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$3$</div></foreignObject>\n  <line x1=\"89\" y1=\"260\" x2=\"96\" y2=\"260\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"245.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$10$</div></foreignObject>\n  <line x1=\"89\" y1=\"220\" x2=\"96\" y2=\"220\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"205.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$20$</div></foreignObject>\n  <line x1=\"89\" y1=\"180\" x2=\"96\" y2=\"180\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"165.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$30$</div></foreignObject>\n  <line x1=\"89\" y1=\"140\" x2=\"96\" y2=\"140\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"125.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$40$</div></foreignObject>\n  <line x1=\"89\" y1=\"100\" x2=\"96\" y2=\"100\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"51\" y=\"85.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$50$</div></foreignObject>\n  <foreignObject x=\"66\" y=\"305.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$0$</div></foreignObject>\n  <foreignObject x=\"502\" y=\"285.5\" width=\"62\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$t\\ (\\text{h})$</div></foreignObject>\n  <foreignObject x=\"86\" y=\"3.5\" width=\"74\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$s\\ (\\text{km})$</div></foreignObject>\n  <polyline points=\"96,280 470,70\" fill=\"none\" stroke=\"#1f2933\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"203\" cy=\"220\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"416.5\" cy=\"100\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <foreignObject x=\"219\" y=\"235.5\" width=\"50\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2\">$P_1$</div></foreignObject>\n  <foreignObject x=\"350.5\" y=\"115.5\" width=\"50\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2\">$P_2$</div></foreignObject>\n</svg>",
+      "question": {
+        "type": "numeric",
+        "prompt": "Read the coordinates of the points $P_1$ and $P_2$ from the graph and calculate the slope of the line. Give the answer in km/h.",
+        "answer": 15,
+        "unit": "km/h",
+        "tolerance": 0.02,
+        "hints": [
+          "Where on the axis do you read the coordinate of a point? Follow the grid from the point to the axis.",
+          "The slope is $\\Delta s : \\Delta t$: the vertical change divided by the horizontal change.",
+          "When $P_1$ is at $t = 1.0\\,\\text{h}$ and $P_2$ at $t = 3.0\\,\\text{h}$, the time interval is $\\Delta t = 2.0\\,\\text{h}$. Read the corresponding distances from the vertical axis."
+        ],
+        "mistakes": [
+          {
+            "value": 16.7,
+            "feedback": "You divided the distance of $P_2$ by its time ($50 : 3.0$), which works only if the line passes through the origin. This line crosses the vertical axis at $5\\,\\text{km}$, so calculate the changes: $\\Delta s : \\Delta t$."
+          },
+          {
+            "value": 0.067,
+            "feedback": "You divided the time difference by the distance difference ($\\Delta t : \\Delta s$). The slope is the vertical change divided by the horizontal change, that is, $\\Delta s : \\Delta t$, and its unit is km/h."
+          }
+        ],
+        "solution": "**Given:** the line of the graph with the points $P_1$ and $P_2$ marked; the axes show the distance $s$ (km) and the time $t$ (h)\n\n**Find:** the slope $k$ of the line, that is, the speed of the cyclist in km/h\n\n**Principle:** The slope of the line in a distance–time graph is the speed, and it is $\\Delta s : \\Delta t$ for any two points on the line. Read two points far apart from the fitted line, so that the reading error has only a small effect on the result.\n\n**Reading the graph:** The point $P_1$ is at a grid intersection where $t_1 = 1.0\\,\\text{h}$ and $s_1 = 20\\,\\text{km}$ (the number on the horizontal axis directly below, the number on the vertical axis directly to the left). The point $P_2$ is at the intersection $t_2 = 3.0\\,\\text{h}$ and $s_2 = 50\\,\\text{km}$. The slope is calculated from these readings.\n\n**Formula:** $k = \\dfrac{\\Delta s}{\\Delta t} = \\dfrac{s_2 - s_1}{t_2 - t_1}$\n\n**Conversions:** None needed: the distances are in kilometres and the times in hours, and the result is asked for in km/h.\n\n**Substitution:** $k = \\dfrac{50\\,\\text{km} - 20\\,\\text{km}}{3.0\\,\\text{h} - 1.0\\,\\text{h}} = \\dfrac{30\\,\\text{km}}{2.0\\,\\text{h}} = 15\\,\\tfrac{\\text{km}}{\\text{h}}$\n\n**Answer:** $15\\,\\text{km/h}$, two significant figures, because the times were read to two figures ($1.0\\,\\text{h}$ and $3.0\\,\\text{h}$).\n\n**Reasonableness:** Check with a third point: when $t = 2.0\\,\\text{h}$, the line in the graph is at about $35\\,\\text{km}$, and $15\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 2.0\\,\\text{h} + 5\\,\\text{km} = 35\\,\\text{km}$. The speed $15\\,\\text{km/h}$ is typical of ordinary cycling."
+      }
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The height $h$ of a plant was followed as a function of days $t$, and the line fitted to the data points passes through the points $(2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$. On which day from the start of the measurements is the plant 20 cm tall according to the line, when the line is extended beyond the measured range? Give the answer in days.",
+      "answer": 20,
+      "unit": "vrk",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the slope of the line and what unit does it use? Calculate it from two points on the line.",
+        "The equation of the line is $h = kt + b$. When $k$ is known, you get the constant term $b$ from one point: $b = h_1 - k t_1$.",
+        "$k = \\dfrac{12.0 - 5.6}{10.0 - 2.0}\\,\\tfrac{\\text{cm}}{\\text{day}} = 0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, $b = 5.6\\,\\text{cm} - 0.80\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot 2.0\\,\\text{days} = 4.0\\,\\text{cm}$, and $t = \\dfrac{h - b}{k}$."
+      ],
+      "mistakes": [
+        {
+          "value": 25,
+          "feedback": "You calculated $t = h : k = 20 : 0.80$ as if the line passed through the origin. The line has a constant term $b = 4.0\\,\\text{cm}$: the plant was already 4.0 cm tall at the start of the measurements, so you need $t = (h - b) : k$."
+        },
+        {
+          "value": 16,
+          "feedback": "You subtracted the constant term ($20 - 4.0 = 16\\,\\text{cm}$) but did not divide the result by the slope. The change in height, $16\\,\\text{cm}$, is divided by the growth rate $0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, which gives the time."
+        }
+      ],
+      "solution": "**Given:** points on the line $(t_1;\\ h_1) = (2.0\\,\\text{days};\\ 5.6\\,\\text{cm})$ and $(t_2;\\ h_2) = (10.0\\,\\text{days};\\ 12.0\\,\\text{cm})$; height $h = 20\\,\\text{cm}$\n\n**Find:** the time $t$ at which $h = 20\\,\\text{cm}$\n\n**Principle:** The growth is steady, so the height follows the line $h = kt + b$. The slope is calculated from two points on the line that are far apart and the constant term from one point. The time is solved from the equation when the height is known. The prediction extends outside the measured range and assumes that the growth continues in the same way.\n\n**Formula:** $k = \\dfrac{h_2 - h_1}{t_2 - t_1}$, $b = h_1 - k t_1$ and $h = kt + b$, from which\n\n$$t = \\frac{h - b}{k}$$\n\n**Conversions:** None needed: the heights are in centimetres and the times in days.\n\n**Substitution:** $k = \\dfrac{12.0\\,\\text{cm} - 5.6\\,\\text{cm}}{10.0\\,\\text{days} - 2.0\\,\\text{days}} = 0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$, $b = 5.6\\,\\text{cm} - 0.80\\,\\tfrac{\\text{cm}}{\\text{day}} \\cdot 2.0\\,\\text{days} = 4.0\\,\\text{cm}$ and $t = \\dfrac{20\\,\\text{cm} - 4.0\\,\\text{cm}}{0.80\\,\\tfrac{\\text{cm}}{\\text{day}}} = 20\\,\\text{days}$\n\n**Answer:** $20\\,\\text{days}$, two significant figures, because the slope $0.80\\,\\tfrac{\\text{cm}}{\\text{day}}$ is known to two figures.\n\n**Reasonableness:** In 20 days the plant has grown $20 \\cdot 0.80 = 16\\,\\text{cm}$ from the starting height of $4.0\\,\\text{cm}$, that is, $4.0 + 16 = 20\\,\\text{cm}$. In reality the growth does not continue in the same way, so the prediction is only an estimate.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 exercises you use the equation of the line or the formula for the slope directly, level 2 exercises need a conversion or two steps, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A line fitted to the data points of two quantities does not pass through the origin but crosses the $y$-axis at $b = 3\\,\\text{cm}$. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The quantities are directly proportional, because the graph is a straight line.",
+          "feedback": "In direct proportionality the line passes through the origin, that is, $b = 0$. A straight-line graph alone is not enough: the constant term must be zero."
+        },
+        {
+          "text": "Doubling $x$ does not double $y$, because $y = kx + b$ and $b$ is not zero.",
+          "correct": true,
+          "feedback": "Correct. If $x$ doubles, $kx$ doubles but $b$ stays the same, so $y$ does not double. For example, a taxi ride with a starting charge does not cost twice as much for twice the distance."
+        },
+        {
+          "text": "The slope is zero, because the line does not start from the origin.",
+          "feedback": "The slope tells you how steep the line is, not where the line starts. A line can be steep and still cross the $y$-axis at $b = 3\\,\\text{cm}$. The slope is zero only for a horizontal line."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Drawing the line",
+      "prompt": "Six data points lie roughly along a straight line, but not exactly. How is the fit drawn on the graph?",
+      "choices": [
+        {
+          "text": "The points are joined into a broken line so that all the measurements are included.",
+          "feedback": "A broken line would also follow the random error of each measurement. If the measurements were repeated, the points would be somewhere else and the line would be different, even though the phenomenon is the same. A straight line shows the general relationship in the phenomenon."
+        },
+        {
+          "text": "The line is drawn through the middle of the set of points so that there are roughly equal numbers of points on both sides of it.",
+          "feedback": "Correct. Measurement errors are random, so the points deviate from the line in both directions. A good fit runs close to all the points, and it does not have to pass through any of them.",
+          "correct": true
+        },
+        {
+          "text": "The line is drawn through the first two points, because they were measured first.",
+          "feedback": "Two points give the direction of the line poorly: each has its own measurement error, and it affects the steepness of the line. In a fit, all the points are taken into account."
+        },
+        {
+          "text": "The line is always drawn through the origin, because the two quantities are proportional.",
+          "feedback": "The line does not have to pass through the origin. In direct proportionality it does, but if the points show that the line crosses the $y$-axis elsewhere, the constant term $b$ is not zero and the line is drawn according to the points."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Calculation",
+      "prompt": "The distance $s$ of a hiking trip as a function of time $t$ follows the line fitted to the measurements, which passes through the points $(1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(5.0\\,\\text{h};\\ 19.0\\,\\text{km})$. So the hiker had already travelled some distance when the clock was started. Assume that the hiker keeps the same pace after the last measurement too. At what number of hours is the distance $25\\,\\text{km}$? Give the answer in hours.",
+      "answer": 7.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "What is asked: the time or the distance? Which quantity of the equation of the line is known?",
+        "The equation of the line is $s = kt + b$. First calculate the slope $k$ from two points and then the constant term $b = s_1 - kt_1$.",
+        "$k = \\dfrac{19.0 - 7.0}{5.0 - 1.0}\\,\\tfrac{\\text{km}}{\\text{h}} = 3.0\\,\\tfrac{\\text{km}}{\\text{h}}$ and $b = 7.0\\,\\text{km} - 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1.0\\,\\text{h} = 4.0\\,\\text{km}$; solve $t = (s - b) : k$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.3,
+          "feedback": "You calculated $t = s : k = 25 : 3.0$ as if the line passed through the origin. The constant term $b = 4.0\\,\\text{km}$ is the distance at the moment the clock was started, so $t = (25 - 4.0) : 3.0$."
+        },
+        {
+          "value": 5.5,
+          "feedback": "You swapped the slope and the constant term: the line $s = 4.0\\,t + 3.0$ would give $t = (25 - 3.0) : 4.0 = 5.5\\,\\text{h}$. In the correct line the slope is $3.0\\,\\text{km/h}$ (speed) and the constant term is $4.0\\,\\text{km}$ (distance at the moment the clock was started)."
+        }
+      ],
+      "solution": "**Given:** points on the line $(t_1;\\ s_1) = (1.0\\,\\text{h};\\ 7.0\\,\\text{km})$ and $(t_2;\\ s_2) = (5.0\\,\\text{h};\\ 19.0\\,\\text{km})$; distance $s = 25\\,\\text{km}$\n\n**Find:** the time $t$ at which $s = 25\\,\\text{km}$\n\n**Principle:** The distance increases steadily, so the distance follows the line $s = kt + b$. The slope is calculated from two points on the line and the constant term from one, and the time is solved from the equation of the line.\n\n**Formula:** $k = \\dfrac{s_2 - s_1}{t_2 - t_1}$, $b = s_1 - kt_1$ and $s = kt + b$, from which\n\n$$t = \\frac{s - b}{k}$$\n\n**Conversions:** None needed: the distances are in kilometres and the times in hours.\n\n**Substitution:** $k = \\dfrac{19.0\\,\\text{km} - 7.0\\,\\text{km}}{5.0\\,\\text{h} - 1.0\\,\\text{h}} = 3.0\\,\\tfrac{\\text{km}}{\\text{h}}$, $b = 7.0\\,\\text{km} - 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1.0\\,\\text{h} = 4.0\\,\\text{km}$ and $t = \\dfrac{25\\,\\text{km} - 4.0\\,\\text{km}}{3.0\\,\\tfrac{\\text{km}}{\\text{h}}} = 7.0\\,\\text{h}$\n\n**Answer:** $7.0\\,\\text{h}$, two significant figures like the slope $3.0\\,\\tfrac{\\text{km}}{\\text{h}}$.\n\n**Reasonableness:** Check: $3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 7.0\\,\\text{h} + 4.0\\,\\text{km} = 25\\,\\text{km}$. The speed $3.0\\,\\text{km/h}$ is about walking pace. The time is shorter than $25\\,\\text{km} : 3.0\\,\\tfrac{\\text{km}}{\\text{h}} \\approx 8.3\\,\\text{h}$, because the starting distance of $4.0\\,\\text{km}$ has already been covered. The time $7.0\\,\\text{h}$ is outside the measurements, so the result holds only if the pace really stays the same."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain",
+      "prompt": "Explain why the data points are not joined into a broken line, and why the slope of the line is calculated from two points on the line that are far apart and not from two data points.",
+      "criteria": [
+        "I say that every measurement has a random error, which the broken line would repeat.",
+        "I say that the fitted line shows the general relationship and runs through the middle of the set of points.",
+        "I justify that for points far apart $\\Delta y$ is large compared with the reading error, so the error of the slope is small.",
+        "I say that the points are read from the fitted line and not from individual data points."
+      ],
+      "model": "Every measurement contains a random error, so the points scatter around the model. A broken line would join these errors too and give a sharply varying, unconvincing relationship. The fitted line runs through the middle of the set of points and shows the general relationship in the phenomenon. The slope $k = \\Delta y : \\Delta x$ is calculated from two points on the line, because on the line the errors have already been averaged out. The points are chosen far apart, because then $\\Delta y$ is large compared with the reading error and the relative error of the slope gets smaller. For example, making $\\Delta x$ ten times as large makes the relative error one tenth.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only after that."
+    }
+  ]
+}

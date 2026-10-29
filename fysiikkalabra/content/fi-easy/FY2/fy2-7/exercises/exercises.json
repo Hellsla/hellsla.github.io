@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-7-L1-01",
+      "level": 1,
+      "text": "Voimalaitos syöttää sähköverkkoon vuorokaudessa $500\\,\\text{MWh}$ sähköenergiaa. Verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka paljon energiaa tulee perille? Anna vastaus megawattitunteina.",
+      "answer": 480,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-02",
+      "level": 1,
+      "text": "Lämpölaitos syöttää kaukolämpöverkkoon viikossa $360\\,\\text{MWh}$ lämpöenergiaa, ja asiakkaille asti tulee $327\\,\\text{MWh}$. Kuinka paljon energiaa häviää verkossa? Anna vastaus megawattitunteina.",
+      "answer": 33,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-03",
+      "level": 1,
+      "text": "Sähköä lähtee kantaverkkoon $80{,}0\\,\\text{MWh}$, ja käyttäjille asti tulee $76{,}8\\,\\text{MWh}$. Kuinka suuri on siirron hyötysuhde? Anna vastaus prosentteina.",
+      "answer": 96.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-04",
+      "level": 1,
+      "text": "Voimalaitos syöttää verkkoon sähkötehoa $125\\,\\text{MW}$, ja verkossa häviää $4{,}0\\,\\%$ lähtevästä tehosta. Kuinka suuri teho tulee perille? Anna vastaus megawatteina.",
+      "answer": 120,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-05",
+      "level": 1,
+      "text": "Kaukolämpöputkesta karkaa ympäristöön lämpöä tasaisesti teholla $2{,}5\\,\\text{kW}$. Kuinka paljon energiaa häviää vuorokaudessa? Anna vastaus kilowattitunteina.",
+      "answer": 60,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-7-L2-01",
+      "level": 2,
+      "text": "Huonosti eristetyssä kaukolämpöverkossa häviää $20\\,\\%$ verkkoon lähtevästä energiasta. Asiakkaille asti tulee viikossa $600\\,\\text{MWh}$. Kuinka paljon energiaa verkossa häviää viikossa? Anna vastaus megawattitunteina.",
+      "answer": 150,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-02",
+      "level": 2,
+      "text": "Kaupunginosa tarvitsee viikossa $1{,}20\\,\\text{GWh}$ lämpöä. Vanhan kaukolämpöverkon hyötysuhde on $80\\,\\%$. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
+      "answer": 1500,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-03",
+      "level": 2,
+      "text": "Alueen sähköverkkoon syötetään vuodessa $2{,}40\\,\\text{TWh}$ sähköenergiaa (esimerkkitilanne). Verkossa häviää $4{,}0\\,\\%$ lähtevästä energiasta. Kuinka suuri on häviöiden keskiteho? Vuodessa on $8760\\,\\text{h}$. Anna vastaus megawatteina.",
+      "answer": 11,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L2-04",
+      "level": 2,
+      "text": "Rakennus tarvitsee kaukolämpöä tasaisesti teholla $40{,}0\\,\\text{kW}$. Vanhassa kaukolämpöverkossa häviää $20\\,\\%$ lähtevästä tehosta. Kuinka paljon energiaa lämpölaitoksen on syötettävä verkkoon vuorokaudessa tätä rakennusta varten? Anna vastaus kilowattitunteina.",
+      "answer": 1200,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-7-L3-01",
+      "level": 3,
+      "text": "Kaukolämpöverkon asiakkaat tarvitsevat viikossa $600\\,\\text{MWh}$ lämpöä. Verkon häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Putkien eristystä parannetaan, ja häviö pienenee arvoon $6{,}0\\,\\%$. Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon viikossa? Anna vastaus megawattitunteina.",
+      "answer": 21,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-02",
+      "level": 3,
+      "text": "Kaksi kaukolämpöverkkoa palvelee samanlaisia asiakkaita. Verkkoon A lähtee viikossa $500\\,\\text{MWh}$, ja sen hyötysuhde on $91{,}0\\,\\%$. Verkkoon B lähtee viikossa $520\\,\\text{MWh}$, ja sen hyötysuhde on $85{,}0\\,\\%$. Kumpi verkko tuo asiakkaille enemmän lämpöä? Kuinka monta megawattituntia enemmän? Anna vastaukseksi erotuksen suuruus megawattitunteina.",
+      "answer": 13.0,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L3-03",
+      "level": 3,
+      "text": "Kaukolämpöputkiston häviöteho on tasaisesti $150\\,\\text{kW}$. Yhden omakotitalon lämmitys kuluttaa vuodessa $20\\,\\text{MWh}$. Kuinka monen talon vuosittaista lämmitysenergiaa putkiston häviö vastaa vuodessa? Vuodessa on $8760\\,\\text{h}$.",
+      "answer": 66,
+      "unit": "kpl",
+      "tolerance": 0.02
+    }
+  ]
+}

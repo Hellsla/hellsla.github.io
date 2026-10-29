@@ -365,7 +365,7 @@
   "note": "Proxima Centauri: its size label is 4{,}0\\cdot10^{16}\\,\\text{m}"
  },
  {
-  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{Proxima Centauri}$\") ? 1 : 0",
+  "expr": "window.simState.labels.some(l => l.s === \"$\\\\text{etäisyys Proxima Centauriin}$\") ? 1 : 0",
   "expected": 1,
   "tol": 0,
   "note": "Proxima Centauri: its name label"

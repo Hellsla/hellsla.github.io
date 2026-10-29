@@ -1,0 +1,19 @@
+{
+ "Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin painava reppu selässään. Lattia on vaakasuora, ja katkoviivanuoli lattian suuntaisesti näyttää kulkusuunnan. Taustalla on kaappirivi ja ikkunoita.": "Kuvitus: opiskelija kävelee koulun tasaista käytävää pitkin. Hänellä on selässä painava reppu. Lattia on vaakasuora. Katkoviivanuoli lattian suuntaisesti näyttää, mihin suuntaan opiskelija kulkee. Taustalla on rivi kaappeja ja ikkunoita.",
+ "Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s.": "Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan. Kannatteleva voima F osoittaa ylös, mutta liike on sivulle. Siksi voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös. Voima F ja liike ovat samansuuntaiset. Siksi voima tekee työn W = F s.",
+ "kanto sivulle": "kanto sivulle",
+ "nosto ylös": "nosto ylös",
+ "liike": "liike",
+ "Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ muuttuu lämmöksi.": "Kaavakuva Joulen kokeesta. Putoava paino vetää narua. Naru kulkee väkipyörän yli ja pyörittää siipipyörää. Siipipyörä on vesiastiassa. Painon voima tekee työn pudotusmatkalla h. Siipipyörä lämmittää vettä: työ muuttuu lämmöksi.",
+ "työ": "työ",
+ "lämpö": "lämpö",
+ "paino": "paino",
+ "vesi lämpenee": "vesi lämpenee",
+ "Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio, ja työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti ja pysyy sitten vakiona; työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂.": "Kaavakuva kahdesta (s,F)-kuvaajasta. Vasemmalla voima on vakio. Työ on suorakulmion pinta-ala F · s. Oikealla voima ensin kasvaa tasaisesti. Sitten voima pysyy vakiona. Työ on kolmion pinta-ala A₁ plus suorakulmion pinta-ala A₂.",
+ "vakiovoima": "vakiovoima",
+ "muuttuva voima": "muuttuva voima",
+ "(s,F)-kuvaaja mittakaavassa: voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä; kolmion pinta-ala on työ.": "(s,F)-kuvaaja mittakaavassa. Voima kasvaa suoraviivaisesti nollasta 40 newtoniin matkalla 0–0,20 metriä. Kolmion pinta-ala on työ.",
+ "pinta-ala": "pinta-ala",
+ "Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös ja laatikon paino G alas, ja nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h.": "Kaavakuva nostotyöstä, ei mittakaavassa. Laatikko nostetaan tasaisella nopeudella maasta korkeudelle h. Nostovoima F osoittaa ylös. Laatikon paino G osoittaa alas. Nuolet ovat yhtä pitkät, F = G. Nostotyö on W = F h = G h.",
+ "(s,F)-kuvaaja mittakaavassa: liikkeen suuntainen vetovoima on 25 N matkalla 0–6 m ja putoaa sitten äkillisesti 10 N:iin, jossa se pysyy matkaan 10 m asti. Ruudukon väli on 1 m ja 5 N.": "(s,F)-kuvaaja mittakaavassa: liikkeen suuntainen vetovoima on 25 N matkalla 0–6 m. Sitten voima putoaa äkillisesti 10 N:iin. Se pysyy 10 N:ssä matkaan 10 m asti. Ruudukon väli on 1 m ja 5 N."
+}

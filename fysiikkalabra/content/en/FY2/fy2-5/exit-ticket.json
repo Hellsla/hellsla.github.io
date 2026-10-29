@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What does it mean that the heat of combustion of diesel is about $43\\,\\text{MJ/kg}$?",
+    "a": "About $43\\,\\text{MJ}$ of energy is released when one kilogram of diesel burns. The heat of combustion is energy per unit of mass."
+  },
+  {
+    "q": "How much energy is released when $5.0\\,\\text{kg}$ of air-dried firewood ($H = 15\\,\\text{MJ/kg}$) is burnt?",
+    "a": "$E = Hm = 15\\,\\text{MJ/kg} \\cdot 5.0\\,\\text{kg} = 75\\,\\text{MJ}$."
+  },
+  {
+    "q": "A package says: energy $1500\\,\\text{kJ}$ per hundred grams. What is the energy content of the food in $\\text{MJ/kg}$, and how does it differ from the heat of combustion of a fuel?",
+    "a": "$1500\\,\\text{kJ} = 1500 \\cdot (1 : 1000)\\,\\text{MJ} = 1.5\\,\\text{MJ}$ and $100\\,\\text{g} = 100 \\cdot (1 : 1000)\\,\\text{kg} = 0.100\\,\\text{kg}$, so the energy content is $1.5\\,\\text{MJ} : 0.100\\,\\text{kg} = 15\\,\\text{MJ/kg}$. It is given in the same unit as the heat of combustion, but it describes the energy the body can use, whereas the heat of combustion describes the energy released in burning."
+  }
+]

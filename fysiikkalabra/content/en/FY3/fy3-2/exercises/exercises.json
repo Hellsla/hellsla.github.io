@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-2-L1-01",
+      "level": 1,
+      "text": "A moped is pushed in the direction of motion with an 80 N force over a distance of 25 metres. How much work does the pushing force do?",
+      "answer": 2.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-02",
+      "level": 1,
+      "text": "A bookcase weighs 150 N. The bookcase is lifted slowly from the floor to a height of $1.2\\,\\text{m}$. How much work does the lifting force do?",
+      "answer": 180,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-03",
+      "level": 1,
+      "text": "The motor of a lift does $36\\,\\text{kJ}$ of work in 12 seconds. What is the power of the motor?",
+      "answer": 3.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-04",
+      "level": 1,
+      "text": "The graph shows the magnitude of the force pulling a sledge, in the direction of motion, as a function of the distance travelled. Calculate the total work done by the force as the area under the graph.",
+      "figure": "fy3-2/pull-steps",
+      "answer": 190,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-05",
+      "level": 1,
+      "text": "A skier pulls a sled at a steady speed of $3.0\\,\\text{m/s}$ with a 20 N force in the direction of motion. What is the power of the pulling force?",
+      "answer": 60,
+      "unit": "W",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-2-L2-01",
+      "level": 2,
+      "text": "A tractor does $45\\,\\text{kJ}$ of work by pulling a load with a 1.5 kN force in the direction of motion. How far does the load move?",
+      "answer": 30,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-02",
+      "level": 2,
+      "text": "The power of a water pump is $1.5\\,\\text{kW}$. How much work does the pump do in 4.0 minutes? Give your answer in kilojoules.",
+      "answer": 360,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-03",
+      "level": 2,
+      "text": "A crane lifts an $850\\,\\text{kg}$ concrete element slowly to a height of $30\\,\\text{m}$. How much work does the lifting force do? Give your answer in kilojoules.",
+      "answer": 250,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-04",
+      "level": 2,
+      "text": "A cart is pushed by a force in the direction of motion. The force is first 10 N over the distance $0\\text{–}2.0\\,\\text{m}$. After that the force increases steadily from 10 N to 30 N over the distance $2.0\\text{–}6.0\\,\\text{m}$. Calculate the total work done by the force as the area under the $(s, F)$ graph.",
+      "answer": 100,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-2-L3-01",
+      "level": 3,
+      "text": "A crate is pushed by a force in the direction of motion. The force increases steadily from zero to 40 N over the distance $0\\text{–}0.50\\,\\text{m}$, then stays at 40 N over the distance $0.50\\text{–}1.5\\,\\text{m}$ and decreases steadily to zero over the distance $1.5\\text{–}2.0\\,\\text{m}$. What is the average magnitude of the force with respect to distance over the whole $2.0\\,\\text{m}$? Hint: first calculate the total work as the area under the graph.",
+      "answer": 30,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-02",
+      "level": 3,
+      "text": "In Joule's experiment a $2.0\\,\\text{kg}$ weight falls $1.5\\,\\text{m}$ and turns a paddle wheel in water. The experiment is repeated 20 times, each time lifting the weight back up. Assume that as it falls the weight loses an amount of energy equal to the work of lifting it, and that all of this energy stays in the water. By how much does the internal energy of the water increase?",
+      "answer": 590,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-03",
+      "level": 3,
+      "text": "A solar panel at a cabin gives a power of $180\\,\\text{W}$ in sunshine. For how many minutes must the sun shine on the panel so that the energy is enough to lift $1000\\,\\text{kg}$ of water to a height of $50\\,\\text{m}$? Assume that all the energy goes into lifting the water.",
+      "answer": 45,
+      "unit": "min",
+      "tolerance": 0.02
+    }
+  ]
+}

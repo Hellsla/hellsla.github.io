@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy3-5-L1-01",
+      "level": 1,
+      "text": "Bread dough is kneaded by hand. While kneading, the hands do $450\\,\\text{J}$ of work on the dough, and a quantity of heat of $120\\,\\text{J}$ is transferred from the warm hands to the dough. The dough is the system. By how much does the internal energy of the dough change?",
+      "answer": 570,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-02",
+      "level": 1,
+      "text": "A cup of hot coffee cools on a table at a cottage. A quantity of heat of $8.4\\,\\text{kJ}$ is transferred from the coffee to the surroundings. No work is done on the coffee, and the coffee does no work. By how much does the internal energy of the coffee change? Give the answer with its sign in kilojoules.",
+      "answer": -8.4,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-03",
+      "level": 1,
+      "text": "A party balloon is taken into a warm sauna. A quantity of heat of $350\\,\\text{J}$ is transferred to the air in the balloon, and at the same time the balloon expands, so the air does $100\\,\\text{J}$ of work on the surroundings. By how much does the internal energy of the air in the balloon change?",
+      "answer": 250,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-04",
+      "level": 1,
+      "text": "In the cylinder of a car engine the fuel has burnt, and the hot combustion gas expands, pushing the piston. The gas does $320\\,\\text{J}$ of work on the piston, and at the same time a quantity of heat of $180\\,\\text{J}$ is transferred from the gas to the cylinder walls. By how much does the internal energy of the gas change? Give the answer with its sign.",
+      "answer": -500,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-05",
+      "level": 1,
+      "text": "Air is let out of a bicycle tyre through the valve. The escaping air expands and does $85\\,\\text{J}$ of work on the surroundings. At the same time a quantity of heat of $15\\,\\text{J}$ has time to be transferred to it from the surroundings. By how much does the internal energy of the escaping air change? Give the answer with its sign.",
+      "answer": -70,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy3-5-L2-01",
+      "level": 2,
+      "text": "The piston of a compressor compresses the air in a cylinder. The graph shows the force $F$ of the piston on the air as a function of the distance $s$ the piston moves during the compression. The internal energy of the air increases by $45\\,\\text{J}$ in the compression. How large a quantity of heat $Q$ is transferred into the air? Read the values you need from the graph and give the answer with its sign: a negative $Q$ means that heat is transferred out of the air.",
+      "figure": "fy3-5/piston-force",
+      "answer": -15,
+      "unit": "J",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-5-L2-02",
+      "level": 2,
+      "text": "The heating element of a kettle transfers energy to the water as heat at a steady power of $2.0\\,\\text{kW}$ for 90 seconds. At the same time, a quantity of heat of $20\\,\\text{kJ}$ is transferred from the water through the casing of the kettle to the surroundings. By how much does the internal energy of the water increase? Give the answer in kilojoules.",
+      "answer": 160,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-03",
+      "level": 2,
+      "text": "In the cylinder of the engine of a steamship sailing on Lake Saimaa, steam expands and does $2.0\\,\\text{kJ}$ of work on the piston. At the same time, the internal energy of the steam decreases by $1.2\\,\\text{kJ}$. How large a quantity of heat is transferred into the steam? Give the answer in joules.",
+      "answer": 800,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-04",
+      "level": 2,
+      "text": "A smoothie made of frozen blueberries is blended in a blender. The blade does work on the smoothie at a power of $250\\,\\text{W}$. The smoothie is colder than the air in the kitchen, and during blending a quantity of heat of $2.0\\,\\text{kJ}$ is transferred to it through the walls of the jug. After blending, the internal energy of the smoothie has increased by $12\\,\\text{kJ}$. How long was the blender on?",
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy3-5-L3-01",
+      "level": 3,
+      "text": "The nozzle of a bicycle pump is blocked with a finger, so no air can escape. The piston is pushed very slowly, and it pushes the air a distance of $0.15\\,\\text{m}$ with an average force of 120 N. The temperature of the air in the pump stays at room temperature throughout, and the air can be treated as an ideal gas. How large a quantity of heat $Q$ is transferred into the air? Give the answer with its sign and justify why the internal energy of the air does not change.",
+      "answer": -18,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-02",
+      "level": 3,
+      "text": "In a physics lesson at upper secondary school, a measurement like Joule's experiment is done. A $5.0\\,\\text{kg}$ weight hanging on a string descends slowly at a constant speed and turns a paddle wheel in water. The water container is very well insulated. The weight is always lifted back up and released, 12 times in total. From what height must the weight descend each time so that the internal energy of the water increases by $1.0\\,\\text{kJ}$ in total? Assume that the energy lost by the weight is transferred to the water as work done by the paddle wheel.",
+      "answer": 1.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-03",
+      "level": 3,
+      "text": "A gas in a cylinder is taken in two different ways from the same initial temperature to the same final temperature; the amount of gas does not change. The gas can be treated as an ideal gas, in which the energy of the interactions between the particles is negligibly small. In way A a quantity of heat of $400\\,\\text{J}$ is transferred to the gas, and the gas does $150\\,\\text{J}$ of work on the surroundings. In way B the gas does $60\\,\\text{J}$ of work on the surroundings. How large a quantity of heat is transferred to the gas in way B? Justify why the change in the internal energy of the gas is the same in both ways.",
+      "answer": 310,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ]
+}

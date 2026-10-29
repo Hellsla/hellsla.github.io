@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "contribution": "Heat does not always raise the temperature: when a pure substance changes state at constant pressure, the energy transferred changes the interactions between the particles at a constant temperature, and the quantity of heat needed is $Q = sm$ or $Q = rm$.",
+  "learn": [
+    "You can explain where the energy goes when a pure substance changes state at constant pressure and temperature.",
+    "You can calculate the quantity of heat needed for melting and vaporisation."
+  ],
+  "prior": [
+    "The quantity of heat $Q = cm\\Delta T$ and the specific heat capacity of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$ (chapter *Heating and cooling of a substance*)",
+    "Power tells you how fast energy is transferred: $Q = Pt$ (chapter *Work and energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "You put ice cubes from the freezer into a pan, switch the hotplate on and push a thermometer in among the ice. The hotplate gives out the same power all the time. The thermometer reading starts below freezing and rises – but does it rise steadily all the time until the pan is empty?",
+      "question": "Where does the energy from the hotplate go at the moments when the thermometer reading does not change?"
+    },
+    {
+      "id": "pr-lampo",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: quantity of heat",
+      "prompt": "A pan contains $0.50\\,\\text{kg}$ of water at $0\\,{}^\\circ\\text{C}$. What quantity of heat is needed to warm the water to $100\\,{}^\\circ\\text{C}$? The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "choices": [
+        {
+          "text": "about $2.1\\,\\text{kJ}$",
+          "feedback": "This is the quantity of heat for warming by one kelvin. The temperature change is $\\Delta T = 100\\,\\text{K}$, so $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
+        },
+        {
+          "text": "about $210\\,\\text{kJ}$",
+          "correct": true,
+          "feedback": "Correct: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. You can compare this figure with the changes of state in this lesson."
+        },
+        {
+          "text": "about $419\\,\\text{kJ}$",
+          "feedback": "The mass was left out. The specific heat capacity gives the quantity of heat per *kilogram*, so it is multiplied by the mass: $Q = cm\\Delta T = 4190 \\cdot 0.50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the power doubles",
+      "prompt": "A pan contains $0.50\\,\\text{kg}$ of water boiling with a $1000\\,\\text{W}$ heater. The heater power is raised to $2000\\,\\text{W}$. What happens to the temperature of the water and to the duration of boiling (the time in which all the water boils away)?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The water gets hotter than $100\\,{}^\\circ\\text{C}$, because energy arrives in it faster.",
+          "feedback": "In the animation, the horizontal part for boiling is at $100\\,{}^\\circ\\text{C}$ for both powers. During boiling the temperature stays constant, so the average kinetic energy of the particles does not increase; the extra energy vaporises water, that is, the molecules move farther apart and the interaction energy between them increases. The water vaporises faster but does not get hotter. In the table the duration of boiling halves, from $1130\\,\\text{s}$ to $565\\,\\text{s}$."
+        },
+        {
+          "text": "The temperature stays at $100\\,{}^\\circ\\text{C}$, but the water boils away in half the time.",
+          "correct": true,
+          "feedback": "The values from the model support this: the duration of boiling halves from $1130\\,\\text{s}$ to $565\\,\\text{s}$, and in the animation the horizontal part is at $100\\,{}^\\circ\\text{C}$ for both powers. Vaporising always needs the same energy, and double the power transfers it in half the time."
+        },
+        {
+          "text": "The temperature stays at $100\\,{}^\\circ\\text{C}$, and boiling lasts just as long, because there is the same amount of water.",
+          "feedback": "The temperature does stay at $100\\,{}^\\circ\\text{C}$, but the duration does not: in the table it falls from $1130\\,\\text{s}$ to $565\\,\\text{s}$. Vaporising this amount of water needs a certain energy, and a greater power transfers it faster, $t = Q/P$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: melting and boiling",
+      "prompt": "The same heater ($1000\\,\\text{W}$) melts the ice and later boils the same water away. How do the durations of melting and boiling compare, and does the ratio change when the mass is doubled from $0.25\\,\\text{kg}$ to $0.50\\,\\text{kg}$?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "They last about equally long, because both are changes of state.",
+          "feedback": "According to the model, boiling lasts about seven times as long as melting ($565\\,\\text{s}$ and about $84\\,\\text{s}$ when $m = 0.25\\,\\text{kg}$). In melting, the particles stay close to each other and only their order breaks down, but in vaporisation they move far apart from each other, and the interaction energy between them increases much more per kilogram."
+        },
+        {
+          "text": "Boiling lasts about seven times as long, and the ratio is the same for both masses.",
+          "correct": true,
+          "feedback": "The values from the model support this: for $0.25\\,\\text{kg}$ the durations are about $84\\,\\text{s}$ and $565\\,\\text{s}$, and for $0.50\\,\\text{kg}$ $167\\,\\text{s}$ and $1130\\,\\text{s}$. Both durations double with the mass, so the ratio stays at about 6.8. Every kilogram always needs the same energy to melt and to vaporise."
+        },
+        {
+          "text": "Boiling lasts longer, and the difference grows in proportion as the mass grows.",
+          "feedback": "Boiling does last longer, but the ratio does not change: for $0.25\\,\\text{kg}$ $565/83.5 \\approx 6.8$ and for $0.50\\,\\text{kg}$ $1130/167 \\approx 6.8$. Each duration is directly proportional to the mass, so their ratio does not depend on the mass."
+        },
+        {
+          "text": "Melting lasts longer, because cold ice is harder to heat.",
+          "feedback": "During melting the ice is already at 0 °C and its temperature does not change. According to the model, melting lasts only about a seventh of the duration of boiling (about $84\\,\\text{s}$ and $565\\,\\text{s}$ when $m = 0.25\\,\\text{kg}$)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Prediction 3: why does the temperature not rise?",
+      "prompt": "During melting, the temperature of the mixture of ice and water stays at $0\\,{}^\\circ\\text{C}$ even though the heater works all the time. Three students explain the phenomenon. Whose explanation fits the fact that the duration of the constant part grows with the mass?",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Aino: Energy escapes from the vessel into the air as fast as it arrives, so the substance does not warm up.",
+          "feedback": "If energy escaped as fast as it arrived, the horizontal part would never end. But it does end when all the ice has melted, and its duration grows with the mass: every kilogram needs its own energy. Losses slow down the warming, but they do not explain why the temperature stops exactly at the melting point."
+        },
+        {
+          "text": "Bea: The energy changes the interactions between the particles and increases the interaction energy between them, so the average kinetic energy of the particles does not increase and the temperature does not rise.",
+          "correct": true,
+          "feedback": "This explanation fits the observations: the temperature always stops at the melting point, and the duration of the constant part is directly proportional to the mass, because the melting of every kilogram increases the interaction energy between the particles by the same amount. The model in the simulation is built on this explanation, so the simulation alone does not prove it; what matters is that the explanation predicts the length of the constant part correctly. The water molecules stay intact: only the interactions between the molecules change, not the chemical bonds inside the molecules."
+        },
+        {
+          "text": "Cem: The motion of the particles speeds up all the time, but the thermometer does not have time to react before the ice has melted.",
+          "feedback": "The thermometer's delay is a matter of seconds, but melting takes minutes, and the constant part is longer the more ice there is. The delay explains neither. Besides, temperature describes the motion of the particles: if the motion sped up, the temperature would rise. During the horizontal part, the energy transferred increases the interaction energy between the particles."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation, ice is heated from $-20\\,{}^\\circ\\text{C}$ at constant power at normal atmospheric pressure until it is steam at 130 °C.",
+      "howto": "Press *Heat* and follow the $(t, T)$ graph: where does the temperature rise and where does it stay in place?",
+      "model": "The model assumes that all the energy from the heater is transferred to the substance and that the pressure stays at normal atmospheric pressure $p = 101\\,\\text{kPa}$. The vessel is closed by a light, freely moving piston, and the steam does not leave the vessel but expands under the piston; the picture is not to scale, since the volume of the steam is about 1700 times that of the water. That is why the water boils at $100\\,{}^\\circ\\text{C}$, and the specific heat capacity at constant pressure, $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$, is used for warming the steam. In an open pan the steam would escape and would not warm up to $130\\,{}^\\circ\\text{C}$. In a closed rigid vessel the pressure would rise as the steam formed, the boiling temperature would rise, and the curve would have no horizontal part at exactly $100\\,{}^\\circ\\text{C}$. The values on the screen are calculated by the model, not measurements from a real vessel."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the power changes",
+      "intro": "Test prediction 1. The mass is locked at $0.50\\,\\text{kg}$; change only the power. Record the durations of melting and boiling for at least two powers, for example $1000\\,\\text{W}$ and $2000\\,\\text{W}$. The durations are calculated by the model ($t = Q/P$) and are shown immediately. At both powers also press *Heat* and see at what temperature the long horizontal part of the graph is.",
+      "initial": {
+        "m": 0.5,
+        "P": 1000
+      },
+      "names": {
+        "m": "mass m",
+        "P": "power P"
+      },
+      "units": {
+        "m": "kg",
+        "P": "W"
+      },
+      "locked": [
+        "m"
+      ],
+      "vary": "P",
+      "measure": [
+        {
+          "key": "tMelt",
+          "label": "melts (s)"
+        },
+        {
+          "key": "tBoil",
+          "label": "boils (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the mass changes",
+      "intro": "Test predictions 2 and 3. The power is locked at $1000\\,\\text{W}$; change only the mass. Record the durations for at least two masses, for example $0.25\\,\\text{kg}$ and $0.50\\,\\text{kg}$, and compare the duration of boiling with the duration of melting. Heat once and see at what stage there are two phases in the container at the same time.",
+      "initial": {
+        "m": 0.25,
+        "P": 1000
+      },
+      "names": {
+        "m": "mass m",
+        "P": "power P"
+      },
+      "units": {
+        "m": "kg",
+        "P": "W"
+      },
+      "locked": [
+        "P"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "tMelt",
+          "label": "melts (s)"
+        },
+        {
+          "key": "tBoil",
+          "label": "boils (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: where does the energy go on the plateau?",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Write a short conclusion based on the graph and your tables. At what temperature was the horizontal part for boiling at different powers? How did the durations of melting and boiling depend on the mass and the power, and what does that tell you about the energy needed for a change of state? Whose explanation in prediction 3 fits this?",
+      "model": "The horizontal part for boiling was at $100\\,{}^\\circ\\text{C}$ for both powers; a greater power only made it shorter ($0.50\\,\\text{kg}$: $1130\\,\\text{s}$ at $1000\\,\\text{W}$ and $565\\,\\text{s}$ at $2000\\,\\text{W}$). The durations doubled with the mass, so the energy needed, $Q = Pt$, is directly proportional to the mass: $Q = sm$ and $Q = rm$. Boiling lasted about $6.8$ times as long as melting, because $r/s \\approx 6.8$. On the plateau the temperature stays constant, so the average kinetic energy of the particles does not increase; the energy transferred changes the interactions between the particles and increases the interaction energy between them (Bea's explanation). In vaporisation a small part of the energy is also used for work, as the steam expands and pushes a piston. The simulation calculates the durations from the table values $s$ and $r$, so it illustrates the model but does not measure them. In a real experiment $r$ is determined by measuring, for example, the decrease in the mass of boiling water on a balance.",
+      "criteria": [
+        "I said that the plateau stayed at $100\\,{}^\\circ\\text{C}$ regardless of the power.",
+        "I used readings from the table to justify that the energy is proportional to the mass.",
+        "I explained the plateau with the particle model: the energy increases the interaction energy between the particles, not the average kinetic energy.",
+        "I distinguished the durations calculated by the model from a real measurement."
+      ]
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the measurements and the model $Q = sm$, $Q = rm$. Then return to the opening question: where does the energy from the hotplate go at the moments when the thermometer reading does not change, and why does the temperature of boiling water not rise even though the hob is on full?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ],
+      "optional": true
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the quantity of heat needed to melt $0.20\\,\\text{kg}$ of ice at 0 °C into water at 0 °C: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. The student concludes that ice melts without energy. Where is the error?",
+      "choices": [
+        {
+          "text": "The value for water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$, should be used in place of the specific heat capacity of ice.",
+          "feedback": "Changing the coefficient does not help: when $\\Delta T = 0$, the product is still zero. The error is in the choice of formula itself."
+        },
+        {
+          "text": "The formula $Q = cm\\Delta T$ applies to warming. In a change of state the temperature does not change, and the quantity of heat is $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0.20\\,\\text{kg} \\approx 66.8\\,\\text{kJ}$.",
+          "correct": true,
+          "feedback": "Correct. On the horizontal part of a heating curve $\\Delta T = 0$, but energy is transferred all the time: it breaks the bonds between the particles. That is why melting has its own formula, $Q = sm$."
+        },
+        {
+          "text": "The temperature change should be taken as $273\\,\\text{K}$, because $0\\,{}^\\circ\\text{C}$ is $273\\,\\text{K}$.",
+          "feedback": "A temperature *change* is the same in kelvins and in degrees Celsius, and here the initial and final temperatures are both $0\\,{}^\\circ\\text{C}$, so $\\Delta T = 0$. The error is that melting needs the formula $Q = sm$."
+        },
+        {
+          "text": "There is no error in the calculation: ice melts by itself at $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Ice at 0 °C does not melt unless energy is transferred to it; in a cool bag ice melts precisely because it takes heat from its surroundings. Melting needs $Q = sm$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A steam humidifier boils water into steam. In an hour, $0.30\\,\\text{kg}$ of water evaporates from its tank, and the water is already at 100 °C to begin with. What is the power the humidifier uses for vaporising? Heat losses are not taken into account. Give your answer in watts.",
+      "answer": 188,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "What quantity of heat is needed to vaporise $0.30\\,\\text{kg}$ of water, and in how long is it transferred?",
+        "Vaporising needs $Q = rm$, and the power is $P = \\dfrac{Q}{t} = \\dfrac{rm}{t}$.",
+        "Substitute: $P = \\dfrac{2260\\,\\text{kJ/kg} \\cdot 0.30\\,\\text{kg}}{3600\\,\\text{s}}$. Remember that $1\\,\\text{J/s} = 1\\,\\text{W}$."
+      ],
+      "mistakes": [
+        {
+          "value": 27.8,
+          "feedback": "You used the specific latent heat of fusion, $334\\,\\text{kJ/kg}$. The water does not melt but vaporises, so you need the specific latent heat of vaporisation $r = 2260\\,\\text{kJ/kg}$."
+        },
+        {
+          "value": 11300,
+          "feedback": "You divided by 60. An hour is $3600\\,\\text{s}$, not $60\\,\\text{s}$, and power is joules per second."
+        }
+      ],
+      "solution": "**Given:** water vaporising $m = 0.30\\,\\text{kg}$ in a time $t = 1\\,\\text{h}$, the water is already at $100\\,{}^\\circ\\text{C}$, no heat losses; from the table $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** the power $P$ used for vaporising, in watts\n\n**Principle:** The water is already at the boiling point, so it does not need to be warmed and all the energy is used for vaporisation, $Q = rm$. With no losses, energy is conserved, and power is energy divided by time.\n\n**Formula:** $P = \\dfrac{Q}{t}$ and $Q = rm$, so\n\n$$P = \\frac{rm}{t}$$\n\n**Conversions:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ and $t = 1\\,\\text{h} = 3600\\,\\text{s}$. This way the result comes out in the unit $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Substitution:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0.30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188.3\\,\\text{W}$\n\n**Answer:** $1.9\\cdot10^{2}\\,\\text{W}$ (calculator result $188\\,\\text{W}$), two significant figures like the mass $0.30\\,\\text{kg}$.\n\n**Reasonableness:** Estimate: $0.7\\,\\text{MJ}$ in an hour is about $700\\,000\\,\\text{J} / 3600\\,\\text{s} \\approx 190\\,\\text{W}$. A couple of hundred watts is a typical power for a household steam humidifier. The actual input power is slightly greater, because some of the energy passes to the surroundings, and the power is smaller than that of a $2000\\,\\text{W}$ hotplate, because the steam is produced slowly.",
+      "optional": true
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more on three levels. Level 1 exercises use a single formula, and level 3 combines warming and a change of state."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Water boils at $100\\,{}^\\circ\\text{C}$. What happens to the water molecules when the water vaporises?",
+      "choices": [
+        {
+          "text": "The molecules move faster, so their kinetic energy increases.",
+          "feedback": "Temperature describes the motion of the particles, and during boiling it stays at $100\\,{}^\\circ\\text{C}$. So the average kinetic energy of the molecules does not increase; the energy transferred increases the interaction energy between the molecules as they move farther apart."
+        },
+        {
+          "text": "The molecules move farther apart, and the interaction energy between them increases.",
+          "correct": true,
+          "feedback": "Correct. In a liquid the molecules stay close to each other, pulled together by each other; in vaporisation they move far apart, and the vapour expands. This takes the energy $Q = rm$, even though the temperature does not rise. The water molecules themselves stay intact."
+        },
+        {
+          "text": "The molecules break down into hydrogen and oxygen.",
+          "feedback": "A change of state does not change the substance: steam is still water molecules. Only the interactions between the molecules change; the chemical bonds inside a molecule do not break."
+        },
+        {
+          "text": "The molecules expand, and that is why steam takes up more space.",
+          "feedback": "The molecules themselves do not grow. Steam takes up more space because the distances between the molecules increase."
+        }
+      ]
+    },
+    {
+      "id": "check-c2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Boiling water",
+      "prompt": "In a pan, water is boiling steadily at $100\\,{}^\\circ\\text{C}$. The power of the hotplate is turned up. What happens?",
+      "choices": [
+        {
+          "text": "The temperature of the water rises above $100\\,{}^\\circ\\text{C}$, because more energy is transferred to the water.",
+          "feedback": "In an open pan, the temperature of boiling water does not rise above the boiling point. The extra energy does not increase the kinetic energy of the molecules but pulls the molecules apart from each other, so it is used to vaporise water."
+        },
+        {
+          "text": "The temperature of the water stays at $100\\,{}^\\circ\\text{C}$, but more water vaporises every second.",
+          "correct": true,
+          "feedback": "Correct. The energy used in vaporisation is $Q = rm$, so a greater power vaporises a greater mass in the same time. The temperature stays constant until the water has boiled away."
+        },
+        {
+          "text": "The water boils more slowly, because more energy arrives than the water has time to absorb.",
+          "feedback": "The water absorbs all the energy transferred: vaporisation just becomes faster. No energy is left unused, but every extra joule vaporises more water."
+        },
+        {
+          "text": "Nothing changes, because the temperature of boiling water does not change.",
+          "feedback": "The temperature really does stay the same, but the rate of vaporisation changes. The energy transferred does not disappear: it vaporises more water per second, so the water boils away faster."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Heating curve",
+      "prompt": "A pan is heated with a $1500\\,\\text{W}$ heater whose energy is transferred entirely to the water. In the heating curve $(t, T)$ of the water, the temperature is horizontal at $100\\,{}^\\circ\\text{C}$ from the moment $t = 2.0\\,\\text{min}$ to the moment $t = 17.0\\,\\text{min}$, when the pan is empty. How much water boiled away? Give your answer in kilograms.",
+      "answer": 0.597,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "What happens during the horizontal part, and how long does it last?",
+        "On the horizontal part all the energy $Q = Pt$ is used for vaporisation, $Q = rm$, so $m = \\dfrac{Pt}{r}$.",
+        "The duration is $17.0\\,\\text{min} - 2.0\\,\\text{min} = 15.0\\,\\text{min} = 900\\,\\text{s}$, so $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2260\\,\\text{kJ/kg}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.677,
+          "feedback": "You used the whole time of $17.0\\,\\text{min}$. During the first 2.0 minutes the water was only warming up; vaporisation takes place only during the horizontal part, $15.0\\,\\text{min}$."
+        },
+        {
+          "value": 4.04,
+          "feedback": "You used the specific latent heat of fusion, $334\\,\\text{kJ/kg}$. The horizontal part at $100\\,{}^\\circ\\text{C}$ is boiling, so you need $r = 2260\\,\\text{kJ/kg}$."
+        }
+      ],
+      "solution": "**Given:** heater power $P = 1500\\,\\text{W}$, all the energy is transferred to the water; the horizontal part of the heating curve $(t, T)$ at $100\\,{}^\\circ\\text{C}$ is from the moment $t_1 = 2.0\\,\\text{min}$ to the moment $t_2 = 17.0\\,\\text{min}$; from the table $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** the mass $m$ of water that boiled away, in kilograms\n\n**Principle:** On the horizontal part the temperature does not change even though energy is transferred: the water boils and turns into steam. Then all the energy $Pt$ from the heater is used for vaporisation, $Q = rm$. Energy is conserved, because there are no losses.\n\n**Reading the graph:** The horizontal part starts at $t_1 = 2.0\\,\\text{min}$ and ends at $t_2 = 17.0\\,\\text{min}$. The time for vaporisation is the difference between these, $t = t_2 - t_1 = 15.0\\,\\text{min}$. During the first $2.0\\,\\text{min}$ the water is only warming up, and that time is not counted.\n\n**Formula:** $Pt = rm$, from which\n\n$$m = \\frac{Pt}{r}$$\n\n**Conversions:** $t = 15.0\\,\\text{min} = 900\\,\\text{s}$ and $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$, so that $\\text{W} \\cdot \\text{s} = \\text{J}$.\n\n**Substitution:** $m = \\dfrac{1500\\,\\text{W} \\cdot 900\\,\\text{s}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = \\dfrac{1\\,350\\,000\\,\\text{J}}{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 0.597\\,\\text{kg}$\n\n**Answer:** $0.597\\,\\text{kg}$, three significant figures, because the time difference $15.0\\,\\text{min}$ and the power $1500\\,\\text{W}$ are given to three figures.\n\n**Reasonableness:** Estimate: $1.35\\,\\text{MJ}$ of energy and about $2.3\\,\\text{MJ}$ per kilogram give about $0.6\\,\\text{kg}$. Warming took the water only $2.0\\,\\text{min}$, or $180\\,000\\,\\text{J}$, which would be enough to warm about $\\dfrac{180\\,000\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\approx 0.54\\,\\text{kg}$ of water from $20\\,{}^\\circ\\text{C}$ to the boiling point, which is the same order of magnitude as the original amount of water in the pan. Vaporising took over seven times as long as warming, because $r$ is large."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain and transfer",
+      "prompt": "Why does steam at 100 °C burn skin worse than the same mass of water at 100 °C? Use a change of state and energy in your explanation.",
+      "criteria": [
+        "I say that steam condenses into water on the skin and then gives out the quantity of heat $Q = rm$.",
+        "I say that water gives out only $Q = cm\\Delta T$ as it cools, and steam gives out the latent heat of condensation in addition to this.",
+        "I compare the sizes: the latent heat of condensation is many times the heat released in cooling.",
+        "I use the micro model: when steam condenses, the molecules move close to each other, the interaction energy between them decreases and the energy is transferred to the skin."
+      ],
+      "model": "When steam hits the skin, it condenses into water. As it condenses, the molecules bind to each other, and the energy that was taken up in vaporisation is released: $Q = rm$. After that the water that has formed cools to the temperature of the skin like ordinary hot water. One gram of steam gives out $2260\\,\\text{J}$ as it condenses and a further $264\\,\\text{J}$ or so as it cools from $100\\,{}^\\circ\\text{C}$ to $37\\,{}^\\circ\\text{C}$, about $2.5\\,\\text{kJ}$ in total. One gram of water at 100 °C gives out only the cooling part, about $264\\,\\text{J}$, which is almost ten times less.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-1-L1-01",
+      "level": 1,
+      "text": "Kivi on levossa korkealla kalliolla, ja sen potentiaalienergia on $50\\,\\text{J}$. Kivi putoaa maahan, jonka tasolla potentiaalienergia on nolla. Ilmanvastus jätetään huomiotta. Kuinka suuri on kiven liike-energia juuri ennen maahan osumista?",
+      "answer": 50.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-02",
+      "level": 1,
+      "text": "Kasvin lehteen imeytyy auringon säteilyenergiaa $245\\,\\text{J}$. Lehti muuttaa siitä yhteyttämällä kemialliseksi energiaksi $6{,}0\\,\\text{J}$. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi?",
+      "answer": 239.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-03",
+      "level": 1,
+      "text": "Aurinkopaneeli vastaanottaa säteilyenergiaa $800\\,\\text{J}$ ja muuttaa siitä sähköenergiaksi $160\\,\\text{J}$. Muu energia muuttuu lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi?",
+      "answer": 640.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-04",
+      "level": 1,
+      "text": "Nimeä kussakin tilanteessa energialaji, jossa energia on alussa, ja hyödyllinen energialaji, joksi se muuttuu. a) Polttopuut palavat takassa ja lämmittävät huonetta. b) Aurinkopaneeli tuottaa sähköä. c) Vesi virtaa patoaltaasta alas turbiiniin, joka pyörittää generaattoria.",
+      "answer": "a) kemiallinen energia → lämpöenergia; b) säteilyenergia → sähköenergia; c) veden potentiaalienergia → (liike-energia →) sähköenergia",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-05",
+      "level": 1,
+      "text": "Pulkka lähtee levosta mäen päältä. Ylhäällä sen potentiaalienergia on $600\\,\\text{J}$. Mäkeä laskiessa kitka muuttaa $90\\,\\text{J}$ energiaa lämpöenergiaksi. Mäen alla potentiaalienergia on nolla. Kuinka suuri on pulkan liike-energia mäen alla?",
+      "answer": 510.0,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-1-L2-01",
+      "level": 2,
+      "text": "Sähköpotkulauta lähtee liikkeelle. Sen akusta vapautuu kemiallista energiaa $3{,}00\\,\\text{kJ}$. Potkulauta ja kuljettaja saavat siitä liike-energiaa $2150\\,\\text{J}$. Muu energia muuttuu akussa, moottorissa ja renkaissa lämpöenergiaksi. Kuinka monta joulea energiaa muuttuu lämpöenergiaksi?",
+      "answer": 850.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-02",
+      "level": 2,
+      "text": "Lapsi lähtee levosta vesiliukumäen yläpäästä. Alapäässä hänen liike-energiansa on $2400\\,\\text{J}$. Matkalla kitka on muuttanut $0{,}60\\,\\text{kJ}$ energiaa lämpöenergiaksi. Alapää on potentiaalienergian nollataso. Kuinka suuri oli lapsen potentiaalienergia yläpäässä? Vastaa kilojouleina.",
+      "answer": 3.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-03",
+      "level": 2,
+      "text": "Keinussa istuva lapsi vedetään sivulle ja päästetään levosta. Ylimmässä kohdassa lapsen ja keinun potentiaalienergia on $0{,}36\\,\\text{kJ}$, kun nollataso on keinun alin kohta. Keinu heiluu yhä pienemmin heilahduksin, kunnes se pysähtyy alimpaan kohtaan. Ääntä ei oteta huomioon. Kuinka monta joulea energiaa muuttuu yhteensä lämpöenergiaksi?",
+      "answer": 360.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-04",
+      "level": 2,
+      "text": "Vedenkeittimeen tulee sähköenergiaa $360\\,\\text{kJ}$. Siitä $331\\,\\text{kJ}$ siirtyy veteen lämpönä. Muu energia lämmittää keitintä ja ympäristöä. Kuinka monta joulea energiaa päätyy keittimeen ja ympäristöön?",
+      "answer": 29000.0,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-1-L3-01",
+      "level": 3,
+      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa, ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
+      "answer": 130,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-02",
+      "level": 3,
+      "text": "Kumipallo pudotetaan lattialle. Pallon mekaaninen energia on pudotushetkellä $5{,}00\\,\\text{J}$, ensimmäisen pompun jälkeen $4{,}00\\,\\text{J}$ ja toisen pompun jälkeen $3{,}20\\,\\text{J}$. Kuinka paljon enemmän energiaa muuttuu lämpöenergiaksi ensimmäisessä pompussa kuin toisessa?",
+      "answer": 0.2,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-03",
+      "level": 3,
+      "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi. Höyry pyörittää turbiinia, ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee. a) Nimeä energialajit ketjun jokaisessa vaiheessa. b) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
+      "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmasosaa muuttuu lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

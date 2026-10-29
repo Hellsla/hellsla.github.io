@@ -1,0 +1,24 @@
+{
+  "id": "fy1-3",
+  "course": "FY1",
+  "title": "Mittaaminen ja mittauksen luotettavuus",
+  "goals": [
+    "LOPS FY1: mittaaminen, tulosten kerääminen ja luotettavuuden arviointi",
+    "Täsmennys: systemaattisen ja satunnaisen virheen lähteet, kokeiden toistettavuus"
+  ],
+  "prerequisites": [
+    "fy1-2"
+  ],
+  "glossary": [
+    "mittaus",
+    "mittausvirhe",
+    "karkea virhe",
+    "mittausepävarmuus",
+    "systemaattinen virhe",
+    "satunnaisvirhe",
+    "toistettavuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-3-L1-01",
+      "level": 1,
+      "text": "Vedenkeitin muuntaa $90{,}0\\,\\text{s}$:ssa sähköenergiaa $1{,}80 \\cdot 10^{5}\\,\\text{J}$. Laske keittimen teho.",
+      "answer": 2000,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-02",
+      "level": 1,
+      "text": "LED-lampun teho on $8{,}0\\,\\text{W}$. Kuinka paljon energiaa lamppu muuntaa $5{,}0\\,\\text{s}$:ssa?",
+      "answer": 40,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-03",
+      "level": 1,
+      "text": "Mikroaaltouunin teho on $1200\\,\\text{W}$. Kuinka kauan kestää, ennen kuin uuni on muuntanut energiaa $72\\,000\\,\\text{J}$?",
+      "answer": 60,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-04",
+      "level": 1,
+      "text": "Sähkökiukaan teho on $3{,}5\\,\\text{kW}$. Ilmoita teho watteina.",
+      "answer": 3500,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-05",
+      "level": 1,
+      "text": "Lämmittimen teho on $1{,}5\\,\\text{kW}$, ja se on päällä $2{,}0\\,\\text{h}$. Kuinka paljon energiaa se kuluttaa kilowattitunteina?",
+      "answer": 3.0,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-3-L2-01",
+      "level": 2,
+      "text": "Sähkökiukaan teho on $6{,}0\\,\\text{kW}$, ja se on päällä $150\\,\\text{min}$. Sähkön hinta on $20\\,\\text{snt/kWh}$ eli $0{,}20\\,\\text{€/kWh}$. Mitä kiukaan lämmitys maksaa? Vastaa euroina.",
+      "answer": 3.0,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-02",
+      "level": 2,
+      "text": "Puhelimen akkuun mahtuu energiaa $15\\,\\text{Wh}$. Ilmoita energia jouleina.",
+      "answer": 54000,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-03",
+      "level": 2,
+      "text": "Laite kuluttaa $20\\,\\text{min}$:ssa energiaa $0{,}40\\,\\text{kWh}$. Laske laitteen keskiteho watteina.",
+      "answer": 1200,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-04",
+      "level": 2,
+      "text": "Kaupassa palaa kuusi poistumistievaloa, kukin teholla $1{,}5\\,\\text{W}$ koko vuoden. Vuodessa on $8760\\,\\text{h}$. Kuinka paljon energiaa valot kuluttavat yhteensä vuodessa? Vastaa kilowattitunteina.",
+      "answer": 79,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-3-L3-01",
+      "level": 3,
+      "text": "Valo on päällä $4{,}0\\,\\text{h}$ vuorokaudessa koko vuoden, $365\\,\\text{vrk}$. Vanha hehkulamppu ($60\\,\\text{W}$) vaihdetaan LED-lamppuun ($8{,}0\\,\\text{W}$). Sähkön hinta on $20\\,\\text{snt/kWh}$ eli $0{,}20\\,\\text{€/kWh}$. Kuinka monta euroa vuodessa säästyy?",
+      "answer": 15,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L3-02",
+      "level": 3,
+      "text": "Kotitalous kuluttaa vuodessa sähköenergiaa $3{,}0 \\cdot 10^{3}\\,\\text{kWh}$. Vuodessa on $8760\\,\\text{h}$. Laske kotitalouden keskiteho watteina. Vertaa sitä kotitalouden laitteiden nimellistehojen summaan. Nimellisteho on laitteeseen merkitty teho. Onko keskiteho suurempi vai pienempi kuin summa? Miksi?",
+      "answer": 340,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L3-03",
+      "level": 3,
+      "text": "Sähköauto kuluttaa ajettaessa $18\\,\\text{kWh}$ sadalla kilometrillä. Auto ladataan pistorasiasta teholla $2{,}3\\,\\text{kW}$. Lataus kestää $8{,}0\\,\\text{h}$. Kuinka pitkän matkan auto voi ajaa tällä latausenergialla? Lataushäviöt jätetään huomiotta.",
+      "answer": 100,
+      "unit": "km",
+      "tolerance": 0.03
+    }
+  ]
+}

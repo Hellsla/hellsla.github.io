@@ -1,0 +1,21 @@
+{
+ "Kuvitus: kädet painavat jalkapumpun kahvaa alas, ja letku vie ilman polkupyörän renkaaseen. Pumpun alaosa on lämmennyt, mitä kuvaavat oranssi hehku ja väreilevät viivat.": "Kuvitus: kädet painavat jalkapumpun kahvaa alas. Letku vie ilman polkupyörän renkaaseen. Pumpun alaosa on lämmennyt, mitä kuvaavat oranssi hehku ja väreilevät viivat.",
+ "Kaksi tapaa muuttaa sisäenergiaa (kaaviokuva, ei mittakaavassa). Vasemmalla mäntä työntyy sylinteriin ja tekee ilmaan työn W, ja ilman hiukkaset liikkuvat nopeammin. Oikealla kuuma ja kylmä kappale koskettavat, ja lämpömäärä Q siirtyy kuumasta kylmään.": "Kaksi tapaa muuttaa sisäenergiaa (kaaviokuva, ei mittakaavassa). Vasemmalla mäntä työntyy sylinteriin ja tekee ilmaan työn W. Ilman hiukkaset liikkuvat nopeammin. Oikealla kuuma ja kylmä kappale koskettavat toisiaan. Lämpömäärä Q siirtyy kuumasta kylmään.",
+ "työ": "työ",
+ "lämpö": "lämpö",
+ "ilma kuumenee": "ilma kuumenee",
+ "kuuma": "kuuma",
+ "kylmä": "kylmä",
+ "kuumasta kylmään": "kuumasta kylmään",
+ "Energiakaavio: systeemiin tulee lämpömäärä Q ja työ W, ja systeemin sisäenergia muuttuu niiden summan verran. Ulos siirtyvä energia on negatiivista.": "Energiakaavio: systeemiin tulee lämpömäärä Q ja työ W. Systeemin sisäenergia muuttuu niiden summan verran. Ulos siirtyvä energia on negatiivista.",
+ "systeemi": "systeemi",
+ "tai": "tai",
+ "ulos": "ulos",
+ "sisään positiivinen, ulos negatiivinen": "sisään positiivinen, ulos negatiivinen",
+ "Työn etumerkki (kaaviokuva, ei mittakaavassa). Vasemmalla mäntää työnnetään sisään ja kaasu puristuu: ympäristö tekee kaasuun työn, joten W on positiivinen. Oikealla kaasu työntää mäntää ulos ja laajenee: kaasu tekee työn ympäristöön, joten W on negatiivinen.": "Työn etumerkki (kaaviokuva, ei mittakaavassa). Vasemmalla mäntää työnnetään sisään ja kaasu puristuu. Ympäristö tekee kaasuun työn, joten W on positiivinen. Oikealla kaasu työntää mäntää ulos ja laajenee. Kaasu tekee työn ympäristöön, joten W on negatiivinen.",
+ "puristus": "puristus",
+ "laajeneminen": "laajeneminen",
+ "ympäristö tekee työn": "ympäristö tekee työn",
+ "kaasu tekee työn": "kaasu tekee työn",
+ "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti pisteestä (0 m; 200 N) pisteeseen (0,20 m; 400 N). Ruudukon väli on 0,05 m ja 50 N.": "(s,F)-kuvaaja mittakaavassa: männän ilmaan kohdistama voima F newtoneina männän kulkeman matkan s funktiona puristuksen aikana. Voima kasvaa suoraviivaisesti. Se alkaa pisteestä (0 m; 200 N) ja päättyy pisteeseen (0,20 m; 400 N). Ruudukon väli on 0,05 m ja 50 N."
+}

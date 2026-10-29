@@ -22,6 +22,8 @@ REAL = snapshot()
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
+for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
+    if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T)}
 
 
@@ -35,7 +37,8 @@ code, out = run("check_i18n.py")
 expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
-expect("one language: the build is the committed site, without language links", code == 0 and fi_page == (SRC / "site" / f"{LESSON}.html").read_text() and 'class="lang"' not in fi_page, out[-400:])
+site_page = re.sub(r'<a class="lang" [^>]*>[^<]*</a>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
+expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else
 en = json.loads((T / "lang/fi.json").read_text())

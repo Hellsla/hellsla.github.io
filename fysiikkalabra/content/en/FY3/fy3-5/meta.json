@@ -1,0 +1,22 @@
+{
+  "id": "fy3-5",
+  "course": "FY3",
+  "title": "Internal energy, heat and conservation of energy",
+  "goals": [
+    "LOPS FY3: conservation of energy, internal energy, transfer of energy and quantity of heat",
+    "Clarification: conservation of energy includes the first law of thermodynamics; the other laws are not part of the key contents"
+  ],
+  "prerequisites": [
+    "fy3-2",
+    "fy3-3"
+  ],
+  "glossary": [
+    "internal energy",
+    "quantity of heat",
+    "heat",
+    "first law of thermodynamics",
+    "isolated system"
+  ],
+  "sim": true,
+  "image": false
+}

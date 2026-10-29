@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Explain in your own words the difference between a quantity and a unit. Give an example and write the value of the quantity.",
+    "a": "A quantity is a measurable property, for example the length $l$. A unit is an agreed measure with which the quantity is compared, for example the metre. The value of a quantity is the numerical value times the unit: $l = 3.2\\,\\text{m}$. The numerical value 3.2 alone tells you nothing."
+  },
+  {
+    "q": "Convert $4.2\\,\\text{km}$ to metres and $0.50\\,\\text{mm}$ to micrometres.",
+    "a": "$4.2\\,\\text{km} = 4.2\\cdot10^{3}\\,\\text{m} = 4200\\,\\text{m}$. $0.50\\,\\text{mm} = 0.50\\cdot10^{-3}\\,\\text{m} = 0.50\\cdot10^{3}\\,\\mu\\text{m} = 500\\,\\mu\\text{m}$."
+  }
+]

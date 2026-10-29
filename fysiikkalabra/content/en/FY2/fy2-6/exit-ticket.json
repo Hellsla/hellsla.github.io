@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Which group does wind power belong to, and why is it not enough alone to keep the electricity grid running?",
+    "a": "Wind power is weather-dependent: its power varies with the wind and cannot be increased as needed. In the grid, production must match consumption at every moment, so highly controllable production, such as hydropower, and steady base load are also needed."
+  },
+  {
+    "q": "The average power of a power plant is $2.0\\,\\text{MW}$. How much energy does it produce in a year ($8760\\,\\text{h}$)?",
+    "a": "Power in kilowatts: $P = 2.0 \\cdot 1000\\,\\text{kW} = 2000\\,\\text{kW}$. Energy: $E = P t = 2000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 17.52 \\cdot 10^{6}\\,\\text{kWh} \\approx 18\\,\\text{GWh}$."
+  },
+  {
+    "q": "The rated power of a wind turbine is $5\\,\\text{MW}$, but in a year it produces only a third of the energy it would produce running at rated power all the time. Why?",
+    "a": "The wind does not blow at a suitable speed all the time, so the turbine runs for a large part of the time at a power lower than its rated power. Its average power is about a third of its rated power."
+  }
+]

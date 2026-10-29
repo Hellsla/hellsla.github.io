@@ -1,0 +1,20 @@
+{
+  "id": "fy1-7",
+  "course": "FY1",
+  "title": "Density: m = ρV",
+  "goals": [
+    "Thematic study: density measurements",
+    "Skills: direct proportionality, e.g. m = ρV; solving for a quantity from a linear model"
+  ],
+  "prerequisites": [
+    "fy1-4"
+  ],
+  "glossary": [
+    "tiheys",
+    "massa",
+    "tilavuus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

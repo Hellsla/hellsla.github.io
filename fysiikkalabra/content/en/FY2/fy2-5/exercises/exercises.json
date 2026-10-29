@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy2-5-L1-01",
+      "level": 1,
+      "text": "At a petrol station, $2.0\\,\\text{kg}$ of petrol was bought for a chainsaw. The heat of combustion of petrol is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How much energy is released when the petrol burns? Give the answer in megajoules.",
+      "answer": 86,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-02",
+      "level": 1,
+      "text": "On a winter day, $2.0\\,\\text{kg}$ of natural gas with a heat of combustion of $48\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ is burnt in a gas boiler. How much energy is released from the gas? Give the answer in megajoules.",
+      "answer": 96,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-03",
+      "level": 1,
+      "text": "A coal-fired power plant burns $12\\,000\\,\\text{kg}$ of coal per hour, with a heat of combustion of $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How much energy is released from the coal in an hour? Give the answer in megajoules.",
+      "answer": 310000,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-04",
+      "level": 1,
+      "text": "$400\\,\\text{kg}$ of milled peat with a heat of combustion of $10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ is taken from the storage of a heating plant to be burnt. How much energy is released from the peat? Give the answer in megajoules.",
+      "answer": 4000,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-05",
+      "level": 1,
+      "text": "The energy content of a hiker's nut mix is $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (example value). A handful of nuts weighs $0.040\\,\\text{kg}$. How much energy do you get from the handful? Give the answer in megajoules.",
+      "answer": 0.96,
+      "unit": "MJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy2-5-L2-01",
+      "level": 2,
+      "text": "The nutritional label on a loaf of bread (example) says: energy $1200\\,\\text{kJ}$ per hundred grams. A slice of bread weighs $40\\,\\text{g}$. How much energy is in the slice? Give the answer in kilojoules.",
+      "answer": 480,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-02",
+      "level": 2,
+      "text": "A diesel generator on a building site must release $1.8\\,\\text{GJ}$ of energy from fuel. The heat of combustion of diesel is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How many kilograms of diesel must be burnt? Give the answer in kilograms.",
+      "answer": 42,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-03",
+      "level": 2,
+      "text": "In the pellet burner of a detached house, $40\\,\\text{kg}$ of wood pellets with a heat of combustion of $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ are burnt. The efficiency of the boiler is $85\\,\\%$. How much useful energy is obtained from the pellets to heat the house? Give the answer in megajoules.",
+      "answer": 580,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-04",
+      "level": 2,
+      "text": "A passenger car needs $48\\,\\text{MJ}$ of useful energy to drive $100\\,\\text{km}$. The efficiency of the engine is $25\\,\\%$. The heat of combustion of petrol is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How many kilograms of petrol are used on a $100\\,\\text{km}$ journey? Give the answer in kilograms.",
+      "answer": 4.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy2-5-L3-01",
+      "level": 3,
+      "text": "To heat a cottage, $120\\,\\text{MJ}$ of energy must be released from fuel. The energy can be obtained either from air-dried firewood ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) or from light heating oil ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Calculate the mass of each fuel needed and say how many kilograms more wood than oil are needed. Also explain why more wood is needed. Give the answer in kilograms.",
+      "answer": 5.2,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-02",
+      "level": 3,
+      "text": "A hiker carries food with an energy content of $18\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ (example value). There is $2.4\\,\\text{kg}$ of food, and the hiker needs $12\\,\\text{MJ}$ of energy from food per day. How many daily rations does the food provide? Give the answer as a decimal number and justify your calculation.",
+      "answer": 3.6,
+      "unit": "daily rations",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-03",
+      "level": 3,
+      "text": "A peat-fired power plant burns $36\\,\\text{t}$ of milled peat per hour, with a heat of combustion of $10\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. The efficiency of the plant in electricity production is $35\\,\\%$. What is the electric power of the power plant? Give the answer in megawatts. Remember: $1\\,\\text{W} = 1\\,\\text{J/s}$ and one hour is $3600\\,\\text{s}$.",
+      "answer": 35,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ]
+}

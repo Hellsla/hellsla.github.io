@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A quantity of heat of $300\\,\\text{J}$ is transferred to a gas, and the gas expands, doing $120\\,\\text{J}$ of work on the piston. By how much does the internal energy of the gas change?",
+    "a": "$Q = +300\\,\\text{J}$ and $W = -120\\,\\text{J}$, because the system does work on the surroundings. $\\Delta U = 300\\,\\text{J} - 120\\,\\text{J} = 180\\,\\text{J}$, so the internal energy increases by $180\\,\\text{J}$."
+  },
+  {
+    "q": "Hot coffee has just been sealed in a thermos flask whose inner wall is still cool. The flask and its contents form an isolated system: no energy is transferred in or out, and no work is done on it. What happens to the internal energy of this system, and what can still happen to the internal energy of the coffee?",
+    "a": "The internal energy of the flask and its contents stays constant, because no energy is transferred into or out of the system. Inside the system, energy is still transferred as heat from the coffee to the colder inner parts of the flask (the inner wall and the air) until the temperatures even out: the internal energy of the coffee decreases and that of the inner parts increases by the same amount."
+  }
+]

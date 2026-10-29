@@ -1,0 +1,9 @@
+{
+ "Kaavakuva kokeen asetelmasta: leluauto ajaa pöydän tasaisella radalla lähtöviivalta maaliviivalle. Radan vieressä on matka-asteikko metreinä, ja lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Käsikello mittaa aikaa t, joka on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä.": "Diagram of the experimental set-up: a toy car runs along a level track on a table from a start line to a finish line. Beside the track is a distance scale in metres, and the gap between the start line and the finish line is the independent variable, the distance s. A hand stopwatch measures the time t, which is the dependent variable. The car, the surface and the batteries are kept constant. The scale is accurate: 150 units in the picture correspond to one metre.",
+ "muutettava: ": "independent: ",
+ "mitattava: ": "dependent: ",
+ "vakiona: auto, alusta, paristot": "constant: car, surface, batteries",
+ "lähtö": "start",
+ "maali": "finish",
+ "Kuvaaja suhteellisesta epävarmuudesta ajan funktiona, kun ajan epävarmuus on 0,2 s: kun aika on 1 s, epävarmuus on 20 %, kun aika on 4 s, se on 5,0 %, ja kun aika on 10 s, se on 2,0 %. Vihreä alue kuvaa mittauksia, joiden epävarmuus on enintään 5,0 %: ne vaativat vähintään 4 s:n ajan. Kuvaaja on mittakaavassa.": "Graph of relative uncertainty as a function of time when the uncertainty of the time is 0.2 s: at a time of 1 s the uncertainty is 20 %, at 4 s it is 5.0 %, and at 10 s it is 2.0 %. The green region shows measurements whose uncertainty is at most 5.0 %: they require a time of at least 4 s. The graph is drawn to scale."
+}

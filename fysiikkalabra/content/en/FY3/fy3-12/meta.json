@@ -1,0 +1,23 @@
+{
+  "id": "fy3-12",
+  "course": "FY3",
+  "title": "Heat transfer, energy balance and climate change",
+  "goals": [
+    "LOPS FY3: recognises the importance of energy balance and heat transfer in climate change",
+    "Thematic study: building and energy at home, climate change",
+    "Broad competence: ethics and environmental competence, the physics of the greenhouse effect"
+  ],
+  "prerequisites": [
+    "fy3-5"
+  ],
+  "glossary": [
+    "conduction",
+    "convection",
+    "thermal radiation",
+    "energy balance",
+    "greenhouse effect",
+    "U-value"
+  ],
+  "sim": false,
+  "image": false
+}

@@ -1,7 +1,8 @@
 """Headless check of every built simulation. Usage: python scripts/test_sims.py [lesson-id]
 
 A sim passes when the page loads with no console errors, window.simState exists after 1.5 s, every assertion in
-tests/sims/<id>.json holds (|expr - expected| <= tol * max(1, |expected|); "setup" is JS run before the expression),
+tests/sims/<id>.json holds (|expr - expected| <= tol * max(1, |expected|); "setup" is JS run before the expression;
+the assertions are written against the Finnish page, so a page in another language gets the load and the sweep),
 and the generic sweep passes: at 360, 390 and 1280 px every combination of each slider's min/mid/max, each select
 option and each checkbox state is set, two frames are drawn, and then every number in simState must be finite and,
 when the sim exposes label boxes (simState.labels = [{s, x0, y0, x1, y1}, ...] in canvas coordinates), no label may
@@ -114,6 +115,9 @@ with sync_playwright() as pw:
         state = page.evaluate("window.simState")
         tests = ROOT / "tests/sims" / f"{lid}.json"
         checks = json.loads(tests.read_text()) if tests.exists() else []
+        translated = page_file.parent != OUT
+        if translated: checks = []   # the assertions name controls, options and readouts in Finnish words and build on each
+                                     # other's state: they run on the Finnish page; the same sim code is loaded and swept here
         bad = []
         if state is not None:
             for c in checks:
@@ -125,7 +129,7 @@ with sync_playwright() as pw:
         sweep_ok, sweep_note, sweep_bad = sweep(b, page_file) if state is not None else (True, "", [])
         ok = not errors and state is not None and not bad and sweep_ok
         fails += not ok
-        print("PASS" if ok else "FAIL", f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()}", "no simState (p5 not loaded?)" if state is None else f"{len(checks)} assertions, {sweep_note}")
+        print("PASS" if ok else "FAIL", f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()}", "no simState (p5 not loaded?)" if state is None else ("assertions on the Finnish page" if translated else f"{len(checks)} assertions") + f", {sweep_note}")
         for line in errors[:3] + bad + sweep_bad: print("     " + line)
     b.close()
 sys.exit(1 if fails else 0)

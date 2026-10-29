@@ -1,0 +1,22 @@
+{
+ "Kaavakuva: energialajit esimerkein. Mekaaninen energia on potentiaalienergiaa (kallion reunalla oleva pallo) ja liike-energiaa (vierivä pallo). Lisäksi kuvassa ovat lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen, ei mittakaavassa.": "Kaavakuva: energialajit ja esimerkki jokaisesta. Mekaaninen energia on potentiaalienergiaa ja liike-energiaa. Potentiaalienergian esimerkki on pallo kallion reunalla. Liike-energian esimerkki on vierivä pallo. Kuvassa ovat myös lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen. Se ei ole mittakaavassa.",
+ "mekaaninen energia": "mekaaninen energia",
+ "potentiaali-": "potentiaali-",
+ "energia": "energia",
+ "liike-": "liike-",
+ "lämpö-": "lämpö-",
+ "kemiallinen": "kemiallinen",
+ "säteily-": "säteily-",
+ "sähkö-": "sähkö-",
+ "ydin-": "ydin-",
+ "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi, ja lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpönuoli on leveämpi. Kuva on kaavamainen, nuolten leveys ei ole mittakaavassa.": "Kaavakuva: energian muuttuminen taskulampussa. Paristossa on kemiallista energiaa. Se muuttuu sähköenergiaksi. Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Suurin osa muuttuu lämpöenergiaksi, joten lämpöenergian nuoli on leveämpi. Kuva on kaavamainen. Nuolten leveys ei ole mittakaavassa.",
+ "paristo": "paristo",
+ "lamppu": "lamppu",
+ "valo": "valo",
+ "Kaavakuva: skeittari half-pipessä kolmella hetkellä ja kunkin hetken energiat pylväinä. Alussa skeittari on reunalla levossa, ja koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole, liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa, ja jokaisen pylvään kokonaiskorkeus vastaa 800 joulea eli kaikilla hetkillä energiaa on yhtä paljon.": "Kaavakuva: skeittari half-pipessä kolmella hetkellä. Jokaisen hetken energiat näkyvät pylväinä. Alussa skeittari on levossa reunalla. Silloin koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole. Liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa. Jokaisen pylvään kokonaiskorkeus vastaa 800 joulea. Kaikilla hetkillä energiaa on siis yhtä paljon.",
+ "alussa": "alussa",
+ "välillä": "välillä",
+ "lopussa": "lopussa",
+ "kokonaisenergia ": "kokonaisenergia ",
+ "lämpö": "lämpö"
+}
