@@ -9,6 +9,10 @@ in each position with what a fair shuffle gives (an item with k options adds 1/k
         more than 3 standard deviations more or less than a fair shuffle would (positions expected at least 5 times)
   WARN  6–19 items and one position holds more than 60 %; fewer items say nothing either way
   WARN  a lesson with 4 or more items has every correct answer in the same position
+  WARN  the correct option is the longest one (visible text, formulas counted by their content) in more than 40 % of a
+        course's 10 or more items, or in one item more than 20 % longer than every distractor: a student can pick the
+        longest, most careful-sounding option without the physics (teacher 2026-10-29); shorten it or give the
+        distractors the same detail, a content change that needs the reviews
   WARN  competing explanations ("Aino: …") where one speaker is right in more than 60 % of 6 or more items:
         the shuffle moves the option, not the name, so a student can still guess; rename speakers in the next
         content round (a content change, so it needs the reviews)
@@ -45,6 +49,42 @@ def speakers(folder):
             for v in x: walk(v)
     walk(data)
     return names
+
+
+def _visible(text):
+    return len(re.sub(r"\\[a-zA-Z]+|[{}$*_^\\]", "", text))
+
+
+def longest(folder):
+    """[(activity id, correct is strictly longest, correct is more than 20 % longer than every distractor)] of the
+    choice items in inquiry.json and exit-ticket.json."""
+    out = []
+    for name in ("inquiry.json", "exit-ticket.json"):
+        f = folder / name
+        if not f.exists(): continue
+        def walk(x, owner=""):
+            if isinstance(x, dict):
+                owner = x.get("id", owner)
+                ch = x.get("choices")
+                if isinstance(ch, list) and len(ch) > 1 and all(isinstance(c, dict) and "text" in c for c in ch):
+                    right = [_visible(c["text"]) for c in ch if c.get("correct")]
+                    wrong = [_visible(c["text"]) for c in ch if not c.get("correct")]
+                    if len(right) == 1 and wrong:
+                        out.append((owner, right[0] > max(wrong), right[0] > 1.2 * max(wrong)))
+                for v in x.values(): walk(v, owner)
+            elif isinstance(x, list):
+                for v in x: walk(v, owner)
+        walk(json.loads(f.read_text()))
+    return out
+
+
+def length_warns(code, by_lesson):
+    items = [(lid, it) for lid, its in by_lesson.items() for it in its]
+    warns = [f"{lid} {aid}: the correct option is over 20 % longer than every distractor" for lid, (aid, _, much) in items if much]
+    n, k = len(items), sum(1 for _, (_, longer, _) in items if longer)
+    if n >= 10 and k / n > 0.40:
+        warns.insert(0, f"{code}: the correct option is the longest in {k} of {n} items ({100 * k / n:.0f} %, limit 40 %)")
+    return warns
 
 
 def course_report(code, items_by_lesson, names):
@@ -86,7 +126,7 @@ def main(args):
     if target != "--all":
         code = courses.course_of(target) if target.lower() != target.upper() and "-" in target else target.upper()
         lessons = [f for f in lessons if courses.course_of(f.name) == code]
-    by_course = collections.defaultdict(dict); names = collections.defaultdict(list)
+    by_course = collections.defaultdict(dict); names = collections.defaultdict(list); lengths = collections.defaultdict(dict)
     for folder in lessons:
         page = out / f"{folder.name}.html"
         if not page.exists(): continue
@@ -94,13 +134,14 @@ def main(args):
         items = positions(page.read_text())
         if items: by_course[code][folder.name] = items
         names[code] += speakers(folder)
+        lengths[code][folder.name] = longest(folder)
     bad = 0
     if not by_course: print(f"no choice items on the pages in {out.name}/ for {target}")
     for code in sorted(by_course):
         fails, warns, summary = course_report(code, by_course[code], names[code])
         print(("FAIL " if fails else "ok   ") + summary)
         for f in fails: print("  FAIL " + f)
-        for w in warns: print("  WARN " + w)
+        for w in warns + length_warns(code, lengths[code]): print("  WARN " + w)
         bad += bool(fails)
     return 1 if bad else 0
 
