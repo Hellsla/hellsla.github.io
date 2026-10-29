@@ -116,6 +116,7 @@
     "no_error": "Laskussa ei ole virhettä|Päättelyssä ei ole virhettä",
     "justify": "Perustelu (valinnainen)",
     "pending": "Ennusteesi on tallessa. Saat palautteen, kun olet tehnyt mittaukset.",
+    "pending_theory": "Ennusteesi on tallessa. Saat palautteen, kun olet lukenut teoriaosan.",
     "commit": "Vastaa",
     "show_solution": "Näytä ratkaisu",
     "answer": "Vastaus",

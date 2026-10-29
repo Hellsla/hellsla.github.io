@@ -307,7 +307,7 @@ def choice_html(a, md, lid, aid):
     attrs = f' data-reveal="{esc(reveal["after"])}" data-reveal-min="{reveal.get("min", 1)}"' if reveal else ""
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
-    pending = f'<p class="pending" tabindex="-1" hidden>{T("inquiry.pending")}</p>' if reveal else ""
+    pending = f'<p class="pending" tabindex="-1" data-theory="{esc(T('inquiry.pending_theory'))}" hidden>{T("inquiry.pending")}</p>' if reveal else ""
     return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{fig_of(a)}{sol}'
             f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')

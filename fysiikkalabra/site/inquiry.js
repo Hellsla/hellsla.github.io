@@ -43,7 +43,7 @@
     const t = document.getElementById(fs.dataset.reveal);
     if (!t || t.dataset.type !== 'theory') return;
     const pending = fs.querySelector('.pending');
-    if (pending) pending.textContent = 'Ennusteesi on tallessa. Palaute näkyy, kun olet lukenut teoriaosan.';
+    if (pending) pending.textContent = pending.dataset.theory;   // the language's 'read the theory section' text
     if (!('IntersectionObserver' in window)) { measured[t.id] = Infinity; return; }
     if (seen.has(t.id)) return;
     seen.add(t.id);

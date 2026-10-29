@@ -113,8 +113,8 @@
       "prompt": "Four students explain what happens inside steel when it warms up and gets longer. Whose explanation fits the particle model?",
       "justify": true,
       "reveal": {
-        "after": "exp-1",
-        "min": 2
+        "after": "theory",
+        "min": 1
       },
       "choices": [
         {

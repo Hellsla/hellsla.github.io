@@ -113,8 +113,8 @@
       "prompt": "Neljä opiskelijaa selittää, mitä teräksen sisällä tapahtuu, kun se lämpenee ja pitenee. Kenen selitys sopii hiukkasmalliin?",
       "justify": true,
       "reveal": {
-        "after": "exp-1",
-        "min": 2
+        "after": "theory",
+        "min": 1
       },
       "choices": [
         {
