@@ -2,6 +2,148 @@
 
 > **Miksi** kaksi ryhmää saa samalle leluautolle eri nopeuden, vaikka kumpikin mittaa huolellisesti?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: lattialla on rata. Leluauto kulkee radalla mittanauhan vieressä. Radan kummallakin puolella seisoo ryhmä. Kummallakin ryhmällä on oma sekuntikello. Kellojen viisarit ovat pysähtyneet eri kohtiin." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <path d="M0,330 H1200 V600 H0 Z" fill="#f1dfb5" stroke-linejoin="round"/>
+  <line x1="-200" y1="600" x2="80" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="60" y1="600" x2="280" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="320" y1="600" x2="480" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="580" y1="600" x2="680" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="840" y1="600" x2="880" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1100" y1="600" x2="1080" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1360" y1="600" x2="1280" y2="330" stroke="#d9b26a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="330" x2="1200" y2="330" stroke="#e9c98a" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M120,470 L1080,470 L1040,420 L160,420 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="140" y="476" width="920" height="28" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <line x1="150" y1="476" x2="150" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="169.5" y1="476" x2="169.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="189" y1="476" x2="189" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="209" y1="476" x2="209" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="228.5" y1="476" x2="228.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="248" y1="476" x2="248" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="267.5" y1="476" x2="267.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="287" y1="476" x2="287" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="307" y1="476" x2="307" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="326.5" y1="476" x2="326.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="346" y1="476" x2="346" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="365.5" y1="476" x2="365.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="385" y1="476" x2="385" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="405" y1="476" x2="405" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="424.5" y1="476" x2="424.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="444" y1="476" x2="444" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="463.5" y1="476" x2="463.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="483" y1="476" x2="483" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="503" y1="476" x2="503" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="522.5" y1="476" x2="522.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="542" y1="476" x2="542" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="561.5" y1="476" x2="561.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="581" y1="476" x2="581" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="601" y1="476" x2="601" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="620.5" y1="476" x2="620.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="640" y1="476" x2="640" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="659.5" y1="476" x2="659.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="679" y1="476" x2="679" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="699" y1="476" x2="699" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="718.5" y1="476" x2="718.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="738" y1="476" x2="738" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="757.5" y1="476" x2="757.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="777" y1="476" x2="777" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="797" y1="476" x2="797" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="816.5" y1="476" x2="816.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="836" y1="476" x2="836" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="855.5" y1="476" x2="855.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="875" y1="476" x2="875" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="895" y1="476" x2="895" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="914.5" y1="476" x2="914.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="934" y1="476" x2="934" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="953.5" y1="476" x2="953.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="973" y1="476" x2="973" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="993" y1="476" x2="993" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1012.5" y1="476" x2="1012.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1032" y1="476" x2="1032" y2="492" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1051.5" y1="476" x2="1051.5" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M530,452 V428 Q536,420 560,418 L578,390 H630 L652,418 Q672,420 674,434 V452 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M586,398 H626 L640,416 H574 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="560" cy="454" r="15" fill="#1f2933"/>
+  <circle cx="560" cy="454" r="6" fill="#c4ccd4"/>
+  <circle cx="644" cy="454" r="15" fill="#1f2933"/>
+  <circle cx="644" cy="454" r="6" fill="#c4ccd4"/>
+  <line x1="480" y1="436" x2="516" y2="436" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="470" y1="416" x2="510" y2="416" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <path d="M74,400 L77.5,307 H102.5 L106,400 H93.5 L90,338 L86.5,400 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M69,313 Q66.5,245 90,241.5 Q113.5,245 111,313 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <path d="M71.5,253.5 L65,313" fill="none" stroke="#1971c2" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="65" cy="318" r="6.82" fill="#f1dfb5"/>
+  <path d="M108.5,253.5 L115,313" fill="none" stroke="#1971c2" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="115" cy="318" r="6.82" fill="#f1dfb5"/>
+  <rect x="84.5" y="229" width="11" height="15" fill="#f1dfb5"/>
+  <circle cx="90" cy="216.5" r="18.6" fill="#f1dfb5"/>
+  <path d="M71,216.5 Q71.5,194 90,195.5 Q110,195.5 109,214 Q93.5,206.5 71,216.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M184.5,404 L188,314 H212 L215.5,404 H203.5 L200,344 L196.5,404 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M179.5,320 Q177,254 200,250.5 Q223,254 220.5,320 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <path d="M182,262.5 L176,320" fill="none" stroke="#2b8a3e" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="176" cy="325" r="6.6" fill="#f1dfb5"/>
+  <path d="M218,262.5 L224,320" fill="none" stroke="#2b8a3e" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="224" cy="325" r="6.6" fill="#f1dfb5"/>
+  <rect x="194.5" y="238.5" width="11" height="14.5" fill="#f1dfb5"/>
+  <circle cx="200" cy="226.5" r="18" fill="#f1dfb5"/>
+  <path d="M181.5,226.5 Q182,205 200,206 Q219,206 218.5,224 Q203.5,217 181.5,226.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M984,400 L987.5,307 H1012.5 L1016,400 H1003.5 L1000,338 L996.5,400 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M979,313 Q976.5,245 1000,241.5 Q1023.5,245 1021,313 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M981.5,253.5 L975,313" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="975" cy="318" r="6.82" fill="#f1dfb5"/>
+  <path d="M1018.5,253.5 L1025,313" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1025" cy="318" r="6.82" fill="#f1dfb5"/>
+  <rect x="994.5" y="229" width="11" height="15" fill="#f1dfb5"/>
+  <circle cx="1000" cy="216.5" r="18.6" fill="#f1dfb5"/>
+  <path d="M981,216.5 Q981.5,194 1000,195.5 Q1020,195.5 1019,214 Q1003.5,206.5 981,216.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M1094.5,404 L1098,314 H1122 L1125.5,404 H1113.5 L1110,344 L1106.5,404 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M1089.5,320 Q1087,254 1110,250.5 Q1133,254 1130.5,320 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <path d="M1092,262.5 L1086,320" fill="none" stroke="#1971c2" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1086" cy="325" r="6.6" fill="#f1dfb5"/>
+  <path d="M1128,262.5 L1134,320" fill="none" stroke="#1971c2" stroke-width="13.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1134" cy="325" r="6.6" fill="#f1dfb5"/>
+  <rect x="1104.5" y="238.5" width="11" height="14.5" fill="#f1dfb5"/>
+  <circle cx="1110" cy="226.5" r="18" fill="#f1dfb5"/>
+  <path d="M1091.5,226.5 Q1092,205 1110,206 Q1129,206 1128.5,224 Q1113.5,217 1091.5,226.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="241" y="66" width="18" height="13.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="246" y="78.5" width="8" height="8" fill="#6c757d"/>
+  <circle cx="250" cy="140" r="56" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="250" cy="140" r="45.92" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="250" y1="102" x2="250" y2="96.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="269" y1="107" x2="272" y2="102" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="283" y1="121" x2="288" y2="118" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="288" y1="140" x2="293.5" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="283" y1="159" x2="288" y2="162" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="269" y1="173" x2="272" y2="178" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="250" y1="178" x2="250" y2="183.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="231" y1="173" x2="228" y2="178" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="217" y1="159" x2="212" y2="162" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="212" y1="140" x2="206.5" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="217" y1="121" x2="212" y2="118" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="231" y1="107" x2="228" y2="102" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="250" y1="140" x2="286.5" y2="144.5" stroke="#c92a2a" stroke-width="3.92" stroke-linecap="round"/>
+  <circle cx="250" cy="140" r="4.48" fill="#1f2933"/>
+  <rect x="941" y="66" width="18" height="13.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="946" y="78.5" width="8" height="8" fill="#6c757d"/>
+  <circle cx="950" cy="140" r="56" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="950" cy="140" r="45.92" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="950" y1="102" x2="950" y2="96.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="969" y1="107" x2="972" y2="102" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="983" y1="121" x2="988" y2="118" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="988" y1="140" x2="993.5" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="983" y1="159" x2="988" y2="162" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="969" y1="173" x2="972" y2="178" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="950" y1="178" x2="950" y2="183.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="931" y1="173" x2="928" y2="178" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="917" y1="159" x2="912" y2="162" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="912" y1="140" x2="906.5" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="917" y1="121" x2="912" y2="118" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="931" y1="107" x2="928" y2="102" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="950" y1="140" x2="982.5" y2="158" stroke="#c92a2a" stroke-width="3.92" stroke-linecap="round"/>
+  <circle cx="950" cy="140" r="4.48" fill="#1f2933"/>
+</svg>
+
 ## Ydinajatus
 Fysiikka on kokeellinen tiede. Väite pätee vasta, kun sitä on testattu mittauksilla. Kuka tahansa voi toistaa nämä mittaukset. **Tutkimus** on järjestelmällinen tapa vastata kysymykseen mittaamalla. Tutkimus alkaa kysymyksestä. Se päättyy johtopäätökseen, jonka mittaustulokset perustelevat. Hyvä tutkimus ei ole sellainen, jossa oletus osoittautuu oikeaksi. Hyvässä tutkimuksessa mittaus voisi näyttää oletuksen vääräksi.
 

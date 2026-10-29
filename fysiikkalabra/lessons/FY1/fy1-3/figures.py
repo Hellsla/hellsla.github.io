@@ -1,5 +1,31 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-3` writes them into lesson.md."""
 from figlib import (Fig, INK, MUTED, WHITE, RULE_LIGHT, HOT, COLD, GOOD, ALUMINIUM, METAL_EDGE, IRON, GLASS, GOOD_LIGHT, fi)
+from figlib import PAPER, SAND, SAND_DARK, n
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: one ball rolling down a ramp, ten stopwatches stopped at slightly different times."""
+    f = H.hero("fy13-hero", "Kuvitus: luokan pöydällä kalteva kouru, jota pitkin kuula vierii. Pöydän edessä kymmenen sekuntikelloa rivissä; "
+               "niiden viisarit ovat pysähtyneet hieman eri kohtiin, vaikka ne mittasivat samaa vierimistä.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    f.rect(0, 0, 1200, 250, H.grad(f, "fy13h-wall", WHITE, PAPER))
+    f.rect(330, 40, 540, 150, GOOD, INK, 3, 4)
+    f.rect(342, 52, 516, 126, "#2f5d3a")
+    # table and ramp
+    f.rect(120, 300, 960, 22, SAND, INK, 3, 4)
+    f.rect(150, 322, 24, 130, SAND_DARK, INK, 2); f.rect(1026, 322, 24, 130, SAND_DARK, INK, 2)
+    f.rect(250, 250, 18, 50, IRON, INK, 2)
+    f.path("M240,232 L960,288 L960,300 L240,246 Z", ALUMINIUM, INK, 3)
+    f.path("M960,300 h40 v-12 h-40", SAND_DARK, INK, 2)
+    x, y = 640, 232 + (288 - 232) * (640 - 240) / 720 - 18
+    for k, op in ((1, 0.18), (2, 0.1)):
+        f.add(f'<circle cx="{n(x - 44 * k)}" cy="{n(y - 44 * k * 56 / 720)}" r="16" fill="{IRON}" fill-opacity="{op}"/>')
+    f.circle(x, y, 16, IRON, INK, 3); f.circle(x - 5, y - 5, 5, WHITE)
+    # ten stopwatches, the hands a little apart
+    for k in range(10):
+        H.stopwatch(f, 150 + k * 100, 524, 40, 0.30 + 0.12 * (H.rnd(k, 4) - 0.5))
+    return f.svg()
 
 
 def _dots(f, X, ya, values, binw, color=COLD, step=16, r=7):
@@ -134,7 +160,7 @@ def pendulum_dots():
     return f.svg()
 
 
-FIGURES = {"error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot,
+FIGURES = {"hero": hero, "error-types": error_types, "range-half": range_half, "zero-scale": zero_scale, "example-plot": example_plot,
            "pendulum-dots": pendulum_dots}
 
 REUSE = {

@@ -3,6 +3,33 @@
 Energy-flow (Sankey) diagrams drawn to scale: the thickness of an arrow is proportional to the energy or power it carries.
 Colours: warm grey = energy taken in, green = useful energy, orange = losses (heat); the same as in the simulation."""
 from figlib import Fig, INK, MUTED, RULE, RULE_LIGHT, WHITE, GLASS, HEAT, HEAT_LIGHT, GOOD, GOOD_LIGHT, ALUMINIUM
+from figlib import HOT, METAL_EDGE
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: an incandescent bulb and an LED bulb shining equally bright, heat rising only from the first."""
+    f = H.hero("fy24-hero", "Kuvitus: kaksi kattolamppua rinnakkain pimeässä huoneessa. Vasemmalla hehkulamppu, jonka hehkulanka hohtaa ja "
+               "jonka yläpuolella väreilee lämpöä; oikealla ledilamppu. Molempien valokeilat ovat yhtä kirkkaat.")
+    f.rect(0, 0, 1200, 600, "#2b3440")
+    f.rect(0, 0, 1200, 40, INK)
+    for cx, led in ((370, False), (830, True)):
+        f.add(f'<path d="M{cx - 60},300 L{cx - 230},600 H{cx + 230} L{cx + 60},300 Z" fill="{HEAT_LIGHT}" fill-opacity="0.28"/>')
+        f.add(f'<circle cx="{cx}" cy="260" r="120" fill="{HEAT_LIGHT}" fill-opacity="0.25"/>')
+        f.line(cx, 40, cx, 160, INK, 4)
+        f.rect(cx - 26, 160, 52, 50, ALUMINIUM, INK, 3, 4)
+        for k in range(3): f.line(cx - 26, 172 + 12 * k, cx + 26, 176 + 12 * k, METAL_EDGE, 2)
+        if led:
+            f.path(f"M{cx - 30},210 L{cx - 70},260 Q{cx - 78},340 {cx},346 Q{cx + 78},340 {cx + 70},260 L{cx + 30},210 Z", WHITE, INK, 3)
+            f.path(f"M{cx - 54},270 Q{cx},250 {cx + 54},270 L{cx + 50},310 Q{cx},326 {cx - 50},310 Z", "#fff4d6")
+            for k in range(5): f.circle(cx - 36 + 18 * k, 292, 5, HEAT_LIGHT)
+        else:
+            f.path(f"M{cx - 30},210 L{cx - 40},236 Q{cx - 92},270 {cx - 80},318 Q{cx - 60},356 {cx},356 Q{cx + 60},356 {cx + 80},318 Q{cx + 92},270 {cx + 40},236 L{cx + 30},210 Z", "#fff4d6", INK, 3)
+            f.path(f"M{cx - 10},212 L{cx - 22},290 M{cx + 10},212 L{cx + 22},290", stroke=METAL_EDGE, w=2)
+            f.path(f"M{cx - 22},290 q6,-12 11,0 t11,0 t11,0 t11,0", stroke=HEAT, w=4)
+            f.add(f'<circle cx="{cx}" cy="292" r="30" fill="{HEAT}" fill-opacity="0.25"/>')
+            H.shimmer(f, [cx - 140, cx - 104, cx + 104, cx + 140], 330, 130, HOT)
+    return f.svg()
 
 
 def grad(f, gid, x0, x1, c0, c1):
@@ -116,7 +143,7 @@ def sankey_grid():
     return f.svg()
 
 
-FIGURES = {"lamp": sankey_lamp, "pair": sankey_pair, "grid": sankey_grid}
+FIGURES = {"hero": hero, "lamp": sankey_lamp, "pair": sankey_pair, "grid": sankey_grid}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "lamp": "reveals: the useful and wasted energy and the efficiency 5 %, printed",

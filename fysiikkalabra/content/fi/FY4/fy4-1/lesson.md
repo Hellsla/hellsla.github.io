@@ -2,6 +2,52 @@
 
 > **Miksi** pyöräilijän kuljettu matka voi olla neljä kilometriä, vaikka hänen siirtymänsä on nolla?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ylhäältä vinosti nähty järvi, jonka ympäri kiertää polku. Lähtöpaikalla on lippu, ja polulla ajaa pyöräilijä, joka on kiertämässä järven ympäri takaisin lähtöpaikkaan. Nuolet näyttävät kiertosuunnan." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#b2f2bb"/>
+  <circle cx="89.5" cy="558.5" r="17.3452" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="140" cy="487" r="23.7322" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1076" cy="490" r="14.176" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1049" cy="500" r="16.3263" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="273.5" cy="515.5" r="15.2448" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1094" cy="263.5" r="19.0694" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1059.5" cy="426.5" r="21.3652" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="170" cy="213" r="19.9795" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="151" cy="210.5" r="23.4346" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1008" cy="152.5" r="22.1629" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="220.5" cy="483" r="23.3067" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="76" cy="274" r="20.65" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="100" cy="380.5" r="18.7499" fill="#2b8a3e" stroke="#1f2933" stroke-width="2"/>
+  <ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="#d9b26a" stroke-width="40"/>
+  <ellipse cx="600" cy="340" rx="430" ry="200" fill="none" stroke="#e9c98a" stroke-width="2" stroke-dasharray="2 10"/>
+  <ellipse cx="600" cy="340" rx="370" ry="156" fill="#a9d1f0" stroke="#2f74b5" stroke-width="3"/>
+  <path d="M430,300 q16,-8 32,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M500,318 q16,-8 32,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M570,300 q16,-8 32,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M640,318 q16,-8 32,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M710,300 q16,-8 32,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="865" y1="498.5" x2="814" y2="513.5" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M800,518 L813,506.5 L817,520.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="345" y1="502" x2="296" y2="482" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M282,476 L299.5,475.5 L294,489 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="189.5" y1="275" x2="228" y2="238.5" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M239,228 L232.5,244.5 L222.5,234 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="646.5" y1="140.5" x2="699" y2="145" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M714,146.5 L697.5,152.5 L699,138 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="976.5" y1="239.5" x2="1011.5" y2="279.5" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M1021,291 L1005,283.5 L1016,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="600" y1="540" x2="600" y2="450" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M600,450 l50,14 l-50,14 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <ellipse cx="600" cy="540" rx="16" ry="6" fill="#6c757d"/>
+  <circle cx="944" cy="452" r="22" fill="none" stroke="#1f2933" stroke-width="4"/>
+  <circle cx="1016" cy="452" r="22" fill="none" stroke="#1f2933" stroke-width="4"/>
+  <path d="M944,452 L972,452 L998,416 L962,416 Z M972,452 L958,406 M1016,452 L1002,402" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linejoin="round"/>
+  <path d="M958,402 L978,352" fill="none" stroke="#1971c2" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M976,360 L1004,398" fill="none" stroke="#1971c2" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M958,402 L976,428 L972,452" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="986" cy="336" r="13" fill="#f1dfb5"/>
+  <path d="M972,332 Q984,316 1000,332 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Liikkeen kuvaaminen alkaa sopimuksesta. Valitaan suora, jota pitkin kappale liikkuu, ja sille origo ja positiivinen suunta: tämä on $x$-akseli. **Paikka** $x$ kertoo, missä kappale on origoon nähden. Etumerkki kertoo puolen: paikka $x = -3\,\text{m}$ on kolme metriä origosta negatiiviseen suuntaan. Aika $t$ mitataan kellolla, ja liike kuvataan kertomalla paikka jokaisella hetkellä.
 

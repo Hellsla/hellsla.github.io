@@ -1,9 +1,45 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-7` writes them into lesson.md."""
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, WATER, WATER_LIGHT, GLASS, SAND, SAND_LIGHT, GRAIN,
                     ALUMINIUM, METAL_EDGE, IRON, HEAT, n)
+import math
+from figlib import HOT, PAPER
+import herolib as H
 
 # densities in g/cm3 (the lesson's table) and the cube of 10 cm3 (edge about 2,15 cm)
 RHO = {"mänty": 0.50, "alumiini": 2.70, "rauta": 7.87}
+
+
+def hero():
+    """The chapter's opening illustration: two cubes of the same size tip a balance, a measuring cylinder waits beside them."""
+    f = H.hero("fy17-hero", "Kuvitus: vaaka, jonka kupeissa on kaksi samankokoista metallikuutiota, vaalea alumiininen ja tumma rautainen. "
+               "Vaaka kallistuu rautakuution puolelle. Vieressä mittalasi, jossa on vettä.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    f.rect(0, 470, 1200, 130, SAND, None); f.line(0, 470, 1200, 470, GRAIN, 3)
+    # the balance: beam tilted towards the iron cube (right)
+    cx, top = 560, 200; t = math.radians(10)
+    f.path(f"M{cx - 90},470 L{cx - 60},440 H{cx + 60} L{cx + 90},470 Z", IRON, INK, 3)
+    f.rect(cx - 12, top, 24, 240, ALUMINIUM, INK, 3, 4)
+    L = 260
+    lx, ly = cx - L * math.cos(t), top - L * math.sin(t); rx, ry = cx + L * math.cos(t), top + L * math.sin(t)
+    f.line(lx, ly, rx, ry, INK, 14, cap="round"); f.line(lx, ly, rx, ry, ALUMINIUM, 8, cap="round")
+    f.circle(cx, top, 12, IRON, INK, 3)
+    f.path(f"M{cx - 10},{top - 8} L{cx},{top - 70} L{cx + 10},{top - 8} Z", HOT, INK, 2)
+    for x, y, cube, edge in ((lx, ly, ALUMINIUM, METAL_EDGE), (rx, ry, IRON, INK)):
+        pan = y + 130
+        f.line(x, y, x - 70, pan, MUTED, 2); f.line(x, y, x + 70, pan, MUTED, 2)
+        f.path(f"M{n(x - 90)},{n(pan)} Q{n(x)},{n(pan + 34)} {n(x + 90)},{n(pan)} Z", ALUMINIUM, INK, 3)
+        s = 84; bx, by = x - s / 2, pan - s
+        f.rect(bx, by, s, s, cube, INK, 3)
+        f.path(f"M{n(bx)},{n(by)} l22,-18 h{s} l-22,18 Z", WHITE if cube == ALUMINIUM else METAL_EDGE, INK, 3)
+        f.path(f"M{n(bx + s)},{n(by)} l22,-18 v{s} l-22,18 Z", METAL_EDGE if cube == ALUMINIUM else "#4b535b", INK, 3)
+    # measuring cylinder
+    x0, w = 960, 96
+    f.rect(x0 - 20, 452, w + 40, 18, GLASS, INK, 3, 4)
+    f.rect(x0, 260, w, 192, WATER_LIGHT, None)
+    f.add(f'<rect x="{x0}" y="160" width="{w}" height="292" fill="{GLASS}" fill-opacity="0.35" stroke="{INK}" stroke-width="3"/>')
+    f.path(f"M{x0},260 Q{x0 + w / 2},270 {x0 + w},260", stroke=WATER, w=3)
+    for k in range(13): f.line(x0, 440 - k * 22, x0 + (28 if k % 2 == 0 else 16), 440 - k * 22, INK, 2)
+    return f.svg()
 
 
 def cubes():
@@ -125,7 +161,7 @@ def cylinders_read():
     return f.svg()
 
 
-FIGURES = {"cubes": cubes, "graph": m_v_graph, "displacement": displacement, "cylinders-read": cylinders_read}
+FIGURES = {"hero": hero, "cubes": cubes, "graph": m_v_graph, "displacement": displacement, "cylinders-read": cylinders_read}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "cubes": "reveals: the masses 5,0 g, 27 g and 79 g of 10 cm³ cubes",

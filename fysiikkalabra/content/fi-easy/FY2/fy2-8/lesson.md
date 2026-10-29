@@ -2,6 +2,110 @@
 
 > **Miksi** sähkön tuotantotavan valinta ratkaisee, kuinka paljon hiilidioksidia ilmakehään päätyy, vaikka kodin pistorasiasta tulee aina samanlaista sähköä?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keskellä on talo. Sähkö tulee taloon voimalinjaa pitkin. Vasemmalla on hiilivoimala. Sen savupiipusta nousee tummaa savua harmaalle taivaalle. Oikealla on tuulivoimaloita kirkkaan taivaan alla. Talon seinässä on pistorasia." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy28h-grey" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy28h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy28h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
+  <rect x="0" y="0" width="600" height="600" fill="url(#fy28h-grey)"/>
+  <rect x="600" y="0" width="600" height="600" fill="url(#fy28h-sky)"/>
+  <circle cx="760" cy="100" r="70.5" fill="#ffffff" fill-opacity="0.5"/>
+  <path d="M811,121 L834,120 L814.5,107.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M793.5,143.5 L814,154 L803.5,133.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M767.5,154.5 L780,174 L781,151 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M739,151 L740,174 L752.5,154.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M716.5,133.5 L706,154 L726.5,143.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M705.5,107.5 L686,120 L709,121 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M709,79 L686,80 L705.5,92.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M726.5,56.5 L706,46 L716.5,66.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M752.5,45.5 L740,26 L739,49 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M781,49 L780,26 L767.5,45.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M803.5,66.5 L814,46 L793.5,56.5 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <path d="M814.5,92.5 L834,80 L811,79 Z" fill="#ffc078" stroke-linejoin="round"/>
+  <circle cx="760" cy="100" r="44" fill="url(#fy28h-sun)"/>
+  <path d="M0,380 L19,342 L37.5,380 L50.5,355.5 L63.5,380 L78,353 L92,380 L107.5,351 L122.5,380 L134,359.5 L145.5,380 L161,349 L177,380 L190.5,355 L203.5,380 L219,350.5 L234.5,380 L248.5,353 L262.5,380 L276,354.5 L289.5,380 L307,345 L324.5,380 L337.5,355.5 L350.5,380 L368.5,344 L386.5,380 L404.5,343.5 L422.5,380 L442,340.5 L461,380 L475,353.5 L489,380 L502.5,354.5 L516,380 L527.5,359 L539.5,380 L552,357 L564.5,380 L581.5,345.5 L598.5,380 L610,360 L621.5,380 L632,362 L642.5,380 L659,347 L675.5,380 L692.5,346 L710,380 L724.5,351.5 L739.5,380 L755.5,348.5 L771.5,380 L786,352.5 L800,380 L816,349 L832,380 L843.5,359.5 L855,380 L874,341.5 L892.5,380 L907.5,351.5 L922,380 L936,354 L949.5,380 L967,345.5 L984.5,380 L998,353.5 L1012,380 L1031.5,341 L1050.5,380 L1066.5,348.5 L1082.5,380 L1099.5,346 L1116.5,380 L1130.5,354.5 L1144,380 L1158.5,351.5 L1173.5,380 L1191.5,343.5 L1209.5,380 V410 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="0" y="390" width="1200" height="210" fill="#b2f2bb"/>
+  <rect x="60" y="300" width="200" height="110" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="80" y="330" width="26" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="126" y="330" width="26" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="172" y="330" width="26" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="218" y="330" width="26" height="30" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="200" y="170" width="34" height="130" fill="#f2a69c" stroke="#1f2933" stroke-width="3"/>
+  <rect x="200" y="190" width="34" height="10" fill="#ffffff"/>
+  <rect x="200" y="236" width="34" height="10" fill="#ffffff"/>
+  <circle cx="222" cy="150" r="22" fill="#1f2933" fill-opacity="0.55"/>
+  <circle cx="248" cy="116" r="30" fill="#1f2933" fill-opacity="0.55"/>
+  <circle cx="284" cy="80" r="38" fill="#1f2933" fill-opacity="0.55"/>
+  <circle cx="330" cy="50" r="46" fill="#1f2933" fill-opacity="0.55"/>
+  <circle cx="330" cy="110" r="20" fill="#1f2933" fill-opacity="0.4"/>
+  <circle cx="353.5" cy="79.5" r="27" fill="#1f2933" fill-opacity="0.4"/>
+  <circle cx="386" cy="47" r="34" fill="#1f2933" fill-opacity="0.4"/>
+  <circle cx="427" cy="20" r="41.5" fill="#1f2933" fill-opacity="0.4"/>
+  <circle cx="430" cy="80" r="15.5" fill="#1f2933" fill-opacity="0.25"/>
+  <circle cx="448" cy="56" r="21" fill="#1f2933" fill-opacity="0.25"/>
+  <circle cx="473.5" cy="31" r="26.5" fill="#1f2933" fill-opacity="0.25"/>
+  <circle cx="505.5" cy="10" r="32" fill="#1f2933" fill-opacity="0.25"/>
+  <path d="M30,420 h70 l20,-30 h50 l20,30 h60 v20 h-220 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M883,410 L887,200 H893 L897,410 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M895,201.5 Q913,166 928.5,75.5 L885,198.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M886.5,203.5 Q907.5,237 978.5,295.5 L893.5,196.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M889,195 Q849.5,197 763,229 L891,205 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="890" cy="200" r="7" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M983,410 L987,230 H993 L997,410 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M991,235 Q1025,236 1100,211 L989,225 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M985.5,228.5 Q967,257.5 951.5,334.5 L994.5,231.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M994,227 Q978,196.5 918.5,144 L986,233 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="990" cy="230" r="7" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M1083,410 L1087,190 H1093 L1097,410 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1086,193 Q1105,230 1171.5,299.5 L1094,187 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1089.5,185 Q1048,183 954.5,206 L1090.5,195 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M1094.5,192 Q1117,157 1144,64.5 L1085.5,188 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="1090" cy="190" r="7" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="520" y="350" width="160" height="120" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
+  <path d="M506,350 L600,275.5 L694,350 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="542.5" y="383.5" width="41.5" height="36" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <rect x="613" y="398" width="38.5" height="72" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="546" y="428" width="36" height="36" rx="5" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="564" cy="446" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="559" cy="446" r="2.5" fill="#1f2933"/>
+  <circle cx="569" cy="446" r="2.5" fill="#1f2933"/>
+  <path d="M336,500 L356,380 H364 L384,500" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="336" y1="500" x2="380" y2="476" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="384" y1="500" x2="340" y2="476" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="340" y1="476" x2="376" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="380" y1="476" x2="344" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="344" y1="452" x2="372" y2="428" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="376" y1="452" x2="348" y2="428" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="348" y1="428" x2="368" y2="404" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="372" y1="428" x2="352" y2="404" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="323.5" y1="404" x2="396.5" y2="404" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="323.5" y1="404" x2="323.5" y2="414" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="396.5" y1="404" x2="396.5" y2="414" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="336" y1="380" x2="384" y2="380" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="336" y1="380" x2="336" y2="390" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="384" y1="380" x2="384" y2="390" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M796,500 L816,380 H824 L844,500" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
+  <line x1="796" y1="500" x2="840" y2="476" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="844" y1="500" x2="800" y2="476" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="800" y1="476" x2="836" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="840" y1="476" x2="804" y2="452" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="804" y1="452" x2="832" y2="428" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="836" y1="452" x2="808" y2="428" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="808" y1="428" x2="828" y2="404" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="832" y1="428" x2="812" y2="404" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
+  <line x1="783.5" y1="404" x2="856.5" y2="404" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="783.5" y1="404" x2="783.5" y2="414" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="856.5" y1="404" x2="856.5" y2="414" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="796" y1="380" x2="844" y2="380" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
+  <line x1="796" y1="380" x2="796" y2="390" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <line x1="844" y1="380" x2="844" y2="390" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
+  <path d="M250,330 Q293,370 336,390" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M336,390 Q433,395 530,380" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M250,330 Q317,370 384,390" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M384,390 Q457,395 530,380" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M900,330 Q848,370 796,390" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M796,390 Q733,395 670,380" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M900,330 Q872,370 844,390" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M844,390 Q757,395 670,380" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Aurinko lämmittää maanpintaa. Se lähettää maanpinnalle energiaa säteilynä: näkyvänä valona ja lähi-infrapunasäteilynä. Ilmakehä päästää suurimman osan tästä säteilystä läpi. Lämmin maanpinta lähettää energiaa takaisin avaruuteen lämpösäteilynä. Ilmakehän **kasvihuonekaasut** imevät tämän lämpösäteilyn. Tärkeimmät kasvihuonekaasut ovat vesihöyry, hiilidioksidi $\text{CO}_2$ ja metaani $\text{CH}_4$. Ne säteilevät energian uudelleen joka suuntaan. Siksi osa energiasta palaa takaisin maanpinnalle.
 

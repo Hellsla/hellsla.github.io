@@ -2,6 +2,40 @@
 
 > **Miksi** hehkulamppu kuumenee niin, että siihen voi polttaa sormensa, vaikka sen tehtävä on antaa valoa? Miksi ledilamppu valaisee yhtä kirkkaasti paljon pienemmällä sähkönkulutuksella?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pimeässä huoneessa on kaksi kattolamppua vierekkäin. Vasemmalla on hehkulamppu. Sen hehkulanka hohtaa, ja lampun ympärillä väreilee lämpöä. Oikealla on ledilamppu. Kummankin lampun valo on yhtä kirkas." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#2b3440"/>
+  <rect x="0" y="0" width="1200" height="40" fill="#1f2933"/>
+  <path d="M310,300 L140,600 H600 L430,300 Z" fill="#ffc078" fill-opacity="0.28"/>
+  <circle cx="370" cy="260" r="120" fill="#ffc078" fill-opacity="0.25"/>
+  <line x1="370" y1="40" x2="370" y2="160" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="344" y="160" width="52" height="50" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <line x1="344" y1="172" x2="396" y2="176" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="344" y1="184" x2="396" y2="188" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="344" y1="196" x2="396" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M340,210 L330,236 Q278,270 290,318 Q310,356 370,356 Q430,356 450,318 Q462,270 410,236 L400,210 Z" fill="#fff4d6" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M360,212 L348,290 M380,212 L392,290" fill="none" stroke="#8a96a3" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M348,290 q6,-12 11,0 t11,0 t11,0 t11,0" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="370" cy="292" r="30" fill="#e8590c" fill-opacity="0.25"/>
+  <path d="M230,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M266,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M474,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M510,330 q-12,-21.5 0,-43.5 t0,-43.5 t0,-43.5" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M770,300 L600,600 H1060 L890,300 Z" fill="#ffc078" fill-opacity="0.28"/>
+  <circle cx="830" cy="260" r="120" fill="#ffc078" fill-opacity="0.25"/>
+  <line x1="830" y1="40" x2="830" y2="160" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="804" y="160" width="52" height="50" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <line x1="804" y1="172" x2="856" y2="176" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="804" y1="184" x2="856" y2="188" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="804" y1="196" x2="856" y2="200" stroke="#8a96a3" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M800,210 L760,260 Q752,340 830,346 Q908,340 900,260 L860,210 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M776,270 Q830,250 884,270 L880,310 Q830,326 780,310 Z" fill="#fff4d6" stroke-linejoin="round"/>
+  <circle cx="794" cy="292" r="5" fill="#ffc078"/>
+  <circle cx="812" cy="292" r="5" fill="#ffc078"/>
+  <circle cx="830" cy="292" r="5" fill="#ffc078"/>
+  <circle cx="848" cy="292" r="5" fill="#ffc078"/>
+  <circle cx="866" cy="292" r="5" fill="#ffc078"/>
+</svg>
+
 ## Ydinajatus
 Energia ei katoa. Kaikki laitteeseen otettu energia ei kuitenkaan muutu siihen muotoon, jota laitteelta halutaan. Hehkulampun tehtävä on valaista, joten sen hyötyenergia on valo. Suurin osa lampun ottamasta sähköenergiasta muuttuu lämmöksi. Lämpö lämmittää lamppua ja ympäristöä, mutta se ei valaise. Tätä osaa sanotaan häviöiksi. Häviöt eivät ole kadonnutta energiaa. Ne ovat energiaa, joka on muuttunut hyödyttömään muotoon, yleensä lämmöksi.
 

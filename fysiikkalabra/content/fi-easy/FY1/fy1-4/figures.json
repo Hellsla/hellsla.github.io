@@ -1,4 +1,5 @@
 {
+ "Kuvitus: ruutupaperi pöydällä. Paperilla on mittauspisteitä, jotka eivät osu täsmälleen samalle suoralle, ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä.": "Kuvitus: pöydällä on ruutupaperi. Paperilla on mittauspisteitä. Pisteet eivät ole tarkalleen samalla suoralla. Pisteiden poikki on piirretty viivaimella yksi suora. Vieressä on lyijykynä.",
  "Kuvaaja mittakaavassa: kärryn kulkema matka s ajan t funktiona. Kuusi mittauspistettä (t = 1…6 s) on hajallaan suoran s = 0,5 m/s · t ympärillä. Pisteitä on suoran molemmin puolin: kolme yläpuolella ja kolme alapuolella, ja pystysuorat katkoviivat näyttävät kunkin pisteen poikkeaman suorasta. Suora ei kulje jokaisen pisteen kautta.": "Kuvaaja mittakaavassa: kärryn kulkema matka s ajan t funktiona. Kuusi mittauspistettä (t = 1…6 s) on hajallaan suoran s = 0,5 m/s · t ympärillä. Pisteitä on suoran molemmin puolin: kolme yläpuolella ja kolme alapuolella. Pystysuorat katkoviivat näyttävät kunkin pisteen poikkeaman suorasta. Suora ei kulje jokaisen pisteen kautta.",
  "mittauspisteet": "mittauspisteet",
  "sovitettu suora": "sovitettu suora",

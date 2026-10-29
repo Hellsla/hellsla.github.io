@@ -4,9 +4,43 @@ as it is drawn. The situation is a separate pictorial situation picture (tilanne
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, COPPER, ICE, ICE_EDGE, COLD_LIGHT, GLASS, fi
 from fbd import FBD, ground, FORCE
+from figlib import GOOD, HEAT, HOT, HOT_LIGHT, IRON
+import herolib as H
 
 g = 9.81
 BOX, BOX_EDGE = SAND_LIGHT, "#a97a35"
+
+
+def hero():
+    """The chapter's opening illustration: a sled pulled by a rope slanting up leaves a shallower track than an identical sled standing still."""
+    f = H.hero("fy45-hero", "Kuvitus: talvinen piha. Vasemmalla pulkka seisoo paikallaan ja on painunut syvälle lumeen. Oikealla lapsi vetää "
+               "samanlaista pulkkaa narusta vinosti ylöspäin, ja sen jättämä jälki lumessa on matalampi.")
+    H.sky(f, "fy45h", 380, ICE, WHITE)
+    H.forest(f, 300, 70, 36, GOOD, seed=3)
+    for k in range(30): f.circle(H.rnd(k, 1) * 1200, H.rnd(k, 2) * 280, 3, WHITE)
+    f.rect(0, 360, 1200, 240, WHITE)
+    f.path("M0,360 Q300,348 600,362 T1200,356 V380 H0 Z", COLD_LIGHT)
+    def sled(x, y, sink):
+        f.add(f'<ellipse cx="{x}" cy="{y + 2}" rx="104" ry="{8 + sink}" fill="{COLD_LIGHT}"/>')
+        for rx_ in (x - 70, x + 70): f.rect(rx_ - 6, y - 4, 12, 18, IRON, INK, 2)
+        f.path(f"M{x - 104},{y + 14} H{x + 100} Q{x + 120},{y + 14} {x + 118},{y}", stroke=IRON, w=5, extra='stroke-linecap="round"')
+        f.path(f"M{x - 96},{y - 34} Q{x - 100},{y} {x - 70},{y} H{x + 84} Q{x + 112},{y} {x + 106},{y - 30} Z", HOT, INK, 3)
+        f.path(f"M{x - 86},{y - 28} H{x + 96}", stroke=HOT_LIGHT, w=4)
+        top = y + 20 - sink
+        f.add(f'<path d="M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6} V{y + 40} H{x - 150} Z" fill="{WHITE}"/>')
+        f.path(f"M{x - 150},{top + 6} Q{x - 128},{top - 10} {x - 106},{top} H{x + 124} Q{x + 146},{top - 10} {x + 168},{top + 6}", stroke=COLD_LIGHT, w=3)
+    # the sled standing still: deep in the snow
+    sled(260, 470, 18)
+    # the pulled sled with its shallower track behind it
+    x, y = 700, 470
+    f.path(f"M500,{y + 16} H{x - 100}", stroke=COLD_LIGHT, w=6, extra='stroke-linecap="round"')
+    sled(x, y, 4)
+    hx, hy = 960, 350
+    f.line(x + 100, y - 28, hx, hy, COPPER, 4, cap="round")
+    H.person(f, 1000, 520, HEAT, INK, 0.62)
+    f.path(f"M{1000 - 18},{520 - 147} L{hx},{hy}", stroke=HEAT, w=14, extra='stroke-linecap="round"')
+    f.circle(hx, hy, 7, SAND_LIGHT)
+    return f.svg()
 
 
 def box(f, cx, cy, w, h):
@@ -301,7 +335,7 @@ def ruutu():
     return f.svg()
 
 
-FIGURES = {"tilanne": tilanne, "suunnat": suunnat, "komponentit": komponentit, "esimerkki": esimerkki,
+FIGURES = {"hero": hero, "tilanne": tilanne, "suunnat": suunnat, "komponentit": komponentit, "esimerkki": esimerkki,
            "virhe": virhe_liukuva, "hissi-a": hissi_a, "hissi-b": hissi_b, "hissi-c": hissi_c, "hissi-d": hissi_d,
            "malli-tyonto": malli_tyonto, "malli-pulkka": malli_pulkka, "malli-hissi": malli_hissi_jarru, "ruutu": ruutu}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative

@@ -1,10 +1,43 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-4` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, COLD, HEAT, GOOD, RULE, fi
+import math
+from figlib import COLD_LIGHT, GLASS, HEAT_LIGHT, HOT_LIGHT, METAL_EDGE, SAND_DARK, SAND_LIGHT, n
+import herolib as H
 
 # the cart data of the lesson's first simulation case (t in s, s in m) and the line fitted to it
 CART = [(1, 0.6), (2, 0.8), (3, 1.6), (4, 2.1), (5, 2.4), (6, 2.9)]
 # the kettle example: water temperature T (°C) every minute
 KETTLE = [(0, 20.8), (1, 27.9), (2, 36.5), (3, 43.8), (4, 52.4), (5, 59.6)]
+
+
+def hero():
+    """The chapter's opening illustration: measured points on grid paper, scattered a little, and a ruler laid along the one line that fits them."""
+    f = H.hero("fy14-hero", "Kuvitus: ruutupaperi pöydällä. Paperilla on mittauspisteitä, jotka eivät osu täsmälleen samalle suoralle, "
+               "ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä.")
+    f.rect(0, 0, 1200, 600, SAND_LIGHT)
+    for k in range(9): f.line(0, 30 + k * 68, 1200, 14 + k * 68, SAND_DARK, 2)
+    f.path("M260,40 L960,24 L976,566 L276,580 Z", WHITE, INK, 2)
+    def P(u, v): return (276 + u * 700 - v * 16 / 540 * 0 + 0 * u, 580 - v * 540 + 0) if False else (268 + u * 700 + v * 8, 573 - v * 540 - u * 15)
+    for k in range(1, 20):
+        a, b = P(k / 20, 0), P(k / 20, 1); f.line(*a, *b, COLD_LIGHT, 1.5)
+        a, b = P(0, k / 20), P(1, k / 20); f.line(*a, *b, COLD_LIGHT, 1.5)
+    o, xe, ye = P(0.1, 0.1), P(0.92, 0.1), P(0.1, 0.92)
+    f.line(*o, *xe, INK, 3); f.line(*o, *ye, INK, 3)
+    pts = [(0.18, 0.2), (0.27, 0.33), (0.36, 0.34), (0.45, 0.47), (0.54, 0.5), (0.63, 0.61), (0.72, 0.66), (0.81, 0.79)]
+    a, b = P(0.12, 0.14), P(0.88, 0.85)
+    f.line(*a, *b, HEAT, 4, cap="round")
+    for u, v in pts:
+        x, y = P(u, v); f.circle(x, y, 9, COLD, INK, 2)
+    # the ruler along the line, below it
+    ang = math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
+    th = math.atan2(b[1] - a[1], b[0] - a[0]); cx, cy = (a[0] + b[0]) / 2 - math.sin(th) * 52, (a[1] + b[1]) / 2 + math.cos(th) * 52
+    g = f'<g transform="translate({n(cx)},{n(cy)}) rotate({n(ang)})"><rect x="-330" y="0" width="660" height="56" rx="4" fill="{GLASS}" fill-opacity="0.75" stroke="{METAL_EDGE}" stroke-width="2"/>'
+    g += "".join(f'<line x1="{-320 + 16 * k}" y1="0" x2="{-320 + 16 * k}" y2="{18 if k % 5 else 30}" stroke="{METAL_EDGE}" stroke-width="2"/>' for k in range(41))
+    f.add(g + "</g>")
+    f.add(f'<g transform="translate(1040,300) rotate(-62)"><rect x="-150" y="-12" width="260" height="24" fill="{HEAT_LIGHT}" stroke="{INK}" stroke-width="2"/>'
+          f'<path d="M110,-12 L150,0 L110,12 Z" fill="{SAND_LIGHT}" stroke="{INK}" stroke-width="2"/><path d="M138,-4 L150,0 L138,4 Z" fill="{INK}"/>'
+          f'<rect x="-176" y="-12" width="26" height="24" fill="{HOT_LIGHT}" stroke="{INK}" stroke-width="2"/></g>')
+    return f.svg()
 
 
 def scatter():
@@ -93,7 +126,7 @@ def scatter_points():
     return f.svg()
 
 
-FIGURES = {"scatter": scatter, "slope": slope, "kettle": kettle, "scatter-points": scatter_points}
+FIGURES = {"hero": hero, "scatter": scatter, "slope": slope, "kettle": kettle, "scatter-points": scatter_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "scatter": "reveals: the fitted line s = 0,5 m/s · t (scatter-points is the same data without it)",

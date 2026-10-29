@@ -2,6 +2,73 @@
 
 > **Miksi** pulkka voi painaa lunta eri tavalla, kun sitä vedetään narusta vinosti ylöspäin, kuin silloin, kun se vain seisoo paikallaan?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: talvinen piha. Vasemmalla pulkka seisoo paikallaan. Se on painunut syvälle lumeen. Oikealla lapsi vetää samanlaista pulkkaa narusta. Naru on vinosti ylöspäin. Tämän pulkan jälki lumessa on matalampi." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy45h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="380" fill="url(#fy45h-sky)"/>
+  <path d="M0,300 L15.5,258 L31,300 L48,252.5 L65.5,300 L81,257 L97,300 L119,233.5 L141.5,300 L161,244.5 L180,300 L202.5,233.5 L225,300 L245,242 L265,300 L279,264 L293,300 L314.5,236 L336,300 L349.5,266 L362.5,300 L378.5,257.5 L394,300 L414.5,240 L435.5,300 L454.5,244 L474,300 L488,263.5 L502,300 L515.5,266 L529,300 L543.5,260.5 L558.5,300 L576.5,249.5 L594.5,300 L611.5,251.5 L629,300 L643.5,262.5 L657.5,300 L670.5,267.5 L683.5,300 L697.5,263.5 L711.5,300 L731,244.5 L750,300 L771.5,238 L792.5,300 L807,261 L822,300 L836.5,262 L851,300 L864.5,264.5 L878,300 L901.5,230.5 L924.5,300 L938,265.5 L951.5,300 L972.5,237.5 L994,300 L1011,253.5 L1027.5,300 L1048.5,239.5 L1069,300 L1090.5,236 L1112.5,300 L1130.5,249.5 L1148.5,300 L1162.5,262.5 L1177,300 L1193.5,253.5 L1210.5,300 V330 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <circle cx="219.5" cy="7.5" r="3" fill="#ffffff"/>
+  <circle cx="888" cy="20.5" r="3" fill="#ffffff"/>
+  <circle cx="677.5" cy="102" r="3" fill="#ffffff"/>
+  <circle cx="545.5" cy="94" r="3" fill="#ffffff"/>
+  <circle cx="327" cy="263.5" r="3" fill="#ffffff"/>
+  <circle cx="988" cy="150.5" r="3" fill="#ffffff"/>
+  <circle cx="903.5" cy="159.5" r="3" fill="#ffffff"/>
+  <circle cx="604.5" cy="158.5" r="3" fill="#ffffff"/>
+  <circle cx="628" cy="161" r="3" fill="#ffffff"/>
+  <circle cx="626" cy="159" r="3" fill="#ffffff"/>
+  <circle cx="24" cy="106" r="3" fill="#ffffff"/>
+  <circle cx="711" cy="256.5" r="3" fill="#ffffff"/>
+  <circle cx="733.5" cy="227.5" r="3" fill="#ffffff"/>
+  <circle cx="481.5" cy="55.5" r="3" fill="#ffffff"/>
+  <circle cx="1019" cy="209.5" r="3" fill="#ffffff"/>
+  <circle cx="409" cy="186.5" r="3" fill="#ffffff"/>
+  <circle cx="507" cy="268" r="3" fill="#ffffff"/>
+  <circle cx="285.5" cy="127.5" r="3" fill="#ffffff"/>
+  <circle cx="1185" cy="259" r="3" fill="#ffffff"/>
+  <circle cx="852" cy="140.5" r="3" fill="#ffffff"/>
+  <circle cx="1038.5" cy="147" r="3" fill="#ffffff"/>
+  <circle cx="1022.5" cy="139.5" r="3" fill="#ffffff"/>
+  <circle cx="52" cy="28.5" r="3" fill="#ffffff"/>
+  <circle cx="753.5" cy="23.5" r="3" fill="#ffffff"/>
+  <circle cx="1120" cy="115" r="3" fill="#ffffff"/>
+  <circle cx="274" cy="246" r="3" fill="#ffffff"/>
+  <circle cx="919" cy="161" r="3" fill="#ffffff"/>
+  <circle cx="186" cy="41.5" r="3" fill="#ffffff"/>
+  <circle cx="1094.5" cy="152.5" r="3" fill="#ffffff"/>
+  <circle cx="213.5" cy="215" r="3" fill="#ffffff"/>
+  <rect x="0" y="360" width="1200" height="240" fill="#ffffff"/>
+  <path d="M0,360 Q300,348 600,362 T1200,356 V380 H0 Z" fill="#d0e6fb" stroke-linejoin="round"/>
+  <ellipse cx="260" cy="472" rx="104" ry="26" fill="#d0e6fb"/>
+  <rect x="184" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="324" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M156,484 H360 Q380,484 378,470" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M164,436 Q160,470 190,470 H344 Q372,470 366,440 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M174,442 H356" fill="none" stroke="#f2a69c" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M110,478 Q132,462 154,472 H384 Q406,462 428,478 V510 H110 Z" fill="#ffffff"/>
+  <path d="M110,478 Q132,462 154,472 H384 Q406,462 428,478" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M500,486 H600" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="700" cy="472" rx="104" ry="12" fill="#d0e6fb"/>
+  <rect x="624" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="764" y="466" width="12" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M596,484 H800 Q820,484 818,470" fill="none" stroke="#6c757d" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M604,436 Q600,470 630,470 H784 Q812,470 806,440 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M614,442 H796" fill="none" stroke="#f2a69c" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M550,492 Q572,476 594,486 H824 Q846,476 868,492 V510 H550 Z" fill="#ffffff"/>
+  <path d="M550,492 Q572,476 594,486 H824 Q846,476 868,492" fill="none" stroke="#d0e6fb" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="800" y1="442" x2="960" y2="350" stroke="#b8622d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M984,520 L987.5,427 H1012.5 L1016,520 H1003.5 L1000,458 L996.5,520 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M979,433 Q976.5,365 1000,361.5 Q1023.5,365 1021,433 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M981.5,373.5 L975,433" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="975" cy="438" r="6.82" fill="#f1dfb5"/>
+  <path d="M1018.5,373.5 L1025,433" fill="none" stroke="#e8590c" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1025" cy="438" r="6.82" fill="#f1dfb5"/>
+  <rect x="994.5" y="349" width="11" height="15" fill="#f1dfb5"/>
+  <circle cx="1000" cy="336.5" r="18.6" fill="#f1dfb5"/>
+  <path d="M981,336.5 Q981.5,314 1000,315.5 Q1020,315.5 1019,334 Q1003.5,326.5 981,336.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M982,373 L960,350" fill="none" stroke="#e8590c" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="960" cy="350" r="7" fill="#f1dfb5"/>
+</svg>
+
 ## Ydinajatus
 Kappaleeseen vaikuttaa yleensä monta voimaa yhtä aikaa. Voima on veto tai työntö. Maa vetää kappaletta alaspäin. Alusta tukee sitä. Naru vetää sitä. Pinta jarruttaa sitä. Jokainen voima syntyy kappaleen ja jonkin toisen kappaleen välillä.
 

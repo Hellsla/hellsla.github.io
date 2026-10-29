@@ -2,6 +2,74 @@
 
 > **Miksi** sähkölaskua ei voi päätellä pelkästä laitteen tehosta?
 
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiö. Vasemmalla on höyryävä vedenkeitin. Sen vieressä kello näyttää lyhyttä aikaa. Oikealla on pieni pöytävalaisin. Sen vieressä kello näyttää pitkää aikaa. Keskellä seinällä on sähkömittari." class="fig-hero" style="max-width:100%;font-size:24px">
+  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
+  <line x1="0" y1="70" x2="1200" y2="70" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="140" x2="1200" y2="140" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="280" x2="1200" y2="280" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="0" y1="350" x2="1200" y2="350" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="0" y="400" width="1200" height="200" fill="#f1dfb5"/>
+  <rect x="0" y="400" width="1200" height="22" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
+  <path d="M150,400 L166,250 Q230,230 294,250 L310,400 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M294,270 Q360,280 310,370" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M166,280 L120,248 L158,318 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="140" y="392" width="180" height="12" rx="3" fill="#1f2933"/>
+  <circle cx="270" cy="370" r="8" fill="#c92a2a"/>
+  <path d="M118,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M118,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M134,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M134,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M150,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M150,236 q-14,-24 0,-48 t0,-48" fill="none" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M890,400 h140 l-30,-20 h-80 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="960" y1="380" x2="960" y2="230" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
+  <path d="M800,420 L914,230 H1006 L1120,420 Z" fill="#ffc078" fill-opacity="0.35"/>
+  <path d="M890,240 L920,150 H1000 L1030,240 Z" fill="#e8590c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="960" cy="238" r="14" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="420" cy="140" r="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M420,140 L420,84 A56,56 0 0 1 447,91 Z" fill="#1971c2" fill-opacity="0.3"/>
+  <line x1="420" y1="94" x2="420" y2="88" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="443" y1="100" x2="446" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="460" y1="117" x2="465" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="466" y1="140" x2="472" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="460" y1="163" x2="465" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="443" y1="180" x2="446" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="186" x2="420" y2="192" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="397" y1="180" x2="394" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="380" y1="163" x2="375" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="374" y1="140" x2="368" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="380" y1="117" x2="375" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="397" y1="100" x2="394" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="140" x2="439.5" y2="105" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="420" cy="140" r="5" fill="#1f2933"/>
+  <circle cx="780" cy="140" r="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <path d="M780,140 L780,84 A56,56 0 1 1 753,91 Z" fill="#1971c2" fill-opacity="0.3"/>
+  <line x1="780" y1="94" x2="780" y2="88" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="803" y1="100" x2="806" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="820" y1="117" x2="825" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="826" y1="140" x2="832" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="820" y1="163" x2="825" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="803" y1="180" x2="806" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="780" y1="186" x2="780" y2="192" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="757" y1="180" x2="754" y2="185" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="740" y1="163" x2="735" y2="166" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="734" y1="140" x2="728" y2="140" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="740" y1="117" x2="735" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="757" y1="100" x2="754" y2="95" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="780" y1="140" x2="760.5" y2="105" stroke="#1f2933" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="780" cy="140" r="5" fill="#1f2933"/>
+  <rect x="540" y="190" width="120" height="170" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="560" y="214" width="80" height="34" rx="3" fill="#1f2933"/>
+  <rect x="566" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
+  <rect x="584" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
+  <rect x="602" y="220" width="14" height="22" rx="2" fill="#b2f2bb"/>
+  <rect x="620" y="220" width="14" height="22" rx="2" fill="#ffc078"/>
+  <circle cx="600" cy="300" r="26" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="600" y1="300" x2="618" y2="284" stroke="#c92a2a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M600,360 V400" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+
 ## Ydinajatus
 Kun laite muuntaa energiaa, on kaksi tärkeää asiaa: kuinka paljon energiaa muuntuu ja kuinka nopeasti. Vedenkeitin muuntaa sähköenergiaa lämmöksi hyvin nopeasti. Siksi vesi kuumenee minuuteissa. Pieni lamppu muuntaa sähköenergiaa valoksi ja lämmöksi hitaasti.
 

@@ -2,6 +2,36 @@
 import math
 from figlib import (Fig, INK, MUTED, WHITE, RULE, RULE_LIGHT, HEAT, HEAT_LIGHT, GLASS, SAND, SAND_LIGHT, GRAIN,
                     ALUMINIUM, METAL_EDGE, IRON, HOT, HOT_LIGHT, n)
+from figlib import GOOD, GOOD_LIGHT, ICE
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: one house, one socket, and two ways to make its electricity: a coal plant under smoke or wind turbines under a clear sky."""
+    f = H.hero("fy28-hero", "Kuvitus: keskellä talo, johon sähkö tulee voimalinjaa pitkin. Vasemmalla hiilivoimala, jonka savupiipusta nousee "
+               "tumma savu harmaalle taivaalle; oikealla tuulivoimaloita kirkkaan taivaan alla. Talon seinässä on pistorasia.")
+    f.rect(0, 0, 600, 600, H.grad(f, "fy28h-grey", ALUMINIUM, GLASS)); f.rect(600, 0, 600, 600, H.grad(f, "fy28h-sky", ICE, GLASS))
+    H.sun(f, "fy28h", 760, 100, 44)
+    H.forest(f, 380, 40, 30, GOOD, seed=9)
+    f.rect(0, 390, 1200, 210, GOOD_LIGHT)
+    # coal plant
+    f.rect(60, 300, 200, 110, IRON, INK, 3)
+    for k in range(4): f.rect(80 + k * 46, 330, 26, 30, GLASS, INK, 2)
+    f.rect(200, 170, 34, 130, HOT_LIGHT, INK, 3)
+    for k in range(2): f.rect(200, 190 + k * 46, 34, 10, WHITE)
+    H.smoke(f, 222, 150, 1.0, INK, 0.55); H.smoke(f, 330, 110, 0.9, INK, 0.4); H.smoke(f, 430, 80, 0.7, INK, 0.25)
+    f.path("M30,420 h70 l20,-30 h50 l20,30 h60 v20 h-220 Z", INK)
+    # wind turbines
+    for k, (x, h) in enumerate(((890, 210), (990, 180), (1090, 220))): H.wind_turbine(f, x, 410, h, 0.3 + 1.1 * k, 1.0)
+    # the house in the middle with its socket
+    H.house(f, 520, 470, 160, 120, SAND_LIGHT, HOT)
+    f.rect(546, 428, 36, 36, WHITE, INK, 2, 5)
+    f.circle(564, 446, 12, ALUMINIUM, INK, 2); f.circle(559, 446, 2.5, INK); f.circle(569, 446, 2.5, INK)
+    # lines from both sides to the house
+    a = H.pylon(f, 360, 500, 120, 0.7); b = H.pylon(f, 820, 500, 120, 0.7)
+    for p in a[2:]: H.wire(f, (250, 330), p, 10, INK, 1.5); H.wire(f, p, (530, 380), 10, INK, 1.5)
+    for p in b[2:]: H.wire(f, (900, 330), p, 10, INK, 1.5); H.wire(f, p, (670, 380), 10, INK, 1.5)
+    return f.svg()
 
 
 def greenhouse():
@@ -82,7 +112,7 @@ def emissions():
     return f.svg()
 
 
-FIGURES = {"greenhouse": greenhouse, "emissions": emissions}
+FIGURES = {"hero": hero, "greenhouse": greenhouse, "emissions": emissions}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "emissions": "safe: the lifecycle emission factors printed at the bars; the description gives coal/nuclear ≈ 70, so do not ask that ratio",

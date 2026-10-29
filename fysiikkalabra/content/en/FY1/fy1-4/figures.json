@@ -1,4 +1,5 @@
 {
+ "Kuvitus: ruutupaperi pöydällä. Paperilla on mittauspisteitä, jotka eivät osu täsmälleen samalle suoralle, ja niiden poikki on vedetty yksi suora viivaimen avulla. Vieressä lyijykynä.": "Illustration: a sheet of grid paper on a table. On it are measured points that do not lie exactly on one straight line, and one straight line has been drawn through them with a ruler. A pencil lies beside it.",
  "Kuvaaja mittakaavassa: kärryn kulkema matka s ajan t funktiona. Kuusi mittauspistettä (t = 1…6 s) on hajallaan suoran s = 0,5 m/s · t ympärillä. Pisteitä on suoran molemmin puolin: kolme yläpuolella ja kolme alapuolella, ja pystysuorat katkoviivat näyttävät kunkin pisteen poikkeaman suorasta. Suora ei kulje jokaisen pisteen kautta.": "Graph drawn to scale: the distance s travelled by a trolley as a function of time t. Six data points (t = 1…6 s) are scattered around the line s = 0.5 m/s · t. There are points on both sides of the line, three above and three below, and vertical dashed lines show the deviation of each point from the line. The line does not pass through every point.",
  "mittauspisteet": "data points",
  "sovitettu suora": "fitted line",

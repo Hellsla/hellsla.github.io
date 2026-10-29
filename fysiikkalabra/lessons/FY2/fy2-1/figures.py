@@ -4,8 +4,41 @@ materials and arrows follow NOTES.md §3."""
 import math
 from figlib import (Fig, Axes, INK, MUTED, WHITE, GLASS, HEAT_LIGHT, HEAT, HOT, HOT_LIGHT, COLD, ALUMINIUM, METAL_EDGE,
                     IRON, COPPER, SAND, SAND_DARK, GRAIN, n, fi)
+from figlib import PAPER
+import herolib as H
 
 POT, KIN, THM = COLD, HEAT_LIGHT, HOT          # potential, kinetic and thermal energy: the same colours as in the simulation
+
+
+def hero():
+    """The chapter's opening illustration: a ball bouncing ever lower across a floor until it lies still."""
+    f = H.hero("fy21-hero", "Kuvitus: pallo pomppii lattialla vasemmalta oikealle. Katkoviivoin piirretyt kaaret madaltuvat pomppu pomppulta, "
+               "ja lopussa pallo on levossa lattialla. Jokaisessa osumakohdassa pieni lämpöväre.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    f.rect(0, 0, 1200, 460, H.grad(f, "fy21h-wall", WHITE, PAPER))
+    f.rect(0, 460, 1200, 140, SAND, None)
+    for k in range(13): f.line(k * 100, 460, k * 100 - 40, 600, GRAIN, 2)
+    f.line(0, 460, 1200, 460, GRAIN, 3)
+    r, y0 = 30, 430
+    xs, hs = [80, 360, 600, 790, 930, 1030], [360, 230, 140, 80, 40]
+    d = f"M{xs[0]},{y0 - 380}"
+    d += f" Q{xs[0] + 60},{y0 - 380} {xs[0] + 140},{y0}"
+    xa = xs[0] + 140
+    for k, h in enumerate(hs[1:]):
+        xb = xa + (300 - 60 * k) if k < 3 else xa + 90
+        d += f" Q{n((xa + xb) / 2)},{n(y0 - 2 * h)} {n(xb)},{y0}"; xa = xb
+    f.path(d, stroke=MUTED, w=3, extra='stroke-dasharray="10 10"')
+    # bounces: shimmer at each landing, ghost balls at tops
+    xa = xs[0] + 140; tops = []
+    for k, h in enumerate(hs[1:]):
+        xb = xa + (300 - 60 * k) if k < 3 else xa + 90
+        H.shimmer(f, [xa - 14, xa + 14], 456, 40)
+        tops.append(((xa + xb) / 2, y0 - h)); xa = xb
+    f.add(f'<circle cx="{xs[0]}" cy="{y0 - 380}" r="{r}" fill="{HOT}" fill-opacity="0.3"/>')
+    for x, y in tops: f.add(f'<circle cx="{n(x)}" cy="{n(y)}" r="{r}" fill="{HOT}" fill-opacity="0.3"/>')
+    f.circle(xa + 60, y0, r, HOT, INK, 3)
+    f.path(f"M{n(xa + 40)},{y0 - 14} Q{n(xa + 60)},{y0 - 24} {n(xa + 80)},{y0 - 14}", stroke=WHITE, w=4, extra='stroke-linecap="round" stroke-opacity="0.7"')
+    return f.svg()
 
 
 def _ball(f, gid, cx, cy, r, light=ALUMINIUM, dark=IRON):
@@ -202,7 +235,7 @@ def friction_bars():
     return f.svg()
 
 
-FIGURES = {"energialajit": forms, "energian-muuttuminen": chain, "sailyminen": conservation, "kitka-pylvaat": friction_bars}
+FIGURES = {"hero": hero, "energialajit": forms, "energian-muuttuminen": chain, "sailyminen": conservation, "kitka-pylvaat": friction_bars}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "sailyminen": "reveals: every energy value at the three moments, the thermal energy included, and the total 800 J",

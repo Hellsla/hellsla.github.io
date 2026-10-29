@@ -1,5 +1,32 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy1-8` writes them into lesson.md."""
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, SAND, SAND_DARK, SAND_LIGHT, ALUMINIUM, METAL_EDGE, COLD, GOOD, GOOD_LIGHT, HEAT, fi
+from figlib import GLASS, HEAT_LIGHT, HOT, PAPER
+import herolib as H
+
+
+def hero():
+    """The chapter's opening illustration: one toy car on a track, two groups timing it with their own tape and stopwatch."""
+    f = H.hero("fy18-hero", "Kuvitus: lattialla rata, jolla leluauto kulkee mittanauhan vieressä. Radan molemmin puolin seisoo ryhmä, "
+               "ja kummallakin ryhmällä on oma sekuntikello; kellojen viisarit ovat pysähtyneet eri kohtiin.")
+    f.rect(0, 0, 1200, 600, PAPER)
+    f.path("M0,330 H1200 V600 H0 Z", SAND_LIGHT)
+    for k in range(7): f.line(-200 + k * 260, 600, 80 + k * 200, 330, SAND, 2)
+    f.line(0, 330, 1200, 330, SAND_DARK, 3)
+    # track and tape
+    f.path("M120,470 L1080,470 L1040,420 L160,420 Z", ALUMINIUM, INK, 3)
+    f.rect(140, 476, 920, 28, HEAT_LIGHT, INK, 2, 3)
+    for k in range(47): f.line(150 + k * 19.6, 476, 150 + k * 19.6, 476 + (16 if k % 5 == 0 else 8), INK, 1.5)
+    # toy car
+    x, y = 600, 446
+    f.path(f"M{x - 70},{y + 6} V{y - 18} Q{x - 64},{y - 26} {x - 40},{y - 28} L{x - 22},{y - 56} H{x + 30} L{x + 52},{y - 28} Q{x + 72},{y - 26} {x + 74},{y - 12} V{y + 6} Z", HOT, INK, 3)
+    f.path(f"M{x - 14},{y - 48} H{x + 26} L{x + 40},{y - 30} H{x - 26} Z", GLASS, INK, 2)
+    for wx in (x - 40, x + 44): f.circle(wx, y + 8, 15, INK); f.circle(wx, y + 8, 6, ALUMINIUM)
+    f.line(x - 120, y - 10, x - 84, y - 10, MUTED, 3, cap="round"); f.line(x - 130, y - 30, x - 90, y - 30, MUTED, 3, cap="round")
+    # two groups with their stopwatches
+    H.person(f, 90, 400, COLD, INK, 0.62); H.person(f, 200, 404, GOOD, INK, 0.6)
+    H.person(f, 1000, 400, HEAT, INK, 0.62); H.person(f, 1110, 404, COLD, INK, 0.6)
+    H.stopwatch(f, 250, 140, 56, 0.27); H.stopwatch(f, 950, 140, 56, 0.33)
+    return f.svg()
 
 
 def setup():
@@ -68,7 +95,7 @@ def epavarmuus():
     return f.svg()
 
 
-FIGURES = {"setup": setup, "epavarmuus": epavarmuus}
+FIGURES = {"hero": hero, "setup": setup, "epavarmuus": epavarmuus}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "setup": "safe: the setup with its variables, no results",

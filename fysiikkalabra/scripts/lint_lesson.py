@@ -215,6 +215,8 @@ def check_lesson_md(L, folder):
     text = f.read_text()
     if not re.search(r"^> \*\*Miksi\*\*", text, re.M):
         L.warn("lesson.md", 3, "no motivating question (`> **Miksi** ...`) like the gold lesson")
+    if not re.search(r'^> \*\*Miksi\*\*[^\n]*\n\n<svg\b[^>]*data-fig="hero"', text, re.M):   # every chapter opens with one (teacher 2026-10-29)
+        L.err("lesson.md", 3, "no opening illustration right under the Miksi question: draw it with H.hero(...) (scripts/herolib.py) in figures.py and place `<svg data-fig=\"hero\"></svg>` under the question (NOTES 3 \"Opening illustration\")")
     for h in ("Ydinajatus", "Kaava", "Esimerkki", "Yleinen virhekäsitys", "Tiivistelmä"):
         if not re.search(rf"^## {h}", text, re.M): L.warn("lesson.md", 1, f"no '## {h}' section (gold structure)")
     if "$$" not in text and "```latex" not in text:
