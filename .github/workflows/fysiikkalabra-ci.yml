@@ -38,6 +38,8 @@ jobs:
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
+      - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
+        run: python scripts/test_svgids.py && python scripts/svgids.py site
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - run: python scripts/reviews.py verify

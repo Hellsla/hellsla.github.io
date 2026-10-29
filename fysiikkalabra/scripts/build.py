@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, mathlayout, practice
+import courses, figcat, i18n, inquiry, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -247,7 +247,10 @@ removed = []   # lessons on the live site that this build leaves out
 
 def rebase(html):
     """A page of another language lives in site/<lang>/ and shares the assets of site/ (style, scripts, vendor/, the
-    simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ ."""
+    simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ .
+    Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)."""
+    html = svgids.namespace(html)
+    if svgids.duplicates(html): sys.exit(f"ERROR: repeated ids on a page: {', '.join(svgids.duplicates(html))} (scripts/svgids.py)")
     if not UP: return html
     keep = lambda v: re.match(r"[a-z]+:|#|/|\.\./", v) or re.match(r"[\w.-]+\.html(#|$)", v)
     return re.sub(r'\b(src|href|data-base)="([^"]*)"', lambda m: m.group(0) if keep(m.group(2)) else f'{m.group(1)}="{UP}{m.group(2)}"', html)
