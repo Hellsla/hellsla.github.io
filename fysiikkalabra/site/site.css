@@ -66,16 +66,16 @@ main p,main ul,main ol{margin:0 0 1em}main li>p{margin:0 0 .5em}
 /* header (teacher 2026-10-29): the compact brand, the modules link and the language control; Portfolio is in the footer.
    One row at every width: the modules link gives way on a narrow phone (the brand and the breadcrumb lead to it there),
    every target is at least 44 px. */
-header.top{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;padding-bottom:10px;margin-bottom:8px;border-bottom:1px solid var(--line);position:relative;z-index:40}
+header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 12px;padding-bottom:10px;margin-bottom:8px;border-bottom:1px solid var(--line);position:relative;z-index:40}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-height:44px;min-width:0;border-radius:8px}
 .brand-mark{width:40px;height:40px;flex:none}
-.brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green);white-space:nowrap}
+.brand-name{display:flex;flex-direction:column;font:800 1.14rem/1.1 var(--sans);letter-spacing:-.01em;color:var(--brand-green);overflow-wrap:break-word}
 .brand-name small{font:700 .68rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
-header.top nav{display:flex;align-items:center;gap:4px;flex:none}
+header.top nav{display:flex;align-items:center;gap:4px;flex:none;margin-left:auto}
 header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);text-decoration:none;border-radius:999px}
 header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
-@media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.1em}}
+@media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -121,6 +121,7 @@ article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;backgr
 :root{--copper:#b85f2a;--copper-ink:#a3521f}
 main.home{max-width:68rem;margin-inline:0;font-size:var(--fs-body);line-height:var(--lh)}
 main.home section{margin:0}
+main.home,main.reading:not(.lesson){hyphens:auto;overflow-wrap:break-word}   /* long Finnish compounds wrap with enlarged text instead of running off a phone */
 main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 .4rem}
 .section-lead{font-size:var(--fs-ui);color:var(--ink-2);max-width:40rem;margin:0 0 1rem}
 .intro{padding:clamp(1.4rem,4vw,3.2rem) 0 clamp(1.6rem,4vw,2.6rem);max-width:44rem}
@@ -159,16 +160,16 @@ a.quiet-link:hover{text-decoration-thickness:2px}
 }
 .upcoming{margin-top:2.8rem!important}
 .upcoming h2{font-size:1.375rem!important}
-.up-list{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.up-list{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
 @media (min-width:64rem){.up-list{grid-template-columns:1fr 1fr;column-gap:2rem}}
 .up-list li{margin:0;display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding:.15rem .25rem .55rem}
 @media (min-width:40rem){.up-list li{flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 .8rem;padding:.2rem .25rem}}
-.up-list a{display:inline-flex;align-items:baseline;gap:.6rem;min-height:44px;padding:.55rem 0 .2rem;color:var(--ink);text-decoration:none;font-size:1rem}
-.up-list a .mod-code{line-height:1.5}
+.up-list a{display:flex;align-items:baseline;gap:.6rem;max-width:100%;min-height:44px;padding:.55rem 0 .2rem;color:var(--ink);text-decoration:none;font-size:1rem}
+.up-list a .mod-code{line-height:1.5;flex:none}.up-list .up-title{min-width:0}
 .up-list a:hover .up-title{text-decoration:underline;color:var(--accent-deep)}
 .up-meta{font-size:var(--fs-small);color:var(--ink-2)}
 .featured{margin-top:3.6rem!important}
-.featured-row{position:relative;display:grid;grid-template-columns:1fr;gap:1.1rem 2.2rem;margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.featured-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem 2.2rem;margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--line)}
 @media (min-width:48rem){.featured-row{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start}}
 .featured-fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#f6f1e6}
 .featured-text h3{font:500 clamp(1.35rem,1.25rem + .4vw,1.6rem)/1.2 var(--serif);margin:.2rem 0 .6rem}
@@ -204,10 +205,11 @@ p.unavailable:target{display:block}p.unavailable:focus{outline:none}p.unavailabl
 ol.lessons{list-style:none;padding:0;margin:.6rem 0 1.4rem;border-top:1px solid var(--line)}
 ol.lessons li{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .6rem;margin:0;padding:.15rem 0;border-bottom:1px solid var(--line-2)}
 ol.lessons .l-num{flex:0 0 1.8rem;text-align:right;font:600 var(--fs-small)/1 var(--sans);color:var(--ink-2);font-variant-numeric:tabular-nums}
-ol.lessons li.live a{display:inline-flex;align-items:center;min-height:44px;flex:1 1 0;min-width:0;padding:.35rem 0;font-weight:700;color:var(--accent-deep);text-decoration:none}
+ol.lessons li.live a{display:inline-flex;align-items:center;min-height:44px;flex:1 1 9rem;min-width:0;hyphens:auto;overflow-wrap:break-word;padding:.35rem 0;font-weight:700;color:var(--accent-deep);text-decoration:none}
 ol.lessons li.live a::after{content:"→";margin-left:.5em;flex:none}
 ol.lessons li.live a:hover{text-decoration:underline}
-ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.soon>span:not(.l-num):not(.tag){flex:1 1 0;min-width:0;padding:.6rem 0}
+ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.soon>span:not(.l-num):not(.tag){flex:1 1 9rem;min-width:0;padding:.6rem 0;hyphens:auto;overflow-wrap:break-word}
+ol.lessons li>.tag{margin-left:auto}
 ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:0 .55rem;line-height:1.6}
 ul.practice-link{padding-left:0;list-style:none}ul.practice-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
 details.goals>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
