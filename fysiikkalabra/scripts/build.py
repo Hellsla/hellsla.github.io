@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, fbdspec, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
+import answers_shown, courses, fbdspec, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -227,8 +227,13 @@ def core_ids(ex):
 
 
 def exercise_html(e, solution_html, read=None, core=False):
-    ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
+    ans = nbsp_units(f"{fi(answers_shown.fallback(e['answer']) if numeric else e['answer'])} {e.get('unit', '')}".strip())
+    if numeric and solution_html:                                                  # the solution's own rounded answer
+        label = T("lesson.solution_answer_step")
+        step = re.search(rf'<p class="sol-label">{re.escape(label)}</p>(.*?)</div>', solution_html, re.S)
+        tex = answers_shown.shown(f"**{label}:** " + step.group(1).replace("\n", " "), label, e["answer"], e.get("tolerance", 0.02)) if step else None
+        if tex: ans = f"${tex}$"
     check = ""
     if numeric:
         unit = esc(e.get("unit", ""))
