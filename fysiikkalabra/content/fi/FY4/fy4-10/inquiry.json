@@ -24,7 +24,7 @@
    "type": "choice",
    "title": "Kertaa: impulssi",
    "optional": true,
-   "prompt": "Vaunuun vaikuttaa liikkeen suuntainen voima $3{,}0\\,\\text{N}$ ajan $0{,}10\\,\\text{s}$. Kuinka paljon vaunun liikemäärä muuttuu?",
+   "prompt": "Vaunuun vaikuttaa liikkeen suuntainen vakiosuuruinen kokonaisvoima $3{,}0\\,\\text{N}$ ajan $0{,}10\\,\\text{s}$. Kuinka paljon vaunun liikemäärä muuttuu?",
    "choices": [
     {
      "text": "$0{,}30\\,\\text{kg}\\cdot\\text{m/s}$",

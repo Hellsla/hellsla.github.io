@@ -61,7 +61,7 @@
 ## Ydinajatus
 
 ### Systeemi ja sen kokonaisliikemäärä
-Luvussa *Liikemäärä ja impulssi* opit, että kappaleen liikemäärä on $\overline{p} = m\overline{v}$ ja että voiman impulssi muuttaa sitä: $\Delta\overline{p} = \overline{F}\,\Delta t$. Törmäyksessä on kuitenkin kaksi kappaletta, jotka vaikuttavat toisiinsa. Siksi tarkastellaan niitä yhdessä **systeeminä**. Systeemin **kokonaisliikemäärä** on sen kappaleiden liikemäärien vektorisumma, $\overline{p}_\text{kok} = \overline{p}_1 + \overline{p}_2$.
+Luvussa *Liikemäärä ja impulssi* opit, että kappaleen liikemäärä on $\overline{p} = m\overline{v}$ ja että vakiosuuruisen kokonaisvoiman impulssi muuttaa sitä: $\Delta\overline{p} = \Sigma\overline{F}\,\Delta t$. Törmäyksessä on kuitenkin kaksi kappaletta, jotka vaikuttavat toisiinsa. Siksi tarkastellaan niitä yhdessä **systeeminä**. Systeemin **kokonaisliikemäärä** on sen kappaleiden liikemäärien vektorisumma, $\overline{p}_\text{kok} = \overline{p}_1 + \overline{p}_2$.
 
 Systeemin kappaleiden toisiinsa kohdistamat voimat ovat **sisäisiä voimia**, esimerkiksi vaunujen puskurien voimat toisiinsa törmäyksessä. Systeemin ulkopuolelta tulevat voimat ovat **ulkoisia voimia**, esimerkiksi vaunujen paino, radan tukivoima ja kitka.
 
