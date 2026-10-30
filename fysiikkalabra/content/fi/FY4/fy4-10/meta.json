@@ -1,0 +1,22 @@
+{
+  "id": "fy4-10",
+  "course": "FY4",
+  "title": "Liikemäärän säilyminen ja yksiulotteiset törmäykset",
+  "goals": [
+    "LOPS FY4: liikemäärän säilyminen ja yksiulotteiset törmäykset",
+    "Täsmennys: kaksiulotteiset törmäykset eivät kuulu keskeisiin sisältöihin"
+  ],
+  "prerequisites": [
+    "fy4-9",
+    "fy4-8"
+  ],
+  "glossary": [
+    "liikemäärän säilyminen",
+    "kimmoisa törmäys",
+    "kimmoton törmäys",
+    "räjähdys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
