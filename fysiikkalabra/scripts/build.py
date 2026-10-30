@@ -413,8 +413,11 @@ def build_language(lang):
             if not (src / "sim.js").is_file(): sys.exit(f"{meta['id']}: simulation folder {src.relative_to(ROOT)} has no sim.js")
             shutil.copytree(src, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
             css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
+            # model.js: the physics without drawing (README "Simulation models"), loaded first and tested by test_models.py
+            model = f'<script src="{pub}/model.js"></script>' if (src / "model.js").is_file() else ""
+            if model: assets.append(f"{pub}/model.js")
             sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
-                   f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script><!--sim-info--></section>')
+                   f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script>{model}<script src="{pub}/sim.js"></script><!--sim-info--></section>')
         for ref in courses.pic_refs_in([(courses.lesson_file(folder, n).read_text() if courses.lesson_file(folder, n).exists() else "") for n in courses.LESSON_TEXTS] + [ex_text, sol_text]):   # pictures the text refers to, at the same relative path
             if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
