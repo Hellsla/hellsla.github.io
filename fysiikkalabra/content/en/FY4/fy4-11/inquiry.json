@@ -1,0 +1,620 @@
+{
+  "version": 1,
+  "contribution": "The chapter applies the area under a uniformly accelerated motion graph, friction and the impulse–momentum principle to traffic: the simulation runs show that the reaction distance grows in proportion to the speed and the braking distance in proportion to the square of the speed, and that a small increase in speed can turn a stop into a hard collision; the example data and the OTI statistics are used to argue why the seat belt and the airbag reduce the force of a collision by lengthening the collision time.",
+  "learn": [
+    "calculate reaction, braking and stopping distances and explain why braking distance grows with speed squared.",
+    "estimate how speed, reaction time and road conditions affect stopping and the collision speed.",
+    "explain with the impulse–momentum principle why the seat belt and the airbag reduce the force on a person in a collision."
+  ],
+  "prior": [
+    "Displacement is the area between the $(t,v)$ graph and the time axis (chapter *Acceleration and uniformly accelerated motion*)",
+    "Friction opposes sliding, and it is at most the product of the coefficient of friction and the normal force (chapter *Weight, friction and the inclined plane*)",
+    "The change in momentum is the impulse: $\\Delta\\overline{p} = \\overline{F}\\,\\Delta t$ (chapter *Momentum and impulse*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Driving school teaches that even a small increase in speed lengthens the stopping distance a lot and that the seat belt is fastened even for a short trip. According to the Finnish Accident Investigation Institute, in the fatal accidents investigated in 2017–2021, $198$ people died in cars and vans without a seat belt. The investigation boards estimated that $114$ of them could have survived if the belt had been fastened.",
+      "question": "Why does the stopping distance grow so steeply with speed, and how can a seat belt decide whether a person survives a collision?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: impulse",
+      "optional": true,
+      "prompt": "A baseball catcher catches a ball in two ways: once holding the glove rigidly in place, once pulling the hand back with the ball. Both times the speed of the ball changes from the same value to zero. What does pulling the hand back change?",
+      "choices": [
+        {
+          "text": "The stopping time becomes longer, so the average force becomes smaller.",
+          "correct": true,
+          "feedback": "Correct. In the chapter *Momentum and impulse* you learned that the change in momentum is the impulse $\\overline{F}\\,\\Delta t$. The change is the same both times, so a longer time means a smaller force. The seat belt and the airbag use the same idea."
+        },
+        {
+          "text": "The change in the ball's momentum becomes smaller, so the impulse also becomes smaller.",
+          "feedback": "The ball stops from the same speed both times, so the change in momentum and the impulse are the same. Moving the hand changes only the time in which the change happens, and therefore the force."
+        },
+        {
+          "text": "The force becomes greater, because the hand acts on the ball for longer.",
+          "feedback": "The impulse $F\\,\\Delta t$ is the same both times. If the time $\\Delta t$ grows, the force $F$ must become smaller so that the product stays the same."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: double the speed",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A car brakes on a dry road. By what factor does the braking distance, that is, the distance from the start of braking to the stop, grow when the speed before braking doubles from $50\\,\\text{km/h}$ to $100\\,\\text{km/h}$?",
+      "choices": [
+        {
+          "text": "About four times as long.",
+          "correct": true,
+          "feedback": "Correct. In the model values the braking distance grows from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$. Stopping from double the speed takes twice as long, and for that whole time the car moves twice as fast."
+        },
+        {
+          "text": "About twice as long.",
+          "feedback": "It is the reaction distance, which the car travels at constant speed, that doubles. In the model values the braking distance grows from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$, that is, to four times: stopping takes twice as long, and for that time the car moves twice as fast."
+        },
+        {
+          "text": "The same, because the brakes are the same.",
+          "feedback": "The same brakes and the same road give the same deceleration, but removing a greater speed then takes more time. In the model values the braking distance grows from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$."
+        },
+        {
+          "text": "About eight times as long.",
+          "feedback": "The growth is steep, but not this steep. In the model values the braking distance grows from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$, that is, to four times: the time doubles and the average speed doubles."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: ten kilometres per hour more",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "On a dry road a stopped car is $25\\,\\text{m}$ ahead. When the driver drives at $50\\,\\text{km/h}$ and the reaction time is $1.0\\,\\text{s}$, the car stops just before it. What happens if the same driver drives at $60\\,\\text{km/h}$ in the same situation?",
+      "choices": [
+        {
+          "text": "The car hits it at about $40\\,\\text{km/h}$.",
+          "correct": true,
+          "feedback": "Correct. In the model values the collision speed is about $41\\,\\text{km/h}$. The reaction distance is already $16.7\\,\\text{m}$, so only about $8\\,\\text{m}$ is left for braking, and that is not nearly enough to remove all of the speed."
+        },
+        {
+          "text": "The car hits it at about $10\\,\\text{km/h}$.",
+          "feedback": "The collision speed is not the difference of the speeds. In the model values it is about $41\\,\\text{km/h}$: the greater speed lengthens the reaction distance to $16.7\\,\\text{m}$, and only about $8\\,\\text{m}$ is left for braking."
+        },
+        {
+          "text": "The car still just stops before the obstacle.",
+          "feedback": "The stopping distance from $60\\,\\text{km/h}$ is $32.1\\,\\text{m}$ in the model values, clearly more than $25\\,\\text{m}$. The car hits the obstacle at about $41\\,\\text{km/h}$."
+        },
+        {
+          "text": "The car hits it at almost $60\\,\\text{km/h}$.",
+          "feedback": "The reaction distance $16.7\\,\\text{m}$ is less than $25\\,\\text{m}$, so the driver has time to brake for about $8\\,\\text{m}$. In the model values the collision speed is about $41\\,\\text{km/h}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: why does a seat belt protect?",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "A car hits a wall at $50\\,\\text{km/h}$ and stops. Which explanation correctly tells why a seat belt reduces the force on a passenger?",
+      "choices": [
+        {
+          "text": "The belt lengthens the passenger's stopping time, so the same change in momentum is produced by a smaller force.",
+          "correct": true,
+          "feedback": "Correct. The passenger's momentum changes from $mv$ to zero in any case. The belt fastens them to the car, which crumples for about $0.1\\,\\text{s}$, whereas a passenger hitting the dashboard stops in about a hundredth of a second. Ten times the time means a tenth of the force."
+        },
+        {
+          "text": "The belt reduces the change in the passenger's momentum, because part of the momentum is transferred to the belt.",
+          "feedback": "The passenger stops in both cases, so their momentum changes from $mv$ to zero: the change is the same with and without a belt. The belt changes the time in which the change happens, and therefore the force."
+        },
+        {
+          "text": "The belt cancels the force that throws the passenger forward when the car stops suddenly.",
+          "feedback": "No force throws the passenger forward. By Newton's first law they keep moving while the car slows down around them. The belt is the force that slows them down, and it does so over a longer time than the dashboard."
+        },
+        {
+          "text": "The belt starts to reduce the passenger's speed already before the car hits the wall.",
+          "feedback": "Before the collision the passenger and the car move together at the same speed, and the belt has no effect. The belt starts to slow the passenger only when the car slows down, and lengthens the time in which the speed changes."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The driver notices the danger at the dashed line, reacts and brakes. Top: road and distances to scale. Bottom: the $(t,v)$ graph, whose coloured area is the distance travelled.",
+      "howto": "Choose the driving speed, the reaction time, the road conditions and whether a stopped car is ahead. Press *Start*: the car travels at a constant speed for the reaction time and then brakes to a stop or hits the car in front. *Pause* stops and *Resume* continues. When the run has ended, the readouts show the reaction distance $s_\\text{r}$, the braking distance $s_\\text{j}$, the stopping distance $s_\\text{p}$ and the stopping time $t_\\text{p}$ or the collision speed. Changing a setting or pressing *Reset* returns the car to the dashed line. *Speed* slows down or speeds up only the display, not the readouts.",
+      "model": "The values are model values calculated by the simulation. During the reaction time the car moves at a constant speed. After that it slows down at a constant deceleration until it stops: the road is horizontal, air resistance is neglected and the brakes use all of the grip. The deceleration of dry asphalt $9.0\\,\\text{m/s}^2$ and the reaction time $1.0\\,\\text{s}$ are the defaults of the Liikenneturva crash speed calculator. The $6.0\\,\\text{m/s}^2$ of wet asphalt, the $3.0\\,\\text{m/s}^2$ of a snowy road and the $1.5\\,\\text{m/s}^2$ of an icy road are rounded example values: the real grip depends on the tyres, the temperature and the surface. The distances on the road are to scale, the cars are not. The rear bumper of the car in front is $25\\,\\text{m}$ or $50\\,\\text{m}$ from the dashed line.",
+      "calc": "The speed is converted: $v_0\\,(\\text{m/s}) = v_0\\,(\\text{km/h}) : 3.6$. The reaction distance is $s_\\text{r} = v_0\\,t_\\text{r}$. At a time $\\tau$ from the start of braking the speed is $v = v_0 - a\\tau$ and the distance travelled is the area under the $(t,v)$ graph. The car stops when $\\tau = \\dfrac{v_0}{a}$, and the braking distance is $s_\\text{j} = \\dfrac{v_0^2}{2a}$. If the car in front is closer than the stopping distance, the simulation calculates the speed at the moment when the distance travelled equals its distance."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: speed and stopping distance",
+      "intro": "Test prediction 1. The starting state chooses a reaction time of $1.0\\,\\text{s}$, a dry road and no obstacle. Change only the driving speed. Press *Start* and record the measurement when the car has stopped. Try at least the speeds $50\\,\\text{km/h}$ and $100\\,\\text{km/h}$, and also, for example, $30\\,\\text{km/h}$ and $60\\,\\text{km/h}$.",
+      "initial": {
+        "v0": "50",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "ei"
+      },
+      "names": {
+        "v0": "driving speed $v_0$",
+        "tr": "reaction time $t_\\text{r}$",
+        "keli": "keli",
+        "este": "ahead"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "50": "$50\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1.0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "dry asphalt"
+        },
+        "este": {
+          "ei": "no obstacle"
+        }
+      },
+      "locked": [
+        "tr",
+        "keli",
+        "este"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "sR",
+          "label": "$s_\\text{r}$ (m)"
+        },
+        {
+          "key": "sJ",
+          "label": "$s_\\text{j}$ (m)"
+        },
+        {
+          "key": "sP",
+          "label": "$s_\\text{p}$ (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Compare the rows for the speeds $50\\,\\text{km/h}$ and $100\\,\\text{km/h}$ in the table. What happens to the reaction distance and the braking distance when the speed doubles?",
+        "choices": [
+          {
+            "text": "The reaction distance doubles and the braking distance quadruples.",
+            "correct": true,
+            "feedback": "Correct. In the model values $s_\\text{r}$ grows from $13.9\\,\\text{m}$ to $27.8\\,\\text{m}$ and $s_\\text{j}$ from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$. The reaction distance is proportional to the speed, the braking distance to the square of the speed."
+          },
+          {
+            "text": "Both double, because they are proportional to the speed.",
+            "feedback": "Look at the braking distance column: $10.7\\,\\text{m}$ changes to $42.9\\,\\text{m}$, to four times. Only the reaction distance is proportional to the speed."
+          },
+          {
+            "text": "Both quadruple, because the speed affects both in the same way.",
+            "feedback": "The reaction distance $13.9\\,\\text{m}$ changes to $27.8\\,\\text{m}$, that is, it doubles. During the reaction time the car moves at a constant speed, so the distance is speed times time."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: does the car stop in time?",
+      "intro": "Test prediction 2. The starting state chooses a reaction time of $1.0\\,\\text{s}$, a dry road and a stopped car $25\\,\\text{m}$ ahead. Change only the driving speed. First drive at $50\\,\\text{km/h}$ and then at $60\\,\\text{km/h}$, and record both runs. Also try $40\\,\\text{km/h}$ and $80\\,\\text{km/h}$.",
+      "initial": {
+        "v0": "50",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "25"
+      },
+      "names": {
+        "v0": "driving speed $v_0$",
+        "tr": "reaction time $t_\\text{r}$",
+        "keli": "keli",
+        "este": "ahead"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "50": "$50\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1.0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "dry asphalt"
+        },
+        "este": {
+          "25": "stopped car $25\\,\\text{m}$ ahead"
+        }
+      },
+      "locked": [
+        "tr",
+        "keli",
+        "este"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "vImpact",
+          "label": "collision speed (km/h)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "The car stops before the obstacle from $50\\,\\text{km/h}$, but from $60\\,\\text{km/h}$ it hits it at about $41\\,\\text{km/h}$. What explains such a high collision speed?",
+        "choices": [
+          {
+            "text": "The greater speed lengthens the reaction distance, so only a short distance is left for braking.",
+            "correct": true,
+            "feedback": "Correct. The reaction distance grows from $13.9\\,\\text{m}$ to $16.7\\,\\text{m}$, so about $8\\,\\text{m}$ is left for braking. That is enough to remove only part of the speed, because reducing a high speed needs a long distance."
+          },
+          {
+            "text": "The collision speed is always the difference of the speeds, so it is about $10\\,\\text{km/h}$.",
+            "feedback": "According to the table the collision speed is about $41\\,\\text{km/h}$, not $10\\,\\text{km/h}$. The car has time to brake for only about $8\\,\\text{m}$, and most of the speed is still left."
+          },
+          {
+            "text": "At a greater speed the deceleration is smaller, so the brakes work worse.",
+            "feedback": "In the model the deceleration is the same $9.0\\,\\text{m/s}^2$ at all speeds. The difference arises because the reaction distance gets longer and less distance is left for braking than removing the high speed would need."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: road conditions",
+      "optional": true,
+      "intro": "Investigate the effect of the road conditions. The starting state chooses a speed of $80\\,\\text{km/h}$, a reaction time of $1.0\\,\\text{s}$ and no obstacle. Change only the road conditions and record every run. How many times as long is the braking distance on an icy road compared with a dry road?",
+      "initial": {
+        "v0": "80",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "ei"
+      },
+      "names": {
+        "v0": "driving speed $v_0$",
+        "tr": "reaction time $t_\\text{r}$",
+        "keli": "keli",
+        "este": "ahead"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "80": "$80\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1.0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "dry asphalt"
+        },
+        "este": {
+          "ei": "no obstacle"
+        }
+      },
+      "locked": [
+        "v0",
+        "tr",
+        "este"
+      ],
+      "vary": "keli",
+      "measure": [
+        {
+          "key": "a",
+          "label": "$a$ (m/s²)"
+        },
+        {
+          "key": "sJ",
+          "label": "$s_\\text{j}$ (m)"
+        },
+        {
+          "key": "sP",
+          "label": "$s_\\text{p}$ (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "How does the braking distance change when the deceleration falls from $9.0\\,\\text{m/s}^2$ on a dry road to $1.5\\,\\text{m/s}^2$ on an icy road, that is, to a sixth?",
+        "choices": [
+          {
+            "text": "The braking distance grows to six times as long.",
+            "correct": true,
+            "feedback": "Correct. In the model values the braking distance grows from $27.4\\,\\text{m}$ to $165\\,\\text{m}$. The braking distance is inversely proportional to the deceleration, $s_\\text{j} = \\dfrac{v_0^2}{2a}$."
+          },
+          {
+            "text": "The braking distance grows to $36$ times as long.",
+            "feedback": "The square applies to the speed, not to the deceleration. In the model values the braking distance grows from $27.4\\,\\text{m}$ to $165\\,\\text{m}$, that is, to six times as long."
+          },
+          {
+            "text": "The braking distance stays the same, because the speed is the same.",
+            "feedback": "The same speed removed with a smaller deceleration goes more slowly, so the car travels a longer distance. In the model values $27.4\\,\\text{m}$ changes to $165\\,\\text{m}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tormaystesti",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "A collision with and without a belt",
+      "source": "example",
+      "text": "The table gives rounded example values for a $75\\,\\text{kg}$ passenger in a head-on collision in which the car hits at $50\\,\\text{km/h}$ and stops. A passenger wearing a belt slows down with the crumpling front of the car. Without a belt the passenger keeps moving until they hit the dashboard, and stop there. In the table $\\Delta t$ is the time in which the passenger stops.\n\n| Situation | $v$ before | $v$ after | $\\Delta t$ |\n|---|---|---|---|\n| belt and airbag | $50\\,\\text{km/h}$ | $0$ | $0.10\\,\\text{s}$ |\n| without a belt | $50\\,\\text{km/h}$ | $0$ | $0.010\\,\\text{s}$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "How many times as large is the average force on a passenger without a belt compared with a passenger with a belt and an airbag?",
+        "choices": [
+          {
+            "text": "About ten times as large.",
+            "correct": true,
+            "feedback": "Correct. The change in momentum $m\\,\\Delta v$ is the same, about $1040\\,\\text{kg}\\cdot\\text{m/s}$. By the impulse–momentum principle $F_\\text{avg}\\,\\Delta t$ is therefore the same, and a tenth of the time means ten times the force: about $10\\,\\text{kN}$ and $100\\,\\text{kN}$."
+          },
+          {
+            "text": "Equal, because the change in speed is the same.",
+            "feedback": "The same change in speed means the same change in momentum, that is, the same impulse $F_\\text{avg}\\,\\Delta t$. When the time is a tenth, the force must be ten times as large."
+          },
+          {
+            "text": "About a tenth, because the collision lasts a shorter time.",
+            "feedback": "A short time does not reduce the force but increases it: the same change in momentum must be produced in a tenth of the time, so the force is ten times as large."
+          },
+          {
+            "text": "About a hundred times as large.",
+            "feedback": "The force is inversely proportional to the time, not to the square of the time. The time is a tenth, so the force is ten times as large."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tilasto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "What do the statistics say about the seat belt?",
+      "optional": true,
+      "source": "statistics",
+      "source_note": "Accident Investigation Institute (OTI): OTI seat belt report 2023, fatal accidents investigated by the road accident investigation boards 2017–2021; Liikenneturva: seat belt use monitoring 2024 (Taloustaito 2025).",
+      "text": "The road accident investigation boards investigate every fatal accident. The table shows those who died in cars and vans in 2017–2021 according to whether the seat belt was fastened. In Liikenneturva's monitoring in 2024, among those in the front seat, $98\\,\\%$ outside built-up areas and $97\\,\\%$ in built-up areas used a belt.\n\n| Deaths 2017–2021 | Number |\n|---|---|\n| seat belt fastened | $278$ |\n| without a seat belt | $198$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "What can be concluded from the data with good reason?",
+        "choices": [
+          {
+            "text": "The share of those without a belt among the dead is many times their share in traffic.",
+            "correct": true,
+            "feedback": "Correct: those without a belt are a few per cent of people in traffic, but $198 : 476 \\approx 42\\,\\%$ of the dead. Note, however, that the figures are from different years and that people without a belt also tend to drive more riskily than others, so the whole difference cannot be credited to the belt. The boards nevertheless estimated that $114$ people without a belt could have survived with one."
+          },
+          {
+            "text": "The seat belt hardly helps, because most of the dead wore a seat belt.",
+            "feedback": "Most of the dead wore a belt because almost all drivers and passengers wear one. The right comparison is between shares: those without a belt are a few per cent of people in traffic, but $198 : 476 \\approx 42\\,\\%$ of the dead."
+          },
+          {
+            "text": "About $42\\,\\%$ of Finnish motorists still drive without a seat belt.",
+            "feedback": "$42\\,\\%$ is the share of those without a belt among the dead, not among all motorists. In Liikenneturva's monitoring $97$–$98\\,\\%$ in the front seat used a belt, so those without a belt are only a few per cent of people in traffic."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Using your own measurements, explain how the stopping distance depends on speed and why a speed $10\\,\\text{km/h}$ higher can turn a stop into a collision at a surprisingly high speed.",
+      "criteria": [
+        "The answer separates the reaction distance and the braking distance and says that the reaction distance doubles and the braking distance quadruples when the speed doubles.",
+        "The answer uses your own numbers, for example $s_\\text{j}$ $10.7\\,\\text{m}$ and $42.9\\,\\text{m}$ at the speeds $50$ and $100\\,\\text{km/h}$.",
+        "The answer explains that at a higher speed the reaction distance takes a larger part of the distance to the obstacle, so too little distance is left for braking.",
+        "The answer gives the collision speed of experiment 2, about $41\\,\\text{km/h}$, and says that the figures are model values."
+      ],
+      "model": "In experiment 1 the reaction distance grew in direct proportion to the speed, in the model values from $13.9\\,\\text{m}$ to $27.8\\,\\text{m}$ when the speed grew from $50\\,\\text{km/h}$ to $100\\,\\text{km/h}$. The braking distance grew from $10.7\\,\\text{m}$ to $42.9\\,\\text{m}$, that is, to four times, because removing double the speed takes twice as long and the car moves twice as fast for that time. The stopping distance grew from $24.6\\,\\text{m}$ to $70.6\\,\\text{m}$. In experiment 2 the car stopped from $50\\,\\text{km/h}$ before the car $25\\,\\text{m}$ ahead, but from $60\\,\\text{km/h}$ the reaction distance was already $16.7\\,\\text{m}$, and about $8\\,\\text{m}$ was left for braking. The car hit it at about $41\\,\\text{km/h}$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements and the theory. What surprised you most? Write in your own words why a small increase in speed can be decisive and why the seat belt reduces the force even though the change in momentum is the same.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the braking distance when the speed of the car is $50\\,\\text{km/h}$ and the deceleration $9.0\\,\\text{m/s}^2$: $s_\\text{j} = \\dfrac{v_0^2}{2a} = \\dfrac{50^2}{2 \\cdot 9.0}\\,\\text{m} \\approx 139\\,\\text{m}$. The result is more than ten times what the Liikenneturva calculator gives. What is wrong in the calculation?",
+      "choices": [
+        {
+          "text": "The speed has not been converted to $\\text{m/s}$ before substituting.",
+          "correct": true,
+          "feedback": "Correct. $50\\,\\text{km/h} \\approx 13.9\\,\\text{m/s}$, and $s_\\text{j} = \\dfrac{(13.9\\,\\text{m/s})^2}{2 \\cdot 9.0\\,\\text{m/s}^2} \\approx 10.7\\,\\text{m}$. The units reveal the error: $\\tfrac{(\\text{km/h})^2}{\\text{m/s}^2}$ is not a metre."
+        },
+        {
+          "text": "The formula is missing the reaction distance $v_0\\,t_\\text{r}$.",
+          "feedback": "The reaction distance belongs to the stopping distance, but here only the braking distance is asked. Besides, adding the reaction distance would only increase a result that is already too large. The error is in the unit: the speed has been substituted in $\\text{km/h}$."
+        },
+        {
+          "text": "The formula should be $s_\\text{j} = \\dfrac{v_0}{2a}$ without the square.",
+          "feedback": "The square belongs in the formula: the braking distance is the area $\\tfrac{1}{2}\\,v_0\\,\\tfrac{v_0}{a}$ of the triangle on the $(t,v)$ graph. Without the square the unit would not be a metre. The error is that the speed is in $\\text{km/h}$."
+        },
+        {
+          "text": "The deceleration should be substituted as negative, $-9.0\\,\\text{m/s}^2$.",
+          "feedback": "In the formula $a$ is the deceleration, that is, the magnitude of the acceleration, so it is positive. A negative value would give a negative distance. The error is that the speed is in $\\text{km/h}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "optional": true,
+      "prompt": "A car is driving on a wet road in the dark of an autumn evening at $80\\,\\text{km/h}$. A moose steps onto the road $45\\,\\text{m}$ in front of the car. The driver's reaction time is $1.0\\,\\text{s}$, and the deceleration of the car on the wet road is $6.0\\,\\text{m/s}^2$. At what speed does the car hit the moose? Answer in $\\text{km/h}$.",
+      "answer": 53.4565,
+      "unit": "km/h",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the reaction distance. How much distance is left for braking before the moose?",
+        "If the speed of the car at the moose is $v$, stopping would still need the distance $\\dfrac{v^2}{2a}$. The whole braking distance $\\dfrac{v_0^2}{2a}$ is therefore the distance braked up to the moose plus $\\dfrac{v^2}{2a}$.",
+        "The reaction distance is $22.2\\,\\text{m}$, so $22.8\\,\\text{m}$ is left for braking. Solve $v^2 = v_0^2 - 2a \\cdot 22.8\\,\\text{m}$ and convert the result to $\\text{km/h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 80,
+          "feedback": "The car has time to brake, because the reaction distance $22.2\\,\\text{m}$ is shorter than $45\\,\\text{m}$. There are $22.8\\,\\text{m}$ left for braking, and that reduces the speed."
+        },
+        {
+          "value": 0,
+          "feedback": "Check whether the car stops: the stopping distance is $22.2\\,\\text{m} + 41.2\\,\\text{m} \\approx 63\\,\\text{m}$, more than $45\\,\\text{m}$. The car hits the moose, and the speed is calculated using the braked distance $22.8\\,\\text{m}$."
+        },
+        {
+          "value": 14.85,
+          "feedback": "Your calculation is correct, but the result is in $\\text{m/s}$. Multiply by $3.6$ to get the speed in $\\text{km/h}$."
+        }
+      ],
+      "solution": "**Given:** $v_0 = 80\\,\\text{km/h}$, reaction time $t_\\text{r} = 1.0\\,\\text{s}$, deceleration on the wet road $a = 6.0\\,\\text{m/s}^2$, distance to the moose $d = 45\\,\\text{m}$\n\n**Find:** the speed of the car $v$ at the moose in $\\text{km/h}$\n\n**Principle:** During the reaction time the car moves at a constant speed, so the reaction distance is $v_0\\,t_\\text{r}$. After that the deceleration is constant. The stopping distance $22.2\\,\\text{m} + 41.2\\,\\text{m} \\approx 63\\,\\text{m}$ is more than $45\\,\\text{m}$, so the car does not stop. From speed $v$ stopping would still need the braking distance $\\dfrac{v^2}{2a}$, so the whole braking distance is the distance braked up to the moose plus this remaining distance.\n\n**Formula:** $\\dfrac{v_0^2}{2a} = (d - v_0\\,t_\\text{r}) + \\dfrac{v^2}{2a}$, so $v = \\sqrt{v_0^2 - 2a\\,(d - v_0\\,t_\\text{r})}$\n\n**Conversions:** $80\\,\\text{km/h} = \\dfrac{80 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 22.22\\,\\text{m/s}$. The answer is finally converted back: $1\\,\\text{m/s} = 3.6\\,\\text{km/h}$.\n\n**Substitution:** $d - v_0\\,t_\\text{r} = 45\\,\\text{m} - 22.22\\,\\text{m} = 22.78\\,\\text{m}$ and $v^2 = (22.22\\,\\text{m/s})^2 - 2 \\cdot 6.0\\,\\text{m/s}^2 \\cdot 22.78\\,\\text{m} = 220.5\\,\\text{m}^2/\\text{s}^2$, so $v = \\sqrt{220.5}\\,\\text{m/s} \\approx 14.85\\,\\text{m/s} \\approx 53.5\\,\\text{km/h}$\n\n**Answer:** $53\\,\\text{km/h}$, two significant figures like the reaction time $1.0\\,\\text{s}$, the deceleration $6.0\\,\\text{m/s}^2$ and the distance $45\\,\\text{m}$.\n\n**Reasonableness:** The speed is lower than $80\\,\\text{km/h}$ but more than half of it, because the car has time to brake for only about $23\\,\\text{m}$, less than half of the $41\\,\\text{m}$ braking distance it needs. On a dry road ($9.0\\,\\text{m/s}^2$) the car would have stopped in $49.7\\,\\text{m}$ and would still have hit the moose, but much more slowly."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. First convert the speed to $\\text{m/s}$, separate the reaction distance and the braking distance, and solve the asked quantity in symbols before substituting. Level 1 is enough for basic competence; levels 2 and 3 deepen it."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A driver drives on a dry road at $70\\,\\text{km/h}$ instead of $50\\,\\text{km/h}$, that is, the speed is $40\\,\\%$ higher. The deceleration is the same. By how much does the braking distance grow?",
+      "choices": [
+        {
+          "text": "It almost doubles.",
+          "correct": true,
+          "feedback": "Correct. The braking distance is proportional to the square of the speed: $\\left(\\tfrac{70}{50}\\right)^2 = 1.4^2 = 1.96$. When the speed grows by $40\\,\\%$, the braking distance grows by almost $100\\,\\%$."
+        },
+        {
+          "text": "It grows by $40\\,\\%$.",
+          "feedback": "That is how the reaction distance grows, since it is proportional to the speed. The braking distance is proportional to the square of the speed: $1.4^2 = 1.96$, so it almost doubles."
+        },
+        {
+          "text": "It stays the same, because the brakes and the road are the same.",
+          "feedback": "The same deceleration removes the same amount of speed each second. Removing a higher speed therefore takes longer, and during that time the car moves faster: the braking distance is multiplied by $1.4^2 \\approx 2$."
+        },
+        {
+          "text": "It grows by $20\\,\\%$.",
+          "feedback": "The braking distance grows faster than the speed, not slower. It is proportional to the square of the speed: $1.4^2 = 1.96$."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "On a snowy road the deceleration of a car in braking is $3.0\\,\\text{m/s}^2$. The driver drives at $60\\,\\text{km/h}$, and the reaction time is $1.0\\,\\text{s}$. How long is the stopping distance of the car? Answer in metres.",
+      "answer": 62.963,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "The stopping distance is the sum of two distances. What are they?",
+        "Convert the speed to $\\text{m/s}$ and use the formula $s_\\text{p} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$.",
+        "$v_0 \\approx 16.67\\,\\text{m/s}$, so the reaction distance is $16.7\\,\\text{m}$. Now calculate the braking distance."
+      ],
+      "mistakes": [
+        {
+          "value": 46.296,
+          "feedback": "This is the braking distance. The stopping distance also includes the reaction distance $v_0\\,t_\\text{r} \\approx 16.7\\,\\text{m}$, which the car travels before the brakes start to work."
+        },
+        {
+          "value": 660,
+          "feedback": "The speed has been substituted in $\\text{km/h}$. Convert it first: $60\\,\\text{km/h} \\approx 16.67\\,\\text{m/s}$."
+        },
+        {
+          "value": 16.667,
+          "feedback": "This is the reaction distance. Add the braking distance $\\dfrac{v_0^2}{2a}$ to it."
+        }
+      ],
+      "solution": "**Given:** $v_0 = 60\\,\\text{km/h}$, reaction time $t_\\text{r} = 1.0\\,\\text{s}$, deceleration on the snowy road $a = 3.0\\,\\text{m/s}^2$\n\n**Find:** the stopping distance $s_\\text{p}$ in $\\text{m}$\n\n**Principle:** During the reaction time the car moves at a constant speed, so the reaction distance is speed times time. Then the car slows down at a constant deceleration, when the road is horizontal and air resistance is neglected, so the braking distance is the area of the triangle on the $(t,v)$ graph. The stopping distance is their sum.\n\n**Formula:** $s_\\text{p} = s_\\text{r} + s_\\text{j}$, so $s_\\text{p} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$\n\n**Conversions:** $60\\,\\text{km/h} = \\dfrac{60 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 16.67\\,\\text{m/s}$\n\n**Substitution:** $s_\\text{p} = 16.67\\,\\text{m/s} \\cdot 1.0\\,\\text{s} + \\dfrac{(16.67\\,\\text{m/s})^2}{2 \\cdot 3.0\\,\\text{m/s}^2} = 16.67\\,\\text{m} + 46.30\\,\\text{m} = 62.96\\,\\text{m}$\n\n**Answer:** $63\\,\\text{m}$, two significant figures like the reaction time $1.0\\,\\text{s}$ and the deceleration $3.0\\,\\text{m/s}^2$.\n\n**Reasonableness:** On a dry road ($9.0\\,\\text{m/s}^2$) the braking distance would be a third, about $15\\,\\text{m}$, and the stopping distance about $32\\,\\text{m}$. On snow the deceleration is a third, so the braking distance is three times as long, as in the result. The reaction distance does not depend on the road conditions."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain with the impulse–momentum principle why the seat belt and the airbag reduce the force on a passenger in a head-on collision, even though the passenger stops from the same speed as without them. Also tell why the airbag does not replace the seat belt.",
+      "criteria": [
+        "The answer says that the passenger's change in momentum $m\\,\\Delta v$ is the same with and without a belt, because the speed changes from the same value to zero.",
+        "The answer uses the impulse–momentum principle $F_\\text{avg}\\,\\Delta t = m\\,\\Delta v$: a longer collision time means a smaller average force.",
+        "The answer says how the belt lengthens the time: the passenger slows down with the crumpling front of the car and does not hit the interior at full speed.",
+        "The answer mentions that the airbag spreads the force over a large area and works correctly only when the belt holds the passenger in place."
+      ],
+      "model": "The passenger stops from the same speed, so their momentum changes from $mv$ to zero in both cases. By the impulse–momentum principle $F_\\text{avg}\\,\\Delta t = m\\,\\Delta v$, so the same change in momentum is produced by a smaller average force the longer the collision time. The belt fastens the passenger to the car, and they slow down with the crumpling front of the car in about a tenth of a second. Without a belt they keep moving and stop against the dashboard or the windscreen in about a hundredth of a second, and the force is about ten times as large. The airbag lengthens the stopping time of the head and upper body and spreads the force over a large area, so the pressure on the body decreases. It is designed for a passenger who is fastened with a belt: without a belt the body slides forward and may meet the inflating bag too early or miss it, and nothing keeps the passenger in the car."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and open the answer only after that."
+    }
+  ]
+}

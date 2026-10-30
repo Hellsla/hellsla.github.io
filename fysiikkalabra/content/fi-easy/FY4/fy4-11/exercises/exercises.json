@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-11-L1-01",
+      "level": 1,
+      "text": "Auto ajaa nopeudella $72{,}0\\,\\text{km/h}$, ja kuljettajan reaktioaika on $1{,}20\\,\\text{s}$. Kuinka pitkän matkan auto kulkee reaktioajan aikana?",
+      "answer": 24.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-02",
+      "level": 1,
+      "text": "Auton nopeus on $25{,}0\\,\\text{m/s}$, kun kuljettaja alkaa jarruttaa. Hidastuvuus on $8{,}00\\,\\text{m/s}^2$. Kuinka pitkä on jarrutusmatka?",
+      "answer": 39.0625,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-03",
+      "level": 1,
+      "text": "Polkupyöräilijä jarruttaa nopeudesta $20{,}0\\,\\text{m/s}$ pysähdyksiin. Hidastuvuus on $5{,}00\\,\\text{m/s}^2$. Kuinka kauan jarrutus kestää?",
+      "answer": 4.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-04",
+      "level": 1,
+      "text": "Kolarissa $70{,}0\\,\\text{kg}$:n matkustajan nopeus muuttuu arvosta $15{,}0\\,\\text{m/s}$ nollaan ajassa $0{,}120\\,\\text{s}$. Kuinka suuri on matkustajaan kohdistuva keskimääräinen voima?",
+      "answer": 8750.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-05",
+      "level": 1,
+      "text": "Auto liikkuu nopeudella $15{,}0\\,\\text{m/s}$. Kuljettaja huomaa vaaran, ja ennen kuin jarrut alkavat toimia, auto kulkee $18{,}0\\,\\text{m}$. Kuinka pitkä on kuljettajan reaktioaika?",
+      "answer": 1.2,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-11-L2-01",
+      "level": 2,
+      "text": "Auto ajaa nopeudella $90\\,\\text{km/h}$. Kuljettajan reaktioaika on $1{,}5\\,\\text{s}$, ja auton hidastuvuus jarrutuksessa on $7{,}5\\,\\text{m/s}^2$. Kuinka pitkä on pysähtymismatka?",
+      "answer": 79.16666666666666,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-02",
+      "level": 2,
+      "text": "Auto ajaa lumisella vaakasuoralla tiellä nopeudella $100\\,\\text{km/h}$. Renkaiden ja lumen välinen kitkakerroin on $0{,}30$. Kuinka pitkä on jarrutusmatka, kun auto jarruttaa niin lujaa kuin pito sallii? Ilmanvastus jätetään huomiotta.",
+      "answer": 131.09156273727572,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-03",
+      "level": 2,
+      "text": "Auto törmää nopeudella $50{,}0\\,\\text{km/h}$ ja pysähtyy. Vyöhön kiinnitetty $75{,}0\\,\\text{kg}$:n kuljettaja pysähtyy turvatyynyn ja vyön varassa ajassa $0{,}100\\,\\text{s}$. Kuinka suuri on kuljettajaan kohdistuva keskimääräinen voima?",
+      "answer": 10416.666666666666,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-04",
+      "level": 2,
+      "text": "Poliisi mittaa onnettomuuspaikalla auton jarrutusjäljen pituudeksi $32{,}0\\,\\text{m}$. Auto pysähtyi jäljen päähän. Auton hidastuvuus on arvioitu $8{,}0\\,\\text{m/s}^2$:ksi. Kuinka suuri oli auton nopeus jarrutuksen alussa? Vastaa yksikössä $\\text{km/h}$.",
+      "answer": 81.45870119269028,
+      "unit": "km/h",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-11-L3-01",
+      "level": 3,
+      "text": "Koulun kohdalla nopeusrajoitus on $30\\,\\text{km/h}$. Kuljettaja huomaa tielle juoksevan lapsen juuri sillä etäisyydellä, jolla hän ehtisi pysähtyä $30\\,\\text{km/h}$:n nopeudesta. Reaktioaika on $1{,}0\\,\\text{s}$ ja hidastuvuus $9{,}0\\,\\text{m/s}^2$. Millä nopeudella auto saavuttaisi lapsen, jos kuljettaja ajaisikin $40\\,\\text{km/h}$? Vastaa yksikössä $\\text{km/h}$.",
+      "answer": 36.71511950137163,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-02",
+      "level": 3,
+      "text": "Auto törmää nopeudella $50{,}0\\,\\text{km/h}$. Vyöhön kiinnitetty $70{,}0\\,\\text{kg}$:n matkustaja liikkuu auton suhteen ja auton mukana yhteensä $0{,}600\\,\\text{m}$, ennen kuin hän pysähtyy. Oletetaan, että hänen hidastuvuutensa on vakio. Kuinka suuri on matkustajaan kohdistuva keskimääräinen voima?",
+      "answer": 11252.572016460907,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-03",
+      "level": 3,
+      "text": "Auto ajaa nopeudella $80\\,\\text{km/h}$ toisen auton perässä samalla nopeudella. Edellä ajava auto jarruttaa yllättäen hidastuvuudella $9{,}0\\,\\text{m/s}^2$. Takana ajavan kuljettajan reaktioaika on $1{,}0\\,\\text{s}$, ja hänen autonsa hidastuvuus on vain $6{,}0\\,\\text{m/s}^2$ kuluneiden renkaiden vuoksi. Kuinka suuri autojen välimatkan on vähintään oltava, jotta takana ajava pysähtyy ennen kuin osuu edellä ajavaan?",
+      "answer": 35.93964334705075,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

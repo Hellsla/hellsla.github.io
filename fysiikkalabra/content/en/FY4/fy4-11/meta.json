@@ -1,0 +1,25 @@
+{
+  "id": "fy4-11",
+  "course": "FY4",
+  "title": "Road safety: braking, seat belts and airbags",
+  "goals": [
+    "LOPS FY4: knows safety aspects related to force and motion",
+    "Thematic study: road safety; the distance and time needed for braking and stopping; the role of the seat belt and the airbag in collisions",
+    "Cross-curricular: wellbeing competence"
+  ],
+  "prerequisites": [
+    "fy4-6",
+    "fy4-10"
+  ],
+  "glossary": [
+    "reaktioaika",
+    "reaktiomatka",
+    "jarrutusmatka",
+    "pysähtymismatka",
+    "turvavyö",
+    "törmäysaika"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

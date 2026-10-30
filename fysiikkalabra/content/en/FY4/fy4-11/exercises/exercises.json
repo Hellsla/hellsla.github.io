@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-11-L1-01",
+      "level": 1,
+      "text": "A car is driving at $72.0\\,\\text{km/h}$, and the driver's reaction time is $1.20\\,\\text{s}$. How far does the car travel during the reaction time?",
+      "answer": 24.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-02",
+      "level": 1,
+      "text": "The speed of a car is $25.0\\,\\text{m/s}$ when the driver starts to brake. The deceleration is $8.00\\,\\text{m/s}^2$. How long is the braking distance?",
+      "answer": 39.0625,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-03",
+      "level": 1,
+      "text": "A cyclist brakes from $20.0\\,\\text{m/s}$ to a stop. The deceleration is $5.00\\,\\text{m/s}^2$. How long does the braking take?",
+      "answer": 4.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-04",
+      "level": 1,
+      "text": "In a crash the speed of a $70.0\\,\\text{kg}$ passenger changes from $15.0\\,\\text{m/s}$ to zero in $0.120\\,\\text{s}$. How large is the average force on the passenger?",
+      "answer": 8750.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L1-05",
+      "level": 1,
+      "text": "A car moves at $15.0\\,\\text{m/s}$. The driver notices danger, and before the brakes start to work the car travels $18.0\\,\\text{m}$. How long is the driver's reaction time?",
+      "answer": 1.2,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-11-L2-01",
+      "level": 2,
+      "text": "A car is driving at $90\\,\\text{km/h}$. The driver's reaction time is $1.5\\,\\text{s}$, and the deceleration of the car in braking is $7.5\\,\\text{m/s}^2$. How long is the stopping distance?",
+      "answer": 79.16666666666666,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-02",
+      "level": 2,
+      "text": "A car is driving on a snowy horizontal road at $100\\,\\text{km/h}$. The coefficient of friction between the tyres and the snow is $0.30$. How long is the braking distance when the car brakes as hard as the grip allows? Air resistance is neglected.",
+      "answer": 131.09156273727572,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-03",
+      "level": 2,
+      "text": "A car collides at $50.0\\,\\text{km/h}$ and stops. A $75.0\\,\\text{kg}$ driver wearing a belt stops with the help of the airbag and the belt in $0.100\\,\\text{s}$. How large is the average force on the driver?",
+      "answer": 10416.666666666666,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L2-04",
+      "level": 2,
+      "text": "At the scene of an accident the police measure the length of a car's skid mark as $32.0\\,\\text{m}$. The car stopped at the end of the mark. The deceleration of the car is estimated as $8.0\\,\\text{m/s}^2$. What was the speed of the car at the start of braking? Answer in $\\text{km/h}$.",
+      "answer": 81.45870119269028,
+      "unit": "km/h",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-11-L3-01",
+      "level": 3,
+      "text": "The speed limit at a school is $30\\,\\text{km/h}$. A driver notices a child running onto the road at exactly the distance at which they would be able to stop from $30\\,\\text{km/h}$. The reaction time is $1.0\\,\\text{s}$ and the deceleration $9.0\\,\\text{m/s}^2$. At what speed would the car reach the child if the driver were driving at $40\\,\\text{km/h}$? Answer in $\\text{km/h}$.",
+      "answer": 36.71511950137163,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-02",
+      "level": 3,
+      "text": "A car collides at $50.0\\,\\text{km/h}$. A $70.0\\,\\text{kg}$ passenger wearing a belt moves, relative to the car and with the car, a total of $0.600\\,\\text{m}$ before stopping. Assume that their deceleration is constant. How large is the average force on the passenger?",
+      "answer": 11252.572016460907,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-11-L3-03",
+      "level": 3,
+      "text": "A car is driving behind another car at $80\\,\\text{km/h}$, the same speed. The car in front suddenly brakes at a deceleration of $9.0\\,\\text{m/s}^2$. The reaction time of the driver behind is $1.0\\,\\text{s}$, and the deceleration of their car is only $6.0\\,\\text{m/s}^2$ because of worn tyres. What is the smallest gap between the cars that lets the driver behind stop before hitting the car in front?",
+      "answer": 35.93964334705075,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}
