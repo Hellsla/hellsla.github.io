@@ -1,0 +1,15 @@
+[
+  {
+    "q": "A cart on a table and a hanging mass are tied by a string over a pulley. Why are the string's forces $\\overline{T}_1$ on the cart and $\\overline{T}_2$ on the hanging mass not an action–reaction pair?",
+    "a": "They act on different bodies but belong to different interactions: $\\overline{T}_1$ to the string–cart pair and $\\overline{T}_2$ to the string–mass pair. The reaction force of $\\overline{T}_1$ is the force of the cart on the string. The forces $\\overline{T}_1$ and $\\overline{T}_2$ are equal because the string is light and the pulley is light and frictionless."
+  },
+  {
+    "q": "Write the equation of motion of the hanging mass when it descends with acceleration $a$ and the tension in the string is $T$. What is the positive direction?",
+    "fbd": "equations",
+    "a": "The positive direction is down, along the acceleration: $m_2 g - T = m_2 a$. The weight $m_2 g$ is down and the tension $T$ is up, so the tension is smaller than the weight."
+  },
+  {
+    "q": "A cart on a table and a hanging mass are tied by a string over a pulley. The mass of the cart is doubled and the hanging mass stays the same. How do the acceleration and the tension change?",
+    "a": "The acceleration decreases, because the same weight of the hanging mass accelerates a greater total mass: $a = \\tfrac{m_2 g}{m_1 + m_2}$. The tension increases, because the mass of the cart grows more than the acceleration decreases, and $T = m_1 a$ approaches the weight $m_2 g$. It still stays smaller than it."
+  }
+]

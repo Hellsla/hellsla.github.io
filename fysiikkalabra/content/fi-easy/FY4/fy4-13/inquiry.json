@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "contribution": "Kaksi langalla kytkettyä kappaletta käsitellään yksi kerrallaan. Kummallekin piirretään oma voimakuvio ja kirjoitetaan oma liikeyhtälö. Niistä ratkaistaan yhteinen kiihtyvyys ja langan jännitysvoima. Jännitysvoima ei ole riippuvan kappaleen paino.",
+  "learn": [
+    "laskemaan kytkettyjen kappaleiden kiihtyvyyden ja langan jännitysvoiman kummankin kappaleen liikeyhtälöstä.",
+    "piirtämään kummallekin kappaleelle oman voimakuvion.",
+    "selittämään, miksi kiihtyvän riippuvan kappaleen jännitysvoima ei ole sen paino."
+  ],
+  "prior": [
+    "Newtonin toinen laki $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
+    "Voimakuvion piirtäminen ja liikeyhtälön kirjoittaminen komponenteittain (luku *Voimakuvio ja voimien yhteisvaikutus*)",
+    "Voima ja vastavoima vaikuttavat eri kappaleisiin (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pöydällä on kärry. Kärryyn on sidottu lanka, joka kulkee pöydän reunalla olevan väkipyörän yli. Langan toisessa päässä roikkuu punnus. Kun kärry päästetään liikkeelle, punnus alkaa laskea ja vetää kärryä mukanaan. Punnus ei kuitenkaan putoa yhtä nopeasti kuin vapaasti pudotessaan.",
+      "question": "Mikä kärryä vetää? Kuinka suuri langan voima on verrattuna punnuksen painoon?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: voima ja vastavoima",
+      "optional": true,
+      "prompt": "Lanka vetää pöydällä olevaa kärryä oikealle voimalla $\\overline{T}_1$. Mikä on tämän voiman vastavoima?",
+      "choices": [
+        {
+          "text": "Kärry vetää lankaa vasemmalle yhtä suurella voimalla.",
+          "correct": true,
+          "feedback": "Oikein. Vastavoima kuuluu samaan vuorovaikutukseen kuin alkuperäinen voima. Se vaikuttaa toiseen kappaleeseen: kärry vetää lankaa. Se vaikuttaa lankaan, joten se ei ole kärryn voimakuviossa."
+        },
+        {
+          "text": "Pöydän tukivoima kärryyn. Se on kohtisuorassa pöytää vastaan.",
+          "feedback": "Tukivoima kuuluu eri vuorovaikutukseen, pöydän ja kärryn väliseen. Vastavoima kuuluu aina samaan vuorovaikutukseen kuin voima, jonka pari se on. Tässä se on langan ja kärryn välinen vuorovaikutus."
+        },
+        {
+          "text": "Kärryn paino, joka osoittaa alas.",
+          "feedback": "Paino on Maan ja kärryn välinen vuorovaikutus. Langan voiman vastavoima syntyy langan ja kärryn välisessä vuorovaikutuksessa."
+        },
+        {
+          "text": "Langan voima punnukseen. Se osoittaa langan toisessa päässä ylös.",
+          "feedback": "Se on yhtä suuri kuin $\\overline{T}_1$, kun lanka on kevyt ja väkipyörä on kevyt ja kitkaton. Mutta se vaikuttaa punnukseen ja kuuluu vuorovaikutukseen lanka–punnus. Se ei ole voiman $\\overline{T}_1$ vastavoima."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: langan voima",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Pöydällä oleva kärry ($m_1 = 1{,}0\\,\\text{kg}$) on sidottu langalla väkipyörän yli punnukseen ($m_2 = 0{,}50\\,\\text{kg}$, paino $4{,}9\\,\\text{N}$). Kärry päästetään liikkeelle, ja se kiihtyy. Kitka ja ilmanvastus jätetään huomiotta. Onko langan jännitysvoima $T$ suurempi vai pienempi kuin punnuksen paino $G_2$, vai ovatko ne yhtä suuret?",
+      "choices": [
+        {
+          "text": "$T$ on yhtä suuri kuin $G_2$, koska lanka siirtää punnuksen painon kärryyn.",
+          "feedback": "Jos $T$ olisi yhtä suuri kuin $G_2$, punnukseen vaikuttava kokonaisvoima olisi nolla. Silloin punnus ei kiihtyisi alas. Mallin arvoissa jännitysvoima on $3{,}27\\,\\text{N}$ ja paino $4{,}9\\,\\text{N}$."
+        },
+        {
+          "text": "$T$ on pienempi kuin $G_2$.",
+          "correct": true,
+          "feedback": "Oikein. Punnus kiihtyy alas, joten sen kokonaisvoiman $G_2 - T$ on osoitettava alas. Mallin arvoissa $T = 3{,}27\\,\\text{N}$ ja $G_2 = 4{,}9\\,\\text{N}$. Erotus $1{,}6\\,\\text{N}$ kiihdyttää punnusta."
+        },
+        {
+          "text": "$T$ on suurempi kuin $G_2$, koska kärry vetää punnusta mukanaan.",
+          "feedback": "Jos $T$ olisi suurempi kuin $G_2$, punnuksen kokonaisvoima osoittaisi ylös ja punnus nousisi. Punnus kuitenkin laskee. Siksi lanka vetää sitä ylöspäin painoa pienemmällä voimalla."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksi riippuvaa kappaletta",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Väkipyörän yli kulkevan langan päissä roikkuu kaksi kappaletta. Niiden massat ovat $0{,}30\\,\\text{kg}$ ja $0{,}50\\,\\text{kg}$, ja painot ovat $2{,}9\\,\\text{N}$ ja $4{,}9\\,\\text{N}$. Kappaleet päästetään liikkeelle. Kuinka suuri on langan jännitysvoima $T$?",
+      "choices": [
+        {
+          "text": "$T$ on yhtä suuri kuin kevyemmän kappaleen paino, $2{,}9\\,\\text{N}$.",
+          "feedback": "Silloin kevyemmän kappaleen kokonaisvoima olisi nolla, eikä se nousisi. Se kuitenkin nousee. Siksi lanka vetää sitä ylöspäin painoa suuremmalla voimalla."
+        },
+        {
+          "text": "$T$ on yhtä suuri kuin raskaamman kappaleen paino, $4{,}9\\,\\text{N}$.",
+          "feedback": "Silloin raskaamman kappaleen kokonaisvoima olisi nolla, eikä se laskisi. Se kuitenkin laskee. Siksi lanka vetää sitä ylöspäin painoa pienemmällä voimalla."
+        },
+        {
+          "text": "$T$ on painojen välissä: suurempi kuin $2{,}9\\,\\text{N}$ ja pienempi kuin $4{,}9\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Oikein. Kevyempi kappale nousee, joten $T > G_1$. Raskaampi kappale laskee, joten $T < G_2$. Mallin arvoissa $T = 3{,}68\\,\\text{N}$."
+        },
+        {
+          "text": "$T$ on painojen summa, $7{,}8\\,\\text{N}$.",
+          "feedback": "Lanka vetää kumpaakin kappaletta yhdellä voimalla $T$. Voimia ei lasketa yhteen. Summa $7{,}8\\,\\text{N}$ olisi suurempi kuin kummankin kappaleen paino. Silloin kumpikin kappale nousisi, ja se on mahdotonta."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa pöydällä oleva kärry ja riippuva punnus on sidottu langalla, tai kaksi kappaletta roikkuu väkipyörän yli. Kummallekin kappaleelle on oma voimakuvio.",
+      "howto": "Valitse *Tilanne* ja massat $m_1$ ja $m_2$. *Käynnistä* päästää kappaleet liikkeelle, ja ne kulkevat $0{,}60\\,\\text{m}$. *Alusta* palauttaa kappaleet alkuun. *Nopeus* hidastaa tai nopeuttaa liikettä, mutta lukemat eivät muutu. Voimakuviot ja lukemat näkyvät heti, myös ennen käynnistystä. Jos kaksi riippuvaa kappaletta on yhtä painavia, ne eivät lähde liikkeelle.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Lanka on kevyt ja venymätön. Väkipyörä on kevyt ja kitkaton. Pöydän kitka ja ilmanvastus jätetään huomiotta. Siksi kappaleiden kiihtyvyydet ovat yhtä suuret, ja lanka vetää kumpaakin kappaletta yhtä suurella voimalla $T$. Nopeuden sininen nuoli ja kiihtyvyyden oranssi nuoli ovat tilannekuvassa, koska ne eivät ole voimia. Voimakuvioiden nuolet ovat samassa mittakaavassa.",
+      "calc": "Kärry ja punnus: kärryn yhtälö $T = m_1 a$ ja punnuksen yhtälö $m_2 g - T = m_2 a$ antavat $a = \\dfrac{m_2}{m_1 + m_2}\\,g$ ja $T = m_1 a$. Kaksi riippuvaa kappaletta, $m_2 > m_1$: yhtälöt $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$ antavat $a = \\dfrac{m_2 - m_1}{m_1 + m_2}\\,g$ ja $T = \\dfrac{2 m_1 m_2}{m_1 + m_2}\\,g$. Lukemissa $\\Sigma F_1$ ja $\\Sigma F_2$ ovat kappaleiden kokonaisvoimat liikkeen suuntaan. Lisäksi $g = 9{,}81\\,\\text{m/s}^2$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kärryn massa muuttuu",
+      "fbd": "equations",
+      "intro": "Testaa ennuste. Alkutila valitsee kärryn ja riippuvan punnuksen. Punnuksen massa on $0{,}50\\,\\text{kg}$ ja paino $4{,}9\\,\\text{N}$. Muuta vain kärryn massaa $m_1$. Kirjaa mittaus massoilla $0{,}50\\,\\text{kg}$, $1{,}0\\,\\text{kg}$ ja $1{,}5\\,\\text{kg}$. Katso joka kerta, miten nuolten $\\overline{T}_1$ ja $\\overline{G}_2$ pituudet muuttuvat.",
+      "initial": {
+        "tapa": "karry",
+        "m2": "0.5",
+        "m1": "0.5"
+      },
+      "names": {
+        "tapa": "tilanne",
+        "m1": "kärryn massa m_1",
+        "m2": "punnuksen massa m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tapa": {
+          "karry": "kärry ja punnus"
+        },
+        "m1": {
+          "0.5": "$0{,}50\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.5": "$0{,}50\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tapa",
+        "m2"
+      ],
+      "vary": "m1",
+      "measure": [
+        {
+          "key": "T",
+          "label": "$T$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a$ (m/s$^2$)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kun kärryn massa on $1{,}0\\,\\text{kg}$, taulukossa on jännitysvoima $T$. Kuinka suuri on silloin punnukseen vaikuttava kokonaisvoima? Punnuksen paino on $4{,}9\\,\\text{N}$. Vastaa newtoneina.",
+        "answer": 1.635,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Piirrä punnuksen voimakuvio: paino alas ja jännitysvoima ylös. Kumpi nuoli on pidempi, kun punnus kiihtyy alas?",
+          "Punnus kiihtyy alas, joten kokonaisvoima alas on $\\Sigma F = G_2 - T$.",
+          "$\\Sigma F = 4{,}9\\,\\text{N} - T$. Tässä $T$ on taulukon rivin $m_1 = 1{,}0\\,\\text{kg}$ jännitysvoima."
+        ],
+        "mistakes": [
+          {
+            "value": 3.27,
+            "feedback": "Tämä on jännitysvoima $T$, ei kokonaisvoima. Kokonaisvoima on painon ja jännitysvoiman erotus: $G_2 - T$."
+          },
+          {
+            "value": 4.9,
+            "feedback": "Tämä on punnuksen paino. Punnukseen vaikuttaa myös jännitysvoima ylöspäin. Siksi kokonaisvoima on $G_2 - T$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta kärryn massalla $m_1 = 1{,}0\\,\\text{kg}$ jännitysvoima $T = 3{,}27\\,\\text{N}$. Punnuksen massa on $m_2 = 0{,}50\\,\\text{kg}$ ja paino $G_2 = 4{,}9\\,\\text{N}$.\n\n**Kysytty:** punnukseen vaikuttava kokonaisvoima $\\Sigma F$ yksikössä $\\text{N}$\n\n**Periaate:** Punnus on yksi kytketyistä kappaleista, joten sillä on oma voimakuvio ja oma liikeyhtälö. Punnus kiihtyy alas. Newtonin toisen lain mukaan sen kokonaisvoima osoittaa silloin alas.\n\n**Voimakuvio:** Piirrä punnus suorakulmioksi, positiivinen suunta alas. Paino $\\overline{G}_2$ osoittaa alas ja langan jännitysvoima $\\overline{T}_2$ ylös. Nuoli $\\overline{G}_2$ on pidempi, koska kokonaisvoima osoittaa alas.\n\n**Kaava:** $\\Sigma F = m_2 g - T = G_2 - T$\n\n**Muunnokset:** Kaikki voimat ovat newtoneina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma F = 4{,}905\\,\\text{N} - 3{,}27\\,\\text{N} = 1{,}635\\,\\text{N}$\n\n**Vastaus:** $1{,}6\\,\\text{N}$ alas. Erotuksessa desimaalien määrä ratkaisee. Paino $4{,}9\\,\\text{N}$ on annettu yhdellä desimaalilla, joten tulos pyöristetään yhteen desimaaliin.\n\n**Järkevyys:** Liikeyhtälöstä saadaan $\\Sigma F = m_2 a = 0{,}50\\,\\text{kg} \\cdot 3{,}27\\,\\text{m/s}^2 = 1{,}635\\,\\text{N}$. Tulos on sama kuin erotuksesta. Voima on pienempi kuin paino $4{,}9\\,\\text{N}$, koska lanka kannattelee osan painosta."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kaksi riippuvaa kappaletta",
+      "optional": true,
+      "fbd": "equations",
+      "intro": "Testaa toinen ennuste. Alkutila valitsee kaksi riippuvaa kappaletta. Toisen kappaleen massa $m_2$ on $0{,}50\\,\\text{kg}$. Muuta vain massaa $m_1$. Kirjaa mittaus massoilla $0{,}30\\,\\text{kg}$, $0{,}50\\,\\text{kg}$ ja $1{,}0\\,\\text{kg}$. Vertaa jännitysvoimaa kappaleiden painoihin.",
+      "initial": {
+        "tapa": "kaksi",
+        "m2": "0.5",
+        "m1": "0.3"
+      },
+      "names": {
+        "tapa": "tilanne",
+        "m1": "massa m_1",
+        "m2": "massa m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tapa": {
+          "kaksi": "kaksi kappaletta"
+        },
+        "m1": {
+          "0.3": "$0{,}30\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.5": "$0{,}50\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tapa",
+        "m2"
+      ],
+      "vary": "m1",
+      "measure": [
+        {
+          "key": "G1",
+          "label": "$G_1$ (N)"
+        },
+        {
+          "key": "T",
+          "label": "$T$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a$ (m/s$^2$)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kun $m_1 = 0{,}30\\,\\text{kg}$, kevyempi kappale nousee. Kuinka suuri on siihen vaikuttava kokonaisvoima? Laske se taulukon arvoista. Vastaa newtoneina.",
+        "answer": 0.736,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Piirrä kevyemmän kappaleen voimakuvio. Kumpi voima on suurempi, kun kappale nousee?",
+          "Kappale nousee, joten kokonaisvoima ylös on $\\Sigma F = T - G_1$.",
+          "$\\Sigma F = T - G_1$. Tässä $T$ ja $G_1$ ovat taulukon rivin $m_1 = 0{,}30\\,\\text{kg}$ arvot."
+        ],
+        "mistakes": [
+          {
+            "value": 3.68,
+            "feedback": "Tämä on jännitysvoima $T$. Kokonaisvoima on jännitysvoiman ja painon erotus $T - G_1$."
+          },
+          {
+            "value": 2.94,
+            "feedback": "Tämä on kappaleen paino $G_1$. Kokonaisvoima on jännitysvoiman ja painon erotus $T - G_1$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta, kun $m_1 = 0{,}30\\,\\text{kg}$: paino $G_1 = 2{,}94\\,\\text{N}$ ja jännitysvoima $T = 3{,}68\\,\\text{N}$\n\n**Kysytty:** kevyemmän kappaleen kokonaisvoima $\\Sigma F$ yksikössä $\\text{N}$\n\n**Periaate:** Kevyempi kappale kiihtyy ylös. Newtonin toisen lain mukaan sen kokonaisvoima osoittaa silloin ylös. Kappaleella on oma voimakuvio ja oma liikeyhtälö.\n\n**Voimakuvio:** Piirrä kappale suorakulmioksi, positiivinen suunta ylös. Jännitysvoima $\\overline{T}_1$ osoittaa ylös ja paino $\\overline{G}_1$ alas. Nuoli $\\overline{T}_1$ on pidempi.\n\n**Kaava:** $\\Sigma F = T - G_1$\n\n**Muunnokset:** Kaikki voimat ovat newtoneina. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma F = 3{,}68\\,\\text{N} - 2{,}94\\,\\text{N} = 0{,}74\\,\\text{N}$\n\n**Vastaus:** $0{,}74\\,\\text{N}$ ylös. Taulukon lukemissa on kolme merkitsevää numeroa, mutta erotuksessa on vain kaksi. Lukemat on annettu sadasosan tarkkuudella.\n\n**Järkevyys:** Liikeyhtälöstä saadaan $m_1 a = 0{,}30\\,\\text{kg} \\cdot 2{,}45\\,\\text{m/s}^2 \\approx 0{,}74\\,\\text{N}$. Tulos on sama. Nousevan kappaleen jännitysvoima on suurempi kuin sen paino, kuten pitääkin."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Selitä mittaustesi ja voimakuvioiden avulla, miksi langan jännitysvoima on pienempi kuin punnuksen paino. Selitä myös, miksi se lähestyy painoa, kun kärry on raskaampi.",
+      "criteria": [
+        "Vastaus kertoo, että punnus kiihtyy alas. Siksi sen kokonaisvoima $G_2 - T$ osoittaa alas ja $T < G_2$.",
+        "Vastaus kertoo, että kärryyn vaikuttaa vaakasuunnassa vain lanka. Siksi $T = m_1 a$, ja raskaampi kärry kiihtyy vähemmän.",
+        "Vastaus kertoo, että kun kiihtyvyys pienenee, punnuksen kokonaisvoima $G_2 - T = m_2 a$ pienenee. Silloin $T$ lähestyy painoa $G_2$.",
+        "Vastaus käyttää mittaustulosta, esimerkiksi jännitysvoimaa kahdella eri kärryn massalla."
+      ],
+      "model": "Punnus kiihtyy alas, joten siihen vaikuttava kokonaisvoima $G_2 - T = m_2 a$ osoittaa alas. Siksi $T$ on pienempi kuin paino $G_2 = 4{,}9\\,\\text{N}$. Kärryyn vaikuttaa vaakasuunnassa vain lanka, joten $T = m_1 a$. Kun kärry on raskaampi, kiihtyvyys pienenee ja punnuksen kokonaisvoima $m_2 a$ pienenee. Silloin $T$ lähestyy painoa. Mallin arvoissa $T = 2{,}45\\,\\text{N}$ kärryn massalla $0{,}50\\,\\text{kg}$, $3{,}27\\,\\text{N}$ massalla $1{,}0\\,\\text{kg}$ ja $3{,}68\\,\\text{N}$ massalla $1{,}5\\,\\text{kg}$. Jännitysvoima olisi yhtä suuri kuin paino vasta, jos kappaleet eivät kiihtyisi. Näin on esimerkiksi silloin, kun kärryä pidetään paikallaan."
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Jännitysvoima mitatusta liikkeestä",
+      "optional": true,
+      "source": "example",
+      "fbd": "equations",
+      "text": "Oppilas tutkii kärryn ja riippuvan punnuksen liikettä. Kärryn massa on $1{,}0\\,\\text{kg}$ ja punnuksen massa $0{,}50\\,\\text{kg}$. Kärry lähtee levosta ja kulkee $0{,}80\\,\\text{m}$. Kulkuaika mitataan viidellä toistolla: $0{,}69\\,\\text{s}$, $0{,}71\\,\\text{s}$, $0{,}70\\,\\text{s}$, $0{,}70\\,\\text{s}$ ja $0{,}70\\,\\text{s}$. Keskiarvo on $0{,}70\\,\\text{s}$. Kitka ja ilmanvastus ovat niin pieniä, että ne jätetään huomiotta. Piirrä kärryn voimakuvio vihkoon, ennen kuin vastaat.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on langan jännitysvoima? Laske ensin kärryn kiihtyvyys kulkuajasta. Käytä sitten kärryn liikeyhtälöä. Vastaa newtoneina.",
+        "answer": 3.27,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Kärry lähtee levosta ja liikkuu tasaisesti kiihtyen. Mikä kaava yhdistää matkan, kiihtyvyyden ja ajan?",
+          "$s = \\tfrac{1}{2}at^2$, joten $a = \\dfrac{2s}{t^2}$. Vaakasuunnassa kärryyn vaikuttaa vain lanka: $T = m_1 a$.",
+          "$a = \\dfrac{2 \\cdot 0{,}80\\,\\text{m}}{(0{,}70\\,\\text{s})^2}$ ja $T = 1{,}0\\,\\text{kg} \\cdot a$."
+        ],
+        "mistakes": [
+          {
+            "value": 4.9,
+            "feedback": "Tämä on punnuksen paino. Kärryä vetää lanka. Kiihtyvän punnuksen jännitysvoima on pienempi kuin paino."
+          },
+          {
+            "value": 1.63,
+            "feedback": "Käytit kaavaa $a = s/t^2$. Levosta lähtevälle tasaisesti kiihtyvälle liikkeelle pätee $s = \\tfrac{1}{2}at^2$, joten $a = 2s/t^2$."
+          }
+        ],
+        "solution": "**Annettu:** $m_1 = 1{,}0\\,\\text{kg}$, matka $s = 0{,}80\\,\\text{m}$, kulkuaika $t = 0{,}70\\,\\text{s}$ (viiden mittauksen keskiarvo) ja lähtö levosta\n\n**Kysytty:** langan jännitysvoima $T$ yksikössä $\\text{N}$\n\n**Periaate:** Kärry kiihtyy tasaisesti levosta, joten matka ja aika antavat kiihtyvyyden. Kitka jätetään huomiotta, joten kärryyn vaikuttaa vaakasuunnassa vain lanka. Newtonin toisen lain mukaan sen voima on $m_1 a$.\n\n**Voimakuvio:** Piirrä kärry suorakulmioksi, positiivinen suunta liikkeen suuntaan. Paino $\\overline{G}_1$ osoittaa alas ja tukivoima $\\overline{N}$ ylös, ja ne ovat yhtä pitkät. Jännitysvoima $\\overline{T}_1$ osoittaa liikkeen suuntaan. Vaakasuunnassa vaikuttaa vain $\\overline{T}_1$.\n\n**Kaava:** $s = \\tfrac{1}{2}at^2$, joten $a = \\dfrac{2s}{t^2}$. Liikeyhtälö on $T = m_1 a$, joten $T = \\dfrac{2 m_1 s}{t^2}$\n\n**Muunnokset:** Aika ja matka ovat sekunteina ja metreinä. Muunnoksia ei tarvita.\n\n**Sijoitus:** $a = \\dfrac{2 \\cdot 0{,}80\\,\\text{m}}{(0{,}70\\,\\text{s})^2} = 3{,}265\\,\\text{m/s}^2$ ja $T = 1{,}0\\,\\text{kg} \\cdot 3{,}265\\,\\text{m/s}^2 = 3{,}265\\,\\text{N}$\n\n**Vastaus:** $3{,}3\\,\\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska ajassa $0{,}70\\,\\text{s}$ ja matkassa $0{,}80\\,\\text{m}$ on kaksi.\n\n**Järkevyys:** Jännitysvoima on pienempi kuin punnuksen paino $0{,}50\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}9\\,\\text{N}$, kuten kiihtyvän punnuksen pitääkin. Tulos on sama kuin simulaation mallin arvo $3{,}27\\,\\text{N}$."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit langan jännitysvoimasta? Palaa myös alun kärryyn. Mikä kärryä vetää, ja kuinka suuri sen voima on verrattuna punnuksen painoon? Miksi punnus laskee hitaammin kuin vapaasti putoava kappale?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "fbd": "error",
+      "figure": "fy4-13/virhe",
+      "prompt": "Pöydällä oleva kärry on sidottu langalla väkipyörän yli riippuvaan punnukseen. Kärry kiihtyy oikealle. Kitka ja ilmanvastus jätetään huomiotta. Opiskelija piirsi kärryn voimakuvion kuvan mukaisesti. Mikä kuviossa on väärin?",
+      "choices": [
+        {
+          "text": "Kärryä vetää lanka, ei punnuksen paino. Nuolen $\\overline{G}_2$ pitäisi olla $\\overline{T}_1$.",
+          "correct": true,
+          "feedback": "Oikein. Punnus vaikuttaa kärryyn langan kautta, joten kärryä vetää jännitysvoima $\\overline{T}_1$. Punnuksen paino on Maan ja punnuksen vuorovaikutus, ja se kuuluu punnuksen voimakuvioon. Punnus kiihtyy alas, joten $T$ on pienempi kuin $G_2$."
+        },
+        {
+          "text": "Tukivoiman pitäisi olla painoa pienempi, koska kärry kiihtyy ja liike keventää kärryä.",
+          "feedback": "Kärry ei kiihdy pystysuunnassa, joten tukivoima ja paino ovat yhtä suuret, kuten kuviossa. Vaakasuuntainen liike ei muuta tätä. Virhe on oikealle osoittavassa nuolessa $\\overline{G}_2$."
+        },
+        {
+          "text": "Kuvioon pitäisi piirtää myös kärryn nopeus voimana, koska kärry liikkuu.",
+          "feedback": "Nopeus ei ole voima, eikä sitä piirretä voimakuvioon. Sen voi piirtää kappaleen viereen omalla värillään. Virhe on nuolessa $\\overline{G}_2$. Kärryllä ei ole mitään, mikä aiheuttaisi tämän voiman."
+        },
+        {
+          "text": "Kuviosta puuttuu kitkavoima, koska kitka vastustaa kärryn liikettä.",
+          "feedback": "Tässä kitka jätetään huomiotta, joten kitkavoimaa ei piirretä. Virhe on nuolessa $\\overline{G}_2$. Kärryä ei vedä punnuksen paino vaan lanka."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "prompt": "Pöydällä oleva kärry, jonka massa on $1{,}2\\,\\text{kg}$, on sidottu langalla väkipyörän yli riippuvaan punnukseen. Kärryn kiihtyvyydeksi mitataan $2{,}0\\,\\text{m/s}^2$. Kitka ja ilmanvastus jätetään huomiotta. Lanka ja väkipyörä ovat kevyet. Kuinka suuri on punnuksen massa? Vastaa kilogrammoina.",
+      "answer": 0.3073,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kummankin kappaleen voimakuvio. Mikä voima kiihdyttää kärryä?",
+        "Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$.",
+        "Sijoita $T = m_1 a$ punnuksen yhtälöön ja ratkaise $m_2$: $m_2 (g - a) = m_1 a$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.2446,
+          "feedback": "Oletit, että jännitysvoima on punnuksen paino, $T = m_2 g$. Kiihtyvän punnuksen jännitysvoima on painoa pienempi. Punnuksen yhtälö on $m_2 g - T = m_2 a$."
+        },
+        {
+          "value": 0.2032,
+          "feedback": "Lisäsit kiihtyvyyden putoamiskiihtyvyyteen. Punnus kiihtyy alas, joten sen kokonaisvoima on $m_2 g - T$ ja nimittäjässä on $g - a$."
+        }
+      ],
+      "solution": "**Annettu:** $m_1 = 1{,}2\\,\\text{kg}$, kärryn kiihtyvyys $a = 2{,}0\\,\\text{m/s}^2$ ja $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** riippuvan punnuksen massa $m_2$ yksikössä $\\text{kg}$\n\n**Periaate:** Kärry ja punnus ovat kaksi kappaletta, ja kummallekin kirjoitetaan oma liikeyhtälö. Lanka ei veny, joten punnuksen kiihtyvyys on yhtä suuri, $a$. Lanka on kevyt, joten se vetää kumpaakin kappaletta voimalla $T$. Kitka jätetään huomiotta.\n\n**Voimakuvio:** Piirrä kärry suorakulmioksi, positiivinen suunta oikealle. Vaakasuunnassa vaikuttaa vain jännitysvoima $\\overline{T}_1$. Piirrä punnus suorakulmioksi, positiivinen suunta alas. Paino $\\overline{G}_2$ osoittaa alas ja jännitysvoima $\\overline{T}_2$ ylös, ja $T_1 = T_2 = T$.\n\n**Kaava:** Kärry $T = m_1 a$ ja punnus $m_2 g - T = m_2 a$. Sijoitetaan $T$: $m_2 g - m_1 a = m_2 a$, joten $m_2 = \\dfrac{m_1 a}{g - a}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.\n\n**Sijoitus:** $m_2 = \\dfrac{1{,}2\\,\\text{kg} \\cdot 2{,}0\\,\\text{m/s}^2}{9{,}81\\,\\text{m/s}^2 - 2{,}0\\,\\text{m/s}^2} = \\dfrac{2{,}4\\,\\text{N}}{7{,}81\\,\\text{m/s}^2} = 0{,}3073\\,\\text{kg}$\n\n**Vastaus:** $0{,}31\\,\\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska massassa $1{,}2\\,\\text{kg}$ ja kiihtyvyydessä $2{,}0\\,\\text{m/s}^2$ on kaksi.\n\n**Järkevyys:** Kaavalla $a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{0{,}3073 \\cdot 9{,}81}{1{,}5073}\\,\\text{m/s}^2 \\approx 2{,}0\\,\\text{m/s}^2$, kuten mitattiin. Punnus on kevyempi kuin kärry, joten kiihtyvyys jää alle $g/2$. Jännitysvoima $T = 2{,}4\\,\\text{N}$ on pienempi kuin punnuksen paino $3{,}0\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä jokaisessa tehtävässä ensin voimakuvio kummallekin kappaleelle vihkoon, vaikka tehtävä ei sitä pyytäisi. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 ovat syventäviä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Kiihtyvyydet",
+      "prompt": "Väkipyörän yli kulkevan langan päissä roikkuu kaksi kappaletta. Niiden massat ovat $2{,}0\\,\\text{kg}$ ja $4{,}0\\,\\text{kg}$. Lanka on kevyt ja venymätön, ja väkipyörä on kevyt ja kitkaton. Kappaleet päästetään liikkeelle. Mikä väite kappaleiden kiihtyvyyksistä on oikein?",
+      "choices": [
+        {
+          "text": "Kiihtyvyydet ovat yhtä suuret, koska lanka ei veny. Kevyempi kiihtyy ylös ja raskaampi alas.",
+          "correct": true,
+          "feedback": "Oikein. Venymätön lanka pakottaa kappaleet kulkemaan saman matkan samassa ajassa. Siksi kiihtyvyyksien suuruus on sama. Mallissa $a = \\dfrac{4{,}0 - 2{,}0}{2{,}0 + 4{,}0}\\,g \\approx 3{,}3\\,\\text{m/s}^2$."
+        },
+        {
+          "text": "Raskaampi kiihtyy enemmän, koska siihen vaikuttaa suurempi paino ja se vetää toista mukanaan.",
+          "feedback": "Suurempi voima kiihdyttää myös suurempaa massaa. Lisäksi lanka sitoo kappaleet yhteen. Jos toinen kiihtyisi enemmän kuin toinen, lanka venyisi tai löystyisi. Kiihtyvyyksien suuruus on sama."
+        },
+        {
+          "text": "Kevyempi kiihtyy enemmän, koska sen massa on pienempi ja pienempää massaa on helpompi kiihdyttää.",
+          "feedback": "Kappaleisiin vaikuttavat eri kokonaisvoimat, joten massoja ei voi verrata yksin. Venymätön lanka pakottaa kappaleet kulkemaan saman matkan. Siksi kiihtyvyyksien suuruus on sama."
+        },
+        {
+          "text": "Kummankin kiihtyvyys on $g$, koska molemmat roikkuvat ja ovat putoamassa.",
+          "feedback": "Kiihtyvyys $g$ olisi vain vapaassa pudotuksessa. Lanka vetää kumpaakin kappaletta ylös. Siksi kokonaisvoima on paino miinus jännitysvoima, ja kiihtyvyys on pienempi kuin $g$."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske jännitysvoima",
+      "fbd": "equations",
+      "prompt": "Pöydällä oleva kärry, jonka massa on $0{,}60\\,\\text{kg}$, on sidottu langalla väkipyörän yli punnukseen. Punnuksen massa on $0{,}80\\,\\text{kg}$. Kitka ja ilmanvastus jätetään huomiotta. Lanka ja väkipyörä ovat kevyet. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat? Vastaa newtoneina.",
+      "answer": 3.363,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kummankin kappaleen voimakuvio. Valitse positiivinen suunta liikkeen suuntaan.",
+        "Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Ratkaise ensin $a$.",
+        "$a = \\dfrac{m_2 g}{m_1 + m_2}$ ja $T = m_1 a$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.85,
+          "feedback": "Tämä on punnuksen paino $m_2 g$. Kun punnus kiihtyy, jännitysvoima on painoa pienempi."
+        },
+        {
+          "value": 5.61,
+          "feedback": "Tämä on kiihtyvyys $a$ yksikössä $\\text{m/s}^2$, ei voima. Jännitysvoima saadaan kärryn yhtälöstä $T = m_1 a$."
+        },
+        {
+          "value": 4.48,
+          "feedback": "Käytit punnuksen massaa kärryn yhtälössä, $T = m_2 a$. Kärryä vetää lanka, joten kärryn yhtälö on $T = m_1 a$."
+        }
+      ],
+      "solution": "**Annettu:** $m_1 = 0{,}60\\,\\text{kg}$ (kärry), $m_2 = 0{,}80\\,\\text{kg}$ (punnus) ja $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** langan jännitysvoima $T$ yksikössä $\\text{N}$\n\n**Periaate:** Kärry ja punnus ovat kaksi kappaletta, ja kummallekin kirjoitetaan oma liikeyhtälö. Lanka on venymätön ja kevyt, joten kiihtyvyys $a$ ja jännitysvoima $T$ ovat samat kummallakin kappaleella. Kitka jätetään huomiotta.\n\n**Voimakuvio:** Piirrä kärry suorakulmioksi, positiivinen suunta oikealle. Vaakasuunnassa vaikuttaa vain $\\overline{T}_1$. Piirrä punnus suorakulmioksi, positiivinen suunta alas. Voima $\\overline{G}_2$ osoittaa alas ja $\\overline{T}_2$ ylös.\n\n**Kaava:** $T = m_1 a$ ja $m_2 g - T = m_2 a$, joten $a = \\dfrac{m_2 g}{m_1 + m_2}$ ja $T = m_1 a = \\dfrac{m_1 m_2}{m_1 + m_2}\\,g$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.\n\n**Sijoitus:** $T = \\dfrac{0{,}60\\,\\text{kg} \\cdot 0{,}80\\,\\text{kg}}{0{,}60\\,\\text{kg} + 0{,}80\\,\\text{kg}} \\cdot 9{,}81\\,\\text{m/s}^2 = 0{,}3429\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 3{,}363\\,\\text{N}$\n\n**Vastaus:** $3{,}4\\,\\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massoissa $0{,}60\\,\\text{kg}$ ja $0{,}80\\,\\text{kg}$ on kaksi.\n\n**Järkevyys:** Punnuksen paino on $0{,}80\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 7{,}8\\,\\text{N}$. Tulos $3{,}4\\,\\text{N}$ on sitä pienempi, kuten pitääkin. Kiihdytettävää massaa on yhteensä $1{,}4\\,\\text{kg}$, ja siitä $0{,}60\\,\\text{kg}$ on kärryä: $T = \\tfrac{0{,}60}{1{,}4} \\cdot 7{,}85\\,\\text{N} \\approx 3{,}4\\,\\text{N}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-13/malli-atwood",
+      "prompt": "Väkipyörän yli kulkevan langan päissä roikkuu kaksi kappaletta. Niiden massat ovat $0{,}40\\,\\text{kg}$ ja $0{,}80\\,\\text{kg}$. Lanka on kevyt ja venymätön, väkipyörä on kevyt ja kitkaton, ja ilmanvastus jätetään huomiotta. Kappaleet päästetään liikkeelle. Piirrä kummankin kappaleen voimakuvio paperille: kappale on suorakulmio, ja jokainen voima lähtee vaikutuskohdastaan. Kirjoita sitten kummankin kappaleen liikeyhtälö. Laske kiihtyvyys ja jännitysvoima.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuvioita on kaksi, toinen kevyemmästä ja toinen raskaammasta kappaleesta. Kummassakin on vain kappale ja siihen vaikuttavat voimat. Lankaa ja väkipyörää ei piirretä."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Kummassakin kappaleessa on kaksi voimaa: paino ja langan jännitysvoima. Liikkeen suuntaista lisävoimaa ei ole."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino osoittaa alas ja jännitysvoima ylös kummassakin kuviossa."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino lähtee keskipisteestä ja jännitysvoima yläpinnasta. Voimilla on omat tunnukset, esimerkiksi $\\overline{T}_1$ ja $\\overline{T}_2$."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Nuolet $\\overline{T}_1$ ja $\\overline{T}_2$ ovat yhtä pitkät. Kevyemmällä $\\overline{T}_1$ on pidempi kuin $\\overline{G}_1$, ja raskaammalla $\\overline{G}_2$ on pidempi kuin $\\overline{T}_2$. Kiihtyvyyttä ei ole piirretty voimaksi."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten $a \\approx 3{,}3\\,\\text{m/s}^2$ ja $T \\approx 5{,}2\\,\\text{N}$."
+        }
+      ],
+      "model": "Kummallakin kappaleella on oma voimakuvio. Kevyempään ($m_1 = 0{,}40\\,\\text{kg}$) vaikuttavat paino $\\overline{G}_1$ alas ja langan jännitysvoima $\\overline{T}_1$ ylös. Raskaampaan ($m_2 = 0{,}80\\,\\text{kg}$) vaikuttavat paino $\\overline{G}_2$ alas ja jännitysvoima $\\overline{T}_2$ ylös. Lanka on kevyt ja väkipyörä kitkaton, joten $T_1 = T_2 = T$. Kevyempi nousee ja raskaampi laskee, ja kiihtyvyydet ovat yhtä suuret, $a$. Valitaan positiivinen suunta liikkeen suuntaan: kevyemmällä ylös ja raskaammalla alas. Silloin $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta saadaan $a = \\dfrac{(m_2 - m_1)\\,g}{m_1 + m_2} = \\dfrac{0{,}40\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{1{,}20\\,\\text{kg}} \\approx 3{,}3\\,\\text{m/s}^2$ ja $T = m_1 (g + a) \\approx 5{,}2\\,\\text{N}$. Jännitysvoima on painojen $3{,}9\\,\\text{N}$ ja $7{,}8\\,\\text{N}$ välissä."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

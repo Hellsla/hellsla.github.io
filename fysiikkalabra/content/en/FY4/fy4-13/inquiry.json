@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "contribution": "Two bodies connected by a string are treated one at a time: each gets its own free-body diagram and its own equation of motion, and from them the common acceleration and the tension in the string are solved. The tension is not the weight of the hanging body.",
+  "learn": [
+    "calculate the acceleration of connected bodies and the tension in the string from the equation of motion of each body.",
+    "draw a separate free-body diagram for each body.",
+    "explain why the tension for an accelerating hanging body is not its weight."
+  ],
+  "prior": [
+    "Newton's second law $\\Sigma\\overline{F} = m\\overline{a}$ (chapter *Newton's second law*)",
+    "Drawing a free-body diagram and writing the equation of motion by components (chapter *Free-body diagrams and the combined effect of forces*)",
+    "A force and its reaction force act on different bodies (chapter *Interaction and force: Newton's first and third laws*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A cart stands on a table, and a string tied to it passes over a pulley at the edge of the table. A mass hangs from the other end of the string. When the cart is released, the mass starts to descend and pulls the cart along. The mass does not fall as fast as it would in free fall, though.",
+      "question": "What pulls the cart, and how large is the force of the string compared with the weight of the mass?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: force and reaction force",
+      "optional": true,
+      "prompt": "The string pulls the cart on the table to the right with the force $\\overline{T}_1$. What is the reaction force of this force?",
+      "choices": [
+        {
+          "text": "The cart pulls the string to the left with an equally large force.",
+          "correct": true,
+          "feedback": "Correct. The reaction force belongs to the same interaction as the original force and acts on the other body: the cart pulls the string. It acts on the string, so it is not in the free-body diagram of the cart."
+        },
+        {
+          "text": "The normal force of the table on the cart, perpendicular to the table.",
+          "feedback": "The normal force belongs to a different interaction, the one between the table and the cart. The reaction force always belongs to the same interaction as the force it pairs with: here the one between the string and the cart."
+        },
+        {
+          "text": "The weight of the cart, which points down.",
+          "feedback": "Weight is the interaction between the Earth and the cart. The reaction force of the string's force arises in the interaction between the string and the cart."
+        },
+        {
+          "text": "The force of the string on the hanging mass, which points up at the other end of the string.",
+          "feedback": "It is equally large as $\\overline{T}_1$ when the string is light and the pulley is light and frictionless, but it acts on the hanging mass and belongs to the string–mass interaction. It is not the reaction force of $\\overline{T}_1$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the force of the string",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A cart on a table ($m_1 = 1.0\\,\\text{kg}$) is tied by a string over a pulley to a hanging mass ($m_2 = 0.50\\,\\text{kg}$, weight $4.9\\,\\text{N}$). The cart is released and accelerates. Friction and air resistance are neglected. How does the tension $T$ in the string compare with the weight $G_2$ of the hanging mass?",
+      "choices": [
+        {
+          "text": "$T$ is equal to $G_2$, because the string passes the weight of the mass on to the cart.",
+          "feedback": "If $T$ were equal to $G_2$, the net force on the hanging mass would be zero and it would not accelerate downward. In the model's values the tension is $3.27\\,\\text{N}$ and the weight $4.9\\,\\text{N}$."
+        },
+        {
+          "text": "$T$ is smaller than $G_2$.",
+          "correct": true,
+          "feedback": "Correct. The mass accelerates downward, so its net force $G_2 - T$ must point down. In the model's values $T = 3.27\\,\\text{N}$ and $G_2 = 4.9\\,\\text{N}$, and the difference $1.6\\,\\text{N}$ accelerates the mass."
+        },
+        {
+          "text": "$T$ is greater than $G_2$, because the cart pulls the mass along.",
+          "feedback": "If $T$ were greater than $G_2$, the net force on the mass would point up and the mass would rise. The mass descends, however, so the string pulls it upward with a force smaller than its weight."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: two hanging bodies",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Bodies of masses $0.30\\,\\text{kg}$ and $0.50\\,\\text{kg}$ and weights $2.9\\,\\text{N}$ and $4.9\\,\\text{N}$ hang at the ends of a string over a pulley. The bodies are released. What is the tension $T$ in the string?",
+      "choices": [
+        {
+          "text": "$T$ is equal to the weight of the lighter body, $2.9\\,\\text{N}$.",
+          "feedback": "Then the net force on the lighter body would be zero and it would not rise. It does rise, however, so the string pulls it upward with a force greater than its weight."
+        },
+        {
+          "text": "$T$ is equal to the weight of the heavier body, $4.9\\,\\text{N}$.",
+          "feedback": "Then the net force on the heavier body would be zero and it would not descend. It does descend, however, so the string pulls it upward with a force smaller than its weight."
+        },
+        {
+          "text": "$T$ lies between the weights: greater than $2.9\\,\\text{N}$ and smaller than $4.9\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Correct. The lighter body rises, so $T > G_1$, and the heavier one descends, so $T < G_2$. In the model's values $T = 3.68\\,\\text{N}$."
+        },
+        {
+          "text": "$T$ is the sum of the weights, $7.8\\,\\text{N}$.",
+          "feedback": "The string pulls each body with one force $T$, and the forces are not added. The sum $7.8\\,\\text{N}$ would be greater than the weight of either body, so both bodies would rise, which is impossible."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation, a cart and a hanging mass are tied by a string, or two bodies hang over a pulley. Each body has its own free-body diagram.",
+      "howto": "Choose the *Situation* and the masses $m_1$ and $m_2$. *Start* releases the bodies, and they travel $0.60\\,\\text{m}$. *Reset* returns them to the start, and *Speed* slows down or speeds up the motion without changing the readings. The free-body diagrams and the readings are visible at once, also before starting. With two hanging bodies, equal masses do not start to move.",
+      "model": "The values are model values calculated by the simulation. The string is light and inextensible, the pulley is light and frictionless, and friction on the table and air resistance are neglected. So the accelerations of the bodies have the same magnitude and the string pulls both bodies with a force of the same magnitude $T$. The blue arrow for velocity and the orange arrow for acceleration are in the situation view because they are not forces. The arrows of the free-body diagrams are on a common scale.",
+      "calc": "Cart and hanging mass: the equation of the cart $T = m_1 a$ and the equation of the hanging mass $m_2 g - T = m_2 a$ give $a = \\dfrac{m_2}{m_1 + m_2}\\,g$ and $T = m_1 a$. Two hanging bodies, $m_2 > m_1$: $T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$ give $a = \\dfrac{m_2 - m_1}{m_1 + m_2}\\,g$ and $T = \\dfrac{2 m_1 m_2}{m_1 + m_2}\\,g$. In the readings $\\Sigma F_1$ and $\\Sigma F_2$ are the net forces on the bodies along the motion, and $g = 9.81\\,\\text{m/s}^2$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the mass of the cart changes",
+      "fbd": "equations",
+      "intro": "Test the prediction. The initial state selects a cart and a hanging mass of $0.50\\,\\text{kg}$ and weight $4.9\\,\\text{N}$. Change only the mass $m_1$ of the cart. Record a measurement with the masses $0.50\\,\\text{kg}$, $1.0\\,\\text{kg}$ and $1.5\\,\\text{kg}$ and each time see how the lengths of the arrows $\\overline{T}_1$ and $\\overline{G}_2$ change.",
+      "initial": {
+        "tapa": "karry",
+        "m2": "0.5",
+        "m1": "0.5"
+      },
+      "names": {
+        "tapa": "tilanne",
+        "m1": "mass of the cart m_1",
+        "m2": "mass of the hanging mass m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tapa": {
+          "karry": "cart and hanging mass"
+        },
+        "m1": {
+          "0.5": "$0.50\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.5": "$0.50\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tapa",
+        "m2"
+      ],
+      "vary": "m1",
+      "measure": [
+        {
+          "key": "T",
+          "label": "$T$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a$ (m/s$^2$)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "When the mass of the cart is $1.0\\,\\text{kg}$, the table gives the tension $T$. How large is the net force on the hanging mass, when its weight is $4.9\\,\\text{N}$? Answer in newtons.",
+        "answer": 1.635,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Draw the free-body diagram of the hanging mass: weight down and tension up. Which arrow is longer when the mass accelerates downward?",
+          "The mass accelerates downward, so the net force down is $\\Sigma F = G_2 - T$.",
+          "$\\Sigma F = 4.9\\,\\text{N} - T$, where $T$ is the tension in the row $m_1 = 1.0\\,\\text{kg}$ of the table."
+        ],
+        "mistakes": [
+          {
+            "value": 3.27,
+            "feedback": "This is the tension $T$, not the net force. The net force is the difference between the weight and the tension: $G_2 - T$."
+          },
+          {
+            "value": 4.9,
+            "feedback": "This is the weight of the hanging mass. The tension also acts on it upward, so the net force is $G_2 - T$."
+          }
+        ],
+        "solution": "**Given:** from the table, with cart mass $m_1 = 1.0\\,\\text{kg}$, the tension $T = 3.27\\,\\text{N}$; hanging mass $m_2 = 0.50\\,\\text{kg}$ and weight $G_2 = 4.9\\,\\text{N}$\n\n**Find:** the net force $\\Sigma F$ on the hanging mass in $\\text{N}$\n\n**Principle:** The hanging mass is one of the connected bodies, so it has its own free-body diagram and its own equation of motion. It accelerates downward, so by Newton's second law its net force points down.\n\n**Free-body diagram:** The hanging mass as a rectangle, positive direction down. Weight $\\overline{G}_2$ down and tension $\\overline{T}_2$ in the string up. The arrow $\\overline{G}_2$ is longer, because the net force points down.\n\n**Formula:** $\\Sigma F = m_2 g - T = G_2 - T$\n\n**Conversions:** All forces are in newtons, so no conversions are needed.\n\n**Substitution:** $\\Sigma F = 4.905\\,\\text{N} - 3.27\\,\\text{N} = 1.635\\,\\text{N}$\n\n**Answer:** $1.6\\,\\text{N}$ down. In a difference the number of decimals decides: the weight $4.9\\,\\text{N}$ is given to one decimal, so the result is rounded to one decimal.\n\n**Reasonableness:** From the equation of motion $\\Sigma F = m_2 a = 0.50\\,\\text{kg} \\cdot 3.27\\,\\text{m/s}^2 = 1.635\\,\\text{N}$, the same result as from the difference. The force is smaller than the weight $4.9\\,\\text{N}$, because the string holds up part of the weight."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: two hanging bodies",
+      "optional": true,
+      "fbd": "equations",
+      "intro": "Test the second prediction. The initial state selects two hanging bodies, the mass $m_2$ of one of them is $0.50\\,\\text{kg}$. Change only the mass $m_1$. Record a measurement with the masses $0.30\\,\\text{kg}$, $0.50\\,\\text{kg}$ and $1.0\\,\\text{kg}$ and compare the tension with the weights of the bodies.",
+      "initial": {
+        "tapa": "kaksi",
+        "m2": "0.5",
+        "m1": "0.3"
+      },
+      "names": {
+        "tapa": "tilanne",
+        "m1": "mass m_1",
+        "m2": "mass m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tapa": {
+          "kaksi": "two bodies"
+        },
+        "m1": {
+          "0.3": "$0.30\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.5": "$0.50\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tapa",
+        "m2"
+      ],
+      "vary": "m1",
+      "measure": [
+        {
+          "key": "G1",
+          "label": "$G_1$ (N)"
+        },
+        {
+          "key": "T",
+          "label": "$T$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a$ (m/s$^2$)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "When $m_1 = 0.30\\,\\text{kg}$, the lighter body rises. How large is the net force on it? Calculate it from the values in the table. Answer in newtons.",
+        "answer": 0.736,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "Draw the free-body diagram of the lighter body. Which force is greater when the body rises?",
+          "The body rises, so the net force up is $\\Sigma F = T - G_1$.",
+          "$\\Sigma F = T - G_1$, where $T$ and $G_1$ are the values in the row $m_1 = 0.30\\,\\text{kg}$ of the table."
+        ],
+        "mistakes": [
+          {
+            "value": 3.68,
+            "feedback": "This is the tension $T$. The net force is the difference between the tension and the weight, $T - G_1$."
+          },
+          {
+            "value": 2.94,
+            "feedback": "This is the weight $G_1$ of the body. The net force is the difference between the tension and the weight, $T - G_1$."
+          }
+        ],
+        "solution": "**Given:** from the table, when $m_1 = 0.30\\,\\text{kg}$: weight $G_1 = 2.94\\,\\text{N}$ and tension $T = 3.68\\,\\text{N}$\n\n**Find:** the net force $\\Sigma F$ on the lighter body in $\\text{N}$\n\n**Principle:** The lighter body accelerates upward, so by Newton's second law its net force points up. The body has its own free-body diagram and its own equation of motion.\n\n**Free-body diagram:** The body as a rectangle, positive direction up. Tension $\\overline{T}_1$ up and weight $\\overline{G}_1$ down. The arrow $\\overline{T}_1$ is longer.\n\n**Formula:** $\\Sigma F = T - G_1$\n\n**Conversions:** All forces are in newtons, so no conversions are needed.\n\n**Substitution:** $\\Sigma F = 3.68\\,\\text{N} - 2.94\\,\\text{N} = 0.74\\,\\text{N}$\n\n**Answer:** $0.74\\,\\text{N}$ up. The readings in the table have three significant figures, but the difference has only two, because the readings are given to the nearest hundredth.\n\n**Reasonableness:** From the equation of motion $m_1 a = 0.30\\,\\text{kg} \\cdot 2.45\\,\\text{m/s}^2 \\approx 0.74\\,\\text{N}$, the same result. The tension of a rising body is greater than its weight, as it should be."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Using your measurements and the free-body diagrams, explain why the tension in the string is smaller than the weight of the hanging mass and why it approaches the weight when the cart is heavier.",
+      "criteria": [
+        "The answer says that the hanging mass accelerates downward, so its net force $G_2 - T$ points down and $T < G_2$.",
+        "The answer says that only the string acts on the cart horizontally, so $T = m_1 a$ and a heavier cart accelerates less.",
+        "The answer says that as the acceleration decreases, the net force $G_2 - T = m_2 a$ on the hanging mass decreases, so $T$ approaches the weight $G_2$.",
+        "The answer uses a measurement result, for example the tension with two different cart masses."
+      ],
+      "model": "The hanging mass accelerates downward, so the net force $G_2 - T = m_2 a$ on it points down and $T$ is smaller than the weight $G_2 = 4.9\\,\\text{N}$. Only the string acts on the cart horizontally, so $T = m_1 a$. When the cart is heavier, the acceleration decreases and the net force $m_2 a$ on the hanging mass decreases. Then $T$ approaches the weight: in the model's values $T = 2.45\\,\\text{N}$ with cart mass $0.50\\,\\text{kg}$, $3.27\\,\\text{N}$ with $1.0\\,\\text{kg}$ and $3.68\\,\\text{N}$ with $1.5\\,\\text{kg}$. The tension would equal the weight only if the bodies did not accelerate, for example when the cart is held still."
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tension from measured motion",
+      "optional": true,
+      "source": "example",
+      "fbd": "equations",
+      "text": "A student studies the motion of a cart and a hanging mass. The mass of the cart is $1.0\\,\\text{kg}$ and the mass of the hanging mass $0.50\\,\\text{kg}$. The cart starts from rest and travels $0.80\\,\\text{m}$. The travel time is measured in five repetitions: $0.69\\,\\text{s}$, $0.71\\,\\text{s}$, $0.70\\,\\text{s}$, $0.70\\,\\text{s}$ and $0.70\\,\\text{s}$, on average $0.70\\,\\text{s}$. Friction and air resistance are so small that they are neglected. Draw the free-body diagram of the cart in your notebook before you answer.",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large is the tension in the string? First calculate the acceleration of the cart from the travel time and then use the equation of motion of the cart. Answer in newtons.",
+        "answer": 3.27,
+        "unit": "N",
+        "tolerance": 0.03,
+        "hints": [
+          "The cart starts from rest and moves with constant acceleration. Which formula connects distance, acceleration and time?",
+          "$s = \\tfrac{1}{2}at^2$, so $a = \\dfrac{2s}{t^2}$. Horizontally only the string acts on the cart: $T = m_1 a$.",
+          "$a = \\dfrac{2 \\cdot 0.80\\,\\text{m}}{(0.70\\,\\text{s})^2}$ and $T = 1.0\\,\\text{kg} \\cdot a$."
+        ],
+        "mistakes": [
+          {
+            "value": 4.9,
+            "feedback": "This is the weight of the hanging mass. The cart is pulled by the string, and the tension for an accelerating hanging mass is smaller than its weight."
+          },
+          {
+            "value": 1.63,
+            "feedback": "You used the formula $a = s/t^2$. For uniformly accelerated motion from rest $s = \\tfrac{1}{2}at^2$, so $a = 2s/t^2$."
+          }
+        ],
+        "solution": "**Given:** $m_1 = 1.0\\,\\text{kg}$, distance $s = 0.80\\,\\text{m}$, travel time $t = 0.70\\,\\text{s}$ (the mean of five measurements), starting from rest\n\n**Find:** the tension $T$ in the string in $\\text{N}$\n\n**Principle:** The cart accelerates uniformly from rest, so the distance and the time give the acceleration. Friction is neglected, so horizontally only the string acts on the cart, and by Newton's second law its force is $m_1 a$.\n\n**Free-body diagram:** The cart as a rectangle, positive direction along the motion. Weight $\\overline{G}_1$ down and normal force $\\overline{N}$ up, equally long, and tension $\\overline{T}_1$ along the motion. Horizontally only $\\overline{T}_1$ acts.\n\n**Formula:** $s = \\tfrac{1}{2}at^2$, so $a = \\dfrac{2s}{t^2}$; equation of motion $T = m_1 a$, so $T = \\dfrac{2 m_1 s}{t^2}$\n\n**Conversions:** The time and the distance are in seconds and metres, so no conversions are needed.\n\n**Substitution:** $a = \\dfrac{2 \\cdot 0.80\\,\\text{m}}{(0.70\\,\\text{s})^2} = 3.265\\,\\text{m/s}^2$ and $T = 1.0\\,\\text{kg} \\cdot 3.265\\,\\text{m/s}^2 = 3.265\\,\\text{N}$\n\n**Answer:** $3.3\\,\\text{N}$, two significant figures like the time $0.70\\,\\text{s}$ and the distance $0.80\\,\\text{m}$.\n\n**Reasonableness:** The tension is smaller than the weight of the hanging mass $0.50\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.9\\,\\text{N}$, as it should be for an accelerating hanging mass. The result is the same as the simulation's model value $3.27\\,\\text{N}$."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements. What did you learn about the tension in the string? Also return to the cart at the beginning: what pulls the cart, and how large is its force compared with the weight of the mass? So why does the mass descend more slowly than a freely falling object?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "fbd": "error",
+      "figure": "fy4-13/virhe",
+      "prompt": "A cart on a table is tied by a string over a pulley to a hanging mass, and the cart accelerates to the right. Friction and air resistance are neglected. A student drew the free-body diagram of the cart as in the figure. What is wrong in the diagram?",
+      "choices": [
+        {
+          "text": "The cart is pulled by the string, not by the weight of the mass: the arrow $\\overline{G}_2$ should be $\\overline{T}_1$.",
+          "correct": true,
+          "feedback": "Correct. The mass acts on the cart through the string, so the cart is pulled by the tension $\\overline{T}_1$. The weight of the mass is the interaction between the Earth and the mass and belongs in the free-body diagram of the mass. Because the mass accelerates downward, $T$ is smaller than $G_2$."
+        },
+        {
+          "text": "The normal force should be smaller than the weight, because the cart accelerates and the motion makes the cart lighter.",
+          "feedback": "The cart does not accelerate vertically, so the normal force and the weight are equally large, as in the diagram. Horizontal motion does not change this. The error is the arrow $\\overline{G}_2$ pointing to the right."
+        },
+        {
+          "text": "The velocity of the cart should also be drawn in the diagram as a force, because the cart is moving.",
+          "feedback": "Velocity is not a force and is not drawn in a free-body diagram. It can be drawn beside the body in its own colour. The error is the arrow $\\overline{G}_2$, which has no cause as far as the cart is concerned."
+        },
+        {
+          "text": "The diagram is missing the force of friction, because friction opposes the motion of the cart.",
+          "feedback": "Here friction is neglected, so no friction force is drawn. The error is the arrow $\\overline{G}_2$: the cart is not pulled by the weight of the mass but by the string."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "fbd": "equations",
+      "prompt": "A cart of mass $1.2\\,\\text{kg}$ on a table is tied by a string over a pulley to a hanging mass. The acceleration of the cart is measured to be $2.0\\,\\text{m/s}^2$. Friction and air resistance are neglected, and the string and the pulley are light. What is the mass of the hanging mass? Answer in kilograms.",
+      "answer": 0.3073,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Draw the free-body diagram of each body. Which force accelerates the cart?",
+        "Cart: $T = m_1 a$. Hanging mass: $m_2 g - T = m_2 a$.",
+        "Substitute $T = m_1 a$ into the equation of the hanging mass and solve for $m_2$: $m_2 (g - a) = m_1 a$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.2446,
+          "feedback": "You assumed that the tension is the weight of the hanging mass, $T = m_2 g$. For an accelerating hanging mass the tension is smaller than its weight, and the equation of the mass is $m_2 g - T = m_2 a$."
+        },
+        {
+          "value": 0.2032,
+          "feedback": "You added the acceleration to the acceleration due to gravity. The hanging mass accelerates downward, so its net force is $m_2 g - T$ and the denominator has $g - a$."
+        }
+      ],
+      "solution": "**Given:** $m_1 = 1.2\\,\\text{kg}$, acceleration of the cart $a = 2.0\\,\\text{m/s}^2$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the mass $m_2$ of the hanging mass in $\\text{kg}$\n\n**Principle:** The cart and the hanging mass are two bodies, and each gets its own equation of motion. The string is inextensible, so the acceleration of the hanging mass has the same magnitude $a$, and the string is light, so it pulls both bodies with the force $T$. Friction is neglected.\n\n**Free-body diagram:** The cart as a rectangle, positive direction to the right: horizontally only the tension $\\overline{T}_1$. The hanging mass as a rectangle, positive direction down: weight $\\overline{G}_2$ down and tension $\\overline{T}_2$ up, and $T_1 = T_2 = T$.\n\n**Formula:** Cart $T = m_1 a$ and hanging mass $m_2 g - T = m_2 a$. Substituting $T$: $m_2 g - m_1 a = m_2 a$, so $m_2 = \\dfrac{m_1 a}{g - a}$\n\n**Conversions:** All quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $m_2 = \\dfrac{1.2\\,\\text{kg} \\cdot 2.0\\,\\text{m/s}^2}{9.81\\,\\text{m/s}^2 - 2.0\\,\\text{m/s}^2} = \\dfrac{2.4\\,\\text{N}}{7.81\\,\\text{m/s}^2} = 0.3073\\,\\text{kg}$\n\n**Answer:** $0.31\\,\\text{kg}$, two significant figures like the mass $1.2\\,\\text{kg}$ and the acceleration $2.0\\,\\text{m/s}^2$.\n\n**Reasonableness:** With the formula $a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{0.3073 \\cdot 9.81}{1.5073}\\,\\text{m/s}^2 \\approx 2.0\\,\\text{m/s}^2$, as measured. The hanging mass is lighter than the cart, so the acceleration stays below $g/2$, and the tension $T = 2.4\\,\\text{N}$ is smaller than the weight of the hanging mass, $3.0\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further on three levels. In each task, first draw a free-body diagram for each body in your notebook, even if the task does not ask for it. Level 1 is enough for basic competence; levels 2 and 3 are advanced."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Accelerations",
+      "prompt": "Bodies of masses $2.0\\,\\text{kg}$ and $4.0\\,\\text{kg}$ hang at the ends of a string over a pulley. The string is light and inextensible and the pulley is light and frictionless. The bodies are released. Which statement about the accelerations of the bodies is correct?",
+      "choices": [
+        {
+          "text": "The accelerations have the same magnitude, because the string is inextensible: the lighter body accelerates up and the heavier one down.",
+          "correct": true,
+          "feedback": "Correct. An inextensible string forces the bodies to travel the same distance in the same time, so the magnitudes of the accelerations are the same. In the model $a = \\dfrac{4.0 - 2.0}{2.0 + 4.0}\\,g \\approx 3.3\\,\\text{m/s}^2$."
+        },
+        {
+          "text": "The heavier body accelerates more, because a greater weight acts on it and it pulls the other along.",
+          "feedback": "A greater force also has a greater mass to accelerate. Besides, the string ties the bodies together: if one accelerated more than the other, the string would stretch or go slack. The magnitudes of the accelerations are the same."
+        },
+        {
+          "text": "The lighter body accelerates more, because its mass is smaller and a smaller mass is easier to accelerate.",
+          "feedback": "Different net forces act on the bodies, so the masses cannot be compared alone. An inextensible string forces the bodies to travel the same distance, so the magnitudes of the accelerations are the same."
+        },
+        {
+          "text": "The acceleration of each is $g$, because both hang and are about to fall.",
+          "feedback": "An acceleration of $g$ would occur only in free fall. The string pulls each body up, so the net force is the weight minus the tension and the acceleration is smaller than $g$."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate the tension",
+      "fbd": "equations",
+      "prompt": "A cart of mass $0.60\\,\\text{kg}$ on a table is tied by a string over a pulley to a hanging mass of $0.80\\,\\text{kg}$. Friction and air resistance are neglected, and the string and the pulley are light. What is the tension in the string when the bodies are moving? Answer in newtons.",
+      "answer": 3.363,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Draw the free-body diagram of each body and choose the positive direction along the motion.",
+        "Cart: $T = m_1 a$. Hanging mass: $m_2 g - T = m_2 a$. Solve $a$ first.",
+        "$a = \\dfrac{m_2 g}{m_1 + m_2}$ and $T = m_1 a$."
+      ],
+      "mistakes": [
+        {
+          "value": 7.85,
+          "feedback": "This is the weight $m_2 g$ of the hanging mass. When the mass accelerates, the tension is smaller than the weight."
+        },
+        {
+          "value": 5.61,
+          "feedback": "This is the acceleration $a$ in $\\text{m/s}^2$, not a force. The tension is obtained from the equation of the cart, $T = m_1 a$."
+        },
+        {
+          "value": 4.48,
+          "feedback": "You used the mass of the hanging mass in the equation of the cart, $T = m_2 a$. The cart is pulled by the string, so the equation of the cart is $T = m_1 a$."
+        }
+      ],
+      "solution": "**Given:** $m_1 = 0.60\\,\\text{kg}$ (cart), $m_2 = 0.80\\,\\text{kg}$ (hanging mass), $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the tension $T$ in the string in $\\text{N}$\n\n**Principle:** The cart and the hanging mass are two bodies, and each gets its own equation of motion. The string is inextensible and light, so the acceleration magnitude $a$ and the tension $T$ are the same for both. Friction is neglected.\n\n**Free-body diagram:** The cart as a rectangle, positive direction to the right: horizontally only $\\overline{T}_1$. The hanging mass as a rectangle, positive direction down: $\\overline{G}_2$ down and $\\overline{T}_2$ up.\n\n**Formula:** $T = m_1 a$ and $m_2 g - T = m_2 a$, so $a = \\dfrac{m_2 g}{m_1 + m_2}$ and $T = m_1 a = \\dfrac{m_1 m_2}{m_1 + m_2}\\,g$\n\n**Conversions:** All quantities are in SI units, so no conversions are needed.\n\n**Substitution:** $T = \\dfrac{0.60\\,\\text{kg} \\cdot 0.80\\,\\text{kg}}{0.60\\,\\text{kg} + 0.80\\,\\text{kg}} \\cdot 9.81\\,\\text{m/s}^2 = 0.3429\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 3.363\\,\\text{N}$\n\n**Answer:** $3.4\\,\\text{N}$, two significant figures like the masses $0.60\\,\\text{kg}$ and $0.80\\,\\text{kg}$.\n\n**Reasonableness:** The weight of the hanging mass is $0.80\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 7.8\\,\\text{N}$, and $3.4\\,\\text{N}$ is smaller than that, as it should be. The whole mass to be accelerated is $1.4\\,\\text{kg}$, of which $0.60\\,\\text{kg}$ is the cart: $T = \\tfrac{0.60}{1.4} \\cdot 7.85\\,\\text{N} \\approx 3.4\\,\\text{N}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw it yourself",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-13/malli-atwood",
+      "prompt": "Bodies of masses $0.40\\,\\text{kg}$ and $0.80\\,\\text{kg}$ hang at the ends of a string over a pulley. The string is light and inextensible, the pulley is light and frictionless, and air resistance is neglected. The bodies are released. Draw the free-body diagram of each body on paper: the body as a rectangle and each force from its point of application. Then write the equation of motion of each body and calculate the acceleration and the tension.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "There are two diagrams, one of the lighter body and one of the heavier body. Each shows only the body and the forces acting on it, not the string or the pulley."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Each body has two forces: the weight and the tension in the string. There is no additional force along the motion."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "In both diagrams the weight points down and the tension points up."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight starts from the centre and the tension from the top surface. The forces have their own symbols, for example $\\overline{T}_1$ and $\\overline{T}_2$."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "The arrows $\\overline{T}_1$ and $\\overline{T}_2$ are equally long. For the lighter body $\\overline{T}_1$ is longer than $\\overline{G}_1$, and for the heavier body $\\overline{G}_2$ is longer than $\\overline{T}_2$. Acceleration is not drawn as a force."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$, so $a \\approx 3.3\\,\\text{m/s}^2$ and $T \\approx 5.2\\,\\text{N}$."
+        }
+      ],
+      "model": "Each body has its own free-body diagram. The lighter body ($m_1 = 0.40\\,\\text{kg}$) is acted on by the weight $\\overline{G}_1$ down and the tension $\\overline{T}_1$ in the string up, and the heavier body ($m_2 = 0.80\\,\\text{kg}$) by the weight $\\overline{G}_2$ down and the tension $\\overline{T}_2$ up. The string is light and the pulley frictionless, so $T_1 = T_2 = T$. The lighter body rises and the heavier one descends with the same acceleration magnitude $a$. The positive direction is chosen along the motion: up for the lighter body and down for the heavier one. Then $T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$. Adding gives $a = \\dfrac{(m_2 - m_1)\\,g}{m_1 + m_2} = \\dfrac{0.40\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{1.20\\,\\text{kg}} \\approx 3.3\\,\\text{m/s}^2$ and $T = m_1 (g + a) \\approx 5.2\\,\\text{N}$. The tension lies between the weights $3.9\\,\\text{N}$ and $7.8\\,\\text{N}$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

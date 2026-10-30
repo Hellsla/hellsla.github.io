@@ -1,0 +1,21 @@
+{
+  "id": "fy4-13",
+  "course": "FY4",
+  "title": "Equation of motion for connected bodies",
+  "goals": [
+    "LOPS FY4: the combined effect of forces, free-body diagram and equation of motion",
+    "Clarification: bodies connected by a string or over a pulley, common acceleration and tension in the string",
+    "Free-body diagram: a separate free-body diagram for each body; the same interaction gives a force and a reaction force on different bodies; the equation of each body separately (example F)."
+  ],
+  "prerequisites": [
+    "fy4-4",
+    "fy4-5"
+  ],
+  "glossary": [
+    "liikeyhtälö",
+    "jännitysvoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
