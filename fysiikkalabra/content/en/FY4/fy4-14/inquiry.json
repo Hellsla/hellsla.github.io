@@ -86,13 +86,13 @@
       "prompt": "Two skydivers fall in the same belly-down position. The mass of one with equipment is $60\\,\\text{kg}$ and of the other $100\\,\\text{kg}$. Which one is falling faster at the end of a long fall?",
       "choices": [
         {
-          "text": "The $100\\,\\text{kg}$ skydiver, because his terminal velocity is greater.",
+          "text": "The $100\\,\\text{kg}$ skydiver, because the terminal velocity of this skydiver is greater.",
           "correct": true,
           "feedback": "Correct. In the values of the model, the speed of the $60\\,\\text{kg}$ skydiver settles at $47.6\\,\\text{m/s}$ and that of the $100\\,\\text{kg}$ skydiver at $61.4\\,\\text{m/s}$. The heavier skydiver has a greater weight, so air resistance must grow greater before it cancels the weight, and that requires a greater speed."
         },
         {
           "text": "Both equally fast, because free-fall acceleration does not depend on mass.",
-          "feedback": "Without air resistance that would be true, and at the start of the fall the curves are indeed on top of each other. But air resistance decreases the acceleration of the lighter skydiver more, because his weight is smaller. In the values of the model the final speeds are $47.6\\,\\text{m/s}$ and $61.4\\,\\text{m/s}$."
+          "feedback": "Without air resistance that would be true, and at the start of the fall the curves are indeed on top of each other. But air resistance reduces the acceleration of the lighter skydiver more, because the weight of this skydiver is smaller. In the values of the model the final speeds are $47.6\\,\\text{m/s}$ and $61.4\\,\\text{m/s}$."
         },
         {
           "text": "The $60\\,\\text{kg}$ skydiver, because a light object is easier to accelerate.",
@@ -149,8 +149,8 @@
       },
       "names": {
         "m": "mass $m$",
-        "asento": "asento",
-        "varjo": "varjo"
+        "asento": "position",
+        "varjo": "parachute"
       },
       "units": {
         "m": "kg"
@@ -200,8 +200,8 @@
             "feedback": "If air resistance were greater than the weight, the net force would point up and the skydiver would slow down. In the table they are equal: for the speed to stay constant it is enough that the net force is zero."
           },
           {
-            "text": "For the heavier skydiver air resistance is smaller at the end, because he is heavier.",
-            "feedback": "In the table, the air resistance of the heavier skydiver at the end is greater, equal to his greater weight. That requires a greater speed."
+            "text": "For the heavier skydiver air resistance is smaller at the end, because the skydiver is heavier.",
+            "feedback": "In the table, the air resistance of the heavier skydiver at the end is greater, equal to the greater weight of this skydiver. That requires a greater speed."
           }
         ]
       }
@@ -219,8 +219,8 @@
       },
       "names": {
         "m": "mass $m$",
-        "asento": "asento",
-        "varjo": "varjo"
+        "asento": "position",
+        "varjo": "parachute"
       },
       "units": {
         "m": "kg"
@@ -291,8 +291,8 @@
       },
       "names": {
         "m": "mass $m$",
-        "asento": "asento",
-        "varjo": "varjo"
+        "asento": "position",
+        "varjo": "parachute"
       },
       "units": {
         "m": "kg"
