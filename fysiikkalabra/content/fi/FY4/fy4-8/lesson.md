@@ -355,7 +355,7 @@ Luvussa *Työ ja energia* opit, että voima tekee työtä, kun kappale liikkuu v
 ### Kitka muuttaa mekaanista energiaa sisäenergiaksi
 Todellisessa vuoristoradassa pyörien vierimisvastus ja ilmanvastus vastustavat liikettä koko matkan ajan. Ne tekevät negatiivista työtä, ja vaunun mekaaninen energia pienenee juuri tämän työn verran. Energia ei katoa, vaan se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, jolloin ne lämpenevät hieman. Kokonaisenergia säilyy aina. Mekaaninen energia säilyy vain, kun kitkaa ja ilmanvastusta ei ole tai ne ovat niin pieniä, että ne voi jättää huomiotta.
 
-Painon ja kitkan ero on tärkeä. Painon tekemä työ riippuu vain korkeuserosta: palatessaan samalle korkeudelle kappale saa takaisin saman energian, kulki se mitä reittiä tahansa. Siksi painoon liittyy potentiaalienergia, ja paino on **konservatiivinen voima**. Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä, joten se riippuu reitistä. Tällaiselle **ei-konservatiiviselle voimalle** ei voi määritellä potentiaalienergiaa.
+Painon eli painovoiman ja kitkan eron muistat luvusta *Liike-energia, potentiaalienergia ja mekaaninen energia*: paino on **konservatiivinen voima**. Uutta on se, mitä tästä seuraa energian laskemiselle: painon tekemä työ riippuu vain korkeuserosta, joten palatessaan samalle korkeudelle kappale saa takaisin saman energian, kulki se mitä reittiä tahansa. Siksi painoon liittyy potentiaalienergia. Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä, joten se riippuu reitistä. Tällaiselle **ei-konservatiiviselle voimalle** ei voi määritellä potentiaalienergiaa.
 
 ### Vastaus alun kysymykseen
 Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vain se mekaaninen energia, jonka se sai noston aikana, eikä mikään lisää sitä. Vastusvoimat vähentävät sitä jokaisella metrillä. Jos seuraava mäki olisi yhtä korkea kuin ensimmäinen, juna ei pääsisi sen huipulle. Jokaisen myöhemmän mäen on oltava matalampi, jotta junalle jää huipulla vielä liike-energiaa.
@@ -413,7 +413,7 @@ missä indeksi $1$ tarkoittaa alkutilannetta ja $2$ lopputilannetta, $E_\text{k}
   <foreignObject x="510" y="199.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
-Kitka ja ilmanvastus tekevät aina negatiivista työtä, joten ne pienentävät mekaanista energiaa. Vetävä köysi tai moottori voi tehdä positiivista työtä ja kasvattaa sitä, kuten ketjuhissi, joka nostaa junaa. Jos muut voimat eivät tee työtä, $W_\text{muut} = 0$, ja energiaperiaatteesta tulee **mekaanisen energian säilymislaki**:
+Kun kappale liikkuu paikallaan olevaa alustaa tai ilmaa vasten, kitka ja ilmanvastus vastustavat liikettä ja tekevät negatiivista työtä, joten ne pienentävät mekaanista energiaa. (Liikkuva alusta tai tuuli voi tehdä myös positiivista työtä, esimerkiksi kuljetinhihna kantaa laatikkoa.) Vetävä köysi tai moottori voi tehdä positiivista työtä ja kasvattaa sitä, kuten ketjuhissi, joka nostaa junaa. Jos muut voimat eivät tee työtä, $W_\text{muut} = 0$, ja energiaperiaatteesta tulee **mekaanisen energian säilymislaki**:
 ```latex
 \begin{aligned}
 &E_{\text{k},1} + E_{\text{p},1} \\

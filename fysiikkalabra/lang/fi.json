@@ -1041,7 +1041,7 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Sininen nuoli on vaunun nopeus. Palkit näyttävät energiat samassa mittakaavassa.",
-      "lukemat": "$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$<br><strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong>"
+      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$"
     },
     "fy4-6": {
       "kaynnista": "Käynnistä",

@@ -12,7 +12,7 @@
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
   const g = 9.81, B = 3, R = 21, ANG = 45 * Math.PI / 180, YTOP = 20.5, DT = 0.002;
-  const GREEN = [43, 138, 62], BLUE = [25, 113, 194], HEATC = [232, 89, 12], INKC = [31, 41, 51], MUTEDC = [107, 116, 128];
+  const GREEN = [43, 138, 62], BLUE = [25, 113, 194], HEATC = [232, 89, 12], INKC = [31, 41, 51], MUTEDC = [107, 116, 128], PURPLE = [112, 56, 190];
   let laid = false, narrow = false, OX = 0, OY = 0, U = 1;
   const SC = { w: 400, h: 400, S: 6, cx: 200, gy: 336 };                  // scene panel: width, height, px per metre, centre x, ground y
   const EN = { x: 400, w: 200, y0: 0, h: 400, top: 62, zero: 214, bot: 366, name: 390 };   // energy panel (canvas coordinates within the panel)
@@ -151,7 +151,7 @@ new p5((p) => {
     for (let i = 0; i < n; i += 2) p.line(x1 + (x2 - x1) * i / n, y1 + (y2 - y1) * i / n, x1 + (x2 - x1) * (i + 1) / n, y1 + (y2 - y1) * (i + 1) / n);
   }
 
-  // --- the energy bars: E_p, E_k, E_mek (E_p and E_k stacked) up from zero, W_muut down; all to one scale, E_mek,1 dashed ---
+  // --- the energy bars: E_p, E_k, E_mek (own colour) up from zero, W_muut down; all to one scale, E_mek,1 dashed ---
   function energy(M, Ep, Ek, Em, Em0, W, fh) {
     p.noStroke(); p.fill(255); p.rect(0, 0, EN.w, EN.h);
     p.stroke(220); p.strokeWeight(1); if (narrow) p.line(0, 0, EN.w, 0); else p.line(0, 0, 0, EN.h);
@@ -163,11 +163,10 @@ new p5((p) => {
     p.noStroke();
     p.fill(...GREEN); p.rect(xs[0] - bw / 2, EN.zero - Ep * k, bw, Ep * k);
     p.fill(...BLUE); p.rect(xs[1] - bw / 2, EN.zero - Ek * k, bw, Ek * k);
-    p.fill(...GREEN); p.rect(xs[2] - bw / 2, EN.zero - Ep * k, bw, Ep * k);
-    p.fill(...BLUE); p.rect(xs[2] - bw / 2, EN.zero - Em * k, bw, Ek * k);
+    p.fill(...PURPLE); p.rect(xs[2] - bw / 2, EN.zero - Em * k, bw, Em * k);
     p.fill(...HEATC); p.rect(xs[3] - bw / 2, EN.zero, bw, Math.min(-W * k, EN.bot - EN.zero));
     const names = ['$E_\\text{p}$', '$E_\\text{k}$', '$E_\\text{mek}$', '$W_\\text{muut}$'];
-    names.forEach((s, i) => lab(s, xs[i], EN.name, 'c', fh, i === 0 ? GREEN : i === 1 ? BLUE : i === 3 ? HEATC : INKC));
+    names.forEach((s, i) => lab(s, xs[i], EN.name, 'c', fh, i === 0 ? GREEN : i === 1 ? BLUE : i === 3 ? HEATC : PURPLE));
   }
 
   // every canvas text: its ink box pushed to simState.labels (canvas coordinates)
