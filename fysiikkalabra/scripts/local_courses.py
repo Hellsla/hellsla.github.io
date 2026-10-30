@@ -14,6 +14,8 @@ A course's fields (all texts in the language of the file):
   report                                 [{title, text}]: the sections of the course's report template
   prepare                                [{id, why}]: published Ruukkilabra chapters to study first, by lesson id;
                                          linked only where the language published the chapter, never a broken link
+  pathway                                investigation ids in the course's order; the course page lists its published
+                                         investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
 """
 import json, re, sys, pathlib, html as _h
@@ -77,6 +79,8 @@ def page_body(code, c, T, chapters, published, investigations=()):
            f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'
            f'<p class="local-desc">{esc(c["description"])}</p>')
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
+        order = {i: n for n, i in enumerate(c.get("pathway", []))}
+        investigations = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
         out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T("investigation.course_lead")}</p><ol class="lessons local-inv">'
                 + "".join(f'<li class="live"><a href="{i}.html">{esc(d["title"])}</a><span class="local-why">{esc(d["question"])}</span></li>' for i, d in investigations) + "</ol>")
     if c.get("goals"):
