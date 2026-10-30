@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, local_courses, mathlayout, practice, svgids
+import courses, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -49,7 +49,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
@@ -300,8 +300,10 @@ def link_languages():
                     else:
                         module = name.split("-")[0].upper() + ".html"; key = "site.lang_unavailable"
                         if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
-                        else:                    # a local course this language lacks: its front page's note
-                            target = "index.html" + (f"#unavailable-{name[:-5]}" if f'id="unavailable-{name[:-5]}"' in (OUTS[other] / "index.html").read_text() else "")
+                        else:                    # a local course (or its investigation) this language lacks: the course's front page note
+                            home = (OUTS[other] / "index.html").read_text()
+                            ids = [i for i in (name[:-5], module[:-5]) if f'id="unavailable-{i}"' in home]
+                            target = "index.html" + (f"#unavailable-{ids[0]}" if ids else "")
                             key = "site.lang_unavailable_home"
                         note = f'<span class="lang-note" id="lang-note-{other}">{esc(here(key))}</span>'
                     href = os.path.relpath(OUTS[other] / target.split("#")[0], OUTS[lang]).replace(os.sep, "/") + ("#" + target.split("#")[1] if "#" in target else "")
@@ -543,12 +545,32 @@ def build_language(lang):
     # Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): school-specific courses from
     # local-courses.json, apart from the national modules; a page and a front-page row in each language that has the
     # course. A language without one keeps a note at its front page's #unavailable-<CODE> for the language links.
-    local = local_courses.load(lang)
     chapters = {l["id"]: (code, l["title"]) for code, mod in modules for l in mod.get("lessons", [])}
+    # Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): one canonical page each, published like
+    # a lesson when both reviews pass; the pages of the courses it names list it.
+    inv_built = {}
+    for iid in investigations.ids(lang):
+        if only and only != iid: continue
+        st = investigations.status(iid, lang)
+        if st["state"] != "reviewed" and not (only or build_all):
+            if (LIVE / out.relative_to(SITE) / f"{iid}.html").is_file():
+                print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {iid}.html is on the live site but its reviews are not current; this build removes it")
+            continue
+        d = investigations.load(iid, lang); course = d["courses"][0]
+        body, itoc = investigations.render(iid, lang, T, lambda t: nbsp_units(render_md(t)), chapters, {f"{i}.html" for i in built_ids})
+        html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", course).replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("investigation.notice_draft")}</p>')
+                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=course)))
+                .replace("{{toc}}", itoc).replace("{{main}}", body).replace("{{scripts}}", '<script src="investigation.js"></script>')
+                .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{iid}.html")
+                .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(f"{iid}.html")))
+        (out / f"{iid}.html").write_text(rebase(html)); inv_built[iid] = d
+        print("built", iid, f"({st['state']})")
+    local = local_courses.load(lang)
     local_rows = ""
     for code, c in local.items():
         local_rows += local_courses.home_row(code, c, T)
-        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}),
+        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
+                                                                                                  [(i, d) for i, d in inv_built.items() if code in d["courses"]]),
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
@@ -602,7 +624,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [practice.page_name(c) for c in practice_built])
+    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [practice.page_name(c) for c in practice_built])
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
@@ -614,7 +636,7 @@ for lang in LANGS: build_language(lang)
 link_languages()
 i18n.set_lang(i18n.SOURCE)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"] + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

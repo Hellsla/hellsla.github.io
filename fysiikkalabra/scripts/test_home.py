@@ -21,7 +21,7 @@ Exit status 1 on any failure."""
 import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n, local_courses
+import i18n, investigations, local_courses
 
 SITE = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "site")
 curriculum = {k: v for k, v in json.loads((ROOT / "curriculum.json").read_text()).items() if not k.startswith("_")}
@@ -85,6 +85,10 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
+            inv = re.search(r'<ol class="lessons local-inv">(.*?)</ol>', pg, re.S)
+            ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
+            expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
+                   all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
     for code in everywhere:
         if code not in local: expect(f"{lang}: front page note for {code}, which this language lacks", f'id="unavailable-{code}"' in home)

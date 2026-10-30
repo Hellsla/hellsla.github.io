@@ -614,3 +614,32 @@ fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="
 .ex-path{max-width:calc(var(--measure) + 3rem);margin:0 0 1rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}
 .level-lead{margin:.2rem 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
 .ex-core{display:inline-block;margin:0 .5rem .25rem 0;padding:.05rem .55rem;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent-deep);font-size:.8125rem;font-weight:700;vertical-align:.1em}
+/* Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): the lesson page's reading column; the goals
+   and levels, the working-mode choice (radios; guidance blocks of other modes are hidden by investigation.js), the
+   prerequisites by kind with their level, just-in-time help links, guidance blocks as tinted panels, teacher guidance
+   closed at the end. */
+.local-inv .local-why{flex-basis:100%;padding:0 0 .5rem}
+.investigation .inv-learn ul{padding-left:1.3rem}
+.inv-levels{list-style:none;padding:0;margin:.3rem 0}
+.inv-levels-note{font-size:var(--fs-small);color:var(--ink-2);margin:.2rem 0 0}
+fieldset.inv-modes{margin:1.6rem 0 0;padding:.8rem 1rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+fieldset.inv-modes legend{font:700 var(--fs-ui) var(--sans);padding:0 .4rem}
+label.inv-mode{display:flex;gap:.7rem;align-items:flex-start;min-height:44px;padding:.45rem 0;font-size:var(--fs-ui);line-height:1.45;cursor:pointer}
+label.inv-mode input{width:22px;height:22px;margin:.1rem 0 0;flex:none;accent-color:var(--accent-deep)}
+label.inv-mode strong{display:block}
+ul.inv-prereq{list-style:none;padding:0;margin:.4rem 0 1rem;border-top:1px solid var(--line-2)}
+ul.inv-prereq li{margin:0;padding:.5rem 0;border-bottom:1px solid var(--line-2)}
+.inv-level{display:inline-block;font:600 .8125rem/1.6 var(--sans);border:1px solid var(--line);border-radius:999px;padding:0 .55rem;margin-right:.4rem;color:var(--ink-2)}
+.inv-level-essential{border-color:var(--accent-deep);color:var(--accent-deep)}
+.inv-mod{color:var(--ink-2);font-size:var(--fs-ui)}
+.inv-why{display:block;font-size:var(--fs-ui);color:var(--ink-2);margin-top:.15rem}
+.inv-help{display:block;margin:.6rem 0;font-size:var(--fs-ui);font-style:italic;color:var(--ink-2)}
+.inv-help a{font-style:normal;font-weight:600}
+.inv-tuki{margin:1rem 0;padding:.7rem 1rem;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:var(--accent-soft)}
+.inv-tuki>p{margin:.3rem 0}
+ul.inv-safety li::marker{color:var(--copper)}
+details.inv-teacher{margin:2.4rem 0 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:0 1rem}
+details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
+.investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
+.inv-section{scroll-margin-top:var(--sticky-top)}

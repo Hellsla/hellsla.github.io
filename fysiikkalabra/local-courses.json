@@ -42,6 +42,7 @@
       {"title": "Luotettavuus ja mittausepävarmuus", "text": "tärkeimmät epävarmuuden lähteet, niiden vaikutus ja miten koetta voisi parantaa"},
       {"title": "Lähteet", "text": "käytetyt lähteet niin, että ne löytyvät uudelleen"}
     ],
+    "pathway": ["fy10-pomppukorkeus", "fy10-leikkiauto", "fy10-heiluri", "fy10-jousivakio", "fy10-uppokuumennin"],
     "prepare": [
       {"id": "fy1-3", "why": "mittaustarkkuus, mittausepävarmuus ja tuloksen ilmoittaminen"},
       {"id": "fy1-4", "why": "kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta"},

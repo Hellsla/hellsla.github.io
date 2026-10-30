@@ -37,6 +37,19 @@ not rebuilt. It reads no URL parameters today, so a topic deep link needs a smal
 - Validation (build and `test_home.py`, in CI): codes unique and apart from national ones, required texts, known
   status, `prepare` ids are curriculum lessons and are linked only where published in that language.
 
+## Experimental investigations (implemented 2026-10-30)
+- One canonical page per investigation: `content/<lang>/tutkimukset/<id>/` (`investigation.json`, `investigation.md`,
+  `teacher.md`, `review/`) and `lessons/tutkimukset/<id>/figures.py`; `scripts/investigations.py` documents the
+  format, validates it (`check`, in CI) and renders `site/<id>.html` with the lesson template.
+- Published like a lesson: both reviews PASS for the investigation's own content hash (`investigations.py hash`).
+- Metadata carries courses, modules, goals, variants with F1–F3 / E1–E3, working modes, prerequisites
+  (physics / experiment / tvt × essential / helpful / extension, a reason, a lesson id or a named missing page),
+  equipment and safety. The page renders the prerequisites, the levels and a working-mode choice.
+- One page for three modes: `::: tuki O OO` … `:::` blocks show only in those modes (`templates/investigation.js`;
+  without scripts everything shows). `[[apua:<lesson id>|label]]` is a just-in-time help link, a link only where the
+  chapter is published.
+- A course page lists the published investigations that name it (`courses`): the course refers, never copies.
+
 ## Shared resources (design for phases C–G)
 - **One canonical resource, many pathways.** A course is a pathway through reusable resources; never copy a
   lesson, investigation, project or tutorial into a second course.
