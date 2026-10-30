@@ -1047,6 +1047,42 @@
       "vk2": "$\\text{Punnuksen voimakuvio}$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
+    },
+    "fy4-7": {
+      "kaynnista": "Käynnistä",
+      "tauko": "Tauko",
+      "alusta": "Alusta",
+      "alkunopeus": "Alkunopeus $v_0 = {{v}}\\,\\text{m/s}$",
+      "massa": "Massa",
+      "ramppi": "Ramppi",
+      "loiva": "loiva",
+      "jyrkka": "jyrkkä",
+      "kitka": "Kitka",
+      "eikitkaa": "ei kitkaa",
+      "pienikitka": "vähän kitkaa",
+      "nopeus": "Animaation nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Sininen nuoli on nopeus. Oranssi pylväs on liike-energia, vihreä pylväs potentiaalienergia ja harmaa pylväs mekaaninen energia.",
+      "lukemat": "$v = {{v}}\\,\\text{m/s}$, $h = {{h}}\\,\\text{m}$<br>$E_\\text{k} = {{Ek}}\\,\\text{J}$, $E_\\text{p} = {{Ep}}\\,\\text{J}$, <strong>$E_\\text{mek} = {{Em}}\\,\\text{J}$</strong><br>$h_\\text{max} = {{hm}}\\,\\text{m}$, $v_\\text{paluu} = {{vb}}\\,\\text{m/s}$"
+    },
+    "fy4-8": {
+      "kaynnista": "Käynnistä",
+      "tauko": "Tauko",
+      "alusta": "Alusta",
+      "korkeus": "Lähtökorkeus $h_1 = {{h}}\\,\\text{m}$",
+      "vastus": "Vastusvoima (jarruttava voima) $F_\\text{vast} = {{F}}\\,\\text{N}$",
+      "massa": "Massa",
+      "rata": "Radan muoto",
+      "kaari": "kaareva",
+      "suora": "suora",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Sininen nuoli näyttää vaunun nopeuden. Palkit näyttävät energiat samalla mittakaavalla.",
+      "lukemat": "<strong>$v_\\text{pohja} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mek} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{muut} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mek} = {{dE}}\\,\\text{kJ}$"
     }
   },
   "practice": {

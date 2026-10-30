@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "contribution": "Kinetic energy $E_\\text{k} = \\tfrac12 m v^2$ derived from the rise height $\\tfrac{v^2}{2g}$ (the square of the speed and the mass), gravitational potential energy $m g h$ and the choice of the zero level, a conservative force as a restorer of energy and independent of the path (gravity, spring force; friction is not), and mechanical energy $E_\\text{k} + E_\\text{p}$ before its conservation law.",
+  "learn": [
+    "calculate the kinetic energy, potential energy and mechanical energy of an object relative to a chosen zero level.",
+    "explain why kinetic energy grows with the square of the speed and why only the change in potential energy matters.",
+    "identify conservative forces and explain why no potential energy is associated with friction."
+  ],
+  "prior": [
+    "An object thrown straight up at speed $v$ rises to a height $\\tfrac{v^2}{2g}$ when air resistance is small (chapter *Acceleration and uniformly accelerated motion*)",
+    "The weight of an object is $G = m g$ (chapter *Weight, friction and the inclined plane*)",
+    "Energy changes from one form to another and its unit is the joule (chapter *Energy transformations and the joule*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A skateboarder rolls along level ground and goes up a straight ramp until she stops for a moment and starts back down. Friction and air resistance are small. When her speed at the foot of the ramp is $3.0\\,\\text{m/s}$, she rises to a height of about $0.46\\,\\text{m}$. When the speed is doubled, $6.0\\,\\text{m/s}$, she rises to about $1.8\\,\\text{m}$, that is, four times as high.",
+      "question": "What grows so much in the skateboarder's motion that doubling the speed is enough for four times the rise?"
+    },
+    {
+      "id": "pr-nousu",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review from the chapter Acceleration and uniformly accelerated motion",
+      "prompt": "A ball is thrown straight up at a speed of $10\\,\\text{m/s}$, and air resistance is small. The acceleration of the ball is $g = 9.81\\,\\text{m/s}^2$ downward all the time. How high above the throwing point does the ball rise?",
+      "choices": [
+        {
+          "text": "$5.1\\,\\text{m}$",
+          "correct": true,
+          "feedback": "Correct. The time of rise is $t = \\tfrac{v}{g} \\approx 1.02\\,\\text{s}$, and the average speed during the rise is half the initial speed, so $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\approx 5.1\\,\\text{m}$."
+        },
+        {
+          "text": "$10\\,\\text{m}$",
+          "feedback": "You calculated $\\tfrac{v^2}{g}$, that is, you multiplied the initial speed by the time of rise. The ball slows down all the way up, so its average speed is only half the initial speed: $h = \\tfrac{v^2}{2g}$."
+        },
+        {
+          "text": "$1.0\\,\\text{m}$",
+          "feedback": "The number $\\tfrac{v}{g} \\approx 1.0$ is the time of rise in seconds, not a height. The height is the average speed times the time of rise: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
+        },
+        {
+          "text": "$0.51\\,\\text{m}$",
+          "feedback": "You calculated $\\tfrac{v}{2g}$, whose unit is the second, not the metre. The speed appears in the rise height to the second power: $h = \\tfrac{v^2}{2g}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: triple the speed",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "A cart goes up a frictionless ramp. When its speed at the foot of the ramp is $1.0\\,\\text{m/s}$, it rises to a height $h$. How high does it rise when its speed at the foot of the ramp is $3.0\\,\\text{m/s}$?",
+      "choices": [
+        {
+          "text": "Three times as high, because the speed is three times as great.",
+          "feedback": "The rise height does not grow in the same proportion as the speed. In the model's values the cart rises to $0.051\\,\\text{m}$ at a speed of $1.0\\,\\text{m/s}$ and to $0.46\\,\\text{m}$ at $3.0\\,\\text{m/s}$, that is, nine times as high."
+        },
+        {
+          "text": "Six times as high, because the factor of the speed doubles in the rise height: $3 \\cdot 2 = 6$.",
+          "feedback": "Doubling the speed gave four times the rise, but there $4 = 2 \\cdot 2$ is the speed factor multiplied by itself, not by $2$. At triple speed the cart rises for three times as long and its average speed is three times as great, so the height is $3 \\cdot 3 = 9$ times as great. The model's values are $0.051\\,\\text{m}$ and $0.46\\,\\text{m}$."
+        },
+        {
+          "text": "Nine times as high, because the rise height grows with the square of the speed.",
+          "correct": true,
+          "feedback": "The model's values support this: at speeds $1.0$, $2.0$ and $3.0\\,\\text{m/s}$ the cart rises to heights $0.051\\,\\text{m}$, $0.20\\,\\text{m}$ and $0.46\\,\\text{m}$, in the ratio $1 : 4 : 9$. The energy needed for the rise, and so the kinetic energy, grows with the square of the speed."
+        },
+        {
+          "text": "Less than three times as high, because the ramp slows a fast cart down more strongly.",
+          "feedback": "On a frictionless ramp the cart's deceleration is the same whatever the speed, because it is caused only by the component of the weight along the ramp. In the model's values triple the speed gives nine times the height: $0.051\\,\\text{m}$ and $0.46\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: gentle and steep ramp",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "A cart goes up a gentle ramp once and a steep ramp once, at the same speed of $3.0\\,\\text{m/s}$. There is no friction. How high does the cart rise on the steep ramp compared with the gentle one, and at what speed does it return to the foot of the ramp?",
+      "choices": [
+        {
+          "text": "Lower on the steep one, because the steep ramp slows it down more, and it returns more slowly.",
+          "feedback": "On the steep ramp the cart slows down faster, but it also travels a shorter distance up. In the model's values the cart rises to $0.46\\,\\text{m}$ on both ramps and returns at $3.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Higher on the steep one, because the distance up is shorter, and it returns faster.",
+          "feedback": "A shorter distance does not bring more energy. In the model's values the cart rises to the same height $0.46\\,\\text{m}$ on both ramps and returns at the same speed $3.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Equally high on both, and it returns to the foot at the same speed at which it started.",
+          "correct": true,
+          "feedback": "The model's values support this: the cart rises to $0.46\\,\\text{m}$ on both ramps and returns at $3.0\\,\\text{m/s}$. Gravitational potential energy depends only on height, and gravity returns the energy completely as kinetic energy."
+        },
+        {
+          "text": "Equally high on both, but it returns faster from the steep ramp.",
+          "feedback": "The return speed does not depend on the steepness of the ramp when there is no friction. In the model's values the cart returns from both ramps at $3.0\\,\\text{m/s}$, that is, at the same speed at which it started."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The cart starts up the ramp at a chosen speed, stops for a moment and returns. The bars show its kinetic, potential and mechanical energy.",
+      "howto": "Choose the initial speed $v_0$, the mass of the cart, the steepness of the ramp and the friction. Press *Start* and let the cart rise and return to the foot of the ramp; the run ends there. The blue arrow is the speed of the cart, and the dashed line marks the highest point $h_\\text{max}$. On the right (on a phone, below) the orange bar is the kinetic energy $E_\\text{k}$, the green one the potential energy $E_\\text{p}$ and the grey one their sum, the mechanical energy $E_\\text{mech}$. The bars have a fixed scale, so the bars of different runs can be compared with each other. The *Speed* option changes only the pace of the animation.",
+      "model": "The values are model values calculated by the simulation, not measurements. The cart is a point mass, and the ramp is straight: the angle of the gentle ramp is $25^\\circ$ and that of the steep one $50^\\circ$. The zero level is the foot of the ramp ($h = 0$), and $g = 9.81\\,\\text{m/s}^2$. There is no air resistance. When friction is selected, the motion is opposed by a friction force with coefficient of friction $\\mu = 0.10$; otherwise there is no friction.",
+      "calc": "On the ramp the acceleration of the cart is $g(\\sin\\alpha + \\mu\\cos\\alpha)$ when going up and $g(\\sin\\alpha - \\mu\\cos\\alpha)$ when coming down, in the direction down along the ramp. The height is $h = s\\sin\\alpha$, where $s$ is the distance travelled along the surface of the ramp. The energies are calculated at every moment: $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$, $E_\\text{p} = m g h$ and $E_\\text{mech} = E_\\text{k} + E_\\text{p}$. $h_\\text{max}$ is the highest point and $v_\\text{return}$ the speed when the cart has returned to the foot of the ramp."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: initial speed and rise height",
+      "intro": "Test prediction 1. The initial state sets the mass to $m = 1.0\\,\\text{kg}$ and the ramp to gentle without friction, and locks them. Set the initial speed to $v_0 = 1.0\\,\\text{m/s}$, press *Start* and wait until the cart has returned to the foot of the ramp. Record the measurement. Repeat with speeds $2.0\\,\\text{m/s}$ and $3.0\\,\\text{m/s}$.",
+      "initial": {
+        "v0": 1,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "gentle ramp",
+          "jyrkka": "steep ramp"
+        },
+        "kitka": {
+          "ei": "no friction",
+          "pieni": "small friction"
+        }
+      },
+      "locked": [
+        "m",
+        "rinne",
+        "kitka"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "Ek0",
+          "label": "$E_\\text{k}$ at the start (J)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "How many times as high does the cart rise at $3.0\\,\\text{m/s}$ as at $1.0\\,\\text{m/s}$? Calculate the ratio of the heights in the table.",
+        "answer": 9.0,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "Divide the rise height at the greater speed by the rise height at the smaller speed.",
+          "Use the numbers in the column $h_\\text{max}$ from the rows $v_0 = 3.0\\,\\text{m/s}$ and $v_0 = 1.0\\,\\text{m/s}$.",
+          "$\\dfrac{h_\\text{max}(3.0\\,\\text{m/s})}{h_\\text{max}(1.0\\,\\text{m/s})} = \\dfrac{0.459\\,\\text{m}}{0.051\\,\\text{m}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 3.0,
+            "feedback": "This is the ratio of the speeds. Calculate the ratio of the heights from the table: the height grows more than the speed."
+          },
+          {
+            "value": 0.111,
+            "feedback": "You divided the smaller height by the greater. The question is how many times as high the faster cart rises: the greater height is divided by the smaller."
+          }
+        ],
+        "solution": "**Given:** from the table the rise heights $h_1 = 0.051\\,\\text{m}$ at speed $v_1 = 1.0\\,\\text{m/s}$ and $h_3 = 0.459\\,\\text{m}$ at speed $v_3 = 3.0\\,\\text{m/s}$; there is no friction, and the mass and the ramp are the same\n\n**Find:** the ratio of the heights $\\tfrac{h_3}{h_1}$, that is, how many times as high the faster cart rises (no unit)\n\n**Principle:** In the experiment only the initial speed was changed, so the difference in heights is due to the speed. The ratio tells how the rise height depends on the speed. In a frictionless rise the kinetic energy of the cart changes into potential energy, so the ratio also tells how the kinetic energy depends on the speed.\n\n**Formula:** The ratio is $\\dfrac{h_3}{h_1}$. It is already in solved form.\n\n**Conversions:** Both heights are in metres, so the unit cancels. No conversions are needed.\n\n**Substitution:** $\\dfrac{h_3}{h_1} = \\dfrac{0.459\\,\\text{m}}{0.051\\,\\text{m}} \\approx 9.0$\n\n**Answer:** $9.0$ times as high. Two significant figures, because the smaller height $0.051\\,\\text{m}$ was read to two significant figures.\n\n**Reasonableness:** The ratio of the speeds is $3$, and its square is $3^2 = 9$. Also at the speed $2.0\\,\\text{m/s}$ the height $0.204\\,\\text{m}$ is about $4$ times $0.051\\,\\text{m}$, so the height grows with the square of the speed. The kinetic energy in the table shows the same: $0.50\\,\\text{J}$ and $4.5\\,\\text{J}$, that is, nine times as much."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: gentle and steep ramp",
+      "intro": "Test prediction 2. The initial state sets $v_0 = 3.0\\,\\text{m/s}$, $m = 1.0\\,\\text{kg}$ and a frictionless ramp, and locks them. Run the cart on the gentle ramp and record the measurement when the cart has returned to the foot of the ramp. Then switch to the steep ramp, run and record again.",
+      "initial": {
+        "v0": 3,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "gentle ramp",
+          "jyrkka": "steep ramp"
+        },
+        "kitka": {
+          "ei": "no friction",
+          "pieni": "small friction"
+        }
+      },
+      "locked": [
+        "v0",
+        "m",
+        "kitka"
+      ],
+      "vary": "rinne",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "vback",
+          "label": "$v_\\text{return}$ (m/s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "What does the table show?",
+        "choices": [
+          {
+            "text": "The cart rises to $0.46\\,\\text{m}$ on both ramps and returns at $3.0\\,\\text{m/s}$.",
+            "correct": true,
+            "feedback": "Correct. The steepness of the ramp changes neither the rise height nor the return speed: gravitational potential energy depends only on height, not on the path, and gravity returns it completely as kinetic energy. That is why gravity is a conservative force."
+          },
+          {
+            "text": "On the steep ramp the cart rises lower but returns at the same speed.",
+            "feedback": "Look at the numbers in the column $h_\\text{max}$: they are the same, $0.46\\,\\text{m}$. On the steep ramp the cart travels a shorter distance but rises equally high."
+          },
+          {
+            "text": "On the steep ramp the cart returns at a greater speed than it started.",
+            "feedback": "The return speed in the table is $3.0\\,\\text{m/s}$ on both, the same as the initial speed. The cart gets no extra energy from anywhere, so it cannot return faster than it started."
+          },
+          {
+            "text": "On the gentle ramp the cart rises higher, because it travels a longer distance.",
+            "feedback": "A longer distance along the surface of the ramp does not mean a greater height. In the table $h_\\text{max}$ is $0.46\\,\\text{m}$ on both."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: friction",
+      "intro": "The initial state sets $v_0 = 3.0\\,\\text{m/s}$, $m = 1.0\\,\\text{kg}$ and the gentle ramp, and locks them. First run without friction and record the measurement when the cart has returned. Then choose small friction, run again and record. Also watch the grey bar during the run.",
+      "initial": {
+        "v0": 3,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "gentle ramp",
+          "jyrkka": "steep ramp"
+        },
+        "kitka": {
+          "ei": "no friction",
+          "pieni": "small friction"
+        }
+      },
+      "locked": [
+        "v0",
+        "m",
+        "rinne"
+      ],
+      "vary": "kitka",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "vback",
+          "label": "$v_\\text{return}$ (m/s)"
+        },
+        {
+          "key": "Emek",
+          "label": "$E_\\text{mech}$ at the end (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Why does the cart rise lower and return more slowly with friction?",
+        "choices": [
+          {
+            "text": "Friction changes part of the mechanical energy into internal energy, which does not return as motion.",
+            "correct": true,
+            "feedback": "Correct. In the model's values the mechanical energy decreases from $4.5\\,\\text{J}$ to $2.9\\,\\text{J}$, and the grey bar gets shorter all through the run. No potential energy is associated with friction, because it does not return the energy: friction is not a conservative force."
+          },
+          {
+            "text": "Friction stores part of the kinetic energy as potential energy that stays in the surface of the ramp.",
+            "feedback": "If friction stored energy as potential energy, it would return as motion and the cart would return at $3.0\\,\\text{m/s}$. The return speed is only $2.4\\,\\text{m/s}$, however: the energy has become internal energy, that is, the temperature of the ramp and the cart has risen slightly."
+          },
+          {
+            "text": "Friction reduces the mass of the cart, so its kinetic energy decreases during the run.",
+            "feedback": "The mass of the cart stays $1.0\\,\\text{kg}$. The kinetic energy decreases because the speed decreases: friction changes part of the mechanical energy into internal energy."
+          },
+          {
+            "text": "Friction increases the gravitational potential energy, so the cart stops earlier.",
+            "feedback": "Potential energy $m g h$ depends only on the mass and the height, not on friction. In the table the mechanical energy at the end is smaller than at the start, that is, energy has changed into internal energy."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: mass",
+      "intro": "The initial state sets $v_0 = 3.0\\,\\text{m/s}$ and the gentle ramp without friction, and locks them. Run the cart with three masses $0.50\\,\\text{kg}$, $1.0\\,\\text{kg}$ and $2.0\\,\\text{kg}$ and record after each run. How does the mass affect the rise height and the kinetic energy?",
+      "initial": {
+        "v0": 3,
+        "m": "0.5",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "gentle ramp",
+          "jyrkka": "steep ramp"
+        },
+        "kitka": {
+          "ei": "no friction",
+          "pieni": "small friction"
+        }
+      },
+      "locked": [
+        "v0",
+        "rinne",
+        "kitka"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "Ek0",
+          "label": "$E_\\text{k}$ at the start (J)"
+        }
+      ],
+      "min": 3,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion from the experiments",
+      "after": [
+        "exp-1",
+        "exp-2",
+        "exp-3"
+      ],
+      "prompt": "Write a conclusion from experiments 1–3: how do the rise height and the kinetic energy depend on the speed, what did the steepness of the ramp change and what did friction change?",
+      "criteria": [
+        "I say that at triple the speed the cart rose nine times as high, that is, the rise height and the kinetic energy grow with the square of the speed.",
+        "I say that on the gentle and the steep ramp the rise height and the return speed were the same, so gravitational potential energy depends only on height.",
+        "I say that with friction the cart rose lower and returned more slowly, because part of the mechanical energy changed into internal energy.",
+        "I say that the numbers are values of the simulation's model."
+      ],
+      "model": "In the values of the simulation's model the cart rose at speeds $1.0$, $2.0$ and $3.0\\,\\text{m/s}$ to heights $0.051\\,\\text{m}$, $0.20\\,\\text{m}$ and $0.46\\,\\text{m}$, in the ratio $1 : 4 : 9$. The rise height and the energy needed for it therefore grow with the square of the speed, and so does the kinetic energy, which was $0.50\\,\\text{J}$, $2.0\\,\\text{J}$ and $4.5\\,\\text{J}$. On the gentle and the steep ramp the cart rose to the same height $0.46\\,\\text{m}$ and returned at the same speed $3.0\\,\\text{m/s}$: gravity returns the energy completely, and its potential energy depends only on height. With friction the cart rose only to $0.38\\,\\text{m}$ and returned at $2.4\\,\\text{m/s}$, and the mechanical energy decreased from $4.5\\,\\text{J}$ to $2.9\\,\\text{J}$. Friction changed part of it into internal energy, which did not return as motion."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the results of the experiments. What did you learn about the connection between the rise height and the speed and about the significance of the steepness of the ramp? Also return to the skateboarder at the beginning: why is double the speed enough for four times the rise?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the kinetic energy of a $1000\\,\\text{kg}$ car when the speed of the car is $36\\,\\text{km/h}$. He writes $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot 36^2 = 648\\,000\\,\\text{J}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The speed must be converted first: $36\\,\\text{km/h} = 10\\,\\text{m/s}$, which gives $E_\\text{k} = 50\\,\\text{kJ}$.",
+          "correct": true,
+          "feedback": "Correct. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$, and $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot (10\\,\\text{m/s})^2 = 50\\,000\\,\\text{J}$. The joule is $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$, so the speed must be in the unit $\\text{m/s}$."
+        },
+        {
+          "text": "The factor $\\tfrac{1}{2}$ does not belong, which gives the result $1\\,296\\,000\\,\\text{J}$.",
+          "feedback": "The factor $\\tfrac{1}{2}$ belongs in the expression for kinetic energy: it comes from the rise height $h = \\tfrac{v^2}{2g}$. The error is in the unit: the speed was substituted in the unit $\\text{km/h}$."
+        },
+        {
+          "text": "The speed is not squared, which gives the result $18\\,000\\,\\text{J}$.",
+          "feedback": "Kinetic energy is proportional to the square of the speed, so the square belongs in the calculation. The error is that the speed has not been converted to the unit $\\text{m/s}$."
+        },
+        {
+          "text": "There is no error in the calculation, because the formula is correct and the numbers have been substituted.",
+          "feedback": "The formula is correct, but you get the joule only from SI units. $36\\,\\text{km/h} = 10\\,\\text{m/s}$, so the correct result is $50\\,\\text{kJ}$, not $648\\,\\text{kJ}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A road safety campaign compares a collision with a fall. A car drives at a speed of $50\\,\\text{km/h}$. How high above the zero level would the potential energy of the car be equal to its kinetic energy at this speed? Answer in metres.",
+      "answer": 9.83186720529568,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Write an equation where the potential energy is equal to the kinetic energy. What happens to the mass?",
+        "$m g h = \\tfrac{1}{2}\\,m v^2$, so the mass cancels and $h = \\tfrac{v^2}{2g}$. First convert the speed to the unit $\\text{m/s}$.",
+        "$50\\,\\text{km/h} = \\tfrac{50 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 13.9\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 127.4,
+          "feedback": "You substituted the speed in the unit $\\text{km/h}$. Convert first: $50\\,\\text{km/h} = 50 \\cdot 1000\\,\\text{m} : 3600\\,\\text{s} \\approx 13.9\\,\\text{m/s}$."
+        },
+        {
+          "value": 19.66,
+          "feedback": "The factor $\\tfrac{1}{2}$ is missing. Kinetic energy is $\\tfrac{1}{2}\\,m v^2$, so $h = \\tfrac{v^2}{2g}$."
+        }
+      ],
+      "solution": "**Given:** speed $v = 50\\,\\text{km/h}$, acceleration of free fall $g = 9.81\\,\\text{m/s}^2$; the mass of the car is not given\n\n**Find:** the height $h$ above the zero level in metres at which $E_\\text{p} = E_\\text{k}$\n\n**Principle:** Kinetic energy is $\\tfrac{1}{2}\\,m v^2$ and potential energy $m g h$. Set them equal. The mass is a factor in both, so it cancels and is not needed. Near the surface of the Earth the height is small, so $g$ is constant.\n\n**Formula:** $m g h = \\tfrac{1}{2}\\,m v^2$, so $h = \\dfrac{v^2}{2g}$\n\n**Conversions:** $50\\,\\text{km/h} = \\dfrac{50 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 13.89\\,\\text{m/s}$\n\n**Substitution:** $h = \\dfrac{(13.89\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\approx 9.83\\,\\text{m}$\n\n**Answer:** $9.8\\,\\text{m}$, two significant figures like the speed $50\\,\\text{km/h}$.\n\n**Reasonableness:** A storey of an apartment building is about $3\\,\\text{m}$, so a collision at $50\\,\\text{km/h}$ corresponds in energy to a fall from the height of about the third storey. With rounded numbers $\\tfrac{14^2}{20} \\approx 9.8$, so the result agrees. The height does not depend on the mass, so it applies equally well to a cyclist."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise still on three levels. Level 1 uses one formula, level 2 needs two steps or a unit conversion and level 3 reasoning. Always write down clearly what the zero level is."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A bow's string is drawn and an arrow is shot. In another situation a box sliding on the floor stops because of friction. With which force is potential energy associated?",
+      "choices": [
+        {
+          "text": "With the spring force, because the spring returns the energy put into it as motion.",
+          "correct": true,
+          "feedback": "Correct. The spring force is conservative: the energy of a stretched spring returns as kinetic energy, and it depends only on the stretch of the spring. Friction changes the kinetic energy of the box into internal energy, which does not return as motion, so no potential energy is associated with friction."
+        },
+        {
+          "text": "With friction, because the kinetic energy of the stopped box is stored in the surface of the floor.",
+          "feedback": "Friction changes the kinetic energy into the internal energy of the floor and the box: the surfaces warm up slightly. This energy does not return as motion of the box, so it is not potential energy. Friction is not a conservative force."
+        },
+        {
+          "text": "With both, because each force changes the kinetic energy of an object into another form.",
+          "feedback": "Each force changes the kinetic energy of an object here, but potential energy is associated only with a force that returns the energy. The spring returns it, friction does not. So potential energy is associated only with the spring force."
+        },
+        {
+          "text": "With neither, because potential energy is associated only with gravity and height.",
+          "feedback": "Gravitational potential energy is not the only kind of potential energy. A stretched spring has the potential energy of a spring, because the spring force is conservative and returns the energy as kinetic energy."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Reading a graph",
+      "figure": "fy4-7/pallo-ek",
+      "prompt": "The graph shows the kinetic energy of a ball as a function of its speed. What is the mass of the ball? Answer in kilograms.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose a point on the curve that falls on the crossing of grid lines and read its speed and kinetic energy.",
+        "For example, at the speed $4.0\\,\\text{m/s}$ the kinetic energy is $4.0\\,\\text{J}$. Solve the mass from the equation $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$.",
+        "$m = \\dfrac{2E_\\text{k}}{v^2} = \\dfrac{2 \\cdot 4.0\\,\\text{J}}{(4.0\\,\\text{m/s})^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.25,
+          "feedback": "The factor $2$ is missing. When $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$ is solved for the mass, you get $m = \\tfrac{2E_\\text{k}}{v^2}$."
+        },
+        {
+          "value": 2.0,
+          "feedback": "The speed is missing its second power. Kinetic energy is proportional to the square of the speed, so $m = \\tfrac{2E_\\text{k}}{v^2}$."
+        }
+      ],
+      "solution": "**Given:** from the graph the point $v = 4.0\\,\\text{m/s}$, $E_\\text{k} = 4.0\\,\\text{J}$; the graph is a parabola starting from the origin\n\n**Find:** the mass $m$ of the ball in kilograms\n\n**Principle:** Kinetic energy is $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$. Every point of the graph satisfies this equation with the same mass, so the mass can be found from one point that is easy to read.\n\n**Reading the graph:** The point $(4.0\\,\\text{m/s};\\, 4.0\\,\\text{J})$ is at the crossing of grid lines, so it is read exactly. The points $(2.0\\,\\text{m/s};\\, 1.0\\,\\text{J})$ and $(6.0\\,\\text{m/s};\\, 9.0\\,\\text{J})$ also fall on crossings.\n\n**Formula:** $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$, so $m = \\dfrac{2E_\\text{k}}{v^2}$\n\n**Conversions:** The energy is in joules and the speed in $\\text{m/s}$, and $\\tfrac{\\text{J}}{\\text{m}^2/\\text{s}^2} = \\text{kg}$. No conversions are needed.\n\n**Substitution:** $m = \\dfrac{2 \\cdot 4.0\\,\\text{J}}{(4.0\\,\\text{m/s})^2} = \\dfrac{8.0\\,\\text{J}}{16\\,\\text{m}^2/\\text{s}^2} = 0.50\\,\\text{kg}$\n\n**Answer:** $0.50\\,\\text{kg}$, two significant figures like the values read from the graph.\n\n**Reasonableness:** Another point gives the same: $\\tfrac{2 \\cdot 9.0\\,\\text{J}}{(6.0\\,\\text{m/s})^2} = 0.50\\,\\text{kg}$. A ball of half a kilogram is about the size class of a football."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain the phenomenon at the beginning: why does a skateboarder who is twice as fast rise four times as high on the ramp? Use the concepts kinetic energy and potential energy.",
+      "criteria": [
+        "I say that the skateboarder's kinetic energy changes into potential energy in the rise.",
+        "I justify that kinetic energy $\\tfrac{1}{2}\\,m v^2$ is proportional to the square of the speed, so at double the speed there is four times as much of it.",
+        "I justify that potential energy $m g h$ is proportional to the height, so four times the energy is enough for four times the height.",
+        "I mention the assumption that friction and air resistance are small."
+      ],
+      "model": "When friction and air resistance are small, the skateboarder's kinetic energy changes into potential energy on the ramp until she stops at the highest point. Kinetic energy $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$ is proportional to the square of the speed, so at the speed $6.0\\,\\text{m/s}$ the skateboarder has $2^2 = 4$ times as much kinetic energy as at the speed $3.0\\,\\text{m/s}$. Potential energy $E_\\text{p} = m g h$ is proportional to the height, so four times the energy lifts her to four times the height: to about $1.8\\,\\text{m}$ instead of $0.46\\,\\text{m}$. The mass has no effect, because it is a factor in both energies."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and open the answer only after that."
+    }
+  ]
+}

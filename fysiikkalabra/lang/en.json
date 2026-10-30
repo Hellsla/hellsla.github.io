@@ -1047,6 +1047,42 @@
       "vk2": "$\\text{Free-body diagram: hanging mass}$",
       "lukemat1": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$",
       "lukemat2": "$G_1 = {{G1}}\\,\\text{N}$, $G_2 = {{G2}}\\,\\text{N}$, $T = {{T}}\\,\\text{N}$<br>$\\Sigma F_1 = {{s1}}\\,\\text{N}$, $\\Sigma F_2 = {{s2}}\\,\\text{N}$<br><strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$, $t = {{t}}\\,\\text{s}$"
+    },
+    "fy4-7": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "alkunopeus": "Initial speed $v_0 = {{v}}\\,\\text{m/s}$",
+      "massa": "Mass",
+      "ramppi": "Ramp",
+      "loiva": "gentle",
+      "jyrkka": "steep",
+      "kitka": "Friction",
+      "eikitkaa": "no friction",
+      "pienikitka": "small friction",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "The blue arrow is the speed; the orange bar is kinetic energy, the green one potential energy, the grey one mechanical energy.",
+      "lukemat": "$v = {{v}}\\,\\text{m/s}$, $h = {{h}}\\,\\text{m}$<br>$E_\\text{k} = {{Ek}}\\,\\text{J}$, $E_\\text{p} = {{Ep}}\\,\\text{J}$, <strong>$E_\\text{mech} = {{Em}}\\,\\text{J}$</strong><br>$h_\\text{max} = {{hm}}\\,\\text{m}$, $v_\\text{return} = {{vb}}\\,\\text{m/s}$"
+    },
+    "fy4-8": {
+      "kaynnista": "Start",
+      "tauko": "Pause",
+      "alusta": "Reset",
+      "korkeus": "Starting height $h_1 = {{h}}\\,\\text{m}$",
+      "vastus": "Resistive force $F_\\text{res} = {{F}}\\,\\text{N}$",
+      "massa": "Mass",
+      "rata": "Track",
+      "kaari": "curved",
+      "suora": "straight",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "The blue arrow is the speed of the car. The bars show the energies on the same scale.",
+      "lukemat": "<strong>$v_\\text{bottom} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mech} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{other} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mech} = {{dE}}\\,\\text{kJ}$"
     }
   },
   "practice": {

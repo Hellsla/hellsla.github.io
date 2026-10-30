@@ -1,0 +1,21 @@
+{
+  "id": "fy4-7",
+  "course": "FY4",
+  "title": "Liike-energia, potentiaalienergia ja mekaaninen energia",
+  "goals": [
+    "LOPS FY4: liike-energia, potentiaalienergia ja mekaaninen energia",
+    "Tarkennus: painovoimaan liittyvä potentiaalienergia ei ole ainoa potentiaalienergian laji; potentiaalienergia liittyy konservatiiviseen voimaan"
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "liike-energia",
+    "potentiaalienergia",
+    "mekaaninen energia",
+    "konservatiivinen voima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

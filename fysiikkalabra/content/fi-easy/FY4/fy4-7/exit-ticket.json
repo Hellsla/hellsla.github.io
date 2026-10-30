@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kirja on kellarissa, nollatasoksi valitun lattian alapuolella. Onko kirjan potentiaalienergia positiivinen, nolla vai negatiivinen? Perustele.",
+    "a": "Negatiivinen. Potentiaalienergia on $E_\\text{p} = m g h$. Nollatason alapuolella korkeus $h$ on negatiivinen. Negatiivinen arvo tarkoittaa vain sitä, että kirjalla on vähemmän potentiaalienergiaa kuin nollatasolla."
+  },
+  {
+    "q": "Pyöräilijän massa kaksinkertaistuu raskaan kuorman takia, ja hänen nopeutensa puolittuu. Miten hänen liike-energiansa muuttuu?",
+    "a": "Liike-energia puolittuu. Massa kaksinkertaistaa sen, mutta puolet pienempi nopeus pienentää sen neljäsosaan: $\\tfrac{1}{2} \\cdot 2m \\cdot \\left(\\tfrac{v}{2}\\right)^2 = \\tfrac{1}{2} \\cdot \\tfrac{1}{2}\\,m v^2$."
+  },
+  {
+    "q": "Kaksi opiskelijaa laskee saman hyllyllä olevan kirjan potentiaalienergian. Toinen saa $9{,}8\\,\\text{J}$ ja toinen $4{,}9\\,\\text{J}$. Voivatko molemmat olla oikeassa?",
+    "a": "Voivat, jos he ovat valinneet eri nollatasot, esimerkiksi lattian ja pöydän pinnan. Potentiaalienergian arvo riippuu nollatasosta. Kun kirja siirretään, potentiaalienergian muutos on kuitenkin molemmilla sama."
+  }
+]

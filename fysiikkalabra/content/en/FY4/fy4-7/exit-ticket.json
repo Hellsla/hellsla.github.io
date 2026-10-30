@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A book is in the basement, below the floor chosen as the zero level. Is its potential energy positive, zero or negative? Justify.",
+    "a": "Negative. Potential energy is $E_\\text{p} = m g h$, and below the zero level the height $h$ is negative. A negative value only means that the book has less potential energy than at the zero level."
+  },
+  {
+    "q": "A cyclist's mass doubles because of a heavy load, and her speed is halved. How does her kinetic energy change?",
+    "a": "The kinetic energy is halved. The mass doubles it, but half the speed reduces it to a quarter: $\\tfrac{1}{2} \\cdot 2m \\cdot \\left(\\tfrac{v}{2}\\right)^2 = \\tfrac{1}{2} \\cdot \\tfrac{1}{2}\\,m v^2$."
+  },
+  {
+    "q": "Two students calculate the potential energy of the same book on a shelf. One gets $9.8\\,\\text{J}$, the other $4.9\\,\\text{J}$. Can both be right?",
+    "a": "They can, if they have chosen different zero levels, for example the floor and the surface of a table. The value of potential energy depends on the zero level, but the change in potential energy when the book is moved is the same for both."
+  }
+]
