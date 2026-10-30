@@ -129,8 +129,8 @@ def ball(f, gid, cx, cy, r, c1, c2):
 def hero():
     """The chapter's opening illustration: a billiard table; the cue ball has hit the red ball head-on and stopped."""
     f = H.hero("fy410-hero", "Kuvitus: biljardipöytä läheltä nähtynä pöydän yllä roikkuvan lampun valossa. Vasemmalta alhaalta pöydälle "
-               "osoittaa biljardikeppi, jolla valkoista lyöntipalloa on juuri lyöty. Lyöntipallo on osunut suoraan punaiseen palloon ja "
-               "pysähtynyt pöydän keskelle; sen takana näkyy haalea jälki kuljetusta matkasta. Punainen pallo kiitää eteenpäin kohti pöydän "
+               "osoittaa biljardikeppi, jolla valkoista lyöntipalloa on juuri lyöty. Lyöntipallo on osunut suoraan punaiseen palloon, ja hetki törmäyksen jälkeen "
+               "se on pysähtynyt pöydän keskelle; sen takana näkyy haalea jälki kuljetusta matkasta. Punainen pallo kiitää eteenpäin kohti pöydän "
                "oikeaa reunaa, ja sen takana on liikeviivoja. Pöydän takaosassa on kolme muuta palloa.")
     # the room: a warm wall with wooden wainscot
     f.rect(0, 0, 1200, 600, H.grad(f, "fy410h-wall", PAPER, SAND_DARK, y1=0, y2=420))
