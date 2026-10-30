@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "contribution": "Paino $G = mg$ ja kitka tulevat voimakuvioon omina voimina. Lepokitka mukautuu tilanteeseen ylärajaan $\\mu_0 N$ asti, ja liikekitka on $\\mu N$. Kaltevalla tasolla painon komponentit $mg\\sin\\alpha$ ja $mg\\cos\\alpha$ (katkoviivoin) antavat tukivoiman, kitkan ja kiihtyvyyden. Kitkakerroin määritetään kokeellisesti rajakulmasta ja jousivaa'alla. Kitka voi osoittaa myös liikkeen suuntaan.",
+  "learn": [
+    "erottamaan lepokitkan ja liikekitkan toisistaan ja laskemaan kitkavoiman kitkakertoimen avulla.",
+    "piirtämään voimakuvion kappaleesta, joka on kaltevalla tasolla, ja kirjoittamaan sen liikeyhtälöt.",
+    "määrittämään kitkakertoimen kokeellisesti."
+  ],
+  "prior": [
+    "Voimakuvion piirtäminen ja liikeyhtälöt $\\Sigma F_x = m a_x$ ja $\\Sigma F_y = m a_y$ (luku *Voimakuvio ja voimien yhteisvaikutus*)",
+    "Vinon voiman komponentit $F\\cos\\alpha$ ja $F\\sin\\alpha$ (luku *Voimakuvio ja voimien yhteisvaikutus*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Muuttaja nostaa laatikon pakettiauton lastaussillalle. Laatikko voi olla tyhjä tai täyteen pakattu. Laatikko jää sillalle paikalleen, vaikka silta on vinossa. Sitten sillan alapäätä siirretään lähemmäs autoa, ja silta jyrkkenee. Jossakin vaiheessa laatikko lähtee yhtäkkiä liukumaan alas.",
+      "question": "Mikä pitää laatikon paikallaan loivalla sillalla? Miksi se ei enää riitä jyrkällä sillalla?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: tukivoima rinteellä",
+      "optional": true,
+      "prompt": "Laatikko on paikallaan kaltevalla lankulla. Mihin suuntaan lankun tukivoima $\\overline{N}$ osoittaa laatikkoon? (Tukivoima on voima, jolla alusta työntää laatikkoa.)",
+      "choices": [
+        {
+          "text": "Kohtisuoraan lankun pintaa vastaan, pinnasta poispäin.",
+          "correct": true,
+          "feedback": "Oikein. Tukivoima on aina kohtisuorassa kosketuspintaa vastaan, kuten opit luvussa *Voimakuvio ja voimien yhteisvaikutus*. Rinteellä pinta on vinossa. Siksi tukivoima on kallellaan eikä pystysuora."
+        },
+        {
+          "text": "Suoraan ylöspäin, painoa vastakkaiseen suuntaan.",
+          "feedback": "Tukivoima on kohtisuorassa kosketuspintaa vastaan. Vain vaakasuoralla alustalla se osoittaa suoraan ylös. Rinteellä pinta on vinossa, joten tukivoimakin on vinossa."
+        },
+        {
+          "text": "Lankun suuntaisesti ylös rinnettä, liukumista vastaan.",
+          "feedback": "Pinnan suuntainen voima on kitka, ei tukivoima. Tukivoima on kohtisuorassa pintaa vastaan. Se työntää laatikkoa poispäin pinnasta."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kitka kallistuvalla lankulla",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Laatikko on lankulla, jota kallistetaan hitaasti jyrkemmäksi. Laatikko pysyy vielä paikallaan. Miten lankun kitkavoima laatikkoon muuttuu, kun kulma kasvaa?",
+      "choices": [
+        {
+          "text": "Kitkavoima kasvaa kulman kasvaessa.",
+          "correct": true,
+          "feedback": "Oikein. Laatikko on levossa. Siksi lepokitka on yhtä suuri kuin painon komponentti $G_x = mg\\sin\\alpha$, joka vie laatikkoa rinnettä alas. Komponentti kasvaa kulman mukana. Mallin arvoissa $2{,}0\\,\\text{kg}$:n laatikkoon vaikuttaa kitka $3{,}4\\,\\text{N}$ kulmalla $10^\\circ$, $6{,}7\\,\\text{N}$ kulmalla $20^\\circ$ ja $8{,}6\\,\\text{N}$ kulmalla $26^\\circ$."
+        },
+        {
+          "text": "Kitkavoima pysyy samana koko ajan.",
+          "feedback": "Lepokitka ei ole vakio. Se mukautuu tilanteeseen. Levossa se on yhtä suuri kuin rinnettä alas vievä komponentti $G_x = mg\\sin\\alpha$. Mallin arvoissa kitka kasvaa $3{,}4\\,\\text{N}$:sta kulmalla $10^\\circ$ $8{,}6\\,\\text{N}$:iin kulmalla $26^\\circ$."
+        },
+        {
+          "text": "Kitkavoima pienenee, koska tukivoima pienenee.",
+          "feedback": "Tukivoima todella pienenee. Sen mukana pienenee lepokitkan *yläraja* $\\mu_0 N$. Todellinen lepokitka on kuitenkin vain niin suuri kuin tarvitaan. Se on yhtä suuri kuin $G_x = mg\\sin\\alpha$, ja se kasvaa. Mallin arvoissa kitka kasvaa $3{,}4\\,\\text{N}$:sta $8{,}6\\,\\text{N}$:iin, kun kulma kasvaa $10^\\circ$:sta $26^\\circ$:een."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: raskas ja kevyt laatikko",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Kaksi laatikkoa liukuu samaa jyrkkää lankkua alas. Pinnat ovat samanlaiset, mutta toinen laatikko on kaksi kertaa raskaampi. Kumpi kiihtyy enemmän?",
+      "choices": [
+        {
+          "text": "Kumpikin kiihtyy yhtä paljon.",
+          "correct": true,
+          "feedback": "Oikein. Raskaampaan laatikkoon vaikuttaa suurempi komponentti, joka vie sitä rinnettä alas. Myös tukivoima ja liikekitka ovat samassa suhteessa suuremmat. Kokonaisvoima on verrannollinen massaan, joten kiihtyvyys on sama. Mallin arvoissa kulmalla $35^\\circ$ kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ massoilla $2{,}0$, $3{,}0$ ja $4{,}0\\,\\text{kg}$."
+        },
+        {
+          "text": "Raskas laatikko, koska siihen vaikuttaa suurempi paino.",
+          "feedback": "Paino ja sen rinteen suuntainen komponentti ovat suuremmat. Myös liikekitka $\\mu mg\\cos\\alpha$ kasvaa samassa suhteessa. Lisäksi suurempi massa kiihtyy samalla voimalla vähemmän. Mallin arvoissa kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ kaikilla massoilla."
+        },
+        {
+          "text": "Kevyt laatikko, koska raskaaseen vaikuttaa suurempi kitka.",
+          "feedback": "Raskaampaan laatikkoon vaikuttaa suurempi kitka. Myös rinnettä alas vievä komponentti on samassa suhteessa suurempi. Massa supistuu liikeyhtälöstä. Mallin arvoissa kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ kaikilla massoilla."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Laatikko on lankulla, jonka kaltevuutta voit muuttaa. Vasemmalla on tilannekuva ja kuvaaja kitkavoimasta. Oikealla on laatikon voimakuvio mittakaavassa.",
+      "howto": "Säädä lankun kulmaa $\\alpha$ liukusäätimellä. Valitse *Massa* ja *Pinnat*. Voimakuvio ja lukemat päivittyvät heti. Jos laatikko liukuu, paina *Käynnistä*, niin näet liukumisen. Paina *Alusta*, niin laatikko palaa alkuun. Kuvaaja merkitsee kitkavoiman jokaisella kokeilemallasi kulmalla. Ruutu *Näytä painon komponentit* näyttää komponentit katkoviivoin. *Nopeus* hidastaa tai nopeuttaa liikettä. Lukemat eivät muutu.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Laatikko on aluksi levossa. Se pysyy paikallaan, jos tarvittava lepokitka on enintään $\\mu_0 N$. Muuten se liukuu, ja siihen vaikuttaa liikekitka $\\mu N$. Kitkakertoimet ovat mallin arvoja: puu puulla $\\mu_0 = 0{,}50$ ja $\\mu = 0{,}30$, muovi puulla $\\mu_0 = 0{,}30$ ja $\\mu = 0{,}20$, kumi puulla $\\mu_0 = 0{,}80$ ja $\\mu = 0{,}60$. Ilmanvastus jätetään huomiotta. Nopeuden sininen nuoli on tilannekuvassa, ei voimakuviossa, koska nopeus ei ole voima.",
+      "calc": "Painon komponentit ovat $G_x = mg\\sin\\alpha$ rinnettä alas ja $G_y = mg\\cos\\alpha$ pintaa kohti. Putoamiskiihtyvyys on $g = 9{,}81\\,\\text{m/s}^2$. Pintaa vastaan kohtisuorassa suunnassa laatikko ei kiihdy, joten $N = mg\\cos\\alpha$. Jos $G_x \\le \\mu_0 N$, laatikko pysyy paikallaan. Silloin lepokitka on $F_\\mu = G_x$ ja $a = 0$. Muuten $F_\\mu = \\mu N$, ja rinteen suunnassa $G_x - F_\\mu = ma$. Siitä saadaan $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: lankun kallistaminen",
+      "intro": "Testaa ensimmäinen ennuste. Alkutila valitsee puu puulla -pinnat ja massan $2{,}0\\,\\text{kg}$. Muuta vain kulmaa $\\alpha$. Kirjaa mittaus ainakin kulmilla $0^\\circ$, $10^\\circ$ ja $20^\\circ$. Kasvata sitten kulmaa asteen kerrallaan, kunnes laatikko lähtee liukumaan. Kirjaa myös viimeinen kulma, jolla laatikko pysyy paikallaan, ja ensimmäinen kulma, jolla se liukuu.",
+      "initial": {
+        "pinta": "puu",
+        "m": "2",
+        "alpha": 0
+      },
+      "names": {
+        "alpha": "kulma $\\alpha$",
+        "m": "massa m",
+        "pinta": "pinnat"
+      },
+      "units": {
+        "alpha": "°",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "puu": "puu puulla"
+        }
+      },
+      "locked": [
+        "pinta",
+        "m"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "Gx",
+          "label": "G_x (N)"
+        },
+        {
+          "key": "N",
+          "label": "N (N)"
+        },
+        {
+          "key": "Fmu",
+          "label": "$F_\\mu$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "fbd": "equations",
+        "prompt": "Etsi taulukosta raja, jolla laatikko lähtee liukumaan. Määritä sen avulla laatikon ja lankun välinen lepokitkakerroin $\\mu_0$.",
+        "answer": 0.4986,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "Juuri ennen liukumista lepokitka on suurimmillaan, eli $F_\\mu = \\mu_0 N$. Mitkä voimat ovat silloin tasapainossa rinteen suunnassa?",
+          "Rinteen suunnassa $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$, ja massa supistuu.",
+          "$\\mu_0 = \\tan\\alpha_0$. Tässä $\\alpha_0$ on puolivälissä viimeistä paikallaan pysymiskulmaa ja ensimmäistä liukumiskulmaa."
+        ],
+        "mistakes": [
+          {
+            "value": 0.4462,
+            "feedback": "Laskit $\\sin\\alpha_0$. Rajakulmalla $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$, joten $\\mu_0 = \\dfrac{\\sin\\alpha_0}{\\cos\\alpha_0} = \\tan\\alpha_0$."
+          },
+          {
+            "value": 0.8949,
+            "feedback": "Laskit $\\cos\\alpha_0$. Lepokitkakerroin on rinteen suuntaisen komponentin ja tukivoiman suhde: $\\mu_0 = \\tan\\alpha_0$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta laatikko pysyy paikallaan kulmalla $26^\\circ$ ja liukuu kulmalla $27^\\circ$, joten rajakulma on $\\alpha_0 \\approx 26{,}5^\\circ$; $m = 2{,}0\\,\\text{kg}$\n\n**Kysytty:** lepokitkakerroin $\\mu_0$ (ei yksikköä)\n\n**Periaate:** Juuri ennen liukumista laatikko on vielä levossa, joten voimien summa on nolla. Lepokitka on silloin suurimmillaan, $F_\\mu = \\mu_0 N$. Newtonin toinen laki rinteen suuntaan ja kohtisuoraan pintaa vastaan antaa kertoimen.\n\n**Voimakuvio:** Laatikko on piirretty suorakulmiona rinteen suuntaisesti. Akseli $x$ osoittaa rinnettä alas ja akseli $y$ kohtisuoraan pinnasta ulos. Paino $\\overline{G}$ osoittaa suoraan alas. Sen komponentit $G_x = mg\\sin\\alpha_0$ ja $G_y = mg\\cos\\alpha_0$ on piirretty katkoviivoin. Tukivoima $\\overline{N}$ osoittaa kohtisuoraan pinnasta ulos ja lepokitka $\\overline{F}_\\mu$ rinnettä ylös.\n\n**Kaava:** $y$: $N - mg\\cos\\alpha_0 = 0$ ja $x$: $mg\\sin\\alpha_0 - \\mu_0 N = 0$, joten $\\mu_0 = \\dfrac{mg\\sin\\alpha_0}{mg\\cos\\alpha_0} = \\tan\\alpha_0$\n\n**Muunnokset:** Kulma on asteina. Tangentti lasketaan laskimen astetilassa. Muita muunnoksia ei tarvita.\n\n**Sijoitus:** $\\mu_0 = \\tan 26{,}5^\\circ = 0{,}4986$\n\n**Vastaus:** $0{,}50$. Vastauksessa on kaksi merkitsevää numeroa, koska rajakulma tunnetaan vain asteen tarkkuudella: $\\tan 26^\\circ = 0{,}49$ ja $\\tan 27^\\circ = 0{,}51$.\n\n**Järkevyys:** Taulukossa juuri ennen liukumista kitka on $8{,}6\\,\\text{N}$ ja tukivoima $17{,}6\\,\\text{N}$. Niiden suhde on $0{,}49$, sama tulos. Puun kitkakerroin puuta vasten on tyypillisesti $0{,}3$–$0{,}6$, joten arvo on uskottava."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: massa muuttuu",
+      "intro": "Testaa toinen ennuste. Alkutila valitsee puu puulla -pinnat ja kulman $35^\\circ$, jolla laatikko liukuu. Muuta vain massaa. Kirjaa mittaus kaikilla kolmella massalla. Voit katsoa liukumisen painamalla *Käynnistä*.",
+      "initial": {
+        "pinta": "puu",
+        "alpha": 35,
+        "m": "2"
+      },
+      "names": {
+        "alpha": "kulma $\\alpha$",
+        "m": "massa m",
+        "pinta": "pinnat"
+      },
+      "units": {
+        "alpha": "°",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "puu": "puu puulla"
+        }
+      },
+      "locked": [
+        "pinta",
+        "alpha"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "Gx",
+          "label": "G_x (N)"
+        },
+        {
+          "key": "Fmu",
+          "label": "$F_\\mu$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, miksi laatikko pysyy loivalla lankulla paikallaan mutta lähtee jyrkemmällä lankulla liukumaan. Selitä myös, miksi massa ei vaikuta kiihtyvyyteen.",
+      "criteria": [
+        "Vastaus kertoo, että levossa lepokitka on yhtä suuri kuin rinteen suuntainen komponentti $G_x = mg\\sin\\alpha$ ja että se kasvaa kulman mukana.",
+        "Vastaus kertoo, että tukivoima $N = mg\\cos\\alpha$ pienenee kulman kasvaessa. Silloin myös lepokitkan yläraja $\\mu_0 N$ pienenee. Liukuminen alkaa, kun $G_x$ ylittää ylärajan.",
+        "Vastaus kertoo, että sekä rinteen suuntainen komponentti että kitka ovat verrannollisia massaan, joten massa supistuu.",
+        "Vastaus käyttää mittaustuloksia, esimerkiksi kitkaa kahdella kulmalla tai kiihtyvyyttä kahdella massalla."
+      ],
+      "model": "Levossa laatikkoon vaikuttava lepokitka on yhtä suuri kuin rinnettä alas vievä komponentti $G_x = mg\\sin\\alpha$. Siksi lepokitka kasvaa kulman mukana: mallin arvoissa $3{,}4\\,\\text{N}$ kulmalla $10^\\circ$ ja $8{,}6\\,\\text{N}$ kulmalla $26^\\circ$. Samalla tukivoima $N = mg\\cos\\alpha$ pienenee, ja sen mukana lepokitkan yläraja $\\mu_0 N$. Kun $G_x$ ylittää ylärajan, noin kulmalla $27^\\circ$, laatikko lähtee liukumaan. Silloin kitka putoaa liikekitkaksi $\\mu N$, mallin arvoissa $5{,}2\\,\\text{N}$. Sekä $G_x$ että kitka ovat verrannollisia massaan, joten massa supistuu. Kulmalla $35^\\circ$ kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ kaikilla massoilla, mikä näkyy koe 2:n taulukossa. Rajakulma ei riipu massasta, koska ehdossa $\\tan\\alpha_0 = \\mu_0$ ei ole massaa. Tätä ei kuitenkaan mitattu."
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus jousivaa'alla",
+      "optional": true,
+      "source": "example",
+      "text": "Opiskelijat vetävät puupalikkaa vaakasuoralla pöydällä jousivaa'alla. He vetävät vaakasuoraan ja tasaisella nopeudella. He lisäävät palikan päälle punnuksia ja kirjaavat vaa'an lukeman.\n\n| $m$ (kg) | $0{,}50$ | $1{,}00$ | $1{,}50$ | $2{,}00$ |\n|---|---|---|---|---|\n| $F$ (N) | $1{,}7$ | $3{,}5$ | $5{,}1$ | $6{,}9$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Määritä palikan ja pöydän välinen liikekitkakerroin $\\mu$ mittausten keskiarvona.",
+        "answer": 0.3504,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "Palikka liikkuu tasaisesti, joten vaa'an voima on yhtä suuri kuin liikekitka. Mikä on tukivoima vaakasuoralla pöydällä?",
+          "$N = mg$ ja $\\mu = \\dfrac{F_\\mu}{N} = \\dfrac{F}{mg}$ jokaiselle riville.",
+          "Esimerkiksi ensimmäiseltä riviltä $\\mu = \\dfrac{1{,}7\\,\\text{N}}{0{,}50\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2} \\approx 0{,}35$. Laske kaikki neljä riviä ja niiden keskiarvo."
+        ],
+        "mistakes": [
+          {
+            "value": 3.4375,
+            "feedback": "Jaoit voiman massalla. Kitkakerroin on kitkavoiman ja *tukivoiman* suhde. Tukivoima on $N = mg$ newtoneina."
+          }
+        ],
+        "solution": "**Annettu:** taulukon massat $0{,}50$–$2{,}00\\,\\text{kg}$ ja vaa'an lukemat $1{,}7$–$6{,}9\\,\\text{N}$; palikka liikkuu vaakasuoraan tasaisella nopeudella; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Palikka liikkuu tasaisella nopeudella, joten voimien summa on nolla. Vaakasuunnassa vaa'an voima on yhtä suuri kuin liikekitka. Pystysuunnassa tukivoima on yhtä suuri kuin paino. Liikekitka on $F_\\mu = \\mu N$.\n\n**Kaava:** $F - \\mu N = 0$ ja $N - mg = 0$, joten $\\mu = \\dfrac{F}{mg}$\n\n**Muunnokset:** Massat ovat kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\mu_1 = \\dfrac{1{,}7\\,\\text{N}}{0{,}50\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2} = 0{,}347$, samoin $\\mu_2 = 0{,}357$, $\\mu_3 = 0{,}347$ ja $\\mu_4 = 0{,}352$; keskiarvo $\\mu = (0{,}347 + 0{,}357 + 0{,}347 + 0{,}352) : 4 = 0{,}350$\n\n**Vastaus:** $0{,}35$. Vastauksessa on kaksi merkitsevää numeroa kuten vaa'an lukemissa, esimerkiksi $1{,}7\\,\\text{N}$.\n\n**Järkevyys:** Kaikki neljä suhdetta ovat lähellä toisiaan, joten kitka on todella verrannollinen tukivoimaan. Kun massa nelinkertaistuu, lukema kasvaa $1{,}7\\,\\text{N}$:sta $6{,}9\\,\\text{N}$:iin eli noin nelinkertaiseksi. Puun kitkakerroin puuta vasten on tyypillisesti $0{,}3$–$0{,}6$."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit lepokitkan suuruudesta? Palaa myös alun laatikkoon. Päättele ehdosta $\\tan\\alpha_0 = \\mu_0$, miksi tyhjä ja täyteen pakattu laatikko lähtevät liukumaan samalla sillan kulmalla.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "fbd": "error",
+      "figure": "fy4-6/virhe",
+      "prompt": "Laatikko liukuu rinnettä alas, ja rinteen ja laatikon välillä on kitkaa. Opiskelija piirsi laatikosta kuvan mukaisen voimakuvion. Mikä kuviossa on väärin?",
+      "choices": [
+        {
+          "text": "Tukivoiman pitäisi olla kohtisuorassa rinteen pintaa vastaan.",
+          "correct": true,
+          "feedback": "Oikein. Tukivoima on aina kohtisuorassa kosketuspintaa vastaan. Rinteellä se on kallellaan. Sen suuruus on $N = mg\\cos\\alpha$."
+        },
+        {
+          "text": "Painon pitäisi osoittaa kohtisuoraan rinnettä kohti.",
+          "feedback": "Paino on Maan vetovoima. Se osoittaa aina suoraan alas, kuten kuviossa. Vain painon komponentti $G_y$ osoittaa kohtisuoraan rinnettä kohti, eikä se ole oma voimansa. Virhe on tukivoiman suunnassa."
+        },
+        {
+          "text": "Kitkan pitäisi osoittaa rinnettä alas, liikkeen suuntaan.",
+          "feedback": "Laatikko liukuu alas, joten kitka vastustaa liukumista ja osoittaa rinnettä ylös, kuten kuviossa. Virhe on tukivoiman suunnassa: tukivoiman pitää olla kohtisuorassa pintaa vastaan."
+        },
+        {
+          "text": "Kuviosta puuttuu rinteen suuntainen voima, joka vie laatikkoa alas.",
+          "feedback": "Rinnettä alas vie painon komponentti $G_x$, ei erillinen voima. Jos komponentti piirretään, se piirretään katkoviivalla painon komponenttina. Virhe on tukivoiman suunnassa."
+        }
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse oikea voimakuvio",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "Laatikko on paikallaan kaltevalla lankulla. Missä kuviossa laatikon voimakuvio on oikein? Voimakuvioissa laatikko on piirretty suorakulmiona. Vertaa nuolia huolellisesti. Jokaisessa väärässä kuviossa on yksi virhe.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-a",
+          "correct": true,
+          "feedback": "Oikein. Paino osoittaa suoraan alas, tukivoima kohtisuoraan pinnasta ulos ja lepokitka rinnettä ylös, koska laatikko pyrkii liukumaan alas. Nuolet kumoavat toisensa, koska laatikko on levossa."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-b",
+          "feedback": "Kitka osoittaa tässä rinnettä alas. Laatikko pyrkii liukumaan alas, joten lepokitka vastustaa sitä ja osoittaa rinnettä ylös. Muuten kuvio olisi oikein."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-c",
+          "feedback": "Kuviosta puuttuu kitka. Pelkät paino ja tukivoima eivät kumoa toisiaan rinteellä, joten laatikko liukuisi alas. Lepokitka rinnettä ylös pitää laatikon paikallaan."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-d",
+          "feedback": "Paino on piirretty kohtisuoraan rinnettä kohti. Paino osoittaa aina suoraan alas, myös rinteellä. Kohtisuoraan pintaa kohti osoittaa vain painon komponentti $G_y$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "prompt": "Lentokentän liukuhihna nostaa $8{,}0\\,\\text{kg}$:n matkalaukkua ylöspäin tasaisella nopeudella. Hihna on $15^\\circ$:n kulmassa vaakatasoon nähden. Laukku ei liu'u hihnalla. Kuinka suuri on hihnan kitkavoima laukkuun? Vastaa newtoneina.",
+      "answer": 20.31,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä laukun voimakuvio. Laukku liikkuu ylöspäin tasaisella nopeudella, joten kokonaisvoima on nolla. Mikä voima voi kumota painon rinteen suuntaisen komponentin?",
+        "Valitse $x$ hihnaa pitkin ylös. Rinteen suunnassa $F_\\mu - mg\\sin\\alpha = 0$.",
+        "$F_\\mu = mg\\sin\\alpha = 8{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot\\sin 15^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 75.81,
+          "feedback": "Tämä on painon kohtisuora komponentti $mg\\cos\\alpha$, ja se on yhtä suuri kuin tukivoima. Kitka on pinnan suuntainen, joten se kumoaa rinteen suuntaisen komponentin $mg\\sin\\alpha$."
+        },
+        {
+          "value": 78.48,
+          "feedback": "Tämä on koko paino $mg$. Hihnan suunnassa kitkan tarvitsee kumota vain painon rinteen suuntainen komponentti $mg\\sin\\alpha$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 8{,}0\\,\\text{kg}$, hihnan kulma $\\alpha = 15^\\circ$, laukku liikkuu tasaisella nopeudella eikä liu'u hihnalla; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** hihnan kitkavoima $F_\\mu$ yksikössä $\\text{N}$\n\n**Periaate:** Laukku liikkuu tasaisella nopeudella, joten Newtonin toisen lain mukaan voimien summa on nolla. Laukku ei liu'u hihnan suhteen, joten siihen vaikuttaa lepokitka. Lepokitka on juuri niin suuri kuin tarvitaan.\n\n**Voimakuvio:** Laukku on piirretty suorakulmiona hihnan suuntaisesti. Akseli $x$ osoittaa hihnaa pitkin ylös ja akseli $y$ kohtisuoraan hihnasta ulos. Paino $\\overline{G}$ osoittaa suoraan alas. Sen komponentit $mg\\sin\\alpha$ hihnaa alas ja $mg\\cos\\alpha$ hihnaa kohti on piirretty katkoviivoin. Tukivoima $\\overline{N}$ osoittaa kohtisuoraan hihnasta ulos ja lepokitka $\\overline{F}_\\mu$ hihnaa pitkin ylös. Laukku pyrkii liukumaan alas hihnan suhteen, joten kitka osoittaa ylös, liikkeen suuntaan.\n\n**Kaava:** $x$: $F_\\mu - mg\\sin\\alpha = 0$, joten $F_\\mu = mg\\sin\\alpha$\n\n**Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_\\mu = 8{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot\\sin 15^\\circ = 78{,}48\\,\\text{N}\\cdot 0{,}2588 = 20{,}31\\,\\text{N}$\n\n**Vastaus:** $20\\,\\text{N}$ hihnaa pitkin ylös. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $8{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Laukun paino on noin $80\\,\\text{N}$. Loivalla hihnalla rinteen suuntainen komponentti on siitä vain noin neljännes, joten $20\\,\\text{N}$ on järkevä. Kitka osoittaa liikkeen suuntaan: se vastustaa laukun liukumista hihnan suhteen, ei laukun liikettä."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Piirrä jokaisessa tehtävässä ensin voimakuvio vihkoon, vaikka tehtävä ei sitä erikseen pyytäisi. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 ovat syventäviä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Raskasta kaappia työnnetään vaakasuoralla lattialla vaakasuoraan $150\\,\\text{N}$:n voimalla, mutta kaappi ei liiku. Lepokitkan suurin mahdollinen arvo on tässä tilanteessa $400\\,\\text{N}$. Kuinka suuri on lattian kitkavoima kaappiin?",
+      "choices": [
+        {
+          "text": "$150\\,\\text{N}$, työntöä vastaan.",
+          "correct": true,
+          "feedback": "Oikein. Kaappi on levossa, joten vaakasuorien voimien summa on nolla. Lepokitka on juuri yhtä suuri kuin työntö ja vastakkaissuuntainen. Yläraja $400\\,\\text{N}$ kertoo vain, kuinka suuri kitka voi enintään olla."
+        },
+        {
+          "text": "$400\\,\\text{N}$, työntöä vastaan.",
+          "feedback": "Silloin kokonaisvoima olisi $250\\,\\text{N}$ työntöä vastaan, ja kaappi kiihtyisi työntäjää kohti. Lepokitka on vain niin suuri kuin tarvitaan: $150\\,\\text{N}$. Arvo $400\\,\\text{N}$ on sen yläraja."
+        },
+        {
+          "text": "Nolla, koska kaappi ei liiku.",
+          "feedback": "Jos kitkaa ei olisi, työntö kiihdyttäisi kaappia. Kaappi pysyy paikallaan, koska lepokitka kumoaa työnnön. Kitka on $150\\,\\text{N}$ työntöä vastaan."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "fbd": "equations",
+      "prompt": "Kirjaa tönäistään kallistetulla pöydän kannella, ja kirja liukuu alas tasaisella nopeudella. Kannen kaltevuuskulma on $17^\\circ$. Kuinka suuri on kirjan ja kannen välinen liikekitkakerroin?",
+      "answer": 0.3057,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kirjan voimakuvio. Tasaisessa liikkeessä kokonaisvoima on nolla, myös rinteen suunnassa.",
+        "Rinteen suunnassa $mg\\sin\\alpha - \\mu N = 0$ ja kohtisuorassa suunnassa $N = mg\\cos\\alpha$.",
+        "Massa supistuu: $\\mu = \\tan\\alpha$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.2924,
+          "feedback": "Laskit $\\sin 17^\\circ$. Kitkakerroin on kitkavoiman ja tukivoiman suhde: $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$."
+        },
+        {
+          "value": 0.9563,
+          "feedback": "Laskit $\\cos 17^\\circ$. Kitkan on kumottava rinteen suuntainen komponentti $mg\\sin\\alpha$. Tukivoima on $mg\\cos\\alpha$, joten $\\mu = \\tan\\alpha$."
+        }
+      ],
+      "solution": "**Annettu:** kannen kaltevuuskulma $\\alpha = 17^\\circ$, kirja liukuu alas tasaisella nopeudella\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla. Newtonin toisen lain mukaan voimien summa on silloin nolla kummassakin suunnassa. Kirja liukuu, joten siihen vaikuttaa liikekitka $F_\\mu = \\mu N$.\n\n**Voimakuvio:** Kirja on piirretty suorakulmiona kannen suuntaisesti. Akseli $x$ osoittaa kantta pitkin alas ja akseli $y$ kohtisuoraan kannesta ulos. Paino $\\overline{G}$ osoittaa suoraan alas, ja sen komponentit $mg\\sin\\alpha$ ja $mg\\cos\\alpha$ on piirretty katkoviivoin. Tukivoima $\\overline{N}$ osoittaa kohtisuoraan kannesta ulos. Liikekitka $\\overline{F}_\\mu$ osoittaa kantta pitkin ylös, koska kirja liukuu alas.\n\n**Kaava:** $y$: $N - mg\\cos\\alpha = 0$ ja $x$: $mg\\sin\\alpha - \\mu N = 0$, joten $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Muunnokset:** Kulma on asteina. Muita muunnoksia ei tarvita, ja massa supistuu.\n\n**Sijoitus:** $\\mu = \\tan 17^\\circ = 0{,}3057$\n\n**Vastaus:** $0{,}31$. Vastauksessa on kaksi merkitsevää numeroa kuten kulmassa $17^\\circ$.\n\n**Järkevyys:** Kerroin on positiivinen ja pienempi kuin $1$, kuten kirjan ja puun välillä on tyypillistä. Pienempi kulma tarkoittaisi pienempää kitkakerrointa: jäällä kirja liukuisi tasaisella nopeudella jo hyvin loivassa kulmassa."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-6/malli-veto",
+      "prompt": "Laatikkoa, jonka massa on $20\\,\\text{kg}$, vedetään köydellä ylös $20^\\circ$:n rinnettä tasaisella nopeudella. Köysi on rinteen suuntainen. Laatikon ja rinteen välinen liikekitkakerroin on $0{,}25$. Piirrä laatikon voimakuvio paperille: laatikko suorakulmiona ja jokainen voima vaikutuskohdastaan. Kirjoita sitten liikeyhtälöt rinteen suunnassa ja kohtisuoraan sitä vastaan. Laske lopuksi köyden jännitysvoima. (Jännitysvoima on voima, jolla köysi vetää laatikkoa.)",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain laatikko. Siinä ei ole köyttä, vetäjää eikä rinnettä voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Neljä voimaa: paino, rinteen tukivoima, liikekitka ja köyden jännitysvoima. Liikkeen suuntaista lisävoimaa ei ole."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino osoittaa suoraan alas, tukivoima kohtisuoraan pinnasta ulos ja jännitysvoima rinnettä ylös. Kitka osoittaa rinnettä alas, koska laatikko liukuu ylös."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino lähtee keskipisteestä ja tukivoima alapinnasta. Kitka lähtee alapinnan kulmasta laatikon ulkopuolelle ja jännitysvoima köyden kiinnityskohdasta. Jokaisella voimalla on oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Jännitysvoima on yhtä pitkä kuin kitka ja painon rinteen suuntainen komponentti yhteensä. Painon komponentit, jos ne piirretään, ovat katkoviivoin."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$y$: $N - mg\\cos 20^\\circ = 0$ ja $x$ rinnettä ylös: $T - mg\\sin 20^\\circ - \\mu N = 0$, joten $T \\approx 113\\,\\text{N}$."
+        }
+      ],
+      "model": "Laatikkoon vaikuttavat Maa, rinne ja köysi. Paino $\\overline{G}$ osoittaa keskipisteestä suoraan alas. Rinne vaikuttaa alapinnasta kahdella voimalla. Tukivoima $\\overline{N}$ osoittaa kohtisuoraan pinnasta ulos. Liikekitka $\\overline{F}_\\mu$ osoittaa rinnettä alas, koska laatikko liukuu ylös. Köyden jännitysvoima $\\overline{T}$ osoittaa rinnettä ylös. Laatikko liikkuu tasaisesti, joten kokonaisvoima on nolla. Akseli $x$ osoittaa rinnettä ylös ja akseli $y$ pinnasta ulos. $y$: $N - mg\\cos 20^\\circ = 0$, joten $N = 20\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot\\cos 20^\\circ \\approx 184\\,\\text{N}$ ja $F_\\mu = \\mu N \\approx 46\\,\\text{N}$. $x$: $T - mg\\sin 20^\\circ - \\mu N = 0$, joten $T = mg\\sin 20^\\circ + \\mu mg\\cos 20^\\circ \\approx 67\\,\\text{N} + 46\\,\\text{N} \\approx 113\\,\\text{N}$. Köyden on voitettava sekä painon rinteen suuntainen komponentti että kitka."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

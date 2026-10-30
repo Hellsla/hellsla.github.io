@@ -1,0 +1,114 @@
+{
+  "level1": [
+    {
+      "id": "fy4-6-L1-01",
+      "level": 1,
+      "text": "The combined mass of an astronaut and the spacesuit is $160\\,\\text{kg}$. On the surface of the Moon the acceleration of free fall is $1.62\\,\\text{m/s}^2$. How large is the combined weight of the astronaut and the suit on the surface of the Moon?",
+      "answer": 259.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-6-L1-02",
+      "level": 1,
+      "text": "A sled of mass $30\\,\\text{kg}$ slides on horizontal snow. The coefficient of kinetic friction between the sled and the snow is $0.12$. Draw the free-body diagram of the sled. How large is the friction force of the snow on the sled?",
+      "answer": 35.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L1-03",
+      "level": 1,
+      "text": "A box of mass $40\\,\\text{kg}$ is pushed on a horizontal floor with a horizontal force of $120\\,\\text{N}$, and it slides at a constant velocity. How large is the coefficient of kinetic friction between the box and the floor?",
+      "answer": 0.31,
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L1-04",
+      "level": 1,
+      "text": "A book of mass $0.80\\,\\text{kg}$ is at rest on a desktop that is tilted at an angle of $20^\\circ$ to the horizontal. Draw the free-body diagram of the book. How large is the normal force of the desktop on the book?",
+      "answer": 7.4,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L1-05",
+      "level": 1,
+      "text": "A box of mass $12\\,\\text{kg}$ is on a slope whose angle of inclination is $30^\\circ$. How large is the component of the weight of the box along the slope?",
+      "answer": 59.0,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-6-L2-01",
+      "level": 2,
+      "text": "A sled starts from rest and slides down a hill with an angle of inclination of $12^\\circ$, and reaches a velocity of $3.0\\,\\text{m/s}$ in $4.0\\,\\text{s}$. The acceleration is constant. How large is the coefficient of kinetic friction between the sled and the snow? Air drag is ignored.",
+      "answer": 0.13,
+      "unit": "",
+      "tolerance": 0.04,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L2-02",
+      "level": 2,
+      "text": "A warehouse worker pulls a $40\\,\\text{kg}$ pallet along a concrete floor with a horizontal rope. The tension of the rope is $150\\,\\text{N}$, and the coefficient of kinetic friction between the pallet and the floor is $0.30$. How large is the acceleration of the pallet?",
+      "answer": 0.81,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L2-03",
+      "level": 2,
+      "text": "Below is example data: the kinetic friction of a wooden block measured at different normal forces. The graph shows the measurement points. Determine from the graph the coefficient of kinetic friction between the block and the table.",
+      "answer": 0.21,
+      "unit": "",
+      "tolerance": 0.05,
+      "figure": "fy4-6/mittaus"
+    },
+    {
+      "id": "fy4-6-L2-04",
+      "level": 2,
+      "text": "A moving box of mass $10\\,\\text{kg}$ is placed at rest on a plank that is at an angle of $35^\\circ$ to the horizontal. The coefficient of static friction between the box and the plank is $0.60$. Calculate the greatest possible value of static friction and compare it with the component of the weight along the slope. By how many newtons does the component exceed the greatest static friction? (If the number were negative, the box would stay in place.)",
+      "answer": 8.1,
+      "unit": "N",
+      "tolerance": 0.04,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-6-L3-01",
+      "level": 3,
+      "text": "On the bed of a pickup truck there is a $50\\,\\text{kg}$ box that is not fastened. The truck starts to move on a horizontal road with an acceleration of $3.5\\,\\text{m/s}^2$. What is the smallest coefficient of static friction between the bed and the box that keeps the box from sliding on the bed?",
+      "answer": 0.36,
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L3-02",
+      "level": 3,
+      "text": "A puck is pushed up a $20^\\circ$ slope and leaves the hand at a velocity of $3.0\\,\\text{m/s}$. The coefficient of kinetic friction between the puck and the slope is $0.25$. How far up the slope does the puck slide before it stops? Air drag is ignored.",
+      "answer": 0.8,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L3-03",
+      "level": 3,
+      "text": "On Earth a box slides down a $30^\\circ$ slope with an acceleration of $2.0\\,\\text{m/s}^2$. How large would the acceleration of the box be on the same slope and the same surface on the Moon, where the acceleration of free fall is $1.62\\,\\text{m/s}^2$? The Moon has no air, and air drag is ignored on Earth too.",
+      "answer": 0.33,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "fbd": "equations"
+    }
+  ]
+}
