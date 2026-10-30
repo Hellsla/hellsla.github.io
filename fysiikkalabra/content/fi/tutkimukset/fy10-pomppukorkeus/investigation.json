@@ -1,0 +1,102 @@
+{
+  "id": "fy10-pomppukorkeus",
+  "type": "investigation",
+  "title": "Pudotus- ja pomppukorkeus",
+  "question": "Miten pallon pomppukorkeus riippuu pudotuskorkeudesta, ja kuinka suuri osa pallon mekaanisesta energiasta säilyy pompussa?",
+  "description": "Kokeellinen tutkimus: mittaa pallon pomppukorkeus eri pudotuskorkeuksilla ja päättele kuvaajan kulmakertoimesta, kuinka suuri osa energiasta säilyy pompussa.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 12–13 (Pudotuskorkeuden ja pomppukorkeuden välinen riippuvuus), opettajan aineisto",
+  "learn": [
+    "muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja valitsemaan, mitä muutat ja mitä pidät vakiona",
+    "arvioimaan toistomittausten avulla, kuinka tarkasti suure saadaan mitattua",
+    "tulkitsemaan kuvaajan kulmakertoimen fysikaalisesti"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Pomppukorkeus pudotuskorkeuden funktiona",
+      "physics": "F1",
+      "experiment": "E1"
+    },
+    {
+      "id": "laajennus",
+      "title": "Peräkkäiset pomput videolta",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-7",
+      "why": "Pallon potentiaalienergia $E_p = mgh$ ja liike-energia ovat tutkimuksen malli."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-8",
+      "why": "Putoamisen ja nousun aikana mekaaninen energia säilyy lähes muuttumattomana, mutta pompussa osa siitä muuttuu muiksi energiamuodoiksi."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-14",
+      "why": "Kevyellä pallolla ilmanvastus voi pienentää pomppukorkeutta suurilla pudotuskorkeuksilla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo ja mittausepävarmuuden arvioiminen."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Pompun lakikohta on helpompi lukea videolta kuin silmällä; laajennuksessa video on välttämätön."
+    }
+  ],
+  "equipment": [
+    "pallo, esimerkiksi tennispallo tai pingispallo",
+    "seinään kiinnitetty mittanauha tai pitkä mitta-asteikko",
+    "kova ja tasainen lattia",
+    "puhelin videon kuvaamiseen ja jalusta",
+    "vakaa korokejakkara korkeita pudotuksia varten"
+  ],
+  "safety": [
+    "Seiso korkeita pudotuksia varten vakaalla korokkeella, älä pyörivällä tuolilla tai pöydällä.",
+    "Varmista, ettei kukaan kompastu karkaavaan palloon."
+  ]
+}
