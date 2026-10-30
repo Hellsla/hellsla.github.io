@@ -142,7 +142,7 @@
       "type": "interpret",
       "title": "The two power plants of the Vuoksi",
       "source": "statistics",
-      "source_note": "Power and head: Fortum, power plants of the Vuoksi watercourse (fortum.com), read 30 Oct 2026. Mean annual flow of the Vuoksi about $600\\,\\text{m}^3\\text{/s}$: South-East Finland Centre for Economic Development, Transport and the Environment, press release 29 Apr 2026.",
+      "source_note": "Power and head: Fortum, power plants of the Vuoksi watercourse (fortum.com), read 30 Oct 2026. Mean annual flow of the Vuoksi about $600\\,\\text{m}^3\\text{/s}$: Southeast Finland Vitality Centre (Kaakkois-Suomen elinvoimakeskus), press release 29 Apr 2026.",
       "text": "The water of the Vuoksi flows first through the Tainionkoski and then through the Imatra power plant, so the flow rate is almost the same at both. The mean annual flow of the Vuoksi is about $600\\,\\text{m}^3\\text{/s}$, but the maximum power is reached at the maximum flow of the turbines, about $900\\,\\text{m}^3\\text{/s}$ (calculated with efficiency $\\eta \\approx 0.90$, not measured). The table gives the maximum electric powers $P$ and the heads $h$ of the power plants.\n\n| power plant | $P$ (MW) | $h$ (m) |\n|---|---|---|\n| Tainionkoski | $62$ | $7.8$ |\n| Imatra | $192$ | $24$ |",
       "question": {
         "type": "choice",
