@@ -1,0 +1,105 @@
+{
+ "level1": [
+  {
+   "id": "fy4-9-L1-01",
+   "level": 1,
+   "text": "Jääkiekko, jonka massa on $0{,}17\\,\\text{kg}$, liukuu jäällä nopeudella $30\\,\\text{m/s}$. Kuinka suuri on kiekon liikemäärä?",
+   "answer": 5.1,
+   "unit": "kg·m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-02",
+   "level": 1,
+   "text": "Ostoskärryä työnnetään vaakasuoraan voimalla $12\\,\\text{N}$ ajan $0{,}50\\,\\text{s}$. Kuinka suuri on työntövoiman impulssi?",
+   "answer": 6.0,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-03",
+   "level": 1,
+   "text": "Lentopallo, jonka massa on $0{,}27\\,\\text{kg}$, on hetken levossa lentoratansa ylimmässä kohdassa, kun pelaaja iskee sitä. Pallo lähtee kädestä nopeudella $18\\,\\text{m/s}$. Pallon painon vaikutus iskun aikana jätetään huomiotta. Kuinka suuren impulssin käsi antaa pallolle?",
+   "answer": 4.86,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-04",
+   "level": 1,
+   "text": "Hiihtäjän, jonka massa on $70\\,\\text{kg}$, liikemäärä on $420\\,\\text{kg}\\cdot\\text{m/s}$. Kuinka suuri on hiihtäjän nopeus?",
+   "answer": 6.0,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L1-05",
+   "level": 1,
+   "text": "Sulkapallomaila antaa pallolle impulssin $0{,}15\\,\\text{N}\\cdot\\text{s}$. Maila ja pallo ovat kosketuksissa ajan $0{,}0010\\,\\text{s}$. Kuinka suuri on mailan keskimääräinen voima palloon?",
+   "answer": 150.0,
+   "unit": "N",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy4-9-L2-01",
+   "level": 2,
+   "text": "Henkilöauto, jonka massa on $1200\\,\\text{kg}$, ajaa vaakasuoralla tiellä nopeudella $54\\,\\text{km/h}$. Kuljettaja jarruttaa, ja auto pysähtyy $3{,}0\\,\\text{s}$:ssa. Ilmanvastus jätetään huomiotta. Kuinka suuri on autoon vaikuttava keskimääräinen jarruttava voima? Vastaa kilonewtoneina.",
+   "answer": 6.0,
+   "unit": "kN",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-02",
+   "level": 2,
+   "text": "Golfpallo, jonka massa on $46\\,\\text{g}$, on levossa. Maila lyö sitä, ja pallo lähtee nopeudella $70\\,\\text{m/s}$. Maila ja pallo ovat kosketuksissa $0{,}50\\,\\text{ms}$. Pallon painon vaikutus lyönnin aikana jätetään huomiotta. Kuinka suuri on mailan keskimääräinen voima palloon? Vastaa kilonewtoneina.",
+   "answer": 6.44,
+   "unit": "kN",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-03",
+   "level": 2,
+   "text": "Pallo, jonka massa on $60\\,\\text{g}$, heitetään vaakasuoraan seinään. Pallo osuu seinään nopeudella $14\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $11\\,\\text{m/s}$. Kuinka suuren impulssin seinä antaa pallolle? Ilmoita impulssin suuruus.",
+   "answer": 1.5,
+   "unit": "N·s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-04",
+   "level": 2,
+   "text": "Jääkiekko, jonka massa on $0{,}17\\,\\text{kg}$, liukuu nopeudella $8{,}0\\,\\text{m/s}$. Pelaaja lyö kiekkoa mailalla liikkeen suuntaan keskimääräisellä voimalla $120\\,\\text{N}$, ja kosketus kestää $0{,}025\\,\\text{s}$. Jään kitka jätetään huomiotta. Kuinka suuri on kiekon nopeus lyönnin jälkeen?",
+   "answer": 25.647059,
+   "unit": "m/s",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy4-9-L3-01",
+   "level": 3,
+   "text": "Lapsi istuu pulkassa vaakasuoralla lumella, ja lapsen ja pulkan yhteinen massa on $24\\,\\text{kg}$. Pulkka liukuu aluksi nopeudella $1{,}0\\,\\text{m/s}$, kun aikuinen työntää sitä liikkeen suuntaan. Kuvaajassa on työntövoima ajan funktiona. Lumen kitka jätetään huomiotta. Kuinka suuri on pulkan nopeus työnnön jälkeen?",
+   "figure": "fy4-9/ex-potku",
+   "answer": 3.0,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-02",
+   "level": 3,
+   "text": "Henkilöauto törmää kiinteään esteeseen ja pysähtyy. Turvavyö pysäyttää $75\\,\\text{kg}$:n matkustajan $0{,}12\\,\\text{s}$:ssa, ja vaakasuunnassa matkustajaan vaikuttaa vain vyön voima. Oletetaan, että vyön voima matkustajaan saa olla keskimäärin enintään $10\\,\\text{kN}$. Kuinka suuresta nopeudesta matkustaja voidaan näillä oletuksilla enintään pysäyttää? Vastaa yksikössä $\\text{km/h}$.",
+   "answer": 57.6,
+   "unit": "km/h",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L3-03",
+   "level": 3,
+   "text": "Kaksi palloa, joiden massa on kummankin $0{,}20\\,\\text{kg}$, heitetään vaakasuoraan seinään nopeudella $8{,}0\\,\\text{m/s}$. Savipallo jää kiinni seinään. Kumipallo kimpoaa suoraan takaisin nopeudella $6{,}0\\,\\text{m/s}$. Kumpikin pallo on kosketuksissa seinään ajan $0{,}020\\,\\text{s}$. Kuinka paljon suurempi on kumipallon seinään kohdistama keskimääräinen voima kuin savipallon?",
+   "answer": 60.0,
+   "unit": "N",
+   "tolerance": 0.02
+  }
+ ]
+}

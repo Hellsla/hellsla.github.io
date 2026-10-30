@@ -1,0 +1,115 @@
+{
+  "level1": [
+    {
+      "id": "fy4-16-L1-01",
+      "level": 1,
+      "text": "A lift starts upwards from the ground floor and accelerates at $0.80\\,\\text{m/s}^2$. A person of mass $70.0\\,\\text{kg}$ stands in the lift. Draw the free-body diagram of the person. How large is the normal force of the floor on the person?",
+      "answer": 742.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-02",
+      "level": 1,
+      "text": "The mass of a skydiver with equipment is $90.0\\,\\text{kg}$. When the parachute opens, the air resistance is $2.10\\,\\text{kN}$ at one moment, and the skydiver is still moving downwards. Draw the free-body diagram of the skydiver. How large is the net force acting on the skydiver at this moment?",
+      "answer": 1.2171,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-03",
+      "level": 1,
+      "text": "A child slides down an icy chute from rest. The start of the chute is $3.20\\,\\text{m}$ higher than its end, and friction and air resistance can be ignored. Draw the free-body diagram of the child. How large is the speed of the child at the end of the chute?",
+      "answer": 7.923636,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-16-L1-04",
+      "level": 1,
+      "text": "A sled arrives from the foot of a slope onto a horizontal snow field at a speed of $6.0\\,\\text{m/s}$. The coefficient of kinetic friction between the sled and the snow is $0.080$, and air resistance is ignored. How long a distance does the sled slide on the flat before it stops?",
+      "answer": 22.93578,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-05",
+      "level": 1,
+      "text": "A sled slides down a straight slope at a steady speed. The coefficient of kinetic friction between the sled and the snow is $0.15$, and air resistance is ignored. How large is the angle of inclination of the slope?",
+      "answer": 8.530766,
+      "unit": "°",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-16-L2-01",
+      "level": 2,
+      "text": "A student of mass $60.0\\,\\text{kg}$ stands on a bathroom scale in a lift. The scale measures the normal force and shows it in kilograms, that is, divides it by $9.81\\,\\text{m/s}^2$. For a moment the scale shows $66.5\\,\\text{kg}$. How large is the acceleration of the lift at this moment, and in which direction does it point?",
+      "answer": 1.06275,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L2-02",
+      "level": 2,
+      "text": "A sled starts from rest at the top of a straight slope. The slope is $18.0\\,\\text{m}$ long and at an angle of $12.0^\\circ$ to the horizontal, and at the foot of the slope the speed of the sled is $5.10\\,\\text{m/s}$. Air resistance is ignored. How large is the coefficient of kinetic friction between the sled and the snow?",
+      "answer": 0.137262,
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L2-03",
+      "level": 2,
+      "text": "A skydiver whose mass with equipment is $80.0\\,\\text{kg}$ falls at a speed of $52.0\\,\\text{m/s}$ and opens the parachute. While falling $145\\,\\text{m}$, the skydiver's speed decreases to $6.0\\,\\text{m/s}$. Draw the free-body diagram of the skydiver. How much mechanical energy is changed into other forms of energy over this distance?",
+      "answer": 220.516,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-16-L2-04",
+      "level": 2,
+      "text": "The combined mass of a lift car and its load is $850\\,\\text{kg}$. A motor raises the car with a cable at a steady speed $12.0\\,\\text{m}$ upwards, and the lift takes $15.0\\,\\text{s}$. How large is the power the cable gives to the car?",
+      "answer": 6.6708,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-16-L3-01",
+      "level": 3,
+      "text": "The top of a sledding hill is $4.50\\,\\text{m}$ higher than the flat snow field that begins at the foot of the hill. The slope of the hill consists of two straight parts: the upper one is at an angle of $25^\\circ$ and the lower one at $10^\\circ$ to the horizontal. The sled starts from rest at the top, and the coefficient of kinetic friction is $0.120$ all the way. Air resistance and the increase of friction in the bends of the slope are ignored. How far from the top, measured horizontally, does the sled stop?",
+      "answer": 37.5,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L3-02",
+      "level": 3,
+      "text": "A person of mass $75.0\\,\\text{kg}$ stands on a force-sensor plate in a lift that starts downwards from an upper floor and stops at a lower one. The graph shows the reading of the plate, that is, the normal force, as a function of time. How large is the greatest speed of the lift during the trip?",
+      "answer": 2.286667,
+      "unit": "m/s",
+      "tolerance": 0.05,
+      "figure": "fy4-16/ex-hissi",
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L3-03",
+      "level": 3,
+      "text": "A skydiver whose mass with equipment is $70.0\\,\\text{kg}$ opens the parachute at a speed of $50.0\\,\\text{m/s}$. After falling $60.0\\,\\text{m}$ the speed has decreased to $6.0\\,\\text{m/s}$. How large is the air resistance on average over this distance, if it is assumed to be constant?",
+      "answer": 2.124033,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

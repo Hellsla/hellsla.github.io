@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy4-9-L1-01",
+      "level": 1,
+      "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides on the ice at $30\\,\\text{m/s}$. How large is the momentum of the puck?",
+      "answer": 5.1,
+      "unit": "kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L1-02",
+      "level": 1,
+      "text": "A shopping cart is pushed horizontally with a force of $12\\,\\text{N}$ for $0.50\\,\\text{s}$. How large is the impulse of the pushing force?",
+      "answer": 6.0,
+      "unit": "N·s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L1-03",
+      "level": 1,
+      "text": "A volleyball of mass $0.27\\,\\text{kg}$ is momentarily at rest at the highest point of its path when a player spikes it. The ball leaves the hand at $18\\,\\text{m/s}$. The effect of the ball's weight during the spike is neglected. How large an impulse does the hand give the ball?",
+      "answer": 4.86,
+      "unit": "N·s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L1-04",
+      "level": 1,
+      "text": "A skier of mass $70\\,\\text{kg}$ has a momentum of $420\\,\\text{kg}\\cdot\\text{m/s}$. How large is the skier's velocity?",
+      "answer": 6.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L1-05",
+      "level": 1,
+      "text": "A badminton racket gives the shuttlecock an impulse of $0.15\\,\\text{N}\\cdot\\text{s}$. The racket and the shuttlecock are in contact for $0.0010\\,\\text{s}$. How large is the average force of the racket on the shuttlecock?",
+      "answer": 150.0,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-9-L2-01",
+      "level": 2,
+      "text": "A car of mass $1200\\,\\text{kg}$ drives on a horizontal road at $54\\,\\text{km/h}$. The driver brakes, and the car stops in $3.0\\,\\text{s}$. Air resistance is neglected. How large is the average braking force on the car? Give the answer in kilonewtons.",
+      "answer": 6.0,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L2-02",
+      "level": 2,
+      "text": "A golf ball of mass $46\\,\\text{g}$ is at rest. A club hits it, and the ball leaves at $70\\,\\text{m/s}$. The club and the ball are in contact for $0.50\\,\\text{ms}$. The effect of the ball's weight during the hit is neglected. How large is the average force of the club on the ball? Give the answer in kilonewtons.",
+      "answer": 6.44,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L2-03",
+      "level": 2,
+      "text": "A ball of mass $60\\,\\text{g}$ is thrown horizontally at a wall. The ball hits the wall at $14\\,\\text{m/s}$ and rebounds straight back at $11\\,\\text{m/s}$. How large an impulse does the wall give the ball? Give the magnitude of the impulse.",
+      "answer": 1.5,
+      "unit": "N·s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L2-04",
+      "level": 2,
+      "text": "A hockey puck of mass $0.17\\,\\text{kg}$ slides at $8.0\\,\\text{m/s}$. A player hits the puck with a stick in the direction of motion with an average force of $120\\,\\text{N}$, and the contact lasts $0.025\\,\\text{s}$. Friction from the ice is neglected. How large is the velocity of the puck after the hit?",
+      "answer": 25.647059,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-9-L3-01",
+      "level": 3,
+      "text": "A child sits on a sled on horizontal snow, and the combined mass of the child and the sled is $24\\,\\text{kg}$. The sled is first gliding at $1.0\\,\\text{m/s}$ when an adult pushes it in the direction of motion. The graph shows the pushing force as a function of time. Friction from the snow is neglected. How large is the velocity of the sled after the push?",
+      "figure": "fy4-9/ex-potku",
+      "answer": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L3-02",
+      "level": 3,
+      "text": "A car hits a fixed obstacle and stops. The seat belt stops a $75\\,\\text{kg}$ passenger in $0.12\\,\\text{s}$, and in the horizontal direction only the force of the belt acts on the passenger. Assume that the force of the belt on the passenger may be at most $10\\,\\text{kN}$ on average. From what greatest velocity can the passenger be stopped under these assumptions? Give the answer in $\\text{km/h}$.",
+      "answer": 57.6,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-9-L3-03",
+      "level": 3,
+      "text": "Two balls, each of mass $0.20\\,\\text{kg}$, are thrown horizontally at a wall at $8.0\\,\\text{m/s}$. The clay ball sticks to the wall. The rubber ball rebounds straight back at $6.0\\,\\text{m/s}$. Each ball is in contact with the wall for $0.020\\,\\text{s}$. By how much is the average force of the rubber ball on the wall greater than that of the clay ball?",
+      "answer": 60.0,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "version": 1,
+  "contribution": "Liikemäärän säilymislaki johdetaan Newtonin kolmannesta laista ja impulssista. Sen löytää ilmatyynyradan simulaatiosta, jossa puskurien voimat lasketaan puristumasta. Kokonaisliikemäärä on sama ennen ja jälkeen jokaisessa törmäyksessä ja räjähdyksessä. Liike-energia säilyy kuitenkin vain kimmoisassa törmäyksessä. Yksiulotteiset törmäykset ratkaistaan nopeuksilla, joilla on etumerkit. Säilymislain ehto sanotaan joka tehtävässä: ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä.",
+  "learn": [
+    "selittämään Newtonin kolmannen lain avulla, miksi kokonaisliikemäärä ei muutu törmäyksessä eikä räjähdyksessä.",
+    "laskemaan liikemäärän säilymislain avulla nopeuksia törmäyksissä ja räjähdyksissä, jotka tapahtuvat yhdellä suoralla.",
+    "erottamaan kimmoisan ja kimmottoman törmäyksen toisistaan liike-energian avulla."
+  ],
+  "prior": [
+    "Kappaleen liikemäärä on $\\overline{p} = m\\overline{v}$. Vakiosuuruisen kokonaisvoiman impulssi muuttaa sitä: $\\Delta\\overline{p} = \\Sigma\\overline{F}\\,\\Delta t$ (luku *Liikemäärä ja impulssi*)",
+    "Kappaleen liike-energia on $E_\\text{k} = \\tfrac12 mv^2$. Kitkan kaltaiset voimat muuttavat mekaanista energiaa sisäenergiaksi (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Biljardipöydällä punainen pallo on levossa. Pelaaja lyö valkoisen lyöntipallon suoraan sitä kohti. Pallot kopsahtavat, ja hetkessä tilanne on muuttunut. Lyöntipallo on pysähtynyt melkein siihen, missä punainen pallo oli. Punainen pallo kiitää eteenpäin lähes samalla nopeudella kuin lyöntipallo äsken. Jos punainen pallo olisi raskas keilapallo, lyöntipallo kimpoaisi takaisin.",
+      "question": "Mikä ratkaisee, miten liike jakautuu törmäävien kappaleiden kesken? Miksi lyöntipallo pysähtyy juuri silloin, kun se osuu samanlaiseen palloon?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: impulssi",
+      "optional": true,
+      "prompt": "Vaunuun vaikuttaa vakiosuuruinen kokonaisvoima $3{,}0\\,\\text{N}$ liikkeen suuntaan. Voima vaikuttaa ajan $0{,}10\\,\\text{s}$. Kuinka paljon vaunun liikemäärä muuttuu?",
+      "choices": [
+        {
+          "text": "$0{,}30\\,\\text{kg}\\cdot\\text{m/s}$",
+          "correct": true,
+          "feedback": "Oikein. Liikemäärän muutos on yhtä suuri kuin impulssi: $\\Delta p = F\\,\\Delta t = 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} = 0{,}30\\,\\text{N}\\cdot\\text{s}$. Lisäksi $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (luku *Liikemäärä ja impulssi*)."
+        },
+        {
+          "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
+          "feedback": "Laskit osamäärän $F : \\Delta t$. Impulssi on kuitenkin voiman ja ajan tulo: $\\Delta p = F\\,\\Delta t = 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} = 0{,}30\\,\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "Sitä ei voi laskea, koska vaunun massaa ei tunneta.",
+          "feedback": "Massaa tarvitaan nopeuden muutoksen laskemiseen, mutta ei liikemäärän muutoksen. Liikemäärän muutos on impulssi $F\\,\\Delta t = 0{,}30\\,\\text{kg}\\cdot\\text{m/s}$. Massa ei vaikuta siihen."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: vaunut tarttuvat yhteen",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Vaakasuoralla ilmatyynyradalla $0{,}40\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\\,\\text{m/s}$. Se törmää levossa olevaan samanlaiseen vaunuun. Vaunujen päissä on tarranauhat, joten vaunut jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
+      "choices": [
+        {
+          "text": "$0{,}30\\,\\text{m/s}$: liikemäärä jakautuu kaksinkertaiselle massalle.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa yhteinen nopeus on $0{,}30\\,\\text{m/s}$. Kokonaisliikemäärä on ennen ja jälkeen $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$. Liike-energia sen sijaan puolittuu $0{,}072\\,\\text{J}$:sta $0{,}036\\,\\text{J}$:iin."
+        },
+        {
+          "text": "$0{,}60\\,\\text{m/s}$: vaunu jatkaa samalla nopeudella ja vie toisen mukanaan.",
+          "feedback": "Jos vaunut liikkuisivat yhdessä nopeudella $0{,}60\\,\\text{m/s}$, liikemäärä olisi kaksinkertaistunut. Mikään ulkoinen voima ei kuitenkaan työntänyt vaunuja. Mallin arvoissa yhteinen nopeus on $0{,}30\\,\\text{m/s}$. Sama liikemäärä $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ jakautuu kaksinkertaiselle massalle."
+        },
+        {
+          "text": "$0{,}42\\,\\text{m/s}$: liike-energia jakautuu kaksinkertaiselle massalle.",
+          "feedback": "Tämä tulos saadaan, jos oletetaan liike-energian säilyvän. Tarranauha kuitenkin muuttaa osan liike-energiasta sisäenergiaksi, joten liike-energia ei säily. Mallin arvoissa yhteinen nopeus on $0{,}30\\,\\text{m/s}$. Säilyvä suure on liikemäärä."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kimmoisa törmäys",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Sama $0{,}40\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\\,\\text{m/s}$. Se törmää levossa olevaan samanlaiseen vaunuun. Nyt vaunujen välissä on jousipuskuri, joten törmäys on kimmoisa. Jousi puristuu kasaan ja varastoi energiaa. Sitten jousi palauttaa kaiken energian. Siksi liike-energia on törmäyksen jälkeen yhtä suuri kuin ennen. Mitä vaunuille tapahtuu?",
+      "choices": [
+        {
+          "text": "Vaunu 1 pysähtyy, ja vaunu 2 jatkaa nopeudella $0{,}60\\,\\text{m/s}$.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa vaunu 1 pysähtyy ja vaunu 2 jatkaa nopeudella $0{,}60\\,\\text{m/s}$. Samanmassaiset vaunut vaihtavat nopeuksia. Vain silloin sekä liikemäärä $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ että liike-energia $0{,}072\\,\\text{J}$ säilyvät."
+        },
+        {
+          "text": "Molemmat vaunut jatkavat eteenpäin nopeudella $0{,}30\\,\\text{m/s}$.",
+          "feedback": "Liikemäärä säilyisi, mutta liike-energia puolittuisi, kuten täysin kimmottomassa törmäyksessä. Jousipuskuri kuitenkin palauttaa energian, jonka se sai puristuessaan. Mallin arvoissa vaunu 1 pysähtyy ja vaunu 2 jatkaa nopeudella $0{,}60\\,\\text{m/s}$."
+        },
+        {
+          "text": "Vaunu 1 kimpoaa takaisin nopeudella $0{,}60\\,\\text{m/s}$, ja vaunu 2 jää paikalleen.",
+          "feedback": "Silloin liikemäärä vaihtaisi suuntaa: ennen $+0{,}240\\,\\text{kg}\\cdot\\text{m/s}$, jälkeen $-0{,}240\\,\\text{kg}\\cdot\\text{m/s}$. Ulkoiset voimat kuitenkin kumoavat toisensa. Lisäksi vaunu 2 saa jousen työnnöstä liikettä. Mallin arvoissa vaunu 1 pysähtyy ja vaunu 2 jatkaa nopeudella $0{,}60\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: räjähdys",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-3",
+        "min": 2
+      },
+      "prompt": "Kaksi vaunua on levossa vierekkäin. Niiden välissä on puristettu jousi. Vaunun 1 massa on $0{,}40\\,\\text{kg}$ ja vaunun 2 massa $0{,}20\\,\\text{kg}$. Jousi laukeaa ja työntää vaunut erilleen. Miten vaunujen nopeudet suhtautuvat toisiinsa?",
+      "choices": [
+        {
+          "text": "Kevyempi vaunu 2 liikkuu kaksi kertaa niin nopeasti kuin vaunu 1.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa vaunu 1 liikkuu $0{,}63\\,\\text{m/s}$ vasemmalle ja vaunu 2 $1{,}26\\,\\text{m/s}$ oikealle. Liikemäärät $\\mp 0{,}253\\,\\text{kg}\\cdot\\text{m/s}$ ovat yhtä suuret ja vastakkaissuuntaiset. Siksi kokonaisliikemäärä pysyy nollana."
+        },
+        {
+          "text": "Vaunut liikkuvat yhtä nopeasti. Jousi työntää molempia yhtä suurella voimalla.",
+          "feedback": "Jousi työntää molempia yhtä suurella voimalla yhtä kauan. Vaunut saavat siis yhtä suuret impulssit ja yhtä suuret liikemäärät. Yhtä suuri liikemäärä antaa kevyemmälle vaunulle suuremman nopeuden. Mallin arvoissa nopeudet ovat $0{,}63\\,\\text{m/s}$ ja $1{,}26\\,\\text{m/s}$."
+        },
+        {
+          "text": "Raskaampi vaunu 1 liikkuu nopeammin, koska sillä on enemmän liikemäärää.",
+          "feedback": "Levossa olevan systeemin kokonaisliikemäärä on nolla. Vaunujen liikemäärät ovat siis jälkeenkin yhtä suuret ja vastakkaissuuntaiset. Raskaampi vaunu saa samasta liikemäärästä pienemmän nopeuden. Mallin arvoissa se on $0{,}63\\,\\text{m/s}$, kun kevyempi saa $1{,}26\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa kaksi vaunua törmää vaakasuoralla ilmatyynyradalla. Alhaalla olevat pylväät näyttävät vaunujen liikemäärät ja liike-energiat. Ne näkyvät ennen törmäystä ja joka hetki.",
+      "howto": "Valitse tilanne, vaunujen massat ja alkunopeudet. Positiivinen suunta on oikealle, joten vasemmalle liikkuvan vaunun nopeus on negatiivinen. Paina *Käynnistä*. Kun törmäys on ohi, lukemiin tulevat nopeudet $v_1'$ ja $v_2'$, kokonaisliikemäärä $p_\\text{kok}'$ ja liike-energia $E_\\text{k}'$ törmäyksen jälkeen. Räjähdyksessä vaunut ovat aluksi levossa, joten nopeuksien liukusäätimet eivät ole käytössä. *Alusta* palauttaa vaunut lähtöpaikoilleen. *Nopeus* hidastaa tai nopeuttaa liikettä. Lukemat eivät muutu.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Rata on vaakasuora, ja kitka ja ilmanvastus jätetään huomiotta. Vaunujen paino ja radan tukivoima kumoavat toisensa, joten ulkoisten voimien summa ei muuta liikemäärää. Törmäyksessä vaunujen puskurit puristuvat. Puskurit työntävät vaunuja yhtä suurilla voimilla vastakkaisiin suuntiin. Jousipuskuri palauttaa kaiken puristumiseen kuluneen energian. Pehmeä puskuri ja tarranauha muuttavat osan liike-energiasta sisäenergiaksi. Tarranauhalla vaunut jäävät kiinni toisiinsa. Räjähdyksessä vaunujen välissä on $4{,}0\\,\\text{cm}$ puristettu jousi, johon on varastoitunut $0{,}24\\,\\text{J}$ energiaa.",
+      "calc": "Puskurien voima lasketaan puristumasta ja vaunujen suhteellisesta nopeudesta. Vaunujen liike lasketaan Newtonin toisesta laista $0{,}2\\,\\text{ms}$:n aika-askelin. Liikemäärät $p = mv$ ja liike-energiat $E_\\text{k} = \\tfrac12 mv^2$ lasketaan vaunujen nopeuksista. Arvot $p_\\text{kok}$ ja $E_\\text{k}$ ovat kummankin vaunun arvojen summat. Lukemat \"Jälkeen\" otetaan hetkellä, jolloin puskurit irtoavat toisistaan tai vaunut tarttuvat yhteen. Liikemäärän säilymistä ei ole kirjoitettu malliin. Se seuraa siitä, että puskurien voimat ovat yhtä suuret ja vastakkaissuuntaiset."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: täysin kimmoton törmäys",
+      "intro": "Testaa ensimmäinen ennuste. Alkutila valitsee tarranauhat. Vaunun 1 massa on $0{,}40\\,\\text{kg}$ ja nopeus $0{,}60\\,\\text{m/s}$, ja vaunu 2 on levossa. Ennen törmäystä kokonaisliikemäärä on silloin $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ ja liike-energia $0{,}072\\,\\text{J}$ (lukemat *Ennen*). Muuta vain vaunun 2 massaa. Paina joka kerta *Käynnistä*. Kirjaa mittaus, kun vaunut ovat tarttuneet yhteen.",
+      "initial": {
+        "tyyppi": "tarra",
+        "m1": "0.4",
+        "v1": 0.6,
+        "v2": 0,
+        "m2": "0.4"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "massa m_1",
+        "m2": "massa m_2",
+        "v1": "alkunopeus v_1",
+        "v2": "alkunopeus v_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg",
+        "v1": "m/s",
+        "v2": "m/s"
+      },
+      "values": {
+        "tyyppi": {
+          "tarra": "täysin kimmoton (tarranauha)"
+        },
+        "m1": {
+          "0.4": "$0{,}40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0{,}20\\,\\text{kg}$",
+          "0.4": "$0{,}40\\,\\text{kg}$",
+          "0.6": "$0{,}60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1",
+        "v1",
+        "v2"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{kok}'$ (kg·m/s)"
+        },
+        {
+          "key": "EkJ",
+          "label": "$E_\\text{k}'$ (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Vertaa taulukon kokonaisliikemäärää ja liike-energiaa törmäyksen jälkeen arvoihin ennen törmäystä. Ne ovat $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ ja $0{,}072\\,\\text{J}$. Mitä huomaat?",
+        "choices": [
+          {
+            "text": "Kokonaisliikemäärä säilyy, mutta liike-energia pienenee.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $p_\\text{kok} = p_\\text{kok}' = 0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ kaikilla massoilla. Liike-energia kuitenkin pienenee, esimerkiksi $0{,}072\\,\\text{J}$:sta $0{,}036\\,\\text{J}$:iin, kun $m_2 = 0{,}40\\,\\text{kg}$. Tarranauha muuttaa osan liike-energiasta sisäenergiaksi."
+          },
+          {
+            "text": "Sekä kokonaisliikemäärä että liike-energia säilyvät joka rivillä.",
+            "feedback": "Katso liike-energian sarakkeita. Mallin arvoissa $E_\\text{k}$ on $0{,}072\\,\\text{J}$, mutta $E_\\text{k}'$ on vain $0{,}029$–$0{,}048\\,\\text{J}$. Liikemäärä säilyy, liike-energia ei."
+          },
+          {
+            "text": "Kokonaisliikemäärä pienenee, koska raskaampi vaunu 2 jarruttaa vaunua 1.",
+            "feedback": "Vaunu 2 jarruttaa vaunua 1, mutta vaunu 1 kiihdyttää vaunua 2 yhtä suurella voimalla vastakkaiseen suuntaan. Vaunun 1 menettämä liikemäärä siirtyy vaunulle 2. Mallin arvoissa $p_\\text{kok}' = 0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ joka rivillä."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kimmoisa törmäys",
+      "intro": "Testaa toinen ennuste. Alkutila valitsee jousipuskurin. Vaunun 1 massa on $0{,}40\\,\\text{kg}$ ja nopeus $0{,}60\\,\\text{m/s}$, ja vaunu 2 on levossa. Muuta vain vaunun 2 massaa, esimerkiksi arvoihin $0{,}20$, $0{,}40$ ja $0{,}60\\,\\text{kg}$. Kirjaa mittaus, kun törmäys on ohi.",
+      "initial": {
+        "tyyppi": "kimmoisa",
+        "m1": "0.4",
+        "v1": 0.6,
+        "v2": 0,
+        "m2": "0.4"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "massa m_1",
+        "m2": "massa m_2",
+        "v1": "alkunopeus v_1",
+        "v2": "alkunopeus v_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg",
+        "v1": "m/s",
+        "v2": "m/s"
+      },
+      "values": {
+        "tyyppi": {
+          "kimmoisa": "kimmoisa törmäys (jousi)"
+        },
+        "m1": {
+          "0.4": "$0{,}40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0{,}20\\,\\text{kg}$",
+          "0.4": "$0{,}40\\,\\text{kg}$",
+          "0.6": "$0{,}60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1",
+        "v1",
+        "v2"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v_1'$ (m/s)"
+        },
+        {
+          "key": "u2",
+          "label": "$v_2'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{kok}'$ (kg·m/s)"
+        },
+        {
+          "key": "EkJ",
+          "label": "$E_\\text{k}'$ (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Ennen törmäystä kokonaisliikemäärä on $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ ja liike-energia $0{,}072\\,\\text{J}$. Mitä taulukosta näkee kimmoisasta törmäyksestä?",
+        "choices": [
+          {
+            "text": "Sekä liikemäärä että liike-energia säilyvät. Massat ratkaisevat vaunujen nopeudet.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $p_\\text{kok}' = 0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ ja $E_\\text{k}' = 0{,}072\\,\\text{J}$ joka rivillä. Kevyempi vaunu 2 lähtee nopeammin kuin vaunu 1 tuli ($0{,}80\\,\\text{m/s}$). Samanmassainen vaunu vaihtaa nopeutta. Raskaampi vaunu saa vaunun 1 kimpoamaan takaisin ($v_1' = -0{,}12\\,\\text{m/s}$)."
+          },
+          {
+            "text": "Vaunu 1 pysähtyy aina. Koko liikemäärä siirtyy vaunulle 2, olipa sen massa mikä tahansa.",
+            "feedback": "Vaunu 1 pysähtyy vain, kun vaunut ovat samanmassaiset. Mallin arvoissa vaunu 1 jatkaa nopeudella $0{,}20\\,\\text{m/s}$, kun $m_2 = 0{,}20\\,\\text{kg}$. Se kimpoaa takaisin nopeudella $0{,}12\\,\\text{m/s}$, kun $m_2 = 0{,}60\\,\\text{kg}$."
+          },
+          {
+            "text": "Kun vaunu 1 kimpoaa takaisin, kokonaisliikemäärä on pienempi.",
+            "feedback": "Kun vaunu 1 kimpoaa, sen liikemäärä on negatiivinen. Vaunu 2 saa silloin suuremman liikemäärän. Mallin arvoissa $0{,}40 \\cdot (-0{,}12) + 0{,}60 \\cdot 0{,}48 = 0{,}240$, joten kokonaisliikemäärä säilyy."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: räjähdys",
+      "optional": true,
+      "intro": "Testaa kolmas ennuste. Alkutila valitsee räjähdyksen. Vaunun 1 massa on $0{,}40\\,\\text{kg}$. Vaunut ovat aluksi levossa. Muuta vain vaunun 2 massaa. Kirjaa mittaus, kun vaunut ovat irronneet toisistaan.",
+      "initial": {
+        "tyyppi": "rajahdys",
+        "m1": "0.4",
+        "m2": "0.2"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "massa m_1",
+        "m2": "massa m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tyyppi": {
+          "rajahdys": "räjähdys (jousi laukeaa)"
+        },
+        "m1": {
+          "0.4": "$0{,}40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0{,}20\\,\\text{kg}$",
+          "0.4": "$0{,}40\\,\\text{kg}$",
+          "0.6": "$0{,}60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v_1'$ (m/s)"
+        },
+        {
+          "key": "u2",
+          "label": "$v_2'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{kok}'$ (kg·m/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, mikä säilyy kaikissa törmäyksissä. Selitä myös, mikä säilyy vain kimmoisassa törmäyksessä. Selitä sitten Newtonin kolmannen lain avulla, miksi vaunu 1 menettää yhtä paljon liikemäärää kuin vaunu 2 saa.",
+      "criteria": [
+        "Vastaus näyttää omista mittausriveistä, että kokonaisliikemäärä oli sama ennen ja jälkeen kummassakin kokeessa.",
+        "Vastaus kertoo, että liike-energia säilyi kimmoisassa törmäyksessä mutta pieneni täysin kimmottomassa. Vastaus sanoo myös, mihin energia meni.",
+        "Vastaus perustelee säilymisen sillä, että puskurit työntävät vaunuja yhtä suurilla voimilla vastakkaisiin suuntiin yhtä kauan. Siksi impulssit ja liikemäärien muutokset ovat yhtä suuret ja vastakkaissuuntaiset.",
+        "Vastaus mainitsee ehdon: ulkoiset voimat eivät muuta liikemäärää. Paino ja tukivoima kumoavat toisensa, ja kitka jätetään huomiotta."
+      ],
+      "model": "Kokeessa 1 vaunut tarttuivat yhteen. Mallin arvoissa kokonaisliikemäärä oli $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ sekä ennen että jälkeen kaikilla vaunun 2 massoilla. Liike-energia kuitenkin pieneni, esimerkiksi $0{,}072\\,\\text{J}$:sta $0{,}036\\,\\text{J}$:iin, kun vaunut olivat samanmassaiset. Tarranauha muutti osan liike-energiasta sisäenergiaksi. Kokeessa 2 törmäys oli kimmoisa. Mallin arvoissa sekä kokonaisliikemäärä $0{,}240\\,\\text{kg}\\cdot\\text{m/s}$ että liike-energia $0{,}072\\,\\text{J}$ säilyivät joka rivillä. Liikemäärä säilyy, koska puskurit työntävät vaunuja Newtonin kolmannen lain mukaan yhtä suurilla voimilla $\\overline{F}$ ja $-\\overline{F}$ vastakkaisiin suuntiin. Voimat vaikuttavat saman ajan $\\Delta t$. Vaunun 2 liikemäärä kasvaa impulssin $\\overline{F}\\,\\Delta t$ verran. Vaunun 1 liikemäärä muuttuu saman verran vastakkaiseen suuntaan. Tämä pätee, koska ulkoiset voimat eivät muuta liikemäärää: paino ja radan tukivoima kumoavat toisensa, ja kitka on jätetty huomiotta."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi simulaation lukemiin. Mikä yllätti eniten? Kirjoita omin sanoin, milloin törmäyksen voi ratkaista pelkällä liikemäärän säilymislailla. Kirjoita myös, milloin tarvitaan lisäksi liike-energiaa.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Ilmatyynyradalla $0{,}50\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}40\\,\\text{m/s}$ oikealle. $0{,}30\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\\,\\text{m/s}$ vasemmalle. Vaunut törmäävät ja jäävät kiinni toisiinsa. Opiskelija laskee: $v' = \\dfrac{0{,}50 \\cdot 0{,}40 + 0{,}30 \\cdot 0{,}60}{0{,}80}\\,\\text{m/s} \\approx 0{,}48\\,\\text{m/s}$ oikealle. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Vasemmalle liikkuvan vaunun nopeus ja liikemäärä ovat negatiivisia: $0{,}30 \\cdot (-0{,}60)$.",
+          "correct": true,
+          "feedback": "Oikein. Kun oikealle on positiivinen suunta, $v' = \\dfrac{0{,}20 - 0{,}18}{0{,}80}\\,\\text{m/s} = 0{,}025\\,\\text{m/s}$ oikealle. Vaunut melkein pysähtyvät, koska niiden liikemäärät ovat lähes yhtä suuret ja vastakkaissuuntaiset. Opiskelijan tulos on suurempi kuin oikealle liikkuvan vaunun alkunopeus $0{,}40\\,\\text{m/s}$. Se on mahdoton, koska vasemmalle liikkuva vaunu jarruttaa oikealle liikkuvaa."
+        },
+        {
+          "text": "Vaunut liikkuvat yhdessä, joten nopeus on laskettava liike-energian säilymisestä.",
+          "feedback": "Liike-energia ei säily, kun vaunut jäävät kiinni toisiinsa. Liikemäärän säilymislaki on oikea valinta. Vasemmalle liikkuvan vaunun liikemäärä on kuitenkin negatiivinen: $v' = 0{,}025\\,\\text{m/s}$."
+        },
+        {
+          "text": "Nimittäjässä pitää olla vain törmäävän vaunun massa $0{,}50\\,\\text{kg}$.",
+          "feedback": "Vaunut liikkuvat törmäyksen jälkeen yhdessä. Siksi yhteinen liikemäärä jakautuu molempien vaunujen massalle $0{,}80\\,\\text{kg}$. Virhe on etumerkissä: vasemmalle liikkuvan vaunun liikemäärä on negatiivinen."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Poika, jonka massa on $50\\,\\text{kg}$, seisoo levossa olevassa soutuveneessä. Veneen massa on $120\\,\\text{kg}$. Poika hyppää veneestä laiturille vaakasuoralla nopeudella $2{,}4\\,\\text{m/s}$ laituriin (maahan) nähden. Veden vastus jätetään huomiotta, koska ponnistus kestää vain hetken. Millä nopeudella vene lähtee liikkeelle? Vastaa yksikössä $\\text{m/s}$.",
+      "answer": 1.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Valitse systeemiksi poika ja vene. Kuinka suuri on systeemin kokonaisliikemäärä ennen hyppyä?",
+        "Ponnistuksessa poika ja vene työntävät toisiaan, joten kyse on räjähdyksestä: $0 = m_\\text{poika} v_\\text{poika} + m_\\text{vene} v_\\text{vene}$.",
+        "Ratkaise $v_\\text{vene} = -\\dfrac{m_\\text{poika} v_\\text{poika}}{m_\\text{vene}}$. Miinusmerkki kertoo, että vene liikkuu vastakkaiseen suuntaan."
+      ],
+      "mistakes": [
+        {
+          "value": 2.4,
+          "feedback": "Vene ei saa samaa nopeutta kuin poika. Se saa saman suuruisen liikemäärän. Raskaampi vene liikkuu hitaammin. Jaa pojan liikemäärä veneen massalla."
+        },
+        {
+          "value": 0.706,
+          "feedback": "Tämä olisi veneen nopeus, jos $2{,}4\\,\\text{m/s}$ olisi pojan nopeus veneen suhteen. Tehtävässä nopeus on laituriin (maahan) nähden, ja liikemäärät lasketaan maan suhteen. Pojan liikemäärä on $50\\,\\text{kg} \\cdot 2{,}4\\,\\text{m/s}$. Se jaetaan vain veneen massalla $120\\,\\text{kg}$."
+        },
+        {
+          "value": 5.76,
+          "feedback": "Massojen suhde on väärin päin. Tuloksen mukaan raskas vene liikkuisi nopeammin kuin poika. Veneen nopeus on $\\dfrac{50\\,\\text{kg} \\cdot 2{,}4\\,\\text{m/s}}{120\\,\\text{kg}}$."
+        }
+      ],
+      "solution": "**Annettu:** pojan massa $m_\\text{p} = 50\\,\\text{kg}$, veneen massa $m_\\text{v} = 120\\,\\text{kg}$, pojan nopeus hypyn jälkeen laituriin nähden $v_\\text{p}' = 2{,}4\\,\\text{m/s}$; aluksi molemmat ovat levossa\n\n**Kysytty:** veneen nopeus $v_\\text{v}'$ yksikössä $\\text{m/s}$\n\n**Periaate:** Valitaan systeemiksi poika ja vene. Positiivinen suunta on pojan hypyn suunta. Ponnistuksessa poika ja vene työntävät toisiaan yhtä suurilla voimilla vastakkaisiin suuntiin. Ne ovat sisäisiä voimia. Vaakasuunnassa ei vaikuta muita voimia kuin veden vastus. Se jätetään huomiotta, koska ponnistus kestää vain hetken. Siksi vaakasuuntainen kokonaisliikemäärä säilyy. Alussa se on nolla, joten tilanne on räjähdys.\n\n**Kaava:** $0 = m_\\text{p} v_\\text{p}' + m_\\text{v} v_\\text{v}'$, joten $v_\\text{v}' = -\\dfrac{m_\\text{p} v_\\text{p}'}{m_\\text{v}}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massat ovat kilogrammoina ja nopeus yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $v_\\text{v}' = -\\dfrac{50 \\cdot 2{,}4}{120} \\cdot \\dfrac{\\text{kg}\\cdot\\text{m/s}}{\\text{kg}} = -1{,}0\\,\\text{m/s}$\n\n**Vastaus:** $1{,}0\\,\\text{m/s}$ poispäin laiturista. Vastauksessa on kaksi merkitsevää numeroa, koska nopeudessa $2{,}4\\,\\text{m/s}$ on kaksi. Miinusmerkki kertoo, että vene liikkuu vastakkaiseen suuntaan kuin poika.\n\n**Järkevyys:** Vene on $2{,}4$ kertaa niin raskas kuin poika, joten sen nopeus on $2{,}4$ kertaa pienempi: $2{,}4\\,\\text{m/s} : 2{,}4 = 1{,}0\\,\\text{m/s}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Valitse ensin systeemi ja positiivinen suunta. Tarkista, että ulkoisten voimien impulssi on törmäyksen aikana niin pieni, ettei sillä ole merkitystä. Merkitse vastakkaiseen suuntaan liikkuvien nopeudet negatiivisiksi. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Savipallo putoaa lattialle ja jää siihen paikalleen. Juuri ennen osumaa pallolla oli liikemäärää alaspäin. Mihin tämä liikemäärä meni?",
+      "choices": [
+        {
+          "text": "Se siirtyi Maahan. Maan massa on kuitenkin niin suuri, ettei sen nopeuden muutosta huomaa.",
+          "correct": true,
+          "feedback": "Oikein. Pallo ja Maa työntävät toisiaan törmäyksessä yhtä suurilla voimilla vastakkaisiin suuntiin. Pallon ja Maan muodostaman systeemin kokonaisliikemäärä säilyy. Maa saa yhtä suuren liikemäärän. Sen massa on noin $6 \\cdot 10^{24}\\,\\text{kg}$, joten sen nopeuden muutos on mittaamattoman pieni."
+        },
+        {
+          "text": "Se muuttui lämmöksi, kuten pallon liike-energiakin.",
+          "feedback": "Liike-energia muuttuu sisäenergiaksi. Liikemäärä ei kuitenkaan ole energiaa, eikä se muutu miksikään muuksi. Liikemäärä on vektorisuure, joka säilyy systeemissä. Pallon liikemäärä siirtyy Maahan, ja Maan nopeuden muutos on huomaamattoman pieni."
+        },
+        {
+          "text": "Se hävisi. Lattian tukivoima on ulkoinen voima, joten liikemäärä ei säily.",
+          "feedback": "Pelkälle pallolle lattian voima on ulkoinen, ja siksi pallon liikemäärä muuttuu. Kun systeemiksi otetaan pallo ja Maa, voima on sisäinen, ja kokonaisliikemäärä säilyy. Pallon liikemäärä siirtyy Maahan."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Ilmatyynyradalla $0{,}60\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}50\\,\\text{m/s}$ oikealle. $0{,}20\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}90\\,\\text{m/s}$ vasemmalle. Vaunut törmäävät ja jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Kuinka suuri on vaunujen yhteinen nopeus törmäyksen jälkeen? Vastaa yksikössä $\\text{m/s}$.",
+      "answer": 0.15,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Valitse positiiviseksi suunnaksi oikea. Onko vasemmalle liikkuvan vaunun nopeus positiivinen vai negatiivinen?",
+        "Täysin kimmottomassa törmäyksessä $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$.",
+        "Liikemäärä ennen on $0{,}60 \\cdot 0{,}50 + 0{,}20 \\cdot (-0{,}90)$ yksikössä $\\text{kg}\\cdot\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.6,
+          "feedback": "Laskit liikemäärät yhteen ilman etumerkkejä. Vasemmalle liikkuvan vaunun nopeus on $-0{,}90\\,\\text{m/s}$, joten sen liikemäärä pienentää kokonaisliikemäärää."
+        },
+        {
+          "value": 0.2,
+          "feedback": "Jaoit kokonaisliikemäärän vain raskaamman vaunun massalla. Vaunut liikkuvat kuitenkin yhdessä. Siksi nimittäjässä on molempien vaunujen massa $0{,}80\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Annettu:** $m_1 = 0{,}60\\,\\text{kg}$, $v_1 = +0{,}50\\,\\text{m/s}$ (oikealle), $m_2 = 0{,}20\\,\\text{kg}$, $v_2 = -0{,}90\\,\\text{m/s}$ (vasemmalle); vaunut jäävät kiinni toisiinsa\n\n**Kysytty:** yhteinen nopeus $v'$ yksikössä $\\text{m/s}$\n\n**Periaate:** Valitaan systeemiksi molemmat vaunut. Positiivinen suunta on oikealle. Vaakasuoralla radalla paino ja tukivoima kumoavat toisensa. Kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Vaunut jäävät kiinni toisiinsa, joten törmäys on täysin kimmoton. Vaunuilla on lopuksi yhteinen nopeus.\n\n**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$, joten $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massat ovat kilogrammoina ja nopeudet yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $v' = \\dfrac{0{,}60 \\cdot 0{,}50 + 0{,}20 \\cdot (-0{,}90)}{0{,}60 + 0{,}20}\\,\\text{m/s} = \\dfrac{0{,}30 - 0{,}18}{0{,}80}\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$\n\n**Vastaus:** $0{,}15\\,\\text{m/s}$ oikealle. Vastauksessa on kaksi merkitsevää numeroa, koska lähtötiedoissa on kaksi.\n\n**Järkevyys:** Nopeus on positiivinen, koska oikealle liikkuvan vaunun liikemäärä $0{,}30\\,\\text{kg}\\cdot\\text{m/s}$ on suurempi kuin vasemmalle liikkuvan $0{,}18\\,\\text{kg}\\cdot\\text{m/s}$. Yhteinen nopeus on pienempi kuin kummankaan vaunun alkunopeus, kuten pitääkin, kun liikemäärät kumoavat toisensa osittain."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä liikemäärän ja liike-energian avulla, miksi biljardin lyöntipallo pysähtyy. Lyöntipallo osuu suoraan samanlaiseen palloon, joka on levossa. Mitä tapahtuisi, jos pallot olisivat savea ja jäisivät kiinni toisiinsa?",
+      "criteria": [
+        "Vastaus kertoo, että liikemäärä säilyy. Pallot työntävät toisiaan yhtä suurilla voimilla vastakkaisiin suuntiin, ja pöydän kitkan impulssi on törmäyksen aikana niin pieni, ettei sillä ole merkitystä.",
+        "Vastaus kertoo, että biljardipallojen törmäys on lähes kimmoisa. Siksi myös liike-energia säilyy.",
+        "Vastaus perustelee, että samanmassaisilla palloilla molemmat ehdot täyttyvät vain, jos pallot vaihtavat nopeuksia.",
+        "Vastaus kertoo, että savipallot jatkaisivat yhdessä puolella alkunopeudesta, ja puolet liike-energiasta muuttuisi sisäenergiaksi."
+      ],
+      "model": "Törmäyksessä pallot työntävät toisiaan yhtä suurilla voimilla vastakkaisiin suuntiin saman ajan. Niiden liikemäärien muutokset ovat siksi yhtä suuret ja vastakkaissuuntaiset. Pöydän kitkan impulssi on lyhyen törmäyksen aikana niin pieni, ettei sillä ole merkitystä, joten kokonaisliikemäärä säilyy. Samanmassaisilla palloilla tämä tarkoittaa, että nopeuksien summa säilyy: $v_1' + v_2' = v$. Biljardipallot ovat kovia, ja niiden törmäys on lähes kimmoisa. Siksi myös liike-energia säilyy: $v_1'^2 + v_2'^2 = v^2$. Molemmat ehdot täyttyvät vain, jos toinen pallo on törmäyksen jälkeen levossa. Lyöntipallo ei voi kulkea toisen läpi, joten lyöntipallo pysähtyy ja toinen jatkaa nopeudella $v$. Jos pallot olisivat savea ja jäisivät kiinni toisiinsa, liikemäärä säilyisi edelleen. Sama liikemäärä jakautuisi kuitenkin kaksinkertaiselle massalle, ja pallot jatkaisivat yhdessä nopeudella $\\tfrac12 v$. Liike-energiaa olisi silloin enää puolet. Toinen puoli muuttuisi saven sisäenergiaksi."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

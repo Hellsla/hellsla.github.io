@@ -1,0 +1,620 @@
+{
+  "version": 1,
+  "contribution": "Luvussa käytetään liikenteen tilanteisiin kolmea asiaa: tasaisesti kiihtyvän liikkeen pinta-alaa, kitkaa ja impulssiperiaatetta. Simulaation ajoista nähdään, että reaktiomatka kasvaa samassa suhteessa nopeuden kanssa ja jarrutusmatka nopeuden neliön suhteessa. Nähdään myös, että pieni nopeuden lisäys voi muuttaa pysähtymisen kovaksi törmäykseksi. Esimerkkiaineistosta ja OTI:n tilastosta perustellaan, miksi turvavyö ja turvatyyny pienentävät törmäyksen voimaa: ne pidentävät törmäysaikaa.",
+  "learn": [
+    "laskemaan reaktiomatkan, jarrutusmatkan ja pysähtymismatkan sekä selittämään, miksi jarrutusmatka kasvaa nopeuden neliön suhteessa.",
+    "arvioimaan, miten nopeus, reaktioaika ja keli vaikuttavat pysähtymiseen ja törmäysnopeuteen.",
+    "selittämään impulssiperiaatteella, miksi turvavyö ja turvatyyny pienentävät törmäyksessä ihmiseen vaikuttavaa voimaa."
+  ],
+  "prior": [
+    "Siirtymä on $(t,v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)",
+    "Kitka vastustaa liukumista, ja se on enintään kitkakertoimen ja tukivoiman tulo (luku *Paino, kitka ja kalteva taso*)",
+    "Liikemäärän muutos on impulssi: $\\Delta\\overline{p} = \\overline{F}\\,\\Delta t$ (luku *Liikemäärä ja impulssi*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Autokoulussa opetetaan kaksi asiaa. Pienikin nopeuden lisäys pidentää pysähtymismatkaa paljon. Turvavyö kiinnitetään myös lyhyellä matkalla. Onnettomuustietoinstituutin mukaan vuosina 2017–2021 tutkituissa kuolemaan johtaneissa onnettomuuksissa kuoli henkilö- ja pakettiautoissa $198$ ihmistä ilman turvavyötä. Tutkijalautakuntien arvion mukaan $114$ heistä olisi voinut selvitä, jos vyö olisi ollut kiinni.",
+      "question": "Miksi pysähtymismatka kasvaa niin paljon, kun nopeus kasvaa? Miten turvavyö voi ratkaista, selviääkö ihminen törmäyksestä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: impulssi",
+      "optional": true,
+      "prompt": "Pesäpallon sieppari ottaa kopin kahdella tavalla. Kerran hän pitää hanskan jäykästi paikallaan. Toisella kerralla hän vetää kättään pallon mukana taaksepäin. Kummallakin kerralla pallon nopeus muuttuu samasta arvosta nollaan. Mitä käden vetäminen taaksepäin muuttaa?",
+      "choices": [
+        {
+          "text": "Pysähtymisaika pitenee, joten keskimääräinen voima pienenee.",
+          "correct": true,
+          "feedback": "Oikein. Luvussa *Liikemäärä ja impulssi* opit, että liikemäärän muutos on impulssi $\\overline{F}\\,\\Delta t$. Muutos on sama kummallakin kerralla. Siksi pidempi aika tarkoittaa pienempää voimaa. Turvavyö ja turvatyyny toimivat samalla tavalla."
+        },
+        {
+          "text": "Pallon liikemäärän muutos pienenee. Siksi myös impulssi pienenee.",
+          "feedback": "Pallo pysähtyy kummallakin kerralla samasta nopeudesta. Siksi liikemäärän muutos ja impulssi ovat samat. Käden liike muuttaa vain aikaa, jossa muutos tapahtuu. Siksi voima muuttuu."
+        },
+        {
+          "text": "Voima kasvaa, koska käsi vaikuttaa palloon pidemmän aikaa.",
+          "feedback": "Impulssi $F\\,\\Delta t$ on sama kummallakin kerralla. Jos aika $\\Delta t$ kasvaa, voiman $F$ täytyy pienentyä. Vain silloin tulo pysyy samana."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kaksinkertainen nopeus",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Auto jarruttaa kuivalla tiellä. Jarrutusmatka on matka jarrutuksen alusta pysähtymiseen. Nopeus ennen jarrutusta kaksinkertaistuu $50\\,\\text{km/h}$:sta $100\\,\\text{km/h}$:iin. Kuinka moninkertaiseksi jarrutusmatka kasvaa?",
+      "choices": [
+        {
+          "text": "Noin nelinkertaiseksi.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa jarrutusmatka kasvaa $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin. Kaksinkertaisen nopeuden pysäyttäminen kestää kaksi kertaa kauemmin. Koko sen ajan auto liikkuu kaksi kertaa nopeammin."
+        },
+        {
+          "text": "Noin kaksinkertaiseksi.",
+          "feedback": "Kaksinkertaiseksi kasvaa reaktiomatka. Sen auto kulkee tasaisella nopeudella. Jarrutusmatka kasvaa mallin arvoissa $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin eli nelinkertaiseksi. Pysäyttäminen kestää kaksi kertaa kauemmin, ja sen ajan auto liikkuu kaksi kertaa nopeammin."
+        },
+        {
+          "text": "Yhtä pitkäksi, koska jarrut ovat samat.",
+          "feedback": "Samat jarrut ja sama tie antavat saman hidastuvuuden. Suuremman nopeuden poistaminen vie silti enemmän aikaa. Mallin arvoissa jarrutusmatka kasvaa $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin."
+        },
+        {
+          "text": "Noin kahdeksankertaiseksi.",
+          "feedback": "Kasvu on jyrkkää, mutta ei näin jyrkkää. Mallin arvoissa jarrutusmatka kasvaa $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin eli nelinkertaiseksi. Aika kaksinkertaistuu, ja myös keskinopeus kaksinkertaistuu."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kymmenen kilometriä tunnissa nopeammin",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Kuivalla tiellä $25\\,\\text{m}$ edessä seisoo pysähtynyt auto. Kuljettaja ajaa $50\\,\\text{km/h}$, ja reaktioaika on $1{,}0\\,\\text{s}$. Silloin auto pysähtyy juuri ennen toista autoa. Mitä tapahtuu, jos sama kuljettaja ajaa samassa tilanteessa $60\\,\\text{km/h}$?",
+      "choices": [
+        {
+          "text": "Auto törmää noin $40\\,\\text{km/h}$:n nopeudella.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa törmäysnopeus on noin $41\\,\\text{km/h}$. Reaktiomatka on jo $16{,}7\\,\\text{m}$. Jarrutukseen jää siksi vain noin $8\\,\\text{m}$. Se ei riitä poistamaan läheskään koko nopeutta."
+        },
+        {
+          "text": "Auto törmää noin $10\\,\\text{km/h}$:n nopeudella.",
+          "feedback": "Törmäysnopeus ei ole nopeuksien erotus. Mallin arvoissa se on noin $41\\,\\text{km/h}$. Suurempi nopeus pidentää reaktiomatkan $16{,}7\\,\\text{m}$:iin. Jarrutukseen jää vain noin $8\\,\\text{m}$."
+        },
+        {
+          "text": "Auto pysähtyy vielä juuri ja juuri ennen estettä.",
+          "feedback": "Mallin arvoissa pysähtymismatka $60\\,\\text{km/h}$:n nopeudesta on $32{,}1\\,\\text{m}$. Se on selvästi yli $25\\,\\text{m}$. Auto törmää noin $41\\,\\text{km/h}$:n nopeudella."
+        },
+        {
+          "text": "Auto törmää lähes $60\\,\\text{km/h}$:n nopeudella.",
+          "feedback": "Reaktiomatka $16{,}7\\,\\text{m}$ on alle $25\\,\\text{m}$. Kuljettaja ehtii siis jarruttaa noin $8\\,\\text{m}$. Mallin arvoissa törmäysnopeus on noin $41\\,\\text{km/h}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: miksi turvavyö suojaa?",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "Auto törmää seinään $50\\,\\text{km/h}$:n nopeudella ja pysähtyy. Turvavyö pienentää voimaa, joka kohdistuu matkustajaan. Mikä selitys kertoo oikein, miksi?",
+      "choices": [
+        {
+          "text": "Vyö pidentää aikaa, jossa matkustaja pysähtyy. Siksi sama liikemäärän muutos syntyy pienemmällä voimalla.",
+          "correct": true,
+          "feedback": "Oikein. Matkustajan liikemäärä muuttuu arvosta $mv$ nollaan joka tapauksessa. Vyö kiinnittää hänet autoon, joka rypistyy noin $0{,}1\\,\\text{s}$:n ajan. Kojelautaan osuva matkustaja taas pysähtyy noin sadasosasekunnissa. Kymmenkertainen aika tarkoittaa kymmenesosaa voimasta."
+        },
+        {
+          "text": "Vyö pienentää matkustajan liikemäärän muutosta, koska osa liikemäärästä siirtyy vyöhön.",
+          "feedback": "Matkustaja pysähtyy kummassakin tapauksessa. Hänen liikemääränsä muuttuu siis arvosta $mv$ nollaan. Muutos on sama vyön kanssa ja ilman. Vyö muuttaa aikaa, jossa muutos tapahtuu. Siksi voima muuttuu."
+        },
+        {
+          "text": "Kun auto pysähtyy äkkiä, jokin voima heittää matkustajaa eteenpäin. Vyö kumoaa tämän voiman.",
+          "feedback": "Mikään voima ei heitä matkustajaa eteenpäin. Auto hidastuu, mutta matkustaja jatkaa liikettään Newtonin ensimmäisen lain mukaan. Vyö on se voima, joka hidastaa häntä. Vyö hidastaa häntä pidemmän ajan kuin kojelauta."
+        },
+        {
+          "text": "Vyö alkaa pienentää matkustajan nopeutta jo ennen kuin auto osuu seinään.",
+          "feedback": "Ennen törmäystä matkustaja ja auto liikkuvat yhdessä samalla nopeudella. Silloin vyö ei vaikuta mitään. Vyö alkaa hidastaa matkustajaa vasta, kun auto hidastuu. Se pidentää aikaa, jossa nopeus muuttuu."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa kuljettaja huomaa vaaran katkoviivan kohdalla, reagoi ja jarruttaa. Ylhäällä näkyvät tie ja matkat mittakaavassa. Alhaalla on $(t,v)$-kuvaaja, jonka värjätty pinta-ala on kuljettu matka.",
+      "howto": "Valitse auton nopeus, reaktioaika ja tien kunto. Valitse myös, seisooko edessä pysähtynyt auto. Paina *Käynnistä*. Auto kulkee reaktioajan tasaisella nopeudella. Sitten se jarruttaa pysähdyksiin tai törmää edessä olevaan autoon. *Tauko* pysäyttää ja *Jatka* jatkaa. Kun ajo on päättynyt, lukemiin tulevat reaktiomatka $s_\\text{r}$, jarrutusmatka $s_\\text{j}$, pysähtymismatka $s_\\text{p}$ ja pysähtymisaika $t_\\text{p}$ tai törmäysnopeus. Säädön muuttaminen tai *Alusta* palauttaa auton katkoviivalle. *Esityksen nopeus* hidastaa tai nopeuttaa vain esitystä, ei lukemia.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Reaktioajan auto liikkuu tasaisella nopeudella. Sen jälkeen se hidastuu vakiohidastuvuudella, kunnes pysähtyy. Malli olettaa kolme asiaa: tie on vaakasuora, ilmanvastus jätetään huomiotta ja jarrut käyttävät koko pidon. Kuivan asfaltin hidastuvuus $9{,}0\\,\\text{m/s}^2$ ja reaktioaika $1{,}0\\,\\text{s}$ ovat Liikenneturvan törmäysnopeuslaskurin oletuksia. Märän asfaltin $6{,}0\\,\\text{m/s}^2$, lumisen tien $3{,}0\\,\\text{m/s}^2$ ja jäisen tien $1{,}5\\,\\text{m/s}^2$ ovat pyöristettyjä esimerkkiarvoja. Todellinen pito riippuu renkaista, lämpötilasta ja pinnasta. Tien matkat ovat mittakaavassa, autot eivät. Edessä olevan auton takapuskuri on $25\\,\\text{m}$:n tai $50\\,\\text{m}$:n päässä katkoviivasta.",
+      "calc": "Nopeus muunnetaan: $v_0\\,(\\text{m/s}) = v_0\\,(\\text{km/h}) : 3{,}6$. Reaktiomatka on $s_\\text{r} = v_0\\,t_\\text{r}$. Jarrutuksen alusta on kulunut aika $\\tau$. Silloin nopeus on $v = v_0 - a\\tau$, ja kuljettu matka on $(t,v)$-kuvaajan pinta-ala. Auto pysähtyy, kun $\\tau = \\dfrac{v_0}{a}$. Jarrutusmatka on $s_\\text{j} = \\dfrac{v_0^2}{2a}$. Edessä oleva auto voi olla lähempänä kuin pysähtymismatka. Silloin simulaatio laskee nopeuden sillä hetkellä, kun kuljettu matka on yhtä suuri kuin auton etäisyys."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: nopeus ja pysähtymismatka",
+      "intro": "Testaa ennuste 1. Alkutilassa reaktioaika on $1{,}0\\,\\text{s}$, tie on kuiva eikä edessä ole estettä. Muuta vain auton nopeutta. Paina *Käynnistä*. Kirjaa mittaus, kun auto on pysähtynyt. Kokeile ainakin nopeuksia $50\\,\\text{km/h}$ ja $100\\,\\text{km/h}$. Kokeile myös esimerkiksi nopeuksia $30\\,\\text{km/h}$ ja $60\\,\\text{km/h}$.",
+      "initial": {
+        "v0": "50",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "ei"
+      },
+      "names": {
+        "v0": "auton nopeus $v_0$",
+        "tr": "reaktioaika $t_\\text{r}$",
+        "keli": "tien kunto",
+        "este": "edessä"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "50": "$50\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1{,}0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "kuiva tie"
+        },
+        "este": {
+          "ei": "ei mitään"
+        }
+      },
+      "locked": [
+        "tr",
+        "keli",
+        "este"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "sR",
+          "label": "$s_\\text{r}$ (m)"
+        },
+        {
+          "key": "sJ",
+          "label": "$s_\\text{j}$ (m)"
+        },
+        {
+          "key": "sP",
+          "label": "$s_\\text{p}$ (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Katso taulukosta rivit, joissa nopeus on $50\\,\\text{km/h}$ ja $100\\,\\text{km/h}$. Nopeus kaksinkertaistuu. Mitä tapahtuu reaktiomatkalle ja jarrutusmatkalle?",
+        "choices": [
+          {
+            "text": "Reaktiomatka kaksinkertaistuu ja jarrutusmatka nelinkertaistuu.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $s_\\text{r}$ kasvaa $13{,}9\\,\\text{m}$:stä $27{,}8\\,\\text{m}$:iin. $s_\\text{j}$ kasvaa $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin. Reaktiomatka on verrannollinen nopeuteen. Jarrutusmatka on verrannollinen nopeuden neliöön."
+          },
+          {
+            "text": "Kumpikin kaksinkertaistuu. Ne ovat molemmat verrannollisia nopeuteen.",
+            "feedback": "Katso jarrutusmatkan saraketta: $10{,}7\\,\\text{m}$ muuttuu $42{,}9\\,\\text{m}$:iin. Se on nelinkertainen. Vain reaktiomatka on verrannollinen nopeuteen."
+          },
+          {
+            "text": "Kumpikin nelinkertaistuu. Nopeus vaikuttaa molempiin samalla tavalla.",
+            "feedback": "Reaktiomatka $13{,}9\\,\\text{m}$ muuttuu $27{,}8\\,\\text{m}$:iin. Se on kaksinkertainen. Reaktioajan auto liikkuu tasaisella nopeudella, joten matka on nopeus kertaa aika."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: pysähtyykö auto ajoissa?",
+      "intro": "Testaa ennuste 2. Alkutilassa reaktioaika on $1{,}0\\,\\text{s}$ ja tie on kuiva. Seisova auto on $25\\,\\text{m}$:n päässä. Muuta vain auton nopeutta. Aja ensin $50\\,\\text{km/h}$ ja sitten $60\\,\\text{km/h}$. Kirjaa kumpikin ajo. Kokeile myös nopeuksia $40\\,\\text{km/h}$ ja $80\\,\\text{km/h}$.",
+      "initial": {
+        "v0": "50",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "25"
+      },
+      "names": {
+        "v0": "auton nopeus $v_0$",
+        "tr": "reaktioaika $t_\\text{r}$",
+        "keli": "tien kunto",
+        "este": "edessä"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "50": "$50\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1{,}0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "kuiva tie"
+        },
+        "este": {
+          "25": "seisova auto $25\\,\\text{m}$ edessä"
+        }
+      },
+      "locked": [
+        "tr",
+        "keli",
+        "este"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "vImpact",
+          "label": "törmäysnopeus (km/h)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Nopeudesta $50\\,\\text{km/h}$ auto pysähtyy ennen estettä. Nopeudesta $60\\,\\text{km/h}$ se törmää noin $41\\,\\text{km/h}$:n nopeudella. Miksi törmäysnopeus on näin suuri?",
+        "choices": [
+          {
+            "text": "Suurempi nopeus pidentää reaktiomatkaa. Jarrutukseen jää siksi vain lyhyt matka.",
+            "correct": true,
+            "feedback": "Oikein. Reaktiomatka kasvaa $13{,}9\\,\\text{m}$:stä $16{,}7\\,\\text{m}$:iin. Jarrutukseen jää noin $8\\,\\text{m}$. Se riittää poistamaan vain osan nopeudesta. Suuren nopeuden pienentäminen vaatii pitkän matkan."
+          },
+          {
+            "text": "Törmäysnopeus on aina nopeuksien erotus, joten se on noin $10\\,\\text{km/h}$.",
+            "feedback": "Taulukon mukaan törmäysnopeus on noin $41\\,\\text{km/h}$, ei $10\\,\\text{km/h}$. Auto ehtii jarruttaa vain noin $8\\,\\text{m}$. Suurin osa nopeudesta on vielä jäljellä."
+          },
+          {
+            "text": "Suuremmalla nopeudella hidastuvuus on pienempi. Jarrut toimivat siis huonommin.",
+            "feedback": "Mallissa hidastuvuus on sama $9{,}0\\,\\text{m/s}^2$ kaikilla nopeuksilla. Ero syntyy reaktiomatkasta. Se pitenee, ja jarrutukseen jää vähemmän matkaa kuin suuren nopeuden poistaminen vaatisi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: tien kunto",
+      "optional": true,
+      "intro": "Tutki, miten tien kunto vaikuttaa. Alkutilassa nopeus on $80\\,\\text{km/h}$, reaktioaika on $1{,}0\\,\\text{s}$ eikä edessä ole estettä. Muuta vain tien kuntoa. Kirjaa jokainen ajo. Kuinka monta kertaa pidempi jarrutusmatka on jäisellä tiellä kuin kuivalla tiellä?",
+      "initial": {
+        "v0": "80",
+        "tr": "1",
+        "keli": "kuiva",
+        "este": "ei"
+      },
+      "names": {
+        "v0": "auton nopeus $v_0$",
+        "tr": "reaktioaika $t_\\text{r}$",
+        "keli": "tien kunto",
+        "este": "edessä"
+      },
+      "units": {
+        "v0": "km/h",
+        "tr": "s"
+      },
+      "values": {
+        "v0": {
+          "80": "$80\\,\\text{km/h}$"
+        },
+        "tr": {
+          "1": "$1{,}0\\,\\text{s}$"
+        },
+        "keli": {
+          "kuiva": "kuiva tie"
+        },
+        "este": {
+          "ei": "ei mitään"
+        }
+      },
+      "locked": [
+        "v0",
+        "tr",
+        "este"
+      ],
+      "vary": "keli",
+      "measure": [
+        {
+          "key": "a",
+          "label": "$a$ (m/s²)"
+        },
+        {
+          "key": "sJ",
+          "label": "$s_\\text{j}$ (m)"
+        },
+        {
+          "key": "sP",
+          "label": "$s_\\text{p}$ (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Hidastuvuus pienenee kuivan tien $9{,}0\\,\\text{m/s}^2$:stä jäisen tien $1{,}5\\,\\text{m/s}^2$:iin. Se on kuudesosa. Miten jarrutusmatka muuttuu?",
+        "choices": [
+          {
+            "text": "Jarrutusmatka kasvaa kuusinkertaiseksi.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa jarrutusmatka kasvaa $27{,}4\\,\\text{m}$:stä $165\\,\\text{m}$:iin. Jarrutusmatka on kääntäen verrannollinen hidastuvuuteen: $s_\\text{j} = \\dfrac{v_0^2}{2a}$."
+          },
+          {
+            "text": "Jarrutusmatka kasvaa $36$-kertaiseksi.",
+            "feedback": "Neliö koskee nopeutta, ei hidastuvuutta. Mallin arvoissa jarrutusmatka kasvaa $27{,}4\\,\\text{m}$:stä $165\\,\\text{m}$:iin. Se on kuusinkertainen."
+          },
+          {
+            "text": "Jarrutusmatka pysyy samana, koska nopeus on sama.",
+            "feedback": "Kun hidastuvuus on pienempi, sama nopeus poistuu hitaammin. Auto kulkee siksi pidemmän matkan. Mallin arvoissa $27{,}4\\,\\text{m}$ muuttuu $165\\,\\text{m}$:iin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tormaystesti",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Törmäys vyön kanssa ja ilman",
+      "source": "example",
+      "text": "Taulukossa on pyöristetyt esimerkkiarvot $75\\,\\text{kg}$:n matkustajalle nokkakolarissa. Auto törmää $50\\,\\text{km/h}$:n nopeudella ja pysähtyy. Vyöhön kiinnitetty matkustaja hidastuu auton rypistyvän keulan mukana. Ilman vyötä matkustaja jatkaa liikettään, kunnes osuu kojelautaan, ja pysähtyy siihen. Taulukossa $\\Delta t$ on aika, jossa matkustaja pysähtyy.\n\n| Tilanne | $v$ ennen | $v$ jälkeen | $\\Delta t$ |\n|---|---|---|---|\n| vyö ja turvatyyny | $50\\,\\text{km/h}$ | $0$ | $0{,}10\\,\\text{s}$ |\n| ilman vyötä | $50\\,\\text{km/h}$ | $0$ | $0{,}010\\,\\text{s}$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Verrataan kahta matkustajaa. Toisella on vyö ja turvatyyny, toisella ei ole vyötä. Kuinka moninkertainen matkustajaan kohdistuva keskimääräinen voima on ilman vyötä?",
+        "choices": [
+          {
+            "text": "Noin kymmenkertainen.",
+            "correct": true,
+            "feedback": "Oikein. Liikemäärän muutos $m\\,\\Delta v$ on sama, noin $1040\\,\\text{kg}\\cdot\\text{m/s}$. Impulssiperiaatteen mukaan myös $F_\\text{ka}\\,\\Delta t$ on siis sama. Kymmenesosa ajasta tarkoittaa kymmenkertaista voimaa: noin $10\\,\\text{kN}$ ja $100\\,\\text{kN}$."
+          },
+          {
+            "text": "Yhtä suuri, koska nopeuden muutos on sama.",
+            "feedback": "Sama nopeuden muutos tarkoittaa samaa liikemäärän muutosta. Se tarkoittaa samaa impulssia $F_\\text{ka}\\,\\Delta t$. Kun aika on kymmenesosa, voiman täytyy olla kymmenkertainen."
+          },
+          {
+            "text": "Noin kymmenesosa, koska törmäys kestää lyhyemmän ajan.",
+            "feedback": "Lyhyt aika ei pienennä voimaa. Se suurentaa voimaa. Saman liikemäärän muutoksen täytyy syntyä kymmenesosassa ajasta. Siksi voima on kymmenkertainen."
+          },
+          {
+            "text": "Noin satakertainen.",
+            "feedback": "Voima on kääntäen verrannollinen aikaan, ei ajan neliöön. Aika on kymmenesosa. Siksi voima on kymmenkertainen."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tilasto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mitä tilastot kertovat turvavyöstä?",
+      "optional": true,
+      "source": "statistics",
+      "source_note": "Onnettomuustietoinstituutti (OTI): OTI-Turvavyöraportti 2023, tieliikenneonnettomuuksien tutkijalautakuntien tutkimat kuolemaan johtaneet onnettomuudet 2017–2021; Liikenneturva: turvavyön käytön seuranta 2024 (Taloustaito 2025).",
+      "text": "Tieliikenneonnettomuuksien tutkijalautakunnat tutkivat jokaisen kuolemaan johtaneen onnettomuuden. Taulukossa ovat henkilö- ja pakettiautoissa kuolleet vuosina 2017–2021. Luvut on jaettu sen mukaan, oliko turvavyö kiinni. Liikenneturvan seurannassa vuonna 2024 etupenkillä istuvista vyötä käytti taajamien ulkopuolella $98\\,\\%$ ja taajamissa $97\\,\\%$.\n\n| Kuolleet 2017–2021 | Lukumäärä |\n|---|---|\n| turvavyö kiinni | $278$ |\n| ilman turvavyötä | $198$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä aineistosta voi päätellä hyvin perustein?",
+        "choices": [
+          {
+            "text": "Vyöttömien osuus kuolleista on monta kertaa suurempi kuin heidän osuutensa liikenteessä.",
+            "correct": true,
+            "feedback": "Oikein: vyöttömiä on liikenteessä muutama prosentti, mutta kuolleista $198 : 476 \\approx 42\\,\\%$. Huomaa kuitenkin kaksi asiaa. Luvut ovat eri vuosilta. Vyöttömät ajavat muutenkin muita useammin riskialttiisti, joten koko eroa ei voi laskea vyön ansioksi. Tutkijalautakunnat arvioivat silti, että $114$ vyötöntä olisi voinut selvitä vyön kanssa."
+          },
+          {
+            "text": "Turvavyö ei juuri auta, koska suurin osa kuolleista käytti turvavyötä.",
+            "feedback": "Suurin osa kuolleista käytti vyötä, koska lähes kaikki autoilijat käyttävät vyötä. Siksi pitää verrata osuuksia. Liikenteessä vyöttömiä on muutama prosentti, mutta kuolleista $198 : 476 \\approx 42\\,\\%$."
+          },
+          {
+            "text": "Noin $42\\,\\%$ suomalaisista autoilijoista ajaa yhä ilman turvavyötä.",
+            "feedback": "$42\\,\\%$ on vyöttömien osuus kuolleista, ei kaikista autoilijoista. Liikenneturvan seurannassa vyötä käytti etupenkillä $97$–$98\\,\\%$. Liikenteessä vyöttömiä on siis vain muutama prosentti."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Käytä omia mittauksiasi. Selitä, miten pysähtymismatka riippuu nopeudesta. Selitä myös, miksi $10\\,\\text{km/h}$ suurempi nopeus voi muuttaa pysähtymisen törmäykseksi ja miksi törmäysnopeus on silloin yllättävän suuri.",
+      "criteria": [
+        "Vastaus erottaa reaktiomatkan ja jarrutusmatkan. Se kertoo, että nopeuden kaksinkertaistuessa reaktiomatka kaksinkertaistuu ja jarrutusmatka nelinkertaistuu.",
+        "Vastauksessa on omia lukuja, esimerkiksi $s_\\text{j}$ $10{,}7\\,\\text{m}$ ja $42{,}9\\,\\text{m}$ nopeuksilla $50$ ja $100\\,\\text{km/h}$.",
+        "Vastaus selittää, että suuremmalla nopeudella reaktiomatka vie suuremman osan matkasta esteeseen. Jarrutukseen jää siksi liian vähän matkaa.",
+        "Vastaus kertoo kokeen 2 törmäysnopeuden, noin $41\\,\\text{km/h}$. Se sanoo myös, että luvut ovat mallin arvoja."
+      ],
+      "model": "Kokeessa 1 reaktiomatka kasvoi suoraan nopeuden mukana. Mallin arvoissa se kasvoi $13{,}9\\,\\text{m}$:stä $27{,}8\\,\\text{m}$:iin, kun nopeus kasvoi $50\\,\\text{km/h}$:sta $100\\,\\text{km/h}$:iin. Jarrutusmatka kasvoi $10{,}7\\,\\text{m}$:stä $42{,}9\\,\\text{m}$:iin eli nelinkertaiseksi. Kaksinkertaisen nopeuden poistaminen kestää nimittäin kaksi kertaa kauemmin, ja auto liikkuu sen ajan kaksi kertaa nopeammin. Pysähtymismatka kasvoi $24{,}6\\,\\text{m}$:stä $70{,}6\\,\\text{m}$:iin. Kokeessa 2 auto pysähtyi $50\\,\\text{km/h}$:n nopeudesta ennen $25\\,\\text{m}$:n päässä olevaa autoa. Nopeudesta $60\\,\\text{km/h}$ reaktiomatka oli jo $16{,}7\\,\\text{m}$, ja jarrutukseen jäi noin $8\\,\\text{m}$. Auto törmäsi noin $41\\,\\text{km/h}$:n nopeudella."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin ja teoriaan. Mikä yllätti eniten? Kirjoita omin sanoin kaksi asiaa. Miksi pieni nopeuden lisäys voi olla ratkaiseva? Miksi turvavyö pienentää voimaa, vaikka liikemäärän muutos on sama?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee jarrutusmatkan. Auton nopeus on $50\\,\\text{km/h}$ ja hidastuvuus $9{,}0\\,\\text{m/s}^2$. Opiskelijan lasku: $s_\\text{j} = \\dfrac{v_0^2}{2a} = \\dfrac{50^2}{2 \\cdot 9{,}0}\\,\\text{m} \\approx 139\\,\\text{m}$. Tulos on yli kymmenen kertaa suurempi kuin Liikenneturvan laskurin tulos. Mikä laskussa on väärin?",
+      "choices": [
+        {
+          "text": "Nopeutta ei ole muutettu yksikköön $\\text{m/s}$ ennen sijoitusta.",
+          "correct": true,
+          "feedback": "Oikein. $50\\,\\text{km/h} \\approx 13{,}9\\,\\text{m/s}$, ja $s_\\text{j} = \\dfrac{(13{,}9\\,\\text{m/s})^2}{2 \\cdot 9{,}0\\,\\text{m/s}^2} \\approx 10{,}7\\,\\text{m}$. Yksiköt näyttävät virheen: $\\tfrac{(\\text{km/h})^2}{\\text{m/s}^2}$ ei ole metri."
+        },
+        {
+          "text": "Kaavasta puuttuu reaktiomatka $v_0\\,t_\\text{r}$.",
+          "feedback": "Reaktiomatka kuuluu pysähtymismatkaan. Tässä kysytään kuitenkin vain jarrutusmatkaa. Reaktiomatkan lisääminen myös kasvattaisi tulosta, joka on jo liian suuri. Virhe on yksikössä: nopeus on sijoitettu yksikössä $\\text{km/h}$."
+        },
+        {
+          "text": "Kaavan pitäisi olla $s_\\text{j} = \\dfrac{v_0}{2a}$ ilman neliötä.",
+          "feedback": "Neliö kuuluu kaavaan. Jarrutusmatka on $(t,v)$-kuvaajan kolmion ala $\\tfrac{1}{2}\\,v_0\\,\\tfrac{v_0}{a}$. Ilman neliötä yksikkö ei olisi metri. Virhe on se, että nopeus on yksikössä $\\text{km/h}$."
+        },
+        {
+          "text": "Hidastuvuus pitäisi sijoittaa negatiivisena, $-9{,}0\\,\\text{m/s}^2$.",
+          "feedback": "Kaavassa $a$ on hidastuvuus eli kiihtyvyyden suuruus. Siksi se on positiivinen. Negatiivinen arvo antaisi negatiivisen matkan. Virhe on se, että nopeus on yksikössä $\\text{km/h}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "optional": true,
+      "prompt": "On syysilta ja pimeää. Auto ajaa märällä tiellä nopeudella $80\\,\\text{km/h}$. Hirvi astuu tielle $45\\,\\text{m}$ auton eteen. Kuljettajan reaktioaika on $1{,}0\\,\\text{s}$. Auton hidastuvuus märällä tiellä on $6{,}0\\,\\text{m/s}^2$. Millä nopeudella auto osuu hirveen? Vastaa yksikössä $\\text{km/h}$.",
+      "answer": 53.4565,
+      "unit": "km/h",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin reaktiomatka. Kuinka paljon matkaa jää jarrutukseen ennen hirveä?",
+        "Oletetaan, että auton nopeus hirven kohdalla on $v$. Silloin pysähtyminen vaatisi vielä matkan $\\dfrac{v^2}{2a}$. Koko jarrutusmatka $\\dfrac{v_0^2}{2a}$ on siis hirveen asti jarrutettu matka plus $\\dfrac{v^2}{2a}$.",
+        "Reaktiomatka on $22{,}2\\,\\text{m}$. Jarrutukseen jää siis $22{,}8\\,\\text{m}$. Ratkaise $v^2 = v_0^2 - 2a \\cdot 22{,}8\\,\\text{m}$. Muunna tulos yksikköön $\\text{km/h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 80,
+          "feedback": "Auto ehtii jarruttaa, koska reaktiomatka $22{,}2\\,\\text{m}$ on lyhyempi kuin $45\\,\\text{m}$. Jarrutukseen jää $22{,}8\\,\\text{m}$. Jarrutus pienentää nopeutta."
+        },
+        {
+          "value": 0,
+          "feedback": "Tarkista, pysähtyykö auto. Pysähtymismatka on $22{,}2\\,\\text{m} + 41{,}2\\,\\text{m} \\approx 63\\,\\text{m}$. Se on enemmän kuin $45\\,\\text{m}$. Auto siis osuu hirveen. Nopeus lasketaan jarrutetun matkan $22{,}8\\,\\text{m}$ avulla."
+        },
+        {
+          "value": 14.85,
+          "feedback": "Laskusi on oikein, mutta tulos on yksikössä $\\text{m/s}$. Kerro tulos luvulla $3{,}6$. Silloin saat nopeuden yksikössä $\\text{km/h}$."
+        }
+      ],
+      "solution": "**Annettu:** $v_0 = 80\\,\\text{km/h}$, reaktioaika $t_\\text{r} = 1{,}0\\,\\text{s}$, hidastuvuus märällä tiellä $a = 6{,}0\\,\\text{m/s}^2$, hirven etäisyys $d = 45\\,\\text{m}$\n\n**Kysytty:** auton nopeus $v$ hirven kohdalla yksikössä $\\text{km/h}$\n\n**Periaate:** Reaktioajan auto liikkuu tasaisella nopeudella. Reaktiomatka on siksi $v_0\\,t_\\text{r}$. Sen jälkeen hidastuvuus on vakio. Pysähtymismatka $22{,}2\\,\\text{m} + 41{,}2\\,\\text{m} \\approx 63\\,\\text{m}$ on yli $45\\,\\text{m}$, joten auto ei pysähdy. Nopeudesta $v$ pysähtyminen vaatisi vielä jarrutusmatkan $\\dfrac{v^2}{2a}$. Koko jarrutusmatka on siis hirveen asti jarrutettu matka plus tämä jäljelle jäävä matka.\n\n**Kaava:** $\\dfrac{v_0^2}{2a} = (d - v_0\\,t_\\text{r}) + \\dfrac{v^2}{2a}$, josta $v = \\sqrt{v_0^2 - 2a\\,(d - v_0\\,t_\\text{r})}$\n\n**Muunnokset:** $80\\,\\text{km/h} = \\dfrac{80 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 22{,}22\\,\\text{m/s}$. Vastaus muunnetaan lopuksi takaisin: $1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$.\n\n**Sijoitus:** $d - v_0\\,t_\\text{r} = 45\\,\\text{m} - 22{,}22\\,\\text{m} = 22{,}78\\,\\text{m}$ ja $v^2 = (22{,}22\\,\\text{m/s})^2 - 2 \\cdot 6{,}0\\,\\text{m/s}^2 \\cdot 22{,}78\\,\\text{m} = 220{,}5\\,\\text{m}^2/\\text{s}^2$, joten $v = \\sqrt{220{,}5}\\,\\text{m/s} \\approx 14{,}85\\,\\text{m/s} \\approx 53{,}5\\,\\text{km/h}$\n\n**Vastaus:** $53\\,\\text{km/h}$, kaksi merkitsevää numeroa, kuten reaktioajassa $1{,}0\\,\\text{s}$, hidastuvuudessa $6{,}0\\,\\text{m/s}^2$ ja etäisyydessä $45\\,\\text{m}$.\n\n**Järkevyys:** Nopeus on pienempi kuin $80\\,\\text{km/h}$ mutta yli puolet siitä. Auto ehtii jarruttaa vain noin $23\\,\\text{m}$, ja se on alle puolet tarvittavasta $41\\,\\text{m}$:n jarrutusmatkasta. Kuivalla tiellä ($9{,}0\\,\\text{m/s}^2$) auto olisi pysähtynyt $49{,}7\\,\\text{m}$:ssä ja törmännyt silti, mutta paljon hitaammin."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Muunna nopeus ensin yksikköön $\\text{m/s}$. Erota reaktiomatka ja jarrutusmatka. Ratkaise kysytty suure symbolein ennen sijoittamista. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kuljettaja ajaa kuivalla tiellä nopeudella $70\\,\\text{km/h}$, ei $50\\,\\text{km/h}$. Nopeus on siis $40\\,\\%$ suurempi. Hidastuvuus on sama. Kuinka paljon jarrutusmatka kasvaa?",
+      "choices": [
+        {
+          "text": "Se lähes kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Oikein. Jarrutusmatka on verrannollinen nopeuden neliöön: $\\left(\\tfrac{70}{50}\\right)^2 = 1{,}4^2 = 1{,}96$. Nopeus kasvaa $40\\,\\%$, mutta jarrutusmatka kasvaa lähes $100\\,\\%$."
+        },
+        {
+          "text": "Se kasvaa $40\\,\\%$.",
+          "feedback": "Näin kasvaa reaktiomatka. Se on verrannollinen nopeuteen. Jarrutusmatka on verrannollinen nopeuden neliöön: $1{,}4^2 = 1{,}96$. Jarrutusmatka siis lähes kaksinkertaistuu."
+        },
+        {
+          "text": "Se pysyy samana, koska jarrut ja tie ovat samat.",
+          "feedback": "Sama hidastuvuus poistaa joka sekunti saman määrän nopeutta. Suuremman nopeuden poistaminen kestää siksi kauemmin. Sen ajan auto myös liikkuu nopeammin. Jarrutusmatka kertautuu luvulla $1{,}4^2 \\approx 2$."
+        },
+        {
+          "text": "Se kasvaa $20\\,\\%$.",
+          "feedback": "Jarrutusmatka ei kasva hitaammin kuin nopeus vaan nopeammin. Se on verrannollinen nopeuden neliöön: $1{,}4^2 = 1{,}96$."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Lumisella tiellä auton hidastuvuus jarrutuksessa on $3{,}0\\,\\text{m/s}^2$. Kuljettaja ajaa nopeudella $60\\,\\text{km/h}$. Hänen reaktioaikansa on $1{,}0\\,\\text{s}$. Kuinka pitkä on auton pysähtymismatka? Vastaa metreinä.",
+      "answer": 62.963,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Pysähtymismatka on kahden matkan summa. Mitkä nämä kaksi matkaa ovat?",
+        "Muunna nopeus yksikköön $\\text{m/s}$. Käytä kaavaa $s_\\text{p} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$.",
+        "$v_0 \\approx 16{,}67\\,\\text{m/s}$, joten reaktiomatka on $16{,}7\\,\\text{m}$. Laske sitten jarrutusmatka."
+      ],
+      "mistakes": [
+        {
+          "value": 46.296,
+          "feedback": "Tämä on jarrutusmatka. Pysähtymismatkaan kuuluu myös reaktiomatka $v_0\\,t_\\text{r} \\approx 16{,}7\\,\\text{m}$. Sen auto kulkee ennen kuin jarrut alkavat toimia."
+        },
+        {
+          "value": 660,
+          "feedback": "Nopeus on sijoitettu yksikössä $\\text{km/h}$. Muunna nopeus ensin: $60\\,\\text{km/h} \\approx 16{,}67\\,\\text{m/s}$."
+        },
+        {
+          "value": 16.667,
+          "feedback": "Tämä on reaktiomatka. Lisää siihen vielä jarrutusmatka $\\dfrac{v_0^2}{2a}$."
+        }
+      ],
+      "solution": "**Annettu:** $v_0 = 60\\,\\text{km/h}$, reaktioaika $t_\\text{r} = 1{,}0\\,\\text{s}$, hidastuvuus lumisella tiellä $a = 3{,}0\\,\\text{m/s}^2$\n\n**Kysytty:** pysähtymismatka $s_\\text{p}$ yksikössä $\\text{m}$\n\n**Periaate:** Reaktioajan auto liikkuu tasaisella nopeudella. Reaktiomatka on siksi nopeus kertaa aika. Sitten auto hidastuu vakiohidastuvuudella, kun tie on vaakasuora ja ilmanvastus jätetään huomiotta. Silloin jarrutusmatka on $(t,v)$-kuvaajan kolmion ala. Pysähtymismatka on niiden summa.\n\n**Kaava:** $s_\\text{p} = s_\\text{r} + s_\\text{j}$, joten $s_\\text{p} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}$\n\n**Muunnokset:** $60\\,\\text{km/h} = \\dfrac{60 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 16{,}67\\,\\text{m/s}$\n\n**Sijoitus:** $s_\\text{p} = 16{,}67\\,\\text{m/s} \\cdot 1{,}0\\,\\text{s} + \\dfrac{(16{,}67\\,\\text{m/s})^2}{2 \\cdot 3{,}0\\,\\text{m/s}^2} = 16{,}67\\,\\text{m} + 46{,}30\\,\\text{m} = 62{,}96\\,\\text{m}$\n\n**Vastaus:** $63\\,\\text{m}$, kaksi merkitsevää numeroa, kuten reaktioajassa $1{,}0\\,\\text{s}$ ja hidastuvuudessa $3{,}0\\,\\text{m/s}^2$.\n\n**Järkevyys:** Kuivalla tiellä ($9{,}0\\,\\text{m/s}^2$) jarrutusmatka olisi kolmasosa, noin $15\\,\\text{m}$. Pysähtymismatka olisi noin $32\\,\\text{m}$. Lumella hidastuvuus on kolmasosa, joten jarrutusmatka on kolminkertainen. Tulos sopii tähän. Reaktiomatka ei riipu tien kunnosta."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Matkustaja pysähtyy nokkakolarissa samasta nopeudesta, oli hänellä turvavyö ja turvatyyny tai ei. Selitä impulssiperiaatteen avulla, miksi turvavyö ja turvatyyny silti pienentävät voimaa, joka kohdistuu matkustajaan. Kerro myös, miksi turvatyyny ei korvaa turvavyötä.",
+      "criteria": [
+        "Vastaus kertoo, että matkustajan liikemäärän muutos $m\\,\\Delta v$ on sama vyön kanssa ja ilman. Nopeus muuttuu kummassakin tapauksessa samasta arvosta nollaan.",
+        "Vastaus käyttää impulssiperiaatetta $F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$. Pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa.",
+        "Vastaus kertoo, miten vyö pidentää aikaa: matkustaja hidastuu auton rypistyvän keulan mukana. Hän ei osu sisustaan täydellä nopeudella.",
+        "Vastaus mainitsee, että turvatyyny jakaa voiman suurelle alalle. Vastaus kertoo myös, että turvatyyny toimii oikein vain, kun vyö pitää matkustajan paikallaan."
+      ],
+      "model": "Matkustaja pysähtyy samasta nopeudesta, joten hänen liikemääränsä muuttuu arvosta $mv$ nollaan kummassakin tapauksessa. Impulssiperiaatteen mukaan $F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$. Sama liikemäärän muutos syntyy sitä pienemmällä keskimääräisellä voimalla, mitä pidempi törmäysaika on. Vyö kiinnittää matkustajan autoon, ja hän hidastuu auton rypistyvän keulan mukana noin sekunnin kymmenesosassa. Ilman vyötä hän jatkaa liikettään ja pysähtyy kojelautaan tai tuulilasiin noin sadasosasekunnissa. Silloin voima on noin kymmenkertainen. Turvatyyny pidentää pään ja ylävartalon pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon pienenee. Se on tehty vyöhön kiinnitetylle matkustajalle. Ilman vyötä keho liukuu eteenpäin, ja se voi osua täyttyvään tyynyyn liian aikaisin tai sen ohi. Mikään ei myöskään pidä matkustajaa autossa."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

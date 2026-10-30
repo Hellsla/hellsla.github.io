@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A sled slides down a straight slope. Why does the normal force of the snow do no work on the sled, although it is a large force?",
+    "a": "The normal force is perpendicular to the slope and so to the motion of the sled. Only the component of the force along the motion does work, $W = F_\\parallel s$, and for the normal force it is zero. The normal force does act indirectly, however, because the kinetic friction is $\\mu N$."
+  },
+  {
+    "q": "When do you choose the equation of motion and when the work–energy principle? Give one example of each from the situations of this chapter.",
+    "a": "The equation of motion $\\Sigma\\overline{F} = m\\overline{a}$ fits when the question is about a force or an acceleration at some moment, for example the reading of a scale in an accelerating lift. The work–energy principle fits when the question is about the speed at some point or the change in energy over a distance, for example the speed of a sled at the foot of a slope. In both you start from the free-body diagram."
+  },
+  {
+    "q": "Why does the horizontal distance from the top to the stopping point of a sled starting from rest not depend on the mass of the sled?",
+    "a": "The work $mgh$ done by the weight and the work $-\\mu mgx$ done by friction are both proportional to the mass. In the work–energy principle $mgh - \\mu mgx = 0$ the mass cancels, and $x = h/\\mu$, when the coefficient of friction is the same all the way and air resistance is ignored."
+  }
+]

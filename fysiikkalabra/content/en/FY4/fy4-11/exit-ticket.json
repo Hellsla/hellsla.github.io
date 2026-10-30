@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A driver drives at $72\\,\\text{km/h}$ and looks at their phone for $2.0\\,\\text{s}$. How far does the car travel while the driver is not looking at the road?",
+    "a": "$72\\,\\text{km/h} = 20\\,\\text{m/s}$, so the car travels $20\\,\\text{m/s} \\cdot 2.0\\,\\text{s} = 40\\,\\text{m}$. If danger appears during that time, the whole distance is added to the reaction distance before braking can begin."
+  },
+  {
+    "q": "A loose $10\\,\\text{kg}$ bag lies on the back seat. Why is it dangerous in a frontal collision?",
+    "a": "When the car stops, nothing slows the bag down, so it keeps moving according to Newton's first law. It stops only when it hits the front seat or a passenger in a very short time. Its momentum is large, and the short stopping time makes the force many times the weight of the bag."
+  },
+  {
+    "q": "Why does the stopping distance not halve when the braking distance halves after the tyres are changed to ones with better grip?",
+    "a": "Better tyres increase the deceleration and therefore shorten only the braking distance. The reaction distance $v_0\\,t_\\text{r}$ depends on the speed and the reaction time, not on the tyres, so it stays the same."
+  }
+]

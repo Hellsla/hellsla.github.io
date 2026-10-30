@@ -1,0 +1,20 @@
+{
+  "id": "fy4-9",
+  "course": "FY4",
+  "title": "Liikemäärä ja impulssi",
+  "goals": [
+    "LOPS FY4: liikemäärä, impulssi",
+    "Aiheiden tarkastelu: urheilu, liikenne"
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "liikemäärä",
+    "impulssi",
+    "impulssiperiaate"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

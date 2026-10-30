@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Kuljettaja ajaa $72\\,\\text{km/h}$ ja katsoo puhelintaan $2{,}0\\,\\text{s}$. Kuinka pitkän matkan auto kulkee sinä aikana, kun kuljettaja ei katso tietä?",
+    "a": "$72\\,\\text{km/h} = 20\\,\\text{m/s}$, joten auto kulkee $20\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} = 40\\,\\text{m}$. Jos vaara ilmaantuu sinä aikana, koko matka lisätään reaktiomatkaan ennen kuin jarrutus voi alkaa."
+  },
+  {
+    "q": "Takapenkillä on irrallaan $10\\,\\text{kg}$:n laukku. Miksi se on vaarallinen nokkakolarissa?",
+    "a": "Kun auto pysähtyy, mikään ei hidasta laukkua, joten se jatkaa liikettään Newtonin ensimmäisen lain mukaan. Se pysähtyy vasta osuessaan etupenkkiin tai matkustajaan hyvin lyhyessä ajassa. Sen liikemäärä on suuri, ja lyhyt pysähtymisaika tekee voimasta moninkertaisen laukun painoon verrattuna."
+  },
+  {
+    "q": "Miksi pysähtymismatka ei puolitu, vaikka jarrutusmatka puolittuu, kun renkaat vaihdetaan paremmin pitäviin?",
+    "a": "Paremmat renkaat kasvattavat hidastuvuutta ja lyhentävät siksi vain jarrutusmatkaa. Reaktiomatka $v_0\\,t_\\text{r}$ riippuu nopeudesta ja reaktioajasta, ei renkaista, joten se pysyy samana."
+  }
+]

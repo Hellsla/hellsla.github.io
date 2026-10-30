@@ -1,0 +1,25 @@
+{
+  "id": "fy4-11",
+  "course": "FY4",
+  "title": "Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny",
+  "goals": [
+    "LOPS FY4: tuntee voimaan ja liikkeeseen liittyviä turvallisuusnäkökohtia",
+    "Temaattinen tarkastelu: liikenneturvallisuus; jarrutukseen ja pysähtymiseen tarvittava matka ja aika; turvavyön ja -tyynyn merkitys törmäystilanteissa",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy4-6",
+    "fy4-10"
+  ],
+  "glossary": [
+    "reaktioaika",
+    "reaktiomatka",
+    "jarrutusmatka",
+    "pysähtymismatka",
+    "turvavyö",
+    "törmäysaika"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

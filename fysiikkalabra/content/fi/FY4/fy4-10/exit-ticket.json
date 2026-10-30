@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Millä ehdolla kahden törmäävän kappaleen kokonaisliikemäärä säilyy? Miksi ehto täyttyy usein, vaikka kappaleisiin vaikuttaisi kitka?",
+    "a": "Kokonaisliikemäärä säilyy, kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni. Törmäys kestää hyvin lyhyen ajan, ja törmäysvoimat ovat silloin paljon suurempia kuin kitka, joten kitkan impulssi $F\\,\\Delta t$ jää pieneksi."
+  },
+  {
+   "q": "Ilmakivääri on levossa, kun luoti ammutaan. Mikä on kiväärin ja luodin kokonaisliikemäärä heti laukauksen jälkeen, ja miksi kivääri liikkuu taaksepäin?",
+    "a": "Kokonaisliikemäärä on nolla kuten ennen laukausta, koska laukauksen lyhyen ajan ulkoisten voimien impulssi on merkityksettömän pieni ja vain sisäiset voimat muuttavat liikemääriä. Laukaus on räjähdys. Luoti saa liikemäärän eteenpäin, joten kivääri saa yhtä suuren liikemäärän taaksepäin. Kiväärin nopeus on pieni, koska sen massa on paljon suurempi kuin luodin."
+  }
+]
