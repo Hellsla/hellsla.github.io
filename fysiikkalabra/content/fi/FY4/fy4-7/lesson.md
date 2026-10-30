@@ -2,207 +2,135 @@
 
 > **Miksi** kaksi kertaa nopeampi rullalautailija nousee rampissa neljä kertaa korkeammalle?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: rullalautailija skeittiparkissa kesäpäivänä. Lautailija on piirretty kolmeen kohtaan: tasaisella maalla rampin edessä hänellä on pitkä sininen nopeusnuoli, ramppia ylös noustessa kolmen neljäsosan korkeudella nuoli on puolet lyhyempi, ja ylimpänä hän on hetken paikallaan ilman nuolta. Vasemmalla oleva mittatikku näyttää korkeudet: alempi sävytetty osa on kolme neljäsosaa koko noususta ja ylempi vain neljäsosa, vaikka nopeudesta kului kummassakin puolet. Nuolten pituudet ja korkeudet ovat mittakaavassa." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy47h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy47h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy47h-ground" gradientUnits="userSpaceOnUse" x1="0" y1="360" x2="0" y2="600"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy47h-ply" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy47h-coping" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: rullalautailija skeittiparkissa. Lautailija on piirretty kolmeen kohtaan: tasaisella maalla rampin edessä hänestä lähtee pitkä sininen nopeusnuoli v, kolmen neljäsosan korkeudella rampissa nuoli on puolet lyhyempi, v/2, ja ylimpänä hän on hetken paikallaan, v = 0. Rampin kyljessä oleva mittajana näyttää korkeudet: puolet nopeudesta kuluu kolmen neljäsosan nousuun 3/4 h, toinen puolikas vain viimeiseen neljäsosaan 1/4 h. Nuolten pituudet (2 : 1 : 0) ja korkeudet ovat mittakaavassa." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy47h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy47h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy47h-ground" gradientUnits="userSpaceOnUse" x1="0" y1="380" x2="0" y2="600"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy47h-ply" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy47h-coping" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="420" fill="url(#fy47h-sky)"/>
-  <circle cx="1080" cy="86" r="67" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="1080" cy="86" r="42" fill="url(#fy47h-sun)"/>
-  <path d="M178,106 Q176.5,79 208.5,82 Q221,53 253,63 Q282,47 298,77 Q327,80.5 323.5,106 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M650.5,71 Q649.5,52.5 671.5,54.5 Q680,34.5 702,41.5 Q722,30.5 733,51 Q753,53.5 750.5,71 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M484,148 Q483,134.5 499,136 Q505.5,121.5 521.5,126.5 Q536,118.5 544,133.5 Q558.5,135 557,148 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="28" y="235" width="93.5" height="105" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="40" y="249" width="16" height="18" fill="#eef5f9"/>
-  <rect x="70" y="249" width="16" height="18" fill="#eef5f9"/>
-  <rect x="40" y="281" width="16" height="18" fill="#eef5f9"/>
-  <rect x="70" y="281" width="16" height="18" fill="#eef5f9"/>
-  <rect x="164.5" y="226" width="93" height="114" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="176.5" y="240" width="16" height="18" fill="#eef5f9"/>
-  <rect x="206.5" y="240" width="16" height="18" fill="#eef5f9"/>
-  <rect x="176.5" y="272" width="16" height="18" fill="#eef5f9"/>
-  <rect x="206.5" y="272" width="16" height="18" fill="#eef5f9"/>
-  <rect x="176.5" y="304" width="16" height="18" fill="#eef5f9"/>
-  <rect x="206.5" y="304" width="16" height="18" fill="#eef5f9"/>
-  <rect x="293" y="230" width="117" height="110" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="305" y="244" width="16" height="18" fill="#eef5f9"/>
-  <rect x="335" y="244" width="16" height="18" fill="#eef5f9"/>
-  <rect x="365" y="244" width="16" height="18" fill="#eef5f9"/>
-  <rect x="305" y="276" width="16" height="18" fill="#eef5f9"/>
-  <rect x="335" y="276" width="16" height="18" fill="#eef5f9"/>
-  <rect x="365" y="276" width="16" height="18" fill="#eef5f9"/>
-  <rect x="443" y="167" width="106" height="173" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="455" y="181" width="16" height="18" fill="#eef5f9"/>
-  <rect x="485" y="181" width="16" height="18" fill="#eef5f9"/>
-  <rect x="515" y="181" width="16" height="18" fill="#eef5f9"/>
-  <rect x="455" y="213" width="16" height="18" fill="#eef5f9"/>
-  <rect x="485" y="213" width="16" height="18" fill="#eef5f9"/>
-  <rect x="515" y="213" width="16" height="18" fill="#eef5f9"/>
-  <rect x="455" y="245" width="16" height="18" fill="#eef5f9"/>
-  <rect x="485" y="245" width="16" height="18" fill="#eef5f9"/>
-  <rect x="515" y="245" width="16" height="18" fill="#eef5f9"/>
-  <rect x="455" y="277" width="16" height="18" fill="#eef5f9"/>
-  <rect x="485" y="277" width="16" height="18" fill="#eef5f9"/>
-  <rect x="515" y="277" width="16" height="18" fill="#eef5f9"/>
-  <rect x="566.5" y="222" width="113.5" height="118" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="578.5" y="236" width="16" height="18" fill="#eef5f9"/>
-  <rect x="608.5" y="236" width="16" height="18" fill="#eef5f9"/>
-  <rect x="638.5" y="236" width="16" height="18" fill="#eef5f9"/>
-  <rect x="578.5" y="268" width="16" height="18" fill="#eef5f9"/>
-  <rect x="608.5" y="268" width="16" height="18" fill="#eef5f9"/>
-  <rect x="638.5" y="268" width="16" height="18" fill="#eef5f9"/>
-  <rect x="578.5" y="300" width="16" height="18" fill="#eef5f9"/>
-  <rect x="608.5" y="300" width="16" height="18" fill="#eef5f9"/>
-  <rect x="638.5" y="300" width="16" height="18" fill="#eef5f9"/>
-  <rect x="707" y="223" width="101.5" height="117" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="719" y="237" width="16" height="18" fill="#eef5f9"/>
-  <rect x="749" y="237" width="16" height="18" fill="#eef5f9"/>
-  <rect x="719" y="269" width="16" height="18" fill="#eef5f9"/>
-  <rect x="749" y="269" width="16" height="18" fill="#eef5f9"/>
-  <rect x="719" y="301" width="16" height="18" fill="#eef5f9"/>
-  <rect x="749" y="301" width="16" height="18" fill="#eef5f9"/>
-  <rect x="832.5" y="179" width="112.5" height="161" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="844.5" y="193" width="16" height="18" fill="#eef5f9"/>
-  <rect x="874.5" y="193" width="16" height="18" fill="#eef5f9"/>
-  <rect x="904.5" y="193" width="16" height="18" fill="#eef5f9"/>
-  <rect x="844.5" y="225" width="16" height="18" fill="#eef5f9"/>
-  <rect x="874.5" y="225" width="16" height="18" fill="#eef5f9"/>
-  <rect x="904.5" y="225" width="16" height="18" fill="#eef5f9"/>
-  <rect x="844.5" y="257" width="16" height="18" fill="#eef5f9"/>
-  <rect x="874.5" y="257" width="16" height="18" fill="#eef5f9"/>
-  <rect x="904.5" y="257" width="16" height="18" fill="#eef5f9"/>
-  <rect x="844.5" y="289" width="16" height="18" fill="#eef5f9"/>
-  <rect x="874.5" y="289" width="16" height="18" fill="#eef5f9"/>
-  <rect x="904.5" y="289" width="16" height="18" fill="#eef5f9"/>
-  <rect x="947.5" y="156" width="91.5" height="184" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="959.5" y="170" width="16" height="18" fill="#eef5f9"/>
-  <rect x="989.5" y="170" width="16" height="18" fill="#eef5f9"/>
-  <rect x="959.5" y="202" width="16" height="18" fill="#eef5f9"/>
-  <rect x="989.5" y="202" width="16" height="18" fill="#eef5f9"/>
-  <rect x="959.5" y="234" width="16" height="18" fill="#eef5f9"/>
-  <rect x="989.5" y="234" width="16" height="18" fill="#eef5f9"/>
-  <rect x="959.5" y="266" width="16" height="18" fill="#eef5f9"/>
-  <rect x="989.5" y="266" width="16" height="18" fill="#eef5f9"/>
-  <rect x="959.5" y="298" width="16" height="18" fill="#eef5f9"/>
-  <rect x="989.5" y="298" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1101.5" y="179.5" width="115" height="160.5" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1113.5" y="193.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1143.5" y="193.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1173.5" y="193.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1113.5" y="225.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1143.5" y="225.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1173.5" y="225.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1113.5" y="257.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1143.5" y="257.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1173.5" y="257.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1113.5" y="289.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1143.5" y="289.5" width="16" height="18" fill="#eef5f9"/>
-  <rect x="1173.5" y="289.5" width="16" height="18" fill="#eef5f9"/>
-  <path d="M0,340 L10.5,314 L21.5,340 L37,298.5 L52.5,340 L66,305.5 L79,340 L88.5,318.5 L98,340 L108,316.5 L118,340 L129,312.5 L140,340 L157,294.5 L173.5,340 L186,308.5 L198.5,340 L207.5,319 L216.5,340 L229.5,306.5 L242.5,340 L256.5,304.5 L270,340 L284.5,300.5 L299.5,340 L313.5,303.5 L327.5,340 L337,319 L346,340 L358.5,308.5 L371,340 L382.5,310.5 L394.5,340 L405.5,313 L416.5,340 L429.5,307.5 L442,340 L453.5,311 L465.5,340 L481.5,296.5 L497.5,340 L513,298.5 L528.5,340 L541,308.5 L553.5,340 L570,295 L586.5,340 L599,308.5 L611.5,340 L626.5,299.5 L642,340 L654.5,308 L667,340 L684,294.5 L700.5,340 L712.5,309 L725,340 L738.5,305.5 L752,340 L765,305 L778.5,340 L789.5,313 L800.5,340 L813,309 L825,340 L842,294.5 L858.5,340 L867.5,319.5 L877,340 L892.5,298 L908,340 L922,303 L936.5,340 L951,300.5 L966,340 L977,312.5 L988.5,340 L1002,305 L1015.5,340 L1026,313.5 L1037,340 L1052.5,299 L1068,340 L1080.5,308 L1093,340 L1106.5,304.5 L1120.5,340 L1132,311.5 L1143.5,340 L1153.5,315.5 L1164,340 L1180,297 L1196,340 L1210,302 L1224.5,340 V360 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <rect x="1145" y="202" width="10" height="170" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1145" y="351.5" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1150" y="331" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1145" y="311" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1150" y="290.5" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1145" y="270" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1150" y="249.5" width="5" height="2.5" fill="#1f2933"/>
-  <rect x="1145" y="229" width="5" height="2.5" fill="#1f2933"/>
-  <line x1="1150" y1="266.5" x2="1119.5" y2="246" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="1150" y1="244.5" x2="1180.5" y2="224" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="1150" y1="227.5" x2="1119.5" y2="207" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="1150" cy="210.5" r="34" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="1124.5" cy="236" r="27" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="1175.5" cy="232.5" r="29" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="1150" cy="249.5" r="25.5" fill="#2b8a3e" fill-opacity="0.85"/>
-  <rect x="295.5" y="359" width="9" height="13" fill="#b8622d"/>
-  <path d="M260.5,361 L300,317 L339.5,361 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,317 L339.5,361 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M269,337 L300,293 L331,337 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,293 L331,337 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M278,312.5 L300,262 L322,312.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,262 L322,312.5 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <rect x="0" y="360" width="1200" height="240" fill="url(#fy47h-ground)"/>
-  <line x1="40" y1="360" x2="-80" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="230" y1="360" x2="140" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="360" x2="360" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="610" y1="360" x2="580" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="800" y1="360" x2="800" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="990" y1="360" x2="1020" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1180" y1="360" x2="1240" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M360,520 L966,170 H1200 V520 Z" fill="url(#fy47h-ply)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="460.5" y1="462" x2="1200" y2="462" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="561" y1="404" x2="1200" y2="404" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="661.5" y1="346" x2="1200" y2="346" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="762" y1="288" x2="1200" y2="288" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="862.5" y1="230" x2="1200" y2="230" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1000" y1="176" x2="1000" y2="520" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1110" y1="176" x2="1110" y2="520" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="962" y="162" width="242" height="10" fill="url(#fy47h-coping)" stroke="#1f2933" stroke-width="2"/>
-  <line x1="360" y1="520" x2="966" y2="170" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="0" y1="520" x2="360" y2="520" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="400" cy="74" r="61" fill="#ffffff" fill-opacity="0.5"/>
+  <circle cx="400" cy="74" r="38" fill="url(#fy47h-sun)"/>
+  <path d="M112.5,111 Q111,85.5 141,88.5 Q153,61.5 183,70.5 Q210,55.5 225,84 Q252,87 249,111 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <path d="M565,80 Q564,63 584,65 Q592,47 612,53 Q630,43 640,62 Q658,64 656,80 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <rect x="28" y="277" width="93.5" height="83" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="40" y="291" width="16" height="18" fill="#eef5f9"/>
+  <rect x="70" y="291" width="16" height="18" fill="#eef5f9"/>
+  <rect x="40" y="323" width="16" height="18" fill="#eef5f9"/>
+  <rect x="70" y="323" width="16" height="18" fill="#eef5f9"/>
+  <rect x="182.5" y="272" width="93" height="88" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="194.5" y="286" width="16" height="18" fill="#eef5f9"/>
+  <rect x="224.5" y="286" width="16" height="18" fill="#eef5f9"/>
+  <rect x="194.5" y="318" width="16" height="18" fill="#eef5f9"/>
+  <rect x="224.5" y="318" width="16" height="18" fill="#eef5f9"/>
+  <rect x="329" y="274.5" width="117" height="85.5" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="341" y="288.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="371" y="288.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="401" y="288.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="341" y="320.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="371" y="320.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="401" y="320.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="497" y="239.5" width="106" height="120.5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="509" y="253.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="539" y="253.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="569" y="253.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="509" y="285.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="539" y="285.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="569" y="285.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="509" y="317.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="539" y="317.5" width="16" height="18" fill="#eef5f9"/>
+  <rect x="569" y="317.5" width="16" height="18" fill="#eef5f9"/>
+  <path d="M0,362 L10.5,339.5 L21.5,362 L37,326 L52.5,362 L66,332 L79,362 L88.5,343 L98,362 L108,341.5 L118,362 L129,338 L140,362 L157,322.5 L173.5,362 L186,334.5 L198.5,362 L207.5,344 L216.5,362 L229.5,333 L242.5,362 L256.5,331.5 L270,362 L284.5,328 L299.5,362 L313.5,330 L327.5,362 L337,343.5 L346,362 L358.5,334.5 L371,362 L382.5,336.5 L394.5,362 L405.5,338.5 L416.5,362 L429.5,333.5 L442,362 L453.5,336.5 L465.5,362 L481.5,324.5 L497.5,362 L513,326 L528.5,362 L541,334.5 L553.5,362 L570,323 L586.5,362 L599,334.5 L611.5,362 L626.5,326.5 L642,362 V380 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <rect x="36.5" y="375" width="7" height="11" fill="#b8622d"/>
+  <path d="M7.5,377 L40,341 L72.5,377 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M40,341 L72.5,377 H40 Z" fill="#1f2933" fill-opacity="0.18"/>
+  <path d="M15,357 L40,321 L65,357 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M40,321 L65,357 H40 Z" fill="#1f2933" fill-opacity="0.18"/>
+  <path d="M22,337.5 L40,296 L58,337.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M40,296 L58,337.5 H40 Z" fill="#1f2933" fill-opacity="0.18"/>
+  <rect x="0" y="380" width="1200" height="220" fill="url(#fy47h-ground)"/>
+  <line x1="-20" y1="380" x2="-120" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="130" y1="380" x2="50" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="280" y1="380" x2="220" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="430" y1="380" x2="390" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="580" y1="380" x2="560" y2="600" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M260,540 L1032,180 H1188 V540 Z" fill="url(#fy47h-ply)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="760" y1="311" x2="760" y2="540" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="900" y1="245.5" x2="900" y2="540" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1040" y1="184" x2="1040" y2="540" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1150" y1="184" x2="1150" y2="540" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="1028" y="172" width="160" height="10" fill="url(#fy47h-coping)" stroke="#1f2933" stroke-width="2"/>
+  <line x1="260" y1="540" x2="1032" y2="180" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="12" y1="540" x2="260" y2="540" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <g opacity="1">
-  <path d="M230,441 L221.5,499.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M214,502 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M220,380.5 Q249,369 244,403 L239,445 H216.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M230,441 L238.5,499.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M244.5,502 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M236.5,388 L250.5,422" fill="none" stroke="#1971c2" stroke-width="9.12" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="251" cy="425" r="4.56" fill="#f1dfb5"/>
-  <rect x="234.5" y="365" width="7.5" height="11.5" fill="#f1dfb5"/>
-  <circle cx="238.5" cy="355" r="12.92" fill="#f1dfb5"/>
-  <path d="M225.5,357.5 Q224.5,341 239,341.5 Q251,342.5 251,351.5 Q238.5,348.5 225.5,357.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <g transform="rotate(0 230 508)">
-  <rect x="203.5" y="502" width="53" height="4.5" rx="2.28" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="213.5" cy="509" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="246.5" cy="509" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M120,468 L112.5,520.5" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M105.5,522.5 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M111.5,414 Q137,403.5 132.5,434 L128,471.5 H108 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M120,468 L127.5,520.5" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M133,522.5 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M126.5,420.5 L138.5,451" fill="none" stroke="#6c757d" stroke-width="8.16" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="139" cy="454" r="4.08" fill="#f1dfb5"/>
+  <rect x="124.5" y="400" width="7" height="10" fill="#f1dfb5"/>
+  <circle cx="128" cy="391.5" r="11.56" fill="#f1dfb5"/>
+  <path d="M116.5,393.5 Q116,378.5 128.5,379 Q139.5,380 139.5,388 Q128,385 116.5,393.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <g transform="rotate(0 120 528)">
+  <rect x="96" y="522.5" width="47.5" height="4" rx="2.04" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="105" cy="529" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="135" cy="529" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   </g></g>
-  <line x1="180" y1="318" x2="309" y2="318" stroke="#1971c2" stroke-width="7" stroke-linecap="butt"/>
-  <path d="M330,318 L308,328 L308,308 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <g opacity="0.85">
-  <path d="M723.5,231 L715,289.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M707.5,292 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M714,170.5 Q742.5,159 737.5,193 L733,235 H710 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M723.5,231 L732.5,289.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M738.5,292 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M730.5,178 L744,212" fill="none" stroke="#1971c2" stroke-width="9.12" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="745" cy="215" r="4.56" fill="#f1dfb5"/>
-  <rect x="728" y="155" width="7.5" height="11.5" fill="#f1dfb5"/>
-  <circle cx="732" cy="145" r="12.92" fill="#f1dfb5"/>
-  <path d="M719,147.5 Q718.5,131 733,131.5 Q745,132.5 745,141.5 Q732,138.5 719,147.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <g transform="rotate(-30 723.5 298)">
-  <rect x="697" y="292" width="53" height="4.5" rx="2.28" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="707" cy="299" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="740.5" cy="299" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <line x1="120" y1="468" x2="259" y2="468" stroke="#ffffff" stroke-width="15" stroke-linecap="butt"/>
+  <path d="M290,468 L258,482.5 L258,454 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <line x1="120" y1="468" x2="265" y2="468" stroke="#1971c2" stroke-width="8" stroke-linecap="butt"/>
+  <path d="M290,468 L264,480 L264,456.5 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="256.5" y="380" width="39" height="72" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:60px;color:#1971c2">$v$</div></foreignObject>
+  <g opacity="1">
+  <path d="M791,220.5 L783,273" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M776.5,275 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M782,166.5 Q808,156 803.5,186.5 L799,224 H778.5 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M791,220.5 L798.5,273" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M804,275 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M797,173 L809.5,203.5" fill="none" stroke="#6c757d" stroke-width="8.16" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="810" cy="206.5" r="4.08" fill="#f1dfb5"/>
+  <rect x="795.5" y="152.5" width="7" height="10" fill="#f1dfb5"/>
+  <circle cx="799" cy="144" r="11.56" fill="#f1dfb5"/>
+  <path d="M787,146 Q786.5,131 799.5,131.5 Q810.5,132.5 810.5,140.5 Q799,137.5 787,146 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <g transform="rotate(-25 791 280.5)">
+  <rect x="767" y="275" width="47.5" height="4" rx="2.04" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="776" cy="281.5" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="805.5" cy="281.5" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   </g></g>
-  <line x1="683.5" y1="108" x2="730.5" y2="81" stroke="#1971c2" stroke-width="7" stroke-linecap="butt"/>
-  <path d="M748.5,70.5 L734.5,90 L724.5,73 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <g opacity="0.85">
-  <path d="M845,161 L836.5,219.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M829,222 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M835,100.5 Q864,89 859,123 L854,165 H831.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M845,161 L853.5,219.5" fill="none" stroke="#1f2933" stroke-width="11.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M859.5,222 h16.5" fill="none" stroke="#6c757d" stroke-width="6.08" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M851.5,108 L865.5,142" fill="none" stroke="#1971c2" stroke-width="9.12" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="866" cy="145" r="4.56" fill="#f1dfb5"/>
-  <rect x="849.5" y="85" width="7.5" height="11.5" fill="#f1dfb5"/>
-  <circle cx="853.5" cy="75" r="12.92" fill="#f1dfb5"/>
-  <path d="M840.5,77.5 Q839.5,61 854,61.5 Q866,62.5 866,71.5 Q853.5,68.5 840.5,77.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <g transform="rotate(-30 845 228)">
-  <rect x="818.5" y="222" width="53" height="4.5" rx="2.28" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="828.5" cy="229" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="861.5" cy="229" r="3.42" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <line x1="791" y1="220.5" x2="839.5" y2="198" stroke="#ffffff" stroke-width="15" stroke-linecap="butt"/>
+  <path d="M868,184.5 L845,211.5 L832.5,185 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <line x1="791" y1="220.5" x2="845" y2="195.5" stroke="#1971c2" stroke-width="8" stroke-linecap="butt"/>
+  <path d="M868,184.5 L849,206.5 L839.5,185 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="855.5" y="41.5" width="37" height="134" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:56px;color:#1971c2">$\dfrac{v}{2}$</div></foreignObject>
+  <g opacity="1">
+  <path d="M967.5,138 L960,190.5" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M953,192.5 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M959,84 Q985,73.5 980.5,104 L976,141.5 H955.5 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M967.5,138 L975.5,190.5" fill="none" stroke="#1f2933" stroke-width="10.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M981,192.5 h15" fill="none" stroke="#6c757d" stroke-width="5.44" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M974,90.5 L986,121" fill="none" stroke="#6c757d" stroke-width="8.16" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="987" cy="124" r="4.08" fill="#f1dfb5"/>
+  <rect x="972.5" y="70" width="7" height="10" fill="#f1dfb5"/>
+  <circle cx="975.5" cy="61.5" r="11.56" fill="#f1dfb5"/>
+  <path d="M964,63.5 Q963.5,48.5 976.5,49 Q987.5,50 987.5,58 Q975.5,55 964,63.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <g transform="rotate(-25 967.5 198)">
+  <rect x="944" y="192.5" width="47.5" height="4" rx="2.04" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="952.5" cy="199" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="982.5" cy="199" r="3.06" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   </g></g>
-  <rect x="60" y="310" width="26" height="210" fill="#a9d1f0" stroke="#1f2933" stroke-width="2"/>
-  <rect x="60" y="240" width="26" height="70" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <line x1="86" y1="520" x2="150" y2="520" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <line x1="52" y1="520" x2="94" y2="520" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="86" y1="310" x2="653.5" y2="310" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <line x1="52" y1="310" x2="94" y2="310" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="86" y1="240" x2="775" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <line x1="52" y1="240" x2="94" y2="240" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="560" y="548" width="170" height="12" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="575" y="560" width="10" height="26" fill="#6c757d"/>
-  <rect x="705" y="560" width="10" height="26" fill="#6c757d"/>
-  <path d="M612,548 a22,20 0 0 1 44,0 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="1007.5" y="24" width="102" height="72" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:60px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$v = 0$</span></div></foreignObject>
+  <line x1="825" y1="292.5" x2="1058" y2="292.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <line x1="1001.5" y1="210" x2="1058" y2="210" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <line x1="1068" y1="210" x2="1068" y2="540" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="1054" y1="540" x2="1082" y2="540" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="1060" y1="457.5" x2="1076" y2="457.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1060" y1="375" x2="1076" y2="375" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="1054" y1="292.5" x2="1082" y2="292.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="1054" y1="210" x2="1082" y2="210" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <foreignObject x="1086" y="349" width="66" height="134" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:56px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dfrac{3}{4}h$</span></div></foreignObject>
+  <foreignObject x="1086" y="184" width="66" height="134" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:56px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\dfrac{1}{4}h$</span></div></foreignObject>
+  <rect x="440" y="562" width="150" height="12" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="454" y="574" width="10" height="14" fill="#6c757d"/>
+  <rect x="566" y="574" width="10" height="14" fill="#6c757d"/>
+  <path d="M490,562 a22,20 0 0 1 44,0 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
 </svg>
 
 ## Ydinajatus
@@ -259,7 +187,7 @@ Liikkuvalla kappaleella on **liike-energiaa**. Kun kärry ajaa kitkatonta ramppi
 Nopeuden neliö näkyy liikenteessä. Kun auton nopeus kasvaa $50\,\text{km/h}$:sta $70\,\text{km/h}$:iin, liike-energia kasvaa kertoimella $\left(\tfrac{70}{50}\right)^2 \approx 2{,}0$ eli lähes kaksinkertaiseksi. Juuri tämä energia on jarrutuksessa tai törmäyksessä muutettava muuksi energiaksi.
 
 ### Konservatiivinen voima palauttaa energian
-Kun kitkaton kärry on noussut rampissa ylimpään kohtaansa, se lähtee takaisin alas ja on rampin juurella yhtä nopea kuin lähtiessään. Painovoima palauttaa liike-energiaksi kaiken energian, joka nousussa muuttui potentiaalienergiaksi. Lisäksi kitkatta liikkuva kappale saa korkeudelta $h$ alas tullessaan saman nopeuden, putosi se suoraan tai liukui jyrkkää tai loivaa ramppia: energia riippuu vain korkeudesta, ei reitistä. Voimaa, jolla on nämä ominaisuudet, kutsutaan **konservatiiviseksi voimaksi**. Potentiaalienergia liittyy aina konservatiiviseen voimaan.
+Kun kitkaton kärry on noussut rampissa ylimpään kohtaansa, se lähtee takaisin alas ja on rampin juurella yhtä nopea kuin lähtiessään. Painovoima palauttaa liike-energiaksi kaiken energian, joka nousussa muuttui potentiaalienergiaksi. Lisäksi kitkatta liikkuva kappale, joka lähtee levosta korkeudelta $h$, saa alas tullessaan saman nopeuden, putosi se suoraan tai liukui jyrkkää tai loivaa ramppia: energia riippuu vain korkeudesta, ei reitistä. Voimaa, jolla on nämä ominaisuudet, kutsutaan **konservatiiviseksi voimaksi**. Potentiaalienergia liittyy aina konservatiiviseen voimaan.
 
 <svg data-fig="polut" viewBox="0 0 600 350" role="img" aria-label="Kaavakuva, ei mittakaavassa. Kolme reittiä samalta korkeudelta h lattiaan: vasemmalla pallo putoaa suoraan alas tornin vierestä, keskellä kärry laskee jyrkkää ramppia ja oikealla loivempaa ramppia. Kitkaa ja ilmanvastusta ei ole. Alhaalla kaikilla kolmella on yhtä pitkä sininen nopeusnuoli: nopeus on sama, koska painovoiman potentiaalienergia riippuu vain korkeudesta eikä reitistä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy47-ps" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy47-pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -483,4 +411,4 @@ Moni ajattelee, että kaksinkertainen nopeus tarkoittaa kaksinkertaista liike-en
 - Liike-energia $E_\text{k} = \tfrac{1}{2}\,m v^2$ on verrannollinen massaan ja nopeuden neliöön: kaksinkertainen nopeus antaa nelinkertaisen liike-energian.
 - Painovoiman potentiaalienergia $E_\text{p} = m g h$ riippuu korkeudesta valitun nollatason yläpuolella. Nollatason alapuolella se on negatiivinen, ja vain sen muutoksella on fysikaalista merkitystä.
 - Potentiaalienergia liittyy konservatiiviseen voimaan, kuten painovoimaan tai jousivoimaan, joka palauttaa energian liike-energiaksi ja jonka energia riippuu vain paikasta, ei reitistä. Kitka ja ilmanvastus eivät ole konservatiivisia.
-- Mekaaninen energia on $E_\text{mek} = E_\text{k} + E_\text{p}$. Ilman kitkaa se pysyy samana; kitka muuttaa osan siitä sisäenergiaksi.
+- Mekaaninen energia on $E_\text{mek} = E_\text{k} + E_\text{p}$. Kun kitkaa ja ilmanvastusta ei ole eikä kappaletta työnnetä tai vedetä, se pysyy samana; kitka ja ilmanvastus muuttavat osan siitä sisäenergiaksi.

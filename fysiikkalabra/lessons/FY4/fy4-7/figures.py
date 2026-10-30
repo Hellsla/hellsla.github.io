@@ -23,64 +23,74 @@ def _skater(f, x, yf, sc, op, coat, board_angle=0.0):
     f.add("</g></g>")
 
 
+def _speed(f, x1, y1, x2, y2):
+    """A velocity arrow (blue) with a white halo, so it reads on any background."""
+    f.arrow(x1, y1, x2, y2, WHITE, 15, 32)
+    f.arrow(x1, y1, x2, y2, V_COL, 8, 26)
+
+
 def hero():
     """The chapter's opening illustration: a skateboarder rolls up a straight ramp in a skate park, drawn at three
-    places to scale: at the foot with speed v, at three quarters of the height with v/2, and at the top at rest."""
-    f = H.hero("fy47-hero", "Kuvitus: rullalautailija skeittiparkissa kesäpäivänä. Lautailija on piirretty kolmeen kohtaan: "
-               "tasaisella maalla rampin edessä hänellä on pitkä sininen nopeusnuoli, ramppia ylös noustessa kolmen neljäsosan "
-               "korkeudella nuoli on puolet lyhyempi, ja ylimpänä hän on hetken paikallaan ilman nuolta. Vasemmalla oleva "
-               "mittatikku näyttää korkeudet: alempi sävytetty osa on kolme neljäsosaa koko noususta ja ylempi vain neljäsosa, "
-               "vaikka nopeudesta kului kummassakin puolet. Nuolten pituudet ja korkeudet ovat mittakaavassa.")
+    places to scale: at the foot with speed v, at three quarters of the height with v/2, and at the top at rest.
+    The arrows (2 : 1 : 0) start at the skater; a bracket on the ramp marks 3/4 h and 1/4 h."""
+    f = H.hero("fy47-hero", "Kuvitus: rullalautailija skeittiparkissa. Lautailija on piirretty kolmeen kohtaan: "
+               "tasaisella maalla rampin edessä hänestä lähtee pitkä sininen nopeusnuoli v, kolmen neljäsosan korkeudella "
+               "rampissa nuoli on puolet lyhyempi, v/2, ja ylimpänä hän on hetken paikallaan, v = 0. Rampin kyljessä oleva "
+               "mittajana näyttää korkeudet: puolet nopeudesta kuluu kolmen neljäsosan nousuun 3/4 h, toinen puolikas vain "
+               "viimeiseen neljäsosaan 1/4 h. Nuolten pituudet (2 : 1 : 0) ja korkeudet ovat mittakaavassa.")
     H.sky(f, "fy47h", 420, ICE, GLASS)
-    H.sun(f, "fy47h", 1080, 86, 42, rays=False)
-    H.cloud(f, 250, 90, 0.8); H.cloud(f, 700, 60, 0.55); H.cloud(f, 520, 140, 0.4)
-    for k in range(9):                                          # the town behind the park
-        bx = 20 + k * 132 + 30 * rnd(k, 3); bh = 90 + 90 * rnd(k, 5); bw = 90 + 30 * rnd(k, 7)
-        f.rect(bx, 330 - bh, bw, bh + 10, ALUMINIUM if k % 2 else METAL_EDGE, INK, 2)
+    H.sun(f, "fy47h", 400, 74, 38, rays=False)
+    H.cloud(f, 180, 96, 0.75); H.cloud(f, 610, 70, 0.5)
+    for k in range(4):                                          # the town far behind the park, kept low
+        bx = 20 + k * 150 + 30 * rnd(k, 3); bh = 70 + 50 * rnd(k, 5); bw = 90 + 30 * rnd(k, 7)
+        f.rect(bx, 350 - bh, bw, bh + 10, ALUMINIUM if k % 2 else METAL_EDGE, INK, 2)
         for r in range(int(bh // 34)):
             for c in range(int(bw // 34)):
-                f.rect(bx + 12 + c * 30, 330 - bh + 14 + r * 32, 16, 18, GLASS, None)
-    H.forest(f, 340, 46, 26, GOOD, seed=4, depth=20)
-    H.birch(f, 1150, 372, 170)
-    H.spruce(f, 300, 372, 110)
-    f.rect(0, 360, 1200, 240, grad(f, "fy47h-ground", GLASS, ALUMINIUM, y1=360, y2=600))   # the concrete of the park
-    for k in range(7):
-        f.line(k * 190 + 40, 360, k * 220 - 80, 600, METAL_EDGE, 1.5)
-    f.line(0, 470, 1200, 470, METAL_EDGE, 1.5)
-    # the ramp: a straight plywood wedge rising at 30° from the foot (360, 520) to a deck at y = 170
-    foot, yfl, ang = 360, 520, math.radians(30)
-    ytop = 170; xtop = foot + (yfl - ytop) / math.tan(ang)
-    f.path(f"M{foot},{yfl} L{n(xtop)},{ytop} H1200 V{yfl} Z", grad(f, "fy47h-ply", SAND_DARK, SAND), INK, 3)
-    for k in range(1, 6):                                       # plywood seams and the frame
-        yy = yfl - k * 58; xx = foot + (yfl - yy) / math.tan(ang)
-        f.line(xx, yy, 1200, yy, GRAIN, 1.5)
-    for xx in (1000, 1110):
-        f.line(xx, ytop + 6, xx, yfl, GRAIN, 2)
-    f.rect(xtop - 4, ytop - 8, 1200 - xtop + 8, 10, H.steel(f, "fy47h-coping"), INK, 2)   # the steel coping
+                f.rect(bx + 12 + c * 30, 350 - bh + 14 + r * 32, 16, 18, GLASS, None)
+    H.forest(f, 362, 40, 26, GOOD, seed=4, depth=18, x1=640)
+    H.spruce(f, 40, 386, 90)
+    f.rect(0, 380, 1200, 220, grad(f, "fy47h-ground", GLASS, ALUMINIUM, y1=380, y2=600))   # the concrete of the park
+    for k in range(5):
+        f.line(k * 150 - 20, 380, k * 170 - 120, 600, METAL_EDGE, 1.5)
+    # the ramp: a straight plywood wedge rising at 25° from the foot (260, 540) to a deck at y = 180
+    foot, yfl, ang = 260, 540, math.radians(25)
+    ytop = 180; xtop = foot + (yfl - ytop) / math.tan(ang)
+    f.path(f"M{foot},{yfl} L{n(xtop)},{ytop} H1188 V{yfl} Z", grad(f, "fy47h-ply", SAND_DARK, SAND), INK, 3)
+    for xx in (760, 900, 1040, 1150):                           # plywood panels (vertical seams, never mistaken for heights)
+        yy = max(ytop, yfl - (xx - foot) * math.tan(ang))
+        f.line(xx, yy + 4, xx, yfl, GRAIN, 1.5)
+    f.rect(xtop - 4, ytop - 8, 1188 - xtop + 4, 10, H.steel(f, "fy47h-coping"), INK, 2)   # the steel coping
     f.line(foot, yfl, xtop, ytop, INK, 4)
-    f.line(0, yfl, foot, yfl, INK, 3)
+    f.line(12, yfl, foot, yfl, INK, 3)
     # the three places, to scale: v at the foot, v/2 at 3/4 of the rise, rest at the top (v² falls linearly with height)
-    rise = 280                                                 # the skater's full rise in figure units
+    rise = 330                                                 # the skater's full rise in figure units
     y34, ytp = yfl - 0.75 * rise, yfl - rise
     x34, xtp = foot + 0.75 * rise / math.tan(ang), foot + rise / math.tan(ang)
-    L = 150                                                    # the arrow of speed v
-    sc, up = 0.38, 190                                         # the skater's size; the arrows just above the head
-    _skater(f, 230, yfl - 12, sc, 1.0, COLD)
-    f.arrow(180, yfl - 12 - up, 180 + L, yfl - 12 - up, V_COL, 7, 22)
-    _skater(f, x34, y34 - 12, sc, 0.85, COLD, -30)
+    L, sc, coat = 170, 0.34, IRON                              # the arrow of speed v; the skater (grey: blue is velocity)
+    hip = lambda yb: yb - 12 - 16 * sc - 160 * sc
+    xg = 120
+    _skater(f, xg, yfl - 12, sc, 1.0, coat)
+    _speed(f, xg, hip(yfl), xg + L, hip(yfl))
+    f.tex(xg + L - 14, hip(yfl) - 52, "v", anchor="middle", color=V_COL, size=60)
     ca, sa = math.cos(ang), math.sin(ang)
-    f.arrow(x34 - 40, y34 - 12 - up, x34 - 40 + L / 2 * ca, y34 - 12 - up - L / 2 * sa, V_COL, 7, 22)
-    _skater(f, xtp, ytp - 12, sc, 0.85, COLD, -30)
-    # the measuring staff on the left: bands up to 3/4 of the rise and the last quarter, guides from each place
-    sx = 60
-    f.rect(sx, y34, 26, yfl - y34, WATER_LIGHT, INK, 2)
-    f.rect(sx, ytp, 26, y34 - ytp, HEAT_LIGHT, INK, 2)
-    for y, x in ((yfl, 150), (y34, x34 - 70), (ytp, xtp - 70)):
-        f.line(sx + 26, y, x, y, MUTED, 1.5, "7 6")
-        f.line(sx - 8, y, sx + 34, y, INK, 3)
-    f.rect(560, 548, 170, 12, COPPER, INK, 2, 3)                  # a bench with a helmet on it
-    f.rect(575, 560, 10, 26, IRON); f.rect(705, 560, 10, 26, IRON)
-    f.path("M612,548 a22,20 0 0 1 44,0 Z", HEAT, INK, 2)
+    _skater(f, x34, y34 - 12, sc, 1.0, coat, -25)
+    _speed(f, x34, hip(y34), x34 + L / 2 * ca, hip(y34) - L / 2 * sa)
+    f.tex(x34 + L / 2 * ca + 6, hip(y34) - L / 2 * sa - 76, r"\dfrac{v}{2}", anchor="middle", color=V_COL, size=56)
+    _skater(f, xtp, ytp - 12, sc, 1.0, coat, -25)
+    f.tex(xtp + 40, ytp - 150, "v = 0", anchor="start", color=V_COL, size=60, bg=True)
+    # the heights on the ramp itself: a dimension line in quarters, guides from where the wheels touch the ramp
+    bx = 1068
+    for y, x in ((y34, x34 + 34), (ytp, xtp + 34)):
+        f.line(x, y, bx - 10, y, INK, 2, "8 6")
+    f.line(bx, ytp, bx, yfl, INK, 3)
+    for q in range(5):
+        yq = yfl - q * rise / 4
+        f.line(bx - (14 if q in (0, 3, 4) else 8), yq, bx + (14 if q in (0, 3, 4) else 8), yq, INK, 3 if q in (0, 3, 4) else 2)
+    f.tex(bx + 18, (yfl + y34) / 2, r"\dfrac{3}{4}h", anchor="start", size=56, bg=True)
+    f.tex(bx + 18, (y34 + ytp) / 2, r"\dfrac{1}{4}h", anchor="start", size=56, bg=True)
+    f.rect(440, 562, 150, 12, COPPER, INK, 2, 3)                  # a bench with a helmet on it
+    f.rect(454, 574, 10, 14, IRON); f.rect(566, 574, 10, 14, IRON)
+    f.path("M490,562 a22,20 0 0 1 44,0 Z", HEAT, INK, 2)
     return f.svg()
 
 

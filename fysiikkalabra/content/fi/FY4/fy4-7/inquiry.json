@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Rullalautailija ajaa tasaista maata ja nousee suoraa ramppia ylös, kunnes hän pysähtyy hetkeksi ja lähtee takaisin alas. Kitka ja ilmanvastus ovat pieniä. Kun hänen nopeutensa rampin juurella on $3{,}0\\,\\text{m/s}$, hän nousee noin $0{,}46\\,\\text{m}$:n korkeudelle. Kun nopeus on kaksinkertainen, $6{,}0\\,\\text{m/s}$, hän nousee lähes $1{,}8\\,\\text{m}$:n korkeudelle eli neljä kertaa korkeammalle.",
+      "text": "Rullalautailija ajaa tasaista maata ja nousee suoraa ramppia ylös, kunnes hän pysähtyy hetkeksi ja lähtee takaisin alas. Kitka ja ilmanvastus ovat pieniä. Kun hänen nopeutensa rampin juurella on $3{,}0\\,\\text{m/s}$, hän nousee noin $0{,}46\\,\\text{m}$:n korkeudelle. Kun nopeus on kaksinkertainen, $6{,}0\\,\\text{m/s}$, hän nousee noin $1{,}8\\,\\text{m}$:n korkeudelle eli neljä kertaa korkeammalle.",
       "question": "Mikä lautailijan liikkeessä kasvaa niin paljon, että kaksinkertainen nopeus riittää nelinkertaiseen nousuun?"
     },
     {
@@ -29,7 +29,7 @@
         {
           "text": "$5{,}1\\,\\text{m}$",
           "correct": true,
-          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$, ja keskinopeus on nousun aikana puolet alkunopeudesta, joten $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 5{,}1\\,\\text{m}$. Tämä nousukorkeus $\\tfrac{v^2}{2g}$ on tämän luvun avain."
+          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$, ja keskinopeus on nousun aikana puolet alkunopeudesta, joten $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 5{,}1\\,\\text{m}$."
         },
         {
           "text": "$10\\,\\text{m}$",
@@ -62,8 +62,8 @@
           "feedback": "Nousukorkeus ei kasva samassa suhteessa kuin nopeus. Mallin arvoissa kärry nousee nopeudella $1{,}0\\,\\text{m/s}$ korkeudelle $0{,}051\\,\\text{m}$ ja nopeudella $3{,}0\\,\\text{m/s}$ korkeudelle $0{,}46\\,\\text{m}$, eli yhdeksän kertaa korkeammalle."
         },
         {
-          "text": "Kuusi kertaa korkeammalle, koska nopeampi kärry pysyy ylämäessä pidempään.",
-          "feedback": "Kolminkertaisella nopeudella kärry nousee kolme kertaa pidempään ja sen keskinopeus on kolminkertainen, joten korkeus on $3 \\cdot 3 = 9$-kertainen. Mallin arvot ovat $0{,}051\\,\\text{m}$ ja $0{,}46\\,\\text{m}$."
+          "text": "Kuusi kertaa korkeammalle, koska nopeuden kerroin kaksinkertaistuu nousukorkeudessa: $3 \\cdot 2 = 6$.",
+          "feedback": "Kaksinkertainen nopeus antoi nelinkertaisen nousun, mutta siinä $4 = 2 \\cdot 2$ on nopeuden kerroin kerrottuna itsellään, ei luvulla $2$. Kolminkertaisella nopeudella kärry nousee kolme kertaa pidempään ja sen keskinopeus on kolminkertainen, joten korkeus on $3 \\cdot 3 = 9$-kertainen. Mallin arvot ovat $0{,}051\\,\\text{m}$ ja $0{,}46\\,\\text{m}$."
         },
         {
           "text": "Yhdeksän kertaa korkeammalle, koska nousukorkeus kasvaa nopeuden neliössä.",
@@ -326,7 +326,7 @@
           },
           {
             "text": "Kitka varastoi osan liike-energiasta potentiaalienergiaksi, joka jää rampin pintaan.",
-            "feedback": "Jos kitka varastoisi energiaa potentiaalienergiaksi, se palautuisi liikkeeksi ja kärry palaisi nopeudella $3{,}0\\,\\text{m/s}$. Paluunopeus on kuitenkin vain $2{,}4\\,\\text{m/s}$: energia on muuttunut sisäenergiaksi, eli rampin ja pyörien lämpötila on noussut hieman."
+            "feedback": "Jos kitka varastoisi energiaa potentiaalienergiaksi, se palautuisi liikkeeksi ja kärry palaisi nopeudella $3{,}0\\,\\text{m/s}$. Paluunopeus on kuitenkin vain $2{,}4\\,\\text{m/s}$: energia on muuttunut sisäenergiaksi, eli rampin ja kärryn lämpötila on noussut hieman."
           },
           {
             "text": "Kitka pienentää kärryn massaa, joten sen liike-energia pienenee ajon aikana.",
@@ -513,7 +513,7 @@
         },
         {
           "text": "Molempiin, koska kumpikin voima muuttaa kappaleen liike-energiaa toiseksi.",
-          "feedback": "Liike-energiaa muuttavat kaikki voimat, mutta potentiaalienergia liittyy vain voimaan, joka palauttaa energian. Jousi palauttaa sen, kitka ei. Siksi vain jousivoimaan liittyy potentiaalienergia."
+          "feedback": "Kumpikin voima muuttaa tässä kappaleen liike-energiaa, mutta potentiaalienergia liittyy vain voimaan, joka palauttaa energian. Jousi palauttaa sen, kitka ei. Siksi vain jousivoimaan liittyy potentiaalienergia."
         },
         {
           "text": "Ei kumpaankaan, koska potentiaalienergia liittyy vain painovoimaan ja korkeuteen.",
