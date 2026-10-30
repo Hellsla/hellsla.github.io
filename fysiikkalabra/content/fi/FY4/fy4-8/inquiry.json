@@ -468,14 +468,14 @@
    "stage": "tarkista",
    "type": "explain",
    "title": "3. Selitä",
-   "prompt": "Selitä energian avulla, miksi vuoristoradan ensimmäinen mäki on radan korkein ja jokainen myöhempi mäki on matalampi kuin edellinen. Mihin junan mekaaninen energia matkan aikana menee?",
+   "prompt": "Selitä energian avulla, miksi vuoristoradan ensimmäinen mäki on radan korkein ja myöhemmät mäet ovat sitä matalampia. Mihin junan mekaaninen energia matkan aikana menee?",
    "criteria": [
     "Vastaus kertoo, että ketjuhissin tekemä työ antaa junalle sen mekaanisen energian ja että sen jälkeen mikään ei lisää sitä.",
-    "Vastaus kertoo, että ilman häviöitä juna pääsisi enintään lähtökorkeudelle, koska huipulla on oltava liike-energiaa jäljellä.",
+    "Vastaus kertoo, että ilman häviöitä juna pääsisi enintään lähtökorkeudelle, koska mekaaninen energia säilyy, ja että myöhemmän mäen on oltava tätä matalampi, jotta huipulla jää liike-energiaa.",
     "Vastaus kertoo, että vierimisvastus ja ilmanvastus tekevät negatiivista työtä, joka kasvaa kuljetun matkan mukana, joten mekaaninen energia pienenee koko ajan.",
     "Vastaus kertoo, että mekaaninen energia muuttuu sisäenergiaksi eikä katoa."
    ],
-   "model": "Ketjuhissi tekee junaan työtä ja nostaa sen ensimmäisen mäen huipulle. Sen jälkeen junaan vaikuttavat vain paino, radan tukivoima ja vastusvoimat, eikä mikään niistä lisää junan mekaanista energiaa. Jos vastusvoimia ei olisi, mekaaninen energia säilyisi ja juna voisi nousta enintään lähtökorkeudelle, ja silloinkin se pysähtyisi huipulle. Todellisuudessa vierimisvastus ja ilmanvastus tekevät koko ajan negatiivista työtä, joka kasvaa jokaisella kuljetulla metrillä. Junan mekaaninen energia pienenee siis koko matkan ajan, ja jokaisen mäen on oltava edellistä matalampi, jotta junalla on huipulla vielä liike-energiaa. Energia ei katoa: se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, ja lopuksi asemalla jarrut muuttavat loputkin liike-energiasta sisäenergiaksi."
+   "model": "Ketjuhissi tekee junaan työtä ja nostaa sen ensimmäisen mäen huipulle. Sen jälkeen junaan vaikuttavat vain paino, radan tukivoima ja vastusvoimat, eikä mikään niistä lisää junan mekaanista energiaa. Jos vastusvoimia ei olisi, mekaaninen energia säilyisi ja juna voisi nousta enintään lähtökorkeudelle, ja silloinkin se pysähtyisi huipulle. Todellisuudessa vierimisvastus ja ilmanvastus tekevät koko ajan negatiivista työtä, joka kasvaa jokaisella kuljetulla metrillä. Junan mekaaninen energia pienenee siis koko matkan ajan, Jokaisen mäen on oltava matalampi kuin korkeus, jolle jäljellä oleva mekaaninen energia riittäisi, jotta junalla on huipulla vielä liike-energiaa. Siksi mäet yleensä madaltuvat radan loppua kohti. Energia ei katoa: se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, ja lopuksi asemalla jarrut muuttavat loputkin liike-energiasta sisäenergiaksi."
   },
   {
    "id": "lahtolippu",

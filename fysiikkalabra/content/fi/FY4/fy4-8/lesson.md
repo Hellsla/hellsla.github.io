@@ -358,7 +358,7 @@ Todellisessa vuoristoradassa pyörien vierimisvastus ja ilmanvastus vastustavat 
 Painon eli painovoiman ja kitkan eron muistat luvusta *Liike-energia, potentiaalienergia ja mekaaninen energia*: paino on **konservatiivinen voima**. Uutta on se, mitä tästä seuraa energian laskemiselle: painon tekemä työ riippuu vain korkeuserosta, joten palatessaan samalle korkeudelle kappale saa takaisin saman energian, kulki se mitä reittiä tahansa. Siksi painoon liittyy potentiaalienergia. Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä, joten se riippuu reitistä. Tällaiselle **ei-konservatiiviselle voimalle** ei voi määritellä potentiaalienergiaa.
 
 ### Vastaus alun kysymykseen
-Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vain se mekaaninen energia, jonka se sai noston aikana, eikä mikään lisää sitä. Vastusvoimat vähentävät sitä jokaisella metrillä. Jos seuraava mäki olisi yhtä korkea kuin ensimmäinen, juna ei pääsisi sen huipulle. Jokaisen myöhemmän mäen on oltava matalampi, jotta junalle jää huipulla vielä liike-energiaa.
+Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vain se mekaaninen energia, jonka se sai noston aikana, eikä mikään lisää sitä. Vastusvoimat vähentävät sitä jokaisella metrillä. Jos seuraava mäki olisi yhtä korkea kuin ensimmäinen, juna ei pääsisi sen huipulle. Jokaisen myöhemmän mäen on oltava matalampi kuin ensimmäinen ja matalampi kuin korkeus, jolle jäljellä oleva energia riittäisi, jotta junalle jää huipulla vielä liike-energiaa.
 
 ## Kaava: Mekaniikan energiaperiaate
 
@@ -478,7 +478,7 @@ Moni ajattelee, että raskaampi kappale on mäen alla nopeampi. Kun kitka ja ilm
 Toinen virhe on sanoa, että kitka hävittää energiaa. Kitka pienentää mekaanista energiaa, mutta yhtä suuri määrä energiaa siirtyy sisäenergiaksi, ja kokonaisenergia säilyy. Kolmas virhe on laskea kitkan työ korkeuserosta. Kitkan työ on kitkavoima kertaa kuljettu matka pitkin rataa. Kun vastusvoima on yhtä suuri, pitkällä loivalla radalla mekaanista energiaa muuttuu sisäenergiaksi enemmän kuin lyhyellä jyrkällä, vaikka korkeusero olisi sama.
 
 ## Tiivistelmä
-- Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$ säilyy, kun vain paino tekee työtä eli kitkan ja ilmanvastuksen voi jättää huomiotta. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
+- Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$ säilyy, kun vain paino tekee työtä eli kitkan ja ilmanvastuksen voi jättää huomiotta eikä mikään vedä tai työnnä. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
 - Voima tekee työtä liikkeen suuntaisella komponentillaan, $W = F_\parallel s$: positiivista liikkeen suuntaan ja negatiivista liikettä vastaan.
 - Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, $W_\text{kok} = \Delta E_\text{k}$.
 - Energiaperiaate: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\Delta E_\text{mek} = W_\text{muut}$. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi, ja kokonaisenergia säilyy.
