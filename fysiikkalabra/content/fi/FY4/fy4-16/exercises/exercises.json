@@ -21,7 +21,7 @@
   {
    "id": "fy4-16-L1-03",
    "level": 1,
-   "text": "Lapsi laskee jäistä kourua pitkin levosta. Kourun alku on $3{,}20\\,\\text{m}$ korkeammalla kuin sen loppu, ja kitkan ja ilmanvastuksen voi jättää huomiotta. Kuinka suuri on lapsen nopeus kourun lopussa?",
+   "text": "Lapsi laskee jäistä kourua pitkin levosta. Kourun alku on $3{,}20\\,\\text{m}$ korkeammalla kuin sen loppu, ja kitkan ja ilmanvastuksen voi jättää huomiotta. Piirrä lapsen voimakuvio. Kuinka suuri on lapsen nopeus kourun lopussa?",
    "answer": 7.923636,
    "unit": "m/s",
    "tolerance": 0.02
@@ -67,7 +67,7 @@
   {
    "id": "fy4-16-L2-03",
    "level": 2,
-   "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $80{,}0\\,\\text{kg}$, putoaa nopeudella $52{,}0\\,\\text{m/s}$ ja avaa varjonsa. Sinä aikana, kun hän putoaa $145\\,\\text{m}$, hänen nopeutensa pienenee $6{,}0\\,\\text{m/s}$:iin. Kuinka paljon mekaanista energiaa muuttuu tällä matkalla muiksi energiamuodoiksi?",
+   "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $80{,}0\\,\\text{kg}$, putoaa nopeudella $52{,}0\\,\\text{m/s}$ ja avaa varjonsa. Sinä aikana, kun hän putoaa $145\\,\\text{m}$, hänen nopeutensa pienenee $6{,}0\\,\\text{m/s}$:iin. Piirrä hyppääjän voimakuvio. Kuinka paljon mekaanista energiaa muuttuu tällä matkalla muiksi energiamuodoiksi?",
    "answer": 220.516,
    "unit": "kJ",
    "tolerance": 0.02

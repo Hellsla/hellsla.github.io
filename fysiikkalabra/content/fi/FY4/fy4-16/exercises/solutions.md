@@ -23,6 +23,7 @@
 ## fy4-16-L1-03
 **Annettu:** korkeusero $h = 3{,}20\,\text{m}$, alkunopeus $v_1 = 0$, kitka ja ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** nopeus $v_2$ kourun lopussa yksikössä $\text{m/s}$
+**Voimakuvio:** Lapsi suorakulmiona, kourun pinnan suuntaan kallistettuna. Paino $\overline{G}$ keskipisteestä suoraan alas ja kourun tukivoima $\overline{N}$ alapinnasta kohtisuoraan pinnasta ulos. Kitkaa ei ole, eikä liikesuuntaan osoittavaa voimaa. Nopeus merkitään erikseen eikä voimaksi.
 **Periaate:** Lapseen vaikuttavat paino ja kourun tukivoima. Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä, ja kitka jätetään huomiotta, joten mekaaninen energia säilyy. Kourun muodolla ei ole merkitystä, vain korkeuserolla.
 **Kaava:** Nollataso kourun loppuun: $mgh = \tfrac12 mv_2^2$, joten $v_2 = \sqrt{2gh}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massaa ei tarvita, koska se supistuu pois.
@@ -77,6 +78,7 @@
 ## fy4-16-L2-03
 **Annettu:** $m = 80{,}0\,\text{kg}$, $v_1 = 52{,}0\,\text{m/s}$, $v_2 = 6{,}0\,\text{m/s}$, pudotus $h = 145\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** muiksi energiamuodoiksi muuttuva mekaaninen energia $|\Delta E_\text{mek}|$ yksikössä $\text{kJ}$
+**Voimakuvio:** Hyppääjä varjoineen suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ yläpinnasta ylös. Nopeus alas merkitään erikseen eikä voimaksi. Ilmanvastus on liikettä vastaan, joten sen työ on negatiivinen.
 **Periaate:** Energiaperiaatteen mukaan mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, tässä ilmanvastuksen negatiivinen työ. Sekä liike-energia että potentiaalienergia pienenevät, ja molempien muutos lasketaan mukaan.
 **Kaava:** Nollataso lopputilanteen korkeudelle: $\Delta E_\text{mek} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) - mgh$, ja $|\Delta E_\text{mek}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Muunnokset:** Lasketaan jouleina ja muutetaan lopuksi kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.

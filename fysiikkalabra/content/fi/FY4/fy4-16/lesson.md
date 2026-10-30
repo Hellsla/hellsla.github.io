@@ -225,13 +225,13 @@ Tämän moduulin mekaniikan tehtävät ratkeavat kahdella työkalulla, ja kumpik
 </svg>
 
 ### Hissi: vaaka mittaa tukivoimaa
-Kylpyhuonevaaka ei mittaa painoa vaan tukivoimaa $N$, jolla se työntää seisojaa ylöspäin. Lukema näkyy kilogrammoina, koska vaaka jakaa voiman luvulla $9{,}81\,\text{m/s}^2$. Hississä paikallaan seisovaan ihmiseen vaikuttavat vain paino ja tukivoima. Kun positiivinen suunta on ylös, liikeyhtälö on $N - mg = ma$, joten $N = m(g + a)$. Kun hissi lähtee ylös ja kiihtyy $1{,}0\,\text{m/s}^2$, $60{,}0\,\text{kg}$:n ihmisen tukivoima on $649\,\text{N}$, ja vaaka näyttää $66\,\text{kg}$. Tasaisella nopeudella $a = 0$, ja vaaka näyttää saman kuin kotona, liikkuipa hissi ylös tai alas. Lukema riippuu siis kiihtyvyydestä, ei nopeudesta.
+Kylpyhuonevaaka ei mittaa painoa vaan tukivoimaa $N$, jolla se työntää seisojaa ylöspäin. Lukema näkyy kilogrammoina, koska vaaka jakaa voiman luvulla $9{,}81\,\text{m/s}^2$. Hississä paikallaan seisovaan ihmiseen vaikuttavat vain paino ja tukivoima. Kun positiivinen suunta on ylös, liikeyhtälö on $N - mg = ma$, joten $N = m(g + a)$. Kun hissi lähtee ylös ja kiihtyy $1{,}0\,\text{m/s}^2$, $60{,}0\,\text{kg}$:n ihmisen tukivoima on $649\,\text{N}$ eli pyöristettynä $650\,\text{N}$ kuten kuvaajassa, ja vaaka näyttää $66\,\text{kg}$. Tasaisella nopeudella $a = 0$, ja vaaka näyttää saman kuin kotona, liikkuipa hissi ylös tai alas. Lukema riippuu siis kiihtyvyydestä, ei nopeudesta.
 
 ### Laskuvarjo: rajanopeudella mekaaninen energia pienenee
 Varjon varassa laskeutuva hyppääjä putoaa pian rajanopeudella eli tasaisella nopeudella (luku *Ilmanvastus ja putoaminen ilmassa*). Liikeyhtälön mukaan kiihtyvyys on nolla, joten ilmanvastus on yhtä suuri kuin paino, $F_\text{v} = mg$. Energian kannalta liike-energia ei muutu, mutta potentiaalienergia pienenee koko ajan. Energiaperiaatteen mukaan mekaanisen energian muutos on ilmanvastuksen tekemä työ. Se on negatiivinen, koska ilmanvastus osoittaa liikettä vastaan: korkeuden $h$ matkalla $W_\text{v} = -F_\text{v} h = -mgh$. Kun $80\,\text{kg}$:n hyppääjä laskeutuu $100\,\text{m}$, noin $78\,\text{kJ}$ mekaanista energiaa muuttuu ilman liikkeeksi ja lopulta sisäenergiaksi. Kumpikin työkalu kertoo saman asian omalla tavallaan.
 
 ### Kelkkamäki: kitka vie energiaa koko matkalla
-Pulkka liukuu suoraa rinnettä alas. Voimakuviosta nähdään, että painon rinnettä vastaan kohtisuora komponentti ja tukivoima kumoavat toisensa, joten $N = mg\cos\alpha$, kuten luvussa *Paino, kitka ja kalteva taso*. Liikekitka on silloin $F_\mu = \mu mg\cos\alpha$. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Paino tekee rinteessä työn $mgh$, ja kitka tekee negatiivisen työn $-F_\mu L$, kun rinteen pituus on $L$. Jyrkässä rinteessä tukivoima ja kitka ovat pienempiä ja rinne on lyhyempi, joten kitka vie vähemmän energiaa ja pulkka on juurella nopeampi. Tasaisella pulkka liukuu, kunnes kitka on muuttanut kaiken liike-energian sisäenergiaksi.
+Pulkka liukuu suoraa rinnettä alas. Voimakuviosta nähdään, että painon rinnettä vastaan kohtisuora komponentti ja tukivoima kumoavat toisensa, joten $N = mg\cos\alpha$, kuten luvussa *Paino, kitka ja kalteva taso*. Liikekitka on silloin $F_\mu = \mu mg\cos\alpha$. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Paino tekee rinteessä työn $mgh$, ja kitka tekee negatiivisen työn $-F_\mu L$, kun rinteen pituus on $L$. Yhtä korkeassa mäessä tukivoima ja kitka ovat jyrkässä rinteessä pienempiä ja rinne on lyhyempi, joten kitka vie vähemmän energiaa ja pulkka on juurella nopeampi. Tasaisella pulkka liukuu, kunnes kitka on muuttanut kaiken liike-energian sisäenergiaksi.
 
 ## Kaava: Liikeyhtälö ja energiaperiaate
 Soveltavan tehtävän ensimmäinen työkalu on Newtonin toinen laki:
@@ -291,7 +291,7 @@ Pulkka lähtee levosta korkeudelta $h$, laskee rinteen ja pysähtyy tasaiselle. 
 ```latex
 x_1 + x_2 = \frac{h}{\mu}
 ```
-Kaltevuuskulma ei esiinny tuloksessa. Jyrkältä puolelta laskeva pulkka kulkee rinteessä lyhyen vaakamatkan, joten sille jää enemmän matkaa tasaisella. Loivalta puolelta laskeva käyttää suuremman osan vaakamatkasta rinteessä. Tämä vastaa alun kysymykseen. Malli olettaa, että kitkakerroin on sama koko matkalla, ilmanvastus on pieni ja rinteen juuren mutka on lyhyt. Jyrkässä mutkassa tukivoima ja kitka kasvavat hetkeksi, joten oikea pulkka pysähtyy jyrkän mäen alla vähän aikaisemmin. Lisäksi rinteen on oltava niin jyrkkä, että pulkka liukuu: $\tan\alpha > \mu$.
+Kaltevuuskulma ei esiinny tuloksessa. Jyrkältä puolelta laskeva pulkka kulkee rinteessä lyhyen vaakamatkan, joten sille jää enemmän matkaa tasaisella. Loivalta puolelta laskeva käyttää suuremman osan vaakamatkasta rinteessä. Tämä vastaa alun kysymykseen. Malli olettaa, että kitkakerroin on sama koko matkalla, ilmanvastus on pieni ja rinteen juuren mutka on lyhyt. Jyrkässä mutkassa tukivoima ja kitka kasvavat hetkeksi, joten todellinen pulkka pysähtyy jyrkän mäen alla vähän aikaisemmin. Lisäksi rinteen on oltava niin jyrkkä, että pulkka liukuu: $\tan\alpha > \mu$.
 
 ### Ratkaisun vaiheet
 1. Valitse kappale ja piirrä sen voimakuvio: jokaiselle voimalle aiheuttaja ja suunta.
@@ -407,4 +407,4 @@ Toinen virhe on ajatella, että rajanopeudella mekaaninen energia säilyy, koska
 - Hississä vaaka mittaa tukivoimaa $N = m(g + a)$, kun positiivinen suunta on ylös. Lukema riippuu kiihtyvyydestä, ei nopeudesta.
 - Rajanopeudella $F_\text{v} = mg$, ja ilmanvastuksen työ on $-mgh$: mekaaninen energia pienenee, vaikka nopeus ei muutu.
 - Suoralla rinteellä $N = mg\cos\alpha$, ja liikekitkan työ on $W_\mu = -\mu mgx$, missä $x$ on vaakasuora matka. Levosta korkeudelta $h$ lähtenyt pulkka pysähtyy vaakamatkan $h/\mu$ päähän huipusta, kun kitkakerroin on sama koko matkalla.
-- Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan.
+- Kun kappale liukuu paikallaan olevaa pintaa pitkin, tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Hississä lattian tukivoima on liikkeen suuntainen ja tekee työtä.

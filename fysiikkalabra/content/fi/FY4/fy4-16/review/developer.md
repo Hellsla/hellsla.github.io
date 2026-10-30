@@ -1,8 +1,7 @@
 VERDICT: DONE
 
-Round 1 draft (no simulation; meta unchanged, sim false).
-- lesson.md: Miksi (two sleds stop equally far from the summit), Ydinajatus "first the force diagram, then the tool" with hissi (N = m(g + a)), laskuvarjo (F_v = mg, W_v = −mgh) and kelkkamäki sections; Kaava: Liikeyhtälö ja energiaperiaate, friction work W_μ = −μmgx and x_1 + x_2 = h/μ with its conditions; staged example (sled, 20,0°, μ 0,200, Voimakuvio stage); misconceptions; summary. Chapters referred to by name.
-- figures.py: hero (hill to scale, h/μ), kolme (three situations + FBDs), kitkatyo, esimerkki, malli-laukku (draw model), hissi-kuvaaja and ex-hissi (force-plate example data). All force diagrams with fbd.py.
-- inquiry.json: hook, optional retrieval, 2 predictions (reveal after theory), Tutki: force-plate graph (numeric, equations) and model table, conclusion; draw task (fbd draw); siirto (equations); 3 checks; exit.
-- exercises 5/4/3 with answers.py and solutions.md (Voimakuvio steps); lesson-answers.py; exit-ticket.json.
-check_lesson all ok; docs/figures/catalog.json rebuilt; docs/coverage/FY4.md is stale (not mine to write).
+Round 1 fix (check_lesson.py fy4-16: all ok).
+- lesson.md: Tiivistelmä tukivoima-bullet limited to a body sliding along a fixed surface, lift's normal force does work; "Yhtä korkeassa mäessä" added; "oikea pulkka" -> "todellinen pulkka"; Hissi paragraph says 649 N is 650 N rounded as in the graph.
+- inquiry.json: siirto Järkevyys "Jos ilmanvastusta ei olisi, ..."; hook "lähes yhtä kauas"; kelkka-taulukko text states no extra loss in the bend.
+- exercises/solutions.md: L1-03 and L2-03 got a **Voimakuvio:** step before Periaate (text form like the other solutions; no figures in solutions); exercises.json: both tasks now ask "Piirrä ... voimakuvio".
+- Not done: "kelkkamäki" -> "pulkkamäki" (title in meta.json/curriculum.json, hero label in figures.py; not mine to retitle); added choice item for tool choice (Polish 1), johtopaatos prompt (2), figure subscript sizes (5) skipped as not listed safe.
