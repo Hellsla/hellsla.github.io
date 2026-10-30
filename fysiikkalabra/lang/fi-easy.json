@@ -1277,5 +1277,27 @@
     "teacher": "Opettajalle",
     "course_heading": "Tutkimukset",
     "course_lead": "Nämä tutkimukset ovat valmiita. Sama tutkimus voi kuulua monelle kurssille."
+  },
+  "fbd": {
+    "lead": "Voimakuvio, nuolten pituudet oikeassa suhteessa:",
+    "lead_two": "Voimakuvio kummastakin kappaleesta, nuolten pituudet oikeassa suhteessa.",
+    "body_n": "Kappale {{n}}:",
+    "slope": "kappale on rinteellä, jonka kulma on {{deg}} astetta;",
+    "kind_gravity": "paino {{sym}} keskeltä {{dir}};",
+    "kind_normal": "tukivoima {{sym}} pinnasta {{dir}};",
+    "kind_friction": "kitka {{sym}} pintaa pitkin {{dir}};",
+    "kind_tension": "jännitysvoima {{sym}} narua pitkin {{dir}};",
+    "kind_applied": "voima {{sym}} {{dir}};",
+    "kind_other": "voima {{sym}} {{dir}};",
+    "kind_drag": "ilmanvastus {{sym}} {{dir}};",
+    "kind_buoyancy": "noste {{sym}} {{dir}};",
+    "kind_spring": "jousivoima {{sym}} {{dir}};",
+    "accel": "kiihtyvyys {{dir}}.",
+    "dir_right": "oikealle",
+    "dir_up": "ylös",
+    "dir_left": "vasemmalle",
+    "dir_down": "alas",
+    "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan",
+    "approx": "pienet voimat on piirretty vähän liian pitkiksi, jotta ne näkyvät;"
   }
 }

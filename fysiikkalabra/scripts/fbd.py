@@ -174,7 +174,7 @@ class FBD:
             d = _unit(self.a_dir)
             if d == (0.0, 0.0):
                 if math.hypot(*net) > eps: out.append("the object does not accelerate, so its forces must cancel (equal and opposite lengths)")
-            elif math.hypot(*net) <= eps or abs(_cross(_unit(net), d)) > 0.05 or _dot(net, d) <= 0:
+            elif math.hypot(*net) <= 1e-6 * big or abs(_cross(_unit(net), d)) > 0.05 or _dot(net, d) <= 0:   # a small net force counts too
                 out.append("the net force must point in the direction of the acceleration")
         return out
 

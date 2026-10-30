@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
+import courses, fbdspec, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -60,10 +60,11 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 
 
 def render_md(text, **kw):
-    """Markdown -> HTML, with LaTeX kept out of markdown's reach.
+    """Markdown -> HTML, with LaTeX kept out of markdown's reach and force-diagram specs drawn (scripts/fbdspec.py).
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
+    text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     maths = []
     def stash(m):
         x = m.group(0)
@@ -72,7 +73,7 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
-    return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
+    return fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
 
 
 UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"

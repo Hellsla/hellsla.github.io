@@ -14,7 +14,8 @@ its "**Voimakuvio:**" sentence as a fenced block; the block is the same in every
     F 40 0 työntö        a push: the arrow ends on the body (a hand pushing a box)
     T 40 90              a rope's tension, from the outline, along the rope
     F_v 20 ylös          air resistance; F_n buoyancy (noste); F_j a spring; other symbols are "other" forces
-    a oikea              the acceleration's direction (a word or degrees; 0 alone: the body does not accelerate):
+    a oikea              the acceleration's direction (a word or degrees; 0 alone: the body does not accelerate; on
+                         a slope ylös/alas mean up/down the slope, for forces the words are always absolute):
                          drawn beside the body in orange and used to check that the forces sum that way
     akselit 0            the x-y axes (x at this angle); `komponentit G` draws G's components on them, dashed
     ---                  a second body of a coupled system (each body gets its own diagram, side by side)
@@ -35,7 +36,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 FENCE = re.compile(r"```voimakuvio\n(.*?)```", re.S)
 WORDS = {"oikea": 0, "right": 0, "vasen": 180, "left": 180, "ylös": 90, "up": 90, "alas": 270, "down": 270}
 KIND = [(r"^G(_|$)", "gravity"), (r"^N(_|$)", "normal"), (r"^F_(\\?mu|μ)", "friction"), (r"^T(_|$)", "tension"),
-        (r"^F_v(_|$)", "drag"), (r"^F_n(_|$)", "buoyancy"), (r"^F_j(_|$)", "spring")]
+        (r"^F_(v|vastus)$", "drag"), (r"^F_(n|noste)$", "buoyancy"), (r"^F_(j|jousi)$", "spring")]
 W, H = 120, 70                     # the body rectangle (figure units)
 
 
@@ -44,9 +45,9 @@ def kind_of(sym):
 
 
 def tex_of(sym):
-    """G -> \\overline{G}, F_mu -> \\overline{F}_{\\mu}, T_1 -> \\overline{T}_{1}, F_v -> \\overline{F}_{\\text{v}}."""
+    """G -> \\overline{G}, F_mu -> \\overline{F}_{\\mu}, T_1 -> \\overline{T}_{1}, F_AP -> \\overline{F}_{\\text{AP}}."""
     base, _, sub = sym.partition("_")
-    sub = {"mu": r"\mu", "μ": r"\mu", "v": r"\text{v}", "n": r"\text{n}", "j": r"\text{j}"}.get(sub, sub)
+    sub = r"\mu" if sub in ("mu", "μ") else rf"\text{{{sub}}}" if sub.isalpha() else sub       # F_AP, F_i: names, upright
     return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
 
@@ -65,7 +66,10 @@ def parse(spec):
             elif t[0] == "komponentit": b["comps"] += t[1:]
             else:
                 if len(t) < 2: raise ValueError(f"voimakuvio: '{line}': a force needs its size")
-                b["forces"].append((t[0], float(t[1].replace(",", ".")), t[2] if len(t) > 2 else None, "työntö" in t[3:] or "push" in t[3:]))
+                rest = t[2:]; face = next((w for w in rest if w in SIDES), None); rest = [w for w in rest if w not in SIDES]
+                if kind_of(t[0]) == "normal": rest = [None] + rest                  # a normal force: its face is its direction
+                b["forces"].append((t[0], float(t[1].replace(",", ".")), rest[0] if rest else None,
+                                    "työntö" in rest or "push" in rest, face))
         if not b["forces"]: raise ValueError("voimakuvio: a body without forces")
         bodies.append(b)
     return bodies
@@ -88,15 +92,20 @@ def _local(cx, cy, ang, u, v):
     return cx + u * c - v * s, cy - (u * s + v * c)
 
 
-def direction(word, surface):
-    """A direction word or degrees -> degrees (y up). Along a slope, ylös/alas/oikea/vasen follow the surface."""
+def direction(word, surface=None):
+    """A direction word or degrees -> degrees (y up). Words are absolute (ylös = vertically up), except for the
+    acceleration on a slope: see along()."""
     if word is None: raise ValueError("voimakuvio: give the direction (a word or degrees)")
-    if word in WORDS:
-        deg = WORDS[word]
-        if surface not in (None, 0) and word in ("ylös", "up", "alas", "down", "oikea", "right", "vasen", "left"):
-            pass
-        return deg
+    if word in WORDS: return WORDS[word]
     return float(word.replace(",", "."))
+
+
+def along(word, surface):
+    """The acceleration's direction in degrees: on a slope, ylös/alas (up/down) mean up or down the slope."""
+    if surface not in (None, 0) and word in ("ylös", "up", "alas", "down"):
+        up = surface if surface > 0 else surface + 180                           # up the slope
+        return up if word in ("ylös", "up") else up + 180
+    return direction(word, surface)
 
 
 def _dir_words(deg):
@@ -107,89 +116,207 @@ def _dir_words(deg):
     return T("fbd.dir_deg", deg=f"{round(deg)}")
 
 
-def draw(spec, fid):
-    """The SVG of one spec (one or two bodies side by side)."""
+SIDES = {"@ala": (0, -1), "@ylä": (0, 1), "@vasen": (-1, 0), "@oikea": (1, 0)}                                          # a face of the body, in its own frame
+MIN_SHOWN = 0.25                   # a force under this share of the largest is drawn at this share, not to scale
+
+
+def _face(word):
+    """A contact face word (default the bottom) -> its outward unit vector in the body's frame."""
+    if word is None: return SIDES["@ala"]
+    if word not in SIDES: raise ValueError(f"voimakuvio: '{word}' is not a face: @ala, @ylä, @vasen or @oikea")
+    return SIDES[word]
+
+
+def _rot(ang, u, v):
+    """A vector of the body's frame (u along its width, v up its height) in the world frame (y up)."""
+    c, s = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+    return (u * c - v * s, u * s + v * c)
+
+
+def _surface(f, p, q, solid):
+    """A contact surface from p to q (figure coords), hatched on its solid side (unit vector solid, y up)."""
+    f.line(p[0], p[1], q[0], q[1], INK, 3, cap="round")
+    L = math.hypot(q[0] - p[0], q[1] - p[1]); ux, uy = (q[0] - p[0]) / L, (q[1] - p[1]) / L
+    k = 6.0
+    while k <= L - 4:
+        ax, ay = p[0] + ux * k, p[1] + uy * k
+        f.line(ax, ay, ax + solid[0] * 12 - ux * 8, ay - solid[1] * 12 - uy * 8, MUTED, 1.5)
+        k += 16
+
+
+def _forces(b, cx, cy, ang, shown):
+    """(sym, vec, at, kind, extra, description direction) of each force of a body; shown(size) is the drawn size."""
+    out, faces = [], set()
+    def taken(u):                                                                  # another force starts near u on the body
+        c, s_ = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+        return any(abs((at[0] - cx) * c - (at[1] - cy) * s_ - u) < 30 for _, _, _, at, k, _ in out if k not in ("gravity", "normal"))
+    order = sorted(b["forces"], key=lambda x: kind_of(x[0]) == "normal")            # the normal forces last: they dodge
+    for sym, size, word, push, face in order:
+        k = kind_of(sym); L = shown(size)
+        if k == "gravity":
+            out.append((sym, (0, -size), (0, -L), (cx, cy), k, {})); continue
+        if k in ("normal", "friction"):
+            if b["surface"] is None: raise ValueError(f"voimakuvio: {sym} needs `pinta`")
+            fo = _face(face); faces.add(face or "@ala")
+            nrm = _rot(ang, -fo[0], -fo[1])                                        # into the body, out of the surface
+            tan = _rot(ang, -fo[1], fo[0]) if fo[1] == 0 else _rot(ang, 1, 0)      # along the face: up a side, right on top/bottom
+            half = (W / 2, H / 2)
+            if k == "normal":
+                sgn = 1 if ang >= 0 else -1                                          # beside G's line, not on it, and
+                if fo[1] and taken(sgn * 0.3 * W): sgn = -sgn                       # away from the other forces' tails
+                off = 0.3 * (W if fo[1] else H) * sgn
+                ux, vy = (off, fo[1] * half[1]) if fo[1] else (fo[0] * half[0], off)
+                out.append((sym, (nrm[0] * size, nrm[1] * size), (nrm[0] * L, nrm[1] * L), _local(cx, cy, ang, ux, vy), k,
+                            dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
+                continue
+            sgn = {"oikea": 1, "right": 1, "ylös": 1, "up": 1, "vasen": -1, "left": -1, "alas": -1, "down": -1}.get(word)
+            if sgn is None: raise ValueError(f"voimakuvio: {sym}: friction is vasen, oikea, ylös or alas along the surface")
+            if not fo[1] and word in ("oikea", "right", "vasen", "left"): raise ValueError(f"voimakuvio: {sym}: on a side face friction is ylös or alas")
+            if fo[1] and word in ("ylös", "up", "alas", "down"):                    # up/down a slope
+                if ang == 0: raise ValueError(f"voimakuvio: {sym}: on a level surface friction is vasen or oikea")
+                if ang < 0: sgn = -sgn
+            t = (tan[0] * sgn, tan[1] * sgn)
+            ux, vy = (sgn * half[0], fo[1] * half[1]) if fo[1] else (fo[0] * half[0], sgn * half[1])  # the corner it starts at
+            out.append((sym, (t[0] * size, t[1] * size), (t[0] * L, t[1] * L), _local(cx, cy, ang, ux, vy), k,
+                        dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
+            continue
+        u = _unit(direction(word))
+        at = (cx, cy) if k == "buoyancy" else _outline(cx, cy, ang, (-u[0], -u[1]) if push else u)   # a push ends on the outline
+        extra = {"rope": u} if k == "tension" else {"v_rel": (-u[0], -u[1])} if k == "drag" else {}
+        if push: extra["push"] = True
+        out.append((sym, (u[0] * size, u[1] * size), (u[0] * L, u[1] * L), at, k, extra))
+    return out, faces
+
+
+def _box(cx, cy, tex, size=24):
+    w = figlib.visible_len(figlib.translate(tex)) * size * 0.52 + 8; h = size * 1.2
+    return (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)
+
+
+def _hits(box, pts):
+    return sum(1 for x, y in pts if box[0] - 2 <= x <= box[2] + 2 and box[1] - 2 <= y <= box[3] + 2)
+
+
+def _place(arrows, solid, width, top, bottom):
+    """A label offset for each arrow (tail, tip, tex, at_tail) that keeps the labels off each other, off the arrows,
+    off the body and the surfaces (`solid`: points that a label must not cover) and inside the figure: the first
+    candidate with the fewest collisions, along the arrow beyond its end first (the textbook place)."""
+    pts = list(solid)
+    for (x1, y1), (x2, y2), *_ in arrows:
+        L = math.hypot(x2 - x1, y2 - y1); k = max(2, int(L / 4))
+        pts += [(x1 + (x2 - x1) * i / k, y1 + (y2 - y1) * i / k) for i in range(k + 1)]
+    boxes, out = [], []
+    for (x1, y1), (x2, y2), tex, at_tail in arrows:
+        L = math.hypot(x2 - x1, y2 - y1) or 1; ux, uy = (x2 - x1) / L, (y2 - y1) / L
+        if at_tail: ex, ey, ux, uy = x1, y1, -ux, -uy                         # a push: labelled at its tail, outwards
+        else: ex, ey = x2, y2
+        nx, ny = -uy, ux
+        cands = [(ux * d, uy * d) for d in (24, 34)] + [(ux * 10 + nx * s * d, uy * 10 + ny * s * d) for d in (22, 32) for s in (1, -1)] \
+              + [(-ux * L * f + nx * s * 24, -uy * L * f + ny * s * 24) for f in (0.3, 0.55) for s in (1, -1)]
+        best = None
+        for i, (dx, dy) in enumerate(cands):
+            bx = _box(ex + dx, ey + dy, tex)
+            cost = 3 * _hits(bx, pts) + 40 * sum(1 for o in boxes if not (bx[2] < o[0] or o[2] < bx[0] or bx[3] < o[1] or o[3] < bx[1]))
+            cost += 200 * (bx[0] < 2 or bx[2] > width - 2 or bx[1] < top or bx[3] > bottom) + i * 0.5
+            if best is None or cost < best[0]: best = (cost, dx, dy, bx)
+        boxes.append(best[3]); out.append((best[1], best[2]))
+    return out, boxes
+
+
+def draw(spec, fid, _frame=None):
+    """The SVG of one spec (one or two bodies side by side). The physics checks of fbd.FBD run on the true sizes; a
+    force much smaller than the largest is drawn at MIN_SHOWN of it (the text alternative then says so). The figure is
+    drawn once on a tall canvas, then again cut to what it holds."""
     bodies = parse(spec)
     two = len(bodies) > 1
     big = max(f[1] for b in bodies for f in b["forces"])
-    scale = (80 if two else 105) / big
-    Hfig = 380
+    scale = (70 if two else 100) / big
+    shown = lambda size: max(size, MIN_SHOWN * big)
+    Hfig, shift = _frame or (460, 0)
     f = Fig(fid, Hfig, "")
-    words = []
+    words, approx, ys = [], False, []
     for i, b in enumerate(bodies):
-        cx = (150 + 300 * i) if two else 300; cy = Hfig / 2
+        cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
-        a_word = b["a"]
         a_dir = None
-        if a_word is not None:
-            if a_word in ("0", "nolla", "none"): a_dir = (0, 0)
-            else:
-                deg = direction(a_word, surf); along = surf is not None and a_word in ("ylös", "alas", "up", "down") and surf != 0
-                if along: deg = ang + (0 if a_word in ("ylös", "up") else 180) if ang >= 0 else ang + (180 if a_word in ("ylös", "up") else 0)
-                a_dir = _unit(deg)
-        d = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)
-        if surf is not None:                                                     # the surface under the body
-            x1, y1 = _local(cx, cy, ang, -W * 0.95, -H / 2); x2, y2 = _local(cx, cy, ang, W * 0.95, -H / 2)
-            fbd.ground(f, x1, x2, y1, angle=ang) if abs(ang) < 0.01 else f.line(x1, y1, x2, y2, MUTED, 2.5)
-        desc = []
-        for sym, size, word, push in b["forces"]:
-            k = kind_of(sym); tx = tex_of(sym)
-            if k == "gravity":
-                vec, at = (0, -size), (cx, cy)
-            elif k == "normal":
-                if surf is None: raise ValueError(f"voimakuvio: {sym} needs `pinta`")
-                nrm = (-math.sin(math.radians(ang)), math.cos(math.radians(ang)))
-                vec = (nrm[0] * size, nrm[1] * size)
-                at = _local(cx, cy, ang, (0.3 if ang >= 0 else -0.3) * W, -H / 2)
-                d.force(sym, vec, at, "normal", surface=ang, tex=tx); desc.append((k, sym, math.degrees(math.atan2(vec[1], vec[0])))); continue
-            elif k == "friction":
-                if surf is None: raise ValueError(f"voimakuvio: {sym} needs `pinta`")
-                t = _unit(ang)
-                sgn = {"oikea": 1, "right": 1, "vasen": -1, "left": -1}.get(word)
-                if sgn is None: sgn = {"ylös": 1, "up": 1, "alas": -1, "down": -1}.get(word)
-                if sgn is None: raise ValueError(f"voimakuvio: {sym}: friction is vasen, oikea, ylös or alas along the surface")
-                if word in ("ylös", "up", "alas", "down") and ang < 0: sgn = -sgn          # up a slope rising to the left
-                vec = (t[0] * size * sgn, t[1] * size * sgn)
-                at = _local(cx, cy, ang, sgn * W / 2, -H / 2)
-                d.force(sym, vec, at, "friction", surface=ang, tex=tx); desc.append((k, sym, math.degrees(math.atan2(vec[1], vec[0])))); continue
-            else:
-                deg = direction(word, surf); u = _unit(deg); vec = (u[0] * size, u[1] * size)
-                if push: at = _outline(cx, cy, ang, (-u[0], -u[1]))
-                elif k == "buoyancy": at = (cx, cy - 1)  # placeholder, replaced below
-                else: at = _outline(cx, cy, ang, u)
-                if k == "buoyancy": at = _outline(cx, cy, ang, u)
-                extra = {"rope": u} if k == "tension" else {"v_rel": (-u[0], -u[1])} if k == "drag" else {}
-                d.force(sym, vec, at, k, push=push, tex=tx, **extra); desc.append((k, sym, deg)); continue
-            d.force(sym, vec, at, k, tex=tx); desc.append((k, sym, 270))
+        if b["a"] is not None:
+            a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
+        forces, faces = _forces(b, cx, cy, ang, shown)
+        approx = approx or any(shown(x[1]) > x[1] for x in b["forces"])
+        true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
+        for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, k, tex=tex_of(sym), **extra)
+        axes = None
         if b["axes"] is not None:
-            ax = b["axes"]; ux, uy = _unit(ax), _unit(ax + 90)
+            axes = (_unit(b["axes"]), _unit(b["axes"] + 90))
+            for sym in b["comps"]: true.component(f"{sym}_x", sym, axes[0]); true.component(f"{sym}_y", sym, axes[1])
+        problems = true.check()                                                    # conventions: on the drawn one
+        if problems: raise ValueError(f"voimakuvio: " + "; ".join(problems))
+        solid = []                                                                 # points a label must not cover
+        for gx in range(-10, 11):
+            for gy in range(-5, 6): solid.append(_local(cx, cy, ang, gx * W / 20, gy * H / 10))
+        for face in sorted(faces):                                                 # the surfaces it touches
+            fo = _face(face); sol = _rot(ang, fo[0], fo[1])
+            al = (1, 0) if fo[1] else (0, 1); e = W * 0.95 if fo[1] else H * 1.4
+            p1 = _local(cx, cy, ang, fo[0] * W / 2 - al[0] * e, fo[1] * H / 2 - al[1] * e)
+            p2 = _local(cx, cy, ang, fo[0] * W / 2 + al[0] * e, fo[1] * H / 2 + al[1] * e)
+            _surface(f, p1, p2, sol)
+            solid += [(p1[0] + (p2[0] - p1[0]) * t / 30 + sol[0] * 6, p1[1] + (p2[1] - p1[1]) * t / 30 - sol[1] * 6) for t in range(31)]
+            ys += [p1[1], p2[1]]
+        arrows = []                                                                # (tail, tip, tex, labelled at the tail)
+        for sym, _, vec, (px, py), k, extra in forces:
+            tip = (px + vec[0] * scale, py - vec[1] * scale)
+            arrows.append(((px - vec[0] * scale, py + vec[1] * scale), (px, py), tex_of(sym), True) if extra.get("push")
+                          else ((px, py), tip, tex_of(sym), False))
+        comps = []
+        if axes:
             for sym in b["comps"]:
-                d.component(f"{sym}_x", sym, ux); d.component(f"{sym}_y", sym, uy)
-            ox, oy = cx + (W * 0.95 if not two else W * 0.75), cy - H * 1.9
-            for (vx, vy), lab in ((ux, "x"), (uy, "y")):
-                f.arrow(ox, oy, ox + vx * 36, oy - vy * 36, MUTED, 2, 10); f.tex(ox + vx * 50, oy - vy * 50, lab, "middle", MUTED)
-        d.draw()
+                sym_, vec, at = next((x[0], x[2], x[3]) for x in forces if x[0] == sym)
+                for ax, c in zip(axes, "xy"):
+                    kk = vec[0] * ax[0] + vec[1] * ax[1]; v = (ax[0] * kk, ax[1] * kk)
+                    comps.append((f"{sym}_{c}", sym, ax)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
+        motion = None
         if a_dir not in (None, (0, 0)):
             nx, ny = -a_dir[1], a_dir[0]
             if ny < 0 or (ny == 0 and nx < 0): nx, ny = -nx, -ny                  # beside the body, on its upper side
-            R = math.hypot(W, H) / 2 + 34
-            sx, sy = cx + nx * R - a_dir[0] * 30, cy - ny * R + a_dir[1] * 30
-            d.motion(r"\overline{a}", a_dir, (sx, sy), 60)
-        words.append((surf, desc, a_word))
-    f.label = describe(words, two)
-    svg = f.svg()
-    return svg
+            R = math.hypot(W, H) / 2 + 30
+            st = (cx + nx * R - a_dir[0] * 28, cy - ny * R + a_dir[1] * 28)
+            motion = st; arrows.append((st, (st[0] + a_dir[0] * 56, st[1] - a_dir[1] * 56), r"\overline{a}", False))
+        offs, boxes = _place(arrows, solid, 600, 2 - shift, 458 - shift)          # the same in both passes
+        ys += [y for bx in boxes for y in (bx[1], bx[3])] + [y for t, q, *_ in arrows for y in (t[1], q[1])] + [p[1] for p in solid]
+        d = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), wrong="drawn lengths: small forces enlarged (checked above on the true sizes)")
+        nf = len(forces)
+        for j, (sym, _, vec, at, k, extra) in enumerate(forces): d.force(sym, vec, at, k, tex=tex_of(sym), lab=offs[j], **extra)
+        for j, (cs, of, ax) in enumerate(comps): d.component(cs, of, ax, lab=offs[nf + j])
+        if axes:
+            ox, oy = cx + (W * 0.75 if two else W * 1.5), cy - H * 1.5
+            for (vx, vy), lab in zip(axes, "xy"):
+                f.arrow(ox, oy, ox + vx * 36, oy - vy * 36, MUTED, 2, 10); f.tex(ox + vx * 50, oy - vy * 50, lab, "middle", MUTED)
+            ys += [oy - 60, oy + 40]
+        d.draw()
+        if motion: d.motion(r"\overline{a}", a_dir, motion, 56, lab=offs[-1])
+        words.append((surf, [(k, sym, math.degrees(math.atan2(vec[1], vec[0]))) for sym, vec, _, _, k, _ in forces], b["a"]))
+    f.label = describe(words, two, approx)
+    if _frame is None:                                                             # again, cut to what it holds
+        y0, y1 = min(ys) - 8, max(ys) + 8
+        return draw(spec, fid, (round(y1 - y0), round(y0)))
+    return f.svg()
 
 
-def describe(words, two):
+def _plain(sym):
+    """F_mu -> Fμ, T_1 -> T1: a symbol for a screen reader."""
+    base, _, sub = sym.partition("_")
+    return base + {"mu": "μ"}.get(sub, sub)
+
+
+def describe(words, two, approx=False):
     """The figure's text alternative in the page language, from the spec."""
-    T = i18n.t; out = [T("fbd.lead_two") if two else T("fbd.lead")]
+    T = i18n.t; out = [T("fbd.lead_two") if two else T("fbd.lead")] + ([T("fbd.approx")] if approx else [])
     for i, (surf, desc, a) in enumerate(words):
         part = [T("fbd.body_n", n=i + 1)] if two else []
         if surf not in (None, 0): part.append(T("fbd.slope", deg=f"{abs(round(surf))}"))
         for k, sym, deg in desc:
-            part.append(T(f"fbd.kind_{k}", sym=sym.replace("_", " ").replace("mu", "μ"), dir=_dir_words(deg)))
-        if a not in (None, "0", "nolla", "none"): part.append(T("fbd.accel", dir=_dir_words(direction(a, surf) if a not in ("ylös", "alas", "up", "down") or not surf else (surf if a in ("ylös", "up") else surf + 180))))
+            part.append(T(f"fbd.kind_{k}", sym=_plain(sym), dir=_dir_words(deg)))
+        if a not in (None, "0", "nolla", "none"): part.append(T("fbd.accel", dir=_dir_words(along(a, surf))))
         out.append(" ".join(part))
     return " ".join(out)
 
@@ -207,7 +334,7 @@ def render(text):
 
 def restore(html_text, figs):
     for tok, svg in figs.items():
-        html_text = re.sub(rf"(?:<p>)?{tok}(?:</p>|<br\s*/?>)?", f'<div class="fig fbd">{svg}</div>', html_text)
+        html_text = re.sub(rf"(?:<p>)?{tok}(?:</p>|<br\s*/?>)?", lambda m, svg=svg: f'<div class="fig fbd">{svg}</div>', html_text)
     return html_text
 
 
@@ -227,7 +354,7 @@ def missing(text):
 
 def sources():
     """Every text that can hold a model solution: exercise solutions, lessons, inquiry and Sovella files."""
-    for lang in i18n.LANGS if hasattr(i18n, "LANGS") else ("fi", "en", "fi-easy"):
+    for lang in i18n.languages():
         base = ROOT / "content" / lang
         if not base.is_dir(): continue
         yield from sorted(base.rglob("solutions.md"))
@@ -258,15 +385,64 @@ def _strings(node):
         for v in node: yield from _strings(v)
 
 
+def _add(text, specs, k):
+    """text with a diagram after each of its Voimakuvio steps that has none, taking specs from k on: (text, k)."""
+    out, i = [], 0
+    for m in STEP.finditer(text):
+        end = text.find("\n\n", m.end()); end = len(text) if end < 0 else end    # the end of the step's paragraph
+        line = text.find("\n**", m.end())
+        if 0 <= line < end: end = line                                             # (or of its line, in solutions.md)
+        nxt = re.search(r"\*\*[^*\n]+:\*\*", text[end:])
+        if "```voimakuvio" in text[end: end + (nxt.start() if nxt else len(text))]: continue
+        if k >= len(specs): raise SystemExit(f"more Voimakuvio steps than specs ({len(specs)})")
+        out.append(text[i:end] + "\n```voimakuvio\n" + specs[k].strip() + "\n```"); i = end; k += 1
+    return "".join(out) + text[i:], k
+
+
+def insert(specs_file):
+    """Put the diagrams of a JSON file {"<path under content/fi>": [spec, ...]} after the Voimakuvio steps of that
+    file in every language, in order (a step that already has its diagram keeps it and takes no spec). The k-th spec
+    goes to the k-th step without a diagram in each language, so the languages must have the same steps. In a JSON
+    file only the strings that change are re-encoded, so the file keeps its layout."""
+    import json
+    todo = json.loads(pathlib.Path(specs_file).read_text())
+    for rel, specs in todo.items():
+        for spec in specs: draw(spec, "check")                                    # every spec draws before any file changes
+        for lang in i18n.languages():
+            p = ROOT / "content" / lang / rel
+            if not p.exists(): continue
+            raw = p.read_text(); k = 0
+            if p.suffix == ".json":
+                def sub(m):
+                    nonlocal k
+                    val = json.loads(m.group(0))
+                    if not STEP.search(val): return m.group(0)
+                    new, k = _add(val, specs, k)
+                    return json.dumps(new, ensure_ascii=False) if new != val else m.group(0)
+                new = re.sub(r'"(?:[^"\\]|\\.)*"', sub, raw)
+                json.loads(new)
+            else: new, k = _add(raw, specs, 0)
+            if k != len(specs): raise SystemExit(f"{p.relative_to(ROOT)}: {k} steps without a diagram, {len(specs)} specs")
+            p.write_text(new); print(f"{p.relative_to(ROOT)}: {k} diagrams")
+
+
 if __name__ == "__main__":
+    if len(sys.argv) > 2 and sys.argv[1] == "insert":
+        insert(sys.argv[2]); sys.exit(0)
     if len(sys.argv) > 1 and sys.argv[1] == "show":
         p = pathlib.Path(sys.argv[2]); text = p.read_text()
         if p.suffix == ".json":
             import json; text = "\n".join(_strings(json.loads(text)))
         out = ROOT / "preview" / "fbd.html"; out.parent.mkdir(exist_ok=True)
-        figs = [draw(m.group(1), f"fbd-{i}") for i, m in enumerate(FENCE.finditer(text))]
-        out.write_text('<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="../site/vendor/katex/katex.min.css">'
-                       '<body style="max-width:640px;margin:auto">' + "".join(f"<div style='border:1px solid #ccc;margin:8px'>{s}</div>" for s in figs))
+        figs = []
+        for i, m in enumerate(FENCE.finditer(text)):
+            try: figs.append(draw(m.group(1), f"fbd-{i}"))
+            except ValueError as e: print(f"diagram {i + 1}: {e}"); figs.append(f"<pre>{html.escape(str(e))}</pre>")
+        out.write_text('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
+                       '<link rel="stylesheet" href="../site/vendor/katex/katex.min.css"><link rel="stylesheet" href="../site/site.css">'
+                       '<script src="../site/vendor/katex/katex.min.js"></script><script src="../site/vendor/katex/contrib/auto-render.min.js"></script>'
+                       '<body style="max-width:640px;margin:auto">' + "".join(f"<div class='fig fbd' style='border:1px solid #ccc;margin:8px'>{s}</div>" for s in figs)
+                       + '<script>renderMathInElement(document.body,{delimiters:[{left:"$",right:"$",display:false}]})</script>')
         print(f"wrote {out.relative_to(ROOT)}: {len(figs)} diagrams")
     else:
         sys.exit(1 if check() else 0)

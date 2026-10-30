@@ -1277,5 +1277,27 @@
     "teacher": "Opettajalle",
     "course_heading": "Tutkimukset",
     "course_lead": "Julkaistut tutkimukset. Sama tutkimus voi kuulua usealle kurssille."
+  },
+  "fbd": {
+    "lead": "Voimakuvio, nuolet mittakaavassa:",
+    "lead_two": "Voimakuviot kummastakin kappaleesta, nuolet mittakaavassa.",
+    "body_n": "Kappale {{n}}:",
+    "slope": "kappale on {{deg}} asteen kaltevalla pinnalla;",
+    "kind_gravity": "paino {{sym}} keskipisteestä {{dir}};",
+    "kind_normal": "tukivoima {{sym}} kosketuspinnasta {{dir}};",
+    "kind_friction": "kitka {{sym}} pinnan suuntaisesti {{dir}};",
+    "kind_tension": "jännitysvoima {{sym}} köyden suuntaan {{dir}};",
+    "kind_applied": "voima {{sym}} {{dir}};",
+    "kind_other": "voima {{sym}} {{dir}};",
+    "kind_drag": "ilmanvastus {{sym}} {{dir}};",
+    "kind_buoyancy": "noste {{sym}} {{dir}};",
+    "kind_spring": "jousivoima {{sym}} {{dir}};",
+    "accel": "kiihtyvyys {{dir}}.",
+    "dir_right": "oikealle",
+    "dir_up": "ylös",
+    "dir_left": "vasemmalle",
+    "dir_down": "alas",
+    "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan nähden",
+    "approx": "pienet voimat on piirretty pitemmiksi kuin mittakaava antaisi;"
   }
 }

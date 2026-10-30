@@ -1277,5 +1277,27 @@
     "teacher": "For the teacher",
     "course_heading": "Investigations",
     "course_lead": "Published investigations. The same investigation can belong to several courses."
+  },
+  "fbd": {
+    "lead": "Force diagram, arrows to scale:",
+    "lead_two": "Force diagrams of both bodies, arrows to scale.",
+    "body_n": "Body {{n}}:",
+    "slope": "the body is on a {{deg}}-degree slope;",
+    "kind_gravity": "weight {{sym}} from the centre {{dir}};",
+    "kind_normal": "normal force {{sym}} from the contact surface {{dir}};",
+    "kind_friction": "friction {{sym}} along the surface {{dir}};",
+    "kind_tension": "tension {{sym}} along the rope {{dir}};",
+    "kind_applied": "force {{sym}} {{dir}};",
+    "kind_other": "force {{sym}} {{dir}};",
+    "kind_drag": "air resistance {{sym}} {{dir}};",
+    "kind_buoyancy": "buoyancy {{sym}} {{dir}};",
+    "kind_spring": "spring force {{sym}} {{dir}};",
+    "accel": "acceleration {{dir}}.",
+    "dir_right": "to the right",
+    "dir_up": "up",
+    "dir_left": "to the left",
+    "dir_down": "down",
+    "dir_deg": "at {{deg}} degrees to the horizontal",
+    "approx": "small forces are drawn longer than to scale;"
   }
 }
