@@ -2211,7 +2211,7 @@
   },
   {
     "term": "kalteva taso",
-    "definition": "Vaakatasoon nähden vinossa oleva pinta eli rinne, jonka kaltevuuskulma on α. Kaltevalla tasolla paino jaetaan rinteen suuntaiseen komponenttiin mg sin α ja pintaa vastaan kohtisuoraan komponenttiin mg cos α, ja tukivoima on mg cos α.",
+    "definition": "Vaakatasoon nähden vinossa oleva pinta eli rinne, jonka kaltevuuskulma on α. Kaltevalla tasolla paino jaetaan rinteen suuntaiseen komponenttiin mg sin α ja pintaa vastaan kohtisuoraan komponenttiin mg cos α, ja tukivoima on mg cos α, kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa.",
     "lessons": [
       "fy4-6"
     ],
@@ -2236,7 +2236,7 @@
   },
   {
     "term": "rajanopeus",
-    "definition": "Nopeus, johon väliaineessa putoavan kappaleen nopeus asettuu, kun väliaineen vastus on kasvanut yhtä suureksi kuin kappaleen paino. Silloin kokonaisvoima ja kiihtyvyys ovat nolla. Samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus.",
+    "definition": "Nopeus, johon väliaineessa putoavan kappaleen nopeus asettuu, kun väliaineen vastus on kasvanut yhtä suureksi kuin kappaleen paino. Silloin kokonaisvoima ja kiihtyvyys ovat nolla. Samankokoisista ja samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus.",
     "lessons": [
       "fy4-14"
     ],

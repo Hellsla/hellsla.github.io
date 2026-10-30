@@ -73,7 +73,7 @@ def hero():
     ramp's foot, so the ramp gets steeper."""
     f = H.hero("fy46-hero", "Kuvitus: muuttopäivä kerrostalon pihalla. Pakettiauton takaovet ovat auki, ja auton lattialta laskeutuu "
                "puinen lastaussilta vinosti maahan. Sillan keskellä on pahvinen muuttolaatikko, joka pysyy paikallaan. Auton sisällä "
-               "on lisää laatikoita, ja muuttaja kantaa yhtä laatikkoa sillan vieressä.")
+               "on lisää laatikoita, ja muuttaja kantaa yhtä laatikkoa sillan vieressä. Taivaalla olevassa pienessä kuvassa jyrkempi silta, jolla laatikko liukuu alas, ja sininen nuoli osoittaa liikkeen suunnan.")
     H.sky(f, "fy46h", 470, ICE, GLASS)
     H.sun(f, "fy46h", 1080, 90, 40, rays=False)
     H.cloud(f, 300, 90, 1.1); H.cloud(f, 760, 60, 0.8)
@@ -106,6 +106,17 @@ def hero():
     # the loading ramp from the van floor to the asphalt
     L = math.hypot(x_rear - 210, 500 - (y_floor + 6))
     ang = math.degrees(math.atan2(500 - (y_floor + 6), x_rear - 210))
+    # the steeper case of the Miksi question, as an inset in the sky: a steeper ramp, the box slides down it (blue v, not a force)
+    f.rect(540, 22, 220, 158, WHITE, INK, 2, 10)
+    f.line(556, 160, 744, 160, WOOD_DARK, 3)
+    a2 = 30; t2 = _dir(a2); n2 = (-t2[1], t2[0])
+    plank(f, 560, 160, 170, a2, thick=9)
+    box_on_slope(f, 560, 160, 112, 50, 38, a2)
+    bx, by = 560 + 112 * t2[0] + 19 * n2[0] + 36 * n2[0], 160 - 112 * t2[1] - 19 * n2[1] - 36 * n2[1]
+    ex, ey = bx - 56 * t2[0], by + 56 * t2[1]
+    f.line(bx, by, ex, ey, "#1971c2", 4)
+    hd = [(ex, ey), (ex + 14 * t2[0] + 7 * n2[0], ey - 14 * t2[1] - 7 * n2[1]), (ex + 14 * t2[0] - 7 * n2[0], ey - 14 * t2[1] + 7 * n2[1])]
+    f.path("M" + " L".join(f"{n(u)},{n(w)}" for u, w in hd) + " Z", "#1971c2", None, 0)
     plank(f, 210, 500, L, ang)
     for k in range(1, 6):                                          # the grain of the wood
         tt = k / 6; x = 210 + tt * (x_rear - 210); y = 500 - tt * (500 - y_floor - 6)
@@ -169,10 +180,10 @@ def kuorma():
     return f.svg()
 
 
-def kalteva():
+def kalteva(deg=30.0, name="kalteva"):
     """Kaava: a box at rest on a slope, the situation picture and the force diagram with the weight's components dashed."""
-    deg, G = 30.0, 100.0
-    f = Fig("fy46-kalteva", 380, "Kaksi kuvaa. Vasemmalla tilannekuva: laatikko on paikallaan puisella lankulla, joka nousee oikealle "
+    G = 100.0
+    f = Fig("fy46-" + name, 380, "Kaksi kuvaa. Vasemmalla tilannekuva: laatikko on paikallaan puisella lankulla, joka nousee oikealle "
             "kulmassa alfa vaakatasoon nähden. Oikealla laatikon voimakuvio, laatikko kallistettuna suorakulmiona kuten lankulla: "
             "paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin ja lepokitka alapinnan "
             "ylemmästä kulmasta pinnan suuntaisesti ylös rinnettä. Painon komponentit on piirretty katkoviivoin keskipisteestä: "
@@ -332,7 +343,7 @@ def mittaus():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "kitka": kitka, "kuorma": kuorma, "kalteva": kalteva, "esimerkki": esimerkki,
+FIGURES = {"hero": hero, "kitka": kitka, "kuorma": kuorma, "kalteva-ydin": lambda: kalteva(40.0, "kalteva-ydin"), "kalteva": kalteva, "esimerkki": esimerkki,
            "virhe": virhe, "valitse-a": valitse_a, "valitse-b": valitse_b, "valitse-c": valitse_c, "valitse-d": valitse_d,
            "malli-veto": malli_veto, "mittaus": mittaus}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
@@ -340,6 +351,7 @@ REUSE = {
     "hero": "decorative",
     "kitka": "reveals: static friction growing with the pull up to mu0 N, then kinetic friction mu N (a theory graph)",
     "kuorma": "reveals: static friction pointing forward on a box on an accelerating truck bed (a theory figure)",
+    "kalteva-ydin": "reveals: the force diagram of a box at rest on a 40° slope with the weight's components (a theory figure)",
     "kalteva": "reveals: the force diagram of a box at rest on a slope with the weight's components (a theory figure)",
     "esimerkki": "reveals: the force diagram of the worked example (box sliding down a 25° ramp)",
     "virhe": "safe: a deliberately wrong diagram (normal force vertical on a slope) for error-finding; its description lists the arrows, not the error",

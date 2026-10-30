@@ -6,7 +6,7 @@
 // Top left: the situation picture (tilannekuva), the plank on a post with the box; the velocity is a thin blue arrow
 // beside the box, never a force. Right: the force diagram (voimakuvio), the box a plain rectangle tilted with the slope,
 // every force from its point of application (G from the centre, N from the bottom face, friction from the uphill bottom
-// corner outside the box), all to one scale, the weight's components dashed (checkbox). Bottom left: an (α, F_μ) graph
+// corner outside the box), all to one scale for the chosen mass, the weight's components dashed (checkbox). Bottom left: an (α, F_μ) graph
 // that marks the friction at every angle the student has tried (a filled point at rest, a ring while sliding).
 // On a narrow screen (#sim-root under 500 px) the three panels stack at the full 600 width. Every canvas text goes
 // through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
@@ -14,10 +14,10 @@ new p5((p) => {
   const g = 9.81, LEN = 2.0;                                              // m/s²; the plank's length (m)
   const SURF = { puu: [0.50, 0.30], muovi: [0.30, 0.20], kumi: [0.80, 0.60] };   // model values μ0, μ
   const YR = { 2: [14, 2], 3: [20, 4], 4: [28, 4] };                       // graph: F_μ range and tick step (N) per mass
-  const HN = { sit: 300, dia: 480, gra: 270 };                            // panel heights when stacked on a phone
+  const HN = { sit: 250, dia: 400, gra: 230 };                            // panel heights when stacked on a phone
   const RED = [201, 42, 42], BLUE = [25, 113, 194], INKC = [31, 41, 51], MUTEDC = [107, 116, 128], GRID = [227, 220, 203];
-  let narrow = false, laid = false, OY = 0, U = 1, W = 360, S = 4.0;      // layout; panel offset; stroke scale; situation width; px per newton
-  const D = { x: 480, y: 170, w: 70, h: 44 };                             // force diagram: the box's rectangle (set per layout)
+  let narrow = false, laid = false, OY = 0, U = 1, W = 360, S = 4.2, S0 = 4.2;      // layout; panel offset; stroke scale; situation width; px per newton
+  const D = { x: 468, y: 175, w: 92, h: 58 };                             // force diagram: the box's rectangle (set per layout)
   const GR = { x0: 52, x1: 330, y0: 128, h: 100 };                        // graph: origin and plot size (panel-local, set per layout)
   let btn, slA, lA, selM, selP, selSpeed, cbKomp, readout;
   let d = 0, v = 0, running = false, done = false, trail = {}, trailKey = '', labels = [];
@@ -86,7 +86,7 @@ new p5((p) => {
                         G: M.G, Gx: M.Gx, Gy: M.Gy, N: M.N, Fmax: M.Fmax, Fmu: M.Fmu, a: M.a, liukuu: M.slides ? 1 : 0,
                         v, d, running, done, labels: null };
     U = narrow ? 0.8 * k : Math.max(1, k * 0.8);
-    const fh = narrow ? Math.round(14 * k) : Math.round(11 * k * (k > 1.3 ? 1.12 : 1));
+    const fh = Math.round((narrow ? 14 : 13) * k);
     labels = [];
     p.background(250);
     OY = 0; p.push(); situation(M, sMax - d, fh); p.pop();
@@ -99,11 +99,11 @@ new p5((p) => {
   function setLayout(n) {
     if (n === narrow && laid) return false;
     laid = true; narrow = n;
-    if (n) { W = 600; S = 5.5; D.x = 300; D.y = 232; D.w = 96; D.h = 60; GR.x0 = 86; GR.x1 = 560; GR.y0 = 210; GR.h = 160; p.resizeCanvas(600, HN.sit + HN.dia + HN.gra); }
-    else { W = 360; S = 4.0; D.x = 480; D.y = 180; D.w = 70; D.h = 44; GR.x0 = 52; GR.x1 = 330; GR.y0 = 128; GR.h = 100; p.resizeCanvas(600, 400); }
+    if (n) { W = 600; S0 = 4.5; D.x = 300; D.y = 190; D.w = 120; D.h = 74; GR.x0 = 86; GR.x1 = 560; GR.y0 = 170; GR.h = 130; p.resizeCanvas(600, HN.sit + HN.dia + HN.gra); }
+    else { W = 360; S0 = 4.2; D.x = 468; D.y = 175; D.w = 92; D.h = 58; GR.x0 = 52; GR.x1 = 330; GR.y0 = 128; GR.h = 100; p.resizeCanvas(600, 400); }
     return true;
   }
-  const plankLen = () => narrow ? 330 : 250;
+  const plankLen = () => narrow ? 270 : 250;
   const boxSize = (m) => { const q = narrow ? 1.3 : 1; return [(m === 2 ? 40 : m === 3 ? 48 : 56) * q, (m === 2 ? 30 : m === 3 ? 36 : 42) * q]; };
 
   // --- the situation picture: a wall, the floor, the plank on a post, the box on the plank, the velocity beside it ---
@@ -146,6 +146,7 @@ new p5((p) => {
     p.noStroke(); p.fill(255);
     if (narrow) { p.rect(0, 0, 600, HN.dia); p.stroke(220); p.strokeWeight(1); p.line(0, 0, 600, 0); lab(__('voimakuvio'), 8, fh + 4, 'l', fh, INKC); }
     else { p.rect(360, 0, 240, 400); p.stroke(220); p.strokeWeight(1); p.line(360, 0, 360, 400); lab(__('voimakuvio'), 368, 18, 'l', fh, INKC); }
+    S = S0 * 4 / M.m;                                                      // one scale per mass: the arrows fill the panel
     const c = Math.cos(M.r), sn = Math.sin(M.r), t = [c, sn], nr = [-sn, c];        // up the slope and out of it (y up)
     const P = (u, w) => [D.x + u * c - w * sn, D.y - (u * sn + w * c)];              // body frame (u along, w across) to canvas
     p.push(); p.translate(D.x, D.y); p.rotate(-M.r); p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2 * U); p.rect(-D.w / 2, -D.h / 2, D.w, D.h); p.pop();

@@ -9,3 +9,10 @@ Draft, round 1. Every line of check_lesson.py fy4-6 says ok.
 - `glossary.json`: kitka, lepokitka, liikekitka, kitkakerroin, kalteva taso; fy4-6 added to paino.
 
 Lint: 7 warnings, all false positives ("μ0 N" is read as "0 N").
+
+## Round 1 fix
+- N moved uphill in kalteva, esimerkki, valitse-a..d; N = mg cos α conditions stated (lesson, virhekäsitys, Tiivistelmä, glossary); new figure kalteva-ydin after the components paragraph.
+- Inquiry: α as LaTeX, one wood μ range, check-2 wording, limit-angle claim now argued from the formula (not measured), hook names empty/full box.
+- Exercises: rounded answers, L2-01 varied, L2-04 asks the margin, L3-03 reasoning, L1-01/L1-05 diagram line, L2-03 provenance.
+- Sim: larger diagram (per-mass scale, 13/14 px labels), shorter phone layout. Hero: steeper-ramp inset.
+- Not changed: air resistance wording in L1-02/03, L2-02 (fair simplification C).
