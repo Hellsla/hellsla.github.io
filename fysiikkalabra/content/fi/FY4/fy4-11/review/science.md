@@ -1,20 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 112ed45a9ee7889a
+VERDICT: PASS
+CONTENT-HASH: ff2f1b681aa38dda
 
 ## Blocking
-- lesson.md:346, 348, 350, 395, 400, 401, 461; inquiry.json:385, 389, 607, 611 (and the glossary term *törmäysaika*): the mean force is written $F_\text{k}$, but the momentum chapter fy4-9 (lesson.md:489–543, its solutions) writes it $F_\text{ka}$. The same quantity carries two symbols in consecutive chapters (A, internal consistency across chapters). Fix: use $F_\text{ka}$ everywhere in fy4-11, including the axis label and the two bar labels of figure 6 (the "Kuvaaja mittakaavassa … keskimääräinen voima" figure) and the glossary entry, or change both chapters to one agreed symbol.
 
 ## Polish
-- lesson-answers.py, comment `imp25-…`: it says 41,8 km/h for 60 km/h. The code gives 40,7 km/h, which matches the "noin 41" in the text. Also `sp-100` says 70,7 m, but the code gives 70,64 m, which the text correctly shows as 70,6 m. Fix both comments.
-- inquiry.json `tilasto`: the 97–98 % belt use is for front seats only, while the deaths include rear-seat passengers. Adding "etupenkillä" to the feedback "vyöttömiä on liikenteessä muutama prosentti" would keep the comparison exact. The conclusion ("moninkertainen") still holds.
-- lesson.md:288: OTI says the 114 "olisi voinut eri todennäköisyyksillä selvitä". "Lautakuntien arvion mukaan" already carries this hedge, so the wording is acceptable.
+- glossary.json:2477 (*törmäysaika*) — the definition still writes the mean force as `F_k = mΔv/Δt`. Round 1 asked for this to change with the rest. The file is outside the hash and not rendered, so this is not blocking. — Write `F_ka`, as in the lesson and fy4-9.
+- lessons/FY4/fy4-11/lesson-answers.py, comments `imp25-…` and `sp-…` (carried over from round 1) — the comments say 41,8 km/h and 70,7 m, but the code gives 40,7 km/h and 70,64 m. The text correctly says "noin 41" and 70,6 m. — Fix both comments.
+- inquiry.json `tilasto` (carried over) — the 97–98 % belt use is for front seats only, but the deaths also include rear-seat passengers. — Add "etupenkillä" to "vyöttömiä on liikenteessä muutama prosentti". The conclusion still holds.
 
 ## Checked
-- I recomputed every number in one script with my own formulas (pysähtymismatka, törmäysnopeus, $a=\mu g$, impulse): 50/100 km/h 13,9/10,7/24,6 and 27,8/42,9/70,6 m, ratio 2,87; 60 km/h → 40,7 km/h at 25 m; 80 km/h on ice 165 m; siirto 53,5 km/h; check-2 62,96 m; worked example 71,9 m; Δp 1042 kg·m/s, 10,4 kN / 104 kN, 14 × G; μ = 0,917. All are correct.
-- Sources verified. The OTI-Turvavyöraportti 2023 gives 278 belted and 198 unbelted car and van occupants killed and 114 who could have survived. Liikenneturva's calculator assumes 1 s and 9 m/s². Taloustaito 2025 gives 98 % and 97 % for 2024. The provenance labels are right: "statistics" with source_note, "example" with "pyöristetyt esimerkkiarvot", and sim numbers called mallin arvoja.
-- The model's conditions (level road, constant deceleration, no air resistance, full grip) are stated at the formulas, in the worked example and in the sim box.
-- Force diagram (figure 2): G, N of equal length, friction backwards at the tyres and about 0,92 G, no force of motion; v and a are drawn beside the car, not as forces.
-- Figures 3 and 6 are to scale. In figure 4 the unbelted passenger's gap is consistent (relative travel 0,56 m before impact).
-- sim.js implements the model exactly, including a hit during the reaction time. simState gives sR, sJ, sP, vImpact and a at each experiment's initial state, and every experiment locks all but one parameter.
-- Every prediction, experiment question, error-spotting item and check has exactly one correct option, and each distractor's feedback is correct.
-- The exit ticket and the explain model answers agree with the theory. The airbag is described as working with the belt.
+- Rename: $F_\text{ka}$ is now used in lesson.md (the impulse equation, the formula, the variable list and the summary), in figure 6 (axis label and both bar labels, screenshot checked at 390 px) and in inquiry.json (`tormaystesti` feedback, and the check-3 criteria and model answer). No $F_\text{k}$ is left in the lesson, sim or answers files. This matches fy4-9.
+- I recomputed every number in one script with my own formulas, and all are correct: 24,6 and 70,6 m (ratio 2,87); a 40,7 km/h hit at 25 m; 27,4 and 164,6 m; the example ≈ 72 m; μ = 0,917; 10,4 and 104 kN (14 G); 42 %; siirto 53,46 km/h; virhe 138,9 vs 10,7 m; 1,96; 62,96 m; 40 m.
+- The model's conditions (level road, constant deceleration, no air resistance, full grip) are stated at the formula, in the worked example, in check 2 and in the sim box. $a=\mu g$ is derived from $N=mg$ on a level road.
+- The force diagram (figure 2) shows G and N equal and friction as the only horizontal force, pointing backwards. v and a are drawn beside the car, not as forces. Figures 3 and 6 are to scale.
+- sim.js implements the model, including a hit during the reaction time. Each experiment locks every parameter except the one it varies, and simState gives sR, sJ, sP, vImpact and a.
+- Every choice item has exactly one correct option, and each distractor's feedback is correct. The mechanisms are right: Newton I, a longer Δt, and the airbag working with the belt.
