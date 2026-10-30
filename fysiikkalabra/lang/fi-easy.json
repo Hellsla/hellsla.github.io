@@ -243,7 +243,8 @@
     "self_assess_lead": "Merkitse kohdat, jotka sinun vastauksessasi jo on.",
     "criteria_done": "Mitä vastauksestani puuttuu?",
     "check_practice": "Ehdotus: yksi vastaus ei kerro kaikkea osaamisestasi. Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja tee <a href=\"#exercises\">ydintehtävät</a>.",
-    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>."
+    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
+    "answer_in": "Vastaus yksikössä {{unit}}"
   },
   "js": {
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",

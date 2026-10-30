@@ -243,7 +243,8 @@
     "why": "Miksi?",
     "fold_title": "Tee ennusteet ennen tutkimista",
     "fold_question_one": "{{n}} kysymys",
-    "fold_question_many": "{{n}} kysymystä"
+    "fold_question_many": "{{n}} kysymystä",
+    "answer_in": "Vastaus yksikössä {{unit}}"
   },
   "js": {
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",

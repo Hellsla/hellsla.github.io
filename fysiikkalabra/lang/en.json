@@ -243,7 +243,8 @@
     "self_assess_lead": "Tick the points your own answer already contains.",
     "criteria_done": "What is missing from my answer?",
     "check_practice": "Suggestion: one answer does not show everything you can do, but review the <a href=\"#selita\">theory summary</a> and do the <a href=\"#exercises\">core exercises</a>.",
-    "further_practice": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>."
+    "further_practice": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>.",
+    "answer_in": "Answer in {{unit}}"
   },
   "js": {
     "check_number": "Type a number, for example 9.81.",

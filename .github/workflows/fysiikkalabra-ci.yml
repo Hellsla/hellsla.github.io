@@ -44,6 +44,8 @@ jobs:
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
+      - name: built pages are accessible as static HTML (field names, aria references, unique ids, figure text alternatives, button names, page language; teacher 2026-10-30)
+        run: python scripts/check_a11y.py site
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
         run: python scripts/test_svgids.py && python scripts/svgids.py site
       - name: force diagrams obey their physics (scripts/fbd.py, docs/force-diagrams.md)
