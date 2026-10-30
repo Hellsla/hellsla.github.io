@@ -212,6 +212,25 @@ ol.lessons li.live a:hover{text-decoration:underline}
 ol.lessons li.soon{color:var(--ink-2)}ol.lessons li.soon>span:not(.l-num):not(.tag){flex:1 1 9rem;min-width:0;padding:.6rem 0;hyphens:auto;overflow-wrap:break-word}
 ol.lessons li>.tag{margin-left:auto}
 ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:0 .55rem;line-height:1.6}
+/* Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): on the front page their own section after
+   the national modules, rows as the catalogue's; the course page reuses the module page's parts (eyebrow, notes,
+   the numbered list with "suunnitteilla" tags) and adds plain lists for goals, ways of working, the report sections
+   and the chapters to prepare with. No cards, the one reading column. */
+.local-courses{margin-top:2.8rem!important}
+.notice.local-status{border-left-color:var(--copper);margin-bottom:1.2rem}
+.local-desc{max-width:38rem}
+.local-goals,.local-report{max-width:38rem;padding-left:1.3rem}
+.local-goals li::marker,.local-report li::marker{color:var(--accent-deep);font-weight:700}
+dl.local-modes{max-width:38rem;margin:.6rem 0 1.4rem;border-top:1px solid var(--line)}
+dl.local-modes dt{font-weight:700;margin:.7rem 0 .15rem}
+dl.local-modes dd{margin:0;padding-bottom:.7rem;border-bottom:1px solid var(--line-2);color:var(--ink-2)}
+ul.local-prepare{list-style:none;max-width:38rem;padding:0;margin:.6rem 0 1.4rem;border-top:1px solid var(--line)}
+ul.local-prepare li{margin:0;padding:.35rem 0 .6rem;border-bottom:1px solid var(--line-2)}
+ul.local-prepare .mod-code{margin-right:.5rem}
+ul.local-prepare a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none}
+ul.local-prepare a::after{content:"→";margin-left:.5em}
+ul.local-prepare a:hover{text-decoration:underline}
+.local-why{display:block;font-size:var(--fs-ui);color:var(--ink-2)}
 ul.practice-link{padding-left:0;list-style:none}ul.practice-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
 details.goals>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 details.goals>p{margin:.6rem 0 .3rem}

@@ -103,7 +103,26 @@
       "FY6": "Miten sähkövirta kulkee virtapiirissä ja siirtää energiaa?",
       "FY7": "Miten sähkö ja magnetismi liittyvät toisiinsa, ja mitä valo on?",
       "FY8": "Miksi atomin energia on kvantittunut, ja mistä säteily syntyy?"
-    }
+    },
+    "local_courses": "Lukiokohtaiset opintojaksot",
+    "local_courses_lead": "Kiviruukin lukion omat valinnaiset opintojaksot. Ne eivät ole valtakunnallisia moduuleja (LOPS 2019), mutta niiden oppimateriaalit ovat kaikkien käytettävissä.",
+    "local_course_kind": "Lukiokohtainen opintojakso",
+    "local_status_planning": "Suunnitteilla",
+    "open_course": "Avaa opintojakso →",
+    "local_distinct": "Tämä on lukiokohtainen opintojakso ({{school}}). Sen tavoitteet ja sisällöt perustuvat lukion omaan suunnitelmaan, eivät valtakunnallisiin moduuleihin FY1–FY8.",
+    "local_status_note_planning": "Tällä sivulla on opintojakson työversio. Tutkimuksia ja oppimateriaalia ei ole vielä julkaistu, eikä laajuutta tai arviointia ole vielä vahvistettu.",
+    "local_goals": "Opintojaksolla opit",
+    "local_goals_note": "Työversio: tavoitteet tarkentuvat, kun opintojakson suunnitelma valmistuu.",
+    "local_themes": "Opintojakson eteneminen",
+    "local_themes_lead": "Suunnitellut teema-alueet, joiden kautta kokeellinen osaaminen kehittyy ohjatuista töistä itsenäiseen tutkimukseen. Ne eivät ole oppituntijako.",
+    "local_modes": "Työskentelytavat",
+    "local_modes_lead": "Samaa tutkimusta voi tehdä eri tavoin tuettuna. Tuen määrä ei kerro, kuinka vaativaa työn fysiikka on.",
+    "local_report": "Työselostus",
+    "local_report_lead": "Jokainen tutkimus raportoidaan samalla työselostuspohjalla. Sen osat ja niiden tehtävä:",
+    "local_prepare": "Valmistaudu jo nyt",
+    "local_prepare_lead": "Nämä jo julkaistut luvut tukevat opintojakson kokeellisia töitä.",
+    "local_unavailable_note": "<strong>{{title}}</strong> on toistaiseksi saatavilla vain suomeksi.",
+    "lang_unavailable_home": "sivu ei vielä saatavilla, vie etusivulle"
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",

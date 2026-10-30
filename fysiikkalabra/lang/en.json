@@ -103,7 +103,26 @@
       "FY6": "How does electric current flow in a circuit and transfer energy?",
       "FY7": "How are electricity and magnetism linked, and what is light?",
       "FY8": "Why is the energy of an atom quantised, and where does radiation come from?"
-    }
+    },
+    "local_courses": "School-specific courses",
+    "local_courses_lead": "Optional courses of Kiviruukki upper secondary school. They are not national modules (LOPS 2019), but their learning materials are open to everyone.",
+    "local_course_kind": "School-specific course",
+    "local_status_planning": "In planning",
+    "open_course": "Open course →",
+    "local_distinct": "This is a school-specific course ({{school}}). Its goals and contents come from the school's own plan, not from the national modules FY1–FY8.",
+    "local_status_note_planning": "This page shows a working version of the course. No investigations or learning materials have been published yet, and the scope and assessment have not been confirmed.",
+    "local_goals": "In this course, you will learn to",
+    "local_goals_note": "Working version: the goals will be refined when the course plan is complete.",
+    "local_themes": "How the course progresses",
+    "local_themes_lead": "The planned themes through which experimental skills develop, from guided work to independent investigation. They are not a lesson plan.",
+    "local_modes": "Ways of working",
+    "local_modes_lead": "The same investigation can be done with different amounts of guidance. The amount of guidance does not tell how demanding the physics is.",
+    "local_report": "Lab report",
+    "local_report_lead": "Every investigation is reported with the same report template. Its sections and what each is for:",
+    "local_prepare": "Prepare now",
+    "local_prepare_lead": "These published chapters support the experimental work of the course.",
+    "local_unavailable_note": "<strong>{{title}}</strong> is only available in Finnish for now.",
+    "lang_unavailable_home": "page not available yet, goes to the front page"
   },
   "lesson": {
     "steps_nav": "Steps of the lesson",
