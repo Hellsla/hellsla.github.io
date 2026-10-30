@@ -55,8 +55,9 @@ a oikea
 **Force diagram:** The car as a rectangle, positive direction forwards. In the horizontal direction the force of the road $\overline{F}$ forwards, and the air resistance $\overline{F}_\text{a}$ and rolling resistance $\overline{F}_\text{r}$ backwards. In the vertical direction the weight and the normal force of the road cancel each other.
 ```voimakuvio
 pinta 0
-G 900
-N 900
+erikseen
+G 12000
+N 12000
 F 620 oikea
 F_i 380 vasen
 F_r 240 vasen

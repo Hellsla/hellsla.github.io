@@ -55,8 +55,9 @@ a oikea
 **Voimakuvio:** Auto piirretään suorakulmiona. Positiivinen suunta on eteenpäin. Vaakasuunnassa tien voima $\overline{F}$ osoittaa eteenpäin. Ilmanvastus $\overline{F}_\text{i}$ ja vierimisvastus $\overline{F}_\text{r}$ osoittavat taaksepäin. Pystysuunnassa paino ja tien tukivoima kumoavat toisensa.
 ```voimakuvio
 pinta 0
-G 900
-N 900
+erikseen
+G 12000
+N 12000
 F 620 oikea
 F_i 380 vasen
 F_r 240 vasen

@@ -1300,6 +1300,7 @@
     "dir_down": "alas",
     "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan",
     "approx": "pienet voimat on piirretty vähän liian pitkiksi, jotta ne näkyvät;",
+    "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
     "velocity": "nopeus {{dir}};"
   }
 }

@@ -72,7 +72,7 @@ v ylös
 pinta 0
 G 784,8
 N 784,8
-F 24 oikea @ala
+F 24 oikea kitka
 F_v 18 vasen
 F_r 6,0 vasen
 a 0

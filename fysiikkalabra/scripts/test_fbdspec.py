@@ -43,8 +43,22 @@ svg = fbdspec.draw(GOOD["a block sliding down a 30° slope"], "t")
 ok("30 asteen kaltevalla" in svg and "kitka" in svg and "kiihtyvyys" in svg, "the text alternative names the slope, the forces and a (fi)")
 i18n.set_lang("en"); svg = fbdspec.draw(GOOD["a block sliding down a 30° slope"], "t"); i18n.set_lang("fi")
 ok("30-degree slope" in svg and "friction" in svg, "the text alternative is in the page language (en)")
-ok("pitemmiksi" in fbdspec.draw(GOOD["a curling stone slowing down"], "t"), "a force drawn longer than to scale is said so")
+ok("pitemmiksi" in fbdspec.draw("pinta 30\nG 98\nN 84,9\nF_mu 5 ylös\na alas\n", "t"), "a tiny force drawn longer than to scale is said so")
+L = fbdspec.LENGTHS; svg = fbdspec.draw(GOOD["a curling stone slowing down"], "t")
+ok("eri mittakaavassa" in svg and "pitemmiksi" not in svg and abs(L["F_mu"] - fbdspec.SPLIT * L["G"]) < 1e-6,
+   "a level surface with a weak horizontal axis gets its own scale by itself")
 
+L = fbdspec.LENGTHS
+fbdspec.draw("pinta 30\nG 81,6\nN 70,7\nF_mu 25,8 ylös\na alas\nakselit 30\nkomponentit G\n", "t")
+ok(L["F_mu"] < L["G_x"] and abs(L["N"] - L["G_y"]) < 0.1, "one scale for forces and components: friction shorter than G_x, N equal to G_y")
+fbdspec.draw("pinta 0\nG 900\nN 900\nF 620 oikea\nF_i 380 vasen\nF_r 240 vasen\na 0\n", "t")
+ok(abs(L["F"] - L["F_i"] - L["F_r"]) < 1e-6, "a sum of forces is drawn as a sum")
+svg = fbdspec.draw("pinta 0\nerikseen\nG 12000\nN 12000\nF 620 oikea\nF_i 380 vasen\nF_r 240 vasen\na 0\n", "t")
+ok(abs(L["F"] - L["F_i"] - L["F_r"]) < 1e-6 and abs(L["F"] / L["G"] - fbdspec.SPLIT) < 1e-6 and "eri mittakaavassa" in svg,
+   "`erikseen`: the horizontal forces on their own scale, still a sum, and the text alternative says so")
+svg = fbdspec.draw("pinta 0\nG 784,8\nN 784,8\nF 24 oikea kitka\nF_v 18 vasen\nF_r 6,0 vasen\na 0\n", "t")
+ok("kitka" in svg and abs(L["F"] - L["F_v"] - L["F_r"]) < 1e-6, "`kitka` makes another symbol a friction force (from the surface), the sum still drawn")
+refused("pinta 20\nerikseen\nG 10\nN 9,4\nF_mu 3,4 ylös\na 0\n", "`erikseen` on a slope")
 ok(fbdspec.missing("**Voimakuvio:** Paino alas ja tukivoima ylös.\n**Kaava:** $N = mg$") != [], "a text-only Voimakuvio step is found")
 ok(fbdspec.missing("**Voimakuvio:** Kappale suorakulmiona.\n```voimakuvio\nG 1\nT 1 ylös\na 0\n```\n**Kaava:** $T = mg$") == [], "a step with its diagram passes")
 
