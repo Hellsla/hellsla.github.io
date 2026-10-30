@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A board is tilted slowly, and an object on it starts to slide at the angle $\\alpha_0$. Why is the coefficient of static friction $\\tan\\alpha_0$?",
+    "a": "Just before sliding the static friction is at its greatest, $\\mu_0 N$, and it cancels the component of the weight along the slope: $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$. The mass cancels, so $\\mu_0 = \\dfrac{\\sin\\alpha_0}{\\cos\\alpha_0} = \\tan\\alpha_0$."
+  },
+  {
+    "q": "A walker steps forward, and the foot pushes the ground backward. In which direction does the friction force of the ground act on the foot, and why?",
+    "a": "Forward, in the direction of motion. The foot tends to slide backward relative to the ground, and static friction opposes this sliding. Friction opposes the sliding of the surfaces relative to each other, not the motion of the walker: it is friction that carries the walker forward."
+  },
+  {
+    "q": "The mass of a person is $60\\,\\text{kg}$. How large are his or her mass and weight on the surface of the Moon, when $g_\\text{Moon} = 1.62\\,\\text{m/s}^2$?",
+    "a": "The mass is the same as on Earth, $60\\,\\text{kg}$. The weight is $G = mg_\\text{Moon} = 60\\,\\text{kg}\\cdot 1.62\\,\\text{m/s}^2 \\approx 97\\,\\text{N}$, whereas on Earth it is about $590\\,\\text{N}$."
+  }
+]

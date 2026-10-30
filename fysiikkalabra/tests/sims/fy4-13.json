@@ -1,0 +1,254 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.tapa==='karry' && S.m1===1 && S.m2===0.5 && S.running===false && S.t===0 && S.v===0 && S.s===0 && S.done===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: cart on the table, m1 = 1,0 kg, m2 = 0,50 kg, at rest, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no sliders: the situation and the two masses are selects"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='karry,kaksi' && L[1]==='0.3,0.5,1,1.5' && L[2]==='0.3,0.5,0.6,1' && L[3]==='0.2,0.4,1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: situation, mass m1, mass m2, speed"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='m1,m2,tapa' && P.m1.unit==='kg' && P.m2.unit==='kg' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares tapa, m1 (kg) and m2 (kg)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, taller on a phone where the panels stack"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 3.27,
+  "tol": 0.01,
+  "note": "cart 1 kg + weight 0.5 kg: a = m2 g/(m1 + m2) = 3.27 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 3.27,
+  "tol": 0.01,
+  "note": "cart 1 kg + weight 0.5 kg: T = m1 a = 3.27 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'0.5'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 4.905,
+  "tol": 0.01,
+  "note": "cart 0.5 kg + weight 0.5 kg: a = m2 g/(m1 + m2) = 4.905 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'0.5'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 2.4525,
+  "tol": 0.01,
+  "note": "cart 0.5 kg + weight 0.5 kg: T = m1 a = 2.453 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 2.4525,
+  "tol": 0.01,
+  "note": "cart 1.5 kg + weight 0.5 kg: a = m2 g/(m1 + m2) = 2.453 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 3.67875,
+  "tol": 0.01,
+  "note": "cart 1.5 kg + weight 0.5 kg: T = m1 a = 3.679 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'0.6');",
+  "expr": "window.simState.a",
+  "expected": 2.802857142857143,
+  "tol": 0.01,
+  "note": "cart 1.5 kg + weight 0.6 kg: a = m2 g/(m1 + m2) = 2.803 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'0.6');",
+  "expr": "window.simState.T",
+  "expected": 4.204285714285715,
+  "tol": 0.01,
+  "note": "cart 1.5 kg + weight 0.6 kg: T = m1 a = 4.204 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.G2",
+  "expected": 4.905,
+  "tol": 0.01,
+  "note": "G2 = m2 g = 4,905 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'1');",
+  "expr": "window.simState.G1",
+  "expected": 14.715,
+  "tol": 0.01,
+  "note": "G1 = m1 g = 14,715 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.N",
+  "expected": 9.81,
+  "tol": 0.01,
+  "note": "on the table N = G1 = 9,81 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.sumF1",
+  "expected": 3.27,
+  "tol": 0.01,
+  "note": "cart: ΣF = T = 3,27 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.sumF2",
+  "expected": 1.6350000000000002,
+  "tol": 0.01,
+  "note": "weight: ΣF = G2 − T = 1,635 N (= m2 a)"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'karry'); I(L[1],'1.5'); I(L[2],'1');",
+  "expr": "window.simState.T < window.simState.G2 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "while the bodies accelerate the string's force is smaller than the weight of the hanging body"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 2.4525,
+  "tol": 0.01,
+  "note": "hanging bodies 0.3 kg and 0.5 kg: a = |m2 − m1| g/(m1 + m2) = 2.453 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 3.67875,
+  "tol": 0.01,
+  "note": "hanging bodies 0.3 kg and 0.5 kg: T = 2 m1 m2 g/(m1 + m2) = 3.679 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.5'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 0.0,
+  "tol": 0,
+  "note": "hanging bodies 0.5 kg and 0.5 kg: a = |m2 − m1| g/(m1 + m2) = 0 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.5'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 4.905,
+  "tol": 0.01,
+  "note": "hanging bodies 0.5 kg and 0.5 kg: T = 2 m1 m2 g/(m1 + m2) = 4.905 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.a",
+  "expected": 3.27,
+  "tol": 0.01,
+  "note": "hanging bodies 1 kg and 0.5 kg: a = |m2 − m1| g/(m1 + m2) = 3.27 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.T",
+  "expected": 6.54,
+  "tol": 0.01,
+  "note": "hanging bodies 1 kg and 0.5 kg: T = 2 m1 m2 g/(m1 + m2) = 6.54 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'1.5'); I(L[2],'1');",
+  "expr": "window.simState.a",
+  "expected": 1.9620000000000002,
+  "tol": 0.01,
+  "note": "hanging bodies 1.5 kg and 1 kg: a = |m2 − m1| g/(m1 + m2) = 1.962 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'1.5'); I(L[2],'1');",
+  "expr": "window.simState.T",
+  "expected": 11.772,
+  "tol": 0.01,
+  "note": "hanging bodies 1.5 kg and 1 kg: T = 2 m1 m2 g/(m1 + m2) = 11.77 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.6');",
+  "expr": "window.simState.a",
+  "expected": 3.2700000000000005,
+  "tol": 0.01,
+  "note": "hanging bodies 0.3 kg and 0.6 kg: a = |m2 − m1| g/(m1 + m2) = 3.27 m/s²"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.6');",
+  "expr": "window.simState.T",
+  "expected": 3.9240000000000004,
+  "tol": 0.01,
+  "note": "hanging bodies 0.3 kg and 0.6 kg: T = 2 m1 m2 g/(m1 + m2) = 3.924 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.5');",
+  "expr": "window.simState.sumF1",
+  "expected": 0.7357499999999999,
+  "tol": 0.01,
+  "note": "lighter body rises: ΣF = T − G1 = 0,736 N (= m1 a)"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.5');",
+  "expr": "window.simState.sumF2",
+  "expected": 1.2262500000000003,
+  "tol": 0.01,
+  "note": "heavier body falls: ΣF = G2 − T = 1,226 N (= m2 a)"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'1'); I(L[2],'0.5');",
+  "expr": "window.simState.sumF1",
+  "expected": 3.2700000000000005,
+  "tol": 0.01,
+  "note": "m1 heavier: it falls, ΣF = G1 − T = 3,27 N"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.5'); I(L[2],'0.5');",
+  "expr": "(() => { const S=window.simState; return S.a===0 && Math.abs(S.T-S.G1)<1e-9 && S.sumF1===0 && S.sumF2===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "equal masses: no acceleration, T = G, no net force"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.3'); I(L[2],'0.5'); document.querySelector('#sim-root button').click();",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä releases the bodies"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kaksi'); I(L[1],'0.5'); I(L[2],'0.5'); document.querySelector('#sim-root button').click();",
+  "expr": "window.simState.running ? 1 : 0",
+  "expected": 0,
+  "tol": 0,
+  "note": "equal masses: nothing to release"
+ }
+]

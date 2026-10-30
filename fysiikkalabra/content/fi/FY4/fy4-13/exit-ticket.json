@@ -1,0 +1,15 @@
+[
+  {
+    "q": "Pöydällä oleva kärry ja riippuva punnus on sidottu langalla väkipyörän yli. Miksi langan voimat $\\overline{T}_1$ kärryyn ja $\\overline{T}_2$ punnukseen eivät ole voima ja vastavoima?",
+    "a": "Ne vaikuttavat eri kappaleisiin mutta kuuluvat eri vuorovaikutuksiin: $\\overline{T}_1$ lanka–kärry-pariin ja $\\overline{T}_2$ lanka–punnus-pariin. Voiman $\\overline{T}_1$ vastavoima on kärryn voima lankaan. Voimat $\\overline{T}_1$ ja $\\overline{T}_2$ ovat yhtä suuret, koska lanka on kevyt ja väkipyörä kevyt ja kitkaton."
+  },
+  {
+    "q": "Kirjoita riippuvan punnuksen liikeyhtälö, kun punnus laskee kiihtyvyydellä $a$ ja langan jännitysvoima on $T$. Mikä on positiivinen suunta?",
+    "fbd": "equations",
+    "a": "Positiivinen suunta on alas, kiihtyvyyden suuntaan: $m_2 g - T = m_2 a$. Paino $m_2 g$ on alas ja jännitysvoima $T$ ylös, joten jännitysvoima on pienempi kuin paino."
+  },
+  {
+    "q": "Pöydällä oleva kärry ja riippuva punnus on sidottu langalla väkipyörän yli. Kärryn massa kaksinkertaistetaan ja punnus pysyy samana. Miten kiihtyvyys ja jännitysvoima muuttuvat?",
+    "a": "Kiihtyvyys pienenee, koska sama punnuksen paino kiihdyttää suurempaa kokonaismassaa: $a = \\tfrac{m_2 g}{m_1 + m_2}$. Jännitysvoima kasvaa, koska kärryn massa kasvaa enemmän kuin kiihtyvyys pienenee, ja $T = m_1 a$ lähestyy painoa $m_2 g$. Se pysyy silti sitä pienempänä."
+  }
+]

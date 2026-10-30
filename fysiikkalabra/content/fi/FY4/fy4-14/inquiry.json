@@ -1,0 +1,549 @@
+{
+  "version": 1,
+  "contribution": "Ilmanvastus otetaan mukaan voimakuvioon ja liikeyhtälöön laadullisena, nopeutta vastustavana voimana: simulaation hypyistä nähdään, että putoavan kappaleen nopeus asettuu rajanopeuteen, kun $F_\\text{v} = G$, että raskaammalla on suurempi rajanopeus ja että varjon auetessa kokonaisvoima osoittaa ylös, vaikka liike on alas.",
+  "learn": [
+    "selittämään, miksi putoavan kappaleen nopeus asettuu rajanopeuteen ja miten massa ja muoto vaikuttavat siihen.",
+    "piirtämään voimakuvion putoavalle ja nousevalle kappaleelle, kun ilmanvastusta ei jätetä huomiotta.",
+    "laskemaan kiihtyvyyden tai ilmanvastuksen liikeyhtälöstä, myös kun kokonaisvoima osoittaa liikettä vastaan."
+  ],
+  "prior": [
+    "Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
+    "Paino on $G = mg$, ja kitka vastustaa liukumista alustaa pitkin (luku *Paino, kitka ja kalteva taso*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Laskuvarjohyppääjä astuu ulos lentokoneesta noin neljän kilometrin korkeudessa. Ensimmäisten sekuntien aikana hänen nopeutensa kasvaa nopeasti, mutta noin kymmenen sekunnin kuluttua rannetietokoneen lukema lähes lakkaa kasvamasta ja asettuu noin $200\\,\\text{km/h}$:iin, vaikka hyppääjä putoaa vielä kymmeniä sekunteja. Kun varjo aukeaa, nopeus pienenee muutamassa sekunnissa alle $20\\,\\text{km/h}$:iin.",
+      "question": "Miksi nopeus lakkaa kasvamasta, vaikka paino vetää hyppääjää alas koko ajan, ja mitä voimille tapahtuu, kun varjo aukeaa?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: kitka ja kokonaisvoima",
+      "fbd": "identify",
+      "optional": true,
+      "prompt": "Laatikko liukuu vaakasuoralla lattialla oikealle ja hidastuu. Kukaan ei työnnä eikä vedä sitä. Mihin suuntaan laatikkoon vaikuttava kokonaisvoima osoittaa?",
+      "choices": [
+        {
+          "text": "Vasemmalle, koska kitka vastustaa liukumista.",
+          "correct": true,
+          "feedback": "Oikein. Luvussa *Paino, kitka ja kalteva taso* opit, että liukukitka osoittaa liukumista vastaan. Se on ainoa vaakasuora voima, joten kokonaisvoima ja kiihtyvyys osoittavat vasemmalle, ja laatikko hidastuu. Tässä luvussa ilma tekee saman: se vastustaa liikettä."
+        },
+        {
+          "text": "Oikealle, liikkeen suuntaan, koska laatikko liikkuu yhä oikealle.",
+          "feedback": "Liike ei aiheuta voimaa. Laatikkoa ei työnnä mikään, joten oikealle osoittavaa voimaa ei ole. Laatikko hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat vasemmalle, liikettä vastaan."
+        },
+        {
+          "text": "Kokonaisvoima on nolla, koska laatikko liikkuu.",
+          "feedback": "Jos kokonaisvoima olisi nolla, laatikon nopeus ei muuttuisi. Laatikko hidastuu, joten kokonaisvoima ei ole nolla: kitka osoittaa vasemmalle."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: nopeus pudotuksessa",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Hyppääjä hyppää koneesta vatsa alaspäin eikä avaa varjoa $40$ sekunnin aikana. Miten hänen nopeutensa muuttuu?",
+      "choices": [
+        {
+          "text": "Nopeus kasvaa aluksi nopeasti, sitten yhä hitaammin, ja asettuu lopulta vakioksi.",
+          "correct": true,
+          "feedback": "Oikein. Kuvaajassa nopeus kasvaa ensin lähes $9{,}81\\,\\text{m/s}$ sekunnissa, mutta käyrä loivenee ja tasaantuu. Mallin arvoissa $60\\,\\text{kg}$:n hyppääjän nopeus asettuu noin $47{,}6\\,\\text{m/s}$:iin. Ilmanvastus kasvaa nopeuden mukana, kunnes se on yhtä suuri kuin paino."
+        },
+        {
+          "text": "Nopeus kasvaa tasaisesti $9{,}81\\,\\text{m/s}$ joka sekunti koko pudotuksen ajan.",
+          "feedback": "Näin kävisi ilman ilmaa: $40\\,\\text{s}$:ssa nopeus olisi lähes $400\\,\\text{m/s}$. Kuvaajassa nopeus kuitenkin tasaantuu, mallin arvoissa $60\\,\\text{kg}$:n hyppääjällä noin $47{,}6\\,\\text{m/s}$:iin, koska ilmanvastus kasvaa nopeuden kasvaessa ja pienentää kokonaisvoimaa."
+        },
+        {
+          "text": "Nopeus kasvaa suurimpaan arvoonsa ja alkaa sitten pienentyä.",
+          "feedback": "Kun ilmanvastus on kasvanut painon suuruiseksi, kokonaisvoima on nolla eikä nopeus enää muutu. Kun ilman tiheys on sama (mallin oletus), mikään ei kasvata ilmanvastusta painoa suuremmaksi, joten nopeus ei ala pienentyä. Kuvaajassa käyrä tasaantuu vaakasuoraksi eikä käänny alas."
+        },
+        {
+          "text": "Nopeus on vakio heti hypyn alusta, koska ilmanvastus kumoaa painon.",
+          "feedback": "Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta), joten hypyn alussa ilmanvastusta ei vielä ole. Silloin ainoa voima on paino, ja hyppääjä kiihtyy. Kuvaajassa nopeus kasvaa alussa jyrkästi ja tasaantuu vasta noin kymmenen sekunnin kuluttua."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kevyt ja raskas hyppääjä",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kaksi hyppääjää putoaa samassa asennossa vatsa alaspäin. Toisen massa varusteineen on $60\\,\\text{kg}$ ja toisen $100\\,\\text{kg}$. Kumpi putoaa pitkän pudotuksen lopussa nopeammin?",
+      "choices": [
+        {
+          "text": "$100\\,\\text{kg}$:n hyppääjä, koska hänen rajanopeutensa on suurempi.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa $60\\,\\text{kg}$:n hyppääjän nopeus asettuu $47{,}6\\,\\text{m/s}$:iin ja $100\\,\\text{kg}$:n $61{,}4\\,\\text{m/s}$:iin. Raskaamman paino on suurempi, joten ilmanvastuksen on kasvettava suuremmaksi ennen kuin se kumoaa painon, ja se vaatii suuremman nopeuden."
+        },
+        {
+          "text": "Molemmat yhtä nopeasti, koska putoamiskiihtyvyys ei riipu massasta.",
+          "feedback": "Ilman ilmanvastusta tämä pitäisi paikkansa, ja pudotuksen alussa käyrät ovatkin päällekkäin. Ilmanvastus kuitenkin pienentää kevyemmän hyppääjän kiihtyvyyttä enemmän, koska hänen painonsa on pienempi. Mallin arvoissa loppunopeudet ovat $47{,}6\\,\\text{m/s}$ ja $61{,}4\\,\\text{m/s}$."
+        },
+        {
+          "text": "$60\\,\\text{kg}$:n hyppääjä, koska kevyt kappale on helpompi kiihdyttää.",
+          "feedback": "Kevyen hyppääjän paino on pienempi, joten ilmanvastus kumoaa sen jo pienemmällä nopeudella. Mallin arvoissa $60\\,\\text{kg}$:n hyppääjän nopeus asettuu $47{,}6\\,\\text{m/s}$:iin ja $100\\,\\text{kg}$:n $61{,}4\\,\\text{m/s}$:iin."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: varjo aukeaa",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Hyppääjä putoaa rajanopeudella ja avaa varjonsa. Mitä hänen liikkeelleen tapahtuu sinä aikana, kun varjo aukeaa?",
+      "choices": [
+        {
+          "text": "Hän liikkuu yhä alaspäin, mutta hidastuu nopeasti, koska kokonaisvoima osoittaa ylös.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa ilmanvastus kasvaa varjon auetessa hetkeksi noin $3{,}9\\,\\text{kN}$:iin, viisinkertaiseksi painoon verrattuna. Kokonaisvoima osoittaa ylös, ja nopeus pienenee, mutta kuvaajassa nopeus pysyy koko ajan positiivisena eli alaspäin."
+        },
+        {
+          "text": "Hän nousee hetken ylöspäin ja alkaa sitten taas pudota hitaasti.",
+          "feedback": "Videoilla näin näyttää, koska videokuvaaja putoaa itse vielä ilman varjoa ja hyppääjä hidastuu häneen nähden. Kuvaajassa hyppääjän nopeus pienenee mutta pysyy positiivisena: hän liikkuu koko ajan alas. Ylöspäin osoittava kokonaisvoima pienentää nopeutta, mutta samalla ilmanvastus pienenee, ja nopeus asettuu noin $5{,}1\\,\\text{m/s}$:iin kauan ennen nollaa."
+        },
+        {
+          "text": "Hän hidastuu vähitellen, ja kokonaisvoima osoittaa koko ajan alas, liikkeen suuntaan.",
+          "feedback": "Jos kokonaisvoima osoittaisi alas, nopeus kasvaisi. Hyppääjä hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat ylös. Mallin arvoissa ilmanvastus on varjon auetessa hetken noin viisi kertaa painon suuruinen."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa laskuvarjohyppääjä putoaa lentokoneesta. Vasemmalla ovat tilannekuva ja nopeuden kuvaaja, oikealla hyppääjän voimakuvio, jossa paino ja ilmanvastus ovat samassa mittakaavassa.",
+      "howto": "Valitse hyppääjän massa varusteineen, asento ja se, avataanko varjo $20\\,\\text{s}$:n kohdalla. Paina *Käynnistä*. Hyppy kestää $40\\,\\text{s}$ mallin aikaa; *Tauko* pysäyttää sen ja *Jatka* jatkaa. Hypyn päätyttyä lukemiin tulevat nopeus hypyn lopussa ja hypyn suurin ilmanvastus. *Alusta* palauttaa hyppääjän koneen ovelle. *Nopeus* hidastaa tai nopeuttaa vain esitystä, ei lukemia: valitse *hidas*, kun haluat seurata varjon avautumista. Jos voimanuoli ei mahdu voimakuvioon, se katkaistaan kahdella vinoviivalla, ja sen arvo näkyy lukemissa.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Hyppääjään vaikuttavat vain paino $\\overline{G}$ ja ilmanvastus $\\overline{F}_\\text{v}$. Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta). Ilma on tyyntä, ja sen tiheys on mallissa sama kaikilla korkeuksilla; ilmassa vaikuttavaa nostetta ei oteta huomioon. Ilmanvastus lasketaan mallista $F_\\text{v} = kv^2$, jossa vakio $k$ riippuu asennosta ja varjosta: vatsa alaspäin $0{,}26\\,\\text{kg/m}$, pää edellä $0{,}10\\,\\text{kg/m}$ ja avatun varjon varassa $30\\,\\text{kg/m}$. Varjo avautuu $3{,}0\\,\\text{s}$:ssa. Tätä mallia ei tarvitse osata: luvussa ilmanvastus käsitellään laadullisesti. Putoamisessa ennen varjon avaamista ilmanvastuksen nuoli päättyy alapintaan, johon ilma painaa; varjon auettua se lähtee yläpinnasta, koska varjo vetää hyppääjää ylhäältä.",
+      "calc": "Positiivinen suunta on alas. Kokonaisvoima on $\\Sigma F = G - F_\\text{v}$, missä $G = mg$ ja $g = 9{,}81\\,\\text{m/s}^2$, ja kiihtyvyys on $a = \\dfrac{\\Sigma F}{m}$. Negatiivinen $\\Sigma F$ tai $a$ osoittaa ylös. Simulaatio laskee liikkeen $2\\,\\text{ms}$:n askelin: joka askeleella nopeus muuttuu kiihtyvyyden ja askeleen pituuden tulon verran. Kuvaajaan piirretään nopeus $0{,}5\\,\\text{s}$:n välein."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: massa ja loppunopeus",
+      "intro": "Testaa ennusteet 1 ja 2. Alkutila valitsee asennon vatsa alaspäin ja varjon, jota ei avata. Muuta vain massaa. Paina *Käynnistä* ja seuraa kuvaajaa ja voimakuviota koko hypyn ajan. Kirjaa mittaus, kun hyppy on päättynyt. Kokeile ainakin massoja $60\\,\\text{kg}$ ja $100\\,\\text{kg}$.",
+      "initial": {
+        "asento": "vatsa",
+        "varjo": "ei",
+        "m": "60"
+      },
+      "names": {
+        "m": "massa $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "vatsa alaspäin"
+        },
+        "varjo": {
+          "ei": "ei avata"
+        },
+        "m": {
+          "60": "$60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "asento",
+        "varjo"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "G",
+          "label": "$G$ (N)"
+        },
+        {
+          "key": "vT",
+          "label": "$v$ lopussa (m/s)"
+        },
+        {
+          "key": "Fv",
+          "label": "$F_\\text{v}$ lopussa (N)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Vertaa taulukossa painoa ja ilmanvastusta hypyn lopussa. Mitä niistä voi päätellä?",
+        "choices": [
+          {
+            "text": "Ne ovat yhtä suuret, joten kokonaisvoima on nolla ja nopeus pysyy vakiona.",
+            "correct": true,
+            "feedback": "Oikein. Kummallakin massalla $F_\\text{v} = G$ hypyn lopussa. Nopeus on silloin rajanopeus: kiihtyvyys on nolla, vaikka hyppääjä liikkuu nopeasti."
+          },
+          {
+            "text": "Ilmanvastus on painoa suurempi, muuten nopeus kasvaisi edelleen.",
+            "feedback": "Jos ilmanvastus olisi painoa suurempi, kokonaisvoima osoittaisi ylös ja hyppääjä hidastuisi. Taulukossa ne ovat yhtä suuret: nopeuden pysymiseen vakiona riittää, että kokonaisvoima on nolla."
+          },
+          {
+            "text": "Raskaammalla hyppääjällä ilmanvastus on lopussa pienempi, koska hän on painavampi.",
+            "feedback": "Taulukossa raskaamman hyppääjän ilmanvastus on lopussa suurempi, yhtä suuri kuin hänen suurempi painonsa. Se vaatii suuremman nopeuden."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: varjo aukeaa",
+      "intro": "Testaa ennuste 3. Alkutila valitsee massan $80\\,\\text{kg}$ ja asennon vatsa alaspäin. Muuta vain varjon asetusta. Tee hyppy ensin niin, ettei varjoa avata, ja sitten niin, että se avataan $20\\,\\text{s}$:n kohdalla. Valitse varjon auetessa *hidas* ja seuraa voimakuviota sekä nopeus- ja kiihtyvyysnuolta. Kirjaa mittaus kummastakin hypystä.",
+      "initial": {
+        "m": "80",
+        "asento": "vatsa",
+        "varjo": "ei"
+      },
+      "names": {
+        "m": "massa $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "vatsa alaspäin"
+        },
+        "varjo": {
+          "ei": "ei avata",
+          "auki": "avataan $20\\,\\text{s}$:n kohdalla"
+        },
+        "m": {
+          "80": "$80\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "asento"
+      ],
+      "vary": "varjo",
+      "measure": [
+        {
+          "key": "vT",
+          "label": "$v$ lopussa (m/s)"
+        },
+        {
+          "key": "FvMax",
+          "label": "suurin $F_\\text{v}$ (N)"
+        },
+        {
+          "key": "G",
+          "label": "$G$ (N)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Kun varjo avataan, hypyn suurin ilmanvastus on taulukossa noin viisi kertaa paino. Mitä tämä kertoo hyppääjän liikkeestä varjon auetessa?",
+        "choices": [
+          {
+            "text": "Kokonaisvoima osoittaa ylös, joten hyppääjä hidastuu, vaikka liikkuu yhä alas.",
+            "correct": true,
+            "feedback": "Oikein. Ilmanvastus on painoa suurempi, joten kokonaisvoima ja kiihtyvyys osoittavat ylös. Kuvaajassa nopeus pienenee mutta pysyy positiivisena, ja lopulta se asettuu noin $5{,}1\\,\\text{m/s}$:iin."
+          },
+          {
+            "text": "Hyppääjä liikkuu silloin ylöspäin, koska suurempi voima osoittaa ylös.",
+            "feedback": "Kokonaisvoima kertoo kiihtyvyyden suunnan, ei liikkeen suuntaa. Kuvaajassa nopeus pysyy koko ajan positiivisena eli alaspäin: ylöspäin osoittava kokonaisvoima vain pienentää sitä."
+          },
+          {
+            "text": "Kokonaisvoima on nolla, koska ilmanvastus ja paino kumoavat aina toisensa.",
+            "feedback": "Paino ja ilmanvastus kumoavat toisensa vain rajanopeudella. Varjon auetessa ilmanvastus on moninkertainen, joten kokonaisvoima ei ole nolla, ja nopeus muuttuu nopeasti."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: asento",
+      "optional": true,
+      "intro": "Tutki, miten asento vaikuttaa. Alkutila valitsee massan $80\\,\\text{kg}$ ja varjon, jota ei avata. Muuta vain asentoa ja kirjaa mittaus kummastakin hypystä hypyn päätyttyä. Kumpi asento antaa suuremman loppunopeuden, ja miksi?",
+      "initial": {
+        "m": "80",
+        "varjo": "ei",
+        "asento": "vatsa"
+      },
+      "names": {
+        "m": "massa $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "vatsa alaspäin",
+          "paa": "pää edellä"
+        },
+        "varjo": {
+          "ei": "ei avata"
+        },
+        "m": {
+          "80": "$80\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "varjo"
+      ],
+      "vary": "asento",
+      "measure": [
+        {
+          "key": "vT",
+          "label": "$v$ lopussa (m/s)"
+        },
+        {
+          "key": "Fv",
+          "label": "$F_\\text{v}$ lopussa (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä omien mittaustesi avulla, miksi hyppääjän nopeus lakkaa kasvamasta, miksi raskaamman hyppääjän loppunopeus on suurempi ja mitä voimille tapahtuu, kun varjo aukeaa.",
+      "criteria": [
+        "Vastaus kertoo, että ilmanvastus kasvaa nopeuden kasvaessa, kunnes se on yhtä suuri kuin paino, ja silloin kokonaisvoima on nolla.",
+        "Vastaus käyttää omia mittaustuloksia: hypyn lopussa $F_\\text{v} = G$, ja $100\\,\\text{kg}$:n hyppääjän loppunopeus on suurempi kuin $60\\,\\text{kg}$:n.",
+        "Vastaus selittää suuremman loppunopeuden suuremmalla painolla, jonka kumoaminen vaatii suuremman ilmanvastuksen ja siksi suuremman nopeuden.",
+        "Vastaus kertoo, että varjon auetessa ilmanvastus on painoa suurempi, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu liikkuen yhä alas."
+      ],
+      "model": "Kokeessa 1 nopeus kasvoi aluksi nopeasti ja tasaantui sitten. Mallin arvoissa $60\\,\\text{kg}$:n hyppääjän nopeus hypyn lopussa oli $47{,}6\\,\\text{m/s}$ ja $100\\,\\text{kg}$:n hyppääjän $61{,}4\\,\\text{m/s}$. Kummallakin ilmanvastus oli lopussa yhtä suuri kuin paino, $589\\,\\text{N}$ ja $981\\,\\text{N}$. Ilmanvastus kasvaa nopeuden mukana, ja kun se on kasvanut painon suuruiseksi, kokonaisvoima on nolla eikä nopeus enää muutu. Raskaamman hyppääjän paino on suurempi, joten ilmanvastuksen on kasvettava suuremmaksi, ja se vaatii suuremman nopeuden. Kokeessa 2 varjon avaaminen kasvatti ilmanvastuksen hetkeksi noin $3{,}9\\,\\text{kN}$:iin, noin viisinkertaiseksi painoon $785\\,\\text{N}$ verrattuna. Kokonaisvoima osoitti ylös, ja hyppääjä hidastui liikkuen koko ajan alaspäin, kunnes nopeus asettui noin $5{,}1\\,\\text{m/s}$:iin."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mikä yllätti eniten? Kirjoita omin sanoin, miksi kokonaisvoima voi osoittaa ylös, vaikka hyppääjä liikkuu alas.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse oikea voimakuvio",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "Lentopallo lyödään suoraan ylöspäin. Missä kuviossa pallon voimakuvio on oikein, kun pallo vielä nousee ja käsi on jo irti pallosta? Ilmanvastusta ei jätetä huomiotta. Kussakin väärässä kuviossa on yksi virhe.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-a",
+          "correct": true,
+          "feedback": "Oikein. Pallo nousee, joten ilmanvastus osoittaa nopeutta vastaan eli alas, samaan suuntaan kuin paino. Kumpikin voima hidastaa nousua, ja kiihtyvyyden suuruus on suurempi kuin $g$."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-b",
+          "feedback": "Ilmanvastus ei vastusta painoa vaan liikettä. Nousevan pallon nopeus osoittaa ylös, joten ilmanvastus osoittaa alas. Ylöspäin se osoittaa vasta, kun pallo putoaa takaisin."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-c",
+          "feedback": "Käsi ei enää kosketa palloa, joten ylöspäin vaikuttavaa lyönnin voimaa ei ole. Liike ei aiheuta voimaa: pallo nousee vielä, koska sillä on nopeutta, ja hidastuu. Muuten kuvio olisi oikein."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-d",
+          "feedback": "Kuviosta puuttuu ilmanvastus. Tehtävässä sitä ei jätetä huomiotta, ja nousevaan palloon se vaikuttaa alaspäin, nopeutta vastaan."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "optional": true,
+      "prompt": "Lumilautailija laskee suoraan alas jyrkkää rinnettä, joka on $30{,}0^\\circ$:n kulmassa vaakatasoon nähden. Lautailijan massa varusteineen on $75{,}0\\,\\text{kg}$, ja lumen kitkavoima lautaan on $64{,}0\\,\\text{N}$. Lautailija on saavuttanut rajanopeutensa ja laskee tasaisella nopeudella. Kuinka suuri on ilmanvastus? Vastaa newtoneina.",
+      "answer": 303.875,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on kokonaisvoima, kun nopeus on vakio? Mitkä voimat vaikuttavat rinteen suunnassa?",
+        "Valitse positiiviseksi suunnaksi alamäen suunta. Rinteen suunnassa vaikuttavat painon komponentti $mg\\sin\\alpha$ alamäkeen sekä kitka ja ilmanvastus ylämäkeen: $mg\\sin\\alpha - F_\\mu - F_\\text{v} = 0$.",
+        "$mg\\sin\\alpha = 75{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot\\sin 30{,}0^\\circ \\approx 368\\,\\text{N}$. Vähennä siitä kitkavoima."
+      ],
+      "mistakes": [
+        {
+          "value": 367.875,
+          "feedback": "Tämä on painon rinteen suuntainen komponentti. Myös kitka vastustaa liukumista, joten ilmanvastuksen tarvitsee kumota vain osa siitä: $F_\\text{v} = mg\\sin\\alpha - F_\\mu$."
+        },
+        {
+          "value": 573.18,
+          "feedback": "Käytit kosinia. Rinteen suuntainen komponentti on $mg\\sin\\alpha$; komponentti $mg\\cos\\alpha$ on kohtisuorassa rinnettä vastaan, ja lumen tukivoima kumoaa sen."
+        },
+        {
+          "value": 671.75,
+          "feedback": "Käytit koko painoa. Rinteellä vain painon rinteen suuntainen komponentti $mg\\sin\\alpha$ vie lautailijaa alamäkeen."
+        },
+        {
+          "value": 735.75,
+          "feedback": "Tämä on lautailijan paino. Pystysuoraan putoavalla rajanopeudella $F_\\text{v} = G$, mutta rinteessä ilmanvastus kumoaa vain osan painon rinteen suuntaisesta komponentista, koska myös kitka vastustaa liikettä."
+        }
+      ],
+      "solution": "**Annettu:** $m = 75{,}0\\,\\text{kg}$, rinteen kaltevuuskulma $\\alpha = 30{,}0^\\circ$, kitkavoima $F_\\mu = 64{,}0\\,\\text{N}$, nopeus on vakio; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** ilmanvastus $F_\\text{v}$ yksikössä $\\text{N}$\n\n**Periaate:** Nopeus on vakio, joten Newtonin toisen lain mukaan kokonaisvoima on nolla sekä rinteen suunnassa että sitä vastaan kohtisuorassa. Rinteen suunnassa painon komponentti vie alamäkeen, kitka ja ilmanvastus vastustavat liikettä. Rajanopeus on se nopeus, jolla nämä kumoavat toisensa.\n\n**Voimakuvio:** Lautailija suorakulmiona rinteen suuntaisesti, positiivinen $x$-suunta alamäkeen. Paino $\\overline{G}$ keskipisteestä pystysuoraan alas, lumen tukivoima $\\overline{N}$ alapinnasta kohtisuoraan rinnettä vastaan, kitkavoima $\\overline{F}_\\mu$ alapinnan reunasta ylämäkeen ja ilmanvastus $\\overline{F}_\\text{v}$ ylämäkeen. Painon komponentit katkoviivoin.\n\n**Kaava:** $mg\\sin\\alpha - F_\\mu - F_\\text{v} = 0$, joten $F_\\text{v} = mg\\sin\\alpha - F_\\mu$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, ja kulma on asteina laskimen asteasetuksella, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_\\text{v} = 75{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot\\sin 30{,}0^\\circ - 64{,}0\\,\\text{N} = 367{,}875\\,\\text{N} - 64{,}0\\,\\text{N} = 303{,}875\\,\\text{N}$\n\n**Vastaus:** $304\\,\\text{N}$ ylämäkeen, kolme merkitsevää numeroa kuten massassa $75{,}0\\,\\text{kg}$, kulmassa $30{,}0^\\circ$ ja kitkavoimassa $64{,}0\\,\\text{N}$.\n\n**Järkevyys:** Kun $\\sin 30^\\circ = 0{,}5$, painon rinteen suuntainen komponentti on puolet painosta $736\\,\\text{N}$ eli noin $370\\,\\text{N}$. Ilmanvastus kumoaa siitä sen osan, jota kitka ei kumoa, ja jää siksi painoa paljon pienemmäksi. Ilman kitkaa ilmanvastus olisi rajanopeudella $368\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Piirrä ensin voimakuvio: muista, että ilmanvastus osoittaa nopeutta vastaan. Valitse positiivinen suunta ja kirjoita vasta sitten liikeyhtälö. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "fbd": "identify",
+      "prompt": "Hyppääjä putoaa vatsa alaspäin rajanopeudella, ja varjo on vielä kiinni. Mikä väite häneen vaikuttavista voimista on oikein?",
+      "choices": [
+        {
+          "text": "Häneen vaikuttavat paino ja ilmanvastus, jotka ovat yhtä suuret, joten kokonaisvoima on nolla.",
+          "correct": true,
+          "feedback": "Oikein. Hyppääjään vaikuttavat Maa ja ilma. Rajanopeudella ne kumoavat toisensa, joten kiihtyvyys on nolla ja nopeus pysyy vakiona."
+        },
+        {
+          "text": "Häneen vaikuttaa vain paino, koska hän putoaa tasaisella nopeudella.",
+          "feedback": "Jos häneen vaikuttaisi vain paino, kokonaisvoima ei olisi nolla ja hän kiihtyisi alaspäin. Tasainen nopeus vaatii, että ilmanvastus kumoaa painon."
+        },
+        {
+          "text": "Ilmanvastus on painoa suurempi, koska se on pysäyttänyt nopeuden kasvun.",
+          "feedback": "Jos ilmanvastus olisi painoa suurempi, kokonaisvoima osoittaisi ylös ja hyppääjä hidastuisi. Nopeuden kasvu pysähtyy, kun voimat ovat yhtä suuret."
+        },
+        {
+          "text": "Häneen vaikuttavat paino, ilmanvastus ja liikkeen suuntainen voima, joka pitää hänet vauhdissa.",
+          "feedback": "Liike ei tarvitse ylläpitävää voimaa, eikä sellaiselle ole aiheuttajaa: hyppääjään vaikuttavat vain Maa ja ilma. Tasaisessa liikkeessä kokonaisvoima on nolla."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "fbd": "equations",
+      "prompt": "Varjon auettua hyppääjä, jonka massa varusteineen on $64{,}0\\,\\text{kg}$, laskeutuu tasaisella nopeudella $5{,}5\\,\\text{m/s}$. Kuinka suuri on ilmanvastus? Vastaa newtoneina.",
+      "answer": 627.84,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on kiihtyvyys, kun nopeus on vakio? Mitä se kertoo kokonaisvoimasta?",
+        "Piirrä voimakuvio: paino alas ja ilmanvastus ylös. Kun positiivinen suunta on alas, $mg - F_\\text{v} = 0$.",
+        "Nopeutta $5{,}5\\,\\text{m/s}$ ei tarvita: $F_\\text{v} = mg$."
+      ],
+      "mistakes": [
+        {
+          "value": 352,
+          "feedback": "Kerroit massan nopeudella. Massa kertaa nopeus ei ole voima. Tasaisessa liikkeessä ilmanvastus on yhtä suuri kuin paino, $mg$."
+        },
+        {
+          "value": 64,
+          "feedback": "Massa ei ole voima. Ilmanvastus on yhtä suuri kuin paino $mg$, joten kerro massa putoamiskiihtyvyydellä."
+        }
+      ],
+      "solution": "**Annettu:** $m = 64{,}0\\,\\text{kg}$, nopeus on vakio $5{,}5\\,\\text{m/s}$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** ilmanvastus $F_\\text{v}$ yksikössä $\\text{N}$\n\n**Periaate:** Nopeus on vakio, joten kiihtyvyys on nolla ja Newtonin toisen lain mukaan kokonaisvoima on nolla. Hyppääjä putoaa uudella, pienellä rajanopeudella, jolla ilmanvastus kumoaa painon.\n\n**Voimakuvio:** Hyppääjä varjoineen suorakulmiona, positiivinen suunta alas. Paino $\\overline{G}$ keskipisteestä alas ja ilmanvastus $\\overline{F}_\\text{v}$ yläpinnasta ylös, yhtä pitkinä. Nopeus alas merkitään erikseen eikä voimaksi.\n\n**Kaava:** $mg - F_\\text{v} = 0$, joten $F_\\text{v} = mg$\n\n**Muunnokset:** Massa on kilogrammoina. Nopeutta ei tarvita, joten sitä ei muunneta.\n\n**Sijoitus:** $F_\\text{v} = 64{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 627{,}84\\,\\text{N}$\n\n**Vastaus:** $628\\,\\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $64{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Ilmanvastus on yhtä suuri kuin putoamisessa ennen varjon avaamista rajanopeudella, noin $630\\,\\text{N}$, vaikka nopeus on kymmenesosa. Varjon suuri pinta-ala tuottaa saman voiman paljon pienemmällä nopeudella. Kilogramman paino on noin $10\\,\\text{N}$, joten $64\\,\\text{kg}$ vastaa noin $640\\,\\text{N}$:a."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-14/malli-alas",
+      "prompt": "Kumipallo heitetään korkealta sillalta suoraan alas niin suurella nopeudella, että se on suurempi kuin pallon rajanopeus. Pallo putoaa yhä alas, mutta hidastuu. Piirrä pallon voimakuvio paperille: pallo suorakulmiona ja jokainen voima vaikutuskohdastaan. Merkitse nopeuden ja kiihtyvyyden suunnat erikseen kuvion viereen. Kirjoita sitten liikeyhtälö, kun positiivinen suunta on alas.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain pallo, ei kättä, siltaa eikä ilmaa omine voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Kaksi voimaa: paino ja ilmanvastus. Ei heittovoimaa, koska käsi on irti pallosta."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino alas, ilmanvastus ylös, nopeutta vastaan."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino keskipisteestä, ilmanvastus pallon alapinnasta tai siihen päättyvänä, painosta erillään; kummallakin oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Ilmanvastus on painoa pidempi, koska pallo hidastuu. Nopeus alas ja kiihtyvyys ylös on merkitty erikseen eikä voimiksi."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$mg - F_\\text{v} = ma$, jossa $a < 0$, koska $F_\\text{v} > mg$: kiihtyvyys osoittaa ylös."
+        }
+      ],
+      "model": "Palloon vaikuttavat vain Maa (paino $\\overline{G}$) ja ilma (ilmanvastus $\\overline{F}_\\text{v}$). Käsi ei enää kosketa palloa, joten heittovoimaa ei ole. Pallo liikkuu alas, joten ilmanvastus osoittaa ylös. Pallo hidastuu, joten sen kiihtyvyys osoittaa ylös, nopeutta vastaan, ja kokonaisvoiman on osoitettava ylös: ilmanvastus on painoa suurempi. Kun positiivinen suunta on alas, liikeyhtälö on $mg - F_\\text{v} = ma$, ja $a$ on negatiivinen. Nopeuden pienentyessä ilmanvastus pienenee, kunnes rajanopeudella $F_\\text{v} = mg$ ja pallo putoaa tasaisesti."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "level1": [
+    {
+      "id": "fy4-14-L1-01",
+      "level": 1,
+      "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $75{,}0\\,\\text{kg}$, putoaa vatsa alaspäin rajanopeudella. Piirrä hyppääjän voimakuvio. Kuinka suuri on ilmanvastus?",
+      "answer": 735.75,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-02",
+      "level": 1,
+      "text": "Kivi, jonka massa on $2{,}00\\,\\text{kg}$, putoaa pystysuoraan alas. Eräällä hetkellä ilmanvastus on $5{,}00\\,\\text{N}$. Kuinka suuri on kiveen vaikuttava kokonaisvoima tällä hetkellä?",
+      "answer": 14.62,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-03",
+      "level": 1,
+      "text": "Koripallo, jonka massa on $0{,}600\\,\\text{kg}$, heitetään suoraan alas suurella nopeudella. Heti heiton jälkeen ilmanvastus on $8{,}00\\,\\text{N}$. Kuinka suuri on pallon kiihtyvyyden suuruus tällä hetkellä, ja mihin suuntaan kiihtyvyys osoittaa?",
+      "answer": 3.52,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-04",
+      "level": 1,
+      "text": "Jalkapallo, jonka massa on $0{,}450\\,\\text{kg}$, on potkaistu suoraan ylöspäin, ja se nousee vielä. Eräällä hetkellä ilmanvastus on $1{,}20\\,\\text{N}$. Piirrä pallon voimakuvio. Kuinka suuri on palloon vaikuttava kokonaisvoima tällä hetkellä?",
+      "answer": 5.6145,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-05",
+      "level": 1,
+      "text": "Pyöräilijä ajaa vaakasuoralla tiellä tasaisella nopeudella. Ilmanvastus on $18\\,\\text{N}$, ja renkaiden vierimisvastus (renkaiden ja tien aiheuttama vastus) on yhteensä $6{,}0\\,\\text{N}$. Kuinka suuri on tien kitkavoima, joka työntää vetävää pyörää eteenpäin?",
+      "answer": 24.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-14-L2-01",
+      "level": 2,
+      "text": "Sulkapallo, jonka massa on $5{,}10\\,\\text{g}$, putoaa rajanopeudella. Kuinka suuri on ilmanvastus?",
+      "answer": 0.050031,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L2-02",
+      "level": 2,
+      "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $70{,}0\\,\\text{kg}$, putoaa vatsa alaspäin. Eräällä hetkellä hänen kiihtyvyytensä on $6{,}00\\,\\text{m/s}^2$ alaspäin. Kuinka suuri ilmanvastus häneen vaikuttaa tällä hetkellä?",
+      "answer": 266.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L2-03",
+      "level": 2,
+      "text": "Tennispallo, jonka massa on $57{,}0\\,\\text{g}$, lyödään suoraan ylöspäin. Kun pallo nousee, ilmanvastus on eräällä hetkellä $0{,}250\\,\\text{N}$. Kuinka suuri on pallon kiihtyvyys tällä hetkellä?",
+      "answer": 14.195965,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L2-04",
+      "level": 2,
+      "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa vaakasuoralla tiellä tasaisella nopeudella $100\\,\\text{km/h}$. Ilmanvastus on $450\\,\\text{N}$ ja renkaiden vierimisvastus (renkaiden ja tien aiheuttama vastus) yhteensä $180\\,\\text{N}$. Kuljettaja painaa kytkimen pohjaan, jolloin moottori ei enää vedä autoa. Kuinka suuri on auton hidastuvuus heti tämän jälkeen?",
+      "answer": 0.525,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-14-L3-01",
+      "level": 3,
+      "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $72{,}0\\,\\text{kg}$, putoaa vatsa alaspäin rajanopeudella. Hän kääntyy nopeasti pää edellä -asentoon, jolloin ilmanvastus pienenee samalla nopeudella puoleen entisestä. Kuinka suuri on hyppääjän kiihtyvyys heti asennon muutoksen jälkeen?",
+      "answer": 4.905,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L3-02",
+      "level": 3,
+      "text": "Pallo, jonka massa on $0{,}200\\,\\text{kg}$, heitetään suoraan ylös. Nousun aikana eräällä hetkellä ilmanvastus on $0{,}600\\,\\text{N}$. Myöhemmin pallo putoaa takaisin alas, ja eräällä hetkellä ilmanvastus on taas $0{,}600\\,\\text{N}$. Kuinka paljon suurempi on pallon kiihtyvyyden suuruus ensimmäisellä hetkellä kuin toisella?",
+      "answer": 6.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L3-03",
+      "level": 3,
+      "text": "Pallo, jonka massa on $0{,}150\\,\\text{kg}$, pudotetaan levosta korkealta. Kuvaajassa on pallon nopeus ajan funktiona, ja käyrän pisteeseen $P$ on piirretty tangentti. Kuinka suuri ilmanvastus palloon vaikuttaa hetkellä, jota piste $P$ vastaa?",
+      "answer": 0.4965,
+      "unit": "N",
+      "tolerance": 0.05,
+      "figure": "fy4-14/ex-tangentti",
+      "fbd": "equations"
+    }
+  ]
+}

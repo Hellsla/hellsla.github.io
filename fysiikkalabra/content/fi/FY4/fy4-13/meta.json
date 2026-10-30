@@ -1,0 +1,21 @@
+{
+  "id": "fy4-13",
+  "course": "FY4",
+  "title": "Liikeyhtälö kytketyille kappaleille",
+  "goals": [
+    "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö",
+    "Täsmennys: narulla tai väkipyörän yli kytketyt kappaleet, yhteinen kiihtyvyys ja langan jännitysvoima",
+    "Voimakuvio: oma voimakuvio kummallekin kappaleelle; sama vuorovaikutus antaa voiman ja vastavoiman eri kappaleille; kummankin kappaleen yhtälö erikseen (esimerkki F)."
+  ],
+  "prerequisites": [
+    "fy4-4",
+    "fy4-5"
+  ],
+  "glossary": [
+    "liikeyhtälö",
+    "jännitysvoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

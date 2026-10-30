@@ -243,9 +243,9 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
-GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha "}
+GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
-SYMBOL = re.compile(r"[A-Za-zΔρθηγαΣ][A-Za-zΔρθηγαΣ₀-₉_/]*(?<=[A-Za-z₀-₉])(?:_[0-9]+)?|[A-Za-zΔΣ][A-Za-zΔρθηγαΣ₀-₉_/]*_[0-9]+")
+SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣ](?:[A-Za-zΔρθηγαμΣ₀-₉/]|_[A-Za-z0-9μ]+)*")
 UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
 
 
@@ -257,12 +257,12 @@ def unit_tex(u):
 
 def is_symbol(tok):
     """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
-    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγα₀-₉_/Σ]", tok)))
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμ₀-₉_/Σ]", tok)))
 
 
 def sym_tex(tok):
     """ΔL/L₀ -> \\Delta L/L_0, p_ref -> p_\\text{ref}, x_B -> x_\\text{B}."""
-    out = re.sub(r"_(\w+)", lambda m: "_" + (m.group(1) if re.fullmatch(r"[0-9]+|[a-z]", m.group(1)) else r"\text{" + m.group(1) + "}"), tok)   # v_0, F_x italic; x_B, p_ref upright
+    out = re.sub(r"_(\w+)", lambda m: "_" + (m.group(1) if re.fullmatch(r"[0-9]+|[a-z]|[μ]", m.group(1)) else r"\text{" + m.group(1) + "}"), tok)   # v_0, F_x italic; x_B, p_ref upright
     out = re.sub(r"[₀-₉]+", lambda m: "_" + "".join(SUBS[c] for c in m.group(0)) if len(m.group(0)) == 1 else "_{" + "".join(SUBS[c] for c in m.group(0)) + "}", out)
     for k, v in GREEK.items(): out = out.replace(k, v)
     return out.strip()

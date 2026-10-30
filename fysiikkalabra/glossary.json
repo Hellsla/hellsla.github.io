@@ -1058,7 +1058,8 @@
     "term": "paino",
     "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy4-6"
     ],
     "see_also": [
       "massa",
@@ -2139,6 +2140,109 @@
     "see_also": [
       "jatkavuuden laki",
       "massa"
+    ],
+    "locked": false
+  },
+  {
+    "term": "liikeyhtälö",
+    "definition": "Newtonin toinen laki kirjoitettuna kappaleelle ja valitulle suunnalle: voimien summa tähän suuntaan on massa kertaa kiihtyvyys, ΣF = ma. Se kirjoitetaan voimakuvion voimista ja etumerkeistä, ja kytketyille kappaleille jokaiselle kappaleelle erikseen.",
+    "lessons": [
+      "fy4-13"
+    ],
+    "see_also": [
+      "kokonaisvoima",
+      "voimakuvio",
+      "jännitysvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kitka",
+    "definition": "Kosketuspinnan suuntainen voima, joka vastustaa kahden toisiaan koskettavan pinnan liukumista toistensa suhteen. Kitka ei aina vastusta kappaleen liikettä: kävellessä maan kitka työntää jalkaa eteenpäin. Kitkavoiman tunnus on F_μ.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "lepokitka",
+      "liikekitka",
+      "kitkakerroin",
+      "tukivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lepokitka",
+    "definition": "Kitka kahden toisiinsa nähden levossa olevan pinnan välillä. Lepokitka on juuri niin suuri kuin tarvitaan estämään liukuminen, enintään μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "kitka",
+      "liikekitka",
+      "kitkakerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "liikekitka",
+    "definition": "Kitka toistensa suhteen liukuvien pintojen välillä. Liikekitka on F_μ = μN, missä μ on liikekitkakerroin ja N tukivoima; se on yleensä pienempi kuin lepokitkan suurin arvo.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "kitka",
+      "lepokitka",
+      "kitkakerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kitkakerroin",
+    "definition": "Yksikötön luku, joka kertoo kitkavoiman ja tukivoiman suhteen: liikekitkakerroin μ = F_μ/N ja lepokitkakerroin μ₀ lepokitkan suurimmalle arvolle. Se riippuu pintojen aineista ja kunnosta, ja yleensä μ < μ₀. Lepokitkakerroin saadaan rajakulmasta: μ₀ = tan α₀.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "kitka",
+      "lepokitka",
+      "liikekitka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kalteva taso",
+    "definition": "Vaakatasoon nähden vinossa oleva pinta eli rinne, jonka kaltevuuskulma on α. Kaltevalla tasolla paino jaetaan rinteen suuntaiseen komponenttiin mg sin α ja pintaa vastaan kohtisuoraan komponenttiin mg cos α, ja tukivoima on mg cos α, kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "paino",
+      "tukivoima",
+      "kitka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "väliaineen vastus",
+    "definition": "Voima, jolla ilma, vesi tai muu väliaine vastustaa siinä liikkuvan kappaleen liikettä. Se osoittaa kappaleen väliaineen suhteen liikkuvaa nopeutta vastaan ja kasvaa nopeuden, poikkipinta-alan ja väliaineen tiheyden kasvaessa. Ilmassa sitä sanotaan ilmanvastukseksi, merkintä $\\overline{F}_\\text{v}$.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "rajanopeus",
+      "kitka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rajanopeus",
+    "definition": "Nopeus, johon väliaineessa putoavan kappaleen nopeus asettuu, kun väliaineen vastus on kasvanut yhtä suureksi kuin kappaleen paino. Silloin kokonaisvoima ja kiihtyvyys ovat nolla. Samankokoisista ja samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "väliaineen vastus",
+      "kokonaisvoima"
     ],
     "locked": false
   }

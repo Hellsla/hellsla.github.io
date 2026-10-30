@@ -1,0 +1,25 @@
+{
+  "id": "fy4-6",
+  "course": "FY4",
+  "title": "Weight, friction and the inclined plane",
+  "goals": [
+    "LOPS FY4: weight and friction",
+    "Experimental: determining the coefficient of friction",
+    "Clarification: other forces such as buoyancy and the drag of the medium can also be treated",
+    "Free-body diagram: weight straight down, normal force perpendicular to the surface, static and kinetic friction parallel to the surface, components of the weight dashed, signs in the equations (example D); friction does not always oppose the motion of the object (example J, qualitatively)."
+  ],
+  "prerequisites": [
+    "fy4-5"
+  ],
+  "glossary": [
+    "paino",
+    "kitka",
+    "lepokitka",
+    "liikekitka",
+    "kitkakerroin",
+    "kalteva taso"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

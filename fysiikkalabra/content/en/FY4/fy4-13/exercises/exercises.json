@@ -1,0 +1,117 @@
+{
+  "level1": [
+    {
+      "id": "fy4-13-L1-01",
+      "level": 1,
+      "text": "A cart of mass $1.5\\,\\text{kg}$ is on a frictionless table. A string tied to it pulls it horizontally with a force of $3.0\\,\\text{N}$. Draw the free-body diagram of the cart. What is the acceleration of the cart?",
+      "answer": 2.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-02",
+      "level": 1,
+      "text": "A mass of $0.60\\,\\text{kg}$ hangs from a string and descends with an acceleration of $2.0\\,\\text{m/s}^2$. Air resistance is neglected. Draw the free-body diagram of the mass. What is the tension in the string?",
+      "answer": 4.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-03",
+      "level": 1,
+      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table. A light, inextensible string tied to it passes over a light, frictionless pulley at the edge of the table, and a mass of $0.40\\,\\text{kg}$ hangs from the end of the string. Air resistance is neglected. Draw the free-body diagram of each body. What is the tension in the string when the bodies are moving?",
+      "answer": 2.8,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-04",
+      "level": 1,
+      "text": "Two identical bodies, each of mass $3.0\\,\\text{kg}$, hang at the ends of a light string over a light, frictionless pulley. The bodies are at rest. Draw the free-body diagram of one body. What is the tension in the string?",
+      "answer": 29,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-05",
+      "level": 1,
+      "text": "Two carts of masses $1.0\\,\\text{kg}$ and $2.0\\,\\text{kg}$ are tied together with a light string on a frictionless track, and air resistance is neglected. A horizontal pulling force of $12\\,\\text{N}$ acts on the lighter cart, and the carts move together. What is the common acceleration of the carts?",
+      "answer": 4.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-13-L2-01",
+      "level": 2,
+      "text": "A crane's rope lifts a crate of mass $50\\,\\text{kg}$. Below it, a second crate of mass $30\\,\\text{kg}$ hangs from another rope. The crates accelerate upward with an acceleration of $1.2\\,\\text{m/s}^2$. The ropes are light and inextensible, and air resistance is neglected. Draw the free-body diagram of each crate in your notebook before you open the solution. What is the tension in the crane's rope?",
+      "answer": 880,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-13/malli-ketju"
+    },
+    {
+      "id": "fy4-13-L2-02",
+      "level": 2,
+      "text": "Bodies of masses $0.50\\,\\text{kg}$ and $1.0\\,\\text{kg}$ hang at the ends of a light, inextensible string over a pulley. The pulley is light and frictionless, and air resistance is neglected. The bodies are released. Draw the free-body diagram of each body. What is the tension in the string?",
+      "answer": 6.5,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-03",
+      "level": 2,
+      "text": "Two sleds of masses $3.0\\,\\text{kg}$ and $2.0\\,\\text{kg}$ are on ice. The sleds are tied together with a light rope. The heavier sled is pulled horizontally with a force of $20\\,\\text{N}$ by another rope, and the sleds move together. Friction and air resistance are neglected. Draw the free-body diagram of each sled. What is the tension in the rope between the sleds?",
+      "answer": 8.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-04",
+      "level": 2,
+      "text": "Two bodies hang at the ends of a light, inextensible string over a pulley. The mass of the lighter one is $0.60\\,\\text{kg}$. The bodies are released, and the heavier one descends with an acceleration of $2.0\\,\\text{m/s}^2$. The pulley is light and frictionless, and air resistance is neglected. Draw the free-body diagram of each body. What is the mass of the heavier body?",
+      "answer": 0.91,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-13-L3-01",
+      "level": 3,
+      "text": "An elevator cabin of mass $800\\,\\text{kg}$ hangs from the end of a light, inextensible rope. The rope passes over a light, frictionless wheel, and at its other end is a counterweight of mass $1200\\,\\text{kg}$. The counterweight descends and the cabin rises. Friction and air resistance are neglected. Draw the free-body diagrams of the cabin and the counterweight. What is the force that the rope exerts on the axle of the wheel, when the wheel is light and the axle holds it in place?",
+      "answer": 19000,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-02",
+      "level": 3,
+      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table and is tied by a light, inextensible string over a light, frictionless pulley to a hanging mass. The string breaks if its tension exceeds $3.0\\,\\text{N}$. What is the greatest mass of the hanging mass for which the string still holds while the bodies are moving? First draw the free-body diagram of each body. Answer in kilograms.",
+      "answer": 0.44,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-03",
+      "level": 3,
+      "text": "A cart of mass $1.5\\,\\text{kg}$ is on a frictionless table and is tied by a light, inextensible string over a light, frictionless pulley to a hanging mass of $0.50\\,\\text{kg}$. The cart is released from rest. How long does it take for the cart to travel $0.90\\,\\text{m}$? First draw the free-body diagram of each body.",
+      "answer": 0.86,
+      "unit": "s",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

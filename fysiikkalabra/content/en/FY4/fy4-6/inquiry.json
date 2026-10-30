@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "contribution": "Weight $G = mg$ and friction enter the free-body diagram as forces of their own: static friction adapts to the situation up to the upper limit $\\mu_0 N$, kinetic friction is $\\mu N$, and on an inclined plane the components of the weight $mg\\sin\\alpha$ and $mg\\cos\\alpha$ (dashed) give the normal force, the friction and the acceleration; the coefficient of friction is determined experimentally from the limiting angle and with a spring balance, and friction can point in the direction of motion.",
+  "learn": [
+    "distinguish static friction from kinetic friction and calculate the friction force using the coefficient of friction.",
+    "draw the free-body diagram of an object on an inclined plane and write its equations of motion.",
+    "determine the coefficient of friction experimentally."
+  ],
+  "prior": [
+    "Drawing a free-body diagram and the equations of motion $\\Sigma F_x = m a_x$ and $\\Sigma F_y = m a_y$ (chapter *Free-body diagrams and the combined effect of forces*)",
+    "The components $F\\cos\\alpha$ and $F\\sin\\alpha$ of an oblique force (chapter *Free-body diagrams and the combined effect of forces*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A mover lifts a box onto the loading ramp of a van. The box may be empty or packed full. It stays in place even though the ramp is slanted. When the lower end of the ramp is moved closer to the van, the ramp gets steeper. At some point the box suddenly starts to slide down.",
+      "question": "What holds the box in place on a gentle ramp, and why is it no longer enough on a steep ramp?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: the normal force on a slope",
+      "optional": true,
+      "prompt": "A box is at rest on an inclined plank. In which direction does the normal force $\\overline{N}$ of the plank act on the box?",
+      "choices": [
+        {
+          "text": "Perpendicular to the surface of the plank, away from the surface.",
+          "correct": true,
+          "feedback": "Correct. The normal force is always perpendicular to the surface of contact, as you learned in the chapter *Free-body diagrams and the combined effect of forces*. On a slope it is therefore tilted and not vertical."
+        },
+        {
+          "text": "Straight up, opposite to the weight.",
+          "feedback": "The normal force is perpendicular to the surface of contact. Only on a horizontal surface does it point straight up. On a slope the surface is slanted, so the normal force is slanted too."
+        },
+        {
+          "text": "Along the plank, up the slope, against the sliding.",
+          "feedback": "A force parallel to the surface is friction, not the normal force. The normal force is perpendicular to the surface and pushes the box away from it."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: friction on a tilting plank",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "A box is on a plank that is slowly tilted steeper. The box still stays in place. How does the friction force of the plank on the box change as the angle grows?",
+      "choices": [
+        {
+          "text": "The friction force grows as the angle grows.",
+          "correct": true,
+          "feedback": "Correct. The box is at rest, so the static friction equals the component of the weight $G_x = mg\\sin\\alpha$ that pulls it down the slope, and this grows with the angle. In the model values the friction on a $2.0\\,\\text{kg}$ box is $3.4\\,\\text{N}$ at $10^\\circ$, $6.7\\,\\text{N}$ at $20^\\circ$ and $8.6\\,\\text{N}$ at $26^\\circ$."
+        },
+        {
+          "text": "The friction force stays the same all the time.",
+          "feedback": "Static friction is not constant but adapts to the situation. At rest it equals the component $G_x = mg\\sin\\alpha$ that pulls down the slope. In the model values the friction grows from $3.4\\,\\text{N}$ at $10^\\circ$ to $8.6\\,\\text{N}$ at $26^\\circ$."
+        },
+        {
+          "text": "The friction force decreases because the normal force decreases.",
+          "feedback": "The normal force really does decrease, and with it the *upper limit* $\\mu_0 N$ of static friction. The actual static friction, however, is only as large as is needed: equal to $G_x = mg\\sin\\alpha$, which grows. In the model values the friction grows from $3.4\\,\\text{N}$ to $8.6\\,\\text{N}$ as the angle grows from $10^\\circ$ to $26^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a heavy and a light box",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Two boxes slide down the same steep plank. The surfaces are alike, but one box is twice as heavy. Which one accelerates more?",
+      "choices": [
+        {
+          "text": "Both accelerate equally.",
+          "correct": true,
+          "feedback": "Correct. A larger component pulls the heavier box down the slope, but the normal force and the kinetic friction are larger in the same proportion. The net force is proportional to the mass, so the acceleration is the same. In the model values at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for the masses $2.0$, $3.0$ and $4.0\\,\\text{kg}$."
+        },
+        {
+          "text": "The heavy box, because a greater weight acts on it.",
+          "feedback": "The weight and its component along the slope are greater, but the kinetic friction $\\mu mg\\cos\\alpha$ also grows in the same proportion. In addition, a greater mass accelerates less for the same force. In the model values the acceleration is $3.22\\,\\text{m/s}^2$ for all masses."
+        },
+        {
+          "text": "The light box, because a greater friction acts on the heavy one.",
+          "feedback": "A greater friction does act on the heavier box, but the component pulling it down the slope is greater in the same proportion. The mass cancels from the equation of motion. In the model values the acceleration is $3.22\\,\\text{m/s}^2$ for all masses."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A box is on a plank whose slope you can change. Left: a snapshot and a graph of the friction force. Right: the free-body diagram of the box, to scale.",
+      "howto": "Adjust the angle $\\alpha$ of the plank with the slider. Choose the *Mass* and the *Surfaces*. The free-body diagram and the readings update at once. If the box slides, press *Start* to see the sliding, and *Reset* to return the box to the start. The graph marks the friction force at every angle you have tried. The box *Show the components of the weight* shows the components as dashed lines. *Speed* slows down or speeds up the motion without changing the readings.",
+      "model": "The values are model values calculated by the simulation. The box is at rest at first. It stays in place if the static friction needed is at most $\\mu_0 N$; otherwise it slides, and kinetic friction $\\mu N$ acts on it. The coefficients of friction are model values: wood on wood $\\mu_0 = 0.50$ and $\\mu = 0.30$, plastic on wood $\\mu_0 = 0.30$ and $\\mu = 0.20$, rubber on wood $\\mu_0 = 0.80$ and $\\mu = 0.60$. Air drag is ignored. The blue arrow of the velocity is in the snapshot, not in the free-body diagram, because velocity is not a force.",
+      "calc": "The components of the weight are $G_x = mg\\sin\\alpha$ down the slope and $G_y = mg\\cos\\alpha$ toward the surface, and $g = 9.81\\,\\text{m/s}^2$. In the direction perpendicular to the surface the box does not accelerate, so $N = mg\\cos\\alpha$. If $G_x \\le \\mu_0 N$, the box stays in place, the static friction is $F_\\mu = G_x$ and $a = 0$. Otherwise $F_\\mu = \\mu N$ and along the slope $G_x - F_\\mu = ma$, so $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: tilting the plank",
+      "intro": "Test the first prediction. The starting state selects the wood-on-wood surfaces and the mass $2.0\\,\\text{kg}$. Change only the angle $\\alpha$. Record a measurement at least at the angles $0^\\circ$, $10^\\circ$ and $20^\\circ$. Then increase the angle one degree at a time until the box starts to slide, and also record the last angle at which it stays in place and the first angle at which it slides.",
+      "initial": {
+        "pinta": "puu",
+        "m": "2",
+        "alpha": 0
+      },
+      "names": {
+        "alpha": "angle $\\alpha$",
+        "m": "mass m",
+        "pinta": "pinnat"
+      },
+      "units": {
+        "alpha": "°",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "puu": "wood on wood"
+        }
+      },
+      "locked": [
+        "pinta",
+        "m"
+      ],
+      "vary": "alpha",
+      "measure": [
+        {
+          "key": "Gx",
+          "label": "G_x (N)"
+        },
+        {
+          "key": "N",
+          "label": "N (N)"
+        },
+        {
+          "key": "Fmu",
+          "label": "$F_\\mu$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "fbd": "equations",
+        "prompt": "Find in the table the limit at which the box starts to slide. Use it to determine the coefficient of static friction $\\mu_0$ between the box and the plank.",
+        "answer": 0.4986,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "Just before sliding the static friction is at its greatest, that is $F_\\mu = \\mu_0 N$. Which forces are then in balance along the slope?",
+          "Along the slope $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$, and the mass cancels.",
+          "$\\mu_0 = \\tan\\alpha_0$, where $\\alpha_0$ is halfway between the last angle at which the box stays in place and the first angle at which it slides."
+        ],
+        "mistakes": [
+          {
+            "value": 0.4462,
+            "feedback": "You calculated $\\sin\\alpha_0$. At the limiting angle $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$, so $\\mu_0 = \\dfrac{\\sin\\alpha_0}{\\cos\\alpha_0} = \\tan\\alpha_0$."
+          },
+          {
+            "value": 0.8949,
+            "feedback": "You calculated $\\cos\\alpha_0$. The coefficient of static friction is the ratio of the component along the slope to the normal force: $\\mu_0 = \\tan\\alpha_0$."
+          }
+        ],
+        "solution": "**Given:** from the table the box stays in place at $26^\\circ$ and slides at $27^\\circ$, so the limiting angle is $\\alpha_0 \\approx 26.5^\\circ$; $m = 2.0\\,\\text{kg}$\n\n**Find:** the coefficient of static friction $\\mu_0$ (no unit)\n\n**Principle:** Just before sliding the box is still at rest, so the sum of the forces is zero, and the static friction is at its greatest, $F_\\mu = \\mu_0 N$. Newton's second law along the slope and perpendicular to the surface gives the coefficient.\n\n**Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\\overline{G}$ straight down, its components $G_x = mg\\sin\\alpha_0$ and $G_y = mg\\cos\\alpha_0$ dashed, the normal force $\\overline{N}$ perpendicular to the surface, outward, and the static friction $\\overline{F}_\\mu$ up the slope.\n\n**Formula:** $y$: $N - mg\\cos\\alpha_0 = 0$ and $x$: $mg\\sin\\alpha_0 - \\mu_0 N = 0$, so $\\mu_0 = \\dfrac{mg\\sin\\alpha_0}{mg\\cos\\alpha_0} = \\tan\\alpha_0$\n\n**Conversions:** The angle is in degrees, and the tangent is calculated with the calculator in degree mode; no other conversions are needed.\n\n**Substitution:** $\\mu_0 = \\tan 26.5^\\circ = 0.4986$\n\n**Answer:** $0.50$, two significant figures, because the limiting angle is known only to the accuracy of a degree: $\\tan 26^\\circ = 0.49$ and $\\tan 27^\\circ = 0.51$.\n\n**Reasonableness:** In the table, just before sliding the friction is $8.6\\,\\text{N}$ and the normal force $17.6\\,\\text{N}$, and their ratio is $0.49$, the same result. The coefficient of friction of wood on wood is typically $0.3$–$0.6$, so the value is plausible."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the mass changes",
+      "intro": "Test the second prediction. The starting state selects the wood-on-wood surfaces and the angle $35^\\circ$, at which the box slides. Change only the mass and record a measurement for all three masses. You can watch the sliding by pressing *Start*.",
+      "initial": {
+        "pinta": "puu",
+        "alpha": 35,
+        "m": "2"
+      },
+      "names": {
+        "alpha": "angle $\\alpha$",
+        "m": "mass m",
+        "pinta": "pinnat"
+      },
+      "units": {
+        "alpha": "°",
+        "m": "kg"
+      },
+      "values": {
+        "pinta": {
+          "puu": "wood on wood"
+        }
+      },
+      "locked": [
+        "pinta",
+        "alpha"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "Gx",
+          "label": "G_x (N)"
+        },
+        {
+          "key": "Fmu",
+          "label": "$F_\\mu$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "a (m/s²)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Using your measurements, explain why the box stays in place on a gentle plank but starts to slide on a steeper one, and why the mass does not affect the acceleration.",
+      "criteria": [
+        "The answer says that at rest the static friction equals the component along the slope $G_x = mg\\sin\\alpha$ and grows with the angle.",
+        "The answer says that the normal force $N = mg\\cos\\alpha$ and therefore the upper limit $\\mu_0 N$ of static friction decrease as the angle grows, and sliding starts when $G_x$ exceeds the upper limit.",
+        "The answer says that both the component along the slope and the friction are proportional to the mass, so the mass cancels.",
+        "The answer uses the measurement results, for example the friction at two angles or the acceleration at two masses."
+      ],
+      "model": "At rest the static friction acting on the box equals the component $G_x = mg\\sin\\alpha$ that pulls it down the slope, so it grows with the angle: in the model values $3.4\\,\\text{N}$ at $10^\\circ$ and $8.6\\,\\text{N}$ at $26^\\circ$. At the same time the normal force $N = mg\\cos\\alpha$ decreases, and with it the upper limit $\\mu_0 N$ of static friction. When $G_x$ exceeds the upper limit, at about $27^\\circ$, the box starts to slide, and the friction drops to the kinetic friction $\\mu N$, in the model values $5.2\\,\\text{N}$. Both $G_x$ and the friction are proportional to the mass, so the mass cancels, and at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for all masses, which shows in the table of experiment 2. That the limiting angle does not depend on the mass follows from the condition $\\tan\\alpha_0 = \\mu_0$, which contains no mass; this was not measured."
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement with a spring balance",
+      "optional": true,
+      "source": "example",
+      "text": "Students pull a wooden block on a horizontal table with a spring balance, horizontally and at a constant velocity. They add weights on top of the block and record the reading of the balance.\n\n| $m$ (kg) | $0.50$ | $1.00$ | $1.50$ | $2.00$ |\n|---|---|---|---|---|\n| $F$ (N) | $1.7$ | $3.5$ | $5.1$ | $6.9$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Determine the coefficient of kinetic friction $\\mu$ between the block and the table as the mean of the measurements.",
+        "answer": 0.3504,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "The block moves at a constant velocity, so the force of the balance equals the kinetic friction. What is the normal force on a horizontal table?",
+          "$N = mg$ and $\\mu = \\dfrac{F_\\mu}{N} = \\dfrac{F}{mg}$ for each row.",
+          "For example from the first row $\\mu = \\dfrac{1.7\\,\\text{N}}{0.50\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2} \\approx 0.35$. Calculate all four and their mean."
+        ],
+        "mistakes": [
+          {
+            "value": 3.4375,
+            "feedback": "You divided the force by the mass. The coefficient of friction is the ratio of the friction force to the *normal force*, and the normal force is $N = mg$ in newtons."
+          }
+        ],
+        "solution": "**Given:** the masses in the table $0.50$–$2.00\\,\\text{kg}$ and the balance readings $1.7$–$6.9\\,\\text{N}$; the block moves horizontally at a constant velocity; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the coefficient of kinetic friction $\\mu$ (no unit)\n\n**Principle:** The block moves at a constant velocity, so the sum of the forces is zero: in the horizontal direction the force of the balance equals the kinetic friction and in the vertical direction the normal force equals the weight. The kinetic friction is $F_\\mu = \\mu N$.\n\n**Formula:** $F - \\mu N = 0$ and $N - mg = 0$, so $\\mu = \\dfrac{F}{mg}$\n\n**Conversions:** The masses are in kilograms and the forces in newtons, so no conversions are needed.\n\n**Substitution:** $\\mu_1 = \\dfrac{1.7\\,\\text{N}}{0.50\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2} = 0.347$, similarly $\\mu_2 = 0.357$, $\\mu_3 = 0.347$ and $\\mu_4 = 0.352$; the mean $\\mu = (0.347 + 0.357 + 0.347 + 0.352) : 4 = 0.350$\n\n**Answer:** $0.35$, two significant figures like the balance readings, for example $1.7\\,\\text{N}$.\n\n**Reasonableness:** All four ratios are close to each other, so the friction really is proportional to the normal force. When the mass becomes four times as great, the reading grows from $1.7\\,\\text{N}$ to $6.9\\,\\text{N}$, that is about four times as great. The coefficient of friction of wood on wood is typically $0.3$–$0.6$."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements. What did you learn about the magnitude of static friction? Also return to the box at the start: from the condition $\\tan\\alpha_0 = \\mu_0$, deduce why an empty box and a box packed full start to slide at the same angle of the ramp.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "fbd": "error",
+      "figure": "fy4-6/virhe",
+      "prompt": "A box slides down a slope, and there is friction between the slope and the box. A student drew the free-body diagram of the box shown in the picture. What is wrong in the diagram?",
+      "choices": [
+        {
+          "text": "The normal force should be perpendicular to the surface of the slope.",
+          "correct": true,
+          "feedback": "Correct. The normal force is always perpendicular to the surface of contact. On a slope it is tilted, and its magnitude is $N = mg\\cos\\alpha$."
+        },
+        {
+          "text": "The weight should point perpendicular to the slope.",
+          "feedback": "The weight is the gravitational pull of the Earth, and it always points straight down, as in the diagram. Only the component $G_y$ of the weight points perpendicular to the slope, and it is not a force of its own. The error is in the direction of the normal force."
+        },
+        {
+          "text": "The friction should point down the slope, in the direction of motion.",
+          "feedback": "The box slides down, so the friction opposes the sliding and points up the slope, as in the diagram. The error is in the direction of the normal force: it must be perpendicular to the surface."
+        },
+        {
+          "text": "The diagram lacks a force along the slope that pulls the box down.",
+          "feedback": "What pulls the box down the slope is the component $G_x$ of the weight, not a separate force. If it is drawn, it is drawn as a dashed line, as a component of the weight. The error is in the direction of the normal force."
+        }
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Choose the correct free-body diagram",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "A box is at rest on an inclined plank. In which diagram is the free-body diagram of the box correct? In the diagrams the box is drawn as a rectangle. Compare the arrows carefully: each wrong diagram has one error.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-a",
+          "correct": true,
+          "feedback": "Correct. The weight points straight down, the normal force perpendicular to the surface, outward, and the static friction up the slope, because the box tends to slide down. The arrows cancel each other, because the box is at rest."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-b",
+          "feedback": "Here the friction points down the slope. The box tends to slide down, so static friction opposes this and points up the slope. Otherwise the diagram would be correct."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-c",
+          "feedback": "The diagram lacks friction. The weight and the normal force alone do not cancel each other on a slope, so the box would slide down. Static friction up the slope keeps it in place."
+        },
+        {
+          "text": "",
+          "figure": "fy4-6/valitse-d",
+          "feedback": "The weight is drawn perpendicular to the slope. The weight always points straight down, also on a slope. Only its component $G_y$ points perpendicular to the surface."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "fbd": "equations",
+      "prompt": "A moving walkway at an airport carries an $8.0\\,\\text{kg}$ suitcase upward at a constant velocity. The belt is at an angle of $15^\\circ$ to the horizontal, and the suitcase does not slip on the belt. How large is the friction force of the belt on the suitcase? Answer in newtons.",
+      "answer": 20.31,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Draw the free-body diagram of the suitcase. The suitcase moves upward at a constant velocity, so the net force is zero. Which force can cancel the component of the weight along the slope?",
+        "Choose $x$ up along the belt. Along the slope $F_\\mu - mg\\sin\\alpha = 0$.",
+        "$F_\\mu = mg\\sin\\alpha = 8.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\sin 15^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 75.81,
+          "feedback": "This is the perpendicular component of the weight $mg\\cos\\alpha$, which equals the normal force. Friction is parallel to the surface, so it cancels the component along the slope $mg\\sin\\alpha$."
+        },
+        {
+          "value": 78.48,
+          "feedback": "This is the whole weight $mg$. In the direction of the belt the friction only needs to cancel the component of the weight along the slope $mg\\sin\\alpha$."
+        }
+      ],
+      "solution": "**Given:** $m = 8.0\\,\\text{kg}$, the angle of the belt $\\alpha = 15^\\circ$, the suitcase moves at a constant velocity and does not slip on the belt; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the friction force of the belt $F_\\mu$ in $\\text{N}$\n\n**Principle:** The suitcase moves at a constant velocity, so by Newton's second law the sum of the forces is zero. The suitcase does not slip relative to the belt, so static friction acts on it, and it is exactly as large as needed.\n\n**Free-body diagram:** The suitcase as a rectangle along the belt, $x$ up along the belt and $y$ perpendicular to the belt, outward. The weight $\\overline{G}$ straight down, its components $mg\\sin\\alpha$ down the belt and $mg\\cos\\alpha$ toward the belt dashed, the normal force $\\overline{N}$ perpendicular to the belt, outward, and the static friction $\\overline{F}_\\mu$ up along the belt. The suitcase tends to slide down relative to the belt, so the friction points up, in the direction of motion.\n\n**Formula:** $x$: $F_\\mu - mg\\sin\\alpha = 0$, so $F_\\mu = mg\\sin\\alpha$\n\n**Conversions:** The mass is in kilograms, so no conversions are needed.\n\n**Substitution:** $F_\\mu = 8.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\sin 15^\\circ = 78.48\\,\\text{N}\\cdot 0.2588 = 20.31\\,\\text{N}$\n\n**Answer:** $20\\,\\text{N}$ up along the belt, two significant figures like the mass $8.0\\,\\text{kg}$.\n\n**Reasonableness:** The weight of the suitcase is about $80\\,\\text{N}$, and on a gentle belt the component along the slope is only about a quarter of it, so $20\\,\\text{N}$ is reasonable. The friction points in the direction of motion: it opposes the sliding of the suitcase relative to the belt, not the motion of the suitcase."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In every task, first draw the free-body diagram in your notebook, even if the task does not ask for it. Level 1 is enough for basic competence; levels 2 and 3 are advanced."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A heavy cabinet is pushed on a horizontal floor with a horizontal force of $150\\,\\text{N}$, but it does not move. The greatest possible value of static friction in this situation is $400\\,\\text{N}$. How large is the friction force of the floor on the cabinet?",
+      "choices": [
+        {
+          "text": "$150\\,\\text{N}$, against the push.",
+          "correct": true,
+          "feedback": "Correct. The cabinet is at rest, so the sum of the horizontal forces is zero. The static friction is exactly as large as the push and in the opposite direction. The upper limit $400\\,\\text{N}$ only tells how large the friction can be at most."
+        },
+        {
+          "text": "$400\\,\\text{N}$, against the push.",
+          "feedback": "Then the net force would be $250\\,\\text{N}$ against the push, and the cabinet would accelerate toward the pusher. Static friction is only as large as is needed: $150\\,\\text{N}$. The value $400\\,\\text{N}$ is its upper limit."
+        },
+        {
+          "text": "Zero, because the cabinet does not move.",
+          "feedback": "If there were no friction, the push would accelerate the cabinet. The cabinet stays in place because static friction cancels the push: the friction is $150\\,\\text{N}$ against the push."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "fbd": "equations",
+      "prompt": "A book is given a push on a tilted desktop, and it slides down at a constant velocity when the angle of the desktop is $17^\\circ$. How large is the coefficient of kinetic friction between the book and the desktop?",
+      "answer": 0.3057,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Draw the free-body diagram of the book. In uniform motion the net force is zero, also along the slope.",
+        "Along the slope $mg\\sin\\alpha - \\mu N = 0$ and in the perpendicular direction $N = mg\\cos\\alpha$.",
+        "The mass cancels: $\\mu = \\tan\\alpha$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.2924,
+          "feedback": "You calculated $\\sin 17^\\circ$. The coefficient of friction is the ratio of the friction force to the normal force: $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$."
+        },
+        {
+          "value": 0.9563,
+          "feedback": "You calculated $\\cos 17^\\circ$. The friction must cancel the component along the slope $mg\\sin\\alpha$, and the normal force is $mg\\cos\\alpha$, so $\\mu = \\tan\\alpha$."
+        }
+      ],
+      "solution": "**Given:** the angle of the desktop $\\alpha = 17^\\circ$, the book slides down at a constant velocity\n\n**Find:** the coefficient of kinetic friction $\\mu$ (no unit)\n\n**Principle:** In uniform motion the acceleration is zero, so by Newton's second law the sum of the forces is zero in both directions. The book slides, so kinetic friction $F_\\mu = \\mu N$ acts on it.\n\n**Free-body diagram:** The book as a rectangle along the desktop, $x$ down along the desktop and $y$ perpendicular to the desktop, outward. The weight $\\overline{G}$ straight down and its components $mg\\sin\\alpha$ and $mg\\cos\\alpha$ dashed, the normal force $\\overline{N}$ perpendicular to the desktop, outward, and the kinetic friction $\\overline{F}_\\mu$ up along the desktop, because the book slides down.\n\n**Formula:** $y$: $N - mg\\cos\\alpha = 0$ and $x$: $mg\\sin\\alpha - \\mu N = 0$, so $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Conversions:** The angle is in degrees; no other conversions are needed, and the mass cancels.\n\n**Substitution:** $\\mu = \\tan 17^\\circ = 0.3057$\n\n**Answer:** $0.31$, two significant figures like the angle $17^\\circ$.\n\n**Reasonableness:** The coefficient is positive and less than $1$, as is typical between a book and wood. A smaller angle would mean a smaller coefficient of friction: on ice a book would slide at a constant velocity already at a very gentle angle."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw it yourself",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-6/malli-veto",
+      "prompt": "A box of mass $20\\,\\text{kg}$ is pulled by a rope up a $20^\\circ$ slope at a constant velocity. The rope is parallel to the slope, and the coefficient of kinetic friction between the box and the slope is $0.25$. Draw the free-body diagram of the box on paper: the box as a rectangle and every force from its point of application. Then write the equations of motion along the slope and perpendicular to it and calculate the tension of the rope.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "The diagram has only the box, not the rope, the person pulling or the slope with its forces."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Four forces: the weight, the normal force of the slope, the kinetic friction and the tension of the rope. No extra force in the direction of motion."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "The weight straight down, the normal force perpendicular to the surface, outward, the tension up the slope and the friction down the slope, because the box slides up."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight from the center, the normal force from the lower surface, the friction from the corner of the lower surface, outside the box, and the tension from the point where the rope is attached; each with its own symbol."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "The tension arrow is as long as the friction and the component of the weight along the slope together; the components of the weight, if drawn, are dashed."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$y$: $N - mg\\cos 20^\\circ = 0$ and $x$ up the slope: $T - mg\\sin 20^\\circ - \\mu N = 0$, so $T \\approx 113\\,\\text{N}$."
+        }
+      ],
+      "model": "The Earth, the slope and the rope act on the box. The weight $\\overline{G}$ points straight down from the center. The slope acts from the lower surface with two forces: the normal force $\\overline{N}$ points perpendicular to the surface, outward, and the kinetic friction $\\overline{F}_\\mu$ down the slope, because the box slides up. The tension $\\overline{T}$ of the rope points up the slope. The box moves at a constant velocity, so the net force is zero. When $x$ points up the slope and $y$ out of the surface: $y$: $N - mg\\cos 20^\\circ = 0$, so $N = 20\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\cos 20^\\circ \\approx 184\\,\\text{N}$ and $F_\\mu = \\mu N \\approx 46\\,\\text{N}$. $x$: $T - mg\\sin 20^\\circ - \\mu N = 0$, so $T = mg\\sin 20^\\circ + \\mu mg\\cos 20^\\circ \\approx 67\\,\\text{N} + 46\\,\\text{N} \\approx 113\\,\\text{N}$. The rope has to overcome both the component of the weight along the slope and the friction."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}

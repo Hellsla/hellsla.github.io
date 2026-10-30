@@ -1,0 +1,15 @@
+[
+  {
+    "q": "Two balls of the same size, a light plastic ball and a heavy wooden ball, are dropped at the same time from the top of a tall tower. Which hits the ground first, and why?",
+    "a": "The heavy wooden ball. At the start both accelerate with the acceleration $g$, but as the speed grows, air resistance reduces the acceleration of the light ball more, because its weight is smaller. Balls of the same size have the same air resistance at the same speed, so the terminal velocity of the light ball is smaller."
+  },
+  {
+    "q": "Why is the magnitude of the acceleration of a ball thrown upward greater than $9.81\\,\\text{m/s}^2$ during the rise, when air resistance is not ignored?",
+    "fbd": "identify",
+    "a": "During the rise air resistance points against the velocity, that is down, in the same direction as the weight. The net force $mg + F_\\text{v}$ is greater than the weight, so the magnitude of the acceleration $g + \\tfrac{F_\\text{v}}{m}$ is greater than $g$."
+  },
+  {
+    "q": "Name two ways in which a skydiver can lower the terminal velocity, and explain why they work.",
+    "a": "The skydiver can turn belly down and spread the arms and legs, which increases the cross-sectional area, or open the parachute. Both increase the air resistance at the same speed, so the air resistance grows to the size of the weight already at a smaller speed."
+  }
+]

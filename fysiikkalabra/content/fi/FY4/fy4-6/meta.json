@@ -1,0 +1,25 @@
+{
+  "id": "fy4-6",
+  "course": "FY4",
+  "title": "Paino, kitka ja kalteva taso",
+  "goals": [
+    "LOPS FY4: paino ja kitka",
+    "Kokeellisesti: kitkakertoimen määrittäminen",
+    "Täsmennys: muitakin voimia kuten noste ja väliaineen vastusvoima voidaan käsitellä",
+    "Voimakuvio: paino pystysuoraan alas, tukivoima kohtisuoraan pintaa vastaan, lepo- ja liikekitka pinnan suuntaisia, painon komponentit katkoviivoin, yhtälöiden etumerkit (esimerkki D); kitka ei aina vastusta kappaleen liikettä (esimerkki J, laadullisesti)."
+  ],
+  "prerequisites": [
+    "fy4-5"
+  ],
+  "glossary": [
+    "paino",
+    "kitka",
+    "lepokitka",
+    "liikekitka",
+    "kitkakerroin",
+    "kalteva taso"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

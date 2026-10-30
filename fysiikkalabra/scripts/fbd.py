@@ -218,9 +218,20 @@ class FBD:
                 if self._overlap(gw, nf):
                     out.append(f"{gw['sym']} and {nf['sym']} run along one line: draw them apart so both can be told apart "
                                f"(at least {APART} units side by side)")
+                elif self._touches(gw, nf):
+                    out.append(f"{nf['sym']} starts on the shaft of {gw['sym']}: move it along the contact surface so the "
+                               f"two arrows stay at least {APART} units apart (2026-10-30, fy4-6 slope)")
         for c in self.comps:
             if c["at"] is not None and self._where(c["at"]) == "out": out.append(f"{c['sym']} must start on the body")
         return out
+
+    def _touches(self, a, b):
+        """b's tail closer than APART to a's shaft (a weight crossing the bottom face where a slanted N starts)."""
+        (a1, a2), (b1, _) = self._ends(a), self._ends(b)
+        d = (a2[0] - a1[0], a2[1] - a1[1]); L2 = _dot(d, d)
+        if not L2: return False
+        t = max(0.0, min(1.0, _dot(d, (b1[0] - a1[0], b1[1] - a1[1])) / L2))
+        return math.hypot(b1[0] - a1[0] - t * d[0], b1[1] - a1[1] - t * d[1]) < APART
 
     def _overlap(self, a, b):
         """Two parallel arrows closer than APART to each other along a common stretch."""
