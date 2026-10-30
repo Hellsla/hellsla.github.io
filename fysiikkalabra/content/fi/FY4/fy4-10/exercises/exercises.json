@@ -1,0 +1,104 @@
+{
+ "level1": [
+  {
+   "id": "fy4-10-L1-01",
+   "level": 1,
+   "text": "Ilmatyynyradalla $0{,}40\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}50\\,\\text{m/s}$ oikealle ja $0{,}25\\,\\text{kg}$:n vaunu nopeudella $0{,}60\\,\\text{m/s}$ vasemmalle. Kuinka suuri on vaunujen kokonaisliikemäärä, kun oikealle on positiivinen suunta? Ilmoita liikemäärä etumerkkeineen.",
+   "answer": 0.05,
+   "unit": "kg·m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L1-02",
+   "level": 1,
+   "text": "Ilmatyynyradalla $0{,}50\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}80\\,\\text{m/s}$ ja törmää levossa olevaan $0{,}30\\,\\text{kg}$:n vaunuun. Vaunut jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
+   "answer": 0.5,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L1-03",
+   "level": 1,
+   "text": "Kaksi luistelijaa seisoo levossa jäällä vastakkain ja työntää toisiaan. Luistelijoiden massat ovat $60\\,\\text{kg}$ ja $45\\,\\text{kg}$. Työnnön jälkeen kevyempi luistelija liukuu nopeudella $1{,}2\\,\\text{m/s}$. Jään kitka jätetään huomiotta työnnön ajalta. Millä nopeudella raskaampi luistelija liukuu?",
+   "answer": 0.9,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L1-04",
+   "level": 1,
+   "text": "Ilmakiekkopöydällä kiekko A, jonka massa on $0{,}16\\,\\text{kg}$, liukuu nopeudella $4{,}0\\,\\text{m/s}$ ja törmää suoraan levossa olevaan kiekkoon B, jonka massa on $0{,}20\\,\\text{kg}$. Törmäyksen jälkeen kiekko A liukuu takaisin tulosuuntaansa nopeudella $0{,}44\\,\\text{m/s}$. Kitka jätetään huomiotta. Kuinka suuri on kiekon B nopeus törmäyksen jälkeen?",
+   "answer": 3.552,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L1-05",
+   "level": 1,
+   "text": "Kaksi samanlaista $0{,}30\\,\\text{kg}$:n vaunua liikkuu ilmatyynyradalla toisiaan kohti: toinen nopeudella $0{,}60\\,\\text{m/s}$ oikealle ja toinen nopeudella $0{,}20\\,\\text{m/s}$ vasemmalle. Vaunut törmäävät ja jäävät kiinni toisiinsa. Kitka jätetään huomiotta. Millä nopeudella vaunut jatkavat yhdessä?",
+   "answer": 0.2,
+   "unit": "m/s",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy4-10-L2-01",
+   "level": 2,
+   "text": "Ilmakivääristä ammutaan $0{,}50\\,\\text{g}$:n luoti nopeudella $180\\,\\text{m/s}$. Kiväärin massa on $3{,}2\\,\\text{kg}$, ja se on ennen laukausta levossa ampujan kevyesti tukemana. Ampujan tuki jätetään huomiotta laukauksen lyhyen ajan. Millä nopeudella kivääri lähtee liikkumaan taaksepäin?",
+   "answer": 0.028125,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-02",
+   "level": 2,
+   "text": "Jääkiekkoilija, jonka massa on $85\\,\\text{kg}$, liukuu nopeudella $6{,}0\\,\\text{m/s}$ ja taklaa paikallaan seisovaa $75\\,\\text{kg}$:n pelaajaa. Pelaajat liukuvat törmäyksen jälkeen yhdessä. Jään kitka jätetään huomiotta törmäyksen ajalta. Kuinka paljon pelaajien yhteistä liike-energiaa muuttuu törmäyksessä muiksi energiamuodoiksi?",
+   "answer": 717.1875,
+   "unit": "J",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-03",
+   "level": 2,
+   "text": "Ilmatyynyradalla $0{,}20\\,\\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\\,\\text{m/s}$ ja törmää levossa olevaan $0{,}40\\,\\text{kg}$:n vaunuun. Törmäyksen jälkeen kevyempi vaunu liikkuu takaisin tulosuuntaansa nopeudella $0{,}10\\,\\text{m/s}$. Kitka jätetään huomiotta. Kuinka monta prosenttia vaunujen alkuperäisestä liike-energiasta on jäljellä törmäyksen jälkeen?",
+   "answer": 70.833333,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-04",
+   "level": 2,
+   "text": "Ratapihalla $30\\,000\\,\\text{kg}$:n tavaravaunu liikkuu nopeudella $1{,}8\\,\\text{m/s}$ ja törmää levossa olevaan vaunuun. Vaunut kytkeytyvät yhteen ja jatkavat yhdessä nopeudella $1{,}2\\,\\text{m/s}$. Vierimisvastus jätetään huomiotta kytkeytymisen ajalta. Kuinka suuri on levossa olleen vaunun massa?",
+   "answer": 15000.0,
+   "unit": "kg",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy4-10-L3-01",
+   "level": 3,
+   "text": "Luodin nopeutta mitataan ballistisella heilurilla: $2{,}0\\,\\text{kg}$:n puupalikka riippuu levossa pitkän narun varassa, ja $10\\,\\text{g}$:n luoti ammutaan vaakasuoraan nopeudella $400\\,\\text{m/s}$ palikkaan, johon se jää. Luoti pysähtyy palikkaan niin nopeasti, ettei palikka ehdi liikkua sinä aikana. Sen jälkeen palikka ja luoti heilahtavat yhdessä ylös. Ilmanvastus jätetään huomiotta. Kuinka korkealle palikka nousee alimmasta kohdastaan? Vastaa senttimetreinä.",
+   "answer": 20.185005,
+   "unit": "cm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L3-02",
+   "level": 3,
+   "text": "Ilotulitusraketti, jonka massa on $0{,}90\\,\\text{kg}$, nousee suoraan ylöspäin nopeudella $12\\,\\text{m/s}$, kun se räjähtää kahdeksi kappaleeksi. $0{,}30\\,\\text{kg}$:n kappale jatkaa suoraan ylöspäin nopeudella $40\\,\\text{m/s}$, ja toinen kappale liikkuu pystysuoraan. Painon ja ilmanvastuksen impulssi jätetään huomiotta räjähdyksen lyhyen ajan. Mikä on toisen kappaleen nopeus heti räjähdyksen jälkeen? Ilmoita nopeus etumerkkeineen, kun ylöspäin on positiivinen suunta.",
+   "answer": -2.0,
+   "unit": "m/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L3-03",
+   "level": 3,
+   "text": "Astronautti on avaruuskävelyllä levossa avaruusaseman suhteen $12{,}0\\,\\text{m}$:n päässä asemasta, kun hänen turvaköytensä irtoaa. Astronautin massa avaruuspukuineen on $120\\,\\text{kg}$. Hän heittää $3{,}0\\,\\text{kg}$:n työkalun poispäin asemasta nopeudella $4{,}0\\,\\text{m/s}$ aseman suhteen. Kuinka kauan kestää, että astronautti ajelehtii takaisin asemalle?",
+   "answer": 120.0,
+   "unit": "s",
+   "tolerance": 0.02
+  }
+ ]
+}

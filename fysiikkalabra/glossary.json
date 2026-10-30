@@ -2326,5 +2326,161 @@
       "mekaaninen energia"
     ],
     "locked": false
+  },
+  {
+    "term": "liikemäärä",
+    "definition": "Kappaleen massan ja nopeuden tulo, $\\overline{p} = m\\overline{v}$. Liikemäärä on vektori, jolla on sama suunta kuin nopeudella; sen yksikkö on $\\text{kg}\\cdot\\text{m/s}$.",
+    "lessons": [
+      "fy4-9"
+    ],
+    "see_also": [
+      "impulssi",
+      "impulssiperiaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "impulssi",
+    "definition": "Voiman ja sen vaikutusajan tulo, $\\overline{I} = \\overline{F}\\,\\Delta t$, kun voima on vakio. Muuttuvan voiman impulssi on $(t, F)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala. Impulssi on vektori, jolla on voiman suunta; sen yksikkö on $\\text{N}\\cdot\\text{s} = \\text{kg}\\cdot\\text{m/s}$.",
+    "lessons": [
+      "fy4-9"
+    ],
+    "see_also": [
+      "liikemäärä",
+      "impulssiperiaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "impulssiperiaate",
+    "definition": "Kappaleen liikemäärän muutos on yhtä suuri kuin siihen vaikuttavan kokonaisvoiman impulssi, $\\Delta\\overline{p} = \\overline{I}$. Sama liikemäärän muutos voidaan saada suurella voimalla lyhyessä ajassa tai pienellä voimalla pitkässä ajassa.",
+    "lessons": [
+      "fy4-9"
+    ],
+    "see_also": [
+      "liikemäärä",
+      "impulssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "liikemäärän säilyminen",
+    "definition": "Kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on tarkasteltavan tapahtuman, kuten törmäyksen, aikana merkityksettömän pieni, systeemin kokonaisliikemäärä pysyy samana. Säilyminen seuraa Newtonin kolmannesta laista: systeemin sisäiset voimat ovat pareittain yhtä suuret ja vastakkaissuuntaiset.",
+    "lessons": [
+      "fy4-10"
+    ],
+    "see_also": [
+      "liikemäärä",
+      "impulssi",
+      "voima ja vastavoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kimmoisa törmäys",
+    "definition": "Törmäys, jossa kappaleiden yhteinen liike-energia on törmäyksen jälkeen yhtä suuri kuin ennen sitä. Liikemäärä säilyy, kun ulkoisten voimien impulssi on merkityksettömän pieni. Esimerkiksi biljardipallojen törmäys on lähes kimmoisa.",
+    "lessons": [
+      "fy4-10"
+    ],
+    "see_also": [
+      "kimmoton törmäys",
+      "liikemäärän säilyminen",
+      "liike-energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kimmoton törmäys",
+    "definition": "Törmäys, jossa osa kappaleiden liike-energiasta muuttuu muiksi energiamuodoiksi, kuten sisäenergiaksi ja ääneksi. Liikemäärä säilyy silti, kun ulkoisten voimien impulssi on merkityksettömän pieni. Täysin kimmottomassa törmäyksessä kappaleet jäävät kiinni toisiinsa ja jatkavat yhteisellä nopeudella.",
+    "lessons": [
+      "fy4-10"
+    ],
+    "see_also": [
+      "kimmoisa törmäys",
+      "liikemäärän säilyminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "räjähdys",
+    "definition": "Tapahtuma, jossa levossa oleva tai yhdessä liikkuva systeemi hajoaa osiin sisäisten voimien vaikutuksesta, esimerkiksi jousen laukeaminen kahden vaunun välissä tai luodin lähtö kivääristä. Kokonaisliikemäärä säilyy, ja liike-energia kasvaa jousen, lihasten tai polttoaineen energian kustannuksella.",
+    "lessons": [
+      "fy4-10"
+    ],
+    "see_also": [
+      "liikemäärän säilyminen",
+      "kimmoton törmäys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "reaktioaika",
+    "definition": "Aika, joka kuluu siitä, kun kuljettaja huomaa vaaran, siihen kun jarrut alkavat hidastaa ajoneuvoa. Tavallisesti noin 1 s; väsymys, päihteet ja puhelimen käyttö pidentävät sitä.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "reaktiomatka",
+      "pysähtymismatka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "reaktiomatka",
+    "definition": "Matka, jonka ajoneuvo kulkee reaktioajan aikana alkuperäisellä nopeudellaan: s_r = v_0 t_r. Verrannollinen nopeuteen.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "reaktioaika",
+      "pysähtymismatka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jarrutusmatka",
+    "definition": "Matka, jonka ajoneuvo kulkee jarrutuksen alusta pysähtymiseen. Vakiohidastuvuudella s_j = v_0²/(2a), joten se kasvaa nopeuden neliön suhteessa ja pitenee liukkaalla tiellä.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "pysähtymismatka",
+      "reaktiomatka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pysähtymismatka",
+    "definition": "Reaktiomatkan ja jarrutusmatkan summa: matka vaaran huomaamisesta ajoneuvon pysähtymiseen.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "reaktiomatka",
+      "jarrutusmatka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "turvavyö",
+    "definition": "Vyö, joka kiinnittää matkustajan autoon, niin että hän hidastuu törmäyksessä auton rypistyvän keulan mukana. Se pidentää törmäysaikaa ja jakaa voiman lantion, rintakehän ja olkapään luille, joten keskimääräinen voima pienenee.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "törmäysaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "törmäysaika",
+    "definition": "Aika, jossa kappaleen nopeus muuttuu törmäyksessä. Kun liikemäärän muutos on sama, pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa, F_k = mΔv/Δt.",
+    "lessons": [
+      "fy4-11"
+    ],
+    "see_also": [
+      "turvavyö"
+    ],
+    "locked": false
   }
 ]

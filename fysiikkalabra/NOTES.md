@@ -86,7 +86,8 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   glass `#eef5f9`, water `#a9d1f0`→`#2f74b5`, sand `#f1dfb5`→`#d9b26a` with grains `#a97a35`, energy or heat flow
   `#ffc078`→`#e8590c` (filled arrows), temperature and its rise `#c92a2a` (before the rise `#f2a69c`), cold `#1971c2`
   /`#d0e6fb`, metals `#c4ccd4` (aluminium), `#6c757d` (iron), `#b8622d` (copper), ice `#a5d8ff`, `#2b8a3e`/`#b2f2bb` for
-  a correct or stable state; `lint_lesson.py` holds the list. Colour never carries information alone: a bracket and a
+  a correct or stable state, momentum `#7048e8` (FY4: apart from velocity `#1971c2`, force red and acceleration
+  `#e8590c`); `lint_lesson.py` holds the list. Colour never carries information alone: a bracket and a
   label say what the red segment says. Equal quantities get equal shapes (two equal Q arrows); a ratio is drawn to
   scale (ΔT 20 px and 105 px for c 4190 and 800). Gradients and patterns go in the figure's own `<defs>` with ids
   prefixed by the lesson (`fy36-water`), because two figures share one page. A filled path makes an arrow (a gradient

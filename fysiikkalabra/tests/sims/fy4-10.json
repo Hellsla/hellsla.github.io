@@ -1,0 +1,154 @@
+[
+  {
+    "expr": "(() => { const S=window.simState; return S.tyyppi==='kimmoisa' && S.m1===0.4 && S.m2===0.4 && S.v1===0.6 && S.v2===0 && S.running===false && S.t===0 && S.u1===null ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load: elastic, both 0,40 kg, v1 = 0,60 m/s, v2 = 0, not running, nothing measured yet"
+  },
+  {
+    "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='0' && R[0].max==='1' && R[0].step==='0.1' && R[1].min==='-1' && R[1].max==='1' && R[1].step==='0.1' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "two sliders: v1 0-1,0 m/s and v2 −1,0-1,0 m/s in steps of 0,1 m/s"
+  },
+  {
+    "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='kimmoisa,kimmoton,tarra,rajahdys' && L[1]==='0.2,0.4,0.6' && L[2]==='0.2,0.4,0.6' && L[3]==='0.1,0.4,1' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "selects: situation, mass 1, mass 2, speed"
+  },
+  {
+    "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "main button first; DOM order canvas, controls, readout"
+  },
+  {
+    "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "no Lisätietoja box; one legend line of at most 15 words"
+  },
+  {
+    "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='m1,m2,tyyppi,v1,v2' && P.m1.unit==='kg' && P.v1.unit==='m/s' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "adapter declares tyyppi, m1, m2 (kg), v1, v2 (m/s)"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'0.6'); I(L[2],'0.2'); I(R[0],0.8); I(R[1],-0.5);",
+    "expr": "window.simState.p0",
+    "expected": 0.38,
+    "tol": 0.01,
+    "note": "total momentum before = m1 v1 + m2 v2 = 0,60 · 0,8 + 0,20 · (−0,5) = 0,38 kg·m/s"
+  },
+  {
+    "expr": "window.simState.Ek0",
+    "expected": 0.217,
+    "tol": 0.01,
+    "note": "kinetic energy before = ½ · 0,60 · 0,8² + ½ · 0,20 · 0,5² = 0,217 J"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kimmoisa'); I(L[1],'0.4'); I(L[2],'0.4'); I(R[0],0.6); I(R[1],0); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.u2 !== null) r(S.u2); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": 0.6,
+    "tol": 0.01,
+    "note": "elastic, equal masses, glider 2 at rest: glider 2 leaves at 0,60 m/s (lesson-answers.py sim-kimmoisa-0.40)"
+  },
+  {
+    "expr": "Math.abs(window.simState.u1) < 0.006 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "and glider 1 stops: the gliders exchange velocities"
+  },
+  {
+    "expr": "window.simState.EkJ / window.simState.Ek0",
+    "expected": 1.0,
+    "tol": 0.01,
+    "note": "elastic: the kinetic energy is conserved"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kimmoisa'); I(L[1],'0.4'); I(L[2],'0.6'); I(R[0],0.6); I(R[1],0); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.u1 !== null) r(S.u1); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": -0.12,
+    "tol": 0.01,
+    "note": "elastic, 0,40 kg hits 0,60 kg at rest: glider 1 bounces back at 0,12 m/s"
+  },
+  {
+    "expr": "window.simState.pJ",
+    "expected": 0.24,
+    "tol": 0.01,
+    "note": "and the total momentum after is 0,240 kg·m/s as before"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'tarra'); I(L[1],'0.4'); I(L[2],'0.4'); I(R[0],0.6); I(R[1],0); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.u1 !== null) r(S.u1); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": 0.3,
+    "tol": 0.01,
+    "note": "perfectly inelastic, equal masses: the common velocity is 0,30 m/s"
+  },
+  {
+    "expr": "window.simState.EkJ",
+    "expected": 0.036,
+    "tol": 0.01,
+    "note": "and the kinetic energy halves to 0,036 J"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'tarra'); I(L[1],'0.6'); I(L[2],'0.2'); I(R[0],0.5); I(R[1],-0.9); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.u1 !== null) r(S.u1); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": 0.15,
+    "tol": 0.01,
+    "note": "perfectly inelastic head-on: (0,60 · 0,50 − 0,20 · 0,90) / 0,80 = 0,15 m/s (check 2 of the lesson)"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kimmoton'); I(L[1],'0.4'); I(L[2],'0.4'); I(R[0],0.6); I(R[1],0); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.pJ !== null) r(S.pJ); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": 0.24,
+    "tol": 0.01,
+    "note": "inelastic (soft bumper): the total momentum is still 0,240 kg·m/s"
+  },
+  {
+    "expr": "(() => { const S=window.simState; return S.EkJ < 0.9 * S.Ek0 && S.EkJ > 0.5 * S.Ek0 && S.u2 > S.u1 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "and part of the kinetic energy is lost, but the gliders separate (between elastic and perfectly inelastic)"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'rajahdys'); I(L[1],'0.4'); I(L[2],'0.2'); I(R[0],0.6); I(R[1],0); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.u2 !== null) r(S.u2); else if (Date.now() - t0 > 8000) r(null); else setTimeout(f, 100); }; f(); })",
+    "expected": 1.2649,
+    "tol": 0.01,
+    "note": "explosion, spring 0,24 J between 0,40 kg and 0,20 kg at rest: the light glider leaves at 1,26 m/s"
+  },
+  {
+    "expr": "window.simState.u1",
+    "expected": -0.6325,
+    "tol": 0.01,
+    "note": "and the heavy one at 0,63 m/s the other way"
+  },
+  {
+    "expr": "Math.abs(window.simState.pJ) < 0.002 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "the total momentum stays zero"
+  },
+  {
+    "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R[0].disabled && R[1].disabled ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "in the explosion the velocity sliders are not in use"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'kimmoisa'); I(R[0],0.3);",
+    "expr": "(() => { const S=window.simState; const R=document.querySelectorAll('#sim-root input[type=range]'); return S.u1===null && S.t===0 && S.done===false && !R[0].disabled ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "changing a control resets the run and clears the measured values; the sliders are back in use"
+  }
+]
