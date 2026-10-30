@@ -1,21 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: accdbc2f51810aa8
+VERDICT: PASS
+CONTENT-HASH: b7a38f681e4f54f3
 
 ## Blocking
-- lesson.md:82 (+ pudotus figure *alussa*, inquiry.json:72, :136 sim `model`) — B: "nopeus on nolla, joten ilmanvastusta ei vielä ole" is said of a jump from an aeroplane. The jumper leaves with the plane's airspeed (about 35–40 m/s), so F_v ≠ 0. — Add "hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta)" here and in `model`.
-- inquiry.json:68 — B: "Mikään ei kasvata ilmanvastusta painoa suuremmaksi" holds only at constant air density. Falling from 4 km into denser air does slow a jumper. — Prefix "Kun ilman tiheys on sama (mallin oletus),".
-- lesson.md:470, :475 — B: "Samanmuotoisista … raskaammalla suurempi rajanopeus" also needs equal size. A big styrofoam ball outweighs a small lead ball, yet its terminal speed is lower. — "samankokoisista ja -muotoisista". The glossary's *rajanopeus* needs the same fix.
-- lesson.md:281 (figures.py:220 aria), :470, inquiry.json:122, :136, :503 — A: *vapaa pudotus* means falling under the weight alone, with a = g. Here it names a fall with air resistance at the terminal speed. — "ilman varjoa" / "ennen varjon avaamista".
 
 ## Polish
-- lesson.md:79 — "ilman suhteen paikallaan olevaan"; "Vedessä vastus … samalla nopeudella".
-- inquiry.json:122 — *kuvaaja* means the camera operator and the graph in consecutive sentences.
-- inquiry.json:151 — "massa m" → "massa $m$" (all symbols LaTeX).
+- lesson.md:183 (figures.py `_phase`), :333 (`_rise`) — the captions say *mittakaavassa*, but the orange acceleration arrows are drawn as offset + k·a, not in proportion to a. In *pudotus* the middle arrow is 2/3 of the first, though F_v = G/2 gives a = g/2. In *ylos* the falling/rising a arrows are 0,68 : 1, though |a| is 5,81 : 13,81 (the ΣF arrows there are right, 0,42). — Draw a ∝ |a|, or limit "mittakaavassa" to the forces, as *varjo* already does.
+- inquiry.json:700 (pred-3 feedback) — "noin 3,9 kN, viisinkertaiseksi" is the 80 kg run, but the prompt names no mass. — Add "$80\,\text{kg}$:n hyppääjällä".
 
 ## Checked
-- Every lesson-answers.py number was recomputed independently, and all match: v_T 47,6/54,9/61,4/88,6 m/s, canopy 5,11 m/s, F_v,max 3,92 kN = 5,0 G, vt figure, example −18,4 m/s², siirto 304 N and its mistakes, check-2 628 N.
-- sim.js: G − kv² = ma, the k-ramp, the simState keys. The experiments isolate m, varjo and asento.
-- Worked example: solved symbolically first, conversion, 3 sf justified, a real check.
-- Force diagrams (checklist): G from the centre, F_v push or pull beside it, ΣF apart, F red, v blue, a orange. No point particles, no third-law pairs. The b, c and d distractors each carry one error.
-- Predictions, experiment questions, check-1: exactly one correct option each, feedback right. Check-3's criteria and model are right.
-- Notation: \overline, \cdot. Scope: F_v is qualitative, and kv² appears only as the sim's model.
+- All lesson-answers.py numbers recomputed with my own Euler run and closed forms. They match: v_T 47,6/54,9/61,4 m/s, head down 88,6 m/s, canopy 5,11 m/s, F_v,max 3,92 kN = 5,0 G, a_max 39 m/s², hook 198 km/h and 18 km/h, example −18,43 m/s² (F_v = 2,88 G), siirto 303,9 N and its mistakes 367,9/573,2/671,8/735,8, check-2 627,8 N and the 352 mistake.
+- Figure *vt*, read from the SVG coordinates: the 60/100 kg plateaus are 47,6/61,5 m/s, the values at 5 s and 10 s match tanh, and the free-fall line has slope g. *pudotus*, *varjo*, *esimerkki* and *ylos* forces are to scale (F_v = ½G, 3G, 2,88G, ΣF = G ± F_v).
+- The round-1 B/A fixes hold: the start is at rest relative to the air, "kun ilman tiheys on sama", "samankokoisista ja samanmuotoisista" (lesson, summary, glossary, exit ticket 1), and no *vapaa pudotus* for a fall with air resistance.
+- sim.js implements G − kv² = ma, the k ramp, the push/pull point of F_v and the simState keys G, vT, Fv and FvMax. Experiments 1–3 each lock everything except the varied parameter.
+- Force diagrams (checklist): weight from the centre, F_v as a push to the lower face or from the top under the canopy, ΣF hollow and apart, v and a off the body. No third-law pairs and no point particles. Each valitse distractor has one error (b direction, c invented F, d missing F_v).
+- Predictions, experiment questions and check-1 each have exactly one correct option, and every feedback is right. Check-3's criteria, model figure (F_v > G, a up) and equation are consistent.
+- Worked example: solved symbolically first, 3 sf justified, a real check. Scope: F_v is qualitative, and kv² appears only as the sim's model.

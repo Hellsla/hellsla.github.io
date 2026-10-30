@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 512f517d5051bf4f
+CONTENT-HASH: c299cca84ea291d6
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-05 and L2-04 (solutions.md): "vierimisvastus" is used with symbol F_r but is not introduced in the lesson; add a clause ("vierimisvastus, renkaiden ja tien aiheuttama vastus") and name the road's push in L1-05 as the road's friction on the drive wheel, so it does not look like a "forward force".
-- solutions.md: the "Voimakuvio" step describes the diagram in words only; for L1-01, L2-01 and L3-01 a small drawn figure would let a weak student check their own sketch (the order diagram before equation holds).
-- L1-02 and L1-03 are the same single-step pattern (fall with air resistance, one formula); change one to the rising case or a terminal-velocity check so level 1 covers more ground.
+- L2-04 solutions.md "Vastaus": "kolme merkitsevää numeroa, kun tehtävän luvut ... luetaan kolminumeroisiksi arvoiksi" is clumsy; "kolme merkitsevää numeroa, kuten tehtävän tiedoissa" is enough.
+- L1-03 now asks both magnitude and direction in one sentence; split it: "...ilmanvastus on 8,00 N. Kuinka suuri on kiihtyvyys ja mihin suuntaan se osoittaa?" Level 1 now also needs the sign reading; acceptable as the lesson's key idea.
+- solutions.md "Voimakuvio" steps are words only; a drawn figure for L1-01, L2-01 and L3-01 would let a weak student check a sketch (carried from round 1).
 
 ## Checked
-- Levels: 5, 4 and 3 tasks; level 1 single formula, level 2 conversion or rearrangement, level 3 reasoning, graph reading; none repeats the worked example (85 kg parachute opening).
-- Every solution follows given, asked, principle, diagram, formula, conversions, substitution, answer with significant figures, reasonableness check.
-- L3-03: tangent figure rendered; the slope is not given, the grid points are readable, the solution explains the reading of the tangent not the curve.
-- Rise and fall cases (L1-04, L2-03, L3-02) test the sign of air resistance direction, not only the formula.
+- Round-1 polish done: "vierimisvastus" is now glossed in L1-05 and L2-04, and the road's push is named "tien kitkavoima, joka työntää vetävää pyörää", so it is not a "forward force".
+- L1-03 now covers the thrown-down case (F_v > G, a up), so level 1 no longer has two identical falls; answer 3,52 m/s² matches the solution.
+- Levels 5, 4, 3; none repeats the 85 kg parachute example.
+- Every solution runs given, asked, principle, diagram, formula, conversions, substitution, answer with significant figures, check.
 - Finnish: case after number and unit correct; terms match the glossary.
