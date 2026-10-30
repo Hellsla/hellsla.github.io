@@ -1,16 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 2978c7bdbfea8fbf
+CONTENT-HASH: 479fb8e6c72f07ad
 
 ## Blocking
-None. Round-1 items verified:
-1. fy4-s2 c now reuses b's work $5234\,\text{J}$ ($9123 - 3889$, consistent with the shown values; exact $5234{,}7$). $13\,979 - 5234 = 8745\,\text{J}$, $v = 13{,}57\,\text{m/s}$. Fixed.
-2. fy4-s2 text: $h$ and $s$ are now from the platform to the brake's start, where the speed is measured; solution Annettu and answers.py agree. $F_\text{vast} = 29{,}08\,\text{N}$. Fixed.
-3. Significant figures: s2 c and s3 b answer $14\,\text{m/s}$ with a stated two-figure reason; rubric accepts $13{,}6$ too; tolerances $5\,\%$ cover $13{,}6$ and $13{,}71$ (from rounded $v' = 7{,}9$). s3 c with $7{,}9$: $4477\,\text{N}$, within $4{,}4$–$4{,}5\,\text{kN}$. Fixed.
-4. fy4-s2 `### Hyväksytään myös` added: rounded $29\,\text{N}$ gives $5220\,\text{J}$ and $13{,}58\,\text{m/s}$ (correct); d sizing to $17{,}2\,\text{m/s}$ or with a margin earns the point, also in the rubric detail. Fixed.
+None. Round-1 item verified:
+1. fy4-s1 source_note now says both tables are model data, not measured: in the first the acceleration is constant, in the second it falls with speed because of air resistance, and both carry small noise. This matches answers.py and part e. Fixed.
 
 ## Polish
-- fy4-s2 c rubric: "$13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}74\,\text{kJ}$" reads as $8{,}75$ from the shown figures; quote $8{,}74$ or $8{,}75$ consistently with the solution's $8745\,\text{J}$.
-- Carried over: fy4-s3 c "pääosin selkänoja" (seat friction also acts); fy4-s1 air drag ($C_\text{d}A \approx 0{,}5\,\text{m}^2$) is worth about $0{,}006$/$0{,}004$ in $\mu$, more than the slope-reading uncertainty.
+- An intercept of $a_0 = 0{,}43$ (equal to the lowest-speed point) is at the edge of a fair reading.
+- Carried over: s2 c $8{,}74$/$8{,}75$; s3 c "pääosin selkänoja".
 
 ## Checked
-Recomputed the changed numbers independently: s2 $E_\text{p} = 9123\,\text{J}$, $E_\text{k} = 3889\,\text{J}$, $W = 5235\,\text{J}$, $F = 29{,}1\,\text{N}$, $E_\text{p,95} = 13\,979\,\text{J}$, $v = 13{,}57$ ($13{,}58$ with $29\,\text{N}$) $\,\text{m/s} \approx 49\,\text{km/h}$; s3 $v' = 7{,}86\,\text{m/s}$, $v_\text{B} = 13{,}64\,\text{m/s}$ ($50\,\text{km/h}$ at two figures), $F_\text{ka} = 4455\,\text{N}$. s2 d reasoning (c estimate an upper bound, second instructor's a lower bound, size to the larger) consistent with the new $14\,\text{m/s}$. The added s1 b note on dashed $G_x$, $G_y$ as components, not forces, matches docs/force-diagrams.md. answers.py keys match the solutions; practice.py check OK; points sum per part; hash unchanged start to end. Unchanged parts as in round 1.
+- Round 3: e "Hyväksytään myös" now states $\mu_\text{A} \approx 0{,}022$–$0{,}026$, matching $a_0 = 0{,}43$–$0{,}47$ ($0{,}0260$–$0{,}0219$). Fixed.
+- Round-1 polish is applied:
+  - e $a_0$ tolerance $5\,\%$ ($0{,}4275$–$0{,}4725$) covers $0{,}43$–$0{,}47$.
+  - "virhe on noin viidesosa c-kohdan arvosta" is right ($0{,}006/0{,}030$).
+  - Part a says "lähes vakio", which matches the drag curvature ($\pm 0{,}05\,\text{m/s}$, noise-sized).
+- e rubric split: graph_read now covers reading $a_0 \approx 0{,}45$, and error_sources covers $\mu_\text{A} \approx 0{,}024$, the $0{,}006$ shift (larger than $0{,}002$, smaller than $0{,}015$) and that repetition does not remove it. Both match the solution. The points are unchanged (e 5, task 19).
+- Unchanged from round 1 and still valid:
+  - Fit $a_0 = 0{,}449\,\text{m/s}^2$, $k = 0{,}00432\,\text{m}^{-1}$ (model $0{,}00434$), $\mu_\text{A,0} = 0{,}0241$.
+  - Run A integrated with drag gives slope $0{,}386 \approx 0{,}39\,\text{m/s}^2$.
+  - B's correction $0{,}004$ is less than A's $0{,}006$, so parts d and e are consistent.
+  - The extrapolation argument (friction independent of speed, drag going to $0$) is sound and in scope.
+- c tolerances cover the accepted ranges. practice.py check OK. The hash was the same at start and end.

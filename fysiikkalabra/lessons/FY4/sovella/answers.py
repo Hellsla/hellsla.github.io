@@ -24,6 +24,11 @@ aA = (5.22 - 2.10) / 8; aB = (3.86 - 1.90) / 8
 gs, gc = g * math.sin(alpha), g * math.cos(alpha)
 muA = (gs - aA) / gc; muB = (gs - aB) / gc
 dmu = 0.02 / gc                                                     # a slope read 0,02 m/s² off changes mu this much
+# e: wax A again, a measured at different speeds (simulated: a = a0 - k v² with C_d A ≈ 0,5 m², rho = 1,25 kg/m³, plus noise)
+vE = [2.0, 3.0, 4.5, 6.0, 7.5, 9.0]                                # m/s
+aE = [0.43, 0.41, 0.36, 0.30, 0.20, 0.10]                          # m/s²
+kE, a0 = fit([v * v for v in vE], aE)                              # the curve a = a0 + kE v² (kE < 0) drawn through the points
+muA0 = (gs - a0) / gc                                              # wax A without air resistance
 
 # fy4-s2: the zipline; h and s are from the start platform to the start of the brake, where the speed is measured
 h, s, m1, v_meas, m2 = 15.0, 180.0, 62.0, 11.2, 95.0
@@ -45,9 +50,10 @@ ratio = F_ka / (m_driver * g)
 J_fric = mu * (mA + mB) * g * dt                               # N·s: the most friction can take during the collision
 vB_max = (mB * vB_before + J_fric) / mB
 
-out = {"fy4-s1-c": round(muA, 4), "fy4-s1-muB": round(muB, 4), "fy4-s1-aA": round(aA, 4), "fy4-s1-aB": round(aB, 4),
+out = {"fy4-s1-c-A": round(muA, 4), "fy4-s1-c-B": round(muB, 4), "fy4-s1-aA": round(aA, 4), "fy4-s1-aB": round(aB, 4),
        "fy4-s1-fitA": round(kA, 4), "fy4-s1-fitB": round(kB, 4), "fy4-s1-gsin": round(gs, 4), "fy4-s1-gcos": round(gc, 3),
-       "fy4-s1-dmu": round(dmu, 4),
+       "fy4-s1-dmu": round(dmu, 4), "fy4-s1-e-a0": round(a0, 3), "fy4-s1-e-mu": round(muA0, 4), "fy4-s1-e-k": round(-kE, 5),
+       "fy4-s1-e-dmu": round(muA - muA0, 4),
        "fy4-s2-a": round(v_ideal, 3), "fy4-s2-a-kmh": round(v_ideal * 3.6, 1), "fy4-s2-Ep": round(Ep1, 1), "fy4-s2-Ek": round(Ek1, 1),
        "fy4-s2-b": round(F_res, 2), "fy4-s2-lost": round(lost, 3), "fy4-s2-Ep2": round(Ep2, 1), "fy4-s2-Ek2": round(Ek2, 1),
        "fy4-s2-c": round(v_heavy, 3), "fy4-s2-c-kmh": round(v_heavy * 3.6, 1), "fy4-s2-W": round(Ep1 - Ek1, 1),

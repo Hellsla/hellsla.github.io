@@ -5,8 +5,8 @@
       "id": "fy4-s1",
       "title": "Suksivoiteiden vertailu",
       "source": "simulated",
-      "source_note": "Aineisto on laskettu mallista, jossa kiihtyvyys on vakio, ja siihen on lisätty pientä satunnaista vaihtelua mittauksen tapaan. Se ei ole oikean mittauksen tulos.",
-      "text": "Hiihtoseuran valmentaja vertaa kahta liukuvoidetta, A ja B. Sama hiihtäjä, jonka massa varusteineen on $72\\,\\text{kg}$, laskee kummallakin voiteella samaa tasaista rinnettä, jonka kaltevuuskulma on $4{,}0^\\circ$. Hiihtäjä seisoo suorana eikä työnnä sauvoilla. Rinteen sivulla oleva kamera kuvaa laskut, ja hiihtäjän nopeus määritetään videolta sekunnin välein. Ajanotto alkaa, kun hiihtäjä ohittaa lähtömerkin.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2{,}10$ | $1{,}90$ |\n| $1$ | $2{,}52$ | $2{,}12$ |\n| $2$ | $2{,}86$ | $2{,}42$ |\n| $3$ | $3{,}31$ | $2{,}62$ |\n| $4$ | $3{,}63$ | $2{,}90$ |\n| $5$ | $4{,}06$ | $3{,}09$ |\n| $6$ | $4{,}40$ | $3{,}40$ |\n| $7$ | $4{,}86$ | $3{,}59$ |\n| $8$ | $5{,}23$ | $3{,}86$ |",
+      "source_note": "Aineisto on laskettu malleista, eikä se ole oikean mittauksen tulos. Ensimmäisessä taulukossa kiihtyvyys on vakio; toisessa kiihtyvyys pienenee nopeuden kasvaessa ilmanvastuksen takia. Kumpaankin on lisätty pientä satunnaista vaihtelua mittauksen tapaan.",
+      "text": "Hiihtoseuran valmentaja vertaa kahta liukuvoidetta, A ja B. Sama hiihtäjä, jonka massa varusteineen on $72\\,\\text{kg}$, laskee kummallakin voiteella samaa tasaista rinnettä, jonka kaltevuuskulma on $4{,}0^\\circ$. Hiihtäjä seisoo suorana eikä työnnä sauvoilla. Rinteen sivulla oleva kamera kuvaa laskut, ja hiihtäjän nopeus määritetään videolta sekunnin välein. Ajanotto alkaa, kun hiihtäjä ohittaa lähtömerkin.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2{,}10$ | $1{,}90$ |\n| $1$ | $2{,}52$ | $2{,}12$ |\n| $2$ | $2{,}86$ | $2{,}42$ |\n| $3$ | $3{,}31$ | $2{,}62$ |\n| $4$ | $3{,}63$ | $2{,}90$ |\n| $5$ | $4{,}06$ | $3{,}09$ |\n| $6$ | $4{,}40$ | $3{,}40$ |\n| $7$ | $4{,}86$ | $3{,}59$ |\n| $8$ | $5{,}23$ | $3{,}86$ |\n\nIlmanvastuksen vaikutuksen arvioimiseksi hiihtäjä laski voiteella A vielä kuusi kertaa samaa rinnettä eri kohdista lähtien, jolloin hän ohitti rinteen keskellä olevan mittausvälin eri nopeuksilla. Jokaisesta laskusta määritettiin mittausvälin nopeus $v$ ja kiihtyvyys $a$ niin lyhyeltä matkalta, että nopeus muuttui sillä vain vähän.\n\n| $v\\ (\\text{m/s})$ | $a\\ (\\text{m/s}^2)$ |\n|---|---|\n| $2{,}0$ | $0{,}43$ |\n| $3{,}0$ | $0{,}41$ |\n| $4{,}5$ | $0{,}36$ |\n| $6{,}0$ | $0{,}30$ |\n| $7{,}5$ | $0{,}20$ |\n| $9{,}0$ | $0{,}10$ |",
       "parts": [
         {
           "id": "a",
@@ -58,11 +58,20 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä kummankin voiteen liikekitkakerroin.",
-          "answer": {
-            "value": 0.030,
-            "unit": "",
-            "tolerance": 0.12
-          },
+          "answer": [
+            {
+              "name": "A",
+              "value": 0.03,
+              "unit": "",
+              "tolerance": 0.12
+            },
+            {
+              "name": "B",
+              "value": 0.045,
+              "unit": "",
+              "tolerance": 0.08
+            }
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -111,6 +120,51 @@
               "key": "conclusion",
               "points": 1,
               "detail": "Ero on epävarmuutta suurempi, joten voide A liukuu paremmin; varmuuden saa toistamalla laskut."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "graph",
+          "points": 5,
+          "text": "Piirrä lisämittauksen $(v, a)$-kuvaaja. Määritä kuvaajasta kiihtyvyys, joka hiihtäjällä olisi ilman ilmanvastusta, ja arvioi sen avulla, kuinka paljon ilmanvastus muutti c-kohdan kitkakerrointa $\\mu_\\text{A}$.",
+          "answer": [
+            {
+              "name": "a0",
+              "value": 0.45,
+              "unit": "m/s²",
+              "tolerance": 0.05
+            },
+            {
+              "name": "mu",
+              "value": 0.024,
+              "unit": "",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Pisteisiin on sovitettu kaareva käyrä, joka loivenee pienillä nopeuksilla; suora ei sovi pisteistöön."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Käyrää on jatkettu nopeuteen $v = 0$, ja sen leikkauskohta pystyakselilla on luettu: $a_0 \\approx 0{,}45\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "$\\mu_\\text{A} \\approx 0{,}024$. Ilmanvastus on systemaattinen virhe: se suurensi c-kohdan arvoa noin $0{,}006$:lla, mikä on enemmän kuin lukemisen epävarmuus $0{,}002$ mutta vähemmän kuin voiteiden ero $0{,}015$, eikä toistaminen poista sitä."
             }
           ]
         }

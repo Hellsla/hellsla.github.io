@@ -52,6 +52,8 @@ broken("duplicate task ids", tasks_edit(lambda d: d["tasks"][1].update(id="fy1-s
 broken("a link to a chapter that does not exist", tasks_edit(lambda d: d["tasks"][0]["links"].update(graph="fy1-9")), "not a lesson of curriculum.json")
 broken("a competency without a chapter to practise it", tasks_edit(lambda d: d["tasks"][0]["links"].pop("experiment")), "no link for the competency 'experiment'")
 broken("an answer answers.py does not give", tasks_edit(lambda d: d["tasks"][0]["parts"][1]["answer"].update(value=0.95)), "differs from answers.py")
+broken("a list of answers without names", tasks_edit(lambda d: d["tasks"][0]["parts"][1].update(answer=[d["tasks"][0]["parts"][1]["answer"]] * 2)), "needs its own `name`")
+broken("a named answer answers.py does not give", tasks_edit(lambda d: d["tasks"][0]["parts"][1].update(answer=[dict(d["tasks"][0]["parts"][1]["answer"], name="x")])), "does not compute this part's answer")
 broken("a missing worked solution", lambda: SOL.write_text(ORIG[SOL].replace("### c)\n", "### x)\n", 1)), "no worked solution")
 broken("an incomplete calculation", lambda: SOL.write_text(ORIG[SOL].replace("**Järkevyys:** Pallo kulkee", "Pallo kulkee", 1)), "no '**Järkevyys:**' step")
 broken("no common mistakes", lambda: SOL.write_text(ORIG[SOL].replace("### Yleisiä virheitä", "### Virheitä", 1)), "no `### Yleisiä virheitä`")

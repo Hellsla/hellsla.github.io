@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f15443b23434d757
+CONTENT-HASH: 69681834ba8656c4
 
 ## Blocking
 (none left)
 
 ## Fixed
-- Made the text genuinely plainer where it was a copy of the Finnish: one idea per sentence, "ratkaistuna x:n suhteen" → "josta ratkaistaan x", "Siitä saadaan", "Vastauksessa on kaksi merkitsevää numeroa", "kertaa niin suuri kuin" for "-kertainen … verrattuna", "on keksitty tätä tehtävää varten".
-- s2 d model answer sentence split; s1 common mistake repetition removed; figure alt texts shortened into sentences.
+- Same fix as in science.md: the fragment in the e-kohta common mistake made a full sentence.
 
 ## Polish
 - none
 
 ## Checked
-- Compared every part text, rubric criterion, step and common mistake with the reviewed Finnish: all 44 points, keys and tags kept; questions ask the same thing and still name no model.
-- Short sentences and common words throughout while the physics terms (voimakuvio, tukivoima, liikekitka, impulssi, mekaniikan energiaperiaate) stay, so the student meets the same vocabulary as in the chapters.
-- No long string is byte-identical to the Finnish except pure formula or table content (the s1 data table).
-- Rendered preview/fi-easy/FY4-sovella.html builds; check_layout OK at 345 and 360 px.
+- Genuinely plainer than the Finnish: the new task text, e question (two sentences instead of one), criteria details, model answer and error paragraph are split into one idea per sentence ("Siksi", "Siitä saadaan"); not byte-identical to the Finnish except formulas and tables.
+- Physics terms (ilmanvastus, systemaattinen virhe, kitkakerroin) kept as in the chapters; the question names no model; all five criteria and 5 points kept.
+- Kierros 2 (suomen muutokset: source_note, e-kohdan graph_read ja error_sources, a0-toleranssi 0,05, 'noin viidesosa c-kohdan arvosta', a-kohdan 'lähes vakio', hyväksytty a0 0,43–0,47): tarkistettu fi:ta vasten, kaikki mukana ja yksinkertaisempaa kieltä, luvut ja kaavat samat, ei korjattavaa. practice.py check ja figures OK.

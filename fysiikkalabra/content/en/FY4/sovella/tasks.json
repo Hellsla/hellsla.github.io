@@ -5,8 +5,8 @@
       "id": "fy4-s1",
       "title": "Comparing ski waxes",
       "source": "simulated",
-      "source_note": "The data is calculated from a model in which the acceleration is constant, with a little random variation added as in a measurement. It is not the result of a real measurement.",
-      "text": "A coach at a ski club compares two glide waxes, A and B. The same skier, whose mass with equipment is $72\\,\\text{kg}$, skis down the same even slope with each wax. The slope has an angle of inclination of $4.0^\\circ$. The skier stands upright and does not push with poles. A camera at the side of the slope films the runs, and the skier's speed is determined from the video every second. The timing starts when the skier passes the start mark.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2.10$ | $1.90$ |\n| $1$ | $2.52$ | $2.12$ |\n| $2$ | $2.86$ | $2.42$ |\n| $3$ | $3.31$ | $2.62$ |\n| $4$ | $3.63$ | $2.90$ |\n| $5$ | $4.06$ | $3.09$ |\n| $6$ | $4.40$ | $3.40$ |\n| $7$ | $4.86$ | $3.59$ |\n| $8$ | $5.23$ | $3.86$ |",
+      "source_note": "The data are calculated from models and are not the result of a real measurement. In the first table the acceleration is constant; in the second the acceleration decreases as the speed grows because of air resistance. A little random variation is added to both, as in a measurement.",
+      "text": "A coach at a ski club compares two glide waxes, A and B. The same skier, whose mass with equipment is $72\\,\\text{kg}$, skis down the same even slope with each wax. The slope has an angle of inclination of $4.0^\\circ$. The skier stands upright and does not push with poles. A camera at the side of the slope films the runs, and the skier's speed is determined from the video every second. The timing starts when the skier passes the start mark.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2.10$ | $1.90$ |\n| $1$ | $2.52$ | $2.12$ |\n| $2$ | $2.86$ | $2.42$ |\n| $3$ | $3.31$ | $2.62$ |\n| $4$ | $3.63$ | $2.90$ |\n| $5$ | $4.06$ | $3.09$ |\n| $6$ | $4.40$ | $3.40$ |\n| $7$ | $4.86$ | $3.59$ |\n| $8$ | $5.23$ | $3.86$ |\n\nTo estimate the effect of air resistance, the skier made six more runs with wax A down the same slope, starting from different points, so that the skier passed a measuring section in the middle of the slope at different speeds. For each run the speed $v$ in the measuring section and the acceleration $a$ were determined over so short a distance that the speed changed only a little.\n\n| $v\\ (\\text{m/s})$ | $a\\ (\\text{m/s}^2)$ |\n|---|---|\n| $2.0$ | $0.43$ |\n| $3.0$ | $0.41$ |\n| $4.5$ | $0.36$ |\n| $6.0$ | $0.30$ |\n| $7.5$ | $0.20$ |\n| $9.0$ | $0.10$ |",
       "parts": [
         {
           "id": "a",
@@ -58,11 +58,20 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the coefficient of kinetic friction for each wax.",
-          "answer": {
-            "value": 0.03,
-            "unit": "",
-            "tolerance": 0.12
-          },
+          "answer": [
+            {
+              "name": "A",
+              "value": 0.03,
+              "unit": "",
+              "tolerance": 0.12
+            },
+            {
+              "name": "B",
+              "value": 0.045,
+              "unit": "",
+              "tolerance": 0.08
+            }
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -111,6 +120,51 @@
               "key": "conclusion",
               "points": 1,
               "detail": "The difference is larger than the uncertainty, so wax A glides better; certainty is obtained by repeating the runs."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "graph",
+          "points": 5,
+          "text": "Draw the $(v, a)$ graph of the additional measurement. Determine from the graph the acceleration the skier would have without air resistance, and use it to estimate how much air resistance changed the coefficient of friction $\\mu_\\text{A}$ of part c.",
+          "answer": [
+            {
+              "name": "a0",
+              "value": 0.45,
+              "unit": "m/s²",
+              "tolerance": 0.05
+            },
+            {
+              "name": "mu",
+              "value": 0.024,
+              "unit": "",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A curved line that levels off at low speeds is fitted to the points; a straight line does not fit them."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The curve is extended to the speed $v = 0$, and the point where it meets the vertical axis is read: $a_0 \\approx 0.45\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "$\\mu_\\text{A} \\approx 0.024$. Air resistance is a systematic error: it made the value of part c larger by about $0.006$, which is more than the reading uncertainty $0.002$ but less than the difference between the waxes $0.015$, and repeating the runs does not remove it."
             }
           ]
         }

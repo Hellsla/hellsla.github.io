@@ -177,6 +177,8 @@ lessons/<COURSE>/sovella/answers.py            every number of the solutions; fi
                           {"text": "task-specific criterion", "tag": "transfer", "points": 1}]}],
   "links": {"graph": "fy3-13", "math": "fy3-6"}}]}
 ```
+A part that asks for several quantities (two waxes' coefficients) gives `"answer"` as a list of such objects, each
+with a `name`; answers.py computes each as `<task>-<part>-<name>`, so every asked value is checked, not only the first.
 A task of `"kind": "own"` (with one part of kind `own`) is a rubric for the student's own work, such as the FY1
 investigation report, and has no solution. `python scripts/practice.py check` (CI) checks ids, points against
 criteria, competency tags and shared keys (`competencies.json`), their texts in every language, chapter links,
