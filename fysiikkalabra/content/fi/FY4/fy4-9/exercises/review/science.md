@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 79e49bd15ce8151c
+CONTENT-HASH: cd77831d711f3f85
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 79e49bd15ce8151c
 - Reasonableness checks are real checks (L3-02 10 kN ≈ 14 × weight; L2-03 sign-error value 0,18 N·s shown too small).
 - Solutions solve symbolically before substitution; impulse principle applied to the net force each time.
 - L3-03 uses Newton's third law correctly to turn the wall's force on the ball into the ball's force on the wall.
+- Typo fix only since review: exercises.json L3-01 "Lasta istuu pulkassa" → "Lapsi istuu pulkassa"; no other change (verified by git diff).

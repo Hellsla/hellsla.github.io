@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 79e49bd15ce8151c
+CONTENT-HASH: cd77831d711f3f85
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 79e49bd15ce8151c
 - L3-01 figure referenced by id; solution reads it step by step.
 - Answers consistent with solutions (5,1; 6,0; 4,86; 6,0; 150; 6,0 kN; 6,44 kN; 1,5; 25,65; 3,0; 57,6; 60).
 - Hash unchanged at end.
+- Typo fix only since review: exercises.json L3-01 "Lasta istuu pulkassa" → "Lapsi istuu pulkassa"; no other change (verified by git diff).
