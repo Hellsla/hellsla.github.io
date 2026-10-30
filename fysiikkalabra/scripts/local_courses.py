@@ -67,7 +67,7 @@ def home_row(code, c, T):
             f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
 
 
-def page_body(code, c, T, chapters, published):
+def page_body(code, c, T, chapters, published, investigations=()):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
@@ -76,6 +76,9 @@ def page_body(code, c, T, chapters, published):
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
            f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'
            f'<p class="local-desc">{esc(c["description"])}</p>')
+    if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
+        out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T("investigation.course_lead")}</p><ol class="lessons local-inv">'
+                + "".join(f'<li class="live"><a href="{i}.html">{esc(d["title"])}</a><span class="local-why">{esc(d["question"])}</span></li>' for i, d in investigations) + "</ol>")
     if c.get("goals"):
         out += (f'<h2 id="tavoitteet">{T("site.local_goals")}</h2><p class="section-lead">{T("site.local_goals_note")}</p>'
                 '<ul class="local-goals">' + "".join(f"<li>{esc(g)}</li>" for g in c["goals"]) + "</ul>")

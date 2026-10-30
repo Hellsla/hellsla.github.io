@@ -1,0 +1,106 @@
+{
+  "id": "fy10-jousivakio",
+  "type": "investigation",
+  "title": "Jousivakion määrittäminen",
+  "question": "Miten jousen venymä riippuu jousta venyttävästä voimasta, ja kuinka suuri on jousen jousivakio?",
+  "description": "Kokeellinen tutkimus: määritä jousen jousivakio voima–venymä-kuvaajan kulmakertoimesta ja laajennuksena värähtelyn avulla.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY3",
+    "FY4",
+    "FY5"
+  ],
+  "source": "Esimerkkityöt.pdf s. 2–3 (Jousivakion määrittäminen kahdella menetelmällä), opettajan aineisto",
+  "learn": [
+    "määrittämään suureen kuvaajan kulmakertoimesta",
+    "perustelemaan, miksi kuvaajan akseleiksi valitaan juuri tietyt suureet",
+    "ilmoittamaan tuloksen epävarmuuksineen ja arvioimaan sen luotettavuutta"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Voima ja venymä",
+      "physics": "F1",
+      "experiment": "E1"
+    },
+    {
+      "id": "laajennus",
+      "title": "Värähtely ja menetelmien vertailu",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-1",
+      "why": "Levossa riippuva punnus vetää jousta voimalla, joka on yhtä suuri kuin sen paino $G = mg$."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-3",
+      "why": "Levossa olevaan kappaleeseen vaikuttavat voimat kumoavat toisensa, joten jousivoima on yhtä suuri kuin paino."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Jousivoiman laki",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
+      "why": "Laki antaa mallin, jota mittauksilla testataan; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Jousen värähdysaika",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
+      "why": "Laajennuksessa tarvittava malli on selitetty laajennuksen alussa."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "kierrejousi",
+    "statiivi ja varsi",
+    "punnuksia ja punnusteline",
+    "vaaka",
+    "mittanauha tai viivain",
+    "laajennukseen ajanottoväline tai liikeanturi"
+  ],
+  "safety": [
+    "Älä venytä jousta niin paljon, että se venyy pysyvästi.",
+    "Pidä punnukset kiinni telineessä ja jalat poissa niiden alta; varmista, ettei statiivi kaadu."
+  ]
+}
