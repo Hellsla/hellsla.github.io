@@ -21,8 +21,8 @@
     {
       "id": "fy4-14-L1-03",
       "level": 1,
-      "text": "Koripallo, jonka massa on $0{,}600\\,\\text{kg}$, putoaa pystysuoraan alas. Eräällä hetkellä ilmanvastus on $2{,}10\\,\\text{N}$. Kuinka suuri on pallon kiihtyvyys tällä hetkellä?",
-      "answer": 6.31,
+      "text": "Koripallo, jonka massa on $0{,}600\\,\\text{kg}$, heitetään suoraan alas suurella nopeudella. Heti heiton jälkeen ilmanvastus on $8{,}00\\,\\text{N}$. Kuinka suuri on pallon kiihtyvyyden suuruus tällä hetkellä, ja mihin suuntaan kiihtyvyys osoittaa?",
+      "answer": 3.52,
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -39,7 +39,7 @@
     {
       "id": "fy4-14-L1-05",
       "level": 1,
-      "text": "Pyöräilijä ajaa vaakasuoralla tiellä tasaisella nopeudella. Ilmanvastus on $18\\,\\text{N}$, ja renkaiden vierimisvastus on yhteensä $6{,}0\\,\\text{N}$. Kuinka suurella voimalla tie työntää polkupyörää eteenpäin?",
+      "text": "Pyöräilijä ajaa vaakasuoralla tiellä tasaisella nopeudella. Ilmanvastus on $18\\,\\text{N}$, ja renkaiden vierimisvastus (renkaiden ja tien aiheuttama vastus) on yhteensä $6{,}0\\,\\text{N}$. Kuinka suuri on tien kitkavoima, joka työntää vetävää pyörää eteenpäin?",
       "answer": 24.0,
       "unit": "N",
       "tolerance": 0.02,
@@ -77,7 +77,7 @@
     {
       "id": "fy4-14-L2-04",
       "level": 2,
-      "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa vaakasuoralla tiellä tasaisella nopeudella $100\\,\\text{km/h}$. Ilmanvastus on $450\\,\\text{N}$ ja renkaiden vierimisvastus yhteensä $180\\,\\text{N}$. Kuljettaja painaa kytkimen pohjaan, jolloin moottori ei enää vedä autoa. Kuinka suuri on auton hidastuvuus heti tämän jälkeen?",
+      "text": "Auto, jonka massa on $1200\\,\\text{kg}$, ajaa vaakasuoralla tiellä tasaisella nopeudella $100\\,\\text{km/h}$. Ilmanvastus on $450\\,\\text{N}$ ja renkaiden vierimisvastus (renkaiden ja tien aiheuttama vastus) yhteensä $180\\,\\text{N}$. Kuljettaja painaa kytkimen pohjaan, jolloin moottori ei enää vedä autoa. Kuinka suuri on auton hidastuvuus heti tämän jälkeen?",
       "answer": 0.525,
       "unit": "m/s²",
       "tolerance": 0.02,

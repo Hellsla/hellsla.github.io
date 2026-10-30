@@ -4,7 +4,7 @@
       "id": "fy4-6-L1-01",
       "level": 1,
       "text": "Astronautin ja hänen avaruuspukunsa yhteinen massa on $160\\,\\text{kg}$. Kuun pinnalla putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Kuinka suuri on astronautin ja puvun yhteinen paino Kuun pinnalla?",
-      "answer": 259.2,
+      "answer": 259.0,
       "unit": "N",
       "tolerance": 0.02
     },
@@ -12,7 +12,7 @@
       "id": "fy4-6-L1-02",
       "level": 1,
       "text": "Pulkka, jonka massa on $30\\,\\text{kg}$, liukuu vaakasuoralla lumella. Pulkan ja lumen välinen liikekitkakerroin on $0{,}12$. Piirrä pulkan voimakuvio. Kuinka suuri on lumen kitkavoima pulkkaan?",
-      "answer": 35.316,
+      "answer": 35.0,
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -21,7 +21,7 @@
       "id": "fy4-6-L1-03",
       "level": 1,
       "text": "Laatikkoa, jonka massa on $40\\,\\text{kg}$, työnnetään vaakasuoralla lattialla vaakasuoraan $120\\,\\text{N}$:n voimalla, ja se liukuu tasaisella nopeudella. Kuinka suuri on laatikon ja lattian välinen liikekitkakerroin?",
-      "answer": 0.3058,
+      "answer": 0.31,
       "unit": "",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -30,7 +30,7 @@
       "id": "fy4-6-L1-04",
       "level": 1,
       "text": "Kirja, jonka massa on $0{,}80\\,\\text{kg}$, on paikallaan pöydän kannella, joka on kallistettu $20^\\circ$:n kulmaan vaakatasoon nähden. Piirrä kirjan voimakuvio. Kuinka suuri on kannen tukivoima kirjaan?",
-      "answer": 7.3747,
+      "answer": 7.4,
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -39,7 +39,7 @@
       "id": "fy4-6-L1-05",
       "level": 1,
       "text": "Laatikko, jonka massa on $12\\,\\text{kg}$, on rinteellä, jonka kaltevuuskulma on $30^\\circ$. Kuinka suuri on laatikon painon rinteen suuntainen komponentti?",
-      "answer": 58.86,
+      "answer": 59.0,
       "unit": "N",
       "tolerance": 0.02
     }
@@ -48,17 +48,17 @@
     {
       "id": "fy4-6-L2-01",
       "level": 2,
-      "text": "Pulkka laskee mäkeä alas tasaisella nopeudella, kun mäen kaltevuuskulma on $12^\\circ$. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin? Ilmanvastus jätetään huomiotta.",
-      "answer": 0.21256,
+      "text": "Pulkka lähtee levossa liukumaan $12^\\circ$:n kaltevuuskulman mäessä ja saavuttaa $4{,}0\\,\\text{s}$:ssa nopeuden $3{,}0\\,\\text{m/s}$. Kiihtyvyys on vakio. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin? Ilmanvastus jätetään huomiotta.",
+      "answer": 0.13,
       "unit": "",
-      "tolerance": 0.02,
+      "tolerance": 0.04,
       "fbd": "equations"
     },
     {
       "id": "fy4-6-L2-02",
       "level": 2,
       "text": "Varastotyöntekijä vetää $40\\,\\text{kg}$:n kuormalavaa betonilattiaa pitkin vaakasuoralla narulla. Narun jännitysvoima on $150\\,\\text{N}$, ja lavan ja lattian välinen liikekitkakerroin on $0{,}30$. Kuinka suuri on kuormalavan kiihtyvyys?",
-      "answer": 0.807,
+      "answer": 0.81,
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -66,8 +66,8 @@
     {
       "id": "fy4-6-L2-03",
       "level": 2,
-      "text": "Opiskelijat mittasivat puupalikan liikekitkan eri tukivoimilla. Kuvaajassa on heidän mittauspisteensä. Määritä kuvaajasta palikan ja pöydän välinen liikekitkakerroin.",
-      "answer": 0.2145,
+      "text": "Alla on esimerkkiaineisto: puupalikan liikekitka mitattu eri tukivoimilla. Kuvaajassa ovat mittauspisteet. Määritä kuvaajasta palikan ja pöydän välinen liikekitkakerroin.",
+      "answer": 0.21,
       "unit": "",
       "tolerance": 0.05,
       "figure": "fy4-6/mittaus"
@@ -75,10 +75,10 @@
     {
       "id": "fy4-6-L2-04",
       "level": 2,
-      "text": "Muuttolaatikko, jonka massa on $10\\,\\text{kg}$, asetetaan levossa lankulle, joka on $35^\\circ$:n kulmassa vaakatasoon nähden. Laatikon ja lankun välinen lepokitkakerroin on $0{,}60$. Kuinka suuri on lepokitkan suurin mahdollinen arvo? Pysyykö laatikko paikallaan?",
-      "answer": 48.215,
+      "text": "Muuttolaatikko, jonka massa on $10\\,\\text{kg}$, asetetaan levossa lankulle, joka on $35^\\circ$:n kulmassa vaakatasoon nähden. Laatikon ja lankun välinen lepokitkakerroin on $0{,}60$. Laske lepokitkan suurin mahdollinen arvo ja vertaa sitä painon rinteen suuntaiseen komponenttiin. Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen, laatikko pysyisi paikallaan.)",
+      "answer": 8.1,
       "unit": "N",
-      "tolerance": 0.02,
+      "tolerance": 0.04,
       "fbd": "equations"
     }
   ],
@@ -87,7 +87,7 @@
       "id": "fy4-6-L3-01",
       "level": 3,
       "text": "Avolava-auton lavalla on $50\\,\\text{kg}$:n laatikko, joka ei ole kiinnitetty. Auto lähtee liikkeelle vaakasuoralla tiellä kiihtyvyydellä $3{,}5\\,\\text{m/s}^2$. Kuinka suuri lavan ja laatikon välisen lepokitkakertoimen on vähintään oltava, jotta laatikko ei liu'u lavalla?",
-      "answer": 0.35678,
+      "answer": 0.36,
       "unit": "",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -96,7 +96,7 @@
       "id": "fy4-6-L3-02",
       "level": 3,
       "text": "Kiekkoa työnnetään ylös $20^\\circ$:n rinnettä, ja se irtoaa kädestä nopeudella $3{,}0\\,\\text{m/s}$. Kiekon ja rinteen välinen liikekitkakerroin on $0{,}25$. Kuinka pitkän matkan kiekko liukuu rinnettä ylös ennen kuin se pysähtyy? Ilmanvastus jätetään huomiotta.",
-      "answer": 0.79508,
+      "answer": 0.8,
       "unit": "m",
       "tolerance": 0.02,
       "fbd": "equations"
@@ -104,10 +104,10 @@
     {
       "id": "fy4-6-L3-03",
       "level": 3,
-      "text": "Kuun pinnalla tutkimusmönkijän laatikko liukuu alas rinnettä, jonka kaltevuuskulma on $30^\\circ$. Laatikon ja pinnan välinen liikekitkakerroin on $0{,}20$, ja Kuun putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$. Kuinka suuri on laatikon kiihtyvyys? Kuussa ei ole ilmaa.",
-      "answer": 0.52941,
+      "text": "Maassa laatikko liukuu $30^\\circ$:n rinnettä alas kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Kuinka suuri olisi laatikon kiihtyvyys samalla rinteellä ja samalla pinnalla Kuun pinnalla, jossa putoamiskiihtyvyys on $1{,}62\\,\\text{m/s}^2$? Kuussa ei ole ilmaa, ja ilmanvastus jätetään huomiotta myös Maassa.",
+      "answer": 0.33,
       "unit": "m/s²",
-      "tolerance": 0.02,
+      "tolerance": 0.03,
       "fbd": "equations"
     }
   ]

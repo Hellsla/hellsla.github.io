@@ -2,10 +2,11 @@
 **Annettu:** $m = 160\,\text{kg}$, Kuun putoamiskiihtyvyys $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
 **Kysytty:** paino Kuun pinnalla $G$ yksikössä $\text{N}$
 **Periaate:** Paino on voima, jolla taivaankappale vetää kappaletta, ja sen suuruus on massan ja putoamiskiihtyvyyden tulo. Massa on sama Kuussa kuin Maassa, mutta putoamiskiihtyvyys on Kuussa pienempi.
+**Voimakuvio:** Astronautti suorakulmiona Kuun pinnalla: paino $\overline{G}$ keskipisteestä alas ja tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä. Kysytty on painon suuruus $mg_\text{Kuu}$.
 **Kaava:** $G = m g_\text{Kuu}$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyys yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $G = 160\,\text{kg}\cdot 1{,}62\,\text{m/s}^2 = 259{,}2\,\text{N}$
-**Vastaus:** $259\,\text{N}$, kolme merkitsevää numeroa kuten putoamiskiihtyvyydessä $1{,}62\,\text{m/s}^2$ ja massassa $160\,\text{kg}$.
+**Vastaus:** $259\,\text{N}$, kolme merkitsevää numeroa kuten putoamiskiihtyvyydessä $1{,}62\,\text{m/s}^2$.
 **Järkevyys:** Maassa paino olisi $160\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1570\,\text{N}$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, ja $1570\,\text{N} : 6 \approx 260\,\text{N}$, sama tulos.
 
 ## fy4-6-L1-02
@@ -44,6 +45,7 @@
 ## fy4-6-L1-05
 **Annettu:** $m = 12\,\text{kg}$, rinteen kaltevuuskulma $\alpha = 30^\circ$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** painon rinteen suuntainen komponentti $G_x$ yksikössä $\text{N}$
+**Voimakuvio:** Laatikko suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas. Paino $\overline{G}$ suoraan alas ja sen komponentit $G_x$ ja $G_y$ katkoviivoin; muut voimat eivät vaikuta kysyttyyn komponenttiin.
 **Periaate:** Paino osoittaa suoraan alas. Kun $x$-akseli valitaan rinteen suuntaiseksi, painon komponentti sen suuntaan saadaan suorakulmaisesta kolmiosta, jossa painon ja kohtisuoran komponentin välinen kulma on rinteen kaltevuuskulma $\alpha$.
 **Kaava:** $G_x = G\sin\alpha = mg\sin\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
@@ -52,15 +54,15 @@
 **Järkevyys:** Kulmalla $30^\circ$ sini on tasan $0{,}5$, joten rinteen suuntainen komponentti on puolet painosta $118\,\text{N}$. Komponentti on aina pienempi kuin paino itse.
 
 ## fy4-6-L2-01
-**Annettu:** mäen kaltevuuskulma $\alpha = 12^\circ$, pulkka liukuu alas tasaisella nopeudella, ilmanvastus jätetään huomiotta
+**Annettu:** $\alpha = 12^\circ$, pulkka lähtee levossa, $v = 3{,}0\,\text{m/s}$ ajassa $t = 4{,}0\,\text{s}$, kiihtyvyys vakio, ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liikekitkakerroin $\mu$ (ei yksikköä)
-**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten voimien summa on nolla rinteen suunnassa ja sitä vastaan kohtisuorassa suunnassa. Pulkka liukuu, joten siihen vaikuttaa liikekitka $F_\mu = \mu N$.
-**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja liikekitka $\overline{F}_\mu$ rinnettä ylös.
-**Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = 0$, joten $\mu = \dfrac{mg\sin\alpha}{mg\cos\alpha} = \tan\alpha$
-**Muunnokset:** Kulma on asteina; muita muunnoksia ei tarvita, ja massa supistuu.
-**Sijoitus:** $\mu = \tan 12^\circ = 0{,}2126$
-**Vastaus:** $0{,}21$, kaksi merkitsevää numeroa kuten kulmassa $12^\circ$.
-**Järkevyys:** Loiva mäki ja pieni kerroin sopivat yhteen: muovipulkan ja lumen välinen kitkakerroin on tyypillisesti $0{,}05$–$0{,}3$. Jyrkemmässä mäessä sama pulkka kiihtyisi, koska $\tan\alpha$ olisi suurempi kuin $\mu$.
+**Periaate:** Kiihtyvyys saadaan nopeuden muutoksesta, ja Newtonin toinen laki rinteen suuntaan antaa kitkan. Pulkka liukuu, joten siihen vaikuttaa liikekitka $F_\mu = \mu N$. Kohtisuorassa suunnassa pulkka ei kiihdy.
+**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja liikekitka $\overline{F}_\mu$ rinnettä ylös. Kiihtyvyys $\overline{a}$ piirretään erikseen oranssina nuolena rinnettä alas.
+**Kaava:** $a = \dfrac{v - 0}{t}$, $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.
+**Sijoitus:** $a = \dfrac{3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = 0{,}75\,\text{m/s}^2$ ja $\mu = \dfrac{9{,}81\,\text{m/s}^2\cdot\sin 12^\circ - 0{,}75\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 12^\circ} = \dfrac{2{,}040 - 0{,}75}{9{,}596} = 0{,}134$
+**Vastaus:** $0{,}13$, kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$ ja ajassa $4{,}0\,\text{s}$.
+**Järkevyys:** Ilman kitkaa kiihtyvyys olisi $g\sin 12^\circ \approx 2{,}0\,\text{m/s}^2$, joten kitka pienentää sitä kuten pitääkin. Kerroin $0{,}13$ on pienempi kuin $\tan 12^\circ = 0{,}21$, jolla pulkka liukuisi tasaisella nopeudella, ja se sopii muovipulkan ja lumen välille ($0{,}05$–$0{,}3$).
 
 ## fy4-6-L2-02
 **Annettu:** $m = 40\,\text{kg}$, narun vaakasuora jännitysvoima $T = 150\,\text{N}$, $\mu = 0{,}30$; $g = 9{,}81\,\text{m/s}^2$
@@ -74,7 +76,7 @@
 **Järkevyys:** Ilman kitkaa kiihtyvyys olisi $150\,\text{N} : 40\,\text{kg} \approx 3{,}8\,\text{m/s}^2$. Kitka $118\,\text{N}$ kumoaa suurimman osan narun voimasta, joten kiihtyvyys jää alle $1\,\text{m/s}^2$:n, mikä on järkevää.
 
 ## fy4-6-L2-03
-**Annettu:** kuvaajan viisi mittauspistettä $(N, F_\mu)$: $(5\,\text{N};\,1{,}1\,\text{N})$, $(10\,\text{N};\,2{,}1\,\text{N})$, $(15\,\text{N};\,3{,}3\,\text{N})$, $(20\,\text{N};\,4{,}2\,\text{N})$ ja $(25\,\text{N};\,5{,}4\,\text{N})$
+**Annettu:** esimerkkiaineiston kuvaajan viisi mittauspistettä $(N, F_\mu)$: $(5\,\text{N};\,1{,}1\,\text{N})$, $(10\,\text{N};\,2{,}1\,\text{N})$, $(15\,\text{N};\,3{,}3\,\text{N})$, $(20\,\text{N};\,4{,}2\,\text{N})$ ja $(25\,\text{N};\,5{,}4\,\text{N})$
 **Kysytty:** liikekitkakerroin $\mu$ (ei yksikköä)
 **Periaate:** Liikekitka on verrannollinen tukivoimaan, $F_\mu = \mu N$, joten $(N, F_\mu)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\mu$. Kulmakerroin luetaan pisteisiin sovitetulta suoralta, ei kahdesta vierekkäisestä mittauspisteestä, koska mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi.
 **Kuvaajan lukeminen:** Piirretään origon kautta suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Luetaan suoralta kaukainen piste, esimerkiksi tukivoimalla $N = 25\,\text{N}$ suoran arvo on noin $F_\mu = 5{,}35\,\text{N}$.
@@ -86,13 +88,13 @@
 
 ## fy4-6-L2-04
 **Annettu:** $m = 10\,\text{kg}$, $\alpha = 35^\circ$, $\mu_0 = 0{,}60$, laatikko asetetaan levossa; $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** lepokitkan suurin arvo $F_\text{max}$ yksikössä $\text{N}$ ja se, pysyykö laatikko paikallaan
+**Kysytty:** erotus $G_x - F_\text{max}$ yksikössä $\text{N}$, missä $F_\text{max}$ on lepokitkan suurin arvo; erotuksen etumerkki kertoo, pysyykö laatikko paikallaan
 **Periaate:** Lepokitka on enintään $\mu_0 N$. Laatikko pysyy paikallaan vain, jos tämä yläraja riittää kumoamaan painon rinteen suuntaisen komponentin. Kohtisuorassa suunnassa laatikko ei kiihdy, joten $N = mg\cos\alpha$.
 **Voimakuvio:** Laatikko suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit $mg\sin\alpha$ ja $mg\cos\alpha$ katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja kitka $\overline{F}_\mu$ rinnettä ylös.
 **Kaava:** $y$: $N - mg\cos\alpha = 0$, joten suurin lepokitka on $F_\text{max} = \mu_0 mg\cos\alpha$, ja sitä verrataan komponenttiin $G_x = mg\sin\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$
-**Vastaus:** $48\,\text{N}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}60$. Se on pienempi kuin rinteen suuntainen komponentti $56\,\text{N}$, joten laatikko ei pysy paikallaan vaan lähtee liukumaan.
+**Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 8{,}1\,\text{N}$
+**Vastaus:** komponentti ylittää suurimman lepokitkan $56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}60$. Suurin lepokitka $48\,\text{N}$ on pienempi kuin komponentti $56\,\text{N}$, joten laatikko ei pysy paikallaan vaan lähtee liukumaan. Erotus on positiivinen, joten kitka ei riitä.
 **Järkevyys:** Saman päätelmän antaa kulma: $\tan 35^\circ = 0{,}70$ on suurempi kuin $\mu_0 = 0{,}60$, joten lankku on jyrkempi kuin rajakulma $\tan^{-1} 0{,}60 \approx 31^\circ$.
 
 ## fy4-6-L3-01
@@ -118,12 +120,12 @@
 **Järkevyys:** Ilman kitkaa hidastuvuus olisi $g\sin 20^\circ \approx 3{,}4\,\text{m/s}^2$ ja matka noin $1{,}3\,\text{m}$; kitka lyhentää matkaa. Pysähdyttyään kiekko jää rinteelle vain, jos lepokitkakerroin on vähintään $\tan 20^\circ \approx 0{,}36$; muuten se lähtee liukumaan takaisin alas.
 
 ## fy4-6-L3-03
-**Annettu:** $\alpha = 30^\circ$, $\mu = 0{,}20$, $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$, laatikko liukuu alas, ilmanvastusta ei ole
-**Kysytty:** kiihtyvyys $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Samat lait pätevät Kuussa kuin Maassa, mutta paino on $mg_\text{Kuu}$. Laatikko liukuu, joten siihen vaikuttaa liikekitka $\mu N$ rinnettä ylös. Kohtisuorassa suunnassa laatikko ei kiihdy.
-**Voimakuvio:** Laatikko suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit $mg_\text{Kuu}\sin\alpha$ ja $mg_\text{Kuu}\cos\alpha$ katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja liikekitka $\overline{F}_\mu$ rinnettä ylös.
-**Kaava:** $y$: $N - mg_\text{Kuu}\cos\alpha = 0$ ja $x$: $mg_\text{Kuu}\sin\alpha - \mu N = ma$, joten $a = g_\text{Kuu}(\sin\alpha - \mu\cos\alpha)$
+**Annettu:** Maassa $\alpha = 30^\circ$ ja $a_\text{Maa} = 2{,}0\,\text{m/s}^2$ alas rinnettä, Kuussa sama rinne ja pinta, $g = 9{,}81\,\text{m/s}^2$ ja $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$; ilmanvastusta ei ole
+**Kysytty:** kiihtyvyys Kuussa $a_\text{Kuu}$ yksikössä $\text{m/s}^2$
+**Periaate:** Laatikko liukuu, joten siihen vaikuttaa liikekitka $\mu N$ rinnettä ylös. Kitkakerrointa ei anneta, mutta se on pinnan ominaisuus ja sama Maassa ja Kuussa. Maan kiihtyvyydestä saadaan $\mu$, ja Kuussa sama laki antaa uuden kiihtyvyyden. Kohtisuorassa suunnassa laatikko ei kiihdy.
+**Voimakuvio:** Laatikko suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja liikekitka $\overline{F}_\mu$ rinnettä ylös.
+**Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$ ja $\mu = \tan\alpha - \dfrac{a_\text{Maa}}{g\cos\alpha}$. Koska sulkulauseke on sama molemmissa paikoissa, $a_\text{Kuu} = a_\text{Maa}\cdot\dfrac{g_\text{Kuu}}{g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.
-**Sijoitus:** $a = 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}20\cdot\cos 30^\circ) = 1{,}62\,\text{m/s}^2\cdot 0{,}3268 = 0{,}529\,\text{m/s}^2$
-**Vastaus:** $0{,}53\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}20$.
-**Järkevyys:** Maassa sama laatikko kiihtyisi $9{,}81\,\text{m/s}^2\cdot 0{,}3268 \approx 3{,}2\,\text{m/s}^2$, eli $9{,}81 : 1{,}62 \approx 6$ kertaa enemmän. Sekä paino että kitka ovat Kuussa kuudesosan, joten laatikko liukuu, jos se liukuu Maassakin: rajakulma $\tan\alpha_0 = \mu_0$ ei riipu putoamiskiihtyvyydestä.
+**Sijoitus:** $\mu = \tan 30^\circ - \dfrac{2{,}0\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 30^\circ} = 0{,}577 - 0{,}235 = 0{,}342$, ja $a_\text{Kuu} = 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}342\cdot\cos 30^\circ) = 0{,}330\,\text{m/s}^2$. Suoraan suhteesta: $2{,}0\,\text{m/s}^2\cdot\dfrac{1{,}62}{9{,}81} = 0{,}330\,\text{m/s}^2$
+**Vastaus:** $0{,}33\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten Maan kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
+**Järkevyys:** Sekä paino että kitka ovat Kuussa noin kuudesosan Maan arvosta, joten myös kiihtyvyys on noin kuudesosa. Laatikko liukuu Kuussakin, koska ehto $\tan\alpha > \mu$ ei riipu putoamiskiihtyvyydestä.

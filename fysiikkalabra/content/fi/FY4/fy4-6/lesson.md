@@ -194,10 +194,58 @@ Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $
 ### Kalteva taso
 Kaltevalla tasolla eli rinteellä paino osoittaa yhä suoraan alas, mutta pinta on vinossa. Tukivoima on kohtisuorassa pintaa vastaan, ja kitka on pinnan suuntainen. Laskua varten paino jaetaan kahteen **komponenttiin**: rinteen suuntainen komponentti pyrkii viemään kappaletta rinnettä alas, ja pintaa vastaan kohtisuora komponentti painaa kappaletta pintaa vasten. Komponentit eivät ole uusia voimia. Ne korvaavat painon laskussa, ja voimakuviossa ne piirretään katkoviivoin.
 
-Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä pienempi kohtisuora komponentti. Kohtisuoran komponentin mukana pienenee tukivoima ja sen mukana lepokitkan yläraja. Siksi laatikko lähtee jyrkässä rinteessä liukumaan: rinnettä alas vievä komponentti kasvaa suuremmaksi kuin suurin lepokitka, jonka silta pystyy antamaan.
+<svg data-fig="kalteva" viewBox="0 0 600 380" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: laatikko on paikallaan puisella lankulla, joka nousee oikealle kulmassa alfa vaakatasoon nähden. Oikealla laatikon voimakuvio, laatikko kallistettuna suorakulmiona kuten lankulla: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin ja lepokitka alapinnan ylemmästä kulmasta pinnan suuntaisesti ylös rinnettä. Painon komponentit on piirretty katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan pintaa kohti. Painon ja komponentin G y välinen kulma on alfa. Komponentti G y on yhtä pitkä kuin tukivoima ja G x yhtä pitkä kuin kitkavoima." style="max-width:100%;font-size:24px">
+  <foreignObject x="57.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
+  <rect x="214" y="172" width="30" height="128" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5"/>
+  <line x1="12" y1="312" x2="262" y2="312" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <line x1="12" y1="312" x2="2" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="28" y1="312" x2="18" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="44" y1="312" x2="34" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="60" y1="312" x2="50" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="76" y1="312" x2="66" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="92" y1="312" x2="82" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="108" y1="312" x2="98" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="124" y1="312" x2="114" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="140" y1="312" x2="130" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="156" y1="312" x2="146" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="172" y1="312" x2="162" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="188" y1="312" x2="178" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="204" y1="312" x2="194" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="220" y1="312" x2="210" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="236" y1="312" x2="226" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="252" y1="312" x2="242" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <path d="M22,300 L238.5,175 L244.5,185.5 L28,310.5 Z" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M104.5,252.5 L165,217.5 L139,172.5 L78.5,207.5 Z" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="120.5" y1="210" x2="108.5" y2="190" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M78,300 A56,56 0 0 0 70.5,272" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="83.5" y="266.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
+  <line x1="22" y1="300" x2="102" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="270" y1="20" x2="270" y2="360" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="373.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{voimakuvio}$</div></foreignObject>
+  <rect x="382" y="136" width="96" height="64" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-30 430 168)"/>
+  <line x1="430" y1="168" x2="430" y2="281" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M430,298 L422,280 L438,280 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="399.5" y="303.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="461.5" y1="186.5" x2="414" y2="104" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M405.5,89 L421.5,101 L407.5,109 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="379" y="62.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="487.5" y1="171.5" x2="529" y2="147.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M544,139 L532.5,155 L524,141 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="539.5" y="130.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
+  <line x1="430" y1="168" x2="375.5" y2="199.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M381.5,188.5 L373.5,200.5 L388,199.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="329" y="192" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{x}$</div></foreignObject>
+  <line x1="430" y1="168" x2="485.5" y2="264" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M474,257.5 L486.5,265.5 L485.5,251" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="490" y="255" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
+  <path d="M430,212 A44,44 0 0 0 452,206" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="435" y="209.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
+</svg>
+
+Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä pienempi kohtisuora komponentti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima pienenee kohtisuoran komponentin mukana ja sen mukana lepokitkan yläraja. Siksi laatikko lähtee jyrkässä rinteessä liukumaan: rinnettä alas vievä komponentti kasvaa suuremmaksi kuin suurin lepokitka, jonka silta pystyy antamaan.
 
 ### Kitka ei aina vastusta liikettä
-Kitka vastustaa pintojen liukumista **toistensa suhteen**, ei välttämättä kappaleen liikettä. Kun avolava-auto lähtee kiihtyen liikkeelle, lavalla oleva laatikko kiihtyy mukana. Ainoa vaakasuora voima laatikkoon on lavan kitka, joten sen täytyy osoittaa eteenpäin, liikkeen suuntaan: lava pyrkii liukumaan eteenpäin laatikon alta, ja lepokitka estää sen. Samoin kävellessä jalka työntää maata taaksepäin, ja maan lepokitka työntää jalkaa eteenpäin. Peilijäällä, jossa kitkaa on hyvin vähän, liikkeelle lähteminen on siksi vaikeaa.
+Kitka vastustaa pintojen liukumista **toistensa suhteen**, ei välttämättä kappaleen liikettä. Kun avolava-auto lähtee kiihtyen liikkeelle, lavalla oleva laatikko kiihtyy mukana. Kun ilmanvastus jätetään huomiotta, ainoa vaakasuora voima laatikkoon on lavan kitka, joten sen täytyy osoittaa eteenpäin, liikkeen suuntaan: lava pyrkii liukumaan eteenpäin laatikon alta, ja lepokitka estää sen. Samoin kävellessä jalka työntää maata taaksepäin, ja maan lepokitka työntää jalkaa eteenpäin. Peilijäällä, jossa kitkaa on hyvin vähän, liikkeelle lähteminen on siksi vaikeaa.
 
 <svg data-fig="kuorma" viewBox="0 0 600 360" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: avolava-auto lähtee liikkeelle oikealle ja kiihtyy, ja sen lavalla on laatikko, joka ei liu&#x27;u lavalla. Laatikon yllä ohut oranssi nuoli a osoittaa oikealle. Oikealla laatikon voimakuvio suorakulmiona: paino G keskipisteestä alas, lavan tukivoima N alapinnasta ylös ja yhtä pitkä kuin paino, ja lavan kitkavoima alapinnan etukulmasta oikealle eli liikkeen suuntaan. Kitkavoima on paljon lyhyempi kuin paino." style="max-width:100%;font-size:24px">
   <foreignObject x="77.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
@@ -276,57 +324,11 @@ G_y &= G\cos\alpha
 ```
 missä $G_x$ on rinteen suuntainen komponentti (N) ja $G_y$ pintaa vastaan kohtisuora komponentti (N). Painon ja komponentin $G_y$ välinen kulma on sama $\alpha$ kuin rinteen kaltevuuskulma, koska kumpikin on kohtisuorassa omaa vastinsuoraansa vastaan: paino vaakatasoa ja $G_y$ rinnettä.
 
-<svg data-fig="kalteva" viewBox="0 0 600 380" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: laatikko on paikallaan puisella lankulla, joka nousee oikealle kulmassa alfa vaakatasoon nähden. Oikealla laatikon voimakuvio, laatikko kallistettuna suorakulmiona kuten lankulla: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin ja lepokitka alapinnan ylemmästä kulmasta pinnan suuntaisesti ylös rinnettä. Painon komponentit on piirretty katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan pintaa kohti. Painon ja komponentin G y välinen kulma on alfa. Komponentti G y on yhtä pitkä kuin tukivoima ja G x yhtä pitkä kuin kitkavoima." style="max-width:100%;font-size:24px">
-  <foreignObject x="57.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
-  <rect x="214" y="172" width="30" height="128" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5"/>
-  <line x1="12" y1="312" x2="262" y2="312" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <line x1="12" y1="312" x2="2" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="28" y1="312" x2="18" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="44" y1="312" x2="34" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="312" x2="50" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="76" y1="312" x2="66" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="92" y1="312" x2="82" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="108" y1="312" x2="98" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="124" y1="312" x2="114" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="140" y1="312" x2="130" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="156" y1="312" x2="146" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="172" y1="312" x2="162" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="188" y1="312" x2="178" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="204" y1="312" x2="194" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="220" y1="312" x2="210" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="236" y1="312" x2="226" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="252" y1="312" x2="242" y2="324" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M22,300 L238.5,175 L244.5,185.5 L28,310.5 Z" fill="#e9c98a" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M104.5,252.5 L165,217.5 L139,172.5 L78.5,207.5 Z" fill="#f1dfb5" stroke="#a97a35" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="120.5" y1="210" x2="108.5" y2="190" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M78,300 A56,56 0 0 0 70.5,272" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="83.5" y="266.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
-  <line x1="22" y1="300" x2="102" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="270" y1="20" x2="270" y2="360" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <foreignObject x="373.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{voimakuvio}$</div></foreignObject>
-  <rect x="382" y="136" width="96" height="64" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-30 430 168)"/>
-  <line x1="430" y1="168" x2="430" y2="281" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M430,298 L422,280 L438,280 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="399.5" y="303.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="434" y1="202.5" x2="386" y2="120" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M377.5,105 L393.5,117 L379.5,125 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="351" y="78.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="487.5" y1="171.5" x2="529" y2="147.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M544,139 L532.5,155 L524,141 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="539.5" y="130.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
-  <line x1="430" y1="168" x2="375.5" y2="199.5" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M381.5,188.5 L373.5,200.5 L388,199.5" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="329" y="192" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{x}$</div></foreignObject>
-  <line x1="430" y1="168" x2="485.5" y2="264" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M474,257.5 L486.5,265.5 L485.5,251" fill="none" stroke="#c92a2a" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="490" y="255" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
-  <path d="M430,212 A44,44 0 0 0 452,206" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="435" y="209.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
-</svg>
-
-Kappale ei liiku pintaa vastaan kohtisuorassa suunnassa, joten tukivoima on yhtä suuri kuin $G_y$: $N = mg\cos\alpha$, painoa pienempi. Levossa olevaan kappaleeseen vaikuttava lepokitka on yhtä suuri kuin $G_x$. Kappale pysyy paikallaan niin kauan kuin $mg\sin\alpha \le \mu_0\,mg\cos\alpha$ eli $\tan\alpha \le \mu_0$. Massa supistuu, joten raskas ja kevyt laatikko lähtevät samalta pinnalta liukumaan samalla kulmalla.
+Jos pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima on yhtä suuri kuin $G_y$: $N = mg\cos\alpha$, painoa pienempi. (Pintaa vasten tai siitä poispäin suuntautuva vetävä tai työntävä voima muuttaisi tukivoimaa.) Levossa olevaan kappaleeseen vaikuttava lepokitka on yhtä suuri kuin $G_x$. Kappale pysyy paikallaan niin kauan kuin $mg\sin\alpha \le \mu_0\,mg\cos\alpha$ eli $\tan\alpha \le \mu_0$. Massa supistuu, joten tämän mallin mukaan raskas ja kevyt laatikko lähtevät samalta pinnalta liukumaan samalla kulmalla.
 
 ### Kitkakertoimen määrittäminen
+Kuvioissa ja simulaatiossa levossa olevaan kappaleeseen vaikuttavaa lepokitkaa merkitään $\overline{F}_\mu$; sen suuruus on $F_{\mu 0} \le \mu_0 N$, ja liukuessa $F_\mu = \mu N$.
+
 Lepokitkakerroin saadaan kokeesta, jossa lautaa kallistetaan hitaasti, kunnes kappale lähtee liukumaan. Tällä rajakulmalla $\alpha_0$ lepokitka on suurimmillaan, joten $\mu_0 = \tan\alpha_0$. Liikekitkakerroin saadaan esimerkiksi vetämällä kappaletta vaakasuoralla pöydällä jousivaa'alla vaakasuoraan ja tasaisella nopeudella. Silloin veto on yhtä suuri kuin liikekitka ja tukivoima yhtä suuri kuin paino, joten $\mu = F : mg$. Kun mittaus toistetaan eri massoilla, kitkakerroin on $(N, F_\mu)$-kuvaajaan sovitetun origon kautta kulkevan suoran kulmakerroin.
 
 ## Esimerkki
@@ -349,9 +351,9 @@ Muuttolaatikko, jonka massa on $18\,\text{kg}$, liukuu lastaussiltaa alas. Silta
   <line x1="300" y1="170" x2="300" y2="321" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M300,338 L292,320 L308,320 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="267.5" y="341.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="299.5" y1="212" x2="242.5" y2="89.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M235.5,74.5 L250.5,87 L236,94 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="207" y="48" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="332.5" y1="197" x2="275.5" y2="74.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M268,59 L283,72 L268.5,79 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="239.5" y="32.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
   <line x1="375" y1="177" x2="401" y2="165" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M416.5,157.5 L403.5,172.5 L396.5,158 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="412" y="151" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
@@ -415,11 +417,11 @@ Muuttolaatikko, jonka massa on $18\,\text{kg}$, liukuu lastaussiltaa alas. Silta
 **Järkevyys.** Ilman kitkaa kiihtyvyys olisi $g\sin 25^\circ \approx 4{,}1\,\text{m/s}^2$, joten kitka pienentää sitä, kuten pitääkin. Kitkavoima $48\,\text{N}$ on pienempi kuin rinteen suuntainen komponentti $G_x \approx 75\,\text{N}$, joten kokonaisvoima osoittaa rinnettä alas ja laatikko kiihtyy alas. Massa ei vaikuta kiihtyvyyteen, koska sekä $G_x$ että $F_\mu$ ovat verrannollisia massaan.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että kitkavoima on aina $\mu_0 N$ tai $\mu N$ ja aina liikettä vastaan. Lepokitka on kuitenkin vain niin suuri kuin tilanne vaatii: jos laatikkoa työnnetään $20\,\text{N}$:n voimalla eikä se liiku, lepokitka on $20\,\text{N}$, vaikka sen yläraja olisi suurempi. Kitka vastustaa pintojen liukumista toistensa suhteen, joten se voi osoittaa myös liikkeen suuntaan, kuten kiihtyvän auton lavalla. Toinen yleinen virhe on pitää tukivoimaa aina painon suuruisena. Rinteellä $N = mg\cos\alpha$ on painoa pienempi, ja paino osoittaa silloinkin suoraan alas eikä kohtisuoraan rinnettä vastaan.
+Moni ajattelee, että kitkavoima on aina $\mu_0 N$ tai $\mu N$ ja aina liikettä vastaan. Lepokitka on kuitenkin vain niin suuri kuin tilanne vaatii: jos laatikkoa työnnetään $20\,\text{N}$:n voimalla eikä se liiku, lepokitka on $20\,\text{N}$, vaikka sen yläraja olisi suurempi. Kitka vastustaa pintojen liukumista toistensa suhteen, joten se voi osoittaa myös liikkeen suuntaan, kuten kiihtyvän auton lavalla. Toinen yleinen virhe on pitää tukivoimaa aina painon suuruisena. Rinteellä $N = mg\cos\alpha$ on painoa pienempi, kun kohtisuorassa suunnassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, ja paino osoittaa silloinkin suoraan alas eikä kohtisuoraan rinnettä vastaan.
 
 ## Tiivistelmä
 - Painon suuruus on $G = mg$, ja paino osoittaa aina suoraan alas. Massa on sama kaikkialla, mutta paino riippuu putoamiskiihtyvyydestä.
 - Kitka on pinnan suuntainen ja vastustaa pintojen liukumista toistensa suhteen, ei aina kappaleen liikettä.
 - Lepokitka mukautuu tilanteeseen: $F_{\mu 0} \le \mu_0 N$. Liukuvaan kappaleeseen vaikuttaa liikekitka $F_\mu = \mu N$, ja yleensä $\mu < \mu_0$.
-- Rinteellä paino jaetaan komponentteihin $G_x = mg\sin\alpha$ ja $G_y = mg\cos\alpha$, ja tukivoima on $N = mg\cos\alpha$. Komponentit piirretään katkoviivoin, eivätkä ne ole uusia voimia.
+- Rinteellä paino jaetaan komponentteihin $G_x = mg\sin\alpha$ ja $G_y = mg\cos\alpha$, ja tukivoima on $N = mg\cos\alpha$, kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa. Komponentit piirretään katkoviivoin, eivätkä ne ole uusia voimia.
 - Lepokitkakerroin saadaan rajakulmasta, jolla kappale lähtee liukumaan: $\mu_0 = \tan\alpha_0$.

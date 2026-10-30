@@ -74,14 +74,14 @@
 ## Ydinajatus
 
 ### Ilma vastustaa liikettä
-Kun kappale liikkuu ilmassa tai vedessä, sen on työnnettävä väliainetta tieltään. Väliaine työntää kappaletta takaisin: kappaleeseen vaikuttaa **väliaineen vastus**, ilmassa **ilmanvastus** $\overline{F}_\text{v}$. Se osoittaa kappaleen nopeutta vastaan, kun ilma on tyyntä. Luvussa *Paino, kitka ja kalteva taso* kitka vastusti liukumista alustaa pitkin. Ilmanvastus on samanlainen vastusvoima, mutta sen aiheuttaja on ympäröivä ilma, eikä kappaleen tarvitse koskettaa mitään kiinteää pintaa.
+Kun kappale liikkuu ilmassa tai vedessä, sen on työnnettävä väliainetta tieltään. Väliaine työntää kappaletta takaisin: kappaleeseen vaikuttaa **väliaineen vastus**, ilmassa **ilmanvastus** $\overline{F}_\text{v}$. Se osoittaa kappaleen nopeutta vastaan, kun ilma on tyyntä. Luvussa *Paino, kitka ja kalteva taso* kitka vastusti liukumista alustaa pitkin. Ilmanvastus on samanlainen vastusvoima, mutta sen aiheuttaja on ympäröivä ilma, eikä kappaleen tarvitse koskettaa mitään kiinteää pintaa. Pyörällä ja autolla on lisäksi **vierimisvastus** $\overline{F}_\text{r}$, renkaiden ja tien aiheuttama vastus, joka on eri voima kuin ilmanvastus.
 
-Liukukitkasta ilmanvastus eroaa siinä, että se riippuu nopeudesta. Paikallaan olevaan kappaleeseen ilmanvastusta ei vaikuta lainkaan, ja se kasvaa nopeasti, kun nopeus kasvaa. Samalla nopeudella ilmanvastus on sitä suurempi, mitä suurempi on kappaleen poikkipinta-ala ja mitä huonommin ilma pääsee virtaamaan sen ohi. Vedessä vastus on paljon suurempi kuin ilmassa, koska vesi on tiheämpää.
+Liukukitkasta ilmanvastus eroaa siinä, että se riippuu nopeudesta. Ilman suhteen paikallaan olevaan kappaleeseen ilmanvastus ei vaikuta lainkaan, ja se kasvaa nopeasti, kun kappaleen nopeus ilman suhteen kasvaa. Samalla nopeudella ilmanvastus on sitä suurempi, mitä suurempi on kappaleen poikkipinta-ala ja mitä huonommin ilma pääsee virtaamaan sen ohi. Samalla nopeudella vastus on vedessä paljon suurempi kuin ilmassa, koska vesi on tiheämpää.
 
 ### Pudotuksen kolme vaihetta
-Heti hypyn jälkeen hyppääjän nopeus on nolla, joten ilmanvastusta ei vielä ole. Ainoa voima on paino, ja hyppääjä kiihtyy alaspäin putoamiskiihtyvyydellä $g$. Nopeuden kasvaessa ilmanvastus kasvaa. Paino pysyy samana, joten kokonaisvoima pienenee, ja samalla pienenee kiihtyvyys: nopeus kasvaa yhä hitaammin. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla, kiihtyvyys on nolla ja nopeus pysyy vakiona, kuten Newtonin ensimmäinen laki sanoo. Tätä nopeutta sanotaan **rajanopeudeksi**.
+Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta), joten heti hypyn jälkeen ilmanvastusta ei vielä ole. Ainoa voima on paino, ja hyppääjä kiihtyy alaspäin putoamiskiihtyvyydellä $g$. Nopeuden kasvaessa ilmanvastus kasvaa. Paino pysyy samana, joten kokonaisvoima pienenee, ja samalla pienenee kiihtyvyys: nopeus kasvaa yhä hitaammin. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla, kiihtyvyys on nolla ja nopeus pysyy vakiona, kuten Newtonin ensimmäinen laki sanoo. Tätä nopeutta sanotaan **rajanopeudeksi**.
 
-<svg data-fig="pudotus" viewBox="0 0 600 430" role="img" aria-label="Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: nopeus on nolla, voimakuviossa on vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla." style="max-width:100%;font-size:24px">
+<svg data-fig="pudotus" viewBox="0 0 600 430" role="img" aria-label="Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: hyppääjä lähtee ilman suhteen levosta, nopeus on nolla, voimakuviossa on vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla." style="max-width:100%;font-size:24px">
   <line x1="14" y1="168" x2="586" y2="168" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="200" y1="36" x2="200" y2="380" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
   <line x1="400" y1="36" x2="400" y2="380" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
@@ -276,9 +276,9 @@ Kuten aina, ensin valitaan kappale, piirretään sen voimakuvio ja valitaan posi
 </svg>
 
 ### Kun laskuvarjo aukeaa
-Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon auetessa hyppääjä liikkuu vielä rajanopeudella alaspäin, joten ilmanvastus on hetken monta kertaa painon suuruinen. Kokonaisvoima ja kiihtyvyys osoittavat ylös, vaikka hyppääjä liikkuu alas: hyppääjä hidastuu mutta ei nouse. Nopeuden pienentyessä ilmanvastus pienenee, kunnes se uudella, pienellä rajanopeudella on taas yhtä suuri kuin paino. Kokonaisvoiman suunta voi siis erota liikkeen suunnasta. Se kertoo aina kiihtyvyyden suunnan, ei nopeuden.
+Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon auetessa hyppääjä liikkuu vielä rajanopeudella alaspäin, joten ilmanvastus on hetken monta kertaa painon suuruinen. Kokonaisvoima ja kiihtyvyys osoittavat ylös, vaikka hyppääjä liikkuu alas: hyppääjä hidastuu mutta ei nouse. Nopeuden pienentyessä ilmanvastus pienenee, kunnes se uudella, pienellä rajanopeudella on taas yhtä suuri kuin paino. Kuinka monta kertaa painon suuruinen ilmanvastus on, riippuu varjosta ja hetkestä: kuviossa se on kolminkertainen, esimerkissä lähes kolminkertainen ja simulaation mallissa suurimmillaan noin viisinkertainen. Kokonaisvoiman suunta voi siis erota liikkeen suunnasta. Se kertoo aina kiihtyvyyden suunnan, ei nopeuden.
 
-<svg data-fig="varjo" viewBox="0 0 600 470" role="img" aria-label="Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla vapaa pudotus rajanopeudella: pitkä sininen nopeusnuoli alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla." style="max-width:100%;font-size:24px">
+<svg data-fig="varjo" viewBox="0 0 600 470" role="img" aria-label="Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla putoaminen ennen varjon avaamista rajanopeudella: pitkä sininen nopeusnuoli alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy414-ch1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy414-ch2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
   <line x1="14" y1="200" x2="586" y2="200" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <line x1="200" y1="36" x2="200" y2="450" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
@@ -386,7 +386,11 @@ Laskuvarjohyppääjä, jonka massa varusteineen on $85{,}0\,\text{kg}$, avaa var
 
 <!-- vaihe -->
 
-**Periaate.** Valitaan kappaleeksi hyppääjä varusteineen ja varjoineen. Siihen vaikuttavat Maa (paino) ja ilma (ilmanvastus). Newtonin toisen lain mukaan kiihtyvyyden määrää näiden voimien summa; nopeuden suunta ei ratkaise kiihtyvyyden suuntaa. Voimakuviossa hyppääjä on suorakulmio. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ vaikuttaa pääosin varjoon, joten se lähtee yläpinnasta ylös. Positiivinen suunta valitaan alas, liikkeen suuntaan.
+**Periaate.** Valitaan kappaleeksi hyppääjä varusteineen ja varjoineen. Siihen vaikuttavat Maa (paino) ja ilma (ilmanvastus). Newtonin toisen lain mukaan kiihtyvyyden määrää näiden voimien summa; nopeuden suunta ei ratkaise kiihtyvyyden suuntaa.
+
+<!-- vaihe -->
+
+**Kaava ratkaistuna.** Voimakuviossa hyppääjä on suorakulmio. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ vaikuttaa pääosin varjoon, joten se lähtee yläpinnasta ylös. Positiivinen suunta valitaan alas, liikkeen suuntaan.
 
 <svg data-fig="esimerkki" viewBox="0 0 600 380" role="img" aria-label="Vasemmalla tilannekuva: hyppääjän laskuvarjo on aukeamassa, ja hyppääjän vieressä sininen nopeusnuoli osoittaa alas. Oikealla hyppääjän voimakuvio, hyppääjä varjoineen suorakulmiona: paino G keskipisteestä alas ja ilmanvastus F_v yläpinnasta ylös, lähes kolme kertaa painon pituisena. Erillään oranssi kiihtyvyysnuoli ylös. Oikealla pieni nuoli y alas: positiivinen suunta on alas." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy414-ex-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
@@ -431,9 +435,7 @@ Laskuvarjohyppääjä, jonka massa varusteineen on $85{,}0\,\text{kg}$, avaa var
   <foreignObject x="550" y="269.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$y$</div></foreignObject>
 </svg>
 
-<!-- vaihe -->
-
-**Kaava ratkaistuna.** Kuviosta kirjoitetaan kokonaisvoima $mg - F_\text{v}$ ja ratkaistaan kiihtyvyys:
+Kuviosta kirjoitetaan kokonaisvoima $mg - F_\text{v}$ ja ratkaistaan kiihtyvyys:
 ```latex
 \begin{aligned}
 &mg - F_\text{v} = ma \\
@@ -467,11 +469,11 @@ Laskuvarjohyppääjä, jonka massa varusteineen on $85{,}0\,\text{kg}$, avaa var
 **Järkevyys.** Ilmanvastus on lähes kolme kertaa paino $834\,\text{N}$, joten ylöspäin jää noin kaksi painon verran kokonaisvoimaa. Kiihtyvyyden pitää siis olla noin kaksi kertaa $g$ eli noin $20\,\text{m/s}^2$, ja tulos $18{,}4\,\text{m/s}^2$ sopii tähän. Varjon avautuminen tuntuu hyppääjästä voimakkaana nykäyksenä, mutta se kestää vain muutaman sekunnin.
 
 ## Yleinen virhekäsitys
-Videoilla hyppääjä näyttää nousevan ylöspäin, kun hänen varjonsa aukeaa. Kuvaaja kuitenkin putoaa itse vielä vapaasti, ja hyppääjä vain hidastuu kuvaajaan nähden. Maahan nähden hyppääjä liikkuu koko ajan alaspäin: kokonaisvoima osoittaa hetken ylös, mutta se pienentää nopeutta eikä käännä liikettä. Toinen virhe on ajatella, että rajanopeudella ilmanvastus on painoa suurempi tai ettei voimia enää ole. Rajanopeudella voimat ovat yhtä suuret ja vastakkaiset. Kolmas virhe on väittää, että raskas kappale putoaa aina nopeammin. Ilman ilmanvastusta kaikki putoavat samalla kiihtyvyydellä. Ilmassa samanmuotoisista kappaleista raskaampi saavuttaa suuremman rajanopeuden.
+Videoilla hyppääjä näyttää nousevan ylöspäin, kun hänen varjonsa aukeaa. Videokuvaaja putoaa itse vielä ilman varjoa, ja hyppääjä vain hidastuu videokuvaajaan nähden. Maahan nähden hyppääjä liikkuu koko ajan alaspäin: kokonaisvoima osoittaa hetken ylös, mutta se pienentää nopeutta eikä käännä liikettä. Toinen virhe on ajatella, että rajanopeudella ilmanvastus on painoa suurempi tai ettei voimia enää ole. Rajanopeudella voimat ovat yhtä suuret ja vastakkaiset. Kolmas virhe on väittää, että raskas kappale putoaa aina nopeammin. Ilman ilmanvastusta kaikki putoavat samalla kiihtyvyydellä. Ilmassa samankokoisista ja samanmuotoisista kappaleista raskaampi saavuttaa suuremman rajanopeuden.
 
 ## Tiivistelmä
 - Väliaineen vastus eli ilmassa ilmanvastus $\overline{F}_\text{v}$ osoittaa nopeutta vastaan ja kasvaa, kun nopeus kasvaa. Se on suurempi suurella poikkipinta-alalla ja huonosti virtaviivaisella muodolla.
 - Putoavan kappaleen kiihtyvyys pienenee, kun ilmanvastus kasvaa. Rajanopeudella $F_\text{v} = G$, kokonaisvoima on nolla ja nopeus pysyy vakiona.
-- Samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus. Laskuvarjo pienentää rajanopeuden turvalliseksi.
+- Samankokoisista ja samanmuotoisista kappaleista raskaammalla on suurempi rajanopeus. Laskuvarjo pienentää rajanopeuden turvalliseksi.
 - Liikeyhtälö on $\overline{G} + \overline{F}_\text{v} = m\overline{a}$. Nousevalla kappaleella ilmanvastus osoittaa alas painon kanssa, joten hidastuvuus on suurempi kuin $g$.
 - Varjon auetessa kokonaisvoima ja kiihtyvyys osoittavat ylös, vaikka hyppääjä liikkuu alas: kokonaisvoiman suunta voi erota liikkeen suunnasta.

@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Muuttaja nostaa laatikon pakettiauton lastaussillalle, ja laatikko jää sillalle paikalleen, vaikka silta on vinossa. Kun sillan alapäätä siirretään lähemmäs autoa, silta jyrkkenee. Jossakin vaiheessa laatikko lähtee yhtäkkiä liukumaan alas.",
+      "text": "Muuttaja nostaa laatikon pakettiauton lastaussillalle. Laatikko voi olla tyhjä tai täyteen pakattu. Se jää sillalle paikalleen, vaikka silta on vinossa. Kun sillan alapäätä siirretään lähemmäs autoa, silta jyrkkenee. Jossakin vaiheessa laatikko lähtee yhtäkkiä liukumaan alas.",
       "question": "Mikä pitää laatikon paikallaan loivalla sillalla, ja miksi se ei enää riitä jyrkällä sillalla?"
     },
     {
@@ -116,7 +116,7 @@
         "alpha": 0
       },
       "names": {
-        "alpha": "kulma α",
+        "alpha": "kulma $\\alpha$",
         "m": "massa m",
         "pinta": "pinnat"
       },
@@ -190,7 +190,7 @@
         "m": "2"
       },
       "names": {
-        "alpha": "kulma α",
+        "alpha": "kulma $\\alpha$",
         "m": "massa m",
         "pinta": "pinnat"
       },
@@ -233,14 +233,14 @@
         "exp-1",
         "exp-2"
       ],
-      "prompt": "Selitä mittaustesi avulla, miksi laatikko pysyy loivalla lankulla paikallaan mutta lähtee jyrkemmällä liukumaan, ja miksi massa ei vaikuta liukumiskulmaan eikä kiihtyvyyteen.",
+      "prompt": "Selitä mittaustesi avulla, miksi laatikko pysyy loivalla lankulla paikallaan mutta lähtee jyrkemmällä liukumaan, ja miksi massa ei vaikuta kiihtyvyyteen.",
       "criteria": [
         "Vastaus kertoo, että levossa lepokitka on yhtä suuri kuin rinteen suuntainen komponentti $G_x = mg\\sin\\alpha$ ja kasvaa kulman mukana.",
         "Vastaus kertoo, että tukivoima $N = mg\\cos\\alpha$ ja siksi lepokitkan yläraja $\\mu_0 N$ pienenevät kulman kasvaessa, ja liukuminen alkaa, kun $G_x$ ylittää ylärajan.",
         "Vastaus kertoo, että sekä rinteen suuntainen komponentti että kitka ovat verrannollisia massaan, joten massa supistuu.",
         "Vastaus käyttää mittaustuloksia, esimerkiksi kitkaa kahdella kulmalla tai kiihtyvyyttä kahdella massalla."
       ],
-      "model": "Levossa laatikkoon vaikuttava lepokitka on yhtä suuri kuin rinnettä alas vievä komponentti $G_x = mg\\sin\\alpha$, joten se kasvaa kulman mukana: mallin arvoissa $3{,}4\\,\\text{N}$ kulmalla $10^\\circ$ ja $8{,}6\\,\\text{N}$ kulmalla $26^\\circ$. Samalla tukivoima $N = mg\\cos\\alpha$ pienenee, ja sen mukana lepokitkan yläraja $\\mu_0 N$. Kun $G_x$ ylittää ylärajan, noin kulmalla $27^\\circ$, laatikko lähtee liukumaan, ja kitka putoaa liikekitkaksi $\\mu N$, mallin arvoissa $5{,}2\\,\\text{N}$. Sekä $G_x$ että kitka ovat verrannollisia massaan, joten massa supistuu: rajakulma toteuttaa ehdon $\\tan\\alpha_0 = \\mu_0$, ja kulmalla $35^\\circ$ kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ kaikilla massoilla."
+      "model": "Levossa laatikkoon vaikuttava lepokitka on yhtä suuri kuin rinnettä alas vievä komponentti $G_x = mg\\sin\\alpha$, joten se kasvaa kulman mukana: mallin arvoissa $3{,}4\\,\\text{N}$ kulmalla $10^\\circ$ ja $8{,}6\\,\\text{N}$ kulmalla $26^\\circ$. Samalla tukivoima $N = mg\\cos\\alpha$ pienenee, ja sen mukana lepokitkan yläraja $\\mu_0 N$. Kun $G_x$ ylittää ylärajan, noin kulmalla $27^\\circ$, laatikko lähtee liukumaan, ja kitka putoaa liikekitkaksi $\\mu N$, mallin arvoissa $5{,}2\\,\\text{N}$. Sekä $G_x$ että kitka ovat verrannollisia massaan, joten massa supistuu, ja kulmalla $35^\\circ$ kiihtyvyys on $3{,}22\\,\\text{m/s}^2$ kaikilla massoilla, mikä näkyy koe 2:n taulukossa. Rajakulman riippumattomuus massasta seuraa ehdosta $\\tan\\alpha_0 = \\mu_0$, jossa massaa ei ole; sitä ei mitattu."
     },
     {
       "id": "aineisto",
@@ -267,7 +267,7 @@
             "feedback": "Jaoit voiman massalla. Kitkakerroin on kitkavoiman ja *tukivoiman* suhde, ja tukivoima on $N = mg$ newtoneina."
           }
         ],
-        "solution": "**Annettu:** taulukon massat $0{,}50$–$2{,}00\\,\\text{kg}$ ja vaa'an lukemat $1{,}7$–$6{,}9\\,\\text{N}$; palikka liikkuu vaakasuoraan tasaisella nopeudella; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Palikka liikkuu tasaisella nopeudella, joten voimien summa on nolla: vaakasuunnassa vaa'an voima on yhtä suuri kuin liikekitka ja pystysuunnassa tukivoima yhtä suuri kuin paino. Liikekitka on $F_\\mu = \\mu N$.\n\n**Kaava:** $F - \\mu N = 0$ ja $N - mg = 0$, joten $\\mu = \\dfrac{F}{mg}$\n\n**Muunnokset:** Massat ovat kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\mu_1 = \\dfrac{1{,}7\\,\\text{N}}{0{,}50\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2} = 0{,}347$, samoin $\\mu_2 = 0{,}357$, $\\mu_3 = 0{,}347$ ja $\\mu_4 = 0{,}352$; keskiarvo $\\mu = (0{,}347 + 0{,}357 + 0{,}347 + 0{,}352) : 4 = 0{,}350$\n\n**Vastaus:** $0{,}35$, kaksi merkitsevää numeroa kuten vaa'an lukemissa, esimerkiksi $1{,}7\\,\\text{N}$.\n\n**Järkevyys:** Kaikki neljä suhdetta ovat lähellä toisiaan, joten kitka on todella verrannollinen tukivoimaan. Kun massa nelinkertaistuu, lukema kasvaa $1{,}7\\,\\text{N}$:sta $6{,}9\\,\\text{N}$:iin eli noin nelinkertaiseksi. Puun kitkakerroin on tyypillisesti $0{,}3$–$0{,}5$."
+        "solution": "**Annettu:** taulukon massat $0{,}50$–$2{,}00\\,\\text{kg}$ ja vaa'an lukemat $1{,}7$–$6{,}9\\,\\text{N}$; palikka liikkuu vaakasuoraan tasaisella nopeudella; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Palikka liikkuu tasaisella nopeudella, joten voimien summa on nolla: vaakasuunnassa vaa'an voima on yhtä suuri kuin liikekitka ja pystysuunnassa tukivoima yhtä suuri kuin paino. Liikekitka on $F_\\mu = \\mu N$.\n\n**Kaava:** $F - \\mu N = 0$ ja $N - mg = 0$, joten $\\mu = \\dfrac{F}{mg}$\n\n**Muunnokset:** Massat ovat kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\mu_1 = \\dfrac{1{,}7\\,\\text{N}}{0{,}50\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2} = 0{,}347$, samoin $\\mu_2 = 0{,}357$, $\\mu_3 = 0{,}347$ ja $\\mu_4 = 0{,}352$; keskiarvo $\\mu = (0{,}347 + 0{,}357 + 0{,}347 + 0{,}352) : 4 = 0{,}350$\n\n**Vastaus:** $0{,}35$, kaksi merkitsevää numeroa kuten vaa'an lukemissa, esimerkiksi $1{,}7\\,\\text{N}$.\n\n**Järkevyys:** Kaikki neljä suhdetta ovat lähellä toisiaan, joten kitka on todella verrannollinen tukivoimaan. Kun massa nelinkertaistuu, lukema kasvaa $1{,}7\\,\\text{N}$:sta $6{,}9\\,\\text{N}$:iin eli noin nelinkertaiseksi. Puun kitkakerroin puuta vasten on tyypillisesti $0{,}3$–$0{,}6$."
       }
     },
     {
@@ -285,7 +285,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit lepokitkan suuruudesta? Palaa myös alun laatikkoon: miksi täysi ja tyhjä laatikko lähtevät liukumaan samalla sillan kulmalla?",
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mitä opit lepokitkan suuruudesta? Palaa myös alun laatikkoon: päättele ehdosta $\\tan\\alpha_0 = \\mu_0$, miksi tyhjä ja täyteen pakattu laatikko lähtevät liukumaan samalla sillan kulmalla.",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -439,7 +439,7 @@
           "feedback": "Laskit $\\cos 17^\\circ$. Kitkan on kumottava rinteen suuntainen komponentti $mg\\sin\\alpha$, ja tukivoima on $mg\\cos\\alpha$, joten $\\mu = \\tan\\alpha$."
         }
       ],
-      "solution": "**Annettu:** kannen kaltevuuskulma $\\alpha = 17^\\circ$, kirja liukuu alas tasaisella nopeudella\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan voimien summa on nolla kummassakin suunnassa. Kirja liukuu, joten siihen vaikuttaa liikekitka $F_\\mu = \\mu N$.\n\n**Voimakuvio:** Kirja suorakulmiona kannen suuntaisesti, $x$ kantta pitkin alas ja $y$ kohtisuoraan kannesta ulos. Paino $\\overline{G}$ suoraan alas ja sen komponentit $mg\\sin\\alpha$ ja $mg\\cos\\alpha$ katkoviivoin, tukivoima $\\overline{N}$ kohtisuoraan kannesta ulos ja liikekitka $\\overline{F}_\\mu$ kantta pitkin ylös, koska kirja liukuu alas.\n\n**Kaava:** $y$: $N - mg\\cos\\alpha = 0$ ja $x$: $mg\\sin\\alpha - \\mu N = 0$, joten $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Muunnokset:** Kulma on asteina; muita muunnoksia ei tarvita, ja massa supistuu.\n\n**Sijoitus:** $\\mu = \\tan 17^\\circ = 0{,}3057$\n\n**Vastaus:** $0{,}31$, kaksi merkitsevää numeroa kuten kulmassa $17^\\circ$.\n\n**Järkevyys:** Kerroin on positiivinen ja pienempi kuin $1$, kuten kirjan ja puun välillä on tyypillistä. Loivempi kulma tarkoittaisi pienempää kitkakerrointa: jäällä liukuminen alkaisi jo hyvin loivassa kulmassa."
+      "solution": "**Annettu:** kannen kaltevuuskulma $\\alpha = 17^\\circ$, kirja liukuu alas tasaisella nopeudella\n\n**Kysytty:** liikekitkakerroin $\\mu$ (ei yksikköä)\n\n**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan voimien summa on nolla kummassakin suunnassa. Kirja liukuu, joten siihen vaikuttaa liikekitka $F_\\mu = \\mu N$.\n\n**Voimakuvio:** Kirja suorakulmiona kannen suuntaisesti, $x$ kantta pitkin alas ja $y$ kohtisuoraan kannesta ulos. Paino $\\overline{G}$ suoraan alas ja sen komponentit $mg\\sin\\alpha$ ja $mg\\cos\\alpha$ katkoviivoin, tukivoima $\\overline{N}$ kohtisuoraan kannesta ulos ja liikekitka $\\overline{F}_\\mu$ kantta pitkin ylös, koska kirja liukuu alas.\n\n**Kaava:** $y$: $N - mg\\cos\\alpha = 0$ ja $x$: $mg\\sin\\alpha - \\mu N = 0$, joten $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Muunnokset:** Kulma on asteina; muita muunnoksia ei tarvita, ja massa supistuu.\n\n**Sijoitus:** $\\mu = \\tan 17^\\circ = 0{,}3057$\n\n**Vastaus:** $0{,}31$, kaksi merkitsevää numeroa kuten kulmassa $17^\\circ$.\n\n**Järkevyys:** Kerroin on positiivinen ja pienempi kuin $1$, kuten kirjan ja puun välillä on tyypillistä. Pienempi kulma tarkoittaisi pienempää kitkakerrointa: jäällä kirja liukuisi tasaisella nopeudella jo hyvin loivassa kulmassa."
     },
     {
       "id": "check-3",

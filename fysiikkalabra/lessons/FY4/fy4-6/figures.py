@@ -194,7 +194,7 @@ def kalteva():
     th = math.radians(deg)
     d = FBD(f, s, body=(cx, cy, w, h, deg), a_dir=(0, 0))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(-14, 20))
-    d.force("N", (G * math.cos(th) * nrm[0], G * math.cos(th) * nrm[1]), (bc[0] - 14 * t[0], bc[1] + 14 * t[1]), "normal", surface=deg, lab=(-10, -12))
+    d.force("N", (G * math.cos(th) * nrm[0], G * math.cos(th) * nrm[1]), (bc[0] + 18 * t[0], bc[1] - 18 * t[1]), "normal", surface=deg, lab=(-10, -12))
     d.force("F_mu", (G * math.sin(th) * t[0], G * math.sin(th) * t[1]), up, "friction", surface=deg, lab=(18, 6))
     d.component("G_x", "G", (-t[0], -t[1]), lab=(-22, 6))
     d.component("G_y", "G", (t[1], -t[0]), lab=(26, 4))
@@ -220,7 +220,7 @@ def esimerkki():
     s = 0.95
     d = FBD(f, s, body=(cx, cy, w, h, deg), m=m, a=(-a * t[0], -a * t[1]))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(-16, 18))
-    d.force("N", (N * nrm[0], N * nrm[1]), (bc[0] - 18 * t[0], bc[1] + 18 * t[1]), "normal", surface=deg, lab=(-12, -12))
+    d.force("N", (N * nrm[0], N * nrm[1]), (bc[0] + 18 * t[0], bc[1] - 18 * t[1]), "normal", surface=deg, lab=(-12, -12))
     d.force("F_mu", (Fmu * t[0], Fmu * t[1]), up, "friction", surface=deg, lab=(18, 8))
     d.component("G_x", "G", (-t[0], -t[1]), lab=(-20, 10))
     d.component("G_y", "G", (t[1], -t[0]), lab=(28, 2))
@@ -262,7 +262,7 @@ def _valitse(name, desc, wrong=None, fr=1, g_perp=False, no_friction=False):
     d = FBD(f, 1.15, body=(cx, cy, w, h, deg), a_dir=None if wrong else (0, 0), wrong=wrong)
     if g_perp: d.force("G", (-G * nrm[0], -G * nrm[1]), (cx, cy), "gravity", lab=(22, 14))
     else: d.force("G", (0, -G), (cx, cy), "gravity", lab=(-14, 18))
-    d.force("N", (G * math.cos(th) * nrm[0], G * math.cos(th) * nrm[1]), (bc[0] - 16 * t[0], bc[1] + 16 * t[1]), "normal", surface=deg, lab=(-10, -12))
+    d.force("N", (G * math.cos(th) * nrm[0], G * math.cos(th) * nrm[1]), (bc[0] + 18 * t[0], bc[1] - 18 * t[1]), "normal", surface=deg, lab=(-10, -12))
     if not no_friction:
         if fr > 0: d.force("F_mu", (G * math.sin(th) * t[0], G * math.sin(th) * t[1]), up, "friction", surface=deg, lab=(16, 8))
         else: d.force("F_mu", (-G * math.sin(th) * t[0], -G * math.sin(th) * t[1]), down, "friction", surface=deg, lab=(-18, -6))
@@ -323,7 +323,7 @@ MITTAUS = [(5.0, 1.1), (10.0, 2.1), (15.0, 3.3), (20.0, 4.2), (25.0, 5.4)]   # a
 
 def mittaus():
     """Exercise L2-03: measured kinetic friction against the normal force (points only; the student fits the line)."""
-    f = Fig("fy46-mittaus", 340, "Kuvaaja mittakaavassa, keksitty esimerkkiaineisto. Vaaka-akselilla tukivoima N newtoneina nollasta 30:een, "
+    f = Fig("fy46-mittaus", 340, "Kuvaaja mittakaavassa, esimerkkiaineisto. Vaaka-akselilla tukivoima N newtoneina nollasta 30:een, "
             "pystyakselilla kitkavoima newtoneina nollasta 7:ään. Viisi mittauspistettä: tukivoimalla 5 newtonia kitkavoima on 1,1 "
             "newtonia, 10 newtonilla 2,1, 15 newtonilla 3,3, 20 newtonilla 4,2 ja 25 newtonilla 5,4 newtonia. Suoraa ei ole piirretty.")
     ax = Axes(f, (92, 290), (496, 60), x=(0, 30), y=(0, 7), xticks=[5, 10, 15, 20, 25, 30], yticks=[1, 2, 3, 4, 5, 6, 7],

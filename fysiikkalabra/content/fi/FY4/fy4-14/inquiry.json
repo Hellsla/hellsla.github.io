@@ -57,19 +57,19 @@
         {
           "text": "Nopeus kasvaa aluksi nopeasti, sitten yhä hitaammin, ja asettuu lopulta vakioksi.",
           "correct": true,
-          "feedback": "Oikein. Kuvaajassa nopeus kasvaa ensin lähes $9{,}81\\,\\text{m/s}$ sekunnissa, mutta käyrä loivenee ja tasaantuu. Mallin arvoissa $80\\,\\text{kg}$:n hyppääjän nopeus asettuu noin $54{,}9\\,\\text{m/s}$:iin. Ilmanvastus kasvaa nopeuden mukana, kunnes se on yhtä suuri kuin paino."
+          "feedback": "Oikein. Kuvaajassa nopeus kasvaa ensin lähes $9{,}81\\,\\text{m/s}$ sekunnissa, mutta käyrä loivenee ja tasaantuu. Mallin arvoissa $60\\,\\text{kg}$:n hyppääjän nopeus asettuu noin $47{,}6\\,\\text{m/s}$:iin. Ilmanvastus kasvaa nopeuden mukana, kunnes se on yhtä suuri kuin paino."
         },
         {
           "text": "Nopeus kasvaa tasaisesti $9{,}81\\,\\text{m/s}$ joka sekunti koko pudotuksen ajan.",
-          "feedback": "Näin kävisi ilman ilmaa: $40\\,\\text{s}$:ssa nopeus olisi lähes $400\\,\\text{m/s}$. Kuvaajassa nopeus kuitenkin tasaantuu, mallin arvoissa noin $54{,}9\\,\\text{m/s}$:iin, koska ilmanvastus kasvaa nopeuden kasvaessa ja pienentää kokonaisvoimaa."
+          "feedback": "Näin kävisi ilman ilmaa: $40\\,\\text{s}$:ssa nopeus olisi lähes $400\\,\\text{m/s}$. Kuvaajassa nopeus kuitenkin tasaantuu, mallin arvoissa $60\\,\\text{kg}$:n hyppääjällä noin $47{,}6\\,\\text{m/s}$:iin, koska ilmanvastus kasvaa nopeuden kasvaessa ja pienentää kokonaisvoimaa."
         },
         {
           "text": "Nopeus kasvaa suurimpaan arvoonsa ja alkaa sitten pienentyä.",
-          "feedback": "Kun ilmanvastus on kasvanut painon suuruiseksi, kokonaisvoima on nolla eikä nopeus enää muutu. Mikään ei kasvata ilmanvastusta painoa suuremmaksi, joten nopeus ei ala pienentyä. Kuvaajassa käyrä tasaantuu vaakasuoraksi eikä käänny alas."
+          "feedback": "Kun ilmanvastus on kasvanut painon suuruiseksi, kokonaisvoima on nolla eikä nopeus enää muutu. Kun ilman tiheys on sama (mallin oletus), mikään ei kasvata ilmanvastusta painoa suuremmaksi, joten nopeus ei ala pienentyä. Kuvaajassa käyrä tasaantuu vaakasuoraksi eikä käänny alas."
         },
         {
           "text": "Nopeus on vakio heti hypyn alusta, koska ilmanvastus kumoaa painon.",
-          "feedback": "Hypyn alussa nopeus on nolla, joten ilmanvastusta ei vielä ole. Silloin ainoa voima on paino, ja hyppääjä kiihtyy. Kuvaajassa nopeus kasvaa alussa jyrkästi ja tasaantuu vasta noin kymmenen sekunnin kuluttua."
+          "feedback": "Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta), joten hypyn alussa ilmanvastusta ei vielä ole. Silloin ainoa voima on paino, ja hyppääjä kiihtyy. Kuvaajassa nopeus kasvaa alussa jyrkästi ja tasaantuu vasta noin kymmenen sekunnin kuluttua."
         }
       ]
     },
@@ -119,7 +119,7 @@
         },
         {
           "text": "Hän nousee hetken ylöspäin ja alkaa sitten taas pudota hitaasti.",
-          "feedback": "Videoilla näin näyttää, koska kuvaaja putoaa itse vielä vapaasti. Kuvaajassa hyppääjän nopeus pienenee mutta pysyy positiivisena: hän liikkuu koko ajan alas. Ylöspäin osoittava kokonaisvoima pienentää nopeutta, mutta samalla ilmanvastus pienenee, ja nopeus asettuu noin $5{,}1\\,\\text{m/s}$:iin kauan ennen nollaa."
+          "feedback": "Videoilla näin näyttää, koska videokuvaaja putoaa itse vielä ilman varjoa ja hyppääjä hidastuu häneen nähden. Kuvaajassa hyppääjän nopeus pienenee mutta pysyy positiivisena: hän liikkuu koko ajan alas. Ylöspäin osoittava kokonaisvoima pienentää nopeutta, mutta samalla ilmanvastus pienenee, ja nopeus asettuu noin $5{,}1\\,\\text{m/s}$:iin kauan ennen nollaa."
         },
         {
           "text": "Hän hidastuu vähitellen, ja kokonaisvoima osoittaa koko ajan alas, liikkeen suuntaan.",
@@ -133,7 +133,7 @@
       "type": "sim",
       "text": "Simulaatiossa laskuvarjohyppääjä putoaa lentokoneesta. Vasemmalla ovat tilannekuva ja nopeuden kuvaaja, oikealla hyppääjän voimakuvio, jossa paino ja ilmanvastus ovat samassa mittakaavassa.",
       "howto": "Valitse hyppääjän massa varusteineen, asento ja se, avataanko varjo $20\\,\\text{s}$:n kohdalla. Paina *Käynnistä*. Hyppy kestää $40\\,\\text{s}$ mallin aikaa; *Tauko* pysäyttää sen ja *Jatka* jatkaa. Hypyn päätyttyä lukemiin tulevat nopeus hypyn lopussa ja hypyn suurin ilmanvastus. *Alusta* palauttaa hyppääjän koneen ovelle. *Nopeus* hidastaa tai nopeuttaa vain esitystä, ei lukemia: valitse *hidas*, kun haluat seurata varjon avautumista. Jos voimanuoli ei mahdu voimakuvioon, se katkaistaan kahdella vinoviivalla, ja sen arvo näkyy lukemissa.",
-      "model": "Arvot ovat simulaation laskemia mallin arvoja. Hyppääjään vaikuttavat vain paino $\\overline{G}$ ja ilmanvastus $\\overline{F}_\\text{v}$. Ilma on tyyntä, ja sen tiheys on mallissa sama kaikilla korkeuksilla; ilmassa vaikuttavaa nostetta ei oteta huomioon. Ilmanvastus lasketaan mallista $F_\\text{v} = kv^2$, jossa vakio $k$ riippuu asennosta ja varjosta: vatsa alaspäin $0{,}26\\,\\text{kg/m}$, pää edellä $0{,}10\\,\\text{kg/m}$ ja avatun varjon varassa $30\\,\\text{kg/m}$. Varjo avautuu $3{,}0\\,\\text{s}$:ssa. Tätä mallia ei tarvitse osata: luvussa ilmanvastus käsitellään laadullisesti. Vapaassa pudotuksessa ilmanvastuksen nuoli päättyy alapintaan, johon ilma painaa; varjon auettua se lähtee yläpinnasta, koska varjo vetää hyppääjää ylhäältä.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Hyppääjään vaikuttavat vain paino $\\overline{G}$ ja ilmanvastus $\\overline{F}_\\text{v}$. Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta). Ilma on tyyntä, ja sen tiheys on mallissa sama kaikilla korkeuksilla; ilmassa vaikuttavaa nostetta ei oteta huomioon. Ilmanvastus lasketaan mallista $F_\\text{v} = kv^2$, jossa vakio $k$ riippuu asennosta ja varjosta: vatsa alaspäin $0{,}26\\,\\text{kg/m}$, pää edellä $0{,}10\\,\\text{kg/m}$ ja avatun varjon varassa $30\\,\\text{kg/m}$. Varjo avautuu $3{,}0\\,\\text{s}$:ssa. Tätä mallia ei tarvitse osata: luvussa ilmanvastus käsitellään laadullisesti. Putoamisessa ennen varjon avaamista ilmanvastuksen nuoli päättyy alapintaan, johon ilma painaa; varjon auettua se lähtee yläpinnasta, koska varjo vetää hyppääjää ylhäältä.",
       "calc": "Positiivinen suunta on alas. Kokonaisvoima on $\\Sigma F = G - F_\\text{v}$, missä $G = mg$ ja $g = 9{,}81\\,\\text{m/s}^2$, ja kiihtyvyys on $a = \\dfrac{\\Sigma F}{m}$. Negatiivinen $\\Sigma F$ tai $a$ osoittaa ylös. Simulaatio laskee liikkeen $2\\,\\text{ms}$:n askelin: joka askeleella nopeus muuttuu kiihtyvyyden ja askeleen pituuden tulon verran. Kuvaajaan piirretään nopeus $0{,}5\\,\\text{s}$:n välein."
     },
     {
@@ -148,7 +148,7 @@
         "m": "60"
       },
       "names": {
-        "m": "massa m",
+        "m": "massa $m$",
         "asento": "asento",
         "varjo": "varjo"
       },
@@ -218,7 +218,7 @@
         "varjo": "ei"
       },
       "names": {
-        "m": "massa m",
+        "m": "massa $m$",
         "asento": "asento",
         "varjo": "varjo"
       },
@@ -290,7 +290,7 @@
         "asento": "vatsa"
       },
       "names": {
-        "m": "massa m",
+        "m": "massa $m$",
         "asento": "asento",
         "varjo": "varjo"
       },
@@ -500,7 +500,7 @@
           "feedback": "Massa ei ole voima. Ilmanvastus on yhtä suuri kuin paino $mg$, joten kerro massa putoamiskiihtyvyydellä."
         }
       ],
-      "solution": "**Annettu:** $m = 64{,}0\\,\\text{kg}$, nopeus on vakio $5{,}5\\,\\text{m/s}$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** ilmanvastus $F_\\text{v}$ yksikössä $\\text{N}$\n\n**Periaate:** Nopeus on vakio, joten kiihtyvyys on nolla ja Newtonin toisen lain mukaan kokonaisvoima on nolla. Hyppääjä putoaa uudella, pienellä rajanopeudella, jolla ilmanvastus kumoaa painon.\n\n**Voimakuvio:** Hyppääjä varjoineen suorakulmiona, positiivinen suunta alas. Paino $\\overline{G}$ keskipisteestä alas ja ilmanvastus $\\overline{F}_\\text{v}$ yläpinnasta ylös, yhtä pitkinä. Nopeus alas merkitään erikseen eikä voimaksi.\n\n**Kaava:** $mg - F_\\text{v} = 0$, joten $F_\\text{v} = mg$\n\n**Muunnokset:** Massa on kilogrammoina. Nopeutta ei tarvita, joten sitä ei muunneta.\n\n**Sijoitus:** $F_\\text{v} = 64{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 627{,}84\\,\\text{N}$\n\n**Vastaus:** $628\\,\\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $64{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Ilmanvastus on yhtä suuri kuin vapaassa pudotuksessa rajanopeudella, noin $630\\,\\text{N}$, vaikka nopeus on kymmenesosa. Varjon suuri pinta-ala tuottaa saman voiman paljon pienemmällä nopeudella. Kilogramman paino on noin $10\\,\\text{N}$, joten $64\\,\\text{kg}$ vastaa noin $640\\,\\text{N}$:a."
+      "solution": "**Annettu:** $m = 64{,}0\\,\\text{kg}$, nopeus on vakio $5{,}5\\,\\text{m/s}$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** ilmanvastus $F_\\text{v}$ yksikössä $\\text{N}$\n\n**Periaate:** Nopeus on vakio, joten kiihtyvyys on nolla ja Newtonin toisen lain mukaan kokonaisvoima on nolla. Hyppääjä putoaa uudella, pienellä rajanopeudella, jolla ilmanvastus kumoaa painon.\n\n**Voimakuvio:** Hyppääjä varjoineen suorakulmiona, positiivinen suunta alas. Paino $\\overline{G}$ keskipisteestä alas ja ilmanvastus $\\overline{F}_\\text{v}$ yläpinnasta ylös, yhtä pitkinä. Nopeus alas merkitään erikseen eikä voimaksi.\n\n**Kaava:** $mg - F_\\text{v} = 0$, joten $F_\\text{v} = mg$\n\n**Muunnokset:** Massa on kilogrammoina. Nopeutta ei tarvita, joten sitä ei muunneta.\n\n**Sijoitus:** $F_\\text{v} = 64{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 627{,}84\\,\\text{N}$\n\n**Vastaus:** $628\\,\\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $64{,}0\\,\\text{kg}$.\n\n**Järkevyys:** Ilmanvastus on yhtä suuri kuin putoamisessa ennen varjon avaamista rajanopeudella, noin $630\\,\\text{N}$, vaikka nopeus on kymmenesosa. Varjon suuri pinta-ala tuottaa saman voiman paljon pienemmällä nopeudella. Kilogramman paino on noin $10\\,\\text{N}$, joten $64\\,\\text{kg}$ vastaa noin $640\\,\\text{N}$:a."
     },
     {
       "id": "check-3",

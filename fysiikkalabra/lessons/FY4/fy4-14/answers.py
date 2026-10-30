@@ -9,7 +9,7 @@ a = {}
 # Level 1: one formula, values given
 a["fy4-14-L1-01"] = 75.0 * g                        # jumper at terminal velocity: G − F_v = 0 → F_v = mg = 735,75 N
 a["fy4-14-L1-02"] = 2.00 * g - 5.00                 # falling stone, positive down: ΣF = mg − F_v = 19,62 − 5,00 = 14,62 N
-a["fy4-14-L1-03"] = (0.600 * g - 2.10) / 0.600      # falling ball: a = (mg − F_v)/m = 9,81 − 3,50 = 6,31 m/s²
+a["fy4-14-L1-03"] = abs(0.600 * g - 8.00) / 0.600   # ball thrown down fast: a = (mg − F_v)/m = (5,886 − 8,00)/0,600 = −3,523 m/s²: 3,52 m/s² up
 a["fy4-14-L1-04"] = 0.450 * g + 1.20                # rising ball, positive up: ΣF = −mg − F_v, |ΣF| = 4,4145 + 1,20 = 5,6145 N
 a["fy4-14-L1-05"] = 18 + 6.0                        # cyclist at constant velocity: F − F_v − F_r = 0 → F = 24 N
 # Level 2: two steps, a conversion or a rearrangement

@@ -21,15 +21,15 @@
 **Järkevyys:** Kokonaisvoima on pienempi kuin paino $19{,}6\,\text{N}$ mutta positiivinen, joten kivi kiihtyy vielä alaspäin, nyt hitaammin kuin ilman ilmaa. Kokonaisvoima pienenee nopeuden kasvaessa, koska ilmanvastus kasvaa.
 
 ## fy4-14-L1-03
-**Annettu:** $m = 0{,}600\,\text{kg}$, ilmanvastus $F_\text{v} = 2{,}10\,\text{N}$, pallo putoaa alas; $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** pallon kiihtyvyys $a$ yksikössä $\text{m/s}^2$
-**Periaate:** Newtonin toisen lain mukaan kiihtyvyyden määrää kokonaisvoima. Putoavaan palloon vaikuttavat paino alas ja ilmanvastus ylös, nopeutta vastaan.
-**Voimakuvio:** Pallo suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, painoa lyhyempänä.
+**Annettu:** $m = 0{,}600\,\text{kg}$, ilmanvastus $F_\text{v} = 8{,}00\,\text{N}$, pallo on heitetty alas ja liikkuu alas; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** pallon kiihtyvyys $a$ yksikössä $\text{m/s}^2$ ja sen suunta
+**Periaate:** Newtonin toisen lain mukaan kiihtyvyyden määrää kokonaisvoima. Pallo liikkuu alas, joten ilmanvastus osoittaa ylös, nopeutta vastaan. Ilmanvastus on painoa suurempi, joten kokonaisvoima osoittaa ylös, vaikka pallo liikkuu alas.
+**Voimakuvio:** Pallo suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, painoa pidempänä.
 **Kaava:** $mg - F_\text{v} = ma$, joten $a = \dfrac{mg - F_\text{v}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$, joten muunnoksia ei tarvita.
-**Sijoitus:** $a = \dfrac{0{,}600\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 2{,}10\,\text{N}}{0{,}600\,\text{kg}} = \dfrac{5{,}886\,\text{N} - 2{,}10\,\text{N}}{0{,}600\,\text{kg}} = 6{,}31\,\text{m/s}^2$
-**Vastaus:** $6{,}31\,\text{m/s}^2$ alaspäin, kolme merkitsevää numeroa kuten massassa $0{,}600\,\text{kg}$ ja ilmanvastuksessa $2{,}10\,\text{N}$.
-**Järkevyys:** Ilmanvastus on noin kolmasosa painosta $5{,}9\,\text{N}$, joten kiihtyvyyden pitää olla noin kaksi kolmasosaa putoamiskiihtyvyydestä, $\tfrac{2}{3}\cdot 9{,}81\,\text{m/s}^2 \approx 6{,}5\,\text{m/s}^2$. Kiihtyvyys on pienempi kuin $g$, kuten putoavalla kappaleella ilmassa pitää.
+**Sijoitus:** $a = \dfrac{0{,}600\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = \dfrac{5{,}886\,\text{N} - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = -3{,}523\,\text{m/s}^2$
+**Vastaus:** $3{,}52\,\text{m/s}^2$ ylöspäin, kolme merkitsevää numeroa kuten massassa $0{,}600\,\text{kg}$ ja ilmanvastuksessa $8{,}00\,\text{N}$. Miinusmerkki kertoo, että kiihtyvyys osoittaa ylös.
+**Järkevyys:** Ilmanvastus on noin $1{,}4$ kertaa paino $5{,}9\,\text{N}$, joten ylöspäin jää noin $2\,\text{N}$ ja kiihtyvyys on noin $2\,\text{N} : 0{,}6\,\text{kg} \approx 3{,}5\,\text{m/s}^2$. Pallo hidastuu, kunnes ilmanvastus on pienentynyt painon suuruiseksi.
 
 ## fy4-14-L1-04
 **Annettu:** $m = 0{,}450\,\text{kg}$, ilmanvastus $F_\text{v} = 1{,}20\,\text{N}$, pallo nousee; $g = 9{,}81\,\text{m/s}^2$
@@ -43,10 +43,10 @@
 **Järkevyys:** Kokonaisvoima on suurempi kuin paino $4{,}41\,\text{N}$, koska ilmanvastus vetää samaan suuntaan. Siksi nouseva pallo hidastuu nopeammin kuin ilman ilmaa. Kokonaisvoima osoittaa alas, vaikka pallo liikkuu ylös.
 
 ## fy4-14-L1-05
-**Annettu:** nopeus on vakio, ilmanvastus $F_\text{v} = 18\,\text{N}$, vierimisvastus $F_\text{r} = 6{,}0\,\text{N}$
-**Kysytty:** tien voima $F$, jolla tie työntää polkupyörää eteenpäin, yksikössä $\text{N}$
-**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan kokonaisvoima on nolla. Vaakasuunnassa eteenpäin työntävän voiman on kumottava molemmat vastusvoimat. Pystysuunnassa paino ja tien tukivoima kumoavat toisensa.
-**Voimakuvio:** Pyöräilijä ja pyörä yhtenä suorakulmiona, positiivinen suunta eteenpäin. Paino $\overline{G}$ keskipisteestä alas ja tien tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Tien voima $\overline{F}$ alapinnasta eteenpäin, ilmanvastus $\overline{F}_\text{v}$ ja vierimisvastus $\overline{F}_\text{r}$ taaksepäin.
+**Annettu:** nopeus on vakio, ilmanvastus $F_\text{v} = 18\,\text{N}$, vierimisvastus (renkaiden ja tien aiheuttama vastus) $F_\text{r} = 6{,}0\,\text{N}$
+**Kysytty:** tien kitkavoima $F$, joka työntää vetävää pyörää eteenpäin, yksikössä $\text{N}$
+**Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan kokonaisvoima on nolla. Vaakasuunnassa tien kitkavoiman, jolla tie työntää vetävää pyörää eteenpäin, on kumottava molemmat vastusvoimat; vierimisvastus on tässä erillinen vastusvoima. Pystysuunnassa paino ja tien tukivoima kumoavat toisensa.
+**Voimakuvio:** Pyöräilijä ja pyörä yhtenä suorakulmiona, positiivinen suunta eteenpäin. Paino $\overline{G}$ keskipisteestä alas ja tien tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Tien kitkavoima $\overline{F}$ vetävän pyörän alapinnasta eteenpäin, ilmanvastus $\overline{F}_\text{v}$ ja vierimisvastus $\overline{F}_\text{r}$ taaksepäin.
 **Kaava:** $F - F_\text{v} - F_\text{r} = 0$, joten $F = F_\text{v} + F_\text{r}$
 **Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 18\,\text{N} + 6{,}0\,\text{N} = 24\,\text{N}$
@@ -94,7 +94,7 @@
 **Kaava:** $-F_\text{v} - F_\text{r} = ma$, joten $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
 **Muunnokset:** Nopeutta ei tarvita laskussa, joten sitä ei muunneta. Voimat ovat newtoneina ja massa kilogrammoina.
 **Sijoitus:** $a = -\dfrac{450\,\text{N} + 180\,\text{N}}{1200\,\text{kg}} = -\dfrac{630\,\text{N}}{1200\,\text{kg}} = -0{,}525\,\text{m/s}^2$
-**Vastaus:** $0{,}525\,\text{m/s}^2$, kolme merkitsevää numeroa kuten voimissa $450\,\text{N}$ ja $180\,\text{N}$.
+**Vastaus:** $0{,}525\,\text{m/s}^2$, kolme merkitsevää numeroa, kun tehtävän luvut $450\,\text{N}$, $180\,\text{N}$ ja $1200\,\text{kg}$ luetaan kolminumeroisiksi arvoiksi.
 **Järkevyys:** Vastusvoimat ovat yhteensä vain noin $5\,\%$ auton painosta $11{,}8\,\text{kN}$, joten hidastuvuus on noin $5\,\%$ putoamiskiihtyvyydestä, $0{,}5\,\text{m/s}^2$. Vapaalla rullaava auto hidastuu hitaasti, mikä vastaa kokemusta. Nopeuden pienentyessä ilmanvastus pienenee, joten hidastuvuuskin pienenee myöhemmin.
 
 ## fy4-14-L3-01

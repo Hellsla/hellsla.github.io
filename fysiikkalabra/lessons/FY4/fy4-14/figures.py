@@ -131,7 +131,7 @@ def pudotus():
     """Ydinajatus: a skydiver just after the jump, speeding up and at the terminal speed (example situation G); the weight is the
     same in every column, the air resistance grows with the speed until it equals the weight."""
     f = Fig("fy414-pudotus", 430, "Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja "
-            "alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: nopeus on nolla, voimakuviossa on "
+            "alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: hyppääjä lähtee ilman suhteen levosta, nopeus on nolla, voimakuviossa on "
             "vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli "
             "alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. "
             "Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla.")
@@ -217,7 +217,7 @@ def varjo():
     """Kaava: the canopy opens (example situation G): at the terminal speed F_v = G; while the canopy opens F_v is several times G,
     the net force and the acceleration point up although the jumper still moves down; under the canopy a new, small terminal speed."""
     f = Fig("fy414-varjo", 470, "Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän "
-            "voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla vapaa pudotus rajanopeudella: pitkä sininen nopeusnuoli "
+            "voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla putoaminen ennen varjon avaamista rajanopeudella: pitkä sininen nopeusnuoli "
             "alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo "
             "aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään "
             "vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, "
