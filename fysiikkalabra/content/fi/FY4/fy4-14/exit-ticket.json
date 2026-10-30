@@ -1,0 +1,15 @@
+[
+  {
+    "q": "Kaksi samankokoista palloa, kevyt muovipallo ja raskas puupallo, pudotetaan yhtä aikaa korkean tornin huipulta. Kumpi osuu maahan ensin, ja miksi?",
+    "a": "Raskas puupallo. Alussa kumpikin kiihtyy kiihtyvyydellä $g$, mutta nopeuden kasvaessa ilmanvastus pienentää kevyen pallon kiihtyvyyttä enemmän, koska sen paino on pienempi. Samankokoisilla palloilla on samalla nopeudella yhtä suuri ilmanvastus, joten kevyen pallon rajanopeus on pienempi."
+  },
+  {
+    "q": "Miksi ylöspäin heitetyn pallon kiihtyvyyden suuruus on nousun aikana suurempi kuin $9{,}81\\,\\text{m/s}^2$, kun ilmanvastusta ei jätetä huomiotta?",
+    "fbd": "identify",
+    "a": "Nousun aikana ilmanvastus osoittaa nopeutta vastaan eli alas, samaan suuntaan kuin paino. Kokonaisvoima $mg + F_\\text{v}$ on suurempi kuin paino, joten kiihtyvyyden suuruus $g + \\tfrac{F_\\text{v}}{m}$ on suurempi kuin $g$."
+  },
+  {
+    "q": "Mainitse kaksi tapaa, joilla laskuvarjohyppääjä voi pienentää rajanopeuttaan, ja selitä, miksi ne toimivat.",
+    "a": "Hän voi kääntyä vatsa alaspäin ja levittää kädet ja jalat, jolloin poikkipinta-ala kasvaa, tai avata varjon. Kumpikin kasvattaa ilmanvastusta samalla nopeudella, joten ilmanvastus kasvaa painon suuruiseksi jo pienemmällä nopeudella."
+  }
+]

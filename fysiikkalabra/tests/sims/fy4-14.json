@@ -1,0 +1,111 @@
+[
+  {
+    "expr": "(() => { const S=window.simState; return S.m===80 && S.asento==='vatsa' && S.varjo==='ei' && S.running===false && S.t===0 && S.v===0 && S.vT===null && S.FvMax===null ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load: 80 kg, belly down, canopy not opened, at rest, no run recorded yet"
+  },
+  {
+    "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='60,80,100' && L[1]==='vatsa,paa' && L[2]==='ei,auki' && L[3]==='1,4,10' && document.querySelectorAll('#sim-root input[type=range]').length===0 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "selects: mass, position, canopy, speed; no sliders"
+  },
+  {
+    "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "main button first; DOM order canvas, controls, readout"
+  },
+  {
+    "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "no Lisätietoja box; one legend line of at most 15 words"
+  },
+  {
+    "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='asento,m,varjo' && P.m.unit==='kg' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "adapter declares m (kg), asento and varjo"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'100');",
+    "expr": "window.simState.G",
+    "expected": 981.0,
+    "tol": 0.01,
+    "note": "G = mg = 100 kg · 9,81 m/s²"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'60');",
+    "expr": "window.simState.a",
+    "expected": 9.81,
+    "tol": 0.01,
+    "note": "at rest there is no air resistance: a = g"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'80'); I(L[1],'vatsa'); I(L[2],'ei'); I(L[3],'10'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vT : null), 6500))",
+    "expected": 54.94,
+    "tol": 0.01,
+    "note": "80 kg belly down, no canopy: the speed at the end of the 40 s run is the terminal speed √(mg/k) = 54,9 m/s"
+  },
+  {
+    "expr": "window.simState.Fv / window.simState.G",
+    "expected": 1.0,
+    "tol": 0.01,
+    "note": "after that run F_v = G (net force zero)"
+  },
+  {
+    "expr": "Math.abs(window.simState.sumF) < 1 && Math.abs(window.simState.a) < 0.01 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "after that run ΣF ≈ 0 and a ≈ 0"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'100'); I(L[1],'vatsa'); I(L[2],'ei'); I(L[3],'10'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vT : null), 6500))",
+    "expected": 61.43,
+    "tol": 0.01,
+    "note": "100 kg belly down: terminal speed 61,4 m/s, larger than with 80 kg"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'80'); I(L[1],'paa'); I(L[2],'ei'); I(L[3],'10'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vT : null), 6500))",
+    "expected": 88.56,
+    "tol": 0.01,
+    "note": "80 kg head down (k = 0,10 kg/m): terminal speed 88,6 m/s"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'80'); I(L[1],'vatsa'); I(L[2],'auki'); I(L[3],'10'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vT : null), 6500))",
+    "expected": 5.115,
+    "tol": 0.01,
+    "note": "80 kg, canopy opened at 20 s: the speed at the end is the canopy's terminal speed 5,1 m/s"
+  },
+  {
+    "expr": "window.simState.FvMax",
+    "expected": 3923,
+    "tol": 0.01,
+    "note": "the largest air resistance while the canopy opens is about 3,9 kN, five times G"
+  },
+  {
+    "expr": "window.simState.open === 1 && window.simState.h > 0 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "after that run the canopy is fully open and the jumper is still above the ground"
+  },
+  {
+    "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'60');",
+    "expr": "window.simState.vT === null && window.simState.t === 0 && window.simState.v === 0 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "changing a control resets the jump and clears the recorded values"
+  }
+]
