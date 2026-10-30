@@ -1,14 +1,8 @@
 VERDICT: DONE
 
-Draft, round 1. `check_lesson.py fy4-14`: every line ok.
-
-- `meta.json`: unchanged (sim: true, glossary väliaineen vastus, rajanopeus).
-- `lesson.md`: Miksi + hero; Ydinajatus (vastusvoima, kolme vaihetta, rajanopeus massasta ja muodosta); `## Kaava: Liikeyhtälö ilmanvastuksen kanssa` (G + F_v = ma; nouseva pallo; varjo aukeaa, example G); staged worked example (canopy opening, a = 18,4 m/s² up while moving down); misconception; summary. Figures from `figures.py` (all FBDs via fbd.py, kind="drag").
-- `inquiry.json`: hook, optional retrieval, 3 predictions, sim, exp-1 (mass), exp-2 (canopy), optional exp-3 (position), conclusion, select task (rising volleyball, 4 option figures), optional transfer (snowboarder on a slope, uses *Paino, kitka ja kalteva taso*), 3 checks (identify, numeric, draw), exit. fbd plan identify/select/draw covered.
-- `exit-ticket.json`: 3 questions not asked by the checks.
-- `exercises/`: 5/4/3 with complete solutions; L3-03 reads a tangent off `fy4-14/ex-tangentti`.
-- `lessons/FY4/fy4-14/`: answers.py, lesson-answers.py (sim model values recomputed with the sim's integrator), figures.py, sim-spec.md.
-- `assets/sims/fy4/fy4-14/sim.js` (new): skydiver, drag modelled numerically F_v = k v² (said in the model box), stacked phone layout; `tests/sims/fy4-14.json` 17 assertions.
-- `lang/fi.json` sims.fy4-14; `glossary.json` two terms.
-
-Not done here: `docs/coverage/FY4.md` and the figure catalog are stale (shared docs; regenerate after the parallel drafts).
+Round 1 fix. Blocking, all fixed:
+- lesson.md, inquiry.json (pred-3, pred feedback, sim model, siirto solution), figures.py aria: "kuvaaja" for the camera operator is now "videokuvaaja"; no "vapaa pudotus" for a fall with air resistance ("ennen varjon avaamista", "ilman varjoa").
+- A jump starts at rest relative to the air (plane's speed neglected): lesson.md, pudotus figure aria, inquiry pred-2 feedback and sim `model`. "Kun ilman tiheys on sama" added to pred feedback.
+- "samankokoisista ja samanmuotoisista" in lesson.md (misconception, summary) and glossary.json rajanopeus.
+Polish: lesson.md wording (ilman suhteen, "ilmanvastus ei vaikuta", water at same speed); "massa $m$" x3; sim label sizes (wide 14, phone 16 x scale; y ticks thinned); figures pudotus/varjo/valitse labels 30 px, taller force rows; pred-1 quotes 60 kg (47,6 m/s); Esimerkki stage 2 trimmed (diagram and sign choice moved to stage 3); parachute force multiple stated once as dependent on the moment; vierimisvastus introduced in lesson and tasks, L1-05 names road friction; L1-03 now a downward throw faster than terminal speed (answers.py, exercises.json, solutions.md: 3,52 m/s2 up); L2-04 sig-fig justification.
+Not changed: solutions.md force-diagram figures (not listed).

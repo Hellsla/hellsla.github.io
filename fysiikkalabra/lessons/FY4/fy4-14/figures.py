@@ -113,30 +113,30 @@ def hero():
 def _phase(f, ox, title, Fv_k, a_k, vlen, m=80.0):
     """One column of the falling figure: the jumper (situation) above the divider, the force diagram below."""
     G = m * g
-    f.tex(ox + 100, 22, title, "middle", MUTED)
+    f.tex(ox + 100, 22, title, "middle", MUTED, size=24)
     skydiver(f, ox + 70, 104, 0.95, "belly")
     if vlen: vline(f, ox + 150, 70, 70 + vlen)
-    else: f.tex(ox + 132, 70, r"v = 0", "start", MUTED)
-    cx, cy, w, h = ox + 92, 252, 64, 38
-    d = FBD(f, 0.1, body=(cx, cy, w, h), m=m, a=(0, -a_k * g))
+    else: f.tex(ox + 100, 148, r"v = 0", "middle", MUTED)
+    cx, cy, w, h = ox + 92, 262, 64, 38
+    d = FBD(f, 0.12, body=(cx, cy, w, h), m=m, a=(0, -a_k * g))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(22, -2))
     if Fv_k: d.force("F_v", (0, Fv_k * G), (cx - 16, cy + h / 2), "drag", v_rel=(0, -1), tex=r"\overline{F}_\text{v}", lab=(-30, 0), push=True)
     d.draw()
-    if a_k: d.motion(r"\overline{a}", (0, -1), (ox + 168, 236), 22 + 40 * a_k)
-    else: f.tex(ox + 168, 260, r"a = 0", "middle", MUTED)
-    f.tex(ox + 100, 400, [r"F_\text{v} = 0", r"F_\text{v} < G", r"F_\text{v} = G"][0 if not Fv_k else 1 if Fv_k < 1 else 2], "middle")
+    if a_k: d.motion(r"\overline{a}", (0, -1), (ox + 168, 246), 22 + 40 * a_k)
+    else: f.tex(ox + 150, 214, r"a = 0", "middle", MUTED)
+    f.tex(ox + 100, 424, [r"F_\text{v} = 0", r"F_\text{v} < G", r"F_\text{v} = G"][0 if not Fv_k else 1 if Fv_k < 1 else 2], "middle")
 
 
 def pudotus():
     """Ydinajatus: a skydiver just after the jump, speeding up and at the terminal speed (example situation G); the weight is the
     same in every column, the air resistance grows with the speed until it equals the weight."""
-    f = Fig("fy414-pudotus", 430, "Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja "
+    f = Fig("fy414-pudotus", 450, "Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja "
             "alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: hyppääjä lähtee ilman suhteen levosta, nopeus on nolla, voimakuviossa on "
             "vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli "
             "alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. "
-            "Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla.")
+            "Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla.", size=30)
     f.line(14, 168, 586, 168, RULE, 1.5, "6 6")
-    f.line(200, 36, 200, 380, RULE_LIGHT, 1.5, "4 6"); f.line(400, 36, 400, 380, RULE_LIGHT, 1.5, "4 6")
+    f.line(200, 36, 200, 420, RULE_LIGHT, 1.5, "4 6"); f.line(400, 36, 400, 420, RULE_LIGHT, 1.5, "4 6")
     _phase(f, 0, r"\text{alussa}", 0, 1.0, 0)
     _phase(f, 200, r"\text{kiihtyy}", 0.5, 0.5, 46)
     _phase(f, 400, r"\text{rajanopeus}", 1.0, 0, 80)
@@ -195,35 +195,35 @@ def ylos():
 def _chute(f, ox, title, Fv_k, vlen, stage):
     """One column of the canopy figure: stage 0 free fall at the terminal speed, 1 the canopy opening, 2 the new terminal speed."""
     m = 80.0; G = m * g; ay = (Fv_k * G - G) / m
-    f.tex(ox + 100, 22, title, "middle", MUTED)
+    f.tex(ox + 100, 22, title, "middle", MUTED, size=24)
     if stage == 0: skydiver(f, ox + 82, 120, 0.95, "belly")
     else:
         canopy(f, ox + 82, 160, 0.8, 60 if stage == 1 else 116, f"fy414-ch{stage}")
         skydiver(f, ox + 82, 160, 0.8, "hang")
     vline(f, ox + 150, 70, 70 + vlen)
-    cx, cy, w, h = ox + 86, 350, 60, 38
-    d = FBD(f, 0.05, body=(cx, cy, w, h), m=m, a=(0, ay))
+    cx, cy, w, h = ox + 86, 372, 60, 38
+    d = FBD(f, 0.06, body=(cx, cy, w, h), m=m, a=(0, ay))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(22, -2))
     if stage == 0: d.force("F_v", (0, Fv_k * G), (cx - 16, cy + h / 2), "drag", v_rel=(0, -1), tex=r"\overline{F}_\text{v}", lab=(-30, 0), push=True)
     else: d.force("F_v", (0, Fv_k * G), (cx - 16, cy - h / 2), "drag", v_rel=(0, -1), tex=r"\overline{F}_\text{v}", lab=(-30, 12))
     d.draw()
     if stage == 1:
-        d.motion(r"\overline{a}", (0, 1), (ox + 146, 300), 56, lab=(20, 4))
-        d.net((ox + 178, 444), lab=(0, -20))
-    else: f.tex(ox + 160, 350, r"a = 0", "middle", MUTED)
+        d.motion(r"\overline{a}", (0, 1), (ox + 146, 322), 56, lab=(20, 4))
+        d.net((ox + 178, 470), lab=(0, -20))
+    else: f.tex(ox + 160, 372, r"a = 0", "middle", MUTED)
 
 
 def varjo():
     """Kaava: the canopy opens (example situation G): at the terminal speed F_v = G; while the canopy opens F_v is several times G,
     the net force and the acceleration point up although the jumper still moves down; under the canopy a new, small terminal speed."""
-    f = Fig("fy414-varjo", 470, "Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän "
+    f = Fig("fy414-varjo", 500, "Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän "
             "voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla putoaminen ennen varjon avaamista rajanopeudella: pitkä sininen nopeusnuoli "
             "alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo "
             "aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään "
             "vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, "
-            "ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla.")
+            "ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla.", size=30)
     f.line(14, 200, 586, 200, RULE, 1.5, "6 6")
-    f.line(200, 36, 200, 450, RULE_LIGHT, 1.5, "4 6"); f.line(400, 36, 400, 450, RULE_LIGHT, 1.5, "4 6")
+    f.line(200, 36, 200, 480, RULE_LIGHT, 1.5, "4 6"); f.line(400, 36, 400, 480, RULE_LIGHT, 1.5, "4 6")
     _chute(f, 0, r"\text{rajanopeus}", 1.0, 92, 0)
     _chute(f, 200, r"\text{varjo aukeaa}", 3.0, 70, 1)
     _chute(f, 400, r"\text{uusi rajanopeus}", 1.0, 16, 2)
@@ -264,7 +264,7 @@ RISE = ("Vasemmalla tilannekuva: lentopallo nousee suoraan ylös, ja sen vieress
 def _select(name, desc, wrong=None, mode="right"):
     """An option of the selection task: a volleyball rising straight up after a hit, with air resistance."""
     m = 0.27; G = m * g; Fv = 1.2
-    f = Fig(f"fy414-valitse-{name}", 300, desc, width=300)
+    f = Fig(f"fy414-valitse-{name}", 300, desc, width=300, size=30)
     ball(f, 62, 150, 26, f"fy414-vb-{name}")
     vline(f, 112, 176, 112)
     f.line(144, 20, 144, 280, RULE, 1.5, "6 6")

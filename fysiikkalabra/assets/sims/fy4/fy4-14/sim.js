@@ -83,7 +83,7 @@ new p5((p) => {
     const cw = document.getElementById('sim-root').clientWidth || 600, kk = Math.max(1, 600 / cw);
     setLayout(cw < 500);
     U = narrow ? 0.8 * kk : Math.max(1, kk * 0.8);
-    const fh = narrow ? Math.round(14 * kk) : Math.round(11 * kk * (kk > 1.3 ? 1.12 : 1));   // phone: about 14 CSS px on screen
+    const fh = Math.round((narrow ? 16 : 14) * kk * (!narrow && kk > 1.3 ? 1.12 : 1));   // about 15 CSS px on a phone, at least 14 on a wide screen
     labels = [];
     p.background(250);
     OY = 0; p.push(); situation(P, fh); p.pop();
@@ -197,7 +197,7 @@ new p5((p) => {
     p.line(X(0), Y(0), X(TEND) + 12, Y(0)); p.line(X(0), Y(0), X(0), Y(100) - 12);
     p.noStroke(); p.fill(...INKC);
     p.triangle(X(TEND) + 18, Y(0), X(TEND) + 9, Y(0) - 4, X(TEND) + 9, Y(0) + 4); p.triangle(X(0), Y(100) - 18, X(0) - 4, Y(100) - 9, X(0) + 4, Y(100) - 9);
-    const vt = kk > 1.5 && !narrow ? [50, 100] : [20, 40, 60, 80, 100];
+    const vt = kk > 1.5 ? [50, 100] : [20, 40, 60, 80, 100];
     for (const j of vt) lab(`$${j}$`, X(0) - 6, Y(j) + fh * 0.36, 'r', fh, MUTEDC);
     const tt = kk > 1.5 && !narrow ? [20, 40] : [10, 20, 30, 40];
     for (const s of tt) lab(`$${s}$`, X(s), Y(0) + fh * 1.25, 'c', fh, MUTEDC);

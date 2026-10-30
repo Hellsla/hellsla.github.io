@@ -1041,7 +1041,7 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "komponentit": "Näytä painon komponentit",
-      "selite": "Punaiset nuolet ovat voimia ja katkoviivat komponentteja; kuvaajan rengas: laatikko liukuu.",
+      "selite": "Punaiset nuolet ovat voimia ja katkoviivat komponentteja; kuvaajan rengas: laatikko liukuu. Nuolten mittakaava riippuu massasta.",
       "tilannekuva": "$\\text{Tilannekuva}$",
       "voimakuvio": "$\\text{Voimakuvio}$",
       "lukemat": "$G = {{G}}\\,\\text{N}$, $G_x = {{Gx}}\\,\\text{N}$, $N = {{N}}\\,\\text{N}$<br>$F_\\mu = {{F}}\\,\\text{N}$, $\\mu_0 N = {{Fm}}\\,\\text{N}$<br>{{tila}}, <strong>$a = {{a}}\\,\\text{m/s}^2$</strong>, $v = {{v}}\\,\\text{m/s}$",

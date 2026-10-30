@@ -81,10 +81,10 @@ Liukukitkasta ilmanvastus eroaa siinä, että se riippuu nopeudesta. Ilman suhte
 ### Pudotuksen kolme vaihetta
 Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta), joten heti hypyn jälkeen ilmanvastusta ei vielä ole. Ainoa voima on paino, ja hyppääjä kiihtyy alaspäin putoamiskiihtyvyydellä $g$. Nopeuden kasvaessa ilmanvastus kasvaa. Paino pysyy samana, joten kokonaisvoima pienenee, ja samalla pienenee kiihtyvyys: nopeus kasvaa yhä hitaammin. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla, kiihtyvyys on nolla ja nopeus pysyy vakiona, kuten Newtonin ensimmäinen laki sanoo. Tätä nopeutta sanotaan **rajanopeudeksi**.
 
-<svg data-fig="pudotus" viewBox="0 0 600 430" role="img" aria-label="Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: hyppääjä lähtee ilman suhteen levosta, nopeus on nolla, voimakuviossa on vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla." style="max-width:100%;font-size:24px">
+<svg data-fig="pudotus" viewBox="0 0 600 450" role="img" aria-label="Kolme vaihetta laskuvarjohyppääjän pudotuksesta vatsa alaspäin, mittakaavassa. Ylhäällä tilannekuvat ja alhaalla voimakuviot, joissa hyppääjä on suorakulmio. Vasemmalla heti hypyn jälkeen: hyppääjä lähtee ilman suhteen levosta, nopeus on nolla, voimakuviossa on vain paino G keskipisteestä alas, ja oranssi kiihtyvyysnuoli osoittaa alas. Keskellä hyppääjä kiihtyy: sininen nopeusnuoli alas, paino G alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, puolet painon pituudesta, ja kiihtyvyysnuoli on lyhyempi. Oikealla rajanopeus: pitkä nopeusnuoli alas, ilmanvastus yhtä pitkä kuin paino, ja kiihtyvyys on nolla." style="max-width:100%;font-size:30px">
   <line x1="14" y1="168" x2="586" y2="168" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="200" y1="36" x2="200" y2="380" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
-  <line x1="400" y1="36" x2="400" y2="380" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
+  <line x1="200" y1="36" x2="200" y2="420" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
+  <line x1="400" y1="36" x2="400" y2="420" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
   <foreignObject x="58.5" y="7.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{alussa}$</div></foreignObject>
   <g transform="translate(70,104) scale(0.95)">
   <path d="M-22,-2 Q-34,-16 -40,-34" fill="none" stroke="#2b8a3e" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
@@ -98,15 +98,15 @@ Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta),
   <circle cx="36" cy="2" r="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   <path d="M27,-3 A10,10 0 0 1 46,0 Z" fill="#1f2933" stroke-linejoin="round"/>
   </g>
-  <foreignObject x="132" y="55.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$v = 0$</div></foreignObject>
-  <rect x="60" y="233" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="92" y1="252" x2="92" y2="313.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M92,330.5 L84,312.5 L100,312.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="97.5" y="314" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="168" y1="236" x2="168" y2="296" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M161.5,285 L168,298 L174.5,285" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="151.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <foreignObject x="71" y="385.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_\text{v} = 0$</div></foreignObject>
+  <foreignObject x="72.5" y="130" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#6b7480">$v = 0$</div></foreignObject>
+  <rect x="60" y="243" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="92" y1="262" x2="92" y2="339" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M92,356 L84,338 L100,338 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="94.5" y="336" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="168" y1="246" x2="168" y2="306" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M161.5,295 L168,308 L174.5,295" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="148.5" y="308" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <foreignObject x="65" y="406" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$F_\text{v} = 0$</div></foreignObject>
   <foreignObject x="252.5" y="7.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kiihtyy}$</div></foreignObject>
   <g transform="translate(270,104) scale(0.95)">
   <path d="M-22,-2 Q-34,-16 -40,-34" fill="none" stroke="#2b8a3e" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
@@ -122,18 +122,18 @@ Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta),
   </g>
   <line x1="350" y1="70" x2="350" y2="114" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M343.5,103 L350,116 L356.5,103" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="368" y="78.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="260" y="233" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="292" y1="252" x2="292" y2="313.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M292,330.5 L284,312.5 L300,312.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="297.5" y="314" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="276" y1="310" x2="276" y2="288" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M276,271 L284,289 L268,289 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="223.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <line x1="368" y1="236" x2="368" y2="276" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M361.5,265 L368,278 L374.5,265" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="351.5" y="281.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <foreignObject x="271" y="385.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_\text{v} < G$</div></foreignObject>
+  <foreignObject x="368" y="75" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <rect x="260" y="243" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="292" y1="262" x2="292" y2="339" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M292,356 L284,338 L300,338 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="294.5" y="336" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="276" y1="328" x2="276" y2="298" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M276,281 L284,299 L268,299 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="218.5" y="310" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+  <line x1="368" y1="246" x2="368" y2="286" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M361.5,275 L368,288 L374.5,275" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="348.5" y="288" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <foreignObject x="265" y="406" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$F_\text{v} < G$</div></foreignObject>
   <foreignObject x="433.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{rajanopeus}$</div></foreignObject>
   <g transform="translate(470,104) scale(0.95)">
   <path d="M-22,-2 Q-34,-16 -40,-34" fill="none" stroke="#2b8a3e" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
@@ -149,16 +149,16 @@ Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta),
   </g>
   <line x1="550" y1="70" x2="550" y2="148" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M543.5,137 L550,150 L556.5,137" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="568" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="460" y="233" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="492" y1="252" x2="492" y2="313.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M492,330.5 L484,312.5 L500,312.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="497.5" y="314" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="476" y1="349.5" x2="476" y2="288" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M476,271 L484,289 L468,289 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="423.5" y="335" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <foreignObject x="545.5" y="245.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$a = 0$</div></foreignObject>
-  <foreignObject x="471" y="385.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_\text{v} = G$</div></foreignObject>
+  <foreignObject x="568" y="92" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <rect x="460" y="243" width="64" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="492" y1="262" x2="492" y2="339" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M492,356 L484,338 L500,338 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="494.5" y="336" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="476" y1="375" x2="476" y2="298" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M476,281 L484,299 L468,299 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="418.5" y="357" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+  <foreignObject x="522.5" y="196" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#6b7480">$a = 0$</div></foreignObject>
+  <foreignObject x="465" y="406" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$F_\text{v} = G$</div></foreignObject>
 </svg>
 
 ### Rajanopeus riippuu massasta ja muodosta
@@ -278,11 +278,11 @@ Kuten aina, ensin valitaan kappale, piirretään sen voimakuvio ja valitaan posi
 ### Kun laskuvarjo aukeaa
 Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon auetessa hyppääjä liikkuu vielä rajanopeudella alaspäin, joten ilmanvastus on hetken monta kertaa painon suuruinen. Kokonaisvoima ja kiihtyvyys osoittavat ylös, vaikka hyppääjä liikkuu alas: hyppääjä hidastuu mutta ei nouse. Nopeuden pienentyessä ilmanvastus pienenee, kunnes se uudella, pienellä rajanopeudella on taas yhtä suuri kuin paino. Kuinka monta kertaa painon suuruinen ilmanvastus on, riippuu varjosta ja hetkestä: kuviossa se on kolminkertainen, esimerkissä lähes kolminkertainen ja simulaation mallissa suurimmillaan noin viisinkertainen. Kokonaisvoiman suunta voi siis erota liikkeen suunnasta. Se kertoo aina kiihtyvyyden suunnan, ei nopeuden.
 
-<svg data-fig="varjo" viewBox="0 0 600 470" role="img" aria-label="Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla putoaminen ennen varjon avaamista rajanopeudella: pitkä sininen nopeusnuoli alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla." style="max-width:100%;font-size:24px">
+<svg data-fig="varjo" viewBox="0 0 600 500" role="img" aria-label="Kolme vaihetta, kun laskuvarjo avataan, voimat mittakaavassa. Ylhäällä tilannekuvat ja alhaalla hyppääjän voimakuviot, joissa hyppääjä varjoineen on suorakulmio. Vasemmalla putoaminen ennen varjon avaamista rajanopeudella: pitkä sininen nopeusnuoli alas, paino G keskipisteestä alas ja ilmanvastus F_v alhaalta ylös alapintaan asti, yhtä pitkinä, kiihtyvyys nolla. Keskellä varjo aukeaa: nopeusnuoli osoittaa yhä alas, ilmanvastus lähtee yläpinnasta ylös ja on kolme kertaa painon pituinen. Erillään vihreä ontto kokonaisvoiman nuoli ylös ja oranssi kiihtyvyysnuoli ylös. Oikealla varjo on auki: lyhyt nopeusnuoli alas, ilmanvastus yläpinnasta ylös yhtä pitkänä kuin paino, kiihtyvyys nolla." style="max-width:100%;font-size:30px">
   <defs><linearGradient id="fy414-ch1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy414-ch2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
   <line x1="14" y1="200" x2="586" y2="200" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="200" y1="36" x2="200" y2="450" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
-  <line x1="400" y1="36" x2="400" y2="450" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
+  <line x1="200" y1="36" x2="200" y2="480" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
+  <line x1="400" y1="36" x2="400" y2="480" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
   <foreignObject x="33.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{rajanopeus}$</div></foreignObject>
   <g transform="translate(82,120) scale(0.95)">
   <path d="M-22,-2 Q-34,-16 -40,-34" fill="none" stroke="#2b8a3e" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
@@ -298,15 +298,15 @@ Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon au
   </g>
   <line x1="150" y1="70" x2="150" y2="160" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M143.5,149 L150,162 L156.5,149" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="168" y="101.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="56" y="331" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="86" y1="350" x2="86" y2="372" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M86,389 L78,371 L94,371 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="91.5" y="372.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="70" y1="408" x2="70" y2="386" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M70,369 L78,387 L62,387 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="17.5" y="393.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <foreignObject x="137.5" y="335.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$a = 0$</div></foreignObject>
+  <foreignObject x="168" y="98" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <rect x="56" y="353" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="86" y1="372" x2="86" y2="402" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M86,419 L78,401 L94,401 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="88.5" y="399" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="70" y1="438" x2="70" y2="408" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M70,391 L78,409 L62,409 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="12.5" y="420" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+  <foreignObject x="132.5" y="354" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#6b7480">$a = 0$</div></foreignObject>
   <foreignObject x="227.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{varjo aukeaa}$</div></foreignObject>
   <line x1="274" y1="136" x2="260.5" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="279" y1="136" x2="273.5" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -330,19 +330,19 @@ Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon au
   </g>
   <line x1="350" y1="70" x2="350" y2="138" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M343.5,127 L350,140 L356.5,127" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="368" y="90.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="256" y="331" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="286" y1="350" x2="286" y2="372" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M286,389 L278,371 L294,371 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="291.5" y="372.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="270" y1="331" x2="270" y2="230.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M270,213.5 L278,231.5 L262,231.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="217.5" y="211" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <line x1="346" y1="300" x2="346" y2="246" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M352.5,257 L346,244 L339.5,257" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="349.5" y="233.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <path d="M383,444 L383,387.5 L391,387.5 L378,365.5 L365,387.5 L373,387.5 L373,444 Z" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="355.5" y="331" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\Sigma\overline{F}$</div></foreignObject>
+  <foreignObject x="368" y="87" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <rect x="256" y="353" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="286" y1="372" x2="286" y2="402" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M286,419 L278,401 L294,401 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="288.5" y="399" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="270" y1="353" x2="270" y2="228.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M270,211.5 L278,229.5 L262,229.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="212.5" y="205.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+  <line x1="346" y1="322" x2="346" y2="268" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M352.5,279 L346,266 L339.5,279" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="346.5" y="252" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <path d="M383,470 L383,398 L391,398 L378,376 L365,398 L373,398 L373,470 Z" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="350.5" y="338" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#2b8a3e">$\Sigma\overline{F}$</div></foreignObject>
   <foreignObject x="408.5" y="7.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{uusi rajanopeus}$</div></foreignObject>
   <line x1="474" y1="136" x2="440" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="479" y1="136" x2="465.5" y2="89.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -366,15 +366,15 @@ Laskuvarjon suuri pinta-ala kasvattaa ilmanvastuksen moninkertaiseksi. Varjon au
   </g>
   <line x1="550" y1="70" x2="550" y2="84" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M543.5,73 L550,86 L556.5,73" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="568" y="63.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="456" y="331" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="486" y1="350" x2="486" y2="372" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M486,389 L478,371 L494,371 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="491.5" y="372.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="470" y1="331" x2="470" y2="309" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M470,292 L478,310 L462,310 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="417.5" y="289.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <foreignObject x="537.5" y="335.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$a = 0$</div></foreignObject>
+  <foreignObject x="568" y="60" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <rect x="456" y="353" width="60" height="38" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="486" y1="372" x2="486" y2="402" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M486,419 L478,401 L494,401 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="488.5" y="399" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="470" y1="353" x2="470" y2="323" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M470,306 L478,324 L462,324 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="412.5" y="300" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
+  <foreignObject x="532.5" y="354" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#6b7480">$a = 0$</div></foreignObject>
 </svg>
 
 ## Esimerkki
