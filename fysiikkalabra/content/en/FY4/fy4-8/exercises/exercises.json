@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-8-L1-01",
+      "level": 1,
+      "text": "A stone is dropped from rest from a bridge $12.0\\,\\text{m}$ above the water. Air resistance is ignored. At what speed does the stone hit the water?",
+      "answer": 15.344054,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-02",
+      "level": 1,
+      "text": "A skateboarder moves at the bottom of a ramp at a speed of $6.0\\,\\text{m/s}$ and rises up the other side of the ramp without pushing. Friction and air resistance are ignored. How high above the bottom of the ramp does the skateboarder rise?",
+      "answer": 1.834862,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-03",
+      "level": 1,
+      "text": "A box is pushed a distance of $4.0\\,\\text{m}$ on a horizontal floor. The frictional force of the floor on the box is $35\\,\\text{N}$. How much work does the frictional force do on the box? Give the work with its sign.",
+      "answer": -140.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-04",
+      "level": 1,
+      "text": "A sprinter of mass $65\\,\\text{kg}$ accelerates from rest at the start to a speed of $8.0\\,\\text{m/s}$. How much work does the net force on the sprinter do during the acceleration? Answer in kilojoules.",
+      "answer": 2.08,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-05",
+      "level": 1,
+      "text": "The mechanical energy of a skier is $12.4\\,\\text{kJ}$ at the top of a hill and $9.8\\,\\text{kJ}$ at the bottom. How much work do friction and air resistance together do on the skier during the descent? Give the work with its sign.",
+      "answer": -2.6,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-8-L2-01",
+      "level": 2,
+      "text": "A ball is thrown straight down from a balcony at a height of $15.0\\,\\text{m}$ at a speed of $8.00\\,\\text{m/s}$. Air resistance is ignored. At what speed does the ball hit the ground?",
+      "answer": 18.928814,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-02",
+      "level": 2,
+      "text": "A car of mass $1200\\,\\text{kg}$ drives on a horizontal road at a speed of $72\\,\\text{km/h}$. The driver brakes, and the frictional force of the road on the tyres is $6.0\\,\\text{kN}$ during the braking. Air resistance is ignored. How long is the braking distance of the car?",
+      "answer": 40.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-03",
+      "level": 2,
+      "text": "A crane lifts a $250\\,\\text{kg}$ concrete load $18.0\\,\\text{m}$ upward at a constant speed. How much work does the rope of the crane do on the load? Answer in kilojoules.",
+      "answer": 44.145,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-04",
+      "level": 2,
+      "text": "An ice hockey player hits a puck of mass $0.16\\,\\text{kg}$ that is at rest. The stick pushes the puck in the direction of motion with an average force of $120\\,\\text{N}$ over a distance of $0.30\\,\\text{m}$. The friction of the ice is ignored. What is the speed of the puck when it leaves the stick?",
+      "answer": 21.213203,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-8-L3-01",
+      "level": 3,
+      "text": "A cyclist coasts down a hill without pedalling or braking. The combined mass of the cyclist and the bicycle is $80\\,\\text{kg}$. The speed is $4.0\\,\\text{m/s}$ at the top of the hill and $13.0\\,\\text{m/s}$ at the bottom. The height of the hill is $12.0\\,\\text{m}$, and the road down the hill is $150\\,\\text{m}$ long. What is the average resistive force that slows the cyclist, when air resistance and rolling resistance are added together?",
+      "answer": 21.984,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L3-02",
+      "level": 3,
+      "text": "A roller coaster car with a mass of $500\\,\\text{kg}$ including passengers goes over the top of a $35.0\\,\\text{m}$ high hill at a speed of $2.0\\,\\text{m/s}$. The track to the top of the next hill is $120\\,\\text{m}$ long, and an average resistive force of $150\\,\\text{N}$ acts on the car all the way. What is the greatest height the next hill may have so that the car reaches its top?",
+      "answer": 31.534149,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L3-03",
+      "level": 3,
+      "text": "A stone is thrown at the seaside from a cliff $20.0\\,\\text{m}$ high at a speed of $12.0\\,\\text{m/s}$ obliquely upward at an angle of $35^\\circ$ to the horizontal. Air resistance is ignored. At what speed does the stone hit the water?",
+      "answer": 23.160311,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

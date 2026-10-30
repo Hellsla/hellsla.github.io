@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "contribution": "Conservation of mechanical energy and the work–energy principle of mechanics are discovered from measurements in a roller coaster simulation: without a resistive force the speed at the bottom of the valley depends neither on the mass nor on the shape of the track, and with a resistive force the mechanical energy decreases by exactly the work $-F s$ done by the resistive force. The work done by the net force is derived as the change in kinetic energy, and weight and friction are separated into a conservative and a non-conservative force.",
+  "learn": [
+    "explain when mechanical energy is conserved and what it turns into when friction or air resistance does work.",
+    "calculate a speed or a height using the law of conservation of mechanical energy.",
+    "calculate the work done by forces other than weight using the work–energy principle."
+  ],
+  "prior": [
+    "Mechanical energy is the sum of kinetic energy and potential energy, $E_\\text{k} = \\tfrac{1}{2} mv^2$ and $E_\\text{p} = mgh$ (chapter *Kinetic energy, potential energy and mechanical energy*)",
+    "A force does work when an object moves in the direction of the force, and work transfers energy (chapter *Work and energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A roller coaster train leaves the station, and a chain lift slowly pulls it to the top of the first hill, at a height of $40\\,\\text{m}$. After that nothing pulls the train any more. The train plunges into the valley, speeds over the next hill and the one after that, and finally rolls to the brakes at the station. In the drawings of the track each hill is lower than the one before.",
+      "question": "Where does the train get its speed without an engine, and why can no later hill be as high as the first?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: kinetic energy",
+      "optional": true,
+      "prompt": "The speed of a roller coaster car doubles in the valley. How does its kinetic energy $E_\\text{k} = \\tfrac{1}{2} mv^2$ change?",
+      "choices": [
+        {
+          "text": "The kinetic energy becomes four times as large.",
+          "correct": true,
+          "feedback": "Correct. Kinetic energy is proportional to the square of the speed, so doubling the speed gives $2^2 = 4$ times as much kinetic energy (chapter *Kinetic energy, potential energy and mechanical energy*)."
+        },
+        {
+          "text": "The kinetic energy doubles.",
+          "feedback": "Kinetic energy is not directly proportional to the speed but to its square: $\\tfrac{1}{2} m (2v)^2 = 4 \\cdot \\tfrac{1}{2} mv^2$. Doubling the speed gives four times the kinetic energy."
+        },
+        {
+          "text": "The kinetic energy does not change, because the mass of the car stays the same.",
+          "feedback": "Kinetic energy depends on both the mass and the speed. When the speed doubles, the kinetic energy becomes four times as large even though the mass does not change."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: empty or full car",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A car starts from rest at a height of $10\\,\\text{m}$ and rolls to the bottom of the valley. There is no friction or air resistance. First the car is empty ($400\\,\\text{kg}$), then full of passengers ($800\\,\\text{kg}$). How does the speed of the car at the bottom of the valley change when the mass doubles?",
+      "choices": [
+        {
+          "text": "The speed stays the same.",
+          "correct": true,
+          "feedback": "Correct. With the values of the model the speed at the bottom is $14.0\\,\\text{m/s}$ for every mass. The heavier car has twice the potential energy at the start, and it needs twice the kinetic energy to get it moving. The mass cancels."
+        },
+        {
+          "text": "The full car is faster, because the greater weight pulls it harder.",
+          "feedback": "The weight is twice as large, but so is the mass whose speed the weight changes. In terms of energy: the potential energy of the full car is twice as large, but the kinetic energy at the same speed is also twice as large. With the values of the model both cars travel at $14.0\\,\\text{m/s}$ at the bottom."
+        },
+        {
+          "text": "The empty car is faster, because a light object is easier to get moving.",
+          "feedback": "A light car is easier to accelerate, but a smaller weight also pulls it. The light car has less potential energy at the start, and that is enough for the same speed. With the values of the model the speed at the bottom is $14.0\\,\\text{m/s}$ regardless of the mass."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: how much energy the resistive force takes",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "A car starts from rest at a height of $10\\,\\text{m}$, and a resistive force $F_\\text{res}$ of constant magnitude opposes it all the way. The car does not rise to the starting height on the opposite slope. By how much has the mechanical energy of the car decreased when the car stops?",
+      "choices": [
+        {
+          "text": "By the product $F_\\text{res}\\,s$ of the resistive force and the whole distance travelled.",
+          "correct": true,
+          "feedback": "Correct. With the values of the model, a resistive force of $200\\,\\text{N}$ and a distance of $45.9\\,\\text{m}$ give the work $-9.19\\,\\text{kJ}$, and the mechanical energy decreases by exactly $9.19\\,\\text{kJ}$. The car rises only to a height of $7.66\\,\\text{m}$."
+        },
+        {
+          "text": "By the product $F_\\text{res}\\,h_1$ of the resistive force and the starting height.",
+          "feedback": "The resistive force acts along every metre of the track, not only in the vertical direction. With the values of the model $F_\\text{res}\\,h_1 = 200\\,\\text{N} \\cdot 10\\,\\text{m} = 2.0\\,\\text{kJ}$, but the mechanical energy decreases by $9.19\\,\\text{kJ}$, because the car travels $45.9\\,\\text{m}$ along the track."
+        },
+        {
+          "text": "Not at all, because energy is always conserved.",
+          "feedback": "The total energy is conserved, but the mechanical energy is not conserved when a resistive force does work. With the values of the model the mechanical energy of the car decreases from $39.2\\,\\text{kJ}$ to $30.1\\,\\text{kJ}$, and the difference turns into internal energy of the wheels, the rails and the air."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: steep or curved track",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-3",
+        "min": 2
+      },
+      "prompt": "A car starts from rest at a height of $10\\,\\text{m}$ on two different tracks: a curved slope and a straight $45^\\circ$ slope. There is no friction or air resistance. On which track is the car faster at the bottom of the valley?",
+      "choices": [
+        {
+          "text": "The speed at the bottom is the same on both tracks.",
+          "correct": true,
+          "feedback": "Correct. With the values of the model the speed at the bottom is $14.0\\,\\text{m/s}$ on both tracks. When only the weight does work, the speed depends only on the drop in height, because the work done by the weight is $mgh$ whatever the path."
+        },
+        {
+          "text": "On the straight track, because a steep slope accelerates more.",
+          "feedback": "A steep slope accelerates more but over a shorter distance. The work done by the weight is $mgh$ whatever the path, so the kinetic energy at the bottom is the same. With the values of the model the car travels at $14.0\\,\\text{m/s}$ at the bottom on both tracks."
+        },
+        {
+          "text": "On the curved track, because its slope is longer and the car accelerates for longer.",
+          "feedback": "A longer slope is also gentler, so the acceleration is smaller. The work done by the weight depends only on the difference in height, and with the values of the model the speed at the bottom is $14.0\\,\\text{m/s}$ on both tracks."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a roller coaster car rolls through a valley. On the left is a snapshot with measuring posts, on the right the energies of the car as bars on the same scale.",
+      "howto": "Choose the starting height $h_1$, the resistive force $F_\\text{res}$, the mass of the car and the shape of the track. Press *Start*. The car starts from rest and moves until it stops for the first time. Then the readings show the speed in the middle of the bottom of the valley $v_\\text{bottom}$ and the height $h_2$ the car rose to. *Reset* returns the car to the starting point. *Speed* slows down or speeds up the motion without changing the readings.",
+      "model": "The values are model values calculated by the simulation. The car is a point-like object that stays on the track. The bottom of the valley is $6\\,\\text{m}$ long and horizontal, and the slopes are either arcs with a radius of $21\\,\\text{m}$ or straight $45^\\circ$ slopes. The joint between a straight slope and the bottom is assumed to be rounded so gently that the speed of the car does not change there. The resistive force $F_\\text{res}$ stands for rolling resistance and air resistance together: it is constant in magnitude and always points against the motion. The normal force of the track is perpendicular to the motion, so it does no work.",
+      "calc": "The motion of the car is calculated from Newton's second law along the track in small time steps. The energies are calculated from the state of the car: $E_\\text{p} = mgh$ from the height $h$ above the bottom of the valley and $E_\\text{k} = \\tfrac{1}{2} mv^2$ from the speed, with $g = 9.81\\,\\text{m/s}^2$. $E_\\text{mech} = E_\\text{k} + E_\\text{p}$, and $\\Delta E_\\text{mech}$ is its change from the starting moment. The work done by the resistive force is calculated from the definition $W_\\text{other} = -F_\\text{res}\\,s$, where $s$ is the distance travelled along the track. In the bars $W_\\text{other}$ is negative, so it is drawn downward from the zero level."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: mass of the car",
+      "intro": "Test the first prediction. The starting state chooses a starting height of $10\\,\\text{m}$ and a curved track without a resistive force. Change only the mass of the car. Press *Start* each time and record a measurement when the car has stopped.",
+      "initial": {
+        "h1": 10,
+        "F": 0,
+        "rata": "kaari",
+        "m": "400"
+      },
+      "names": {
+        "h1": "starting height h_1",
+        "F": "resistive force F_res",
+        "m": "mass m",
+        "rata": "rata"
+      },
+      "units": {
+        "h1": "m",
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "rata": {
+          "kaari": "kaareva"
+        },
+        "m": {
+          "400": "$400\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "h1",
+        "F",
+        "rata"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "vpohja",
+          "label": "$v_\\text{bottom}$ (m/s)"
+        },
+        {
+          "key": "h2",
+          "label": "$h_2$ (m)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: resistive force",
+      "intro": "Test the second prediction. The starting state chooses a starting height of $10\\,\\text{m}$, a mass of $400\\,\\text{kg}$ and a curved track. Change only the resistive force $F_\\text{res}$, for example to the values $0$, $100$ and $200\\,\\text{N}$. Press *Start* each time and record a measurement when the car has stopped. For each row calculate the product $F_\\text{res}\\,s$ and compare it with the change in mechanical energy.",
+      "initial": {
+        "h1": 10,
+        "m": "400",
+        "rata": "kaari",
+        "F": 0
+      },
+      "names": {
+        "h1": "starting height h_1",
+        "F": "resistive force F_res",
+        "m": "mass m",
+        "rata": "rata"
+      },
+      "units": {
+        "h1": "m",
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "rata": {
+          "kaari": "kaareva"
+        },
+        "m": {
+          "400": "$400\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "h1",
+        "m",
+        "rata"
+      ],
+      "vary": "F",
+      "measure": [
+        {
+          "key": "s",
+          "label": "$s$ (m)"
+        },
+        {
+          "key": "h2",
+          "label": "$h_2$ (m)"
+        },
+        {
+          "key": "dEm",
+          "label": "$\\Delta E_\\text{mech}$ (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Compare the change in mechanical energy $\\Delta E_\\text{mech}$ in the table with the product $F_\\text{res}\\,s$. What do you notice?",
+        "choices": [
+          {
+            "text": "$\\Delta E_\\text{mech} = -F_\\text{res}\\,s$: the mechanical energy decreases by the work done by the resistive force.",
+            "correct": true,
+            "feedback": "Correct. For example, with the values of the model $200\\,\\text{N} \\cdot 45.9\\,\\text{m} = 9.19\\,\\text{kJ}$, and $\\Delta E_\\text{mech} = -9.19\\,\\text{kJ}$. This is the work–energy principle: $\\Delta E_\\text{mech} = W_\\text{other}$."
+          },
+          {
+            "text": "$\\Delta E_\\text{mech}$ equals $-F_\\text{res}\\,h_1$.",
+            "feedback": "Calculate from the table: $200\\,\\text{N} \\cdot 10\\,\\text{m}$ is only $2.0\\,\\text{kJ}$, but with the values of the model the energy decreases by $9.19\\,\\text{kJ}$. The resistive force does work along the whole distance $s$ of the track, not only along the height."
+          },
+          {
+            "text": "The mechanical energy decreases, but the change does not depend on the resistive force.",
+            "feedback": "In the table the change grows with the resistive force: with the values of the model $-4.74\\,\\text{kJ}$ for a force of $100\\,\\text{N}$ and $-9.19\\,\\text{kJ}$ for $200\\,\\text{N}$. On every row the change is $-F_\\text{res}\\,s$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: shape of the track",
+      "optional": true,
+      "intro": "Test the third prediction. The starting state chooses a starting height of $10\\,\\text{m}$, a mass of $400\\,\\text{kg}$ and a resistive force of $0\\,\\text{N}$. Change only the shape of the track. Press *Start* and record a measurement on both tracks.",
+      "initial": {
+        "h1": 10,
+        "m": "400",
+        "F": 0,
+        "rata": "kaari"
+      },
+      "names": {
+        "h1": "starting height h_1",
+        "F": "resistive force F_res",
+        "m": "mass m",
+        "rata": "rata"
+      },
+      "units": {
+        "h1": "m",
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "rata": {
+          "kaari": "kaareva",
+          "suora": "suora"
+        },
+        "m": {
+          "400": "$400\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "h1",
+        "m",
+        "F"
+      ],
+      "vary": "rata",
+      "measure": [
+        {
+          "key": "vpohja",
+          "label": "$v_\\text{bottom}$ (m/s)"
+        },
+        {
+          "key": "s",
+          "label": "$s$ (m)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Use your measurements to explain when the mechanical energy of the car is conserved and by how much it decreases when a resistive force acts. Then explain why an empty and a full car are equally fast at the bottom of the valley when there is no resistive force.",
+      "criteria": [
+        "The answer says that without a resistive force the car rose to the starting height, so the mechanical energy was conserved.",
+        "The answer says that with a resistive force the mechanical energy decreased by the product $F_\\text{res}\\,s$, and uses the student's own row of measurements.",
+        "The answer explains why the mass does not matter by saying that both the potential energy and the kinetic energy are proportional to the mass.",
+        "The answer says that the lost mechanical energy turned into internal energy and did not disappear."
+      ],
+      "model": "In experiment 1 there was no resistive force. With the values of the model the speed at the bottom was $14.0\\,\\text{m/s}$ for both the $400\\,\\text{kg}$ and the $800\\,\\text{kg}$ car, and the car rose back to a height of $10.0\\,\\text{m}$: the mechanical energy was conserved. The mass does not matter, because both sides of the equation $mgh = \\tfrac{1}{2} mv^2$ are proportional to the mass, so $v = \\sqrt{2gh}$. In experiment 2 a resistive force of $200\\,\\text{N}$ acted over a distance of $45.9\\,\\text{m}$, and the mechanical energy decreased by $9.19\\,\\text{kJ}$, which is exactly $200\\,\\text{N} \\cdot 45.9\\,\\text{m}$. The car rose only to a height of $7.66\\,\\text{m}$. So the mechanical energy decreases by the work done by the resistive force, $\\Delta E_\\text{mech} = -F_\\text{res}\\,s$. The lost mechanical energy turned into internal energy of the wheels, the rails and the air."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the readings of the simulation. What surprised you most? Write in your own words what decides the speed of the car at the bottom of the valley and what decides how much mechanical energy turns into internal energy.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A box of mass $5.0\\,\\text{kg}$ slides from rest down a ramp $1.5\\,\\text{m}$ high. Friction does the work $-30\\,\\text{J}$ on the box. A student calculates the speed of the box at the bottom of the ramp like this: $E_\\text{k} = mgh + 30\\,\\text{J} = 73.6\\,\\text{J} + 30\\,\\text{J} = 103.6\\,\\text{J}$, so $v = \\sqrt{\\tfrac{2E_\\text{k}}{m}} \\approx 6.4\\,\\text{m/s}$. Where is the error?",
+      "choices": [
+        {
+          "text": "The work done by friction is negative, so it decreases the kinetic energy: $E_\\text{k} = 73.6\\,\\text{J} - 30\\,\\text{J}$.",
+          "correct": true,
+          "feedback": "Correct. By the work–energy principle $mgh + W_\\text{other} = E_\\text{k}$, and $W_\\text{other} = -30\\,\\text{J}$. The kinetic energy is $43.6\\,\\text{J}$ and the speed about $4.2\\,\\text{m/s}$. The student's result $6.4\\,\\text{m/s}$ is greater than the frictionless case $5.4\\,\\text{m/s}$, which is impossible."
+        },
+        {
+          "text": "The potential energy must be calculated from the length of the ramp, not from its height.",
+          "feedback": "The work done by the weight and the change in potential energy depend only on the difference in height, $mgh = 73.6\\,\\text{J}$. The error is in the sign of the work done by friction: negative work decreases the kinetic energy."
+        },
+        {
+          "text": "The speed cannot be calculated from the kinetic energy when friction acts.",
+          "feedback": "The kinetic energy $\\tfrac{1}{2} mv^2$ always tells the speed, also with friction. Friction affects how much kinetic energy there is. The error is in the sign of the work done by friction."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A child sits on a swing at a playground. The swing is pulled back so that the seat is $1.20\\,\\text{m}$ higher than at the lowest point of the swing, and it is released from rest. Air resistance and the friction at the attachment of the chains are ignored. What is the speed of the seat at the lowest point of the swing? Answer in $\\text{m/s}$.",
+      "answer": 4.852,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Which forces act on the seat and the child, and which of them do work? The tension force of the chains is perpendicular to the motion at every moment.",
+        "Only the weight does work, so the mechanical energy is conserved: $mgh = \\tfrac{1}{2} mv^2$. Choose the zero level at the lowest point.",
+        "The mass cancels: $v = \\sqrt{2gh} = \\sqrt{2 \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 1.20\\,\\text{m}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 23.544,
+          "feedback": "You calculated $2gh$, which is the square of the speed in the unit $\\text{m}^2/\\text{s}^2$. Take the square root as well: $v = \\sqrt{2gh}$."
+        },
+        {
+          "value": 3.431,
+          "feedback": "You calculated $\\sqrt{gh}$. From the equation $mgh = \\tfrac{1}{2} mv^2$ you get $v^2 = 2gh$, so the factor $2$ stays under the square root."
+        },
+        {
+          "value": 11.772,
+          "feedback": "You calculated $gh$. From the equation $mgh = \\tfrac{1}{2} mv^2$ you get $v^2 = 2gh$ and from that $v = \\sqrt{2gh}$."
+        }
+      ],
+      "solution": "**Given:** difference in height $h = 1.20\\,\\text{m}$, initial speed $v_1 = 0$, $g = 9.81\\,\\text{m/s}^2$; air resistance and friction are ignored\n\n**Find:** the speed $v$ at the lowest point in $\\text{m/s}$\n\n**Principle:** The weight and the tension force of the chains act on the seat and the child. The seat moves along a circular arc, and the force of the chains is perpendicular to the motion at every moment, so it does no work. Only the weight does work, so the mechanical energy is conserved. The zero level is chosen at the lowest point.\n\n**Formula:** $mgh = \\tfrac{1}{2} mv^2$, so $v = \\sqrt{2gh}$\n\n**Conversions:** The height is in metres, so no conversions are needed. The mass is not needed, because it cancels.\n\n**Substitution:** $v = \\sqrt{2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.20\\,\\text{m}} = \\sqrt{23.544\\,\\text{m}^2/\\text{s}^2} = 4.852\\,\\text{m/s}$\n\n**Answer:** $4.85\\,\\text{m/s}$, three significant figures like the height $1.20\\,\\text{m}$.\n\n**Reasonableness:** The speed is about $17\\,\\text{km/h}$, which suits brisk swinging. The same speed would be reached by dropping an object straight down from a height of $1.20\\,\\text{m}$: the curved path of the swing does not change the speed, because the work done by the weight depends only on the difference in height."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. First choose the initial and final situations and the zero level. Then think whether any force other than the weight does work: if not, use the conservation law, otherwise the work–energy principle. Level 1 is enough for the basic skills; levels 2 and 3 are more advanced."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Three identical balls are thrown from the same balcony with the same speed: one straight up, one horizontally and one straight down. Air resistance is ignored. Which ball has the greatest speed when it hits the ground?",
+      "choices": [
+        {
+          "text": "All the balls have the same speed at the ground.",
+          "correct": true,
+          "feedback": "Correct. All the balls have the same kinetic energy and the same potential energy at the start. Only the weight does work, so at the ground they have the same kinetic energy and thus the same speed. Energy does not depend on the direction of the velocity."
+        },
+        {
+          "text": "The ball thrown down, because it gets speed in the direction of the weight from the start.",
+          "feedback": "The ball thrown down reaches the ground first, but not at the greatest speed. Kinetic energy does not depend on the direction of the velocity, so all the balls have the same mechanical energy at the start and the same speed at the ground."
+        },
+        {
+          "text": "The ball thrown up, because it falls from higher.",
+          "feedback": "The ball thrown up rises higher, but its kinetic energy first turns into potential energy and back. At the level of the balcony it moves downward with the same speed at which it was thrown. All the balls have the same speed at the ground."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculating",
+      "prompt": "A roller coaster car starts from rest at the top of a hill at a height of $18.0\\,\\text{m}$ and goes over the top of the next hill, which is at a height of $7.0\\,\\text{m}$. Friction and air resistance are ignored. What is the speed of the car at the top of the second hill? Answer in $\\text{m/s}$.",
+      "answer": 14.69,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Does any force other than the weight do work? If not, the mechanical energy is conserved.",
+        "Choose the zero level at the ground: $mgh_1 = \\tfrac{1}{2} mv^2 + mgh_2$.",
+        "The mass cancels: $v = \\sqrt{2g(h_1 - h_2)}$, and the difference in height is $11.0\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 18.79,
+          "feedback": "You calculated the speed from the whole height $18.0\\,\\text{m}$. At the top of the second hill the car still has potential energy at the height $7.0\\,\\text{m}$, so only the difference in height $11.0\\,\\text{m}$ has turned into kinetic energy."
+        },
+        {
+          "value": 11.72,
+          "feedback": "You calculated the speed from the height of the second hill, $7.0\\,\\text{m}$. The kinetic energy corresponds to the drop from the starting height to the height of the second hill, $18.0\\,\\text{m} - 7.0\\,\\text{m}$."
+        },
+        {
+          "value": 215.82,
+          "feedback": "This is the square of the speed, $2g(h_1 - h_2)$, in the unit $\\text{m}^2/\\text{s}^2$. Take the square root as well."
+        }
+      ],
+      "solution": "**Given:** starting height $h_1 = 18.0\\,\\text{m}$, top of the second hill $h_2 = 7.0\\,\\text{m}$, initial speed $v_1 = 0$, $g = 9.81\\,\\text{m/s}^2$; friction and air resistance are ignored\n\n**Find:** the speed $v_2$ at the top of the second hill in $\\text{m/s}$\n\n**Principle:** The weight and the normal force of the track act on the car. The normal force is perpendicular to the motion and does no work, so only the weight does work and the mechanical energy is conserved. The zero level is chosen at the ground.\n\n**Formula:** $mgh_1 = \\tfrac{1}{2} mv_2^2 + mgh_2$, so $v_2 = \\sqrt{2g(h_1 - h_2)}$\n\n**Conversions:** The heights are in metres, so no conversions are needed. The mass is not needed, because it cancels.\n\n**Substitution:** $v_2 = \\sqrt{2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot (18.0 - 7.0)\\,\\text{m}} = \\sqrt{215.82\\,\\text{m}^2/\\text{s}^2} = 14.69\\,\\text{m/s}$\n\n**Answer:** $14.7\\,\\text{m/s}$, three significant figures like the difference in height $11.0\\,\\text{m}$.\n\n**Reasonableness:** The speed is about $53\\,\\text{km/h}$. It is smaller than the speed $\\sqrt{2g \\cdot 18.0\\,\\text{m}} \\approx 18.8\\,\\text{m/s}$ at ground level, as it should be, because at the top the car still has potential energy."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Use energy to explain why the first hill of a roller coaster is the highest of the track and the later hills are lower. Where does the mechanical energy of the train go during the ride?",
+      "criteria": [
+        "The answer says that the work done by the chain lift gives the train its mechanical energy and that nothing adds to it afterwards.",
+        "The answer says that without losses the train could reach at most the starting height, because the mechanical energy is conserved, and that a later hill must be lower than this so that some kinetic energy is left at the top.",
+        "The answer says that rolling resistance and air resistance do negative work that grows with the distance travelled, so the mechanical energy decreases all the time.",
+        "The answer says that the mechanical energy turns into internal energy and does not disappear."
+      ],
+      "model": "The chain lift does work on the train and lifts it to the top of the first hill. After that only the weight, the normal force of the track and the resistive forces act on the train, and none of them adds to the mechanical energy of the train. If there were no resistive forces, the mechanical energy would be conserved and the train could rise at most to the starting height, and even then it would stop at the top. In reality rolling resistance and air resistance do negative work all the time, and it grows with every metre travelled. So the mechanical energy of the train decreases during the whole ride. Each hill must be lower than the height that the remaining mechanical energy would reach, so that the train still has kinetic energy at the top. That is why the hills usually get lower towards the end of the track. Energy does not disappear: it turns into internal energy of the wheels, the rails and the air, and finally at the station the brakes turn the rest of the kinetic energy into internal energy."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-8-L1-01",
+      "level": 1,
+      "text": "Kivi pudotetaan levosta sillalta, joka on $12{,}0\\,\\text{m}$ vedenpinnan yläpuolella. Ilmanvastus jätetään huomiotta. Millä nopeudella kivi osuu veteen?",
+      "answer": 15.344054,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-02",
+      "level": 1,
+      "text": "Rullalautailija liikkuu rampin pohjalla nopeudella $6{,}0\\,\\text{m/s}$. Hän nousee rampin toista reunaa ylös potkaisematta. Kitka ja ilmanvastus jätetään huomiotta. Kuinka korkealle rampin pohjasta lautailija nousee?",
+      "answer": 1.834862,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-03",
+      "level": 1,
+      "text": "Laatikkoa työnnetään vaakasuoralla lattialla $4{,}0\\,\\text{m}$:n matka. Lattian kitkavoima laatikkoon on $35\\,\\text{N}$. Kuinka suuren työn kitkavoima tekee laatikkoon? Ilmoita työ etumerkkeineen.",
+      "answer": -140.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-04",
+      "level": 1,
+      "text": "Pikajuoksijan massa on $65\\,\\text{kg}$. Hän kiihdyttää lähdössä levosta nopeuteen $8{,}0\\,\\text{m/s}$. Kuinka suuren työn juoksijaan vaikuttava kokonaisvoima tekee kiihdytyksen aikana? Vastaa kilojouleina.",
+      "answer": 2.08,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-05",
+      "level": 1,
+      "text": "Hiihtäjän mekaaninen energia on mäen päällä $12{,}4\\,\\text{kJ}$ ja mäen alla $9{,}8\\,\\text{kJ}$. Kuinka suuren työn kitka ja ilmanvastus tekevät yhteensä hiihtäjään laskun aikana? Ilmoita työ etumerkkeineen.",
+      "answer": -2.6,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-8-L2-01",
+      "level": 2,
+      "text": "Pallo heitetään suoraan alaspäin parvekkeelta, joka on $15{,}0\\,\\text{m}$:n korkeudella. Heittonopeus on $8{,}00\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Millä nopeudella pallo osuu maahan?",
+      "answer": 18.928814,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-02",
+      "level": 2,
+      "text": "Auton massa on $1200\\,\\text{kg}$. Auto ajaa vaakasuoralla tiellä nopeudella $72\\,\\text{km/h}$. Kuljettaja jarruttaa, ja tien kitkavoima renkaisiin on jarrutuksen aikana $6{,}0\\,\\text{kN}$. Ilmanvastus jätetään huomiotta. Kuinka pitkä on auton jarrutusmatka?",
+      "answer": 40.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-03",
+      "level": 2,
+      "text": "Nosturi nostaa $250\\,\\text{kg}$:n betonikuormaa tasaisella nopeudella $18{,}0\\,\\text{m}$ ylöspäin. Kuinka suuren työn nosturin köysi tekee kuormaan? Vastaa kilojouleina.",
+      "answer": 44.145,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-04",
+      "level": 2,
+      "text": "Jääkiekkoilija lyö levossa olevaa kiekkoa. Kiekon massa on $0{,}16\\,\\text{kg}$. Maila työntää kiekkoa liikkeen suuntaan keskimäärin $120\\,\\text{N}$:n voimalla $0{,}30\\,\\text{m}$:n matkan. Jään kitka jätetään huomiotta. Kuinka suuri on kiekon nopeus, kun se irtoaa mailasta?",
+      "answer": 21.213203,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-8-L3-01",
+      "level": 3,
+      "text": "Pyöräilijä rullaa polkematta ja jarruttamatta mäen alas. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$. Mäen päällä nopeus on $4{,}0\\,\\text{m/s}$ ja mäen alla $13{,}0\\,\\text{m/s}$. Mäen korkeus on $12{,}0\\,\\text{m}$, ja tietä on mäessä $150\\,\\text{m}$. Kuinka suuri on pyöräilijää jarruttava keskimääräinen vastusvoima? Ilmanvastus ja vierimisvastus lasketaan yhteen.",
+      "answer": 21.984,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L3-02",
+      "level": 3,
+      "text": "Vuoristoradan vaunun massa matkustajineen on $500\\,\\text{kg}$. Vaunu ylittää $35{,}0\\,\\text{m}$ korkean mäen huipun nopeudella $2{,}0\\,\\text{m/s}$. Seuraavan mäen huipulle on rataa $120\\,\\text{m}$. Vaunuun vaikuttaa koko matkan keskimäärin $150\\,\\text{N}$:n vastusvoima. Kuinka korkea seuraava mäki saa enintään olla, jotta vaunu pääsee sen huipulle?",
+      "answer": 31.534149,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L3-03",
+      "level": 3,
+      "text": "Kivi heitetään meren rannalla $20{,}0\\,\\text{m}$ korkealta kalliolta. Heittonopeus on $12{,}0\\,\\text{m/s}$, ja heitto on vinosti ylöspäin $35^\\circ$:n kulmassa vaakatasoon nähden. Ilmanvastus jätetään huomiotta. Millä nopeudella kivi osuu veteen?",
+      "answer": 23.160311,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

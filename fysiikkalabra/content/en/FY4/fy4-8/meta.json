@@ -1,0 +1,22 @@
+{
+  "id": "fy4-8",
+  "course": "FY4",
+  "title": "Conservation of mechanical energy and the work–energy principle",
+  "goals": [
+    "LOPS FY4: conservation of mechanical energy and the work–energy principle of mechanics",
+    "LOPS FY4: understand the significance of conservation laws in physics",
+    "Clarification: the change in mechanical energy equals the work done by non-conservative forces; the work done by the net force equals the change in kinetic energy"
+  ],
+  "prerequisites": [
+    "fy4-7"
+  ],
+  "glossary": [
+    "energiaperiaate",
+    "mekaanisen energian säilyminen",
+    "työ",
+    "ei-konservatiivinen voima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
