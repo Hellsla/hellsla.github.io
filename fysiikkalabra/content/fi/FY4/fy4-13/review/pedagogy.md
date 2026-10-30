@@ -1,18 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: d1d8ce15626f5d7b
+VERDICT: PASS
+CONTENT-HASH: f0b58932dae878ef
 ## Blocking
-- lesson.md:411 (Tiivistelmä) — a TAB replaced the backslash of \frac in all four formulas, so the page shows "a = fracm_2m_1+m_2 g" (capture stage-selita-390-4) — restore \frac{...}{...}.
-- assets/sims/fy4/fy4-13 sim.js (force-diagram panels), inquiry.json exp-1 intro — at 390 px each diagram is ~25 px wide, arrows 10–35 px, labels ~9 px; the same at 1280 px (sim-1280). Exp-1 asks the student to watch how the lengths of \overline{T}_1 and \overline{G}_2 change, which a phone cannot show, and the diagrams are the lesson's core skill — scale each diagram to fill its panel (rectangle about a third of the panel width, labels at least 12 px) and keep the arrows to scale.
 ## Polish
-- lesson.md Ydinajatus — the Miksi (why slower than free fall) is never stated outright; add: "a = m_2 g/(m_1+m_2) < g, koska paino kiihdyttää myös kärryä".
-- lesson.md Esimerkki, stage "Kaava ratkaistuna" — jumps from two equations to a; add the line "yhteenlasku: m_2 g = (m_1+m_2)a".
-- Theory and example figures at 390 px (fig-2, fig-3) — "voimakuvio: kärry" and the subscripts are about 9 px; stack the two panels on a phone or enlarge labels.
-- Sim canvas, exp-2 at 390 px — "Tilannekuva" overlaps the ceiling beam, and the Tilanne select is clipped at the right (capture is 316 px wide).
-- inquiry.json hook — the Pohdinta question (what pulls the cart) differs from the Miksi; fine, but link them in the reflect prompt.
+- Theory figures fig-2 and fig-3 at 390 px (shots fig-2-390, fig-3-390) — "voimakuvio: kärry/punnus" and the subscripts are still about 9-10 px; stack the two panels on a phone or enlarge the labels (the simulation panels, by contrast, are now large and readable).
+- shots exp-exp-2-390-1 — the committed capture shows the two-hanging-bodies canvas with giant overlapping text and a clipped Tilanne select (316 px wide). Reopened live at 390 px, the sim in exp-2 renders correctly (274 px canvas, diagrams and select fine), so this is a capture-timing artefact; regenerate the shot so it is not mistaken for a defect.
+- inquiry.json hook/reflect — the Pohdinta question (what pulls the cart) and the Miksi (why slower than free fall) are now linked in Ydinajatus; the reflect prompt already revisits both. No change needed beyond keeping both questions in the reflect text.
 ## Checked
-- Opening illustration matches the Miksi (cart, pulley, hanging weight, FY3-level detail); labels in figures and sim are LaTeX.
-- Chapter names in prior, not ids; learn goals parallel -maan/-mään.
-- Force diagrams: error, draw (check-3), equations; diagram before equations in every solution; the virhe description lists arrows, not the error.
-- Prediction 1 can be refuted by exp-1; gating and feedback repair the misconception; workload one lesson with optional items.
-- Example has eight stages with solution rules met; checks have misconception distractors; exit ticket tests the core idea.
-- Layout 360/768/1280 tests pass; captures at 1280 show a single reading column.
+- Round-1 blocker 1 fixed: the Tiivistelmä formulas render as fractions (stage-selita-390-4); no stray text.
+- Round-1 blocker 2 fixed: sim force diagrams at 390 px fill their panels, rectangles about a third of the width, arrows and LaTeX labels legible (sim-390); two-body situation checked live too; arrow lengths follow forces.
+- Round-1 polish done: Ydinajatus states a = m2 g/(m1+m2) < g because the weight also accelerates the cart; the example has the summing line m2 g = (m1+m2)a.
+- Force diagrams: error (virhe, one recognisable error, option feedback names it, description lists arrows only), draw (check-3 with model figure), equations tasks; every solution draws the diagram before the equations.
+- Prediction 1 can be refuted by exp-1 (T < G2 from the table); feedback repairs the T = weight misconception; workload one lesson, with optional items.
+- Example: eight single-step stages, symbols before numbers, units, sig figs and a reasonableness check.
+- Checks use misconception distractors; exit ticket tests the core idea (no action-reaction pair, equation of the hanging weight, doubled cart mass).
+- Finnish and chapter names in prior; learn goals parallel -maan/-mään; 1280 px captures show one reading column.

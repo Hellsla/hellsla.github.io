@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a0bd29f839e5dfac
+CONTENT-HASH: 158b41a2a2e12f2f
 ## Blocking
 ## Polish
-- exercises.json fy4-13-L1-03 — repeats the worked example (cart and hanging weight, find a, new numbers); change the context (ask for T, or a cart pulled by two weights' worth of data) so it is not the example again.
-- exercises.json fy4-13-L1-05 and L2-03 — the pull force F with a string between two bodies (F − T = m_1 a) is not shown in the lesson, and L1-05 is level 1; move L1-05 to level 2 or add one line to the method.
-- exercises.json fy4-13-L3-01 — the lift and counterweight is the Atwood case of L2-02 with larger numbers; level 3 needs a second idea (e.g. the force on the pulley, or the rope's limit).
-- solutions.md fy4-13-L1-04 Annettu — "lanka ja väkipyörä ovat kevyet ja kitkaton" — "lanka on kevyt, väkipyörä kevyt ja kitkaton".
-- solutions.md fy4-13-L2-01 — "880 N" with two significant figures is ambiguous; write "8,8 · 10² N".
+- exercises.json fy4-13-L1-03 — now asks T instead of a, but is still the worked example's cart and hanging weight with new numbers (the example asks both a and T); a level-1 task would be fresher with a different arrangement, e.g. a given T asked back as m_2.
+- exercises.json fy4-13-L3-01 / solutions.md — the pulley-axle force 2T is a real second idea, but the lesson never treats the pulley's own equilibrium; the solution explains it ("pyörä kevyt eikä kiihdy"), which is enough. Write the answer as 1,9 · 10⁴ N (two figures) rather than "19000 N", as with L2-01's 8,8 · 10² N.
+- solutions.md fy4-13-L1-03 Järkevyys — "a = T : m_1" — write "a = T/m_1".
+- solutions.md fy4-13-L3-01 Voimakuvio — the pulley diagram is described only in words ("kaksi T alas, F_akseli ylös"); say "pyörä suorakulmiona" for consistency with the drawing rules.
 ## Checked
-- Levels 5 / 4 / 3 as the rubric; every exercise asks for a force diagram first.
-- Draw task with model figure (L2-01); every solution has the diagram before the equation.
-- Solutions have all seven parts; answers recomputed by hand (L1-02, L2-02, L2-04, L3-01 to L3-03) and match.
-- Finnish: case after number and unit (12 N:n, 20 N:n) correct; glossary terms used.
-- Misconceptions covered: T = weight (L1-04, L3-02), T not weight in motion, T as sum of weights.
+- Delta judged: L1-03 now matches its answer (2,8 N), unit and solution (diagram first, symbols, T = m_1 a, check against m_2 a).
+- L1-05 stays level 1: the method's step 3 teaches the external pull F on the pulled body, and the added "ilmanvastus jätetään huomiotta" makes the model explicit.
+- "kevyt ja venymätön" added to every statement and "ilmanvastus" where missing; the solutions' Annettu lines match (previous wording slips fixed).
+- L3-01 (new numbers 800/1200 kg, pulley-axle force) recomputed: T = 9418 N, 2T = 18835 N, inside the 2 % tolerance of 19000; the task rises above L2-02 as asked.
+- L1-04 and L2-01 wording fixes done; levels still 5/4/3; every solution has the diagram before the equation.
