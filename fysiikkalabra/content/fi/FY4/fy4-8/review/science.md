@@ -1,26 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: d97eb2ce61511fba
+VERDICT: PASS
+CONTENT-HASH: d00b795ae3ab58a7
 
 ## Blocking
-- inquiry.json:478 (check-3 model; prompt :471) — **A.** "jokaisen mäen on oltava edellistä matalampi" does not follow from falling mechanical energy. A later hill only has to be lower than the height the remaining energy reaches, so it may be taller than a low hill before it. — Fix: "matalampi kuin korkeus, jolle jäljellä oleva mekaaninen energia riittäisi; siksi mäet yleensä madaltuvat". In the prompt, ask why later hills are lower than the first.
-- inquiry.json:474 (check-3 criterion 2) — **A.** The rubric gives the wrong cause: "enintään lähtökorkeudelle, koska huipulla on oltava liike-energiaa jäljellä". The limit comes from energy conservation, and leftover kinetic energy is why a hill must be lower. This was Polish in round 1; it is in the self-assessment rubric. — Split it into "…koska mekaaninen energia säilyy; myöhemmän mäen on oltava matalampi, jotta huipulla jää liike-energiaa".
 
 ## Polish
-- lesson.md:361 — Write "matalampi kuin ensimmäinen" so the claim is unambiguous.
-- lesson.md:481 — "eli kitkan ja ilmanvastuksen voi jättää huomiotta" leaves out pulling or pushing forces. Add "eikä mikään vedä tai työnnä".
-- lesson.md (Kaava) — W = F_∥ s is given for straight-line motion but used along curved track. Add "kun vastusvoima on koko ajan liikettä vastaan".
+- lesson.md:361 — "matalampi kuin ensimmäinen ja matalampi kuin korkeus, jolle…" is correct. The second condition implies the first. You could write "mekaaninen energia" for "energia" so it matches the model answer.
+- lesson.md (Kaava, Työ ja liike-energia) — W = F_∥ s is still used along curved track. Add "kun vastusvoima on koko ajan liikettä vastaan" (carried over from round 2).
 
 ## Checked
-- The round-1 Blocking item (the sign of friction work) is fixed, with its condition and the belt counter-example.
-- I recomputed every lesson and inquiry number in one script with my own formulas. All match:
-  - sled: −645 J, 9,90 m/s, 41 %, 26,9 N
-  - cart: 36 J, 6,0 m/s
-  - error-spotting: 4,2/6,4/5,4 m/s
-  - swing: 4,852 m/s and its mistake values
-  - check-2: 14,69 m/s and its mistakes
-- For the sim, I solved mgh1 − F(L1+2B+L2) = mgh2 independently. At 100/200 N: h2 is 8,79/7,66 m, s is 47,4/45,9 m and ΔE_mek is −4,74/−9,19 kJ. E_mek ends at 30,1 kJ, and v_pohja is 14,0 m/s for every mass and both tracks.
-- The only sim.js change gives the E_mek bar its own colour; the physics is unchanged.
-- The experiments isolate their varied parameter, and simState gives the measured keys.
-- Every choice item has exactly one correct option, and the distractor feedback is right.
-- The derivations of W_kok = ΔE_k and of the energy principle are correct.
-- The konservatiivinen-voima recall and "paino eli painovoima" are consistent with fy4-7. The exit ticket and the summary agree with the theory.
+- Round-2 Blocking 1 is fixed. The check-3 model now says a hill must be lower than the height the remaining mechanical energy reaches, and only that hills "yleensä" get lower. It no longer claims each hill is lower than the one before it.
+- Round-2 Blocking 2 is fixed. Criterion 2 now gives energy conservation as the reason for the start-height limit, and leftover kinetic energy as the reason a later hill must be lower.
+- The check-3 prompt now asks only why later hills are lower than the first. The prompt, the four criteria and the model answer agree.
+- lesson.md:361 (Vastaus alun kysymykseen) agrees with the check-3 model, and the earlier "matalampi kuin ensimmäinen" ambiguity is resolved.
+- The Tiivistelmä now gives the full conservation condition: no friction or air resistance, and nothing pulls or pushes. It also keeps the normal-force sentence and matches the glossary.
+- The hook's "jokainen mäki on matalampi kuin edellinen" describes this particular track's drawings, not a general rule. It is consistent (C).
+- The punctuation fix in the check-3 model (". Jokaisen") changes no physics. inquiry.json parses, and no numbers changed since round 2. The round-2 recomputation still holds: the sled, cart, swing, check-2 and sim values.
+- The sim, the exit ticket and every choice item are unchanged since round 2, which passed them.
