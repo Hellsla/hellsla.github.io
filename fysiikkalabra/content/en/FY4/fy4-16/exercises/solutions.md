@@ -73,7 +73,7 @@
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** The numerator is $9.81\cdot 18.0\cdot\sin 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} - \tfrac12\cdot 5.10^2\,\tfrac{\text{m}^2}{\text{s}^2} = 36.71\,\tfrac{\text{m}^2}{\text{s}^2} - 13.01\,\tfrac{\text{m}^2}{\text{s}^2} = 23.71\,\tfrac{\text{m}^2}{\text{s}^2}$ and the denominator $9.81\cdot 18.0\cdot\cos 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172.72\,\tfrac{\text{m}^2}{\text{s}^2}$, so $\mu = \dfrac{23.71}{172.72} = 0.1373$
 **Answer:** $0.137$, three significant figures like the length of the slope $18.0\,\text{m}$, the angle $12.0^\circ$ and the speed $5.10\,\text{m/s}$.
-**Reasonableness:** Without friction the speed would be $\sqrt{2\cdot 9.81\cdot 18.0\cdot\sin 12.0^\circ}\,\text{m/s} \approx 8.6\,\text{m/s}$, so friction takes about two thirds of the energy. The coefficient is smaller than $\tan 12.0^\circ \approx 0.21$, as it should be, because the sled accelerates.
+**Reasonableness:** Without friction the speed would be $\sqrt{2\cdot 9.81\cdot 3.74}\,\text{m/s} \approx 8.6\,\text{m/s}$ from the drop height $h = 18.0\,\text{m}\cdot\sin 12.0^\circ \approx 3.74\,\text{m}$, so friction takes about two thirds of the energy. The coefficient is smaller than $\tan 12.0^\circ \approx 0.21$, as it should be, because the sled accelerates.
 
 ## fy4-16-L2-03
 **Given:** $m = 80.0\,\text{kg}$, $v_1 = 52.0\,\text{m/s}$, $v_2 = 6.0\,\text{m/s}$, drop $h = 145\,\text{m}$; $g = 9.81\,\text{m/s}^2$

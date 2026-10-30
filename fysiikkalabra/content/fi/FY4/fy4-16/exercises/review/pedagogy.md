@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3f4f56406139b9dc
+CONTENT-HASH: abd12ce858254990
 ## Blocking
 (none)
 ## Polish
@@ -16,3 +16,4 @@ CONTENT-HASH: 3f4f56406139b9dc
 - L3-01 uses irrelevant angles as unfamiliar data and tests x = h/μ; the solution checks that the sled slides.
 - Tasks put the situation first and the question last; Finnish and units correct (case after number+unit fine).
 - Tolerances 0,02–0,05 fit the data's figures.
+- Delta round: solutions.md L2-02 (sled) Järkevyys now goes via h = 18,0 m·sin 12,0° ≈ 3,74 m, then √(2·9,81·3,74) ≈ 8,6 m/s; arithmetic checks, reads clearly, no new issues.

@@ -73,7 +73,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita. Massa supistuu pois.
 **Sijoitus:** Osoittaja on $9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} - \tfrac12\cdot 5{,}10^2\,\tfrac{\text{m}^2}{\text{s}^2} = 36{,}71\,\tfrac{\text{m}^2}{\text{s}^2} - 13{,}01\,\tfrac{\text{m}^2}{\text{s}^2} = 23{,}71\,\tfrac{\text{m}^2}{\text{s}^2}$ ja nimittäjä $9{,}81\cdot 18{,}0\cdot\cos 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172{,}72\,\tfrac{\text{m}^2}{\text{s}^2}$, joten $\mu = \dfrac{23{,}71}{172{,}72} = 0{,}1373$
 **Vastaus:** $0{,}137$. Vastauksessa on kolme merkitsevää numeroa, kuten lähtöarvoissa (rinteen pituudessa $18{,}0\,\text{m}$, kulmassa $12{,}0^\circ$ ja nopeudessa $5{,}10\,\text{m/s}$).
-**Järkevyys:** Ilman kitkaa nopeus olisi $\sqrt{2\cdot 9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ}\,\text{m/s} \approx 8{,}6\,\text{m/s}$. Kitka vie siis noin kaksi kolmasosaa energiasta. Kerroin on pienempi kuin $\tan 12{,}0^\circ \approx 0{,}21$. Niin pitää olla, koska pulkka kiihtyy.
+**Järkevyys:** Ilman kitkaa nopeus olisi pudotuskorkeudesta $h = 18{,}0\,\text{m}\cdot\sin 12{,}0^\circ \approx 3{,}74\,\text{m}$ laskettu $\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} \approx 8{,}6\,\text{m/s}$. Kitka vie siis noin kaksi kolmasosaa energiasta. Kerroin on pienempi kuin $\tan 12{,}0^\circ \approx 0{,}21$. Niin pitää olla, koska pulkka kiihtyy.
 
 ## fy4-16-L2-03
 **Annettu:** $m = 80{,}0\,\text{kg}$, $v_1 = 52{,}0\,\text{m/s}$, $v_2 = 6{,}0\,\text{m/s}$, pudotus $h = 145\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
