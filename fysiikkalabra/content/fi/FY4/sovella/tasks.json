@@ -128,7 +128,7 @@
       "title": "Vaijeriliuku",
       "source": "example",
       "source_note": "Vaijeriliuku ja mittaustulos ovat keksittyjä esimerkkejä.",
-      "text": "Leirikeskuksen vaijeriliu'ussa laskija roikkuu valjaissa pyörillä kulkevan vaunun alla ja liukuu teräsvaijeria pitkin rinteen yli. Lähtölava on $15{,}0\\,\\text{m}$ korkeammalla kuin vaijerin loppupää, ja vaijerin pituus on $180\\,\\text{m}$. Laskija lähtee levosta. Vaijerin loppuosa on lähes vaakasuora, ja siinä jousijarru pysäyttää laskijan.\n\nOhjaaja kertoo laskijoille: ”Jarrulle tullaan yli $60\\,\\text{km/h}$:n vauhdilla.” Tutkamittarilla mitattiin jarrun alussa $62\\,\\text{kg}$:n laskijan nopeudeksi $11{,}2\\,\\text{m/s}$.",
+      "text": "Leirikeskuksen vaijeriliu'ussa laskija roikkuu valjaissa pyörillä kulkevan vaunun alla ja liukuu teräsvaijeria pitkin rinteen yli. Lähtölava on $15{,}0\\,\\text{m}$ korkeammalla kuin jarrun alkukohta, ja vaijeria on lähtölavalta jarrun alkuun $180\\,\\text{m}$. Laskija lähtee levosta. Jarrun alusta eteenpäin vaijeri on lähes vaakasuora, ja siinä jousijarru pysäyttää laskijan.\n\nOhjaaja kertoo laskijoille: ”Jarrulle tullaan yli $60\\,\\text{km/h}$:n vauhdilla.” Tutkamittarilla mitattiin jarrun alussa $62\\,\\text{kg}$:n laskijan nopeudeksi $11{,}2\\,\\text{m/s}$.",
       "parts": [
         {
           "id": "a",
@@ -197,9 +197,9 @@
           "points": 3,
           "text": "Ohjaaja arvioi $95\\,\\text{kg}$:n laskijan nopeuden jarrun alussa olettaen, että liikettä vastustaa sama voima kuin b-kohdassa. Laske arvio.",
           "answer": {
-            "value": 13.6,
+            "value": 14,
             "unit": "m/s",
-            "tolerance": 0.03
+            "tolerance": 0.05
           },
           "criteria": [
             {
@@ -215,7 +215,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$v \\approx 13{,}6\\,\\text{m/s}$"
+              "detail": "$v \\approx 14\\,\\text{m/s}$ kahdella merkitsevällä numerolla kuten massa ja vastusvoima; myös $13{,}6\\,\\text{m/s}$ hyväksytään."
             }
           ]
         },
@@ -243,7 +243,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Jarru mitoitetaan suuremman nopeuden mukaan, koska turvallisuuden kannalta on parempi varautua liian suureen kuin liian pieneen nopeuteen."
+              "detail": "Jarru mitoitetaan suuremman nopeuden mukaan, koska turvallisuuden kannalta on parempi varautua liian suureen kuin liian pieneen nopeuteen. Myös mitoitus kitkattoman mallin ylärajan $17{,}2\\,\\text{m/s}$ mukaan on oikea."
             }
           ]
         }
@@ -301,9 +301,9 @@
           "points": 4,
           "text": "Arvioi auton B nopeus juuri ennen törmäystä. Pitääkö kuljettajan kertomus paikkansa?",
           "answer": {
-            "value": 13.6,
+            "value": 14,
             "unit": "m/s",
-            "tolerance": 0.03
+            "tolerance": 0.05
           },
           "criteria": [
             {
@@ -319,7 +319,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$v_\\text{B} \\approx 13{,}6\\,\\text{m/s} \\approx 49\\,\\text{km/h}$"
+              "detail": "$v_\\text{B} \\approx 14\\,\\text{m/s} \\approx 50\\,\\text{km/h}$ kahdella merkitsevällä numerolla kuten liukumamatka ja kitkakerroin; myös $13{,}6\\,\\text{m/s} \\approx 49\\,\\text{km/h}$ hyväksytään."
             },
             {
               "key": "conclusion",

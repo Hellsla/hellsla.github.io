@@ -25,7 +25,7 @@ gs, gc = g * math.sin(alpha), g * math.cos(alpha)
 muA = (gs - aA) / gc; muB = (gs - aB) / gc
 dmu = 0.02 / gc                                                     # a slope read 0,02 m/s² off changes mu this much
 
-# fy4-s2: the zipline
+# fy4-s2: the zipline; h and s are from the start platform to the start of the brake, where the speed is measured
 h, s, m1, v_meas, m2 = 15.0, 180.0, 62.0, 11.2, 95.0
 v_ideal = math.sqrt(2 * g * h)
 Ep1 = m1 * g * h; Ek1 = 0.5 * m1 * v_meas ** 2
@@ -33,6 +33,7 @@ F_res = (Ep1 - Ek1) / s
 lost = (Ep1 - Ek1) / Ep1
 Ep2 = m2 * g * h; Ek2 = Ep2 - F_res * s
 v_heavy = math.sqrt(2 * Ek2 / m2)
+v_heavy29 = math.sqrt(2 * (Ep2 - 29 * s) / m2)                # c with b's answer rounded to 29 N (Hyväksytään myös)
 
 # fy4-s3: the rear-end collision
 mA, mB, mu, skid, m_driver, dt = 1250.0, 1700.0, 0.75, 4.2, 68.0, 0.12
@@ -49,7 +50,8 @@ out = {"fy4-s1-c": round(muA, 4), "fy4-s1-muB": round(muB, 4), "fy4-s1-aA": roun
        "fy4-s1-dmu": round(dmu, 4),
        "fy4-s2-a": round(v_ideal, 3), "fy4-s2-a-kmh": round(v_ideal * 3.6, 1), "fy4-s2-Ep": round(Ep1, 1), "fy4-s2-Ek": round(Ek1, 1),
        "fy4-s2-b": round(F_res, 2), "fy4-s2-lost": round(lost, 3), "fy4-s2-Ep2": round(Ep2, 1), "fy4-s2-Ek2": round(Ek2, 1),
-       "fy4-s2-c": round(v_heavy, 3), "fy4-s2-meas-kmh": round(v_meas * 3.6, 1),
+       "fy4-s2-c": round(v_heavy, 3), "fy4-s2-c-kmh": round(v_heavy * 3.6, 1), "fy4-s2-W": round(Ep1 - Ek1, 1),
+       "fy4-s2-W29": round(29 * s, 0), "fy4-s2-c29": round(v_heavy29, 3), "fy4-s2-meas-kmh": round(v_meas * 3.6, 1),
        "fy4-s3-a": round(v_after, 3), "fy4-s3-b": round(vB_before, 3), "fy4-s3-b-kmh": round(vB_before * 3.6, 1),
        "fy4-s3-p": round(mB * vB_before, 0), "fy4-s3-Ek-before": round(Ek_before, 0), "fy4-s3-Ek-after": round(Ek_after, 0),
        "fy4-s3-c": round(F_ka, 0), "fy4-s3-ratio": round(ratio, 2),

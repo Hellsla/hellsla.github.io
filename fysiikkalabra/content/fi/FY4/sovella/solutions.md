@@ -131,7 +131,7 @@
 - Tukivoima $\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulospäin. Se on yhtä suuri kuin painon rinnettä vastaan kohtisuora komponentti, joten se on hieman painoa pienempi.
 - Liikekitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
 
-Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka. Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska se ei ole voima. Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
+Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka. Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska se ei ole voima. Mallikuvan katkoviivanuolet $G_x$ ja $G_y$ ovat painon komponentit rinteen suuntaan ja sitä vastaan kohtisuoraan, eivät uusia voimia: ne korvaavat yhdessä painon ja auttavat c-kohdan liikeyhtälöissä. Omaan voimakuvioon niitä ei tarvitse piirtää. Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
 
 ### c)
 **Annettu:** rinteen kaltevuuskulma $\alpha = 4{,}0^\circ$, $g = 9{,}81\,\text{m/s}^2$ ja a-kohdan kuvaaja; massa $m = 72\,\text{kg}$
@@ -168,7 +168,7 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 ## fy4-s2
 
 ### a)
-**Annettu:** korkeusero $h = 15{,}0\,\text{m}$, laskija lähtee levosta, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** korkeusero lähtölavalta jarrun alkuun $h = 15{,}0\,\text{m}$, laskija lähtee levosta, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** nopeus $v$ jarrun alussa ohjaajan mallilla
 **Periaate:** Ohjaajan luku saadaan, kun kitkaa ja ilmanvastusta ei oteta huomioon. Silloin laskijaan vaikuttavat vain paino ja vaijerin voima vaunun kautta. Vaijerin voima on kohtisuorassa vaijeria vastaan eli liikettä vastaan, joten se ei tee työtä. Työtä tekee vain paino, joten mekaaninen energia säilyy: potentiaalienergia muuttuu liike-energiaksi. Vaijerin muoto ja pituus eivät silloin vaikuta loppunopeuteen, vain korkeusero.
 **Kaava:** $mgh = \tfrac{1}{2}mv^2$, josta $v = \sqrt{2gh}$
@@ -178,9 +178,9 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 **Järkevyys:** Sama nopeus saavutettaisiin, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
 
 ### b)
-**Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, vaijerin pituus $s = 180\,\text{m}$ ja mitattu nopeus $v = 11{,}2\,\text{m/s}$
+**Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, vaijerin pituus lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja mitattu nopeus $v = 11{,}2\,\text{m/s}$
 **Kysytty:** liikettä keskimäärin vastustava voima $F_\text{vast}$
-**Periaate:** Mitattu $11{,}2\,\text{m/s} \approx 40\,\text{km/h}$ on paljon pienempi kuin a-kohdan $17{,}2\,\text{m/s}$, joten mekaaninen energia ei säily. Vaunun pyörien kitka ja ilmanvastus vastustavat liikettä koko matkan ajan ja tekevät negatiivista työtä. Mekaniikan energiaperiaatteen mukaan $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$. Nollatasoksi valitaan vaijerin loppupää. Kun vastusvoimien yhteistä vaikutusta kuvataan liikkeen suuntaa vastaan osoittavalla keskimääräisellä voimalla $F_\text{vast}$, sen työ on $W_\text{muut} = -F_\text{vast}\,s$.
+**Periaate:** Mitattu $11{,}2\,\text{m/s} \approx 40\,\text{km/h}$ on paljon pienempi kuin a-kohdan $17{,}2\,\text{m/s}$, joten mekaaninen energia ei säily. Vaunun pyörien kitka ja ilmanvastus vastustavat liikettä koko matkan ajan ja tekevät negatiivista työtä. Mekaniikan energiaperiaatteen mukaan $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$. Nollatasoksi valitaan jarrun alkukohta, jossa nopeus mitattiin. Kun vastusvoimien yhteistä vaikutusta kuvataan liikkeen suuntaa vastaan osoittavalla keskimääräisellä voimalla $F_\text{vast}$, sen työ on $W_\text{muut} = -F_\text{vast}\,s$.
 **Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $F_\text{vast} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $E_\text{p} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
@@ -188,13 +188,13 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 **Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$, mikä sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten energiasta muuttuu lämmöksi yli puolet: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
 
 ### c)
-**Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja b-kohdan $F_\text{vast} = 29{,}1\,\text{N}$
+**Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja b-kohdan vastusvoiman työ $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)
 **Kysytty:** painavamman laskijan nopeus $v$ jarrun alussa ohjaajan oletuksella
 **Periaate:** Sama energiaperiaate kuin b-kohdassa, mutta nyt tuntematon on nopeus. Vastusvoiman työ on oletuksen mukaan sama kuin kevyellä laskijalla, mutta potentiaalienergia on massan mukana suurempi.
 **Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2\,(mgh - F_\text{vast}\,s)}{m}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $mgh = 95\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 13\,979\,\text{J}$ ja $F_\text{vast}\,s = 29{,}1\,\text{N} \cdot 180\,\text{m} = 5235\,\text{J}$, joten $E_\text{k} = 8745\,\text{J}$. $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184{,}1}\,\text{m/s} = 13{,}6\,\text{m/s}$
-**Vastaus:** $v \approx 13{,}6\,\text{m/s} \approx 49\,\text{km/h}$, kolme merkitsevää numeroa, mutta arvio on vain yhtä hyvä kuin sen oletus.
+**Sijoitus:** $mgh = 95\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 13\,979\,\text{J}$ ja b-kohdan mukaan $F_\text{vast}\,s = 5234\,\text{J}$, joten $E_\text{k} = 13\,979\,\text{J} - 5234\,\text{J} = 8745\,\text{J}$. $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184{,}1}\,\text{m/s} = 13{,}6\,\text{m/s}$
+**Vastaus:** $v \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska massa $95\,\text{kg}$ ja vastusvoima $29\,\text{N}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Nopeus on kevyen laskijan $11{,}2\,\text{m/s}$:n ja kitkattoman mallin $17{,}2\,\text{m/s}$:n välissä, kuten pitääkin: sama vastustyö vie raskaalta laskijalta pienemmän osan energiasta.
 
 ### d)
@@ -204,15 +204,19 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 
 *Vastusvoimat eriteltyinä.* Vaunun pyörien kitka kasvaa massan mukana, koska vaijerin ja pyörien välinen tukivoima kasvaa laskijan painon mukana. Ilmanvastus sen sijaan riippuu nopeudesta sekä laskijan koosta ja asennosta, ei massasta. Painavalla laskijalla ilmanvastus on siis pienempi osa painosta, ja hän tulee nopeammin kuin kevyt laskija.
 
-*Arviot.* c-kohdan arvio $13{,}6\,\text{m/s}$ on liian suuri, koska siinä myös kitka pysyy samana, vaikka se todellisuudessa kasvaa massan mukana. Toisen ohjaajan arvio $11{,}2\,\text{m/s}$ on liian pieni, koska ilmanvastus ei kasva massan mukana. Todellinen nopeus on näiden välissä.
+*Arviot.* c-kohdan arvio $14\,\text{m/s}$ on liian suuri, koska siinä myös kitka pysyy samana, vaikka se todellisuudessa kasvaa massan mukana. Toisen ohjaajan arvio $11{,}2\,\text{m/s}$ on liian pieni, koska ilmanvastus ei kasva massan mukana. Todellinen nopeus on näiden välissä.
 
-*Mitoitus.* Jarru mitoitetaan suuremman arvion, $13{,}6\,\text{m/s}$:n, mukaan: jos todellinen nopeus on pienempi, jarru riittää varmasti, mutta liian pienelle nopeudelle mitoitettu jarru voisi pettää. Paras tieto saadaan mittaamalla tutkalla myös painavien laskijoiden nopeuksia.
+*Mitoitus.* Jarru mitoitetaan suuremman arvion, $14\,\text{m/s}$:n, mukaan: jos todellinen nopeus on pienempi, jarru riittää varmasti, mutta liian pienelle nopeudelle mitoitettu jarru voisi pettää. Paras tieto saadaan mittaamalla tutkalla myös painavien laskijoiden nopeuksia.
 
 ### Yleisiä virheitä
 - b-kohdassa koko potentiaalienergian ja liike-energian erotus jaetaan korkeudella $15{,}0\,\text{m}$ eikä vastusvoiman kulkemalla matkalla $180\,\text{m}$.
 - a-kohdassa lasketaan vaijerin suuntaista kiihtyvyyttä ja matkaa kulman avulla, vaikka energian säilymisessä tarvitaan vain korkeusero.
 - c-kohdassa massan oletetaan supistuvan kuten a-kohdassa, jolloin nopeudeksi saadaan sama $11{,}2\,\text{m/s}$ perustelematta, miksi vastusvoima kasvaisi massan mukana.
 - d-kohdassa todetaan vain, että "raskas menee nopeammin" tai "massa ei vaikuta", vertaamatta kumpaakaan väitettä vastusvoimiin.
+
+### Hyväksytään myös
+- b- ja c-kohdassa voi käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$: silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
+- d-kohdassa jarrun saa mitoittaa kitkattoman mallin ylärajan $17{,}2\,\text{m/s}$ mukaan tai c-kohdan arvion mukaan turvamarginaalilla painavampia laskijoita varten. Kumpikin on perusteltuna oikea ja turvallinen johtopäätös ja saa johtopäätöksen pisteen.
 
 ## fy4-s3
 
@@ -364,7 +368,7 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 **Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Muunnokset:** Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$ ja $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
-**Vastaus:** $v_\text{B} \approx 13{,}6\,\text{m/s} \approx 49\,\text{km/h}$, kaksi tai kolme merkitsevää numeroa kuten a-kohdan tuloksessa. Kertomus ei pidä paikkaansa: auton B nopeus oli törmäyshetkellä noin $9\,\text{km/h}$ yli rajoituksen. Pyörät olivat lukossa heti törmäyksen jälkeen, joten kuljettaja oli todennäköisesti jarruttanut jo ennen törmäystä, ja ennen jarrutusta nopeus oli vielä suurempi.
+**Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei pidä paikkaansa: auton B nopeus oli törmäyshetkellä noin $9\,\text{km/h}$ yli rajoituksen. Pyörät olivat lukossa heti törmäyksen jälkeen, joten kuljettaja oli todennäköisesti jarruttanut jo ennen törmäystä, ja ennen jarrutusta nopeus oli vielä suurempi.
 **Järkevyys:** Yhteinen nopeus on pienempi kuin $v_\text{B}$, koska sama liikemäärä jakautuu suuremmalle massalle. Liike-energia pienenee törmäyksessä noin $158\,\text{kJ}$:sta noin $91\,\text{kJ}$:en: noin $40\,\%$ siitä kuluu peltien rutistumiseen, mikä sopii kimmottomaan törmäykseen.
 
 ### c)
@@ -398,7 +402,7 @@ Johtopäätös rajoituksen ylittymisestä on silti vahva: kitkan vaikutus törm�
 
 ### Hyväksytään myös
 - a-kohdan voi ratkaista Newtonin toisella lailla ja tasaisesti hidastuvan liikkeen kaavalla: $a = \mu g$ ja $v'^2 = 2as$.
-- b- ja c-kohdassa a-kohdan tulos voi olla pyöristetty, esimerkiksi $7{,}9\,\text{m/s}$; tulokset $13{,}5\text{–}13{,}8\,\text{m/s}$ ja $4{,}4\text{–}4{,}5\,\text{kN}$ hyväksytään.
+- b- ja c-kohdassa a-kohdan tulos voi olla pyöristetty, esimerkiksi $7{,}9\,\text{m/s}$; tulokset $13{,}5\text{–}14\,\text{m/s}$ ja $4{,}4\text{–}4{,}5\,\text{kN}$ hyväksytään.
 
 ### Yleisiä virheitä
 - b-kohdassa käytetään liike-energian säilymistä, vaikka autot jäävät kiinni toisiinsa ja liike-energiaa kuluu rutistumiseen. Silloin $v_\text{B}$ saadaan liian pieneksi.
