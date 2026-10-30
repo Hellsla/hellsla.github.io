@@ -144,7 +144,7 @@ def suunnat():
     fx, fy = cx - (h / 2) * nrm[0], cy + (h / 2) * nrm[1]           # middle of the bottom face (figure coordinates)
     d = FBD(f, 1.1, body=(cx, cy, w, h, 25), a_dir=(0, 0))
     d.force("G", (0, -G2), (cx, cy), "gravity", lab=(20, 4))
-    d.force("N", (G2 * math.cos(th) * nrm[0], G2 * math.cos(th) * nrm[1]), (fx - 12 * t[0], fy + 12 * t[1]), "normal", surface=25, lab=(-16, -6))
+    d.force("N", (G2 * math.cos(th) * nrm[0], G2 * math.cos(th) * nrm[1]), (fx + 12 * t[0], fy - 12 * t[1]), "normal", surface=25, lab=(-16, -6))
     d.force("F_mu", (G2 * math.sin(th) * t[0], G2 * math.sin(th) * t[1]), (fx + w / 2 * t[0], fy - w / 2 * t[1]), "friction", surface=25, lab=(0, 24))
     d.draw()
     # 3 hanging lamp: situation left, diagram right

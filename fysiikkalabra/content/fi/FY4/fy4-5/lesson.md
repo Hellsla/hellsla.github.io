@@ -264,9 +264,9 @@ Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Ne kannattaa käyd�
   <line x1="492" y1="150" x2="492" y2="221" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M492,238 L484,220 L500,220 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="495.5" y="227.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="490.5" y1="175" x2="464" y2="118" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M456.5,102.5 L471.5,115.5 L457,122.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="424" y="82" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="512" y1="165" x2="485.5" y2="108" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M478.5,92.5 L493.5,105.5 L478.5,112.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="446" y="72" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
   <line x1="528.5" y1="157.5" x2="547" y2="148.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M562,141.5 L549.5,156.5 L542.5,142 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="539.5" y="151" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
