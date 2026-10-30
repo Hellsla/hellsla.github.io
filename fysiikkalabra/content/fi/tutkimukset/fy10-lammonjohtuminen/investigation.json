@@ -1,0 +1,108 @@
+{
+  "id": "fy10-lammonjohtuminen",
+  "type": "investigation",
+  "title": "Lämmön johtuminen lämpökameralla",
+  "question": "Mikä tutkittavista materiaaleista johtaa lämpöä tehokkaimmin, ja miten sen voi päätellä lämpökameralla mitatuista lämpötiloista?",
+  "description": "Kokeellinen tutkimus: lämmitä samanmuotoisten eri materiaaleista tehtyjen kappaleiden toista päätä samalla tavalla, seuraa lämpötiloja lämpökameralla ja vertaa, missä materiaalissa lämpö etenee tehokkaimmin.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY3"
+  ],
+  "source": "Esimerkkityöt.pdf s. 15 (Lämmön johtumisen tutkiminen lämpökameralla), opettajan aineisto",
+  "learn": [
+    "valitsemaan mitattavan suureen, jonka avulla ilmiötä voi vertailla eri kappaleissa",
+    "vakioimaan koejärjestelyn niin, että kappaleiden välillä muuttuu vain tutkittava tekijä",
+    "arvioimaan, miten mittalaitteen toimintaperiaate vaikuttaa tulosten luotettavuuteen"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Materiaalien vertailu",
+      "physics": "F1",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Lämpötila kappaleen eri kohdissa ja tasapainotila",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-12",
+      "why": "Lämmön johtuminen ja lämpösäteily sekä energiatasapaino ovat tutkimuksen fysiikka."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-6",
+      "why": "Kappaleen lämpeneminen vaatii energiaa, joten lämpötilan nousuun vaikuttaa johtumisen lisäksi aineen ominaislämpökapasiteetti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Lämpösäteily ja pinnan emissiivisyys",
+      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "why": "Lämpökamera päättelee lämpötilan pinnan lähettämästä säteilystä; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuuden arvioiminen ja satunnaisten ja systemaattisten virheiden erottaminen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-4",
+      "why": "Mittaustulosten esittäminen kuvaajana."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Lämpökameran käyttö: kuvan tallentaminen ja yksittäisen kohdan lämpötilan lukeminen kuvasta",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kaikki mittaustulokset luetaan lämpökameran kuvista."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Kuvaajan piirtäminen ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Usean materiaalin tulokset on helpointa vertailla samassa kuvaajassa."
+    }
+  ],
+  "equipment": [
+    "lämpökamera ja jalusta",
+    "samanmuotoisia ja samankokoisia sauvoja tai liuskoja eri materiaaleista, esimerkiksi kuparia, alumiinia, terästä, puuta ja muovia",
+    "lämmönlähde: kattila tai muu astia kuumaa vettä ja vedenkeitin",
+    "lämpöä eristävä kansi tai pidike, joka pitää kappaleet yhtä syvällä vedessä",
+    "samanlaista mattapintaista teippiä tai maalia kappaleiden pintoihin",
+    "lämpömittari veden lämpötilaa varten",
+    "ajanottoväline",
+    "viivoitin tai mittanauha",
+    "suojakäsineet tai pihdit kuumien kappaleiden käsittelyyn"
+  ],
+  "safety": [
+    "Kuuma vesi ja kuumat kappaleet voivat aiheuttaa palovamman. Älä kosketa lämmitettyjä kappaleita paljain käsin, vaan käytä suojakäsineitä tai pihtejä.",
+    "Aseta kuuman veden astia tukevasti pöydän keskelle, jottei se kaadu, ja käsittele vedenkeitintä opettajan ohjeiden mukaan.",
+    "Jos lämpökamerassa on laserosoitin, älä suuntaa sitä kenenkään silmiin."
+  ]
+}

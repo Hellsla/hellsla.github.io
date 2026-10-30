@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vesivoimalaitoksen pienoismallin hyötysuhde — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: rajaa järjestelmä, mittaa veden pienoisvoimalaitokselle tuoma teho ja siitä saatava sähköteho ja selvitä, miten hyötysuhde muuttuu virtaaman tai putouskorkeuden mukana.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-vesivoima.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Vesivoimalaitoksen pienoismallin hyötysuhde">
+<meta property="og:description" content="Kokeellinen tutkimus: rajaa järjestelmä, mittaa veden pienoisvoimalaitokselle tuoma teho ja siitä saatava sähköteho ja selvitä, miten hyötysuhde muuttuu virtaaman tai putouskorkeuden mukana.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-vesivoima.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Vesivoimalaitoksen pienoismallin hyötysuhde</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Vesivoimalaitoksen pienoismallin hyötysuhde</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-kuorman-vaikutus">Laajennus: kuorman vaikutus</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Vesivoimalaitoksen pienoismallin hyötysuhde</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Kuinka suuri osa putoavan veden energiasta muuttuu pienoisvoimalaitoksessa sähköksi, ja miten hyötysuhde riippuu käyttötilanteesta?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydän vieressä on korkea teline, jonka päällä on vesisäiliö. Säiliön pohjasta lähtee letku alas pienen vesiturbiinin luo. Turbiinin akselilla on generaattori, josta johdot kulkevat kuormavastukselle ja kahdelle yleismittarille, joiden näytöt ovat tyhjät. Turbiinin läpi kulkenut vesi valuu ämpäriin, joka on vaa&#x27;an päällä. Pöydällä on sekuntikello ja kuivausliina." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10vh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10vh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10vh-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10vh-desk)"/>
+  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="130" y="150" width="16" height="320" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="274" y="150" width="16" height="320" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="120" y="140" width="180" height="16" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="146" y1="300" x2="274" y2="300" stroke="#8a96a3" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="140" y="40" width="140" height="100" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <rect x="143" y="62" width="134" height="75" rx="4" fill="#a9d1f0"/>
+  <line x1="143" y1="62" x2="277" y2="62" stroke="#2f74b5" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M262,140 C262,230 330,260 420,268 C470,272 500,268 510,262" fill="none" stroke="#1f2933" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M262,140 C262,230 330,260 420,268 C470,272 500,268 510,262" fill="none" stroke="#a9d1f0" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="668" y="352" width="48" height="118" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="560" cy="290" r="62" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="560" cy="290" r="42" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="574" y1="294.5" x2="605" y2="304" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="605" cy="304" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="567" y1="303" x2="582" y2="331.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="582" cy="331.5" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="555.5" y1="304" x2="546" y2="335" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="546" cy="335" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="547" y1="297" x2="518.5" y2="312" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="518.5" cy="312" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="546" y1="285.5" x2="515" y2="276" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="515" cy="276" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="553" y1="277" x2="538" y2="248.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="538" cy="248.5" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="564.5" y1="276" x2="574" y2="245" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="574" cy="245" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="573" y1="283" x2="601.5" y2="268" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="601.5" cy="268" r="5.46" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="560" cy="290" r="9.24" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="620" y="282" width="40" height="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <rect x="652" y="256" width="80" height="96" rx="10" fill="#4a6fa5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="662" y="270" width="60" height="10" rx="3" fill="#6f8fbf"/>
+  <path d="M556,352 C556,370 558,388 560,404" fill="none" stroke="#2f74b5" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+  <path d="M500,392 L512,450 L608,450 L620,392 Z" fill="#e9ecef" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M505,416 L512,450 L608,450 L615,416 Z" fill="#a9d1f0" stroke-linejoin="round"/>
+  <line x1="505" y1="416" x2="615" y2="416" stroke="#2f74b5" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="480" y="450" width="160" height="20" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="536" y="454" width="48" height="12" rx="2" fill="#e9f3e1" stroke="#1f2933" stroke-width="1.5"/>
+  <path d="M730,280 C770,250 800,260 840,335" fill="none" stroke="#c92a2a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M730,330 C770,370 800,400 840,375" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="820" y="330" width="110" height="50" rx="4" fill="#f1f3f5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="846" y="346" width="58" height="18" rx="8" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <rect x="856" y="346" width="6" height="18" fill="#b8622d"/>
+  <rect x="870" y="346" width="6" height="18" fill="#1f2933"/>
+  <rect x="884" y="346" width="6" height="18" fill="#c92a2a"/>
+  <rect x="960" y="300" width="96" height="130" rx="10" fill="#ffd43b" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="970" y="312" width="76" height="34" rx="3" fill="#e9f3e1" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1008" cy="378" r="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="1008" y1="378" x2="1018" y2="366" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="988" cy="416" r="6" fill="#1f2933"/>
+  <circle cx="1028" cy="416" r="6" fill="#c92a2a"/>
+  <rect x="1080" y="300" width="96" height="130" rx="10" fill="#ffd43b" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1090" y="312" width="76" height="34" rx="3" fill="#e9f3e1" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1128" cy="378" r="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <line x1="1128" y1="378" x2="1138" y2="366" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="1108" cy="416" r="6" fill="#1f2933"/>
+  <circle cx="1148" cy="416" r="6" fill="#c92a2a"/>
+  <path d="M930,345 C945,345 950,420 985,418" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M930,365 C960,365 1000,440 1028,418" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M904,330 C940,250 1080,250 1105,418" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M876,380 C900,460 1130,460 1148,418" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="794" y="472.5" width="11.5" height="8.5" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="797.5" y="480.5" width="5" height="5" fill="#6c757d"/>
+  <circle cx="800" cy="520" r="36" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="800" cy="520" r="29.52" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <line x1="800" y1="495.5" x2="800" y2="492" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="812" y1="499" x2="814" y2="495.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="821" y1="508" x2="824.5" y2="506" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="824.5" y1="520" x2="828" y2="520" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="821" y1="532" x2="824.5" y2="534" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="812" y1="541" x2="814" y2="544.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="800" y1="544.5" x2="800" y2="548" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="788" y1="541" x2="786" y2="544.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="779" y1="532" x2="775.5" y2="534" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="775.5" y1="520" x2="772" y2="520" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="779" y1="508" x2="775.5" y2="506" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="788" y1="499" x2="786" y2="495.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="800" y1="520" x2="800" y2="496" stroke="#c92a2a" stroke-width="2.52" stroke-linecap="round"/>
+  <circle cx="800" cy="520" r="2.88" fill="#1f2933"/>
+  <g transform="translate(980,530) rotate(-4)"><rect x="-90" y="-24" width="180" height="48" rx="8" fill="#b2f2bb" stroke="#1f2933" stroke-width="2.5"/><line x1="-70" y1="-24" x2="-70" y2="24" stroke="#ffffff" stroke-width="4"/><line x1="-35" y1="-24" x2="-35" y2="24" stroke="#ffffff" stroke-width="4"/><line x1="0" y1="-24" x2="0" y2="24" stroke="#ffffff" stroke-width="4"/><line x1="35" y1="-24" x2="35" y2="24" stroke="#ffffff" stroke-width="4"/><line x1="70" y1="-24" x2="70" y2="24" stroke="#ffffff" stroke-width="4"/></g>
+</svg></p>
+<p>Suomessa vesivoimalaitokset muuttavat putoavan veden energiaa sähköksi. Pienoismallissa periaate on sama: vesi putoaa, pyörittää turbiinia, ja turbiinin akselilla oleva generaattori tuottaa sähköä. Tässä tutkimuksessa selvität mittaamalla, kuinka suuri osa veden energiasta päätyy pienoismallissa sähköksi ja muuttuuko osuus, kun voimalaitosta käytetään eri tavoin. Mittaa, laske ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>rajaamaan tutkittavan järjestelmän ja päättelemään, mitkä suureet on mitattava sille tulevan ja siitä saatavan tehon selvittämiseksi</li><li>määrittämään laitteen hyötysuhteen mitatuista tehoista ja tarkastelemaan, miten se muuttuu käyttötilanteen mukana</li><li>arvioimaan, miten usean mitatun suureen epävarmuudet vaikuttavat tulokseen, ja tunnistamaan tärkeimmät energiahäviöt</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Hyötysuhde eri virtaamilla tai putouskorkeuksilla</strong>: fysiikka F2 · koe E3</li><li><strong>Kuorman vaikutus sähkötehoon ja hyötysuhteeseen</strong>: fysiikka F2 · koe E3</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="OO" checked><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy2-4.html">Hyötysuhde</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Hyötysuhde on hyötytehon ja laitteeseen otetun tehon suhde.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy2-3.html">Teho P = ΔE/Δt</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Teho on energian muutos jaettuna ajalla, jossa se tapahtuu.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-7.html">Liike-energia, potentiaalienergia ja mekaaninen energia</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Veden potentiaalienergia $E_\text{p} = mgh$ on energia, jota voimala muuttaa sähköksi.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy4-15.html">Vesi- ja tuulivoima energian muuntajina</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Luku kertoo, miten oikea vesivoimala muuttaa putoavan veden energiaa sähköksi.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Sähköteho $P = UI$ <span class="inv-mod">(FY6: Sähköteho ja Joulen laki)</span><span class="inv-why">Generaattorin kuormalle antama teho lasketaan jännitteestä ja sähkövirrasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Jännitteen ja sähkövirran mittaaminen yleismittarilla <span class="inv-mod">(FY6: Mittaukset virtapiirissä)</span><span class="inv-why">Virtamittari kytketään sarjaan kuorman kanssa ja jännitemittari sen rinnalle; lyhyt ohje on tällä sivulla.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuus ja tuloksen ilmoittaminen epävarmuuksineen.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen ja tulkinta.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Tehojen ja hyötysuhteen laskeminen taulukkolaskennalla ja kuvaajan piirtäminen ohjelmalla (esimerkiksi taulukkolaskenta tai Graphical Analysis) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Mittauksia on monta ja jokaisesta lasketaan kaksi tehoa ja hyötysuhde.</span></li></ul><h3>Välineet</h3><ul><li>vesivoimalaitoksen pienoismalli: vesiturbiini ja sen akselilla generaattori (opettajan pienoismalli voi poiketa tästä kuvauksesta)</li><li>vesiastia, jonka voi asettaa turbiinia korkeammalle, ja letku</li><li>keräysastia ja vaaka tai mitta-astia</li><li>ajanottoväline</li><li>mittanauha</li><li>kaksi yleismittaria tai jännite- ja virta-anturi</li><li>kuormavastus tai pienoislamppu (ei LEDiä eikä moottoria) sekä johtimia</li><li>liinoja roiskeiden kuivaamiseen</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Vettä ja sähköä käytetään yhdessä: virtapiirissä saa olla vain pienoismallin generaattori ja sen pienjännitekuorma, ei koskaan verkkovirtaa. Älä tuo verkkovirtaan kytkettyjä laitteita vesiastioiden lähelle; jos järjestelyssä on verkkovirralla toimiva pumppu, opettaja asentaa sen.</li><li>Pidä mittarit, johtimet ja liitokset kuivina ja erillään vesiastioista ja letkusta. Kuivaa roiskeet heti, myös lattialta, ettei kukaan liukastu.</li><li>Varmista, että korkealle nostettu vesiastia on tukevasti paikallaan eikä teline kaadu. Täytä ja nosta astia varovasti.</li><li>Pidä sormet ja johtimet poissa pyörivän turbiinin ja akselin luota.</li><li>Valitse virtamittarin mittausalue niin, ettei mittarin suurin sallittu virta ylity; aloita suurimmalla alueella.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> mikä on pienoisvoimalaitoksen hyötysuhde epävarmuuksineen ja miten se muuttuu, kun veden virtaamaa tai putouskorkeutta muutetaan. Selvitä myös, mitä energiaa tai tehoa järjestelmään syötetään, mitä siitä saadaan hyödyksi ja mitä suureita näiden määrittämiseksi on mitattava.</p>
+<p><strong>Päätät itse:</strong> mitä järjestelmään luet kuuluvaksi ja mistä mihin putouskorkeus mitataan, muutatko virtaamaa vai putouskorkeutta ja millä arvoilla, miten mittaat veden määrän ja ajan, mittauspisteiden ja toistojen määrän, kuvaajan, jolla esität tulokset, sekä tavan, jolla arvioit tuloksen epävarmuuden. Osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.</p>
+<p>Opettajan pienoismalli voi poiketa tämän sivun kuvista: sovella suunnitelmasi siihen laitteeseen, joka teillä on käytössä.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, kuorman vaikutus sähkötehoon ja hyötysuhteeseen, kuuluu työhösi, jos pienoismallin kuormaa voi vaihtaa.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Kuinka suuri osa veden energiasta arvelet päätyvän pienoismallissa sähköksi: lähes kaikki, noin puolet vai pieni osa? Miksi?</li>
+<li>Mihin se osa veden energiasta joutuu, joka ei muutu sähköksi? Luettele ainakin kolme kohdetta.</li>
+<li>Jos veden teho kaksinkertaistuu, kaksinkertaistuuko myös sähköteho? Pysyykö hyötysuhde samana?</li>
+<li>Minkä suureen mittaaminen on todennäköisesti vaikeinta, ja miten voisit helpottaa sitä?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="tutkimuskysymyksesta-mitattaviksi-suureiksi"><h2 id="h-tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</h2>
+<p>Energiaa tai tehoa ei voi lukea suoraan mistään mittarista. Ennen kuin luet eteenpäin, kirjaa:</p>
+<ol>
+<li>Mitä energiaa järjestelmään syötetään, ja mistä suureista sen teho saadaan?</li>
+<li>Mitä energiaa järjestelmästä saadaan hyödyksi, ja mistä suureista sen teho saadaan?</li>
+<li>Missä järjestelmä alkaa ja mihin se päättyy? Esimerkiksi: kuuluuko veden putoaminen turbiinin alapuolella keräysastiaan järjestelmään?</li>
+</ol>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p><strong>Hyötysuhde</strong> $\eta$ on laitteen antaman hyötytehon ja laitteeseen otetun tehon suhde <span class="inv-help">Tarvitsetko apua? → <a href="fy2-4.html">Hyötysuhde</a></span>:</p>
+<p>$$\eta = \frac{P_\text{s}}{P_\text{o}}$$</p>
+<p>missä $P_\text{s}$ on tässä työssä generaattorin kuormalle antama sähköteho ja $P_\text{o}$ veden voimalaitokselle tuoma teho. Energia säilyy, joten hyötysuhde on enintään $100\,\%$.</p>
+<p><strong>Teho</strong> on energian muutos jaettuna ajalla, jossa muutos tapahtuu: $P = \dfrac{\Delta E}{\Delta t}$ <span class="inv-help">Tarvitsetko apua? → <a href="fy2-3.html">Teho</a></span>. Kun vesi laskeutuu korkeuden $h$ verran, sen <strong>potentiaalienergia</strong> pienenee määrällä $mgh$ <span class="inv-help">Tarvitsetko apua? → <a href="fy4-7.html">Potentiaalienergia</a></span>. Oikea vesivoimala käyttää juuri tätä energiaa <span class="inv-help">Tarvitsetko apua? → <a href="fy4-15.html">Vesi- ja tuulivoima</a></span>.</p>
+<p><strong>Sähköteho.</strong> Kun generaattori syöttää sähkövirtaa kuormaan, esimerkiksi vastukseen, kuorman saama sähköteho on</p>
+<p>$$P_\text{s} = UI$$</p>
+<p>missä $U$ on kuorman napojen välinen jännite (yksikkö voltti, $\text{V}$) ja $I$ kuorman läpi kulkeva sähkövirta (yksikkö ampeeri, $\text{A}$). Teho saadaan watteina, koska $1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W}$. Jännite mitataan jännitemittarilla, joka kytketään kuorman rinnalle, ja sähkövirta virtamittarilla, joka kytketään sarjaan kuorman kanssa, niin että sama virta kulkee molempien läpi. Sähkötehoa käsitellään tarkemmin moduulissa FY6.</p>
+<p>Kysy opettajalta, antaako pienoismallin generaattori tasa- vai vaihtojännitettä, ja aseta molemmat mittarit sen mukaan. Vaihtojännitteellä $P_\text{s} = UI$ lasketaan mittarien näyttämistä tehollisarvoista, ja se pätee, kun kuormana on vastus.</p>
+<div class="inv-tuki" data-modes="OO"><p>Tarkista kirjauksesi tästä. Rajataan järjestelmäksi vesi, turbiini ja generaattori siitä, kun vesi lähtee ylemmän astian vedenpinnalta, siihen, kun se on kulkenut turbiinin läpi. <strong>Putouskorkeus</strong> $h$ mitataan ylemmän astian vedenpinnasta turbiinin tasolle, esimerkiksi turbiinin akselin tasolle, sama kohta jokaisessa mittauksessa. Turbiinin alapuolinen putoaminen keräysastiaan ei pyöritä turbiinia, joten se jää järjestelmän ulkopuolelle.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 470" role="img" aria-label="Kaaviokuva. Vasemmalla ylhäällä on vesiastia. Sen pohjasta letku vie veden alas turbiinille. Putouskorkeus h on merkitty astian vedenpinnasta turbiinin akselin tasolle. Turbiinin läpi kulkenut vesi valuu keräysastiaan, joka on vaa&#x27;an päällä. Turbiinin akselilla on generaattori G. Generaattorin virtapiirissä on kuormavastus R, sen kanssa sarjassa virtamittari A ja sen rinnalla jännitemittari V." style="max-width:100%;font-size:24px">
+  <rect x="80" y="40" width="130" height="90" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="82" y="70" width="126" height="58" rx="3" fill="#a9d1f0"/>
+  <line x1="82" y1="70" x2="208" y2="70" stroke="#2f74b5" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M190,130 L190,236 Q190,262 216,264" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M190,130 L190,236 Q190,262 216,264" fill="none" stroke="#a9d1f0" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="255" cy="300" r="36" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="267.5" y1="302.5" x2="294.5" y2="308" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="294.5" cy="308" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="262" y1="310.5" x2="277.5" y2="333.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="277.5" cy="333.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="252.5" y1="312.5" x2="247" y2="339.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="247" cy="339.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="244.5" y1="307" x2="221.5" y2="322.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="221.5" cy="322.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="242.5" y1="297.5" x2="215.5" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="215.5" cy="292" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="248" y1="289.5" x2="232.5" y2="266.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="232.5" cy="266.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="257.5" y1="287.5" x2="263" y2="260.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="263" cy="260.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="265.5" y1="293" x2="288.5" y2="277.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="288.5" cy="277.5" r="4.68" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="255" cy="300" r="7.92" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="90" y="337.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{turbiini}$</div></foreignObject>
+  <path d="M255,346 L255,382" fill="none" stroke="#2f74b5" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M205,372 L215,430 L295,430 L305,372" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M210,400 L215,430 L295,430 L300,400 Z" fill="#a9d1f0" stroke-linejoin="round"/>
+  <rect x="195" y="430" width="120" height="16" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="322" y="423.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{vaaka}$</div></foreignObject>
+  <line x1="30" y1="70" x2="78" y2="70" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="30" y1="300" x2="214" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="48" y1="185" x2="48" y2="85" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M48,74 L53.5,86 L42.5,86 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="48" y1="185" x2="48" y2="285" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M48,296 L42.5,284 L53.5,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="58" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$h$</div></foreignObject>
+  <rect x="291" y="295" width="54" height="10" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="372" y1="160" x2="372" y2="274" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="372" y1="326" x2="372" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="372" y1="160" x2="500" y2="160" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="372" y1="400" x2="500" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="500" y1="160" x2="500" y2="240" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="500" y1="320" x2="500" y2="400" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="488" y="240" width="24" height="80" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="462" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R$</div></foreignObject>
+  <line x1="500" y1="210" x2="566" y2="210" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="500" y1="350" x2="566" y2="350" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="566" y1="210" x2="566" y2="258" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="566" y1="302" x2="566" y2="350" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="500" cy="210" r="4.5" fill="#1f2933"/>
+  <circle cx="500" cy="350" r="4.5" fill="#1f2933"/>
+  <circle cx="372" cy="300" r="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="362" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$G$</div></foreignObject>
+  <circle cx="436" cy="160" r="20" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="426" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A$</div></foreignObject>
+  <circle cx="566" cy="280" r="20" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="556" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V$</div></foreignObject>
+</svg></p>
+<p>Kun ajassa $\Delta t$ turbiinin läpi virtaa veden massa $\Delta m$, veden potentiaalienergia pienenee määrällä $\Delta m \cdot g h$. Veden voimalaitokselle tuoma teho on siis</p>
+<p>$$P_\text{o} = \frac{\Delta m}{\Delta t} \cdot g h$$</p>
+<p>missä $\dfrac{\Delta m}{\Delta t}$ on massavirta eli sekunnissa turbiinin läpi kulkeva veden massa ($\text{kg/s}$), $g$ putoamiskiihtyvyys ja $h$ putouskorkeus. Malli edellyttää, että</p>
+<ul>
+<li>vesi on ylemmän astian pinnalla lähes levossa ja virtaa alas pelkän painovoiman vaikutuksesta. Jos pienoismalliin tulee vettä vesijohdosta tai pumpulta, putouskorkeus ei yksin kerro veden energiaa: kysy opettajalta, miten järjestely tehdään.</li>
+<li>putouskorkeus pysyy mittauksen ajan lähes samana. Jos ylemmän astian pinta laskee mittauksen aikana selvästi, käytä pinnan korkeuden keskiarvoa ja ota pinnan lasku huomioon epävarmuudessa.</li>
+</ul>
+<p>Turbiinista lähtevällä vedellä on vielä liike-energiaa. Se ei muutu sähköksi, joten tässä rajauksessa se on yksi häviöistä.</p>
+<p>Hyötysuhde on tällöin</p>
+<p>$$\eta = \frac{P_\text{s}}{P_\text{o}} = \frac{UI}{\dfrac{\Delta m}{\Delta t} \cdot g h}$$</p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona. Kirjaa järjestelmän rajaus perusteluineen.</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Valitse, muutatko virtaamaa, esimerkiksi letkun hanalla tai suuttimen koolla, vai putouskorkeutta, eli ylemmän astian korkeutta. Pidä toinen niistä ja kuorma vakiona. Tee mittaus ainakin viidellä eri arvolla. Jokaisessa mittauksessa mittaat veden massan $\Delta m$, joka kulkee turbiinin läpi ajassa $\Delta t$, putouskorkeuden $h$ sekä kuorman jännitteen $U$ ja sähkövirran $I$ samana aikana. Kirjaa päätöksesi perusteluineen.</p>
+<p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miten mittaat massan $\Delta m$? Punnitsetko keräysastian ennen ja jälkeen vai mittaatko veden tilavuuden ja käytät veden tiheyttä?</li>
+<li>Kuinka pitkä keräysaika $\Delta t$ tarvitaan, jotta ajanoton aloitus ja lopetus eivät vaikuta paljon tulokseen?</li>
+<li>Pysyykö ylemmän astian vedenpinta paikallaan, vai pitääkö sitä täyttää mittauksen aikana tai seurata pinnan laskua?</li>
+<li>Heilahtelevatko jännite ja virta? Miten luet niistä edustavan arvon samalta ajalta kuin veden keräys?</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle. Kirjaa myös, kuinka tarkasti luit kunkin suureen, ja huolehdi, että jokainen mittaus tehdään mahdollisimman samalla tavalla. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Mittausepävarmuuden arvioiminen</a></span></p>
+<div class="inv-tuki" data-modes="OO"><p>Voit käyttää esimerkiksi tällaista taulukkoa:</p>
+<table>
+<thead>
+<tr>
+<th>$h\ (\text{m})$</th>
+<th>$\Delta m\ (\text{kg})$</th>
+<th>$\Delta t\ (\text{s})$</th>
+<th>$U\ (\text{V})$</th>
+<th>$I\ (\text{A})$</th>
+<th>$P_\text{o}\ (\text{W})$</th>
+<th>$P_\text{s}\ (\text{W})$</th>
+<th>$\eta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Jos punnitset keräysastian ennen ja jälkeen, kirjaa molemmat lukemat omiin sarakkeisiinsa ja laske $\Delta m$ niiden erotuksena. Aloita veden keräys vasta, kun turbiinin pyörimisnopeus ja mittarien lukemat ovat asettuneet. Toista ainakin yksi mittaus, niin näet, kuinka hyvin tulos toistuu.</p></div>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Laske jokaisesta mittauksesta veden teho, sähköteho ja hyötysuhde. Esitä tulokset kuvaajana, josta näkyy, miten hyötysuhde tai sähköteho muuttuu käyttötilanteen mukana. Merkitse akseleille suureet ja yksiköt. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Graafinen esitys</a></span></p>
+<p>Vastaa:</p>
+<ol>
+<li>Onko hyötysuhde sama kaikissa mittauksissa? Jos ei, millä tavalla se muuttuu?</li>
+<li>Onko sähköteho suoraan verrannollinen veden tehoon?</li>
+<li>Millä käyttötavalla pienoismalli toimii parhaiten, ja mistä arvelet sen johtuvan?</li>
+</ol>
+<div class="inv-tuki" data-modes="OO"><p><strong>Kuvaajan valinta.</strong> Kaksi luontevaa kuvaajaa ovat hyötysuhde $\eta$ muutetun suureen funktiona sekä sähköteho $P_\text{s}$ veden tehon $P_\text{o}$ funktiona. Jälkimmäisessä kuvaajassa hyötysuhde on origosta mittauspisteeseen piirretyn suoran kulmakerroin. Jos kaikki pisteet ovat samalla origon kautta kulkevalla suoralla, hyötysuhde on sama kaikissa mittauksissa. Jos pisteet eivät ole sellaisella suoralla, hyötysuhde muuttuu. Mieti, mitä kuvaajan muoto kertoo häviöistä.</p>
+<p><svg data-fig="eta" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja: vaaka-akselilla veden teho P o ja pystyakselilla sähköteho P s, samassa mittakaavassa. Katkoviiva origosta on suora, jolla hyötysuhde on yksi eli sata prosenttia; sen yläpuolelle ei voi päätyä, koska energia säilyy. Toinen origon kautta kulkeva suora näyttää, että kaikilla saman origon kautta kulkevan suoran pisteillä on sama hyötysuhde. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="149" y1="330" x2="424" y2="330" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M436,330 L423,336 L423,324 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="150" y1="331" x2="150" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M150,44 L156,57 L144,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="120" y="335.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="442" y="315.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{o}$</div></foreignObject>
+  <foreignObject x="140" y="13.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{s}$</div></foreignObject>
+  <polygon points="150,330 410,70 150,70" fill="#c9c2b2" fill-opacity="0.35"/>
+  <polyline points="150,330 410,70" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <foreignObject x="165.5" y="92" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{mahdoton alue}$</div></foreignObject>
+  <foreignObject x="332" y="162" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\eta = 1$</div></foreignObject>
+  <polyline points="150,330 410,200" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="418" y="185.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{sama } \eta$</div></foreignObject>
+</svg></p></div>
+<p>Laskut ja kuvaajat voit tehdä esimerkiksi taulukkolaskennalla tai Graphical Analysis -ohjelmalla. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita hyötysuhde epävarmuuksineen ainakin yhdessä käyttötilanteessa ja perustele, miten arvioit epävarmuuden. Pohdi myös, mitkä mitatuista suureista vaikuttavat tulokseen eniten.</p>
+<div class="inv-tuki" data-modes="OO"><p>Hyötysuhde lasketaan viiden mitatun suureen tuloista ja osamääristä. Silloin tuloksen suhteellinen epävarmuus on likimain mitattujen suureiden suhteellisten epävarmuuksien summa:</p>
+<p>$$\begin{aligned}
+\frac{\Delta \eta}{\eta} \approx {} & \frac{\Delta U}{U} + \frac{\Delta I}{I} \\
+& + \frac{\Delta (\Delta m)}{\Delta m} + \frac{\Delta (\Delta t)}{\Delta t} \\
+& + \frac{\Delta h}{h}
+\end{aligned}$$</p>
+<p>Jos $\Delta m$ on kahden punnituksen erotus, sen epävarmuus on punnitusten epävarmuuksien summa. Jos jännite ja virta heilahtelevat, käytä epävarmuutena heilahtelun puolikasta. Jos vedenpinta laskee mittauksen aikana, käytä putouskorkeutena keskiarvoa ja epävarmuutena puolta pinnan laskusta. Laske jokaisen termin osuus erikseen: suurin termi kertoo, mitä mittausta kannattaa parantaa ensimmäisenä.</p>
+<p>Pyöristä $\Delta \eta$ yhteen merkitsevään numeroon ja $\eta$ samaan tarkkuuteen.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuuden lähteet, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan ne olisivat muuttaneet hyötysuhdetta? Muuttaisiko toisenlainen järjestelmän rajaus tulosta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Kuinka suuri on pienoismallin hyötysuhde, ja miten se riippuu käyttötilanteesta? Mitkä ovat tärkeimmät energiahäviöt, ja mihin energia niissä muuttuu? Viittaa kuvaajaan, esimerkiksi "kuvaajasta 1 nähdään, että …". Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+<p>Halutessasi arvioi yhden häviön suuruus, esimerkiksi turbiinista lähtevän veden liike-energia sekunnissa: mitä sinun pitäisi mitata, ja kuinka suuren osan veden tehosta se vie?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tutkimuskysymys ja tausta:</strong> mitä energiaa järjestelmään syötetään, mitä siitä saadaan hyödyksi ja miten tehot lasketaan mitatuista suureista.</li>
+<li><strong>Koejärjestely ja menetelmä:</strong> kuva järjestelystä, järjestelmän rajaus, mistä mihin putouskorkeus mitattiin, miten virtapiiri kytkettiin ja miten työturvallisuus huomioitiin.</li>
+<li><strong>Mittaustulokset:</strong> alkuperäiset lukemat omissa sarakkeissaan ja lasketut tehot ja hyötysuhde niiden oikealla puolella.</li>
+<li><strong>Tulos:</strong> hyötysuhde epävarmuuksineen oikein pyöristettynä ja kuvaaja sen riippuvuudesta käyttötilanteesta.</li>
+<li><strong>Luotettavuus:</strong> suurimmat epävarmuuden lähteet ja tärkeimmät energiahäviöt.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-kuorman-vaikutus"><h2 id="h-laajennus-kuorman-vaikutus">Laajennus: kuorman vaikutus</h2>
+<p>Generaattorin antama sähköteho ei riipu pelkästään vedestä vaan myös siitä, mihin generaattori on kytketty. Mitä suurempi virta generaattorin läpi kulkee, sitä enemmän generaattori jarruttaa turbiinia.</p>
+<p>Pidä veden virtaama ja putouskorkeus vakiona ja vaihda kuormaa, esimerkiksi eri suuruisiin vastuksiin. Ennen kuin mittaat, pohdi lausekkeen $P_\text{s} = UI$ avulla: mitä sähköteholle tapahtuu, jos kuorman resistanssi on hyvin suuri, jolloin virta on lähes nolla? Entä jos kuorma on lähes oikosulku, jolloin jännite on lähes nolla? Mittaa sitten sähköteho usealla kuormalla, esitä tulos kuvaajana ja päättele, millä kuormalla pienoismalli antaa suurimman sähkötehon ja suurimman hyötysuhteen. Vertaa tulosta päämittauksen tulokseen: kumpi vaikuttaa hyötysuhteeseen enemmän, päämittauksessa muuttamasi suure vai kuorma?</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Vihjeitä.</strong> Kirjaa jokaisesta kuormasta, mikä se oli, esimerkiksi vastuksen resistanssi. Aloita suurimmasta resistanssista: kun resistanssi pienenee, virta kasvaa, joten tarkista ennen jokaista mittausta, että virtamittarin mittausalue riittää. Laske hyötysuhde jokaisella kuormalla samalla tavalla kuin päämittauksessa. Pohdi myös: miksi kuorma, jolla sähköteho on suurin, antaa myös suurimman hyötysuhteen, kun veden teho pysyy vakiona?</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi kuvaajaan ja mittaustuloksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Lähdekortissa ei ole välineluetteloa, joten sivu kuvaa yleisen järjestelyn: turbiinia korkeammalla oleva vesiastia, letku, turbiini ja sen akselilla generaattori, kuormavastus, kaksi yleismittaria, keräysastia ja vaaka. Tarkista oman pienoismallisi kohdalta etukäteen, miten virtaamaa tai putouskorkeutta voi muuttaa, mikä kuorma generaattorille sopii ja mikä on suurin virta, jonka generaattori kuormineen antaa; kerro ryhmille virtamittarin sopiva mittausalue. Jos pienoismalliin syötetään vettä vesijohdosta tai pumpulla, veden tehoa ei saa pelkästä putouskorkeudesta: järjestä silloin syöttö korkealla olevasta astiasta tai kerro ryhmille, miten veden energia arvioidaan. Varaa liinoja, alusta roiskeille ja kuiva paikka mittareille. Kerro ryhmille, antaako generaattori tasa- vai vaihtojännitettä. Vaihtojännitteellä molemmat mittarit asetetaan vaihtosuureiden asentoon, ja $P = UI$ lasketaan tehollisarvoista, mikä pätee vastuskuormalle; käytä siksi kuormana vastusta tai lamppua, ei LEDiä tai moottoria.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Putouskorkeus mitataan eri kohdista eri mittauksissa tai keräysastian pohjaan asti, vaikka turbiinin alapuolinen putoaminen ei pyöritä turbiinia. Järjestelmän rajaus pitää päättää ennen mittausta ja kirjata.</li>
+<li>Massa ja massavirta sekoitetaan: veden tehossa tarvitaan sekunnissa turbiinin läpi kulkeva massa, ei astian koko vesimäärää.</li>
+<li>Keräysastian massaa ei vähennetä, tai tilavuus kirjataan millilitroina ja muunnetaan väärin kilogrammoiksi.</li>
+<li>Jännite ja virta luetaan eri aikaan kuin vesi kerätään, esimerkiksi heti käynnistyksen jälkeen ennen kuin pyöriminen on tasaantunut.</li>
+<li>Virtamittari kytketään kuorman rinnalle tai jännitemittari sarjaan.</li>
+<li>Hyötysuhteen oletetaan olevan vakio ja sähkötehon suoraan verrannollinen veden tehoon ilman, että asiaa tarkistetaan kuvaajasta.</li>
+<li>Laajennuksessa ei huomata, että kun veden teho pysyy vakiona, hyötysuhde on verrannollinen sähkötehoon: suurimman sähkötehon antava kuorma antaa siksi myös suurimman hyötysuhteen.</li>
+<li>Ylemmän astian vedenpinnan laskua mittauksen aikana ei huomioida.</li>
+<li>Häviöt nimetään epätarkasti ("energiaa katoaa"); energia muuttuu esimerkiksi turbiinista lähtevän veden liike-energiaksi, kitkassa sisäenergiaksi, roiskeiksi ja ääneksi sekä generaattorin ja johtimien lämmöksi.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Työ on vaativa (F2, E3), ja se sopii itsenäiseksi työksi tai osittain ohjatuksi työksi opintojakson loppupuolelle. Osittain ohjatussa työtavassa sivu antaa järjestelmän rajauksen, veden tehon mallin, taulukon ja epävarmuuden arvioinnin tavan; opiskelija päättää muutettavan suureen, sen arvot ja keräysajan. Itsenäisessä työtavassa sivu antaa vain periaatteet (hyötysuhde, teho, potentiaalienergia ja sähköteho): opiskelija rajaa järjestelmän, muodostaa veden tehon lausekkeen ja perustelee mittaukset itse, ja laajennus kuuluu työhön, jos kuormaa voi vaihtaa. Ennen mittausta kannattaa tarkistaa ryhmän suunnitelma: järjestelmän rajaus, putouskorkeuden mittaustapa ja virtapiirin kytkentä.</p>
+<p><strong>Turvallisuus.</strong> Vesi ja sähkö ovat työssä yhtä aikaa. Opiskelijoiden virtapiirissä on vain pienoismallin generaattori ja sen pienjännitekuorma, ei koskaan verkkovirtaa; verkkovirtaan kytketyt laitteet, kuten mahdollinen pumppu, ovat opettajan asentamia ja vesiastioista erillään. Mittarit pidetään kuivina, roiskeet kuivataan heti myös lattialta, ja korkealle nostettu vesiastia kiinnitetään tukevasti. Pyörivään turbiiniin ei kosketa. Laajennuksessa pienet kuormat kasvattavat virtaa, joten virtamittarin alue tarkistetaan ennen jokaista mittausta.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>

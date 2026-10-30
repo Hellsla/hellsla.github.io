@@ -1,0 +1,123 @@
+{
+  "id": "fy10-uppokuumennin",
+  "type": "investigation",
+  "title": "Uppokuumentimen hyötysuhteen määrittäminen",
+  "question": "Kuinka suuri osa uppokuumentimeen tuodusta sähköenergiasta lämmittää kalorimetrissä olevaa vettä, ja pysyykö tämä osuus samana koko lämmityksen ajan?",
+  "description": "Kokeellinen tutkimus: mittaa uppokuumentimen jännite, sähkövirta ja veden lämpötila ja määritä hyötysuhde kuvaajan kulmakertoimesta.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY2",
+    "FY3",
+    "FY6"
+  ],
+  "source": "Esimerkkityöt.pdf s. 1 (Uppokuumentimen hyötysuhteen määrittäminen), opettajan aineisto",
+  "learn": [
+    "laskemaan sähköisistä mittauksista ja lämpötilamittauksista energiat, joita voi verrata keskenään",
+    "määrittämään hyötysuhteen kuvaajan kulmakertoimesta ja perustelemaan, miksi kuvaaja on luotettavampi kuin yksittäinen mittauspiste",
+    "arvioimaan, miten lämpöhäviöt ja mittausjärjestely vaikuttavat tulokseen ja sen epävarmuuteen"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Hyötysuhde kuvaajasta",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Eristyksen vaikutus ja tulosten vertailu",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-4",
+      "why": "Hyötysuhde on hyödyksi saadun energian ja laitteeseen tuodun energian suhde."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-3",
+      "why": "Teho kertoo, kuinka paljon energiaa siirtyy aikayksikössä, joten vakioteholla energia on teho kertaa aika."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-6",
+      "why": "Veden saama lämpö lasketaan sen massasta, ominaislämpökapasiteetista ja lämpötilan muutoksesta, $Q = cm\\Delta T$."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-5",
+      "why": "Sähköenergia muuttuu kuumentimessa sisäenergiaksi, ja lämpö siirtää sitä veteen ja ympäristöön."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähköteho $P = UI$",
+      "missing": "FY6: Sähköteho ja Joulen laki",
+      "why": "Sähköenergia lasketaan jännitteestä, sähkövirrasta ja ajasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Virtamittarin ja jännitemittarin kytkeminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Virtamittari kytketään sarjaan ja jännitemittari rinnan kuumentimen kanssa; kytkentä on selitetty ja piirretty tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Lämpötila-anturin mittausten tallentaminen ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, ja anturi kirjaa lämpötilan tasaisin väliajoin."
+    }
+  ],
+  "equipment": [
+    "kalorimetri, jossa on uppokuumennin, kansi ja sekoitin",
+    "opettajan antama pienjännitevirtalähde ja johtimia",
+    "virtamittari ja jännitemittari (tai kaksi yleismittaria)",
+    "lämpömittari tai lämpötila-anturi",
+    "vaaka veden massan määrittämiseen",
+    "sekuntikello, jos lämpötilaa ei kirjata anturilla",
+    "laajennukseen tavallinen lasinen dekantterilasi"
+  ],
+  "safety": [
+    "Pidä sähkövirta opettajan ilmoittaman rajan alapuolella.",
+    "Kytke virta uppokuumentimeen vain, kun sen kierukka on kokonaan veden alla, ja katkaise virta ennen kuin nostat kuumentimen vedestä: kuivana kuumeneva kuumennin ylikuumenee ja voi rikkoutua tai polttaa.",
+    "Käytä vain opettajan antamaa pienjännitevirtalähdettä. Verkkojännitettä ei koskaan kytketä oppilaan virtapiiriin.",
+    "Pidä virtalähde, mittarit ja johtimien liitokset kuivina ja erillään vedestä, ja kuivaa roiskeet heti.",
+    "Lämmin vesi ja kuumennin voivat polttaa: älä kuumenna vettä kiehuvaksi, ja anna kuumentimen jäähtyä ennen kuin kosket siihen.",
+    "Lasinen lämpömittari rikkoutuu helposti: sekoita vettä sekoittimella, älä lämpömittarilla."
+  ]
+}

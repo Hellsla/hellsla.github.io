@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tuulivoimalan tutkiminen — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: selvitä, miten yksi valitsemasi tekijä vaikuttaa tuulivoimalan pienoismallin sähkötehoon, kun teho lasketaan mitatusta jännitteestä ja sähkövirrasta, ja laajennuksena määritä voimalan hyötysuhde.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-tuulivoimala.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Tuulivoimalan tutkiminen">
+<meta property="og:description" content="Kokeellinen tutkimus: selvitä, miten yksi valitsemasi tekijä vaikuttaa tuulivoimalan pienoismallin sähkötehoon, kun teho lasketaan mitatusta jännitteestä ja sähkövirrasta, ja laajennuksena määritä voimalan hyötysuhde.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-tuulivoimala.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Tuulivoimalan tutkiminen</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Tuulivoimalan tutkiminen</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-tuulivoimalan-hyotysuhde">Laajennus: tuulivoimalan hyötysuhde</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Tuulivoimalan tutkiminen</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Miten valitsemasi tekijä vaikuttaa tuulivoimalan pienoismallin tuottamaan sähkötehoon?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: työpöydän vasemmassa reunassa on puhallin, joka puhaltaa kohti tuulivoimalan pienoismallia. Ilmavirtaa kuvaavat katkoviivat kulkevat puhaltimesta roottoriin. Voimalan juurelta lähtevät johdot kulkevat säädettävään vastukseen ja kahteen yleismittariin. Puhaltimen ja voimalan välissä pöydällä on mittanauha, ja pöydällä on myös käsikäyttöinen tuulimittari ja vihko." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10th-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10th-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10th-wall)"/>
+  <rect x="0" y="430" width="1200" height="170" fill="url(#fy10th-desk)"/>
+  <line x1="0" y1="452" x2="1200" y2="448" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="476" x2="1200" y2="472" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="500" x2="1200" y2="496" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="524" x2="1200" y2="520" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="548" x2="1200" y2="544" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="430" x2="1200" y2="430" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <ellipse cx="150" cy="438" rx="78" ry="14" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="140" y="300" width="20" height="138" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="108" y="190" width="80" height="72" rx="18" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="140" y="255" width="20" height="50" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="205" cy="225" rx="46" ry="128" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <ellipse cx="205" cy="225" rx="34.5" ry="96" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="205" cy="225" rx="23" ry="64" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <ellipse cx="205" cy="225" rx="11.5" ry="32" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <line x1="205" y1="225" x2="251" y2="225" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="245" y2="289" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="228" y2="336" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="205" y2="353" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="182" y2="336" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="165" y2="289" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="159" y2="225" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="165" y2="161" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="182" y2="114" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="205" y2="97" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="228" y2="114" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="205" y1="225" x2="245" y2="161" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
+  <circle cx="205" cy="225" r="12" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M275,138 C385,126 520,146.6 580,138.5" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M275,182 C385,176 520,188.8 580,185" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M275,226 C385,226 520,231.0 580,231" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M275,270 C385,276 520,273.2 580,277" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M275,314 C385,326 520,315.4 580,323.5" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <rect x="600" y="418" width="110" height="18" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M654,418 L659,237 H669 L674,418 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="654" y="218" width="62" height="26" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M647.5,225.5 L655.5,199.5 L663,128 L659,125 L648,192.5 L643,221.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M644,241 L649.5,270.5 L672,321 L675,315 L656,258 L648,233.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M640.5,226.5 L626.5,223 L597,243.5 L598,253.5 L628,242 L641,238.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="644" cy="231" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <path d="M644,221 Q626,231 644,241 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="860" y="372" width="150" height="58" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="872" y="386" width="126" height="18" rx="4" fill="#e8b27a" stroke="#1f2933" stroke-width="2"/>
+  <line x1="878" y1="386" x2="878" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="887" y1="386" x2="887" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="896" y1="386" x2="896" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="905" y1="386" x2="905" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="914" y1="386" x2="914" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="923" y1="386" x2="923" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="932" y1="386" x2="932" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="941" y1="386" x2="941" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="950" y1="386" x2="950" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="959" y1="386" x2="959" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="968" y1="386" x2="968" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="977" y1="386" x2="977" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="986" y1="386" x2="986" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="995" y1="386" x2="995" y2="404" stroke="#a46a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="912" y="356" width="22" height="28" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="870" y1="366" x2="1000" y2="366" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="868" cy="416" r="5" fill="#1f2933"/>
+  <circle cx="1002" cy="366" r="5" fill="#1f2933"/>
+  <rect x="740" y="300" width="96" height="130" rx="10" fill="#ffd43b" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="750" y="310" width="76" height="110" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="758" y="318" width="60" height="30" rx="3" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="788" cy="380" r="17" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="788" y1="380" x2="797" y2="368" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="770" cy="408" r="5" fill="#1f2933"/>
+  <circle cx="806" cy="408" r="5" fill="#1f2933"/>
+  <rect x="1060" y="300" width="96" height="130" rx="10" fill="#ffd43b" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1070" y="310" width="76" height="110" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1078" y="318" width="60" height="30" rx="3" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="1108" cy="380" r="17" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="1108" y1="380" x2="1117" y2="368" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="1090" cy="408" r="5" fill="#1f2933"/>
+  <circle cx="1126" cy="408" r="5" fill="#1f2933"/>
+  <path d="M700,428 Q712,470 770,408" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M806,408 Q820,470 868,416" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M1002,366 Q900,520 708,432" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M1090,408 Q1000,480 868,416" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M1126,408 Q1110,470 1002,366" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="232" y="470" width="420" height="26" rx="3" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="240" y1="470" x2="240" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="250" y1="470" x2="250" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="260" y1="470" x2="260" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="270" y1="470" x2="270" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="280" y1="470" x2="280" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="290" y1="470" x2="290" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="300" y1="470" x2="300" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="310" y1="470" x2="310" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="320" y1="470" x2="320" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="330" y1="470" x2="330" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="340" y1="470" x2="340" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="350" y1="470" x2="350" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="360" y1="470" x2="360" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="370" y1="470" x2="370" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="380" y1="470" x2="380" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="390" y1="470" x2="390" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="400" y1="470" x2="400" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="410" y1="470" x2="410" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="420" y1="470" x2="420" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="430" y1="470" x2="430" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="440" y1="470" x2="440" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="450" y1="470" x2="450" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="460" y1="470" x2="460" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="470" y1="470" x2="470" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="480" y1="470" x2="480" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="490" y1="470" x2="490" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="500" y1="470" x2="500" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="510" y1="470" x2="510" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="520" y1="470" x2="520" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="530" y1="470" x2="530" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="540" y1="470" x2="540" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="550" y1="470" x2="550" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="560" y1="470" x2="560" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="570" y1="470" x2="570" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="580" y1="470" x2="580" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="590" y1="470" x2="590" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="600" y1="470" x2="600" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="610" y1="470" x2="610" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="620" y1="470" x2="620" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="630" y1="470" x2="630" y2="478" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="640" y1="470" x2="640" y2="484" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <g transform="translate(450,550) rotate(-12)"><rect x="-14" y="-6" width="96" height="26" rx="10" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/><circle cx="-34" cy="7" r="30" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/><circle cx="-34" cy="7" r="7" fill="#1f2933"/><line x1="-34" y1="7" x2="-8" y2="7" stroke="#1f2933" stroke-width="1.5"/><line x1="-34" y1="7" x2="-21" y2="29.5" stroke="#1f2933" stroke-width="1.5"/><line x1="-34" y1="7" x2="-47" y2="29.5" stroke="#1f2933" stroke-width="1.5"/><line x1="-34" y1="7" x2="-60" y2="7" stroke="#1f2933" stroke-width="1.5"/><line x1="-34" y1="7" x2="-47" y2="-15.5" stroke="#1f2933" stroke-width="1.5"/><line x1="-34" y1="7" x2="-21" y2="-15.5" stroke="#1f2933" stroke-width="1.5"/></g>
+  <g transform="translate(1000,540) rotate(-5)"><rect x="-80" y="-34" width="200" height="66" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-64" y1="-18" x2="104" y2="-18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="-6" x2="104" y2="-6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="6" x2="104" y2="6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="18" x2="104" y2="18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="30" x2="104" y2="30" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/></g>
+</svg></p>
+<p>Tuulivoimala muuntaa liikkuvan ilman energiaa sähköksi. Kuinka paljon sähköä siitä saadaan, riippuu monesta asiasta: tuulesta, lavoista ja siitä, mitä voimalaan on kytketty. Tässä tutkimuksessa valitset yhden tekijän, muutat sitä hallitusti ja selvität mittaamalla, miten se vaikuttaa pienoismallin tuottamaan sähkötehoon. Suunnittele, mittaa ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>valitsemaan tutkittavan tekijän ja päättämään, mitä muutat, mitä mittaat ja miten pidät muut tekijät vakioina</li><li>määrittämään sähkötehon mitatusta jännitteestä ja sähkövirrasta</li><li>arvioimaan, ovatko mittaamasi erot suurempia kuin mittausten epävarmuus</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Yhden tekijän vaikutus sähkötehoon</strong>: fysiikka F2 · koe E2</li><li><strong>Tuulivoimalan hyötysuhde</strong>: fysiikka F2 · koe E3</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="OO" checked><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy2-3.html">Teho P = ΔE/Δt</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Teho kertoo, kuinka paljon energiaa muuntuu tai siirtyy sekunnissa; voimalan sähköteho on kuormaan sekunnissa siirtyvä energia.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy4-15.html">Vesi- ja tuulivoima energian muuntajina</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Luku kertoo, miten tuulivoimala muuntaa tuulen liike-energiaa sähköksi, ja antaa laajennuksessa tarvittavan tuulen tehon $\tfrac{1}{2}\rho A v^3$.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> <a href="fy2-4.html">Hyötysuhde</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Laajennuksessa voimalan hyötysuhde lasketaan sähkötehon ja tuulen tehon suhteena.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Sähköteho $P = UI$ <span class="inv-mod">(FY6: Sähköteho ja Joulen laki)</span><span class="inv-why">Voimalan sähköteho lasketaan kuorman jännitteestä ja sähkövirrasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Jännitteen ja sähkövirran mittaaminen yleismittarilla <span class="inv-mod">(FY6: Mittaukset virtapiirissä)</span><span class="inv-why">Virtamittari kytketään sarjaan kuorman kanssa ja jännitemittari sen rinnalle; kytkentäkaavio on tällä sivulla.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuus, toistomittaukset ja tuloksen ilmoittaminen epävarmuuksineen.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen ja tulkinta.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu: muuttuja, mitattavat suureet ja vakioina pidettävät tekijät.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Taulukon laskut ja mittauspisteiden kuvaaja ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Teho lasketaan jokaisesta mittauksesta, ja tekijän vaikutus nähdään kuvaajasta.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Jännitteen ja sähkövirran tallentaminen antureilla <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Heiluvista lukemista saa tallennuksen avulla luotettavamman keskiarvon kuin silmällä lukemalla.</span></li></ul><h3>Välineet</h3><ul><li>tuulivoimalan pienoismalli, jossa on vaihdettavat tai säädettävät lavat</li><li>puhallin</li><li>jännitemittari ja virtamittari (esimerkiksi kaksi yleismittaria) tai jännite- ja virta-anturi</li><li>säädettävä kuormitusvastus</li><li>johtimia</li><li>mittanauha tai pitkä viivain</li><li>tarvittaessa tuulimittari tuulen nopeuden mittaamiseen</li><li>lapakulman tutkimiseen astelevy, jos navassa ei ole kulma-asteikkoa</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Pidä kädet, hiukset, korut ja johdot poissa pyörivien lapojen ulottuvilta, ja varmista, etteivät lavat pääse osumaan muihin esineisiin.</li><li>Vaihda lapoja, muuta niiden kulmaa tai siirrä voimalaa vain, kun puhallin on sammutettu ja roottori on pysähtynyt.</li><li>Pidä kasvot poissa roottorin pyörimistasosta, kun roottori pyörii: irronnut lapa sinkoutuu tässä tasossa.</li><li>Aseta puhallin ja voimala tukevasti, etteivät ne kaadu tai liiku ilmavirran tai tärinän takia.</li><li>Puhallin on verkkovirtalaite: käytä sitä vain ehjänä, älä avaa sitä äläkä kytke mitään sen johtoihin. Voimalan virtapiiriin ei kytketä verkkojännitettä.</li><li>Kytke virtamittari aina sarjaan kuorman kanssa, älä koskaan suoraan generaattorin napoihin.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> miten tuulivoimalan pienoismallin sähköteho riippuu yhdestä valitsemastasi tekijästä ja millä tekijän arvoilla teho on suurin mittausalueellasi, ovatko mittaamasi erot suurempia kuin mittausten epävarmuus, ja mistä järjestelmän energiahäviöt aiheutuvat.</p>
+<p>Tutkittavaksi tekijäksi voit valita esimerkiksi tuulen nopeuden, lapojen lukumäärän, lapojen kulman, voimalan etäisyyden puhaltimesta tai sähköisen kuormituksen eli kuormitusvastuksen.</p>
+<p><strong>Päätät itse</strong> (molemmissa työtavoissa):</p>
+<ul>
+<li>tutkittavan tekijän ja sen arvot</li>
+<li>mittausten ja toistojen määrän</li>
+<li>miten pidät muut tekijät vakioina ja miten varmistat sen</li>
+<li>miten luet heiluvat mittarilukemat</li>
+<li>kuvaajan, josta tekijän vaikutus nähdään.</li>
+</ul>
+<p>Osittain ohjatussa työtavassa sivu antaa näihin tukea ja neuvoo, miten epävarmuus arvioidaan.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Valitset lisäksi epävarmuuden arviointitavan ja perustelet kaikki valintasi itse.</p>
+<p>Laajennus, voimalan hyötysuhteen määrittäminen, kuuluu työhösi, jos käytössäsi on tuulimittari: vertaa tulostasi laajennuksessa kerrottuun ylärajaan.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Minkä tekijän valitsisit alustavasti? Voit vielä vaihtaa sen suunnitteluvaiheessa. Miten arvelet sähkötehon muuttuvan, kun tekijän arvo kasvaa? Luonnostele ennustamasi kuvaaja.</li>
+<li>Kasvaako tai pieneneekö teho samaan suuntaan koko mittausalueella, vai voiko sillä olla suurin arvo jollakin tekijän arvolla? Perustele.</li>
+<li>Vain osa voimalaa pyörittävän tuulen energiasta muuttuu sähköksi. Mihin loput energiasta joutuu?</li>
+<li>Mitkä asiat voivat muuttua mittauksen aikana huomaamattasi, ja miten ne näkyisivät tuloksissa?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="tutkimuskysymyksesta-mitattaviksi-suureiksi"><h2 id="h-tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</h2>
+<p>Tutkimuskysymyksessä on kaksi suuretta: valitsemasi tekijä ja sähköteho. Ennen kuin luet eteenpäin, kirjaa:</p>
+<ol>
+<li>Mikä on muuttuja, jota muutat, ja miten muutat ja mittaat sen arvoa?</li>
+<li>Mitä suureita mittaat jokaisella tekijän arvolla, jotta saat sähkötehon selville?</li>
+<li>Mitkä muut tekijät vaikuttavat sähkötehoon, ja miten pidät ne vakioina?</li>
+</ol>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Tuuli pyörittää voimalan roottoria, ja roottorin akseli pyörittää generaattoria, joka muuntaa pyörimisen energian sähköenergiaksi. Generaattoriin kytketty kuorma, tässä kuormitusvastus, muuntaa sähköenergian lämmöksi. Energiaketjun jokaisessa vaiheessa osa energiasta muuttuu muuksi kuin siksi, mitä seuraava vaihe tarvitsee. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-15.html">Vesi- ja tuulivoima energian muuntajina</a></span></p>
+<p><strong>Teho</strong> kertoo, kuinka paljon energiaa muuntuu tai siirtyy aikayksikössä: $P = \dfrac{\Delta E}{\Delta t}$. Voimalan <strong>sähköteho</strong> on energia, jonka generaattori siirtää kuormaan sekunnissa. <span class="inv-help">Tarvitsetko apua? → <a href="fy2-3.html">Teho</a></span></p>
+<p>Sähkötehoa ei yleensä lueta suoraan mittarista, vaan se lasketaan kahdesta mitattavasta suureesta. <strong>Sähkövirta</strong> $I$ kertoo, kuinka paljon sähkövarausta kulkee kuorman läpi sekunnissa. Sen yksikkö on ampeeri, $1\ \text{A} = 1\ \text{C/s}$, missä coulomb $\text{C}$ on varauksen yksikkö. <strong>Jännite</strong> $U$ kertoo, kuinka paljon energiaa varaus luovuttaa kuormaan varausyksikköä kohti. Sen yksikkö on voltti, $1\ \text{V} = 1\ \text{J/C}$. Kun jännite ja sähkövirta kerrotaan, saadaan kuormaan sekunnissa siirtyvä energia eli sähköteho:</p>
+<p>$$P = UI$$</p>
+<p>missä $P$ on sähköteho, $U$ kuorman napojen välinen jännite ja $I$ kuorman läpi kulkeva sähkövirta. Yksiköt sopivat yhteen: $\text{V} \cdot \text{A} = \dfrac{\text{J}}{\text{C}} \cdot \dfrac{\text{C}}{\text{s}} = \dfrac{\text{J}}{\text{s}} = \text{W}$. Sähkötehoa ja virtapiirejä käsitellään tarkemmin moduulissa FY6.</p>
+<p>Jännitemittari kytketään <strong>rinnan</strong> kuorman kanssa eli kuorman napoihin. Virtamittari kytketään <strong>sarjaan</strong> kuorman kanssa, jolloin sama sähkövirta kulkee mittarin ja kuorman läpi. Kuvassa on yksi tapa kytkeä mittarit. Tarkista opettajalta, tuottaako pienoismallisi generaattori tasa- vai vaihtojännitettä, ja aseta mittarit sen mukaan. Vaihtojännitealueella mittarit näyttävät jännitteen ja sähkövirran tehollisarvot, ja vastuskuormalla niiden tulo $P = UI$ on silloinkin kuormaan siirtyvä keskimääräinen teho.</p>
+<p><svg data-fig="circuit" viewBox="0 0 600 290" role="img" aria-label="Kytkentäkaavio. Vasemmalla on generaattori G. Siitä lähtevässä yläjohtimessa on virtamittari A sarjassa, ja johdin jatkuu oikealle säädettävään kuormitusvastukseen, joka on piirretty suorakulmiona, jonka läpi kulkee vino nuoli. Jännitemittari V on kytketty kuormitusvastuksen rinnalle sen kumpaankin napaan. Alajohdin palaa vastukselta generaattorille. Yläjohtimeen on merkitty sähkövirta I ja jännitemittarin viereen jännite U." style="max-width:100%;font-size:24px">
+  <line x1="90" y1="70" x2="90" y2="128" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="90" y1="192" x2="90" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="90" y1="70" x2="219" y2="70" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="271" y1="70" x2="390" y2="70" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="390" y1="70" x2="390" y2="120" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="390" y1="200" x2="390" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="90" y1="250" x2="390" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="90" cy="160" r="32" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="80" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{G}$</div></foreignObject>
+  <circle cx="245" cy="70" r="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="235" y="55.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <line x1="120" y1="70" x2="166" y2="70" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M178,70 L165,76 L165,64 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="139" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I$</div></foreignObject>
+  <rect x="375" y="120" width="30" height="80" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="356" y1="214" x2="417.5" y2="116" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M424,106 L422,120 L412,114 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="390" y1="96" x2="520" y2="96" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="520" y1="96" x2="520" y2="134" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="520" y1="186" x2="520" y2="226" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="520" y1="226" x2="390" y2="226" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="390" cy="96" r="5" fill="#1f2933"/>
+  <circle cx="390" cy="226" r="5" fill="#1f2933"/>
+  <circle cx="520" cy="160" r="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="510" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{V}$</div></foreignObject>
+  <foreignObject x="554" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
+  <foreignObject x="132" y="187.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{generaattori}$</div></foreignObject>
+  <foreignObject x="169" y="125.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kuormitusvastus}$</div></foreignObject>
+</svg></p>
+<div class="inv-tuki" data-modes="OO"><p>Tarkista kirjauksesi tästä. Mittaat jokaisella tekijän arvolla kuorman jännitteen $U$ ja sähkövirran $I$ ja lasket niistä sähkötehon $P = UI$. Kaikki luettelon tekijät vaikuttavat tehoon, joten muuta vain yhtä kerrallaan ja pidä muut samoina:</p>
+<table>
+<thead>
+<tr>
+<th>Tekijä</th>
+<th>Miten muutat ja mittaat sitä</th>
+<th>Mitä pidät vakiona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tuulen nopeus $v$</td>
+<td>puhaltimen nopeusasetus; mittaa $v$ tuulimittarilla voimalan kohdalta</td>
+<td>lavat, lapakulma, kuorma, voimalan paikka</td>
+</tr>
+<tr>
+<td>lapojen lukumäärä</td>
+<td>vaihda lapoja, sijoita ne tasaisesti navan ympärille</td>
+<td>lapojen muoto ja kulma, tuuli, kuorma, paikka</td>
+</tr>
+<tr>
+<td>lapakulma</td>
+<td>aseta kaikki lavat samaan kulmaan; lue kulma navan asteikosta tai astelevyllä</td>
+<td>lapojen määrä, tuuli, kuorma, paikka</td>
+</tr>
+<tr>
+<td>etäisyys puhaltimesta</td>
+<td>mittaa etäisyys puhaltimen ritilästä roottoriin</td>
+<td>puhaltimen asetus, lavat, kuorma, voimala puhaltimen keskilinjalla</td>
+</tr>
+<tr>
+<td>kuormitusvastus $R$</td>
+<td>säädä vastusta; lue arvo vastuksen asteikolta tai laske mittauksistasi $R = \dfrac{U}{I}$</td>
+<td>tuuli, lavat, lapakulma, paikka</td>
+</tr>
+</tbody>
+</table>
+<p>Kuorman resistanssi $R = \dfrac{U}{I}$ kertoo, kuinka suuri jännite tarvitaan kuljettamaan kuorman läpi tietty sähkövirta. Sitä käsitellään moduulissa FY6.</p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä tekijää muutat, mitkä sen arvot valitset, mitä mittaat ja mitä pidät vakiona. Kokeile järjestelyä ensin: lähteekö roottori pyörimään kaikilla valitsemillasi arvoilla, ja kuinka paljon mittarilukemat heiluvat?</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Valitse tekijä, jonka arvoa pystyt muuttamaan ainakin viidessä vaiheessa. Lapojen lukumäärässä riittää se, mitä välineistössä on. Päätä itse arvot, toistojen määrä ja lukutapa. Kirjaa päätöksesi perusteluineen.</p>
+<p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miten merkitset voimalan ja puhaltimen paikat, jotta ne pysyvät samoina koko mittauksen ajan, ellei juuri etäisyyttä tutkita?</li>
+<li>Kuinka kauan odotat jokaisen muutoksen jälkeen, ennen kuin luet mittarit?</li>
+<li>Lukemat heiluvat, koska puhaltimen ilmavirta on pyörteinen. Luetko useita lukemia ja lasket niistä keskiarvon, vai tallennatko jännitteen ja sähkövirran antureilla?</li>
+<li>Miten luet jännitteen ja sähkövirran samaan aikaan, kun ne ovat eri mittareissa?</li>
+</ul></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Vihjeitä tekijöittäin.</strong></p>
+<ul>
+<li><strong>Kuormitusvastus.</strong> Kun generaattorista otetaan sähkövirtaa, generaattori vastustaa roottorin pyörimistä. Käy läpi laaja resistanssialue, myös aivan pienet ja hyvin suuret arvot.</li>
+<li><strong>Tuulen nopeus.</strong> Puhaltimessa on yleensä vain muutama nopeusasetus. Mittaa tuulen nopeus voimalan paikalta niin, että voimala on siirretty sivuun, koska roottori hidastaa ilmaa edessään. Ilmavirta ei ole tasainen: mittaa useasta kohdasta roottorin alueelta.</li>
+<li><strong>Etäisyys.</strong> Etäisyyden muuttaminen muuttaa voimalaan osuvaa ilmavirtaa. Jos mittaat lisäksi tuulen nopeuden jokaisella etäisyydellä, voit tarkastella tehoa myös tuulen nopeuden funktiona.</li>
+<li><strong>Lapojen lukumäärä ja kulma.</strong> Päätä, mistä lapakulma mitataan, esimerkiksi lavan ja roottorin pyörimistason välistä, ja käytä samaa tapaa koko ajan. Pidä roottori tasapainossa: epäsymmetrinen roottori tärisee.</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittarilukemat taulukkoon heti mittauksen aikana. Laskemasi teho saa oman sarakkeensa mitattujen oikealle puolelle. Kirjaa myös vakioina pitämiesi tekijöiden arvot, esimerkiksi etäisyys ja puhaltimen asetus.</p>
+<div class="inv-tuki" data-modes="OO"><p>Voit käyttää esimerkiksi tällaista taulukkoa. Kirjaa jokainen toisto omalle rivilleen ja laske kunkin tekijän arvon tehoista keskiarvo $\bar{P}$ erilliseen taulukkoon, jossa on tekijän arvo, $\bar{P}$ ja sen epävarmuus $\Delta P$.</p>
+<table>
+<thead>
+<tr>
+<th>tekijän arvo (yksikkö)</th>
+<th>toisto</th>
+<th>$U\ (\text{V})$</th>
+<th>$I\ (\text{A})$</th>
+<th>$P = UI\ (\text{W})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Lue jännite ja sähkövirta mahdollisimman samaan aikaan, esimerkiksi niin, että kaksi ryhmäläistä lukee kumpikin oman mittarinsa sovitusta merkistä. Jos lukemat heiluvat, kirjaa myös heilahtelun pienin ja suurin arvo: heilahtelu on tässä työssä usein suurempi kuin mittarin lukematarkkuus.</p></div>
+<p>Muista mittausepävarmuus: kirjaa, kuinka tarkasti luet mittarit ja kuinka paljon lukemat vaihtelevat. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Mittausepävarmuus ja toistomittaukset</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Laske sähköteho jokaisella tekijän arvolla. Piirrä mittaustuloksista kuvaaja, josta näkyy, miten sähköteho riippuu tutkimastasi tekijästä. Merkitse akseleille suureet ja yksiköt. Piirrä mittauspisteet, älä yhdistä niitä murtoviivalla. Sovita pisteisiin suora tai käyrä vain, jos sille on fysikaaliset perusteet. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Kuvaajan laatiminen ja tulkinta</a></span></p>
+<div class="inv-tuki" data-modes="OO"><p>Valitse pystyakselille sähköteho $\bar{P}$ ja vaaka-akselille tutkimasi tekijä. Merkitse jokaiseen pisteeseen pystysuora virhejana, jonka pituus kumpaankin suuntaan on tehon epävarmuus $\Delta P$: silloin näet suoraan, ovatko pisteiden väliset erot epävarmuutta suurempia. Lapojen lukumäärällä on vain kokonaislukuarvoja, joten sen kuvaajassa pisteiden välille ei piirretä käyrää. Jos tutkit tuulen nopeutta, voit kokeilla, ovatko pisteet suoralla, kun vaaka-akselille valitaan $v^3$ (katso laajennus). Pisteiden pitäisi osua suoralle vain, jos hyötysuhde ei muutu tuulen nopeuden mukana.</p></div>
+<p>Vastaa:</p>
+<ol>
+<li>Miten sähköteho muuttuu, kun tekijän arvo kasvaa? Onko teholla suurin arvo mittausalueellasi?</li>
+<li>Millä tekijän arvoilla voimala toimii parhaiten, ja kuinka tarkasti voit sanoa sen kuvaajasta?</li>
+<li>Ovatko pisteiden väliset erot suurempia kuin tehon epävarmuus?</li>
+</ol>
+<p>Laskuihin ja kuvaajaan voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Arvioi tehon epävarmuus $\Delta P$ jokaisessa mittauspisteessä, vähintään parhaassa pisteessä ja sen naapuripisteissä, jotta voit verrata pisteiden välisiä eroja epävarmuuteen. Ilmoita sähköteho epävarmuuksineen ainakin sillä tekijän arvolla, jolla voimala toimi parhaiten, muodossa $P = (P \pm \Delta P)\ \text{W}$, ja perustele, miten arvioit epävarmuuden.</p>
+<div class="inv-tuki" data-modes="OO"><p>Tehon epävarmuuden voit arvioida näin:</p>
+<ul>
+<li><strong>Jännitteen ja sähkövirran epävarmuus.</strong> Käytä epävarmuutena $\Delta U$ ja $\Delta I$ suurempaa seuraavista: mittarin lukematarkkuus tai heilahtelun vaihteluvälin puolikas.</li>
+<li><strong>Tulon epävarmuus.</strong> Kun suureet kerrotaan, niiden suhteelliset epävarmuudet lasketaan yhteen: $\dfrac{\Delta P}{P} = \dfrac{\Delta U}{U} + \dfrac{\Delta I}{I}$.</li>
+<li><strong>Toistot.</strong> Jos teit toistoja, arvioi keskiarvon epävarmuus myös toistojen vaihteluvälin puolikkaana, $\Delta P = \dfrac{P_\text{max} - P_\text{min}}{2}$, ja käytä suurempaa näistä kahdesta arviosta.</li>
+</ul>
+<p>Pyöristä $\Delta P$ yhteen merkitsevään numeroon ja $P$ samaan desimaaliin.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä tekijät saattoivat muuttua, vaikka yritit pitää ne vakioina? Olivatko virheet satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet olisivat muuttaneet tulosta? Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten valitsemasi tekijä vaikutti sähkötehoon, ja millä käyttöalueella voimala toimi parhaiten? Mistä järjestelmän energiahäviöt aiheutuvat? Viittaa kuvaajaan, esimerkiksi "kuvaajasta 1 nähdään, että …". Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tutkimuskysymys ja hypoteesi:</strong> valitsemasi tekijä ja ennusteesi perusteluineen.</li>
+<li><strong>Työn suunnitelma:</strong> mitä muutit, mitä mittasit ja mitä pidit vakiona, miten varmistit sen, sekä kytkentäkaavio.</li>
+<li><strong>Mittaustulokset:</strong> alkuperäiset jännitteen ja sähkövirran lukemat omissa sarakkeissaan ja teho niiden oikealla puolella.</li>
+<li><strong>Tulos:</strong> kuvaaja, teho epävarmuuksineen oikein pyöristettynä ja voimalan paras käyttöalue.</li>
+<li><strong>Luotettavuus:</strong> energiahäviöt ja ne tekijät, jotka vaikuttivat mittaustulosten luotettavuuteen.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-tuulivoimalan-hyotysuhde"><h2 id="h-laajennus-tuulivoimalan-hyotysuhde">Laajennus: tuulivoimalan hyötysuhde</h2>
+<p>Kuinka suuri osa tuulen tehosta muuttuu sähköksi? Roottorin läpi virtaavan tuulen teho on</p>
+<p>$$P_\text{tuuli} = \tfrac{1}{2}\rho A v^3$$</p>
+<p>missä $\rho$ on ilman tiheys (huoneilmassa noin $1{,}2\ \text{kg/m}^3$; tiheys riippuu lämpötilasta ja ilmanpaineesta), $A = \pi r^2$ roottorin pyyhkäisemä pinta-ala, $r$ roottorin säde eli etäisyys navan keskeltä lavan kärkeen ja $v$ tuulen nopeus. Malli olettaa, että tuuli puhaltaa kohtisuoraan roottoria kohti ja sen nopeus on sama koko pinta-alalla. Nopeus $v$ on tuulen nopeus ennen kuin roottori hidastaa ilmaa. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-15.html">Tuulivoimalan teho</a></span></p>
+<p><svg data-fig="swept" viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva. Vasemmalla roottori edestä: kolmen lavan kärjet piirtävät pyöriessään katkoviivalla merkityn ympyrän. Ympyrän säde r on etäisyys navan keskeltä lavan kärkeen, ja ympyrän pinta-ala on roottorin pyyhkäisemä pinta-ala A, joka on pii kertaa r toiseen. Oikealla sama roottori sivulta: kolme sinistä nopeusnuolta v osoittaa vasemmalta kohti roottoria, kohtisuoraan roottorin tasoa vastaan." style="max-width:100%;font-size:24px">
+  <circle cx="165" cy="160" r="118" fill="#eef5f9" stroke="#6b7480" stroke-width="2" stroke-dasharray="7 6"/>
+  <path d="M171,152 L180,118.5 L172,42 L162,42 L160.5,118.5 L159,152 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M169,169 L193.5,193.5 L264,225 L268.5,216.5 L203,177 L175,159 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M155,159 L121.5,167.5 L59.5,213 L64.5,221.5 L131.5,184.5 L161,169 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="165" cy="160" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <line x1="165" y1="160" x2="267" y2="101" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="267" cy="101" r="4" fill="#1f2933"/>
+  <foreignObject x="230" y="118" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
+  <foreignObject x="130" y="295.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A = \pi r^2$</div></foreignObject>
+  <rect x="476" y="42" width="8" height="236" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="482" y="148" width="56" height="24" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <path d="M478,150 Q460,160 478,170 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M502,172 L498,318 H518 L514,172 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="330" y1="80" x2="439" y2="80" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M454,80 L438,87 L438,73 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="330" y1="160" x2="439" y2="160" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M454,160 L438,167 L438,153 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <line x1="330" y1="240" x2="439" y2="240" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M454,240 L438,247 L438,233 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="363.5" y="41.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+</svg></p>
+<p>Voimalan <strong>hyötysuhde</strong> on sen antaman sähkötehon $P$ ja tuulen tehon suhde: <span class="inv-help">Tarvitsetko apua? → <a href="fy2-4.html">Hyötysuhde</a></span></p>
+<p>$$\eta = \frac{P}{P_\text{tuuli}}$$</p>
+<p>Edes ihanteellinen roottori ei voi muuttaa käyttökelpoiseksi kuin noin $59\ \%$ läpi virtaavan tuulen tehosta, koska ilman on päästävä virtaamaan pois roottorin takaa. Tätä ylärajaa kutsutaan Betzin rajaksi. Todellisessa voimalassa osa energiasta menetetään lisäksi kitkaan ja generaattorissa, joten hyötysuhde jää rajan alle.</p>
+<p>Määritä voimalan hyötysuhde epävarmuuksineen ainakin sillä tekijän arvolla, jolla voimala toimi parhaiten, ja selvitä, minkä suureen epävarmuus vaikuttaa tulokseen eniten. Onko tuloksesi uskottava, kun vertaat sitä Betzin rajaan? Miten tuulen epätasaisuus voi vaikuttaa tulokseen?</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Vihjeitä.</strong> Mittaa tuulen nopeus useasta kohdasta tasaisesti roottorin alueelta voimala sivuun siirrettynä. Koska tuulen teho on verrannollinen nopeuden kuutioon, laske keskiarvo luvuista $v^3$, älä korota nopeuksien keskiarvoa kolmanteen potenssiin. Hyötysuhteen suhteellinen epävarmuus on suhteellisten epävarmuuksien summa, ja potenssi kertoo, kuinka monta kertaa suure lasketaan mukaan:</p>
+<p>$$\begin{aligned}
+\frac{\Delta \eta}{\eta} &= \frac{\Delta P}{P} + \frac{\Delta \rho}{\rho} \\
+&\quad + 2\cdot\frac{\Delta r}{r} + 3\cdot\frac{\Delta v}{v}
+\end{aligned}$$</p>
+<p>Koska käytit nopeuksien kuutioiden keskiarvoa, $v$ tarkoittaa tässä lukua $\sqrt[3]{\overline{v^3}}$, missä $\overline{v^3}$ on lukujen $v^3$ keskiarvo. Voit myös arvioida kuutioiden keskiarvon suhteellisen epävarmuuden suoraan ja käyttää sitä termin $3\cdot\dfrac{\Delta v}{v}$ paikalla. Ilman tiheyden epävarmuuden $\Delta\rho$ voit arvioida huoneen lämpötilasta ja ilmanpaineesta: katso tiheys taulukkokirjasta tai laske se näistä, ja arvioi, kuinka paljon se muuttuu, kun lämpötila ja paine vaihtelevat mittaustesi epävarmuuden verran.</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Muutitko vain yhtä tekijää kerrallaan? Miten sen voi todeta mittauspöytäkirjastasi?</li>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi kuvaajaan ja mittaustuloksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Kokeile pienoismalli ja puhallin etukäteen: lähteekö roottori pyörimään puhaltimen pienimmällä nopeusasetuksella ja kaikilla lapavaihtoehdoilla, ja tuottaako generaattori tasa- vai vaihtojännitettä. Valitse kuormitusvastus, jonka säätöalue ulottuu generaattorin kannalta selvästi pienistä arvoista suuriin, ja tarkista mittareiden mittausalueet sekä virtamittarin sulake. Ilmoita ryhmille, jos laitteistolla on virran tai jännitteen yläraja. Varaa tuulimittari, jos ryhmät tutkivat tuulen nopeutta tai tekevät laajennuksen, ja astelevy, jos navassa ei ole kulma-asteikkoa. Merkitse pöytään puhaltimen ja voimalan paikat teipillä. Jos samaa puhallinta käyttää useampi ryhmä, sovi vuorot, koska toisen ryhmän puhallin muuttaa ilmavirtaa.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Tehoksi tulkitaan pelkkä jännite. Kun kuormaa ei ole kytketty, jännite voi olla suuri, mutta sähkövirtaa ei kulje eikä kuormaan siirry tehoa.</li>
+<li>Virtamittari kytketään rinnan kuorman kanssa tai suoraan generaattorin napoihin, jolloin mittari oikosulkee piirin.</li>
+<li>Useampaa tekijää muutetaan kerralla, esimerkiksi voimala siirtyy lapoja vaihdettaessa, tai puhaltimen ja voimalan keskilinjat eivät ole samassa kohdassa.</li>
+<li>Jännite ja sähkövirta luetaan eri hetkinä heiluvasta näytöstä, ja hetkellinen huippulukema kirjataan tulokseksi.</li>
+<li>Erot pisteiden välillä tulkitaan todellisiksi, vaikka ne ovat mittausten vaihtelua pienempiä.</li>
+<li>Laajennuksessa tuulen nopeus mitataan vain yhdestä kohdasta tai aivan roottorin edestä, jossa roottori on jo hidastanut ilmaa. Roottorin halkaisija sekoitetaan säteeseen, tai nopeuksien keskiarvo korotetaan kolmanteen potenssiin.</li>
+<li>Voimalan ajatellaan tuottavan energiaa, vaikka se muuntaa tuulen liike-energiaa sähköksi.</li>
+<li>Betzin rajan ylittävä hyötysuhde hyväksytään tulokseksi, vaikka se kertoo mittaus- tai laskuvirheestä.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Tehtäväkortti on avoin: opiskelija valitsee tutkittavan tekijän, joten työ sopii FY10:n suunnittelua, muuttujia ja vakioituja suureita käsittelevään jaksoon. Ohjattua työtapaa ei tarjota, koska ohjattu työ edellyttäisi tekijän valitsemista opiskelijan puolesta. Jos ryhmä tarvitsee enemmän tukea, opettaja voi antaa sille tekijän (helpoimmin kuormitusvastus tai tuulen nopeus) ja käyttää osittain ohjatun työtavan tukea. Osittain ohjatussa työtavassa sivu antaa taulukon tekijöiden muuttamisesta ja vakioimisesta, suunnittelukysymykset, tekijäkohtaiset vihjeet, mittaustaulukon, kuvaajan akselit ja tavan arvioida tehon epävarmuus. Itsenäisessä työtavassa annetaan tutkimuskysymys, sähkötehon periaate ja kytkentä: opiskelija päättää tekijän arvot, toistot, lukutavan, kuvaajan ja epävarmuuden arviointitavan itse, ja laajennus kuuluu työhön, jos tuulimittari on käytettävissä. Sähköteho $P = UI$ ja mittareiden kytkeminen kuuluvat moduuliin FY6, joten ne on selitetty sivulla lyhyesti.</p>
+<p><strong>Turvallisuus.</strong> Tärkeimmät riskit ovat pyörivät lavat ja irtoava lapa: lapoja säädetään vain, kun puhallin on sammutettu ja roottori pysähtynyt, eikä kasvoja tuoda roottorin pyörimistasoon. Tarkista lapojen kiinnitys ennen työtä. Puhallin on verkkovirtalaite, jota käytetään vain ehjänä; opiskelijan virtapiirissä on vain generaattorin pieni jännite. Virtamittarin väärä kytkentä voi polttaa mittarin sulakkeen.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>
