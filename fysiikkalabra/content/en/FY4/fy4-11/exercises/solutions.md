@@ -10,21 +10,21 @@
 
 ## fy4-11-L1-02
 **Given:** speed at the start of braking $v_0 = 25.0\,\text{m/s}$, deceleration $a = 8.00\,\text{m/s}^2$
-**Find:** the braking distance $s_\text{j}$ in $\text{m}$
-**Principle:** The deceleration is constant, so on the $(t,v)$ graph the speed falls in a straight line to zero. The braking distance is the area of the triangle under the graph, $\tfrac{1}{2}\,v_0\,t_\text{j}$, where the braking time is $t_\text{j} = \tfrac{v_0}{a}$.
-**Formula:** $s_\text{j} = \tfrac{1}{2}\,v_0\,t_\text{j}$ and $t_\text{j} = \dfrac{v_0}{a}$, so $s_\text{j} = \dfrac{v_0^2}{2a}$
+**Find:** the braking distance $s_\text{b}$ in $\text{m}$
+**Principle:** The deceleration is constant, so on the $(t,v)$ graph the speed falls in a straight line to zero. The braking distance is the area of the triangle under the graph, $\tfrac{1}{2}\,v_0\,t_\text{b}$, where the braking time is $t_\text{b} = \tfrac{v_0}{a}$.
+**Formula:** $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$
 **Conversions:** The speed is already in $\text{m/s}$, so no conversions are needed.
-**Substitution:** $s_\text{j} = \dfrac{(25.0\,\text{m/s})^2}{2 \cdot 8.00\,\text{m/s}^2} = \dfrac{625\,\text{m}^2/\text{s}^2}{16.0\,\text{m/s}^2} = 39.0625\,\text{m}$
+**Substitution:** $s_\text{b} = \dfrac{(25.0\,\text{m/s})^2}{2 \cdot 8.00\,\text{m/s}^2} = \dfrac{625\,\text{m}^2/\text{s}^2}{16.0\,\text{m/s}^2} = 39.0625\,\text{m}$
 **Answer:** $39.1\,\text{m}$, three significant figures like the speed $25.0\,\text{m/s}$ and the deceleration $8.00\,\text{m/s}^2$.
 **Reasonableness:** Braking takes $25 : 8 \approx 3\,\text{s}$, and the average speed is half the initial speed, about $12.5\,\text{m/s}$. The distance is about $12.5\,\text{m/s} \cdot 3.1\,\text{s} \approx 39\,\text{m}$, as in the calculation.
 
 ## fy4-11-L1-03
 **Given:** speed at the start of braking $v_0 = 20.0\,\text{m/s}$, deceleration $a = 5.00\,\text{m/s}^2$, final speed $0$
-**Find:** the braking time $t_\text{j}$ in $\text{s}$
+**Find:** the braking time $t_\text{b}$ in $\text{s}$
 **Principle:** The deceleration tells how much the speed decreases each second. When the deceleration is constant, the time needed to remove the whole speed is the speed divided by the deceleration.
-**Formula:** $a = \dfrac{\Delta v}{\Delta t}$, and the magnitude of the change in speed is $v_0$, so $t_\text{j} = \dfrac{v_0}{a}$
+**Formula:** $a = \dfrac{\Delta v}{\Delta t}$, and the magnitude of the change in speed is $v_0$, so $t_\text{b} = \dfrac{v_0}{a}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $t_\text{j} = \dfrac{20.0\,\text{m/s}}{5.00\,\text{m/s}^2} = 4.00\,\text{s}$
+**Substitution:** $t_\text{b} = \dfrac{20.0\,\text{m/s}}{5.00\,\text{m/s}^2} = 4.00\,\text{s}$
 **Answer:** $4.00\,\text{s}$, three significant figures like the speed $20.0\,\text{m/s}$ and the deceleration $5.00\,\text{m/s}^2$.
 **Reasonableness:** The speed falls by $5\,\text{m/s}$ every second: $20 \to 15 \to 10 \to 5 \to 0$, that is, in four seconds. Units: $\tfrac{\text{m/s}}{\text{m/s}^2} = \text{s}$.
 
@@ -50,21 +50,21 @@
 
 ## fy4-11-L2-01
 **Given:** $v_0 = 90\,\text{km/h}$, reaction time $t_\text{r} = 1.5\,\text{s}$, deceleration $a = 7.5\,\text{m/s}^2$
-**Find:** the stopping distance $s_\text{p}$ in $\text{m}$
+**Find:** the stopping distance $s_\text{stop}$ in $\text{m}$
 **Principle:** During the reaction time the car moves at a constant speed, so the reaction distance is speed times time. Then the car slows down at a constant deceleration, and the braking distance is the area of the triangle on the $(t,v)$ graph. The stopping distance is the sum of these.
-**Formula:** $s_\text{p} = s_\text{r} + s_\text{j}$, so $s_\text{p} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a}$
+**Formula:** $s_\text{stop} = s_\text{r} + s_\text{b}$, so $s_\text{stop} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a}$
 **Conversions:** $90\,\text{km/h} = \dfrac{90 \cdot 1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$
-**Substitution:** $s_\text{p} = 25\,\text{m/s} \cdot 1.5\,\text{s} + \dfrac{(25\,\text{m/s})^2}{2 \cdot 7.5\,\text{m/s}^2} = 37.5\,\text{m} + 41.67\,\text{m} = 79.17\,\text{m}$
+**Substitution:** $s_\text{stop} = 25\,\text{m/s} \cdot 1.5\,\text{s} + \dfrac{(25\,\text{m/s})^2}{2 \cdot 7.5\,\text{m/s}^2} = 37.5\,\text{m} + 41.67\,\text{m} = 79.17\,\text{m}$
 **Answer:** $79\,\text{m}$, two significant figures like the reaction time $1.5\,\text{s}$ and the deceleration $7.5\,\text{m/s}^2$.
 **Reasonableness:** The reaction distance and the braking distance are of the same order of magnitude, about $40\,\text{m}$ each. The stopping distance is almost $80\,\text{m}$, as can be expected at motorway speed. A long reaction time adds as much distance as the whole braking.
 
 ## fy4-11-L2-02
 **Given:** $v_0 = 100\,\text{km/h}$, coefficient of friction $\mu = 0.30$, horizontal road; $g = 9.81\,\text{m/s}^2$
-**Find:** the braking distance $s_\text{j}$ in $\text{m}$
+**Find:** the braking distance $s_\text{b}$ in $\text{m}$
 **Principle:** On a horizontal road friction is the only horizontal force and the normal force equals the weight, so full grip gives the deceleration $a = \mu g$. The deceleration is constant, so the braking distance is the area of the triangle on the $(t,v)$ graph.
-**Formula:** $a = \mu g$ and $s_\text{j} = \dfrac{v_0^2}{2a}$, so $s_\text{j} = \dfrac{v_0^2}{2\mu g}$
+**Formula:** $a = \mu g$ and $s_\text{b} = \dfrac{v_0^2}{2a}$, so $s_\text{b} = \dfrac{v_0^2}{2\mu g}$
 **Conversions:** $100\,\text{km/h} = \dfrac{100 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 27.78\,\text{m/s}$
-**Substitution:** $s_\text{j} = \dfrac{(27.78\,\text{m/s})^2}{2 \cdot 0.30 \cdot 9.81\,\text{m/s}^2} = \dfrac{771.6\,\text{m}^2/\text{s}^2}{5.886\,\text{m/s}^2} = 131.1\,\text{m}$
+**Substitution:** $s_\text{b} = \dfrac{(27.78\,\text{m/s})^2}{2 \cdot 0.30 \cdot 9.81\,\text{m/s}^2} = \dfrac{771.6\,\text{m}^2/\text{s}^2}{5.886\,\text{m/s}^2} = 131.1\,\text{m}$
 **Answer:** $130\,\text{m}$ (that is, $1.3 \cdot 10^2\,\text{m}$), two significant figures like the coefficient of friction $0.30$.
 **Reasonableness:** On dry asphalt ($9.0\,\text{m/s}^2$) the braking distance would be about $43\,\text{m}$. On snow the deceleration is about a third of that, so the braking distance is about three times as long, about $130\,\text{m}$. That is longer than a football pitch.
 
@@ -79,10 +79,10 @@
 **Reasonableness:** The driver's weight is about $740\,\text{N}$, so the force is about $14$ times the weight. Without a belt the time would be about a tenth of this and the force ten times as large, about $100\,\text{kN}$.
 
 ## fy4-11-L2-04
-**Given:** braking distance $s_\text{j} = 32.0\,\text{m}$, deceleration $a = 8.0\,\text{m/s}^2$, the car came to a stop
+**Given:** braking distance $s_\text{b} = 32.0\,\text{m}$, deceleration $a = 8.0\,\text{m/s}^2$, the car came to a stop
 **Find:** the speed at the start of braking $v_0$ in $\text{km/h}$
 **Principle:** The deceleration is assumed to be constant along the whole skid mark, so the formula for the braking distance applies. The initial speed is solved from it.
-**Formula:** $s_\text{j} = \dfrac{v_0^2}{2a}$, so $v_0^2 = 2a\,s_\text{j}$ and $v_0 = \sqrt{2a\,s_\text{j}}$
+**Formula:** $s_\text{b} = \dfrac{v_0^2}{2a}$, so $v_0^2 = 2a\,s_\text{b}$ and $v_0 = \sqrt{2a\,s_\text{b}}$
 **Conversions:** We calculate first in $\text{m/s}$ and convert at the end: $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_0^2 = 2 \cdot 8.0\,\text{m/s}^2 \cdot 32.0\,\text{m} = 512\,\text{m}^2/\text{s}^2$, so $v_0 = \sqrt{512}\,\text{m/s} = 22.63\,\text{m/s} = 22.63 \cdot 3.6\,\text{km/h} = 81.46\,\text{km/h}$
 **Answer:** $81\,\text{km/h}$, two significant figures, because the deceleration $8.0\,\text{m/s}^2$ is an estimate with two figures.

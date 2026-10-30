@@ -95,7 +95,7 @@
     {
       "id": "fy4-11-L3-03",
       "level": 3,
-      "text": "A car is driving behind another car at $80\\,\\text{km/h}$, the same speed. The car in front suddenly brakes at a deceleration of $9.0\\,\\text{m/s}^2$. The reaction time of the driver behind is $1.0\\,\\text{s}$, and the deceleration of their car is only $6.0\\,\\text{m/s}^2$ because of worn tyres. What is the smallest gap between the cars that lets the driver behind stop before hitting the car in front?",
+      "text": "A car is driving at $80\\,\\text{km/h}$ behind another car moving at the same speed. The car in front suddenly brakes at a deceleration of $9.0\\,\\text{m/s}^2$. The reaction time of the driver behind is $1.0\\,\\text{s}$, and the deceleration of their car is only $6.0\\,\\text{m/s}^2$ because of worn tyres. What is the smallest gap between the cars that lets the driver behind stop before hitting the car in front?",
       "answer": 35.93964334705075,
       "unit": "m",
       "tolerance": 0.02

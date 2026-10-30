@@ -4,7 +4,7 @@
     "a": "$72\\,\\text{km/h} = 20\\,\\text{m/s}$, so the car travels $20\\,\\text{m/s} \\cdot 2.0\\,\\text{s} = 40\\,\\text{m}$. If danger appears during that time, the whole distance is added to the reaction distance before braking can begin."
   },
   {
-    "q": "A loose $10\\,\\text{kg}$ bag lies on the back seat. Why is it dangerous in a head-on collision?",
+    "q": "A loose $10\\,\\text{kg}$ bag lies on the back seat. Why is it dangerous in a frontal collision?",
     "a": "When the car stops, nothing slows the bag down, so it keeps moving according to Newton's first law. It stops only when it hits the front seat or a passenger in a very short time. Its momentum is large, and the short stopping time makes the force many times the weight of the bag."
   },
   {

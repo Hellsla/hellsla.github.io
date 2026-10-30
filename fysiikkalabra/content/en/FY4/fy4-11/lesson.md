@@ -120,7 +120,7 @@
 ## Key idea
 
 ### Stopping starts with a reaction
-When a driver notices danger, the car does not start to slow down at once. The driver must first notice the danger, decide to brake and move a foot to the brake pedal. This takes the **reaction time** $t_\text{r}$, usually about one second. For example, the Finnish Traffic Safety Committee's (Liikenneturva) crash speed calculator assumes a reaction time of $1\,\text{s}$. Fatigue, alcohol and a glance at the phone make the reaction time longer. During the reaction time the car still moves at its original speed and travels the **reaction distance** $s_\text{r}$. Only then do the brakes begin to slow the car, and it travels the **braking distance** $s_\text{j}$ before it stops. The reaction distance and the braking distance together are the **stopping distance** $s_\text{p}$.
+When a driver notices danger, the car does not start to slow down at once. The driver must first notice the danger, decide to brake and move a foot to the brake pedal. This takes the **reaction time** $t_\text{r}$, usually about one second. For example, the crash speed calculator of Liikenneturva, the Finnish Road Safety Council, assumes a reaction time of $1\,\text{s}$. Fatigue, alcohol and a glance at the phone make the reaction time longer. During the reaction time the car still moves at its original speed and travels the **reaction distance** $s_\text{r}$. Only then do the brakes begin to slow the car, and it travels the **braking distance** $s_\text{b}$ before it stops. The reaction distance and the braking distance together are the **stopping distance** $s_\text{stop}$.
 
 ### The road stops the car by friction
 The brakes slow the rotation of the wheels, but it is the road that slows the car. On a horizontal road the friction between the tyres and the road is the only horizontal force, when air resistance is neglected. Friction points backwards, so by Newton's second law the acceleration also points backwards and the car slows down. In braking, the magnitude of the acceleration is called the **deceleration** $a$.
@@ -170,7 +170,7 @@ The reaction distance is directly proportional to the speed: at double the speed
 
 <svg data-fig="pysahtyminen" viewBox="0 0 600 400" role="img" aria-label="Two roads one above the other, distances to scale, cars not. In both, the driver notices the danger at the dashed line. At the top the speed is 50 kilometres per hour: a green reaction distance of 13.9 metres and a brown braking distance of 10.7 metres, 24.6 metres in total. At the bottom the speed is 100 kilometres per hour: the reaction distance is twice as long, 27.8 metres, and the braking distance four times as long, 42.9 metres, 70.6 metres in total. The reaction time is 1.0 seconds and the deceleration 9.0 metres per second squared. Below, a tape measure in metres." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy411-p50" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy411-p100" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
-  <foreignObject x="16" y="11.5" width="261" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v_0 = 50\,\text{km/h}:\ s_\text{p} = 24.6\,\text{m}$</div></foreignObject>
+  <foreignObject x="16" y="11.5" width="299" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v_0 = 50\,\text{km/h}:\ s_\text{stop} = 24.6\,\text{m}$</div></foreignObject>
   <rect x="16" y="90" width="568" height="24" fill="#6c757d"/>
   <line x1="16" y1="90" x2="584" y2="90" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="16" y1="114" x2="584" y2="114" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -191,8 +191,8 @@ The reaction distance is directly proportional to the speed: at double the speed
   <rect x="60" y="124" width="90.5" height="12" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="150.5" y="124" width="69.5" height="12" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="88.5" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$s_\text{r}$</div></foreignObject>
-  <foreignObject x="168.5" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#b8622d">$s_\text{j}$</div></foreignObject>
-  <foreignObject x="16" y="181.5" width="274" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v_0 = 100\,\text{km/h}:\ s_\text{p} = 70.6\,\text{m}$</div></foreignObject>
+  <foreignObject x="168.5" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#b8622d">$s_\text{b}$</div></foreignObject>
+  <foreignObject x="16" y="181.5" width="311" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v_0 = 100\,\text{km/h}:\ s_\text{stop} = 70.6\,\text{m}$</div></foreignObject>
   <rect x="16" y="260" width="568" height="24" fill="#6c757d"/>
   <line x1="16" y1="260" x2="584" y2="260" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="16" y1="284" x2="584" y2="284" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -213,7 +213,7 @@ The reaction distance is directly proportional to the speed: at double the speed
   <rect x="60" y="294" width="180.5" height="12" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5"/>
   <rect x="240.5" y="294" width="278.5" height="12" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="134" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$s_\text{r}$</div></foreignObject>
-  <foreignObject x="363.5" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#b8622d">$s_\text{j}$</div></foreignObject>
+  <foreignObject x="363.5" y="309.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#b8622d">$s_\text{b}$</div></foreignObject>
   <line x1="60" y1="364" x2="547.5" y2="364" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="60" y1="364" x2="60" y2="356" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="50" y="367.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
@@ -237,9 +237,9 @@ The reaction distance is directly proportional to the speed: at double the speed
 This gives the answer to the first part of the opening question. When the speed doubles from $50\,\text{km/h}$ to $100\,\text{km/h}$, the reaction distance doubles from $13.9\,\text{m}$ to $27.8\,\text{m}$, but the braking distance quadruples from $10.7\,\text{m}$ to $42.9\,\text{m}$. The stopping distance therefore grows from $24.6\,\text{m}$ to $70.6\,\text{m}$, almost three times as long.
 
 ### In a collision the change in momentum is always the same
-If the obstacle is closer than the stopping distance, the car collides with it. In a head-on collision the front of the car crumples and the car stops in about a tenth of a second. The passenger's momentum $p = mv$ then changes from $mv$ to zero, whether or not the passenger wears a seat belt: the collision speed determines the change in momentum. The only thing that can be changed is how long the **collision time** $\Delta t$ is, that is, the time in which the passenger stops. In the chapter *Momentum and impulse* you learned that the change in momentum equals the impulse $\overline{I} = \overline{F}\,\Delta t$. The longer the collision time, the smaller the force needed for the same change in momentum.
+If the obstacle is closer than the stopping distance, the car collides with it. In a frontal collision the front of the car crumples and the car stops in about a tenth of a second. The passenger's momentum $p = mv$ then changes from $mv$ to zero, whether or not the passenger wears a seat belt: the collision speed determines the change in momentum. The only thing that can be changed is how long the **collision time** $\Delta t$ is, that is, the time in which the passenger stops. In the chapter *Momentum and impulse* you learned that the change in momentum equals the impulse $\overline{I} = \overline{F}\,\Delta t$. The longer the collision time, the smaller the force needed for the same change in momentum.
 
-<svg data-fig="tormays" viewBox="0 0 600 340" role="img" aria-label="Schematic graph, rounded example values: the speed of a passenger in a head-on collision from a speed of 50 kilometres per hour. On the horizontal axis the time 0–0.12 seconds, on the vertical axis the speed 0–16 metres per second. Blue line: a passenger wearing a belt slows down steadily with the car from 13.9 metres per second to zero in 0.10 seconds. Brown line: without a belt the passenger keeps moving at 13.9 metres per second until 0.090 seconds, hits the interior of the car and stops in 0.010 seconds. The change in speed is the same in both." style="max-width:100%;font-size:24px">
+<svg data-fig="tormays" viewBox="0 0 600 340" role="img" aria-label="Schematic graph, rounded example values: the speed of a passenger in a frontal collision from a speed of 50 kilometres per hour. On the horizontal axis the time 0–0.12 seconds, on the vertical axis the speed 0–16 metres per second. Blue line: a passenger wearing a belt slows down steadily with the car from 13.9 metres per second to zero in 0.10 seconds. Brown line: without a belt the passenger keeps moving at 13.9 metres per second until 0.090 seconds, hits the interior of the car and stops in 0.010 seconds. The change in speed is the same in both." style="max-width:100%;font-size:24px">
   <line x1="145" y1="290" x2="145" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="210" y1="290" x2="210" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="275" y1="290" x2="275" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -287,7 +287,7 @@ Without a seat belt the passenger keeps moving at almost the original speed whil
 
 The airbag inflates in hundredths of a second and catches the head and upper body. It lengthens the stopping time and spreads the force over a large area, so the pressure on the body is smaller. An airbag is designed to work together with the seat belt, not instead of it.
 
-This is the answer to the second part of the opening question. The difference also shows in accident statistics. According to the Finnish Accident Investigation Institute (OTI), in the fatal accidents investigated by the investigation boards in 2017–2021, 278 people wearing a seat belt and 198 people not wearing one died in cars and vans. The boards estimated that 114 of those without a belt could have survived if the belt had been fastened. In Liikenneturva's monitoring, almost everyone in the front seat wears a belt.
+This is the answer to the second part of the opening question. The difference also shows in accident statistics. According to the Finnish Crash Data Institute (OTI), in the fatal accidents investigated by the road accident investigation teams in 2017–2021, 278 people wearing a seat belt and 198 people not wearing one died in cars and vans. The investigation teams estimated that 114 of those without a belt could have survived if the belt had been fastened. In Liikenneturva's monitoring, almost everyone in the front seat wears a belt.
 
 ## Formula: Stopping distance and the force of a collision
 
@@ -298,7 +298,7 @@ s_\text{r} = v_0\,t_\text{r}
 ```
 where $s_\text{r}$ is the reaction distance ($\text{m}$), $v_0$ is the speed of the car before braking ($\text{m/s}$) and $t_\text{r}$ is the reaction time ($\text{s}$). In braking the deceleration is assumed to be constant, so on the $(t,v)$ graph the speed falls in a straight line to zero. As in the chapter *Acceleration and uniformly accelerated motion*, the distance travelled is the area between the graph and the time axis.
 
-<svg data-fig="tv" viewBox="0 0 600 340" role="img" aria-label="Schematic of a (t, v) graph, no numerical values. The speed stays at the value v_0 during the reaction time t_r, so the graph is horizontal, and under it is a green rectangle whose area is the reaction distance s_r = v_0 t_r. Then the speed falls in a straight line to zero during the braking time t_j, and under the graph is a brown triangle whose area is the braking distance s_j = half of v_0 t_j. The magnitude of the slope of the line is the deceleration a." style="max-width:100%;font-size:24px">
+<svg data-fig="tv" viewBox="0 0 600 340" role="img" aria-label="Schematic of a (t, v) graph, no numerical values. The speed stays at the value v_0 during the reaction time t_r, so the graph is horizontal, and under it is a green rectangle whose area is the reaction distance s_r = v_0 t_r. Then the speed falls in a straight line to zero during the braking time t_b, and under the graph is a brown triangle whose area is the braking distance s_b = half of v_0 t_b. The magnitude of the slope of the line is the deceleration a." style="max-width:100%;font-size:24px">
   <line x1="196.5" y1="290" x2="196.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="453.5" y1="290" x2="453.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="80" y1="121" x2="500" y2="121" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -309,7 +309,7 @@ where $s_\text{r}$ is the reaction distance ($\text{m}$), $v_0$ is the speed of 
   <line x1="196.5" y1="290" x2="196.5" y2="297" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="180" y="299.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r}$</div></foreignObject>
   <line x1="453.5" y1="290" x2="453.5" y2="297" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="418.5" y="299.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r} + t_\text{j}$</div></foreignObject>
+  <foreignObject x="418.5" y="299.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_\text{r} + t_\text{b}$</div></foreignObject>
   <line x1="73" y1="121" x2="80" y2="121" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="35" y="106.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_0$</div></foreignObject>
   <foreignObject x="50" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
@@ -319,23 +319,23 @@ where $s_\text{r}$ is the reaction distance ($\text{m}$), $v_0$ is the speed of 
   <polygon points="196.5,290 196.5,121 453.5,290" fill="#b8622d" fill-opacity="0.35"/>
   <polyline points="80,121 196.5,121 453.5,290" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="122" y="199.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s_\text{r}$</div></foreignObject>
-  <foreignObject x="265.5" y="224.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s_\text{j}$</div></foreignObject>
+  <foreignObject x="265.5" y="224.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s_\text{b}$</div></foreignObject>
   <foreignObject x="348" y="170.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{slope } {-a}$</div></foreignObject>
 </svg>
 
 The speed falls by $v_0$ at deceleration $a$, so the braking time is
 ```latex
-t_\text{j} = \frac{v_0}{a}
+t_\text{b} = \frac{v_0}{a}
 ```
-where $t_\text{j}$ is the braking time ($\text{s}$) and $a$ is the deceleration, that is, the magnitude of the acceleration ($\text{m/s}^2$). The braking distance is the area of the triangle, $\tfrac{1}{2}\,v_0\,t_\text{j}$. Substituting the braking time gives
+where $t_\text{b}$ is the braking time ($\text{s}$) and $a$ is the deceleration, that is, the magnitude of the acceleration ($\text{m/s}^2$). The braking distance is the area of the triangle, $\tfrac{1}{2}\,v_0\,t_\text{b}$. Substituting the braking time gives
 ```latex
-s_\text{j} = \frac{v_0^2}{2a}
+s_\text{b} = \frac{v_0^2}{2a}
 ```
-where $s_\text{j}$ is the braking distance ($\text{m}$). The stopping distance is the sum of these:
+where $s_\text{b}$ is the braking distance ($\text{m}$). The stopping distance is the sum of these:
 ```latex
-s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
+s_\text{stop} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
 ```
-where $s_\text{p}$ is the stopping distance ($\text{m}$). The model assumes that the road is horizontal, the deceleration is constant during braking and air resistance is neglected. The speed is substituted in $\text{m/s}$.
+where $s_\text{stop}$ is the stopping distance ($\text{m}$). The model assumes that the road is horizontal, the deceleration is constant during braking and air resistance is neglected. The speed is substituted in $\text{m/s}$.
 
 ### Deceleration from friction
 On a horizontal road the car does not accelerate vertically, so the normal force equals the weight, $N = mg$. When braking as hard as the grip allows, the friction is $F_\mu = \mu N$, where $\mu$ is the coefficient of friction between the tyres and the road. By Newton's second law $\mu mg = ma$, and the mass cancels:
@@ -410,7 +410,7 @@ A car is driving on dry asphalt at $80\,\text{km/h}$. The driver glances at thei
 
 <!-- vaihe -->
 
-**Given and find.** $v_0 = 80\,\text{km/h}$, $t_\text{r} = 2.0\,\text{s}$ and $a = 9.0\,\text{m/s}^2$. We are asked for the stopping distance $s_\text{p}$.
+**Given and find.** $v_0 = 80\,\text{km/h}$, $t_\text{r} = 2.0\,\text{s}$ and $a = 9.0\,\text{m/s}^2$. We are asked for the stopping distance $s_\text{stop}$.
 
 <!-- vaihe -->
 
@@ -421,8 +421,8 @@ A car is driving on dry asphalt at $80\,\text{km/h}$. The driver glances at thei
 **Formula solved.**
 ```latex
 \begin{aligned}
-&s_\text{p} = s_\text{r} + s_\text{j} \\
-&s_\text{p} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
+&s_\text{stop} = s_\text{r} + s_\text{b} \\
+&s_\text{stop} = v_0\,t_\text{r} + \frac{v_0^2}{2a}
 \end{aligned}
 ```
 
@@ -438,10 +438,10 @@ A car is driving on dry asphalt at $80\,\text{km/h}$. The driver glances at thei
 &s_\text{r} = v_0\,t_\text{r} \\
 &\phantom{s_\text{r}} = 22.22\,\tfrac{\text{m}}{\text{s}} \cdot 2.0\,\text{s} \\
 &\phantom{s_\text{r}} = 44.44\,\text{m} \\
-&s_\text{j} = \frac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\
-&\phantom{s_\text{j}} = 27.43\,\text{m} \\
-&s_\text{p} = (44.44 + 27.43)\,\text{m} \\
-&\phantom{s_\text{p}} \approx 72\,\text{m}
+&s_\text{b} = \frac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\
+&\phantom{s_\text{b}} = 27.43\,\text{m} \\
+&s_\text{stop} = (44.44 + 27.43)\,\text{m} \\
+&\phantom{s_\text{stop}} \approx 72\,\text{m}
 \end{aligned}
 ```
 
@@ -457,7 +457,7 @@ A car is driving on dry asphalt at $80\,\text{km/h}$. The driver glances at thei
 Many people think that double the speed means double the stopping distance. The reaction distance doubles, but the braking distance quadruples, because it depends on the square of the speed. Another mistake is to think that a seat belt reduces the change in momentum. The momentum changes from $mv$ to zero in any case; the belt lengthens the time in which the change happens and therefore reduces the force. A third mistake is to believe that in a slow crash you can brace yourself with your hands. Even in a $50\,\text{km/h}$ collision the average force is about $10\,\text{kN}$ even with a belt, more than ten times a person's weight, and the muscle force of the hands is not enough against it.
 
 ## Summary
-- The stopping distance is the reaction distance $s_\text{r} = v_0\,t_\text{r}$ plus the braking distance $s_\text{j} = \tfrac{v_0^2}{2a}$, when the deceleration is constant.
+- The stopping distance is the reaction distance $s_\text{r} = v_0\,t_\text{r}$ plus the braking distance $s_\text{b} = \tfrac{v_0^2}{2a}$, when the deceleration is constant.
 - The reaction distance is proportional to the speed and the braking distance to the square of the speed: double the speed gives four times the braking distance.
 - In braking, the friction between the tyres and the road slows the car. On a horizontal road $a = \mu g$, so a slippery road multiplies the braking distance.
 - In a collision the passenger's change in momentum is the same with and without a belt. The seat belt and the airbag lengthen the collision time, so the average force $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$ is smaller.

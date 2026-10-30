@@ -1,6 +1,6 @@
 # Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny
 
-> **Miksi** $100\,\text{km/h}$:n nopeudella ajavan auton pysähtymismatka on lähes kolminkertainen $50\,\text{km/h}$:n nopeuteen verrattuna, ja miksi turvavyö suojaa, kun pysähtyminen ei ehdi onnistua?
+> **Miksi** auton pysähtymismatka on $100\,\text{km/h}$:n nopeudella lähes kolme kertaa niin pitkä kuin $50\,\text{km/h}$:n nopeudella? Ja miksi turvavyö suojaa, kun auto ei ehdi pysähtyä?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: syysilta maantiellä kuusimetsän keskellä. Vasemmalta tulee henkilöauto ajovalot päällä. Tien oikealla puolella on hirvivaroitusmerkki, ja sen takana hirvi astuu metsän reunasta tielle auton eteen. Auton ja hirven välinen matka on lyhyt. Auto tarvitsisi pysähtymiseen paljon pidemmän matkan." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy411h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffc078"/></linearGradient><radialGradient id="fy411h-sun-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy411h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy411h-verge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy411h-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
@@ -285,7 +285,7 @@ Jos este on lähempänä kuin pysähtymismatka, auto törmää. Nokkakolarissa a
 
 Ilman turvavyötä matkustaja jatkaa liikettään lähes samalla nopeudella, kun auto hidastuu hänen ympärillään. Newtonin ensimmäisen lain mukaan mikään voima ei vielä hidasta häntä. Hän osuu ohjauspyörään, kojelautaan tai tuulilasiin ja pysähtyy sekunnin sadasosissa. **Turvavyö** kiinnittää matkustajan autoon, joten hän hidastuu auton rypistyvän keulan mukana. Vyö myös venyy hieman. Se jakaa voiman lantion, rintakehän ja olkapään vahvoille luille. Turvatyyny täyttyy sekunnin sadasosissa ja ottaa vastaan pään ja ylävartalon. Se pidentää pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon on pienempi. Turvatyyny on tehty toimimaan yhdessä turvavyön kanssa, ei sen sijasta.
 
-Tämä on vastaus alun kysymyksen toiseen osaan. Ero näkyy myös onnettomuustilastoissa. Onnettomuustietoinstituutin mukaan vuosina 2017–2021 tutkijalautakuntien tutkimissa kuolemaan johtaneissa onnettomuuksissa kuoli henkilö- ja pakettiautoissa 278 turvavyötä käyttänyttä ja 198 ilman turvavyötä ollutta. Lautakuntien arvion mukaan 114 vyöttömistä olisi voinut selvitä, jos vyö olisi ollut kiinni. Liikenneturvan seurannassa taas lähes kaikki etupenkillä istuvat käyttävät vyötä.
+Tämä on vastaus alun kysymyksen toiseen osaan. Ero näkyy myös onnettomuustilastoissa. Onnettomuustietoinstituutti on koonnut tiedot kuolemaan johtaneista onnettomuuksista vuosina 2017–2021. Tutkijalautakunnat tutkivat nämä onnettomuudet. Henkilö- ja pakettiautoissa kuoli 278 ihmistä, joilla oli turvavyö, ja 198 ihmistä ilman turvavyötä. Lautakuntien arvion mukaan 114 vyötöntä olisi voinut selvitä, jos vyö olisi ollut kiinni. Liikenneturvan seurannan mukaan lähes kaikki etupenkillä istuvat käyttävät vyötä.
 
 ## Kaava: Pysähtymismatka ja törmäyksen voima
 
@@ -321,11 +321,11 @@ missä $s_\text{r}$ on reaktiomatka ($\text{m}$), $v_0$ auton nopeus ennen jarru
   <foreignObject x="348" y="170.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{kulmakerroin } {-a}$</div></foreignObject>
 </svg>
 
-Nopeus pienenee määrän $v_0$ hidastuvuudella $a$, joten jarrutusaika on
+Nopeus pienenee arvosta $v_0$ nollaan, ja hidastuvuus on $a$. Jarrutusaika on siksi
 ```latex
 t_\text{j} = \frac{v_0}{a}
 ```
-missä $t_\text{j}$ on jarrutusaika ($\text{s}$) ja $a$ hidastuvuus eli kiihtyvyyden suuruus ($\text{m/s}^2$). Jarrutusmatka on kolmion pinta-ala $\tfrac{1}{2}\,v_0\,t_\text{j}$. Kun siihen sijoitetaan jarrutusaika, saadaan
+missä $t_\text{j}$ on jarrutusaika ($\text{s}$) ja $a$ hidastuvuus eli kiihtyvyyden suuruus ($\text{m/s}^2$). Jarrutusmatka on kolmion pinta-ala $\tfrac{1}{2}\,v_0\,t_\text{j}$. Sijoitetaan siihen jarrutusaika. Saadaan
 ```latex
 s_\text{j} = \frac{v_0^2}{2a}
 ```
@@ -404,7 +404,7 @@ missä $F_\text{ka}$ on keskimääräinen voima ($\text{N}$), $m$ matkustajan ma
 Kuvaajan suorakulmioiden pinta-alat ovat yhtä suuret, koska kumpikin on sama liikemäärän muutos $m\,\Delta v$. Todellisuudessa voima vaihtelee törmäyksen aikana. Suurin voima on keskimääräistä suurempi.
 
 ## Esimerkki
-Auto ajaa kuivalla asfaltilla nopeudella $80\,\text{km/h}$. Kuljettaja vilkaisee puhelinta, ja hänen reaktioaikansa vaaratilanteessa on $2{,}0\,\text{s}$. Auton hidastuvuus jarrutuksessa on $9{,}0\,\text{m/s}^2$. Kuinka pitkä on auton pysähtymismatka?
+Auto ajaa kuivalla asfaltilla nopeudella $80\,\text{km/h}$. Kuljettaja vilkaisee puhelinta. Siksi hänen reaktioaikansa vaaratilanteessa on $2{,}0\,\text{s}$. Auton hidastuvuus jarrutuksessa on $9{,}0\,\text{m/s}^2$. Kuinka pitkä on auton pysähtymismatka?
 
 <!-- vaihe -->
 
@@ -455,8 +455,8 @@ Auto ajaa kuivalla asfaltilla nopeudella $80\,\text{km/h}$. Kuljettaja vilkaisee
 Moni ajattelee, että kaksinkertainen nopeus tarkoittaa kaksinkertaista pysähtymismatkaa. Reaktiomatka kaksinkertaistuu, mutta jarrutusmatka nelinkertaistuu, koska se riippuu nopeuden neliöstä. Toinen virhe on ajatella, että turvavyö pienentää liikemäärän muutosta. Liikemäärä muuttuu arvosta $mv$ nollaan joka tapauksessa. Vyö pidentää aikaa, jossa muutos tapahtuu, ja pienentää siksi voimaa. Kolmas virhe on uskoa, että hitaassa kolarissa voi ottaa vastaan käsillä. Jo $50\,\text{km/h}$:n törmäyksessä keskimääräinen voima on vyössäkin noin $10\,\text{kN}$. Se on yli kymmenkertainen ihmisen painoon verrattuna, eikä käsien lihasvoima riitä siihen.
 
 ## Tiivistelmä
-- Pysähtymismatka on reaktiomatka $s_\text{r} = v_0\,t_\text{r}$ plus jarrutusmatka $s_\text{j} = \tfrac{v_0^2}{2a}$, kun hidastuvuus on vakio.
+- Pysähtymismatka on reaktiomatka $s_\text{r} = v_0\,t_\text{r}$ plus jarrutusmatka $s_\text{j} = \tfrac{v_0^2}{2a}$. Tämä pätee, kun hidastuvuus on vakio.
 - Reaktiomatka on verrannollinen nopeuteen ja jarrutusmatka nopeuden neliöön. Kaksinkertainen nopeus antaa nelinkertaisen jarrutusmatkan.
-- Jarrutuksessa autoa hidastaa renkaiden ja tien kitka. Vaakasuoralla tiellä $a = \mu g$, joten liukas tie pidentää jarrutusmatkaa moninkertaiseksi.
-- Törmäyksessä matkustajan liikemäärän muutos on sama vyön kanssa ja ilman. Turvavyö ja turvatyyny pidentävät törmäysaikaa, joten keskimääräinen voima $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$ pienenee.
-- Turvatyyny jakaa voiman suurelle alalle ja toimii yhdessä turvavyön kanssa, ei sen sijasta.
+- Jarrutuksessa autoa hidastaa renkaiden ja tien välinen kitka. Vaakasuoralla tiellä $a = \mu g$. Liukkaalla tiellä jarrutusmatka on siksi monta kertaa pidempi.
+- Törmäyksessä matkustajan liikemäärän muutos on sama vyön kanssa ja ilman. Turvavyö ja turvatyyny pidentävät törmäysaikaa. Siksi keskimääräinen voima $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$ pienenee.
+- Turvatyyny jakaa voiman suurelle alalle. Se toimii yhdessä turvavyön kanssa, ei sen sijasta.
