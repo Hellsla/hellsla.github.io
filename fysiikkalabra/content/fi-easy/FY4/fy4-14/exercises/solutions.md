@@ -3,6 +3,11 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ yksikössä $\text{N}$
 **Periaate:** Rajanopeudella nopeus ei muutu, joten kiihtyvyys on nolla. Newtonin toisen lain mukaan kokonaisvoima on silloin nolla, vaikka hyppääjä liikkuu. Ilmanvastus kumoaa painon.
 **Voimakuvio:** Hyppääjä on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Nuolet ovat yhtä pitkät. Nopeutta ei piirretä voimaksi.
+```voimakuvio
+G 735,8
+F_v 735,8 ylös työntö @ala
+a 0
+```
 **Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$
@@ -14,6 +19,11 @@
 **Kysytty:** kokonaisvoima $\Sigma F$ yksikössä $\text{N}$
 **Periaate:** Kiveen vaikuttavat Maa (paino) ja ilma (ilmanvastus). Putoavan kiven ilmanvastus osoittaa nopeutta vastaan eli ylös. Kokonaisvoima on siis painon ja ilmanvastuksen erotus.
 **Voimakuvio:** Kivi on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Se on painoa lyhyempi.
+```voimakuvio
+G 19,62
+F_v 5 ylös työntö @ala
+a alas
+```
 **Kaava:** $\Sigma F = G - F_\text{v}$, ja $G = mg$, joten $\Sigma F = mg - F_\text{v}$
 **Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F = 2{,}00\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 5{,}00\,\text{N} = 19{,}62\,\text{N} - 5{,}00\,\text{N} = 14{,}62\,\text{N}$
@@ -25,6 +35,11 @@
 **Kysytty:** pallon kiihtyvyys $a$ yksikössä $\text{m/s}^2$ ja sen suunta
 **Periaate:** Newtonin toisen lain mukaan kokonaisvoima määrää kiihtyvyyden. Pallo liikkuu alas, joten ilmanvastus osoittaa ylös, nopeutta vastaan. Ilmanvastus on painoa suurempi, joten kokonaisvoima osoittaa ylös, vaikka pallo liikkuu alas.
 **Voimakuvio:** Pallo on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Se on painoa pidempi.
+```voimakuvio
+G 5,886
+F_v 8 ylös työntö @ala
+a ylös
+```
 **Kaava:** $mg - F_\text{v} = ma$, joten $a = \dfrac{mg - F_\text{v}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$. Muunnoksia ei siis tarvita.
 **Sijoitus:** $a = \dfrac{0{,}600\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = \dfrac{5{,}886\,\text{N} - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = -3{,}523\,\text{m/s}^2$
@@ -36,6 +51,12 @@
 **Kysytty:** kokonaisvoiman suuruus $\Sigma F$ yksikössä $\text{N}$
 **Periaate:** Kun jalka on irronnut pallosta, palloon vaikuttavat vain Maa (paino) ja ilma (ilmanvastus). Pallo liikkuu ylös, joten ilmanvastus osoittaa alas, samaan suuntaan kuin paino. Ylöspäin vievää voimaa ei ole.
 **Voimakuvio:** Pallo on suorakulmio, ja positiivinen suunta on ylös. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee ylhäältä alas yläpintaan asti. Nopeus ylös merkitään erikseen kuvion viereen.
+```voimakuvio
+G 4,415
+F_v 1,2 alas työntö @ylä
+a alas
+v ylös
+```
 **Kaava:** $\Sigma F = -G - F_\text{v} = -mg - F_\text{v}$, joten kokonaisvoiman suuruus on $|\Sigma F| = mg + F_\text{v}$
 **Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $|\Sigma F| = 0{,}450\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 1{,}20\,\text{N} = 4{,}4145\,\text{N} + 1{,}20\,\text{N} = 5{,}6145\,\text{N}$
@@ -47,6 +68,15 @@
 **Kysytty:** tien kitkavoima $F$, joka työntää vetävää pyörää eteenpäin, yksikössä $\text{N}$
 **Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan kokonaisvoima on nolla. Vaakasuunnassa tien kitkavoima työntää vetävää pyörää eteenpäin. Sen täytyy kumota molemmat vastusvoimat. Vierimisvastus on tässä oma vastusvoimansa. Pystysuunnassa paino ja tien tukivoima kumoavat toisensa.
 **Voimakuvio:** Pyöräilijä ja pyörä ovat yhtenä suorakulmiona, ja positiivinen suunta on eteenpäin. Paino $\overline{G}$ lähtee keskipisteestä alas ja tien tukivoima $\overline{N}$ alapinnasta ylös. Nuolet ovat yhtä pitkät. Tien kitkavoima $\overline{F}$ lähtee vetävän pyörän alapinnasta eteenpäin. Ilmanvastus $\overline{F}_\text{v}$ ja vierimisvastus $\overline{F}_\text{r}$ osoittavat taaksepäin.
+```voimakuvio
+pinta 0
+G 784,8
+N 784,8
+F 24 oikea @ala
+F_v 18 vasen
+F_r 6,0 vasen
+a 0
+```
 **Kaava:** $F - F_\text{v} - F_\text{r} = 0$, joten $F = F_\text{v} + F_\text{r}$
 **Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 18\,\text{N} + 6{,}0\,\text{N} = 24\,\text{N}$
@@ -58,6 +88,11 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ yksikössä $\text{N}$
 **Periaate:** Rajanopeudella nopeus ei muutu, joten Newtonin toisen lain mukaan kokonaisvoima on nolla. Ilmanvastus on yhtä suuri kuin paino, ja se osoittaa ylös.
 **Voimakuvio:** Sulkapallo on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Nuolet ovat yhtä pitkät.
+```voimakuvio
+G 0,05003
+F_v 0,05003 ylös työntö @ala
+a 0
+```
 **Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
 **Muunnokset:** $5{,}10\,\text{g} = 5{,}10 : 1000\,\text{kg} = 5{,}10\cdot 10^{-3}\,\text{kg}$
 **Sijoitus:** $F_\text{v} = 5{,}10\cdot 10^{-3}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}050031\,\text{N}$
@@ -69,6 +104,11 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ yksikössä $\text{N}$
 **Periaate:** Hyppääjän kiihtyvyys on pienempi kuin $g$, joten jokin voima vastustaa painoa. Se on ilmanvastus, ja se osoittaa ylös. Newtonin toisen lain mukaan kokonaisvoima $G - F_\text{v}$ on massa kertaa kiihtyvyys. Siitä ratkaistaan ilmanvastus.
 **Voimakuvio:** Hyppääjä on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Se on painoa lyhyempi. Kiihtyvyys alas merkitään erikseen kuvion viereen.
+```voimakuvio
+G 686,7
+F_v 266,7 ylös työntö @ala
+a alas
+```
 **Kaava:** $mg - F_\text{v} = ma$, joten $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}00\,\text{m/s}^2) = 70{,}0\,\text{kg}\cdot 3{,}81\,\text{m/s}^2 = 266{,}7\,\text{N}$
@@ -80,6 +120,12 @@
 **Kysytty:** kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kun maila on osunut palloon, palloon vaikuttavat vain paino ja ilmanvastus. Nousevan pallon ilmanvastus osoittaa nopeutta vastaan eli alas, samaan suuntaan kuin paino. Molemmat hidastavat nousua.
 **Voimakuvio:** Pallo on suorakulmio, ja positiivinen suunta on ylös. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee ylhäältä alas yläpintaan asti. Nopeus ylös ja kiihtyvyys alas merkitään erikseen.
+```voimakuvio
+G 0,5592
+F_v 0,25 alas työntö @ylä
+a alas
+v ylös
+```
 **Kaava:** $-mg - F_\text{v} = ma$, joten $a = -\dfrac{mg + F_\text{v}}{m} = -\left(g + \dfrac{F_\text{v}}{m}\right)$
 **Muunnokset:** $57{,}0\,\text{g} = 57{,}0 : 1000\,\text{kg} = 0{,}0570\,\text{kg}$
 **Sijoitus:** $a = -\left(9{,}81\,\text{m/s}^2 + \dfrac{0{,}250\,\text{N}}{0{,}0570\,\text{kg}}\right) = -(9{,}81\,\text{m/s}^2 + 4{,}386\,\text{m/s}^2) = -14{,}196\,\text{m/s}^2$
@@ -91,6 +137,14 @@
 **Kysytty:** hidastuvuus eli kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kun moottori ei enää vedä, eteenpäin vievää voimaa ei ole. Vaakasuunnassa jäävät vain vastusvoimat taaksepäin. Newtonin toisen lain mukaan ne antavat autolle kiihtyvyyden taaksepäin. Ilmanvastus on heti kytkimen painamisen jälkeen sama kuin ennen, koska nopeus ei ole vielä ehtinyt muuttua.
 **Voimakuvio:** Auto on suorakulmio, ja positiivinen suunta on liikkeen suunta. Paino $\overline{G}$ lähtee keskipisteestä alas ja tien tukivoima $\overline{N}$ alapinnasta ylös. Nuolet ovat yhtä pitkät. Ilmanvastus $\overline{F}_\text{v}$ ja vierimisvastus $\overline{F}_\text{r}$ osoittavat taaksepäin. Eteenpäin vievää voimaa ei ole.
+```voimakuvio
+pinta 0
+G 11772
+N 11772
+F_v 450 vasen
+F_r 180 vasen
+a vasen
+```
 **Kaava:** $-F_\text{v} - F_\text{r} = ma$, joten $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
 **Muunnokset:** Nopeutta ei tarvita laskussa, joten sitä ei muunneta. Voimat ovat newtoneina ja massa kilogrammoina.
 **Sijoitus:** $a = -\dfrac{450\,\text{N} + 180\,\text{N}}{1200\,\text{kg}} = -\dfrac{630\,\text{N}}{1200\,\text{kg}} = -0{,}525\,\text{m/s}^2$
@@ -102,6 +156,15 @@
 **Kysytty:** kiihtyvyys $a$ heti asennon muutoksen jälkeen yksikössä $\text{m/s}^2$
 **Periaate:** Rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino. Heti asennon muutoksen jälkeen nopeus on vielä sama, mutta ilmanvastus on pienentynyt puoleen painosta. Kokonaisvoima ei ole enää nolla, ja Newtonin toinen laki antaa kiihtyvyyden.
 **Voimakuvio:** Hyppääjä on suorakulmio, ja positiivinen suunta on alas. Ennen muutosta paino $\overline{G}$ ja ilmanvastus $\overline{F}_\text{v}$ ovat yhtä pitkät. Heti muutoksen jälkeen paino lähtee keskipisteestä alas. Ilmanvastus lähtee alhaalta ylös alapintaan asti, ja se on puolet painon pituudesta.
+```voimakuvio
+G 706,3
+F_v 706,3 ylös työntö @ala
+a 0
+---
+G 706,3
+F_v 353,2 ylös työntö @ala
+a alas
+```
 **Kaava:** Ennen muutosta $F_\text{v} = mg$, joten muutoksen jälkeen $F_\text{v}' = \tfrac{1}{2}mg$. Liikeyhtälö $mg - F_\text{v}' = ma$ antaa $a = \dfrac{mg - \tfrac{1}{2}mg}{m} = \dfrac{g}{2}$
 **Muunnokset:** Massa supistuu pois, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{9{,}81\,\text{m/s}^2}{2} = 4{,}905\,\text{m/s}^2$
@@ -113,6 +176,15 @@
 **Kysytty:** kiihtyvyyksien suuruuksien erotus $\Delta a$ yksikössä $\text{m/s}^2$
 **Periaate:** Ilmanvastus osoittaa aina nopeutta vastaan. Nousussa se osoittaa alas, samaan suuntaan kuin paino. Laskussa se osoittaa ylös, painoa vastaan. Newtonin toinen laki antaa kiihtyvyyden kummallakin hetkellä, ja kiihtyvyydet vähennetään toisistaan.
 **Voimakuvio:** Kuvioita on kaksi, ja pallo on suorakulmio. Nousussa paino $\overline{G}$ lähtee keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ ylhäältä alas yläpintaan asti. Laskussa paino osoittaa alas ja ilmanvastus lähtee alhaalta ylös alapintaan asti. Kummassakin positiivinen suunta on alas.
+```voimakuvio
+G 1,962
+F_v 0,6 alas työntö @ylä
+a alas
+---
+G 1,962
+F_v 0,6 ylös työntö @ala
+a alas
+```
 **Kaava:** Nousussa $mg + F_\text{v} = ma_1$, joten $a_1 = g + \dfrac{F_\text{v}}{m}$. Laskussa $mg - F_\text{v} = ma_2$, joten $a_2 = g - \dfrac{F_\text{v}}{m}$. Erotus on $\Delta a = a_1 - a_2 = \dfrac{2F_\text{v}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta a = \dfrac{2\cdot 0{,}600\,\text{N}}{0{,}200\,\text{kg}} = 6{,}00\,\text{m/s}^2$
@@ -124,6 +196,11 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ hetkellä, jota piste $P$ vastaa, yksikössä $\text{N}$
 **Periaate:** Kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin. Käyrän kulmakerroin tietyllä hetkellä on sen tangentin kulmakerroin. Kun kiihtyvyys tunnetaan, Newtonin toinen laki antaa ilmanvastuksen, koska palloon vaikuttavat vain paino ja ilmanvastus.
 **Voimakuvio:** Pallo on suorakulmio, ja positiivinen suunta on alas. Paino $\overline{G}$ lähtee keskipisteestä alas. Ilmanvastus $\overline{F}_\text{v}$ lähtee alhaalta ylös alapintaan asti. Se on painoa lyhyempi.
+```voimakuvio
+G 1,472
+F_v 0,4965 ylös työntö @ala
+a alas
+```
 **Kuvaajan lukeminen:** Tangentti alkaa pystyakselilta kohdasta $(0;\, 2{,}0\,\text{m/s})$ ja kulkee ruudukon risteyksen $(2{,}0\,\text{s};\, 15{,}0\,\text{m/s})$ kautta. Nämä pisteet ovat kaukana toisistaan ja ruudukon viivoilla, joten ne voi lukea tarkasti. Kulmakerroin luetaan tangentilta, ei käyrän pisteistä.
 **Kaava:** $a = \dfrac{\Delta v}{\Delta t}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.

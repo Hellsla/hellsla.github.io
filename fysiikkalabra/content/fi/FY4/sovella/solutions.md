@@ -138,6 +138,15 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 **Kysytty:** liikekitkakertoimet $\mu_\text{A}$ ja $\mu_\text{B}$
 **Periaate:** Kuvaajat ovat suoria, joten kiihtyvyys on vakio ja se on suoran kulmakerroin. Newtonin toisen lain mukaan kiihtyvyyden aiheuttaa voimien summa, joten kiihtyvyydestä päätellään kitkavoima ja siitä kitkakerroin. Rinteessä akselit kannattaa valita rinteen suuntaisesti, koska liike on rinteen suuntaista.
 **Voimakuvio:** b-kohdan kuvio: $x$-akseli rinnettä alas ja $y$-akseli kohtisuoraan rinteestä ulos. Painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Tukivoima on $y$-akselin suuntaan ja kitka $x$-akselia vastaan.
+```voimakuvio
+pinta -4
+G 706,32
+N 704,60
+F_mu 21,19 ylös
+a alas
+akselit -4
+komponentit G
+```
 **Kuvaajan lukeminen:** Voiteen A suora kulkee pisteiden $(0\,\text{s};\ 2{,}10\,\text{m/s})$ ja $(8\,\text{s};\ 5{,}22\,\text{m/s})$ kautta, joten $a_\text{A} = \dfrac{3{,}12\,\text{m/s}}{8\,\text{s}} = 0{,}39\,\text{m/s}^2$. Voiteen B suora kulkee pisteiden $(0\,\text{s};\ 1{,}90\,\text{m/s})$ ja $(8\,\text{s};\ 3{,}86\,\text{m/s})$ kautta, joten $a_\text{B} = \dfrac{1{,}96\,\text{m/s}}{8\,\text{s}} = 0{,}245\,\text{m/s}^2$.
 **Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$ eli $mg\sin\alpha - \mu mg\cos\alpha = ma$. Massa supistuu, ja $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 **Muunnokset:** Ei tarvita, kiihtyvyydet ovat yksikössä $\text{m/s}^2$.

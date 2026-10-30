@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-1-L1-01",
+      "level": 1,
+      "text": "Juoksija kulkee tasaisella nopeudella suoraa rataa pitkin. Hän kulkee $120\\,\\text{m}$:n matkan $15\\,\\text{s}$:ssa. Liikkeen suunta on valittu positiiviseksi. Mikä on juoksijan nopeus?",
+      "answer": 8.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-02",
+      "level": 1,
+      "text": "Kärry on $x$-akselilla ensin paikassa $12\\,\\text{m}$. Sitten se liikkuu paikkaan $-5{,}0\\,\\text{m}$. Mikä on kärryn siirtymä? Anna vastaus etumerkkeineen.",
+      "answer": -17,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-03",
+      "level": 1,
+      "text": "Kärry liikkuu tasaisella nopeudella $3{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Liike kestää $12\\,\\text{s}$. Kuinka suuri on kärryn siirtymä?",
+      "answer": 42,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-04",
+      "level": 1,
+      "text": "Kärryn $(t, x)$-kuvaaja on suora. Suora kulkee pisteiden $(0\\,\\text{s};\\, 4{,}0\\,\\text{m})$ ja $(10\\,\\text{s};\\, 24\\,\\text{m})$ kautta. Mikä on kärryn nopeus?",
+      "answer": 2.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-05",
+      "level": 1,
+      "text": "Kävelijä on hetkellä $t = 0\\,\\text{s}$ paikassa $15\\,\\text{m}$. Hän kulkee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Missä paikassa hän on hetkellä $t = 20\\,\\text{s}$?",
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-1-L2-01",
+      "level": 2,
+      "text": "Auto ajaa suoraa tietä tasaisella nopeudella $90\\,\\text{km/h}$. Kuinka pitkän matkan se kulkee $12\\,\\text{s}$:ssa? Anna vastaus metreinä.",
+      "answer": 300,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-02",
+      "level": 2,
+      "text": "Juoksija kulkee suoraa polkua tasaisella nopeudella $4{,}0\\,\\text{m/s}$. Kuinka monta minuuttia hänellä kestää $1{,}2\\,\\text{km}$:n matka?",
+      "answer": 5.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-03",
+      "level": 2,
+      "text": "Kärry on hetkellä $t = 2{,}0\\,\\text{s}$ paikassa $18\\,\\text{m}$. Hetkellä $t = 7{,}0\\,\\text{s}$ se on paikassa $3{,}0\\,\\text{m}$. Kärry liikkuu tasaisesti. Laske kärryn nopeus etumerkkeineen.",
+      "answer": -3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-04",
+      "level": 2,
+      "text": "Kärry on hetkellä $t = 0\\,\\text{s}$ paikassa $-24\\,\\text{m}$. Se kulkee tasaisesti nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Milloin kärry on origossa eli paikassa $x = 0$?",
+      "answer": 16,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-1-L3-01",
+      "level": 3,
+      "text": "Pyöräilijä ajaa suoraa tietä itään $6{,}0\\,\\text{km}$ ajassa $20\\,\\text{min}$. Sitten hän kääntyy heti takaisin. Hän ajaa saman $6{,}0\\,\\text{km}$:n matkan länteen ajassa $30\\,\\text{min}$. Laske koko matkan keskivauhti eli kuljettu matka jaettuna kuluneella ajalla. Anna vastaus yksikössä m/s.",
+      "answer": 4.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L3-02",
+      "level": 3,
+      "text": "Aino ja Eeva lähtevät samaan aikaan kävelemään toisiaan kohti samalla suoralla. Aino lähtee paikasta 0. Hän kulkee nopeudella $1{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Eeva lähtee paikasta $90\\,\\text{m}$. Hän kulkee nopeudella $-1{,}2\\,\\text{m/s}$. Missä paikassa he kohtaavat?",
+      "answer": 50,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L3-03",
+      "level": 3,
+      "text": "Robotin $(t, x)$-kuvaaja koostuu kolmesta suorasta osasta. Välillä 0–$10\\,\\text{s}$ paikka kasvaa arvosta 0 arvoon $30\\,\\text{m}$. Välillä 10–$20\\,\\text{s}$ robotti on paikallaan. Välillä 20–$40\\,\\text{s}$ paikka pienenee arvoon $10\\,\\text{m}$. Mikä on robotin keskinopeus koko $40\\,\\text{s}$:n ajalta? Anna vastaus etumerkkeineen.",
+      "answer": 0.25,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

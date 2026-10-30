@@ -1298,6 +1298,7 @@
     "dir_left": "to the left",
     "dir_down": "down",
     "dir_deg": "at {{deg}} degrees to the horizontal",
-    "approx": "small forces are drawn longer than to scale;"
+    "approx": "small forces are drawn longer than to scale;",
+    "velocity": "velocity {{dir}};"
   }
 }

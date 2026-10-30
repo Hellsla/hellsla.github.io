@@ -1,6 +1,6 @@
 # Free-body diagrams and the combined effect of forces
 
-> **Why** can a sled press on the snow differently when it is pulled upward at an angle by a rope than when it simply stands still?
+> **Why** can a sled press on the ground beneath it differently when it is pulled upward at an angle by a rope than when it simply stands still?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a winter yard. On the left a sled stands still and has sunk deep into the snow. On the right a child pulls an identical sled by a rope slanting upwards, and the track it leaves in the snow is shallower." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy45h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy45h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy45h-snow" gradientUnits="userSpaceOnUse" x1="0" y1="340" x2="0" y2="600"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy45h-s1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy45h-s2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>

@@ -1298,6 +1298,7 @@
     "dir_left": "vasemmalle",
     "dir_down": "alas",
     "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan nähden",
-    "approx": "pienet voimat on piirretty pitemmiksi kuin mittakaava antaisi;"
+    "approx": "pienet voimat on piirretty pitemmiksi kuin mittakaava antaisi;",
+    "velocity": "nopeus {{dir}};"
   }
 }

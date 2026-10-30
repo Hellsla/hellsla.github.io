@@ -8,15 +8,19 @@ its "**Voimakuvio:**" sentence as a fenced block; the block is the same in every
     pinta 0              the contact surface's angle in degrees (0 level, 30 a slope rising to the right, -30 to the
                          left); leave it out when nothing supports the body (hanging, falling, a lift's rope)
     G 118                the weight, from the centre, straight down (N, or any unit used for every force)
-    N 118                the normal force, from the contact surface, perpendicular to it (needs pinta)
+    N 118                the normal force, from the contact surface, perpendicular to it (needs pinta); `N 118 työntö`
+                         draws it outside the body ending at the contact surface ("alhaalta ylös alapintaan asti")
     F_mu 30 vasen        friction along the surface, from a bottom corner: vasen | oikea | ylös | alas (ylös = up the slope)
     F 40 30              any other force: its size and direction in degrees (0 right, 90 up) or a word
     F 40 0 työntö        a push: the arrow ends on the body (a hand pushing a box)
+    F 40 0 @ala          any force but G, N and friction can name the face it acts on (@ala @ylä @vasen @oikea):
+                         it starts (a push: ends) at the middle of that face; forces along one line are moved apart
     T 40 90              a rope's tension, from the outline, along the rope
     F_v 20 ylös          air resistance; F_n buoyancy (noste); F_j a spring; other symbols are "other" forces
     a oikea              the acceleration's direction (a word or degrees; 0 alone: the body does not accelerate; on
                          a slope ylös/alas mean up/down the slope, for forces the words are always absolute):
                          drawn beside the body in orange and used to check that the forces sum that way
+    v oikea              the velocity's direction, drawn beside the body in blue (never as a force); optional
     akselit 0            the x-y axes (x at this angle); `komponentit G` draws G's components on them, dashed
     ---                  a second body of a coupled system (each body gets its own diagram, side by side)
     ```
@@ -55,19 +59,21 @@ def parse(spec):
     """[{surface, forces: [(sym, size, deg or word, push)], a, axes, comps}] per body."""
     bodies = []
     for chunk in re.split(r"^---\s*$", spec, flags=re.M):
-        b = dict(surface=None, forces=[], a=None, axes=None, comps=[])
+        b = dict(surface=None, forces=[], a=None, v=None, axes=None, comps=[])
         for raw in chunk.splitlines():
             line = raw.split("#")[0].strip()
             if not line: continue
             t = line.split()
-            if t[0] == "pinta": b["surface"] = float(t[1])
+            if t[0] == "pinta": b["surface"] = float(t[1].replace(",", "."))
             elif t[0] == "a": b["a"] = t[1]
-            elif t[0] == "akselit": b["axes"] = float(t[1]) if len(t) > 1 else 0.0
+            elif t[0] == "v": b["v"] = t[1]
+            elif t[0] == "akselit": b["axes"] = float(t[1].replace(",", ".")) if len(t) > 1 else 0.0
             elif t[0] == "komponentit": b["comps"] += t[1:]
             else:
                 if len(t) < 2: raise ValueError(f"voimakuvio: '{line}': a force needs its size")
                 rest = t[2:]; face = next((w for w in rest if w in SIDES), None); rest = [w for w in rest if w not in SIDES]
                 if kind_of(t[0]) == "normal": rest = [None] + rest                  # a normal force: its face is its direction
+                                                                                   # (`työntö`: drawn from below up to the face)
                 b["forces"].append((t[0], float(t[1].replace(",", ".")), rest[0] if rest else None,
                                     "työntö" in rest or "push" in rest, face))
         if not b["forces"]: raise ValueError("voimakuvio: a body without forces")
@@ -117,7 +123,7 @@ def _dir_words(deg):
 
 
 SIDES = {"@ala": (0, -1), "@ylä": (0, 1), "@vasen": (-1, 0), "@oikea": (1, 0)}                                          # a face of the body, in its own frame
-MIN_SHOWN = 0.25                   # a force under this share of the largest is drawn at this share, not to scale
+MIN_SHOWN = 0.4                    # a force under this share of the largest is drawn longer than to scale (keeping their order)
 
 
 def _face(word):
@@ -144,12 +150,12 @@ def _surface(f, p, q, solid):
         k += 16
 
 
-def _forces(b, cx, cy, ang, shown):
+def _forces(b, cx, cy, ang, shown, scale):
     """(sym, vec, at, kind, extra, description direction) of each force of a body; shown(size) is the drawn size."""
     out, faces = [], set()
     def taken(u):                                                                  # another force starts near u on the body
         c, s_ = math.cos(math.radians(ang)), math.sin(math.radians(ang))
-        return any(abs((at[0] - cx) * c - (at[1] - cy) * s_ - u) < 30 for _, _, _, at, k, _ in out if k not in ("gravity", "normal"))
+        return any(abs((at[0] - cx) * c - (at[1] - cy) * s_ - u) < 20 for _, _, _, at, k, _ in out if k not in ("gravity", "normal"))
     order = sorted(b["forces"], key=lambda x: kind_of(x[0]) == "normal")            # the normal forces last: they dodge
     for sym, size, word, push, face in order:
         k = kind_of(sym); L = shown(size)
@@ -162,12 +168,14 @@ def _forces(b, cx, cy, ang, shown):
             tan = _rot(ang, -fo[1], fo[0]) if fo[1] == 0 else _rot(ang, 1, 0)      # along the face: up a side, right on top/bottom
             half = (W / 2, H / 2)
             if k == "normal":
-                sgn = 1 if ang >= 0 else -1                                          # beside G's line, not on it, and
-                if fo[1] and taken(sgn * 0.3 * W): sgn = -sgn                       # away from the other forces' tails
-                off = 0.3 * (W if fo[1] else H) * sgn
+                off = 0.3 * (W if fo[1] else H) * (1 if ang >= 0 else -1)
+                if fo[1]:                                                           # beside G's line, clear of its shaft,
+                    clear = lambda u: abs(u * math.cos(math.radians(ang)) - fo[1] * H / 2 * math.sin(math.radians(ang))) >= 16
+                    cands = [u for f_ in (0.3, 0.38) for u in (off * f_ / 0.3, -off * f_ / 0.3) if clear(u)]
+                    off = next((u for u in cands if not taken(u)), cands[0] if cands else off)   # away from other forces' tails
                 ux, vy = (off, fo[1] * half[1]) if fo[1] else (fo[0] * half[0], off)
                 out.append((sym, (nrm[0] * size, nrm[1] * size), (nrm[0] * L, nrm[1] * L), _local(cx, cy, ang, ux, vy), k,
-                            dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
+                            dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm, **({"push": True} if push else {}))))
                 continue
             sgn = {"oikea": 1, "right": 1, "ylös": 1, "up": 1, "vasen": -1, "left": -1, "alas": -1, "down": -1}.get(word)
             if sgn is None: raise ValueError(f"voimakuvio: {sym}: friction is vasen, oikea, ylös or alas along the surface")
@@ -181,11 +189,41 @@ def _forces(b, cx, cy, ang, shown):
                         dict(surface=math.degrees(math.atan2(tan[1], tan[0])), outward=nrm)))
             continue
         u = _unit(direction(word))
-        at = (cx, cy) if k == "buoyancy" else _outline(cx, cy, ang, (-u[0], -u[1]) if push else u)   # a push ends on the outline
+        if face: fo = _face(face); at = _local(cx, cy, ang, fo[0] * W / 2, fo[1] * H / 2)       # from the middle of that face
+        else: at = (cx, cy) if k == "buoyancy" else _outline(cx, cy, ang, (-u[0], -u[1]) if push else u)   # a push ends on the outline
         extra = {"rope": u} if k == "tension" else {"v_rel": (-u[0], -u[1])} if k == "drag" else {}
         if push: extra["push"] = True
         out.append((sym, (u[0] * size, u[1] * size), (u[0] * L, u[1] * L), at, k, extra))
-    return out, faces
+    return _apart(out, scale), faces
+
+
+def _apart(out, scale):
+    """Two forces drawn along one line (two weights from the centre, a drag and a buoyancy both up) are moved apart
+    sideways, along the face they start on, so both arrows show; a second weight is then drawn as an "other" force
+    (its own centre of mass is not the body's centre)."""
+    res, weights = [], 0
+    first = next((i for i, x in enumerate(out) if x[4] == "gravity"), None)        # the weight stays at the centre
+    order = ([out[first]] if first is not None else []) + [x for i, x in enumerate(out) if i != first]
+    for sym, vec, L, at, k, extra in order:
+        if k == "gravity":
+            weights += 1
+            if weights > 1: k = "gravity2"
+        u = fbd._unit(L)
+        for _ in range(4):
+            hit = False
+            for _, _, L2, at2, k2, ex2 in res:
+                u2 = fbd._unit(L2)
+                if abs(u[0] * u2[1] - u[1] * u2[0]) > 0.05: continue
+                dx, dy = at2[0] - at[0], at[1] - at2[1]                            # world frame, y up
+                if abs(u[0] * dy - u[1] * dx) >= 14: continue                       # side by side already
+                a0, a1 = sorted((0.0, math.hypot(*L) * scale * (-1 if extra.get("push") else 1)))
+                p0 = u[0] * dx + u[1] * dy; p1 = p0 + (u[0] * u2[0] + u[1] * u2[1]) * math.hypot(*L2) * scale * (-1 if ex2.get("push") else 1)
+                gap = -26 if u[0] * u2[0] + u[1] * u2[1] > 0 else 4                 # same way: their labels need room too
+                if min(a1, max(p0, p1)) - max(a0, min(p0, p1)) > gap: hit = True; break   # along a common stretch
+            if not hit: break
+            at = (at[0] + (-u[1]) * 18 * (1 if weights < 3 else -1), at[1] - u[0] * 18)
+        res.append((sym, vec, L, at, k, extra))
+    return res
 
 
 def _box(cx, cy, tex, size=24):
@@ -211,7 +249,7 @@ def _place(arrows, solid, width, top, bottom):
         if at_tail: ex, ey, ux, uy = x1, y1, -ux, -uy                         # a push: labelled at its tail, outwards
         else: ex, ey = x2, y2
         nx, ny = -uy, ux
-        cands = [(ux * d, uy * d) for d in (24, 34)] + [(ux * 10 + nx * s * d, uy * 10 + ny * s * d) for d in (22, 32) for s in (1, -1)] \
+        cands = [(ux * d, uy * d) for d in (24, 34, 46)] + [(ux * 10 + nx * s * d, uy * 10 + ny * s * d) for d in (22, 32, 44) for s in (1, -1)] \
               + [(-ux * L * f + nx * s * 24, -uy * L * f + ny * s * 24) for f in (0.3, 0.55) for s in (1, -1)]
         best = None
         for i, (dx, dy) in enumerate(cands):
@@ -231,20 +269,20 @@ def draw(spec, fid, _frame=None):
     two = len(bodies) > 1
     big = max(f[1] for b in bodies for f in b["forces"])
     scale = (70 if two else 100) / big
-    shown = lambda size: max(size, MIN_SHOWN * big)
-    Hfig, shift = _frame or (460, 0)
+    shown = lambda size: size if size >= MIN_SHOWN * big else 0.25 * big + (1 - 0.25 / MIN_SHOWN) * size   # small ones longer, in order
+    Hfig, shift, xr = _frame or (460, 0, None)
     f = Fig(fid, Hfig, "")
-    words, approx, ys = [], False, []
+    words, approx, ys, xs = [], False, [], []
     for i, b in enumerate(bodies):
         cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
         a_dir = None
         if b["a"] is not None:
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
-        forces, faces = _forces(b, cx, cy, ang, shown)
+        forces, faces = _forces(b, cx, cy, ang, shown, scale)
         approx = approx or any(shown(x[1]) > x[1] for x in b["forces"])
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
-        for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, k, tex=tex_of(sym), **extra)
+        for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, "gravity" if k == "gravity2" else k, tex=tex_of(sym), **extra)
         axes = None
         if b["axes"] is not None:
             axes = (_unit(b["axes"]), _unit(b["axes"] + 90))
@@ -261,7 +299,7 @@ def draw(spec, fid, _frame=None):
             p2 = _local(cx, cy, ang, fo[0] * W / 2 + al[0] * e, fo[1] * H / 2 + al[1] * e)
             _surface(f, p1, p2, sol)
             solid += [(p1[0] + (p2[0] - p1[0]) * t / 30 + sol[0] * 6, p1[1] + (p2[1] - p1[1]) * t / 30 - sol[1] * 6) for t in range(31)]
-            ys += [p1[1], p2[1]]
+            ys += [p1[1], p2[1]]; xs += [p1[0], p2[0]]
         arrows = []                                                                # (tail, tip, tex, labelled at the tail)
         for sym, _, vec, (px, py), k, extra in forces:
             tip = (px + vec[0] * scale, py - vec[1] * scale)
@@ -274,32 +312,37 @@ def draw(spec, fid, _frame=None):
                 for ax, c in zip(axes, "xy"):
                     kk = vec[0] * ax[0] + vec[1] * ax[1]; v = (ax[0] * kk, ax[1] * kk)
                     comps.append((f"{sym}_{c}", sym, ax)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
-        motion = None
-        if a_dir not in (None, (0, 0)):
-            nx, ny = -a_dir[1], a_dir[0]
-            if ny < 0 or (ny == 0 and nx < 0): nx, ny = -nx, -ny                  # beside the body, on its upper side
-            R = math.hypot(W, H) / 2 + 30
-            st = (cx + nx * R - a_dir[0] * 28, cy - ny * R + a_dir[1] * 28)
-            motion = st; arrows.append((st, (st[0] + a_dir[0] * 56, st[1] - a_dir[1] * 56), r"\overline{a}", False))
+        motion = []                                                                # velocity and acceleration, beside the body
+        v_dir = _unit(along(b["v"], surf)) if b["v"] not in (None, "0", "nolla", "none") else None
+        for sym_, dir_, R in ((r"\overline{v}", v_dir, 30), (r"\overline{a}", a_dir if a_dir != (0, 0) else None, 30 + 40 * (v_dir is not None))):
+            if dir_ is None: continue
+            nx, ny = -dir_[1], dir_[0]
+            if ny < 0 or (ny == 0 and nx < 0): nx, ny = -nx, -ny                  # on the body's upper side
+            R += math.hypot(W, H) / 2
+            st = (cx + nx * R - dir_[0] * 28, cy - ny * R + dir_[1] * 28)
+            motion.append((sym_, dir_, st)); arrows.append((st, (st[0] + dir_[0] * 56, st[1] - dir_[1] * 56), sym_, False))
         offs, boxes = _place(arrows, solid, 600, 2 - shift, 458 - shift)          # the same in both passes
         ys += [y for bx in boxes for y in (bx[1], bx[3])] + [y for t, q, *_ in arrows for y in (t[1], q[1])] + [p[1] for p in solid]
+        xs += [x for bx in boxes for x in (bx[0], bx[2])] + [x for t, q, *_ in arrows for x in (t[0], q[0])] + [p[0] for p in solid]
         d = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), wrong="drawn lengths: small forces enlarged (checked above on the true sizes)")
         nf = len(forces)
-        for j, (sym, _, vec, at, k, extra) in enumerate(forces): d.force(sym, vec, at, k, tex=tex_of(sym), lab=offs[j], **extra)
+        for j, (sym, _, vec, at, k, extra) in enumerate(forces): d.force(sym, vec, at, "other" if k == "gravity2" else k, tex=tex_of(sym), lab=offs[j], **extra)
         for j, (cs, of, ax) in enumerate(comps): d.component(cs, of, ax, lab=offs[nf + j])
         if axes:
             ox, oy = cx + (W * 0.75 if two else W * 1.5), cy - H * 1.5
             for (vx, vy), lab in zip(axes, "xy"):
                 f.arrow(ox, oy, ox + vx * 36, oy - vy * 36, MUTED, 2, 10); f.tex(ox + vx * 50, oy - vy * 50, lab, "middle", MUTED)
-            ys += [oy - 60, oy + 40]
+            ys += [oy - 60, oy + 40]; xs += [ox - 40, ox + 60]
         d.draw()
-        if motion: d.motion(r"\overline{a}", a_dir, motion, 56, lab=offs[-1])
-        words.append((surf, [(k, sym, math.degrees(math.atan2(vec[1], vec[0]))) for sym, vec, _, _, k, _ in forces], b["a"]))
+        for j, (sym_, dir_, st) in enumerate(motion): d.motion(sym_, dir_, st, 56, lab=offs[len(offs) - len(motion) + j])
+        words.append((surf, [(k.replace("2", ""), sym, math.degrees(math.atan2(vec[1], vec[0]))) for sym, vec, _, _, k, _ in forces], b["a"], b["v"]))
     f.label = describe(words, two, approx)
     if _frame is None:                                                             # again, cut to what it holds
         y0, y1 = min(ys) - 8, max(ys) + 8
-        return draw(spec, fid, (round(y1 - y0), round(y0)))
-    return f.svg()
+        x0, x1 = max(0, min(xs) - 8), min(600, max(xs) + 8)
+        return draw(spec, fid, (round(y1 - y0), round(y0), (round(x0), round(x1 - x0))))
+    svg = f.svg()
+    return svg.replace(f'viewBox="0 0 600 {Hfig}"', f'viewBox="{xr[0]} 0 {xr[1]} {Hfig}"', 1) if xr else svg
 
 
 def _plain(sym):
@@ -311,11 +354,12 @@ def _plain(sym):
 def describe(words, two, approx=False):
     """The figure's text alternative in the page language, from the spec."""
     T = i18n.t; out = [T("fbd.lead_two") if two else T("fbd.lead")] + ([T("fbd.approx")] if approx else [])
-    for i, (surf, desc, a) in enumerate(words):
+    for i, (surf, desc, a, v) in enumerate(words):
         part = [T("fbd.body_n", n=i + 1)] if two else []
         if surf not in (None, 0): part.append(T("fbd.slope", deg=f"{abs(round(surf))}"))
         for k, sym, deg in desc:
             part.append(T(f"fbd.kind_{k}", sym=_plain(sym), dir=_dir_words(deg)))
+        if v not in (None, "0", "nolla", "none"): part.append(T("fbd.velocity", dir=_dir_words(along(v, surf))))
         if a not in (None, "0", "nolla", "none"): part.append(T("fbd.accel", dir=_dir_words(along(a, surf))))
         out.append(" ".join(part))
     return " ".join(out)

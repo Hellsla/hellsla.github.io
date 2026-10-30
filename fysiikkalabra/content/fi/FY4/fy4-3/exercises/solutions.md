@@ -3,6 +3,11 @@
 **Kysytty:** johdon jännitysvoima $T$ yksikössä $\text{N}$
 **Periaate:** Lamppu on levossa, joten Newtonin ensimmäisen lain mukaan siihen vaikuttavien voimien summa on nolla. Lamppuun vaikuttavat vain Maa ja johto.
 **Voimakuvio:** Lamppu suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas ja johdon jännitysvoima $\overline{T}$ yläpinnasta ylös, yhtä pitkinä.
+```voimakuvio
+G 18
+T 18 ylös
+a 0
+```
 **Kaava:** $T - G = 0$, joten $T = G$
 **Muunnokset:** Paino on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = G = 18\,\text{N}$
@@ -14,6 +19,11 @@
 **Kysytty:** joukkueen B voima köyteen $F_B$ yksikössä $\text{N}$
 **Periaate:** Köysi on levossa, joten Newtonin ensimmäisen lain mukaan siihen vaikuttavien voimien summa on nolla. Vaakasuunnassa köyteen vaikuttavat vain joukkueiden vedot.
 **Voimakuvio:** Köysi pitkänä suorakulmiona, positiivinen suunta oikealle. Joukkueen A veto $\overline{F}_A$ köyden vasemmasta päästä vasemmalle ja joukkueen B veto $\overline{F}_B$ oikeasta päästä oikealle.
+```voimakuvio
+F_A 850 vasen
+F_B 850 oikea
+a 0
+```
 **Kaava:** $F_B - F_A = 0$, joten $F_B = F_A$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_B = F_A = 850\,\text{N}$
@@ -25,6 +35,13 @@
 **Kysytty:** laidan voima luistelijaan $F_{\text{KL}}$ yksikössä $\text{N}$
 **Periaate:** Newtonin kolmas laki: luistelija ja laita vuorovaikuttavat, joten laita vaikuttaa luistelijaan yhtä suurella mutta vastakkaissuuntaisella voimalla. Laki pätee riippumatta siitä, liikkuuko kumpikaan.
 **Voimakuvio:** Valitaan kappaleeksi luistelija, joka piirretään suorakulmiona; positiivinen suunta on laidasta poispäin. Luistelijaan vaikuttavat paino alas, jään tukivoima ylös ja laidan voima $\overline{F}_{\text{KL}}$ luistelijasta poispäin, päättyen luistelijan kylkeen. Hänen oma voimansa laitaan $\overline{F}_{\text{LK}}$ vaikuttaa laitaan, joten se ei kuulu hänen kuvioonsa vaan on kysytyn voiman vastavoima.
+```voimakuvio
+pinta 0
+G 590
+N 590
+F_KL 90 oikea työntö
+a oikea
+```
 **Kaava:** $\overline{F}_{\text{KL}} = -\overline{F}_{\text{LK}}$, joten suuruuksina $F_{\text{KL}} = F_{\text{LK}}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_{\text{KL}} = F_{\text{LK}} = 90\,\text{N}$
@@ -36,6 +53,15 @@
 **Kysytty:** vierimisvastus $F_\text{r}$ yksikössä $\text{N}$
 **Periaate:** Auto liikkuu suoraviivaisesti tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan kokonaisvoima on nolla myös liikkeen suunnassa: eteenpäin ja taaksepäin vaikuttavat voimat ovat yhtä suuret.
 **Voimakuvio:** Auto suorakulmiona, positiivinen suunta eteenpäin. Vaakasuunnassa tien voima $\overline{F}$ eteenpäin, ilmanvastus $\overline{F}_\text{i}$ ja vierimisvastus $\overline{F}_\text{r}$ taaksepäin. Pystysuunnassa paino ja tien tukivoima kumoavat toisensa.
+```voimakuvio
+pinta 0
+G 900
+N 900
+F 620 oikea
+F_i 380 vasen
+F_r 240 vasen
+a 0
+```
 **Kaava:** $F - F_\text{i} - F_\text{r} = 0$, joten $F_\text{r} = F - F_\text{i}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{r} = 620\,\text{N} - 380\,\text{N} = 240\,\text{N}$
@@ -47,6 +73,12 @@
 **Kysytty:** kirjan voima Maahan $F$ yksikössä $\text{N}$
 **Periaate:** Maa ja kirja vetävät toisiaan. Newtonin kolmannen lain mukaan kirja vetää Maata yhtä suurella voimalla kuin Maa kirjaa, mutta vastakkaiseen suuntaan eli ylöspäin. Maan voima kirjaan on paino $G = mg$.
 **Voimakuvio:** Valitaan kappaleeksi kirja, joka piirretään suorakulmiona; positiivinen suunta on ylös. Kirjaan vaikuttavat paino $\overline{G}$ keskipisteestä alas ja pöydän tukivoima $\overline{N}$ alapinnasta ylös. Paino on Maan voima kirjaan, ja sen vastavoima on kirjan voima $\overline{F}$ Maahan, joka vaikuttaa Maahan eikä kuulu kirjan kuvioon.
+```voimakuvio
+pinta 0
+G 6,3765
+N 6,3765
+a 0
+```
 **Kaava:** $F = G$ ja $G = mg$, joten $F = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}65\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 6{,}3765\,\text{N}$
@@ -58,6 +90,13 @@
 **Kysytty:** alemman kirjan voima pöytään $F$ yksikössä $\text{N}$
 **Periaate:** Ylempi kirja on levossa, joten alempi kirja tukee sitä voimalla $G_2$ (ensimmäinen laki), ja kolmannen lain mukaan ylempi kirja painaa alempaa yhtä suurella voimalla alaspäin. Alempi kirja on myös levossa, joten pöydän tukivoima siihen on yhtä suuri kuin alaspäin vaikuttavat voimat yhteensä. Lopuksi alempi kirja painaa pöytää tukivoiman suuruisella voimalla (kolmas laki).
 **Voimakuvio:** Alempi kirja suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}_1$ keskipisteestä alas, ylemmän kirjan voima $\overline{F}_2$ yläpinnasta alas ja pöydän tukivoima $\overline{N}$ alapinnasta ylös.
+```voimakuvio
+pinta 0
+G_1 8,0
+F_2 5,0 alas työntö
+N 13
+a 0
+```
 **Kaava:** $N - G_1 - F_2 = 0$ ja $F_2 = G_2$, joten $F = N = G_1 + G_2$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 8{,}0\,\text{N} + 5{,}0\,\text{N} = 13\,\text{N}$
@@ -69,6 +108,13 @@
 **Kysytty:** veden vastus uimariin $F_\text{v}$ yksikössä $\text{N}$
 **Periaate:** Kolmannen lain mukaan vesi työntää uimaria eteenpäin yhtä suurella voimalla $F_{\text{VU}} = 65\,\text{N}$; se vie uimaria eteenpäin. Uimari liikkuu tasaisella nopeudella, joten ensimmäisen lain mukaan vaakasuuntaisten voimien summa on nolla. Paino ja noste ovat pystysuoria eivätkä vaikuta vaakasuuntaiseen tasapainoon, joten niitä ei tarvita: veden vastus taaksepäin on yhtä suuri kuin veden työntö eteenpäin.
 **Voimakuvio:** Uimari suorakulmiona, positiivinen suunta eteenpäin. Veden työntö $\overline{F}_{\text{VU}}$ eteenpäin ja veden vastus $\overline{F}_\text{v}$ taaksepäin. Pystysuunnassa noste ja paino kumoavat toisensa.
+```voimakuvio
+G 720
+F_n 720 ylös
+F_VU 65 oikea
+F_v 65 vasen
+a 0
+```
 **Kaava:** $F_{\text{VU}} - F_\text{v} = 0$ ja $F_{\text{VU}} = F_{\text{UV}}$, joten $F_\text{v} = F_{\text{UV}}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = F_{\text{UV}} = 65\,\text{N}$
@@ -80,6 +126,12 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ yksikössä $\text{N}$
 **Periaate:** Hyppääjä laskeutuu suoraviivaisesti tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan kokonaisvoima on nolla. Häneen vaikuttavat Maa (paino alas) ja ilma (vastus ylös, liikettä vastaan).
 **Voimakuvio:** Hyppääjä ja varjo suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ ylös, yhtä pitkinä. Nopeus alas piirretään erikseen, ei voimaksi.
+```voimakuvio
+G 833,85
+F_v 833,85 ylös
+a 0
+v alas
+```
 **Kaava:** $F_\text{v} - G = 0$ ja $G = mg$, joten $F_\text{v} = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 833{,}85\,\text{N}$
@@ -91,6 +143,12 @@
 **Kysytty:** kaapelin jännitysvoima $T$ yksikössä $\text{kN}$
 **Periaate:** Kori ja matkustajat liikkuvat yhdessä tasaisella nopeudella, joten ensimmäisen lain mukaan niihin vaikuttavien voimien summa on nolla. Kun kori ja matkustajat ajatellaan yhdeksi kappaleeksi, kaapeli kannattelee niiden yhteistä painoa.
 **Voimakuvio:** Kori matkustajineen suorakulmiona, positiivinen suunta ylös. Kaapelin jännitysvoima $\overline{T}$ yläpinnasta ylös, korin paino $\overline{G}_\text{k}$ ja matkustajien paino $\overline{G}_\text{m}$ alas.
+```voimakuvio
+T 8939,2 ylös
+G_k 5800
+G_m 3139,2
+a 0
+```
 **Kaava:** $T - G_\text{k} - mg = 0$, joten $T = G_\text{k} + mg$
 **Muunnokset:** $5{,}8\,\text{kN} = 5800\,\text{N}$; lopuksi newtonit muunnetaan kilonewtoneiksi jakamalla luvulla $1000$.
 **Sijoitus:** $T = 5800\,\text{N} + 320\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 5800\,\text{N} + 3139{,}2\,\text{N} = 8939{,}2\,\text{N}$
@@ -102,6 +160,13 @@
 **Kysytty:** ilmanvastus $F_\text{v}$ yksikössä $\text{kN}$ ja sen suunta
 **Periaate:** Pallo liikkuu tasaisella nopeudella, joten ensimmäisen lain mukaan kokonaisvoima on nolla. Ilmanvastus on liikettä vastaan, ja pallo liikkuu alas, joten vastus osoittaa ylös. Noste ei yksin riitä kumoamaan painoa, joten ilmanvastus kannattelee loput.
 **Voimakuvio:** Pallo koreineen suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas, noste $\overline{F}_\text{n}$ ylös ja ilmanvastus $\overline{F}_\text{v}$ ylös. Nopeus alas erikseen, ei voimaksi.
+```voimakuvio
+G 4620
+F_n 4350 ylös
+F_v 270 ylös
+a 0
+v alas
+```
 **Kaava:** $F_\text{n} + F_\text{v} - G = 0$, joten $F_\text{v} = G - F_\text{n}$
 **Muunnokset:** Kaikki voimat ovat kilonewtoneina ja vastaus pyydetään kilonewtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 4{,}62\,\text{kN} - 4{,}35\,\text{kN} = 0{,}27\,\text{kN}$
@@ -113,6 +178,13 @@
 **Kysytty:** pöydän tukivoima alempaan magneettiin $N$ yksikössä $\text{N}$
 **Periaate:** Ylempi magneetti on levossa, joten alemman magneetin hylkimisvoima siihen on ylös ja yhtä suuri kuin sen paino (ensimmäinen laki). Kolmannen lain mukaan ylempi magneetti hylkii alempaa yhtä suurella voimalla alaspäin, vaikka magneetit eivät kosketa toisiaan. Alempi magneetti on levossa, joten pöydän tukivoima kumoaa sen painon ja tämän voiman.
 **Voimakuvio:** Alempi magneetti suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas, ylemmän magneetin voima $\overline{F}_\text{m}$ yläpinnasta alas ja pöydän tukivoima $\overline{N}$ alapinnasta ylös.
+```voimakuvio
+pinta 0
+G 0,30
+F_m 0,30 alas työntö
+N 0,60
+a 0
+```
 **Kaava:** $N - G - F_\text{m} = 0$ ja $F_\text{m} = G$, joten $N = 2G$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 2\cdot 0{,}30\,\text{N} = 0{,}60\,\text{N}$
@@ -124,6 +196,12 @@
 **Kysytty:** ylemmän vaa'an lukema eli voima $F$, jolla alempi vaaka vetää ylemmän koukkua, yksikössä $\text{N}$
 **Periaate:** Omena on levossa, joten alemman vaa'an koukku vetää sitä ylös $1{,}5\,\text{N}$:n voimalla (ensimmäinen laki), ja kolmannen lain mukaan omena vetää koukkua alas yhtä suurella voimalla. Alempi vaaka on levossa, joten ylemmän vaa'an koukun on vedettävä sitä ylös omenan voiman ja vaa'an oman painon verran. Kolmannen lain mukaan alempi vaaka vetää ylempää alas yhtä suurella voimalla, ja sen ylempi vaaka näyttää.
 **Voimakuvio:** Alempi vaaka suorakulmiona, positiivinen suunta ylös. Ylemmän vaa'an koukun voima $\overline{F}$ yläpinnasta ylös, paino $\overline{G}_\text{v}$ keskipisteestä alas ja omenan voima $\overline{F}_\text{o}$ alapinnasta alas.
+```voimakuvio
+F 1,9 ylös
+G_v 0,40
+F_o 1,5 alas
+a 0
+```
 **Kaava:** $F - G_\text{v} - F_\text{o} = 0$ ja $F_\text{o} = G_\text{o}$, joten $F = G_\text{o} + G_\text{v}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 1{,}5\,\text{N} + 0{,}40\,\text{N} = 1{,}9\,\text{N}$

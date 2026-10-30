@@ -3,6 +3,12 @@
 **Find:** the normal force $N$ of the floor in $\text{N}$
 **Principle:** The person stands still in the lift, so the person accelerates with the lift. By Newton's second law the acceleration is determined by the net force, so in a lift accelerating upwards the normal force must be larger than the weight.
 **Free-body diagram:** The person as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the normal force $\overline{N}$ of the floor from the bottom surface up, longer than the weight. The acceleration up is marked separately and not as a force.
+```voimakuvio
+pinta 0
+G 686,7
+N 742,7 työntö
+a ylös
+```
 **Formula:** $N - mg = ma$, so $N = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $N = 70.0\,\text{kg}\cdot(9.81 + 0.80)\,\text{m/s}^2 = 70.0\,\text{kg}\cdot 10.61\,\text{m/s}^2 = 742.7\,\text{N}$
@@ -14,6 +20,11 @@
 **Find:** the net force $\Sigma F$ in $\text{kN}$ and its direction
 **Principle:** The Earth (the weight) and the air (air resistance) act on the skydiver. The net force is the vector sum of the forces. The skydiver moves down, so the air resistance points up, against the weight.
 **Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up, more than twice as long as the weight.
+```voimakuvio
+G 882,9
+F_v 2100 ylös
+a ylös
+```
 **Formula:** $\Sigma F = F_\text{d} - G$, and $G = mg$, so $\Sigma F = F_\text{d} - mg$
 **Conversions:** $2.10\,\text{kN} = 2.10\cdot 1000\,\text{N} = 2100\,\text{N}$; the result is changed back into kilonewtons at the end.
 **Substitution:** $\Sigma F = 2100\,\text{N} - 90.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 2100\,\text{N} - 882.9\,\text{N} = 1217.1\,\text{N} \approx 1.22\,\text{kN}$
@@ -24,6 +35,13 @@
 **Given:** height difference $h = 3.20\,\text{m}$, initial speed $v_1 = 0$, friction and air resistance are ignored; $g = 9.81\,\text{m/s}^2$
 **Find:** the speed $v_2$ at the end of the chute in $\text{m/s}$
 **Free-body diagram:** The child as a rectangle, tilted along the surface of the chute. The weight $\overline{G}$ from the centre straight down and the normal force $\overline{N}$ of the chute from the bottom surface perpendicularly out of the surface. There is no friction and no force in the direction of the motion. The velocity is marked separately and not as a force.
+```voimakuvio
+pinta -30
+G 300
+N 259,8
+a alas
+v alas
+```
 **Principle:** The weight and the normal force of the chute act on the child. The normal force is perpendicular to the motion and does no work, and friction is ignored, so the mechanical energy is conserved. The shape of the chute does not matter, only the height difference.
 **Formula:** Zero level at the end of the chute: $mgh = \tfrac12 mv_2^2$, so $v_2 = \sqrt{2gh}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass is not needed, because it cancels.
@@ -36,6 +54,13 @@
 **Find:** the sliding distance $s$ in $\text{m}$
 **Principle:** The question is about the distance over which the kinetic energy is used up, so we use the work–energy principle. The height does not change, and friction is the only force doing work: its negative work turns the kinetic energy into internal energy. The friction force comes from the free-body diagram.
 **Free-body diagram:** The sled as a rectangle. The weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ of the snow from the bottom surface up, equally long, and the kinetic friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards. There is no force pointing forwards. In the vertical direction $N - mg = 0$, so $F_\mu = \mu mg$.
+```voimakuvio
+pinta 0
+G 100
+N 100
+F_mu 8 vasen
+a vasen
+```
 **Formula:** $\tfrac12 mv_1^2 - \mu mg s = 0$, so $s = \dfrac{v_1^2}{2\mu g}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** $s = \dfrac{(6.0\,\text{m/s})^2}{2\cdot 0.080\cdot 9.81\,\text{m/s}^2} = \dfrac{36\,\text{m}^2/\text{s}^2}{1.5696\,\text{m/s}^2} = 22.94\,\text{m}$
@@ -47,6 +72,15 @@
 **Find:** the angle of inclination $\alpha$ of the slope in degrees
 **Principle:** The speed is constant, so by Newton's second law the net force is zero both along the slope and perpendicular to it. The component of the weight along the slope and the kinetic friction cancel each other.
 **Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight as dashed lines.
+```voimakuvio
+pinta -8,53
+G 100
+N 98,89
+F_mu 14,83 ylös
+a 0
+akselit -8,53
+komponentit G
+```
 **Formula:** $y$: $N - mg\cos\alpha = 0$; $x$: $mg\sin\alpha - \mu N = 0$, so $mg\sin\alpha = \mu mg\cos\alpha$, $\tan\alpha = \mu$ and $\alpha = \tan^{-1}\mu$
 **Conversions:** The coefficient of friction has no unit, and the angle comes in degrees with the calculator in degree mode, so no conversions are needed.
 **Substitution:** $\alpha = \tan^{-1} 0.15 = 8.531^\circ$
@@ -58,6 +92,12 @@
 **Find:** the acceleration $a$ of the lift in $\text{m/s}^2$ and its direction
 **Principle:** A scale measures the normal force. The reading is larger than the mass, so the normal force is larger than the weight, the net force points up and by Newton's second law the acceleration also points up.
 **Free-body diagram:** The student as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the normal force $\overline{N}$ from the bottom surface up, longer than the weight.
+```voimakuvio
+pinta 0
+G 588,6
+N 652,4 työntö
+a ylös
+```
 **Formula:** $N - mg = ma$, so $a = \dfrac{N - mg}{m}$. When the reading is $L = \tfrac{N}{g}$, $N = Lg$ and $a = g\left(\dfrac{L}{m} - 1\right)$
 **Conversions:** The reading is changed into the normal force by multiplying by $g$: $N = 66.5\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 652.4\,\text{N}$.
 **Substitution:** $a = 9.81\,\text{m/s}^2\cdot\left(\dfrac{66.5\,\text{kg}}{60.0\,\text{kg}} - 1\right) = 9.81\,\text{m/s}^2\cdot 0.10833 = 1.063\,\text{m/s}^2$
@@ -69,6 +109,15 @@
 **Find:** the coefficient of kinetic friction $\mu$ (no unit)
 **Principle:** The speed is known at the start and at the end of the slope, so we use the work–energy principle. The weight does work through the potential energy, the normal force does no work, and kinetic friction does negative work along the whole slope. The friction force comes from the free-body diagram.
 **Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. In the $y$ direction $N = mg\cos\alpha$, so $F_\mu = \mu mg\cos\alpha$.
+```voimakuvio
+pinta -12
+G 100
+N 97,81
+F_mu 13,43 ylös
+a alas
+akselit -12
+komponentit G
+```
 **Formula:** Zero level at the foot: $mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2$, so $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** The numerator is $9.81\cdot 18.0\cdot\sin 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} - \tfrac12\cdot 5.10^2\,\tfrac{\text{m}^2}{\text{s}^2} = 36.71\,\tfrac{\text{m}^2}{\text{s}^2} - 13.01\,\tfrac{\text{m}^2}{\text{s}^2} = 23.71\,\tfrac{\text{m}^2}{\text{s}^2}$ and the denominator $9.81\cdot 18.0\cdot\cos 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172.72\,\tfrac{\text{m}^2}{\text{s}^2}$, so $\mu = \dfrac{23.71}{172.72} = 0.1373$
@@ -79,6 +128,12 @@
 **Given:** $m = 80.0\,\text{kg}$, $v_1 = 52.0\,\text{m/s}$, $v_2 = 6.0\,\text{m/s}$, drop $h = 145\,\text{m}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the mechanical energy changed into other forms of energy $|\Delta E_\text{mech}|$ in $\text{kJ}$
 **Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up. The velocity down is marked separately and not as a force. The air resistance is against the motion, so the work it does is negative.
+```voimakuvio
+G 784,8
+F_v 1520,8 ylös
+a ylös
+v alas
+```
 **Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the negative work done by air resistance. Both the kinetic energy and the potential energy decrease, and the change in both is counted.
 **Formula:** Zero level at the height of the final situation: $\Delta E_\text{mech} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) - mgh$, and $|\Delta E_\text{mech}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Conversions:** We calculate in joules and finally change to kilojoules: $1\,\text{kJ} = 1000\,\text{J}$.
@@ -91,6 +146,12 @@
 **Find:** the power $P$ of the cable in $\text{kW}$
 **Principle:** The speed is constant, so by Newton's second law the tension of the cable is equal to the weight. The cable pulls in the direction of the motion, so it does positive work $W = Th$, which increases the potential energy of the car. Power is work divided by time, as in the chapter *Hydro and wind power as energy converters*, $E = Pt$.
 **Free-body diagram:** The lift car with its load as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the tension $\overline{T}$ of the cable from the top surface up, equally long. The velocity up is marked separately and not as a force.
+```voimakuvio
+G 8338,5
+T 8338,5 90
+a 0
+v ylös
+```
 **Formula:** $T - mg = 0$, so $T = mg$. The work is $W = Th = mgh$, and the power $P = \dfrac{W}{t} = \dfrac{mgh}{t}$
 **Conversions:** We calculate in watts and finally change to kilowatts: $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{850\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 12.0\,\text{m}}{15.0\,\text{s}} = \dfrac{100\,062\,\text{J}}{15.0\,\text{s}} = 6670.8\,\text{W} \approx 6.67\,\text{kW}$
@@ -102,6 +163,19 @@
 **Find:** the horizontal distance $x$ from the top to the stopping point in $\text{m}$
 **Principle:** The sled is at rest at the start and at the end, so by the work–energy principle the negative work done by friction is equal to the decrease in potential energy. On a straight surface the work done by friction is $-\mu mg$ times the horizontal distance, because on a slope $N = mg\cos\alpha$ and $L\cos\alpha$ is the horizontal length of the slope. So the angles of the parts of the slope are not needed.
 **Free-body diagram:** On each part of the slope the sled as a rectangle along the slope: the weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ perpendicularly out of the slope, $N = mg\cos\alpha$, and the kinetic friction $\overline{F}_\mu$ up the slope. On the flat $N = mg$ and the friction points backwards. The normal force does no work anywhere.
+```voimakuvio
+pinta -25
+G 100
+N 90,63
+F_mu 10,88 ylös
+a alas
+---
+pinta 0
+G 100
+N 100
+F_mu 12 vasen
+a vasen
+```
 **Formula:** Horizontal distances of the parts $x_\text{a}$, $x_\text{b}$ and $x_\text{c}$: $mgh - \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) = 0$, so $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
 **Conversions:** The quantities are in SI units and the coefficient of friction has no unit, so no conversions are needed.
 **Substitution:** $x = \dfrac{4.50\,\text{m}}{0.120} = 37.5\,\text{m}$
@@ -113,6 +187,12 @@
 **Find:** the greatest speed $v$ of the lift in $\text{m/s}$
 **Principle:** The lift accelerates downwards when the normal force is smaller than the weight, and the speed is greatest at the end of this phase. By Newton's second law the acceleration comes from the forces. When the forces are constant, the acceleration is constant, and by the chapter *Acceleration and uniformly accelerated motion* $v = v_0 + at$.
 **Free-body diagram:** The person as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the normal force $\overline{N}$ from the bottom surface up, shorter than the weight.
+```voimakuvio
+pinta 0
+G 735,8
+N 650 työntö
+a alas
+```
 **Reading the graph:** The weight is $75.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$, and the reading is that large at rest and at a steady speed. From $1.0\,\text{s}$ to $3.0\,\text{s}$ the curve is on the grid line at $650\,\text{N}$, smaller than the weight, so the lift accelerates downwards for $\Delta t = 2.0\,\text{s}$. From $6.0\,\text{s}$ on the reading is larger than the weight, so the lift slows down.
 **Formula:** $mg - N = ma$, so $a = g - \dfrac{N}{m}$, and starting from rest $v = a\Delta t = \left(g - \dfrac{N}{m}\right)\Delta t$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
@@ -125,6 +205,12 @@
 **Find:** the magnitude of the air resistance $F_\text{d}$ in $\text{kN}$
 **Principle:** The speeds are known at the start and at the end of the distance, so we use the work–energy principle. Air resistance is the only force other than the weight, and it points against the motion, so the work it does is $W_\text{d} = -F_\text{d} h$. The work comes from the work–energy principle, and the force from the work.
 **Free-body diagram:** The skydiver with the parachute as a rectangle. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up, much longer than the weight, because the skydiver slows down. The velocity down is marked separately and not as a force.
+```voimakuvio
+G 686,7
+F_v 2124 ylös
+a ylös
+v alas
+```
 **Formula:** The kinetic energies are $E_{\text{k},1} = \tfrac12 mv_1^2$ and $E_{\text{k},2} = \tfrac12 mv_2^2$. Zero level at the height of the final situation: $E_{\text{k},1} + mgh - F_\text{d} h = E_{\text{k},2}$, so $F_\text{d} = mg + \dfrac{E_{\text{k},1} - E_{\text{k},2}}{h}$
 **Conversions:** We calculate in newtons and finally change to kilonewtons: $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $E_{\text{k},1} = \tfrac12\cdot 70.0\,\text{kg}\cdot(50.0\,\text{m/s})^2 = 87\,500\,\text{J}$ and $E_{\text{k},2} = \tfrac12\cdot 70.0\,\text{kg}\cdot(6.0\,\text{m/s})^2 = 1260\,\text{J}$, so $F_\text{d} = 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60.0\,\text{m}} = 686.7\,\text{N} + 1437.3\,\text{N} = 2124\,\text{N} \approx 2.12\,\text{kN}$

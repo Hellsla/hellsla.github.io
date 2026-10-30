@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-1-L1-01",
+      "level": 1,
+      "text": "A runner moves at a uniform velocity along a straight track a distance of $120\\,\\text{m}$ in $15\\,\\text{s}$ in the direction chosen as positive. What is the runner's velocity?",
+      "answer": 8.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-02",
+      "level": 1,
+      "text": "A cart on the $x$-axis is first at the position $12\\,\\text{m}$ and then moves to the position $-5.0\\,\\text{m}$. What is the displacement of the cart? Give the answer with its sign.",
+      "answer": -17,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-03",
+      "level": 1,
+      "text": "A cart moves at a uniform velocity of $3.5\\,\\text{m/s}$ in the positive direction for $12\\,\\text{s}$. How large is the displacement of the cart?",
+      "answer": 42,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-04",
+      "level": 1,
+      "text": "The $(t, x)$ graph of a cart is a straight line that passes through the points $(0\\,\\text{s};\\, 4.0\\,\\text{m})$ and $(10\\,\\text{s};\\, 24\\,\\text{m})$. What is the velocity of the cart?",
+      "answer": 2.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-05",
+      "level": 1,
+      "text": "At the moment $t = 0\\,\\text{s}$ a walker is at the position $15\\,\\text{m}$ and walks uniformly at a velocity $1.5\\,\\text{m/s}$ in the positive direction. At what position is she at the moment $t = 20\\,\\text{s}$?",
+      "answer": 45,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-1-L2-01",
+      "level": 2,
+      "text": "A car drives along a straight road at a uniform velocity $90\\,\\text{km/h}$. How long a distance does it travel in $12\\,\\text{s}$? Give the answer in metres.",
+      "answer": 300,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-02",
+      "level": 2,
+      "text": "A runner moves along a straight path at a uniform velocity of $4.0\\,\\text{m/s}$. How many minutes does it take her to cover a distance of $1.2\\,\\text{km}$?",
+      "answer": 5.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-03",
+      "level": 2,
+      "text": "At the moment $t = 2.0\\,\\text{s}$ a cart is at the position $18\\,\\text{m}$ and at the moment $t = 7.0\\,\\text{s}$ at the position $3.0\\,\\text{m}$. The cart moves uniformly. Calculate the velocity of the cart with its sign.",
+      "answer": -3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-04",
+      "level": 2,
+      "text": "At the moment $t = 0\\,\\text{s}$ a cart is at the position $-24\\,\\text{m}$ and moves uniformly at a velocity $1.5\\,\\text{m/s}$ in the positive direction. When is the cart at the origin, that is at the position $x = 0$?",
+      "answer": 16,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-1-L3-01",
+      "level": 3,
+      "text": "A cyclist rides along a straight road east $6.0\\,\\text{km}$ in $20\\,\\text{min}$ and then turns straight back, riding the same $6.0\\,\\text{km}$ west in $30\\,\\text{min}$. Calculate the average speed over the whole trip, that is the distance travelled divided by the elapsed time. Give the answer in the unit m/s.",
+      "answer": 4.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L3-02",
+      "level": 3,
+      "text": "Aino and Eeva start walking towards each other at the same time along the same line. Aino starts from the position 0 and walks at a velocity $1.5\\,\\text{m/s}$ in the positive direction. Eeva starts from the position $90\\,\\text{m}$ and walks at a velocity $-1.2\\,\\text{m/s}$. At what position do they meet?",
+      "answer": 50,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L3-03",
+      "level": 3,
+      "text": "The $(t, x)$ graph of a robot consists of three straight parts: between 0 and $10\\,\\text{s}$ the position grows from 0 to $30\\,\\text{m}$, between 10 and $20\\,\\text{s}$ the robot is at rest and between 20 and $40\\,\\text{s}$ the position decreases to $10\\,\\text{m}$. What is the average velocity of the robot over the whole $40\\,\\text{s}$? Give the answer with its sign.",
+      "answer": 0.25,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}
