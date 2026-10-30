@@ -201,7 +201,7 @@ Kytketyt kappaleet käsitellään yksi kerrallaan. Kummallekin piirretään oma 
 
 Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline{T}_2$. Ne vaikuttavat eri kappaleisiin, joten ne ovat eri voimakuvioissa. Kevyt lanka ja kitkaton väkipyörä vain välittävät voiman ja kääntävät sen suunnan, joten voimien suuruudet ovat samat: $T_1 = T_2 = T$. Voimat $\overline{T}_1$ ja $\overline{T}_2$ eivät kuitenkaan ole voima ja vastavoima. Kun lanka vetää kärryä, kärry vetää lankaa takaisin yhtä suurella voimalla, ja se vaikuttaa lankaan eikä ole kärryn voimakuviossa.
 
-Kun punnus kiihtyy alaspäin, langan jännitysvoima on pienempi kuin punnuksen paino. Kiihtyvyys on alas, joten punnuksen kokonaisvoima osoittaa alas ja $G_2 > T$. Jos $T$ olisi yhtä suuri kuin $G_2$, punnukseen vaikuttava kokonaisvoima olisi nolla eikä punnus lähtisi liikkeelle.
+Kun punnus kiihtyy alaspäin, langan jännitysvoima on pienempi kuin punnuksen paino. Kiihtyvyys on alas, joten punnuksen kokonaisvoima osoittaa alas ja $G_2 > T$. Jos $T$ olisi yhtä suuri kuin $G_2$, punnukseen vaikuttava kokonaisvoima olisi nolla eikä punnus lähtisi liikkeelle. Punnus laskee siksi hitaammin kuin vapaasti putoava kappale: kiihtyvyys $a = \tfrac{m_2 g}{m_1 + m_2}$ on pienempi kuin $g$, koska punnuksen paino kiihdyttää myös kärryä.
 
 ## Kaava: Kytkettyjen kappaleiden liikeyhtälöt
 Jokaiselle kappaleelle kirjoitetaan oma liikeyhtälö $\Sigma F = ma$. Positiivinen suunta valitaan kullekin kappaleelle erikseen kiihtyvyyden suuntaan: kärryllä oikealle ja punnuksella alas. Koska lanka on venymätön, kummankin kappaleen kiihtyvyydellä on sama suuruus $a$. Kärryn ja punnuksen yhtälöt ovat
@@ -294,7 +294,7 @@ missä $m_2 > m_1$. Jännitysvoima on kappaleiden painojen $m_1 g$ ja $m_2 g$ v�
 ### Menetelmä kytketyille kappaleille
 1. **Piirrä oma voimakuvio** kummallekin kappaleelle. Lanka vetää kumpaakin kappaletta itseään kohti, ja jokaisella kappaleella on oma jännitysvoimansa nuoli.
 2. **Valitse positiivinen suunta** kullekin kappaleelle kiihtyvyyden suuntaan.
-3. **Kirjoita liikeyhtälö** $\Sigma F = ma$ kummallekin kappaleelle erikseen. Kiihtyvyyden suuruus $a$ ja jännitysvoiman suuruus $T$ ovat samat molemmissa.
+3. **Kirjoita liikeyhtälö** $\Sigma F = ma$ kummallekin kappaleelle erikseen. Kiihtyvyyden suuruus $a$ ja jännitysvoiman suuruus $T$ ovat samat molemmissa. Jos kappaletta vedetään lisäksi ulkoisella voimalla $\overline{F}$, se kuuluu vain vedettävän kappaleen voimakuvioon ja liikeyhtälöön.
 4. **Ratkaise** kaksi yhtälöä: laske ne yhteen, jolloin $T$ poistuu, tai sijoita toisesta saatu $T$ toiseen.
 5. **Tarkista** etumerkit ja vertaa: jännitysvoima ei ole yhtä suuri kuin riippuvan kappaleen paino, kun kappaleet kiihtyvät.
 
@@ -307,7 +307,7 @@ Pöydällä on kärry, jonka massa on $1{,}5\,\text{kg}$. Siihen sidottu lanka k
 
 <!-- vaihe -->
 
-**Periaate.** Kärry ja punnus ovat kaksi kappaletta, joten kummallekin kirjoitetaan oma liikeyhtälö. Lanka on venymätön, joten kappaleiden kiihtyvyyksillä on sama suuruus $a$. Lanka on kevyt ja väkipyörä kitkaton, joten lanka vetää kumpaakin kappaletta samalla voimalla $T$. Kitkaa ei ole, joten vaakasuunnassa kärryyn vaikuttaa vain lanka.
+**Periaate.** Kärry ja punnus ovat kaksi kappaletta, joten kummallekin kirjoitetaan oma liikeyhtälö. Lanka on venymätön, joten kappaleiden kiihtyvyyksillä on sama suuruus $a$. Lanka on kevyt ja väkipyörä kevyt ja kitkaton, joten lanka vetää kumpaakin kappaletta samalla voimalla $T$. Kitkaa ei ole, joten vaakasuunnassa kärryyn vaikuttaa vain lanka.
 
 <!-- vaihe -->
 
@@ -370,6 +370,7 @@ Pöydällä on kärry, jonka massa on $1{,}5\,\text{kg}$. Siihen sidottu lanka k
 \begin{aligned}
 &T = m_1 a \\
 &m_2 g - T = m_2 a \\
+&m_2 g = (m_1 + m_2) a \\
 &a = \frac{m_2 g}{m_1 + m_2} \\
 &T = m_1 a
 \end{aligned}
@@ -401,13 +402,13 @@ Pöydällä on kärry, jonka massa on $1{,}5\,\text{kg}$. Siihen sidottu lanka k
 **Järkevyys.** Punnuksen paino on $m_2 g \approx 5{,}9\,\text{N}$, ja jännitysvoima $4{,}2\,\text{N}$ on sitä pienempi, kuten pitääkin. Punnuksen kokonaisvoima on $5{,}886\,\text{N} - 4{,}204\,\text{N} \approx 1{,}68\,\text{N}$, ja se on $m_2 a = 0{,}60\,\text{kg} \cdot 2{,}803\,\text{m/s}^2 \approx 1{,}68\,\text{N}$. Kiihtyvyys on pienempi kuin $g$, koska punnus kiihdyttää myös kärryä. Jos kärryä ei olisi, punnus putoaisi kiihtyvyydellä $g$.
 
 ## Yleinen virhekäsitys
-Usein ajatellaan, että kärryä vetää riippuvan punnuksen paino, joten jännitysvoima olisi $m_2 g$. Kärryä vetää kuitenkin lanka, ja langan voima on $T$. Vain silloin, kun kappaleet eivät kiihdy, esimerkiksi kun kärryä pidetään paikallaan, on $T = m_2 g$. Kun punnus laskee kiihtyen, osa sen painosta kuluu punnuksen oman liikkeen kiihdyttämiseen, ja $T < m_2 g$.
+Usein ajatellaan, että kärryä vetää riippuvan punnuksen paino, joten jännitysvoima olisi $m_2 g$. Kärryä vetää kuitenkin lanka, ja langan voima on $T$. Vain silloin, kun kappaleet eivät kiihdy, esimerkiksi kun kärryä pidetään paikallaan, on $T = m_2 g$. Kun punnus laskee kiihtyen, punnuksen kokonaisvoiman $G_2 - T = m_2 a$ on osoitettava alas, joten $T < m_2 g$.
 
-Toinen virhe on pitää voimia $\overline{T}_1$ ja $\overline{T}_2$ voimana ja vastavoimana. Ne vaikuttavat eri kappaleisiin mutta kuuluvat eri vuorovaikutuksiin: toinen lanka–kärry-parin ja toinen lanka–punnus-parin voimia. Ne ovat yhtä suuret, koska lanka on kevyt, ei sen vuoksi, että ne olisivat vuorovaikutusparin voimia. Kolmas virhe on ajatella, että raskaampi kappale kiihtyy enemmän. Venymättömän langan päissä olevilla kappaleilla on sama kiihtyvyyden suuruus.
+Toinen virhe on pitää voimia $\overline{T}_1$ ja $\overline{T}_2$ voimana ja vastavoimana. Ne vaikuttavat eri kappaleisiin mutta kuuluvat eri vuorovaikutuksiin: toinen lanka–kärry-parin ja toinen lanka–punnus-parin voimia. Ne ovat yhtä suuret, koska lanka on kevyt ja väkipyörä kevyt ja kitkaton, ei sen vuoksi, että ne olisivat vuorovaikutusparin voimia. Kolmas virhe on ajatella, että raskaampi kappale kiihtyy enemmän. Venymättömän langan päissä olevilla kappaleilla on sama kiihtyvyyden suuruus.
 
 ## Tiivistelmä
 - Langalla tai väkipyörän yli kytketyillä kappaleilla on kummallakin oma voimakuvio ja oma liikeyhtälö $\Sigma F = ma$, ja positiivinen suunta valitaan kappaleelle kiihtyvyyden suuntaan.
-- Kevyt venymätön lanka ja kitkaton kevyt väkipyörä antavat kappaleille saman kiihtyvyyden suuruuden $a$ ja samansuuruiset jännitysvoimat $T_1 = T_2 = T$.
-- Kärrylle ja riippuvalle punnukselle $a = 	frac{m_2}{m_1 + m_2}\,g$ ja $T = 	frac{m_1 m_2}{m_1 + m_2}\,g$. Kahdelle riippuvalle kappaleelle $a = 	frac{m_2 - m_1}{m_1 + m_2}\,g$ ja $T = 	frac{2 m_1 m_2}{m_1 + m_2}\,g$.
+- Kevyt, venymätön lanka ja kevyt, kitkaton väkipyörä antavat kappaleille saman kiihtyvyyden suuruuden $a$ ja samansuuruiset jännitysvoimat $T_1 = T_2 = T$.
+- Kärrylle ja riippuvalle punnukselle $a = \frac{m_2}{m_1 + m_2}\,g$ ja $T = \frac{m_1 m_2}{m_1 + m_2}\,g$. Kahdelle riippuvalle kappaleelle $a = \frac{m_2 - m_1}{m_1 + m_2}\,g$ ja $T = \frac{2 m_1 m_2}{m_1 + m_2}\,g$.
 - Kiihtyvän riippuvan kappaleen jännitysvoima ei ole sen paino: kärryn ja punnuksen tapauksessa $T < m_2 g$, ja kahdella riippuvalla kappaleella $T$ on painojen välissä.
 - Jännitysvoimat $\overline{T}_1$ ja $\overline{T}_2$ vaikuttavat eri kappaleisiin eivätkä ole voima ja vastavoima.

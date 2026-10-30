@@ -17,14 +17,14 @@ new p5((p) => {
   let btn, selTapa, selM1, selM2, selSpeed, readout;
   let t = 0, running = false, done = false, labels = [], SCL = 1;                 // SCL: the scale of the panel being drawn (the situation picture is enlarged on a phone)
 
-  const model = () => {
-    const kaksi = selTapa.value() === 'kaksi', m1 = Number(selM1.value()), m2 = Number(selM2.value());
+  const model = () => physics(selTapa.value() === 'kaksi', Number(selM1.value()), Number(selM2.value()));
+  function physics(kaksi, m1, m2) {
     const M = m1 + m2, G1 = m1 * g, G2 = m2 * g;
     let a, T, sum1, sum2, dir;                                             // dir: +1 when the body on the right (m2) goes down, −1 when m1 does (second situation)
     if (!kaksi) { a = G2 / M; T = m1 * a; sum1 = T; sum2 = G2 - T; dir = 1; }
     else { dir = m2 >= m1 ? 1 : -1; a = Math.abs(m2 - m1) * g / M; T = 2 * m1 * m2 * g / M; sum1 = dir > 0 ? T - G1 : G1 - T; sum2 = dir > 0 ? G2 - T : T - G2; }
     return { kaksi, m1, m2, G1, G2, a, T, sum1, sum2, dir };
-  };
+  }
   const restart = () => { t = 0; running = false; done = false; };
   const tEnd = (M) => (M.a > 1e-9 ? Math.sqrt(2 * SMAX / M.a) : 0);
   const fmtM = (m) => (m < 1 ? m.toFixed(2) : m.toFixed(1)).replace('.', DECP);
@@ -73,7 +73,7 @@ new p5((p) => {
     const cw = document.getElementById('sim-root').clientWidth || 600, k = Math.max(1, 600 / cw);
     setLayout(cw < 500);
     U = narrow ? 0.8 * k : Math.max(1, k * 0.8);
-    const fh = narrow ? Math.round(14 * k) : Math.round(11 * k * (k > 1.3 ? 1.12 : 1));   // phone: about 14 CSS px on screen
+    const fh = narrow ? Math.round(14 * k) : Math.round(14 * k);                        // about 14 CSS px on screen
     labels = [];
     p.background(250);
     const U0 = U;
@@ -86,8 +86,8 @@ new p5((p) => {
   function setLayout(n) {
     if (n === narrow && laid) return;
     laid = true; narrow = n;
-    if (n) { S = 6; HD = 250; SC = 1.35; HS = Math.round(400 * SC); p.resizeCanvas(600, HS + 2 * HD); }
-    else { S = 5; HD = 200; SC = 1; HS = 400; p.resizeCanvas(600, 400); }
+    if (n) { HD = 400; SC = 1.35; HS = Math.round(400 * SC); p.resizeCanvas(600, HS + 2 * HD); }
+    else { HD = 200; SC = 1; HS = 400; p.resizeCanvas(600, 400); }
   }
 
   // --- the situation picture: lab wall, table (or ceiling), pulley, string, cart and weights; v and a beside the moving bodies ---
@@ -131,8 +131,9 @@ new p5((p) => {
       lab('$m_1$', X1, y1 + h1 / 2 + fh * 0.36, 'c', fh, WHITE); lab('$m_2$', X2, y2 + h2 / 2 + fh * 0.36, 'c', fh, WHITE);
       if (t > 0 && M.a > 1e-9) { fallArrows(X1 - 32, y1, h1, M.dir > 0 ? -v : v, M.dir > 0 ? -M.a : M.a, fh, -1); fallArrows(X2 + 32, y2, h2, M.dir > 0 ? v : -v, M.dir > 0 ? M.a : -M.a, fh, 1); }
     }
-    lab(__('tilannekuva'), 10, narrow ? fh + 2 : 22, 'l', fh, INKC);
-    lab(`$t = ${tx(t, 2)}\\,\\text{s}$`, SW - 8, narrow ? fh + 2 : 22, 'r', fh, INKC);
+    const ty = (narrow ? fh + 2 : 22) + (M.kaksi ? 3 * fh : 0);                              // below the ceiling bracket in the second situation
+    lab(__('tilannekuva'), 10, ty, 'l', fh, INKC);
+    lab(`$t = ${tx(t, 2)}\\,\\text{s}$`, SW - 8, ty, 'r', fh, INKC);
   }
   // a horizontal thin arrow with an open head, in the situation picture (positive = right)
   function motion(x0, y, val, scale, col, name, fh) {
@@ -162,32 +163,39 @@ new p5((p) => {
 
   // --- the force diagrams: each body a plain rectangle, every force from its point of application, one scale for both ---
   function diagrams(M, fh) {
-    const x0 = narrow ? 0 : 380, w = narrow ? 600 : 220, cx = x0 + w / 2 + (narrow ? 70 : 10), y0 = narrow ? HS : 0;
+    const x0 = narrow ? 0 : 380, w = narrow ? 600 : 220, cx = x0 + (narrow ? 340 : 75), y0 = narrow ? HS : 0;
+    const tM = fh * 2.4, bM = fh * 2.1, avail = HD - tM - bM, hc = narrow ? 64 : 40, hh = hc;
+    // one scale for both bodies of the situation, chosen so that the longest arrows fill the panel: T1 and G2 compare directly
+    let Smin = 1e9;
+    const P = M;
+    if (!M.kaksi) Smin = Math.min((avail + hc / 2) / (2 * P.G1), (avail - hh / 2) / (P.T + P.G2));
+    else Smin = Math.min((avail - hh / 2) / (P.T + P.G1), (avail - hh / 2) / (P.T + P.G2));
+    S = Smin;
     for (const [i, top] of [[1, y0], [2, y0 + HD]]) {
       OX = 0; OY = top;
       p.push(); p.translate(0, top);
       p.noStroke(); p.fill(255); p.rect(x0, 0, w, HD);
       p.stroke(220); p.strokeWeight(1); p.line(x0, 0, x0 + w, 0); if (!narrow) p.line(x0, 0, x0, HD);
       const title = i === 1 ? (M.kaksi ? '$\\text{Voimakuvio: }m_1$' : __('vk1')) : (M.kaksi ? '$\\text{Voimakuvio: }m_2$' : __('vk2'));
-      lab(title, x0 + 10, narrow ? fh + 2 : 22, 'l', fh, INKC);
-      if (i === 1 && !M.kaksi) cartDiagram(M, cx, narrow ? 120 : 108, fh);
-      else hangDiagram(M, i, cx, narrow ? 145 : 116, fh);
+      lab(title, x0 + 10, fh + 2, 'l', fh, INKC);
+      if (i === 1 && !M.kaksi) cartDiagram(M, cx, tM + S * M.G1 - hc / 2, fh, hc);
+      else { const T = M.T; hangDiagram(M, i, cx, tM + hh / 2 + S * T, fh, hh); }
       p.pop();
     }
     OX = 0; OY = 0;
   }
-  function cartDiagram(M, cx, cy, fh) {
-    const w = 56, h = 26, lo = 12 + fh * 0.7;
-    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2 * U); p.rect(cx - w / 2, cy - h / 2, w, h);
-    arrow([cx, cy], [0, -M.G1], '$\\overline{G}_1$', fh, [0, fh * 0.9 + 4]);
-    arrow([cx - 18, cy + h / 2], [0, M.G1], '$\\overline{N}$', fh, [-lo, 0]);
-    arrow([cx + w / 2, cy - 4], [M.T, 0], '$\\overline{T}_1$', fh, [lo, -fh * 0.1]);
+  function cartDiagram(M, cx, cy, fh, h) {
+    const w = Math.round(h * 2.2), lo = 8 + fh * 0.8;
+    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2.5 * U); p.rect(cx - w / 2, cy - h / 2, w, h);
+    arrow([cx, cy], [0, -M.G1], '$\\overline{G}_1$', fh, [0, fh * 1.0 + 2]);
+    arrow([cx - w / 4, cy + h / 2], [0, M.G1], '$\\overline{N}$', fh, [-lo, 0]);
+    arrow([cx + w / 2, cy], [M.T, 0], '$\\overline{T}_1$', fh, [0, fh * 1.2]);
   }
-  function hangDiagram(M, i, cx, cy, fh) {
-    const w = 36, h = 28, lo = 28 + fh * 0.3, G = i === 1 ? M.G1 : M.G2, sub = i === 1 ? '1' : '2';
-    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2 * U); p.rect(cx - w / 2, cy - h / 2, w, h);
-    arrow([cx, cy], [0, -G], `$\\overline{G}_${sub}$`, fh, [lo, fh * 0.6]);
-    arrow([cx, cy - h / 2], [0, M.T], `$\\overline{T}_${sub}$`, fh, [lo, -fh * 0.3]);
+  function hangDiagram(M, i, cx, cy, fh, h) {
+    const w = Math.round(h * 1.5), lo = 10 + fh * 0.9, G = i === 1 ? M.G1 : M.G2, sub = i === 1 ? '1' : '2';
+    p.fill(246, 241, 230); p.stroke(...INKC); p.strokeWeight(2.5 * U); p.rect(cx - w / 2, cy - h / 2, w, h);
+    arrow([cx, cy], [0, -G], `$\\overline{G}_${sub}$`, fh, [lo, fh * 0.3]);
+    arrow([cx, cy - h / 2], [0, M.T], `$\\overline{T}_${sub}$`, fh, [lo, fh * 0.3]);
   }
   function arrow(at, vec, name, fh, off) {
     const x2 = at[0] + vec[0] * S, y2 = at[1] - vec[1] * S, L = Math.hypot(x2 - at[0], y2 - at[1]);
