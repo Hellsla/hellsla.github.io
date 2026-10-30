@@ -1,0 +1,124 @@
+[
+  {
+    "expr": "(() => { const S=window.simState; return S.h1===10 && S.F===0 && S.m===400 && S.rata==='kaari' && S.running===false && S.t===0 && S.vpohja===null && S.h2===null ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load: h1 = 10 m, no resistance, 400 kg, curved track, not running, nothing measured yet"
+  },
+  {
+    "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='5' && R[0].max==='20' && R[0].step==='2.5' && R[1].min==='0' && R[1].max==='300' && R[1].step==='50' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "two sliders: start height 5-20 m in steps of 2,5 m, resistive force 0-300 N in steps of 50 N"
+  },
+  {
+    "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='400,600,800' && L[1]==='kaari,suora' && L[2]==='0.5,1,3' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "selects: mass, track shape, speed"
+  },
+  {
+    "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "main button first; DOM order canvas, controls, readout"
+  },
+  {
+    "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "no Lisätietoja box; one legend line of at most 15 words"
+  },
+  {
+    "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='F,h1,m,rata' && P.F.unit==='N' && P.h1.unit==='m' && P.m.unit==='kg' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "adapter declares h1 (m), F (N), m (kg) and rata"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(L[0],'800');",
+    "expr": "window.simState.Em0",
+    "expected": 117720,
+    "tol": 0.01,
+    "note": "E_mek,1 = m g h1 = 800 kg · 9,81 m/s² · 15 m"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(L[0],'800');",
+    "expr": "window.simState.Ep",
+    "expected": 117720,
+    "tol": 0.01,
+    "note": "at the start the car is at rest: all of its mechanical energy is potential energy"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],0); I(L[0],'400'); I(L[1],'kaari'); I(L[2],'3'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vpohja : null), 4500))",
+    "expected": 14.007,
+    "tol": 0.01,
+    "note": "no resistance, 400 kg from 10 m: v at the bottom = √(2gh) = 14,0 m/s"
+  },
+  {
+    "expr": "window.simState.h2",
+    "expected": 10.0,
+    "tol": 0.01,
+    "note": "after that run without resistance the car stops at the start height on the other side"
+  },
+  {
+    "expr": "window.simState.Em / window.simState.Em0",
+    "expected": 1.0,
+    "tol": 0.01,
+    "note": "after that run the mechanical energy is unchanged"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],0); I(L[0],'800'); I(L[1],'kaari'); I(L[2],'3'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vpohja : null), 4500))",
+    "expected": 14.007,
+    "tol": 0.01,
+    "note": "no resistance, 800 kg from 10 m: the same speed at the bottom"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],0); I(L[0],'400'); I(L[1],'suora'); I(L[2],'3'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.vpohja : null), 4500))",
+    "expected": 14.007,
+    "tol": 0.01,
+    "note": "no resistance, straight 45° track from 10 m: the same speed at the bottom"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],200); I(L[0],'400'); I(L[1],'kaari'); I(L[2],'3'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.h2 : null), 4500))",
+    "expected": 7.659,
+    "tol": 0.01,
+    "note": "resistance 200 N, 400 kg, curved track from 10 m: the car rises to 7,66 m (model values, lesson-answers.py)"
+  },
+  {
+    "expr": "window.simState.dEm / window.simState.W",
+    "expected": 1.0,
+    "tol": 0.01,
+    "note": "after that run the change of mechanical energy equals the work of the resistive force, −F s"
+  },
+  {
+    "expr": "window.simState.s",
+    "expected": 45.94,
+    "tol": 0.01,
+    "note": "after that run the path from the start to the stop is 45,9 m"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],200); I(L[0],'400'); I(L[1],'suora'); I(L[2],'3'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.h2 : null), 4500))",
+    "expected": 8.370,
+    "tol": 0.01,
+    "note": "straight track, 200 N: h2 = (m g h1 − F(h1/sin 45° + 6 m)) / (m g + F/sin 45°) = 8,37 m"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[1],100);",
+    "expr": "window.simState.h2 === null && window.simState.t === 0 && window.simState.done === false ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "changing a control resets the run and clears the measured values"
+  }
+]
