@@ -1,0 +1,111 @@
+{
+  "id": "fy10-liikemaara",
+  "type": "investigation",
+  "title": "Liikemäärän säilyminen törmäyksissä",
+  "question": "Säilyykö kahden vaunun kokonaisliikemäärä, kun vaunut törmäävät kimmoisasti tai tarttuvat törmäyksessä yhteen?",
+  "description": "Kokeellinen tutkimus: mittaa kahden vaunun nopeudet liikeantureilla ennen törmäystä ja sen jälkeen ja osoita mittaustuloksilla, säilyykö kokonaisliikemäärä kimmoisissa ja täysin kimmottomissa törmäyksissä.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 1–2 (Liikemäärän säilyminen törmäyksissä), opettajan aineisto",
+  "learn": [
+    "käsittelemään nopeutta ja liikemäärää etumerkillisinä suureina, kun liike tapahtuu suoralla radalla",
+    "osoittamaan mittaustuloksilla, säilyykö suure, ja vertaamaan eroa mittausepävarmuuteen",
+    "erottamaan liikemäärän säilymisen liike-energian säilymisestä"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Liikemäärä kimmoisissa ja täysin kimmottomissa törmäyksissä",
+      "physics": "F1",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Liike-energian muutos törmäystyypeissä",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-9",
+      "why": "Liikemäärä $\\overline{p} = m\\overline{v}$ on vektori, jolla on suunta: tutkimuksessa lasket sen massasta ja nopeudesta."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-10",
+      "why": "Luvussa määritellään systeemi, kokonaisliikemäärä, säilymislain ehto sekä kimmoisa ja täysin kimmoton törmäys."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-1",
+      "why": "Liikeanturi mittaa paikkaa, ja nopeus on paikan kuvaajan kulmakerroin."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "target": "fy4-7",
+      "why": "Laajennuksessa lasket vaunujen liike-energiat $E_\\text{k} = \\tfrac12 mv^2$ ennen törmäystä ja sen jälkeen."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuuden arvioiminen ja sen avulla päättely, ovatko kaksi tulosta sopusoinnussa."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-4",
+      "why": "Nopeuden saa suoran kulmakertoimena, ja liikemäärien vertailun voi esittää kuvaajana."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (esimerkiksi Graphical Analysis)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Vaunujen nopeudet ennen törmäystä ja sen jälkeen luetaan anturien tallentamista kuvaajista."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Laskut taulukkolaskentaohjelmalla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Liikemäärät ja laajennuksen liike-energiat lasketaan monesta törmäyksestä samoilla kaavoilla."
+    }
+  ],
+  "equipment": [
+    "vaunurata, jonka päissä on pysäyttimet",
+    "kaksi vaunua, joissa on jousipuskurit",
+    "tapa saada vaunut tarttumaan toisiinsa täysin kimmottomassa törmäyksessä, esimerkiksi vaunujen tarrapuskurit (opettaja kertoo, mitä vaunuissa on)",
+    "kaksi optista liikeanturia ja tietokone tai tabletti mittausohjelmineen",
+    "lisäpunnuksia vaunuihin",
+    "vaaka"
+  ],
+  "safety": [
+    "Varo, etteivät vaunut pääse putoamaan vaunuradalta: tarkista radan päiden pysäyttimet ja ota vaunu kiinni ennen radan päätä.",
+    "Älä laita sormia törmäävien vaunujen väliin.",
+    "Kiinnitä lisäpunnukset vaunuun huolellisesti, jotta ne eivät putoa jalkaan tai lattialle.",
+    "Älä katso suoraan liikeanturin valolähteeseen."
+  ]
+}

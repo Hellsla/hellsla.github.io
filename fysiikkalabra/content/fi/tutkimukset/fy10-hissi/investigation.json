@@ -1,0 +1,103 @@
+{
+  "id": "fy10-hissi",
+  "type": "investigation",
+  "title": "Hissin kulkema matka kiihtyvyydestä",
+  "question": "Kuinka pitkän matkan hissi kulkee, kun matka päätellään pelkästä kiihtyvyysmittauksesta, ja kuinka hyvin tulos vastaa todellista matkaa?",
+  "description": "Kokeellinen tutkimus: mittaa hissin kiihtyvyys puhelimen anturilla, laske siitä nopeus ja kuljettu matka kuvaajien pinta-aloina ja vertaa tulosta kerroskorkeuksista saatuun matkaan.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 15–16 (Hissin kulkeman matkan määrittäminen kiihtyvyydestä), opettajan aineisto",
+  "learn": [
+    "määrittämään nopeuden ja kuljetun matkan kiihtyvyysdatasta kuvaajien pinta-aloina",
+    "tunnistamaan liikkeen vaiheet mittausdatan kuvaajasta",
+    "arvioimaan, miten anturin pieni nollakohdan virhe kasvaa laskennassa, ja vertaamaan tulosta riippumattomaan mittaukseen"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Matka kiihtyvyysdatasta",
+      "physics": "F2",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Nollakohdan virheen korjaus ja eripituiset matkat",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-2",
+      "why": "Kiihtyvyys on nopeuden muutosnopeus, ja siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-1",
+      "why": "Tasaisen liikkeen vaiheessa nopeus on vakio ja matka kasvaa tasaisesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-16",
+      "why": "Hissin liikkeen vaiheet ja se, miksi tukivoima ja anturin lukema muuttuvat hissin kiihtyessä."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuuden arvioiminen ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajien laatiminen ja lukeminen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Laskenta tehdään koko matkan aikana tallennetusta datasta."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Laskeminen ja kuvaajat taulukkolaskennassa (pinta-ala kapeiden suikaleiden summana)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Nopeus ja matka lasketaan riveittäin satojen mittauspisteiden datasta."
+    }
+  ],
+  "equipment": [
+    "puhelin, jossa on kiihtyvyysanturi ja sovellus, joka tallentaa kiihtyvyyden ajan funktiona, tai erillinen kiihtyvyysanturi",
+    "tietokone ja taulukkolaskentaohjelma",
+    "mittanauha kerroskorkeuden mittaamiseen",
+    "hissi, jonka käyttöön on lupa"
+  ],
+  "safety": [
+    "Hissin käyttöön mittauksissa tarvitaan lupa: opettaja sopii siitä etukäteen.",
+    "Älä estä hissin käyttöä muilta: älä pidättele ovia, ja päästä hissin tarvitsija aina edelle, vaikka mittaus keskeytyisi.",
+    "Älä ylitä hissin kilpeen merkittyä suurinta henkilömäärää tai kuormaa, äläkä hypi tai heilu hississä.",
+    "Älä laita puhelinta tai muita välineitä oven kynnykselle tai ovien väliin.",
+    "Mittaa kerroskorkeus portaikossa tai käytävällä turvallisesti: älä kurottele kaiteen yli."
+  ]
+}

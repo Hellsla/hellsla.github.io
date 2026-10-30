@@ -1,0 +1,120 @@
+{
+  "id": "fy10-liukukitka",
+  "type": "investigation",
+  "title": "Liukukitkakertoimen määrittäminen",
+  "question": "Miten jarruttavan vaunun pysähtymismatka riippuu sen alkunopeudesta, ja kuinka suuri on jarrun ja radan välinen liukukitkakerroin?",
+  "description": "Kokeellinen tutkimus: mittaa liikeanturilla jarruttavan vaunun alkunopeus ja pysähtymismatka ja määritä liukukitkakerroin energiaperiaatteen ja kuvaajan avulla, laajennuksena nopeuden kuvaajasta.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 3 (Liukukitkakertoimen määrittäminen), opettajan aineisto",
+  "learn": [
+    "muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja lukemaan ne liikeanturin tuloksista",
+    "valitsemaan energiaperiaatteen avulla akselit, joilla malli on suora, ja tulkitsemaan sen kulmakertoimen",
+    "ilmoittamaan tuloksen epävarmuuksineen ja arvioimaan systemaattisten virheiden vaikutusta"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Pysähtymismatka ja alkunopeus",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Hidastuvuus nopeuden kuvaajasta ja menetelmien vertailu",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-6",
+      "why": "Liikekitka $F_\\mu = \\mu N$ ja tukivoima vaakasuoralla alustalla."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-7",
+      "why": "Vaunun liike-energia $E_\\text{k} = \\tfrac{1}{2}mv^2$."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-8",
+      "why": "Kitkan tekemä negatiivinen työ pienentää liike-energiaa: energiaperiaate on tutkimuksen malli."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-5",
+      "why": "Jarruttavan vaunun voimakuvio ja voimien yhteisvaikutus."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "target": "fy4-4",
+      "why": "Laajennuksessa hidastuvuus $a = \\mu g$ saadaan Newtonin toisesta laista."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "target": "fy4-2",
+      "why": "Laajennuksessa kiihtyvyys luetaan nopeuden kuvaajan kulmakertoimesta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Liikeanturin mittaussarja: paikan ja nopeuden kuvaajat ja arvojen lukeminen niistä",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Alkunopeus ja pysähtymismatka luetaan anturin tallentamista kuvaajista."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, laajennuksessa myös hidastuvuus."
+    }
+  ],
+  "equipment": [
+    "vaunurata, jossa on päätypysäytin",
+    "optinen liikeanturi ja tietokone tai tabletti mittausohjelmineen",
+    "vaunu, jossa on kitkajarru",
+    "vesivaaka radan vaakasuoruuden tarkistamiseen"
+  ],
+  "safety": [
+    "Varmista, ettei vaunu pääse putoamaan radalta: valitse alkunopeudet niin, että vaunu pysähtyy radalle, ja pidä radan päässä pysäytin.",
+    "Työnnä vaunua vain radan suuntaisesti, älä kohti ketään, ja pidä sormet poissa pyörien ja jarrun välistä.",
+    "Sijoita anturin ja tietokoneen johdot niin, ettei niihin kompastu eikä rata kaadu niistä vetämällä."
+  ]
+}

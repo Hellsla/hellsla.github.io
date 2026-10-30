@@ -1,0 +1,117 @@
+{
+  "id": "fy10-muotokerroin",
+  "type": "investigation",
+  "title": "Pallon muotokertoimen määrittäminen",
+  "question": "Kuinka suuri on kevyen pallon muotokerroin, kun se määritetään pallon rajanopeudesta?",
+  "description": "Kokeellinen tutkimus: kuvaa kevyen pallon putoaminen videolle, määritä rajanopeus videoanalyysillä ja laske siitä pallon muotokerroin epävarmuuksineen.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 8 (Jumppapallon muotokertoimen määrittäminen), opettajan aineisto",
+  "learn": [
+    "määrittämään nopeuden videoanalyysillä saadusta paikka–aika-kuvaajasta",
+    "laskemaan tuloksen usean mitatun suureen avulla ja arvioimaan, minkä suureen epävarmuus vaikuttaa tulokseen eniten",
+    "vertaamaan tulosta kirjallisuusarvoon epävarmuuksineen ja pohtimaan mallin oletusten pätevyyttä"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Muotokerroin rajanopeudesta",
+      "physics": "F2",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Rajanopeuden riippuvuus massasta",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-14",
+      "why": "Rajanopeudella ilmanvastus on yhtä suuri kuin paino. Ilmanvastuksen riippuvuus nopeudesta, jota luku ei käsittele, on selitetty tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-3",
+      "why": "Kun pallon nopeus ei muutu, siihen vaikuttavat voimat kumoavat toisensa (Newtonin I laki)."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-4",
+      "why": "Ennen rajanopeutta pallon liike on kiihtyvää, ja kiihtyvyyden määrää painon ja ilmanvastuksen summa."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-10",
+      "why": "Ilman tiheyden voi laskea ilmanpaineesta ja lämpötilasta ideaalikaasun tilanyhtälön avulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-5",
+      "why": "Tasaisessa liikkeessä nopeus on paikka–aika-kuvaajan kulmakerroin."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo, mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Videoanalyysi: videon mittakaavan asettaminen tunnetun pituuden avulla ja pallon paikan merkitseminen kuva kuvalta (videoanalyysiohjelma tai puhelimen sovellus)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Pallon paikka ajan funktiona saadaan videolta."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Rajanopeus ja sen epävarmuus saadaan sovitetun suoran kulmakertoimesta."
+    }
+  ],
+  "equipment": [
+    "kevyt ja kooltaan suuri pallo, esimerkiksi ilmapallo tai kevyt jumppapallo",
+    "puhelin tai kamera ja jalusta",
+    "tunnetun pituinen mitta, esimerkiksi metrimitta, pallon putoamislinjan viereen",
+    "vaaka, jonka tarkkuus riittää kevyen pallon punnitsemiseen",
+    "mittanauha pallon halkaisijan tai ympärysmitan mittaamiseen",
+    "lämpömittari ja ilmanpaineen lukema, tai ilman tiheys taulukosta",
+    "videoanalyysiohjelma tai -sovellus ja kuvaajaohjelma",
+    "laajennukseen pieniä lisäpainoja, esimerkiksi paperiliittimiä, ja teippiä"
+  ],
+  "safety": [
+    "Pudota pallo vain paikasta, jonka opettaja on hyväksynyt. Älä kurottele kaiteiden yli, äläkä seiso tuolilla tai pöydällä; käytä vakaata koroketta.",
+    "Varmista ennen jokaista pudotusta, ettei pallon alla tai kulkureitillä ole ketään.",
+    "Kysy ryhmältä lateksiallergiasta ennen ilmapallojen käyttöä ja käytä tarvittaessa lateksittomia palloja."
+  ]
+}
