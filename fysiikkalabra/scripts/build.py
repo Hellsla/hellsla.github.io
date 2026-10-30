@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, mathlayout, practice, svgids
+import courses, figcat, i18n, inquiry, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -56,6 +56,7 @@ if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra 
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
+if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate(curriculum)))
 
 
 def render_md(text, **kw):
@@ -297,9 +298,12 @@ def link_languages():
                     there = i18n.T(other); name = m.group(1); note = ""
                     if (OUTS[other] / name).is_file(): target = name
                     else:
-                        module = name.split("-")[0].upper() + ".html"
-                        target = (f"{module}#unavailable-{name[:-5]}" if (OUTS[other] / module).is_file() else "index.html")
-                        note = f'<span class="lang-note" id="lang-note-{other}">{esc(here("site.lang_unavailable"))}</span>'
+                        module = name.split("-")[0].upper() + ".html"; key = "site.lang_unavailable"
+                        if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
+                        else:                    # a local course this language lacks: its front page's note
+                            target = "index.html" + (f"#unavailable-{name[:-5]}" if f'id="unavailable-{name[:-5]}"' in (OUTS[other] / "index.html").read_text() else "")
+                            key = "site.lang_unavailable_home"
+                        note = f'<span class="lang-note" id="lang-note-{other}">{esc(here(key))}</span>'
                     href = os.path.relpath(OUTS[other] / target.split("#")[0], OUTS[lang]).replace(os.sep, "/") + ("#" + target.split("#")[1] if "#" in target else "")
                     described = f' aria-describedby="lang-note-{other}"' if note else ""
                     items.append(f'<li><a class="lang" href="{href}" hreflang="{there("format.html_lang")}" lang="{there("format.html_lang")}"{described}>'
@@ -536,6 +540,20 @@ def build_language(lang):
 
     chapter_nav(out, modules, built_ids, practice_built)
 
+    # Lukiokohtaiset opintojaksot (teacher 2026-10-30, scripts/local_courses.py): school-specific courses from
+    # local-courses.json, apart from the national modules; a page and a front-page row in each language that has the
+    # course. A language without one keeps a note at its front page's #unavailable-<CODE> for the language links.
+    local = local_courses.load(lang)
+    chapters = {l["id"]: (code, l["title"]) for code, mod in modules for l in mod.get("lessons", [])}
+    local_rows = ""
+    for code, c in local.items():
+        local_rows += local_courses.home_row(code, c, T)
+        (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}),
+                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
+    local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
+                          f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
+                          for code, c in local_courses.load().items() if code not in local)
+
     # The featured lesson (teacher 2026-10-29): FEATURED when this language published it, else the first published
     # lesson in curriculum order. Its own opening illustration and Miksi question, taken from the page just built.
     order = [(code, mod, l) for code, mod in modules for l in mod.get("lessons", []) if l["id"] in built_ids]
@@ -555,7 +573,7 @@ def build_language(lang):
                     f'<span class="featured-go" aria-hidden="true">{T("site.open_lesson")}</span></div></div></section>')
 
     stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
-    home = (
+    home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><p class="motto">{T("site.home_tagline")}</p>'
         f'<h1 id="h-intro">{T("site.home_title")}</h1><p class="lead">{T("site.home_lead")}</p>'
         f'<p class="actions"><a class="button" href="#moduulit">{T("site.choose_module")}</a>'
@@ -564,6 +582,8 @@ def build_language(lang):
         f'<p class="section-lead">{T("site.modules_lead")}</p><ul class="mod-list">{catalogue}</ul></section>'
         + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
            f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
+        + (f'<section class="local-courses" aria-labelledby="h-local"><h2 id="h-local">{T("site.local_courses")}</h2>'
+           f'<p class="section-lead">{T("site.local_courses_lead")}</p><ul class="mod-list">{local_rows}</ul></section>' if local_rows else "")
         + featured
         # the learning model with the stage names the lessons use (lang inquiry.stage_*), then a short start guide
         + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2><ol class="path-steps">{stages}</ol></section>'
@@ -582,7 +602,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{i}.html" for i in built_ids] + [practice.page_name(c) for c in practice_built])
+    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [practice.page_name(c) for c in practice_built])
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")

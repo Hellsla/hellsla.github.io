@@ -10,13 +10,18 @@ For every language, from the pages that are actually in site/ (so nothing here h
   - the six stages are shown with the names the lessons use, the <title> does not repeat the site's name
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
+  - Lukiokohtaiset opintojaksot (teacher 2026-10-30, local-courses.json): their own section after the national
+    modules (and Tulossa) and before the sample lesson, one row and one link per course this language has, no
+    local course among the national rows; its page names itself school-specific and says what is still planned,
+    and links only chapters published in that language; a language without the course has the note
+    #unavailable-<CODE> on its front page
 Then in a browser, at 360, 390, 768, 1440 and 1920 px: no horizontal scroll, the header on one row, module titles
 not cut, header and catalogue targets at least 44 px, and at 390 x 844 the module list starts in the first screen.
 Exit status 1 on any failure."""
 import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n
+import i18n, local_courses
 
 SITE = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "site")
 curriculum = {k: v for k, v in json.loads((ROOT / "curriculum.json").read_text()).items() if not k.startswith("_")}
@@ -63,6 +68,26 @@ for lang in i18n.languages():
            bool(feat and sample and feat.group(1) == sample.group(1) and (out / feat.group(1)).is_file()), (feat and feat.group(1), sample and sample.group(1)))
     stages = re.findall(r"<li><strong>(.*?)</strong>", re.search(r'<ol class="path-steps">(.*?)</ol>', home, re.S).group(1))
     expect(f"{lang}: the six stages with the lessons' names", stages == [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]], stages)
+    local = local_courses.load(lang); everywhere = local_courses.load()
+    sec = re.search(r'<section class="local-courses".*?</section>', home, re.S)
+    if local:
+        expect(f"{lang}: Lukiokohtaiset opintojaksot after the national modules, before the sample lesson",
+               bool(sec) and max(home.find('class="catalogue"'), home.find('class="upcoming"')) < sec.start() < (home.find('class="featured"') % (len(home) + 1)),
+               sec and sec.start())
+        lrows = re.findall(r'<li class="mod-row local-row">(.*?)</li>', sec.group(0), re.S) if sec else []
+        expect(f"{lang}: one row per local course, in registry order", [re.search(r'mod-code">(\w+)<', r).group(1) for r in lrows] == list(local), lrows)
+        for code, r in zip(local, lrows):
+            expect(f"{lang} {code}: one link per row, to its page", re.findall(r'<a [^>]*href="([^"]*)"', r) == [f"{code}.html"])
+            pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
+            expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
+                   bool(pg) and 'class="notice local-kind"' in pg and 'class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)
+            prep = re.search(r'<ul class="local-prepare">(.*?)</ul>', pg, re.S)
+            hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
+            expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
+            expect(f"{lang} {code}: not a national module row", code not in codes)
+    else: expect(f"{lang}: no local-course section without a course in this language", not sec)
+    for code in everywhere:
+        if code not in local: expect(f"{lang}: front page note for {code}, which this language lacks", f'id="unavailable-{code}"' in home)
     bad_links = []
     for f in out.glob("*.html"):
         for href in re.findall(r'<a class="lang" href="([^"]+)"', f.read_text()):
@@ -90,7 +115,7 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
-            for name in ("index.html", "FY4.html"):
+            for name in ("index.html", "FY4.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)

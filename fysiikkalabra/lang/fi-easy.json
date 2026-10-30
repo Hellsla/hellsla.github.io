@@ -103,7 +103,26 @@
       "FY6": "Miten sähkövirta kulkee virtapiirissä?",
       "FY7": "Miten sähkö ja magnetismi liittyvät toisiinsa?",
       "FY8": "Mistä säteily syntyy, ja mitä atomissa tapahtuu?"
-    }
+    },
+    "local_courses": "Lukiokohtaiset opintojaksot",
+    "local_courses_lead": "Nämä ovat Kiviruukin lukion omia valinnaisia opintojaksoja. Ne eivät ole valtakunnallisia moduuleja (LOPS 2019). Kaikki voivat silti käyttää niiden oppimateriaaleja.",
+    "local_course_kind": "Lukiokohtainen opintojakso",
+    "local_status_planning": "Suunnitteilla",
+    "open_course": "Avaa opintojakso →",
+    "local_distinct": "Tämä on lukion oma opintojakso ({{school}}). Sen tavoitteet ja sisällöt tulevat lukion omasta suunnitelmasta. Ne eivät tule valtakunnallisista moduuleista FY1–FY8.",
+    "local_status_note_planning": "Tällä sivulla on opintojakson suunnitelma. Tutkimuksia ja oppimateriaalia ei vielä ole. Laajuutta ja arviointia ei ole vielä päätetty.",
+    "local_goals": "Opintojaksolla opit",
+    "local_goals_note": "Suunnitelma: tavoitteet voivat vielä muuttua.",
+    "local_themes": "Opintojakson eteneminen",
+    "local_themes_lead": "Nämä aiheet ovat suunnitteilla. Niiden avulla opit tekemään kokeita. Ensin työt ovat ohjattuja, lopuksi tutkit itsenäisesti. Aiheet eivät ole oppitunteja.",
+    "local_modes": "Työskentelytavat",
+    "local_modes_lead": "Saman tutkimuksen voi tehdä eri määrällä tukea. Tuen määrä ei kerro, kuinka vaikeaa työn fysiikka on.",
+    "local_report": "Työselostus",
+    "local_report_lead": "Jokaisesta tutkimuksesta kirjoitetaan työselostus samalla pohjalla. Pohjassa on nämä osat:",
+    "local_prepare": "Valmistaudu jo nyt",
+    "local_prepare_lead": "Nämä luvut ovat jo valmiita. Ne auttavat opintojakson kokeissa.",
+    "local_unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole selkosuomeksi. Se on vain tavallisella suomella.",
+    "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle"
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",

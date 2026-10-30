@@ -1,0 +1,51 @@
+{
+  "_note": "Lukiokohtaiset opintojaksot (school-specific optional courses, teacher's brief 2026-10-30, docs/PORTAL_ARCHITECTURE.md). Kept apart from curriculum.json, which holds only the national LOPS 2019 modules FY1–FY8: nothing here is a national requirement, and /new-course never validates these. Finnish is the source; a translation goes in content/<lang>/local-courses.json with the same codes, and a course is published only in the languages that have it. Texts marked status 'planning' are the teacher's working version, not an approved course description: no credits, assessment or official goals until the teacher supplies them. scripts/local_courses.py validates and renders this file.",
+  "FY10": {
+    "title": "Kokeellinen fysiikka",
+    "subtitle": "Tutki, mittaa ja raportoi.",
+    "school": "Kiviruukin lukio",
+    "status": "planning",
+    "description": "Suunnittele ja toteuta fysiikan kokeellisia tutkimuksia. Harjoittele mittaamista, graafista analyysiä, mittausepävarmuuden arviointia ja tieteellisen työselostuksen kirjoittamista.",
+    "goals": [
+      "muotoilemaan mielekkäitä ja täsmällisiä tutkimuskysymyksiä",
+      "yhdistämään tutkimuskysymyksen fysiikan teoriaan ja malleihin",
+      "suunnittelemaan kokeen sekä valitsemaan sopivat muuttujat ja menetelmät",
+      "keräämään luotettavaa mittausaineistoa",
+      "laatimaan ja tulkitsemaan kuvaajia sekä muodostamaan matemaattisia malleja",
+      "arvioimaan mittausepävarmuutta ja tulosten luotettavuutta",
+      "tekemään mittausaineistoon perustuvia johtopäätöksiä",
+      "kirjoittamaan selkeän ja toistettavan työselostuksen"
+    ],
+    "themes": [
+      "Tieteellinen tutkimus ja tutkimuskysymykset",
+      "Hypoteesit, teoreettiset mallit ja ennusteet",
+      "Kokeen suunnittelu, muuttujat ja vakioidut suureet",
+      "Mittausmenetelmät ja järjestelmällinen mittaaminen",
+      "Graafinen analyysi ja matemaattinen mallintaminen",
+      "Mittausepävarmuus ja luotettavuus",
+      "Tieteellinen raportointi ja mittauksiin perustuvat johtopäätökset",
+      "Itsenäinen kokeellinen tutkimus"
+    ],
+    "modes": [
+      {"title": "Ohjattu tutkimus", "text": "Menetelmä ja analyysin tärkeimmät vaiheet on tuettu. Ennustat, selität ja pohdit silti itse."},
+      {"title": "Osittain ohjattu tutkimus", "text": "Teet osan menetelmävalinnoista itse ja perustelet ne."},
+      {"title": "Itsenäinen tutkimus", "text": "Muotoilet tai tarkennat tutkimuskysymyksen, suunnittelet menetelmän, analysoit tulokset ja perustelet ratkaisusi."}
+    ],
+    "report": [
+      {"title": "Tutkimuskysymys ja tavoite", "text": "mitä ilmiötä tutkitaan ja mitä suuretta tai riippuvuutta määritetään"},
+      {"title": "Tausta ja teoria", "text": "työn fysiikka, graafinen malli ja perusteltu hypoteesi"},
+      {"title": "Koejärjestely ja menetelmä", "text": "välineet, kuva järjestelystä ja työvaiheet niin, että toinen voi toistaa kokeen"},
+      {"title": "Mittaustulokset", "text": "alkuperäiset mittaukset taulukossa, johdetut suureet omissa sarakkeissaan"},
+      {"title": "Tulosten käsittely ja graafinen analyysi", "text": "mallilasku, kuvaaja, sovitus ja sen fysikaalinen tulkinta"},
+      {"title": "Tulos", "text": "päätulos epävarmuuksineen ja vertailu vertailuarvoon"},
+      {"title": "Johtopäätökset", "text": "vastaus tutkimuskysymykseen mittausten ja kuvaajan perusteella"},
+      {"title": "Luotettavuus ja mittausepävarmuus", "text": "tärkeimmät epävarmuuden lähteet, niiden vaikutus ja miten koetta voisi parantaa"},
+      {"title": "Lähteet", "text": "käytetyt lähteet niin, että ne löytyvät uudelleen"}
+    ],
+    "prepare": [
+      {"id": "fy1-3", "why": "mittaustarkkuus, mittausepävarmuus ja tuloksen ilmoittaminen"},
+      {"id": "fy1-4", "why": "kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta"},
+      {"id": "fy1-8", "why": "oman kokeellisen tutkimuksen suunnittelu, toteutus ja raportointi"}
+    ]
+  }
+}
