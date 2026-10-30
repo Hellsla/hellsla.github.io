@@ -12,8 +12,9 @@
     "fy4-10"
   ],
   "glossary": [
-    "jarrutusmatka",
     "reaktioaika",
+    "reaktiomatka",
+    "jarrutusmatka",
     "pysähtymismatka",
     "turvavyö",
     "törmäysaika"
