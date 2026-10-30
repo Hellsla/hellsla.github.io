@@ -1,0 +1,409 @@
+{
+  "intro": "Kolme tehtävää kokoaa moduulin liikkeen, voimien, energian ja liikemäärän. Jokaisessa päätät itse, mitkä lait ja mallit tilanteeseen sopivat, ja perustelet valintasi.",
+  "tasks": [
+    {
+      "id": "fy4-s1",
+      "title": "Suksivoiteiden vertailu",
+      "source": "simulated",
+      "source_note": "Aineisto on laskettu mallista, jossa kiihtyvyys on vakio, ja siihen on lisätty pientä satunnaista vaihtelua mittauksen tapaan. Se ei ole oikean mittauksen tulos.",
+      "text": "Hiihtoseuran valmentaja vertaa kahta liukuvoidetta, A ja B. Sama hiihtäjä, jonka massa varusteineen on $72\\,\\text{kg}$, laskee kummallakin voiteella samaa tasaista rinnettä, jonka kaltevuuskulma on $4{,}0^\\circ$. Hiihtäjä seisoo suorana eikä työnnä sauvoilla. Rinteen sivulla oleva kamera kuvaa laskut, ja hiihtäjän nopeus määritetään videolta sekunnin välein. Ajanotto alkaa, kun hiihtäjä ohittaa lähtömerkin.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2{,}10$ | $1{,}90$ |\n| $1$ | $2{,}52$ | $2{,}12$ |\n| $2$ | $2{,}86$ | $2{,}42$ |\n| $3$ | $3{,}31$ | $2{,}62$ |\n| $4$ | $3{,}63$ | $2{,}90$ |\n| $5$ | $4{,}06$ | $3{,}09$ |\n| $6$ | $4{,}40$ | $3{,}40$ |\n| $7$ | $4{,}86$ | $3{,}59$ |\n| $8$ | $5{,}23$ | $3{,}86$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Piirrä kummankin laskun $(t, v)$-kuvaaja samaan koordinaatistoon ja sovita kumpaankin pisteistöön malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Laskujen pisteet erottuvat toisistaan, esimerkiksi eri merkein."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Kumpaankin pisteistöön on sovitettu oma suora."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Piirrä hiihtäjän voimakuvio laskun aikana. Ilmanvastusta ei tarvitse ottaa huomioon.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino, rinteen tukivoima ja liikekitka; ei eteenpäin vievää voimaa."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Paino suoraan alas, tukivoima kohtisuoraan rinteestä ulos ja kitka rinnettä ylös."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Hiihtäjä on rinteen suuntainen suorakulmio; paino lähtee keskipisteestä, tukivoima ja kitka kosketuspinnasta, ja jokaisella voimalla on oma symboli."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä kummankin voiteen liikekitkakerroin.",
+          "answer": {
+            "value": 0.030,
+            "unit": "",
+            "tolerance": 0.12
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kiihtyvyydet suorien kulmakertoimina: $a_\\text{A} \\approx 0{,}39\\,\\text{m/s}^2$ ja $a_\\text{B} \\approx 0{,}245\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$-akseli rinnettä alas: $mg\\sin\\alpha - \\mu N = ma$, ja $y$: $N - mg\\cos\\alpha = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\mu = \\dfrac{g\\sin\\alpha - a}{g\\cos\\alpha}$; massa supistuu."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Molempien voiteiden kertoimet on laskettu samalla tavalla."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu_\\text{A} \\approx 0{,}030$ ja $\\mu_\\text{B} \\approx 0{,}045$, ilman yksikköä."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Valmentaja päättelee, että voide A liukuu paremmin. Arvioi, kuinka luotettava johtopäätös on. Ota huomioon tulosten epävarmuus ja se, että ilmanvastus jätettiin pois.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Esimerkiksi kulmakertoimen lukemisen epävarmuus $\\pm 0{,}02\\,\\text{m/s}^2$ muuttaa kitkakerrointa vain noin $\\pm 0{,}002$, mikä on paljon vähemmän kuin voiteiden ero $0{,}015$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Ilmanvastus pienentää kiihtyvyyttä, joten laskettu kitkakerroin on todellista suurempi; nopeammassa laskussa A vaikutus on suurempi."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ero on epävarmuutta suurempi, joten voide A liukuu paremmin; varmuuden saa toistamalla laskut."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-2",
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-6",
+        "experiment": "fy4-6"
+      }
+    },
+    {
+      "id": "fy4-s2",
+      "title": "Vaijeriliuku",
+      "source": "example",
+      "source_note": "Vaijeriliuku ja mittaustulos ovat keksittyjä esimerkkejä.",
+      "text": "Leirikeskuksen vaijeriliu'ussa laskija roikkuu valjaissa pyörillä kulkevan vaunun alla ja liukuu teräsvaijeria pitkin rinteen yli. Lähtölava on $15{,}0\\,\\text{m}$ korkeammalla kuin vaijerin loppupää, ja vaijerin pituus on $180\\,\\text{m}$. Laskija lähtee levosta. Vaijerin loppuosa on lähes vaakasuora, ja siinä jousijarru pysäyttää laskijan.\n\nOhjaaja kertoo laskijoille: ”Jarrulle tullaan yli $60\\,\\text{km/h}$:n vauhdilla.” Tutkamittarilla mitattiin jarrun alussa $62\\,\\text{kg}$:n laskijan nopeudeksi $11{,}2\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Millaiseen laskelmaan ohjaajan väite voi perustua? Laske nopeus jarrun alussa tällä mallilla.",
+          "answer": {
+            "value": 17.2,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Valitsee mekaanisen energian säilymisen ja perustelee sen: kun kitka ja ilmanvastus jätetään pois, vain paino tekee työtä, koska vaijerin voima on kohtisuorassa liikettä vastaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mgh = \\tfrac{1}{2}mv^2$, josta $v = \\sqrt{2gh}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 17{,}2\\,\\text{m/s} \\approx 62\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Mittaus ei vastaa ohjaajan väitettä. Määritä mittauksen perusteella, kuinka suuri voima keskimäärin vastustaa laskijan liikettä vaijerilla.",
+          "answer": {
+            "value": 29,
+            "unit": "N",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Selittää eron: kitka ja ilmanvastus tekevät negatiivista työtä, joten mekaaninen energia pienenee, ja käyttää siksi mekaniikan energiaperiaatetta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mgh - F_\\text{vast}\\,s = \\tfrac{1}{2}mv^2$ ratkaistuna $F_\\text{vast}$:n suhteen"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{p} \\approx 9{,}12\\,\\text{kJ}$ ja $E_\\text{k} \\approx 3{,}89\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{vast} \\approx 29\\,\\text{N}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Ohjaaja arvioi $95\\,\\text{kg}$:n laskijan nopeuden jarrun alussa olettaen, että liikettä vastustaa sama voima kuin b-kohdassa. Laske arvio.",
+          "answer": {
+            "value": 13.6,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Sama energiayhtälö uudella massalla, ratkaistuna $v$:n suhteen"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 13{,}6\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Toinen ohjaaja väittää: ”Painava laskija ei tule yhtään nopeammin, koska kitkakin kasvaa massan mukana.” Arvioi kummankin ohjaajan mallia. Kumman arvion mukaan jarru kannattaa mitoittaa?",
+          "criteria": [
+            {
+              "text": "Osoittaa, että jos koko vastusvoima olisi verrannollinen massaan, massa supistuisi energiayhtälöstä ja nopeus olisi sama $11{,}2\\,\\text{m/s}$ kuin kevyellä laskijalla.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Erittelee vastusvoimat: vaunun pyörien kitka kasvaa tukivoiman ja siten massan mukana, mutta ilmanvastus riippuu nopeudesta ja laskijan koosta eikä massasta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Todellinen nopeus on arvioiden välissä: c-kohdan arvio on liian suuri, koska kitka kasvaa massan mukana, ja toisen ohjaajan arvio liian pieni, koska ilmanvastus ei kasva massan mukana."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Jarru mitoitetaan suuremman nopeuden mukaan, koska turvallisuuden kannalta on parempi varautua liian suureen kuin liian pieneen nopeuteen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy4-8",
+        "math": "fy4-8",
+        "concept": "fy4-14",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy4-s3",
+      "title": "Peräänajo liikennevaloissa",
+      "source": "example",
+      "source_note": "Onnettomuus ja raportin luvut ovat keksittyjä esimerkkejä.",
+      "text": "Henkilöauto A seisoo punaisissa valoissa, ja sen kuljettaja painaa jarrua. Takaa tuleva auto B ajaa sen perään. Autot kiilautuvat toisiinsa kiinni ja liukuvat yhdessä suoraan eteenpäin, kunnes ne pysähtyvät. Kummankin auton pyörät ovat lukossa koko liukumisen ajan.\n\nPoliisin raportista:\n\n- auton A massa kuljettajineen $1250\\,\\text{kg}$ ja auton B massa kuljettajineen $1700\\,\\text{kg}$\n- autojen yhteinen liukumamatka törmäyskohdasta pysähtymiseen $4{,}2\\,\\text{m}$ vaakasuoralla, kuivalla asfaltilla\n- lukossa olevien renkaiden ja tien välinen kitkakerroin $0{,}75$\n- nopeusrajoitus $40\\,\\text{km/h}$; auton B kuljettaja kertoo ajaneensa alle $40\\,\\text{km/h}$:n nopeudella.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri oli autojen yhteinen nopeus heti törmäyksen jälkeen?",
+          "answer": {
+            "value": 7.9,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee mallin: liukuessa autoja hidastaa vain kitka $\\mu (m_\\text{A} + m_\\text{B}) g$, koska tukivoima on vaakasuoralla tiellä yhtä suuri kuin paino.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv'^2 = \\mu mgs$, josta $v' = \\sqrt{2\\mu gs}$; massa supistuu."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v' \\approx 7{,}9\\,\\text{m/s}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi hidastuvuus $\\mu g \\approx 7{,}4\\,\\text{m/s}^2$ sopii jarrutukseen kuivalla asfaltilla, ja $7{,}9\\,\\text{m/s} \\approx 28\\,\\text{km/h}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Arvioi auton B nopeus juuri ennen törmäystä. Pitääkö kuljettajan kertomus paikkansa?",
+          "answer": {
+            "value": 13.6,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, miksi liikemäärä säilyy lähes: törmäys on lyhyt ja autojen väliset voimat ovat paljon suurempia kuin kitka, joten kitkan impulssi törmäyksen aikana on pieni.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m_\\text{B}v_\\text{B} = (m_\\text{A} + m_\\text{B})v'$ ratkaistuna $v_\\text{B}$:n suhteen"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{B} \\approx 13{,}6\\,\\text{m/s} \\approx 49\\,\\text{km/h}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kertomus ei pidä paikkaansa: nopeus oli törmäyshetkellä selvästi yli $40\\,\\text{km/h}$, ja ennen jarrutusta vielä suurempi."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Auton A kuljettajan massa on $68\\,\\text{kg}$. Törmäys kesti noin $0{,}12\\,\\text{s}$, ja sinä aikana istuimen selkänoja kiihdytti kuljettajan auton mukana a-kohdan nopeuteen. Kuinka suuri keskimääräinen voima selkänojasta kohdistui kuljettajaan? Vertaa sitä kuljettajan painoon.",
+          "answer": {
+            "value": 4500,
+            "unit": "N",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$, josta $F_\\text{ka} = \\dfrac{m\\,\\Delta v}{\\Delta t}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{ka} \\approx 4{,}5\\,\\text{kN}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Voima on noin $6{,}7$-kertainen kuljettajan painoon verrattuna."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi lähelle takaraivoa säädetty niskatuki vähentää niskavammoja peräänajossa ja miksi hieman joustava selkänoja on parempi kuin täysin jäykkä.",
+          "criteria": [
+            {
+              "text": "Selittää hitaudella: selkänoja työntää vartaloa eteenpäin, mutta pää pyrkii jatkamaan entisellä nopeudellaan, kunnes niska vetää sen mukaan, jolloin niska taipuu taaksepäin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että lähellä oleva niskatuki antaa päälle saman nopeuden muutoksen yhtä aikaa vartalon kanssa, joten niskan ei tarvitse välittää suurta voimaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee impulssilla: nopeuden muutos on sama, mutta joustava selkänoja pidentää aikaa $\\Delta t$, joten keskimääräinen voima $F_\\text{ka} = m\\,\\Delta v : \\Delta t$ pienenee.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Arvioi b-kohdan tuloksen luotettavuutta. Nimeä kaksi oletusta ja kerro, kumpaan suuntaan kumpikin muuttaa arviota auton B nopeudesta.",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Esimerkiksi kitka vaikuttaa jo törmäyksen aikana ja pienentää autojen yhteistä liikemäärää, joten todellinen $v_\\text{B}$ on laskettua suurempi."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Toinen oletus, esimerkiksi kitkakertoimen arvo tai pyörien lukkiutuminen koko matkan ajan, ja sen vaikutuksen suunta."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy4-10",
+        "math": "fy4-9",
+        "concept": "fy4-11",
+        "communication": "fy4-11"
+      }
+    }
+  ]
+}
