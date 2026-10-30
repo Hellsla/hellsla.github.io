@@ -1,0 +1,14 @@
+[
+  {
+    "q": "The electric power of a hydropower plant is $50\\,\\text{MW}$ and its efficiency $90\\,\\%$. How much power is taken from the water, and where does the difference end up?",
+    "a": "The power taken is $P_\\text{o} = \\tfrac{P_\\text{s}}{\\eta} = \\tfrac{50\\,\\text{MW}}{0.90} \\approx 56\\,\\text{MW}$. The difference, about $6\\,\\text{MW}$, does not end up as electricity: it turns into internal energy through friction in the pipes, the turbine and the generator, and part of it remains as the kinetic energy of the water discharged to the tailwater."
+  },
+  {
+    "q": "Two hydropower plants give the same electric power with the same efficiency. The head of one is twice the head of the other. How do their flow rates differ?",
+    "a": "The flow rate of the higher plant is half that of the other. The power is proportional to the product $Qh$, so when $h$ doubles and the power stays the same, $Q$ halves: every cubic metre gives twice as much energy."
+  },
+  {
+    "q": "Why does the power of a wind turbine stop growing when the wind becomes stronger than the speed at which the turbine reaches the top of its power curve?",
+    "a": "The turbine has reached its rated power, which the generator cannot exceed. The blades are turned so that part of the wind passes by, so the fraction of the wind's power that becomes electricity decreases as the wind strengthens, and the power stays constant."
+  }
+]

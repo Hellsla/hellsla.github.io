@@ -1,0 +1,21 @@
+{
+  "id": "fy4-7",
+  "course": "FY4",
+  "title": "Kinetic energy, potential energy and mechanical energy",
+  "goals": [
+    "LOPS FY4: kinetic energy, potential energy and mechanical energy",
+    "Clarification: the potential energy of gravity is not the only kind of potential energy; potential energy is associated with a conservative force"
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "liike-energia",
+    "potentiaalienergia",
+    "mekaaninen energia",
+    "konservatiivinen voima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

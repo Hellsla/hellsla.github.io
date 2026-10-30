@@ -1,0 +1,22 @@
+{
+  "id": "fy4-8",
+  "course": "FY4",
+  "title": "Mekaanisen energian säilyminen ja energiaperiaate",
+  "goals": [
+    "LOPS FY4: mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
+    "LOPS FY4: ymmärtää säilymislakien merkityksen fysiikassa",
+    "Täsmennys: mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ; kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos"
+  ],
+  "prerequisites": [
+    "fy4-7"
+  ],
+  "glossary": [
+    "energiaperiaate",
+    "mekaanisen energian säilyminen",
+    "työ",
+    "ei-konservatiivinen voima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

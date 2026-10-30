@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A box slides on a horizontal floor. Which of the forces acting on the box do work, and which do not? Give reasons.",
+    "a": "Friction does negative work, because it points against the motion. The weight and the normal force of the floor are perpendicular to the motion, so they do no work."
+  },
+  {
+    "q": "A sled slides on level snow and stops. Where did its kinetic energy go, and was energy conserved?",
+    "a": "Friction and air resistance did negative work, and the kinetic energy turned into internal energy of the snow, the runners and the air. The mechanical energy decreased, but the total energy was conserved."
+  }
+]

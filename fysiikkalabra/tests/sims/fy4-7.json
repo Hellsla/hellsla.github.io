@@ -1,0 +1,130 @@
+[
+  {
+    "expr": "(() => { const S=window.simState; return S.v0===2 && S.m===1 && S.rinne==='loiva' && S.kitka==='ei' && S.running===false && S.t===0 && S.hmax===null && S.vback===null ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load: v0 = 2,0 m/s, m = 1,0 kg, gentle ramp, no friction, not running, no h_max or return speed yet"
+  },
+  {
+    "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='1' && R[0].max==='4' && R[0].step==='0.5' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "one slider: v0 1,0-4,0 m/s in steps of 0,5"
+  },
+  {
+    "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='0.5,1,2' && L[1]==='loiva,jyrkka' && L[2]==='ei,pieni' && L[3]==='0.25,0.5,1' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "selects: mass, ramp, friction, speed"
+  },
+  {
+    "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "main button first; DOM order canvas, controls, readout"
+  },
+  {
+    "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "no Lisätietoja box; one legend line of at most 15 words"
+  },
+  {
+    "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='kitka,m,rinne,v0' && P.v0.unit==='m/s' && P.m.unit==='kg' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "adapter declares v0 (m/s), m (kg), rinne and kitka"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'2'); I(R[0],3);",
+    "expr": "window.simState.Ek",
+    "expected": 9.0,
+    "tol": 0.01,
+    "note": "at the foot before the run: E_k = ½ m v0² = ½ · 2,0 kg · (3,0 m/s)²"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'2'); I(R[0],3);",
+    "expr": "window.simState.Ep + window.simState.h",
+    "expected": 0.0,
+    "tol": 0.01,
+    "note": "at the foot (the zero level) h = 0 and E_p = 0"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'loiva'); I(L[2],'ei'); I(R[0],3); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.hmax : null), 3500))",
+    "expected": 0.4587,
+    "tol": 0.01,
+    "note": "no friction, v0 = 3,0 m/s: h_max = v0²/(2g) = 0,459 m"
+  },
+  {
+    "expr": "window.simState.vback",
+    "expected": 3.0,
+    "tol": 0.01,
+    "note": "without friction the cart returns at its starting speed"
+  },
+  {
+    "expr": "window.simState.Emek",
+    "expected": 4.5,
+    "tol": 0.01,
+    "note": "after that run E_mek = 4,5 J, unchanged"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'jyrkka'); I(L[2],'ei'); I(R[0],3); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.hmax : null), 3500))",
+    "expected": 0.4587,
+    "tol": 0.01,
+    "note": "the steep ramp: the same h_max"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'loiva'); I(L[2],'ei'); I(R[0],1); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.hmax : null), 3500))",
+    "expected": 0.05097,
+    "tol": 0.01,
+    "note": "v0 = 1,0 m/s: h_max = 0,051 m, a ninth of the 3,0 m/s height"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'0.5'); I(L[1],'loiva'); I(L[2],'ei'); I(R[0],3); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.hmax : null), 3500))",
+    "expected": 0.4587,
+    "tol": 0.01,
+    "note": "m = 0,50 kg: the same h_max (the mass does not matter)"
+  },
+  {
+    "expr": "window.simState.Ek0",
+    "expected": 2.25,
+    "tol": 0.01,
+    "note": "m = 0,50 kg, v0 = 3,0 m/s: E_k at the start 2,25 J"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'loiva'); I(L[2],'pieni'); I(R[0],3); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.hmax : null), 3500))",
+    "expected": 0.3777,
+    "tol": 0.01,
+    "note": "small friction (μ = 0,10) on the 25° ramp: h_max = 0,378 m"
+  },
+  {
+    "expr": "window.simState.vback",
+    "expected": 2.4128,
+    "tol": 0.01,
+    "note": "with friction the cart returns at 2,41 m/s"
+  },
+  {
+    "expr": "window.simState.Emek",
+    "expected": 2.9108,
+    "tol": 0.01,
+    "note": "with friction E_mek falls from 4,5 J to 2,91 J"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2.5);",
+    "expr": "window.simState.hmax === null && window.simState.t === 0 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "changing a control resets the run and clears h_max"
+  }
+]

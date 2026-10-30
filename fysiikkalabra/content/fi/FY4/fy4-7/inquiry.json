@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "contribution": "Liike-energia $E_\\text{k} = \\tfrac12 m v^2$ nousukorkeudesta $\\tfrac{v^2}{2g}$ johdettuna (nopeuden neliö ja massa), painovoiman potentiaalienergia $m g h$ ja nollatason valinta, konservatiivinen voima energian palauttajana ja reitistä riippumattomana (painovoima, jousivoima; kitka ei) sekä mekaaninen energia $E_\\text{k} + E_\\text{p}$ ennen sen säilymislakia.",
+  "learn": [
+    "laskemaan kappaleen liike-energian, potentiaalienergian ja mekaanisen energian valitun nollatason suhteen.",
+    "selittämään, miksi liike-energia kasvaa nopeuden neliössä ja miksi vain potentiaalienergian muutoksella on merkitystä.",
+    "tunnistamaan konservatiiviset voimat ja perustelemaan, miksi kitkaan ei liity potentiaalienergiaa."
+  ],
+  "prior": [
+    "Suoraan ylös nopeudella $v$ heitetty kappale nousee korkeudelle $\\tfrac{v^2}{2g}$, kun ilmanvastus on pieni (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)",
+    "Kappaleen paino on $G = m g$ (luku *Paino, kitka ja kalteva taso*)",
+    "Energia muuttuu muodosta toiseen ja sen yksikkö on joule (luku *Energian muuntuminen ja yksikkö joule*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Rullalautailija ajaa tasaista maata ja nousee suoraa ramppia ylös, kunnes hän pysähtyy hetkeksi ja lähtee takaisin alas. Kitka ja ilmanvastus ovat pieniä. Kun hänen nopeutensa rampin juurella on $3{,}0\\,\\text{m/s}$, hän nousee noin $0{,}46\\,\\text{m}$:n korkeudelle. Kun nopeus on kaksinkertainen, $6{,}0\\,\\text{m/s}$, hän nousee noin $1{,}8\\,\\text{m}$:n korkeudelle eli neljä kertaa korkeammalle.",
+      "question": "Mikä lautailijan liikkeessä kasvaa niin paljon, että kaksinkertainen nopeus riittää nelinkertaiseen nousuun?"
+    },
+    {
+      "id": "pr-nousu",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa luvusta Kiihtyvyys ja tasaisesti kiihtyvä liike",
+      "prompt": "Pallo heitetään suoraan ylöspäin nopeudella $10\\,\\text{m/s}$, ja ilmanvastus on pieni. Pallon kiihtyvyys on koko ajan $g = 9{,}81\\,\\text{m/s}^2$ alaspäin. Kuinka korkealle heittokohdasta pallo nousee?",
+      "choices": [
+        {
+          "text": "$5{,}1\\,\\text{m}$",
+          "correct": true,
+          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$, ja keskinopeus on nousun aikana puolet alkunopeudesta, joten $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 5{,}1\\,\\text{m}$."
+        },
+        {
+          "text": "$10\\,\\text{m}$",
+          "feedback": "Laskit $\\tfrac{v^2}{g}$, eli kertoit alkunopeuden nousuajalla. Pallo hidastuu koko nousun ajan, joten sen keskinopeus on vain puolet alkunopeudesta: $h = \\tfrac{v^2}{2g}$."
+        },
+        {
+          "text": "$1{,}0\\,\\text{m}$",
+          "feedback": "Luku $\\tfrac{v}{g} \\approx 1{,}0$ on nousuaika sekunteina, ei korkeus. Korkeus on keskinopeus kertaa nousuaika: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
+        },
+        {
+          "text": "$0{,}51\\,\\text{m}$",
+          "feedback": "Laskit $\\tfrac{v}{2g}$, jonka yksikkö on sekunti eikä metri. Nopeus esiintyy nousukorkeudessa toisessa potenssissa: $h = \\tfrac{v^2}{2g}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kolminkertainen nopeus",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "Kärry ajaa kitkatonta ramppia ylös. Kun sen nopeus rampin juurella on $1{,}0\\,\\text{m/s}$, se nousee korkeudelle $h$. Kuinka korkealle se nousee, kun nopeus rampin juurella on $3{,}0\\,\\text{m/s}$?",
+      "choices": [
+        {
+          "text": "Kolme kertaa korkeammalle, koska nopeus on kolminkertainen.",
+          "feedback": "Nousukorkeus ei kasva samassa suhteessa kuin nopeus. Mallin arvoissa kärry nousee nopeudella $1{,}0\\,\\text{m/s}$ korkeudelle $0{,}051\\,\\text{m}$ ja nopeudella $3{,}0\\,\\text{m/s}$ korkeudelle $0{,}46\\,\\text{m}$, eli yhdeksän kertaa korkeammalle."
+        },
+        {
+          "text": "Kuusi kertaa korkeammalle, koska nopeuden kerroin kaksinkertaistuu nousukorkeudessa: $3 \\cdot 2 = 6$.",
+          "feedback": "Kaksinkertainen nopeus antoi nelinkertaisen nousun, mutta siinä $4 = 2 \\cdot 2$ on nopeuden kerroin kerrottuna itsellään, ei luvulla $2$. Kolminkertaisella nopeudella kärry nousee kolme kertaa pidempään ja sen keskinopeus on kolminkertainen, joten korkeus on $3 \\cdot 3 = 9$-kertainen. Mallin arvot ovat $0{,}051\\,\\text{m}$ ja $0{,}46\\,\\text{m}$."
+        },
+        {
+          "text": "Yhdeksän kertaa korkeammalle, koska nousukorkeus kasvaa nopeuden neliössä.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: nopeuksilla $1{,}0$, $2{,}0$ ja $3{,}0\\,\\text{m/s}$ kärry nousee korkeuksille $0{,}051\\,\\text{m}$, $0{,}20\\,\\text{m}$ ja $0{,}46\\,\\text{m}$, eli suhteessa $1 : 4 : 9$. Nousuun tarvittava energia ja siis liike-energia kasvaa nopeuden neliössä."
+        },
+        {
+          "text": "Alle kolme kertaa korkeammalle, koska ramppi hidastaa nopeaa kärryä voimakkaammin.",
+          "feedback": "Kitkattomalla rampilla kärryn hidastuvuus on sama nopeudesta riippumatta, koska sen aiheuttaa vain painon rampin suuntainen komponentti. Mallin arvoissa kolminkertainen nopeus antaa yhdeksänkertaisen korkeuden: $0{,}051\\,\\text{m}$ ja $0{,}46\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: loiva ja jyrkkä ramppi",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Kärry ajaa samalla nopeudella $3{,}0\\,\\text{m/s}$ kerran loivaa ja kerran jyrkkää ramppia ylös. Kitkaa ei ole. Kuinka korkealle kärry nousee jyrkässä rampissa loivaan verrattuna, ja millä nopeudella se palaa rampin juurelle?",
+      "choices": [
+        {
+          "text": "Jyrkässä matalammalle, koska jyrkkä ramppi hidastaa enemmän, ja se palaa hitaammin.",
+          "feedback": "Jyrkässä rampissa kärry hidastuu nopeammin, mutta se kulkee myös lyhyemmän matkan ylös. Mallin arvoissa kärry nousee kummassakin rampissa korkeudelle $0{,}46\\,\\text{m}$ ja palaa nopeudella $3{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Jyrkässä korkeammalle, koska matka ylös on lyhyempi, ja se palaa nopeammin.",
+          "feedback": "Lyhyempi matka ei tuo lisää energiaa. Mallin arvoissa kärry nousee kummassakin rampissa samalle korkeudelle $0{,}46\\,\\text{m}$ ja palaa samalla nopeudella $3{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Yhtä korkealle kummassakin, ja se palaa juurelle samalla nopeudella kuin lähti.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kärry nousee kummassakin rampissa korkeudelle $0{,}46\\,\\text{m}$ ja palaa nopeudella $3{,}0\\,\\text{m/s}$. Painovoiman potentiaalienergia riippuu vain korkeudesta, ja painovoima palauttaa energian kokonaan liike-energiaksi."
+        },
+        {
+          "text": "Yhtä korkealle kummassakin, mutta jyrkästä rampista se palaa nopeammin.",
+          "feedback": "Paluunopeus ei riipu rampin jyrkkyydestä, kun kitkaa ei ole. Mallin arvoissa kärry palaa kummastakin rampista nopeudella $3{,}0\\,\\text{m/s}$, eli samalla nopeudella kuin lähti."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kärry lähtee rampin juurelta ylös valitulla nopeudella, pysähtyy hetkeksi ja palaa. Pylväät näyttävät sen liike-energian, potentiaalienergian ja mekaanisen energian.",
+      "howto": "Valitse alkunopeus $v_0$, kärryn massa, rampin jyrkkyys ja kitka. Paina *Käynnistä*, ja anna kärryn nousta ja palata rampin juurelle; ajo päättyy siihen. Sininen nuoli on kärryn nopeus, ja katkoviiva merkitsee korkeimman kohdan $h_\\text{max}$. Oikealla (puhelimessa alla) oranssi pylväs on liike-energia $E_\\text{k}$, vihreä potentiaalienergia $E_\\text{p}$ ja harmaa niiden summa eli mekaaninen energia $E_\\text{mek}$. Pylväillä on kiinteä asteikko, joten eri ajojen pylväitä voi verrata keskenään. *Nopeus*-valinta muuttaa vain animaation tahtia.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Kärry on pistemäinen, ja ramppi on suora: loivan rampin kaltevuuskulma on $25^\\circ$ ja jyrkän $50^\\circ$. Nollataso on rampin juuri ($h = 0$), ja $g = 9{,}81\\,\\text{m/s}^2$. Ilmanvastusta ei ole. Kun kitka on valittu, liikettä vastustaa kitkavoima, jonka kitkakerroin on $\\mu = 0{,}10$; muuten kitkaa ei ole.",
+      "calc": "Rampilla kärryn kiihtyvyys on ylös noustessa $g(\\sin\\alpha + \\mu\\cos\\alpha)$ ja alas tullessa $g(\\sin\\alpha - \\mu\\cos\\alpha)$ rampin suuntaan alaspäin. Korkeus on $h = s\\sin\\alpha$, missä $s$ on kuljettu matka rampin pintaa pitkin. Energiat lasketaan joka hetki: $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$, $E_\\text{p} = m g h$ ja $E_\\text{mek} = E_\\text{k} + E_\\text{p}$. $h_\\text{max}$ on korkein kohta ja $v_\\text{paluu}$ nopeus, kun kärry on palannut rampin juurelle."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: alkunopeus ja nousukorkeus",
+      "intro": "Testaa ennuste 1. Alkutila asettaa massaksi $m = 1{,}0\\,\\text{kg}$ ja loivan rampin ilman kitkaa ja lukitsee ne. Aseta alkunopeudeksi $v_0 = 1{,}0\\,\\text{m/s}$, paina *Käynnistä* ja odota, kunnes kärry on palannut rampin juurelle. Kirjaa mittaus. Toista nopeuksilla $2{,}0\\,\\text{m/s}$ ja $3{,}0\\,\\text{m/s}$.",
+      "initial": {
+        "v0": 1,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "loiva ramppi",
+          "jyrkka": "jyrkkä ramppi"
+        },
+        "kitka": {
+          "ei": "ei kitkaa",
+          "pieni": "pieni kitka"
+        }
+      },
+      "locked": [
+        "m",
+        "rinne",
+        "kitka"
+      ],
+      "vary": "v0",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "Ek0",
+          "label": "$E_\\text{k}$ alussa (J)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta kertaa korkeammalle kärry nousee nopeudella $3{,}0\\,\\text{m/s}$ kuin nopeudella $1{,}0\\,\\text{m/s}$? Laske taulukon korkeuksien suhde.",
+        "answer": 9.0,
+        "unit": "",
+        "tolerance": 0.03,
+        "hints": [
+          "Jaa suuremman nopeuden nousukorkeus pienemmän nopeuden nousukorkeudella.",
+          "Käytä sarakkeen $h_\\text{max}$ lukuja riveiltä $v_0 = 3{,}0\\,\\text{m/s}$ ja $v_0 = 1{,}0\\,\\text{m/s}$.",
+          "$\\dfrac{h_\\text{max}(3{,}0\\,\\text{m/s})}{h_\\text{max}(1{,}0\\,\\text{m/s})} = \\dfrac{0{,}459\\,\\text{m}}{0{,}051\\,\\text{m}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 3.0,
+            "feedback": "Tämä on nopeuksien suhde. Laske korkeuksien suhde taulukosta: korkeus kasvaa enemmän kuin nopeus."
+          },
+          {
+            "value": 0.111,
+            "feedback": "Jaoit pienemmän korkeuden suuremmalla. Kysytään, monta kertaa korkeammalle nopeampi kärry nousee: suurempi korkeus jaetaan pienemmällä."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta nousukorkeudet $h_1 = 0{,}051\\,\\text{m}$ nopeudella $v_1 = 1{,}0\\,\\text{m/s}$ ja $h_3 = 0{,}459\\,\\text{m}$ nopeudella $v_3 = 3{,}0\\,\\text{m/s}$; kitkaa ei ole, ja massa ja ramppi ovat samat\n\n**Kysytty:** korkeuksien suhde $\\tfrac{h_3}{h_1}$ eli kuinka monta kertaa korkeammalle nopeampi kärry nousee (ei yksikköä)\n\n**Periaate:** Kokeessa muutettiin vain alkunopeutta, joten korkeuksien ero johtuu nopeudesta. Suhde kertoo, kuinka nousukorkeus riippuu nopeudesta. Kitkattomassa nousussa kärryn liike-energia muuttuu potentiaalienergiaksi, joten suhde kertoo myös, miten liike-energia riippuu nopeudesta.\n\n**Kaava:** Suhde on $\\dfrac{h_3}{h_1}$. Se on jo ratkaistussa muodossa.\n\n**Muunnokset:** Molemmat korkeudet ovat metreinä, joten yksikkö supistuu. Muunnoksia ei tarvita.\n\n**Sijoitus:** $\\dfrac{h_3}{h_1} = \\dfrac{0{,}459\\,\\text{m}}{0{,}051\\,\\text{m}} \\approx 9{,}0$\n\n**Vastaus:** $9{,}0$ kertaa korkeammalle. Kaksi merkitsevää numeroa, koska pienempi korkeus $0{,}051\\,\\text{m}$ on luettu kahdella merkitsevällä numerolla.\n\n**Järkevyys:** Nopeuksien suhde on $3$, ja sen neliö on $3^2 = 9$. Myös nopeudella $2{,}0\\,\\text{m/s}$ korkeus $0{,}204\\,\\text{m}$ on noin $4$ kertaa $0{,}051\\,\\text{m}$, joten korkeus kasvaa nopeuden neliössä. Saman näyttää taulukon liike-energia: $0{,}50\\,\\text{J}$ ja $4{,}5\\,\\text{J}$, eli yhdeksänkertainen."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: loiva ja jyrkkä ramppi",
+      "intro": "Testaa ennuste 2. Alkutila asettaa $v_0 = 3{,}0\\,\\text{m/s}$, $m = 1{,}0\\,\\text{kg}$ ja kitkattoman rampin ja lukitsee ne. Aja kärry loivaan ramppiin ja kirjaa mittaus, kun kärry on palannut rampin juurelle. Vaihda sitten jyrkkä ramppi, aja ja kirjaa uudelleen.",
+      "initial": {
+        "v0": 3,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "loiva ramppi",
+          "jyrkka": "jyrkkä ramppi"
+        },
+        "kitka": {
+          "ei": "ei kitkaa",
+          "pieni": "pieni kitka"
+        }
+      },
+      "locked": [
+        "v0",
+        "m",
+        "kitka"
+      ],
+      "vary": "rinne",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "vback",
+          "label": "$v_\\text{paluu}$ (m/s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä taulukosta näkyy?",
+        "choices": [
+          {
+            "text": "Kärry nousee kummassakin rampissa korkeudelle $0{,}46\\,\\text{m}$ ja palaa nopeudella $3{,}0\\,\\text{m/s}$.",
+            "correct": true,
+            "feedback": "Oikein. Rampin jyrkkyys ei muuta nousukorkeutta eikä paluunopeutta: painovoiman potentiaalienergia riippuu vain korkeudesta, ei reitistä, ja painovoima palauttaa sen kokonaan liike-energiaksi. Siksi painovoima on konservatiivinen voima."
+          },
+          {
+            "text": "Jyrkässä rampissa kärry nousee matalammalle, mutta palaa samalla nopeudella.",
+            "feedback": "Katso sarakkeen $h_\\text{max}$ lukuja: ne ovat samat, $0{,}46\\,\\text{m}$. Jyrkässä rampissa kärry kulkee lyhyemmän matkan, mutta nousee yhtä korkealle."
+          },
+          {
+            "text": "Jyrkässä rampissa kärry palaa suuremmalla nopeudella kuin lähti.",
+            "feedback": "Paluunopeus on taulukossa kummassakin $3{,}0\\,\\text{m/s}$, sama kuin alkunopeus. Kärry ei saa energiaa lisää mistään, joten se ei voi palata nopeampana kuin lähti."
+          },
+          {
+            "text": "Loivassa rampissa kärry nousee korkeammalle, koska se kulkee pidemmän matkan.",
+            "feedback": "Pidempi matka rampin pintaa pitkin ei tarkoita suurempaa korkeutta. Taulukossa $h_\\text{max}$ on kummassakin $0{,}46\\,\\text{m}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: kitka",
+      "intro": "Alkutila asettaa $v_0 = 3{,}0\\,\\text{m/s}$, $m = 1{,}0\\,\\text{kg}$ ja loivan rampin ja lukitsee ne. Aja ensin ilman kitkaa ja kirjaa mittaus, kun kärry on palannut. Valitse sitten pieni kitka, aja uudelleen ja kirjaa. Seuraa ajon aikana myös harmaata pylvästä.",
+      "initial": {
+        "v0": 3,
+        "m": "1",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "loiva ramppi",
+          "jyrkka": "jyrkkä ramppi"
+        },
+        "kitka": {
+          "ei": "ei kitkaa",
+          "pieni": "pieni kitka"
+        }
+      },
+      "locked": [
+        "v0",
+        "m",
+        "rinne"
+      ],
+      "vary": "kitka",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "vback",
+          "label": "$v_\\text{paluu}$ (m/s)"
+        },
+        {
+          "key": "Emek",
+          "label": "$E_\\text{mek}$ lopussa (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Miksi kärry nousee kitkan kanssa matalammalle ja palaa hitaammin?",
+        "choices": [
+          {
+            "text": "Kitka muuttaa osan mekaanisesta energiasta sisäenergiaksi, joka ei palaa liikkeeksi.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa mekaaninen energia pienenee $4{,}5\\,\\text{J}$:sta $2{,}9\\,\\text{J}$:iin, ja harmaa pylväs lyhenee koko ajon ajan. Kitkaan ei liity potentiaalienergiaa, koska se ei palauta energiaa: kitka ei ole konservatiivinen voima."
+          },
+          {
+            "text": "Kitka varastoi osan liike-energiasta potentiaalienergiaksi, joka jää rampin pintaan.",
+            "feedback": "Jos kitka varastoisi energiaa potentiaalienergiaksi, se palautuisi liikkeeksi ja kärry palaisi nopeudella $3{,}0\\,\\text{m/s}$. Paluunopeus on kuitenkin vain $2{,}4\\,\\text{m/s}$: energia on muuttunut sisäenergiaksi, eli rampin ja kärryn lämpötila on noussut hieman."
+          },
+          {
+            "text": "Kitka pienentää kärryn massaa, joten sen liike-energia pienenee ajon aikana.",
+            "feedback": "Kärryn massa pysyy $1{,}0\\,\\text{kg}$:na. Liike-energia pienenee, koska nopeus pienenee: kitka muuttaa osan mekaanisesta energiasta sisäenergiaksi."
+          },
+          {
+            "text": "Kitka kasvattaa painovoiman potentiaalienergiaa, joten kärry pysähtyy aiemmin.",
+            "feedback": "Potentiaalienergia $m g h$ riippuu vain massasta ja korkeudesta, ei kitkasta. Taulukossa mekaaninen energia lopussa on pienempi kuin alussa, eli energiaa on muuttunut sisäenergiaksi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 4: massa",
+      "intro": "Alkutila asettaa $v_0 = 3{,}0\\,\\text{m/s}$ ja loivan rampin ilman kitkaa ja lukitsee ne. Aja kärry kolmella massalla $0{,}50\\,\\text{kg}$, $1{,}0\\,\\text{kg}$ ja $2{,}0\\,\\text{kg}$ ja kirjaa jokaisen ajon jälkeen. Miten massa vaikuttaa nousukorkeuteen ja liike-energiaan?",
+      "initial": {
+        "v0": 3,
+        "m": "0.5",
+        "rinne": "loiva",
+        "kitka": "ei"
+      },
+      "names": {
+        "v0": "v_0",
+        "m": "m",
+        "rinne": "ramppi",
+        "kitka": "kitka"
+      },
+      "units": {
+        "v0": "m/s",
+        "m": "kg"
+      },
+      "values": {
+        "rinne": {
+          "loiva": "loiva ramppi",
+          "jyrkka": "jyrkkä ramppi"
+        },
+        "kitka": {
+          "ei": "ei kitkaa",
+          "pieni": "pieni kitka"
+        }
+      },
+      "locked": [
+        "v0",
+        "rinne",
+        "kitka"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "hmax",
+          "label": "$h_\\text{max}$ (m)"
+        },
+        {
+          "key": "Ek0",
+          "label": "$E_\\text{k}$ alussa (J)"
+        }
+      ],
+      "min": 3,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös kokeista",
+      "after": [
+        "exp-1",
+        "exp-2",
+        "exp-3"
+      ],
+      "prompt": "Kirjoita johtopäätös kokeista 1–3: miten nousukorkeus ja liike-energia riippuvat nopeudesta, mitä rampin jyrkkyys muutti ja mitä kitka muutti?",
+      "criteria": [
+        "Kerron, että kolminkertaisella nopeudella kärry nousi yhdeksän kertaa korkeammalle, eli nousukorkeus ja liike-energia kasvavat nopeuden neliössä.",
+        "Kerron, että loivassa ja jyrkässä rampissa nousukorkeus ja paluunopeus olivat samat, joten painovoiman potentiaalienergia riippuu vain korkeudesta.",
+        "Kerron, että kitkan kanssa kärry nousi matalammalle ja palasi hitaammin, koska osa mekaanisesta energiasta muuttui sisäenergiaksi.",
+        "Sanon, että luvut ovat simulaation mallin arvoja."
+      ],
+      "model": "Simulaation mallin arvoissa kärry nousi nopeuksilla $1{,}0$, $2{,}0$ ja $3{,}0\\,\\text{m/s}$ korkeuksille $0{,}051\\,\\text{m}$, $0{,}20\\,\\text{m}$ ja $0{,}46\\,\\text{m}$, eli suhteessa $1 : 4 : 9$. Nousukorkeus ja siihen tarvittava energia kasvavat siis nopeuden neliössä, ja samoin kasvaa liike-energia, joka oli $0{,}50\\,\\text{J}$, $2{,}0\\,\\text{J}$ ja $4{,}5\\,\\text{J}$. Loivassa ja jyrkässä rampissa kärry nousi samalle korkeudelle $0{,}46\\,\\text{m}$ ja palasi samalla nopeudella $3{,}0\\,\\text{m/s}$: painovoima palauttaa energian kokonaan, ja sen potentiaalienergia riippuu vain korkeudesta. Kitkan kanssa kärry nousi vain $0{,}38\\,\\text{m}$:iin ja palasi nopeudella $2{,}4\\,\\text{m/s}$, ja mekaaninen energia pieneni $4{,}5\\,\\text{J}$:sta $2{,}9\\,\\text{J}$:iin. Kitka muutti osan siitä sisäenergiaksi, joka ei palannut liikkeeksi."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden tuloksiin. Mitä opit nousukorkeuden ja nopeuden yhteydestä ja rampin jyrkkyyden merkityksestä? Palaa myös alun rullalautailijaan: miksi kaksinkertainen nopeus riittää nelinkertaiseen nousuun?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee $1000\\,\\text{kg}$:n auton liike-energian, kun auton nopeus on $36\\,\\text{km/h}$. Hän kirjoittaa $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot 36^2 = 648\\,000\\,\\text{J}$. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Nopeus pitää ensin muuttaa: $36\\,\\text{km/h} = 10\\,\\text{m/s}$, jolloin $E_\\text{k} = 50\\,\\text{kJ}$.",
+          "correct": true,
+          "feedback": "Oikein. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$, ja $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot (10\\,\\text{m/s})^2 = 50\\,000\\,\\text{J}$. Joule on $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$, joten nopeuden on oltava yksikössä $\\text{m/s}$."
+        },
+        {
+          "text": "Kerroin $\\tfrac{1}{2}$ kuuluu pois, jolloin tulos on $1\\,296\\,000\\,\\text{J}$.",
+          "feedback": "Kerroin $\\tfrac{1}{2}$ kuuluu liike-energian lausekkeeseen: se tulee nousukorkeudesta $h = \\tfrac{v^2}{2g}$. Virhe on yksikössä: nopeus on sijoitettu yksikössä $\\text{km/h}$."
+        },
+        {
+          "text": "Nopeutta ei korota toiseen, jolloin tulos on $18\\,000\\,\\text{J}$.",
+          "feedback": "Liike-energia on verrannollinen nopeuden neliöön, joten neliö kuuluu laskuun. Virhe on se, että nopeutta ei ole muutettu yksikköön $\\text{m/s}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska kaava on oikea ja luvut on sijoitettu.",
+          "feedback": "Kaava on oikea, mutta joulen saa vain SI-yksiköistä. $36\\,\\text{km/h} = 10\\,\\text{m/s}$, joten oikea tulos on $50\\,\\text{kJ}$, ei $648\\,\\text{kJ}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Liikenneturvallisuuskampanjassa verrataan törmäystä putoamiseen. Auto ajaa nopeudella $50\\,\\text{km/h}$. Kuinka korkealla nollatason yläpuolella auton potentiaalienergia olisi yhtä suuri kuin sen liike-energia tällä nopeudella? Vastaa metreinä.",
+      "answer": 9.83186720529568,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Kirjoita yhtälö, jossa potentiaalienergia on yhtä suuri kuin liike-energia. Mitä tapahtuu massalle?",
+        "$m g h = \\tfrac{1}{2}\\,m v^2$, joten massa supistuu ja $h = \\tfrac{v^2}{2g}$. Muuta ensin nopeus yksikköön $\\text{m/s}$.",
+        "$50\\,\\text{km/h} = \\tfrac{50 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 13{,}9\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 127.4,
+          "feedback": "Sijoitit nopeuden yksikössä $\\text{km/h}$. Muuta ensin: $50\\,\\text{km/h} = 50 \\cdot 1000\\,\\text{m} : 3600\\,\\text{s} \\approx 13{,}9\\,\\text{m/s}$."
+        },
+        {
+          "value": 19.66,
+          "feedback": "Kerroin $\\tfrac{1}{2}$ puuttuu. Liike-energia on $\\tfrac{1}{2}\\,m v^2$, joten $h = \\tfrac{v^2}{2g}$."
+        }
+      ],
+      "solution": "**Annettu:** nopeus $v = 50\\,\\text{km/h}$, putoamiskiihtyvyys $g = 9{,}81\\,\\text{m/s}^2$; auton massaa ei anneta\n\n**Kysytty:** korkeus $h$ nollatason yläpuolella metreinä, jolla $E_\\text{p} = E_\\text{k}$\n\n**Periaate:** Liike-energia on $\\tfrac{1}{2}\\,m v^2$ ja potentiaalienergia $m g h$. Merkitään ne yhtä suuriksi. Massa on kummassakin tekijänä, joten se supistuu, eikä sitä tarvita. Korkeus on Maan pinnan lähellä pieni, joten $g$ on vakio.\n\n**Kaava:** $m g h = \\tfrac{1}{2}\\,m v^2$, joten $h = \\dfrac{v^2}{2g}$\n\n**Muunnokset:** $50\\,\\text{km/h} = \\dfrac{50 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 13{,}89\\,\\text{m/s}$\n\n**Sijoitus:** $h = \\dfrac{(13{,}89\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 9{,}83\\,\\text{m}$\n\n**Vastaus:** $9{,}8\\,\\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $50\\,\\text{km/h}$.\n\n**Järkevyys:** Kerrostalon kerros on noin $3\\,\\text{m}$, joten $50\\,\\text{km/h}$:n törmäys vastaa energialtaan putoamista noin kolmannen kerroksen korkeudelta. Pyöristetyillä luvuilla $\\tfrac{14^2}{20} \\approx 9{,}8$, joten tulos täsmää. Korkeus ei riipu massasta, joten se pätee yhtä hyvin pyöräilijään."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Taso 1 käyttää yhtä kaavaa, taso 2 vaatii kaksi vaihetta tai yksikkömuunnoksen ja taso 3 päättelyä. Kirjoita aina näkyviin, mikä on nollataso."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Jousipyssyn jousi jännitetään ja pallo ammutaan. Toisessa tilanteessa lattialla liukuva laatikko pysähtyy kitkan vuoksi. Kumpaan voimaan liittyy potentiaalienergia?",
+      "choices": [
+        {
+          "text": "Jousivoimaan, koska jousi palauttaa siihen siirretyn energian liikkeeksi.",
+          "correct": true,
+          "feedback": "Oikein. Jousivoima on konservatiivinen: jännitetyn jousen energia palaa liike-energiaksi, ja se riippuu vain jousen venymästä. Kitka muuttaa laatikon liike-energian sisäenergiaksi, joka ei palaa liikkeeksi, joten kitkaan ei liity potentiaalienergiaa."
+        },
+        {
+          "text": "Kitkaan, koska pysähtyneen laatikon liike-energia varastoituu lattian pintaan.",
+          "feedback": "Kitka muuttaa liike-energian lattian ja laatikon sisäenergiaksi: pinnat lämpenevät hieman. Tämä energia ei palaa laatikon liikkeeksi, joten se ei ole potentiaalienergiaa. Kitka ei ole konservatiivinen voima."
+        },
+        {
+          "text": "Molempiin, koska kumpikin voima muuttaa kappaleen liike-energiaa toiseksi.",
+          "feedback": "Kumpikin voima muuttaa tässä kappaleen liike-energiaa, mutta potentiaalienergia liittyy vain voimaan, joka palauttaa energian. Jousi palauttaa sen, kitka ei. Siksi vain jousivoimaan liittyy potentiaalienergia."
+        },
+        {
+          "text": "Ei kumpaankaan, koska potentiaalienergia liittyy vain painovoimaan ja korkeuteen.",
+          "feedback": "Painovoiman potentiaalienergia ei ole ainoa potentiaalienergian laji. Jännitetyllä jousella on jousen potentiaalienergiaa, koska jousivoima on konservatiivinen ja palauttaa energian liike-energiaksi."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaajan tulkinta",
+      "figure": "fy4-7/pallo-ek",
+      "prompt": "Kuvaaja esittää pallon liike-energian sen nopeuden funktiona. Mikä on pallon massa? Vastaa kilogrammoina.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Valitse käyrältä piste, joka osuu ruudukon viivojen risteykseen, ja lue sen nopeus ja liike-energia.",
+        "Esimerkiksi nopeudella $4{,}0\\,\\text{m/s}$ liike-energia on $4{,}0\\,\\text{J}$. Ratkaise massa yhtälöstä $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$.",
+        "$m = \\dfrac{2E_\\text{k}}{v^2} = \\dfrac{2 \\cdot 4{,}0\\,\\text{J}}{(4{,}0\\,\\text{m/s})^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.25,
+          "feedback": "Kerroin $2$ puuttuu. Kun $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$ ratkaistaan massan suhteen, saadaan $m = \\tfrac{2E_\\text{k}}{v^2}$."
+        },
+        {
+          "value": 2.0,
+          "feedback": "Nopeus puuttuu toisesta potenssista. Liike-energia on verrannollinen nopeuden neliöön, joten $m = \\tfrac{2E_\\text{k}}{v^2}$."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajasta piste $v = 4{,}0\\,\\text{m/s}$, $E_\\text{k} = 4{,}0\\,\\text{J}$; kuvaaja on origosta alkava paraabeli\n\n**Kysytty:** pallon massa $m$ kilogrammoina\n\n**Periaate:** Liike-energia on $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$. Kuvaajan jokainen piste toteuttaa tämän yhtälön samalla massalla, joten massa saadaan yhdestä hyvin luettavasta pisteestä.\n\n**Kuvaajan lukeminen:** Piste $(4{,}0\\,\\text{m/s};\\, 4{,}0\\,\\text{J})$ on ruudukon viivojen risteyksessä, joten se luetaan tarkasti. Myös pisteet $(2{,}0\\,\\text{m/s};\\, 1{,}0\\,\\text{J})$ ja $(6{,}0\\,\\text{m/s};\\, 9{,}0\\,\\text{J})$ osuvat risteyksiin.\n\n**Kaava:** $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$, joten $m = \\dfrac{2E_\\text{k}}{v^2}$\n\n**Muunnokset:** Energia on jouleina ja nopeus yksikössä $\\text{m/s}$, ja $\\tfrac{\\text{J}}{\\text{m}^2/\\text{s}^2} = \\text{kg}$. Muunnoksia ei tarvita.\n\n**Sijoitus:** $m = \\dfrac{2 \\cdot 4{,}0\\,\\text{J}}{(4{,}0\\,\\text{m/s})^2} = \\dfrac{8{,}0\\,\\text{J}}{16\\,\\text{m}^2/\\text{s}^2} = 0{,}50\\,\\text{kg}$\n\n**Vastaus:** $0{,}50\\,\\text{kg}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa.\n\n**Järkevyys:** Toinen piste antaa saman: $\\tfrac{2 \\cdot 9{,}0\\,\\text{J}}{(6{,}0\\,\\text{m/s})^2} = 0{,}50\\,\\text{kg}$. Puolen kilon pallo on esimerkiksi jalkapallon kokoluokkaa."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä alun ilmiö: miksi kaksi kertaa nopeampi rullalautailija nousee rampissa neljä kertaa korkeammalle? Käytä käsitteitä liike-energia ja potentiaalienergia.",
+      "criteria": [
+        "Sanon, että lautailijan liike-energia muuttuu nousussa potentiaalienergiaksi.",
+        "Perustelen, että liike-energia $\\tfrac{1}{2}\\,m v^2$ on verrannollinen nopeuden neliöön, joten kaksinkertaisella nopeudella sitä on neljä kertaa enemmän.",
+        "Perustelen, että potentiaalienergia $m g h$ on verrannollinen korkeuteen, joten nelinkertainen energia riittää nelinkertaiseen korkeuteen.",
+        "Mainitsen oletuksen, että kitka ja ilmanvastus ovat pieniä."
+      ],
+      "model": "Kun kitka ja ilmanvastus ovat pieniä, lautailijan liike-energia muuttuu rampissa potentiaalienergiaksi, kunnes hän pysähtyy ylimpään kohtaan. Liike-energia $E_\\text{k} = \\tfrac{1}{2}\\,m v^2$ on verrannollinen nopeuden neliöön, joten nopeudella $6{,}0\\,\\text{m/s}$ lautailijalla on $2^2 = 4$ kertaa niin paljon liike-energiaa kuin nopeudella $3{,}0\\,\\text{m/s}$. Potentiaalienergia $E_\\text{p} = m g h$ on verrannollinen korkeuteen, joten nelinkertainen energia nostaa hänet nelinkertaiseen korkeuteen: $0{,}46\\,\\text{m}$:n sijaan noin $1{,}8\\,\\text{m}$:iin. Massa ei vaikuta, koska se on kummassakin energiassa tekijänä."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

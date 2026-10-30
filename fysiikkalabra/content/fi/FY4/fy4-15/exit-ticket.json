@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Vesivoimalan sähköteho on $50\\,\\text{MW}$ ja hyötysuhde $90\\,\\%$. Kuinka suuri teho vedestä otetaan, ja mihin erotus päätyy?",
+    "a": "Otettu teho on $P_\\text{o} = \\tfrac{P_\\text{s}}{\\eta} = \\tfrac{50\\,\\text{MW}}{0{,}90} \\approx 56\\,\\text{MW}$. Erotus, noin $6\\,\\text{MW}$, ei päädy sähköksi: se muuttuu kitkassa putkissa, turbiinissa ja generaattorissa sisäenergiaksi, ja osa jää alaveteen purkautuvan veden liike-energiaksi."
+  },
+  {
+    "q": "Kaksi vesivoimalaa antaa saman sähkötehon samalla hyötysuhteella. Toisen putouskorkeus on kaksi kertaa toisen putouskorkeus. Miten niiden virtaamat eroavat?",
+    "a": "Korkeamman voimalan virtaama on puolet toisen virtaamasta. Teho on verrannollinen tuloon $Qh$, joten kun $h$ kaksinkertaistuu ja teho pysyy samana, $Q$ puolittuu: jokainen kuutiometri antaa kaksi kertaa enemmän energiaa."
+  },
+  {
+    "q": "Miksi tuulivoimalan teho ei enää kasva, kun tuuli voimistuu yli nopeuden, jolla voimala saavuttaa tehokäyrän huipun?",
+    "a": "Voimala on saavuttanut nimellistehonsa, jota generaattori ei voi ylittää. Lapoja käännetään niin, että osa tuulesta pääsee ohi, joten sähköksi muuttuva osuus tuulen tehosta pienenee tuulen voimistuessa ja teho pysyy vakiona."
+  }
+]

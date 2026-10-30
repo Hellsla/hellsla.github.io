@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "contribution": "Concepts of mechanical energy are applied to energy production: from real power plant and power curve data we conclude that the power of a hydropower plant is proportional to the flow rate and the head and the power of a wind turbine to the third power of the wind speed, and the formulas $P = \\eta\\rho Q g h$ and $P = \\tfrac{1}{2}\\eta\\rho A v^3$ are derived from potential and kinetic energy together with efficiency.",
+  "learn": [
+    "explain how hydro and wind power plants convert the potential energy of water and the kinetic energy of wind into electricity.",
+    "calculate the power, efficiency and produced energy of hydro and wind power plants.",
+    "justify why the power of a wind turbine grows with the third power of the wind speed."
+  ],
+  "prior": [
+    "Potential energy is $E_\\text{p} = mgh$ and kinetic energy $E_\\text{k} = \\tfrac{1}{2}mv^2$ (chapter *Kinetic energy, potential energy and mechanical energy*)",
+    "When only gravity does work, potential energy turns into kinetic energy and mechanical energy is conserved (chapter *Conservation of mechanical energy and the work–energy principle*)",
+    "Power tells how fast energy is converted: $P = \\tfrac{\\Delta E}{\\Delta t}$ (chapter *Power*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The Vuoksi river, flowing out of Lake Saimaa, runs first through the Tainionkoski power plant and a few kilometres downstream through the Imatra power plant. The same water turns the turbines of both, but the power of Imatra is $192\\,\\text{MW}$ and that of Tainionkoski $62\\,\\text{MW}$. The power of a wind turbine, on the other hand, varies with the wind: in a weak wind it is small, but when the wind strengthens only a little, the power can grow many times over.",
+      "question": "What do the powers of a hydro and a wind power plant depend on, and why does the wind speed affect the power so strongly?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: kinetic energy",
+      "optional": true,
+      "prompt": "A cyclist's speed increases from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$. How many times as large is the kinetic energy at the end as at the start?",
+      "choices": [
+        {
+          "text": "Four times as large, because kinetic energy depends on the square of the speed.",
+          "correct": true,
+          "feedback": "Correct. In the chapter *Kinetic energy, potential energy and mechanical energy* you learned that $E_\\text{k} = \\tfrac{1}{2}mv^2$. When $v$ doubles, $v^2$ becomes four times as large. In this chapter the same square explains part of the power of a wind turbine."
+        },
+        {
+          "text": "Twice as large, because the speed doubles.",
+          "feedback": "Kinetic energy is not proportional to the speed but to its square: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Doubling the speed gives $2^2 = 4$ times as much kinetic energy."
+        },
+        {
+          "text": "Eight times as large, because the speed is raised to the third power in the formula.",
+          "feedback": "In the formula for kinetic energy the speed is raised to the second power, $E_\\text{k} = \\tfrac{1}{2}mv^2$, so the factor is $2^2 = 4$. The third power appears only in the power of a wind turbine, where the amount of air flowing through each second also comes in."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: wind speed and power",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "The power of a wind turbine is measured at two wind speeds, $5\\,\\text{m/s}$ and $10\\,\\text{m/s}$. Both are lower than the speed at which the turbine reaches its maximum power. How many times as large is the electric power in the stronger wind?",
+      "choices": [
+        {
+          "text": "About twice as large, because the wind speed doubles.",
+          "feedback": "In the power curve the power grows from $144\\,\\text{kW}$ to $1285\\,\\text{kW}$, almost nine times. A doubled wind brings twice as much air through the rotor each second, and in addition each kilogram of air has four times the kinetic energy."
+        },
+        {
+          "text": "About four times as large, because kinetic energy depends on the square of the speed.",
+          "feedback": "The square explains only part of it. In a doubled wind twice as much air also flows through the rotor each second, so the power grows by a factor of $2 \\cdot 4 = 8$. In the power curve the factor is $1285 : 144 \\approx 8.9$."
+        },
+        {
+          "text": "About eight times as large, because both the amount of air and its kinetic energy grow.",
+          "correct": true,
+          "feedback": "Correct. Twice as much air flows through the rotor each second, and each kilogram has four times the kinetic energy: $2 \\cdot 4 = 8$. In the power curve the factor is $1285 : 144 \\approx 8.9$, because the efficiency is slightly better in a stronger wind."
+        },
+        {
+          "text": "Almost the same, because the generator always turns at the same rate.",
+          "feedback": "The rate at which the generator turns does not determine the power. Power is energy per second, and a stronger wind brings much more kinetic energy to the rotor each second. In the power curve the power grows from $144\\,\\text{kW}$ to $1285\\,\\text{kW}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: two power plants, the same water",
+      "justify": true,
+      "layout": "models",
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "The same water of the Vuoksi flows through both the Tainionkoski and the Imatra power plants, but the power of Imatra is about three times as large. Which explanation do you think is correct?",
+      "choices": [
+        {
+          "text": "At Imatra the water falls from higher up, so every cubic metre gives more energy.",
+          "correct": true,
+          "feedback": "Correct. The head at Imatra is $24\\,\\text{m}$ and at Tainionkoski $7.8\\,\\text{m}$, about three times smaller. The potential energy of the water, $mgh$, is proportional to the head, so with the same flow rate the power is three times as large."
+        },
+        {
+          "text": "At Imatra more water flows each second, because the rapids are steeper and the water is faster.",
+          "feedback": "The same water flows through both power plants, so the amount of water flowing each second, the flow rate, is almost the same. The difference comes from the head: $24\\,\\text{m}$ at Imatra, $7.8\\,\\text{m}$ at Tainionkoski."
+        },
+        {
+          "text": "The efficiency of the turbines at Imatra is about three times better than at Tainionkoski.",
+          "feedback": "Efficiency is at most $100\\,\\%$, and for large hydropower plants it is about $90\\,\\%$. A threefold efficiency is impossible. The difference comes from the head: at Imatra the water falls about three times as far."
+        },
+        {
+          "text": "Imatra has more turbines, and each turbine produces extra energy.",
+          "feedback": "A turbine does not produce energy but converts the energy of the water. If the same water is shared among more turbines, each gets less water. The difference comes from the water at Imatra falling about three times as far."
+        }
+      ]
+    },
+    {
+      "id": "tuuli-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Power curve of a wind turbine",
+      "source": "statistics",
+      "source_note": "Power curve given by the manufacturer, Vestas V82, rotor diameter $82\\,\\text{m}$: NREL Turbine Archive (nrel.github.io/turbine-models, file VestasV82_1.65MW_82.csv, folder turbine_models/data/Onshore), read 30 Oct 2026.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "text": "The manufacturer gives the electric power $P$ of a wind turbine at different wind speeds $v$. The table and the graph are for a turbine with a rotor diameter of $82\\,\\text{m}$.\n\n| $v$ (m/s) | $P$ (kW) |\n|---|---|\n| $3$ | $0$ |\n| $4$ | $28$ |\n| $5$ | $144$ |\n| $6$ | $309$ |\n| $7$ | $511$ |\n| $8$ | $758$ |\n| $9$ | $1017$ |\n| $10$ | $1285$ |\n| $11$ | $1504$ |\n| $12$ | $1637$ |\n| $13$ | $1650$ |\n| $16$ | $1650$ |\n| $20$ | $1650$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "How many times as large is the electric power at a wind speed of $10\\,\\text{m/s}$ as at $5\\,\\text{m/s}$?",
+        "answer": 8.9236,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Read the power at each wind speed from the table.",
+          "Divide the larger power by the smaller.",
+          "$1285\\,\\text{kW} : 144\\,\\text{kW}$"
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "This is the ratio of the wind speeds, $10 : 5$. We are asked for the ratio of the powers: read $P$ at each speed from the table."
+          },
+          {
+            "value": 1141,
+            "feedback": "This is the difference of the powers in kilowatts. We are asked how many times as large the power is: divide the powers, $1285\\,\\text{kW} : 144\\,\\text{kW}$."
+          }
+        ],
+        "solution": "**Given:** from the table $P_{5} = 144\\,\\text{kW}$ at $v = 5\\,\\text{m/s}$, and $P_{10} = 1285\\,\\text{kW}$ at $v = 10\\,\\text{m/s}$\n\n**Find:** how many times as large $P_{10}$ is as $P_{5}$, a ratio $x$ without a unit\n\n**Principle:** The factor is obtained by dividing the larger power by the smaller. The powers are of the same turbine, so the difference is due only to the wind speed.\n\n**Formula:** $P_{10} = x P_{5}$, so $x = \\dfrac{P_{10}}{P_{5}}$\n\n**Conversions:** Both powers are in kilowatts, so the unit cancels and no conversions are needed.\n\n**Substitution:** $x = \\dfrac{1285\\,\\text{kW}}{144\\,\\text{kW}} = 8.924$\n\n**Answer:** $8.92$, three significant figures like the power $144\\,\\text{kW}$. The power grows almost nine times when the wind speed doubles.\n\n**Reasonableness:** If the power were proportional to the speed, the factor would be $2$, and if to the square of the speed, $4$. The result is close to $2^3 = 8$, so the power grows roughly with the third power of the wind speed."
+      }
+    },
+    {
+      "id": "vesi-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The two power plants of the Vuoksi",
+      "source": "statistics",
+      "source_note": "Power and head: Fortum, power plants of the Vuoksi watercourse (fortum.com), read 30 Oct 2026. Mean annual flow of the Vuoksi about $600\\,\\text{m}^3\\text{/s}$: Southeast Finland Vitality Centre (Kaakkois-Suomen elinvoimakeskus), press release 29 Apr 2026.",
+      "text": "The water of the Vuoksi flows first through the Tainionkoski and then through the Imatra power plant, so the flow rate is almost the same at both. The mean annual flow of the Vuoksi is about $600\\,\\text{m}^3\\text{/s}$, but the maximum power is reached at the maximum flow of the turbines, about $900\\,\\text{m}^3\\text{/s}$ (calculated with efficiency $\\eta \\approx 0.90$, not measured). The table gives the maximum electric powers $P$ and the heads $h$ of the power plants.\n\n| power plant | $P$ (MW) | $h$ (m) |\n|---|---|---|\n| Tainionkoski | $62$ | $7.8$ |\n| Imatra | $192$ | $24$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "For each power plant, calculate the electric power per metre of head, $P : h$. What can you conclude from the results?",
+        "choices": [
+          {
+            "text": "Both ratios are about $8\\,\\text{MW/m}$, so with the same flow rate the power is proportional to the head.",
+            "correct": true,
+            "feedback": "Correct. $192\\,\\text{MW} : 24\\,\\text{m} = 8.0\\,\\text{MW/m}$ and $62\\,\\text{MW} : 7.8\\,\\text{m} \\approx 7.9\\,\\text{MW/m}$. When the amount of water per second is the same, a threefold drop gives threefold power."
+          },
+          {
+            "text": "The ratio of Imatra is about three times as large, so Imatra makes better use of the water.",
+            "feedback": "Calculate again: $192\\,\\text{MW} : 24\\,\\text{m} = 8.0\\,\\text{MW/m}$ and $62\\,\\text{MW} : 7.8\\,\\text{m} \\approx 7.9\\,\\text{MW/m}$. The ratios are almost the same. The larger power of Imatra comes from the larger head, not from a better efficiency."
+          },
+          {
+            "text": "The ratios are different, so the power does not depend on the head but on the number of turbines.",
+            "feedback": "The ratios are almost the same, $8.0\\,\\text{MW/m}$ and $7.9\\,\\text{MW/m}$. So the power is proportional to the head when the flow rate is the same. The turbines only convert the energy of the water."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "prompt": "Use the data to explain what the power of a hydropower plant and of a wind turbine depend on. Use potential and kinetic energy in your reasoning.",
+      "criteria": [
+        "The answer says that the power of a hydropower plant is proportional to the head, and justifies this with the ratio of the powers and heads of the Vuoksi power plants.",
+        "The answer explains that water falling from higher up has more potential energy per kilogram ($mgh$).",
+        "The answer says that the power of a wind turbine grows almost eightfold when the wind speed doubles, and uses values from the table.",
+        "The answer explains the eightfold growth by twice as much air flowing through each second and each kilogram having four times the kinetic energy."
+      ],
+      "model": "The water of the Vuoksi flows through both Tainionkoski and Imatra, so the flow rate is almost the same. The head of Imatra, $24\\,\\text{m}$, is about three times that of Tainionkoski, $7.8\\,\\text{m}$, and the power of Imatra, $192\\,\\text{MW}$, is about three times that of Tainionkoski, $62\\,\\text{MW}$. So the power is proportional to the head, because the potential energy $mgh$ of each kilogram of water is proportional to the height. In addition, the power grows when more water falls each second. When the wind speed of a wind turbine goes from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$, the power grows from $144\\,\\text{kW}$ to $1285\\,\\text{kW}$, about $8.9$ times. In a doubled wind twice as much air flows through the rotor each second, and each kilogram of air has four times as much kinetic energy $\\tfrac{1}{2}mv^2$, so the power grows about $2 \\cdot 4 = 8$ times."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the data and the theory. Write in your own words why doubling the wind speed does not merely double or quadruple the power.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "etsi-virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "Sara calculates the electric power of a small hydropower plant and the energy produced in a day. She writes: $P = 0.85 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 2.0\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 6.0\\,\\text{m} \\approx 100\\,\\text{kW}$ and $E = Pt = 100\\,\\text{kW} \\cdot 1 = 100\\,\\text{kWh}$. Where is the error in Sara's solution?",
+      "choices": [
+        {
+          "text": "A day is $24\\,\\text{h}$, so the energy is about $2400\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Correct. The power in kilowatts is multiplied by the time in hours to give the energy in kilowatt-hours: $E = 100\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 2400\\,\\text{kWh}$. Sara's power is correct."
+        },
+        {
+          "text": "You have to divide by the efficiency, because the electric power is greater than the power taken in.",
+          "feedback": "The electric power is always smaller than the power taken from the water, so we multiply by the efficiency, as Sara did. The error is in the energy: a day is $24\\,\\text{h}$, not one hour."
+        },
+        {
+          "text": "Density does not belong in the formula, because the flow rate is already in cubic metres per second.",
+          "feedback": "Density is needed because potential energy is calculated from mass: $\\rho Q = 2000\\,\\text{kg}$ of water falls every second. The error is in the energy: a day is $24\\,\\text{h}$, not one hour."
+        },
+        {
+          "text": "Power is already energy, so there is no need to multiply by time at all.",
+          "feedback": "Power tells energy per unit of time. Energy is obtained by multiplying power by time, and a day is $24\\,\\text{h}$: $E \\approx 2400\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "optional": true,
+      "prompt": "A pumped-storage plant stores electricity by lifting water from a lower reservoir to an upper one when there is too much electricity, and produces electricity by letting the water back down. In the planned plant the difference in height between the reservoir surfaces is $1.40\\,\\text{km}$, and the efficiency of the plant when letting water down is $0.850$. What flow rate is needed for an electric power of $75.0\\,\\text{MW}$? Give the answer in cubic metres per second.",
+      "answer": 6.4246,
+      "unit": "m³/s",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the head in this situation, in metres?",
+        "Solve the flow rate $Q$ from the formula for the power of a hydropower plant, $P = \\eta\\rho Q g h$.",
+        "$Q = \\dfrac{P}{\\eta\\rho g h}$, where $P = 75.0 \\cdot 10^{6}\\,\\text{W}$ and $h = 1400\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 6424.6,
+          "feedback": "You used the height difference in kilometres. Convert it to metres: $1.40\\,\\text{km} = 1.40 \\cdot 1000\\,\\text{m} = 1400\\,\\text{m}$."
+        },
+        {
+          "value": 5.461,
+          "feedback": "You forgot the efficiency. The power taken from the water must be greater than the electric power, so more flow is needed: $Q = \\dfrac{P}{\\eta\\rho g h}$."
+        },
+        {
+          "value": 4.642,
+          "feedback": "You multiplied by the efficiency. Since only part of the power of the water becomes electricity, more water is needed than without losses: we divide by the efficiency, $Q = \\dfrac{P}{\\eta\\rho g h}$."
+        }
+      ],
+      "solution": "**Given:** height difference $h = 1.40\\,\\text{km}$, efficiency $\\eta = 0.850$, electric power $P = 75.0\\,\\text{MW}$; density of water $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the flow rate $Q$ in $\\text{m}^3\\text{/s}$\n\n**Principle:** Water flowing down loses potential energy, and the plant converts the fraction $\\eta$ of it into electricity. When producing electricity, a pumped-storage plant works like an ordinary hydropower plant, so we use the formula for the power of a hydropower plant.\n\n**Formula:** $P = \\eta\\rho Q g h$, so $Q = \\dfrac{P}{\\eta\\rho g h}$\n\n**Conversions:** $h = 1.40\\,\\text{km} = 1.40 \\cdot 1000\\,\\text{m} = 1400\\,\\text{m}$ and $P = 75.0\\,\\text{MW} = 75.0 \\cdot 10^{6}\\,\\text{W}$\n\n**Substitution:** The units are SI units, and $\\tfrac{\\text{W}}{\\text{kg/m}^3 \\cdot \\text{m/s}^2 \\cdot \\text{m}} = \\tfrac{\\text{m}^3}{\\text{s}}$, so $Q = \\dfrac{75.0 \\cdot 10^{6}}{0.850 \\cdot 1000 \\cdot 9.81 \\cdot 1400}\\,\\tfrac{\\text{m}^3}{\\text{s}} = 6.4246\\,\\tfrac{\\text{m}^3}{\\text{s}}$\n\n**Answer:** $6.42\\,\\text{m}^3\\text{/s}$, three significant figures like the height difference $1.40\\,\\text{km}$, the efficiency $0.850$ and the power $75.0\\,\\text{MW}$.\n\n**Reasonableness:** At Imatra the same power would need about $75 : 192$ of the maximum flow $900\\,\\text{m}^3\\text{/s}$, that is over $300\\,\\text{m}^3\\text{/s}$. The head here is about $58$ times the $24\\,\\text{m}$ of Imatra, so tens of times less flow is needed."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. First write which energy is converted into electricity, solve the asked quantity from the formula and convert the units before substituting. Level 1 is enough for basic skills; levels 2 and 3 deepen them."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Why can a wind turbine not convert all the kinetic energy of the wind flowing through the rotor into electricity, even if there were no losses at all?",
+      "choices": [
+        {
+          "text": "The air must be able to flow away behind the rotor, so it cannot be stopped completely.",
+          "correct": true,
+          "feedback": "Correct. If the rotor stopped the air, no new air could flow through. The air continues on more slowly, and the kinetic energy it still has is left unused. The theoretical upper limit is about $59\\,\\%$."
+        },
+        {
+          "text": "Air is so light that its kinetic energy cannot be transferred to a heavy rotor.",
+          "feedback": "Air is light, but tonnes of air flow through a large rotor every second, and its kinetic energy is transferred to the blades. Not all of it is captured, because the air must be able to flow away behind the rotor."
+        },
+        {
+          "text": "The kinetic energy of the wind first turns into potential energy, and only part of it returns.",
+          "feedback": "In a wind turbine the air does not rise upward, so the potential energy does not change. The air slows down at the rotor, but it cannot stop completely, because it must get away behind the rotor."
+        },
+        {
+          "text": "The rotor turns in only one direction, so it gets energy from only half of the wind.",
+          "feedback": "The direction of rotation does not split the wind in two: all the air flowing through the rotor pushes on the blades. Not all the kinetic energy is captured, because the air must be able to flow away behind the rotor."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "A small hydropower plant has a head of $8.0\\,\\text{m}$, and $12\\,\\text{m}^3$ of water flows through its turbine every second. The efficiency of the plant is $0.85$. What is the electric power of the plant? Give the answer in kilowatts.",
+      "answer": 800.496,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "Which energy is converted into electricity, and what does the flow rate $12\\,\\text{m}^3\\text{/s}$ tell you?",
+        "Use the formula for the power of a hydropower plant, $P = \\eta\\rho Q g h$.",
+        "$P = 0.85 \\cdot 1000 \\cdot 12 \\cdot 9.81 \\cdot 8.0\\,\\text{W}$; convert to kilowatts at the end."
+      ],
+      "mistakes": [
+        {
+          "value": 941.8,
+          "feedback": "This is the power taken from the water. Only part of it becomes electricity: multiply by the efficiency $0.85$."
+        },
+        {
+          "value": 81.6,
+          "feedback": "You forgot the acceleration due to gravity. The potential energy of the water is $mgh$, so the power is $\\eta\\rho Q g h$."
+        }
+      ],
+      "solution": "**Given:** head $h = 8.0\\,\\text{m}$, flow rate $Q = 12\\,\\text{m}^3\\text{/s}$, efficiency $\\eta = 0.85$; density of water $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the electric power $P$ in $\\text{kW}$\n\n**Principle:** The water falling through the turbine loses potential energy $mgh$, and the mass $\\rho Q$ falls every second. The plant converts the fraction $\\eta$ of this power into electricity, so we use the formula for the power of a hydropower plant.\n\n**Formula:** $P = \\eta\\rho Q g h$\n\n**Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\\,\\text{kW} = 1000\\,\\text{W}$.\n\n**Substitution:** $P = 0.85 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 12\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8.0\\,\\text{m} = 800\\,496\\,\\text{W} \\approx 800\\,\\text{kW}$\n\n**Answer:** $8.0 \\cdot 10^{2}\\,\\text{kW}$ or about $800\\,\\text{kW}$, two significant figures like the head $8.0\\,\\text{m}$, the flow rate $12\\,\\text{m}^3\\text{/s}$ and the efficiency $0.85$.\n\n**Reasonableness:** A cubic metre of water gives about $1000\\,\\text{kg} \\cdot 10\\,\\text{m/s}^2 \\cdot 8\\,\\text{m} = 80\\,\\text{kJ}$ in an $8\\,\\text{m}$ drop, so $12$ cubic metres per second give about $960\\,\\text{kW}$, and $85\\,\\%$ of that is about $800\\,\\text{kW}$. The power is much smaller than the $62\\,\\text{MW}$ of Tainionkoski, because the flow rate is only a fraction of it."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Two similar wind turbines are in different places. At the first place the wind blows steadily at $6\\,\\text{m/s}$, and at the second at $8\\,\\text{m/s}$. Use the kinetic energy of the wind to explain why the second turbine produces more than twice the power, although the wind is only a third stronger.",
+      "criteria": [
+        "The answer says that at the higher wind speed more air flows through the rotor each second, in the ratio $8 : 6$.",
+        "The answer says that each kilogram of air has kinetic energy $\\tfrac{1}{2}mv^2$ greater in the ratio $(8 : 6)^2$.",
+        "The answer combines these into the power $P \\propto v^3$ and calculates the factor $(8 : 6)^3 \\approx 2.4$.",
+        "The answer mentions the condition: the turbines are similar (the same rotor and efficiency), and the wind is lower than the speed at which the turbine reaches its rated power."
+      ],
+      "model": "The power of a wind turbine is a fraction of the kinetic energy of the air flowing through the rotor each second. When the wind is $8\\,\\text{m/s}$ instead of $6\\,\\text{m/s}$, $8 : 6 \\approx 1.33$ times as much air flows through the rotor each second. In addition, each kilogram of air has kinetic energy $\\tfrac{1}{2}mv^2$ that is $(8 : 6)^2 \\approx 1.78$ times as large. So the power grows by a factor of $(8 : 6)^3 \\approx 2.4$. This holds when the turbines are similar, that is the area of the rotor and the efficiency are the same, and the wind is lower than the speed at which the turbine reaches its rated power."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

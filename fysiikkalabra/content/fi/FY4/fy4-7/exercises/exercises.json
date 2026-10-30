@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-7-L1-01",
+      "level": 1,
+      "text": "Henkilöauton massa on $1200\\,\\text{kg}$, ja se ajaa nopeudella $20{,}0\\,\\text{m/s}$. Kuinka suuri on auton liike-energia? Vastaa kilojouleina.",
+      "answer": 240.0,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-02",
+      "level": 1,
+      "text": "Kukkaruukku, jonka massa on $2{,}50\\,\\text{kg}$, on parvekkeella $8{,}00\\,\\text{m}$ maanpinnan yläpuolella. Kuinka suuri on ruukun potentiaalienergia, kun nollataso on maanpinta?",
+      "answer": 196.20000000000002,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-03",
+      "level": 1,
+      "text": "Lokki, jonka massa on $1{,}20\\,\\text{kg}$, lentää nopeudella $10{,}0\\,\\text{m/s}$ korkeudella $20{,}0\\,\\text{m}$ merenpinnan yläpuolella. Kuinka suuri on lokin mekaaninen energia, kun nollataso on merenpinta?",
+      "answer": 295.44,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-04",
+      "level": 1,
+      "text": "Kiipeilijä, jonka massa varusteineen on $72\\,\\text{kg}$, nousee kiipeilyseinällä $12\\,\\text{m}$ ylöspäin. Kuinka paljon hänen potentiaalienergiansa kasvaa? Vastaa kilojouleina.",
+      "answer": 8.47584,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-05",
+      "level": 1,
+      "text": "Ämpäri, jonka massa on $4{,}0\\,\\text{kg}$, roikkuu kaivossa $6{,}5\\,\\text{m}$ maanpinnan alapuolella. Nollataso on maanpinta. Kuinka suuri on ämpärin potentiaalienergia?",
+      "answer": -255.06,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-7-L2-01",
+      "level": 2,
+      "text": "Pakettiauton massa on $1350\\,\\text{kg}$, ja se ajaa moottoritiellä nopeudella $90\\,\\text{km/h}$. Kuinka suuri on auton liike-energia? Vastaa kilojouleina.",
+      "answer": 421.875,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L2-02",
+      "level": 2,
+      "text": "Tennispallon massa on $57\\,\\text{g}$. Syötön jälkeen pallon liike-energia on $82\\,\\text{J}$. Mikä on pallon nopeus?",
+      "answer": 53.639472242520625,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L2-03",
+      "level": 2,
+      "text": "Kirja, jonka massa on $1{,}20\\,\\text{kg}$, on hyllyllä $1{,}90\\,\\text{m}$ lattian yläpuolella. Huoneessa on pöytä, jonka pinta on $0{,}75\\,\\text{m}$ lattian yläpuolella. Kuinka suuri on kirjan potentiaalienergia, kun nollatasoksi valitaan pöydän pinta?",
+      "answer": 13.537799999999999,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L2-04",
+      "level": 2,
+      "text": "Kauko-ohjattava lennokki, jonka massa on $1{,}80\\,\\text{kg}$, lentää $40{,}0\\,\\text{m}$ maanpinnan yläpuolella. Sen mekaaninen energia maanpinnan suhteen on $905\\,\\text{J}$. Mikä on lennokin nopeus?",
+      "answer": 14.857844916257388,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-7-L3-01",
+      "level": 3,
+      "text": "Kuorma-auto, jonka massa on $12{,}0\\,\\text{t}$, ajaa taajamassa nopeudella $40{,}0\\,\\text{km/h}$. Kuinka suurella nopeudella henkilöauton, jonka massa on $1{,}20\\,\\text{t}$, pitäisi ajaa, jotta sen liike-energia olisi yhtä suuri kuin kuorma-auton? Vastaa yksikössä km/h.",
+      "answer": 126.49110640673518,
+      "unit": "km/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L3-02",
+      "level": 3,
+      "text": "Heilurin punnus, jonka massa on $0{,}500\\,\\text{kg}$, roikkuu $1{,}20\\,\\text{m}$:n pituisen langan päässä. Punnus vedetään sivuun niin, että kireä lanka on $40^\\circ$:n kulmassa pystysuoraan nähden. Kuinka suuri on punnuksen potentiaalienergia, kun nollatasoksi valitaan sen alin kohta?",
+      "answer": 1.3770624078016955,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L3-03",
+      "level": 3,
+      "text": "Rullaluistelija, jonka massa on $55{,}0\\,\\text{kg}$, tulee rampin juurelle nopeudella $7{,}00\\,\\text{m/s}$. Hän ei potkaise lisävauhtia, ja hän pysähtyy hetkeksi $2{,}10\\,\\text{m}$:n korkeudella rampin juuren yläpuolella. Kuinka paljon mekaanista energiaa muuttui nousun aikana muuksi energiaksi, kuten sisäenergiaksi?",
+      "answer": 214.4449999999997,
+      "unit": "J",
+      "tolerance": 0.02
+    }
+  ]
+}

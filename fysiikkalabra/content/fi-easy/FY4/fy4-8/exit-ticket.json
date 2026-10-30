@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Laatikko liukuu vaakasuoralla lattialla. Mitkä laatikkoon vaikuttavista voimista tekevät työtä ja mitkä eivät? Perustele.",
+    "a": "Kitka tekee negatiivista työtä, koska se osoittaa liikettä vastaan. Paino ja lattian tukivoima ovat kohtisuorassa liikettä vastaan, joten ne eivät tee työtä."
+  },
+  {
+    "q": "Pulkka liukuu tasaisella lumella ja pysähtyy. Mihin sen liike-energia meni? Säilyikö energia?",
+    "a": "Kitka ja ilmanvastus tekivät negatiivista työtä. Liike-energia muuttui lumen, jalasten ja ilman sisäenergiaksi. Mekaaninen energia pieneni, mutta kokonaisenergia säilyi."
+  }
+]

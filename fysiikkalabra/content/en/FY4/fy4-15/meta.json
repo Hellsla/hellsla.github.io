@@ -1,0 +1,26 @@
+{
+  "id": "fy4-15",
+  "course": "FY4",
+  "title": "Hydro and wind power as energy converters",
+  "goals": [
+    "LOPS FY4: kinetic energy, potential energy and mechanical energy",
+    "Thematic study: hydro and wind power",
+    "Clarification: from the potential energy of water and the kinetic energy of wind to electricity, power and efficiency"
+  ],
+  "prerequisites": [
+    "fy4-8"
+  ],
+  "glossary": [
+    "potentiaalienergia",
+    "liike-energia",
+    "hyötysuhde",
+    "teho",
+    "vesivoima",
+    "tuulivoima",
+    "putouskorkeus",
+    "virtaama"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

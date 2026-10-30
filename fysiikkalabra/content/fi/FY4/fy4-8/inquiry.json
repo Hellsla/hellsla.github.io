@@ -1,0 +1,486 @@
+{
+ "version": 1,
+ "contribution": "Mekaanisen energian säilyminen ja mekaniikan energiaperiaate löydetään vuoristoradan simulaation mittauksista: ilman vastusvoimaa nopeus laakson pohjalla ei riipu massasta eikä radan muodosta, ja vastusvoiman kanssa mekaaninen energia pienenee täsmälleen vastusvoiman työn $-F s$ verran. Kokonaisvoiman työ johdetaan liike-energian muutokseksi, ja paino ja kitka erotetaan konservatiiviseksi ja ei-konservatiiviseksi voimaksi.",
+ "learn": [
+  "selittämään, milloin mekaaninen energia säilyy ja mihin se muuttuu, kun kitka tai ilmanvastus tekee työtä.",
+  "laskemaan nopeuden tai korkeuden mekaanisen energian säilymislain avulla.",
+  "laskemaan muiden voimien kuin painon tekemän työn energiaperiaatteella."
+ ],
+ "prior": [
+  "Mekaaninen energia on liike-energian ja potentiaalienergian summa, $E_\\text{k} = \\tfrac{1}{2} mv^2$ ja $E_\\text{p} = mgh$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)",
+  "Voima tekee työtä, kun kappale liikkuu voiman suuntaan, ja työ siirtää energiaa (luku *Työ ja energia*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Vuoristoradan juna lähtee asemalta, ja ketjuhissi vetää sen hitaasti ensimmäisen mäen huipulle, $40\\,\\text{m}$:n korkeuteen. Sen jälkeen mikään ei enää vedä junaa. Juna syöksyy laaksoon, kiitää seuraavan mäen yli ja sitä seuraavan, ja lopulta se rullaa jarruihin asemalle. Radan piirustuksissa jokainen mäki on matalampi kuin edellinen.",
+   "question": "Mistä juna saa vauhtinsa ilman moottoria, ja miksi yksikään myöhempi mäki ei voi olla yhtä korkea kuin ensimmäinen?"
+  },
+  {
+   "id": "kertaus",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Kertaa: liike-energia",
+   "optional": true,
+   "prompt": "Vuoristoradan vaunun nopeus kasvaa laaksossa kaksinkertaiseksi. Miten sen liike-energia $E_\\text{k} = \\tfrac{1}{2} mv^2$ muuttuu?",
+   "choices": [
+    {
+     "text": "Liike-energia nelinkertaistuu.",
+     "correct": true,
+     "feedback": "Oikein. Liike-energia on verrannollinen nopeuden neliöön, joten kaksinkertainen nopeus antaa $2^2 = 4$ kertaa suuremman liike-energian (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)."
+    },
+    {
+     "text": "Liike-energia kaksinkertaistuu.",
+     "feedback": "Liike-energia ei ole suoraan verrannollinen nopeuteen vaan sen neliöön: $\\tfrac{1}{2} m (2v)^2 = 4 \\cdot \\tfrac{1}{2} mv^2$. Kaksinkertainen nopeus antaa nelinkertaisen liike-energian."
+    },
+    {
+     "text": "Liike-energia ei muutu, koska vaunun massa pysyy samana.",
+     "feedback": "Liike-energia riippuu sekä massasta että nopeudesta. Kun nopeus kaksinkertaistuu, liike-energia nelinkertaistuu, vaikka massa ei muutu."
+    }
+   ]
+  },
+  {
+   "id": "pred-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 1: tyhjä vai täysi vaunu",
+   "justify": true,
+   "reveal": {
+    "after": "exp-1",
+    "min": 2
+   },
+   "prompt": "Vaunu lähtee levosta $10\\,\\text{m}$:n korkeudelta ja rullaa laakson pohjalle. Kitkaa ja ilmanvastusta ei ole. Ensin vaunu on tyhjä ($400\\,\\text{kg}$), sitten täynnä matkustajia ($800\\,\\text{kg}$). Miten vaunun nopeus laakson pohjalla muuttuu, kun massa kaksinkertaistuu?",
+   "choices": [
+    {
+     "text": "Nopeus pysyy samana.",
+     "correct": true,
+     "feedback": "Oikein. Mallin arvoissa nopeus pohjalla on $14{,}0\\,\\text{m/s}$ kaikilla massoilla. Raskaammalla vaunulla on alussa kaksinkertainen potentiaalienergia, ja sen liikuttamiseen tarvitaan kaksinkertainen liike-energia. Massa supistuu pois."
+    },
+    {
+     "text": "Täysi vaunu on nopeampi, koska suurempi paino vetää sitä voimakkaammin.",
+     "feedback": "Paino on kaksinkertainen, mutta niin on myös massa, jonka nopeutta paino muuttaa. Energiana: täyden vaunun potentiaalienergia on kaksinkertainen, mutta saman nopeuden liike-energiakin on kaksinkertainen. Mallin arvoissa kumpikin vaunu kulkee pohjalla $14{,}0\\,\\text{m/s}$."
+    },
+    {
+     "text": "Tyhjä vaunu on nopeampi, koska kevyt kappale on helpompi saada vauhtiin.",
+     "feedback": "Kevyttä vaunua on helpompi kiihdyttää, mutta sitä myös kiihdyttää pienempi paino. Kevyellä vaunulla on alussa vähemmän potentiaalienergiaa, ja se riittää samaan nopeuteen. Mallin arvoissa nopeus on pohjalla $14{,}0\\,\\text{m/s}$ massasta riippumatta."
+    }
+   ]
+  },
+  {
+   "id": "pred-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 2: kuinka paljon energiaa vastus vie",
+   "justify": true,
+   "reveal": {
+    "after": "exp-2",
+    "min": 2
+   },
+   "prompt": "Vaunu lähtee levosta $10\\,\\text{m}$:n korkeudelta, ja sitä vastustaa koko matkan vakiosuuruinen vastusvoima $F_\\text{vast}$. Vaunu ei nouse vastakkaisella rinteellä lähtökorkeudelle. Kuinka paljon vaunun mekaaninen energia on pienentynyt, kun vaunu pysähtyy?",
+   "choices": [
+    {
+     "text": "Vastusvoiman ja koko kuljetun matkan tulon $F_\\text{vast}\\,s$ verran.",
+     "correct": true,
+     "feedback": "Oikein. Mallin arvoissa vastusvoima $200\\,\\text{N}$ ja kuljettu matka $45{,}9\\,\\text{m}$ antavat työn $-9{,}19\\,\\text{kJ}$, ja mekaaninen energia pienenee täsmälleen $9{,}19\\,\\text{kJ}$. Vaunu nousee vain $7{,}66\\,\\text{m}$:n korkeudelle."
+    },
+    {
+     "text": "Vastusvoiman ja lähtökorkeuden tulon $F_\\text{vast}\\,h_1$ verran.",
+     "feedback": "Vastusvoima vaikuttaa jokaisella radan metrillä, ei vain pystysuunnassa. Mallin arvoissa $F_\\text{vast}\\,h_1 = 200\\,\\text{N} \\cdot 10\\,\\text{m} = 2{,}0\\,\\text{kJ}$, mutta mekaaninen energia pienenee $9{,}19\\,\\text{kJ}$, koska vaunu kulkee radalla $45{,}9\\,\\text{m}$."
+    },
+    {
+     "text": "Ei lainkaan, koska energia säilyy aina.",
+     "feedback": "Kokonaisenergia säilyy, mutta mekaaninen energia ei säily, kun vastusvoima tekee työtä. Mallin arvoissa vaunun mekaaninen energia pienenee $39{,}2\\,\\text{kJ}$:sta $30{,}1\\,\\text{kJ}$:iin, ja ero muuttuu pyörien, kiskojen ja ilman sisäenergiaksi."
+    }
+   ]
+  },
+  {
+   "id": "pred-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Ennuste 3: jyrkkä vai kaareva rata",
+   "optional": true,
+   "justify": true,
+   "reveal": {
+    "after": "exp-3",
+    "min": 2
+   },
+   "prompt": "Vaunu lähtee levosta $10\\,\\text{m}$:n korkeudelta kahdella eri radalla: kaarevalla rinteellä ja suoralla $45^\\circ$:n rinteellä. Kitkaa ja ilmanvastusta ei ole. Millä radalla vaunu on laakson pohjalla nopeampi?",
+   "choices": [
+    {
+     "text": "Nopeus on pohjalla sama kummallakin radalla.",
+     "correct": true,
+     "feedback": "Oikein. Mallin arvoissa nopeus pohjalla on $14{,}0\\,\\text{m/s}$ kummallakin radalla. Kun vain paino tekee työtä, nopeus riippuu vain pudotuskorkeudesta, koska painon työ on $mgh$ reitistä riippumatta."
+    },
+    {
+     "text": "Suoralla radalla, koska jyrkkä rinne kiihdyttää enemmän.",
+     "feedback": "Jyrkkä rinne kiihdyttää enemmän mutta lyhyemmän matkan. Painon tekemä työ on $mgh$ reitistä riippumatta, joten liike-energia pohjalla on sama. Mallin arvoissa vaunu kulkee pohjalla $14{,}0\\,\\text{m/s}$ kummallakin radalla."
+    },
+    {
+     "text": "Kaarevalla radalla, koska sen rinne on pidempi ja vaunu kiihtyy pidempään.",
+     "feedback": "Pidempi rinne on myös loivempi, joten kiihtyvyys on pienempi. Painon tekemä työ riippuu vain korkeuserosta, ja mallin arvoissa nopeus pohjalla on $14{,}0\\,\\text{m/s}$ kummallakin radalla."
+    }
+   ]
+  },
+  {
+   "id": "simulaatio",
+   "stage": "tutki",
+   "type": "sim",
+   "text": "Simulaatiossa vuoristoradan vaunu rullaa laakson läpi. Vasemmalla on tilannekuva mittatolppineen, oikealla vaunun energiat palkkeina samassa mittakaavassa.",
+   "howto": "Valitse lähtökorkeus $h_1$, vastusvoima $F_\\text{vast}$, vaunun massa ja radan muoto. Paina *Käynnistä*. Vaunu lähtee levosta ja liikkuu, kunnes se pysähtyy ensimmäisen kerran. Silloin lukemiin tulevat nopeus laakson pohjan keskellä $v_\\text{pohja}$ ja korkeus $h_2$, jolle vaunu nousi. *Alusta* palauttaa vaunun lähtökohtaan. *Nopeus* hidastaa tai nopeuttaa liikettä muuttamatta lukemia.",
+   "model": "Arvot ovat simulaation laskemia mallin arvoja. Vaunu on pistemäinen kappale, joka pysyy radalla. Laakson pohja on $6\\,\\text{m}$ pitkä ja vaakasuora, ja rinteet ovat joko $21\\,\\text{m}$:n säteisiä kaaria tai suoria $45^\\circ$:n rinteitä. Suoran rinteen ja pohjan liitoskohta oletetaan niin loivasti pyöristetyksi, ettei vaunun nopeus muutu siinä. Vastusvoima $F_\\text{vast}$ kuvaa vierimisvastusta ja ilmanvastusta yhdessä: se on vakiosuuruinen ja osoittaa aina liikettä vastaan. Radan tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä.",
+   "calc": "Vaunun liike lasketaan Newtonin toisesta laista radan suunnassa pienin aika-askelin. Energiat lasketaan vaunun tilasta: $E_\\text{p} = mgh$ korkeudesta $h$ laakson pohjasta ja $E_\\text{k} = \\tfrac{1}{2} mv^2$ nopeudesta, kun $g = 9{,}81\\,\\text{m/s}^2$. $E_\\text{mek} = E_\\text{k} + E_\\text{p}$, ja $\\Delta E_\\text{mek}$ on sen muutos lähtöhetkestä. Vastusvoiman työ lasketaan määritelmästä $W_\\text{muut} = -F_\\text{vast}\\,s$, missä $s$ on radalla kuljettu matka. Palkeissa $W_\\text{muut}$ on negatiivinen, joten se piirretään nollatasosta alaspäin."
+  },
+  {
+   "id": "exp-1",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 1: vaunun massa",
+   "intro": "Testaa ensimmäinen ennuste. Alkutila valitsee lähtökorkeuden $10\\,\\text{m}$ ja kaarevan radan ilman vastusvoimaa. Muuta vain vaunun massaa. Paina joka kerta *Käynnistä* ja kirjaa mittaus, kun vaunu on pysähtynyt.",
+   "initial": {
+    "h1": 10,
+    "F": 0,
+    "rata": "kaari",
+    "m": "400"
+   },
+   "names": {
+    "h1": "lähtökorkeus h_1",
+    "F": "vastusvoima F_vast",
+    "m": "massa m",
+    "rata": "rata"
+   },
+   "units": {
+    "h1": "m",
+    "F": "N",
+    "m": "kg"
+   },
+   "values": {
+    "rata": {
+     "kaari": "kaareva"
+    },
+    "m": {
+     "400": "$400\\,\\text{kg}$"
+    }
+   },
+   "locked": [
+    "h1",
+    "F",
+    "rata"
+   ],
+   "vary": "m",
+   "measure": [
+    {
+     "key": "vpohja",
+     "label": "$v_\\text{pohja}$ (m/s)"
+    },
+    {
+     "key": "h2",
+     "label": "$h_2$ (m)"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "exp-2",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 2: vastusvoima",
+   "intro": "Testaa toinen ennuste. Alkutila valitsee lähtökorkeuden $10\\,\\text{m}$, massan $400\\,\\text{kg}$ ja kaarevan radan. Muuta vain vastusvoimaa $F_\\text{vast}$, esimerkiksi arvoihin $0$, $100$ ja $200\\,\\text{N}$. Paina joka kerta *Käynnistä* ja kirjaa mittaus, kun vaunu on pysähtynyt. Laske jokaiselta riviltä tulo $F_\\text{vast}\\,s$ ja vertaa sitä mekaanisen energian muutokseen.",
+   "initial": {
+    "h1": 10,
+    "m": "400",
+    "rata": "kaari",
+    "F": 0
+   },
+   "names": {
+    "h1": "lähtökorkeus h_1",
+    "F": "vastusvoima F_vast",
+    "m": "massa m",
+    "rata": "rata"
+   },
+   "units": {
+    "h1": "m",
+    "F": "N",
+    "m": "kg"
+   },
+   "values": {
+    "rata": {
+     "kaari": "kaareva"
+    },
+    "m": {
+     "400": "$400\\,\\text{kg}$"
+    }
+   },
+   "locked": [
+    "h1",
+    "m",
+    "rata"
+   ],
+   "vary": "F",
+   "measure": [
+    {
+     "key": "s",
+     "label": "$s$ (m)"
+    },
+    {
+     "key": "h2",
+     "label": "$h_2$ (m)"
+    },
+    {
+     "key": "dEm",
+     "label": "$\\Delta E_\\text{mek}$ (J)"
+    }
+   ],
+   "min": 2,
+   "question": {
+    "type": "choice",
+    "prompt": "Vertaa taulukon mekaanisen energian muutosta $\\Delta E_\\text{mek}$ tuloon $F_\\text{vast}\\,s$. Mitä huomaat?",
+    "choices": [
+     {
+      "text": "$\\Delta E_\\text{mek} = -F_\\text{vast}\\,s$: mekaaninen energia pienenee vastusvoiman työn verran.",
+      "correct": true,
+      "feedback": "Oikein. Esimerkiksi mallin arvoilla $200\\,\\text{N} \\cdot 45{,}9\\,\\text{m} = 9{,}19\\,\\text{kJ}$, ja $\\Delta E_\\text{mek} = -9{,}19\\,\\text{kJ}$. Tämä on energiaperiaate: $\\Delta E_\\text{mek} = W_\\text{muut}$."
+     },
+     {
+      "text": "$\\Delta E_\\text{mek}$ on yhtä suuri kuin $-F_\\text{vast}\\,h_1$.",
+      "feedback": "Laske taulukosta: $200\\,\\text{N} \\cdot 10\\,\\text{m}$ on vain $2{,}0\\,\\text{kJ}$, mutta mallin arvoissa energia pienenee $9{,}19\\,\\text{kJ}$. Vastusvoima tekee työtä koko radan matkalla $s$, ei vain korkeuden matkalla."
+     },
+     {
+      "text": "Mekaaninen energia pienenee, mutta muutos ei riipu vastusvoimasta.",
+      "feedback": "Taulukossa muutos kasvaa vastusvoiman mukana: mallin arvoissa $-4{,}74\\,\\text{kJ}$ voimalla $100\\,\\text{N}$ ja $-9{,}19\\,\\text{kJ}$ voimalla $200\\,\\text{N}$. Muutos on joka rivillä $-F_\\text{vast}\\,s$."
+     }
+    ]
+   }
+  },
+  {
+   "id": "exp-3",
+   "stage": "tutki",
+   "type": "experiment",
+   "title": "Koe 3: radan muoto",
+   "optional": true,
+   "intro": "Testaa kolmas ennuste. Alkutila valitsee lähtökorkeuden $10\\,\\text{m}$, massan $400\\,\\text{kg}$ ja vastusvoiman $0\\,\\text{N}$. Muuta vain radan muotoa. Paina *Käynnistä* ja kirjaa mittaus kummallakin radalla.",
+   "initial": {
+    "h1": 10,
+    "m": "400",
+    "F": 0,
+    "rata": "kaari"
+   },
+   "names": {
+    "h1": "lähtökorkeus h_1",
+    "F": "vastusvoima F_vast",
+    "m": "massa m",
+    "rata": "rata"
+   },
+   "units": {
+    "h1": "m",
+    "F": "N",
+    "m": "kg"
+   },
+   "values": {
+    "rata": {
+     "kaari": "kaareva",
+     "suora": "suora"
+    },
+    "m": {
+     "400": "$400\\,\\text{kg}$"
+    }
+   },
+   "locked": [
+    "h1",
+    "m",
+    "F"
+   ],
+   "vary": "rata",
+   "measure": [
+    {
+     "key": "vpohja",
+     "label": "$v_\\text{pohja}$ (m/s)"
+    },
+    {
+     "key": "s",
+     "label": "$s$ (m)"
+    }
+   ],
+   "min": 2
+  },
+  {
+   "id": "johtopaatos",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Johtopäätös",
+   "after": [
+    "exp-1",
+    "exp-2"
+   ],
+   "prompt": "Selitä mittaustesi avulla, milloin vaunun mekaaninen energia säilyy ja kuinka paljon se pienenee, kun vastusvoima vaikuttaa. Selitä sitten, miksi tyhjä ja täysi vaunu ovat laakson pohjalla yhtä nopeita, kun vastusvoimaa ei ole.",
+   "criteria": [
+    "Vastus kertoo, että ilman vastusvoimaa vaunu nousi lähtökorkeudelle eli mekaaninen energia säilyi.",
+    "Vastus kertoo, että vastusvoiman kanssa mekaaninen energia pieneni tulon $F_\\text{vast}\\,s$ verran, ja käyttää omaa mittausriviä.",
+    "Vastus selittää massan merkityksettömyyden sillä, että sekä potentiaalienergia että liike-energia ovat verrannollisia massaan.",
+    "Vastus kertoo, että hävinnyt mekaaninen energia muuttui sisäenergiaksi eikä kadonnut."
+   ],
+   "model": "Kokeessa 1 vastusvoimaa ei ollut. Mallin arvoissa nopeus pohjalla oli $14{,}0\\,\\text{m/s}$ sekä $400\\,\\text{kg}$:n että $800\\,\\text{kg}$:n vaunulla, ja vaunu nousi takaisin $10{,}0\\,\\text{m}$:n korkeuteen: mekaaninen energia säilyi. Massa ei vaikuta, koska yhtälön $mgh = \\tfrac{1}{2} mv^2$ molemmat puolet ovat verrannollisia massaan, joten $v = \\sqrt{2gh}$. Kokeessa 2 vastusvoima $200\\,\\text{N}$ vaikutti $45{,}9\\,\\text{m}$:n matkan, ja mekaaninen energia pieneni $9{,}19\\,\\text{kJ}$, mikä on täsmälleen $200\\,\\text{N} \\cdot 45{,}9\\,\\text{m}$. Vaunu nousi vain $7{,}66\\,\\text{m}$:n korkeuteen. Mekaaninen energia pienenee siis vastusvoiman tekemän työn verran, $\\Delta E_\\text{mek} = -F_\\text{vast}\\,s$. Hävinnyt mekaaninen energia muuttui pyörien, kiskojen ja ilman sisäenergiaksi."
+  },
+  {
+   "id": "theory",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "reflect",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Palaa ennusteisiisi",
+   "optional": true,
+   "prompt": "Vertaa ennusteitasi simulaation lukemiin. Mikä yllätti eniten? Kirjoita omin sanoin, mikä ratkaisee vaunun nopeuden laakson pohjalla ja mikä ratkaisee, kuinka paljon mekaanista energiaa muuttuu sisäenergiaksi.",
+   "predictions": [
+    "pred-1",
+    "pred-2",
+    "pred-3"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "virhe",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe",
+   "optional": true,
+   "prompt": "Laatikko, jonka massa on $5{,}0\\,\\text{kg}$, liukuu levosta alas $1{,}5\\,\\text{m}$ korkeaa luiskaa. Kitka tekee laatikkoon työn $-30\\,\\text{J}$. Opiskelija laskee laatikon nopeuden luiskan alapäässä näin: $E_\\text{k} = mgh + 30\\,\\text{J} = 73{,}6\\,\\text{J} + 30\\,\\text{J} = 103{,}6\\,\\text{J}$, joten $v = \\sqrt{\\tfrac{2E_\\text{k}}{m}} \\approx 6{,}4\\,\\text{m/s}$. Missä on virhe?",
+   "choices": [
+    {
+     "text": "Kitkan työ on negatiivinen, joten se pienentää liike-energiaa: $E_\\text{k} = 73{,}6\\,\\text{J} - 30\\,\\text{J}$.",
+     "correct": true,
+     "feedback": "Oikein. Energiaperiaatteen mukaan $mgh + W_\\text{muut} = E_\\text{k}$, ja $W_\\text{muut} = -30\\,\\text{J}$. Liike-energia on $43{,}6\\,\\text{J}$ ja nopeus noin $4{,}2\\,\\text{m/s}$. Opiskelijan tulos $6{,}4\\,\\text{m/s}$ on suurempi kuin kitkattomassa tapauksessa $5{,}4\\,\\text{m/s}$, mikä on mahdotonta."
+    },
+    {
+     "text": "Potentiaalienergia on laskettava luiskan pituudesta eikä korkeudesta.",
+     "feedback": "Painon työ ja potentiaalienergian muutos riippuvat vain korkeuserosta, $mgh = 73{,}6\\,\\text{J}$. Virhe on kitkan työn etumerkissä: negatiivinen työ pienentää liike-energiaa."
+    },
+    {
+     "text": "Liike-energiasta ei voi laskea nopeutta, kun kitka vaikuttaa.",
+     "feedback": "Liike-energia $\\tfrac{1}{2} mv^2$ kertoo nopeuden aina, myös kitkan kanssa. Kitka vaikuttaa siihen, kuinka paljon liike-energiaa on. Virhe on kitkan työn etumerkissä."
+    }
+   ]
+  },
+  {
+   "id": "siirto",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Sovella uuteen tilanteeseen",
+   "prompt": "Lapsi istuu leikkipuiston keinussa. Keinu vedetään taakse niin, että istuin on $1{,}20\\,\\text{m}$ korkeammalla kuin keinun alimmassa kohdassa, ja päästetään levosta liikkeelle. Ilmanvastus ja ketjujen kiinnityksen kitka jätetään huomiotta. Kuinka suuri on istuimen nopeus keinun alimmassa kohdassa? Vastaa yksikössä $\\text{m/s}$.",
+   "answer": 4.852,
+   "unit": "m/s",
+   "tolerance": 0.02,
+   "hints": [
+    "Mitkä voimat istuimeen ja lapseen vaikuttavat, ja mitkä niistä tekevät työtä? Ketjujen jännitysvoima on joka hetki kohtisuorassa liikettä vastaan.",
+    "Vain paino tekee työtä, joten mekaaninen energia säilyy: $mgh = \\tfrac{1}{2} mv^2$. Valitse nollataso alimpaan kohtaan.",
+    "Massa supistuu pois: $v = \\sqrt{2gh} = \\sqrt{2 \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 1{,}20\\,\\text{m}}$."
+   ],
+   "mistakes": [
+    {
+     "value": 23.544,
+     "feedback": "Laskit $2gh$, joka on nopeuden neliö yksikössä $\\text{m}^2/\\text{s}^2$. Ota vielä neliöjuuri: $v = \\sqrt{2gh}$."
+    },
+    {
+     "value": 3.431,
+     "feedback": "Laskit $\\sqrt{gh}$. Yhtälöstä $mgh = \\tfrac{1}{2} mv^2$ saadaan $v^2 = 2gh$, joten kerroin $2$ jää neliöjuuren alle."
+    },
+    {
+     "value": 11.772,
+     "feedback": "Laskit $gh$. Yhtälöstä $mgh = \\tfrac{1}{2} mv^2$ saadaan $v^2 = 2gh$ ja siitä $v = \\sqrt{2gh}$."
+    }
+   ],
+   "solution": "**Annettu:** korkeusero $h = 1{,}20\\,\\text{m}$, alkunopeus $v_1 = 0$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanvastus ja kitka jätetään huomiotta\n\n**Kysytty:** nopeus $v$ alimmassa kohdassa yksikössä $\\text{m/s}$\n\n**Periaate:** Istuimeen ja lapseen vaikuttavat paino ja ketjujen jännitysvoima. Istuin liikkuu ympyränkaarta, ja ketjujen voima on joka hetki kohtisuorassa liikettä vastaan, joten se ei tee työtä. Vain paino tekee työtä, joten mekaaninen energia säilyy. Nollataso valitaan alimpaan kohtaan.\n\n**Kaava:** $mgh = \\tfrac{1}{2} mv^2$, joten $v = \\sqrt{2gh}$\n\n**Muunnokset:** Korkeus on metreinä, joten muunnoksia ei tarvita. Massaa ei tarvita, koska se supistuu pois.\n\n**Sijoitus:** $v = \\sqrt{2 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}20\\,\\text{m}} = \\sqrt{23{,}544\\,\\text{m}^2/\\text{s}^2} = 4{,}852\\,\\text{m/s}$\n\n**Vastaus:** $4{,}85\\,\\text{m/s}$, kolme merkitsevää numeroa kuten korkeudessa $1{,}20\\,\\text{m}$.\n\n**Järkevyys:** Nopeus on noin $17\\,\\text{km/h}$, mikä sopii reippaaseen keinumiseen. Sama nopeus saavutettaisiin pudottamalla kappale suoraan $1{,}20\\,\\text{m}$:n korkeudelta: keinun kaareva rata ei muuta nopeutta, koska painon työ riippuu vain korkeuserosta."
+  },
+  {
+   "id": "tehtavat",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Harjoittele kolmella tasolla. Valitse ensin alku- ja lopputilanne sekä nollataso. Mieti sitten, tekeekö jokin muu voima kuin paino työtä: jos ei, käytä säilymislakia, muuten energiaperiaatetta. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 syventävät."
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Kolme samanlaista palloa heitetään samalta parvekkeelta yhtä suurella nopeudella: yksi suoraan ylös, yksi vaakasuoraan ja yksi suoraan alas. Ilmanvastus jätetään huomiotta. Minkä pallon nopeus on suurin, kun se osuu maahan?",
+   "choices": [
+    {
+     "text": "Kaikkien pallojen nopeus on maassa yhtä suuri.",
+     "correct": true,
+     "feedback": "Oikein. Kaikilla palloilla on alussa sama liike-energia ja sama potentiaalienergia. Vain paino tekee työtä, joten maassa niillä on sama liike-energia ja siis sama nopeus. Energia ei riipu nopeuden suunnasta."
+    },
+    {
+     "text": "Alas heitetyn pallon nopeus, koska se saa alusta asti vauhtia painon suuntaan.",
+     "feedback": "Alas heitetty pallo on maassa ensimmäisenä, mutta ei nopeimpana. Liike-energia ei riipu nopeuden suunnasta, joten kaikilla palloilla on alussa sama mekaaninen energia ja maassa sama nopeus."
+    },
+    {
+     "text": "Ylös heitetyn pallon nopeus, koska se putoaa korkeammalta.",
+     "feedback": "Ylös heitetty pallo nousee korkeammalle, mutta sen liike-energia muuttuu ensin potentiaalienergiaksi ja takaisin. Parvekkeen kohdalla se kulkee alaspäin samalla nopeudella, jolla se heitettiin. Kaikkien pallojen nopeus on maassa sama."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Vuoristoradan vaunu lähtee levosta mäen huipulta $18{,}0\\,\\text{m}$:n korkeudelta ja ylittää seuraavan mäen huipun, joka on $7{,}0\\,\\text{m}$:n korkeudella. Kitka ja ilmanvastus jätetään huomiotta. Kuinka suuri on vaunun nopeus toisen mäen huipulla? Vastaa yksikössä $\\text{m/s}$.",
+   "answer": 14.69,
+   "unit": "m/s",
+   "tolerance": 0.02,
+   "hints": [
+    "Tekeekö jokin muu voima kuin paino työtä? Jos ei, mekaaninen energia säilyy.",
+    "Valitse nollataso maahan: $mgh_1 = \\tfrac{1}{2} mv^2 + mgh_2$.",
+    "Massa supistuu pois: $v = \\sqrt{2g(h_1 - h_2)}$, ja korkeusero on $11{,}0\\,\\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 18.79,
+     "feedback": "Laskit nopeuden koko korkeudesta $18{,}0\\,\\text{m}$. Toisen mäen huipulla vaunulla on vielä potentiaalienergiaa korkeudella $7{,}0\\,\\text{m}$, joten liike-energiaksi on muuttunut vain korkeuseron $11{,}0\\,\\text{m}$ verran."
+    },
+    {
+     "value": 11.72,
+     "feedback": "Laskit nopeuden toisen mäen korkeudesta $7{,}0\\,\\text{m}$. Liike-energia vastaa pudotusta lähtökorkeudelta toisen mäen korkeudelle, $18{,}0\\,\\text{m} - 7{,}0\\,\\text{m}$."
+    },
+    {
+     "value": 215.82,
+     "feedback": "Tämä on nopeuden neliö $2g(h_1 - h_2)$ yksikössä $\\text{m}^2/\\text{s}^2$. Ota vielä neliöjuuri."
+    }
+   ],
+   "solution": "**Annettu:** lähtökorkeus $h_1 = 18{,}0\\,\\text{m}$, toisen mäen huippu $h_2 = 7{,}0\\,\\text{m}$, alkunopeus $v_1 = 0$, $g = 9{,}81\\,\\text{m/s}^2$; kitka ja ilmanvastus jätetään huomiotta\n\n**Kysytty:** nopeus $v_2$ toisen mäen huipulla yksikössä $\\text{m/s}$\n\n**Periaate:** Vaunuun vaikuttavat paino ja radan tukivoima. Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä, joten vain paino tekee työtä ja mekaaninen energia säilyy. Nollataso valitaan maahan.\n\n**Kaava:** $mgh_1 = \\tfrac{1}{2} mv_2^2 + mgh_2$, joten $v_2 = \\sqrt{2g(h_1 - h_2)}$\n\n**Muunnokset:** Korkeudet ovat metreinä, joten muunnoksia ei tarvita. Massaa ei tarvita, koska se supistuu pois.\n\n**Sijoitus:** $v_2 = \\sqrt{2 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot (18{,}0 - 7{,}0)\\,\\text{m}} = \\sqrt{215{,}82\\,\\text{m}^2/\\text{s}^2} = 14{,}69\\,\\text{m/s}$\n\n**Vastaus:** $14{,}7\\,\\text{m/s}$, kolme merkitsevää numeroa kuten korkeuserossa $11{,}0\\,\\text{m}$.\n\n**Järkevyys:** Nopeus on noin $53\\,\\text{km/h}$. Se on pienempi kuin nopeus $\\sqrt{2g \\cdot 18{,}0\\,\\text{m}} \\approx 18{,}8\\,\\text{m/s}$ maan tasolla, kuten pitää, koska vaunulla on huipulla vielä potentiaalienergiaa."
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Selitä energian avulla, miksi vuoristoradan ensimmäinen mäki on radan korkein ja myöhemmät mäet ovat sitä matalampia. Mihin junan mekaaninen energia matkan aikana menee?",
+   "criteria": [
+    "Vastaus kertoo, että ketjuhissin tekemä työ antaa junalle sen mekaanisen energian ja että sen jälkeen mikään ei lisää sitä.",
+    "Vastaus kertoo, että ilman häviöitä juna pääsisi enintään lähtökorkeudelle, koska mekaaninen energia säilyy, ja että myöhemmän mäen on oltava tätä matalampi, jotta huipulla jää liike-energiaa.",
+    "Vastaus kertoo, että vierimisvastus ja ilmanvastus tekevät negatiivista työtä, joka kasvaa kuljetun matkan mukana, joten mekaaninen energia pienenee koko ajan.",
+    "Vastaus kertoo, että mekaaninen energia muuttuu sisäenergiaksi eikä katoa."
+   ],
+   "model": "Ketjuhissi tekee junaan työtä ja nostaa sen ensimmäisen mäen huipulle. Sen jälkeen junaan vaikuttavat vain paino, radan tukivoima ja vastusvoimat, eikä mikään niistä lisää junan mekaanista energiaa. Jos vastusvoimia ei olisi, mekaaninen energia säilyisi ja juna voisi nousta enintään lähtökorkeudelle, ja silloinkin se pysähtyisi huipulle. Todellisuudessa vierimisvastus ja ilmanvastus tekevät koko ajan negatiivista työtä, joka kasvaa jokaisella kuljetulla metrillä. Junan mekaaninen energia pienenee siis koko matkan ajan. Jokaisen mäen on oltava matalampi kuin korkeus, jolle jäljellä oleva mekaaninen energia riittäisi, jotta junalla on huipulla vielä liike-energiaa. Siksi mäet yleensä madaltuvat radan loppua kohti. Energia ei katoa: se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, ja lopuksi asemalla jarrut muuttavat loputkin liike-energiasta sisäenergiaksi."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit"
+  }
+ ]
+}
