@@ -1,0 +1,15 @@
+[
+  {
+    "q": "The net force acting on an object doubles, and at the same time the mass of the object is halved. By what factor does the acceleration change?",
+    "a": "It becomes four times as great. The acceleration $a = \\dfrac{\\Sigma F}{m}$ doubles because of the force and doubles once more when the mass is halved: $2\\cdot 2 = 4$."
+  },
+  {
+    "q": "An elevator moves upward and slows down as it stops at a floor. Which is greater during the slowing down, the tension in the supporting rope or the weight of the elevator? Justify your answer.",
+    "fbd": "identify",
+    "a": "The weight is greater. The elevator slows down while moving up, so its acceleration and net force point down: $T - G = ma$, where $a < 0$, so $T < G$."
+  },
+  {
+    "q": "What is one newton? Express it using kilograms, metres and seconds.",
+    "a": "One newton is the force that gives a mass of $1\\,\\text{kg}$ an acceleration of $1\\,\\text{m/s}^2$. So $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$."
+  }
+]

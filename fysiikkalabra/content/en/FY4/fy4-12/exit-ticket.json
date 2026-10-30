@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Why must the positions of two bodies be measured from the same origin, in the same direction and with the same clock before the time of the meeting can be solved?",
+    "a": "A meeting means that the positions are equal at the same moment, $x_\\text{A} = x_\\text{B}$. The equation tells something only if both positions are measured in the same coordinate system and at the same moment. If the bodies had different origins or different clocks, equal numbers would not mean the same place at the same moment."
+  },
+  {
+    "q": "The lines of the $(t, x)$ graph of two bodies do not intersect within the graph. What does this tell us?",
+    "a": "The bodies are not at the same place at any moment shown, so they do not meet during this time. The lines may still intersect outside the graph, for example later or before $t = 0$. A solution with $t < 0$ does not belong to the situation."
+  },
+  {
+    "q": "The solutions of the quadratic equation $\\tfrac12\\,a\\,t^2 = x_0 + v\\,t$ are $t = -2.0\\,\\text{s}$ and $t = 8.0\\,\\text{s}$. Which is the time of the meeting, and why?",
+    "a": "The time of the meeting is $t = 8.0\\,\\text{s}$. The motion starts at $t = 0$, so the negative root $-2.0\\,\\text{s}$ would be before the start and does not belong to the situation."
+  }
+]

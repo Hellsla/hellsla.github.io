@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 90585ba239599a9d
+CONTENT-HASH: 15f0bc0469b08592
 ## Blocking
-
 ## Polish
-
 ## Checked
-batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+batch delta review: N label moved 10 units left, no overlap at 360 px, check_layout OK, text unchanged.

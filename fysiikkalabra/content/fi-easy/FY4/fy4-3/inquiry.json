@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "contribution": "Voima tarkoittaa kahden kappaleen vuorovaikutusta. Newtonin ensimmäistä lakia (liike jatkuu ilman voimaa, ja voima muuttaa liikettä) tutkitaan liukuvalla laatikolla eri pinnoilla. Kolmatta lakia (voima ja vastavoima vaikuttavat eri kappaleisiin) tutkitaan törmäävien kärryjen voima-anturin mittauksilla. Tasapainotilanteissa lasketaan tuntematon voima.",
+  "learn": [
+    "selittämään Newtonin ensimmäisellä lailla, miksi liike jatkuu ilman eteenpäin vievää voimaa",
+    "tunnistamaan voiman ja vastavoiman ja perustelemaan, miksi ne eivät kumoa toisiaan",
+    "laskemaan tuntemattoman voiman, kun kappale on levossa tai liikkuu tasaisella nopeudella"
+  ],
+  "prior": [
+    "Nopeus on vektori. Tasaisessa liikkeessä sen suuruus ja suunta pysyvät samoina (luku *Paikka, nopeus ja tasainen liike kuvaajina*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Curlingin heittäjä liukuu kiven kanssa muutaman metrin ja päästää sitten kivestä irti. Kivi jatkaa yksin jäätä pitkin ja pysähtyy vasta kymmenien metrien päässä maalialueella. Harjaajat eivät koske kiveen. Mikään muukaan ei työnnä kiveä irrotuksen jälkeen. Kun kivi osuu toiseen kiveen, kummankin kiven liike muuttuu.",
+      "question": "Miksi kivi jatkaa liikettä, vaikka mikään ei enää työnnä sitä? Mitä törmäyksessä tapahtuu kummallekin kivelle?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: tasainen liike",
+      "optional": true,
+      "prompt": "Kappaleen $(t, x)$-kuvaaja on nouseva suora. Mitä se kertoo kappaleen nopeudesta?",
+      "choices": [
+        {
+          "text": "Nopeus on vakio: kappale kulkee yhtä pitkän matkan joka sekunti.",
+          "correct": true,
+          "feedback": "Oikein. Suoran kulmakerroin on nopeus, ja suoralla se on joka kohdassa sama. Tässä luvussa opit, mitä tasainen liike kertoo kappaleeseen vaikuttavista voimista."
+        },
+        {
+          "text": "Nopeus kasvaa tasaisesti, koska paikka kasvaa koko ajan.",
+          "feedback": "Paikka kasvaa, mutta yhtä paljon joka sekunti. Siksi nopeus pysyy samana. Jos nopeus kasvaisi, $(t, x)$-kuvaaja kaartuisi ylöspäin (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
+        },
+        {
+          "text": "Kappale on levossa, koska kuvaaja on suora eikä kaareva.",
+          "feedback": "Levossa olevan kappaleen paikka ei muutu, joten sen $(t, x)$-kuvaaja on vaakasuora suora. Nouseva suora tarkoittaa liikettä vakionopeudella (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: liike irrotuksen jälkeen",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 4
+      },
+      "fbd": "identify",
+      "prompt": "Käsi työntää laatikkoa ja päästää irti, kun laatikon nopeus on $3{,}0\\,\\text{m/s}$. Laatikko liukuu kuviteltua täysin kitkatonta pintaa pitkin. Ilmanvastusta ei ole. Mitä laatikon nopeudelle tapahtuu irrotuksen jälkeen?",
+      "choices": [
+        {
+          "text": "Nopeus pienenee vähitellen, ja laatikko pysähtyy, kun työnnön voima on kulunut loppuun.",
+          "feedback": "Laatikko ei kanna työnnön voimaa mukanaan. Voima vaikuttaa vain niin kauan kuin käsi koskettaa laatikkoa. Kitkattomalla pinnalla mikään ei hidasta laatikkoa. Mallin arvoissa nopeus on radan päässä $12\\,\\text{m}$:n jälkeen yhä $3{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Nopeus pysyy samana koko matkan.",
+          "correct": true,
+          "feedback": "Oikein. Irrotuksen jälkeen laatikkoon vaikuttavat vain paino ja tukivoima, ja ne kumoavat toisensa. Kun kokonaisvoima on nolla, nopeus ei muutu. Mallin arvoissa laatikko kulkee $12\\,\\text{m}$:n radan $4{,}0\\,\\text{s}$:ssa ja on lopussa yhä nopeudella $3{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Laatikko pysähtyy heti, kun käsi irtoaa, koska mikään ei enää työnnä sitä.",
+          "feedback": "Liike ei tarvitse työntäjää. Jos tarvitsisi, kaikki liukuvat kappaleet pysähtyisivät heti irrotessaan. Mallin arvoissa laatikko liukuu kitkattomalla pinnalla radan päähän asti, ja nopeus pysyy $3{,}0\\,\\text{m/s}$:ssa. Puulattiallakin laatikko liukuu vielä $2{,}25\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kumpi työntää lujemmin?",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "Kevyt kärry A ($0{,}50\\,\\text{kg}$) vierii raskasta kärryä B ($1{,}5\\,\\text{kg}$) kohti ja törmää siihen. Kumpaankin kärryyn on kiinnitetty voima-anturi. Anturi mittaa voiman, jolla toinen kärry vaikuttaa siihen. Miten voimat vertautuvat toisiinsa törmäyksen aikana?",
+      "choices": [
+        {
+          "text": "Raskas kärry B vaikuttaa kevyeen kärryyn A suuremmalla voimalla, koska sen massa on suurempi.",
+          "feedback": "Massa ei tee voimista erisuuria: kärryt vaikuttavat toisiinsa yhtä suurilla voimilla. Kevyt kärry muuttaa liikettään enemmän, mutta syy on sen pienempi massa, ei suurempi voima. Esimerkkiaineistossa anturit näyttävät joka hetki yhtä suurta lukemaa, enimmillään noin $4\\,\\text{N}$."
+        },
+        {
+          "text": "Kevyt kärry A vaikuttaa raskaaseen kärryyn B suuremmalla voimalla, koska se liikkuu ja törmää.",
+          "feedback": "Liikkuva kappale ei ole törmäyksessä vahvempi osapuoli. Kärryt painavat toisiaan samassa kosketuksessa, joten voimat ovat yhtä suuret ja vastakkaissuuntaiset. Esimerkkiaineistossa anturien lukemat ovat joka hetki toistensa peilikuvat."
+        },
+        {
+          "text": "Voimat ovat koko törmäyksen ajan yhtä suuret ja vastakkaissuuntaiset.",
+          "correct": true,
+          "feedback": "Oikein. Voimat kuuluvat samaan vuorovaikutukseen. Siksi Newtonin kolmannen lain mukaan ne ovat joka hetki yhtä suuret ja vastakkaissuuntaiset. Esimerkkiaineistossa molemmat anturit näyttävät enimmillään noin $4\\,\\text{N}$ vastakkaisiin suuntiin."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Käsi työntää laatikon liikkeelle ja päästää irti. Valitse pinta. Seuraa, miten nopeus ja laatikkoon vaikuttavat voimat muuttuvat irrotuksen jälkeen.",
+      "howto": "Valitse *Pinta* ja *Lähtönopeus* $v_0$ ja paina *Käynnistä*. Käsi työntää laatikkoa $0{,}50\\,\\text{m}$:n matkan ja päästää sitten irti. Ylhäällä näkyy tilanne. Alhaalla vasemmalla on nopeuden kuvaaja ja oikealla laatikon voimakuvio. Ajo päättyy, kun laatikko pysähtyy tai saavuttaa $12\\,\\text{m}$:n radan pään. Silloin lukemat $s$ ja $t$ kertovat liukumatkan ja liukuajan irrotuksesta. *Alusta* palauttaa laatikon alkuun. *Nopeus* hidastaa tai nopeuttaa liikettä, mutta lukemat eivät muutu.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Laatikon massa on $10\\,\\text{kg}$. Sen liukukitka on vakio: matolla $40\\,\\text{N}$, puulattialla $20\\,\\text{N}$ ja jäällä $10\\,\\text{N}$. Kitkaton pinta on ajatuskoe, jota todellisuudessa ei ole. Ilmanvastusta ei ole. Kun laatikko on levossa, kitkaa ei vaikuta. Hyvin pieni voima piirretään vähintään lyhyenä nuolena, jotta se näkyy. Nopeuden sininen nuoli on tilannekuvassa eikä voimakuviossa, koska nopeus ei ole voima.",
+      "calc": "Paino on $G = mg = 10\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 98{,}1\\,\\text{N}$. Lattia tukee laatikkoa yhtä suurella voimalla $N$. Työnnön aikana käden voima $F$ on niin suuri, että laatikon nopeus kasvaa tasaisesti nollasta arvoon $v_0$. Esimerkiksi puulattialla ja nopeudella $3{,}0\\,\\text{m/s}$ voima on $110\\,\\text{N}$. Irrotuksen jälkeen vaakasuunnassa on vain kitka, joten $\\Sigma F_x = -F_\\mu$, ja nopeus pienenee tasaisesti. Kitkattomalla pinnalla $\\Sigma F_x = 0$, ja nopeus pysyy samana."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: liukuminen eri pinnoilla",
+      "intro": "Testaa ennuste 1. Alkutilassa lähtönopeus on $v_0 = 3{,}0\\,\\text{m/s}$ ja pinta on matto. Paina *Käynnistä* ja odota, että ajo päättyy. Kirjaa sitten mittaus. Toista puulattialla, jäällä ja kitkattomalla pinnalla. Kirjaa kaikki neljä pintaa, koska ennuste koskee kitkatonta pintaa. Katso joka kerta voimakuviota irrotuksen jälkeen: mitkä voimat jäävät?",
+      "initial": {
+        "pinta": "matto",
+        "v0": 3
+      },
+      "names": {
+        "pinta": "pinta",
+        "v0": "lähtönopeus v₀"
+      },
+      "units": {
+        "v0": "m/s"
+      },
+      "values": {
+        "pinta": {
+          "matto": "matto"
+        }
+      },
+      "locked": [
+        "v0"
+      ],
+      "vary": "pinta",
+      "measure": [
+        {
+          "key": "s",
+          "label": "s (m)"
+        },
+        {
+          "key": "tl",
+          "label": "t (s)"
+        },
+        {
+          "key": "vl",
+          "label": "v_loppu (m/s)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "numeric",
+        "prompt": "Mallin kitkavoimat ovat matolla $40\\,\\text{N}$, puulattialla $20\\,\\text{N}$ ja jäällä $10\\,\\text{N}$. Vertaa taulukkosi liukumatkoja: miten liukumatka muuttuu, kun kitkavoima puolittuu? Kuinka pitkälle laatikko liukuisi samalla lähtönopeudella pinnalla, jonka kitkavoima on vain $5{,}0\\,\\text{N}$? Vastaa metreinä.",
+        "answer": 9.0,
+        "unit": "m",
+        "tolerance": 0.03,
+        "hints": [
+          "Kirjaa liukumatka ainakin kahdella pinnalla, joiden kitkavoimat eroavat kaksinkertaisesti. Voit valita esimerkiksi puulattian ja jään.",
+          "Mallin arvoissa liukumatka on matolla $1{,}125\\,\\text{m}$, puulattialla $2{,}25\\,\\text{m}$ ja jäällä $4{,}5\\,\\text{m}$. Laske jokaiselle pinnalle tulo $F_\\mu\\cdot s$.",
+          "Tulo on joka pinnalla $45\\,\\text{N}\\cdot\\text{m}$. Ratkaise $s$ yhtälöstä $5{,}0\\,\\text{N}\\cdot s = 45\\,\\text{N}\\cdot\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 2.25,
+            "feedback": "Puolitit liukumatkan. Taulukossa liukumatka *kasvaa*, kun kitkavoima pienenee: jäällä ($10\\,\\text{N}$) laatikko liukui kaksi kertaa niin pitkälle kuin puulattialla ($20\\,\\text{N}$)."
+          },
+          {
+            "value": 4.5,
+            "feedback": "Tämä on jään liukumatka. Kitkavoima $5{,}0\\,\\text{N}$ on puolet jään kitkasta, joten liukumatka kaksinkertaistuu vielä kerran."
+          },
+          {
+            "value": 5.625,
+            "feedback": "Jatkoit liukumatkaa yhtä suurin askelin. Taulukossa liukumatka ei kasva yhtä suurin askelin. Se kaksinkertaistuu aina, kun kitkavoima puolittuu: tulo $F_\\mu\\cdot s$ pysyy samana."
+          }
+        ],
+        "solution": "**Annettu:** mallin arvot lähtönopeudella $v_0 = 3{,}0\\,\\text{m/s}$: matolla $F_\\mu = 40\\,\\text{N}$ ja $s = 1{,}125\\,\\text{m}$, puulattialla $20\\,\\text{N}$ ja $2{,}25\\,\\text{m}$, jäällä $10\\,\\text{N}$ ja $4{,}5\\,\\text{m}$; uusi kitkavoima $F_\\mu = 5{,}0\\,\\text{N}$\n\n**Kysytty:** liukumatka $s$ yksikössä $\\text{m}$\n\n**Periaate:** Taulukosta näkyy sääntö: kun kitkavoima puolittuu, liukumatka kaksinkertaistuu. Siis kitkavoiman ja liukumatkan tulo on sama kaikilla pinnoilla. Oletetaan, että sama sääntö pätee myös pienemmällä kitkalla.\n\n**Kaava:** $F_\\mu s = F_{\\mu,1} s_1$, joten $s = \\dfrac{F_{\\mu,1} s_1}{F_\\mu}$, missä $F_{\\mu,1}$ ja $s_1$ ovat yhden taulukon rivin arvot\n\n**Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** Jään rivillä $F_{\\mu,1} s_1 = 10\\,\\text{N}\\cdot 4{,}5\\,\\text{m} = 45\\,\\text{N}\\cdot\\text{m}$, joten $s = 45\\,\\text{N}\\cdot\\text{m} : 5{,}0\\,\\text{N} = 9{,}0\\,\\text{m}$\n\n**Vastaus:** $9{,}0\\,\\text{m}$, kaksi merkitsevää numeroa kuten kitkavoimassa $5{,}0\\,\\text{N}$.\n\n**Järkevyys:** Kitka on puolet jään kitkasta, joten matkan pitää olla kaksi kertaa jään $4{,}5\\,\\text{m}$, ja niin se on. Kun kitka pienenee kohti nollaa, liukumatka kasvaa rajatta. Kitkattomalla pinnalla laatikko ei pysähdy lainkaan, ja juuri sen sanoo Newtonin ensimmäinen laki."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1"
+      ],
+      "prompt": "Selitä mittaustesi ja voimakuvion avulla, miksi laatikko liukuu irrotuksen jälkeen, vaikka käsi ei enää työnnä sitä. Selitä myös, mitä tapahtuisi, jos kitkaa ei olisi lainkaan.",
+      "criteria": [
+        "Vastaus kertoo, että irrotuksen jälkeen laatikkoon ei vaikuta eteenpäin vievää voimaa. Jäljellä ovat paino, tukivoima ja kitka.",
+        "Vastaus kertoo, että laatikko hidastuu kitkan takia ja että pienempi kitka antaa pidemmän liukumatkan.",
+        "Vastaus käyttää mittaustulosta, esimerkiksi liukumatkaa kahdella pinnalla tai kitkattoman pinnan loppunopeutta.",
+        "Vastaus päättelee, että ilman kitkaa nopeus pysyisi samana, koska kokonaisvoima olisi nolla."
+      ],
+      "model": "Työnnön aikana käsi vaikuttaa laatikkoon, mutta voima loppuu, kun käsi irtoaa. Sen jälkeen voimakuviossa ovat vain paino, tukivoima ja kitka taaksepäin. Laatikko jatkaa liikettään, koska sillä on nopeus, ja vain kitka muuttaa sitä. Mallin arvoissa laatikko liukui matolla ($40\\,\\text{N}$) $1{,}125\\,\\text{m}$, puulattialla ($20\\,\\text{N}$) $2{,}25\\,\\text{m}$ ja jäällä ($10\\,\\text{N}$) $4{,}5\\,\\text{m}$. Kun kitka puolittuu, liukumatka kaksinkertaistuu. Kitkattomalla pinnalla kokonaisvoima on nolla, ja nopeus pysyi radan pään asti $3{,}0\\,\\text{m/s}$:ssa. Ilman kitkaa laatikko liukuisi siis samalla nopeudella loputtomiin, kuten Newtonin ensimmäinen laki sanoo."
+    },
+    {
+      "id": "tormays",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kahden kärryn törmäys",
+      "source": "example",
+      "figure": "fy4-3/anturit",
+      "text": "Testaa ennuste 2. Kevyt kärry A ($0{,}50\\,\\text{kg}$) vierii radalla oikealle ja törmää paikallaan olevaan raskaaseen kärryyn B ($1{,}5\\,\\text{kg}$). Kummankin kärryn keulassa on voima-anturi. Anturi mittaa sadasosasekunnin välein voiman, jolla toinen kärry vaikuttaa siihen. Positiivinen lukema tarkoittaa voimaa oikealle. Kuvaajassa ovat kummankin anturin lukemat törmäyksen ajalta.",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä kuvaaja kertoo voimista, joilla kärryt vaikuttavat toisiinsa?",
+        "choices": [
+          {
+            "text": "Voimat ovat joka hetki yhtä suuret ja vastakkaissuuntaiset, vaikka massat ovat erilaiset.",
+            "correct": true,
+            "feedback": "Oikein. Lukemat ovat toistensa peilikuvat: kun A:n anturi näyttää noin $-4\\,\\text{N}$, B:n anturi näyttää noin $+4\\,\\text{N}$. Pienet erot johtuvat mittausten hajonnasta. Voimat alkavat, kasvavat ja loppuvat samaan aikaan, koska ne kuuluvat samaan vuorovaikutukseen."
+          },
+          {
+            "text": "Raskaaseen kärryyn B kohdistuu suurempi voima, koska sen lukemat ovat positiivisia.",
+            "feedback": "Etumerkki kertoo voiman suunnan, ei suuruutta. B:hen kohdistuva voima osoittaa oikealle ja A:han kohdistuva vasemmalle. Kummankin voiman suuruus on enimmillään noin $4\\,\\text{N}$."
+          },
+          {
+            "text": "Voimat ovat yhtä suuret vain huippukohdassa hetkellä $0{,}10\\,\\text{s}$. Muulloin kevyeen kärryyn kohdistuu suurempi voima.",
+            "feedback": "Lukemat ovat yhtä suuret joka mittaushetkellä, eivät vain huipussa. Esimerkiksi hetkellä $0{,}07\\,\\text{s}$ kumpikin on noin $1{,}4\\,\\text{N}$ vastakkaisiin suuntiin. Erot ovat vain mittausten pientä hajontaa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeen ja kuvaajan tuloksiin. Mikä ajatuksistasi piti paikkansa, ja minkä muuttaisit? Palaa myös alun curlingkiveen: miksi se liukuu, ja mitä kummallekin kivelle tapahtuu törmäyksessä?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "fbd": "identify",
+      "prompt": "Opiskelija päättelee: ”Hevonen ei voi saada kärryä liikkeelle, koska kärry vetää hevosta taaksepäin yhtä suurella voimalla kuin hevonen vetää kärryä eteenpäin. Voimat kumoavat toisensa.” Mikä päättelyssä on virhe?",
+      "choices": [
+        {
+          "text": "Voimat vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan. Kärryn liikkeen ratkaisevat kärryyn vaikuttavat voimat.",
+          "correct": true,
+          "feedback": "Oikein. Hevosen veto vaikuttaa kärryyn, ja kärryn veto vaikuttaa hevoseen. Kärry lähtee liikkeelle, kun hevosen veto on suurempi kuin tien vastus kärryyn. Hevonen taas lähtee liikkeelle, kun maa työntää sen kavioita eteenpäin enemmän kuin kärry vetää sitä taaksepäin."
+        },
+        {
+          "text": "Kärry vetää hevosta todellisuudessa heikommin kuin hevonen kärryä, koska muuten mikään ei voisi lähteä liikkeelle.",
+          "feedback": "Newtonin kolmas laki pätee aina, myös kiihtyvässä liikkeessä. Hevosen ja kärryn voimat toisiinsa ovat yhtä suuret. Virhe on siinä, että eri kappaleisiin vaikuttavat voimat lasketaan yhteen."
+        },
+        {
+          "text": "Kärryn voima hevoseen syntyy vasta, kun kärry on jo lähtenyt liikkeelle, joten alussa vaikuttaa vain hevosen veto.",
+          "feedback": "Voima ja vastavoima syntyvät samassa vuorovaikutuksessa samalla hetkellä. Kun hevonen vetää aisoja, aisat vetävät hevosta heti. Virhe on siinä, että eri kappaleisiin vaikuttavat voimat lasketaan yhteen."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Auto vetää peräkärryä suoralla tiellä tasaisella nopeudella. Peräkärryyn vaikuttavat taaksepäin ilmanvastus $420\\,\\text{N}$ ja vierimisvastus $260\\,\\text{N}$. Kuinka suurella voimalla peräkärry vetää auton vetokoukkua? Vastaa newtoneina.",
+      "answer": 680,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Valitse ensin kappaleeksi peräkärry. Mitkä vaakasuorat voimat siihen vaikuttavat? Mitä tasainen nopeus kertoo niiden summasta?",
+        "Peräkärryssä vetokoukun voima eteenpäin on yhtä suuri kuin vastukset yhteensä. Kysytty voima vaikuttaa kuitenkin autoon. Mikä laki yhdistää nämä kaksi voimaa?",
+        "Newtonin kolmannen lain mukaan peräkärry vetää koukkua taaksepäin yhtä suurella voimalla kuin koukku vetää peräkärryä eteenpäin: $420\\,\\text{N} + 260\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 160,
+          "feedback": "Vähensit vastukset toisistaan. Molemmat vastukset osoittavat taaksepäin, joten vetokoukun on kumottava niiden summa."
+        },
+        {
+          "value": 420,
+          "feedback": "Otit mukaan vain ilmanvastuksen. Myös vierimisvastus jarruttaa peräkärryä, joten koukku vetää sitä eteenpäin vastusten summan verran."
+        },
+        {
+          "value": 0,
+          "feedback": "Tasainen nopeus tarkoittaa, että peräkärryyn vaikuttavien voimien *summa* on nolla. Se ei tarkoita, että jokin voima olisi nolla. Koukku vetää peräkärryä eteenpäin vastusten suuruisella voimalla."
+        }
+      ],
+      "solution": "**Annettu:** peräkärryn ilmanvastus $F_\\text{i} = 420\\,\\text{N}$ ja vierimisvastus $F_\\text{r} = 260\\,\\text{N}$ taaksepäin, nopeus on vakio ja tie suora\n\n**Kysytty:** peräkärryn voima auton vetokoukkuun $F_{\\text{PA}}$ yksikössä $\\text{N}$\n\n**Periaate:** Peräkärry liikkuu suoraan tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla. Vetokoukun voima $F_{\\text{AP}}$ eteenpäin on siis yhtä suuri kuin vastukset yhteensä. Newtonin kolmannen lain mukaan peräkärry vetää koukkua taaksepäin yhtä suurella voimalla.\n\n**Voimakuvio:** Valitaan kappaleeksi peräkärry. Se piirretään suorakulmiona. Siihen vaikuttavat vaakasuunnassa kolme voimaa: vetokoukun voima $\\overline{F}_{\\text{AP}}$ eteenpäin sekä ilmanvastus $\\overline{F}_\\text{i}$ ja vierimisvastus $\\overline{F}_\\text{r}$ taaksepäin. Pystysuunnassa ovat vielä paino ja tien tukivoima, jotka kumoavat toisensa. Auton voima koukkuun ei kuulu peräkärryn kuvioon, koska se vaikuttaa autoon. Positiivinen suunta on eteenpäin.\n\n**Kaava:** $\\Sigma F_x = F_{\\text{AP}} - F_\\text{i} - F_\\text{r} = 0$ ja $F_{\\text{PA}} = F_{\\text{AP}}$, joten $F_{\\text{PA}} = F_\\text{i} + F_\\text{r}$\n\n**Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $F_{\\text{PA}} = 420\\,\\text{N} + 260\\,\\text{N} = 680\\,\\text{N}$\n\n**Vastaus:** $680\\,\\text{N}$ taaksepäin, kymmenen newtonin tarkkuudella kuten annetut voimat.\n\n**Järkevyys:** Jos koukku vetäisi peräkärryä heikommin kuin $680\\,\\text{N}$, vastukset hidastaisivat sitä. Jos koukku vetäisi vahvemmin, peräkärry kiihtyisi. Tien voiman auton renkaisiin on kumottava auton oman ilmanvastuksen ja vierimisvastuksen lisäksi tämä $680\\,\\text{N}$, joten peräkärry lisää polttoaineen kulutusta."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Valitse jokaisessa tehtävässä ensin kappale. Mieti, mitkä kappaleet vaikuttavat siihen. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 ovat syventäviä."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "fbd": "identify",
+      "prompt": "Laatikko kulkee vaakasuoralla kuljetinhihnalla tasaisella nopeudella hihnan mukana. Mitkä voimat laatikkoon vaikuttavat? Ilmanvastus jätetään huomiotta.",
+      "choices": [
+        {
+          "text": "Vain paino ja hihnan tukivoima.",
+          "correct": true,
+          "feedback": "Oikein. Laatikon nopeus ei muutu, joten kokonaisvoima on nolla. Vaakasuoraa voimaa ei tarvita, koska laatikko ei pyri liukumaan hihnan suhteen."
+        },
+        {
+          "text": "Paino, hihnan tukivoima ja hihnan kitkavoima eteenpäin, joka pitää laatikon liikkeessä.",
+          "feedback": "Liike ei tarvitse eteenpäin vievää voimaa. Jos hihna vetäisi laatikkoa eteenpäin eikä mikään vetäisi taaksepäin, kokonaisvoima ei olisi nolla ja laatikon nopeus muuttuisi."
+        },
+        {
+          "text": "Paino, hihnan tukivoima ja kitkavoima taaksepäin, koska laatikko liikkuu.",
+          "feedback": "Kitka vastustaa liukumista pintojen välillä. Laatikko liikkuu hihnan mukana eikä liu'u sen suhteen, joten kitkaa ei ole. Jos laatikkoon vaikuttaisi vain taaksepäin osoittava voima, laatikko hidastuisi."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Voima ja vastavoima",
+      "fbd": "identify",
+      "prompt": "Kirja lepää vaakasuoralla pöydällä. Mikä voima on pöydän kirjaan kohdistaman tukivoiman vastavoima?",
+      "choices": [
+        {
+          "text": "Kirjan voima, jolla se painaa pöytää alaspäin.",
+          "correct": true,
+          "feedback": "Oikein. Tukivoima ja sen vastavoima kuuluvat kirjan ja pöydän väliseen kosketukseen. Pöytä työntää kirjaa ylös, ja kirja painaa pöytää alas yhtä suurella voimalla."
+        },
+        {
+          "text": "Kirjan paino eli Maan vetovoima kirjaan.",
+          "feedback": "Paino ja tukivoima vaikuttavat samaan kappaleeseen, kirjaan. Siksi ne eivät voi olla voima ja vastavoima. Ne ovat yhtä suuret ensimmäisen lain takia, koska kirja on levossa. Painon vastavoima on kirjan vetovoima Maahan."
+        },
+        {
+          "text": "Kirjan vetovoima Maahan.",
+          "feedback": "Tämä on painon vastavoima, ja se kuuluu Maan ja kirjan väliseen vuorovaikutukseen. Tukivoima kuuluu kirjan ja pöydän väliseen vuorovaikutukseen, joten sen vastavoima on kirjan voima pöytään."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-3/malli-lamppu",
+      "prompt": "Lamppu roikkuu paikallaan katosta pystysuoran johdon varassa. Piirrä lampun voimakuvio paperille: lamppu suorakulmiona ja jokainen voima omasta vaikutuskohdastaan. Valinnainen jatko: kirjoita sitten kunkin voiman viereen sen vastavoima. Kerro siis, mikä kappale vaikuttaa mihin kappaleeseen ja mihin suuntaan.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain lamppu. Siinä ei ole johtoa, kattoa eikä Maata voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Kaksi voimaa: paino ja johdon jännitysvoima. Muita voimia ei ole."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino osoittaa alas ja jännitysvoima ylös johtoa pitkin."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino alkaa keskipisteestä. Jännitysvoima alkaa kohdasta, jossa johto kiinnittyy lampun yläpintaan. Kummallakin on oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Nuolet ovat yhtä pitkät, koska lamppu on levossa."
+        },
+        "Valinnainen jatko: vastaus nimeää painon vastavoimaksi lampun vetovoiman Maahan ylöspäin ja jännitysvoiman vastavoimaksi lampun voiman johtoon alaspäin.",
+        "Valinnainen jatko: vastaus perustelee, että vastavoimat vaikuttavat Maahan ja johtoon eivätkä lamppuun, joten ne eivät kuulu lampun voimakuvioon."
+      ],
+      "model": "Lamppuun vaikuttavat Maa ja johto. Maan vetovoima eli paino $\\overline{G}$ osoittaa keskipisteestä alas. Johdon jännitysvoima $\\overline{T}$ osoittaa kiinnityskohdasta ylös johtoa pitkin. Lamppu on levossa, joten ensimmäisen lain mukaan voimat kumoavat toisensa ja nuolet ovat yhtä pitkät. Painon vastavoima on lampun yhtä suuri vetovoima Maahan ylöspäin. Jännitysvoiman vastavoima on lampun voima johtoon alaspäin. Kumpikaan vastavoima ei vaikuta lamppuun, joten ne eivät kuulu lampun voimakuvioon. Paino ja jännitysvoima eivät ole voima ja vastavoima, vaikka ne ovat yhtä suuret ja vastakkaissuuntaiset. Ne vaikuttavat samaan kappaleeseen ja kuuluvat eri vuorovaikutuksiin."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "q": "A space probe travels far from stars and planets with its engine switched off. Is a force needed for the probe to keep going?",
+    "fbd": "identify",
+    "a": "No. When no forces act on the probe, by Newton's first law it continues in a straight line at the same velocity. An engine is needed only when the magnitude or the direction of the velocity is to be changed."
+  },
+  {
+    "q": "A mosquito hits the windscreen of a moving car. Which one experiences the larger force in the collision, the mosquito or the car?",
+    "a": "The forces are equally large and opposite in direction, because they belong to the same interaction (Newton's third law). The consequences are different: the motion of the light mosquito changes drastically, but the motion of the heavy car hardly changes at all."
+  }
+]

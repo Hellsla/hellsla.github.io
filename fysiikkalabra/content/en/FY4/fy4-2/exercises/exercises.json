@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy4-2-L1-01",
+      "level": 1,
+      "text": "A car starts from rest at a traffic light and reaches a speed of $25\\,\\text{m/s}$ in $8.0\\,\\text{s}$. The acceleration is uniform. What is the car's acceleration?",
+      "answer": 3.125,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-02",
+      "level": 1,
+      "text": "A cyclist is riding at $6.0\\,\\text{m/s}$ and starts to brake. During the braking the acceleration is $-1.5\\,\\text{m/s}^2$. What is the cyclist's velocity $3.0\\,\\text{s}$ after the braking starts?",
+      "answer": 1.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-03",
+      "level": 1,
+      "text": "A stone is dropped from rest into a well. Air resistance is small. How far does the stone fall in $1.50\\,\\text{s}$?",
+      "answer": 11.03625,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-04",
+      "level": 1,
+      "text": "The graph shows the velocity of a kick scooter as a function of time. What is the scooter's acceleration?",
+      "answer": 1.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tv"
+    },
+    {
+      "id": "fy4-2-L1-05",
+      "level": 1,
+      "text": "A train starts from rest at a station and accelerates uniformly with acceleration $0.40\\,\\text{m/s}^2$. How far does the train travel in the first $30\\,\\text{s}$?",
+      "answer": 180,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-2-L2-01",
+      "level": 2,
+      "text": "A car is driving at $72\\,\\text{km/h}$ and brakes uniformly. It stops in $4.0\\,\\text{s}$. How far does the car travel during the braking?",
+      "answer": 40,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-02",
+      "level": 2,
+      "text": "The graph shows the position of a cart accelerating from rest as a function of time. A tangent has been drawn as a dashed line at the point $P$ of the curve at $4.0\\,\\text{s}$. What is the cart's instantaneous velocity at $4.0\\,\\text{s}$?",
+      "answer": 4.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tangent"
+    },
+    {
+      "id": "fy4-2-L2-03",
+      "level": 2,
+      "text": "A ball is thrown straight up at $15.0\\,\\text{m/s}$. Air resistance is small. How high above the point of release does the ball rise?",
+      "answer": 11.467889908256879,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-04",
+      "level": 2,
+      "text": "On the Moon an astronaut drops a hammer from rest from a height of $1.60\\,\\text{m}$, and the hammer hits the surface $1.41\\,\\text{s}$ later. The Moon has no atmosphere. What is the acceleration of free fall on the Moon according to this measurement?",
+      "answer": 1.6095769830491427,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-2-L3-01",
+      "level": 3,
+      "text": "A ball is thrown straight up from a balcony at $8.00\\,\\text{m/s}$. The point of release is $6.00\\,\\text{m}$ above the ground, and the ball finally lands on the ground next to the balcony. Air resistance is small. How long after the throw does the ball hit the ground?",
+      "answer": 2.1896387439738114,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-02",
+      "level": 3,
+      "text": "A metro train starts from rest at a station and accelerates uniformly to $15.0\\,\\text{m/s}$ in $20.0\\,\\text{s}$. Then it drives at this speed for $60.0\\,\\text{s}$ and finally brakes uniformly to a stop at the next station in $15.0\\,\\text{s}$. How long is the distance between the stations, in metres?",
+      "answer": 1162.5,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-03",
+      "level": 3,
+      "text": "A ball is thrown straight up, and its height $y$ is measured as a function of time by video analysis. The quadratic polynomial fitted to the measured points is $y = -4.86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3.10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1.20\\,\\text{m}$, with the upward direction positive. What is the ball's velocity at $t = 0.500\\,\\text{s}$? Give the answer with its sign.",
+      "answer": -1.7600000000000002,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ]
+}

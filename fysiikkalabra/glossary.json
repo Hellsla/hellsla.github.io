@@ -651,7 +651,9 @@
     "definition": "Nopeuden muutos aikayksikössä. Yksikkö m/s².",
     "lessons": [
       "fy4-4",
-      "fy1-6"
+      "fy1-6",
+      "fy4-2",
+      "fy4-12"
     ],
     "see_also": [
       "nopeus"
@@ -1031,7 +1033,8 @@
     "definition": "Kappaleen paikka x kertoo, missä kappale on valittuun origoon nähden x-akselilla. Paikan etumerkki kertoo, kummalla puolella origoa kappale on; yksikkö on metri (m).",
     "lessons": [
       "fy4-1",
-      "fy1-5"
+      "fy1-5",
+      "fy4-12"
     ],
     "see_also": [
       "siirtymä",
@@ -1104,7 +1107,8 @@
     "definition": "Kiihtyvyys, jolla vapaasti putoava kappale liikkuu, kun ilmanvastusta ei ole. Maan pinnalla sen arvo on g = 9,81 m/s², ja sama luku kertoo, kuinka monta newtonia yhden kilogramman massan paino on.",
     "lessons": [
       "fy3-1",
-      "fy1-6"
+      "fy1-6",
+      "fy4-2"
     ],
     "see_also": [
       "paino",
@@ -1315,7 +1319,8 @@
     "term": "vapaa pudotus",
     "definition": "Putoaminen, jossa kappaleeseen ei vaikuta ilmanvastus. Levosta lähtevän kappaleen nopeus kasvaa joka sekunti saman verran: v = gt, missä g = 9,81 m/s².",
     "lessons": [
-      "fy1-6"
+      "fy1-6",
+      "fy4-2"
     ],
     "see_also": [
       "putoamiskiihtyvyys",
@@ -1327,7 +1332,8 @@
     "term": "voima",
     "definition": "Voima kertoo kahden kappaleen välisen vuorovaikutuksen voimakkuuden. Voiman yksikkö on newton (N), ja sen voi mitata voimamittarilla.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy4-3"
     ],
     "see_also": [
       "vuorovaikutus",
@@ -1354,7 +1360,8 @@
     "term": "vuorovaikutus",
     "definition": "Kahden kappaleen vaikutus toisiinsa, esimerkiksi Maan ja kappaleen välinen vetovoima. Vuorovaikutuksen voimakkuutta mitataan voimalla.",
     "lessons": [
-      "fy3-1"
+      "fy3-1",
+      "fy4-3"
     ],
     "see_also": [
       "voima",
@@ -2034,6 +2041,104 @@
     "see_also": [
       "voimakuvio",
       "voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasaisesti kiihtyvä liike",
+    "definition": "Suoraviivainen liike, jossa kiihtyvyys pysyy vakiona: nopeus muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä. Silloin v = v₀ + at ja x = x₀ + v₀t + ½at².",
+    "lessons": [
+      "fy4-2"
+    ],
+    "see_also": [
+      "kiihtyvyys",
+      "(t,v)-kuvaaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "(t,v)-kuvaaja",
+    "definition": "(t,v)-kuvaajassa vaaka-akselilla on aika t ja pystyakselilla nopeus v. Kuvaajan kulmakerroin on kiihtyvyys, ja kuvaajan ja aika-akselin väliin jäävä pinta-ala on siirtymä. Tasaisesti kiihtyvän liikkeen kuvaaja on suora.",
+    "lessons": [
+      "fy4-2"
+    ],
+    "see_also": [
+      "(t,x)-kuvaaja",
+      "kiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hetkellinen nopeus",
+    "definition": "Nopeus tietyllä hetkellä. Se on (t,x)-kuvaajan tangentin kulmakerroin kyseisessä kohdassa. Tasaisessa liikkeessä hetkellinen nopeus on sama kuin keskinopeus.",
+    "lessons": [
+      "fy4-2"
+    ],
+    "see_also": [
+      "nopeus",
+      "keskinopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kohtaaminen",
+    "definition": "Kahden kappaleen kohtaaminen tarkoittaa, että ne ovat samassa paikassa samalla hetkellä: x_A(t) = x_B(t). Kohtaamisessa vain paikat ovat samat, nopeudet voivat olla erisuuret. (t,x)-kuvaajassa kohtaaminen on viivojen leikkauspiste.",
+    "lessons": [
+      "fy4-12"
+    ],
+    "see_also": [
+      "paikka",
+      "ohitus",
+      "(t,x)-kuvaaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ohitus",
+    "definition": "Ohitus on kohtaaminen, jossa takana kulkeva kappale saavuttaa edellä kulkevan ja menee sen ohi. Ohitushetkellä ohittaja on nopeampi kuin ohitettava.",
+    "lessons": [
+      "fy4-12"
+    ],
+    "see_also": [
+      "kohtaaminen",
+      "paikka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jatkavuuden laki",
+    "definition": "Newtonin ensimmäinen laki: jos kappaleeseen vaikuttavien voimien summa on nolla, kappale pysyy levossa tai liikkuu suoraviivaisesti tasaisella nopeudella. Voimaa tarvitaan liikkeen muuttamiseen, ei sen ylläpitämiseen.",
+    "lessons": [
+      "fy4-3"
+    ],
+    "see_also": [
+      "inertia",
+      "kokonaisvoima",
+      "voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voima ja vastavoima",
+    "definition": "Newtonin kolmas laki: kun kappale A vaikuttaa kappaleeseen B voimalla, B vaikuttaa A:han yhtä suurella mutta vastakkaissuuntaisella voimalla. Voima ja vastavoima kuuluvat samaan vuorovaikutukseen ja vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan.",
+    "lessons": [
+      "fy4-3"
+    ],
+    "see_also": [
+      "vuorovaikutus",
+      "voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "inertia",
+    "definition": "Kappaleen taipumus säilyttää liiketilansa: levossa oleva pysyy levossa ja liikkuva jatkaa samalla nopeudella, ellei kokonaisvoima muuta sen liikettä. Toinen nimi on hitaus.",
+    "lessons": [
+      "fy4-3"
+    ],
+    "see_also": [
+      "jatkavuuden laki",
+      "massa"
     ],
     "locked": false
   }

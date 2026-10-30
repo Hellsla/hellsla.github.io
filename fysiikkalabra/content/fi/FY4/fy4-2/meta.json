@@ -1,0 +1,24 @@
+{
+  "id": "fy4-2",
+  "course": "FY4",
+  "title": "Kiihtyvyys ja tasaisesti kiihtyvä liike",
+  "goals": [
+    "LOPS FY4: tasaisesti kiihtyvä suoraviivainen liike",
+    "Taidot: kuvaajan tangentti; toisen asteen polynomin sovittaminen mittauspisteisiin; toisen asteen suureyhtälöiden ratkaiseminen",
+    "Kokeellisesti: putoamiskiihtyvyyden määrittäminen"
+  ],
+  "prerequisites": [
+    "fy4-1"
+  ],
+  "glossary": [
+    "kiihtyvyys",
+    "tasaisesti kiihtyvä liike",
+    "(t,v)-kuvaaja",
+    "hetkellinen nopeus",
+    "putoamiskiihtyvyys",
+    "vapaa pudotus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

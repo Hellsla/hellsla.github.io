@@ -1,0 +1,106 @@
+{
+  "level1": [
+    {
+      "id": "fy4-12-L1-01",
+      "level": 1,
+      "text": "Two carts move on the same straight track. The position of cart A is $x_\\text{A} = 4.0\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot t$ and the position of cart B is $x_\\text{B} = 24\\,\\text{m} - 3.0\\,\\text{m/s} \\cdot t$. When do the carts meet?",
+      "answer": 4.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-02",
+      "level": 1,
+      "text": "A cyclist rides from the place $0$ at a constant velocity of $8.0\\,\\text{m/s}$ in the positive direction. At the same moment a runner is at the place $60\\,\\text{m}$ and runs in the same direction at a constant velocity of $5.0\\,\\text{m/s}$. When does the cyclist catch up with the runner?",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-03",
+      "level": 1,
+      "text": "A car starts from rest at the origin and accelerates uniformly at $3.0\\,\\text{m/s}^2$. At what position is the car after $4.0\\,\\text{s}$?",
+      "answer": 24,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-04",
+      "level": 1,
+      "text": "The graph shows the positions of two carts as functions of time. Read from the graph when the carts meet.",
+      "figure": "fy4-12/kaksi-karrya",
+      "answer": 5.0,
+      "unit": "s",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy4-12-L1-05",
+      "level": 1,
+      "text": "Runner A starts from the place $0$ and runs at a constant velocity of $3.5\\,\\text{m/s}$ in the positive direction. Runner B is at the same moment at the place $60\\,\\text{m}$ and runs toward A at a constant velocity of $-2.5\\,\\text{m/s}$. At what place do they meet?",
+      "answer": 35,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-12-L2-01",
+      "level": 2,
+      "text": "A bus drives along a straight road at a constant velocity of $72\\,\\text{km/h}$. A car is $150\\,\\text{m}$ behind the bus and drives in the same direction at a constant velocity of $90\\,\\text{km/h}$. After how many seconds does the car catch up with the bus?",
+      "answer": 30,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-02",
+      "level": 2,
+      "text": "Two trains leave at the same time from stations that are $12\\,\\text{km}$ apart. The trains move toward each other on parallel tracks at constant velocities of $90\\,\\text{km/h}$ and $54\\,\\text{km/h}$. After how many minutes do they meet?",
+      "answer": 5.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-03",
+      "level": 2,
+      "text": "Cart A starts from the place $6.0\\,\\text{m}$ and moves at a constant velocity of $3.0\\,\\text{m/s}$ in the positive direction. Cart B starts at the same moment from the place $42\\,\\text{m}$ and moves at a constant velocity of $-1.0\\,\\text{m/s}$. Sketch on paper the $(t,x)$ graph of each in the same coordinate system and use the graphs to justify why the lines intersect and what the intersection tells. Then state when the carts meet.",
+      "answer": 9.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-04",
+      "level": 2,
+      "text": "The graph shows the positions of two carts as functions of time. The carts move uniformly. From the readings of the graph, calculate the velocities of the carts and then the first moment when the distance between the carts is $10\\,\\text{m}$.",
+      "figure": "fy4-12/kaksi-karrya",
+      "answer": 3.75,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-12-L3-01",
+      "level": 3,
+      "text": "The bus stop is the origin, and a bus stands there. A runner is behind the stop at the place $-8.0\\,\\text{m}$ and runs in the positive direction at a constant velocity of $5.0\\,\\text{m/s}$. At $t = 0$ the bus starts moving and accelerates uniformly at $1.0\\,\\text{m/s}^2$ in the same direction. When does the runner first catch up with the bus?",
+      "answer": 2.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-02",
+      "level": 3,
+      "text": "A bus stands at a stop, and a runner is $20\\,\\text{m}$ behind it. At $t = 0$ the bus starts moving in the same direction and accelerates uniformly at $0.50\\,\\text{m/s}^2$. The runner runs in the same direction at a constant velocity of $4.0\\,\\text{m/s}$. Does the runner catch up with the bus? How close to the bus does she get?",
+      "answer": 4.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-03",
+      "level": 3,
+      "text": "A scooter starts from rest with an acceleration of $2.0\\,\\text{m/s}^2$ toward a cyclist who is $180\\,\\text{m}$ away and rides toward the scooter at a constant velocity of $8.0\\,\\text{m/s}$. The scooter and the cyclist use different lanes and meet. When are they at the same point?",
+      "answer": 10,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

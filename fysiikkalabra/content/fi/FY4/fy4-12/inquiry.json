@@ -1,0 +1,557 @@
+{
+  "version": 1,
+  "contribution": "Kahden kappaleen liike samassa koordinaatistossa: **kohtaaminen** on hetki, jolloin $x_\\text{A}(t) = x_\\text{B}(t)$, ja se ratkaistaan paikkafunktioista tai luetaan $(t, x)$-kuvaajien leikkauspisteestä. Kohtaamisessa vain paikat ovat samat, ei nopeudet: ohittaja on ohitushetkellä nopeampi, ja kun takana oleva lähtee hitaampana, etumatka on suurimmillaan nopeuksien ollessa yhtä suuret.",
+  "learn": [
+    "laskemaan kahden kappaleen kohtaamishetken ja kohtaamispaikan paikkafunktioiden avulla.",
+    "lukemaan kohtaamisen $(t, x)$-kuvaajien leikkauspisteestä.",
+    "selittämään, miten kappaleiden nopeudet liittyvät kohtaamiseen."
+  ],
+  "prior": [
+    "Tasaisen liikkeen paikka $x = x_0 + v\\,t$ ja $(t, x)$-kuvaaja (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
+    "Tasaisesti kiihtyvän liikkeen paikka $x = x_0 + v_0 t + \\tfrac12 a t^2$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Liikennevalot vaihtuvat vihreiksi. Pysäytysviivalla seissyt auto lähtee liikkeelle ja kiihtyy tasaisesti. Samalla hetkellä pyöräilijä, joka on $16\\,\\text{m}$ viivan edellä, ajaa tasaisella nopeudella $6{,}0\\,\\text{m/s}$ samaan suuntaan. Auto kiihtyy koko ajan, mutta pyöräilijä on silti pitkään edellä.",
+      "question": "Milloin ja missä auto saavuttaa pyöräilijän, ja kumpi on silloin nopeampi?"
+    },
+    {
+      "id": "pr-paikka",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: kiihtyvän kappaleen paikka",
+      "prompt": "Auto lähtee levosta ja kiihtyy tasaisesti kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Mikä on auton siirtymä lähtöpaikasta $5{,}0\\,\\text{s}$ kuluttua?",
+      "choices": [
+        {
+          "text": "$25\\,\\text{m}$",
+          "feedback": "Oikein. Alkunopeus on nolla, joten $x = \\tfrac12\\,a\\,t^2 = \\tfrac12 \\cdot 2{,}0\\,\\text{m/s}^2 \\cdot (5{,}0\\,\\text{s})^2 = 25\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "$50\\,\\text{m}$",
+          "feedback": "Tässä puolikas puuttuu: $a\\,t^2 = 50\\,\\text{m}$. Nopeus kasvaa nollasta, joten keskinopeus on vain puolet loppunopeudesta ja siirtymäkin on puolet siitä, minkä loppunopeus antaisi."
+        },
+        {
+          "text": "$10\\,\\text{m}$",
+          "feedback": "Tulo $a\\,t = 10\\,\\text{m/s}$ on auton nopeus hetkellä $5{,}0\\,\\text{s}$, ei siirtymä. Siirtymän yksikkö on metri eikä metri sekunnissa."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kohtaaminen vastakkain",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kappale A lähtee paikasta $10\\,\\text{m}$ ja kulkee tasaisesti nopeudella $4{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Kappale B lähtee samalla hetkellä paikasta $70\\,\\text{m}$ ja kulkee tasaisesti nopeudella $2{,}0\\,\\text{m/s}$ vastakkaiseen suuntaan. Missä kappaleet kohtaavat?",
+      "choices": [
+        {
+          "text": "Alkupaikkojen puolivälissä, paikassa $40\\,\\text{m}$, koska kumpikin on liikkeessä yhtä kauan.",
+          "feedback": "Yhtä kauan liikkuminen ei tuo kohtaamista keskelle: nopeampi kappale ehtii samassa ajassa pidemmälle. Mallin arvoissa kappaleet kohtaavat paikassa $50\\,\\text{m}$, ja A on silloin kulkenut $40\\,\\text{m}$ mutta B vain $20\\,\\text{m}$."
+        },
+        {
+          "text": "Lähempänä B:n lähtöpaikkaa kuin A:n, koska A kulkee nopeammin ja ehtii samassa ajassa pidemmälle.",
+          "feedback": "Mallin arvot tukevat tätä: kappaleet kohtaavat hetkellä $10\\,\\text{s}$ paikassa $50\\,\\text{m}$. A on silloin kulkenut $4{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 40\\,\\text{m}$ ja B $2{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 20\\,\\text{m}$. Samassa ajassa kuljettu matka on suoraan verrannollinen nopeuteen.",
+          "correct": true
+        },
+        {
+          "text": "Lähempänä A:n lähtöpaikkaa kuin B:n, koska hitaampi B ehtii vähemmän ja A kohtaa sen jo alussa.",
+          "feedback": "Hitaampi B ehtii kulkea vähemmän, joten kohtaamispaikka jää lähemmäs B:n lähtöpaikkaa. A on nopeampi ja kulkee kohtaamiseen mennessä pidemmän matkan, $40\\,\\text{m}$ eikä $20\\,\\text{m}$."
+        },
+        {
+          "text": "Ne eivät kohtaa, koska niiden nopeudet ovat erisuuret.",
+          "feedback": "Erisuuret nopeudet eivät estä kohtaamista. Kappaleet tulevat toisiaan kohti, joten välimatka pienenee koko ajan ja nollautuu: mallin arvoissa hetkellä $10\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: nopeudet ohitushetkellä",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Auto lähtee levosta kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Pyöräilijä on $16\\,\\text{m}$ auton edellä ja ajaa tasaisella nopeudella $6{,}0\\,\\text{m/s}$. Auto saavuttaa pyöräilijän ja ohittaa hänet. Miten kappaleiden nopeudet ovat keskenään ohitushetkellä?",
+      "choices": [
+        {
+          "text": "Auton nopeus on pienempi kuin pyöräilijän, koska auto lähti levosta.",
+          "feedback": "Jos auto olisi yhä hitaampi, pyöräilijän etumatka kasvaisi eikä auto saavuttaisi häntä. Mallin arvoissa ohitus tapahtuu hetkellä $8{,}0\\,\\text{s}$, jolloin auton nopeus on $16\\,\\text{m/s}$ ja pyöräilijän $6{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Nopeudet ovat yhtä suuret, koska kappaleet ovat samassa paikassa.",
+          "feedback": "Paikka ja nopeus ovat eri suureita. Samassa paikassa oleminen ei tee nopeuksista samoja: mallin arvoissa auto kulkee ohitushetkellä nopeudella $16\\,\\text{m/s}$ ja pyöräilijä nopeudella $6{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Auton nopeus on suurempi kuin pyöräilijän.",
+          "feedback": "Mallin arvot tukevat tätä: hetkellä $8{,}0\\,\\text{s}$ kappaleet ovat samassa paikassa $64\\,\\text{m}$, auton nopeus on $2{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m/s}$ ja pyöräilijän $6{,}0\\,\\text{m/s}$. Auton pitää olla nopeampi, jotta se pääsee edellä olevan ohi.",
+          "correct": true
+        },
+        {
+          "text": "Nopeuksia ei voi verrata, ennen kuin tiedetään, missä ohitus tapahtuu.",
+          "feedback": "Nopeudet voi verrata heti, kun tunnetaan hetki: se on se hetki, jolloin paikat ovat samat. Paikka ei vaikuta siihen, kumpi kappale on nopeampi. Mallin arvoissa ohitushetkellä auto on nopeampi."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: pyöräilijän etumatka",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "Samassa tilanteessa pyöräilijä on aluksi $16\\,\\text{m}$ auton edellä. Mitä pyöräilijän etumatkalle tapahtuu ennen ohitusta?",
+      "choices": [
+        {
+          "text": "Etumatka pienenee koko ajan, koska auto kiihtyy eikä pyöräilijä kiihdytä lainkaan.",
+          "feedback": "Auto kiihtyy, mutta se lähtee levosta ja on aluksi pyöräilijää hitaampi. Silloin pyöräilijä kasvattaa etumatkaa: mallin arvoissa etumatka on $25\\,\\text{m}$ hetkellä $3{,}0\\,\\text{s}$, ja vasta sen jälkeen se pienenee."
+        },
+        {
+          "text": "Etumatka kasvaa ensin ja pienenee vasta sitten; suurimmillaan se on, kun nopeudet ovat yhtä suuret.",
+          "feedback": "Mallin arvot tukevat tätä: hetkellä $3{,}0\\,\\text{s}$ kappaleiden nopeudet ovat molemmat $6{,}0\\,\\text{m/s}$ ja etumatka on suurimmillaan, $25\\,\\text{m}$. Sen jälkeen auto on nopeampi ja pienentää etumatkaa.",
+          "correct": true
+        },
+        {
+          "text": "Etumatka on suurimmillaan heti alussa, koska auto lähtee levosta ja on silloin kauimpana pyöräilijästä.",
+          "feedback": "Alussa etumatka on $16\\,\\text{m}$, mutta auto on hitaampi ja etumatka vielä kasvaa. Mallin arvoissa se on suurimmillaan vasta hetkellä $3{,}0\\,\\text{s}$, jolloin nopeudet ovat yhtä suuret."
+        },
+        {
+          "text": "Etumatka pysyy koko ajan $16\\,\\text{m}$, koska pyöräilijän nopeus on vakio eikä hän hidasta.",
+          "feedback": "Etumatkaan vaikuttavat molempien liikkeet. Vaikka pyöräilijän nopeus on vakio, auton nopeus muuttuu, ja siksi niiden välimatka muuttuu koko ajan."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Auto A ja pyöräilijä B liikkuvat samalla tiellä. Heidän paikkansa näkyvät yhdellä akselilla ja samassa $(t, x)$-kuvaajassa.",
+      "howto": "Paina *Käynnistä* tai vedä *Hetki $t$* -liukusäädintä ja valitse *Tapaus*. Sininen nuoli näyttää nopeuden $\\overline{v}$ ja oranssi kiihtyvyyden $\\overline{a}$, ja nuolen pituus kertoo suuruuden. Kuvaajan viiva piirtyy niille hetkille, joissa olet käynyt, ja musta rengas ilmestyy kohtaamiseen, kun olet käynyt kohtaamishetkessä. Tapauksessa 5 kappale $\\text{A}$ on bussi ja kappale $\\text{B}$ juoksija.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja, eivät mittauksia. Kappaleet liikkuvat suoraa tietä pitkin vakiokiihtyvyydellä ($a = 0$ tasaisessa liikkeessä), niitä käsitellään pisteinä, ja ne kulkevat toistensa läpi. Kitkaa ja ilmanvastusta ei huomioida, ja kiihtyvyys saa arvonsa heti lähdössä.",
+      "calc": "Kummankin kappaleen paikka lasketaan kaavalla $x = x_0 + v_0 t + \\tfrac12 a t^2$ ja nopeus kaavalla $v = v_0 + a t$. Kappaleet kohtaavat hetkellä, jolloin $x_\\text{A} = x_\\text{B}$. Lukema $x_\\text{B} - x_\\text{A}$ on B:n etumatka: se on positiivinen, kun B on edellä, ja nolla kohtaamishetkellä."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kohtaaminen vastakkain",
+      "intro": "Testaa ennuste 1. Alkutila valitsee tapauksen 1, jossa kappaleet liikkuvat vastakkain. Kirjaa lukemat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 5{,}0\\,\\text{s}$ ja $t = 10\\,\\text{s}$, ja etsi hetki, jolloin kappaleet ovat samassa paikassa.",
+      "initial": {
+        "tapaus": "1",
+        "t": 0
+      },
+      "names": {
+        "t": "hetki t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Missä paikassa kappaleet kohtaavat? Etsi taulukosta hetki, jolloin $x_\\text{A} = x_\\text{B}$, ja lue paikka. Vastaa metreinä.",
+        "answer": 50,
+        "unit": "m",
+        "tolerance": 0.02,
+        "hints": [
+          "Kohtaamishetkellä kappaleet ovat samassa paikassa. Minkä hetken rivillä sarake $x_\\text{B} - x_\\text{A}$ on nolla?",
+          "Etumatka $x_\\text{B} - x_\\text{A}$ pienenee joka sekunti saman verran, kunnes se on nolla. Kuvaajassa viivat leikkaavat samassa kohdassa.",
+          "Etumatka on aluksi $60\\,\\text{m}$ ja pienenee $6{,}0\\,\\text{m}$ sekunnissa, joten se on nolla hetkellä $10\\,\\text{s}$. Lue paikka tämän hetken rivillä."
+        ],
+        "mistakes": [
+          {
+            "value": 40,
+            "feedback": "Tämä on alkupaikkojen puoliväli. Kappaleet liikkuvat eri nopeuksilla, joten ne eivät kohtaa keskellä: A kulkee kaksi kertaa niin pitkälle kuin B."
+          },
+          {
+            "value": 10,
+            "feedback": "Tämä on kohtaamishetki sekunteina. Kysyttiin paikkaa, joten lue paikkasarake samalta riviltä."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta hetkellä $t = 10\\,\\text{s}$ kappaleiden paikat $x_\\text{A} = 50\\,\\text{m}$ ja $x_\\text{B} = 50\\,\\text{m}$; etumatka $x_\\text{B} - x_\\text{A} = 0$\n\n**Kysytty:** kohtaamispaikka $x$ yksikössä $\\text{m}$\n\n**Periaate:** Kappaleet kohtaavat, kun ne ovat samassa paikassa samalla hetkellä eli $x_\\text{A} = x_\\text{B}$. Taulukossa se on rivi, jolla etumatka on nolla, ja kohtaamispaikka luetaan samalta riviltä.\n\n**Kaava:** $x_\\text{A} = x_\\text{B}$, eli $10 + 4{,}0\\,t = 70 - 2{,}0\\,t$. Ajaksi tulee $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4{,}0\\,\\text{m/s} + 2{,}0\\,\\text{m/s}}$, ja paikaksi $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{60\\,\\text{m}}{6{,}0\\,\\text{m/s}} = 10\\,\\text{s}$ ja $x = 10\\,\\text{m} + 4{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Vastaus:** $50\\,\\text{m}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** B:n paikka on $70\\,\\text{m} - 2{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, sama kuin A:n. Kohtaamispaikka on alkupaikkojen $10\\,\\text{m}$ ja $70\\,\\text{m}$ välissä. A on kulkenut $40\\,\\text{m}$ ja B $20\\,\\text{m}$, kaksi kertaa lyhyemmän matkan, koska B on kaksi kertaa hitaampi."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: auto lähtee levosta",
+      "intro": "Testaa ennusteet 2 ja 3. Alkutila valitsee tapauksen 3: auto lähtee levosta ja pyöräilijä on $16\\,\\text{m}$ edellä. Kirjaa lukemat ainakin kolmella eri hetkellä, esimerkiksi $t = 0$, $t = 3{,}0\\,\\text{s}$, $t = 8{,}0\\,\\text{s}$ ja $t = 12\\,\\text{s}$. Etsi hetki, jolloin kappaleet ovat samassa paikassa, ja katso, mitä etumatkalle tapahtuu.",
+      "initial": {
+        "tapaus": "3",
+        "t": 0
+      },
+      "names": {
+        "t": "hetki t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "vA",
+          "label": "v_A (m/s)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Mikä on auton nopeus ohitushetkellä? Etsi taulukosta hetki, jolloin $x_\\text{A} = x_\\text{B}$, ja lue auton nopeus sillä hetkellä. Vastaa yksikössä m/s.",
+        "answer": 16,
+        "unit": "m/s",
+        "tolerance": 0.02,
+        "hints": [
+          "Ohitushetkellä kappaleet ovat samassa paikassa. Minkä rivin sarake $x_\\text{B} - x_\\text{A}$ on nolla?",
+          "Auton nopeus on sarakkeessa $v_\\text{A}$. Lue se samalta riviltä kuin missä paikat ovat yhtä suuret.",
+          "Etsi rivi, jolla $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$. Jos sellaista riviä ei ole taulukossasi, kirjaa lukema hetkellä $t = 8{,}0\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6.0,
+            "feedback": "Tämä on pyöräilijän nopeus. Kysyttiin auton nopeutta, joten lue sarake $v_\\text{A}$."
+          },
+          {
+            "value": 64,
+            "feedback": "Tämä on ohituspaikka metreinä. Kysyttiin auton nopeutta, joka on sarakkeessa $v_\\text{A}$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta hetkellä $t = 8{,}0\\,\\text{s}$: $x_\\text{A} = x_\\text{B} = 64\\,\\text{m}$ ja $v_\\text{A} = 16\\,\\text{m/s}$; auton kiihtyvyys $a = 2{,}0\\,\\text{m/s}^2$ ja alkunopeus nolla\n\n**Kysytty:** auton nopeus $v_\\text{A}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Ohitushetki on hetki, jolloin paikat ovat samat, eli rivi, jolla $x_\\text{B} - x_\\text{A} = 0$. Auton nopeus luetaan samalta riviltä. Auton kiihtyvyys on vakio, joten nopeus kasvaa tasaisesti.\n\n**Kaava:** $v = v_0 + a\\,t$, ja kun $v_0 = 0$, $v_\\text{A} = a\\,t$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä ja $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v_\\text{A} = 2{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 16\\,\\text{m/s}$\n\n**Vastaus:** $16\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa; sama luku on taulukon riviltä.\n\n**Järkevyys:** Auton nopeus $16\\,\\text{m/s}$ on suurempi kuin pyöräilijän (tapauksen asetuksista) $6{,}0\\,\\text{m/s}$, kuten ohituksessa pitääkin. Se on myös yli kaksi kertaa pyöräilijän nopeus: auton on ensin kuitenkin ehdittävä tasoittaa etumatka, jonka pyöräilijä sai, kun auto oli hitaampi."
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "optional": true,
+      "title": "Koe 3: juoksija ja bussi",
+      "intro": "Tapauksessa 5 bussi lähtee levosta ja juoksija on $5{,}0\\,\\text{m}$ sen takana nopeudella $4{,}0\\,\\text{m/s}$. Kirjaa lukemat esimerkiksi hetkillä $t = 0$, $2{,}0\\,\\text{s}$, $6{,}0\\,\\text{s}$ ja $7{,}0\\,\\text{s}$ ja katso, miten etumatka $x_\\text{B} - x_\\text{A}$ ja kohtaamisten määrä muuttuvat.",
+      "initial": {
+        "tapaus": "5",
+        "t": 0
+      },
+      "names": {
+        "t": "hetki t",
+        "tapaus": "tapaus"
+      },
+      "units": {
+        "t": "s"
+      },
+      "locked": [
+        "tapaus"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "xA",
+          "label": "x_A (m)"
+        },
+        {
+          "key": "xB",
+          "label": "x_B (m)"
+        },
+        {
+          "key": "gap",
+          "label": "x_B − x_A (m)"
+        },
+        {
+          "key": "meetings",
+          "label": "kohtaamisia"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "Kuinka monta kertaa bussi $\\text{A}$ ja juoksija $\\text{B}$ ovat samassa paikassa ajan $0 \\ldots 12\\,\\text{s}$ aikana?",
+        "choices": [
+          {
+            "text": "Ei kertaakaan, koska juoksija on alussa bussin takana ja bussi kiihtyy koko ajan.",
+            "feedback": "Etumatka $x_\\text{B} - x_\\text{A}$ muuttaa merkkiä taulukossa. Merkin vaihtuminen tarkoittaa, että paikat ovat jossain vaiheessa samat."
+          },
+          {
+            "text": "Kerran: juoksija ohittaa bussin ja pysyy sen jälkeen edellä.",
+            "feedback": "Juoksija ohittaa bussin, mutta ei jää edelle pysyvästi. Bussin nopeus kasvaa koko ajan, ja myöhemmin se ohittaa juoksijan. Etumatka vaihtaa merkkiä kahdesti."
+          },
+          {
+            "text": "Kaksi kertaa: ensin juoksija saavuttaa bussin ja myöhemmin bussi ohittaa juoksijan.",
+            "feedback": "Oikein. Etumatka vaihtaa merkkiä kahdesti, ja kuvaajalla on kaksi leikkauspistettä. Toisen asteen yhtälöllä on kaksi positiivista juurta, $1{,}55\\,\\text{s}$ ja $6{,}45\\,\\text{s}$.",
+            "correct": true
+          },
+          {
+            "text": "Joka sekunti, koska kappaleet pysyvät koko ajan lähellä toisiaan ja kulkevat samaan suuntaan.",
+            "feedback": "Lähellä oleminen ei ole samassa paikassa olemista. Paikat ovat samat vain niillä hetkillä, kun etumatka on täsmälleen nolla."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ei-kohtaa",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Entä jos kappaleet eivät kohtaa?",
+      "source": "example",
+      "source_note": "Keksitty tilanne, ei mittaus.",
+      "figure": "fy4-12/ei-kohtaa",
+      "text": "Auto $\\text{A}$ ajaa tasaisella nopeudella $3{,}0\\,\\text{m/s}$ origosta. Pyöräilijä $\\text{B}$ on hetkellä $t = 0$ paikassa $20\\,\\text{m}$ ja ajaa samaan suuntaan nopeudella $5{,}0\\,\\text{m/s}$. Kohtaamisehto $x_\\text{A} = x_\\text{B}$ antaa yhtälön $3{,}0\\,t = 20 + 5{,}0\\,t$, jonka ratkaisu on $t = -10\\,\\text{s}$. Voit tarkistaa tilanteen simulaation tapauksesta 4.",
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä ratkaisu $t = -10\\,\\text{s}$ kertoo?",
+        "choices": [
+          {
+            "text": "Kappaleet olisivat olleet samassa paikassa $10\\,\\text{s}$ ennen lähtöä; lähdön jälkeen ne eivät kohtaa.",
+            "feedback": "Oikein. Suorat leikkaisivat, jos niitä jatkettaisiin taaksepäin ajassa. Hetkestä $t = 0$ alkaen pyöräilijä on edellä ja nopeampi, joten etumatka vain kasvaa.",
+            "correct": true
+          },
+          {
+            "text": "Kappaleet kohtaavat $10\\,\\text{s}$ kuluttua lähdöstä, ja miinusmerkki on vain laskuvirhe.",
+            "feedback": "Miinusmerkki ei ole laskuvirhe, vaan ratkaisun tulos. Hetkellä $t = 10\\,\\text{s}$ auto on paikassa $30\\,\\text{m}$ ja pyöräilijä paikassa $70\\,\\text{m}$, joten ne ovat kaukana toisistaan."
+          },
+          {
+            "text": "Auto liikkuu taaksepäin eli negatiiviseen suuntaan nopeudella $3{,}0\\,\\text{m/s}$.",
+            "feedback": "Auton nopeus on $+3{,}0\\,\\text{m/s}$, joten se liikkuu positiiviseen suuntaan. Negatiivinen luku on aika, ei nopeus."
+          },
+          {
+            "text": "Pyöräilijä pysähtyy lähdössä, ja auto saavuttaa hänet $10\\,\\text{s}$ kuluttua.",
+            "feedback": "Pyöräilijän nopeus on $5{,}0\\,\\text{m/s}$ koko ajan, eikä hän pysähdy. Auto on hitaampi, joten se ei saavuta häntä."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "title": "Johtopäätös",
+      "prompt": "Selitä omin sanoin taulukoidesi avulla, miksi auto on ohitushetkellä nopeampi kuin pyöräilijä, vaikka kappaleet ovat silloin samassa paikassa. Käytä sanoja paikka, nopeus ja etumatka.",
+      "criteria": [
+        "Sanon, että kohtaaminen tarkoittaa samaa paikkaa samalla hetkellä, ei samaa nopeutta.",
+        "Sanon, että auto oli aluksi pyöräilijää hitaampi, joten etumatka kasvoi, kunnes nopeudet olivat yhtä suuret.",
+        "Sanon, että sen jälkeen auto oli nopeampi ja pienensi etumatkaa, kunnes se oli nolla: silloin auto on nopeampi.",
+        "Viittaan taulukkoni lukemiin, esimerkiksi nopeuksiin $16\\,\\text{m/s}$ ja $6{,}0\\,\\text{m/s}$ ohitushetkellä."
+      ],
+      "model": "Kohtaamisessa vain paikat ovat samat: $x_\\text{A} = x_\\text{B}$. Mallin arvoissa auto lähtee levosta ja on aluksi pyöräilijää hitaampi, joten pyöräilijän etumatka kasvaa $16\\,\\text{m}$:stä. Hetkellä $3{,}0\\,\\text{s}$ nopeudet ovat molemmat $6{,}0\\,\\text{m/s}$ ja etumatka on suurimmillaan, $25\\,\\text{m}$. Sen jälkeen auto on nopeampi ja pienentää etumatkaa. Jotta etumatka ehtii nollautua, auton täytyy olla nopeampi siihen asti, ja ohitushetkellä $8{,}0\\,\\text{s}$ auton nopeus on $16\\,\\text{m/s}$ ja pyöräilijän $6{,}0\\,\\text{m/s}$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi taulukoihin ja kuvaajiin. Mitä sait selville kohtaamispaikasta, nopeuksista ohitushetkellä ja etumatkan muutoksesta? Palaa myös alun liikennevaloihin: mistä näkee, että auto saavuttaa pyöräilijän vasta kaukana viivalta?",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija ratkaisee ohitusesimerkin: auto lähtee levosta kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$ ja pyöräilijä on $16\\,\\text{m}$ edellä nopeudella $6{,}0\\,\\text{m/s}$. Hän kirjoittaa: ”Auto saavuttaa pyöräilijän, kun nopeudet ovat yhtä suuret: $2{,}0\\,\\text{m/s}^2 \\cdot t = 6{,}0\\,\\text{m/s}$, joten $t = 3{,}0\\,\\text{s}$.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Hän asetti nopeudet yhtä suuriksi, vaikka kohtaamisessa paikkojen pitää olla yhtä suuret: $\\tfrac12\\,a\\,t^2 = 16\\,\\text{m} + v\\,t$.",
+          "feedback": "Oikein. Hetkellä $3{,}0\\,\\text{s}$ nopeudet ovat yhtä suuret, mutta auto on silloin vielä $25\\,\\text{m}$ pyöräilijän takana. Etumatka on silloin suurimmillaan. Ohitus tapahtuu vasta, kun paikat ovat samat.",
+          "correct": true
+        },
+        {
+          "text": "Auton nopeus pitäisi laskea kaavalla $v = \\tfrac12\\,a\\,t^2$ eikä $v = a\\,t$.",
+          "feedback": "Kaava $v = a\\,t$ on oikea auton nopeudelle, kun alkunopeus on nolla. Kaava $\\tfrac12\\,a\\,t^2$ on paikka, ei nopeus."
+        },
+        {
+          "text": "Pyöräilijän $16\\,\\text{m}$:n etumatka olisi pitänyt vähentää nopeudesta.",
+          "feedback": "Etumatka on pituus ja nopeus on pituus per aika, joten niitä ei voi vähentää toisistaan. Etumatka kuuluu paikkayhtälöön, ei nopeuksien vertailuun."
+        },
+        {
+          "text": "Tulos $3{,}0\\,\\text{s}$ on oikein, koska auto ohittaa silloin, kun kiihtyminen on tasoittanut nopeuserot.",
+          "feedback": "Nopeuserojen tasoittuminen ei ole ohitus. Silloin kappaleet kulkevat yhtä nopeasti, mutta auto on yhä $25\\,\\text{m}$ jäljessä. Ohitus on hetki, jolloin paikat ovat samat: $8{,}0\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Moottoripyörä seisoo viivalla. Samalla hetkellä kuorma-auto ajaa viivan ohi tasaisella nopeudella $12\\,\\text{m/s}$. Moottoripyörä lähtee liikkeelle samaan suuntaan ja kiihtyy tasaisesti kiihtyvyydellä $3{,}0\\,\\text{m/s}^2$. Mikä on moottoripyörän nopeus, kun se saavuttaa kuorma-auton? Vastaa yksikössä m/s.",
+      "answer": 24,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Saavuttaminen on kohtaaminen. Kirjoita kummankin kappaleen paikka ajan funktiona ja merkitse paikat yhtä suuriksi.",
+        "Moottoripyörä: $x = \\tfrac12\\,a\\,t^2$. Kuorma-auto: $x = v\\,t$. Ratkaise $t$ (muu kuin $t = 0$) ja laske sitten moottoripyörän nopeus kaavalla $v = a\\,t$.",
+        "$\\tfrac12\\,a\\,t^2 = v\\,t$ antaa $t = \\dfrac{2v}{a} = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3{,}0\\,\\text{m/s}^2}$. Kerro tulos kiihtyvyydellä."
+      ],
+      "mistakes": [
+        {
+          "value": 12,
+          "feedback": "Tämä on kuorma-auton nopeus. Asetit nopeudet yhtä suuriksi, mutta se antaa hetken, jolloin etumatka on suurimmillaan, ei saavuttamishetkeä. Kohtaamisessa paikkojen pitää olla yhtä suuret."
+        },
+        {
+          "value": 96,
+          "feedback": "Tämä on saavuttamispaikka metreinä. Kysyttiin moottoripyörän nopeutta, joka on $a\\,t$ saavuttamishetkellä."
+        },
+        {
+          "value": 8,
+          "feedback": "Tämä on saavuttamishetki sekunteina. Kysyttiin nopeutta: kerro vielä aika kiihtyvyydellä."
+        }
+      ],
+      "solution": "**Annettu:** moottoripyörä $x_0 = 0$, $v_0 = 0$, $a = 3{,}0\\,\\text{m/s}^2$; kuorma-auto tasaisella nopeudella $v = 12\\,\\text{m/s}$ samasta paikasta; molemmat ovat hetkellä $t = 0$ viivalla\n\n**Kysytty:** moottoripyörän nopeus $v_\\text{M}$ ohitushetkellä yksikössä $\\text{m/s}$\n\n**Periaate:** Moottoripyörä saavuttaa kuorma-auton, kun paikat ovat yhtä suuret. Moottoripyörän liike on tasaisesti kiihtyvää ja kuorma-auton tasaista, ja molemmat lähtevät samasta paikasta. Kun ohitushetki tunnetaan, nopeus saadaan kiihtyvyydestä ja ajasta.\n\n**Kaava:** $\\tfrac12\\,a\\,t^2 = v\\,t$, joten $t = \\dfrac{2v}{a}$ ($t = 0$ on lähtö). Nopeus on $v_\\text{M} = a\\,t = a \\cdot \\dfrac{2v}{a} = 2v$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{2 \\cdot 12\\,\\text{m/s}}{3{,}0\\,\\text{m/s}^2} = 8{,}0\\,\\text{s}$ ja $v_\\text{M} = 3{,}0\\,\\text{m/s}^2 \\cdot 8{,}0\\,\\text{s} = 24\\,\\text{m/s}$\n\n**Vastaus:** $24\\,\\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Moottoripyörän nopeus on kaksi kertaa kuorma-auton nopeus, kuten ohituksessa samasta paikasta lähdettäessä pitääkin. Paikat ovat samat: $\\tfrac12 \\cdot 3{,}0\\,\\text{m/s}^2 \\cdot (8{,}0\\,\\text{s})^2 = 96\\,\\text{m}$ ja $12\\,\\text{m/s} \\cdot 8{,}0\\,\\text{s} = 96\\,\\text{m}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat vapaaehtoisia ja syventäviä. Kirjoita kummankin kappaleen paikka ajan funktiona ja piirrä $(t, x)$-kuvaaja vihkoon aina kun se auttaa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kahden kappaleen $(t, x)$-kuvaajan viivat leikkaavat toisensa hetkellä $t = 6{,}0\\,\\text{s}$. Mitä tämä tarkoittaa?",
+      "choices": [
+        {
+          "text": "Kappaleet ovat samassa paikassa hetkellä $6{,}0\\,\\text{s}$.",
+          "feedback": "Oikein. $(t, x)$-kuvaajan leikkauspisteessä on sama aika ja sama paikka kummallekin kappaleelle, joten kappaleet kohtaavat.",
+          "correct": true
+        },
+        {
+          "text": "Kappaleiden nopeudet ovat yhtä suuret hetkellä $6{,}0\\,\\text{s}$.",
+          "feedback": "Yhtä suuret nopeudet näkyisivät viivojen yhtä suurena jyrkkyytenä, ei leikkauksena. Leikkauspisteessä viivat ovat yleensä eri jyrkkiä, koska nopeudet ovat erisuuret."
+        },
+        {
+          "text": "Kappaleet ovat kulkeneet yhtä pitkän matkan hetkeen $6{,}0\\,\\text{s}$ mennessä.",
+          "feedback": "Leikkaus kertoo paikan, ei kuljettua matkaa. Jos kappaleet lähtivät eri paikoista, ne ovat kohdatessaan voineet kulkea eri matkat."
+        },
+        {
+          "text": "Toinen kappale pysähtyy hetkellä $6{,}0\\,\\text{s}$.",
+          "feedback": "Pysähtyminen näkyisi vaakasuorana kohtana viivassa. Leikkaus ei kerro kummankaan liikkeen muutoksesta, vain siitä, että paikat ovat samat."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske",
+      "prompt": "Kappale A lähtee paikasta $0$ ja kulkee tasaisesti nopeudella $2{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Kappale B lähtee samalla hetkellä paikasta $30\\,\\text{m}$ ja kulkee tasaisesti nopeudella $3{,}0\\,\\text{m/s}$ negatiiviseen suuntaan. Milloin kappaleet kohtaavat? Vastaa sekunteina.",
+      "answer": 6.0,
+      "unit": "s",
+      "tolerance": 0.02,
+      "hints": [
+        "Kirjoita kummankin kappaleen paikka ajan funktiona. B:n nopeus on negatiivinen.",
+        "Kohtaamisessa $x_\\text{A} = x_\\text{B}$, eli $2{,}0\\,t = 30 - 3{,}0\\,t$.",
+        "Siirrä $t$-termit samalle puolelle: $5{,}0\\,t = 30$. Ratkaise $t$."
+      ],
+      "mistakes": [
+        {
+          "value": 15,
+          "feedback": "Jaoit matkan $30\\,\\text{m}$ vain A:n nopeudella. B liikkuu myös, joten välimatka pienenee molempien nopeuksien summalla $5{,}0\\,\\text{m/s}$."
+        },
+        {
+          "value": 30,
+          "feedback": "Vähensit nopeudet toisistaan: $3{,}0\\,\\text{m/s} - 2{,}0\\,\\text{m/s} = 1{,}0\\,\\text{m/s}$. Kappaleet liikkuvat vastakkain, joten niiden välimatka pienenee nopeuksien summalla."
+        },
+        {
+          "value": 10,
+          "feedback": "Jaoit matkan vain B:n nopeudella. A liikkuu myös, joten välimatka pienenee molempien nopeuksien summalla $5{,}0\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Annettu:** kappale A: $x_{0\\text{A}} = 0$, $v_\\text{A} = 2{,}0\\,\\text{m/s}$; kappale B: $x_{0\\text{B}} = 30\\,\\text{m}$, $v_\\text{B} = -3{,}0\\,\\text{m/s}$; molemmat tasaisia\n\n**Kysytty:** kohtaamishetki $t$ yksikössä $\\text{s}$\n\n**Periaate:** Kappaleet kohtaavat, kun ne ovat samassa paikassa: $x_\\text{A} = x_\\text{B}$. Molemmat liikkuvat tasaisesti, joten $x = x_0 + v\\,t$ kummallekin. B:n nopeus on negatiivinen, koska se tulee A:ta vastaan.\n\n**Kaava:** $x_{0\\text{A}} + v_\\text{A}\\,t = x_{0\\text{B}} + v_\\text{B}\\,t$, joten $t = \\dfrac{x_{0\\text{B}} - x_{0\\text{A}}}{v_\\text{A} - v_\\text{B}}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{30\\,\\text{m} - 0}{2{,}0\\,\\text{m/s} - (-3{,}0\\,\\text{m/s})} = \\dfrac{30\\,\\text{m}}{5{,}0\\,\\text{m/s}} = 6{,}0\\,\\text{s}$\n\n**Vastaus:** $6{,}0\\,\\text{s}$, kaksi merkitsevää numeroa kuten nopeuksissa.\n\n**Järkevyys:** Kappaleet lähestyvät toisiaan nopeudella $2{,}0\\,\\text{m/s} + 3{,}0\\,\\text{m/s} = 5{,}0\\,\\text{m/s}$, joten $30\\,\\text{m}$ kuluu ajassa $6{,}0\\,\\text{s}$. Paikat: $x_\\text{A} = 2{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} = 12\\,\\text{m}$ ja $x_\\text{B} = 30\\,\\text{m} - 3{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} = 12\\,\\text{m}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "optional": true,
+      "title": "3. Selitä",
+      "prompt": "Auto lähtee levosta, kun pyöräilijä on sen edellä. Selitä omin sanoin, milloin pyöräilijän etumatka on suurimmillaan ja miksi ohitus tapahtuu vasta sen jälkeen.",
+      "criteria": [
+        "Sanon, että etumatka kasvaa niin kauan kuin pyöräilijä on nopeampi kuin auto.",
+        "Sanon, että etumatka on suurimmillaan hetkellä, jolloin nopeudet ovat yhtä suuret.",
+        "Sanon, että sen jälkeen auto on nopeampi ja pienentää etumatkaa, ja ohitus on hetki, jolloin etumatka on nolla.",
+        "Erotan toisistaan hetken, jolloin nopeudet ovat samat, ja hetken, jolloin paikat ovat samat."
+      ],
+      "model": "Auto lähtee levosta, joten se on aluksi hitaampi kuin tasaisella nopeudella ajava pyöräilijä. Niin kauan kuin pyöräilijä on nopeampi, hän etenee autoa enemmän ja etumatka kasvaa. Kun auton nopeus on kasvanut yhtä suureksi kuin pyöräilijän, etumatka ei enää kasva: se on suurimmillaan. Sen jälkeen auto on nopeampi ja pienentää etumatkaa. Ohitus tapahtuu vasta, kun etumatka on kulunut loppuun, joten silloin paikat ovat samat ja auto on nopeampi. Nopeuksien yhtäsuuruus ja paikkojen yhtäsuuruus ovat siis eri hetkiä."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fy4-4",
+  "course": "FY4",
+  "title": "Newtonin toinen laki",
+  "goals": [
+    "LOPS FY4: kappaleiden vuorovaikutus ja voima sekä Newtonin lait",
+    "LOPS FY4: liikeyhtälö",
+    "Voimakuvio: lepo, tasainen nopeus, nopeutuva ja hidastuva liike pystysuunnassa tai vaakasuunnassa (esimerkit A ja E). Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei aina nopeuden suuntaan. Yhtälö ΣF = ma kirjoitetaan vasta voimien jälkeen."
+  ],
+  "prerequisites": [
+    "fy4-2",
+    "fy4-3"
+  ],
+  "glossary": [
+    "voima",
+    "kiihtyvyys",
+    "massa",
+    "kokonaisvoima",
+    "newton",
+    "tukivoima",
+    "voimakuvio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

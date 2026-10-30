@@ -1,8 +1,105 @@
 [
   {
-    "expr": "(window.simState.F-window.simState.f)/window.simState.m - window.simState.a",
-    "expected": 0,
-    "tol": 1e-06,
-    "note": "a equals (F\u2212f)/m"
+    "expr": "(() => { const S=window.simState; return S.F===1 && S.m===1 && S.alku==='levosta' && S.suunta==='oikea' && S.running===false && S.t===0 && S.a===null ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "on load: F = 1,0 N, m = 1,0 kg, from rest, pulled to the right, not running, no measured acceleration yet"
+  },
+  {
+    "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='3' && R[0].step==='0.5' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "one slider: F 0-3 N in steps of 0,5"
+  },
+  {
+    "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='0.5,1,1.5' && L[1]==='levosta,vauhdissa' && L[2]==='oikea,vasen' && L[3]==='0.2,0.4,1' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "selects: mass, initial state, direction of the pull, speed"
+  },
+  {
+    "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "main button first; DOM order canvas, controls, readout"
+  },
+  {
+    "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "no Lisätietoja box; one legend line of at most 15 words"
+  },
+  {
+    "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='F,alku,m,suunta' && P.F.unit==='N' && P.m.unit==='kg' ? 1 : 0 })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "adapter declares F (N), m (kg), alku and suunta"
+  },
+  {
+    "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const n=document.getElementById('sim-root').clientWidth<500; return c.width===600 && (n ? c.height>400 : c.height===400) ? 1 : 0; })()",
+    "expected": 1,
+    "tol": 0,
+    "note": "canvas is 600 wide: 400 tall on a wide screen, taller (panels stacked) when the sim box is under 500 px"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'levosta'); I(L[2],'oikea'); I(R[0],2);",
+    "expr": "window.simState.aModel",
+    "expected": 2.0,
+    "tol": 0.01,
+    "note": "a = ΣF/m = 2,0 N : 1,0 kg"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1.5'); I(R[0],3);",
+    "expr": "window.simState.G",
+    "expected": 14.715,
+    "tol": 0.01,
+    "note": "G = mg = 1,5 kg · 9,81 m/s² (and N = G on the level track)"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'0.5'); I(L[2],'vasen'); I(R[0],1);",
+    "expr": "window.simState.sumFx",
+    "expected": -1.0,
+    "tol": 0.01,
+    "note": "pull to the left: ΣF_x = −1,0 N"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'0.5'); I(L[2],'vasen'); I(R[0],1);",
+    "expr": "window.simState.aModel",
+    "expected": -2.0,
+    "tol": 0.01,
+    "note": "pull 1,0 N to the left on 0,50 kg: a_x = −2,0 m/s²"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'levosta'); I(L[2],'oikea'); I(R[0],2); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.a : null), 2500))",
+    "expected": 2.0,
+    "tol": 0.01,
+    "note": "a run from rest with 2,0 N on 1,0 kg: the slope of the (t, v) samples is 2,0 m/s²"
+  },
+  {
+    "expr": "window.simState.v / window.simState.t",
+    "expected": 2.0,
+    "tol": 0.01,
+    "note": "after that run from rest, v = a t"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'1'); I(L[1],'vauhdissa'); I(L[2],'vasen'); I(R[0],2); I(L[3],'1'); document.querySelector('#sim-root button').click();",
+    "expr": "new Promise((r) => setTimeout(() => r(window.simState.done ? window.simState.a : null), 2500))",
+    "expected": -2.0,
+    "tol": 0.01,
+    "note": "moving right at 1,5 m/s, pulled left with 2,0 N: the measured acceleration is −2,0 m/s² throughout (it turns back)"
+  },
+  {
+    "expr": "window.simState.v < 0 && window.simState.x > 0.05 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "after that run the cart has turned back (v < 0) and stayed on the track"
+  },
+  {
+    "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1.5);",
+    "expr": "window.simState.a === null && window.simState.t === 0 ? 1 : 0",
+    "expected": 1,
+    "tol": 0,
+    "note": "changing a control resets the run and clears the measured acceleration"
   }
 ]

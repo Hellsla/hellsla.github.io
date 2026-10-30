@@ -1,0 +1,22 @@
+{
+  "id": "fy4-12",
+  "course": "FY4",
+  "title": "Motion of two bodies: meeting and overtaking",
+  "goals": [
+    "LOPS FY4: uniform and uniformly accelerated rectilinear motion",
+    "Clarification: the positions of two bodies in the same coordinate system, the time of meeting and of overtaking found by calculation and from graphs"
+  ],
+  "prerequisites": [
+    "fy4-1",
+    "fy4-2"
+  ],
+  "glossary": [
+    "paikka",
+    "kiihtyvyys",
+    "kohtaaminen",
+    "ohitus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

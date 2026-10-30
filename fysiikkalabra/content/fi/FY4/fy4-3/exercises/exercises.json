@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-3-L1-01",
+      "level": 1,
+      "text": "Kattolamppu roikkuu paikallaan pystysuoran johdon varassa. Lampun paino on $18\\,\\text{N}$. Kuinka suuri on johdon jännitysvoima lamppuun?",
+      "answer": 18,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-02",
+      "level": 1,
+      "text": "Köydenvedossa köysi on paikallaan. Joukkue A vetää köyttä vasemmalle $850\\,\\text{N}$:n voimalla. Köyden paino jätetään huomiotta. Kuinka suurella voimalla joukkue B vetää köyttä oikealle?",
+      "answer": 850,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-03",
+      "level": 1,
+      "text": "Luistelija seisoo jäällä ja työntää kaukalon laitaa käsillään $90\\,\\text{N}$:n voimalla. Kuinka suurella voimalla laita työntää luistelijaa?",
+      "answer": 90,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-04",
+      "level": 1,
+      "text": "Auto ajaa suoralla tiellä tasaisella nopeudella. Tie työntää auton vetäviä renkaita eteenpäin $620\\,\\text{N}$:n voimalla, ja ilmanvastus autoon on $380\\,\\text{N}$. Lisäksi autoon vaikuttaa taaksepäin vierimisvastus. Kuinka suuri on vierimisvastus?",
+      "answer": 240,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-05",
+      "level": 1,
+      "text": "Kirja, jonka massa on $0{,}65\\,\\text{kg}$, lepää pöydällä. Maa vetää kirjaa sen painon suuruisella voimalla. Kuinka suurella voimalla kirja vetää Maata?",
+      "answer": 6.4,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-3-L2-01",
+      "level": 2,
+      "text": "Pöydällä on kirja, jonka paino on $8{,}0\\,\\text{N}$, ja sen päällä toinen kirja, jonka paino on $5{,}0\\,\\text{N}$. Kirjat ovat paikallaan. Kuinka suurella voimalla alempi kirja painaa pöytää?",
+      "answer": 13,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-02",
+      "level": 2,
+      "text": "Uimari ui suoraan vaakasuunnassa tasaisella nopeudella. Hänen painonsa on $720\\,\\text{N}$ ja veden noste yhtä suuri. Hän työntää käsillään ja jaloillaan vettä taaksepäin keskimäärin $65\\,\\text{N}$:n voimalla. Kuinka suuri on veden vastus uimariin keskimäärin?",
+      "answer": 65,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-03",
+      "level": 2,
+      "text": "Laskuvarjohyppääjä, jonka massa varusteineen on $85\\,\\text{kg}$, laskeutuu avatun varjon varassa suoraan alas tasaisella nopeudella. Kuinka suuri on ilmanvastus hyppääjään ja varjoon yhteensä?",
+      "answer": 830,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-04",
+      "level": 2,
+      "text": "Hissikorin paino on $5{,}8\\,\\text{kN}$, ja korissa on matkustajia, joiden massa on yhteensä $320\\,\\text{kg}$. Hissi nousee tasaisella nopeudella. Kuinka suuri on kaapelin jännitysvoima koriin? Vastaa kilonewtoneina.",
+      "answer": 8.9,
+      "unit": "kN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-3-L3-01",
+      "level": 3,
+      "text": "Kuumailmapallo laskeutuu suoraan alas tasaisella nopeudella. Pallon, sen sisällä olevan kuuman ilman, korin ja matkustajien yhteinen paino on $4{,}62\\,\\text{kN}$, ja ympäröivän ilman noste on $4{,}35\\,\\text{kN}$. Kuinka suuri on ilmanvastus palloon, ja mihin suuntaan se osoittaa? Vastaa suuruus kilonewtoneina ja kerro suunta sanoin; vain suuruus tarkistetaan.",
+      "answer": 0.27,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-02",
+      "level": 3,
+      "text": "Kaksi samanlaista rengasmagneettia on pujotettu pystysuoraan puutikkuun, joka seisoo pöydällä. Magneetit hylkivät toisiaan, ja ylempi leijuu paikallaan alemman yläpuolella koskematta siihen. Kummankin magneetin paino on $0{,}30\\,\\text{N}$, ja kitka tikkua vasten jätetään huomiotta. Kuinka suurella voimalla pöytä tukee alempaa magneettia? Tikun voima jätetään huomiotta.",
+      "answer": 0.6,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-03",
+      "level": 3,
+      "text": "Kaksi jousivaakaa on ripustettu peräkkäin: ylempi on kiinni katossa, ja alempi roikkuu ylemmän koukussa. Alemman vaa'an koukussa roikkuu omena, jonka paino on $1{,}5\\,\\text{N}$. Alemman vaa'an oma paino on $0{,}40\\,\\text{N}$. Kaikki on paikallaan. Mitä ylempi vaaka näyttää?",
+      "answer": 1.9,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

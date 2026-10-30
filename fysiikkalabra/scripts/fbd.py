@@ -38,7 +38,7 @@ Visual conventions (one for every course): a force is a solid red arrow with a f
 component is a thinner dashed arrow of the same colour with an open head; velocity (blue) and acceleration (orange) are
 thin, with an open head and a regular-weight symbol, in colours of their own so that force, velocity and acceleration
 are never confused, and never on the body (FBD.motion draws them beside it); the net force, when a teaching figure
-shows it, is a hollow green arrow labelled \\Sigma\\mathbf{F} away from the body.
+shows it, is a hollow green arrow labelled \\Sigma\\overline{F} away from the body.
 """
 import math
 from figlib import Fig, INK, MUTED, WHITE, RULE, n, translate
@@ -117,7 +117,7 @@ class FBD:
 
     def force(self, sym, vec, at, kind="other", name=None, surface=None, outward=None, rope=None, v_rel=None,
               label=None, lab=None, tex=None, push=False):
-        """sym: the plain symbol ("G", "N", "F_mu", "T_1") the checks know it by; tex: its LaTeX when not \\mathbf{sym}.
+        """sym: the plain symbol ("G", "N", "F_mu", "T_1") the checks know it by; tex: its LaTeX when not \\overline{sym}.
         surface: the contact surface's angle in degrees (0 horizontal; for normal and friction), outward: the unit
         normal pointing out of the surface towards the object (default up-left of the surface direction), rope: the
         direction along the rope away from the object, v_rel: the object's velocity relative to the air (drag).
@@ -251,14 +251,14 @@ class FBD:
         x2, y2 = at[0] + v[0] * self.s, at[1] - v[1] * self.s
         hollow_arrow(self.f, at[0], at[1], x2, y2)
         u = _unit((x2 - at[0], y2 - at[1])); d = lab or (u[0] * 26, u[1] * 26)
-        self.f.tex(x2 + d[0], y2 + d[1], r"\Sigma\mathbf{F}", "middle", NET)
+        self.f.tex(x2 + d[0], y2 + d[1], r"\Sigma\overline{F}", "middle", NET)
         return self
 
     def motion(self, sym, vec, at, length=None, lab=None, kind=None):
         """A velocity or acceleration arrow beside the body (thin, open head): not a force. kind: "velocity" (blue) or
-        "acceleration" (orange); by default from the symbol (\\mathbf{a} is an acceleration). vec gives the
+        "acceleration" (orange); by default from the symbol (\\overline{a} is an acceleration). vec gives the
         direction (y up); length in figure units (default 70). With a body it must lie wholly outside it."""
-        kind = kind or ("acceleration" if r"\mathbf{a}" in sym else "velocity")
+        kind = kind or ("acceleration" if r"\overline{a}" in sym else "velocity")
         if kind not in ("velocity", "acceleration"): raise ValueError(f"motion {sym}: kind {kind!r}")
         col = ACCEL if kind == "acceleration" else VELOCITY
         u = _unit(vec); L = length or 70
@@ -290,13 +290,13 @@ class FBD:
 
 
 def _bold(sym):
-    """\\mathbf{G}, \\mathbf{F}_\\mu, \\mathbf{T}_1 from "G", "F_mu", "T_1"."""
+    """\\overline{G}, \\overline{F}_\\mu, \\overline{T}_1 from "G", "F_mu", "T_1"."""
     base, _, sub = sym.partition("_")
     sub = {"mu": r"\mu"}.get(sub, sub)
-    return rf"\mathbf{{{base}}}" + (f"_{{{sub}}}" if sub else "")
+    return rf"\overline{{{base}}}" + (f"_{{{sub}}}" if sub else "")
 
 
 def _bold_comp(sym):
-    """A component's symbol: G_x → \\mathbf{G}_x is a vector component; the course writes components plain with a
+    """A component's symbol: G_x → \\overline{G}_x is a vector component; the course writes components plain with a
     subscript (G_x) only for their scalar values, so the arrow keeps the bold base."""
     return _bold(sym)

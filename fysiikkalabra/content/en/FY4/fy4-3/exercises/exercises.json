@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-3-L1-01",
+      "level": 1,
+      "text": "A ceiling lamp hangs at rest from a vertical cord. The weight of the lamp is $18\\,\\text{N}$. How large is the tension of the cord on the lamp?",
+      "answer": 18,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-02",
+      "level": 1,
+      "text": "In a tug of war the rope is at rest. Team A pulls the rope to the left with a force of $850\\,\\text{N}$. The weight of the rope is ignored. With what force does team B pull the rope to the right?",
+      "answer": 850,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-03",
+      "level": 1,
+      "text": "A skater stands on the ice and pushes the boards of the rink with their hands with a force of $90\\,\\text{N}$. With what force do the boards push the skater?",
+      "answer": 90,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-04",
+      "level": 1,
+      "text": "A car drives along a straight road at constant velocity. The road pushes the driving wheels of the car forwards with a force of $620\\,\\text{N}$, and the air resistance on the car is $380\\,\\text{N}$. In addition, rolling resistance acts backwards on the car. How large is the rolling resistance?",
+      "answer": 240,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-05",
+      "level": 1,
+      "text": "A book of mass $0.65\\,\\text{kg}$ rests on a table. The Earth pulls the book with a force equal to its weight. With what force does the book pull the Earth?",
+      "answer": 6.4,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-3-L2-01",
+      "level": 2,
+      "text": "On a table there is a book of weight $8.0\\,\\text{N}$ and on top of it another book of weight $5.0\\,\\text{N}$. The books are at rest. With what force does the lower book press the table?",
+      "answer": 13,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-02",
+      "level": 2,
+      "text": "A swimmer swims straight in the horizontal direction at constant velocity. The swimmer's weight is $720\\,\\text{N}$ and the buoyancy of the water is equally large. She pushes the water backwards with the hands and feet with an average force of $65\\,\\text{N}$. How large is the average drag of the water on the swimmer?",
+      "answer": 65,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-03",
+      "level": 2,
+      "text": "A skydiver whose mass with equipment is $85\\,\\text{kg}$ descends straight down at constant velocity with the parachute open. How large is the air resistance on the skydiver and the parachute together?",
+      "answer": 830,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-04",
+      "level": 2,
+      "text": "The weight of an elevator car is $5.8\\,\\text{kN}$, and the car contains passengers whose total mass is $320\\,\\text{kg}$. The elevator rises at constant velocity. How large is the tension of the cable on the car? Answer in kilonewtons.",
+      "answer": 8.9,
+      "unit": "kN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-3-L3-01",
+      "level": 3,
+      "text": "A hot-air balloon descends straight down at constant velocity. The combined weight of the balloon, the hot air inside it, the basket and the passengers is $4.62\\,\\text{kN}$, and the buoyancy of the surrounding air is $4.35\\,\\text{kN}$. How large is the air resistance on the balloon, and in which direction does it point? Give the magnitude in kilonewtons and the direction in words; only the magnitude is checked.",
+      "answer": 0.27,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-02",
+      "level": 3,
+      "text": "Two identical ring magnets are threaded onto a vertical wooden stick standing on a table. The magnets repel each other, and the upper one floats at rest above the lower one without touching it. The weight of each magnet is $0.30\\,\\text{N}$, and friction against the stick is ignored. With what force does the table support the lower magnet? The force of the stick is ignored.",
+      "answer": 0.6,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-03",
+      "level": 3,
+      "text": "Two spring scales are hung one below the other: the upper one is attached to the ceiling, and the lower one hangs from the hook of the upper one. An apple of weight $1.5\\,\\text{N}$ hangs from the hook of the lower scale. The weight of the lower scale itself is $0.40\\,\\text{N}$. Everything is at rest. What does the upper scale show?",
+      "answer": 1.9,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

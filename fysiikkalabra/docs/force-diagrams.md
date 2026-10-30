@@ -43,21 +43,21 @@ later chapters use it. Its steps:
    - Tension acts along the rope and pulls the object towards the rope.
    - Air resistance is opposite to the object's velocity relative to the air. Draw it only when the situation and its
      assumptions call for it.
-4. **Nimeä voimat.** Use the course's notation. In FY4 vectors are bold: $\mathbf{G}$ is the weight, $\mathbf{N}$
-   the normal force, $\mathbf{F}_\mu$ friction, $\mathbf{T}$ tension, $\mathbf{F}_\text{noste}$ buoyancy, and
-   $\mathbf{F}_\text{v}$ the resistance of the air or water. Two forces of the same kind get distinct symbols
-   ($\mathbf{T}_1$, $\mathbf{T}_2$). Other sources use other letters: what matters is that each force is named
+4. **Nimeä voimat.** Use the course's notation. In FY4 vectors carry an overline (teacher 2026-10-29): $\overline{G}$ is the weight, $\overline{N}$
+   the normal force, $\overline{F}_\mu$ friction, $\overline{T}$ tension, $\overline{F}_\text{noste}$ buoyancy, and
+   $\overline{F}_\text{v}$ the resistance of the air or water. Two forces of the same kind get distinct symbols
+   ($\overline{T}_1$, $\overline{T}_2$). Other sources use other letters: what matters is that each force is named
    without ambiguity.
 5. **Mieti suuruudet.** At rest and at constant velocity the net force is zero, so the arrows cancel. With
    acceleration, the net force points in the direction of the acceleration, which need not be the direction of the
    velocity. Do not invent precise sizes when the information does not fix them.
 6. **Vain voimat.** Velocity, acceleration and displacement are not forces. If they help, draw them beside the body
    in their own style. The net force is not one more force. If a teaching figure shows it, it is labelled
-   $\Sigma\mathbf{F}$ and drawn apart from the forces.
+   $\Sigma\overline{F}$ and drawn apart from the forces.
 7. **Komponentit eivät ole uusia voimia.** Resolving a force gives two components that together *replace* the
    force in a calculation. On a slope, weight still points vertically down. Its components along and across the
    slope are drawn dashed, so they cannot be mistaken for forces.
-8. **Liikeyhtälö.** Only now write $\Sigma\mathbf{F} = m\mathbf{a}$. Choose the axes, resolve the forces, and write
+8. **Liikeyhtälö.** Only now write $\Sigma\overline{F} = m\overline{a}$. Choose the axes, resolve the forces, and write
    the scalar equations $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$ with signs from the diagram.
 
 The order is the same in every worked solution: **valitse kappale → vuorovaikutukset → voimakuvio → akselit →
@@ -83,15 +83,15 @@ The teacher's drawing rules (2026-10-29) hold in every course, figure, simulatio
 - **No point-particle diagrams.** They are not used in Finnish upper secondary physics: never draw one, never
   present one as an option, never write a solution "as a point". `fbd.py` refuses a diagram without a body.
 - **Visual conventions** (`scripts/fbd.py`, every course):
-  - a force is a solid red arrow with a filled head and a bold symbol;
+  - a force is a solid red arrow with a filled head and an overlined symbol;
   - a component is thinner, dashed and of the same colour, with an open head;
   - velocity is a thin blue arrow and acceleration a thin orange arrow, with an open head, drawn beside the body,
     never on it: force (red), velocity (blue) and acceleration (orange) always have different colours;
-  - the net force is a hollow green arrow labelled $\Sigma\mathbf{F}$, away from the forces.
+  - the net force is a hollow green arrow labelled $\Sigma\overline{F}$, away from the forces.
   
   Colour is never the only difference: the line style and the symbol carry the meaning too.
 - **Lengths.** `fbd.py` draws every arrow at scale × force, so its length is right by construction. It refuses a
-  diagram whose forces do not sum to $m\mathbf{a}$, or that breaks a direction rule. A deliberately wrong figure
+  diagram whose forces do not sum to $m\overline{a}$, or that breaks a direction rule. A deliberately wrong figure
   (a distractor, an error to find) says why with `wrong="…"`. The drawing rules above (a body rectangle, forces
   starting on it, friction at the outline, velocity and acceleration off the body) are checked for every figure,
   a deliberately wrong one too (`scripts/test_fbd.py`).
@@ -157,7 +157,7 @@ The pedagogy reviewer checks:
 ## Accessibility
 
 A figure's description lists what a sighted student sees. When the task is to judge the directions of forces, the
-description lists each arrow's direction as drawn ("nuoli $\mathbf{N}$ osoittaa alas"). It never says whether that
+description lists each arrow's direction as drawn ("nuoli $\overline{N}$ osoittaa alas"). It never says whether that
 is right. A model diagram's description, shown after the student commits, may explain it.
 
 ## Example situations and where they go

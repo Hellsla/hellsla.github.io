@@ -2,7 +2,7 @@
   {
     "q": "Pallo on heitetty suoraan ylös, ja se on juuri ratansa korkeimmassa kohdassa. Mitkä voimat palloon vaikuttavat, kun ilmanvastus jätetään huomiotta?",
     "fbd": "identify",
-    "a": "Vain paino $\\mathbf{G}$, joka osoittaa alas. Heittäjän käsi ei enää koske palloon, joten ylöspäin vievää voimaa ei ole. Korkeimmassa kohdassa nopeus on hetken nolla, mutta kiihtyvyys on silloinkin $g$ alaspäin."
+    "a": "Vain paino $\\overline{G}$, joka osoittaa alas. Heittäjän käsi ei enää koske palloon, joten ylöspäin vievää voimaa ei ole. Korkeimmassa kohdassa nopeus on hetken nolla, mutta kiihtyvyys on silloinkin $g$ alaspäin."
   },
   {
     "q": "Miksi voiman komponentit piirretään voimakuvioon katkoviivalla, ja mitä tapahtuu, jos laskussa käytetään sekä voimaa että sen komponentteja?",

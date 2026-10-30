@@ -1,0 +1,24 @@
+{
+  "id": "fy4-2",
+  "course": "FY4",
+  "title": "Acceleration and uniformly accelerated motion",
+  "goals": [
+    "LOPS FY4: uniformly accelerated rectilinear motion",
+    "Skills: the tangent of a graph; fitting a quadratic polynomial to measured points; solving quadratic equations of quantities",
+    "Experimental work: determining the acceleration of free fall"
+  ],
+  "prerequisites": [
+    "fy4-1"
+  ],
+  "glossary": [
+    "kiihtyvyys",
+    "tasaisesti kiihtyvä liike",
+    "(t,v)-kuvaaja",
+    "hetkellinen nopeus",
+    "putoamiskiihtyvyys",
+    "vapaa pudotus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

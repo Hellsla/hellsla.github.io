@@ -348,7 +348,7 @@ Kun paikka muuttuu aikavälillä $\Delta t = t_2 - t_1$ määrän $\Delta x$, ke
 ```latex
 v_\text{ka} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 ```
-missä $v_\text{ka}$ on keskinopeus (m/s), $\Delta x$ siirtymä (m), $\Delta t$ kulunut aika (s) ja $x_1$ ja $x_2$ paikat (m) hetkillä $t_1$ ja $t_2$. Vektorina nopeus kirjoitetaan $\mathbf{v}$ ja siirtymä $\Delta\mathbf{x}$. Suoralla käytetään niiden komponentteja $v$ ja $\Delta x$, joiden etumerkki kertoo suunnan.
+missä $v_\text{ka}$ on keskinopeus (m/s), $\Delta x$ siirtymä (m), $\Delta t$ kulunut aika (s) ja $x_1$ ja $x_2$ paikat (m) hetkillä $t_1$ ja $t_2$. Vektorina nopeus kirjoitetaan $\overline{v}$ ja siirtymä $\Delta\overline{x}$. Suoralla käytetään niiden komponentteja $v$ ja $\Delta x$, joiden etumerkki kertoo suunnan.
 
 Tasaisessa liikkeessä keskinopeus on sama millä tahansa aikavälillä, ja sitä kutsutaan nopeudeksi $v$. Epätasaisessa liikkeessä keskinopeus kertoo vain sen vakionopeuden, jolla sama siirtymä tehtäisiin samassa ajassa. Jos kappale on hetkellä $t = 0$ paikassa $x_0$, kaava ratkaistuna paikalle antaa paikan ajan funktiona:
 ```latex

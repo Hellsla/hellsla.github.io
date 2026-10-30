@@ -1,0 +1,512 @@
+{
+  "version": 1,
+  "contribution": "Acceleration $a = \\Delta v / \\Delta t$ as the change in velocity and its sign, the $(t,v)$ graph of uniformly accelerated motion (slope is acceleration, area is displacement), the tangent of the $(t,x)$ curve as instantaneous velocity, the equations $v = v_0 + at$ and $x = x_0 + v_0 t + \\tfrac12 at^2$ with their quadratic equations, and determining the acceleration of free fall by polynomial fitting.",
+  "learn": [
+    "explain what acceleration tells you about the change in velocity, and interpret its sign.",
+    "calculate the velocity, position and time of uniformly accelerated motion, and read them from $(t,v)$ and $(t,x)$ graphs.",
+    "determine the acceleration of free fall by fitting a quadratic polynomial to measured points."
+  ],
+  "prior": [
+    "Velocity is the change in position divided by the change in time, and the slope of a $(t,x)$ graph is the velocity (chapter *Position, velocity and uniform motion as graphs*)",
+    "By how much does the velocity of a freely falling object grow in one second when air resistance is small? (chapter *Acceleration of free fall: v = gt*)",
+    "The quadratic formula from mathematics"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "You drop a stone from a footbridge into a river, and your friend films the fall with a phone. The video shows that during the first half second the stone falls about $1.2\\,\\text{m}$. After one whole second it has already fallen almost $5\\,\\text{m}$. So during the second half second it falls a much longer distance than during the first, even though the time is the same.",
+      "question": "What changes in the stone's motion so that in every time interval of equal length it travels a longer distance than in the one before?"
+    },
+    {
+      "id": "pr-nopeus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review from the chapter Position, velocity and uniform motion as graphs",
+      "prompt": "The $(t,x)$ graph of a cart is a straight line through the points $(0\\,\\text{s};\\, 2.0\\,\\text{m})$ and $(4.0\\,\\text{s};\\, 14\\,\\text{m})$. What is the cart's velocity?",
+      "choices": [
+        {
+          "text": "$3.0\\,\\text{m/s}$",
+          "correct": true,
+          "feedback": "Correct: the velocity is the slope of the line, $v = \\dfrac{14\\,\\text{m} - 2.0\\,\\text{m}}{4.0\\,\\text{s} - 0\\,\\text{s}} = 3.0\\,\\text{m/s}$. In this chapter the same idea carries over to velocity: acceleration is the slope of the $(t,v)$ graph."
+        },
+        {
+          "text": "$3.5\\,\\text{m/s}$",
+          "feedback": "You divided the final position by the time: $\\dfrac{14\\,\\text{m}}{4.0\\,\\text{s}}$. The cart does not start from the origin but from the position $2.0\\,\\text{m}$, so the velocity is calculated from the change in position $\\Delta x = 14\\,\\text{m} - 2.0\\,\\text{m}$."
+        },
+        {
+          "text": "$12\\,\\text{m/s}$",
+          "feedback": "The number $12\\,\\text{m}$ is the change in position $\\Delta x$, not a velocity. You get the velocity by dividing the change in position by the time it took, $4.0\\,\\text{s}$."
+        },
+        {
+          "text": "$0.33\\,\\text{m/s}$",
+          "feedback": "You divided the change in time by the change in position. Velocity is the change in position divided by the change in time: $v = \\dfrac{\\Delta x}{\\Delta t}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: distances in successive seconds",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 3
+      },
+      "prompt": "A cart starts from rest and accelerates uniformly: its velocity grows by $2.0\\,\\text{m/s}$ every second. How long a distance does the cart travel during the third second compared with the distance in the first second?",
+      "choices": [
+        {
+          "text": "The same distance, because the acceleration stays the same all the time.",
+          "feedback": "A constant acceleration means that the velocity grows by the same amount every second, not that the distance stays the same. With the model's values the cart travels $1.0\\,\\text{m}$ during the first second and $9.0\\,\\text{m} - 4.0\\,\\text{m} = 5.0\\,\\text{m}$ during the third."
+        },
+        {
+          "text": "Three times as far, because the third second is the third.",
+          "feedback": "At the end of the third second the velocity is three times as large, but during the third second the cart does not travel at that velocity the whole time. With the model's values the distance in the first second is $1.0\\,\\text{m}$ and in the third $5.0\\,\\text{m}$."
+        },
+        {
+          "text": "Five times as far, because the average velocity is five times as large.",
+          "correct": true,
+          "feedback": "The model's values support this: the positions are $1.0\\,\\text{m}$, $4.0\\,\\text{m}$ and $9.0\\,\\text{m}$, so the distances in the seconds are $1.0\\,\\text{m}$, $3.0\\,\\text{m}$ and $5.0\\,\\text{m}$. The average velocity in the third second, $5.0\\,\\text{m/s}$, is five times the average velocity in the first second, $1.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "Nine times as far, because the distance grows with the square of the time.",
+          "feedback": "It is the total distance from the starting point that grows with the square of the time: at $3.0\\,\\text{s}$ the cart is at the position $9.0\\,\\text{m}$. The distance in the third second, however, is the difference of the positions, $9.0\\,\\text{m} - 4.0\\,\\text{m} = 5.0\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the moment when the velocity is zero",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 3
+      },
+      "prompt": "A cart first moves in the positive direction at $6.0\\,\\text{m/s}$, and its acceleration is $-2.0\\,\\text{m/s}^2$ the whole time. At $t = 3.0\\,\\text{s}$ the cart's velocity is zero. What is the acceleration at that moment, and what happens afterwards?",
+      "choices": [
+        {
+          "text": "The acceleration is zero because the velocity is zero, and the cart stays at rest.",
+          "feedback": "Acceleration tells you the change in velocity, not the velocity. With the model's values the velocity is $+2.0\\,\\text{m/s}$ at $2.0\\,\\text{s}$, zero at $3.0\\,\\text{s}$ and $-2.0\\,\\text{m/s}$ at $4.0\\,\\text{s}$: it changes by $-2.0\\,\\text{m/s}$ every second, also when it passes zero."
+        },
+        {
+          "text": "The acceleration is still $-2.0\\,\\text{m/s}^2$, and the cart starts to move backwards, faster and faster.",
+          "correct": true,
+          "feedback": "The model's values support this: the velocity is $+2.0\\,\\text{m/s}$, $0$ and $-2.0\\,\\text{m/s}$ at $2.0\\,\\text{s}$, $3.0\\,\\text{s}$ and $4.0\\,\\text{s}$, and the position starts to decrease after $3.0\\,\\text{s}$. The acceleration stays the same, and the velocity changes sign."
+        },
+        {
+          "text": "The acceleration is still $-2.0\\,\\text{m/s}^2$, but the cart stays at rest because the braking ends.",
+          "feedback": "If the acceleration is still $-2.0\\,\\text{m/s}^2$, the velocity keeps changing by $-2.0\\,\\text{m/s}$ every second. With the model's values the velocity at $4.0\\,\\text{s}$ is $-2.0\\,\\text{m/s}$, so the cart does not stay at rest."
+        },
+        {
+          "text": "The acceleration becomes positive because the cart turns round and starts to move back.",
+          "feedback": "It is the velocity that changes sign, not the acceleration. With the model's values the velocity decreases steadily from $2.0\\,\\text{m/s}$ to $-2.0\\,\\text{m/s}$ between $2.0\\,\\text{s}$ and $4.0\\,\\text{s}$, so the acceleration is $-2.0\\,\\text{m/s}^2$ the whole time."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a cart drives along a straight road with constant acceleration, and its $(t,x)$ and $(t,v)$ graphs are drawn as it goes.",
+      "howto": "Choose the initial velocity $v_0$ and the acceleration $a$ with the sliders. Press *Start* or drag the *Time $t$* slider. The faint carts show the position at whole seconds. The blue arrow is the velocity and the orange arrow the acceleration, and the length of an arrow shows the magnitude: the scale of the velocity arrow adapts to the greatest velocity of the motion, so the longest arrow is always visible on the road, while the acceleration arrow has its own fixed scale. The blue dashed line in the $(t,x)$ graph is the tangent of the curve at the present moment, and the shaded area in the $(t,v)$ graph extends from time 0 to the present moment; the part below the time axis is darker.",
+      "model": "The values are model values calculated by the simulation, not measurements. The cart starts at $t = 0$ from the position $x_0 = 0$, and its acceleration stays the same all the time. Friction, air resistance and the size of the cart are ignored. The scale of the road and the scales of the graphs adapt to the chosen motion.",
+      "calc": "The velocity is calculated from $v = v_0 + a\\,t$ and the position from $x = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. The slope of the tangent equals the velocity $v$ in the readout. The area of the shaded region in the $(t,v)$ graph is the displacement $x - x_0$; the part below the time axis (the darker one) is counted as negative."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: distances in successive seconds",
+      "intro": "Test prediction 1. The starting state sets $v_0 = 0$ and $a = 2.0\\,\\text{m/s}^2$ and locks them. First press *Start* and watch the faint carts. Then record the position and velocity at $t = 1.0\\,\\text{s}$, $2.0\\,\\text{s}$ and $3.0\\,\\text{s}$ by dragging the *Time $t$* slider.",
+      "initial": {
+        "v0": 0,
+        "a": 2,
+        "t": 0
+      },
+      "names": {
+        "t": "t",
+        "v0": "v_0",
+        "a": "a"
+      },
+      "units": {
+        "t": "s",
+        "v0": "m/s",
+        "a": "m/s²"
+      },
+      "locked": [
+        "v0",
+        "a"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "x",
+          "label": "x (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Use the table to calculate how long a distance the cart travels during the third second, that is, from $2.0\\,\\text{s}$ to $3.0\\,\\text{s}$. Answer in metres.",
+        "answer": 5.0,
+        "unit": "m",
+        "tolerance": 0.02,
+        "hints": [
+          "The distance during one second is the change in position from the start of that second to its end.",
+          "Use the values of column $x$ from the rows $t = 2.0\\,\\text{s}$ and $t = 3.0\\,\\text{s}$: $\\Delta x = x_2 - x_1$.",
+          "$\\Delta x = x(3.0\\,\\text{s}) - x(2.0\\,\\text{s}) = 9.0\\,\\text{m} - 4.0\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 9.0,
+            "feedback": "This is the cart's position at $3.0\\,\\text{s}$, that is, the distance from the start. The distance in the third second is the difference of the positions, $x(3.0\\,\\text{s}) - x(2.0\\,\\text{s})$."
+          },
+          {
+            "value": 6.0,
+            "feedback": "This is the velocity at $3.0\\,\\text{s}$. During the third second the velocity grows from $4.0\\,\\text{m/s}$ to $6.0\\,\\text{m/s}$, so the cart does not travel at $6.0\\,\\text{m/s}$ for the whole second. Calculate the distance as the difference of the positions."
+          }
+        ],
+        "solution": "**Given:** from the table, the cart's positions $x_1 = 4.0\\,\\text{m}$ at $t_1 = 2.0\\,\\text{s}$ and $x_2 = 9.0\\,\\text{m}$ at $t_2 = 3.0\\,\\text{s}$; the cart moves in the positive direction the whole time\n\n**Find:** the distance $\\Delta x$ travelled during the third second, in metres\n\n**Principle:** The cart does not turn round, so the distance travelled during a second equals the change in position, that is, the final position minus the initial position. You cannot multiply the velocity by the time, because the velocity changes during the second.\n\n**Formula:** $\\Delta x = x_2 - x_1$. The formula is already solved for the quantity asked.\n\n**Conversions:** Both positions are in metres, so no conversions are needed.\n\n**Substitution:** $\\Delta x = 9.0\\,\\text{m} - 4.0\\,\\text{m} = 5.0\\,\\text{m}$\n\n**Answer:** $5.0\\,\\text{m}$, two significant figures like the readings of the simulation.\n\n**Reasonableness:** The distance in the first second is $1.0\\,\\text{m} - 0 = 1.0\\,\\text{m}$ and in the second $4.0\\,\\text{m} - 1.0\\,\\text{m} = 3.0\\,\\text{m}$, so the distances grow in the ratio $1 : 3 : 5$. The average velocity in the third second is the mean of the velocities $4.0\\,\\text{m/s}$ and $6.0\\,\\text{m/s}$, $5.0\\,\\text{m/s}$, and over one second it gives the same $5.0\\,\\text{m}$."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: braking and turning round",
+      "intro": "Test prediction 2. The starting state sets $v_0 = 6\\,\\text{m/s}$ and $a = -2.0\\,\\text{m/s}^2$ and locks them. Press *Start* and follow the arrows. Then record the position and velocity at $t = 2.0\\,\\text{s}$, $3.0\\,\\text{s}$ and $4.0\\,\\text{s}$.",
+      "initial": {
+        "v0": 6,
+        "a": -2,
+        "t": 0
+      },
+      "names": {
+        "t": "t",
+        "v0": "v_0",
+        "a": "a"
+      },
+      "units": {
+        "t": "s",
+        "v0": "m/s",
+        "a": "m/s²"
+      },
+      "locked": [
+        "v0",
+        "a"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "x",
+          "label": "x (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "choice",
+        "prompt": "What do the velocities in the table show between $2.0\\,\\text{s}$, $3.0\\,\\text{s}$ and $4.0\\,\\text{s}$?",
+        "choices": [
+          {
+            "text": "The velocity decreases by $2.0\\,\\text{m/s}$ every second, also past zero into negative values.",
+            "correct": true,
+            "feedback": "Correct. The velocities $2.0\\,\\text{m/s}$, $0$ and $-2.0\\,\\text{m/s}$ change by $-2.0\\,\\text{m/s}$ every second, so $a = \\dfrac{\\Delta v}{\\Delta t} = -2.0\\,\\text{m/s}^2$ also at the moment when $v = 0$. The $(t,v)$ graph is a single straight line that crosses the time axis."
+          },
+          {
+            "text": "The velocity decreases to zero and stays zero after that.",
+            "feedback": "In the table the velocity at $4.0\\,\\text{s}$ is $-2.0\\,\\text{m/s}$, not zero. The cart stops only for a moment and then starts back."
+          },
+          {
+            "text": "The magnitude of the velocity grows after $3.0\\,\\text{s}$, so the acceleration becomes positive.",
+            "feedback": "The speed grows because the velocity and the acceleration now point the same way: both are negative. The acceleration stays at $-2.0\\,\\text{m/s}^2$, as the change in velocity of $-2.0\\,\\text{m/s}$ every second shows."
+          },
+          {
+            "text": "The cart stops at the origin at $3.0\\,\\text{s}$ because the velocity is zero then.",
+            "feedback": "The velocity is zero, but according to the table the position is $9.0\\,\\text{m}$, not zero. The cart returns to the origin only at $6.0\\,\\text{s}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the tangent and instantaneous velocity",
+      "intro": "The starting state sets $v_0 = 0$, $a = 2.0\\,\\text{m/s}^2$ and the moment $t = 3.0\\,\\text{s}$. The blue dashed line in the $(t,x)$ graph is the tangent of the curve at the cart's present point. Record a measurement at $3.0\\,\\text{s}$, then drag the *Time $t$* slider to $5.0\\,\\text{s}$ and record a second measurement. Finally set the time back to $3.0\\,\\text{s}$ and read two points far apart on the tangent.",
+      "initial": {
+        "v0": 0,
+        "a": 2,
+        "t": 3
+      },
+      "names": {
+        "t": "t",
+        "v0": "v_0",
+        "a": "a"
+      },
+      "units": {
+        "t": "s",
+        "v0": "m/s",
+        "a": "m/s²"
+      },
+      "locked": [
+        "v0",
+        "a"
+      ],
+      "vary": "t",
+      "measure": [
+        {
+          "key": "x",
+          "label": "x (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "At $t = 3.0\\,\\text{s}$ the left end of the tangent is approximately at the point $(1.8\\,\\text{s};\\, 1.8\\,\\text{m})$ and the right end at the point $(4.2\\,\\text{s};\\, 16\\,\\text{m})$. Use the points you read from the graph to find the slope of the tangent, and answer: what is the cart's instantaneous velocity at this moment? Answer in m/s.",
+        "answer": 6.0,
+        "unit": "m/s",
+        "tolerance": 0.05,
+        "hints": [
+          "The instantaneous velocity is the slope of the tangent, that is, $\\dfrac{\\Delta x}{\\Delta t}$ between two points of the tangent.",
+          "Choose two points far apart on the tangent: the farther apart they are, the smaller the effect of a reading error. Calculate $\\Delta t = t_2 - t_1$ and $\\Delta x = x_2 - x_1$.",
+          "$\\Delta t = 4.2\\,\\text{s} - 1.8\\,\\text{s} = 2.4\\,\\text{s}$ and $\\Delta x = 16.2\\,\\text{m} - 1.8\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 3.0,
+            "feedback": "This is the average velocity from the start to $3.0\\,\\text{s}$: $\\dfrac{9.0\\,\\text{m}}{3.0\\,\\text{s}}$. The cart is accelerating, so its velocity at $3.0\\,\\text{s}$ is greater. The instantaneous velocity is the slope of the tangent, not of the line drawn to the starting point."
+          }
+        ],
+        "solution": "**Given:** from the graph, two points of the tangent $(t_1;\\, x_1) = (1.8\\,\\text{s};\\, 1.8\\,\\text{m})$ and $(t_2;\\, x_2) = (4.2\\,\\text{s};\\, 16.2\\,\\text{m})$; the tangent is drawn at the moment $t = 3.0\\,\\text{s}$\n\n**Find:** the instantaneous velocity $v$ at $3.0\\,\\text{s}$, in $\\text{m/s}$\n\n**Principle:** The instantaneous velocity is the slope of the tangent of the $(t,x)$ graph at that point. The slope is calculated from two points of the tangent that are far apart, because then a reading error has little effect on the result.\n\n**Reading the graph:** The end points $(1.8\\,\\text{s};\\, 1.8\\,\\text{m})$ and $(4.2\\,\\text{s};\\, 16.2\\,\\text{m})$ are read from the tangent. Between them you get the time interval $\\Delta t$ and the change in position $\\Delta x$, and their ratio is the slope.\n\n**Formula:** $v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$\n\n**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.\n\n**Substitution:** $v = \\dfrac{16.2\\,\\text{m} - 1.8\\,\\text{m}}{4.2\\,\\text{s} - 1.8\\,\\text{s}} = \\dfrac{14.4\\,\\text{m}}{2.4\\,\\text{s}} = 6.0\\,\\text{m/s}$\n\n**Answer:** $6.0\\,\\text{m/s}$, two significant figures like the values read from the graph.\n\n**Reasonableness:** The velocity shown by the simulation is $v = a\\,t = 2.0\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{s} = 6.0\\,\\text{m/s}$, so the result agrees. It is also greater than the average velocity $9.0\\,\\text{m} : 3.0\\,\\text{s} = 3.0\\,\\text{m/s}$, as it should be when the cart is accelerating."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion from the experiments",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Write a conclusion from experiments 1 and 2: what does acceleration tell you about velocity, why does a cart accelerating from rest travel a longer distance every second, and what happens at the moment when the velocity is zero?",
+      "criteria": [
+        "I say that acceleration is the change in velocity per second and that in the tables the velocity changed by the same amount every second.",
+        "I explain the longer distances by the average velocity being greater during a later second, and I mention the distances $1.0\\,\\text{m}$, $3.0\\,\\text{m}$ and $5.0\\,\\text{m}$ or their ratio.",
+        "I say that in experiment 2 the acceleration was $-2.0\\,\\text{m/s}^2$ also when the velocity was zero, and that the cart then started back.",
+        "I say that the numbers are values of the simulation's model."
+      ],
+      "model": "In the simulation's model values the velocity changed every second by the acceleration: in experiment 1 it grew by $2.0\\,\\text{m/s}$ per second and in experiment 2 it decreased by $2.0\\,\\text{m/s}$ per second. In experiment 1 the cart's positions were $1.0\\,\\text{m}$, $4.0\\,\\text{m}$ and $9.0\\,\\text{m}$, so the distances in the seconds were $1.0\\,\\text{m}$, $3.0\\,\\text{m}$ and $5.0\\,\\text{m}$. The distance grows because during a later second the cart's average velocity is greater. In experiment 2 the velocity was $2.0\\,\\text{m/s}$, $0$ and $-2.0\\,\\text{m/s}$: the acceleration was $-2.0\\,\\text{m/s}^2$ also at the moment when the velocity was zero, and that is why the cart started to move back."
+    },
+    {
+      "id": "putoaminen",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Determining the acceleration of free fall",
+      "source": "example",
+      "figure": "fy4-2/fall-points",
+      "text": "A steel ball is dropped beside a tape measure and filmed. With video analysis software the distance $s$ that the ball has fallen is read from nine frames at intervals of $0.05\\,\\text{s}$. The first frame was taken just after the release, so the ball already has a small velocity. Over such a short distance air resistance is small.\n\n| $t$ (s) | $s$ (m) |\n|---|---|\n| 0.00 | 0.002 |\n| 0.05 | 0.018 |\n| 0.10 | 0.065 |\n| 0.15 | 0.128 |\n| 0.20 | 0.223 |\n| 0.25 | 0.338 |\n| 0.30 | 0.477 |\n| 0.35 | 0.646 |\n| 0.40 | 0.832 |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Fit a quadratic polynomial $s = A\\,t^2 + B\\,t + C$ to the points with a calculator or a spreadsheet. Use the coefficient of the fit to calculate the acceleration of free fall. Answer in m/s².",
+        "answer": 9.77,
+        "unit": "m/s²",
+        "tolerance": 0.02,
+        "hints": [
+          "Compare the polynomial with the equation of position $x = x_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Which coefficient of the polynomial corresponds to the term $\\tfrac{1}{2}\\,a$?",
+          "In a spreadsheet, choose a quadratic polynomial fit (trendline) for the points and show its equation. On a calculator, choose quadratic regression.",
+          "The coefficient of the fit is about $A \\approx 4.9\\,\\text{m/s}^2$. Since $\\tfrac{1}{2}\\,a = A$, we get $a = 2A$."
+        ],
+        "mistakes": [
+          {
+            "value": 4.88,
+            "feedback": "This is the coefficient $A$ of the polynomial. In the equation of position the coefficient of $t^2$ is $\\tfrac{1}{2}\\,a$, so the acceleration is twice the coefficient: $a = 2A$."
+          },
+          {
+            "value": 10.4,
+            "feedback": "You calculated the acceleration from a single point with the formula $a = \\dfrac{2s}{t^2}$. It assumes that the ball started from rest at time 0, but the ball already had a small initial velocity, and the error of a single point goes straight into the result. The fit uses all the points."
+          }
+        ],
+        "solution": "**Given:** nine measured points $(t, s)$ from the table, from time $0$ to $0.40\\,\\text{s}$; air resistance is small\n\n**Find:** the acceleration of free fall $a$, in $\\text{m/s}^2$\n\n**Principle:** When air resistance is small, the ball falls with constant acceleration, so its position is a quadratic function of time, $s = s_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Because of measurement uncertainty, measured points do not usually lie exactly on one curve, so a polynomial $s = A\\,t^2 + B\\,t + C$ is fitted to all the points and the acceleration is read from its coefficient.\n\n**Reading the graph:** The points rise as a curve bending upwards, so the velocity grows. The quadratic fit gives the coefficients $A \\approx 4.88\\,\\text{m/s}^2$, $B \\approx 0.126\\,\\text{m/s}$ and $C \\approx 0.001\\,\\text{m}$. The coefficient $B$ is the ball's small initial velocity in the first frame.\n\n**Formula:** Comparing the coefficients, $\\tfrac{1}{2}\\,a = A$, so $a = 2A$\n\n**Conversions:** The distances are in metres and the times in seconds, so $A$ is in $\\text{m/s}^2$. No conversions are needed.\n\n**Substitution:** $a = 2 \\cdot 4.884\\,\\text{m/s}^2 \\approx 9.77\\,\\text{m/s}^2$\n\n**Answer:** $9.77\\,\\text{m/s}^2$, three significant figures like the distances, which were read to the nearest millimetre.\n\n**Reasonableness:** The result differs from the table value $9.81\\,\\text{m/s}^2$ by less than one per cent, which fits the uncertainty of positions read from a video. A rough check: at the last point $\\tfrac{1}{2} \\cdot 9.77\\,\\text{m/s}^2 \\cdot (0.40\\,\\text{s})^2 \\approx 0.78\\,\\text{m}$, and the contribution of the initial velocity, $0.126\\,\\text{m/s} \\cdot 0.40\\,\\text{s} \\approx 0.05\\,\\text{m}$, raises it to the measured $0.83\\,\\text{m}$."
+      }
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the tables. What did you learn about the distances in successive seconds and about the acceleration at the moment when the velocity is zero? Return also to the stone at the beginning: why does it travel a longer distance in each time interval?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A car starts from rest and its acceleration is $3.0\\,\\text{m/s}^2$. A student calculates how far the car travels in $4.0\\,\\text{s}$. First she calculates the final velocity $v = a\\,t = 12\\,\\text{m/s}$ and then the distance $\\Delta x = v\\,t = 12\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 48\\,\\text{m}$. Where is the error?",
+      "choices": [
+        {
+          "text": "She calculated as if the car had driven at the final velocity the whole time; the correct result is $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2 = 24\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Correct. The velocity grows from zero to $12\\,\\text{m/s}$, so the average velocity is only $6.0\\,\\text{m/s}$ and the distance is $6.0\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 24\\,\\text{m}$, the same as $\\tfrac{1}{2}\\,a\\,t^2$. In the $(t,v)$ graph the distance is the area of a triangle, not of a rectangle."
+        },
+        {
+          "text": "The final velocity is calculated wrongly: it should be the acceleration divided by the time, $3.0 : 4.0$.",
+          "feedback": "Acceleration tells you how much the velocity grows per second, so in four seconds the velocity grows by $4 \\cdot 3.0\\,\\text{m/s} = 12\\,\\text{m/s}$. The final velocity is correct; the error is in the calculation of the distance."
+        },
+        {
+          "text": "There is no error in the calculation, because distance is always velocity times time.",
+          "feedback": "Distance is velocity times time only when the velocity stays constant. Here the velocity grows from zero to $12\\,\\text{m/s}$, so only the average velocity is a suitable factor."
+        },
+        {
+          "text": "The distance should be calculated with the formula $\\Delta x = a\\,t^2$, but the result $48\\,\\text{m}$ is still correct.",
+          "feedback": "The formula is missing the factor $\\tfrac{1}{2}$: in the $(t,v)$ graph the distance is the area of a triangle, $\\tfrac{1}{2} \\cdot 12\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 24\\,\\text{m}$, not $48\\,\\text{m}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A passenger plane starts from rest at the beginning of the runway and accelerates uniformly. It needs a speed of $75\\,\\text{m/s}$ to take off, and $1500\\,\\text{m}$ of runway is available. What is the least acceleration the plane must have? Answer in m/s².",
+      "answer": 1.875,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "There are two unknowns, the acceleration and the time. Write separate equations for the velocity and the displacement.",
+        "For a start from rest, $v = a\\,t$ and $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$. Solve $t$ from the first and substitute it into the second.",
+        "$\\Delta x = \\tfrac{1}{2}\\,a \\cdot \\left(\\tfrac{v}{a}\\right)^2 = \\tfrac{v^2}{2a}$, so $a = \\tfrac{v^2}{2\\,\\Delta x}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.75,
+          "feedback": "You forgot the factor $\\tfrac{1}{2}$. When the velocity grows from zero, the average velocity is half of the final velocity, so $\\Delta x = \\tfrac{v^2}{2a}$ and $a = \\tfrac{v^2}{2\\,\\Delta x}$."
+        },
+        {
+          "value": 0.05,
+          "feedback": "You divided the velocity by the distance. The result is not an acceleration: its unit is $\\tfrac{1}{\\text{s}}$. Write the equations $v = a\\,t$ and $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$ and eliminate the time from them."
+        }
+      ],
+      "solution": "**Given:** initial velocity $v_0 = 0$, take-off speed $v = 75\\,\\text{m/s}$, runway length $\\Delta x = 1500\\,\\text{m}$; the acceleration is constant\n\n**Find:** the least acceleration $a$, in $\\text{m/s}^2$\n\n**Principle:** The plane accelerates uniformly from rest, so $v = a\\,t$ and $\\Delta x = \\tfrac{1}{2}\\,a\\,t^2$. The least acceleration is the one with which the speed $75\\,\\text{m/s}$ is reached just at the end of the runway. The time is not known, so it is eliminated from the equations.\n\n**Formula:** From the first equation $t = \\tfrac{v}{a}$. Substituting into the second: $\\Delta x = \\tfrac{1}{2}\\,a \\left(\\tfrac{v}{a}\\right)^2 = \\tfrac{v^2}{2a}$, so $a = \\dfrac{v^2}{2\\,\\Delta x}$\n\n**Conversions:** The speed is in $\\text{m/s}$ and the distance in metres, so $\\tfrac{\\text{m}^2/\\text{s}^2}{\\text{m}} = \\text{m/s}^2$. No conversions are needed.\n\n**Substitution:** $a = \\dfrac{(75\\,\\text{m/s})^2}{2 \\cdot 1500\\,\\text{m}} = \\dfrac{5625\\,\\text{m}^2/\\text{s}^2}{3000\\,\\text{m}} \\approx 1.875\\,\\text{m/s}^2$\n\n**Answer:** $1.9\\,\\text{m/s}^2$, two significant figures like the speed $75\\,\\text{m/s}$.\n\n**Reasonableness:** With the acceleration $1.875\\,\\text{m/s}^2$ the speed $75\\,\\text{m/s}$ is reached in the time $t = 75\\,\\text{m/s} : 1.875\\,\\text{m/s}^2 = 40\\,\\text{s}$. The average velocity is $37.5\\,\\text{m/s}$, and $37.5\\,\\text{m/s} \\cdot 40\\,\\text{s} = 1500\\,\\text{m}$, exactly the length of the runway. A take-off run of about $40\\,\\text{s}$ and an acceleration of about $0.2\\,g$ match what passengers of an airliner experience."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise some more at three levels. Level 1 uses one formula, level 2 needs two steps or a unit conversion, and level 3 needs reasoning. Draw the $(t,v)$ graph in your notebook whenever it helps."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A ball is thrown straight up, and air resistance is small. What are the ball's velocity and acceleration at the highest point?",
+      "choices": [
+        {
+          "text": "$v = 0$ and $a = 9.81\\,\\text{m/s}^2$ downwards",
+          "correct": true,
+          "feedback": "Correct. At the highest point the ball is at rest for a moment, but its velocity changes all the time: upwards before the highest point, downwards after it. The acceleration is $g$ downwards during the whole flight."
+        },
+        {
+          "text": "$v = 0$ and $a = 0$, because the ball is at rest",
+          "feedback": "If the acceleration were zero, the velocity would not change and the ball would hover at the highest point. Acceleration tells you the change in velocity, and the velocity changes from pointing up to pointing down."
+        },
+        {
+          "text": "$v = 9.81\\,\\text{m/s}$ downwards and $a = 0$",
+          "feedback": "At the highest point the ball changes direction, so its velocity is zero for a moment. The value $9.81$ is the magnitude of the acceleration in $\\text{m/s}^2$, not a velocity."
+        },
+        {
+          "text": "$v = 0$ and $a = 9.81\\,\\text{m/s}^2$ upwards",
+          "feedback": "The direction of the acceleration does not reverse at the highest point. During the rise the velocity decreases and during the fall it grows downwards, so the acceleration points down all the time."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Reading a graph",
+      "figure": "fy4-2/check-tv",
+      "prompt": "The graph shows the velocity of an electric scooter as a function of time. How long a distance does the scooter travel from time $0$ to $8.0\\,\\text{s}$? Answer in metres.",
+      "answer": 32,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Which part of a $(t,v)$ graph tells you the displacement?",
+        "The displacement is the area between the line and the time axis from $0$ to $8.0\\,\\text{s}$. The region is a trapezoid: a rectangle with a triangle on top of it.",
+        "The rectangle $2.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s}$ and the triangle $\\tfrac{1}{2} \\cdot 4.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 48,
+          "feedback": "You multiplied the final velocity $6.0\\,\\text{m/s}$ by the whole time. The velocity grew from $2.0\\,\\text{m/s}$, so the area is a trapezoid, not a rectangle."
+        },
+        {
+          "value": 16,
+          "feedback": "You calculated only the rectangle $2.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s}$. Add the triangle on top of it, which comes from the growth of the velocity."
+        },
+        {
+          "value": 0.5,
+          "feedback": "This is the slope of the line, that is, the acceleration in $\\text{m/s}^2$. The distance is the area under the graph."
+        }
+      ],
+      "solution": "**Given:** from the graph, the velocity $v_0 = 2.0\\,\\text{m/s}$ at time $0$ and $v = 6.0\\,\\text{m/s}$ at $t = 8.0\\,\\text{s}$; the graph is a straight line\n\n**Find:** the distance travelled $\\Delta x$, in metres\n\n**Principle:** The area between the $(t,v)$ graph and the time axis is the displacement. The velocity is positive the whole time, so the displacement equals the distance travelled. A straight graph means uniform acceleration, so the region is a trapezoid.\n\n**Reading the graph:** The line starts at the point $(0;\\, 2.0\\,\\text{m/s})$ and ends at the point $(8.0\\,\\text{s};\\, 6.0\\,\\text{m/s})$. Both points are at crossings of grid lines, so the values are read exactly.\n\n**Formula:** The area of the trapezoid is the average velocity times the time: $\\Delta x = \\dfrac{v_0 + v}{2} \\cdot t$\n\n**Conversions:** The velocities are in $\\text{m/s}$ and the time in seconds, so the result comes out in metres. No conversions are needed.\n\n**Substitution:** $\\Delta x = \\dfrac{2.0\\,\\text{m/s} + 6.0\\,\\text{m/s}}{2} \\cdot 8.0\\,\\text{s} = 4.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s} = 32\\,\\text{m}$\n\n**Answer:** $32\\,\\text{m}$, two significant figures like the values read from the graph.\n\n**Reasonableness:** The same area in two pieces: the rectangle $2.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s} = 16\\,\\text{m}$ and the triangle $\\tfrac{1}{2} \\cdot 4.0\\,\\text{m/s} \\cdot 8.0\\,\\text{s} = 16\\,\\text{m}$, together $32\\,\\text{m}$. The result is greater than the $16\\,\\text{m}$ travelled at the lowest velocity and smaller than the $48\\,\\text{m}$ travelled at the highest velocity."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Explain the phenomenon at the beginning: why does a stone dropped from a bridge travel a longer distance during each second than during the second before? Use the concepts velocity, acceleration and average velocity.",
+      "criteria": [
+        "I say that the stone's acceleration is constant, $g = 9.81\\,\\text{m/s}^2$ downwards, so the velocity grows by the same amount every second.",
+        "I say that during a later second the stone's average velocity is greater, so in the same time it travels a longer distance.",
+        "I justify with numbers, for example the distances in the first and second seconds or the areas in the $(t,v)$ graph.",
+        "I mention the assumption that air resistance is small."
+      ],
+      "model": "When air resistance is small, the stone falls with constant acceleration $g = 9.81\\,\\text{m/s}^2$ downwards. Its velocity grows by about $9.8\\,\\text{m/s}$ every second: during the first second from zero to $9.8\\,\\text{m/s}$ and during the second from $9.8\\,\\text{m/s}$ to $19.6\\,\\text{m/s}$. Because the velocity grows steadily, the average velocity is the mean of the initial and final velocities: $4.9\\,\\text{m/s}$ for the first second and $14.7\\,\\text{m/s}$ for the second. The distance is the average velocity times the time, so the stone falls $4.9\\,\\text{m}$ during the first second and $14.7\\,\\text{m}$ during the second, three times as much. In the $(t,v)$ graph the distances are the areas under the line, which grow in the ratio $1 : 3 : 5 : 7$."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and open the answer only after that."
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "contribution": "Newtonin toinen laki $\\Sigma\\overline{F} = m\\overline{a}$ löydetään kärryn mittauksista. Kiihtyvyys on verrannollinen kokonaisvoimaan ja kääntäen verrannollinen massaan. Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei nopeuden suuntaan. Liikeyhtälö kirjoitetaan vasta voimakuvion ja positiivisen suunnan jälkeen, vaakasuunnassa ja pystysuunnassa.",
+  "learn": [
+    "selittämään, miten kiihtyvyys riippuu kokonaisvoimasta ja massasta.",
+    "päättelemään kokonaisvoiman suunnan kiihtyvyyden suunnasta, myös kun liike hidastuu.",
+    "laskemaan kiihtyvyyden tai voiman voimakuvion ja liikeyhtälön $\\Sigma F = ma$ avulla."
+  ],
+  "prior": [
+    "Kiihtyvyys on nopeuden muutos aikayksikössä, $a = \\dfrac{\\Delta v}{\\Delta t}$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)",
+    "Kun kappaleeseen vaikuttavat voimat kumoavat toisensa, kappale on levossa tai liikkuu tasaisella nopeudella (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Liikennevaloissa seisoo vierekkäin kaksi samanlaista puutavara-autoa. Toinen on tyhjä, ja toisessa on kuormana paljon tukkeja. Valo vaihtuu vihreäksi, ja molemmat kuljettajat kiihdyttävät yhtä lujaa. Muutamassa sekunnissa tyhjä auto on selvästi edellä.",
+      "question": "Mikä ratkaisee, kuinka nopeasti kappaleen nopeus muuttuu? Miksi sama moottori ei saa lastattua autoa vauhtiin yhtä nopeasti?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: tasainen liike",
+      "fbd": "identify",
+      "prompt": "Kiekko liukuu vaakasuoralla jäällä suoraan eteenpäin tasaisella nopeudella. Kitka ja ilmanvastus ovat niin pieniä, että ne jätetään huomiotta. Mitkä voimat vaikuttavat kiekkoon?",
+      "choices": [
+        {
+          "text": "Paino ja jään tukivoima. Ne kumoavat toisensa, joten kokonaisvoima on nolla.",
+          "correct": true,
+          "feedback": "Oikein. Kiekkoon vaikuttavat vain Maa ja jää. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että tasainen liike ei tarvitse eteenpäin vievää voimaa. Kun kokonaisvoima on nolla, nopeus pysyy samana."
+        },
+        {
+          "text": "Paino, jään tukivoima ja eteenpäin vievä voima, joka pitää kiekon liikkeessä.",
+          "feedback": "Mikään ei työnnä kiekkoa liukumisen aikana, joten eteenpäin vievää voimaa ei ole. Kiekko jatkaa liikettään ilman voimaa, koska nopeus muuttuu vain silloin, kun kokonaisvoima ei ole nolla."
+        },
+        {
+          "text": "Vain paino. Jää ei vaikuta liikkuvaan kiekkoon.",
+          "feedback": "Kiekko ei vajoa jään läpi, joten jää tukee sitä ylöspäin. Jos mikään ei kumoaisi painoa, kiekko kiihtyisi alaspäin."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: voima kaksinkertaistuu",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kärry lähtee levosta vaakasuoralla radalla, jolla kitka on hyvin pieni. Naru vetää kärryä vakiovoimalla. Mitä kärryn liikkeelle tapahtuu, kun vetävä voima kaksinkertaistetaan ja massa pysyy samana?",
+      "choices": [
+        {
+          "text": "Kiihtyvyys kaksinkertaistuu: nopeus kasvaa joka sekunti kaksi kertaa enemmän.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa $1{,}0\\,\\text{kg}$:n kärryn kiihtyvyys on $1{,}0\\,\\text{m/s}^2$ voimalla $1{,}0\\,\\text{N}$ ja $2{,}0\\,\\text{m/s}^2$ voimalla $2{,}0\\,\\text{N}$. Kiihtyvyys on suoraan verrannollinen kokonaisvoimaan."
+        },
+        {
+          "text": "Kärry saavuttaa kaksi kertaa suuremman nopeuden ja jatkaa sitten tasaisesti.",
+          "feedback": "Vakiovoima ei anna vakionopeutta. Kuvaajassa nopeus kasvaa koko ajan tasaisesti, eikä se pysähdy mihinkään arvoon. Voima muuttaa nopeutta: kaksinkertainen voima kaksinkertaistaa kiihtyvyyden. Mallin arvoissa kiihtyvyys kasvaa $1{,}0\\,\\text{m/s}^2$:stä $2{,}0\\,\\text{m/s}^2$:een."
+        },
+        {
+          "text": "Kiihtyvyys ei muutu, koska se riippuu vain kärryn massasta.",
+          "feedback": "Massa vaikuttaa kiihtyvyyteen, mutta niin vaikuttaa voimakin. Mallin arvoissa sama $1{,}0\\,\\text{kg}$:n kärry kiihtyy $1{,}0\\,\\text{m/s}^2$ voimalla $1{,}0\\,\\text{N}$ ja $2{,}0\\,\\text{m/s}^2$ voimalla $2{,}0\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: massa kaksinkertaistuu",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Naru vetää kärryä levosta vakiovoimalla $1{,}0\\,\\text{N}$. Kärryyn lisätään punnuksia, ja sen massa kaksinkertaistuu. Mitä kiihtyvyydelle tapahtuu?",
+      "choices": [
+        {
+          "text": "Kiihtyvyys puolittuu.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa kiihtyvyys on $2{,}0\\,\\text{m/s}^2$ massalla $0{,}50\\,\\text{kg}$ ja $1{,}0\\,\\text{m/s}^2$ massalla $1{,}0\\,\\text{kg}$. Sama voima muuttaa kaksi kertaa massiivisemman kappaleen nopeutta puolet hitaammin."
+        },
+        {
+          "text": "Kiihtyvyys pysyy samana, koska vetävä voima on sama.",
+          "feedback": "Voima on sama, mutta sen täytyy muuttaa suuremman massan nopeutta. Mallin arvoissa kiihtyvyys pienenee $2{,}0\\,\\text{m/s}^2$:stä $1{,}0\\,\\text{m/s}^2$:een, kun massa kasvaa $0{,}50\\,\\text{kg}$:sta $1{,}0\\,\\text{kg}$:aan."
+        },
+        {
+          "text": "Kärry ei lähde liikkeelle, jos vetävä voima on pienempi kuin kärryn paino.",
+          "feedback": "Vaakasuoralla radalla paino osoittaa pystysuoraan alas, ja radan tukivoima kumoaa sen. Vaakasuoran vedon ei tarvitse voittaa painoa. Jo $1{,}0\\,\\text{N}$ kiihdyttää kärryä, jonka paino on lähes $10\\,\\text{N}$. Mallin arvoissa kiihtyvyys on silloin $1{,}0\\,\\text{m/s}^2$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: voima liikettä vastaan",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-3",
+        "min": 2
+      },
+      "prompt": "Kärry liikkuu oikealle. Naru alkaa vetää sitä vakiovoimalla vasemmalle. Mihin suuntaan kärryn kiihtyvyys osoittaa sinä aikana, kun kärry vielä liikkuu oikealle?",
+      "choices": [
+        {
+          "text": "Vasemmalle, voiman suuntaan: kärry hidastuu, pysähtyy hetkeksi ja lähtee vasemmalle.",
+          "correct": true,
+          "feedback": "Oikein. Kuvaajassa nopeus pienenee tasaisesti nollaan ja muuttuu negatiiviseksi samalla kulmakertoimella. Mallin arvoissa kiihtyvyys on $-2{,}0\\,\\text{m/s}^2$ koko ajon ajan, kun $2{,}0\\,\\text{N}$ vetää $1{,}0\\,\\text{kg}$:n kärryä vasemmalle."
+        },
+        {
+          "text": "Oikealle, liikkeen suuntaan, kunnes kärry pysähtyy.",
+          "feedback": "Kiihtyvyys ei osoita liikkeen suuntaan vaan nopeuden muutoksen suuntaan. Kärryn nopeus oikealle pienenee, joten muutos osoittaa vasemmalle. Mallin arvoissa kiihtyvyys on $-2{,}0\\,\\text{m/s}^2$ jo ennen pysähtymistä."
+        },
+        {
+          "text": "Kiihtyvyys on nolla siihen asti, kunnes kärry pysähtyy, ja osoittaa sitten vasemmalle.",
+          "feedback": "Jos kiihtyvyys olisi nolla, nopeus ei muuttuisi eikä kärry pysähtyisi. Kuvaajassa nopeus pienenee heti, kun naru alkaa vetää. Mallin arvoissa kiihtyvyys on $-2{,}0\\,\\text{m/s}^2$ koko ajan."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa naru vetää laboratoriokärryä vaakasuoralla radalla. Ylhäällä on tilannekuva, oikealla kärryn voimakuvio ja alhaalla nopeuden kuvaaja. Kuvaajan kulmakerroin on kiihtyvyys.",
+      "howto": "Säädä vetävää voimaa $F$ ja massaa $m$. Valitse, onko kärry alussa levossa vai liikkeessä oikealle, ja kumpaan suuntaan naru vetää. Paina *Käynnistä*. Ajo kestää $1{,}0\\,\\text{s}$ tai loppuu ennen radan päätä. Ajon jälkeen kuvaajaan piirtyy oranssi suora, ja sen kulmakerroin $a_x$ näkyy lukemissa. *Alusta* palauttaa kärryn alkuun. *Nopeus* hidastaa tai nopeuttaa liikettä, mutta lukemat eivät muutu.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Rata on vaakasuora, eikä kitkaa tai ilmanvastusta oteta huomioon. Kärryyn vaikuttavat paino $\\overline{G}$, radan tukivoima $\\overline{N}$ ja narun voima $\\overline{F}$. Paino ja tukivoima kumoavat toisensa, joten kokonaisvoima on narun voima. Narun voima pysyy vakiona koko ajon ajan. Voimakuvion nuolet on piirretty samaan mittakaavaan, joten vetävä voima näyttää lyhyeltä painon rinnalla.",
+      "calc": "Positiivinen suunta on oikealle. Kärryn nopeus $v_x$ kirjataan kuvaajaan $0{,}05\\,\\text{s}$:n välein. Kiihtyvyys $a_x$ on pisteisiin sovitetun suoran kulmakerroin $\\dfrac{\\Delta v_x}{\\Delta t}$. Lukemissa $\\Sigma F_x$ on narun voima etumerkkeineen ja $G = mg$, kun $g = 9{,}81\\,\\text{m/s}^2$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vetävä voima muuttuu",
+      "intro": "Testaa ensimmäinen ennuste. Alkutilassa massa on $1{,}0\\,\\text{kg}$ ja kärry on levossa, ja naru vetää oikealle. Muuta vain voimaa $F$. Paina joka kerta *Käynnistä* ja kirjaa mittaus, kun ajo on päättynyt. Kokeile ainakin voimia $1{,}0\\,\\text{N}$ ja $2{,}0\\,\\text{N}$.",
+      "initial": {
+        "alku": "levosta",
+        "suunta": "oikea",
+        "m": "1",
+        "F": 1
+      },
+      "names": {
+        "F": "voima F",
+        "m": "massa m",
+        "alku": "alussa",
+        "suunta": "naru vetää"
+      },
+      "units": {
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "alku": {
+          "levosta": "levossa"
+        },
+        "suunta": {
+          "oikea": "oikealle"
+        },
+        "m": {
+          "1": "$1{,}0\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "alku",
+        "suunta",
+        "m"
+      ],
+      "vary": "F",
+      "measure": [
+        {
+          "key": "sumFx",
+          "label": "$\\Sigma F_x$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a_x$ (m/s$^2$)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: massa muuttuu",
+      "intro": "Testaa toinen ennuste. Alkutilassa voima on $1{,}0\\,\\text{N}$ ja kärry on levossa, ja naru vetää oikealle. Muuta vain massaa $m$. Paina *Käynnistä* ja kirjaa mittaus jokaisella massalla.",
+      "initial": {
+        "alku": "levosta",
+        "suunta": "oikea",
+        "F": 1,
+        "m": "0.5"
+      },
+      "names": {
+        "F": "voima F",
+        "m": "massa m",
+        "alku": "alussa",
+        "suunta": "naru vetää"
+      },
+      "units": {
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "alku": {
+          "levosta": "levossa"
+        },
+        "suunta": {
+          "oikea": "oikealle"
+        },
+        "m": {
+          "0.5": "$0{,}50\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "alku",
+        "suunta",
+        "F"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "m",
+          "label": "$m$ (kg)"
+        },
+        {
+          "key": "a",
+          "label": "$a_x$ (m/s$^2$)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: voima liikettä vastaan",
+      "optional": true,
+      "intro": "Testaa kolmas ennuste. Alkutilassa voima on $2{,}0\\,\\text{N}$, massa on $1{,}0\\,\\text{kg}$ ja kärry liikkuu alussa oikealle. Muuta vain narun suuntaa. Katso ajon aikana sinistä ja oranssia nuolta sekä kuvaajan pisteitä. Kirjaa mittaus kummallakin suunnalla.",
+      "initial": {
+        "alku": "vauhdissa",
+        "suunta": "oikea",
+        "F": 2,
+        "m": "1"
+      },
+      "names": {
+        "F": "voima F",
+        "m": "massa m",
+        "alku": "alussa",
+        "suunta": "naru vetää"
+      },
+      "units": {
+        "F": "N",
+        "m": "kg"
+      },
+      "values": {
+        "alku": {
+          "vauhdissa": "liikkeessä oikealle"
+        },
+        "suunta": {
+          "oikea": "oikealle",
+          "vasen": "vasemmalle"
+        },
+        "m": {
+          "1": "$1{,}0\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "alku",
+        "F",
+        "m"
+      ],
+      "vary": "suunta",
+      "measure": [
+        {
+          "key": "sumFx",
+          "label": "$\\Sigma F_x$ (N)"
+        },
+        {
+          "key": "a",
+          "label": "$a_x$ (m/s$^2$)"
+        },
+        {
+          "key": "v",
+          "label": "$v_x$ lopussa (m/s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Kun naru vetää vasemmalle, kärryn nopeus on alussa positiivinen ja kiihtyvyys on negatiivinen. Mitä tästä voi päätellä?",
+        "choices": [
+          {
+            "text": "Kokonaisvoima ja kiihtyvyys osoittavat samaan suuntaan, vaikka nopeus ei osoita.",
+            "correct": true,
+            "feedback": "Oikein. Taulukossa $\\Sigma F_x$ ja $a_x$ ovat aina samanmerkkiset. Nopeuden suunta ei ratkaise kiihtyvyyden suuntaa."
+          },
+          {
+            "text": "Kiihtyvyys osoittaa aina nopeutta vastaan, kun kärryyn vaikuttaa jokin voima.",
+            "feedback": "Kun naru vetää oikealle, kiihtyvyys ja nopeus ovat molemmat positiivisia. Kiihtyvyys seuraa kokonaisvoimaa, ei nopeutta."
+          },
+          {
+            "text": "Kärry liikkuu alussa oikealle, joten myös kokonaisvoima osoittaa silloin oikealle.",
+            "feedback": "Taulukossa $\\Sigma F_x$ on negatiivinen koko ajon ajan, koska ainoa vaakasuora voima on narun veto vasemmalle. Liike ei tee voimaa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, miten kärryn kiihtyvyys riippuu kokonaisvoimasta ja massasta. Selitä sitten, miksi lastattu kuorma-auto kiihtyy hitaammin kuin tyhjä auto, kun tien voima renkaisiin on sama.",
+      "criteria": [
+        "Vastaus kertoo, että kiihtyvyys kaksinkertaistuu, kun kokonaisvoima kaksinkertaistuu ja massa pysyy samana.",
+        "Vastaus kertoo, että kiihtyvyys puolittuu, kun massa kaksinkertaistuu ja voima pysyy samana.",
+        "Vastaus käyttää omia mittaustuloksia, esimerkiksi kahta kiihtyvyyttä ja niiden suhdetta.",
+        "Vastaus selittää kuorma-auton hitaamman kiihtymisen suurella massalla eikä painolla, jonka tien tukivoima kumoaa."
+      ],
+      "model": "Kokeessa 1 massa oli $1{,}0\\,\\text{kg}$. Mallin arvoissa kiihtyvyys oli $1{,}0\\,\\text{m/s}^2$ voimalla $1{,}0\\,\\text{N}$ ja $2{,}0\\,\\text{m/s}^2$ voimalla $2{,}0\\,\\text{N}$. Kaksinkertainen kokonaisvoima antoi siis kaksinkertaisen kiihtyvyyden. Kokeessa 2 voima oli $1{,}0\\,\\text{N}$. Kiihtyvyys oli $2{,}0\\,\\text{m/s}^2$ massalla $0{,}50\\,\\text{kg}$ ja $1{,}0\\,\\text{m/s}^2$ massalla $1{,}0\\,\\text{kg}$. Kaksinkertainen massa puolitti siis kiihtyvyyden. Kiihtyvyys on verrannollinen kokonaisvoimaan ja kääntäen verrannollinen massaan, $a = \\dfrac{\\Sigma F}{m}$. Lastatun kuorma-auton massa on moninkertainen tyhjään autoon verrattuna. Kun tien voima renkaisiin on sama, kiihtyvyys on yhtä monta kertaa pienempi. Lastin paino ei vedä autoa taaksepäin, koska tien tukivoima kumoaa sen."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Mikä yllätti eniten? Kirjoita omin sanoin, mitä kokonaisvoiman suunta kertoo ja mitä se ei kerro.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Valitse oikea voimakuvio",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "Nosturi laskee laatikkoa köyden varassa alaspäin. Juuri ennen maata laatikko hidastuu ja pysähtyy. Missä kuviossa laatikon voimakuvio on oikein hidastumisen aikana? Ilmanvastus jätetään huomiotta. Jokaisessa väärässä kuviossa on yksi virhe.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-4/valitse-a",
+          "correct": true,
+          "feedback": "Oikein. Laatikko liikkuu alas mutta hidastuu, joten kiihtyvyys osoittaa ylös. Kokonaisvoiman täytyy osoittaa kiihtyvyyden suuntaan: $T - G = ma$, eli $T > G$."
+        },
+        {
+          "text": "",
+          "figure": "fy4-4/valitse-b",
+          "feedback": "Yhtä pitkät nuolet tarkoittavat, että kokonaisvoima on nolla. Silloin laatikko liikkuisi tasaisella nopeudella eikä hidastuisi. Hidastuvan laatikon kiihtyvyys osoittaa ylös, joten köyden voiman täytyy olla suurempi kuin paino."
+        },
+        {
+          "text": "",
+          "figure": "fy4-4/valitse-c",
+          "feedback": "Tässä kokonaisvoima osoittaa alas, nopeuden suuntaan. Silloin laatikon nopeus kasvaisi. Kun laatikko hidastuu, kiihtyvyys ja kokonaisvoima osoittavat ylös, liikettä vastaan."
+        },
+        {
+          "text": "",
+          "figure": "fy4-4/valitse-d",
+          "feedback": "Liike ei aiheuta voimaa. Voimalla $\\overline{F}$ ei ole aiheuttajaa, koska laatikkoon vaikuttavat vain Maa ja köysi. Muuten kuvio olisi oikein."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "fbd": "equations",
+      "prompt": "Henkilöauton massa on $1400\\,\\text{kg}$, ja se ajaa vaakasuoralla tiellä nopeudella $72\\,\\text{km/h}$. Kuljettaja jarruttaa, ja auto pysähtyy $4{,}0\\,\\text{s}$:ssa. Auton nopeus pienenee koko ajan yhtä nopeasti. Kuinka suuri on autoon vaikuttava kokonaisvoima jarrutuksen aikana? Vastaa newtoneina.",
+      "answer": 7000,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Kokonaisvoima saadaan laista $\\Sigma F = ma$. Mitä sinun pitää tietää ensin, ja mistä saat sen?",
+        "Kiihtyvyys on nopeuden muutos jaettuna ajalla: $a = \\dfrac{\\Delta v}{\\Delta t}$. Muunna nopeus ensin yksikköön $\\text{m/s}$.",
+        "$72\\,\\text{km/h} = 20\\,\\text{m/s}$, joten $a = \\dfrac{0 - 20\\,\\text{m/s}}{4{,}0\\,\\text{s}} = -5{,}0\\,\\text{m/s}^2$. Kerro tulos massalla."
+      ],
+      "mistakes": [
+        {
+          "value": 25200,
+          "feedback": "Käytit nopeutta $72$ sellaisenaan. Nopeus täytyy muuttaa yksikköön $\\text{m/s}$ ennen kuin kiihtyvyys lasketaan: $72\\,\\text{km/h} = 72 : 3{,}6\\,\\text{m/s} = 20\\,\\text{m/s}$."
+        },
+        {
+          "value": 5.0,
+          "feedback": "Tämä on hidastuvuus yksikössä $\\text{m/s}^2$. Kokonaisvoima saadaan kertomalla hidastuvuus auton massalla: $\\Sigma F = ma$."
+        },
+        {
+          "value": 13734,
+          "feedback": "Tämä on auton paino $mg$. Paino ja tien tukivoima kumoavat toisensa, eivätkä ne pysäytä autoa. Kokonaisvoima on vaakasuora: $ma$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 1400\\,\\text{kg}$, alkunopeus $v_0 = 72\\,\\text{km/h}$, loppunopeus $v = 0$, aika $\\Delta t = 4{,}0\\,\\text{s}$, auto hidastuu tasaisesti\n\n**Kysytty:** kokonaisvoiman suuruus $\\Sigma F$ yksikössä $\\text{N}$\n\n**Periaate:** Auton nopeus muuttuu tasaisesti, joten kiihtyvyys on vakio. Newtonin toisen lain mukaan kokonaisvoima on massa kertaa kiihtyvyys. Kokonaisvoima osoittaa kiihtyvyyden suuntaan eli taaksepäin.\n\n**Voimakuvio:** Auto piirretään suorakulmiona, ja positiivinen suunta on liikkeen suunta. Paino $\\overline{G}$ lähtee keskipisteestä alas ja tien tukivoima $\\overline{N}$ renkaiden kohdalta ylös. Nuolet ovat yhtä pitkät. Tien kitkavoima $\\overline{F}_\\mu$ lähtee renkaiden kosketuskohdasta taaksepäin. Eteenpäin vievää voimaa ei ole.\n\n**Kaava:** $a = \\dfrac{v - v_0}{\\Delta t}$ ja $\\Sigma F = ma$, joten $\\Sigma F = \\dfrac{m(v - v_0)}{\\Delta t}$\n\n**Muunnokset:** $72\\,\\text{km/h} = 72 : 3{,}6\\,\\text{m/s} = 20\\,\\text{m/s}$\n\n**Sijoitus:** $\\Sigma F = \\dfrac{1400\\,\\text{kg}\\cdot(0 - 20\\,\\text{m/s})}{4{,}0\\,\\text{s}} = 1400\\,\\text{kg}\\cdot(-5{,}0\\,\\text{m/s}^2) = -7000\\,\\text{N}$\n\n**Vastaus:** $7000\\,\\text{N}$ eli $7{,}0\\,\\text{kN}$ taaksepäin. Vastauksessa on kaksi merkitsevää numeroa, koska ajassa $4{,}0\\,\\text{s}$ ja nopeudessa $72\\,\\text{km/h}$ on kaksi numeroa. Miinusmerkki kertoo, että voima osoittaa liikettä vastaan.\n\n**Järkevyys:** Auton paino on noin $14\\,\\text{kN}$, joten jarruttava voima on noin puolet painosta. Hidastuvuus $5{,}0\\,\\text{m/s}^2$ on noin puolet putoamiskiihtyvyydestä. Se on tavallinen reipas jarrutus kuivalla tiellä. Voima osoittaa taaksepäin, vaikka auto liikkuu eteenpäin, koska auto hidastuu."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Kun tehtävässä on voimia, piirrä ensin voimakuvio ja valitse positiivinen suunta. Kirjoita vasta sitten $\\Sigma F = ma$. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "fbd": "identify",
+      "prompt": "Pallo on heitetty suoraan ylös, ja se nousee vielä. Ilmanvastus jätetään huomiotta. Mikä väite pallon kokonaisvoimasta on oikein nousun aikana?",
+      "choices": [
+        {
+          "text": "Kokonaisvoima on pallon paino, ja se osoittaa alas, vaikka pallo liikkuu ylös.",
+          "correct": true,
+          "feedback": "Oikein. Kun heittäjän käsi on irronnut pallosta, siihen vaikuttaa vain Maa. Kokonaisvoima osoittaa alas, joten myös kiihtyvyys osoittaa alas ja nouseva pallo hidastuu."
+        },
+        {
+          "text": "Kokonaisvoima osoittaa ylös, koska pallo liikkuu ylös.",
+          "feedback": "Liike ei aiheuta voimaa. Heittäjän voima vaikutti vain heiton aikana. Nousun aikana palloon vaikuttaa vain paino alaspäin, ja siksi pallo hidastuu."
+        },
+        {
+          "text": "Kokonaisvoima on nolla, koska heiton voima ja paino ovat yhtä suuret.",
+          "feedback": "Jos kokonaisvoima olisi nolla, pallo jatkaisi ylöspäin tasaisella nopeudella eikä koskaan kääntyisi. Heiton voimaa ei ole enää, kun käsi on irronnut pallosta."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "fbd": "equations",
+      "prompt": "Ostoskärryn massa on $18\\,\\text{kg}$, ja sitä työnnetään vaakasuoralla lattialla $30\\,\\text{N}$:n voimalla. Pyörien vierimisvastus ja muu kitka jarruttavat kärryä yhteensä $12\\,\\text{N}$:n voimalla. Kuinka suuri on kärryn kiihtyvyys? Vastaa yksikössä $\\text{m/s}^2$.",
+      "answer": 1.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Piirrä kärryn voimakuvio. Mitkä voimat ovat vaakasuoria, ja mitkä kumoavat toisensa pystysuunnassa?",
+        "Valitse positiiviseksi suunnaksi työnnön suunta. Vaakasuunnassa $F - F_\\mu = ma$.",
+        "$a = \\dfrac{30\\,\\text{N} - 12\\,\\text{N}}{18\\,\\text{kg}}$. Laske tämä."
+      ],
+      "mistakes": [
+        {
+          "value": 1.667,
+          "feedback": "Jaoit vain työntövoiman massalla. Kiihtyvyyden määrää kokonaisvoima. Vähennä siis ensin jarruttava $12\\,\\text{N}$: $\\Sigma F = 30\\,\\text{N} - 12\\,\\text{N}$."
+        },
+        {
+          "value": 2.333,
+          "feedback": "Laskit voimat yhteen. Jarruttava voima osoittaa työntöä vastaan, joten sen etumerkki on negatiivinen: $\\Sigma F = 30\\,\\text{N} - 12\\,\\text{N} = 18\\,\\text{N}$."
+        }
+      ],
+      "solution": "**Annettu:** $m = 18\\,\\text{kg}$, työntövoima $F = 30\\,\\text{N}$ vaakasuoraan, jarruttavat voimat yhteensä $F_\\mu = 12\\,\\text{N}$\n\n**Kysytty:** kärryn kiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Kärryn kiihtyvyyden määrää kokonaisvoima Newtonin toisen lain mukaan. Pystysuunnassa kärry ei kiihdy, joten kokonaisvoimaan jäävät vain vaakasuorat voimat.\n\n**Voimakuvio:** Kärry piirretään suorakulmiona, ja positiivinen suunta on työnnön suunta. Paino $\\overline{G}$ lähtee keskipisteestä alas ja lattian tukivoima $\\overline{N}$ alapinnasta ylös. Nuolet ovat yhtä pitkät. Työntövoima $\\overline{F}$ osoittaa eteenpäin. Jarruttava voima $\\overline{F}_\\mu$ lähtee alapinnan reunasta taaksepäin, ja se on lyhyempi kuin työntövoima.\n\n**Kaava:** $F - F_\\mu = ma$, joten $a = \\dfrac{F - F_\\mu}{m}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\\tfrac{\\text{N}}{\\text{kg}} = \\tfrac{\\text{m}}{\\text{s}^2}$. Muunnoksia ei siis tarvita.\n\n**Sijoitus:** $a = \\dfrac{30\\,\\text{N} - 12\\,\\text{N}}{18\\,\\text{kg}} = \\dfrac{18\\,\\text{N}}{18\\,\\text{kg}} = 1{,}0\\,\\text{m/s}^2$\n\n**Vastaus:** $1{,}0\\,\\text{m/s}^2$ työnnön suuntaan. Vastauksessa on kaksi merkitsevää numeroa, koska lähtötiedoissa $30\\,\\text{N}$, $12\\,\\text{N}$ ja $18\\,\\text{kg}$ on kaksi numeroa.\n\n**Järkevyys:** Ilman jarruttavia voimia kiihtyvyys olisi $30\\,\\text{N} : 18\\,\\text{kg} \\approx 1{,}7\\,\\text{m/s}^2$. Kitka pienentää kiihtyvyyttä, kuten pitääkin. Kiihtyvyys $1\\,\\text{m/s}^2$ tarkoittaa, että kärryn nopeus kasvaa joka sekunti $1\\,\\text{m/s}$:lla. Se sopii reippaaseen työntöön."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä itse",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-4/malli-kirja",
+      "prompt": "Kirjan massa on $1{,}2\\,\\text{kg}$, ja kirja on vaakasuoralla pöydällä. Työnnät kirjaa kädellä vaakasuoraan $5{,}0\\,\\text{N}$:n voimalla, ja pöydän kitkavoima kirjaan on $3{,}0\\,\\text{N}$. Piirrä kirjan voimakuvio paperille: kirja suorakulmiona ja jokainen voima omasta vaikutuskohdastaan. Merkitse kiihtyvyyden suunta erikseen kuvion viereen. Kirjoita sitten liikeyhtälöt vaakasuunnassa ja pystysuunnassa ja laske kirjan kiihtyvyys.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "Kuviossa on vain kirja. Siinä ei ole kättä eikä pöytää omine voimineen."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Neljä voimaa: paino, pöydän tukivoima, käden työntövoima ja pöydän kitkavoima. Liikkeen suuntaista lisävoimaa ei ole."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "Paino osoittaa alas, tukivoima ylös, työntövoima liikkeen suuntaan ja kitka liikettä vastaan."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "Paino lähtee keskipisteestä. Tukivoima lähtee alapinnasta, erillään painosta. Kitka lähtee alapinnan reunasta kirjan ulkopuolelle. Työntövoima lähtee kirjan kyljestä. Jokaisella on oma tunnus."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Tukivoima ja paino ovat yhtä pitkät, ja kitka on lyhyempi kuin työntövoima. Kiihtyvyys on merkitty erikseen eikä voimaksi."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "Vaakasuunnassa $F - F_\\mu = ma$ ja pystysuunnassa $N - mg = 0$. Positiiviset suunnat on nimetty. Tulos on $a \\approx 1{,}7\\,\\text{m/s}^2$."
+        }
+      ],
+      "model": "Kirjaan vaikuttavat Maa (paino $\\overline{G}$), pöytä (tukivoima $\\overline{N}$ ja kitkavoima $\\overline{F}_\\mu$) ja käsi (työntövoima $\\overline{F}$). Pystysuunnassa kirja ei kiihdy, joten $N - mg = 0$ ja $N = mg = 1{,}2\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\approx 11{,}8\\,\\text{N}$. Vaakasuunnassa positiivinen suunta on työnnön suunta, ja $F - F_\\mu = ma$. Siis $a = \\dfrac{F - F_\\mu}{m} = \\dfrac{5{,}0\\,\\text{N} - 3{,}0\\,\\text{N}}{1{,}2\\,\\text{kg}} \\approx 1{,}7\\,\\text{m/s}^2$. Kokonaisvoima $2{,}0\\,\\text{N}$ ja kiihtyvyys osoittavat työnnön suuntaan."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

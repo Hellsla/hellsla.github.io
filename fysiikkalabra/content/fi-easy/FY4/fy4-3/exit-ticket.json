@@ -1,0 +1,11 @@
+[
+  {
+    "q": "Avaruusluotain kulkee kaukana tähdistä ja planeetoista moottori sammutettuna. Tarvitaanko voimaa, jotta luotain jatkaisi matkaansa?",
+    "fbd": "identify",
+    "a": "Ei tarvita. Kun luotaimeen ei vaikuta voimia, Newtonin ensimmäisen lain mukaan se jatkaa suoraan samalla nopeudella. Moottoria tarvitaan vain, kun nopeuden suuruutta tai suuntaa halutaan muuttaa."
+  },
+  {
+    "q": "Hyttynen osuu ajavan auton tuulilasiin. Kumpaan kohdistuu törmäyksessä suurempi voima, hyttyseen vai autoon?",
+    "a": "Voimat ovat yhtä suuret ja vastakkaissuuntaiset, koska ne kuuluvat samaan vuorovaikutukseen (Newtonin kolmas laki). Seuraukset ovat erilaiset. Kevyen hyttysen liike muuttuu rajusti, mutta raskaan auton liike ei käytännössä muutu."
+  }
+]

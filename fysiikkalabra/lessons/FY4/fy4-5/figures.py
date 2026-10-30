@@ -95,7 +95,7 @@ def tilanne():
     box(f, 120, 170, 80, 60)
     rope(f, 160, 160, 160 + 100 * math.cos(math.radians(30)), 160 - 100 * math.sin(math.radians(30)))
     hand(f, 160 + 100 * math.cos(math.radians(30)), 160 - 100 * math.sin(math.radians(30)))
-    FBD(f, 1).motion(r"\mathbf{v}", (1, 0), (90, 110), 70)
+    FBD(f, 1).motion(r"\overline{v}", (1, 0), (90, 110), 70)
     f.line(300, 20, 300, 320, RULE, 1.5, "6 6")
     # right: the force diagram of the box alone
     f.tex(450, 22, r"\text{voimakuvio}", "middle", MUTED)
@@ -163,7 +163,7 @@ def suunnat():
     B = (515, 490, 70, 40)
     Gp, Fb = 40.0, 100.0
     d = FBD(f, 1.0, body=B, a_dir=(0, 0))
-    d.force("F_noste", (0, Fb), (B[0], B[1]), "buoyancy", tex=r"\mathbf{F}_\text{noste}", lab=(40, 12))
+    d.force("F_noste", (0, Fb), (B[0], B[1]), "buoyancy", tex=r"\overline{F}_\text{noste}", lab=(40, 12))
     d.force("G", (0, -Gp), (B[0], B[1]), "gravity", lab=(18, 4))
     d.force("N", (0, -(Fb - Gp)), (B[0] - 20, B[1] - B[3] / 2), "normal", surface=0, outward=(0, -1), push=True, lab=(-20, -6))
     d.draw()
@@ -203,7 +203,7 @@ def esimerkki():
     P = (cx + w / 2, cy - h / 2)                                   # the rope's attachment: the front top corner
     d = FBD(f, 1.15, body=(cx, cy, w, h), m=m, a=(a, 0))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(20, -4))
-    d.force("N", (0, N), (cx + 20, cy + h / 2), "normal", surface=0, lab=(-20, 6))
+    d.force("N", (0, N), (cx + 20, cy + h / 2), "normal", surface=0, lab=(-30, 6))
     d.force("T", (F * math.cos(al), F * math.sin(al)), P, "tension", rope=(math.cos(al), math.sin(al)), lab=(16, -10))
     d.force("F_mu", (-Fmu, 0), (cx - w / 2, cy + h / 2), "friction", surface=0, lab=(-10, -16))
     d.component("T_x", "T", (1, 0), lab=(0, 24)); d.component("T_y", "T", (0, 1), lab=(-28, 4))
@@ -245,7 +245,7 @@ def _lift(name, N_over_G, desc, wrong=None, v_force=False):
     d.draw()
     if v_force:                                                    # the error: the velocity drawn as one more red force arrow
         (FBD(f, 1.15, body=(cx, cy, w, h), draw_body=False, wrong="velocity as a force")
-         .force("v", (0, 45), (cx + w / 2, cy - 10), "other", tex=r"\mathbf{v}", lab=(18, 8)).draw())
+         .force("v", (0, 45), (cx + w / 2, cy - 10), "other", tex=r"\overline{v}", lab=(18, 8)).draw())
     return f.svg()
 
 
@@ -324,8 +324,8 @@ def malli_hissi_jarru():
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(22, -4))
     d.force("N", (0, N), (cx - 12, cy + h / 2), "normal", surface=0, lab=(-26, 2))
     d.draw()
-    d.motion(r"\mathbf{v}", (0, 1), (450, 200), 70)
-    d.motion(r"\mathbf{a}", (0, -1), (520, 120), 50)
+    d.motion(r"\overline{v}", (0, 1), (450, 200), 70)
+    d.motion(r"\overline{a}", (0, -1), (520, 120), 50)
     return f.svg()
 
 

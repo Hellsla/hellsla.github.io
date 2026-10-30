@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A cart's velocity is $-3.0\\,\\text{m/s}$ and its acceleration is $+1.0\\,\\text{m/s}^2$. Does the cart's speed increase or decrease? Justify your answer.",
+    "a": "The speed decreases. The velocity and the acceleration point in opposite directions, so the velocity changes by $+1.0\\,\\text{m/s}$ every second towards zero: $-3.0\\,\\text{m/s}$, $-2.0\\,\\text{m/s}$, $-1.0\\,\\text{m/s}$. A positive acceleration does not always mean speeding up."
+  },
+  {
+    "q": "A heavy steel ball and a light wooden ball are dropped at the same time from the same height. Air resistance is small. Which hits the ground first?",
+    "a": "They hit the ground at the same time. When air resistance is small, all objects fall with the same acceleration $g = 9.81\\,\\text{m/s}^2$ regardless of mass, so their velocities and positions are the same at every moment."
+  },
+  {
+    "q": "A cart's $(t,x)$ graph is a curve bending upwards. How do you read the cart's velocity at $t = 2.0\\,\\text{s}$ from the graph?",
+    "a": "Draw a tangent to the curve at $t = 2.0\\,\\text{s}$, that is, a line that touches the curve at that point. Choose two points far apart on the tangent, and the instantaneous velocity is their change in position divided by the change in time, $v = \\dfrac{\\Delta x}{\\Delta t}$."
+  }
+]
