@@ -1,0 +1,549 @@
+{
+  "version": 1,
+  "contribution": "Air resistance is included in the free-body diagram and the equation of motion as a qualitative force opposing the velocity: from the jumps in the simulation we see that the speed of a falling object settles at a terminal velocity when $F_\\text{v} = G$, that a heavier object has a greater terminal velocity and that when the parachute opens the net force points up even though the motion is down.",
+  "learn": [
+    "explain why the speed of a falling object settles at a terminal velocity and how mass and shape affect it.",
+    "draw the free-body diagram of a falling and a rising object when air resistance is not ignored.",
+    "calculate the acceleration or the air resistance from the equation of motion, also when the net force points against the motion."
+  ],
+  "prior": [
+    "The net force points in the direction of the acceleration, and $\\Sigma\\overline{F} = m\\overline{a}$ (the chapter *Newton's second law*)",
+    "The weight is $G = mg$, and friction opposes sliding along a surface (the chapter *Weight, friction and the inclined plane*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A skydiver steps out of an aeroplane at a height of about four kilometres. During the first seconds the speed grows quickly, but after about ten seconds the reading of the wrist computer almost stops growing and settles at about $200\\,\\text{km/h}$, although the skydiver still falls for tens of seconds. When the parachute opens, the speed decreases in a few seconds to below $20\\,\\text{km/h}$.",
+      "question": "Why does the speed stop growing, although the weight pulls the skydiver down all the time, and what happens to the forces when the parachute opens?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: friction and net force",
+      "fbd": "identify",
+      "optional": true,
+      "prompt": "A box slides to the right on a horizontal floor and slows down. Nobody pushes or pulls it. In which direction does the net force acting on the box point?",
+      "choices": [
+        {
+          "text": "To the left, because friction opposes sliding.",
+          "correct": true,
+          "feedback": "Correct. In the chapter *Weight, friction and the inclined plane* you learned that sliding friction points against the sliding. It is the only horizontal force, so the net force and the acceleration point to the left, and the box slows down. In this chapter air does the same: it opposes the motion."
+        },
+        {
+          "text": "To the right, in the direction of motion, because the box is still moving to the right.",
+          "feedback": "Motion does not cause a force. Nothing pushes the box, so there is no force pointing to the right. The box slows down, so the acceleration and the net force point to the left, against the motion."
+        },
+        {
+          "text": "The net force is zero, because the box is moving.",
+          "feedback": "If the net force were zero, the speed of the box would not change. The box slows down, so the net force is not zero: friction points to the left."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: speed in a fall",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A skydiver jumps out of an aeroplane belly down and does not open the parachute for $40$ seconds. How does the speed change?",
+      "choices": [
+        {
+          "text": "The speed first grows quickly, then more and more slowly, and finally settles at a constant value.",
+          "correct": true,
+          "feedback": "Correct. In the graph the speed first grows by almost $9.81\\,\\text{m/s}$ per second, but the curve flattens and levels off. In the values of the model, the speed of a $60\\,\\text{kg}$ skydiver settles at about $47.6\\,\\text{m/s}$. Air resistance grows with the speed until it is equal to the weight."
+        },
+        {
+          "text": "The speed grows steadily by $9.81\\,\\text{m/s}$ every second throughout the fall.",
+          "feedback": "That would happen without air: in $40\\,\\text{s}$ the speed would be almost $400\\,\\text{m/s}$. In the graph, however, the speed levels off, in the values of the model for a $60\\,\\text{kg}$ skydiver at about $47.6\\,\\text{m/s}$, because air resistance grows as the speed grows and decreases the net force."
+        },
+        {
+          "text": "The speed grows to its greatest value and then starts to decrease.",
+          "feedback": "When air resistance has grown to the size of the weight, the net force is zero and the speed no longer changes. When the density of the air is the same (an assumption of the model), nothing makes air resistance grow greater than the weight, so the speed does not start to decrease. In the graph the curve levels off horizontally and does not turn down."
+        },
+        {
+          "text": "The speed is constant from the very start of the jump, because air resistance cancels the weight.",
+          "feedback": "The skydiver starts from rest relative to the air (the speed of the plane is ignored), so at the start of the jump there is no air resistance yet. Then the only force is the weight, and the skydiver accelerates. In the graph the speed grows steeply at first and levels off only after about ten seconds."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a light and a heavy skydiver",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Two skydivers fall in the same belly-down position. The mass of one with equipment is $60\\,\\text{kg}$ and of the other $100\\,\\text{kg}$. Which one is falling faster at the end of a long fall?",
+      "choices": [
+        {
+          "text": "The $100\\,\\text{kg}$ skydiver, because his terminal velocity is greater.",
+          "correct": true,
+          "feedback": "Correct. In the values of the model, the speed of the $60\\,\\text{kg}$ skydiver settles at $47.6\\,\\text{m/s}$ and that of the $100\\,\\text{kg}$ skydiver at $61.4\\,\\text{m/s}$. The heavier skydiver has a greater weight, so air resistance must grow greater before it cancels the weight, and that requires a greater speed."
+        },
+        {
+          "text": "Both equally fast, because free-fall acceleration does not depend on mass.",
+          "feedback": "Without air resistance that would be true, and at the start of the fall the curves are indeed on top of each other. But air resistance decreases the acceleration of the lighter skydiver more, because his weight is smaller. In the values of the model the final speeds are $47.6\\,\\text{m/s}$ and $61.4\\,\\text{m/s}$."
+        },
+        {
+          "text": "The $60\\,\\text{kg}$ skydiver, because a light object is easier to accelerate.",
+          "feedback": "The weight of the light skydiver is smaller, so air resistance cancels it already at a smaller speed. In the values of the model, the speed of the $60\\,\\text{kg}$ skydiver settles at $47.6\\,\\text{m/s}$ and that of the $100\\,\\text{kg}$ skydiver at $61.4\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: the parachute opens",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "A skydiver falls at terminal velocity and opens the parachute. What happens to the motion of the skydiver while the parachute opens?",
+      "choices": [
+        {
+          "text": "The skydiver is still moving downward, but slows down quickly, because the net force points up.",
+          "correct": true,
+          "feedback": "Correct. In the values of the model, when the parachute opens, air resistance grows for a moment to about $3.9\\,\\text{kN}$, five times the weight. The net force points up and the speed decreases, but in the graph the speed stays positive, that is downward, all the time."
+        },
+        {
+          "text": "The skydiver rises upward for a moment and then starts to fall slowly again.",
+          "feedback": "In videos it looks like this, because the camera operator is still falling without a parachute and the skydiver slows down relative to the camera operator. In the graph the speed of the skydiver decreases but stays positive: the skydiver moves down all the time. The net force pointing up decreases the speed, but at the same time air resistance decreases, and the speed settles at about $5.1\\,\\text{m/s}$, long before zero."
+        },
+        {
+          "text": "The skydiver slows down gradually, and the net force points down all the time, in the direction of motion.",
+          "feedback": "If the net force pointed down, the speed would grow. The skydiver slows down, so the acceleration and the net force point up. In the values of the model, air resistance is for a moment about five times the weight when the parachute opens."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a skydiver falls from an aeroplane. On the left are the situation picture and the graph of the speed, on the right the free-body diagram of the skydiver, in which the weight and the air resistance are in the same scale.",
+      "howto": "Choose the mass of the skydiver with equipment, the position and whether the parachute is opened at $20\\,\\text{s}$. Press *Start*. The jump lasts $40\\,\\text{s}$ of model time; *Pause* stops it and *Resume* continues. When the jump has ended, the readings show the speed at the end of the jump and the greatest air resistance of the jump. *Reset* returns the skydiver to the door of the plane. *Speed* slows down or speeds up only the presentation, not the readings: choose *slow* when you want to follow the opening of the parachute. If a force arrow does not fit in the free-body diagram, it is cut with two slashes, and its value is shown in the readings.",
+      "model": "The values are model values calculated by the simulation. Only the weight $\\overline{G}$ and the air resistance $\\overline{F}_\\text{v}$ act on the skydiver. The skydiver starts from rest relative to the air (the speed of the plane is ignored). The air is still, and its density in the model is the same at all heights; the buoyancy in air is not taken into account. Air resistance is calculated from the model $F_\\text{v} = kv^2$, in which the constant $k$ depends on the position and the parachute: belly down $0.26\\,\\text{kg/m}$, head first $0.10\\,\\text{kg/m}$ and with the parachute open $30\\,\\text{kg/m}$. The parachute opens in $3.0\\,\\text{s}$. You do not need to know this model: in the chapter air resistance is treated qualitatively. In the fall before the parachute is opened, the arrow of the air resistance ends at the bottom surface, on which the air presses; after the parachute has opened, it starts from the top surface, because the parachute pulls the skydiver from above.",
+      "calc": "The positive direction is down. The net force is $\\Sigma F = G - F_\\text{v}$, where $G = mg$ and $g = 9.81\\,\\text{m/s}^2$, and the acceleration is $a = \\dfrac{\\Sigma F}{m}$. A negative $\\Sigma F$ or $a$ points up. The simulation calculates the motion in steps of $2\\,\\text{ms}$: at every step the speed changes by the product of the acceleration and the length of the step. The speed is plotted in the graph at intervals of $0.5\\,\\text{s}$."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: mass and final speed",
+      "intro": "Test predictions 1 and 2. The initial state chooses the belly-down position and a parachute that is not opened. Change only the mass. Press *Start* and follow the graph and the free-body diagram throughout the jump. Record a measurement when the jump has ended. Try at least the masses $60\\,\\text{kg}$ and $100\\,\\text{kg}$.",
+      "initial": {
+        "asento": "vatsa",
+        "varjo": "ei",
+        "m": "60"
+      },
+      "names": {
+        "m": "mass $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "belly down"
+        },
+        "varjo": {
+          "ei": "not opened"
+        },
+        "m": {
+          "60": "$60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "asento",
+        "varjo"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "G",
+          "label": "$G$ (N)"
+        },
+        {
+          "key": "vT",
+          "label": "$v$ at the end (m/s)"
+        },
+        {
+          "key": "Fv",
+          "label": "$F_\\text{v}$ at the end (N)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "In the table, compare the weight and the air resistance at the end of the jump. What can you conclude from them?",
+        "choices": [
+          {
+            "text": "They are equal, so the net force is zero and the speed stays constant.",
+            "correct": true,
+            "feedback": "Correct. With both masses $F_\\text{v} = G$ at the end of the jump. The speed is then the terminal velocity: the acceleration is zero although the skydiver is moving fast."
+          },
+          {
+            "text": "Air resistance is greater than the weight, otherwise the speed would still be growing.",
+            "feedback": "If air resistance were greater than the weight, the net force would point up and the skydiver would slow down. In the table they are equal: for the speed to stay constant it is enough that the net force is zero."
+          },
+          {
+            "text": "For the heavier skydiver air resistance is smaller at the end, because he is heavier.",
+            "feedback": "In the table, the air resistance of the heavier skydiver at the end is greater, equal to his greater weight. That requires a greater speed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the parachute opens",
+      "intro": "Test prediction 3. The initial state chooses the mass $80\\,\\text{kg}$ and the belly-down position. Change only the parachute setting. Make the jump first so that the parachute is not opened, and then so that it is opened at $20\\,\\text{s}$. When the parachute opens, choose *slow* and follow the free-body diagram and the velocity and acceleration arrows. Record a measurement from both jumps.",
+      "initial": {
+        "m": "80",
+        "asento": "vatsa",
+        "varjo": "ei"
+      },
+      "names": {
+        "m": "mass $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "belly down"
+        },
+        "varjo": {
+          "ei": "not opened",
+          "auki": "opened at $20\\,\\text{s}$"
+        },
+        "m": {
+          "80": "$80\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "asento"
+      ],
+      "vary": "varjo",
+      "measure": [
+        {
+          "key": "vT",
+          "label": "$v$ at the end (m/s)"
+        },
+        {
+          "key": "FvMax",
+          "label": "greatest $F_\\text{v}$ (N)"
+        },
+        {
+          "key": "G",
+          "label": "$G$ (N)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "When the parachute is opened, the greatest air resistance of the jump in the table is about five times the weight. What does this tell about the motion of the skydiver while the parachute opens?",
+        "choices": [
+          {
+            "text": "The net force points up, so the skydiver slows down although still moving down.",
+            "correct": true,
+            "feedback": "Correct. Air resistance is greater than the weight, so the net force and the acceleration point up. In the graph the speed decreases but stays positive, and finally it settles at about $5.1\\,\\text{m/s}$."
+          },
+          {
+            "text": "The skydiver then moves upward, because the greater force points up.",
+            "feedback": "The net force tells the direction of the acceleration, not the direction of motion. In the graph the speed stays positive, that is downward, all the time: the net force pointing up only decreases it."
+          },
+          {
+            "text": "The net force is zero, because air resistance and weight always cancel each other.",
+            "feedback": "The weight and air resistance cancel each other only at terminal velocity. When the parachute opens, air resistance is many times greater, so the net force is not zero, and the speed changes quickly."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: position",
+      "optional": true,
+      "intro": "Investigate how the position affects the fall. The initial state chooses the mass $80\\,\\text{kg}$ and a parachute that is not opened. Change only the position and record a measurement from both jumps after the jump has ended. Which position gives the greater final speed, and why?",
+      "initial": {
+        "m": "80",
+        "varjo": "ei",
+        "asento": "vatsa"
+      },
+      "names": {
+        "m": "mass $m$",
+        "asento": "asento",
+        "varjo": "varjo"
+      },
+      "units": {
+        "m": "kg"
+      },
+      "values": {
+        "asento": {
+          "vatsa": "belly down",
+          "paa": "head first"
+        },
+        "varjo": {
+          "ei": "not opened"
+        },
+        "m": {
+          "80": "$80\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "varjo"
+      ],
+      "vary": "asento",
+      "measure": [
+        {
+          "key": "vT",
+          "label": "$v$ at the end (m/s)"
+        },
+        {
+          "key": "Fv",
+          "label": "$F_\\text{v}$ at the end (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Using your own measurements, explain why the speed of the skydiver stops growing, why the final speed of a heavier skydiver is greater and what happens to the forces when the parachute opens.",
+      "criteria": [
+        "The answer says that air resistance grows as the speed grows until it is equal to the weight, and then the net force is zero.",
+        "The answer uses your own measurement results: at the end of the jump $F_\\text{v} = G$, and the final speed of the $100\\,\\text{kg}$ skydiver is greater than that of the $60\\,\\text{kg}$ skydiver.",
+        "The answer explains the greater final speed by the greater weight, which requires a greater air resistance to cancel it and therefore a greater speed.",
+        "The answer says that when the parachute opens, air resistance is greater than the weight, so the net force points up and the skydiver slows down while still moving down."
+      ],
+      "model": "In experiment 1 the speed first grew quickly and then levelled off. In the values of the model, the speed of the $60\\,\\text{kg}$ skydiver at the end of the jump was $47.6\\,\\text{m/s}$ and that of the $100\\,\\text{kg}$ skydiver $61.4\\,\\text{m/s}$. For both, the air resistance at the end was equal to the weight, $589\\,\\text{N}$ and $981\\,\\text{N}$. Air resistance grows with the speed, and when it has grown to the size of the weight, the net force is zero and the speed no longer changes. The weight of the heavier skydiver is greater, so the air resistance must grow greater, and that requires a greater speed. In experiment 2, opening the parachute made the air resistance grow for a moment to about $3.9\\,\\text{kN}$, about five times the weight $785\\,\\text{N}$. The net force pointed up, and the skydiver slowed down while moving downward all the time, until the speed settled at about $5.1\\,\\text{m/s}$."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the measurements. What surprised you most? Write in your own words why the net force can point up although the skydiver is moving down.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "valitse",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Choose the correct free-body diagram",
+      "fbd": "select",
+      "layout": "figures",
+      "prompt": "A volleyball is hit straight upward. In which diagram is the free-body diagram of the ball correct when the ball is still rising and the hand is already off the ball? Air resistance is not ignored. Each wrong diagram has one error.",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-a",
+          "correct": true,
+          "feedback": "Correct. The ball is rising, so air resistance points against the velocity, that is down, in the same direction as the weight. Both forces slow down the rise, and the magnitude of the acceleration is greater than $g$."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-b",
+          "feedback": "Air resistance does not oppose the weight but the motion. The velocity of a rising ball points up, so air resistance points down. It points up only when the ball falls back down."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-c",
+          "feedback": "The hand no longer touches the ball, so there is no upward force of the hit. Motion does not cause a force: the ball still rises because it has a velocity, and it slows down. Otherwise the diagram would be correct."
+        },
+        {
+          "text": "",
+          "figure": "fy4-14/valitse-d",
+          "feedback": "The diagram is missing air resistance. In the task it is not ignored, and on a rising ball it acts downward, against the velocity."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "fbd": "equations",
+      "optional": true,
+      "prompt": "A snowboarder rides straight down a steep slope that is at an angle of $30.0^\\circ$ to the horizontal. The mass of the snowboarder with equipment is $75.0\\,\\text{kg}$, and the friction force of the snow on the board is $64.0\\,\\text{N}$. The snowboarder has reached terminal velocity and rides at a constant speed. What is the air resistance? Give the answer in newtons.",
+      "answer": 303.875,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the net force when the speed is constant? Which forces act along the slope?",
+        "Choose the downhill direction as positive. Along the slope act the component of the weight $mg\\sin\\alpha$ downhill and friction and air resistance uphill: $mg\\sin\\alpha - F_\\mu - F_\\text{v} = 0$.",
+        "$mg\\sin\\alpha = 75.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\sin 30.0^\\circ \\approx 368\\,\\text{N}$. Subtract the friction force from it."
+      ],
+      "mistakes": [
+        {
+          "value": 367.875,
+          "feedback": "This is the component of the weight along the slope. Friction also opposes sliding, so air resistance only needs to cancel part of it: $F_\\text{v} = mg\\sin\\alpha - F_\\mu$."
+        },
+        {
+          "value": 573.18,
+          "feedback": "You used the cosine. The component along the slope is $mg\\sin\\alpha$; the component $mg\\cos\\alpha$ is perpendicular to the slope, and the normal force of the snow cancels it."
+        },
+        {
+          "value": 671.75,
+          "feedback": "You used the whole weight. On a slope only the component of the weight along the slope, $mg\\sin\\alpha$, takes the snowboarder downhill."
+        },
+        {
+          "value": 735.75,
+          "feedback": "This is the weight of the snowboarder. In a vertical fall at terminal velocity $F_\\text{v} = G$, but on a slope air resistance cancels only part of the component of the weight along the slope, because friction also opposes the motion."
+        }
+      ],
+      "solution": "**Given:** $m = 75.0\\,\\text{kg}$, angle of the slope $\\alpha = 30.0^\\circ$, friction force $F_\\mu = 64.0\\,\\text{N}$, the speed is constant; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the air resistance $F_\\text{v}$ in $\\text{N}$\n\n**Principle:** The speed is constant, so by Newton's second law the net force is zero both along the slope and perpendicular to it. Along the slope the component of the weight takes the snowboarder downhill, and friction and air resistance oppose the motion. Terminal velocity is the speed at which these cancel each other.\n\n**Free-body diagram:** The snowboarder as a rectangle along the slope, positive $x$-direction downhill. The weight $\\overline{G}$ from the centre straight down, the normal force of the snow $\\overline{N}$ from the bottom surface perpendicular to the slope, the friction force $\\overline{F}_\\mu$ from the edge of the bottom surface uphill and the air resistance $\\overline{F}_\\text{v}$ uphill. The components of the weight with dashed lines.\n\n**Formula:** $mg\\sin\\alpha - F_\\mu - F_\\text{v} = 0$, so $F_\\text{v} = mg\\sin\\alpha - F_\\mu$\n\n**Conversions:** The quantities are in SI units, and the angle is in degrees with the calculator in degree mode, so no conversions are needed.\n\n**Substitution:** $F_\\text{v} = 75.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\sin 30.0^\\circ - 64.0\\,\\text{N} = 367.875\\,\\text{N} - 64.0\\,\\text{N} = 303.875\\,\\text{N}$\n\n**Answer:** $304\\,\\text{N}$ uphill, three significant figures like the mass $75.0\\,\\text{kg}$, the angle $30.0^\\circ$ and the friction force $64.0\\,\\text{N}$.\n\n**Reasonableness:** Since $\\sin 30^\\circ = 0.5$, the component of the weight along the slope is half of the weight $736\\,\\text{N}$, or about $370\\,\\text{N}$. Air resistance cancels the part of it that friction does not cancel, and is therefore much smaller than the weight. Without friction the air resistance at terminal velocity would be $368\\,\\text{N}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. First draw the free-body diagram: remember that air resistance points against the velocity. Choose the positive direction and only then write the equation of motion. Level 1 is enough for basic skills; levels 2 and 3 are more advanced."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "fbd": "identify",
+      "prompt": "A skydiver falls belly down at terminal velocity, and the parachute is still closed. Which statement about the forces acting on the skydiver is correct?",
+      "choices": [
+        {
+          "text": "The weight and the air resistance act on the skydiver, and they are equal, so the net force is zero.",
+          "correct": true,
+          "feedback": "Correct. The Earth and the air act on the skydiver. At terminal velocity they cancel each other, so the acceleration is zero and the speed stays constant."
+        },
+        {
+          "text": "Only the weight acts on the skydiver, because the skydiver falls at a steady speed.",
+          "feedback": "If only the weight acted on the skydiver, the net force would not be zero and the skydiver would accelerate downward. A steady speed requires that air resistance cancels the weight."
+        },
+        {
+          "text": "Air resistance is greater than the weight, because it has stopped the growth of the speed.",
+          "feedback": "If air resistance were greater than the weight, the net force would point up and the skydiver would slow down. The growth of the speed stops when the forces are equal."
+        },
+        {
+          "text": "The weight, the air resistance and a force in the direction of motion that keeps the skydiver going act on the skydiver.",
+          "feedback": "Motion does not need a force to keep it going, and there is nothing that could cause such a force: only the Earth and the air act on the skydiver. In uniform motion the net force is zero."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "fbd": "equations",
+      "prompt": "After the parachute has opened, a skydiver whose mass with equipment is $64.0\\,\\text{kg}$ descends at a constant speed of $5.5\\,\\text{m/s}$. What is the air resistance? Give the answer in newtons.",
+      "answer": 627.84,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the acceleration when the speed is constant? What does it tell about the net force?",
+        "Draw the free-body diagram: the weight down and the air resistance up. When the positive direction is down, $mg - F_\\text{v} = 0$.",
+        "The speed $5.5\\,\\text{m/s}$ is not needed: $F_\\text{v} = mg$."
+      ],
+      "mistakes": [
+        {
+          "value": 352,
+          "feedback": "You multiplied the mass by the speed. Mass times speed is not a force. In uniform motion the air resistance is equal to the weight, $mg$."
+        },
+        {
+          "value": 64,
+          "feedback": "Mass is not a force. The air resistance is equal to the weight $mg$, so multiply the mass by the free-fall acceleration."
+        }
+      ],
+      "solution": "**Given:** $m = 64.0\\,\\text{kg}$, the speed is constant $5.5\\,\\text{m/s}$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the air resistance $F_\\text{v}$ in $\\text{N}$\n\n**Principle:** The speed is constant, so the acceleration is zero and by Newton's second law the net force is zero. The skydiver falls at a new, small terminal velocity at which air resistance cancels the weight.\n\n**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\\overline{G}$ from the centre down and the air resistance $\\overline{F}_\\text{v}$ from the top surface up, equally long. The velocity down is marked separately and not as a force.\n\n**Formula:** $mg - F_\\text{v} = 0$, so $F_\\text{v} = mg$\n\n**Conversions:** The mass is in kilograms. The speed is not needed, so it is not converted.\n\n**Substitution:** $F_\\text{v} = 64.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 = 627.84\\,\\text{N}$\n\n**Answer:** $628\\,\\text{N}$ upward, three significant figures like the mass $64.0\\,\\text{kg}$.\n\n**Reasonableness:** The air resistance is equal to that in the fall before the parachute is opened at terminal velocity, about $630\\,\\text{N}$, although the speed is a tenth of it. The large area of the parachute produces the same force at a much smaller speed. The weight of a kilogram is about $10\\,\\text{N}$, so $64\\,\\text{kg}$ corresponds to about $640\\,\\text{N}$."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw it yourself",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-14/malli-alas",
+      "prompt": "A rubber ball is thrown from a high bridge straight down at such a great speed that it is greater than the terminal velocity of the ball. The ball still falls down but slows down. Draw the free-body diagram of the ball on paper: the ball as a rectangle and each force from its point of action. Mark the directions of the velocity and the acceleration separately next to the diagram. Then write the equation of motion when the positive direction is down.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "The diagram has only the ball, no hand, bridge or air with its own forces."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Two forces: the weight and the air resistance. No force of the throw, because the hand is off the ball."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "The weight down, the air resistance up, against the velocity."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight from the centre, the air resistance from the bottom surface of the ball or ending at it, separate from the weight; each with its own symbol."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "Air resistance is longer than the weight, because the ball slows down. The velocity down and the acceleration up are marked separately and not as forces."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$mg - F_\\text{v} = ma$, where $a < 0$, because $F_\\text{v} > mg$: the acceleration points up."
+        }
+      ],
+      "model": "Only the Earth (weight $\\overline{G}$) and the air (air resistance $\\overline{F}_\\text{v}$) act on the ball. The hand no longer touches the ball, so there is no force of the throw. The ball moves down, so air resistance points up. The ball slows down, so its acceleration points up, against the velocity, and the net force must point up: air resistance is greater than the weight. When the positive direction is down, the equation of motion is $mg - F_\\text{v} = ma$, and $a$ is negative. As the speed decreases, air resistance decreases until at terminal velocity $F_\\text{v} = mg$ and the ball falls at a steady speed."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first yourself and open the answer only after that."
+    }
+  ]
+}

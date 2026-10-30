@@ -1,0 +1,21 @@
+{
+  "id": "fy4-14",
+  "course": "FY4",
+  "title": "Ilmanvastus ja putoaminen ilmassa",
+  "goals": [
+    "LOPS FY4: paino ja kitka",
+    "Täsmennys: väliaineen vastusvoima laadullisesti, rajanopeus ja laskuvarjo",
+    "Voimakuvio: putoava kappale kiihtyvässä vaiheessa ja rajanopeudella sekä ylöspäin liikkuva kappale, johon vaikuttaa ilmanvastus. Kokonaisvoiman suunta voi olla eri kuin liikkeen suunta (esimerkki G)."
+  ],
+  "prerequisites": [
+    "fy4-4",
+    "fy4-6"
+  ],
+  "glossary": [
+    "väliaineen vastus",
+    "rajanopeus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
