@@ -55,7 +55,7 @@ for lang in i18n.languages():
         expect(f"{lang} {code}: lessons before the goals, goals behind a disclosure",
                mod.find('class="lessons"') < mod.find('class="goals"') or 'class="goals"' not in mod)
     for bad in ('class="bar"', 'class="card', "1 oppituntia", "1 lessons", "1 tehtävää", "1 pistettä"):
-        expect(f"{lang}: front page has no {bad!r}", bad not in home)
+        expect(f"{lang}: front page has no {bad!r}", not re.search(r"(?<![\d])" + re.escape(bad), home))   # "11 lessons" is fine
     title = re.search(r"<title>(.*?)</title>", home).group(1)
     expect(f"{lang}: the front page title names the site once", _h.unescape(title).count(T("site.name")) == 1, title)
     feat = re.search(r'class="featured-link" href="([^"]+)"', home); sample = re.search(r'class="quiet-link" href="([^"]+)"', home)
