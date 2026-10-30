@@ -335,7 +335,7 @@ The bodies **meet** when they are at the same place at the same moment, that is,
 
 In the figure, body A starts from $0\,\text{m}$ and B from $60\,\text{m}$, and they move toward each other. When the positions of the bodies are marked on the same axis, you can see at once which is where and how the distance between them changes. At the moment of meeting, the distance is zero.
 
-In a $(t,x)$ graph, each motion is its own line in the same coordinate system. The meeting is the intersection of the lines: its horizontal coordinate is the time of the meeting and its vertical coordinate is the place. The graph also shows which body is ahead at any moment: the one whose line is higher.
+In a $(t,x)$ graph, each motion is its own line in the same coordinate system. The meeting is the intersection of the lines: its horizontal coordinate is the time of the meeting and its vertical coordinate is the place. A line higher in the graph means a larger position coordinate. At the moment of meeting, the bodies' graphs intersect. Which body is ahead also depends on the direction of motion: when the bodies move in the positive $x$ direction, the higher line belongs to the body that is ahead.
 
 <svg data-fig="kohtaus" viewBox="0 0 600 350" role="img" aria-label="(t,x) graph, to scale, of two uniform motions. Body A starts from 0 m and moves at 3.0 m/s: the line rises. Body B starts from 60 m at −2.0 m/s: the line falls. The lines intersect at the point where t = 12 s and x = 36 m. Dashed lines lead from the point to the axes." style="max-width:100%;font-size:24px">
   <line x1="186" y1="300" x2="186" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
