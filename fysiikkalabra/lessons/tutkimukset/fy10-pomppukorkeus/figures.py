@@ -57,7 +57,7 @@ def setup():
             "pudotuskorkeus. Molemmat korkeudet mitataan samasta kohdasta palloa, lattiasta pallon alapintaan.")
     floor, r = 400, 26
     f.rect(30, floor, 540, 14, ALUMINIUM, INK, 2.5)
-    xa, xb, ya, yb = 210, 400, 80, 196                      # bottom of the ball at release and at the top of the bounce
+    xa, xb, ya, yb = 210, 400, 104, 210                     # bottom of the ball at release and at the top of the bounce
     ball(f, xa, ya - r, r); ball(f, xb, yb - r, r); ball(f, xa, floor - r, r, 0.4)
     f.line(xa, ya + 4, xa, floor - 2 * r - 6, MUTED, 2, "6 5")      # dropped from rest: straight down
     f.path(f"M{xa + r},{floor - r} Q{xb - 30},{yb - 10} {xb},{yb}", stroke=MUTED, w=2, extra='stroke-dasharray="6 5"')

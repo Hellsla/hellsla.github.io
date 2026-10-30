@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9d2d77c8c89ec9d5
+CONTENT-HASH: 551da66bcc73d7db
 
 ## Blocking
 None.
@@ -31,3 +31,4 @@ None.
 - **Goals 2 and 3** are met in the core sections. The help links (fy1-3, fy1-4) sit at the steps where they are needed.
 - **Preview.** It is rebuilt with the new section and five O/OO blocks.
 - Polish diff (9d2d77c8c89ec9d5) checked: Ennusta Q2 no longer names the axes and is a genuine proportionality prediction; teacher.md intercept now $(1 - a)d$. Both fine.
+- Layout diff (551da66bcc73d7db) checked: setup figure release and apex moved down; brackets still meet the ball bottoms (104, 210), h1 < h0 kept, "pudotus" label clear of the edge, no text changed. Fine.

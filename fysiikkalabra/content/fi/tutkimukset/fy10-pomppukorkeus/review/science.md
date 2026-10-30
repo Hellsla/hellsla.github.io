@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9d2d77c8c89ec9d5
+CONTENT-HASH: 551da66bcc73d7db
 
 ## Blocking
 None.
@@ -15,3 +15,4 @@ None.
 - Model graph, extension $h_{n+1} = a h_n$ (conditional on constant $a$), uncertainty methods, consistency with fy10-jousivakio, and house rules (no \vec, $\bar{h}_1$, \cdot, no invented data): unchanged and correct.
 - `scripts/reviews.py hash` does not cover investigations, so this review uses the hash given.
 - Revision to 9d2d77c8c89ec9d5 checked: teacher.md now gives the intercept as $(1-a)d$ (correct). The new Ennusta Q2 (proportional growth, very small drop heights) is an open prediction and asserts no physics.
+- Revision to 551da66bcc73d7db checked: the setup figure layout shift (release at 104, apex at 210) keeps both heights from the floor to the ball bottom, with h1/h0 = 190/296 = 0.64. The rendered SVG matches figures.py.
