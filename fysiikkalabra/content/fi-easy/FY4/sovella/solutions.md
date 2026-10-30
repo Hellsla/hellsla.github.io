@@ -1,7 +1,7 @@
 ## fy4-s1
 
 ### a)
-**Kysytty:** kummankin laskun $(t, v)$-kuvaaja ja niihin sovitettu malli
+**Kysytty:** $(t, v)$-kuvaaja kummastakin laskusta ja malli, joka sovitetaan pisteisiin
 **Kuvaaja:** Vaaka-akselilla on aika $t\ (\text{s})$ ja pystyakselilla nopeus $v\ (\text{m/s})$. Kummankin voiteen pisteet merkitään omilla merkeillä, esimerkiksi ympyröinä ja neliöinä.
 
 <svg data-fig="fy4-s1-graph" viewBox="0 0 600 430" role="img" aria-label="Kuvaaja näyttää hiihtäjän nopeuden v ajan t funktiona kahdella voiteella. Voiteen A pisteet ovat mustia ympyröitä ja voiteen B pisteet harmaita neliöitä. Kumpaankin pistejoukkoon on sovitettu oma nouseva suora. Voiteen A suora kulkee pisteiden (0 s; 2,10 m/s) ja (8 s; 5,22 m/s) kautta, ja sen kulmakerroin on 0,39 m/s². Voiteen B suora kulkee pisteiden (0 s; 1,90 m/s) ja (8 s; 3,86 m/s) kautta, ja sen kulmakerroin on 0,245 m/s²." style="max-width:100%;font-size:24px">
@@ -83,10 +83,10 @@
 **Mallivastaus:** Kummankin laskun pisteet ovat lähes suoralla. Siksi nopeus kasvaa tasaisesti ja kiihtyvyys on vakio. Kumpaankin pistejoukkoon sovitetaan oma suora. Suora kulkee pisteiden välistä, eikä pisteitä yhdistetä murtoviivaksi. Pisteet heiluvat vähän suoran molemmin puolin. Se on mittauksen satunnaista vaihtelua. Voiteen A suora on jyrkempi, eli hiihtäjä kiihtyy sillä nopeammin.
 
 ### b)
-**Kysytty:** hiihtäjän voimakuvio laskun aikana, kun ilmanvastusta ei oteta huomioon
+**Kysytty:** hiihtäjän voimakuvio laskun aikana. Ilmanvastusta ei oteta huomioon.
 **Periaate:** Kappaleeksi valitaan hiihtäjä varusteineen. Etsitään, mikä vaikuttaa häneen: Maa (paino) ja rinteen lumi (tukivoima ja kitka). Ilma jätetään tehtävän mukaan pois. Hiihtäjä ei työnnä sauvoilla, joten eteenpäin vievää voimaa ei ole. Liike rinnettä alas ei tarvitse omaa voimaansa.
 
-<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Kaksi kuvaa. Vasemmalla on tilannekuva: hiihtäjä liukuu suorana seisten lumista rinnettä alas oikealle, ja sininen nopeusnuoli v osoittaa rinnettä alas. Oikealla on hiihtäjän voimakuvio, hiihtäjä suorakulmiona rinteen suuntaisesti kallistettuna: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liikekitka alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan rinnettä kohti; G y on yhtä pitkä kuin tukivoima ja G x pidempi kuin kitka. Erillään oranssi kiihtyvyysnuoli a rinnettä alas. Akselit: x rinnettä alas ja y kohtisuoraan rinteestä ulos. Rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Kaksi kuvaa. Vasemmalla on tilannekuva: hiihtäjä liukuu suorana seisten lumista rinnettä alas oikealle, ja sininen nopeusnuoli v osoittaa rinnettä alas. Oikealla on hiihtäjän voimakuvio. Hiihtäjä on suorakulmio, joka on kallistettu rinteen suuntaiseksi. Paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liikekitka alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit ovat katkoviivoja keskipisteestä: G x rinnettä alas ja G y kohtisuoraan rinnettä kohti. G y on yhtä pitkä kuin tukivoima ja G x pidempi kuin kitka. Erillään on oranssi kiihtyvyysnuoli a, joka osoittaa rinnettä alas. Akselit: x rinnettä alas ja y kohtisuoraan rinteestä ulos. Rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat." style="max-width:100%;font-size:24px">
   <foreignObject x="67.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
   <path d="M14,170 L286.5,269 L286.5,380 L14,380 Z" fill="#f8fbfd" stroke="#9fb8c8" stroke-width="2" stroke-linejoin="round"/>
   <path d="M61.5,185 L185.5,230.5 L197.5,227 L185.5,225 L63.5,180.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
@@ -129,24 +129,24 @@
 **Mallivastaus:** Hiihtäjä piirretään suorakulmioksi, joka on rinteen suuntainen.
 - Paino $\overline{G}$ lähtee keskipisteestä suoraan alas. Se ei osoita kohtisuoraan rinnettä vasten.
 - Tukivoima $\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulospäin. Se on yhtä suuri kuin painon komponentti, joka on kohtisuorassa rinnettä vastaan. Siksi se on hieman painoa pienempi.
-- Liikekitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
+- Liikekitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta. Se osoittaa rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
 
 Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka. Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska kiihtyvyys ei ole voima. Mallikuvan katkoviivanuolet $G_x$ ja $G_y$ ovat painon komponentit. Komponentti tarkoittaa painon osaa tiettyyn suuntaan: toinen on rinteen suuntaan ja toinen kohtisuoraan rinnettä vasten. Ne eivät ole uusia voimia. Yhdessä ne korvaavat painon ja auttavat c-kohdan liikeyhtälöissä. Omaan voimakuvioosi niitä ei tarvitse piirtää. Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat toisistaan: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
 
 ### c)
-**Annettu:** rinteen kaltevuuskulma $\alpha = 4{,}0^\circ$, $g = 9{,}81\,\text{m/s}^2$ ja a-kohdan kuvaaja; massa $m = 72\,\text{kg}$
-**Kysytty:** liikekitkakertoimet $\mu_\text{A}$ ja $\mu_\text{B}$
+**Annettu:** rinteen kaltevuuskulma $\alpha = 4{,}0^\circ$, $g = 9{,}81\,\text{m/s}^2$ a-kohdan kuvaaja ja massa $m = 72\,\text{kg}$
+**Kysytty:** kummankin voiteen liikekitkakerroin, $\mu_\text{A}$ ja $\mu_\text{B}$
 **Periaate:** Kuvaajat ovat suoria, joten kiihtyvyys on vakio. Kiihtyvyys on suoran kulmakerroin. Newtonin toisen lain mukaan kiihtyvyyden aiheuttaa voimien summa. Siksi kiihtyvyydestä päätellään kitkavoima ja siitä kitkakerroin. Rinteessä akselit kannattaa valita rinteen suuntaisesti, koska liike on rinteen suuntaista.
-**Voimakuvio:** b-kohdan kuvio: $x$-akseli rinnettä alas ja $y$-akseli kohtisuoraan rinteestä ulos. Painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Tukivoima on $y$-akselin suuntaan ja kitka $x$-akselia vastaan.
-**Kuvaajan lukeminen:** Voiteen A suora kulkee pisteiden $(0\,\text{s};\ 2{,}10\,\text{m/s})$ ja $(8\,\text{s};\ 5{,}22\,\text{m/s})$ kautta, joten $a_\text{A} = \dfrac{3{,}12\,\text{m/s}}{8\,\text{s}} = 0{,}39\,\text{m/s}^2$. Voiteen B suora kulkee pisteiden $(0\,\text{s};\ 1{,}90\,\text{m/s})$ ja $(8\,\text{s};\ 3{,}86\,\text{m/s})$ kautta, joten $a_\text{B} = \dfrac{1{,}96\,\text{m/s}}{8\,\text{s}} = 0{,}245\,\text{m/s}^2$.
+**Voimakuvio:** Käytetään b-kohdan kuviota. $x$-akseli osoittaa rinnettä alas ja $y$-akseli kohtisuoraan rinteestä ulos. Painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Tukivoima osoittaa $y$-akselin suuntaan ja kitka $x$-akselia vastaan.
+**Kuvaajan lukeminen:** Voiteen A suora kulkee pisteiden $(0\,\text{s};\ 2{,}10\,\text{m/s})$ ja $(8\,\text{s};\ 5{,}22\,\text{m/s})$ kautta. Siitä saadaan $a_\text{A} = \dfrac{3{,}12\,\text{m/s}}{8\,\text{s}} = 0{,}39\,\text{m/s}^2$. Voiteen B suora kulkee pisteiden $(0\,\text{s};\ 1{,}90\,\text{m/s})$ ja $(8\,\text{s};\ 3{,}86\,\text{m/s})$ kautta. Siitä saadaan $a_\text{B} = \dfrac{1{,}96\,\text{m/s}}{8\,\text{s}} = 0{,}245\,\text{m/s}^2$.
 **Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$ eli $mg\sin\alpha - \mu mg\cos\alpha = ma$. Massa supistuu pois, ja $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
-**Muunnokset:** Ei tarvita, kiihtyvyydet ovat yksikössä $\text{m/s}^2$.
-**Sijoitus:** $g\sin\alpha = 9{,}81\,\text{m/s}^2 \cdot \sin 4{,}0^\circ = 0{,}684\,\text{m/s}^2$ ja $g\cos\alpha = 9{,}81\,\text{m/s}^2 \cdot \cos 4{,}0^\circ = 9{,}786\,\text{m/s}^2$. $\mu_\text{A} = \dfrac{(0{,}684 - 0{,}39)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}030$ ja $\mu_\text{B} = \dfrac{(0{,}684 - 0{,}245)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}045$
+**Muunnokset:** Ei tarvita. Kiihtyvyyksien yksikkö on jo $\text{m/s}^2$.
+**Sijoitus:** Ensin lasketaan $g\sin\alpha = 9{,}81\,\text{m/s}^2 \cdot \sin 4{,}0^\circ = 0{,}684\,\text{m/s}^2$ ja $g\cos\alpha = 9{,}81\,\text{m/s}^2 \cdot \cos 4{,}0^\circ = 9{,}786\,\text{m/s}^2$. $\mu_\text{A} = \dfrac{(0{,}684 - 0{,}39)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}030$ ja $\mu_\text{B} = \dfrac{(0{,}684 - 0{,}245)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}045$
 **Vastaus:** $\mu_\text{A} \approx 0{,}030$ ja $\mu_\text{B} \approx 0{,}045$. Kitkakertoimella ei ole yksikköä. Vastauksessa on kaksi merkitsevää numeroa, koska kulmakertoimet luetaan kuvaajalta noin kahden numeron tarkkuudella.
 **Järkevyys:** Voidellun suksen ja lumen kitkakerroin on muutaman sadasosan suuruinen. Se on paljon pienempi kuin esimerkiksi kengän ja lattian kitkakerroin. Kumpikin kiihtyvyys on pienempi kuin $g\sin\alpha = 0{,}684\,\text{m/s}^2$, jonka hiihtäjä saisi ilman kitkaa. Massaa $72\,\text{kg}$ ei tarvittu, koska paino, tukivoima ja kitka ovat kaikki verrannollisia massaan.
 
 ### d)
-**Kysytty:** kuinka luotettava johtopäätös "voide A liukuu paremmin" on
+**Kysytty:** kuinka luotettava on johtopäätös "voide A liukuu paremmin"
 **Periaate:** Johtopäätös on luotettava, jos voiteiden ero on selvästi suurempi kuin tulosten epävarmuus. Sen lisäksi virhelähteet eivät saa voida kääntää eroa toisin päin.
 **Mallivastaus:** *Epävarmuus.* Pisteet ovat lähellä suoria, joten kulmakertoimen voi lukea noin $\pm 0{,}02\,\text{m/s}^2$:n tarkkuudella. Kitkakertoimessa tämä tarkoittaa $0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002$. Rinteen kulman epävarmuus, esimerkiksi $\pm 0{,}1^\circ$, muuttaa kumpaakin kerrointa noin $0{,}002$ samaan suuntaan, joten se ei muuta eroa. Voiteiden ero $0{,}045 - 0{,}030 = 0{,}015$ on monta kertaa suurempi.
 
@@ -159,7 +159,7 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 - b-kohdassa ilmanvastuksen $\overline{F}_\text{v}$ saa piirtää rinnettä ylös, kun se on nimetty. Tehtävä ei kuitenkaan vaadi sitä.
 
 ### Yleisiä virheitä
-- Kitkakertoimeksi lasketaan $\mu = a : g$ kuten vaakasuoralla alustalla. Silloin rinteen kaltevuus unohtuu. Silloin voide A näyttäisi liukuvan huonommin, koska sen kiihtyvyys on suurempi.
+- Kitkakertoimeksi lasketaan $\mu = a : g$ kuten vaakasuoralla alustalla. Rinteen kaltevuus unohtuu. Silloin voide A näyttäisi liukuvan huonommin, koska sen kiihtyvyys on suurempi.
 - Tukivoimaksi otetaan $N = mg$, vaikka rinteessä $N = mg\cos\alpha$. Pienellä kulmalla virhe on pieni, mutta perustelu on silti väärä.
 - Voimakuvioon piirretään eteenpäin vievä voima, koska hiihtäjä liikkuu alas. Liike rinteen suuntaan johtuu painon komponentista.
 - Painon komponentit piirretään omiksi voimikseen painon lisäksi, ja silloin paino lasketaan kahteen kertaan.
@@ -168,39 +168,39 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 ## fy4-s2
 
 ### a)
-**Annettu:** korkeusero lähtölavalta jarrun alkuun $h = 15{,}0\,\text{m}$, laskija lähtee levosta, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** korkeusero lähtölavalta jarrun alkuun $h = 15{,}0\,\text{m}$, alkunopeus on nolla eli laskija lähtee levosta, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** nopeus $v$ jarrun alussa ohjaajan mallilla
 **Periaate:** Ohjaajan luku saadaan, kun kitkaa ja ilmanvastusta ei oteta huomioon. Silloin laskijaan vaikuttavat vain paino ja vaijerin voima vaunun kautta. Vaijerin voima on kohtisuorassa vaijeria vastaan eli kohtisuorassa liikettä vastaan, joten se ei tee työtä. Työtä tekee vain paino. Siksi mekaaninen energia säilyy: potentiaalienergia muuttuu liike-energiaksi. Vaijerin muoto ja pituus eivät vaikuta loppunopeuteen. Vain korkeusero vaikuttaa.
-**Kaava:** $mgh = \tfrac{1}{2}mv^2$, josta $v = \sqrt{2gh}$
+**Kaava:** $mgh = \tfrac{1}{2}mv^2$. Siitä saadaan $v = \sqrt{2gh}$
 **Muunnokset:** Laskussa ei tarvita. Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
-**Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m}} = \sqrt{294{,}3}\,\text{m/s} = 17{,}2\,\text{m/s}$ ja $17{,}2 \cdot 3{,}6\,\text{km/h} = 61{,}8\,\text{km/h}$
+**Sijoitus:** Nopeus on $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m}} = \sqrt{294{,}3}\,\text{m/s} = 17{,}2\,\text{m/s}$. Kilometreinä tunnissa $17{,}2 \cdot 3{,}6\,\text{km/h} = 61{,}8\,\text{km/h}$
 **Vastaus:** $v \approx 17{,}2\,\text{m/s} \approx 62\,\text{km/h}$, vastauksessa on kolme merkitsevää numeroa kuten korkeudessa $15{,}0\,\text{m}$. Ohjaajan väite perustuu siis malliin, jossa mekaaninen energia säilyy.
 **Järkevyys:** Sama nopeus tulisi, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
 
 ### b)
-**Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, vaijerin pituus lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja mitattu nopeus $v = 11{,}2\,\text{m/s}$
-**Kysytty:** liikettä keskimäärin vastustava voima $F_\text{vast}$
+**Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, matka vaijeria pitkin lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja jarrun alussa mitattu nopeus $v = 11{,}2\,\text{m/s}$
+**Kysytty:** voima $F_\text{vast}$, joka keskimäärin vastustaa liikettä
 **Periaate:** Mitattu $11{,}2\,\text{m/s} \approx 40\,\text{km/h}$ on paljon pienempi kuin a-kohdan $17{,}2\,\text{m/s}$, joten mekaaninen energia ei säily. Vaunun pyörien kitka ja ilmanvastus vastustavat liikettä koko matkan ajan. Ne tekevät negatiivista työtä. Mekaniikan energiaperiaatteen mukaan $E_{\text{k},1} + E_{\text{p},1} + W_\text{muut} = E_{\text{k},2} + E_{\text{p},2}$. Nollatasoksi valitaan jarrun alkukohta, jossa nopeus mitattiin. Vastusvoimien yhteistä vaikutusta kuvataan keskimääräisellä voimalla $F_\text{vast}$, joka osoittaa liikettä vastaan. Sen työ on $W_\text{muut} = -F_\text{vast}\,s$.
-**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $F_\text{vast} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
+**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$. Siitä saadaan $F_\text{vast} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat perusyksiköissä.
-**Sijoitus:** $E_\text{p} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
-**Vastaus:** $F_\text{vast} \approx 29\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$.
+**Sijoitus:** Potentiaalienergia on $E_\text{p} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$. Liike-energia on $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. Voima on $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
+**Vastaus:** $F_\text{vast} \approx 29\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$.
 **Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$. Se sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten yli puolet energiasta muuttuu lämmöksi: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
 
 ### c)
-**Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja b-kohdan vastusvoiman työ $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)
-**Kysytty:** painavamman laskijan nopeus $v$ jarrun alussa ohjaajan oletuksella
+**Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja vastusvoiman työ b-kohdasta $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)
+**Kysytty:** painavamman laskijan nopeus $v$ jarrun alussa, kun käytetään ohjaajan oletusta
 **Periaate:** Käytetään samaa energiaperiaatetta kuin b-kohdassa, mutta nyt tuntematon on nopeus. Oletuksen mukaan vastusvoiman työ on sama kuin kevyellä laskijalla. Potentiaalienergia on kuitenkin suurempi, koska massa on suurempi.
-**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2\,(mgh - F_\text{vast}\,s)}{m}}$
+**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$. Siitä saadaan $v = \sqrt{\dfrac{2\,(mgh - F_\text{vast}\,s)}{m}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $mgh = 95\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 13\,979\,\text{J}$ ja b-kohdan mukaan $F_\text{vast}\,s = 5234\,\text{J}$, joten $E_\text{k} = 13\,979\,\text{J} - 5234\,\text{J} = 8745\,\text{J}$. $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184{,}1}\,\text{m/s} = 13{,}6\,\text{m/s}$
+**Sijoitus:** Potentiaalienergia on $mgh = 95\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 13\,979\,\text{J}$. B-kohdan mukaan $F_\text{vast}\,s = 5234\,\text{J}$. Siksi $E_\text{k} = 13\,979\,\text{J} - 5234\,\text{J} = 8745\,\text{J}$. Nopeus on $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184{,}1}\,\text{m/s} = 13{,}6\,\text{m/s}$
 **Vastaus:** $v \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Vastauksessa on kaksi merkitsevää numeroa, koska massa $95\,\text{kg}$ ja vastusvoima $29\,\text{N}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Nopeus on kevyen laskijan $11{,}2\,\text{m/s}$:n ja kitkattoman mallin $17{,}2\,\text{m/s}$:n välissä, kuten pitääkin. Sama vastustyö vie raskaalta laskijalta pienemmän osan energiasta.
 
 ### d)
-**Kysytty:** kummankin ohjaajan mallin arvio ja se, kumman arvion mukaan jarru mitoitetaan
-**Periaate:** Mallit eroavat siinä, miten vastusvoima riippuu laskijan massasta. Energiayhtälöstä nähdään, mitä kumpikin oletus tarkoittaa nopeudelle.
-**Mallivastaus:** *Toisen ohjaajan malli.* Oletetaan, että koko vastusvoima on kitkaa. Silloin se on verrannollinen tukivoimaan ja siten massaan, $F_\text{vast} = k\,mg$, energiayhtälö olisi $mgh - k\,mg\,s = \tfrac{1}{2}mv^2$. Massa supistuu pois, ja jokainen laskija saisi saman nopeuden $11{,}2\,\text{m/s}$.
+**Kysytty:** mitä kummankin ohjaajan malli antaa ja minkä arvion mukaan jarru mitoitetaan
+**Periaate:** Mallien ero on siinä, miten vastusvoima riippuu laskijan massasta. Energiayhtälöstä nähdään, mitä kumpikin oletus tarkoittaa nopeudelle.
+**Mallivastaus:** *Toisen ohjaajan malli.* Oletetaan, että koko vastusvoima on kitkaa. Silloin se on verrannollinen tukivoimaan ja siten massaan: $F_\text{vast} = k\,mg$. Energiayhtälö olisi silloin $mgh - k\,mg\,s = \tfrac{1}{2}mv^2$. Massa supistuu pois, ja jokainen laskija saisi saman nopeuden $11{,}2\,\text{m/s}$.
 
 *Vastusvoimat eriteltyinä.* Vaunun pyörien kitka kasvaa massan mukana, koska vaijerin ja pyörien välinen tukivoima kasvaa laskijan painon mukana. Ilmanvastus sen sijaan riippuu nopeudesta sekä laskijan koosta ja asennosta, ei massasta. Painavalla laskijalla ilmanvastus on siis pienempi osa painosta. Siksi hän tulee nopeammin kuin kevyt laskija.
 
@@ -210,32 +210,32 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 
 ### Yleisiä virheitä
 - b-kohdassa potentiaalienergian ja liike-energian erotus jaetaan korkeudella $15{,}0\,\text{m}$. Oikea jakaja on matka $180\,\text{m}$, jonka vastusvoima kulkee.
-- a-kohdassa lasketaan vaijerin suuntaista kiihtyvyyttä ja matkaa kulman avulla, vaikka energian säilymisessä tarvitaan vain korkeusero.
+- a-kohdassa lasketaan kulman avulla kiihtyvyys ja matka vaijerin suuntaan. Energian säilymisessä tarvitaan kuitenkin vain korkeusero.
 - c-kohdassa oletetaan, että massa supistuu pois kuten a-kohdassa. Silloin nopeudeksi tulee sama $11{,}2\,\text{m/s}$, eikä perustella, miksi vastusvoima kasvaisi massan mukana.
 - d-kohdassa sanotaan vain, että "raskas menee nopeammin" tai "massa ei vaikuta". Kumpaakaan väitettä ei verrata vastusvoimiin.
 
 ### Hyväksytään myös
-- b- ja c-kohdassa voi käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$: silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
+- b- ja c-kohdassa saa käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$. Silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
 - d-kohdassa jarrun saa mitoittaa kitkattoman mallin ylärajan $17{,}2\,\text{m/s}$ mukaan tai c-kohdan arvion mukaan turvamarginaalilla painavampia laskijoita varten. Kumpikin on perusteltuna oikea ja turvallinen johtopäätös, ja se saa johtopäätöksen pisteen.
 
 ## fy4-s3
 
 ### a)
-**Annettu:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, liukumamatka $s = 4{,}2\,\text{m}$, kitkakerroin $\mu = 0{,}75$ ja $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** autojen yhteinen nopeus $v'$ heti törmäyksen jälkeen
+**Annettu:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, liukumamatka $s = 4{,}2\,\text{m}$, kitkakerroin $\mu = 0{,}75$ sekä $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** nopeus $v'$, jolla autot liikkuvat yhdessä heti törmäyksen jälkeen
 **Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä. Siksi tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liikekitka on $F_\mu = \mu N = \mu mg$. Se on ainoa vaakasuora voima. Kitka tekee negatiivista työtä, kunnes liike-energia on loppunut (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
-**Kaava:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, josta $v' = \sqrt{2\mu g s}$
+**Kaava:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$. Siitä saadaan $v' = \sqrt{2\mu g s}$
 **Muunnokset:** Ei tarvita. Massat supistuvat pois, joten niitä ei tarvita tässä kohdassa.
-**Sijoitus:** $v' = \sqrt{2 \cdot 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}2\,\text{m}} = \sqrt{61{,}8}\,\text{m/s} = 7{,}86\,\text{m/s}$
+**Sijoitus:** Nopeus on $v' = \sqrt{2 \cdot 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}2\,\text{m}} = \sqrt{61{,}8}\,\text{m/s} = 7{,}86\,\text{m/s}$
 **Vastaus:** $v' \approx 7{,}9\,\text{m/s}$, vastauksessa on kaksi merkitsevää numeroa kuten matkassa $4{,}2\,\text{m}$ ja kitkakertoimessa $0{,}75$.
 **Järkevyys:** Hidastuvuus $\mu g = 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \approx 7{,}4\,\text{m/s}^2$ on tyypillinen jarrutukselle kuivalla asfaltilla. Nopeus $7{,}9\,\text{m/s} \approx 28\,\text{km/h}$ on pienempi kuin auton B nopeus ennen törmäystä, kuten pitääkin. B joutui kiihdyttämään myös auton A.
 
 ### b)
-**Annettu:** $m_\text{A} = 1250\,\text{kg}$ levossa, $m_\text{B} = 1700\,\text{kg}$ ja a-kohdan $v' = 7{,}86\,\text{m/s}$
-**Kysytty:** auton B nopeus $v_\text{B}$ juuri ennen törmäystä ja pitääkö kertomus paikkansa
+**Annettu:** auto A on levossa, $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$ ja a-kohdan $v' = 7{,}86\,\text{m/s}$
+**Kysytty:** auton B nopeus $v_\text{B}$ juuri ennen törmäystä ja onko kuljettajan kertomus totta
 **Periaate:** Törmäyksessä autot vaikuttavat toisiinsa suurilla voimilla. Newtonin kolmannen lain mukaan voimat ovat yhtä suuret ja vastakkaiset. Nämä sisäiset voimat eivät muuta autojen yhteistä liikemäärää. Tien kitka on ulkoinen voima. Se on paljon pienempi kuin törmäysvoimat. Törmäys kestää vain sekunnin murto-osan, joten kitkan impulssi törmäyksen aikana on pieni. Siksi liikemäärä säilyy lähes. Positiivinen suunta valitaan auton B liikkeen suuntaan.
 
-<svg data-fig="fy4-s3-collision" viewBox="0 0 600 420" role="img" aria-label="Kaksi tilannekuvaa. Ylhäällä on tilanne ennen törmäystä: auto B tulee vasemmalta kohti paikallaan olevaa autoa A. Auton B yläpuolella sininen nopeusnuoli v B oikealle ja violetti liikemääränuoli p B oikealle; auton A nopeus on nolla. Alhaalla on tilanne heti törmäyksen jälkeen: autot ovat kiinni toisissaan ja liikkuvat yhdessä oikealle. Niiden yläpuolella sininen nopeusnuoli v pilkku, joka on lyhyempi kuin v B, ja violetti liikemääränuoli p pilkku, joka on yhtä pitkä kuin p B. Positiivinen suunta on oikealle. Nuolet ovat mittakaavassa." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s3-collision" viewBox="0 0 600 420" role="img" aria-label="Kaksi tilannekuvaa. Ylhäällä on tilanne ennen törmäystä: auto B tulee vasemmalta kohti paikallaan olevaa autoa A. Auton B yläpuolella on sininen nopeusnuoli v B ja violetti liikemääränuoli p B. Kumpikin osoittaa oikealle. Auton A nopeus on nolla. Alhaalla on tilanne heti törmäyksen jälkeen: autot ovat kiinni toisissaan ja liikkuvat yhdessä oikealle. Niiden yläpuolella on sininen nopeusnuoli v pilkku. Se on lyhyempi kuin v B. Violetti liikemääränuoli p pilkku on yhtä pitkä kuin p B. Positiivinen suunta on oikealle. Nuolet ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="11.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ennen}$</div></foreignObject>
   <line x1="10" y1="186" x2="590" y2="186" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
   <line x1="10" y1="186" x2="0" y2="198" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
@@ -365,24 +365,24 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
-**Muunnokset:** Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
-**Sijoitus:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$ ja $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
+**Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$. Siitä saadaan $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Muunnokset:** Kun nopeutta verrataan rajoitukseen, $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** Nopeus on $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$. Kilometreinä tunnissa $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
 **Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Vastauksessa on kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei ole totta: auton B nopeus oli törmäyshetkellä noin $9\,\text{km/h}$ yli rajoituksen. Pyörät olivat lukossa heti törmäyksen jälkeen, joten kuljettaja oli todennäköisesti jarruttanut jo ennen törmäystä. Ennen jarrutusta nopeus oli vielä suurempi.
 **Järkevyys:** Yhteinen nopeus on pienempi kuin $v_\text{B}$, koska sama liikemäärä jakautuu suuremmalle massalle. Liike-energia pienenee törmäyksessä noin $158\,\text{kJ}$:sta noin $91\,\text{kJ}$:en. Noin $40\,\%$ siitä kuluu peltien rutistumiseen. Se sopii kimmottomaan törmäykseen, jossa kappaleet jäävät kiinni toisiinsa.
 
 ### c)
-**Annettu:** kuljettajan massa $m = 68\,\text{kg}$, nopeuden muutos $\Delta v = v' - 0 = 7{,}86\,\text{m/s}$ ja törmäyksen kesto $\Delta t = 0{,}12\,\text{s}$
-**Kysytty:** selkänojan keskimääräinen voima $F_\text{ka}$ kuljettajaan ja sen vertailu painoon
+**Annettu:** kuljettajan massa $m = 68\,\text{kg}$, nopeuden muutos $\Delta v = v' - 0 = 7{,}86\,\text{m/s}$ ja aika, jonka törmäys kestää, $\Delta t = 0{,}12\,\text{s}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$, jolla selkänoja työntää kuljettajaa, ja voiman vertailu painoon
 **Periaate:** Kuljettaja on aluksi levossa ja liikkuu törmäyksen jälkeen auton mukana nopeudella $v'$. Vaakasuunnassa hänen liikemääräänsä muuttaa selkänojan voima. Impulssiperiaatteen mukaan selkänojan voiman impulssi on yhtä suuri kuin kuljettajan liikemäärän muutos. Voima ei ole vakio, joten lasketaan keskimääräinen voima.
-**Kaava:** $F_\text{ka}\,\Delta t = m\,\Delta v$, josta $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, ja vertailu $\dfrac{F_\text{ka}}{mg}$
+**Kaava:** $F_\text{ka}\,\Delta t = m\,\Delta v$. Siitä saadaan $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, ja vertailu $\dfrac{F_\text{ka}}{mg}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $F_\text{ka} = \dfrac{68\,\text{kg} \cdot 7{,}86\,\text{m/s}}{0{,}12\,\text{s}} = 4455\,\text{N}$ ja $\dfrac{F_\text{ka}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6{,}7$
+**Sijoitus:** Voima on $F_\text{ka} = \dfrac{68\,\text{kg} \cdot 7{,}86\,\text{m/s}}{0{,}12\,\text{s}} = 4455\,\text{N}$. Vertailu painoon: $\dfrac{F_\text{ka}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6{,}7$
 **Vastaus:** $F_\text{ka} \approx 4{,}5\,\text{kN}$ eli noin $6{,}7$-kertainen kuljettajan painoon verrattuna. Vastauksessa on kaksi merkitsevää numeroa kuten törmäyksen kestossa $0{,}12\,\text{s}$.
 **Järkevyys:** Kuljettajan keskimääräinen kiihtyvyys on $7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2$ eli lähes $7g$. Se on suuri mutta tyypillinen peräänajolle. Voima jakautuu koko selkänojan alalle, joten vartalo kestää sen. Huippuvoima on keskimääräistä suurempi.
 
 ### d)
-**Kysytty:** miksi niskatuki ja joustava selkänoja vähentävät vammoja
+**Kysytty:** miksi niskatuki ja joustava selkänoja suojaavat vammoilta
 **Periaate:** Kappaleen nopeus muuttuu vain, kun siihen vaikuttaa voima (Newtonin ensimmäinen laki). Nopeuden muutokseen tarvitaan impulssi, joka on $m\,\Delta v$, ja keskimääräinen voima on $F_\text{ka} = m\,\Delta v : \Delta t$.
 **Mallivastaus:** Peräänajossa selkänoja työntää kuljettajan vartaloa eteenpäin. Pää ei ole kiinni selkänojassa, joten se pyrkii jatkamaan entisellä nopeudellaan eli pysymään paikallaan. Vartalo liikkuu pään alta eteenpäin. Niska taipuu taaksepäin ja venyy, kunnes niskan lihakset ja nivelsiteet vetävät päänkin mukaan. Tämä äkillinen taipuminen aiheuttaa niskavamman. Sitä sanotaan piiskaniskuksi.
 
@@ -391,7 +391,7 @@ Kun niskatuki on lähellä takaraivoa, se työntää päätä eteenpäin lähes 
 Kuljettajan nopeuden muutos $\Delta v$ on sama, onpa selkänoja jäykkä tai joustava. Joustava selkänoja pidentää aikaa $\Delta t$, jonka kuluessa nopeus muuttuu. Siksi keskimääräinen voima $F_\text{ka} = m\,\Delta v : \Delta t$ on pienempi. Esimerkiksi kaksinkertainen aika puolittaa keskimääräisen voiman.
 
 ### e)
-**Kysytty:** kaksi b-kohdan oletusta ja niiden vaikutuksen suunta auton B nopeuden arvioon
+**Kysytty:** kaksi b-kohdan oletusta. Kummastakin kerrotaan, muuttaako se auton B nopeuden arviota suuremmaksi vai pienemmäksi.
 **Periaate:** Jokaisesta oletuksesta mietitään, olisiko todellinen nopeus suurempi vai pienempi kuin laskettu.
 **Mallivastaus:** Mitkä tahansa kaksi oletusta perusteltuina:
 - *Liikemäärä säilyy törmäyksessä.* Kitka vaikuttaa jo törmäyksen aikana ja pienentää autojen yhteistä liikemäärää. Kitka on enintään $\mu (m_\text{A} + m_\text{B})\,g \approx 21{,}7\,\text{kN}$, joten $0{,}12\,\text{s}$:n aikana sen impulssi on enintään noin $2600\,\text{N}\cdot\text{s}$, noin $11\,\%$ auton B liikemäärästä. Todellinen $v_\text{B}$ voi siis olla jopa noin $15\,\text{m/s}$. Laskettu arvo on siis alaraja.
@@ -402,7 +402,7 @@ Johtopäätös rajoituksen ylittymisestä on silti vahva. Kitkan vaikutus törm�
 
 ### Hyväksytään myös
 - a-kohdan voi ratkaista myös Newtonin toisella lailla ja tasaisesti hidastuvan liikkeen kaavalla: $a = \mu g$ ja $v'^2 = 2as$.
-- b- ja c-kohdassa a-kohdan tulos voi olla pyöristetty, esimerkiksi $7{,}9\,\text{m/s}$; tulokset $13{,}5\text{–}14\,\text{m/s}$ ja $4{,}4\text{–}4{,}5\,\text{kN}$ hyväksytään.
+- b- ja c-kohdassa saa käyttää a-kohdan pyöristettyä tulosta, esimerkiksi $7{,}9\,\text{m/s}$. Silloin tulokset $13{,}5\text{–}14\,\text{m/s}$ ja $4{,}4\text{–}4{,}5\,\text{kN}$ hyväksytään.
 
 ### Yleisiä virheitä
 - b-kohdassa käytetään liike-energian säilymistä, vaikka autot jäävät kiinni toisiinsa ja osa liike-energiasta kuluu rutistumiseen. Silloin $v_\text{B}$ tulee liian pieneksi.

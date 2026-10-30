@@ -34,7 +34,7 @@
           "id": "b",
           "kind": "word",
           "points": 3,
-          "text": "Piirrä hiihtäjän voimakuvio laskun aikana. Ilmanvastusta ei tarvitse ottaa huomioon.",
+          "text": "Piirrä hiihtäjän voimakuvio, kun hän laskee rinnettä. Ilmanvastusta ei tarvitse piirtää.",
           "criteria": [
             {
               "key": "fbd_forces",
@@ -44,7 +44,7 @@
             {
               "key": "fbd_directions",
               "points": 1,
-              "detail": "Paino suoraan alas, tukivoima kohtisuoraan rinteestä ulos ja kitka rinnettä ylös."
+              "detail": "Paino osoittaa suoraan alas. Tukivoima osoittaa kohtisuoraan rinteestä ulos. Kitka osoittaa rinnettä ylös."
             },
             {
               "key": "fbd_representation",
@@ -57,7 +57,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Määritä kummankin voiteen liikekitkakerroin.",
+          "text": "Laske liikekitkakerroin kummallekin voiteelle.",
           "answer": {
             "value": 0.03,
             "unit": "",
@@ -67,12 +67,12 @@
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "Kiihtyvyydet suorien kulmakertoimina: $a_\\text{A} \\approx 0{,}39\\,\\text{m/s}^2$ ja $a_\\text{B} \\approx 0{,}245\\,\\text{m/s}^2$."
+              "detail": "Kiihtyvyydet saadaan suorien kulmakertoimista: $a_\\text{A} \\approx 0{,}39\\,\\text{m/s}^2$ ja $a_\\text{B} \\approx 0{,}245\\,\\text{m/s}^2$."
             },
             {
               "key": "fbd_equations",
               "points": 1,
-              "detail": "$x$-akseli rinnettä alas: $mg\\sin\\alpha - \\mu N = ma$, ja $y$: $N - mg\\cos\\alpha = 0$."
+              "detail": "$x$-akseli osoittaa rinnettä alas: $mg\\sin\\alpha - \\mu N = ma$. Suunnassa $y$: $N - mg\\cos\\alpha = 0$."
             },
             {
               "key": "equation",
@@ -82,12 +82,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Molempien voiteiden kertoimet on laskettu samalla tavalla."
+              "detail": "Kummankin voiteen kerroin on laskettu samalla tavalla."
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$\\mu_\\text{A} \\approx 0{,}030$ ja $\\mu_\\text{B} \\approx 0{,}045$, ilman yksikköä."
+              "detail": "$\\mu_\\text{A} \\approx 0{,}030$ ja $\\mu_\\text{B} \\approx 0{,}045$. Kitkakertoimella ei ole yksikköä."
             }
           ]
         },
@@ -127,7 +127,7 @@
       "id": "fy4-s2",
       "title": "Vaijeriliuku",
       "source": "example",
-      "source_note": "Vaijeriliuku ja mittaustulos ovat keksittyjä esimerkkejä.",
+      "source_note": "Vaijeriliuku ja mittaustulos on keksitty tätä tehtävää varten.",
       "text": "Leirikeskuksen vaijeriliu'ussa laskija roikkuu valjaissa pyörillä kulkevan vaunun alla. Hän liukuu teräsvaijeria pitkin rinteen yli. Lähtölava on $15{,}0\\,\\text{m}$ korkeammalla kuin jarrun alkukohta. Vaijeria on lähtölavalta jarrun alkuun $180\\,\\text{m}$. Laskija lähtee levosta. Jarrun alusta eteenpäin vaijeri on lähes vaakasuora. Siellä jousijarru pysäyttää laskijan.\n\nOhjaaja kertoo laskijoille: ”Jarrulle tullaan yli $60\\,\\text{km/h}$:n vauhdilla.” Tutkamittarilla mitattiin jarrun alussa $62\\,\\text{kg}$:n laskijan nopeudeksi $11{,}2\\,\\text{m/s}$.",
       "parts": [
         {
@@ -149,12 +149,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$mgh = \\tfrac{1}{2}mv^2$, josta $v = \\sqrt{2gh}$"
+              "detail": "$mgh = \\tfrac{1}{2}mv^2$. Siitä saadaan $v = \\sqrt{2gh}$."
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$v \\approx 17{,}2\\,\\text{m/s} \\approx 62\\,\\text{km/h}$"
+              "detail": "Nopeus $v \\approx 17{,}2\\,\\text{m/s} \\approx 62\\,\\text{km/h}$"
             }
           ]
         },
@@ -162,7 +162,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Mittaus ei vastaa ohjaajan väitettä. Määritä mittauksen perusteella, kuinka suuri voima keskimäärin vastustaa laskijan liikettä vaijerilla.",
+          "text": "Mittaus ei vastaa ohjaajan väitettä. Jokin voima vastustaa laskijan liikettä vaijerilla. Määritä mittauksen avulla, kuinka suuri tämä voima on keskimäärin.",
           "answer": {
             "value": 29,
             "unit": "N",
@@ -177,12 +177,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$mgh - F_\\text{vast}\\,s = \\tfrac{1}{2}mv^2$ ratkaistuna $F_\\text{vast}$:n suhteen"
+              "detail": "Yhtälö $mgh - F_\\text{vast}\\,s = \\tfrac{1}{2}mv^2$, josta ratkaistaan $F_\\text{vast}$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_\\text{p} \\approx 9{,}12\\,\\text{kJ}$ ja $E_\\text{k} \\approx 3{,}89\\,\\text{kJ}$"
+              "detail": "Potentiaalienergia $E_\\text{p} \\approx 9{,}12\\,\\text{kJ}$ ja liike-energia $E_\\text{k} \\approx 3{,}89\\,\\text{kJ}$"
             },
             {
               "key": "units_precision",
@@ -205,12 +205,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Sama energiayhtälö uudella massalla, ratkaistuna $v$:n suhteen"
+              "detail": "Sama energiayhtälö kuin b-kohdassa, mutta uudella massalla. Siitä ratkaistaan $v$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
+              "detail": "Liike-energia jarrun alussa $E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
             },
             {
               "key": "units_precision",
@@ -259,14 +259,14 @@
       "id": "fy4-s3",
       "title": "Peräänajo liikennevaloissa",
       "source": "example",
-      "source_note": "Onnettomuus ja raportin luvut ovat keksittyjä esimerkkejä.",
+      "source_note": "Onnettomuus ja raportin luvut on keksitty tätä tehtävää varten.",
       "text": "Henkilöauto A seisoo punaisissa valoissa, ja sen kuljettaja painaa jarrua. Takaa tuleva auto B ajaa sen perään. Autot jäävät kiinni toisiinsa ja liukuvat yhdessä suoraan eteenpäin, kunnes ne pysähtyvät. Kummankin auton pyörät ovat lukossa koko liukumisen ajan.\n\nPoliisin raportista:\n\n- auton A massa kuljettajineen on $1250\\,\\text{kg}$ ja auton B massa kuljettajineen on $1700\\,\\text{kg}$\n- autojen yhteinen liukumamatka törmäyskohdasta pysähtymiseen on $4{,}2\\,\\text{m}$ vaakasuoralla, kuivalla asfaltilla\n- lukossa olevien renkaiden ja tien välinen kitkakerroin on $0{,}75$\n- nopeusrajoitus on $40\\,\\text{km/h}$; auton B kuljettaja kertoo ajaneensa alle $40\\,\\text{km/h}$:n nopeudella.",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri oli autojen yhteinen nopeus heti törmäyksen jälkeen?",
+          "text": "Autot liikkuivat törmäyksen jälkeen yhdessä. Kuinka suuri oli niiden nopeus heti törmäyksen jälkeen?",
           "answer": {
             "value": 7.9,
             "unit": "m/s",
@@ -274,7 +274,7 @@
           },
           "criteria": [
             {
-              "text": "Perustelee mallin: liukuessa autoja hidastaa vain kitka $\\mu (m_\\text{A} + m_\\text{B}) g$, koska tukivoima on vaakasuoralla tiellä yhtä suuri kuin paino.",
+              "text": "Perustelee mallin: kun autot liukuvat, niitä hidastaa vain kitka $\\mu (m_\\text{A} + m_\\text{B}) g$. Vaakasuoralla tiellä tukivoima on yhtä suuri kuin paino.",
               "tag": "transfer",
               "points": 1
             },
@@ -291,7 +291,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Esimerkiksi hidastuvuus $\\mu g \\approx 7{,}4\\,\\text{m/s}^2$ sopii jarrutukseen kuivalla asfaltilla, ja $7{,}9\\,\\text{m/s} \\approx 28\\,\\text{km/h}$."
+              "detail": "Esimerkiksi hidastuvuus $\\mu g \\approx 7{,}4\\,\\text{m/s}^2$ on tavallinen jarrutuksessa kuivalla asfaltilla. Lisäksi $7{,}9\\,\\text{m/s} \\approx 28\\,\\text{km/h}$."
             }
           ]
         },
@@ -314,7 +314,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$m_\\text{B}v_\\text{B} = (m_\\text{A} + m_\\text{B})v'$ ratkaistuna $v_\\text{B}$:n suhteen"
+              "detail": "Yhtälö $m_\\text{B}v_\\text{B} = (m_\\text{A} + m_\\text{B})v'$, josta ratkaistaan $v_\\text{B}$"
             },
             {
               "key": "units_precision",
@@ -342,7 +342,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$, josta $F_\\text{ka} = \\dfrac{m\\,\\Delta v}{\\Delta t}$"
+              "detail": "$F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$. Siitä saadaan $F_\\text{ka} = \\dfrac{m\\,\\Delta v}{\\Delta t}$."
             },
             {
               "key": "units_precision",
@@ -352,7 +352,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Voima on noin $6{,}7$-kertainen kuljettajan painoon verrattuna."
+              "detail": "Voima on noin $6{,}7$ kertaa niin suuri kuin kuljettajan paino."
             }
           ]
         },
@@ -388,7 +388,7 @@
             {
               "key": "assumptions",
               "points": 1,
-              "detail": "Esimerkiksi kitka vaikuttaa jo törmäyksen aikana ja pienentää autojen yhteistä liikemäärää, joten todellinen $v_\\text{B}$ on laskettua suurempi."
+              "detail": "Esimerkiksi kitka vaikuttaa jo törmäyksen aikana. Se pienentää autojen yhteistä liikemäärää. Siksi todellinen $v_\\text{B}$ on suurempi kuin laskettu."
             },
             {
               "key": "assumptions",

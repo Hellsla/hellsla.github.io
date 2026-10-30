@@ -208,15 +208,15 @@ The acceleration $\overline{a}$ points down the slope, so the sum of the forces 
 
 *Design.* The brake is designed for the larger estimate, $14\,\text{m/s}$: if the true speed is smaller, the brake is certainly enough, but a brake designed for too small a speed could fail. The best information is obtained by measuring the speeds of heavy riders with the radar as well.
 
-### Hyväksytään myös
-- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
-- In part d the brake may be designed for the upper limit of the frictionless model, $17.2\,\text{m/s}$, or for the estimate of part c with a safety margin for heavier riders. Either is a correct and safe conclusion when justified, and earns the point for the conclusion.
-
 ### Yleisiä virheitä
 - In part b the whole difference between the potential energy and the kinetic energy is divided by the height $15.0\,\text{m}$ and not by the distance travelled by the resisting force, $180\,\text{m}$.
 - In part a the acceleration and distance along the cable are calculated using the angle, although conservation of energy needs only the height difference.
 - In part c the mass is assumed to cancel as in part a, which gives the same $11.2\,\text{m/s}$ without justifying why the resisting force would grow with the mass.
 - In part d it is only stated that "the heavy one goes faster" or "the mass does not matter", without comparing either claim with the resisting forces.
+
+### Hyväksytään myös
+- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
+- In part d the brake may be designed for the upper limit of the frictionless model, $17.2\,\text{m/s}$, or for the estimate of part c with a safety margin for heavier riders. Either is a correct and safe conclusion when justified, and earns the point for the conclusion.
 
 ## fy4-s3
 
