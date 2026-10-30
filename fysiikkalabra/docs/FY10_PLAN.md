@@ -73,7 +73,7 @@ published, so a student without FY5–FY8 can follow the whole core path; FY5–
 1. Official goals, scope (credits) and assessment of FY10 (the page shows none).
 2. Whether the FY10 row should also appear on the English and selkosuomi front pages (now: a note that it is in
    Finnish only).
-3. Approve or change the proposed pathway and the first three investigations above.
+3. ~~Approve the proposed pathway and the first three investigations~~: approved by the teacher 2026-10-30.
 4. Equipment facts the cards lost: the heater's current limit, laser class, the school's motion sensors, force plate
    and video-analysis software (and which Graphical Analysis version students use).
 5. Whether the Esimerkkityöt wording may be adapted (the pendulum card names Espoon yhteislyseo) or the cards are
