@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 158b41a2a2e12f2f
+CONTENT-HASH: 44904908c0e5a59c
 
 ## Blocking
 
@@ -8,9 +8,10 @@ CONTENT-HASH: 158b41a2a2e12f2f
 - exercises.json:90 (L3-01) — "voima köydestä kohdistuu pyörän akseliin": the rope acts on the wheel, and the force reaches the axle only through the light wheel. The solution handles this correctly. The wording could read "Kuinka suuri voima akseliin kohdistuu pyörästä".
 
 ## Checked
-- Round-1 blocker fixed: L1-03, L3-02 and L3-03 now state a light, inextensible string and a light, frictionless pulley. L2-02, L2-04 and L3-01 add "venymätön", and L1-05 and L2-03 mention air resistance.
-- Recomputed all 12 answers in one script with my own formulas (scratchpad rc.py), solving L3-02 numerically by bisection: 2,0; 4,686; 2,803; 29,43; 4,0; 880,8; 6,54; 8,0; 0,9073; 18 835 (2T on the axle, T = 9418 N); 0,4405; 0,857. answers.py agrees, and every rounded answer stays inside its tolerance (L1-04 is at 1,5 % of 2 %).
-- L3-01 has a new question (the axle force). The pulley's equilibrium F = 2T is right for a light wheel, and the check 2T < G₁ + G₂ is a real check.
-- L3-02: T rises monotonically with m₂, so the limit T = T_max gives the maximum. Rounding down to 0,44 kg stays safe.
-- Every solution names the bodies and draws the diagram, gives each body its positive direction, then the equations. The unknown is solved in symbols first, and the rounding names the limiting datum. No third-law pair sits on one diagram, and no velocity or acceleration is drawn as a force.
-- Hash 158b41a2a2e12f2f at start and end.
+- The change since the PASS (solutions.md:96, L2-04): the substitution factors the unit out, $(9{,}81 + 2{,}0)\,\text{m/s}^2$ over $(9{,}81 - 2{,}0)\,\text{m/s}^2$. The numbers and units are unchanged and still right: 0,60 kg · 11,81 m/s² = 7,086 N, and 7,086 N / 7,81 m/s² = 0,9073 kg. The terms of each sum share a unit, so factoring it out is valid.
+- Recomputed all 12 answers in one script with my own formulas, solving L2-04 and L3-02 numerically by bisection: 2,0; 4,686; 2,803; 29,43; 4,0; 880,8; 6,54; 8,0; 0,9073; 18 835 (2T, T = 9418 N); 0,4405; 0,857. answers.py agrees, and every rounded answer is inside its tolerance (L1-04 is the closest, at 1,5 % of 2 %).
+- L2-04 check: (m₂ − m₁)g/(m₁ + m₂) = 2,000 m/s². T = 7,09 N lies between the weights 5,9 N and 8,9 N.
+- L3-01: F = 2T on a light wheel is right, and 2T < G₁ + G₂ is a real check. L3-02: T rises monotonically with m₂, so the limit gives the maximum. L3-03: v = 2,10 m/s, and free fall takes 0,43 s.
+- Force diagrams: each body gets its own diagram and positive direction before the equations. No third-law pair sits on one diagram, and acceleration is drawn off the body in malli-ketju. T₂ acts at the lower crate's top face and at the upper crate's bottom face.
+- Notation, assumptions (light, inextensible string; light, frictionless pulley) and the formulas match the brief.
+- Hash 44904908c0e5a59c at start and end.

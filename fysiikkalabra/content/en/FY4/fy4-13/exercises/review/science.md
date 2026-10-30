@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 16360479dbae624b
+CONTENT-HASH: afc0e706719cc159
 
 ## Blocking
 
@@ -10,3 +10,4 @@ CONTENT-HASH: 16360479dbae624b
 Compared exercises.json (all 12 exercises) and solutions.md with the Finnish: data, numbers, questions, all seven solution parts (given, find, principle, free-body diagram, formula, conversions, substitution, answer, reasonableness) and significant-figure remarks kept; all 517 numeric tokens in solutions.md agree with the Finnish.
 Terms right (mass, weight, tension, normal force, counterweight, axle); decimal point throughout; no Finnish left.
 Nothing needed fixing in the exercises; check_latex ok, check_i18n clean.
+Rechecked the later change to task fy4-13-L2-04: the Substitution line now factors the units, matches the Finnish change exactly, and nothing else changed; check_i18n clean.

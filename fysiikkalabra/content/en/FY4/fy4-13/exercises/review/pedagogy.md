@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 16360479dbae624b
+CONTENT-HASH: afc0e706719cc159
 
 ## Blocking
 
@@ -10,3 +10,4 @@ CONTENT-HASH: 16360479dbae624b
 Read each exercise and solution as a student: situation first, question last, the draw-the-diagram instruction kept where the Finnish has it, level 1/2/3 order unchanged.
 Every solution is complete (12 solutions, 108 labelled parts, same as the Finnish), with a justified significant-figure statement and a reasonableness check.
 Nothing was added or dropped; wording is plain and close to the Finnish.
+Rechecked the later change to task fy4-13-L2-04: the Substitution line now factors the units, matches the Finnish change exactly, and nothing else changed; check_i18n clean.
