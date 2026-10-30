@@ -7,7 +7,7 @@
   "erottamaan kimmoisan ja kimmottoman törmäyksen liike-energian avulla."
  ],
  "prior": [
-  "Kappaleen liikemäärä on $\\overline{p} = m\\overline{v}$, ja voiman impulssi muuttaa sitä: $\\Delta\\overline{p} = \\overline{F}\\,\\Delta t$ (luku *Liikemäärä ja impulssi*)",
+  "Kappaleen liikemäärä on $\\overline{p} = m\\overline{v}$, ja vakiosuuruisen kokonaisvoiman impulssi muuttaa sitä: $\\Delta\\overline{p} = \\Sigma\\overline{F}\\,\\Delta t$ (luku *Liikemäärä ja impulssi*)",
   "Kappaleen liike-energia on $E_\\text{k} = \\tfrac12 mv^2$, ja kitkan kaltaiset voimat muuttavat mekaanista energiaa sisäenergiaksi (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
  ],
  "activities": [

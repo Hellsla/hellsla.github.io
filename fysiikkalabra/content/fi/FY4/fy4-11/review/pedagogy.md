@@ -1,22 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 112ed45a9ee7889a
+VERDICT: FAIL
+CONTENT-HASH: ff2f1b681aa38dda
 
 ## Blocking
+- glossary.json:2477 (termi törmäysaika) — määritelmä kirjoittaa edelleen "F_k = mΔv/Δt", kun lesson.md, kuva 6 ja ratkaisut käyttävät F_ka; sama suure on kahdella symbolilla ja sanasto näkyy opiskelijalle — korjaa F_ka (ja muodossa $F_\text{ka}$ kuten muualla).
 
 ## Polish
-- inquiry.json hook — "pienikin nopeuden lisäys pidentää pysähtymismatkaa paljon" kertoo suunnan ennen kuin opiskelija on sitoutunut; sano esim. "Autokoulussa puhutaan pysähtymismatkasta ja turvavyöstä" ja jätä suunta ennusteille.
-- inquiry.json "virhe" — kolmen väärän vaihtoehdon palaute päättyy samaan lauseeseen "Virhe on se, että nopeus on yksikössä km/h", joten se toistaa vastauksen eikä korjaa kunkin väärinkäsitystä; pidä vain oman vaihtoehdon korjaus (esim. neliö tulee kuvaajan kolmion alasta) ja jätä vastaus oikean vaihtoehdon palautteeseen.
-- inquiry.json learn 2 — tavoite "arvioimaan, miten ... reaktioaika ... vaikuttavat" ei tutkita kokeessa (reaktioaika on vakioitu kaikissa kokeissa; vain esimerkki ja tehtävät käsittelevät sitä); lisää valinnaiseen kokeeseen 3 reaktioaika tai muotoile tavoite uudelleen.
-- lesson.md Ydinajatus — hidastuvuus on lihavoitu määritelmä mutta ei glossaryssa; lisää termi glossary.jsoniin.
-- review/shots/fy4-11-sim-390.png — otettu ennen kuin canvas on mitoittunut (kuvaaja ja akselit päällekkäin, tie leikkautuu); sivu itse on kunnossa (tarkistettu Playwrightilla 390 px:ssä, myös kokeen sisällä), joten kyse on kuvan ajoituksesta.
+- Kierroksen 1 Polish-kohdat (hook, "virhe"-palaute, learn 2, hidastuvuus glossaryyn, sim-390-kuvan ajoitus) on käsitelty tai jäävät entiselleen; tämä kierros ei muuttanut niitä.
 
 ## Checked
-- Polku Pohdinta, Ennusta, Tutki, teoria, esimerkki, Tarkista toimii; Miksi-kysymyksen molemmat osat vastataan tekstissä; tavoitteet vastaavat paikan tavoitteita.
-- Ennusteet 1 ja 2 voidaan kumota kokeilla (min 2, nopeudet 50 ja 60/100 km/h); ennuste 3 perustuu mallinnettuun taulukkoon ja teoriaan, ei simulaatioon, mikä sopii aiheeseen.
-- Kokeiden kysymykset ja väärien vaihtoehtojen palautteet korjaavat väärinkäsityksen (nopeuksien erotus, neliö vs. verrannollisuus, lukkiutuva "heittävä voima").
-- Hirvikuvitus tunnistettava ja sopii Miksi-kysymykseen (auton ajovalot, hirvi tiellä); kuva 2 voimakuvio: N ja G yhtä pitkät, kitka taaksepäin, ei värillä yksin.
-- Kuvat 3-6 luettavia 390 px:ssä, laskevat luvut täsmäävät tekstiin; tF-kuvan pinta-alat yhtä suuret; kuva 5 ei anna lukuarvoja.
-- Esimerkki seitsemässä vaiheessa, symbolit ennen lukuja, yksikkömuunnos erikseen, järkevyystarkistus.
-- Simulaatio 390 px:ssä: ohjaimet ja lukemat mahtuvat, selitykset Käyttöohje, Mallin oletukset, Laskennan selitys -laatikoissa.
-- Työmäärä noin yksi tunti ydinpolulla (valinnaisia 6); Tarkista-kysymykset testaavat käsitteen, laskun ja selityksen; selityksen kriteerit havaittavia.
-- Suomi: sijamuodot ja termit (reaktiomatka, jarrutusmatka, törmäysaika) johdonmukaisia; voimakuvasuunnitelmaa ei ollut paketissa.
+- F_k -> F_ka: lesson.md (kaava, selitys, kuva 6 akseli ja molemmat kuvatekstit, tiivistelmä), exercises/solutions.md ja answers.py käyttävät F_ka; inquiry.json, exit-ticket.json, exercises.json ja simulaatio eivät sisällä symbolia.
+- Kuva 6 (tF): akselin F_ka (kN) ja kehystetyt nimiöt "vyössä: F_ka ≈ 10 kN" / "ilman vyötä: F_ka ≈ 100 kN" mahtuvat laatikoihinsa (99/208/270 yks. viewBoxissa 600), kuva-kaappauksessa ei leikkaantumista, layout 360 px ok.
+- Symboli vastaa liikemääräluvun F_ka:ta; muuta sisältöä ei ole muutettu, kierroksen 1 PASS pätee muuten.

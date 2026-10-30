@@ -2474,7 +2474,7 @@
   },
   {
     "term": "törmäysaika",
-    "definition": "Aika, jossa kappaleen nopeus muuttuu törmäyksessä. Kun liikemäärän muutos on sama, pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa, F_k = mΔv/Δt.",
+    "definition": "Aika, jossa kappaleen nopeus muuttuu törmäyksessä. Kun liikemäärän muutos on sama, pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa, F_ka = mΔv/Δt.",
     "lessons": [
       "fy4-11"
     ],
