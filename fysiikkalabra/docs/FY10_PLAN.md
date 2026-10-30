@@ -33,21 +33,35 @@ mittausepävarmuus · 9 Lähteet, plus a checklist before returning. Teach why e
 from examples to reminders to independent writing; a rubric on reasoning, method, analysis, interpretation and
 reliability, not formatting. No invented grading rules.
 
-## Source documents (supplied 2026-10-30 in the project thread; kept out of this public repository)
-| Document | State in phase A |
-|---|---|
-| `FY10 – Työselostuspohja.pdf` (5 p.) | read; its section list is on the FY10 page. Note: §5 *Kulmakertoimen epävarmuus* says "jommallakummalla tavalla" but lists one way only: check in phase B whether a second way is missing from the source. |
-| `Esimerkkityöt.pdf` (17 p.) | titles listed only. Its text layer has blanks where formulas, quantities and values should be (e.g. "Pidä sähkövirta alle ."): phase B must read the rendered pages before deciding whether a gap is in the source. Apparent duplicates: *Kappaleen jäähtymisen tutkiminen* ×2, *Muuntajan tutkiminen* ×2; the LED/Planck work seems to lack a title in the text layer. |
-| `11A_fi.pdf` (1 p.) | YTL autumn 2024 physics problem 11, material 11.A (flawed rubber-band report). Third-party exam material: link to the original source, do not republish it. |
+## Source documents
+The three PDFs supplied 2026-10-30 (Esimerkkityöt 17 p., FY10 – Työselostuspohja 5 p., YO 2024 11.A 1 p.) stay out
+of this public repository. **`docs/fy10/inventory.md`** is the full inventory (phase B): 29 distinct investigation
+cards with physics, modules and published chapters, F/E levels, support modes, TVT, equipment, safety and every gap.
+Main findings: the blanks are in the PDFs themselves (lost aims and values, not extraction errors); two cards are
+printed twice; two lack titles; six lack equipment lists; four need safety values from the real equipment; the
+pendulum card names Espoon yhteislyseo (check authorship before adapting wording); the template's second way of
+estimating the slope's uncertainty is missing.
 
-Investigations in `Esimerkkityöt.pdf` (by text-layer headings): putoamiskiihtyvyys heilurilla · uppokuumentimen
-hyötysuhde · liikemäärän säilyminen törmäyksissä · jousivakio kahdella menetelmällä · liukukitkakerroin ·
-valaistusvoimakkuus ja etäisyys · kappaleen jäähtyminen · pariston kuormituskäyrä · tuulivoimala · valonnopeus
-mikroaaltouunilla · jumppapallon muotokerroin · kondensaattorin kapasitanssi · hiuksen paksuus · äänen resonanssi
-putkessa · muuntaja · sähkömagneettinen induktio · vesivoimalan pienoismallin hyötysuhde · pudotus- ja
-pomppukorkeus · (LEDit / Planckin vakio) · leikkiauton nopeus korkeuden funktiona · äänennopeus · kaasun
-tilanyhtälö · lämmön johtuminen lämpökameralla · hissin kulkema matka kiihtyvyydestä · hyppy voimalevyllä.
-Phase B turns this into the full inventory (fields listed in the brief §15) before any page is written.
+## Proposed pathway (phase B, for the teacher's review)
+Each theme gets one or two investigations from the library. The early ones need only FY1–FY4, whose chapters are
+published, so a student without FY5–FY8 can follow the whole core path; FY5–FY8 investigations are options.
+
+| Theme | Core investigation (F/E, mode) | Options |
+|---|---|---|
+| 1 Tutkimus ja tutkimuskysymykset | Pudotus- ja pomppukorkeus (F1/E1, O) · YO 2024/11 diagnostic: find the error in each section | Lämmön johtuminen lämpökameralla |
+| 2 Hypoteesit, mallit ja ennusteet | Leikkiauton nopeus korkeuden funktiona (F1–F2/E2, O): predict $v^2 \propto h$ before measuring | Liikemäärän säilyminen törmäyksissä |
+| 3 Suunnittelu, muuttujat ja vakioidut suureet | Heiluri (F2/E2, OO): choose the variable, control amplitude and mass | Tuulivoimala (one factor) |
+| 4 Mittausmenetelmät | **Jousivakio, voima ja venymä** (F1/E1, O→OO) | Äänennopeus (F1/E2, I) |
+| 5 Graafinen analyysi ja mallit | Uppokuumentimen hyötysuhde (F2/E2, OO) | Valaistusvoimakkuus ja etäisyys; Kappaleen jäähtyminen; Kaasun tilanyhtälö |
+| 6 Epävarmuus ja luotettavuus | **Jousivakio kahdella menetelmällä** (F2/E3, OO): compare results within uncertainties | Hyppy voimalevyllä (two methods) |
+| 7 Raportointi ja johtopäätökset | YO 2024/11 revisited independently; full report of one earlier investigation | — |
+| 8 Itsenäinen tutkimus | student's choice from the library, mode I | Hissi, Muotokerroin, Kapasitanssi, Planck, Muuntaja, Taitekerroin … |
+
+**First investigations to build** (one PR each, in this order):
+1. *Jousivakion määrittäminen* (phase E): one page, method 1 core and method 2 extension, three support modes;
+   needs a short Hooke's law explanation (no chapter yet) and FY5 guidance for the oscillation method.
+2. *Pudotus- ja pomppukorkeus*: the gentlest start, physics only FY4 energy.
+3. *Uppokuumentimen hyötysuhde*: after the teacher supplies the current limit; gives FY3 its first *Sovella kokeellisesti* link.
 
 ## First investigation (phase E)
 *Jousivakion määrittäminen*: force–extension with a linear fit (FY4), extension via oscillations compared with it
@@ -57,8 +71,13 @@ Phase B turns this into the full inventory (fields listed in the brief §15) bef
 
 ## Decisions awaiting the teacher
 1. Official goals, scope (credits) and assessment of FY10 (the page shows none).
-2. Whether the FY10 row should also appear on the English and selkosuomi front pages (now: only a note that it is
-   in Finnish only).
-3. Whether the investigation library gets its own public index page or lives only inside FY10 at first.
-4. Where public teacher guidance lives (an *Opettajalle* section vs a part of each resource).
-5. Verification of the F/E levels and the safety notes of each chosen investigation.
+2. Whether the FY10 row should also appear on the English and selkosuomi front pages (now: a note that it is in
+   Finnish only).
+3. ~~Approve the proposed pathway and the first three investigations~~: approved by the teacher 2026-10-30.
+4. Equipment facts the cards lost: the heater's current limit, laser class, the school's motion sensors, force plate
+   and video-analysis software (and which Graphical Analysis version students use).
+5. Whether the Esimerkkityöt wording may be adapted (the pendulum card names Espoon yhteislyseo) or the cards are
+   rewritten from scratch.
+6. The second way to estimate the slope's uncertainty for the report template (§5).
+7. Whether the investigation library gets its own public index page or lives only inside FY10 at first, and where
+   public teacher guidance lives.
