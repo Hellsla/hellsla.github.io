@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "contribution": "Mekaanisen energian käsitteet viedään sähkön tuotantoon. Oikeista voimalaitos- ja tehokäyräaineistoista päätellään kaksi asiaa. Vesivoimalan teho on verrannollinen virtaamaan ja putouskorkeuteen. Tuulivoimalan teho on verrannollinen tuulen nopeuden kolmanteen potenssiin. Kaavat $P = \\eta\\rho Q g h$ ja $P = \\tfrac{1}{2}\\eta\\rho A v^3$ johdetaan potentiaali- ja liike-energiasta hyötysuhteen kanssa.",
+  "learn": [
+    "selittämään, miten vesi- ja tuulivoimala muuttavat veden potentiaalienergiaa ja tuulen liike-energiaa sähköksi.",
+    "laskemaan vesi- ja tuulivoimalan tehon, hyötysuhteen ja tuottaman energian.",
+    "perustelemaan, miksi tuulivoimalan teho kasvaa tuulen nopeuden kolmannessa potenssissa."
+  ],
+  "prior": [
+    "Potentiaalienergia on $E_\\text{p} = mgh$ ja liike-energia $E_\\text{k} = \\tfrac{1}{2}mv^2$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)",
+    "Kun vain painovoima tekee työtä, potentiaalienergia muuttuu liike-energiaksi ja mekaaninen energia säilyy (luku *Mekaanisen energian säilyminen ja energiaperiaate*)",
+    "Teho kertoo, kuinka nopeasti energiaa muuntuu: $P = \\tfrac{\\Delta E}{\\Delta t}$ (luku *Teho*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Vuoksi laskee Saimaasta. Se virtaa ensin Tainionkosken voimalaitoksen läpi. Muutaman kilometrin päässä alavirrassa se virtaa Imatran voimalaitoksen läpi. Sama vesi pyörittää molempien turbiineja. Silti Imatran teho on $192\\,\\text{MW}$ ja Tainionkosken $62\\,\\text{MW}$. Tuulivoimalan teho taas vaihtelee tuulen mukana. Heikolla tuulella teho on pieni. Kun tuuli voimistuu vain vähän, teho voi kasvaa moninkertaiseksi.",
+      "question": "Mistä vesi- ja tuulivoimalan teho riippuu? Miksi tuulen nopeus vaikuttaa tehoon niin voimakkaasti?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: liike-energia",
+      "optional": true,
+      "prompt": "Pyöräilijän nopeus kasvaa $5\\,\\text{m/s}$:sta $10\\,\\text{m/s}$:iin. Kuinka monta kertaa suurempi on hänen liike-energiansa lopussa kuin alussa?",
+      "choices": [
+        {
+          "text": "Neljä kertaa suurempi, koska liike-energia riippuu nopeuden neliöstä.",
+          "correct": true,
+          "feedback": "Oikein. Luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia* opit, että $E_\\text{k} = \\tfrac{1}{2}mv^2$. Kun $v$ kaksinkertaistuu, $v^2$ nelinkertaistuu. Tässä luvussa sama neliö selittää osan tuulivoimalan tehosta."
+        },
+        {
+          "text": "Kaksi kertaa suurempi, koska nopeus kaksinkertaistuu.",
+          "feedback": "Liike-energia ei ole verrannollinen nopeuteen vaan sen neliöön: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Kaksinkertainen nopeus antaa $2^2 = 4$ kertaa suuremman liike-energian."
+        },
+        {
+          "text": "Kahdeksan kertaa suurempi, koska nopeus on kaavassa kolmannessa potenssissa.",
+          "feedback": "Liike-energian kaavassa nopeus on toisessa potenssissa, $E_\\text{k} = \\tfrac{1}{2}mv^2$, joten kerroin on $2^2 = 4$. Kolmas potenssi tulee vastaan vasta tuulivoimalan tehossa. Siinä mukana on myös sekunnissa virtaavan ilman määrä."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: tuulen nopeus ja teho",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "Tuulivoimalan tehoa mitataan kahdella tuulen nopeudella, $5\\,\\text{m/s}$ ja $10\\,\\text{m/s}$. Kumpikin on pienempi kuin nopeus, jolla voimala saavuttaa suurimman tehonsa. Kuinka monta kertaa suurempi on sähköteho voimakkaammalla tuulella?",
+      "choices": [
+        {
+          "text": "Noin kaksi kertaa, koska tuulen nopeus kaksinkertaistuu.",
+          "feedback": "Tehokäyrässä teho kasvaa $144\\,\\text{kW}$:sta $1285\\,\\text{kW}$:iin, lähes yhdeksänkertaiseksi. Kaksinkertainen tuuli tuo roottorin läpi sekunnissa kaksi kertaa enemmän ilmaa. Lisäksi jokaisella ilmakilogrammalla on nelinkertainen liike-energia."
+        },
+        {
+          "text": "Noin neljä kertaa, koska liike-energia riippuu nopeuden neliöstä.",
+          "feedback": "Neliö selittää vain osan. Kaksinkertaisella tuulella roottorin läpi virtaa sekunnissa myös kaksi kertaa enemmän ilmaa. Siksi teho kasvaa $2 \\cdot 4 = 8$ -kertaiseksi. Tehokäyrässä kerroin on $1285 : 144 \\approx 8{,}9$."
+        },
+        {
+          "text": "Noin kahdeksan kertaa, koska sekä ilman määrä että sen liike-energia kasvavat.",
+          "correct": true,
+          "feedback": "Oikein. Sekunnissa roottorin läpi virtaa kaksi kertaa enemmän ilmaa, ja jokaisella kilogrammalla on nelinkertainen liike-energia: $2 \\cdot 4 = 8$. Tehokäyrässä kerroin on $1285 : 144 \\approx 8{,}9$, koska hyötysuhde on suuremmalla tuulella vähän parempi."
+        },
+        {
+          "text": "Lähes yhtä suuri, koska generaattori pyörii aina samalla tahdilla.",
+          "feedback": "Generaattorin pyörimistahti ei määrää tehoa. Teho on energiaa sekunnissa. Voimakkaampi tuuli tuo roottoriin sekunnissa paljon enemmän liike-energiaa. Tehokäyrässä teho kasvaa $144\\,\\text{kW}$:sta $1285\\,\\text{kW}$:iin."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksi voimalaa, sama vesi",
+      "justify": true,
+      "layout": "models",
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "Sama Vuoksen vesi virtaa sekä Tainionkosken että Imatran voimalaitoksen läpi. Imatran teho on silti noin kolme kertaa suurempi. Mikä selitys on mielestäsi oikea?",
+      "choices": [
+        {
+          "text": "Imatralla vesi putoaa korkeammalta, joten jokainen kuutiometri antaa enemmän energiaa.",
+          "correct": true,
+          "feedback": "Oikein. Imatran putouskorkeus on $24\\,\\text{m}$ ja Tainionkosken $7{,}8\\,\\text{m}$, eli noin kolme kertaa pienempi. Veden potentiaalienergia $mgh$ on verrannollinen putouskorkeuteen. Samalla virtaamalla teho on siis kolminkertainen."
+        },
+        {
+          "text": "Imatralla vettä virtaa sekunnissa enemmän, koska koski on jyrkempi ja vesi nopeampaa.",
+          "feedback": "Sama vesi virtaa molempien voimalaitosten läpi. Sekunnissa virtaava vesimäärä eli virtaama on siis lähes sama. Ero syntyy putouskorkeudesta: Imatralla $24\\,\\text{m}$, Tainionkoskella $7{,}8\\,\\text{m}$."
+        },
+        {
+          "text": "Imatran turbiinien hyötysuhde on noin kolme kertaa parempi kuin Tainionkosken.",
+          "feedback": "Hyötysuhde on enintään $100\\,\\%$, ja suurilla vesivoimaloilla se on noin $90\\,\\%$. Kolminkertainen hyötysuhde on mahdoton. Ero syntyy putouskorkeudesta: Imatralla vesi putoaa noin kolme kertaa korkeammalta."
+        },
+        {
+          "text": "Imatralla on enemmän turbiineja, ja jokainen turbiini tuottaa lisää energiaa.",
+          "feedback": "Turbiini ei tuota energiaa vaan muuntaa veden energiaa. Jos sama vesi jaetaan useammalle turbiinille, kukin saa vähemmän vettä. Ero syntyy siitä, että Imatralla vesi putoaa noin kolme kertaa korkeammalta."
+        }
+      ]
+    },
+    {
+      "id": "tuuli-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tuulivoimalan tehokäyrä",
+      "source": "statistics",
+      "source_note": "Valmistajan ilmoittama tehokäyrä, Vestas V82, roottorin halkaisija $82\\,\\text{m}$: NREL Turbine Archive (nrel.github.io/turbine-models, tiedosto VestasV82_1.65MW_82.csv, kansio turbine_models/data/Onshore), luettu 30.10.2026.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "text": "Valmistaja ilmoittaa tuulivoimalan sähkötehon $P$ eri tuulen nopeuksilla $v$. Taulukko ja kuvaaja ovat voimalasta, jonka roottorin halkaisija on $82\\,\\text{m}$.\n\n| $v$ (m/s) | $P$ (kW) |\n|---|---|\n| $3$ | $0$ |\n| $4$ | $28$ |\n| $5$ | $144$ |\n| $6$ | $309$ |\n| $7$ | $511$ |\n| $8$ | $758$ |\n| $9$ | $1017$ |\n| $10$ | $1285$ |\n| $11$ | $1504$ |\n| $12$ | $1637$ |\n| $13$ | $1650$ |\n| $16$ | $1650$ |\n| $20$ | $1650$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta kertaa suurempi on sähköteho tuulen nopeudella $10\\,\\text{m/s}$ kuin nopeudella $5\\,\\text{m/s}$?",
+        "answer": 8.9236,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Lue taulukosta teho kummallakin tuulen nopeudella.",
+          "Jaa suurempi teho pienemmällä.",
+          "$1285\\,\\text{kW} : 144\\,\\text{kW}$"
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "Tämä on tuulen nopeuksien suhde $10 : 5$. Kysytään tehojen suhdetta. Lue taulukosta $P$ kummallakin nopeudella."
+          },
+          {
+            "value": 1141,
+            "feedback": "Tämä on tehojen erotus kilowatteina. Kysytään, kuinka monta kertaa suurempi teho on. Jaa tehot: $1285\\,\\text{kW} : 144\\,\\text{kW}$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta $P_{5} = 144\\,\\text{kW}$, kun $v = 5\\,\\text{m/s}$, ja $P_{10} = 1285\\,\\text{kW}$, kun $v = 10\\,\\text{m/s}$\n\n**Kysytty:** kuinka monta kertaa suurempi $P_{10}$ on kuin $P_{5}$, suhdeluku $x$ ilman yksikköä\n\n**Periaate:** Kertoimen saa, kun suurempi teho jaetaan pienemmällä. Tehot ovat samaa voimalaa, joten ero johtuu vain tuulen nopeudesta.\n\n**Kaava:** $P_{10} = x P_{5}$, joten $x = \\dfrac{P_{10}}{P_{5}}$\n\n**Muunnokset:** Kumpikin teho on kilowatteina, joten yksikkö supistuu eikä muunnoksia tarvita.\n\n**Sijoitus:** $x = \\dfrac{1285\\,\\text{kW}}{144\\,\\text{kW}} = 8{,}924$\n\n**Vastaus:** $8{,}92$. Vastauksessa on kolme merkitsevää numeroa, koska teho $144\\,\\text{kW}$ on annettu kolmella numerolla. Teho kasvaa lähes yhdeksänkertaiseksi, kun tuulen nopeus kaksinkertaistuu.\n\n**Järkevyys:** Jos teho olisi verrannollinen nopeuteen, kerroin olisi $2$. Jos teho olisi verrannollinen nopeuden neliöön, kerroin olisi $4$. Tulos on lähellä lukua $2^3 = 8$. Teho kasvaa siis suunnilleen nopeuden kolmannessa potenssissa."
+      }
+    },
+    {
+      "id": "vesi-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Vuoksen kaksi voimalaitosta",
+      "source": "statistics",
+      "source_note": "Teho ja putouskorkeus: Fortum, Vuoksen vesistön voimalaitokset (fortum.com), luettu 30.10.2026. Vuoksen vuotuinen keskivirtaama noin $600\\,\\text{m}^3\\text{/s}$: Kaakkois-Suomen elinvoimakeskus, tiedote 29.4.2026.",
+      "text": "Vuoksen vesi virtaa ensin Tainionkosken ja sitten Imatran voimalaitoksen läpi. Virtaama on siis molemmissa lähes sama. Vuoksen vuotuinen keskivirtaama on noin $600\\,\\text{m}^3\\text{/s}$. Suurin teho saavutetaan kuitenkin turbiinien suurimmalla virtaamalla, noin $900\\,\\text{m}^3\\text{/s}$ (laskettu hyötysuhteella $\\eta \\approx 0{,}90$, ei mitattu). Taulukossa ovat voimalaitosten suurimmat sähkötehot $P$ ja putouskorkeudet $h$.\n\n| voimalaitos | $P$ (MW) | $h$ (m) |\n|---|---|---|\n| Tainionkoski | $62$ | $7{,}8$ |\n| Imatra | $192$ | $24$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "Laske kummallekin voimalaitokselle sähköteho putouskorkeuden metriä kohden, $P : h$. Mitä tuloksista voi päätellä?",
+        "choices": [
+          {
+            "text": "Kummallakin suhde on noin $8\\,\\text{MW/m}$, joten samalla virtaamalla teho on verrannollinen putouskorkeuteen.",
+            "correct": true,
+            "feedback": "Oikein. $192\\,\\text{MW} : 24\\,\\text{m} = 8{,}0\\,\\text{MW/m}$ ja $62\\,\\text{MW} : 7{,}8\\,\\text{m} \\approx 7{,}9\\,\\text{MW/m}$. Kun vesimäärä sekunnissa on sama, kolminkertainen pudotus antaa kolminkertaisen tehon."
+          },
+          {
+            "text": "Imatran suhde on noin kolme kertaa suurempi, joten Imatra käyttää vettä paremmin hyödyksi.",
+            "feedback": "Laske uudelleen: $192\\,\\text{MW} : 24\\,\\text{m} = 8{,}0\\,\\text{MW/m}$ ja $62\\,\\text{MW} : 7{,}8\\,\\text{m} \\approx 7{,}9\\,\\text{MW/m}$. Suhteet ovat lähes samat. Imatran suurempi teho johtuu suuremmasta putouskorkeudesta, ei paremmasta hyötysuhteesta."
+          },
+          {
+            "text": "Suhteet ovat erisuuret, joten teho ei riipu putouskorkeudesta vaan turbiinien määrästä.",
+            "feedback": "Suhteet ovat lähes samat, $8{,}0\\,\\text{MW/m}$ ja $7{,}9\\,\\text{MW/m}$. Teho on siis verrannollinen putouskorkeuteen, kun virtaama on sama. Turbiinit vain muuntavat veden energiaa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "prompt": "Selitä aineistojen avulla, mistä vesivoimalan ja tuulivoimalan teho riippuvat. Käytä perustelussa potentiaali- ja liike-energiaa.",
+      "criteria": [
+        "Vastaus kertoo, että vesivoimalan teho on verrannollinen putouskorkeuteen. Vastaus perustelee tämän Vuoksen voimalaitosten tehojen ja putouskorkeuksien suhteella.",
+        "Vastaus selittää, että korkeammalta putoavalla vedellä on enemmän potentiaalienergiaa kilogrammaa kohden ($mgh$).",
+        "Vastaus kertoo, että tuulivoimalan teho kasvaa lähes kahdeksankertaiseksi, kun tuulen nopeus kaksinkertaistuu. Vastaus käyttää taulukon arvoja.",
+        "Vastaus selittää kahdeksankertaistumisen sillä, että ilmaa virtaa sekunnissa kaksi kertaa enemmän ja jokaisella kilogrammalla on nelinkertainen liike-energia."
+      ],
+      "model": "Vuoksen vesi virtaa sekä Tainionkosken että Imatran läpi, joten virtaama on lähes sama. Imatran putouskorkeus $24\\,\\text{m}$ on noin kolme kertaa Tainionkosken $7{,}8\\,\\text{m}$. Imatran teho $192\\,\\text{MW}$ on myös noin kolme kertaa Tainionkosken $62\\,\\text{MW}$. Teho on siis verrannollinen putouskorkeuteen, koska jokaisen vesikilogramman potentiaalienergia $mgh$ on verrannollinen korkeuteen. Lisäksi teho kasvaa, kun sekunnissa putoaa enemmän vettä. Tuulivoimalan teho kasvaa tuulen nopeudesta $5\\,\\text{m/s}$ nopeuteen $10\\,\\text{m/s}$ $144\\,\\text{kW}$:sta $1285\\,\\text{kW}$:iin eli noin $8{,}9$-kertaiseksi. Kaksinkertaisella tuulella roottorin läpi virtaa sekunnissa kaksi kertaa enemmän ilmaa. Lisäksi jokaisella ilmakilogrammalla on liike-energiaa $\\tfrac{1}{2}mv^2$ neljä kertaa enemmän. Teho kasvaa siis noin $2 \\cdot 4 = 8$ -kertaiseksi."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi aineistoihin ja teoriaan. Kirjoita omin sanoin, miksi tuulen nopeuden kaksinkertaistuminen ei vain kaksin- tai nelinkertaista tehoa.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "etsi-virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Sara laskee pienvesivoimalan sähkötehon ja vuorokaudessa tuotetun energian. Hän kirjoittaa: $P = 0{,}85 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 2{,}0\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 6{,}0\\,\\text{m} \\approx 100\\,\\text{kW}$ ja $E = Pt = 100\\,\\text{kW} \\cdot 1 = 100\\,\\text{kWh}$. Missä Saran ratkaisun virhe on?",
+      "choices": [
+        {
+          "text": "Vuorokausi on $24\\,\\text{h}$, joten energia on noin $2400\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Oikein. Teho kilowatteina kerrotaan ajalla tunteina, jotta energia saadaan kilowattitunteina: $E = 100\\,\\text{kW} \\cdot 24\\,\\text{h} \\approx 2400\\,\\text{kWh}$. Saran teho on oikein."
+        },
+        {
+          "text": "Hyötysuhteella pitää jakaa, koska sähköteho on otettua tehoa suurempi.",
+          "feedback": "Sähköteho on aina pienempi kuin vedestä otettu teho. Siksi hyötysuhteella kerrotaan, kuten Sara teki. Virhe on energiassa: vuorokausi on $24\\,\\text{h}$, ei yksi tunti."
+        },
+        {
+          "text": "Tiheys ei kuulu kaavaan, koska virtaama on jo kuutiometreinä sekunnissa.",
+          "feedback": "Tiheys tarvitaan, koska potentiaalienergia lasketaan massasta: sekunnissa putoaa $\\rho Q = 2000\\,\\text{kg}$ vettä. Virhe on energiassa: vuorokausi on $24\\,\\text{h}$, ei yksi tunti."
+        },
+        {
+          "text": "Teho on jo energiaa, joten kertolaskua ajalla ei tarvita lainkaan.",
+          "feedback": "Teho kertoo energiaa aikayksikössä. Energia saadaan kertomalla teho ajalla, ja vuorokausi on $24\\,\\text{h}$: $E \\approx 2400\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "optional": true,
+      "prompt": "Pumppuvoimala varastoi sähköä. Kun sähköä on liikaa, se nostaa vettä alemmasta altaasta ylempään. Kun sähköä tarvitaan, se päästää veden takaisin alas ja tuottaa sähköä. Suunnitellussa voimalassa altaiden pintojen korkeusero on $1{,}40\\,\\text{km}$. Voimalan hyötysuhde vettä alas päästettäessä on $0{,}850$. Kuinka suuri virtaama tarvitaan, jotta sähköteho on $75{,}0\\,\\text{MW}$? Vastaa kuutiometreinä sekunnissa.",
+      "answer": 6.4246,
+      "unit": "m³/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä tämän tilanteen putouskorkeus on metreinä?",
+        "Ratkaise vesivoimalan tehon kaavasta $P = \\eta\\rho Q g h$ virtaama $Q$.",
+        "$Q = \\dfrac{P}{\\eta\\rho g h}$, jossa $P = 75{,}0 \\cdot 10^{6}\\,\\text{W}$ ja $h = 1400\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 6424.6,
+          "feedback": "Käytit korkeuseroa kilometreinä. Muunna se metreiksi: $1{,}40\\,\\text{km} = 1{,}40 \\cdot 1000\\,\\text{m} = 1400\\,\\text{m}$."
+        },
+        {
+          "value": 5.461,
+          "feedback": "Unohdit hyötysuhteen. Vedestä otetun tehon on oltava sähkötehoa suurempi, joten virtaamaa tarvitaan enemmän: $Q = \\dfrac{P}{\\eta\\rho g h}$."
+        },
+        {
+          "value": 4.642,
+          "feedback": "Kerroit hyötysuhteella. Vain osa veden tehosta muuttuu sähköksi, joten vettä tarvitaan enemmän kuin ilman häviöitä. Hyötysuhteella jaetaan: $Q = \\dfrac{P}{\\eta\\rho g h}$."
+        }
+      ],
+      "solution": "**Annettu:** korkeusero $h = 1{,}40\\,\\text{km}$, hyötysuhde $\\eta = 0{,}850$, sähköteho $P = 75{,}0\\,\\text{MW}$; veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** virtaama $Q$ yksikössä $\\text{m}^3\\text{/s}$\n\n**Periaate:** Alas virtaava vesi menettää potentiaalienergiaa, ja voimala muuttaa siitä sähköksi osuuden $\\eta$. Pumppuvoimala toimii sähköä tuottaessaan kuin tavallinen vesivoimala. Siksi käytetään vesivoimalan tehon kaavaa.\n\n**Kaava:** $P = \\eta\\rho Q g h$, joten $Q = \\dfrac{P}{\\eta\\rho g h}$\n\n**Muunnokset:** $h = 1{,}40\\,\\text{km} = 1{,}40 \\cdot 1000\\,\\text{m} = 1400\\,\\text{m}$ ja $P = 75{,}0\\,\\text{MW} = 75{,}0 \\cdot 10^{6}\\,\\text{W}$\n\n**Sijoitus:** Yksiköt ovat SI-yksiköitä, ja $\\tfrac{\\text{W}}{\\text{kg/m}^3 \\cdot \\text{m/s}^2 \\cdot \\text{m}} = \\tfrac{\\text{m}^3}{\\text{s}}$, joten $Q = \\dfrac{75{,}0 \\cdot 10^{6}}{0{,}850 \\cdot 1000 \\cdot 9{,}81 \\cdot 1400}\\,\\tfrac{\\text{m}^3}{\\text{s}} = 6{,}4246\\,\\tfrac{\\text{m}^3}{\\text{s}}$\n\n**Vastaus:** $6{,}42\\,\\text{m}^3\\text{/s}$. Vastauksessa on kolme merkitsevää numeroa, koska korkeusero $1{,}40\\,\\text{km}$, hyötysuhde $0{,}850$ ja teho $75{,}0\\,\\text{MW}$ on annettu kolmella numerolla.\n\n**Järkevyys:** Imatralla sama teho vaatisi noin $75 : 192$ suurimmasta virtaamasta $900\\,\\text{m}^3\\text{/s}$ eli yli $300\\,\\text{m}^3\\text{/s}$. Putouskorkeus on tässä noin $58$ kertaa Imatran $24\\,\\text{m}$, joten virtaamaa tarvitaan kymmeniä kertoja vähemmän."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Kirjoita ensin, mikä energia muuttuu sähköksi. Ratkaise sitten kysytty suure kaavasta ja muunna yksiköt ennen sijoitusta. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Miksi tuulivoimala ei voi muuttaa sähköksi kaikkea roottorin läpi virtaavan tuulen liike-energiaa, vaikka häviöitä ei olisi lainkaan?",
+      "choices": [
+        {
+          "text": "Ilman on päästävä virtaamaan pois roottorin takaa, joten sitä ei voi pysäyttää kokonaan.",
+          "correct": true,
+          "feedback": "Oikein. Jos roottori pysäyttäisi ilman, uutta ilmaa ei pääsisi virtaamaan läpi. Ilma jatkaa matkaansa hitaampana, ja sen jäljelle jäävä liike-energia jää käyttämättä. Teoreettinen yläraja on noin $59\\,\\%$."
+        },
+        {
+          "text": "Ilma on niin kevyttä, ettei sen liike-energia voi siirtyä raskaaseen roottoriin.",
+          "feedback": "Ilma on kevyttä, mutta suuren roottorin läpi virtaa sekunnissa tonneja ilmaa, ja sen liike-energia siirtyy lapoihin. Kaikkea ei saada talteen, koska ilman on päästävä virtaamaan pois roottorin takaa."
+        },
+        {
+          "text": "Tuulen liike-energia muuttuu ensin potentiaalienergiaksi, ja vain osa siitä palaa takaisin.",
+          "feedback": "Tuulivoimalassa ilma ei nouse ylöspäin, joten potentiaalienergia ei muutu. Ilma hidastuu roottorin kohdalla, mutta se ei voi pysähtyä kokonaan, koska sen on päästävä pois roottorin takaa."
+        },
+        {
+          "text": "Roottori pyörii vain yhteen suuntaan, joten se saa energiaa vain puolesta tuulesta.",
+          "feedback": "Pyörimissuunta ei jaa tuulta kahteen osaan. Koko roottorin läpi virtaava ilma painaa lapoja. Kaikkea liike-energiaa ei saada talteen, koska ilman on päästävä virtaamaan pois roottorin takaa."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Pienvesivoimalan putouskorkeus on $8{,}0\\,\\text{m}$, ja sen turbiinin läpi virtaa $12\\,\\text{m}^3$ vettä sekunnissa. Voimalan hyötysuhde on $0{,}85$. Kuinka suuri on voimalan sähköteho? Vastaa kilowatteina.",
+      "answer": 800.496,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä energia muuttuu sähköksi? Mitä virtaama $12\\,\\text{m}^3\\text{/s}$ kertoo?",
+        "Käytä vesivoimalan tehon kaavaa $P = \\eta\\rho Q g h$.",
+        "$P = 0{,}85 \\cdot 1000 \\cdot 12 \\cdot 9{,}81 \\cdot 8{,}0\\,\\text{W}$; muunna lopuksi kilowateiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 941.8,
+          "feedback": "Tämä on vedestä otettu teho. Vain osa siitä muuttuu sähköksi: kerro hyötysuhteella $0{,}85$."
+        },
+        {
+          "value": 81.6,
+          "feedback": "Unohdit putoamiskiihtyvyyden. Veden potentiaalienergia on $mgh$, joten teho on $\\eta\\rho Q g h$."
+        }
+      ],
+      "solution": "**Annettu:** putouskorkeus $h = 8{,}0\\,\\text{m}$, virtaama $Q = 12\\,\\text{m}^3\\text{/s}$, hyötysuhde $\\eta = 0{,}85$; veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** sähköteho $P$ yksikössä $\\text{kW}$\n\n**Periaate:** Turbiinin läpi putoava vesi menettää potentiaalienergiaa $mgh$, ja sekunnissa putoaa massa $\\rho Q$. Voimala muuttaa tästä tehosta sähköksi osuuden $\\eta$. Siksi käytetään vesivoimalan tehon kaavaa.\n\n**Kaava:** $P = \\eta\\rho Q g h$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina. Lopuksi $1\\,\\text{kW} = 1000\\,\\text{W}$.\n\n**Sijoitus:** $P = 0{,}85 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 12\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8{,}0\\,\\text{m} = 800\\,496\\,\\text{W} \\approx 800\\,\\text{kW}$\n\n**Vastaus:** $8{,}0 \\cdot 10^{2}\\,\\text{kW}$ eli noin $800\\,\\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, koska putouskorkeus $8{,}0\\,\\text{m}$, virtaama $12\\,\\text{m}^3\\text{/s}$ ja hyötysuhde $0{,}85$ on annettu kahdella numerolla.\n\n**Järkevyys:** Kuutiometri vettä antaa $8\\,\\text{m}$:n pudotuksessa noin $1000\\,\\text{kg} \\cdot 10\\,\\text{m/s}^2 \\cdot 8\\,\\text{m} = 80\\,\\text{kJ}$. Siis $12$ kuutiometriä sekunnissa antaa noin $960\\,\\text{kW}$, ja siitä $85\\,\\%$ on noin $800\\,\\text{kW}$. Teho on paljon pienempi kuin Tainionkosken $62\\,\\text{MW}$, koska virtaama on vain murto-osa siitä."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Kaksi samanlaista tuulivoimalaa on eri paikoissa. Ensimmäisen paikan tuuli puhaltaa tasaisesti nopeudella $6\\,\\text{m/s}$ ja toisen nopeudella $8\\,\\text{m/s}$. Selitä tuulen liike-energian avulla, miksi toinen voimala tuottaa yli kaksi kertaa suuremman tehon, vaikka tuuli on vain kolmanneksen voimakkaampi.",
+      "criteria": [
+        "Vastaus kertoo, että suuremmalla tuulen nopeudella roottorin läpi virtaa sekunnissa enemmän ilmaa, suhteessa $8 : 6$.",
+        "Vastaus kertoo, että jokaisella ilmakilogrammalla on liike-energiaa $\\tfrac{1}{2}mv^2$ suhteessa $(8 : 6)^2$ enemmän.",
+        "Vastaus yhdistää nämä tehoksi $P \\propto v^3$ ja laskee kertoimen $(8 : 6)^3 \\approx 2{,}4$.",
+        "Vastaus mainitsee ehdon: voimalat ovat samanlaiset (sama roottori ja hyötysuhde), ja tuuli on pienempi kuin nopeus, jolla voimala saavuttaa nimellistehonsa."
+      ],
+      "model": "Tuulivoimalan teho on osuus roottorin läpi sekunnissa virtaavan ilman liike-energiasta. Kun tuuli on $8\\,\\text{m/s}$ eikä $6\\,\\text{m/s}$, roottorin läpi virtaa sekunnissa $8 : 6 \\approx 1{,}33$ kertaa enemmän ilmaa. Lisäksi jokaisella ilmakilogrammalla on liike-energiaa $\\tfrac{1}{2}mv^2$, ja se on $(8 : 6)^2 \\approx 1{,}78$ kertaa suurempi. Teho kasvaa siis $(8 : 6)^3 \\approx 2{,}4$ -kertaiseksi. Tämä pätee, kun voimalat ovat samanlaiset eli roottorin pinta-ala ja hyötysuhde ovat samat. Lisäksi tuulen on oltava pienempi kuin nopeus, jolla voimala saavuttaa nimellistehonsa."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

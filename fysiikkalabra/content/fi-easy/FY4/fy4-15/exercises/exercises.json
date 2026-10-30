@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-15-L1-01",
+      "level": 1,
+      "text": "Vesivoimalan putouskorkeus on $15{,}0\\,\\text{m}$, ja turbiinien läpi virtaa $120\\,\\text{m}^3$ vettä sekunnissa. Voimalan hyötysuhde on $0{,}900$. Kuinka suuri on voimalan sähköteho?",
+      "answer": 15.8922,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-02",
+      "level": 1,
+      "text": "Yksi kuutiometri vettä, jonka massa on $1000\\,\\text{kg}$, putoaa voimalaitoksen turbiinin läpi yläaltaasta alaveteen. Korkeusero on $24{,}0\\,\\text{m}$. Kuinka paljon veden potentiaalienergia pienenee?",
+      "answer": 235.44,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-03",
+      "level": 1,
+      "text": "Vesivoimalan turbiiniin virtaavan veden teho on $50{,}0\\,\\text{MW}$, ja generaattori antaa sähkötehoa $46{,}0\\,\\text{MW}$. Kuinka suuri on voimalan hyötysuhde?",
+      "answer": 92.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-04",
+      "level": 1,
+      "text": "Tuulivoimalan roottorin pyyhkäisemä pinta-ala on $1500\\,\\text{m}^2$. Tuulen nopeus on $8{,}0\\,\\text{m/s}$ ja ilman tiheys $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri on roottorin läpi virtaavan tuulen teho?",
+      "answer": 480.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-05",
+      "level": 1,
+      "text": "Tuulivoimala tuottaa sähköä tasaisella teholla $3{,}00\\,\\text{MW}$ myrskyisenä päivänä $6{,}00$ tunnin ajan. Kuinka paljon sähköenergiaa voimala tuottaa tänä aikana? Vastaa megawattitunteina.",
+      "answer": 18.0,
+      "unit": "MWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-15-L2-01",
+      "level": 2,
+      "text": "Suunnitellun vesivoimalan putouskorkeus on $12{,}0\\,\\text{m}$ ja hyötysuhde $0{,}880$. Kuinka suuri virtaama tarvitaan, jotta sähköteho on $10{,}0\\,\\text{MW}$?",
+      "answer": 96.53106,
+      "unit": "m³/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-02",
+      "level": 2,
+      "text": "Valmistajan tehokäyrän mukaan tuulivoimala antaa tuulen nopeudella $8{,}0\\,\\text{m/s}$ sähkötehoa $758\\,\\text{kW}$. Voimalan roottorin halkaisija on $82\\,\\text{m}$. Ilman tiheys on $1{,}25\\,\\text{kg/m}^3$. Kuinka suuri osuus roottorin läpi virtaavan tuulen tehosta muuttuu sähköksi? Vastaa prosentteina.",
+      "answer": 44.854048,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-03",
+      "level": 2,
+      "text": "Myllypuron pienvesivoimalan turbiinin läpi virtaa $850\\,\\textsf{l}$ vettä sekunnissa. Putouskorkeus on $6{,}5\\,\\text{m}$, ja voimalan hyötysuhde on $0{,}75$. Kuinka suuri on voimalan sähköteho?",
+      "answer": 40.650188,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-04",
+      "level": 2,
+      "text": "Pienvesivoimalan putouskorkeus on $9{,}50\\,\\text{m}$, virtaama $3{,}20\\,\\text{m}^3\\text{/s}$ ja hyötysuhde $0{,}800$. Virtaama pysyy samana. Kuinka paljon sähköenergiaa voimala tuottaa vuorokaudessa ($24{,}0\\,\\text{h}$)? Vastaa megawattitunteina.",
+      "answer": 5.725901,
+      "unit": "MWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-15-L3-01",
+      "level": 3,
+      "text": "Voimala rakennetaan korkeammalle tornille. Silloin tuulen keskinopeus voimalan kohdalla kasvaa $6{,}0\\,\\text{m/s}$:sta $9{,}0\\,\\text{m/s}$:iin. Hyötysuhde pysyy samana, eikä voimala saavuta nimellistehoaan. Kuinka monta kertaa suurempi on voimalan sähköteho voimakkaammalla tuulella?",
+      "answer": 3.375,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-02",
+      "level": 3,
+      "text": "Vanhan tuulivoimalan roottorin halkaisija on $82\\,\\text{m}$, uuden $162\\,\\text{m}$. Hyötysuhde on sama, eikä kumpikaan saavuta nimellistehoaan. Kuinka monta kertaa suuremman sähkötehon uusi voimala saa samalla tuulen nopeudella?",
+      "answer": 3.903034,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-03",
+      "level": 3,
+      "text": "Tuuli puhaltaa nopeudella $10{,}0\\,\\text{m/s}$. Kuinka korkealta kilogramman vesimäärän pitäisi pudota, jotta sen potentiaalienergia pienenisi yhtä paljon kuin kilogrammalla tätä tuulta on liike-energiaa?",
+      "answer": 5.09684,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

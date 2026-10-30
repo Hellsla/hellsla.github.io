@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-15-L1-01",
+      "level": 1,
+      "text": "The head of a hydropower plant is $15.0\\,\\text{m}$, and $120\\,\\text{m}^3$ of water flows through the turbines every second. The efficiency of the plant is $0.900$. What is the electric power of the plant?",
+      "answer": 15.8922,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-02",
+      "level": 1,
+      "text": "One cubic metre of water, with a mass of $1000\\,\\text{kg}$, falls through the turbine of a power plant from the upper reservoir to the tailwater, $24.0\\,\\text{m}$ lower. By how much does the potential energy of the water decrease?",
+      "answer": 235.44,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-03",
+      "level": 1,
+      "text": "The power of the water flowing into the turbine of a hydropower plant is $50.0\\,\\text{MW}$, and the generator gives an electric power of $46.0\\,\\text{MW}$. What is the efficiency of the plant?",
+      "answer": 92.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-04",
+      "level": 1,
+      "text": "The area swept by the rotor of a wind turbine is $1500\\,\\text{m}^2$. The wind speed is $8.0\\,\\text{m/s}$ and the density of air is $1.25\\,\\text{kg/m}^3$. What is the power of the wind flowing through the rotor?",
+      "answer": 480.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-05",
+      "level": 1,
+      "text": "A wind turbine produces electricity at a steady power of $3.00\\,\\text{MW}$ for $6.00$ hours on a stormy day. How much electric energy does the turbine produce in this time? Give the answer in megawatt-hours.",
+      "answer": 18.0,
+      "unit": "MWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-15-L2-01",
+      "level": 2,
+      "text": "The head of a planned hydropower plant is $12.0\\,\\text{m}$ and its efficiency $0.880$. What flow rate is needed for an electric power of $10.0\\,\\text{MW}$?",
+      "answer": 96.53106,
+      "unit": "m³/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-02",
+      "level": 2,
+      "text": "According to the manufacturer's power curve, a wind turbine with a rotor diameter of $82\\,\\text{m}$ gives an electric power of $758\\,\\text{kW}$ at a wind speed of $8.0\\,\\text{m/s}$. The density of air is $1.25\\,\\text{kg/m}^3$. What fraction of the power of the wind flowing through the rotor is converted into electricity? Give the answer as a percentage.",
+      "answer": 44.854048,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-03",
+      "level": 2,
+      "text": "$850\\,\\textsf{l}$ of water flows through the turbine of the Myllypuro small hydropower plant every second. The head is $6.5\\,\\text{m}$, and the efficiency of the plant is $0.75$. What is the electric power of the plant?",
+      "answer": 40.650188,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-04",
+      "level": 2,
+      "text": "A small hydropower plant has a head of $9.50\\,\\text{m}$, a flow rate of $3.20\\,\\text{m}^3\\text{/s}$ and an efficiency of $0.800$. How much electric energy does the plant produce in a day ($24.0\\,\\text{h}$), when the flow rate stays the same? Give the answer in megawatt-hours.",
+      "answer": 5.725901,
+      "unit": "MWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-15-L3-01",
+      "level": 3,
+      "text": "The mean wind speed at a turbine increases from $6.0\\,\\text{m/s}$ to $9.0\\,\\text{m/s}$ when the turbine is built on a taller tower. The efficiency stays the same, and the turbine does not reach its rated power. How many times as large is the electric power of the turbine in the stronger wind?",
+      "answer": 3.375,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-02",
+      "level": 3,
+      "text": "The rotor of an old wind turbine has a diameter of $82\\,\\text{m}$, and that of a new one $162\\,\\text{m}$. How many times as much electric power does the new turbine get at the same wind speed, when the efficiency is the same and neither reaches its rated power?",
+      "answer": 3.903034,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-03",
+      "level": 3,
+      "text": "The wind blows at $10.0\\,\\text{m/s}$. From what height would a kilogram of water have to fall for its potential energy to decrease by as much as a kilogram of this wind has kinetic energy?",
+      "answer": 5.09684,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}
