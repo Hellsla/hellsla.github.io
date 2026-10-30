@@ -1,0 +1,26 @@
+{
+  "id": "fy4-15",
+  "course": "FY4",
+  "title": "Vesi- ja tuulivoima energian muuntajina",
+  "goals": [
+    "LOPS FY4: liike-energia, potentiaalienergia ja mekaaninen energia",
+    "Temaattinen tarkastelu: vesi- ja tuulivoima",
+    "Täsmennys: veden potentiaalienergiasta ja tuulen liike-energiasta sähköksi, teho ja hyötysuhde"
+  ],
+  "prerequisites": [
+    "fy4-8"
+  ],
+  "glossary": [
+    "potentiaalienergia",
+    "liike-energia",
+    "hyötysuhde",
+    "teho",
+    "vesivoima",
+    "tuulivoima",
+    "putouskorkeus",
+    "virtaama"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

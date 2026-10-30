@@ -39,7 +39,8 @@
     "term": "vesivoima",
     "definition": "Sähköntuotanto, jossa putoava vesi pyörittää turbiinia. Vesivoima on uusiutuvaa ja hyvin säädettävää, koska vesivirtaa voi lisätä tai vähentää sekunneissa.",
     "lessons": [
-      "fy2-6"
+      "fy2-6",
+      "fy4-15"
     ],
     "see_also": [
       "energiantuotanto",
@@ -51,7 +52,8 @@
     "term": "tuulivoima",
     "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
     "lessons": [
-      "fy2-6"
+      "fy2-6",
+      "fy4-15"
     ],
     "see_also": [
       "energiantuotanto",
@@ -370,7 +372,8 @@
     "definition": "Hyödyksi saadun energian tai tehon suhde laitteeseen otettuun energiaan tai tehoon: η = E_a/E_o = P_a/P_o (lämpövoimakoneella η = W/Q₁). Hyötysuhde ilmoitetaan usein prosentteina, ja se on enintään 100 %. Todellisissa laitteissa se jää usein alle 100 %, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen.",
     "lessons": [
       "fy2-4",
-      "fy3-11"
+      "fy3-11",
+      "fy4-15"
     ],
     "see_also": [
       "lämpövoimakone",
@@ -726,7 +729,8 @@
     "term": "liike-energia",
     "definition": "Liikkuvan kappaleen energia, E_k = ½ m v². Se kasvaa nopeuden neliössä, joten kaksinkertainen nopeus tarkoittaa nelinkertaista liike-energiaa.",
     "lessons": [
-      "fy4-7"
+      "fy4-7",
+      "fy4-15"
     ],
     "see_also": [
       "energia",
@@ -1095,7 +1099,8 @@
     "term": "potentiaalienergia",
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
-      "fy4-7"
+      "fy4-7",
+      "fy4-15"
     ],
     "see_also": [
       "energia",
@@ -1196,7 +1201,8 @@
     "definition": "Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: P = ΔE/Δt. Yksikkö on watti (W), joka on yksi joule sekunnissa. Kun energia siirtyy työnä, P = W/t, ja tasaisessa liikkeessä, jossa voima on liikkeen suuntainen, P = Fv.",
     "lessons": [
       "fy2-3",
-      "fy3-2"
+      "fy3-2",
+      "fy4-15"
     ],
     "see_also": [
       "työ",
@@ -2243,6 +2249,81 @@
     "see_also": [
       "väliaineen vastus",
       "kokonaisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mekaanisen energian säilyminen",
+    "definition": "Kun kappaleeseen tekee työtä vain paino (tai muu konservatiivinen voima), sen mekaaninen energia E_mek = E_k + E_p pysyy samana: potentiaalienergia ja liike-energia muuttuvat toisikseen, mutta niiden summa ei muutu. Kitka ja ilmanvastus on silloin voitava jättää huomiotta.",
+    "lessons": [
+      "fy4-8"
+    ],
+    "see_also": [
+      "mekaaninen energia",
+      "energiaperiaate",
+      "konservatiivinen voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energiaperiaate",
+    "definition": "Mekaniikan energiaperiaate: kappaleen mekaanisen energian muutos on yhtä suuri kuin muiden voimien kuin painon tekemä työ, ΔE_mek = W_muut. Yhtäpitävästi kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos, W_kok = ΔE_k.",
+    "lessons": [
+      "fy4-8"
+    ],
+    "see_also": [
+      "työ",
+      "mekaanisen energian säilyminen",
+      "ei-konservatiivinen voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ei-konservatiivinen voima",
+    "definition": "Voima, jonka tekemä työ riippuu kuljetusta reitistä eikä vain alku- ja loppupisteestä, esimerkiksi kitka ja ilmanvastus. Sille ei voi määritellä potentiaalienergiaa. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi.",
+    "lessons": [
+      "fy4-8"
+    ],
+    "see_also": [
+      "konservatiivinen voima",
+      "energiaperiaate",
+      "kitka"
+    ],
+    "locked": false
+  },
+  {
+    "term": "putouskorkeus",
+    "definition": "Vesivoimalan ylä- ja alaveden pintojen korkeusero h. Jokainen turbiinin läpi virtaava vesikilogramma menettää potentiaalienergiaa g h, joten samalla virtaamalla voimalan teho on verrannollinen putouskorkeuteen.",
+    "lessons": [
+      "fy4-15"
+    ],
+    "see_also": [
+      "vesivoima",
+      "virtaama"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtaama",
+    "definition": "Joen tai putken poikkileikkauksen läpi aikayksikössä virtaavan veden tilavuus Q, yksikkö m³/s. Vesivoimalan teho on P = η ρ Q g h.",
+    "lessons": [
+      "fy4-15"
+    ],
+    "see_also": [
+      "vesivoima",
+      "putouskorkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "konservatiivinen voima",
+    "definition": "Voima, joka palauttaa sitä vastaan siirretyn energian liike-energiaksi ja jonka vaikutus kappaleen energiaan riippuu vain alku- ja loppupaikasta, ei reitistä. Esimerkiksi painovoima ja jousivoima ovat konservatiivisia, kitka ja ilmanvastus eivät. Potentiaalienergia liittyy aina konservatiiviseen voimaan.",
+    "lessons": [
+      "fy4-7"
+    ],
+    "see_also": [
+      "potentiaalienergia",
+      "mekaaninen energia"
     ],
     "locked": false
   }
