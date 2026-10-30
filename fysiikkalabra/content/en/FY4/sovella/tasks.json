@@ -1,0 +1,409 @@
+{
+  "intro": "Three problems bring together the motion, forces, energy and momentum of the module. In each one, you decide which laws and models fit the situation and justify your choice.",
+  "tasks": [
+    {
+      "id": "fy4-s1",
+      "title": "Comparing ski waxes",
+      "source": "simulated",
+      "source_note": "The data is calculated from a model in which the acceleration is constant, with a little random variation added as in a measurement. It is not the result of a real measurement.",
+      "text": "A coach at a ski club compares two glide waxes, A and B. The same skier, whose mass with equipment is $72\\,\\text{kg}$, skis down the same even slope with each wax. The slope has an angle of inclination of $4.0^\\circ$. The skier stands upright and does not push with poles. A camera at the side of the slope films the runs, and the skier's speed is determined from the video every second. The timing starts when the skier passes the start mark.\n\n| $t\\ (\\text{s})$ | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{B}\\ (\\text{m/s})$ |\n|---|---|---|\n| $0$ | $2.10$ | $1.90$ |\n| $1$ | $2.52$ | $2.12$ |\n| $2$ | $2.86$ | $2.42$ |\n| $3$ | $3.31$ | $2.62$ |\n| $4$ | $3.63$ | $2.90$ |\n| $5$ | $4.06$ | $3.09$ |\n| $6$ | $4.40$ | $3.40$ |\n| $7$ | $4.86$ | $3.59$ |\n| $8$ | $5.23$ | $3.86$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 3,
+          "text": "Draw the $(t, v)$ graph of both runs in the same coordinate system and fit a model to each set of points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "The points of the runs can be told apart, for example by different markers."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A separate straight line has been fitted to each set of points."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Draw the free-body diagram of the skier during the run. Air resistance does not need to be taken into account.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Weight, the normal force from the slope and kinetic friction; no forward force."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Weight straight down, the normal force perpendicular to the slope and away from it, and friction up the slope."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "The skier is a rectangle parallel to the slope; the weight starts from the centre, the normal force and friction from the contact surface, and each force has its own symbol."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the coefficient of kinetic friction for each wax.",
+          "answer": {
+            "value": 0.03,
+            "unit": "",
+            "tolerance": 0.12
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The accelerations as the slopes of the lines: $a_\\text{A} \\approx 0.39\\,\\text{m/s}^2$ and $a_\\text{B} \\approx 0.245\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$-axis down the slope: $mg\\sin\\alpha - \\mu N = ma$, and $y$: $N - mg\\cos\\alpha = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\mu = \\dfrac{g\\sin\\alpha - a}{g\\cos\\alpha}$; the mass cancels."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The coefficients for both waxes are calculated in the same way."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu_\\text{A} \\approx 0.030$ and $\\mu_\\text{B} \\approx 0.045$, without a unit."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The coach concludes that wax A glides better. Evaluate how reliable the conclusion is. Take into account the uncertainty of the results and the fact that air resistance was left out.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "For example, an uncertainty of $\\pm 0.02\\,\\text{m/s}^2$ in reading the slope changes the coefficient of friction by only about $\\pm 0.002$, which is much less than the difference between the waxes, $0.015$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Air resistance reduces the acceleration, so the calculated coefficient of friction is larger than the true one; in the faster run A the effect is larger."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The difference is larger than the uncertainty, so wax A glides better; certainty is obtained by repeating the runs."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-2",
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-6",
+        "experiment": "fy4-6"
+      }
+    },
+    {
+      "id": "fy4-s2",
+      "title": "Zip line",
+      "source": "example",
+      "source_note": "The zip line and the measurement result are made-up examples.",
+      "text": "On the zip line of an activity centre, the rider hangs in a harness under a trolley with wheels and glides along a steel cable over a hillside. The starting platform is $15.0\\,\\text{m}$ higher than the beginning of the brake, and the cable from the starting platform to the beginning of the brake is $180\\,\\text{m}$ long. The rider starts from rest. From the beginning of the brake onwards the cable is almost horizontal, and a spring brake stops the rider there.\n\nThe instructor tells the riders: \"You arrive at the brake at over $60\\,\\text{km/h}$.\" With a radar meter, the speed of a $62\\,\\text{kg}$ rider at the beginning of the brake was measured as $11.2\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What kind of calculation can the instructor's claim be based on? Calculate the speed at the beginning of the brake with this model.",
+          "answer": {
+            "value": 17.2,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Chooses conservation of mechanical energy and justifies it: when friction and air resistance are left out, only the weight does work, because the force of the cable is perpendicular to the motion.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mgh = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{2gh}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 17.2\\,\\text{m/s} \\approx 62\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "The measurement does not match the instructor's claim. Based on the measurement, determine how large a force on average opposes the rider's motion on the cable.",
+          "answer": {
+            "value": 29,
+            "unit": "N",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Explains the difference: friction and air resistance do negative work, so the mechanical energy decreases, and therefore uses the work–energy principle.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mgh - F_\\text{res}\\,s = \\tfrac{1}{2}mv^2$ solved for $F_\\text{res}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{p} \\approx 9.12\\,\\text{kJ}$ and $E_\\text{k} \\approx 3.89\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{res} \\approx 29\\,\\text{N}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The instructor estimates the speed of a $95\\,\\text{kg}$ rider at the beginning of the brake, assuming that the same force opposes the motion as in part b. Calculate the estimate.",
+          "answer": {
+            "value": 14,
+            "unit": "m/s",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The same energy equation with the new mass, solved for $v$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{k} \\approx 13.98\\,\\text{kJ} - 5.23\\,\\text{kJ} \\approx 8.74\\,\\text{kJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 14\\,\\text{m/s}$ with two significant figures like the mass and the resisting force; $13.6\\,\\text{m/s}$ is also accepted."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Another instructor claims: \"A heavy rider does not arrive any faster, because friction also grows with the mass.\" Evaluate the model of each instructor. According to whose estimate should the brake be designed?",
+          "criteria": [
+            {
+              "text": "Shows that if the whole resisting force were proportional to the mass, the mass would cancel from the energy equation and the speed would be the same $11.2\\,\\text{m/s}$ as for the light rider.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Separates the resisting forces: the friction of the trolley wheels grows with the normal force and thus with the mass, but air resistance depends on the speed and the size of the rider, not on the mass.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The true speed is between the estimates: the estimate of part c is too large, because friction grows with the mass, and the other instructor's estimate is too small, because air resistance does not grow with the mass."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The brake is designed for the larger speed, because for safety it is better to prepare for a speed that is too large than one that is too small. Designing it for the upper limit of the frictionless model, $17.2\\,\\text{m/s}$, is also correct."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy4-8",
+        "math": "fy4-8",
+        "concept": "fy4-14",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy4-s3",
+      "title": "Rear-end collision at traffic lights",
+      "source": "example",
+      "source_note": "The accident and the figures in the report are made-up examples.",
+      "text": "Car A is standing at a red light, and its driver is pressing the brake. Car B coming from behind runs into the back of it. The cars lock together and slide together straight ahead until they stop. The wheels of both cars are locked for the whole slide.\n\nFrom the police report:\n\n- the mass of car A with its driver is $1250\\,\\text{kg}$ and the mass of car B with its driver is $1700\\,\\text{kg}$\n- the cars' common sliding distance from the point of collision to the stop is $4.2\\,\\text{m}$ on horizontal, dry asphalt\n- the coefficient of friction between the locked tyres and the road is $0.75$\n- the speed limit is $40\\,\\text{km/h}$; the driver of car B says they were driving at less than $40\\,\\text{km/h}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large was the cars' common speed right after the collision?",
+          "answer": {
+            "value": 7.9,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies the model: while sliding, the cars are slowed only by friction $\\mu (m_\\text{A} + m_\\text{B}) g$, because on a horizontal road the normal force is equal to the weight.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2}mv'^2 = \\mu mgs$, so $v' = \\sqrt{2\\mu gs}$; the mass cancels."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v' \\approx 7.9\\,\\text{m/s}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "For example, the deceleration $\\mu g \\approx 7.4\\,\\text{m/s}^2$ is suitable for braking on dry asphalt, and $7.9\\,\\text{m/s} \\approx 28\\,\\text{km/h}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Estimate the speed of car B just before the collision. Is the driver's account true?",
+          "answer": {
+            "value": 14,
+            "unit": "m/s",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Justifies why momentum is almost conserved: the collision is short and the forces between the cars are much larger than friction, so the impulse of friction during the collision is small.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m_\\text{B}v_\\text{B} = (m_\\text{A} + m_\\text{B})v'$ solved for $v_\\text{B}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{B} \\approx 14\\,\\text{m/s} \\approx 50\\,\\text{km/h}$ with two significant figures like the sliding distance and the coefficient of friction; $13.6\\,\\text{m/s} \\approx 49\\,\\text{km/h}$ is also accepted."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The account is not true: the speed at the moment of collision was clearly over $40\\,\\text{km/h}$, and even greater before braking."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The mass of the driver of car A is $68\\,\\text{kg}$. The collision lasted about $0.12\\,\\text{s}$, and during that time the seat back accelerated the driver along with the car to the speed of part a. How large an average force did the seat back exert on the driver? Compare it with the driver's weight.",
+          "answer": {
+            "value": 4500,
+            "unit": "N",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F_\\text{avg}\\,\\Delta t = m\\,\\Delta v$, so $F_\\text{avg} = \\dfrac{m\\,\\Delta v}{\\Delta t}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{avg} \\approx 4.5\\,\\text{kN}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The force is about $6.7$ times the driver's weight."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why a head restraint adjusted close to the back of the head reduces neck injuries in a rear-end collision, and why a slightly flexible seat back is better than a completely rigid one.",
+          "criteria": [
+            {
+              "text": "Explains with inertia: the seat back pushes the torso forward, but the head tends to keep its old velocity until the neck pulls it along, so the neck bends backwards.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains that a head restraint close by gives the head the same change in velocity at the same time as the torso, so the neck does not have to transmit a large force.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies with impulse: the change in velocity is the same, but a flexible seat back lengthens the time $\\Delta t$, so the average force $F_\\text{avg} = m\\,\\Delta v : \\Delta t$ becomes smaller.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Evaluate the reliability of the result of part b. Name two assumptions and tell in which direction each one changes the estimate of the speed of car B.",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "For example, friction already acts during the collision and reduces the cars' common momentum, so the true $v_\\text{B}$ is larger than the calculated one."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The other assumption, for example the value of the coefficient of friction or the wheels being locked for the whole distance, and the direction of its effect."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy4-10",
+        "math": "fy4-9",
+        "concept": "fy4-11",
+        "communication": "fy4-11"
+      }
+    }
+  ]
+}
