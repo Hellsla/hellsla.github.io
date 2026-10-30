@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0c23e9f95fa7ef1f
+CONTENT-HASH: e90e74f3120fa3a8
 
 ## Blocking
 
@@ -7,8 +7,9 @@ CONTENT-HASH: 0c23e9f95fa7ef1f
 - Round-2 polish items (figure 4 labels, product-is-zero clause, optional v2<0 row) are still open; none blocks.
 
 ## Checked
-- Retrieval prompt now says "vakiosuuruinen kokonaisvoima": removes the ambiguity about which force; the 3,0 N x 0,10 s answer is unchanged and the item is optional.
-- lesson.md "Systeemi ja sen kokonaisliikemäärä": "vakiosuuruisen kokonaisvoiman impulssi" with $\Sigma\overline{F}\,\Delta t$ matches FY4 vocabulary and the later argument (internal forces cancel, so the external sum decides); Finnish correct (genetiivi + impulssi muuttaa).
-- Round 4 delta, inquiry.json prior item 1: "Kappaleen liikemäärä on $\overline{p} = m\overline{v}$, ja vakiosuuruisen kokonaisvoiman impulssi muuttaa sitä: $\Delta\overline{p} = \Sigma\overline{F}\,\Delta t$" is clear: names the quantity first, then the law with the same wording as lesson.md; Finnish correct, notation consistent with the chapter.
-- Nothing else touched; the rest is as approved in round 2.
+- Round 5 delta (three wording edits), judged from the diff and what it touches.
+- "Etsi virhe" correct-option feedback: the wrong result is now compared with the named speed $0{,}40\,\text{m/s}$ of the right-moving cart, and the cause is given ("vasemmalle liikkuva vaunu jarruttaa sitä"). Numbers check (0,20/0,40 = 0,50 kg; wrong sum 0,38/0,80 = 0,475 m/s > 0,40). More concrete than "kummankaan vaunun alkunopeus"; reads clearly and repairs the sign misconception.
+- lesson.md "Miksi kokonaisliikemäärä säilyy": "Jos voima on vakio, ..." makes the F*Δt step valid and sits well with the next-but-one sentence ("vaikka voima muuttuisi"), so the student sees the constant case first, then the general one. Finnish correct.
+- Siirto solution, Järkevyys: dropped sentence about the felt boat motion; the remaining ratio check (2,4 kertaa raskaampi, 2,4 kertaa pienempi nopeus) is complete and unambiguous. Nothing lost.
+- Nothing else touched; the rest is as approved in earlier rounds.
 - Hash at end equals hash at start.
