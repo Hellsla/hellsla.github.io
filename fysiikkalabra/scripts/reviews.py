@@ -61,6 +61,7 @@ RULES = {                       # category: (science, pedagogy)
     "objective-form": ("none",  "delta"),
     "notation":       ("none",  "none"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
     "force-diagram":  ("delta", "none"),    # a ```voimakuvio spec added to a step, drawn by fbdspec.py; the text unchanged (teacher 2026-10-30)
+    "force-diagram-copy": ("none", "none"),  # a translation's force-diagram specs, identical to the reviewed Finnish ones (check_i18n.py)
     "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
@@ -81,6 +82,7 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
        "notation": "vector symbols rewritten with an overline, nothing else",
+       "force-diagram-copy": "the Finnish force-diagram specs copied unchanged into the translation",
        "force-diagram": "force diagrams drawn from a spec beside their Voimakuvio steps (fbdspec.py), the text unchanged",
        "objective-form": "learning goals rephrased to complete their heading, symbols and numbers unchanged", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
@@ -581,7 +583,9 @@ def changes(folder, base, part="lesson", split=False):
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
             ra2, rb2 = FBD_SPEC.sub("", ra or ""), FBD_SPEC.sub("", rb)
             if ra2 != (ra or "") or rb2 != rb:
-                cats.add("force-diagram"); ra, rb = ra2, rb2; a, b = _view(ra, rel, False), _view(rb, rel, False)
+                fi_rel = re.sub(r"^content/[^/]+/", f"content/{courses.SOURCE_LANG}/", rel)
+                copy = fi_rel != rel and FBD_SPEC.findall(rb) == FBD_SPEC.findall(new.source(fi_rel) or "")
+                cats.add("force-diagram-copy" if copy else "force-diagram"); ra, rb = ra2, rb2; a, b = _view(ra, rel, False), _view(rb, rel, False)
                 n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines   # the specs stay in the diff
                 if a != b: cats |= classify(rel, list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), lineterm="", n=2)), folder.name)
                 continue
