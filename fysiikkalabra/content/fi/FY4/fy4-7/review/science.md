@@ -1,20 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: b6cbdb2316954ee3
+VERDICT: PASS
+CONTENT-HASH: 688464c5a7f5edd4
 
 ## Blocking
-- inquiry.json:516 (check-1, option "Molempiin", feedback) — **A**: "Liike-energiaa muuttavat kaikki voimat" is false: a force perpendicular to the motion (the normal force on a ramp, the tension in a swinging pendulum's string) does not change kinetic energy, and the next chapter's work concept depends on this. — Fix: "Kumpikin voima muuttaa tässä kappaleen liike-energiaa, mutta potentiaalienergia liittyy vain voimaan, joka palauttaa energian…".
-- lesson.md:486 (Tiivistelmä) — **B**: "Ilman kitkaa se pysyy samana" states conservation of mechanical energy with too few conditions. Air resistance also lowers it (the lesson itself names it as non-conservative), and a push or pull raises it (for example, a cart pushed up a frictionless ramp). — Fix: "Kun kitkaa ja ilmanvastusta ei ole eikä kappaletta työnnetä tai vedetä, se pysyy samana; kitka ja ilmanvastus muuttavat osan siitä sisäenergiaksi."
 
 ## Polish
-- inquiry.json:19 (hook) — "lähes 1,8 m" for 1,83 m reads as just under 1,8 m; write "noin 1,8 m", as check-3's model answer does.
-- inquiry.json:328 (exp-3 distractor feedback) — "rampin ja pyörien lämpötila" names wheels, but the model uses sliding friction μN on a point cart. "Rampin ja kärryn" would match Mallin oletukset.
-- lesson.md Ydinajatus, "Konservatiivinen voima": "saa korkeudelta h alas tullessaan saman nopeuden" assumes the body starts from rest (or with the same speed). Saying "levosta lähtien" would make that explicit.
+- lesson.md:105 (hero) — the bottom skater's wheels sit about 7 px above the ground line (wheel bottom y ≈ 532, ground 540), while the ramp skaters touch the ramp. The physics is not affected, but y + 7 would ground him.
+- lesson.md:292 (polut) — the carts reach the floor with the full speed only if the ramp joins the floor smoothly. A sharp corner loses the perpendicular component. Fine at this level (C).
 
 ## Checked
-- Recomputed every number in one script: hook 0,459/1,83 m; retrieval 5,1 m and its distractors; ramp model 0,051/0,204/0,459 m; steep ramp 0,459 m, 3,00 m/s; friction case 0,378 m, 2,41 m/s, 2,91 J; ratio 9,0; 50→70 km/h gives 1,96; zero-level figure 8,8/3,9/4,9/−3,9 J; worked example 21 573 J → 22 kJ; Etsi virhe 648 kJ/50 kJ/1 296 kJ/18 kJ; transfer 9,83 m (127, 19,7); check-2 0,50 kg (0,25, 2,0); exit ticket ½. All agree.
-- sim.js: an exact piecewise solution with a(up/down) = g(sin α ± μ cos α). h_max and v_paluu come out of the motion. Its simState keys (hmax, vback, Ek0, Emek) are present at the experiments' initial values, and the controlled variables isolate the varied one. Slopes 25°/50° slide back with μ = 0,10. The 0–16 J scale covers 2 kg at 4 m/s, and the drawn ramp (0,95 m) covers h_max = 0,82 m.
-- Derivation of E_k from h = v²/(2g) and mgh is sound. E_p = mgh is stated with its near-surface condition, the sign below the zero level and the zero-level independence of ΔE_p.
-- Conservative force: the definition, the spring and electric examples, and friction/air resistance as non-conservative all match the slot's täsmennys and the glossary.
-- Predictions: exactly one correct option each; the distractor feedback is correct.
-- Figures: the ramp (h vs 4h), Ek(v) for 1 kg, the ball graph points (2;1), (4;4), (6;9), and the hero's ¾-height at half speed are all correct.
-- Scope is within FY4 central contents.
+- Hero, redrawn: the ground is at y 540 and the stop height h at y 210 (330 px). The ticks at 457,5, 375 and 292,5 are exactly ¼, ½ and ¾ h. The ramp line is at 25,0°. At x = 791 it is at y 292,4 (the v/2 skater's contact point = ¾ h), and at x = 967,5 it is at 210,1 (the v = 0 skater = h). The arrows are 170 px horizontal at the bottom and 85,0 px at 25,1° along the ramp: 2 : 1 : 0 and parallel to the motion. Since (v/2)² leaves ¼ of E_k, ¾ h is right. The ¾ h and ¼ h labels mark the correct segments, the aria-label matches, and the stop lies below the coping.
+- Round-1 fixes: the check-1 "Molempiin" feedback no longer says "all forces". The Tiivistelmä conservation sentence now states no friction, no air resistance and no push or pull. "levosta" was added. The new pred-1 distractor (×6) has correct feedback (3× time · 3× mean speed = 9).
+- Recomputed in one script against lesson-answers.py: hook 0,459/1,83 m, retrieval 5,1 m, Koe 1–3 (0,051/0,459 m, 3,0 m/s on both slopes, friction 0,378 m, 2,41 m/s, 2,91 J), 1,96, zero level 8,8/3,9/4,9 J, example 21 573 J → 22 kJ, Etsi virhe 50 kJ, transfer 9,83 m (19,7; 127), check-2 0,50 kg, exit ticket ½. All agree.
+- Ramp figure h : 4h = 45 : 180 px with arrows 30 : 60. The E_k(v) curve and the 2,0/8,0 J points are on scale. The zero-level figure is at 150 px/m. The polut arrows are equal.
+- sim.js: unchanged model. Exact piecewise motion with g(sin α ± μ cos α). The simState keys and the locked parameters isolate the varied one in each experiment.
+- Definitions (conservative force, E_p and the zero level, E_mek) agree with the glossary and the slot's täsmennys. Scope is within FY4.
