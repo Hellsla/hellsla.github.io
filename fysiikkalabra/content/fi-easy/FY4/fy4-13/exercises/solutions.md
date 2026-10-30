@@ -93,7 +93,7 @@
 **Voimakuvio:** Piirrä kevyempi kappale suorakulmioksi, positiivinen suunta ylös. Voima $\overline{T}_1$ osoittaa ylös ja $\overline{G}_1$ alas, ja $\overline{T}_1$ on pidempi. Piirrä raskaampi kappale suorakulmioksi, positiivinen suunta alas. Voima $\overline{G}_2$ osoittaa alas ja $\overline{T}_2$ ylös, ja $\overline{G}_2$ on pidempi.
 **Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Ensimmäisestä saadaan $T = m_1 (g + a)$. Toinen antaa $m_2 (g - a) = T$, joten $m_2 = \dfrac{m_1 (g + a)}{g - a}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
-**Sijoitus:** $m_2 = \dfrac{0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 + 2{,}0\,\text{m/s}^2)}{9{,}81\,\text{m/s}^2 - 2{,}0\,\text{m/s}^2} = \dfrac{7{,}086\,\text{N}}{7{,}81\,\text{m/s}^2} = 0{,}9073\,\text{kg}$
+**Sijoitus:** $m_2 = \dfrac{0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 + 2{,}0\,\text{m/s}^2)}{9{,}81\,\text{m/s}^2 - 2{,}0\,\text{m/s}^2}$ $= \dfrac{7{,}086\,\text{N}}{7{,}81\,\text{m/s}^2} = 0{,}9073\,\text{kg}$
 **Vastaus:** $0{,}91\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska massassa $0{,}60\,\text{kg}$ ja kiihtyvyydessä $2{,}0\,\text{m/s}^2$ on kaksi.
 **Järkevyys:** Massa $0{,}91\,\text{kg}$ on suurempi kuin $0{,}60\,\text{kg}$, kuten raskaamman kappaleen pitääkin. Tarkistus kaavalla $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2} = \dfrac{0{,}3073 \cdot 9{,}81}{1{,}5073}\,\text{m/s}^2 \approx 2{,}0\,\text{m/s}^2$. Jännitysvoima $T = 7{,}09\,\text{N}$ on painojen $5{,}9\,\text{N}$ ja $8{,}9\,\text{N}$ välissä.
 
