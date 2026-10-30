@@ -157,7 +157,7 @@
       },
       "values": {
         "rata": {
-          "kaari": "kaareva"
+          "kaari": "curved"
         },
         "m": {
           "400": "$400\\,\\text{kg}$"
@@ -206,7 +206,7 @@
       },
       "values": {
         "rata": {
-          "kaari": "kaareva"
+          "kaari": "curved"
         },
         "m": {
           "400": "$400\\,\\text{kg}$"
@@ -279,8 +279,8 @@
       },
       "values": {
         "rata": {
-          "kaari": "kaareva",
-          "suora": "suora"
+          "kaari": "curved",
+          "suora": "straight"
         },
         "m": {
           "400": "$400\\,\\text{kg}$"

@@ -361,7 +361,7 @@ Työn yksikkö on sama kuin energian yksikkö, joule.
 </svg>
 
 ### Kitka muuttaa mekaanista energiaa sisäenergiaksi
-Todellisessa vuoristoradassa pyörien vierimisvastus ja ilmanvastus vastustavat liikettä koko matkan ajan. Ne tekevät negatiivista työtä. Vaunun mekaaninen energia pienenee juuri tämän työn verran. Energia ei katoa. Se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, jolloin ne lämpenevät hieman. Sisäenergia on energiaa, joka on aineen hiukkasten liikkeessä. Kokonaisenergia säilyy aina. Mekaaninen energia säilyy vain, kun kitkaa ja ilmanvastusta ei ole tai ne ovat niin pieniä, että ne voi jättää huomiotta.
+Todellisessa vuoristoradassa pyörien vierimisvastus ja ilmanvastus vastustavat liikettä koko matkan ajan. Ne tekevät negatiivista työtä. Vaunun mekaaninen energia pienenee juuri tämän työn verran. Energia ei katoa. Se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, jolloin ne lämpenevät hieman. Sisäenergia on aineen hiukkasten energiaa. Kokonaisenergia säilyy aina. Mekaaninen energia säilyy vain, kun kitkaa ja ilmanvastusta ei ole tai ne ovat niin pieniä, että ne voi jättää huomiotta.
 
 Painon eli painovoiman ja kitkan eron muistat luvusta *Liike-energia, potentiaalienergia ja mekaaninen energia*: paino on **konservatiivinen voima**. Uutta on se, mitä tästä seuraa energian laskemiselle. Painon tekemä työ riippuu vain korkeuserosta. Kun kappale palaa samalle korkeudelle, se saa takaisin saman energian, vaikka se olisi kulkenut mitä reittiä tahansa. Siksi painoon liittyy potentiaalienergia. Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä. Siksi se riippuu reitistä. Tällaista voimaa sanotaan **ei-konservatiiviseksi voimaksi**. Sille ei voi määritellä potentiaalienergiaa.
 
