@@ -119,7 +119,7 @@
       "names": {
         "m": "mass m",
         "v1": "initial velocity v_0",
-        "puskuri": "puskuri",
+        "puskuri": "bumper",
         "tormays": "collision"
       },
       "units": {
@@ -128,8 +128,8 @@
       },
       "values": {
         "puskuri": {
-          "kova": "kova",
-          "keski": "keskikova",
+          "kova": "hard",
+          "keski": "medium",
           "pehmea": "soft"
         },
         "tormays": {
@@ -198,7 +198,7 @@
       "names": {
         "m": "mass m",
         "v1": "initial velocity v_0",
-        "puskuri": "puskuri",
+        "puskuri": "bumper",
         "tormays": "collision"
       },
       "units": {
@@ -207,8 +207,8 @@
       },
       "values": {
         "puskuri": {
-          "kova": "kova",
-          "keski": "keskikova",
+          "kova": "hard",
+          "keski": "medium",
           "pehmea": "soft"
         },
         "tormays": {
@@ -278,7 +278,7 @@
       "names": {
         "m": "mass m",
         "v1": "initial velocity v_0",
-        "puskuri": "puskuri",
+        "puskuri": "bumper",
         "tormays": "collision"
       },
       "units": {
@@ -287,8 +287,8 @@
       },
       "values": {
         "puskuri": {
-          "kova": "kova",
-          "keski": "keskikova",
+          "kova": "hard",
+          "keski": "medium",
           "pehmea": "soft"
         },
         "tormays": {

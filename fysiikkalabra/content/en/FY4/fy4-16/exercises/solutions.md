@@ -10,11 +10,11 @@
 **Reasonableness:** The weight is $70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 687\,\text{N}$, and the normal force is $ma = 56\,\text{N}$ larger, about $8\,\%$. The acceleration is about $8\,\%$ of the acceleration of free fall, so the proportion matches.
 
 ## fy4-16-L1-02
-**Given:** $m = 90.0\,\text{kg}$, air resistance $F_\text{v} = 2.10\,\text{kN}$, the skydiver moves down; $g = 9.81\,\text{m/s}^2$
+**Given:** $m = 90.0\,\text{kg}$, air resistance $F_\text{d} = 2.10\,\text{kN}$, the skydiver moves down; $g = 9.81\,\text{m/s}^2$
 **Find:** the net force $\Sigma F$ in $\text{kN}$ and its direction
 **Principle:** The Earth (the weight) and the air (air resistance) act on the skydiver. The net force is the vector sum of the forces. The skydiver moves down, so the air resistance points up, against the weight.
-**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the top surface up, more than twice as long as the weight.
-**Formula:** $\Sigma F = F_\text{v} - G$, and $G = mg$, so $\Sigma F = F_\text{v} - mg$
+**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction up. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up, more than twice as long as the weight.
+**Formula:** $\Sigma F = F_\text{d} - G$, and $G = mg$, so $\Sigma F = F_\text{d} - mg$
 **Conversions:** $2.10\,\text{kN} = 2.10\cdot 1000\,\text{N} = 2100\,\text{N}$; the result is changed back into kilonewtons at the end.
 **Substitution:** $\Sigma F = 2100\,\text{N} - 90.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 2100\,\text{N} - 882.9\,\text{N} = 1217.1\,\text{N} \approx 1.22\,\text{kN}$
 **Answer:** $1.22\,\text{kN}$ upwards, three significant figures like the mass $90.0\,\text{kg}$ and the air resistance $2.10\,\text{kN}$.
@@ -78,7 +78,7 @@
 ## fy4-16-L2-03
 **Given:** $m = 80.0\,\text{kg}$, $v_1 = 52.0\,\text{m/s}$, $v_2 = 6.0\,\text{m/s}$, drop $h = 145\,\text{m}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the mechanical energy changed into other forms of energy $|\Delta E_\text{mech}|$ in $\text{kJ}$
-**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the top surface up. The velocity down is marked separately and not as a force. The air resistance is against the motion, so the work it does is negative.
+**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up. The velocity down is marked separately and not as a force. The air resistance is against the motion, so the work it does is negative.
 **Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the negative work done by air resistance. Both the kinetic energy and the potential energy decrease, and the change in both is counted.
 **Formula:** Zero level at the height of the final situation: $\Delta E_\text{mech} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) - mgh$, and $|\Delta E_\text{mech}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Conversions:** We calculate in joules and finally change to kilojoules: $1\,\text{kJ} = 1000\,\text{J}$.
@@ -122,11 +122,11 @@
 
 ## fy4-16-L3-03
 **Given:** $m = 70.0\,\text{kg}$, $v_1 = 50.0\,\text{m/s}$, $v_2 = 6.0\,\text{m/s}$, drop $h = 60.0\,\text{m}$, air resistance assumed constant; $g = 9.81\,\text{m/s}^2$
-**Find:** the magnitude of the air resistance $F_\text{v}$ in $\text{kN}$
-**Principle:** The speeds are known at the start and at the end of the distance, so we use the work–energy principle. Air resistance is the only force other than the weight, and it points against the motion, so the work it does is $W_\text{v} = -F_\text{v} h$. The work comes from the work–energy principle, and the force from the work.
-**Free-body diagram:** The skydiver with the parachute as a rectangle. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the top surface up, much longer than the weight, because the skydiver slows down. The velocity down is marked separately and not as a force.
-**Formula:** The kinetic energies are $E_{\text{k},1} = \tfrac12 mv_1^2$ and $E_{\text{k},2} = \tfrac12 mv_2^2$. Zero level at the height of the final situation: $E_{\text{k},1} + mgh - F_\text{v} h = E_{\text{k},2}$, so $F_\text{v} = mg + \dfrac{E_{\text{k},1} - E_{\text{k},2}}{h}$
+**Find:** the magnitude of the air resistance $F_\text{d}$ in $\text{kN}$
+**Principle:** The speeds are known at the start and at the end of the distance, so we use the work–energy principle. Air resistance is the only force other than the weight, and it points against the motion, so the work it does is $W_\text{d} = -F_\text{d} h$. The work comes from the work–energy principle, and the force from the work.
+**Free-body diagram:** The skydiver with the parachute as a rectangle. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{d}$ from the top surface up, much longer than the weight, because the skydiver slows down. The velocity down is marked separately and not as a force.
+**Formula:** The kinetic energies are $E_{\text{k},1} = \tfrac12 mv_1^2$ and $E_{\text{k},2} = \tfrac12 mv_2^2$. Zero level at the height of the final situation: $E_{\text{k},1} + mgh - F_\text{d} h = E_{\text{k},2}$, so $F_\text{d} = mg + \dfrac{E_{\text{k},1} - E_{\text{k},2}}{h}$
 **Conversions:** We calculate in newtons and finally change to kilonewtons: $1\,\text{kN} = 1000\,\text{N}$.
-**Substitution:** $E_{\text{k},1} = \tfrac12\cdot 70.0\,\text{kg}\cdot(50.0\,\text{m/s})^2 = 87\,500\,\text{J}$ and $E_{\text{k},2} = \tfrac12\cdot 70.0\,\text{kg}\cdot(6.0\,\text{m/s})^2 = 1260\,\text{J}$, so $F_\text{v} = 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60.0\,\text{m}} = 686.7\,\text{N} + 1437.3\,\text{N} = 2124\,\text{N} \approx 2.12\,\text{kN}$
+**Substitution:** $E_{\text{k},1} = \tfrac12\cdot 70.0\,\text{kg}\cdot(50.0\,\text{m/s})^2 = 87\,500\,\text{J}$ and $E_{\text{k},2} = \tfrac12\cdot 70.0\,\text{kg}\cdot(6.0\,\text{m/s})^2 = 1260\,\text{J}$, so $F_\text{d} = 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60.0\,\text{m}} = 686.7\,\text{N} + 1437.3\,\text{N} = 2124\,\text{N} \approx 2.12\,\text{kN}$
 **Answer:** $2.12\,\text{kN}$ upwards, three significant figures like the mass $70.0\,\text{kg}$, the speed $50.0\,\text{m/s}$ and the distance $60.0\,\text{m}$.
 **Reasonableness:** The air resistance is about three times the weight $687\,\text{N}$, so the net force points up and the skydiver slows down, as it should. From the equation of motion the deceleration is $(2124 - 687)\,\text{N} : 70.0\,\text{kg} \approx 20\,\text{m/s}^2$, and then $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20.5 \approx 60\,\text{m}$, as in the problem.

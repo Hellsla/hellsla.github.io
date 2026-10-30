@@ -294,7 +294,7 @@ x_1 + x_2 = \frac{h}{\mu}
 Kaltevuuskulma ei näy tuloksessa. Jyrkältä puolelta laskeva pulkka kulkee rinteessä lyhyen vaakamatkan, joten sille jää enemmän matkaa tasaisella. Loivalta puolelta laskeva käyttää suuremman osan vaakamatkasta rinteessä. Tämä vastaa alun kysymykseen. Malli olettaa kolme asiaa: kitkakerroin on sama koko matkalla, ilmanvastus on pieni ja rinteen juuren mutka on lyhyt. Jyrkässä mutkassa tukivoima ja kitka kasvavat hetkeksi. Siksi todellinen pulkka pysähtyy jyrkän mäen alla vähän aikaisemmin. Lisäksi rinteen on oltava niin jyrkkä, että pulkka liukuu: $\tan\alpha > \mu$.
 
 ### Ratkaisun vaiheet
-1. Valitse kappale ja piirrä sen voimakuvio: jokaiselle voimalle aiheuttaja ja suunta.
+1. Valitse kappale ja piirrä sen voimakuvio. Kirjoita jokaiselle voimalle aiheuttaja ja suunta.
 2. Päätä työkalu: hetken voima tai kiihtyvyys saadaan liikeyhtälöstä, nopeus tietyssä kohdassa energiaperiaatteesta.
 3. Liikeyhtälöön valitse akselit ja positiiviset suunnat. Energiaperiaatteeseen valitse nollataso ja kirjoita muiden voimien työ etumerkkeineen. Liikettä vastustava voima tekee negatiivista työtä. Liikettä vastaan kohtisuora voima ei tee työtä.
 4. Ratkaise kysytty suure ensin symbolein ja sijoita luvut vasta sitten. Tarkista tulos rajatapauksella, esimerkiksi ilman kitkaa.
@@ -406,5 +406,5 @@ Toinen virhe on ajatella, että rajanopeudella mekaaninen energia säilyy, koska
 - Mekaniikan tehtävä alkaa aina kappaleen valinnasta ja voimakuviosta. Hetken voima tai kiihtyvyys saadaan liikeyhtälöstä $\Sigma\overline{F} = m\overline{a}$. Nopeus tietyssä kohdassa saadaan energiaperiaatteesta.
 - Hississä vaaka mittaa tukivoimaa $N = m(g + a)$, kun positiivinen suunta on ylös. Lukema riippuu kiihtyvyydestä, ei nopeudesta.
 - Rajanopeudella $F_\text{v} = mg$, ja ilmanvastuksen työ on $-mgh$. Mekaaninen energia pienenee, vaikka nopeus ei muutu.
-- Suoralla rinteellä $N = mg\cos\alpha$, ja liikekitkan työ on $W_\mu = -\mu mgx$, missä $x$ on vaakasuora matka. Levosta korkeudelta $h$ lähtenyt pulkka pysähtyy vaakamatkan $h/\mu$ päähän huipusta, kun kitkakerroin on sama koko matkalla.
-- Kun kappale liukuu paikallaan olevaa pintaa pitkin, tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Hississä lattian tukivoima on liikkeen suuntainen ja tekee työtä.
+- Suoralla rinteellä $N = mg\cos\alpha$, ja liikekitkan työ on $W_\mu = -\mu mgx$. Tässä $x$ on vaakasuora matka. Pulkka lähtee levosta korkeudelta $h$. Se pysähtyy vaakamatkan $h/\mu$ päähän huipusta, kun kitkakerroin on sama koko matkan.
+- Kun kappale liukuu paikallaan olevaa pintaa pitkin, tukivoima ei tee työtä. Se on kohtisuorassa liikettä vastaan. Hississä lattian tukivoima on liikkeen suuntainen, ja se tekee työtä.

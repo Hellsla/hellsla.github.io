@@ -3,12 +3,12 @@
   "contribution": "Soveltava tunti: moduulin työkaluja käytetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta. Kysymys ratkaisee, käytetäänkö liikeyhtälöä vai energiaperiaatetta. Hississä vaaka mittaa tukivoimaa $N = m(g + a)$. Rajanopeudella ilmanvastuksen työ on $-mgh$. Suoralla rinteellä liikekitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
   "learn": [
     "valitsemaan voimakuvion avulla, käytätkö liikeyhtälöä vai energiaperiaatetta.",
-    "piirtämään voimakuvion ja laskemaan tukivoiman tai kiihtyvyyden kiihtyvässä hississä.",
-    "laskemaan pulkan nopeuden ja liukumismatkan sekä ilmanvastuksen työn energiaperiaatteella."
+    "piirtämään voimakuvion ja laskemaan tukivoiman tai kiihtyvyyden, kun hissi kiihtyy.",
+    "laskemaan pulkan nopeuden ja liukumismatkan sekä ilmanvastuksen tekemän työn energiaperiaatteella."
   ],
   "prior": [
-    "Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
-    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liikekitka $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
+    "Kokonaisvoima osoittaa samaan suuntaan kuin kiihtyvyys, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
+    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liikekitka on $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
     "Mekaanisen energian muutos on muiden voimien kuin painon tekemä työ (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
   ],
   "activities": [
@@ -30,19 +30,19 @@
         {
           "text": "Se pienenee $40\\,\\text{J}$, koska kitka tekee negatiivista työtä.",
           "correct": true,
-          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit, että mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W_\\text{muut}$. Korkeus ei muutu, joten koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee pulkan liukumisen."
+          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit tämän: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W_\\text{muut}$. Korkeus ei muutu. Siksi koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee pulkan liukumisen."
         },
         {
-          "text": "Se säilyy, koska energia ei häviä mihinkään.",
-          "feedback": "Kokonaisenergia säilyy, mutta mekaaninen energia ei: kitka muuttaa sen laatikon ja lattian sisäenergiaksi. Mekaaninen energia säilyy vain, kun muut voimat kuin paino eivät tee työtä."
+          "text": "Se ei muutu, koska energia ei häviä mihinkään.",
+          "feedback": "Kokonaisenergia säilyy, mutta mekaaninen energia ei säily. Kitka muuttaa sen laatikon ja lattian sisäenergiaksi. Mekaaninen energia säilyy vain, jos muut voimat kuin paino eivät tee työtä."
         },
         {
           "text": "Se pienenee, koska tukivoima tekee negatiivisen työn ja pysäyttää laatikon.",
-          "feedback": "Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Laatikon pysäyttää kitka, joka osoittaa liikettä vastaan ja tekee negatiivisen työn."
+          "feedback": "Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Laatikon pysäyttää kitka. Kitka osoittaa liikettä vastaan ja tekee negatiivisen työn."
         },
         {
           "text": "Se muuttuu potentiaalienergiaksi, koska laatikko pysähtyy.",
-          "feedback": "Potentiaalienergia muuttuu vain, kun korkeus muuttuu. Laatikko liukuu vaakasuoralla lattialla, joten liike-energia ei muutu potentiaalienergiaksi vaan kitkan vuoksi sisäenergiaksi."
+          "feedback": "Potentiaalienergia muuttuu vain, kun korkeus muuttuu. Laatikko liukuu vaakasuoralla lattialla. Liike-energia ei siis muutu potentiaalienergiaksi. Kitka muuttaa sen sisäenergiaksi."
         }
       ]
     },
@@ -58,21 +58,21 @@
       "prompt": "Seisot kylpyhuonevaa'alla hississä. Hissi lähtee pohjakerroksesta ylös, kulkee välillä tasaisella nopeudella ja pysähtyy ylempään kerrokseen. Miten vaa'an lukema muuttuu matkan aikana verrattuna siihen, mitä vaaka näyttää levossa?",
       "choices": [
         {
-          "text": "Lukema on lähdössä suurempi, tasaisen nopeuden aikana sama ja pysähtyessä pienempi kuin levossa.",
+          "text": "Lähtiessä lukema on suurempi kuin levossa, tasaisella nopeudella sama ja pysähtyessä pienempi.",
           "correct": true,
-          "feedback": "Oikein. Tutki-vaiheen kuvaajassa lukema on lähdössä $650\\,\\text{N}$, tasaisella nopeudella noin $589\\,\\text{N}$ kuten levossa ja pysähtyessä $550\\,\\text{N}$. Lukema seuraa kiihtyvyyttä: lähdössä kiihtyvyys osoittaa ylös, pysähtyessä alas."
+          "feedback": "Oikein. Tutki-vaiheen kuvaajassa lukema on lähtiessä $650\\,\\text{N}$. Tasaisella nopeudella se on noin $589\\,\\text{N}$ eli sama kuin levossa. Pysähtyessä se on $550\\,\\text{N}$. Lukema seuraa kiihtyvyyttä: lähtiessä kiihtyvyys osoittaa ylös ja pysähtyessä alas."
         },
         {
-          "text": "Lukema on suurempi kuin levossa koko ylösmenon ajan, koska hissi liikkuu ylöspäin.",
-          "feedback": "Kuvaajassa lukema on tasaisen nopeuden aikana sama kuin levossa, vaikka hissi liikkuu ylös. Kun nopeus ei muutu, kiihtyvyys ja kokonaisvoima ovat nolla, joten tukivoima on yhtä suuri kuin paino."
+          "text": "Lukema on koko ylösmenon ajan suurempi kuin levossa, koska hissi liikkuu ylöspäin.",
+          "feedback": "Kuvaajassa lukema on tasaisella nopeudella sama kuin levossa, vaikka hissi liikkuu ylös. Kun nopeus ei muutu, kiihtyvyys ja kokonaisvoima ovat nolla. Silloin tukivoima on yhtä suuri kuin paino."
         },
         {
           "text": "Lukema pysyy koko ajan samana, koska ihmisen massa ei muutu.",
-          "feedback": "Massa ei muutu, mutta vaaka ei mittaa massaa. Se mittaa tukivoimaa, ja kun hissi kiihtyy, tukivoiman on oltava eri suuri kuin paino. Kuvaajassa lukema muuttuu lähdössä ja pysähtyessä."
+          "feedback": "Massa ei muutu, mutta vaaka ei mittaa massaa. Vaaka mittaa tukivoimaa. Kun hissi kiihtyy, tukivoima ei ole yhtä suuri kuin paino. Kuvaajassa lukema muuttuu lähtiessä ja pysähtyessä."
         },
         {
-          "text": "Lukema on lähdössä pienempi, koska ihminen jää hetkeksi jälkeen, ja pysähtyessä suurempi.",
-          "feedback": "Kuvaajassa käy päinvastoin. Kun hissi lähtee ylös, ihmistä on kiihdytettävä ylöspäin, ja sen tekee lattian tukivoima, joten se on painoa suurempi. Pysähtyessä kiihtyvyys osoittaa alas, ja tukivoima on painoa pienempi."
+          "text": "Lähtiessä lukema on pienempi, koska ihminen jää hetkeksi jälkeen, ja pysähtyessä suurempi.",
+          "feedback": "Kuvaajassa käy päinvastoin. Kun hissi lähtee ylös, ihmistä pitää kiihdyttää ylöspäin. Sen tekee lattian tukivoima, joten tukivoima on painoa suurempi. Pysähtyessä kiihtyvyys osoittaa alas, ja tukivoima on painoa pienempi."
         }
       ]
     },
@@ -90,19 +90,19 @@
         {
           "text": "Jyrkältä puolelta laskeva, koska lyhyellä rinteellä kitka vie vähemmän energiaa.",
           "correct": true,
-          "feedback": "Oikein. Tutki-vaiheen taulukossa $30^\\circ$:n rinteeltä tuleva pulkka on juurella nopeudessa $9{,}87\\,\\text{m/s}$ ja $10^\\circ$:n rinteeltä tuleva vain $7{,}14\\,\\text{m/s}$. Jyrkässä rinteessä tukivoima ja kitka ovat pienempiä ja matka lyhyempi, joten kitkan työ on pienempi."
+          "feedback": "Oikein. Tutki-vaiheen taulukossa $30^\\circ$:n rinteeltä tuleva pulkka on juurella nopeudella $9{,}87\\,\\text{m/s}$. $10^\\circ$:n rinteeltä tuleva pulkka on vain nopeudella $7{,}14\\,\\text{m/s}$. Jyrkässä rinteessä tukivoima ja kitka ovat pienempiä ja matka on lyhyempi. Siksi kitkan työ on pienempi."
         },
         {
           "text": "Yhtä nopeita, koska korkeus on sama ja potentiaalienergia muuttuu samaksi liike-energiaksi.",
-          "feedback": "Tämä pätisi ilman kitkaa: silloin kumpikin olisi juurella nopeudessa $\\sqrt{2gh}$. Kitka kuitenkin tekee negatiivista työtä koko rinteen matkalla, ja taulukossa juurinopeudet eroavat selvästi."
+          "feedback": "Näin olisi ilman kitkaa. Silloin kumpikin pulkka olisi juurella nopeudella $\\sqrt{2gh}$. Kitka kuitenkin tekee negatiivista työtä koko rinteen matkalla. Taulukossa nopeudet juurella ovat selvästi erilaiset."
         },
         {
           "text": "Loivalta puolelta laskeva, koska pitkällä rinteellä pulkka ehtii kiihtyä kauemmin.",
-          "feedback": "Loivassa rinteessä aikaa on enemmän, mutta kiihtyvyys on pieni ja kitka tekee työtä pidemmällä matkalla. Taulukossa loivalta rinteeltä tuleva pulkka on juurella hitaampi."
+          "feedback": "Loivassa rinteessä aikaa on enemmän. Kiihtyvyys on kuitenkin pieni, ja kitka tekee työtä pidemmällä matkalla. Taulukossa loivalta rinteeltä tuleva pulkka on juurella hitaampi."
         },
         {
           "text": "Yhtä nopeita, koska kitkavoima on molemmissa rinteissä yhtä suuri, $\\mu mg$.",
-          "feedback": "Rinteessä tukivoima on $mg\\cos\\alpha$, ei $mg$, joten kitkavoima on $\\mu mg\\cos\\alpha$ ja riippuu kulmasta. Lisäksi rinteiden pituudet eroavat. Taulukossa juurinopeudet eivät ole samat."
+          "feedback": "Rinteessä tukivoima on $mg\\cos\\alpha$, ei $mg$. Siksi kitkavoima on $\\mu mg\\cos\\alpha$, ja se riippuu kulmasta. Lisäksi rinteiden pituudet ovat erilaiset. Taulukossa nopeudet juurella eivät ole samat."
         }
       ]
     },
@@ -117,23 +117,23 @@
       "question": {
         "type": "numeric",
         "fbd": "equations",
-        "prompt": "Piirrä ensin opiskelijan voimakuvio vihkoon. Lue sitten kuvaajasta tukivoima lähtövaiheessa ja laske hissin kiihtyvyys. Vastaa yksikössä $\\text{m/s}^2$.",
+        "prompt": "Piirrä ensin opiskelijan voimakuvio vihkoon. Lue sitten kuvaajasta tukivoima lähtövaiheessa. Laske sen avulla hissin kiihtyvyys. Vastaa yksikössä $\\text{m/s}^2$.",
         "answer": 1.023,
         "unit": "m/s²",
         "tolerance": 0.03,
         "hints": [
-          "Mitkä kaksi voimaa opiskelijaan vaikuttavat, ja kumpi on lähtövaiheessa suurempi?",
-          "Valitse positiivinen suunta ylös: $N - mg = ma$. Lue $N$ kuvaajasta hetkien $1{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$ väliltä.",
-          "$N = 650\\,\\text{N}$ ja $mg = 60{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 588{,}6\\,\\text{N}$. Jaa erotus massalla."
+          "Mitkä kaksi voimaa vaikuttavat opiskelijaan? Kumpi niistä on lähtövaiheessa suurempi?",
+          "Valitse positiiviseksi suunnaksi ylös: $N - mg = ma$. Lue $N$ kuvaajasta hetkien $1{,}0\\,\\text{s}$ ja $3{,}0\\,\\text{s}$ väliltä.",
+          "$N = 650\\,\\text{N}$ ja $mg = 60{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 = 588{,}6\\,\\text{N}$. Jaa voimien erotus massalla."
         ],
         "mistakes": [
           {
             "value": 10.83,
-            "feedback": "Jaoit tukivoiman massalla, mutta unohdit painon. Opiskelijaan vaikuttaa myös paino, joten kiihtyvyyden määrää erotus $N - mg$."
+            "feedback": "Jaoit tukivoiman massalla, mutta unohdit painon. Opiskelijaan vaikuttaa myös paino. Kiihtyvyyden antaa siksi erotus $N - mg$."
           },
           {
             "value": -0.643,
-            "feedback": "Luit pysähtymisvaiheen lukeman $550\\,\\text{N}$. Lähtövaihe on hetkestä $1{,}0\\,\\text{s}$ hetkeen $3{,}0\\,\\text{s}$, jolloin lukema on $650\\,\\text{N}$."
+            "feedback": "Luit lukeman pysähtymisvaiheesta, $550\\,\\text{N}$. Lähtövaihe on hetkestä $1{,}0\\,\\text{s}$ hetkeen $3{,}0\\,\\text{s}$. Silloin lukema on $650\\,\\text{N}$."
           }
         ],
         "solution": "**Annettu:** opiskelijan massa $m = 60{,}0\\,\\text{kg}$; kuvaajasta tukivoima lähtövaiheessa $N = 650\\,\\text{N}$ (hetkestä $1{,}0\\,\\text{s}$ hetkeen $3{,}0\\,\\text{s}$); $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** hissin kiihtyvyys $a$ lähtövaiheessa yksikössä $\\text{m/s}^2$\n\n**Periaate:** Opiskelija seisoo hississä paikallaan, joten hänen kiihtyvyytensä on sama kuin hissin kiihtyvyys. Newtonin toisen lain mukaan kiihtyvyyden määrää kokonaisvoima. Kokonaisvoima on painon ja tukivoiman summa.\n\n**Voimakuvio:** Piirrä opiskelija suorakulmiona. Positiivinen suunta on ylös. Paino $\\overline{G}$ alkaa keskipisteestä ja osoittaa alas. Levyn tukivoima $\\overline{N}$ alkaa alapinnasta ja osoittaa ylös. Tukivoima on painoa pidempi. Kiihtyvyys ylös merkitään erikseen, ja se ei ole voima.\n\n**Kuvaajan lukeminen:** Lähtövaiheessa, hetkestä $1{,}0\\,\\text{s}$ hetkeen $3{,}0\\,\\text{s}$, käyrä on vaakasuora ja osuu $650\\,\\text{N}$:n ruudukkoviivalle. Levossa lukema on noin $589\\,\\text{N}$. Lähdössä tukivoima on siis painoa suurempi.\n\n**Kaava:** $N - mg = ma$, joten $a = \\dfrac{N}{m} - g$\n\n**Muunnokset:** Massa on kilogrammoina ja voima newtoneina, ja $\\tfrac{\\text{N}}{\\text{kg}} = \\tfrac{\\text{m}}{\\text{s}^2}$, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $a = \\dfrac{650\\,\\text{N}}{60{,}0\\,\\text{kg}} - 9{,}81\\,\\text{m/s}^2 = 10{,}833\\,\\text{m/s}^2 - 9{,}81\\,\\text{m/s}^2 = 1{,}023\\,\\text{m/s}^2$\n\n**Vastaus:** $1{,}02\\,\\text{m/s}^2$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $60{,}0\\,\\text{kg}$ ja kuvaajasta luettu $650\\,\\text{N}$ on annettu kolmella.\n\n**Järkevyys:** Tukivoima on noin $60\\,\\text{N}$ painoa suurempi. Voima $60\\,\\text{N}$ kiihdyttää $60\\,\\text{kg}$:n opiskelijaa noin $1\\,\\text{m/s}^2$. Hissin kiihtyvyys on tavallisesti noin $1\\,\\text{m/s}^2$, ja se tuntuu jaloissa vain vähän."
@@ -153,19 +153,19 @@
           {
             "text": "Vaakamatka on joka rivillä $60{,}0\\,\\text{m}$, vaikka jyrkältä rinteeltä tuleva pulkka on juurella nopeampi.",
             "correct": true,
-            "feedback": "Oikein. $10{,}4 + 49{,}6 = 16{,}5 + 43{,}5 = 34{,}0 + 26{,}0 = 60{,}0$ metriä, ja $\\tfrac{h}{\\mu} = \\tfrac{6{,}0\\,\\text{m}}{0{,}10} = 60\\,\\text{m}$. Jyrkältä rinteeltä tuleva pulkka on juurella nopeampi ja liukuu tasaisella pidemmälle, mutta rinteessä sen vaakamatka on lyhyempi."
+            "feedback": "Oikein. $10{,}4 + 49{,}6 = 16{,}5 + 43{,}5 = 34{,}0 + 26{,}0 = 60{,}0$ metriä, ja $\\tfrac{h}{\\mu} = \\tfrac{6{,}0\\,\\text{m}}{0{,}10} = 60\\,\\text{m}$. Jyrkältä rinteeltä tuleva pulkka on juurella nopeampi ja liukuu tasaisella pidemmälle. Rinteessä sen vaakamatka on kuitenkin lyhyempi."
           },
           {
-            "text": "Vaakamatka on sitä pidempi, mitä jyrkempi rinne, koska jyrkältä rinteeltä tuleva pulkka on juurella nopeampi.",
-            "feedback": "Jyrkältä rinteeltä tuleva pulkka liukuu tasaisella pidemmälle, mutta sen rinteen vaakasuora pituus on lyhyempi. Laske summat: $10{,}4 + 49{,}6$ ja $34{,}0 + 26{,}0$."
+            "text": "Mitä jyrkempi rinne on, sitä pidempi vaakamatka on, koska jyrkältä rinteeltä tuleva pulkka on juurella nopeampi.",
+            "feedback": "Jyrkältä rinteeltä tuleva pulkka liukuu tasaisella pidemmälle. Sen rinteen vaakasuora pituus on kuitenkin lyhyempi. Laske summat: $10{,}4 + 49{,}6$ ja $34{,}0 + 26{,}0$."
           },
           {
             "text": "Nopeus juurella on joka rivillä sama, koska mäet ovat yhtä korkeat.",
-            "feedback": "Taulukon nopeudet ovat $9{,}87$, $9{,}24$ ja $7{,}14\\,\\text{m/s}$. Ilman kitkaa kaikki olisivat $\\sqrt{2gh} \\approx 10{,}8\\,\\text{m/s}$, mutta kitkan työ on eri suuri eri rinteillä."
+            "feedback": "Taulukon nopeudet ovat $9{,}87$, $9{,}24$ ja $7{,}14\\,\\text{m/s}$. Ilman kitkaa kaikki olisivat $\\sqrt{2gh} \\approx 10{,}8\\,\\text{m/s}$. Kitkan työ on kuitenkin eri rinteillä erilainen."
           },
           {
-            "text": "Vaakamatka on sitä pidempi, mitä loivempi rinne, koska loiva rinne on pidempi.",
-            "feedback": "Loivan rinteen vaakasuora pituus $x_1$ on suurin, mutta sieltä tuleva pulkka liukuu tasaisella lyhyimmän matkan. Laske summat riveittäin ja vertaa."
+            "text": "Mitä loivempi rinne on, sitä pidempi vaakamatka on, koska loiva rinne on pidempi.",
+            "feedback": "Loivan rinteen vaakasuora pituus $x_1$ on suurin. Sieltä tuleva pulkka liukuu kuitenkin tasaisella lyhimmän matkan. Laske summat rivi riviltä ja vertaa niitä."
           }
         ]
       }
@@ -177,10 +177,10 @@
       "title": "Johtopäätös",
       "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi, mutta pysähtyy silti lähes yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
       "criteria": [
-        "Vastaus kertoo, että vaaka mittaa tukivoimaa ja että lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas, mutta tasaisella nopeudella sama kuin levossa.",
+        "Vastaus kertoo, että vaaka mittaa tukivoimaa. Lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas. Tasaisella nopeudella lukema on sama kuin levossa.",
         "Vastaus käyttää kuvaajan lukuja, esimerkiksi $650\\,\\text{N}$ lähdössä ja noin $589\\,\\text{N}$ tasaisella nopeudella.",
-        "Vastaus selittää, että jyrkässä rinteessä kitka tekee vähemmän negatiivista työtä, koska tukivoima ja kitka ovat pienempiä ja matka lyhyempi.",
-        "Vastaus toteaa taulukosta, että $x_1 + x_2$ on joka rivillä $60\\,\\text{m}$, ja kertoo, että luvut ovat mallin arvoja."
+        "Vastaus selittää, että jyrkässä rinteessä kitka tekee vähemmän negatiivista työtä. Syy on se, että tukivoima ja kitka ovat pienempiä ja matka on lyhyempi.",
+        "Vastaus toteaa taulukosta, että $x_1 + x_2$ on joka rivillä $60\\,\\text{m}$. Vastaus kertoo myös, että luvut ovat mallin arvoja."
       ],
       "model": "Vaaka mittaa tukivoimaa, jolla se työntää seisojaa. Kuvaajassa lukema on lähdössä $650\\,\\text{N}$ ja tasaisella nopeudella noin $589\\,\\text{N}$ kuten levossa. Pysähtyessä lukema on $550\\,\\text{N}$. Lukema on painoa suurempi, kun hissin kiihtyvyys osoittaa ylös. Lukema on painoa pienempi, kun kiihtyvyys osoittaa alas. Nopeus ei vaikuta lukemaan. Taulukossa jyrkältä rinteeltä tuleva pulkka on juurella nopein, $9{,}87\\,\\text{m/s}$. Jyrkässä rinteessä tukivoima ja kitka ovat pienempiä ja rinne on lyhyempi, joten kitka tekee vähemmän negatiivista työtä. Pulkka liukuu tasaisella pisimmälle, mutta sen rinteen vaakamatka on lyhyin. Mallin arvoissa $x_1 + x_2$ on joka rivillä $60{,}0\\,\\text{m}$. Kaltevuus ei siis vaikuta siihen, kuinka kauas huipusta pulkka pysähtyy."
     },
@@ -199,7 +199,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kuvaajaan ja taulukkoon. Mikä yllätti eniten? Kirjoita omin sanoin, miksi kitkan työ riippuu vaakasuorasta matkasta eikä rinteen pituudesta.",
+      "prompt": "Vertaa ennustettasi kuvaajaan ja taulukkoon. Mikä yllätti eniten? Kirjoita omin sanoin, miksi kitkan työ riippuu vaakasuorasta matkasta eikä rinteen pituudesta.",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -225,27 +225,27 @@
       "criteria": [
         {
           "key": "fbd_object",
-          "detail": "Kuviossa on vain laukku, ei vaakaa, hissiä eikä kattoa omine voimineen."
+          "detail": "Kuviossa on vain laukku. Vaakaa, hissiä ja kattoa ei piirretä omine voimineen."
         },
         {
           "key": "fbd_forces",
-          "detail": "Kaksi voimaa: paino ja vaa'an jännitysvoima. Ei erillistä hissin voimaa eikä liikkeen suuntaista voimaa."
+          "detail": "Kaksi voimaa: paino ja vaa'an jännitysvoima. Hissille ei piirretä omaa voimaa, eikä liikkeen suuntaan piirretä voimaa."
         },
         {
           "key": "fbd_directions",
-          "detail": "Paino alas, jännitysvoima ylös vaa'an suuntaisesti."
+          "detail": "Paino osoittaa alas. Jännitysvoima osoittaa ylös vaa'an suunnassa."
         },
         {
           "key": "fbd_representation",
-          "detail": "Paino keskipisteestä, jännitysvoima laukun yläpinnasta, jossa kahva on; kummallakin oma tunnus."
+          "detail": "Paino alkaa keskipisteestä. Jännitysvoima alkaa laukun yläpinnasta, jossa kahva on. Kummallakin voimalla on oma tunnus."
         },
         {
           "key": "fbd_magnitudes",
-          "detail": "Jännitysvoima on painoa lyhyempi, koska kiihtyvyys osoittaa alas. Nopeus ja kiihtyvyys on merkitty erikseen eikä voimiksi."
+          "detail": "Jännitysvoima on painoa lyhyempi, koska kiihtyvyys osoittaa alas. Nopeus ja kiihtyvyys on merkitty erikseen, eikä niitä ole piirretty voimiksi."
         },
         {
           "key": "fbd_equations",
-          "detail": "$mg - T = ma$, joten $T = m(g - a) < mg$: vaaka näyttää vähemmän kuin levossa."
+          "detail": "$mg - T = ma$, joten $T = m(g - a) < mg$. Vaaka näyttää siis vähemmän kuin levossa."
         }
       ],
       "model": "Laukkuun vaikuttavat vain Maa (paino $\\overline{G}$) ja vaaka. Vaa'an koukku pitää laukusta kiinni (jännitysvoima $\\overline{T}$). Hissi ja katto vaikuttavat laukkuun vain vaa'an kautta, joten niille ei piirretä omia voimia. Hissi liikkuu alas ja kiihtyy, joten nopeus ja kiihtyvyys osoittavat alas. Kokonaisvoiman on osoitettava alas, joten jännitysvoima on painoa pienempi. Kun positiivinen suunta on alas, liikeyhtälö on $mg - T = ma$, josta $T = m(g - a)$. Vaaka näyttää vähemmän kuin levossa. Esimerkiksi kun $a = 1{,}5\\,\\text{m/s}^2$, $T = 18{,}0\\,\\text{kg}\\cdot 8{,}31\\,\\text{m/s}^2 \\approx 150\\,\\text{N}$, kun paino on $177\\,\\text{N}$."
@@ -261,9 +261,9 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "hints": [
-        "Mitä hyppääjän liike-energialle ja potentiaalienergialle tapahtuu, kun nopeus on vakio?",
-        "Nopeus on vakio, joten $F_\\text{v} = mg$. Ilmanvastuksen työ on $W_\\text{v} = -F_\\text{v} h$, ja se on mekaanisen energian muutos.",
-        "$mgh = 78{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 125\\,\\text{m}$. Muuta jouleet kilojouleiksi."
+        "Mitä liike-energialle ja potentiaalienergialle tapahtuu, kun hyppääjän nopeus on vakio?",
+        "Nopeus on vakio, joten $F_\\text{v} = mg$. Ilmanvastuksen työ on $W_\\text{v} = -F_\\text{v} h$. Se on sama kuin mekaanisen energian muutos.",
+        "$mgh = 78{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 125\\,\\text{m}$. Muuta lopuksi jouleet kilojouleiksi."
       ],
       "mistakes": [
         {
@@ -272,7 +272,7 @@
         },
         {
           "value": 96.62,
-          "feedback": "Lisäsit liike-energian potentiaalienergian muutokseen. Liike-energia on lopussa sama kuin alussa, joten se ei muutu muiksi energiamuodoiksi."
+          "feedback": "Lisäsit liike-energian potentiaalienergian muutokseen. Liike-energia on lopussa yhtä suuri kuin alussa. Se ei siis muutu muiksi energiamuodoiksi."
         },
         {
           "value": 95647.5,
@@ -292,24 +292,24 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Käsite",
-      "prompt": "Hissi kulkee kerrosten välissä ylöspäin tasaisella nopeudella $2{,}0\\,\\text{m/s}$. Hississä seisoo vaa'alla ihminen, jonka massa on $60\\,\\text{kg}$. Mitä vaaka näyttää?",
+      "prompt": "Hissi kulkee kerrosten välillä ylöspäin tasaisella nopeudella $2{,}0\\,\\text{m/s}$. Hississä seisoo vaa'alla ihminen, jonka massa on $60\\,\\text{kg}$. Mitä vaaka näyttää?",
       "choices": [
         {
           "text": "$60\\,\\text{kg}$, koska kiihtyvyys on nolla ja tukivoima on yhtä suuri kuin paino.",
           "correct": true,
-          "feedback": "Oikein. Tasaisella nopeudella kokonaisvoima on nolla, joten $N = mg$, ja vaaka näyttää saman kuin levossa. Nopeuden suunnalla ei ole merkitystä."
+          "feedback": "Oikein. Tasaisella nopeudella kokonaisvoima on nolla, joten $N = mg$. Vaaka näyttää saman kuin levossa. Nopeuden suunnalla ei ole väliä."
         },
         {
-          "text": "Enemmän kuin $60\\,\\text{kg}$, koska hissi liikkuu ylöspäin ja lattia työntää ihmistä ylös.",
-          "feedback": "Tukivoima on painoa suurempi vain, kun kiihtyvyys osoittaa ylös. Tasaisella nopeudella kiihtyvyys on nolla, joten tukivoima ja paino ovat yhtä suuret."
+          "text": "Yli $60\\,\\text{kg}$, koska hissi liikkuu ylöspäin ja lattia työntää ihmistä ylös.",
+          "feedback": "Tukivoima on painoa suurempi vain silloin, kun kiihtyvyys osoittaa ylös. Tasaisella nopeudella kiihtyvyys on nolla. Silloin tukivoima ja paino ovat yhtä suuret."
         },
         {
-          "text": "Vähemmän kuin $60\\,\\text{kg}$, koska hissin köysi kantaa osan ihmisen painosta.",
-          "feedback": "Köysi vaikuttaa hissikoriin, ei ihmiseen. Ihmiseen vaikuttavat vain paino ja lattian tukivoima, ja tasaisella nopeudella ne ovat yhtä suuret."
+          "text": "Alle $60\\,\\text{kg}$, koska hissin köysi kantaa osan ihmisen painosta.",
+          "feedback": "Köysi vaikuttaa hissikoriin, ei ihmiseen. Ihmiseen vaikuttavat vain paino ja lattian tukivoima. Tasaisella nopeudella ne ovat yhtä suuret."
         },
         {
-          "text": "Enemmän kuin $60\\,\\text{kg}$ sitä enemmän, mitä nopeammin hissi liikkuu.",
-          "feedback": "Lukema riippuu kiihtyvyydestä, ei nopeudesta. Tasaisesti liikkuvassa hississä vaaka näyttää saman kuin levossa, oli nopeus mikä tahansa."
+          "text": "Yli $60\\,\\text{kg}$, ja luku on sitä suurempi, mitä nopeammin hissi liikkuu.",
+          "feedback": "Lukema riippuu kiihtyvyydestä, ei nopeudesta. Kun hissi liikkuu tasaisesti, vaaka näyttää saman kuin levossa. Nopeudella ei ole väliä."
         }
       ]
     },
@@ -325,17 +325,17 @@
       "tolerance": 0.02,
       "hints": [
         "Kumpi on suurempi, paino vai tukivoima, kun kiihtyvyys osoittaa alas?",
-        "Valitse positiivinen suunta ylös: $N - mg = ma$, jossa $a = -1{,}20\\,\\text{m/s}^2$.",
+        "Valitse positiiviseksi suunnaksi ylös: $N - mg = ma$. Tässä $a = -1{,}20\\,\\text{m/s}^2$.",
         "$N = 55{,}0\\,\\text{kg}\\cdot(9{,}81 - 1{,}20)\\,\\text{m/s}^2$. Jaa lopuksi luvulla $9{,}81\\,\\text{m/s}^2$."
       ],
       "mistakes": [
         {
           "value": 61.73,
-          "feedback": "Kiihtyvyyden suunta on väärin. Hissi kiihtyy alaspäin, joten kokonaisvoima osoittaa alas ja tukivoima on painoa pienempi: $N = m(g - 1{,}20\\,\\text{m/s}^2)$."
+          "feedback": "Kiihtyvyyden suunta on väärin. Hissi kiihtyy alaspäin. Silloin kokonaisvoima osoittaa alas, ja tukivoima on painoa pienempi: $N = m(g - 1{,}20\\,\\text{m/s}^2)$."
         },
         {
           "value": 473.55,
-          "feedback": "Tämä on tukivoima newtoneina. Vaaka näyttää sen kilogrammoina, joten jaa se luvulla $9{,}81\\,\\text{m/s}^2$."
+          "feedback": "Tämä luku on tukivoima newtoneina. Vaaka näyttää sen kilogrammoina. Jaa siis tukivoima luvulla $9{,}81\\,\\text{m/s}^2$."
         }
       ],
       "solution": "**Annettu:** $m = 55{,}0\\,\\text{kg}$, hissin kiihtyvyys $1{,}20\\,\\text{m/s}^2$ alaspäin, vaaka näyttää tukivoiman jaettuna luvulla $9{,}81\\,\\text{m/s}^2$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** vaa'an lukema $N/g$ yksikössä $\\text{kg}$\n\n**Periaate:** Opiskelija seisoo hississä paikallaan, joten hänen kiihtyvyytensä on sama kuin hissin kiihtyvyys. Newtonin toisen lain mukaan kiihtyvyyden määrää painon ja tukivoiman summa. Vaaka mittaa tukivoimaa.\n\n**Voimakuvio:** Piirrä opiskelija suorakulmiona. Positiivinen suunta on ylös. Paino $\\overline{G}$ alkaa keskipisteestä ja osoittaa alas. Tukivoima $\\overline{N}$ alkaa alapinnasta ja osoittaa ylös. Tukivoima on painoa lyhyempi, koska kiihtyvyys osoittaa alas. Kiihtyvyys alas merkitään erikseen, eikä se ole voima.\n\n**Kaava:** $N - mg = ma$, joten $N = m(g + a)$, ja lukema on $\\dfrac{N}{g} = \\dfrac{m(g + a)}{g}$\n\n**Muunnokset:** Kiihtyvyys osoittaa alas. Kun positiivinen suunta on ylös, $a = -1{,}20\\,\\text{m/s}^2$. Muita muunnoksia ei tarvita.\n\n**Sijoitus:** $\\dfrac{N}{g} = \\dfrac{55{,}0\\,\\text{kg}\\cdot(9{,}81 - 1{,}20)\\,\\text{m/s}^2}{9{,}81\\,\\text{m/s}^2} = \\dfrac{473{,}55\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 48{,}27\\,\\text{kg}$\n\n**Vastaus:** $48{,}3\\,\\text{kg}$. Vastauksessa on kolme merkitsevää numeroa, koska massa $55{,}0\\,\\text{kg}$ ja kiihtyvyys $1{,}20\\,\\text{m/s}^2$ on annettu kolmella.\n\n**Järkevyys:** Kiihtyvyys on noin kahdeksasosa putoamiskiihtyvyydestä. Lukema pienenee siis noin kahdeksasosan: $55\\,\\text{kg} - 7\\,\\text{kg} \\approx 48\\,\\text{kg}$. Lukema on pienempi kuin massa, kuten pitääkin, kun kiihtyvyys osoittaa alas."
@@ -350,19 +350,19 @@
         {
           "text": "Mekaaninen energia pienenee, koska ilmanvastus tekee negatiivista työtä.",
           "correct": true,
-          "feedback": "Oikein. Liike-energia pysyy samana, mutta potentiaalienergia pienenee. Mekaanisen energian muutos on ilmanvastuksen työ $W_\\text{v} = -F_\\text{v} h = -mgh$. Energia ei häviä, vaan muuttuu ilman liikkeeksi ja lopulta sisäenergiaksi."
+          "feedback": "Oikein. Liike-energia pysyy samana, mutta potentiaalienergia pienenee. Mekaanisen energian muutos on ilmanvastuksen työ $W_\\text{v} = -F_\\text{v} h = -mgh$. Energia ei katoa. Se muuttuu ilman liikkeeksi ja lopulta sisäenergiaksi."
         },
         {
-          "text": "Mekaaninen energia säilyy, koska nopeus ei muutu.",
-          "feedback": "Nopeus ja liike-energia eivät muutu, mutta potentiaalienergia pienenee koko ajan. Mekaaninen energia säilyy vain, kun muut voimat kuin paino eivät tee työtä, ja tässä ilmanvastus tekee."
+          "text": "Mekaaninen energia ei muutu, koska nopeus ei muutu.",
+          "feedback": "Nopeus ja liike-energia eivät muutu, mutta potentiaalienergia pienenee koko ajan. Mekaaninen energia säilyy vain, jos muut voimat kuin paino eivät tee työtä. Tässä ilmanvastus tekee työtä."
         },
         {
           "text": "Ilmanvastus tekee positiivista työtä, koska se osoittaa ylös ja kumoaa painon.",
-          "feedback": "Työn etumerkin ratkaisee voiman suunta liikkeeseen nähden. Hyppääjä liikkuu alas ja ilmanvastus osoittaa ylös, joten työ on negatiivinen."
+          "feedback": "Työn etumerkin ratkaisee se, mihin suuntaan voima osoittaa liikkeeseen nähden. Hyppääjä liikkuu alas ja ilmanvastus osoittaa ylös. Siksi työ on negatiivinen."
         },
         {
           "text": "Potentiaalienergia muuttuu liike-energiaksi, joten hyppääjän nopeus kasvaa hitaasti.",
-          "feedback": "Nopeus on vakio, joten liike-energia ei kasva. Potentiaalienergian muutos muuttuu ilmanvastuksen negatiivisen työn kautta muiksi energiamuodoiksi."
+          "feedback": "Nopeus on vakio, joten liike-energia ei kasva. Potentiaalienergian muutos siirtyy ilmanvastuksen negatiivisen työn kautta muihin energiamuotoihin."
         }
       ]
     },

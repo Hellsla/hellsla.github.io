@@ -3,7 +3,7 @@
     {
       "id": "fy4-16-L1-01",
       "level": 1,
-      "text": "Hissi lähtee pohjakerroksesta ylöspäin ja kiihtyy $0{,}80\\,\\text{m/s}^2$. Hississä seisoo ihminen, jonka massa on $70{,}0\\,\\text{kg}$. Piirrä ihmisen voimakuvio. Kuinka suuri on lattian tukivoima ihmiseen?",
+      "text": "Hissi lähtee pohjakerroksesta ylöspäin ja kiihtyy $0{,}80\\,\\text{m/s}^2$. Hississä seisoo ihminen. Hänen massansa on $70{,}0\\,\\text{kg}$. Piirrä ihmisen voimakuvio. Kuinka suuri on lattian tukivoima ihmiseen?",
       "answer": 742.7,
       "unit": "N",
       "tolerance": 0.02,

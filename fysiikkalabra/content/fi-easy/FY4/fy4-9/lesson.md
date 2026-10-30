@@ -268,7 +268,7 @@
 ## Ydinajatus
 
 ### Liikemäärä: massa ja nopeus yhdessä
-Luvussa *Newtonin toinen laki* opit, että voima muuttaa kappaleen nopeutta. Raskaan kappaleen nopeuden muuttaminen vaatii suuremman voiman kuin kevyen. Liikkuvan kappaleen pysäyttämiseen tai kiihdyttämiseen vaikuttavat siis sekä massa että nopeus. Massan ja nopeuden tuloa sanotaan **liikemääräksi**. Liikemäärä kertoo, kuinka vaikeaa liikkuvan kappaleen pysäyttäminen on. Kevyellä ja nopealla jalkapallolla voi olla yhtä suuri liikemäärä kuin raskaalla ja hitaalla keilapallolla. Liikemäärä on vektori, ja sen suunta on sama kuin nopeuden suunta. Suoraviivaisessa liikkeessä valitaan positiivinen suunta. Vastakkaiseen suuntaan liikkuvan kappaleen liikemäärä on negatiivinen.
+Luvussa *Newtonin toinen laki* opit, että voima muuttaa kappaleen nopeutta. Raskaan kappaleen nopeuden muuttaminen vaatii suuremman voiman kuin kevyen. Liikkuvan kappaleen pysäyttämiseen tai kiihdyttämiseen vaikuttavat siis sekä massa että nopeus. Massan ja nopeuden tuloa sanotaan **liikemääräksi**. Kevyellä ja nopealla jalkapallolla voi olla yhtä suuri liikemäärä kuin raskaalla ja hitaalla keilapallolla. Liikemäärä on vektori, ja sen suunta on sama kuin nopeuden suunta. Suoraviivaisessa liikkeessä valitaan positiivinen suunta. Vastakkaiseen suuntaan liikkuvan kappaleen liikemäärä on negatiivinen.
 
 <svg data-fig="liikemaara" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva, nuolet mittakaavassa. Kuvassa on kolme palloa x-akselilla. Positiivinen suunta on oikealle. Ylhäällä 0,45 kilogramman jalkapallo liikkuu oikealle nopeudella 20 metriä sekunnissa. Siinä on pitkä sininen nopeusnuoli ja violetti liikemääränuoli. Liikemäärä on 9,0 kilogrammametriä sekunnissa. Keskellä 6,0 kilogramman keilapallo liikkuu oikealle nopeudella 1,5 metriä sekunnissa. Sen nopeusnuoli on hyvin lyhyt, mutta liikemääränuoli on yhtä pitkä kuin jalkapallolla, koska liikemäärä on sama 9,0. Alhaalla jalkapallo liikkuu vasemmalle nopeudella 10 metriä sekunnissa. Nuolet osoittavat vasemmalle, ja liikemäärä on miinus 4,5 kilogrammametriä sekunnissa." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy49-liikemaara-c0"><circle cx="70" cy="62" r="22"/></clipPath><clipPath id="fy49-liikemaara-c1"><circle cx="336" cy="274" r="22"/></clipPath></defs>
@@ -394,14 +394,14 @@ Kappaleen liikemäärä on
 ```
 missä $m$ on kappaleen massa ($\text{kg}$) ja $\overline{v}$ sen nopeus ($\text{m/s}$). Liikemäärän yksikkö on $\text{kg}\cdot\text{m/s}$. Suoraviivaisessa liikkeessä vektorit korvataan luvuilla, joilla on etumerkki: $p = mv$. Luku $v$ on negatiivinen, kun kappale liikkuu negatiiviseen suuntaan.
 
-Kappaleeseen vaikuttaa vakiovoima $\overline{F}$ aikavälin $\Delta t$. Silloin voiman impulssi on
+Kun kappaleeseen vaikuttaa vakiovoima $\overline{F}$ aikavälin $\Delta t$, voiman impulssi on
 ```latex
 \overline{I} = \overline{F}\,\Delta t
 ```
 missä $\overline{F}$ on voima ($\text{N}$) ja $\Delta t$ sen vaikutusaika ($\text{s}$). Impulssilla on voiman suunta, ja sen yksikkö on $\text{N}\cdot\text{s}$. Koska $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$, on $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$. Impulssilla ja liikemäärällä on siis sama yksikkö.
 
 ### Impulssiperiaate Newtonin toisesta laista
-Kokonaisvoima $\Sigma\overline{F}$ on vakio. Silloin kappale kiihtyy tasaisesti. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit, että silloin kiihtyvyys on nopeuden muutos jaettuna ajalla, $\overline{a} = \tfrac{\overline{v} - \overline{v}_0}{\Delta t}$. Sijoitetaan tämä Newtonin toiseen lakiin $\Sigma\overline{F} = m\overline{a}$. Kerrotaan sitten yhtälö puolittain ajalla $\Delta t$. Saadaan
+Kun kokonaisvoima $\Sigma\overline{F}$ on vakio, kappale kiihtyy tasaisesti. Luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike* opit, että silloin kiihtyvyys on nopeuden muutos jaettuna ajalla, $\overline{a} = \tfrac{\overline{v} - \overline{v}_0}{\Delta t}$. Sijoitetaan tämä Newtonin toiseen lakiin $\Sigma\overline{F} = m\overline{a}$. Kerrotaan sitten yhtälö puolittain ajalla $\Delta t$. Saadaan
 ```latex
 \Sigma\overline{F}\,\Delta t = m\overline{v} - m\overline{v}_0
 ```
