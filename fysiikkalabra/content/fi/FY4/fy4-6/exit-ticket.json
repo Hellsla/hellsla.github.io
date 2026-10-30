@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Lautaa kallistetaan hitaasti, ja sen päällä oleva kappale lähtee liukumaan kulmalla $\\alpha_0$. Miksi lepokitkakerroin on $\\tan\\alpha_0$?",
+    "a": "Juuri ennen liukumista lepokitka on suurimmillaan, $\\mu_0 N$, ja se kumoaa painon rinteen suuntaisen komponentin: $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$. Massa supistuu, joten $\\mu_0 = \\dfrac{\\sin\\alpha_0}{\\cos\\alpha_0} = \\tan\\alpha_0$."
+  },
+  {
+    "q": "Kävelijä astuu eteenpäin, ja hänen jalkansa työntää maata taaksepäin. Mihin suuntaan maan kitkavoima vaikuttaa jalkaan, ja miksi?",
+    "a": "Eteenpäin, liikkeen suuntaan. Jalka pyrkii liukumaan taaksepäin maan suhteen, ja lepokitka vastustaa tätä liukumista. Kitka vastustaa pintojen liukumista toistensa suhteen, ei kävelijän liikettä: juuri kitka vie kävelijää eteenpäin."
+  },
+  {
+    "q": "Ihmisen massa on $60\\,\\text{kg}$. Kuinka suuri on hänen massansa ja hänen painonsa Kuun pinnalla, kun $g_\\text{Kuu} = 1{,}62\\,\\text{m/s}^2$?",
+    "a": "Massa on sama kuin Maassa, $60\\,\\text{kg}$. Paino on $G = mg_\\text{Kuu} = 60\\,\\text{kg}\\cdot 1{,}62\\,\\text{m/s}^2 \\approx 97\\,\\text{N}$, kun se Maassa on noin $590\\,\\text{N}$."
+  }
+]

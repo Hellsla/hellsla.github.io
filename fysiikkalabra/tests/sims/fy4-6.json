@@ -1,0 +1,156 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.alpha===10 && S.m===2 && S.pinta==='puu' && S.komponentit===false && S.running===false && S.v===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: alpha = 10°, m = 2,0 kg, wood on wood, no components, at rest (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='45' && R[0].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: alpha 0-45° in steps of 1°"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='2,3,4' && L[1]==='puu,muovi,kumi' && L[2]==='0.25,0.5,1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: mass, surfaces, speed"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='alpha,m,pinta' && P.m.unit==='kg' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares alpha, m (kg) and pinta"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],20);",
+  "expr": "window.simState.Fmu",
+  "expected": 6.710435,
+  "tol": 0.01,
+  "note": "at rest at 20°: static friction = G_x = mg sin α = 6,71 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],20);",
+  "expr": "window.simState.a",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "tan 20° < 0,50: the box stays at rest, a = 0"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],26);",
+  "expr": "window.simState.liukuu",
+  "expected": 0,
+  "tol": 0,
+  "note": "tan 26° = 0,488 ≤ μ0 = 0,50: at rest"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],27);",
+  "expr": "window.simState.liukuu",
+  "expected": 1,
+  "tol": 0,
+  "note": "tan 27° = 0,510 > 0,50: slides"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],27);",
+  "expr": "window.simState.Fmu",
+  "expected": 5.244464,
+  "tol": 0.01,
+  "note": "sliding at 27°: kinetic friction μN = 0,30 · mg cos α = 5,24 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],30);",
+  "expr": "window.simState.N",
+  "expected": 16.991418,
+  "tol": 0.01,
+  "note": "N = mg cos α = 16,99 N at 30°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],30);",
+  "expr": "window.simState.Gx",
+  "expected": 9.81,
+  "tol": 0.01,
+  "note": "G_x = mg sin α = 9,81 N at 30°"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'2'); I(R[0],35);",
+  "expr": "window.simState.a",
+  "expected": 3.21602,
+  "tol": 0.01,
+  "note": "35°, 2 kg: a = g(sin α − μ cos α) = 3,22 m/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'4'); I(R[0],35);",
+  "expr": "window.simState.a",
+  "expected": 3.21602,
+  "tol": 0.01,
+  "note": "35°, 4 kg: the same acceleration, mass cancels"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'4'); I(R[0],35);",
+  "expr": "window.simState.Fmax",
+  "expected": 16.071763,
+  "tol": 0.01,
+  "note": "largest static friction μ0 N = 0,50 · 4 kg · g cos 35° = 16,07 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'muovi'); I(L[0],'2'); I(R[0],17);",
+  "expr": "window.simState.a",
+  "expected": 0.991896,
+  "tol": 0.01,
+  "note": "plastic on wood (μ0 0,30, μ 0,20) slides at 17°: a = 0,99 m/s²"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'kumi'); I(L[0],'2'); I(R[0],38);",
+  "expr": "window.simState.liukuu",
+  "expected": 0,
+  "tol": 0,
+  "note": "rubber on wood μ0 = 0,80: at rest at 38° (tan 38° = 0,78)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'kumi'); I(L[0],'2'); I(R[0],39);",
+  "expr": "window.simState.Fmu",
+  "expected": 9.148562,
+  "tol": 0.01,
+  "note": "rubber slides at 39°: kinetic friction 0,60 · mg cos α = 9,15 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'4'); I(R[0],0);",
+  "expr": "window.simState.Fmu",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "level plank: no friction is needed"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[1],'puu'); I(L[0],'4'); I(R[0],0);",
+  "expr": "window.simState.G",
+  "expected": 39.24,
+  "tol": 0.01,
+  "note": "G = mg = 39,24 N"
+ },
+ {
+  "setup": "const c=document.querySelector('#sim-root input[type=checkbox]'); c.checked=true; c.dispatchEvent(new Event('change',{bubbles:true})); c.dispatchEvent(new Event('input',{bubbles:true}));",
+  "expr": "window.simState.komponentit ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "components checkbox reaches simState"
+ }
+]
