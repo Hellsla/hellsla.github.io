@@ -135,6 +135,8 @@ def check_math(L, name, text):
             L.err(name, line, "siunitx and \\newcommand do not work in KaTeX (NOTES 1.10)")
         if re.search(r"\\times\b|×|\\div\b|÷", frag):
             L.page(name, line, "multiplication is \\cdot and a written division a colon : (teacher 2026-10-28, NOTES 1): " + frag[:60])
+        if re.search(r"[\t\x08\x0c\r]", frag):
+            L.err(name, line, "a control character in maths: a backslash was eaten by an escape (\\t, \\f, \\b in Python or JSON); write \\frac, \\text, \\beta (2026-10-30, fy4-13): " + repr(frag[:40]))
         if re.search(r"\\vec\{|\\mathbf\{[A-Za-z]\}", frag):
             L.page(name, line, "a vector is written with an overline, \\overline{F} (teacher 2026-10-29, project rule 14): " + frag[:60])
         if re.search(r"(?<!\\)\*", frag):
