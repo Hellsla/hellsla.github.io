@@ -1,0 +1,20 @@
+{
+  "id": "fy4-9",
+  "course": "FY4",
+  "title": "Momentum and impulse",
+  "goals": [
+    "LOPS FY4: momentum, impulse",
+    "Thematic study: sports, traffic"
+  ],
+  "prerequisites": [
+    "fy4-4"
+  ],
+  "glossary": [
+    "liikemäärä",
+    "impulssi",
+    "impulssiperiaate"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

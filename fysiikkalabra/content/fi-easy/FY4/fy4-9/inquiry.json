@@ -1,0 +1,505 @@
+{
+  "version": 1,
+  "contribution": "Liikemäärä ja impulssi löydetään simulaatiosta, jossa kärry törmää puskuriin. Impulssi luetaan $(t, F)$-kuvaajan pinta-alasta. Liikemäärän muutos lasketaan nopeuksista. Ne ovat joka törmäyksessä yhtä suuret. Pehmeä puskuri pidentää törmäystä ja pienentää suurinta voimaa, mutta ei impulssia. Kimpoaminen kaksinkertaistaa impulssin. Impulssiperiaate johdetaan Newtonin toisesta laista. Etumerkkejä harjoitellaan suoraviivaisessa liikkeessä urheilun ja liikenteen tilanteissa.",
+  "learn": [
+    "laskemaan liikemäärän, impulssin ja liikemäärän muutoksen etumerkkeineen.",
+    "käyttämään impulssiperiaatetta ja lukemaan impulssin $(t, F)$-kuvaajan pinta-alasta.",
+    "selittämään, miksi pidempi pysähtymisaika pienentää törmäyksen voimaa."
+  ],
+  "prior": [
+    "Kokonaisvoima määrää kiihtyvyyden, $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
+    "Kiihtyvyys on nopeuden muutos jaettuna ajalla, $a = \\tfrac{\\Delta v}{\\Delta t}$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Korkeushyppääjä ponnistaa ja kaartuu selällään riman yli. Rima on yli kahden metrin korkeudella. Riman takana hän putoaa paksulle patjalle ja nousee heti ylös. Jos patjaa ei olisi, sama pudotus nurmelle voisi katkaista luita. Hyppääjä osuu kumpaankin alustaan samalla nopeudella. Kummassakin hän pysähtyy.",
+      "question": "Mikä patjassa suojaa hyppääjää, vaikka hänen nopeutensa muuttuu kummassakin tapauksessa yhtä paljon?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: Newtonin toinen laki",
+      "optional": true,
+      "prompt": "Kärryn massa on $2{,}0\\,\\text{kg}$. Kärryyn vaikuttaa liikkeen suuntaan kokonaisvoima $6{,}0\\,\\text{N}$ ajan $0{,}50\\,\\text{s}$. Kuinka paljon kärryn nopeus kasvaa?",
+      "choices": [
+        {
+          "text": "$1{,}5\\,\\text{m/s}$",
+          "correct": true,
+          "feedback": "Oikein. Kiihtyvyys on $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$. Nopeus kasvaa $a\\,\\Delta t = 3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} = 1{,}5\\,\\text{m/s}$ (luku *Newtonin toinen laki*). Huomaa, että tulos riippuu sekä voimasta että ajasta."
+        },
+        {
+          "text": "$3{,}0\\,\\text{m/s}$",
+          "feedback": "$3{,}0\\,\\text{m/s}^2$ on kiihtyvyys. Se kertoo, kuinka paljon nopeus muuttuu sekunnissa. Voima vaikuttaa vain $0{,}50\\,\\text{s}$. Siksi nopeus kasvaa $3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} = 1{,}5\\,\\text{m/s}$."
+        },
+        {
+          "text": "$6{,}0\\,\\text{m/s}$",
+          "feedback": "Voima ei ole nopeus. Kokonaisvoima antaa kiihtyvyyden $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$. Nopeuden muutos on kiihtyvyys kertaa aika, eli $1{,}5\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kova vai pehmeä puskuri",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Kärryn massa on $1{,}0\\,\\text{kg}$ ja sen nopeus on $2{,}0\\,\\text{m/s}$. Kärry pysähtyy seinän puskuriin. Ensin puskuri on kova, sitten pehmeä. Puskuri antaa kärrylle impulssin. Miten puskurin suurin voima ja impulssi muuttuvat, kun puskuri vaihdetaan pehmeään?",
+      "choices": [
+        {
+          "text": "Suurin voima pienenee, mutta impulssi pysyy samana.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa kova puskuri pysäyttää kärryn ajassa $0{,}0393\\,\\text{s}$, ja suurin voima on $80{,}0\\,\\text{N}$. Pehmeällä puskurilla aika on $0{,}157\\,\\text{s}$ ja suurin voima vain $20{,}0\\,\\text{N}$. Impulssi on kummallakin $-2{,}00\\,\\text{N}\\cdot\\text{s}$. Syy on, että kärryn liikemäärä muuttuu kummassakin arvosta $2{,}0\\,\\text{kg}\\cdot\\text{m/s}$ nollaan."
+        },
+        {
+          "text": "Sekä suurin voima että impulssi pienenevät.",
+          "feedback": "Voima pienenee, mutta impulssi ei. Kärry pysähtyy kummassakin tapauksessa, joten sen liikemäärä muuttuu yhtä paljon. Mallin arvoissa impulssi on $-2{,}00\\,\\text{N}\\cdot\\text{s}$ kummallakin puskurilla. Pehmeä puskuri vain pidentää törmäystä ($0{,}157\\,\\text{s}$ eikä $0{,}0393\\,\\text{s}$)."
+        },
+        {
+          "text": "Suurin voima ei muutu, mutta impulssi kasvaa, koska törmäys kestää kauemmin.",
+          "feedback": "Törmäys kestää pehmeällä puskurilla kauemmin, mutta voima on silloin pienempi: mallin arvoissa $20{,}0\\,\\text{N}$ eikä $80{,}0\\,\\text{N}$. Voiman ja ajan tulo on impulssi. Se on $-2{,}00\\,\\text{N}\\cdot\\text{s}$ kummassakin, koska kärryn liikemäärän muutos on sama."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: pysähtyminen vai kimpoaminen",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Sama kärry osuu nopeudella $2{,}0\\,\\text{m/s}$ keskikovaan puskuriin. Ensin muovautuva puskuri pysäyttää kärryn. Sitten joustava puskuri työntää kärryn takaisin samalla vauhdilla $2{,}0\\,\\text{m/s}$. Kuinka suuren impulssin puskuri antaa kärrylle kimpoamisessa, kun sitä verrataan pysähtymiseen?",
+      "choices": [
+        {
+          "text": "Kaksi kertaa niin suuren impulssin.",
+          "correct": true,
+          "feedback": "Oikein. Kun kärry pysähtyy, liikemäärä muuttuu arvosta $+2{,}0$ arvoon $0$. Kun kärry kimpoaa, liikemäärä muuttuu arvosta $+2{,}0$ arvoon $-2{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Mallin arvoissa impulssi on $-2{,}00\\,\\text{N}\\cdot\\text{s}$ ja $-4{,}00\\,\\text{N}\\cdot\\text{s}$. Puskurin täytyy ensin pysäyttää kärry ja sitten kiihdyttää se takaisin."
+        },
+        {
+          "text": "Yhtä suuren impulssin, koska vauhti muuttuu kummassakin $2{,}0\\,\\text{m/s}$.",
+          "feedback": "Kun kärry kimpoaa, nopeus muuttuu arvosta $+2{,}0\\,\\text{m/s}$ arvoon $-2{,}0\\,\\text{m/s}$. Muutos on siis $-4{,}0\\,\\text{m/s}$. Mallin arvoissa impulssi on kimpoamisessa $-4{,}00\\,\\text{N}\\cdot\\text{s}$. Se on kaksi kertaa niin suuri kuin pysähtyessä."
+        },
+        {
+          "text": "Ei lainkaan impulssia, koska kärryn vauhti on lopussa sama kuin alussa.",
+          "feedback": "Vauhti on sama, mutta suunta on vastakkainen. Siksi liikemäärä muuttuu arvosta $+2{,}0$ arvoon $-2{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Mallin arvoissa puskuri antaa impulssin $-4{,}00\\,\\text{N}\\cdot\\text{s}$. Se näkyy kuvaajassa suurena pinta-alana."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaatiossa laboratoriokärry törmää seinän puskuriin. Ylhäällä on kuva tilanteesta nuolineen. Alhaalla on puskurin voima ajan funktiona. Varjostettu pinta-ala kertoo impulssin suuruuden.",
+      "howto": "Valitse alkunopeus $v_0$, kärryn massa, puskurin kovuus ja törmäyksen tyyppi. Paina *Käynnistä*. Kun kärry on pysähtynyt tai kimmonnut takaisin, näet lukemat: törmäyksen keston $\\Delta t$, suurimman voiman $F_\\text{max}$, impulssin $I$, loppunopeuden $v$ ja liikemäärät. Kuvaajaan jää kolme edellistä törmäystä harmaina. Voit siis verrata käyriä. *Alusta* palauttaa kärryn lähtöpaikkaan. *Nopeus* hidastaa tai nopeuttaa liikettä, mutta lukemat eivät muutu. Normaalinopeus on jo hidastettu, jotta törmäyksen ehtii nähdä.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Rata on vaakasuora. Kitka ja ilmanvastus jätetään huomiotta. Kärryn paino ja radan tukivoima kumoavat toisensa. Siksi vaakasuunnassa kärryyn vaikuttaa vain puskurin voima, ja se on kokonaisvoima. Positiivinen suunta on oikealle, kohti seinää. Puskurin voima on sitä suurempi, mitä enemmän puskuri painuu kasaan. Kova puskuri on $16$ kertaa niin jäykkä kuin pehmeä. Muovautuva puskuri jää painuneeksi, joten kärry pysähtyy siihen. Joustava puskuri palautuu ja työntää kärryn takaisin ilman energiahäviötä.",
+      "calc": "Kärryn liike lasketaan Newtonin toisesta laista pienin aika-askelin. Yksi askel on $0{,}1\\,\\text{ms}$ simuloitua aikaa. Puskurin voima on $F = kc$, missä $c$ on painuma ja $k$ puskurin jousivakio. Kuvaajan aika $t$ lasketaan kosketuksen alusta. Kuvaajassa on voiman suuruus. Impulssi $I$ lasketaan kuvaajan pinta-alana. Se on negatiivinen, koska puskurin voima osoittaa vasemmalle. Liikemäärät lasketaan nopeuksista: $p_0 = mv_0$ ja $p = mv$. Liikemäärän muutos on $\\Delta p = p - p_0$. Impulssi ja liikemäärän muutos lasketaan siis toisistaan riippumatta."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: puskurin kovuus",
+      "intro": "Testaa ensimmäinen ennuste. Alkutilassa kärryn massa on $1{,}0\\,\\text{kg}$, alkunopeus on $2{,}0\\,\\text{m/s}$ ja puskuri on muovautuva, joten kärry pysähtyy siihen. Muuta vain puskurin kovuutta: kova, keskikova ja pehmeä. Paina joka kerta *Käynnistä*. Kirjaa mittaus, kun kärry on pysähtynyt.",
+      "initial": {
+        "m": "1",
+        "v1": 2,
+        "tormays": "pysahtyy",
+        "puskuri": "kova"
+      },
+      "names": {
+        "m": "massa m",
+        "v1": "alkunopeus v_0",
+        "puskuri": "puskuri",
+        "tormays": "törmäys"
+      },
+      "units": {
+        "m": "kg",
+        "v1": "m/s"
+      },
+      "values": {
+        "puskuri": {
+          "kova": "kova",
+          "keski": "keskikova",
+          "pehmea": "pehmeä"
+        },
+        "tormays": {
+          "pysahtyy": "kärry pysähtyy",
+          "kimpoaa": "kärry kimpoaa"
+        },
+        "m": {
+          "0.5": "$0{,}50\\,\\text{kg}$",
+          "1": "$1{,}0\\,\\text{kg}$",
+          "2": "$2{,}0\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "v1",
+        "tormays"
+      ],
+      "vary": "puskuri",
+      "measure": [
+        {
+          "key": "dt",
+          "label": "$\\Delta t$ (s)"
+        },
+        {
+          "key": "Fmax",
+          "label": "$F_\\text{max}$ (N)"
+        },
+        {
+          "key": "I",
+          "label": "$I$ (N·s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Vertaa taulukon rivejä. Mitä huomaat?",
+        "choices": [
+          {
+            "text": "Impulssi pysyy samana, mutta suurin voima pienenee, kun aika kasvaa.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $\\Delta t$ on $0{,}0393$, $0{,}0785$ ja $0{,}157\\,\\text{s}$. Suurin voima on $80{,}0$, $40{,}0$ ja $20{,}0\\,\\text{N}$. Impulssi on kuitenkin joka rivillä $-2{,}00\\,\\text{N}\\cdot\\text{s}$. Sama liikemäärän muutos saadaan pienemmällä voimalla, kun aikaa on enemmän."
+          },
+          {
+            "text": "Impulssi kasvaa sitä suuremmaksi, mitä kauemmin törmäys kestää.",
+            "feedback": "Katso saraketta $I$. Mallin arvoissa se on $-2{,}00\\,\\text{N}\\cdot\\text{s}$ joka rivillä, vaikka $\\Delta t$ tulee nelinkertaiseksi. Voima pienenee yhtä paljon kuin aika kasvaa. Siksi pinta-ala pysyy samana."
+          },
+          {
+            "text": "Suurin voima ei riipu siitä, kuinka kauan törmäys kestää.",
+            "feedback": "Taulukossa ne riippuvat toisistaan. Kun $\\Delta t$ kasvaa arvosta $0{,}0393\\,\\text{s}$ arvoon $0{,}157\\,\\text{s}$, suurin voima pienenee arvosta $80{,}0\\,\\text{N}$ arvoon $20{,}0\\,\\text{N}$. Impulssi $-2{,}00\\,\\text{N}\\cdot\\text{s}$ pysyy samana."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: pysähtyminen ja kimpoaminen",
+      "intro": "Testaa toinen ennuste. Alkutilassa kärryn massa on $1{,}0\\,\\text{kg}$, alkunopeus on $2{,}0\\,\\text{m/s}$ ja puskuri on keskikova. Muuta vain törmäyksen tyyppiä: ensin kärry pysähtyy, sitten se kimpoaa. Kirjaa kummastakin mittaus, kun kärry on pysähtynyt tai palannut lähtöpaikkaansa. Vertaa sarakkeita $I$ ja $\\Delta p$.",
+      "initial": {
+        "m": "1",
+        "v1": 2,
+        "puskuri": "keski",
+        "tormays": "pysahtyy"
+      },
+      "names": {
+        "m": "massa m",
+        "v1": "alkunopeus v_0",
+        "puskuri": "puskuri",
+        "tormays": "törmäys"
+      },
+      "units": {
+        "m": "kg",
+        "v1": "m/s"
+      },
+      "values": {
+        "puskuri": {
+          "kova": "kova",
+          "keski": "keskikova",
+          "pehmea": "pehmeä"
+        },
+        "tormays": {
+          "pysahtyy": "kärry pysähtyy",
+          "kimpoaa": "kärry kimpoaa"
+        },
+        "m": {
+          "0.5": "$0{,}50\\,\\text{kg}$",
+          "1": "$1{,}0\\,\\text{kg}$",
+          "2": "$2{,}0\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "m",
+        "v1",
+        "puskuri"
+      ],
+      "vary": "tormays",
+      "measure": [
+        {
+          "key": "v2",
+          "label": "$v$ (m/s)"
+        },
+        {
+          "key": "dp",
+          "label": "$\\Delta p$ (kg·m/s)"
+        },
+        {
+          "key": "I",
+          "label": "$I$ (N·s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Vertaa impulssia $I$ ja liikemäärän muutosta $\\Delta p$ kummallakin rivillä. Mitä huomaat?",
+        "choices": [
+          {
+            "text": "$I = \\Delta p$ kummallakin rivillä. Kimpoamisessa molemmat ovat kaksinkertaiset.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa pysähtyvän kärryn $I = \\Delta p = -2{,}00\\,\\text{N}\\cdot\\text{s}$ ja kimpoavan kärryn $I = \\Delta p = -4{,}00\\,\\text{N}\\cdot\\text{s}$. Tämä on impulssiperiaate: kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos."
+          },
+          {
+            "text": "$I = \\Delta p$ vain pysähtyvällä kärryllä, koska kimpoava kärry on lopussa liikkeessä.",
+            "feedback": "Katso kimpoamisen riviä. Mallin arvoissa $\\Delta p = 1{,}0\\,\\text{kg} \\cdot (-2{,}00 - 2{,}00)\\,\\text{m/s} = -4{,}00\\,\\text{kg}\\cdot\\text{m/s}$ ja $I = -4{,}00\\,\\text{N}\\cdot\\text{s}$. Yhtäsuuruus pätee kummallakin rivillä."
+          },
+          {
+            "text": "Impulssi on negatiivinen, joten se pienentää kärryn vauhtia kummassakin.",
+            "feedback": "Impulssi on negatiivinen, koska puskurin voima osoittaa vasemmalle. Kimpoamisessa se ensin pysäyttää kärryn ja sitten kasvattaa sen vauhtia vasemmalle arvoon $2{,}00\\,\\text{m/s}$. Taulukossa $I = \\Delta p$ kummallakin rivillä."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: kärryn massa",
+      "optional": true,
+      "intro": "Tutki vielä massan vaikutusta. Alkutilassa alkunopeus on $2{,}0\\,\\text{m/s}$, puskuri on keskikova ja kärry pysähtyy. Muuta vain kärryn massaa. Miten impulssi riippuu massasta, kun nopeus pysyy samana?",
+      "initial": {
+        "v1": 2,
+        "puskuri": "keski",
+        "tormays": "pysahtyy",
+        "m": "0.5"
+      },
+      "names": {
+        "m": "massa m",
+        "v1": "alkunopeus v_0",
+        "puskuri": "puskuri",
+        "tormays": "törmäys"
+      },
+      "units": {
+        "m": "kg",
+        "v1": "m/s"
+      },
+      "values": {
+        "puskuri": {
+          "kova": "kova",
+          "keski": "keskikova",
+          "pehmea": "pehmeä"
+        },
+        "tormays": {
+          "pysahtyy": "kärry pysähtyy",
+          "kimpoaa": "kärry kimpoaa"
+        },
+        "m": {
+          "0.5": "$0{,}50\\,\\text{kg}$",
+          "1": "$1{,}0\\,\\text{kg}$",
+          "2": "$2{,}0\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "v1",
+        "puskuri",
+        "tormays"
+      ],
+      "vary": "m",
+      "measure": [
+        {
+          "key": "p1",
+          "label": "$p_0$ (kg·m/s)"
+        },
+        {
+          "key": "I",
+          "label": "$I$ (N·s)"
+        },
+        {
+          "key": "Fmax",
+          "label": "$F_\\text{max}$ (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla kaksi asiaa. Mikä ratkaisee, kuinka suuren impulssin puskuri antaa kärrylle? Mikä ratkaisee puskurin suurimman voiman? Käytä taulukoiden lukuja.",
+      "criteria": [
+        "Vastaus kertoo, että impulssi oli joka mittauksessa yhtä suuri kuin kärryn liikemäärän muutos. Vastaus käyttää omaa mittausriviä.",
+        "Vastaus kertoo, että puskurin kovuus ei muuttanut impulssia, koska liikemäärän muutos oli sama.",
+        "Vastaus kertoo, että pehmeä puskuri pidensi törmäysaikaa ja pienensi suurinta voimaa.",
+        "Vastaus kertoo, että kimpoaminen kaksinkertaisti liikemäärän muutoksen ja siksi myös impulssin."
+      ],
+      "model": "Kokeessa 1 kärry pysähtyi joka kerta. Sen liikemäärä muuttui siis arvosta $2{,}0\\,\\text{kg}\\cdot\\text{m/s}$ nollaan. Mallin arvoissa impulssi oli joka puskurilla $-2{,}00\\,\\text{N}\\cdot\\text{s}$, yhtä suuri kuin liikemäärän muutos. Puskurin kovuus ratkaisi vain sen, miten impulssi jakautui. Kova puskuri pysäytti kärryn ajassa $0{,}0393\\,\\text{s}$ ja suurin voima oli $80{,}0\\,\\text{N}$. Pehmeä puskuri pysäytti kärryn ajassa $0{,}157\\,\\text{s}$ ja suurin voima oli $20{,}0\\,\\text{N}$. Neljä kertaa pidempi aika antoi neljäsosan voimasta. Kokeessa 2 kimpoava kärry sai impulssin $-4{,}00\\,\\text{N}\\cdot\\text{s}$, koska sen liikemäärä muuttui arvosta $+2{,}0$ arvoon $-2{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Impulssin ratkaisee siis liikemäärän muutos. Suurimman voiman ratkaisee lisäksi se, kuinka kauan törmäys kestää."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi simulaation lukemiin. Mikä yllätti eniten? Kirjoita omin sanoin, mikä ratkaisee törmäyksen impulssin ja mikä törmäyksen suurimman voiman.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Pallon massa on $0{,}40\\,\\text{kg}$. Pallo osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $5{,}0\\,\\text{m/s}$. Opiskelija laskee: $\\Delta p = m(v - v_0) = 0{,}40\\,\\text{kg} \\cdot (5{,}0 - 5{,}0)\\,\\text{m/s} = 0$. Hän päättelee, että seinä ei anna pallolle impulssia. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Nopeudet ovat vastakkaissuuntaiset, joten $v = -5{,}0\\,\\text{m/s}$ ja $\\Delta p = -4{,}0\\,\\text{kg}\\cdot\\text{m/s}$.",
+          "correct": true,
+          "feedback": "Oikein. Positiivinen suunta on kohti seinää. Silloin $\\Delta p = 0{,}40\\,\\text{kg} \\cdot (-5{,}0 - 5{,}0)\\,\\text{m/s} = -4{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Seinä antaa pallolle impulssin $-4{,}0\\,\\text{N}\\cdot\\text{s}$ poispäin seinästä. Seinä pysäyttää pallon ja kiihdyttää sen takaisin."
+        },
+        {
+          "text": "Laskussa ei ole virhettä: vauhti ei muutu, joten liikemäärä ei muutu.",
+          "feedback": "Liikemäärä on vektori. Siksi myös suunnan muuttuminen on muutos. Ennen törmäystä $p_0 = +2{,}0\\,\\text{kg}\\cdot\\text{m/s}$ ja sen jälkeen $p = -2{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Siis $\\Delta p = -4{,}0\\,\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "Impulssia ei voi laskea, koska kosketusaikaa ei ole annettu.",
+          "feedback": "Impulssiperiaatteen avulla impulssin saa liikemäärän muutoksesta ilman aikaa: $I = \\Delta p$. Aikaa tarvittaisiin vasta keskimääräisen voiman laskemiseen. Virhe on etumerkissä: $v = -5{,}0\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Pesäpallon sieppari ottaa kiinni pallon. Pallon massa on $0{,}16\\,\\text{kg}$ ja se lentää vaakasuoraan nopeudella $25\\,\\text{m/s}$. Sieppari vetää kättään taaksepäin, ja räpylä pysäyttää pallon ajassa $0{,}050\\,\\text{s}$. Kuinka suuri on räpylän palloon kohdistama keskimääräinen vaakasuora voima? Vastaa yksikössä $\\text{N}$.",
+      "answer": 80.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon pallon liikemäärä muuttuu, kun se pysähtyy? Mikä periaate yhdistää liikemäärän muutoksen ja voiman?",
+        "Impulssiperiaate: $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv_0$, kun loppunopeus on nolla.",
+        "Liikemäärän muutos on $0{,}16\\,\\text{kg} \\cdot 25\\,\\text{m/s} = 4{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Jaa se pysähtymisajalla."
+      ],
+      "mistakes": [
+        {
+          "value": 4.0,
+          "feedback": "$4{,}0\\,\\text{kg}\\cdot\\text{m/s}$ on pallon liikemäärän muutos eli impulssi. Se ei ole vielä voima. Voima saadaan, kun impulssi jaetaan pysähtymisajalla: $F_\\text{ka} = \\tfrac{|\\Delta p|}{\\Delta t}$."
+        },
+        {
+          "value": 0.2,
+          "feedback": "Kerroit liikemäärän muutoksen ajalla. Impulssiperiaatteesta saadaan $F_\\text{ka}\\,\\Delta t = |\\Delta p|$. Voima on siis liikemäärän muutos jaettuna ajalla."
+        },
+        {
+          "value": 800.0,
+          "feedback": "Tarkista aika: se on $0{,}050\\,\\text{s}$ eikä $0{,}0050\\,\\text{s}$. Kymmenen kertaa lyhyempi aika antaisi kymmenkertaisen voiman."
+        }
+      ],
+      "solution": "**Annettu:** pallon massa $m = 0{,}16\\,\\text{kg}$, alkunopeus $v_0 = 25\\,\\text{m/s}$, loppunopeus $v = 0$, pysähtymisaika $\\Delta t = 0{,}050\\,\\text{s}$. Tarkastellaan vaakasuuntaista liikettä.\n\n**Kysytty:** räpylän keskimääräinen vaakasuora voima $F_\\text{ka}$ yksikössä $\\text{N}$\n\n**Periaate:** Räpylä pysäyttää pallon. Pallon liikemäärä muuttuu siis arvosta $mv_0$ nollaan. Vaakasuunnassa palloon vaikuttaa vain räpylän voima. Paino on pystysuuntainen, eikä se muuta vaakasuuntaista liikemäärää. Siksi räpylän voiman impulssi on impulssiperiaatteen mukaan yhtä suuri kuin pallon liikemäärän muutos.\n\n**Kaava:** $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv_0$, joten $F_\\text{ka} = \\dfrac{mv_0}{\\Delta t}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Yksikkö on oikea, koska $1\\,\\tfrac{\\text{kg}\\cdot\\text{m/s}}{\\text{s}} = 1\\,\\text{N}$.\n\n**Sijoitus:** $F_\\text{ka} = \\dfrac{0{,}16\\,\\text{kg} \\cdot 25\\,\\text{m/s}}{0{,}050\\,\\text{s}} = \\dfrac{4{,}0\\,\\text{kg}\\cdot\\text{m/s}}{0{,}050\\,\\text{s}} = 80\\,\\text{N}$\n\n**Vastaus:** $80\\,\\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}16\\,\\text{kg}$, nopeudessa $25\\,\\text{m/s}$ ja ajassa $0{,}050\\,\\text{s}$.\n\n**Järkevyys:** Voima vastaa noin $8\\,\\text{kg}$:n kappaleen painoa. Sen tuntee kädessä, mutta se ei satuta. Oletetaan, että sieppari pitäisi kätensä jäykkänä ja pallo pysähtyisi ajassa $0{,}010\\,\\text{s}$. Silloin voima olisi $400\\,\\text{N}$, viisinkertainen. Siksi kättä vedetään taaksepäin: pidempi pysähtymisaika pienentää voimaa."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Valitse ensin positiivinen suunta ja merkitse nopeudet etumerkkeineen. Kirjoita sitten impulssiperiaate. Ratkaise kysytty suure ennen kuin sijoitat lukuja. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kaksi luistelijaa liukuu toisiaan kohti. Kummankin massa on $60\\,\\text{kg}$ ja vauhti $2{,}0\\,\\text{m/s}$. Mitä voit sanoa heidän liikemääristään?",
+      "choices": [
+        {
+          "text": "Liikemäärät ovat yhtä suuret mutta vastakkaissuuntaiset.",
+          "correct": true,
+          "feedback": "Oikein. Kummankin liikemäärän suuruus on $60\\,\\text{kg} \\cdot 2{,}0\\,\\text{m/s} = 120\\,\\text{kg}\\cdot\\text{m/s}$. Liikemäärällä on kuitenkin nopeuden suunta. Kun positiivinen suunta on valittu, toisen liikemäärä on $+120$ ja toisen $-120\\,\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "Liikemäärät ovat samat, koska massat ja vauhdit ovat samat.",
+          "feedback": "Suuruudet ovat samat, $120\\,\\text{kg}\\cdot\\text{m/s}$. Liikemäärä on kuitenkin vektori, jolla on nopeuden suunta. Luistelijat liikkuvat vastakkaisiin suuntiin, joten liikemäärät ovat $+120$ ja $-120\\,\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "Kummankin liikemäärä on nolla, koska ne kumoavat toisensa.",
+          "feedback": "Kummallakin luistelijalla on oma liikemääränsä, $120\\,\\text{kg}\\cdot\\text{m/s}$ omaan suuntaansa. Vasta liikemäärien summa on nolla, koska liikemäärät ovat vastakkaissuuntaiset."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaajasta",
+      "figure": "fy4-9/tarkistus-kolmio",
+      "prompt": "Jalkapallon massa on $0{,}45\\,\\text{kg}$, ja pallo on levossa. Kuvaajassa on voima, jolla jalka potkaisee palloa vaakasuoraan. Potkun aikana muut vaakasuuntaiset voimat jätetään huomiotta. Kuinka suuri on pallon nopeus, kun se irtoaa jalasta? Vastaa yksikössä $\\text{m/s}$.",
+      "answer": 12.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Impulssi on kuvaajan ja aika-akselin väliin jäävä pinta-ala. Minkä muotoinen alue on?",
+        "Kolmion pinta-ala on $\\tfrac{1}{2} \\cdot \\text{kanta} \\cdot \\text{korkeus}$. Muuta millisekunnit sekunneiksi.",
+        "Impulssi on $\\tfrac{1}{2} \\cdot 900\\,\\text{N} \\cdot 0{,}012\\,\\text{s} = 5{,}4\\,\\text{N}\\cdot\\text{s}$. Se on yhtä suuri kuin pallon liikemäärä $mv$."
+      ],
+      "mistakes": [
+        {
+          "value": 24.0,
+          "feedback": "Laskit suorakulmion pinta-alan $900\\,\\text{N} \\cdot 0{,}012\\,\\text{s}$. Alue on kolmio, joten sen pinta-ala on puolet tästä."
+        },
+        {
+          "value": 5.4,
+          "feedback": "$5{,}4\\,\\text{N}\\cdot\\text{s}$ on impulssi eli pallon liikemäärä. Nopeus saadaan jakamalla liikemäärä massalla: $v = \\tfrac{p}{m}$."
+        },
+        {
+          "value": 12000.0,
+          "feedback": "Muuta aika sekunneiksi ennen laskemista: $12\\,\\text{ms} = 0{,}012\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Annettu:** pallon massa $m = 0{,}45\\,\\text{kg}$, alkunopeus $v_0 = 0$. Kuvaajasta luetaan voiman huippuarvo ja potkun kesto.\n\n**Kysytty:** pallon nopeus $v$ yksikössä $\\text{m/s}$\n\n**Periaate:** Muut vaakasuuntaiset voimat jätetään huomiotta. Silloin jalan voima on potkun aikana palloon vaikuttava vaakasuuntainen kokonaisvoima. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos. Voima muuttuu, joten impulssi luetaan kuvaajan pinta-alasta.\n\n**Kuvaajan lukeminen:** Voima kasvaa nollasta huippuarvoon $F_\\text{max} = 900\\,\\text{N}$ hetkellä $6\\,\\text{ms}$. Sitten se pienenee nollaan hetkellä $12\\,\\text{ms}$. Kuvaajan ja aika-akselin väliin jää kolmio. Sen kanta on $\\Delta t = 12\\,\\text{ms}$ ja korkeus $900\\,\\text{N}$. Impulssi on kolmion pinta-ala $\\tfrac{1}{2} F_\\text{max}\\,\\Delta t$.\n\n**Kaava:** $mv - 0 = \\tfrac{1}{2} F_\\text{max}\\,\\Delta t$, joten $v = \\dfrac{F_\\text{max}\\,\\Delta t}{2m}$\n\n**Muunnokset:** $\\Delta t = 12\\,\\text{ms} = 0{,}012\\,\\text{s}$.\n\n**Sijoitus:** $v = \\dfrac{900\\,\\text{N} \\cdot 0{,}012\\,\\text{s}}{2 \\cdot 0{,}45\\,\\text{kg}} = \\dfrac{10{,}8\\,\\text{N}\\cdot\\text{s}}{0{,}90\\,\\text{kg}} = 12\\,\\text{m/s}$\n\n**Vastaus:** $12\\,\\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}45\\,\\text{kg}$ ja ajassa $12\\,\\text{ms}$.\n\n**Järkevyys:** Nopeus on noin $43\\,\\text{km/h}$. Se on tavallinen nopeus reippaassa potkussa. Potkun keskimääräinen voima on $5{,}4\\,\\text{N}\\cdot\\text{s} : 0{,}012\\,\\text{s} = 450\\,\\text{N}$. Se on puolet huippuarvosta, kuten tasaisesti kasvavalle ja pienenevälle voimalle kuuluu."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Selitä liikemäärän ja impulssin avulla, miksi korkeushyppääjä ei loukkaannu pudotessaan paksulle patjalle. Sama pudotus kovalle maalle voisi olla vaarallinen.",
+      "criteria": [
+        "Vastaus kertoo, että hyppääjä osuu kumpaankin alustaan samalla nopeudella ja pysähtyy. Siksi liikemäärän muutos on sama.",
+        "Vastaus kertoo, että impulssiperiaatteen mukaan alustan on silloin annettava sama impulssi.",
+        "Vastaus kertoo, että patja painuu kasaan ja pidentää pysähtymisaikaa.",
+        "Vastaus päättelee impulssista $I = F\\,\\Delta t$, että pidempi aika tarkoittaa pienempää keskimääräistä voimaa. Vastaus ei väitä, että patja pienentää impulssia."
+      ],
+      "model": "Hyppääjä putoaa samalta korkeudelta. Siksi hän osuu patjaan ja kovaan maahan samalla nopeudella. Kummassakin hän pysähtyy, joten hänen liikemääränsä muuttuu yhtä paljon, arvosta $mv$ nollaan. Impulssiperiaatteen mukaan alustan on silloin annettava hänelle sama impulssi. Impulssi on voima kertaa aika. Kova maa pysäyttää kehon muutaman senttimetrin matkalla hyvin lyhyessä ajassa, joten voiman on oltava suuri. Paksu patja painuu kasaan kymmenien senttimetrien matkalta. Pysähtyminen kestää silloin monta kertaa kauemmin. Sama impulssi syntyy monta kertaa pienemmällä keskimääräisellä voimalla, eikä pieni voima vahingoita kehoa. Patja ei siis pienennä impulssia eikä liikemäärän muutosta. Se jakaa saman impulssin pidemmälle ajalle."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

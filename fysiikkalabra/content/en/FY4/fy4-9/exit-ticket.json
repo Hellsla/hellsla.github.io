@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Show that the unit of impulse, $\\text{N}\\cdot\\text{s}$, is the same as the unit of momentum, $\\text{kg}\\cdot\\text{m/s}$.",
+    "a": "By Newton's second law $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$, so $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$."
+  },
+  {
+    "q": "A train brakes steadily and stops. What is the direction of the impulse of the net braking force on the train, and what does its magnitude depend on?",
+    "a": "The impulse points against the motion, in the same direction as the change in momentum. Its magnitude is the train's original momentum $mv$, so it depends on the mass and the initial velocity of the train and not on how long the braking takes."
+  }
+]
