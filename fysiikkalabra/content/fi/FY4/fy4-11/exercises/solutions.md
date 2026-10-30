@@ -30,11 +30,11 @@
 
 ## fy4-11-L1-04
 **Annettu:** $m = 70{,}0\,\text{kg}$, nopeus muuttuu arvosta $15{,}0\,\text{m/s}$ nollaan, $\Delta t = 0{,}120\,\text{s}$
-**Kysytty:** keskimääräinen voima $F_\text{k}$ yksikössä $\text{N}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
 **Periaate:** Impulssiperiaatteen mukaan matkustajaan vaikuttavan voiman impulssi on yhtä suuri kuin hänen liikemääränsä muutos. Kun voima vaihtelee törmäyksen aikana, periaate antaa keskimääräisen voiman.
-**Kaava:** $F_\text{k}\,\Delta t = m\,\Delta v$, joten $F_\text{k} = \dfrac{m\,\Delta v}{\Delta t}$
+**Kaava:** $F_\text{ka}\,\Delta t = m\,\Delta v$, joten $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $F_\text{k} = \dfrac{70{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s}}{0{,}120\,\text{s}} = \dfrac{1050\,\text{kg}\cdot\text{m/s}}{0{,}120\,\text{s}} = 8750\,\text{N}$
+**Sijoitus:** $F_\text{ka} = \dfrac{70{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s}}{0{,}120\,\text{s}} = \dfrac{1050\,\text{kg}\cdot\text{m/s}}{0{,}120\,\text{s}} = 8750\,\text{N}$
 **Vastaus:** $8750\,\text{N}$ eli $8{,}75\,\text{kN}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Matkustajan paino on noin $700\,\text{N}$, joten voima on noin $13$-kertainen painoon verrattuna. Vyössä tämä on tyypillinen suuruusluokka, eikä sitä voisi ottaa vastaan käsillä. Yksiköt: $\tfrac{\text{kg}\cdot\text{m/s}}{\text{s}} = \text{kg}\cdot\text{m/s}^2 = \text{N}$.
 
@@ -70,11 +70,11 @@
 
 ## fy4-11-L2-03
 **Annettu:** $m = 75{,}0\,\text{kg}$, nopeus muuttuu arvosta $50{,}0\,\text{km/h}$ nollaan, $\Delta t = 0{,}100\,\text{s}$
-**Kysytty:** keskimääräinen voima $F_\text{k}$ yksikössä $\text{N}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
 **Periaate:** Impulssiperiaatteen mukaan kuljettajaan vaikuttavien voimien impulssi on yhtä suuri kuin hänen liikemääränsä muutos. Vyö ja turvatyyny pidentävät aikaa, jossa muutos tapahtuu, ja periaate antaa keskimääräisen voiman.
-**Kaava:** $F_\text{k}\,\Delta t = m\,\Delta v$, joten $F_\text{k} = \dfrac{m\,\Delta v}{\Delta t}$
+**Kaava:** $F_\text{ka}\,\Delta t = m\,\Delta v$, joten $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$
 **Muunnokset:** $50{,}0\,\text{km/h} = \dfrac{50{,}0 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 13{,}89\,\text{m/s}$
-**Sijoitus:** $F_\text{k} = \dfrac{75{,}0\,\text{kg} \cdot 13{,}89\,\text{m/s}}{0{,}100\,\text{s}} = \dfrac{1041{,}7\,\text{kg}\cdot\text{m/s}}{0{,}100\,\text{s}} = 10\,417\,\text{N}$
+**Sijoitus:** $F_\text{ka} = \dfrac{75{,}0\,\text{kg} \cdot 13{,}89\,\text{m/s}}{0{,}100\,\text{s}} = \dfrac{1041{,}7\,\text{kg}\cdot\text{m/s}}{0{,}100\,\text{s}} = 10\,417\,\text{N}$
 **Vastaus:** $10\,400\,\text{N}$ eli $10{,}4\,\text{kN}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Kuljettajan paino on noin $740\,\text{N}$, joten voima on noin $14$-kertainen painoon verrattuna. Ilman vyötä aika olisi noin kymmenesosa ja voima kymmenkertainen, noin $100\,\text{kN}$.
 
@@ -100,11 +100,11 @@
 
 ## fy4-11-L3-02
 **Annettu:** $m = 70{,}0\,\text{kg}$, $v_0 = 50{,}0\,\text{km/h}$, pysähtymismatka $s = 0{,}600\,\text{m}$, hidastuvuus vakio
-**Kysytty:** keskimääräinen voima $F_\text{k}$ yksikössä $\text{N}$
+**Kysytty:** keskimääräinen voima $F_\text{ka}$ yksikössä $\text{N}$
 **Periaate:** Voima saadaan impulssiperiaatteesta, kun tunnetaan pysähtymisaika. Aikaa ei anneta, mutta vakiohidastuvuudella keskinopeus on puolet alkunopeudesta, joten matka on $s = \tfrac{1}{2}\,v_0\,\Delta t$ ($(t,v)$-kuvaajan kolmion ala). Siitä ratkaistaan aika.
-**Kaava:** $s = \tfrac{1}{2}\,v_0\,\Delta t$, joten $\Delta t = \dfrac{2s}{v_0}$, ja $F_\text{k}\,\Delta t = m\,v_0$, joten $F_\text{k} = \dfrac{m\,v_0}{\Delta t}$
+**Kaava:** $s = \tfrac{1}{2}\,v_0\,\Delta t$, joten $\Delta t = \dfrac{2s}{v_0}$, ja $F_\text{ka}\,\Delta t = m\,v_0$, joten $F_\text{ka} = \dfrac{m\,v_0}{\Delta t}$
 **Muunnokset:** $50{,}0\,\text{km/h} = \dfrac{50{,}0 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 13{,}89\,\text{m/s}$
-**Sijoitus:** $\Delta t = \dfrac{2 \cdot 0{,}600\,\text{m}}{13{,}89\,\text{m/s}} = 0{,}08640\,\text{s}$ ja $F_\text{k} = \dfrac{70{,}0\,\text{kg} \cdot 13{,}89\,\text{m/s}}{0{,}08640\,\text{s}} = 11\,253\,\text{N}$
+**Sijoitus:** $\Delta t = \dfrac{2 \cdot 0{,}600\,\text{m}}{13{,}89\,\text{m/s}} = 0{,}08640\,\text{s}$ ja $F_\text{ka} = \dfrac{70{,}0\,\text{kg} \cdot 13{,}89\,\text{m/s}}{0{,}08640\,\text{s}} = 11\,253\,\text{N}$
 **Vastaus:** $11\,300\,\text{N}$ eli $11{,}3\,\text{kN}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Pysähtymisaika on noin $0{,}09\,\text{s}$, sama suuruusluokka kuin auton rypistymisaika, ja voima on noin $16$ kertaa matkustajan paino $687\,\text{N}$. Jos matkustaja pysähtyisi ilman vyötä muutaman senttimetrin matkalla, voima olisi kymmeniä kertoja suurempi.
 

@@ -199,7 +199,7 @@ def tv():
 
 
 def tF():
-    """Kaava: mean force against time in the same crash (example values): the areas F_k Δt are equal, because the change
+    """Kaava: mean force against time in the same crash (example values): the areas F_ka Δt are equal, because the change
     of momentum m Δv is the same; the belt makes Δt ten times longer and the mean force a tenth."""
     m, v = 75.0, 50 / 3.6
     Fb, Fn = m * v / 0.10 / 1000, m * v / 0.010 / 1000                  # kN: 10,4 and 104
@@ -208,13 +208,13 @@ def tF():
             "Matala sininen suorakulmio: vyössä voima on noin 10 kilonewtonia 0,10 sekunnin ajan. Kapea ja korkea ruskea "
             "suorakulmio: ilman vyötä voima on noin 100 kilonewtonia 0,010 sekunnin ajan. Suorakulmioiden pinta-alat ovat yhtä suuret.")
     ax = Axes(f, (80, 310), (470, 70), x=(0, 0.12), y=(0, 120), xticks=[0.02, 0.04, 0.06, 0.08, 0.10, 0.12],
-              yticks=[20, 40, 60, 80, 100, 120], xlabel=r"t\ (\text{s})", ylabel=r"F_\text{k}\ (\text{kN})")
+              yticks=[20, 40, 60, 80, 100, 120], xlabel=r"t\ (\text{s})", ylabel=r"F_\text{ka}\ (\text{kN})")
     ax.area([(0, 0), (0, Fb), (0.10, Fb), (0.10, 0)], COLD, 0.45)
     ax.line([(0, Fb), (0.10, Fb), (0.10, 0)], COLD, 3)
     ax.area([(0.09, 0), (0.09, Fn), (0.10, Fn), (0.10, 0)], COPPER, 0.6)
     ax.line([(0.09, 0), (0.09, Fn), (0.10, Fn), (0.10, 0)], COPPER, 3)
-    f.tex(ax.X(0.005), ax.Y(Fb) - 18, r"\text{vyössä: } F_\text{k} \approx 10\,\text{kN}", "start", COLD, bg=True)
-    f.tex(ax.X(0.088), ax.Y(96), r"\text{ilman vyötä: } F_\text{k} \approx 100\,\text{kN}", "end", COPPER, bg=True)
+    f.tex(ax.X(0.005), ax.Y(Fb) - 18, r"\text{vyössä: } F_\text{ka} \approx 10\,\text{kN}", "start", COLD, bg=True)
+    f.tex(ax.X(0.088), ax.Y(96), r"\text{ilman vyötä: } F_\text{ka} \approx 100\,\text{kN}", "end", COPPER, bg=True)
     return f.svg()
 
 
@@ -225,5 +225,5 @@ REUSE = {
     "jarrutus": "reveals: the force diagram of a car braking on a level road (friction backwards, a backwards)",
     "tormays": "reveals: the occupant's (t, v) in a 50 km/h crash with and without a belt (same Δv, Δt 0,10 s and 0,010 s)",
     "tv": "reveals: the area derivation of s_r = v0 t_r and s_j = ½ v0 t_j",
-    "tF": "reveals: the mean forces 10 kN and 100 kN with equal areas F_k Δt (example values)",
+    "tF": "reveals: the mean forces 10 kN and 100 kN with equal areas F_ka Δt (example values)",
 }

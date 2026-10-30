@@ -343,11 +343,11 @@ a = \mu g
 missä $\mu$ on kitkakerroin (ei yksikköä) ja $g = 9{,}81\,\text{m/s}^2$. Kuivan asfaltin $9{,}0\,\text{m/s}^2$ vastaa kitkakerrointa $0{,}92$. Tässä mallissa jarrutusmatka ei riipu auton massasta. Raskaan kuorma-auton jarrutusmatka on silti usein pidempi, koska sen jarrut ja renkaat eivät aina pysty käyttämään koko pitoa.
 
 ### Törmäyksen keskimääräinen voima
-Kun matkustajan nopeus muuttuu törmäyksessä määrän $\Delta v$ ajassa $\Delta t$, impulssiperiaatteesta $\overline{F}_\text{k}\,\Delta t = \Delta\overline{p}$ saadaan häneen vaikuttavan keskimääräisen voiman suuruus:
+Kun matkustajan nopeus muuttuu törmäyksessä määrän $\Delta v$ ajassa $\Delta t$, impulssiperiaatteesta $\overline{F}_\text{ka}\,\Delta t = \Delta\overline{p}$ saadaan häneen vaikuttavan keskimääräisen voiman suuruus:
 ```latex
-F_\text{k} = \frac{m\,\Delta v}{\Delta t}
+F_\text{ka} = \frac{m\,\Delta v}{\Delta t}
 ```
-missä $F_\text{k}$ on keskimääräinen voima ($\text{N}$), $m$ matkustajan massa ($\text{kg}$), $\Delta v$ nopeuden muutoksen suuruus ($\text{m/s}$) ja $\Delta t$ törmäysaika ($\text{s}$). Kun $75\,\text{kg}$:n matkustaja pysähtyy $50\,\text{km/h}$:n nopeudesta, liikemäärän muutos on noin $1040\,\text{kg}\cdot\text{m/s}$. Vyössä se jakautuu noin $0{,}10\,\text{s}$:iin, ja keskimääräinen voima on noin $10\,\text{kN}$. Ilman vyötä aika on noin $0{,}010\,\text{s}$ ja voima kymmenkertainen.
+missä $F_\text{ka}$ on keskimääräinen voima ($\text{N}$), $m$ matkustajan massa ($\text{kg}$), $\Delta v$ nopeuden muutoksen suuruus ($\text{m/s}$) ja $\Delta t$ törmäysaika ($\text{s}$). Kun $75\,\text{kg}$:n matkustaja pysähtyy $50\,\text{km/h}$:n nopeudesta, liikemäärän muutos on noin $1040\,\text{kg}\cdot\text{m/s}$. Vyössä se jakautuu noin $0{,}10\,\text{s}$:iin, ja keskimääräinen voima on noin $10\,\text{kN}$. Ilman vyötä aika on noin $0{,}010\,\text{s}$ ja voima kymmenkertainen.
 
 <svg data-fig="tF" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa, pyöristetyt esimerkkiarvot 75 kilogramman matkustajalle 50 kilometrin tuntinopeudesta. Vaaka-akselilla aika 0–0,12 sekuntia, pystyakselilla keskimääräinen voima 0–120 kilonewtonia. Matala sininen suorakulmio: vyössä voima on noin 10 kilonewtonia 0,10 sekunnin ajan. Kapea ja korkea ruskea suorakulmio: ilman vyötä voima on noin 100 kilonewtonia 0,010 sekunnin ajan. Suorakulmioiden pinta-alat ovat yhtä suuret." style="max-width:100%;font-size:24px">
   <line x1="145" y1="310" x2="145" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -392,13 +392,13 @@ missä $F_\text{k}$ on keskimääräinen voima ($\text{N}$), $m$ matkustajan mas
   <foreignObject x="23" y="55.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$120$</div></foreignObject>
   <foreignObject x="50" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="502" y="295.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
-  <foreignObject x="70" y="13.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F_\text{k}\ (\text{kN})$</div></foreignObject>
+  <foreignObject x="70" y="13.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$F_\text{ka}\ (\text{kN})$</div></foreignObject>
   <polygon points="80,310 80,289 405,289 405,310" fill="#1971c2" fill-opacity="0.45"/>
   <polyline points="80,289 405,289 405,310" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polygon points="372.5,310 372.5,101.5 405,101.5 405,310" fill="#b8622d" fill-opacity="0.6"/>
   <polyline points="372.5,310 372.5,101.5 405,101.5 405,310" fill="none" stroke="#b8622d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="96" y="256.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{vyössä: } F_\text{k} \approx 10\,\text{kN}$</span></div></foreignObject>
-  <foreignObject x="108" y="103.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#b8622d"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ilman vyötä: } F_\text{k} \approx 100\,\text{kN}$</span></div></foreignObject>
+  <foreignObject x="96" y="256.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{vyössä: } F_\text{ka} \approx 10\,\text{kN}$</span></div></foreignObject>
+  <foreignObject x="96" y="103.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#b8622d"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ilman vyötä: } F_\text{ka} \approx 100\,\text{kN}$</span></div></foreignObject>
 </svg>
 
 Kuvaajan suorakulmioiden pinta-alat ovat yhtä suuret, koska kumpikin on sama liikemäärän muutos $m\,\Delta v$. Voima vaihtelee todellisuudessa törmäyksen aikana, ja suurin voima on keskimääräistä suurempi.
@@ -458,5 +458,5 @@ Moni ajattelee, että kaksinkertainen nopeus tarkoittaa kaksinkertaista pysähty
 - Pysähtymismatka on reaktiomatka $s_\text{r} = v_0\,t_\text{r}$ plus jarrutusmatka $s_\text{j} = \tfrac{v_0^2}{2a}$, kun hidastuvuus on vakio.
 - Reaktiomatka on verrannollinen nopeuteen, jarrutusmatka nopeuden neliöön: kaksinkertainen nopeus antaa nelinkertaisen jarrutusmatkan.
 - Jarrutuksessa autoa hidastaa renkaiden ja tien kitka. Vaakasuoralla tiellä $a = \mu g$, joten liukas tie pidentää jarrutusmatkaa moninkertaiseksi.
-- Törmäyksessä matkustajan liikemäärän muutos on sama vyön kanssa ja ilman. Turvavyö ja turvatyyny pidentävät törmäysaikaa, joten keskimääräinen voima $F_\text{k} = \tfrac{m\,\Delta v}{\Delta t}$ pienenee.
+- Törmäyksessä matkustajan liikemäärän muutos on sama vyön kanssa ja ilman. Turvavyö ja turvatyyny pidentävät törmäysaikaa, joten keskimääräinen voima $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$ pienenee.
 - Turvatyyny jakaa voiman suurelle alalle ja toimii yhdessä turvavyön kanssa, ei sen sijasta.

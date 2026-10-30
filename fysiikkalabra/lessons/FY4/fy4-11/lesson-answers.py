@@ -2,7 +2,7 @@
 exercises' answers are in answers.py. Model: reaction time t_r at constant speed, then constant deceleration a until the
 car stops (level road, air resistance neglected); a = 9,0 m/s² on a dry road and t_r = 1,0 s are the assumptions of
 Liikenneturva's collision-speed calculator (extrat.liikenneturva.fi/tormaysnopeus). Collision: impulse principle,
-mean force F_k = m Δv / Δt. g = 9,81 m/s². Prints {id: value} as JSON."""
+mean force F_ka = m Δv / Δt. g = 9,81 m/s². Prints {id: value} as JSON."""
 import json, math
 
 g = 9.81

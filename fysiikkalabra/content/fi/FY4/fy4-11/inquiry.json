@@ -382,11 +382,11 @@
           {
             "text": "Noin kymmenkertainen.",
             "correct": true,
-            "feedback": "Oikein. Liikemäärän muutos $m\\,\\Delta v$ on sama, noin $1040\\,\\text{kg}\\cdot\\text{m/s}$. Impulssiperiaatteen mukaan $F_\\text{k}\\,\\Delta t$ on siis sama, ja kymmenesosa ajasta tarkoittaa kymmenkertaista voimaa: noin $10\\,\\text{kN}$ ja $100\\,\\text{kN}$."
+            "feedback": "Oikein. Liikemäärän muutos $m\\,\\Delta v$ on sama, noin $1040\\,\\text{kg}\\cdot\\text{m/s}$. Impulssiperiaatteen mukaan $F_\\text{ka}\\,\\Delta t$ on siis sama, ja kymmenesosa ajasta tarkoittaa kymmenkertaista voimaa: noin $10\\,\\text{kN}$ ja $100\\,\\text{kN}$."
           },
           {
             "text": "Yhtä suuri, koska nopeuden muutos on sama.",
-            "feedback": "Sama nopeuden muutos tarkoittaa samaa liikemäärän muutosta eli samaa impulssia $F_\\text{k}\\,\\Delta t$. Kun aika on kymmenesosa, voiman on oltava kymmenkertainen."
+            "feedback": "Sama nopeuden muutos tarkoittaa samaa liikemäärän muutosta eli samaa impulssia $F_\\text{ka}\\,\\Delta t$. Kun aika on kymmenesosa, voiman on oltava kymmenkertainen."
           },
           {
             "text": "Noin kymmenesosa, koska törmäys kestää lyhyemmän ajan.",
@@ -604,11 +604,11 @@
       "prompt": "Selitä impulssiperiaatteen avulla, miksi turvavyö ja turvatyyny pienentävät nokkakolarissa matkustajaan kohdistuvaa voimaa, vaikka matkustaja pysähtyy samasta nopeudesta kuin ilman niitä. Kerro myös, miksi turvatyyny ei korvaa turvavyötä.",
       "criteria": [
         "Vastaus kertoo, että matkustajan liikemäärän muutos $m\\,\\Delta v$ on sama vyön kanssa ja ilman, koska nopeus muuttuu samasta arvosta nollaan.",
-        "Vastaus käyttää impulssiperiaatetta $F_\\text{k}\\,\\Delta t = m\\,\\Delta v$: pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa.",
+        "Vastaus käyttää impulssiperiaatetta $F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$: pidempi törmäysaika tarkoittaa pienempää keskimääräistä voimaa.",
         "Vastaus kertoo, miten vyö pidentää aikaa: matkustaja hidastuu auton rypistyvän keulan mukana eikä osu sisustaan täydellä nopeudella.",
         "Vastaus mainitsee, että turvatyyny jakaa voiman suurelle alalle ja toimii oikein vain, kun vyö pitää matkustajan paikallaan."
       ],
-      "model": "Matkustaja pysähtyy samasta nopeudesta, joten hänen liikemääränsä muuttuu arvosta $mv$ nollaan kummassakin tapauksessa. Impulssiperiaatteen mukaan $F_\\text{k}\\,\\Delta t = m\\,\\Delta v$, joten sama liikemäärän muutos syntyy sitä pienemmällä keskimääräisellä voimalla, mitä pidempi törmäysaika on. Vyö kiinnittää matkustajan autoon, ja hän hidastuu auton rypistyvän keulan mukana noin sekunnin kymmenesosassa. Ilman vyötä hän jatkaa liikettään ja pysähtyy kojelautaan tai tuulilasiin noin sadasosasekunnissa, jolloin voima on noin kymmenkertainen. Turvatyyny pidentää pään ja ylävartalon pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon pienenee. Se on suunniteltu vyöhön kiinnitetylle matkustajalle: ilman vyötä keho liukuu eteenpäin, voi osua täyttyvään tyynyyn liian aikaisin tai sen ohi, eikä mikään pidä matkustajaa autossa."
+      "model": "Matkustaja pysähtyy samasta nopeudesta, joten hänen liikemääränsä muuttuu arvosta $mv$ nollaan kummassakin tapauksessa. Impulssiperiaatteen mukaan $F_\\text{ka}\\,\\Delta t = m\\,\\Delta v$, joten sama liikemäärän muutos syntyy sitä pienemmällä keskimääräisellä voimalla, mitä pidempi törmäysaika on. Vyö kiinnittää matkustajan autoon, ja hän hidastuu auton rypistyvän keulan mukana noin sekunnin kymmenesosassa. Ilman vyötä hän jatkaa liikettään ja pysähtyy kojelautaan tai tuulilasiin noin sadasosasekunnissa, jolloin voima on noin kymmenkertainen. Turvatyyny pidentää pään ja ylävartalon pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon pienenee. Se on suunniteltu vyöhön kiinnitetylle matkustajalle: ilman vyötä keho liukuu eteenpäin, voi osua täyttyvään tyynyyn liian aikaisin tai sen ohi, eikä mikään pidä matkustajaa autossa."
     },
     {
       "id": "lahtolippu",
