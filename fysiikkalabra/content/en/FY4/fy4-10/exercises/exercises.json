@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy4-10-L1-01",
+      "level": 1,
+      "text": "On an air track a $0.40\\,\\text{kg}$ cart moves to the right at $0.50\\,\\text{m/s}$ and a $0.25\\,\\text{kg}$ cart to the left at $0.60\\,\\text{m/s}$. What is the total momentum of the carts when right is the positive direction? Give the momentum with its sign.",
+      "answer": 0.05,
+      "unit": "kg·m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-02",
+      "level": 1,
+      "text": "On an air track a $0.50\\,\\text{kg}$ cart moves at $0.80\\,\\text{m/s}$ and collides with a $0.30\\,\\text{kg}$ cart at rest. The carts stick together. Friction is neglected. At what velocity do the carts move on together?",
+      "answer": 0.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-03",
+      "level": 1,
+      "text": "Two skaters stand facing each other at rest on ice and push each other. The masses of the skaters are $60\\,\\text{kg}$ and $45\\,\\text{kg}$. After the push the lighter skater glides at $1.2\\,\\text{m/s}$. The friction of the ice is neglected for the duration of the push. At what velocity does the heavier skater glide?",
+      "answer": 0.9,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-04",
+      "level": 1,
+      "text": "On an air hockey table puck A, of mass $0.16\\,\\text{kg}$, slides at $4.0\\,\\text{m/s}$ and hits puck B, of mass $0.20\\,\\text{kg}$, at rest head-on. After the collision puck A slides back in the direction it came from at $0.44\\,\\text{m/s}$. Friction is neglected. What is the velocity of puck B after the collision?",
+      "answer": 3.552,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L1-05",
+      "level": 1,
+      "text": "Two similar $0.30\\,\\text{kg}$ carts move towards each other on an air track: one to the right at $0.60\\,\\text{m/s}$ and the other to the left at $0.20\\,\\text{m/s}$. The carts collide and stick together. Friction is neglected. At what velocity do the carts move on together?",
+      "answer": 0.2,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-10-L2-01",
+      "level": 2,
+      "text": "A $0.50\\,\\text{g}$ bullet is fired from an air rifle at $180\\,\\text{m/s}$. The mass of the rifle is $3.2\\,\\text{kg}$, and before the shot it is at rest, lightly supported by the shooter. The support of the shooter is neglected for the short time of the shot. At what velocity does the rifle start to move backwards?",
+      "answer": 0.028125,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-02",
+      "level": 2,
+      "text": "An ice hockey player of mass $85\\,\\text{kg}$ glides at $6.0\\,\\text{m/s}$ and checks a $75\\,\\text{kg}$ player who is standing still. After the collision the players glide on together. The friction of the ice is neglected for the duration of the collision. How much of the players' kinetic energy changes into other forms of energy in the collision?",
+      "answer": 717.1875,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-03",
+      "level": 2,
+      "text": "On an air track a $0.20\\,\\text{kg}$ cart moves at $0.60\\,\\text{m/s}$ and collides with a $0.40\\,\\text{kg}$ cart at rest. After the collision the lighter cart moves back in the direction it came from at $0.10\\,\\text{m/s}$. Friction is neglected. What percentage of the original kinetic energy of the carts remains after the collision?",
+      "answer": 70.833333,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L2-04",
+      "level": 2,
+      "text": "In a rail yard a $30\\,000\\,\\text{kg}$ freight car moves at $1.8\\,\\text{m/s}$ and collides with a car at rest. The cars couple together and move on together at $1.2\\,\\text{m/s}$. Rolling resistance is neglected for the duration of the coupling. What is the mass of the car that was at rest?",
+      "answer": 15000.0,
+      "unit": "kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-10-L3-01",
+      "level": 3,
+      "text": "The velocity of a bullet is measured with a ballistic pendulum: a $2.0\\,\\text{kg}$ block of wood hangs at rest from a long string, and a $10\\,\\text{g}$ bullet is fired horizontally into the block at $400\\,\\text{m/s}$ and stays in it. The bullet stops in the block so quickly that the block does not have time to move during it. After that the block and the bullet swing up together. Air resistance is neglected. How high does the block rise from its lowest point? Answer in centimetres.",
+      "answer": 20.185005,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-02",
+      "level": 3,
+      "text": "A firework rocket of mass $0.90\\,\\text{kg}$ rises straight up at $12\\,\\text{m/s}$ when it explodes into two pieces. The $0.30\\,\\text{kg}$ piece continues straight up at $40\\,\\text{m/s}$, and the other piece moves vertically. The impulse of the weight and of air resistance is neglected for the short time of the explosion. What is the velocity of the other piece immediately after the explosion? Give the velocity with its sign when upwards is the positive direction.",
+      "answer": -2.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-10-L3-03",
+      "level": 3,
+      "text": "An astronaut is on a spacewalk, at rest relative to the space station, $12.0\\,\\text{m}$ from the station, when the safety tether comes loose. The mass of the astronaut with the spacesuit is $120\\,\\text{kg}$. The astronaut throws a $3.0\\,\\text{kg}$ tool away from the station at $4.0\\,\\text{m/s}$ relative to the station. How long does it take for the astronaut to drift back to the station?",
+      "answer": 120.0,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

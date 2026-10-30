@@ -1,0 +1,23 @@
+{
+  "id": "fy4-10",
+  "course": "FY4",
+  "title": "Conservation of momentum and one-dimensional collisions",
+  "goals": [
+    "LOPS FY4: conservation of momentum and one-dimensional collisions",
+    "LOPS FY4: understands the significance of conservation laws in physics",
+    "Clarification: two-dimensional collisions are not part of the central contents"
+  ],
+  "prerequisites": [
+    "fy4-9",
+    "fy4-8"
+  ],
+  "glossary": [
+    "liikemäärän säilyminen",
+    "kimmoisa törmäys",
+    "kimmoton törmäys",
+    "räjähdys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

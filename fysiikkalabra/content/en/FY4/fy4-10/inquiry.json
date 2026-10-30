@@ -1,0 +1,531 @@
+{
+  "version": 1,
+  "contribution": "The law of conservation of momentum is derived from Newton's third law and impulse, and discovered in a simulation of an air track in which the forces of the bumpers are calculated from the compression: the total momentum is the same before and after in every collision and explosion, but kinetic energy is conserved only in an elastic collision. One-dimensional collisions are solved with signed velocities, and the condition of the conservation law (the impulse of the external forces is negligibly small) is stated in every task.",
+  "learn": [
+    "explain, using Newton's third law, why the total momentum is conserved in a collision and in an explosion.",
+    "calculate velocities in one-dimensional collisions and explosions with the law of conservation of momentum.",
+    "distinguish an elastic collision from an inelastic one by means of kinetic energy."
+  ],
+  "prior": [
+    "The momentum of an object is $\\overline{p} = m\\overline{v}$, and the impulse of a constant net force changes it: $\\Delta\\overline{p} = \\Sigma\\overline{F}\\,\\Delta t$ (chapter *Momentum and impulse*)",
+    "The kinetic energy of an object is $E_\\text{k} = \\tfrac12 mv^2$, and forces such as friction change mechanical energy into internal energy (chapter *Conservation of mechanical energy and the work–energy principle*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a billiard table a red ball is at rest. A player hits the white cue ball straight towards it. The balls click, and in an instant the situation has changed: the cue ball has stopped almost where the red ball was, and the red ball speeds ahead at almost the same velocity as the cue ball had a moment ago. If the red ball were a heavy bowling ball, the cue ball would bounce back.",
+      "question": "What determines how the motion is shared between colliding objects, and why does the cue ball stop exactly when it hits a similar ball?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: impulse",
+      "optional": true,
+      "prompt": "A constant net force of $3.0\\,\\text{N}$ acts on a cart in the direction of its motion for $0.10\\,\\text{s}$. By how much does the momentum of the cart change?",
+      "choices": [
+        {
+          "text": "$0.30\\,\\text{kg}\\cdot\\text{m/s}$",
+          "correct": true,
+          "feedback": "Correct. The change in momentum is equal to the impulse: $\\Delta p = F\\,\\Delta t = 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} = 0.30\\,\\text{N}\\cdot\\text{s}$, and $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (chapter *Momentum and impulse*)."
+        },
+        {
+          "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
+          "feedback": "You calculated the quotient $F : \\Delta t$. Impulse is the product of force and time: $\\Delta p = F\\,\\Delta t = 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} = 0.30\\,\\text{kg}\\cdot\\text{m/s}$."
+        },
+        {
+          "text": "It cannot be calculated, because the mass of the cart is not known.",
+          "feedback": "The mass is needed for calculating the change in velocity, but not the change in momentum. The change in momentum is the impulse $F\\,\\Delta t = 0.30\\,\\text{kg}\\cdot\\text{m/s}$ regardless of the mass."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the carts stick together",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "On a horizontal air track a $0.40\\,\\text{kg}$ cart moves at $0.60\\,\\text{m/s}$ and collides with a similar cart at rest. The ends of the carts have hook-and-loop tape, so the carts stick together. Friction is neglected. At what velocity do the carts move on together?",
+      "choices": [
+        {
+          "text": "$0.30\\,\\text{m/s}$: the momentum is shared by twice the mass.",
+          "correct": true,
+          "feedback": "Correct. In the model's values the common velocity is $0.30\\,\\text{m/s}$, and the total momentum is $0.240\\,\\text{kg}\\cdot\\text{m/s}$ both before and after. Kinetic energy, on the other hand, is halved from $0.072\\,\\text{J}$ to $0.036\\,\\text{J}$."
+        },
+        {
+          "text": "$0.60\\,\\text{m/s}$: the cart keeps its velocity and takes the other along.",
+          "feedback": "If the carts moved together at $0.60\\,\\text{m/s}$, the momentum would have doubled, even though no external force pushed the carts. In the model's values the common velocity is $0.30\\,\\text{m/s}$: the same momentum, $0.240\\,\\text{kg}\\cdot\\text{m/s}$, is shared by twice the mass."
+        },
+        {
+          "text": "$0.42\\,\\text{m/s}$: the kinetic energy is shared by twice the mass.",
+          "feedback": "This result is obtained if kinetic energy is assumed to be conserved. The tape changes some of the kinetic energy into internal energy, so kinetic energy is not conserved. In the model's values the common velocity is $0.30\\,\\text{m/s}$, and the conserved quantity is momentum."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: elastic collision",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "The same $0.40\\,\\text{kg}$ cart moves at $0.60\\,\\text{m/s}$ and collides with a similar cart at rest. Now there is a spring bumper between the carts, so the collision is elastic: the spring gives back the energy it stored while being compressed, so the kinetic energy after the collision is equal to that before it. What happens to the carts?",
+      "choices": [
+        {
+          "text": "Cart 1 stops, and cart 2 moves on at $0.60\\,\\text{m/s}$.",
+          "correct": true,
+          "feedback": "Correct. In the model's values cart 1 stops and cart 2 moves on at $0.60\\,\\text{m/s}$. Carts of equal mass exchange velocities: only then are both the momentum, $0.240\\,\\text{kg}\\cdot\\text{m/s}$, and the kinetic energy, $0.072\\,\\text{J}$, conserved."
+        },
+        {
+          "text": "Both carts move on forwards at $0.30\\,\\text{m/s}$.",
+          "feedback": "The momentum would be conserved, but the kinetic energy would be halved, as in a perfectly inelastic collision. The spring bumper gives back the energy it received when compressed. In the model's values cart 1 stops and cart 2 moves on at $0.60\\,\\text{m/s}$."
+        },
+        {
+          "text": "Cart 1 bounces back at $0.60\\,\\text{m/s}$, and cart 2 stays in place.",
+          "feedback": "Then the momentum would change direction: before $+0.240\\,\\text{kg}\\cdot\\text{m/s}$, after $-0.240\\,\\text{kg}\\cdot\\text{m/s}$, even though the external forces cancel each other. In addition, cart 2 gets its motion from the push of the spring. In the model's values cart 1 stops and cart 2 moves on at $0.60\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: explosion",
+      "optional": true,
+      "justify": true,
+      "reveal": {
+        "after": "exp-3",
+        "min": 2
+      },
+      "prompt": "Two carts are at rest side by side with a compressed spring between them. The mass of cart 1 is $0.40\\,\\text{kg}$ and the mass of cart 2 is $0.20\\,\\text{kg}$. The spring is released and pushes the carts apart. How do the velocities of the carts compare?",
+      "choices": [
+        {
+          "text": "The lighter cart 2 moves twice as fast as cart 1.",
+          "correct": true,
+          "feedback": "Correct. In the model's values cart 1 moves at $0.63\\,\\text{m/s}$ to the left and cart 2 at $1.26\\,\\text{m/s}$ to the right. The momenta $\\mp 0.253\\,\\text{kg}\\cdot\\text{m/s}$ are equally large and opposite, so the total momentum stays zero."
+        },
+        {
+          "text": "The carts move equally fast, because the spring pushes both with an equally large force.",
+          "feedback": "The spring pushes both with an equally large force for the same time, so the carts get equally large impulses and equally large momenta. The same momentum gives the lighter cart a greater velocity. In the model's values the velocities are $0.63\\,\\text{m/s}$ and $1.26\\,\\text{m/s}$."
+        },
+        {
+          "text": "The heavier cart 1 moves faster, because it has more momentum.",
+          "feedback": "The total momentum of a system at rest is zero, so the momenta of the carts are equally large and opposite afterwards too. The heavier cart gets a smaller velocity from the same momentum: in the model's values $0.63\\,\\text{m/s}$, while the lighter one gets $1.26\\,\\text{m/s}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Two carts collide on a horizontal air track. The bars at the bottom show the momentum and kinetic energy of each cart before the collision and at each moment.",
+      "howto": "Choose the situation, the masses of the carts and the initial velocities. The positive direction is to the right, so the velocity of a cart moving to the left is negative. Press *Start*. When the collision is over, the readout shows the velocities $v_1'$ and $v_2'$, the total momentum $p_\\text{tot}'$ and the kinetic energy $E_\\text{k}'$ after the collision. In an explosion the carts are at rest at first, so the velocity sliders are not in use. *Reset* returns the carts to their starting places. *Speed* slows down or speeds up the motion without changing the readings.",
+      "model": "The values are model values calculated by the simulation. The track is horizontal, and friction and air resistance are neglected, so the weight of the carts and the normal force of the track cancel each other and the sum of the external forces does not change the momentum. In the collision the bumpers of the carts are compressed, and they push the carts with equally large forces in opposite directions. The spring bumper gives back all the energy spent on the compression. The soft bumper and the tape change some of the kinetic energy into internal energy, and with the tape the carts stick together. In the explosion there is a spring compressed by $4.0\\,\\text{cm}$ between the carts, storing $0.24\\,\\text{J}$ of energy.",
+      "calc": "The force of the bumpers is calculated from the compression and the relative velocity of the carts, and the motion of the carts is calculated from Newton's second law in time steps of $0.2\\,\\text{ms}$. The momenta $p = mv$ and the kinetic energies $E_\\text{k} = \\tfrac12 mv^2$ are calculated from the velocities of the carts, and $p_\\text{tot}$ and $E_\\text{k}$ are the sums of the values of the two carts. The readings \"After\" are taken at the moment when the bumpers separate or the carts stick together. Conservation of momentum has not been written into the model; it follows from the forces of the bumpers being equally large and opposite."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: perfectly inelastic collision",
+      "intro": "Test the first prediction. The starting state chooses the tape, a mass of $0.40\\,\\text{kg}$ and a velocity of $0.60\\,\\text{m/s}$ for cart 1, and leaves cart 2 at rest. Before the collision the total momentum is then $0.240\\,\\text{kg}\\cdot\\text{m/s}$ and the kinetic energy $0.072\\,\\text{J}$ (the *Before* readings). Change only the mass of cart 2. Press *Start* each time and record the measurement when the carts have stuck together.",
+      "initial": {
+        "tyyppi": "tarra",
+        "m1": "0.4",
+        "v1": 0.6,
+        "v2": 0,
+        "m2": "0.4"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "mass m_1",
+        "m2": "mass m_2",
+        "v1": "initial velocity v_1",
+        "v2": "initial velocity v_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg",
+        "v1": "m/s",
+        "v2": "m/s"
+      },
+      "values": {
+        "tyyppi": {
+          "tarra": "perfectly inelastic (tape)"
+        },
+        "m1": {
+          "0.4": "$0.40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0.20\\,\\text{kg}$",
+          "0.4": "$0.40\\,\\text{kg}$",
+          "0.6": "$0.60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1",
+        "v1",
+        "v2"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{tot}'$ (kg·m/s)"
+        },
+        {
+          "key": "EkJ",
+          "label": "$E_\\text{k}'$ (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Compare the total momentum and kinetic energy after the collision in the table with their values before the collision, $0.240\\,\\text{kg}\\cdot\\text{m/s}$ and $0.072\\,\\text{J}$. What do you notice?",
+        "choices": [
+          {
+            "text": "The total momentum is conserved, but the kinetic energy decreases.",
+            "correct": true,
+            "feedback": "Correct. In the model's values $p_\\text{tot} = p_\\text{tot}' = 0.240\\,\\text{kg}\\cdot\\text{m/s}$ for all masses, but the kinetic energy decreases, for example from $0.072\\,\\text{J}$ to $0.036\\,\\text{J}$ when $m_2 = 0.40\\,\\text{kg}$. The tape changes some of the kinetic energy into internal energy."
+          },
+          {
+            "text": "Both the total momentum and the kinetic energy are conserved on every row.",
+            "feedback": "Look at the kinetic energy columns: in the model's values $E_\\text{k}$ is $0.072\\,\\text{J}$, but $E_\\text{k}'$ is only $0.029$–$0.048\\,\\text{J}$. Momentum is conserved, kinetic energy is not."
+          },
+          {
+            "text": "The total momentum decreases, because the heavier cart 2 slows down cart 1.",
+            "feedback": "Cart 2 does slow down cart 1, but cart 1 accelerates cart 2 with an equally large force in the opposite direction. The momentum that cart 1 loses passes to cart 2. In the model's values $p_\\text{tot}' = 0.240\\,\\text{kg}\\cdot\\text{m/s}$ on every row."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: elastic collision",
+      "intro": "Test the second prediction. The starting state chooses the spring bumper, a mass of $0.40\\,\\text{kg}$ and a velocity of $0.60\\,\\text{m/s}$ for cart 1, and leaves cart 2 at rest. Change only the mass of cart 2, for example to $0.20$, $0.40$ and $0.60\\,\\text{kg}$. Record the measurement when the collision is over.",
+      "initial": {
+        "tyyppi": "kimmoisa",
+        "m1": "0.4",
+        "v1": 0.6,
+        "v2": 0,
+        "m2": "0.4"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "mass m_1",
+        "m2": "mass m_2",
+        "v1": "initial velocity v_1",
+        "v2": "initial velocity v_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg",
+        "v1": "m/s",
+        "v2": "m/s"
+      },
+      "values": {
+        "tyyppi": {
+          "kimmoisa": "elastic collision (spring)"
+        },
+        "m1": {
+          "0.4": "$0.40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0.20\\,\\text{kg}$",
+          "0.4": "$0.40\\,\\text{kg}$",
+          "0.6": "$0.60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1",
+        "v1",
+        "v2"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v_1'$ (m/s)"
+        },
+        {
+          "key": "u2",
+          "label": "$v_2'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{tot}'$ (kg·m/s)"
+        },
+        {
+          "key": "EkJ",
+          "label": "$E_\\text{k}'$ (J)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Before the collision the total momentum is $0.240\\,\\text{kg}\\cdot\\text{m/s}$ and the kinetic energy $0.072\\,\\text{J}$. What does the table tell you about an elastic collision?",
+        "choices": [
+          {
+            "text": "Both momentum and kinetic energy are conserved, and the masses determine the velocities of the carts.",
+            "correct": true,
+            "feedback": "Correct. In the model's values $p_\\text{tot}' = 0.240\\,\\text{kg}\\cdot\\text{m/s}$ and $E_\\text{k}' = 0.072\\,\\text{J}$ on every row. The lighter cart 2 leaves faster than cart 1 came ($0.80\\,\\text{m/s}$), a cart of equal mass exchanges velocity, and a heavier one makes cart 1 bounce back ($v_1' = -0.12\\,\\text{m/s}$)."
+          },
+          {
+            "text": "Cart 1 always stops, and all the momentum passes to cart 2 regardless of the mass.",
+            "feedback": "Cart 1 stops only when the carts have equal masses. In the model's values cart 1 moves on at $0.20\\,\\text{m/s}$ when $m_2 = 0.20\\,\\text{kg}$, and bounces back at $0.12\\,\\text{m/s}$ when $m_2 = 0.60\\,\\text{kg}$."
+          },
+          {
+            "text": "The total momentum is smaller on the rows where cart 1 bounces back.",
+            "feedback": "When cart 1 bounces back, its momentum is negative, but cart 2 then gets a greater momentum. In the model's values $0.40 \\cdot (-0.12) + 0.60 \\cdot 0.48 = 0.240$, so the total momentum is conserved."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exp-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: explosion",
+      "optional": true,
+      "intro": "Test the third prediction. The starting state chooses the explosion and a mass of $0.40\\,\\text{kg}$ for cart 1. The carts are at rest at first. Change only the mass of cart 2 and record the measurement when the carts have separated.",
+      "initial": {
+        "tyyppi": "rajahdys",
+        "m1": "0.4",
+        "m2": "0.2"
+      },
+      "names": {
+        "tyyppi": "tilanne",
+        "m1": "mass m_1",
+        "m2": "mass m_2"
+      },
+      "units": {
+        "m1": "kg",
+        "m2": "kg"
+      },
+      "values": {
+        "tyyppi": {
+          "rajahdys": "explosion (spring is released)"
+        },
+        "m1": {
+          "0.4": "$0.40\\,\\text{kg}$"
+        },
+        "m2": {
+          "0.2": "$0.20\\,\\text{kg}$",
+          "0.4": "$0.40\\,\\text{kg}$",
+          "0.6": "$0.60\\,\\text{kg}$"
+        }
+      },
+      "locked": [
+        "tyyppi",
+        "m1"
+      ],
+      "vary": "m2",
+      "measure": [
+        {
+          "key": "u1",
+          "label": "$v_1'$ (m/s)"
+        },
+        {
+          "key": "u2",
+          "label": "$v_2'$ (m/s)"
+        },
+        {
+          "key": "pJ",
+          "label": "$p_\\text{tot}'$ (kg·m/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Use your measurements to explain what is conserved in all collisions and what only in an elastic collision. Then use Newton's third law to explain why the momentum that cart 1 loses is equal to the momentum that cart 2 gains.",
+      "criteria": [
+        "Using the rows of their own measurements, the answer says that the total momentum was the same before and after in both experiments.",
+        "The answer says that kinetic energy was conserved in the elastic collision but decreased in the perfectly inelastic one, and says where the energy went.",
+        "The answer justifies the conservation by the bumpers pushing the carts with equally large forces in opposite directions for the same time, so the impulses and the changes in momentum are equally large and opposite.",
+        "The answer mentions the condition: the external forces do not change the momentum, because the weight and the normal force cancel each other and friction is neglected."
+      ],
+      "model": "In experiment 1 the carts stuck together. In the model's values the total momentum was $0.240\\,\\text{kg}\\cdot\\text{m/s}$ both before and after for all masses of cart 2, but the kinetic energy decreased, for example from $0.072\\,\\text{J}$ to $0.036\\,\\text{J}$ when the carts had equal masses. The tape changed some of the kinetic energy into internal energy. In experiment 2 the collision was elastic: in the model's values both the total momentum, $0.240\\,\\text{kg}\\cdot\\text{m/s}$, and the kinetic energy, $0.072\\,\\text{J}$, were conserved on every row. Momentum is conserved because, by Newton's third law, the bumpers push the carts with equally large forces $\\overline{F}$ and $-\\overline{F}$ in opposite directions for the same time $\\Delta t$. The momentum of cart 2 increases by the impulse $\\overline{F}\\,\\Delta t$, and the momentum of cart 1 changes by the same amount in the opposite direction. This holds because the external forces do not change the momentum: the weight and the normal force of the track cancel each other, and friction has been neglected."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the readings of the simulation. What surprised you most? Write in your own words when a collision can be solved with the law of conservation of momentum alone and when kinetic energy is needed as well.",
+      "predictions": [
+        "pred-1",
+        "pred-2",
+        "pred-3"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "On an air track a $0.50\\,\\text{kg}$ cart moves to the right at $0.40\\,\\text{m/s}$ and a $0.30\\,\\text{kg}$ cart to the left at $0.60\\,\\text{m/s}$. The carts collide and stick together. A student calculates: $v' = \\dfrac{0.50 \\cdot 0.40 + 0.30 \\cdot 0.60}{0.80}\\,\\text{m/s} \\approx 0.48\\,\\text{m/s}$ to the right. Where is the error?",
+      "choices": [
+        {
+          "text": "The velocity and momentum of the cart moving to the left are negative: $0.30 \\cdot (-0.60)$.",
+          "correct": true,
+          "feedback": "Correct. When right is the positive direction, $v' = \\dfrac{0.20 - 0.18}{0.80}\\,\\text{m/s} = 0.025\\,\\text{m/s}$ to the right. The carts almost stop, because their momenta are nearly equal and opposite. The student's result is greater than the initial velocity of the cart moving to the right, $0.40\\,\\text{m/s}$, which is impossible when the cart moving to the left slows it down."
+        },
+        {
+          "text": "The velocity must be calculated from conservation of kinetic energy, because the carts move together.",
+          "feedback": "Kinetic energy is not conserved when the carts stick together. The law of conservation of momentum is the right choice, but the momentum of the cart moving to the left is negative: $v' = 0.025\\,\\text{m/s}$."
+        },
+        {
+          "text": "The denominator should contain only the mass of the colliding cart, $0.50\\,\\text{kg}$.",
+          "feedback": "After the collision the carts move together, so the common momentum is shared by the mass of both, $0.80\\,\\text{kg}$. The error is in the sign: the momentum of the cart moving to the left is negative."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A boy of mass $50\\,\\text{kg}$ stands in a rowing boat of mass $120\\,\\text{kg}$ that is at rest. He jumps from the boat onto the pier with a horizontal velocity of $2.4\\,\\text{m/s}$ relative to the pier (the ground). The resistance of the water is neglected for the short time of the push-off. At what velocity does the boat start to move? Answer in $\\text{m/s}$.",
+      "answer": 1.0,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose the boy and the boat as the system. What is the total momentum of the system before the jump?",
+        "In the push-off the boy and the boat push each other, so this is an explosion: $0 = m_\\text{boy} v_\\text{boy} + m_\\text{boat} v_\\text{boat}$.",
+        "Solve $v_\\text{boat} = -\\dfrac{m_\\text{boy} v_\\text{boy}}{m_\\text{boat}}$. The minus sign shows that the boat moves in the opposite direction."
+      ],
+      "mistakes": [
+        {
+          "value": 2.4,
+          "feedback": "The boat does not get the same velocity as the boy, but a momentum of the same magnitude. The heavier boat moves more slowly: divide the momentum of the boy by the mass of the boat."
+        },
+        {
+          "value": 0.706,
+          "feedback": "This would be the velocity of the boat if $2.4\\,\\text{m/s}$ were the velocity of the boy relative to the boat. In the problem the velocity is relative to the pier (the ground), and the momenta are calculated relative to the ground: the momentum of the boy is $50\\,\\text{kg} \\cdot 2.4\\,\\text{m/s}$, and it is divided only by the mass of the boat, $120\\,\\text{kg}$."
+        },
+        {
+          "value": 5.76,
+          "feedback": "The ratio of the masses is the wrong way round: by this result the heavy boat would move faster than the boy. The velocity of the boat is $\\dfrac{50\\,\\text{kg} \\cdot 2.4\\,\\text{m/s}}{120\\,\\text{kg}}$."
+        }
+      ],
+      "solution": "**Given:** mass of the boy $m_\\text{boy} = 50\\,\\text{kg}$, mass of the boat $m_\\text{boat} = 120\\,\\text{kg}$, velocity of the boy after the jump relative to the pier $v_\\text{boy}' = 2.4\\,\\text{m/s}$; at first both are at rest\n\n**Find:** the velocity of the boat $v_\\text{boat}'$ in $\\text{m/s}$\n\n**Principle:** We choose the boy and the boat as the system and the direction of the boy's jump as the positive direction. In the push-off the boy and the boat push each other with equally large forces in opposite directions, which are internal forces. In the horizontal direction no forces act other than the resistance of the water, which is neglected for the short push-off, so the horizontal total momentum is conserved. At first it is zero, so the situation is an explosion.\n\n**Formula:** $0 = m_\\text{boy} v_\\text{boy}' + m_\\text{boat} v_\\text{boat}'$, so $v_\\text{boat}' = -\\dfrac{m_\\text{boy} v_\\text{boy}'}{m_\\text{boat}}$\n\n**Conversions:** The masses are in kilograms and the velocity in $\\text{m/s}$, so no conversions are needed.\n\n**Substitution:** $v_\\text{boat}' = -\\dfrac{50 \\cdot 2.4}{120} \\cdot \\dfrac{\\text{kg}\\cdot\\text{m/s}}{\\text{kg}} = -1.0\\,\\text{m/s}$\n\n**Answer:** $1.0\\,\\text{m/s}$ away from the pier, two significant figures like the velocity $2.4\\,\\text{m/s}$. The minus sign shows that the boat moves in the opposite direction to the boy.\n\n**Reasonableness:** The boat is $2.4$ times as heavy as the boy, so its velocity is $2.4$ times smaller: $2.4\\,\\text{m/s} : 2.4 = 1.0\\,\\text{m/s}$."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. First choose the system and the positive direction, and check that the impulse of the external forces is negligibly small during the collision. Mark the velocities of objects moving in the opposite direction as negative. Level 1 is enough for the basic skills; levels 2 and 3 go deeper."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A clay ball falls on the floor and stays there. Just before it hit, the ball had momentum downwards. Where did the momentum of the ball go?",
+      "choices": [
+        {
+          "text": "It passed to the Earth, but the mass of the Earth is so great that the change in its velocity cannot be noticed.",
+          "correct": true,
+          "feedback": "Correct. In the collision the ball and the Earth push each other with equally large forces in opposite directions. The total momentum of the system formed by the ball and the Earth is conserved. The Earth gets an equally large momentum, but its mass is about $6 \\cdot 10^{24}\\,\\text{kg}$, so the change in its velocity is immeasurably small."
+        },
+        {
+          "text": "It changed into heat, like the kinetic energy of the ball.",
+          "feedback": "Kinetic energy changes into internal energy, but momentum is not energy and does not change into anything else. Momentum is a vector quantity that is conserved in a system: the momentum of the ball passes to the Earth, whose change in velocity is imperceptibly small."
+        },
+        {
+          "text": "It disappeared, because the normal force of the floor is an external force and so momentum is not conserved.",
+          "feedback": "For the ball alone, the force of the floor is external, and so the momentum of the ball changes. When the ball and the Earth are taken as the system, the force is internal and the total momentum is conserved: the momentum of the ball passes to the Earth."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculating",
+      "prompt": "On an air track a $0.60\\,\\text{kg}$ cart moves to the right at $0.50\\,\\text{m/s}$ and a $0.20\\,\\text{kg}$ cart to the left at $0.90\\,\\text{m/s}$. The carts collide and stick together. Friction is neglected. What is the common velocity of the carts after the collision? Answer in $\\text{m/s}$.",
+      "answer": 0.15,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Choose right as the positive direction. What is the sign of the velocity of the cart moving to the left?",
+        "In a perfectly inelastic collision $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$.",
+        "The momentum before is $0.60 \\cdot 0.50 + 0.20 \\cdot (-0.90)$ in $\\text{kg}\\cdot\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.6,
+          "feedback": "You added the momenta without signs. The velocity of the cart moving to the left is $-0.90\\,\\text{m/s}$, so its momentum reduces the total momentum."
+        },
+        {
+          "value": 0.2,
+          "feedback": "You divided the total momentum by the mass of the heavier cart only. The carts move together, so the denominator contains the mass of both, $0.80\\,\\text{kg}$."
+        }
+      ],
+      "solution": "**Given:** $m_1 = 0.60\\,\\text{kg}$, $v_1 = +0.50\\,\\text{m/s}$ (to the right), $m_2 = 0.20\\,\\text{kg}$, $v_2 = -0.90\\,\\text{m/s}$ (to the left); the carts stick together\n\n**Find:** the common velocity $v'$ in $\\text{m/s}$\n\n**Principle:** We choose both carts as the system and the right as the positive direction. On a horizontal track the weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The carts stick together, so the collision is perfectly inelastic and the carts finally have a common velocity.\n\n**Formula:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$, so $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Conversions:** The masses are in kilograms and the velocities in $\\text{m/s}$, so no conversions are needed.\n\n**Substitution:** $v' = \\dfrac{0.60 \\cdot 0.50 + 0.20 \\cdot (-0.90)}{0.60 + 0.20}\\,\\text{m/s} = \\dfrac{0.30 - 0.18}{0.80}\\,\\text{m/s} = 0.15\\,\\text{m/s}$\n\n**Answer:** $0.15\\,\\text{m/s}$ to the right, two significant figures like the data.\n\n**Reasonableness:** The velocity is positive, because the momentum of the cart moving to the right, $0.30\\,\\text{kg}\\cdot\\text{m/s}$, is greater than that of the cart moving to the left, $0.18\\,\\text{kg}\\cdot\\text{m/s}$. The common velocity is smaller than the initial velocity of either cart, as it should be when the momenta partly cancel each other."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Use momentum and kinetic energy to explain why a billiard cue ball stops when it hits a similar ball at rest head-on. What would happen if the balls were made of clay and stuck together?",
+      "criteria": [
+        "The answer says that momentum is conserved, because the balls push each other with equally large forces in opposite directions and the impulse of the friction of the table is negligibly small during the collision.",
+        "The answer says that the collision of billiard balls is almost elastic, so kinetic energy is conserved too.",
+        "The answer justifies that for balls of equal mass both conditions are met only when the balls exchange velocities.",
+        "The answer says that clay balls would move on together at half of the initial velocity and half of the kinetic energy would change into internal energy."
+      ],
+      "model": "In the collision the balls push each other with equally large forces in opposite directions for the same time, so the changes in their momenta are equally large and opposite. The impulse of the friction of the table is negligibly small during the short collision, so the total momentum is conserved. For balls of equal mass this means that the sum of the velocities stays the same: $v_1' + v_2' = v$. Billiard balls are hard, and their collision is almost elastic, so kinetic energy is conserved too: $v_1'^2 + v_2'^2 = v^2$. Both conditions are met only if the other ball is at rest after the collision. The cue ball cannot pass through the other ball, so the cue ball stops and the other moves on at velocity $v$. If the balls were made of clay and stuck together, momentum would still be conserved, but the same momentum would be shared by twice the mass: the balls would move on together at velocity $\\tfrac12 v$. Only half of the kinetic energy would then remain, and the other half would change into internal energy of the clay."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

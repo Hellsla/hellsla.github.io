@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Under what condition is the total momentum of two colliding objects conserved? Why is the condition often met even if friction acts on the objects?",
+    "a": "The total momentum is conserved when the sum of the external forces acting on the system is zero or their impulse during the collision is negligibly small. A collision lasts a very short time, and the collision forces are then much greater than friction, so the impulse of friction, $F\\,\\Delta t$, remains small."
+  },
+  {
+    "q": "An air rifle is at rest when the bullet is fired. What is the total momentum of the rifle and the bullet immediately after the shot, and why does the rifle move backwards?",
+    "a": "The total momentum is zero, as before the shot, because the impulse of the external forces is negligibly small for the short time of the shot and only internal forces change the momenta. The shot is an explosion. The bullet gets a momentum forwards, so the rifle gets an equally large momentum backwards. The velocity of the rifle is small, because its mass is much greater than that of the bullet."
+  }
+]
