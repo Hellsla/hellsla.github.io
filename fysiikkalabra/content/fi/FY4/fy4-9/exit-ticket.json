@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Näytä, että impulssin yksikkö $\\text{N}\\cdot\\text{s}$ on sama kuin liikemäärän yksikkö $\\text{kg}\\cdot\\text{m/s}$.",
+    "a": "Newtonin toisen lain mukaan $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$, joten $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\tfrac{\\text{m}}{\\text{s}^2}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$."
+  },
+  {
+    "q": "Juna jarruttaa tasaisesti ja pysähtyy. Mikä on junaan vaikuttavan jarruttavan kokonaisvoiman impulssin suunta, ja mistä sen suuruus riippuu?",
+    "a": "Impulssi osoittaa liikettä vastaan, samaan suuntaan kuin liikemäärän muutos. Sen suuruus on junan alkuperäinen liikemäärä $mv$, joten se riippuu junan massasta ja alkunopeudesta eikä jarrutuksen kestosta."
+  }
+]

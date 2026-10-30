@@ -1030,7 +1030,7 @@
       "kaynnista": "Käynnistä",
       "tauko": "Tauko",
       "alusta": "Alusta",
-      "alkunopeus": "Alkunopeus $v_1 = {{v}}\\,\\text{m/s}$",
+      "alkunopeus": "Alkunopeus $v_0 = {{v}}\\,\\text{m/s}$",
       "massa": "Massa",
       "puskuri": "Puskuri",
       "kova": "kova",
@@ -1044,7 +1044,7 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Varjostettu pinta-ala on impulssin suuruus; harmaat käyrät ovat aiemmat törmäykset.",
-      "lukemat": "<strong>$\\Delta t = {{dt}}\\,\\text{s}$, $F_\\text{max} = {{Fm}}\\,\\text{N}$, $I = {{I}}\\,\\text{N}\\cdot\\text{s}$</strong><br>$v_1 = {{v1}}\\,\\text{m/s}$, $v_2 = {{v2}}\\,\\text{m/s}$<br>$p_1 = {{p1}}\\,\\text{kg}\\cdot\\text{m/s}$, $p_2 = {{p2}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$\\Delta p = {{dp}}\\,\\text{kg}\\cdot\\text{m/s}$"
+      "lukemat": "<strong>$\\Delta t = {{dt}}\\,\\text{s}$, $F_\\text{max} = {{Fm}}\\,\\text{N}$, $I = {{I}}\\,\\text{N}\\cdot\\text{s}$</strong><br>$v_0 = {{v1}}\\,\\text{m/s}$, $v = {{v2}}\\,\\text{m/s}$<br>$p_0 = {{p1}}\\,\\text{kg}\\cdot\\text{m/s}$, $p = {{p2}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$\\Delta p = {{dp}}\\,\\text{kg}\\cdot\\text{m/s}$"
     },
     "fy4-8": {
       "kaynnista": "Käynnistä",
