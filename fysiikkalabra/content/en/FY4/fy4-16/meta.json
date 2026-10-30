@@ -1,0 +1,19 @@
+{
+  "id": "fy4-16",
+  "course": "FY4",
+  "title": "Applied lesson: lift, parachute and sledding hill",
+  "goals": [
+    "LOPS FY4: the combined effect of forces, the free-body diagram and the equation of motion",
+    "LOPS FY4: conservation of mechanical energy and the work–energy principle of mechanics",
+    "Clarification: an applied lesson, not a revision: the ideas of the module are combined in a new, everyday situation",
+    "Free-body diagram: in the situations of the applied lesson the student draws the free-body diagram before the equation of motion."
+  ],
+  "prerequisites": [
+    "fy4-4",
+    "fy4-8"
+  ],
+  "glossary": [],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

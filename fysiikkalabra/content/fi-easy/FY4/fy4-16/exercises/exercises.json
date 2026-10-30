@@ -1,0 +1,115 @@
+{
+  "level1": [
+    {
+      "id": "fy4-16-L1-01",
+      "level": 1,
+      "text": "Hissi lähtee pohjakerroksesta ylöspäin ja kiihtyy $0{,}80\\,\\text{m/s}^2$. Hississä seisoo ihminen, jonka massa on $70{,}0\\,\\text{kg}$. Piirrä ihmisen voimakuvio. Kuinka suuri on lattian tukivoima ihmiseen?",
+      "answer": 742.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-02",
+      "level": 1,
+      "text": "Laskuvarjohyppääjän massa varusteineen on $90{,}0\\,\\text{kg}$. Kun varjo aukeaa, ilmanvastus on eräällä hetkellä $2{,}10\\,\\text{kN}$. Hyppääjä liikkuu yhä alaspäin. Piirrä hyppääjän voimakuvio. Kuinka suuri on hyppääjään vaikuttava kokonaisvoima tällä hetkellä?",
+      "answer": 1.2171,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-03",
+      "level": 1,
+      "text": "Lapsi laskee jäistä kourua pitkin levosta. Kourun alku on $3{,}20\\,\\text{m}$ korkeammalla kuin sen loppu. Kitkan ja ilmanvastuksen voi jättää huomiotta. Piirrä lapsen voimakuvio. Kuinka suuri on lapsen nopeus kourun lopussa?",
+      "answer": 7.923636,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-16-L1-04",
+      "level": 1,
+      "text": "Pulkka tulee rinteen juurelta vaakasuoralle lumikentälle nopeudella $6{,}0\\,\\text{m/s}$. Pulkan ja lumen välinen liikekitkakerroin on $0{,}080$. Ilmanvastus jätetään huomiotta. Kuinka pitkän matkan pulkka liukuu tasaisella ennen kuin pysähtyy?",
+      "answer": 22.93578,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-05",
+      "level": 1,
+      "text": "Pulkka liukuu suoraa rinnettä alas tasaisella nopeudella. Pulkan ja lumen välinen liikekitkakerroin on $0{,}15$. Ilmanvastus jätetään huomiotta. Kuinka suuri on rinteen kaltevuuskulma?",
+      "answer": 8.530766,
+      "unit": "°",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-16-L2-01",
+      "level": 2,
+      "text": "Opiskelijan massa on $60{,}0\\,\\text{kg}$, ja hän seisoo hississä kylpyhuonevaa'alla. Vaaka mittaa tukivoiman ja näyttää sen kilogrammoina eli jakaa sen luvulla $9{,}81\\,\\text{m/s}^2$. Hetken ajan vaaka näyttää $66{,}5\\,\\text{kg}$. Kuinka suuri on hissin kiihtyvyys tällä hetkellä? Mihin suuntaan kiihtyvyys osoittaa?",
+      "answer": 1.06275,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L2-02",
+      "level": 2,
+      "text": "Pulkka lähtee levosta suoran rinteen ylimmästä kohdasta. Rinne on $18{,}0\\,\\text{m}$ pitkä ja $12{,}0^\\circ$:n kulmassa vaakatasoon nähden. Rinteen juurella pulkan nopeus on $5{,}10\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin?",
+      "answer": 0.137262,
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L2-03",
+      "level": 2,
+      "text": "Laskuvarjohyppääjän massa varusteineen on $80{,}0\\,\\text{kg}$. Hän putoaa nopeudella $52{,}0\\,\\text{m/s}$ ja avaa varjonsa. Kun hän putoaa $145\\,\\text{m}$, hänen nopeutensa pienenee $6{,}0\\,\\text{m/s}$:iin. Piirrä hyppääjän voimakuvio. Kuinka paljon mekaanista energiaa muuttuu tällä matkalla muiksi energiamuodoiksi?",
+      "answer": 220.516,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-16-L2-04",
+      "level": 2,
+      "text": "Hissikorin ja sen kuorman yhteinen massa on $850\\,\\text{kg}$. Moottori nostaa koria köydellä tasaisella nopeudella $12{,}0\\,\\text{m}$ ylöspäin. Nosto kestää $15{,}0\\,\\text{s}$. Kuinka suuri on köyden korille antama teho?",
+      "answer": 6.6708,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-16-L3-01",
+      "level": 3,
+      "text": "Pulkkamäen huippu on $4{,}50\\,\\text{m}$ korkeammalla kuin tasainen lumikenttä mäen juurella. Mäen rinne koostuu kahdesta suorasta osasta. Ylempi osa on $25^\\circ$:n ja alempi $10^\\circ$:n kulmassa vaakatasoon nähden. Pulkka lähtee levosta huipulta. Liikekitkakerroin on $0{,}120$ koko matkalla. Ilmanvastus ja kitkan kasvu rinteen mutkissa jätetään huomiotta. Kuinka kaukana huipusta vaakasuunnassa mitattuna pulkka pysähtyy?",
+      "answer": 37.5,
+      "unit": "m",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L3-02",
+      "level": 3,
+      "text": "Ihmisen massa on $75{,}0\\,\\text{kg}$, ja hän seisoo voima-anturilevyllä hississä. Hissi lähtee ylemmästä kerroksesta alaspäin ja pysähtyy alempaan kerrokseen. Kuvaajassa on levyn lukema eli tukivoima ajan funktiona. Kuinka suuri on hissin suurin nopeus matkan aikana?",
+      "answer": 2.286667,
+      "unit": "m/s",
+      "tolerance": 0.05,
+      "figure": "fy4-16/ex-hissi",
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L3-03",
+      "level": 3,
+      "text": "Laskuvarjohyppääjän massa varusteineen on $70{,}0\\,\\text{kg}$. Hän avaa varjonsa nopeudessa $50{,}0\\,\\text{m/s}$. Kun hän on pudonnut $60{,}0\\,\\text{m}$, hänen nopeutensa on pienentynyt $6{,}0\\,\\text{m/s}$:iin. Kuinka suuri on ilmanvastus keskimäärin tällä matkalla, jos se oletetaan vakioksi?",
+      "answer": 2.124033,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}

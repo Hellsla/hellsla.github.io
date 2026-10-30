@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Pulkka liukuu suoraa rinnettä alas. Miksi lumen tukivoima ei tee pulkkaan työtä, vaikka se on suuri voima?",
+    "a": "Tukivoima on kohtisuorassa rinnettä vastaan, joten se on kohtisuorassa pulkan liikettä vastaan. Työn tekee vain se osa voimasta, joka on liikkeen suuntainen. Se on $W = F_\\parallel s$. Tukivoimalla tämä osa on nolla. Tukivoima vaikuttaa kuitenkin välillisesti, sillä liikekitka on $\\mu N$."
+  },
+  {
+    "q": "Milloin valitset liikeyhtälön ja milloin energiaperiaatteen? Anna kummastakin yksi esimerkki tämän luvun tilanteista.",
+    "a": "Liikeyhtälö $\\Sigma\\overline{F} = m\\overline{a}$ sopii, kun kysytään voimaa tai kiihtyvyyttä jollakin hetkellä. Esimerkki on vaa'an lukema kiihtyvässä hississä. Energiaperiaate sopii, kun kysytään nopeutta jossakin kohdassa tai energian muutosta matkalla. Esimerkki on pulkan nopeus rinteen juurella. Kummassakin aloitetaan voimakuviosta."
+  },
+  {
+    "q": "Miksi levosta lähtevän pulkan pysähtymiskohdan vaakamatka mäen huipusta ei riipu pulkan massasta?",
+    "a": "Painon tekemä työ $mgh$ ja kitkan työ $-\\mu mgx$ ovat kumpikin verrannollisia massaan. Energiaperiaatteessa $mgh - \\mu mgx = 0$ massa supistuu pois. Saadaan $x = h/\\mu$, kun kitkakerroin on sama koko matkalla ja ilmanvastus jätetään huomiotta."
+  }
+]

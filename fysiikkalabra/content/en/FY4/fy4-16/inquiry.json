@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "contribution": "Applied lesson: the tools of the module are combined in three everyday situations. Every solution starts from a free-body diagram, and the student chooses, according to the question, the equation of motion or the work–energy principle: in a lift a scale measures the normal force $N = m(g + a)$, at terminal velocity the work done by air resistance is $-mgh$, and on a straight slope the work done by kinetic friction, $-\\mu mgx$, depends on the horizontal distance, so a sled stops at a horizontal distance $h/\\mu$ from the top.",
+  "learn": [
+    "choose, based on the free-body diagram, whether to solve a situation with the equation of motion or the work–energy principle.",
+    "draw a free-body diagram and calculate the normal force or the acceleration in an accelerating lift.",
+    "calculate the speed and sliding distance of a sled and the work done by air resistance with the work–energy principle."
+  ],
+  "prior": [
+    "The net force points in the direction of the acceleration, and $\\Sigma\\overline{F} = m\\overline{a}$ (chapter *Newton's second law*)",
+    "On a slope the normal force is $mg\\cos\\alpha$ and the kinetic friction is $\\mu N$ (chapter *Weight, friction and the inclined plane*)",
+    "The change in mechanical energy is the work done by forces other than the weight (chapter *Conservation of mechanical energy and the work–energy principle*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A physics group takes a bathroom scale into the lift of a shopping centre. When the lift starts up, the reading rises for a moment, and when the lift stops, it falls. Through the window you can see a skydiver who descends under a parachute at a steady speed, although the weight pulls the skydiver down all the time. On a sledding hill two children go down different sides of the same hill: one a steep, short slope, the other a gentle, long slope. The one who came down the steep side slides much farther on the flat, but when the stopping points are measured, both are equally far from the top of the hill.",
+      "question": "Familiar forces act in all three situations. When should you solve a situation with forces and when with energy, and why do the sleds stop equally far from the top?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the work–energy principle",
+      "optional": true,
+      "prompt": "A box slides on a horizontal floor and stops. At the start its kinetic energy is $40\\,\\text{J}$. Nobody pushes or pulls it. What happens to the mechanical energy of the box while it slides?",
+      "choices": [
+        {
+          "text": "It decreases by $40\\,\\text{J}$, because friction does negative work.",
+          "correct": true,
+          "feedback": "Correct. In the chapter *Conservation of mechanical energy and the work–energy principle* you learned that the change in mechanical energy is the work done by forces other than the weight, $\\Delta E_\\text{mech} = W_\\text{other}$. The height does not change, so all of the kinetic energy $40\\,\\text{J}$ turns into internal energy. In this chapter the same principle solves the sliding of the sled."
+        },
+        {
+          "text": "It is conserved, because energy does not disappear anywhere.",
+          "feedback": "The total energy is conserved, but the mechanical energy is not: friction turns it into internal energy of the box and the floor. Mechanical energy is conserved only when forces other than the weight do no work."
+        },
+        {
+          "text": "It decreases, because the normal force does negative work and stops the box.",
+          "feedback": "The normal force is perpendicular to the motion, so it does no work. The box is stopped by friction, which points against the motion and does negative work."
+        },
+        {
+          "text": "It turns into potential energy, because the box stops.",
+          "feedback": "Potential energy changes only when the height changes. The box slides on a horizontal floor, so the kinetic energy does not turn into potential energy but, because of friction, into internal energy."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a scale in a lift",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "You stand on a bathroom scale in a lift. The lift starts up from the ground floor, travels for a while at a steady speed and stops at an upper floor. How does the reading of the scale change during the trip compared with what it shows at rest?",
+      "choices": [
+        {
+          "text": "The reading is larger than at rest at the start, the same during the steady speed and smaller when stopping.",
+          "correct": true,
+          "feedback": "Correct. In the graph of the Investigate stage the reading is $650\\,\\text{N}$ at the start, about $589\\,\\text{N}$ at a steady speed, as at rest, and $550\\,\\text{N}$ when stopping. The reading follows the acceleration: at the start the acceleration points up, when stopping it points down."
+        },
+        {
+          "text": "The reading is larger than at rest for the whole trip up, because the lift moves upwards.",
+          "feedback": "In the graph the reading during the steady speed is the same as at rest, although the lift moves up. When the speed does not change, the acceleration and the net force are zero, so the normal force is equal to the weight."
+        },
+        {
+          "text": "The reading stays the same all the time, because a person's mass does not change.",
+          "feedback": "The mass does not change, but a scale does not measure mass. It measures the normal force, and when the lift accelerates, the normal force must differ from the weight. In the graph the reading changes at the start and when stopping."
+        },
+        {
+          "text": "The reading is smaller at the start, because the person lags behind for a moment, and larger when stopping.",
+          "feedback": "In the graph it is the other way round. When the lift starts up, the person has to be accelerated upwards, and the normal force of the floor does that, so it is larger than the weight. When stopping, the acceleration points down, and the normal force is smaller than the weight."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: which is faster?",
+      "justify": true,
+      "reveal": {
+        "after": "theory"
+      },
+      "prompt": "Two identical sleds start from rest, one down the steep side and one down the gentle side of the same hill. The height of both sides is the same, and the snow is the same all the way, so friction cannot be ignored. Which sled is faster at the foot of the slope?",
+      "choices": [
+        {
+          "text": "The one coming down the steep side, because on a short slope friction takes less energy.",
+          "correct": true,
+          "feedback": "Correct. In the table of the Investigate stage the sled from the $30^\\circ$ slope has a speed of $9.87\\,\\text{m/s}$ at the foot and the one from the $10^\\circ$ slope only $7.14\\,\\text{m/s}$. On a steep slope the normal force and the friction are smaller and the distance is shorter, so the work done by friction is smaller."
+        },
+        {
+          "text": "Equally fast, because the height is the same and the potential energy turns into the same kinetic energy.",
+          "feedback": "This would hold without friction: then both would have the speed $\\sqrt{2gh}$ at the foot. But friction does negative work along the whole slope, and in the table the speeds at the foot differ clearly."
+        },
+        {
+          "text": "The one coming down the gentle side, because on a long slope the sled has time to accelerate for longer.",
+          "feedback": "On a gentle slope there is more time, but the acceleration is small and friction does work over a longer distance. In the table the sled from the gentle slope is slower at the foot."
+        },
+        {
+          "text": "Equally fast, because the friction force is the same on both slopes, $\\mu mg$.",
+          "feedback": "On a slope the normal force is $mg\\cos\\alpha$, not $mg$, so the friction force is $\\mu mg\\cos\\alpha$ and depends on the angle. In addition, the slopes have different lengths. In the table the speeds at the foot are not the same."
+        }
+      ]
+    },
+    {
+      "id": "hissi-data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "A force sensor in a lift",
+      "source": "example",
+      "figure": "fy4-16/hissi-kuvaaja",
+      "text": "A group takes a force-sensor plate that measures the normal force in newtons into a lift. A student of mass $60.0\\,\\text{kg}$ stands on the plate. The lift starts up from the ground floor, travels for a while at a steady speed and stops at an upper floor. The graph shows the reading of the plate as a function of time. The numbers are invented example data.",
+      "question": {
+        "type": "numeric",
+        "fbd": "equations",
+        "prompt": "First draw the free-body diagram of the student in your notebook. Then read the normal force at the start from the graph and calculate the acceleration of the lift. Give the answer in $\\text{m/s}^2$.",
+        "answer": 1.023,
+        "unit": "m/s²",
+        "tolerance": 0.03,
+        "hints": [
+          "Which two forces act on the student, and which one is larger at the start?",
+          "Choose up as the positive direction: $N - mg = ma$. Read $N$ from the graph between $1.0\\,\\text{s}$ and $3.0\\,\\text{s}$.",
+          "$N = 650\\,\\text{N}$ and $mg = 60.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 = 588.6\\,\\text{N}$. Divide the difference by the mass."
+        ],
+        "mistakes": [
+          {
+            "value": 10.83,
+            "feedback": "You divided the normal force by the mass but forgot the weight. The weight also acts on the student, so the acceleration is determined by the difference $N - mg$."
+          },
+          {
+            "value": -0.643,
+            "feedback": "You read the value $550\\,\\text{N}$ of the stopping phase. The start phase runs from $1.0\\,\\text{s}$ to $3.0\\,\\text{s}$, and then the reading is $650\\,\\text{N}$."
+          }
+        ],
+        "solution": "**Given:** mass of the student $m = 60.0\\,\\text{kg}$; from the graph the normal force in the start phase $N = 650\\,\\text{N}$ (from $1.0\\,\\text{s}$ to $3.0\\,\\text{s}$); $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the acceleration $a$ of the lift in the start phase in $\\text{m/s}^2$\n\n**Principle:** The student stands still in the lift, so the student's acceleration is the acceleration of the lift. By Newton's second law it is determined by the net force acting on the student, the sum of the weight and the normal force.\n\n**Free-body diagram:** The student as a rectangle, positive direction up. The weight $\\overline{G}$ from the centre down and the normal force $\\overline{N}$ of the plate from the bottom surface up, longer than the weight. The acceleration up is marked separately and not as a force.\n\n**Reading the graph:** In the start phase, from $1.0\\,\\text{s}$ to $3.0\\,\\text{s}$, the curve is horizontal and meets the grid line at $650\\,\\text{N}$. At rest the reading is about $589\\,\\text{N}$, so at the start the normal force is larger than the weight.\n\n**Formula:** $N - mg = ma$, so $a = \\dfrac{N}{m} - g$\n\n**Conversions:** The mass is in kilograms and the force in newtons, and $\\tfrac{\\text{N}}{\\text{kg}} = \\tfrac{\\text{m}}{\\text{s}^2}$, so no conversions are needed.\n\n**Substitution:** $a = \\dfrac{650\\,\\text{N}}{60.0\\,\\text{kg}} - 9.81\\,\\text{m/s}^2 = 10.833\\,\\text{m/s}^2 - 9.81\\,\\text{m/s}^2 = 1.023\\,\\text{m/s}^2$\n\n**Answer:** $1.02\\,\\text{m/s}^2$ upwards, three significant figures like the mass $60.0\\,\\text{kg}$ and the $650\\,\\text{N}$ read from the graph.\n\n**Reasonableness:** The normal force is about $60\\,\\text{N}$ larger than the weight, and $60\\,\\text{N}$ accelerates a $60\\,\\text{kg}$ student by about $1\\,\\text{m/s}^2$. The acceleration of a lift is typically about $1\\,\\text{m/s}^2$, and it is only slightly felt in the legs."
+      }
+    },
+    {
+      "id": "kelkka-taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Three hills of equal height",
+      "source": "model",
+      "text": "The table shows, calculated with a model, how a sled slides from three hills of the same height, $h = 6.0\\,\\text{m}$. The sled starts from rest at the top, the coefficient of kinetic friction is $\\mu = 0.10$ both on the slope and on the flat, air resistance is ignored and no more energy is lost in the bend at the foot of the slope. The angle $\\alpha$ is the angle of inclination of the slope, $x_1$ the horizontal length of the slope, $v$ the speed of the sled at the foot of the slope and $x_2$ the distance the sled slides on the flat before it stops. The numbers are *values calculated with a model*, not measurements.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10.4$ | $9.87$ | $49.6$ |\n| $20^\\circ$ | $16.5$ | $9.24$ | $43.5$ |\n| $10^\\circ$ | $34.0$ | $7.14$ | $26.0$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "For each row calculate $x_1 + x_2$, the whole horizontal distance of the sled from the top to the stopping point. What does the table show?",
+        "choices": [
+          {
+            "text": "The horizontal distance is $60.0\\,\\text{m}$ in every row, although the sled from the steep slope is faster at the foot.",
+            "correct": true,
+            "feedback": "Correct. $10.4 + 49.6 = 16.5 + 43.5 = 34.0 + 26.0 = 60.0$ metres, and $\\tfrac{h}{\\mu} = \\tfrac{6.0\\,\\text{m}}{0.10} = 60\\,\\text{m}$. The sled from the steep slope is faster at the foot and slides farther on the flat, but its horizontal distance on the slope is shorter."
+          },
+          {
+            "text": "The steeper the slope, the longer the horizontal distance, because the sled from the steep slope is faster at the foot.",
+            "feedback": "The sled from the steep slope slides farther on the flat, but the horizontal length of its slope is shorter. Calculate the sums: $10.4 + 49.6$ and $34.0 + 26.0$."
+          },
+          {
+            "text": "The speed at the foot is the same in every row, because the hills are equally high.",
+            "feedback": "The speeds in the table are $9.87$, $9.24$ and $7.14\\,\\text{m/s}$. Without friction all would be $\\sqrt{2gh} \\approx 10.8\\,\\text{m/s}$, but the work done by friction is different on different slopes."
+          },
+          {
+            "text": "The gentler the slope, the longer the horizontal distance, because a gentle slope is longer.",
+            "feedback": "The horizontal length $x_1$ of the gentle slope is the greatest, but the sled coming down it slides the shortest distance on the flat. Calculate the sums row by row and compare."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "prompt": "Use the graph and the table to explain two things. What does the reading of a scale in a lift depend on? Why is the sled from the steep slope faster at the foot but still stops almost as far from the top as the sled from the gentle slope?",
+      "criteria": [
+        "The answer says that a scale measures the normal force and that the reading is larger than the weight when the acceleration points up and smaller when it points down, but at a steady speed the same as at rest.",
+        "The answer uses numbers from the graph, for example $650\\,\\text{N}$ at the start and about $589\\,\\text{N}$ at a steady speed.",
+        "The answer explains that on a steep slope friction does less negative work, because the normal force and the friction are smaller and the distance is shorter.",
+        "The answer notes from the table that $x_1 + x_2$ is $60\\,\\text{m}$ in every row, and says that the numbers are values of a model."
+      ],
+      "model": "A scale measures the normal force with which it pushes the person standing on it. In the graph the reading is $650\\,\\text{N}$ at the start, about $589\\,\\text{N}$ at a steady speed, as at rest, and $550\\,\\text{N}$ when stopping. The reading is larger than the weight when the acceleration of the lift points up and smaller when it points down. The speed does not affect the reading. In the table the sled from the steep slope is fastest at the foot, $9.87\\,\\text{m/s}$, because on a steep slope the normal force and the friction are smaller and the slope is shorter, so friction does less negative work. It slides farthest on the flat, but the horizontal distance on its slope is the shortest. In the values of the model $x_1 + x_2$ is $60.0\\,\\text{m}$ in every row, so the inclination does not affect how far from the top the sled stops."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the graph and the table. What surprised you most? Write in your own words why the work done by friction depends on the horizontal distance and not on the length of the slope.",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "piirra",
+      "stage": "sovella",
+      "type": "explain",
+      "title": "Draw it yourself: a suitcase in a lift",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy4-16/malli-laukku",
+      "prompt": "A hook hangs from the ceiling of a lift, and from it hangs a spring scale with an $18.0\\,\\text{kg}$ suitcase on its hook. The lift starts downwards and accelerates. Draw the free-body diagram of the suitcase on paper: the suitcase as a rectangle and every force at its point of application. Mark the directions of the velocity and the acceleration separately next to the diagram. Then write the equation of motion when the positive direction is down. Does the scale show more or less than when the lift is at rest?",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "The diagram has only the suitcase, not the scale, the lift or the ceiling with their own forces."
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "Two forces: the weight and the tension of the scale. No separate force of the lift and no force in the direction of the motion."
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "The weight down, the tension up along the scale."
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "The weight from the centre, the tension from the top surface of the suitcase, where the handle is; each with its own symbol."
+        },
+        {
+          "key": "fbd_magnitudes",
+          "detail": "The tension is shorter than the weight, because the acceleration points down. The velocity and the acceleration are marked separately and not as forces."
+        },
+        {
+          "key": "fbd_equations",
+          "detail": "$mg - T = ma$, so $T = m(g - a) < mg$: the scale shows less than at rest."
+        }
+      ],
+      "model": "Only the Earth (the weight $\\overline{G}$) and the scale, whose hook holds the suitcase (the tension $\\overline{T}$), act on the suitcase. The lift and the ceiling act on the suitcase only through the scale, so they get no forces of their own. The lift moves down and accelerates, so the velocity and the acceleration point down. The net force must point down, so the tension is smaller than the weight. When the positive direction is down, the equation of motion is $mg - T = ma$, from which $T = m(g - a)$. The scale shows less than at rest. For example, when $a = 1.5\\,\\text{m/s}^2$, $T = 18.0\\,\\text{kg}\\cdot 8.31\\,\\text{m/s}^2 \\approx 150\\,\\text{N}$, when the weight is $177\\,\\text{N}$."
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "fbd": "equations",
+      "prompt": "A skydiver whose mass with equipment is $78.0\\,\\text{kg}$ descends under an open parachute at a steady speed of $5.0\\,\\text{m/s}$. How much mechanical energy is changed into other forms of energy as the skydiver descends $125\\,\\text{m}$? First draw the free-body diagram. Give the answer in kilojoules.",
+      "answer": 95.6475,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "What happens to the kinetic energy and the potential energy of the skydiver when the speed is constant?",
+        "The speed is constant, so $F_\\text{v} = mg$. The work done by air resistance is $W_\\text{v} = -F_\\text{v} h$, and it is the change in mechanical energy.",
+        "$mgh = 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 125\\,\\text{m}$. Change the joules into kilojoules."
+      ],
+      "mistakes": [
+        {
+          "value": 0.975,
+          "feedback": "You calculated the kinetic energy $\\tfrac12 mv^2$. It does not change, because the speed is constant. The mechanical energy decreases because the potential energy decreases: $mgh$."
+        },
+        {
+          "value": 96.62,
+          "feedback": "You added the kinetic energy to the change in potential energy. The kinetic energy is the same at the end as at the start, so it does not turn into other forms of energy."
+        },
+        {
+          "value": 95647.5,
+          "feedback": "The result is in joules. Change it into kilojoules: $1\\,\\text{kJ} = 1000\\,\\text{J}$."
+        }
+      ],
+      "solution": "**Given:** $m = 78.0\\,\\text{kg}$, the speed is constant $v = 5.0\\,\\text{m/s}$, the change in height $h = 125\\,\\text{m}$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the mechanical energy changed into other forms of energy $|\\Delta E_\\text{mech}|$ in $\\text{kJ}$\n\n**Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the work $W_\\text{v}$ done by air resistance. The magnitude of the air resistance comes from the equation of motion: the speed is constant, so the net force is zero.\n\n**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\\overline{G}$ from the centre down and the air resistance $\\overline{F}_\\text{v}$ from the top surface up, equally long. The velocity down is marked separately and not as a force.\n\n**Formula:** $mg - F_\\text{v} = 0$, so $F_\\text{v} = mg$. The air resistance points against the motion, so $W_\\text{v} = -F_\\text{v} h = -mgh$, and $|\\Delta E_\\text{mech}| = mgh$\n\n**Conversions:** We calculate in joules and finally change to kilojoules: $1\\,\\text{kJ} = 1000\\,\\text{J}$. The speed is not needed, because the kinetic energy does not change.\n\n**Substitution:** $|\\Delta E_\\text{mech}| = 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 125\\,\\text{m} = 95\\,647.5\\,\\text{J} \\approx 95.6\\,\\text{kJ}$\n\n**Answer:** $95.6\\,\\text{kJ}$, three significant figures like the mass $78.0\\,\\text{kg}$ and the height $125\\,\\text{m}$.\n\n**Reasonableness:** The weight of one kilogram is about $10\\,\\text{N}$, so $80\\,\\text{kg}$ and $125\\,\\text{m}$ give the estimate $800\\,\\text{N}\\cdot 125\\,\\text{m} = 100\\,\\text{kJ}$. The kinetic energy $\\tfrac12 mv^2 \\approx 1\\,\\text{kJ}$ stays the same, so the whole change in potential energy is changed into other forms of energy. Without air resistance this energy would turn into kinetic energy."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. First draw the free-body diagram and then decide whether to solve the problem with the equation of motion or with the work–energy principle. Level 1 is enough for basic competence; levels 2 and 3 deepen it."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A lift travels upwards between floors at a steady speed of $2.0\\,\\text{m/s}$. A person of mass $60\\,\\text{kg}$ stands on a scale in the lift. What does the scale show?",
+      "choices": [
+        {
+          "text": "$60\\,\\text{kg}$, because the acceleration is zero and the normal force is equal to the weight.",
+          "correct": true,
+          "feedback": "Correct. At a steady speed the net force is zero, so $N = mg$, and the scale shows the same as at rest. The direction of the velocity does not matter."
+        },
+        {
+          "text": "More than $60\\,\\text{kg}$, because the lift moves upwards and the floor pushes the person up.",
+          "feedback": "The normal force is larger than the weight only when the acceleration points up. At a steady speed the acceleration is zero, so the normal force and the weight are equal."
+        },
+        {
+          "text": "Less than $60\\,\\text{kg}$, because the cable of the lift carries part of the person's weight.",
+          "feedback": "The cable acts on the lift car, not on the person. Only the weight and the normal force of the floor act on the person, and at a steady speed they are equal."
+        },
+        {
+          "text": "More than $60\\,\\text{kg}$, and the more the faster the lift moves.",
+          "feedback": "The reading depends on the acceleration, not on the speed. In a lift moving steadily the scale shows the same as at rest, whatever the speed."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "fbd": "equations",
+      "prompt": "A student of mass $55.0\\,\\text{kg}$ stands on a bathroom scale in a lift. The scale measures the normal force and shows it in kilograms, that is, divides it by $9.81\\,\\text{m/s}^2$. The lift starts downwards and accelerates at $1.20\\,\\text{m/s}^2$. What does the scale show? Give the answer in kilograms.",
+      "answer": 48.2722,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Which is larger, the weight or the normal force, when the acceleration points down?",
+        "Choose up as the positive direction: $N - mg = ma$, where $a = -1.20\\,\\text{m/s}^2$.",
+        "$N = 55.0\\,\\text{kg}\\cdot(9.81 - 1.20)\\,\\text{m/s}^2$. Finally divide by $9.81\\,\\text{m/s}^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 61.73,
+          "feedback": "The direction of the acceleration is wrong. The lift accelerates downwards, so the net force points down and the normal force is smaller than the weight: $N = m(g - 1.20\\,\\text{m/s}^2)$."
+        },
+        {
+          "value": 473.55,
+          "feedback": "This is the normal force in newtons. The scale shows it in kilograms, so divide it by $9.81\\,\\text{m/s}^2$."
+        }
+      ],
+      "solution": "**Given:** $m = 55.0\\,\\text{kg}$, the acceleration of the lift $1.20\\,\\text{m/s}^2$ downwards, the scale shows the normal force divided by $9.81\\,\\text{m/s}^2$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the reading of the scale $N/g$ in $\\text{kg}$\n\n**Principle:** The student stands still in the lift, so the student's acceleration is the acceleration of the lift. By Newton's second law the acceleration is determined by the sum of the weight and the normal force. The scale measures the normal force.\n\n**Free-body diagram:** The student as a rectangle, positive direction up. The weight $\\overline{G}$ from the centre down and the normal force $\\overline{N}$ from the bottom surface up, shorter than the weight, because the acceleration points down. The acceleration down is marked separately and not as a force.\n\n**Formula:** $N - mg = ma$, so $N = m(g + a)$, and the reading is $\\dfrac{N}{g} = \\dfrac{m(g + a)}{g}$\n\n**Conversions:** The acceleration points down, so with up as the positive direction $a = -1.20\\,\\text{m/s}^2$. No other conversions are needed.\n\n**Substitution:** $\\dfrac{N}{g} = \\dfrac{55.0\\,\\text{kg}\\cdot(9.81 - 1.20)\\,\\text{m/s}^2}{9.81\\,\\text{m/s}^2} = \\dfrac{473.55\\,\\text{N}}{9.81\\,\\text{m/s}^2} = 48.27\\,\\text{kg}$\n\n**Answer:** $48.3\\,\\text{kg}$, three significant figures like the mass $55.0\\,\\text{kg}$ and the acceleration $1.20\\,\\text{m/s}^2$.\n\n**Reasonableness:** The acceleration is about one eighth of the acceleration of free fall, so the reading decreases by about one eighth: $55\\,\\text{kg} - 7\\,\\text{kg} \\approx 48\\,\\text{kg}$. The reading is smaller than the mass, as it should be when the acceleration points down."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Energy at terminal velocity",
+      "prompt": "A skydiver descends under an open parachute at a steady speed. Which statement about the skydiver's energy is correct?",
+      "choices": [
+        {
+          "text": "The mechanical energy decreases, because air resistance does negative work.",
+          "correct": true,
+          "feedback": "Correct. The kinetic energy stays the same, but the potential energy decreases. The change in mechanical energy is the work done by air resistance, $W_\\text{v} = -F_\\text{v} h = -mgh$. The energy does not disappear but turns into motion of the air and finally into internal energy."
+        },
+        {
+          "text": "The mechanical energy is conserved, because the speed does not change.",
+          "feedback": "The speed and the kinetic energy do not change, but the potential energy decreases all the time. Mechanical energy is conserved only when forces other than the weight do no work, and here air resistance does."
+        },
+        {
+          "text": "Air resistance does positive work, because it points up and cancels the weight.",
+          "feedback": "The sign of the work is decided by the direction of the force relative to the motion. The skydiver moves down and air resistance points up, so the work is negative."
+        },
+        {
+          "text": "Potential energy turns into kinetic energy, so the skydiver's speed slowly increases.",
+          "feedback": "The speed is constant, so the kinetic energy does not increase. The change in potential energy is turned into other forms of energy through the negative work done by air resistance."
+        }
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally three quick questions. Answer first on your own and open the answer only then."
+    }
+  ]
+}

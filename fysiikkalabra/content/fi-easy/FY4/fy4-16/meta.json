@@ -1,0 +1,19 @@
+{
+  "id": "fy4-16",
+  "course": "FY4",
+  "title": "Soveltava tunti: hissi, laskuvarjo ja kelkkamäki",
+  "goals": [
+    "LOPS FY4: voimien yhteisvaikutus, voimakuvio ja liikeyhtälö (kaava, josta saa voiman tai kiihtyvyyden)",
+    "LOPS FY4: mekaanisen energian säilyminen ja mekaniikan energiaperiaate",
+    "Täsmennys: tämä on soveltava tunti, ei kertaus. Moduulin ideoita käytetään uudessa arkisessa tilanteessa.",
+    "Voimakuvio: soveltavan tunnin tilanteissa oppilas piirtää voimakuvion itse ennen liikeyhtälöä."
+  ],
+  "prerequisites": [
+    "fy4-4",
+    "fy4-8"
+  ],
+  "glossary": [],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}
