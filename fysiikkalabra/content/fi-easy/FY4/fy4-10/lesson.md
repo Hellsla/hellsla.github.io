@@ -1,6 +1,6 @@
 # Liikemäärän säilyminen ja yksiulotteiset törmäykset
 
-> **Miksi** biljardin lyöntipallo voi pysähtyä paikalleen, kun se osuu suoraan levossa olevaan palloon, ja toinen pallo jatkaa matkaa lähes samalla nopeudella?
+> **Miksi** biljardin lyöntipallo voi pysähtyä paikalleen, kun se osuu suoraan levossa olevaan palloon? Toinen pallo jatkaa silloin matkaa lähes samalla nopeudella.
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: biljardipöytä läheltä nähtynä. Pöydän yllä roikkuu lamppu, ja sen valo osuu pöytään. Vasemmalta alhaalta osoittaa biljardikeppi, jolla valkoista lyöntipalloa on juuri lyöty. Lyöntipallo on osunut suoraan punaiseen palloon. Hetki törmäyksen jälkeen lyöntipallo on pysähtynyt pöydän keskelle, ja sen takana näkyy haalea jälki kuljetusta matkasta. Punainen pallo kiitää eteenpäin kohti pöydän oikeaa reunaa, ja sen takana on liikeviivoja. Pöydän takaosassa on kolme muuta palloa." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy410h-wall" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="420"><stop offset="0" stop-color="#f6f1e6"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy410h-panel" gradientUnits="userSpaceOnUse" x1="0" y1="150" x2="0" y2="270"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#8a5f22"/></linearGradient><linearGradient id="fy410h-felt" gradientUnits="userSpaceOnUse" x1="0" y1="180" x2="0" y2="640"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><radialGradient id="fy410h-yellow" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><radialGradient id="fy410h-blue" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#1971c2"/></radialGradient><radialGradient id="fy410h-black" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#1f2933"/></radialGradient><radialGradient id="fy410h-white" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient><radialGradient id="fy410h-red" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></radialGradient></defs>
@@ -239,7 +239,7 @@ Oletetaan, että systeemiin vaikuttavien ulkoisten voimien summa on nolla tai ni
 ```latex
 \overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'
 ```
-missä $\overline{p}_1$ ja $\overline{p}_2$ ovat kappaleiden liikemäärät ennen ja $\overline{p}_1'$ ja $\overline{p}_2'$ niiden liikemäärät jälkeen ($\text{kg}\cdot\text{m/s}$).
+missä $\overline{p}_1$ ja $\overline{p}_2$ ovat kappaleiden liikemäärät ennen, ja $\overline{p}_1'$ ja $\overline{p}_2'$ ovat liikemäärät jälkeen ($\text{kg}\cdot\text{m/s}$).
 
 Yksiulotteisessa törmäyksessä kaikki nopeudet ovat samalla suoralla. Valitaan positiivinen suunta. Silloin jokainen nopeus on luku, jolla on etumerkki. Vastakkaiseen suuntaan liikkuvan kappaleen nopeus on negatiivinen. Säilymislaki tulee muotoon
 ```latex
@@ -248,27 +248,27 @@ Yksiulotteisessa törmäyksessä kaikki nopeudet ovat samalla suoralla. Valitaan
 &\quad = m_1 v_1' + m_2 v_2'
 \end{aligned}
 ```
-missä $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$), $v_1$ ja $v_2$ niiden nopeudet ennen ja $v_1'$ ja $v_2'$ nopeudet jälkeen ($\text{m/s}$).
+missä $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$), $v_1$ ja $v_2$ ovat niiden nopeudet ennen, ja $v_1'$ ja $v_2'$ ovat nopeudet jälkeen ($\text{m/s}$).
 
 ### Täysin kimmoton törmäys
-Kappaleet jäävät kiinni toisiinsa. Silloin niillä on törmäyksen jälkeen yhteinen nopeus $v'$:
+Joskus kappaleet jäävät kiinni toisiinsa. Silloin niillä on törmäyksen jälkeen yhteinen nopeus $v'$:
 ```latex
 \begin{aligned}
 &m_1 v_1 + m_2 v_2 \\
 &\quad = (m_1 + m_2)\,v'
 \end{aligned}
 ```
-missä $v'$ on kappaleiden yhteinen nopeus törmäyksen jälkeen ($\text{m/s}$). Esimerkki: $0{,}40\,\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\,\text{m/s}$ ja tarttuu levossa olevaan samanlaiseen vaunuun. Yhteinen nopeus on $0{,}30\,\text{m/s}$. Liike-energia pienenee $0{,}072\,\text{J}$:sta $0{,}036\,\text{J}$:iin.
+missä $v'$ on nopeus, jolla kappaleet liikkuvat yhdessä törmäyksen jälkeen ($\text{m/s}$). Esimerkki: $0{,}40\,\text{kg}$:n vaunu liikkuu nopeudella $0{,}60\,\text{m/s}$ ja tarttuu levossa olevaan samanlaiseen vaunuun. Yhteinen nopeus on $0{,}30\,\text{m/s}$. Liike-energia pienenee $0{,}072\,\text{J}$:sta $0{,}036\,\text{J}$:iin.
 
 ### Kimmoisa törmäys
-Kimmoisassa törmäyksessä säilyy liikemäärän lisäksi kappaleiden yhteinen liike-energia:
+Kimmoisassa törmäyksessä säilyy liikemäärä. Lisäksi säilyy kappaleiden yhteinen liike-energia:
 ```latex
 \begin{aligned}
 &E_{\text{k},1} + E_{\text{k},2} \\
 &\quad = E_{\text{k},1}' + E_{\text{k},2}'
 \end{aligned}
 ```
-missä $E_\text{k} = \tfrac12 mv^2$ on kunkin kappaleen liike-energia ennen ja $E_\text{k}'$ jälkeen ($\text{J}$). Kun tunnetaan toisen kappaleen nopeus törmäyksen jälkeen, toinen nopeus saadaan liikemäärän säilymislaista. Vertaamalla liike-energioita nähdään, oliko törmäys kimmoisa. Samanmassainen kappale osuu suoraan levossa olevaan kappaleeseen kimmoisasti. Silloin kappaleet vaihtavat nopeuksia.
+missä $E_\text{k} = \tfrac12 mv^2$ on kappaleen liike-energia ennen törmäystä ja $E_\text{k}'$ sen liike-energia törmäyksen jälkeen ($\text{J}$). Kun tunnetaan toisen kappaleen nopeus törmäyksen jälkeen, toinen nopeus saadaan liikemäärän säilymislaista. Vertaamalla liike-energioita nähdään, oliko törmäys kimmoisa. Ajatellaan, että kappale osuu suoraan samanmassaiseen kappaleeseen, joka on levossa, ja törmäys on kimmoisa. Silloin kappaleet vaihtavat nopeuksia.
 
 <svg data-fig="tyypit" viewBox="0 0 600 434" role="img" aria-label="Kaavakuva, liikemäärät mittakaavassa. Kuvassa on kolme tapahtumaa kahdelle samanmassaiselle vaunulle. Vasemmalla on tilanne ennen ja oikealla jälkeen. Ylimpänä on kimmoisa törmäys. Ennen vaunulla 1 on liikemäärä oikealle ja vaunu 2 on levossa. Jälkeen vaunu 1 on levossa ja vaunulla 2 on sama liikemäärä. Liike-energia säilyy. Keskellä on täysin kimmoton törmäys. Vaunut tarttuvat yhteen, ja yhteinen liikemäärä on yhtä suuri kuin ennen. Liike-energia pienenee. Alimpana on räjähdys. Ennen vaunut ovat yhdessä levossa, ja kokonaisliikemäärä on nolla. Jälkeen vaunuilla on yhtä suuret liikemäärät vastakkaisiin suuntiin. Liike-energia kasvaa." style="max-width:100%;font-size:24px">
   <foreignObject x="90" y="45.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kimmoisa: } E_\text{k}\ \text{säilyy}$</div></foreignObject>
@@ -337,7 +337,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m_\text{A} = 32\,000\,\text{kg}$, $v_\text{A} = 1{,}5\,\text{m/s}$, $m_\text{B} = 18\,000\,\text{kg}$ ja $v_\text{B} = 0{,}50\,\text{m/s}$. Kysytään yhteistä nopeutta $v'$ heti kytkeytymisen jälkeen.
+**Tunnetut ja kysytty.** $m_\text{A} = 32\,000\,\text{kg}$, $v_\text{A} = 1{,}5\,\text{m/s}$, $m_\text{B} = 18\,000\,\text{kg}$ ja $v_\text{B} = 0{,}50\,\text{m/s}$. Kysytään vaunujen yhteistä nopeutta $v'$ heti sen jälkeen, kun ne ovat kytkeytyneet.
 
 <!-- vaihe -->
 
@@ -345,7 +345,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Liikemäärä ennen on yhtä suuri kuin yhteisen kappaleen liikemäärä jälkeen:
+**Kaava ratkaistuna.** Vaunujen liikemäärä ennen kytkeytymistä on yhtä suuri kuin yhteen kytkeytyneiden vaunujen liikemäärä sen jälkeen:
 ```latex
 \begin{aligned}
 &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} \\
@@ -356,7 +356,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Niitä ei tarvita: massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$.
+**Yksikkömuunnokset.** Muunnoksia ei tarvita, koska massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$.
 
 <!-- vaihe -->
 
@@ -377,7 +377,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 
 <!-- vaihe -->
 
-**Tulos.** Vaunujen yhteinen nopeus on $v' \approx 1{,}1\,\text{m/s}$ vaunujen alkuperäiseen liikesuuntaan. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska nopeuksissa $1{,}5\,\text{m/s}$ ja $0{,}50\,\text{m/s}$ on kaksi merkitsevää numeroa.
+**Tulos.** Vaunujen yhteinen nopeus on $v' \approx 1{,}1\,\text{m/s}$. Vaunut liikkuvat samaan suuntaan kuin ennen. Tulos ilmoitetaan kahdella merkitsevällä numerolla, koska nopeuksissa $1{,}5\,\text{m/s}$ ja $0{,}50\,\text{m/s}$ on kaksi merkitsevää numeroa.
 
 <!-- vaihe -->
 
@@ -386,10 +386,10 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 ## Yleinen virhekäsitys
 Moni ajattelee, että liike-energia säilyy törmäyksessä samalla tavalla kuin liikemäärä. Liikemäärä säilyy aina, kun ulkoisten voimien impulssi on merkityksettömän pieni. Liike-energia säilyy vain kimmoisassa törmäyksessä. Jos yhteen tarttuvien vaunujen nopeus lasketaan liike-energian säilymisestä, tulos on liian suuri.
 
-Toinen virhe on unohtaa etumerkit. Kappaleet liikkuvat toisiaan kohti. Silloin niiden liikemäärät ovat vastakkaissuuntaiset, ja toinen niistä on negatiivinen. Kolmas virhe on ajatella, että liikemäärä katoaa, kun lattialle pudonnut savipallo pysähtyy. Pallon liikemäärä siirtyy Maahan. Pallo ja Maa muodostavat systeemin, ja sen kokonaisliikemäärä säilyy. Maan massa on kuitenkin niin suuri, ettei sen nopeuden muutosta huomaa.
+Toinen virhe on unohtaa etumerkit. Jos kappaleet liikkuvat toisiaan kohti, niiden liikemäärät ovat vastakkaissuuntaiset. Silloin toinen liikemääristä on negatiivinen. Kolmas virhe on ajatella, että liikemäärä katoaa, kun lattialle pudonnut savipallo pysähtyy. Pallon liikemäärä siirtyy Maahan. Pallo ja Maa muodostavat systeemin, ja sen kokonaisliikemäärä säilyy. Maan massa on kuitenkin niin suuri, ettei sen nopeuden muutosta huomaa.
 
 ## Tiivistelmä
-- Systeemin kokonaisliikemäärä säilyy, kun ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen tai räjähdyksen aikana merkityksettömän pieni: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
+- Systeemin kokonaisliikemäärä säilyy, kun ulkoisten voimien summa on nolla. Se säilyy myös, kun ulkoisten voimien impulssi on törmäyksen tai räjähdyksen aikana niin pieni, ettei sillä ole merkitystä: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
 - Säilyminen seuraa Newtonin kolmannesta laista. Törmäyksen sisäiset voimat ovat yhtä suuret ja vastakkaissuuntaiset, ja ne vaikuttavat saman ajan. Siksi kappaleiden liikemäärien muutokset kumoavat toisensa.
 - Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja nopeuksilla on etumerkit: $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$.
 - Kimmoisassa törmäyksessä myös liike-energia säilyy. Kimmottomassa törmäyksessä osa liike-energiasta muuttuu sisäenergiaksi. Täysin kimmottomassa törmäyksessä kappaleet jatkavat yhdessä yhteisellä nopeudella.

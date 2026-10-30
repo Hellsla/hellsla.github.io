@@ -1149,7 +1149,8 @@
       "selite": "The blue arrow is the velocity, the orange arrow the acceleration; green is the reaction distance, brown the braking distance.",
       "lukemat": "$v_0 = {{v0}}\\,\\text{km/h} = {{v0ms}}\\,\\text{m/s}$, deceleration $a = {{a}}\\,\\text{m/s}^2$<br>$t = {{t}}\\,\\text{s}$, $v = {{v}}\\,\\text{km/h}$, $s = {{s}}\\,\\text{m}$",
       "lukemat_este": "Stopped car at $d = {{d}}\\,\\text{m}$: <strong>collision speed ${{vi}}\\,\\text{km/h}$</strong> ($0$ if the car stops in time)",
-      "lukemat_pysahdys": "After stopping: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{j} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{p} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{p} = {{tp}}\\,\\text{s}$"
+      "lukemat_pysahdys": "After stopping: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{b} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{stop} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{stop} = {{tp}}\\,\\text{s}$",
+      "lab_sj": "$s_\\text{b}$"
     }
   },
   "practice": {

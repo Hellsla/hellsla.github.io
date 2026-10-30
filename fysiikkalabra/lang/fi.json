@@ -1149,7 +1149,8 @@
       "selite": "Sininen nuoli on nopeus, oranssi kiihtyvyys; vihreä reaktiomatka, ruskea jarrutusmatka.",
       "lukemat": "$v_0 = {{v0}}\\,\\text{km/h} = {{v0ms}}\\,\\text{m/s}$, hidastuvuus $a = {{a}}\\,\\text{m/s}^2$<br>$t = {{t}}\\,\\text{s}$, $v = {{v}}\\,\\text{km/h}$, $s = {{s}}\\,\\text{m}$",
       "lukemat_este": "Pysähtynyt auto $d = {{d}}\\,\\text{m}$ päässä: <strong>törmäysnopeus ${{vi}}\\,\\text{km/h}$</strong> ($0$, jos auto pysähtyy ajoissa)",
-      "lukemat_pysahdys": "Pysähdyttyä: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{j} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{p} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{p} = {{tp}}\\,\\text{s}$"
+      "lukemat_pysahdys": "Pysähdyttyä: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{j} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{p} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{p} = {{tp}}\\,\\text{s}$",
+      "lab_sj": "$s_\\text{j}$"
     }
   },
   "practice": {

@@ -5,7 +5,7 @@
   "goals": [
     "LOPS FY4: liikemäärän säilyminen ja yksiulotteiset törmäykset",
     "LOPS FY4: ymmärtää säilymislakien merkityksen fysiikassa",
-    "Täsmennys: kaksiulotteiset törmäykset eivät kuulu keskeisiin sisältöihin"
+    "Täsmennys: törmäykset tasossa eli kaksiulotteiset törmäykset eivät kuulu keskeisiin sisältöihin"
   ],
   "prerequisites": [
     "fy4-9",

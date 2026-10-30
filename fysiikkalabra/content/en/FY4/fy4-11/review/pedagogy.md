@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cfcc474b922d5127
+CONTENT-HASH: 43de509f8395fe82
 
 ## Blocking
 
@@ -11,3 +11,6 @@ Read the en page against the Finnish stage by stage: inquiry order, predictions,
 Fixed institution names: Liikenneturva = Finnish Road Safety Council (was "Traffic Safety Committee"), OTI = Finnish Crash Data Institute, tutkijalautakunnat = road accident investigation teams (were "boards").
 Chapter names are the English ones (Momentum and impulse; Acceleration and uniformly accelerated motion; Weight, friction and the inclined plane); learn goals complete "you will learn to".
 Rendered preview/en/fy4-11 checked at 360 px; figures and sim labels show no Finnish apart from the polish item.
+
+## Follow-up (orchestrator, 2026-10-30)
+- The simulation canvas label for braking distance now comes from lang (`sims.fy4-11.lab_sj`): en shows $s_\text{b}$, matching the en readouts and lesson (the Polish item above). The Finnish and fi-easy resolved code is unchanged.

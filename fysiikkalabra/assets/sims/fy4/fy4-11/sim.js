@@ -147,7 +147,7 @@ new p5((p) => {
   }
   function dash(xx) { p.stroke(...INKC); p.strokeWeight(1.5 * U); for (let y = L.road0 - 0.4 * fh; y < L.ruler; y += 8) p.line(xx, y, xx, Math.min(y + 4, L.ruler)); }
   function barLabels(x0, xb, x1, both) {                                  // s_r left of the boundary, s_j right of it, never overlapping
-    const sr = `$s_\\text{r}$`, sj = `$s_\\text{j}$`;
+    const sr = `$s_\\text{r}$`, sj = __(`lab_sj`);
     p.textSize(fh); const wr = p.textWidth(sr), wj = p.textWidth(sj);
     let r1 = Math.max(both ? xb - 4 : (x0 + xb) / 2 + wr / 2, 4 + wr), j0 = Math.max(xb + 4, r1 + 10);
     if (j0 + wj > 596) { j0 = 596 - wj; r1 = Math.min(r1, j0 - 10); }
@@ -206,7 +206,7 @@ new p5((p) => {
     if (done && !hit) {                                                   // name the areas when they are big enough to hold a label
       p.textSize(fh); const wr = p.textWidth('$s_\\text{r}$');
       if (X(P.tr) - X(0) > wr + 8 && Y(0) - Y(M.v0) > fh * 1.6) lab('$s_\\text{r}$', (X(0) + X(P.tr)) / 2, (Y(0) + Y(M.v0)) / 2 + fh * 0.36, 'c', INKC);
-      if (X(M.tp) - X(P.tr) > 3 * wr && Y(0) - Y(M.v0) > fh * 3) lab('$s_\\text{j}$', X(P.tr + M.tj / 3), Y(M.v0 / 3) + fh * 0.36, 'c', INKC);
+      if (X(M.tp) - X(P.tr) > 3 * wr && Y(0) - Y(M.v0) > fh * 3) lab(__('lab_sj'), X(P.tr + M.tj / 3), Y(M.v0 / 3) + fh * 0.36, 'c', INKC);
     }
   }
 

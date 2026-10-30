@@ -1,6 +1,6 @@
 [
   {
-    "q": "Millä ehdolla kahden törmäävän kappaleen kokonaisliikemäärä säilyy? Miksi ehto täyttyy usein, vaikka kappaleisiin vaikuttaisi kitka?",
+    "q": "Milloin kahden törmäävän kappaleen kokonaisliikemäärä säilyy? Kappaleisiin voi vaikuttaa kitka. Miksi ehto silti usein täyttyy?",
     "a": "Kokonaisliikemäärä säilyy, kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana niin pieni, ettei sillä ole merkitystä. Törmäys kestää hyvin lyhyen ajan. Törmäysvoimat ovat silloin paljon suurempia kuin kitka, joten kitkan impulssi $F\\,\\Delta t$ jää pieneksi."
   },
   {

@@ -1111,7 +1111,7 @@
       "tyyppi": "Tilanne",
       "kimmoisa": "kimmoisa törmäys (jousi)",
       "kimmoton": "kimmoton törmäys (pehmeä puskuri)",
-      "tarra": "täysin kimmoton törmäys (tarranauha)",
+      "tarra": "täysin kimmoton (tarranauha)",
       "rajahdys": "räjähdys (jousi laukeaa)",
       "massa1": "Vaunun 1 massa",
       "massa2": "Vaunun 2 massa",
@@ -1149,7 +1149,8 @@
       "selite": "Sininen nuoli on nopeus ja oranssi nuoli kiihtyvyys. Vihreä matka on reaktiomatka ja ruskea matka jarrutusmatka.",
       "lukemat": "$v_0 = {{v0}}\\,\\text{km/h} = {{v0ms}}\\,\\text{m/s}$, hidastuvuus $a = {{a}}\\,\\text{m/s}^2$<br>$t = {{t}}\\,\\text{s}$, $v = {{v}}\\,\\text{km/h}$, $s = {{s}}\\,\\text{m}$",
       "lukemat_este": "Seisova auto on $d = {{d}}\\,\\text{m}$ päässä: <strong>törmäysnopeus ${{vi}}\\,\\text{km/h}$</strong> ($0$, jos auto pysähtyy ajoissa)",
-      "lukemat_pysahdys": "Pysähtymisen jälkeen: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{j} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{p} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{p} = {{tp}}\\,\\text{s}$"
+      "lukemat_pysahdys": "Pysähtymisen jälkeen: $s_\\text{r} = {{sr}}\\,\\text{m}$, $s_\\text{j} = {{sj}}\\,\\text{m}$, <strong>$s_\\text{p} = {{sp}}\\,\\text{m}$</strong>, $t_\\text{p} = {{tp}}\\,\\text{s}$",
+      "lab_sj": "$s_\\text{j}$"
     }
   },
   "practice": {
