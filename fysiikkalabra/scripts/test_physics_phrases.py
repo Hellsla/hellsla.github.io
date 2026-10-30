@@ -24,9 +24,11 @@ CAUGHT = {   # the audit's original sentences (FY1–FY3, 2026-10-28)
     "all-fuels-co2": ["Kaikki polttoaineet tuottavat palaessaan hiilidioksidia."],
     "absolute-zero-stop": ["Absoluuttisessa nollapisteessä hiukkasten liike pysähtyy kokonaan."],
     "heat-direction": ["Lämpö siirtyy aina lämpimämmästä kappaleesta kylmempään."],
-    "higher-line-ahead": ["Kuvaajasta nähdään myös, kumpi kappale on edellä milloinkin: se, jonka viiva on ylempänä."],   # fy4-12, 2026-10-30
+    "higher-line-ahead": ["Kuvaajasta nähdään myös, kumpi kappale on edellä milloinkin: se, jonka viiva on ylempänä.",
+                          "Lukema $x_\\text{B} - x_\\text{A}$ on B:n etumatka: se on positiivinen, kun B on edellä, ja nolla kohtaamishetkellä."],   # fy4-12, 2026-10-30
 }
 PASSED = [   # their corrections and nearby right statements
+    "Lukema $x_\\text{B} - x_\\text{A}$ kertoo, kuinka paljon suurempi B:n paikkakoordinaatti on, ja se on nolla kohtaamishetkellä.",
     "Kun mittalaitteen asteikolta luetaan arvo, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä asteikkovälistä.",
     "Lukeman epävarmuus on siis pienempi kuin asteikkoväli, mutta mittauksen kokonaisepävarmuus voi olla tätä suurempi.",
     "Mittauspisteet eivät yleensä osu kaikki täsmälleen samalle suoralle.",

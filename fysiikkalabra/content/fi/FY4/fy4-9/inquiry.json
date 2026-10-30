@@ -15,7 +15,7 @@
    "id": "hook",
    "stage": "herata",
    "type": "hook",
-   "text": "Korkeushyppääjä ponnistaa ja kaartuu selällään riman yli yli kahden metrin korkeudella. Riman takana hän putoaa paksulle patjalle ja nousee heti ylös. Ilman patjaa sama pudotus nurmelle voisi katkaista luita. Kumpaankin alustaan hyppääjä osuu samalla nopeudella, ja kummassakin hän pysähtyy.",
+   "text": "Korkeushyppääjä ponnistaa ja kaartuu selällään yli kahden metrin korkeudella olevan riman yli. Riman takana hän putoaa paksulle patjalle ja nousee heti ylös. Ilman patjaa sama pudotus nurmelle voisi katkaista luita. Kumpaankin alustaan hyppääjä osuu samalla nopeudella, ja kummassakin hän pysähtyy.",
    "question": "Mikä patjassa suojaa hyppääjää, kun hänen nopeutensa muuttuu kummassakin tapauksessa yhtä paljon?"
   },
   {
@@ -490,11 +490,11 @@
    "prompt": "Selitä liikemäärän ja impulssin avulla, miksi korkeushyppääjä ei loukkaannu pudotessaan paksulle patjalle, vaikka sama pudotus kovalle maalle voisi olla vaarallinen.",
    "criteria": [
     "Vastaus kertoo, että hyppääjä osuu kumpaankin alustaan samalla nopeudella ja pysähtyy, joten liikemäärän muutos on sama.",
-    "Vastaus kertoo, että impulssiperiaatteen mukaan alustan on silloin annettava sama impulssi.",
+    "Vastaus kertoo, että impulssiperiaatteen mukaan hyppääjään kohdistuvan kokonaisvoiman impulssi on silloin sama.",
     "Vastaus kertoo, että patja painuu kasaan ja pidentää pysähtymisaikaa.",
     "Vastaus päättelee impulssista $I = F\\,\\Delta t$, että pidempi aika tarkoittaa pienempää keskimääräistä voimaa, eikä väitä patjan pienentävän impulssia."
    ],
-   "model": "Hyppääjä putoaa samalta korkeudelta, joten hän osuu patjaan ja kovaan maahan samalla nopeudella. Kummassakin hän pysähtyy, joten hänen liikemääränsä muuttuu yhtä paljon, arvosta $mv$ nollaan. Impulssiperiaatteen mukaan alustan on silloin annettava hänelle sama impulssi. Impulssi on voima kertaa aika. Kova maa pysäyttää kehon muutaman senttimetrin matkalla hyvin lyhyessä ajassa, joten voiman on oltava suuri. Paksu patja painuu kasaan kymmenien senttimetrien matkalta, ja pysähtyminen kestää monta kertaa kauemmin. Sama impulssi syntyy silloin monta kertaa pienemmällä keskimääräisellä voimalla, eikä pieni voima vahingoita kehoa. Patja ei siis pienennä impulssia tai liikemäärän muutosta, vaan se jakaa saman impulssin pidemmälle ajalle."
+   "model": "Hyppääjä putoaa samalta korkeudelta, joten oletetaan, että hän osuu patjaan ja kovaan maahan samalla nopeudella. Kummassakin hän pysähtyy, joten hänen liikemääränsä muuttuu yhtä paljon, arvosta $mv$ nollaan. Impulssiperiaatteen mukaan häneen kohdistuvan kokonaisvoiman impulssi on silloin sama, ja siitä suurin osa tulee alustan voimasta. Impulssi on voima kertaa aika. Kova maa pysäyttää kehon muutaman senttimetrin matkalla hyvin lyhyessä ajassa, joten voiman on oltava suuri. Paksu patja painuu kasaan kymmenien senttimetrien matkalta, ja pysähtyminen kestää monta kertaa kauemmin. Sama impulssi syntyy silloin monta kertaa pienemmällä keskimääräisellä voimalla, eikä pieni voima vahingoita kehoa. Patja ei siis pienennä impulssia tai liikemäärän muutosta, vaan se jakaa saman impulssin pidemmälle ajalle."
   },
   {
    "id": "lahtolippu",

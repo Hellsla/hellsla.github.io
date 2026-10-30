@@ -57,7 +57,7 @@ RULES = [
     ("heat-direction", re.compile(r"lämpö\w* (?:siirtyy|virtaa|kulkee) aina lämpimämmä\w*[^.;]{0,40}kylmempä", I),
      re.compile(r"netto|säteil\w*[^.;]*molem|itsestään|johtu|kulje\w*", I),
      "net transfer is from warm to cold; radiation leaves both bodies (say 'nettomääräisesti' or name conduction)"),
-    ("higher-line-ahead", re.compile(r"(?:edellä|johdossa)[^.;]{0,60}(?:viiva|suora|kuvaaja)\w* (?:on |kulkee )?(?:ylempänä|ylempi|korkeammalla)|(?:ylempänä|ylempi|korkeammalla)[^.;]{0,40}(?:viiva|suora|kuvaaja)\w*[^.;]{0,40}(?:on |kuuluu )?(?:edellä|johdossa)", I),
+    ("higher-line-ahead", re.compile(r"(?:edellä|johdossa)[^.;]{0,60}(?:viiva|suora|kuvaaja)\w* (?:on |kulkee )?(?:ylempänä|ylempi|korkeammalla)|(?:ylempänä|ylempi|korkeammalla)[^.;]{0,40}(?:viiva|suora|kuvaaja)\w*[^.;]{0,40}(?:on |kuuluu )?(?:edellä|johdossa)|x_\\text\{\w+\} - x_\\text\{\w+\}\$? on [\w:]+ etumatka|(?:positiivinen|negatiivinen)[^.;]{0,20}\bkun \w+ on (?:edellä|takana)", I),
      re.compile(r"positiivise\w* suuntaan|riippuu\w*[^.;]{0,30}suun", I),
      "a higher line in a (t, x) graph means a larger position coordinate; which body is ahead depends on the direction of motion (teacher 2026-10-30, fy4-12)"),
     ("dive-exhale", re.compile(r"hengitettävä (?:koko (?:ajan|nousun ajan) )?ulos|on puhallettava (?:koko ajan )?ulos|puhalla\w* (?:koko ajan )?ulos (?:noust|koko nousun)", I), None,

@@ -206,5 +206,5 @@ a 0
 **Kaava:** $F_\text{noste} - mg - N = 0$, joten $N = F_\text{noste} - mg$
 **Muunnokset:** $m = 4{,}0\,\text{g} = 4{,}0 \cdot 0{,}001\,\text{kg} = 0{,}0040\,\text{kg}$
 **Sijoitus:** $N = 0{,}10\,\text{N} - 0{,}0040\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}10\,\text{N} - 0{,}03924\,\text{N} = 0{,}06076\,\text{N}$
-**Vastaus:** $0{,}061\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $4{,}0\,\text{g}$ ja noste $0{,}10\,\text{N}$ on annettu kahdella numerolla.
+**Vastaus:** $0{,}061\,\text{N} \approx 0{,}06\,\text{N}$. Tukivoima on kahden voiman erotus. Erotuksessa ratkaisee desimaalien määrä. Noste $0{,}10\,\text{N}$ tunnetaan sadasosanewtonin tarkkuudella.
 **Järkevyys:** Noste on suurempi kuin paino $0{,}039\,\text{N}$. Ilman kattoa pallo nousisi. Katto pysäyttää pallon työntämällä alaspäin juuri ylimäärän verran: $0{,}039\,\text{N} + 0{,}061\,\text{N} = 0{,}10\,\text{N}$. Tukivoima osoittaa tässä alas, ei ylös.

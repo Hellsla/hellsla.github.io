@@ -78,7 +78,7 @@ new p5((p) => {
       let left = Math.min(p.deltaTime, 100) / 1000 * Number(selSpeed.value());
       while (left > 1e-9 && running) {
         const d = Math.min(DT, left); MD.step(R, d); left -= d;
-        if (R.after !== null && outside()) R.done = true;
+        if (outside()) R.done = true;   // before, during and after the contact
         if (R.done) running = false;
       }
     }

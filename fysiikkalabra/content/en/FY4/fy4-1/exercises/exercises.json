@@ -3,7 +3,7 @@
     {
       "id": "fy4-1-L1-01",
       "level": 1,
-      "text": "A runner moves at a uniform velocity along a straight track a distance of $120\\,\\text{m}$ in $15\\,\\text{s}$ in the direction chosen as positive. What is the runner's velocity?",
+      "text": "A runner moves at a uniform velocity along a straight track and covers $120\\,\\text{m}$ in $15\\,\\text{s}$ in the direction chosen as positive. What is the runner's velocity?",
       "answer": 8.0,
       "unit": "m/s",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy4-1-L2-01",
       "level": 2,
-      "text": "A car drives along a straight road at a uniform velocity $90\\,\\text{km/h}$. How long a distance does it travel in $12\\,\\text{s}$? Give the answer in metres.",
+      "text": "A car drives along a straight road at a uniform velocity $90\\,\\text{km/h}$. How far does it travel in $12\\,\\text{s}$? Give the answer in metres.",
       "answer": 300,
       "unit": "m",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy4-1-L3-01",
       "level": 3,
-      "text": "A cyclist rides along a straight road east $6.0\\,\\text{km}$ in $20\\,\\text{min}$ and then turns straight back, riding the same $6.0\\,\\text{km}$ west in $30\\,\\text{min}$. Calculate the average speed over the whole trip, that is the distance travelled divided by the elapsed time. Give the answer in the unit m/s.",
+      "text": "A cyclist rides east along a straight road $6.0\\,\\text{km}$ in $20\\,\\text{min}$ and then turns straight back, riding the same $6.0\\,\\text{km}$ west in $30\\,\\text{min}$. Calculate the average speed over the whole trip, that is the distance travelled divided by the elapsed time. Give the answer in the unit m/s.",
       "answer": 4.0,
       "unit": "m/s",
       "tolerance": 0.02

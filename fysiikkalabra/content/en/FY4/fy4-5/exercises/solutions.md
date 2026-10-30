@@ -206,5 +206,5 @@ a 0
 **Formula:** $F_\text{b} - mg - N = 0$, so $N = F_\text{b} - mg$
 **Conversions:** $m = 4.0\,\text{g} = 4.0 \cdot 0.001\,\text{kg} = 0.0040\,\text{kg}$
 **Substitution:** $N = 0.10\,\text{N} - 0.0040\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.10\,\text{N} - 0.03924\,\text{N} = 0.06076\,\text{N}$
-**Answer:** $0.061\,\text{N}$, two significant figures like the mass $4.0\,\text{g}$ and the buoyancy $0.10\,\text{N}$.
+**Answer:** $0.061\,\text{N} \approx 0.06\,\text{N}$. The normal force is a difference, and in a difference the number of decimals decides: the buoyancy $0.10\,\text{N}$ is known to a hundredth of a newton.
 **Reasonableness:** The buoyancy is larger than the weight, $0.039\,\text{N}$, so without the ceiling the balloon would rise. The ceiling stops it by pushing down exactly by the excess: $0.039\,\text{N} + 0.061\,\text{N} = 0.10\,\text{N}$. Here the normal force points down, not up.

@@ -1,17 +1,26 @@
-VERDICT: PASS
-CONTENT-HASH: 6f2cf62a1b9423b6
+VERDICT: FAIL
+CONTENT-HASH: 262607ec813fe5a1
 
 ## Blocking
+- inquiry.json:144 (sim `calc`) — **B.** It says "$x_\text{B} - x_\text{A}$ on B:n etumatka: se on positiivinen, kun B on edellä" for every case, but in case 1 (koe 1) the bodies meet head-on and B moves in the negative direction. A larger $x$ is not "ahead": this is the replaced error in another form. — Fix: "Lukema $x_\text{B} - x_\text{A}$ kertoo, kuinka paljon suurempi B:n paikkakoordinaatti on, ja se on nolla kohtaamishetkellä. Kun kappaleet liikkuvat positiiviseen suuntaan, se on B:n etumatka."
+- inquiry.json:190, 191, 203 (koe 1 hints 2–3 and solution) — **B**, the same error. The separation in the head-on case is called "etumatka" (for example "Etumatka on aluksi 60 m"), but neither body is ahead. — Fix: write "välimatka" or "paikkojen ero $x_\text{B} - x_\text{A}$". Koe 3 can keep "etumatka": both bodies move in the $+x$ direction there.
 
 ## Polish
-- tests/sims/fy4-12.json (canvas assertion) — the 600×400 check now holds only on a wide screen, so nothing checks the phone canvas. This is acceptable: the change is layout only, and the physics assertions are unchanged and pass. — If wanted, assert `c.height===575` on a narrow root.
-- inquiry.json exp-3, correct option — "ensin juoksija saavuttaa bussin" is right, but the juoksija also passes the bus (the gap changes sign). Fine (C); optionally "saavuttaa ja ohittaa".
+- lesson.md:462 (vt aria-label) — "Hetkeen t = 3,0 s asti pyöräilijä on edellä ja etumatka kasvaa" reads as if the cyclist leads only until 3,0 s. — Fix: "Pyöräilijä on edellä, ja hetkeen 3,0 s asti etumatka kasvaa".
+- The en and fi-easy inquiry.json carry the same sentences. Regenerate them after the fix.
+- The checker rule higher-line-ahead missed the "positiivinen, kun B on edellä" form.
 
 ## Checked
-- One script recomputed every number from the task data with my own meeting-root model. All agree with the text and with lesson-answers.py: the figure (12 s, 36 m), the same-place pass (6,0 s, 36 m, 12 m/s, largest gap 9,0 m, both vt areas 9 m), the worked example (roots −2,0 s and 8,0 s, 64 m, 16 m/s, gap 25 m at 3,0 s), cases 1–5 (10 s and 50 m; −10 s; 4 ± √6 s = 1,55 s and 6,45 s), the transfer task (8,0 s, 96 m, 24 m/s), check-2 and its mistakes (6,0; 15; 30; 10 s), pr-paikka (25/50/10) and exit ticket 3.
-- Round-2 polish is fixed. The exp-3 "Kerran" option ("ohittaa … pysyy edellä") is now consistent and still wrong, and its feedback is right. The gaps at 0, 2, 6 and 7 s are −5, +1, +1 and −1,5 m, so the sign changes twice. The siirto Periaate now reads "Kun ohitushetki tunnetaan".
-- sim.js diff: only the layout changed (WIDE/NARROW lane, ruler and graph boxes, and the legend row). The physics and simState are untouched. GX, GY and X read the active box, so the graph and the ruler stay true to the model in both layouts. The 390 px captures show the axes and the starting positions correctly.
-- Experiments: tapaus is locked and t is varied. 10 s and 8,0 s lie on the 0,5 s grid. xA, xB, vA, gap and meetings exist in simState.
-- Each choice item has exactly one correct option, and every distractor's feedback gives the right reason.
-- Theory, summary, contribution, model answers and exit ticket all say the same thing. The largest gap carries the condition "kun takana oleva lähtee hitaampana", and two positive roots are allowed.
-- Scope: within FY4 "tasainen ja tasaisesti kiihtyvä suoraviivainen liike". The standing rules hold (LaTeX, \cdot, \overline{v}, blue v and orange a).
+- lesson.md:338 uses the teacher's wording, and "edellä" is limited to motion in the $+x$ direction.
+- No other claim that a higher line means "ahead" appears in lesson.md, the figure labels, the exit ticket, sim-spec, sim.js or the sim's readout strings.
+- Every other use of edellä, takana and etumatka is in a situation with motion in the $+x$ direction.
+- I recomputed every number and all agree:
+  - head-on meeting: 12 s, 36 m
+  - same-start pass: 6,0 s, 36 m, 2v, gap 9 m
+  - example: 8,0 s, 64 m, 16 m/s, other root −2,0 s, 25 m
+  - sim cases 1, 4 and 5: 50 m; −10 s; 1,55 s and 6,45 s
+  - transfer task: 24 m/s
+  - check-2: 6,0 s, with mistakes at 15, 30 and 10 s
+- The sim implements the model and states its limits.
+- Each choice item has exactly one correct option, and its feedback is right.
+- The hash is unchanged from start to end.

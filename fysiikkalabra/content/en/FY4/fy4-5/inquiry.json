@@ -228,7 +228,7 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Why is the normal force in a push larger than the weight $196\\,\\text{N}$?",
+        "prompt": "Why is the normal force in a push larger than the weight $196\\,\\text{N}$ when the angle $\\alpha > 0^\\circ$?",
         "choices": [
           {
             "text": "The vertical component of the force of the handle points down, so the ice has to support it in addition to the weight.",

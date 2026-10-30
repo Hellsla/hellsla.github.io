@@ -228,7 +228,7 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "Miksi tukivoima on työnnössä suurempi kuin paino $196\\,\\text{N}$?",
+        "prompt": "Miksi tukivoima on työnnössä suurempi kuin paino $196\\,\\text{N}$, kun kulma $\\alpha > 0^\\circ$?",
         "choices": [
           {
             "text": "Kahvan voiman pystykomponentti osoittaa alas, joten jään on tuettava painon lisäksi sitä.",

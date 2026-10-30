@@ -63,20 +63,23 @@ def liikemaara():
 
 
 def pysaytys():
-    """Ydinajatus: the force on a 1,0 kg cart stopped from 2,0 m/s by a hard and a soft bumper (the sim's model): equal areas."""
-    f = Fig("fy49-pysaytys", 340, "Kuvaaja mittakaavassa, simulaation mallin arvoja: puskurin voima F newtoneina ajan funktiona, kun "
-            "1,0 kilogramman kärry pysähtyy nopeudesta 2,0 metriä sekunnissa. Kova puskuri: voima nousee 80 newtoniin ja törmäys kestää "
-            "0,039 sekuntia, kapea ja korkea käyrä. Pehmeä puskuri: voima nousee vain 20 newtoniin, mutta törmäys kestää 0,157 sekuntia, "
-            "matala ja leveä käyrä. Molempien käyrien alle jäävät pinta-alat on varjostettu, ja ne ovat yhtä suuret, 2,0 newtonsekuntia.")
-    ax = Axes(f, (92, 286), (478, 52), x=(0, 0.2), y=(0, 100), xticks=[0, 0.05, 0.1, 0.15, 0.2], yticks=[0, 20, 40, 60, 80, 100],
-              xlabel=r"t\ (\text{s})", ylabel=r"F\ (\text{N})")
-    for Fm, T, dash, lx, ly, name in ((80, 0.03927, None, 0.048, 80, r"\text{kova}"), (20, 0.15708, "9 6", 0.162, 30, r"\text{pehmeä}")):
+    """Ydinajatus: the force F_x on a 1,0 kg cart stopped from 2,0 m/s by a hard and a soft bumper (the sim's model), below the
+    axis as in the sim: equal areas, I = -2,0 N·s."""
+    f = Fig("fy49-pysaytys", 340, "Kuvaaja mittakaavassa, simulaation mallin arvoja: puskurin kärryyn kohdistaman voiman x-komponentti F_x newtoneina aja"
+            "n funktiona, kun 1,0 kilogramman kärry pysähtyy nopeudesta 2,0 metriä sekunnissa. Kärry liikkuu positiiviseen suuntaan"
+            " ja voima osoittaa negatiiviseen suuntaan, joten käyrät ovat vaaka-akselin alapuolella. Kova puskuri: voima on suurimm"
+            "illaan miinus 80 newtonia ja törmäys kestää 0,039 sekuntia, kapea ja syvä käyrä. Pehmeä puskuri: voima on suurimmillaa"
+            "n vain miinus 20 newtonia, mutta törmäys kestää 0,157 sekuntia, matala ja leveä käyrä. Käyrien ja vaaka-akselin välise"
+            "t alueet on varjostettu, ja ne ovat yhtä suuret: kummankin impulssi on miinus 2,0 newtonsekuntia.")
+    ax = Axes(f, (92, 286), (478, 52), x=(0, 0.2), y=(-100, 0), xticks=[0, 0.05, 0.1, 0.15, 0.2], yticks=[-100, -80, -60, -40, -20, 0],
+              xlabel=r"t\ (\text{s})", ylabel=r"F_x\ (\text{N})")      # signed, like the sim: the bumper pushes the cart back
+    for Fm, T, dash, lx, ly, name in ((-80, 0.03927, None, 0.048, -80, r"\text{kova}"), (-20, 0.15708, "9 6", 0.162, -30, r"\text{pehmeä}")):
         w = math.pi / 2 / T
         pts = [(T * i / 60, Fm * math.sin(w * T * i / 60)) for i in range(61)] + [(T, 0)]
         ax.area([(0, 0)] + pts, HOT_LIGHT, 0.45)
         ax.line(pts, RED, 3, dash)
         f.tex(ax.X(lx), ax.Y(ly), name, "start", RED, bg=True)
-    f.tex(ax.X(0.128), ax.Y(52), r"\text{yhtä suuret pinta-alat}", "middle", INK, bg=True)
+    f.tex(ax.X(0.128), ax.Y(-52), r"\text{yhtä suuret pinta-alat}", "middle", INK, bg=True)
     return f.svg()
 
 

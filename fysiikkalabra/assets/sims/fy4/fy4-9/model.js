@@ -2,7 +2,7 @@
 // Friction and air resistance are neglected and the weight and the normal force cancel, so the only horizontal force is
 // the bumper's. While the bumper is pressed in by c it pushes the cart to the left: F_x = −k c (k: hard 1600, medium 400,
 // soft 100 N/m). Every force, impulse and momentum here is an x-component with its sign (+x to the right).
-//   pysahtyy  a crushable bumper (perfectly plastic): it does not spring back, so it pushes only while the cart still moves
+//   pysahtyy  a crushable bumper (deforms permanently, like a plastic one): it does not spring back, so it pushes only while the cart still moves
 //             into it; when the cart stops, the force ends and the cart stays at rest against the crushed bumper. The
 //             cart's kinetic energy has gone into the bumper's permanent deformation and internal energy. (A real
 //             crushable bumper unloads quickly but not instantly; the model makes that unloading time zero.)

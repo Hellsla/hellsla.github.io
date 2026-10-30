@@ -1,19 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: abd12ce858254990
+VERDICT: FAIL
+CONTENT-HASH: 0e9004dded5fe968
 
 ## Blocking
+- solutions.md:75–83 (L1-05) — **A**: the figure contradicts the stated balance. At constant velocity the step says $G_x$ and $F_\mu$ cancel (both 14,83). Yet $\overline{F}_\mu$ is enlarged under the 40 % rule to 30,6 px, while the dashed $\overline{G}_x$ stays at true scale, 14,6 px. — Fix: fbd.py must scale a component by the same enlargement as the forces along its axis.
+- solutions.md:112–120 (L2-02) — **A**, same cause, with the order reversed. In truth $G_x$ = 20,8 > $F_\mu$ = 13,4, and the sled accelerates down the slope, as the drawn $\overline{a}$ says. Yet $F_\mu$ is drawn 29,9 px and $G_x$ 18,9 px, so the net force along the slope looks up-slope, against $\overline{a}$. — Fix: as above.
 
 ## Polish
-- solutions.md:42 (L1-04, Järkevyys) — "$6\,\text{s} : 0{,}8 \approx 7{,}5\,\text{s}$" mixes units and rounds μg; write $(6{,}0\,\text{m/s}) : (0{,}785\,\text{m/s}^2) \approx 7{,}6\,\text{s}$.
-- solutions.md L2-03 (Voimakuvio) — the diagram does not state the relative length; the jumper slows down, so on average $F_\text{v}$ is longer than $G$ (as in L3-03).
-- solutions.md L2-04 — a real lift has a counterweight; a half-sentence that the task asks only for the rope's power on the car would answer that question before a student asks it.
+- solutions.md:165–179 (L3-01) — The text says "Kummallakin rinteen osalla" but only the 25° and flat parts are drawn. Add the 10° part (N 98,48, F_μ 11,82, a alas), or say that it looks the same.
+- solutions.md:21–27 (L1-02) — The point is a up while the jumper moves down; add `v alas` as L2-03 and L3-03 do.
+- solutions.md:36–43 (L1-03) — The chute's 30° is not in the task. Fair, since the shape does not matter; the step could call it an example point.
 
 ## Checked
-- The changed line solutions.md:76 (L2-02, Järkevyys): $h = 18{,}0\,\text{m}\cdot\sin 12{,}0^\circ = 3{,}742\,\text{m} \approx 3{,}74\,\text{m}$ (the drop height, as $h = L\sin\alpha$ in the brief); $\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} = 8{,}57\,\text{m/s} \approx 8{,}6\,\text{m/s}$ (unrounded $h$ gives 8,569, same); $1 - 5{,}10^2/8{,}57^2 = 0{,}65$, so "noin kaksi kolmasosaa" holds; $\tan 12{,}0^\circ = 0{,}213 > 0{,}137$ holds. The line uses the same frictionless limit as the brief's Järkevyys ($\sqrt{2gh}$).
-- All twelve answers recomputed with my own formulas in one script; each agrees with exercises.json and answers.py to < 1e-4 (742,7 N; 1,217 kN; 7,924 m/s; 22,94 m; 8,531°; 1,063 m/s²; 0,1373; 220,5 kJ; 6,671 kW; 37,5 m; 2,287 m/s; 2,124 kN).
-- L2-02 intermediate values 36,71, 13,01, 23,71 and 172,72 m²/s² recomputed.
-- Voimakuvio steps in every solution: right interactions, normal force ⟂ surface, friction up the slope or backwards, no forward force (L1-03, L1-04), velocity and acceleration never drawn as forces, components dashed (L1-05), no third-law pair on one body.
-- L3-02 against figure ex-hissi: 650 N for 1,0–3,0 s, 735,75 N at constant speed, 800 N stops the lift by 8,67 s; the description gives the same data and not the answer.
-- L3-01: h/μ is independent of the angles, both slope parts are steeper than 6,8°, and the task text excludes bend losses.
-- L3-03 kinematic cross-check (20,5 m/s², 60,0 m) and L2-04 cross-check (T = 8,34 kN, P = Tv = 6,67 kW) hold.
-- Signs, positive directions, units, conversions, significant figures and tolerances in every solution; every task is within FY4 scope and uses the brief's notation.
+- All 12 blocks rendered and viewed; every arrow (and dashed component) measured from the SVG.
+- Spec values recomputed from the task text: 686,7 and 742,7; 882,9 and 2100; 259,8 = 300·cos 30°; μ 0,080; α = tan⁻¹ 0,15 = 8,53°, N 98,89, F_μ 14,83; 588,6 and 652,4; N 97,81, F_μ 13,43; mean F_v = 784,8 + 40·2668/145 = 1520,8; 8338,5 twice; 90,63, 10,88, and 100 with 12 on the flat; 735,75 and 650; 686,7 and 2124,0.
+- `pinta −α` rises to the left. Friction is drawn up the slope from the upper corner, and a, v and +x point down the slope, as "x rinnettä alas" says.
+- N is perpendicular to the slope, G vertical from the centre, and the components are dashed with open heads. tan 12° > μ gives the down-slope a in L2-02.
+- In the lift and force-plate tasks, N is a push to the bottom face: longer than G when a is up, shorter when a is down (drawn 1,08, 1,11 and 0,885).
+- The earlier polish on L2-03's relative lengths is resolved: F_v is drawn 1,94 × G.
+- Text and answers are unchanged since the PASS.
+- Hash 0e9004dded5fe968 at the start and at the end.

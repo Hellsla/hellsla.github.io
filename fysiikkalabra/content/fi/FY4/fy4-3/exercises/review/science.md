@@ -1,15 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 1e51956df59067b8
+VERDICT: FAIL
+CONTENT-HASH: eabfc51dd0a19623
 
 ## Blocking
+- solutions.md:58-59 (fy4-3-L1-04) — A, magnitude: the car's diagram gives $G = N = 900\,\text{N}$, so the weight is drawn only about 1,5 times the driving force of 620 N. A real car weighs about $1\cdot 10^4\,\text{N}$, 15–25 times the driving force, so the to-scale diagram gives a wrong picture of the magnitudes. — Fix: use a realistic weight, for example `G 12000` / `N 12000`. Note that fbdspec's enlargement of small forces (`shown`, an affine map) would then draw $F$, $F_\text{i}$ and $F_\text{r}$ almost the same length, and the horizontal balance would no longer show. The tool should therefore enlarge small forces by one common factor, keeping $F = F_\text{i} + F_\text{r}$ visible. The other option is to leave out G and N and keep the sentence "Pystysuunnassa paino ja tukivoima kumoavat toisensa".
 
 ## Polish
-- solutions.md (L2-02), exercises.json (L2-02, L3-01) — The tasks use "noste" for buoyancy, while the lesson's worked-example figure labels wing lift $\overline{F}_\text{noste}$ (see the lesson report). No change is needed here if the lesson renames its lift symbol.
+- solutions.md:39 (L1-03) — The skater's weight of 590 N and the acceleration away from the wall are not in the task. They are reasonable (about 60 kg, frictionless ice), but the text says "Laki pätee riippumatta siitä, liikkuuko kumpikaan", and the diagram shows only one of those cases. Adding "jää oletetaan kitkattomaksi" to the Voimakuvio sentence would cover it (C).
+- solutions.md L2-02, L3-01 — In the diagrams buoyancy is $\overline{F}_\text{n}$. docs/force-diagrams.md names it $\overline{F}_\text{noste}$. This symbol issue is carried over from round 1.
 
 ## Checked
-- All 12 answers recomputed independently: 18 N, 850 N, 90 N, 240 N, 6,38 → 6,4 N, 13 N, 65 N, 833,9 → 830 N, 8,94 → 8,9 kN, 0,27 kN upward, 0,60 N, 1,9 N. answers.py agrees, and each answer is within its tolerance.
-- The physics models are right. First-law equilibria and third-law pairs are kept apart in every solution. In L2-01 the force passes along a chain of pairs to the table. In L3-02 the magnetic pair acts without contact. In L3-03 the scale reads the force on its hook.
-- Force diagrams described in the solutions are correct: the chosen body is a rectangle, $\overline{G}$ is drawn from the centre, $\overline{N}$ and $\overline{T}$ from the contact or attachment surface, and a pushing force ends at the body. Reaction forces on other bodies are excluded and named, as in L1-03 and L1-05. Velocity is not drawn as a force (L2-03, L3-01).
-- Directions are right: drag points up while the balloon and the parachutist move down, and the book pulls the Earth upward.
-- Every solution states the positive direction, writes the equation symbolically before substituting, and gives units. Rounding follows the limiting datum. Each reasonableness check is a real check: the tug-of-war is won by ground friction, and the lift's cable tension is the same at rest as at constant speed.
-- The varied L2-02 (weight and buoyancy as distractors) and the L3-01 wording (size checked, direction asked in words) are consistent with the answers.
+- All 12 diagrams rendered (`fbdspec.py show`) and checked in screenshots.
+- Every diagram has the same body, forces and symbols as its Voimakuvio sentence.
+- The sizes match the task data: 18; 850; 6,38; 8,0 + 5,0 = 13; 720/65; 833,85; 5800 + 3139,2 = 8939,2; 4620 = 4350 + 270; 0,30 + 0,30 = 0,60; 1,5 + 0,40 = 1,9.
+- Third-law partners are kept off the diagrams: the book's pull on the Earth, the skater's push on the wall, and the apple's force acting on the hook (not on the apple).
+- The pushes ($\overline{F}_\text{KL}$, $\overline{F}_2$, $\overline{F}_\text{m}$) end on the correct face. The magnetic force is drawn as a push on the top face, which is acceptable for a non-contact force.
+- $\overline{v}$ is drawn in blue apart from the forces (parachutist, balloon). Every equilibrium diagram has a = 0.
+- Answers are unchanged from round 1. The text diff is only the added spec blocks.
+- The hash was the same at the start and at the end.
