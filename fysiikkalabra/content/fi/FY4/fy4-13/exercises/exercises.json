@@ -1,0 +1,117 @@
+{
+  "level1": [
+    {
+      "id": "fy4-13-L1-01",
+      "level": 1,
+      "text": "Kärry, jonka massa on $1{,}5\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu lanka vetää sitä vaakasuoraan $3{,}0\\,\\text{N}$:n voimalla. Piirrä kärryn voimakuvio. Kuinka suuri on kärryn kiihtyvyys?",
+      "answer": 2.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-02",
+      "level": 1,
+      "text": "Punnus, jonka massa on $0{,}60\\,\\text{kg}$, roikkuu langan varassa ja laskee kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Ilmanvastus jätetään huomiotta. Piirrä punnuksen voimakuvio. Kuinka suuri on langan jännitysvoima?",
+      "answer": 4.7,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-03",
+      "level": 1,
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on kärryn kiihtyvyys, kun kappaleet liikkuvat?",
+      "answer": 2.8,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-04",
+      "level": 1,
+      "text": "Kaksi samanlaista kappaletta, kummankin massa on $3{,}0\\,\\text{kg}$, roikkuu kevyen langan päissä kevyen ja kitkattoman väkipyörän yli. Kappaleet ovat levossa. Piirrä toisen kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima?",
+      "answer": 29,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-05",
+      "level": 1,
+      "text": "Kaksi kärryä, joiden massat ovat $1{,}0\\,\\text{kg}$ ja $2{,}0\\,\\text{kg}$, on sidottu toisiinsa kevyellä langalla kitkattomalla radalla. Kevyempään kärryyn kohdistuu vaakasuora $12\\,\\text{N}$:n vetovoima, ja kärryt liikkuvat yhdessä. Kuinka suuri on kärryjen yhteinen kiihtyvyys?",
+      "answer": 4.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy4-13-L2-01",
+      "level": 2,
+      "text": "Nosturin köysi nostaa laatikkoa, jonka massa on $50\\,\\text{kg}$. Sen alapuolella roikkuu toisen köyden päässä toinen laatikko, jonka massa on $30\\,\\text{kg}$. Laatikot kiihtyvät ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$. Köydet ovat kevyet, ja ilmanvastus jätetään huomiotta. Piirrä kummankin laatikon voimakuvio vihkoon ennen kuin avaat ratkaisun. Kuinka suuri on nosturin köyden jännitysvoima?",
+      "answer": 880,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "draw",
+      "model_figure": "fy4-13/malli-ketju"
+    },
+    {
+      "id": "fy4-13-L2-02",
+      "level": 2,
+      "text": "Kevyen langan päissä roikkuu väkipyörän yli kappaleet, joiden massat ovat $0{,}50\\,\\text{kg}$ ja $1{,}0\\,\\text{kg}$. Väkipyörä on kevyt ja kitkaton, ja ilmanvastus jätetään huomiotta. Kappaleet päästetään liikkeelle. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima?",
+      "answer": 6.5,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-03",
+      "level": 2,
+      "text": "Jäällä on kaksi kelkkaa, joiden massat ovat $3{,}0\\,\\text{kg}$ ja $2{,}0\\,\\text{kg}$. Kelkat on sidottu toisiinsa kevyellä narulla. Raskaampaa kelkkaa vedetään toisella narulla vaakasuoraan $20\\,\\text{N}$:n voimalla, ja kelkat liikkuvat yhdessä. Kitka jätetään huomiotta. Piirrä kummankin kelkan voimakuvio. Kuinka suuri on kelkkojen välisen narun jännitysvoima?",
+      "answer": 8.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-04",
+      "level": 2,
+      "text": "Väkipyörän yli kulkevan kevyen langan päissä roikkuu kaksi kappaletta. Kevyemmän massa on $0{,}60\\,\\text{kg}$. Kappaleet päästetään liikkeelle, ja raskaampi laskee kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$. Väkipyörä on kevyt ja kitkaton, ja ilmanvastus jätetään huomiotta. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on raskaamman kappaleen massa?",
+      "answer": 0.91,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy4-13-L3-01",
+      "level": 3,
+      "text": "Hissin kori, jonka massa on $800\\,\\text{kg}$, roikkuu kevyen köyden päässä. Köysi kulkee kevyen ja kitkattoman pyörän yli, ja sen toisessa päässä on vastapaino, jonka massa on $1000\\,\\text{kg}$. Vastapaino laskee ja kori nousee. Kitka ja ilmanvastus jätetään huomiotta. Piirrä korin ja vastapainon voimakuviot. Kuinka suuri on korin köyden jännitysvoima?",
+      "answer": 8700,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-02",
+      "level": 3,
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä ja sidottu langalla väkipyörän yli riippuvaan punnukseen. Lanka katkeaa, jos sen jännitysvoima ylittää $3{,}0\\,\\text{N}$. Kuinka suuri on suurin punnuksen massa, jolla lanka vielä kestää, kun kappaleet liikkuvat? Piirrä ensin kummankin kappaleen voimakuvio. Vastaa kilogrammoina.",
+      "answer": 0.44,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-03",
+      "level": 3,
+      "text": "Kärry, jonka massa on $1{,}5\\,\\text{kg}$, on kitkattomalla pöydällä ja sidottu langalla väkipyörän yli riippuvaan punnukseen, jonka massa on $0{,}50\\,\\text{kg}$. Kärry päästetään liikkeelle levosta. Kuinka kauan kestää, ennen kuin kärry on kulkenut $0{,}90\\,\\text{m}$? Piirrä ensin kummankin kappaleen voimakuvio.",
+      "answer": 0.86,
+      "unit": "s",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    }
+  ]
+}
