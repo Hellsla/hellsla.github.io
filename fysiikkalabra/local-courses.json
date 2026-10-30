@@ -42,7 +42,7 @@
       {"title": "Luotettavuus ja mittausepävarmuus", "text": "tärkeimmät epävarmuuden lähteet, niiden vaikutus ja miten koetta voisi parantaa"},
       {"title": "Lähteet", "text": "käytetyt lähteet niin, että ne löytyvät uudelleen"}
     ],
-    "pathway": ["fy10-pomppukorkeus", "fy10-leikkiauto", "fy10-heiluri", "fy10-jousivakio", "fy10-uppokuumennin"],
+    "pathway": ["fy10-pomppukorkeus", "fy10-lammonjohtuminen", "fy10-leikkiauto", "fy10-liikemaara", "fy10-heiluri", "fy10-tuulivoimala", "fy10-jousivakio", "fy10-aanennopeus", "fy10-uppokuumennin", "fy10-valaistus", "fy10-jaahtyminen", "fy10-kaasu", "fy10-hyppy", "fy10-hissi", "fy10-muotokerroin", "fy10-liukukitka", "fy10-vesivoima", "fy10-resonanssi", "fy10-mikroaaltouuni", "fy10-paristo", "fy10-kondensaattori", "fy10-muuntaja", "fy10-induktio", "fy10-planck", "fy10-hiuksen-paksuus", "fy10-taitekerroin", "fy10-hitausmomentti"],
     "prepare": [
       {"id": "fy1-3", "why": "mittaustarkkuus, mittausepävarmuus ja tuloksen ilmoittaminen"},
       {"id": "fy1-4", "why": "kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta"},

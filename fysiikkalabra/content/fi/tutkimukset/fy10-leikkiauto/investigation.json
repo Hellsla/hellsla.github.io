@@ -1,0 +1,124 @@
+{
+  "id": "fy10-leikkiauto",
+  "type": "investigation",
+  "title": "Leikkiauton nopeus ja lähtökorkeus",
+  "question": "Miten rataa alas laskevan leikkiauton nopeus riippuu lähtökorkeudesta, ja vastaavatko mittaukset energiaperiaatteeseen perustuvaa mallia?",
+  "description": "Kokeellinen tutkimus: ennusta energiaperiaatteen avulla, miten auton nopeus riippuu lähtökorkeudesta, mittaa nopeus valoportilla eri korkeuksilta ja testaa malli linearisoidun kuvaajan avulla.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 13–14 (Leikkiauton nopeus korkeuden funktiona), opettajan aineisto",
+  "learn": [
+    "muotoilemaan fysiikan periaatteesta perustellun hypoteesin ja mallin ennen mittaamista",
+    "linearisoimaan mallin niin, että sen voi testata suoran avulla, ja tulkitsemaan suoran kulmakertoimen",
+    "vertaamaan mittaustuloksia malliin epävarmuuksineen ja selittämään poikkeamat"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Nopeus lähtökorkeuden funktiona",
+      "physics": "F1",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Toinen auto tai lisäkuorma",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-7",
+      "why": "Auton potentiaalienergia $E_p = mgh$ ja liike-energia $E_k = \\frac{1}{2}mv^2$ ovat mallin rakennuspalikat."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-8",
+      "why": "Mallin perusta on mekaanisen energian säilyminen; energiaperiaate selittää, mihin osa energiasta joutuu."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-6",
+      "why": "Kitka ja vierintävastus muuttavat osan energiasta sisäenergiaksi."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-14",
+      "why": "Ilmanvastus kasvaa nopeuden kasvaessa ja voi näkyä suurimmilla lähtökorkeuksilla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo ja mittausepävarmuuden arvioiminen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Hypoteesin muotoilu, oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy1-5",
+      "why": "Nopeus lasketaan matkan ja siihen kuluneen ajan osamääränä."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Ajan tai nopeuden mittaaminen valoportilla ja sen ohjelmalla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Auton nopeus saadaan ajasta, jonka auton liuska katkaisee valoportin säteen."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Mallin testaamiseen tarvitaan kuvaaja, jossa toiselle akselille lasketaan uusi suure mitatuista arvoista."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Jos valoporttia ei ole, nopeuden voi määrittää videolta."
+    }
+  ],
+  "equipment": [
+    "leikkiauto tai dynamiikkavaunu, jonka katolle kiinnitetään kapea liuska",
+    "rata tai kalteva taso, jonka alapäässä on vaakasuora osa, ja tukia (statiivi tai kirjapino)",
+    "valoportti ja tietokone tai ajanottolaite",
+    "mittanauha tai pitkä viivain ja työntömitta liuskan leveyden mittaamiseen",
+    "pysäytin radan päähän",
+    "laajennukseen toinen auto tai lisäkuorma ja vaaka",
+    "vaihtoehtoisesti puhelin hidastetun videon kuvaamiseen ja jalusta"
+  ],
+  "safety": [
+    "Kiinnitä rata ja sen tuet niin, ettei rata pääse liukumaan tai kaatumaan.",
+    "Pysäytä auto radan päässä pysäyttimellä tai pehmeällä esteellä, ettei se lennä pöydältä.",
+    "Kuljeta valoportin johto niin, ettei siihen kompastu eikä se vedä laitteita pöydältä."
+  ]
+}

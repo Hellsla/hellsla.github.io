@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liukukitkakertoimen määrittäminen — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: mittaa liikeanturilla jarruttavan vaunun alkunopeus ja pysähtymismatka ja määritä liukukitkakerroin energiaperiaatteen ja kuvaajan avulla, laajennuksena nopeuden kuvaajasta.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-liukukitka.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Liukukitkakertoimen määrittäminen">
+<meta property="og:description" content="Kokeellinen tutkimus: mittaa liikeanturilla jarruttavan vaunun alkunopeus ja pysähtymismatka ja määritä liukukitkakerroin energiaperiaatteen ja kuvaajan avulla, laajennuksena nopeuden kuvaajasta.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-liukukitka.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Liukukitkakertoimen määrittäminen</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Liukukitkakertoimen määrittäminen</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-kitkakerroin-nopeuden-kuvaajasta">Laajennus: kitkakerroin nopeuden kuvaajasta</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Liukukitkakertoimen määrittäminen</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Miten jarruttavan vaunun pysähtymismatka riippuu sen alkunopeudesta, ja kuinka suuri on jarrun ja radan välinen liukukitkakerroin?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on pitkä vaakasuora vaunurata. Radan vasemmassa päässä on liikeanturi. Vaunu liukuu radalla oikealle jarru radan pintaa vasten, ja sen paikka on piirretty tasaisin aikavälein: välit lyhenevät tasaisesti, kunnes vaunu pysähtyy ennen radan päätä. Pöydällä olevan kannettavan tietokoneen näytöllä on laskeva suora." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10lh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10lh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10lh-wall)"/>
+  <rect x="0" y="440" width="1200" height="160" fill="url(#fy10lh-desk)"/>
+  <line x1="0" y1="462" x2="1200" y2="458" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="484" x2="1200" y2="480" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="506" x2="1200" y2="502" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="528" x2="1200" y2="524" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="550" x2="1200" y2="546" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="440" x2="1200" y2="440" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="102" y="408" width="16" height="32" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="92" y="432" width="36" height="8" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1072" y="408" width="16" height="32" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1062" y="432" width="36" height="8" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="60" y="392" width="1080" height="16" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="64" y1="400" x2="1136" y2="400" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="1120" y="358" width="14" height="34" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="70" y="327" width="53" height="65" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="121" cy="359.5" r="18" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="121" cy="359.5" r="8.4" fill="#1f2933"/>
+  <g opacity="0.28"><rect x="220" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="232" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="261" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="242" cy="379" r="13" fill="#1f2933"/><circle cx="242" cy="379" r="6" fill="#c4ccd4"/><circle cx="308" cy="379" r="13" fill="#1f2933"/><circle cx="308" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="390" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="402" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="431" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="412" cy="379" r="13" fill="#1f2933"/><circle cx="412" cy="379" r="6" fill="#c4ccd4"/><circle cx="478" cy="379" r="13" fill="#1f2933"/><circle cx="478" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="533.5" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="545.5" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="574.5" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="555.5" cy="379" r="13" fill="#1f2933"/><circle cx="555.5" cy="379" r="6" fill="#c4ccd4"/><circle cx="621.5" cy="379" r="13" fill="#1f2933"/><circle cx="621.5" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="651" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="663" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="692" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="673" cy="379" r="13" fill="#1f2933"/><circle cx="673" cy="379" r="6" fill="#c4ccd4"/><circle cx="739" cy="379" r="13" fill="#1f2933"/><circle cx="739" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="742.5" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="754.5" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="783.5" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="764.5" cy="379" r="13" fill="#1f2933"/><circle cx="764.5" cy="379" r="6" fill="#c4ccd4"/><circle cx="830.5" cy="379" r="13" fill="#1f2933"/><circle cx="830.5" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="808" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="820" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="849" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="830" cy="379" r="13" fill="#1f2933"/><circle cx="830" cy="379" r="6" fill="#c4ccd4"/><circle cx="896" cy="379" r="13" fill="#1f2933"/><circle cx="896" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="0.28"><rect x="847" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="859" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="888" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="869" cy="379" r="13" fill="#1f2933"/><circle cx="869" cy="379" r="6" fill="#c4ccd4"/><circle cx="935" cy="379" r="13" fill="#1f2933"/><circle cx="935" cy="379" r="6" fill="#c4ccd4"/></g>
+  <g opacity="1.0"><rect x="860" y="324" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="872" y="334" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="901" y="368" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="882" cy="379" r="13" fill="#1f2933"/><circle cx="882" cy="379" r="6" fill="#c4ccd4"/><circle cx="948" cy="379" r="13" fill="#1f2933"/><circle cx="948" cy="379" r="6" fill="#c4ccd4"/></g>
+  <path d="M840,560 L1100,560 L1130,586 L810,586 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="860" y="452" width="220" height="108" rx="6" fill="#1f2933" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="872" y="462" width="196" height="88" fill="#ffffff"/>
+  <line x1="886" y1="540" x2="1056" y2="540" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="886" y1="540" x2="886" y2="470" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="886" y1="540" x2="904" y2="486" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="904" y1="486" x2="1014" y2="540" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="1014" y1="540" x2="1056" y2="540" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
+</svg></p>
+<p>Kun auton kuljettaja jarruttaa lukkojarruin, auto liukuu vielä matkan ennen kuin pysähtyy, ja matka on sitä pidempi, mitä suurempi vauhti oli. Tässä tutkimuksessa jarrutat vaunua radalla eri alkunopeuksilla, mittaat liikeanturilla, kuinka pitkälle se liukuu, ja määrität mittauksistasi liukukitkakertoimen. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja lukemaan ne liikeanturin tuloksista</li><li>valitsemaan energiaperiaatteen avulla akselit, joilla malli on suora, ja tulkitsemaan sen kulmakertoimen</li><li>ilmoittamaan tuloksen epävarmuuksineen ja arvioimaan systemaattisten virheiden vaikutusta</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Pysähtymismatka ja alkunopeus</strong>: fysiikka F2 · koe E2</li><li><strong>Hidastuvuus nopeuden kuvaajasta ja menetelmien vertailu</strong>: fysiikka F2 · koe E2</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="O" checked><span><strong>Ohjattu tutkimus</strong> Saat vihjeet ja tärkeimmät vaiheet.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="OO"><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-6.html">Paino, kitka ja kalteva taso</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Liikekitka $F_\mu = \mu N$ ja tukivoima vaakasuoralla alustalla.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-7.html">Liike-energia, potentiaalienergia ja mekaaninen energia</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Vaunun liike-energia $E_\text{k} = \tfrac{1}{2}mv^2$.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-8.html">Mekaanisen energian säilyminen ja energiaperiaate</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Kitkan tekemä negatiivinen työ pienentää liike-energiaa: energiaperiaate on tutkimuksen malli.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy4-5.html">Voimakuvio ja voimien yhteisvaikutus</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Jarruttavan vaunun voimakuvio ja voimien yhteisvaikutus.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> <a href="fy4-4.html">Newtonin toinen laki</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Laajennuksessa hidastuvuus $a = \mu g$ saadaan Newtonin toisesta laista.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> <a href="fy4-2.html">Kiihtyvyys ja tasaisesti kiihtyvä liike</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Laajennuksessa kiihtyvyys luetaan nopeuden kuvaajan kulmakertoimesta.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\bar{x} \pm \Delta x$.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Liikeanturin mittaussarja: paikan ja nopeuden kuvaajat ja arvojen lukeminen niistä <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Alkunopeus ja pysähtymismatka luetaan anturin tallentamista kuvaajista.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Kulmakerroin ja sen epävarmuus saadaan sovituksesta, laajennuksessa myös hidastuvuus.</span></li></ul><h3>Välineet</h3><ul><li>vaunurata, jossa on päätypysäytin</li><li>optinen liikeanturi ja tietokone tai tabletti mittausohjelmineen</li><li>vaunu, jossa on kitkajarru</li><li>vesivaaka radan vaakasuoruuden tarkistamiseen</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Varmista, ettei vaunu pääse putoamaan radalta: valitse alkunopeudet niin, että vaunu pysähtyy radalle, ja pidä radan päässä pysäytin.</li><li>Työnnä vaunua vain radan suuntaisesti, älä kohti ketään, ja pidä sormet poissa pyörien ja jarrun välistä.</li><li>Sijoita anturin ja tietokoneen johdot niin, ettei niihin kompastu eikä rata kaadu niistä vetämällä.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> miten pysähtymismatka riippuu alkunopeudesta ja kuinka suuri on jarrun ja radan välinen liukukitkakerroin eli liikekitkakerroin epävarmuuksineen. Kerroin määritetään graafisesti, energiaperiaatteen avulla.</p>
+<p><strong>Päätät itse:</strong> mitkä suureet mittaat ja miten luet ne liikeanturin tuloksista, alkunopeudet ja niiden määrän, toistojen määrän, kuvaajan akselit perusteluineen sekä tavan, jolla arvioit tuloksen epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, kitkakertoimen määrittäminen nopeuden kuvaajasta, kuuluu työhösi: vertaa lopuksi kahdella menetelmällä saatuja tuloksia.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Jos vaunun alkunopeus kaksinkertaistuu, kuinka monikertaiseksi arvelet pysähtymismatkan kasvavan?</li>
+<li>Mihin vaunun liike-energia joutuu jarrutuksen aikana?</li>
+<li>Muuttuuko pysähtymismatka, jos vaunuun lisätään kuormaa mutta alkunopeus pysyy samana?</li>
+<li>Mikä voisi vääristää tulosta niin, että kaikki mittaukset virheellisesti antavat liian suuren tai liian pienen kitkakertoimen?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="tutkimuskysymyksesta-mitattaviksi-suureiksi"><h2 id="h-tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</h2>
+<p>Kitkakerrointa ei voi lukea mittarista. Ennen kuin luet eteenpäin, kirjaa:</p>
+<ol>
+<li>Mitkä suureet sinun on mitattava jokaisesta jarrutuksesta, jotta voit laskea kitkavoiman tekemän työn ja vaunun liike-energian muutoksen?</li>
+<li>Mistä hetkestä alkaen jarrutus lasketaan, kun vaunu lähtee liikkeelle käden työnnöstä?</li>
+<li>Mitä muutat, mitä mittaat ja mitä pidät vakiona?</li>
+</ol>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Kun vaunu liukuu vaakasuoralla radalla jarru radan pintaa vasten, siihen vaikuttavat paino $\overline{G}$, radan tukivoima $\overline{N}$ ja liikettä vastustava liikekitka $\overline{F}_\mu$. Vaakasuoralla radalla pystysuorat voimat kumoavat toisensa, joten tukivoima on yhtä suuri kuin paino, $N = G = mg$. Liikekitkan suuruus on</p>
+<p>$$F_\mu = \mu N$$</p>
+<p>missä $\mu$ on liikekitkakerroin, jota tässä työssä kutsutaan myös liukukitkakertoimeksi. Kerroin on yksikötön. Malli olettaa, että jarru painuu rataa vasten koko vaunun painolla. Jos pyörät kantavat osan painosta ja jarrua painaa esimerkiksi jousi, mittaamasi luku on kitkavoiman ja painon suhde, joka kuvaa koko vaunun jarrutusta, eikä pelkästään jarrun ja radan pintojen kitkakerroin. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-6.html">Kitka ja kitkakerroin</a></span></p>
+<p><svg data-fig="forces" viewBox="0 0 600 330" role="img" aria-label="Voimakuvio: radalla oikealle liukuva ja hidastuva vaunu suorakulmiona. Paino G osoittaa keskipisteestä alas. Radan tukivoima N osoittaa alapinnasta ylös, ja se on yhtä pitkä kuin paino. Liikekitka F myy osoittaa alapinnan takakulmasta vasemmalle eli liikettä vastaan, ja se on paljon lyhyempi kuin paino. Kappaleen yläpuolella sininen nopeusnuoli v osoittaa oikealle ja oranssi kiihtyvyysnuoli a vasemmalle." style="max-width:100%;font-size:24px">
+  <line x1="150" y1="192" x2="510" y2="192" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <rect x="265" y="128" width="130" height="64" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="330" y1="160" x2="330" y2="246" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M330,263 L322,245 L338,245 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="337.5" y="242.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <line x1="364" y1="192" x2="364" y2="106" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M364,89 L372,107 L356,107 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="371.5" y="82.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
+  <line x1="265" y1="192" x2="251" y2="192" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M234,192 L252,184 L252,200 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="205.5" y="199.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
+  <line x1="417" y1="124" x2="485" y2="124" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M474,130.5 L487,124 L474,117.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="492.5" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <line x1="243" y1="124" x2="195" y2="124" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M206,117.5 L193,124 L206,130.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="154.5" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+</svg></p>
+<p>Paino ja tukivoima ovat kohtisuorassa liikettä vastaan, joten ne eivät tee työtä. Kitka vastustaa liikettä ja tekee negatiivista työtä, joka pienentää vaunun liike-energiaa, kunnes vaunu pysähtyy. Energiaperiaatteen mukaan kitkan tekemä työ on yhtä suuri kuin liike-energian muutos. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-8.html">Työ ja energiaperiaate</a></span></p>
+<div class="inv-tuki" data-modes="O OO"><p>Tarkista kirjauksesi tästä. Jarrutus alkaa hetkestä, jolloin käsi on irronnut vaunusta. Silloin vaunun nopeus on <strong>alkunopeus</strong> $v_0$, ja siitä kohdasta pysähtymiskohtaan vaunu kulkee <strong>pysähtymismatkan</strong> $s$. Molemmat luetaan liikeanturin tuloksista: $v_0$ nopeuden kuvaajasta ja $s$ paikan kuvaajasta, aina vaunun samasta kohdasta mitattuna.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 320" role="img" aria-label="Kaaviokuva. Vaakasuoran vaunuradan vasemmassa päässä on liikeanturi. Vaunu on piirretty kahteen kohtaan. Vasemmalla, himmeämpänä, vaunu on kohdassa, jossa työntö on loppunut ja vaunun nopeus on alkunopeus v nolla, oikealle. Oikealla vaunu on pysähtynyt. Kohtien välinen matka, mitattuna vaunun samasta kohdasta, on pysähtymismatka s. Vaunun jarru painuu radan pintaa vasten." style="max-width:100%;font-size:24px">
+  <rect x="20" y="210" width="560" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="26" y="161.5" width="39.5" height="48.5" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="63.5" cy="185.5" r="13.5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="63.5" cy="185.5" r="6.3" fill="#1f2933"/>
+  <foreignObject x="22" y="237.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{liikeanturi}$</div></foreignObject>
+  <g opacity="0.45"><rect x="130" y="142" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="142" y="152" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="171" y="186" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="152" cy="197" r="13" fill="#1f2933"/><circle cx="152" cy="197" r="6" fill="#c4ccd4"/><circle cx="218" cy="197" r="13" fill="#1f2933"/><circle cx="218" cy="197" r="6" fill="#c4ccd4"/></g>
+  <g opacity="1.0"><rect x="400" y="142" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="412" y="152" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="441" y="186" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="422" cy="197" r="13" fill="#1f2933"/><circle cx="422" cy="197" r="6" fill="#c4ccd4"/><circle cx="488" cy="197" r="13" fill="#1f2933"/><circle cx="488" cy="197" r="6" fill="#c4ccd4"/></g>
+  <line x1="150" y1="110" x2="228" y2="110" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M217,116.5 L230,110 L217,103.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <foreignObject x="229.5" y="95.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_0$</div></foreignObject>
+  <foreignObject x="432.5" y="95.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v = 0$</div></foreignObject>
+  <line x1="240" y1="146" x2="240" y2="282" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="510" y1="146" x2="510" y2="282" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
+  <line x1="240" y1="276" x2="510" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="240" y1="266" x2="240" y2="286" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="510" y1="266" x2="510" y2="286" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="365" y="283.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="420" y="229.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jarru}$</div></foreignObject>
+  <line x1="455" y1="232" x2="455" y2="223" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+</svg></p>
+<p>Kitkavoima on vakio ja liikettä vastaan, joten se tekee matkalla $s$ työn $W = -F_\mu s = -\mu m g s$. Liike-energia muuttuu arvosta $\tfrac{1}{2}mv_0^2$ nollaan. Energiaperiaatteesta saadaan</p>
+<p>$$\begin{aligned}
+-\mu m g s &= 0 - \tfrac{1}{2} m v_0^2 \\
+\tfrac{1}{2} v_0^2 &= \mu g \cdot s
+\end{aligned}$$</p>
+<p>Massa supistuu pois. Malli ennustaa, että puolet alkunopeuden neliöstä on suoraan verrannollinen pysähtymismatkaan, joten kuvaaja $\tfrac{1}{2}v_0^2$ pysähtymismatkan $s$ funktiona on origon kautta kulkeva suora, jonka kulmakerroin on $\mu g$. Kitkakerroin saadaan kulmakertoimesta $k$: $\mu = \dfrac{k}{g}$. Pätevätkö malli ja sen oletukset, selviää vasta mittaamalla: jos kitka riippuu vauhdista, pisteet poikkeavat suoralta. Radan tasainen kallistus sen sijaan muuttaa vain hidastuvuutta ja siis kulmakerrointa: suora kulkee yhä origon kautta, joten kallistusta ei näe kuvaajasta. Se on tarkistettava vesivaa'alla tai jarruttamalla vaunua radalla kumpaankin suuntaan.</p>
+<p><svg data-fig="model" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: puolet alkunopeuden neliöstä pysähtymismatkan s funktiona mallin mukaan. Kuvaaja on origon kautta kulkeva suora. Suoralle on merkitty kaksi pistettä ja niiden välinen muutos vaakasuunnassa delta s ja pystysuunnassa. Kulmakerroin on myy kertaa g. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="99" y1="290" x2="484" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,290 L483,296 L483,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="100" y1="291" x2="100" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M100,44 L106,57 L94,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="70" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s$</div></foreignObject>
+  <foreignObject x="90" y="13.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{2}v_0^2$</div></foreignObject>
+  <polyline points="100,290 451.5,102" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="211" y1="230.5" x2="396" y2="230.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="396" y1="230.5" x2="396" y2="131.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="287" y="236" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\Delta s$</div></foreignObject>
+  <foreignObject x="406" y="166.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\Delta\!\left(\tfrac{1}{2}v_0^2\right)$</div></foreignObject>
+  <foreignObject x="122" y="86.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kulmakerroin } \mu g$</div></foreignObject>
+</svg></p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona.</p>
+<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Muutat vaunun alkunopeutta $v_0$ työntämällä vaunua eri voimakkuudella. Mittaat liikeanturilla jokaisesta jarrutuksesta alkunopeuden $v_0$ ja pysähtymismatkan $s$. Vakiona pidät vaunun, sen kuorman, jarrun säädön ja radan. Tee ainakin kuusi jarrutusta niin, että alkunopeudet jakautuvat tasaisesti pienimmästä suurimpaan.</p></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Muuttuja on alkunopeus. Päätä tarkemmin, kuinka monta jarrutusta teet, millä alkunopeuksilla ja miten luet alkunopeuden ja pysähtymismatkan anturin tuloksista. Kirjaa päätöksesi perusteluineen.</p></div>
+<div class="inv-tuki" data-modes="O OO"><p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miten tarkistat, että rata on vaakasuorassa? Mitä tulokselle tapahtuisi, jos rata olisi hieman kallellaan liikkeen suuntaan tai sitä vastaan?</li>
+<li>Kuinka suurilla nopeuksilla vaunu pysähtyy vielä radalle, ja kuinka lähelle anturia se saa tulla, jotta anturi mittaa luotettavasti? Tarkista anturin lähin mittausetäisyys sen ohjeesta.</li>
+<li>Miten varmistat, että luet alkunopeuden vasta, kun käsi on irronnut vaunusta?</li>
+</ul></div>
+<div class="inv-tuki" data-modes="O"><p><strong>Vihje lukemiseen.</strong> Nopeuden kuvaajassa työntö näkyy nousevana osana ja jarrutus sen jälkeen laskevana osana. Huippu voi vielä sisältää työnnön tai olla yksittäinen kohinapiikki, joten älä lue alkunopeutta suoraan huipusta. Valitse hetki heti huipun jälkeen, kun laskeva osa on jo suora, ja lue siltä hetkeltä sekä alkunopeus $v_0$ että vaunun paikka $x_0$. Tasoita nopeus ohjelmassa tai laske muutaman lukeman keskiarvo valitun hetken ympäriltä. Lue sitten paikka, jossa vaunu on pysähtynyt. Pysähtymismatka on näiden paikkojen erotus.</p></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa jokaisesta jarrutuksesta alkuperäiset lukemat taulukkoon heti mittauksen aikana. Laskemasi suureet saavat omat sarakkeensa luettujen oikealle puolelle. Tallenna myös anturin mittaussarjat, jotta voit tarkistaa lukemasi myöhemmin.</p>
+<div class="inv-tuki" data-modes="O"><p>Voit käyttää esimerkiksi tällaista taulukkoa:</p>
+<table>
+<thead>
+<tr>
+<th>$v_0\ (\text{m/s})$</th>
+<th>$x_0\ (\text{m})$</th>
+<th>$x_1\ (\text{m})$</th>
+<th>$s = x_1 - x_0\ (\text{m})$</th>
+<th>$\tfrac{1}{2}v_0^2\ (\text{m}^2/\text{s}^2)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Tässä $x_0$ on vaunun paikka jarrutuksen alkaessa ja $x_1$ paikka, jossa vaunu on pysähtynyt. Tee jarrutukset satunnaisessa järjestyksessä, ettei jarrun vähittäinen lämpeneminen tai kuluminen näy kuvaajassa järjestelmällisenä vinoumana.</p></div>
+<p>Muista mittausepävarmuus: arvioi, kuinka tarkasti pystyt lukemaan alkunopeuden ja pysähtymismatkan, ja kirjaa arviot ylös. Anturin nopeuslukemissa on kohinaa, joka näkyy kuvaajan värinänä. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Mittausepävarmuuden arvioiminen</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Piirrä mittaustuloksista kuvaaja, josta liukukitkakerroin saadaan kulmakertoimen avulla. Merkitse akseleille suureet ja yksiköt. Piirrä mittauspisteet, älä yhdistä niitä murtoviivalla, ja sovita pisteisiin suora. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Suoran sovittaminen ja kulmakertoimen tulkinta</a></span></p>
+<div class="inv-tuki" data-modes="O"><p>Valitse pystyakselille $\tfrac{1}{2}v_0^2$ ja vaaka-akselille pysähtymismatka $s$.</p></div>
+<p>Kirjoita sovitetun suoran yhtälö ja vastaa:</p>
+<ol>
+<li>Ovatko pisteet suoralla? Jos eivät, millä alkunopeuksilla ne poikkeavat, ja mihin suuntaan?</li>
+<li>Miten saat kulmakertoimesta $\mu$:n?</li>
+<li>Kulkeeko suora origon kautta? Jos ei, mistä vakiotermi voi johtua?</li>
+</ol>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Miksi juuri nämä akselit?</strong> Malli $\tfrac{1}{2}v_0^2 = \mu g \cdot s$ on suoran yhtälö $y = kx$, kun pystyakselille valitaan $\tfrac{1}{2}v_0^2$ ja vaaka-akselille $s$. Kulmakertoimen yksikkö on $\text{m/s}^2$, ja kulmakerroin on $\mu g$. Jos pystyakselille valitaan $v_0^2$, kulmakerroin on $2\mu g$. Jos akselit vaihdetaan keskenään, kulmakerroin on käänteisluku. Pysähtymismatkan kuvaaja pelkän alkunopeuden $v_0$ funktiona ei ole suora vaan kaartuu ylöspäin. Siitä on vaikea nähdä, noudattavatko pisteet mallia, ja kitkakertoimen saaminen siitä on hankalaa. Jos suora ei kulje origon kautta, syynä voi olla esimerkiksi se, että alkunopeus on luettu ennen kuin työntö on loppunut tai eri hetkeltä kuin paikka $x_0$. Radan tasainen kallistus ei tee vakiotermiä: se muuttaa vain kulmakerrointa: mitattu kitkakerroin muuttuu noin $0{,}02$ asteen kallistusta kohti, joten sitä ei näe kuvaajasta.</p></div>
+<p>Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje liikeanturin ja ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita liukukitkakerroin muodossa $\mu \pm \Delta\mu$ ja perustele, miten arvioit epävarmuuden $\Delta\mu$.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Kulmakertoimen epävarmuuden $\Delta k$ voit arvioida jommallakummalla tavalla:</p>
+<ul>
+<li><strong>Sovitusohjelman keskivirhe.</strong> Monet ohjelmat ilmoittavat kulmakertoimen keskivirheen. Käytä sitä epävarmuutena $\Delta k$.</li>
+<li><strong>Jyrkin ja loivin suora.</strong> Piirrä jyrkin ja loivin suora, jotka vielä sopivat pisteisiin niiden epävarmuuksien rajoissa. Määritä niiden kulmakertoimet $k_\text{max}$ ja $k_\text{min}$ ja arvioi epävarmuus vaihteluvälin puolikkaana: $\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$.</li>
+</ul>
+<p>Koska $\mu = \dfrac{k}{g}$ ja putoamiskiihtyvyys tunnetaan tarkasti, kitkakertoimen suhteellinen epävarmuus on sama kuin kulmakertoimen: $\dfrac{\Delta\mu}{\mu} = \dfrac{\Delta k}{k}$. Pyöristä $\Delta\mu$ yhteen merkitsevään numeroon ja $\mu$ samaan desimaaliin.</p>
+<p>Huomaa, että nopeuden lukemisen epävarmuus kasvaa neliöön korotettaessa: jos nopeuden epävarmuus on $\Delta v_0$, suureen $\tfrac{1}{2}v_0^2$ epävarmuus on noin $v_0 \Delta v_0$, eli se on suurimmilla nopeuksilla suurin.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuuden lähteet, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet olisivat muuttaneet tulosta? Pohdi ainakin radan kallistusta, jarrun painumista radan pintaa vasten ja pyörien omaa vierimisvastusta. Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten pysähtymismatka riippuu alkunopeudesta, ja noudattavatko mittauksesi energiaperiaatteen mallia koko mittausalueella? Kuinka suuri liukukitkakerroin on, ja mihin vaunun liike-energia muuttui? Viittaa kuvaajaan, esimerkiksi "kuvaajasta 1 nähdään, että …". Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tausta ja teoria:</strong> voimakuvio, kitkan tekemä työ ja energiaperiaate sekä miksi valitsit juuri nämä akselit.</li>
+<li><strong>Koejärjestely ja menetelmä:</strong> miten varmistit radan vaakasuoruuden ja miten luit alkunopeuden ja pysähtymismatkan anturin tuloksista. Liitä esimerkki yhden jarrutuksen nopeuden kuvaajasta.</li>
+<li><strong>Mittaustulokset:</strong> luetut suureet omissa sarakkeissaan ja johdetut suureet niiden oikealla puolella.</li>
+<li><strong>Tulos:</strong> $\mu \pm \Delta\mu$ oikein pyöristettynä.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-kitkakerroin-nopeuden-kuvaajasta"><h2 id="h-laajennus-kitkakerroin-nopeuden-kuvaajasta">Laajennus: kitkakerroin nopeuden kuvaajasta</h2>
+<p>Kitkakertoimen voi määrittää samoista mittauksista myös toisella tavalla. Jarrutuksen aikana vaunuun vaikuttava kokonaisvoima on kitka, joten Newtonin toisen lain mukaan $ma = \mu mg$ ja vaunun hidastuvuuden suuruus on</p>
+<p>$$a = \mu g$$</p>
+<p>Jos kitkavoima on vakio, hidastuvuuskin on vakio, ja nopeuden kuvaaja jarrutuksen aikana on laskeva suora, jonka kulmakerroin on $-\mu g$. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-4.html">Newtonin toinen laki</a></span> <span class="inv-help">Tarvitsetko apua? → <a href="fy4-2.html">Kiihtyvyys nopeuden kuvaajasta</a></span></p>
+<p><svg data-fig="velocity" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: vaunun nopeus v ajan t funktiona jarrutuksen aikana mallin mukaan. Nopeus pienenee alkunopeudesta v nolla tasaisesti nollaan, joten kuvaaja on laskeva suora. Suoran kulmakerroin on miinus myy kertaa g, ja hidastuvuuden suuruus on a yhtä kuin myy kertaa g. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="99" y1="290" x2="484" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,290 L483,296 L483,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="100" y1="291" x2="100" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M100,44 L106,57 L94,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="70" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="90" y="13.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
+  <polyline points="100,103 396,290" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="93" y1="103" x2="100" y2="103" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="55" y="88.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_0$</div></foreignObject>
+  <foreignObject x="342" y="299.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{pysähtyy}$</div></foreignObject>
+  <line x1="174" y1="150" x2="322" y2="150" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="322" y1="150" x2="322" y2="243" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="231.5" y="115" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\Delta t$</div></foreignObject>
+  <foreignObject x="332" y="182" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\Delta v$</div></foreignObject>
+  <foreignObject x="292.5" y="72" width="233" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kulmakerroin } \dfrac{\Delta v}{\Delta t} = -\mu g$</div></foreignObject>
+</svg></p>
+<p>Sovita suora kunkin jarrutuksen nopeuden kuvaajan laskevaan osaan ja määritä siitä hidastuvuus ja kitkakerroin. Laske jarrutusten tuloksista keskiarvo ja arvioi sen epävarmuus. Onko hidastuvuus sama suurilla ja pienillä nopeuksilla? Vertaa tulosta päämenetelmän kitkakertoimeen epävarmuuksineen: mahtuvatko tulokset toistensa epävarmuusväleihin? Päällekkäiset välit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Kumpi menetelmä vaikutti luotettavammalta, ja miksi?</p>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Vihjeitä.</strong> Valitse sovitusväliksi vain se osa kuvaajasta, jossa käsi on jo irronnut eikä vaunu ole vielä pysähtynyt. Aivan pysähtymisen lähellä anturin nopeuslukemat ovat usein epätarkkoja, joten jätä loppu pois, jos se poikkeaa suorasta. Jos laskeva osa kaartuu, kitka ei ole vakio, ja se kannattaa kertoa raportissa.</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi kuvaajaan ja mittaustuloksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Tarkista etukäteen, miten koulun vaunun kitkajarru toimii ja miten se säädetään, ja kokeile, millä työnnöillä vaunu pysähtyy radalle selvästi anturin lähimmän mittausetäisyyden ulkopuolella. Jos jarrua painaa rataa vasten jousi eikä vaunun paino, opiskelijoiden määrittämä luku on kitkavoiman ja painon suhde, joka kuvaa koko vaunun jarrutusta. Sivu kertoo tämän opiskelijalle; päätä, miten tulosta nimitetään tunnilla. Säädä rata vaakasuoraksi vesivaa'an avulla ja varmista, että anturi näkee vaunun koko radan matkalta. Ryhmien kannattaa tallentaa jokainen mittaussarja erikseen, jotta laajennuksen voi tehdä samoista mittauksista.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Alkunopeus luetaan liian aikaisin, kun käsi vielä työntää vaunua, tai nopeuden kohinapiikistä, tai pysähtymismatka mitataan lähtöpaikasta eikä jarrutuksen alkukohdasta. Kumpikin näkyy vakioterminä tai pisteiden hajontana.</li>
+<li>Pysähtymismatka piirretään suoraan alkunopeuden funktiona, ja kaartuvaan kuvaajaan sovitetaan suora.</li>
+<li>Kulmakerrointa pidetään suoraan kitkakertoimena, vaikka se on $\mu g$ tai akselivalinnasta riippuen $2\mu g$ tai käänteisluku.</li>
+<li>Kitkan työn etumerkki unohtuu, tai ajatellaan, että liike-energia katoaa. Se muuttuu jarrun ja radan sisäenergiaksi.</li>
+<li>Ajatellaan, että raskaampi vaunu liukuu aina pidemmälle. Massa supistuu vain, kun vaunun paino painaa jarrua rataa vasten. Jos jarrua painaa jousi, raskaampi vaunu todella liukuu pidemmälle, koska kitkavoima ei kasva massan mukana. Ennusta-kysymys 3 sopii tämän keskusteluun.</li>
+<li>Rata on hieman kallellaan. Tasainen kallistus muuttaa hidastuvuutta systemaattisesti, $a = \mu g\cos\theta \pm g\sin\theta$, ja vaikutus on vastakkainen eri liikesuunnissa. Suora kulkee silti origon kautta, ja vain kulmakerroin muuttuu: mitattu kitkakerroin muuttuu noin $0{,}02$ asteen kallistusta kohti, joten virhettä ei näe kuvaajasta. Se löytyy vesivaa'alla tai jarruttamalla molempiin suuntiin.</li>
+<li>Anturin nopeuden kohina tulkitaan mittaustulokseksi; huippuarvo voi olla yksittäinen kohinapiikki. Tasoitus ohjelmassa tai huipun ympäristön keskiarvo auttaa.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Ohjatussa työtavassa sivu antaa muuttujat, lukutavan, taulukon ja akselit. Osittain ohjatussa opiskelija päättää jarrutusten määrän ja lukutavan ja perustelee ne. Itsenäisessä työtavassa sivu antaa tutkimuskysymyksen, välineet, kitkan mallin ja energiaperiaatteen: opiskelija muuttaa kysymyksen mitattaviksi suureiksi, johtaa lineaarisen mallin ja valitsee akselit itse, ja laajennus kuuluu työhön.</p>
+<p><strong>Turvallisuus.</strong> Riskit ovat pieniä: radalta putoava vaunu, sormet pyörien ja jarrun välissä sekä johtoihin kompastuminen. Radan päässä on oltava pysäytin, ja työnnöt kannattaa kokeilla pienestä suurempaan.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>

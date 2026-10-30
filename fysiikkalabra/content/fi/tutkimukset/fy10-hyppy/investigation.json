@@ -1,0 +1,110 @@
+{
+  "id": "fy10-hyppy",
+  "type": "investigation",
+  "title": "Hypyn tutkiminen voimalevyllä",
+  "question": "Miten hyppääjän lähtönopeus ja hypyn korkeus saadaan voimalevyn mittaamasta voima–aika-kuvaajasta, ja vastaako tulos toisella menetelmällä määritettyä hyppykorkeutta?",
+  "description": "Kokeellinen tutkimus: mittaa voimalevyllä tukivoima koko hypyn ajan, määritä lähtönopeus ja hyppykorkeus impulssiperiaatteella ja vertaa tulosta toisella menetelmällä, esimerkiksi lentoajasta, saatuun korkeuteen.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 16–17 (Hypyn tutkiminen voimalevyllä), opettajan aineisto",
+  "learn": [
+    "tunnistamaan mittausdatasta liikkeen vaiheet ja perustelemaan ne Newtonin lakien avulla",
+    "määrittämään nopeuden muutoksen voima–aika-kuvaajan pinta-alasta impulssiperiaatteen avulla",
+    "vertaamaan kahdella menetelmällä saatuja tuloksia epävarmuuksineen ja arvioimaan, mistä erot johtuvat"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Hyppykorkeus impulssista ja toisella menetelmällä",
+      "physics": "F2",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Kyykkyhyppy ja vastaliikehyppy",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-9",
+      "why": "Impulssiperiaate ja impulssi voima–aika-kuvaajan pinta-alana ovat tutkimuksen päämenetelmä."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-4",
+      "why": "Kokonaisvoima $N - G$ määrää hyppääjän kiihtyvyyden; sen avulla tulkitaan kuvaajan vaiheet."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-8",
+      "why": "Irtoamisen jälkeen mekaaninen energia säilyy, joten lähtönopeudesta saadaan hypyn korkeus."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-3",
+      "why": "Levossa tukivoima ja paino kumoavat toisensa, ja hyppääjä painaa levyä yhtä suurella voimalla kuin levy tukee häntä."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-2",
+      "why": "Lennon aikana hyppääjä liikkuu tasaisesti kiihtyvästi; lentoajasta saadaan hyppykorkeus toisella tavalla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo, epävarmuus ja tulosten vertaaminen epävarmuuksien rajoissa."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Voimalevyn mittausohjelmisto: mittauksen tallentaminen ja kuvaajan alle jäävän pinta-alan määrittäminen (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Impulssi saadaan voima–aika-kuvaajan pinta-alasta, jota ei voi laskea käsin tuhansista mittauspisteistä."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Video on yksi mahdollinen vertailumenetelmä hyppykorkeudelle."
+    }
+  ],
+  "equipment": [
+    "voimalevy",
+    "tietokone tai tabletti ja mittausohjelmisto",
+    "tasainen, liukumaton lattia ja vapaa tila levyn ympärillä",
+    "tarvittaessa puhelin videon kuvaamiseen, jalusta ja mitta-asteikko vertailumittausta varten"
+  ],
+  "safety": [
+    "Hyppääjänä toimii vapaaehtoinen, jolla ei ole jalkojen tai selän vammaa. Kukaan ei ole velvollinen hyppäämään. Hyppääjän paino ja massa ovat henkilökohtaisia tietoja, joita ei tarvitse kertoa muille eikä kirjata raporttiin.",
+    "Lämmittele kevyesti ennen täysiä hyppyjä, hyppää suoraan ylös ja laskeudu molemmille jaloille polvet joustaen.",
+    "Varmista, että voimalevy on tasaisella lattialla eikä liu'u, ympärillä ei ole kompastumisvaaraa ja johdot kulkevat poissa jaloista. Älä hyppää sukkasillaan.",
+    "Tarkista, ettei yläpuolella ole mitään, mihin kädet tai pää voivat osua.",
+    "Varmista opettajalta, että voimalevy kestää alastulon voimat; alastulon voima voi olla moninkertainen painoon verrattuna."
+  ]
+}

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Liikemäärän säilyminen törmäyksissä — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: mittaa kahden vaunun nopeudet liikeantureilla ennen törmäystä ja sen jälkeen ja osoita mittaustuloksilla, säilyykö kokonaisliikemäärä kimmoisissa ja täysin kimmottomissa törmäyksissä.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-liikemaara.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Liikemäärän säilyminen törmäyksissä">
+<meta property="og:description" content="Kokeellinen tutkimus: mittaa kahden vaunun nopeudet liikeantureilla ennen törmäystä ja sen jälkeen ja osoita mittaustuloksilla, säilyykö kokonaisliikemäärä kimmoisissa ja täysin kimmottomissa törmäyksissä.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-liikemaara.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Liikemäärän säilyminen törmäyksissä</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Liikemäärän säilyminen törmäyksissä</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-liike-energia-kahdessa-tormaystyypissa">Laajennus: liike-energia kahdessa törmäystyypissä</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Liikemäärän säilyminen törmäyksissä</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Säilyykö kahden vaunun kokonaisliikemäärä, kun vaunut törmäävät kimmoisasti tai tarttuvat törmäyksessä yhteen?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on pitkä vaunurata, jonka kummassakin päässä on liikeanturi. Radalla kaksi vaunua liikkuu toisiaan kohti, ja vauhtiviivat näyttävät liikkeen. Vasemmanpuoleisessa vaunussa on lisäpunnus, ja oikeanpuoleinen, kevyempi vaunu liikkuu nopeammin. Vaunujen vastakkaisissa päissä on jousipuskurit. Pöydällä oleva kannettava tietokone näyttää anturien mittaamat kuvaajat." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10lh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10lh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10lh-wall)"/>
+  <rect x="0" y="440" width="1200" height="160" fill="url(#fy10lh-desk)"/>
+  <line x1="0" y1="462" x2="1200" y2="458" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="484" x2="1200" y2="480" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="506" x2="1200" y2="502" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="528" x2="1200" y2="524" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="550" x2="1200" y2="546" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="440" x2="1200" y2="440" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="192" y="380" width="16" height="60" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="164" y="432" width="72" height="10" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="992" y="380" width="16" height="60" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="964" y="432" width="72" height="10" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="60" y="360" width="1080" height="20" rx="2" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2"/>
+  <line x1="64" y1="370" x2="1136" y2="370" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="60" y="334" width="16" height="26" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="1124" y="334" width="16" height="26" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="80" y="264" width="70" height="96" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="143" y="291" width="8" height="42" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1050" y="264" width="70" height="96" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1049" y="291" width="8" height="42" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
+  <g opacity="1">
+  <rect x="375" y="282" width="150" height="54" rx="5" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="405" y="252.5" width="90" height="29.5" rx="4" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="405" cy="348" r="11.88" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="495" cy="348" r="11.88" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M525,309 L527,303 L531,315.5 L535,303 L539,315.5 L543,303 L547,315.5 L549,309" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="549" y1="300" x2="549" y2="318" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  </g>
+  <g opacity="1">
+  <rect x="685" y="282" width="150" height="54" rx="5" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="715" cy="348" r="11.88" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="805" cy="348" r="11.88" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M685,309 L683,303 L679,315.5 L675,303 L671,315.5 L667,303 L663,315.5 L661,309" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="661" y1="300" x2="661" y2="318" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  </g>
+  <line x1="300" y1="298" x2="355" y2="298" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="855" y1="298" x2="960" y2="298" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="312" y1="314" x2="355" y2="314" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="855" y1="314" x2="946" y2="314" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="324" y1="330" x2="355" y2="330" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <line x1="855" y1="330" x2="932" y2="330" stroke="#6b7480" stroke-width="3" stroke-linecap="round"/>
+  <path d="M640,560 L960,560 L990,590 L610,590 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="660" y="440" width="280" height="120" rx="6" fill="#343a40" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="672" y="450" width="256" height="100" fill="#ffffff"/>
+  <line x1="690" y1="540" x2="910" y2="540" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="690" y1="540" x2="690" y2="458" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="690" y1="520" x2="900" y2="490" stroke="#ffc078" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="690" y1="530" x2="900" y2="462" stroke="#6c757d" stroke-width="4" stroke-linecap="butt"/>
+</svg></p>
+<p>Kun kaksi vaunua törmää radalla, kummankin nopeus muuttuu: vauhti voi kasvaa, pienentyä tai liikkeen suunta kääntyä. Tässä tutkimuksessa mittaat liikeantureilla vaunujen nopeudet ennen törmäystä ja sen jälkeen ja selvität, muuttuuko vaunujen yhteinen liikemäärä törmäyksessä. Mittaa, laske ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>käsittelemään nopeutta ja liikemäärää etumerkillisinä suureina, kun liike tapahtuu suoralla radalla</li><li>osoittamaan mittaustuloksilla, säilyykö suure, ja vertaamaan eroa mittausepävarmuuteen</li><li>erottamaan liikemäärän säilymisen liike-energian säilymisestä</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Liikemäärä kimmoisissa ja täysin kimmottomissa törmäyksissä</strong>: fysiikka F1 · koe E2</li><li><strong>Liike-energian muutos törmäystyypeissä</strong>: fysiikka F2 · koe E2</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="O" checked><span><strong>Ohjattu tutkimus</strong> Saat vihjeet ja tärkeimmät vaiheet.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="OO"><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-9.html">Liikemäärä ja impulssi</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Liikemäärä $\overline{p} = m\overline{v}$ on vektori, jolla on suunta: tutkimuksessa lasket sen massasta ja nopeudesta.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-10.html">Liikemäärän säilyminen ja yksiulotteiset törmäykset</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Luvussa määritellään systeemi, kokonaisliikemäärä, säilymislain ehto sekä kimmoisa ja täysin kimmoton törmäys.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy4-1.html">Paikka, nopeus ja tasainen liike kuvaajina</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Liikeanturi mittaa paikkaa, ja nopeus on paikan kuvaajan kulmakerroin.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> <a href="fy4-7.html">Liike-energia, potentiaalienergia ja mekaaninen energia</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Laajennuksessa lasket vaunujen liike-energiat $E_\text{k} = \tfrac12 mv^2$ ennen törmäystä ja sen jälkeen.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuuden arvioiminen ja sen avulla päättely, ovatko kaksi tulosta sopusoinnussa.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Nopeuden saa suoran kulmakertoimena, ja liikemäärien vertailun voi esittää kuvaajana.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (esimerkiksi Graphical Analysis) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Vaunujen nopeudet ennen törmäystä ja sen jälkeen luetaan anturien tallentamista kuvaajista.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Laskut taulukkolaskentaohjelmalla <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Liikemäärät ja laajennuksen liike-energiat lasketaan monesta törmäyksestä samoilla kaavoilla.</span></li></ul><h3>Välineet</h3><ul><li>vaunurata, jonka päissä on pysäyttimet</li><li>kaksi vaunua, joissa on jousipuskurit</li><li>tapa saada vaunut tarttumaan toisiinsa täysin kimmottomassa törmäyksessä, esimerkiksi vaunujen tarrapuskurit (opettaja kertoo, mitä vaunuissa on)</li><li>kaksi optista liikeanturia ja tietokone tai tabletti mittausohjelmineen</li><li>lisäpunnuksia vaunuihin</li><li>vaaka</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Varo, etteivät vaunut pääse putoamaan vaunuradalta: tarkista radan päiden pysäyttimet ja ota vaunu kiinni ennen radan päätä.</li><li>Älä laita sormia törmäävien vaunujen väliin.</li><li>Kiinnitä lisäpunnukset vaunuun huolellisesti, jotta ne eivät putoa jalkaan tai lattialle.</li><li>Älä katso suoraan liikeanturin valolähteeseen.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> vaunujen kokonaisliikemäärä ennen törmäystä ja sen jälkeen useissa kimmoisissa ja täysin kimmottomissa törmäyksissä, joissa vaunujen massat tai alkunopeudet vaihtelevat, sekä se, ovatko kokonaisliikemäärät ennen ja jälkeen samat mittausepävarmuuden rajoissa.</p>
+<p><strong>Päätät itse:</strong> mitä törmäyksiä teet (massat, kumpi vaunu liikkuu ja mihin suuntaan), montako törmäystä kumpaakin tyyppiä teet, mikä suunta on positiivinen ja miten anturien lukemat muutetaan sen mukaisiksi, miten luet nopeudet anturien kuvaajista, miten esität liikemäärien vertailun ja miten arvioit epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, liike-energian muutos kummassakin törmäystyypissä, kuuluu työhösi. Se onnistuu samoista mittauksista, joten suunnittele mittaukset niin, että niistä saa laskettua myös liike-energiat.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Kevyt vaunu törmää kimmoisasti levossa olevaan, paljon raskaampaan vaunuun. Mihin suuntaan kevyt vaunu liikkuu törmäyksen jälkeen, ja mitä raskaalle vaunulle tapahtuu?</li>
+<li>Vaunu törmää levossa olevaan samanmassaiseen vaunuun, ja vaunut tarttuvat yhteen. Kuinka suuri on niiden yhteinen nopeus verrattuna törmäävän vaunun alkunopeuteen?</li>
+<li>Kaksi vaunua liikkuu toisiaan kohti ja tarttuu yhteen. Voivatko ne pysähtyä kokonaan? Millä ehdolla?</li>
+<li>Mikä mittauksessa voisi saada kokonaisliikemäärän näyttämään muuttuvan, vaikka se todellisuudessa säilyisi?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="tutkimuskysymyksesta-mitattaviksi-suureiksi"><h2 id="h-tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</h2>
+<p>Liikemäärää ei voi lukea suoraan mittarista. Ennen kuin luet eteenpäin, kirjaa:</p>
+<ol>
+<li>Mitkä suureet mittaamalla saat selville vaunujen kokonaisliikemäärän ennen törmäystä ja sen jälkeen?</li>
+<li>Nopeus on vektori. Miten otat huomioon, mihin suuntaan kukin vaunu liikkuu?</li>
+<li>Millä ehdolla kokonaisliikemäärän pitäisi säilyä, ja miten järjestät mittauksen niin, että ehto täyttyy mahdollisimman hyvin?</li>
+</ol>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Kappaleen <strong>liikemäärä</strong> on $\overline{p} = m\overline{v}$, missä $m$ on kappaleen massa ja $\overline{v}$ sen nopeus. Liikemäärä on vektori, jonka suunta on sama kuin nopeuden. Kahden vaunun <strong>kokonaisliikemäärä</strong> on niiden liikemäärien vektorisumma $\overline{p}_\text{kok} = \overline{p}_1 + \overline{p}_2$.</p>
+<p>Törmäyksessä vaunut työntävät toisiaan yhtä suurilla ja vastakkaissuuntaisilla voimilla yhtä kauan (Newtonin kolmas laki), joten toisen vaunun liikemäärän muutos on yhtä suuri ja vastakkaissuuntainen kuin toisen. Kokonaisliikemäärä säilyy, kun vaunuihin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni. Vaakasuoralla radalla paino ja tukivoima kumoavat toisensa, ja vierimisvastus on pieni. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-10.html">Liikemäärän säilyminen ja törmäykset</a></span></p>
+<p>Törmäys on <strong>kimmoisa</strong>, jos vaunujen yhteinen liike-energia on törmäyksen jälkeen yhtä suuri kuin ennen sitä. Jousipuskureilla törmäävät vaunut ovat lähellä tätä. Törmäys on <strong>täysin kimmoton</strong>, jos vaunut tarttuvat toisiinsa ja jatkavat yhdessä samalla nopeudella.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Tarkista kirjauksesi tästä. Vaunuista mitataan massat $m_1$ ja $m_2$ sekä nopeudet ennen törmäystä ($v_1$ ja $v_2$) ja sen jälkeen ($v_1'$ ja $v_2'$). Koska vaunut liikkuvat samalla suoralla, valitaan yksi suunta positiiviseksi. Silloin jokainen nopeus on etumerkillinen luku: vastakkaiseen suuntaan liikkuvan vaunun nopeus on negatiivinen.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva sivulta. Vaakasuoran radan vasemmassa päässä on anturi 1 ja oikeassa päässä anturi 2, ja kumpikin osoittaa radan keskelle. Radalla ovat vaunu 1, jonka massa on m1, ja vaunu 2, jonka massa on m2. Vaunun 1 nopeus v1 osoittaa oikealle ja vaunun 2 nopeus v2 vasemmalle; nopeusnuolet ovat sinisiä. Radan alla on valittu positiivinen suunta, oikealle. Harmaat nuolet anturien alla näyttävät, mihin suuntaan kukin anturi mittaa nopeuden positiiviseksi: anturi 1 oikealle ja anturi 2 vasemmalle, eli anturin 2 suunta on vastakkainen valittuun positiiviseen suuntaan nähden." style="max-width:100%;font-size:24px">
+  <rect x="20" y="190" width="560" height="14" rx="2" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2"/>
+  <line x1="24" y1="197" x2="576" y2="197" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="28" y="126" width="44" height="64" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="65" y="144" width="8" height="28" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="528" y="126" width="44" height="64" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="527" y="144" width="8" height="28" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
+  <g opacity="1">
+  <rect x="140" y="120" width="120" height="50" rx="5" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="164" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="236" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M260,145 L261.5,139 L265,151 L268,139 L271,151 L274.5,139 L277.5,151 L279,145" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="279" y1="136" x2="279" y2="154" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  </g>
+  <g opacity="1">
+  <rect x="340" y="120" width="120" height="50" rx="5" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="364" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="436" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M340,145 L338.5,139 L335,151 L332,139 L329,151 L325.5,139 L322.5,151 L321,145" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="321" y1="136" x2="321" y2="154" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  </g>
+  <foreignObject x="183.5" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_1$</div></foreignObject>
+  <foreignObject x="383.5" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_2$</div></foreignObject>
+  <line x1="160" y1="70" x2="246" y2="70" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M260,70 L245,77 L245,63 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="187.5" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
+  <line x1="440" y1="70" x2="374" y2="70" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M360,70 L375,63 L375,77 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="377.5" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
+  <line x1="30" y1="232" x2="99" y2="232" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M110,232 L98,237.5 L98,226.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="70" y="246" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{anturi 1: }+$</div></foreignObject>
+  <line x1="570" y1="232" x2="501" y2="232" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M490,232 L502,226.5 L502,237.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="428" y="246" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$\text{anturi 2: }+$</div></foreignObject>
+  <line x1="230" y1="300" x2="357" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M370,300 L356,306.5 L356,293.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="27" y="288" width="195" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{positiivinen suunta}$</div></foreignObject>
+  <foreignObject x="378" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
+</svg></p>
+<p>Liikemäärän säilyminen tulee yhdessä ulottuvuudessa muotoon</p>
+<p>$$\begin{aligned}
+&m_1 v_1 + m_2 v_2 \\
+\quad &= m_1 v_1' + m_2 v_2'
+\end{aligned}$$</p>
+<p>missä vasen puoli on kokonaisliikemäärä $p_\text{kok}$ ennen törmäystä ja oikea puoli kokonaisliikemäärä $p_\text{kok}'$ törmäyksen jälkeen ($\text{kg}\cdot\text{m/s}$). Täysin kimmottomassa törmäyksessä vaunuilla on törmäyksen jälkeen yhteinen nopeus, joten $v_1' = v_2'$.</p>
+<p><strong>Anturien suunnat.</strong> Kumpikin liikeanturi mittaa etäisyyttä omasta paikastaan lähimpään vaunuun. Radan vasemmassa päässä oleva anturi näyttää positiivista nopeutta, kun vaunu loittonee siitä eli liikkuu oikealle. Oikeassa päässä oleva anturi näyttää positiivista nopeutta, kun vaunu loittonee siitä eli liikkuu vasemmalle. Jos positiiviseksi suunnaksi valitaan oikea, oikeanpuoleisen anturin nopeuksien etumerkki on siis vaihdettava. Tarkista asia ennen mittauksia: työnnä vaunua hitaasti oikealle ja katso, mitä kumpikin anturi näyttää.</p>
+<p>Vaakasuora rata ja pieni vierimisvastus ovat ehto sille, että ulkoisten voimien impulssi jää pieneksi. Jos rata on kalteva, painon radan suuntainen osa on ulkoinen voima, joka muuttaa vaunujen liikemäärää koko ajan.</p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä törmäyksiä teet, mitä mittaat ja mitä pidät vakiona. Tarkista, että rata on vaakasuorassa.</p>
+<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Tee ainakin kolme kimmoista törmäystä, joissa jousipuskurit osuvat toisiinsa, ja ainakin kolme täysin kimmotonta törmäystä, joissa vaunut tarttuvat yhteen. Käytä kummassakin tyypissä esimerkiksi näitä tilanteita:</p>
+<ul>
+<li>vaunut ovat yhtä raskaat, ja vaunu 2 on aluksi levossa</li>
+<li>vaunuun 2 on lisätty punnuksia, ja se on aluksi levossa</li>
+<li>vaunut liikkuvat toisiaan kohti.</li>
+</ul>
+<p>Punnitse kumpikin vaunu lisäpunnuksineen vaa'alla. Valitse oikea positiiviseksi suunnaksi. Työnnä vaunua rauhallisesti ja päästä siitä irti hyvissä ajoin ennen törmäystä, jotta käsi ei vaikuta vaunuun törmäyksen aikana.</p>
+<p><strong>Radan vaakasuoruus.</strong> Aseta vaunu radalle levossa: se ei saa lähteä liikkeelle itsestään. Tönäise vaunua sitten kevyesti kumpaankin suuntaan ja katso anturin nopeuskuvaajasta, että nopeus pienenee kumpaankin suuntaan suunnilleen yhtä hitaasti.</p></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Päätä itse, mitä massoja ja alkunopeuksia käytät, montako törmäystä teet kumpaakin tyyppiä ja miten tarkistat radan vaakasuoruuden. Kirjaa päätöksesi perusteluineen.</p></div>
+<div class="inv-tuki" data-modes="O OO"><p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miten saat vaunut tarttumaan toisiinsa niin, että ne jatkavat varmasti yhdessä?</li>
+<li>Miten varmistat, että käsi ei ole kosketuksissa vaunuun törmäyksen aikana?</li>
+<li>Näkeekö kumpikin anturi koko ajan oman vaununsa? Pysyvätkö vaunut anturien mittausalueella koko mittauksen ajan?</li>
+<li>Millä tavalla tarkistat, että muutit oikeanpuoleisen anturin lukemat oikein yhteisen positiivisen suunnan mukaisiksi?</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: massat, törmäyksen tyyppi ja anturien nopeudet sellaisina kuin luit ne. Kirjaa erikseen nopeudet, jotka on muutettu yhteisen positiivisen suunnan mukaisiksi.</p>
+<p>Anturit tallentavat vaunujen paikan ajan funktiona. Nopeus ennen törmäystä ja sen jälkeen luetaan niistä kuvaajan osista, joissa vaunut eivät kosketa toisiaan. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-1.html">Nopeus paikan kuvaajan kulmakertoimena</a></span></p>
+<div class="inv-tuki" data-modes="O OO"><p>Vierimisvastus pienentää vaunujen nopeutta hitaasti koko ajan, joten lue nopeus mahdollisimman läheltä törmäystä: juuri ennen kosketusta ja heti sen jälkeen, kun vaunut ovat irronneet toisistaan tai alkaneet liikkua yhdessä.</p>
+<p><svg data-fig="velocity" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja: yhden vaunun nopeus v ajan t funktiona mallin mukaan. Ennen törmäystä nopeus pienenee hyvin hitaasti vierimisvastuksen takia. Törmäyksen aikana, joka on merkitty varjostetulla alueella, nopeus muuttuu nopeasti pienemmäksi. Törmäyksen jälkeen nopeus taas pienenee hitaasti. Nopeus v1 luetaan juuri ennen törmäystä ja nopeus v1 pilkku heti törmäyksen jälkeen. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="280" x2="484" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,280 L483,286 L483,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="281" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="80" y="3.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v$</div></foreignObject>
+  <polygon points="257,280 257,69 295,69 295,280" fill="#e3dccb" fill-opacity="0.6"/>
+  <polyline points="97.5,113 99,113.5 100.5,113.5 101.5,113.5 103,113.5 104,113.5 105.5,113.5 107,113.5 108,114 109.5,114 111,114 112,114 113.5,114 115,114 116,114 117.5,114 119,114.5 120,114.5 121.5,114.5 123,114.5 124,114.5 125.5,114.5 127,114.5 128,115 129.5,115 131,115 132,115 133.5,115 135,115 136,115 137.5,115.5 139,115.5 140,115.5 141.5,115.5 143,115.5 144,115.5 145.5,115.5 147,116 148,116 149.5,116 151,116 152,116 153.5,116 155,116 156,116 157.5,116.5 159,116.5 160,116.5 161.5,116.5 163,116.5 164,116.5 165.5,116.5 167,117 168,117 169.5,117 171,117 172,117 173.5,117 174.5,117 176,117.5 177.5,117.5 178.5,117.5 180,117.5 181.5,117.5 182.5,117.5 184,117.5 185.5,118 186.5,118 188,118 189.5,118 190.5,118 192,118 193.5,118 194.5,118.5 196,118.5 197.5,118.5 198.5,118.5 200,118.5 201.5,118.5 202.5,118.5 204,118.5 205.5,119 206.5,119 208,119 209.5,119 210.5,119 212,119 213.5,119 214.5,119.5 216,119.5 217.5,119.5 218.5,119.5 220,119.5 221.5,119.5 222.5,119.5 224,120 225.5,120 226.5,120 228,120 229.5,120 230.5,120 232,120 233.5,120.5 234.5,120.5 236,120.5 237,120.5 238.5,120.5 240,120.5 241,120.5 242.5,120.5 244,121 245,121 246.5,121 248,121 249,121 250.5,121 252,121 253,121.5 254.5,121.5 256,121.5 257,121.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="257,121.5 257.5,121.5 258,121.5 258,121.5 258.5,122 259,122 259,122 259.5,122 259.5,122.5 260,122.5 260.5,123 260.5,123.5 261,123.5 261.5,124 261.5,124.5 262,125 262.5,125.5 262.5,126 263,126.5 263,127 263.5,127.5 264,128 264,128.5 264.5,129.5 265,130 265,130.5 265.5,131.5 266,132 266,133 266.5,133.5 266.5,134.5 267,135 267.5,136 267.5,137 268,138 268.5,138.5 268.5,139.5 269,140.5 269,141.5 269.5,142.5 270,143.5 270,144.5 270.5,145.5 271,146.5 271,147.5 271.5,148.5 272,150 272,151 272.5,152 272.5,153 273,154 273.5,155.5 273.5,156.5 274,157.5 274.5,158.5 274.5,160 275,161 275,162 275.5,163.5 276,164.5 276,165.5 276.5,166.5 277,168 277,169 277.5,170 278,171.5 278,172.5 278.5,173.5 278.5,174.5 279,176 279.5,177 279.5,178 280,179 280.5,180.5 280.5,181.5 281,182.5 281.5,183.5 281.5,184.5 282,185.5 282,186.5 282.5,187.5 283,188.5 283,189.5 283.5,190.5 284,191.5 284,192.5 284.5,193.5 285,194 285,195 285.5,196 285.5,196.5 286,197.5 286.5,198.5 286.5,199 287,200 287.5,200.5 287.5,201 288,202 288,202.5 288.5,203 289,203.5 289,204.5 289.5,205 290,205.5 290,206 290.5,206 291,206.5 291,207 291.5,207.5 291.5,208 292,208 292.5,208.5 292.5,208.5 293,209 293.5,209 293.5,209 294,209.5 294,209.5 294.5,209.5 295,209.5 295,209.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="295,209.5 296.5,209.5 298,209.5 299,210 300.5,210 302,210 303,210 304.5,210 306,210 307,210 308.5,210.5 310,210.5 311,210.5 312.5,210.5 314,210.5 315,210.5 316.5,210.5 318,211 319,211 320.5,211 322,211 323,211 324.5,211 326,211 327,211.5 328.5,211.5 330,211.5 331,211.5 332.5,211.5 334,211.5 335,211.5 336.5,211.5 338,212 339,212 340.5,212 342,212 343,212 344.5,212 345.5,212 347,212.5 348.5,212.5 349.5,212.5 351,212.5 352.5,212.5 353.5,212.5 355,212.5 356.5,213 357.5,213 359,213 360.5,213 361.5,213 363,213 364.5,213 365.5,213.5 367,213.5 368.5,213.5 369.5,213.5 371,213.5 372.5,213.5 373.5,213.5 375,214 376.5,214 377.5,214 379,214 380.5,214 381.5,214 383,214 384.5,214 385.5,214.5 387,214.5 388.5,214.5 389.5,214.5 391,214.5 392.5,214.5 393.5,214.5 395,215 396.5,215 397.5,215 399,215 400.5,215 401.5,215 403,215 404.5,215.5 405.5,215.5 407,215.5 408,215.5 409.5,215.5 411,215.5 412,215.5 413.5,216 415,216 416,216 417.5,216 419,216 420,216 421.5,216 423,216.5 424,216.5 425.5,216.5 427,216.5 428,216.5 429.5,216.5 431,216.5 432,216.5 433.5,217 435,217 436,217 437.5,217 439,217 440,217 441.5,217 443,217.5 444,217.5 445.5,217.5 447,217.5 448,217.5 449.5,217.5 451,217.5 452,218 453.5,218 455,218" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="90" y1="121.5" x2="257" y2="121.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="47" y="107" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_1$</div></foreignObject>
+  <line x1="90" y1="209.5" x2="295" y2="209.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="35" y="195" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$v_1'$</div></foreignObject>
+  <foreignObject x="138.5" y="72" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ennen}$</div></foreignObject>
+  <foreignObject x="228.5" y="32.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{törmäys}$</div></foreignObject>
+  <foreignObject x="331.5" y="168.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jälkeen}$</div></foreignObject>
+</svg></p>
+<p>Nopeuden saat kahdella tavalla: sovita suora paikan kuvaajan siihen osaan, joka on juuri ennen törmäystä tai heti sen jälkeen, ja käytä suoran kulmakerrointa, tai lue nopeuskuvaajasta samojen kohtien keskiarvo.</p></div>
+<div class="inv-tuki" data-modes="O"><p>Voit käyttää esimerkiksi tällaista taulukkoa. Kirjoita nopeuksiin etumerkki, joka vastaa yhteistä positiivista suuntaa.</p>
+<table>
+<thead>
+<tr>
+<th>törmäys</th>
+<th>$m_1\ (\text{kg})$</th>
+<th>$m_2\ (\text{kg})$</th>
+<th>$v_1\ (\text{m/s})$</th>
+<th>$v_2\ (\text{m/s})$</th>
+<th>$v_1'\ (\text{m/s})$</th>
+<th>$v_2'\ (\text{m/s})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Täysin kimmottomassa törmäyksessä kumpikin anturi mittaa yhteen tarttuneiden vaunujen nopeutta. Jos muutit etumerkit oikein, $v_1'$ ja $v_2'$ ovat lähes samat: tämä on hyvä tarkistus.</p></div>
+<p>Muista mittausepävarmuus ja kirjaa ylös, miten arvioit sen.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Arvioi, kuinka tarkasti vaaka antaa massan ja kuinka tarkasti luet nopeuden kuvaajasta, ja kirjaa arviot ylös.</p></div>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Laske jokaisesta törmäyksestä kummankin vaunun liikemäärä sekä kokonaisliikemäärä ennen törmäystä ja sen jälkeen. Esitä vertailu niin, että siitä näkee yhdellä silmäyksellä, säilyykö kokonaisliikemäärä kummassakin törmäystyypissä. Laskuissa voit käyttää esimerkiksi taulukkolaskentaa.</p>
+<div class="inv-tuki" data-modes="O"><p>Lisää taulukkoon sarakkeet $p_\text{kok} = m_1 v_1 + m_2 v_2$, $p_\text{kok}' = m_1 v_1' + m_2 v_2'$ ja niiden erotus $p_\text{kok}' - p_\text{kok}$. Piirrä lisäksi kuvaaja, jonka pystyakselilla on kokonaisliikemäärä törmäyksen jälkeen ja vaaka-akselilla kokonaisliikemäärä ennen törmäystä. Merkitse kimmoiset ja täysin kimmottomat törmäykset eri merkeillä.</p></div>
+<p>Vastaa:</p>
+<ol>
+<li>Ovatko kokonaisliikemäärät ennen ja jälkeen yhtä suuret? Onko erotuksissa jokin järjestelmällinen suunta, esimerkiksi onko liikemäärä jälkeen useimmiten pienempi kuin ennen?</li>
+<li>Eroavatko kimmoiset ja täysin kimmottomat törmäykset toisistaan liikemäärän säilymisen kannalta?</li>
+<li>Laske kummankin vaunun liikemäärän muutos törmäyksessä. Tukevatko mittauksesi sitä, että muutokset ovat yhtä suuret ja vastakkaissuuntaiset, kuten Newtonin kolmannesta laista seuraa?</li>
+</ol>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Miksi juuri tämä kuvaaja?</strong> Jos kokonaisliikemäärä säilyy, jokaisen törmäyksen piste on suoralla $p_\text{kok}' = p_\text{kok}$, joka kulkee origon kautta ja jonka kulmakerroin on $1$. Suora on piirretty kuvaajaan mallina: siinä ei ole mittauspisteitä. Kun vaunut liikkuvat toisiaan kohti, kokonaisliikemäärä voi olla negatiivinen, joten akseleita voi joutua jatkamaan origon toiselle puolelle.</p>
+<p><svg data-fig="model" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja: kokonaisliikemäärä törmäyksen jälkeen kokonaisliikemäärän ennen törmäystä funktiona, jos liikemäärä säilyy. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on yksi. Kuvassa näkyy positiivisten liikemäärien osa: jos liikemäärän suuruus pienenee törmäyksessä, piste on suoran alapuolella. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="280" x2="478" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M490,280 L477,286 L477,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="281" x2="90" y2="42" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,30 L96,43 L84,43 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="496" y="265.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$p_\text{kok}$</div></foreignObject>
+  <foreignObject x="80" y="-0.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$p_\text{kok}'$</div></foreignObject>
+  <polyline points="90,280 451,61.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="170" y="74.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$p_\text{kok}' = p_\text{kok}$</div></foreignObject>
+  <line x1="379" y1="114.5" x2="379" y2="170" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M379,179 L374.5,169 L383.5,169 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="297" y="190" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{suuruus pienenee}$</div></foreignObject>
+</svg></p>
+<p>Jos ulkoinen voima, kuten vierimisvastus, on pienentänyt kokonaisliikemäärän suuruutta (itseisarvoa), tai nopeudet on luettu liian kaukaa törmäyksestä, pisteet poikkeavat suoralta järjestelmällisesti: kun $p_\text{kok} > 0$, ne ovat suoran alapuolella, ja kun $p_\text{kok} < 0$, suoran yläpuolella.</p></div>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Perustele jokaisen törmäyksen kohdalla, onko kokonaisliikemäärien erotus $p_\text{kok}' - p_\text{kok}$ pienempi kuin erotuksen epävarmuus, ja kerro, miten arvioit epävarmuuden.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Kokonaisliikemäärän epävarmuuden voit arvioida jommallakummalla tavalla:</p>
+<ul>
+<li><strong>Toistot.</strong> Tee sama törmäys samoilla massoilla ainakin kolme kertaa. Laske jokaisesta suhteellinen erotus $\dfrac{p_\text{kok}' - p_\text{kok}}{p_\text{kok}}$ ja katso, kuinka paljon se vaihtelee toistosta toiseen.</li>
+<li><strong>Ääriarvot.</strong> Laske vaunun liikemäärä ensin massan ja nopeuden pienimmillä mahdollisilla arvoilla ja sitten suurimmilla. Liikemäärän virhe-arvio on tulosten erotuksen puolikas. Kokonaisliikemäärän virhe-arvio on vaunujen liikemäärien virhe-arvioiden summa. Erotuksen $p_\text{kok}' - p_\text{kok}$ virhe-arvio on $\Delta p_\text{kok} + \Delta p_\text{kok}'$: jos erotus on sitä pienempi, kokonaisliikemäärät ovat sopusoinnussa. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Virhe-arvio ja suhteellinen virhe</a></span></li>
+</ul>
+<p>Kun vaunut liikkuvat toisiaan kohti, kokonaisliikemäärä voi olla lähellä nollaa. Silloin suhteellinen erotus on harhaanjohtava, ja erotusta kannattaa verrata suoraan erotuksen virhe-arvioon $\Delta p_\text{kok} + \Delta p_\text{kok}'$.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: olivatko erot satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet muuttivat tulosta? Mieti ainakin vierimisvastusta, radan kaltevuutta, käden vaikutusta ja sitä, mistä kuvaajan kohdasta nopeudet luettiin. Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Säilyikö kokonaisliikemäärä kimmoisissa törmäyksissä? Entä täysin kimmottomissa? Ovatko erot mittausepävarmuuden rajoissa? Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Viittaa taulukkoon tai kuvaajaan, esimerkiksi "taulukosta 2 nähdään, että …". Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tausta ja teoria:</strong> millä ehdolla kokonaisliikemäärä säilyy, ja miten kimmoisa ja täysin kimmoton törmäys eroavat toisistaan.</li>
+<li><strong>Koejärjestely ja menetelmä:</strong> kuva järjestelystä, jossa näkyvät anturit, vaunut ja valittu positiivinen suunta, sekä se, miten anturien lukemat muutettiin tämän suunnan mukaisiksi ja miten radan vaakasuoruus tarkistettiin.</li>
+<li><strong>Mittaustulokset:</strong> massat ja nopeudet sellaisina kuin ne luettiin sekä etumerkillisinä yhteisen suunnan mukaan.</li>
+<li><strong>Tulos:</strong> kokonaisliikemäärät ennen ja jälkeen jokaisessa törmäyksessä epävarmuuksineen.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-liike-energia-kahdessa-tormaystyypissa"><h2 id="h-laajennus-liike-energia-kahdessa-tormaystyypissa">Laajennus: liike-energia kahdessa törmäystyypissä</h2>
+<p>Liikemäärän lisäksi voit tutkia samoista mittauksista vaunujen yhteistä liike-energiaa. Vaunun liike-energia on $E_\text{k} = \tfrac12 mv^2$. Se ei riipu nopeuden suunnasta, joten etumerkillä ei ole siinä merkitystä. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-7.html">Liike-energia</a></span></p>
+<p>Laske jokaisesta törmäyksestä vaunujen yhteinen liike-energia ennen törmäystä ja sen jälkeen sekä se, kuinka suuri osa liike-energiasta hävisi törmäyksessä. Vertaa kimmoisia ja täysin kimmottomia törmäyksiä toisiinsa epävarmuuksineen: kummassa liike-energiaa häviää enemmän, ja onko häviö kimmoisissa törmäyksissä nolla mittausepävarmuuden rajoissa? Mihin hävinnyt energia joutuu?</p>
+<p>Johda lopuksi liikemäärän säilymislaista, kuinka suuri osa liike-energiasta säilyy täysin kimmottomassa törmäyksessä, kun vaunu 2 on aluksi levossa. Ilmaise tulos vaunujen massojen avulla ja vertaa sitä mittaamiisi arvoihin.</p>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Vihjeitä.</strong> Ratkaise ensin yhteinen nopeus $v'$ liikemäärän säilymislaista, kun $v_2 = 0$. Kirjoita sitten liike-energia ennen törmäystä ja sen jälkeen ja jaa jälkimmäinen edellisellä. Nopeus supistuu pois. Liike-energian epävarmuus on suhteellisesti suurempi kuin nopeuden, koska nopeus on kaavassa toisessa potenssissa: laske se ääriarvoilla samalla tavalla kuin liikemäärän.</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella, myös anturien suunnat ja etumerkit?</li>
+<li>Perustuuko johtopäätöksesi mittaustuloksiin ja niiden epävarmuuksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Tarkista etukäteen, että rata on vaakasuorassa ja että sen päissä on pysäyttimet. Kokeile, miten vaunut saadaan tarttumaan toisiinsa (esimerkiksi tarrapuskurit) ja että jousipuskurit osuvat toisiinsa suoraan. Asenna liikeanturit radan kumpaankin päähän ja kokeile, että kumpikin näkee oman vaununsa koko radan matkalta eikä anturin lähin mittausetäisyys katkaise mittausta törmäyksen kohdalla: törmäys kannattaa tehdä radan keskivaiheilla. Kerro ryhmille, mitä lisäpunnuksia vaunuihin voi kiinnittää ja miten. Kokeile, miten mittausohjelma näyttää kahden anturin tulokset samassa näkymässä.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Oikeanpuoleisen anturin lukemia ei muuteta yhteisen positiivisen suunnan mukaisiksi. Silloin vastakkaiseen suuntaan liikkuvien vaunujen liikemäärät lasketaan yhteen samanmerkkisinä, ja kokonaisliikemäärä näyttää muuttuvan paljon. Täysin kimmoton törmäys paljastaa virheen: yhdessä liikkuvien vaunujen nopeudet ovat silloin vastakkaismerkkiset.</li>
+<li>Nopeuksia luetaan liian kaukaa törmäyksestä, jolloin vierimisvastus näkyy siinä, että kokonaisliikemäärän itseisarvo pienenee järjestelmällisesti. Kuvaajassa $p_\text{kok}'$–$p_\text{kok}$ pisteet ovat silloin suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$.</li>
+<li>Opiskelija pitää vaunua kädessä törmäyksen alkaessa tai työntää sitä vielä törmäyksen aikana. Käden voima on ulkoinen voima.</li>
+<li>Massaksi kirjataan vain lisäpunnusten massa eikä koko vaunun massaa.</li>
+<li>Ajatellaan, että täysin kimmottomassa törmäyksessä liikemäärää häviää, koska liike-energiaa häviää. Laajennus on tehty tämän erottamiseen.</li>
+<li>Kun vaunut liikkuvat toisiaan kohti ja kokonaisliikemäärä on lähellä nollaa, suhteellinen erotus voi olla hyvin suuri, vaikka absoluuttinen erotus on pieni. Ohjaa vertaamaan erotusta virhe-arvioon.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Ohjatussa työtavassa sivu antaa törmäystilanteet, taulukon, kuvaajan ja kaksi tapaa arvioida epävarmuus. Osittain ohjatussa opiskelija päättää massat, alkunopeudet ja törmäysten määrän. Itsenäisessä työtavassa sivu antaa tutkimuskysymyksen, välineet ja lyhyen periaatteen: opiskelija valitsee positiivisen suunnan, päättelee itse anturien etumerkit, valitsee vertailun esitystavan ja epävarmuuden arviointitavan, ja laajennus kuuluu työhön. Laajennuksen johtaminen on fysiikan tasoa F2.</p>
+<p><strong>Turvallisuus.</strong> Riskit ovat pieniä: radalta putoavat vaunut ja lisäpunnukset, sormet törmäävien vaunujen välissä sekä anturin valolähde. Jos koulun liikeanturissa on laser, käytä vain luokan 1 tai 2 laitetta ja muistuta, ettei säteeseen katsota.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>
