@@ -109,7 +109,7 @@
       "type": "interpret",
       "title": "Tuulivoimalan tehokäyrä",
       "source": "statistics",
-      "source_note": "Valmistajan ilmoittama tehokäyrä, Vestas V82, roottorin halkaisija $82\\,\\text{m}$: NREL Turbine Archive (nrel.github.io/turbine-models, tiedosto Onshore/VestasV82_1.65MW_82.csv), luettu 30.10.2026.",
+      "source_note": "Valmistajan ilmoittama tehokäyrä, Vestas V82, roottorin halkaisija $82\\,\\text{m}$: NREL Turbine Archive (nrel.github.io/turbine-models, tiedosto VestasV82_1.65MW_82.csv, kansio turbine_models/data/Onshore), luettu 30.10.2026.",
       "figure": "fy4-15/tehokayra-pisteet",
       "text": "Valmistaja ilmoittaa tuulivoimalan sähkötehon $P$ eri tuulen nopeuksilla $v$. Taulukko ja kuvaaja ovat voimalasta, jonka roottorin halkaisija on $82\\,\\text{m}$.\n\n| $v$ (m/s) | $P$ (kW) |\n|---|---|\n| $3$ | $0$ |\n| $4$ | $28$ |\n| $5$ | $144$ |\n| $6$ | $309$ |\n| $7$ | $511$ |\n| $8$ | $758$ |\n| $9$ | $1017$ |\n| $10$ | $1285$ |\n| $11$ | $1504$ |\n| $12$ | $1637$ |\n| $13$ | $1650$ |\n| $16$ | $1650$ |\n| $20$ | $1650$ |",
       "question": {
@@ -143,7 +143,7 @@
       "title": "Vuoksen kaksi voimalaitosta",
       "source": "statistics",
       "source_note": "Teho ja putouskorkeus: Fortum, Vuoksen vesistön voimalaitokset (fortum.com), luettu 30.10.2026. Vuoksen vuotuinen keskivirtaama noin $600\\,\\text{m}^3\\text{/s}$: Kaakkois-Suomen elinvoimakeskus, tiedote 29.4.2026.",
-      "text": "Vuoksen vesi virtaa ensin Tainionkosken ja sitten Imatran voimalaitoksen läpi, joten virtaama on molemmissa lähes sama. Vuoksen vuotuinen keskivirtaama on noin $600\\,\\text{m}^3\\text{/s}$. Taulukossa ovat voimalaitosten suurimmat sähkötehot $P$ ja putouskorkeudet $h$.\n\n| voimalaitos | $P$ (MW) | $h$ (m) |\n|---|---|---|\n| Tainionkoski | $62$ | $7{,}8$ |\n| Imatra | $192$ | $24$ |",
+      "text": "Vuoksen vesi virtaa ensin Tainionkosken ja sitten Imatran voimalaitoksen läpi, joten virtaama on molemmissa lähes sama. Vuoksen vuotuinen keskivirtaama on noin $600\\,\\text{m}^3\\text{/s}$, mutta suurin teho saavutetaan turbiinien suurimmalla virtaamalla, noin $900\\,\\text{m}^3\\text{/s}$ (laskettu hyötysuhteella $\\eta \\approx 0{,}90$, ei mitattu). Taulukossa ovat voimalaitosten suurimmat sähkötehot $P$ ja putouskorkeudet $h$.\n\n| voimalaitos | $P$ (MW) | $h$ (m) |\n|---|---|---|\n| Tainionkoski | $62$ | $7{,}8$ |\n| Imatra | $192$ | $24$ |",
       "question": {
         "type": "choice",
         "prompt": "Laske kummallekin voimalaitokselle sähköteho putouskorkeuden metriä kohden, $P : h$. Mitä tuloksista voi päätellä?",
@@ -327,7 +327,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä",
-      "prompt": "Kaksi samanlaista tuulivoimalaa on eri paikoissa. Ensimmäisen paikan tuuli on keskimäärin $6\\,\\text{m/s}$ ja toisen $8\\,\\text{m/s}$. Selitä tuulen liike-energian avulla, miksi toinen voimala tuottaa yli kaksi kertaa enemmän sähköä, vaikka tuuli on vain kolmanneksen voimakkaampi.",
+      "prompt": "Kaksi samanlaista tuulivoimalaa on eri paikoissa. Ensimmäisen paikan tuuli puhaltaa tasaisesti nopeudella $6\\,\\text{m/s}$ ja toisen nopeudella $8\\,\\text{m/s}$. Selitä tuulen liike-energian avulla, miksi toinen voimala tuottaa yli kaksi kertaa suuremman tehon, vaikka tuuli on vain kolmanneksen voimakkaampi.",
       "criteria": [
         "Vastaus kertoo, että suuremmalla tuulen nopeudella roottorin läpi virtaa sekunnissa enemmän ilmaa, suhteessa $8 : 6$.",
         "Vastaus kertoo, että jokaisella ilmakilogrammalla on liike-energiaa $\\tfrac{1}{2}mv^2$ suhteessa $(8 : 6)^2$ enemmän.",

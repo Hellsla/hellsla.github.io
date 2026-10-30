@@ -1,9 +1,7 @@
 VERDICT: DONE
 
-Draft, round 1. No simulation (meta `sim: false`): the evidence is real data, which a sim would only recompute.
-- `lesson.md`: Ydinajatus (energy chain, power, efficiency with the guardrail wording, wind's kinetic energy, Betz limit about 59 %), `## Kaava: Vesi- ja tuulivoimalan teho` (P = ηρQgh and P = ½ηρAv³ derived from mgh and ½mv², stated conditions, why v³, rated-power plateau), seven-stage wind example, misconceptions, summary; figures from `figures.py` (hero, vesivoimala, ilmalierio, tehokayra; task variant tehokayra-pisteet).
-- `inquiry.json`: hook, optional E_k retrieval, two predictions (revealed after theory), two `interpret` tasks with `source: statistics` (Vestas V82 power curve, NREL Turbine Archive; Fortum Imatra/Tainionkoski; Vuoksi mean flow, Kaakkois-Suomen elinvoimakeskus 29.4.2026), conclusion, reflect, error-spotting, pumped-storage transfer, three checks, exit.
-- `exit-ticket.json`, `exercises/` (5/4/3 with complete solutions; long fractions factor their units for 360 px).
-- `lesson-answers.py`, `answers.py`: every number.
-- `glossary.json`: new `putouskorkeus`, `virtaama`; fy4-15 added to six terms. `meta.json` glossary list.
-check_lesson.py fy4-15: all ok.
+Fix round 1. check_lesson.py fy4-15: all ok.
+- `lesson.md`: Miksi sentence no longer gives Ennusta 1's answer ("kasvaa paljon enemmän kuin tuulen nopeus"); Ydinajatus notes that many turbines also use pressure.
+- `inquiry.json`: vesi-data states the maximum power is reached at about 900 m³/s (calculated, η ≈ 0,90), against the mean 600 m³/s, so siirto's check is consistent; check-3 now steady wind and "suuremman tehon"; source path of the NREL file given in full.
+- `exit-ticket.json`: V82-only "13 m/s" replaced by the power curve's peak.
+Left: ilmalierio figure tidy-up (comma, A on rotor), E = Pt in Kaava, vesi-data question/choices and tuuli-data table-vs-graph (pedagogy Polish, not listed in prompt).

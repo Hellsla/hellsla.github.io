@@ -8,7 +8,7 @@
     "a": "Korkeamman voimalan virtaama on puolet toisen virtaamasta. Teho on verrannollinen tuloon $Qh$, joten kun $h$ kaksinkertaistuu ja teho pysyy samana, $Q$ puolittuu: jokainen kuutiometri antaa kaksi kertaa enemmän energiaa."
   },
   {
-    "q": "Miksi tuulivoimalan teho ei enää kasva, kun tuuli voimistuu yli noin $13\\,\\text{m/s}$:n?",
+    "q": "Miksi tuulivoimalan teho ei enää kasva, kun tuuli voimistuu yli nopeuden, jolla voimala saavuttaa tehokäyrän huipun?",
     "a": "Voimala on saavuttanut nimellistehonsa, jota generaattori ei voi ylittää. Lapoja käännetään niin, että osa tuulesta pääsee ohi, joten sähköksi muuttuva osuus tuulen tehosta pienenee tuulen voimistuessa ja teho pysyy vakiona."
   }
 ]
