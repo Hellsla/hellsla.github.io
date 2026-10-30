@@ -79,7 +79,7 @@
   {
    "id": "fy4-9-L3-01",
    "level": 3,
-   "text": "Lasta istuu pulkassa vaakasuoralla lumella, ja lapsen ja pulkan yhteinen massa on $24\\,\\text{kg}$. Pulkka liukuu aluksi nopeudella $1{,}0\\,\\text{m/s}$, kun aikuinen työntää sitä liikkeen suuntaan. Kuvaajassa on työntövoima ajan funktiona. Lumen kitka jätetään huomiotta. Kuinka suuri on pulkan nopeus työnnön jälkeen?",
+   "text": "Lapsi istuu pulkassa vaakasuoralla lumella, ja lapsen ja pulkan yhteinen massa on $24\\,\\text{kg}$. Pulkka liukuu aluksi nopeudella $1{,}0\\,\\text{m/s}$, kun aikuinen työntää sitä liikkeen suuntaan. Kuvaajassa on työntövoima ajan funktiona. Lumen kitka jätetään huomiotta. Kuinka suuri on pulkan nopeus työnnön jälkeen?",
    "figure": "fy4-9/ex-potku",
    "answer": 3.0,
    "unit": "m/s",
