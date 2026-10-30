@@ -93,7 +93,7 @@
 **Free-body diagram:** The lighter body as a rectangle, positive direction up: $\overline{T}_1$ up and $\overline{G}_1$ down, with $\overline{T}_1$ longer. The heavier body as a rectangle, positive direction down: $\overline{G}_2$ down and $\overline{T}_2$ up, with $\overline{G}_2$ longer.
 **Formula:** $T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$. The first gives $T = m_1 (g + a)$, and the second gives $m_2 (g - a) = T$, so $m_2 = \dfrac{m_1 (g + a)}{g - a}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $m_2 = \dfrac{0.60\,\text{kg} \cdot (9.81\,\text{m/s}^2 + 2.0\,\text{m/s}^2)}{9.81\,\text{m/s}^2 - 2.0\,\text{m/s}^2}$ $= \dfrac{7.086\,\text{N}}{7.81\,\text{m/s}^2} = 0.9073\,\text{kg}$
+**Substitution:** $m_2 = \dfrac{0.60\,\text{kg} \cdot (9.81\,\text{m/s}^2 + 2.0\,\text{m/s}^2)}{9.81\,\text{m/s}^2 - 2.0\,\text{m/s}^2} = \dfrac{7.086\,\text{N}}{7.81\,\text{m/s}^2} = 0.9073\,\text{kg}$
 **Answer:** $0.91\,\text{kg}$, two significant figures like the mass $0.60\,\text{kg}$ and the acceleration $2.0\,\text{m/s}^2$.
 **Reasonableness:** The mass $0.91\,\text{kg}$ is greater than $0.60\,\text{kg}$, as it must be for the heavier body. Check with the formula $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2} = \dfrac{0.3073 \cdot 9.81}{1.5073}\,\text{m/s}^2 \approx 2.0\,\text{m/s}^2$, and the tension $T = 7.09\,\text{N}$ lies between the weights $5.9\,\text{N}$ and $8.9\,\text{N}$.
 
