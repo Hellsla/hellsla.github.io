@@ -1,20 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: bca89d9de1f19d26
+VERDICT: PASS
+CONTENT-HASH: 2a75402576207a6d
 
 ## Blocking
-- content/fi/FY4/fy4-6/lesson.md:424, :418, :197 — **B.** "Rinteellä … $N = mg\cos\alpha$" (Tiivistelmä, virhekäsitys) and "Kohtisuoran komponentin mukana pienenee tukivoima" have no condition. The prerequisite chapter teaches angled pulls, which change $N$. — Fix: add "kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa". The glossary's *kalteva taso* entry needs the same.
-- lessons/FY4/fy4-6/figures.py:197, :223, :265 (*kalteva*, *esimerkki*, *valitse-a…d*) — **A, drawing rule.** The tail of $\overline{N}$ is put where the $\overline{G}$ shaft crosses the bottom face (gaps 4.5, 0.3 and 0.2 units), so N seems to grow out of G. This breaks "N from the contact surface, apart from G", and *valitse-a* is the model answer. — Fix: start N on the uphill side, about bc + 16·t, as *virhe*, *malli-veto* and the simulation do. Extend fbd.py's separation check to this crossing point.
 
 ## Polish
-- inquiry.json:270 vs :178 — wood's friction coefficient is given as 0,3–0,5 in one place and 0,3–0,6 in the other. Use one range.
-- inquiry.json:442 — check-2's *Järkevyys* mixes kinetic and static friction ("liukuminen alkaisi").
-- inquiry.json:119, :193 — "kulma α" uses a plain Unicode α. Write "kulma $\alpha$".
-- lesson.md, *Kitka ei aina vastusta liikettä* — "Ainoa vaakasuora voima" comes before air resistance is set aside. Add the condition in the sentence.
+- lessons/FY4/fy4-6/figures.py (*kalteva-ydin*, the first situation picture in Ydinajatus): the plank's upper end overhangs the post's top instead of clearly resting on it, as it does in *kalteva*. This is not a physics error. Make the two pictures agree.
+- lesson.md, *Kaava*: "Levossa olevaan kappaleeseen vaikuttava lepokitka on yhtä suuri kuin $G_x$" relies on the condition in the sentence before it (only G, N and friction act). This is acceptable (C). Optionally add "kun muita rinteen suuntaisia voimia ei ole".
 
 ## Checked
-- Every number in the lesson and inquiry recomputed in one script with my own formulas: all agree, and each stays inside its tolerance when rounded.
-- The 26°/27° slip pair is consistent with μ₀ = 0,50, and both bracketing tangents pass.
-- sim.js implements the stated model and its boxes state its limits. Exp-1 and exp-2 each isolate their varied parameter, and simState gives the measured keys.
-- Force-diagram checklist on every figure and the simulation: rectangles, G from the centre, friction at the outline, dashed components, F red, v blue, a orange, equations match the axes. Each distractor has exactly one error.
-- Notation uses \overline and \cdot; no ×, \vec or \mathbf.
-- Exactly one correct option in every choice item, with correct feedback. The exit ticket and model answers agree with the theory.
+- Round 1 blocking items are resolved. The $N = mg\cos\alpha$ condition is now stated in Ydinajatus, Kaava, virhekäsitys, Tiivistelmä and the glossary. $\overline{N}$ now starts on the bottom face uphill of the $\overline{G}$ shaft in *kalteva*, *kalteva-ydin*, *esimerkki* and *valitse-a…d*. I checked this in renders at 2.5×.
+- Every lesson and inquiry number was recomputed in one script with my own formulas, and all agree: 48,0 N; 1,48 and 4,15 m/s²; 3,41/6,71/8,60/17,6/5,24 N; 26,57°; tan 26,5° = 0,499 (26° and 27° inside 3 %); 3,22 m/s²; 0,350; 20,3 N (20 is 1,5 % off against a 2 % tolerance); 0,306; T = 113 N; 97/589 N; truck 40 N.
+- Figure magnitudes are to scale: N and $G_y$, friction and $G_x$, T = $G_x$ + friction (0,577 G), and the truck's friction at 0,20 G. The friction graph is at 50/35 N.
+- FBD checklist on every figure, the sim and the solutions: interactions, directions, friction placed at the outline, dashed components, $\overline{a}$ and $\overline{v}$ not drawn as forces, and the equations' signs match the axes. Each *valitse* distractor has exactly one error, and its feedback names it.
+- sim.js implements the stated model (box starting at rest, 1° slider steps, $\mu_0$ check), and its boxes state the limits. Exp-1 and exp-2 isolate their varied parameter, and simState gives Gx, N, Fmu and a.
+- Choice items: exactly one correct option each, and every feedback is correct. The model answers and exit ticket agree with the theory. Friction in the direction of motion (truck, walking, conveyor) is explained by relative sliding.
+- Scope fits FY4 (paino ja kitka, kitkakertoimen määrittäminen).

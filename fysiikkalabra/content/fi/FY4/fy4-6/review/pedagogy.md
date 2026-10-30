@@ -1,19 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: bca89d9de1f19d26
+VERDICT: PASS
+CONTENT-HASH: 2a75402576207a6d
 
 ## Blocking
-- inquiry.json (exp-1 `names.alpha`, exp-2 `names.alpha`: "kulma α") — the Unicode α is shown as plain text in the Alkutila box ("kulma α = 0 °") and in the table header "kulma α" (390 and 1280 px captures), while m, G_x, F_μ are LaTeX; teacher's rule 2026-10-26: every label LaTeX — fix: "kulma $\\alpha$" in both `names` (and "0 °" without the stray space in the Alkutila line).
 
 ## Polish
-- inquiry.json johtopaatos/reflect — the question and model answer claim the *limit angle* is mass-independent (and reflect asks about "täysi ja tyhjä laatikko", never introduced in Pohdinta), but exp-2 locks α = 35° and the box always slides, so no measurement shows it — fix: add to exp-2 a step at 26° and 27° (or rephrase the question to acceleration only) and name the full/empty box in the hook.
-- Sim at 390 and 1280 px — the force diagram is a small box with 9–11 px labels in a mostly empty panel; at α = 10° arrows are tiny; the Tutki sim is 508 px tall on a phone so the slider and the *Kirjaa mittaus* button are a scroll apart — fix: scale the diagram to fill its panel.
-- lesson.md Ydinajatus "Kalteva taso" — components and "dashed" are explained with no picture; the figure comes only after the Kaava paragraph — fix: move or repeat the small figure after that paragraph.
-- Notation — lepokitka is $F_{\mu 0}$ in Kaava but $\overline{F}_\mu$ in every figure, the sim and solutions — fix: say once that the diagram's $F_\mu$ is the static friction at rest.
-- Hero shows the box staying only; the steeper case of the Miksi question is not pictured. Task text wraps ":n kulmassa" onto its own line (shared template, example card at 390 px).
+- lesson.md Esimerkki, figure `esimerkki` (390 px capture) — the angle mark reads "25" without a degree sign — fix: "$25^\circ$" in the label.
+- Example task card at 390 px — the text breaks before ", liukuu" and ":n kulmassa" so a comma and a case ending start their own lines (shared template; carried from round 1) — fix: bind the unit and its ending with a non-breaking join in the renderer.
+- Sim at 390 px — the force diagram is still a small figure in a wide empty panel (arrows at 10° are short); readable, not blocking — fix: scale the body and arrows up to fill the panel.
+- Notation — lepokitka is $F_{\mu 0}$ in Kaava but $\overline{F}_\mu$ in figures and solutions; now explained once under "Kitkakertoimen määrittäminen", fine, but exp-1's table column "$F_\mu$" could say "lepokitka" in its note.
 
 ## Checked
-- Opening question answered (Ydinajatus, johtopäätös); hero matches the Miksi at FY3 detail; chapter names, no ids shown.
-- Predictions refutable by exp-1/exp-2; locks, 2 experiments, one hour of core path.
-- Force diagrams (docs/force-diagrams.md): select, error, draw, equations all practised; each distractor has one error with feedback naming it; descriptions list arrows without verdicts; diagram precedes equations in every solution.
-- Example staged in 8 steps, symbolic before numeric; figures legible at 390 px; layout 360/768/1280 clean.
-- Finnish and terms fine; exit ticket tests the core ideas.
+- Round-1 blocker fixed: kulma $\alpha$ is LaTeX in Alkutila and table header at 390 px; model answer now says the limit angle's mass-independence "ei mitattu"; hook names empty and full box; components figure sits beside the "Kalteva taso" paragraph.
+- Opening question answered (Ydinajatus, johtopäätös); hero matches the Miksi; predictions refutable by exp-1/exp-2, locks and reveal minimums right; one-hour core path.
+- Force diagrams (docs/force-diagrams.md): select, error, draw (check-3), equations all practised; each distractor has one error with feedback naming it; descriptions list arrows without verdicts; diagram precedes equations in every solution; N, G and friction drawn from their points of application, friction at the outline (fig 3, 4, 7, 8 captures).
+- Example staged (8 steps), diagram before equations, symbolic before numeric; figures legible at 390 px.
+- Finnish and glossary terms correct; exit ticket tests the core ideas (tan α0, friction direction, mass vs weight).

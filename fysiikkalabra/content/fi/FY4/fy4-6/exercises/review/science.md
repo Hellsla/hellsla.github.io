@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3e4500116d25106f
+CONTENT-HASH: 9c86d3f377cf47f7
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-03 / figures.py:326 — the task presents the points as the students' measurements, but the figure's description calls them "keksitty esimerkkiaineisto". Make the two say the same thing (e.g. "esimerkkiaineisto" in both).
-- solutions.md:8 (L1-01) — "kolme merkitsevää numeroa kuten … massassa 160 kg": the number of significant figures in 160 kg is ambiguous. Justify the rounding with 1,62 m/s² alone.
-- L1-02, L1-03, L2-02 — air resistance is not set aside in the task text, as L2-01 and L3-02 do. This is a fair simplification (C); add it only if it is done everywhere.
+- solutions.md L1-03 *Järkevyys*: "tavallinen arvo puulle lattiaa vasten". The task does not name the box's material. Say "tavallinen arvo laatikolle lattiaa vasten".
+- solutions.md L1-01 *Voimakuvio*: it draws N equal to G, assuming the astronaut stands at rest on the surface, which the task does not say. Draw G only, or state the assumption (C).
+- L2-01: the unrounded answer 0,134 is 3,4 % from 0,13 against a 4 % tolerance. It is inside, but the margin is thin.
 
 ## Checked
-- All 12 answers recomputed independently in one script and matched against answers.py and exercises.json: 259,2 N; 35,3 N; 0,306; 7,37 N; 58,9 N; 0,213; 0,807 m/s²; 0,2145 (least-squares fit through the origin); 48,2 N vs G_x 56,3 N (it slides); 0,357; 0,795 m; 0,529 m/s².
-- The answer rounded to the data's significant figures stays inside the relative tolerance every time (largest gap: L2-03 2,1 % against 5 %).
-- Every solution solves symbolically first, describes the diagram in words (rectangle, G from the centre, N perpendicular, friction at the corner, components dashed, a orange) and checks reasonableness. The signs agree with the stated axes.
-- Physics conditions: kinetic vs static friction chosen correctly; L3-01 friction points forward; L3-02 notes that the puck stays at rest at the top only if μ₀ ≥ tan 20°; L2-04 compares μ₀N with G_x; L2-03 reads the slope from the fitted line and justifies a line through the origin.
-- Scope fits FY4 (paino ja kitka, kalteva taso). Notation uses \overline and \cdot.
+- All 12 answers were recomputed independently in one script and compared with exercises.json: 259,2 N; 35,3 N; 0,306; 7,37 N; 58,9 N; 0,134; 0,807 m/s²; 0,214 (the points match the *mittaus* figure, least-squares 0,2145); 8,05 N; 0,357; 0,795 m; 0,330 m/s². Each lies within its tolerance.
+- Models are chosen correctly: kinetic vs static friction; L2-04 compares $\mu_0 N$ with $G_x$ and confirms it with tan 35° > 0,60; L3-01 friction points forward and $\mu_0 \ge a/g$; L3-02 has both $G_x$ and friction down the slope while moving up, and states the $\mu_0 \ge \tan 20^\circ$ condition for staying put; L3-03 has the same μ on the Moon, so $a$ scales with g.
+- Every solution has a diagram described in words, solves symbolically first, has rounding justified by the limiting datum, and ends with a real reasonableness check. The signs agree with the stated axes.
+- L2-03 now calls the data example data in both the task and the figure, and reads the slope from a fitted line through the origin.
+- Notation uses \overline and \cdot. Scope fits FY4.

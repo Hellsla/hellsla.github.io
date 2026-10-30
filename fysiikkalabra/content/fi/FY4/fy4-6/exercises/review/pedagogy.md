@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3e4500116d25106f
+CONTENT-HASH: 9c86d3f377cf47f7
 
 ## Blocking
 
 ## Polish
-- exercises.json fy4-6-L3-03 — Moon slope with friction is the worked example ($a = g(\sin\alpha - \mu\cos\alpha)$) with only $g$ changed; level 3 should need reasoning — fix: ask whether the box slides at all on the Moon at 30° with $\mu_0 = 0{,}60$, or compare Earth and Moon.
-- fy4-6-L2-04 — asks two things (maximum static friction, does it stay) but the answer checks only 48 N; the second is only in the solution — fix: split, or make the answer the verdict margin.
-- fy4-6-L2-01 repeats the lesson's check 2 ($\mu = \tan\alpha$, 12° vs 17°) — vary it (a sled speeding up, find $\mu$ from $a$).
-- Answer panels show 35,316 N and 7,3747 N while solutions round to 2 s.f.; show the rounded value.
-- L1-01 and L1-05 solutions have no force diagram (untagged, acceptable); add one line for consistency.
+- exercises.json fy4-6-L2-04 — "Kuinka monta newtonia komponentti ylittää suurimman lepokitkan? (Jos luku olisi negatiivinen…)" is a scaffolded comparison rather than a question a student would meet — fix: ask "Pysyykö laatikko paikallaan? Perustele laskemalla" and keep the 8,1 N as the check value.
+- solutions.md fy4-6-L1-05 — "Voimakuvio" comes before "Periaate", unlike every other solution — fix: reorder for consistency.
+- fy4-6-L1-03 repeats the spring-balance idea of the lesson's optional "Mittaus jousivaa'alla" at level 1 only with other numbers; acceptable, but no level-1 task uses static friction below the limit (only check-1 does) — fix: optional, swap L1-05 or add one.
 
 ## Checked
-- Counts 5/4/3, levels fit the rubric; level 1 single formula, level 2 two-step or graph, level 3 friction forward (L3-01) and up-slope (L3-02).
-- Tolerances admit the rounded answers (35, 7,4, 20, 0,81, 0,80 all inside 2 %).
-- Solutions follow the seven steps, diagram before equations where tagged, graph task shows reading the fitted line (L2-03).
-- Figure `mittaus`: points only, description lists data, no answer.
-- Finnish and case endings (120 N:n) correct.
+- Counts 5/4/3; levels rise from one formula (L1) through rearrangement, graph reading and kinematics link (L2) to the accelerating truck bed, the up-slope stop and the Moon scaling (L3); none repeats the worked example.
+- Every task has answer, unit, tolerance; data significant figures match the stated answers.
+- fbd plan: seven tasks tagged equations ask for the diagram first; all solutions draw the diagram before any equation, with direction reasons (friction up the slope when sliding down, forward on the truck bed).
+- L3-01 and L3-02 cover friction along the motion and up-slope sliding (misconception from the lesson).
+- Solutions state the principle, symbolic step, units, significant figures and a reasonableness check; steps followable by a student who could not solve it.
+- Finnish: case after number+unit correct (150 N:n, 40 kg:n); glossary terms used.
