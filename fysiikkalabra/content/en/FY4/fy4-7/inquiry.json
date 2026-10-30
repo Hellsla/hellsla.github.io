@@ -131,8 +131,8 @@
       "names": {
         "v0": "v_0",
         "m": "m",
-        "rinne": "ramppi",
-        "kitka": "kitka"
+        "rinne": "ramp",
+        "kitka": "friction"
       },
       "units": {
         "v0": "m/s",
@@ -204,8 +204,8 @@
       "names": {
         "v0": "v_0",
         "m": "m",
-        "rinne": "ramppi",
-        "kitka": "kitka"
+        "rinne": "ramp",
+        "kitka": "friction"
       },
       "units": {
         "v0": "m/s",
@@ -277,8 +277,8 @@
       "names": {
         "v0": "v_0",
         "m": "m",
-        "rinne": "ramppi",
-        "kitka": "kitka"
+        "rinne": "ramp",
+        "kitka": "friction"
       },
       "units": {
         "v0": "m/s",
@@ -354,8 +354,8 @@
       "names": {
         "v0": "v_0",
         "m": "m",
-        "rinne": "ramppi",
-        "kitka": "kitka"
+        "rinne": "ramp",
+        "kitka": "friction"
       },
       "units": {
         "v0": "m/s",
@@ -493,7 +493,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise still on three levels. Level 1 uses one formula, level 2 needs two steps or a unit conversion and level 3 reasoning. Always write down clearly what the zero level is."
+      "text": "Practise some more on three levels. Level 1 uses one formula, level 2 needs two steps or a unit conversion and level 3 reasoning. Always write down clearly what the zero level is."
     },
     {
       "id": "check-1",
