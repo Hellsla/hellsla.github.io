@@ -307,14 +307,15 @@ def _restore_sums(res, hz, big):
 def _keep_order(kk, true_vec, ax, forces, sym, big):
     """Two small forces lifted to the floor can come out equal, so a component that wins on the axis (G_x down a 4°
     slope against a smaller friction) would look balanced. Keep the winner longer than what it beats, by its true
-    excess or at least 10 % of the largest force (an arrowhead is most of a short arrow). Only a lift can break the
-    order: a winner drawn to scale, or a balance (rounded data within 1 % of the largest force), is left as it is."""
+    excess or at least 10 % of the largest force (an arrowhead is most of a short arrow). A winner already ahead by
+    5 % of the largest force (or by its true excess), or a balance (rounded data within 1 %), is left as it is."""
     t = true_vec[0] * ax[0] + true_vec[1] * ax[1]
     if not kk or not t: return kk
     opp_true = sum(-(x[1][0] * ax[0] + x[1][1] * ax[1]) for x in forces if x[0] != sym and (x[1][0] * ax[0] + x[1][1] * ax[1]) * t < 0)
     opp_drawn = sum(-(x[2][0] * ax[0] + x[2][1] * ax[1]) for x in forces if x[0] != sym and (x[2][0] * ax[0] + x[2][1] * ax[1]) * t < 0)
     excess = abs(t) - abs(opp_true)
-    if excess <= 0.01 * big or abs(kk) - abs(opp_drawn) >= excess - 1e-9: return kk   # a balance, or drawn to scale
+    gap = abs(kk) - abs(opp_drawn)
+    if excess <= 0.01 * big or gap >= min(excess, 0.05 * big) - 1e-9: return kk   # a balance, or the order already shows
     return math.copysign(abs(opp_drawn) + max(excess, 0.10 * big), kk)
 
 
@@ -391,6 +392,7 @@ def draw(spec, fid, _frame=None):
             for sym in b["comps"]:
                 sym_, vec, at = next((x[0], x[2], x[3]) for x in forces if x[0] == sym)
                 for ax, c in zip(axes, "xy"):
+                    approx = approx or 0 < abs(vec[0] * ax[0] + vec[1] * ax[1]) < MIN_SHOWN * big - 1e-9   # a component at the floor
                     kk = _keep_order(floor(vec[0] * ax[0] + vec[1] * ax[1]), next(x[1] for x in forces if x[0] == sym), ax, forces, sym, big)
                     v = (ax[0] * kk, ax[1] * kk)                                   # the forces' scale
                     LENGTHS[f"{sym}_{c}"] = abs(kk); comps.append((f"{sym}_{c}", sym, ax, kk)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
