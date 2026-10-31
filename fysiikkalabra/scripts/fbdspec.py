@@ -270,11 +270,13 @@ def _place(arrows, solid, width, top, bottom):
         else: ex, ey = x2, y2
         nx, ny = -uy, ux
         cands = [(ux * d, uy * d) for d in (24, 34, 46)] + [(ux * 10 + nx * s * d, uy * 10 + ny * s * d) for d in (22, 32, 44) for s in (1, -1)] \
-              + [(-ux * L * f + nx * s * 24, -uy * L * f + ny * s * 24) for f in (0.3, 0.55) for s in (1, -1)]
+              + [(-ux * L * f + nx * s * 24, -uy * L * f + ny * s * 24) for f in (0.3, 0.55) for s in (1, -1)] \
+              + [(ux * d, uy * d) for d in (60, 76)] + [(ux * 10 + nx * s * d, uy * 10 + ny * s * d) for d in (58, 72) for s in (1, -1)]
         best = None
         for i, (dx, dy) in enumerate(cands):
             bx = _box(ex + dx, ey + dy, tex)
-            cost = 3 * _hits(bx, pts) + 40 * sum(1 for o in boxes if not (bx[2] < o[0] or o[2] < bx[0] or bx[3] < o[1] or o[3] < bx[1]))
+            m = 8                                                                  # labels a little apart, not just not overlapping
+            cost = 3 * _hits(bx, pts) + 120 * sum(1 for o in boxes if not (bx[2] + m < o[0] or o[2] + m < bx[0] or bx[3] + m < o[1] or o[3] + m < bx[1]))
             cost += 200 * (bx[0] < 2 or bx[2] > width - 2 or bx[1] < top or bx[3] > bottom) + i * 0.5
             if best is None or cost < best[0]: best = (cost, dx, dy, bx)
         boxes.append(best[3]); out.append((best[1], best[2]))
@@ -403,8 +405,8 @@ def draw(spec, fid, _frame=None):
         words.append((surf, [(k.replace("2", ""), sym, math.degrees(math.atan2(vec[1], vec[0]))) for sym, vec, _, _, k, _ in forces], b["a"], b["v"]))
     if split:                                                                      # said on the figure too, not only to a screen reader
         nx = (min(xs) + max(xs)) / 2; ny = max(ys) + 22
-        f.tex(nx, ny, r"\text{" + i18n.t("fbd.split_note") + "}", "middle", MUTED, size=18); ys += [ny + 14]
-        xs += [nx - 170, nx + 170]
+        note = r"\text{" + i18n.t("fbd.split_note") + "}"; half = (figlib.visible_len(note) * 18 * 0.52 + 8) / 2 + 4
+        f.tex(nx, ny, note, "middle", MUTED, size=18); ys += [ny + 14]; xs += [nx - half, nx + half]
     f.label = describe(words, two, approx, split)
     if _frame is None:                                                             # again, cut to what it holds
         y0, y1 = min(ys) - 8, max(ys) + 8
@@ -475,6 +477,14 @@ def sources():
         yield from sorted(base.rglob("inquiry.json"))
 
 
+def overlaps(svg):
+    """Pairs of label texts whose boxes overlap in a drawn figure (check_layout.py finds the same in the browser)."""
+    boxes = [(m.group(5), *map(float, m.groups()[:4])) for m in
+             re.finditer(r'<foreignObject x="([\d.]+)" y="([\d.]+)" width="(\d+)" height="(\d+)".*?\$(.*?)\$', svg)]
+    return [(a[0], b[0]) for i, a in enumerate(boxes) for b in boxes[i + 1:]
+            if a[1] < b[1] + b[3] and b[1] < a[1] + a[3] and a[2] < b[2] + b[4] and b[2] < a[2] + a[4]]
+
+
 def check():
     import json
     bad = 0; drawn = 0
@@ -484,8 +494,10 @@ def check():
         for frag in missing(text):
             bad += 1; print(f"{p.relative_to(ROOT)}: a Voimakuvio step without a drawn diagram: {frag!r}")
         for m in FENCE.finditer(text):
-            try: draw(m.group(1), "check"); drawn += 1
-            except Exception as e: bad += 1; print(f"{p.relative_to(ROOT)}: voimakuvio does not draw: {e}")
+            try: svg = draw(m.group(1), "check"); drawn += 1
+            except Exception as e: bad += 1; print(f"{p.relative_to(ROOT)}: voimakuvio does not draw: {e}"); continue
+            for a_, b_ in overlaps(svg):
+                bad += 1; print(f"{p.relative_to(ROOT)}: labels {a_} and {b_} overlap in the diagram of {m.group(1).splitlines()[:3]}")
     print(f"{drawn} force diagrams drawn" + (f", {bad} problems" if bad else ", every Voimakuvio step has its diagram"))
     return bad
 

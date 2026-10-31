@@ -1,18 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: a45dcdabb4f5a4b1
+VERDICT: PASS
+CONTENT-HASH: 548a782b3164dea2
 
 ## Blocking
-- solutions.md:209 (L3-03) — A: the rounding is justified by the wrong rule. N = 0,10 N − 0,0392 N is a difference, and 0,10 N is known only to 0,01 N, so the result is good to about 0,01 N. That gives 0,06 N, not "kaksi merkitsevää numeroa … 0,061 N". The lesson's exp-1 solution teaches this exact rule ("Erotuksessa ratkaisee desimaalien määrä, ei merkitsevien numeroiden määrä"). — Answer 0,06 N with that reason; exercises.json 0.061 stays within tolerance, or set it to 0.06.
 
 ## Polish
-- solutions.md:78 (L1-05) — "kulma 40° … eikä 250 N ole sitä tarkempi" is a shaky reason, since 250 N may have three significant figures. Simpler: two significant figures, as in the angle, the least precise datum.
-- solutions.md L1-03 — the rendered diagram draws the wall's N̄ across the book from the contact face. This follows the convention (it starts at the contact surface), but a push-style arrow ending at the face would read more clearly.
+- exercises.json:111 (L3-03) — the key is still 0.061, while the solution concludes 0,06 N. It is within tolerance; 0.06 would match.
+- solutions.md:69 (L1-05) — the step "Voimakuvio" shows only T and its components. Rename it, for example to "Kuvio: köyden voima ja komponentit", so it is not taught as a complete force diagram.
+- solutions.md `pinta` diagrams — the surface is hatched inside the voimakuvio, but the lesson says surfaces are not drawn. This comes from the tool, not from this set.
+- solutions.md:78 (L1-05) — the significant-figure reason "eikä 250 N ole sitä tarkempi" is still shaky (carried over).
 
 ## Checked
-- Recomputed all twelve answers in one script with my own formulas: 14,7 / 15 / 4,9 / 637,7 / 191,5 / 52,0 / 660,6 / 0,598 / 1,0 / 581,7 / 1,9 / 0,0608. All agree with answers.py and exercises.json, within tolerance.
-- Models: static friction on the wall equals mg; a lift moving up and slowing has downward a, so N < G; the curling stone has no forward force; the ceiling's N points down, with F_noste = G + N; the L2-04 pulls add as vectors.
-- Every solution goes diagram → axes → equations → symbolic → numbers, with units and a real reasonableness check.
-- Rendered all 11 voimakuvio blocks: correct forces, directions and relative lengths; v and a are off the body; no third-law pairs; components are dashed; every body is a rectangle.
-- Figures ruutu, malli-pulkka and malli-hissi match their tasks and descriptions; ruutu gives the values without giving away the answer.
-- Scope is within FY4; L3-02 uses a = Δv/Δt from the earlier chapter.
-- The hash was a45dcdabb4f5a4b1 at both start and end.
+- Round-1 fix: L3-03 now gives "0,061 N ≈ 0,06 N" and justifies it by decimals in a difference. Correct.
+- One script recomputed all twelve answers: 14,715 / 15 / 4,905 / 637,65 / 191,5 / 51,96 / 660,6 / 0,598 / 1,0 / 581,7 / 1,9 / 0,06076. All agree with answers.py and exercises.json.
+- Models: the wall's static friction is mg; a lift slowing on the way up has a pointing down, so N < G; the curling stone has no forward force; the ceiling's N points down; the L2-04 pulls add as vectors.
+- I rendered all 11 voimakuvio blocks. They use one linear scale, except L1-03 and L3-02, whose separate horizontal scale the rule allows and whose text alternatives say so. Every sum is visible (F = N, F_μ = G; F_noste = G + N), and no force is under 15 %.
+- Directions are right: the wall's N points away from the wall; the L2-03 push ends on the body; v and a are drawn off the body; there are no third-law pairs; components are dashed.
+- The figures ruutu, malli-pulkka and malli-hissi agree with their tasks.
+- Each solution goes diagram, axes, symbolic answer, numbers, then a real reasonableness check. Everything is within FY4's scope.
+- "FAIL sims" does not reproduce. The hash was the same at start and end.

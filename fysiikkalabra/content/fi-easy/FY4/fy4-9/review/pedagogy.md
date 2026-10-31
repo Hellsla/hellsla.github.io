@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5e5b3e7c56de5fbf
+CONTENT-HASH: 8d7e2803f598ca5f
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-fi-easy is plainer than the Finnish: long sentences are split and subordinate clauses unrolled; no lesson file is byte-identical to the Finnish (only short items such as titles and single-clause choices coincide).
-All stages, hints, mistakes, criteria and the three checks are complete and in order; chapter names are used, not ids.
-Fixed the additions listed in the science report so the easy version stays faithful.
-Terms match the glossary (liikemäärä, impulssi, impulssiperiaate).
+Reads naturally; same teaching order, hook, prediction, check-3 and rebound/mat passages as the Finnish. Plain language kept: short sentences, one thing per sentence, terms explained (kokonaisvoima, suuruus, etumerkki). Layout checks OK at 360 and 1280 px.

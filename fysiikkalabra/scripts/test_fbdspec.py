@@ -64,6 +64,11 @@ svg = fbdspec.draw("G 4620\nF_n 4350 ylös\nF_v 270 ylös\na 0\nv alas\n", "t")
 ok(abs(L["F_n"] + L["F_v"] - L["G"]) < 1e-6 and L["F_v"] > L["G"] * 0.1, "a force lifted to be seen is taken off the largest one beside it: the balance still shows")
 svg = fbdspec.draw("pinta 0\nerikseen\nG 12000\nN 12000\nF 620 oikea\nF_i 380 vasen\nF_r 240 vasen\na 0\n", "t")
 ok(svg.count("eri mittakaavassa") >= 2, "a figure with its own horizontal scale says so on the figure too")
+fo = '<foreignObject x="{}" y="{}" width="30" height="29"><div>${}$</div></foreignObject>'
+ok(fbdspec.overlaps(fo.format(0, 0, "N") + fo.format(20, 10, "T_y")) == [("N", "T_y")] and not fbdspec.overlaps(fo.format(0, 0, "N") + fo.format(40, 0, "T_y")),
+   "overlapping labels are found (fbdspec.py check fails on them)")
+svg = fbdspec.draw("pinta 0\nG 147,15\nN 117,15\nT 60 30\nF_mu 51,96 vasen\na 0\nakselit 0\nkomponentit T\n", "t")
+ok(not fbdspec.overlaps(svg), "a short component beside N gets its label clear of N's (fy4-5 L2-01)")
 refused("pinta 20\nerikseen\nG 10\nN 9,4\nF_mu 3,4 ylös\na 0\n", "`erikseen` on a slope")
 ok(fbdspec.missing("**Voimakuvio:** Paino alas ja tukivoima ylös.\n**Kaava:** $N = mg$") != [], "a text-only Voimakuvio step is found")
 ok(fbdspec.missing("**Voimakuvio:** Kappale suorakulmiona.\n```voimakuvio\nG 1\nT 1 ylös\na 0\n```\n**Kaava:** $T = mg$") == [], "a step with its diagram passes")

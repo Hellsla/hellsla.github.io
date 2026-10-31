@@ -5,7 +5,8 @@
 // Top: the track with the gliders, velocity arrows (blue) above and momentum arrows (purple) below the beam, every arrow
 // from its own glider, its length to one scale for the whole run and its direction the sign of the quantity; while the
 // gliders touch, the bumper forces (red): F_1 on glider 1 to the left and F_2 on glider 2 to the right, equal in size.
-// The run ends before an arrow would leave the picture, so no arrow is cut, flipped or moved off its glider.
+// The arrow scales are chosen when the run is set, by playing it ahead to its "after" values, so no arrow tip leaves the
+// picture before or during the collision; after it the run ends before an arrow would leave, so none is cut or moved.
 // Bottom (stacked on a phone): momentum bars (signed, zero line in the middle) for glider 1, glider 2 and the total, and
 // an energy column before and now: E_k (the gliders' kinetic energy), E_p (in the bumper or spring) and E_sis (internal),
 // stacked, with the starting total as a dashed line, so the column stays as tall while energy changes form.
@@ -19,18 +20,33 @@ new p5((p) => {
   const TR = { w: 600, h: 215, t: 18, v2: 34, v1: 58, beam: 140, p1: 176, p2: 200, gh: 50 };
   const CH = { w: 300, h: 185, title: 16, glab: 36, top: 46, bot: 150, name: 172 };
   let btn, slV1, lV1, slV2, lV2, selM1, selM2, selT, selSpeed, readout;
-  let R = null, B = null, running = false, Pb = null;
+  let R = null, B = null, running = false, Pb = null, FIT = { v: Infinity, p: Infinity };
 
   const M = () => ({ m1: Number(selM1.value()), m2: Number(selM2.value()), typ: selT.value(), v1: Number(slV1.value()), v2: Number(slV2.value()) });
   function restart() {
     const S = M();
     R = MD.create(S.typ, S.m1, S.m2, S.v1, S.v2); B = MD.bounds(S.typ, S.m1, S.m2, S.v1, S.v2); running = false;
     Pb = { p1: R.m1 * R.w1, p2: R.m2 * R.w2 };
+    FIT = fitRun(S);
     const rj = S.typ === 'rajahdys';
     for (const s of [slV1, slV2]) if (s) s.elt.disabled = rj || !!s.elt.closest('label')?.classList.contains('locked');
   }
-  // arrow lengths (px) per m/s, kg·m/s and N: one scale for the whole run, so the longest arrow fits on its row
-  const VS = () => (narrow ? 130 : 110) / (1.05 * B.V), PS = () => (narrow ? 130 : 110) / (1.05 * B.P), FS = () => (narrow ? 110 : 90) / (1.05 * B.F);
+  // arrow lengths (px) per m/s, kg·m/s and N: one scale for the whole run, so the longest arrow fits on its row and,
+  // up to the "after" values, every arrow tip stays inside the track picture (fitRun)
+  const VS = () => Math.min((narrow ? 130 : 110) / (1.05 * B.V), FIT.v), PS = () => Math.min((narrow ? 130 : 110) / (1.05 * B.P), FIT.p),
+    FS = () => (narrow ? 110 : 90) / (1.05 * B.F);
+  // the run played ahead once when it is set: the largest arrow scales that keep each tip inside until the collision is over
+  function fitRun(S) {
+    const T = MD.create(S.typ, S.m1, S.m2, S.v1, S.v2), fit = { v: Infinity, p: Infinity };
+    const room = (x, val) => Math.abs(val) < 1e-9 ? Infinity : (val > 0 ? TR.w - 6 - X(x) : X(x) - 6) / Math.abs(val);
+    for (let n = 0; n < 200000 && !T.done; n++) {
+      fit.v = Math.min(fit.v, room(T.x1, T.w1), room(T.x2, T.w2));
+      fit.p = Math.min(fit.p, room(T.x1, T.m1 * T.w1), room(T.x2, T.m2 * T.w2));
+      if (T.after !== null && (T.stuck || MD.overlap(T) <= 0)) break;
+      MD.step(T, DT);
+    }
+    return { v: fit.v * 0.98, p: fit.p * 0.98 };
+  }
   const SX = () => (TR.w - 40) / TRACK, X = (x) => 20 + x * SX();
   // the run ends when a glider reaches an end of the track or an arrow's tip would leave the picture
   function outside() {
@@ -78,7 +94,7 @@ new p5((p) => {
       let left = Math.min(p.deltaTime, 100) / 1000 * Number(selSpeed.value());
       while (left > 1e-9 && running) {
         const d = Math.min(DT, left); MD.step(R, d); left -= d;
-        if (outside()) R.done = true;   // before, during and after the contact
+        if (R.after !== null && outside()) R.done = true;   // before that the scales keep every tip inside (fitRun)
         if (R.done) running = false;
       }
     }
