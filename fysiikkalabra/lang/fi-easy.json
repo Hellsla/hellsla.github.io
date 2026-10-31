@@ -1301,6 +1301,7 @@
     "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan",
     "approx": "pienet voimat on piirretty vähän liian pitkiksi, jotta ne näkyvät;",
     "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
+    "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
     "velocity": "nopeus {{dir}};"
   }
 }

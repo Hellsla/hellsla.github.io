@@ -1,19 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: eabfc51dd0a19623
+VERDICT: PASS
+CONTENT-HASH: 1b72d20a59f51860
 
 ## Blocking
-- solutions.md:58-59 (fy4-3-L1-04) — A, magnitude: the car's diagram gives $G = N = 900\,\text{N}$, so the weight is drawn only about 1,5 times the driving force of 620 N. A real car weighs about $1\cdot 10^4\,\text{N}$, 15–25 times the driving force, so the to-scale diagram gives a wrong picture of the magnitudes. — Fix: use a realistic weight, for example `G 12000` / `N 12000`. Note that fbdspec's enlargement of small forces (`shown`, an affine map) would then draw $F$, $F_\text{i}$ and $F_\text{r}$ almost the same length, and the horizontal balance would no longer show. The tool should therefore enlarge small forces by one common factor, keeping $F = F_\text{i} + F_\text{r}$ visible. The other option is to leave out G and N and keep the sentence "Pystysuunnassa paino ja tukivoima kumoavat toisensa".
 
 ## Polish
-- solutions.md:39 (L1-03) — The skater's weight of 590 N and the acceleration away from the wall are not in the task. They are reasonable (about 60 kg, frictionless ice), but the text says "Laki pätee riippumatta siitä, liikkuuko kumpikaan", and the diagram shows only one of those cases. Adding "jää oletetaan kitkattomaksi" to the Voimakuvio sentence would cover it (C).
-- solutions.md L2-02, L3-01 — In the diagrams buoyancy is $\overline{F}_\text{n}$. docs/force-diagrams.md names it $\overline{F}_\text{noste}$. This symbol issue is carried over from round 1.
+- solutions.md:424-430 (L3-01) — C/B, drawn sum. $F_\text{v}$ = 270 N is 5,8 % of G, so it is lifted to the 15 % floor. Measured lengths: G 100, $F_\text{n}$ 94, $F_\text{v}$ 15. The drawn upward total is 109 against 100 downward, with a = 0 and $\overline{v}$ down. It follows the stated rule, and the text alternative says so, but it is the one drawn sum in the set that does not balance, and the balance is the point of the task. Suggested fix in fbdspec.py: when the floor lifts a force collinear with others, shorten the largest same-direction force by the same amount so the sum still shows (here $F_\text{n}$ 85 + $F_\text{v}$ 15 = G 100).
+- solutions.md:316-324 (L1-04) and L1-03, L2-02 — The split scale (horizontal largest drawn at 0,6 of G) is stated only in the aria-label. A sighted reader sees $\overline{F}$ at 0,6·G with no note. Add a visible note under split-scale figures.
+- solutions.md L1-03 — Carried over: state "jää oletetaan kitkattomaksi".
 
 ## Checked
-- All 12 diagrams rendered (`fbdspec.py show`) and checked in screenshots.
-- Every diagram has the same body, forces and symbols as its Voimakuvio sentence.
-- The sizes match the task data: 18; 850; 6,38; 8,0 + 5,0 = 13; 720/65; 833,85; 5800 + 3139,2 = 8939,2; 4620 = 4350 + 270; 0,30 + 0,30 = 0,60; 1,5 + 0,40 = 1,9.
-- Third-law partners are kept off the diagrams: the book's pull on the Earth, the skater's push on the wall, and the apple's force acting on the hook (not on the apple).
-- The pushes ($\overline{F}_\text{KL}$, $\overline{F}_2$, $\overline{F}_\text{m}$) end on the correct face. The magnetic force is drawn as a push on the top face, which is acceptable for a non-contact force.
-- $\overline{v}$ is drawn in blue apart from the forces (parachutist, balloon). Every equilibrium diagram has a = 0.
-- Answers are unchanged from round 1. The text diff is only the added spec blocks.
+- Round-1 blocking item (L1-04) is resolved. G = N = 12 000 N, realistic for a car. On the split scale the measured lengths are F 60, $F_\text{i}$ 37, $F_\text{r}$ 23, and 37 + 23 = 60 matches 620 = 380 + 240. G = N = 100, and the text alternative states the split.
+- All 12 diagrams were rendered (`fbdspec.py show`), screenshotted, and their arrow lengths measured from the SVG. All proportions are on one scale:
+  - L2-01: 61,5 / 38,5 / 100.
+  - L2-04: 65 / 35 / 100.
+  - L3-02: 50 / 50 / 100.
+  - L3-03: 21 / 79 / 100.
+  - The equal pairs (L1-01, L1-02, L1-05, L2-03) are 100 / 100.
+- Split scales: L1-03 (90 vs 590 N) and L2-02 (65 vs 720 N). In each, the horizontal forces are mutually correct (L2-02: 60 = 60).
+- No diagram contradicts its Voimakuvio sentence or its motion. a = 0 wherever the velocity is constant. In L1-03 $\overline{a}$ points away from the wall.
+- Third-law partners stay off every diagram.
+- I recomputed all 12 answers in one script. Each is within tolerance: 18; 850; 90; 240; 6,38; 13; 65; 834; 8,94; 0,27; 0,60; 1,9.
 - The hash was the same at the start and at the end.

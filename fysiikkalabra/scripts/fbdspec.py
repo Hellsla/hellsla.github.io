@@ -25,7 +25,7 @@ its "**Voimakuvio:**" sentence as a fenced block; the block is the same in every
     akselit 0            the x-y axes (x at this angle); `komponentit G` draws G's components on them, dashed
     erikseen             level surface only: the horizontal forces get their own scale (the largest drawn 0,6 times
                          the largest vertical one). This happens by itself when every force is horizontal or vertical
-                         and one direction's largest force is under 0,4 of the other's (a car's 620 N driving force
+                         and one direction's largest force is under 0,4 of the other's, in a one-body figure (a car's 620 N driving force
                          beside a 10 kN weight); the sums along each axis then still show, and the text alternative
                          says the scales differ
     ---                  a second body of a coupled system (each body gets its own diagram, side by side)
@@ -281,6 +281,27 @@ def _place(arrows, solid, width, top, bottom):
     return out, boxes
 
 
+def _restore_sums(res, hz, big):
+    """A force lifted to the floor makes its side of a balance longer than to scale: take the lift off the largest force
+    pointing the same way, so forces that sum on the page still do (a balloon's 270 N drag beside its 4,4 kN buoyancy)."""
+    forces, faces = res
+    out = [list(x) for x in forces]
+    def lift(x):
+        true = math.hypot(*x[1]) * (hz[True] if abs(x[1][1]) < 1e-9 else hz[False] if abs(x[1][0]) < 1e-9 else 1.0)
+        return math.hypot(*x[2]) - true
+    for x in out:
+        up = lift(x)
+        if up <= 1e-9: continue
+        u = (x[2][0] / math.hypot(*x[2]), x[2][1] / math.hypot(*x[2]))
+        same = [y for y in out if y is not x and lift(y) <= 1e-9 and math.hypot(*y[2]) > 0
+                and abs(y[2][0] * u[0] + y[2][1] * u[1] - math.hypot(*y[2])) < 1e-6 * big]
+        if not same: continue
+        y = max(same, key=lambda y: math.hypot(*y[2])); L = math.hypot(*y[2])
+        if L - up < MIN_SHOWN * big: continue
+        y[2] = (y[2][0] * (L - up) / L, y[2][1] * (L - up) / L)
+    return [tuple(x) for x in out], faces
+
+
 def _probe(b, cx, cy, ang, scale):
     """[(size, horizontal?)] of a body's forces."""
     probe = []
@@ -302,26 +323,27 @@ def draw(spec, fid, _frame=None):
     floor = lambda x: math.copysign(max(abs(x), MIN_SHOWN * big), x) if x else 0.0   # one linear scale, tiny ones visible
     Hfig, shift, xr = _frame or (460, 0, None)
     f = Fig(fid, Hfig, "")
-    words, approx, split, ys, xs = [], False, False, [], []
+    words, approx, ys, xs = [], False, [], []
+    hz = {True: 1.0, False: 1.0}                                                   # the scale of horizontal / vertical forces,
+    level = all(b["surface"] in (None, 0) and all(kind_of(x[0]) in ("gravity", "normal", "friction")   # one for the whole figure
+                or round(direction(x[2])) % 90 == 0 for x in b["forces"]) for b in bodies)        # (a rope's T equal in both)
+    if any(b["split"] for b in bodies) and not level: raise ValueError("voimakuvio: `erikseen` is for a level surface")
+    if level:                                                                      # one direction much weaker than the other:
+        probe = [x for b in bodies for x in _probe(b, 0, 0, 0.0, scale)]           # it gets its own scale
+        mv = max([x for x, h in probe if not h] or [0]); mh = max([x for x, h in probe if h] or [0])
+        weak = min(mv, mh)
+        if weak and (any(b["split"] for b in bodies) or not two and weak < MIN_AXIS * max(mv, mh)):   # not by itself in two
+                                                                                   # bodies: a rope turning over a pulley
+            hz[mh < mv] = SPLIT * max(mv, mh) / weak
+    split = hz[True] != hz[False]
+    shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
         cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
         a_dir = None
         if b["a"] is not None:
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
-        if b["split"] and surf not in (None, 0): raise ValueError("voimakuvio: `erikseen` is for a level surface")
-        hz = {True: 1.0, False: 1.0}                                                 # the scale of horizontal / vertical forces
-        level = surf in (None, 0) and all(kind_of(x[0]) in ("gravity", "normal", "friction") or round(direction(x[2])) % 90 == 0
-                                          for x in b["forces"])
-        if level:                                                                  # one axis much weaker than the other:
-            probe = _probe(b, cx, cy, ang, scale)                                  # that axis gets its own scale
-            mv = max([x for x, h in probe if not h] or [0]); mh = max([x for x, h in probe if h] or [0])
-            weak = min(mv, mh)
-            if weak and (b["split"] or weak < MIN_AXIS * max(mv, mh)):
-                hz[mh < mv] = SPLIT * max(mv, mh) / weak
-        shown = lambda size, horiz=False: floor(size * hz[horiz])
-        forces, faces = _forces(b, cx, cy, ang, shown, scale)
-        split = split or hz[True] != hz[False]
+        forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
         for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, "gravity" if k == "gravity2" else k, tex=tex_of(sym), **extra)
@@ -379,6 +401,10 @@ def draw(spec, fid, _frame=None):
         d.draw()
         for j, (sym_, dir_, st) in enumerate(motion): d.motion(sym_, dir_, st, 56, lab=offs[len(offs) - len(motion) + j])
         words.append((surf, [(k.replace("2", ""), sym, math.degrees(math.atan2(vec[1], vec[0]))) for sym, vec, _, _, k, _ in forces], b["a"], b["v"]))
+    if split:                                                                      # said on the figure too, not only to a screen reader
+        nx = (min(xs) + max(xs)) / 2; ny = max(ys) + 22
+        f.tex(nx, ny, r"\text{" + i18n.t("fbd.split_note") + "}", "middle", MUTED, size=18); ys += [ny + 14]
+        xs += [nx - 170, nx + 170]
     f.label = describe(words, two, approx, split)
     if _frame is None:                                                             # again, cut to what it holds
         y0, y1 = min(ys) - 8, max(ys) + 8

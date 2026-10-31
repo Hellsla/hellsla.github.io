@@ -1301,6 +1301,7 @@
     "dir_deg": "at {{deg}} degrees to the horizontal",
     "approx": "small forces are drawn longer than to scale;",
     "split": "the horizontal forces are drawn to a different scale from the vertical ones;",
+    "split_note": "horizontal and vertical forces to different scales",
     "velocity": "velocity {{dir}};"
   }
 }

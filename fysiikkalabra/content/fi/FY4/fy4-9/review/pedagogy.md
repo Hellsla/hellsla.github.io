@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e06abd23d13c3e3a
+CONTENT-HASH: 25b95920e4cf479d
 
 ## Blocking
 
@@ -7,20 +7,19 @@ CONTENT-HASH: e06abd23d13c3e3a
 
 ## Polish
 
-- lesson.md, kuva "pysaytys" ja sen aria-label — lähteessä F_x on negatiivinen ja nollataso on yläreunassa, mutta aika-akseli (nuoli, jakoviivat, t-teksti) on piirretty alareunaan (F = −100 kohdalle). Kuvaus sanoo "käyrät ovat vaaka-akselin alapuolella" ja teksti, että impulssi on käyrän ja aika-akselin välinen pinta-ala, mutta alue rajautuu F = 0 -hiusviivaan, ei näkyvään akseliin — siirrä aika-akseli F = 0 -tasolle (ylös) tai kirjoita kuvaukseen "nollaviivan alapuolella".
-- review/shots/fy4-9-fig-3-390.png ja preview/fy4-9.html ovat vanhentuneet (23:41 / 23:48; lähde muutettu 23:54): ne näyttävät vielä positiivisen F-akselin 0...100 N. En voinut varmistaa uuden kuvan ulkoasua (nimiöiden "kova"/"pehmeä" sijoittelu, −80-nimiö) — rakenna esikatselu ja kuvat uudelleen ja katso kuva 3 ennen julkaisua.
-- inquiry.json, exp-3 — vapaaehtoisella kokeella ei vieläkään ole kysymystä; lisää yksi valintakysymys (impulssi on suoraan verrannollinen massaan).
+- inquiry.json, exp-3 — vapaaehtoisella kokeella ei ole kysymystä; lisää yksi valintakysymys (impulssi on suoraan verrannollinen massaan).
 - inquiry.json, simulaatio.model — "liike-energia muuttuu puskurin pysyväksi muodonmuutokseksi ja sisäenergiaksi" käyttää energiakäsitteitä, joita fy4-4 ei vaadi; lyhennä: "kärry pysähtyy puskuriin eikä kimpoa".
 - lesson.md, kuva "liikemaara" — keilapallon nopeusnuoli on 390 px:ssä hyvin lyhyt; tarkoituksella, arvo luetaan viereltä, joten ei estä.
+- review/shots/fy4-9-fig-3-390.png on edelleen vanha (23:41); päivitä kuvat ennen julkaisua (itse kuva on kunnossa, katso Checked).
 
 ## Checked
 
-- Edellisen kierroksen löydökset korjattu: "yli yli" poistettu; 2mv-merkinnät ovat nyt johdonmukaisesti "suuruus 2mv" / "−2mv".
+- Kierroksen 2 viimeinen huomio korjattu: rakensin esikatselun ja avasin kuvan "pysaytys" 390 ja 1280 px:ssä. Aika-akseli on nyt F_x = 0 -tasolla ylhäällä, kärkenä t (s); käyrät ja varjostus ovat akselin alapuolella, nimiöt "kova"/"pehmeä" ja "yhtä suuret pinta-alat" luettavia, väri ei ole ainoa tieto (yhtenäinen vs katkoviiva + nimiöt).
+- Simulaation kuvaaja ajettuna 390 px:ssä: pystyakseli "F_x (N)", akseli nollassa ylhäällä, I = −2,00 N·s luettavissa, merkintä sopii kuvaan 3 ja tekstiin.
+- Impulssilause "alustan voima on kokonaisvoimaa painon verran suurempi" on selkeä, eikä paljasta vastausta ennen tutkimusta (vastaus-osio tulee kokeiden jälkeen).
 - Polku: Newtonin toinen laki -kertaus, kaksi ennustetta, simulaatio ja kokeet, johto (a = Δv/Δt → impulssiperiaate), esimerkki; alkukysymys vastataan vasta tutkimuksen jälkeen.
-- Ennusteet kiistettävissä, kokeet voivat kumota ne (Δp ja I lasketaan simulaatiossa toisistaan riippumatta); väärien vaihtoehtojen palaute korjaa virheen ja nimeää todisteen.
-- Kokeet 1 ja 2: vain yksi muuttuja vaihtuu, loput lukittu; mallin arvot nimetty, yksinkertaistukset sanottu käyttökohdassa.
-- Kuvat 1, 2, 4, 5, 6 avattu: luettavia, nuolet mittakaavassa, väri ei ole ainoa tieto; hero-kuva tukee alkukysymystä.
-- Esimerkki: yksi askel per vaihe, etumerkit ja yksikkömuunnokset eriteltyinä, Järkevyys-vaihe tarkistaa painon ja etumerkkivirheen.
-- Siirto ja check-2: ratkaisut seurattavissa, vihjeet etenevät, virhepalautteet todellisia; check-2:n kuva tarvitaan vastaamiseen.
-- Lähtölippu testaa ydinideaa; check-3-kriteerit havaittavia ja vastaavat kysymystä.
+- Ennusteet kiistettävissä, kokeet voivat kumota ne (Δp ja I lasketaan simulaatiossa toisistaan riippumatta); väärien vaihtoehtojen palaute korjaa virheen.
+- Kokeet 1 ja 2: yksi muuttuja, loput lukittu; mallin arvot nimetty, yksinkertaistukset sanottu.
+- Esimerkki: yksi askel per vaihe, etumerkit ja yksikkömuunnokset eriteltyinä, Järkevyys-vaihe.
+- Siirto ja check-2: ratkaisut seurattavissa, vihjeet etenevät, virhepalautteet todellisia; lähtölippu testaa ydinideaa; check-3-kriteerit havaittavia.
 - Suomi ja sijamuodot kunnossa; työmäärä noin yksi oppitunti, kun valinnaiset ohitetaan.
