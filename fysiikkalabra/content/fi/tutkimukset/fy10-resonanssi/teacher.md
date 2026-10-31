@@ -1,0 +1,16 @@
+**Valmistelu.** Kokeile putki ja äänilähde etukäteen: etsi taajuusalue, jolla putkeen mahtuu ainakin kolme selvästi erottuvaa resonanssikohtaa, ja kerro se ohjatun työtavan ryhmille. Selvitä, onko putken toinen pää suljettu (mäntä tai vedenpinta) vai ovatko molemmat avoimia, ja kerro ryhmille, mistä generaattorin taajuuden tarkkuus löytyy (laitteen ohje tai näytön tarkkuus). Päätä ja ilmoita ryhmille äänenvoimakkuuden yläraja. Jos luokassa on monta ryhmää yhtä aikaa, vuorottelu tai mikrofoni tai äänenvoimakkuusanturi korvan sijasta helpottaa sekä kuulemista että kuulon suojaamista. Lämpömittari tarvitaan vertailuarvoa varten. Ruukkilabran FY5-luvut eivät ole vielä julkaistuja, joten sivun lyhyt teoria korvaa ne; seisova aalto kannattaa tarvittaessa näyttää ennen työtä esimerkiksi köydellä tai jousella.
+
+**Tavallisia virhekäsityksiä ja ongelmia.**
+
+- Aallonpituus lasketaan yhdestä resonanssipituudesta olettaen, että kupu on tarkalleen putken suulla. Tulos poikkeaa silloin systemaattisesti, koska kupu on hieman putken ulkopuolella; erotuksissa tämä siirtymä kumoutuu.
+- Peräkkäisten resonanssien etäisyydeksi oletetaan koko aallonpituus eikä sen puolikas.
+- Lyhyin resonanssikohta ohitetaan, jolloin jokainen järjestysluku on yhtä liian pieni. Kulmakerroin ja aallonpituus pysyvät silloin oikeina, mutta $(n, L)$-suoran vakiotermi muuttuu negatiivisesta, $-\left(\dfrac{\lambda}{4} + e\right)$, positiiviseksi, noin $\dfrac{\lambda}{4} - e$. Positiivinen vakiotermi (sivun vihje $n = 0$) paljastaa ohituksen. Jos taas jokin keskimmäisistä resonansseista ohitetaan, kohtien väleissä näkyy kaksinkertainen aukko ja kuvaajassa mutka.
+- Pituus mitataan männän varresta tai putken pään sijasta jostain muusta kohdasta, eikä aina samasta kohdasta.
+- Kaiutin painetaan tiiviisti putken suulle, jolloin pää ei enää käyttäydy avoimena.
+- Resonanssikohta etsitään vain yhdestä suunnasta, jolloin lukemaan voi tulla systemaattinen siirtymä.
+- Äänen nopeuden ajatellaan riippuvan taajuudesta, koska aallonpituus muuttuu taajuuden mukana. Laajennus testaa tämän.
+- Tunnettu arvo otetaan lähteestä tarkistamatta, missä lämpötilassa se pätee.
+
+**Eriyttäminen.** Ohjatussa työtavassa sivu kiinnittää taajuuden valintatavan, toistot, taulukon ja käsittelytavan (kauimmaisten kohtien erotus). Osittain ohjatussa opiskelija saa resonanssin ehdon ja kaksi käsittelytapaa ja päättää itse taajuuden, kohtien ja toistojen määrän sekä tunnistustavan. Itsenäisessä työtavassa sivu antaa vain seisovan aallon periaatteen: opiskelija johtaa itse, miten resonanssikohdat liittyvät aallonpituuteen, valitsee käsittelytavan ja epävarmuuden arviointitavan, ja laajennus kuuluu työhön. Inventaariossa työ on merkitty ohjatuksi ja osittain ohjatuksi; itsenäinen työtapa sopii opiskelijoille, jotka ovat jo tehneet kuvaajaan perustuvan työn.
+
+**Turvallisuus.** Työn tärkein riski on kuulo: pitkään jatkuva ääni ja kaiuttimen tai putken suun lähellä kuunteleminen. Opettaja ilmoittaa äänenvoimakkuuden ylärajan, ja äänen voimakkuus säädetään pieneksi ennen äänen kytkemistä. Lasiputki voi rikkoutua. Jos putkessa on vettä, vesi pidetään erillään sähkölaitteista. Taajuusgeneraattori on verkkovirtalaite, jota käytetään vain ehjin johdoin.

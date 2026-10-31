@@ -1,0 +1,101 @@
+{
+  "id": "fy10-valaistus",
+  "type": "investigation",
+  "title": "Valaistusvoimakkuuden riippuvuus etäisyydestä",
+  "question": "Miten lampun aiheuttama valaistusvoimakkuus riippuu etäisyydestä lamppuun, ja vastaako riippuvuus teoriasta odotettavaa mallia?",
+  "description": "Kokeellinen tutkimus: mittaa valaistusvoimakkuus eri etäisyyksillä lampusta, muodosta tuloksista matemaattinen malli ja vertaa sitä teoriasta johdettuun riippuvuuteen.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY7"
+  ],
+  "source": "Esimerkkityöt.pdf s. 4–5 (Valaistusvoimakkuuden riippuvuus etäisyydestä), opettajan aineisto",
+  "learn": [
+    "johtamaan fysikaalisesta periaatteesta mallin ja testaamaan sitä mittaustuloksilla",
+    "valitsemaan ja perustelemaan kuvaajan tai sovituksen, josta epälineaarisen mallin sopivuus voidaan päätellä",
+    "huomioimaan taustavalon ja muut systemaattiset virheet ja arvioimaan niiden vaikutusta tulokseen"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Valaistusvoimakkuus etäisyyden funktiona",
+      "physics": "F1",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Missä valo syntyy? Etäisyyden nollakohta kuvaajasta",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Valaistusvoimakkuus ja valon heikkeneminen etäisyyden kasvaessa",
+      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "why": "Tarvittava periaate on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Intensiteetti ja sen heikkeneminen etäisyyden kasvaessa",
+      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
+      "why": "Äänen intensiteetti heikkenee etäisyyden kasvaessa samasta syystä kuin valaistusvoimakkuus: aalto leviää yhä suuremmalle alalle."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus, toistomittaukset ja tuloksen ilmoittaminen epävarmuuksineen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Valaistusvoimakkuuden mittaaminen anturilla tai puhelimen valoanturilla sovelluksen avulla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Valaistusvoimakkuus luetaan anturista, ja lukeman vaihtelu kertoo osan mittausepävarmuudesta."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja, uusien sarakkeiden laskeminen sekä suoran tai potenssifunktion sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Malli ja sen vakioiden epävarmuudet saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "pienikokoinen lamppu telineessä, jossa ei ole heijastinta eikä linssiä (opettaja antaa)",
+    "valaistusvoimakkuusanturi ja mittauslaite tai puhelin valoanturisovelluksella",
+    "anturin teline tai pidike",
+    "mittanauha tai metrimitta",
+    "pimennettävä tila"
+  ],
+  "safety": [
+    "Lamppu ja sen kupu kuumenevat: älä koske niihin käytön aikana, ja anna lampun jäähtyä ennen kuin siirrät sitä.",
+    "Pidä paperit, kankaat ja pimennysverhot erillään kuumasta lampusta.",
+    "Älä katso suoraan kirkkaaseen lamppuun tai LEDiin läheltä.",
+    "Käytä vain opettajan antamaa valmista lamppua ja kytke se opettajan ohjeen mukaan. Älä avaa lamppua äläkä tee siihen omia kytkentöjä.",
+    "Pimennetyssä tilassa pidä johdot ja laukut poissa kulkureiteiltä."
+  ]
+}

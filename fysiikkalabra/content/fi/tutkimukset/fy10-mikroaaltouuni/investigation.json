@@ -1,0 +1,110 @@
+{
+  "id": "fy10-mikroaaltouuni",
+  "type": "investigation",
+  "title": "Valonnopeuden määrittäminen mikroaaltouunilla",
+  "question": "Miten mikroaaltouunissa syntyvästä seisovasta aallosta voidaan määrittää mikroaaltojen aallonpituus, ja kuinka suureksi valonnopeus saadaan sen ja uunin taajuuden avulla?",
+  "description": "Kokeellinen tutkimus: määritä mikroaaltojen aallonpituus juustokerrokseen sulaneiden kohtien väleistä ja laske siitä ja uunin arvokilven taajuudesta sähkömagneettisen säteilyn etenemisnopeus.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY5",
+    "FY7"
+  ],
+  "source": "Esimerkkityöt.pdf s. 7–8 (Valonnopeuden määrittäminen mikroaaltouunilla), opettajan aineisto",
+  "learn": [
+    "määrittämään aallonpituuden seisovan aallon kuviosta ja laskemaan siitä aallon etenemisnopeuden",
+    "pienentämään mittausepävarmuutta mittaamalla usean välin yhteispituuden yhden välin sijaan",
+    "arvioimaan tuloksen epävarmuuden ja vertaamaan tulosta tunnettuun arvoon"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Kuumien kohtien välit",
+      "physics": "F2",
+      "experiment": "E1"
+    },
+    {
+      "id": "laajennus",
+      "title": "Kuumien kohtien paikat kuvaajana kahdessa suunnassa",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Aaltoliikkeen perussuureet ja aaltoyhtälö $v = f\\lambda$",
+      "missing": "FY5: Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+      "why": "Etenemisnopeus lasketaan taajuudesta ja aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Seisova aalto, solmu- ja kupukohdat",
+      "missing": "FY5: Seisovat aallot",
+      "why": "Vierekkäisten kupukohtien väli on puolet aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Mikroaallot sähkömagneettisena säteilynä",
+      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "why": "Mikroaallot ja valo ovat samaa ilmiötä, joten mikroaaltojen etenemisnopeus on valonnopeus."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuuden arvioiminen ja tuloksen ilmoittaminen epävarmuuksineen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-2",
+      "why": "Taajuus luetaan arvokilvestä kerrannaisyksikkönä, joka muutetaan perusyksiköksi ennen laskemista."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "experiment",
+      "level": "extension",
+      "target": "fy1-4",
+      "why": "Laajennuksessa kohtien välinen etäisyys määritetään kuvaajan kulmakertoimena."
+    },
+    {
+      "kind": "tvt",
+      "level": "extension",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Laajennuksessa kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "mikroaaltouuni, jonka arvokilvessä tai käyttöohjeessa on mikroaaltojen taajuus",
+    "mikroaaltouuniin sopiva tasainen lautanen tai vati (ei metallia)",
+    "juustoraastetta",
+    "mikroaaltouuniin sopiva kuppi vettä",
+    "viivain tai mittanauha",
+    "patalappu"
+  ],
+  "safety": [
+    "Käytä mikroaaltouunia vain opettajan luvalla ja valvonnassa, käyttöohjeen mukaisesti. Älä koskaan avaa uunin kuorta tai muuta, ohita tai peitä luukkua tai sen turvalukitusta, äläkä käytä uunia, jonka luukku, tiiviste tai sarana on vaurioitunut.",
+    "Älä koskaan käynnistä uunia tyhjänä: kuppi vettä on uunissa koko ajan, myös juustolautasen lisäksi.",
+    "Pyörivän alustan saa poistaa vain uunin käyttöohjeen sallimalla tavalla; opettaja valmistelee uunin.",
+    "Uuniin ei saa laittaa metallia: ei mittaa, foliota eikä metallisia astioita. Mittaa vasta, kun lautanen on otettu uunista.",
+    "Kuuma juusto, lautanen ja vesi voivat polttaa: käytä patalappua. Mikroaaltouunissa kuumennettu vesi voi kiehahtaa äkillisesti, joten vaihda kuppiin viileää vettä, jos se on lämmennyt.",
+    "Lopeta kuumennus heti, jos juusto alkaa savuta.",
+    "Työssä käytettyä juustoa ei syödä. Kerro opettajalle, jos olet allerginen maitotuotteille."
+  ]
+}

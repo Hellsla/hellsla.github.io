@@ -1,0 +1,108 @@
+{
+  "id": "fy10-heiluri",
+  "type": "investigation",
+  "title": "Putoamiskiihtyvyyden määrittäminen heilurin avulla",
+  "question": "Mistä heilurin jaksonaika riippuu, ja kuinka suuri on putoamiskiihtyvyys mittauspaikallasi?",
+  "description": "Kokeellinen tutkimus: mittaa heilurin jaksonaika eri pituuksilla ja määritä putoamiskiihtyvyys suoraksi muunnetun kuvaajan kulmakertoimesta.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY5"
+  ],
+  "source": "Esimerkkityöt.pdf s. 1 (Putoamiskiihtyvyyden määrittäminen heilurin avulla), opettajan aineisto",
+  "learn": [
+    "valitsemaan tutkittavan muuttujan ja perustelemaan, mitkä suureet pidetään vakioina",
+    "muuntamaan mallin kuvaajaksi, joka on suora, ja määrittämään suureen sen kulmakertoimesta",
+    "arvioimaan ajanoton epävarmuuden vaikutusta tulokseen ja vertaamaan tulosta epävarmuuksineen taulukkoarvoon"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Jaksonaika heilurin pituuden funktiona",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Suuret heilahduskulmat",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy1-6",
+      "why": "Putoamiskiihtyvyys $g$ on tutkimuksen tulos; luku kertoo, mitä suure tarkoittaa."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Jaksollinen liike ja jaksonaika",
+      "missing": "FY5: Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
+      "why": "Jaksonaika on tutkimuksen mitattava suure; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Heilurin jaksonaika pienillä heilahduskulmilla",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
+      "why": "Jaksonajan malli on se, jonka avulla putoamiskiihtyvyys saadaan mittauksista; malli ehtoineen on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Heilurin jaksonaika suurilla heilahduskulmilla",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
+      "why": "Laajennuksessa testataan, milloin pienten kulmien malli ei enää riitä; korjattu malli on tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus, toistomittausten keskiarvo ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Jaksonajan neliö lasketaan ohjelmassa, ja kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "statiivi, varsi ja koukku tai puristin langan ripustamiseen",
+    "lankaa, joka ei veny",
+    "kaksi massaltaan selvästi erilaista heilurin kuulaa",
+    "vaaka",
+    "rullamitta",
+    "sakset",
+    "sekuntikello tai puhelimen ajanottosovellus",
+    "laajennukseen kulmamittari"
+  ],
+  "safety": [
+    "Varmista, että statiivi seisoo tukevasti eikä kaadu heilurin heiluessa; kiinnitä se tarvittaessa pöytään.",
+    "Tarkista solmut ennen heilauttamista, ettei kuula irtoa, ja pidä heilahdusalue vapaana: älä kumarru kuulan radalle.",
+    "Käsittele saksia varovasti, ja pidä painava kuula pois pöydän reunalta, ettei se putoa jaloille."
+  ]
+}
