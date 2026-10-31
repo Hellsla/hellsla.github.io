@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "The amount of gas comes into the picture: weighing shows that at the same pressure, volume and temperature all gases contain the same number of moles, and the same measurements give the molar gas constant $R$ and the equation of state $pV = nRT$, which combines the separate gas laws of the previous lesson. The particle model explains pressure as collisions with the walls.",
   "learn": [
-    "explain why all gases contain the same number of moles at the same pressure, volume and temperature.",
+    "work out what pressure, volume and temperature tell about the amount of gas.",
     "calculate quantities describing the state of a gas with the equation of state of an ideal gas.",
     "explain gas pressure as collisions of particles with the walls of the container."
   ],

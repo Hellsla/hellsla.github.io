@@ -37,7 +37,7 @@
 ## Ydinajatus
 Luvussa *Kaasujen tilanmuutokset ja Boylen laki* kaasulait koskivat suljettua kaasumäärää. Nyt verrataan eri kaasumääriä ja eri kaasuja.
 
-Täytetään 5,00 litran pallo. Paine on 101 kPa ja lämpötila $20\,{}^\circ\text{C}$. Täytetään pallo vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla. Esimerkkipunnituksessa kaasujen massat ovat hyvin erilaiset: $0{,}83\,\text{g}$, $5{,}78\,\text{g}$, $6{,}02\,\text{g}$ ja $9{,}10\,\text{g}$. Arvot on keksitty, ja niissä on punnituksen hajontaa. Jaetaan sitten kunkin kaasun massa kaasun moolimassalla. Tulos on joka kerta noin 0,207 mol. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua. Kaasun laji ei vaikuta tähän. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä. Syy ei ole se, että kaasua olisi vähemmän.
+Täytetään $5{,}00$ litran pallo. Paine on $101\,\text{kPa}$ ja lämpötila $20\,{}^\circ\text{C}$. Täytetään pallo vuorotellen heliumilla, typellä, ilmalla ja hiilidioksidilla. Esimerkkipunnituksessa kaasujen massat ovat hyvin erilaiset: $0{,}83\,\text{g}$, $5{,}78\,\text{g}$, $6{,}02\,\text{g}$ ja $9{,}10\,\text{g}$. Arvot on keksitty, ja niissä on punnituksen hajontaa. Jaetaan sitten kunkin kaasun massa kaasun moolimassalla. Tulos on joka kerta noin $0{,}207\,\text{mol}$. Samassa paineessa ja lämpötilassa yhtä suuressa tilavuudessa on siis yhtä paljon kaasua. Kaasun laji ei vaikuta tähän. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä. Syy ei ole se, että kaasua olisi vähemmän.
 
 <svg data-fig="helium-ilma" viewBox="0 0 600 326" role="img" aria-label="Havainnekuva, hiukkaset suurennettuina. Kaksi yhtä suurta kaasupalloa on samassa paineessa ja lämpötilassa. Kummassakin on yhtä monta hiukkasta ja ainemäärä n = 0,21 mol. Heliumpallon kaasun massa on m = 0,83 g. Ilmapallon kaasun massa on m = 6,0 g, koska ilman hiukkaset ovat raskaampia. Nuolet näyttävät hiukkasten liikkeen mittakaavassa. Kevyet heliumhiukkaset liikkuvat samassa lämpötilassa nopeammin. Nuolen pituus on nopeuden suhde 2,7 : 1." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy310-glass" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#ffffff"/><stop offset="0.7" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></radialGradient></defs>
@@ -155,7 +155,7 @@ Täytetään 5,00 litran pallo. Paine on 101 kPa ja lämpötila $20\,{}^\circ\te
   <foreignObject x="275.5" y="123.5" width="49" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$p,\ T$</div></foreignObject>
 </svg>
 
-Pienessäkin kaasumäärässä on valtavasti hiukkasia. Siksi niitä ei lasketa yksitellen. Ne lasketaan mooleina, samaan tapaan kuin kananmunia lasketaan tusinoina. Yksi mooli on $6{,}022 \cdot 10^{23}$ hiukkasta. Luku $N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}$ on Avogadron vakio. Ainemäärä $n$ kertoo, montako moolia hiukkasia on. Yhden moolin massa on aineen moolimassa $M$. Heliumin moolimassa on $4{,}00\,\text{g/mol}$, ilman keskimäärin $29{,}0\,\text{g/mol}$ ja hiilidioksidin $44{,}0\,\text{g/mol}$. Ainemäärän voi siis laskea kahdella tavalla: hiukkasmäärästä tai massasta.
+Pienessäkin kaasumäärässä on valtavasti hiukkasia. Siksi niitä ei lasketa yksitellen. Ne lasketaan mooleina, samaan tapaan kuin kananmunia lasketaan tusinoina. Yksi mooli on ${6{,}022 \cdot 10^{23}}$ hiukkasta. Luku ${N_\text{A} = 6{,}022 \cdot 10^{23}\,\text{1/mol}}$ on Avogadron vakio. Ainemäärä $n$ kertoo, montako moolia hiukkasia on. Yhden moolin massa on aineen moolimassa $M$. Heliumin moolimassa on $4{,}00\,\text{g/mol}$, ilman keskimäärin $29{,}0\,\text{g/mol}$ ja hiilidioksidin $44{,}0\,\text{g/mol}$. Ainemäärän voi siis laskea kahdella tavalla: hiukkasmäärästä tai massasta.
 ```latex
 n = \frac{N}{N_\text{A}} = \frac{m}{M}
 ```
@@ -238,7 +238,7 @@ Ideaalikaasu on mikromalli. Mallissa hiukkaset ovat pistemäisiä. Ne vaikuttava
 Todelliset kaasut noudattavat mallia hyvin tavallisissa oloissa. Malli ei toimi hyvin suurissa paineissa eikä matalissa lämpötiloissa. Silloin hiukkaset ovat lähellä toisiaan. Niiden välinen vetovoima tiivistää kaasun nesteeksi.
 
 ## Kaava: Ideaalikaasun tilanyhtälö
-Esimerkkipunnituksesta saadaan luku, joka on kaikille kaasuille sama. Se lasketaan näin: paine kerrotaan tilavuudella, ja tulo jaetaan ainemäärällä ja kelvinlämpötilalla. Neljän kaasun keskimääräinen ainemäärä on 0,2071 mol. Sillä luku on
+Esimerkkipunnituksesta saadaan luku, joka on kaikille kaasuille sama. Se lasketaan näin: paine kerrotaan tilavuudella, ja tulo jaetaan ainemäärällä ja kelvinlämpötilalla. Neljän kaasun keskimääräinen ainemäärä on $0{,}2071\,\text{mol}$. Sillä luku on
 ```latex
 \begin{aligned}
 R &= \frac{pV}{nT} \\
@@ -252,7 +252,7 @@ pV = nRT
 ```
 Tässä $p$ on paine (Pa), $V$ tilavuus (m³), $n$ ainemäärä (mol), $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ moolinen kaasuvakio ja $T$ lämpötila kelvineinä (K). Kaasun laatu ei näy yhtälössä lainkaan.
 
-Lämpötila $\theta$ voi olla annettu celsiusasteina. Muuta se kelvineiksi lisäämällä lukuarvoon 273,15. Paine on aina kokonaispaine pascaleina. Tilavuus on kuutiometreinä. Syy on se, että $R$:n yksikössä on joule: 1 Pa · m³ = 1 N/m² · m³ = 1 N · m = $1\,\text{J}$.
+Lämpötila $\theta$ voi olla annettu celsiusasteina. Muuta se kelvineiksi lisäämällä lukuarvoon $273{,}15$. Paine on aina kokonaispaine pascaleina. Tilavuus on kuutiometreinä. Syy on se, että $R$:n yksikössä on joule: ${1\,\text{Pa} \cdot \text{m}^3} = {1\,\tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3} = {1\,\text{N} \cdot \text{m}} = 1\,\text{J}$.
 
 Ratkaise tilanyhtälö paineen suhteen. Silloin näet, että paine kaksinkertaistuu kolmessa tapauksessa:
 
@@ -420,7 +420,7 @@ Simulaatiossa paine näytetään suhteessa vertailutilaan ($p/p_\text{ref}$). Si
 Joskus kaasun määrä ei muutu. Silloin $nR$ on vakio, ja tilanyhtälöstä seuraa yhdistetty kaasulaki $p_1V_1/T_1 = p_2V_2/T_2$. Alaindeksit 1 ja 2 ovat alku- ja lopputila. Yhdistetystä kaasulaista saat jokaisen luvun *Kaasujen tilanmuutokset ja Boylen laki* kaasulain. Pidä yksi suure vakiona.
 
 ## Esimerkki
-Juhlapallo täytetään heliumilla, kunnes sen tilavuus on $5{,}0\,\textsf{l}$. Pallossa paine on 101 kPa ja lämpötila $20\,{}^\circ\text{C}$. Kuinka monta moolia heliumia pallossa on? Mikä on heliumin massa? Heliumin moolimassa on $4{,}0\,\text{g/mol}$.
+Juhlapallo täytetään heliumilla, kunnes sen tilavuus on $5{,}0\,\textsf{l}$. Pallossa paine on $101\,\text{kPa}$ ja lämpötila $20\,{}^\circ\text{C}$. Kuinka monta moolia heliumia pallossa on? Mikä on heliumin massa? Heliumin moolimassa on $4{,}0\,\text{g/mol}$.
 
 <!-- vaihe -->
 
@@ -470,11 +470,11 @@ m &= nM \\
 &\approx 0{,}83\,\text{g}
 \end{aligned}
 ```
-Pallossa on 0,21 mol heliumia, ja sen massa on $0{,}83\,\text{g}$. Tilavuus $5{,}0\,\textsf{l}$ rajoittaa ainemäärää. Massaa rajoittaa myös moolimassa $4{,}0\,\text{g/mol}$. Kummassakin on kaksi numeroa, joten tulokset annetaan kahdella merkitsevällä numerolla. Paine 101 kPa ja lämpötila $293\,\text{K}$ ovat kolmen numeron arvoja. Ne eivät rajoita tulosta.
+Pallossa on $0{,}21\,\text{mol}$ heliumia, ja sen massa on $0{,}83\,\text{g}$. Tilavuus $5{,}0\,\textsf{l}$ rajoittaa ainemäärää. Massaa rajoittaa myös moolimassa $4{,}0\,\text{g/mol}$. Kummassakin on kaksi numeroa, joten tulokset annetaan kahdella merkitsevällä numerolla. Paine $101\,\text{kPa}$ ja lämpötila $293\,\text{K}$ ovat kolmen numeron arvoja. Ne eivät rajoita tulosta.
 
 <!-- vaihe -->
 
-**Järkevyys.** Yksi mooli kaasua vie huoneenlämmössä ja normaalipaineessa noin 24 litraa. Siksi 5,0 litrassa on noin 5,0/24 ≈ 0,21 mol kaasua. Samankokoisessa ilmapallossa on yhtä monta moolia ilmaa. Sen massa on noin 0,2073 mol · $29\,\text{g/mol}$ ≈ $6{,}0\,\text{g}$. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä. Syy ei ole se, että kaasua olisi vähemmän.
+**Järkevyys.** Yksi mooli kaasua vie huoneenlämmössä ja normaalipaineessa noin $24\,\textsf{l}$. Siksi tilavuudessa $5{,}0\,\textsf{l}$ on noin $5{,}0\,\textsf{l} : 24\,\textsf{l/mol} \approx 0{,}21\,\text{mol}$ kaasua. Samankokoisessa ilmapallossa on yhtä monta moolia ilmaa. Sen massa on noin $0{,}2073\,\text{mol} \cdot 29\,\text{g/mol} \approx 6{,}0\,\text{g}$. Heliumpallo on kevyempi, koska heliumhiukkaset ovat kevyempiä. Syy ei ole se, että kaasua olisi vähemmän.
 
 ## Yleinen virhekäsitys
 Tilanyhtälön laskuissa toistuu kolme virhettä:
@@ -485,7 +485,7 @@ Tilanyhtälön laskuissa toistuu kolme virhettä:
 
 ## Tiivistelmä
 - Ideaalikaasun tilanyhtälö on $pV = nRT$. Tässä $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$ ja $T$ on kelvineinä.
-- Ainemäärä $n$ kertoo kaasun määrän mooleina: $n = N/N_\text{A} = m/M$.
+- Ainemäärä $n$ kertoo kaasun määrän mooleina: $n = N/{N_\text{A}} = m/M$.
 - Paine on verrannollinen lausekkeeseen $NT/V$. Paine kaksinkertaistuu, kun hiukkasmäärä tai kelvinlämpötila kaksinkertaistuu. Se kaksinkertaistuu myös, kun tilavuus puolittuu.
 - Kun kaasun määrä pysyy samana, $p_1V_1/T_1 = p_2V_2/T_2$. Tästä saadaan erilliset kaasulait.
 - Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua. Kaasun laji ei vaikuta. Punnitus antaa kaikille kaasuille saman $m/M$.

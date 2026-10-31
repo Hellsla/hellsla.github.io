@@ -1,4 +1,4 @@
-"""Readable screenshots of a built page for the reviewers. Usage: python scripts/screenshot.py <id> [--if-stale] [--no-build]
+"""Readable screenshots of a built page for the reviewers. Usage: python scripts/screenshot.py <id> [--lang en|fi-easy] [--if-stale] [--no-build]
 
 <id> is a lesson, an investigation (fy10-jousivakio), a TVT guide (tvt-kuvaaja) or a Sovella set (FY3-sovella). The
 page is built first (build.py <id>, into preview/) so the captures show the content as it is now. review/shots/
@@ -34,19 +34,23 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser 
 import courses
 TILE = 1400
 
-args = [a for a in sys.argv[1:] if not a.startswith("--")]
+LANG = sys.argv[sys.argv.index("--lang") + 1] if "--lang" in sys.argv else courses.SOURCE_LANG   # a translation's page (preview/<lang>/)
+args = [a for i, a in enumerate(sys.argv[1:], 1) if not a.startswith("--") and sys.argv[i - 1] != "--lang"]
 if len(args) != 1: sys.exit(__doc__)
 lid = args[0]
+SUB = "" if LANG == courses.SOURCE_LANG else f"{LANG}/"
 
 
 def target(pid):
     """(kind, review folder, content hashes) of a page id: a lesson, an investigation, a TVT guide or <COURSE>-sovella."""
     import guides, investigations, practice, reviews
+    if SUB and (pid.endswith("-sovella") or pid in investigations.ids() or pid in guides.ids()):
+        sys.exit(f"--lang captures a translated lesson; {pid} is captured in {courses.SOURCE_LANG}")
     if pid.endswith("-sovella"):
         code = pid[:-len("-sovella")]; return "sovella", practice.folder(code) / "review", practice.content_hash(code)
     if pid in investigations.ids(): return "investigation", investigations.folder(pid) / "review", investigations.content_hash(pid)
     if pid in guides.ids(): return "guide", guides.folder(pid) / "review", guides.content_hash(pid)
-    f = courses.find_lesson(pid)
+    f = courses.find_lesson(pid, LANG)
     return "lesson", f / "review", f"{reviews.content_hash(f)} exercises {reviews.content_hash(f, 'exercises')}"
 
 
@@ -54,8 +58,8 @@ kind, review, hashes = target(lid)
 if "--no-build" not in sys.argv:                       # the captures show the content as it is now, never an older preview
     r = subprocess.run([sys.executable, str(courses.ROOT / "scripts/build.py"), lid], cwd=courses.ROOT, capture_output=True, text=True)
     if r.returncode: sys.exit(f"build.py {lid} failed:\n{r.stdout[-800:]}{r.stderr[-800:]}")
-page_file = courses.ROOT / "preview" / f"{lid}.html"
-if not page_file.exists(): page_file = courses.ROOT / "site" / f"{lid}.html"
+page_file = courses.ROOT / "preview" / f"{SUB}{lid}.html"
+if not page_file.exists(): page_file = courses.ROOT / "site" / f"{SUB}{lid}.html"
 if not page_file.exists(): sys.exit(f"no built page for {lid}: run python scripts/build.py {lid}")
 
 

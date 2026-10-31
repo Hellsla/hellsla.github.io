@@ -2,7 +2,7 @@
   "version": 1,
   "contribution": "Mukaan tulee kaasun määrä. Punnitsemalla huomataan, että samassa paineessa, tilavuudessa ja lämpötilassa kaikissa kaasuissa on yhtä monta moolia. Samoista mittauksista saadaan moolinen kaasuvakio $R$ ja tilanyhtälö $pV = nRT$. Tilanyhtälö yhdistää edellisen tunnin erilliset kaasulait. Hiukkasmalli selittää paineen: paine syntyy, kun hiukkaset osuvat seiniin.",
   "learn": [
-    "selittämään, miksi kaikissa kaasuissa on yhtä monta moolia, kun paine, tilavuus ja lämpötila ovat samat.",
+    "päättelemään, mitä paine, tilavuus ja lämpötila kertovat kaasun määrästä.",
     "laskemaan kaasun tilaa kuvaavia suureita ideaalikaasun tilanyhtälöllä.",
     "selittämään kaasun paineen. Paine syntyy, kun hiukkaset törmäävät astian seiniin."
   ],
