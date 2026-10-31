@@ -268,7 +268,7 @@ details.answer .answer-body{margin:.2rem 0 0 1.2rem;background:var(--accent-soft
 details.answer .answer-body p{display:block;margin:0 0 .4rem;padding:0;background:none}details.answer .answer-body>:last-child{margin-bottom:0}
 /* a calculation in rows (scripts/mathlayout.py chain_html): the relation signs in one column, each side wraps after an
    operator on a narrow screen instead of running off it */
-.eq-chain{display:grid;grid-template-columns:fit-content(45%) minmax(0,1fr);column-gap:.3em;row-gap:.15rem;width:fit-content;max-width:100%;margin:.5rem 0 .7rem;padding:.55rem .9rem;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
+.eq-chain{display:grid;grid-template-columns:fit-content(min(55vw,24rem)) minmax(0,1fr);column-gap:.3em;row-gap:.15rem;width:fit-content;max-width:100%;margin:.5rem 0 .7rem;padding:.55rem .9rem;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
 .eq-row{display:contents}.eq-row.gap>span,.eq-lead.gap{margin-top:.6rem}
 .eq-lead{grid-column:1/-1}.eq-chain.lead .eq-r{padding-left:1.4em}
 .eq-l{text-align:right;min-width:0}.eq-r{min-width:0}
