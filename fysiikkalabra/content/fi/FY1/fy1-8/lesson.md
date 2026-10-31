@@ -221,6 +221,7 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata: "Miten leluauton kulkema 
 
 ### Muuttujat
 **Muuttuja** on suure, jonka arvo voi vaihdella tutkimuksessa. Kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään kaikki muut samoina:
+
 - **muutettava muuttuja**: kokeen tekijä valitsee sen arvot, tässä matka $s$
 - **mitattava muuttuja**: sen arvo luetaan mittarista, tässä aika $t$
 - **vakioitavat muuttujat**: pysyvät samoina koko kokeen ajan, tässä auto, paristot, alusta ja lähtötapa.
@@ -298,6 +299,7 @@ Kirjaa lukemat sellaisenaan. Älä poista tai korjaa hiljaa mittausta, joka näy
 
 ### Raportti
 **Raportti** kertoo tutkimuksen niin, että toinen voi toistaa sen ja arvioida johtopäätöksen. Sen osat ovat:
+
 1. tutkimuskysymys ja hypoteesi
 2. menetelmä: välineet, muuttujat ja toteutus
 3. tulokset: taulukko, kuvaaja ja suureen arvo epävarmuuksineen

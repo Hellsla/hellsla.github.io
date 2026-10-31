@@ -30,6 +30,8 @@
 <footer class="bottom"><span>{{t:site.footer}}</span><a href="{{course}}.html">{{back_to_course}}</a><a href="{{home}}">{{t:site.back_to_portfolio}}</a></footer>
 </div>
 <script src="vendor/katex/katex.min.js"></script>
-<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script>/* inline maths (NOTES §1; visual audit 2026-10-31): never broken after a multiplication dot ("1,7 ·" / "10⁻¹⁵ m": KaTeX allows a break after every operator, so the box after a dot is merged into the one before; a long formula still breaks after "="), and never parted from the punctuation around it (a word joiner before a comma, full stop, colon or closing bracket after it and after an opening bracket before it) */
+window.flGlueMath=function(root){var WJ='\u2060';(root||document.body).querySelectorAll('.katex').forEach(function(k){if(k.dataset.glued||k.closest('.katex-display'))return;k.dataset.glued='1';var bs=k.querySelectorAll(':scope>.katex-html>.base');for(var i=bs.length-2;i>=0;i--){var last=bs[i].lastElementChild;while(last&&last.classList.contains('mspace'))last=last.previousElementSibling;if(last&&last.classList.contains('mbin')&&/[\u22c5\u00d7]/.test(last.textContent)){while(bs[i+1].firstChild)bs[i].appendChild(bs[i+1].firstChild);bs[i+1].remove();}}var n=k.nextSibling,p=k.previousSibling;if(n&&n.nodeType===3&&/^[,.;:!?)\]]/.test(n.data))n.data=WJ+n.data;if(p&&p.nodeType===3&&/[(\[]$/.test(p.data))p.data=p.data+WJ;});};</script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});flGlueMath(document.body)"></script>
 <script src="lesson.js"></script>{{scripts}}
 </body></html>

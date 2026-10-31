@@ -230,7 +230,7 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä 
 </svg>
 
 ### Suoraan verrannollisuus
-Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Oletetaan, että tasainen liike alkaa nollakohdasta. Silloin kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia. Kaksinkertainen aika antaa kaksinkertaisen matkan. Suhde $s : t$ on nopeus $v$. (t, s)-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
+Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Oletetaan, että tasainen liike alkaa nollakohdasta. Silloin kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia. Kaksinkertainen aika antaa kaksinkertaisen matkan. Suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 
 ### Lineaarinen malli
 Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti. Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu vain vähän tarkasteltuun aikaan nähden. Mallin kuvaaja on suora. Suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja. Niitä verrataan mittauksiin.
@@ -243,7 +243,7 @@ s = s_0 + v t
 missä $s$ on paikka (m) valitusta nollakohdasta mitattuna, $s_0$ alkupaikka (m), $v$ nopeus (m/s) ja $t$ aika alusta (s). Kappaleen kulkema matka on $\Delta s = s - s_0 = vt$. Tässä luvussa kappale liikkuu vain yhteen suuntaan. Siksi nopeus on positiivinen.
 
 ### Nopeus kuvaajasta
-(t, s)-kuvaaja on suora. Suoran kulmakerroin on nopeus:
+$(t, s)$-kuvaaja on suora. Suoran kulmakerroin on nopeus:
 ```latex
 v = \frac{\Delta s}{\Delta t}
 ```
@@ -345,6 +345,6 @@ Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika k
 ## Tiivistelmä
 - Tasaisessa liikkeessä nopeus on vakio. Kappale kulkee yhtä pitkissä ajoissa yhtä pitkät matkat: $s = s_0 + vt$.
 - Kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s$ on verrannollinen aikaan vain, kun $s_0 = 0$.
-- (t, s)-kuvaaja on suora. Suoran kulmakerroin $\Delta s : \Delta t$ on nopeus. Suoran ja $s$-akselin leikkauskohta on alkupaikka $s_0$.
+- $(t, s)$-kuvaaja on suora. Suoran kulmakerroin $\Delta s : \Delta t$ on nopeus. Suoran ja $s$-akselin leikkauskohta on alkupaikka $s_0$.
 - Muunna yksiköt ennen laskemista sijoittamalla, esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$.
 - Tasainen liike on lineaarinen malli. Sen antamat arvot ovat mallin arvoja. Niitä voi verrata mittauksiin, kuten Voyager 2 -luotaimen etäisyyttä.

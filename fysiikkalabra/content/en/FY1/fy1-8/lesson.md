@@ -221,6 +221,7 @@ A **hypothesis** is a reasoned, testable prediction that answers the question. F
 
 ### Variables
 A **variable** is a quantity whose value can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
+
 - **independent variable**: the experimenter chooses its values, here the distance $s$
 - **dependent variable**: its value is read from an instrument, here the time $t$
 - **controlled variables**: stay the same throughout the experiment, here the car, the batteries, the surface and the way of starting.
@@ -298,6 +299,7 @@ Record the readings as they are. Do not quietly delete or correct a measurement 
 
 ### Report
 A **report** describes the investigation so that someone else can repeat it and judge the conclusion. Its parts are:
+
 1. research question and hypothesis
 2. method: equipment, variables and procedure
 3. results: table, graph and the value of the quantity with its uncertainty

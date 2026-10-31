@@ -367,6 +367,18 @@ expect("... but a changed number in a formula is not typography: science full", 
 p.write_text(src_md.replace(line, line + " Lisäsana.", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("... and a sentence added outside the maths is not typography", "typography" not in out and "science: none" not in out, out)
+plain = next(l for l in src_md.splitlines() if l.strip() and "$" not in l and not l.lstrip().startswith(("<", "#", "-", "`")) and len(l.split()) > 3)
+w = plain.split()[1]
+p.write_text(src_md.replace(plain, plain.replace(" " + w + " ", " $" + w + "$ ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a symbol in the text set as maths, nothing else, is typography: science and pedagogy none", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out, out)
+ls = src_md.split("\n"); k = next(i for i in range(1, len(ls)) if ls[i - 1].strip() and ls[i].strip() and not ls[i - 1].lstrip().startswith(("<", "`", "{")) and not ls[i].lstrip().startswith(("<", "`", "{")))
+p.write_text("\n".join(ls[:k] + [""] + ls[k:]))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a blank line added (a list builds as a list) is typography: science and pedagogy none", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out, out)
+p.write_text(src_md.replace(plain, plain.replace(" " + w + " ", " $" + w + "2$ ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("... but a symbol changed while set as maths is not typography", "science: none" not in out, out)
 
 # 8c. investigations, TVT guides and Sovella sets: three reports, or a baseline row for exactly this hash
 sys.path.insert(0, str(HERE)); import reviews as rv

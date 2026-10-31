@@ -221,6 +221,7 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten lelua
 
 ### Muuttujat
 **Muuttuja** on suure, jonka arvo voi vaihdella tutkimuksessa. Kokeessa tehdään kolme asiaa. Yhtä muuttujaa muutetaan, toista mitataan ja kaikki muut pidetään samoina:
+
 - **muutettava muuttuja**: kokeen tekijä valitsee sen arvot, tässä matka $s$
 - **mitattava muuttuja**: sen arvo luetaan mittarista, tässä aika $t$
 - **vakioitavat muuttujat**: ne pysyvät samoina koko kokeen ajan, tässä auto, paristot, alusta ja lähtötapa.
@@ -282,6 +283,7 @@ Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Sillo
 
 ### Suunnittelu ennen mittausta
 Suunnitelma vastaa ennen mittausta näihin kysymyksiin:
+
 - Mitä mitataan ja millä välineellä?
 - Mitkä arvot muutettavalle muuttujalle valitaan, ja kuinka monta?
 - Montako toistoa kustakin arvosta tehdään?
@@ -293,6 +295,7 @@ Valitse mittausalue niin, että mitattava suure on selvästi suurempi kuin mitta
 
 ### Mittauspöytäkirja
 **Mittauspöytäkirja** on kirjaus, joka tehdään kokeen aikana. Sitä ei tehdä muistista jälkikäteen. Siihen kirjataan nämä asiat:
+
 - tutkimuskysymys ja päivämäärä
 - välineet ja niiden tarkkuus
 - vakioidut asiat
@@ -309,6 +312,7 @@ Kirjaa lukemat sellaisenaan. Älä poista tai korjaa hiljaa mittausta, joka näy
 
 ### Raportti
 **Raportti** kertoo tutkimuksen niin, että toinen voi toistaa sen. Toinen voi myös arvioida johtopäätöksen. Raportin osat ovat:
+
 1. tutkimuskysymys ja hypoteesi
 2. menetelmä: välineet, muuttujat ja toteutus
 3. tulokset: taulukko, kuvaaja ja suureen arvo epävarmuuksineen
