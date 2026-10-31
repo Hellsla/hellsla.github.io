@@ -563,5 +563,5 @@ Another mistake is to forget the signs when an object rebounds. If a ball hits a
 - Momentum is the product of mass and velocity, $\overline{p} = m\overline{v}$. It is a vector with the direction of the velocity; the unit is $\text{kg}\cdot\text{m/s}$.
 - The impulse of a constant force is $\overline{I} = \overline{F}\,\Delta t$. The impulse of a changing force is the area under the $(t, F)$ graph; the unit is $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
 - The impulse–momentum principle: the impulse of the net force equals the change in momentum, $\Delta\overline{p} = \overline{I}$.
-- The same change in momentum is obtained with a large force in a short time or a small force in a long time. A soft surface, bent knees and the foam of a helmet lengthen the stopping time and lower the force.
+- The same change in momentum is obtained with a large force in a short time or a small force in a long time. A soft surface, bent knees and the foam of a helmet lengthen the stopping time and lower the average force.
 - In one dimension a positive direction is chosen and signs are used. For an object rebounding straight back at the same speed the magnitude of the change in momentum is $2mv$, twice as large as for one that stops.

@@ -159,7 +159,7 @@
   },
   {
     "term": "mittausvirhe",
-    "definition": "Mittaustuloksen ja suureen oikean arvon erotus eli tulos miinus oikea arvo. Pieni virhe kuuluu jokaiseen mittaukseen. Sitä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida. Erehdyksestä syntyvä karkea virhe sen sijaan poistetaan.",
+    "definition": "Mittaustuloksen ja suureen oikean arvon erotus eli tulos miinus oikea arvo. Jokaiseen mittaustulokseen liittyy epävarmuutta, eikä virhettä yleensä tunneta. Virhettä ei voi poistaa kokonaan, mutta sitä voi pienentää ja sen suuruuden voi arvioida. Erehdyksestä syntyvä karkea virhe sen sijaan poistetaan.",
     "lessons": [
       "fy1-3"
     ],

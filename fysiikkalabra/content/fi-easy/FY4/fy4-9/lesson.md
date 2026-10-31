@@ -563,5 +563,5 @@ Toinen virhe on unohtaa etumerkit, kun kappale kimpoaa. Pallo osuu seinään nop
 - Liikemäärä on massan ja nopeuden tulo, $\overline{p} = m\overline{v}$. Se on vektori, jolla on nopeuden suunta. Yksikkö on $\text{kg}\cdot\text{m/s}$.
 - Vakiovoiman impulssi on $\overline{I} = \overline{F}\,\Delta t$. Muuttuvan voiman impulssi on $(t, F)$-kuvaajan alle jäävä pinta-ala. Yksikkö on $\text{N}\cdot\text{s} = \text{kg}\cdot\text{m/s}$.
 - Impulssiperiaate: kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos, $\Delta\overline{p} = \overline{I}$.
-- Sama liikemäärän muutos saadaan suurella voimalla lyhyessä ajassa tai pienellä voimalla pitkässä ajassa. Pehmeä alusta, koukistetut polvet ja kypärän vaahtomuovi pidentävät pysähtymisaikaa ja pienentävät voimaa.
+- Sama liikemäärän muutos saadaan suurella voimalla lyhyessä ajassa tai pienellä voimalla pitkässä ajassa. Pehmeä alusta, koukistetut polvet ja kypärän vaahtomuovi pidentävät pysähtymisaikaa ja pienentävät keskimääräistä voimaa.
 - Yhdessä ulottuvuudessa valitaan positiivinen suunta ja käytetään etumerkkejä. Kappale kimpoaa suoraan takaisin samalla vauhdilla. Sen liikemäärän muutoksen suuruus on $2mv$, kaksi kertaa niin suuri kuin pysähtyvän.
