@@ -230,7 +230,7 @@ joten jaksonajan neliö pituuden funktiona on origon kautta kulkeva suora, jonka
 Jos pituus on mitattu joka kerta samasta väärästä kohdasta, esimerkiksi kuulan yläpintaan keskipisteen sijasta, jokaisesta pituudesta puuttuu sama matka. Silloin suora siirtyy, ja kuvaajaan tulee vakiotermi, mutta kulmakerroin ja siitä laskettu $g$ eivät muutu. Tämä on kuvaajasta määrittämisen etu verrattuna yksittäiseen laskuun $g = \dfrac{4\pi^2 l}{T^2}$.
 :::
 
-Kuvaajan sovitukseen ja jaksonajan neliön laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen ja jaksonajan neliön laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -257,10 +257,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten jaksonaika riippuu hei
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** heilurin jaksonajan malli ehtoineen ja miksi valitsemillasi akseleilla kuvaaja on suora.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten mittasit pituuden ja miten jaksonajan sekä miten testasit massan ja heilahduskulman vaikutuksen.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten mittasit pituuden ja miten jaksonajan sekä miten testasit massan ja heilahduskulman vaikutuksen.
 - **Mittaustulokset:** jokainen toisto omassa sarakkeessaan ja lasketut suureet niiden oikealla puolella.
 - **Tulos:** $g = (g \pm \Delta g)\ \text{m/s}^2$ oikein pyöristettynä ja vertailu taulukkoarvoon.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin ehtojen toteutuminen.

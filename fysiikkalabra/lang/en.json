@@ -42,16 +42,15 @@
     "home_description": "Upper secondary physics through investigation: predictions, simulations, explanations and exercises, LOPS 2019 modules FY1–FY8.",
     "credits": "{{n}} cr",
     "home_tagline": "Investigate. Understand. Apply.",
-    "home_path": "How a lesson works",
+    "home_path": "How you study in Ruukkilabra",
+    "home_start_lead": "Choose a module and start from its first chapter, or from the chapter your class is working on. Every chapter follows the same stages.",
     "home_path_herata": "a phenomenon and the question the chapter answers",
     "home_path_ennusta": "commit to your own prediction before the results",
     "home_path_tutki": "experiment with a simulation or data and record what you see",
     "home_path_selita": "the explanation and the formula are built from the observations",
     "home_path_sovella": "use the model in a new situation",
     "home_path_tarkista": "test what you can do; the exercises are at the end of the chapter",
-    "home_start": "How to get started",
     "home_start_items": [
-      "Start from the first chapter of a module, or from the chapter your class is working on.",
       "Predict first: once you have committed to an answer, you notice what is surprising in the investigation.",
       "Use the simulation like an experiment: change one thing at a time and record what happens.",
       "Open an answer or a model solution only after you have tried yourself, and compare yours with it step by step.",
@@ -63,15 +62,10 @@
     "lang_unavailable": "page not available yet, goes to the module page",
     "unavailable_note": "<strong>{{title}}</strong> is not available in this language yet. Below you can see the lessons of this module and which of them you can already open.",
     "home_title": "Upper secondary physics through investigation.",
-    "choose_module": "Choose a module",
-    "try_lesson": "Try a lesson",
     "modules_lead": "Physics modules of the Finnish core curriculum (LOPS 2019). The numbers show published lessons, not your own progress.",
     "upcoming": "Coming soon",
     "upcoming_lead": "No lessons of these modules have been published yet. A module's page shows its planned lessons and goals.",
     "open_module": "Open module →",
-    "open_lesson": "Open lesson →",
-    "featured_heading": "Sample lesson",
-    "featured_lead": "The chapter moves from a question and a prediction to an investigation, the theory and a check of what you can do.",
     "lessons_all": {
       "one": "{{n}} lesson",
       "other": "{{n}} lessons"
@@ -88,11 +82,6 @@
       "one": "Show the goal",
       "other": "Show all {{n}} goals"
     },
-    "home_start_short": [
-      "Choose a module and start from its first chapter, or from the chapter your class is working on.",
-      "Predict first, and open the answers only after you have tried yourself.",
-      "At the end of a chapter, go on to Next chapter."
-    ],
     "home_start_more": "More study tips",
     "module_question": {
       "FY1": "How does physics measure and explain the world, from protons to galaxies?",
@@ -105,9 +94,14 @@
       "FY8": "Why is the energy of an atom quantised, and where does radiation come from?"
     },
     "local_courses": "School-specific courses",
-    "local_courses_lead": "Optional courses of Kiviruukki upper secondary school. They are not national modules (LOPS 2019), but their learning materials are open to everyone.",
+    "local_courses_lead": "Courses of Kiviruukki upper secondary school. They are not national modules, but their materials are open to everyone.",
     "local_course_kind": "School-specific course",
     "local_status_planning": "In planning",
+    "local_status_home_planning": "Course plan in progress",
+    "local_investigations": {
+      "one": "{{n}} investigation available",
+      "other": "{{n}} investigations available"
+    },
     "open_course": "Open course →",
     "local_distinct": "This is a school-specific course ({{school}}). Its goals and contents come from the school's own plan, not from the national modules FY1–FY8.",
     "local_status_note_planning": "This page shows a working version of the course. Investigations are published as they are completed, and the scope and assessment have not been confirmed.",
@@ -1274,6 +1268,40 @@
     "safety": "Safety",
     "teacher": "For the teacher",
     "course_heading": "Investigations",
-    "course_lead": "Published investigations. The same investigation can belong to several courses."
+    "course_lead": "Published investigations. The same investigation can belong to several courses.",
+    "bank_note": "F1–F3 tells how demanding the physics is, and E1–E3 how demanding the measurement and analysis are. You choose the working mode (guided, partly guided or independent) on the investigation's page.",
+    "course_lead_n": {
+      "one": "{{n}} published investigation.",
+      "other": "{{n}} published investigations."
+    },
+    "filter_label": "Filter investigations",
+    "filter_search": "Search by name, question or equipment",
+    "filter_all": "All",
+    "filter_topic": "Topic",
+    "filter_physics": "Physics level",
+    "filter_experiment": "Experiment level",
+    "filter_mode": "Working mode",
+    "filter_reset": "Show all",
+    "filter_none": "No investigation matches your choices. Change them or show all.",
+    "filter_count": "Showing {shown} of {total} investigations.",
+    "topic_liike": "Motion and force",
+    "topic_lampo": "Heat and energy",
+    "topic_aallot": "Oscillations, waves and light",
+    "topic_sahko": "Electricity and magnetism",
+    "topic_aine": "Matter and radiation",
+    "mode_short_O": "guided",
+    "mode_short_OO": "partly guided",
+    "mode_short_I": "independent",
+    "builds_on": "Builds on:"
+  },
+  "guides": {
+    "used_by": "You need this in the investigations:",
+    "learn": "In this guide, you will learn to",
+    "kind_taito": "A general skill: the guide fits any software or calculator.",
+    "kind_ohjelma": "Using a tool: check the details in the guide of your own software or device.",
+    "course_heading": "ICT guides",
+    "course_lead": "Short guides to the skills the investigations need. Each investigation says which guide you need and when.",
+    "prereq_guides": "guide:",
+    "notice_draft": "This guide is a draft that has not been reviewed yet."
   }
 }

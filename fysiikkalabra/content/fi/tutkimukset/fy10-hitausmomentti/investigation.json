@@ -12,6 +12,7 @@
     "FY4",
     "FY5"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 3–4 (Mitä hitausmomentti tarkoittaa?; Umpinaisen sylinterin hitausmomentin määrittäminen; Pyörimismäärän säilyminen), opettajan aineisto",
   "learn": [
     "kuvailemaan omin sanoin, mitä hitausmomentti tarkoittaa ja miten massan jakautuminen pyörimisakselin suhteen vaikuttaa siihen",
@@ -111,7 +112,7 @@
       "kind": "tvt",
       "level": "helpful",
       "text": "Mittaustulosten käsittely ja kuvaajat ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Ohjelma helpottaa laskuja ja kuvaajien piirtämistä."
     }
   ],

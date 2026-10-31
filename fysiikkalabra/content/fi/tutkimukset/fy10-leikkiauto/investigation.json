@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 13–14 (Leikkiauton nopeus korkeuden funktiona), opettajan aineisto",
   "learn": [
     "muotoilemaan fysiikan periaatteesta perustellun hypoteesin ja mallin ennen mittaamista",
@@ -89,21 +90,21 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Ajan tai nopeuden mittaaminen valoportilla ja sen ohjelmalla",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-nopeus-datasta"],
       "why": "Auton nopeus saadaan ajasta, jonka auton liuska katkaisee valoportin säteen."
     },
     {
       "kind": "tvt",
       "level": "essential",
       "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Mallin testaamiseen tarvitaan kuvaaja, jossa toiselle akselille lasketaan uusi suure mitatuista arvoista."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-videoanalyysi"],
       "why": "Jos valoporttia ei ole, nopeuden voi määrittää videolta."
     }
   ],

@@ -11,6 +11,7 @@
     "FY1",
     "FY3"
   ],
+  "topic": "lampo",
   "source": "Esimerkkityöt.pdf s. 5 (Kappaleen jäähtymisen tutkiminen), opettajan aineisto",
   "learn": [
     "etsimään mittaustuloksiin sopivan matemaattisen mallin ja testaamaan sitä kuvaajan avulla",
@@ -91,14 +92,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Lämpötilan tallentaminen anturilla ajan funktiona ja mittausdatan siirtäminen ohjelmaan",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Pitkä mittaus tiheällä mittausvälillä onnistuu parhaiten tallentavalla anturilla."
     },
     {
       "kind": "tvt",
       "level": "essential",
       "text": "Laskettu sarake, suoran sovitus ja eksponenttisovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Mallia testataan laskemalla uusi suure mitatuista arvoista tai sovittamalla malli suoraan mittauspisteisiin."
     }
   ],

@@ -234,7 +234,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Miksi juuri nämä akselit?** Malli $h_1 = a h_0$ on suoran yhtälö $y = ax$, kun pystyakselille valitaan pomppukorkeus ja vaaka-akselille pudotuskorkeus. Silloin kulmakerroin on suoraan säilyvän energian osuus, ja sen yksikkö on $\text{m/m}$ eli kulmakerroin on yksikötön luku. Jos akselit vaihdetaan keskenään, kulmakerroin on $\dfrac{1}{a}$. Suuri vakiotermi viittaa usein siihen, että korkeudet on mitattu pallon eri kohdista, esimerkiksi pudotus alapinnasta ja pomppu yläpinnasta. Jos molemmat mitataan yläpintaan, suoraan tulee pieni vakiotermi, koska pallon halkaisija sisältyy kumpaankin korkeuteen.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -257,10 +257,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Onko pomppukorkeus suoraan v
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** miten tutkimuskysymys muuttui mitattaviksi suureiksi ja miksi korkeuksien suhde on energioiden suhde.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, mistä kohdasta palloa mittasit korkeudet ja miten luit pomppukorkeuden.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, mistä kohdasta palloa mittasit korkeudet ja miten luit pomppukorkeuden.
 - **Mittaustulokset:** jokainen toisto omassa sarakkeessaan ja keskiarvo niiden oikealla puolella.
 - **Tulos:** säilyvän energian osuus epävarmuuksineen oikein pyöristettynä.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.

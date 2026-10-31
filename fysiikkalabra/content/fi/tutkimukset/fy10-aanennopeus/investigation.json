@@ -11,6 +11,7 @@
     "FY1",
     "FY5"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 14 (Äänennopeuden määrittäminen), opettajan aineisto",
   "learn": [
     "suunnittelemaan mittausmenetelmän, jolla hyvin lyhyt kulkuaika saadaan mitattua riittävän tarkasti, ja perustelemaan valintasi",
@@ -84,14 +85,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Äänianturin tai puhelimen sovelluksen mittaus ja aikaeron lukeminen tallennetusta signaalista",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Tarvitset sitä, jos mittaat ajat tallennetusta äänisignaalista."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Jos määrität nopeuden kuvaajan kulmakertoimesta, kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
   ],

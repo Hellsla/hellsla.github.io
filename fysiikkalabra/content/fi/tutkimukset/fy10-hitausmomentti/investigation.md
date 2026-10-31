@@ -276,7 +276,7 @@ Kuvaaja on yksittäisiä laskuja parempi, koska se näyttää, sopivatko kaikki 
 Jos suora ei kulje origon kautta, mieti, onko matkojen tai korkeuksien nollakohdassa systemaattinen virhe. Matkaan verrannollinen energiahäviö, esimerkiksi tasainen vierimisvastus, ei näy vakioterminä, koska kaltevuus on vakio: se muuttaa vain kulmakerrointa.
 :::
 
-Laskuihin ja kuvaajiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Laskuihin ja kuvaajiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -303,10 +303,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Vastaako mittaamasi hitausmo
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** hitausmomentin merkitys omin sanoin lähteineen, pyörimisenergia, vierimisen ehto ja energian säilymisen yhtälö, josta hitausmomentti ratkaistaan.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten määritit nopeuden ja miten varmistit, että sylinteri lähti levosta.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten määritit nopeuden ja miten varmistit, että sylinteri lähti levosta.
 - **Mittaustulokset:** alkuperäiset mittaukset toistoineen omissa sarakkeissaan ja johdetut suureet niiden oikealla puolella.
 - **Tulos:** mitattu ja mallin antama hitausmomentti epävarmuuksineen oikein pyöristettyinä.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin oletusten pätevyys.

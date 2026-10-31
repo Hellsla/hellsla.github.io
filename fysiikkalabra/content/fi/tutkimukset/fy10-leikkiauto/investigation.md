@@ -222,7 +222,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Kaartuvat pisteet.** Ilmanvastus kasvaa nopeuden kasvaessa, joten se voi taivuttaa suurimpien korkeuksien pisteitä suoran alapuolelle. Jätä sovituksesta pois vain pisteet, joiden poikkeamalle löydät fysikaalisen syyn, ja kerro se raportissa.
 :::
 
-Kuvaajan sovitukseen ja $v^2$-sarakkeen laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen ja $v^2$-sarakkeen laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -247,10 +247,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Tukevatko mittaukset mallia,
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Hypoteesi ja teoria:** hypoteesisi ja se, miten johdit mallin energiaperiaatteesta ennen mittaamista.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, mistä kohdasta autoa mittasit korkeuden ja miten määritit nopeuden.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, mistä kohdasta autoa mittasit korkeuden ja miten määritit nopeuden.
 - **Tulosten käsittely:** miksi valitsit juuri nämä akselit ja miten linearisointi testaa mallia.
 - **Tulos:** kulmakerroin ja nopeudessa näkyvän energian osuus epävarmuuksineen oikein pyöristettyinä.
 - **Johtopäätökset ja luotettavuus:** tukivatko mittaukset hypoteesia, ja mitkä konkreettiset epävarmuuden lähteet ja energiahäviöt selittävät poikkeamat mallista.

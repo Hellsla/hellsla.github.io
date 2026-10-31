@@ -12,6 +12,7 @@
     "FY5",
     "FY7"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 7–8 (Valonnopeuden määrittäminen mikroaaltouunilla), opettajan aineisto",
   "learn": [
     "määrittämään aallonpituuden seisovan aallon kuviosta ja laskemaan siitä aallon etenemisnopeuden",
@@ -86,7 +87,7 @@
       "kind": "tvt",
       "level": "extension",
       "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Laajennuksessa kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
   ],

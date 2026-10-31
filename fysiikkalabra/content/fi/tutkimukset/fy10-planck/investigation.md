@@ -366,7 +366,7 @@ Tämä on suoran yhtälö $y = kx$, kun pystyakselille valitaan $U_\text{k}$ ja 
 Tarkista vielä kuvaajastasi: ovatko pisteet suoralla, ja kulkeeko suora origon kautta? Jos kaikkien LEDien kynnysjännitteissä on sama lisäosa, suora siirtyy ylös tai alas, mutta kulmakerroin ei muutu. Eri materiaaleista tehdyillä LEDeillä lisäosa voi olla erisuuruinen, ja silloin se muuttaa myös kulmakerrointa.
 :::
 
-Kuvaajien piirtämiseen ja sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajien piirtämiseen ja sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -403,7 +403,7 @@ Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** fotonin energia, periaate $eU_\text{k} \approx hf$ ehtoineen ja perustelu kuvaajan akseleille.
 - **Koejärjestely ja menetelmä:** kytkentäkaavio, mistä LEDien aallonpituudet ovat peräisin ja miten määritit kynnysjännitteen.

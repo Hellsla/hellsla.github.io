@@ -13,6 +13,7 @@
     "FY6",
     "FY7"
   ],
+  "topic": "sahko",
   "source": "Esimerkkityöt.pdf s. 10–11 (Muuntajan tutkiminen; kortti on painettu kahdesti), opettajan aineisto",
   "learn": [
     "vertaamaan mittaustuloksia fysikaaliseen malliin ja perustelemaan, millä ehdoilla malli pätee",
@@ -30,7 +31,7 @@
       "id": "laajennus",
       "title": "Hyötysuhde eri kuormituksilla",
       "physics": "F2",
-      "experiment": "E3"
+      "experiment": "E2"
     }
   ],
   "modes": [
@@ -115,7 +116,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
   ],

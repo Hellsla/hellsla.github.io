@@ -246,7 +246,7 @@ Vastaa:
 Tarkista vastauksesi kysymykseen 3 tästä. Jos jokaisessa matkassa on sama vakiovirhe, koko suora siirtyy ylös tai alas, mutta sen kulmakerroin ei muutu. Sama koskee aikaa, jos toinen signaali on joka kerta yhtä paljon myöhässä. Kun nopeus lasketaan kulmakertoimesta, tällainen vakiovirhe näkyy vain vakioterminä. Jos taas lasket nopeuden jokaisesta mittauksesta erikseen jakolaskulla, vakiovirhe vaikuttaa jokaiseen tulokseen, eniten lyhyillä matkoilla.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -279,7 +279,7 @@ missä $v_0 \approx 331\ \text{m/s}$ on äänen nopeus kuivassa ilmassa lämpöt
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Koejärjestely ja menetelmä:** kuva koejärjestelystä, miten tuotit ja havaitsit äänen ja miten mittasit matkat ja ajat. Perustele, miksi menetelmäsi on riittävän tarkka.
 - **Mittaustulokset:** jokainen toisto omassa sarakkeessaan ja keskiarvo niiden oikealla puolella, sekä ilman lämpötila.

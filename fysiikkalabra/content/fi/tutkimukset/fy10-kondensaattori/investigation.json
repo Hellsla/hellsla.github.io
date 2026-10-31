@@ -11,6 +11,7 @@
     "FY1",
     "FY6"
   ],
+  "topic": "sahko",
   "source": "Esimerkkityöt.pdf s. 9 (Kondensaattorin kapasitanssin määrittäminen), opettajan aineisto",
   "learn": [
     "määrittämään aikavakion mittaustuloksiin sovitetusta mallista",
@@ -87,7 +88,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Jännitteen tallentaminen anturilla ja mallin sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Aikavakio ja sen epävarmuus saadaan mittaustuloksiin sovitetusta mallista."
     }
   ],
@@ -96,7 +97,7 @@
     "vastuksia, joilla on eri resistanssit",
     "pienjännitteinen tasajännitelähde",
     "jänniteanturi ja mittausohjelmisto tai jännitemittari ja ajanottoväline",
-    "kytkin",
+    "vaihtokytkin",
     "johtimia",
     "yleismittari resistanssin mittaamiseen"
   ],

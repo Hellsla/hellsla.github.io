@@ -267,7 +267,7 @@ Mallin mukaiset kuvaajat ovat tämän muotoisia. Kiihtyvyyskuvaajan kummun pinta
 </svg>
 :::
 
-Laskentaan voit käyttää taulukkolaskentaa tai muuta ohjelmaa, joka laskee sarakkeiden arvoja riveittäin. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Laskentaan voit käyttää taulukkolaskentaa tai muuta ohjelmaa, joka laskee sarakkeiden arvoja riveittäin. Ruukkilabran ohje: [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -320,10 +320,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Kuinka pitkän matkan hissi 
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** miten nopeus ja matka saadaan kuvaajien pinta-aloina ja mitä anturi näyttää levossa.
-- **Työn suunnitelma:** puhelimen asento ja akseli, miten määritit anturin nollakohdan ja miten selvitit todellisen matkan.
+- **Koejärjestely ja menetelmä:** puhelimen asento ja akseli, miten määritit anturin nollakohdan ja miten selvitit todellisen matkan.
 - **Mittaustulokset ja käsittely:** kiihtyvyys, nopeus ja matka allekkain samalla aika-akselilla ja liikkeen vaiheet merkittyinä, sekä laskennan periaate.
 - **Tulos:** $s = (s \pm \Delta s)\ \text{m}$ oikein pyöristettynä ja vertailu todelliseen matkaan.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, loppunopeuden merkitys ja virheiden vaikutuksen suunta.
@@ -334,7 +334,7 @@ Jos laskettu nopeus ei palaa lopussa nollaan, vaikka hissi on pysähtynyt, tiede
 
 Korjaa laskentasi tällä tavalla ja vertaa korjattua matkaa korjaamattomaan ja todelliseen matkaan. Muuttuiko tulos paljon? Missä tilanteessa oletus vakiovirheestä ei pätisi, esimerkiksi jos puhelin kallistui kesken matkan?
 
-Mittaa lisäksi eripituisia matkoja, esimerkiksi yhden, kahden ja kolmen kerroksen matkat, ja piirrä laskettu matka kerrosten lukumäärän funktiona. Mitä kuvaajan kulmakerroin kertoo? Vertaa sitä mittaamaasi kerroskorkeuteen epävarmuuksineen. Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi.
+Mittaa lisäksi eripituisia matkoja, esimerkiksi yhden, kahden ja kolmen kerroksen matkat, ja piirrä laskettu matka kerrosten lukumäärän funktiona. Mitä kuvaajan kulmakerroin kertoo, jos kaikki kerrokset ovat yhtä korkeita? Vertaa sitä mittaamaasi kerroskorkeuteen epävarmuuksineen, ja tarkista, onko jokin kerros, esimerkiksi ensimmäinen, muita korkeampi. Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi.
 
 ::: tuki OO
 **Vihjeitä.** Korjauksessa vähennetään jokaisesta kiihtyvyydestä $\delta a = \dfrac{v_\text{loppu}}{t_\text{loppu}}$, missä $v_\text{loppu}$ on korjaamaton loppunopeus ja $t_\text{loppu}$ laskennan kesto. Tee korjaus omiin sarakkeisiinsa, niin alkuperäinen laskenta säilyy vertailua varten. Jos alun ja lopun lepojaksojen keskimääräiset lukemat poikkeavat selvästi toisistaan, nollakohta on muuttunut kesken mittauksen, eikä vakiovirheen oletus pidä.

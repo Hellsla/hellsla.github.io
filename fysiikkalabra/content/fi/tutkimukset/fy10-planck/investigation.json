@@ -13,6 +13,7 @@
     "FY7",
     "FY8"
   ],
+  "topic": "aine",
   "source": "Esimerkkityöt.pdf s. 13 (Planckin vakio LEDeillä, otsikko puuttuu lähteestä), opettajan aineisto",
   "learn": [
     "määrittämään mittaussarjasta suureen, jota mikään mittari ei näytä suoraan, ja perustelemaan määritystavan",
@@ -110,7 +111,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Työssä piirretään useita kuvaajia, ja lopullinen tulos saadaan sovitetun suoran kulmakertoimesta."
     }
   ],

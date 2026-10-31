@@ -13,6 +13,7 @@
     "FY4",
     "FY6"
   ],
+  "topic": "lampo",
   "source": "Esimerkkityöt.pdf s. 12 (Vesivoimalaitoksen pienoismallin hyötysuhteen määrittäminen), opettajan aineisto",
   "learn": [
     "rajaamaan tutkittavan järjestelmän ja päättelemään, mitkä suureet on mitattava sille tulevan ja siitä saatavan tehon selvittämiseksi",
@@ -98,7 +99,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Tehojen ja hyötysuhteen laskeminen taulukkolaskennalla ja kuvaajan piirtäminen ohjelmalla (esimerkiksi taulukkolaskenta tai Graphical Analysis)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Mittauksia on monta ja jokaisesta lasketaan kaksi tehoa ja hyötysuhde."
     }
   ],

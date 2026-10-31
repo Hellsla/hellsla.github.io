@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 15–16 (Hissin kulkeman matkan määrittäminen kiihtyvyydestä), opettajan aineisto",
   "learn": [
     "määrittämään nopeuden ja kuljetun matkan kiihtyvyysdatasta kuvaajien pinta-aloina",
@@ -76,14 +77,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Laskenta tehdään koko matkan aikana tallennetusta datasta."
     },
     {
       "kind": "tvt",
       "level": "essential",
       "text": "Laskeminen ja kuvaajat taulukkolaskennassa (pinta-ala kapeiden suikaleiden summana)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta", "tvt-nopeus-datasta"],
       "why": "Nopeus ja matka lasketaan riveittäin satojen mittauspisteiden datasta."
     }
   ],

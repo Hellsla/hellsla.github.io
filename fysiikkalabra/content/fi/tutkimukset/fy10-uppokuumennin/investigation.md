@@ -131,7 +131,7 @@ Jos jännite tai sähkövirta muuttuu mittauksen aikana, energia lasketaan osiss
 Q = cm\Delta T
 ```
 
-missä $c$ on veden ominaislämpökapasiteetti (taulukkokirjasta) ja $m$ veden massa. Lämpötilan muutos on sama kelvineinä ja celsiusasteina. [[apua:fy3-6|Aineen lämpeneminen]]
+missä $c$ on veden ominaislämpökapasiteetti (taulukkokirjasta) ja $m$ veden massa. Yhtälö pätee, kun vesi ei muutu olomuodosta toiseen, joten vettä ei lämmitetä kiehuvaksi. Lämpötilan muutos on sama kelvineinä ja celsiusasteina. [[apua:fy3-6|Aineen lämpeneminen]]
 
 **Mittarien kytkeminen.** Virtamittari kytketään **sarjaan** kuumentimen kanssa, jotta sama sähkövirta kulkee molempien läpi. Jännitemittari kytketään **rinnan** kuumentimen kanssa, sen kahden johtimen väliin, jotta se mittaa juuri kuumentimen jännitteen.
 
@@ -294,7 +294,7 @@ Tarkista vastauksesi tästä.
 **Miksi kuvaaja eikä yksi piste?** Yhdestä mittauspisteestä laskettu $\eta = Q/E$ sisältää lämmityksen alun viiveen ja yksittäisen lukeman virheen, ja viimeisessä pisteessä myös lopun suuremmat häviöt. Kulmakerroin kertoo, kuinka paljon lämpöä vesi saa jokaista lisää tuotua joulea kohden, ja kuvaaja näyttää samalla, onko suhde vakio.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -325,7 +325,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Pysyikö hyötysuhde samana 
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** miten sähköenergia ja veden saama lämpö lasketaan ja miksi valitsemasi kuvaajan kulmakertoimesta saadaan hyötysuhde.
 - **Koejärjestely ja menetelmä:** kytkentäkaavio, jossa näkyy, miten mittarit on kytketty, sekä työturvallisuus.

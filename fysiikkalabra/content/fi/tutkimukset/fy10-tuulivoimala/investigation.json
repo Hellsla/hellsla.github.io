@@ -13,6 +13,7 @@
     "FY4",
     "FY6"
   ],
+  "topic": "lampo",
   "source": "Esimerkkityöt.pdf s. 7 (Tuulivoimalan tutkiminen), opettajan aineisto",
   "learn": [
     "valitsemaan tutkittavan tekijän ja päättämään, mitä muutat, mitä mittaat ja miten pidät muut tekijät vakioina",
@@ -92,14 +93,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Taulukon laskut ja mittauspisteiden kuvaaja ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Teho lasketaan jokaisesta mittauksesta, ja tekijän vaikutus nähdään kuvaajasta."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Jännitteen ja sähkövirran tallentaminen antureilla",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Heiluvista lukemista saa tallennuksen avulla luotettavamman keskiarvon kuin silmällä lukemalla."
     }
   ],

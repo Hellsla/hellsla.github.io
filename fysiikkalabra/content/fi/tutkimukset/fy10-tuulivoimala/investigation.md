@@ -292,7 +292,7 @@ Vastaa:
 2. Millä tekijän arvoilla voimala toimii parhaiten, ja kuinka tarkasti voit sanoa sen kuvaajasta?
 3. Ovatko pisteiden väliset erot suurempia kuin tehon epävarmuus?
 
-Laskuihin ja kuvaajaan voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Laskuihin ja kuvaajaan voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -316,10 +316,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten valitsemasi tekijä va
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja hypoteesi:** valitsemasi tekijä ja ennusteesi perusteluineen.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten varmistit sen, sekä kytkentäkaavio.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten varmistit sen, sekä kytkentäkaavio.
 - **Mittaustulokset:** alkuperäiset jännitteen ja sähkövirran lukemat omissa sarakkeissaan ja teho niiden oikealla puolella.
 - **Tulos:** kuvaaja, teho epävarmuuksineen oikein pyöristettynä ja voimalan paras käyttöalue.
 - **Luotettavuus:** energiahäviöt ja ne tekijät, jotka vaikuttivat mittaustulosten luotettavuuteen.

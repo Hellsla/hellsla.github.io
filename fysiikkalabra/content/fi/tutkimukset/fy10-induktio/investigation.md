@@ -336,7 +336,7 @@ Kun magneetti tulee käämiin, vuo kasvaa, ja kun se lähtee, vuo pienenee. Siks
 Induktiolaista seuraa, että pulssin pinta-ala on $S = N\Delta\Phi$, missä $\Delta\Phi$ on vuon kokonaismuutos koko pulssin aikana, keskimäärin yhtä kierrosta kohti. Pinta-ala kertoo siis, kuinka paljon vuo muuttuu, ja huippuarvo, kuinka nopeasti se muuttuu. Vertaa tätä omiin kuvaajiisi. Jos tuloksesi poikkeavat, mieti, mitkä mallin oletukset eivät mittauksessasi täyttyneet.
 :::
 
-Kuvaajan sovitukseen ja pulssin pinta-alan laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen ja pulssin pinta-alan laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -360,7 +360,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella: miten huippuarvo ja pinta-al
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mikä tekijä valittiin ja miksi, induktiolaki ja mitä huippuarvo ja pinta-ala kertovat vuon muutoksesta.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, mitä muutit, mitä mittasit ja mitä pidit vakiona, sekä näytteenottotaajuus.

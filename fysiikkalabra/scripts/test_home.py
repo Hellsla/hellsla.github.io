@@ -6,12 +6,17 @@ For every language, from the pages that are actually in site/ (so nothing here h
     and each row says how many lessons are available in words that match the files (one/other forms, no bars)
   - every catalogue row has exactly one link, to its module page, whose lesson links all resolve: a published
     lesson is two clicks from the front page
-  - the sample lesson is published in that language and the opening's "try a lesson" link goes to it
+  - the page is a learning environment's front page, not a product page (teacher 2026-10-31): no sample lesson, no
+    call-to-action buttons in the opening, the module catalogue right after the opening, and one study guide last
   - the six stages are shown with the names the lessons use, the <title> does not repeat the site's name
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
-  - Lukiokohtaiset opintojaksot (teacher 2026-10-30, local-courses.json): their own section after the national
-    modules (and Tulossa) and before the sample lesson, one row and one link per course this language has, no
+  - the course page's investigation bank (teacher 2026-10-31): every investigation with its topic, F/E levels and
+    modes, the filter form hidden without scripts, and in a browser a search that hides all and "Näytä kaikki" that
+    brings all back; the TVT-ohjeet it lists are published pages
+  - Lukiokohtaiset opintojaksot (teacher 2026-10-30, local-courses.json): their own section right after the national
+    modules and before Tulossa (2026-10-31), saying how many investigations this language publishes for the course
+    (counted from the pages) apart from the course plan's status, one row and one link per course this language has, no
     local course among the national rows; its page names itself school-specific and says what is still planned,
     and links only chapters published in that language; a language without the course has the note
     #unavailable-<CODE> on its front page
@@ -63,21 +68,29 @@ for lang in i18n.languages():
         expect(f"{lang}: front page has no {bad!r}", not re.search(r"(?<![\d])" + re.escape(bad), home))   # "11 lessons" is fine
     title = re.search(r"<title>(.*?)</title>", home).group(1)
     expect(f"{lang}: the front page title names the site once", _h.unescape(title).count(T("site.name")) == 1, title)
-    feat = re.search(r'class="featured-link" href="([^"]+)"', home); sample = re.search(r'class="quiet-link" href="([^"]+)"', home)
-    expect(f"{lang}: the sample lesson is published and the opening links to it",
-           bool(feat and sample and feat.group(1) == sample.group(1) and (out / feat.group(1)).is_file()), (feat and feat.group(1), sample and sample.group(1)))
+    expect(f"{lang}: no sample lesson and no call to action on the front page",
+           not re.search(r'class="(featured[^"]*|actions|button|quiet-link)"', home), re.findall(r'class="(featured[^"]*|actions|button|quiet-link)"', home)[:3])
+    intro_end = home.find("</section>", home.find('class="home-intro"'))
+    expect(f"{lang}: the opening has no links and the catalogue follows it",
+           "<a " not in home[home.find('class="home-intro"'):intro_end] and home.find('class="catalogue"') > intro_end)
+    order = [home.find(f'class="{c}"') for c in ("catalogue", "local-courses", "upcoming", "path")]
+    present = [i for i in order if i >= 0]
+    expect(f"{lang}: modules, school-specific courses, Tulossa, study guide in that order", present == sorted(present) and order[0] >= 0 and order[3] >= 0, order)
     stages = re.findall(r"<li><strong>(.*?)</strong>", re.search(r'<ol class="path-steps">(.*?)</ol>', home, re.S).group(1))
     expect(f"{lang}: the six stages with the lessons' names", stages == [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]], stages)
     local = local_courses.load(lang); everywhere = local_courses.load()
     sec = re.search(r'<section class="local-courses".*?</section>', home, re.S)
     if local:
-        expect(f"{lang}: Lukiokohtaiset opintojaksot after the national modules, before the sample lesson",
-               bool(sec) and max(home.find('class="catalogue"'), home.find('class="upcoming"')) < sec.start() < (home.find('class="featured"') % (len(home) + 1)),
+        expect(f"{lang}: Lukiokohtaiset opintojaksot right after the national modules, before Tulossa",
+               bool(sec) and home.find('class="catalogue"') < sec.start() < (home.find('class="upcoming"') % (len(home) + 1)),
                sec and sec.start())
         lrows = re.findall(r'<li class="mod-row local-row">(.*?)</li>', sec.group(0), re.S) if sec else []
         expect(f"{lang}: one row per local course, in registry order", [re.search(r'mod-code">(\w+)<', r).group(1) for r in lrows] == list(local), lrows)
         for code, r in zip(local, lrows):
             expect(f"{lang} {code}: one link per row, to its page", re.findall(r'<a [^>]*href="([^"]*)"', r) == [f"{code}.html"])
+            n_inv = sum(1 for i in investigations.ids(lang) if (out / f"{i}.html").is_file() and code in investigations.load(i, lang)["courses"])
+            want = T.count("site.local_investigations", n_inv) if n_inv else T("site.local_status_" + local[code]["status"])
+            expect(f"{lang} {code}: the row says what is published ('{want}'), the plan's status apart", f'<span class="mod-avail">{want}</span>' in r, r[:400])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
                    bool(pg) and 'class="notice local-kind"' in pg and 'class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)
@@ -89,6 +102,12 @@ for lang in i18n.languages():
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
+            if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
+                items = re.findall(r'<li class="live bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
+                expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
+                expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+            ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
+            expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
     for code in everywhere:
         if code not in local: expect(f"{lang}: front page note for {code}, which this language lacks", f'id="unavailable-{code}"' in home)
@@ -105,7 +124,7 @@ JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   const h = document.querySelector('header.top'), kids = [...h.children].map(R);
   if (Math.max(...kids.map((r) => r.top)) - Math.min(...kids.map((r) => r.top)) > 20) out.push('header wraps');
   for (const e of document.querySelectorAll('.mod-title, .up-title')) if (e.scrollWidth > e.clientWidth + 1) out.push('cut: ' + e.textContent);
-  for (const e of document.querySelectorAll('header.top a, header.top summary, a.button, a.quiet-link, .up-list a, details.more-tips > summary'))
+  for (const e of document.querySelectorAll('header.top a, header.top summary, .up-list a, details.more-tips > summary'))
     if (e.checkVisibility() && R(e).height < 43.5) out.push(`target ${Math.round(R(e).height)} px: ${e.textContent.trim().slice(0, 30)}`);
   for (const e of document.querySelectorAll('.mod-row')) if (R(e).height < 44) out.push('row under 44 px');
   return out; }"""
@@ -124,6 +143,14 @@ with sync_playwright() as pw:
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
                 expect(f"{lang}/{name} at {w} px: no sideways scroll, header on one row, titles whole, targets 44 px", not found, found)
+                if name.startswith("FY10") and pg.query_selector("#bank-filter"):      # the bank filters in place, by keyboard too
+                    total = pg.evaluate("document.querySelectorAll('.bank-item').length")
+                    pg.focus("#bank-q"); pg.keyboard.type("zzzz-ei-ole")
+                    hidden = pg.evaluate("[...document.querySelectorAll('.bank-item')].every(li => li.hidden) && !document.getElementById('bank-none').hidden")
+                    pg.keyboard.press("Tab"); pg.keyboard.press("ArrowDown")      # topic select by keyboard: the first topic
+                    pg.click(".bank-reset"); pg.wait_for_timeout(30)
+                    back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
                 if name == "index.html" and w == 390:
                     top = pg.evaluate("document.querySelector('.mod-row').getBoundingClientRect().top")
                     expect(f"{lang}: at 390 x 844 the first module row starts in the first screen ({round(top)} px)", top < 844 - 60)

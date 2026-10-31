@@ -11,6 +11,7 @@
     "FY1",
     "FY7"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 15 (taitekertoimen määrittäminen; kortissa ei ole otsikkoa), opettajan aineisto",
   "learn": [
     "valitsemaan kuvaajan akselit mallin perusteella niin, että riippuvuudesta tulee suora, ja perustelemaan valinnan",
@@ -73,7 +74,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Laskettujen suureiden sarakkeet, kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
   ],

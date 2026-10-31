@@ -13,6 +13,7 @@
     "FY3",
     "FY6"
   ],
+  "topic": "lampo",
   "source": "Esimerkkityöt.pdf s. 1 (Uppokuumentimen hyötysuhteen määrittäminen), opettajan aineisto",
   "learn": [
     "laskemaan sähköisistä mittauksista ja lämpötilamittauksista energiat, joita voi verrata keskenään",
@@ -30,7 +31,7 @@
       "id": "laajennus",
       "title": "Eristyksen vaikutus ja tulosten vertailu",
       "physics": "F2",
-      "experiment": "E3"
+      "experiment": "E2"
     }
   ],
   "modes": [
@@ -99,7 +100,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Lämpötila-anturin mittausten tallentaminen ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, ja anturi kirjaa lämpötilan tasaisin väliajoin."
     }
   ],
