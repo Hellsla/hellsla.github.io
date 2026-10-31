@@ -60,14 +60,14 @@ check("objective-form: rephrased goals", reviews.objective_form(old, new) is not
 check("objective-form: a changed formula is not a rephrasing", reviews.objective_form(old, new.replace("E : t", "W : t")) is None)
 check("objective-form: a changed number is not a rephrasing", reviews.objective_form(old, new.replace("2 asiaa", "3 asiaa")) is None)
 check("objective-form: a goal added is not a rephrasing", reviews.objective_form(old, json.dumps({"learn": json.loads(new)["learn"] + ["kuvaamaan …"], "x": 1})) is None)
-check("objective-form rule: science none, pedagogy delta", reviews.RULES["objective-form"] == ("none", "delta"))
+check("objective-form rule: science none, pedagogy delta, visual delta", reviews.RULES["objective-form"] == ("none", "delta", "delta"))
 
 # a chapter reference that follows the chapter's new title is the category chapter-ref; any other change is not
 title = sorted(reviews.chapter_titles())[0]
 check("chapter-ref: a reference renamed to a current title", reviews._chapter_refs_renamed("x (luku *Vanha nimi*).", f"x (luku *{title}*)."))
 check("chapter-ref: a title that is no chapter is not", not reviews._chapter_refs_renamed("x (luku *Vanha*).", "x (luku *Keksitty nimi*)."))
 check("chapter-ref: other words changed too is not", not reviews._chapter_refs_renamed("x (luku *Vanha*).", f"y (luku *{title}*)."))
-check("chapter-ref rule: no review", reviews.RULES["chapter-ref"] == ("none", "none"))
+check("chapter-ref rule: no review", reviews.RULES["chapter-ref"] == ("none", "none", "none"))
 
 # every lesson now passes
 import subprocess

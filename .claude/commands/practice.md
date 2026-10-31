@@ -8,10 +8,10 @@ Work on the Sovella itsenäisesti tasks of $ARGUMENTS. Work in `fysiikkalabra/` 
 
 **When.** Once per course, after its lessons, as part of producing the course: as many tasks as the module's goals and extent call for (teacher 2026-10-29: evaluate first; FY1 has 2, FY2 1, FY3 3; never three by default), each 12–20 points, plus at most one `own` rubric for the course's own investigation. Fewer, better tasks; never relabel chapter exercises. **Token economy**: no lesson texts in any packet; shared criteria by key; translate only new or changed text.
 
-**Routing** as in `/lesson`: developer Sonnet medium (Opus medium for a demanding physics model or after two failed checks), science reviewer Opus medium, pedagogy reviewer Sonnet medium. Prompt: `Read <packet path> and follow it. Course: <COURSE>. Task: <the teacher's words>. Round: <n>.`
+**Routing** as in `/lesson`: developer Sonnet medium (Opus medium for a demanding physics model or after two failed checks), science reviewer Opus medium, pedagogy reviewer Sonnet medium, visual-editorial-reviewer Sonnet medium. Prompt: `Read <packet path> and follow it. Course: <COURSE>. Task: <the teacher's words>. Round: <n>.`
 
 1. `python scripts/practice.py packet <COURSE> --role developer`, then the developer.
 2. `python scripts/practice.py figures <COURSE>`, `python scripts/practice.py check <COURSE>`, `python scripts/build.py <COURSE>-sovella`, `python scripts/check_layout.py <COURSE>-sovella --width 360` (and 768, 1280). On FAIL the developer fixes, at most twice.
-3. `python scripts/practice.py packet <COURSE> --role science` and `--role pedagogy`, the two reviewers in parallel; then `python scripts/practice.py status`.
+3. `python scripts/screenshot.py <COURSE>-sovella --if-stale`, then `python scripts/practice.py packet <COURSE> --role science`, `--role pedagogy` and `--role visual`, the three reviewers in parallel; then `python scripts/practice.py status`.
 4. FAIL: the developer fixes the Blocking items, then from step 2; at most three rounds.
 5. Finish: `python scripts/coverage.py <COURSE>`, `python scripts/build.py --all`, `python scripts/build.py`, commit content, reviews, `docs/coverage/` and `site/`, push and open or update a draft PR: **Tehtävät** (each task, its competencies and points), **Tarkistukset**, **Kattavuus** (the gaps of docs/coverage/<COURSE>.md), **Kulutus**, **Avoimet kohdat**. Merging is the teacher's decision.

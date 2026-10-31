@@ -35,7 +35,8 @@ c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
 (T / "docs/lops2019").mkdir(parents=True)
 for f in (SRC / "docs/lops2019").glob("*.txt"): shutil.copy(f, T / "docs/lops2019")
-shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))   # its carries name commits of the real history
+shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))
+(T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # fy3-2 is published under the visual baseline (2026-10-31)   # its carries name commits of the real history
 shutil.copytree(SRC / "lessons/FY3/fy3-2", T / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
 (T / "tests/sims").mkdir(parents=True); shutil.copy(SRC / "tests/sims/fy3-2.json", T / "tests/sims")
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T), "CLAUDE_CONFIG_DIR": str(T / ".claude-config")}
@@ -142,7 +143,7 @@ expect("screenshots of fy4-1 in its review folder", code == 0 and (L / "review/s
 
 # 7. the site, with stand-in PASS reports (the fixture is never reviewed for real)
 h = run("reviews.py", "hash", "fy4-1")[1].strip()
-for n in ("science", "pedagogy"): (L / f"review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h}\n\n## Blocking\n")
+for n in ("science", "pedagogy", "visual"): (L / f"review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h}\n\n## Blocking\n")
 for n in ("science", "pedagogy"): (src / f"review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {fy3_hash}\n\n## Blocking\n")
 fy3_ex_hash = run("reviews.py", "hash", "fy3-2", "--exercises")[1].strip()   # its real PASS carries over a split the copy has no history for
 for n in ("science", "pedagogy"): (src / f"exercises/review/{n}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {fy3_ex_hash}\n\n## Blocking\n")

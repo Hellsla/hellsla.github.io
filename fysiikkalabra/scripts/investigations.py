@@ -65,13 +65,10 @@ def content_hash(iid, lang=i18n.SOURCE):
 
 
 def status(iid, lang=i18n.SOURCE):
-    """{'state': reviewed|draft, 'hash', 'reports': {science|pedagogy: PASS|FAIL|stale|missing}}"""
-    from reviews import report, REVIEWS
-    h = content_hash(iid, lang); reports = {}
-    for name in REVIEWS:
-        r = report(folder(iid, lang), name)
-        reports[name] = "missing" if r is None else r[0] if r[1] == h else "stale"
-    return {"state": "reviewed" if all(v == "PASS" for v in reports.values()) else "draft", "hash": h, "reports": reports}
+    """{'state': reviewed|draft, 'hash', 'reports': {science|pedagogy|visual: PASS|FAIL|stale|missing}, 'baseline'}: the gate
+    of reviews.item_status (three reviews; a visual baseline row for exactly this hash stands in for the visual one)"""
+    from reviews import item_status
+    return item_status("investigation", iid, lang, folder(iid, lang), content_hash(iid, lang))
 
 
 def check(iid, lang=i18n.SOURCE):

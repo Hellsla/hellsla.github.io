@@ -4,7 +4,7 @@
   python scripts/practice.py hash <COURSE> [--lang en]  the content hash a reviewer puts in its report
   python scripts/practice.py status                    reviewed | draft of every course's tasks, per language
   python scripts/practice.py figures <COURSE> [--check] lessons/<COURSE>/sovella/figures.py into solutions.md
-  python scripts/practice.py packet <COURSE> --role developer|science|pedagogy [--lang en]
+  python scripts/practice.py packet <COURSE> --role developer|science|pedagogy|visual [--lang en]
                                                        the agent's packet, content/<lang>/<COURSE>/sovella/review/packet-<role>.md
 
 A course's module-end tasks are a part of their own, like a lesson's exercise set:
@@ -91,13 +91,10 @@ def content_hash(code, lang=i18n.SOURCE):
 
 
 def status(code, lang=i18n.SOURCE):
-    """{'state': reviewed|draft, 'hash', 'reports': {science|pedagogy: PASS|FAIL|stale|missing}}"""
-    from reviews import report, REVIEWS
-    h = content_hash(code, lang); reports = {}
-    for name in REVIEWS:
-        r = report(folder(code, lang), name)
-        reports[name] = "missing" if r is None else r[0] if r[1] == h else "stale"
-    return {"state": "reviewed" if all(v == "PASS" for v in reports.values()) else "draft", "hash": h, "reports": reports}
+    """{'state': reviewed|draft, 'hash', 'reports': {science|pedagogy|visual: PASS|FAIL|stale|missing}, 'baseline'}: the gate
+    of reviews.item_status (three reviews; a visual baseline row for exactly this hash stands in for the visual one)"""
+    from reviews import item_status
+    return item_status("sovella", code, lang, folder(code, lang), content_hash(code, lang))
 
 
 # ------------------------------------------------------------------------------------------------ solutions.md
@@ -414,5 +411,7 @@ if __name__ == "__main__":
         print("figures up to date" if ok else ("solutions.md figures differ from figures.py" if "--check" in a else "wrote the figures into solutions.md"))
         sys.exit(0 if ok or "--check" not in a else 1)
     elif cmd == "packet":
-        print(packet(rest[0], a[a.index("--role") + 1], lang).relative_to(ROOT))
+        if a[a.index("--role") + 1] == "visual":            # the visual & editorial reviewer's packet (scripts/review_packet.py item_packet)
+            import review_packet; review_packet.item_packet(f"{rest[0]}-sovella", lang)
+        else: print(packet(rest[0], a[a.index("--role") + 1], lang).relative_to(ROOT))
     else: sys.exit(__doc__)

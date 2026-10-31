@@ -22,6 +22,7 @@ REAL = snapshot()
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
+(T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # what is published under the visual baseline (2026-10-31)
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
     if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T)}
@@ -83,7 +84,7 @@ h_en = reviews.content_hash(courses.find_lesson(LESSON, "en"))
 expect("the translation has a hash of its own", h_en and h_en != fi_hash, h_en)
 code, out = run("build.py")
 expect("an unreviewed translation is not published", code == 0 and not (T / "site/en" / f"{LESSON}.html").exists() and (T / "site/en/index.html").is_file(), out[-400:])
-for role in ("science", "pedagogy"):
+for role in ("science", "pedagogy", "visual"):           # a new translation needs all three reviews
     (en_dir / "review").mkdir(exist_ok=True); (en_dir / "review" / f"{role}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h_en}\n\n## Blocking\nnone\n")
 code, out = run("build.py")
 page = (T / "site/en" / f"{LESSON}.html").read_text() if (T / "site/en" / f"{LESSON}.html").exists() else ""

@@ -11,7 +11,8 @@ can break when the student opens things (teacher 2026-10-27, "avautuvat kortit")
 
 In each state it reports:
   overflow   a formula KaTeX cannot parse, or an element wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a
-             long \dfrac), inline SVG figures, the page itself (tables scroll by design: a warning only)
+             long \dfrac), inline SVG figures, the page itself (tables scroll by design: a warning only), a calculation row whose left
+             side runs into its right side or wraps although the chain has room (2026-10-31)
   svg-text   a figure label that overlaps another label or leaves the figure (NOTES 3)
   column     a column whose content spills into its neighbour
   text       text wider than a reading column (44rem, about 80 characters)
@@ -52,6 +53,19 @@ JS = """() => {
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
     const over = Math.round(k.getBoundingClientRect().right - Math.min(box.getBoundingClientRect().right, vw));
     if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
+  }
+  for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
+    if (!V(c)) continue;                                          // nor wrap while the chain has room (teacher 2026-10-31, the visual reviewer's fy1-4 and fy3-7 findings)
+    const room = c.parentElement.getBoundingClientRect().width - c.getBoundingClientRect().width;
+    for (const l of c.querySelectorAll('.eq-l')) {
+      const k = l.querySelector('.katex'); if (!k) continue;
+      const ann = k.querySelector('annotation'), txt = ann ? ann.textContent.slice(0, 70) : '';
+      const kr = k.getBoundingClientRect(), lr = l.getBoundingClientRect();
+      if (kr.right > lr.right + 2) out.push({what: 'formula', over: Math.round(kr.right - lr.right), text: 'calculation row: left side runs into the right side: ' + txt});
+      const bs = [...k.querySelectorAll('.base')].map((b) => b.getBoundingClientRect());   // KaTeX splits a formula into bases at its operators; a tall base (a fraction) starts higher on the same line,
+      const wrapped = bs.some((b) => b.top > bs[0].bottom - 2);                           // so a row has wrapped only when a base starts below the first one's bottom
+      if (wrapped && room > 40) out.push({what: 'formula', over: Math.round(room), text: 'calculation row: left side wraps though the chain has room: ' + txt});
+    }
   }
   for (const t of document.querySelectorAll('table')) {
     if (t.closest('#sim-root') || !t.checkVisibility()) continue;

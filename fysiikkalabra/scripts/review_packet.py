@@ -1,7 +1,9 @@
 """Role-specific packet, so an agent starts from what its role needs and nothing else.
 
-  python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix] [--exercises] [--lang en]
-  python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy [--lang en]
+  python scripts/review_packet.py <id> --role science|pedagogy|visual|developer [--fix] [--exercises] [--lang en]
+  python scripts/review_packet.py <investigation | tvt-guide | COURSE-sovella> --role visual [--lang en]
+  python scripts/review_packet.py <id> --role science|pedagogy --audit     a full packet for /quality-audit --deep (report review/audit-<role>.md)
+  python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy|visual [--lang en]
 
 Writes review/packet-<role>.md (with --exercises exercises/review/packet-<role>.md) and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
 is one line naming the file ("Read content/FY4/fy4-1/review/packet-science.md and follow it. Lesson: fy4-1. Mode: full.").
@@ -26,7 +28,15 @@ An *exercise* packet (`--exercises`, teacher 2026-10-28, README "Exercises") is 
 reviews, hash and scope are its own (`reviews.py ... --exercises`). In place of the lesson's files it carries the
 **exercise brief**: what of the lesson an exercise writer or reviewer needs (the formula sections, the worked example
 not to repeat, the misconception, the summary; figure bodies left out) and the current exercises, so no agent reads
-the lesson text, the inquiry or the simulation to work on exercises."""
+the lesson text, the inquiry or the simulation to work on exercises.
+
+A *visual* packet (teacher 2026-10-31, `.claude/agents/visual-editorial-reviewer.md`) holds what the visual &
+editorial reviewer judges and nothing else: the standard's dimensions 7–10 and severities, NOTES.md §1 and the figure
+and readability items of §3 and §8, the glossary terms, the check results, the source text with every figure body
+collapsed to a marker, a figure inventory (file and lines, kind, section, description, LaTeX labels), the whole
+screenshot list with whether it is current for this hash (`screenshot.py --if-stale` reuses unchanged captures), and
+in a delta review the previous visual report, the changed files and the diff. Never simulation code, answers.py or
+another chapter. Investigations, TVT guides and Sovella sets get the same packet of their own files."""
 import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n
@@ -273,7 +283,7 @@ def exercise_packet(folder, role, fix=False):
                 f"- never the lesson's files (lesson.md, inquiry.json, exit-ticket.json, meta.json, lesson-answers.py, figures, the simulation): a finding about those goes in your report as \"not fixable here\"\n")
         if fix:
             out += "\n## Findings to resolve (every Blocking item; Polish items only when the orchestrator lists them)\n"
-            for n in ("science", "pedagogy"):
+            for n in ("science", "pedagogy", "visual"):
                 f = review_dir(folder, "exercises") / f"{n}.md"
                 if f.exists(): out += f"### {n}\n```\n{f.read_text().strip()}\n```\n"
             out += "\n## The exercise set's files (open the ones a finding names; Edit needs a Read first)\n" + "\n".join(
@@ -298,10 +308,12 @@ def lang_commands(folder, out):
     return re.sub(rf"(reviews\.py (?:hash|scope|carry) {re.escape(folder.name)}(?: --exercises)?)(?! --lang)", rf"\1 --lang {lang}", out)
 
 
-def packet(folder, role, fix=False):
+def packet(folder, role, fix=False, audit=False):
     lid = folder.name
     if role in ("science", "pedagogy"):
         sc = scope(folder)[role]; mode = sc["mode"]
+        if audit:                                      # /quality-audit --deep: a fresh full assessment that never replaces the gate's report
+            sc = dict(sc, mode="full", why="quality audit (docs/EDITORIAL_QUALITY_STANDARD.md): a fresh full assessment; your PASS report stays as it is"); mode = "full"
         out, meta = header(folder, role, mode)
         if mode == "none":
             out += (f"\n## No review needed\nSince the version you passed only this changed: {sc['why']} (categories: {', '.join(sc['categories'])}). "
@@ -322,7 +334,13 @@ def packet(folder, role, fix=False):
                 for n in names: out += block(courses.lesson_file(folder, n), courses.lesson_rel(folder, n) if n in EXERCISES[:2] else None, collapse_svg=(role == "pedagogy" and n == "lesson.md"))
                 if role == "science":
                     for label, p in sim_code(folder, meta): out += block(p, label)
-            out += shots(folder, role) + reviewer_rules(role, lid, mode == "full" and both)
+            rules = reviewer_rules(role, lid, mode == "full" and both and not audit)
+            if audit:
+                dims = "1 and the physics of 6" if role == "science" else "2, 3, 4, 5 and 6"
+                rules = rules.replace(f"write `review/{role}.md`", f"write `review/audit-{role}.md` (an audit report: it never replaces review/{role}.md)") + (
+                    f"\nEnd the audit report with `## Scores`: dimensions {dims} of docs/EDITORIAL_QUALITY_STANDARD.md, 1–5 each with a one-line reason, "
+                    f"and classify every finding Critical, Major or Minor (the standard's severities) as well as A/B where your rules ask for it.\n")
+            out += shots(folder, role) + rules
     else:
         mode = "fix" if fix else "draft"
         out, meta = header(folder, role, mode)
@@ -343,7 +361,7 @@ def packet(folder, role, fix=False):
                 f"- tests: `tests/sims/{lid}.json`; pictures: `{c['paths']['pics'].relative_to(ROOT)}/<file>`, referred to as `pics/{c['slug']}/<file>`; new glossary terms: `glossary.json`\n")
         if fix:
             out += "\n## Findings to resolve (every Blocking item; Polish items only when the orchestrator lists them)\n"
-            for n in ("science", "pedagogy"):
+            for n in ("science", "pedagogy", "visual"):
                 f = folder / "review" / f"{n}.md"
                 if f.exists(): out += f"### {n}\n```\n{f.read_text().strip()}\n```\n"
         else:
@@ -367,6 +385,154 @@ def packet(folder, role, fix=False):
     return mode
 
 
+# ------------------------------------------------------------------ the visual & editorial reviewer (teacher 2026-10-31)
+STANDARD = "docs/EDITORIAL_QUALITY_STANDARD.md"
+
+
+def visual_rules():
+    """What the visual reviewer applies, from the files that hold it: the standard's severity and dimensions 7–10,
+    NOTES.md §1 (maths), the figure items of §3 and the writer's items of §8. CLAUDE.md is in the agent's context."""
+    std = (ROOT / STANDARD).read_text() if (ROOT / STANDARD).exists() else ""
+    sev = re.search(r"^\*\*Severity\*\*.*?(?=^## )", std, re.S | re.M)
+    dims = [m.group(0).strip() for m in re.finditer(r"^## (?:7|8|9|10)\. .*?(?=^## |\Z)", std, re.S | re.M)]
+    return (f"\n## Your standard ({STANDARD}: severity and dimensions 7–10)\n" + (sev.group(0).strip() if sev else "") + "\n\n" + "\n\n".join(dims) + "\n"
+            + "\n## House rules you apply (NOTES.md)\n" + sections("NOTES.md", "1. Maths in LaTeX") + "\n\n"
+            + items("NOTES.md", "3. Lesson form (human decisions 2026-10-25)", "Figures.", "Textbook illustrations", "Opening illustration", "Every label", "Graphs", "Print quality") + "\n"
+            + items("NOTES.md", "8. Readability and layout (teacher's brief 2026-10-27, \"luettavuus ja taitto\")", "No text walls", "A figure goes right", "Calculations", "Task texts") + "\n")
+
+
+SVG_OPEN = re.compile(r"<svg\b([^>]*)>")
+
+
+def figure_inventory(paths):
+    """One line per inline figure of the given text files: where it is (file and lines), its kind, the section it sits
+    in, its description and its LaTeX labels; never the SVG body (the captures show the drawing)."""
+    out = []
+    for p in paths:
+        if not p.is_file(): continue
+        text = p.read_text(); head = ""
+        for m in SVG.finditer(text):
+            before = text[:m.start()]
+            hs = re.findall(r"^#{2,3} (.+)$", before, re.M); head = hs[-1].strip() if hs else "(opening)"
+            attrs = SVG_OPEN.match(m.group(0)).group(1)
+            fig = re.search(r'data-fig="([^"]*)"', attrs); lab = re.search(r'aria-label="([^"]*)"', attrs)
+            labels = [re.sub(r"\s+", " ", x).strip() for x in re.findall(r'class="fig-tex"[^>]*>(.*?)</div>', m.group(0), re.S)]
+            a, b = before.count("\n") + 1, before.count("\n") + 1 + m.group(0).count("\n")
+            out.append(f"- `{p.relative_to(ROOT)}:{a}–{b}` {('[' + fig.group(1) + '] ') if fig else ''}in “{head}”: {(lab.group(1) if lab else 'NO aria-label')[:220]}"
+                       + (f" — labels: {' · '.join(labels)[:300]}" if labels else " — no labels"))
+    return ("\n## Figure inventory (inline figures; the captures `fig-N-390` show them in page order)\n" + "\n".join(out) + "\n") if out else "\n## Figure inventory\n(no inline figures)\n"
+
+
+def collapsed(path, label=None):
+    """A text file with each figure body replaced by a marker naming its lines (the inventory has its labels)."""
+    if not path.is_file(): return ""
+    text = path.read_text()
+    def mark(m):
+        a = text[:m.start()].count("\n") + 1
+        return f"{SVG_OPEN.match(m.group(0)).group(0)[:160]}… <!-- figure body omitted (lines {a}–{a + m.group(0).count(chr(10))}): see the inventory and the captures --></svg>"
+    text = SVG.sub(mark, text)
+    lang = {".json": "json"}.get(path.suffix, "markdown")
+    return f"\n### {label or path.relative_to(ROOT)}\n```{lang}\n{text.rstrip()}\n```\n"
+
+
+def shots_visual(review, current, cmd):
+    """The whole screenshot list (the visual reviewer looks at everything relevant) and whether it shows this version."""
+    f = review / "shots.md"
+    rows = [l for l in f.read_text().splitlines() if l.startswith("| review/")] if f.exists() else []
+    stamp = (review / "shots" / "stamp.txt").read_text().strip() if (review / "shots" / "stamp.txt").exists() else ""
+    state = "current: they show the content hash above" if rows and stamp.startswith(current) else f"STALE or MISSING: run `{cmd}` first and use the list it writes to review/shots.md"
+    return ("\n## Screenshots (" + state + "; paths relative to the folder that holds review/; contact sheets first, then the captures your judgement needs at full size)\n"
+            "| file | shows | px | ≈ tokens |\n|---|---|---|---|\n" + "\n".join(rows) + "\n")
+
+
+def visual_report_rules(path, hash_cmd, both=None):
+    return (f"\n## Report: write `{path}` (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words\n"
+            f"Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of {hash_cmd}>` run at the start and again at the end. "
+            f"Then `## Blocking` (FAIL if and only if non-empty; `[Critical|Major] file/figure — problem — why it matters — fix`), `## Polish` (at most five `[Minor]`), "
+            f"`## Checked` (the captures you opened; at most ten lines), `## Scores` (illustrations · typography · Finnish · accessibility, 1–5). "
+            f"A PASS needs the captures: if you could not look, FAIL with `visual verification incomplete`. Never edit any file but your report.\n"
+            + (f"\n## Second report: the exercise set\nThe exercises are reviewed apart from the lesson and need a visual review too: judge them in this run "
+               f"(their captures are the `open-exercises-*` and exercise figures) and write `{both[0]}` in the same format with line 2 `CONTENT-HASH: <{both[1]}>`, "
+               f"findings about the exercise set only.\n" if both else ""))
+
+
+def visual_packet(folder, part="lesson"):
+    """The visual & editorial reviewer's packet of a lesson or of its exercise set: the standard, the source text with
+    figure bodies collapsed, the figure inventory, the screenshot list and, in a delta review, the previous report and
+    the diff. No simulation code, no answers.py, no other chapter."""
+    lid = folder.name; sc = scope(folder, part)["visual"]; mode = sc["mode"]
+    lang_arg = "" if courses.lang_of(folder) == courses.SOURCE_LANG else f" --lang {courses.lang_of(folder)}"
+    ex_arg = " --exercises" if part == "exercises" else ""
+    meta = json.loads((folder / "meta.json").read_text())
+    gl = {e["term"]: e for e in json.loads((ROOT / "glossary.json").read_text())}
+    checks = (folder / "review/checks.txt").read_text().strip() if (folder / "review/checks.txt").exists() else "(check_lesson.py has not been run)"
+    h_now = content_hash(folder, part)
+    stamp_key = f"{content_hash(folder)} exercises {content_hash(folder, 'exercises')}"
+    out = (f"# Packet: {lid} — {meta['title']} ({courses.course_of(lid)}, {courses.lang_of(folder)})\n"
+           + (f"Part: **exercises** (`{courses.exercise_dir(folder).relative_to(ROOT)}/`, reviewed apart from the lesson).\n" if part == "exercises" else "")
+           + f"Role: **visual** (visual & editorial reviewer, `.claude/agents/visual-editorial-reviewer.md`). Mode: **{mode}**. Content hash now: `{h_now}`.\n"
+           f"House rules: `CLAUDE.md` (in your context; if it is not, read it). Why this mode: {sc['why']}.\n"
+           f"\n## Glossary terms of this chapter (use them, consistently)\n" + "\n".join(f"- **{t}**: {gl[t]['definition']}" for t in meta.get("glossary", []) if t in gl) + "\n"
+           f"\n## Deterministic checks (already run, layout and accessibility included: do not repeat them)\n```\n{checks}\n```\n")
+    if mode == "none":
+        out += (f"\n## No review needed\nSince the version you passed only this changed: {sc['why']} (categories: {', '.join(sc['categories'])}). "
+                f"`python scripts/reviews.py carry {lid}{ex_arg}{lang_arg}` records it.\n")
+    else:
+        out += visual_rules()
+        both = None
+        if mode == "delta":
+            prev = (review_dir(folder, part) / "visual.md").read_text()
+            files = sorted({l[6:] for l in sc["diff"].splitlines() if l.startswith("+++ b/")} | {l[4:].split(":")[0] for l in sc["diff"].splitlines() if l.startswith("--- ") and ":" in l})
+            out += (f"\n## Delta review\nYou passed this {'exercise set' if part == 'exercises' else 'lesson'} earlier (report below). Since then only the diff below changed "
+                    f"({sc['why']}; categories: {', '.join(sc['categories'])}). Judge the changed text, figures and formulas in their captures, plus enough of the "
+                    f"surrounding page to see the layout survived. If that cannot be done reliably, write `ESCALATE: full review needed` as line 3 (verdict FAIL) and stop.\n"
+                    f"\nChanged files: {', '.join(f'`{x}`' for x in files) or '(see the diff)'}\n\n### Your previous report\n```\n{prev.strip()}\n```\n"
+                    f"### Changes since the version you passed (figure bodies included; open the captures to judge them)\n```diff\n{sc['diff'].strip()}\n```\n")
+        else:
+            both = part == "lesson" and scope(folder, "exercises")["visual"]["mode"] == "full"
+            names = ["lesson.md", "inquiry.json", "exit-ticket.json"] if part == "lesson" else []
+            if part == "exercises" or both: names += ["exercises.json", "solutions.md"]
+            out += "\n## The text you judge (figure bodies collapsed)\n" + "".join(collapsed(courses.lesson_file(folder, n)) for n in names)
+            out += figure_inventory([courses.lesson_file(folder, n) for n in names if n.endswith(".md")])
+            out += figures_used(folder, "visual", ("inquiry.json", "exit-ticket.json", "exercises.json") if (part == "exercises" or both) else ("inquiry.json", "exit-ticket.json"))
+            both = (f"exercises/review/visual.md", f"python3 scripts/reviews.py hash {lid} --exercises{lang_arg}") if both else None
+        out += shots_visual(folder / "review", stamp_key, f"python3 scripts/screenshot.py {lid} --if-stale")
+        out += visual_report_rules(f"{'exercises/' if part == 'exercises' else ''}review/visual.md", f"python3 scripts/reviews.py hash {lid}{ex_arg}{lang_arg}", both)
+    f = review_dir(folder, part) / "packet-visual.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
+    print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
+    return mode
+
+
+def item_packet(iid, lang=courses.SOURCE_LANG):
+    """The visual packet of an investigation, a TVT guide or a Sovella set (<COURSE>-sovella). These have no carry rows,
+    so a review is full unless the visual report already passes the current hash."""
+    import guides, investigations, practice
+    if iid.endswith("-sovella"):
+        code = iid[:-len("-sovella")]; kind, folder, st = "Sovella itsenäisesti", practice.folder(code, lang), practice.status(code, lang)
+        names, hash_cmd = ["tasks.json", "solutions.md"], f"python3 scripts/practice.py hash {code}"
+    elif iid in investigations.ids(lang):
+        kind, folder, st = "experimental investigation", investigations.folder(iid, lang), investigations.status(iid, lang)
+        names, hash_cmd = ["investigation.json", "investigation.md", "teacher.md"], f"python3 scripts/investigations.py hash {iid}"
+    elif iid in guides.ids(lang):
+        kind, folder, st = "TVT guide", guides.folder(iid, lang), guides.status(iid, lang)
+        names, hash_cmd = ["guide.json", "guide.md"], f"python3 scripts/guides.py hash {iid}"
+    else: sys.exit(f"{iid}: not a lesson, an investigation, a TVT guide or <COURSE>-sovella")
+    if lang != courses.SOURCE_LANG: hash_cmd += f" --lang {lang}"
+    mode = "none" if st["reports"]["visual"] == "PASS" else "full"
+    out = (f"# Packet: {iid} ({kind}, {lang})\nRole: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **{mode}**. Content hash now: `{st['hash']}`.\n"
+           f"House rules: `CLAUDE.md` (in your context). This is not a lesson: no inquiry stages, no exercises; judge the page as the {kind} it is "
+           f"(an investigation: the student's working instructions by working mode, the figures and set-up sketches, the data tables and graphs, the teacher's notes; "
+           f"a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).\n")
+    if mode == "none": out += "\n## No review needed\nYour PASS is for the current hash.\n"
+    else:
+        out += visual_rules() + "\n## The text you judge (figure bodies collapsed)\n" + "".join(collapsed(folder / n) for n in names)
+        out += figure_inventory([folder / n for n in names if n.endswith(".md")])
+        out += shots_visual(folder / "review", st["hash"], f"python3 scripts/screenshot.py {iid} --if-stale") + visual_report_rules(f"{folder.relative_to(ROOT)}/review/visual.md", hash_cmd)
+    f = folder / "review" / "packet-visual.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
+    print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
+    return mode
+
+
 def batch_diff(diff, role, headings_only=True):
     """The part of a lesson's diff a batch reviewer reads: restyled figure lines are counted, not shown (the pedagogy
     reviewer sees them in the captures, the science reviewer need not); the science reviewer gets only the headings."""
@@ -385,6 +551,7 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
     out = (f"# Batch packet: delta {role} review of {len(ids)} lessons\nRole: **{role}**. Mode: **delta (batch)**. House rules: `CLAUDE.md` "
            f"(in your context; if it is not, read it), in particular \"Lesson page\" (2026-10-26).\n")
     if role == "science": out += guardrails()
+    if role == "visual": out += visual_rules()
     if role == "pedagogy": out += "\n" + "\n".join(l for l in sections("NOTES.md", "3. Lesson form (human decisions 2026-10-25)").splitlines() if any(k in l for k in ("Figures.", "Textbook illustrations", "Opening illustration")) or l.startswith("  ")) + "\n"
     lang_arg = "" if lang == courses.SOURCE_LANG else f" --lang {lang}"
     folders = {lid: courses.find_lesson(lid, lang) for lid in ids}
@@ -397,6 +564,9 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
              "the same skill, the same demand, the same physics (NOTES.md §8 \"The opening\")." if goals_only else
              "is every claim the diff changes or adds right by the physics guardrails below, worded as the rest of the lesson and the chapters it builds on say it, and does every changed choice still have exactly one correct option with feedback that says why the others are wrong?"
              if role == "science" else
+             "are the changed figures, formulas and sentences of publication quality in their captures (the standard above): legible at 390 px, consistent with the rest of "
+             "the chapter, mathematical typography right, natural Finnish, nothing clipped? Open the listed captures; a review without looking cannot pass."
+             if role == "visual" else
              "is the changed text clear to a 16–19-year-old, in good language, consistent with the rest of the lesson and with the tasks, feedback and solutions it touches; "
              "where the change is a law's name, a simulation's lead and boxes or recoloured figures: is the name clear, does the lead say what to do, do the figures read well (captures listed per lesson) with colour that carries the physics, never alone?")
     out += ("\n## What you judge\nEach lesson below passed your review earlier; only its diff changed. Judge the diff in its context (the files are on disk "
@@ -412,7 +582,7 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
         if sc["mode"] != "delta": skipped.append(f"{lid} ({sc['mode']}: {sc['why']})"); continue
         meta = json.loads((folder / "meta.json").read_text())
         out += f"\n## {lid} — {meta['title']}\nFolder `{folder.relative_to(ROOT)}`. Changed: {sc['why']} (categories: {', '.join(sc['categories'])}).\n"
-        if role == "pedagogy" and (folder / "review/shots.md").exists():
+        if role in ("pedagogy", "visual") and (folder / "review/shots.md").exists():
             rows = [l for l in (folder / "review/shots.md").read_text().splitlines() if re.search(r"-(fig-\d+-390|fig-row-1280|sim-390)", l)]
             out += "Captures (paths relative to the lesson folder):\n" + "\n".join(rows) + "\n"
         styling = set(sc["categories"]) <= {"style", "label-position", "section-name", "illustration", "relocated"}   # the science reviewer needs the text of any other change
@@ -424,8 +594,12 @@ def batch(ids, role, lang=courses.SOURCE_LANG):
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    if len(a) in (4, 6) and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"):
+    if len(a) in (4, 6) and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy", "visual"):
         batch(a[1].split(","), a[3], *(a[5:6] if a[4:5] == ["--lang"] else [])); sys.exit(0)
-    if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "developer"): sys.exit(__doc__)
+    if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "visual", "developer"): sys.exit(__doc__)
     lang = a[a.index("--lang") + 1] if "--lang" in a else courses.SOURCE_LANG   # a translation is a lesson of its own (README "Languages")
+    if a[2] == "visual":
+        if not any(f.name == a[0] for f in courses.lessons(lang=lang)): item_packet(a[0], lang); sys.exit(0)
+        visual_packet(courses.find_lesson(a[0], lang), "exercises" if "--exercises" in a else "lesson"); sys.exit(0)
+    if "--audit" in a and "--exercises" not in a: packet(courses.find_lesson(a[0], lang), a[2], audit=True); sys.exit(0)
     (exercise_packet if "--exercises" in a else packet)(courses.find_lesson(a[0], lang), a[2], fix="--fix" in a)

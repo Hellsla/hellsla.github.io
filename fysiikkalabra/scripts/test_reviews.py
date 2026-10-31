@@ -75,10 +75,10 @@ expect("a sim.js line alters the hash", h(t) != after_num)
 # 2. review states
 t = project()
 expect("no reports: draft", "draft" in state(t) and "science=missing" in state(t), state(t))
-report(t, "science"); report(t, "pedagogy")
+report(t, "science"); report(t, "pedagogy"); report(t, "visual")
 expect("both PASS on the current hash: reviewed", ": reviewed" in state(t), state(t))
-expect("the lesson's reports do not review its exercises", "exercises: draft (science=missing, pedagogy=missing)" in state(t, part="exercises"), state(t, part="exercises"))
-report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises")
+expect("the lesson's reports do not review its exercises", "exercises: draft (science=missing, pedagogy=missing, visual=missing)" in state(t, part="exercises"), state(t, part="exercises"))
+report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises"); report(t, "visual", part="exercises")
 expect("the exercise set's own two PASS reports: reviewed", "exercises: reviewed" in state(t, part="exercises"), state(t, part="exercises"))
 e = t / "content/fi/FY3" / LESSON / "exercises/exercises.json"; ex = json.loads(e.read_text()); ex["level2"][0]["text"] += " Lisälause."; e.write_text(json.dumps(ex, ensure_ascii=False))
 expect("an exercise edited: the exercises stale, the lesson still reviewed", ": reviewed" in state(t) and "exercises: draft (science=stale" in state(t, part="exercises"), state(t) + state(t, part="exercises"))
@@ -94,7 +94,7 @@ code, out = run(t, "reviews.py", "legacy", LESSON)
 expect("legacy marker: legacy", code == 0 and ": legacy" in state(t), out + state(t))
 p.write_text(p.read_text() + "Sisältömuutos.\n")
 expect("content edit retires the legacy marker: draft", ": draft" in state(t) and "legacy=stale" in state(t), state(t))
-report(t, "science"); report(t, "pedagogy")
+report(t, "science"); report(t, "pedagogy"); report(t, "visual")
 code, out = run(t, "reviews.py", "legacy", LESSON)
 expect("a reviewed lesson refuses a legacy marker", code != 0, out)
 (t / "content/fi/FY3" / LESSON / "review/science.md").write_text("PASS\n")
@@ -106,10 +106,10 @@ def build(tmp): return run(tmp, "build.py")
 t = project(); site = t / "site"
 code, out = build(t)
 expect("draft is not built", code == 0 and not (site / f"{LESSON}.html").exists() and "skipped" not in out and f'href="{LESSON}.html"' not in (site / "FY3.html").read_text(), out)
-report(t, "science"); report(t, "pedagogy"); code, out = build(t); page = (site / f"{LESSON}.html").read_text()
+report(t, "science"); report(t, "pedagogy"); report(t, "visual"); code, out = build(t); page = (site / f"{LESSON}.html").read_text()
 expect("reviewed lesson is built without a notice", code == 0 and "Prototyyppiversio" not in page and f'href="{LESSON}.html"' in (site / "FY3.html").read_text(), out)
 expect("its exercises, never reviewed, are not on the page: a note says they are coming", f'id="{LESSON}-L1-01"' not in page and "tarkastettavina" in page and "no version has passed yet" in out, out)
-report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises"); code, out = build(t); page = (site / f"{LESSON}.html").read_text()
+report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises"); report(t, "visual", part="exercises"); code, out = build(t); page = (site / f"{LESSON}.html").read_text()
 expect("reviewed exercises are on the page with their solutions", code == 0 and f'id="{LESSON}-L1-01"' in page and "tarkastettavina" not in page and 'class="solution"' in page, out)
 p = t / "content/fi/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text() + "\nMuutos.\n"); run(t, "reviews.py", "legacy", LESSON)
 code, out = build(t); page = (site / f"{LESSON}.html").read_text()
@@ -119,12 +119,12 @@ code, out = build(t)
 expect("stale lesson is removed from the site with a warning", code == 0 and not (site / f"{LESSON}.html").exists() and ("WARNING" in out or "::warning::" in out) and LESSON in out and "removes it" in out, out)   # ::warning:: on CI
 
 # 4. atomic build: a build that fails half-way leaves the previous site untouched
-t = project(); report(t, "science"); report(t, "pedagogy"); build(t); site = t / "site"
+t = project(); report(t, "science"); report(t, "pedagogy"); report(t, "visual"); build(t); site = t / "site"
 before = {q.name: q.read_bytes() for q in site.glob("*.html")}
 other = t / "content/fi/FY3/fy3-9z"; shutil.copytree(t / "content/fi/FY3" / LESSON, other, ignore=shutil.ignore_patterns("review"))
 md = json.loads((other / "meta.json").read_text()); md["id"] = "fy3-9z"; (other / "meta.json").write_text(json.dumps(md, ensure_ascii=False))
 (other / "exercises/exercises.json").write_text("{ rikki")
-report(t, "science", lid="fy3-9z"); report(t, "pedagogy", lid="fy3-9z")      # reviewed, so the build tries to render it, and crashes
+report(t, "science", lid="fy3-9z"); report(t, "pedagogy", lid="fy3-9z"); report(t, "visual", lid="fy3-9z")      # reviewed, so the build tries to render it, and crashes
 code, out = build(t); after = {q.name: q.read_bytes() for q in site.glob("*.html")}
 expect("failed build leaves the previous site complete", code != 0 and after == before and not (t / "site.tmp").exists() and not (t / "site.old").exists(), out)
 
@@ -133,14 +133,14 @@ def git(tmp, *a): return subprocess.run(["git", *a], cwd=tmp, capture_output=Tru
 t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("scope without reports: full", "science: full" in out and "no earlier PASS" in out, out)
-report(t, "science"); report(t, "pedagogy")
+report(t, "science"); report(t, "pedagogy"); report(t, "visual")
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("scope right after a PASS: delta with no changes", "science: delta (0 changed wording" in out and "pedagogy: delta" in out, out)
 p = t / "content/fi/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("one word changed, no number: delta for both", out.count("delta") == 2 and "wording" in out, out)
+expect("one word changed, no number: delta for all three (the visual reviewer reads the edited sentence)", out.count("delta") == 3 and "wording" in out, out)
 p.write_text((SRC / "content/fi/FY3" / LESSON / "lesson.md").read_text())
-report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises")
+report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises"); report(t, "visual", part="exercises")
 e = t / "content/fi/FY3" / LESSON / "exercises/exercises.json"; ex = json.loads(e.read_text()); ex["level1"][0]["answer"] += 1; e.write_text(json.dumps(ex, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON, "--exercises")
 expect("an answer changed: full science review of the exercises, pedagogy judges the diff", "science: full" in out and "pedagogy: delta" in out and "answer" in out, out)
@@ -152,17 +152,17 @@ code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a number in a formula changed: full science review, pedagogy delta", "science: full" in out and "pedagogy: delta" in out and "number, formula" in out, out)
 p.write_text(p.read_text().replace("0{,}38", "0{,}37", 1)); s_ = t / "lessons/FY3" / LESSON / "sim.js"; s_.write_text(s_.read_text() + "\n// yksi rivi\n")
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a comment line in sim.js: no review for either, it is not content", "science: none" in out and "pedagogy: none" in out and "comments" in out, out)
+expect("a comment line in sim.js: no review for any of the three, it is not content", "science: none" in out and "pedagogy: none" in out and "visual: none" in out and "comments" in out, out)
 s_.write_text(s_.read_text() + "const yksi = 1;\n")
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("one line of sim.js code: full for both", out.count("full") == 2 and "simulation's code" in out, out)
+expect("one line of sim.js code: full for both", "science: full" in out and "pedagogy: full" in out and "simulation's code" in out, out)
 s_.write_text((SRC / "lessons/FY3" / LESSON / "sim.js").read_text())
 s_.write_text(s_.read_text().replace("p.text('$600\\\\,\\\\text{K}$', thx - 14", "p.text('$600\\\\,\\\\text{K}$', thx - 20", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a sim's LaTeX canvas label nudged 6 units: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "label" in out, out)
 s_.write_text(s_.read_text().replace("p.textSize(ts(11)); p.text(", "p.textSize(ts(12)); p.text(", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("the same line with its text size changed too: full for both", out.count("full") == 2, out)
+expect("the same line with its text size changed too: full for both", "science: full" in out and "pedagogy: full" in out, out)
 s_.write_text((SRC / "lessons/FY3" / LESSON / "sim.js").read_text())
 
 # 5b. change categories decide who looks again; a PASS carries over only what its reviewer need not see
@@ -170,11 +170,11 @@ svg = [l for l in p.read_text().splitlines() if l.lstrip().startswith(("<text ",
 txt = svg[0]; nudged = re.sub(r' x="(-?[\d.]+)"', lambda m: f' x="{float(m.group(1)) + 6:g}"', txt, count=1)
 p.write_text(p.read_text().replace(txt, nudged, 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a figure label nudged 6 units: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "label" in out, out)
+expect("a figure label nudged 6 units: science none, pedagogy and visual delta", "science: none" in out and "pedagogy: delta" in out and "visual: delta" in out and "label" in out, out)
 code, out = run(t, "reviews.py", "carry", LESSON)
 expect("carry records science only; the lesson stays a draft until pedagogy looks", "science: carried over" in out and ": draft" in out and "science=PASS (carried over: label-position)" in out, out)
-report(t, "pedagogy")
-expect("pedagogy PASS on the new hash + science carried: reviewed", ": reviewed" in state(t) and "carried over" in state(t), state(t))
+report(t, "pedagogy"); report(t, "visual")      # the nudged label: the visual reviewer looks (delta), the science PASS carries
+expect("pedagogy and visual PASS on the new hash + science carried: reviewed", ": reviewed" in state(t) and "carried over" in state(t), state(t))
 git(t, "add", "."); git(t, "commit", "-qm", "nudge")
 code, out = run(t, "reviews.py", "verify")
 expect("verify re-derives the carry from history and accepts it", code == 0 and "ERROR" not in out, out)
@@ -185,11 +185,11 @@ cat.write_text(rows[0] + "\n" + "\t".join(rows[1].split("\t")[:3] + [h(t)] + row
 code, out = run(t, "reviews.py", "verify")
 expect("a carry over a real figure change fails verify", code == 1 and "must review" in out, out)
 t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
-report(t, "science"); report(t, "pedagogy")
+report(t, "science"); report(t, "pedagogy"); report(t, "visual")
 ts = t / "tests/sims" / f"{LESSON}.json"; tests = json.loads(ts.read_text())
 ts.write_text(json.dumps(tests + [{"expr": "1", "expected": 1, "tol": 0.001}], ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a simulation assertion added: no review", "science: none" in out and "pedagogy: none" in out, out)
+expect("a simulation assertion added: no review", "science: none" in out and "pedagogy: none" in out and "visual: none" in out, out)
 tests[0]["tol"] = tests[0].get("tol", 0.01) * 10; ts.write_text(json.dumps(tests, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a simulation assertion loosened: full science review", "science: full" in out and "loosened" in out, out)
@@ -197,10 +197,10 @@ ts.write_text(json.dumps(json.loads((SRC / "tests/sims" / f"{LESSON}.json").read
 p = t / "content/fi/FY3" / LESSON / "lesson.md"; style = next(l for l in re.sub(r'<svg[^>]*data-fig="hero".*?</svg>', "", p.read_text(), flags=re.S).splitlines() if 'stroke-width="' in l)   # a theory figure, not the opening illustration
 p.write_text(p.read_text().replace(style, re.sub(r'stroke-width="[\d.]+"', 'stroke-width="9"', style, count=1), 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a stroke width changed: science none, pedagogy delta", "science: none" in out and "pedagogy: delta" in out and "styling" in out, out)
+expect("a stroke width changed: science none, pedagogy and visual delta", "science: none" in out and "pedagogy: delta" in out and "visual: delta" in out and "styling" in out, out)
 p.write_text(re.sub(r"^## Kaava.*$", "## Kaava: Testilaki", (SRC / "content/fi/FY3" / LESSON / "lesson.md").read_text(), count=1, flags=re.M))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("the formula section named after its law: delta for both, nothing else", out.count("delta") == 2 and "section-name" in out and "structure" not in out, out)
+expect("the formula section named after its law: delta for all three, nothing else", out.count("delta") == 3 and "section-name" in out and "structure" not in out, out)
 p.write_text((SRC / "content/fi/FY3" / LESSON / "lesson.md").read_text())
 i = t / "content/fi/FY3" / LESSON / "inquiry.json"; d = json.loads(i.read_text()); simact = next(a for a in d["activities"] if a["type"] == "sim")
 whole = " ".join(simact.pop(k, "") for k in ("text", "howto", "model", "calc")).strip(); first, _, rest_ = whole.partition(". "); simact["text"], simact["model"] = first + ".", rest_
@@ -226,7 +226,7 @@ expect("pedagogy packet: figures collapsed, no answers.py, no sim.js", "figure b
 expect("a packet is a file the agent reads, never pasted: the script prints its path and size", "packet-pedagogy.md: full," in out and "tokens" in out, out)
 expect("packets carry the course's LOPS goals, the slot and the glossary terms, and point to CLAUDE.md instead of repeating it",
        "## Course FY3: Energia ja lämpö" in ps and "Keskeiset sisällöt" in ps and "Lesson slot" in ps and "Glossary terms" in ps and "CLAUDE.md" in ps and "Physics and maths conventions" not in ps)
-report(t, "science"); report(t, "pedagogy"); p = t / "content/fi/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
+report(t, "science"); report(t, "pedagogy"); report(t, "visual"); p = t / "content/fi/FY3" / LESSON / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/fi/FY3" / LESSON / "review/packet-science.md").read_text()
 expect("delta packet: previous report and the diff, not the whole lesson", "Mode: **delta**" in ps and "Your previous report" in ps and "+" in ps.split("```diff")[1] and "### answers.py" not in ps, out)
 code, out = run(t, "review_packet.py", LESSON, "--role", "science", "--exercises"); xs = (t / "content/fi/FY3" / LESSON / "exercises/review/packet-science.md").read_text()
@@ -256,10 +256,10 @@ INQ = 'a["inq-test"] = 2.5 * 4.0                            # an inquiry number,
 A.write_text(exercise_answers.replace("\nprint(", "\n" + INQ + "print(", 1)); git(t, "add", "."); git(t, "commit", "-qm", "before the split")
 old = subprocess.run([sys.executable, "-c", "import sys; sys.path.insert(0, 'scripts'); import reviews as r, courses; print(r.hash_at('HEAD', courses.find_lesson(sys.argv[1]), 'all'))", LESSON],
                      cwd=t, capture_output=True, text=True).stdout.strip()
-report(t, "science", hash_=old); report(t, "pedagogy", hash_=old); git(t, "add", "."); git(t, "commit", "-qm", "reviews")
+report(t, "science", hash_=old); report(t, "pedagogy", hash_=old); report(t, "visual", hash_=old); git(t, "add", "."); git(t, "commit", "-qm", "reviews")
 (L / "exercises/review").mkdir(parents=True)
 for n in ("exercises.json", "solutions.md"): (L / n).rename(L / "exercises" / n)
-for n in ("science", "pedagogy"): (L / "exercises/review" / f"{n}.md").write_text((L / "review" / f"{n}.md").read_text())
+for n in ("science", "pedagogy", "visual"): (L / "exercises/review" / f"{n}.md").write_text((L / "review" / f"{n}.md").read_text())
 A.write_text(exercise_answers); first = next(l for l in exercise_answers.splitlines() if l.startswith("import"))   # `import json` (and more)
 (A.parent / "lesson-answers.py").write_text(f'"""Lesson numbers."""\n{first}\n\na = {{}}\n{INQ}print(json.dumps(a))\n')
 code, out = run(t, "reviews.py", "carry", LESSON); code2, out2 = run(t, "reviews.py", "carry", LESSON, "--exercises")
@@ -287,7 +287,100 @@ code, out = run(t, "build.py"); page = (t / "site" / f"{LESSON}.html").read_text
 expect("exercises edited, not yet reviewed: the lesson stays on the site with the exercises last reviewed", code == 0 and "Uusi tehtäväteksti" not in page
        and f'id="{LESSON}-L1-01"' in page and old_text.split(".")[0][:30] in page and "keeps the exercises last reviewed" in out, out)
 
+
+# 8. the visual & editorial review (teacher 2026-10-31): a third PASS for new and changed content, a hash-bound
+# baseline for what was published before, formulas re-set without a change of meaning seen by the visual reviewer alone
+def init_git(tmp):
+    git(tmp, "init", "-q"); git(tmp, "config", "user.email", "t@t"); git(tmp, "config", "user.name", "t"); git(tmp, "add", "."); git(tmp, "commit", "-qm", "v1")
+t = project(); init_git(t); L = t / "content/fi/FY3" / LESSON; site = t / "site"
+report(t, "science"); report(t, "pedagogy"); report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises")
+expect("new content with science and pedagogy PASS but no visual report: a draft", ": draft" in state(t) and "visual=missing" in state(t), state(t))
+code, out = build(t)
+expect("... and not published", code == 0 and not (site / f"{LESSON}.html").exists(), out)
+report(t, "visual", "FAIL"); code, out = build(t)
+expect("a visual FAIL blocks new content", ": draft" in state(t) and "visual=FAIL" in state(t) and not (site / f"{LESSON}.html").exists(), state(t) + out)
+(L / "review/visual.md").unlink()
+code, out = run(t, "reviews.py", "baseline", "init")
+rows = (t / "docs/visual-baseline.tsv").read_text() if (t / "docs/visual-baseline.tsv").exists() else ""
+expect("baseline init: one hash-bound row per part both reviewers passed, no PASS report written",
+       code == 0 and f"lesson\tfi\t{LESSON}\tlesson\t{h(t)}" in rows and f"lesson\tfi\t{LESSON}\texercises\t{h(t, part='exercises')}" in rows
+       and not (L / "review/visual.md").exists(), out + rows)
+code, out = run(t, "reviews.py", "baseline", "init")
+expect("the baseline is written once", code != 0 and "written once" in out, out)
+code, out = build(t); page = (site / f"{LESSON}.html").read_text() if (site / f"{LESSON}.html").exists() else ""
+expect("content published before the gate stays published under its baseline, exercises too", code == 0 and page and f'id="{LESSON}-L1-01"' in page
+       and "visual baseline" in state(t) and "exercises: reviewed" in state(t, part="exercises"), state(t) + out)
+code, out = run(t, "reviews.py", "baseline")
+expect("the baseline report lists what still awaits its first visual review", code == 0 and "2 published part(s) await" in out and LESSON in out, out)
+report(t, "visual", "FAIL"); code, out = build(t)
+expect("an audit's visual FAIL on baseline content does not unpublish it, and the report says it is audited",
+       (site / f"{LESSON}.html").exists() and ": reviewed" in state(t) and "audited" in run(t, "reviews.py", "baseline")[1], state(t))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("baseline content not yet reviewed: the visual review is full, the others are not asked", "visual: full (visual baseline" in out and "science: delta (0 changed" in out, out)
+git(t, "add", "."); git(t, "commit", "-qm", "baseline")
+code, out = run(t, "reviews.py", "verify")
+expect("verify accepts the committed baseline", code == 0 and "ERROR" not in out, out)
+ts = t / "tests/sims" / f"{LESSON}.json"; tests = json.loads(ts.read_text()); ts.write_text(json.dumps(tests + [{"expr": "1", "expected": 1, "tol": 0.001}], ensure_ascii=False, indent=2))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a change no reviewer need see on baseline content: the baseline carries over like a PASS", "visual: none" in out and "visual baseline carried over" in out, out)
+code, out = run(t, "reviews.py", "carry", LESSON)
+expect("... recorded in carry.tsv: still published", "visual: carried over" in out and ": reviewed" in state(t) and "visual baseline" in state(t), out + state(t))
+git(t, "add", "."); git(t, "commit", "-qm", "a test added")
+code, out = run(t, "reviews.py", "verify")
+expect("verify re-derives the baseline's carry from history", code == 0 and "ERROR" not in out, out)
+p = L / "lesson.md"; p.write_text(p.read_text().replace("lämpötila", "lämpötilat", 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a material change to baseline content: its first genuine visual review, in full; the others by their rules",
+       "visual: full (visual baseline: the content changed" in out and "science: delta" in out and "pedagogy: delta" in out and ": draft" in state(t), out + state(t))
+report(t, "science"); report(t, "pedagogy")
+expect("the baseline does not authorise the changed version: science and pedagogy PASS alone leave it a draft", ": draft" in state(t) and "visual=stale" in state(t), state(t))
+code, out = build(t)
+expect("... so the build leaves it out with a warning", not (site / f"{LESSON}.html").exists() and LESSON in out, out)
+report(t, "visual"); code, out = build(t)
+expect("a genuine visual PASS of the changed version publishes it", ": reviewed" in state(t) and "visual baseline" not in state(t) and (site / f"{LESSON}.html").exists(), state(t))
+git(t, "checkout", "--", "."); git(t, "clean", "-fdq", "content")
+e = L / "exercises/exercises.json"; ex = json.loads(e.read_text()); old_text = ex["level1"][0]["text"]; ex["level1"][0]["text"] = "Uusi tehtäväteksti, jota visuaalinen tarkastaja ei ole nähnyt?"
+e.write_text(json.dumps(ex, ensure_ascii=False, indent=2)); report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise edited, science and pedagogy passed")
+code, out = build(t); page = (site / f"{LESSON}.html").read_text()
+expect("exercises edited after the gate, only two reviews: the page keeps the exercises published under the baseline",
+       "visiaalinen" not in page and "visuaalinen tarkastaja" not in page and old_text.split(".")[0][:30] in page and "keeps the exercises last reviewed" in out, out)
+bl = t / "docs/visual-baseline.tsv"; bl.write_text(bl.read_text() + f"lesson\tfi\t{LESSON}\texercises\t{h(t, part='exercises')}\t2026-11-01\n")
+code, out = run(t, "reviews.py", "verify")
+expect("a baseline row added later fails verify: the baseline only shrinks", code == 1 and "added after the baseline" in out, out)
+expect("... (and the forged row would have published the edited exercises: verify is what stops it)", "exercises: reviewed" in state(t, part="exercises"), state(t, part="exercises"))
+git(t, "checkout", "--", "docs")
+lines = bl.read_text().splitlines(); bl.write_text("\n".join(l for l in lines if "\texercises\t" not in l) + "\n")
+code, out = run(t, "reviews.py", "verify")
+expect("removing baseline rows is allowed", code == 0 and "ERROR" not in out, out)
+
+# 8b. a formula re-set (spacing, \dfrac/\frac, {,}) is the category typography: no science or pedagogy review
+t = project(); init_git(t); L = t / "content/fi/FY3" / LESSON; p = L / "lesson.md"
+for n in ("science", "pedagogy", "visual"): report(t, n)
+src_md = p.read_text(); line = next(l for l in src_md.splitlines() if "$" in l and "\\,\\text" in l and not l.lstrip().startswith("<"))
+p.write_text(src_md.replace(line, line.replace("\\,\\text", "\\;\\text", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a formula re-set without a change of meaning: science and pedagogy none, visual delta", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out and "typography" in out, out)
+p.write_text(src_md.replace(line, re.sub(r"(\$[^$]*?)(\d)", lambda m: m.group(1) + str((int(m.group(2)) + 1) % 10), line, count=1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("... but a changed number in a formula is not typography: science full", "science: full" in out and "typography" not in out, out)
+p.write_text(src_md.replace(line, line + " Lisäsana.", 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("... and a sentence added outside the maths is not typography", "typography" not in out and "science: none" not in out, out)
+
+# 8c. investigations, TVT guides and Sovella sets: three reports, or a baseline row for exactly this hash
 sys.path.insert(0, str(HERE)); import reviews as rv
+d = pathlib.Path(tempfile.mkdtemp()); (d / "review").mkdir(); keep = rv.BASELINE, rv.VISUAL_GATE
+for n in ("science", "pedagogy"): (d / "review" / f"{n}.md").write_text("VERDICT: PASS\nCONTENT-HASH: 1111111111111111\n")
+rv.BASELINE = d / "visual-baseline.tsv"; rv.VISUAL_GATE = True
+expect("an investigation with two PASS reports and no baseline: a draft", rv.item_status("investigation", "x", "fi", d, "1111111111111111")["state"] == "draft")
+rv.BASELINE.write_text("\t".join(rv.BASELINE_COLS) + "\ninvestigation\tfi\tx\t-\t1111111111111111\t2026-10-31\n")
+expect("... on the baseline for its hash: reviewed", rv.item_status("investigation", "x", "fi", d, "1111111111111111")["state"] == "reviewed")
+expect("... a changed hash is not covered", rv.item_status("investigation", "x", "fi", d, "2222222222222222")["state"] == "draft")
+(d / "review/visual.md").write_text("VERDICT: FAIL\nCONTENT-HASH: 1111111111111111\n")
+expect("... a visual FAIL (an audit) leaves the baseline in force", rv.item_status("investigation", "x", "fi", d, "1111111111111111")["state"] == "reviewed")
+rv.BASELINE, rv.VISUAL_GATE = keep
+
 hero = '<svg data-fig="hero" viewBox="0 0 1200 600" role="img">\n  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>\n</svg>'
 md = "> **Miksi** x?\n\n" + hero + "\n\n## Ydinajatus\nText.\n"
 expect("an opening illustration without labels drops out of the classified text", rv.strip_hero(md) == "> **Miksi** x?\n\n## Ydinajatus\nText.\n")

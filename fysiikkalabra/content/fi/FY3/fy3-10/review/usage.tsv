@@ -49,3 +49,12 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	3124708	84	16219	3010418	97987	98059	38	1943	40		1.0094	transcript	742553caa8fd
 2026-10-28T15:36Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	340335	14	4022	307354	28945	56671	7	181	8		0.1741	transcript	8dd9399b0e57
 2026-10-28T15:36Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	1235860	28	9516	1152207	74109	102303	14	115	21		0.5109	transcript	c042851464f4
+2026-10-31T18:32Z	fy3-10	FY3	general-purpose	other	claude-sonnet-5-5			2	433921	18	5199	395851	32853	60213	8	189	8		0.2133	transcript	845ebddd1b2b
+2026-10-31T18:32Z	fy3-10	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		audit	1	986006	24	13434	866673	105875	106799	12	105	37		0.5724	transcript	00b138bdce94
+2026-10-31T18:32Z	fy3-10	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		full	1	1144843	24	10214	1035270	99335	127349	12	82	34		0.5576	transcript	db71f346d4d3
+2026-10-31T18:32Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	458788	12	8158	383568	67050	95114	6	68	11		0.3259	transcript	bc39c7ea7ee6
+2026-10-31T18:32Z	fy3-10	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	2	351183	10	2617	261777	86779	87398	5	23	7		0.2955	transcript	efbec70c8cdf
+2026-10-31T18:32Z	fy3-10	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		delta	2	328826	12	2046	266571	60197	60636	6	21	9		0.2243	transcript	1098de981f01
+2026-10-31T18:32Z	fy3-10	FY3	science-reviewer	review	claude-opus-5-5		full	1	1399667	26	16920	1250471	132250	133112	13	204	14		1.2498	transcript	137a6500f83d
+2026-10-31T18:32Z	fy3-10	FY3	developer	develop	claude-sonnet-5-5		fix	1	1699443	42	6669	1513836	178896	90384	21	1082	24		0.8168	transcript	471da2310623
+2026-10-31T18:32Z	fy3-10	FY3	orchestrator	orchestrate	claude-opus-5-5		session	2	44220511	385	148638	43609345	462143	163139	201	6302	228		15.3933	transcript	105690ba7206

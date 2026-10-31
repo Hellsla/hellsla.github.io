@@ -1,4 +1,4 @@
-"""Review state of a lesson and of its exercise set: one content hash each, two reviews each, no status fields.
+"""Review state of a lesson and of its exercise set: one content hash each, three reviews each, no status fields.
 
   python scripts/reviews.py hash <id> [--exercises] [--lang en]   the content hash (reviewers put it in their report)
   python scripts/reviews.py status [<id>]              reviewed | legacy | draft of the lesson and its exercises
@@ -8,6 +8,28 @@
   python scripts/reviews.py impact [<ref>]   which lessons a change since <ref> (default origin/main) touches, and
                                              which review each needs; shared simulations count for every user
   python scripts/reviews.py verify           CI: every lesson's state; exit 1 on a malformed report or an invalid carry
+                                             or a visual baseline row that was added after the baseline was written
+  python scripts/reviews.py baseline         what still awaits its first visual review (the visual baseline, below)
+  python scripts/reviews.py baseline init    write docs/visual-baseline.tsv once, from what both reviewers passed
+
+Three independent reviewers (teacher's brief 2026-10-31): science (physics and mathematics), pedagogy (learning) and
+visual (visual & editorial: figures, graphs, mathematical typography, Finnish, presentation; `.claude/agents/
+visual-editorial-reviewer.md`, `docs/EDITORIAL_QUALITY_STANDARD.md`). Each writes review/<name>.md for the same hash.
+
+The visual gate and its baseline. Publication needs all three PASS reports once VISUAL_GATE is on. Content that
+both other reviewers had passed when the gate was switched on was never seen by a visual reviewer, and requiring a
+visual PASS of it at once would empty the site, while writing PASS reports for it would claim a review nobody made.
+So `baseline init` wrote one row per such part (kind, language, id, part, the content hash it had) into
+docs/visual-baseline.tsv; a row stands in for the visual PASS of exactly that hash. It is no review: `status`
+says "visual baseline", `baseline` lists every part still on it, and a visual FAIL report (an audit) leaves the
+row in force, so auditing never unpublishes. When the content changes, the row no longer matches: a change the
+visual reviewer need not see (tests, comments, a translation's copied force diagrams, …; RULES' third column
+`none`) is carried over by a carry row from the baseline hash like any carry, checked by `verify`; any other
+change needs a genuine visual PASS, in full, since the rest of the part was never visually reviewed. Rows are only
+ever removed: `verify` fails on a row that the file's first commit did not have. The exercise set's fallback
+(published_exercises) treats a baseline hash as the visual PASS of that version, so unreviewed exercise edits never
+replace the exercises published before. Investigations, TVT guides and Sovella sets (`item_status`) have no carry
+rows: a baseline row counts for its exact hash only.
 
 Two parts are reviewed apart (teacher 2026-10-28, README "Exercises"): the *lesson* (its texts, simulation, figures
 and lesson-answers.py, reports in review/) and its *exercises* (exercises/exercises.json, exercises/solutions.md and
@@ -16,8 +38,9 @@ never stales theirs. Everything below holds for each part with its own files, ha
 picks the exercise set. Before the split one hash covered both (PARTS "all"); a PASS on such a hash still counts
 when the commit that holds it has the same files as now, moved but unchanged (category "split", below).
 
-A part is *reviewed* when review/science.md and review/pedagogy.md both start with `VERDICT: PASS` and carry
-the current CONTENT-HASH, or a hash whose PASS carries over to the current one (below). It is *legacy* when
+A part is *reviewed* when review/science.md, review/pedagogy.md and review/visual.md all start with `VERDICT: PASS`
+and carry the current CONTENT-HASH, or a hash whose PASS carries over to the current one (below); the visual one
+may be the visual baseline (above). It is *legacy* when
 review/legacy.md does (a prototype lesson published before the two-review pipeline, kept visible by the
 teacher's approval of the migration PR until it is reworked). Anything else is a *draft*: the build leaves it
 out of site/ and warns if it was on the live site.
@@ -39,12 +62,16 @@ those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash
 `status` counts that PASS for the new hash. CI (`verify`) re-derives every carry that is in use from git history
 and fails if the change was not what the row says. A reviewer whose last verdict was FAIL always reviews in full.
 """
-import datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
+import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, figcat, i18n, inquiry
 
 ROOT = courses.ROOT
-REVIEWS = ("science", "pedagogy")
+REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
+VISUAL = "visual"
+VISUAL_GATE = True    # the activation switch of the third mandatory review (teacher's brief 2026-10-31, module docstring)
+BASELINE = ROOT / "docs" / "visual-baseline.tsv"   # what was published before the gate: hash-bound, rows only ever removed
+BASELINE_COLS = ["kind", "lang", "id", "part", "hash", "date"]
 CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
 EXERCISE_CONTENT = ("exercises.json", "solutions.md", "answers.py")
 LESSON_CONTENT = tuple(n for n in CONTENT if n not in EXERCISE_CONTENT) + ("lesson-answers.py",)
@@ -52,33 +79,34 @@ PARTS = {"lesson": LESSON_CONTENT, "exercises": EXERCISE_CONTENT,
          "all": CONTENT}            # the one hash of a lesson before the exercises got their own reviews (2026-10-28)
 MODES = ("none", "delta", "full")
 FBD_SPEC = re.compile(r"(?:\n|\\n)```voimakuvio(?:\n|\\n).*?```", re.S)   # a drawn force diagram's spec (scripts/fbdspec.py), raw or in JSON
-RULES = {                       # category: (science, pedagogy)
-    "tests":          ("none",  "none"),    # tests/sims assertions added or tightened: test_sims.py checks them
-    "comments":       ("none",  "none"),    # comment or blank lines in simulation code or answers.py
-    "style":          ("none",  "delta"),   # colours, strokes, fonts, classes in a figure; a simulation's sim.css
-    "label-position": ("none",  "delta"),   # a figure label moved by at most 40 units, its text unchanged
-    "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
-    "objective-form": ("none",  "delta"),
-    "notation":       ("none",  "none"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
-    "force-diagram":  ("delta", "none"),    # a ```voimakuvio spec added to a step, drawn by fbdspec.py; the text unchanged (teacher 2026-10-30)
-    "force-diagram-copy": ("none", "none"),  # a translation's force-diagram specs, identical to the reviewed Finnish ones (check_i18n.py)
-    "level-policy":   ("none",  "none"),    # the chapter's own "Taso 1 riittää …" sentence deleted, nothing else: the template says which exercises are core (teacher 2026-10-31)
-    "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
-    "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
-    "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
-    "numbers":        ("full",  "delta"),   # a changed line carries a number, formula, symbol or unit
-    "answers":        ("full",  "delta"),   # an exercise answer, unit or tolerance; answers.py code
-    "tests-weakened": ("full",  "none"),    # a simulation assertion removed or loosened
-    "levels":         ("delta", "full"),    # an exercise's level or id
-    "structure":      ("delta", "full"),    # headings, stages, display blocks; inquiry stage, type, reveal, sections
-    "objectives":     ("delta", "full"),    # meta goals or prerequisites
-    "experiment":     ("full",  "full"),    # inquiry correct option, initial/locked/vary/measure, numeric answer, mistakes
-    "simulation":     ("full",  "full"),    # simulation code or images (the lesson's or a shared folder it uses)
-    "figure":         ("full",  "full"),    # figure geometry or text; a picture file
-    "illustration":   ("none",  "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
-    "split":          ("none",  "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
+RULES = {                       # category: (science, pedagogy, visual)
+    "typography":     ("none",  "none", "delta"),   # a formula re-set without a change of meaning (spacing, \\dfrac/\\frac, {,}, \\left/\\right): the visual reviewer looks
+    "tests":          ("none",  "none", "none"),    # tests/sims assertions added or tightened: test_sims.py checks them
+    "comments":       ("none",  "none", "none"),    # comment or blank lines in simulation code or answers.py
+    "style":          ("none",  "delta", "delta"),   # colours, strokes, fonts, classes in a figure; a simulation's sim.css
+    "label-position": ("none",  "delta", "delta"),   # a figure label moved by at most 40 units, its text unchanged
+    "relocated":      ("none",  "delta", "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
+    "objective-form": ("none",  "delta", "delta"),
+    "notation":       ("none",  "none", "delta"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
+    "force-diagram":  ("delta", "none", "delta"),    # a ```voimakuvio spec added to a step, drawn by fbdspec.py; the text unchanged (teacher 2026-10-30)
+    "force-diagram-copy": ("none", "none", "none"),  # a translation's force-diagram specs, identical to the reviewed Finnish ones (check_i18n.py)
+    "level-policy":   ("none",  "none", "none"),    # the chapter's own "Taso 1 riittää …" sentence deleted, nothing else: the template says which exercises are core (teacher 2026-10-31)
+    "chapter-ref":    ("none",  "none", "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
+    "section-name":   ("delta", "delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
+    "wording":        ("delta", "delta", "delta"),   # prose without a number, formula, symbol or unit
+    "numbers":        ("full",  "delta", "delta"),   # a changed line carries a number, formula, symbol or unit
+    "answers":        ("full",  "delta", "none"),   # an exercise answer, unit or tolerance; answers.py code
+    "tests-weakened": ("full",  "none", "none"),    # a simulation assertion removed or loosened
+    "levels":         ("delta", "full", "delta"),    # an exercise's level or id
+    "structure":      ("delta", "full", "delta"),    # headings, stages, display blocks; inquiry stage, type, reveal, sections
+    "objectives":     ("delta", "full", "delta"),    # meta goals or prerequisites
+    "experiment":     ("full",  "full", "delta"),    # inquiry correct option, initial/locked/vary/measure, numeric answer, mistakes
+    "simulation":     ("full",  "full", "delta"),    # simulation code or images (the lesson's or a shared folder it uses)
+    "figure":         ("full",  "full", "delta"),    # figure geometry or text; a picture file
+    "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
+    "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
-WHY = {"tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"typography": "formulas re-set (spacing, fraction style, decimal comma) without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -253,9 +281,56 @@ def carried(folder, name, from_hash, to_hash, part="lesson"):
     return next((c for c in carries(folder, part) if c["reviewer"] == name and c["from"] == from_hash and c["to"] == to_hash), None)
 
 
+# ------------------------------------------------------------------ the visual baseline (teacher's brief 2026-10-31)
+_baseline_cache = {}
+
+
+def baseline_rows():
+    """The rows of docs/visual-baseline.tsv: content that both reviewers had passed when the visual review became
+    mandatory, each bound to the content hash it had then. Written once by `reviews.py baseline init`."""
+    if not BASELINE.is_file(): return []
+    key = BASELINE.stat().st_mtime_ns
+    if key not in _baseline_cache:
+        lines = [l for l in BASELINE.read_text().splitlines() if l.strip() and not l.startswith("#")]
+        _baseline_cache.clear(); _baseline_cache[key] = [dict(zip(BASELINE_COLS, l.split("\t"))) for l in lines[1:]]
+    return _baseline_cache[key]
+
+
+def baseline_hashes(kind, lang, iid, part="-"):
+    return {r["hash"] for r in baseline_rows() if (r["kind"], r["lang"], r["id"], r["part"]) == (kind, lang, iid, part)}
+
+
+def gate():
+    """The reviews publication needs: all three once VISUAL_GATE is on (a visual baseline row stands in for the visual
+    PASS of unchanged content), science and pedagogy before."""
+    return REVIEWS if VISUAL_GATE else REVIEWS[:2]
+
+
+def item_status(kind, iid, lang, folder, h):
+    """The state of a part without carry rows (an investigation, a TVT guide, a Sovella set): reviewed when every
+    reviewer of the gate passed this hash, the visual one or a baseline row for exactly this hash."""
+    reports = {}
+    for name in REVIEWS:
+        r = report(folder, name)
+        reports[name] = "missing" if r is None else r[0] if r[1] == h else "stale"
+    base = reports[VISUAL] != "PASS" and h in baseline_hashes(kind, lang, iid)
+    ok = all(reports[n] == "PASS" or (n == VISUAL and base) for n in gate())
+    return {"state": "reviewed" if ok else "draft", "hash": h, "reports": reports, "baseline": base}
+
+
+def _visual_baseline(folder, h, part):
+    """(True, carry categories or None) when the visual requirement of this part is met by the baseline: a row for
+    hash h, or a row for an earlier hash with a carry row (reviewer visual) over changes the visual reviewer need not
+    see; (False, None) otherwise."""
+    bl = baseline_hashes("lesson", courses.lang_of(folder), folder.name, part)
+    if h in bl: return True, None
+    c = next((c for b in bl if (c := carried(folder, VISUAL, b, h, part))), None)
+    return (True, c["categories"]) if c else (False, None)
+
+
 def status(folder, part="lesson"):
-    """{'state': reviewed|legacy|draft, 'hash': ..., 'reports': {name: PASS|FAIL|stale|missing}, 'carried': {name: categories}}
-    of the lesson or of its exercise set (which has no legacy state)."""
+    """{'state': reviewed|legacy|draft, 'hash': ..., 'reports': {name: PASS|FAIL|stale|missing}, 'carried': {name: categories},
+    'baseline': bool} of the lesson or of its exercise set (which has no legacy state)."""
     h = content_hash(folder, part)
     reports, carry = {}, {}
     for name in REVIEWS + (("legacy",) if part == "lesson" else ()):
@@ -265,17 +340,22 @@ def status(folder, part="lesson"):
         elif name != "legacy" and r[0] == "PASS" and (c := carried(folder, name, r[1], h, part)):
             reports[name] = "PASS"; carry[name] = c["categories"]
         else: reports[name] = "stale"
-    state = ("reviewed" if all(reports[n] == "PASS" for n in REVIEWS)
-             else "legacy" if reports.get("legacy") == "PASS" else "draft")
-    return {"state": state, "hash": h, "reports": reports, "carried": carry}
+    base = False
+    if reports[VISUAL] != "PASS":
+        base, cats = _visual_baseline(folder, h, part)
+        if cats: carry[VISUAL] = cats
+    ok = all(reports[n] == "PASS" or (n == VISUAL and base) for n in gate())
+    state = "reviewed" if ok else "legacy" if reports.get("legacy") == "PASS" else "draft"
+    return {"state": state, "hash": h, "reports": reports, "carried": carry, "baseline": base}
 
 
 def describe(folder, part=None):
     """`fy3-6: reviewed (...); exercises: reviewed (...)`, or one part's half."""
     def one(p):
         s = status(folder, p)
-        why = ", ".join(f"{n}={v}" + (f" (carried over: {s['carried'][n]})" if n in s["carried"] else "")
-                        for n, v in s["reports"].items() if not (n == "legacy" and v == "missing"))
+        why = ", ".join(f"{n}={v}" + (" (visual baseline)" if n == VISUAL and s["baseline"] else "")
+                        + (f" (carried over: {s['carried'][n]})" if n in s["carried"] else "")
+                        for n, v in s["reports"].items() if not (n == "legacy" and v == "missing") and not (n == VISUAL and v == "missing" and not s["baseline"] and not VISUAL_GATE))
         return f"{s['state']} ({why or 'no reports'})"
     if part: return f"{folder.name}{' exercises' if part == 'exercises' else ''}: {one(part)}"
     return f"{folder.name}: {one('lesson')}; exercises: {one('exercises')}"
@@ -287,17 +367,32 @@ def published_exercises(folder):
     the lesson keeps the exercises last reviewed while new ones wait for review; None when no version was reviewed."""
     s = status(folder, "exercises")
     if s["state"] == "reviewed": return WorkTree()
-    passed = {}
-    for name in REVIEWS:
+    passed, ex = {}, carries(folder, "exercises")
+    for name in gate():
         r = report(folder, name, "exercises")
-        if r is None or r[0] != "PASS": return None
-        passed[name] = {r[1]} | {c["to"] for c in carries(folder, "exercises") if c["reviewer"] == name and c["from"] == r[1]}
+        froms = {r[1]} if r is not None and r[0] == "PASS" else set()
+        froms |= _passed_before(folder, name)          # versions this reviewer passed earlier: still passed, though it has since judged a newer one
+        if name == VISUAL: froms |= baseline_hashes("lesson", courses.lang_of(folder), folder.name, "exercises")   # published before the visual gate
+        if not froms: return None
+        passed[name] = froms | {c["to"] for c in ex if c["reviewer"] == name and c["from"] in froms}
     log = (git("log", "--format=%H", "-n", "80", "--", courses.exercise_dir(folder).relative_to(ROOT).as_posix(), folder.relative_to(ROOT).as_posix(),
                courses.lesson_rel(folder, "answers.py"), *figure_paths(folder)) or "").split()
     for c in log:
         hs = {hash_at(c, folder, "exercises"), hash_at(c, folder, "all")}
-        if all(hs & passed[n] for n in REVIEWS): return Commit(c)
+        if all(hs & passed[n] for n in gate()): return Commit(c)
     return None
+
+
+def _passed_before(folder, name, part="exercises", n=40):
+    """The hashes of the PASS reports this reviewer wrote for `part` in the last n commits of its report file: a version
+    it passed stays passed after it reviews a newer one (the exercise set's fallback, e.g. science and pedagogy have
+    passed new exercises the visual reviewer has not seen yet)."""
+    rel = (review_dir(folder, part) / f"{name}.md").relative_to(ROOT).as_posix(); out = set()
+    for c in (git("log", "--format=%H", "-n", str(n), "--", rel) or "").split():
+        lines = (git("show", f"{c}:./{rel}") or "").splitlines()[:3]
+        if lines and lines[0].strip() == "VERDICT: PASS":
+            out |= {l.split(":", 1)[1].strip() for l in lines if l.startswith("CONTENT-HASH:")}
+    return out
 
 
 def write_legacy(folder):
@@ -419,6 +514,26 @@ def _level_policy_removed(old, new):
     return old != new and LEVEL_POLICY.search(old) is not None and LEVEL_POLICY.sub("", old) == new
 
 
+TYPO_TOKEN = re.compile(r"\\[,;:!]|\\q?quad(?![A-Za-z])|\\(?:display|text)style(?![A-Za-z])|\\(?:left|right)(?![A-Za-z])|\\[bB]ig{1,2}[lr]?(?![A-Za-z])|~|\s+")
+
+
+def _math_view(s):
+    """A formula without what only sets it: spacing commands and spaces, \\dfrac/\\tfrac (as \\frac), \\mathrm (as
+    \\text), {,} (as ,), \\left/\\right and \\big sizes. JSON's doubled backslashes are read as single."""
+    s = s.replace("\\\\", "\\")
+    s = re.sub(r"\\[dt]frac(?![A-Za-z])", r"\\frac", s)
+    s = re.sub(r"\\mathrm(?![A-Za-z])", r"\\text", s)
+    return TYPO_TOKEN.sub("", s.replace("{,}", ","))
+
+
+def _typography_pair(old, new):
+    """True when two lines differ only inside their $…$ formulas, and there only in how the formula is set (_math_view):
+    the words outside the maths identical, the same number of formulas."""
+    if old == new or "$" not in old: return False
+    a, b = old.split("$"), new.split("$")
+    return len(a) == len(b) and all(x == y if i % 2 == 0 else _math_view(x) == _math_view(y) for i, (x, y) in enumerate(zip(a, b)))
+
+
 def _chapter_refs_renamed(old, new):
     """True when two lines differ only in the titles of chapter references and every new one is a current title."""
     blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
@@ -449,6 +564,9 @@ def classify(path, diff_lines, lid):
             for o in list(rem):
                 n = next((l for l in add if _level_policy_removed(o, l)), None)
                 if n is not None: cats.add("level-policy"); rem.remove(o); add.remove(n)
+            for o in list(rem):                        # a formula re-set, its meaning unchanged: only the visual reviewer looks
+                n = next((l for l in add if _typography_pair(o, l)), None)
+                if n is not None: cats.add("typography"); rem.remove(o); add.remove(n)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:
@@ -647,26 +765,41 @@ def scope(folder, part="lesson"):
     lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
     log = (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
                legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
-    out, cache = {}, {}
+    out, cache, now = {}, {}, content_hash(folder, part)
     for name in REVIEWS:
         rep = report(folder, name, part)
-        if rep is None or rep[0] != "PASS": out[name] = {"mode": "full", "base": None, "why": "no earlier PASS", "diff": "", "categories": []}; continue
-        if rep[1] == content_hash(folder, part):
-            out[name] = {"mode": "delta", "base": None, "why": "0 changed wording line(s): the version it passed", "diff": "", "categories": []}; continue
+        full = lambda why: {"mode": "full", "base": None, "from": None, "why": why, "diff": "", "categories": []}
+        if rep is None or rep[0] != "PASS":
+            bl = baseline_hashes("lesson", courses.lang_of(folder), folder.name, part) if name == VISUAL else set()
+            if not bl: out[name] = full("no earlier PASS"); continue
+            # published before the visual gate: no visual review yet. A change it need not see carries the baseline over;
+            # anything else, or no change at all, needs the first genuine visual review, of the whole part.
+            frm = next((b for b in bl if b == now), None) or next(iter(sorted(bl)))
+            if frm == now: out[name] = full("visual baseline: published before the visual review, not yet reviewed"); continue
+            base, split = passed_at(log, folder, part, frm)
+            if base is None: out[name] = full("visual baseline: the version it covers is not in git history"); continue
+            if (base, split) not in cache: cache[base, split] = changes(folder, base, part, split)
+            cats, diff, n = cache[base, split]
+            if cats and all(RULES[c][REVIEWS.index(name)] == "none" for c in cats):
+                out[name] = {"mode": "none", "base": base, "from": frm, "why": "; ".join(WHY[c] for c in sorted(cats)) + " (visual baseline carried over)", "diff": diff, "categories": sorted(cats)}
+            else: out[name] = dict(full("visual baseline: the content changed since it was published, so it needs its first visual review"), categories=sorted(cats))
+            continue
+        if rep[1] == now:
+            out[name] = {"mode": "delta", "base": None, "from": rep[1], "why": "0 changed wording line(s): the version it passed", "diff": "", "categories": []}; continue
         base, split = passed_at(log, folder, part, rep[1])
         if base is None:   # passed long ago: an earlier carry row of this reviewer names a commit that held the passed version
             for c in reversed(carries(folder, part)):
-                full = c["reviewer"] == name and c["from"] == rep[1] and (git("rev-parse", "--verify", "-q", c["base"] + "^{commit}") or "").strip()
-                if full and hash_at(full, folder, part) == rep[1]: base = full; break
-                if full and hash_at(full, folder, "all") == rep[1]: base, split = full, True; break
-        if base is None: out[name] = {"mode": "full", "base": None, "why": "the version it passed is not in git history", "diff": "", "categories": []}; continue
+                sha = c["reviewer"] == name and c["from"] == rep[1] and (git("rev-parse", "--verify", "-q", c["base"] + "^{commit}") or "").strip()
+                if sha and hash_at(sha, folder, part) == rep[1]: base = sha; break
+                if sha and hash_at(sha, folder, "all") == rep[1]: base, split = sha, True; break
+        if base is None: out[name] = full("the version it passed is not in git history"); continue
         if (base, split) not in cache: cache[base, split] = changes(folder, base, part, split)
         cats, diff, n = cache[base, split]
         i = REVIEWS.index(name)
         mode = max((RULES[c][i] for c in cats), key=MODES.index, default="delta")
         strict = sorted(c for c in cats if RULES[c][i] == mode)
         why = "; ".join(WHY[c] for c in strict) if strict else f"{n} changed line(s)"
-        out[name] = {"mode": mode, "base": base, "why": why, "diff": diff, "categories": sorted(cats)}
+        out[name] = {"mode": mode, "base": base, "from": rep[1], "why": why, "diff": diff, "categories": sorted(cats)}
     return out
 
 
@@ -682,9 +815,9 @@ def carry(folder, part="lesson"):
     sc, h, rows = scope(folder, part), content_hash(folder, part), carries(folder, part)
     f = review_dir(folder, part) / "carry.tsv"; added = []
     for name in REVIEWS:
-        rep = report(folder, name, part)
-        if sc[name]["mode"] != "none" or rep is None or rep[1] == h or carried(folder, name, rep[1], h, part): continue
-        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": rep[1], "to": h, "base": sc[name]["base"][:12],
+        frm = sc[name].get("from")                     # the hash its PASS (or, for visual, its baseline row) is for
+        if sc[name]["mode"] != "none" or frm is None or frm == h or carried(folder, name, frm, h, part): continue
+        rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": sc[name]["base"][:12],
                      "categories": ",".join(sc[name]["categories"])}); added.append(name)
     if added:
         f.parent.mkdir(exist_ok=True)
@@ -698,7 +831,9 @@ def verify_carries(folder, part="lesson"):
     errs, h, what = [], content_hash(folder, part), folder.name + (" exercises" if part == "exercises" else "")
     for name in REVIEWS:
         rep = report(folder, name, part)
-        c = carried(folder, name, rep[1], h, part) if rep and rep[1] != h else None
+        c = carried(folder, name, rep[1], h, part) if rep and rep[0] == "PASS" and rep[1] != h else None
+        if not c and name == VISUAL and not (rep and rep[0] == "PASS" and rep[1] == h):   # a carry of the visual baseline
+            c = next((x for b in baseline_hashes("lesson", courses.lang_of(folder), folder.name, part) if b != h and (x := carried(folder, name, b, h, part))), None)
         if not c: continue
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None:
             errs.append(f"{what}: carry of {name} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
@@ -751,6 +886,81 @@ def impact(ref):
     if not lessons and not exercises and not tooling: print(f"nothing changed since {ref}")
 
 
+def _baseline_items():
+    """[(kind, lang, id, part, folder, status)] of every part the visual gate concerns, in every language."""
+    import guides, investigations, practice
+    out = []
+    for lang in i18n.languages():
+        for f in courses.lessons(lang=lang):
+            for p in ("lesson", "exercises"): out.append(("lesson", lang, f.name, p, f, lambda f=f, p=p: status(f, p)))
+        out += [("investigation", lang, i, "-", investigations.folder(i, lang), lambda i=i, lang=lang: investigations.status(i, lang)) for i in investigations.ids(lang)]
+        out += [("guide", lang, g, "-", guides.folder(g, lang), lambda g=g, lang=lang: guides.status(g, lang)) for g in guides.ids(lang)]
+        out += [("sovella", lang, c, "-", practice.folder(c, lang), lambda c=c, lang=lang: practice.status(c, lang)) for c in practice.courses_with(lang)]
+    return out
+
+
+def baseline_init():
+    """Write docs/visual-baseline.tsv once: a row for every part that science and pedagogy have passed (or whose
+    exercise set the site shows from an earlier commit both passed), bound to that hash. Never a PASS report."""
+    global VISUAL_GATE
+    if BASELINE.exists(): sys.exit(f"{BASELINE.relative_to(ROOT)} exists: the baseline is written once; rows are only ever removed")
+    was, VISUAL_GATE = VISUAL_GATE, False              # what was published under the two-review rule
+    rows, today = [], str(datetime.date.today())
+    for kind, lang, iid, part, folder, st in _baseline_items():
+        s = st()
+        hashes = {s["hash"]} if s["state"] == "reviewed" else set()
+        if kind == "lesson" and part == "exercises" and not hashes and isinstance(src := published_exercises(folder), Commit):
+            hashes = {x for x in (hash_at(src.sha, folder, "exercises"), hash_at(src.sha, folder, "all")) if x}   # the version the page shows
+        rows += [[kind, lang, iid, part, x, today] for x in sorted(hashes)]
+    VISUAL_GATE = was
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
+    BASELINE.write_text("# Visual baseline (teacher's brief 2026-10-31; scripts/reviews.py module docstring). Not reviews: what science and\n"
+                        "# pedagogy had passed when the visual review became mandatory, each row valid for its content hash only.\n"
+                        "# Written once by `reviews.py baseline init`; never add or edit a row (verify fails); remove rows freely.\n"
+                        + "\t".join(BASELINE_COLS) + "\n" + "".join("\t".join(r) + "\n" for r in rows))
+    print(f"wrote {len(rows)} baseline rows to {BASELINE.relative_to(ROOT)}")
+
+
+def baseline_report():
+    """Every part still on the visual baseline (published, never visually passed), and the parts whose baseline no
+    longer holds (changed since; they need their first visual review before they can be published again)."""
+    waiting, audited, lapsed, fallback = collections.defaultdict(list), [], [], []
+    keys = {(r["kind"], r["lang"], r["id"], r["part"]) for r in baseline_rows()}
+    for kind, lang, iid, part, folder, st in _baseline_items():
+        if (kind, lang, iid, part) not in keys: continue
+        s = st(); v = s["reports"].get(VISUAL)
+        name = iid + (" exercises" if part == "exercises" else "")
+        if v == "PASS": continue
+        if s.get("baseline"):
+            waiting[(lang, kind)].append(name)
+            if v == "FAIL": audited.append(f"{lang} {kind} {name}")
+        elif kind == "lesson" and part == "exercises" and isinstance(published_exercises(folder), Commit):
+            fallback.append(f"{lang} {name}")             # its pages show the version passed before the edit (published_exercises)
+        else: lapsed.append(f"{lang} {kind} {name}: {s['state']} (visual={v})")
+    total = sum(len(v) for v in waiting.values())
+    print(f"visual baseline: {total} published part(s) await their first visual review" + ("" if VISUAL_GATE else " (gate not active yet)"))
+    for (lang, kind), names in sorted(waiting.items()): print(f"  {lang} {kind} ({len(names)}): {', '.join(sorted(names))}")
+    if audited: print(f"audited, visual FAIL on record, still published under the baseline ({len(audited)}): " + "; ".join(audited))
+    if fallback: print(f"exercise sets edited since their last review: the pages show the version published before, under its baseline row ({len(fallback)}): " + ", ".join(fallback))
+    if lapsed: print(f"baseline no longer holds (content changed; a visual PASS is needed to publish) ({len(lapsed)}):\n  " + "\n  ".join(lapsed))
+
+
+def verify_baseline():
+    """Errors: a row the file's first commit did not have (the baseline only ever shrinks), or a malformed row."""
+    if not BASELINE.is_file(): return []
+    rel = BASELINE.relative_to(ROOT).as_posix(); errs = []
+    for r in baseline_rows():
+        if len(r) != len(BASELINE_COLS) or r["kind"] not in ("lesson", "investigation", "guide", "sovella") or not re.fullmatch(r"[0-9a-f]{16}", r.get("hash", "")):
+            errs.append(f"{rel}: malformed row {r}")
+    first = (git("log", "--diff-filter=A", "--format=%H", "--", rel) or "").split()
+    if not first: return errs                           # not committed yet (the commit that writes it)
+    orig = git("show", f"{first[-1]}:./{rel}") or ""
+    have = {l for l in orig.splitlines() if l.strip() and not l.startswith("#")}
+    errs += [f"{rel}: row added after the baseline was written: {l}" for l in BASELINE.read_text().splitlines()
+             if l.strip() and not l.startswith("#") and l not in have]
+    return errs
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     part = "exercises" if "--exercises" in a else "lesson"; a = [x for x in a if x != "--exercises"]
@@ -764,6 +974,7 @@ if __name__ == "__main__":
     elif a[0] == "scope": print_scope(find_lesson(a[1]), part)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
+    elif a[0] == "baseline": baseline_init() if a[1:2] == ["init"] else baseline_report()
     elif a[0] == "verify":
         bad = 0
         for f in [f for lang in i18n.languages() for f in courses.lessons(lang=lang)]:
@@ -771,5 +982,6 @@ if __name__ == "__main__":
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
                 for e in verify_carries(f, p): print("ERROR", e); bad += 1
+        for e in verify_baseline(): print("ERROR", e); bad += 1
         sys.exit(1 if bad else 0)
     else: sys.exit(__doc__)
