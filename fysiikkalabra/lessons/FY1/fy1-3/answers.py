@@ -28,7 +28,7 @@ a["fy1-3-L1-04"] = 48.7 - 1.2                                      # zero correc
 a["fy1-3-L1-05"] = 1.0 / 2                                         # reading uncertainty estimated as half the smallest division = 1 mm / 2 = 0,5 mm
 # Level 2: conversion, two steps or a rearrangement
 t6 = [1.84, 1.91, 1.78, 1.88, 1.96, 1.82]
-a["fy1-3-L2-01"] = half(t6) / mean(t6) * 100                       # relative uncertainty = Δt / mean = 0,09 s / 1,865 s = 4,8 %
+a["fy1-3-L2-01"] = half(t6) / mean(t6) * 100                       # relative error = Δt / mean = 0,09 s / 1,865 s = 4,8 %
 tape = [1.012, 1.009, 1.011]
 a["fy1-3-L2-02"] = (mean(tape) - 1.000) * 1000                     # tape zero error = mean − 1,000 m = 0,01067 m = 10,7 mm
 a["fy1-3-L2-03"] = mean([12.4, 0.125 * 100, 123 / 10])             # 12,4 cm; 0,125 m = 12,5 cm; 123 mm = 12,3 cm; mean 12,4 cm
