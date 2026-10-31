@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 6592b9fd7070d4cc
+VERDICT: PASS
+CONTENT-HASH: 6d344e8dd6cf6285
 
 ## Blocking
-- [Major] Figure 4 `zero-scale` (fig-4-390; lesson.md line 449) — round 1 item still open: the top label "systematic error: zero" reads in English as "the systematic error is zero", the opposite of what the figure shows (empty scale reads 1.2 g) — changes the figure's meaning — rename to "zero error" (or "wrong zero: systematic error"). The content hash is unchanged since round 1, so the lesson was not edited.
+(none)
 
-## Resolved from round 1
-- "(vakio)" on locked sliders: now "(fixed)" in exp-1 at 390 (template fix confirmed).
+## Resolved from round 2
+- Figure 4 `zero-scale` (fig-4-390): the top label now reads "systematic error: wrong zero" in a wider box. It is whole, centred above the dashed divider, not clipped or touching the figure edge, and no longer says the error is zero. The figure now matches the paragraph beside it (empty scale reads 1.2 g).
+- "(vakio)" on locked sliders: "(fixed)" (earlier round).
 
 ## Polish
-- [Minor] sim-1280 — the simulation card ends mid-line ("…Black line:") with the disclosures not visible; likely a clipped capture (the 390 capture is complete), please confirm.
-- [Minor] Figure 4 — $m_0$, $m_\text{reading}$ differ from the lesson's $x_\text{reading}$, $\Delta x_\text{sys}$; align or link.
+- [Minor] Figure 4 — the labels use $, \text{reading}$, while the lesson's formulas use \text{reading}$, $\Delta x_\text{sys}$; align or link the notation.
+- [Minor] sim-1280 — the capture again ends mid-line ("…Black line:") with the disclosures not visible. The 390 capture is complete, so this looks like a capture-height artefact; please confirm it is not a clipped card.
 - [Minor] Key idea — "all add a deviation to it", "Repeating and the mean do not remove it", "looked for" read as translated; e.g. "all introduce a deviation", "Neither repeating nor averaging removes it", "it is checked for".
-- [Minor] Lab readings table (exp-1, 1280) — fourth column cut at the card edge, only a fade as cue.
 
 ## Checked
-- Captures opened: contact-1, fig-4-390, exp-1-390-1, sim-1280. The rest of the page judged unchanged from round 1 (same hash).
+- Captures opened: contact-1 (top, sim, figs 1–5, worked example start, Think about it, Predict), fig-4-390, fig-2-390, fig-5-390, sim-1280. Figures 1 and 3 seen on the contact sheet. The rest judged unchanged from round 2; no other layout change visible.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4
