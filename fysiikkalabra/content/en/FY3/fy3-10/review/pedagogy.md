@@ -1,21 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 1f38648415996384
+VERDICT: PASS
+CONTENT-HASH: f77ed29cd96c1d51
 
 ## Blocking
-- inquiry.json check-2 `solution`, Principle — "$pV = NkT$" uses k, which the lesson never defines (the lesson works with n, R and $N_A$) — a student who could not solve the task meets an unexplained symbol. Fix: derive the ratio from $p \propto NT/V$ (the lesson's own result, shown in the paine-ja-tekijat figure and the Formula section), or write "$pV = nRT$ with $n \propto N$" and drop k.
 
 ## Polish
-- lesson.md Key idea ("the temperature in kelvins is directly proportional to the mean kinetic energy of the particles") — mean kinetic energy is FY4 per the FY3 scope; and nothing in the investigation uses it. Fix: "the particles move faster the higher the temperature in kelvins", as the figures already show.
-- inquiry.json workload — the core path has about ten Tutki items (3 weighing items, pred-1, sim, two experiments, taulukko, laske-r, conclusion), close to a full lesson before Sovella and the checks. Fix: mark `taulukko` optional (it repeats what exp-1/exp-2 and laske-r already show) and keep `laske-r`.
-- inquiry.json hook/pred-1 — the opening question about the balloons has no committed prediction before the weighing data; pred-1 is a deduction after the data, so "Return to your predictions" in reflect shows a prediction made with the evidence in hand. Fix: move a short "same number of particles?" choice before `punnitus`, or retitle pred-1 as a deduction and keep only pred-n in reflect.
-- inquiry.json exp-2 — the T-proportionality is never predicted or measured on its own; the student infers it from one cross-experiment row (N = 100 at 600 K versus 300 K). Acceptable, but a one-row justification for the hint "the pressure doubled" is thin; the explicit sentence in hint 1 could ask the student to write the ratio first.
-- inquiry.json lahtolippu / exit-ticket.json — the exit ticket tests the calculation skill only; the lesson's core idea (same p, V, T gives same n, whatever the gas) is tested only in the optional check-3. Fix: add a second exit question on it or make check-3 non-optional.
+- lesson.md Key idea ("the temperature in kelvins is directly proportional to the mean kinetic energy of the particles") — mean kinetic energy is FY4 per the FY3 scope and nothing in the investigation uses it (carried from round 1). Fix: "the particles move faster the higher the temperature in kelvins", as the figures show.
+- inquiry.json workload — the core path still has about ten Tutki items (3 weighing items, pred-1, sim, two experiments, taulukko, laske-r, conclusion). Fix: mark `taulukko` optional; it repeats exp-1/exp-2 and laske-r.
+- inquiry.json pred-1 / reflect — pred-1 is a deduction after the weighing data, yet reflect lists it under "your predictions". Fix: retitle it a deduction and keep only pred-n in reflect, or put a short "same number of particles?" prediction before `punnitus`.
+- inquiry.json lahtolippu / exit-ticket.json — the exit ticket tests only the calculation; the core idea (same p, V, T gives same n for any gas) sits only in the optional check-3. Fix: add a second exit question on it, or make check-3 non-optional.
+- Simulation English text (fy3-10-sim-390.png): decimal commas ("1,17", "1,5", "0,0 s") and "Speed: normal (0.5x)" beside a "mean over 0,0 s" reading that confuses before the first run. Fix: English decimal points; show "–" until a mean exists.
 
 ## Checked
-- Learning path follows the slot goal (equation of state, solving for a quantity); weighing then simulation then theory, answer to the opening question withheld until the student has the data.
-- pred-n can be refuted by exp-1 (hit counts and pressure per N); each wrong option's feedback repairs its misconception; locked parameters and the minimum of 2 rows are set.
-- Worked example is staged one step per stage, with unit conversion and reasonableness; it differs from the exercises and siirto.
-- Misconception-based distractors in check-1 and check-c2 (Celsius doubling, percentage of degrees) are good; mistakes[] values in laske-r and siirto match real unit errors.
-- Explain criteria in johtopaatos and check-3 are observable and match the prompts; model values and invented weighing data are labelled.
-- Figures: not checked visually; no captures were supplied (packet says none yet), so legibility at 360 and 1280 px and the sim's behaviour when moved are unverified.
-- Finnish and the exercises/ set are out of scope for this English packet.
+- Round 1 blocking resolved: check-2 solution now uses p ∝ NT/V and N ∝ n; no undefined k.
+- Learning path follows the slot goals (solve for a quantity from pV = nRT, gas laws combined, particle-level pressure); the balloon question is answered only after the weighing data and the student's commitment.
+- pred-n is refutable by exp-1 (initial state set, T and V locked, min 2 rows); every wrong option's feedback repairs its misconception, and the closed Ennusta box reads sensibly afterwards.
+- exp-2 gives a real challenge (find N for p = 1.00 at 600 K) whose result emerges from counted hits; hints and mistakes[] match real errors.
+- Worked example: seven stages, one step each, with conversions and reasonableness; it differs from siirto and the exercises.
+- check-1 and check-c2 distractors are misconception-based (Celsius doubling, degrees as percent); explain criteria are observable.
+- Figures (#3-#7) are uncluttered, labelled and legible at 390 px; the lab at 1280 px shows sim beside the experiments; the readings table fits at 390 px.
+- Phone usability: sim controls, readout and the three explanation boxes are readable at 390 px; nothing clipped.
+- Exercises and Finnish are out of scope for this packet.

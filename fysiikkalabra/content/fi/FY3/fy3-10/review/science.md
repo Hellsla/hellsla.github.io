@@ -1,23 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5e3d91121ea79e92
+CONTENT-HASH: e0f90cf823e55c4a
 
 ## Blocking
 
 ## Polish
-- inquiry.json:507 (check-2 solution): "Jokaisella hetkellä pätee $pV = NkT$". $k$ is not defined anywhere in the lesson, and the sim's pressure fluctuates, so the law holds for the averaged pressure, not at every instant. Fix: derive $p \propto NT/V$ from $pV = nRT$ with $n = N/N_\text{A}$, and drop "jokaisella hetkellä".
-- inquiry.json:322 (laske-r Periaate): "harvat todelliset kaasut noudattavat niitä hyvin" reads as "few real gases". Fix: "todelliset kaasut noudattavat niitä hyvin, kun kaasu on harvaa".
-- inquiry.json:422 (siirto Järkevyys): "700 kg kevyempää kuin syrjäyttämä ulkoilma" assumes 20 °C outside air, which the task never gives. Fix: add "jos ulkoilma on 20 °C".
-- lesson.md:230: the "Siksi" makes $T \propto \langle E_k\rangle$ follow from neglecting interactions, which is not the reason. For the molecular gases used here (N₂, air, CO₂), the energy proportional to $T$ is the kinetic energy of the motion from place to place (guardrail). Fix: drop "Siksi … ja" and say "etenemisliikkeen liike-energiaan".
-- lesson-answers.py: it does not compute the worked example, virhe, siirto, check-2 or the exit ticket. I recomputed them myself (all correct), but they belong in the file.
+- lesson.md:230 — "Siksi hiukkasten välisten vuorovaikutusten energia on mallissa merkityksetön, ja kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan": the "Siksi" reads as if T ∝ mean kinetic energy follows from the missing interactions (it holds in real gases too). Split it into two sentences.
+- lesson.md:473 (Tiivistelmä) — "Samassa paineessa, lämpötilassa ja tilavuudessa on aina yhtä monta moolia kaasua": the next bullet gives the model's limit, so this is C. "ideaalikaasun mallissa" in place of "aina" would match the Kaava section.
+- inquiry.json:445 (check-1, correct feedback) — "kukin hiukkanen osuu seiniin useammin": in the sim only the right wall moves, so the hits per particle less than double. What doubles is the hits per unit wall length. Adding "seinän pituutta (pinta-alaa) kohti" would make it exact.
 
 ## Checked
-- One script recomputed every number from the task data: the weighing masses against $n = pV/(RT)$ with ±0,02 g scatter, every $m/M$, the mean 0,2071 mol, $R$ ≈ 8,3 (8,319 and 8,302), all the mistake values (121,7; 8302; 0,008302; 4,82; 3,32; 70,7; 9870; 2,64; 2,25; 1,69), the worked example 0,2073 mol and 0,83 g, virhe 1,2 → 0,083 mol, siirto 91 200 mol and 2645 kg, check-c2 1,068, check-2 3,0, the exit ticket 0,601 mol, and $V_m$ ≈ 24 l. All agree.
-- Sig-fig reasoning in each solution names the datum that really limits it.
-- Figures: the speed-arrow ratio 2,7 = √(29/4); the mass bars are 4 : 29 : 44 to scale; the 2T arrows are ≈ √2 longer; 2N has 12 particles; V/2 has 6 particles in half the volume.
-- sim.js physics: $p = NkT/A$ in 2D (impulse per unit perimeter), $kT/m = \langle v^2\rangle/2$, Box–Muller thermal speeds, exact rethermalisation on an N change, $v \propto \sqrt{T}$, and V changes at constant speed (stated in the model box).
-- Sim in Playwright, 20 s runs: every state including the taulukko rows, exp-2 (600 K → 2,00, N = 50 → 1,00) and check-2 (3,00) matches $(N/100)(T/300)(100/V)$. Noise is 3–5 % SD at N ≥ 50 and −8…+11 % at N = 20, which agrees with the stated "±10 %". The taulukko values are plausible draws.
-- exp-1 and exp-2: T and V are locked, only N varies, and hitRate and pMeasured exist in simState.
-- Exactly one option is correct in every choice item, and each distractor's feedback names the right mechanism (impulse $mv$ against hit rate in pred-1).
-- Ideal-gas limits (high p, low T) are stated in the theory, the R paragraph and the summary. Celsius against kelvin and the Pa·m³ = J argument are correct.
-- Scope: the lesson stays inside FY3 (state variables, the ideal gas law, gas laws as special cases).
-- The johtopäätös and check-3 model answers agree with the theory and label model values against example data.
+- One script recomputed every number: weighing masses vs n = pV/(RT) = 0,2072 mol (all within ±0,02 g); m/M 0,2075/0,2064/0,2076/0,2068; mean R 8,32 → "≈ 8,3"; laske-r 8,302 and the mistakes 121,7 / 8302 / 0,0083; example 0,2073 mol, 0,83 g, air 6,0 g, 24,1 l/mol.
+- virhe 1,2 → 0,083 mol; siirto 91 200 mol, 2645 kg, the mistakes 9870 and 2,64, the reasonableness check 1,20 kg/m³ → 3366 kg · 293/373 ≈ 2640; exit ticket 0,601 mol; check-c2 1,068; check-2 3,0; exp-2 N = 50.
+- sim.js: impulse 2|v⊥| over the perimeter gives NkT/A exactly in 2D; T rescales by √T; thermalize after N changes; V is isothermal by construction, and the model box says so.
+- Ran the preview in Playwright: measured p/p_ref matches the prediction at the five table states and at (150, 450 K, 75 %); the scatter is about ±5 % at N = 100 and ±10 % at N = 20. The taulukko values (3,91 etc.) are within the sim's scatter.
+- exp-1/exp-2 lock T and V, vary N, and the measured keys pMeasured and hitRate exist in simState.
+- Figures: speed arrows He:air 32:12 ≈ 2,7 = √(29/4); mole-mass bars 14:101,5:154 = 4:29:44; the paine-ja-tekijat figure has particle counts 6/12/6/6, the 2T arrows are √2 longer, and V/2 has half the height.
+- pred-n, pred-1, punnitus-vertailu, taulukko, check-1, check-c2 and virhe each have exactly one correct option, and each distractor's feedback is correct (He: rate ×2,7 and momentum ÷2,7 → same p).
+- Scope: within FY3 (state variables, gas laws, the ideal-gas equation); there is no later-course physics as a requirement.
