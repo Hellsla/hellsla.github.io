@@ -71,8 +71,8 @@ def pysaytys():
             "illaan miinus 80 newtonia ja törmäys kestää 0,039 sekuntia, kapea ja syvä käyrä. Pehmeä puskuri: voima on suurimmillaa"
             "n vain miinus 20 newtonia, mutta törmäys kestää 0,157 sekuntia, matala ja leveä käyrä. Käyrien ja vaaka-akselin välise"
             "t alueet on varjostettu, ja ne ovat yhtä suuret: kummankin impulssi on miinus 2,0 newtonsekuntia.")
-    ax = Axes(f, (92, 286), (478, 52), x=(0, 0.2), y=(-100, 0), xticks=[0, 0.05, 0.1, 0.15, 0.2], yticks=[-100, -80, -60, -40, -20, 0],
-              xlabel=r"t\ (\text{s})", ylabel=r"F_x\ (\text{N})")      # signed, like the sim: the bumper pushes the cart back
+    ax = Axes(f, (92, 300), (478, 72), x=(0, 0.2), y=(-100, 0), xticks=[0, 0.05, 0.1, 0.15, 0.2], yticks=[-100, -80, -60, -40, -20, 0],
+              xlabel=r"t\ (\text{s})", ylabel=r"F_x\ (\text{N})", x_at=0)   # signed, like the sim: the time axis at F_x = 0, the curves below it
     for Fm, T, dash, lx, ly, name in ((-80, 0.03927, None, 0.048, -80, r"\text{kova}"), (-20, 0.15708, "9 6", 0.162, -30, r"\text{pehmeä}")):
         w = math.pi / 2 / T
         pts = [(T * i / 60, Fm * math.sin(w * T * i / 60)) for i in range(61)] + [(T, 0)]

@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0277f559f7d013b3
+CONTENT-HASH: 94a25355702d3770
 
 ## Blocking
 
 ## Polish
-- inquiry.json (siirto, palikka/vaaka -ratkaisu, voimakuvio) — labels $\overline{N}$ and $\overline{F}_y$ touch ("NF_y") because N starts near the body's right edge, where F_y's dashed component also stands. — Move N to the left on the base or shift the F label.
-- inquiry.json (kyltti-ratkaisu) — the dashed $T_{1x}$ and $T_{2x}$ run along the body's top edge, so they read as part of the outline. — Lift the components a little above the edge or mark the body edge.
-- inquiry.json sim "model" — the new sentence (T vs F with one symbol) is long and sits in a box that is already dense. — Split it in two: "Narun voimaa merkitään yleensä T:llä. Simulaatiossa sekä vetoa että työntöä merkitään F:llä, koska ne vaihtuvat."
-- inquiry.json exp-1 solution, Vastaus — "Erotuksessa ratkaisee desimaalien määrä, ei merkitsevien numeroiden määrä" is more than a 17-year-old needs here. — Cut to the first two sentences.
+- inquiry.json exp-1 question — the earlier Polish items (touching N and F_y labels in the palikka figure, T_1x/T_2x along the sign's top edge, the long T/F sentence in the sim "model" box, the long Vastaus sentence on decimals) are not part of this diff and remain open; none blocks. — Fix when the lesson is next edited.
 
 ## Checked
-- Hook "vuorotellen" and the lesson.md "alustaansa" wording are clearer; the opening question still reads as one question and is not answered by the text.
-- Added T/F symbol note is honest about the simulation's single symbol and consistent with the glossary (jännitysvoima T); it does not give away the exp-1 answer.
-- Added voimakuvio blocks (exp-1, palikka, kala, kyltti) are placed after the Voimakuvio paragraph and before the Kaava, so each solution draws before it calculates; verified in rendered captures.
-- Kala: T longer than G, a up beside the body in orange, not a force. Kyltti: T_1, T_2 distinct symbols, dashed components, G alone downwards.
-- exp-1 diagram: N 146 N + F_y 50 N = G 196 N, a to the right; consistent with the table.
-- The Vastaus rewrite (whole newtons, accuracy about 1 N) is correct and removes the previous odd significant-figure claim.
-- Hash 0277f559f7d013b3 at start and end.
+- The only change is the question prompt "...suurempi kuin paino 196 N, kun kulma α > 0°?". It removes the ambiguity at α = 0° (N = G there, so the old wording was false for the first table row) and fits the table the student has just filled in.
+- The addition names a condition, not the cause: it does not disclose the answer. Correct option (F_y points down, N = G + F_y) still has to be reasoned out; the distractors (mass grows, "motion force") keep their misconception-repairing feedback.
+- The prompt is one sentence, the question stays last, the Finnish is correct ("kun kulma α > 0°" with the degree sign).
+- The question sits after exp-1 (min 2 rows), so the student has a row with α > 0° to refer to; the feedback texts need no change.
+- Hash 94a25355702d3770 at start and end.

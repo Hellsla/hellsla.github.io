@@ -1,26 +1,27 @@
-VERDICT: FAIL
-CONTENT-HASH: 262607ec813fe5a1
+VERDICT: PASS
+CONTENT-HASH: 77d0c5813b2c4c1b
 
 ## Blocking
-- inquiry.json:144 (sim `calc`) — **B.** It says "$x_\text{B} - x_\text{A}$ on B:n etumatka: se on positiivinen, kun B on edellä" for every case, but in case 1 (koe 1) the bodies meet head-on and B moves in the negative direction. A larger $x$ is not "ahead": this is the replaced error in another form. — Fix: "Lukema $x_\text{B} - x_\text{A}$ kertoo, kuinka paljon suurempi B:n paikkakoordinaatti on, ja se on nolla kohtaamishetkellä. Kun kappaleet liikkuvat positiiviseen suuntaan, se on B:n etumatka."
-- inquiry.json:190, 191, 203 (koe 1 hints 2–3 and solution) — **B**, the same error. The separation in the head-on case is called "etumatka" (for example "Etumatka on aluksi 60 m"), but neither body is ahead. — Fix: write "välimatka" or "paikkojen ero $x_\text{B} - x_\text{A}$". Koe 3 can keep "etumatka": both bodies move in the $+x$ direction there.
 
 ## Polish
-- lesson.md:462 (vt aria-label) — "Hetkeen t = 3,0 s asti pyöräilijä on edellä ja etumatka kasvaa" reads as if the cyclist leads only until 3,0 s. — Fix: "Pyöräilijä on edellä, ja hetkeen 3,0 s asti etumatka kasvaa".
-- The en and fi-easy inquiry.json carry the same sentences. Regenerate them after the fix.
-- The checker rule higher-line-ahead missed the "positiivinen, kun B on edellä" form.
+- lesson.md:462 (vt aria-label): "Hetkeen t = 3,0 s asti pyöräilijä on edellä ja etumatka kasvaa" still reads as if the cyclist leads only until 3,0 s. Fix: "Pyöräilijä on edellä, ja hetkeen 3,0 s asti etumatka kasvaa". The en version has the same wording.
+- lesson.md:616: "etumatka on suurimmillaan tai pienimmillään" is fine in the same-direction context. Writing "välimatka" would make it read right for any direction.
 
 ## Checked
-- lesson.md:338 uses the teacher's wording, and "edellä" is limited to motion in the $+x$ direction.
-- No other claim that a higher line means "ahead" appears in lesson.md, the figure labels, the exit ticket, sim-spec, sim.js or the sim's readout strings.
-- Every other use of edellä, takana and etumatka is in a situation with motion in the $+x$ direction.
-- I recomputed every number and all agree:
-  - head-on meeting: 12 s, 36 m
-  - same-start pass: 6,0 s, 36 m, 2v, gap 9 m
+- Round 1 item 1 is fixed. The sim `calc` (inquiry.json:144) now says that $x_\text{B} - x_\text{A}$ tells how much larger B's position coordinate is and that it is zero at the meeting. It calls it B's etumatka only when the bodies move in the positive direction. The en and fi-easy versions say the same.
+- Round 1 item 2 is fixed. Koe 1's hints 1–3 and its solution say "paikkojen ero" and nowhere "etumatka" or "edellä", in fi, fi-easy and en. Pred-1 and check-2, the other head-on items, use neither word.
+- lesson.md:338 keeps the teacher's two sentences word for word. It then adds the direction rule: in the +x direction the higher line belongs to the body ahead, and in the −x direction the lower line does. This is correct, because in the −x direction the body ahead has the smaller x.
+- Every other use of edellä, takana, jäljessä and etumatka was scanned: the hook, pred-2/3, Koe 2, Koe 3, ei-kohtaa, the conclusion, Etsi virhe, siirto, check-3, the v–t paragraph and the summary. Each one is in a situation where both bodies move in the +x direction. Koe 3 uses "etumatka $x_\text{B}-x_\text{A}$" with motion in +x, so it is consistent.
+- No text equates a higher line, or a positive $x_\text{B}-x_\text{A}$, with "ahead" without the direction condition. This covers lesson.md, the captions, the exit ticket, sim-spec, sim.js and its readout and case labels ("edellä oleva on nopeampi" is case 4, in +x).
+- All numbers were recomputed in one script and agree:
+  - head-on: 12 s, 36 m
+  - same-start pass: 6,0 s, 36 m, 2v, largest gap 9 m
   - example: 8,0 s, 64 m, 16 m/s, other root −2,0 s, 25 m
-  - sim cases 1, 4 and 5: 50 m; −10 s; 1,55 s and 6,45 s
-  - transfer task: 24 m/s
-  - check-2: 6,0 s, with mistakes at 15, 30 and 10 s
-- The sim implements the model and states its limits.
+  - case 1: 50 m
+  - case 4: −10 s
+  - case 5: 1,55 s and 6,45 s
+  - siirto: 24 m/s (96 m)
+  - check-2: 6,0 s
+- simState provides xA, xB, vA, gap and meetings, which are the keys the experiments measure.
 - Each choice item has exactly one correct option, and its feedback is right.
-- The hash is unchanged from start to end.
+- The hash is the same at the start and at the end.
