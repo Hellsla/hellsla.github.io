@@ -1,6 +1,6 @@
 // fy4-9 Liikemäärä ja impulssi: a laboratory cart runs to the right (+x) and hits a bumper at the wall. The physics is in
 // model.js (window.FY49Model, tested by tests/models/fy4-9.test.js): the bumper's force F_x = −k c points to the left, a
-// crushable bumper ("pysahtyy") stays crushed and its force ends when the cart stops, a spring bumper ("kimpoaa") turns the
+// crushable bumper ("pysahtyy") gives a whole smooth pulse and the cart stays at rest, a spring bumper ("kimpoaa") turns the
 // cart back. This file only draws the model's state and records the earlier runs.
 // Top: the situation picture with the cart's velocity (blue), momentum (purple) and the bumper's force on it (red), each
 // drawn from its signed x-component. Bottom: the (t, F_x) graph. The force on the cart points to the left, so its curve

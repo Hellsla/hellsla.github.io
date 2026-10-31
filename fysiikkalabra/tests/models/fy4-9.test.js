@@ -17,6 +17,9 @@ for (const m of [0.5, 1, 2]) for (const v1 of [0.5, 1, 1.5, 2]) for (const b of 
     check(`${id}: the stopped cart stays where it is, no force after the stop`, s.x === x && s.v === 0 && M.Fx(s) === 0);
     near(`${id}: the crushed bumper absorbed the kinetic energy ½ m v1²`, M.energy(s).Eb, 0.5 * m * v1 * v1, 0.01);
     near(`${id}: Δp_x = −m v1`, dp, -m * v1, 0.002);
+    const iMin = s.curve.reduce((b, c, i) => c[1] < s.curve[b][1] ? i : b, 0), tMid = s.curve[iMin][0];
+    check(`${id}: a whole pulse: the force is largest half-way and falls smoothly to zero as the cart stops`,
+          Math.abs(tMid - s.kesto / 2) < 0.03 * s.kesto && s.curve[s.curve.length - 2][1] > 0.1 * s.Fmin);
   } else {
     check(`${id}: the cart bounces back (v2 < 0)`, s.v2 < 0);
     near(`${id}: the ideal spring keeps the kinetic energy: |v2| = v1`, -s.v2, v1, 0.002);

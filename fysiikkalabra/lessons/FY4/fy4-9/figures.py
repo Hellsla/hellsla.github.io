@@ -74,8 +74,8 @@ def pysaytys():
     ax = Axes(f, (92, 300), (478, 72), x=(0, 0.2), y=(-100, 0), xticks=[0, 0.05, 0.1, 0.15, 0.2], yticks=[-100, -80, -60, -40, -20, 0],
               xlabel=r"t\ (\text{s})", ylabel=r"F_x\ (\text{N})", x_at=0)   # signed, like the sim: the time axis at F_x = 0, the curves below it
     for Fm, T, dash, lx, ly, name in ((-80, 0.03927, None, 0.048, -80, r"\text{kova}"), (-20, 0.15708, "9 6", 0.162, -30, r"\text{pehmeä}")):
-        w = math.pi / 2 / T
-        pts = [(T * i / 60, Fm * math.sin(w * T * i / 60)) for i in range(61)] + [(T, 0)]
+        w = math.pi / T                                          # a whole pulse, as in the sim's crushable bumper
+        pts = [(T * i / 60, Fm * math.sin(w * T * i / 60)) for i in range(61)]
         ax.area([(0, 0)] + pts, HOT_LIGHT, 0.45)
         ax.line(pts, RED, 3, dash)
         f.tex(ax.X(lx), ax.Y(ly), name, "start", RED, bg=True)

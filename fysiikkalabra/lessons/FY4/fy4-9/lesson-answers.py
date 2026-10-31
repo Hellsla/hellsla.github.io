@@ -6,8 +6,9 @@ import json, math
 a = {}
 # The simulation's model (assets/sims/fy4/fy4-9/sim.js): a cart of mass m moves to the right (+x) at v1 on a level
 # track without friction and hits a bumper of spring constant k at the wall. While the bumper is pressed by x, its
-# force on the cart is F = k x to the left. "pysahtyy": a crushable bumper that does not spring back, so the cart stops
-# when its velocity reaches 0; "kimpoaa": a spring bumper that pushes the cart back until it leaves the bumper.
+# force on the cart is F = k x to the left. "pysahtyy": the cart stops when its velocity reaches 0 (the sim's crushable
+# bumper is a smooth half-sine pulse with this same duration, largest force and impulse, so these numbers hold for it);
+# "kimpoaa": a spring bumper that pushes the cart back until it leaves the bumper.
 # RK4 steps of 0,1 ms of simulated time; the impulse I is the area under the recorded force (trapezoids), with the
 # minus sign of a force pointing to the left; Δt from the first contact to the end of the contact.
 K = {"kova": 1600.0, "keski": 400.0, "pehmea": 100.0}
