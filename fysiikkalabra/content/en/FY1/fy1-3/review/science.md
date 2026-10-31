@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6592b9fd7070d4cc
+CONTENT-HASH: 6d344e8dd6cf6285
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 6592b9fd7070d4cc
 - Exactly one correct option per choice item, distractor feedback right; exit ticket 19.9 g and 2 % right. Experiments lock sat/sys and vary only n or sat.
 - All numbers and correct flags of inquiry.json, exit-ticket.json and meta.json agree with content/fi (scripted comparison); lesson.md says the same physics as the Finnish lesson.
 - Round 2 (git diff HEAD~2: only the Summary's first bullet changed): "Every measurement result has some uncertainty. The error is usually not known…" is right, matches the Key idea and content/fi, and keeps error (signed, x − x_true) and uncertainty apart; hash 6592b9fd7070d4cc at start and end.
+- Round 3 (git diff ba9a5c85 -- content/en/FY1/fy1-3, excluding visual reports): only the figure label "systematic error: zero" -> "systematic error: wrong zero" (figures.json + regenerated lesson.md, label box widened 258 -> 320 and recentred at x=300). "Wrong zero" matches the lesson's own wording ("a wrong zero") and the Finnish "nollakohta" (zero point offset); the empty-scale 1.2 g example and m = m_reading - m_0 are unchanged. Nothing else differs; check_i18n 0 errors.

@@ -446,7 +446,7 @@ x = x_\text{reading} - \Delta x_\text{sys}
   <foreignObject x="96" y="321.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{empty: } m_0$</div></foreignObject>
   <foreignObject x="352.5" y="321.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{reading } m_\text{reading}$</div></foreignObject>
   <line x1="300" y1="48" x2="300" y2="352" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <foreignObject x="171" y="13.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{systematic error: zero}$</div></foreignObject>
+  <foreignObject x="140" y="13.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{systematic error: wrong zero}$</div></foreignObject>
   <foreignObject x="215" y="357.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m = m_\text{reading} - m_0$</div></foreignObject>
 </svg>
 

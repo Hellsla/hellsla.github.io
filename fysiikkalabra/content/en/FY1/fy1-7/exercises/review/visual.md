@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: fe6d6e914cd71382
+VERDICT: PASS
+CONTENT-HASH: d9d31f79667eabf1
 
 ## Blocking
-- [Major] exercises.json fy1-7-L3-01 (capture #48, open-exercises-L3-1280-1) — the answer unit is the Finnish word "kertaa" ("kertaa" shown beside the input field) in the English edition; solutions.md writes "times" — a Finnish word in an English exercise confuses the student and is a language-mixing defect — change `"unit"` to "times" (or "×"-free "times" label) in en/exercises.json.
 
 ## Polish
 - [Minor] solutions.md fy1-7-L2-03, "Reading the graph" — it is a measuring-cylinder figure, not a graph — rename "Reading the figure".
-- [Minor] exercises L2-03 figure (#45) — the scale shows "ml" at top but the cylinders have a dense tick pattern; legible, no fix needed beyond keeping the 2 ml marks distinct from the 10 ml marks.
+- [Minor] L3-01 answer note — "Times, three significant figures like the densities 8960 kg/m³ and 2.70 · 10³ kg/m³" is a fragment, and writes 2700 as 2.70 · 10³ although the substitution uses 2700 — write "The ratio has three significant figures, like the densities ..." and one form of the density.
+- [Minor] units shown as stacked fractions (g over cm³) in answers and solutions but as g/cm³ in the input label and task text — consistent in meaning, slightly uneven; leave or unify.
 
 ## Checked
-- contact-4; open-exercises-1280 level 1 (#38-42 via contact), level 2 (L2-3 opened at full size, #43-47 via contact), level 3 (#48-51 via contact); cylinders-read figure (readings 40 ml and 50 ml match the solution).
-- Solutions' maths layout (stacked fractions, aligned chains, boxed answers) reads cleanly at 1280 px.
+- Round 2. Round-1 Blocking resolved: L3-01 (open-exercises-L3-1280-1, #48) now shows the unit "times" beside the input field; no Finnish left.
+- Also opened: contact-4 (#37-#48, exit ticket, level 1 tail, level 2, level 3 start), open-exercises-1280-1 (level 1 task 1 with solution at full size). Layout intact: stacked fractions, aligned chains, boxed answers, the measuring-cylinder figure (#45) with 40 ml and 50 ml readings and the labelled scale all read cleanly; no clipping.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English editorial) 3 · accessibility 4
+illustrations 4 · typography 4 · Finnish (English editorial) 4 · accessibility 4

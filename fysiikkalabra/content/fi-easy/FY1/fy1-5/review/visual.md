@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fa6247ca4706fbc0
+CONTENT-HASH: 9aee59eec243934c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson, Kaava and Yksiköt paragraphs (theory-1280-1/2) — inline maths breaks across lines ("$\Delta s = s -$ / $s_0 = vt$", "$1\,\text{h} =$ / $3600\,\text{s}$", "$s$-/akselin") — hard to read — rephrase or keep each equation after its own sentence.
-- [Minor] example step 6 and Järkevyys (example-390-2) — "$s \approx$" and "$119{,}7 + 26 \approx$" wrap before the value — keep the result on the same line.
-- [Minor] graph fig 3 — $s_0$ has no value on the s-axis (orange line starts about 5 m) and the points at 6 m and 12 m are not ticked — label $s_0 = 5\,\text{m}$ or tick 5 m.
-- [Minor] koe-1/koe-2 tables and Alkutila line (lab-1280-1) — header "hetki" has no $t$ or "(s)", and "alkupaikka = 0 m" has a plain-text equals sign — write "$t$ (s)" and the Alkutila values as maths.
+- [Minor] lesson, Kaava and Yksiköt paragraphs (theory-1280-1/2) — inline maths still breaks across lines ("Δs = s −" / "s₀ = vt", "1 h =" / "3600 s") — put each equation after its own sentence.
+- [Minor] graph fig 3 — s₀ has no value on the s-axis (the orange line starts at about 5 m) and the 6 m and 12 m points are not ticked — label s₀ = 5 m or tick 5 m.
+- [Minor] koe-1/koe-2 tables and Alkutila line — header "hetki" has no t or "(s)"; "alkupaikka = 0 m" has a plain-text equals sign — write them as maths.
+- [Minor] example step 6 and Järkevyys (example-390-2) — "s ≈" and "119,7 + 26 ≈" wrap before the value — keep the result on the same line.
 - [Minor] Järkevyys, last sentence of the example — "Malli on siis tarkka murto-osan prosentista." is clumsy — "Malli on tässä tarkka alle prosentin tarkkuudella."
 
 ## Checked
-- contact-1 (triage); fig-1-390 (hero), fig-2-390 (motion), fig-3-390 (graph), fig-row-1280; top-390, sim-1280 (sim-390 via contact sheet)
-- example-390-1/2; theory-1280-1/2; lab-1280-1 (koe-1, koe-2, simulation beside experiments)
-- open-tarkista-1280-1 (feedback open); stage captures only via contact-1 (herata, ennusta, tutki)
+- Delta: the "Lineaarinen malli" paragraph in theory-1280-1: the new "Malli on silti hyvä, kun nopeus muuttuu tarkasteltavana aikana vain vähän." reads fluently, same length, layout unchanged.
+- theory-1280-1/2 (surrounding text, figure 2 motion strip, figure 3 graph, Yksiköt and Yleinen virhekäsitys)
+- Source diff read in full.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

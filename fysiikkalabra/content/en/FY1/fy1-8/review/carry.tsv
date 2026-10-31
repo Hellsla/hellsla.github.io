@@ -4,3 +4,6 @@ date	reviewer	from	to	base	categories
 2026-10-29	science	d2ec2093f4d25659	2bb088de0432984c	aff0bfefdeb1	illustration,objective-form
 2026-10-31	science	d2ec2093f4d25659	92f454f7fede264f	aff0bfefdeb1	illustration,objective-form,typography
 2026-10-31	pedagogy	2bb088de0432984c	92f454f7fede264f	54d9111187b1	typography
+2026-10-31	science	d2ec2093f4d25659	121faa1d2975c15d	aff0bfefdeb1	chapter-ref,illustration,objective-form,typography
+2026-10-31	pedagogy	2bb088de0432984c	121faa1d2975c15d	54d9111187b1	chapter-ref,typography
+2026-10-31	visual	92f454f7fede264f	121faa1d2975c15d	ba9a5c8527f6	chapter-ref
