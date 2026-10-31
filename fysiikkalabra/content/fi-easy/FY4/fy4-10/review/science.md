@@ -1,16 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 37da2defef2c46f3
+VERDICT: FAIL
+CONTENT-HASH: 6bbb8d0c567c8501
 
 ## Blocking
-
-## Round (delta)
-- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the fi-easy page: mass selects show 0,20/0,40/0,60 kg (decimal comma), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
+- lesson.md:396 (Tiivistelmä) — B: "Osat saavat yhtä suuret liikemäärät vastakkaisiin suuntiin" is still stated with no condition. It now contradicts the corrected theory (lesson.md:230), which says this holds only for a split into two parts and that with more parts only the vector sum is zero (guardrail: the same claim everywhere, the summary included). Fix: "Kun levossa oleva systeemi hajoaa kahdeksi osaksi, osat saavat yhtä suuret liikemäärät vastakkaisiin suuntiin, ja liike-energia kasvaa." (content/fi/FY4/fy4-10/lesson.md:396 has the same unconditional sentence, so it needs the same fix.)
 
 ## Polish
+- lesson.md:230 — "Siksi kivääri potkaisee taaksepäin" now follows the sentence about several parts, but it explains the two-part case. Put the rifle sentence straight after "Kevyempi osa saa suuremman nopeuden."
 
 ## Checked
-- Re-reviewed the passages changed since the earlier review (git diff a6af45ae): inquiry.json stage "simulaatio" (text, howto, model, calc) and the fy4-10 sim strings in lang/fi-easy.json (kok, sis, lukemat; selite unchanged) against the Finnish. lesson.md, exit-ticket.json, meta.json and figures.json are unchanged.
-- Every changed fact agrees with the Finnish: energy bars E_k, E_p (bumper or spring), E_sis and the dashed original total; kinetic energy dips for a moment even in an elastic collision; with the tape the bumper stays compressed and its energy becomes internal energy; E_p = 1/2 k d^2, k = 300 N/m; E_sis from the work of the bumper damping; E_k + E_p + E_sis constant; 4,0 cm, 0,24 J, 0,2 ms unchanged; decimal comma in all numbers and LaTeX; symbols E_k, E_p, E_sis, p_kok identical to the Finnish.
-- Readout string: same placeholders and order as the Finnish.
-- check_i18n 0 errors; figures.py fy4-10 --lang fi-easy --check clean; build.py fy4-10 run; check_layout fy4-10 OK at 360 and 1280 px.
-- Sim opened in the built fi-easy page at 390 and 1280 px, all four cases run: legend (E_k, E_p, E_sis), "ennen"/"nyt", p_kok and readout fit the canvas, no horizontal scroll.
+- batch delta review: the explosion claim (two parts from rest have equal and opposite momenta; more parts have a vector sum of zero and can have unequal momenta) is right and matches the fi source. "Liike-energia pienenee mahdollisimman paljon … muuttuu muiksi energiamuodoiksi" for a perfectly inelastic collision is right under momentum conservation, and "häviää" is gone. The removed level-policy sentence in the exercises text has no physics. No choice changed.

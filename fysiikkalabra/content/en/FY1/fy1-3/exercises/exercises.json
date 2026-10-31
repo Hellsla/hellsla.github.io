@@ -72,7 +72,7 @@
       "level": 2,
       "text": "The same length is measured five times with two instruments. Instrument A gives the results $5.2\\,\\text{cm}$, $5.6\\,\\text{cm}$, $5.4\\,\\text{cm}$, $5.3\\,\\text{cm}$ and $5.5\\,\\text{cm}$. Instrument B gives the results $5.40\\,\\text{cm}$, $5.43\\,\\text{cm}$, $5.41\\,\\text{cm}$, $5.42\\,\\text{cm}$ and $5.44\\,\\text{cm}$. How many times as large is half of the range of the results of instrument A compared with that of instrument B?",
       "answer": 10,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     }
   ],

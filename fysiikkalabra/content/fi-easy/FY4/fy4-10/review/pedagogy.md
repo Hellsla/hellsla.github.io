@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 37da2defef2c46f3
+CONTENT-HASH: 6bbb8d0c567c8501
 
 ## Blocking
-
-## Round (delta)
-- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the fi-easy page: mass selects show 0,20/0,40/0,60 kg (decimal comma), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
+(none)
 
 ## Polish
+- lesson.md Räjähdys — "Siksi kivääri potkaisee taaksepäin" now follows the multi-part sentences, so "siksi" points to the wrong case. Move the rifle sentence right after "Kevyempi osa saa suuremman nopeuden." (the two-part case).
+- lesson.md Törmäysten lajit — "Silloin ... Silloin mahdollisimman suuri osa siitä muuttuu" repeats "silloin" and "siitä" is vague. Plainer: "liike-energia pienenee mahdollisimman paljon, koska mahdollisimman suuri osa liike-energiasta muuttuu muiksi energiamuodoiksi."
 
 ## Checked
-- Re-read the changed simulation stage (text, howto, model, calc) and sim strings in plain Finnish. The text is split into short sentences, one thing in each: the energy is listed in its own sentence ("Energia on liike-energiaa, puskurin energiaa ja sisäenergiaa"), the dip of kinetic energy is followed by its reason ("Siksi ..."), and the tape case has its own sentence. Same content and the same $...$ mentions as the Finnish.
-- Terms are explained: puskurin energia, sisäenergia, katkoviiva = alkuperäinen kokonaisenergia. Teaching order, stages, predictions, hints and exit ticket unchanged.
-- Sim labels (ennen, nyt, kok, sis) are short and match the lesson. Opened the built fi-easy page at 390 and 1280 px in all four situations: labels fit.
+- Batch delta review: "liike-energia pienenee" replaces "häviää" (no stray "häviää" left in lesson, tasks or solutions; the only "hävisi" is a wrong option about momentum, which its feedback repairs). The two-part versus several-parts explosion is now clear: equal and opposite momenta for two parts, vector sum zero for more, and the rest case is stated. Level-policy sentence removed from the exercises text cleanly.

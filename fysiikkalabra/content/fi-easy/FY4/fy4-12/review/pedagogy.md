@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 463f4929fece27b2
+CONTENT-HASH: 6aa8d65bf01d593f
 
 ## Blocking
+(none)
 
 ## Polish
-- (none)
+- lesson.md title "Kahden kappaleen liikkeiden vertailu" is clear and plain, but it no longer says that the chapter finds when and where two bodies meet. The Miksi question and the Ydinajatus do say it, so this is only taste.
 
 ## Checked
-- fi-easy keeps short sentences: the Finnish direction rule is split into one idea per sentence, same content and same $...$ mentions; "paikkojen ero" is explained by the surrounding text.
-- Teaching order, hints and the Koe 1 solution stages are unchanged; the neutral wording in the hints avoids the false reading that the gap must be positive. Hash after the last edit: 463f4929fece27b2.
+- Batch delta review: the rename matches lesson.md and meta.json; the old name "kohtaaminen ja ohitus" is not left in any student-facing text of this version, and no other fi-easy chapter refers to it by name. The inquiry exercises text is shorter and keeps the working instructions (position as a function of time, draw the (t, x) graph).

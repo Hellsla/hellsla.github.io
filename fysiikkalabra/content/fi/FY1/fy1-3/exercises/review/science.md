@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c8939c0291044cc2
-
-Round 2: L1-03 tolerance 0,02 → 0,15 and the Vastaus line reworded; the round-1 blocking item is fixed.
+CONTENT-HASH: b191ea9ccf473f7b
 
 ## Blocking
-(none)
+
 ## Polish
-- exercises.json:26 — tolerance 0,15 accepts 0,2975…0,4025 s, so 0,30 s (a one-figure round-down, or a misread minimum 12,3 s) also passes; harmless, but 0,12 (0,308…0,392) would not.
+- lessons/FY1/fy1-3/answers.py:31 — the comment says "relative error" — make it "relative uncertainty" to match the term the lesson now uses.
+- exercises/solutions.md fy1-3-L1-02 Järkevyys — one reading against a known reference cannot alone separate a systematic error from a random one. "todennäköisesti systemaattinen" is fair, but adding "toistamalla mittauksen voisi varmistaa" would be better.
+
 ## Checked
-- (12,9 − 12,2)/2 = 0,35 s; 0,35 · 0,85 = 0,2975 and 0,35 · 1,15 = 0,4025, so both 0,35 and 0,4 pass; the full range 0,7 s is rejected.
-- New Vastaus: 0,35 s is the exact half-range, reported uncertainty one figure → 0,4 s, both accepted; agrees with the tolerance and NOTES §2.
-- Rest of the solution (figure reading, midpoint 12,55 ± 0,35) unchanged and still right.
+- Recomputed all 12 answers in one script with my own formulas: 0,51 s; +0,3 cm; 0,35 s (figure points 12,2–12,9 s, checked in figures.py); 47,5 g; 0,5 mm; 4,83 %; 10,67 mm; 12,4 cm; 10; −0,06 s; 2,0 µm; 0,26 cm. Every value matches answers.py and exercises.json.
+- The rounded answers in the solutions (0,4 s; 5 %; 11 mm; 2 µm) fall inside each relative tolerance.
+- L3-01: the signs of the start and stop delays are right (reading = true − τ1 + τ2).
+- L3-02: dividing the uncertainty by n assumes equal sheets, and the task states this.
+- The solutions are complete (given and asked, principle, symbolic form, conversions, substitution, rounding reason, a real check). They use "suhteellinen epävarmuus" and the half-range consistently with the guardrails.
+- The levels fit FY1 scope.

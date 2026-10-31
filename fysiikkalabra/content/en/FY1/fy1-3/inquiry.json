@@ -127,7 +127,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "satunnaisvirhe",
+        "sat": "random error",
         "sys": "systematic error"
       },
       "units": {
@@ -191,7 +191,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "satunnaisvirhe",
+        "sat": "random error",
         "sys": "systematic error"
       },
       "units": {
@@ -248,7 +248,7 @@
       },
       "names": {
         "n": "repetitions n",
-        "sat": "satunnaisvirhe",
+        "sat": "random error",
         "sys": "systematic error"
       },
       "units": {
@@ -275,7 +275,7 @@
         "type": "numeric",
         "prompt": "How many times larger is half of the range when the random error is $0.30\\,\\text{s}$ than when it is $0.05\\,\\text{s}$?",
         "answer": 6.2,
-        "unit": "kertaa",
+        "unit": "times",
         "tolerance": 0.03,
         "hints": [
           "Read from the table half of the range for both values of random error.",
