@@ -21,7 +21,7 @@ captures its questions need:
   open-ennusta-1280           the Ennusta box open, the predictions answered (feedback showing)
   open-tarkista-1280[-k]      Tarkista osaamisesi with every hint and solution open: does an opened card leave gaps?
   open-exit-1280              the exit ticket with its answers open
-  open-exercises-1280[-k]     the first exercise level with every solution open
+  open-exercises[-Ln]-1280[-k]  every exercise level with every solution open
 (the open-* captures are what check_layout.py measures in its "open" state; look at them after a layout change)
   stage-<id>-390[-k]          every inquiry stage, in tiles
   exp-<id>-390                every experiment after "Aseta alkutila": the sim beside its buttons and table
@@ -120,10 +120,9 @@ with sync_playwright() as pw:
             for sid in ("ennusta", "tarkista"):
                 if pg.locator(f"#{sid}").count(): save(pg, f"open-{sid}-{w}", f"{sid} at {w} px with hints, solutions and feedback open", locator=pg.locator(f"#{sid}"))
             if pg.locator("#exit").count(): save(pg, f"open-exit-{w}", f"the exit ticket at {w} px, answers open", locator=pg.locator("#exit"))
-            lvl = pg.locator("#exercises details.level").first
-            if lvl.count():
+            for k, lvl in enumerate(pg.locator("#exercises details.level").all()):   # every level: the visual reviewer reads every solution
                 lvl.evaluate("(d) => { d.open = true; d.querySelectorAll('details').forEach((x) => { x.open = true; }); }"); pg.wait_for_timeout(300)
-                save(pg, f"open-exercises-{w}", f"the first exercise level at {w} px, every solution open", locator=lvl)
+                save(pg, f"open-exercises{'' if k == 0 else '-L' + str(k + 1)}-{w}", f"exercise level {k + 1} at {w} px, every solution open", locator=lvl)
             pg.close(); continue
         pg.evaluate("document.querySelectorAll('details.fold').forEach((d) => { d.open = true; })")   # the Ennusta box starts closed; reviewers read its predictions
         figs = pg.locator("main svg:not(#sim-root svg)")

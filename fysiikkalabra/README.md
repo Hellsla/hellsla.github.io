@@ -43,16 +43,28 @@ simulations to `assets/sims/fy4/<name>/` (published at `sims/fy4/<name>/`), shar
 (`assets/README.md`). The course page `site/FY4.html` lists the slots and links each lesson once it is reviewed.
 
 ## The publishing rule
-`scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md` and
-`review/pedagogy.md` both say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash covers the lesson
+`scripts/reviews.py` decides what is on the site: a lesson is **reviewed** when `review/science.md`,
+`review/pedagogy.md` and `review/visual.md` all say `VERDICT: PASS` with the lesson's current `CONTENT-HASH`. The hash covers the lesson
 files, its simulation folder, its pictures and its simulation tests (not the exercise set: below), and ignores only line endings, trailing
 whitespace, blank-line runs and JSON layout; build scripts and templates are not content. What changed decides who
 reviews again (`reviews.py scope`): a physics change needs the science reviewer in full, a learning-design change the
-pedagogy reviewer, simulation code both, a figure's styling only the pedagogy reviewer, comments and tightened tests
-neither; a PASS carried over such a change is recorded in `review/carry.tsv` and re-checked by CI. A **legacy**
+pedagogy reviewer, simulation code both, a figure's styling the pedagogy and visual reviewers, a formula re-set without a change of meaning (category
+`typography`) only the visual reviewer, comments and tightened tests none of them; a PASS carried over such a change is recorded in `review/carry.tsv` and re-checked by CI. A **legacy**
 lesson (`review/legacy.md`, written by `reviews.py legacy <id>` in the migration) was published before the
 pipeline and stays visible, labelled as a prototype, until a content edit retires the marker. Everything else
 is a **draft** and never reaches `site/`. The exercise set has the same rule of its own (Exercises, below).
+
+**The visual & editorial review and its baseline** (teacher 2026-10-31). The third reviewer
+(`.claude/agents/visual-editorial-reviewer.md`, Sonnet) judges illustrations, graphs, mathematical typography, Finnish
+and presentation from the rendered captures (`screenshot.py <id> --if-stale`, contact sheets for triage) against
+`docs/EDITORIAL_QUALITY_STANDARD.md`. Everything both other reviewers had passed when the gate was switched on is
+listed, hash by hash, in `docs/visual-baseline.tsv` (`reviews.py baseline init`, run once): a row lets exactly that
+version stay published without a visual PASS, and no PASS report was written for it. A change the visual reviewer
+need not see is carried over the baseline like any carry; any other change needs the first genuine visual review,
+in full. A visual FAIL from an audit leaves the row in force (auditing never unpublishes); rows are only removed,
+and CI (`reviews.py verify`) fails on an added one. `python scripts/reviews.py baseline` lists what still awaits
+its baseline review. Investigations, TVT guides and Sovella sets follow the same three-review rule (their baseline
+rows hold for their exact hash). `VISUAL_GATE` in reviews.py is the switch.
 
 Merging a pull request is the teacher's publication decision. CI (`.github/workflows/fysiikkalabra-ci.yml`)
 lints every lesson, builds all previews, runs the review and course tests, the simulation tests, every lesson's

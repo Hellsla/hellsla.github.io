@@ -69,7 +69,7 @@ import courses, figcat, i18n, inquiry
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
 VISUAL = "visual"
-VISUAL_GATE = False   # the activation switch of the third mandatory review (teacher's brief 2026-10-31, module docstring)
+VISUAL_GATE = True    # the activation switch of the third mandatory review (teacher's brief 2026-10-31, module docstring)
 BASELINE = ROOT / "docs" / "visual-baseline.tsv"   # what was published before the gate: hash-bound, rows only ever removed
 BASELINE_COLS = ["kind", "lang", "id", "part", "hash", "date"]
 CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
@@ -371,6 +371,7 @@ def published_exercises(folder):
     for name in gate():
         r = report(folder, name, "exercises")
         froms = {r[1]} if r is not None and r[0] == "PASS" else set()
+        froms |= _passed_before(folder, name)          # versions this reviewer passed earlier: still passed, though it has since judged a newer one
         if name == VISUAL: froms |= baseline_hashes("lesson", courses.lang_of(folder), folder.name, "exercises")   # published before the visual gate
         if not froms: return None
         passed[name] = froms | {c["to"] for c in ex if c["reviewer"] == name and c["from"] in froms}
@@ -380,6 +381,18 @@ def published_exercises(folder):
         hs = {hash_at(c, folder, "exercises"), hash_at(c, folder, "all")}
         if all(hs & passed[n] for n in gate()): return Commit(c)
     return None
+
+
+def _passed_before(folder, name, part="exercises", n=40):
+    """The hashes of the PASS reports this reviewer wrote for `part` in the last n commits of its report file: a version
+    it passed stays passed after it reviews a newer one (the exercise set's fallback, e.g. science and pedagogy have
+    passed new exercises the visual reviewer has not seen yet)."""
+    rel = (review_dir(folder, part) / f"{name}.md").relative_to(ROOT).as_posix(); out = set()
+    for c in (git("log", "--format=%H", "-n", str(n), "--", rel) or "").split():
+        lines = (git("show", f"{c}:./{rel}") or "").splitlines()[:3]
+        if lines and lines[0].strip() == "VERDICT: PASS":
+            out |= {l.split(":", 1)[1].strip() for l in lines if l.startswith("CONTENT-HASH:")}
+    return out
 
 
 def write_legacy(folder):
@@ -900,6 +913,7 @@ def baseline_init():
             hashes = {x for x in (hash_at(src.sha, folder, "exercises"), hash_at(src.sha, folder, "all")) if x}   # the version the page shows
         rows += [[kind, lang, iid, part, x, today] for x in sorted(hashes)]
     VISUAL_GATE = was
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
     BASELINE.write_text("# Visual baseline (teacher's brief 2026-10-31; scripts/reviews.py module docstring). Not reviews: what science and\n"
                         "# pedagogy had passed when the visual review became mandatory, each row valid for its content hash only.\n"
                         "# Written once by `reviews.py baseline init`; never add or edit a row (verify fails); remove rows freely.\n"
@@ -910,7 +924,7 @@ def baseline_init():
 def baseline_report():
     """Every part still on the visual baseline (published, never visually passed), and the parts whose baseline no
     longer holds (changed since; they need their first visual review before they can be published again)."""
-    waiting, audited, lapsed = collections.defaultdict(list), [], []
+    waiting, audited, lapsed, fallback = collections.defaultdict(list), [], [], []
     keys = {(r["kind"], r["lang"], r["id"], r["part"]) for r in baseline_rows()}
     for kind, lang, iid, part, folder, st in _baseline_items():
         if (kind, lang, iid, part) not in keys: continue
@@ -920,11 +934,14 @@ def baseline_report():
         if s.get("baseline"):
             waiting[(lang, kind)].append(name)
             if v == "FAIL": audited.append(f"{lang} {kind} {name}")
+        elif kind == "lesson" and part == "exercises" and isinstance(published_exercises(folder), Commit):
+            fallback.append(f"{lang} {name}")             # its pages show the version passed before the edit (published_exercises)
         else: lapsed.append(f"{lang} {kind} {name}: {s['state']} (visual={v})")
     total = sum(len(v) for v in waiting.values())
     print(f"visual baseline: {total} published part(s) await their first visual review" + ("" if VISUAL_GATE else " (gate not active yet)"))
     for (lang, kind), names in sorted(waiting.items()): print(f"  {lang} {kind} ({len(names)}): {', '.join(sorted(names))}")
     if audited: print(f"audited, visual FAIL on record, still published under the baseline ({len(audited)}): " + "; ".join(audited))
+    if fallback: print(f"exercise sets edited since their last review: the pages show the version published before, under its baseline row ({len(fallback)}): " + ", ".join(fallback))
     if lapsed: print(f"baseline no longer holds (content changed; a visual PASS is needed to publish) ({len(lapsed)}):\n  " + "\n  ".join(lapsed))
 
 

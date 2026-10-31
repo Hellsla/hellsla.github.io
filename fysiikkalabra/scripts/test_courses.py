@@ -35,7 +35,8 @@ c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
 (T / "docs/lops2019").mkdir(parents=True)
 for f in (SRC / "docs/lops2019").glob("*.txt"): shutil.copy(f, T / "docs/lops2019")
-shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))   # its carries name commits of the real history
+shutil.copytree(SRC / "content/fi/FY3/fy3-2", T / "content/fi/FY3/fy3-2", ignore=shutil.ignore_patterns("carry.tsv"))
+(T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # fy3-2 is published under the visual baseline (2026-10-31)   # its carries name commits of the real history
 shutil.copytree(SRC / "lessons/FY3/fy3-2", T / "lessons/FY3/fy3-2", ignore=shutil.ignore_patterns("__pycache__"))
 (T / "tests/sims").mkdir(parents=True); shutil.copy(SRC / "tests/sims/fy3-2.json", T / "tests/sims")
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T), "CLAUDE_CONFIG_DIR": str(T / ".claude-config")}
