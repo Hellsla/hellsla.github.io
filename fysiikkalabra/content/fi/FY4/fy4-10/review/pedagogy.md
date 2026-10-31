@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c2ac57b9f030fafa
+CONTENT-HASH: 94c81d5bb9ef34aa
+
+Round 2 (delta). Round-1 Blocking: none.
 
 ## Blocking
 - none
 
 ## Polish
-- lesson.md "Törmäysten lajit" — "liike-energia pienenee eniten: suurin mahdollinen osa siitä muuttuu muiksi energiamuodoiksi" suggests nearly all kinetic energy is lost, but the gliders still move on together; clearer: "liike-energia pienenee enemmän kuin missään muussa tämän törmäyksen tapauksessa, vaikka kappaleet jatkavat yhdessä".
-- lesson.md "Räjähdys" — "vektorisumma on nolla" for several parts: in this one-dimensional course add "(tasossa tai avaruudessa osat lentävät eri suuntiin)" or an everyday example (ilotulite), so the case is not abstract.
+- Round-1 Polish items remain open (the "suurin mahdollinen osa" wording in Törmäysten lajit; an everyday example such as a firework for the many-part case). None blocks.
 
 ## Checked
-- batch delta review: "kimmoton ... liike-energia pienenee" replaces "häviää" and no "häviää" remains in the lesson text (the one "katoa" left is the correct misconception sentence about momentum); the explosion paragraph now separates two parts (equal and opposite momenta, lighter faster) from more parts (vector sum zero), consistent with the rifle, skater and rocket solutions; the exercises intro lost its level-policy sentence like the others; the lesson-answers.py comment change touches no student text.
+- Räjähdys paragraph: the rifle sentence now follows the two-part case it explains (equal and opposite momenta, lighter part faster), and the many-part case (vector sum zero, unequal parts) follows it; the order is clear.
+- Tiivistelmä: "kahdeksi osaksi hajotessa osat saavat yhtä suuret vastakkaissuuntaiset liikemäärät" now limits the equal-and-opposite claim to two parts, consistent with the paragraph and the rifle, skater and rocket solutions.

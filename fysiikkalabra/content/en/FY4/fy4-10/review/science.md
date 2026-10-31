@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 41cbb2d3a697afc7
+CONTENT-HASH: b3d5586f634c37ad
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: perfectly inelastic collision now says kinetic energy "decreases the most: the largest possible part is transformed into other forms" (correct under momentum conservation, which the paragraph states first; no "is lost" left in lesson, inquiry, exit ticket or exercises); explosion now limits "equal magnitude, opposite directions" to a two-part split from rest and gives the vector-sum-zero rule for more parts (correct; the rifle–bullet example is a two-part case); the exercises lead lost only its level-policy sentence; all three match content/fi; no option or number touched; hash 41cbb2d3a697afc7 at start and end.
+- delta review, round 2 (git diff HEAD~2: two lesson.md lines): the Summary now limits "equal magnitude, opposite directions" to a split into two parts, the same as the explosion paragraph; the rifle sentence now follows the two-part sentence, so the rifle–bullet example illustrates the two-part case before the more-parts rule (vector sum zero, magnitudes can differ); both are correct and match content/fi. The round-1 changes (perfectly inelastic: kinetic energy decreases the most and is transformed, no "is lost" left) still stand. No number, option or symbol touched; hash b3d5586f634c37ad at start and end.

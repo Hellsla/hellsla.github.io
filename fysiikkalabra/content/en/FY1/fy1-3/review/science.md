@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bd8bb8dc576c084a
+CONTENT-HASH: 6592b9fd7070d4cc
 
 ## Blocking
 
@@ -13,7 +13,6 @@ CONTENT-HASH: bd8bb8dc576c084a
 - Worked example recomputed: Σ = 19.09 s, x̄ = 3.1817 s, Δt = 0.12 s, ε = 3.77 % → 3.8 %; interval 3.06–3.30 s excludes 3.31 s as stated; rounding rule applied consistently.
 - Simulation (reading = round(T + Δt_sys + Δt_ran·g_i, 0.01 s), T = 2.40 s) recomputed from the fixed series: exp-1 n=1 −0.22 s, n=40 −0.0005 s, half-range 0.25/0.26 s; exp-2 n=40 mean 2.6995 s → 0.30 s; exp-3 0.525/0.085 = 6.18 → 6.2 (mistake 6 outside the 3 % tolerance, as intended). Feedback numbers match.
 - Siirto 5.44 g and its mistakes 5.6, 27.2, 4.8, 28 g; check 3: 2.08 % (answer 2.1, a student's "2 %" is inside the 5 % relative tolerance); thermometer data mean 1.5 °C, half-range 0.1 °C, ratio 15; gross-error numbers (shift ≈ 0.19 s, Δt 0.09 → 0.62 s, ≈7×).
-- Exactly one correct option in every choice item; each distractor's feedback gives the right reason. Experiments lock sat/sys and vary only n or sat.
-- Exit ticket: 19.9 g, Δm = 0.1 g; 0.09/4.52 = 1.99 % → 2 %.
+- Exactly one correct option per choice item, distractor feedback right; exit ticket 19.9 g and 2 % right. Experiments lock sat/sys and vary only n or sat.
 - All numbers and correct flags of inquiry.json, exit-ticket.json and meta.json agree with content/fi (scripted comparison); lesson.md says the same physics as the Finnish lesson.
-- Hash 05a807976aacb0fe at start; re-checked after the mid-review edit (git diff: names.sat → "random error", exp-3 unit → "times", labels only): bd8bb8dc576c084a at end.
+- Round 2 (git diff HEAD~2: only the Summary's first bullet changed): "Every measurement result has some uncertainty. The error is usually not known…" is right, matches the Key idea and content/fi, and keeps error (signed, x − x_true) and uncertainty apart; hash 6592b9fd7070d4cc at start and end.
