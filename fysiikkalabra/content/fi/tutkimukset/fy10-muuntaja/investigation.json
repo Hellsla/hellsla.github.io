@@ -115,7 +115,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
@@ -123,7 +123,8 @@
   "equipment": [
     "muuntajan rautasydän",
     "ensiö- ja toisiokäämejä, joihin on merkitty kierrosluku",
-    "opettajan antama, tähän työhön tarkoitettu vaihtojännitelähde, jonka jännite on kosketusvaaraton ja johtimia",
+    "opettajan antama, tähän työhön tarkoitettu vaihtojännitelähde, jonka jännite on kosketusvaaraton",
+    "johtimia",
     "jännitemittareita ja virtamittareita (tai yleismittareita)",
     "opettajan antama kuormitusvastus tai useampia"
   ],

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f4cce81a8d2f1496
+CONTENT-HASH: 8efe369500c90495
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit the fit; videoanalyysi in prerequisites for height from video
 - topic `liike`
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

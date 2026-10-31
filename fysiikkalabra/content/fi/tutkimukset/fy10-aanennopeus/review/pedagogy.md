@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e007759d5a5eed2b
+CONTENT-HASH: fb38b448634abc0e
 
 ## Blocking
 
@@ -15,3 +15,12 @@ None.
 - topic `aallot` fits the bank filter
 - TVT prerequisites: mittausohjelma for the recorded signal, fitting guides for the slope; both match the stated need
 - Raportoi section names now match the template (Koejärjestely ja menetelmä, Tulos)
+
+## Delta 2 (2026-10-31)
+
+- Prerequisite guides now suoran sovitus, kulmakerroin, epävarmuus, taulukkolaskenta (kuvaaja dropped), matching the body links. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): no body link to *Kulmakertoimen epävarmuus* where Δ of the slope is asked.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

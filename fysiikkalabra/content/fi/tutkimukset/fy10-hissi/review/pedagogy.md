@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3058930c3016ac88
+CONTENT-HASH: 4864ce7711c2a848
 
 ## Blocking
 
@@ -16,3 +16,13 @@ None.
 - Body: one link (Taulukkolaskenta) exactly where cumulative columns are needed
 - teacher.md: the guide now replaces "ohje tekeillä"; reads naturally
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): the extension's *onko jokin kerros muita korkeampi* has no cue on what to look at.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- Tablet now allowed in equipment, json and teacher.md consistently; duplicate sentence removed; teacher.md says *taulukon rakenteen*.

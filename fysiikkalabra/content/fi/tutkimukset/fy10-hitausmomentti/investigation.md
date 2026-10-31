@@ -276,7 +276,7 @@ Kuvaaja on yksittäisiä laskuja parempi, koska se näyttää, sopivatko kaikki 
 Jos suora ei kulje origon kautta, mieti, onko matkojen tai korkeuksien nollakohdassa systemaattinen virhe. Matkaan verrannollinen energiahäviö, esimerkiksi tasainen vierimisvastus, ei näy vakioterminä, koska kaltevuus on vakio: se muuttaa vain kulmakerrointa.
 :::
 
-Laskuihin ja kuvaajiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Laskuihin ja kuvaajiin käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

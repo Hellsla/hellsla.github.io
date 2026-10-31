@@ -294,7 +294,7 @@ Tarkista vastauksesi tästä.
 **Miksi kuvaaja eikä yksi piste?** Yhdestä mittauspisteestä laskettu $\eta = Q/E$ sisältää lämmityksen alun viiveen ja yksittäisen lukeman virheen, ja viimeisessä pisteessä myös lopun suuremmat häviöt. Kulmakerroin kertoo, kuinka paljon lämpöä vesi saa jokaista lisää tuotua joulea kohden, ja kuvaaja näyttää samalla, onko suhde vakio.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

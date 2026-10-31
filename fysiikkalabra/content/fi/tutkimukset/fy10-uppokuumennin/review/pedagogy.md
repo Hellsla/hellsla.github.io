@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 38dfc3ed4801d02a
+CONTENT-HASH: 9101d17d059b30c0
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - E3 → E2 for *laajennus* (insulation): same kit plus insulation; consistent
 - Added condition (no phase change, do not boil) is short and placed right after Q = cmΔT
 - topic `lampo`; Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

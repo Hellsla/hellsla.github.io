@@ -264,7 +264,7 @@ Kirjoita laskusi näkyviin ja vastaa:
 **Miksi juuri nämä akselit?** Malli $x_m = \dfrac{\lambda L}{d} \cdot m$ on suoran yhtälö $y = ax$, kun pystyakselille valitaan $x_m$ ja vaaka-akselille $m$. Silloin kulmakertoimesta saadaan hiuksen paksuus, ja kuvaaja näyttää samalla, ovatko minimit tasavälein. Kulmakerroin tasoittaa yksittäisten minimien paikantamisen satunnaisia virheitä, koska jokainen minimi vaikuttaa siihen. Jos suora ei kulje origon kautta, tarkista, onko minimien numerointi alkanut oikeasta kohdasta.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

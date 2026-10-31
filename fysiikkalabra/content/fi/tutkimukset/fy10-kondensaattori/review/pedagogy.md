@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6e06ef78480d78d0
+CONTENT-HASH: 5410df76926b0211
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - "vaihtokytkin" in the equipment now matches the hero figure and the circuit text (asento A/B)
 - "Mallin sovitukseen" with the straight-line guides fits, since the model is linearised as ln u against t
 - topic `sahko`; Raportoi already followed the template's numbered parts
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

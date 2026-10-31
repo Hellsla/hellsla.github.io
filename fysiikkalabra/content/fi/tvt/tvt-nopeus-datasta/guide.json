@@ -1,0 +1,12 @@
+{
+  "id": "tvt-nopeus-datasta",
+  "title": "Nopeuden ja matkan määrittäminen mittausdatasta",
+  "description": "Näin lasket nopeuden ja kuljetun matkan paikka-, aika- tai kiihtyvyysdatasta ja tunnistat, milloin virhe kasvaa.",
+  "learn": [
+    "laskemaan nopeuden paikka–aika-datasta ja valoportin ajasta",
+    "määrittämään kuljetun matkan nopeus–aika-kuvaajan pinta-alana",
+    "laskemaan nopeuden ja matkan kiihtyvyysdatasta ja arvioimaan, miten virhe kasvaa"
+  ],
+  "kind": "taito",
+  "order": 8
+}

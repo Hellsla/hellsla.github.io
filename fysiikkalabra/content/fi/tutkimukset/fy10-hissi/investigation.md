@@ -148,7 +148,7 @@ Ennen mittaamista päätä ja kirjaa ylös, miten mittaat kiihtyvyyden, miten m�
 
 ## Mittaa
 
-Tallenna jokaisesta hissimatkasta kiihtyvyysdata tiedostoksi, jonka voit avata taulukkolaskennassa. Kirjaa jokaisesta matkasta ylös lähtö- ja tulokerros, suunta ja puhelimen asento. Mittaa todellinen matka ja kirjaa myös, kuinka tarkasti sen sait selville. [[apua:fy1-3|Mittausepävarmuuden arvioiminen]]
+Tallenna jokaisesta hissimatkasta kiihtyvyysdata CSV-tiedostoksi, jonka voit avata Graphical Analysis Prossa. Kirjaa jokaisesta matkasta ylös lähtö- ja tulokerros, suunta ja puhelimen asento. Mittaa todellinen matka ja kirjaa myös, kuinka tarkasti sen sait selville. [[apua:fy1-3|Mittausepävarmuuden arvioiminen]]
 
 ::: tuki OO
 **Vihjeitä mittaukseen.** Selvitä ennen hissimatkaa, kumpaan suuntaan anturin pystysuora akseli osoittaa: nosta puhelinta pöydältä nopeasti ylöspäin ja katso, kasvaako vai pieneneekö pystyakselin etumerkillinen lukema (ei pelkkä lukeman suuruus). Tarkista myös lukemien yksikkö: jos lukema on levossa noin $1{,}00$, sovellus näyttää kiihtyvyyden putoamiskiihtyvyyden $g$ kerrannaisina, ja lukemat muutetaan yksikköön $\text{m/s}^2$ kertomalla ne luvulla $9{,}81\ \text{m/s}^2$. Pidä puhelin koko mittauksen ajan samassa asennossa, koska kallistuminen muuttaa lukemaa. Seiso paikallasi, äläkä koske puhelimeen matkan aikana. Jos sovellus antaa valita, mittaa kaikki akselit: pystyakselin lisäksi niistä näkee, onko puhelin kallistunut.
@@ -167,14 +167,14 @@ Vastaa:
 3. Kuinka pitkän matkan hissi kulki laskentasi mukaan?
 
 ::: tuki OO
-**Laskenta taulukkolaskennassa.** Mittausdata ei ole jatkuva käyrä vaan satoja tai tuhansia lukemia tasaisin aikavälein. Siksi pinta-alat lasketaan **numeerisesti**: jokaisen kahden peräkkäisen lukeman väliin tulee kapea suikale, ja suikaleiden alat lasketaan yhteen taulukkolaskennassa. Tee jokaiselle suureelle oma sarakkeensa, alkuperäiset lukemat vasemmalle ja lasketut niiden oikealle puolelle:
+**Laskenta Graphical Analysis Prossa.** Mittausdata ei ole jatkuva käyrä vaan satoja tai tuhansia lukemia tasaisin aikavälein. Siksi pinta-alat lasketaan **numeerisesti**: jokaisen kahden peräkkäisen lukeman väliin tulee kapea suikale, ja suikaleiden alat lasketaan yhteen. Tee jokaiselle suureelle oma sarakkeensa, alkuperäiset lukemat muuttamattomina ja lasketut omina laskettuina sarakkeinaan:
 
 | $t\ (\text{s})$ | $a_\text{mitattu}\ (\text{m/s}^2)$ | $a = a_\text{mitattu} - a_0\ (\text{m/s}^2)$ | $v\ (\text{m/s})$ | $s\ (\text{m})$ |
 |---|---|---|---|---|
 | | | | $0$ | $0$ |
 | | | | | |
 
-**Nollakohta.** Laske alun lepojakson lukemien keskiarvo $a_0$. Ota mukaan vain lukemat ajalta, jolloin hissi varmasti seisoi.
+**Nollakohta.** Määritä alun lepojakson lukemien keskiarvo $a_0$: valitse lepojakso kuvaajasta ja näytä sen tilastot. Ota mukaan vain lukemat ajalta, jolloin hissi varmasti seisoi.
 
 **Hissin kiihtyvyys.** Vähennä nollakohta jokaisesta lukemasta: $a = a_\text{mitattu} - a_0$. Jos anturin akseli osoitti alaspäin, vaihda merkki niin, että ylöspäin on positiivinen suunta.
 
@@ -190,7 +190,7 @@ v_i = v_{i-1} + \frac{a_{i-1} + a_i}{2} \cdot (t_i - t_{i-1})
 s_i = s_{i-1} + \frac{v_{i-1} + v_i}{2} \cdot (t_i - t_{i-1})
 ```
 
-Kirjoita kaava kerran ja kopioi se koko sarakkeeseen. Matkasarakkeen viimeinen arvo on hissin kulkema matka. Säilytä alkuperäiset lukemat muuttamattomina omassa sarakkeessaan.
+Ohjelma laskee suikaleiden kertyvän summan puolestasi samalla periaatteella: kun sarakkeet ovat nimeltään `a` ja `t`, nopeussarakkeen lauseke on `integral("a","t")`, ja kun nopeussarake on `v`, matkasarakkeen lauseke on `integral("v","t")`. Molemmat alkavat arvosta nolla. Matkasarakkeen viimeinen arvo on hissin kulkema matka.
 
 **Vertaa omiin kuvaajiisi ja ennusteeseesi.** Kun hissi kulkee ylöspäin, sen liikkeen vaiheet näyttävät tältä:
 
@@ -267,7 +267,7 @@ Mallin mukaiset kuvaajat ovat tämän muotoisia. Kiihtyvyyskuvaajan kummun pinta
 </svg>
 :::
 
-Laskentaan voit käyttää taulukkolaskentaa tai muuta ohjelmaa, joka laskee sarakkeiden arvoja riveittäin. Ruukkilabran ohje: [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Tee laskenta Graphical Analysis Pro -ohjelmassa laskettuina sarakkeina. Ruukkilabran ohje: [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

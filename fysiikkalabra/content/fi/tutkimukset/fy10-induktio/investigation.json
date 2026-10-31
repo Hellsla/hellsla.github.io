@@ -94,7 +94,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittausdatan tallentaminen anturilla ja käsittely ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Mittausdatan tallentaminen anturilla ja käsittely ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-mittausohjelma", "tvt-taulukkolaskenta"],
       "why": "Mittausdatan tallentaminen ja käsittely."
     },
@@ -109,7 +109,7 @@
   "equipment": [
     "käämejä, joissa on eri kierrosluvut",
     "kestomagneetteja",
-    "jänniteanturi ja tiedonkeruuohjelma",
+    "jänniteanturi ja Graphical Analysis Pro",
     "tarvittaessa mittanauha tai viivain ja ajanottoväline",
     "tarvittaessa muoviputki ja pehmeä alusta magneetille"
   ],

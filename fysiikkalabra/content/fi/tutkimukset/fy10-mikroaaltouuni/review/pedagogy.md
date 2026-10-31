@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5fd1aa9bfd9cafa2
+CONTENT-HASH: 838b54016eb02f9d
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - The guide links sit in the extension's Vihjeitä box where "ohje tekeillä" was; they fit the fit step
 - topic `aallot` fits
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

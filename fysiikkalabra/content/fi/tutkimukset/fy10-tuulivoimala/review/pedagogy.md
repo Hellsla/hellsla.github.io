@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d50fc5586c680a2e
+CONTENT-HASH: f622d8a3c4d567c2
 
 ## Blocking
 
@@ -15,3 +15,12 @@ None.
 - True-RMS note is teacher-facing and prevents a hidden systematic error in power; wording clear
 - Body links (kuvaaja, taulukkolaskenta) fit "Laskuihin ja kuvaajaan"
 - topic `lampo` (Lämpö ja energia) acceptable for an energy-conversion work; Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): true-RMS sentence as its own paragraph in teacher.md.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

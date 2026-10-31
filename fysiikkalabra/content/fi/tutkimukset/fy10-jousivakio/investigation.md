@@ -212,7 +212,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Miksi juuri nämä akselit?** Jousivoiman laki $F = kx$ on suoran yhtälö $y = kx$, kun pystyakselille valitaan $F$ ja vaaka-akselille $x$. Silloin kulmakerroin on suoraan jousivakio. Jos vaaka-akselille valitaan jousen pituus $l$ venymän sijasta, kulmakerroin pysyy samana, mutta suora ei kulje origon kautta, eikä kuvaaja enää näytä suoraan, että voima on verrannollinen venymään. Jos taas akselit vaihdetaan päittäin, kulmakerroin on $\dfrac{1}{k}$. Tiheäkierteisellä jousella pienimmät kuormat eivät välttämättä vielä venytä jousta, koska kierteet painavat toisiaan; jätä tällöin alku pois sovituksesta ja kerro se raportissa. Silloin suora ei kulje origon kautta, koska jousi alkaa venyä vasta tietyllä voimalla, mutta suoran kulmakerroin on silti jousivakio.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kuvaajat ja tulokset työselostukseen — Ruukkilabra</title>
+<meta name="description" content="Näin esität mittaustaulukon, kuvaajan ja tuloksen työselostuksessa niin, että lukija voi tarkistaa työsi.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/tvt-tyoselostus.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Kuvaajat ja tulokset työselostukseen">
+<meta property="og:description" content="Näin esität mittaustaulukon, kuvaajan ja tuloksen työselostuksessa niin, että lukija voi tarkistaa työsi.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/tvt-tyoselostus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Kuvaajat ja tulokset työselostukseen</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Kuvaajat ja tulokset työselostukseen</p><a href="#mihin-tarvitset-tata">Mihin tarvitset tätä</a><a href="#tyovaiheet">Työvaiheet</a><a href="#tavallisimmat-virheet">Tavallisimmat virheet</a><a href="#tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation guide"><p>Työselostuksen lukija näkee mittauksesi vain taulukoista, kuvaajista ja tuloksesta. Tässä ohjeessa kokoat ne niin, että toinen voi tarkistaa työsi ja ymmärtää, miten tulokseen päädyit.</p>
+<p class="notice tvt-kind" role="note">Yleinen taito: ohje sopii mille tahansa ohjelmalle tai laskimelle.</p><div class="inv-learn"><h2 id="h-tavoitteet">Tässä ohjeessa opit</h2><ul><li>esittämään mittaustulokset työselostuksessa taulukkona ja kuvaajana</li><li>viittaamaan kuvaajaan tekstissä ja ilmoittamaan tuloksen epävarmuuksineen</li></ul></div><section class="inv-section" id="mihin-tarvitset-tata"><h2 id="h-mihin-tarvitset-tata">Mihin tarvitset tätä</h2>
+<p>Kaikista FY10:n tutkimuksista kirjoitetaan työselostus työselostuspohjalla. Esimerkiksi tutkimuksissa <em>Jousivakion määrittäminen</em> ja <em>Putoamiskiihtyvyyden määrittäminen heilurin avulla</em> selostuksen ydin on kuvaaja, josta tulos saadaan kulmakertoimena. Tässä ohjeessa käsitellään pohjan osat Mittaustulokset, Tulosten käsittely ja graafinen analyysi sekä Tulos.</p>
+</section><section class="inv-section" id="tyovaiheet"><h2 id="h-tyovaiheet">Työvaiheet</h2>
+<ol>
+<li>
+<p><strong>Kokoa mittaustaulukko osaan Mittaustulokset.</strong> Jokaisen sarakkeen otsikossa on suure ja yksikkö, esimerkiksi $l\ (\text{m})$. Alkuperäiset mittaukset ovat vasemmalla, ja niistä johdetut suureet, kuten $T^2\ (\text{s}^2)$, ovat omissa sarakkeissaan oikealla. Numeroi taulukko ja kirjoita sen yläpuolelle otsikko, esimerkiksi "Taulukko 1. Heilurin pituus ja jaksonaika".</p>
+</li>
+<li>
+<p><strong>Ilmoita lukuarvot johdonmukaisesti.</strong> Kirjoita saman sarakkeen luvut samalla tarkkuudella, joka vastaa mittauksen tarkkuutta. Jos luit pituuden millimetrin tarkkuudella, kirjoita $0{,}450\,\text{m}$ eikä $0{,}45\,\text{m}$. Johdettuihin suureisiin voit jättää yhden numeron enemmän kuin lopputulokseen ja pyöristää vasta lopussa.</p>
+</li>
+<li>
+<p><strong>Tee kuvaaja osaan Tulosten käsittely ja graafinen analyysi.</strong> Piirrä kuvaaja ja sovita suora Graphical Analysis Prossa (<a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a>, <a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>). Tarkista ennen vientiä, että kuvaajassa ovat otsikko, akselien suureet ja yksiköt, mittauspisteet, tarvittaessa epävarmuusjanat sekä sovitettu suora ja sen tietolaatikko. Vie kuvaaja kuvaksi valinnalla <strong>Export graph as png</strong> ja liitä kuva selostukseen.</p>
+</li>
+<li>
+<p><strong>Kirjoita suoran yhtälö suureilla ja yksiköillä.</strong> Sovituksen tietolaatikon yhtälö, esimerkiksi $y = 4{,}05x + 0{,}02$, ei kerro suureita, ja yksiköt näkyvät vain, kun asetus <strong>Show units in linear fit parameters</strong> on päällä. Kirjoita se muotoon $T^2 = 4{,}05\,\text{s}^2/\text{m} \cdot l + 0{,}02\,\text{s}^2$.</p>
+</li>
+<li>
+<p><strong>Lisää kuvateksti ja viittaa kuvaan.</strong> Numeroi kuva ja kirjoita sen alle kuvateksti, esimerkiksi "Kuva 1. Heilurin jaksonajan neliö pituuden funktiona ja mittauspisteisiin sovitettu suora." Viittaa kuvaan tekstissä: "Kuvasta 1 nähdään, että pisteet asettuvat suoralle, joka kulkee lähes origon kautta." Lukijan ei pidä joutua arvaamaan, miksi kuva on mukana.</p>
+</li>
+<li>
+<p><strong>Näytä mallilasku.</strong> Kirjoita, miten tulos saadaan kulmakertoimesta, ensin kirjaimin ja sitten lukuarvoin yksiköineen, esimerkiksi $g = \tfrac{4\pi^2}{k}$. Jos laskit saman kaavan monelle riville, näytä yksi rivi esimerkkinä.</p>
+</li>
+<li>
+<p><strong>Ilmoita tulos osassa Tulos.</strong> Kirjoita päätulos epävarmuuksineen ja yksikköineen, esimerkiksi $g = (9{,}7 \pm 0{,}4)\,\text{m/s}^2$, ja vertaa sitä vertailuarvoon (<a class="tvt-link" href="tvt-epavarmuus.html">Kulmakertoimen epävarmuus</a>).</p>
+<p>Kuvassa on työselostuksen sivu, jossa nämä kolme osaa ovat peräkkäin. Harmaat palkit ovat omaa tekstiäsi ja omia lukujasi.</p>
+<p><svg data-fig="page" viewBox="0 0 600 730" role="img" aria-label="Kaaviokuva työselostuksen sivusta ilman lukuarvoja; harmaat palkit ovat oppilaan omaa tekstiä ja lukuja. Osassa 4, Mittaustulokset, on taulukko 1, jonka sarakkeiden otsikoissa on suure ja yksikkö: l metreinä, T sekunteina ja T toiseen sekunnin neliöinä. Osassa 5, Tulosten käsittely ja graafinen analyysi, on kuvaaja, jonka akseleilla on suureet ja yksiköt, mittauspisteet ja sovitettu suora, jonka yhtälö T toiseen on k kertaa l on kirjoitettu kuvaajan viereen. Kuvaajan alla on kuvateksti Kuva 1 ja sen alla tekstissä viittaus: Kuvasta 1 nähdään, että. Osassa 6, Tulos, on tulos muodossa g on sulkeissa lukuarvo plus miinus epävarmuus, molemmat harmaina palkkeina, ja yksikkö metriä per sekunti toiseen." style="max-width:100%;font-size:24px">
+  <rect x="36" y="18" width="528" height="694" rx="6" fill="#fdfcf8" stroke="#c9c2b2" stroke-width="2"/>
+  <foreignObject x="66" y="41.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$4$</div></foreignObject>
+  <foreignObject x="96" y="41.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Mittaustulokset}$</div></foreignObject>
+  <foreignObject x="66" y="81.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Taulukko 1.}$</div></foreignObject>
+  <rect x="210" y="92" width="230" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="66" y="116" width="450" height="36" fill="#e3dccb"/>
+  <line x1="66" y1="116" x2="516" y2="116" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="66" y1="152" x2="516" y2="152" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="66" y1="188" x2="516" y2="188" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="66" y1="224" x2="516" y2="224" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="66" y1="116" x2="66" y2="224" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="216" y1="116" x2="216" y2="224" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="366" y1="116" x2="366" y2="224" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="516" y1="116" x2="516" y2="224" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="110" y="119.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l\ (\text{m})$</div></foreignObject>
+  <foreignObject x="260" y="119.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$T\ (\text{s})$</div></foreignObject>
+  <foreignObject x="397.5" y="119.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$T^2\ (\text{s}^2)$</div></foreignObject>
+  <rect x="136" y="166" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="286" y="166" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="436" y="166" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="136" y="202" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="286" y="202" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <rect x="436" y="202" width="66" height="8" rx="4" fill="#e3dccb"/>
+  <foreignObject x="66" y="249.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$5$</div></foreignObject>
+  <foreignObject x="96" y="249.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Tulosten käsittely ja}$</div></foreignObject>
+  <foreignObject x="96" y="283.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{graafinen analyysi}$</div></foreignObject>
+  <line x1="109" y1="506" x2="344" y2="506" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M356,506 L343,512 L343,500 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="110" y1="507" x2="110" y2="366" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M110,354 L116,367 L104,367 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="362" y="491.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$l\ (\text{m})$</div></foreignObject>
+  <foreignObject x="100" y="323.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T^2\ (\text{s}^2)$</div></foreignObject>
+  <polyline points="110,506 319,386.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="143" cy="484" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="176" cy="470.5" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="209" cy="446" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="242" cy="432.5" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="275" cy="409.5" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="308" cy="394.5" r="5.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="372" y="403.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T^2 = k \cdot l$</div></foreignObject>
+  <foreignObject x="66" y="531.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Kuva 1.}$</div></foreignObject>
+  <rect x="166" y="542" width="274" height="8" rx="4" fill="#e3dccb"/>
+  <foreignObject x="66" y="567.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{Kuvasta 1 nähdään, että}$</div></foreignObject>
+  <rect x="380" y="578" width="120" height="8" rx="4" fill="#e3dccb"/>
+  <foreignObject x="66" y="615.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$6$</div></foreignObject>
+  <foreignObject x="96" y="615.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Tulos}$</div></foreignObject>
+  <foreignObject x="96" y="659.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$g = ($</div></foreignObject>
+  <rect x="150" y="670" width="76" height="8" rx="4" fill="#e3dccb"/>
+  <foreignObject x="234" y="659.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\pm$</div></foreignObject>
+  <rect x="262" y="670" width="56" height="8" rx="4" fill="#e3dccb"/>
+  <foreignObject x="326" y="659.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$)\,\text{m/s}^2$</div></foreignObject>
+</svg></p>
+</li>
+<li>
+<p><strong>Tarkista, että kuva on luettava.</strong> Kuvatiedosto on yleensä siistimpi kuin kuvakaappaus, koska siinä ei ole valikoita. Tarkista, että akselien tekstit ja luvut erottuvat selostuksessa, ja lisää puuttuvat akselien otsikot ja yksiköt ohjelmassa ennen vientiä. Mittaustaulukon voit kirjoittaa selostukseen taulukkona kopioimalla arvot ohjelman taulukosta, ja koko datan voit liittää CSV-tiedostona (<strong>Export data as csv</strong>).</p>
+</li>
+</ol>
+</section><section class="inv-section" id="tavallisimmat-virheet"><h2 id="h-tavallisimmat-virheet">Tavallisimmat virheet</h2>
+<ul>
+<li><strong>Taulukossa on vain lasketut suureet.</strong> Lukija ei voi tarkistaa laskujasi. Pidä alkuperäiset mittaukset mukana omissa sarakkeissaan.</li>
+<li><strong>Saman sarakkeen luvut on kirjoitettu eri tarkkuudella</strong>, esimerkiksi $0{,}45$, $0{,}453$ ja $0{,}5$. Kirjoita kaikki luvut mittauksen tarkkuudella.</li>
+<li><strong>Kuvaa ei mainita tekstissä.</strong> Lukija ei tiedä, mitä kuvasta pitäisi nähdä. Kirjoita johtopäätös näkyviin ja viittaa kuvan numeroon.</li>
+<li><strong>Suoran yhtälössä on $x$ ja $y$ ilman yksiköitä.</strong> Yhtälöstä ei näe, mikä luku on mikin suure. Kirjoita yhtälö suureilla ja yksiköillä.</li>
+<li><strong>Tuloksesta puuttuu epävarmuus tai yksikkö.</strong> Pelkkä luku ei ole mittaustulos. Ilmoita tulos muodossa (arvo $\pm$ epävarmuus) yksikkö.</li>
+<li><strong>Kuva on lukukelvoton.</strong> Teksti on liian pientä tai kuvaaja vaalea. Suurenna kuvaaja ohjelmassa ennen vientiä ja vie se kuvatiedostona kuvakaappauksen sijaan.</li>
+</ul>
+</section><section class="inv-section" id="tarkista-ennen-kuin-jatkat"><h2 id="h-tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</h2>
+<ul>
+<li>Taulukossa ovat alkuperäiset mittaukset ja johdetut suureet, ja jokaisen sarakkeen otsikossa on suure ja yksikkö.</li>
+<li>Kuvaajalla on numero ja kuvateksti, ja tekstissä viitataan siihen.</li>
+<li>Suoran yhtälö on kirjoitettu suureilla ja yksiköillä.</li>
+<li>Tulos on ilmoitettu epävarmuuksineen ja yksikköineen.</li>
+</ul></section><p class="tvt-used"><strong>Tarvitset tätä tutkimuksissa:</strong> <a href="fy10-aanennopeus.html">Äänen nopeus kulkuajasta</a>, <a href="fy10-heiluri.html">Putoamiskiihtyvyyden määrittäminen heilurin avulla</a>, <a href="fy10-hissi.html">Hissin kulkema matka kiihtyvyydestä</a>, <a href="fy10-hitausmomentti.html">Umpinaisen sylinterin hitausmomentti</a>, <a href="fy10-hiuksen-paksuus.html">Hiuksen paksuuden määrittäminen</a>, <a href="fy10-hyppy.html">Hypyn tutkiminen voimalevyllä</a>, <a href="fy10-induktio.html">Sähkömagneettisen induktion tutkiminen</a>, <a href="fy10-jaahtyminen.html">Kuuman veden jäähtyminen</a>, <a href="fy10-jousivakio.html">Jousivakion määrittäminen</a>, <a href="fy10-kaasu.html">Kaasun tilanyhtälön kokeellinen tutkiminen</a>, <a href="fy10-kondensaattori.html">Kondensaattorin kapasitanssin määrittäminen</a>, <a href="fy10-lammonjohtuminen.html">Lämmön johtuminen lämpökameralla</a>, <a href="fy10-leikkiauto.html">Leikkiauton nopeus ja lähtökorkeus</a>, <a href="fy10-liikemaara.html">Liikemäärän säilyminen törmäyksissä</a>, <a href="fy10-liukukitka.html">Liukukitkakertoimen määrittäminen</a>, <a href="fy10-mikroaaltouuni.html">Valonnopeuden määrittäminen mikroaaltouunilla</a>, <a href="fy10-muotokerroin.html">Pallon muotokertoimen määrittäminen</a>, <a href="fy10-muuntaja.html">Muuntajan tutkiminen</a>, <a href="fy10-paristo.html">Pariston kuormituskäyrä</a>, <a href="fy10-planck.html">Planckin vakio LEDien avulla</a>, <a href="fy10-pomppukorkeus.html">Pudotus- ja pomppukorkeus</a>, <a href="fy10-resonanssi.html">Äänen resonanssi putkessa</a>, <a href="fy10-taitekerroin.html">Taitekertoimen määrittäminen</a>, <a href="fy10-tuulivoimala.html">Tuulivoimalan tutkiminen</a>, <a href="fy10-uppokuumennin.html">Uppokuumentimen hyötysuhteen määrittäminen</a>, <a href="fy10-valaistus.html">Valaistusvoimakkuuden riippuvuus etäisyydestä</a>, <a href="fy10-vesivoima.html">Vesivoimalaitoksen pienoismallin hyötysuhde</a></p></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
+</body></html>

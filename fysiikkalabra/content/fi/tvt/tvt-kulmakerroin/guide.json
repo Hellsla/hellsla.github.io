@@ -1,0 +1,11 @@
+{
+  "id": "tvt-kulmakerroin",
+  "title": "Kulmakertoimen ja vakiotermin tulkinta",
+  "description": "Näin luet sovitetun suoran kulmakertoimen ja vakiotermin yksikköineen ja selvität mallin avulla, mitä ne kertovat.",
+  "learn": [
+    "määrittämään sovitetun suoran kulmakertoimen ja vakiotermin yksikköineen",
+    "tulkitsemaan kulmakertoimen ja vakiotermin fysikaalisen merkityksen mallin avulla"
+  ],
+  "kind": "taito",
+  "order": 3
+}

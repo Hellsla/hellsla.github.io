@@ -95,7 +95,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Laskettu sarake ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Kuvaajan akseleille tarvitaan mitatuista suureista laskettuja suureita, ja kulmakerroin epävarmuuksineen saadaan sovituksesta."
     }

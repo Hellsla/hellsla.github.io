@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4332102aa6e5ccca
+CONTENT-HASH: 2d84a1de83570817
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit "piirtämiseen ja sovitukseen"
 - topic `aine` fits
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

@@ -76,21 +76,21 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle",
+      "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle tai tabletille",
       "guides": ["tvt-mittausohjelma"],
       "why": "Laskenta tehdään koko matkan aikana tallennetusta datasta."
     },
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Laskeminen ja kuvaajat taulukkolaskennassa (pinta-ala kapeiden suikaleiden summana)",
+      "text": "Laskeminen laskettuina sarakkeina ja kuvaajat Graphical Analysis Prossa (pinta-ala kapeiden suikaleiden summana)",
       "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta", "tvt-nopeus-datasta"],
       "why": "Nopeus ja matka lasketaan riveittäin satojen mittauspisteiden datasta."
     }
   ],
   "equipment": [
     "puhelin, jossa on kiihtyvyysanturi ja sovellus, joka tallentaa kiihtyvyyden ajan funktiona, tai erillinen kiihtyvyysanturi",
-    "tietokone ja taulukkolaskentaohjelma",
+    "tietokone tai tabletti, jossa on Graphical Analysis Pro",
     "mittanauha kerroskorkeuden mittaamiseen",
     "hissi, jonka käyttöön on lupa"
   ],

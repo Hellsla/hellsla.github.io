@@ -114,9 +114,10 @@ article svg{max-width:100%;height:auto;background:var(--surface);border:1px soli
 article svg.fig-hero{display:block;width:100%;padding:0;margin:0 0 1.4rem;background:#f6f1e6}   /* the chapter's opening illustration under the Miksi question (figlib Fig hero) */
 article .katex svg{max-width:none;height:inherit;background:none;border:0;border-radius:0;padding:0}   /* KaTeX draws \sqrt and stretchy arrows as svg: the figure frame above must not box them (2026-10-29, fy4-2) */
 
-/* front page (teacher 2026-10-29, "editorial textbook"): a headline and two actions, then the module catalogue as
-   lightly divided rows (one link each, stretched over its row), the upcoming modules in a compact list, one sample
-   lesson, the six stages in a compact numbered row and a short start guide. Neutral rules, no cards and no bars:
+/* front page (teacher 2026-10-29, "editorial textbook"; trimmed 2026-10-31): a short opening without calls to action,
+   then the module catalogue as lightly divided rows (one link each, stretched over its row), the school-specific
+   courses as rows of the same anatomy, the upcoming modules in a compact list, and one study guide: the six stages
+   in a compact numbered row with more tips behind a disclosure. Neutral rules, no cards and no bars:
    the numbers are what is published, never a student's progress. Green is the brand and the interaction colour,
    copper only a thin accent (its text shade --copper-ink keeps 5:1 on the cream). */
 :root{--copper:#b85f2a;--copper-ink:#a3521f}
@@ -129,13 +130,7 @@ main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);lette
 .motto{display:flex;align-items:center;gap:.7rem;margin:0 0 .7rem;font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper-ink)}
 .motto::before{content:"";width:28px;height:2px;background:var(--copper);flex:none}
 .home-intro h1{font:500 clamp(2.1rem,1.5rem + 3vw,3.5rem)/1.06 var(--serif);letter-spacing:-.025em;margin:0 0 .8rem;color:var(--ink)}
-.home-intro .lead{font:400 clamp(1.125rem,1.05rem + .3vw,1.3rem)/1.5 var(--sans);color:var(--ink-2);max-width:36rem;margin:0 0 1.4rem}
-.actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.4rem;margin:0}
-a.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.5rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 1rem var(--sans);text-decoration:none;border:2px solid var(--accent-deep)}
-a.button:hover{background:var(--accent)}a.button:active{background:#0f3d21}
-a.quiet-link{display:inline-flex;align-items:center;min-height:44px;font:600 1rem var(--sans);color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25em}
-a.quiet-link::after{content:"→";margin-left:.4em;text-decoration:none;display:inline-block}
-a.quiet-link:hover{text-decoration-thickness:2px}
+.home-intro .lead{font:400 clamp(1.125rem,1.05rem + .3vw,1.3rem)/1.5 var(--sans);color:var(--ink-2);max-width:36rem;margin:0}
 .catalogue{padding-top:.4rem}
 .mod-list,.up-list{list-style:none;margin:0;padding:0}
 .mod-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);column-gap:.9rem;row-gap:.3rem;margin:0;padding:1.15rem .5rem 1.2rem;border-top:1px solid var(--line)}
@@ -153,9 +148,9 @@ a.quiet-link:hover{text-decoration-thickness:2px}
 .mod-avail{font-weight:700;color:var(--ink)}
 .mod-go{justify-self:start;font:700 var(--fs-ui)/1.4 var(--sans);color:var(--accent-deep);margin-top:.15rem}
 .mod-row:hover .mod-go{text-decoration:underline}
-@supports selector(:has(*)){.mod-link:focus-visible{outline:none}.mod-row:has(.mod-link:focus-visible),.featured-row:has(.featured-link:focus-visible){outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}}
+@supports selector(:has(*)){.mod-link:focus-visible{outline:none}.mod-row:has(.mod-link:focus-visible){outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}}
 @media (min-width:64rem){
-  .mod-row{grid-template-columns:4rem minmax(0,1fr) 13rem 9rem;align-items:baseline;padding:1.3rem .75rem}
+  .mod-row{grid-template-columns:4rem minmax(0,1fr) 15rem 9.5rem;align-items:baseline;padding:1.3rem .75rem}
   .mod-meta{grid-column:3;flex-direction:column;margin:0}
   .mod-go{grid-column:4;justify-self:end;margin:0}
 }
@@ -169,31 +164,17 @@ a.quiet-link:hover{text-decoration-thickness:2px}
 .up-list a .mod-code{line-height:1.5;flex:none}.up-list .up-title{min-width:0}
 .up-list a:hover .up-title{text-decoration:underline;color:var(--accent-deep)}
 .up-meta{font-size:var(--fs-small);color:var(--ink-2)}
-.featured{margin-top:3.6rem!important}
-.featured-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem 2.2rem;margin-top:1rem;padding-top:1.2rem;border-top:1px solid var(--line)}
-@media (min-width:48rem){.featured-row{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start}}
-.featured-fig svg{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:#f6f1e6}
-.featured-text h3{font:500 clamp(1.35rem,1.25rem + .4vw,1.6rem)/1.2 var(--serif);margin:.2rem 0 .6rem}
-.featured-link{color:var(--ink);text-decoration:none}
-.featured-link::after{content:"";position:absolute;inset:0;z-index:1}
-.featured-row:hover .featured-link{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px}
-.featured-meta{margin:0;font:700 var(--fs-small)/1.4 var(--sans);letter-spacing:.04em;color:var(--accent-deep)}
-.featured-q{font:400 1.1875rem/1.45 var(--serif);margin:0 0 .7rem;padding-left:.9rem;border-left:2px solid var(--copper)}
-.featured-lead{font-size:1rem;color:var(--ink-2);margin:0 0 .8rem}
-.featured-go{font:700 var(--fs-ui) var(--sans);color:var(--accent-deep)}
-.featured-row:hover .featured-go{text-decoration:underline}
 /* the learning model: the six stage names the lessons use, a compact numbered sequence on thin rules */
-.path{margin-top:3.6rem!important}
+.path{margin-top:3.2rem!important}
+.path .section-lead{margin-bottom:.4rem}
 .path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
 .path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
 .path-steps li::before{content:counter(step);grid-row:span 2;font:600 1.25rem/1.2 var(--serif);color:var(--copper-ink)}
 .path-steps strong{font:700 1rem/1.35 var(--sans);color:var(--ink)}
 @media (min-width:48rem){.path-steps{grid-template-columns:repeat(3,1fr);column-gap:1.6rem}}
 @media (min-width:72rem){.path-steps{grid-template-columns:repeat(6,1fr);column-gap:1.2rem;border-top:0}.path-steps li{display:flex;flex-direction:column;gap:.15rem;border-bottom:0;border-top:2px solid var(--line);padding:.7rem 0 0}.path-steps li::before{margin-bottom:.1rem}}
-.start{margin-top:3rem!important;max-width:44rem}
-.start-steps{margin:.8rem 0 .6rem;padding-left:1.4rem;font-size:1rem;line-height:1.55}
-.start-steps li{margin:.35rem 0}.start-steps li::marker{color:var(--accent-deep);font-weight:700}
-details.more-tips{margin:.4rem 0 0;border-top:1px solid var(--line-2)}
+details.more-tips{margin:1rem 0 0;max-width:44rem}
+@media (max-width:71.99rem){details.more-tips{margin-top:.4rem}}
 details.more-tips>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 details.more-tips ul{margin:.3rem 0 0;padding-left:1.3rem;font-size:1rem;line-height:1.55;color:var(--ink-2)}
 details.more-tips li{margin:.35rem 0}
@@ -231,6 +212,30 @@ ul.local-prepare a{display:inline-flex;align-items:center;min-height:44px;font-w
 ul.local-prepare a::after{content:"→";margin-left:.5em}
 ul.local-prepare a:hover{text-decoration:underline}
 .local-why{display:block;font-size:var(--fs-ui);color:var(--ink-2)}
+/* the investigation bank of a course page (teacher 2026-10-31, investigations.py bank, invfilter.js): a small filter
+   form on one tinted panel (one column on a phone, the search over four selects from 48rem), then the one list: the
+   name as the link, the question, and a quiet meta line (topic, F and E levels as pills, working modes, modules). */
+.bank-filter{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1rem;margin:.8rem 0 1rem;padding:1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);max-width:52rem}
+.bank-filter[hidden]{display:none}
+.bank-search,.bank-reset,.bank-count{grid-column:1 / -1}
+@media (min-width:48rem){.bank-filter{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.bank-field{display:flex;flex-direction:column;gap:.25rem;min-width:0}
+.bank-field label{font:600 var(--fs-small)/1.3 var(--sans);color:var(--ink)}
+.bank-field input,.bank-field select{min-height:44px;padding:.35rem .6rem;font:400 1rem var(--sans);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;min-width:0;width:100%}
+.bank-field input:focus-visible,.bank-field select:focus-visible,.bank-reset:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+.bank-reset{justify-self:start;min-height:44px;padding:0 1rem;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:transparent;border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.bank-reset:hover{background:var(--bg-tint)}
+.bank-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
+@media (min-width:48rem){.bank-filter .bank-reset{grid-column:1}.bank-filter .bank-count{grid-column:2 / -1;align-self:center}}
+.bank-none{margin:.6rem 0;padding:.7rem 1rem;border-left:4px solid var(--copper);background:var(--surface);border-radius:0 10px 10px 0}
+ol.bank-list li.bank-item[hidden]{display:none}
+.bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.bank-topic{font-weight:700;color:var(--accent-deep)}
+.bank-level{font-weight:700;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:0 .5rem;font-variant-numeric:tabular-nums}
+.tvt-used{margin:.6rem 0 0;font-size:var(--fs-ui)}
+.tvt-used a{font-weight:600}
+article.guide{padding-bottom:60vh} /* a short guide page: room below its last section, so following its link in the stage navigation brings that heading to the top */
+
 ul.practice-link{padding-left:0;list-style:none}ul.practice-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
 details.goals>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 details.goals>p{margin:.6rem 0 .3rem}

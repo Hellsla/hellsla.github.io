@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 88e0f551b8f868d8
+CONTENT-HASH: bd3b6b5ab3588cba
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit the v² column and the fit
 - teacher.md now points to sensor and fitting guides instead of "tekeillä"
 - Raportoi names aligned; topic `liike`
+
+## Delta 2 (2026-10-31)
+
+- Light-gate prerequisite now also names *Anturit ja mittausohjelma*; fitting prerequisite drops kuvaaja — both sensible. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

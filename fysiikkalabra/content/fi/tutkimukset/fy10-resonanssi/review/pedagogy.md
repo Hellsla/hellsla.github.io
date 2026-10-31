@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2d7cecd7a6fe0109
+CONTENT-HASH: 2ca8cd07a7ffc11f
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 
 - Links fit the fit step
 - topic `aallot`; Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- The physics question and hint now come before the tool line, as suggested. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1a57f0032bd7909b
+CONTENT-HASH: 3c80ed435db28b3f
 
 ## Blocking
 
@@ -16,3 +16,12 @@ None.
 - Added sentence is clear and physically sound for a 16-year-old
 - Body and prerequisite links match the slope analysis
 - Raportoi names aligned; topic `liike`
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): explanation before the instruction / *Tarkista vastauksesi kysymykseen 3* lead-in.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

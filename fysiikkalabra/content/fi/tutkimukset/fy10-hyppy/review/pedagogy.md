@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 235dc10d831a3a52
+CONTENT-HASH: 9528e36baf6540d8
 
 ## Blocking
 
@@ -15,3 +15,12 @@ None.
 - "Pinta-ala lasketaan mittauspisteistä summana" no longer implies the software must do it; consistent with the hint box
 - Three body links, each tied to a named tool in the same sentence
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- The *Nopeus ja matka* link is gone from the impulse-area sentence; two links that fit it remain. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- Hint now states what GA Pro does instead of hedging; equipment names GA Pro; guides list adds tvt-taulukkolaskenta, matching the body link.

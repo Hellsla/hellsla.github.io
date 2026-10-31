@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8ffc41270be31495
+CONTENT-HASH: 192bf50dde36abe4
 
 ## Blocking
 
@@ -15,3 +15,12 @@ None.
 - Two new planning questions (pixel width, warm air above the lid) are where the student plans and name real systematic errors
 - "(käytä lämpökameran omaa käyttöohjetta)" reads well in the prerequisites; the body repeats it once
 - Body links (kuvaaja, taulukkolaskenta) fit; topic `lampo`
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): the pixel-width bullet still states its answer.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

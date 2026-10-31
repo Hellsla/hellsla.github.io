@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ece7282fee3672db
+CONTENT-HASH: 839931e071dca5c3
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit the fit
 - topic `aallot`
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Prerequisite drops kuvaaja (four guides). Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

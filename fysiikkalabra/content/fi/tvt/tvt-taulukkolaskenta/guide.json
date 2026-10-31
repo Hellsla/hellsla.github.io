@@ -1,0 +1,12 @@
+{
+  "id": "tvt-taulukkolaskenta",
+  "title": "Taulukko ja lasketut sarakkeet",
+  "description": "Näin kirjoitat mittaukset Graphical Analysis Pron taulukkoon, lasket niistä uusia suureita laskettuina sarakkeina ja viet datan tiedostoon.",
+  "learn": [
+    "kirjoittamaan mittaukset taulukkoon niin, että jokaisella sarakkeella on suure ja yksikkö",
+    "laskemaan mittauksista uusia suureita laskettuina sarakkeina",
+    "laskemaan kertyvän summan ja kuvaajan alle jäävän pinta-alan lasketulla sarakkeella"
+  ],
+  "kind": "ohjelma",
+  "order": 6
+}

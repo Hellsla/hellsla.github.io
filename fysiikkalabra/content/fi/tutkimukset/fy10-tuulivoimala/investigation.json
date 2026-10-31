@@ -92,7 +92,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Taulukon laskut ja mittauspisteiden kuvaaja ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Taulukon laskut ja mittauspisteiden kuvaaja ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Teho lasketaan jokaisesta mittauksesta, ja tekijän vaikutus nähdään kuvaajasta."
     },

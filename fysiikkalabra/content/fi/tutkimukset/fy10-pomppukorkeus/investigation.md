@@ -234,7 +234,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Miksi juuri nämä akselit?** Malli $h_1 = a h_0$ on suoran yhtälö $y = ax$, kun pystyakselille valitaan pomppukorkeus ja vaaka-akselille pudotuskorkeus. Silloin kulmakerroin on suoraan säilyvän energian osuus, ja sen yksikkö on $\text{m/m}$ eli kulmakerroin on yksikötön luku. Jos akselit vaihdetaan keskenään, kulmakerroin on $\dfrac{1}{a}$. Suuri vakiotermi viittaa usein siihen, että korkeudet on mitattu pallon eri kohdista, esimerkiksi pudotus alapinnasta ja pomppu yläpinnasta. Jos molemmat mitataan yläpintaan, suoraan tulee pieni vakiotermi, koska pallon halkaisija sisältyy kumpaankin korkeuteen.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

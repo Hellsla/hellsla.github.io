@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 880ce7438bd31521
+CONTENT-HASH: 899e951758f776fb
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit "laskettuihin sarakkeisiin" and the fit
 - topic `lampo` fits
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

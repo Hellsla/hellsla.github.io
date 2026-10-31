@@ -222,7 +222,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Kaartuvat pisteet.** Ilmanvastus kasvaa nopeuden kasvaessa, joten se voi taivuttaa suurimpien korkeuksien pisteitä suoran alapuolelle. Jätä sovituksesta pois vain pisteet, joiden poikkeamalle löydät fysikaalisen syyn, ja kerro se raportissa.
 :::
 
-Kuvaajan sovitukseen ja $v^2$-sarakkeen laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen ja $v^2$-sarakkeen laskemiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

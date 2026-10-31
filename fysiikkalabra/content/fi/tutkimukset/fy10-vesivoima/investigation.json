@@ -98,7 +98,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Tehojen ja hyötysuhteen laskeminen taulukkolaskennalla ja kuvaajan piirtäminen ohjelmalla (esimerkiksi taulukkolaskenta tai Graphical Analysis)",
+      "text": "Tehojen ja hyötysuhteen laskeminen laskettuina sarakkeina ja kuvaajan piirtäminen ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Mittauksia on monta ja jokaisesta lasketaan kaksi tehoa ja hyötysuhde."
     }

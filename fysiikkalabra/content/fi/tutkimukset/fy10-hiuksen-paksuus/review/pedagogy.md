@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 666d1021d45a0480
+CONTENT-HASH: 006256f025db0ed7
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body and prerequisite links match the slope-based analysis
 - topic `aallot` (diffraction) fits
 - *Koejärjestely ja menetelmä* keeps the laser-safety item
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

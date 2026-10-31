@@ -85,6 +85,8 @@ def check(gid, lang=i18n.SOURCE):
     if re.search(r'<svg data-fig="[^"]*"></svg>', md): errs.append(f"{where}: empty figure: run guides.py figures {gid}")
     if "\\vec" in md or "\\mathbf" in md: errs.append(f"{where}: vectors are \\overline{{F}} (teacher 2026-10-29)")
     if "×" in md: errs.append(f"{where}: multiplication is \\cdot (teacher's rule 8)")
+    errs += [f"{where}: {m}: write the menu name in bold as Graphical Analysis Pro shows it in English (teacher 2026-10-31)"
+             for m in sorted(set(re.findall(r"\{\{ga:[^}]*\}\}", md)))]
     return errs
 
 
@@ -134,8 +136,9 @@ def render(gid, lang, T, md, published, users):
         used = (f'<p class="tvt-used"><strong>{T("guides.used_by")}</strong> '
                 + ", ".join(f'<a href="{i}.html">{esc(t)}</a>' for i, t in users) + "</p>")
     opening = (f'<p class="notice tvt-kind" role="note">{T("guides.kind_" + d["kind"])}</p>'
-               f'<div class="inv-learn"><h2 id="h-tavoitteet">{T("guides.learn")}</h2><ul>{learn}</ul>{used}</div>')
-    body = f'<article id="teoria" class="investigation guide">{intro}{opening}{"".join(parts)}</article>'
+               f'<div class="inv-learn"><h2 id="h-tavoitteet">{T("guides.learn")}</h2><ul>{learn}</ul></div>')
+    # the investigations that use the guide close the page (up to 27 links would push the steps far down on a phone)
+    body = f'<article id="teoria" class="investigation guide">{intro}{opening}{"".join(parts)}{used}</article>'
     return body, "".join(f'<a href="#{a}">{esc(t)}</a>' for a, t in toc)
 
 

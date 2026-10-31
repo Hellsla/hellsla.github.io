@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f4cce81a8d2f1496
+CONTENT-HASH: 8efe369500c90495
 
 ## Blocking
 None.
@@ -11,3 +11,10 @@ None.
 - `topic` "liike" fits the physics area.
 - TVT `guides` (kuvaaja, suoran sovitus, kulmakerroin, epävarmuus) match the prerequisite: a linear fit whose slope and its uncertainty give the result; inline links agree. Video guide fits reading bounce height.
 - Report bullets renamed to the template's section names (Koejärjestely ja menetelmä); content unchanged.
+
+## Delta 2 (2026-10-31)
+- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

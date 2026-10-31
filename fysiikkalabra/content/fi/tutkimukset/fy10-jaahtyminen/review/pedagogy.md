@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5918620bf2afe504
+CONTENT-HASH: f5fc935917630cee
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Links fit the ln column and the linear fit; mittausohjelma in the prerequisite for the logging sensor
 - topic `lampo` fits
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

@@ -111,7 +111,7 @@
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Mittaustulosten käsittely ja kuvaajat ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Mittaustulosten käsittely ja kuvaajat ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta"],
       "why": "Ohjelma helpottaa laskuja ja kuvaajien piirtämistä."
     }

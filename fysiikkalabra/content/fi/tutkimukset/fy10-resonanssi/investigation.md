@@ -354,7 +354,7 @@ Määritä aallonpituus useasta resonanssikohdasta, ei yhdestä, ja laske siitä
   <foreignObject x="112.5" y="62.5" width="170" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kulmakerroin } \dfrac{\lambda}{2}$</div></foreignObject>
 </svg>
 
-Mitä suoran vakiotermi kertoo? Vihje: sijoita resonanssin ehtoon $n = 0$. Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Mitä suoran vakiotermi kertoo? Vihje: sijoita resonanssin ehtoon $n = 0$. Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 :::
 
 ::: tuki O

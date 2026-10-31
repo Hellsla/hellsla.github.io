@@ -288,7 +288,7 @@ Voit käyttää esimerkiksi kahta tällaista taulukkoa, toista huippuarvoille ja
 
 Laske keskiarvot $\bar{U}_\text{max}$ ja $\bar{S}$ sekä nopeus $v = \sqrt{2gh}$ omiin sarakkeisiinsa mitattujen oikealle puolelle.
 
-Säädä näytteenottotaajuus niin suureksi, että yksi pulssi koostuu ainakin kymmenistä mittauspisteistä. Lue huippuarvo ensimmäisestä pulssista itseisarvona ohjelman lukutyökalulla tai datataulukosta. Jos käämi on kytketty toisin päin, ensimmäinen pulssi on negatiivinen, ja ohjelman suurimman arvon työkalu löytää silloin toisen pulssin huipun, joka riippuu magneetin nopeudesta käämistä lähtiessä. Pinta-alan saat ohjelman integrointi- tai pinta-alatyökalulla, jos ohjelmassa on sellainen, tai viemällä datan taulukkolaskentaan ja laskemalla pulssin pisteistä summan jännite kertaa aikaväli.
+Säädä näytteenottotaajuus niin suureksi, että yksi pulssi koostuu ainakin kymmenistä mittauspisteistä. Lue huippuarvo ensimmäisestä pulssista itseisarvona ohjelman lukutyökalulla tai datataulukosta. Jos käämi on kytketty toisin päin, ensimmäinen pulssi on negatiivinen, ja ohjelman suurimman arvon työkalu löytää silloin toisen pulssin huipun, joka riippuu magneetin nopeudesta käämistä lähtiessä. Pinta-alan saat Graphical Analysis Prossa, kun valitset kuvaajasta välin ensimmäisen pulssin alusta siihen kohtaan, jossa jännite vaihtaa merkkiä, ja näytät valitun välin pinta-alan eli integraalin. Kirjaa pinta-ala itseisarvona.
 :::
 
 Muista mittausepävarmuus: kirjaa, kuinka tarkasti luet tutkimasi tekijän arvon ja miten paljon huippuarvo ja pinta-ala vaihtelevat toistojen välillä. [[apua:fy1-3|Mittausepävarmuuden arvioiminen]]
@@ -336,7 +336,7 @@ Kun magneetti tulee käämiin, vuo kasvaa, ja kun se lähtee, vuo pienenee. Siks
 Induktiolaista seuraa, että pulssin pinta-ala on $S = N\Delta\Phi$, missä $\Delta\Phi$ on vuon kokonaismuutos koko pulssin aikana, keskimäärin yhtä kierrosta kohti. Pinta-ala kertoo siis, kuinka paljon vuo muuttuu, ja huippuarvo, kuinka nopeasti se muuttuu. Vertaa tätä omiin kuvaajiisi. Jos tuloksesi poikkeavat, mieti, mitkä mallin oletukset eivät mittauksessasi täyttyneet.
 :::
 
-Kuvaajan sovitukseen ja pulssin pinta-alan laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen ja pulssin pinta-alan laskemiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

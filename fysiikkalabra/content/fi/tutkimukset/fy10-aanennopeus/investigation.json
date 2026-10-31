@@ -91,7 +91,7 @@
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Jos määrität nopeuden kuvaajan kulmakertoimesta, kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }

@@ -1,0 +1,12 @@
+{
+  "id": "tvt-mittausohjelma",
+  "title": "Anturit ja mittausohjelma",
+  "description": "Näin valmistelet anturin mittaukseen Graphical Analysis Prolla, tallennat mittaussarjan ja luet siitä arvoja, keskiarvoja ja pinta-aloja.",
+  "learn": [
+    "valmistelemaan anturin mittaukseen ja valitsemaan sopivan mittaustaajuuden ja keston",
+    "lukemaan mittausohjelman kuvaajasta arvoja, keskiarvoja ja pinta-aloja",
+    "tallentamaan mittauksen ja viemään datan tiedostoon"
+  ],
+  "kind": "ohjelma",
+  "order": 7
+}

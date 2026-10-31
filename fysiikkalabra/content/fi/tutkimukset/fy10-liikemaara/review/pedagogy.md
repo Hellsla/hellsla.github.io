@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 927a7b5cb095627e
+CONTENT-HASH: 96467992e17e2aa4
 
 ## Blocking
 
@@ -13,3 +13,12 @@ None.
 
 - Only the topic (`liike`) and the Raportoi guide link changed; no body TVT line, prerequisites name mittausohjelma, kuvaaja, nopeus-datasta and taulukkolaskenta, all relevant
 - Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- The tvt prerequisite stays *helpful*; could be *essential* now that the body orders calculated columns (polish).

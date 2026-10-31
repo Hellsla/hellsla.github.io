@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 032abb22f0a0e4c8
+CONTENT-HASH: a9c7960a062d547f
 
 ## Blocking
 
@@ -15,3 +15,12 @@ None.
 
 - Links match the tools named in the same sentence
 - topic `liike` fits
+
+## Delta 2 (2026-10-31)
+
+- Link sentence down to three (kulmakerroin dropped); acceptable, though the video link still sits with the fitting links. Raportoi now reads *Koejärjestely ja menetelmä*. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- Fit is now an instruction (*Sovita suora Graphical Analysis Pro -ohjelmalla*).

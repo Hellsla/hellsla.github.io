@@ -246,7 +246,7 @@ Vastaa:
 Tarkista vastauksesi kysymykseen 3 tästä. Jos jokaisessa matkassa on sama vakiovirhe, koko suora siirtyy ylös tai alas, mutta sen kulmakerroin ei muutu. Sama koskee aikaa, jos toinen signaali on joka kerta yhtä paljon myöhässä. Kun nopeus lasketaan kulmakertoimesta, tällainen vakiovirhe näkyy vain vakioterminä. Jos taas lasket nopeuden jokaisesta mittauksesta erikseen jakolaskulla, vakiovirhe vaikuttaa jokaiseen tulokseen, eniten lyhyillä matkoilla.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

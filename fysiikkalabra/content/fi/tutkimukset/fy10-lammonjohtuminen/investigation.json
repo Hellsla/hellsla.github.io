@@ -85,7 +85,7 @@
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Kuvaajan piirtäminen ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Kuvaajan piirtäminen ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-kuvaaja"],
       "why": "Usean materiaalin tulokset on helpointa vertailla samassa kuvaajassa."
     }

@@ -239,10 +239,10 @@ Vastaa:
 4. Ovatko kahdella menetelmällä saadut korkeudet samaa suuruusluokkaa? Kumpi on suurempi useimmissa hypyissä?
 
 ::: tuki O OO
-**Vihje pinta-alaan.** Monet mittausohjelmat laskevat käyrän alle jäävän pinta-alan valitulta väliltä. Jos ohjelma laskee pinta-alan aika-akseliin asti, se antaa tukivoiman $N$ impulssin, ja kokonaisvoiman impulssi saadaan, kun siitä vähennetään painon impulssi $G\cdot T$, missä $T$ on valitun välin pituus. Taulukkolaskennassa voit laskea jokaiselle mittauspisteelle sarakkeen $(N_i - G)\cdot\Delta t$ ja summata sen valitulta väliltä.
+**Vihje pinta-alaan.** Graphical Analysis Pro laskee valitulta väliltä käyrän ja aika-akselin välisen pinta-alan eli integraalin. Tukivoiman $N$ kuvaajasta se antaa tukivoiman impulssin, ja kokonaisvoiman impulssi saadaan, kun siitä vähennetään painon impulssi $G\cdot T$, missä $T$ on valitun välin pituus. Voit myös tehdä lasketun sarakkeen $N - G$ ja määrittää sen kuvaajan pinta-alan valitulta väliltä, jolloin saat suoraan kokonaisvoiman impulssin.
 :::
 
-Pinta-alan määrittämiseen voit käyttää voimalevyn mittausohjelmaa, Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Pinta-alan määrittämiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

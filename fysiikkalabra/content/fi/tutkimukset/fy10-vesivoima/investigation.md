@@ -295,7 +295,7 @@ Vastaa:
 </svg>
 :::
 
-Laskut ja kuvaajat voit tehdä esimerkiksi taulukkolaskennalla tai Graphical Analysis -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Tee laskut ja kuvaajat Graphical Analysis Pro -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

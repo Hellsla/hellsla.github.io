@@ -217,7 +217,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 **Miksi juuri nämä akselit?** Malli $\tfrac{1}{2}v_0^2 = \mu g \cdot s$ on suoran yhtälö $y = kx$, kun pystyakselille valitaan $\tfrac{1}{2}v_0^2$ ja vaaka-akselille $s$. Kulmakertoimen yksikkö on $\text{m/s}^2$, ja kulmakerroin on $\mu g$. Jos pystyakselille valitaan $v_0^2$, kulmakerroin on $2\mu g$. Jos akselit vaihdetaan keskenään, kulmakerroin on käänteisluku. Pysähtymismatkan kuvaaja pelkän alkunopeuden $v_0$ funktiona ei ole suora vaan kaartuu ylöspäin. Siitä on vaikea nähdä, noudattavatko pisteet mallia, ja kitkakertoimen saaminen siitä on hankalaa. Jos suora ei kulje origon kautta, syynä voi olla esimerkiksi se, että alkunopeus on luettu ennen kuin työntö on loppunut tai eri hetkeltä kuin paikka $x_0$. Radan tasainen kallistus ei tee vakiotermiä: se muuttaa vain kulmakerrointa: mitattu kitkakerroin muuttuu noin $0{,}02$ asteen kallistusta kohti, joten sitä ei näe kuvaajasta.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

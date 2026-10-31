@@ -86,7 +86,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Jaksonajan neliö lasketaan ohjelmassa, ja kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }

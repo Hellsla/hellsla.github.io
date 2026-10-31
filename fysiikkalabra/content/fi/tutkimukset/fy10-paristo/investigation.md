@@ -265,7 +265,7 @@ Kirjoita sovitetun kuvaajan yhtälö ja vastaa:
 Mittauspisteet ovat yleensä vain osalla suoraa, kuvan yhtenäisellä osalla. Molemmat leikkauskohdat saadaan jatkamalla sovitettua suoraa mittausalueen ulkopuolelle, katkoviivalla merkityille osille. Erityisesti oikosulkuvirta on usein kaukana mitatuista virroista. Jatkaminen voi antaa väärän tuloksen, koska suurilla virroilla paristo lämpenee ja polarisoituu, jolloin sen sisäinen resistanssi ja lähdejännite eivät enää pysy vakioina eikä kuormituskäyrä ole siellä välttämättä suora.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

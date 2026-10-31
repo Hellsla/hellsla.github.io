@@ -1,0 +1,11 @@
+{
+  "id": "tvt-videoanalyysi",
+  "title": "Videoanalyysi",
+  "description": "Näin kuvaat liikkeen videolle ja määrität siitä kappaleen paikan ajan funktiona analyysiohjelmalla tai kuvia laskemalla.",
+  "learn": [
+    "kuvaamaan liikkeen videolle niin, että siitä voi mitata paikkoja ja aikoja",
+    "määrittämään videolta kappaleen paikan ajan funktiona analyysiohjelmalla tai kuvia laskemalla"
+  ],
+  "kind": "ohjelma",
+  "order": 5
+}

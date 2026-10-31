@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 23b672eae794f262
+CONTENT-HASH: c7ca97a24c6c510c
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Body links fit; mittausohjelma in prerequisites for the lux sensor
 - topic `aallot` (valo)
 - Raportoi already followed the template
+
+## Delta 2 (2026-10-31)
+
+- Prerequisite drops kuvaaja (four guides). Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

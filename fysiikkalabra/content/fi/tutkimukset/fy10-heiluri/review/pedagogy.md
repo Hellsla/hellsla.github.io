@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 72fc97fe61658199
+CONTENT-HASH: 55d0fb6074326f59
 
 ## Blocking
 
@@ -16,3 +16,11 @@ None.
 - topic `aallot` (värähtely) fits
 - Body links match the T² column and the fit; three links, readable
 - *Työn suunnitelma* → *Koejärjestely ja menetelmä*; content unchanged
+
+## Delta 2 (2026-10-31)
+
+- Prerequisite trimmed to four guides as suggested. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

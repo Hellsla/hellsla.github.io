@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a4d2506c239a0840
+CONTENT-HASH: 73110bd2e5c01854
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - Teacher-facing timing note is correct pedagogy: it steers groups to video or a motion sensor before they waste a session on hand timing
 - Body links (kuvaaja, taulukkolaskenta) match "Laskuihin ja kuvaajiin"
 - Raportoi names aligned; topic `liike` fits
+
+## Delta 2 (2026-10-31)
+
+- teacher.md: the timing advice is now its own *Ajanotto* paragraph, as suggested. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

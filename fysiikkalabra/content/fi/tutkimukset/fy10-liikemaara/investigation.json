@@ -83,14 +83,14 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (esimerkiksi Graphical Analysis)",
+      "text": "Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-mittausohjelma", "tvt-kuvaaja", "tvt-nopeus-datasta"],
       "why": "Vaunujen nopeudet ennen törmäystä ja sen jälkeen luetaan anturien tallentamista kuvaajista."
     },
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Laskut taulukkolaskentaohjelmalla",
+      "text": "Laskut laskettuina sarakkeina (Graphical Analysis Pro)",
       "guides": ["tvt-taulukkolaskenta"],
       "why": "Liikemäärät ja laajennuksen liike-energiat lasketaan monesta törmäyksestä samoilla kaavoilla."
     }

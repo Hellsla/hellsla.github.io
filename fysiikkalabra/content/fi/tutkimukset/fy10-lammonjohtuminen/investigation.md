@@ -246,7 +246,7 @@ Vastaa sitten:
 2. Mitkä materiaalit erottuvat toisistaan selvästi ja mitkä eivät?
 3. Näkyykö lämpökamerakuvassa kohtia, joiden lukemaan et luota? Mistä ne voisivat johtua?
 
-Kuvaajan piirtämiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]]. Lämpökameran käytössä noudata laitteen omaa käyttöohjetta.
+Kuvaajan piirtämiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]. Lämpökameran käytössä noudata laitteen omaa käyttöohjetta.
 
 ## Epävarmuus ja luotettavuus
 

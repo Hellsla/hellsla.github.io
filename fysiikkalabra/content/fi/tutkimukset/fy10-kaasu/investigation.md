@@ -286,7 +286,7 @@ V = \text{vakio} \cdot \frac{1}{p} - V_0
 Kun piirrät ruiskun lukeman $V$ paineen käänteisluvun $\dfrac{1}{p}$ funktiona, suoran vakiotermi on $-V_0$. Näin voit arvioida letkun ja anturin tilavuuden ja korjata sen tuloksiin.
 :::
 
-Kuvaajan sovitukseen ja laskettuihin sarakkeisiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen ja laskettuihin sarakkeisiin käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

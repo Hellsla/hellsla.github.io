@@ -98,7 +98,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Laskettu sarake, suoran sovitus ja eksponenttisovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Laskettu sarake, suoran sovitus ja eksponenttisovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Mallia testataan laskemalla uusi suure mitatuista arvoista tai sovittamalla malli suoraan mittauspisteisiin."
     }

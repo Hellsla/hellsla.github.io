@@ -292,7 +292,7 @@ Vastaa:
 2. Millä tekijän arvoilla voimala toimii parhaiten, ja kuinka tarkasti voit sanoa sen kuvaajasta?
 3. Ovatko pisteiden väliset erot suurempia kuin tehon epävarmuus?
 
-Laskuihin ja kuvaajaan voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Laskuihin ja kuvaajaan käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

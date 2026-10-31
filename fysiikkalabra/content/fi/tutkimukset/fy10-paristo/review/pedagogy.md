@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7bcf2957fad20053
+CONTENT-HASH: 7e9e937a3dfb410f
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 - The holder sentence is short, concrete and placed in the wiring text where the student connects the voltmeter; paragraph stays under 100 words
 - Body links fit the U–I fit
 - topic `sahko`; Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

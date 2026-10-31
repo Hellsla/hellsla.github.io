@@ -99,7 +99,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Lämpötila-anturin mittausten tallentaminen ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "text": "Lämpötila-anturin mittausten tallentaminen ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
       "guides": ["tvt-mittausohjelma", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, ja anturi kirjaa lämpötilan tasaisin väliajoin."
     }

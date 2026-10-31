@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 613cd67140d6abfd
+CONTENT-HASH: 8e295e965fd9669d
 
 ## Blocking
 
@@ -15,3 +15,11 @@ None.
 
 - Links are all relevant to the work; only their placement overloads one sentence
 - Raportoi names aligned; topic `liike`
+
+## Delta 2 (2026-10-31)
+
+- Sensor link removed from the fitting sentence; three matching links remain. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

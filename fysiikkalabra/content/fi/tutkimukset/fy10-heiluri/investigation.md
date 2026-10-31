@@ -230,7 +230,7 @@ joten jaksonajan neliö pituuden funktiona on origon kautta kulkeva suora, jonka
 Jos pituus on mitattu joka kerta samasta väärästä kohdasta, esimerkiksi kuulan yläpintaan keskipisteen sijasta, jokaisesta pituudesta puuttuu sama matka. Silloin suora siirtyy, ja kuvaajaan tulee vakiotermi, mutta kulmakerroin ja siitä laskettu $g$ eivät muutu. Tämä on kuvaajasta määrittämisen etu verrattuna yksittäiseen laskuun $g = \dfrac{4\pi^2 l}{T^2}$.
 :::
 
-Kuvaajan sovitukseen ja jaksonajan neliön laskemiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
+Kuvaajan sovitukseen ja jaksonajan neliön laskemiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
