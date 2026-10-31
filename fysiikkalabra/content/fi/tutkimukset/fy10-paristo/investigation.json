@@ -1,0 +1,112 @@
+{
+  "id": "fy10-paristo",
+  "type": "investigation",
+  "title": "Pariston kuormituskäyrä",
+  "question": "Miten pariston napajännite riippuu paristosta otettavasta sähkövirrasta, ja mitkä ovat pariston lähdejännite, sisäinen resistanssi ja oikosulkuvirta?",
+  "description": "Kokeellinen tutkimus: mittaa pariston napajännite eri kuormitusvirroilla ja määritä kuormituskäyrästä pariston lähdejännite, sisäinen resistanssi ja oikosulkuvirta.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY6"
+  ],
+  "source": "Esimerkkityöt.pdf s. 6–7 (Pariston kuormituskäyrä), opettajan aineisto",
+  "learn": [
+    "tulkitsemaan suoran kulmakertoimen ja akselien leikkauskohdat fysikaalisina suureina",
+    "määrittämään suureen jatkamalla kuvaajaa mittausalueen ulkopuolelle ja arvioimaan, milloin se on perusteltua",
+    "ilmoittamaan tuloksen epävarmuuksineen ja arvioimaan sen luotettavuutta"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Kuormituskäyrä ja pariston suureet",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Uuden ja käytetyn pariston vertailu",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähkövirta ja jännite",
+      "missing": "FY6: Sähkövaraus, sähkövirta ja jännite",
+      "why": "Tutkimuksessa mitataan virtaa ja jännitettä; suureet on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Resistanssi ja Ohmin laki",
+      "missing": "FY6: Resistanssi ja Ohmin laki",
+      "why": "Kuormitusvastuksen resistanssia muuttamalla säädetään piirin virtaa."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Lähdejännite ja sisäinen resistanssi",
+      "missing": "FY6: Akut, lähdejännite ja sisäinen resistanssi",
+      "why": "Tutkimuksessa määritettävät suureet; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Virta- ja jännitemittarin kytkeminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Virtamittari kytketään sarjaan ja jännitemittari rinnan. Väärin kytketty virtamittari oikosulkee pariston."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Suoran yhtälö ja sen epävarmuudet saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "paristo (opettajan antama)",
+    "kaksi yleismittaria tai erilliset jännite- ja virtamittari",
+    "säädettävä vastus (liukuvastus tai potentiometri)",
+    "suojavastus, jos opettaja antaa sellaisen",
+    "kytkin",
+    "johtimia",
+    "laajennukseen käytetty paristo"
+  ],
+  "safety": [
+    "Älä koskaan kytke pariston napoja suoraan yhteen johtimella tai virtamittarilla. Oikosulussa paristo kuumenee ja voi vaurioitua tai vuotaa. Oikosulkuvirta määritetään kuvaajasta, ei mittaamalla sitä.",
+    "Virtamittari kytketään aina sarjaan kuorman kanssa, ei koskaan suoraan pariston napoihin.",
+    "Pidä sähkövirta opettajan ilmoittaman rajan alapuolella. Varmista ennen piirin sulkemista, ettei säädettävän vastuksen resistanssi voi laskea nollaan; käytä suojavastusta opettajan ohjeen mukaan.",
+    "Näytä kytkentä opettajalle ennen kuin suljet piirin ensimmäisen kerran.",
+    "Pidä piiri suljettuna vain lukemien ajan. Jos paristo, vastus tai johdin lämpenee, avaa piiri heti ja kerro opettajalle.",
+    "Älä mittaa pariston sisäistä resistanssia yleismittarin resistanssialueella: mittari voi vaurioitua, eikä lukema ole pariston sisäinen resistanssi.",
+    "Älä käytä vuotavaa tai vaurioitunutta paristoa."
+  ]
+}

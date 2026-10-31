@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Umpinaisen sylinterin hitausmomentti — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: selvitä, mitä hitausmomentti tarkoittaa, määritä umpinaisen sylinterin hitausmomentti energian säilymisen avulla kaltevalla tasolla ja vertaa tulosta malliin. Laajennuksena pyörimismäärän säilyminen polkupyörän renkaalla.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-hitausmomentti.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Umpinaisen sylinterin hitausmomentti">
+<meta property="og:description" content="Kokeellinen tutkimus: selvitä, mitä hitausmomentti tarkoittaa, määritä umpinaisen sylinterin hitausmomentti energian säilymisen avulla kaltevalla tasolla ja vertaa tulosta malliin. Laajennuksena pyörimismäärän säilyminen polkupyörän renkaalla.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-hitausmomentti.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Umpinaisen sylinterin hitausmomentti</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Umpinaisen sylinterin hitausmomentti</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#selvita-mita-hitausmomentti-tarkoittaa">Selvitä: mitä hitausmomentti tarkoittaa?</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#hitausmomentista-mitattaviksi-suureiksi">Hitausmomentista mitattaviksi suureiksi</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-pyorimismaaran-sailyminen">Laajennus: pyörimismäärän säilyminen</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Umpinaisen sylinterin hitausmomentti</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Kuinka suuri on umpinaisen sylinterin hitausmomentti, kun se määritetään kaltevaa tasoa alas vierivän sylinterin liikkeestä, ja vastaako tulos teoreettista mallia?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: työpöydällä on kirjapinon varaan nojaava lauta, joka muodostaa kaltevan tason. Tason yläpäässä on levossa umpinainen metallisylinteri päästä katsottuna, ja tason poikki pystytetty viivain pitää sitä paikallaan. Tason alapäässä on pehmeä pysäytin. Pöydällä on lisäksi ohutseinäinen putki ja oikealla pystyssä polkupyörän rengas akseleineen." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10hh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10hh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy10hh-board" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e0b878"/><stop offset="1" stop-color="#c99a55"/></linearGradient><radialGradient id="fy10hh-cyl" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10hh-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10hh-desk)"/>
+  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="96" y="429" width="134" height="41" rx="4" fill="#4c6ef5" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="108" y1="449" x2="218" y2="449" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="100" y="387.5" width="134" height="41" rx="4" fill="#e8590c" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="112" y1="407.5" x2="222" y2="407.5" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="96" y="346" width="134" height="41" rx="4" fill="#2b8a3e" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="108" y1="366" x2="218" y2="366" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="100" y="305" width="134" height="41" rx="4" fill="#f08c00" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="112" y1="325" x2="222" y2="325" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M110,254 L820,452 L815,469.5 L105,271.5 Z" fill="url(#fy10hh-board)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="830" y="420" width="46" height="50" rx="10" fill="#495057" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="239.5" cy="236" r="52" fill="url(#fy10hh-cyl)" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="239.5" cy="236" r="3.5" fill="#1f2933"/>
+  <path d="M275.5,300 L283.5,302.5 L318.5,177 L310.5,175 Z" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="960" cy="426" r="40" fill="none" stroke="#8a96a3" stroke-width="5"/>
+  <circle cx="960" cy="426" r="42.5" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="960" cy="426" r="37.5" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="960" cy="426" r="3.5" fill="#1f2933"/>
+  <circle cx="1100" cy="378" r="88" fill="none" stroke="#1f2933" stroke-width="10.56"/>
+  <circle cx="1100" cy="378" r="79.2" fill="none" stroke="#8a96a3" stroke-width="3"/>
+  <line x1="1106.5" y1="380.5" x2="1177.5" y2="378" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1105" y1="383" x2="1173" y2="404.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1103" y1="384.5" x2="1159.5" y2="428" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1101" y1="385" x2="1138.5" y2="445" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1098.5" y1="385" x2="1113.5" y2="454.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1096" y1="384" x2="1086.5" y2="454.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1094.5" y1="382" x2="1061.5" y2="445" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1093.5" y1="380" x2="1040.5" y2="428" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1093" y1="377.5" x2="1027" y2="404.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1093.5" y1="375.5" x2="1022.5" y2="378" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1095" y1="373" x2="1027" y2="351.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1097" y1="371.5" x2="1040.5" y2="328" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1099" y1="371" x2="1061.5" y2="311" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1101.5" y1="371" x2="1086.5" y2="301.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1104" y1="372" x2="1113.5" y2="301.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1105.5" y1="374" x2="1138.5" y2="311" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1106.5" y1="376" x2="1159.5" y2="328" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1107" y1="378.5" x2="1173" y2="351.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
+  <circle cx="1100" cy="378" r="8.8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1094" y="372" width="12" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+</svg></p>
+<p>Pyörä, vauhtipyörä ja pyörivä taitoluistelija liikkuvat eri tavalla kuin suoraan liukuva kappale: pyörimisliikkeessä ei ratkaise pelkkä massa, vaan myös se, miten massa on jakautunut pyörimisakselin ympärille. Tätä kuvaa suure nimeltä <strong>hitausmomentti</strong>. Tässä tutkimuksessa selvität ensin, mitä hitausmomentti tarkoittaa, ja määrität sitten mittaamalla umpinaisen sylinterin hitausmomentin, kun sylinteri vierii kaltevaa tasoa alas. Pyörimisliikkeen energia ja hitausmomentti eivät kuulu lukion fysiikan moduuleihin, joten tarvittava teoria on tiivistetty tälle sivulle. Mittaa, analysoi ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>kuvailemaan omin sanoin, mitä hitausmomentti tarkoittaa ja miten massan jakautuminen pyörimisakselin suhteen vaikuttaa siihen</li><li>määrittämään hitausmomentin energian säilymisen avulla mittaamistasi suureista</li><li>vertaamaan mittaustulosta teoreettiseen malliin epävarmuuksineen ja arvioimaan mallin oletusten pätevyyttä</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Mitä hitausmomentti tarkoittaa?</strong>: fysiikka F3 · koe E1</li><li><strong>Umpinaisen sylinterin hitausmomentti</strong>: fysiikka F3 · koe E3</li><li><strong>Pyörimismäärän säilyminen</strong>: fysiikka F3 · koe E1</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="OO" checked><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-7.html">Liike-energia, potentiaalienergia ja mekaaninen energia</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Työssä tarvitaan liike-energiaa ja potentiaalienergiaa.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy4-8.html">Mekaanisen energian säilyminen ja energiaperiaate</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Hitausmomentti määritetään energiaperiaatteen avulla.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Kulmanopeus <span class="inv-mod">(FY5: Tasainen ympyräliike: kulmanopeus ja ratanopeus)</span><span class="inv-why">Pyörimisliikettä kuvataan kulmanopeudella; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Hitausmomentti ja pyörimisliikkeen energia <span class="inv-mod">(ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla)</span><span class="inv-why">Työn keskeinen käsite. Selvität sen itse, ja sivun kohta Teoriaa lyhyesti tiivistää tarvittavan.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy4-2.html">Kiihtyvyys ja tasaisesti kiihtyvä liike</a> <span class="inv-mod">(FY4)</span><span class="inv-why">Tasaisesti kiihtyvän liikkeen yhtälöt ja kuvaajat auttavat liikkeen analysoinnissa.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> Pyörimismäärä ja sen säilyminen <span class="inv-mod">(ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla laajennuksen alussa)</span><span class="inv-why">Laajennuksen käsite. Se muistuttaa liikemäärää, joka on tuttu moduulista FY4.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> Momentti <span class="inv-mod">(FY5: Momentti ja vääntövaikutus)</span><span class="inv-why">Laajennuksessa tarvitaan tietoa siitä, milloin ulkoinen momentti muuttaa pyörimistä.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittaustulosten graafinen esitys ja kuvaajan tulkinta.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Toistomittausten keskiarvo, mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\bar{x} \pm \Delta x$.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Mittaustulosten käsittely ja kuvaajat ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Ohjelma helpottaa laskuja ja kuvaajien piirtämistä.</span></li></ul><h3>Välineet</h3><ul><li>kalteva taso (lauta tai kouru) ja tuet</li><li>umpinainen, tasa-aineinen sylinteri</li><li>vertailukappale, jonka massa on jakautunut toisin, esimerkiksi putki</li><li>pehmeä pysäytin tason alapäähän</li><li>vaaka</li><li>työntömitta ja mittanauha</li><li>välineet liikkeen mittaamiseen, esimerkiksi ajanottoväline, liikeanturi tai puhelimen kamera</li><li>laajennukseen polkupyörän rengas akseleineen ja opettajan luvalla pyörivä jakkara</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Tue kalteva taso tukevasti ja pysäytä sylinteri tason alapäässä pehmeällä pysäyttimellä, ettei raskas sylinteri vieri pöydältä jalkoihin.</li><li>Pidä kädet, hiukset, korut ja löysät vaatteet poissa polkupyörän renkaan pinnoista. Pysäytä rengas jarruttamalla varovasti rengasta, älä pinnoja.</li><li>Pyörivää jakkaraa saa käyttää vain opettajan luvalla. Pysy jakkaralla tukevasti, pidä ympärillä tilaa ja pyydä toista opiskelijaa varmistamaan vierestä.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> mitä hitausmomentti tarkoittaa ja mistä se riippuu, kuinka suuri umpinaisen sylinterin hitausmomentti on epävarmuuksineen, kun se määritetään vierimisliikkeestä energian säilymisen avulla, ja mahtuuko teoreettisen mallin antama arvo mittaustuloksen epävarmuusväliin.</p>
+<p><strong>Päätät itse</strong> (osittain ohjattu ja itsenäinen työtapa): tason kaltevuuden ja vierimismatkat, sen, miten mittaat sylinterin nopeuden, toistojen määrän, kuvaajan akselit tai laskutavan sekä tavan, jolla arvioit tuloksen epävarmuuden. Osittain ohjatussa työtavassa sivu ehdottaa näihin yhden toimivan tavan, jonka voit korvata perustellulla omallasi. Itsenäisessä työtavassa suunnittelet ja perustelet valintasi itse.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, pyörimismäärän säilymisen demonstraatio polkupyörän renkaalla, kuuluu työhösi.</p></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu työtapa.</strong> Laajennus, pyörimismäärän säilymisen demonstraatio polkupyörän renkaalla, on vapaaehtoinen. Opettaja kertoo, tehdäänkö se.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Umpinainen sylinteri ja ontto putki päästetään levosta yhtä aikaa samalta korkeudelta vierimään kaltevaa tasoa alas. Kumpi ehtii alas ensin, vai tulevatko ne yhtä aikaa? Miksi?</li>
+<li>Onko vierivän sylinterin nopeus tason alapäässä suurempi, yhtä suuri vai pienempi kuin sellaisen kappaleen nopeus, joka liukuu kitkatta alas samalta korkeudelta? Mihin sylinterin potentiaalienergia muuttuu?</li>
+<li>Jos osa sylinterin energiasta muuttuu matkalla lämmöksi, esimerkiksi vierimisvastuksen takia, tuleeko mittaamastasi hitausmomentista liian suuri vai liian pieni?</li>
+<li>Mikä mittauksessasi on todennäköisesti suurin epävarmuuden lähde?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="selvita-mita-hitausmomentti-tarkoittaa"><h2 id="h-selvita-mita-hitausmomentti-tarkoittaa">Selvitä: mitä hitausmomentti tarkoittaa?</h2>
+<p>Ennen mittausta ota selvää käsitteestä esimerkiksi oppikirjasta, luotettavista verkkolähteistä tai opettajalta, ja kirjoita omin sanoin:</p>
+<ol>
+<li>Mistä kappaleen hitausmomentti riippuu?</li>
+<li>Miten hitausmomentti liittyy kappaleen pyörimisliikkeeseen?</li>
+<li>Miten massan jakautuminen pyörimisakselin suhteen vaikuttaa hitausmomenttiin?</li>
+</ol>
+<p>Kokeile sitten: päästä umpinainen sylinteri ja vertailukappale, jonka massa on jakautunut toisin (esimerkiksi putki), levosta yhtä aikaa samalta korkeudelta vierimään tasoa alas. Kirjaa, kumpi ehti alas ensin, ja toista kokeilu muutaman kerran. Merkitse lähteesi muistiin.</p>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Tarkista tästä selvityksesi ja täydennä sitä.</p>
+<p><strong>Pyörimisliike.</strong> Kun kappale pyörii akselin ympäri, sen pyörimisen nopeutta kuvaa <strong>kulmanopeus</strong> $\omega$: kuinka suuren kulman kappale kiertyy aikayksikössä. Kun kulma mitataan radiaaneina, kulmanopeuden yksikkö on $\text{rad/s}$, ja akselista etäisyydellä $r$ oleva kappaleen kohta liikkuu ratanopeudella $v = r\omega$.</p>
+<p><strong>Hitausmomentti.</strong> Kuvitellaan kappale jaetuksi pieniin osiin. Jos osan massa on $m_i$ ja sen etäisyys pyörimisakselista $r_i$, kappaleen hitausmomentti akselin suhteen on</p>
+<p>$$I = \sum m_i r_i^2$$</p>
+<p>Hitausmomentin yksikkö on $\text{kg}\cdot\text{m}^2$. Hitausmomentti on pyörimisliikkeessä samassa asemassa kuin massa etenemisliikkeessä: mitä suurempi hitausmomentti, sitä vaikeampi kappaleen pyörimistä on saada alkuun, muuttaa tai pysäyttää. Hitausmomentti riippuu kappaleen massasta, massan jakautumisesta ja pyörimisakselin paikasta. Koska etäisyys on yhtälössä toisessa potenssissa, kaukana akselista oleva massa kasvattaa hitausmomenttia paljon enemmän kuin akselin lähellä oleva.</p>
+<p>Umpinaisen ja tasa-aineisen sylinterin, jonka massa on $m$ ja säde $r$, hitausmomentti symmetria-akselinsa suhteen on teoreettisen mallin mukaan $I = \tfrac{1}{2}\, m r^2$. Ohutseinäisen putken massa on lähes kokonaan etäisyydellä $r$ akselista, joten sen hitausmomentti on likimain $m r^2$. Malli olettaa, että sylinterin tiheys on joka kohdassa sama ja että se pyörii symmetria-akselinsa ympäri.</p>
+<p><svg data-fig="concept" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva: vasemmalla umpinainen tasa-aineinen sylinteri ja oikealla ohutseinäinen putki päästä katsottuna. Kummallakin on sama massa m ja sama säde r, ja pyörimisakseli kulkee keskipisteen kautta kohtisuoraan kuvan tasoa vastaan. Sylinterin massa on jakautunut koko poikkileikkaukselle, putken massa on lähes kokonaan etäisyydellä r akselista. Sylinterin hitausmomentti on puolet m r toiseen, putken likimain m r toiseen." style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy10hc-160" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
+  <circle cx="160" cy="125" r="80" fill="url(#fy10hc-160)" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="160" cy="125" r="3.5" fill="#1f2933"/>
+  <line x1="160" y1="125" x2="225.5" y2="79" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="186" y="77.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
+  <circle cx="440" cy="125" r="80" fill="none" stroke="#8a96a3" stroke-width="9.6"/>
+  <circle cx="440" cy="125" r="84.8" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="440" cy="125" r="75.2" fill="none" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="440" cy="125" r="3.5" fill="#1f2933"/>
+  <line x1="440" y1="125" x2="505.5" y2="79" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="466" y="77.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
+  <foreignObject x="37.5" y="220.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{umpinainen sylinteri}$</div></foreignObject>
+  <foreignObject x="323.5" y="220.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ohutseinäinen putki}$</div></foreignObject>
+  <foreignObject x="112.5" y="270.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I = \tfrac{1}{2}\, m r^2$</div></foreignObject>
+  <foreignObject x="405" y="270.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I \approx m r^2$</div></foreignObject>
+</svg></p>
+<p><strong>Pyörimisliikkeen energia.</strong> Pyörivällä kappaleella on liike-energiaa, vaikka sen keskipiste pysyisi paikallaan. Kulmanopeudella $\omega$ pyörivän kappaleen pyörimisenergia on</p>
+<p>$$E_\text{r} = \tfrac{1}{2}\, I \omega^2$$</p>
+<p>Vierivä sylinteri sekä etenee että pyörii, joten sen liike-energia on etenemisen ja pyörimisen liike-energioiden summa $\tfrac{1}{2}\, m v^2 + \tfrac{1}{2}\, I \omega^2$, missä $v$ on sylinterin keskipisteen nopeus.</p>
+<p><strong>Vieriminen ilman liukumista.</strong> Kun sylinteri vierii liukumatta, sen keskipisteen nopeus ja kulmanopeus liittyvät toisiinsa yhtälöllä $v = r\omega$. Sylinterin ja tason kosketuskohta on silloin joka hetki levossa tason suhteen, joten lepokitka ei tee työtä eikä muuta mekaanista energiaa lämmöksi. Jos lisäksi vierimisvastus ja ilmanvastus ovat merkityksettömän pieniä, sylinterin mekaaninen energia säilyy: kun sylinterin keskipiste laskee korkeuden $h$, potentiaalienergiaa $mgh$ muuttuu etenemisen ja pyörimisen liike-energiaksi. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-8.html">Mekaanisen energian säilyminen</a></span></p>
+<p><svg data-fig="setup" viewBox="0 0 600 400" role="img" aria-label="Kaaviokuva. Umpinainen sylinteri lähtee levosta kaltevan tason yläosasta ja vierii alas. Matka tason suuntaisesti lähtökohdasta loppukohtaan on s. Sylinterin keskipisteen korkeus laskee matkalla h:n verran. Loppukohdassa sylinterin keskipisteen nopeus v osoittaa tason suuntaisesti alas, ja sylinteri pyörii myötäpäivään kulmanopeudella omega. Sylinterin säde on r." style="max-width:100%;font-size:24px">
+  <defs><radialGradient id="fy10hs-c0" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient><radialGradient id="fy10hs-c1" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
+  <path d="M40,120 L560,330 L554,345 L34,135 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="40" y1="347" x2="590" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <circle cx="99" cy="107" r="34" fill="url(#fy10hs-c0)" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="99" cy="107" r="3.5" fill="#1f2933"/>
+  <circle cx="433" cy="242" r="34" fill="url(#fy10hs-c1)" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="433" cy="242" r="3.5" fill="#1f2933"/>
+  <foreignObject x="20" y="38.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{lähtö levosta}$</div></foreignObject>
+  <line x1="69" y1="181.5" x2="403" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="66" y1="189.5" x2="72.5" y2="173" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="399.5" y1="324.5" x2="406.5" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="79.5" y1="155.5" x2="71.5" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="413.5" y1="290" x2="405" y2="310.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <foreignObject x="212" y="258.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
+  <line x1="139" y1="107" x2="593" y2="107" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="473" y1="242" x2="593" y2="242" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="585" y1="107" x2="585" y2="242" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="577" y1="107" x2="593" y2="107" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="577" y1="242" x2="593" y2="242" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="557" y="160" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h$</div></foreignObject>
+  <line x1="433" y1="242" x2="463.5" y2="227.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="473" y="197.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
+  <line x1="433" y1="242" x2="496" y2="267.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M509,272.5 L492.5,273.5 L497.5,261 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="517" y="254" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <path d="M389.5,217 A50,50 0 0 1 458,198.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M468.5,204.5 L455,204 L461,193.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="403" y="155.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\omega$</div></foreignObject>
+</svg></p>
+</section><section class="inv-section" id="hitausmomentista-mitattaviksi-suureiksi"><h2 id="h-hitausmomentista-mitattaviksi-suureiksi">Hitausmomentista mitattaviksi suureiksi</h2>
+<p>Hitausmomenttia ei voi lukea mittarista. Kirjaa ennen kuin luet eteenpäin:</p>
+<ol>
+<li>Kirjoita energian säilyminen sylinterille, joka lähtee levosta ja jonka keskipiste laskee korkeuden $h$.</li>
+<li>Ratkaise yhtälöstä hitausmomentti $I$.</li>
+<li>Mitkä suureet sinun on mitattava, ja miten saat sylinterin nopeuden tason alapäässä selville?</li>
+</ol>
+<div class="inv-tuki" data-modes="OO"><p><strong>Tarkista kirjauksesi tästä.</strong> Energian säilymisestä ja ehdosta $\omega = \dfrac{v}{r}$ saadaan</p>
+<p>$$mgh = \tfrac{1}{2}\, m v^2 + \tfrac{1}{2}\, I \cdot \frac{v^2}{r^2}$$</p>
+<p>ja siitä ratkaistuna</p>
+<p>$$I = m r^2 \left( \frac{2gh}{v^2} - 1 \right)$$</p>
+<p>Tarvitset siis sylinterin massan $m$, säteen $r$, keskipisteen korkeuden muutoksen $h$ ja nopeuden $v$ tason alapäässä. Massan saat vaa'alla ja säteen halkaisijasta työntömitalla. Nopeutta on vaikea mitata suoraan, mutta sen voi päätellä matkasta ja ajasta: sylinteriin vaikuttavat voimat pysyvät liikkeen aikana samoina, joten sen kiihtyvyys on vakio. Kun sylinteri lähtee levosta ja vierii matkan $s$ ajassa $t$, sen keskinopeus on $\dfrac{s}{t}$ ja loppunopeus kaksinkertainen:</p>
+<p>$$v = \frac{2s}{t}$$</p>
+<p><span class="inv-help">Tarvitsetko apua? → <a href="fy4-2.html">Tasaisesti kiihtyvä liike</a></span></p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona, ja miten varmistat, että sylinteri lähtee levosta ja vierii liukumatta. Kokeile vierimistä ensin muutaman kerran.</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Pidä tason kaltevuus vakiona ja muuta vierimismatkaa $s$: päästä sylinteri levosta eri kohdista ja mittaa aika $t$, jonka se tarvitsee matkaan. Tee mittaukset ainakin viidellä eri matkalla ja jokaisella matkalla kolme toistoa. Laske jokaiselle matkalle keskipisteen korkeuden muutos $h$. Kun tason pinta on suora, $h$ on yhtä suuri kuin tason pinnan korkeuden muutos matkalla $s$: $h = s \cdot \dfrac{H}{L}$, missä $H$ on tason pinnan kahden pisteen korkeusero ja $L$ niiden välinen etäisyys tasoa pitkin. Kirjaa päätöksesi perusteluineen.</p>
+<p>Mieti ainakin näitä:</p>
+<ul>
+<li>Kuinka jyrkäksi taso kannattaa asettaa, jotta sylinteri vierii liukumatta mutta lähtee varmasti liikkeelle ja aika on riittävän pitkä mitattavaksi?</li>
+<li>Miten päästät sylinterin liikkeelle levosta tönäisemättä, esimerkiksi viivaimen takaa, ja miten merkitset lähtö- ja loppukohdan?</li>
+<li>Miten mittaat ajan niin tarkasti kuin mahdollista: käsin ajanottovälineellä, videolta vai liikeanturilla?</li>
+<li>Pitääkö taso olla suorassa linjassa, ettei sylinteri ajaudu sivuun?</li>
+<li>Jos käytät kourua, vierikö sylinteri koko ulkopinnallaan tasaisella pohjalla? V-urassa tai kahden kiskon varassa sylinteri koskettaa alustaa pienemmällä säteellä kuin $r$, jolloin yhtälö $v = r\omega$ ei päde ja hitausmomentista tulee liian suuri.</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: toistot omiin sarakkeisiinsa ja niistä lasketut suureet niiden oikealle puolelle. Mittaa ja kirjaa myös sylinterin massa ja säde.</p>
+<div class="inv-tuki" data-modes="OO"><p>Voit käyttää esimerkiksi tällaisia taulukoita. Mittaa halkaisija työntömitalla useasta kohdasta:</p>
+<table>
+<thead>
+<tr>
+<th>$d_1\ (\text{m})$</th>
+<th>$d_2\ (\text{m})$</th>
+<th>$d_3\ (\text{m})$</th>
+<th>$\bar{d}\ (\text{m})$</th>
+<th>$r = \dfrac{\bar{d}}{2}\ (\text{m})$</th>
+<th>$m\ (\text{kg})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>$s\ (\text{m})$</th>
+<th>$t_1\ (\text{s})$</th>
+<th>$t_2\ (\text{s})$</th>
+<th>$t_3\ (\text{s})$</th>
+<th>$\bar{t}\ (\text{s})$</th>
+<th>$h\ (\text{m})$</th>
+<th>$v = \dfrac{2s}{\bar{t}}\ (\text{m/s})$</th>
+<th>$v^2\ (\text{m}^2/\text{s}^2)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Kirjaa lisäksi tason mitat $H$ ja $L$.</p></div>
+<p>Muista mittausepävarmuus: kirjaa jokaisen suureen kohdalla, kuinka tarkasti sen mittasit, ja miten arvioit tarkkuuden. Toistojen hajonta kertoo, kuinka paljon mittaamasi suure vaihtelee vierimisestä toiseen. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Toistomittausten keskiarvo ja epävarmuus</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Määritä mittaustuloksistasi sylinterin hitausmomentti energian säilymisen avulla ja perustele, miksi valitsit juuri tämän laskutavan tai nämä kuvaajan akselit. Laske lisäksi hitausmomentti teoreettisella mallilla $I = \tfrac{1}{2}\, m r^2$ mittaamistasi massasta ja säteestä. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Graafinen esitys</a></span></p>
+<p>Vastaa lisäksi:</p>
+<ol>
+<li>Vertaa sylinterin nopeutta tason alapäässä nopeuteen, jonka kitkatta liukuva kappale saisi samalta korkeudelta. Miten selität eron?</li>
+<li>Selitä hitausmomentin avulla, miksi umpinainen sylinteri ja vertailukappale tulivat alas siinä järjestyksessä kuin tulivat. Riippuuko järjestys mielestäsi kappaleiden massasta tai koosta vai vain siitä, miten massa on jakautunut? Perustele energian säilymisen avulla.</li>
+</ol>
+<div class="inv-tuki" data-modes="OO"><p><strong>Kuvaajan avulla.</strong> Edellisen kohdan yhtälöstä saadaan nopeuden neliö korkeuden funktiona:</p>
+<p>$$v^2 = \frac{2g}{1 + \dfrac{I}{m r^2}} \cdot h$$</p>
+<p>Kun pystyakselille valitaan $v^2$ ja vaaka-akselille $h$, mallin mukainen kuvaaja on origon kautta kulkeva suora. Sovita mittauspisteisiin suora ja merkitse sen kulmakerrointa $a$. Silloin</p>
+<p>$$I = m r^2 \left( \frac{2g}{a} - 1 \right)$$</p>
+<p>Kuvaaja on yksittäisiä laskuja parempi, koska se näyttää, sopivatko kaikki mittaukset samaan malliin, ja suora tasoittaa satunnaisia virheitä. Katkoviivalla oleva suora on vertailun vuoksi kitkatta liukuvan kappaleen malli $v^2 = 2gh$.</p>
+<p><svg data-fig="model" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja: nopeuden neliö v toiseen tason alapäässä korkeuden h funktiona mallin mukaan. Katkoviivalla on suora, jonka kulmakerroin on 2 g; se vastaisi kitkatta liukuvaa kappaletta. Yhtenäinen suora on vierivän kappaleen malli: suora origon kautta, jonka kulmakerroin a on pienempi kuin 2 g. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="310" x2="484" y2="310" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,310 L483,316 L483,304 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="311" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$h$</div></foreignObject>
+  <foreignObject x="80" y="3.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v^2$</div></foreignObject>
+  <polyline points="90,310 417,72.5" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <polyline points="90,310 455,135" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="150" y="73" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kulmakerroin } 2g$</div></foreignObject>
+  <foreignObject x="288.5" y="210.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kulmakerroin } a$</div></foreignObject>
+</svg></p>
+<p>Jos suora ei kulje origon kautta, mieti, onko matkojen tai korkeuksien nollakohdassa systemaattinen virhe. Matkaan verrannollinen energiahäviö, esimerkiksi tasainen vierimisvastus, ei näy vakioterminä, koska kaltevuus on vakio: se muuttaa vain kulmakerrointa.</p></div>
+<p>Laskuihin ja kuvaajiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita mittaamasi hitausmomentti muodossa $I = (I \pm \Delta I)\ \text{kg}\cdot\text{m}^2$ ja perustele, miten arvioit epävarmuuden $\Delta I$. Ilmoita samoin mallin antama arvo epävarmuuksineen. Mahtuvatko arvot toistensa epävarmuusväleihin? Päällekkäiset välit tarkoittavat, että tulos on sopusoinnussa mallin kanssa, eivät sitä, että arvot on todistettu samoiksi.</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Epävarmuuden arviointi.</strong> Määritä ensin kulmakertoimen epävarmuus $\Delta a$ sovitusohjelman keskivirheestä tai jyrkimmän ja loivimman suoran avulla: $\Delta a = \dfrac{a_\text{max} - a_\text{min}}{2}$. Etene sitten vaihe kerrallaan:</p>
+<ul>
+<li>Suureen $\dfrac{2g}{a}$ suhteellinen epävarmuus on sama kuin kulmakertoimen, $\dfrac{\Delta a}{a}$.</li>
+<li>Kun suureesta $\dfrac{2g}{a}$ vähennetään luku $1$, absoluuttinen epävarmuus pysyy samana, mutta erotus on pienempi kuin $\dfrac{2g}{a}$. Erotuksen suhteellinen epävarmuus on siksi selvästi suurempi kuin kulmakertoimen suhteellinen epävarmuus. Tämä on tämän menetelmän heikkous: pienikin virhe nopeudessa näkyy hitausmomentissa suurena.</li>
+<li>Hitausmomentissa on lisäksi tekijä $m r^2$. Suhteelliset epävarmuudet lasketaan yhteen, ja koska säde on toisessa potenssissa, sen suhteellinen epävarmuus lasketaan kahdesti: $\dfrac{\Delta m}{m} + 2 \cdot \dfrac{\Delta r}{r}$.</li>
+<li>Mallin arvon $\tfrac{1}{2}\, m r^2$ suhteellinen epävarmuus on $\dfrac{\Delta m}{m} + 2 \cdot \dfrac{\Delta r}{r}$.</li>
+</ul>
+<p>Koska sekä mittaustuloksessa että mallissa on sama tekijä $m r^2$, voit lisäksi verrata suoraan lukua $\dfrac{I}{m r^2} = \dfrac{2g}{a} - 1$ mallin arvoon $\tfrac{1}{2}$. Pyöristä epävarmuus yhteen merkitsevään numeroon ja tulos samaan desimaaliin.</p></div>
+<p>Laske myös mittaamasi suhde $\dfrac{I}{m r^2}$ ja vertaa sitä mallin arvoon $\tfrac{1}{2}$: onko se suurempi vai pienempi, ja sopiiko poikkeaman suunta ennusteeseesi 3?</p>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuuden lähteet, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan ne olisivat muuttaneet hitausmomenttia? Pitivätkö mallin oletukset paikkansa: vierikö sylinteri liukumatta, olivatko energiahäviöt pieniä ja onko sylinterisi todella umpinainen ja tasa-aineinen? Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Vastaako mittaamasi hitausmomentti teoreettista mallia epävarmuuksien rajoissa? Jos ei, mikä mallin oletus tai mittauksen virhelähde selittää eron parhaiten? Viittaa kuvaajaan tai taulukkoon, esimerkiksi "kuvaajasta 1 nähdään, että …". Kirjoita lopuksi omin sanoin, mitä hitausmomentti tarkoittaa ja miten massan jakautuminen vaikuttaa siihen, ja vertaa tuloksiasi ennusteisiisi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tausta ja teoria:</strong> hitausmomentin merkitys omin sanoin lähteineen, pyörimisenergia, vierimisen ehto ja energian säilymisen yhtälö, josta hitausmomentti ratkaistaan.</li>
+<li><strong>Työn suunnitelma:</strong> mitä muutit, mitä mittasit ja mitä pidit vakiona, miten määritit nopeuden ja miten varmistit, että sylinteri lähti levosta.</li>
+<li><strong>Mittaustulokset:</strong> alkuperäiset mittaukset toistoineen omissa sarakkeissaan ja johdetut suureet niiden oikealla puolella.</li>
+<li><strong>Tulos:</strong> mitattu ja mallin antama hitausmomentti epävarmuuksineen oikein pyöristettyinä.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin oletusten pätevyys.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-pyorimismaaran-sailyminen"><h2 id="h-laajennus-pyorimismaaran-sailyminen">Laajennus: pyörimismäärän säilyminen</h2>
+<p>Etenemisliikkeessä kappaleella on liikemäärä $\overline{p} = m\overline{v}$, ja eristetyn systeemin liikemäärä säilyy. <span class="inv-help">Tarvitsetko apua? → <a href="fy4-10.html">Liikemäärän säilyminen</a></span> Pyörimisliikkeessä vastaava suure on <strong>pyörimismäärä</strong> eli liikemäärän momentti. Kun kappale pyörii symmetria-akselinsa ympäri, sen pyörimismäärän suuruus on</p>
+<p>$$L = I\omega$$</p>
+<p>Pyörimismäärä $\overline{L}$ on vektori, joka osoittaa pyörimisakselin suuntaan: kun oikean käden sormet kiertyvät pyörimisen suuntaan, peukalo osoittaa pyörimismäärän suunnan. Pyörimismäärä säilyy sekä suuruudeltaan että suunnaltaan, jos systeemiin ei vaikuta ulkoista momenttia eli vääntövaikutusta. Pyörimismäärän komponentti jossakin suunnassa säilyy, kun ulkoisella momentilla ei ole komponenttia siinä suunnassa, vaikka pyörimismäärä muissa suunnissa muuttuisi.</p>
+<p>Selvitä ensin lähteistä, millaisissa tilanteissa pyörimismäärä säilyy, ja kirjaa esimerkkejä arkielämästä. Suunnittele sitten polkupyörän renkaan avulla koe tai demonstraatio, jolla voit havaita pyörimismäärän säilymiseen liittyvän ilmiön. Kuvaile:</p>
+<ol>
+<li>mitä teet</li>
+<li>mitä havaitset</li>
+<li>miten havaintosi voidaan selittää pyörimismäärän avulla.</li>
+</ol>
+<p>Arvioi lopuksi, kuinka hyvin koe tai demonstraatio havainnollistaa pyörimismäärän säilymistä ja mitkä tekijät, esimerkiksi kitka, häiritsevät sitä.</p>
+<p><strong>Turvallisuus.</strong> Pidä kädet, hiukset, korut ja löysät vaatteet poissa renkaan pinnoista. Pyörivää jakkaraa saa käyttää vain opettajan luvalla: pysy jakkaralla tukevasti, pidä ympärillä tilaa ja pyydä toista opiskelijaa varmistamaan vierestä.</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Ideoita.</strong> Valitse yksi ja suunnittele se loppuun itse:</p>
+<ul>
+<li>Pidä rengasta akselin kahvoista ja pyöritä sitä. Yritä kääntää akselin suuntaa, ja vertaa tuntumaa siihen, kun rengas ei pyöri.</li>
+<li>Opettajan luvalla: istu pyörivällä jakkaralla jalat irti lattiasta ja pidä pyörivää rengasta akseli pystyssä. Käännä renkaan akseli toisin päin ja havainnoi jakkaraa.</li>
+<li>Ripusta pyörivä rengas narusta toisesta akselin päästä akseli vaakasuorassa ja havainnoi, mitä akseli tekee.</li>
+</ul>
+<p>Mieti jokaisessa: mikä on systeemi, vaikuttaako siihen ulkoinen momentti ja minkä akselin suhteen, ja mikä pyörimismäärän osa säilyy?</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi mittaustuloksiin ja niiden epävarmuuksiin vai siihen, mitä odotit?</li>
+<li>Selitätkö hitausmomentin nyt omin sanoin paremmin kuin työn alussa?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Syventävä työ.</strong> Hitausmomentti, pyörimisliikkeen energia ja pyörimismäärä eivät kuulu LOPS 2019:n fysiikan moduuleihin: FY5 käsittelee pyörimisestä vain momentin ja tasapainon sekä ympyräliikkeen kulmanopeuden. Työ on siksi rikastava ja sopii opiskelijoille, jotka hallitsevat mekaanisen energian säilymisen (FY4) ja tasaisesti kiihtyvän liikkeen. Sivu selittää tarvittavan teorian lyhyesti, mutta kannattaa varata aikaa käsitteiden läpikäyntiin ennen mittausta.</p>
+<p><strong>Valmistelu.</strong> Kortissa ei ole välineluetteloa käsite- ja mittausosalle. Tarvitaan suora ja tukeva kalteva taso (lauta, profiili tai kouru), umpinainen ja tasa-aineinen sylinteri sekä vertailukappale, jonka massa on jakautunut toisin, esimerkiksi putki tai täysi ja tyhjä tölkki. Tarkista, että sylinteri on todella umpinainen: keskireikä, ontto sisus tai eri materiaaleista koottu rakenne muuttaa hitausmomenttia, eikä malli $\tfrac{1}{2}\, m r^2$ silloin päde. Jos käytät kourua, sylinterin on vierittävä koko ulkopinnallaan tasaisella pohjalla: V-urassa tai kiskojen varassa kosketussäde on pienempi kuin $r$, jolloin $v = r\omega$ ei päde ja hitausmomentista tulee systemaattisesti liian suuri. Kokeile kaltevuus etukäteen: sylinterin on vierittävä liukumatta, ja vierimisajan on oltava niin pitkä, että sen voi mitata valitulla välineellä. Varaa vaaka, työntömitta, mittanauha, pehmeä pysäytin tason alapäähän ja ajanottoon sopivat välineet (ajanotto, liikeanturi tai puhelimen video). Laajennukseen tarvitaan polkupyörän rengas, jonka akseliin on kiinnitetty kahvat, ja halutessasi pyörivä jakkara. Päätä etukäteen, sallitaanko pyörivän jakkaran käyttö.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Pyörimisenergia unohdetaan, jolloin koko potentiaalienergian oletetaan muuttuvan etenemisen liike-energiaksi.</li>
+<li>Lepokitkan oletetaan kuluttavan energiaa. Puhtaassa vierimisessä kosketuskohta on levossa, joten lepokitka ei tee työtä; energiaa kuluu vain vierimisvastukseen, ilmanvastukseen ja mahdolliseen liukumiseen.</li>
+<li>Korkeutena $h$ käytetään vierimismatkaa $s$ tai tason koko korkeutta eikä keskipisteen korkeuden muutosta mitatulla matkalla.</li>
+<li>Loppunopeutena käytetään keskinopeutta $\dfrac{s}{t}$. Levosta tasaisesti kiihtyvässä liikkeessä loppunopeus on kaksinkertainen keskinopeuteen verrattuna.</li>
+<li>Säde ja halkaisija sekoittuvat, tai grammoja ja millimetrejä ei muunneta perusyksiköiksi.</li>
+<li>Sylinteriä tönäistään lähdössä, tai ajanotto alkaa eri hetkellä kuin liike, mikä näkyy toistojen hajontana tai vakioterminä.</li>
+<li>Epävarmuutta aliarvioidaan: hitausmomentti lasketaan erotuksesta, joten nopeuden pienikin suhteellinen virhe kasvaa hitausmomentissa moninkertaiseksi. Säde on lisäksi toisessa potenssissa.</li>
+<li>Käsiteosassa vertailukokeen tulos selitetään massalla. Vierimisnopeus riippuu kappaleen massan jakautumisesta, eli suhteesta $\dfrac{I}{m r^2}$, ei massasta tai säteestä sinänsä.</li>
+<li>Laajennuksessa pyörimismäärä ajatellaan pelkäksi suuruudeksi, vaikka useimmat renkaalla tehtävät ilmiöt liittyvät pyörimismäärän suuntaan.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Työ sopii opintojakson loppupuolelle osittain ohjatuksi tai itsenäiseksi työksi, kuten esimerkkitöiden luettelossa. Ohjattua työtapaa ei tarjota, koska käsitteet ovat uusia ja käsiteosa edellyttää omaa tiedonhakua. Osittain ohjatussa työtavassa sivu antaa hitausmomentin lausekkeen, nopeuden määrittämistavan, mittaussuunnitelman, taulukot, kuvaajan akselit ja epävarmuuden käsittelyn vaihe vaiheelta sekä ideoita laajennukseen. Itsenäisessä työtavassa opiskelija johtaa lausekkeen itse, suunnittelee nopeuden mittaamisen ja tulosten käsittelyn ja perustelee epävarmuusarvionsa, ja laajennus kuuluu työhön. Käsiteosan voi tarvittaessa tehdä erillisenä lyhyenä tehtävänä, ja laajennuksen opettajan demonstraationa.</p>
+<p><strong>Turvallisuus.</strong> Kaltevan tason on oltava tukeva, ja raskas sylinteri pysäytetään tason alapäässä pehmeällä pysäyttimellä, ettei se vieri pöydältä jalkoihin. Polkupyörän renkaan pinnat voivat vahingoittaa sormia ja tarttua hiuksiin, koruihin ja löysiin vaatteisiin; rengas pysäytetään jarruttamalla varovasti rengasta, ei pinnoista. Opettaja päättää, saako pyörivää jakkaraa käyttää. Jos se sallitaan, jakkaralla pysytään tukevasti, sen ympärillä on vapaata tilaa, toinen opiskelija varmistaa vierestä eikä jakkaraa pyöritetä kovaa.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>

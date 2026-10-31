@@ -1,0 +1,91 @@
+{
+  "id": "fy10-taitekerroin",
+  "type": "investigation",
+  "title": "Taitekertoimen määrittäminen",
+  "question": "Miten valon taitekulma riippuu tulokulmasta, kun valo tulee läpinäkyvästä kappaleesta ilmaan, ja kuinka suuri on kappaleen aineen taitekerroin?",
+  "description": "Kokeellinen tutkimus: mittaa laserin säteen tulo- ja taitekulmia puoliympyrän muotoisella kappaleella ja määritä aineen taitekerroin kuvaajan kulmakertoimesta.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY7"
+  ],
+  "source": "Esimerkkityöt.pdf s. 15 (taitekertoimen määrittäminen; kortissa ei ole otsikkoa), opettajan aineisto",
+  "learn": [
+    "valitsemaan kuvaajan akselit mallin perusteella niin, että riippuvuudesta tulee suora, ja perustelemaan valinnan",
+    "määrittämään aineen taitekertoimen kuvaajan kulmakertoimesta",
+    "ilmoittamaan tuloksen epävarmuuksineen ja arvioimaan, miten koejärjestelyn kohdistus vaikuttaa sen luotettavuuteen"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Taitekerroin tulo- ja taitekulmista",
+      "physics": "F2",
+      "experiment": "E1"
+    },
+    {
+      "id": "laajennus",
+      "title": "Rajakulma ja menetelmien vertailu",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Valon taittuminen, taitekerroin ja taittumislaki",
+      "missing": "FY7: Valon heijastuminen ja taittuminen",
+      "why": "Taittumislaki on malli, jota mittauksilla testataan; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Kokonaisheijastus ja rajakulma",
+      "missing": "FY7: Kokonaisheijastuminen ja valokuitu",
+      "why": "Laajennuksessa tarvittava selitys on laajennuksen alussa."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Laskettujen suureiden sarakkeet, kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "puoliympyrän muotoinen läpinäkyvä kappale, esimerkiksi akryyliä tai lasia",
+    "opettajan antama laser (luokka 1 tai 2)",
+    "pyörivä alusta, jossa on kulma-asteikko",
+    "laskin tai tietokone"
+  ],
+  "safety": [
+    "Käytä vain opettajan antamaa luokan 1 tai 2 laseria. Älä koskaan katso säteeseen tai sen heijastuksiin.",
+    "Pidä säde vaakasuorassa pöydän tasolla, älä suuntaa sitä itseäsi tai muita kohti ja huomioi kappaleesta ja kiiltävistä pinnoista heijastuvat säteet. Lue kulmat katsomalla asteikkoa ylhäältä, ei säteen suuntaisesti.",
+    "Sammuta laser, kun et mittaa. Käsittele lasista kappaletta varovasti: lohjennut reuna voi viiltää."
+  ]
+}

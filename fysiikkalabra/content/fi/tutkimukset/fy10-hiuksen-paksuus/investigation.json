@@ -1,0 +1,96 @@
+{
+  "id": "fy10-hiuksen-paksuus",
+  "type": "investigation",
+  "title": "Hiuksen paksuuden määrittäminen",
+  "question": "Kuinka paksu hius on, kun paksuus määritetään hiuksen taakse syntyvästä valon diffraktiokuviosta?",
+  "description": "Kokeellinen tutkimus: määritä hiuksen paksuus laservalon diffraktiokuvion minimien paikoista ja arvioi tuloksen luotettavuus.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY5",
+    "FY7"
+  ],
+  "source": "Esimerkkityöt.pdf s. 9–10 (Hiuksen paksuuden määrittäminen), opettajan aineisto",
+  "learn": [
+    "määrittämään hyvin pienen pituuden epäsuorasti mittaamalla paljon suurempia pituuksia",
+    "käyttämään useita mittauskohtia yhden sijaan ja perustelemaan, miksi se parantaa tulosta",
+    "arvioimaan usean suureen epävarmuuksista, kuinka tarkka lopputulos on, ja pohtimaan sen luotettavuutta"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Hiuksen paksuus diffraktiokuviosta",
+      "physics": "F3",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Menetelmän testaaminen langalla, jonka paksuus tunnetaan",
+      "physics": "F3",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Valon diffraktio",
+      "missing": "FY7: Valon interferenssi ja diffraktio",
+      "why": "Työssä tarvittava diffraktion malli selitetään lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Aaltojen diffraktio ja interferenssi",
+      "missing": "FY5: Diffraktio ja interferenssi",
+      "why": "Sama ilmiö mekaanisilla aalloilla auttaa ymmärtämään, miksi aallot voivat vahvistaa tai heikentää toisiaan."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus, suhteellinen epävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Sovitus antaa kulmakertoimen ja sen epävarmuuden."
+    }
+  ],
+  "equipment": [
+    "opettajan antama laser (luokka 1 tai 2) ja pidike tai jalusta sille",
+    "hius tai ohut lanka",
+    "pidike hiukselle, esimerkiksi pahvi, jossa on reikä, ja teippiä",
+    "varjostin, esimerkiksi valkoinen mattapaperi seinällä",
+    "mittanauha ja viivain",
+    "laajennukseen ohut, alle $0{,}3\\ \\text{mm}$ paksu metallilanka ja mikrometriruuvi"
+  ],
+  "safety": [
+    "Käytä vain opettajan antamaa laseria, jonka luokka on 1 tai 2. Tarkista luokka laserin kyltistä.",
+    "Älä koskaan katso säteeseen tai sen heijastuksiin, äläkä suuntaa sädettä itseäsi tai muita kohti.",
+    "Pidä säde vaakasuorana selvästi silmien korkeuden alapuolella ja suunnattuna seinällä olevaan varjostimeen. Älä kumarru säteen tasolle.",
+    "Poista säteen läheltä heijastavat esineet, kuten sormukset, kellot, puhelimet ja peilit.",
+    "Sammuta laser aina, kun kiinnität hiusta tai siirrät välineitä."
+  ]
+}
