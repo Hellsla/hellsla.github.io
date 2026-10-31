@@ -1,0 +1,16 @@
+**Valmistelu.** Lähdekortissa ei ole välineluetteloa, joten välineet valitaan koulun mukaan. Tarkista etukäteen, että keräin tai sovellus tallentaa kaksi äänisignaalia samalle aika-akselille ja että näytteenottotaajuus on niin suuri, että näytteiden väli on selvästi lyhyempi kuin äänen kulkuaika ryhmien käyttämillä matkoilla. Kahdella erillisellä puhelimella mitattaessa kellot eivät ole keskenään tahdissa, joten erillisiä aikaleimoja ei voi suoraan vähentää toisistaan. Varaa rauhallinen ja riittävän pitkä tila, esimerkiksi käytävä tai liikuntasali, ja lämpömittari. Laajennuksen kaikumittaus vaatii kovan, tasaisen seinän ja tilan, jossa muut heijastukset eivät sekoita kaikua. Sama kortti sopii myös resonanssiputkella tehtävään äänen nopeuden määritykseen, mutta se on oma tutkimuksensa; tämä sivu käsittelee kulkuaikamenetelmää.
+
+**Tavallisia virhekäsityksiä ja ongelmia.**
+
+- Kulkuaika yritetään mitata käsin sekuntikellolla luokan mittaisella matkalla. Reaktioaika on silloin moninkertainen kulkuaikaan nähden; ennusteen 1 tarkoitus on, että ryhmä huomaa tämän itse ennen mittaamista.
+- Äänilähde on mikrofonien välisen suoran sivussa. Silloin äänen kulkema matkaero on pienempi kuin mikrofonien välinen matka $d$, ja laskettu nopeus on liian suuri.
+- Matka mitataan mikrofonien jalustoista tai koteloiden reunoista eri kohdista. Kuvaajassa tämä näkyy vakioterminä, ja jakolaskulla laskettuihin yksittäisiin nopeuksiin se vaikuttaa eniten lyhyillä matkoilla.
+- Aika luetaan pulssin suurimmasta huipusta. Pulssin muoto muuttuu matkalla ja heijastukset sekoittuvat siihen, joten alkukohta on luotettavampi lukukohta.
+- Kauempana olevan mikrofonin heikompi pulssi erottuu tasaisesta viivasta vasta hieman myöhemmin, joten sen alkukohta luetaan helposti liian myöhään. Kulkuaika venyy, ja nopeudesta tulee hieman liian pieni. Sama lukutapa ja signaalin suurentaminen auttavat.
+- Ajatellaan, että kovempi ääni etenee nopeammin. Tavallisilla äänillä nopeus ei riipu voimakkuudesta eikä taajuudesta.
+- Kirjallisuusarvoa verrataan ilman lämpötilaa, vaikka arvo riippuu lämpötilasta.
+- Kulkuajan epävarmuudeksi otetaan yhden lukeman epävarmuus, vaikka kulkuaika on kahden lukeman erotus.
+
+**Eriyttäminen.** Kortti on avoin suunnittelutehtävä, joten sivulla on vain osittain ohjattu ja itsenäinen työtapa. Osittain ohjatussa työtavassa sivu ehdottaa kahden mikrofonin menetelmää, taulukkoa, lukukohtaa, kuvaajan akseleita ja epävarmuuden arviointitapoja, ja opiskelija päättää äänilähteen, matkat ja toistot sekä perustelee menetelmän toimivuuden suunnittelukysymyksissä. Itsenäisessä työtavassa opiskelija valitsee menetelmän itse; kulkuaikaan perustuvia vaihtoehtoja ovat esimerkiksi kaksi mikrofonia, kaiku tai pitkä matka ulkona, jossa äänen synty nähdään. Laajennus kuuluu itsenäiseen työhön. Jos ryhmä tarvitsee enemmän tukea kuin osittain ohjattu työtapa antaa, opettaja voi kiinnittää matkat ja toistojen määrän.
+
+**Turvallisuus.** Pääriski on kuulo: kovia ääniä ei tehdä kenenkään korvan lähellä, eikä käytetä kuulolle vaarallisia äänilähteitä, kuten paukkupistooleja. Laudoilla lyötäessä sormet voivat jäädä väliin. Käytävällä ja ulkona johdot ja jalustat eivät saa olla kulkijoiden tiellä, ja ulkona pysytään poissa liikenteen seasta.

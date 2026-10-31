@@ -1,0 +1,115 @@
+{
+  "id": "fy10-resonanssi",
+  "type": "investigation",
+  "title": "Äänen resonanssi putkessa",
+  "question": "Millä ilmapatsaan pituuksilla putkessa syntyy resonanssi, ja kuinka suuri on äänen nopeus ilmassa resonanssikohtien perusteella?",
+  "description": "Kokeellinen tutkimus: etsi putken ilmapatsaan peräkkäiset resonanssikohdat samalla taajuudella, määritä niistä äänen aallonpituus ja äänen nopeus ja vertaa tulosta tunnettuun arvoon.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY5"
+  ],
+  "source": "Esimerkkityöt.pdf s. 10 (Äänen resonanssi putkessa), opettajan aineisto",
+  "learn": [
+    "määrittämään aallonpituuden usean peräkkäisen resonanssikohdan avulla",
+    "perustelemaan, miksi resonanssikohtien erotus on luotettavampi kuin yksittäinen resonanssipituus",
+    "vertaamaan tulosta epävarmuuksineen tunnettuun arvoon ja arvioimaan mittauksen luotettavuutta"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Äänen nopeus yhdellä taajuudella",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Usea taajuus: riippuuko äänen nopeus taajuudesta?",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Aaltoliike: taajuus, aallonpituus ja etenemisnopeus $v = f\\lambda$, aallon heijastuminen",
+      "missing": "FY5: Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+      "why": "Äänen nopeus lasketaan taajuudesta ja aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Seisova aalto, solmut ja kuvut",
+      "missing": "FY5: Seisovat aallot",
+      "why": "Resonanssi syntyy, kun putkeen muodostuu seisova aalto; periaate on selitetty tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Ääni aaltoliikkeenä ja äänen nopeuden riippuvuus lämpötilasta",
+      "missing": "FY5: Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+      "why": "Tulosta verrataan tunnettuun arvoon, joka riippuu ilman lämpötilasta."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Äänen voimakkuus ja kuulon suojaaminen",
+      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
+      "why": "Työssä kuunnellaan ääntä pitkään, joten äänenvoimakkuus pidetään pienenä."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus, suhteellinen epävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-4",
+      "why": "Jos määrität aallonpituuden kuvaajasta: suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, jos käytät kuvaajaa."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Äänenvoimakkuuden seuraaminen mikrofonilla, äänenvoimakkuusanturilla tai puhelimen sovelluksella",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Anturilla resonanssikohdan voi löytää ilman, että korvaa tarvitsee kuormittaa, ja lukema on vähemmän subjektiivinen."
+    }
+  ],
+  "equipment": [
+    "resonanssiputki (esimerkiksi putki, jossa on siirrettävä mäntä)",
+    "äänilähde: taajuusgeneraattori ja kaiutin",
+    "mittanauha tai putken oma asteikko",
+    "lämpömittari",
+    "tarvittaessa mikrofoni tai äänenvoimakkuusanturi"
+  ],
+  "safety": [
+    "Suojaa kuulosi: säädä äänenvoimakkuus pieneksi ennen kuin kytket äänen päälle, ja pidä se opettajan ilmoittaman tason alapuolella.",
+    "Älä vie korvaa kaiuttimen viereen tai putken suulle. Jos korvat alkavat soida tai ääni tuntuu epämukavalta, lopeta ja kerro opettajalle.",
+    "Sovi opettajan kanssa, miten ryhmät vuorottelevat, ettei luokassa soi monta voimakasta ääntä yhtä aikaa.",
+    "Käsittele lasiputkea varovasti. Jos putkessa käytetään vettä, pidä vesi erillään sähkölaitteista ja niiden johdoista.",
+    "Taajuusgeneraattoria käytetään vain sen omalla verkkojohdolla; ehjät johdot, laitetta ei avata."
+  ]
+}

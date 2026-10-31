@@ -1,0 +1,110 @@
+{
+  "id": "fy10-aanennopeus",
+  "type": "investigation",
+  "title": "Äänen nopeus kulkuajasta",
+  "question": "Kuinka suuri on äänen nopeus ilmassa, kun se määritetään mittaamalla, kauanko ääneltä kuluu tunnetun matkan kulkemiseen?",
+  "description": "Kokeellinen tutkimus: suunnittele itse koejärjestely, jolla mittaat äänen kulkuajan tunnetulla matkalla, määritä äänen nopeus useasta mittauksesta ja vertaa tulosta kirjallisuusarvoon.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY5"
+  ],
+  "source": "Esimerkkityöt.pdf s. 14 (Äänennopeuden määrittäminen), opettajan aineisto",
+  "learn": [
+    "suunnittelemaan mittausmenetelmän, jolla hyvin lyhyt kulkuaika saadaan mitattua riittävän tarkasti, ja perustelemaan valintasi",
+    "yhdistämään useita mittauksia yhdeksi mahdollisimman luotettavaksi tulokseksi ja perustelemaan, miksi valitsit juuri sen tavan",
+    "vertaamaan tulosta kirjallisuusarvoon epävarmuuksien avulla ja nimeämään tärkeimmät epävarmuuden lähteet"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Äänen nopeus kulkuajasta",
+      "physics": "F1",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Toinen menetelmä: kaiku",
+      "physics": "F1",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy1-5",
+      "why": "Nopeuden, matkan ja ajan yhteys: tarvitset sitä, kun lasket nopeuden mittaustuloksistasi."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Ääni aaltoliikkeenä ja äänen eteneminen",
+      "missing": "FY5: Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
+      "why": "Tarvittava lyhyt selitys äänen etenemisestä ja sen nopeuteen vaikuttavista tekijöistä on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-3",
+      "why": "Lämpötila ja kelvinasteikko: tarvitset niitä, kun vertaat tulostasi kirjallisuusarvoon."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Äänen voimakkuus ja kuulon suojaaminen",
+      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
+      "why": "Kovia ääniä ei tehdä kenenkään korvan lähellä; turvallisuusohjeet ovat tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo, mittausepävarmuus ja suhteellinen epävarmuus."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne: tässä työssä suunnittelet koejärjestelyn itse."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Äänianturin tai puhelimen sovelluksen mittaus ja aikaeron lukeminen tallennetusta signaalista",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Tarvitset sitä, jos mittaat ajat tallennetusta äänisignaalista."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Jos määrität nopeuden kuvaajan kulmakertoimesta, kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "äänianturi(t) tai mikrofoni(t) ja tiedonkeruulaite tai puhelimen sovellus, jonka opettaja on hyväksynyt",
+    "äänilähde, esimerkiksi kaksi puulautaa, jotka lyödään yhteen",
+    "mittanauha",
+    "lämpömittari",
+    "riittävän pitkä ja rauhallinen tila, esimerkiksi käytävä tai liikuntasali"
+  ],
+  "safety": [
+    "Älä tee kovia ääniä kenenkään korvan lähellä, äläkä käytä kuulolle vaarallisia äänilähteitä. Käytä vain opettajan hyväksymää äänilähdettä.",
+    "Lyö laudat yhteen niin, etteivät sormet jää niiden väliin.",
+    "Jos mittaat käytävällä tai ulkona, varmista, etteivät välineet ja johdot ole kulkijoiden tiellä, ja pysy poissa liikenteen seasta."
+  ]
+}

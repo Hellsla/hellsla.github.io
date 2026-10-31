@@ -1,0 +1,17 @@
+**Valmistelu.** Valitse uuni, jonka käyttöohje sallii käytön ilman pyörivää alustaa tai jossa pyörimisen voi kytkeä pois. Jos ohje ei salli kumpaakaan, älä tee työtä sillä uunilla. Tarkista ennen tuntia, että luukku, tiiviste, saranat ja turvalukitus ovat ehjät; vaurioitunutta uunia ei käytetä. Tarkista myös, että mikroaaltojen taajuus löytyy arvokilvestä. Jos se on vain käyttöohjeessa, pidä ohje saatavilla. Valitse tehoasetus ja kokeile kuumennus etukäteen samalla juustolla ja lautasella, jotta tiedät, miten lyhyissä jaksoissa kohdat ehtivät erottua ennen kuin ne yhtyvät. Kerro ohjatun työtavan ryhmille tehoasetus ja kuumennusjakson pituus. Varaa mikroaaltouuniin sopivat tasaiset lautaset (ei metallireunuksia), vesikuppi, patalaput ja viivaimet. Huomioi maitoallergiat: juuston voi korvata jollakin toisella tasaisesti sulavalla elintarvikkeella, kun menetelmä pysyy samana.
+
+**Tavallisia virhekäsityksiä ja ongelmia.**
+
+- Vierekkäisten sulaneiden kohtien välin oletetaan olevan koko aallonpituus eikä puolet siitä.
+- Arvokilvestä luetaan sähköverkon taajuus mikroaaltojen taajuuden sijasta.
+- Kerrannaisyksikköä (megahertsi tai gigahertsi) ei muuteta hertseiksi, jolloin tulos on väärää kertaluokkaa.
+- Etäisyys mitataan kohtien reunoista eikä keskikohdista, tai vain yhdestä välistä.
+- Juustoa kuumennetaan liian kauan: lämpö johtuu, kohdat laajenevat ja yhtyvät, eikä keskikohtia enää erota.
+- Kuviota pidetään täysin säännöllisenä yksiulotteisena seisovana aaltona. Uunissa aallot heijastuvat kaikista seinistä, joten kohtien väli voi vaihdella suunnan mukaan; tämä on luotettavuuspohdinnan aihe, ei mittausvirhe.
+- Taajuuden ajatellaan olevan tarkka luku. Kilven arvo on nimellinen. Jos käyttöohjeessa on valmistajan ilmoittama taajuuden toleranssi, anna se opiskelijoille epävarmuudeksi; kilven viimeisestä numerosta arvioitu epävarmuus on aivan liian pieni.
+- Mallin systemaattinen virhe: kolmiulotteisessa ontelossa sulaneiden kohtien väli yhtä suoraa pitkin on yleensä puolet aallonpituudesta tai enemmän, koska aaltoliike ei etene kokonaan mittaussuoran suunnassa. Siksi menetelmä antaa valonnopeudelle helposti liian suuren arvon. Tämä on hyvä luotettavuuspohdinnan aihe; anna opiskelijoiden päätyä siihen itse.
+- Mikroaaltojen ajatellaan tekevän ruoasta radioaktiivista. Mikroaallot ovat ionisoimatonta sähkömagneettista säteilyä: ne lämmittävät ruokaa, mutta eivät jätä siihen säteilyä.
+
+**Eriyttäminen.** Ohjattu työtapa sopii ensimmäiseksi aaltoliikettä käsitteleväksi työksi: sivu kiinnittää kuumennuksen, rivien määrän ja epävarmuuden arvioinnin. Osittain ohjatussa opiskelija johtaa lausekkeen valonnopeudelle itse, valitsee mitattavat rivit ja välien määrän sekä epävarmuuden arviointitavan. Itsenäistä työtapaa ei tarjota, koska menetelmä on kortissa valmiiksi annettu ja uunin käyttö vaatii opettajan valvontaa; edistyneelle opiskelijalle sopii laajennus, jossa yksinkertaisen mallin oletusta testataan kahdessa suunnassa.
+
+**Turvallisuus.** Uunia käytetään vain valvonnassa ja käyttöohjeen mukaisesti. Uunin kuorta ei avata, eikä luukkua tai sen turvalukitusta muuteta, ohiteta tai peitetä. Pyörivä alusta poistetaan vain käyttöohjeen sallimalla tavalla, ja opettaja tekee sen. Uunia ei koskaan käytetä tyhjänä: vesikuppi on uunissa koko ajan. Uuniin ei laiteta metallia, ei myöskään viivainta. Kuuma juusto, lautanen ja vesi voivat polttaa, ja uudelleen kuumennettu vesi voi kiehahtaa äkillisesti, joten vesi vaihdetaan viileään, kun se on lämmennyt. Kuumennus lopetetaan heti, jos juusto savuaa. Työssä käytettyä juustoa ei syödä.

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Äänen nopeus kulkuajasta — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: suunnittele itse koejärjestely, jolla mittaat äänen kulkuajan tunnetulla matkalla, määritä äänen nopeus useasta mittauksesta ja vertaa tulosta kirjallisuusarvoon.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-aanennopeus.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Äänen nopeus kulkuajasta">
+<meta property="og:description" content="Kokeellinen tutkimus: suunnittele itse koejärjestely, jolla mittaat äänen kulkuajan tunnetulla matkalla, määritä äänen nopeus useasta mittauksesta ja vertaa tulosta kirjallisuusarvoon.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-aanennopeus.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Äänen nopeus kulkuajasta</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Äänen nopeus kulkuajasta</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-toinen-menetelma">Laajennus: toinen menetelmä</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Äänen nopeus kulkuajasta</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Kuinka suuri on äänen nopeus ilmassa, kun se määritetään mittaamalla, kauanko ääneltä kuluu tunnetun matkan kulkemiseen?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pitkällä koulun käytävällä oppilas lyö kaksi puulautaa yhteen. Äänen rintama leviää lyöntikohdasta käytävää pitkin. Lattialla käytävän suuntaisesti on mittanauha, ja seinällä on lämpömittari." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10ah-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10ah-floor" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10ah-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10ah-floor)"/>
+  <line x1="0" y1="494" x2="1200" y2="490" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="520" x2="1200" y2="516" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="546" x2="1200" y2="542" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="0" y="380" width="1200" height="10" fill="#dfe9ef" stroke="#6b7480" stroke-width="1.5"/>
+  <rect x="800" y="150" width="110" height="320" rx="3" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="892" cy="320" r="6" fill="#1f2933"/>
+  <rect x="1040" y="150" width="110" height="320" rx="3" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="1132" cy="320" r="6" fill="#1f2933"/>
+  <rect x="411" y="50" width="18" height="120" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="420" cy="170" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="416" y="110" width="8" height="60" fill="#c92a2a"/>
+  <line x1="429" y1="148" x2="437" y2="148" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="429" y1="126" x2="437" y2="126" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="429" y1="104" x2="437" y2="104" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="429" y1="82" x2="437" y2="82" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M150,396 L105,534.5" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M87,540 h39.5" fill="none" stroke="#6c757d" stroke-width="14.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M152,273.5 L278,300" fill="none" stroke="#1971c2" stroke-width="21.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M119.5,252 Q186,225 177,306 L171.5,405 H117.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M150,396 L195,534.5" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M209.5,540 h39.5" fill="none" stroke="#6c757d" stroke-width="14.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M157,270 L278,300" fill="none" stroke="#1971c2" stroke-width="21.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="278" cy="300" r="11.7" fill="#f1dfb5"/>
+  <rect x="146.5" y="216" width="18" height="27" fill="#f1dfb5"/>
+  <circle cx="155.5" cy="192.5" r="30.6" fill="#f1dfb5"/>
+  <path d="M125,198 Q123,158.5 157,160 Q186,162 186,183.5 Q155.5,176.5 125,198 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <g transform="translate(270,292) rotate(-14)"><rect x="0" y="-16" width="92" height="14" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/></g>
+  <g transform="translate(270,292) rotate(4)"><rect x="0" y="0" width="92" height="14" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/></g>
+  <path d="M639.5,96 A392,392 0 0 1 639.5,488" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
+  <path d="M650,90 A404,404 0 0 1 650,494" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.65"/>
+  <path d="M660.5,84 A416,416 0 0 1 660.5,500" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="1"/>
+  <rect x="300" y="548" width="860" height="16" rx="2" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="300" y1="548" x2="300" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="320" y1="548" x2="320" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="340" y1="548" x2="340" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="360" y1="548" x2="360" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="380" y1="548" x2="380" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="400" y1="548" x2="400" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="420" y1="548" x2="420" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="440" y1="548" x2="440" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="460" y1="548" x2="460" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="480" y1="548" x2="480" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="500" y1="548" x2="500" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="520" y1="548" x2="520" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="540" y1="548" x2="540" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="560" y1="548" x2="560" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="580" y1="548" x2="580" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="600" y1="548" x2="600" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="620" y1="548" x2="620" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="640" y1="548" x2="640" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="660" y1="548" x2="660" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="680" y1="548" x2="680" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="700" y1="548" x2="700" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="720" y1="548" x2="720" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="740" y1="548" x2="740" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="760" y1="548" x2="760" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="780" y1="548" x2="780" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="800" y1="548" x2="800" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="820" y1="548" x2="820" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="840" y1="548" x2="840" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="860" y1="548" x2="860" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="880" y1="548" x2="880" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="900" y1="548" x2="900" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="920" y1="548" x2="920" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="940" y1="548" x2="940" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="960" y1="548" x2="960" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="980" y1="548" x2="980" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1000" y1="548" x2="1000" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1020" y1="548" x2="1020" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1040" y1="548" x2="1040" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1060" y1="548" x2="1060" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1080" y1="548" x2="1080" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1100" y1="548" x2="1100" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1120" y1="548" x2="1120" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1140" y1="548" x2="1140" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="1160" y1="548" x2="1160" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="260" y="542" width="44" height="28" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+</svg></p>
+<p>Salaman välähdys näkyy heti, mutta ukkosen jyrinä kuuluu vasta hetken päästä: ääni etenee ilmassa paljon hitaammin kuin valo. Tässä tutkimuksessa suunnittelet itse koejärjestelyn, jolla mittaat äänen kulkuajan tunnetulla matkalla, ja määrität siitä äänen nopeuden. Tämä sivu kertoo, mitä on saatava selville, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa. Äänen nopeuden voi määrittää myös putken resonanssista, mutta se on oma tutkimuksensa: tässä mitataan suoraan aikaa ja matkaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>suunnittelemaan mittausmenetelmän, jolla hyvin lyhyt kulkuaika saadaan mitattua riittävän tarkasti, ja perustelemaan valintasi</li><li>yhdistämään useita mittauksia yhdeksi mahdollisimman luotettavaksi tulokseksi ja perustelemaan, miksi valitsit juuri sen tavan</li><li>vertaamaan tulosta kirjallisuusarvoon epävarmuuksien avulla ja nimeämään tärkeimmät epävarmuuden lähteet</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Äänen nopeus kulkuajasta</strong>: fysiikka F1 · koe E2</li><li><strong>Toinen menetelmä: kaiku</strong>: fysiikka F1 · koe E3</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="OO" checked><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-5.html">Tasainen liike – nopeus, paikka ja kuvaajat</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Nopeuden, matkan ja ajan yhteys: tarvitset sitä, kun lasket nopeuden mittaustuloksistasi.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Ääni aaltoliikkeenä ja äänen eteneminen <span class="inv-mod">(FY5: Ääni aaltoliikkeenä: ominaisuudet ja eteneminen)</span><span class="inv-why">Tarvittava lyhyt selitys äänen etenemisestä ja sen nopeuteen vaikuttavista tekijöistä on tällä sivulla kohdassa Teoriaa lyhyesti.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy3-3.html">Termodynaaminen systeemi, tilanmuuttujat ja lämpötila</a> <span class="inv-mod">(FY3)</span><span class="inv-why">Lämpötila ja kelvinasteikko: tarvitset niitä, kun vertaat tulostasi kirjallisuusarvoon.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Äänen voimakkuus ja kuulon suojaaminen <span class="inv-mod">(FY5: Äänen intensiteettitaso ja kuulon suojaaminen)</span><span class="inv-why">Kovia ääniä ei tehdä kenenkään korvan lähellä; turvallisuusohjeet ovat tällä sivulla.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Toistomittausten keskiarvo, mittausepävarmuus ja suhteellinen epävarmuus.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne: tässä työssä suunnittelet koejärjestelyn itse.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Äänianturin tai puhelimen sovelluksen mittaus ja aikaeron lukeminen tallennetusta signaalista <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Tarvitset sitä, jos mittaat ajat tallennetusta äänisignaalista.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Jos määrität nopeuden kuvaajan kulmakertoimesta, kulmakerroin ja sen epävarmuus saadaan sovituksesta.</span></li></ul><h3>Välineet</h3><ul><li>äänianturi(t) tai mikrofoni(t) ja tiedonkeruulaite tai puhelimen sovellus, jonka opettaja on hyväksynyt</li><li>äänilähde, esimerkiksi kaksi puulautaa, jotka lyödään yhteen</li><li>mittanauha</li><li>lämpömittari</li><li>riittävän pitkä ja rauhallinen tila, esimerkiksi käytävä tai liikuntasali</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Älä tee kovia ääniä kenenkään korvan lähellä, äläkä käytä kuulolle vaarallisia äänilähteitä. Käytä vain opettajan hyväksymää äänilähdettä.</li><li>Lyö laudat yhteen niin, etteivät sormet jää niiden väliin.</li><li>Jos mittaat käytävällä tai ulkona, varmista, etteivät välineet ja johdot ole kulkijoiden tiellä, ja pysy poissa liikenteen seasta.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> äänen nopeus ilmassa mittauslämpötilassa epävarmuuksineen, määritettynä äänen kulkuajasta tunnetulla matkalla, sekä se, onko tulos sopusoinnussa kirjallisuusarvon kanssa.</p>
+<p><strong>Päätät itse (osittain ohjattu ja itsenäinen työtapa):</strong> äänilähteen, matkat ja niiden määrän sekä toistojen määrän. Itsenäisessä työtavassa päätät lisäksi mittausmenetelmän, sen, mistä kohdasta tallennettua signaalia luet ajat, tavan, jolla yhdistät mittaukset yhdeksi tulokseksi, sekä tavan, jolla arvioit tuloksen epävarmuuden. Osittain ohjatussa työtavassa sivu ehdottaa nämä, ja sinä perustelet, miksi ne toimivat.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, äänen nopeuden mittaaminen toisella menetelmällä, kuuluu työhösi: vertaa sen tulosta päämittauksen tulokseen.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Kuinka kauan arvelet ääneltä kuluvan noin kymmenen metrin matkaan? Riittäisikö käsin käytettävä sekuntikello sen mittaamiseen? Perustele.</li>
+<li>Jos kaksinkertaistat matkan, mitä arvelet tapahtuvan kulkuajalle? Entä mittauksista laskemallesi nopeudelle?</li>
+<li>Riippuuko äänen nopeus mielestäsi äänen voimakkuudesta tai korkeudesta? Entä ilman lämpötilasta?</li>
+<li>Mikä mittauksessa on todennäköisesti vaikeinta, ja mikä aiheuttaa tulokseen suurimman epävarmuuden?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat niihin johtopäätöksissä.</p>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Ääni on ilmassa etenevä painevaihtelu: ilman hiukkaset tönivät toisiaan, ja tihentymät ja harventumat etenevät äänilähteestä poispäin. Ilmassa ei kulje ainetta äänilähteestä kuulijalle, vaan häiriö etenee.</p>
+<p>Tasalaatuisessa ja liikkumattomassa ilmassa ääni etenee suoraan ja tasaisella nopeudella. Silloin äänen nopeus on</p>
+<p>$$v = \frac{s}{t}$$</p>
+<p>missä $s$ on äänen kulkema matka ja $t$ siihen kulunut aika. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-5.html">Tasainen liike ja nopeus</a></span></p>
+<p>Mallin ehdot on syytä pitää mielessä: ääni kulkee suorinta reittiä eikä heijastuksen kautta, ilma ei virtaa (tuuli lisää tai vähentää nopeutta maan suhteen) ja ilman lämpötila on koko matkalla sama. Äänen nopeus ilmassa ei riipu tavallisten äänten voimakkuudesta eikä korkeudesta, mutta se riippuu ilman lämpötilasta: lämpimässä ilmassa ääni etenee nopeammin kuin kylmässä. Siksi kirjallisuusarvo on aina ilmoitettu tietyssä lämpötilassa, ja sinun on mitattava ilman lämpötila.</p>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Kirjaa suunnitelma ennen mittaamista ja näytä se opettajalle. Suunnitelmasta on käytävä ilmi ainakin:</p>
+<ul>
+<li>mitä suureita mittaat ja millä välineillä</li>
+<li>miten tuotat äänen ja miten havaitset sen</li>
+<li>miten saat kulkuajan mitattua niin tarkasti, että tuloksesta tulee luotettava</li>
+<li>miten lasket äänen nopeuden mittaustuloksistasi.</li>
+</ul>
+<p>Käytä vain opettajan hyväksymää äänilähdettä, äläkä tee kovia ääniä kenenkään korvan lähellä.</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Yksi toimiva menetelmä on kaksi mikrofonia: ne ovat samalla suoralla äänilähteen kanssa, ja niiden välinen matka on $d$. Äänilähde on mikrofonin 1 takana, joten ääni ohittaa ensin mikrofonin 1 ja sitten mikrofonin 2. Keräin tallentaa molemmat signaalit samalle aika-akselille. Jos ääni saavuttaa mikrofonin 1 hetkellä $t_1$ ja mikrofonin 2 hetkellä $t_2$, ääni kulki matkan $d$ ajassa $t_2 - t_1$. Toistat mittauksen usealla matkalla $d$.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva ylhäältä. Vasemmalla on äänilähde, sen oikealla puolella mikrofoni 1 ja kauempana mikrofoni 2, kaikki samalla suoralla. Äänen rintama on piirretty mikrofonien väliin. Mikrofonien välinen matka on d. Molemmat mikrofonit on kytketty samaan mittaustietojen keräimeen." style="max-width:100%;font-size:24px">
+  <line x1="40" y1="120" x2="560" y2="120" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <rect x="46" y="100" width="16" height="40" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="66" y="100" width="16" height="40" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="4" y="53.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{äänilähde}$</div></foreignObject>
+  <rect x="216" y="110" width="36" height="20" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="216" cy="120" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="157.5" y="53.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mikrofoni 1}$</div></foreignObject>
+  <rect x="466" y="110" width="36" height="20" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="466" cy="120" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="407.5" y="53.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mikrofoni 2}$</div></foreignObject>
+  <path d="M366.5,75.5 A300,300 0 0 1 366.5,164.5" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
+  <path d="M376.5,74 A310,310 0 0 1 376.5,166" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.65"/>
+  <path d="M386.5,72.5 A320,320 0 0 1 386.5,167.5" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="1"/>
+  <line x1="208" y1="134" x2="208" y2="190" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="458" y1="134" x2="458" y2="190" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <line x1="208" y1="180" x2="458" y2="180" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="208" y1="170" x2="208" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="458" y1="170" x2="458" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="323" y="147.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$d$</div></foreignObject>
+  <rect x="270" y="250" width="140" height="50" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="301.5" y="262" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#ffffff">$\text{keräin}$</div></foreignObject>
+  <path d="M230,132 C230,230 270,240 300,250" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M482,132 C482,230 420,240 380,250" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+</svg></p>
+<p>Mieti ja kirjaa vastauksesi ainakin näihin:</p>
+<ul>
+<li>Miksi tässä menetelmässä ei tarvitse tietää, millä hetkellä ääni syntyi?</li>
+<li>Miksi äänilähteen on oltava samalla suoralla mikrofonien kanssa? Miten tulos muuttuisi, jos lähde olisi sivussa?</li>
+<li>Mistä kohdasta mikrofonia mittaat matkan $d$, ja miten varmistat, että mittaat sen joka kerta samasta kohdasta?</li>
+<li>Kuinka pitkä aika keräimessä on kahden peräkkäisen mittauspisteen (näytteen) välillä? Vertaa sitä kulkuaikaan, jonka ennustit. Mitä se tarkoittaa matkojen valinnalle?</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Mittaa kulkuaika jokaisella valitsemallasi matkalla ja toista mittaukset. Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: jokainen toisto omaan sarakkeeseensa ja niistä laskettu keskiarvo niiden oikealle puolelle. Kirjaa myös ilman lämpötila ja se, miten mittasit matkat.</p>
+<div class="inv-tuki" data-modes="OO"><p>Voit käyttää esimerkiksi tällaista taulukkoa. Lisää sarakkeita, jos teet enemmän toistoja.</p>
+<table>
+<thead>
+<tr>
+<th>$d\ (\text{m})$</th>
+<th>$t_2 - t_1\ (\text{ms})$, 1.</th>
+<th>$t_2 - t_1\ (\text{ms})$, 2.</th>
+<th>$t_2 - t_1\ (\text{ms})$, 3.</th>
+<th>keskiarvo $(\text{ms})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ajan lukeminen.</strong> Lue kummastakin signaalista hetki, jolloin pulssi alkaa: ensimmäinen selvä poikkeama tasaisesta viivasta. Suurenna signaali niin, että erotat yksittäiset mittauspisteet, ja käytä molemmissa signaaleissa samaa tapaa. Kuvaan on piirretty, miltä signaalit voivat näyttää; siinä ei ole mittaustuloksia.</p>
+<p><svg data-fig="signal" viewBox="0 0 600 380" role="img" aria-label="Kaaviokuva, ei mittausdataa: kaksi signaalia saman aika-akselin päällä. Ylempi on mikrofonin 1 signaali, alempi mikrofonin 2. Kummassakin on ensin tasainen viiva ja sitten äänipulssi, joka alkaa värähdellä ja vaimenee. Mikrofonin 1 pulssi alkaa hetkellä t yksi ja mikrofonin 2 pulssi myöhemmin hetkellä t kaksi. Aikojen erotus t kaksi miinus t yksi on merkitty pulssien alkukohtien väliin." style="max-width:100%;font-size:24px">
+  <line x1="160" y1="100" x2="240" y2="100" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <polyline points="240,100 241,86 242.5,74.5 244,65.5 245,60.5 246,59.5 247.5,62.5 249,69 250,78 251,89 252.5,100 254,110.5 255,119.5 256,126.5 257.5,130 259,131 260,128.5 261,123.5 262.5,116.5 264,108.5 265,100 266,92 267.5,85 269,80 270,77 271,76.5 272.5,78 274,82 275,87 276,93.5 277.5,100 279,106 280,111.5 281,115.5 282.5,117.5 284,118 285,117 286,114 287.5,110 289,105 290,100 291,95 292.5,91 294,88 295,86.5 296,86 297.5,87 299,89.5 300,92.5 301,96 302.5,100 304,103.5 305,107 306,109 307.5,110.5 309,110.5 310,110 311,108 312.5,106 314,103 315,100 316,97 317.5,95 319,93 320,92 321,92 322.5,92.5 324,94 325,95.5 326,97.5 327.5,100 329,102 330,104 331,105.5 332.5,106 334,106 335,106 336,105 337.5,103.5 339,101.5 340,100 341,98.5 342.5,97 344,96 345,95.5 346,95 347.5,95.5 349,96.5 350,97.5 351,98.5 352.5,100 354,101.5 355,102.5 356,103 357.5,103.5 359,103.5 360,103.5 361,103 362.5,102 364,101 365,100 366,99 367.5,98 369,97.5 370,97.5 371,97 372.5,97.5 374,98 375,98.5 376,99 377.5,100 379,100.5 380,101.5 381,102 382.5,102 384,102 385,102 386,101.5 387.5,101 389,100.5 390,100" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="390" y1="100" x2="530" y2="100" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="38" y="88" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{mikrofoni 1}$</div></foreignObject>
+  <line x1="160" y1="220" x2="350" y2="220" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <polyline points="350,220 351,210 352.5,201 354,194.5 355,191 356,190 357.5,192.5 359,197 360,204 361,211.5 362.5,220 364,228 365,234.5 366,239.5 367.5,242.5 369,243 370,241 371,237.5 372.5,232.5 374,226.5 375,220 376,214 377.5,209 379,205 380,203 381,202.5 382.5,204 384,206.5 385,210.5 386,215 387.5,220 389,224.5 390,228.5 391,231.5 392.5,233 394,233.5 395,232.5 396,230.5 397.5,227.5 399,223.5 400,220 401,216.5 402.5,213.5 404,211.5 405,210 406,210 407.5,210.5 409,212 410,214.5 411,217 412.5,220 414,222.5 415,225 416,226.5 417.5,227.5 419,228 420,227.5 421,226 422.5,224.5 424,222 425,220 426,218 427.5,216 429,215 430,214 431,214 432.5,214.5 434,215.5 435,216.5 436,218.5 437.5,220 439,221.5 440,223 441,224 442.5,224.5 444,224.5 445,224.5 446,223.5 447.5,222.5 449,221.5 450,220 451,219 452.5,218 454,217 455,216.5 456,216.5 457.5,216.5 459,217.5 460,218 461,219 462.5,220 464,221 465,221.5 466,222.5 467.5,222.5 469,222.5 470,222.5 471,222 472.5,221.5 474,220.5 475,220 476,219.5 477.5,218.5 479,218 480,218 481,218 482.5,218 484,218.5 485,219 486,219.5 487.5,220 489,220.5 490,221 491,221.5 492.5,221.5 494,221.5 495,221.5 496,221 497.5,221 499,220.5 500,220" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="500" y1="220" x2="530" y2="220" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="38" y="208" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{mikrofoni 2}$</div></foreignObject>
+  <line x1="160" y1="320" x2="542" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M554,320 L541,326 L541,314 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="560" y="305.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <line x1="240" y1="44" x2="240" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="240" y1="320" x2="240" y2="327" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="223.5" y="331.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_1$</div></foreignObject>
+  <line x1="350" y1="170" x2="350" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="350" y1="320" x2="350" y2="327" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="333.5" y="331.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$t_2$</div></foreignObject>
+  <line x1="240" y1="282" x2="350" y2="282" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="240" y1="272" x2="240" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="350" y1="272" x2="350" y2="292" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="260" y="245.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$t_2 - t_1$</span></div></foreignObject>
+</svg></p>
+<p>Pulssin alkukohta on parempi lukukohta kuin sen suurin huippu, koska pulssin muoto muuttuu matkalla ja seinistä heijastuneet äänet saapuvat suoran äänen jälkeen. Tee mittaukset eri matkoilla sekalaisessa järjestyksessä.</p></div>
+<p>Muista mittausepävarmuus: arvioi, kuinka tarkasti mittaat matkan ja kuinka tarkasti luet ajat, ja kirjaa arviot ylös. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Toistomittausten keskiarvo ja epävarmuus</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Määritä mittauksistasi äänen nopeus. Yhdistä mittaukset yhdeksi mahdollisimman luotettavaksi tulokseksi, esimerkiksi kuvaajan avulla tai keskiarvona, ja perustele, miksi valitsit juuri sen tavan. Jos teet kuvaajan, merkitse akseleille suureet ja yksiköt, piirrä mittauspisteet yhdistämättä niitä murtoviivalla ja sovita pisteisiin suora. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Suoran sovittaminen ja kulmakertoimen tulkinta</a></span></p>
+<p>Vastaa:</p>
+<ol>
+<li>Miten yhdistit mittaukset yhdeksi tulokseksi, ja miksi juuri niin?</li>
+<li>Riippuuko mittauksista laskemasi nopeus käyttämästäsi matkasta? Perustele mittaustulostesi avulla.</li>
+<li>Oletetaan, että jokaisessa mittauksessa matkaan tai aikaan on tullut sama vakiovirhe, esimerkiksi koska matka on mitattu mikrofonin väärästä kohdasta. Miten se vaikuttaa tulokseesi valitsemallasi käsittelytavalla?</li>
+</ol>
+<div class="inv-tuki" data-modes="OO"><p><strong>Kuvaaja ja sen akselit.</strong> Valitse pystyakselille matka $d$ ja vaaka-akselille kulkuajan keskiarvo $t_2 - t_1$. Mallin $d = v \cdot (t_2 - t_1)$ mukaan kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on äänen nopeus $v$.</p>
+<p><svg data-fig="model" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja: mikrofonien välinen matka d kulkuajan t kaksi miinus t yksi funktiona mallin mukaan. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on äänen nopeus v. Katkoviivalla on sen kanssa yhdensuuntainen suora, joka ei kulje origon kautta: näin käy, jos jokaisessa matkassa on sama vakiovirhe. Kulmakerroin ei silloin muutu. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="310" x2="484" y2="310" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,310 L483,316 L483,304 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="311" x2="90" y2="36" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,24 L96,37 L84,37 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="315.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="295.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t_2 - t_1$</div></foreignObject>
+  <foreignObject x="80" y="-6.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d$</div></foreignObject>
+  <polyline points="90,310 451,112.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="90,268.5 451,71" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 5"/>
+  <foreignObject x="287.5" y="233" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d = v \cdot (t_2 - t_1)$</div></foreignObject>
+  <foreignObject x="105" y="91.5" width="214" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#6b7480">$\text{vakiovirhe matkassa}$</div></foreignObject>
+</svg></p>
+<p>Tarkista vastauksesi kysymykseen 3 tästä. Jos jokaisessa matkassa on sama vakiovirhe, koko suora siirtyy ylös tai alas, mutta sen kulmakerroin ei muutu. Sama koskee aikaa, jos toinen signaali on joka kerta yhtä paljon myöhässä. Kun nopeus lasketaan kulmakertoimesta, tällainen vakiovirhe näkyy vain vakioterminä. Jos taas lasket nopeuden jokaisesta mittauksesta erikseen jakolaskulla, vakiovirhe vaikuttaa jokaiseen tulokseen, eniten lyhyillä matkoilla.</p></div>
+<p>Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita äänen nopeus muodossa $v \pm \Delta v$ ja perustele, miten arvioit epävarmuuden $\Delta v$.</p>
+<div class="inv-tuki" data-modes="OO"><p>Valitse jompikumpi tapa sen mukaan, miten käsittelit tulokset:</p>
+<ul>
+<li><strong>Kulmakerroin.</strong> Monet sovitusohjelmat ilmoittavat kulmakertoimen keskivirheen; käytä sitä epävarmuutena $\Delta v$. Toinen tapa on piirtää jyrkin ja loivin suora, jotka vielä sopivat pisteisiin niiden epävarmuuksien rajoissa, ja ottaa epävarmuudeksi niiden kulmakertoimien erotuksen puolikas: $\Delta v = \dfrac{v_\text{max} - v_\text{min}}{2}$.</li>
+<li><strong>Yksittäinen mittaus.</strong> Kun nopeus lasketaan jakolaskuna $v = \dfrac{d}{t_2 - t_1}$, suhteelliset epävarmuudet lasketaan yhteen: $\dfrac{\Delta v}{v} = \dfrac{\Delta d}{d} + \dfrac{\Delta (t_2 - t_1)}{t_2 - t_1}$. Kulkuaika on kahden lukeman erotus, joten sen epävarmuus on lukemien epävarmuuksien summa: $\Delta (t_2 - t_1) = \Delta t_1 + \Delta t_2$.</li>
+</ul>
+<p>Pyöristä $\Delta v$ yhteen merkitsevään numeroon ja $v$ samaan tarkkuuteen.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä epävarmuuden lähteet olivat tärkeimpiä? Olivatko virheet satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet olisivat muuttaneet tulosta? Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Etsi äänen nopeuden kirjallisuusarvo ilmassa mittaamassasi lämpötilassa, esimerkiksi taulukkokirjasta, ja merkitse lähde. Onko tuloksesi sopusoinnussa kirjallisuusarvon kanssa epävarmuuksien rajoissa? Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Jos ero on epävarmuutta suurempi, mikä systemaattinen virhe sen todennäköisimmin selittää, ja muuttaisiko se tulosta oikeaan suuntaan? Vertaa lopuksi tuloksia ennusteisiisi: mikä osui oikeaan ja mikä ei?</p>
+<div class="inv-tuki" data-modes="OO"><p>Jos taulukossa ei ole arvoa juuri sinun lämpötilassasi, voit laskea kirjallisuusarvon kuivalle ilmalle mallista</p>
+<p>$$v = v_0 \sqrt{\frac{T}{T_0}}$$</p>
+<p>missä $v_0 \approx 331\ \text{m/s}$ on äänen nopeus kuivassa ilmassa lämpötilassa $T_0 = 273{,}15\ \text{K}$ eli $0\ ^\circ\text{C}$ ja $T$ on ilman lämpötila kelvineinä. Ilman kosteus kasvattaa nopeutta hieman.</p></div>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Koejärjestely ja menetelmä:</strong> kuva koejärjestelystä, miten tuotit ja havaitsit äänen ja miten mittasit matkat ja ajat. Perustele, miksi menetelmäsi on riittävän tarkka.</li>
+<li><strong>Mittaustulokset:</strong> jokainen toisto omassa sarakkeessaan ja keskiarvo niiden oikealla puolella, sekä ilman lämpötila.</li>
+<li><strong>Tulosten käsittely:</strong> miten yhdistit mittaukset yhdeksi tulokseksi ja miksi.</li>
+<li><strong>Tulos:</strong> äänen nopeus epävarmuuksineen oikein pyöristettynä ja kirjallisuusarvo lähteineen.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-toinen-menetelma"><h2 id="h-laajennus-toinen-menetelma">Laajennus: toinen menetelmä</h2>
+<p>Määritä äänen nopeus toisella menetelmällä ja vertaa tuloksia. Jos käytit kaikua jo päämittauksessa, valitse jokin muu menetelmä. Yksi tapa on kaiku: kun ääni tuotetaan mikrofonin vieressä ja kova, tasainen seinä on kaukana, mikrofoni tallentaa ensin suoran äänen ja myöhemmin seinästä heijastuneen kaiun. Mieti, minkä matkan ääni kulkee näiden kahden havainnon välillä. Valitse etäisyys seinään niin suureksi, ettei suora pulssi ja kaiku mene päällekkäin.</p>
+<p>Vertaa menetelmien tuloksia epävarmuuksineen: ovatko ne sopusoinnussa? Kumpi menetelmä vaikutti luotettavammalta, ja miksi?</p>
+<div class="inv-tuki" data-modes="OO"><p><strong>Vihjeitä.</strong> Kokeile ensin, kuinka pitkä pulssi äänilähteestäsi syntyy; sen perusteella näet, kuinka kaukana seinän on oltava. Pidä mikrofoni ja äänilähde lähellä toisiaan ja seinää kohtisuoraan vastaan. Piirrä kuva äänen reitistä ja merkitse siihen, missä ääni on silloin, kun mikrofoni havaitsee suoran äänen, ja silloin, kun se havaitsee kaiun.</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi mittaustuloksiin vai siihen, mitä odotit kirjallisuusarvon olevan?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Lähdekortissa ei ole välineluetteloa, joten välineet valitaan koulun mukaan. Tarkista etukäteen, että keräin tai sovellus tallentaa kaksi äänisignaalia samalle aika-akselille ja että näytteenottotaajuus on niin suuri, että näytteiden väli on selvästi lyhyempi kuin äänen kulkuaika ryhmien käyttämillä matkoilla. Kahdella erillisellä puhelimella mitattaessa kellot eivät ole keskenään tahdissa, joten erillisiä aikaleimoja ei voi suoraan vähentää toisistaan. Varaa rauhallinen ja riittävän pitkä tila, esimerkiksi käytävä tai liikuntasali, ja lämpömittari. Laajennuksen kaikumittaus vaatii kovan, tasaisen seinän ja tilan, jossa muut heijastukset eivät sekoita kaikua. Sama kortti sopii myös resonanssiputkella tehtävään äänen nopeuden määritykseen, mutta se on oma tutkimuksensa; tämä sivu käsittelee kulkuaikamenetelmää.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Kulkuaika yritetään mitata käsin sekuntikellolla luokan mittaisella matkalla. Reaktioaika on silloin moninkertainen kulkuaikaan nähden; ennusteen 1 tarkoitus on, että ryhmä huomaa tämän itse ennen mittaamista.</li>
+<li>Äänilähde on mikrofonien välisen suoran sivussa. Silloin äänen kulkema matkaero on pienempi kuin mikrofonien välinen matka $d$, ja laskettu nopeus on liian suuri.</li>
+<li>Matka mitataan mikrofonien jalustoista tai koteloiden reunoista eri kohdista. Kuvaajassa tämä näkyy vakioterminä, ja jakolaskulla laskettuihin yksittäisiin nopeuksiin se vaikuttaa eniten lyhyillä matkoilla.</li>
+<li>Aika luetaan pulssin suurimmasta huipusta. Pulssin muoto muuttuu matkalla ja heijastukset sekoittuvat siihen, joten alkukohta on luotettavampi lukukohta.</li>
+<li>Kauempana olevan mikrofonin heikompi pulssi erottuu tasaisesta viivasta vasta hieman myöhemmin, joten sen alkukohta luetaan helposti liian myöhään. Kulkuaika venyy, ja nopeudesta tulee hieman liian pieni. Sama lukutapa ja signaalin suurentaminen auttavat.</li>
+<li>Ajatellaan, että kovempi ääni etenee nopeammin. Tavallisilla äänillä nopeus ei riipu voimakkuudesta eikä taajuudesta.</li>
+<li>Kirjallisuusarvoa verrataan ilman lämpötilaa, vaikka arvo riippuu lämpötilasta.</li>
+<li>Kulkuajan epävarmuudeksi otetaan yhden lukeman epävarmuus, vaikka kulkuaika on kahden lukeman erotus.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Kortti on avoin suunnittelutehtävä, joten sivulla on vain osittain ohjattu ja itsenäinen työtapa. Osittain ohjatussa työtavassa sivu ehdottaa kahden mikrofonin menetelmää, taulukkoa, lukukohtaa, kuvaajan akseleita ja epävarmuuden arviointitapoja, ja opiskelija päättää äänilähteen, matkat ja toistot sekä perustelee menetelmän toimivuuden suunnittelukysymyksissä. Itsenäisessä työtavassa opiskelija valitsee menetelmän itse; kulkuaikaan perustuvia vaihtoehtoja ovat esimerkiksi kaksi mikrofonia, kaiku tai pitkä matka ulkona, jossa äänen synty nähdään. Laajennus kuuluu itsenäiseen työhön. Jos ryhmä tarvitsee enemmän tukea kuin osittain ohjattu työtapa antaa, opettaja voi kiinnittää matkat ja toistojen määrän.</p>
+<p><strong>Turvallisuus.</strong> Pääriski on kuulo: kovia ääniä ei tehdä kenenkään korvan lähellä, eikä käytetä kuulolle vaarallisia äänilähteitä, kuten paukkupistooleja. Laudoilla lyötäessä sormet voivat jäädä väliin. Käytävällä ja ulkona johdot ja jalustat eivät saa olla kulkijoiden tiellä, ja ulkona pysytään poissa liikenteen seasta.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>
