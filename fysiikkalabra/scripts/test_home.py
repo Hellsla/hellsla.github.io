@@ -111,6 +111,27 @@ for lang in i18n.languages():
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
     for code in everywhere:
         if code not in local: expect(f"{lang}: front page note for {code}, which this language lacks", f'id="unavailable-{code}"' in home)
+    # module icons (teacher 2026-10-31, scripts/module_icons.py): every row of the catalogue, the school-specific courses
+    # and Tulossa starts with its own module's icon, decorative (alt="", the name is text beside it); the module's own
+    # page shows it beside the title; the file resolves from this language's folder; never on a chapter page
+    def icon_of(chunk):
+        m = re.search(r'<img class="(?:mod-icon|up-icon|mod-head-icon)" src="([^"]+)" alt="" width="\d+" height="\d+" aria-hidden="true">', chunk)
+        return m.group(1) if m else None
+    up_items = re.findall(r"<li>(<a href=\"\w+\.html\">.*?)</li>", upcoming.group(1), re.S) if upcoming else []
+    all_rows = list(zip(codes, rows)) + list(zip(local, re.findall(r'<li class="mod-row local-row">(.*?)</li>', home, re.S))) + list(zip(up, up_items))
+    for code, r in all_rows:
+        src = icon_of(r)
+        expect(f"{lang} {code}: the row starts with its own decorative icon", src is not None and r.lstrip().startswith(("<img", '<a href="' + code + '.html"><img'))
+               and src.endswith(f"module-icons/{code.lower()}.svg") and (out / src).resolve().is_file(), (src, r[:160]))
+        page_html = (out / f"{code}.html").read_text()
+        psrc = icon_of(page_html[page_html.find("<main"):])
+        expect(f"{lang} {code}: the module page shows the same icon beside its title", psrc == src and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
+    expect(f"{lang}: icons are counted once each (9 modules, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows), len(all_rows))
+    expect(f"{lang}: no icon has alternative text (the name is already said)", not re.search(r'<img class="(?:mod-icon|up-icon|mod-head-icon)"[^>]*alt="[^"]', home))
+    lesson_pages = [f for f in out.glob("fy*-*.html")]
+    expect(f"{lang}: no module icon on a chapter page ({len(lesson_pages)})", not any("module-icons/" in f.read_text() for f in lesson_pages))
+    for gone in ("Kokeile oppituntia", "Esimerkkioppitunti", "Try a lesson", "Sample lesson"):
+        expect(f"{lang}: {gone!r} stays off the front page", gone not in home)
     bad_links = []
     for f in out.glob("*.html"):
         for href in re.findall(r'<a class="lang" href="([^"]+)"', f.read_text()):

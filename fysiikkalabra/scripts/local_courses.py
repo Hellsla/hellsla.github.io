@@ -64,7 +64,8 @@ def home_row(code, c, T, investigations=0):
     (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
     avail = T.count("site.local_investigations", investigations) if investigations else T("site.local_status_" + c["status"])
     status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if investigations else ""
-    return (f'<li class="mod-row local-row"><span class="mod-code">{code}</span>'
+    import module_icons
+    return (f'<li class="mod-row local-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
             f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
             f'<span class="visually-hidden">{code} </span>{esc(c["title"])}</a></h3>'
             f'<p class="mod-q">{esc(c["subtitle"])}</p></div>'
@@ -77,7 +78,8 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
-    out = (f'<span class="eyebrow">{code} · {T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1>'
+    import module_icons
+    out = (f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
            f'<p class="lead">{esc(c["subtitle"])}</p>'
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
            f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'

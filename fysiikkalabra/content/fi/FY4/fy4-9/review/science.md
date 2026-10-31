@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 47b36b1d0f3d0d64
+CONTENT-HASH: c474b60ee95b8098
 
 ## Blocking
 
 ## Polish
-- lesson.md:492 — "Suurin voima on aina keskimääräistä suurempi" leaves out the case it fails: a constant force has a peak equal to its mean. — Say "Kun voima muuttuu, suurin voima on keskimääräistä suurempi" if you touch the line.
+- content/fi/FY4/fy4-9/lesson.md:490 — F_ka = |Δp|/Δt is named "keskimääräinen voima". The impulse principle makes it the average *net* force, which equals one force only when the others are negligible (the example states this for weight). Write "keskimääräinen kokonaisvoima" here, to match the new hook answer, which separates net force from the surface force.
+- lesson.md:566 (Tiivistelmä) — "pienentävät voimaa" → "pienentävät keskimääräistä voimaa", as in the theory.
+- lesson.md:271 — "raskaan kappaleen nopeuden muuttaminen vaatii suuremman voiman" needs "yhtä nopeasti" or "samassa ajassa".
 
 ## Checked
-- Round-4 blocker fixed: inquiry.json:104 now says the crushable pulse rises smoothly to its peak half-way, is sine-shaped, and has a mean of about 0,64 F_max, not half. That matches 2/π = 0,6366, the calc box formula, the sim's curve and lesson-answers Fka (50,9/25,5/12,7 N). The en and fi-easy boxes say the same.
-- model.js:53 timing fix: the contact step now adds exactly dt. Final t equals (XB−XS)/v1 + Δt to 6 digits in 7 crushable runs (e.g. 0,479270 s for the hard bumper; it was 0,47937 before). Δt, I and the readout are unchanged.
-- The model.js:7 and :71 comments and the calc/sim-spec clause ("muovautuvan suoraan annetusta pulssista") are now correct.
-- Node model test passes (652 checks). Energy E_k + E_b = ½ m v1² holds with zero error through a crushable run.
-- My script reproduces exp-1 (0,0393/0,0785/0,157 s; 80,0/40,0/20,0 N; −2,00 N·s), exp-2 (−2,00/−4,00 N·s; v = −2,00 m/s), exp-3 (28,3/40,0/56,6 N; −1/−2/−4 N·s) and I = Δp in every run.
-- Limits: the largest crush is 0,222 m (crushable) and 0,283 m (spring), both under 0,32 m. The longest contact is 0,444 s, inside the 0,5 s axis. The largest force is 113 N, under 120 N.
-- I recomputed the worked example (3,48 kg·m/s, 870 N, weight ratio about 1500, sign-error 145 N), siirto (80 N; distractors 4,0/0,20/800; stiff hand 400 N, about 8 kg), check-2 (5,4 N·s, 12 m/s, 43 km/h, mean 450 N = half the peak of the triangle; distractors 24/5,4/12 000), kertaus 1,5 m/s, virhe −4,0 kg·m/s and check-1 ±120.
-- Every prediction and experiment question has exactly one correct option, and each distractor's feedback is right. The Johtopäätös "neljäsosa voimasta" holds.
-- Experiment setups lock m, v1 and the collision type or the bumper as intended. simState gives dt, Fmax, I, v2, dp and p1.
-- Theory, summary, opening answer (surface force = net force + weight) and exit ticket agree.
+- The new hook answer is right: same Δp, same net-force impulse; the average normal force = average net force + weight, and both fall as Δt grows; lower force means less strain and lower injury risk. The same wording is in check-3's model answer.
+- Recomputed with my own formulas: Δt = (π/2)√(m/k), F_max = v√(km), I = −2F_maxΔt/π = −mv for k = 1600/400/100 N/m (0,0393/0,0785/0,157 s; 80/40/20 N; −2,00 N·s), bounce −4,00 N·s, exp-3 28,3/40,0/56,6 N; example 870 N, 1529×, 145 N; transfer 80 N and its mistakes; check-2 12 m/s, 43 km/h, 450 N; retrieval 1,5 m/s; error-spotting −4,0; Ydinajatus figure 9,0/9,0/−4,5 kg·m/s.
+- Ran model.js in node for every experiment: I = Δp independently, crush depth < bumper, the longest contact 0,444 s fits the graph.
+- The pulse kinematics in model.js (v, c) integrate correctly. The 0,64 F_max mean is right.
+- Figures (pulse curves, 900 N / 12 ms triangle) match figures.py.
+- Every choice has exactly one correct option, and each distractor's feedback is right. Signs follow +x throughout.
+- The experiments lock m, v and type correctly, and the simState keys exist. The model box states no friction and an ideal spring.

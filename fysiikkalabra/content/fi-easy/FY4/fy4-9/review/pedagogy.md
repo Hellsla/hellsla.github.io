@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bbeda495d053a80a
+CONTENT-HASH: 24d1a9be543a99e0
 
 ## Blocking
+(none)
 
 ## Polish
+- lesson.md "Vastaus alun kysymykseen" — "Sekin pienenee, kun pysähtymisaika pitenee." "Sekin" is unclear (kokonaisvoimako vai alustan voima?). Plainer: "Myös alustan voima pienenee, kun pysähtymisaika pitenee."
+- inquiry.json explain criterion (line 495) — "pienempää keskimääräistä voimaa" while the model answer and lesson now say "kokonaisvoima" and "alustan voima"; make the criterion name the same force: "pienempää keskimääräistä voimaa, myös alustan voimaa".
 
 ## Checked
-Reads naturally; same teaching order, hook, prediction, check-3 and rebound/mat passages as the Finnish. Plain language kept: short sentences, one thing per sentence, terms explained (kokonaisvoima, suuruus, etumerkki). Layout checks OK at 360 and 1280 px.
-
-- Delta review of commit 841247de (crushable bumper): inquiry.json `model` and `calc` and the lesson.md force-time figure polygons compared with the Finnish; the new sentences, F = -F_\text{max}\sin(\pi t/\Delta t), the "elastic" qualifier and the figure points agree; the old "force ends immediately" sentence is gone. check_i18n 0 errors, build, figures --check, check_layout 360/1280 OK.
-
-- Delta re-check (round 4): the crushable-bumper model and calc texts in inquiry.json (sine-shaped pulse, mean about $0{,}64\,F_\text{max}$, half-way maximum, direct integration during the pulse) compared with the Finnish; numbers, formula and wording agree. model.js and sim-spec changes need no translation. check_i18n 0 errors, figures --check and build run.
+- Batch delta review: the mat explanation (lower average forces, lower injury risk) is the same in lesson, Yleinen virhekäsitys and the explain model answer; the step "same impulse, longer time, smaller average force, less strain on the body, lower injury risk" is clear, short sentences, and the mat does not reduce the impulse. Removed level-policy sentences in the exercises text leave a clean instruction.

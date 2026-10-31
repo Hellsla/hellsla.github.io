@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d106b742cf4e3a8f
+CONTENT-HASH: 9cfc98b4a0a8a441
 
 ## Blocking
 
 ## Polish
-- (none)
+- lesson.md title — "Comparing the motions of two bodies" is broader than the content (meeting and overtaking); the opening question and the *Formula: Meeting condition* heading carry that, and the title matches the Finnish chapter name, so no change is needed. Consider one line in the learning goals naming "meeting and overtaking" so the student knows what the comparison is for.
 
 ## Checked
-- The new en passage reads naturally in the same order as the Finnish (graph meaning, intersection, direction rule). Step labels, "case" label and chapter names unchanged.
-- Teaching order, hints and the Koe 1 solution stages are unchanged; the neutral wording in the hints avoids the false reading that the gap must be positive. Hash after the last edit: d106b742cf4e3a8f.
+- Batch delta review: the renamed title appears in lesson.md, meta.json and courses.json; no other lesson or task refers to the old title; the title is a plain noun phrase a student can read at once. Exercises-stage text matches the level policy (the sentence ranking levels 2 and 3 as optional is gone). Goals, tasks and solutions about meeting and overtaking are unchanged and consistent with the title.

@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 37da2defef2c46f3
+CONTENT-HASH: 519045bc011e7ef9
 
 ## Blocking
-
-## Round (delta)
-- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the fi-easy page: mass selects show 0,20/0,40/0,60 kg (decimal comma), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
+(none)
 
 ## Polish
+- lesson.md Törmäysten lajit — the doubled "Silloin ... Silloin mahdollisimman suuri osa siitä" from round 1 is not part of this diff; plainer: "liike-energia pienenee mahdollisimman paljon, koska mahdollisimman suuri osa liike-energiasta muuttuu muiksi energiamuodoiksi."
 
 ## Checked
-- Re-read the changed simulation stage (text, howto, model, calc) and sim strings in plain Finnish. The text is split into short sentences, one thing in each: the energy is listed in its own sentence ("Energia on liike-energiaa, puskurin energiaa ja sisäenergiaa"), the dip of kinetic energy is followed by its reason ("Siksi ..."), and the tape case has its own sentence. Same content and the same $...$ mentions as the Finnish.
-- Terms are explained: puskurin energia, sisäenergia, katkoviiva = alkuperäinen kokonaisenergia. Teaching order, stages, predictions, hints and exit ticket unchanged.
-- Sim labels (ennen, nyt, kok, sis) are short and match the lesson. Opened the built fi-easy page at 390 and 1280 px in all four situations: labels fit.
+- Round 2 delta: the rifle sentence now follows the two-part case, so "Siksi" refers to the right reasoning (equal and opposite momenta, lighter part faster). The several-parts sentences (vector sum zero, unequal momenta) follow as their own idea, and the energy sentence closes the paragraph.
+- Tiivistelmä: "Kun systeemi hajoaa kahdeksi osaksi, ..." now matches the lesson text, and "Liike-energia kasvaa" stands as its own sentence valid for any number of parts. Short, clear, consistent with the tasks.

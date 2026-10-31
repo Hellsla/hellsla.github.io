@@ -8,7 +8,7 @@
     "a": "Satunnaisvirhe heittää kerta kerralta eri suuntaan, joten liian suuret ja liian pienet tulokset kumoavat osin toisensa keskiarvossa. Systemaattinen virhe on joka mittauksessa samaan suuntaan, joten se on yhtä suuri myös keskiarvossa."
   },
   {
-    "q": "Mittaustulos on $t = 4{,}52\\,\\text{s} \\pm 0{,}09\\,\\text{s}$. Laske suhteellinen virhe prosentteina.",
+    "q": "Mittaustulos on $t = 4{,}52\\,\\text{s} \\pm 0{,}09\\,\\text{s}$. Laske suhteellinen epävarmuus prosentteina.",
     "a": "$\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\% = \\dfrac{0{,}09\\,\\text{s}}{4{,}52\\,\\text{s}} \\cdot 100\\,\\% \\approx 2\\,\\%$, yksi merkitsevä numero kuten virhearviossa $0{,}09\\,\\text{s}$."
   }
 ]
