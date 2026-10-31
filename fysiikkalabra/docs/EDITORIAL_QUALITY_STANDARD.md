@@ -125,7 +125,7 @@ orange `#e8590c`, momentum `#7048e8`); every label LaTeX; the figure palette; pr
 ## 8. Mathematical typography (visual)
 As rendered by KaTeX on the page: equations aligned at `=`; spacing around operators; fractions (`\dfrac` in display,
 `\tfrac` inline); exponents, sub- and superscripts legible; `\overline{F}` vectors; Greek letters; decimal comma
-`{,}` in Finnish; SI units upright with a thin space (`9{,}81\,\text{m/s}^2`); `\cdot` for multiplication, a colon for
+`{,}` in Finnish (a simulation's canvas and readout may keep the decimal comma in every language, teacher 2026-10-31); SI units upright with a thin space (`9{,}81\,\text{m/s}^2`); `\cdot` for multiplication, a colon for
 a written division, `\Delta x` for a measurement error; significant figures consistent between substitution,
 answer and its justification; equations placed where the text refers to them; long chains broken at meaningful
 boundaries by `mathlayout.py` (never shrunk); figure labels and simulation readouts in the same typeface. The
