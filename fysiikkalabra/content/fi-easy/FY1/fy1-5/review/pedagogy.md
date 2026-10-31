@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 362fcbef35fcb0fa
+CONTENT-HASH: 9aee59eec243934c
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: hero illustration aria-label (fi-easy) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+Translation review: plain Finnish with short clear sentences (no long sentences outside formulas and solution headers); teaching sequence and terms as in the Finnish; units and symbols unchanged. check_i18n 0 errors for fi-easy.

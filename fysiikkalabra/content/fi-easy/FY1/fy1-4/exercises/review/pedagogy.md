@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4bed9978dc1d0e90
+CONTENT-HASH: 987048e4dc990569
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- (none)
+- exercises.json L2-04: "alkumaksusta ... ja lisäksi 2,5 €:sta" (awkward case ending after a unit symbol) -> "on alkumaksu ... ja lisäksi 2,5 € jokaiselta ajetulta kilometriltä".
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md: sentences split into short ones, all steps kept, Finnish step labels unchanged, task wording asks the same thing.
-- Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): word units (kertaa, vrk) and string answers: unchanged from Finnish, correct.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises and solutions (figure task L2-02, unit formatting) against the new Finnish.
+- Translation review against the reviewed Finnish source (teacher procedure 2026-10-28), pedagogy role: exercises.json and solutions.md compared with content/fi: same numbers, answers, tolerances, units, signs, significant-figure reasoning and teaching sequence in all 12 exercises; every number sequence in solutions.md matches the Finnish.
+- Figure task L2-02 (fy1-4/scatter-points) and the point list in its solution agree with the Finnish.
+- Short clear sentences, plain Finnish, units (vrk, kertaa) as in the Finnish; check_i18n 0 errors.

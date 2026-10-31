@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d41a753526fbce19
+CONTENT-HASH: 8dee2b011f7eb733
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- inquiry.json activities[3].choices[0].feedback — "an empty cylinder has weight too" (wrong quantity in a mass context) → "has mass too"
+(none needed in the lesson texts)
 
 ## Polish
-- Simulation: the shared sim.js tx() writes a decimal comma ({,}) into its readouts in every language; in en the slider/readout numbers show a comma. Outside this unit's files (sim code), for the teacher.
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md (prose, worked example, all formulas/numbers, decimal points, \cdot), inquiry.json (prior, predictions, sim howto/model/calc, experiments, find-the-error, graph reading, apply, practice, solutions), exit-ticket.json, figures.json and the sim's en labels against content/fi; chapter references match content/en/courses.json; sign/inequality/causality statements unchanged.
-- Update 2026-10-28 14:00 fields (intro, source_note, names, word units, string answers): intro texts (experiments 1–3), column names, word units: consistent with sim labels (Data set, Slope, Constant term); fixed activities[5].intro "a measurement of a cart" → "the trolley measurements" (term consistency).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (new drawing-the-line check, trimmed exit ticket, calculation task) against the new Finnish.
+- Translation review against the reviewed Finnish source (teacher procedure 2026-10-28), science role: lesson.md (419 lines, same structure and section order as content/fi), inquiry.json, exit-ticket.json, figures.json (figure descriptions and aria-labels) and meta.json.
+- Every number, equation, unit and significant-figure statement matches the Finnish (digit sequences compared line by line; only decimal comma -> point differs); worked example (kettle: k = 8.0 degC/min, b = 20 degC, t = 2.5 min), the five-step solution layout, both exit-ticket answers and the inquiry feedback values (d, 0.12 m, 61 g, 15 km/h, plant task) are unchanged.
+- Teaching sequence unchanged: hook, recap of errors, two predictions, simulation experiments 1-3, conclusion, find-the-error, read-the-slope, new situation.
+- Natural English; no Finnish words in the text, units or figure labels (Ydinajatus/Kaava/Esimerkki in inquiry.json are structural section keys identical in all languages; ennuste/koe/aineisto are ids). check_i18n 0 errors.
