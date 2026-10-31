@@ -141,7 +141,7 @@
       "text": "Car A and cyclist B move on the same road. Their positions are shown on one axis and in the same $(t, x)$ graph.",
       "howto": "Press *Start* or drag the *Time $t$* slider and choose a *Case*. The blue arrow shows the velocity $\\overline{v}$ and the orange arrow the acceleration $\\overline{a}$, and the length of the arrow tells the magnitude. The line in the graph is drawn for the moments you have visited, and a black ring appears at the meeting when you have visited the moment of the meeting. In case 5 body $\\text{A}$ is a bus and body $\\text{B}$ a runner.",
       "model": "The values are model values calculated by the simulation, not measurements. The bodies move along a straight road with a constant acceleration ($a = 0$ in uniform motion), they are treated as points, and they pass through each other. Friction and air resistance are not taken into account, and the acceleration takes its value immediately at the start.",
-      "calc": "The position of each body is calculated with the formula $x = x_0 + v_0 t + \\tfrac12 a t^2$ and the velocity with $v = v_0 + a t$. The bodies meet at the moment when $x_\\text{A} = x_\\text{B}$. The reading $x_\\text{B} - x_\\text{A}$ is the lead of B: it is positive when B is ahead and zero at the moment of meeting."
+      "calc": "The position of each body is calculated with the formula $x = x_0 + v_0 t + \\tfrac12 a t^2$ and the velocity with $v = v_0 + a t$. The bodies meet at the moment when $x_\\text{A} = x_\\text{B}$. The reading $x_\\text{B} - x_\\text{A}$ tells how much larger the position coordinate of B is, and it is zero at the moment of meeting. When the bodies move in the positive direction, it is the lead of B."
     },
     {
       "id": "exp-1",
@@ -155,7 +155,7 @@
       },
       "names": {
         "t": "time t",
-        "tapaus": "tapaus"
+        "tapaus": "case"
       },
       "units": {
         "t": "s"
@@ -187,8 +187,8 @@
         "tolerance": 0.02,
         "hints": [
           "At the moment of meeting the bodies are at the same place. In the row of which moment is the column $x_\\text{B} - x_\\text{A}$ zero?",
-          "The lead $x_\\text{B} - x_\\text{A}$ decreases by the same amount every second until it is zero. In the graph the lines intersect at the same point.",
-          "The lead is at first $60\\,\\text{m}$ and decreases by $6.0\\,\\text{m}$ every second, so it is zero at $10\\,\\text{s}$. Read the position in the row of this moment."
+          "The difference of positions $x_\\text{B} - x_\\text{A}$ decreases by the same amount every second until it is zero. In the graph the lines intersect at the same point.",
+          "The difference of positions is at first $60\\,\\text{m}$ and decreases by $6.0\\,\\text{m}$ every second, so it is zero at $10\\,\\text{s}$. Read the position in the row of this moment."
         ],
         "mistakes": [
           {
@@ -200,7 +200,7 @@
             "feedback": "This is the time of the meeting in seconds. The question asked for the place, so read the position column in the same row."
           }
         ],
-        "solution": "**Given:** from the table at $t = 10\\,\\text{s}$ the positions of the bodies $x_\\text{A} = 50\\,\\text{m}$ and $x_\\text{B} = 50\\,\\text{m}$; the lead $x_\\text{B} - x_\\text{A} = 0$\n\n**Find:** the place of the meeting $x$ in $\\text{m}$\n\n**Principle:** The bodies meet when they are at the same place at the same moment, that is, $x_\\text{A} = x_\\text{B}$. In the table this is the row where the lead is zero, and the place of the meeting is read from the same row.\n\n**Formula:** $x_\\text{A} = x_\\text{B}$, that is, $10 + 4.0\\,t = 70 - 2.0\\,t$. The time is $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4.0\\,\\text{m/s} + 2.0\\,\\text{m/s}}$, and the place is $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.\n\n**Substitution:** $t = \\dfrac{60\\,\\text{m}}{6.0\\,\\text{m/s}} = 10\\,\\text{s}$ and $x = 10\\,\\text{m} + 4.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Answer:** $50\\,\\text{m}$, two significant figures like the given values.\n\n**Reasonableness:** The position of B is $70\\,\\text{m} - 2.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, the same as that of A. The place of the meeting is between the starting places $10\\,\\text{m}$ and $70\\,\\text{m}$. A has travelled $40\\,\\text{m}$ and B $20\\,\\text{m}$, half the distance, because B is half as fast."
+        "solution": "**Given:** from the table at $t = 10\\,\\text{s}$ the positions of the bodies $x_\\text{A} = 50\\,\\text{m}$ and $x_\\text{B} = 50\\,\\text{m}$; the difference of positions $x_\\text{B} - x_\\text{A} = 0$\n\n**Find:** the place of the meeting $x$ in $\\text{m}$\n\n**Principle:** The bodies meet when they are at the same place at the same moment, that is, $x_\\text{A} = x_\\text{B}$. In the table this is the row where the difference of positions is zero, and the place of the meeting is read from the same row.\n\n**Formula:** $x_\\text{A} = x_\\text{B}$, that is, $10 + 4.0\\,t = 70 - 2.0\\,t$. The time is $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4.0\\,\\text{m/s} + 2.0\\,\\text{m/s}}$, and the place is $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.\n\n**Substitution:** $t = \\dfrac{60\\,\\text{m}}{6.0\\,\\text{m/s}} = 10\\,\\text{s}$ and $x = 10\\,\\text{m} + 4.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Answer:** $50\\,\\text{m}$, two significant figures like the given values.\n\n**Reasonableness:** The position of B is $70\\,\\text{m} - 2.0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, the same as that of A. The place of the meeting is between the starting places $10\\,\\text{m}$ and $70\\,\\text{m}$. A has travelled $40\\,\\text{m}$ and B $20\\,\\text{m}$, half the distance, because B is half as fast."
       }
     },
     {
@@ -215,7 +215,7 @@
       },
       "names": {
         "t": "time t",
-        "tapaus": "tapaus"
+        "tapaus": "case"
       },
       "units": {
         "t": "s"
@@ -280,7 +280,7 @@
       },
       "names": {
         "t": "time t",
-        "tapaus": "tapaus"
+        "tapaus": "case"
       },
       "units": {
         "t": "s"

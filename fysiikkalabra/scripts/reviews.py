@@ -51,6 +51,7 @@ LESSON_CONTENT = tuple(n for n in CONTENT if n not in EXERCISE_CONTENT) + ("less
 PARTS = {"lesson": LESSON_CONTENT, "exercises": EXERCISE_CONTENT,
          "all": CONTENT}            # the one hash of a lesson before the exercises got their own reviews (2026-10-28)
 MODES = ("none", "delta", "full")
+FBD_SPEC = re.compile(r"(?:\n|\\n)```voimakuvio(?:\n|\\n).*?```", re.S)   # a drawn force diagram's spec (scripts/fbdspec.py), raw or in JSON
 RULES = {                       # category: (science, pedagogy)
     "tests":          ("none",  "none"),    # tests/sims assertions added or tightened: test_sims.py checks them
     "comments":       ("none",  "none"),    # comment or blank lines in simulation code or answers.py
@@ -59,6 +60,8 @@ RULES = {                       # category: (science, pedagogy)
     "relocated":      ("none",  "delta"),   # the sim activity's text moved word for word into its lead and boxes (inquiry.json)
     "objective-form": ("none",  "delta"),
     "notation":       ("none",  "none"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
+    "force-diagram":  ("delta", "none"),    # a ```voimakuvio spec added to a step, drawn by fbdspec.py; the text unchanged (teacher 2026-10-30)
+    "force-diagram-copy": ("none", "none"),  # a translation's force-diagram specs, identical to the reviewed Finnish ones (check_i18n.py)
     "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
@@ -79,6 +82,8 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
        "notation": "vector symbols rewritten with an overline, nothing else",
+       "force-diagram-copy": "the Finnish force-diagram specs copied unchanged into the translation",
+       "force-diagram": "force diagrams drawn from a spec beside their Voimakuvio steps (fbdspec.py), the text unchanged",
        "objective-form": "learning goals rephrased to complete their heading, symbols and numbers unchanged", "section-name": "a section named after its law",
        "numbers": "a changed line carries a number, formula, symbol or unit", "answers": "an answer, unit, tolerance or answers.py changed",
        "tests-weakened": "a simulation assertion removed or loosened", "levels": "an exercise level or id changed",
@@ -575,6 +580,15 @@ def changes(folder, base, part="lesson", split=False):
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
+        if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
+            ra2, rb2 = FBD_SPEC.sub("", ra or ""), FBD_SPEC.sub("", rb)
+            if ra2 != (ra or "") or rb2 != rb:
+                fi_rel = re.sub(r"^content/[^/]+/", f"content/{courses.SOURCE_LANG}/", rel)
+                copy = fi_rel != rel and FBD_SPEC.findall(rb) == FBD_SPEC.findall(new.source(fi_rel) or "")
+                cats.add("force-diagram-copy" if copy else "force-diagram"); ra, rb = ra2, rb2; a, b = _view(ra, rel, False), _view(rb, rel, False)
+                n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines   # the specs stay in the diff
+                if a != b: cats |= classify(rel, list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), lineterm="", n=2)), folder.name)
+                continue
         if not binary and ra and rb and VECTOR.search(ra):   # \\mathbf{F} → \\overline{F}: the teacher's notation, nothing else
             ra = VECTOR.sub(r"\\overline{\1}", ra); a = _view(ra, rel, False)
             if a == b: cats.add("notation"); n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))); diff += lines; continue

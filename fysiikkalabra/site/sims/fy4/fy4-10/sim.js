@@ -1,59 +1,59 @@
-// fy4-10 Liikemäärän säilyminen ja yksiulotteiset törmäykset: two gliders on a level 2,0 m air track (friction and air
-// resistance neglected; the weight and the track's normal force cancel). Glider 1 starts at x = 0,40 m, glider 2 at
-// x = 1,20 m (centres; each glider is L = 0,20 m long, its end bumpers included). In contact (overlap d = L − (x2 − x1) > 0)
-// the bumpers push the gliders apart with equal and opposite forces, F on glider 2 and −F on glider 1 (Newton's third
-// law), F = max(0, k d + c (v1 − v2)):
-//   kimmoisa  spring bumpers, k = 300 N/m, c = 0 (no energy lost),
-//   kimmoton  a soft bumper, k = 300 N/m, c = 3,0 N·s/m (part of E_k to internal energy),
-//   tarra     velcro, k = 300 N/m with critical damping c = 2√(kμ), μ = m1 m2/(m1 + m2); the gliders stick together when
-//             their relative velocity reaches zero,
-//   rajahdys  the gliders at rest at the middle of the track with a spring compressed by 4,0 cm between them (k = 300 N/m,
-//             0,24 J), released at t = 0; the velocity sliders do not apply.
-// Velocity Verlet steps of 0,2 ms of simulated time. The momenta and kinetic energies are computed from the state, so the
-// conservation of the total momentum is a result of the equal and opposite forces, not an input. The "after" values are
-// taken when the contact ends (or when the gliders stick). The run ends when a glider reaches an end of the track.
-// Top: the track with the gliders, velocity arrows (blue) above and momentum arrows (purple) below the beam, the contact
-// forces (red) during the collision. Bottom (stacked on a phone): momentum bars and kinetic energy bars, before and now.
+// fy4-10 Liikemäärän säilyminen ja yksiulotteiset törmäykset: two gliders on a level air track. The physics is in
+// model.js (window.FY410Model, tested by tests/models/fy4-10.test.js): equal and opposite bumper forces, the energy the
+// bumpers hold (E_p) and the energy they turn into internal energy (E_sis), so E_k + E_p + E_sis stays the starting
+// energy; the velcro case truly sticks, the explosion starts with the spring's 0,24 J. This file only draws the state.
+// Top: the track with the gliders, velocity arrows (blue) above and momentum arrows (purple) below the beam, every arrow
+// from its own glider, its length to one scale for the whole run and its direction the sign of the quantity; while the
+// gliders touch, the bumper forces (red): F_1 on glider 1 to the left and F_2 on glider 2 to the right, equal in size.
+// The arrow scales are chosen when the run is set, by playing it ahead to its "after" values, so no arrow tip leaves the
+// picture before or during the collision; after it the run ends before an arrow would leave, so none is cut or moved.
+// Bottom (stacked on a phone): momentum bars (signed, zero line in the middle) for glider 1, glider 2 and the total, and
+// an energy column before and now: E_k (the gliders' kinetic energy), E_p (in the bumper or spring) and E_sis (internal),
+// stacked, with the starting total as a dashed line, so the column stays as tall while energy changes form.
 // Every canvas text goes through lab(), which pushes its ink box to simState.labels. p5.js 1.9 instance mode.
 new p5((p) => {
-  const L = 0.20, K = 300, C_IN = 3.0, D0 = 0.04, DT = 0.0002, TRACK = 2.0, TMAX = 12;
+  const MD = window.FY410Model, L = MD.L, DT = 0.0002, TRACK = MD.TRACK;
   const BLUE = [25, 113, 194], PURPLE = [112, 72, 232], PURPLE_L = [197, 184, 248], PURPLE_M = [150, 124, 240], RED = [201, 42, 42],
-    INKC = [31, 41, 51], MUTEDC = [107, 116, 128], GREEN = [43, 138, 62], GREEN_L = [178, 242, 187], GREEN_M = [105, 190, 120];
+    INKC = [31, 41, 51], MUTEDC = [107, 116, 128], EK = [43, 138, 62], EP = [214, 170, 36], ESIS = [150, 100, 70];
   let laid = false, narrow = false, OX = 0, OY = 0, U = 1, fh = 13, labels = [];
   // panels (canvas coordinates within the panel); the wide layout first, setLayout() switches
   const TR = { w: 600, h: 215, t: 18, v2: 34, v1: 58, beam: 140, p1: 176, p2: 200, gh: 50 };
   const CH = { w: 300, h: 185, title: 16, glab: 36, top: 46, bot: 150, name: 172 };
   let btn, slV1, lV1, slV2, lV2, selM1, selM2, selT, selSpeed, readout;
-  let x1, x2, w1, w2, F, t, running, done, contact, stuck, after, Pscale, Escale, P0, E0;
+  let R = null, B = null, running = false, Pb = null, FIT = { v: Infinity, p: Infinity };
 
-  const M = () => ({ m1: Number(selM1.value()), m2: Number(selM2.value()), typ: selT.value(),
-                     v1: selT.value() === 'rajahdys' ? 0 : Number(slV1.value()), v2: selT.value() === 'rajahdys' ? 0 : Number(slV2.value()) });
-  const damp = (S) => S.typ === 'kimmoton' ? C_IN : S.typ === 'tarra' ? 2 * Math.sqrt(K * S.m1 * S.m2 / (S.m1 + S.m2)) : 0;
-  function force(S, a1, a2, u1, u2) { const d = L - (a2 - a1); return d <= 0 ? 0 : Math.max(0, K * d + damp(S) * (u1 - u2)); }
+  const M = () => ({ m1: Number(selM1.value()), m2: Number(selM2.value()), typ: selT.value(), v1: Number(slV1.value()), v2: Number(slV2.value()) });
   function restart() {
     const S = M();
-    if (S.typ === 'rajahdys') { x1 = 1 - (L - D0) / 2; x2 = 1 + (L - D0) / 2; } else { x1 = 0.40; x2 = 1.20; }
-    w1 = S.v1; w2 = S.v2; t = 0; running = false; done = false; contact = false; stuck = false; after = null;
-    F = force(S, x1, x2, w1, w2);
-    P0 = { p1: S.m1 * w1, p2: S.m2 * w2 }; E0 = { e1: 0.5 * S.m1 * w1 * w1, e2: 0.5 * S.m2 * w2 * w2 };
-    // drawing scales: the largest momentum or energy this run can reach (an elastic outcome bounds the collisions)
-    const ue1 = ((S.m1 - S.m2) * S.v1 + 2 * S.m2 * S.v2) / (S.m1 + S.m2), ue2 = ((S.m2 - S.m1) * S.v2 + 2 * S.m1 * S.v1) / (S.m1 + S.m2);
-    const pr = Math.sqrt(2 * 0.5 * K * D0 * D0 * S.m1 * S.m2 / (S.m1 + S.m2));
-    Pscale = 1.1 * Math.max(0.05, Math.abs(P0.p1), Math.abs(P0.p2), Math.abs(P0.p1 + P0.p2), Math.abs(S.m1 * ue1), Math.abs(S.m2 * ue2), S.typ === 'rajahdys' ? pr : 0);
-    Escale = 1.1 * Math.max(0.01, E0.e1 + E0.e2, S.typ === 'rajahdys' ? 0.5 * K * D0 * D0 : 0);
+    R = MD.create(S.typ, S.m1, S.m2, S.v1, S.v2); B = MD.bounds(S.typ, S.m1, S.m2, S.v1, S.v2); running = false;
+    Pb = { p1: R.m1 * R.w1, p2: R.m2 * R.w2 };
+    FIT = fitRun(S);
     const rj = S.typ === 'rajahdys';
     for (const s of [slV1, slV2]) if (s) s.elt.disabled = rj || !!s.elt.closest('label')?.classList.contains('locked');
   }
-  function step(S, dt) {
-    if (stuck) { x1 += w1 * dt; x2 += w2 * dt; return; }
-    const h1 = w1 - F / S.m1 * dt / 2, h2 = w2 + F / S.m2 * dt / 2;
-    x1 += h1 * dt; x2 += h2 * dt;
-    F = force(S, x1, x2, h1, h2);
-    w1 = h1 - F / S.m1 * dt / 2; w2 = h2 + F / S.m2 * dt / 2;
-    const d = L - (x2 - x1);
-    if (d > 0) contact = true;
-    if (S.typ === 'tarra' && contact && w1 - w2 <= 0) { const V = (S.m1 * w1 + S.m2 * w2) / (S.m1 + S.m2); w1 = w2 = V; stuck = true; F = 0; after = { u1: w1, u2: w2 }; }
-    else if (contact && after === null && d <= 0) after = { u1: w1, u2: w2 };
+  // arrow lengths (px) per m/s, kg·m/s and N: one scale for the whole run, so the longest arrow fits on its row and,
+  // up to the "after" values, every arrow tip stays inside the track picture (fitRun)
+  const VS = () => Math.min((narrow ? 130 : 110) / (1.05 * B.V), FIT.v), PS = () => Math.min((narrow ? 130 : 110) / (1.05 * B.P), FIT.p),
+    FS = () => (narrow ? 110 : 90) / (1.05 * B.F);
+  // the run played ahead once when it is set: the largest arrow scales that keep each tip inside until the collision is over
+  function fitRun(S) {
+    const T = MD.create(S.typ, S.m1, S.m2, S.v1, S.v2), fit = { v: Infinity, p: Infinity };
+    const room = (x, val) => Math.abs(val) < 1e-9 ? Infinity : (val > 0 ? TR.w - 6 - X(x) : X(x) - 6) / Math.abs(val);
+    for (let n = 0; n < 200000 && !T.done; n++) {
+      fit.v = Math.min(fit.v, room(T.x1, T.w1), room(T.x2, T.w2));
+      fit.p = Math.min(fit.p, room(T.x1, T.m1 * T.w1), room(T.x2, T.m2 * T.w2));
+      if (T.after !== null && (T.stuck || MD.overlap(T) <= 0)) break;
+      MD.step(T, DT);
+    }
+    return { v: fit.v * 0.98, p: fit.p * 0.98 };
+  }
+  const SX = () => (TR.w - 40) / TRACK, X = (x) => 20 + x * SX();
+  // the run ends when a glider reaches an end of the track or an arrow's tip would leave the picture
+  function outside() {
+    for (const [x, len] of [[R.x1, R.w1 * VS()], [R.x2, R.w2 * VS()], [R.x1, R.m1 * R.w1 * PS()], [R.x2, R.m2 * R.w2 * PS()]]) {
+      const tip = X(x) + len; if (tip < 6 || tip > TR.w - 6) return true;
+    }
+    return false;
   }
 
   p.setup = () => {
@@ -61,14 +61,14 @@ new p5((p) => {
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
     btn = p.createButton(__('kaynnista')).parent(controls);
-    btn.elt.addEventListener('click', () => { if (done) { restart(); running = true; } else running = !running; });
+    btn.elt.addEventListener('click', () => { if (R.done) { restart(); running = true; } else running = !running; });
     const bR = p.createButton(__('alusta')).parent(controls); bR.elt.addEventListener('click', restart);
     const lt = p.createElement('label').parent(controls); p.createSpan(__('tyyppi')).parent(lt); selT = p.createSelect().parent(lt);
     for (const k of ['kimmoisa', 'kimmoton', 'tarra', 'rajahdys']) selT.option(__(k), k);
     selT.selected('kimmoisa');
     const l1 = p.createElement('label').parent(controls); p.createSpan(__('massa1')).parent(l1); selM1 = p.createSelect().parent(l1);
     const l2 = p.createElement('label').parent(controls); p.createSpan(__('massa2')).parent(l2); selM2 = p.createSelect().parent(l2);
-    for (const s of [selM1, selM2]) { for (const m of ['0.2', '0.4', '0.6']) s.option(m.replace('.', ',') + '0 kg', m); s.selected('0.4'); }
+    for (const s of [selM1, selM2]) { for (const m of ['0.2', '0.4', '0.6']) s.option((DEC === '.' ? m : m.replace('.', ',')) + '0 kg', m); s.selected('0.4'); }
     const lv1 = p.createElement('label').parent(controls); lV1 = p.createSpan('').parent(lv1); slV1 = p.createSlider(0, 1, 0.6, 0.1).parent(lv1);
     const lv2 = p.createElement('label').parent(controls); lV2 = p.createSpan('').parent(lv2); slV2 = p.createSlider(-1, 1, 0, 0.1).parent(lv2);
     const ls = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(ls); selSpeed = p.createSelect().parent(ls);
@@ -88,39 +88,42 @@ new p5((p) => {
   };
 
   p.draw = () => {   // the speed select scales simulated time, so it changes only the pace
-    const S = M();
+    const cw = document.getElementById('sim-root').clientWidth || 600, k = Math.max(1, 600 / cw);
+    setLayout(cw < 500);
     if (running) {
       let left = Math.min(p.deltaTime, 100) / 1000 * Number(selSpeed.value());
       while (left > 1e-9 && running) {
-        const d = Math.min(DT, left); step(S, d); t += d; left -= d;
-        if (x1 - L / 2 <= 0 || x2 + L / 2 >= TRACK || t >= TMAX) { running = false; done = true; }
+        const d = Math.min(DT, left); MD.step(R, d); left -= d;
+        if (R.after !== null && outside()) R.done = true;   // before that the scales keep every tip inside (fitRun)
+        if (R.done) running = false;
       }
     }
-    const p1 = S.m1 * w1, p2 = S.m2 * w2, e1 = 0.5 * S.m1 * w1 * w1, e2 = 0.5 * S.m2 * w2 * w2;
-    const pJ = after ? S.m1 * after.u1 + S.m2 * after.u2 : null, EkJ = after ? 0.5 * S.m1 * after.u1 ** 2 + 0.5 * S.m2 * after.u2 ** 2 : null;
+    const S = R, E = MD.energies(S), p1 = S.m1 * S.w1, p2 = S.m2 * S.w2, af = S.after;
+    const pJ = af ? S.m1 * af.u1 + S.m2 * af.u2 : null, EkJ = af ? 0.5 * S.m1 * af.u1 ** 2 + 0.5 * S.m2 * af.u2 ** 2 : null;
+    const Ek0 = 0.5 * S.m1 * S.v1 ** 2 + 0.5 * S.m2 * S.v2 ** 2, Ep0 = S.E0 - Ek0;
     lV1.html(__('v1', { v: tx(Number(slV1.value()), 1) }));
     lV2.html(__('v2', { v: tx(Number(slV2.value()), 1) }));
     const bt = running ? __('tauko') : __('kaynnista'); if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
     const dots = '\\ldots';
-    readout.html(__('lukemat', { p0: tx(P0.p1 + P0.p2, 3), E0: tx(E0.e1 + E0.e2, 3),
-      u1: after ? tx(after.u1, 2) : dots, u2: after ? tx(after.u2, 2) : dots, pJ: after ? tx(pJ, 3) : dots, EJ: after ? tx(EkJ, 3) : dots,
-      t: tx(t, 2), w1: tx(w1, 2), w2: tx(w2, 2), p: tx(p1 + p2, 3), E: tx(e1 + e2, 3) }));
-    window.simState = { tyyppi: S.typ, m1: S.m1, m2: S.m2, v1: S.v1, v2: S.v2, t, x1, x2, w1, w2, F, p1, p2, p: p1 + p2, Ek: e1 + e2,
-      p0: P0.p1 + P0.p2, Ek0: E0.e1 + E0.e2, u1: after ? after.u1 : null, u2: after ? after.u2 : null, pJ, EkJ,
-      dEk: after ? EkJ - (E0.e1 + E0.e2) : null, contact, stuck, running, done, labels: null };
-    const cw = document.getElementById('sim-root').clientWidth || 600, k = Math.max(1, 600 / cw);
-    setLayout(cw < 500);
+    readout.html(__('lukemat', { p0: tx(S.P0, 3), E0: tx(Ek0, 3), Ep0: tx(Ep0, 3),
+      u1: af ? tx(af.u1, 2) : dots, u2: af ? tx(af.u2, 2) : dots, pJ: af ? tx(pJ, 3) : dots, EJ: af ? tx(EkJ, 3) : dots,
+      t: tx(S.t, 2), w1: tx(S.w1, 2), w2: tx(S.w2, 2), p: tx(p1 + p2, 3), E: tx(E.Ek, 3), Ep: tx(E.Ep, 3), Es: tx(E.Esis, 3),
+      Et: tx(E.Ek + E.Ep + E.Esis, 3) }));
+    window.simState = { tyyppi: S.typ, m1: S.m1, m2: S.m2, v1: S.v1, v2: S.v2, t: S.t, x1: S.x1, x2: S.x2, w1: S.w1, w2: S.w2, F: S.F, p1, p2,
+      p: p1 + p2, Ek: E.Ek, Ep: E.Ep, Esis: E.Esis, Etot: E.Ek + E.Ep + E.Esis, E0: S.E0, Ep0,
+      p0: S.P0, Ek0, u1: af ? af.u1 : null, u2: af ? af.u2 : null, pJ, EkJ,
+      dEk: af ? EkJ - Ek0 : null, contact: S.contact, stuck: S.stuck, running, done: S.done, labels: null };
     U = narrow ? k : 1;
     fh = narrow ? Math.round(14 * k) : 13;   // phone: about 14 CSS px on screen
     labels = [];
     p.background(250);
     OX = 0; OY = 0; p.push(); trackPanel(S); p.pop();
     if (narrow) {
-      OX = 0; OY = TR.h; p.push(); p.translate(OX, OY); chart('p', S, p1, p2); p.pop();
-      OX = 0; OY = TR.h + CH.h; p.push(); p.translate(OX, OY); chart('E', S, e1, e2); p.pop();
+      OX = 0; OY = TR.h; p.push(); p.translate(OX, OY); pChart(S, p1, p2); p.pop();
+      OX = 0; OY = TR.h + CH.h; p.push(); p.translate(OX, OY); eChart(S, E); p.pop();
     } else {
-      OX = 0; OY = TR.h; p.push(); p.translate(OX, OY); chart('p', S, p1, p2); p.pop();
-      OX = 300; OY = TR.h; p.push(); p.translate(OX, OY); chart('E', S, e1, e2); p.pop();
+      OX = 0; OY = TR.h; p.push(); p.translate(OX, OY); pChart(S, p1, p2); p.pop();
+      OX = 300; OY = TR.h; p.push(); p.translate(OX, OY); eChart(S, E); p.pop();
     }
     window.simState.labels = labels;
   };
@@ -140,7 +143,6 @@ new p5((p) => {
       p.resizeCanvas(600, 400);
     }
   }
-  const SX = () => (TR.w - 40) / TRACK, X = (x) => 20 + x * SX();
 
   // --- the track: the air track, the gliders with their bumpers, velocity and momentum arrows, contact forces ---
   function trackPanel(S) {
@@ -149,24 +151,25 @@ new p5((p) => {
     grect(20, by, TR.w - 40, bh, [[214, 220, 226], [160, 170, 180]], 2 * U);
     p.noStroke(); p.fill(138, 150, 163); for (let x = 32; x < TR.w - 24; x += 16 * U) p.circle(x, by + bh / 2, 2.6 * U);
     p.fill(...INKC); p.rect(14, by - 18 * U, 6, 18 * U + bh); p.rect(TR.w - 20, by - 18 * U, 6, 18 * U + bh);   // end stops
-    const d = Math.max(0, L - (x2 - x1)), bump = 0.03;
-    glider(x1, S.m1, [241, 223, 181], 1, S, d, bump);
-    glider(x2, S.m2, [196, 204, 212], 2, S, d, bump);
-    // contact forces: F on glider 2 to the right, −F on glider 1 to the left, from the contact point
-    if (F > 0.05) {
-      const cx = X((x1 + x2) / 2), cy = by - 2 * U - 0.25 * TR.gh, Lf = Math.min(110 * U, 14 * U + 12 * U * F);
-      arrow(cx, cy, cx + Lf, cy, RED, 4 * U); arrow(cx, cy, cx - Lf, cy, RED, 4 * U);
+    const d = MD.overlap(S);
+    glider(S.x1, S.m1, [241, 223, 181], 1, S, d);
+    glider(S.x2, S.m2, [196, 204, 212], 2, S, d);
+    // the bumper forces, from the contact surface: F_1 on glider 1 (left), F_2 on glider 2 (right), equal lengths
+    if (S.F > 0.05) {
+      const cx = X((S.x1 + S.x2) / 2), cy = by - 2 * U - 0.25 * TR.gh, Lf = Math.max(14 * U, S.F * FS()), gap = 4 * U;
+      arrow(cx, cy, cx - Lf, cy, RED, 4 * U); arrow(cx, cy, cx + Lf, cy, RED, 4 * U);
+      lab('$\\overline{F}_1$', cx - Lf - gap, cy - 8 * U, 'r', RED);
+      lab('$\\overline{F}_2$', cx + Lf + gap, cy - 8 * U, 'l', RED);
     }
     // velocity (blue) above, momentum (purple) below the beam; each glider on its own row
-    const vs = narrow ? 150 : 120, ps = TR.w * 0.3 / Pscale;
-    vec(X(x1), TR.v1, w1 * vs, BLUE, '\\overline{v}_1');
-    vec(X(x2), TR.v2, w2 * vs, BLUE, '\\overline{v}_2');
-    vec(X(x1), TR.p1, S.m1 * w1 * ps, PURPLE, '\\overline{p}_1');
-    vec(X(x2), TR.p2, S.m2 * w2 * ps, PURPLE, '\\overline{p}_2');
-    lab(`$t = ${tx(t, 2)}\\,\\text{s}$`, 10, TR.t + fh * 0.35, 'l', INKC);
+    vec(X(S.x1), TR.v1, S.w1 * VS(), BLUE, '\\overline{v}_1');
+    vec(X(S.x2), TR.v2, S.w2 * VS(), BLUE, '\\overline{v}_2');
+    vec(X(S.x1), TR.p1, S.m1 * S.w1 * PS(), PURPLE, '\\overline{p}_1');
+    vec(X(S.x2), TR.p2, S.m2 * S.w2 * PS(), PURPLE, '\\overline{p}_2');
+    lab(`$t = ${tx(S.t, 2)}\\,\\text{s}$`, 10, TR.t + fh * 0.35, 'l', INKC);
   }
-  function glider(x, m, col, num, S, d, bump) {
-    const s = SX(), by = TR.beam, h = TR.gh * (0.55 + 0.75 * m), bodyL = (L - 2 * bump) * s;
+  function glider(x, m, col, num, S, d) {
+    const s = SX(), by = TR.beam, h = TR.gh * (0.55 + 0.75 * m), bump = MD.BUMP, bodyL = (L - 2 * bump) * s;
     const cx = X(x);
     grect(cx - bodyL / 2, by - h - 2 * U, bodyL, h, [col, col.map((c) => c * 0.82)], 3 * U);
     p.noStroke(); p.fill(138, 150, 163); p.rect(cx - bodyL / 2 + 3, by - 4 * U, bodyL - 6, 4 * U);
@@ -186,14 +189,13 @@ new p5((p) => {
       p.noStroke(); p.fill(55, 65, 75); p.rect(Math.min(x0, x0 + dir * len), cy - 10 * U, len, 20 * U);
     }
   }
-  function vec(x, y, len, col, name) {           // an arrow of signed length len on the row y, its label at the tip
+  function vec(x, y, len, col, name) {           // an arrow of signed length len from its glider on the row y, its label at the tip
     if (Math.abs(len) < 4 * U) return;
-    let x0 = x, xt = x + len;                      // from the glider; near an end of the track it ends at the glider instead
-    if (xt > TR.w - 8 || xt < 8) { x0 = x - len; xt = x; }
-    arrow(x0, y, xt, y, col, 3 * U);
+    const xt = x + len;
+    arrow(x, y, xt, y, col, 3 * U);
     p.textSize(fh); const tw = p.textWidth(`$${name}$`), gap = 6 * U;
     let lx = len > 0 ? xt + gap : xt - gap - tw;
-    if (lx < 4 || lx + tw > TR.w - 4) lx = len > 0 ? x0 - gap - tw : x0 + gap;
+    if (lx < 4 || lx + tw > TR.w - 4) lx = len > 0 ? x - gap - tw : x + gap;   // no room beyond the tip: the label behind the tail
     lab(`$${name}$`, lx, y + fh * 0.35, 'l', col);
   }
   function arrow(x1_, y1_, x2_, y2_, col, sw) {
@@ -203,18 +205,16 @@ new p5((p) => {
     p.triangle(x2_, y2_, x2_ - hd * Math.cos(a - 0.42), y2_ - hd * Math.sin(a - 0.42), x2_ - hd * Math.cos(a + 0.42), y2_ - hd * Math.sin(a + 0.42));
   }
 
-  // --- the charts: momentum (signed, zero line in the middle) and kinetic energy, before and now, to one scale per run ---
-  function chart(kind, S, a1, a2) {
+  // --- momentum: signed bars (zero line in the middle) of glider 1, glider 2 and the total, before and now, one scale ---
+  function pChart(S, a1, a2) {
     p.noStroke(); p.fill(255); p.rect(0, 0, CH.w, CH.h);
-    p.stroke(220); p.strokeWeight(1); p.line(0, 0, CH.w, 0); if (!narrow && kind === 'E') p.line(0, 0, 0, CH.h);
-    const isP = kind === 'p';
-    lab(isP ? `$p\\ (\\text{kg}\\cdot\\text{m/s})$` : `$E_\\text{k}\\ (\\text{J})$`, 10, CH.title, 'l', isP ? PURPLE : GREEN);
-    const zero = isP ? (CH.top + CH.bot) / 2 : CH.bot, span = isP ? (CH.bot - CH.top) / 2 : CH.bot - CH.top, sc = span / (isP ? Pscale : Escale);
-    const b0 = isP ? [P0.p1, P0.p2, P0.p1 + P0.p2] : [E0.e1, E0.e2, E0.e1 + E0.e2], bn = [a1, a2, a1 + a2];
-    const cols = isP ? [PURPLE_L, PURPLE_M, PURPLE] : [GREEN_L, GREEN_M, GREEN];
-    const names = isP ? ['p_1', 'p_2', 'p_\\text{kok}'] : ['E_1', 'E_2', 'E_\\text{kok}'];
+    p.stroke(220); p.strokeWeight(1); p.line(0, 0, CH.w, 0);
+    lab(`$p\\ (\\text{kg}\\cdot\\text{m/s})$`, 10, CH.title, 'l', PURPLE);
+    const zero = (CH.top + CH.bot) / 2, span = (CH.bot - CH.top) / 2, sc = span / (1.1 * B.P);
+    const groups = [[Pb.p1, Pb.p2, Pb.p1 + Pb.p2], [a1, a2, a1 + a2]], cols = [PURPLE_L, PURPLE_M, PURPLE];
+    const names = ['p_1', 'p_2', `p_\\text{${__('kok')}}`];
     const gw = CH.w / 2, bw = Math.min(34 * U, gw / 5);
-    [b0, bn].forEach((vals, g) => {
+    groups.forEach((vals, g) => {
       const xs = [0.2, 0.5, 0.8].map((f) => g * gw + f * gw);
       vals.forEach((v, i) => {
         const hgt = Math.max(-span, Math.min(span, v * sc));
@@ -224,7 +224,30 @@ new p5((p) => {
       lab(g === 0 ? `$\\text{${__('ennen')}}$` : `$\\text{${__('nyt')}}$`, g * gw + gw / 2, CH.glab, 'c', MUTEDC);
     });
     p.stroke(...INKC); p.strokeWeight(1.5 * U); p.line(8, zero, CH.w - 8, zero);
+    p.noStroke(); lab('$+$', 4, CH.top + fh * 0.4, 'l', MUTEDC); lab('$-$', 4, CH.bot, 'l', MUTEDC);
     p.stroke(220); p.strokeWeight(1); p.line(CH.w / 2, CH.top, CH.w / 2, CH.bot);
+  }
+
+  // --- energy: one stacked column before and one now, E_k + E_p + E_sis, one scale; the starting total dashed ---
+  function eChart(S, E) {
+    p.noStroke(); p.fill(255); p.rect(0, 0, CH.w, CH.h);
+    p.stroke(220); p.strokeWeight(1); p.line(0, 0, CH.w, 0); if (!narrow) p.line(0, 0, 0, CH.h);
+    lab(`$E\\ (\\text{J})$`, 10, CH.title, 'l', EK);
+    const span = CH.bot - CH.top, sc = span / (1.1 * B.E), bw = Math.min(46 * U, CH.w * 0.15);
+    const Ek0 = 0.5 * S.m1 * S.v1 ** 2 + 0.5 * S.m2 * S.v2 ** 2;
+    const cols = [[Ek0, S.E0 - Ek0, 0], [E.Ek, E.Ep, E.Esis]], xs = [CH.w * 0.2, CH.w * 0.45];
+    cols.forEach((vals, g) => {
+      let y = CH.bot;
+      vals.forEach((v, i) => { const hgt = Math.max(0, v) * sc; if (hgt > 0.2) { p.noStroke(); p.fill(...[EK, EP, ESIS][i]); p.rect(xs[g] - bw / 2, y - hgt, bw, hgt); } y -= hgt; });
+      lab(g === 0 ? `$\\text{${__('ennen')}}$` : `$\\text{${__('nyt')}}$`, xs[g], CH.name, 'c', MUTEDC);
+    });
+    const yT = CH.bot - S.E0 * sc;                                       // the starting total: the "now" column reaches it
+    p.stroke(...INKC); p.strokeWeight(1.2 * U); p.drawingContext.setLineDash([5 * U, 4 * U]);
+    p.line(xs[0] - bw / 2 - 4 * U, yT, xs[1] + bw / 2 + 4 * U, yT); p.drawingContext.setLineDash([]);
+    p.stroke(...INKC); p.strokeWeight(1.5 * U); p.line(8, CH.bot, CH.w * 0.6, CH.bot);
+    // the legend: one swatch and symbol per form of energy
+    const lx = CH.w * 0.66, rows = [[EK, '$E_\\text{k}$'], [EP, '$E_\\text{p}$'], [ESIS, `$E_\\text{${__('sis')}}$`]];
+    rows.forEach(([c, t], i) => { const y = CH.top + 10 * U + i * fh * 2; p.noStroke(); p.fill(...c); p.rect(lx, y - fh * 0.7, fh, fh); lab(t, lx + fh * 1.5, y + fh * 0.1, 'l', INKC); });
   }
 
   // every canvas text: its ink box pushed to simState.labels (canvas coordinates)

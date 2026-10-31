@@ -335,7 +335,7 @@ Kappaleet **kohtaavat**, kun ne ovat samassa paikassa samalla hetkellä eli $x_\
 
 Kuvassa kappale A lähtee paikasta $0\,\text{m}$ ja B paikasta $60\,\text{m}$, ja ne liikkuvat vastakkain. Kun kappaleiden paikat on merkitty samalle akselille, näkee heti, kumpi on missäkin ja miten niiden välimatka muuttuu. Kohtaamishetkellä välimatka on nolla.
 
-$(t,x)$-kuvaajassa kumpikin liike on oma viivansa samassa koordinaatistossa. Kohtaaminen on viivojen leikkauspiste: sen vaakakoordinaatti on kohtaamishetki ja pystykoordinaatti kohtaamispaikka. Kuvaajasta nähdään myös, kumpi kappale on edellä milloinkin: se, jonka viiva on ylempänä.
+$(t,x)$-kuvaajassa kumpikin liike on oma viivansa samassa koordinaatistossa. Kohtaaminen on viivojen leikkauspiste: sen vaakakoordinaatti on kohtaamishetki ja pystykoordinaatti kohtaamispaikka. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kohtaamishetkellä kappaleiden kuvaajat leikkaavat toisensa. Kumpi kappale on edellä, riippuu myös liikkeen suunnasta: kun kappaleet liikkuvat $x$-akselin positiiviseen suuntaan, ylempänä oleva viiva kuuluu edellä olevalle kappaleelle. Negatiiviseen suuntaan liikuttaessa edellä on se kappale, jonka viiva on alempana.
 
 <svg data-fig="kohtaus" viewBox="0 0 600 350" role="img" aria-label="(t,x)-kuvaaja mittakaavassa kahdesta tasaisesta liikkeestä. Kappale A lähtee paikasta 0 m ja kulkee nopeudella 3,0 m/s: suora nousee. Kappale B lähtee paikasta 60 m nopeudella −2,0 m/s: suora laskee. Suorat leikkaavat pisteessä, jossa t = 12 s ja x = 36 m. Katkoviivat johtavat pisteestä akseleille." style="max-width:100%;font-size:24px">
   <line x1="186" y1="300" x2="186" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

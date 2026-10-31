@@ -1,0 +1,21 @@
+{
+  "id": "fy4-1",
+  "course": "FY4",
+  "title": "Position, velocity and uniform motion as graphs",
+  "goals": [
+    "LOPS FY4: uniform rectilinear motion",
+    "LOPS FY4: can produce and analyse graphical representations of measurement data",
+    "Skills: vector quantities and the use of vector notation"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "paikka",
+    "siirtymä",
+    "nopeus",
+    "keskinopeus",
+    "(t,x)-kuvaaja"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

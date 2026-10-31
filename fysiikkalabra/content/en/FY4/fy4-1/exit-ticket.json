@@ -1,0 +1,14 @@
+[
+  {
+    "q": "A cart is first at the position $x = 5\\,\\text{m}$ and then at the position $x = -3\\,\\text{m}$. Calculate the component of the displacement $\\Delta x$ with its sign and tell what the sign says about the direction of the displacement vector $\\Delta\\overline{x}$.",
+    "a": "$\\Delta x = x_2 - x_1 = -3\\,\\text{m} - 5\\,\\text{m} = -8\\,\\text{m}$. As a vector the displacement is $\\Delta\\overline{x}$, whose $x$-component is $-8\\,\\text{m}$ and whose length is $|\\Delta\\overline{x}| = 8\\,\\text{m}$. The negative sign means that the vector points in the negative direction of the $x$-axis."
+  },
+  {
+    "q": "The $(t, x)$ graphs of three carts are straight lines. One rises more steeply than another, and the third falls. What can be concluded from the graphs about the velocities?",
+    "a": "The slope is the velocity. A more steeply rising line belongs to a greater velocity in the positive direction. The slope of a falling line is negative, so the third cart moves in the negative direction."
+  },
+  {
+    "q": "You walk $100\\,\\text{m}$ east along a straight street and return the same distance back to the starting point. What are the distance travelled, the displacement and the average velocity?",
+    "a": "The distance is $200\\,\\text{m}$, the displacement is 0 and the average velocity is $v_\\text{avg} = \\Delta x / \\Delta t = 0$. The displacement depends only on the initial and final positions, not on the route."
+  }
+]

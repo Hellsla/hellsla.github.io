@@ -3,6 +3,11 @@
 **Find:** the tension $T$ of the cord in $\text{N}$
 **Principle:** The lamp is at rest, so by Newton's second law the sum of the forces acting on it is zero.
 **Free-body diagram:** The lamp as a rectangle, $y$-axis up. The Earth and the cord act on the lamp: the weight $\overline{G}$ down and the tension $\overline{T}$ of the cord up along the cord. The arrows are equally long.
+```voimakuvio
+G 14,715
+T 14,715 ylös
+a 0
+```
 **Formula:** $T - mg = 0$, so $T = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $T = 1.5\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 14.715\,\text{N}$
@@ -25,6 +30,15 @@
 **Find:** the friction force $F_\mu$ from the wall in $\text{N}$
 **Principle:** The book is at rest, so the sum of the forces is zero both horizontally and vertically. The wall is vertical, so its normal force is horizontal and its friction force is vertical.
 **Free-body diagram:** The book as a rectangle, $x$ toward the wall and $y$ up. The force $\overline{F}$ of the hand toward the wall and the normal force $\overline{N}$ of the wall away from the wall, both horizontal. The weight $\overline{G}$ down and the friction force $\overline{F}_\mu$ of the wall up, because the book tends to slide down.
+```voimakuvio
+pinta 0
+F 20 0 työntö
+N 20 @oikea
+G 4,905
+F_mu 4,905 ylös @oikea
+a 0
+akselit 0
+```
 **Formula:** $y$: $F_\mu - mg = 0$, so $F_\mu = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\mu = 0.50\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 4.905\,\text{N}$
@@ -36,6 +50,12 @@
 **Find:** the normal force $N$ of the floor in $\text{N}$
 **Principle:** In uniform motion the acceleration is zero, so by Newton's second law the sum of the forces is zero even though the person is moving.
 **Free-body diagram:** The person as a rectangle, $y$-axis up. The weight $\overline{G}$ down and the normal force $\overline{N}$ of the floor up, equally long. The velocity is not drawn as a force.
+```voimakuvio
+pinta 0
+G 637,65
+N 637,65
+a 0
+```
 **Formula:** $N - mg = 0$, so $N = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $N = 65\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 637.65\,\text{N}$
@@ -47,6 +67,11 @@
 **Find:** the horizontal component $T_x$ of the tension in $\text{N}$
 **Principle:** The force and its components form a right triangle whose hypotenuse is the force. The horizontal component is the leg adjacent to the angle $\alpha$.
 **Free-body diagram:** The force $\overline{T}$ of the rope as one solid arrow from the attachment point obliquely up at an angle of $40^\circ$, and the components $T_x$ and $T_y$ with dashed lines from the same point.
+```voimakuvio
+T 250 40
+akselit 0
+komponentit T
+```
 **Formula:** $T_x = T\cos\alpha$
 **Conversions:** The force is in newtons and the angle in degrees, so no conversions are needed; the calculator is in DEG mode.
 **Substitution:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191.5\,\text{N}$
@@ -58,6 +83,16 @@
 **Find:** the friction force $F_\mu$ from the snow in $\text{N}$
 **Principle:** In uniform motion the acceleration is zero, so the sum of the forces is zero also in the direction of motion: friction is equal to the horizontal component of the force of the rope.
 **Free-body diagram:** The sled as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down, the normal force $\overline{N}$ from the snow up and shorter than the weight, the tension $\overline{T}$ of the rope obliquely up and forward, and the friction force $\overline{F}_\mu$ from the snow backward. The component $T_x$ is dashed.
+```voimakuvio
+pinta 0
+G 147,15
+N 117,15
+T 60 30
+F_mu 51,96 vasen
+a 0
+akselit 0
+komponentit T
+```
 **Formula:** $x$: $T\cos\alpha - F_\mu = 0$, so $F_\mu = T\cos\alpha$
 **Conversions:** The force is in newtons, so no conversions are needed. The mass is not needed, because friction comes from the horizontal equation.
 **Substitution:** $F_\mu = 60\,\text{N}\cdot\cos 30^\circ = 51.96\,\text{N}$
@@ -69,6 +104,12 @@
 **Find:** the normal force $N$ of the floor in $\text{N}$
 **Principle:** The person accelerates upward with the elevator, so the net force points up and by Newton's second law is $ma$.
 **Free-body diagram:** The person as a rectangle, $y$-axis up. The weight $\overline{G}$ down and the normal force $\overline{N}$ up, the normal force longer. The acceleration is drawn separately, not as a force.
+```voimakuvio
+pinta 0
+G 588,6
+N 660,6
+a ylös
+```
 **Formula:** $N - mg = ma$, so $N = m(g + a)$
 **Conversions:** The mass is in kilograms and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $N = 60\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.2\,\text{m/s}^2) = 60\,\text{kg}\cdot 11.01\,\text{m/s}^2 = 660.6\,\text{N}$
@@ -80,6 +121,16 @@
 **Find:** the acceleration $a$ of the box in $\text{m/s}^2$
 **Principle:** The box accelerates horizontally. By Newton's second law the sum of the horizontal force components is $ma$. The vertical equation is not needed, because friction is given.
 **Free-body diagram:** The box as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down, the normal force $\overline{N}$ from the floor up and longer than the weight, the force $\overline{F}$ of the handle obliquely down and forward, and the friction force $\overline{F}_\mu$ backward. The components $F_x$ and $F_y$ are dashed.
+```voimakuvio
+pinta 0
+G 392,4
+N 452,4
+F 120 -30 työntö @ylä
+F_mu 80 vasen
+a oikea
+akselit 0
+komponentit F
+```
 **Formula:** $x$: $F\cos\alpha - F_\mu = ma$, so $a = \dfrac{F\cos\alpha - F_\mu}{m}$
 **Conversions:** The forces are in newtons and the mass in kilograms, so the result comes directly in $\text{m/s}^2$.
 **Substitution:** $a = \dfrac{120\,\text{N}\cdot\cos 30^\circ - 80\,\text{N}}{40\,\text{kg}} = \dfrac{103.9\,\text{N} - 80\,\text{N}}{40\,\text{kg}} = 0.598\,\text{m/s}^2$
@@ -91,6 +142,12 @@
 **Find:** the magnitude $a$ of the acceleration of the sled in $\text{m/s}^2$
 **Principle:** The net force is the vector sum of the forces, and by Newton's second law it determines the acceleration. Vertically the weight and the normal force from the ice cancel each other.
 **Free-body diagram:** The sled as a rectangle seen from above, $x$ in the direction of the force $\overline{F}_1$ and $y$ in the direction of the force $\overline{F}_2$. Seen from the side, the weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long.
+```voimakuvio
+F_1 30 0
+F_2 40 90
+a 53,13
+akselit 0
+```
 **Formula:** $\Sigma F_x = F_1$ and $\Sigma F_y = F_2$, so $\Sigma F = \sqrt{F_1^2 + F_2^2}$. From Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m}$
 **Conversions:** The forces are in newtons and the mass in kilograms, so no conversions are needed.
 **Substitution:** $\Sigma F = \sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}$ and $a = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1.0\,\text{m/s}^2$
@@ -102,6 +159,13 @@
 **Find:** the normal force $N$ of the floor in $\text{N}$
 **Principle:** An elevator moving upward is slowing down, so its acceleration points down even though the velocity points up. By Newton's second law the net force points in the direction of the acceleration, that is down.
 **Free-body diagram:** The person as a rectangle, $y$-axis up. The weight $\overline{G}$ down and the normal force $\overline{N}$ up, the normal force shorter. The velocity $\overline{v}$ up (blue) and the acceleration $\overline{a}$ down (orange) are drawn beside the diagram as thin arrows, not as forces. The component of the acceleration is $a_y = -1.5\,\text{m/s}^2$.
+```voimakuvio
+pinta 0
+G 686,7
+N 581,7
+v ylös
+a alas
+```
 **Formula:** $N - mg = m a_y$, so $N = m(g + a_y)$
 **Conversions:** The mass is in kilograms and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 581.7\,\text{N}$
@@ -113,6 +177,14 @@
 **Find:** the friction force $F_\mu$ in $\text{N}$
 **Principle:** The speed of the stone changes uniformly, so the acceleration is $a = \dfrac{\Delta v}{\Delta t}$ (chapter *Acceleration and uniformly accelerated motion*). By Newton's second law the net force in the direction of motion is $ma$, and the only horizontal force is friction.
 **Free-body diagram:** The stone as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down, the normal force $\overline{N}$ of the ice up and the friction force $\overline{F}_\mu$ backward. There is no forward force, because the thrower is no longer touching the stone.
+```voimakuvio
+pinta 0
+G 186,39
+N 186,39
+F_mu 1,9 vasen
+v oikea
+a vasen
+```
 **Formula:** $a_x = \dfrac{v - v_0}{\Delta t}$ and $x$: $-F_\mu = m a_x$, so $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
 **Conversions:** The mass is in kilograms, the velocities in $\text{m/s}$ and the time in seconds, so no conversions are needed.
 **Substitution:** $F_\mu = \dfrac{19\,\text{kg}\cdot(2.0\,\text{m/s} - 0)}{20\,\text{s}} = 19\,\text{kg}\cdot 0.10\,\text{m/s}^2 = 1.9\,\text{N}$
@@ -124,8 +196,15 @@
 **Find:** the normal force $N$ of the ceiling in $\text{N}$
 **Principle:** The balloon is at rest, so by Newton's second law the sum of the forces is zero. The ceiling touches the balloon from above, so its normal force is perpendicular to the ceiling and pushes the balloon away from the ceiling, that is down.
 **Free-body diagram:** The balloon as a rectangle, $y$-axis up. Buoyancy $\overline{F}_\text{b}$ up, the weight $\overline{G}$ down and the normal force $\overline{N}$ of the ceiling down. The buoyancy arrow is as long as the weight and normal force arrows together. There is no air drag, because the balloon is not moving.
+```voimakuvio
+pinta 0
+F_noste 0,10 ylös
+G 0,03924
+N 0,06076 @ylä
+a 0
+```
 **Formula:** $F_\text{b} - mg - N = 0$, so $N = F_\text{b} - mg$
 **Conversions:** $m = 4.0\,\text{g} = 4.0 \cdot 0.001\,\text{kg} = 0.0040\,\text{kg}$
 **Substitution:** $N = 0.10\,\text{N} - 0.0040\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.10\,\text{N} - 0.03924\,\text{N} = 0.06076\,\text{N}$
-**Answer:** $0.061\,\text{N}$, two significant figures like the mass $4.0\,\text{g}$ and the buoyancy $0.10\,\text{N}$.
+**Answer:** $0.061\,\text{N} \approx 0.06\,\text{N}$. The normal force is a difference, and in a difference the number of decimals decides: the buoyancy $0.10\,\text{N}$ is known to a hundredth of a newton.
 **Reasonableness:** The buoyancy is larger than the weight, $0.039\,\text{N}$, so without the ceiling the balloon would rise. The ceiling stops it by pushing down exactly by the excess: $0.039\,\text{N} + 0.061\,\text{N} = 0.10\,\text{N}$. Here the normal force points down, not up.

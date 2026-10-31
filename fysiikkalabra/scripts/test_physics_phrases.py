@@ -24,8 +24,11 @@ CAUGHT = {   # the audit's original sentences (FY1–FY3, 2026-10-28)
     "all-fuels-co2": ["Kaikki polttoaineet tuottavat palaessaan hiilidioksidia."],
     "absolute-zero-stop": ["Absoluuttisessa nollapisteessä hiukkasten liike pysähtyy kokonaan."],
     "heat-direction": ["Lämpö siirtyy aina lämpimämmästä kappaleesta kylmempään."],
+    "higher-line-ahead": ["Kuvaajasta nähdään myös, kumpi kappale on edellä milloinkin: se, jonka viiva on ylempänä.",
+                          "Lukema $x_\\text{B} - x_\\text{A}$ on B:n etumatka: se on positiivinen, kun B on edellä, ja nolla kohtaamishetkellä."],   # fy4-12, 2026-10-30
 }
 PASSED = [   # their corrections and nearby right statements
+    "Lukema $x_\\text{B} - x_\\text{A}$ kertoo, kuinka paljon suurempi B:n paikkakoordinaatti on, ja se on nolla kohtaamishetkellä.",
     "Kun mittalaitteen asteikolta luetaan arvo, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä asteikkovälistä.",
     "Lukeman epävarmuus on siis pienempi kuin asteikkoväli, mutta mittauksen kokonaisepävarmuus voi olla tätä suurempi.",
     "Mittauspisteet eivät yleensä osu kaikki täsmälleen samalle suoralle.",
@@ -45,6 +48,8 @@ PASSED = [   # their corrections and nearby right statements
     "Absoluuttisessa nollapisteessäkään kaikki hiukkasten liike ei lakkaa.",
     "Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti lämpimämmästä kappaleesta kylmempään.",
     "Yleinen virhekäsitys: hyötysuhde on aina alle $100\\,\\%$.",
+    "Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia.",
+    "Kun kappaleet liikkuvat $x$-akselin positiiviseen suuntaan, ylempänä oleva viiva kuuluu edellä olevalle kappaleelle.",
 ]
 DISTRACTOR = '{"choices": [{"text": "Hyötysuhde on aina alle 100 %.", "feedback": "Ei. Hyötysuhde on enintään 100 %."}, {"text": "Enintään 100 %.", "correct": true, "feedback": "Oikein."}]}'
 TAUGHT = '{"choices": [{"text": "Hyötysuhde on aina alle 100 %.", "correct": true, "feedback": "Oikein."}]}'

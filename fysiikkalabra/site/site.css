@@ -506,6 +506,7 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
 /* a figure with the text it explains (build.py fig_rows): text first, its figure under it in the reading column, with
    room around it; side by side on a wide screen only when the two are about as tall (.fig-row.side) */
 .fig{margin:1.25rem 0 1.75rem}.fig svg{display:block;margin-inline:auto}
+.fig.fbd{margin:.6rem 0 1rem}.fig.fbd svg{max-width:min(100%,24rem)}   /* a drawn force diagram in a solution step (scripts/fbdspec.py) */
 .fig-row{max-width:var(--measure);margin:0 0 .5rem}
 .fig-row.stack .fig svg{max-width:min(100%,32rem)}
 .fig-row .fig-text>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}

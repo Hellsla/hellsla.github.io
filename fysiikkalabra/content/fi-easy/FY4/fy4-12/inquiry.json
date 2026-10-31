@@ -141,7 +141,7 @@
       "text": "Auto A ja pyöräilijä B liikkuvat samalla tiellä. Heidän paikkansa näkyvät yhdellä akselilla ja samassa $(t, x)$-kuvaajassa.",
       "howto": "Paina *Käynnistä* tai vedä *Hetki $t$* -liukusäädintä. Valitse myös *Tapaus*. Sininen nuoli näyttää nopeuden $\\overline{v}$ ja oranssi nuoli kiihtyvyyden $\\overline{a}$. Nuolen pituus kertoo suuruuden. Kuvaajan viiva piirtyy niille hetkille, joissa olet käynyt. Musta rengas ilmestyy kohtaamiseen, kun olet käynyt kohtaamishetkessä. Tapauksessa 5 kappale $\\text{A}$ on bussi ja kappale $\\text{B}$ juoksija.",
       "model": "Arvot ovat simulaation laskemia mallin arvoja. Ne eivät ole mittauksia. Kappaleet liikkuvat suoraa tietä pitkin vakiokiihtyvyydellä ($a = 0$ tasaisessa liikkeessä). Ne ovat pisteitä, ja ne kulkevat toistensa läpi. Kitkaa ja ilmanvastusta ei huomioida. Kiihtyvyys saa arvonsa heti lähdössä.",
-      "calc": "Kummankin kappaleen paikka lasketaan kaavalla $x = x_0 + v_0 t + \\tfrac12 a t^2$ ja nopeus kaavalla $v = v_0 + a t$. Kappaleet kohtaavat hetkellä, jolloin $x_\\text{A} = x_\\text{B}$. Lukema $x_\\text{B} - x_\\text{A}$ on B:n etumatka. Se on positiivinen, kun B on edellä, ja nolla kohtaamishetkellä."
+      "calc": "Kummankin kappaleen paikka lasketaan kaavalla $x = x_0 + v_0 t + \\tfrac12 a t^2$ ja nopeus kaavalla $v = v_0 + a t$. Kappaleet kohtaavat hetkellä, jolloin $x_\\text{A} = x_\\text{B}$. Lukema $x_\\text{B} - x_\\text{A}$ kertoo, kuinka paljon suurempi B:n paikkakoordinaatti on. Se on nolla kohtaamishetkellä. Kun kappaleet liikkuvat positiiviseen suuntaan, se on B:n etumatka."
     },
     {
       "id": "exp-1",
@@ -187,8 +187,8 @@
         "tolerance": 0.02,
         "hints": [
           "Kohtaamishetkellä kappaleet ovat samassa paikassa. Minkä hetken rivillä sarake $x_\\text{B} - x_\\text{A}$ on nolla?",
-          "Etumatka $x_\\text{B} - x_\\text{A}$ pienenee joka sekunti saman verran, kunnes se on nolla. Kuvaajassa viivat leikkaavat samassa kohdassa.",
-          "Etumatka on aluksi $60\\,\\text{m}$ ja pienenee $6{,}0\\,\\text{m}$ sekunnissa, joten se on nolla hetkellä $10\\,\\text{s}$. Lue paikka tämän hetken rivillä."
+          "Paikkojen ero $x_\\text{B} - x_\\text{A}$ pienenee joka sekunti saman verran, kunnes se on nolla. Kuvaajassa viivat leikkaavat samassa kohdassa.",
+          "Paikkojen ero on aluksi $60\\,\\text{m}$ ja pienenee $6{,}0\\,\\text{m}$ sekunnissa, joten se on nolla hetkellä $10\\,\\text{s}$. Lue paikka tämän hetken rivillä."
         ],
         "mistakes": [
           {
@@ -200,7 +200,7 @@
             "feedback": "Tämä on kohtaamishetki sekunteina. Kysyttiin paikkaa. Lue paikkasarake samalta riviltä."
           }
         ],
-        "solution": "**Annettu:** taulukosta hetkellä $t = 10\\,\\text{s}$ kappaleiden paikat $x_\\text{A} = 50\\,\\text{m}$ ja $x_\\text{B} = 50\\,\\text{m}$; etumatka $x_\\text{B} - x_\\text{A} = 0$\n\n**Kysytty:** kohtaamispaikka $x$ yksikössä $\\text{m}$\n\n**Periaate:** Kappaleet kohtaavat, kun ne ovat samassa paikassa samalla hetkellä eli $x_\\text{A} = x_\\text{B}$. Taulukossa se on rivi, jolla etumatka on nolla. Kohtaamispaikka luetaan samalta riviltä.\n\n**Kaava:** $x_\\text{A} = x_\\text{B}$, eli $10 + 4{,}0\\,t = 70 - 2{,}0\\,t$. Ajaksi tulee $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4{,}0\\,\\text{m/s} + 2{,}0\\,\\text{m/s}}$, ja paikaksi $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{60\\,\\text{m}}{6{,}0\\,\\text{m/s}} = 10\\,\\text{s}$ ja $x = 10\\,\\text{m} + 4{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Vastaus:** $50\\,\\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** B:n paikka on $70\\,\\text{m} - 2{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, sama kuin A:n. Kohtaamispaikka on alkupaikkojen $10\\,\\text{m}$ ja $70\\,\\text{m}$ välissä. A on kulkenut $40\\,\\text{m}$ ja B $20\\,\\text{m}$. B on kulkenut kaksi kertaa lyhyemmän matkan, koska B on kaksi kertaa hitaampi."
+        "solution": "**Annettu:** taulukosta hetkellä $t = 10\\,\\text{s}$ kappaleiden paikat $x_\\text{A} = 50\\,\\text{m}$ ja $x_\\text{B} = 50\\,\\text{m}$; paikkojen ero $x_\\text{B} - x_\\text{A} = 0$\n\n**Kysytty:** kohtaamispaikka $x$ yksikössä $\\text{m}$\n\n**Periaate:** Kappaleet kohtaavat, kun ne ovat samassa paikassa samalla hetkellä eli $x_\\text{A} = x_\\text{B}$. Taulukossa se on rivi, jolla paikkojen ero on nolla. Kohtaamispaikka luetaan samalta riviltä.\n\n**Kaava:** $x_\\text{A} = x_\\text{B}$, eli $10 + 4{,}0\\,t = 70 - 2{,}0\\,t$. Ajaksi tulee $t = \\dfrac{70\\,\\text{m} - 10\\,\\text{m}}{4{,}0\\,\\text{m/s} + 2{,}0\\,\\text{m/s}}$, ja paikaksi $x = x_{0\\text{A}} + v_\\text{A}\\,t$\n\n**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = \\dfrac{60\\,\\text{m}}{6{,}0\\,\\text{m/s}} = 10\\,\\text{s}$ ja $x = 10\\,\\text{m} + 4{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$\n\n**Vastaus:** $50\\,\\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** B:n paikka on $70\\,\\text{m} - 2{,}0\\,\\text{m/s} \\cdot 10\\,\\text{s} = 50\\,\\text{m}$, sama kuin A:n. Kohtaamispaikka on alkupaikkojen $10\\,\\text{m}$ ja $70\\,\\text{m}$ välissä. A on kulkenut $40\\,\\text{m}$ ja B $20\\,\\text{m}$. B on kulkenut kaksi kertaa lyhyemmän matkan, koska B on kaksi kertaa hitaampi."
       }
     },
     {

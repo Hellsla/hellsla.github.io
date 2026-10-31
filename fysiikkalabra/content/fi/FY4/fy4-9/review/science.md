@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: de5a6232952666b9
+CONTENT-HASH: 47b36b1d0f3d0d64
 
 ## Blocking
 
 ## Polish
-- inquiry.json:497 (check-3 model), :492, lesson.md:386 — "putoaa samalta korkeudelta, joten osuu … samalla nopeudella": a high-jump mattress top is ~0,5–0,7 m above the ground, so the jumper actually lands on it more slowly (which only helps). The hook states equal speed as a premise, so not an error — fix: "oletetaan, että hyppääjä osuu kumpaankin alustaan samalla nopeudella" in the model answer, or "(patjan paksuus jätetään huomiotta)".
-- lesson.md:489 vs :550 — F_ka is defined as |Δp|/Δt (a magnitude), but the worked example uses the signed m(v − v0)/Δt and says "Voima on positiivinen" — fix: say in the example that the sign comes from Δp, or define F_ka = Δp/Δt and its magnitude separately.
-- lesson.md:559, :566 — "Muutos on 2mv" while Kaava (:514) gives Δp = −2mv — fix: "muutoksen suuruus on 2mv".
+- lesson.md:492 — "Suurin voima on aina keskimääräistä suurempi" leaves out the case it fails: a constant force has a peak equal to its mean. — Say "Kun voima muuttuu, suurin voima on keskimääräistä suurempi" if you touch the line.
 
 ## Checked
-- Every lesson/inquiry number recomputed in one script with my own formulas (SHM model: Δt = π/2·√(m/k), F_max = v√(mk), bounce Δt = π√(m/k)): exp-1/2/3, predictions, conclusion model, retrieval, Etsi virhe, siirto (+ all 3 mistakes, 400 N, ≈8 kg), check-2 (12 m/s, 24, 5,4, 12 000, 450 N), check-1, worked example (3,48; 870 N; 0,57 N; ×1500; 145 N): all agree.
-- Figures to scale: liikemaara (v and p arrow ratios 20:1,5 and 1:1:½), pysaytys (0,0393 s/80 N, 0,157 s/20 N, quarter-sine with drop), kimpoaminen (Δp = 2p0), keskivoima (rectangle = 2/π of half-sine peak), tarkistus-kolmio (900 N, 6/12 ms).
-- sim.js: RK4 of F = kc, impulse from trapezoids of every step independent of Δp from velocities; crushable bumper stops at v = 0 (force ends), spring bumper releases at c = 0; graph range 0,5 s/120 N holds the extremes (0,444 s, 113 N; max compression 0,28 m < 0,32 m). Model box states limits (no friction, weight cancels, lossless spring).
-- Experiments isolate their varied parameter (locked m, v1, tormays / puskuri); simState gives dt, Fmax, I, v2, dp, p1.
-- Each choice item has exactly one correct option; every distractor feedback explains the error correctly.
-- Impulse principle derived from N2 for constant net force; variable force via area; conditions (net force, weight neglected in the example with numeric justification) stated.
-- Exit ticket: unit identity and braking-impulse direction/magnitude correct.
-- Scope: momentum, impulse, impulse principle within FY4 central contents; no conservation/collisions pre-empted wrongly.
+- Round-4 blocker fixed: inquiry.json:104 now says the crushable pulse rises smoothly to its peak half-way, is sine-shaped, and has a mean of about 0,64 F_max, not half. That matches 2/π = 0,6366, the calc box formula, the sim's curve and lesson-answers Fka (50,9/25,5/12,7 N). The en and fi-easy boxes say the same.
+- model.js:53 timing fix: the contact step now adds exactly dt. Final t equals (XB−XS)/v1 + Δt to 6 digits in 7 crushable runs (e.g. 0,479270 s for the hard bumper; it was 0,47937 before). Δt, I and the readout are unchanged.
+- The model.js:7 and :71 comments and the calc/sim-spec clause ("muovautuvan suoraan annetusta pulssista") are now correct.
+- Node model test passes (652 checks). Energy E_k + E_b = ½ m v1² holds with zero error through a crushable run.
+- My script reproduces exp-1 (0,0393/0,0785/0,157 s; 80,0/40,0/20,0 N; −2,00 N·s), exp-2 (−2,00/−4,00 N·s; v = −2,00 m/s), exp-3 (28,3/40,0/56,6 N; −1/−2/−4 N·s) and I = Δp in every run.
+- Limits: the largest crush is 0,222 m (crushable) and 0,283 m (spring), both under 0,32 m. The longest contact is 0,444 s, inside the 0,5 s axis. The largest force is 113 N, under 120 N.
+- I recomputed the worked example (3,48 kg·m/s, 870 N, weight ratio about 1500, sign-error 145 N), siirto (80 N; distractors 4,0/0,20/800; stiff hand 400 N, about 8 kg), check-2 (5,4 N·s, 12 m/s, 43 km/h, mean 450 N = half the peak of the triangle; distractors 24/5,4/12 000), kertaus 1,5 m/s, virhe −4,0 kg·m/s and check-1 ±120.
+- Every prediction and experiment question has exactly one correct option, and each distractor's feedback is right. The Johtopäätös "neljäsosa voimasta" holds.
+- Experiment setups lock m, v1 and the collision type or the bumper as intended. simState gives dt, Fmax, I, v2, dp and p1.
+- Theory, summary, opening answer (surface force = net force + weight) and exit ticket agree.

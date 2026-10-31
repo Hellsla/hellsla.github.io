@@ -1,23 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: de5a6232952666b9
+CONTENT-HASH: 47b36b1d0f3d0d64
 
 ## Blocking
 
+(none)
+
 ## Polish
-- lesson.md "Yleinen virhekäsitys" — "Muutos on $2mv$ eikä nolla" contradicts the earlier "$-2mv$" with the same sign convention — write "Muutoksen suuruus on $2mv$ eikä nolla" (or "$-2mv$").
-- inquiry.json exp-3 (optional, 390 px capture `fy4-9-exp-exp-3-390-1.png` is 316 px wide, the card border is missing on the right and text touches the edge) — check the optional experiment card is not clipped on a phone; no question follows exp-3, so add one line asking how $p_0$ and $I$ depend on $m$ if it stays.
-- inquiry.json siirto — "Pesäpallon sieppari ... räpylä" is baseball vocabulary; say "Pesäpalloa kiinniottava pelaaja pysäyttää pallon käsineellä" (or use baseball) so the context is authentic.
-- inquiry.json check-1 — the third distractor ("Kummankin liikemäärä on nolla") is implausible next to the first two; a sharper one is "Liikemäärät ovat samat, koska vauhdit ovat samat" already present, so replace it with "Vain toisella on liikemäärä, koska toinen liikkuu negatiiviseen suuntaan".
-- Hook paragraph and Ydinajatus both name the answer's key idea ("sama liikemäärän muutos"); this is gated behind the Teoriatiivistelmä stage, so acceptable, but the hook's "yhtä paljon" already hints at it.
+
+- inquiry.json exp-3 (rivi ~507) — kokeella 3 ei ole `question`-kenttää, vaikka intro kysyy "Miten impulssi riippuu massasta?"; opiskelija ei saa vastausta eikä palautetta (koe on valinnainen) — lisää lyhyt valintakysymys ($I$ on suoraan verrannollinen massaan, $F_\text{max}$ samoin).
+- inquiry.json exp-1/exp-2 "Vakiona/Muutetaan"-rivi (kuvakaappaus lab-1280-1) — lauseessa "Vakiona: massa $m$ , alkunopeus $v_0$, törmäys." jää tyhjä väli ennen pilkkua ja arvot puuttuvat; rivi näyttää keskeneräiseltä — tarkista, että nimet renderöityvät ilman ylimääräistä väliä.
+- inquiry.json simulaatio `model` — kappale on pitkä ja sisältää useita yksityiskohtia (sinipulssi, 0,64 F_max, jäykkyyssuhde 16); 17-vuotiaalle riittäisi kolme virkettä, loput `calc`-laatikkoon.
+- lesson.md "Vastaus alun kysymykseen" — kappale on tiivis; väite "painuu kymmenien senttimetrien matkalta" kannattaisi tukea yhdellä luvulla (esim. 30 cm vs. 3 cm), niin aikasuhde tulee konkreettiseksi.
 
 ## Checked
-- Path: prerequisites (Newton II, acceleration) used and cited; hook question answered in "Vastaus alun kysymykseen" after the investigation; scope is only liikemäärä and impulssi.
-- Ennusta before evidence: both predictions can be refuted by the table (exp-1 hard/soft, exp-2 stop/rebound); each wrong option's feedback repairs its misconception with the table's values.
-- Experiments lock the right parameters (390 px captures show "(vakio)" and greyed controls); Δp and I are computed independently, so exp-2 is a real test of the impulse principle.
-- Simulation at 390 px: canvas, graph, controls and readout fit, labels understandable, model boxes behind named disclosures.
-- Figures 1-6 legible at 390 px; colour never alone (solid/dashed, labels); fig-6 (check-2) gives data without the answer; hero is recognisable, uncluttered and teaches (bar, mat, path).
-- Worked example staged one step per stage, with unit conversion, sign choice and a sanity check that names the unit and sign error.
-- Exit ticket tests the core (unit equality, impulse independent of braking time); check-3 criteria are observable.
-- Workload about one lesson: 2 predictions, 2 core experiments, rest optional.
-- Finnish and glossary terms (liikemäärä, impulssi, impulssiperiaate) correct.
-- Hash unchanged at end.
+
+- Polku: kertaus (F=ma) → ennusteet → simulaatio → kokeet → teoria → esimerkki → siirto; vain liikemäärä ja impulssi, ei törmäysten säilymislakia. Alun kysymys vastataan vasta teoriassa, kun opiskelija on sitoutunut.
+- Ennusteet 1 ja 2 ovat kumottavissa kokeiden 1 ja 2 mittauksilla; väärien vaihtoehtojen palaute korjaa väärinkäsityksen (impulssi pienenee, kimpoamisessa ei impulssia).
+- Simulaatio on mielekäs: kova/pehmeä puskuri, pysähtyminen/kimpoaminen; impulssi (pinta-ala) ja Δp (nopeuksista) lasketaan erikseen, joten yhtäsuuruus on todiste, ei laskennan toisto. Mallin oletukset ilmoitettu.
+- Kuvat (fig-3, fig-6, hero) luettavissa 390 px:ssä; väri ei yksin kanna merkitystä (kova/pehmeä nimetty, katkoviiva); fig-3:n teksti ei paljasta impulssin arvoa ennen ennustetta teoriavaiheessa.
+- Check-2:n kuva on välttämätön vastaamiseen (huippuarvo ja kesto vain kuvaajassa); vihjeet etenevät kolmeen vaiheeseen; mistakes-arvot (24, 5,4, 12000) vastaavat todellisia virheitä.
+- Esimerkki: yksi vaihe kerrallaan, etumerkkivalinta perusteltu, järkevyystarkistus (paino ≈ 0,57 N, virheellinen 145 N); laskut tarkistettu (870 N).
+- Siirto (80 N) ja ratkaisu seurattavissa; paino ei vaikuta vaakasuuntaan perusteltu.
+- Check-1 vastavaihtoehdot ovat käsitepohjaisia; check-3:n kriteerit ovat havaittavia ja vastaavat kysymystä.
+- Suomi: "80 N:n" -taivutus, termit (liikemäärä, impulssi, impulssiperiaate) sanaston mukaisia; ei virheitä löytynyt.
+- Puhelin 390 px: simulaation ohjaimet ja lukemat ymmärrettävät; 1280 px:n asettelu selkeä.

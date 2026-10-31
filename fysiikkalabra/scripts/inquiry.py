@@ -341,13 +341,18 @@ def choice_html(a, md, lid, aid):
             f'{pending}<output aria-live="polite"></output></fieldset>')
 
 
+def answer_label(unit):
+    """An answer field's accessible name: "Vastaus yksikössä m/s²" (the question describes it, aria-describedby)."""
+    return T("inquiry.answer_in", unit=unit) if unit.strip() else T("inquiry.answer")
+
+
 def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
-    return (f'<div class="numeric">{task_text(inline(md, a["prompt"]))}{fig_of(a)}'
+    return (f'<div class="numeric">{task_text(inline(md, a["prompt"]), pid=f"{aid}-q")}{fig_of(a)}'
             f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
-            f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{T("inquiry.answer")}" placeholder="?">'
+            f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(answer_label(a.get("unit", "")))}" aria-describedby="{esc(aid)}-q" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
             f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
 
@@ -511,11 +516,12 @@ def legend_html(html):
     return f'<span class="scenario">{sp[0]}</span><span class="ask">{sp[1]}</span>' if sp else html
 
 
-def task_text(html, cls="task"):
-    """A task's prompt as <p class="task">, or as the situation and the question when it is long (split_prompt)."""
-    sp = split_prompt(html)
-    if not sp: return f'<p class="{cls}">{html}</p>'
-    return f'<p class="{cls} scenario">{sp[0]}</p><p class="{cls} ask">{sp[1]}</p>'
+def task_text(html, cls="task", pid=None):
+    """A task's prompt as <p class="task">, or as the situation and the question when it is long (split_prompt).
+    pid: an id on the question, so that an answer field can be described by it (aria-describedby)."""
+    sp = split_prompt(html); idattr = f' id="{esc(pid)}"' if pid else ""
+    if not sp: return f'<p class="{cls}"{idattr}>{html}</p>'
+    return f'<p class="{cls} scenario">{sp[0]}</p><p class="{cls} ask"{idattr}>{sp[1]}</p>'
 
 
 def toc_link(sid, n, title):

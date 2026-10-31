@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 472153eecae20724
+CONTENT-HASH: 99e2b107951ed66f
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-Read the en exercise texts and solutions for natural phrasing and level order (1-3); each task keeps its unit and conversion hints (kN, km/h, ms, g).
-Solutions are complete in all stages and keep the reasonableness checks (braking force about half the car's weight, belt force 14 times the passenger's weight).
-No Finnish left; no changes needed.
+Read the level 1-3 exercises and complete model solutions in en as a student would. Same order, levels, figure, sign instruction (positive direction chosen towards the wall in L2-03 and L3-03) and reasonableness checks as the Finnish; no hints or steps added or removed. The change in sign handling (signed change in momentum and impulse versus asking for the magnitude) is taught consistently with the revised lesson. The English reads naturally. check_i18n.py and the layout checks are clean. Nothing needed fixing.

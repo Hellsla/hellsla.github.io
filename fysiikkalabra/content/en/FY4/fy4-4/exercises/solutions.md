@@ -33,6 +33,14 @@
 **Find:** the acceleration $a$ of the box in $\text{m/s}^2$
 **Principle:** By Newton's second law the acceleration is determined by the net force, not by the pulling force alone. In the vertical direction the box does not accelerate, so the vertical forces cancel and the net force is horizontal.
 **Free-body diagram:** The box as a rectangle, the positive direction the direction of the pull. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the floor points up from the bottom surface, equally long. The pulling force $\overline{F}$ points forward and the friction force $\overline{F}_\mu$ from the floor points backward from the back corner of the bottom surface, shorter than the pulling force.
+```voimakuvio
+pinta 0
+G 117,72
+N 117,72
+F 38 oikea
+F_mu 20 vasen
+a oikea
+```
 **Formula:** In the horizontal direction $F - F_\mu = ma$, so $a = \dfrac{F - F_\mu}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{38\,\text{N} - 20\,\text{N}}{12\,\text{kg}} = \dfrac{18\,\text{N}}{12\,\text{kg}} = 1.5\,\text{m/s}^2$
@@ -44,6 +52,11 @@
 **Find:** the tension $T$ in the rope in $\text{N}$
 **Principle:** In uniform motion the acceleration is zero, so by Newton's second law the net force is zero even though the bucket is moving.
 **Free-body diagram:** The bucket as a rectangle, the positive direction up. The tension $\overline{T}$ of the rope points up from the top surface and the weight $\overline{G}$ points down from the centre, equally long. The velocity is not drawn as a force.
+```voimakuvio
+T 78,48 ylös
+G 78,48
+a 0
+```
 **Formula:** $T - mg = 0$, so $T = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $T = 8.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 78.48\,\text{N}$
@@ -65,6 +78,11 @@
 **Find:** the tension $T$ in the supporting rope in $\text{N}$
 **Principle:** The elevator accelerates downward, so by Newton's second law the net force points down and equals $ma$. The weight is therefore greater than the force of the rope.
 **Free-body diagram:** The elevator car with its passengers as a rectangle, the positive direction down, the direction of the acceleration. The weight $\overline{G}$ points down from the centre and the tension $\overline{T}$ of the rope points up from the top surface, shorter than the weight. The acceleration is marked separately, not as a force.
+```voimakuvio
+G 8829
+T 7479 ylös
+a alas
+```
 **Formula:** $mg - T = ma$, so $T = m(g - a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $T = 900\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 7479\,\text{N}$
@@ -76,6 +94,12 @@
 **Find:** the tension $T$ in the rope in $\text{N}$
 **Principle:** The load moves down but slows down, so its acceleration points up. By Newton's second law the net force points in the direction of the acceleration, that is up, so the force of the rope is greater than the weight.
 **Free-body diagram:** The load as a rectangle, the positive direction up. The tension $\overline{T}$ of the rope points up from the top surface, longer than the weight, and the weight $\overline{G}$ points down from the centre. The downward velocity and the upward acceleration are marked separately next to the diagram.
+```voimakuvio
+T 1297,2 ylös
+G 1177,2
+a ylös
+v alas
+```
 **Formula:** The magnitude of the acceleration is $a = \dfrac{|v - v_0|}{\Delta t}$ upward, and $T - mg = ma$, so $T = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{2.0\,\text{m/s}}{2.0\,\text{s}} = 1.0\,\text{m/s}^2$ and $T = 120\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 1297.2\,\text{N}$
@@ -87,6 +111,14 @@
 **Find:** the acceleration $a$ of the cart in $\text{m/s}^2$
 **Principle:** The acceleration is determined by the net force. Forces in opposite directions are subtracted from each other, and in the vertical direction the weight and the normal force from the ground cancel.
 **Free-body diagram:** The cart as a rectangle, the positive direction the direction of the greater pull. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ points up from the bottom surface, equally long. The force of the rope $\overline{F}_\text{a}$ points forward from one side and $\overline{F}_\text{b}$ points backward from the other side, shorter.
+```voimakuvio
+pinta 0
+G 294,3
+N 294,3
+F_a 60 oikea
+F_b 45 vasen
+a oikea
+```
 **Formula:** $F_\text{a} - F_\text{b} = ma$, so $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{60\,\text{N} - 45\,\text{N}}{30\,\text{kg}} = \dfrac{15\,\text{N}}{30\,\text{kg}} = 0.50\,\text{m/s}^2$
@@ -98,6 +130,12 @@
 **Find:** the acceleration $a$ of the elevator (and the student) in $\text{m/s}^2$ and its direction
 **Principle:** The scale does not measure mass but the normal force with which it pushes on the student. The student accelerates with the elevator, so by Newton's second law the difference between the normal force and the weight is $ma$.
 **Free-body diagram:** The student as a rectangle, the positive direction up. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the scale points up from the bottom surface. The reading is smaller than the mass, so $\overline{N}$ is shorter than $\overline{G}$ and the net force points down.
+```voimakuvio
+pinta 0
+G 588,6
+N 529,74
+a alas
+```
 **Formula:** $N - mg = ma$, so $a = \dfrac{N - mg}{m}$
 **Conversions:** The reading of the scale is converted to a force: $N = 54.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 529.74\,\text{N}$.
 **Substitution:** $a = \dfrac{529.74\,\text{N} - 60.0\,\text{kg}\cdot 9.81\,\text{m/s}^2}{60.0\,\text{kg}} = \dfrac{529.74\,\text{N} - 588.6\,\text{N}}{60.0\,\text{kg}} = -0.981\,\text{m/s}^2$
@@ -119,6 +157,13 @@
 **Find:** the time $\Delta t$ in $\text{s}$ after which the sled stops
 **Principle:** The sled is neither pulled nor pushed, so the only horizontal force is the friction, which points against the motion. The friction is constant, so by Newton's second law the deceleration is constant, and the stopping time follows from the change in velocity.
 **Free-body diagram:** The sled and the child as a rectangle, the positive direction the direction of motion. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the snow points up from the bottom surface, equally long. The friction force $\overline{F}_\mu$ from the snow points backward from the back corner of the bottom surface. There is no force pushing forward.
+```voimakuvio
+pinta 0
+G 294,3
+N 294,3
+F_mu 18 vasen
+a vasen
+```
 **Formula:** $-F_\mu = ma$ and $a = \dfrac{v - v_0}{\Delta t}$, so $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4.0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6.67\,\text{s}$

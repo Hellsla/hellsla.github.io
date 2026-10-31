@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 479fb8e6c72f07ad
+CONTENT-HASH: 78c0faf56737d1db
 
-Round 3 (only change since round 2: "Hyväksytään myös" e now says μ_A 0,022 to 0,026, which resolves polish 1 below; round 2 was PASS).
+Delta review: since the last PASS the diff is one ```voimakuvio block (solutions.md, fy4-s1 c-step "Voimakuvio:"), the only "Voimakuvio:" step in the file apart from the b-step's hand-made figure. Nothing else changed, so the earlier judgement of the three tasks, rubrics and variety stands.
 
 ## Blocking
 None.
 
 ## Polish
-1. Resolved in round 3: the accepted μ_A range in "Hyväksytään myös" (e) is now 0,022 to 0,026, consistent with a0 0,43 to 0,47.
-2. s1 is 19 p with two hand-drawn graphs and a force diagram, the heaviest task; acceptable for 2 op.
-3. Earlier polish on s2 and s3 still stands.
+- The to-scale diagram at 4,0° (390 px render) is hard to read. G_y lies on top of G and G_x is a stub under the weight arrow, so the dashed components do not show that "G_x is larger than friction"; the G_x label sits at the body's right edge, away from its arrow. Friction (21 N) is drawn longer than scale (alt text says so) but the rest of the figure then looks as if friction ≈ G_x. The b-step's exaggerated model figure teaches the same point better. Consider dropping `komponentit G` from this block, or saying in one sentence that the 4° slope makes the components short and the picture is to scale.
+- The block uses only wax A's friction (21 N), but c) asks for both A and B. Add "(voide A)" to the sentence, or leave friction unlabelled by value; the page shows no numbers, so this is only a wording matter for a reader of the source.
+- The c-step now shows a second diagram right after the first ("b-kohdan kuvio"); the sentence could say "samassa mitoituksessa kuin b-kohdassa, nyt mittakaavassa" so the student sees why it is drawn again.
 
 ## Checked
-- source_note now says the first table has constant acceleration and the second a falling acceleration because of air resistance: the contradiction of round 1 is gone.
-- e rubric: graph_read is now only reading a0 at v = 0; error_sources holds μ_A, the size of the systematic error against 0,002 and 0,015, and "toistaminen ei poista". Each point is observable and does not duplicate d, which is qualitative.
-- Part e text still names neither the model nor the method. The solution says "noin viidesosa c-kohdan arvosta" (0,006 of 0,030), correct.
-- practice.py check OK; hash 479fb8e6c72f07ad.
+- practice.py check OK; fbdspec.py check: every Voimakuvio step drawn.
+- Spec physics: G = 72 kg·9,81 = 706 N; N = G cos 4° = 704,6 N; friction = G sin 4° − m·0,39 = 21,2 N up the slope; a down the slope, forces sum that way.
+- Diagram comes before any equation in the step; accessible text alternative present and honest about scale.
+- Does not give away the task: it sits in the solution, after the student's own drawing in b).
+- Rendered the preview at 390 px; the figure fits and is legible apart from the points above.

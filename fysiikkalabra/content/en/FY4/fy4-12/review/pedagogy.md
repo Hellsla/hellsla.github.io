@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bd2a29b9e4da0406
+CONTENT-HASH: d106b742cf4e3a8f
 
 ## Blocking
 
 ## Polish
+- (none)
 
 ## Checked
-Judged the English as a learner's text against the Finnish: the Pohdinta to Sovella sequence, predictions before evidence, hints and common-mistake feedback are all present and in the same order; the learn goals complete "In this lesson, you will learn to"; wording is natural, not word-for-word Finnish.
-No text wall (paragraphs unchanged in length), staged worked example with seven stages, figures in the same places.
-No changes needed on pedagogy grounds.
+- The new en passage reads naturally in the same order as the Finnish (graph meaning, intersection, direction rule). Step labels, "case" label and chapter names unchanged.
+- Teaching order, hints and the Koe 1 solution stages are unchanged; the neutral wording in the hints avoids the false reading that the gap must be positive. Hash after the last edit: d106b742cf4e3a8f.

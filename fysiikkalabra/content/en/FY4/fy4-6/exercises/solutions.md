@@ -3,6 +3,12 @@
 **Find:** the weight on the surface of the Moon $G$ in $\text{N}$
 **Principle:** Weight is the force with which a celestial body pulls an object, and its magnitude is the product of the mass and the acceleration of free fall. The mass is the same on the Moon as on Earth, but the acceleration of free fall is smaller on the Moon.
 **Free-body diagram:** The astronaut as a rectangle on the surface of the Moon: the weight $\overline{G}$ from the center down and the normal force $\overline{N}$ from the lower surface up, equally long. What is asked is the magnitude of the weight $mg_\text{Moon}$.
+```voimakuvio
+pinta 0
+G 259,2
+N 259,2
+a 0
+```
 **Formula:** $G = m g_\text{Moon}$
 **Conversions:** The mass is in kilograms and the acceleration in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $G = 160\,\text{kg}\cdot 1.62\,\text{m/s}^2 = 259.2\,\text{N}$
@@ -14,6 +20,15 @@
 **Find:** the kinetic friction $F_\mu$ in $\text{N}$
 **Principle:** The sled slides, so kinetic friction $F_\mu = \mu N$ acts on it. In the vertical direction the sled does not accelerate, so by Newton's second law the normal force equals the weight.
 **Free-body diagram:** The sled as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ from the center down, the normal force $\overline{N}$ of the snow from the lower surface up and equally long as the weight, the kinetic friction $\overline{F}_\mu$ from the rear corner of the lower surface backward. There is no force pushing forward.
+```voimakuvio
+pinta 0
+G 294,3
+N 294,3
+F_mu 35,32 vasen
+v oikea
+a vasen
+akselit 0
+```
 **Formula:** $y$: $N - mg = 0$, so $N = mg$ and $F_\mu = \mu N = \mu mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\mu = 0.12\cdot 30\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 35.316\,\text{N}$
@@ -25,6 +40,16 @@
 **Find:** the coefficient of kinetic friction $\mu$ (no unit)
 **Principle:** In uniform motion the sum of the forces is zero, so the kinetic friction equals the push and the normal force equals the weight. The kinetic friction is $F_\mu = \mu N$.
 **Free-body diagram:** The box as a rectangle, $x$ in the direction of motion and $y$ up. The pushing force $\overline{F}$ forward, the kinetic friction $\overline{F}_\mu$ backward and equally long, the weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long.
+```voimakuvio
+pinta 0
+G 392,4
+N 392,4
+F 120 oikea työntö
+F_mu 120 vasen
+v oikea
+a 0
+akselit 0
+```
 **Formula:** $x$: $F - \mu N = 0$ and $y$: $N - mg = 0$, so $\mu = \dfrac{F}{mg}$
 **Conversions:** The mass is in kilograms and the force in newtons, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{120\,\text{N}}{40\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{120\,\text{N}}{392.4\,\text{N}} = 0.3058$
@@ -36,6 +61,15 @@
 **Find:** the normal force $N$ in $\text{N}$
 **Principle:** The book does not move in the direction perpendicular to the desktop, so by Newton's second law the sum of the forces in that direction is zero. The normal force cancels the perpendicular component of the weight.
 **Free-body diagram:** The book as a rectangle along the desktop, $x$ down along the desktop and $y$ perpendicular to the desktop, outward. The weight $\overline{G}$ straight down and its components $mg\sin\alpha$ and $mg\cos\alpha$ dashed, the normal force $\overline{N}$ perpendicular to the desktop, outward, and the static friction $\overline{F}_\mu$ up along the desktop.
+```voimakuvio
+pinta -20
+G 7,848
+N 7,375
+F_mu 2,684 ylös
+a 0
+akselit -20
+komponentit G
+```
 **Formula:** $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $N = 0.80\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 20^\circ = 7.848\,\text{N}\cdot 0.9397 = 7.375\,\text{N}$
@@ -46,6 +80,15 @@
 **Given:** $m = 12\,\text{kg}$, the angle of inclination of the slope $\alpha = 30^\circ$; $g = 9.81\,\text{m/s}^2$
 **Find:** the component of the weight along the slope $G_x$ in $\text{N}$
 **Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope. The weight $\overline{G}$ straight down and its components $G_x$ and $G_y$ dashed; the other forces do not affect the asked component.
+```voimakuvio
+pinta -30
+G 117,7
+N 101,9
+F_mu 58,86 ylös
+a 0
+akselit -30
+komponentit G
+```
 **Principle:** The weight points straight down. When the $x$-axis is chosen along the slope, the component of the weight in its direction is obtained from a right triangle in which the angle between the weight and the perpendicular component is the angle of inclination $\alpha$ of the slope.
 **Formula:** $G_x = G\sin\alpha = mg\sin\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
@@ -58,6 +101,15 @@
 **Find:** the coefficient of kinetic friction $\mu$ (no unit)
 **Principle:** The acceleration is obtained from the change of velocity, and Newton's second law along the slope gives the friction. The sled slides, so kinetic friction $F_\mu = \mu N$ acts on it. In the perpendicular direction the sled does not accelerate.
 **Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the kinetic friction $\overline{F}_\mu$ up the slope. The acceleration $\overline{a}$ is drawn separately as an orange arrow down the slope.
+```voimakuvio
+pinta -12
+G 196,2
+N 191,9
+F_mu 25,79 ylös
+a alas
+akselit -12
+komponentit G
+```
 **Formula:** $a = \dfrac{v - 0}{t}$, $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $a = \dfrac{3.0\,\text{m/s}}{4.0\,\text{s}} = 0.75\,\text{m/s}^2$ and $\mu = \dfrac{9.81\,\text{m/s}^2\cdot\sin 12^\circ - 0.75\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 12^\circ} = \dfrac{2.040 - 0.75}{9.596} = 0.134$
@@ -69,6 +121,16 @@
 **Find:** the acceleration $a$ in $\text{m/s}^2$
 **Principle:** The pallet slides, so kinetic friction $\mu N$ acts on it. In the vertical direction it does not accelerate, so $N = mg$. In the horizontal direction, by Newton's second law, the difference between the tension and the friction accelerates the pallet.
 **Free-body diagram:** The pallet as a rectangle, $x$ in the direction of the pull and $y$ up. The tension of the rope $\overline{T}$ forward, the kinetic friction $\overline{F}_\mu$ from the rear corner of the lower surface backward and shorter, the weight $\overline{G}$ down and the normal force $\overline{N}$ up, equally long.
+```voimakuvio
+pinta 0
+G 392,4
+N 392,4
+T 150 oikea
+F_mu 117,7 vasen
+v oikea
+a oikea
+akselit 0
+```
 **Formula:** $y$: $N - mg = 0$ and $x$: $T - \mu N = ma$, so $a = \dfrac{T - \mu mg}{m}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{150\,\text{N} - 0.30\cdot 40\,\text{kg}\cdot 9.81\,\text{m/s}^2}{40\,\text{kg}} = \dfrac{150\,\text{N} - 117.72\,\text{N}}{40\,\text{kg}} = 0.807\,\text{m/s}^2$
@@ -91,6 +153,15 @@
 **Find:** the difference $G_x - F_\text{max}$ in $\text{N}$, where $F_\text{max}$ is the greatest value of static friction; the sign of the difference tells whether the box stays in place
 **Principle:** Static friction is at most $\mu_0 N$. The box stays in place only if this upper limit is enough to cancel the component of the weight along the slope. In the perpendicular direction the box does not accelerate, so $N = mg\cos\alpha$.
 **Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components $mg\sin\alpha$ and $mg\cos\alpha$ dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the friction $\overline{F}_\mu$ up the slope.
+```voimakuvio
+pinta -35
+G 98,1
+N 80,36
+F_mu 48,22 ylös
+a alas
+akselit -35
+komponentit G
+```
 **Formula:** $y$: $N - mg\cos\alpha = 0$, so the greatest static friction is $F_\text{max} = \mu_0 mg\cos\alpha$, and it is compared with the component $G_x = mg\sin\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
@@ -102,6 +173,14 @@
 **Find:** the smallest value of the coefficient of static friction $\mu_0$ (no unit)
 **Principle:** If the box does not slide, it accelerates along with the truck. The only horizontal force on the box is the static friction of the bed, so by Newton's second law it must be $ma$ and point forward, in the direction of motion. Static friction can be at most $\mu_0 N$.
 **Free-body diagram:** The box as a rectangle, $x$ forward and $y$ up. The weight $\overline{G}$ from the center down, the normal force $\overline{N}$ of the bed from the lower surface up and equally long, the static friction $\overline{F}_\mu$ from the front corner of the lower surface forward. The acceleration is drawn separately as a thin orange arrow, not as a force.
+```voimakuvio
+pinta 0
+G 490,5
+N 490,5
+F_mu 175 oikea
+a oikea
+akselit 0
+```
 **Formula:** $y$: $N - mg = 0$ and $x$: $F_\mu = ma$. The condition $F_\mu \le \mu_0 N$ gives $ma \le \mu_0 mg$, so $\mu_0 \ge \dfrac{a}{g}$
 **Conversions:** The accelerations are in $\text{m/s}^2$, so no conversions are needed, and the mass cancels.
 **Substitution:** $\mu_0 = \dfrac{3.5\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.357$
@@ -113,6 +192,16 @@
 **Find:** the sliding distance $s$ in $\text{m}$
 **Principle:** When sliding up, both the component of the weight along the slope and the kinetic friction point down the slope, so the puck decelerates uniformly. The acceleration is obtained from Newton's second law, and the distance from the equation of uniformly accelerated motion $v^2 = v_0^2 - 2as$, where $a$ is the magnitude of the deceleration.
 **Free-body diagram:** The puck as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the kinetic friction $\overline{F}_\mu$ down the slope, because the puck slides up. The velocity is up the slope, but it is not a force.
+```voimakuvio
+pinta -20
+G 9,81
+N 9,218
+F_mu 2,305 alas
+v 160
+a alas
+akselit -20
+komponentit G
+```
 **Formula:** $y$: $N = mg\cos\alpha$ and $x$: $mg\sin\alpha + \mu mg\cos\alpha = ma$, so $a = g(\sin\alpha + \mu\cos\alpha)$. From the equation of motion $v^2 = v_0^2 - 2as$ and the condition $v = 0$ we get $s = \dfrac{v_0^2}{2a}$, where $a = g(\sin\alpha + \mu\cos\alpha)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = 9.81\,\text{m/s}^2\cdot(\sin 20^\circ + 0.25\cdot\cos 20^\circ) = 5.660\,\text{m/s}^2$ and $s = \dfrac{(3.0\,\text{m/s})^2}{2\cdot 5.660\,\text{m/s}^2} = 0.795\,\text{m}$
@@ -124,6 +213,15 @@
 **Find:** the acceleration on the Moon $a_\text{Moon}$ in $\text{m/s}^2$
 **Principle:** The box slides, so kinetic friction $\mu N$ acts on it up the slope. The coefficient of friction is not given, but it is a property of the surface and the same on Earth and on the Moon. The acceleration on Earth gives $\mu$, and on the Moon the same law gives the new acceleration. In the perpendicular direction the box does not accelerate.
 **Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the kinetic friction $\overline{F}_\mu$ up the slope.
+```voimakuvio
+pinta -30
+G 98,1
+N 84,96
+F_mu 29,05 ylös
+a alas
+akselit -30
+komponentit G
+```
 **Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$ and $\mu = \tan\alpha - \dfrac{a_\text{Earth}}{g\cos\alpha}$. Because the expression in the parentheses is the same in both places, $a_\text{Moon} = a_\text{Earth}\cdot\dfrac{g_\text{Moon}}{g}$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $\mu = \tan 30^\circ - \dfrac{2.0\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 30^\circ} = 0.577 - 0.235 = 0.342$, and $a_\text{Moon} = 1.62\,\text{m/s}^2\cdot(\sin 30^\circ - 0.342\cdot\cos 30^\circ) = 0.330\,\text{m/s}^2$. Directly from the ratio: $2.0\,\text{m/s}^2\cdot\dfrac{1.62}{9.81} = 0.330\,\text{m/s}^2$

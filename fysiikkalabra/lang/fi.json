@@ -237,7 +237,8 @@
     "why": "Miksi?",
     "fold_title": "Tee ennusteet ennen tutkimista",
     "fold_question_one": "{{n}} kysymys",
-    "fold_question_many": "{{n}} kysymystä"
+    "fold_question_many": "{{n}} kysymystä",
+    "answer_in": "Vastaus yksikössä {{unit}}"
   },
   "js": {
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",
@@ -1056,7 +1057,7 @@
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
-      "selite": "Varjostettu pinta-ala on impulssin suuruus; harmaat käyrät ovat aiemmat törmäykset.",
+      "selite": "Käyrän ja aika-akselin välinen pinta-ala on impulssi $I$; harmaat käyrät ovat aiemmat törmäykset.",
       "lukemat": "<strong>$\\Delta t = {{dt}}\\,\\text{s}$, $F_\\text{max} = {{Fm}}\\,\\text{N}$, $I = {{I}}\\,\\text{N}\\cdot\\text{s}$</strong><br>$v_0 = {{v1}}\\,\\text{m/s}$, $v = {{v2}}\\,\\text{m/s}$<br>$p_0 = {{p1}}\\,\\text{kg}\\cdot\\text{m/s}$, $p = {{p2}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$\\Delta p = {{dp}}\\,\\text{kg}\\cdot\\text{m/s}$"
     },
     "fy4-8": {
@@ -1137,7 +1138,9 @@
       "ennen": "ennen",
       "nyt": "nyt",
       "selite": "Sininen nuoli on nopeus, violetti liikemäärä ja punainen törmäysvoima.",
-      "lukemat": "<strong>Ennen: $p_\\text{kok} = {{p0}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E0}}\\,\\text{J}$</strong><br><strong>Jälkeen: $v_1' = {{u1}}\\,\\text{m/s}$, $v_2' = {{u2}}\\,\\text{m/s}$, $p_\\text{kok}' = {{pJ}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k}' = {{EJ}}\\,\\text{J}$</strong><br>Nyt: $t = {{t}}\\,\\text{s}$, $v_1 = {{w1}}\\,\\text{m/s}$, $v_2 = {{w2}}\\,\\text{m/s}$, $p_\\text{kok} = {{p}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E}}\\,\\text{J}$"
+      "kok": "kok",
+      "sis": "sis",
+      "lukemat": "<strong>Ennen: $p_\\text{kok} = {{p0}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E0}}\\,\\text{J}$, $E_\\text{p} = {{Ep0}}\\,\\text{J}$</strong><br><strong>Jälkeen: $v_1' = {{u1}}\\,\\text{m/s}$, $v_2' = {{u2}}\\,\\text{m/s}$, $p_\\text{kok}' = {{pJ}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k}' = {{EJ}}\\,\\text{J}$</strong><br>Nyt: $t = {{t}}\\,\\text{s}$, $v_1 = {{w1}}\\,\\text{m/s}$, $v_2 = {{w2}}\\,\\text{m/s}$, $p_\\text{kok} = {{p}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$E_\\text{k} = {{E}}\\,\\text{J}$, $E_\\text{p} = {{Ep}}\\,\\text{J}$, $E_\\text{sis} = {{Es}}\\,\\text{J}$, yhteensä ${{Et}}\\,\\text{J}$"
     },
     "fy4-11": {
       "kaynnista": "Käynnistä",
@@ -1303,5 +1306,30 @@
     "course_lead": "Lyhyet ohjeet taitoihin, joita tutkimuksissa tarvitaan. Tutkimussivu kertoo, mitä ohjetta milloinkin tarvitset.",
     "prereq_guides": "ohje:",
     "notice_draft": "Tämä ohje on luonnos, jota ei ole vielä tarkistettu."
+  },
+  "fbd": {
+    "lead": "Voimakuvio, nuolet mittakaavassa:",
+    "lead_two": "Voimakuviot kummastakin kappaleesta, nuolet mittakaavassa.",
+    "body_n": "Kappale {{n}}:",
+    "slope": "kappale on {{deg}} asteen kaltevalla pinnalla;",
+    "kind_gravity": "paino {{sym}} keskipisteestä {{dir}};",
+    "kind_normal": "tukivoima {{sym}} kosketuspinnasta {{dir}};",
+    "kind_friction": "kitka {{sym}} pinnan suuntaisesti {{dir}};",
+    "kind_tension": "jännitysvoima {{sym}} köyden suuntaan {{dir}};",
+    "kind_applied": "voima {{sym}} {{dir}};",
+    "kind_other": "voima {{sym}} {{dir}};",
+    "kind_drag": "ilmanvastus {{sym}} {{dir}};",
+    "kind_buoyancy": "noste {{sym}} {{dir}};",
+    "kind_spring": "jousivoima {{sym}} {{dir}};",
+    "accel": "kiihtyvyys {{dir}}.",
+    "dir_right": "oikealle",
+    "dir_up": "ylös",
+    "dir_left": "vasemmalle",
+    "dir_down": "alas",
+    "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan nähden",
+    "approx": "pienet voimat on piirretty pitemmiksi kuin mittakaava antaisi;",
+    "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
+    "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
+    "velocity": "nopeus {{dir}};"
   }
 }

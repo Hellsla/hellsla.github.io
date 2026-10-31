@@ -108,6 +108,12 @@ values are equal.
   polttoaineen lämpöarvo kuvaa palamisessa vapautuvaa energiaa."
 - **Carbon dioxide.** CO₂ comes from fuels that contain carbon. Hydrogen burns to water.
 
+## Motion graphs (fy4-12)
+- **Higher line, larger position.** In a $(t, x)$ graph a higher line means a larger position coordinate, not "ahead".
+  Use these words: "Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kohtaamishetkellä
+  kappaleiden kuvaajat leikkaavat toisensa." Which body is ahead depends on the direction of motion: say "ahead" only
+  when the bodies move in the positive $x$ direction, and say so (teacher 2026-10-30; checker rule higher-line-ahead).
+
 ## Tasks, solutions and rubrics (FY3 Sovella, every exercise set)
 - **Recompute every answer yourself.** An answer that agrees with its own solution can still use the wrong model.
 - **State the model's assumptions in the task.** Examples: only steam under the lid, the food already at the pot's
