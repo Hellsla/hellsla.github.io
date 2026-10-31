@@ -1,0 +1,137 @@
+{
+  "id": "fy10-muuntaja",
+  "type": "investigation",
+  "title": "Muuntajan tutkiminen",
+  "question": "Miten muuntajan toisiojännite riippuu käämien kierroslukujen suhteesta, kuinka hyvin ideaalisen muuntajan malli kuvaa mittauksia, ja kuinka suuri on muuntajan hyötysuhde?",
+  "description": "Kokeellinen tutkimus: mittaa muuntajan jännitteet usealla käämiyhdistelmällä, vertaa tuloksia ideaalisen muuntajan malliin ja määritä hyötysuhde ensiö- ja toisiopuolen sähkötehoista.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY2",
+    "FY6",
+    "FY7"
+  ],
+  "source": "Esimerkkityöt.pdf s. 10–11 (Muuntajan tutkiminen; kortti on painettu kahdesti), opettajan aineisto",
+  "learn": [
+    "vertaamaan mittaustuloksia fysikaaliseen malliin ja perustelemaan, millä ehdoilla malli pätee",
+    "valitsemaan kuvaajan akselit niin, että mallin ennuste näkyy suorana, ja tulkitsemaan sen kulmakertoimen",
+    "määrittämään hyötysuhteen sähköisistä mittauksista epävarmuuksineen ja arvioimaan, mistä häviöt johtuvat"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Jännitteiden suhde ja hyötysuhde",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Hyötysuhde eri kuormituksilla",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-4",
+      "why": "Hyötysuhde on hyödyksi saadun energian tai tehon ja laitteeseen tuodun energian tai tehon suhde."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-3",
+      "why": "Teho kertoo, kuinka paljon energiaa siirtyy aikayksikössä."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähköteho $P = UI$",
+      "missing": "FY6: Sähköteho ja Joulen laki",
+      "why": "Ensiö- ja toisiopuolen tehot lasketaan jännitteistä ja sähkövirroista; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Virtamittarin ja jännitemittarin kytkeminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Kummassakin piirissä tarvitaan sekä virta- että jännitemittari; kytkentä on selitetty ja piirretty tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähkömagneettinen induktio",
+      "missing": "FY7: Sähkömagneettinen induktio",
+      "why": "Muuntajan toiminta perustuu induktioon; tarvittava periaate on selitetty lyhyesti tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Muuntaja",
+      "missing": "FY7: Muuntaja ja sähköenergian siirto",
+      "why": "Muuntajan rakenne ja ideaalisen muuntajan malli, johon mittauksia verrataan; lyhyt selitys on tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Vaihtojännite ja tehollinen arvo",
+      "missing": "FY7: Generaattori ja vaihtovirran synty",
+      "why": "Mittarit näyttävät vaihtojännitteen ja -virran tehollisia arvoja; käsite on selitetty lyhyesti tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "text": "Sähköturvallisuus",
+      "missing": "FY6: Sähköturvallisuus",
+      "why": "Työssä kytketään itse kaksi virtapiiriä; tämän työn turvallisuusohjeet ovat tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "muuntajan rautasydän",
+    "ensiö- ja toisiokäämejä, joihin on merkitty kierrosluku",
+    "opettajan antama, tähän työhön tarkoitettu pienjännitteinen vaihtojännitelähde ja johtimia",
+    "jännitemittareita ja virtamittareita (tai yleismittareita)",
+    "opettajan antama kuormitusvastus tai useampia"
+  ],
+  "safety": [
+    "Käytä vain opettajan antamaa, tähän työhön tarkoitettua pienjännitelähdettä. Verkkojännitettä ei koskaan kytketä ensiökäämiin eikä mihinkään muuhun oppilaan virtapiiriin.",
+    "Käytä vain opettajan hyväksymiä käämiyhdistelmiä ja ensiöjännitteitä: toisiokäämin jännite riippuu käämien kierrosluvuista. Älä koske paljaisiin liittimiin, kun virta on kytkettynä.",
+    "Älä kytke toisiokäämiä suoraan oikosulkuun. Toisiokäämin napoihin kytketään joko pelkkä jännitemittari tai kuormitusvastus, jonka kanssa virtamittari on sarjassa; virtamittaria ei koskaan kytketä yksin käämin napoihin.",
+    "Pidä sähkövirrat opettajan ilmoittamien rajojen alapuolella, ja aloita virtamittarilla suurimmalta mittausalueelta.",
+    "Katkaise virta virtalähteestä aina ennen kuin muutat kytkentää, vaihdat käämejä tai avaat rautasydämen. Varo, etteivät sormet jää rautasydämen osien väliin.",
+    "Käämit ja kuormitusvastus voivat lämmetä: kytke virta pois mittausten väliajoiksi, ja anna osien jäähtyä ennen kuin kosket niihin."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "fy10-planck",
+  "type": "investigation",
+  "title": "Planckin vakio LEDien avulla",
+  "question": "Miten LEDin kynnysjännite riippuu sen lähettämän valon aallonpituudesta, ja kuinka suuri Planckin vakio on tämän perusteella?",
+  "description": "Kokeellinen tutkimus: määritä usean erivärisen LEDin kynnysjännite virta–jännite-mittauksista ja määritä Planckin vakio kuvaajan avulla.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY6",
+    "FY7",
+    "FY8"
+  ],
+  "source": "Esimerkkityöt.pdf s. 13 (Planckin vakio LEDeillä, otsikko puuttuu lähteestä), opettajan aineisto",
+  "learn": [
+    "määrittämään mittaussarjasta suureen, jota mikään mittari ei näytä suoraan, ja perustelemaan määritystavan",
+    "valitsemaan kuvaajan akselit niin, että haettu vakio saadaan kulmakertoimesta, ja perustelemaan valinnan",
+    "vertaamaan tulosta tunnettuun arvoon ja arvioimaan, selittyykö ero mittausepävarmuudella vai mallin likimääräisyydellä"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Kynnysjännitteet ja Planckin vakio",
+      "physics": "F3",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Aallonpituudet itse hilalla",
+      "physics": "F3",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähkövirran ja jännitteen mittaaminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Työssä mitataan LEDin jännite ja sen läpi kulkeva sähkövirta samanaikaisesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Diodi ja LED",
+      "missing": "FY6: Puolijohteet, diodi ja LED",
+      "why": "LEDin toiminta on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Fotoni ja fotonin energia",
+      "missing": "FY8: Valosähköinen ilmiö ja fotoni",
+      "why": "Tutkimuksen malli perustuu fotonin energiaan; lyhyt selitys on tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Valon aallonpituus ja taajuus",
+      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "why": "LEDien valo kuvataan aallonpituudella; sen yhteys taajuuteen on kerrottu tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Varauksen energia ja jännite",
+      "missing": "FY6: Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia",
+      "why": "Tarvitset yhteyttä jännitteen ja varauksen energian välillä; se on kerrottu tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "LED, laserdiodi ja Planckin vakio",
+      "missing": "FY8: LED, laserdiodi ja Planckin vakio",
+      "why": "Kappale käsittelee samaa ilmiötä laajemmin; tutkimuksen tarvitsema osa on selitetty tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Hila ja valon diffraktio",
+      "missing": "FY7: Valon interferenssi ja diffraktio",
+      "why": "Laajennuksessa aallonpituus mitataan hilalla; tarvittava yhtälö on laajennuksen alussa."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Työssä piirretään useita kuvaajia, ja lopullinen tulos saadaan sovitetun suoran kulmakertoimesta."
+    }
+  ],
+  "equipment": [
+    "erivärisiä LEDejä, jotka opettaja on hyväksynyt työhön",
+    "tasajännitelähde (pienjännite)",
+    "säädettävä vastus ja opettajan antama sarjavastus virran rajoittamiseen",
+    "jännitemittari",
+    "virtamittari",
+    "kytkentäalusta ja johtoja",
+    "LEDien aallonpituustiedot (tietolehti) tai väline aallonpituuden määrittämiseen, esimerkiksi spektrometri tai hila"
+  ],
+  "safety": [
+    "Kytke LEDin kanssa sarjaan aina vastus, joka rajoittaa sähkövirtaa. Opettaja kertoo sopivan vastuksen.",
+    "Älä ylitä LEDille sallittua sähkövirtaa: raja luetaan LEDin tietolehdestä tai opettaja ilmoittaa sen.",
+    "Älä katso suoraan kirkkaaseen LEDiin. UV- ja infrapuna-LEDiin ei katsota koskaan suoraan: niiden valoa ei juuri näe, mutta se voi vahingoittaa silmiä. UV-LEDin kanssa käytetään opettajan antamia silmäsuojaimia. Opettaja päättää, mitä LEDejä työssä käytetään.",
+    "Käytä vain pienjännitelähdettä; verkkojännitettä ei koskaan kytketä oppilaiden virtapiiriin. Näytä kytkentä opettajalle ennen kuin kytket virran."
+  ]
+}

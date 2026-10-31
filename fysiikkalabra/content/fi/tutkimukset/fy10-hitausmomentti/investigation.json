@@ -1,0 +1,133 @@
+{
+  "id": "fy10-hitausmomentti",
+  "type": "investigation",
+  "title": "Umpinaisen sylinterin hitausmomentti",
+  "question": "Kuinka suuri on umpinaisen sylinterin hitausmomentti, kun se määritetään kaltevaa tasoa alas vierivän sylinterin liikkeestä, ja vastaako tulos teoreettista mallia?",
+  "description": "Kokeellinen tutkimus: selvitä, mitä hitausmomentti tarkoittaa, määritä umpinaisen sylinterin hitausmomentti energian säilymisen avulla kaltevalla tasolla ja vertaa tulosta malliin. Laajennuksena pyörimismäärän säilyminen polkupyörän renkaalla.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY4",
+    "FY5"
+  ],
+  "source": "Esimerkkityöt.pdf s. 3–4 (Mitä hitausmomentti tarkoittaa?; Umpinaisen sylinterin hitausmomentin määrittäminen; Pyörimismäärän säilyminen), opettajan aineisto",
+  "learn": [
+    "kuvailemaan omin sanoin, mitä hitausmomentti tarkoittaa ja miten massan jakautuminen pyörimisakselin suhteen vaikuttaa siihen",
+    "määrittämään hitausmomentin energian säilymisen avulla mittaamistasi suureista",
+    "vertaamaan mittaustulosta teoreettiseen malliin epävarmuuksineen ja arvioimaan mallin oletusten pätevyyttä"
+  ],
+  "variants": [
+    {
+      "id": "kasite",
+      "title": "Mitä hitausmomentti tarkoittaa?",
+      "physics": "F3",
+      "experiment": "E1"
+    },
+    {
+      "id": "perus",
+      "title": "Umpinaisen sylinterin hitausmomentti",
+      "physics": "F3",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Pyörimismäärän säilyminen",
+      "physics": "F3",
+      "experiment": "E1"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-7",
+      "why": "Työssä tarvitaan liike-energiaa ja potentiaalienergiaa."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-8",
+      "why": "Hitausmomentti määritetään energiaperiaatteen avulla."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Kulmanopeus",
+      "missing": "FY5: Tasainen ympyräliike: kulmanopeus ja ratanopeus",
+      "why": "Pyörimisliikettä kuvataan kulmanopeudella; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Hitausmomentti ja pyörimisliikkeen energia",
+      "missing": "ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla",
+      "why": "Työn keskeinen käsite. Selvität sen itse, ja sivun kohta Teoriaa lyhyesti tiivistää tarvittavan."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-2",
+      "why": "Tasaisesti kiihtyvän liikkeen yhtälöt ja kuvaajat auttavat liikkeen analysoinnissa."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Pyörimismäärä ja sen säilyminen",
+      "missing": "ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla laajennuksen alussa",
+      "why": "Laajennuksen käsite. Se muistuttaa liikemäärää, joka on tuttu moduulista FY4."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "text": "Momentti",
+      "missing": "FY5: Momentti ja vääntövaikutus",
+      "why": "Laajennuksessa tarvitaan tietoa siitä, milloin ulkoinen momentti muuttaa pyörimistä."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Mittaustulosten graafinen esitys ja kuvaajan tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo, mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Mittaustulosten käsittely ja kuvaajat ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Ohjelma helpottaa laskuja ja kuvaajien piirtämistä."
+    }
+  ],
+  "equipment": [
+    "kalteva taso (lauta tai kouru) ja tuet",
+    "umpinainen, tasa-aineinen sylinteri",
+    "vertailukappale, jonka massa on jakautunut toisin, esimerkiksi putki",
+    "pehmeä pysäytin tason alapäähän",
+    "vaaka",
+    "työntömitta ja mittanauha",
+    "välineet liikkeen mittaamiseen, esimerkiksi ajanottoväline, liikeanturi tai puhelimen kamera",
+    "laajennukseen polkupyörän rengas akseleineen ja opettajan luvalla pyörivä jakkara"
+  ],
+  "safety": [
+    "Tue kalteva taso tukevasti ja pysäytä sylinteri tason alapäässä pehmeällä pysäyttimellä, ettei raskas sylinteri vieri pöydältä jalkoihin.",
+    "Pidä kädet, hiukset, korut ja löysät vaatteet poissa polkupyörän renkaan pinnoista. Pysäytä rengas jarruttamalla varovasti rengasta, älä pinnoja.",
+    "Pyörivää jakkaraa saa käyttää vain opettajan luvalla. Pysy jakkaralla tukevasti, pidä ympärillä tilaa ja pyydä toista opiskelijaa varmistamaan vierestä."
+  ]
+}

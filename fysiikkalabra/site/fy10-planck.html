@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planckin vakio LEDien avulla — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: määritä usean erivärisen LEDin kynnysjännite virta–jännite-mittauksista ja määritä Planckin vakio kuvaajan avulla.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-planck.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Planckin vakio LEDien avulla">
+<meta property="og:description" content="Kokeellinen tutkimus: määritä usean erivärisen LEDin kynnysjännite virta–jännite-mittauksista ja määritä Planckin vakio kuvaajan avulla.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-planck.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Planckin vakio LEDien avulla</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Planckin vakio LEDien avulla</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-aallonpituudet-itse-hilalla">Laajennus: aallonpituudet itse hilalla</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Planckin vakio LEDien avulla</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Miten LEDin kynnysjännite riippuu sen lähettämän valon aallonpituudesta, ja kuinka suuri Planckin vakio on tämän perusteella?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on pienjännitelähde, säädettävä liukuvastus ja kaksi yleismittaria, joiden näytöissä ei ole lukemia. Johdot kulkevat kytkentäalustalle, jossa yksi LED loistaa himmeästi. Pöydällä on rasia, jossa on erivärisiä sammuneita LEDejä, sekä LEDien tietolehti ja vihko." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10plh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10plh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10plh-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10plh-desk)"/>
+  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="60" y="300" width="220" height="170" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="84" y="324" width="120" height="46" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="240" cy="347" r="20" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="240" y1="347" x2="252" y2="333" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="110" cy="430" r="9" fill="#1f2933" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="230" cy="430" r="9" fill="#e9ecef" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="340" y="400" width="26" height="70" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="574" y="400" width="26" height="70" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="366" y="412" width="208" height="46" rx="8" fill="#d9a066" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="372" y1="413" x2="372" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="380" y1="413" x2="380" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="388" y1="413" x2="388" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="396" y1="413" x2="396" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="404" y1="413" x2="404" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="412" y1="413" x2="412" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="420" y1="413" x2="420" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="428" y1="413" x2="428" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="436" y1="413" x2="436" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="444" y1="413" x2="444" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="452" y1="413" x2="452" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="460" y1="413" x2="460" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="468" y1="413" x2="468" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="476" y1="413" x2="476" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="484" y1="413" x2="484" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="492" y1="413" x2="492" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="500" y1="413" x2="500" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="508" y1="413" x2="508" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="516" y1="413" x2="516" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="524" y1="413" x2="524" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="532" y1="413" x2="532" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="540" y1="413" x2="540" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="548" y1="413" x2="548" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="556" y1="413" x2="556" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="564" y1="413" x2="564" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="572" y1="413" x2="572" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="350" y="384" width="240" height="8" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="468" y="376" width="30" height="36" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="640" y="330" width="120" height="140" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="652" y="342" width="96" height="47.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="700" cy="422.5" r="19.6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="700" y1="422.5" x2="700" y2="405.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="676" cy="458" r="5" fill="#1f2933"/>
+  <circle cx="724" cy="458" r="5" fill="#1f2933"/>
+  <rect x="800" y="330" width="120" height="140" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="812" y="342" width="96" height="47.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="860" cy="422.5" r="19.6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="860" y1="422.5" x2="860" y2="405.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="836" cy="458" r="5" fill="#1f2933"/>
+  <circle cx="884" cy="458" r="5" fill="#1f2933"/>
+  <rect x="960" y="430" width="200" height="40" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="972" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="983.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="995" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1006.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1018" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1029.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1041" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1052.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1064" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1075.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1087" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1098.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1110" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1121.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1133" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1144.5" y="440" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="972" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="983.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="995" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1006.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1018" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1029.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1041" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1052.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1064" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1075.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1087" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1098.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1110" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1121.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1133" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <rect x="1144.5" y="453" width="5" height="5" fill="#c9c2b2"/>
+  <circle cx="1060" cy="378" r="46" fill="#f2a69c" fill-opacity="0.35"/>
+  <circle cx="1060" cy="378" r="30" fill="#f2a69c" fill-opacity="0.45"/>
+  <line x1="1054" y1="406" x2="1054" y2="440" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="1066" y1="406" x2="1066" y2="434" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="1043" y="398" width="34" height="8" rx="2" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  <path d="M1046,398 L1046,370 A14,14 0 0 1 1074,370 L1074,398 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="1090" y="430" width="40" height="10" rx="4" fill="#d9a066" stroke="#1f2933" stroke-width="2"/>
+  <path d="M230,430 C230,520 350,500 353,470" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M483,376 C483,300 640,290 676,458" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M724,458 C780,492 1060,492 1110,440" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M1054,410 C1000,300 840,300 836,458" fill="none" stroke="#6c757d" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M1066,410 C1080,320 900,320 884,458" fill="none" stroke="#6c757d" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M110,430 C110,488 1000,488 1040,470" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="420" y="500" width="230" height="50" rx="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="446.5" y1="521.5" x2="446.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <line x1="453.5" y1="521.5" x2="453.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <rect x="440.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <path d="M442.5,517 L442.5,501.5 A7.5,7.5 0 0 1 457.5,501.5 L457.5,517 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="488.5" y1="521.5" x2="488.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <line x1="495.5" y1="521.5" x2="495.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <rect x="482.5" y="517" width="18.5" height="4.5" rx="2" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
+  <path d="M484.5,517 L484.5,501.5 A7.5,7.5 0 0 1 499.5,501.5 L499.5,517 Z" fill="#b2f2bb" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="530.5" y1="521.5" x2="530.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <line x1="537.5" y1="521.5" x2="537.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <rect x="524.5" y="517" width="18.5" height="4.5" rx="2" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  <path d="M526.5,517 L526.5,501.5 A7.5,7.5 0 0 1 541.5,501.5 L541.5,517 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="572.5" y1="521.5" x2="572.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <line x1="579.5" y1="521.5" x2="579.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <rect x="566.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffe066" stroke="#1f2933" stroke-width="2"/>
+  <path d="M568.5,517 L568.5,501.5 A7.5,7.5 0 0 1 583.5,501.5 L583.5,517 Z" fill="#ffe066" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="614.5" y1="521.5" x2="614.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <line x1="621.5" y1="521.5" x2="621.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
+  <rect x="608.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffd8a8" stroke="#1f2933" stroke-width="2"/>
+  <path d="M610.5,517 L610.5,501.5 A7.5,7.5 0 0 1 625.5,501.5 L625.5,517 Z" fill="#ffd8a8" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <g transform="translate(790,535) rotate(4)"><rect x="-60" y="-40" width="120" height="70" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-46" y1="-26" x2="46" y2="-26" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="-15" x2="28" y2="-15" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="-4" x2="46" y2="-4" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="7" x2="28" y2="7" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="18" x2="46" y2="18" stroke="#6b7480" stroke-width="2"/></g>
+  <g transform="translate(130,530) rotate(-6)"><rect x="-80" y="-34" width="200" height="66" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-64" y1="-18" x2="104" y2="-18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="-6" x2="104" y2="-6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="6" x2="104" y2="6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="18" x2="104" y2="18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="30" x2="104" y2="30" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/></g>
+</svg></p>
+<p>Planckin vakio on yksi luonnon perusvakioista: se kertoo, kuinka suuri energia valon pienimmällä osalla, fotonilla, on. Vakion voi määrittää koulun laboratoriossa tavallisilla LEDeillä ja kahdella yleismittarilla. Tässä tutkimuksessa mittaat usean erivärisen LEDin sähköisiä ominaisuuksia ja päättelet niistä Planckin vakion. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>määrittämään mittaussarjasta suureen, jota mikään mittari ei näytä suoraan, ja perustelemaan määritystavan</li><li>valitsemaan kuvaajan akselit niin, että haettu vakio saadaan kulmakertoimesta, ja perustelemaan valinnan</li><li>vertaamaan tulosta tunnettuun arvoon ja arvioimaan, selittyykö ero mittausepävarmuudella vai mallin likimääräisyydellä</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Kynnysjännitteet ja Planckin vakio</strong>: fysiikka F3 · koe E2</li><li><strong>Aallonpituudet itse hilalla</strong>: fysiikka F3 · koe E3</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="O" checked><span><strong>Ohjattu tutkimus</strong> Saat vihjeet ja tärkeimmät vaiheet.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="OO"><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Sähkövirran ja jännitteen mittaaminen <span class="inv-mod">(FY6: Mittaukset virtapiirissä)</span><span class="inv-why">Työssä mitataan LEDin jännite ja sen läpi kulkeva sähkövirta samanaikaisesti.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Diodi ja LED <span class="inv-mod">(FY6: Puolijohteet, diodi ja LED)</span><span class="inv-why">LEDin toiminta on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Fotoni ja fotonin energia <span class="inv-mod">(FY8: Valosähköinen ilmiö ja fotoni)</span><span class="inv-why">Tutkimuksen malli perustuu fotonin energiaan; lyhyt selitys on tällä sivulla.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Valon aallonpituus ja taajuus <span class="inv-mod">(FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily)</span><span class="inv-why">LEDien valo kuvataan aallonpituudella; sen yhteys taajuuteen on kerrottu tällä sivulla.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> Varauksen energia ja jännite <span class="inv-mod">(FY6: Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia)</span><span class="inv-why">Tarvitset yhteyttä jännitteen ja varauksen energian välillä; se on kerrottu tällä sivulla.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> LED, laserdiodi ja Planckin vakio <span class="inv-mod">(FY8: LED, laserdiodi ja Planckin vakio)</span><span class="inv-why">Kappale käsittelee samaa ilmiötä laajemmin; tutkimuksen tarvitsema osa on selitetty tällä sivulla.</span></li><li><span class="inv-level inv-level-extension">laajennukseen</span> Hila ja valon diffraktio <span class="inv-mod">(FY7: Valon interferenssi ja diffraktio)</span><span class="inv-why">Laajennuksessa aallonpituus mitataan hilalla; tarvittava yhtälö on laajennuksen alussa.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\bar{x} \pm \Delta x$.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Työssä piirretään useita kuvaajia, ja lopullinen tulos saadaan sovitetun suoran kulmakertoimesta.</span></li></ul><h3>Välineet</h3><ul><li>erivärisiä LEDejä, jotka opettaja on hyväksynyt työhön</li><li>tasajännitelähde (pienjännite)</li><li>säädettävä vastus ja opettajan antama sarjavastus virran rajoittamiseen</li><li>jännitemittari</li><li>virtamittari</li><li>kytkentäalusta ja johtoja</li><li>LEDien aallonpituustiedot (tietolehti) tai väline aallonpituuden määrittämiseen, esimerkiksi spektrometri tai hila</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Kytke LEDin kanssa sarjaan aina vastus, joka rajoittaa sähkövirtaa. Opettaja kertoo sopivan vastuksen.</li><li>Älä ylitä LEDille sallittua sähkövirtaa: raja luetaan LEDin tietolehdestä tai opettaja ilmoittaa sen.</li><li>Älä katso suoraan kirkkaaseen LEDiin. UV- ja infrapuna-LEDiin ei katsota koskaan suoraan: niiden valoa ei juuri näe, mutta se voi vahingoittaa silmiä. UV-LEDin kanssa käytetään opettajan antamia silmäsuojaimia. Opettaja päättää, mitä LEDejä työssä käytetään.</li><li>Käytä vain pienjännitelähdettä; verkkojännitettä ei koskaan kytketä oppilaiden virtapiiriin. Näytä kytkentä opettajalle ennen kuin kytket virran.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> kuinka suuri kynnysjännite on usealla erivärisellä LEDillä, miten se riippuu LEDin valon aallonpituudesta ja kuinka suuri Planckin vakio on tämän perusteella epävarmuuksineen. Vertaa tulosta Planckin vakion tunnettuun arvoon.</p>
+<p><strong>Päätät itse</strong> (osittain ohjattu ja itsenäinen työtapa): kuinka monta LEDiä ja mittauspistettä käytät ja millä jännitealueella mittaat opettajan ilmoittaman virtarajan sisällä, miten määrität kynnysjännitteen, kuvaajan akselit perusteluineen sekä tavan, jolla arvioit tuloksen epävarmuuden. Ohjatussa työtavassa sivu kiinnittää nämä valinnat. Osittain ohjatussa työtavassa sivu antaa vaihtoehdot kynnysjännitteen määrittämiseen ja epävarmuuden arvioimiseen, ja valitset niistä perustellen. Itsenäisessä työtavassa valitset ja perustelet kaiken itse.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Jos koulussa on hila tai spektrometri, laajennus kuuluu työhösi: mittaa ainakin yhden LEDin aallonpituus itse ja vertaa sitä tietolehden arvoon.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Kun LEDin jännitettä kasvatetaan nollasta alkaen, miten arvelet sen läpi kulkevan sähkövirran muuttuvan? Alkaako LED loistaa heti?</li>
+<li>Kummalla arvelet olevan suuremman kynnysjännitteen, punaisella vai sinisellä LEDillä?</li>
+<li>Jos LEDin valon aallonpituus olisi kaksi kertaa niin suuri, mitä arvelet tapahtuvan kynnysjännitteelle?</li>
+<li>Kuinka lähelle tunnettua arvoa arvelet pääseväsi, ja mikä mittauksessa on todennäköisesti suurin epävarmuuden lähde?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Tämän työn fysiikkaa käsitellään tarkemmin moduuleissa FY6–FY8, joita ei ole vielä julkaistu Ruukkilabrassa. Tässä on se, mitä tutkimuksessa tarvitset.</p>
+<p><strong>Fotoni.</strong> Valo siirtää energiaa pieninä paloina, fotoneina. Fotonin energia on</p>
+<p>$$E = hf$$</p>
+<p>missä $E$ on fotonin energia, $f$ valon taajuus ja $h$ <strong>Planckin vakio</strong>, jonka yksikkö on $\text{J}\cdot\text{s}$. Valon taajuus ja aallonpituus $\lambda$ liittyvät toisiinsa yhtälöllä $c = f\lambda$, missä $c$ on valon nopeus tyhjiössä. Kun aallonpituus tunnetaan, taajuus on $f = \dfrac{c}{\lambda}$.</p>
+<p><strong>Varaus ja jännite.</strong> Kun varattu hiukkanen siirtyy jännitteen $U$ yli, sen energia muuttuu määrällä $qU$. Elektronin varauksen suuruus on alkeisvaraus $e$, joten elektronin energia muuttuu määrällä $eU$.</p>
+<p><strong>LED.</strong> LED eli hohtodiodi on puolijohdekomponentti, joka johtaa sähkövirtaa hyvin vain yhteen suuntaan, päästösuuntaan. Kun virta kulkee LEDin läpi päästösuuntaan, elektronit menettävät puolijohteessa energiaa, ja energia voi vapautua fotonina. Fotonin energia ja siten valon väri määräytyvät LEDin puolijohdemateriaalista: fotonin energia on suunnilleen yhtä suuri kuin materiaalin energia-aukko eli energiaero, jonka elektroni menettää, ja kynnysjännitteestä laskettu energia $eU_\text{k}$ on vain likiarvo sille. LED alkaa johtaa sähkövirtaa ja lähettää valoa vasta, kun sen jännite on riittävän suuri. Jännitettä, jolla tämä alkaa, kutsutaan tässä työssä <strong>kynnysjännitteeksi</strong> $U_\text{k}$.</p>
+<p><strong>Periaate.</strong> Elektroni voi tuottaa fotonin vain, jos sillä on vähintään fotonin energia. Siksi LED alkaa loistaa suunnilleen silloin, kun yhden elektronin energia $eU_\text{k}$ on yhtä suuri kuin yhden fotonin energia:</p>
+<p>$$eU_\text{k} \approx hf$$</p>
+<p>Yhteys on vain likimääräinen, ja sen ehdot kannattaa pitää mielessä koko työn ajan: LED ei lähetä yhtä ainoaa aallonpituutta vaan kapean aallonpituusalueen, kynnysjännitteen arvo riippuu siitä, miten se määritetään, osa LEDin jännitteestä kuluu sen sisäiseen resistanssiin, ja LEDin lämpeneminen muuttaa sen ominaisuuksia. Vakiot $e = 1{,}602\,176\,634\cdot10^{-19}\ \text{C}$ ja $c = 2{,}997\,924\,58\cdot10^{8}\ \text{m/s}$ ovat tarkkoja määriteltyjä arvoja.</p>
+<div class="inv-tuki" data-modes="O"><p><strong>Malli kuvaajaksi.</strong> Kun periaatteeseen sijoitetaan $f = \dfrac{c}{\lambda}$ ja ratkaistaan kynnysjännite, saadaan</p>
+<p>$$U_\text{k} = \frac{hc}{e}\cdot\frac{1}{\lambda}$$</p>
+<p>Kynnysjännite on siis mallin mukaan suoraan verrannollinen aallonpituuden käänteislukuun $\dfrac{1}{\lambda}$. Kuvaaja $U_\text{k}$ suureen $\dfrac{1}{\lambda}$ funktiona on suora, jonka kulmakerroin on $k = \dfrac{hc}{e}$. Planckin vakio saadaan kulmakertoimesta:</p>
+<p>$$h = \frac{ek}{c}$$</p>
+<p><svg data-fig="model" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja: kynnysjännite U k aallonpituuden käänteisluvun yksi per lambda funktiona mallin mukaan. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on h kertaa c jaettuna e:llä. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="280" x2="484" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,280 L483,286 L483,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="281" x2="90" y2="36" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,24 L96,37 L84,37 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="251" width="20" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\dfrac{1}{\lambda}$</div></foreignObject>
+  <foreignObject x="80" y="-6.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U_\text{k}$</div></foreignObject>
+  <polyline points="90,280 451,83.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="127.5" y="76" width="183" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kulmakerroin } \dfrac{hc}{e}$</div></foreignObject>
+</svg></p>
+<p>Jos kaikkien LEDien kynnysjännitteissä on suunnilleen sama lisäosa, esimerkiksi määritystavasta johtuen, suora siirtyy ylös tai alas eikä kulje origon kautta, mutta kulmakerroin ei muutu. Siksi Planckin vakio kannattaa määrittää kulmakertoimesta eikä yksittäisen LEDin tuloksesta. Eri puolijohdemateriaaleista tehdyillä LEDeillä lisäosa voi kuitenkin olla erisuuruinen, ja silloin se muuttaa myös kulmakerrointa. Mittaamalla selviää, kuinka hyvin malli pätee.</p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona. Piirrä kytkentäkaavio ja näytä kytkentä opettajalle ennen kuin kytket virran. LEDin kanssa sarjassa on aina oltava vastus, joka rajoittaa sähkövirtaa. Jos säädettävän vastuksen voi säätää nollaan, kytke sen lisäksi sarjaan kiinteä suojavastus, jonka opettaja antaa. Kirjaa myös, mistä saat LEDien aallonpituudet: ne luetaan LEDien tietolehdistä, tai mittaat ne itse spektrometrillä tai hilalla, jos sellainen on käytettävissä (katso laajennus). Älä arvaa aallonpituutta värin perusteella.</p>
+<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Mittaat jokaisesta LEDistä sarjan, jossa muutat LEDin jännitettä $U$ säätämällä virtalähdettä tai säädettävää vastusta ja luet joka kerta jännitteen $U$ ja sähkövirran $I$. Kynnysjännitteen määrität myöhemmin näistä mittauksista. Käytä kaikkia opettajan antamia erivärisiä LEDejä, joiden aallonpituus tiedetään, mieluiten ainakin neljää. Mittaa jokaisesta LEDistä ainakin kahdeksan pistettä: muutama jännitteillä, joilla virtaa ei juuri kulje, ja ainakin viisi alueelta, jolla virta kasvaa jyrkästi. Vakiona pidät kytkennän, mittarit ja niiden mittausalueet sekä tavan, jolla mittaat.</p></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Muuttuja on LEDin väri eli aallonpituus, ja jokaisesta LEDistä mittaat jännitteen ja sähkövirran. Päätä itse, kuinka monta LEDiä ja mittauspistettä käytät ja millä jännitealueella mittaat. Valitse kynnysjännitteen määritystapa kohdassa Käsittele tulokset annetuista vaihtoehdoista. Kirjaa päätöksesi perusteluineen.</p></div>
+<div class="inv-tuki" data-modes="O OO"><p>Tarkista kytkentäsi tästä:</p>
+<p><svg data-fig="setup" viewBox="0 0 600 400" role="img" aria-label="Kytkentäkaavio. Tasajännitelähteen plusnavasta virta kulkee kiinteän suojavastuksen R s ja säädettävän vastuksen R kautta LEDiin ja siitä virtamittarin kautta takaisin miinusnapaan. LED on kytketty päästösuuntaan. Vastukset rajoittavat virtaa, ja virtamittari on sarjassa LEDin kanssa ja mittaa sähkövirran I. Jännitemittari on kytketty suoraan LEDin napoihin eli rinnan LEDin kanssa, ja se mittaa LEDin jännitteen U." style="max-width:100%;font-size:24px">
+  <rect x="30" y="140" width="130" height="110" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="65" y="158" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{tasa-}$</div></foreignObject>
+  <foreignObject x="49.5" y="184" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{jännite-}$</div></foreignObject>
+  <foreignObject x="65" y="210" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{lähde}$</div></foreignObject>
+  <circle cx="160" cy="80" r="5" fill="#1f2933"/>
+  <circle cx="160" cy="320" r="5" fill="#1f2933"/>
+  <line x1="140" y1="140" x2="140" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="140" y1="80" x2="160" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="140" y1="250" x2="140" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="140" y1="320" x2="160" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="111" y="91" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="111" y="283" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$-$</div></foreignObject>
+  <line x1="160" y1="80" x2="191" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="259" y1="80" x2="290" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="191" y="67" width="68" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="208.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <line x1="290" y1="80" x2="321" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="389" y1="80" x2="420" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="321" y="67" width="68" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="315" y1="106" x2="388" y2="58" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M397,52 L390,63 L384,54 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="345" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R$</div></foreignObject>
+  <foreignObject x="280" y="347.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I$</div></foreignObject>
+  <line x1="420" y1="80" x2="420" y2="140" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="420" y1="140" x2="420" y2="182" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="420" y1="218" x2="420" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M400,182 L440,182 L420,216 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="398" y1="217" x2="442" y2="217" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="442" y1="190" x2="458.5" y2="179" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,174 L460,183.5 L455,176 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="442" y1="206" x2="458.5" y2="195" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M466,190 L460,199.5 L455,192 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="420" y1="260" x2="420" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="160" y1="320" x2="268" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="312" y1="320" x2="420" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="290" cy="320" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="280.5" y="307" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{A}$</div></foreignObject>
+  <circle cx="420" cy="140" r="5" fill="#1f2933"/>
+  <circle cx="420" cy="260" r="5" fill="#1f2933"/>
+  <line x1="420" y1="140" x2="530" y2="140" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="530" y1="140" x2="530" y2="178" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="530" cy="200" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="520.5" y="187" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{V}$</div></foreignObject>
+  <line x1="530" y1="222" x2="530" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="420" y1="260" x2="530" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="562" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
+  <foreignObject x="333" y="188" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$\text{LED}$</div></foreignObject>
+</svg></p>
+<p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miksi jännitemittari kytketään suoraan LEDin napoihin eikä virtalähteen napoihin?</li>
+<li>Kumpi LEDin jaloista kytketään plusnapaan päin? Yleensä pidempi jalka on plusnapaan kytkettävä anodi, mutta tarkista asia opettajalta tai tietolehdestä.</li>
+<li>Miten varmistat, että virta pysyy opettajan ilmoittaman rajan alapuolella, vaikka säädät vastusta?</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: jokaiselle LEDille oma mittaussarja, ja lisäksi jokaisen LEDin väri ja aallonpituus sekä tieto siitä, mistä aallonpituus on peräisin. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle.</p>
+<p>Pidä virta koko ajan opettajan ilmoittaman rajan alapuolella, äläkä katso suoraan kirkkaasti loistavaan LEDiin. UV- ja infrapuna-LEDiin ei katsota koskaan suoraan, ja UV-LEDin kanssa käytetään opettajan antamia silmäsuojaimia.</p>
+<div class="inv-tuki" data-modes="O"><p>Voit käyttää jokaiselle LEDille esimerkiksi tällaista taulukkoa:</p>
+<table>
+<thead>
+<tr>
+<th>$U\ (\text{V})$</th>
+<th>$I\ (\text{mA})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Kokoa lopuksi kaikkien LEDien tulokset yhteen taulukkoon:</p>
+<table>
+<thead>
+<tr>
+<th>LED</th>
+<th>$\lambda\ (\text{nm})$</th>
+<th>$\dfrac{1}{\lambda}\ \left(\dfrac{1}{\text{m}}\right)$</th>
+<th>$U_\text{k}\ (\text{V})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Aloita jännitteestä nolla ja kasvata sitä pienin askelin. Kun virta alkaa kasvaa, pienennä askelia. Lopeta sarja, kun virta lähestyy opettajan ilmoittamaa rajaa. Lue mittarit vasta, kun lukemat ovat asettuneet, ja mittaa sarja ripeästi, ettei LED ehdi lämmetä. Katkaise virta aina, kun vaihdat LEDiä.</p></div>
+<p>Muista mittausepävarmuus: kirjaa mittareiden lukematarkkuus ja aallonpituuden epävarmuus, eli tietolehden ilmoittama vaihteluväli tai oma arviosi. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Mittausepävarmuuden arvioiminen</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Käsittele tulokset kahdessa vaiheessa. Merkitse kaikkien kuvaajien akseleille suureet ja yksiköt, piirrä mittauspisteet, älä yhdistä niitä murtoviivalla, ja sovita suora vain niihin pisteisiin, joihin se mallin mukaan kuuluu. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Suoran sovittaminen ja kulmakertoimen tulkinta</a></span></p>
+<ol>
+<li>Piirrä jokaisen LEDin mittauksista virta–jännite-kuvaaja ja määritä siitä LEDin kynnysjännite. Kirjaa, miten määritit sen, ja perustele, miksi juuri tämä tapa kuvaa jännitettä, jolla LED alkaa lähettää fotoneja.</li>
+<li>Muunna aallonpituudet metreiksi. Piirrä kaikkien LEDien tuloksista kuvaaja, josta Planckin vakio saadaan kulmakertoimen avulla, ja perustele, miksi valitsit juuri nämä akselit.</li>
+<li>Millainen riippuvuus pisteistä näkyy? Jos sovitit pisteisiin suoran, kirjoita sen yhtälö ja pohdi, mistä mahdollinen vakiotermi voi johtua.</li>
+<li>Mikä on kulmakertoimen yksikkö? Laske Planckin vakio kulmakertoimesta ja tarkista, että yksiköksi tulee $\text{J}\cdot\text{s}$.</li>
+</ol>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Kynnysjännitteen määrittäminen.</strong> LEDin virta–jännite-kuvaaja on mallin mukaan tämän muotoinen:</p>
+<p><svg data-fig="iu" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja: LEDin sähkövirta I jännitteen U funktiona mallin mukaan. Pienillä jännitteillä virta on lähes nolla. Tietyn jännitteen jälkeen virta kasvaa jyrkästi ja lähes suoraviivaisesti. Jyrkän osan suora on jatkettu katkoviivalla vaaka-akselille, ja leikkauskohta on merkitty kynnysjännitteeksi U k. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="280" x2="484" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,280 L483,286 L483,274 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="281" x2="90" y2="36" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,24 L96,37 L84,37 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="265.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
+  <foreignObject x="80" y="-6.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$I$</div></foreignObject>
+  <polyline points="90,280 92.5,280 95.5,280 98,280 100.5,280 103.5,280 106,280 108.5,280 111.5,280 114,280 116.5,280 119.5,280 122,280 124.5,280 127,280 130,280 132.5,280 135,280 138,280 140.5,280 143,280 146,280 148.5,280 151,280 154,280 156.5,280 159,280 162,280 164.5,280 167,280 170,280 172.5,280 175,280 178,280 180.5,280 183,280 186,280 188.5,280 191,280 193.5,280 196.5,280 199,280 201.5,280 204.5,280 207,280 209.5,280 212.5,280 215,280 217.5,280 220.5,280 223,280 225.5,280 228.5,280 231,280 233.5,280 236.5,280 239,279.5 241.5,279.5 244.5,279.5 247,279.5 249.5,279.5 252.5,279 255,279 257.5,279 260,278.5 263,278.5 265.5,278 268,277.5 271,277 273.5,276.5 276,275.5 279,275 281.5,274 284,272.5 287,271.5 289.5,269.5 292,268 295,266 297.5,263.5 300,261 303,258 305.5,255 308,252 311,248.5 313.5,244.5 316,240.5 319,236.5 321.5,232 324,228 326.5,223.5 329.5,218.5 332,214 334.5,209 337.5,204.5 340,199.5 342.5,194.5 345.5,189.5 348,184.5 350.5,179.5 353.5,174.5 356,169 358.5,164 361.5,159 364,154 366.5,149 369.5,143.5 372,138.5 374.5,133.5 377.5,128.5 380,123 382.5,118 385.5,113 388,107.5 390.5,102.5 393,97.5 396,92.5 398.5,87 401,82 404,77 406.5,71.5 409,66.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="299,280 417,52" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+  <line x1="299" y1="272" x2="299" y2="288" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="282.5" y="289.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$U_\text{k}$</div></foreignObject>
+  <foreignObject x="101" y="102.5" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$\text{jyrkän osan suora}$</div></foreignObject>
+  <line x1="268.5" y1="119" x2="363.5" y2="151" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+</svg></p>
+<p>Kynnysjännitteen voi määrittää esimerkiksi näillä tavoilla:</p>
+<ul>
+<li><strong>Jyrkän osan suora.</strong> Sovita suora virta–jännite-kuvaajan jyrkästi nousevaan, lähes suoraan osaan ja jatka sitä vaaka-akselille. Leikkauskohdan jännite on kynnysjännite. Tapa käyttää monta mittauspistettä, joten yksittäisen lukeman virhe vaikuttaa vähemmän.</li>
+<li><strong>Valon syttyminen.</strong> Kasvata jännitettä hämärässä huoneessa hitaasti ja kirjaa jännite, jolla LEDistä näkyy ensimmäinen heikko valo. Tapa on nopea, mutta tulos riippuu katsojan silmästä ja huoneen valaistuksesta. Tapa sopii vain näkyvää valoa lähettäville LEDeille: infrapuna-LEDin valoa ei näe lainkaan, eikä UV- tai infrapuna-LEDiin katsota koskaan suoraan.</li>
+<li><strong>Pieni sovittu virta.</strong> Kirjaa jännite, jolla virta saavuttaa saman pienen arvon jokaisella LEDillä. Tapa on johdonmukainen, mutta tulos riippuu valitusta virrasta.</li>
+</ul>
+<p>Käytä samaa tapaa kaikilla LEDeillä.</p></div>
+<div class="inv-tuki" data-modes="O"><p>Määritä kynnysjännite jyrkän osan suoran avulla. Valitse virta–jännite-kuvaajassa pystyakselille virta $I$ ja vaaka-akselille jännite $U$. Valitse yhteisessä kuvaajassa pystyakselille kynnysjännite $U_\text{k}$ ja vaaka-akselille $\dfrac{1}{\lambda}$.</p></div>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Tarkista vastauksesi tästä: miksi juuri nämä akselit?</strong> Kun periaatteeseen $eU_\text{k} \approx hf$ sijoitetaan $f = \dfrac{c}{\lambda}$ ja ratkaistaan kynnysjännite, saadaan</p>
+<p>$$U_\text{k} = \frac{hc}{e}\cdot\frac{1}{\lambda}$$</p>
+<p>Tämä on suoran yhtälö $y = kx$, kun pystyakselille valitaan $U_\text{k}$ ja vaaka-akselille $\dfrac{1}{\lambda}$. Silloin kulmakerroin on $k = \dfrac{hc}{e}$, sen yksikkö on $\text{V}\cdot\text{m}$, ja Planckin vakio on $h = \dfrac{ek}{c}$. Jos vaaka-akselille valittaisiin aallonpituus $\lambda$, pisteet asettuisivat käyrälle eikä suoralle. Toinen hyvä valinta on pystyakselille fotonin energia $eU_\text{k}$ ja vaaka-akselille taajuus $f = \dfrac{c}{\lambda}$: silloin kulmakerroin on suoraan $h$. Aallonpituus muunnetaan metreiksi ennen käänteisluvun laskemista: $1\ \text{nm} = 10^{-9}\ \text{m}$.</p>
+<p>Tarkista vielä kuvaajastasi: ovatko pisteet suoralla, ja kulkeeko suora origon kautta? Jos kaikkien LEDien kynnysjännitteissä on sama lisäosa, suora siirtyy ylös tai alas, mutta kulmakerroin ei muutu. Eri materiaaleista tehdyillä LEDeillä lisäosa voi olla erisuuruinen, ja silloin se muuttaa myös kulmakerrointa.</p></div>
+<p>Kuvaajien piirtämiseen ja sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita Planckin vakio muodossa $h = (h \pm \Delta h)\ \text{J}\cdot\text{s}$ ja perustele, miten arvioit epävarmuuden $\Delta h$.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Koska $e$ ja $c$ ovat tarkkoja arvoja, Planckin vakion suhteellinen epävarmuus on sama kuin kulmakertoimen: $\dfrac{\Delta h}{h} = \dfrac{\Delta k}{k}$. Kulmakertoimen epävarmuuden voit arvioida jommallakummalla tavalla:</p>
+<ul>
+<li><strong>Sovitusohjelman keskivirhe.</strong> Monet ohjelmat ilmoittavat kulmakertoimen keskivirheen. Käytä sitä epävarmuutena $\Delta k$.</li>
+<li><strong>Jyrkin ja loivin suora.</strong> Piirrä jyrkin ja loivin suora, jotka vielä sopivat pisteisiin niiden epävarmuuksien rajoissa. Määritä niiden kulmakertoimet $k_\text{max}$ ja $k_\text{min}$ ja arvioi epävarmuus vaihteluvälin puolikkaana: $\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$.</li>
+</ul>
+<p>Pisteiden epävarmuudet saat näin. Kynnysjännitteen epävarmuuden voit arvioida sovittamalla jyrkkään osaan jyrkimmän ja loivimman sopivan suoran ja katsomalla, kuinka paljon niiden leikkauskohdat eroavat. Suureen $\dfrac{1}{\lambda}$ suhteellinen epävarmuus on sama kuin aallonpituuden: $\dfrac{\Delta(1/\lambda)}{1/\lambda} = \dfrac{\Delta\lambda}{\lambda}$.</p>
+<p>Pyöristä $\Delta h$ yhteen merkitsevään numeroon ja $h$ samaan tarkkuuteen.</p></div>
+<div class="inv-tuki" data-modes="O"><p>Ohjatussa työtavassa käytä kulmakertoimen epävarmuutena jyrkimmän ja loivimman suoran menetelmää.</p></div>
+<p>Vertaa tulosta Planckin vakion tunnettuun arvoon $h = 6{,}626\,070\,15\cdot10^{-34}\ \text{J}\cdot\text{s}$. Laske, kuinka monta prosenttia tuloksesi poikkeaa siitä, ja tarkista, mahtuuko tunnettu arvo epävarmuusvälisi sisään.</p>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä tekijät aiheuttivat mittausepävarmuutta, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet olisivat muuttaneet tulosta? Jos tunnettu arvo jää epävarmuusvälisi ulkopuolelle, ero ei selity pelkillä lukematarkkuuksilla: mieti, mitkä Teoriaa lyhyesti -kohdan mallin ehdoista eivät ehkä täyttyneet. Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Viittaa kuvaajiin, esimerkiksi "kuvaajasta 2 nähdään, että …". Vastaa lisäksi:</p>
+<ul>
+<li>Millä perusteella LEDin kynnysjännite voidaan määrittää, ja olisiko toinen määritystapa voinut muuttaa tulosta?</li>
+<li>Kuinka hyvin LEDin lähettämän fotonin energiaa voidaan arvioida kynnysjännitteen avulla? Laske jokaiselle LEDille fotonin energia $\dfrac{hc}{\lambda}$ Planckin vakion tunnetulla arvolla ja vertaa sitä energiaan $eU_\text{k}$.</li>
+<li>Onko ero tuloksesi ja tunnetun arvon välillä mittausepävarmuuden rajoissa, vai viittaako se mallin likimääräisyyteen?</li>
+</ul>
+<p>Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tausta ja teoria:</strong> fotonin energia, periaate $eU_\text{k} \approx hf$ ehtoineen ja perustelu kuvaajan akseleille.</li>
+<li><strong>Koejärjestely ja menetelmä:</strong> kytkentäkaavio, mistä LEDien aallonpituudet ovat peräisin ja miten määritit kynnysjännitteen.</li>
+<li><strong>Mittaustulokset:</strong> jokaisen LEDin mittaussarja omana taulukkonaan ja yhteenvetotaulukko, jossa johdetut suureet ovat mitattujen oikealla puolella.</li>
+<li><strong>Tulos:</strong> $h = (h \pm \Delta h)\ \text{J}\cdot\text{s}$ oikein pyöristettynä ja poikkeama tunnetusta arvosta.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin rajat.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-aallonpituudet-itse-hilalla"><h2 id="h-laajennus-aallonpituudet-itse-hilalla">Laajennus: aallonpituudet itse hilalla</h2>
+<p>Tietolehden aallonpituuden sijasta voit mitata LEDin aallonpituuden itse. Spektrometri näyttää valon aallonpituusjakauman suoraan, jos koulussa on sellainen. Hilassa on tiheässä hyvin kapeita rakoja, ja se taivuttaa eri aallonpituuksia eri suuntiin. Lähin sivukuva eli ensimmäisen kertaluvun kuva syntyy kulmaan $\theta$, jolle pätee</p>
+<p>$$d\sin\theta = \lambda$$</p>
+<p>missä $d$ on hilan kahden vierekkäisen raon välimatka eli hilavakio ja $\lambda$ valon aallonpituus. Jos hilaan on merkitty rakojen määrä millimetrillä $N$, hilavakio on $d = \dfrac{1\ \text{mm}}{N}$. Hilaa ja valon diffraktiota käsitellään tarkemmin moduulissa FY7.</p>
+<p><svg data-fig="grating" viewBox="0 0 600 360" role="img" aria-label="Kaaviokuva ylhäältä. Vasemmalla on kapea rako, jonka takana on LED, ja raon kohdalla poikittainen mitta-asteikko. Oikealla etäisyydellä L asteikosta on hila ja sen takana silmä. Valo kulkee raosta suoraan hilaan. Silmä näkee raon värillisen kuvan asteikolla etäisyydellä x raosta, suunnassa, joka poikkeaa kulman theta verran raon suunnasta." style="max-width:100%;font-size:24px">
+  <rect x="104" y="40" width="12" height="280" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
+  <line x1="116" y1="52" x2="126" y2="52" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="72" x2="122" y2="72" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="92" x2="122" y2="92" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="112" x2="122" y2="112" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="132" x2="122" y2="132" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="152" x2="126" y2="152" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="172" x2="122" y2="172" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="192" x2="122" y2="192" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="212" x2="122" y2="212" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="232" x2="122" y2="232" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="252" x2="126" y2="252" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="272" x2="122" y2="272" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="292" x2="122" y2="292" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="116" y1="312" x2="122" y2="312" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <rect x="102" y="245" width="16" height="10" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <rect x="48" y="234" width="34" height="32" rx="6" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="4" y="239" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{LED}$</div></foreignObject>
+  <line x1="470" y1="160" x2="470" y2="300" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
+  <line x1="466" y1="166" x2="474" y2="166" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="179" x2="474" y2="179" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="192" x2="474" y2="192" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="205" x2="474" y2="205" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="218" x2="474" y2="218" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="231" x2="474" y2="231" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="244" x2="474" y2="244" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="257" x2="474" y2="257" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="270" x2="474" y2="270" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="466" y1="283" x2="474" y2="283" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="480" y="134" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{hila}$</div></foreignObject>
+  <path d="M500,236 Q526,220 552,250 Q526,280 500,264" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="516" cy="250" r="8" fill="#1f2933"/>
+  <foreignObject x="510" y="282" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{silmä}$</div></foreignObject>
+  <line x1="118" y1="250" x2="455" y2="250" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M468,250 L454,256.5 L454,243.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <line x1="470" y1="250" x2="118" y2="100" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <circle cx="110" cy="100" r="7" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2"/>
+  <path d="M400,250 A70,70 0 0 1 405.5,222.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="366" y="213.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\theta$</div></foreignObject>
+  <line x1="110" y1="320" x2="470" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="110" y1="310" x2="110" y2="330" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="470" y1="310" x2="470" y2="330" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="280" y="327.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
+  <line x1="82" y1="100" x2="82" y2="250" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="72" y1="100" x2="92" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="72" y1="250" x2="92" y2="250" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="48" y="160.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x$</div></foreignObject>
+</svg></p>
+<p>Kun katsot raon takana loistavaa LEDiä hilan läpi, näet raon sivulla värillisen kuvan. Mittaa etäisyys $L$ asteikosta hilaan ja kuvan etäisyys $x$ raosta asteikolla. Silloin $\tan\theta = \dfrac{x}{L}$, josta saat kulman $\theta$ ja edelleen aallonpituuden. Vertaa mittaamaasi aallonpituutta tietolehden arvoon epävarmuuksineen: ovatko ne sopusoinnussa? Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Miten aallonpituuden epävarmuus vaikuttaa Planckin vakion epävarmuuteen?</p>
+<p>Katso hilan läpi vain sellaista näkyvää valoa lähettävää LEDiä, jonka opettaja on hyväksynyt tähän, ja pidä virta niin pienenä, että LED loistaa himmeästi. UV- ja infrapuna-LEDejä ei katsota hilan läpi.</p>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Vihjeitä.</strong> Pimennä huone ja pidä hila kohtisuorassa raosta tulevaan valoon nähden. Mittaa kuva raon molemmilta puolilta ja käytä etäisyyksien keskiarvoa: silloin hilan pieni vinous kumoutuu. Mitä suurempi $L$, sitä pienempi on etäisyyksien lukemisen suhteellinen epävarmuus, kunhan kuva vielä erottuu. LED lähettää kapean aallonpituusalueen, joten kuva on hieman leveä: lue sen keskikohta.</p></div>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi kuvaajiin ja mittaustuloksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Valitse työhön erivärisiä tavallisia näkyvän valon LEDejä, joista on saatavilla tietolehti. Tietolehdestä luetaan sekä aallonpituus (yleensä huippuaallonpituus ja sen vaihteluväli) että suurin sallittu sähkövirta; kerro raja oppilaille ennen mittausta. Valkoinen LED ei sovellu, koska sen valo syntyy yleensä sinisen LEDin ja loisteaineen yhdistelmänä eikä sillä ole yhtä aallonpituutta. Päätä etukäteen, käytetäänkö UV- tai infrapuna-LEDejä lainkaan; niiden valoa ei juuri näe, mutta se voi vahingoittaa silmiä. Jos UV-LEDejä käytetään, varaa ryhmille UV-säteilyltä suojaavat silmäsuojaimet. Valon syttymiseen perustuva kynnysjännitteen määritys sopii vain näkyvän valon LEDeille. Anna jokaiselle ryhmälle sarjavastus, joka rajoittaa virran sallitulle tasolle myös silloin, kun säädettävä vastus on pienimmillään ja virtalähteen jännite suurimmillaan. Käytä tasajännitelähdettä. Tarkista, että virtamittarissa on milliampeerialue. Jos ryhmät määrittävät kynnysjännitteen valon syttymisestä, tarvitaan hämärä tila. Laajennukseen tarvitaan hila, jonka rakotiheys tunnetaan, kapea rako, mitta-asteikko ja mittanauha, tai spektrometri.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Jännitemittari kytketään virtalähteen napoihin tai LEDin ja vastuksen yhdistelmän yli, jolloin se näyttää myös vastuksen jännitteen.</li>
+<li>LED kytketään estosuuntaan, jolloin virtaa ei kulje lainkaan. Estosuuntainen jännite voi myös vaurioittaa LEDiä.</li>
+<li>Kynnysjännitteeksi luetaan jännite suurimmalla mitatulla virralla, tai eri LEDeillä käytetään eri määritystapaa.</li>
+<li>Aallonpituus jätetään nanometreiksi, jolloin kulmakertoimen suuruusluokka ja Planckin vakion kymmenen potenssi menevät väärin.</li>
+<li>Kulmakerrointa pidetään suoraan Planckin vakiona, vaikka kuvaajan $U_\text{k}$–$\dfrac{1}{\lambda}$ kulmakerroin on $\dfrac{hc}{e}$.</li>
+<li>Planckin vakio lasketaan jokaisesta LEDistä erikseen ja tuloksista otetaan keskiarvo, jolloin mahdollinen kaikille LEDeille yhteinen lisäosa kynnysjännitteessä ei kumoudu.</li>
+<li>Tulosta verrataan tunnettuun arvoon ilman epävarmuutta, tai jokainen ero selitetään mittausvirheellä. Yhteys $eU_\text{k} \approx hf$ on likimääräinen, joten osa erosta voi johtua mallista.</li>
+<li>Aallonpituus arvataan LEDin värin perusteella.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Ohjatussa työtavassa sivu kiinnittää LEDien ja mittauspisteiden määrän, kynnysjännitteen määritystavan, epävarmuuden arviointitavan, akselit ja taulukot, ja teoriaosa johtaa mallin kuvaajaksi. Osittain ohjatussa opiskelija päättää mittausalueen ja pisteiden määrän, valitsee määritystavan ja epävarmuuden arviointitavan annetuista vaihtoehdoista perustellen ja valitsee kuvaajan akselit itse; mallin johto ja akselien perustelu näytetään vasta tarkistuksena hänen oman valintansa jälkeen. Itsenäisessä työtavassa annetaan tutkimuskysymys, välineet, fysiikan periaate ja turvallisuusrajat; opiskelija johtaa kuvaajan ja valitsee kaikki menetelmät itse, ja laajennus kuuluu työhön, jos hila tai spektrometri on käytettävissä. Fysiikka on moduulien FY6–FY8 asiaa, joten työ sopii parhaiten opiskelijalle, joka on suorittanut ne tai on valmis opiskelemaan sivun lyhyet selitykset huolella.</p>
+<p><strong>Turvallisuus.</strong> Sähkövirran raja ja sarjavastus tulevat koulun LEDien tietolehdistä, ja opettaja ilmoittaa ne ryhmille; sivu ei anna lukuarvoja. Tarkista jokaisen ryhmän kytkentä ennen kuin virta kytketään. Kirkkaisiin LEDeihin ei katsota suoraan, ja opettaja päättää, mitä LEDejä käytetään; UV- ja infrapuna-LEDeihin ei katsota koskaan suoraan, UV-LEDien kanssa käytetään opettajan antamia silmäsuojaimia, eikä niitä käytetä hilamittauksessa. Virtapiirissä käytetään vain pienjännitelähdettä. Sarjavastus voi lämmetä, jos virta on suuri.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>

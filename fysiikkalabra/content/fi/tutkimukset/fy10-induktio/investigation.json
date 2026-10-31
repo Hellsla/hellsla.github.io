@@ -1,0 +1,121 @@
+{
+  "id": "fy10-induktio",
+  "type": "investigation",
+  "title": "Sähkömagneettisen induktion tutkiminen",
+  "question": "Miten käämiin indusoituva jännite riippuu valitsemastasi tekijästä, esimerkiksi magneetin nopeudesta tai käämin kierrosluvusta?",
+  "description": "Kokeellinen tutkimus: valitse yksi tekijä ja selvitä mittaamalla, miten käämin läpi kulkevan magneetin synnyttämän jännitepulssin huippuarvo ja pinta-ala riippuvat siitä.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY7",
+    "FY1",
+    "FY4"
+  ],
+  "source": "Esimerkkityöt.pdf s. 11–12 (Sähkömagneettisen induktion tutkiminen), opettajan aineisto",
+  "learn": [
+    "muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja valitsemaan, mitä muutat ja mitä pidät vakiona",
+    "lukemaan jännite–aika-kuvaajasta pulssin huippuarvon ja pinta-alan ja tulkitsemaan ne induktiolain avulla",
+    "perustelemaan kuvaajien avulla, miten indusoitunut jännite riippuu tutkitusta tekijästä"
+  ],
+  "variants": [
+    {
+      "id": "nopeus",
+      "title": "Magneetin nopeus",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "oma-tekija",
+      "title": "Kierrosluku tai muu itse valittu tekijä ja kahden tekijän vertailu",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähkömagneettinen induktio ja induktiolaki",
+      "missing": "FY7: Sähkömagneettinen induktio",
+      "why": "Tutkimuksen fysiikka; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Magneettikenttä ja magneettivuo",
+      "missing": "FY7: Magnetismi, magneettinen dipoli ja magneettikenttä",
+      "why": "Auttaa kuvittelemaan, miten magneetin kenttä kulkee käämin kierrosten läpi."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Lenzin laki",
+      "missing": "FY7: Lenzin laki ja pyörrevirrat",
+      "why": "Liittyy indusoituneen jännitteen etumerkkiin; lyhyt selitys on tällä sivulla."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Jännitteen mittaaminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Jännitemittarin tai jänniteanturin kytkeminen käämin päihin."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-8",
+      "why": "Energiaperiaate liikkeen kuvaamisessa."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Toistomittausten keskiarvo ja mittausepävarmuuden arvioiminen."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittausdatan tallentaminen anturilla ja käsittely ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Mittausdatan tallentaminen ja käsittely."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Mittauspisteiden kuvaaja ja mallin sovitus ohjelmalla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Riippuvuus ja sen epävarmuus saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "käämejä, joissa on eri kierrosluvut",
+    "kestomagneetteja",
+    "jänniteanturi ja tiedonkeruuohjelma",
+    "tarvittaessa mittanauha tai viivain ja ajanottoväline",
+    "tarvittaessa muoviputki ja pehmeä alusta magneetille"
+  ],
+  "safety": [
+    "Voimakkaat magneetit voivat puristaa sormia ja lohjeta, jos ne napsahtavat yhteen tai toisiinsa. Käsittele niitä yksi kerrallaan ja pidä ne erillään toisistaan.",
+    "Pidä magneetit erillään puhelimista, maksukorteista ja tietokoneesta. Jos sinulla on sydämentahdistin tai muu lääkinnällinen laite, kerro siitä opettajalle ennen työtä.",
+    "Käämi kytketään vain jänniteanturiin. Älä kytke siihen virtalähdettä tai verkkojännitettä.",
+    "Jos pudotat magneetteja, pudota ne pehmeälle alustalle, jotta ne eivät rikkoudu tai kimpoa."
+  ]
+}

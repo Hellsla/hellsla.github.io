@@ -1,0 +1,110 @@
+{
+  "id": "fy10-kondensaattori",
+  "type": "investigation",
+  "title": "Kondensaattorin kapasitanssin määrittäminen",
+  "question": "Miten kondensaattorin jännite muuttuu, kun kondensaattori purkautuu tai varautuu vastuksen kautta, ja kuinka suuri on kondensaattorin kapasitanssi?",
+  "description": "Kokeellinen tutkimus: mittaa kondensaattorin jännite ajan funktiona sen purkautuessa tai varautuessa vastuksen kautta, sovita malli, määritä aikavakio ja kapasitanssi ja vertaa merkittyyn arvoon.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY6"
+  ],
+  "source": "Esimerkkityöt.pdf s. 9 (Kondensaattorin kapasitanssin määrittäminen), opettajan aineisto",
+  "learn": [
+    "määrittämään aikavakion mittaustuloksiin sovitetusta mallista",
+    "perustelemaan mittaustulosten avulla, miten vastuksen resistanssi vaikuttaa kondensaattorin purkautumiseen tai varautumiseen",
+    "vertaamaan mittaustulosta valmistajan ilmoittamaan arvoon epävarmuuksien avulla"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Aikavakio ja kapasitanssi kahdella resistanssilla",
+      "physics": "F3",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Aikavakion ja resistanssin kuvaaja",
+      "physics": "F3",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Resistanssi ja Ohmin laki",
+      "missing": "FY6: Resistanssi ja Ohmin laki",
+      "why": "Vastuksen läpi kulkevan virran ja jännitteen yhteys; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Kondensaattori ja kapasitanssi",
+      "missing": "FY6: Kondensaattori ja kondensaattorin energia",
+      "why": "Kapasitanssin määritelmä; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Kondensaattorin varaaminen ja purkaminen",
+      "missing": "FY6: Kondensaattorin varaaminen ja purkaminen",
+      "why": "Tutkittava ilmiö; työssä tarvittavat perusteet ovat tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Kytkennän tekeminen ja jännitteen mittaaminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Kytkentäkaavion piirtäminen ja jännitemittarin kytkeminen; tarvittavat ohjeet ovat tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, mallin sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Jännitteen tallentaminen anturilla ja mallin sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Aikavakio ja sen epävarmuus saadaan mittaustuloksiin sovitetusta mallista."
+    }
+  ],
+  "equipment": [
+    "kondensaattori, esimerkiksi elektrolyyttikondensaattori, jonka kapasitanssi ja suurin sallittu jännite on merkitty",
+    "vastuksia, joilla on eri resistanssit",
+    "pienjännitteinen tasajännitelähde",
+    "jänniteanturi ja mittausohjelmisto tai jännitemittari ja ajanottoväline",
+    "kytkin",
+    "johtimia",
+    "yleismittari resistanssin mittaamiseen"
+  ],
+  "safety": [
+    "Tarkista elektrolyyttikondensaattorin napaisuus ennen kytkemistä: plusnapa kytketään jännitelähteen plusnavan puolelle. Väärin päin kytketty elektrolyyttikondensaattori voi kuumentua ja vaurioitua, jopa haljeta.",
+    "Älä ylitä kondensaattoriin merkittyä suurinta sallittua jännitettä. Lue raja kondensaattorin merkinnöistä tai kysy se opettajalta, ja säädä jännitelähde sen alapuolelle ennen kytkemistä.",
+    "Pura kondensaattori vastuksen kautta ennen kuin muutat kytkentää tai kosket sen napoihin. Älä oikosulje kondensaattoria johtimella.",
+    "Käytä vain opettajan antamaa pienjännitteistä tasajännitelähdettä. Verkkojännitettä ei kytketä oppilaiden virtapiireihin.",
+    "Näytä kytkentä opettajalle ennen kuin kytket jännitelähteen päälle."
+  ]
+}
