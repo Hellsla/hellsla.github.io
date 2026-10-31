@@ -88,7 +88,7 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Videoanalyysi: videon mittakaavan asettaminen tunnetun pituuden avulla ja pallon paikan merkitseminen kuva kuvalta (videoanalyysiohjelma tai puhelimen sovellus)",
+      "text": "Videoanalyysi: videon mittakaavan asettaminen tunnetun pituuden avulla ja pallon paikan merkitseminen kuva kuvalta Vernier Video Analysis -sovelluksella",
       "guides": ["tvt-videoanalyysi", "tvt-nopeus-datasta"],
       "why": "Pallon paikka ajan funktiona saadaan videolta."
     },
@@ -107,7 +107,7 @@
     "vaaka, jonka tarkkuus riittää kevyen pallon punnitsemiseen",
     "mittanauha pallon halkaisijan tai ympärysmitan mittaamiseen",
     "lämpömittari ja ilmanpaineen lukema, tai ilman tiheys taulukosta",
-    "videoanalyysiohjelma tai -sovellus ja kuvaajaohjelma",
+    "Vernier Video Analysis ja Graphical Analysis Pro",
     "laajennukseen pieniä lisäpainoja, esimerkiksi paperiliittimiä, ja teippiä"
   ],
   "safety": [

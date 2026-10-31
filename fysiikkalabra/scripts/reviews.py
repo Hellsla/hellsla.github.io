@@ -62,6 +62,7 @@ RULES = {                       # category: (science, pedagogy)
     "notation":       ("none",  "none"),    # a vector symbol rewritten \\mathbf{F} / \\vec{F} → \\overline{F}, nothing else (teacher 2026-10-29)
     "force-diagram":  ("delta", "none"),    # a ```voimakuvio spec added to a step, drawn by fbdspec.py; the text unchanged (teacher 2026-10-30)
     "force-diagram-copy": ("none", "none"),  # a translation's force-diagram specs, identical to the reviewed Finnish ones (check_i18n.py)
+    "level-policy":   ("none",  "none"),    # the chapter's own "Taso 1 riittää …" sentence deleted, nothing else: the template says which exercises are core (teacher 2026-10-31)
     "chapter-ref":    ("none",  "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta"),   # prose without a number, formula, symbol or unit
@@ -81,6 +82,7 @@ WHY = {"tests": "simulation tests added or tightened", "comments": "comments onl
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
+       "level-policy": "the chapter's own level-policy sentence (\"Taso 1 riittää …\") deleted, nothing else",
        "notation": "vector symbols rewritten with an overline, nothing else",
        "force-diagram-copy": "the Finnish force-diagram specs copied unchanged into the translation",
        "force-diagram": "force diagrams drawn from a spec beside their Voimakuvio steps (fbdspec.py), the text unchanged",
@@ -407,6 +409,16 @@ def chapter_titles():
     return frozenset(json.loads(f.read_text()).get("title", "") for f in (ROOT / "content").glob("*/*/*/meta.json"))
 
 
+LEVEL_POLICY = re.compile(   # the sentence the teacher removed from 18 chapters' exercise intros (2026-10-31), fi / fi-easy / en
+    r" Taso 1 riittää perusosaamiseen[;.] [Tt]asot 2 ja 3 (?:ovat vapaaehtoisia ja syventäviä|ovat syventäviä|syventävät)(?:, joten tee ne, jos taso 1 sujuu)?\.(?: Tee ne, jos taso 1 sujuu\.)?"
+    r"| Level 1 is enough for [^;\"]*; levels 2 and 3 [^.\"]*\.")
+
+
+def _level_policy_removed(old, new):
+    """True when the new line is the old one with its level-policy sentence deleted and nothing else changed."""
+    return old != new and LEVEL_POLICY.search(old) is not None and LEVEL_POLICY.sub("", old) == new
+
+
 def _chapter_refs_renamed(old, new):
     """True when two lines differ only in the titles of chapter references and every new one is a current title."""
     blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
@@ -434,6 +446,9 @@ def classify(path, diff_lines, lid):
             for o in list(rem):
                 n = next((l for l in add if l != o and _chapter_refs_renamed(o, l)), None)
                 if n is not None: cats.add("chapter-ref"); rem.remove(o); add.remove(n)
+            for o in list(rem):
+                n = next((l for l in add if _level_policy_removed(o, l)), None)
+                if n is not None: cats.add("level-policy"); rem.remove(o); add.remove(n)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:
@@ -582,7 +597,7 @@ def changes(folder, base, part="lesson", split=False):
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
             ra2, rb2 = FBD_SPEC.sub("", ra or ""), FBD_SPEC.sub("", rb)
-            if ra2 != (ra or "") or rb2 != rb:
+            if FBD_SPEC.findall(ra or "") != FBD_SPEC.findall(rb):   # a spec added or changed; unchanged specs are no change
                 fi_rel = re.sub(r"^content/[^/]+/", f"content/{courses.SOURCE_LANG}/", rel)
                 copy = fi_rel != rel and FBD_SPEC.findall(rb) == FBD_SPEC.findall(new.source(fi_rel) or "")
                 cats.add("force-diagram-copy" if copy else "force-diagram"); ra, rb = ra2, rb2; a, b = _view(ra, rel, False), _view(rb, rel, False)
@@ -639,6 +654,11 @@ def scope(folder, part="lesson"):
         if rep[1] == content_hash(folder, part):
             out[name] = {"mode": "delta", "base": None, "why": "0 changed wording line(s): the version it passed", "diff": "", "categories": []}; continue
         base, split = passed_at(log, folder, part, rep[1])
+        if base is None:   # passed long ago: an earlier carry row of this reviewer names a commit that held the passed version
+            for c in reversed(carries(folder, part)):
+                full = c["reviewer"] == name and c["from"] == rep[1] and (git("rev-parse", "--verify", "-q", c["base"] + "^{commit}") or "").strip()
+                if full and hash_at(full, folder, part) == rep[1]: base = full; break
+                if full and hash_at(full, folder, "all") == rep[1]: base, split = full, True; break
         if base is None: out[name] = {"mode": "full", "base": None, "why": "the version it passed is not in git history", "diff": "", "categories": []}; continue
         if (base, split) not in cache: cache[base, split] = changes(folder, base, part, split)
         cats, diff, n = cache[base, split]

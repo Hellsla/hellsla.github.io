@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3c80ed435db28b3f
+CONTENT-HASH: 5e2aca782380174c
 
 ## Blocking
 None.
@@ -19,3 +19,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Delta 5 (2026-10-31)
+
+- Extension level E3→E2 only (teacher 2026-10-31). The extension reuses the pendulum method: time several periods, linearise $T^2 = (4\pi^2/k)\,m$, slope gives $k$ — a repeat of a known method, so E2 fits. No physics text changed.

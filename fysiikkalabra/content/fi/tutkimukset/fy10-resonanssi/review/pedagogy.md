@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2ca8cd07a7ffc11f
+CONTENT-HASH: bfdd5fb8b804d49d
 
 ## Blocking
 
@@ -23,3 +23,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Delta 5 (2026-10-31)
+
+- Extension experiment level E3→E2 (teacher's decision): fair — *Toista mittaus usealla eri taajuudella* repeats the basic E2 measurement and adds one λ vs 1/f fit; now consistent with the basic variant (F2/E2). Text unchanged.

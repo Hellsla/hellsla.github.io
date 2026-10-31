@@ -231,6 +231,11 @@ def check_lesson_md(L, folder):
     for jf in ("inquiry.json", "exit-ticket.json", "exercises/exercises.json"):
         f = courses.lesson_file(folder, jf) if "/" not in jf else folder / jf
         if f.exists(): check_plain_quantities(L, jf, f.read_text())
+    f = courses.lesson_file(folder, "inquiry.json")
+    if f.exists():   # the page template says which exercises are core (lang lesson.exercise_path); a chapter's own text must not contradict it (teacher 2026-10-31)
+        src = f.read_text()
+        for m in re.finditer(r"Taso 1 riittää|[Tt]asot 2 ja 3 (?:ovat vapaaehtoisia|ovat syventäviä|syventävät)|Level 1 is enough", src):
+            L.err("inquiry.json", src.count("\n", 0, m.start()) + 1, f"\"{m.group(0)}\": the template already says which exercises are core (two of level 1 and two of level 2); do not set a level policy in the chapter")
     check_math(L, "lesson.md", text)
     check_lesson_form(L, text)
     check_figures(L, text)

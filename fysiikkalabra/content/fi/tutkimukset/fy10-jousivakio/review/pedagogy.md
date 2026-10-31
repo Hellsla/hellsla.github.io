@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3c80ed435db28b3f
+CONTENT-HASH: 5e2aca782380174c
 
 ## Blocking
 
@@ -25,3 +25,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Delta 5 (2026-10-31)
+
+- Extension experiment level E3→E2 (teacher's decision): fair — period vs mass with T² linearisation is the same timing-and-slope method as the pendulum investigation; the extension text asks for nothing beyond E2. Text unchanged.

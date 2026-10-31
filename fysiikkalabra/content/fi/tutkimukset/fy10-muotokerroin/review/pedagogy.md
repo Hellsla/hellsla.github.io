@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a9c7960a062d547f
+CONTENT-HASH: 4c33ebb3c536e131
 
 ## Blocking
 
@@ -24,3 +24,8 @@ None.
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
 - Fit is now an instruction (*Sovita suora Graphical Analysis Pro -ohjelmalla*).
+
+## Delta 5 (2026-10-31)
+
+- Tool line now an instruction naming one app per step: points in Vernier Video Analysis, fit in Graphical Analysis Pro; equipment list, TVT need and teacher.md (try scale, frame rate and transfer to GA Pro in advance) agree with each other and with tvt-videoanalyysi. No invented menu names; Finnish grammatical (*Prohon* correct).
+- Earlier polish still open: the video-analysis link sits with the fitting links.

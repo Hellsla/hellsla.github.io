@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 43827baa8113f8bc
+CONTENT-HASH: 364d8e22b9c0ae39
 
 ## Blocking
 - None.
@@ -19,3 +19,9 @@ CONTENT-HASH: 43827baa8113f8bc
 
 - Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
 - Only change: "monikertaisia" → "moninkertaisia". No science impact. No GA menu names in this guide.
+
+## Delta 5 (2026-10-31)
+
+- Steps 1, 3, 4 now name Vernier Video Analysis for frame-by-frame marking and GA Pro for the data; this resolves the earlier Polish point (GA Pro no longer implied to mark frames).
+- Export hedged: "esimerkiksi CSV-tiedostona" plus "Kysy opettajalta, jos et löydä tiedoston vientiä"; no Video Analysis menu names invented. GA Pro claim still only the verified video sync (Pro).
+- Grammar checked ("Video Analysisista", "Prossa", "Prohon"); step 3 still repeats its bold heading (Polish, unchanged). No physics changed.

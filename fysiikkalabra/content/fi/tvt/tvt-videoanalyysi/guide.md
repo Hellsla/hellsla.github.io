@@ -59,13 +59,13 @@ Tutkimuksessa *Pallon muotokertoimen määrittäminen* pallon rajanopeus määri
 
 ### Analysointi
 
-1. **Avaa video koulun videoanalyysiohjelmassa.** Tarkista ensin, että ohjelma käyttää videon todellista kuvataajuutta.
+1. **Avaa video Vernier Video Analysis -sovelluksessa.** Koulussa videot analysoidaan Vernier Video Analysis -sovelluksella ja data käsitellään sen jälkeen Graphical Analysis Prossa. Tarkista ensin, että ohjelma käyttää videon todellista kuvataajuutta.
 
 2. **Aseta mittakaava ja koordinaatisto.** Merkitse mittakaavaksi mitta-asteikon päät ja kirjoita asteikon todellinen pituus. Aseta koordinaatiston origo ja akselien suunnat, esimerkiksi $y$-akseli ylöspäin.
 
-3. **Merkitse kohteen paikka kuva kuvalta.** Merkitse kohteen paikka kuva kuvalta koulun videoanalyysiohjelmalla (opettaja kertoo, kumpaa käytetään: Graphical Analysis Pro vai Vernier Video Analysis). Napsauta jokaisessa kuvassa kappaleen samaa kohtaa, esimerkiksi pallon keskipistettä. Ohjelma kirjaa jokaisesta kuvasta ajan $t$ ja paikan koordinaatit $x$ ja $y$.
+3. **Merkitse kohteen paikka kuva kuvalta.** Merkitse kohteen paikka kuva kuvalta Vernier Video Analysis -sovelluksessa. Napsauta jokaisessa kuvassa kappaleen samaa kohtaa, esimerkiksi pallon keskipistettä. Ohjelma kirjaa jokaisesta kuvasta ajan $t$ ja paikan koordinaatit $x$ ja $y$.
 
-4. **Analysoi data Graphical Analysis Prossa.** Jos merkitsit paikat toisessa ohjelmassa, siirrä sarakkeet $t$, $x$ ja $y$ Graphical Analysis Prohon esimerkiksi CSV-tiedostona. Piirrä paikka ajan funktiona ([[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]]), sovita malli ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]) ja laske nopeus ohjeen [[ohje:tvt-nopeus-datasta|Nopeuden ja matkan määrittäminen mittausdatasta]] mukaan.
+4. **Analysoi data Graphical Analysis Prossa.** Siirrä Video Analysisista sarakkeet $t$, $x$ ja $y$ Graphical Analysis Prohon esimerkiksi CSV-tiedostona. Kysy opettajalta, jos et löydä tiedoston vientiä. Piirrä paikka ajan funktiona ([[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]]), sovita malli ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]) ja laske nopeus ohjeen [[ohje:tvt-nopeus-datasta|Nopeuden ja matkan määrittäminen mittausdatasta]] mukaan.
 
 ### Ilman analyysiohjelmaa
 
