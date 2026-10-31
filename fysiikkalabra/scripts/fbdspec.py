@@ -304,6 +304,18 @@ def _restore_sums(res, hz, big):
     return [tuple(x) for x in out], faces
 
 
+def _keep_order(kk, true_vec, ax, forces, sym, big):
+    """Two small forces lifted to the floor can come out equal, so a component that wins on the axis (G_x down a 4°
+    slope against a smaller friction) would look balanced. Keep the winner longer than what it beats, by its true
+    excess or at least 5 % of the largest force."""
+    t = true_vec[0] * ax[0] + true_vec[1] * ax[1]
+    if not kk or not t: return kk
+    opp_true = sum(-(x[1][0] * ax[0] + x[1][1] * ax[1]) for x in forces if x[0] != sym and (x[1][0] * ax[0] + x[1][1] * ax[1]) * t < 0)
+    opp_drawn = sum(-(x[2][0] * ax[0] + x[2][1] * ax[1]) for x in forces if x[0] != sym and (x[2][0] * ax[0] + x[2][1] * ax[1]) * t < 0)
+    if abs(t) <= abs(opp_true) + 1e-9 or abs(kk) > abs(opp_drawn) + 0.05 * big - 1e-9: return kk
+    return math.copysign(abs(opp_drawn) + max(abs(t) - abs(opp_true), 0.05 * big), kk)
+
+
 def _probe(b, cx, cy, ang, scale):
     """[(size, horizontal?)] of a body's forces."""
     probe = []
@@ -377,7 +389,8 @@ def draw(spec, fid, _frame=None):
             for sym in b["comps"]:
                 sym_, vec, at = next((x[0], x[2], x[3]) for x in forces if x[0] == sym)
                 for ax, c in zip(axes, "xy"):
-                    kk = floor(vec[0] * ax[0] + vec[1] * ax[1]); v = (ax[0] * kk, ax[1] * kk)   # the forces' scale
+                    kk = _keep_order(floor(vec[0] * ax[0] + vec[1] * ax[1]), next(x[1] for x in forces if x[0] == sym), ax, forces, sym, big)
+                    v = (ax[0] * kk, ax[1] * kk)                                   # the forces' scale
                     LENGTHS[f"{sym}_{c}"] = abs(kk); comps.append((f"{sym}_{c}", sym, ax)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
         motion = []                                                                # velocity and acceleration, beside the body
         v_dir = _unit(along(b["v"], surf)) if b["v"] not in (None, "0", "nolla", "none") else None
