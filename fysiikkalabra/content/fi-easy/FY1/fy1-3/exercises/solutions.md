@@ -52,7 +52,7 @@
 ## fy1-3-L2-01
 **Annettu:** $t = 1{,}84\,\text{s}$, $1{,}91\,\text{s}$, $1{,}78\,\text{s}$, $1{,}88\,\text{s}$, $1{,}96\,\text{s}$ ja $1{,}82\,\text{s}$; $n = 6$, $t_\text{min} = 1{,}78\,\text{s}$, $t_\text{max} = 1{,}96\,\text{s}$
 **Kysytty:** satunnaisvirheen arvion $\Delta t$ suhde keskiarvoon $\bar{t}$ prosentteina
-**Periaate:** Satunnaisvirheen arvio on vaihteluvälin puolikas. Tuloksen tarkkuutta kuvaa parhaiten sen suhde tulokseen eli suhteellinen virhe. Tulokseksi otetaan keskiarvo, koska se pienentää satunnaisvirheen vaikutusta.
+**Periaate:** Satunnaisvirheen arvio on vaihteluvälin puolikas. Tuloksen tarkkuutta kuvaa parhaiten sen suhde tulokseen eli suhteellinen epävarmuus. Tulokseksi otetaan keskiarvo, koska se pienentää satunnaisvirheen vaikutusta.
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$. Kysytty on $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
 **Muunnokset:** Ajat ovat sekunteina ja suhde on yksikötön. Se kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\bar{t} = \dfrac{11{,}19\,\text{s}}{6} = 1{,}865\,\text{s}$ ja $\Delta t = \dfrac{1{,}96\,\text{s} - 1{,}78\,\text{s}}{2} = 0{,}09\,\text{s}$, joten $\varepsilon = \dfrac{0{,}09\,\text{s}}{1{,}865\,\text{s}} \cdot 100\,\% = 4{,}83\,\%$
@@ -107,7 +107,7 @@
 **Muunnokset:** Tulos tulee millimetreinä, ja $1\,\text{mm} = 1000\,\mu\text{m}$, joten se kerrotaan tuhannella.
 **Sijoitus:** $\Delta h_1 = \dfrac{1{,}0\,\text{mm}}{2 \cdot 250} = \dfrac{0{,}5\,\text{mm}}{250} = 0{,}0020\,\text{mm} = 2{,}0\,\mu\text{m}$
 **Vastaus:** $2\,\mu\text{m}$. Siinä on yksi merkitsevä numero, koska virhe-arvio pyöristetään yhteen merkitsevään numeroon. Arkkien lukumäärä on tarkka luku.
-**Järkevyys:** Tavallisen kopiopaperin paksuus on noin $0{,}1\,\text{mm} = 100\,\mu\text{m}$, joten virhe-arvio on noin $2\,\%$. Yhden arkin mittaaminen suoraan viivaimella antaisi virheeksi $0{,}5\,\text{mm}$ eli noin $500\,\%$. Pinon mittaaminen pienentää siis suhteellisen virheen 250-osaan.
+**Järkevyys:** Tavallisen kopiopaperin paksuus on noin $0{,}1\,\text{mm} = 100\,\mu\text{m}$, joten suhteellinen epävarmuus on noin $2\,\%$. Yhden arkin mittaaminen suoraan viivaimella antaisi epävarmuudeksi $0{,}5\,\text{mm}$. Se on noin $500\,\%$ arkin paksuudesta. Pinon mittaaminen pienentää siis suhteellisen epävarmuuden 250-osaan.
 
 ## fy1-3-L3-03
 **Annettu:** oikea arvo $x_\text{oikea} = 8{,}00\,\text{cm}$; lukemat $8{,}24$, $8{,}27$, $8{,}25$, $8{,}29$ ja $8{,}25\,\text{cm}$; $n = 5$

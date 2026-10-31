@@ -38,7 +38,7 @@
   "fy4-1":{"course":"FY4","title":"Paikka, nopeus ja tasainen liike kuvaajina","topics":["paikka","siirtymä","nopeus","keskinopeus","(t,x)-kuvaaja"]},
   "fy4-10":{"course":"FY4","title":"Liikemäärän säilyminen ja yksiulotteiset törmäykset","topics":["liikemäärän säilyminen","kimmoisa törmäys","kimmoton törmäys","räjähdys"]},
   "fy4-11":{"course":"FY4","title":"Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny","topics":["reaktioaika","reaktiomatka","jarrutusmatka","pysähtymismatka","turvavyö","törmäysaika"]},
-  "fy4-12":{"course":"FY4","title":"Kahden kappaleen liike: kohtaaminen ja ohitus","topics":["paikka","kiihtyvyys","kohtaaminen","ohitus"]},
+  "fy4-12":{"course":"FY4","title":"Kahden kappaleen liikkeiden vertailu","topics":["paikka","kiihtyvyys","kohtaaminen","ohitus"]},
   "fy4-13":{"course":"FY4","title":"Liikeyhtälö kytketyille kappaleille","topics":["liikeyhtälö","jännitysvoima"]},
   "fy4-14":{"course":"FY4","title":"Ilmanvastus ja putoaminen ilmassa","topics":["väliaineen vastus","rajanopeus"]},
   "fy4-15":{"course":"FY4","title":"Vesi- ja tuulivoima energian muuntajina","topics":["potentiaalienergia","liike-energia","hyötysuhde","teho","vesivoima","tuulivoima","putouskorkeus","virtaama"]},

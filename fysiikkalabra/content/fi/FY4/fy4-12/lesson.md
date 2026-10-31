@@ -1,4 +1,4 @@
-# Kahden kappaleen liike: kohtaaminen ja ohitus
+# Kahden kappaleen liikkeiden vertailu
 
 > **Miksi** paikaltaan lähtevä auto saavuttaa edellä tasaisesti polkevan pyöräilijän vasta kaukana, vaikka auto kiihtyy koko ajan?
 

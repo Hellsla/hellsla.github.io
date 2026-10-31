@@ -263,7 +263,7 @@
       },
       {
         "id": "fy2-3",
-        "title": "Teho P = ΔE/Δt",
+        "title": "Teho: P = ΔE/Δt",
         "goals": [
           "LOPS FY2: energian tuotanto, teho, hyötysuhde ja energian siirtäminen",
           "Täsmennys: teho esitellään suureena P = ΔE/Δt; työn käsitettä ei tässä moduulissa vielä käytetä"
@@ -800,7 +800,7 @@
       },
       {
         "id": "fy4-12",
-        "title": "Kahden kappaleen liike: kohtaaminen ja ohitus",
+        "title": "Kahden kappaleen liikkeiden vertailu",
         "goals": [
           "LOPS FY4: tasainen ja tasaisesti kiihtyvä suoraviivainen liike",
           "Täsmennys: kahden kappaleen paikat samassa koordinaatistossa, kohtaamis- ja ohitushetki laskien ja kuvaajista"

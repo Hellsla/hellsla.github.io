@@ -525,7 +525,7 @@
       "tolerance": 0.05,
       "hints": [
         "First calculate the mean and half of the range.",
-        "The relative error is $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
+        "The relative uncertainty is $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",
         "The mean is $2.40\\,\\text{s}$ and half of the range is $\\dfrac{2.46\\,\\text{s} - 2.36\\,\\text{s}}{2}$."
       ],
       "mistakes": [
@@ -535,14 +535,14 @@
         },
         {
           "value": 0.05,
-          "feedback": "This is the error estimate in seconds. The relative error is obtained by dividing it by the mean and multiplying by a hundred to get percent."
+          "feedback": "This is the error estimate in seconds. The relative uncertainty is obtained by dividing it by the mean and multiplying by a hundred to get percent."
         },
         {
           "value": 0.021,
           "feedback": "The ratio is correct but it is not yet in percent. Multiply it by a hundred."
         }
       ],
-      "solution": "**Given:** $t = 2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2.36\\,\\text{s}$, $t_\\text{max} = 2.46\\,\\text{s}$\n\n**Find:** the relative error $\\varepsilon$ as a percentage\n\n**Principle:** The estimate of random error is half of the range, and the relative error compares it with the result, which is the mean. The ratio has no unit, and you get percent by multiplying by a hundred.\n\n**Formula:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ and $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Conversions:** All times are in seconds, so no conversions are needed. The ratio is multiplied by a hundred to get percent.\n\n**Substitution:** $\\bar{t} = \\dfrac{12.00\\,\\text{s}}{5} = 2.40\\,\\text{s}$, $\\Delta t = \\dfrac{2.46\\,\\text{s} - 2.36\\,\\text{s}}{2} = 0.05\\,\\text{s}$ and $\\varepsilon = \\dfrac{0.05\\,\\text{s}}{2.40\\,\\text{s}} \\cdot 100\\,\\% = 2.1\\,\\%$\n\n**Answer:** $2\\,\\%$, one significant figure like the error estimate $0.05\\,\\text{s}$ (calculator value $2.08\\,\\%$).\n\n**Reasonableness:** Estimate: $0.05\\,\\text{s}$ is about $\\tfrac{1}{50}$ of the time $2.4\\,\\text{s}$, that is, about $2\\,\\%$. For a hand-timed measurement a random error of a few percent is usual."
+      "solution": "**Given:** $t = 2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$; $n = 5$, $t_\\text{min} = 2.36\\,\\text{s}$, $t_\\text{max} = 2.46\\,\\text{s}$\n\n**Find:** the relative uncertainty $\\varepsilon$ as a percentage\n\n**Principle:** The estimate of random error is half of the range, and the relative uncertainty compares it with the result, which is the mean. The ratio has no unit, and you get percent by multiplying by a hundred.\n\n**Formula:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{n}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ and $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Conversions:** All times are in seconds, so no conversions are needed. The ratio is multiplied by a hundred to get percent.\n\n**Substitution:** $\\bar{t} = \\dfrac{12.00\\,\\text{s}}{5} = 2.40\\,\\text{s}$, $\\Delta t = \\dfrac{2.46\\,\\text{s} - 2.36\\,\\text{s}}{2} = 0.05\\,\\text{s}$ and $\\varepsilon = \\dfrac{0.05\\,\\text{s}}{2.40\\,\\text{s}} \\cdot 100\\,\\% = 2.1\\,\\%$\n\n**Answer:** $2\\,\\%$, one significant figure like the error estimate $0.05\\,\\text{s}$ (calculator value $2.08\\,\\%$).\n\n**Reasonableness:** Estimate: $0.05\\,\\text{s}$ is about $\\tfrac{1}{50}$ of the time $2.4\\,\\text{s}$, that is, about $2\\,\\%$. For a hand-timed measurement a random error of a few percent is usual."
     },
     {
       "id": "check-3",

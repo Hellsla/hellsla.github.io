@@ -279,7 +279,7 @@
 </svg>
 
 ## Ydinajatus
-**Mittaus** tarkoittaa suureen arvon määrittämistä. Arvoa verrataan yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä vähän suureen oikeasta arvosta. Mittarin lukeminen, mittaustapa ja olosuhteet tuovat tulokseen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Pieni virhe kuuluu jokaiseen mittaukseen, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta. Siksi ei tunneta virhettäkään. Fysiikassa arvioidaan, kuinka suuri virhe voi olla. Tämä arvio on **mittausepävarmuus**, ja se ilmoitetaan tuloksen mukana.
+**Mittaus** tarkoittaa suureen arvon määrittämistä. Arvoa verrataan yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä vähän suureen oikeasta arvosta. Mittarin lukeminen, mittaustapa ja olosuhteet tuovat tulokseen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Jokaiseen mittaustulokseen liittyy epävarmuutta, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta. Siksi ei tunneta myöskään mittausvirhettä tai sen suuruutta. Fysiikassa arvioidaan, kuinka suuri virhe voi olla. Tämä arvio on **mittausepävarmuus**, ja se ilmoitetaan tuloksen mukana.
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Lajit eroavat toisistaan siinä, miten ne käyttäytyvät, kun mittaus toistetaan.
 
@@ -417,11 +417,11 @@ Joskus mittaus tehdään vain kerran, ja arvo luetaan asteikolta. Yksinkertaises
 ```
 Viivaimella, jonka pienin asteikkoväli on $1{,}0\,\text{mm}$, lukeman epävarmuudeksi voi näin arvioida $0{,}5\,\text{mm}$. Mittauksen kokonaisepävarmuuteen voivat kuitenkin vaikuttaa myös mittausmenetelmä, mittalaite ja muut virhelähteet. Pienin asteikkoväli tai näytön viimeisen numeron askel on mittalaitteen **resoluutio**. Resoluutio ei yksin kerro epävarmuutta. Käsikello näyttää sadasosasekunnit. Käsin otetun ajan epävarmuus on kuitenkin reaktioajan vuoksi sekunnin kymmenesosien luokkaa.
 
-Virhe-arvion suhdetta tulokseen kutsutaan suhteelliseksi virheeksi:
+Virhe-arvio on mittausepävarmuus. Sen suhdetta tulokseen kutsutaan suhteelliseksi epävarmuudeksi:
 ```latex
 \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
 ```
-missä $\varepsilon$ on suhteellinen virhe prosentteina. Se kertoo, onko virhe tuloksen kokoon nähden pieni vai suuri. Virhe $0{,}5\,\text{mm}$ on pieni metrin mittaukselle mutta suuri millimetrin paksuiselle langalle.
+missä $\varepsilon$ on suhteellinen epävarmuus prosentteina. Se kertoo, onko epävarmuus tuloksen kokoon nähden pieni vai suuri. Epävarmuus $0{,}5\,\text{mm}$ on pieni metrin mittaukselle mutta suuri millimetrin paksuiselle langalle.
 
 Systemaattinen virhe arvioidaan näin. Mitataan suure, jonka oikea arvo tunnetaan. Sitten mittaustulosten keskiarvoa verrataan oikeaan arvoon. Tunnettu arvo voi olla esimerkiksi tyhjä vaaka, $0\,{}^\circ\text{C}$ jäävedessä tai tarkasti tunnetun pituinen sauva:
 ```latex
@@ -451,7 +451,7 @@ x = x_\text{lukema} - \Delta x_\text{sys}
 </svg>
 
 ## Esimerkki
-Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa tulokset $3{,}12\,\text{s}$, $3{,}25\,\text{s}$, $3{,}07\,\text{s}$, $3{,}31\,\text{s}$, $3{,}19\,\text{s}$ ja $3{,}15\,\text{s}$. Mikä on mittaustulos virhe-arvion kanssa? Kuinka suuri on suhteellinen virhe?
+Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa tulokset $3{,}12\,\text{s}$, $3{,}25\,\text{s}$, $3{,}07\,\text{s}$, $3{,}31\,\text{s}$, $3{,}19\,\text{s}$ ja $3{,}15\,\text{s}$. Mikä on mittaustulos virhe-arvion kanssa? Kuinka suuri on suhteellinen epävarmuus?
 
 <svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Mittaustulokset (t, aika) mittakaavassa: kuusi tulosta väliltä 3,07 s – 3,31 s. Keskiarvo on 3,18 s. Tulos 3,18 s ± 0,12 s on merkitty vihreällä palkilla." style="max-width:100%;font-size:24px">
   <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -482,11 +482,11 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Mittauksia on $n = 6$. Pienin tulos on $t_\text{min} = 3{,}07\,\text{s}$ ja suurin $t_\text{max} = 3{,}31\,\text{s}$. Kysytään keskiarvoa $\bar{t}$, virhe-arviota $\Delta t$ ja suhteellista virhettä $\varepsilon$.
+**Tunnetut ja kysytty.** Mittauksia on $n = 6$. Pienin tulos on $t_\text{min} = 3{,}07\,\text{s}$ ja suurin $t_\text{max} = 3{,}31\,\text{s}$. Kysytään keskiarvoa $\bar{t}$, virhe-arviota $\Delta t$ ja suhteellista epävarmuutta $\varepsilon$.
 
 <!-- vaihe -->
 
-**Periaate.** Käsin otetussa ajanotossa on satunnaisvirhe, koska reaktioaika vaihtelee. Siksi tulokseksi otetaan keskiarvo ja virhe-arvioksi vaihteluvälin puolikas. Suhteellinen virhe vertaa virhe-arviota tulokseen.
+**Periaate.** Käsin otetussa ajanotossa on satunnaisvirhe, koska reaktioaika vaihtelee. Siksi tulokseksi otetaan keskiarvo ja virhe-arvioksi vaihteluvälin puolikas. Suhteellinen epävarmuus vertaa virhe-arviota tulokseen.
 
 <!-- vaihe -->
 
@@ -501,7 +501,7 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Niitä ei tarvita. Kaikki ajat ovat sekunteina. Suhteellinen virhe on yksikötön luku. Se kerrotaan sadalla, jolloin saadaan prosentteja.
+**Yksikkömuunnokset.** Niitä ei tarvita. Kaikki ajat ovat sekunteina. Suhteellinen epävarmuus on yksikötön luku. Se kerrotaan sadalla, jolloin saadaan prosentteja.
 
 <!-- vaihe -->
 
@@ -524,11 +524,11 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 
 <!-- vaihe -->
 
-**Tulos.** Virhe-arvio $0{,}12\,\text{s}$ on kahden numeron luku, koska sen ensimmäinen numero on 1. Keskiarvo pyöristetään samaan desimaaliin. Mittaustulos on siis $t = 3{,}18\,\text{s} \pm 0{,}12\,\text{s}$. Suhteellinen virhe on $3{,}8\,\%$. Siinä on kaksi merkitsevää numeroa, kuten virhe-arviossa.
+**Tulos.** Virhe-arvio $0{,}12\,\text{s}$ on kahden numeron luku, koska sen ensimmäinen numero on 1. Keskiarvo pyöristetään samaan desimaaliin. Mittaustulos on siis $t = 3{,}18\,\text{s} \pm 0{,}12\,\text{s}$. Suhteellinen epävarmuus on $3{,}8\,\%$. Siinä on kaksi merkitsevää numeroa, kuten virhe-arviossa.
 
 <!-- vaihe -->
 
-**Järkevyys.** Väli $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eli $3{,}06\,\text{s}$–$3{,}30\,\text{s}$ kattaa viisi kuudesta tuloksesta. Tulos $3{,}31\,\text{s}$ jää juuri sen ulkopuolelle. Se sopii siihen, että virhe-arvio on karkea. Suhteellinen virhe on muutaman prosentin. Se on tavallista käsin otetulle ajalle. Toistot kertovat kuitenkin vain satunnaisvirheestä. Systemaattisen virheen paljastaisi vasta vertailu toiseen mittaustapaan.
+**Järkevyys.** Väli $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$ eli $3{,}06\,\text{s}$–$3{,}30\,\text{s}$ kattaa viisi kuudesta tuloksesta. Tulos $3{,}31\,\text{s}$ jää juuri sen ulkopuolelle. Se sopii siihen, että virhe-arvio on karkea. Suhteellinen epävarmuus on muutaman prosentin. Se on tavallista käsin otetulle ajalle. Toistot kertovat kuitenkin vain satunnaisvirheestä. Systemaattisen virheen paljastaisi vasta vertailu toiseen mittaustapaan.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tarkka laite tai paljon toistoja takaavat oikean tuloksen. Toistot pienentävät satunnaisvirhettä mutta eivät systemaattista virhettä. Hyvä toistettavuus ei kerro oikeellisuudesta. Toinen virhekäsitys on pitää kaikkea virhettä huolimattomuutena. Huolimattomuudesta syntyy karkea virhe. Se etsitään, ja se jätetään pois vain perustellusta ja kirjatusta syystä. Satunnaisvirhe ja systemaattinen virhe kuuluvat kuitenkin myös taitavan mittaajan tulokseen. Siksi ne arvioidaan ja ilmoitetaan. Kolmas virhekäsitys on laskea keskiarvo luvuista, jotka ovat eri yksiköissä. Tulokset pitää muuntaa ensin samaan yksikköön.

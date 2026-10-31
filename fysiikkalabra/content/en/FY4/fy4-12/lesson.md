@@ -1,4 +1,4 @@
-# Motion of two bodies: meeting and overtaking
+# Comparing the motions of two bodies
 
 > **Why** does a car that starts from rest catch a steadily pedalling cyclist ahead of it only far down the road, even though the car accelerates all the time?
 

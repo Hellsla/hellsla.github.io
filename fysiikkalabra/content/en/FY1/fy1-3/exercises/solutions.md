@@ -52,7 +52,7 @@
 ## fy1-3-L2-01
 **Given:** $t = 1.84\,\text{s}$, $1.91\,\text{s}$, $1.78\,\text{s}$, $1.88\,\text{s}$, $1.96\,\text{s}$ and $1.82\,\text{s}$; $n = 6$, $t_\text{min} = 1.78\,\text{s}$, $t_\text{max} = 1.96\,\text{s}$
 **Find:** the ratio of the estimate of random error $\Delta t$ to the mean $\bar{t}$ as a percentage
-**Principle:** The estimate of random error is half of the range, and the precision of the result is best described by its ratio to the result, the relative error. The mean is taken as the result, because it reduces the effect of random error.
+**Principle:** The estimate of random error is half of the range, and the precision of the result is best described by its ratio to the result, the relative uncertainty. The mean is taken as the result, because it reduces the effect of random error.
 **Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ and $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$. The quantity to find is $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
 **Conversions:** The times are in seconds and the ratio has no unit. It is multiplied by a hundred to get percent.
 **Substitution:** $\bar{t} = \dfrac{11.19\,\text{s}}{6} = 1.865\,\text{s}$ and $\Delta t = \dfrac{1.96\,\text{s} - 1.78\,\text{s}}{2} = 0.09\,\text{s}$, so $\varepsilon = \dfrac{0.09\,\text{s}}{1.865\,\text{s}} \cdot 100\,\% = 4.83\,\%$
@@ -107,7 +107,7 @@
 **Conversions:** The result comes out in millimetres, and $1\,\text{mm} = 1000\,\mu\text{m}$, so it is multiplied by a thousand.
 **Substitution:** $\Delta h_1 = \dfrac{1.0\,\text{mm}}{2 \cdot 250} = \dfrac{0.5\,\text{mm}}{250} = 0.0020\,\text{mm} = 2.0\,\mu\text{m}$
 **Answer:** $2\,\mu\text{m}$, one significant figure, because the error estimate is rounded to one significant figure; the number of sheets is an exact number.
-**Reasonableness:** The thickness of ordinary copy paper is about $0.1\,\text{mm} = 100\,\mu\text{m}$, so the error estimate is about $2\,\%$. Measuring one sheet directly with a ruler would give an error of $0.5\,\text{mm}$, that is, about $500\,\%$, so measuring the stack reduces the relative error to a 250th.
+**Reasonableness:** The thickness of ordinary copy paper is about $0.1\,\text{mm} = 100\,\mu\text{m}$, so the relative uncertainty is about $2\,\%$. Measuring one sheet directly with a ruler would give an uncertainty of $0.5\,\text{mm}$, that is, about $500\,\%$ of its thickness, so measuring the stack reduces the relative uncertainty to a 250th.
 
 ## fy1-3-L3-03
 **Given:** true value $x_\text{true} = 8.00\,\text{cm}$; readings $8.24$, $8.27$, $8.25$, $8.29$ and $8.25\,\text{cm}$; $n = 5$

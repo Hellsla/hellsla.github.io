@@ -279,7 +279,7 @@
 </svg>
 
 ## Key idea
-A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement has a small error, even one made by a skilled measurer. The true value, and therefore the error too, is usually not known, so in physics we estimate how large the error can be, and this estimate, the **measurement uncertainty**, is stated together with the result.
+A **measurement** means determining the value of a quantity by comparing it with a unit. A measurement result is a numerical value and a unit, for example $2.43\,\text{s}$. The result usually differs a little from the true value of the quantity, because reading the instrument, the method of measuring and the conditions all add a deviation to it. The difference $x - x_\text{true}$ between the result and the true value is the **measurement error**. Every measurement result has some uncertainty, even one made by a skilled measurer. The true value is usually not known, so neither is the measurement error or its size. Therefore in physics we estimate how large the error can be, and this estimate, the **measurement uncertainty**, is stated together with the result.
 
 Errors are divided into three kinds: gross error, random error and systematic error. You can tell them apart by how they behave when the measurement is repeated.
 
@@ -417,11 +417,11 @@ When the measurement is made only once and the value is read from a scale, in a 
 ```
 With a ruler whose smallest scale division is $1.0\,\text{mm}$, the uncertainty of the reading can thus be estimated as $0.5\,\text{mm}$. However, the total uncertainty of a measurement can also be affected by the method of measurement, the instrument and other sources of error. The smallest scale division, or the step of the last figure of a display, is the **resolution** of the instrument, and it alone does not give the uncertainty: a stopwatch shows hundredths of a second, but the uncertainty of a time taken by hand is, because of reaction time, of the order of tenths of a second.
 
-The ratio of the error estimate to the result is called the relative error:
+The ratio of the error estimate, that is, the measurement uncertainty, to the result is called the relative uncertainty:
 ```latex
 \varepsilon = \frac{\Delta x}{\bar{x}} \cdot 100\,\%
 ```
-where $\varepsilon$ is the relative error as a percentage. It tells whether the error is small or large compared with the size of the result: an error of $0.5\,\text{mm}$ is small for measuring a metre but large for a wire one millimetre thick.
+where $\varepsilon$ is the relative uncertainty as a percentage. It tells whether the uncertainty is small or large compared with the size of the result: an uncertainty of $0.5\,\text{mm}$ is small for measuring a metre but large for a wire one millimetre thick.
 
 A systematic error is estimated by measuring a quantity whose true value is known and comparing with the mean. The known value can be, for example, an empty scale, $0\,{}^\circ\text{C}$ in ice water or a rod of precisely known length:
 ```latex
@@ -451,7 +451,7 @@ x = x_\text{reading} - \Delta x_\text{sys}
 </svg>
 
 ## Worked example
-A student measures the rolling time of a ball on a ramp with a hand stopwatch six times and gets the results $3.12\,\text{s}$, $3.25\,\text{s}$, $3.07\,\text{s}$, $3.31\,\text{s}$, $3.19\,\text{s}$ and $3.15\,\text{s}$. What is the measurement result with its error estimate, and how large is the relative error?
+A student measures the rolling time of a ball on a ramp with a hand stopwatch six times and gets the results $3.12\,\text{s}$, $3.25\,\text{s}$, $3.07\,\text{s}$, $3.31\,\text{s}$, $3.19\,\text{s}$ and $3.15\,\text{s}$. What is the measurement result with its error estimate, and how large is the relative uncertainty?
 
 <svg data-fig="example-plot" viewBox="0 0 600 330" role="img" aria-label="Measurement results (t, time) to scale: six results between 3.07 s and 3.31 s, mean 3.18 s and the result 3.18 s ± 0.12 s on a green bar." style="max-width:100%;font-size:24px">
   <line x1="261" y1="150" x2="261" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -482,11 +482,11 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 
 <!-- vaihe -->
 
-**Given and find.** The number of measurements is $n = 6$, and the smallest result is $t_\text{min} = 3.07\,\text{s}$ and the largest $t_\text{max} = 3.31\,\text{s}$. The mean $\bar{t}$, the error estimate $\Delta t$ and the relative error $\varepsilon$ are asked for.
+**Given and find.** The number of measurements is $n = 6$, and the smallest result is $t_\text{min} = 3.07\,\text{s}$ and the largest $t_\text{max} = 3.31\,\text{s}$. The mean $\bar{t}$, the error estimate $\Delta t$ and the relative uncertainty $\varepsilon$ are asked for.
 
 <!-- vaihe -->
 
-**Principle.** Hand timing has a random error, because reaction time varies. So the mean is taken as the result and half of the range as the error estimate. The relative error compares the error estimate with the result.
+**Principle.** Hand timing has a random error, because reaction time varies. So the mean is taken as the result and half of the range as the error estimate. The relative uncertainty compares the error estimate with the result.
 
 <!-- vaihe -->
 
@@ -501,7 +501,7 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 
 <!-- vaihe -->
 
-**Unit conversions.** None needed: all times are in seconds, and the relative error is a number without a unit, which is multiplied by a hundred to get percent.
+**Unit conversions.** None needed: all times are in seconds, and the relative uncertainty is a number without a unit, which is multiplied by a hundred to get percent.
 
 <!-- vaihe -->
 
@@ -524,11 +524,11 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 
 <!-- vaihe -->
 
-**Result.** The error estimate $0.12\,\text{s}$ is a number with two figures, because its first figure is 1. The mean is rounded to the same decimal place, so the measurement result is $t = 3.18\,\text{s} \pm 0.12\,\text{s}$. The relative error is $3.8\,\%$, two significant figures like the error estimate.
+**Result.** The error estimate $0.12\,\text{s}$ is a number with two figures, because its first figure is 1. The mean is rounded to the same decimal place, so the measurement result is $t = 3.18\,\text{s} \pm 0.12\,\text{s}$. The relative uncertainty is $3.8\,\%$, two significant figures like the error estimate.
 
 <!-- vaihe -->
 
-**Reasonableness.** The interval $3.18\,\text{s} \pm 0.12\,\text{s}$, that is, $3.06\,\text{s}$–$3.30\,\text{s}$, covers five of the six results. The result $3.31\,\text{s}$ falls just outside it, which fits the fact that the error estimate is rough. The relative error is a few percent, which is usual for a hand-timed measurement. However, the repeats tell only about random error: a systematic error would be revealed only by comparison with another method of measurement.
+**Reasonableness.** The interval $3.18\,\text{s} \pm 0.12\,\text{s}$, that is, $3.06\,\text{s}$–$3.30\,\text{s}$, covers five of the six results. The result $3.31\,\text{s}$ falls just outside it, which fits the fact that the error estimate is rough. The relative uncertainty is a few percent, which is usual for a hand-timed measurement. However, the repeats tell only about random error: a systematic error would be revealed only by comparison with another method of measurement.
 
 ## Common misconception
 Many people think that a precise instrument or many repeats guarantee a correct result. Repeats reduce random error but not systematic error, and good repeatability tells nothing about accuracy. Another misconception is to regard all error as carelessness. Carelessness causes a gross error, which is looked for and left out only for a justified and recorded reason, but random and systematic error belong to the result of a skilled measurer too, and that is why they are estimated and stated. A third is to calculate a mean of numbers that are in different units: the results are converted to the same unit first.
