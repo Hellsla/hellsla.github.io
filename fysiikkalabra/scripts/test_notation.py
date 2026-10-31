@@ -2,11 +2,11 @@
 \\mathbf{F}, \\boldsymbol{F} or \\overrightarrow{F}. lint_lesson.py checks a lesson's maths; this test covers every
 source a student can see, in every language: lesson and exercise texts, inquiry and Sovella files, figures.py and the
 figure texts, the simulations (sim.js) and the interface strings (lang/*.json). Bold numbers (\\mathbf{12}) in a
-readout are not vectors and pass. Reviews and packets are reports about the text, not the text, and are skipped.
+readout and bold signs (\\boldsymbol{+}) in a figure are not vectors and pass. Reviews and packets are reports about the text, not the text, and are skipped.
 Usage: python scripts/test_notation.py   (exit 1 with file:line for each finding)"""
 import pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-BAD = re.compile(r"\\{1,2}(?:vec|overrightarrow|boldsymbol)\s*\{|\\{1,2}mathbf\s*\{\s*[A-Za-z\\]")
+BAD = re.compile(r"\\{1,2}(?:vec|overrightarrow)\s*\{|\\{1,2}(?:mathbf|boldsymbol)\s*\{\s*[A-Za-z\\]")
 SOURCES = [("content", "*.md"), ("content", "*.json"), ("lessons", "*.md"), ("lessons", "*.json"), ("lessons", "*.py"),
            ("lessons", "*.js"), ("assets/sims", "*.js"), ("lang", "*.json")]
 
@@ -25,6 +25,7 @@ def findings():
 if __name__ == "__main__":
     assert BAD.search(r"$\vec{F}$") and BAD.search(r"'$\\mathbf{v}$'") and BAD.search(r"\overrightarrow{AB}")
     assert not BAD.search(r"$\overline{F}_\mu$") and not BAD.search(r"\\mathbf{${Math.round(W)}}") and not BAD.search(r"\mathbf{12}")
+    assert BAD.search(r"\boldsymbol{v}") and not BAD.search(r"\boldsymbol{-}")
     bad = findings()
     for b in bad: print(b)
     print(f"{len(bad)} vector symbols not written with an overline" if bad else "ok   every vector is written \\overline{…} (rule 14)")
