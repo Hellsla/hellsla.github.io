@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
+import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -52,6 +52,8 @@ for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js"
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
+if module_icons.DIR.is_dir():                                 # one icon per module (scripts/module_icons.py), front page and module pages
+    shutil.copytree(module_icons.DIR, SITE / module_icons.PUBLISHED, dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
 page_tpl = (TPL / "page.html").read_text()
 curriculum = json.loads((ROOT / "curriculum.json").read_text())
@@ -510,7 +512,7 @@ def build_language(lang):
         main_label, extra_label = availability(done, len(slots))
         credits = f'{T("site.credits", n=mod.get("op", ""))} · {kind}'
         if done:   # one link per row (the heading's), stretched over the row by CSS; the arrow is only its visible cue
-            catalogue += (f'<li class="mod-row"><span class="mod-code">{code}</span>'
+            catalogue += (f'<li class="mod-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
                           f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
                           f'<span class="visually-hidden">{code} </span>{esc(mod["title"])}</a></h3>'
                           f'<p class="mod-q">{esc(T("site.module_question." + code))}</p></div>'
@@ -519,7 +521,7 @@ def build_language(lang):
                           + f'<span class="mod-credits">{credits}</span></p>'
                           f'<span class="mod-go" aria-hidden="true">{T("site.open_module")}</span></li>')
         else:
-            upcoming += (f'<li><a href="{code}.html"><span class="mod-code">{code}</span> <span class="up-title">{esc(mod["title"])}</span></a>'
+            upcoming += (f'<li><a href="{code}.html">{module_icons.img(code, 36, "up-icon")}<span class="mod-code">{code}</span> <span class="up-title">{esc(mod["title"])}</span></a>'
                          f'<span class="up-meta">{main_label}</span></li>')
 
         items = ""
@@ -537,7 +539,7 @@ def build_language(lang):
         notes = "".join(f'<p class="unavailable" id="unavailable-{lid}" role="note" tabindex="-1">{T("site.unavailable_note", title=esc(title))}</p>'
                         for lid, title in missing)
         goals = "".join(f"<li>{esc(g)}</li>" for g in mod.get("tavoitteet", []))
-        body = (notes + f'<span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1>'
+        body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + f'<h2>{T("site.course_lessons")}</h2><ol class="lessons">{items}</ol>'
