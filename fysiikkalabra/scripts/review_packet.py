@@ -1,6 +1,6 @@
 """Role-specific packet, so an agent starts from what its role needs and nothing else.
 
-  python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix] [--exercises]
+  python scripts/review_packet.py <id> --role science|pedagogy|developer [--fix] [--exercises] [--lang en]
   python scripts/review_packet.py --batch <id>,<id>,... --role science|pedagogy [--lang en]
 
 Writes review/packet-<role>.md (with --exercises exercises/review/packet-<role>.md) and prints its path, mode and size. The orchestrator never reads it: the agent's prompt
@@ -285,9 +285,17 @@ def exercise_packet(folder, role, fix=False):
                 + "Compute every answer in answers.py first. "
                 f"Finish with `python3 scripts/lint_lesson.py {lid}` and `python3 scripts/check_solutions.py {lid}` until neither reports an error, "
                 f"then write exercises/review/developer.md (`VERDICT: DONE` or `VERDICT: BLOCKED` + reason, what changed per file, ≤ 200 words).\n")
+    out = lang_commands(folder, out)
     f = review_dir(folder, "exercises") / f"packet-{role}.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
     return mode
+
+
+def lang_commands(folder, out):
+    """A translation's packet: its reviews.py commands name its language (README "Languages")."""
+    lang = courses.lang_of(folder)
+    if lang == courses.SOURCE_LANG: return out
+    return re.sub(rf"(reviews\.py (?:hash|scope|carry) {re.escape(folder.name)}(?: --exercises)?)(?! --lang)", rf"\1 --lang {lang}", out)
 
 
 def packet(folder, role, fix=False):
@@ -353,6 +361,7 @@ def packet(folder, role, fix=False):
                                       if fix else "Draft the lesson for its slot. Choose the activities the topic needs (an experiment on a simulation only when manipulating it reveals something; otherwise data, a graph, competing explanations or a model to build). ")
                 + "When a number changes, change answers.py first. Never loosen a simulation test. "
                 f"Finish with `python3 scripts/check_lesson.py {lid}` until every line is ok, then write review/developer.md (`VERDICT: DONE` or `VERDICT: BLOCKED` + reason, what changed per file, ≤ 200 words).\n")
+    out = lang_commands(folder, out)
     f = folder / "review" / f"packet-{role}.md"; f.parent.mkdir(exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
     return mode
@@ -418,4 +427,5 @@ if __name__ == "__main__":
     if len(a) in (4, 6) and a[0] == "--batch" and a[2] == "--role" and a[3] in ("science", "pedagogy"):
         batch(a[1].split(","), a[3], *(a[5:6] if a[4:5] == ["--lang"] else [])); sys.exit(0)
     if len(a) < 3 or a[1] != "--role" or a[2] not in ("science", "pedagogy", "developer"): sys.exit(__doc__)
-    (exercise_packet if "--exercises" in a else packet)(find_lesson(a[0]), a[2], fix="--fix" in a)
+    lang = a[a.index("--lang") + 1] if "--lang" in a else courses.SOURCE_LANG   # a translation is a lesson of its own (README "Languages")
+    (exercise_packet if "--exercises" in a else packet)(courses.find_lesson(a[0], lang), a[2], fix="--fix" in a)
