@@ -4,7 +4,7 @@
 // soft 100 N/m). Every force, impulse and momentum here is an x-component with its sign (+x to the right).
 //   pysahtyy  a crushable (energy-absorbing) bumper: its force grows smoothly from zero, is largest half-way and falls
 //             smoothly back to zero just as the cart stops, F_x = −F_max sin(π τ / Δt) during the contact time τ = 0…Δt
-//             (a whole pulse, as measured for real crash absorbers). It has the same largest force F_max = v1 √(k m) and
+//             (a whole pulse). It has the same largest force F_max = v1 √(k m) and
 //             the same duration Δt = (π/2) √(m/k) as a spring of that stiffness would have on the way in, so a harder
 //             bumper still means a shorter time and a larger force. The cart then stays at rest against the crushed
 //             bumper; its kinetic energy has gone into the bumper's deformation and internal energy.
@@ -50,7 +50,7 @@
     if (!s.contact && !s.ended && xn > XB) {                                       // the first contact inside this step, at its fraction f
       const f = (XB - x) / (xn - x), Fn = -s.k * (xn - XB);
       if (s.ty === 'pysahtyy') {                                                    // the pulse starts at the contact
-        s.contact = true; s.tc = 0; s.curve = [[0, 0]]; s.t += f * dt; s.x = XB; s.v = v; return step(s, (1 - f) * dt);
+        s.contact = true; s.tc = 0; s.curve = [[0, 0]]; s.t += (f - 1) * dt; s.x = XB; s.v = v; return step(s, (1 - f) * dt);
       }
       s.contact = true; s.tc = (1 - f) * dt; s.area = Fn / 2 * s.tc; s.Fprev = Fn; s.Fmin = Fn; s.curve = [[0, 0], [s.tc, Fn]];
       s.x = xn; s.v = vn; return;
@@ -68,7 +68,7 @@
   }
   function finish(s, vEnd) { s.contact = false; s.ended = true; s.kesto = s.tc; s.imp = s.area; s.v2 = vEnd; }
 
-  // the largest force this run reaches (both bumpers: ½ m v1² = ½ k c², F = k c): the graph's scale before the run starts
+  // the largest force this run reaches (spring: ½ m v1² = ½ k c², F = k c; the crushable pulse is given the same F_max): the graph's scale before the run starts
   const peak = (m, v1, bumper) => v1 * Math.sqrt(K[bumper] * m);
   // the energies (J): the cart's kinetic energy and the energy the bumper holds now (spring) or has absorbed (crushable)
   function energy(s) {

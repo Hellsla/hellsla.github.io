@@ -1,21 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: 25b95920e4cf479d
+VERDICT: FAIL
+CONTENT-HASH: 705e49cae9093336
 
 ## Blocking
+- inquiry.json:104 (simulaatio.model) — A. The text says the crushable bumper's force "kasvaa tasaisesti suurimpaan arvoonsa ja pienenee tasaisesti nollaan". In this lesson "tasaisesti" means at a constant rate, i.e. a straight line: "tasaisesti kiihtyvä" in lesson.md:405, the triangle graphs in figures.py:141/153, and check-2's reasonableness step "puolet huippuarvosta, kuten tasaisesti kasvavalle ja pienenevälle voimalle kuuluu". The sim's pulse is a half-sine (calc text, model.js), and its mean force is (2/π)·F_max = 0,637·F_max (50,9 N for the hard bumper), not F_max/2 (40 N, which would give I = 1,57 N·s instead of 2,00 N·s). So the model box describes a different pulse shape from the one the calc box and the graph show. — Fix: "kasvaa pehmeästi nollasta suurimpaan arvoonsa puolivälissä törmäystä ja pienenee pehmeästi nollaan juuri, kun kärry pysähtyy (sinikäyrän muotoinen pulssi)".
 
 ## Polish
-- lesson.md:490 vs :551 — F_ka is defined as |Δp|/Δt, a magnitude, but the example's F_ka = m(v − v0)/Δt is signed ("Voima on positiivinen"). This was carried over from round 2. — Say once that the force's direction comes from the sign of Δp.
-- sim-spec.md — "F = kc" is a magnitude, while model.js, sim.js and the sim's calc box use F_x = −kc. This was carried over from round 2. — Write F_x = −kc, or "suuruus kc, vasemmalle".
-- review/shots/fy4-9-fig-3-390.png (23:41) — the screenshot is older than the lesson (00:02). It still shows the old positive F graph with its axis at the bottom. — Re-take the shots so the next reviewer sees the current figure.
+- lessons/FY4/fy4-9/sim-spec.md:1 — "kokonainen tasainen pulssi" has the same ambiguity — "kokonainen pehmeä (sinimuotoinen) pulssi".
+- assets/sims/fy4/fy4-9/model.js:49,53 — the step where contact begins in "pysahtyy" adds dt, then f·dt, then (1−f)·dt to s.t, so the clock gains 2·dt, about 0,1 ms (confirmed: final t is 0,47937 s, expected 0,47927 s). Δt, I and the readout are unaffected. — Drop `s.t += f * dt` and add `s.t -= (1 - f) * dt` (or back out the dt) before the recursive call.
+- model.js:71 — the comment "both bumpers: ½ m v1² = ½ k c², F = k c" is wrong for the crushable bumper, which crushes only (π/4)·v1√(m/k) and has F ≠ kc. The value v1√(km) is right by definition. — Say "the spring's peak; the crushable pulse is given the same F_max".
+- inquiry.json:104 (calc) and sim-spec — "liike lasketaan … pienin aika-askelin" does not hold for the crushable bumper, whose v(τ) and c(τ) come in closed form from the prescribed pulse (exactly equal to the stepped result). — Say so in one clause.
+- model.js:7 — "as measured for real crash absorbers" has no source. Many absorbers are designed for a flat-top force. — Drop it or soften it.
 
 ## Checked
-- Round-2 blocking item fixed. lesson.md:387 and the check-3 model now say "Alustan voima on (tätä) kokonaisvoimaa painon verran suurempi, mutta sekin pienenee, kun pysähtymisaika pitenee". en and fi-easy say the same; fi-easy splits it into two sentences. This is right: N = |Δp|/Δt + G, with G/N ≈ 2 % on hard ground and ≈ 26 % on the mat (70 kg, Δt ≈ 0,015 s and 0,25 s). Nothing that says "suurin osa" or "most of" is left.
-- pysaytys figure (fi/en/fi-easy, same geometry). I parsed the polylines. The time axis is at F_x = 0 at the top (y = 72), and the F_x axis runs from 0 to −100 N. Hard: peak −80,0 N, end 0,0394 s, area −2,009 N·s. Soft: peak −20,0 N, end 0,157 s, area −1,998 N·s. Both agree with the aria-label's −2,0 N·s.
-- Sim graph (Playwright, soft spring bumper, 1,0 kg, 2,0 m/s). The axis label reads F_x (N) and the axis is at 0 at the top. The curve lies below the axis and its shaded area is shown as I = −4,00 N·s. The readout gives Δt = 0,3142 s, F_max = 20,0 N, v = −2,00 m/s and Δp = −4,00 kg·m/s, all matching analytic SHM. Nothing is cut off.
-- Arrows: blue v and purple p both point left after the bounce. Red F is drawn only while F_x < 0, so it disappears after the crushable stop.
-- Bumper models (no rebound when crushed, ideal spring) agree across model.js, the sim boxes, sim-spec and lesson-answers.
-- `node tests/models/fy4-9.test.js`: 616 checks pass.
-- Signs are the same throughout: the sim and model boxes, pred-1/2, exp-1/2 options and feedback, virhe, the Kaava rebound (Δp = −2mv, magnitude 2mv), the summary and the exit ticket.
-- I recomputed every number with my own formulas (π/2·√(m/k), v√(mk), −mv, 870 N, 145 N, 80 N, 12 m/s, 1,5 m/s, −4,0, 113 N). All match lesson-answers.py.
-- Exactly one option is correct in each item. Each experiment varies only its own parameter, and simState gives every measured key.
-- The content hash was the same at the start and at the end.
+- Pulse kinematics re-derived: v = v1(1+cos πτ/Δt)/2 and c = (v1/2)(τ + (Δt/π)sin πτ/Δt) match model.js. v reaches 0 exactly at Δt, and the final crush is v1Δt/2.
+- Impulse: ∫F dt = −2F_maxΔt/π = −m v1, the closed-form area in model.js. I = Δp in every run.
+- Energy: E_k + E_b stays at ½ m v1² to 5 digits all through each run (node script). E_b is the absorbed work.
+- Node model test passes (652 checks). My script reproduces exp-1 (0,0393/0,0785/0,157 s; 80,0/40,0/20,0 N; −2,00 N·s), exp-2 (−2,00/−4,00; v = −2,00 m/s) and exp-3 (28,3/40,0/56,6 N; −1/−2/−4 N·s).
+- The quarter-spring model in lesson-answers.py gives the same Δt, F_max and I as the half-sine. The comment says so correctly.
+- Largest crush in the crushable mode is 0,222 m and in the spring mode 0,283 m, both inside the 0,32 m bumper. The longest contact, 0,444 s, is inside the 0,5 s axis.
+- Pysaytys figure: pixel scale gives 80 N/0,039 s and 20 N/0,157 s, half-sines with their minimum at Δt/2. The areas are equal (−2,0 N·s) and the shape matches figures.py:77.
+- Predictions, experiment options, feedback numbers, Johtopäätös ("neljäsosa voimasta"), worked example (870 N, 145 N), siirto (80/4,0/0,20/800/400 N) and check-2 (12 m/s, 24, 5,4, 12 000) recomputed.
+- Experiment setups lock m, v1 and type as intended, and simState gives dt, Fmax, I, v2, dp and p1.
