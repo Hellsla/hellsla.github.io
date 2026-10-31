@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 805d1699396c2a38
+CONTENT-HASH: 432de54e086d7ae9
 
 ## Blocking
 
@@ -22,3 +22,9 @@ None.
 - Formulas displayed once with symbols named; photogate example converts 1,0 cm to 0,010 m before dividing. Strips figure shows Δs ≈ v·Δt, no numbers.
 - Mistakes are real ones (successive differences, fit over non-uniform part, mm not converted, offset not corrected).
 - Cross-links to taulukkolaskenta, suoran-sovitus, mittausohjelma sensible; investigation titles exist. No spreadsheet/Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- No screenshot in this guide (not needed); guides.py check: ok. Rendered preview checked: no leftover markdown or {{ga:}} markers.
+- No screenshot here; the steps point to the same menu shown in tvt-suoran-sovitus. Fine.
+- The repeated "vain, kun…" caveats in steps 6 and 7 are a little redundant with step 5 but help students who jump straight to the program step; keep.

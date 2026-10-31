@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 17e8bd95a6baa0ea
+CONTENT-HASH: 1639b5fd020dc273
 
 ## Blocking
 
@@ -21,3 +21,10 @@ None.
 - Goals match steps; mistakes are real ones (column name, paste not numeric, missing unit, degrees, overwriting raw data).
 - Figure: table with measured and calculated columns, labelled *esimerkkiarvoja* / "keksityin esimerkkiarvoin"; 1,27² = 1,6129 correct and shown unrounded on purpose.
 - Finnish grammatical around bold names ("valikosta **Data Set Options** valinnalla **Add New Data Set**"). Cross-links to mittausohjelma, nopeus-datasta, kuvaaja, suoran-sovitus sensible. No Excel/spreadsheet formula leftovers (no cell references, no =SUM).
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Screenshots render inside their list item (section>ol>li), not wrapped in <p>; alt texts describe what is shown; captions say "esimerkkiarvoja" only on pictures with values; no licence holder or school name visible (the start-screen crop stops above the "Lisenssin haltija" row). guides.py check: ok.
+- Start screen in step 1, column menu and Sarakkeen ominaisuudet in step 2: the pictures follow the clicks in order. The properties dialog shows V / cm3, so "esimerkkiarvoja" is apt; the menu and start-screen captions rightly omit it.
+- Step 5 now tells students to copy sensor column names from the header instead of assuming them; addresses the main failure in practice.
+- Minor: the Finnish UI text "Uusi mittaus" is not bolded (it is a heading, not a button); fine.

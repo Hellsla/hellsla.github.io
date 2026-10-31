@@ -48,7 +48,9 @@ Kulmakertoimesta saat tutkittavan suureen esimerkiksi tutkimuksissa *Jousivakion
   <foreignObject x="168" y="114.5" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = \dfrac{\Delta y}{\Delta x}$</div></foreignObject>
 </svg>
 
-3. **Lue kertoimet sovituksen tietolaatikosta.** Kun olet sovittanut suoran valinnalla **Apply Curve Fit** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]), tietolaatikossa ovat kulmakerroin ja vakiotermi. Kun asetus **Show units in linear fit parameters** on päällä (Pro), ne näkyvät yksiköineen. Tarkista silti itse, että kulmakertoimen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä.
+3. **Lue kertoimet sovituksen tulosruudusta.** Kun olet sovittanut suoran valinnoilla **Käyrän sovitus** ja **Lineaarinen** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]), tulosruudussa ovat kulmakerroin ja vakiotermi. Graphical Analysis kirjoittaa suoran muotoon y = mx + b: ohjelman m on kulmakerroin $k$ ja b vakiotermi $b$. Ohjelma käyttää desimaalipistettä. Kuvan esimerkkiarvoista m: 1.671 g/cm3 kirjoitetaan raporttiin $k = 1{,}671\,\text{g/cm}^3$. Kertoimet näkyvät yksiköineen, kun sarakkeille on annettu yksiköt; jos yksiköitä ei näy, asetus voi olla tulosruudun rattaan kuvakkeen takana (englanninkielisessä versiossa **Show units in linear fit parameters**). Tarkista silti itse, että kulmakertoimen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä.
+
+    <figure class="shot"><img src="pics/tvt/ga-tulosruutu.png" alt="Suoran sovituksen tulosruutu, jonka otsikko on LINEAARINEN. Siinä lukee x alue 0 - 50 cm3, y = mx + b, m: 1.671 g/cm3, b: -1.619 g, r: 0.9961 ja RMSE: 3.078. Oikeassa alakulmassa on rattaan kuvake." width="288" height="280" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä); esimerkkiarvoja.</figcaption></figure>
 
 4. **Lue vakiotermi.** Vakiotermi $b$ on suoran ja pystyakselin leikkauskohta eli pystyakselin suureen arvo, kun vaaka-akselin suure on nolla. Jos luet suoraa käsin ja vaaka-akseli ei ala nollasta, laske vakiotermi yhdestä suoran pisteestä: $b = y_1 - kx_1$.
 
@@ -73,7 +75,7 @@ Kulmakertoimesta saat tutkittavan suureen esimerkiksi tutkimuksissa *Jousivakion
 
 - **Kulmakerroin on laskettu kahdesta mittauspisteestä.** Tulos riippuu siitä, mitkä pisteet valitsit, ja sisältää niiden satunnaiset virheet. Käytä sovituksen kulmakerrointa tai lue pisteet sovitetulta suoralta.
 - **Valitut pisteet ovat lähellä toisiaan.** Pieni lukemisvirhe muuttaa kulmakerrointa paljon. Valitse pisteet mittausalueen päistä.
-- **Kulmakertoimen yksikkö puuttuu tai on väärä.** Huomaat sen, kun lopputuloksen yksikkö ei täsmää, esimerkiksi putoamiskiihtyvyydelle tulee yksiköksi $\text{s}^2/\text{m}$. Muodosta yksikkö akselien yksiköistä tai näytä yksiköt sovituksen tietolaatikossa, ja kuljeta yksikkö laskun läpi.
+- **Kulmakertoimen yksikkö puuttuu tai on väärä.** Huomaat sen, kun lopputuloksen yksikkö ei täsmää, esimerkiksi putoamiskiihtyvyydelle tulee yksiköksi $\text{s}^2/\text{m}$. Muodosta yksikkö akselien yksiköistä tai näytä yksiköt sovituksen tulosruudussa, ja kuljeta yksikkö laskun läpi.
 - **Kulmakerroin on sekoitettu tutkittavaan suureeseen.** Heilurin kuvaajan kulmakerroin ei ole $g$ vaan $\tfrac{4\pi^2}{g}$. Vertaa aina suoran yhtälöä malliin.
 - **Vakiotermi on jätetty huomiotta.** Selvästi nollasta poikkeava vakiotermi kertoo jotakin mittauksesta. Kerro raportissa, mistä se voi johtua.
 

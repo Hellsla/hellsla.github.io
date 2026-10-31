@@ -235,6 +235,7 @@ ol.bank-list li.bank-item[hidden]{display:none}
 .tvt-used{margin:.6rem 0 0;font-size:var(--fs-ui)}
 .tvt-used a{font-weight:600}
 article.guide{padding-bottom:60vh} /* a short guide page: room below its last section, so following its link in the stage navigation brings that heading to the top */
+figure.shot{margin:1rem 0}figure.shot img{display:block;max-width:100%;max-height:34rem;width:auto;height:auto;border:1px solid var(--line);border-radius:12px}figure.shot figcaption{margin-top:.35rem;font-size:var(--fs-small);color:var(--ink-2)}   /* a screenshot of Graphical Analysis in a TVT-ohje (guides.py): never wider than the column, its size kept while it loads */
 
 ul.practice-link{padding-left:0;list-style:none}ul.practice-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
 details.goals>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}

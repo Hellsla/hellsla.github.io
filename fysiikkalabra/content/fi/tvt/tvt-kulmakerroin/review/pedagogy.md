@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9b63d475ee4eca47
+CONTENT-HASH: dd68b9034e7f878c
 
 ## Blocking
 
@@ -20,3 +20,10 @@ None.
 - Worked example labelled "keksityn esimerkkiaineiston"; $g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}75\,\text{m/s}^2$ with a unit check; colon for division, units in LaTeX.
 - Intercept causes (zero offset, inconsistent method, real physical term) are concrete and tied to real investigations. Mistakes are real ones, each with a fix.
 - Figure shows the slope triangle and intercept b without numbers. Cross-links to suoran-sovitus sensible. No spreadsheet/Excel/Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Screenshots render inside their list item (section>ol>li), not wrapped in <p>; alt texts describe what is shown; captions say "esimerkkiarvoja" only on pictures with values; no licence holder or school name visible (the start-screen crop stops above the "Lisenssin haltija" row). guides.py check: ok.
+- The screenshot sits in the step that reads the tulosruutu; alt text lists every value; caption says esimerkkiarvoja. Good link between UI "m" and the guide's k.
+- Polish (optional): the example copies all four digits (1,671) into the report; a half-sentence pointing to [[ohje:tvt-epavarmuus]] for rounding would stop students reporting the program's digits as significant.
+- UI text quoted from the screen (y = mx + b, m: 1.671 g/cm3) as plain text is fine; the report-form value is in LaTeX.

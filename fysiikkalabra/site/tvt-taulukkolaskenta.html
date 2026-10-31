@@ -31,19 +31,22 @@
 </section><section class="inv-section" id="tyovaiheet"><h2 id="h-tyovaiheet">Työvaiheet</h2>
 <ol>
 <li>
-<p><strong>Aloita uusi koe.</strong> Valitse <strong>Manual Entry</strong>, kun kirjoitat mittaukset itse, tai <strong>Sensor Data Collection</strong>, kun anturi mittaa (<a class="tvt-link" href="tvt-mittausohjelma.html">Anturit ja mittausohjelma</a>).</p>
+<p><strong>Aloita uusi koe.</strong> Valitse aloitusikkunan kohdasta Uusi mittaus <strong>Manuaalinen syöttö</strong>, kun kirjoitat mittaukset itse, tai <strong>Mittaa antureilla</strong>, kun anturi mittaa (<a class="tvt-link" href="tvt-mittausohjelma.html">Anturit ja mittausohjelma</a>). Tallennetun kokeen avaat painikkeella <strong>Valitse tiedosto</strong>.</p>
+<figure class="shot"><img src="pics/tvt/ga-aloitus.png" alt="Graphical Analysisin aloitusikkuna. Kohdassa Uusi mittaus ovat vaihtoehdot Mittaa antureilla, Datan jakaminen ja Manuaalinen syöttö. Oikealla on kohdan Avaa tallennettu tiedosto painike Valitse tiedosto." width="930" height="622" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä).</figcaption></figure>
 </li>
 <li>
-<p><strong>Nimeä sarake ja anna sille yksikkö.</strong> Avaa sarakkeen nimen vierestä <strong>Column Options</strong>. Kirjoita nimeksi suureen tunnus, esimerkiksi <code>l</code>, ja yksiköksi <code>m</code>. Valitse samasta kohdasta näytettävä tarkkuus niin, että luvut näkyvät mittauksen tarkkuudella. Kuvaajan akselin otsikko tulee sarakkeen nimestä ja yksiköstä.</p>
+<p><strong>Nimeä sarake ja anna sille yksikkö.</strong> Avaa sarakkeen nimen vieressä olevasta kolmen pisteen painikkeesta (•••) sarakkeen valikko ja valitse <strong>Sarakkeen ominaisuudet</strong>. Kirjoita kenttään Nimi suureen tunnus, esimerkiksi <code>l</code>, ja kenttään Yksiköt <code>m</code>. Valitse kohdasta <strong>Näytettävä tarkkuus</strong> desimaalien määrä tai merkitsevät numerot niin, että luvut näkyvät mittauksen tarkkuudella, ja hyväksy painikkeella <strong>Ota käyttöön</strong>. Kuvaajan akselin otsikko tulee sarakkeen nimestä ja yksiköstä.</p>
+<figure class="shot"><img src="pics/tvt/ga-sarakevalikko.png" alt="Graphical Analysisin taulukko Datasarja 1, jossa ovat sarakkeet X ja Y. Sarakkeen X nimen vieressä olevasta kolmen pisteen painikkeesta on avattu valikko, jossa ovat valinnat Sarakkeen ominaisuudet, Lisää tyhjä sarake ja Lisää laskettu sarake." width="390" height="304" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä).</figcaption></figure>
+<figure class="shot"><img src="pics/tvt/ga-sarakkeen-ominaisuudet.png" alt="Ikkuna Sarakkeen ominaisuudet. Kenttään Nimi on kirjoitettu V ja kenttään Yksiköt cm3. Alempana ovat kohdat Näytettävä tarkkuus, Datatyyppi ja Virhepalkit, jossa on valintaruutu Näytä virhepalkit, ja alimpana painikkeet Peruuta ja Ota käyttöön." width="600" height="797" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä); esimerkkiarvoja.</figcaption></figure>
 </li>
 <li>
-<p><strong>Kirjoita mittaukset.</strong> Kaksoisnapsauta solua ja kirjoita luku, yksi mittaus riville. Lisää jokaiselle uudelle mitatulle suureelle oma sarakkeensa valinnalla <strong>Add Manual Column</strong>.</p>
+<p><strong>Kirjoita mittaukset.</strong> Kaksoisnapsauta solua ja kirjoita luku, yksi mittaus riville. Lisää jokaiselle uudelle mitatulle suureelle oma sarakkeensa sarakkeen valikon valinnalla <strong>Lisää tyhjä sarake</strong>.</p>
 </li>
 <li>
 <p><strong>Pidä mitatut arvot koskemattomina.</strong> Älä muuta mitattuja lukuja. Laskettu suure saa oman sarakkeensa. Jos jätät jonkin pisteen pois sovituksesta, kirjaa piste ja syy, mutta älä poista riviä.</p>
 </li>
 <li>
-<p><strong>Laske uusi sarake lausekkeella.</strong> Valitse <strong>Add Calculated Column</strong>, anna sarakkeelle nimi ja yksikkö ja kirjoita lauseke. Lausekkeessa sarakkeen nimi on lainausmerkeissä: jaksonajan neliö on <code>"T"^2</code>, neliöjuuri <code>sqrt("h")</code> ja etäisyyden neliön käänteisluku <code>1/"r"^2</code>. Laskutoimitukset ovat <code>+ - * / ^</code>, ja funktion argumentit ovat suluissa. Oma lauseke on Pro-ominaisuus. Ohjelma laskee sarakkeen kaikille riveille ja laskee sen uudelleen, jos korjaat mitattua arvoa. Tarkista yksi rivi laskimella.</p>
+<p><strong>Laske uusi sarake lausekkeella.</strong> Valitse sarakkeen valikosta <strong>Lisää laskettu sarake</strong>, anna sarakkeelle nimi ja yksikkö ja kirjoita lauseke. Lausekkeessa sarakkeen nimi on lainausmerkeissä, ja se kirjoitetaan täsmälleen sellaisena kuin taulukon otsikossa näkyy. Anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, joten katso nimi otsikosta äläkä oleta sitä. Esimerkiksi jaksonajan neliö on <code>"T"^2</code>, neliöjuuri <code>sqrt("h")</code> ja etäisyyden neliön käänteisluku <code>1/"r"^2</code>. Laskutoimitukset ovat <code>+ - * / ^</code>, ja funktion argumentit ovat suluissa. Oma lauseke on Pro-ominaisuus. Ohjelma laskee sarakkeen kaikille riveille ja laskee sen uudelleen, jos korjaat mitattua arvoa. Tarkista yksi rivi laskimella.</p>
 <p><svg data-fig="sheet" viewBox="0 0 600 372" role="img" aria-label="Kaaviokuva mittausohjelman datataulukosta keksityin esimerkkiarvoin. Ensimmäisen sarakkeen otsikko on l metreinä ja toisen T sekunteina; niissä ovat mitatut arvot. Kolmas sarake on laskettu sarake, jonka otsikko on T toiseen sekunnin neliöinä. Sen yläpuolella näkyy sarakkeen lauseke: T lainausmerkeissä potenssiin kaksi. Kolmannella rivillä laskettu arvo näkyy pyöristämättömänä, 1,6129." style="max-width:100%;font-size:24px">
   <foreignObject x="192.5" y="25.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{laskettu sarake, lauseke:}$</div></foreignObject>
   <rect x="340" y="64" width="180" height="38" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
@@ -89,26 +92,26 @@
 <p><strong>Laske muutos ja kertyvä summa.</strong> Lauseke <code>delta("x")</code> antaa rivin arvon ja edellisen rivin arvon erotuksen, joten ensimmäinen rivi jää tyhjäksi. Lauseke <code>sum("x")</code> laskee sarakkeen arvot yhteen ensimmäisestä rivistä nykyiseen riviin asti eli antaa kertyvän summan.</p>
 </li>
 <li>
-<p><strong>Laske pinta-ala kuvaajan alla.</strong> Lauseke <code>integral("a","t")</code> laskee $(t, a)$-kuvaajan ja aika-akselin välisen pinta-alan alusta nykyiseen riviin asti: se laskee kahden peräkkäisen rivin välisen kapean suikaleen alan ja lisää sen aiempien suikaleiden summaan. Kiihtyvyydestä saat näin nopeuden, ja kun lasket nopeussarakkeesta <code>integral("v","t")</code>, saat matkan. Kirjoita sarakkeiden nimet lausekkeeseen täsmälleen kuten taulukossa. Periaate on selitetty ohjeessa <a class="tvt-link" href="tvt-nopeus-datasta.html">Nopeuden ja matkan määrittäminen mittausdatasta</a>.</p>
+<p><strong>Laske pinta-ala kuvaajan alla.</strong> Lauseke <code>integral("a","t")</code> laskee $(t, a)$-kuvaajan ja aika-akselin välisen pinta-alan alusta nykyiseen riviin asti: se laskee kahden peräkkäisen rivin välisen kapean suikaleen alan ja lisää sen aiempien suikaleiden summaan. Kiihtyvyydestä saat näin nopeuden muutoksen alusta lähtien. Se on nopeus vain, kun liike alkaa levosta. Kun lasket nopeussarakkeesta <code>integral("v","t")</code>, saat siirtymän, joka on kuljettu matka vain, kun kappale liikkuu koko ajan samaan suuntaan. Kirjoita sarakkeiden nimet lausekkeeseen täsmälleen kuten taulukossa, myös anturin antamat nimet. Periaate on selitetty ohjeessa <a class="tvt-link" href="tvt-nopeus-datasta.html">Nopeuden ja matkan määrittäminen mittausdatasta</a>.</p>
 </li>
 <li>
 <p><strong>Tuo data puhelimesta.</strong> Puhelimen mittaussovellus tallentaa mittauksen usein CSV-tiedostona. Graphical Analysis Pro avaa CSV-tiedoston, tai voit kopioida sarakkeet ja liittää ne taulukkoon (Ctrl+C ja Ctrl+V, macOS:ssä Cmd). Tarkista sen jälkeen sarakkeiden nimet ja yksiköt ja se, että pisteet näkyvät kuvaajassa.</p>
 </li>
 <li>
-<p><strong>Tallenna ja vie data.</strong> Tallenna koe ohjelman omana tiedostona (.gambl), jolloin lasketut sarakkeet säilyvät. Valinta <strong>Export data as csv</strong> vie taulukon CSV-tiedostoksi esimerkiksi työselostuksen liitteeksi. Kuvaajan ja suoran sovituksen ohjeet ovat <a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a> ja <a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>.</p>
+<p><strong>Tallenna ja vie data.</strong> Tallenna koe ohjelman omana tiedostona (.gambl), jolloin lasketut sarakkeet säilyvät. Ohjelman vientitoiminto (englanninkielisessä versiossa <strong>Export data as csv</strong>) vie taulukon CSV-tiedostoksi esimerkiksi työselostuksen liitteeksi. Kuvaajan ja suoran sovituksen ohjeet ovat <a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a> ja <a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>.</p>
 </li>
 </ol>
 </section><section class="inv-section" id="ohjelmakohtaisia-vinkkeja"><h2 id="h-ohjelmakohtaisia-vinkkeja">Ohjelmakohtaisia vinkkejä</h2>
 <ul>
 <li><strong>Pro-ominaisuudet.</strong> Omat lausekkeet, käsin säädettävä suora, sovitusparametrien epävarmuus ja video ovat vain Pro-versiossa. Jos et löydä lausekkeen kirjoituskenttää, kysy opettajalta, onko käytössäsi Pro-versio.</li>
-<li><strong>Useampi mittaussarja.</strong> Käsin syötettävässä kokeessa saat uuden sarjan valikosta <strong>Data Set Options</strong> valinnalla <strong>Add New Data Set</strong> ja nimeät sen valinnalla <strong>Rename Data Set</strong>, esimerkiksi "jousi 1".</li>
-<li><strong>Väärä sarake.</strong> <strong>Delete Column</strong> poistaa sarakkeen. Poista vain itse tekemäsi laskettu sarake, älä mitattua.</li>
+<li><strong>Useampi mittaussarja.</strong> Käsin syötettävässä kokeessa uuden sarjan saat datasarjan nimen (esimerkiksi Datasarja 1) vieressä olevan kolmen pisteen painikkeen valikosta (englanninkielisessä versiossa <strong>Add New Data Set</strong>), ja samasta valikosta voit nimetä sarjan uudelleen (<strong>Rename Data Set</strong>), esimerkiksi "jousi 1".</li>
+<li><strong>Väärä sarake.</strong> Sarakkeen voi poistaa (englanninkielisessä versiossa <strong>Delete Column</strong>). Poista vain itse tekemäsi laskettu sarake, älä mitattua.</li>
 </ul>
 </section><section class="inv-section" id="tavallisimmat-virheet"><h2 id="h-tavallisimmat-virheet">Tavallisimmat virheet</h2>
 <ul>
 <li><strong>Sarakkeen nimi on lausekkeessa väärin.</strong> Lauseke antaa virheilmoituksen tai tyhjän sarakkeen. Kirjoita nimi lainausmerkkeihin täsmälleen kuten sarakkeen otsikossa.</li>
 <li><strong>Liitetyt luvut eivät ole lukuja.</strong> Pisteet eivät näy kuvaajassa, tai sarake on tyhjä. Syy on yleensä desimaalierotin: CSV-tiedostossa se on usein piste.</li>
-<li><strong>Lasketulla sarakkeella ei ole yksikköä.</strong> Akselin otsikosta puuttuu yksikkö. Anna yksikkö valinnassa <strong>Column Options</strong>.</li>
+<li><strong>Lasketulla sarakkeella ei ole yksikköä.</strong> Akselin otsikosta puuttuu yksikkö. Anna yksikkö sarakkeen valikon kohdassa <strong>Sarakkeen ominaisuudet</strong>.</li>
 <li><strong>Kulma on lausekkeessa asteina.</strong> Sinin tai kosinin arvot ovat järjettömiä. Muunna kulma radiaaneiksi.</li>
 <li><strong>Mitatut arvot on korvattu lasketuilla.</strong> Laskua ei voi enää tarkistaa. Pidä mitatut arvot omissa sarakkeissaan.</li>
 </ul>

@@ -33,13 +33,13 @@
 <h3>Tapa 1: jyrkin ja loivin suora</h3>
 <ol>
 <li>
-<p><strong>Näytä epävarmuusjanat.</strong> Merkitse jokaiseen pisteeseen epävarmuusjana, joka näyttää mittauksen epävarmuuden (<a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a>). Graphical Analysis Prossa epävarmuusjanat ovat Pro-ominaisuus; kysy opettajalta, jos et löydä asetusta.</p>
+<p><strong>Näytä epävarmuusjanat.</strong> Merkitse jokaiseen pisteeseen epävarmuusjana, joka näyttää mittauksen epävarmuuden (<a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a>). Graphical Analysisissa epävarmuusjanat ovat virhepalkkeja: valitse sarakkeen nimen vieressä olevan kolmen pisteen painikkeen (•••) valikosta <strong>Sarakkeen ominaisuudet</strong> ja sieltä <strong>Näytä virhepalkit</strong>.</p>
 </li>
 <li>
-<p><strong>Lisää kaksi käsin säädettävää suoraa.</strong> Valitse kuvaajan vasemman alakulman valikosta <strong>Graph Options</strong> kohta <strong>Add Manual Fit</strong> (Pro). Vedä suoraa sen kahvoista. Ohjelma näyttää suoran kulmakertoimen ja vakiotermin ja päivittää ne, kun siirrät suoraa. Käsin säädettäviä suoria voi olla enintään kolme, joten tee yhdestä jyrkin ja toisesta loivin.</p>
+<p><strong>Lisää kaksi käsin säädettävää suoraa.</strong> Ota käyttöön käsin säädettävä suora (englanninkielisessä versiossa <strong>Add Manual Fit</strong>, Pro). Se voi löytyä kuvaajatyökalujen valikosta, joka avautuu kuvaajan vasemman alakulman kuvakkeesta; vieritä valikkoa tarvittaessa alas. Jos et löydä sitä, kysy opettajalta. Vedä suoraa sen kahvoista. Ohjelma näyttää suoran kulmakertoimen ja vakiotermin ja päivittää ne, kun siirrät suoraa. Käsin säädettäviä suoria voi olla enintään kolme, joten tee yhdestä jyrkin ja toisesta loivin.</p>
 </li>
 <li>
-<p><strong>Säädä jyrkin ja loivin suora.</strong> Käännä ensimmäinen suora mahdollisimman jyrkäksi niin, että se vielä kulkee kaikkien tai lähes kaikkien epävarmuusjanojen kautta, ja toinen samalla tavalla mahdollisimman loivaksi. Kirjaa niiden kulmakertoimet $k_\text{max}$ ja $k_\text{min}$ tietolaatikoista.</p>
+<p><strong>Säädä jyrkin ja loivin suora.</strong> Käännä ensimmäinen suora mahdollisimman jyrkäksi niin, että se vielä kulkee kaikkien tai lähes kaikkien epävarmuusjanojen kautta, ja toinen samalla tavalla mahdollisimman loivaksi. Kirjaa niiden kulmakertoimet $k_\text{max}$ ja $k_\text{min}$ tulosruuduista.</p>
 <p><svg data-fig="lines" viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva ilman lukuarvoja: kuusi mittauspistettä, joissa kussakin on yhtä pitkä pystysuora epävarmuusjana. Pisteisiin on sovitettu suora, jonka kulmakerroin on k. Katkoviivoilla on piirretty jyrkin ja loivin suora, jotka vielä kulkevat jokaisen epävarmuusjanan kautta; niiden kulmakertoimet ovat k max ja k min. Suorat leikkaavat toisensa pisteiden keskivaiheilla ja erkanevat päitä kohti." style="max-width:100%;font-size:24px">
   <line x1="79" y1="300" x2="464" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M476,300 L463,306 L463,294 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -91,10 +91,10 @@
 <h3>Tapa 2: sovitusparametrin epävarmuus</h3>
 <ol>
 <li>
-<p><strong>Näytä parametrien epävarmuudet.</strong> Sovita suora valinnalla <strong>Apply Curve Fit</strong> (<a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>). Kun parametrien epävarmuuksien näyttäminen on päällä (<strong>Show uncertainty of curve fit parameters</strong>, Pro), sovituksen tietolaatikossa näkyy kulmakertoimen vieressä sen epävarmuus. Jos et löydä asetusta, kysy opettajalta. Käytä tätä parametrin epävarmuutta kulmakertoimen epävarmuutena $\Delta k$.</p>
+<p><strong>Näytä parametrien epävarmuudet.</strong> Sovita suora valinnoilla <strong>Käyrän sovitus</strong> ja <strong>Lineaarinen</strong> (<a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>). Parametrien epävarmuuksien näyttäminen (englanninkielisessä versiossa <strong>Show uncertainty of curve fit parameters</strong>, Pro) voi olla tulosruudun rattaan kuvakkeen takana; jos et löydä sitä, kysy opettajalta. Kun asetus on päällä, tulosruudussa näkyy kulmakertoimen eli ohjelman m:n vieressä sen epävarmuus. Käytä tätä parametrin epävarmuutta kulmakertoimen epävarmuutena $\Delta k$.</p>
 </li>
 <li>
-<p><strong>Tiedä, mitä luku kertoo.</strong> Ohjelma laskee epävarmuuden siitä, kuinka paljon pisteet poikkeavat sovitetusta suorasta. Se ei tiedä mitään epävarmuusjanoista, joita et ole antanut ohjelmalle. Jos pisteitä on vähän ja ne osuvat sattumalta lähes suoralle, epävarmuus voi olla epärealistisen pieni. Vertaa sitä silloin jyrkimmän ja loivimman suoran arvioon.</p>
+<p><strong>Tiedä, mitä luku kertoo.</strong> Luku perustuu pisteiden hajontaan suoran ympärillä, ei virhepalkkeihin. Jos pisteitä on vähän ja ne osuvat sattumalta lähes suoralle, epävarmuus voi olla epärealistisen pieni. Vertaa sitä silloin jyrkimmän ja loivimman suoran arvioon.</p>
 </li>
 </ol>
 <h3>Tuloksen epävarmuus ja ilmoittaminen</h3>

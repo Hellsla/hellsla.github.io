@@ -568,6 +568,9 @@ def build_language(lang):
                  if any(gid in p.get("guides", []) for p in investigations.load(i, lang)["prerequisites"])
                  or f"[[ohje:{gid}|" in (investigations.folder(i, lang) / "investigation.md").read_text()]
         body, gtoc = guides.render(gid, lang, T, lambda t: nbsp_units(render_md(t)), published, users)
+        for ref in guides.pic_refs(gid, lang):            # screenshots, at the same relative path as a lesson's pictures
+            if not courses.pic_source(ref).is_file(): sys.exit(f"{gid}: picture {ref} not found (expected assets/{ref})")
+            (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", "FY10").replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("guides.notice_draft")}</p>')
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course="FY10")))
                 .replace("{{toc}}", gtoc).replace("{{main}}", body).replace("{{scripts}}", "")

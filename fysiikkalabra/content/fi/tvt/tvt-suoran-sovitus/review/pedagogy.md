@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 80e44fd6110c09bb
+CONTENT-HASH: 41ba9b76f7a3dc91
 
 ## Blocking
 
@@ -20,3 +20,10 @@ None.
 - Mistakes are real ones (line through first/last point, polyline, forced origin, straight line on curved data, silent outlier removal, extrapolation), each with symptom and fix.
 - Figures: least-squares residuals and curved v(h) vs straight v²(h); no numbers, so no invented data. Units in LaTeX.
 - Finnish clear, short sentences; cross-links to kuvaaja, kulmakerroin, taulukkolaskenta sensible. No spreadsheet/Excel/Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Screenshots render inside their list item (section>ol>li), not wrapped in <p>; alt texts describe what is shown; captions say "esimerkkiarvoja" only on pictures with values; no licence holder or school name visible (the start-screen crop stops above the "Lisenssin haltija" row). guides.py check: ok.
+- Three screenshots, each in the step it illustrates (menu → dialog → result box). Alt texts list the visible items; only the result box has values and only it says esimerkkiarvoja.
+- "Kirjain m ei tässä tarkoita massaa eikä metriä" is a good pre-emptive misconception note, especially since the example's y column is m (g).
+- UI text "mx + b", "y = mx + b", "1.671" left as plain UI text; the model forms are in LaTeX. I agree with this split.

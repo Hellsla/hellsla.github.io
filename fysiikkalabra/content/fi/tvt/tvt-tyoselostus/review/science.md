@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b7d259b4446ba947
+CONTENT-HASH: 3336b3617eb6b37b
 
 ## Blocking
 - None.
@@ -14,3 +14,9 @@ CONTENT-HASH: b7d259b4446ba947
 - Line equation with quantities and units: $T^2 = 4{,}05\,\text{s}^2/\text{m} \cdot l + 0{,}02\,\text{s}^2$ dimensionally correct and consistent with the k = 4,05 s^2/m used in tvt-kulmakerroin and tvt-epavarmuus; model calculation symbolic first; result $g = (9{,}7 \pm 0{,}4)\,\text{m/s}^2$ consistent with tvt-epavarmuus.
 - UI names: Export graph as png, Export data as csv, Show units in linear fit parameters — in ga-facts.md; image export rather than screenshot.
 - Figure matches figures.py; sections 4–6 of the FY10 template; grey bars for student content; labels LaTeX, no overlaps.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
+- No Finnish UI names in bold here; English: Export graph as png, Export data as csv (ga-facts), now introduced with "englanninkielisessä versiossa".
+- Step 4: m: 4.05, b: 0.02 → T² = 4,05 s²/m · l + 0,02 s² is correct and consistent with the other guides' m = k remark. "tietolaatikko" was renamed "tulosruutu" to match tvt-suoran-sovitus.

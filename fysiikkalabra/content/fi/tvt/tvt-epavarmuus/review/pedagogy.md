@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3234fc70c2022f55
+CONTENT-HASH: fd34db779eea2d90
 
 ## Blocking
 
@@ -20,3 +20,9 @@ None.
 - Worked example labelled "Keksityssä esimerkkiaineistossa"; numbers consistent with tvt-kulmakerroin (k = 4,05 s²/m, g ≈ 9,748 → (9,7 ± 0,4) m/s²), unrounded intermediates, units throughout.
 - Mistakes are real ones (lines missing the bars, too many digits, mismatched rounding, Δk reported as Δg, small uncertainty mistaken for correctness). Figure shows steepest/shallowest lines through the bars, no numbers.
 - Cross-links to suoran-sovitus, kulmakerroin, kuvaaja sensible. No spreadsheet/Excel/Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- No screenshot in this guide (not needed); guides.py check: ok. Rendered preview checked: no leftover markdown or {{ga:}} markers.
+- Method 1 step 1 now gives the real path (••• → Sarakkeen ominaisuudet → Näytä virhepalkit). Polish: after ticking the box the student still has to enter the size of Δy; one clause ("ja anna epävarmuuden suuruus") would close the step. Not verified where it is typed, so keep it generic.
+- Add Manual Fit step is honestly hedged ("voi löytyä…, vieritä…, kysy opettajalta"); the menu in the screenshot does scroll, so the hint is plausible. No screenshot in this guide; none needed.

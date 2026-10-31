@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3234fc70c2022f55
+CONTENT-HASH: fd34db779eea2d90
 
 ## Blocking
 - None.
@@ -15,3 +15,10 @@ CONTENT-HASH: 3234fc70c2022f55
 - Δg/g = Δk/k for g = 4π^2/k correct; unit check of Δk vs Δg; systematic error (video scale) not caught by the fit; overlap ≠ equality wording.
 - UI: Graph Options (lower left) > Add Manual Fit (Pro), handles, slope/intercept update, max three lines; Apply Curve Fit; "Show uncertainty of curve fit parameters" (Pro) with the prescribed hedge — all in ga-facts.md.
 - Figure matches figures.py: extreme lines found by search really pass through every bar; best fit between them; labels LaTeX, leader lines, no overlaps.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
+- Verified: **Sarakkeen ominaisuudet**, **Näytä virhepalkit** (ga-sarakkeen-ominaisuudet.png), **Käyrän sovitus**, **Lineaarinen** (ga-kuvaajatyokalut.png, ga-kayran-sovitus.png). English: Add Manual Fit, Show uncertainty of curve fit parameters (both in ga-facts, both hedged with "kysy opettajalta").
+- Method 2 wording is correct: the parameter uncertainty comes from the scatter about the line, not from the error bars, and can be unrealistically small for few points. The phrase "m:n vieressä" asserts a display position that ga-facts marks as unverified; harmless, but "tulosruudussa näkyy myös kulmakertoimen (ohjelman m) epävarmuus" would be safer (polish).
+- Worked example unchanged and still right: 4π²/4,05 = 9,748; Δk/k = 0,0395; Δg ≈ 0,39 → (9,7 ± 0,4) m/s².

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9a322438e06ceeb8
+CONTENT-HASH: 43827baa8113f8bc
 
 ## Blocking
 - None.
@@ -14,3 +14,8 @@ CONTENT-HASH: 9a322438e06ceeb8
 - Frame rate: slow-motion stored for normal playback, wrong frame rate makes times and speeds wrong, free-fall check against 9,81 m/s^2; $t = N/f$ and 36 : 240 1/s = 0,15 s recomputed.
 - UI: only the verified Pro feature (add a video to a data file and sync it with a time-based collection) is claimed for GA Pro; data moved to GA Pro as CSV.
 - Figure matches figures.py: top view not to scale (stated), ruler in the plane and a dashed one in the wrong place, right-angle mark; labels LaTeX, no overlaps.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
+- Only change: "monikertaisia" → "moninkertaisia". No science impact. No GA menu names in this guide.

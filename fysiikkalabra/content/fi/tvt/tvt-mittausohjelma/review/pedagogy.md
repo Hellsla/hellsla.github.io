@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cc1b6258a152ff14
+CONTENT-HASH: 2e3710706cf4d933
 
 ## Blocking
 
@@ -20,3 +20,9 @@ None.
 - Goals match; mistakes are real ones (not zeroed, rate too low, start missed, clipped range, phone in g units, raw data not saved), each with a fix.
 - Sampling figure (dense vs sparse samples missing a peak) supports step 3; no numbers.
 - Finnish grammatical around bold names. Cross-links to suoran-sovitus and taulukkolaskenta sensible; investigation titles exist. No Logger Pro / spreadsheet leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Screenshots render inside their list item (section>ol>li), not wrapped in <p>; alt texts describe what is shown; captions say "esimerkkiarvoja" only on pictures with values; no licence holder or school name visible (the start-screen crop stops above the "Lisenssin haltija" row). guides.py check: ok.
+- Start-screen screenshot sits in step 1 where the student picks Mittaa antureilla; no licence row visible.
+- Quoting the status bar lets students check the mode and rate without opening menus; good.

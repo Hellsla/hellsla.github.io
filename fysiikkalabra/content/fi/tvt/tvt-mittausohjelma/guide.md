@@ -6,11 +6,13 @@ Tutkimuksessa *Hypyn tutkiminen voimalevyllä* voimalevy tallentaa voiman ajan f
 
 ## Työvaiheet
 
-1. **Kytke ja tunnista anturi.** Valitse **Sensor Data Collection**. Kytke Go Direct -anturi USB-johdolla tai Bluetoothilla: langattoman anturin valitset luettelosta **Discovered Wireless Devices** ja painat **Connect**. Tarkista, että ohjelma näyttää oikean suureen ja yksikön. Kokeile, että lukema muuttuu, kun muutat mitattavaa suuretta, esimerkiksi painat voima-anturia kevyesti.
+1. **Kytke ja tunnista anturi.** Valitse aloitusikkunasta **Mittaa antureilla**. Kytke Go Direct -anturi USB-johdolla tai Bluetoothilla: langattoman anturin valitset löydettyjen langattomien laitteiden luettelosta (englanninkielisessä versiossa **Discovered Wireless Devices**) ja yhdistät sen (**Connect**). Tarkista, että ohjelma näyttää oikean suureen ja yksikön. Kokeile, että lukema muuttuu, kun muutat mitattavaa suuretta, esimerkiksi painat voima-anturia kevyesti.
 
-2. **Nollaa anturi, jos se on mahdollista.** Voima-anturi ja voimalevy nollataan kuormittamattomina, jotta lukema on nolla ilman voimaa. Napsauta anturin lukemaa ja valitse **Zero**. Lukema voi ajan mittaan ryömiä, joten nollaa ennen jokaista mittaussarjaa. Kirjaa, missä tilassa nollasit: jos nollaat punnustelineen roikkuessa anturissa, anturi näyttää vain lisätyn voiman.
+    <figure class="shot"><img src="pics/tvt/ga-aloitus.png" alt="Graphical Analysisin aloitusikkuna. Kohdassa Uusi mittaus ovat vaihtoehdot Mittaa antureilla, Datan jakaminen ja Manuaalinen syöttö. Oikealla on kohdan Avaa tallennettu tiedosto painike Valitse tiedosto." width="930" height="622" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä).</figcaption></figure>
 
-3. **Valitse mittaustaajuus ja kesto.** Avaa **Data Collection Settings** ja valitse tilaksi **Time Based**. Mittaustaajuus kertoo, montako lukemaa anturi tallentaa sekunnissa. Nopea tapahtuma, kuten hyppy tai törmäys, vaatii suuren taajuuden, jotta lyhyt huippu ei jää kahden lukeman väliin. Hidas ilmiö, kuten jäähtyminen, ei tarvitse tiheää mittausta, mutta mittauksen on kestettävä koko ilmiön ajan. Kestoksi valitset kiinteän ajan (**End Collection: After Fixed Duration**) tai lopetat itse (**Manually**).
+2. **Nollaa anturi, jos se on mahdollista.** Voima-anturi ja voimalevy nollataan kuormittamattomina, jotta lukema on nolla ilman voimaa. Napsauta anturin lukemaa ja valitse nollaus (englanninkielisessä versiossa **Zero**). Lukema voi ajan mittaan ryömiä, joten nollaa ennen jokaista mittaussarjaa. Kirjaa, missä tilassa nollasit: jos nollaat punnustelineen roikkuessa anturissa, anturi näyttää vain lisätyn voiman.
+
+3. **Valitse mittaustaajuus ja kesto.** Avaa mittausasetukset (englanninkielisessä versiossa **Data Collection Settings**) ja valitse tilaksi ajan funktiona mittaaminen (**Time Based**). Ikkunan alareunan tilarivillä näkyvät valittu tila ja mittaustaajuus, esimerkiksi "Tila: Ajan funktiona" ja "Nopeus: 2 mittauspistettä/s". Mittaustaajuus kertoo, montako lukemaa anturi tallentaa sekunnissa. Nopea tapahtuma, kuten hyppy tai törmäys, vaatii suuren taajuuden, jotta lyhyt huippu ei jää kahden lukeman väliin. Hidas ilmiö, kuten jäähtyminen, ei tarvitse tiheää mittausta, mutta mittauksen on kestettävä koko ilmiön ajan. Kestoksi valitset kiinteän ajan (englanninkielisessä versiossa **End Collection: After Fixed Duration**) tai lopetat itse (**Manually**).
 
     <svg data-fig="sampling" viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva ilman lukuarvoja: tasaisesta lukemasta nouseva lyhyt voimapulssi ajan funktiona punaisena käyränä. Tiheästi otetut näytteet, pienet mustat pisteet, seuraavat käyrää ja osuvat myös huipulle. Harvaan otetut näytteet, neliöt katkoviivalla yhdistettyinä, osuvat huipun molemmille puolille, joten niistä huippu näyttää paljon matalammalta kuin se on." style="max-width:100%;font-size:24px">
   <line x1="79" y1="290" x2="484" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -117,25 +119,25 @@ Tutkimuksessa *Hypyn tutkiminen voimalevyllä* voimalevy tallentaa voiman ajan f
   <foreignObject x="342" y="149.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{harva näytteenotto}$</div></foreignObject>
 </svg>
 
-4. **Käynnistä mittaus tarvittaessa liipaisulla.** Lyhyen tapahtuman alku jää helposti tallentumatta. Kun valitset aloitukseksi **On a Triggering Event**, mittaus alkaa, kun valitun anturin lukema saavuttaa asettamasi kynnysarvon. Muuten aloita tallennus ennen tapahtumaa ja lopeta vasta sen jälkeen.
+4. **Käynnistä mittaus tarvittaessa liipaisulla.** Lyhyen tapahtuman alku jää helposti tallentumatta. Kun valitset aloitukseksi liipaisun (englanninkielisessä versiossa **On a Triggering Event**), mittaus alkaa, kun valitun anturin lukema saavuttaa asettamasi kynnysarvon. Muuten aloita tallennus ennen tapahtumaa ja lopeta vasta sen jälkeen.
 
-5. **Käytä tapahtumapohjaista mittausta, kun valitset arvot itse.** Tilassa **Event Based** anturin lukema tallennetaan vain hetkinä, jotka itse valitset. Valinnalla **Events with Entry** kirjoitat jokaiselle lukemalle oman arvon, esimerkiksi lampun etäisyyden tai punnusten massan, jolloin saat suoraan kuvaajan lukemasta sen funktiona.
+5. **Käytä tapahtumapohjaista mittausta, kun valitset arvot itse.** Tapahtumapohjaisessa tilassa (englanninkielisessä versiossa **Event Based**) anturin lukema tallennetaan vain hetkinä, jotka itse valitset. Vaihtoehdolla, jossa arvo kirjoitetaan jokaiselle tapahtumalle (**Events with Entry**), kirjoitat jokaiselle lukemalle oman arvon, esimerkiksi lampun etäisyyden tai punnusten massan, jolloin saat suoraan kuvaajan lukemasta sen funktiona.
 
 6. **Tee koemittaus.** Kokeile asetuksia ennen varsinaista mittausta. Tarkista, että koko tapahtuma tallentuu, lukemat eivät jää kiinni mittausalueen ylärajaan ja kuvaajassa näkyvät tapahtuman tärkeät vaiheet.
 
-7. **Lue arvoja kuvaajasta.** Työkalulla **Examine** näet napsauttamasi kohdan ajan ja lukeman. Lue näin esimerkiksi lepojakson lukema tai liikkeen huippuarvo.
+7. **Lue arvoja kuvaajasta.** Lukutyökalulla (englanninkielisessä versiossa **Examine**) näet napsauttamasi kohdan ajan ja lukeman. Lue näin esimerkiksi lepojakson lukema tai liikkeen huippuarvo.
 
-8. **Rajaa väli tilastoille ja sovituksille.** Valitse kuvaajasta aikaväli vetämällä sen yli, esimerkiksi lepojakso, ja valitse **View Statistics**: saat välin lukemien keskiarvon. Samalla tavalla [[ohje:tvt-suoran-sovitus|sovitus]] tehdään vain valitulle välille, jossa malli pätee.
+8. **Rajaa väli tilastoille ja sovituksille.** Valitse kuvaajasta aikaväli vetämällä sen yli, esimerkiksi lepojakso, ja valitse valinnan viereen avautuvasta valikosta tai kuvaajatyökalujen valikosta (kuvaajan vasemman alakulman kuvake) **Tilastotiedot**: saat välin lukemien keskiarvon. Samalla tavalla [[ohje:tvt-suoran-sovitus|sovitus]] tehdään vain valitulle välille, jossa malli pätee.
 
-9. **Määritä pinta-ala.** Valitse väli ja valitse **View Integral**. Ohjelma laskee kuvaajan ja aika-akselin välisen pinta-alan valitulla välillä. Voima–aika-kuvaajan pinta-ala on voiman impulssi yksikössä $\text{N} \cdot \text{s}$, ja kiihtyvyys–aika-kuvaajan pinta-ala on nopeuden muutos yksikössä $\text{m/s}$.
+9. **Määritä pinta-ala.** Valitse väli ja valitse samasta valikosta **Integraali**. Ohjelma laskee kuvaajan ja aika-akselin välisen pinta-alan valitulla välillä. Voima–aika-kuvaajan pinta-ala on voiman impulssi yksikössä $\text{N} \cdot \text{s}$, ja kiihtyvyys–aika-kuvaajan pinta-ala on nopeuden muutos yksikössä $\text{m/s}$.
 
-10. **Tallenna ja vie data.** Tallenna mittaus ohjelman omana tiedostona (.gambl) ja kirjaa, mitä kukin mittaus esittää. Valinta **Export data as csv** vie taulukon CSV-tiedostoksi ja **Export graph as png** kuvaajan kuvaksi. Mittauksesta laskettavat uudet suureet tehdään laskettuina sarakkeina ([[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]).
+10. **Tallenna ja vie data.** Tallenna mittaus ohjelman omana tiedostona (.gambl) ja kirjaa, mitä kukin mittaus esittää. Ohjelman vientitoiminnot vievät taulukon CSV-tiedostoksi (englanninkielisessä versiossa **Export data as csv**) ja kuvaajan kuvaksi (**Export graph as png**). Mittauksesta laskettavat uudet suureet tehdään laskettuina sarakkeina ([[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]).
 
 ## Ohjelmakohtaisia vinkkejä
 
 ### Valoportti
 
-Valoportti mittaa ajan $\Delta t$, jonka kappaleen liuska katkaisee valonsäteen. Kun liuskan leveys $b$ tunnetaan, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Mittaa leveys työntömitalla. Valitse valoportille tila **Photogate Timing** ja sen vaihtoehdoista mittaustapa, esimerkiksi **Speed Through Gate** nopeudelle portin kohdalla, **Linear Motion** useiden katkosten liikkeelle tai **Pendulum Period** heilurin jaksonajalle.
+Valoportti mittaa ajan $\Delta t$, jonka kappaleen liuska katkaisee valonsäteen. Kun liuskan leveys $b$ tunnetaan, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Mittaa leveys työntömitalla. Valitse valoportille valoporttiajoitus (englanninkielisessä versiossa **Photogate Timing**) ja sen vaihtoehdoista mittaustapa, esimerkiksi **Speed Through Gate** nopeudelle portin kohdalla, **Linear Motion** useiden katkosten liikkeelle tai **Pendulum Period** heilurin jaksonajalle.
 
 ### Liikeanturi
 
@@ -148,7 +150,7 @@ Jos mittaat puhelimen sovelluksella, tallenna mittaus CSV-tiedostona ja avaa se 
 ## Tavallisimmat virheet
 
 - **Anturia ei nollattu.** Lepolukema ei ole nolla, ja jokaisessa lukemassa on sama siirtymä. Pinta-alaan siirtymä kertyy koko mittausajalta.
-- **Mittaustaajuus oli liian pieni.** Huippu näyttää kulmikkaalta tai matalammalta kuin toistetuissa mittauksissa. Kasvata taajuutta asetuksissa **Data Collection Settings** ja mittaa uudelleen.
+- **Mittaustaajuus oli liian pieni.** Huippu näyttää kulmikkaalta tai matalammalta kuin toistetuissa mittauksissa. Kasvata taajuutta mittausasetuksissa ja mittaa uudelleen.
 - **Tapahtuman alku puuttuu.** Mittaus käynnistyi liian myöhään. Aloita aiemmin tai käytä liipaisua.
 - **Lukema jäi mittausalueen ylärajaan.** Kuvaajassa on tasainen katto. Valitse suurempi mittausalue, jos laitteessa on sellainen, tai pienennä kuormaa.
 - **Puhelimen lukemat ovat $g$:n kerrannaisia.** Jos lepolukema on noin $1{,}00$, kerro lukemat putoamiskiihtyvyydellä $9{,}81\,\text{m/s}^2$ lasketussa sarakkeessa.

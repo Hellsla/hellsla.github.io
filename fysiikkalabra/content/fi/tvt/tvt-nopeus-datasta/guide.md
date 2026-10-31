@@ -6,7 +6,7 @@ Tutkimuksessa *Pallon muotokertoimen määrittäminen* rajanopeus saadaan paikka
 
 ## Työvaiheet
 
-Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina ([[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]). Lausekkeissa sarakkeiden nimet ovat lainausmerkeissä, ja tässä ohjeessa ne ovat `t`, `x`, `v` ja `a`.
+Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina ([[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]). Lausekkeissa sarakkeiden nimet ovat lainausmerkeissä, ja tässä ohjeessa ne ovat `t`, `x`, `v` ja `a`. Kirjoita omaan lausekkeeseesi nimet täsmälleen sellaisina kuin taulukon otsikossa näkyy: anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, jotka voivat olla muita kuin nämä.
 
 ### Paikasta nopeus
 
@@ -18,11 +18,11 @@ Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina ([[ohje:tvt-ta
 
 2. **Laske nopeus derivaattana.** Tee laskettu sarake `v`, yksikkö $\text{m/s}$, lausekkeella `firstDerivative("x","t",7)`. Ohjelma laskee jokaisen rivin nopeuden usean ympäröivän rivin avulla keskitetysti, jolloin mittausvirheet tasoittuvat. Viimeinen luku on käytettävien pisteiden määrä ($3$, $5$, $7$, …). Suurempi luku tasoittaa enemmän mutta pyöristää myös nopeita muutoksia. Lauseke on Pro-ominaisuus.
 
-3. **Määritä hetkellinen nopeus kuvaajasta.** $(t, x)$-kuvaajassa hetkellinen nopeus on kuvaajan tangentin kulmakerroin kyseisellä hetkellä. Ota käyttöön **Graph Tools** -valikosta **Tangent**, niin ohjelma näyttää tangentin kulmakertoimen valitsemassasi kohdassa. Tasaisessa liikkeessä kuvaaja on suora, ja nopeus on [[ohje:tvt-suoran-sovitus|sovitetun suoran]] kulmakerroin. Sovita suora vain siihen osaan, jossa liike on tasaista. Jos paikka pienenee ajan kuluessa, kulmakerroin on negatiivinen, ja vauhti on sen itseisarvo.
+3. **Määritä hetkellinen nopeus kuvaajasta.** $(t, x)$-kuvaajassa hetkellinen nopeus on kuvaajan tangentin kulmakerroin kyseisellä hetkellä. Kytke kuvaajatyökalujen valikosta (kuvaajan vasemman alakulman kuvake) päälle **Tangentti**, niin ohjelma näyttää tangentin kulmakertoimen valitsemassasi kohdassa. Tasaisessa liikkeessä kuvaaja on suora, ja nopeus on [[ohje:tvt-suoran-sovitus|sovitetun suoran]] kulmakerroin. Sovita suora vain siihen osaan, jossa liike on tasaista. Jos paikka pienenee ajan kuluessa, kulmakerroin on negatiivinen, ja vauhti on sen itseisarvo.
 
 ### Valoportista nopeus
 
-4. **Jaa liuskan leveys katkoajalla.** Kun kappaleen liuska, jonka leveys on $b$, katkaisee valoportin säteen ajaksi $\Delta t$, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Kapealla liuskalla se on lähellä hetkellistä nopeutta. Esimerkiksi $1{,}0\,\text{cm}$:n liuska ja katkoaika $0{,}020\,\text{s}$ antavat nopeuden $v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}$. Muunna leveys metreiksi ennen jakamista. Valoportin tila **Speed Through Gate** laskee saman ([[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]]), kun liuskan leveys on annettu oikein.
+4. **Jaa liuskan leveys katkoajalla.** Kun kappaleen liuska, jonka leveys on $b$, katkaisee valoportin säteen ajaksi $\Delta t$, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Kapealla liuskalla se on lähellä hetkellistä nopeutta. Esimerkiksi $1{,}0\,\text{cm}$:n liuska ja katkoaika $0{,}020\,\text{s}$ antavat nopeuden $v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}$. Muunna leveys metreiksi ennen jakamista. Valoportin mittaustapa (englanninkielisessä versiossa **Speed Through Gate**) laskee saman ([[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]]), kun liuskan leveys on annettu oikein.
 
 ### Nopeudesta matka
 
@@ -74,13 +74,13 @@ Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina ([[ohje:tvt-ta
   <foreignObject x="202.5" y="181.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$s = \text{pinta-ala}$</span></div></foreignObject>
 </svg>
 
-6. **Laske pinta-ala ohjelmalla.** Kun tarvitset siirtymän tietyllä välillä, valitse väli vetämällä kuvaajan yli ja valitse **View Integral**. Kun tarvitset matkan jokaisella hetkellä, tee laskettu sarake `s`, yksikkö $\text{m}$, lausekkeella `integral("v","t")`. Se laskee suikaleiden alat yhteen ensimmäisestä rivistä nykyiseen riviin, joten matka alkaa arvosta $s = 0$.
+6. **Laske pinta-ala ohjelmalla.** Kun tarvitset siirtymän tietyllä välillä, valitse väli vetämällä kuvaajan yli ja valitse avautuvasta valikosta **Integraali**. Kun tarvitset siirtymän jokaisella hetkellä, tee laskettu sarake `s`, yksikkö $\text{m}$, lausekkeella `integral("v","t")`. Se laskee suikaleiden alat yhteen ensimmäisestä rivistä nykyiseen riviin, joten siirtymä alkaa arvosta $s = 0$. Se on kuljettu matka vain, kun kappale liikkuu koko ajan samaan suuntaan.
 
 ### Kiihtyvyydestä nopeus ja matka
 
-7. **Laske ensin nopeus, sitten matka.** Nopeuden muutos on $(t, a)$-kuvaajan pinta-ala, joten nopeus lasketaan kiihtyvyydestä samalla tavalla: tee sarake `v` lausekkeella `integral("a","t")` ja siitä sarake `s` lausekkeella `integral("v","t")`. Lasketun nopeuden alkuarvo on nolla, joten tulos on oikea, kun kappale on alussa levossa.
+7. **Laske ensin nopeus, sitten matka.** Nopeuden muutos on $(t, a)$-kuvaajan pinta-ala, joten nopeus lasketaan kiihtyvyydestä samalla tavalla: tee sarake `v` lausekkeella `integral("a","t")` ja siitä sarake `s` lausekkeella `integral("v","t")`. Lauseke `integral("a","t")` antaa nopeuden muutoksen alusta lähtien, koska lasketun nopeuden alkuarvo on nolla. Se on nopeus vain, kun kappale on alussa levossa. Samoin `integral("v","t")` antaa siirtymän, joka on matka vain, kun liike on koko ajan samaan suuntaan.
 
-8. **Varo nollakohdan virhettä.** Jos jokaisessa kiihtyvyyslukemassa on sama pieni virhe $\delta a$, laskettuun nopeuteen kertyy virhettä $\delta a \cdot t$ ja matkaan $\tfrac{1}{2} \cdot \delta a \cdot t^2$. Virhe kasvaa siis ajan mukana, matkassa ajan neliönä. Määritä anturin nollakohta lepojakson lukemien keskiarvona valinnalla **View Statistics** ja vähennä se lukemista lasketussa sarakkeessa ennen integrointia. Tarkista lopuksi, palaako laskettu nopeus nollaan, kun kappale on pysähtynyt.
+8. **Varo nollakohdan virhettä.** Jos jokaisessa kiihtyvyyslukemassa on sama pieni virhe $\delta a$, laskettuun nopeuteen kertyy virhettä $\delta a \cdot t$ ja matkaan $\tfrac{1}{2} \cdot \delta a \cdot t^2$. Virhe kasvaa siis ajan mukana, matkassa ajan neliönä. Määritä anturin nollakohta lepojakson lukemien keskiarvona valinnalla **Tilastotiedot** ja vähennä se lukemista lasketussa sarakkeessa ennen integrointia. Tarkista lopuksi, palaako laskettu nopeus nollaan, kun kappale on pysähtynyt.
 
 ## Tavallisimmat virheet
 

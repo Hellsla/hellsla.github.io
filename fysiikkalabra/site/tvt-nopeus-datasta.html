@@ -29,7 +29,7 @@
 <p class="notice tvt-kind" role="note">Yleinen taito: ohje sopii mille tahansa ohjelmalle tai laskimelle.</p><div class="inv-learn"><h2 id="h-tavoitteet">Tässä ohjeessa opit</h2><ul><li>laskemaan nopeuden paikka–aika-datasta ja valoportin ajasta</li><li>määrittämään kuljetun matkan nopeus–aika-kuvaajan pinta-alana</li><li>laskemaan nopeuden ja matkan kiihtyvyysdatasta ja arvioimaan, miten virhe kasvaa</li></ul></div><section class="inv-section" id="mihin-tarvitset-tata"><h2 id="h-mihin-tarvitset-tata">Mihin tarvitset tätä</h2>
 <p>Tutkimuksessa <em>Pallon muotokertoimen määrittäminen</em> rajanopeus saadaan paikka–aika-kuvaajan kulmakertoimesta, tutkimuksessa <em>Leikkiauton nopeus ja lähtökorkeus</em> nopeus saadaan valoportin ajasta, ja tutkimuksessa <em>Hissin kulkema matka kiihtyvyydestä</em> matka lasketaan kiihtyvyysdatasta.</p>
 </section><section class="inv-section" id="tyovaiheet"><h2 id="h-tyovaiheet">Työvaiheet</h2>
-<p>Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina (<a class="tvt-link" href="tvt-taulukkolaskenta.html">Taulukko ja lasketut sarakkeet</a>). Lausekkeissa sarakkeiden nimet ovat lainausmerkeissä, ja tässä ohjeessa ne ovat <code>t</code>, <code>x</code>, <code>v</code> ja <code>a</code>.</p>
+<p>Laskut tehdään Graphical Analysis Prossa laskettuina sarakkeina (<a class="tvt-link" href="tvt-taulukkolaskenta.html">Taulukko ja lasketut sarakkeet</a>). Lausekkeissa sarakkeiden nimet ovat lainausmerkeissä, ja tässä ohjeessa ne ovat <code>t</code>, <code>x</code>, <code>v</code> ja <code>a</code>. Kirjoita omaan lausekkeeseesi nimet täsmälleen sellaisina kuin taulukon otsikossa näkyy: anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, jotka voivat olla muita kuin nämä.</p>
 <h3>Paikasta nopeus</h3>
 <ol>
 <li>
@@ -41,12 +41,12 @@
 <p><strong>Laske nopeus derivaattana.</strong> Tee laskettu sarake <code>v</code>, yksikkö $\text{m/s}$, lausekkeella <code>firstDerivative("x","t",7)</code>. Ohjelma laskee jokaisen rivin nopeuden usean ympäröivän rivin avulla keskitetysti, jolloin mittausvirheet tasoittuvat. Viimeinen luku on käytettävien pisteiden määrä ($3$, $5$, $7$, …). Suurempi luku tasoittaa enemmän mutta pyöristää myös nopeita muutoksia. Lauseke on Pro-ominaisuus.</p>
 </li>
 <li>
-<p><strong>Määritä hetkellinen nopeus kuvaajasta.</strong> $(t, x)$-kuvaajassa hetkellinen nopeus on kuvaajan tangentin kulmakerroin kyseisellä hetkellä. Ota käyttöön <strong>Graph Tools</strong> -valikosta <strong>Tangent</strong>, niin ohjelma näyttää tangentin kulmakertoimen valitsemassasi kohdassa. Tasaisessa liikkeessä kuvaaja on suora, ja nopeus on <a class="tvt-link" href="tvt-suoran-sovitus.html">sovitetun suoran</a> kulmakerroin. Sovita suora vain siihen osaan, jossa liike on tasaista. Jos paikka pienenee ajan kuluessa, kulmakerroin on negatiivinen, ja vauhti on sen itseisarvo.</p>
+<p><strong>Määritä hetkellinen nopeus kuvaajasta.</strong> $(t, x)$-kuvaajassa hetkellinen nopeus on kuvaajan tangentin kulmakerroin kyseisellä hetkellä. Kytke kuvaajatyökalujen valikosta (kuvaajan vasemman alakulman kuvake) päälle <strong>Tangentti</strong>, niin ohjelma näyttää tangentin kulmakertoimen valitsemassasi kohdassa. Tasaisessa liikkeessä kuvaaja on suora, ja nopeus on <a class="tvt-link" href="tvt-suoran-sovitus.html">sovitetun suoran</a> kulmakerroin. Sovita suora vain siihen osaan, jossa liike on tasaista. Jos paikka pienenee ajan kuluessa, kulmakerroin on negatiivinen, ja vauhti on sen itseisarvo.</p>
 </li>
 </ol>
 <h3>Valoportista nopeus</h3>
 <ol>
-<li><strong>Jaa liuskan leveys katkoajalla.</strong> Kun kappaleen liuska, jonka leveys on $b$, katkaisee valoportin säteen ajaksi $\Delta t$, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Kapealla liuskalla se on lähellä hetkellistä nopeutta. Esimerkiksi $1{,}0\,\text{cm}$:n liuska ja katkoaika $0{,}020\,\text{s}$ antavat nopeuden $v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}$. Muunna leveys metreiksi ennen jakamista. Valoportin tila <strong>Speed Through Gate</strong> laskee saman (<a class="tvt-link" href="tvt-mittausohjelma.html">Anturit ja mittausohjelma</a>), kun liuskan leveys on annettu oikein.</li>
+<li><strong>Jaa liuskan leveys katkoajalla.</strong> Kun kappaleen liuska, jonka leveys on $b$, katkaisee valoportin säteen ajaksi $\Delta t$, kappaleen keskinopeus portin kohdalla on $v = \tfrac{b}{\Delta t}$. Kapealla liuskalla se on lähellä hetkellistä nopeutta. Esimerkiksi $1{,}0\,\text{cm}$:n liuska ja katkoaika $0{,}020\,\text{s}$ antavat nopeuden $v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}$. Muunna leveys metreiksi ennen jakamista. Valoportin mittaustapa (englanninkielisessä versiossa <strong>Speed Through Gate</strong>) laskee saman (<a class="tvt-link" href="tvt-mittausohjelma.html">Anturit ja mittausohjelma</a>), kun liuskan leveys on annettu oikein.</li>
 </ol>
 <h3>Nopeudesta matka</h3>
 <ol>
@@ -99,16 +99,16 @@
 </svg></p>
 </li>
 <li>
-<p><strong>Laske pinta-ala ohjelmalla.</strong> Kun tarvitset siirtymän tietyllä välillä, valitse väli vetämällä kuvaajan yli ja valitse <strong>View Integral</strong>. Kun tarvitset matkan jokaisella hetkellä, tee laskettu sarake <code>s</code>, yksikkö $\text{m}$, lausekkeella <code>integral("v","t")</code>. Se laskee suikaleiden alat yhteen ensimmäisestä rivistä nykyiseen riviin, joten matka alkaa arvosta $s = 0$.</p>
+<p><strong>Laske pinta-ala ohjelmalla.</strong> Kun tarvitset siirtymän tietyllä välillä, valitse väli vetämällä kuvaajan yli ja valitse avautuvasta valikosta <strong>Integraali</strong>. Kun tarvitset siirtymän jokaisella hetkellä, tee laskettu sarake <code>s</code>, yksikkö $\text{m}$, lausekkeella <code>integral("v","t")</code>. Se laskee suikaleiden alat yhteen ensimmäisestä rivistä nykyiseen riviin, joten siirtymä alkaa arvosta $s = 0$. Se on kuljettu matka vain, kun kappale liikkuu koko ajan samaan suuntaan.</p>
 </li>
 </ol>
 <h3>Kiihtyvyydestä nopeus ja matka</h3>
 <ol>
 <li>
-<p><strong>Laske ensin nopeus, sitten matka.</strong> Nopeuden muutos on $(t, a)$-kuvaajan pinta-ala, joten nopeus lasketaan kiihtyvyydestä samalla tavalla: tee sarake <code>v</code> lausekkeella <code>integral("a","t")</code> ja siitä sarake <code>s</code> lausekkeella <code>integral("v","t")</code>. Lasketun nopeuden alkuarvo on nolla, joten tulos on oikea, kun kappale on alussa levossa.</p>
+<p><strong>Laske ensin nopeus, sitten matka.</strong> Nopeuden muutos on $(t, a)$-kuvaajan pinta-ala, joten nopeus lasketaan kiihtyvyydestä samalla tavalla: tee sarake <code>v</code> lausekkeella <code>integral("a","t")</code> ja siitä sarake <code>s</code> lausekkeella <code>integral("v","t")</code>. Lauseke <code>integral("a","t")</code> antaa nopeuden muutoksen alusta lähtien, koska lasketun nopeuden alkuarvo on nolla. Se on nopeus vain, kun kappale on alussa levossa. Samoin <code>integral("v","t")</code> antaa siirtymän, joka on matka vain, kun liike on koko ajan samaan suuntaan.</p>
 </li>
 <li>
-<p><strong>Varo nollakohdan virhettä.</strong> Jos jokaisessa kiihtyvyyslukemassa on sama pieni virhe $\delta a$, laskettuun nopeuteen kertyy virhettä $\delta a \cdot t$ ja matkaan $\tfrac{1}{2} \cdot \delta a \cdot t^2$. Virhe kasvaa siis ajan mukana, matkassa ajan neliönä. Määritä anturin nollakohta lepojakson lukemien keskiarvona valinnalla <strong>View Statistics</strong> ja vähennä se lukemista lasketussa sarakkeessa ennen integrointia. Tarkista lopuksi, palaako laskettu nopeus nollaan, kun kappale on pysähtynyt.</p>
+<p><strong>Varo nollakohdan virhettä.</strong> Jos jokaisessa kiihtyvyyslukemassa on sama pieni virhe $\delta a$, laskettuun nopeuteen kertyy virhettä $\delta a \cdot t$ ja matkaan $\tfrac{1}{2} \cdot \delta a \cdot t^2$. Virhe kasvaa siis ajan mukana, matkassa ajan neliönä. Määritä anturin nollakohta lepojakson lukemien keskiarvona valinnalla <strong>Tilastotiedot</strong> ja vähennä se lukemista lasketussa sarakkeessa ennen integrointia. Tarkista lopuksi, palaako laskettu nopeus nollaan, kun kappale on pysähtynyt.</p>
 </li>
 </ol>
 </section><section class="inv-section" id="tavallisimmat-virheet"><h2 id="h-tavallisimmat-virheet">Tavallisimmat virheet</h2>

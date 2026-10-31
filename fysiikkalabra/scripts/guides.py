@@ -13,7 +13,9 @@ One guide is written once and linked from every investigation that needs the ski
         ohjeessa opit"), kind: "taito" (a general skill, any tool) | "ohjelma" (a tool: spreadsheet, sensor software,
         video analysis), order (its place in the list)
   content/<lang>/tvt/<id>/guide.md     `## ` sections: what the skill is for, the steps, the common mistakes; inline
-        figures as `<svg data-fig="name"></svg>` filled from figures.py; `[[ohje:<id>|label]]` links another guide
+        figures as `<svg data-fig="name"></svg>` filled from figures.py; `[[ohje:<id>|label]]` links another guide;
+        a screenshot as `<figure class="shot"><img src="pics/tvt/<file>" alt="…" width=".." height=".."><figcaption>…`
+        on a line of its own, the file in assets/pics/tvt/ (part of the content hash, copied to the site by build.py)
   content/<lang>/tvt/<id>/review/      science.md and pedagogy.md, as an investigation's
   lessons/tvt/<id>/figures.py          the figures (scripts/figlib.py); example data on a figure is labelled as an
         example, never presented as a measurement
@@ -55,7 +57,15 @@ def content_hash(gid, lang=i18n.SOURCE):
         if p.is_file(): h.update(name.encode() + b"\0" + normalized(p.read_text(), name).encode() + b"\0")
     p = code_folder(gid) / "figures.py"
     if p.is_file(): h.update(b"figures.py\0" + p.read_bytes() + b"\0")
+    for ref in pic_refs(gid, lang):                          # a changed screenshot needs a new review like changed text
+        src = courses.pic_source(ref)
+        h.update(ref.encode() + b"\0" + (src.read_bytes() if src.is_file() else b"missing") + b"\0")
     return h.hexdigest()[:16]
+
+
+def pic_refs(gid, lang=i18n.SOURCE):
+    """Pictures (pics/tvt/x.png) the guide's text refers to, in order."""
+    return courses.pic_refs_in([(folder(gid, lang) / "guide.md").read_text()])
 
 
 def status(gid, lang=i18n.SOURCE):
@@ -85,8 +95,12 @@ def check(gid, lang=i18n.SOURCE):
     if re.search(r'<svg data-fig="[^"]*"></svg>', md): errs.append(f"{where}: empty figure: run guides.py figures {gid}")
     if "\\vec" in md or "\\mathbf" in md: errs.append(f"{where}: vectors are \\overline{{F}} (teacher 2026-10-29)")
     if "×" in md: errs.append(f"{where}: multiplication is \\cdot (teacher's rule 8)")
-    errs += [f"{where}: {m}: write the menu name in bold as Graphical Analysis Pro shows it in English (teacher 2026-10-31)"
+    errs += [f"{where}: {m}: write the menu name in bold as the school's Graphical Analysis shows it in Finnish; a name no screenshot confirms is described, with the English name in brackets once (teacher 2026-10-31)"
              for m in sorted(set(re.findall(r"\{\{ga:[^}]*\}\}", md)))]
+    errs += [f"{where}: picture {r} not found (expected assets/{r})" for r in pic_refs(gid, lang) if not courses.pic_source(r).is_file()]
+    for img in re.findall(r"<img\b[^>]*>", md):
+        if not re.search(r'\balt="[^"]{10,}"', img): errs.append(f"{where}: {img[:60]}…: a picture needs an alt text that says what it shows")
+        if not re.search(r'\bwidth="\d+"', img) or not re.search(r'\bheight="\d+"', img): errs.append(f"{where}: {img[:60]}…: width and height keep the page from jumping while it loads")
     return errs
 
 
@@ -122,7 +136,7 @@ def render(gid, lang, T, md, published, users):
     built; users: [(investigation id, title)] of the published investigations that name this guide."""
     d = load(gid, lang)
     text = inline_links((folder(gid, lang) / "guide.md").read_text(), published, lang)
-    html = md(text)
+    html = re.sub(r"<p>\s*(<figure\b.*?</figure>)\s*</p>", r"\1", md(text), flags=re.S)   # a figure is no paragraph
     sections = re.split(r"(?=<h2>)", html)
     intro, rest = sections[0], sections[1:]
     def anchor(h): return re.sub(r"[^a-z0-9äö]+", "-", h.lower()).strip("-").replace("ä", "a").replace("ö", "o")

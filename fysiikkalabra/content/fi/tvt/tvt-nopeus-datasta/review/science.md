@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 805d1699396c2a38
+CONTENT-HASH: 432de54e086d7ae9
 
 ## Blocking
 - None.
@@ -14,3 +14,10 @@ CONTENT-HASH: 805d1699396c2a38
 - Photogate example recomputed: 0,010 m : 0,020 s = 0,50 m/s; unit conversion stressed.
 - Area under (t, v) as strips Δs ≈ v·Δt, displacement vs distance; View Integral; `integral("v","t")` starts at 0; a→v→s with the at-rest condition stated; offset error grows as δa·t and ½·δa·t^2 (correct); zero from the rest-period mean with View Statistics; check v returns to 0.
 - Figure matches figures.py: trapezoidal strips under a start–cruise–stop profile, highlighted strip and Δt bracket, labels LaTeX, no overlaps; schematic without numbers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
+- Verified: **Tangentti** (toggle), **Integraali**, **Tilastotiedot** (ga-kuvaajatyokalut.png; the menu beside a selection is confirmed in Lauri's original k_yr_n_sovitus2.png). English: Speed Through Gate (ga-facts).
+- Integral wording now correct: integral("a","t") = change of velocity from the start, equal to velocity only from rest; integral("v","t") = displacement, equal to distance only for one-way motion. Zero-offset drift δa·t and ½·δa·t² correct.
+- Column names: the guide says its names are t, x, v, a and tells the student to copy the names from the table header; consistent with taulukkolaskenta.

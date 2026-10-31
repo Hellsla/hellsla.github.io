@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 13d584b07162e849
+CONTENT-HASH: a93f2b4f234781de
 
 ## Blocking
 
@@ -20,3 +20,10 @@ None.
 - Goals match steps 1–5; checklist covers units, scales, points, error bars and caption. Mistakes are real ones (missing units, polyline, wrong column, T vs T², axes swapped for the model, bad scale), each with symptom and fix.
 - Figure contrasts exactly the listed mistakes; data labelled *esimerkkiaineisto* / "keksitystä esimerkkiaineistosta". Units in LaTeX ($l\ (\text{m})$, $T^2\ (\text{s}^2)$, 60–80 °C).
 - Cross-links to suoran-sovitus, kulmakerroin, taulukkolaskenta, epavarmuus, tyoselostus are where the next step needs them. Investigation titles named in the text exist. No spreadsheet/Excel/Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Screenshots render inside their list item (section>ol>li), not wrapped in <p>; alt texts describe what is shown; captions say "esimerkkiarvoja" only on pictures with values; no licence holder or school name visible (the start-screen crop stops above the "Lisenssin haltija" row). guides.py check: ok.
+- Screenshot is in step 1 (choosing axes) and the text names the two axis buttons it shows; good.
+- Polish (grammar), step 6: "Lisää selite kytkimellä **Kuvaajan selite**; se on kuvaajatyökalujen valikko, joka avautuu…" says the toggle *is* the menu. Write "se on kuvaajatyökalujen valikossa, joka avautuu kuvaajan vasemman alakulman kuvakkeesta".
+- Polish (minor): the magnifier icon is described as Zoom to all Data; ga-facts calls the button "Zoom" with Zoom to all Data as one of its actions. "suurennuslasin kuvakkeesta (Zoom to all Data)" is close enough; keep unless Lauri says otherwise.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9b63d475ee4eca47
+CONTENT-HASH: dd68b9034e7f878c
 
 ## Blocking
 - None.
@@ -14,3 +14,10 @@ CONTENT-HASH: 9b63d475ee4eca47
 - Intercept causes correct: length measured to the bob's top gives T^2 = k(l + r), positive intercept, unchanged slope; spring hanger inconsistency gives an intercept; T^2(m) intercept from the spring's own mass; "epävarmuuksien rajoissa nolla" wording.
 - UI: Apply Curve Fit, "Show units in linear fit parameters" marked Pro — in ga-facts.md.
 - Figure matches figures.py (LSQ line, slope triangle, b at the intercept); labels LaTeX, no overlaps; schematic without numbers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- Bold Finnish UI names checked against Lauri's GA v6.2.1 screenshots (cropped assets/pics/tvt/*.png and the uncropped originals in /mnt/project-files/ga-pro-kuvat/); English names in brackets checked against ga-facts.md. No invented Finnish names found.
+- Verified: **Käyrän sovitus**, **Lineaarinen**; tulosruutu text "y = mx + b", "m: 1.671 g/cm3" and the gear icon match ga-tulosruutu.png. English: Show units in linear fit parameters (ga-facts).
+- m = slope k, b = intercept, and 1.671 g/cm3 → k = 1,671 g/cm³ are correct (I recomputed the least-squares fit of the screenshot data: m = 2925/1750 = 1.6714, b = -1.619). Unit check slope = y-unit / x-unit is right.
+- Polish: "Ohjelma käyttää desimaalipistettä" is too general: the tulosruutu uses a point, but the axis labels in Lauri's start-screen original show commas (0,9; 1,0). Say "Tulosruudussa ohjelma käyttää desimaalipistettä".

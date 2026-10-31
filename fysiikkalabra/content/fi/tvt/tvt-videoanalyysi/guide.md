@@ -84,7 +84,7 @@ missä $N$ on kuvien lukumäärä ja $f$ videon todellinen kuvataajuus. Esimerki
 
 - **Kamera liikkui.** Kuvaajan paikat hyppivät tai liike näyttää vinolta. Kuvaa jalustalta.
 - **Mitta-asteikko ei ollut liiketasossa.** Kaikki matkat ja nopeudet ovat samassa suhteessa liian suuria tai pieniä, mutta pisteet ovat silti siististi suoralla, joten sovitus ei paljasta virhettä. Aseta mitta kappaleen kohdalle.
-- **Ohjelma käytti väärää kuvataajuutta.** Ajat ovat monikertaisia ja nopeudet aivan vääriä. Huomaat virheen esimerkiksi siitä, että vapaasti putoavan kappaleen kiihtyvyys poikkeaa paljon arvosta $9{,}81\,\text{m/s}^2$. Aseta todellinen kuvataajuus.
+- **Ohjelma käytti väärää kuvataajuutta.** Ajat ovat moninkertaisia ja nopeudet aivan vääriä. Huomaat virheen esimerkiksi siitä, että vapaasti putoavan kappaleen kiihtyvyys poikkeaa paljon arvosta $9{,}81\,\text{m/s}^2$. Aseta todellinen kuvataajuus.
 - **Merkitsit kappaleen eri kohtaa eri kuvissa.** Paikka heiluu satunnaisesti, ja nopeus hyppii. Valitse yksi selvästi näkyvä kohta ja suurenna kuvaa tarvittaessa.
 - **Kappale näkyy sumeana.** Lisää valoa tai kasvata kuvataajuutta.
 

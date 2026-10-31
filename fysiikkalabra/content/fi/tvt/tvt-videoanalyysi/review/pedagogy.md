@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9a322438e06ceeb8
+CONTENT-HASH: 43827baa8113f8bc
 
 ## Blocking
 
@@ -21,3 +21,8 @@ None.
 - Frame-count method: $t = \tfrac{N}{f}$ displayed with symbols named, example 36 : 240 1/s = 0,15 s, timing uncertainty one frame.
 - Mistakes are real ones (camera moved, scale off-plane, wrong fps, inconsistent point, blur), each with symptom and fix; the off-plane scale mistake rightly notes the fit will not reveal it.
 - Cross-links to kuvaaja, suoran-sovitus, nopeus-datasta sensible; investigation titles exist. No Tracker leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- No screenshot in this guide (not needed); guides.py check: ok. Rendered preview checked: no leftover markdown or {{ga:}} markers.
+- The grammar fix is correct Finnish. Nothing else changed.

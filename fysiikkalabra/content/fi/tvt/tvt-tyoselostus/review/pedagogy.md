@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b7d259b4446ba947
+CONTENT-HASH: 3336b3617eb6b37b
 
 ## Blocking
 
@@ -19,3 +19,8 @@ None.
 - Mistakes are real ones (only derived columns, mixed precision, figure not referenced, x/y without units, result without uncertainty/unit, unreadable image), each with a fix.
 - Page figure uses grey bars for the student's own values, so no invented data. Units in LaTeX; result $g = (9{,}7 \pm 0{,}4)\,\text{m/s}^2$ consistent with tvt-epavarmuus.
 - Cross-links to kuvaaja, suoran-sovitus, epavarmuus sensible. No Word/Excel/spreadsheet leftovers.
+
+## Delta 1 (2026-10-31, Finnish UI and screenshots)
+
+- No screenshot in this guide (not needed); guides.py check: ok. Rendered preview checked: no leftover markdown or {{ga:}} markers.
+- Terminology (tulosruutu, decimal comma in the report) now matches the GA guides. No screenshot needed.
