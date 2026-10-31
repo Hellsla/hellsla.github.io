@@ -16,19 +16,19 @@ Tarkistin kaikkien 27 julkaistun tutkimuksen työohjeet ja mittausmenetelmät: v
 | Leikkiauton nopeus ja lähtökorkeus | kyllä, valmistelu | ok | – |
 | Liikemäärän säilyminen törmäyksissä | kyllä, valmistelu (kaksi liikeanturia vastakkain) | ok | – |
 | Putoamiskiihtyvyys heilurin avulla | kyllä | ok | – |
-| Jousivakion määrittäminen | kyllä | laajennus E3? | vakiotermin syy lisätty |
+| Jousivakion määrittäminen | kyllä | laajennus E3 → E2 (opettaja 31.10.) | vakiotermin syy lisätty; E2 |
 | Hypyn tutkiminen voimalevyllä | kyllä, vaatii voimalevyn | ok | ristiriita korjattu |
 | Hissin kulkema matka kiihtyvyydestä | **koemittaus tarpeen** (nollakohdan virhe) | ok | oletus "kerrokset yhtä korkeita" lisätty |
 | Pallon muotokerroin | **koemittaus tarpeen** (rajanopeus kuvausalueella) | ok | – |
 | Liukukitkakerroin | kyllä, valmistelu | ok | – |
 | Tuulivoimala | **koemittaus tarpeen** (koulun malli) | ok | true RMS -ehto opettajalle |
-| Äänen nopeus kulkuajasta | kyllä, valmistelu | laajennus E3 rajatapaus | – |
+| Äänen nopeus kulkuajasta | kyllä, valmistelu | laajennus E3 (opettaja 31.10.) | – |
 | Uppokuumentimen hyötysuhde | kyllä, kun opettaja on antanut virtarajan | laajennus E3 → E2 | olomuodon muutoksen ehto; E2 |
 | Valaistusvoimakkuus ja etäisyys | kyllä, valmistelu | ok | – |
 | Kuuman veden jäähtyminen | **koemittaus tarpeen** (kaksi puoliintumisaikaa tunnissa) | ok | – |
 | Kaasun tilanyhtälö | kyllä, valmistelu | ok | – |
 | Vesivoimalaitoksen pienoismalli | **koemittaus tarpeen** (koulun malli) | ok | roiskeet ja true RMS |
-| Äänen resonanssi putkessa | kyllä, valmistelu | laajennus E3? | – |
+| Äänen resonanssi putkessa | kyllä, valmistelu | laajennus E3 → E2 (opettaja 31.10.) | E2 |
 | Valonnopeus mikroaaltouunilla | **koemittaus tarpeen** (uunikohtainen) | ok | – |
 | Pariston kuormituskäyrä | kyllä, valmistelu | ok | pidikkeen kosketusresistanssi |
 | Kondensaattorin kapasitanssi | kyllä, valmistelu | ok | välineluetteloon vaihtokytkin |
@@ -53,13 +53,12 @@ Tarkistin kaikkien 27 julkaistun tutkimuksen työohjeet ja mittausmenetelmät: v
 10. **Hyppy.** Lause "Mittausohjelma laskee …" oli ristiriidassa sivun oman vihjeen kanssa, koska ohjelmat integroivat aika-akseliin asti.
 11. **Hissi.** Kulmakerroin on kerroskorkeus vain, jos kaikki kerrokset ovat yhtä korkeita.
 12. **Työselostuksen osien nimet.** Raportoi-osioissa 14 tutkimusta käytti otsikkoa "Työn suunnitelma" ja pariston tutkimus otsikkoa "Tulokset". Nyt nimet ovat samat kuin FY10:n työselostuspohjassa (`local-courses.json`): "Koejärjestely ja menetelmä" ja "Tulos".
-13. **F/E-luokitus.** Muuntajan laajennus, induktion "oma tekijä" ja uppokuumentimen laajennus muutettiin E3:sta E2:ksi. Ne toistavat perusosan menetelmän. Lisävaativuus on tulkinnassa tai työtavassa, ei kokeen teknisessä vaativuudessa.
+13. **F/E-luokitus.** Muuntajan laajennus, induktion "oma tekijä" ja uppokuumentimen laajennus muutettiin E3:sta E2:ksi. Opettajan päätöksellä (31.10.2026) myös jousivakion laajennus (värähtely, sama menetelmä kuin heilurissa) ja resonanssin laajennus (sama mittaus usealla taajuudella) ovat E2. Äänen nopeuden laajennus jää E3:ksi, koska opiskelija suunnittelee siinä toisen, oman menetelmänsä. Ne toistavat perusosan menetelmän. Lisävaativuus on tulkinnassa tai työtavassa, ei kokeen teknisessä vaativuudessa.
 
 Muutetut tutkimukset kävivät uudelleen läpi fysiikan ja pedagogiikan katselmoinnin ennen julkaisua.
 
 ## Opettajan päätettävät
 
-- **F/E-luokitukset:** jousivakion laajennus (E3, tulee opettajan alustavasta taulukosta; menetelmä on sama kuin heilurissa, E2), resonanssin laajennus (E3 vai E2) ja äänen nopeuden laajennus (E3 rajatapaus).
 - **Koemittaus ennen käyttöä:** lämmön johtuminen, hissi, muotokerroin, tuulivoimala, vesivoima, jäähtyminen, mikroaaltouuni ja hitausmomentti. Näiden toteutettavuus riippuu koulun omista välineistä. Paperilla tehty tarkistus ei voi vahvistaa sitä.
 - **Laserluokka** (liikemäärä, hiuksen paksuus, taitekerroin) ja **uppokuumentimen virtaraja** ovat yhä opettajan vahvistettavia. Ne on merkitty sivuille, eikä niille ole keksitty arvoja.
 - **Erityisvälineet**, joita kaikilla kouluilla ei ole: lämpökamera, kaksi optista liikeanturia, voimalevy, hissi (lupa), 0,1 g:n vaaka ja videoanalyysi.

@@ -1,2 +1,4 @@
 date	reviewer	from	to	base	categories
 2026-10-31	pedagogy	f0b58932dae878ef	fed4c7fb9a1e02d2	79c4326f064c	force-diagram
+2026-10-31	science	fed4c7fb9a1e02d2	7caf8e281c418c80	42439c6fedd2	level-policy
+2026-10-31	pedagogy	f0b58932dae878ef	7caf8e281c418c80	7a6c092931d5	force-diagram,level-policy

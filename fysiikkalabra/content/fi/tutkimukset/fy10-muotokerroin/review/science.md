@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a9c7960a062d547f
+CONTENT-HASH: 4c33ebb3c536e131
 
 ## Blocking
 None.
@@ -21,3 +21,8 @@ None.
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
 - Wording only; no claim that GA Pro marks video frames.
+
+## Delta 5 (2026-10-31)
+
+- TVT row, equipment and the tools sentence now name Vernier Video Analysis for marking points and GA Pro for the fit; no claim that GA Pro marks frames, no menu names.
+- teacher.md: teacher is asked to try scale, frame rate and data transfer to GA Pro beforehand — no unverified export path claimed. Grammar checked ("Graphical Analysis Prohon"). No physics changed.

@@ -474,7 +474,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Taso 1 riittää perusosaamiseen; tasot 2 ja 3 ovat vapaaehtoisia ja syventäviä. Kirjoita kummankin kappaleen paikka ajan funktiona ja piirrä $(t, x)$-kuvaaja vihkoon aina kun se auttaa."
+      "text": "Harjoittele vielä kolmella tasolla. Tason 1 tehtävät käyttävät yhtä kaavaa, taso 3 vaatii päättelyä. Kirjoita kummankin kappaleen paikka ajan funktiona ja piirrä $(t, x)$-kuvaaja vihkoon aina kun se auttaa."
     },
     {
       "id": "check-1",

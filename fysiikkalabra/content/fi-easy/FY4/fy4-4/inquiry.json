@@ -426,7 +426,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Kun tehtävässä on voimia, piirrä ensin voimakuvio ja valitse positiivinen suunta. Kirjoita vasta sitten $\\Sigma F = ma$. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+      "text": "Harjoittele kolmella tasolla. Kun tehtävässä on voimia, piirrä ensin voimakuvio ja valitse positiivinen suunta. Kirjoita vasta sitten $\\Sigma F = ma$."
     },
     {
       "id": "check-1",

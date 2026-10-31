@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 43827baa8113f8bc
+CONTENT-HASH: 364d8e22b9c0ae39
 
 ## Blocking
 
@@ -26,3 +26,8 @@ None.
 
 - No screenshot in this guide (not needed); guides.py check: ok. Rendered preview checked: no leftover markdown or {{ga:}} markers.
 - The grammar fix is correct Finnish. Nothing else changed.
+
+## Delta 5 (2026-10-31)
+
+- Analysointi now names Vernier Video Analysis for steps 1–3 and GA Pro for step 4; *opettaja kertoo, kumpaa* is gone; no menu names invented; the GA Pro video-sync tip in *Ohjelmakohtaisia vinkkejä* is a separate sensor-sync feature and does not contradict. Matches fy10-muotokerroin.
+- Polish: step 4 *Siirrä Video Analysisista* — the clipped name inflects awkwardly; prefer *Siirrä Video Analysis -sovelluksesta*. Step 1 mixes *sovellus* and *ohjelma* (*Tarkista ensin, että ohjelma …*) — *sovellus* throughout would be tidier. Step 3 repeats the app name already given in step 1 (harmless).

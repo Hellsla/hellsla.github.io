@@ -426,7 +426,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Practise on three levels. When a task has forces, first draw the free-body diagram and choose a positive direction, and only then write $\\Sigma F = ma$. Level 1 is enough for basic competence; levels 2 and 3 take it deeper."
+      "text": "Practise on three levels. When a task has forces, first draw the free-body diagram and choose a positive direction, and only then write $\\Sigma F = ma$."
     },
     {
       "id": "check-1",

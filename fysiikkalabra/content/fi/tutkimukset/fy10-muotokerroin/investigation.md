@@ -297,7 +297,7 @@ Vastaa:
 1. Miten tunnistit, että pallo oli rajanopeudella? Millä matkalla se saavutti rajanopeuden?
 2. Kuinka paljon rajanopeus vaihteli pudotuksesta toiseen, ja mistä vaihtelu voi johtua?
 
-Paikan merkitsemiseen voit käyttää videoanalyysiohjelmaa tai puhelimen sovellusta. Sovita suora Graphical Analysis Pro -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-videoanalyysi|Videoanalyysi]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
+Merkitse pallon paikat Vernier Video Analysis -sovelluksella. Sovita suora Graphical Analysis Pro -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-videoanalyysi|Videoanalyysi]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 

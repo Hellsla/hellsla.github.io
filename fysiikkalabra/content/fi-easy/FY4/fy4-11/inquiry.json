@@ -538,7 +538,7 @@
       "id": "tehtavat",
       "stage": "sovella",
       "type": "exercises",
-      "text": "Harjoittele kolmella tasolla. Muunna nopeus ensin yksikköön $\\text{m/s}$. Erota reaktiomatka ja jarrutusmatka. Ratkaise kysytty suure symbolein ennen sijoittamista. Taso 1 riittää perusosaamiseen. Tasot 2 ja 3 syventävät."
+      "text": "Harjoittele kolmella tasolla. Muunna nopeus ensin yksikköön $\\text{m/s}$. Erota reaktiomatka ja jarrutusmatka. Ratkaise kysytty suure symbolein ennen sijoittamista."
     },
     {
       "id": "check-1",
