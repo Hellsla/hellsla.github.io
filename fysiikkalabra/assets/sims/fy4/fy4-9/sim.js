@@ -166,7 +166,7 @@ new p5((p) => {
     for (let F = -st, n = 1; F >= Fbot; F -= st, n++) if (n % every === 0) lab(`$${tx(F, 0)}$`, GR.x0 - 8 * U, FY(F) + fh * 0.35, 'r', fh, MUTEDC);
     lab('$0$', GR.x0 - 8 * U, Z + fh * 0.35, 'r', fh, MUTEDC);
     lab('$t\\ (\\text{s})$', GR.x1 + 30 * U, Z + fh * 0.35, 'l', fh, INKC);
-    lab('$F\\ (\\text{N})$', GR.x0 + 10 * U, GR.y0 - 18 * U, 'l', fh, INKC);
+    lab('$F_x\\ (\\text{N})$', GR.x0 + 10 * U, GR.y0 - 18 * U, 'l', fh, INKC);
     const draw = (cv, col, w, fill) => {
       if (cv.length < 2) return;
       if (fill) { p.noStroke(); p.fill(201, 42, 42, 60); p.beginShape(); p.vertex(TX(cv[0][0]), Z); for (const [a, b] of cv) p.vertex(TX(Math.min(a, 0.5)), FY(b)); p.vertex(TX(Math.min(cv[cv.length - 1][0], 0.5)), Z); p.endShape(p.CLOSE); }
