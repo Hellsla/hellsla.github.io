@@ -80,7 +80,7 @@
   <foreignObject x="280.5" y="218" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{voide B: } 0{,}245\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Kummankin laskun pisteet ovat lähes suoralla. Siksi nopeus kasvaa tasaisesti ja kiihtyvyys on vakio. Kumpaankin pistejoukkoon sovitetaan oma suora. Suora kulkee pisteiden välistä, eikä pisteitä yhdistetä murtoviivaksi. Pisteet heiluvat vähän suoran molemmin puolin. Se on mittauksen satunnaista vaihtelua. Voiteen A suora on jyrkempi, eli hiihtäjä kiihtyy sillä nopeammin.
+**Mallivastaus:** Kummankin laskun pisteet ovat lähes suoralla. Siksi nopeus kasvaa tasaisesti ja kiihtyvyys on lähes vakio. Kumpaankin pistejoukkoon sovitetaan oma suora. Suora kulkee pisteiden välistä, eikä pisteitä yhdistetä murtoviivaksi. Pisteet heiluvat vähän suoran molemmin puolin. Se on mittauksen satunnaista vaihtelua. Voiteen A suora on jyrkempi, eli hiihtäjä kiihtyy sillä nopeammin.
 
 ### b)
 **Kysytty:** hiihtäjän voimakuvio laskun aikana. Ilmanvastusta ei oteta huomioon.
@@ -154,9 +154,80 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 
 *Johtopäätös.* Voide A liukuu näillä tiedoilla paremmin. Kumpaakin voidetta on kuitenkin kokeiltu vain kerran. Lumi tai tuuli voi muuttua laskujen välillä. Varmempi tulos saadaan toistamalla laskut vuorotellen kummallakin voiteella.
 
+### e)
+**Kysytty:** lisämittauksen $(v, a)$-kuvaaja, kiihtyvyys ilman ilmanvastusta ja se, kuinka paljon ilmanvastus muutti c-kohdan kitkakerrointa $\mu_\text{A}$
+**Kuvaaja:** Vaaka-akselilla on nopeus $v\ (\text{m/s})$. Pystyakselilla on kiihtyvyys $a\ (\text{m/s}^2)$. Jokainen lasku merkitään omaksi pisteekseen. Pisteisiin sovitetaan kaareva käyrä. Käyrää jatketaan katkoviivana pystyakselille asti.
+
+<svg data-fig="fy4-s1-drag" viewBox="0 0 600 410" role="img" aria-label="Kuvaaja näyttää hiihtäjän kiihtyvyyden a nopeuden v funktiona voiteella A. Kuvaajassa on kuusi mustaa pistettä nopeuksilla 2,0–9,0 m/s. Kun nopeus kasvaa, kiihtyvyys pienenee yhä jyrkemmin. Pisteisiin on sovitettu kaareva käyrä. Käyrää on jatkettu katkoviivana pystyakselille. Käyrä leikkaa pystyakselin kohdassa a0 = 0,45 m/s². Se on kiihtyvyys ilman ilmanvastusta." style="max-width:100%;font-size:24px">
+  <line x1="121" y1="360" x2="121" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="162" y1="360" x2="162" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="203" y1="360" x2="203" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="244" y1="360" x2="244" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="285" y1="360" x2="285" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="326" y1="360" x2="326" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="367" y1="360" x2="367" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="408" y1="360" x2="408" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="449" y1="360" x2="449" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="490" y1="360" x2="490" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="300" x2="490" y2="300" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="240" x2="490" y2="240" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="180" x2="490" y2="180" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="120" x2="490" y2="120" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="80" y1="60" x2="490" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="79" y1="360" x2="504" y2="360" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M516,360 L503,366 L503,354 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="80" y1="361" x2="80" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M80,34 L86,47 L74,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="121" y1="360" x2="121" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="162" y1="360" x2="162" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="152" y="369.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  <line x1="203" y1="360" x2="203" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="244" y1="360" x2="244" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="234" y="369.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$4$</div></foreignObject>
+  <line x1="285" y1="360" x2="285" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="326" y1="360" x2="326" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="316" y="369.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
+  <line x1="367" y1="360" x2="367" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="408" y1="360" x2="408" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="398" y="369.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$8$</div></foreignObject>
+  <line x1="449" y1="360" x2="449" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="490" y1="360" x2="490" y2="367" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="473.5" y="369.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
+  <line x1="73" y1="300" x2="80" y2="300" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="285.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}1$</div></foreignObject>
+  <line x1="73" y1="240" x2="80" y2="240" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="225.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}2$</div></foreignObject>
+  <line x1="73" y1="180" x2="80" y2="180" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="165.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}3$</div></foreignObject>
+  <line x1="73" y1="120" x2="80" y2="120" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="105.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}4$</div></foreignObject>
+  <line x1="73" y1="60" x2="80" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="45.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}5$</div></foreignObject>
+  <foreignObject x="50" y="365.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="522" y="345.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\text{m/s})$</div></foreignObject>
+  <foreignObject x="70" y="3.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a\ (\text{m/s}^2)$</div></foreignObject>
+  <polyline points="145.5,97.5 148.5,98 151,98.5 154,99 156.5,100 159.5,100.5 162,101 164.5,102 167.5,102.5 170,103.5 173,104 175.5,105 178.5,105.5 181,106.5 184,107.5 186.5,108.5 189.5,109 192,110 195,111 197.5,112 200.5,113 203,114 205.5,115 208.5,116 211,117.5 214,118.5 216.5,119.5 219.5,121 222,122 225,123 227.5,124.5 230.5,125.5 233,127 236,128 238.5,129.5 241.5,131 244,132.5 246.5,133.5 249.5,135 252,136.5 255,138 257.5,139.5 260.5,141 263,142.5 266,144 268.5,145.5 271.5,147 274,149 277,150.5 279.5,152 282.5,154 285,155.5 287.5,157.5 290.5,159 293,161 296,162.5 298.5,164.5 301.5,166.5 304,168.5 307,170 309.5,172 312.5,174 315,176 318,178 320.5,180 323.5,182 326,184 328.5,186 331.5,188.5 334,190.5 337,192.5 339.5,195 342.5,197 345,199 348,201.5 350.5,203.5 353.5,206 356,208.5 359,210.5 361.5,213 364.5,215.5 367,218 369.5,220 372.5,222.5 375,225 378,227.5 380.5,230 383.5,232.5 386,235.5 389,238 391.5,240.5 394.5,243 397,246 400,248.5 402.5,251 405.5,254 408,256.5 410.5,259.5 413.5,262.5 416,265 419,268 421.5,271 424.5,273.5 427,276.5 430,279.5 432.5,282.5 435.5,285.5 438,288.5 441,291.5 443.5,294.5 446.5,297.5 449,300.5 451.5,304 454.5,307 457,310 460,313.5 462.5,316.5 465.5,320 468,323 471,326.5 473.5,329.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="80,91 80.5,91 81,91 81.5,91 82,91 82.5,91 83.5,91 84,91 84.5,91 85,91 85.5,91 86,91 86.5,91 87,91 87.5,91 88,91 88.5,91 89.5,91 90,91 90.5,91 91,91 91.5,91 92,91 92.5,91 93,91 93.5,91 94,91 95,91 95.5,91 96,91 96.5,91 97,91 97.5,91.5 98,91.5 98.5,91.5 99,91.5 99.5,91.5 100,91.5 101,91.5 101.5,91.5 102,91.5 102.5,91.5 103,91.5 103.5,91.5 104,91.5 104.5,91.5 105,92 105.5,92 106,92 107,92 107.5,92 108,92 108.5,92 109,92 109.5,92 110,92 110.5,92 111,92.5 111.5,92.5 112.5,92.5 113,92.5 113.5,92.5 114,92.5 114.5,92.5 115,92.5 115.5,92.5 116,93 116.5,93 117,93 117.5,93 118.5,93 119,93 119.5,93 120,93 120.5,93.5 121,93.5 121.5,93.5 122,93.5 122.5,93.5 123,93.5 123.5,93.5 124.5,94 125,94 125.5,94 126,94 126.5,94 127,94 127.5,94.5 128,94.5 128.5,94.5 129,94.5 129.5,94.5 130.5,94.5 131,95 131.5,95 132,95 132.5,95 133,95 133.5,95 134,95.5 134.5,95.5 135,95.5 136,95.5 136.5,95.5 137,96 137.5,96 138,96 138.5,96 139,96 139.5,96.5 140,96.5 140.5,96.5 141,96.5 142,96.5 142.5,97 143,97 143.5,97 144,97 144.5,97 145,97.5 145.5,97.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <circle cx="162" cy="102" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="203" cy="114" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="264.5" cy="144" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="326" cy="180" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="387.5" cy="240" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="449" cy="300" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="80" cy="91" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="100.5" y="50.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$a_0 \approx 0{,}45\,\tfrac{\text{m}}{\text{s}^2}$</div></foreignObject>
+</svg>
+
+**Mallivastaus:** Kun nopeus kasvaa, kiihtyvyys pienenee yhä jyrkemmin. Siksi pisteisiin ei sovi suora vaan kaareva käyrä. Kitkavoima ei riipu nopeudesta. Ilmanvastus sen sijaan kasvaa nopeuden mukana. Kiihtyvyys siis pienenee ilmanvastuksen takia. Hyvin pienellä nopeudella ilmanvastus on lähes nolla. Jatketaan käyrää nopeuteen $v = 0$. Silloin saadaan kiihtyvyys ilman ilmanvastusta: $a_0 \approx 0{,}45\,\text{m/s}^2$.
+
+Sijoitetaan $a_0$ c-kohdan yhtälöön: $\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}684 - 0{,}45)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} \approx 0{,}024$.
+
+c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viidesosa c-kohdan arvosta. Syy on se, että c-kohdassa myös ilmanvastuksen hidastava vaikutus laskettiin kitkan syyksi. Tämä on systemaattinen virhe. Se muuttaa tulosta aina samaan suuntaan, eikä laskujen toistaminen poista sitä. Virhe on noin kolme kertaa niin suuri kuin kulmakertoimen lukemisen epävarmuus $0{,}002$. Se on kuitenkin pienempi kuin voiteiden ero $0{,}015$. Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän. Siksi voide A liukuu paremmin myös korjauksen jälkeen.
+
 ### Hyväksytään myös
 - c-kohdassa kulmakertoimen saa myös laskimen tai taulukkolaskentaohjelman suoran sovituksesta ($0{,}390$ ja $0{,}245\,\text{m/s}^2$) tai suoran kahdesta muusta pisteestä, jotka ovat kaukana toisistaan. Kulmakertoimet $0{,}37\text{–}0{,}41\,\text{m/s}^2$ ja $0{,}23\text{–}0{,}26\,\text{m/s}^2$ hyväksytään.
 - b-kohdassa ilmanvastuksen $\overline{F}_\text{v}$ saa piirtää rinnettä ylös, kun se on nimetty. Tehtävä ei kuitenkaan vaadi sitä.
+- e-kohdassa käyrän ja pystyakselin leikkauskohdaksi hyväksytään $a_0 = 0{,}43\text{–}0{,}47\,\text{m/s}^2$. Siitä laskettu $\mu_\text{A} \approx 0{,}022\text{–}0{,}026$ hyväksytään.
 
 ### Yleisiä virheitä
 - Kitkakertoimeksi lasketaan $\mu = a : g$ kuten vaakasuoralla alustalla. Rinteen kaltevuus unohtuu. Silloin voide A näyttäisi liukuvan huonommin, koska sen kiihtyvyys on suurempi.
@@ -164,6 +235,7 @@ Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa 
 - Voimakuvioon piirretään eteenpäin vievä voima, koska hiihtäjä liikkuu alas. Liike rinteen suuntaan johtuu painon komponentista.
 - Painon komponentit piirretään omiksi voimikseen painon lisäksi, ja silloin paino lasketaan kahteen kertaan.
 - Kulmakerroin luetaan kahdesta vierekkäisestä mittauspisteestä, ja silloin yksittäisen pisteen satunnainen virhe vaikuttaa tulokseen paljon.
+- e-kohdassa pisteisiin sovitetaan suora. Toinen virhe on lopettaa käyrä pienimpään mitattuun nopeuteen. Kummassakin tapauksessa kiihtyvyyttä ilman ilmanvastusta ei saada.
 
 ## fy4-s2
 

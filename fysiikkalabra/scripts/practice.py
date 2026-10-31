@@ -56,6 +56,13 @@ def courses_with(lang=i18n.SOURCE):
     return [c for c in courses.codes() if (folder(c, lang) / "tasks.json").is_file()]
 
 
+def answer_list(part):
+    """A part's answers: one {value, unit, tolerance} or, when it asks for several quantities (two waxes' coefficients),
+    a list of them, each with a `name` that answers.py keys as `<task>-<part>-<name>`."""
+    a = part.get("answer")
+    return [] if a is None else a if isinstance(a, list) else [a]
+
+
 def load(code, lang=i18n.SOURCE): return json.loads((folder(code, lang) / "tasks.json").read_text())
 
 
@@ -203,8 +210,9 @@ def check(code, lang=i18n.SOURCE, seen=None):
             if kind == "calc" and "**" + GRAPH_STEP in body: needed.insert(needed.index("Kaava"), GRAPH_STEP)
             for m in check_steps(body, [T("practice.step_names").get(n, n) for n in needed]): P(f"solution: {m}")   # the language's step names
             if kind == "graph" and "<svg" not in body: P("a graph part's solution shows the model graph (<svg data-fig> from figures.py)")
-            a = p.get("answer")
-            if a is not None and not (isinstance(a, dict) and isinstance(a.get("value"), (int, float)) and "unit" in a): P("answer must be {value, unit[, tolerance]}")
+            for a in answer_list(p):
+                if not (isinstance(a, dict) and isinstance(a.get("value"), (int, float)) and "unit" in a): P("answer must be {value, unit[, tolerance]} or a list of them, each with its `name`")
+            if isinstance(p.get("answer"), list) and len({a.get("name") for a in p["answer"] if isinstance(a, dict)}) != len(p["answer"]): P("each answer of a list needs its own `name`")
         if not own:
             if tid not in sols: W("no `## " + tid + "` in solutions.md")
             elif "Yleisiä virheitä" not in sols[tid]["extra"]: W("no `### Yleisiä virheitä` in its solution")
@@ -225,12 +233,12 @@ def check(code, lang=i18n.SOURCE, seen=None):
         else:
             for task in tasks:
                 for p in task["parts"]:
-                    a = p.get("answer")
-                    if not isinstance(a, dict) or not isinstance(a.get("value"), (int, float)): continue
-                    k = f"{task['id']}-{p['id']}"
-                    if k not in got: E(f"{k}: answers.py does not compute this part's answer"); continue
-                    tol = a.get("tolerance", 0.02); v = a["value"]
-                    if abs(got[k] - v) > tol * abs(v if v else 1): E(f"{k}: tasks.json answer {v} differs from answers.py {got[k]} (tolerance {tol})")
+                    for a in answer_list(p):
+                        if not isinstance(a, dict) or not isinstance(a.get("value"), (int, float)): continue
+                        k = f"{task['id']}-{p['id']}" + (f"-{a.get('name')}" if isinstance(p["answer"], list) else "")
+                        if k not in got: E(f"{k}: answers.py does not compute this part's answer"); continue
+                        tol = a.get("tolerance", 0.02); v = a["value"]
+                        if abs(got[k] - v) > tol * abs(v if v else 1): E(f"{k}: tasks.json answer {v} differs from answers.py {got[k]} (tolerance {tol})")
         try:
             if not figures(code, lang, write=False): E("solutions.md figures differ from figures.py (python scripts/practice.py figures " + code + ")")
         except Exception as e: E(f"figures.py: {e}")

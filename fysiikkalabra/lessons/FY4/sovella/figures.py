@@ -13,6 +13,8 @@ SNOW, SNOW_EDGE = "#f8fbfd", "#9fb8c8"
 t = list(range(9))
 vA = [2.10, 2.52, 2.86, 3.31, 3.63, 4.06, 4.40, 4.86, 5.23]
 vB = [1.90, 2.12, 2.42, 2.62, 2.90, 3.09, 3.40, 3.59, 3.86]
+vE = [2.0, 3.0, 4.5, 6.0, 7.5, 9.0]                                  # e: wax A at different speeds (answers.py)
+aE = [0.43, 0.41, 0.36, 0.30, 0.20, 0.10]
 
 
 def _fit(x, y):
@@ -40,6 +42,23 @@ def wax_graph():
         f.circle(ax.X(a), ax.Y(b), 11, "none", INK, 1.5)
     f.tex(ax.X(5.6), ax.Y(5.5), r"\text{voide A: } 0{,}39\,\tfrac{\text{m}}{\text{s}^2}", "end")
     f.tex(ax.X(8.9), ax.Y(2.85), r"\text{voide B: } 0{,}245\,\tfrac{\text{m}}{\text{s}^2}", "end", MUTED)
+    return f.svg()
+
+
+def drag_graph():
+    """fy4-s1 e: the acceleration of wax A's runs against the speed, a curve a = a0 - k v² fitted to the points and
+    extended (dashed) to v = 0, where it gives the acceleration without air resistance."""
+    k, a0 = _fit([v * v for v in vE], aE)
+    f = Fig("fy4-s1-drag", 410, "Kuvaaja: hiihtäjän kiihtyvyys a nopeuden v funktiona voiteella A. Kuusi mustaa pistettä nopeuksilla 2,0–9,0 m/s; "
+            "kiihtyvyys pienenee nopeuden kasvaessa yhä jyrkemmin. Pisteisiin on sovitettu kaareva käyrä, jota on jatkettu katkoviivana "
+            "pystyakselille. Käyrä leikkaa pystyakselin kohdassa a0 = 0,45 m/s², joka on kiihtyvyys ilman ilmanvastusta.")
+    ax = Axes(f, (80, 360), (490, 60), x=(0, 10), y=(0, 0.5), xticks=list(range(11)), yticks=[0, 0.1, 0.2, 0.3, 0.4, 0.5],
+              xlabel=r"v\ (\text{m/s})", ylabel=r"a\ (\text{m/s}^2)", xfmt=lambda v: str(v) if v % 2 == 0 else "")
+    ax.curve(lambda v: a0 + k * v * v, 1.6, 9.6, INK, 2.5)
+    ax.curve(lambda v: a0 + k * v * v, 0, 1.6, INK, 2.5, dash="8 6")
+    for v, a in zip(vE, aE): ax.point(v, a)
+    f.circle(ax.X(0), ax.Y(a0), 11, "none", INK, 1.5)                              # where the curve meets the axis
+    f.tex(ax.X(0.5), ax.Y(a0) - 26, r"a_0 \approx 0{,}45\,\tfrac{\text{m}}{\text{s}^2}", "start")
     return f.svg()
 
 
@@ -150,10 +169,11 @@ def collision():
     return f.svg()
 
 
-FIGURES = {"fy4-s1-graph": wax_graph, "fy4-s1-fbd": wax_fbd, "fy4-s3-collision": collision}
+FIGURES = {"fy4-s1-graph": wax_graph, "fy4-s1-drag": drag_graph, "fy4-s1-fbd": wax_fbd, "fy4-s3-collision": collision}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "fy4-s1-graph": "reveals: the model graph of task fy4-s1 (its solution)",
+    "fy4-s1-drag": "reveals: the model graph of task fy4-s1 e (its solution)",
     "fy4-s1-fbd": "reveals: the model force diagram of task fy4-s1 b (its solution)",
     "fy4-s3-collision": "reveals: the momentum picture of task fy4-s3 b (its solution)",
 }

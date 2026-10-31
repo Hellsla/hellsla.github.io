@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e34507e30a372cc0
+CONTENT-HASH: 0b3b46e3a218e29d
 
 ## Blocking
 (none left)
 
 ## Fixed
-- fy4-s2 solution: section order (common mistakes before also accepted) aligned with the Finnish.
+- (none needed in en)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared tasks.json, solutions.md and figures.json line by line with content/fi/FY4/sovella; all 44 points, criterion keys and tags kept.
-- Reads naturally for 16–18-year-olds; second person in the task texts; each question asks the same thing as the Finnish and names no model (s2 a "what kind of calculation", s2 d "according to whose estimate", s3 e "in which direction").
-- Every step label (Given, Find, Principle, Free-body diagram, Formula, Conversions, Substitution, Answer, Reasonableness, Model answer) present where the Finnish has it; the s1 b note on dashed G_x, G_y as components, not forces, and the s2 d acceptance of the 17.2 m/s sizing are kept.
-- Rendered preview/en/FY4-sovella.html: no Finnish left in the page text, figure labels fit ("forces" label), no overflow at 345 and 360 px.
+- Part e reads naturally in English for 16–18-year-olds: situation (six extra runs, short measuring section) before the question, the question asks the same as the Finnish and names no model (curve vs straight line is a criterion, not hinted in the text).
+- Solution keeps every step of the Finnish (Find, Graph, Model answer with reason, substitution, size of the error and comparison with the wax difference); one idea per paragraph; the new accepted range and common mistake present. Criteria keys and 5 points kept (49 points in total).
+- Round 2 (Finnish changes to fy4-s1: source_note about both tables' models, part e graph_read and error_sources details, a0 tolerance 0.05, 'about a fifth of the value of part c', part a 'almost constant', accepted a0 0.43–0.47): rechecked against fi; all present and equivalent, numbers and formulas identical, no wording fix needed. practice.py check and figures OK.
