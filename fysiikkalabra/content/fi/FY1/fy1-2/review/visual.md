@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 72394e13137908d8
+CONTENT-HASH: a2d3f2f48442b01c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] inquiry.json ennuste/Tarkista Q3 (stage-tarkista-390-1), ja Q1–Q2 — "0,387 AU:n", "30 AU" kirjoitettu tavallisena tekstinä, vaikka vieressä "1,0 AU" on KaTeXia — luku yksikköineen proosassa on matematiikkaa (NOTES §1) — kirjoita $0{,}387\,\text{AU}$:n.
-- [Minor] stage-tarkista-390-1 Q1/Q2 — rivinvaihto jättää "." ja "(" yksin rivin alkuun/loppuun inline-kaavan ympärillä ("0,0250 m / . Kuinka") — lukeminen hankaloituu puhelimella — tarkista kaavan ja välimerkin välinen rivinvaihtosääntö (esim. sitova välimerkki).
-- [Minor] theory-1280-2/3 — inline-ketju katkeaa kertomerkin kohdalla ("1,5 ·" / "10¹¹ m", "4,2 ·" / "10³ m = 4200 m") — eksponenttimuoto erkanee kertoimestaan — pidä $a\cdot10^n$ yhdessä (nowrap).
-- [Minor] sim-390 — nopeusvalitsimen "←" ja "→"-painikkeet jäävät eri riveille (← select-rivillä, → liukusäätimen vieressä) — pari ei hahmotu yhdeksi ohjaimeksi — ryhmittele painikkeet vierekkäin.
+- [Minor] stage-tarkista-390-1 Q1/Q2 — rivinvaihto jättää "." ja "(" yksin rivin alkuun/loppuun inline-kaavan ympärillä (ennallaan edellisestä kierroksesta) — sitova välimerkki tai nowrap.
+- [Minor] theory-1280 — $a\cdot10^n$ voi katketa kertomerkin kohdalta (ennallaan).
 
 ## Checked
-- contact-1; fig-1…fig-4 (390), top-390, intro-1280, example-390-1, sim-390, sim-1280, theory-1280-1/2/3, lab-1280-1, exp-koe-1-390-2, stage-tarkista-390-1. Kuvat (hero, quantity, prefixes, conversion) selkeitä, LaTeX-nimiöt luettavia, ei leikkautumista; kaavakuvat merkitty ei-mittakaavaan.
+- Delta: fig-4-390 (kuvan viimeinen rivi "valon kulkuaika t = 499 s = 8,32 min": selkeä, mahtuu, ei leikkautumista, sanat ja kaava samalla rivillä luettavasti), stage-tarkista-390-1 (Q3 "0,387 AU:n" nyt matematiikkaa, yksikkö pystykirjaimin ohuella välilyönnillä, asettelu ehjä).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4
