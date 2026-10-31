@@ -200,7 +200,7 @@ Mieti ainakin näitä:
   <foreignObject x="269" y="320" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{suojavastus}$</div></foreignObject>
 </svg>
 
-Jännitemittari kytketään suoraan pariston napoihin, ei säädettävän vastuksen yli. Silloin se mittaa juuri napajännitteen: suojavastuksen, virtamittarin ja johtimien jännitehäviöt eivät sekoitu sisäiseen resistanssiin. Suojavastus estää resistanssia laskemasta nollaan, vaikka säädettävä vastus käännettäisiin ääriasentoonsa. Jos opettaja ei anna suojavastusta, kysy, miten säädettävän vastuksen pienin resistanssi rajoitetaan.
+Jännitemittari kytketään suoraan pariston napoihin, ei säädettävän vastuksen yli. Silloin se mittaa juuri napajännitteen: suojavastuksen, virtamittarin ja johtimien jännitehäviöt eivät sekoitu sisäiseen resistanssiin. Jos paristo on pidikkeessä, kytke jännitemittari mahdollisimman lähelle pariston napoja, sillä muuten pidikkeen kosketusresistanssi näkyy osana sisäistä resistanssia. Suojavastus estää resistanssia laskemasta nollaan, vaikka säädettävä vastus käännettäisiin ääriasentoonsa. Jos opettaja ei anna suojavastusta, kysy, miten säädettävän vastuksen pienin resistanssi rajoitetaan.
 :::
 
 ## Mittaa
@@ -265,7 +265,7 @@ Kirjoita sovitetun kuvaajan yhtälö ja vastaa:
 Mittauspisteet ovat yleensä vain osalla suoraa, kuvan yhtenäisellä osalla. Molemmat leikkauskohdat saadaan jatkamalla sovitettua suoraa mittausalueen ulkopuolelle, katkoviivalla merkityille osille. Erityisesti oikosulkuvirta on usein kaukana mitatuista virroista. Jatkaminen voi antaa väärän tuloksen, koska suurilla virroilla paristo lämpenee ja polarisoituu, jolloin sen sisäinen resistanssi ja lähdejännite eivät enää pysy vakioina eikä kuormituskäyrä ole siellä välttämättä suora.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -296,12 +296,12 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Kuvaako malli $U = E - R_\te
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** lähdejännite, sisäinen resistanssi, oikosulkuvirta ja malli $U = E - R_\text{s} I$ sekä se, miksi valitsit juuri nämä akselit.
-- **Työn suunnitelma:** kytkentäkaavio, mitä muutit, mitä mittasit ja mitä pidit vakiona, sekä miten estit oikosulun.
+- **Koejärjestely ja menetelmä:** kytkentäkaavio, mitä muutit, mitä mittasit ja mitä pidit vakiona, sekä miten estit oikosulun.
 - **Mittaustulokset:** alkuperäiset virran ja jännitteen lukemat sekä ilman kuormaa mitattu napajännite.
-- **Tulokset:** $E$, $R_\text{s}$ ja $I_\text{k}$ epävarmuuksineen oikein pyöristettyinä ja perustelu sille, miten kukin saatiin kuvaajasta.
+- **Tulos:** $E$, $R_\text{s}$ ja $I_\text{k}$ epävarmuuksineen oikein pyöristettyinä ja perustelu sille, miten kukin saatiin kuvaajasta.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja arvio kuvaajan jatkamisen luotettavuudesta.
 
 ## Laajennus: uusi ja käytetty paristo

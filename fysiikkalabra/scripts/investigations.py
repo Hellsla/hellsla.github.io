@@ -9,13 +9,16 @@ docs/PORTAL_ARCHITECTURE.md, docs/FY10_PLAN.md).
 An investigation is not a lesson of a course: it may serve several courses and modules without being copied.
 
   content/<lang>/tutkimukset/<id>/investigation.json   metadata: title, question, description, courses (codes of
-        local-courses.json or curriculum.json), modules, learn (2–3 goals completing "Tässä tutkimuksessa opit"),
+        local-courses.json or curriculum.json), modules, topic (one of TOPICS: the physics area the course page
+        filters by, teacher 2026-10-31), learn (2–3 goals completing "Tässä tutkimuksessa opit"),
         variants [{id, title, physics F1–F3, experiment E1–E3}], modes (O, OO, I), prerequisites, equipment, safety,
         source. A prerequisite is {kind: physics|experiment|tvt, level: essential|helpful|extension, why} with either
-        target (a lesson id: linked where published, else named with its module) or text + missing (no page yet).
+        target (a lesson id: linked where published, else named with its module), or for a tvt prerequisite text +
+        guides (ids of the TVT-ohjeet that teach it, scripts/guides.py), or text + missing (no page yet).
   content/<lang>/tutkimukset/<id>/investigation.md     the student text: `## ` sections; `::: tuki O OO` … `:::`
         is guidance shown only in those working modes (one page, no copies per mode); `[[apua:<lesson id>|label]]`
-        is a just-in-time help link, linked only where the chapter is published; `<svg data-fig="name"></svg>`
+        is a just-in-time help link, linked only where the chapter is published; `[[ohje:<guide id>|label]]` links a
+        TVT-ohje the same way; `<svg data-fig="name"></svg>`
         is filled from figures.py.
   content/<lang>/tutkimukset/<id>/teacher.md           public teacher guidance (never answers or anything confidential)
   content/<lang>/tutkimukset/<id>/review/              science.md and pedagogy.md, as a lesson's
@@ -26,7 +29,7 @@ each course in `courses` lists it: the course refers to the investigation, it ne
 """
 import hashlib, importlib.util, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n
+import courses, guides, i18n
 
 ROOT = courses.ROOT
 DIR = "tutkimukset"
@@ -34,6 +37,7 @@ TEXTS = ("investigation.json", "investigation.md", "teacher.md")
 KINDS = ("physics", "experiment", "tvt")
 LEVELS = ("essential", "helpful", "extension")
 MODES = ("O", "OO", "I")
+TOPICS = ("liike", "lampo", "aallot", "sahko", "aine")   # names in lang investigation.topic_<key>; the course page's filter
 esc = lambda s: _h.escape(str(s), quote=True)
 
 
@@ -79,6 +83,7 @@ def check(iid, lang=i18n.SOURCE):
     lessons = {l["id"] for m in cur.values() for l in m.get("lessons", [])}
     if d.get("id") != iid: errs.append(f"{where}: id {d.get('id')!r} is not the folder name")
     if iid in lessons or iid.upper() in cur: errs.append(f"{where}: the id of a lesson or module")
+    if d.get("topic") not in TOPICS: errs.append(f"{where}: topic {d.get('topic')!r} is not one of {TOPICS}")
     for f in ("title", "question", "description", "learn", "variants", "modes", "prerequisites", "courses"):
         if not d.get(f): errs.append(f"{where}: no {f}")
     if not 2 <= len(d.get("learn", [])) <= 3: errs.append(f"{where}: learn has 2–3 goals")
@@ -91,11 +96,14 @@ def check(iid, lang=i18n.SOURCE):
     for p in d.get("prerequisites", []):
         if p.get("kind") not in KINDS or p.get("level") not in LEVELS: errs.append(f"{where}: prerequisite {p} kind/level")
         if "target" in p and p["target"] not in lessons: errs.append(f"{where}: prerequisite target {p['target']} is not a lesson")
-        if "target" not in p and not (p.get("text") and p.get("missing")): errs.append(f"{where}: a prerequisite without a target needs text and missing")
+        if "target" not in p and not (p.get("text") and (p.get("missing") or p.get("guides"))): errs.append(f"{where}: a prerequisite without a target needs text and guides or missing")
+        errs += [f"{where}: prerequisite guide {g} is not a TVT-ohje" for g in p.get("guides", []) if g not in guides.ids()]
         if not p.get("why"): errs.append(f"{where}: prerequisite without why")
     md = (folder(iid, lang) / "investigation.md").read_text()
     for t in re.findall(r"\[\[apua:([\w-]+)", md):
         if t not in lessons: errs.append(f"{where}: help link to {t}, not a lesson")
+    tmd = (folder(iid, lang) / "teacher.md").read_text() if (folder(iid, lang) / "teacher.md").is_file() else ""
+    errs += [f"{where}: link to guide {g}, not a TVT-ohje" for g in re.findall(r"\[\[ohje:([\w-]+)", md + tmd) if g not in guides.ids()]
     opens = re.findall(r"^::: tuki ([A-Z ]+)$", md, re.M); closes = re.findall(r"^:::$", md, re.M)
     if len(opens) != len(closes): errs.append(f"{where}: {len(opens)} '::: tuki' blocks but {len(closes)} ':::' ends")
     errs += [f"{where}: '::: tuki {o}' names an unknown mode" for o in opens if any(m not in MODES for m in o.split())]
@@ -126,6 +134,49 @@ def _chapter(lid, T, chapters, published):
     return f'{esc(title)} <span class="inv-mod">({code}, {T("investigation.not_published")})</span>'
 
 
+def levels(d, key):
+    """The levels of an investigation's variants as a sorted list (F1, F2 …)."""
+    return sorted({v[key] for v in d["variants"]})
+
+
+def span(ls): return ls[0] if len(ls) == 1 else f"{ls[0]}–{ls[-1]}"
+
+
+def bank(T, items):
+    """The course page's investigation bank (teacher 2026-10-31): every investigation listed, its name and question
+    first, then its topic, F and E levels, working modes and the modules it builds on; above it a small filter form
+    (search by name, question or equipment; topic; physics level; experiment level; working mode) that narrows the
+    list in place (templates/invfilter.js). Without scripts the form stays hidden and the whole list shows.
+    items: [(id, investigation dict)] in the course's order."""
+    def opt(name, label, values):
+        return (f'<div class="bank-field"><label for="bank-{name}">{label}</label><select id="bank-{name}" name="{name}">'
+                f'<option value="">{T("investigation.filter_all")}</option>'
+                + "".join(f'<option value="{v}">{esc(t)}</option>' for v, t in values) + "</select></div>")
+    form = (f'<form class="bank-filter" id="bank-filter" hidden role="search" aria-label="{T("investigation.filter_label")}">'
+            f'<div class="bank-field bank-search"><label for="bank-q">{T("investigation.filter_search")}</label>'
+            f'<input id="bank-q" name="q" type="search" autocomplete="off"></div>'
+            + opt("topic", T("investigation.filter_topic"), [(t, T("investigation.topic_" + t)) for t in TOPICS])
+            + opt("f", T("investigation.filter_physics"), [(f"F{k}", f"F{k}") for k in (1, 2, 3)])
+            + opt("e", T("investigation.filter_experiment"), [(f"E{k}", f"E{k}") for k in (1, 2, 3)])
+            + opt("mode", T("investigation.filter_mode"), [(m, T("investigation.mode_" + m)) for m in MODES])
+            + f'<button type="reset" class="bank-reset">{T("investigation.filter_reset")}</button>'
+            f'<p class="bank-count" id="bank-count" aria-live="polite" data-template="{esc(T("investigation.filter_count"))}"></p></form>')
+    rows = ""
+    for i, d in items:
+        fl, el = levels(d, "physics"), levels(d, "experiment")
+        words = " ".join([d["title"], d["question"]] + d.get("equipment", [])).lower()
+        meta = (f'<span class="bank-topic">{T("investigation.topic_" + d["topic"])}</span>'
+                f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span>'
+                f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>'
+                f'<span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
+                f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span>')
+        rows += (f'<li class="live bank-item" data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
+                 f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"><a href="{i}.html">{esc(d["title"])}</a>'
+                 f'<span class="local-why">{esc(d["question"])}</span><span class="bank-meta">{meta}</span></li>')
+    return (form + f'<p class="bank-none" id="bank-none" hidden>{T("investigation.filter_none")}</p>'
+            f'<ol class="lessons local-inv bank-list" id="bank-list">{rows}</ol>')
+
+
 def render(iid, lang, T, md, chapters, published):
     """(body html, toc html) of the investigation page. md renders markdown with maths; chapters: lesson id ->
     (module, title) in this language; published: the page names this language built."""
@@ -137,6 +188,7 @@ def render(iid, lang, T, md, chapters, published):
         inner = f'<a href="{lid}.html">{esc(label)}</a>' if f"{lid}.html" in published else f'{esc(label)} ({code}, {T("investigation.not_published")})'
         return f'<span class="inv-help">{T("investigation.need_help")} → {inner}</span>'
     text = re.sub(r"\[\[apua:([\w-]+)\|([^\]]+)\]\]", help_link, text)
+    text = guides.inline_links(text, published, lang)
     blocks = []
     def tuki(m):
         blocks.append(f'<div class="inv-tuki" data-modes="{m.group(1).strip()}">{md(m.group(2))}</div>')
@@ -163,7 +215,12 @@ def render(iid, lang, T, md, chapters, published):
     for kind in KINDS:
         items = ""
         for p in [p for p in d["prerequisites"] if p["kind"] == kind]:
-            what = _chapter(p["target"], T, chapters, published) if "target" in p else f'{esc(p["text"])} <span class="inv-mod">({esc(p["missing"])})</span>'
+            if "target" in p: what = _chapter(p["target"], T, chapters, published)
+            elif p.get("guides"):
+                names = [guides.link(g, guides.load(g, lang)["title"], published, lang) for g in p["guides"]
+                         if (guides.folder(g, lang) / "guide.json").is_file()]     # never a raw id where a guide is missing
+                what = esc(p["text"]) + (f' <span class="inv-mod">({T("guides.prereq_guides")} {", ".join(names)})</span>' if names else "")
+            else: what = f'{esc(p["text"])} <span class="inv-mod">({esc(p["missing"])})</span>'
             items += (f'<li><span class="inv-level inv-level-{p["level"]}">{T("investigation.prereq_" + p["level"])}</span> {what}'
                       f'<span class="inv-why">{md(p["why"])[3:-4]}</span></li>')
         if items: prereq += f'<h3>{T("investigation.kind_" + kind)}</h3><ul class="inv-prereq">{items}</ul>'
@@ -175,7 +232,7 @@ def render(iid, lang, T, md, chapters, published):
                f'<section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">{T("investigation.needs")}</h2>{prereq}{kit}</section>')
     toc = [("tarvitset", T("investigation.needs"))] + toc
     teacher = f / "teacher.md"
-    tail = (f'<details class="inv-teacher" id="opettajalle"><summary>{T("investigation.teacher")}</summary>{md(teacher.read_text())}</details>'
+    tail = (f'<details class="inv-teacher" id="opettajalle"><summary>{T("investigation.teacher")}</summary>{md(guides.inline_links(teacher.read_text(), published, lang))}</details>'
             if teacher.is_file() else "")
     # teacher guidance closes the page and stays out of the students' stage navigation
     body = f'<article id="teoria" class="investigation">{intro}{opening}{"".join(body_parts)}{tail}</article>'

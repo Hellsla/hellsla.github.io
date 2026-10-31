@@ -12,6 +12,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "sahko",
   "source": "Esimerkkityöt.pdf s. 11–12 (Sähkömagneettisen induktion tutkiminen), opettajan aineisto",
   "learn": [
     "muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja valitsemaan, mitä muutat ja mitä pidät vakiona",
@@ -29,7 +30,7 @@
       "id": "oma-tekija",
       "title": "Kierrosluku tai muu itse valittu tekijä ja kahden tekijän vertailu",
       "physics": "F2",
-      "experiment": "E3"
+      "experiment": "E2"
     }
   ],
   "modes": [
@@ -93,22 +94,22 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittausdatan tallentaminen anturilla ja käsittely ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittausdatan tallentaminen anturilla ja käsittely ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-mittausohjelma", "tvt-taulukkolaskenta"],
       "why": "Mittausdatan tallentaminen ja käsittely."
     },
     {
       "kind": "tvt",
       "level": "essential",
       "text": "Mittauspisteiden kuvaaja ja mallin sovitus ohjelmalla",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Riippuvuus ja sen epävarmuus saadaan sovituksesta."
     }
   ],
   "equipment": [
     "käämejä, joissa on eri kierrosluvut",
     "kestomagneetteja",
-    "jänniteanturi ja tiedonkeruuohjelma",
+    "jänniteanturi ja Graphical Analysis Pro",
     "tarvittaessa mittanauha tai viivain ja ajanottoväline",
     "tarvittaessa muoviputki ja pehmeä alusta magneetille"
   ],

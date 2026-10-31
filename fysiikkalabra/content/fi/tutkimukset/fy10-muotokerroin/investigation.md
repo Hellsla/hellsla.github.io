@@ -297,7 +297,7 @@ Vastaa:
 1. Miten tunnistit, että pallo oli rajanopeudella? Millä matkalla se saavutti rajanopeuden?
 2. Kuinka paljon rajanopeus vaihteli pudotuksesta toiseen, ja mistä vaihtelu voi johtua?
 
-Paikan merkitsemiseen voit käyttää videoanalyysiohjelmaa tai puhelimen sovellusta ja suoran sovitukseen esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelmien käyttöön on tekeillä.
+Paikan merkitsemiseen voit käyttää videoanalyysiohjelmaa tai puhelimen sovellusta. Sovita suora Graphical Analysis Pro -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-videoanalyysi|Videoanalyysi]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -327,10 +327,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Etsi kirjallisuudesta, esime
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** ilmanvastuksen malli lähteineen ja miten muotokerroin saadaan rajanopeudesta.
-- **Koejärjestely:** kuva järjestelystä, josta näkyvät kameran paikka, tunnettu pituus ja pallon putoamislinja, sekä perustelut niille.
+- **Koejärjestely ja menetelmä:** kuva järjestelystä, josta näkyvät kameran paikka, tunnettu pituus ja pallon putoamislinja, sekä perustelut niille.
 - **Tulosten käsittely:** paikka–aika-kuvaaja, siihen sovitettu suora ja perustelu sille, mistä kohdasta alkaen pallo oli rajanopeudella.
 - **Tulos:** $C \pm \Delta C$ oikein pyöristettynä.
 - **Luotettavuus:** suurimmat epävarmuuden lähteet, niiden vaikutuksen suunta ja vertailu kirjallisuusarvoon.

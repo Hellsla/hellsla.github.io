@@ -11,6 +11,7 @@
     "FY1",
     "FY7"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 4–5 (Valaistusvoimakkuuden riippuvuus etäisyydestä), opettajan aineisto",
   "learn": [
     "johtamaan fysikaalisesta periaatteesta mallin ja testaamaan sitä mittaustuloksilla",
@@ -73,14 +74,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Valaistusvoimakkuuden mittaaminen anturilla tai puhelimen valoanturilla sovelluksen avulla",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Valaistusvoimakkuus luetaan anturista, ja lukeman vaihtelu kertoo osan mittausepävarmuudesta."
     },
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja, uusien sarakkeiden laskeminen sekä suoran tai potenssifunktion sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja, uusien sarakkeiden laskeminen sekä suoran tai potenssifunktion sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Malli ja sen vakioiden epävarmuudet saadaan sovituksesta."
     }
   ],

@@ -1,24 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: 12b49bb94be14c44
+CONTENT-HASH: 73110bd2e5c01854
 
 ## Blocking
+
 None.
 
-## Previous polish, now fixed
-- **Ennusta Q3** is now closed by data. An all-mode line in Epävarmuus ja luotettavuus asks the student to compare the measured $\dfrac{I}{m r^2}$ with $\tfrac{1}{2}$ and to check whether the direction of the deviation matches prediction 3.
-- **Mittaa** now says "Toistojen hajonta kertoo, kuinka paljon mittaamasi suure vaihtelee". This is neutral to the student's method.
-- **No hint at a fitted line.** The fy1-4 link label is now "Graafinen esitys", and the fy1-4 and TVT prerequisite reasons are neutral. Mode I is no longer pointed towards a fitted line.
-- **OO and the extension.** A `tuki OO` block says the extension is optional in OO and that the teacher decides. Mode I is still told that it is part of the work.
-- **Käsittele Q2** now asks whether the order depends on mass or size or only on how the mass is distributed, with an energy argument. This targets the misconception listed in teacher.md.
-
 ## Polish
-- **The hero ruler.** The hero now shows a ruler holding the cylinder, in all modes. This suggests one release method to an I student; the OO bullet "viivaimen takaa" says the same. The hint is harmless, because a clean release from rest is good practice and not a result.
-- **The trough condition** (contact radius smaller than $r$ in a V-groove or on rails) is in `tuki OO` and teacher.md *Valmistelu*. An I student building their own trough relies on the teacher's preparation. This is acceptable, since the teacher prepares the apparatus.
 
-## Checked
-- **Mode I keeps its real decisions:** the derivation of $I$, how to find $v$, the slope, the distances, the repeats, graph or calculation, and the uncertainty method. *Päätät itse* is true for both OO and I.
-- **Ennusta comes before the theory.** The data now test Q1 (the race in *Selvitä*, before the theory), Q2, Q3 and Q4.
-- **No answers given away.** The hero still shows no motion and no timer, the equipment list offers alternatives, and the concept figure comes after the race.
-- **Goals 1–3 are practised in both modes.**
-- **Activities and teacher.md.** 6a and 6c are reasonable. The new $\overline{L}$ component wording is clear for lukio. teacher.md states the enrichment beyond LOPS 2019 and gives no results.
-- **Preview.** It builds with 7 OO blocks and 1 I block.
+- teacher.md *Valmistelu* is now about 200 words in one paragraph; the new timing advice (2g/a − 1 amplifies time error) would read better as its own paragraph.
+- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
+
+## Checked (delta 2026-10-31)
+
+- Teacher-facing timing note is correct pedagogy: it steers groups to video or a motion sensor before they waste a session on hand timing
+- Body links (kuvaaja, taulukkolaskenta) match "Laskuihin ja kuvaajiin"
+- Raportoi names aligned; topic `liike` fits
+
+## Delta 2 (2026-10-31)
+
+- teacher.md: the timing advice is now its own *Ajanotto* paragraph, as suggested. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

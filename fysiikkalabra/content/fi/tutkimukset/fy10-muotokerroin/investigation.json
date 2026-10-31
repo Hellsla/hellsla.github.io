@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 8 (Jumppapallon muotokertoimen määrittäminen), opettajan aineisto",
   "learn": [
     "määrittämään nopeuden videoanalyysillä saadusta paikka–aika-kuvaajasta",
@@ -88,14 +89,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Videoanalyysi: videon mittakaavan asettaminen tunnetun pituuden avulla ja pallon paikan merkitseminen kuva kuvalta (videoanalyysiohjelma tai puhelimen sovellus)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-videoanalyysi", "tvt-nopeus-datasta"],
       "why": "Pallon paikka ajan funktiona saadaan videolta."
     },
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Rajanopeus ja sen epävarmuus saadaan sovitetun suoran kulmakertoimesta."
     }
   ],

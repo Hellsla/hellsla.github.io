@@ -1,0 +1,12 @@
+{
+  "id": "tvt-kuvaaja",
+  "title": "Mittauspisteiden kuvaaja",
+  "description": "Näin piirrät mittaustuloksista kuvaajan, josta näkee suureiden riippuvuuden ja jota voi käyttää mallin testaamiseen.",
+  "learn": [
+    "piirtämään mittauspisteistä kuvaajan, jossa on akselien suureet ja yksiköt",
+    "valitsemaan kuvaajan akselit ja asteikot perustellusti",
+    "merkitsemään kuvaajaan mittausten epävarmuuden"
+  ],
+  "kind": "taito",
+  "order": 1
+}

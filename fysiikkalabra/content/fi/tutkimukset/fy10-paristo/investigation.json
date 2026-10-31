@@ -11,6 +11,7 @@
     "FY1",
     "FY6"
   ],
+  "topic": "sahko",
   "source": "Esimerkkityöt.pdf s. 6–7 (Pariston kuormituskäyrä), opettajan aineisto",
   "learn": [
     "tulkitsemaan suoran kulmakertoimen ja akselien leikkauskohdat fysikaalisina suureina",
@@ -86,8 +87,8 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Suoran yhtälö ja sen epävarmuudet saadaan sovituksesta."
     }
   ],

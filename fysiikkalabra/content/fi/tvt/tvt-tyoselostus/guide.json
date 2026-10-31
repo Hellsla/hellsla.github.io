@@ -1,0 +1,11 @@
+{
+  "id": "tvt-tyoselostus",
+  "title": "Kuvaajat ja tulokset työselostukseen",
+  "description": "Näin esität mittaustaulukon, kuvaajan ja tuloksen työselostuksessa niin, että lukija voi tarkistaa työsi.",
+  "learn": [
+    "esittämään mittaustulokset työselostuksessa taulukkona ja kuvaajana",
+    "viittaamaan kuvaajaan tekstissä ja ilmoittamaan tuloksen epävarmuuksineen"
+  ],
+  "kind": "taito",
+  "order": 9
+}

@@ -58,18 +58,22 @@ def validate(curriculum):
     return errs
 
 
-def home_row(code, c, T):
-    """The front page row: the same anatomy as a national module's row, one link stretched over it."""
+def home_row(code, c, T, investigations=0):
+    """The front page row: the same anatomy as a national module's row, one link stretched over it. What the course
+    already publishes (its investigations in this language) comes first; the plan's status is said apart from it
+    (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
+    avail = T.count("site.local_investigations", investigations) if investigations else T("site.local_status_" + c["status"])
+    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if investigations else ""
     return (f'<li class="mod-row local-row"><span class="mod-code">{code}</span>'
             f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
             f'<span class="visually-hidden">{code} </span>{esc(c["title"])}</a></h3>'
             f'<p class="mod-q">{esc(c["subtitle"])}</p></div>'
-            f'<p class="mod-meta"><span class="mod-avail">{T("site.local_status_" + c["status"])}</span>'
+            f'<p class="mod-meta"><span class="mod-avail">{avail}</span>{status}'
             f'<span class="mod-credits">{esc(c["school"])}</span></p>'
             f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
 
 
-def page_body(code, c, T, chapters, published, investigations=()):
+def page_body(code, c, T, chapters, published, investigations=(), guides_html=""):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
     status = c["status"]
@@ -79,10 +83,12 @@ def page_body(code, c, T, chapters, published, investigations=()):
            f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>'
            f'<p class="local-desc">{esc(c["description"])}</p>')
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
+        import investigations as inv     # the bank with its filter (teacher 2026-10-31)
         order = {i: n for n, i in enumerate(c.get("pathway", []))}
         investigations = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
-        out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T("investigation.course_lead")}</p><ol class="lessons local-inv">'
-                + "".join(f'<li class="live"><a href="{i}.html">{esc(d["title"])}</a><span class="local-why">{esc(d["question"])}</span></li>' for i, d in investigations) + "</ol>")
+        out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T.count("investigation.course_lead_n", len(investigations))} '
+                f'{T("investigation.bank_note")}</p>' + inv.bank(T, investigations))
+    out += guides_html                   # the TVT-ohjeet the investigations link to (scripts/guides.py), right after them
     if c.get("goals"):
         out += (f'<h2 id="tavoitteet">{T("site.local_goals")}</h2><p class="section-lead">{T("site.local_goals_note")}</p>'
                 '<ul class="local-goals">' + "".join(f"<li>{esc(g)}</li>" for g in c["goals"]) + "</ul>")

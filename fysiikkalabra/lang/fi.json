@@ -42,16 +42,15 @@
     "home_description": "Lukion fysiikkaa tutkimalla ja kokeilemalla: ennusteet, simulaatiot, selitykset ja tehtävät, LOPS 2019:n moduulit FY1–FY8.",
     "credits": "{{n}} op",
     "home_tagline": "Tutki. Oivalla. Sovella.",
-    "home_path": "Näin oppitunti etenee",
+    "home_path": "Näin opiskelet Ruukkilabrassa",
+    "home_start_lead": "Valitse moduuli ja aloita sen ensimmäisestä luvusta tai siitä luvusta, jota opiskelette tunnilla. Jokainen luku etenee samoin vaihein.",
     "home_path_herata": "ilmiö ja kysymys, johon luku vastaa",
     "home_path_ennusta": "sitoudu omaan ennusteeseen ennen tuloksia",
     "home_path_tutki": "kokeile simulaatiolla tai aineistolla ja kirjaa havainnot",
     "home_path_selita": "selitys ja kaava rakennetaan havainnoista",
     "home_path_sovella": "käytä mallia uudessa tilanteessa",
     "home_path_tarkista": "testaa osaamisesi; tehtävät ovat luvun lopussa",
-    "home_start": "Näin pääset alkuun",
     "home_start_items": [
-      "Aloita moduulin ensimmäisestä luvusta tai siitä luvusta, jota opiskelette tunnilla.",
       "Ennusta ensin: kun olet sitoutunut vastaukseen, huomaat, mikä tutkimuksessa yllättää.",
       "Käytä simulaatiota kuin koetta: muuta yhtä asiaa kerrallaan ja kirjaa, mitä tapahtuu.",
       "Avaa vastaus tai malliratkaisu vasta, kun olet itse yrittänyt, ja vertaa omaasi siihen vaihe vaiheelta.",
@@ -63,15 +62,10 @@
     "lang_unavailable": "sivu ei vielä saatavilla, vie moduulin sivulle",
     "unavailable_note": "Sivu <strong>{{title}}</strong> ei ole vielä saatavilla tällä kielellä. Alla näet moduulin oppitunnit ja sen, mitkä niistä voit jo avata.",
     "home_title": "Lukion fysiikkaa tutkimalla.",
-    "choose_module": "Valitse moduuli",
-    "try_lesson": "Kokeile oppituntia",
     "modules_lead": "Lukion fysiikan moduulit (LOPS 2019). Määrät kertovat julkaistut oppitunnit, eivät omaa edistymistäsi.",
     "upcoming": "Tulossa",
     "upcoming_lead": "Näistä moduuleista ei ole vielä julkaistu oppitunteja. Moduulin sivulla näet sen suunnitellut oppitunnit ja tavoitteet.",
     "open_module": "Avaa moduuli →",
-    "open_lesson": "Avaa oppitunti →",
-    "featured_heading": "Esimerkkioppitunti",
-    "featured_lead": "Luku etenee pohdinnasta ja ennusteesta tutkimukseen, teoriaan ja osaamisen tarkistamiseen.",
     "lessons_all": {
       "one": "{{n}} oppitunti",
       "other": "{{n}} oppituntia"
@@ -88,11 +82,6 @@
       "one": "Näytä tavoite",
       "other": "Näytä kaikki {{n}} tavoitetta"
     },
-    "home_start_short": [
-      "Valitse moduuli ja aloita sen ensimmäisestä luvusta tai siitä luvusta, jota opiskelette tunnilla.",
-      "Ennusta ensin ja avaa vastaukset vasta, kun olet itse yrittänyt.",
-      "Jatka luvun lopusta kohtaan Seuraava luku."
-    ],
     "home_start_more": "Lisää opiskeluvinkkejä",
     "module_question": {
       "FY1": "Miten fysiikka mittaa ja selittää maailmaa protonista galakseihin?",
@@ -105,9 +94,14 @@
       "FY8": "Miksi atomin energia on kvantittunut, ja mistä säteily syntyy?"
     },
     "local_courses": "Lukiokohtaiset opintojaksot",
-    "local_courses_lead": "Kiviruukin lukion omat valinnaiset opintojaksot. Ne eivät ole valtakunnallisia moduuleja (LOPS 2019), mutta niiden oppimateriaalit ovat kaikkien käytettävissä.",
+    "local_courses_lead": "Kiviruukin lukion omat opintojaksot. Ne eivät ole valtakunnallisia moduuleja, mutta niiden materiaalit ovat kaikkien käytettävissä.",
     "local_course_kind": "Lukiokohtainen opintojakso",
     "local_status_planning": "Suunnitteilla",
+    "local_status_home_planning": "Opintojakson suunnitelma täydentyy",
+    "local_investigations": {
+      "one": "{{n}} tutkimus käytettävissä",
+      "other": "{{n}} tutkimusta käytettävissä"
+    },
     "open_course": "Avaa opintojakso →",
     "local_distinct": "Tämä on lukiokohtainen opintojakso ({{school}}). Sen tavoitteet ja sisällöt perustuvat lukion omaan suunnitelmaan, eivät valtakunnallisiin moduuleihin FY1–FY8.",
     "local_status_note_planning": "Tällä sivulla on opintojakson työversio. Tutkimuksia julkaistaan sitä mukaa kuin ne valmistuvat, eikä laajuutta tai arviointia ole vielä vahvistettu.",
@@ -1277,7 +1271,41 @@
     "safety": "Turvallisuus",
     "teacher": "Opettajalle",
     "course_heading": "Tutkimukset",
-    "course_lead": "Julkaistut tutkimukset. Sama tutkimus voi kuulua usealle kurssille."
+    "course_lead": "Julkaistut tutkimukset. Sama tutkimus voi kuulua usealle kurssille.",
+    "bank_note": "F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, ja E1–E3, kuinka vaativa mittaus ja analyysi on. Työtavan (ohjattu, osittain ohjattu tai itsenäinen) valitset tutkimuksen sivulla.",
+    "course_lead_n": {
+      "one": "{{n}} julkaistu tutkimus.",
+      "other": "{{n}} julkaistua tutkimusta."
+    },
+    "filter_label": "Suodata tutkimuksia",
+    "filter_search": "Hae nimellä, kysymyksellä tai välineellä",
+    "filter_all": "Kaikki",
+    "filter_topic": "Aihealue",
+    "filter_physics": "Fysiikan taso",
+    "filter_experiment": "Kokeen taso",
+    "filter_mode": "Työtapa",
+    "filter_reset": "Näytä kaikki",
+    "filter_none": "Yksikään tutkimus ei vastaa valintoja. Muuta valintoja tai näytä kaikki.",
+    "filter_count": "Näytetään {shown}/{total} tutkimusta.",
+    "topic_liike": "Liike ja voima",
+    "topic_lampo": "Lämpö ja energia",
+    "topic_aallot": "Värähtely, aallot ja valo",
+    "topic_sahko": "Sähkö ja magnetismi",
+    "topic_aine": "Aine ja säteily",
+    "mode_short_O": "ohjattu",
+    "mode_short_OO": "osittain ohjattu",
+    "mode_short_I": "itsenäinen",
+    "builds_on": "Esitiedot:"
+  },
+  "guides": {
+    "used_by": "Tarvitset tätä tutkimuksissa:",
+    "learn": "Tässä ohjeessa opit",
+    "kind_taito": "Yleinen taito: ohje sopii mille tahansa ohjelmalle tai laskimelle.",
+    "kind_ohjelma": "Työvälineen käyttö: tarkista yksityiskohdat oman ohjelmasi tai laitteesi ohjeesta.",
+    "course_heading": "TVT-ohjeet",
+    "course_lead": "Lyhyet ohjeet taitoihin, joita tutkimuksissa tarvitaan. Tutkimussivu kertoo, mitä ohjetta milloinkin tarvitset.",
+    "prereq_guides": "ohje:",
+    "notice_draft": "Tämä ohje on luonnos, jota ei ole vielä tarkistettu."
   },
   "fbd": {
     "lead": "Voimakuvio, nuolet mittakaavassa:",

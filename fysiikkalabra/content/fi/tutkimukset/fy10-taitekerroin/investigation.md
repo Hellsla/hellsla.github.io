@@ -297,7 +297,7 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 3. Ovatko pisteet suoralla? Kulkeeko suora origon kautta? Jos ei, mistä poikkeama voi johtua?
 4. Mikä suure on kulmakerroin, ja mikä on sen yksikkö?
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -322,10 +322,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Mitä tapahtui, kun tulokulm
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** taittumislaki, mistä kulmat mitataan ja miksi säde suunnattiin tasaisen pinnan keskipisteeseen.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten tarkistit kappaleen ja asteikon asennon.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten tarkistit kappaleen ja asteikon asennon.
 - **Mittaustulokset:** alkuperäiset kulmalukemat omissa sarakkeissaan ja sinit niiden oikealla puolella, sekä havaintosi suurilla tulokulmilla.
 - **Tulos:** taitekerroin muodossa $n \pm \Delta n$ oikein pyöristettynä ja perustelu kuvaajan akseleille.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.

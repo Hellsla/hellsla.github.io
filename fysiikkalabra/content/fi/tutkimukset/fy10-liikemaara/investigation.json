@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 1–2 (Liikemäärän säilyminen törmäyksissä), opettajan aineisto",
   "learn": [
     "käsittelemään nopeutta ja liikemäärää etumerkillisinä suureina, kun liike tapahtuu suoralla radalla",
@@ -82,15 +83,15 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (esimerkiksi Graphical Analysis)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Liikeanturin mittaus ja nopeuden lukeminen kuvaajasta ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-mittausohjelma", "tvt-kuvaaja", "tvt-nopeus-datasta"],
       "why": "Vaunujen nopeudet ennen törmäystä ja sen jälkeen luetaan anturien tallentamista kuvaajista."
     },
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Laskut taulukkolaskentaohjelmalla",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Laskut laskettuina sarakkeina (Graphical Analysis Pro)",
+      "guides": ["tvt-taulukkolaskenta"],
       "why": "Liikemäärät ja laajennuksen liike-energiat lasketaan monesta törmäyksestä samoilla kaavoilla."
     }
   ],

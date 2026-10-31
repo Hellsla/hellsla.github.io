@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 15–16 (Hissin kulkeman matkan määrittäminen kiihtyvyydestä), opettajan aineisto",
   "learn": [
     "määrittämään nopeuden ja kuljetun matkan kiihtyvyysdatasta kuvaajien pinta-aloina",
@@ -75,21 +76,21 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Kiihtyvyyden tallentaminen puhelimen sovelluksella ja mittausdatan siirtäminen tietokoneelle tai tabletille",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Laskenta tehdään koko matkan aikana tallennetusta datasta."
     },
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Laskeminen ja kuvaajat taulukkolaskennassa (pinta-ala kapeiden suikaleiden summana)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Laskeminen laskettuina sarakkeina ja kuvaajat Graphical Analysis Prossa (pinta-ala kapeiden suikaleiden summana)",
+      "guides": ["tvt-kuvaaja", "tvt-taulukkolaskenta", "tvt-nopeus-datasta"],
       "why": "Nopeus ja matka lasketaan riveittäin satojen mittauspisteiden datasta."
     }
   ],
   "equipment": [
     "puhelin, jossa on kiihtyvyysanturi ja sovellus, joka tallentaa kiihtyvyyden ajan funktiona, tai erillinen kiihtyvyysanturi",
-    "tietokone ja taulukkolaskentaohjelma",
+    "tietokone tai tabletti, jossa on Graphical Analysis Pro",
     "mittanauha kerroskorkeuden mittaamiseen",
     "hissi, jonka käyttöön on lupa"
   ],

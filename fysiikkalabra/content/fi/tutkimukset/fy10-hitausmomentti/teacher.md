@@ -2,6 +2,8 @@
 
 **Valmistelu.** Kortissa ei ole välineluetteloa käsite- ja mittausosalle. Tarvitaan suora ja tukeva kalteva taso (lauta, profiili tai kouru), umpinainen ja tasa-aineinen sylinteri sekä vertailukappale, jonka massa on jakautunut toisin, esimerkiksi putki tai täysi ja tyhjä tölkki. Tarkista, että sylinteri on todella umpinainen: keskireikä, ontto sisus tai eri materiaaleista koottu rakenne muuttaa hitausmomenttia, eikä malli $\tfrac{1}{2}\, m r^2$ silloin päde. Jos käytät kourua, sylinterin on vierittävä koko ulkopinnallaan tasaisella pohjalla: V-urassa tai kiskojen varassa kosketussäde on pienempi kuin $r$, jolloin $v = r\omega$ ei päde ja hitausmomentista tulee systemaattisesti liian suuri. Kokeile kaltevuus etukäteen: sylinterin on vierittävä liukumatta, ja vierimisajan on oltava niin pitkä, että sen voi mitata valitulla välineellä. Varaa vaaka, työntömitta, mittanauha, pehmeä pysäytin tason alapäähän ja ajanottoon sopivat välineet (ajanotto, liikeanturi tai puhelimen video). Laajennukseen tarvitaan polkupyörän rengas, jonka akseliin on kiinnitetty kahvat, ja halutessasi pyörivä jakkara. Päätä etukäteen, sallitaanko pyörivän jakkaran käyttö.
 
+**Ajanotto.** Käsin otettu aika on yleensä liian epätarkka, koska hitausmomentti lasketaan erotuksesta $\dfrac{2g}{a} - 1$ ja ajan pienikin suhteellinen virhe kasvaa siinä moninkertaiseksi; suosittele videota tai liikeanturia ja kokeile etukäteen, erottaako koulun välineellä saatu suhde $\dfrac{I}{m r^2}$ mallin arvon $\tfrac{1}{2}$ putken arvosta $1$.
+
 **Tavallisia virhekäsityksiä ja ongelmia.**
 
 - Pyörimisenergia unohdetaan, jolloin koko potentiaalienergian oletetaan muuttuvan etenemisen liike-energiaksi.

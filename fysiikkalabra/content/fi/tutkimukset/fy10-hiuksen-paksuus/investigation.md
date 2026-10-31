@@ -264,7 +264,7 @@ Kirjoita laskusi näkyviin ja vastaa:
 **Miksi juuri nämä akselit?** Malli $x_m = \dfrac{\lambda L}{d} \cdot m$ on suoran yhtälö $y = ax$, kun pystyakselille valitaan $x_m$ ja vaaka-akselille $m$. Silloin kulmakertoimesta saadaan hiuksen paksuus, ja kuvaaja näyttää samalla, ovatko minimit tasavälein. Kulmakerroin tasoittaa yksittäisten minimien paikantamisen satunnaisia virheitä, koska jokainen minimi vaikuttaa siihen. Jos suora ei kulje origon kautta, tarkista, onko minimien numerointi alkanut oikeasta kohdasta.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -292,10 +292,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella ja viittaa kuvaajaan tai lask
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** diffraktio ja minimien ehto, miksi hiuksen kuvio vastaa raon kuviota ja mitä mallin ehtoja tarvitaan.
-- **Työn suunnitelma:** koejärjestely kuvana, miten mittasit minimien paikat ja etäisyyden $L$, mitä pidit vakiona ja miten huolehdit lasertyön turvallisuudesta.
+- **Koejärjestely ja menetelmä:** koejärjestely kuvana, miten mittasit minimien paikat ja etäisyyden $L$, mitä pidit vakiona ja miten huolehdit lasertyön turvallisuudesta.
 - **Mittaustulokset:** alkuperäiset lukemat omissa sarakkeissaan, laserin aallonpituus kyltistä ja etäisyys $L$.
 - **Tulos:** $d = (d \pm \Delta d)\ \mu\text{m}$ oikein pyöristettynä ja vertailu tyypilliseen suuruusluokkaan.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja se, minkä suureen epävarmuus vaikutti eniten.

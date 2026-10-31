@@ -117,7 +117,7 @@ Tarkista kirjauksesi tästä. Valitaan positiivinen suunta ylöspäin. Hyppääj
 I = m v_0 - 0
 ```
 
-joten $v_0 = \dfrac{I}{m}$. Impulssi $I$ on se pinta-ala, joka jää voima–aika-kuvaajan ja painoa $G$ kuvaavan vaakasuoran viivan väliin. Painon yläpuolelle jäävä pinta-ala on positiivinen ja alapuolelle jäävä negatiivinen. Mittausohjelma laskee pinta-alan mittauspisteistä summana
+joten $v_0 = \dfrac{I}{m}$. Impulssi $I$ on se pinta-ala, joka jää voima–aika-kuvaajan ja painoa $G$ kuvaavan vaakasuoran viivan väliin. Painon yläpuolelle jäävä pinta-ala on positiivinen ja alapuolelle jäävä negatiivinen. Pinta-ala lasketaan mittauspisteistä summana
 
 ```latex
 I \approx \sum (N_i - G)\cdot\Delta t
@@ -239,10 +239,10 @@ Vastaa:
 4. Ovatko kahdella menetelmällä saadut korkeudet samaa suuruusluokkaa? Kumpi on suurempi useimmissa hypyissä?
 
 ::: tuki O OO
-**Vihje pinta-alaan.** Monet mittausohjelmat laskevat käyrän alle jäävän pinta-alan valitulta väliltä. Jos ohjelma laskee pinta-alan aika-akseliin asti, se antaa tukivoiman $N$ impulssin, ja kokonaisvoiman impulssi saadaan, kun siitä vähennetään painon impulssi $G\cdot T$, missä $T$ on valitun välin pituus. Taulukkolaskennassa voit laskea jokaiselle mittauspisteelle sarakkeen $(N_i - G)\cdot\Delta t$ ja summata sen valitulta väliltä.
+**Vihje pinta-alaan.** Graphical Analysis Pro laskee valitulta väliltä käyrän ja aika-akselin välisen pinta-alan eli integraalin. Tukivoiman $N$ kuvaajasta se antaa tukivoiman impulssin, ja kokonaisvoiman impulssi saadaan, kun siitä vähennetään painon impulssi $G\cdot T$, missä $T$ on valitun välin pituus. Voit myös tehdä lasketun sarakkeen $N - G$ ja määrittää sen kuvaajan pinta-alan valitulta väliltä, jolloin saat suoraan kokonaisvoiman impulssin.
 :::
 
-Pinta-alan määrittämiseen voit käyttää voimalevyn mittausohjelmaa, Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelmien käyttöön on tekeillä.
+Pinta-alan määrittämiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -266,10 +266,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten voima–aika-kuvaajast
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** miten lähtönopeus saadaan impulssiperiaatteesta ja korkeus lähtönopeudesta, ja mihin oletuksiin toinen menetelmä perustuu.
-- **Työn suunnitelma:** hyppytapa, miten pidit sen samana, hyppyjen määrä ja hylkäämisen perusteet.
+- **Koejärjestely ja menetelmä:** hyppytapa, miten pidit sen samana, hyppyjen määrä ja hylkäämisen perusteet.
 - **Mittaustulokset:** yhden hypyn voima–aika-kuvaaja vaiheineen ja taulukko, jossa kuvaajasta luetut suureet ovat ennen niistä laskettuja. Voimat ja impulssin voit ilmoittaa painon monikertoina; hyppääjän painoa ja massaa ei tarvitse ilmoittaa.
 - **Tulos:** hypyn korkeus kummallakin menetelmällä epävarmuuksineen oikein pyöristettynä.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet kummassakin menetelmässä ja niiden vaikutuksen suunta.

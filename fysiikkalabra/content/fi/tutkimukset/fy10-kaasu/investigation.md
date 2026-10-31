@@ -286,7 +286,7 @@ V = \text{vakio} \cdot \frac{1}{p} - V_0
 Kun piirrät ruiskun lukeman $V$ paineen käänteisluvun $\dfrac{1}{p}$ funktiona, suoran vakiotermi on $-V_0$. Näin voit arvioida letkun ja anturin tilavuuden ja korjata sen tuloksiin.
 :::
 
-Kuvaajan sovitukseen ja laskettuihin sarakkeisiin voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen ja laskettuihin sarakkeisiin käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -313,7 +313,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten paine riippuu tilavuud
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** ideaalikaasun malli, miksi lämpötila ilmoitetaan kelvineinä ja miksi valitsit juuri nämä akselit.
 - **Koejärjestely ja menetelmä:** kummankin sarjan vakiona pidetyt suureet ja miten varmistit ne, piirros järjestelyistä sekä työturvallisuus.

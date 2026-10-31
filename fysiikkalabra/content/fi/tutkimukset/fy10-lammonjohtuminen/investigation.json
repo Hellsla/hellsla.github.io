@@ -11,6 +11,7 @@
     "FY1",
     "FY3"
   ],
+  "topic": "lampo",
   "source": "Esimerkkityöt.pdf s. 15 (Lämmön johtumisen tutkiminen lämpökameralla), opettajan aineisto",
   "learn": [
     "valitsemaan mitattavan suureen, jonka avulla ilmiötä voi vertailla eri kappaleissa",
@@ -78,14 +79,14 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Lämpökameran käyttö: kuvan tallentaminen ja yksittäisen kohdan lämpötilan lukeminen kuvasta",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "missing": "käytä lämpökameran omaa käyttöohjetta",
       "why": "Kaikki mittaustulokset luetaan lämpökameran kuvista."
     },
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Kuvaajan piirtäminen ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Kuvaajan piirtäminen ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja"],
       "why": "Usean materiaalin tulokset on helpointa vertailla samassa kuvaajassa."
     }
   ],

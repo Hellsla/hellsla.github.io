@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taulukko ja lasketut sarakkeet — Ruukkilabra</title>
+<meta name="description" content="Näin kirjoitat mittaukset Graphical Analysis Pron taulukkoon, lasket niistä uusia suureita laskettuina sarakkeina ja viet datan tiedostoon.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/tvt-taulukkolaskenta.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Taulukko ja lasketut sarakkeet">
+<meta property="og:description" content="Näin kirjoitat mittaukset Graphical Analysis Pron taulukkoon, lasket niistä uusia suureita laskettuina sarakkeina ja viet datan tiedostoon.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/tvt-taulukkolaskenta.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Taulukko ja lasketut sarakkeet</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Taulukko ja lasketut sarakkeet</p><a href="#mihin-tarvitset-tata">Mihin tarvitset tätä</a><a href="#tyovaiheet">Työvaiheet</a><a href="#ohjelmakohtaisia-vinkkeja">Ohjelmakohtaisia vinkkejä</a><a href="#tavallisimmat-virheet">Tavallisimmat virheet</a><a href="#tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation guide"><p>Graphical Analysis Pron taulukossa jokainen suure on oma sarakkeensa. Laskettu sarake laskee uuden suureen kaikille riveille yhdellä lausekkeella, ja kuvaaja päivittyy samalla.</p>
+<p class="notice tvt-kind" role="note">Työvälineen käyttö: tarkista yksityiskohdat oman ohjelmasi tai laitteesi ohjeesta.</p><div class="inv-learn"><h2 id="h-tavoitteet">Tässä ohjeessa opit</h2><ul><li>kirjoittamaan mittaukset taulukkoon niin, että jokaisella sarakkeella on suure ja yksikkö</li><li>laskemaan mittauksista uusia suureita laskettuina sarakkeina</li><li>laskemaan kertyvän summan ja kuvaajan alle jäävän pinta-alan lasketulla sarakkeella</li></ul></div><section class="inv-section" id="mihin-tarvitset-tata"><h2 id="h-mihin-tarvitset-tata">Mihin tarvitset tätä</h2>
+<p>Tutkimuksessa <em>Putoamiskiihtyvyyden määrittäminen heilurin avulla</em> lasket jaksonajan neliön jokaiselle pituudelle, ja tutkimuksessa <em>Hissin kulkema matka kiihtyvyydestä</em> lasket tuhansista kiihtyvyyslukemista nopeuden ja matkan. Tutkimuksessa <em>Liikemäärän säilyminen törmäyksissä</em> sama lauseke lasketaan monelle törmäykselle.</p>
+</section><section class="inv-section" id="tyovaiheet"><h2 id="h-tyovaiheet">Työvaiheet</h2>
+<ol>
+<li>
+<p><strong>Aloita uusi koe.</strong> Valitse aloitusikkunan kohdasta Uusi mittaus <strong>Manuaalinen syöttö</strong>, kun kirjoitat mittaukset itse, tai <strong>Mittaa antureilla</strong>, kun anturi mittaa (<a class="tvt-link" href="tvt-mittausohjelma.html">Anturit ja mittausohjelma</a>). Tallennetun kokeen avaat painikkeella <strong>Valitse tiedosto</strong>.</p>
+<figure class="shot"><img src="pics/tvt/ga-aloitus.png" alt="Graphical Analysisin aloitusikkuna. Kohdassa Uusi mittaus ovat vaihtoehdot Mittaa antureilla, Datan jakaminen ja Manuaalinen syöttö. Oikealla on kohdan Avaa tallennettu tiedosto painike Valitse tiedosto." width="930" height="622" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä).</figcaption></figure>
+</li>
+<li>
+<p><strong>Nimeä sarake ja anna sille yksikkö.</strong> Avaa sarakkeen nimen vieressä olevasta kolmen pisteen painikkeesta (•••) sarakkeen valikko ja valitse <strong>Sarakkeen ominaisuudet</strong>. Kirjoita kenttään Nimi suureen tunnus, esimerkiksi <code>l</code>, ja kenttään Yksiköt <code>m</code>. Valitse kohdasta <strong>Näytettävä tarkkuus</strong> desimaalien määrä tai merkitsevät numerot niin, että luvut näkyvät mittauksen tarkkuudella, ja hyväksy painikkeella <strong>Ota käyttöön</strong>. Kuvaajan akselin otsikko tulee sarakkeen nimestä ja yksiköstä.</p>
+<figure class="shot"><img src="pics/tvt/ga-sarakevalikko.png" alt="Graphical Analysisin taulukko Datasarja 1, jossa ovat sarakkeet X ja Y. Sarakkeen X nimen vieressä olevasta kolmen pisteen painikkeesta on avattu valikko, jossa ovat valinnat Sarakkeen ominaisuudet, Lisää tyhjä sarake ja Lisää laskettu sarake." width="390" height="304" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä).</figcaption></figure>
+<figure class="shot"><img src="pics/tvt/ga-sarakkeen-ominaisuudet.png" alt="Ikkuna Sarakkeen ominaisuudet. Kenttään Nimi on kirjoitettu V ja kenttään Yksiköt cm3. Alempana ovat kohdat Näytettävä tarkkuus, Datatyyppi ja Virhepalkit, jossa on valintaruutu Näytä virhepalkit, ja alimpana painikkeet Peruuta ja Ota käyttöön." width="600" height="797" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä); esimerkkiarvoja.</figcaption></figure>
+</li>
+<li>
+<p><strong>Kirjoita mittaukset.</strong> Kaksoisnapsauta solua ja kirjoita luku, yksi mittaus riville. Lisää jokaiselle uudelle mitatulle suureelle oma sarakkeensa sarakkeen valikon valinnalla <strong>Lisää tyhjä sarake</strong>.</p>
+</li>
+<li>
+<p><strong>Pidä mitatut arvot koskemattomina.</strong> Älä muuta mitattuja lukuja. Laskettu suure saa oman sarakkeensa. Jos jätät jonkin pisteen pois sovituksesta, kirjaa piste ja syy, mutta älä poista riviä.</p>
+</li>
+<li>
+<p><strong>Laske uusi sarake lausekkeella.</strong> Valitse sarakkeen valikosta <strong>Lisää laskettu sarake</strong>, anna sarakkeelle nimi ja yksikkö ja kirjoita lauseke. Lausekkeessa sarakkeen nimi on lainausmerkeissä, ja se kirjoitetaan täsmälleen sellaisena kuin taulukon otsikossa näkyy. Anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, joten katso nimi otsikosta äläkä oleta sitä. Esimerkiksi jaksonajan neliö on <code>"T"^2</code>, neliöjuuri <code>sqrt("h")</code> ja etäisyyden neliön käänteisluku <code>1/"r"^2</code>. Laskutoimitukset ovat <code>+ - * / ^</code>, ja funktion argumentit ovat suluissa. Oma lauseke on Pro-ominaisuus. Ohjelma laskee sarakkeen kaikille riveille ja laskee sen uudelleen, jos korjaat mitattua arvoa. Tarkista yksi rivi laskimella.</p>
+<p><svg data-fig="sheet" viewBox="0 0 600 372" role="img" aria-label="Kaaviokuva mittausohjelman datataulukosta keksityin esimerkkiarvoin. Ensimmäisen sarakkeen otsikko on l metreinä ja toisen T sekunteina; niissä ovat mitatut arvot. Kolmas sarake on laskettu sarake, jonka otsikko on T toiseen sekunnin neliöinä. Sen yläpuolella näkyy sarakkeen lauseke: T lainausmerkeissä potenssiin kaksi. Kolmannella rivillä laskettu arvo näkyy pyöristämättömänä, 1,6129." style="max-width:100%;font-size:24px">
+  <foreignObject x="192.5" y="25.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{laskettu sarake, lauseke:}$</div></foreignObject>
+  <rect x="340" y="64" width="180" height="38" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="354" y="68.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\texttt{"T"\textasciicircum 2}$</div></foreignObject>
+  <line x1="430" y1="102" x2="430" y2="120" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="40" y="120" width="480" height="44" fill="#e3dccb"/>
+  <rect x="340" y="164" width="180" height="120" fill="#eef5f9"/>
+  <line x1="40" y1="120" x2="40" y2="284" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="190" y1="120" x2="190" y2="284" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="340" y1="120" x2="340" y2="284" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="520" y1="120" x2="520" y2="284" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="40" y1="204" x2="520" y2="204" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="40" y1="244" x2="520" y2="244" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="40" y1="164" x2="520" y2="164" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="40" y="120" width="480" height="164" fill="none" stroke="#c9c2b2" stroke-width="2"/>
+  <foreignObject x="84" y="127.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l\ (\text{m})$</div></foreignObject>
+  <foreignObject x="234" y="127.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$T\ (\text{s})$</div></foreignObject>
+  <foreignObject x="386.5" y="127.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$T^2\ (\text{s}^2)$</div></foreignObject>
+  <foreignObject x="104" y="169.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}200$</div></foreignObject>
+  <foreignObject x="266" y="169.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}90$</div></foreignObject>
+  <foreignObject x="446" y="169.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}81$</div></foreignObject>
+  <foreignObject x="104" y="209.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}300$</div></foreignObject>
+  <foreignObject x="266" y="209.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1{,}10$</div></foreignObject>
+  <foreignObject x="446" y="209.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1{,}21$</div></foreignObject>
+  <foreignObject x="104" y="249.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0{,}400$</div></foreignObject>
+  <foreignObject x="266" y="249.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1{,}27$</div></foreignObject>
+  <foreignObject x="421" y="249.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1{,}6129$</div></foreignObject>
+  <line x1="44" y1="300" x2="336" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="44" y1="292" x2="44" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="336" y1="292" x2="336" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="111" y="307.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{mitatut arvot}$</div></foreignObject>
+  <line x1="344" y1="300" x2="516" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="344" y1="292" x2="344" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="516" y1="292" x2="516" y2="300" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="376" y="307.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{laskettu}$</div></foreignObject>
+  <foreignObject x="40" y="68.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{esimerkkiarvoja}$</div></foreignObject>
+</svg></p>
+</li>
+<li>
+<p><strong>Kirjoita vakio lukuna.</strong> Lausekkeessa ei voi käyttää muuttuvia parametreja, kuten $A$ tai $B$, joten kirjoita vakio lukuarvona. Esimerkiksi painon $G = mg$ lauseke on <code>"m"*9.81</code>, kun massa on kilogrammoina. Jos ohjelma ei hyväksy desimaalipistettä, kokeile pilkkua. Trigonometriset funktiot käyttävät radiaaneja, joten muunna asteina mitattu kulma ensin radiaaneiksi.</p>
+</li>
+<li>
+<p><strong>Laske muutos ja kertyvä summa.</strong> Lauseke <code>delta("x")</code> antaa rivin arvon ja edellisen rivin arvon erotuksen, joten ensimmäinen rivi jää tyhjäksi. Lauseke <code>sum("x")</code> laskee sarakkeen arvot yhteen ensimmäisestä rivistä nykyiseen riviin asti eli antaa kertyvän summan.</p>
+</li>
+<li>
+<p><strong>Laske pinta-ala kuvaajan alla.</strong> Lauseke <code>integral("a","t")</code> laskee $(t, a)$-kuvaajan ja aika-akselin välisen pinta-alan alusta nykyiseen riviin asti: se laskee kahden peräkkäisen rivin välisen kapean suikaleen alan ja lisää sen aiempien suikaleiden summaan. Kiihtyvyydestä saat näin nopeuden muutoksen alusta lähtien. Se on nopeus vain, kun liike alkaa levosta. Kun lasket nopeussarakkeesta <code>integral("v","t")</code>, saat siirtymän, joka on kuljettu matka vain, kun kappale liikkuu koko ajan samaan suuntaan. Kirjoita sarakkeiden nimet lausekkeeseen täsmälleen kuten taulukossa, myös anturin antamat nimet. Periaate on selitetty ohjeessa <a class="tvt-link" href="tvt-nopeus-datasta.html">Nopeuden ja matkan määrittäminen mittausdatasta</a>.</p>
+</li>
+<li>
+<p><strong>Tuo data puhelimesta.</strong> Puhelimen mittaussovellus tallentaa mittauksen usein CSV-tiedostona. Graphical Analysis Pro avaa CSV-tiedoston, tai voit kopioida sarakkeet ja liittää ne taulukkoon (Ctrl+C ja Ctrl+V, macOS:ssä Cmd). Tarkista sen jälkeen sarakkeiden nimet ja yksiköt ja se, että pisteet näkyvät kuvaajassa.</p>
+</li>
+<li>
+<p><strong>Tallenna ja vie data.</strong> Tallenna koe ohjelman omana tiedostona (.gambl), jolloin lasketut sarakkeet säilyvät. Ohjelman vientitoiminto (englanninkielisessä versiossa <strong>Export data as csv</strong>) vie taulukon CSV-tiedostoksi esimerkiksi työselostuksen liitteeksi. Kuvaajan ja suoran sovituksen ohjeet ovat <a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a> ja <a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>.</p>
+</li>
+</ol>
+</section><section class="inv-section" id="ohjelmakohtaisia-vinkkeja"><h2 id="h-ohjelmakohtaisia-vinkkeja">Ohjelmakohtaisia vinkkejä</h2>
+<ul>
+<li><strong>Pro-ominaisuudet.</strong> Omat lausekkeet, käsin säädettävä suora, sovitusparametrien epävarmuus ja video ovat vain Pro-versiossa. Jos et löydä lausekkeen kirjoituskenttää, kysy opettajalta, onko käytössäsi Pro-versio.</li>
+<li><strong>Useampi mittaussarja.</strong> Käsin syötettävässä kokeessa uuden sarjan saat datasarjan nimen (esimerkiksi Datasarja 1) vieressä olevan kolmen pisteen painikkeen valikosta (englanninkielisessä versiossa <strong>Add New Data Set</strong>), ja samasta valikosta voit nimetä sarjan uudelleen (<strong>Rename Data Set</strong>), esimerkiksi "jousi 1".</li>
+<li><strong>Väärä sarake.</strong> Sarakkeen voi poistaa (englanninkielisessä versiossa <strong>Delete Column</strong>). Poista vain itse tekemäsi laskettu sarake, älä mitattua.</li>
+</ul>
+</section><section class="inv-section" id="tavallisimmat-virheet"><h2 id="h-tavallisimmat-virheet">Tavallisimmat virheet</h2>
+<ul>
+<li><strong>Sarakkeen nimi on lausekkeessa väärin.</strong> Lauseke antaa virheilmoituksen tai tyhjän sarakkeen. Kirjoita nimi lainausmerkkeihin täsmälleen kuten sarakkeen otsikossa.</li>
+<li><strong>Liitetyt luvut eivät ole lukuja.</strong> Pisteet eivät näy kuvaajassa, tai sarake on tyhjä. Syy on yleensä desimaalierotin: CSV-tiedostossa se on usein piste.</li>
+<li><strong>Lasketulla sarakkeella ei ole yksikköä.</strong> Akselin otsikosta puuttuu yksikkö. Anna yksikkö sarakkeen valikon kohdassa <strong>Sarakkeen ominaisuudet</strong>.</li>
+<li><strong>Kulma on lausekkeessa asteina.</strong> Sinin tai kosinin arvot ovat järjettömiä. Muunna kulma radiaaneiksi.</li>
+<li><strong>Mitatut arvot on korvattu lasketuilla.</strong> Laskua ei voi enää tarkistaa. Pidä mitatut arvot omissa sarakkeissaan.</li>
+</ul>
+</section><section class="inv-section" id="tarkista-ennen-kuin-jatkat"><h2 id="h-tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</h2>
+<ul>
+<li>Jokaisella sarakkeella on nimi ja yksikkö.</li>
+<li>Mitatut arvot ovat muuttamattomina omissa sarakkeissaan.</li>
+<li>Laskettu sarake on tarkistettu yhdeltä riviltä laskimella.</li>
+<li>Koe on tallennettu, ja data on viety CSV-tiedostoksi, jos sitä tarvitaan muualla.</li>
+</ul></section><p class="tvt-used"><strong>Tarvitset tätä tutkimuksissa:</strong> <a href="fy10-aanennopeus.html">Äänen nopeus kulkuajasta</a>, <a href="fy10-heiluri.html">Putoamiskiihtyvyyden määrittäminen heilurin avulla</a>, <a href="fy10-hissi.html">Hissin kulkema matka kiihtyvyydestä</a>, <a href="fy10-hitausmomentti.html">Umpinaisen sylinterin hitausmomentti</a>, <a href="fy10-hiuksen-paksuus.html">Hiuksen paksuuden määrittäminen</a>, <a href="fy10-hyppy.html">Hypyn tutkiminen voimalevyllä</a>, <a href="fy10-induktio.html">Sähkömagneettisen induktion tutkiminen</a>, <a href="fy10-jaahtyminen.html">Kuuman veden jäähtyminen</a>, <a href="fy10-jousivakio.html">Jousivakion määrittäminen</a>, <a href="fy10-kaasu.html">Kaasun tilanyhtälön kokeellinen tutkiminen</a>, <a href="fy10-kondensaattori.html">Kondensaattorin kapasitanssin määrittäminen</a>, <a href="fy10-lammonjohtuminen.html">Lämmön johtuminen lämpökameralla</a>, <a href="fy10-leikkiauto.html">Leikkiauton nopeus ja lähtökorkeus</a>, <a href="fy10-liikemaara.html">Liikemäärän säilyminen törmäyksissä</a>, <a href="fy10-liukukitka.html">Liukukitkakertoimen määrittäminen</a>, <a href="fy10-mikroaaltouuni.html">Valonnopeuden määrittäminen mikroaaltouunilla</a>, <a href="fy10-muotokerroin.html">Pallon muotokertoimen määrittäminen</a>, <a href="fy10-muuntaja.html">Muuntajan tutkiminen</a>, <a href="fy10-paristo.html">Pariston kuormituskäyrä</a>, <a href="fy10-planck.html">Planckin vakio LEDien avulla</a>, <a href="fy10-pomppukorkeus.html">Pudotus- ja pomppukorkeus</a>, <a href="fy10-resonanssi.html">Äänen resonanssi putkessa</a>, <a href="fy10-taitekerroin.html">Taitekertoimen määrittäminen</a>, <a href="fy10-tuulivoimala.html">Tuulivoimalan tutkiminen</a>, <a href="fy10-uppokuumennin.html">Uppokuumentimen hyötysuhteen määrittäminen</a>, <a href="fy10-valaistus.html">Valaistusvoimakkuuden riippuvuus etäisyydestä</a>, <a href="fy10-vesivoima.html">Vesivoimalaitoksen pienoismallin hyötysuhde</a></p></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
+</body></html>

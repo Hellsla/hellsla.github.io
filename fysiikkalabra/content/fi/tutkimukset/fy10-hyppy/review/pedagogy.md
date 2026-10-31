@@ -1,31 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: c314986c056265df
+CONTENT-HASH: 9528e36baf6540d8
 
 ## Blocking
+
 None.
 
-## Previous blocking finding, now fixed
-1. **The hero no longer gives away the Ennusta answers.** The laptop now shows empty axes, and the aria-label says only "tyhjä koordinaatisto, johon mittaus piirtyy". Ennusta Q1 and Q3 are open again. The hands are on the hips, as in O.
-
-## Privacy of body mass (judged as asked)
-The handling is now good and consistent:
-- Mass is no longer a required result in *Selvitettävä*.
-- The page explains that $v_0 = g\cdot I/G$, so forces and the impulse can be reported as multiples of the weight.
-- The O tables hold only $I/G$, $t_\text{lento}$, $v_0$ and $h$, and say that G is not entered in the table.
-- Raportoi says that the weight and mass need not be given.
-- The safety box and the task section both say "Kukaan ei ole velvollinen hyppäämään".
-- Ennusta speaks of "hyppääjä", not "you".
-
-This is also good physics: the student sees why mass drops out. Leaving "paino ja massa" out of *Selvitettävä* departs from the card but is justified, and teacher.md explains it.
-
 ## Polish
-- **The O table heading** says the first table holds "kuvaajasta luetut" quantities, but $I/G$ is computed from the graph rather than read from it. Use "kuvaajasta määritetyt".
-- **The second sentence of teacher.md's Turvallisuus** still says the mass may be shared "omalle ryhmälle". Add that it is left out of the report.
 
-## Checked
-- **Independence of the methods.** The new O/OO question asks what each method needs that the other does not, and it is a good one. The intro now says "eri oletuksiin perustuva" and no longer overclaims.
-- **Rejection criteria.** They are now an example in tuki O. The all-mode text only asks the student to record rejected jumps and the reasons, which fits *Päätät itse*.
-- **Mode I** sees only the principles; the model, the formulas and the phase figure are in O/OO. The modes match teacher.md.
-- **The three learn goals** are practised in Käsittele Q1–3 and in Epävarmuus.
-- **Nothing is invented.** There is no invented data, no software menus and no equipment values.
-- **The Finnish is clear** and at lukio level.
+- The body link label "Nopeus ja matka mittausdatasta" sits in a sentence about the impulse area; a student may not see why. A short purpose, e.g. "(pinta-ala summana)", or relying on Taulukkolaskenta alone, would be clearer.
+- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
+
+## Checked (delta 2026-10-31)
+
+- "Pinta-ala lasketaan mittauspisteistä summana" no longer implies the software must do it; consistent with the hint box
+- Three body links, each tied to a named tool in the same sentence
+- Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- The *Nopeus ja matka* link is gone from the impulse-area sentence; two links that fit it remain. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- Hint now states what GA Pro does instead of hedging; equipment names GA Pro; guides list adds tvt-taulukkolaskenta, matching the body link.

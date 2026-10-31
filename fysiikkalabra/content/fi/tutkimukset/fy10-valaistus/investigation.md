@@ -275,7 +275,7 @@ Vastaa:
 Kumpikin tapa on hyvä, kun perustelet sen. Suoran kuvaajasta poikkeamat näkyvät helposti silmällä, potenssisovitus taas antaa eksponentin suoraan verrattavaksi teoriaan.
 :::
 
-Kuvaajan piirtämiseen ja sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan piirtämiseen ja sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -300,7 +300,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Millainen matemaattinen mall
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** periaate, josta malli päätellään, malli hypoteesina ja ehdot, joilla se pätee.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, mistä kohdista etäisyys mitattiin, miten taustavalo huomioitiin ja miten asento pidettiin samana.

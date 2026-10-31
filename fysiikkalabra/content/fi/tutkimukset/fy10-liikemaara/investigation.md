@@ -236,7 +236,7 @@ Arvioi, kuinka tarkasti vaaka antaa massan ja kuinka tarkasti luet nopeuden kuva
 
 ## Käsittele tulokset
 
-Laske jokaisesta törmäyksestä kummankin vaunun liikemäärä sekä kokonaisliikemäärä ennen törmäystä ja sen jälkeen. Esitä vertailu niin, että siitä näkee yhdellä silmäyksellä, säilyykö kokonaisliikemäärä kummassakin törmäystyypissä. Laskuissa voit käyttää esimerkiksi taulukkolaskentaa.
+Laske jokaisesta törmäyksestä kummankin vaunun liikemäärä sekä kokonaisliikemäärä ennen törmäystä ja sen jälkeen. Esitä vertailu niin, että siitä näkee yhdellä silmäyksellä, säilyykö kokonaisliikemäärä kummassakin törmäystyypissä. Tee laskut laskettuina sarakkeina Graphical Analysis Pro -ohjelmassa.
 
 ::: tuki O
 Lisää taulukkoon sarakkeet $p_\text{kok} = m_1 v_1 + m_2 v_2$, $p_\text{kok}' = m_1 v_1' + m_2 v_2'$ ja niiden erotus $p_\text{kok}' - p_\text{kok}$. Piirrä lisäksi kuvaaja, jonka pystyakselilla on kokonaisliikemäärä törmäyksen jälkeen ja vaaka-akselilla kokonaisliikemäärä ennen törmäystä. Merkitse kimmoiset ja täysin kimmottomat törmäykset eri merkeillä.
@@ -290,7 +290,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Säilyikö kokonaisliikemä�
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** millä ehdolla kokonaisliikemäärä säilyy, ja miten kimmoisa ja täysin kimmoton törmäys eroavat toisistaan.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, jossa näkyvät anturit, vaunut ja valittu positiivinen suunta, sekä se, miten anturien lukemat muutettiin tämän suunnan mukaisiksi ja miten radan vaakasuoruus tarkistettiin.

@@ -241,7 +241,7 @@ Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä
 
 Mieti ainakin näitä:
 
-- Miten mittaat massan $\Delta m$? Punnitsetko keräysastian ennen ja jälkeen vai mittaatko veden tilavuuden ja käytät veden tiheyttä?
+- Miten mittaat massan $\Delta m$? Punnitsetko keräysastian ennen ja jälkeen vai mittaatko veden tilavuuden ja käytät veden tiheyttä? Jos osa turbiinin läpi kulkeneesta vedestä roiskuu keräysastian ohi, $\Delta m$ jää liian pieneksi ja hyötysuhde liian suureksi.
 - Kuinka pitkä keräysaika $\Delta t$ tarvitaan, jotta ajanoton aloitus ja lopetus eivät vaikuta paljon tulokseen?
 - Pysyykö ylemmän astian vedenpinta paikallaan, vai pitääkö sitä täyttää mittauksen aikana tai seurata pinnan laskua?
 - Heilahtelevatko jännite ja virta? Miten luet niistä edustavan arvon samalta ajalta kuin veden keräys?
@@ -295,7 +295,7 @@ Vastaa:
 </svg>
 :::
 
-Laskut ja kuvaajat voit tehdä esimerkiksi taulukkolaskennalla tai Graphical Analysis -ohjelmalla. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Tee laskut ja kuvaajat Graphical Analysis Pro -ohjelmalla. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -327,7 +327,7 @@ Halutessasi arvioi yhden häviön suuruus, esimerkiksi turbiinista lähtevän ve
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mitä energiaa järjestelmään syötetään, mitä siitä saadaan hyödyksi ja miten tehot lasketaan mitatuista suureista.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, järjestelmän rajaus, mistä mihin putouskorkeus mitattiin, miten virtapiiri kytkettiin ja miten työturvallisuus huomioitiin.

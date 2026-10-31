@@ -371,7 +371,7 @@ Tarkista vastauksesi tästä.
 **Miksi juuri nämä akselit?** Kun pystyakselilla on $U_2/U_1$ ja vaaka-akselilla $N_2/N_1$, ideaalisen muuntajan malli on suora $y = x$. Silloin mallin testaaminen on yksinkertaista: kulmakertoimen pitäisi olla $1$ ja suoran kulkea origon kautta. Jos piirtäisit pelkän toisiojännitteen $U_2$ kierroslukujen suhteen funktiona, kulmakerroin olisi ensiöjännite, ja vaihteleva ensiöjännite hajottaisi pisteitä.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -421,7 +421,7 @@ Tarkista vastauksesi tästä, kun olet kirjoittanut ne.
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** ideaalisen muuntajan malli ja sen ehdot, miksi kuvaajan akselit valittiin niin kuin valittiin, sekä miten hyötysuhde lasketaan.
 - **Koejärjestely ja menetelmä:** kytkentäkaavio, jossa näkyy, miten mittarit on kytketty kumpaankin piiriin, sekä työturvallisuus.

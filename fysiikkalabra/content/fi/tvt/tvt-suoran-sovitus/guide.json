@@ -1,0 +1,11 @@
+{
+  "id": "tvt-suoran-sovitus",
+  "title": "Suoran sovittaminen mittauspisteisiin",
+  "description": "Näin sovitat mittauspisteisiin suoran, tarkistat, sopiiko malli mittauksiin, ja muutat kaarevan riippuvuuden suoraksi.",
+  "learn": [
+    "sovittamaan mittauspisteisiin suoran ja arvioimaan, sopiiko malli mittauksiin",
+    "muuttamaan kaarevan riippuvuuden suoraksi laskemalla mittauksista uuden suureen"
+  ],
+  "kind": "taito",
+  "order": 2
+}

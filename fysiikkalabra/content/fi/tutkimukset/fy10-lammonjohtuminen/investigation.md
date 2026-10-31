@@ -207,6 +207,8 @@ Mieti ainakin näitä:
 - Veden lämpötila laskee mittauksen aikana. Miksi se ei haittaa vertailua, kun kaikki kappaleet ovat samassa astiassa, ja miten voit pienentää laskua?
 - Kuinka kauan mittaus kestää, ja kuinka usein otat kuvan? Kokeile ennen varsinaista mittausta, kuinka nopeasti lämpö etenee nopeimmassa kappaleessa.
 - Miksi lämpökameraa ei kannata pitää kädessä eikä kuvaajan pidä seistä kappaleiden takana?
+- Näkyykö kappale kuvassa niin leveänä, että lukemasi kohta on kokonaan kappaleen päällä? Mitä lukemalle tapahtuu, jos kappale on kuvassa vain muutaman kuvapisteen levyinen?
+- Kannen yläpuolinen lämmin ilma voi lämmittää kappaleita myös ulkopuolelta. Miten erotat sen johtumisesta, esimerkiksi huonosti johtavan kappaleen lukemista?
 :::
 
 ## Mittaa
@@ -244,7 +246,7 @@ Vastaa sitten:
 2. Mitkä materiaalit erottuvat toisistaan selvästi ja mitkä eivät?
 3. Näkyykö lämpökamerakuvassa kohtia, joiden lukemaan et luota? Mistä ne voisivat johtua?
 
-Kuvaajan piirtämiseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman ja lämpökameran käyttöön on tekeillä.
+Kuvaajan piirtämiseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]. Lämpökameran käytössä noudata laitteen omaa käyttöohjetta.
 
 ## Epävarmuus ja luotettavuus
 
@@ -267,10 +269,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella: mikä materiaali johtaa läm
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mihin mitattavaan suureeseen materiaalien vertailu perustuu ja miksi.
-- **Työn suunnitelma:** mitä pidit vakiona ja miten varmistit, että lämpökamera mittasi kaikkia kappaleita yhtä luotettavasti.
+- **Koejärjestely ja menetelmä:** mitä pidit vakiona ja miten varmistit, että lämpökamera mittasi kaikkia kappaleita yhtä luotettavasti.
 - **Mittaustulokset:** taulukko tai tallennetut kuvat, joista lukemat on luettu, ja tieto siitä, milloin kukin kuva on otettu.
 - **Tulos:** materiaalien järjestys ja kuvaaja, josta se näkyy.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, erityisesti pinnan vaikutus lämpökameran lukemaan, ja niiden vaikutuksen suunta.

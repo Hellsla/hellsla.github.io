@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Videoanalyysi — Ruukkilabra</title>
+<meta name="description" content="Näin kuvaat liikkeen videolle ja määrität siitä kappaleen paikan ajan funktiona analyysiohjelmalla tai kuvia laskemalla.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/tvt-videoanalyysi.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Videoanalyysi">
+<meta property="og:description" content="Näin kuvaat liikkeen videolle ja määrität siitä kappaleen paikan ajan funktiona analyysiohjelmalla tai kuvia laskemalla.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/tvt-videoanalyysi.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Videoanalyysi</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Videoanalyysi</p><a href="#mihin-tarvitset-tata">Mihin tarvitset tätä</a><a href="#tyovaiheet">Työvaiheet</a><a href="#ohjelmakohtaisia-vinkkeja">Ohjelmakohtaisia vinkkejä</a><a href="#tavallisimmat-virheet">Tavallisimmat virheet</a><a href="#tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation guide"><p>Videoanalyysissa liike kuvataan videolle, ja kappaleen paikka määritetään kuva kuvalta. Näin saat paikan ajan funktiona myös liikkeestä, joka on liian nopea seurattavaksi silmällä.</p>
+<p class="notice tvt-kind" role="note">Työvälineen käyttö: tarkista yksityiskohdat oman ohjelmasi tai laitteesi ohjeesta.</p><div class="inv-learn"><h2 id="h-tavoitteet">Tässä ohjeessa opit</h2><ul><li>kuvaamaan liikkeen videolle niin, että siitä voi mitata paikkoja ja aikoja</li><li>määrittämään videolta kappaleen paikan ajan funktiona analyysiohjelmalla tai kuvia laskemalla</li></ul></div><section class="inv-section" id="mihin-tarvitset-tata"><h2 id="h-mihin-tarvitset-tata">Mihin tarvitset tätä</h2>
+<p>Tutkimuksessa <em>Pallon muotokertoimen määrittäminen</em> pallon rajanopeus määritetään videolta, ja tutkimuksessa <em>Pudotus- ja pomppukorkeus</em> pompun lakikorkeus on helpompi lukea videolta kuin silmällä. Tutkimuksessa <em>Leikkiauton nopeus ja lähtökorkeus</em> video voi korvata valoportin.</p>
+</section><section class="inv-section" id="tyovaiheet"><h2 id="h-tyovaiheet">Työvaiheet</h2>
+<h3>Kuvaaminen</h3>
+<ol>
+<li>
+<p><strong>Kiinnitä kamera jalustaan.</strong> Kameran on pysyttävä paikallaan koko videon ajan, koska paikat mitataan kuvan koordinaatistossa. Käsivaralta kuvatussa videossa myös tausta liikkuu.</p>
+</li>
+<li>
+<p><strong>Aseta kamera kohtisuoraan liiketasoa vastaan.</strong> Kappaleen on liikuttava yhdessä tasossa, ja kameran on katsottava tasoa kohtisuoraan eikä vinosti. Vinosta suunnasta kuvattuna yhtä pitkät matkat näyttävät eri pitkiltä.</p>
+</li>
+<li>
+<p><strong>Kuvaa riittävän kaukaa.</strong> Kun kamera on kaukana, kappaleen etäisyys kamerasta muuttuu liikkeen aikana suhteessa vähän, joten perspektiivi vääristää kuvaa vähemmän. Pidä liike kuvan keskiosassa, koska objektiivi voi vääristää kuvan reunoja.</p>
+</li>
+<li>
+<p><strong>Aseta mitta-asteikko liiketasoon.</strong> Aseta tunnetun pituinen mitta, esimerkiksi metrin mittakeppi, kappaleen radan viereen samalle etäisyydelle kamerasta kuin kappale. Lähempänä kameraa oleva mitta näyttää videolla suuremmalta, jolloin kaikki mitatut matkat tulevat liian lyhyiksi.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 360" role="img" aria-label="Kaaviokuva ylhäältä katsottuna, ei mittakaavassa. Ylhäällä on liiketaso, jossa kappale liikkuu; kappaleen peräkkäiset paikat on piirretty tason viivalle. Samassa tasossa kappaleen radan vieressä on mitta-asteikko. Alhaalla keskellä on kamera jalustalla, ja siitä kulkee katkoviiva kohtisuoraan liiketasoa kohti; viivan ja tason välissä on suoran kulman merkki. Tason ja kameran välissä on katkoviivalla piirretty toinen mitta, joka on väärässä paikassa, koska se on lähempänä kameraa kuin kappale." style="max-width:100%;font-size:24px">
+  <line x1="50" y1="80" x2="550" y2="80" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <foreignObject x="50" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{liiketaso}$</div></foreignObject>
+  <circle cx="130" cy="80" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="200" cy="80" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="270" cy="80" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="340" cy="80" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="400" y="72" width="130" height="16" rx="2" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="404" y1="72" x2="404" y2="82" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="413" y1="72" x2="413" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="422" y1="72" x2="422" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="431" y1="72" x2="431" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="440" y1="72" x2="440" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="449" y1="72" x2="449" y2="82" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="458" y1="72" x2="458" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="467" y1="72" x2="467" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="476" y1="72" x2="476" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="485" y1="72" x2="485" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="494" y1="72" x2="494" y2="82" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="503" y1="72" x2="503" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="512" y1="72" x2="512" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="521" y1="72" x2="521" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="373.5" y="99.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mitta-asteikko}$</div></foreignObject>
+  <rect x="400" y="196" width="130" height="16" rx="2" fill="none" stroke="#6b7480" stroke-width="2" stroke-dasharray="7 5"/>
+  <foreignObject x="392.5" y="221.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{väärä paikka}$</div></foreignObject>
+  <line x1="300" y1="284" x2="300" y2="82" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <path d="M300,94 L314,94 L314,80" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="130" y="165.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kohtisuoraan}$</div></foreignObject>
+  <line x1="300" y1="302" x2="266" y2="336" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="300" y1="302" x2="334" y2="336" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="300" y1="302" x2="300" y2="272" stroke="#6c757d" stroke-width="3" stroke-linecap="round"/>
+  <rect x="262" y="290" width="76" height="24" rx="5" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="300" cy="290" r="8" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="350" y="287.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kamera jalustalla}$</div></foreignObject>
+  <foreignObject x="40" y="315.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{näkymä ylhäältä}$</div></foreignObject>
+</svg></p>
+</li>
+<li>
+<p><strong>Huolehdi valosta ja kuvataajuudesta.</strong> Hyvässä valossa kuva on terävä, eikä nopea kappale näy sumeana viiruna. Nopeaan liikkeeseen sopii hidastettu video eli suuri kuvataajuus, esimerkiksi $120$ tai $240$ kuvaa sekunnissa.</p>
+</li>
+<li>
+<p><strong>Selvitä todellinen kuvataajuus.</strong> Kirjaa, millä kuvataajuudella video tallennettiin. Hidastettu video voi olla tallennettu niin, että se toistuu tavallisella nopeudella. Jos analyysiohjelma ei tunnista todellista kuvataajuutta, sen aika-akseli on väärä, ja kuvataajuus on asetettava ohjelmaan käsin.</p>
+</li>
+</ol>
+<h3>Analysointi</h3>
+<ol>
+<li>
+<p><strong>Avaa video koulun videoanalyysiohjelmassa.</strong> Tarkista ensin, että ohjelma käyttää videon todellista kuvataajuutta.</p>
+</li>
+<li>
+<p><strong>Aseta mittakaava ja koordinaatisto.</strong> Merkitse mittakaavaksi mitta-asteikon päät ja kirjoita asteikon todellinen pituus. Aseta koordinaatiston origo ja akselien suunnat, esimerkiksi $y$-akseli ylöspäin.</p>
+</li>
+<li>
+<p><strong>Merkitse kohteen paikka kuva kuvalta.</strong> Merkitse kohteen paikka kuva kuvalta koulun videoanalyysiohjelmalla (opettaja kertoo, kumpaa käytetään: Graphical Analysis Pro vai Vernier Video Analysis). Napsauta jokaisessa kuvassa kappaleen samaa kohtaa, esimerkiksi pallon keskipistettä. Ohjelma kirjaa jokaisesta kuvasta ajan $t$ ja paikan koordinaatit $x$ ja $y$.</p>
+</li>
+<li>
+<p><strong>Analysoi data Graphical Analysis Prossa.</strong> Jos merkitsit paikat toisessa ohjelmassa, siirrä sarakkeet $t$, $x$ ja $y$ Graphical Analysis Prohon esimerkiksi CSV-tiedostona. Piirrä paikka ajan funktiona (<a class="tvt-link" href="tvt-kuvaaja.html">Mittauspisteiden kuvaaja</a>), sovita malli (<a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen mittauspisteisiin</a>) ja laske nopeus ohjeen <a class="tvt-link" href="tvt-nopeus-datasta.html">Nopeuden ja matkan määrittäminen mittausdatasta</a> mukaan.</p>
+</li>
+</ol>
+<h3>Ilman analyysiohjelmaa</h3>
+<p>Monella puhelimen tai tietokoneen videosovelluksella voi edetä videossa kuva kerrallaan. Laske, monenko kuvan päästä tapahtuma on edellisestä tapahtumasta, esimerkiksi pallon pudotushetkestä osumaan lattiaan. Aika on</p>
+<p>$$t = \frac{N}{f}$$</p>
+<p>missä $N$ on kuvien lukumäärä ja $f$ videon todellinen kuvataajuus. Esimerkiksi $36$ kuvaa videolla, jonka kuvataajuus on $240$ kuvaa sekunnissa, vastaa aikaa $t = 36 : 240\,\tfrac{1}{\text{s}} = 0{,}15\,\text{s}$. Ajan epävarmuus on vähintään yhden kuvan aika $\tfrac{1}{f}$. Paikan voit lukea kuvasta liiketasoon asetetun mitta-asteikon avulla.</p>
+</section><section class="inv-section" id="ohjelmakohtaisia-vinkkeja"><h2 id="h-ohjelmakohtaisia-vinkkeja">Ohjelmakohtaisia vinkkejä</h2>
+<ul>
+<li><strong>Video ja anturimittaus yhdessä.</strong> Graphical Analysis Prossa videon voi liittää datatiedostoon ja tahdistaa aikapohjaisen anturimittauksen kanssa (Pro). Toistossa näet, mitä kuvaajan kukin kohta tarkoittaa liikkeessä.</li>
+<li><strong>Kuvataajuus.</strong> Jos analyysiohjelman aika-akseli ei vastaa todellista kuvataajuutta, aseta kuvataajuus ohjelmaan käsin tai kysy opettajalta, miten se tehdään.</li>
+</ul>
+</section><section class="inv-section" id="tavallisimmat-virheet"><h2 id="h-tavallisimmat-virheet">Tavallisimmat virheet</h2>
+<ul>
+<li><strong>Kamera liikkui.</strong> Kuvaajan paikat hyppivät tai liike näyttää vinolta. Kuvaa jalustalta.</li>
+<li><strong>Mitta-asteikko ei ollut liiketasossa.</strong> Kaikki matkat ja nopeudet ovat samassa suhteessa liian suuria tai pieniä, mutta pisteet ovat silti siististi suoralla, joten sovitus ei paljasta virhettä. Aseta mitta kappaleen kohdalle.</li>
+<li><strong>Ohjelma käytti väärää kuvataajuutta.</strong> Ajat ovat moninkertaisia ja nopeudet aivan vääriä. Huomaat virheen esimerkiksi siitä, että vapaasti putoavan kappaleen kiihtyvyys poikkeaa paljon arvosta $9{,}81\,\text{m/s}^2$. Aseta todellinen kuvataajuus.</li>
+<li><strong>Merkitsit kappaleen eri kohtaa eri kuvissa.</strong> Paikka heiluu satunnaisesti, ja nopeus hyppii. Valitse yksi selvästi näkyvä kohta ja suurenna kuvaa tarvittaessa.</li>
+<li><strong>Kappale näkyy sumeana.</strong> Lisää valoa tai kasvata kuvataajuutta.</li>
+</ul>
+</section><section class="inv-section" id="tarkista-ennen-kuin-jatkat"><h2 id="h-tarkista-ennen-kuin-jatkat">Tarkista ennen kuin jatkat</h2>
+<ul>
+<li>Kamera oli jalustalla ja kohtisuorassa liiketasoa vastaan.</li>
+<li>Mitta-asteikko oli liiketasossa, ja sen pituus on kirjattu.</li>
+<li>Tiedät videon todellisen kuvataajuuden.</li>
+<li>Paikka on merkitty joka kuvassa kappaleen samasta kohdasta.</li>
+</ul></section><p class="tvt-used"><strong>Tarvitset tätä tutkimuksissa:</strong> <a href="fy10-hyppy.html">Hypyn tutkiminen voimalevyllä</a>, <a href="fy10-leikkiauto.html">Leikkiauton nopeus ja lähtökorkeus</a>, <a href="fy10-muotokerroin.html">Pallon muotokertoimen määrittäminen</a>, <a href="fy10-pomppukorkeus.html">Pudotus- ja pomppukorkeus</a></p></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script>
+</body></html>

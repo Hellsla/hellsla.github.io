@@ -12,6 +12,7 @@
     "FY5",
     "FY7"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 9–10 (Hiuksen paksuuden määrittäminen), opettajan aineisto",
   "learn": [
     "määrittämään hyvin pienen pituuden epäsuorasti mittaamalla paljon suurempia pituuksia",
@@ -73,8 +74,8 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Sovitus antaa kulmakertoimen ja sen epävarmuuden."
     }
   ],

@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 16–17 (Hypyn tutkiminen voimalevyllä), opettajan aineisto",
   "learn": [
     "tunnistamaan mittausdatasta liikkeen vaiheet ja perustelemaan ne Newtonin lakien avulla",
@@ -82,21 +83,21 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Voimalevyn mittausohjelmisto: mittauksen tallentaminen ja kuvaajan alle jäävän pinta-alan määrittäminen (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Voimalevyn mittausohjelmisto: mittauksen tallentaminen ja kuvaajan alle jäävän pinta-alan määrittäminen (Graphical Analysis Pro)",
+      "guides": ["tvt-mittausohjelma", "tvt-kuvaaja", "tvt-nopeus-datasta", "tvt-taulukkolaskenta"],
       "why": "Impulssi saadaan voima–aika-kuvaajan pinta-alasta, jota ei voi laskea käsin tuhansista mittauspisteistä."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-videoanalyysi"],
       "why": "Video on yksi mahdollinen vertailumenetelmä hyppykorkeudelle."
     }
   ],
   "equipment": [
     "voimalevy",
-    "tietokone tai tabletti ja mittausohjelmisto",
+    "tietokone tai tabletti, jossa on Graphical Analysis Pro",
     "tasainen, liukumaton lattia ja vapaa tila levyn ympärillä",
     "tarvittaessa puhelin videon kuvaamiseen, jalusta ja mitta-asteikko vertailumittausta varten"
   ],

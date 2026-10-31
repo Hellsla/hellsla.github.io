@@ -1,0 +1,12 @@
+{
+  "id": "tvt-epavarmuus",
+  "title": "Kulmakertoimen epävarmuus",
+  "description": "Näin arvioit sovitetun suoran kulmakertoimen epävarmuuden ja ilmoitat siitä lasketun tuloksen epävarmuuksineen.",
+  "learn": [
+    "arvioimaan kulmakertoimen epävarmuuden jyrkimmän ja loivimman suoran tai sovitusohjelman avulla",
+    "laskemaan kulmakertoimen epävarmuudesta lopputuloksen epävarmuuden",
+    "ilmoittamaan tuloksen epävarmuuksineen oikein pyöristettynä"
+  ],
+  "kind": "taito",
+  "order": 4
+}

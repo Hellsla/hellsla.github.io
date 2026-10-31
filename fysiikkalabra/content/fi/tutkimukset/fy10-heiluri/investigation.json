@@ -11,6 +11,7 @@
     "FY1",
     "FY5"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 1 (Putoamiskiihtyvyyden määrittäminen heilurin avulla), opettajan aineisto",
   "learn": [
     "valitsemaan tutkittavan muuttujan ja perustelemaan, mitkä suureet pidetään vakioina",
@@ -85,8 +86,8 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja, laskettu sarake ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Jaksonajan neliö lasketaan ohjelmassa, ja kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     }
   ],

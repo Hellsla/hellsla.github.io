@@ -1,40 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: 171ddef650c8a971
+CONTENT-HASH: fb38b448634abc0e
 
 ## Blocking
+
 None.
 
-## Previous blocking findings, now fixed
-1. **Mode I's method decision is now left to the student.**
-   - The hero is a neutral corridor scene: a student strikes boards, a wavefront spreads along the corridor, and a tape measure and thermometer are shown. It has no microphones, cables or logger. I checked the 1280 px render and the aria-label.
-   - The equipment item now reads "äänianturi(t) tai mikrofoni(t) ja tiedonkeruulaite tai puhelimen sovellus".
-   - Outside the OO tuki blocks, microphones appear only in Käsittele Q3, as a generic distance-error example, and in the echo extension. Neither prescribes a main method.
-   - "Päätät itse: mittausmenetelmän" is now true in mode I.
-2. **The prerequisite reasons no longer answer Ennusta.**
-   - The tvt reason is now "jos mittaat ajat tallennetusta äänisignaalista", so the stopwatch conclusion is gone.
-   - The fy3-3 reason is now "kun vertaat tulostasi kirjallisuusarvoon", so the temperature dependence is not stated.
-   - The fy1-5 reason is neutral.
-   - Ennusta 1 and Ennusta 3 are open again.
+## Polish
 
-## Polish applied
-- The extension says "toisella menetelmällä" and adds "Jos käytit kaikua jo päämittauksessa, valitse jokin muu menetelmä."
-- An all-mode sentence warns that the direct pulse and the echo must not overlap.
-- teacher.md has the late-onset reading mistake.
+- The body names suoran sovitus, kulmakerroin and taulukkolaskenta (three links, matching the analysis step); tvt-epavarmuus is in the prerequisite but not linked where Δ of the slope is asked. Consider linking it in *Epävarmuus ja luotettavuus*.
+- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
 
-## Polish (optional)
-- Käsittele Q3's example, "mikrofonin väärästä kohdasta", fits most methods. "anturin väärästä kohdasta" would be even more neutral. This is not required.
+## Checked (delta 2026-10-31)
 
-## Checked
-- **Order.** Ennusta comes before Teoriaa lyhyesti, and the theory names no method.
-- **Mode I.**
-  - It states what must be found and gives the planning list.
-  - The method, reading point, table, axes, Δv methods and literature formula are all in OO tuki.
-  - The extension is required through the `tuki I` note.
-- **OO "Päätät itse"** is true. The page suggests the method, reading point, axes and Δv, and the student chooses the source, distances and repeats and justifies the method in the planning questions.
-- **Goals.**
-  - Goal 1: Suunnittele, plus the OO justifications (start time, alignment, sampling interval).
-  - Goal 2: Käsittele Q1 and Q3.
-  - Goal 3: Johtopäätökset and the reliability prompts.
-- **Echo extension.** It is sound and feasible with one microphone in a corridor or gym. It leaves the 2L path to the student, and the overlap condition is now visible in all modes. The workload is reasonable.
-- **Card (ex-14).** All its requirements are present.
-- **Finnish** is clear and at lukio level.
+- topic `aallot` fits the bank filter
+- TVT prerequisites: mittausohjelma for the recorded signal, fitting guides for the slope; both match the stated need
+- Raportoi section names now match the template (Koejärjestely ja menetelmä, Tulos)
+
+## Delta 2 (2026-10-31)
+
+- Prerequisite guides now suoran sovitus, kulmakerroin, epävarmuus, taulukkolaskenta (kuvaaja dropped), matching the body links. Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): no body link to *Kulmakertoimen epävarmuus* where Δ of the slope is asked.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.

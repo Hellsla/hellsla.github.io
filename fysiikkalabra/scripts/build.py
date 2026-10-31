@@ -28,13 +28,12 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, courses, fbdspec, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
+import answers_shown, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
 HOME = "../../index.html"                      # the portfolio front page, two levels above site/ (set per language)
 BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
-FEATURED = "fy1-1"                             # the front page's sample lesson (teacher 2026-10-29), where its language has published it
 URL = BASE_URL                                 # where the language being built is published: site/, site/<lang>/
 UP = ""                                        # from a page to site/: "" for Finnish, "../" for site/<lang>/
 COURSES = {}                                   # content/<lang>/courses.json of the language being built
@@ -49,7 +48,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js"): shutil.copy(TPL / f, SITE / f)
 shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
@@ -308,7 +307,8 @@ def link_languages():
                         if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
                         else:                    # a local course (or its investigation) this language lacks: the course's front page note
                             home = (OUTS[other] / "index.html").read_text()
-                            ids = [i for i in (name[:-5], module[:-5]) if f'id="unavailable-{i}"' in home]
+                            guide = (tuple(local_courses.load()) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note
+                            ids = [i for i in (name[:-5], module[:-5]) + guide if f'id="unavailable-{i}"' in home]
                             target = "index.html" + (f"#unavailable-{ids[0]}" if ids else "")
                             key = "site.lang_unavailable_home"
                         note = f'<span class="lang-note" id="lang-note-{other}">{esc(here(key))}</span>'
@@ -557,6 +557,36 @@ def build_language(lang):
     chapters = {l["id"]: (code, l["title"]) for code, mod in modules for l in mod.get("lessons", [])}
     # Kokeelliset tutkimukset (teacher 2026-10-30, scripts/investigations.py): one canonical page each, published like
     # a lesson when both reviews pass; the pages of the courses it names list it.
+    # TVT-ohjeet (teacher 2026-10-31, scripts/guides.py): one page per skill, published like an investigation and
+    # linked from every investigation that needs it; each guide names the published investigations that use it.
+    guide_built = {}
+    guide_ok = {g for g in guides.ids(lang) if guides.status(g, lang)["state"] == "reviewed" or (only == g) or build_all}
+    for gid in guides.ids(lang):
+        if only and only != gid and gid not in guide_ok: continue
+        if gid not in guide_ok:
+            if (LIVE / out.relative_to(SITE) / f"{gid}.html").is_file():
+                print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {gid}.html is on the live site but its reviews are not current; this build removes it")
+            continue
+        guide_built[gid] = guides.load(gid, lang)
+    inv_ok = [i for i in investigations.ids(lang) if investigations.status(i, lang)["state"] == "reviewed" or build_all]
+    published = {f"{i}.html" for i in built_ids} | {f"{g}.html" for g in guide_built}
+    for gid, d in guide_built.items():
+        if only and only != gid: continue
+        st = guides.status(gid, lang)
+        users = [(i, investigations.load(i, lang)["title"]) for i in inv_ok
+                 if any(gid in p.get("guides", []) for p in investigations.load(i, lang)["prerequisites"])
+                 or f"[[ohje:{gid}|" in (investigations.folder(i, lang) / "investigation.md").read_text()]
+        body, gtoc = guides.render(gid, lang, T, lambda t: nbsp_units(render_md(t)), published, users)
+        for ref in guides.pic_refs(gid, lang):            # screenshots, at the same relative path as a lesson's pictures
+            if not courses.pic_source(ref).is_file(): sys.exit(f"{gid}: picture {ref} not found (expected assets/{ref})")
+            (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
+        html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", "FY10").replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("guides.notice_draft")}</p>')
+                .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course="FY10")))
+                .replace("{{toc}}", gtoc).replace("{{main}}", body).replace("{{scripts}}", "")
+                .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{gid}.html")
+                .replace("{{home}}", HOME).replace("{{languages}}", languages_nav(f"{gid}.html")))
+        (out / f"{gid}.html").write_text(rebase(html))
+        print("built", gid, f"({st['state']})")
     inv_built = {}
     for iid in investigations.ids(lang):
         if only and only != iid: continue
@@ -566,7 +596,7 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {iid}.html is on the live site but its reviews are not current; this build removes it")
             continue
         d = investigations.load(iid, lang); course = d["courses"][0]
-        body, itoc = investigations.render(iid, lang, T, lambda t: nbsp_units(render_md(t)), chapters, {f"{i}.html" for i in built_ids})
+        body, itoc = investigations.render(iid, lang, T, lambda t: nbsp_units(render_md(t)), chapters, published)
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", course).replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("investigation.notice_draft")}</p>')
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=course)))
                 .replace("{{toc}}", itoc).replace("{{main}}", body).replace("{{scripts}}", '<script src="investigation.js"></script>')
@@ -577,49 +607,33 @@ def build_language(lang):
     local = local_courses.load(lang)
     local_rows = ""
     for code, c in local.items():
-        local_rows += local_courses.home_row(code, c, T)
+        local_rows += local_courses.home_row(code, c, T, sum(code in d["courses"] for d in inv_built.values()))
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
-                                                                                                  [(i, d) for i, d in inv_built.items() if code in d["courses"]]),
+                                                                                                  [(i, d) for i, d in inv_built.items() if code in d["courses"]],
+                                                                                                  guides.course_section(T, published, lang) if code == "FY10" else "")
+                                                + '<script src="invfilter.js"></script>',
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
                           for code, c in local_courses.load().items() if code not in local)
 
-    # The featured lesson (teacher 2026-10-29): FEATURED when this language published it, else the first published
-    # lesson in curriculum order. Its own opening illustration and Miksi question, taken from the page just built.
-    order = [(code, mod, l) for code, mod in modules for l in mod.get("lessons", []) if l["id"] in built_ids]
-    pick = next((x for x in order if x[2]["id"] == FEATURED), order[0] if order else None)
-    featured = ""; sample_href = ""
-    if pick:
-        code, mod, l = pick; sample_href = f'{l["id"]}.html'
-        built_page = (out / sample_href).read_text()
-        fig = re.search(r'<svg[^>]*data-fig="hero".*?</svg>', built_page, re.S)
-        why = re.search(r"<blockquote>\s*<p>(.*?)</p>\s*</blockquote>", built_page, re.S)
-        featured = (f'<section class="featured" aria-labelledby="h-featured"><h2 id="h-featured">{T("site.featured_heading")}</h2>'
-                    f'<div class="featured-row">' + (f'<div class="featured-fig">{fig.group(0)}</div>' if fig else "")
-                    + f'<div class="featured-text"><p class="featured-meta">{code} · {esc(mod["title"])}</p>'
-                    f'<h3><a class="featured-link" href="{sample_href}">{esc(l["title"])}</a></h3>'
-                    + (f'<p class="featured-q">{re.sub(r"<[^>]+>", "", why.group(1)).strip()}</p>' if why else "")
-                    + f'<p class="featured-lead">{T("site.featured_lead")}</p>'
-                    f'<span class="featured-go" aria-hidden="true">{T("site.open_lesson")}</span></div></div></section>')
-
+    # The front page (teacher 2026-10-29, trimmed 2026-10-31: a learning environment, not a product page). A short
+    # opening that says how one studies here, then what can be studied: the published modules, the school-specific
+    # courses with what they already publish, the modules still coming, and last one short study guide. No sample
+    # lesson and no call to action: the module list follows the opening directly.
     stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><p class="motto">{T("site.home_tagline")}</p>'
-        f'<h1 id="h-intro">{T("site.home_title")}</h1><p class="lead">{T("site.home_lead")}</p>'
-        f'<p class="actions"><a class="button" href="#moduulit">{T("site.choose_module")}</a>'
-        + (f'<a class="quiet-link" href="{sample_href}">{T("site.try_lesson")}</a>' if sample_href else "") + '</p></section>'
+        f'<h1 id="h-intro">{T("site.home_title")}</h1><p class="lead">{T("site.home_lead")}</p></section>'
         f'<section class="catalogue" aria-labelledby="moduulit"><h2 id="moduulit">{T("site.modules")}</h2>'
         f'<p class="section-lead">{T("site.modules_lead")}</p><ul class="mod-list">{catalogue}</ul></section>'
-        + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
-           f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
         + (f'<section class="local-courses" aria-labelledby="h-local"><h2 id="h-local">{T("site.local_courses")}</h2>'
            f'<p class="section-lead">{T("site.local_courses_lead")}</p><ul class="mod-list">{local_rows}</ul></section>' if local_rows else "")
-        + featured
-        # the learning model with the stage names the lessons use (lang inquiry.stage_*), then a short start guide
-        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2><ol class="path-steps">{stages}</ol></section>'
-        + f'<section class="start" aria-labelledby="h-start"><h2 id="h-start">{T("site.home_start")}</h2><ol class="start-steps">'
-        + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_short")) + '</ol>'
+        + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
+           f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
+        # one study guide: the stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure
+        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2>'
+        f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
         f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
         + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
     (out / "index.html").write_text(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
@@ -633,7 +647,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [practice.page_name(c) for c in practice_built])
+    expected.extend(pre + n for n in ["index.html"] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built])
     print(f"built {pre or ''}index +", len(modules), "module pages ->", ((LIVE if SITE.name == "site.tmp" else SITE) / pre).relative_to(ROOT),
           f"({sum(m['state'] == 'reviewed' for ms in built.values() for m in ms)} reviewed, {len(legacy_ids)} legacy, "
           f"{sum(m['state'] == 'draft' for ms in built.values() for m in ms)} draft" + (f", {len(removed)} removed: {', '.join(removed)}" if removed else "") + ")")
@@ -645,7 +659,7 @@ for lang in LANGS: build_language(lang)
 link_languages()
 i18n.set_lang(i18n.SOURCE)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js"] + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js"] + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

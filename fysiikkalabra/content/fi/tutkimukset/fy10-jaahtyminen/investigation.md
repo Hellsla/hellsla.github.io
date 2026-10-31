@@ -256,7 +256,7 @@ Vastaa:
 Jos $\ln$-kuvaaja on alussa suora mutta kaartuu lopussa, tarkista ensin huoneen lämpötila: pienikin virhe lukemassa $T_\text{huone}$ muuttaa lämpötilaeroa suhteellisesti eniten silloin, kun ero on pieni. Pisteet, joissa lämpötilaero on mittausepävarmuuden suuruinen, eivät kerro mallista enää mitään: jätä ne pois sovituksesta ja kerro se raportissa.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -280,10 +280,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten veden lämpötila muut
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** Newtonin jäähtymislaki omin sanoin, sen oletukset ja se, miten mallia testataan kuvaajan avulla.
-- **Työn suunnitelma:** astia, vesimäärä, alkulämpötila, anturin paikka, miten ja missä mittasit huoneen lämpötilan sekä mitä pidit vakiona.
+- **Koejärjestely ja menetelmä:** astia, vesimäärä, alkulämpötila, anturin paikka, miten ja missä mittasit huoneen lämpötilan sekä mitä pidit vakiona.
 - **Mittaustulokset:** alkuperäiset lukemat ja niiden oikealla puolella lasketut sarakkeet; pitkästä datasta ote.
 - **Tulos:** jäähtymistä kuvaava vakio tai puoliintumisaika epävarmuuksineen oikein pyöristettynä ja kuvaaja, josta se määritettiin.
 - **Luotettavuus:** missä malli ja mittaukset poikkeavat toisistaan, konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.

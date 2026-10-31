@@ -209,10 +209,10 @@ Kirjoita sovitetun suoran yhtälö ja vastaa:
 3. Kulkeeko suora origon kautta? Jos ei, mistä vakiotermi voi johtua?
 
 ::: tuki O OO
-**Miksi juuri nämä akselit?** Jousivoiman laki $F = kx$ on suoran yhtälö $y = kx$, kun pystyakselille valitaan $F$ ja vaaka-akselille $x$. Silloin kulmakerroin on suoraan jousivakio. Jos vaaka-akselille valitaan jousen pituus $l$ venymän sijasta, kulmakerroin pysyy samana, mutta suora ei kulje origon kautta, eikä kuvaaja enää näytä suoraan, että voima on verrannollinen venymään. Jos taas akselit vaihdetaan päittäin, kulmakerroin on $\dfrac{1}{k}$. Tiheäkierteisellä jousella pienimmät kuormat eivät välttämättä vielä venytä jousta, koska kierteet painavat toisiaan; jätä tällöin alku pois sovituksesta ja kerro se raportissa.
+**Miksi juuri nämä akselit?** Jousivoiman laki $F = kx$ on suoran yhtälö $y = kx$, kun pystyakselille valitaan $F$ ja vaaka-akselille $x$. Silloin kulmakerroin on suoraan jousivakio. Jos vaaka-akselille valitaan jousen pituus $l$ venymän sijasta, kulmakerroin pysyy samana, mutta suora ei kulje origon kautta, eikä kuvaaja enää näytä suoraan, että voima on verrannollinen venymään. Jos taas akselit vaihdetaan päittäin, kulmakerroin on $\dfrac{1}{k}$. Tiheäkierteisellä jousella pienimmät kuormat eivät välttämättä vielä venytä jousta, koska kierteet painavat toisiaan; jätä tällöin alku pois sovituksesta ja kerro se raportissa. Silloin suora ei kulje origon kautta, koska jousi alkaa venyä vasta tietyllä voimalla, mutta suoran kulmakerroin on silti jousivakio.
 :::
 
-Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -235,10 +235,10 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Noudattaako jousi jousivoima
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** jousivoiman laki, miksi $F = mg$ ja miksi valitsit juuri nämä akselit.
-- **Työn suunnitelma:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten käsittelit punnustelineen.
+- **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten käsittelit punnustelineen.
 - **Mittaustulokset:** alkuperäinen pituus $l$ omassa sarakkeessaan ja johdetut suureet sen oikealla puolella.
 - **Tulos:** $k = (k \pm \Delta k)\ \text{N/m}$ oikein pyöristettynä.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.

@@ -11,6 +11,7 @@
     "FY1",
     "FY4"
   ],
+  "topic": "liike",
   "source": "Esimerkkityöt.pdf s. 12–13 (Pudotuskorkeuden ja pomppukorkeuden välinen riippuvuus), opettajan aineisto",
   "learn": [
     "muuttamaan tutkimuskysymyksen mitattaviksi suureiksi ja valitsemaan, mitä muutat ja mitä pidät vakiona",
@@ -76,15 +77,15 @@
     {
       "kind": "tvt",
       "level": "essential",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Hidastetun videon kuvaaminen ja kuva kuvalta katselu puhelimella",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-videoanalyysi"],
       "why": "Pompun lakikohta on helpompi lukea videolta kuin silmällä; laajennuksessa video on välttämätön."
     }
   ],

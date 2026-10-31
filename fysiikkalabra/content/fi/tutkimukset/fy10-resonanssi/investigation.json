@@ -11,6 +11,7 @@
     "FY1",
     "FY5"
   ],
+  "topic": "aallot",
   "source": "Esimerkkityöt.pdf s. 10 (Äänen resonanssi putkessa), opettajan aineisto",
   "learn": [
     "määrittämään aallonpituuden usean peräkkäisen resonanssikohdan avulla",
@@ -86,15 +87,15 @@
     {
       "kind": "tvt",
       "level": "helpful",
-      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "text": "Mittauspisteiden kuvaaja ja suoran sovitus ohjelmalla (Graphical Analysis Pro)",
+      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus"],
       "why": "Kulmakerroin ja sen epävarmuus saadaan sovituksesta, jos käytät kuvaajaa."
     },
     {
       "kind": "tvt",
       "level": "helpful",
       "text": "Äänenvoimakkuuden seuraaminen mikrofonilla, äänenvoimakkuusanturilla tai puhelimen sovelluksella",
-      "missing": "Ruukkilabran ohje on tekeillä",
+      "guides": ["tvt-mittausohjelma"],
       "why": "Anturilla resonanssikohdan voi löytää ilman, että korvaa tarvitsee kuormittaa, ja lukema on vähemmän subjektiivinen."
     }
   ],

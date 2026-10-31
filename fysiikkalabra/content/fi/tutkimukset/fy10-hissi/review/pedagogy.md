@@ -1,25 +1,28 @@
 VERDICT: PASS
-CONTENT-HASH: 41e17ad1edac25ec
+CONTENT-HASH: 4864ce7711c2a848
 
 ## Blocking
+
 None.
 
-## Modes OO and I only: adequate
-- The card (pp. 15–16) is an open E3 "Suunnittele ja toteuta" task, and the inventory (#26) marks it OO/I.
-- OO is already close to a full procedure: phone position, rest periods, the axis check, the floor-height method, the table, both trapezoid formulas and two $\Delta s$ methods. An O mode would add only fixed choices.
-- Mode I keeps real decisions (zero point, integration, true distance, uncertainty) and has to do the extension.
-- teacher.md *Eriyttäminen* matches the page.
-
 ## Polish
-- **Model graphs come too early in OO.** "Tarkista ennusteesi" (the phase figure and the $a$/$v$/$s$ model shapes) comes before the calculation instructions. OO students therefore see the expected shapes before computing their own, which weakens Käsittele Q1. Move the figures after the *Matka* formula.
-- **Missing spreadsheet guide.** The spreadsheet guide is still being written ("tekeillä"). teacher.md should say that students need to have practised one cumulative-column calculation first, or that the teacher demonstrates one.
-- **"Päätät itse … miten lasket nopeuden ja matkan"** is not a real choice in OO, because the formulas are given. Say that only the I mode chooses the calculation method.
-- **Mode I theory.** In every mode, the strip-sum paragraph answers the card's *Pohdi* items 1–2. Optionally, move it into `tuki OO`.
 
-## Checked
-- Ennusta comes before the theory. Q3 (does the error grow?) and Q4 are real predictions, and Johtopäätökset returns to them.
-- The three learn goals are practised in both modes.
-- teacher.md lists real misconceptions.
-- The Finnish is clear and at lukio level. Safety does not invent any values.
-- At 360 px there is no horizontal scroll, and the OO/I toggle works (5 support blocks in OO, 1 in I).
-- Revision diff (41e17ad1edac25ec) checked: model shapes now come after the Matka formula; Päätät itse separates OO and I; the strip-sum paragraph is OO-only; teacher.md has the spreadsheet practice note. The new staircase hero is consistent with the page, but it shows the step-rise method in mode I too. That is minor, because mode I can still choose how to find the true distance.
+- Extension: "tarkista, onko jokin kerros … muita korkeampi" gives no how; add a short cue, e.g. "poikkeaako jokin piste suorasta", so the student knows what to look at in the graph.
+- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
+
+## Checked (delta 2026-10-31)
+
+- The added condition "jos kaikki kerrokset ovat yhtä korkeita" makes the slope question answerable and honest; paragraph stays ~70 words
+- Body: one link (Taulukkolaskenta) exactly where cumulative columns are needed
+- teacher.md: the guide now replaces "ohje tekeillä"; reads naturally
+- Raportoi names aligned
+
+## Delta 2 (2026-10-31)
+
+- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
+- Still open (polish): the extension's *onko jokin kerros muita korkeampi* has no cue on what to look at.
+
+## Delta 4 (2026-10-31)
+
+- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+- Tablet now allowed in equipment, json and teacher.md consistently; duplicate sentence removed; teacher.md says *taulukon rakenteen*.

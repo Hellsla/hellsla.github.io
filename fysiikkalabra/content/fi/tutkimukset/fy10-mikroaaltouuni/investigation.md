@@ -555,7 +555,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa tulostasi valonnopeud
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** seisova aalto, miksi juusto sulaa kupukohdissa ja miten lauseke valonnopeudelle saadaan.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, miten kuumensit juuston ja mittasit kohtien välit sekä työturvallisuus (vesikuppi, ei metallia, alusta ei pyöri: poistettu käyttöohjeen mukaan).
@@ -598,7 +598,7 @@ Jos kohdat ovat tasavälein, paikka järjestysnumeron funktiona on suora, jonka 
 Piirrä kummastakin suunnasta kuvaaja ja sovita pisteisiin suora. Ovatko pisteet suoralla? Ovatko kahden suunnan kulmakertoimet sopusoinnussa keskenään ja päämittauksen tuloksen kanssa? Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Mitä mahdollinen ero kertoo yksinkertaisen mallin pätevyydestä? [[apua:fy1-4|Suoran sovittaminen ja kulmakertoimen tulkinta]]
 
 ::: tuki O OO
-**Vihjeitä.** Pidä mitta paikallaan koko rivin lukemisen ajan, jotta kaikki paikat luetaan samasta nollakohdasta. Kulmakerroin ei riipu nollakohdasta. Sovitusohjelman ilmoittama kulmakertoimen keskivirhe käy kulmakertoimen epävarmuudeksi. Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.
+**Vihjeitä.** Pidä mitta paikallaan koko rivin lukemisen ajan, jotta kaikki paikat luetaan samasta nollakohdasta. Kulmakerroin ei riipu nollakohdasta. Sovitusohjelman ilmoittama kulmakertoimen keskivirhe käy kulmakertoimen epävarmuudeksi. Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: [[ohje:tvt-suoran-sovitus|Suoran sovittaminen]], [[ohje:tvt-kulmakerroin|Kulmakertoimen tulkinta]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]].
 :::
 
 ## Arvioi omaa työtäsi
