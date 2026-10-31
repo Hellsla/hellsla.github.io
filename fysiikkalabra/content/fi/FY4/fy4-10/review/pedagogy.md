@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1b4a6b4ef5557e43
+CONTENT-HASH: 3ce5496422f13f04
 
 ## Blocking
 
@@ -16,3 +16,6 @@ CONTENT-HASH: 1b4a6b4ef5557e43
 - No velocity or momentum arrow or its label leaves the picture in any of them. Arrows stay readable in mild settings (shorter, still visible at 390 px), and the arrow lengths stay proportional within a run, so the comparison before/after still teaches.
 - Momentum bars and energy column are unchanged and consistent with the arrows (p_kok equal before/now; E_sis grows for sticky).
 - Lesson text, inquiry, predictions, experiments, example and exit ticket are unchanged since round 2; the numbers and the learning path stay as I passed them.
+
+## Round 4 (delta)
+Only change: mass options use the page decimal sign. Built fy4-10 and opened fi and en at 390 and 1280 px: no page errors; fi options read 0,20 / 0,40 / 0,60 kg, en 0.20 / 0.40 / 0.60 kg, both masses, matching the readout (0,240 vs 0.240). Round-3 findings carried forward; no new Blocking.

@@ -68,7 +68,7 @@ new p5((p) => {
     selT.selected('kimmoisa');
     const l1 = p.createElement('label').parent(controls); p.createSpan(__('massa1')).parent(l1); selM1 = p.createSelect().parent(l1);
     const l2 = p.createElement('label').parent(controls); p.createSpan(__('massa2')).parent(l2); selM2 = p.createSelect().parent(l2);
-    for (const s of [selM1, selM2]) { for (const m of ['0.2', '0.4', '0.6']) s.option(m.replace('.', ',') + '0 kg', m); s.selected('0.4'); }
+    for (const s of [selM1, selM2]) { for (const m of ['0.2', '0.4', '0.6']) s.option((DEC === '.' ? m : m.replace('.', ',')) + '0 kg', m); s.selected('0.4'); }
     const lv1 = p.createElement('label').parent(controls); lV1 = p.createSpan('').parent(lv1); slV1 = p.createSlider(0, 1, 0.6, 0.1).parent(lv1);
     const lv2 = p.createElement('label').parent(controls); lV2 = p.createSpan('').parent(lv2); slV2 = p.createSlider(-1, 1, 0, 0.1).parent(lv2);
     const ls = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(ls); selSpeed = p.createSelect().parent(ls);
