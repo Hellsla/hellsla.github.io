@@ -80,7 +80,7 @@
       "id": "ennuste-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Ennuste 2: kymmenkertainen matka",
+      "title": "Ennuste 2: kauempana oleva luotain",
       "prompt": "Valo kulkee $10^{7}\\,\\text{km}$ pituisen matkan noin 33 sekunnissa. Kuinka kauan se kulkee $10^{9}\\,\\text{km}$ pituisen matkan?",
       "justify": true,
       "reveal": {

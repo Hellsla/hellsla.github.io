@@ -80,7 +80,7 @@
       "id": "ennuste-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Prediction 2: a ten times longer distance",
+      "title": "Prediction 2: a probe farther away",
       "prompt": "Light travels a distance of $10^{7}\\,\\text{km}$ in about 33 seconds. How long does it take to travel a distance of $10^{9}\\,\\text{km}$?",
       "justify": true,
       "reveal": {

@@ -583,8 +583,8 @@ def classify(path, diff_lines, lid):
                 n = next((l for l in add if _typography_pair(o, l)), None)
                 if n is not None: cats.add("typography"); rem.remove(o); add.remove(n)
         dedup = lambda l: tuple(list(dict.fromkeys(x)) for x in _math_and_numbers(l))
-        if name.endswith(".md") and len(rem) == len(add) == 1 and not SVG_LINE.match(rem[0]) and dedup(rem[0]) == dedup(add[0]) \
-                and not rem[0].lstrip().startswith(("#", "<", "```")):
+        if name.endswith((".md", ".json")) and len(rem) == len(add) == 1 and not SVG_LINE.match(rem[0]) and dedup(rem[0]) == dedup(add[0]) \
+                and not rem[0].lstrip().startswith(("#", "<", "```")) and {_line(name, rem[0], lid), _line(name, add[0], lid)} <= {"numbers", "wording"}:
             cats.add("wording"); return               # one prose line reworded, its formulas and numbers the same ("Voyager 2" is not a new number) or a repeated formula dropped (visual audit 2026-10-31)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 868cd0d0da21d51e
+CONTENT-HASH: 774a1ce11790411d
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
 - (nothing needed)
 
 ## Polish
-- solutions.md L1-02 "a hundred million times larger size" could read "a size a hundred million times larger".
+(none)
 
 ## Checked
-- Answer units in words (orders of magnitude, times, thousand, million people, million times) match the Finnish units.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): natural English for 16–18-year-olds, step labels (**Given:** **Find:** **Principle:** **Formula:** **Conversions:** **Substitution:** **Answer:** **Reasonableness:**), the same task demands and units asked.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the figure task L1-02 (text and worked solution) against the new Finnish.
+- Delta against the Finnish source and the earlier PASS: answer units "orders of magnitude", "times", "thousand" match the Finnish units (suuruusluokkaa, kertaa, tuhatta) and the tasks' wording ("Give the answer in thousands"); values, answers and tolerances unchanged; no Finnish words left in exercises.json. check_i18n en: 0 errors.
