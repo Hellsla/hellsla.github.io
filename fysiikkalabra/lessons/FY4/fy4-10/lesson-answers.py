@@ -9,7 +9,7 @@ a = {}
 # they push each other with equal and opposite forces F (on 2) and −F (on 1): F = max(0, k d + c (v1 − v2)).
 # kimmoisa: spring bumper, c = 0; kimmoton: c = 3,0 N·s/m; tarra (täysin kimmoton): critical damping
 # c = 2√(k μ), μ = m1 m2/(m1 + m2), and the gliders stick when v1 − v2 ≤ 0; rajahdys: a spring compressed 4,0 cm
-# (k = 300 N/m, 0,24 J) between gliders at rest. fourth-order Runge–Kutta (RK4), as in model.js steps of 0,2 ms of simulated time. The "after" values
+# (k = 300 N/m, 0,24 J) between gliders at rest. Velocity Verlet steps of 0,2 ms of simulated time (model.js uses RK4 with the same step). The "after" values
 # are taken when the contact ends (or when they stick).
 L, K, C_IN, KR, D0, DT = 0.20, 300.0, 3.0, 300.0, 0.04, 0.0002
 def run(m1, m2, v1, v2, typ):
