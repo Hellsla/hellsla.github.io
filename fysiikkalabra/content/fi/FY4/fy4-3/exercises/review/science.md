@@ -1,15 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 1e51956df59067b8
+CONTENT-HASH: 1b72d20a59f51860
 
 ## Blocking
 
 ## Polish
-- solutions.md (L2-02), exercises.json (L2-02, L3-01) — The tasks use "noste" for buoyancy, while the lesson's worked-example figure labels wing lift $\overline{F}_\text{noste}$ (see the lesson report). No change is needed here if the lesson renames its lift symbol.
+- solutions.md:424-430 (L3-01) — C/B, drawn sum. $F_\text{v}$ = 270 N is 5,8 % of G, so it is lifted to the 15 % floor. Measured lengths: G 100, $F_\text{n}$ 94, $F_\text{v}$ 15. The drawn upward total is 109 against 100 downward, with a = 0 and $\overline{v}$ down. It follows the stated rule, and the text alternative says so, but it is the one drawn sum in the set that does not balance, and the balance is the point of the task. Suggested fix in fbdspec.py: when the floor lifts a force collinear with others, shorten the largest same-direction force by the same amount so the sum still shows (here $F_\text{n}$ 85 + $F_\text{v}$ 15 = G 100).
+- solutions.md:316-324 (L1-04) and L1-03, L2-02 — The split scale (horizontal largest drawn at 0,6 of G) is stated only in the aria-label. A sighted reader sees $\overline{F}$ at 0,6·G with no note. Add a visible note under split-scale figures.
+- solutions.md L1-03 — Carried over: state "jää oletetaan kitkattomaksi".
 
 ## Checked
-- All 12 answers recomputed independently: 18 N, 850 N, 90 N, 240 N, 6,38 → 6,4 N, 13 N, 65 N, 833,9 → 830 N, 8,94 → 8,9 kN, 0,27 kN upward, 0,60 N, 1,9 N. answers.py agrees, and each answer is within its tolerance.
-- The physics models are right. First-law equilibria and third-law pairs are kept apart in every solution. In L2-01 the force passes along a chain of pairs to the table. In L3-02 the magnetic pair acts without contact. In L3-03 the scale reads the force on its hook.
-- Force diagrams described in the solutions are correct: the chosen body is a rectangle, $\overline{G}$ is drawn from the centre, $\overline{N}$ and $\overline{T}$ from the contact or attachment surface, and a pushing force ends at the body. Reaction forces on other bodies are excluded and named, as in L1-03 and L1-05. Velocity is not drawn as a force (L2-03, L3-01).
-- Directions are right: drag points up while the balloon and the parachutist move down, and the book pulls the Earth upward.
-- Every solution states the positive direction, writes the equation symbolically before substituting, and gives units. Rounding follows the limiting datum. Each reasonableness check is a real check: the tug-of-war is won by ground friction, and the lift's cable tension is the same at rest as at constant speed.
-- The varied L2-02 (weight and buoyancy as distractors) and the L3-01 wording (size checked, direction asked in words) are consistent with the answers.
+- Round-1 blocking item (L1-04) is resolved. G = N = 12 000 N, realistic for a car. On the split scale the measured lengths are F 60, $F_\text{i}$ 37, $F_\text{r}$ 23, and 37 + 23 = 60 matches 620 = 380 + 240. G = N = 100, and the text alternative states the split.
+- All 12 diagrams were rendered (`fbdspec.py show`), screenshotted, and their arrow lengths measured from the SVG. All proportions are on one scale:
+  - L2-01: 61,5 / 38,5 / 100.
+  - L2-04: 65 / 35 / 100.
+  - L3-02: 50 / 50 / 100.
+  - L3-03: 21 / 79 / 100.
+  - The equal pairs (L1-01, L1-02, L1-05, L2-03) are 100 / 100.
+- Split scales: L1-03 (90 vs 590 N) and L2-02 (65 vs 720 N). In each, the horizontal forces are mutually correct (L2-02: 60 = 60).
+- No diagram contradicts its Voimakuvio sentence or its motion. a = 0 wherever the velocity is constant. In L1-03 $\overline{a}$ points away from the wall.
+- Third-law partners stay off every diagram.
+- I recomputed all 12 answers in one script. Each is within tolerance: 18; 850; 90; 240; 6,38; 13; 65; 834; 8,94; 0,27; 0,60; 1,9.
+- The hash was the same at the start and at the end.

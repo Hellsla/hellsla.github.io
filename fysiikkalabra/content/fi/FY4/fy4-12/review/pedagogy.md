@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6f2cf62a1b9423b6
+CONTENT-HASH: 77d0c5813b2c4c1b
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json `measure` labels (exp-1..3): at 390 px the headers still break as "x_A (" / "m)" (`fy4-12-exp-exp-2-390-2.png`, exp-3 likewise); use a non-breaking thin space before the unit (round-2 item, not yet applied).
-- inquiry.json `sim.calc`: still says the gap is "positiivinen, kun B on edellä, ja nolla kohtaamishetkellä"; exp-3 shows it negative (B behind, -5,0 m). Add "negatiivinen, kun B on takana".
-- `fy4-12-exp-exp-3-390-1.png` is 316 px wide and has no card border, unlike exp-1/2; probably a capture artefact of the optional experiment, but check the card frame at 390 px.
-- No check item uses the (t,v)-intersection misconception named in the lesson; acceptable.
+- lesson.md:338 — "Kohtaamishetkellä kappaleiden kuvaajat leikkaavat toisensa." still only repeats the previous sentence (round 1 item, not applied) — delete it.
+- lesson.md:338 — the new negative-direction sentence is correct and answers my round-1 point. It still leaves the figure's own case (A moves +x, B moves -x) without a rule; one clause would close it: "Jos kappaleet liikkuvat eri suuntiin, vertaa suoraan paikkakoordinaatteja." Optional.
+- inquiry.json:317, 330 (exp-3 Tarkista feedback) — "Etumatka $x_\text{B} - x_\text{A}$" still names the difference "etumatka", while the sim's calc text now calls it "paikkojen ero" and says it is an etumatka only for +x motion. Both bus and runner do move in +x there, so it is true, but "Paikkojen ero $x_\text{B} - x_\text{A}$" would be uniform with the hints and solution.
 
 ## Checked
-- Phone: the simulation now stacks its panels at 390 px (road strip, graph, legend, controls, readout, closed boxes); canvas and graph labels are larger and legible, and the round-2 crowding of `x (m)` is gone.
-- 390 px Tutki: sim, buttons and table in one column, nothing clipped; 360/768/1280 px tests pass.
-- Opening illustration matches the Miksi question; the question is answered (ohitus at 8,0 s and 64 m, the car faster, the lead peaks at 3,0 s).
-- Predictions can be refuted (cases 1 and 3); each option's feedback repairs its misconception; reveal gating fits the experiments.
-- Worked example in seven complete stages; the A, B, C coefficients are named; figure data correct.
-- Core is understanding (position versus speed at the meeting, area argument for 2v); the algebra serves it. Workload is one lesson (retrieval, exp-3, reflect optional).
-- Finnish and glossary terms correct; chapter names, no ids.
-- Hash unchanged at the end.
+- Diff is lesson.md:338 (one added sentence), sim `calc` text, hints 2-3 and the solution of the transfer task; no number, formula or figure changed.
+- "Negatiiviseen suuntaan liikuttaessa edellä on se kappale, jonka viiva on alempana": physically right (ahead = more negative x = lower line). Finnish correct.
+- Sim `calc`: "paikkojen ero ... nolla kohtaamishetkellä; positiiviseen suuntaan se on B:n etumatka" removes the false "positive = B ahead" reading and is accurate for the sign convention.
+- Transfer task: hint 2 and 3 values agree (60 m, falls 6,0 m/s = 4,0 + 2,0, zero at 10 s); solution's "Annettu" and "Periaate" lines follow, answer 50 m unchanged and still not given away by hints 1-2.
+- Using neutral "paikkojen ero" in the task hints reduces the misconception that etumatka must be positive; no new jump for the student.
+- Other "etumatka" uses (opening, Ennuste 3, cyclist and car) concern +x motion and stay valid.
+- Hash unchanged at the end (77d0c5813b2c4c1b).

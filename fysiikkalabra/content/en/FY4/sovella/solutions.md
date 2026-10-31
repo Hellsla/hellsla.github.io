@@ -138,6 +138,15 @@ The acceleration $\overline{a}$ points down the slope, so the sum of the forces 
 **Find:** the coefficients of kinetic friction $\mu_\text{A}$ and $\mu_\text{B}$
 **Principle:** The graphs are straight lines, so the acceleration is constant and it is the slope of the line. By Newton's second law the acceleration is caused by the sum of the forces, so the friction force is deduced from the acceleration and the coefficient of friction from that. On a slope it is best to choose the axes along the slope, because the motion is along the slope.
 **Free-body diagram:** The diagram of part b: the $x$-axis down the slope and the $y$-axis perpendicular to the slope, away from it. The components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. The normal force is in the direction of the $y$-axis and the friction opposite to the $x$-axis.
+```voimakuvio
+pinta -4
+G 706,32
+N 704,60
+F_mu 21,19 ylös
+a alas
+akselit -4
+komponentit G
+```
 **Reading the graph:** The line of wax A passes through the points $(0\,\text{s};\ 2.10\,\text{m/s})$ and $(8\,\text{s};\ 5.22\,\text{m/s})$, so $a_\text{A} = \dfrac{3.12\,\text{m/s}}{8\,\text{s}} = 0.39\,\text{m/s}^2$. The line of wax B passes through the points $(0\,\text{s};\ 1.90\,\text{m/s})$ and $(8\,\text{s};\ 3.86\,\text{m/s})$, so $a_\text{B} = \dfrac{1.96\,\text{m/s}}{8\,\text{s}} = 0.245\,\text{m/s}^2$.
 **Formula:** $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$, that is, $mg\sin\alpha - \mu mg\cos\alpha = ma$. The mass cancels, and $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 **Conversions:** Not needed, the accelerations are in the unit $\text{m/s}^2$.

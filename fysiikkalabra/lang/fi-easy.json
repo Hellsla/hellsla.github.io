@@ -243,7 +243,8 @@
     "self_assess_lead": "Merkitse kohdat, jotka sinun vastauksessasi jo on.",
     "criteria_done": "Mitä vastauksestani puuttuu?",
     "check_practice": "Ehdotus: yksi vastaus ei kerro kaikkea osaamisestasi. Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja tee <a href=\"#exercises\">ydintehtävät</a>.",
-    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>."
+    "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
+    "answer_in": "Vastaus yksikössä {{unit}}"
   },
   "js": {
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",
@@ -1120,7 +1121,7 @@
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
-      "selite": "Varjostettu pinta-ala kertoo impulssin suuruuden. Harmaat käyrät ovat aiempia törmäyksiä.",
+      "selite": "Käyrän ja aika-akselin väliin jäävä pinta-ala on impulssi $I$. Harmaat käyrät ovat aiempia törmäyksiä.",
       "lukemat": "<strong>$\\Delta t = {{dt}}\\,\\text{s}$, $F_\\text{max} = {{Fm}}\\,\\text{N}$, $I = {{I}}\\,\\text{N}\\cdot\\text{s}$</strong><br>$v_0 = {{v1}}\\,\\text{m/s}$, $v = {{v2}}\\,\\text{m/s}$<br>$p_0 = {{p1}}\\,\\text{kg}\\cdot\\text{m/s}$, $p = {{p2}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$\\Delta p = {{dp}}\\,\\text{kg}\\cdot\\text{m/s}$"
     },
     "fy4-10": {
@@ -1143,7 +1144,9 @@
       "ennen": "ennen",
       "nyt": "nyt",
       "selite": "Sininen nuoli näyttää nopeuden, violetti nuoli liikemäärän ja punainen nuoli törmäysvoiman.",
-      "lukemat": "<strong>Ennen: $p_\\text{kok} = {{p0}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E0}}\\,\\text{J}$</strong><br><strong>Jälkeen: $v_1' = {{u1}}\\,\\text{m/s}$, $v_2' = {{u2}}\\,\\text{m/s}$, $p_\\text{kok}' = {{pJ}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k}' = {{EJ}}\\,\\text{J}$</strong><br>Nyt: $t = {{t}}\\,\\text{s}$, $v_1 = {{w1}}\\,\\text{m/s}$, $v_2 = {{w2}}\\,\\text{m/s}$, $p_\\text{kok} = {{p}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E}}\\,\\text{J}$"
+      "kok": "kok",
+      "sis": "sis",
+      "lukemat": "<strong>Ennen: $p_\\text{kok} = {{p0}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k} = {{E0}}\\,\\text{J}$, $E_\\text{p} = {{Ep0}}\\,\\text{J}$</strong><br><strong>Jälkeen: $v_1' = {{u1}}\\,\\text{m/s}$, $v_2' = {{u2}}\\,\\text{m/s}$, $p_\\text{kok}' = {{pJ}}\\,\\text{kg}\\cdot\\text{m/s}$, $E_\\text{k}' = {{EJ}}\\,\\text{J}$</strong><br>Nyt: $t = {{t}}\\,\\text{s}$, $v_1 = {{w1}}\\,\\text{m/s}$, $v_2 = {{w2}}\\,\\text{m/s}$, $p_\\text{kok} = {{p}}\\,\\text{kg}\\cdot\\text{m/s}$<br>$E_\\text{k} = {{E}}\\,\\text{J}$, $E_\\text{p} = {{Ep}}\\,\\text{J}$, $E_\\text{sis} = {{Es}}\\,\\text{J}$, yhteensä ${{Et}}\\,\\text{J}$"
     },
     "fy4-11": {
       "kaynnista": "Käynnistä",
@@ -1275,5 +1278,30 @@
     "teacher": "Opettajalle",
     "course_heading": "Tutkimukset",
     "course_lead": "Nämä tutkimukset ovat valmiita. Sama tutkimus voi kuulua monelle kurssille."
+  },
+  "fbd": {
+    "lead": "Voimakuvio, nuolten pituudet oikeassa suhteessa:",
+    "lead_two": "Voimakuvio kummastakin kappaleesta, nuolten pituudet oikeassa suhteessa.",
+    "body_n": "Kappale {{n}}:",
+    "slope": "kappale on rinteellä, jonka kulma on {{deg}} astetta;",
+    "kind_gravity": "paino {{sym}} keskeltä {{dir}};",
+    "kind_normal": "tukivoima {{sym}} pinnasta {{dir}};",
+    "kind_friction": "kitka {{sym}} pintaa pitkin {{dir}};",
+    "kind_tension": "jännitysvoima {{sym}} narua pitkin {{dir}};",
+    "kind_applied": "voima {{sym}} {{dir}};",
+    "kind_other": "voima {{sym}} {{dir}};",
+    "kind_drag": "ilmanvastus {{sym}} {{dir}};",
+    "kind_buoyancy": "noste {{sym}} {{dir}};",
+    "kind_spring": "jousivoima {{sym}} {{dir}};",
+    "accel": "kiihtyvyys {{dir}}.",
+    "dir_right": "oikealle",
+    "dir_up": "ylös",
+    "dir_left": "vasemmalle",
+    "dir_down": "alas",
+    "dir_deg": "{{deg}} asteen kulmassa vaakasuuntaan",
+    "approx": "pienet voimat on piirretty vähän liian pitkiksi, jotta ne näkyvät;",
+    "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
+    "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
+    "velocity": "nopeus {{dir}};"
   }
 }

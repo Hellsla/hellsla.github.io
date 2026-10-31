@@ -33,6 +33,14 @@
 **Kysytty:** laatikon kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kiihtyvyyden määrää kokonaisvoima Newtonin toisen lain mukaan, ei vetävä voima yksin. Pystysuunnassa laatikko ei kiihdy, joten pystysuorat voimat kumoavat toisensa ja kokonaisvoima on vaakasuora.
 **Voimakuvio:** Laatikko suorakulmiona, positiivinen suunta vedon suuntaan. Paino $\overline{G}$ keskipisteestä alas ja lattian tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Vetävä voima $\overline{F}$ eteenpäin ja lattian kitkavoima $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin, vetävää voimaa lyhyempänä.
+```voimakuvio
+pinta 0
+G 117,72
+N 117,72
+F 38 oikea
+F_mu 20 vasen
+a oikea
+```
 **Kaava:** Vaakasuunnassa $F - F_\mu = ma$, joten $a = \dfrac{F - F_\mu}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{38\,\text{N} - 20\,\text{N}}{12\,\text{kg}} = \dfrac{18\,\text{N}}{12\,\text{kg}} = 1{,}5\,\text{m/s}^2$
@@ -44,6 +52,11 @@
 **Kysytty:** köyden jännitysvoima $T$ yksikössä $\text{N}$
 **Periaate:** Tasaisessa liikkeessä kiihtyvyys on nolla, joten Newtonin toisen lain mukaan kokonaisvoima on nolla, vaikka ämpäri liikkuu.
 **Voimakuvio:** Ämpäri suorakulmiona, positiivinen suunta ylös. Köyden jännitysvoima $\overline{T}$ yläpinnasta ylös ja paino $\overline{G}$ keskipisteestä alas, yhtä pitkinä. Nopeutta ei piirretä voimaksi.
+```voimakuvio
+T 78,48 ylös
+G 78,48
+a 0
+```
 **Kaava:** $T - mg = 0$, joten $T = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 8{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 78{,}48\,\text{N}$
@@ -65,6 +78,11 @@
 **Kysytty:** kannatinköyden jännitysvoima $T$ yksikössä $\text{N}$
 **Periaate:** Hissi kiihtyy alaspäin, joten Newtonin toisen lain mukaan kokonaisvoima osoittaa alas ja on $ma$. Paino on siis köyden voimaa suurempi.
 **Voimakuvio:** Hissikori matkustajineen suorakulmiona, positiivinen suunta alas, kiihtyvyyden suuntaan. Paino $\overline{G}$ keskipisteestä alas ja köyden jännitysvoima $\overline{T}$ yläpinnasta ylös, painoa lyhyempänä. Kiihtyvyys merkitään erikseen, ei voimaksi.
+```voimakuvio
+G 8829
+T 7479 ylös
+a alas
+```
 **Kaava:** $mg - T = ma$, joten $T = m(g - a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 900\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 7479\,\text{N}$
@@ -76,6 +94,12 @@
 **Kysytty:** köyden jännitysvoima $T$ yksikössä $\text{N}$
 **Periaate:** Kuorma liikkuu alas mutta hidastuu, joten sen kiihtyvyys osoittaa ylös. Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli ylös, joten köyden voima on painoa suurempi.
 **Voimakuvio:** Kuorma suorakulmiona, positiivinen suunta ylös. Köyden jännitysvoima $\overline{T}$ yläpinnasta ylös, painoa pidempänä, ja paino $\overline{G}$ keskipisteestä alas. Nopeus alas ja kiihtyvyys ylös merkitään erikseen kuvion viereen.
+```voimakuvio
+T 1297,2 ylös
+G 1177,2
+a ylös
+v alas
+```
 **Kaava:** Kiihtyvyyden suuruus $a = \dfrac{|v - v_0|}{\Delta t}$ ylöspäin, ja $T - mg = ma$, joten $T = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{2{,}0\,\text{m/s}}{2{,}0\,\text{s}} = 1{,}0\,\text{m/s}^2$ ja $T = 120\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 1297{,}2\,\text{N}$
@@ -87,6 +111,14 @@
 **Kysytty:** kärryn kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kiihtyvyyden määrää kokonaisvoima. Vastakkaissuuntaiset voimat vähennetään toisistaan, ja pystysuunnassa paino ja maan tukivoima kumoavat toisensa.
 **Voimakuvio:** Kärry suorakulmiona, positiivinen suunta suuremman vedon suuntaan. Paino $\overline{G}$ keskipisteestä alas ja tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Narun voima $\overline{F}_\text{a}$ toisesta kyljestä eteenpäin ja $\overline{F}_\text{b}$ toisesta kyljestä taaksepäin, lyhyempänä.
+```voimakuvio
+pinta 0
+G 294,3
+N 294,3
+F_a 60 oikea
+F_b 45 vasen
+a oikea
+```
 **Kaava:** $F_\text{a} - F_\text{b} = ma$, joten $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{60\,\text{N} - 45\,\text{N}}{30\,\text{kg}} = \dfrac{15\,\text{N}}{30\,\text{kg}} = 0{,}50\,\text{m/s}^2$
@@ -98,6 +130,12 @@
 **Kysytty:** hissin (ja opiskelijan) kiihtyvyys $a$ yksikössä $\text{m/s}^2$ ja sen suunta
 **Periaate:** Vaaka ei mittaa massaa vaan tukivoimaa, jolla se työntää opiskelijaa. Opiskelija kiihtyy hissin mukana, joten Newtonin toisen lain mukaan tukivoiman ja painon erotus on $ma$.
 **Voimakuvio:** Opiskelija suorakulmiona, positiivinen suunta ylös. Paino $\overline{G}$ keskipisteestä alas ja vaa'an tukivoima $\overline{N}$ alapinnasta ylös. Lukema on pienempi kuin massa, joten $\overline{N}$ on lyhyempi kuin $\overline{G}$ ja kokonaisvoima osoittaa alas.
+```voimakuvio
+pinta 0
+G 588,6
+N 529,74
+a alas
+```
 **Kaava:** $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
 **Muunnokset:** Vaa'an lukema muunnetaan voimaksi: $N = 54{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 529{,}74\,\text{N}$.
 **Sijoitus:** $a = \dfrac{529{,}74\,\text{N} - 60{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}{60{,}0\,\text{kg}} = \dfrac{529{,}74\,\text{N} - 588{,}6\,\text{N}}{60{,}0\,\text{kg}} = -0{,}981\,\text{m/s}^2$
@@ -119,6 +157,13 @@
 **Kysytty:** aika $\Delta t$ yksikössä $\text{s}$, jonka kuluttua pulkka pysähtyy
 **Periaate:** Pulkkaa ei vedetä eikä työnnetä, joten ainoa vaakasuora voima on liikettä vastaan osoittava kitka. Kitka on vakio, joten Newtonin toisen lain mukaan hidastuvuus on vakio, ja pysähtymisaika saadaan nopeuden muutoksesta.
 **Voimakuvio:** Pulkka ja lapsi suorakulmiona, positiivinen suunta liikkeen suuntaan. Paino $\overline{G}$ keskipisteestä alas ja lumen tukivoima $\overline{N}$ alapinnasta ylös, yhtä pitkinä. Lumen kitkavoima $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin vievää voimaa ei ole.
+```voimakuvio
+pinta 0
+G 294,3
+N 294,3
+F_mu 18 vasen
+a vasen
+```
 **Kaava:** $-F_\mu = ma$ ja $a = \dfrac{v - v_0}{\Delta t}$, joten $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4{,}0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6{,}67\,\text{s}$

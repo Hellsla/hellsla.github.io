@@ -31,6 +31,8 @@ jobs:
         run: python scripts/test_notation.py
       - name: learning goals complete their heading "Tällä tunnilla opit" / "you will learn to" (teacher 2026-10-29)
         run: python scripts/objectives.py && python scripts/test_objectives.py
+      - name: every numeric exercise shows its model solution's rounded answer, and it agrees with the value the check accepts (teacher 2026-10-30)
+        run: python scripts/answers_shown.py
       - name: Sovella itsenäisesti tasks (points, criteria, competencies, links, solutions, answers, translations) and their tests (teacher 2026-10-28)
         run: python scripts/practice.py check && python scripts/test_practice.py
       - name: experimental investigations (metadata, prerequisites, F/E levels, working-mode blocks, help links, figures; teacher 2026-10-30)
@@ -42,10 +44,16 @@ jobs:
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
       - run: python scripts/build.py --all
+      - name: built pages are accessible as static HTML (field names, aria references, unique ids, figure text alternatives, button names, page language; teacher 2026-10-30)
+        run: python scripts/check_a11y.py site
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)
         run: python scripts/test_svgids.py && python scripts/svgids.py site
       - name: force diagrams obey their physics (scripts/fbd.py, docs/force-diagrams.md)
         run: python scripts/test_fbd.py
+      - name: every "Voimakuvio" step of a model solution shows a drawn force diagram, and every ```voimakuvio spec draws with its physics checked (scripts/fbdspec.py, teacher 2026-10-30)
+        run: python scripts/fbdspec.py check && python scripts/test_fbdspec.py
+      - name: the simulations' physics models pass their tests (assets/sims/*/*/model.js, tests/models/, teacher 2026-10-30)
+        run: python scripts/test_models.py
       - name: every lesson has Edellinen luku / Seuraava luku in the teaching order (teacher 2026-10-29)
         run: python scripts/test_chapter_nav.py site
       - name: front page and module pages list what each language published, one link per row, language links land on a note (teacher 2026-10-29)

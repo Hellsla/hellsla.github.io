@@ -1,17 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: 6f2cf62a1b9423b6
+CONTENT-HASH: 77d0c5813b2c4c1b
 
 ## Blocking
 
 ## Polish
-- tests/sims/fy4-12.json (canvas assertion) — the 600×400 check now holds only on a wide screen, so nothing checks the phone canvas. This is acceptable: the change is layout only, and the physics assertions are unchanged and pass. — If wanted, assert `c.height===575` on a narrow root.
-- inquiry.json exp-3, correct option — "ensin juoksija saavuttaa bussin" is right, but the juoksija also passes the bus (the gap changes sign). Fine (C); optionally "saavuttaa ja ohittaa".
+- lesson.md:462 (vt aria-label): "Hetkeen t = 3,0 s asti pyöräilijä on edellä ja etumatka kasvaa" still reads as if the cyclist leads only until 3,0 s. Fix: "Pyöräilijä on edellä, ja hetkeen 3,0 s asti etumatka kasvaa". The en version has the same wording.
+- lesson.md:616: "etumatka on suurimmillaan tai pienimmillään" is fine in the same-direction context. Writing "välimatka" would make it read right for any direction.
 
 ## Checked
-- One script recomputed every number from the task data with my own meeting-root model. All agree with the text and with lesson-answers.py: the figure (12 s, 36 m), the same-place pass (6,0 s, 36 m, 12 m/s, largest gap 9,0 m, both vt areas 9 m), the worked example (roots −2,0 s and 8,0 s, 64 m, 16 m/s, gap 25 m at 3,0 s), cases 1–5 (10 s and 50 m; −10 s; 4 ± √6 s = 1,55 s and 6,45 s), the transfer task (8,0 s, 96 m, 24 m/s), check-2 and its mistakes (6,0; 15; 30; 10 s), pr-paikka (25/50/10) and exit ticket 3.
-- Round-2 polish is fixed. The exp-3 "Kerran" option ("ohittaa … pysyy edellä") is now consistent and still wrong, and its feedback is right. The gaps at 0, 2, 6 and 7 s are −5, +1, +1 and −1,5 m, so the sign changes twice. The siirto Periaate now reads "Kun ohitushetki tunnetaan".
-- sim.js diff: only the layout changed (WIDE/NARROW lane, ruler and graph boxes, and the legend row). The physics and simState are untouched. GX, GY and X read the active box, so the graph and the ruler stay true to the model in both layouts. The 390 px captures show the axes and the starting positions correctly.
-- Experiments: tapaus is locked and t is varied. 10 s and 8,0 s lie on the 0,5 s grid. xA, xB, vA, gap and meetings exist in simState.
-- Each choice item has exactly one correct option, and every distractor's feedback gives the right reason.
-- Theory, summary, contribution, model answers and exit ticket all say the same thing. The largest gap carries the condition "kun takana oleva lähtee hitaampana", and two positive roots are allowed.
-- Scope: within FY4 "tasainen ja tasaisesti kiihtyvä suoraviivainen liike". The standing rules hold (LaTeX, \cdot, \overline{v}, blue v and orange a).
+- Round 1 item 1 is fixed. The sim `calc` (inquiry.json:144) now says that $x_\text{B} - x_\text{A}$ tells how much larger B's position coordinate is and that it is zero at the meeting. It calls it B's etumatka only when the bodies move in the positive direction. The en and fi-easy versions say the same.
+- Round 1 item 2 is fixed. Koe 1's hints 1–3 and its solution say "paikkojen ero" and nowhere "etumatka" or "edellä", in fi, fi-easy and en. Pred-1 and check-2, the other head-on items, use neither word.
+- lesson.md:338 keeps the teacher's two sentences word for word. It then adds the direction rule: in the +x direction the higher line belongs to the body ahead, and in the −x direction the lower line does. This is correct, because in the −x direction the body ahead has the smaller x.
+- Every other use of edellä, takana, jäljessä and etumatka was scanned: the hook, pred-2/3, Koe 2, Koe 3, ei-kohtaa, the conclusion, Etsi virhe, siirto, check-3, the v–t paragraph and the summary. Each one is in a situation where both bodies move in the +x direction. Koe 3 uses "etumatka $x_\text{B}-x_\text{A}$" with motion in +x, so it is consistent.
+- No text equates a higher line, or a positive $x_\text{B}-x_\text{A}$, with "ahead" without the direction condition. This covers lesson.md, the captions, the exit ticket, sim-spec, sim.js and its readout and case labels ("edellä oleva on nopeampi" is case 4, in +x).
+- All numbers were recomputed in one script and agree:
+  - head-on: 12 s, 36 m
+  - same-start pass: 6,0 s, 36 m, 2v, largest gap 9 m
+  - example: 8,0 s, 64 m, 16 m/s, other root −2,0 s, 25 m
+  - case 1: 50 m
+  - case 4: −10 s
+  - case 5: 1,55 s and 6,45 s
+  - siirto: 24 m/s (96 m)
+  - check-2: 6,0 s
+- simState provides xA, xB, vA, gap and meetings, which are the keys the experiments measure.
+- Each choice item has exactly one correct option, and its feedback is right.
+- The hash is the same at the start and at the end.

@@ -128,10 +128,10 @@ class FBD:
                                 rope=rope, v_rel=v_rel, lab=lab, tex=tex or _bold(sym), push=push))
         return self
 
-    def component(self, sym, of, axis, lab=None, at=None, tex=None):
+    def component(self, sym, of, axis, lab=None, at=None, tex=None, k=None):
         """The projection of force `of` on the unit direction `axis` ((x, y), y up), drawn dashed from the same point
         (or from `at`). It is drawn in place of nothing: the original force stays, and the reader sees the difference."""
-        F = next(x for x in self.forces if x["sym"] == of); u = _unit(axis); k = _dot(F["vec"], u)
+        F = next(x for x in self.forces if x["sym"] == of); u = _unit(axis); k = _dot(F["vec"], u) if k is None else k   # k: a drawn length set by the caller
         self.comps.append(dict(sym=sym, of=of, vec=(u[0] * k, u[1] * k), at=at, lab=lab, tex=tex or _bold_comp(sym)))
         return self
 
@@ -174,7 +174,7 @@ class FBD:
             d = _unit(self.a_dir)
             if d == (0.0, 0.0):
                 if math.hypot(*net) > eps: out.append("the object does not accelerate, so its forces must cancel (equal and opposite lengths)")
-            elif math.hypot(*net) <= eps or abs(_cross(_unit(net), d)) > 0.05 or _dot(net, d) <= 0:
+            elif math.hypot(*net) <= 1e-6 * big or abs(_cross(_unit(net), d)) > 0.05 or _dot(net, d) <= 0:   # a small net force counts too
                 out.append("the net force must point in the direction of the acceleration")
         return out
 

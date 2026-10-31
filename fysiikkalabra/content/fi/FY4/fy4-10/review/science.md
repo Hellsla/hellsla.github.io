@@ -1,16 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: e90e74f3120fa3a8
+CONTENT-HASH: 3ce5496422f13f04
 
 ## Blocking
-- None.
 
 ## Polish
-- Notation versus *Liikemäärä ja impulssi*: that chapter uses an unprimed $v$ for the velocity after; this one uses it for the velocity before. Fix: add one bridging line.
-- lang/fi.json sims.fy4-10 "lukemat": "Nyt: $v_1$, $v_2$" reuses the symbols of the initial-velocity sliders. Fix: rename them.
+- lessons/FY4/fy4-10/lesson-answers.py:12 — the new comment says this file uses "fourth-order Runge–Kutta (RK4), as in model.js". That is not true. Lines 28–32 are a velocity Verlet step (half kick, drift, force, half kick). Only model.js uses RK4. Fix: "Velocity Verlet steps of 0,2 ms here (model.js uses RK4 with the same step)". The numbers are not affected: they agree with the closed forms below.
+- assets/sims/fy4/fy4-10/sim.js:36–48 (fitRun) — carried over from round 3. On a narrow screen the arrows can get short at the worst settings (scale down to 0,39 of the default). The experiment settings are not affected.
+- inquiry.json `simulaatio.calc` — carried over: in the kimmoton case, E_sis also counts the bumper's energy when it relaxes off contact.
+- sim.js:224, 242 — carried over: the label *nyt* could read *jälkeen* once the run has ended.
 
 ## Checked
-- The hash was e90e74f3120fa3a8 at the start and at the end. Since round 4 (hash 0c23e9f95fa7ef1f, commit 0d794894), commit 963b44ca changed exactly three places in the lesson files: inquiry.json:415, lesson.md:69 and the siirto solution's Järkevyys. Nothing changed in lessons/FY4/fy4-10, the simulation or the pictures.
-- inquiry.json:415 now says the wrong result is larger than the right-moving cart's initial speed 0,40 m/s, and that this is impossible because the left-moving cart brakes it. I recomputed it: the wrong result is (0,20 + 0,18)/0,80 = 0,475 ≈ 0,48 m/s > 0,40 m/s. In a perfectly inelastic collision the common velocity lies between the initial velocities, −0,60 and +0,40 m/s, so the argument is valid. The correct result is 0,025 m/s. The round 4 Blocking item is resolved.
-- lesson.md:69 now states the constant-force condition before using $\overline{F}\,\Delta t$. The last sentence still extends the argument to a varying force, with equal and opposite forces at every instant. The text is correct.
-- In the siirto Järkevyys check, the mass ratio is 120/50 = 2,4 and the boat's speed is 2,4/2,4 = 1,0 m/s, which is consistent with the answer. The anecdotal sentence is gone and the check is complete.
-- Everything else is unchanged since round 4, so the round 4 checks still hold. Those checks covered every recomputed number, the sim model and simState, the conservation conditions, one correct option per choice and the one-dimensional FY4 scope.
+- The diff since b0bde749 in assets/sims/fy4/fy4-10 and content/fi/FY4/fy4-10 has two parts. sim.js line 71 changed by one line. review/carry.tsv is new. Nothing else changed. lesson-answers.py changed only its comment, in b0bde749 itself.
+- `DEC` (sim.js:266) is a `const` inside the p5 closure. It is set before p5 calls `setup`, so line 71 cannot hit it uninitialized. No page errors or console errors in any of the three languages.
+- I built with `python3 scripts/build.py fy4-10` and checked the preview in Playwright. The mass options are:
+  - fi: `0,20 kg | 0,40 kg* | 0,60 kg`
+  - en: `0.20 kg | 0.40 kg* | 0.60 kg`
+  - fi-easy: `0,20 kg | 0,40 kg* | 0,60 kg`
+- The option values are still `0.2/0.4/0.6`. So the adapter's `m1`/`m2` presets and `reset`, the model and the experiments are unchanged. The readout uses the same decimal sign as the options in each language (0,240 / 0.240 kg·m/s).
+- `node tests/models/fy4-10.test.js`: 4791 checks pass.
+- I ran lesson-answers.py and it still gives the round-3 values:
+  - elastic (0,200; 0,800), (0; 0,600), (−0,120; 0,480)
+  - sticky 0,400 / 0,300 / 0,240 m/s
+  - explosion (−0,632; 1,265), (−0,775; 0,775), (−0,849; 0,566), each with 0,24 J
+  - worked example 1,14 m/s with 15 %
+- I carried my round-3 findings forward: physics, conditions, experiments, numbers and assessment items. The text they judge has not changed.
+- The hash is the same at the start and at the end (3ce5496422f13f04).

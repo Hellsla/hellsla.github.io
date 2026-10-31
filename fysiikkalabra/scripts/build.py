@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import courses, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
+import answers_shown, courses, fbdspec, figcat, i18n, inquiry, investigations, local_courses, mathlayout, practice, svgids
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -60,10 +60,11 @@ if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate
 
 
 def render_md(text, **kw):
-    """Markdown -> HTML, with LaTeX kept out of markdown's reach.
+    """Markdown -> HTML, with LaTeX kept out of markdown's reach and force-diagram specs drawn (scripts/fbdspec.py).
     ```latex fences become $$...$$; every $$...$$ and $...$ is swapped for a token first,
     so underscores, backslashes and asterisks inside maths are not read as markdown."""
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
+    text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     maths = []
     def stash(m):
         x = m.group(0)
@@ -72,7 +73,7 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
-    return re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html)
+    return fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
 
 
 UNIT = r"(?:N/kg|m/s²|m/s|km/h|kPa|MPa|Pa|°C|K|kN|N|kg|g|km|cm²|cm|mm|m³|m|s|min|h|kJ|J|kW|W|dm³|l|Hz|%)"
@@ -226,20 +227,25 @@ def core_ids(ex):
 
 
 def exercise_html(e, solution_html, read=None, core=False):
-    ans = nbsp_units(f"{fi(e['answer'])} {e.get('unit', '')}".strip())
     numeric = isinstance(e["answer"], (int, float))
+    ans = nbsp_units(f"{fi(answers_shown.fallback(e['answer']) if numeric else e['answer'])} {e.get('unit', '')}".strip())
+    if numeric and solution_html:                                                  # the solution's own rounded answer
+        label = T("lesson.solution_answer_step")
+        step = re.search(rf'<p class="sol-label">{re.escape(label)}</p>(.*?)</div>', solution_html, re.S)
+        tex = answers_shown.shown(f"**{label}:** " + step.group(1).replace("\n", " "), label, e["answer"], e.get("tolerance", 0.02)) if step else None
+        if tex: ans = f"${tex}$"
     check = ""
     if numeric:
         unit = esc(e.get("unit", ""))
         check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" novalidate>'
-                 f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(T("lesson.answer_for", id=e["id"]))}" placeholder="?">'
+                 f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(inquiry.answer_label(e.get("unit", "")))}" aria-describedby="{esc(e["id"])}-q" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}>{tag}{inquiry.task_text(nbsp_units(e["text"]))}{fig}{check}'
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}>{tag}{inquiry.task_text(nbsp_units(e["text"]), pid=f"{e['id']}-q")}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -413,8 +419,11 @@ def build_language(lang):
             if not (src / "sim.js").is_file(): sys.exit(f"{meta['id']}: simulation folder {src.relative_to(ROOT)} has no sim.js")
             shutil.copytree(src, SITE / pub, dirs_exist_ok=True); assets.append(f"{pub}/sim.js")
             css = f'<link rel="stylesheet" href="{pub}/sim.css">' if (src / "sim.css").is_file() else ""
+            # model.js: the physics without drawing (README "Simulation models"), loaded first and tested by test_models.py
+            model = f'<script src="{pub}/model.js"></script>' if (src / "model.js").is_file() else ""
+            if model: assets.append(f"{pub}/model.js")
             sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
-                   f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script><script src="{pub}/sim.js"></script><!--sim-info--></section>')
+                   f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script>{model}<script src="{pub}/sim.js"></script><!--sim-info--></section>')
         for ref in courses.pic_refs_in([(courses.lesson_file(folder, n).read_text() if courses.lesson_file(folder, n).exists() else "") for n in courses.LESSON_TEXTS] + [ex_text, sol_text]):   # pictures the text refers to, at the same relative path
             if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)

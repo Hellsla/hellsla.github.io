@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 46abe3e3d88eea61
+CONTENT-HASH: 463f4929fece27b2
 
 ## Blocking
 
 ## Polish
+- (none)
 
 ## Checked
-Judged fi-easy as plainer Finnish: shorter sentences, common words, key terms explained once where they first matter, and the prediction, hint and feedback structure unchanged, so a weaker reader gets the same inquiry.
-The exit-ticket fix restores the 'why' of the first question.
-No other changes needed on pedagogy grounds.
+- fi-easy keeps short sentences: the Finnish direction rule is split into one idea per sentence, same content and same $...$ mentions; "paikkojen ero" is explained by the surrounding text.
+- Teaching order, hints and the Koe 1 solution stages are unchanged; the neutral wording in the hints avoids the false reading that the gap must be positive. Hash after the last edit: 463f4929fece27b2.

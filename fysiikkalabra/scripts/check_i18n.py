@@ -82,6 +82,9 @@ def check_lesson(fi, tr, lang, errs):
         a, b = courses.lesson_file(fi, n), courses.lesson_file(tr, n)
         if a.exists() != b.exists(): errs.append(f"{b.relative_to(ROOT)}: {'missing' if a.exists() else 'not in the Finnish lesson'}"); continue
         if not a.exists(): continue
+        spec = re.compile(r"```voimakuvio(?:\n|\\n).*?```", re.S)                  # drawn force diagrams: the same in every language
+        if spec.findall(a.read_text()) != spec.findall(b.read_text()):
+            errs.append(f"{b.relative_to(ROOT)}: its ```voimakuvio force-diagram specs differ from the Finnish ones (copy them unchanged)")
         if n.endswith(".json"):
             try: same_data(json.loads(a.read_text()), json.loads(b.read_text()), f"{rel}/{n}", errs)
             except json.JSONDecodeError as e: errs.append(f"{rel}/{n}: {e}")

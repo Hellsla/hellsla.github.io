@@ -148,32 +148,34 @@ class Axes:
     gridlines on every tick, axes with filled arrowheads and the axis titles at the arrow ends (NOTES 3, Graphs)."""
 
     def __init__(self, fig, origin, corner, x, y, xticks, yticks, xlabel, ylabel, grid=True, xfmt=None, yfmt=None,
-                 arrow_room=26, origin_label=True):
+                 arrow_room=26, origin_label=True, x_at=None):
         self.f, (self.x0, self.y0), (self.x1, self.y1) = fig, origin, corner
         self.xr, self.yr = x, y
         X, Y = self.X, self.Y
+        xa = self.y0 if x_at is None else Y(x_at)          # the time axis where the value is x_at (0 for a signed graph)
         if grid:
             for t in xticks:
                 if t != x[0]: fig.line(X(t), self.y0, X(t), self.y1, RULE_LIGHT, 1.5)
             for t in yticks:
-                if t != y[0]: fig.line(self.x0, Y(t), self.x1, Y(t), RULE_LIGHT, 1.5)
+                if t != y[0] and (x_at is None or t != x_at): fig.line(self.x0, Y(t), self.x1, Y(t), RULE_LIGHT, 1.5)
         ax_end, ay_end = self.x1 + arrow_room, self.y1 - arrow_room
-        fig.arrow(self.x0 - 1, self.y0, ax_end, self.y0, INK, 2.5, 13)
-        fig.arrow(self.x0, self.y0 + 1, self.x0, ay_end, INK, 2.5, 13)
+        if x_at is not None: fig.line(self.x0, self.y0, self.x0, xa, INK, 2.5)   # the y axis below the time axis
+        fig.arrow(self.x0 - 1, xa, ax_end, xa, INK, 2.5, 13)
+        fig.arrow(self.x0, (self.y0 if x_at is None else xa) + 1, self.x0, ay_end, INK, 2.5, 13)
         xf = xfmt or (lambda v: fi(v)); yf = yfmt or (lambda v: fi(v))
         for t in xticks:
             if t == x[0]: continue
-            fig.line(X(t), self.y0, X(t), self.y0 + 7, INK, 2)
-            if xf(t) != "": fig.tex(X(t), self.y0 + 24, xf(t), "middle")     # an empty format: a tick and gridline without a number
+            fig.line(X(t), xa, X(t), xa + 7, INK, 2)
+            if xf(t) != "": fig.tex(X(t), xa + 24 if x_at is None else xa - 22, xf(t), "middle")   # above a signed graph's axis     # an empty format: a tick and gridline without a number
         for t in yticks:
-            if t == y[0]: continue
+            if t == y[0] and x_at is None: continue
             fig.line(self.x0 - 7, Y(t), self.x0, Y(t), INK, 2)
             if yf(t) != "": fig.tex(self.x0 - 12, Y(t), yf(t), "end")
         if origin_label and x[0] == 0 and y[0] == 0:
             fig.tex(self.x0 - 10, self.y0 + 20, "0", "end")
         # the axis titles beyond the arrow tips, where no data, tick or gridline can reach them: leave about
         # 80 units right of the x arrow and 30 above the y arrow
-        fig.tex(ax_end + 6, self.y0, xlabel, "start") if xlabel else None
+        fig.tex(ax_end + 6, xa, xlabel, "start") if xlabel else None
         fig.tex(self.x0 - 10, ay_end - 16, ylabel, "start") if ylabel else None
 
     def X(self, v): return self.x0 + (v - self.xr[0]) / (self.xr[1] - self.xr[0]) * (self.x1 - self.x0)
