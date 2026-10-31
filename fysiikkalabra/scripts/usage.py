@@ -34,8 +34,23 @@ OLD_COLS = ["date", "lesson", "agent", "model", "effort", "mode", "round", "toke
 PRICES = {"fable": (10.0, 50.0, 0.25), "opus": (4.0, 20.0, 0.20), "sonnet": (2.0, 10.0, 0.20), "haiku": (0.10, 0.50, 0.01)}   # $/MTok in, out, cache read
 HAIKU_LONG = (0.50, 2.50, 0.05)          # Haiku 5.5 turns with a prompt over 100 000 tokens
 BASELINE = 473632                       # fy3-9, 25 Oct 2026, before packets and delta reviews: a sum of final contexts, compare with `context`
-LESSON = re.compile(r"\b([a-z]+\d+-[0-9][0-9a-z]*)\b")
-PACKET = re.compile(r"review/packet-(science|pedagogy|developer)\.md")
+LESSON = re.compile(r"\b([a-z]+\d+-(?:[0-9][0-9a-z]*|[a-z]+(?:-[a-z]+)*)|tvt-[a-z]+(?:-[a-z]+)*)\b")   # a lesson, an investigation (fy10-jousivakio) or a TVT guide
+
+
+def course_of(pid):
+    """The course of a lesson; FY10 for an investigation, TVT for a guide (the local course that lists them)."""
+    if pid.startswith("tvt-"): return "TVT"
+    try: return courses.course_of(pid)
+    except (SystemExit, ValueError, KeyError): return pid.split("-")[0].upper()
+
+
+def review_folder(pid):
+    """review/ of a lesson, an investigation or a TVT guide: where its usage.tsv lives."""
+    import guides, investigations
+    if pid in investigations.ids(): return investigations.folder(pid) / "review"
+    if pid in guides.ids(): return guides.folder(pid) / "review"
+    return courses.find_lesson(pid) / "review"
+PACKET = re.compile(r"review/packet-(science|pedagogy|visual|developer)\.md")
 
 
 def family(model):
@@ -105,7 +120,7 @@ def read_rows(f):
         for r in rows:
             r["context"], r["tokens"] = r.get("tokens", ""), ""
             r["source"] = r.get("source") or "notification"
-            r["course"] = r.get("course") or courses.course_of(r["lesson"])
+            r["course"] = r.get("course") or course_of(r["lesson"])
     return rows
 
 
@@ -118,7 +133,7 @@ def row_of(lid, agent, stage, s, ref, **extra):
     models = s["models"]
     model = ", ".join(m for m, _ in models.most_common()) or "?"
     t = s["tot"]
-    return {"date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "lesson": lid, "course": courses.course_of(lid),
+    return {"date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "lesson": lid, "course": course_of(lid),
             "agent": agent, "stage": stage, "model": model, "tokens": sum(t.values()), "input": t["input"], "output": t["output"],
             "cache_read": t["cache_read"], "cache_write": t["cache_write"], "context": s["context"], "turns": s["turns"], "seconds": s["seconds"],
             "calls": s["calls"], "cost_usd": "" if s["cost"] is None else f"{s['cost']:.4f}", "source": "transcript", "ref": ref, **extra}
@@ -135,7 +150,7 @@ def collect(lid, session=None, rnd="", since=None, batch=()):
     """batch: the lessons of one batch run (a comma list on the command line). A batch agent ("Lessons: a, b, c" in its
     prompt) and the orchestrator's part are shared equally among its lessons, so a course total counts each once."""
     sf = session_file(session); sid = sf.stem
-    f = courses.find_lesson(lid) / "review" / "usage.tsv"
+    f = review_folder(lid) / "usage.tsv"
     rows = read_rows(f); by_ref = {r.get("ref"): i for i, r in enumerate(rows) if r.get("ref")}
     new = []
     for t in sorted((sf.parent / sid / "subagents").glob("agent-*.jsonl")):
@@ -147,7 +162,7 @@ def collect(lid, session=None, rnd="", since=None, batch=()):
         meta_f = t.with_suffix(".meta.json"); meta = json.loads(meta_f.read_text()) if meta_f.exists() else {}
         role = PACKET.search(s["prompt"])
         agent = meta.get("agentType", "agent")
-        if role and agent in ("general-purpose", "agent", "claude"): agent = {"science": "science-reviewer", "pedagogy": "pedagogy-reviewer"}.get(role.group(1), role.group(1))
+        if role and agent in ("general-purpose", "agent", "claude"): agent = {"science": "science-reviewer", "pedagogy": "pedagogy-reviewer", "visual": "visual-editorial-reviewer"}.get(role.group(1), role.group(1))
         mode = re.search(r"\bMode:\s*(\w+)", s["prompt"]); r_ = re.search(r"\bRound:\s*(\d+)", s["prompt"])
         verdict = re.search(r"VERDICT:\s*(PASS|FAIL|DONE|BLOCKED)", s["last_text"])
         stage = "review" if "reviewer" in agent else "develop" if agent == "developer" else "other"
@@ -181,9 +196,9 @@ def collect(lid, session=None, rnd="", since=None, batch=()):
 
 
 def log(a):
-    f = courses.find_lesson(a.id) / "review" / "usage.tsv"
+    f = review_folder(a.id) / "usage.tsv"
     rows = read_rows(f)
-    rows.append({"date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "lesson": a.id, "course": courses.course_of(a.id),
+    rows.append({"date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "lesson": a.id, "course": course_of(a.id),
                  "agent": a.agent, "stage": a.stage, "model": a.model, "effort": a.effort, "mode": a.mode, "round": a.round, "context": a.context,
                  "seconds": a.seconds, "calls": a.calls, "verdict": a.verdict, "source": "reported"})
     write_rows(f, rows); print("logged", a.agent, a.model, a.context)
@@ -191,7 +206,7 @@ def log(a):
 
 def report(target, by=None):
     if target == "--all": folders = courses.lessons()
-    elif courses.LESSON_ID.match(target): folders = [courses.find_lesson(target)]
+    elif courses.LESSON_ID.match(target) or LESSON.fullmatch(target): folders = [review_folder(target).parent]
     else: folders = courses.lessons(target.upper())
     rows = [r for f in folders for r in read_rows(f / "review" / "usage.tsv")]
     if not rows: sys.exit(f"{target}: no review/usage.tsv rows")
