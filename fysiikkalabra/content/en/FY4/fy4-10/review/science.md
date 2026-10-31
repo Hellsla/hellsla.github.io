@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 07979b1c29e0047d
+CONTENT-HASH: e60c792ab4128301
 
 ## Blocking
 
+## Round (delta)
+- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the en page: mass selects show 0.20/0.40/0.60 kg (decimal point), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
+
 ## Polish
-- The fy4-10 sim shows the masses as "0,40 kg" with a decimal comma in every language, also en (assets/sims/fy4/fy4-10/sim.js line 71, `m.replace('.', ',')`). In en it should be "0.40 kg". This is a sim code matter, not a translation string, so it was left alone.
 - The Finnish symbol $E_\text{sis}$ is $E_\text{int}$ in en (inquiry.json and the sim key "sis": "int"); other en chapters write E_thermal for the Finnish E_lämpö, but the sim's quantity is internal energy as a whole, so E_int is consistent within the chapter.
 
 ## Checked

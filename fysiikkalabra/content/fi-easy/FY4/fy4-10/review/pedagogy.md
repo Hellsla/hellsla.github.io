@@ -1,7 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: db46009faeb4a589
+CONTENT-HASH: 37da2defef2c46f3
 
 ## Blocking
+
+## Round (delta)
+- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the fi-easy page: mass selects show 0,20/0,40/0,60 kg (decimal comma), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
 
 ## Polish
 

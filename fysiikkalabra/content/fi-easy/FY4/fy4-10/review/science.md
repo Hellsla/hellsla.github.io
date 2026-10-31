@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: db46009faeb4a589
+CONTENT-HASH: 37da2defef2c46f3
 
 ## Blocking
 
+## Round (delta)
+- Only change since the previous pass: sim.js mass options now use the page language's decimal sign (git diff 0c6ca8ec). Built fy4-10 and opened the fi-easy page: mass selects show 0,20/0,40/0,60 kg (decimal comma), no page errors. Earlier Polish note about the sim's decimal comma is resolved. Verdict unchanged.
+
 ## Polish
-- The sim shows the masses as "0,40 kg" in every language (assets/sims/fy4/fy4-10/sim.js line 71, `m.replace('.', ',')`). In fi-easy the decimal comma is right, so nothing to change; it is only wrong for en.
 
 ## Checked
 - Re-reviewed the passages changed since the earlier review (git diff a6af45ae): inquiry.json stage "simulaatio" (text, howto, model, calc) and the fy4-10 sim strings in lang/fi-easy.json (kok, sis, lukemat; selite unchanged) against the Finnish. lesson.md, exit-ticket.json, meta.json and figures.json are unchanged.
