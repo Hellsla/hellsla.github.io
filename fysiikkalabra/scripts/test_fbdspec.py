@@ -70,7 +70,7 @@ ok(fbdspec.overlaps(fo.format(0, 0, "N") + fo.format(20, 10, "T_y")) == [("N", "
 svg = fbdspec.draw("pinta 0\nG 147,15\nN 117,15\nT 60 30\nF_mu 51,96 vasen\na 0\nakselit 0\nkomponentit T\n", "t")
 ok(not fbdspec.overlaps(svg), "a short component beside N gets its label clear of N's (fy4-5 L2-01)")
 fbdspec.draw("pinta -4\nG 706,32\nN 704,60\nF_mu 21,19 ylös\na alas\nakselit -4\nkomponentit G\n", "t")
-ok(L["G_x"] > L["F_mu"] + 0.04 * L["G"], "two small forces both lifted to the floor keep their order: G_x down a 4° slope stays longer than friction (FY4 Sovella)")
+ok(L["G_x"] > L["F_mu"] + 0.09 * L["G"], "two small forces both lifted to the floor keep their order: G_x down a 4° slope stays longer than friction (FY4 Sovella)")
 refused("pinta 20\nerikseen\nG 10\nN 9,4\nF_mu 3,4 ylös\na 0\n", "`erikseen` on a slope")
 ok(fbdspec.missing("**Voimakuvio:** Paino alas ja tukivoima ylös.\n**Kaava:** $N = mg$") != [], "a text-only Voimakuvio step is found")
 ok(fbdspec.missing("**Voimakuvio:** Kappale suorakulmiona.\n```voimakuvio\nG 1\nT 1 ylös\na 0\n```\n**Kaava:** $T = mg$") == [], "a step with its diagram passes")

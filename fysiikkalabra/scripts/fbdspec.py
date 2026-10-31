@@ -307,13 +307,15 @@ def _restore_sums(res, hz, big):
 def _keep_order(kk, true_vec, ax, forces, sym, big):
     """Two small forces lifted to the floor can come out equal, so a component that wins on the axis (G_x down a 4°
     slope against a smaller friction) would look balanced. Keep the winner longer than what it beats, by its true
-    excess or at least 5 % of the largest force."""
+    excess or at least 10 % of the largest force (an arrowhead is most of a short arrow). Only a lift can break the
+    order: a winner drawn to scale, or a balance (rounded data within 1 % of the largest force), is left as it is."""
     t = true_vec[0] * ax[0] + true_vec[1] * ax[1]
     if not kk or not t: return kk
     opp_true = sum(-(x[1][0] * ax[0] + x[1][1] * ax[1]) for x in forces if x[0] != sym and (x[1][0] * ax[0] + x[1][1] * ax[1]) * t < 0)
     opp_drawn = sum(-(x[2][0] * ax[0] + x[2][1] * ax[1]) for x in forces if x[0] != sym and (x[2][0] * ax[0] + x[2][1] * ax[1]) * t < 0)
-    if abs(t) <= abs(opp_true) + 1e-9 or abs(kk) > abs(opp_drawn) + 0.05 * big - 1e-9: return kk
-    return math.copysign(abs(opp_drawn) + max(abs(t) - abs(opp_true), 0.05 * big), kk)
+    excess = abs(t) - abs(opp_true)
+    if excess <= 0.01 * big or abs(kk) - abs(opp_drawn) >= excess - 1e-9: return kk   # a balance, or drawn to scale
+    return math.copysign(abs(opp_drawn) + max(excess, 0.10 * big), kk)
 
 
 def _probe(b, cx, cy, ang, scale):
@@ -391,7 +393,7 @@ def draw(spec, fid, _frame=None):
                 for ax, c in zip(axes, "xy"):
                     kk = _keep_order(floor(vec[0] * ax[0] + vec[1] * ax[1]), next(x[1] for x in forces if x[0] == sym), ax, forces, sym, big)
                     v = (ax[0] * kk, ax[1] * kk)                                   # the forces' scale
-                    LENGTHS[f"{sym}_{c}"] = abs(kk); comps.append((f"{sym}_{c}", sym, ax)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
+                    LENGTHS[f"{sym}_{c}"] = abs(kk); comps.append((f"{sym}_{c}", sym, ax, kk)); arrows.append((at, (at[0] + v[0] * scale, at[1] - v[1] * scale), fbd._bold_comp(f"{sym}_{c}"), False))
         motion = []                                                                # velocity and acceleration, beside the body
         v_dir = _unit(along(b["v"], surf)) if b["v"] not in (None, "0", "nolla", "none") else None
         for sym_, dir_, R in ((r"\overline{v}", v_dir, 30), (r"\overline{a}", a_dir if a_dir != (0, 0) else None, 30 + 40 * (v_dir is not None))):
@@ -407,7 +409,7 @@ def draw(spec, fid, _frame=None):
         d = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), wrong="drawn lengths: tiny forces enlarged or own horizontal scale (checked above on the true sizes)")
         nf = len(forces)
         for j, (sym, _, vec, at, k, extra) in enumerate(forces): d.force(sym, vec, at, "other" if k == "gravity2" else k, tex=tex_of(sym), lab=offs[j], **extra)
-        for j, (cs, of, ax) in enumerate(comps): d.component(cs, of, ax, lab=offs[nf + j])
+        for j, (cs, of, ax, kk) in enumerate(comps): d.component(cs, of, ax, lab=offs[nf + j], k=kk)   # on the forces' scale
         if axes:
             ox, oy = cx + (W * 0.75 if two else W * 1.5), cy - H * 1.5
             for (vx, vy), lab in zip(axes, "xy"):

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0b3b46e3a218e29d
+CONTENT-HASH: 90e0956eeb5429f7
 
 ## Blocking
 (none left)
@@ -15,3 +15,4 @@ CONTENT-HASH: 0b3b46e3a218e29d
 - Physics identical: g sin α = 0.684 and g cos α = 9.786 m/s², μ_A = (0.684 − 0.45)/9.786 ≈ 0.024, 0.030 − 0.024 = 0.006 = a fifth of 0.030, about 3 × 0.002 and below 0.015; friction independent of speed, air resistance grows with speed, systematic error, curve extended to v = 0. Formulas identical, decimal point in text and LaTeX, table values equal to the Finnish.
 - Step names **Find:**, **Graph:**, **Model answer:** English; figure alt text complete. practice.py figures FY4 --lang en up to date; practice.py check FY4 OK.
 - Round 2 (Finnish changes to fy4-s1: source_note about both tables' models, part e graph_read and error_sources details, a0 tolerance 0.05, 'about a fifth of the value of part c', part a 'almost constant', accepted a0 0.43–0.47): rechecked against fi; all present and equivalent, numbers and formulas identical, no wording fix needed. practice.py check and figures OK.
+- Delta re-review: the only change is the new ```voimakuvio spec block in each **Voimakuvio:** step of solutions.md; it is byte-identical to the Finnish (check_i18n 0 errors), no Finnish text added, text and numbers unchanged. practice.py check and figures OK.
