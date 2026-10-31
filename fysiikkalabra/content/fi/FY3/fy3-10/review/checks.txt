@@ -7,4 +7,4 @@ ok   answer positions
 ok   layout 360 px
 ok   layout 768 px
 ok   layout 1280 px
-fy3-10: reviewed (science=PASS (carried over: objective-form), pedagogy=PASS, visual=missing (visual baseline)); exercises: reviewed (science=PASS, pedagogy=PASS, visual=missing (visual baseline))
+fy3-10: draft (science=stale, pedagogy=stale, visual=stale); exercises: reviewed (science=PASS, pedagogy=PASS, visual=PASS)

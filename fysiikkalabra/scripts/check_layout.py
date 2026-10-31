@@ -62,8 +62,9 @@ JS = """() => {
       const ann = k.querySelector('annotation'), txt = ann ? ann.textContent.slice(0, 70) : '';
       const kr = k.getBoundingClientRect(), lr = l.getBoundingClientRect();
       if (kr.right > lr.right + 2) out.push({what: 'formula', over: Math.round(kr.right - lr.right), text: 'calculation row: left side runs into the right side: ' + txt});
-      const lines = new Set([...k.querySelectorAll('.base')].map((b) => Math.round(b.getBoundingClientRect().top))).size;
-      if (lines > 1 && room > 40) out.push({what: 'formula', over: Math.round(room), text: 'calculation row: left side wraps though the chain has room: ' + txt});
+      const bs = [...k.querySelectorAll('.base')].map((b) => b.getBoundingClientRect());   // KaTeX splits a formula into bases at its operators; a tall base (a fraction) starts higher on the same line,
+      const wrapped = bs.some((b) => b.top > bs[0].bottom - 2);                           // so a row has wrapped only when a base starts below the first one's bottom
+      if (wrapped && room > 40) out.push({what: 'formula', over: Math.round(room), text: 'calculation row: left side wraps though the chain has room: ' + txt});
     }
   }
   for (const t of document.querySelectorAll('table')) {
