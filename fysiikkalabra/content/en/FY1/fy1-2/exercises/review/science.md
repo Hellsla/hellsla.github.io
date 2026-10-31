@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d6971f3803f69ec4
+CONTENT-HASH: e73d5c50b1992213
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
 - none needed
 
 ## Polish
-- L3-02 Reasonableness "cannot be scrolled through … at a glance" mirrors the Finnish wording.
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (12 tasks) and solutions.md (all steps Given…Reasonableness) against content/fi: numbers, units, sig figs, decimal points, \cdot, complete steps.
-- Update 2026-10-28: reviewed the newly translated fields intro, source_note, names, word units (pcs, million km) and string answers; button names in *asterisks* match the sim labels and lang exp_record; check_i18n shows no fy1-2 error.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercise translations (ruler-read figure task and its solution, unit-in-math numbers).
+- Delta review 2026-10-31 (en): exercises.json against content/fi: units moved into maths (82 um, 3.2 GHz, 5.0 ms, 2.0 um, 1.0 mm, 1920 px, 30.07 AU, 145 AU) with the same numbers; answers unchanged (L3-03: 2*145*1.496e8/2.998e5/3600 = 40.2 h); solutions.md unchanged.

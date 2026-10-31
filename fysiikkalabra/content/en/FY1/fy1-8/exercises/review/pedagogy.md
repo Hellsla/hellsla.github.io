@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6fd0af38dd92394f
+CONTENT-HASH: 55b9ef12b740c10f
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- exercises.json fy1-8-L3-03 unit — "repetitions" → "repeats" (consistent term).
-- solutions.md fy1-8-L2-04 Principle — "The deviation is compared with the prediction, so that the difference can be compared …" (repeated "compared", unclear) → "The deviation is expressed relative to the prediction, so that …".
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercise texts read naturally and ask the same thing; solution steps complete, step labels exactly as in the brief; terminology consistent with the lesson and terms.md.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (units in math, wording, tolerances unchanged by translation) and solutions.md (rounding/significant-figure notes, K/min working) against the new Finnish.
+- Translation review against the reviewed Finnish: the 5 / 4 / 3 tasks at levels 1 / 2 / 3 keep the Finnish order, difficulty and contexts (hand stopwatch, toy car, lab-record row, two-line fit, cooling water, time budget).
+- Natural English, units and symbols in maths as in the Finnish; the questions state the unit asked for; no answer disclosed in the task text.
+- Solutions keep the staged form (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) with the formula before the numbers; the notes on rounding and accepted forms (L2-01, L3-01) read clearly.
+- Unit "repeats" is consistent with the lesson terminology.

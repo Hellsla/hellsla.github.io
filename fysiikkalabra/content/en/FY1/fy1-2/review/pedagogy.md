@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1d075ae0b74ad266
+CONTENT-HASH: a743f9abb5450d01
+
 ## Blocking
+(none)
+
+## Fixed
+- none needed
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+- Delta review 2026-10-31 (en): hero aria-label and figure label read naturally, no Finnish left, learn items complete the prefix sentence, teaching sequence unchanged from the Finnish.
