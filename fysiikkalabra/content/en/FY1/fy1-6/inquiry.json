@@ -132,7 +132,7 @@
       "vary": "t",
       "names": {
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A",
         "mB": "mass m_B"
       },
@@ -198,7 +198,7 @@
       "names": {
         "mB": "mass m_B",
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A"
       },
       "units": {
@@ -263,7 +263,7 @@
       "names": {
         "mB": "mass m_B",
         "t": "moment t",
-        "ilma": "ilmanvastus",
+        "ilma": "air resistance",
         "mA": "mass m_A"
       },
       "units": {

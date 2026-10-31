@@ -3,7 +3,7 @@
     {
       "id": "fy1-2-L1-01",
       "level": 1,
-      "text": "Ihmisen hiuksen paksuus on 82 µm. Ilmoita paksuus millimetreinä.",
+      "text": "Ihmisen hiuksen paksuus on $82\\,\\mu\\text{m}$. Ilmoita paksuus millimetreinä.",
       "answer": 0.082,
       "unit": "mm",
       "tolerance": 0.02
@@ -46,7 +46,7 @@
     {
       "id": "fy1-2-L2-01",
       "level": 2,
-      "text": "Tietokoneen prosessorin kellotaajuus on 3,2 GHz eli 3,2 miljardia jaksoa sekunnissa. Käytä arvoja $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ ja $1\\,\\text{Hz} = 1/\\text{s}$. Kuinka monta kellojaksoa prosessori ehtii suorittaa 5,0 ms:ssa?",
+      "text": "Tietokoneen prosessorin kellotaajuus on $3{,}2\\,\\text{GHz}$ eli 3,2 miljardia jaksoa sekunnissa. Käytä arvoja $1\\,\\text{GHz} = 10^{9}\\,\\text{Hz}$ ja $1\\,\\text{Hz} = 1/\\text{s}$. Kuinka monta kellojaksoa prosessori ehtii suorittaa $5{,}0\\,\\text{ms}$:ssa?",
       "answer": 16000000,
       "unit": "kpl",
       "tolerance": 0.02
@@ -54,7 +54,7 @@
     {
       "id": "fy1-2-L2-02",
       "level": 2,
-      "text": "Bakteerin pituus on 2,0 µm. Kuinka monta tällaista bakteeria mahtuu peräkkäin 1,0 mm:n matkalle?",
+      "text": "Bakteerin pituus on $2{,}0\\,\\mu\\text{m}$. Kuinka monta tällaista bakteeria mahtuu peräkkäin $1{,}0\\,\\text{mm}$:n matkalle?",
       "answer": 500,
       "unit": "kpl",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy1-2-L3-02",
       "level": 3,
-      "text": "Näytön leveys on tarkalleen 1920 px. Kuvassa Kuun halkaisija, $3474\\,\\text{km}$, on yksi kuvapiste. Auringosta Neptunukseen on 30,07 AU ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta matka Auringosta Neptunukseen mahtuu kuvaan?",
+      "text": "Näytön leveys on tarkalleen $1920\\,\\text{px}$. Kuvassa Kuun halkaisija, $3474\\,\\text{km}$, on yksi kuvapiste. Auringosta Neptunukseen on $30{,}07\\,\\text{AU}$ ja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$. Kuinka monta näytön leveyttä peräkkäin tarvitaan, jotta matka Auringosta Neptunukseen mahtuu kuvaan?",
       "answer": 674.4,
       "unit": "kpl",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy1-2-L3-03",
       "level": 3,
-      "text": "Ohjauskeskus lähettää komennon Voyager 2:lle, kun luotain on 145 AU:n päässä. Komento kulkee valon nopeudella. Luotain lähettää vahvistuksen heti takaisin. Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Kuinka monta tuntia kuluu komennon lähettämisestä vahvistuksen saapumiseen?",
+      "text": "Ohjauskeskus lähettää komennon Voyager 2:lle, kun luotain on $145\\,\\text{AU}$:n päässä. Komento kulkee valon nopeudella. Luotain lähettää vahvistuksen heti takaisin. Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $c = 2{,}998\\cdot10^{5}\\,\\text{km/s}$. Kuinka monta tuntia kuluu komennon lähettämisestä vahvistuksen saapumiseen?",
       "answer": 40.2,
       "unit": "h",
       "tolerance": 0.02

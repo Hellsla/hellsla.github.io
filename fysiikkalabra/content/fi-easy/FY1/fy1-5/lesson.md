@@ -233,7 +233,7 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä 
 Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde on aina sama. Oletetaan, että tasainen liike alkaa nollakohdasta. Silloin kuljettu matka $s$ ja aika $t$ ovat suoraan verrannollisia. Kaksinkertainen aika antaa kaksinkertaisen matkan. Suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 
 ### Lineaarinen malli
-Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti. Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu vain vähän tarkasteltuun aikaan nähden. Mallin kuvaaja on suora. Suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja. Niitä verrataan mittauksiin.
+Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti. Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu tarkasteltavana aikana vain vähän. Mallin kuvaaja on suora. Suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja. Niitä verrataan mittauksiin.
 
 ## Kaava: Tasainen liike
 Oletetaan, että kappale on tarkastelun alussa ($t = 0$) paikassa $s_0$. Kappale liikkuu suoraa pitkin vakionopeudella $v$. Sen paikka hetkellä $t$ on

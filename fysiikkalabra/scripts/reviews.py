@@ -526,11 +526,21 @@ def _math_view(s):
     return TYPO_TOKEN.sub("", s.replace("{,}", ","))
 
 
+def _set_view(s):
+    """A line as read, whether a value or symbol is set as text or as maths: no $, no spacing commands, \\text{x} and
+    \\textsf{x} as x, \\mu as µ, {,} as a comma, no spaces."""
+    s = s.replace("\\\\", "\\").replace("$", "").replace("{,}", ",").replace("\\mu", "µ")
+    s = re.sub(r"\\(?:text|textsf|mathrm)\{([^{}]*)\}", r"\1", s)
+    return re.sub(r"\\[,;:!]|\s+", "", s)
+
+
 def _typography_pair(old, new):
     """True when two lines differ only inside their $…$ formulas, and there only in how the formula is set (_math_view):
     the words outside the maths identical, the same number of formulas."""
     if old == new: return False
-    if old.replace("$", "") == new.replace("$", ""): return True   # a symbol in the text set as maths ("(t, s)-kuvaaja" → "$(t, s)$-kuvaaja"), nothing else (visual audit 2026-10-31)
+    if _set_view(old) == _set_view(new):
+        fa, fb = [_math_view(x).replace("\\textsf", "\\text") for x in old.split("$")[1::2]], [_math_view(x).replace("\\textsf", "\\text") for x in new.split("$")[1::2]]
+        if fa == fb or (len(fa) < len(fb) and all(x in fb for x in fa)): return True   # the old formulas kept as they were ($m$ → $\\text{m}$ is a new meaning, not this)   # a symbol or a value with its unit set as maths ("82 µm" → "$82\\,\\mu\\text{m}$", "(t, s)" → "$(t, s)$", \\text{l} → \\textsf{l}), nothing else (visual audit 2026-10-31)
     if "$" not in old: return False
     a, b = old.split("$"), new.split("$")
     return len(a) == len(b) and all(x == y if i % 2 == 0 else _math_view(x) == _math_view(y) for i, (x, y) in enumerate(zip(a, b)))
@@ -572,6 +582,10 @@ def classify(path, diff_lines, lid):
             for o in list(rem):                        # a formula re-set, its meaning unchanged: only the visual reviewer looks
                 n = next((l for l in add if _typography_pair(o, l)), None)
                 if n is not None: cats.add("typography"); rem.remove(o); add.remove(n)
+        dedup = lambda l: tuple(list(dict.fromkeys(x)) for x in _math_and_numbers(l))
+        if name.endswith(".md") and len(rem) == len(add) == 1 and not SVG_LINE.match(rem[0]) and dedup(rem[0]) == dedup(add[0]) \
+                and not rem[0].lstrip().startswith(("#", "<", "```")):
+            cats.add("wording"); return               # one prose line reworded, its formulas and numbers the same ("Voyager 2" is not a new number) or a repeated formula dropped (visual audit 2026-10-31)
         if code and len(rem) == len(add) and rem and all(_js_label_pair(o, n) for o, n in zip(rem, add)):
             cats.add("label-position"); return       # a canvas label moved, its text unchanged: check_layout and test_sims see it
         if code or py:

@@ -62,7 +62,7 @@
     {
       "id": "fy1-4-L2-03",
       "level": 2,
-      "text": "Vesikanisterin ja siinä olevan veden yhteismassa $m$ mitattiin veden tilavuuden $V$ funktiona. Sovitettu suora kulkee pisteiden $(3{,}0\\,\\text{l};\\ 3{,}9\\,\\text{kg})$ ja $(9{,}0\\,\\text{l};\\ 9{,}9\\,\\text{kg})$ kautta. Mikä on tyhjän kanisterin massa? Anna vastaus kilogrammoina.",
+      "text": "Vesikanisterin ja siinä olevan veden yhteismassa $m$ mitattiin veden tilavuuden $V$ funktiona. Sovitettu suora kulkee pisteiden $(3{,}0\\,\\textsf{l};\\ 3{,}9\\,\\text{kg})$ ja $(9{,}0\\,\\textsf{l};\\ 9{,}9\\,\\text{kg})$ kautta. Mikä on tyhjän kanisterin massa? Anna vastaus kilogrammoina.",
       "answer": 0.9,
       "unit": "kg",
       "tolerance": 0.02

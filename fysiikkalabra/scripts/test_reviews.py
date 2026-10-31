@@ -380,8 +380,19 @@ p.write_text(src_md.replace(plain, plain.replace(" " + w + " ", " $" + w + "2$ "
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("... but a symbol changed while set as maths is not typography", "science: none" not in out, out)
 
+numline = next(l for l in src_md.splitlines() if re.search(r"\d", l) and not l.lstrip().startswith(("<", "#", "-", "`", "|", "{")) and len(l.split()) > 6)
+words = [x for x in numline.split() if x.isalpha() and len(x) > 3]
+p.write_text(src_md.replace(numline, numline.replace(" " + words[0] + " ", " " + words[0] + "kin ", 1), 1))
+code, out = run(t, "reviews.py", "scope", LESSON)
+expect("a prose line with a number reworded, its numbers and formulas the same: wording (science delta, not full)", "science: delta" in out and "wording" in out, out)
+p.write_text(src_md)
+
 # 8c. investigations, TVT guides and Sovella sets: three reports, or a baseline row for exactly this hash
 sys.path.insert(0, str(HERE)); import reviews as rv
+expect("a value with its unit set as maths is typography", rv._typography_pair("paksuus on 82 µm.", r"paksuus on $82\,\mu\text{m}$."))
+expect("... the litre \\text{l} → \\textsf{l} is typography", rv._typography_pair(r"$3{,}0\,\text{l}$", r"$3{,}0\,\textsf{l}$"))
+expect("... but $m$ → $\\text{m}$ (mass → metre) is not", not rv._typography_pair(r"massa $m$ on", r"massa $\text{m}$ on"))
+expect("... nor a changed value set as maths", not rv._typography_pair("on 82 µm.", r"on $83\,\mu\text{m}$."))
 d = pathlib.Path(tempfile.mkdtemp()); (d / "review").mkdir(); keep = rv.BASELINE, rv.VISUAL_GATE
 for n in ("science", "pedagogy"): (d / "review" / f"{n}.md").write_text("VERDICT: PASS\nCONTENT-HASH: 1111111111111111\n")
 rv.BASELINE = d / "visual-baseline.tsv"; rv.VISUAL_GATE = True

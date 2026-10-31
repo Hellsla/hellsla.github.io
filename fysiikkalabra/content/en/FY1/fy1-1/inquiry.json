@@ -126,7 +126,7 @@
         "L": -9
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -141,7 +141,7 @@
         "type": "numeric",
         "prompt": "Use the rows of the hydrogen atom and the proton in the table. By how many orders of magnitude is the hydrogen atom larger than its nucleus?",
         "answer": 5,
-        "unit": "suuruusluokkaa",
+        "unit": "orders of magnitude",
         "tolerance": 0.02,
         "hints": [
           "From the table you get the exponent $n$ of the order of magnitude of both objects. The nucleus of a hydrogen atom is a single proton.",
@@ -175,7 +175,7 @@
         "L": 7.7
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -220,7 +220,7 @@
         "L": 27.5
       },
       "names": {
-        "kohdeNimi": "kohde"
+        "kohdeNimi": "object"
       },
       "locked": [],
       "vary": "kohdeNimi",
@@ -507,7 +507,7 @@
       "title": "3. Calculation",
       "prompt": "The diameter of the Sun is $1.39\\cdot10^{9}\\,\\text{m}$ and the diameter of a neutron star is about $2.4\\cdot10^{4}\\,\\text{m}$, although the mass of a neutron star is greater than that of the Sun. How many times larger is the diameter of the Sun than the diameter of the neutron star?",
       "answer": 57917,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02,
       "hints": [
         "The question \"how many times larger\" is a division: divide the larger size by the smaller.",
