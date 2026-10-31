@@ -1,0 +1,124 @@
+{
+  "id": "fy10-tuulivoimala",
+  "type": "investigation",
+  "title": "Tuulivoimalan tutkiminen",
+  "question": "Miten valitsemasi tekijä vaikuttaa tuulivoimalan pienoismallin tuottamaan sähkötehoon?",
+  "description": "Kokeellinen tutkimus: selvitä, miten yksi valitsemasi tekijä vaikuttaa tuulivoimalan pienoismallin sähkötehoon, kun teho lasketaan mitatusta jännitteestä ja sähkövirrasta, ja laajennuksena määritä voimalan hyötysuhde.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY2",
+    "FY4",
+    "FY6"
+  ],
+  "source": "Esimerkkityöt.pdf s. 7 (Tuulivoimalan tutkiminen), opettajan aineisto",
+  "learn": [
+    "valitsemaan tutkittavan tekijän ja päättämään, mitä muutat, mitä mittaat ja miten pidät muut tekijät vakioina",
+    "määrittämään sähkötehon mitatusta jännitteestä ja sähkövirrasta",
+    "arvioimaan, ovatko mittaamasi erot suurempia kuin mittausten epävarmuus"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Yhden tekijän vaikutus sähkötehoon",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Tuulivoimalan hyötysuhde",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-3",
+      "why": "Teho kertoo, kuinka paljon energiaa muuntuu tai siirtyy sekunnissa; voimalan sähköteho on kuormaan sekunnissa siirtyvä energia."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-15",
+      "why": "Luku kertoo, miten tuulivoimala muuntaa tuulen liike-energiaa sähköksi, ja antaa laajennuksessa tarvittavan tuulen tehon $\\tfrac{1}{2}\\rho A v^3$."
+    },
+    {
+      "kind": "physics",
+      "level": "extension",
+      "target": "fy2-4",
+      "why": "Laajennuksessa voimalan hyötysuhde lasketaan sähkötehon ja tuulen tehon suhteena."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähköteho $P = UI$",
+      "missing": "FY6: Sähköteho ja Joulen laki",
+      "why": "Voimalan sähköteho lasketaan kuorman jännitteestä ja sähkövirrasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Jännitteen ja sähkövirran mittaaminen yleismittarilla",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Virtamittari kytketään sarjaan kuorman kanssa ja jännitemittari sen rinnalle; kytkentäkaavio on tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus, toistomittaukset ja tuloksen ilmoittaminen epävarmuuksineen."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen ja tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu: muuttuja, mitattavat suureet ja vakioina pidettävät tekijät."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Taulukon laskut ja mittauspisteiden kuvaaja ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Teho lasketaan jokaisesta mittauksesta, ja tekijän vaikutus nähdään kuvaajasta."
+    },
+    {
+      "kind": "tvt",
+      "level": "helpful",
+      "text": "Jännitteen ja sähkövirran tallentaminen antureilla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Heiluvista lukemista saa tallennuksen avulla luotettavamman keskiarvon kuin silmällä lukemalla."
+    }
+  ],
+  "equipment": [
+    "tuulivoimalan pienoismalli, jossa on vaihdettavat tai säädettävät lavat",
+    "puhallin",
+    "jännitemittari ja virtamittari (esimerkiksi kaksi yleismittaria) tai jännite- ja virta-anturi",
+    "säädettävä kuormitusvastus",
+    "johtimia",
+    "mittanauha tai pitkä viivain",
+    "tarvittaessa tuulimittari tuulen nopeuden mittaamiseen",
+    "lapakulman tutkimiseen astelevy, jos navassa ei ole kulma-asteikkoa"
+  ],
+  "safety": [
+    "Pidä kädet, hiukset, korut ja johdot poissa pyörivien lapojen ulottuvilta, ja varmista, etteivät lavat pääse osumaan muihin esineisiin.",
+    "Vaihda lapoja, muuta niiden kulmaa tai siirrä voimalaa vain, kun puhallin on sammutettu ja roottori on pysähtynyt.",
+    "Pidä kasvot poissa roottorin pyörimistasosta, kun roottori pyörii: irronnut lapa sinkoutuu tässä tasossa.",
+    "Aseta puhallin ja voimala tukevasti, etteivät ne kaadu tai liiku ilmavirran tai tärinän takia.",
+    "Puhallin on verkkovirtalaite: käytä sitä vain ehjänä, älä avaa sitä äläkä kytke mitään sen johtoihin. Voimalan virtapiiriin ei kytketä verkkojännitettä.",
+    "Kytke virtamittari aina sarjaan kuorman kanssa, älä koskaan suoraan generaattorin napoihin."
+  ]
+}

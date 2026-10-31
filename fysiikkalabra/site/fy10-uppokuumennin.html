@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uppokuumentimen hyötysuhteen määrittäminen — Ruukkilabra</title>
+<meta name="description" content="Kokeellinen tutkimus: mittaa uppokuumentimen jännite, sähkövirta ja veden lämpötila ja määritä hyötysuhde kuvaajan kulmakertoimesta.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/fy10-uppokuumennin.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:title" content="Uppokuumentimen hyötysuhteen määrittäminen">
+<meta property="og:description" content="Kokeellinen tutkimus: mittaa uppokuumentimen jännite, sähkövirta ja veden lämpötila ja määritä hyötysuhde kuvaajan kulmakertoimesta.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/fy10-uppokuumennin.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Kirjoita luku, esimerkiksi 9,81.", "correct": "Oikein.", "not_quite": "Ei aivan.", "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.", "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.", "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.", "check_retry": "Ei aivan. Yritä uudelleen.", "choose_first": "Valitse ensin vaihtoehto.", "fold_answered": "vastattu {{done}}/{{n}}", "fold_feedback": " · palaute {{shown}}/{{n}}", "fold_question_one": "{{n}} kysymys", "fold_question_many": "{{n}} kysymystä", "sim_in_use": "Käytössä: <a><\/a>", "sim_moved": "Simulaatio on nyt kokeen kohdalla: <a><\/a>.", "sim_moved_default": "kokeeseen", "sim_note": "Mallin oletukset ja selitys", "exp_no_sim": "Tämä koe tehdään sivun simulaatiolla, jota tämä selain ei voinut käynnistää. Voit lukea kokeen asetelman ja päätellä tuloksen kaavasta.", "exp_unsupported": "Simulaatio ei tue tätä koetta (parametri {{params}}).", "exp_started": "Alkutila asetettu. {{locked}}Säädä {{vary}}, anna simulaation pyöriä ja paina Kirjaa mittaus.", "exp_started_locked": "Vakiona: {{names}}. ", "exp_start_first": "Aseta ensin alkutila.", "exp_no_value": "Simulaatio ei anna mitattavaa arvoa.", "exp_same_value": "Sama {{vary}} kuin edellisessä mittauksessa. Muuta arvoa ennen uutta mittausta.", "exp_recorded_more": "Mittaus {{n}} kirjattu. Muuta {{vary}} ja kirjaa vielä {{left}}.", "exp_recorded_enough": "Mittaus {{n}} kirjattu. Vertaa tuloksia ennusteeseesi.", "exp_reset": "Simulaatio ja taulukko nollattu.", "explain_measure_first": "Tee ensin mittaukset: {{experiments}}. Johtopäätös tehdään omista havainnoista.", "explain_write_first": "Kirjoita ensin oma vastauksesi. Sitten voit verrata sitä mallivastaukseen.", "explain_draw_first": "Piirrä ensin voimakuvio itse paperille ja rastita kohta. Sitten voit verrata sitä mallikuvioon.", "criteria_all": "Vastauksessasi on mallivastauksen kaikki keskeiset kohdat.", "criteria_missing": "Täydennä vastaustasi näillä perusteluilla ja vertaa sitten uudelleen:", "copy_no_rows": "(ei mittauksia)", "copy_conclusion": "Johtopäätös", "copy_not_written": "(ei vielä kirjoitettu)", "copy_done": "Taulukot ja johtopäätöksesi on kopioitu. Liitä ne muistiinpanoihisi.", "copy_failed": "Kopiointi ei onnistunut tässä selaimessa. Valitse teksti ja kopioi se itse.", "reflect_you_predicted": "<strong>Ennustit:<\/strong> {{text}}", "reflect_supported": "aineisto tukee ennustettasi.", "reflect_not_supported": "aineisto ei tue ennustettasi.", "reflect_measure_first": " — tee vielä mittaukset, niin näet, pitikö ennuste.", "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen<\/a>.", "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}", "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)"}, "format": {"decimal": ","}}</script>
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, etusivu"><img class="brand-mark" src="brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Lukion fysiikka</small></span></a>
+  <nav aria-label="Päävalikko"><a class="nav-modules" href="index.html#moduulit">Moduulit</a><details class="lang-menu"><summary><span class="visually-hidden">Kieli: </span><span class="lang-current">Suomi</span></summary><ul class="lang-list" aria-label="Valitse kieli"><li><a class="lang" href="en/index.html#unavailable-FY10" hreflang="en" lang="en" aria-describedby="lang-note-en">English</a><span class="lang-note" id="lang-note-en">sivu ei vielä saatavilla, vie etusivulle</span></li><li><a class="lang" href="fi-easy/index.html#unavailable-FY10" hreflang="fi" lang="fi" aria-describedby="lang-note-fi-easy">Selkeä suomi</a><span class="lang-note" id="lang-note-fi-easy">sivu ei vielä saatavilla, vie etusivulle</span></li></ul></details></nav>
+</header>
+<nav class="crumbs" aria-label="Polku"><a href="index.html">Ruukkilabra</a> › <a href="FY10.html">FY10</a> › Uppokuumentimen hyötysuhteen määrittäminen</nav>
+
+<nav class="toc" aria-label="Oppitunnin vaiheet"><p class="toc-head"><span>FY10</span>Uppokuumentimen hyötysuhteen määrittäminen</p><a href="#tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</a><a href="#tutkimustehtava">Tutkimustehtävä</a><a href="#ennusta">Ennusta</a><a href="#tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</a><a href="#teoriaa-lyhyesti">Teoriaa lyhyesti</a><a href="#suunnittele">Suunnittele</a><a href="#mittaa">Mittaa</a><a href="#kasittele-tulokset">Käsittele tulokset</a><a href="#epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</a><a href="#johtopaatokset">Johtopäätökset</a><a href="#raportoi">Raportoi</a><a href="#laajennus-eristyksen-vaikutus">Laajennus: eristyksen vaikutus</a><a href="#arvioi-omaa-tyotasi">Arvioi omaa työtäsi</a></nav>
+<main class="reading lesson">
+<article id="teoria" class="investigation"><h1>Uppokuumentimen hyötysuhteen määrittäminen</h1>
+<blockquote>
+<p><strong>Tutkimuskysymys:</strong> Kuinka suuri osa uppokuumentimeen tuodusta sähköenergiasta lämmittää kalorimetrissä olevaa vettä, ja pysyykö tämä osuus samana koko lämmityksen ajan?</p>
+</blockquote>
+<p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on kalorimetri, joka on piirretty puoliksi auki leikattuna. Sen sisällä on vettä, ja uppokuumentimen kierukka on kokonaan veden alla. Kannen läpi veteen ulottuvat myös lämpömittari ja sekoitin. Kuumennin on kytketty johtimilla virtalähteeseen ja kahteen yleismittariin. Pöydällä on lisäksi vaaka ja vihko." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy10uh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10uh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy10uh-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#7fb8e6"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10uh-wall)"/>
+  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10uh-desk)"/>
+  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="70" y="330" width="230" height="140" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="92" y="350" width="120" height="46" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="240" cy="372" r="14" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="275" cy="372" r="14" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="110" cy="435" r="9" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5"/>
+  <circle cx="150" cy="435" r="9" fill="#1f2933" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="360" y="360" width="110" height="110" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="372" y="372" width="86" height="37.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="415" cy="435" r="15.4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="415" y1="435" x2="415" y2="421.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="393" cy="458" r="5" fill="#1f2933"/>
+  <circle cx="437" cy="458" r="5" fill="#c92a2a"/>
+  <rect x="860" y="360" width="110" height="110" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="872" y="372" width="86" height="37.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="915" cy="435" r="15.4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="915" y1="435" x2="915" y2="421.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="893" cy="458" r="5" fill="#1f2933"/>
+  <circle cx="937" cy="458" r="5" fill="#c92a2a"/>
+  <rect x="510" y="230" width="260" height="240" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
+  <rect x="530" y="244" width="220" height="214" rx="6" fill="#ffffff" stroke="#8a96a3" stroke-width="2.5"/>
+  <rect x="532" y="290" width="216" height="166" rx="5" fill="url(#fy10uh-water)"/>
+  <line x1="532" y1="290" x2="748" y2="290" stroke="#2f74b5" stroke-width="2.5" stroke-linecap="butt"/>
+  <rect x="495" y="214" width="290" height="18" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="584" y="150" width="12" height="64" rx="3" fill="#495057" stroke="#1f2933" stroke-width="2"/>
+  <line x1="590" y1="214" x2="590" y2="400" stroke="#b8622d" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="644" y="150" width="12" height="64" rx="3" fill="#495057" stroke="#1f2933" stroke-width="2"/>
+  <line x1="650" y1="214" x2="650" y2="400" stroke="#b8622d" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M590,410 L594,424 L601,396 L609,424 L616,396 L624,424 L631,396 L639,424 L646,396 L650,410" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="701" y="130" width="18" height="290" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="710" cy="420" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
+  <rect x="706" y="300" width="8" height="120" fill="#c92a2a"/>
+  <line x1="719" y1="398" x2="727" y2="398" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="376" x2="727" y2="376" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="354" x2="727" y2="354" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="332" x2="727" y2="332" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="310" x2="727" y2="310" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="288" x2="727" y2="288" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="266" x2="727" y2="266" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="244" x2="727" y2="244" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="222" x2="727" y2="222" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="200" x2="727" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="178" x2="727" y2="178" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="719" y1="156" x2="727" y2="156" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="550" y1="165" x2="550" y2="438" stroke="#8a96a3" stroke-width="5" stroke-linecap="round"/>
+  <line x1="536" y1="438" x2="564" y2="438" stroke="#8a96a3" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="550" cy="161" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <path d="M110,435 C110,520 393,520 393,458" fill="none" stroke="#c92a2a" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M437,458 C437,320 590,90 590,150" fill="none" stroke="#c92a2a" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M150,435 C200,200 470,20 650,150" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M590,150 C610,40 880,60 893,458" fill="none" stroke="#c92a2a" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M650,150 C680,10 930,30 937,458" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="1010" y="430" width="150" height="40" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1035" y="420" width="100" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="1050" y="440" width="70" height="20" rx="3" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
+  <g transform="translate(1080,535) rotate(-5)"><rect x="-90" y="-36" width="190" height="66" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-74" y1="-20" x2="84" y2="-20" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="-8" x2="84" y2="-8" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="4" x2="84" y2="4" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="16" x2="84" y2="16" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="28" x2="84" y2="28" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/></g>
+</svg></p>
+<p>Vedenkeitin, lämminvesivaraaja ja akvaarion lämmitin lämmittävät vettä sähköllä. Tässä tutkimuksessa lämmität vettä uppokuumentimella, mittaat sähköisiä suureita ja veden lämpötilaa ja selvität, kuinka suuri osa sähköenergiasta päätyy veteen. Tulos määritetään kuvaajasta, ei yksittäisestä mittauksesta. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.</p>
+<div class="inv-learn"><h2 id="h-tavoitteet">Tässä tutkimuksessa opit</h2><ul><li>laskemaan sähköisistä mittauksista ja lämpötilamittauksista energiat, joita voi verrata keskenään</li><li>määrittämään hyötysuhteen kuvaajan kulmakertoimesta ja perustelemaan, miksi kuvaaja on luotettavampi kuin yksittäinen mittauspiste</li><li>arvioimaan, miten lämpöhäviöt ja mittausjärjestely vaikuttavat tulokseen ja sen epävarmuuteen</li></ul><h3>Vaativuus</h3><ul class="inv-levels"><li><strong>Hyötysuhde kuvaajasta</strong>: fysiikka F2 · koe E2</li><li><strong>Eristyksen vaikutus ja tulosten vertailu</strong>: fysiikka F2 · koe E3</li></ul><p class="inv-levels-note">F1–F3 kertoo, kuinka vaativaa fysiikkaa työ tarvitsee, E1–E3 kuinka vaativa mittaus ja analyysi on. Tuen määrän valitset itse alla.</p></div><fieldset class="inv-modes"><legend>Valitse työtapa</legend><label class="inv-mode"><input type="radio" name="inv-mode" value="O" checked><span><strong>Ohjattu tutkimus</strong> Saat vihjeet ja tärkeimmät vaiheet.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="OO"><span><strong>Osittain ohjattu tutkimus</strong> Teet osan valinnoista itse ja perustelet ne.</span></label><label class="inv-mode"><input type="radio" name="inv-mode" value="I"><span><strong>Itsenäinen tutkimus</strong> Suunnittelet ja perustelet itse, vihjeet piilossa.</span></label></fieldset><section class="inv-section" id="tarvitset"><h2 id="h-tarvitset">Tässä työssä tarvitset näitä tietoja ja taitoja</h2><h3>Fysiikan tiedot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy2-4.html">Hyötysuhde</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Hyötysuhde on hyödyksi saadun energian ja laitteeseen tuodun energian suhde.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy2-3.html">Teho P = ΔE/Δt</a> <span class="inv-mod">(FY2)</span><span class="inv-why">Teho kertoo, kuinka paljon energiaa siirtyy aikayksikössä, joten vakioteholla energia on teho kertaa aika.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy3-6.html">Aineen lämpeneminen ja jäähtyminen: Q = cmΔT</a> <span class="inv-mod">(FY3)</span><span class="inv-why">Veden saama lämpö lasketaan sen massasta, ominaislämpökapasiteetista ja lämpötilan muutoksesta, $Q = cm\Delta T$.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy3-5.html">Sisäenergia, lämpömäärä ja energian säilyminen</a> <span class="inv-mod">(FY3)</span><span class="inv-why">Sähköenergia muuttuu kuumentimessa sisäenergiaksi, ja lämpö siirtää sitä veteen ja ympäristöön.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> Sähköteho $P = UI$ <span class="inv-mod">(FY6: Sähköteho ja Joulen laki)</span><span class="inv-why">Sähköenergia lasketaan jännitteestä, sähkövirrasta ja ajasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti.</span></li></ul><h3>Kokeelliset taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Virtamittarin ja jännitemittarin kytkeminen <span class="inv-mod">(FY6: Mittaukset virtapiirissä)</span><span class="inv-why">Virtamittari kytketään sarjaan ja jännitemittari rinnan kuumentimen kanssa; kytkentä on selitetty ja piirretty tällä sivulla.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-4.html">Graafinen esitys ja suoran sovittaminen</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta.</span></li><li><span class="inv-level inv-level-essential">välttämätön</span> <a href="fy1-3.html">Mittaaminen ja mittauksen luotettavuus</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\bar{x} \pm \Delta x$.</span></li><li><span class="inv-level inv-level-helpful">hyödyllinen</span> <a href="fy1-8.html">Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi</a> <span class="inv-mod">(FY1)</span><span class="inv-why">Oman tutkimuksen suunnittelu ja työselostuksen rakenne.</span></li></ul><h3>TVT-taidot</h3><ul class="inv-prereq"><li><span class="inv-level inv-level-essential">välttämätön</span> Lämpötila-anturin mittausten tallentaminen ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta) <span class="inv-mod">(Ruukkilabran ohje on tekeillä)</span><span class="inv-why">Kulmakerroin ja sen epävarmuus saadaan sovituksesta, ja anturi kirjaa lämpötilan tasaisin väliajoin.</span></li></ul><h3>Välineet</h3><ul><li>kalorimetri, jossa on uppokuumennin, kansi ja sekoitin</li><li>opettajan antama pienjännitevirtalähde ja johtimia</li><li>virtamittari ja jännitemittari (tai kaksi yleismittaria)</li><li>lämpömittari tai lämpötila-anturi</li><li>vaaka veden massan määrittämiseen</li><li>sekuntikello, jos lämpötilaa ei kirjata anturilla</li><li>laajennukseen tavallinen lasinen dekantterilasi</li></ul><h3>Turvallisuus</h3><ul class="inv-safety"><li>Pidä sähkövirta opettajan ilmoittaman rajan alapuolella.</li><li>Kytke virta uppokuumentimeen vain, kun sen kierukka on kokonaan veden alla, ja katkaise virta ennen kuin nostat kuumentimen vedestä: kuivana kuumeneva kuumennin ylikuumenee ja voi rikkoutua tai polttaa.</li><li>Käytä vain opettajan antamaa pienjännitevirtalähdettä. Verkkojännitettä ei koskaan kytketä oppilaan virtapiiriin.</li><li>Pidä virtalähde, mittarit ja johtimien liitokset kuivina ja erillään vedestä, ja kuivaa roiskeet heti.</li><li>Lämmin vesi ja kuumennin voivat polttaa: älä kuumenna vettä kiehuvaksi, ja anna kuumentimen jäähtyä ennen kuin kosket siihen.</li><li>Lasinen lämpömittari rikkoutuu helposti: sekoita vettä sekoittimella, älä lämpömittarilla.</li></ul></section><section class="inv-section" id="tutkimustehtava"><h2 id="h-tutkimustehtava">Tutkimustehtävä</h2>
+<p><strong>Selvitettävä:</strong> uppokuumentimen hyötysuhde veden lämmittämisessä epävarmuuksineen, määritettynä kuvaajan avulla, sekä se, pysyykö hyötysuhde samana koko mittausalueella.</p>
+<p><strong>Päätät itse:</strong> veden määrän, lämmitysajan ja sen, kuinka usein kirjaat lukemat, mistä suureista piirrät kuvaajan ja miksi, mitkä mittauspisteet otat mukaan sovitukseen perusteluineen sekä tavan, jolla arvioit tuloksen epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.</p>
+<div class="inv-tuki" data-modes="I"><p><strong>Itsenäinen työtapa.</strong> Laajennus, eristyksen vaikutuksen tutkiminen, kuuluu työhösi: vertaa lopuksi kahdella järjestelyllä saatuja hyötysuhteita epävarmuuksineen.</p></div>
+</section><section class="inv-section" id="ennusta"><h2 id="h-ennusta">Ennusta</h2>
+<p>Kirjoita ennusteesi vihkoon tai työselostuksen hypoteesiksi ennen kuin luet eteenpäin ja ennen kuin mittaat:</p>
+<ol>
+<li>Kuinka suuri osa sähköenergiasta arvelet päätyvän veteen? Mihin muualle energiaa voi joutua?</li>
+<li>Millainen on veden lämpötilan kuvaaja ajan funktiona, kun kuumennin on päällä? Muuttuuko kuvaajan muoto, kun vesi on lämmennyt selvästi huoneenlämpöä lämpimämmäksi?</li>
+<li>Jos veden massa kaksinkertaistetaan ja kuumentimen teho pysyy samana, mitä tapahtuu lämpötilan nousunopeudelle? Entä hyötysuhteelle?</li>
+<li>Mikä mittauksessa on todennäköisesti suurin epävarmuuden lähde?</li>
+</ol>
+<p>Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.</p>
+</section><section class="inv-section" id="tutkimuskysymyksesta-mitattaviksi-suureiksi"><h2 id="h-tutkimuskysymyksesta-mitattaviksi-suureiksi">Tutkimuskysymyksestä mitattaviksi suureiksi</h2>
+<p>Energiaa ei voi lukea suoraan mittarista. Ennen kuin luet eteenpäin, kirjaa:</p>
+<ol>
+<li>Mitkä suureet mittaamalla saat selville kuumentimeen tuodun sähköenergian? Entä veden saaman lämmön?</li>
+<li>Miten saat yhdestä lämmityksestä useita mittauspisteitä?</li>
+<li>Mitä pidät vakiona, ja mitä kirjaat ylös vain kerran?</li>
+<li>Millaisen kuvaajan piirrät, jotta hyötysuhde saadaan sen kulmakertoimesta?</li>
+</ol>
+</section><section class="inv-section" id="teoriaa-lyhyesti"><h2 id="h-teoriaa-lyhyesti">Teoriaa lyhyesti</h2>
+<p>Uppokuumentimessa sähkövirta kulkee vastuslangan läpi, ja sähköenergia muuttuu langan sisäenergiaksi. Kuumasta langasta siirtyy lämpöä ympäröivään veteen, mutta lämpenevät myös kuumennin itse, kalorimetrin astia, lämpömittari ja sekoitin, ja lämpöä siirtyy ympäristöön. Tässä työssä hyödyksi lasketaan vain veden saama lämpö. <strong>Hyötysuhde</strong> kertoo, kuinka suuri osa laitteeseen tuodusta energiasta on hyötyä:</p>
+<p>$$\eta = \frac{Q}{E}$$</p>
+<p>missä $Q$ on veden saama lämpö ja $E$ kuumentimeen tuotu sähköenergia. Hyötysuhteella ei ole yksikköä, ja se ilmoitetaan usein prosentteina. <span class="inv-help">Tarvitsetko apua? → <a href="fy2-4.html">Hyötysuhde</a></span></p>
+<p><strong>Sähköteho ja sähköenergia.</strong> Sähkölaitteen teho on sen napojen välisen jännitteen $U$ ja laitteen läpi kulkevan sähkövirran $I$ tulo:</p>
+<p>$$P = UI$$</p>
+<p>Jännitteen yksikkö on voltti ($\text{V}$), sähkövirran ampeeri ($\text{A}$) ja tehon watti: $1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W} = 1\ \text{J/s}$. Sähkötehoa käsitellään tarkemmin moduulissa FY6. Teho kertoo, kuinka paljon energiaa siirtyy sekunnissa, joten kun jännite ja sähkövirta pysyvät vakioina, ajassa $t$ kuumentimeen tuotu sähköenergia on</p>
+<p>$$E = Pt = UIt$$</p>
+<p>Jos jännite tai sähkövirta muuttuu mittauksen aikana, energia lasketaan osissa: jokaisella lyhyellä aikavälillä $\Delta t$ tuotu energia $UI\Delta t$ lasketaan sen välin jännitteestä ja virrasta, ja osat lasketaan yhteen. <span class="inv-help">Tarvitsetko apua? → <a href="fy2-3.html">Teho ja energia</a></span></p>
+<p><strong>Veden saama lämpö.</strong> Kun veden lämpötila muuttuu $\Delta T$ verran, vesi saa lämmön</p>
+<p>$$Q = cm\Delta T$$</p>
+<p>missä $c$ on veden ominaislämpökapasiteetti (taulukkokirjasta) ja $m$ veden massa. Lämpötilan muutos on sama kelvineinä ja celsiusasteina. <span class="inv-help">Tarvitsetko apua? → <a href="fy3-6.html">Aineen lämpeneminen</a></span></p>
+<p><strong>Mittarien kytkeminen.</strong> Virtamittari kytketään <strong>sarjaan</strong> kuumentimen kanssa, jotta sama sähkövirta kulkee molempien läpi. Jännitemittari kytketään <strong>rinnan</strong> kuumentimen kanssa, sen kahden johtimen väliin, jotta se mittaa juuri kuumentimen jännitteen.</p>
+<p><svg data-fig="setup" viewBox="0 0 600 450" role="img" aria-label="Kaaviokuva. Virtalähteen napa on kytketty virtamittarin kautta uppokuumentimen toiseen johtimeen, ja kuumentimen toinen johdin palaa virtalähteen toiseen napaan. Virtamittari on siis sarjassa kuumentimen kanssa ja mittaa sähkövirran I. Jännitemittari on kytketty kuumentimen kahden johtimen väliin eli rinnan kuumentimen kanssa, ja se mittaa jännitteen U. Kuumentimen kierukka on kokonaan veden alla kalorimetrissä. Kannen läpi veteen ulottuvat myös lämpömittari ja sekoitin." style="max-width:100%;font-size:24px">
+  <rect x="20" y="25" width="150" height="80" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="26" y="53" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{virtalähde}$</div></foreignObject>
+  <circle cx="170" cy="45" r="5" fill="#1f2933"/>
+  <circle cx="170" cy="85" r="5" fill="#1f2933"/>
+  <foreignObject x="142" y="33" width="18" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$-$</div></foreignObject>
+  <foreignObject x="142" y="73" width="18" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$+$</div></foreignObject>
+  <line x1="170" y1="85" x2="250" y2="85" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="250" y1="85" x2="250" y2="108" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="250" cy="130" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="240.5" y="117" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{A}$</div></foreignObject>
+  <foreignObject x="200" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I$</div></foreignObject>
+  <line x1="250" y1="152" x2="250" y2="236" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="170" y1="45" x2="350" y2="45" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="350" y1="45" x2="350" y2="236" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="250" cy="190" r="5" fill="#1f2933"/>
+  <circle cx="350" cy="190" r="5" fill="#1f2933"/>
+  <line x1="250" y1="190" x2="278" y2="190" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="322" y1="190" x2="350" y2="190" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <circle cx="300" cy="190" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="290.5" y="177" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{V}$</div></foreignObject>
+  <foreignObject x="290" y="137.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$U$</div></foreignObject>
+  <rect x="180" y="245" width="240" height="185" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="196" y="252" width="208" height="170" rx="4" fill="#ffffff" stroke="#8a96a3" stroke-width="2"/>
+  <rect x="198" y="285" width="204" height="135" rx="3" fill="#a9d1f0"/>
+  <line x1="198" y1="285" x2="402" y2="285" stroke="#2f74b5" stroke-width="2" stroke-linecap="butt"/>
+  <rect x="170" y="232" width="260" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="250" y1="246" x2="250" y2="380" stroke="#b8622d" stroke-width="3.5" stroke-linecap="butt"/>
+  <line x1="350" y1="246" x2="350" y2="380" stroke="#b8622d" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M250,385 L255,397 L265,373 L275,397 L285,373 L295,397 L305,373 L315,397 L325,373 L335,397 L345,373 L350,385" fill="none" stroke="#b8622d" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="377" y="175" width="14" height="175" rx="7" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
+  <circle cx="384" cy="356" r="11" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+  <rect x="381" y="250" width="6" height="106" fill="#c92a2a"/>
+  <line x1="218" y1="200" x2="218" y2="405" stroke="#8a96a3" stroke-width="4" stroke-linecap="round"/>
+  <line x1="206" y1="405" x2="230" y2="405" stroke="#8a96a3" stroke-width="4" stroke-linecap="round"/>
+  <line x1="400" y1="300" x2="438" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="444" y="288" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{lämpömittari}$</div></foreignObject>
+  <line x1="420" y1="255" x2="438" y2="255" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="444" y="243" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{kalorimetri}$</div></foreignObject>
+  <line x1="356" y1="395" x2="438" y2="395" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="444" y="383" width="143" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{uppokuumennin}$</div></foreignObject>
+  <line x1="212" y1="330" x2="176" y2="330" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="79" y="318" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{sekoitin}$</div></foreignObject>
+  <foreignObject x="275" y="303" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{vesi}$</div></foreignObject>
+</svg></p>
+<div class="inv-tuki" data-modes="O OO"><p>Tarkista kirjauksesi tästä. Kun kirjaat jännitteen, sähkövirran ja veden lämpötilan tasaisin väliajoin, saat jokaiselle hetkelle $t$ kaksi energiaa: siihen mennessä tuodun sähköenergian $E = UIt$ ja veden siihen mennessä saaman lämmön $Q = cm(T - T_0)$, missä $T_0$ on veden lämpötila kuumentimen kytkemishetkellä. Yksi lämmitys antaa siis monta mittauspistettä.</p>
+<p><strong>Malli 1: lämpö sähköenergian funktiona.</strong> Jos hyötysuhde pysyy vakiona, $Q = \eta E$. Silloin kuvaaja, jossa pystyakselilla on $Q$ ja vaaka-akselilla $E$, on origon kautta kulkeva suora, ja sen kulmakerroin on hyötysuhde $\eta$. Kulmakerroin on yksikötön, koska kummankin akselin yksikkö on joule.</p>
+<p><svg data-fig="model" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: veden saama lämpö Q sähköenergian E funktiona mallin mukaan, kun hyötysuhde pysyy vakiona. Kuvaaja on origon kautta kulkeva suora. Katkoviivalla on vertailun vuoksi piirretty suora Q yhtä kuin E, jolla kaikki sähköenergia päätyisi veteen. Mallisuoralle on merkitty kahden pisteen väliset muutokset delta E ja delta Q, ja kulmakerroin eta on delta Q jaettuna delta E:llä. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="290" x2="484" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,290 L483,296 L483,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="291" x2="90" y2="36" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,24 L96,37 L84,37 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="60" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="502" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E$</div></foreignObject>
+  <foreignObject x="80" y="-6.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q$</div></foreignObject>
+  <polyline points="90,290 455,59.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <foreignObject x="372" y="42.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$Q = E$</div></foreignObject>
+  <polyline points="90,290 455,124" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="242" y1="221" x2="413" y2="221" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="413" y1="221" x2="413" y2="143" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="311" y="226.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\Delta E$</div></foreignObject>
+  <foreignObject x="423" y="167.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\Delta Q$</div></foreignObject>
+  <foreignObject x="160" y="83.5" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\eta = \dfrac{\Delta Q}{\Delta E}$</div></foreignObject>
+</svg></p>
+<p><strong>Malli 2: lämpötila ajan funktiona.</strong> Jos lisäksi jännite ja sähkövirta pysyvät vakioina, $cm(T - T_0) = \eta UIt$, eli</p>
+<p>$$T = T_0 + \frac{\eta UI}{cm}\cdot t$$</p>
+<p>Lämpötila ajan funktiona on silloin suora, jonka kulmakerroin on $a = \dfrac{\eta UI}{cm}$. Hyötysuhde saadaan kulmakertoimesta: $\eta = \dfrac{cma}{UI}$.</p>
+<p><svg data-fig="heating" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja: veden lämpötila T ajan t funktiona mallin mukaan, kun teho ja hyötysuhde pysyvät vakioina. Kuvaaja on suora, joka alkaa alkulämpötilasta T nolla. Suoralle on merkitty muutokset delta t ja delta T, ja kulmakerroin a on delta T jaettuna delta t:llä. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+  <line x1="89" y1="290" x2="484" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,290 L483,296 L483,284 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="291" x2="90" y2="36" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,24 L96,37 L84,37 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="502" y="275.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t$</div></foreignObject>
+  <foreignObject x="80" y="-6.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T$</div></foreignObject>
+  <polyline points="90,237 455,80.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="45" y="222.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$T_0$</div></foreignObject>
+  <line x1="83" y1="237" x2="90" y2="237" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="223" y1="180" x2="394" y2="180" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="394" y1="180" x2="394" y2="106.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="292" y="185.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\Delta t$</div></foreignObject>
+  <foreignObject x="404" y="129" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\Delta T$</div></foreignObject>
+  <foreignObject x="152" y="54.5" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$a = \dfrac{\Delta T}{\Delta t}$</div></foreignObject>
+</svg></p>
+<p>Kummankin mallin ehto on, että hyötysuhde pysyy vakiona. Se ei ole itsestään selvää: lämmin vesi luovuttaa ympäristöön sitä enemmän lämpöä, mitä suurempi on sen ja huoneilman lämpötilaero, ja lämmityksen alussa kuumennin ja astia lämpenevät ennen kuin vesi ehtii lämmetä. Mittaus näyttää, pysyvätkö pisteet suoralla koko mittausalueella.</p></div>
+</section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
+<p>Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, kuinka usein, mitä pidät vakiona ja kuinka pitkään lämmität.</p>
+<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Punnitse kalorimetrin sisäastia tyhjänä ja vedellä täytettynä: erotus on veden massa $m$. Veden on peitettävä kuumentimen kierukka kokonaan. Mittaa veden alkulämpötila $T_0$, kytke virta ja käynnistä ajanotto samalla hetkellä. Kirjaa jännite $U$, sähkövirta $I$ ja veden lämpötila $T$ esimerkiksi puolen minuutin välein, ja sekoita vettä koko ajan. Lämmitä, kunnes lämpötila on noussut noin $15\ ^\circ\text{C}$, ja katkaise sitten virta. Pidä sähkövirta opettajan ilmoittaman rajan alapuolella.</p></div>
+<div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Päätä itse, kuinka paljon vettä käytät, kuinka usein kirjaat lukemat ja kuinka pitkään lämmität. Valitse, kumpaa mallia käytät hyötysuhteen määrittämiseen, ja perustele valintasi. Kirjaa päätöksesi perusteluineen.</p></div>
+<div class="inv-tuki" data-modes="O OO"><p>Mieti ainakin näitä:</p>
+<ul>
+<li>Miksi vettä täytyy sekoittaa koko ajan? Mitä lämpömittari näyttäisi, jos se olisi lähellä kuumenninta ja vesi ei sekoittuisi?</li>
+<li>Mitä tapahtuu lämpöhäviöille, jos lämmität vettä kauan ja paljon? Kannattaako vesi lämmittää mahdollisimman kuumaksi?</li>
+<li>Mitä etua on siitä, että aloitat vedellä, joka on hieman huoneenlämpöä viileämpää, ja lopetat suunnilleen yhtä paljon huoneenlämmön yläpuolella?</li>
+<li>Pysyvätkö jännite ja sähkövirta vakioina? Mallia 2 voi käyttää vain, jos pysyvät; mallissa 1 energian voi laskea osissa.</li>
+</ul></div>
+</section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
+<p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle. Kirjaa myös veden massa, alkulämpötila ja huoneen lämpötila.</p>
+<div class="inv-tuki" data-modes="O"><p>Voit käyttää esimerkiksi tällaista taulukkoa:</p>
+<table>
+<thead>
+<tr>
+<th>$t\ (\text{s})$</th>
+<th>$U\ (\text{V})$</th>
+<th>$I\ (\text{A})$</th>
+<th>$T\ (^\circ\text{C})$</th>
+<th>$E = UIt\ (\text{J})$</th>
+<th>$Q = cm(T - T_0)\ (\text{J})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Jos lämpötila-anturi kirjaa lämpötilan itse, kirjaa jännite ja sähkövirta käsin muutaman kerran mittauksen aikana. Jos ne muuttuvat, laske sähköenergia osissa.</p></div>
+<p>Muista mittausepävarmuus: kirjaa, kuinka tarkasti voit lukea lämpötilan, ja selvitä mittarien tarkkuus mittarin ohjeesta tai opettajalta. Jos lasket hyötysuhteen yksittäisestä lukemasta, lämpötilan muutoksen epävarmuuteen vaikuttavat molemmat lukemat, sekä $T$ että $T_0$. Kuvaajan kulmakertoimeen alkulämpötilan virhe ei vaikuta, koska se siirtää kaikkia pisteitä yhtä paljon. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-3.html">Mittausepävarmuuden arvioiminen</a></span></p>
+</section><section class="inv-section" id="kasittele-tulokset"><h2 id="h-kasittele-tulokset">Käsittele tulokset</h2>
+<p>Piirrä mittaustuloksista kuvaaja, josta hyötysuhde saadaan kulmakertoimena tai lasketaan kulmakertoimesta. Merkitse akseleille suureet ja yksiköt. Piirrä mittauspisteet, älä yhdistä niitä murtoviivalla, ja sovita pisteisiin suora. <span class="inv-help">Tarvitsetko apua? → <a href="fy1-4.html">Suoran sovittaminen ja kulmakertoimen tulkinta</a></span></p>
+<div class="inv-tuki" data-modes="O"><p>Laske jokaiselle riville sähköenergia $E$ ja veden saama lämpö $Q$. Valitse pystyakselille $Q$ ja vaaka-akselille $E$. Hyötysuhde on sovitetun suoran kulmakerroin.</p></div>
+<p>Kirjoita sovitetun suoran yhtälö ja vastaa:</p>
+<ol>
+<li>Ovatko pisteet suoralla koko mittausalueella? Jos eivät, poikkeavatko ne alussa, lopussa vai molemmissa, ja mistä se voi johtua?</li>
+<li>Mikä suure on kulmakerroin, ja mikä on sen yksikkö?</li>
+<li>Kulkeeko suora origon kautta? Jos ei, mistä vakiotermi voi johtua?</li>
+<li>Laske $\eta = Q/E$ myös viimeisestä mittauspisteestä ja vertaa sitä kulmakertoimeen. Miksi ne eroavat, ja kumpi on luotettavampi?</li>
+</ol>
+<div class="inv-tuki" data-modes="O OO"><p>Tarkista vastauksesi tästä.</p>
+<p><strong>Kuvaajan alku ja loppu.</strong> Lämmityksen alussa kuumennin, astia ja lämpömittari lämpenevät, ennen kuin vesi ja lämpömittarin lukema ehtivät seurata. Siksi ensimmäiset pisteet voivat jäädä suoran alapuolelle, ja suora voi leikata akselin muualla kuin origossa. Tämä ei muuta suoran osan kulmakerrointa. Astia kuitenkin lämpenee veden mukana koko mittauksen ajan, ja sen saama lämpö pienentää kulmakerrointa ja siis hyötysuhdetta: tässä työssä se lasketaan häviöksi. Lopussa, kun vesi on selvästi huoneilmaa lämpimämpää, häviöt kasvavat ja pisteet voivat kaartua suoran alapuolelle. Sovita suora siihen osaan, jossa pisteet ovat suoralla, ja kerro raportissa, mitkä pisteet jätit pois ja miksi.</p>
+<p><strong>Miksi kuvaaja eikä yksi piste?</strong> Yhdestä mittauspisteestä laskettu $\eta = Q/E$ sisältää lämmityksen alun viiveen ja yksittäisen lukeman virheen, ja viimeisessä pisteessä myös lopun suuremmat häviöt. Kulmakerroin kertoo, kuinka paljon lämpöä vesi saa jokaista lisää tuotua joulea kohden, ja kuvaaja näyttää samalla, onko suhde vakio.</p></div>
+<p>Kuvaajan sovitukseen voit käyttää esimerkiksi Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohje ohjelman käyttöön on tekeillä.</p>
+</section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
+<p>Ilmoita hyötysuhde muodossa $\eta \pm \Delta\eta$ ja perustele, miten arvioit epävarmuuden $\Delta\eta$.</p>
+<div class="inv-tuki" data-modes="O OO"><p>Kulmakertoimen epävarmuuden $\Delta a$ voit arvioida jommallakummalla tavalla:</p>
+<ul>
+<li><strong>Sovitusohjelman keskivirhe.</strong> Monet ohjelmat ilmoittavat kulmakertoimen keskivirheen. Käytä sitä epävarmuutena $\Delta a$.</li>
+<li><strong>Jyrkin ja loivin suora.</strong> Piirrä jyrkin ja loivin suora, jotka vielä sopivat pisteisiin niiden epävarmuuksien rajoissa. Määritä niiden kulmakertoimet $a_\text{max}$ ja $a_\text{min}$ ja arvioi epävarmuus vaihteluvälin puolikkaana: $\Delta a = \dfrac{a_\text{max} - a_\text{min}}{2}$.</li>
+</ul>
+<p>Sovitus näkee vain pisteiden hajonnan. Jos veden massa, jännite tai sähkövirta on mitattu hieman väärin, kaikki pisteet siirtyvät samassa suhteessa, ja kulmakerroin muuttuu ilman, että pisteet hajoavat. Lisää siksi niiden suhteelliset epävarmuudet kulmakertoimen suhteelliseen epävarmuuteen. Kummassakin mallissa</p>
+<p>$$\frac{\Delta \eta}{\eta} \approx \frac{\Delta a}{a} + \frac{\Delta m}{m} + \frac{\Delta U}{U} + \frac{\Delta I}{I}$$</p>
+<p>missä $a$ on käyttämäsi kuvaajan kulmakerroin (mallissa 1 $a = \eta$). Alkulämpötilan $T_0$ virhe siirtää kaikkia pisteitä yhtä paljon, joten se ei muuta kulmakerrointa.</p>
+<p>Pyöristä $\Delta\eta$ yhteen merkitsevään numeroon ja $\eta$ samaan desimaaliin.</p></div>
+<p>Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuuden lähteet, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan ne olisivat muuttaneet tulosta? Mitä hyötysuhteesi kertoo juuri tästä järjestelystä, ja mitä se ei kerro kuumentimesta yleensä? Miten parantaisit mittausta?</p>
+</section><section class="inv-section" id="johtopaatokset"><h2 id="h-johtopaatokset">Johtopäätökset</h2>
+<p>Vastaa tutkimuskysymykseen mittaustesi perusteella. Pysyikö hyötysuhde samana koko lämmityksen ajan? Perustele, miksi kulmakertoimesta saatu hyötysuhde on luotettavampi kuin yksittäisestä mittauspisteestä laskettu. Viittaa kuvaajaan, esimerkiksi "kuvaajasta 1 nähdään, että …". Mihin veteen päätymätön energia joutui? Vertaa tulosta ennusteeseesi: mikä osui oikeaan ja mikä ei?</p>
+</section><section class="inv-section" id="raportoi"><h2 id="h-raportoi">Raportoi</h2>
+<p>Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:</p>
+<ul>
+<li><strong>Tausta ja teoria:</strong> miten sähköenergia ja veden saama lämpö lasketaan ja miksi valitsemasi kuvaajan kulmakertoimesta saadaan hyötysuhde.</li>
+<li><strong>Koejärjestely ja menetelmä:</strong> kytkentäkaavio, jossa näkyy, miten mittarit on kytketty, sekä työturvallisuus.</li>
+<li><strong>Mittaustulokset:</strong> alkuperäiset lukemat omissa sarakkeissaan ja johdetut suureet niiden oikealla puolella, sekä veden massa, alkulämpötila ja huoneen lämpötila.</li>
+<li><strong>Tulosten käsittely ja tulos:</strong> kuvaaja, sovitettu suora, mahdollisesti pois jätetyt pisteet perusteluineen $\eta \pm \Delta\eta$ oikein pyöristettynä sekä perustelu sille, miksi tulos määritettiin kulmakertoimesta eikä yksittäisestä pisteestä.</li>
+<li><strong>Luotettavuus:</strong> konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.</li>
+</ul>
+</section><section class="inv-section" id="laajennus-eristyksen-vaikutus"><h2 id="h-laajennus-eristyksen-vaikutus">Laajennus: eristyksen vaikutus</h2>
+<p>Kalorimetrin tehtävä on vähentää lämmön siirtymistä ympäristöön. Tutki, kuinka paljon sillä on merkitystä: toista mittaus järjestelyllä, joka eristää huonommin, esimerkiksi ilman kantta tai tavallisessa lasisessa dekantterilasissa, ja määritä hyötysuhde samalla tavalla.</p>
+<p>Vertaa kahdella järjestelyllä saatuja hyötysuhteita epävarmuuksineen: mahtuvatko ne toistensa epävarmuusväleihin? Päällekkäiset välit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Näkyykö ero myös siinä, missä kohdassa pisteet alkavat kaartua suoralta?</p>
+<div class="inv-tuki" data-modes="O OO"><p><strong>Vihjeitä.</strong> Muuta vain yhtä asiaa kerrallaan: käytä samaa veden massaa, samaa alkulämpötilaa ja samaa kuumenninta ja pidä sähkövirta samana. Muuten et tiedä, mistä mahdollinen ero johtuu.</p></div>
+<p>Muista turvallisuus myös laajennuksessa: kierukan on oltava koko ajan veden alla, ja lasiastia kuumenee.</p>
+</section><section class="inv-section" id="arvioi-omaa-tyotasi"><h2 id="h-arvioi-omaa-tyotasi">Arvioi omaa työtäsi</h2>
+<p>Arvioi työtäsi työselostuspohjan muistilistalla ja vastaa lisäksi:</p>
+<ul>
+<li>Pystyisikö toinen ryhmä toistamaan mittauksesi kuvauksesi perusteella?</li>
+<li>Perustuuko johtopäätöksesi kuvaajaan ja mittaustuloksiin vai siihen, mitä odotit?</li>
+<li>Mitä tekisit toisin, jos aloittaisit alusta?</li>
+</ul>
+<p><strong>Sovella:</strong> Vedenkeittimen tyyppikilvessä ilmoitetaan sen teho. Mitä sinun pitäisi tietää tai mitata, jotta voisit arvioida keittimen hyötysuhteen, ja miksi tulos olisi vain arvio? Pohdi tätä ajatuksen tasolla: kodin sähkölaitteiden sähköisiä suureita ei mitata itse.</p></section><details class="inv-teacher" id="opettajalle"><summary>Opettajalle</summary><p><strong>Valmistelu.</strong> Tarkista uppokuumentimen ja virtalähteen merkinnöistä sallittu jännite ja sähkövirta ja päätä niiden perusteella virtaraja, jonka ilmoitat opiskelijoille ennen työtä. Lähdeaineiston työkortista raja puuttuu, joten sivu ei anna lukuarvoa. Jos virtalähteessä on virranrajoitus, aseta se valmiiksi. Varaa veden massan määrittämiseen vaaka ja mielellään hieman huoneenlämpöä viileämpää vettä, jotta opiskelijat voivat kokeilla lämpöhäviöiden tasoittamista. Lämpötila-anturi ja tiedonkeruu tekevät kuvaajasta tiheän, mutta työ onnistuu myös lämpömittarilla ja sekuntikellolla. Laajennukseen tarvitaan tavallinen lasinen dekantterilasi tai kalorimetri ilman kantta.</p>
+<p><strong>Tavallisia virhekäsityksiä ja ongelmia.</strong></p>
+<ul>
+<li>Aika kirjataan minuutteina tai veden massa grammoina, jolloin energiat ovat väärässä yksikössä.</li>
+<li>Hyötysuhde lasketaan yhdestä mittauspisteestä, tavallisesti viimeisestä, eikä kuvaajan kulmakertoimesta. Silloin lämmityksen alun viive ja lopun suuremmat häviöt vaikuttavat tulokseen.</li>
+<li>Vettä ei sekoiteta, tai lämpömittari on aivan kuumentimen vieressä. Lämpötila voi silloin näyttää liian suurta, ja hyötysuhteeksi voi tulla jopa yli sata prosenttia. Yli sadan prosentin tulos on aina merkki mittaus- tai laskuvirheestä.</li>
+<li>Jännitemittari kytketään virtalähteen napoihin eikä kuumentimen napoihin, tai mittarit kytketään väärin päin: virtamittari rinnan ja jännitemittari sarjaan.</li>
+<li>Alkulämpötilaksi otetaan lukema, joka on kirjattu vasta virran kytkemisen jälkeen.</li>
+<li>Lämpötilan muutoksen yksikön ajatellaan vaativan muunnoksen celsiusasteista kelvineiksi.</li>
+<li>Suoran vakiotermiä pidetään virheenä. Lämmityksen alun viive siirtää suoraa, mutta ei muuta sen kulmakerrointa.</li>
+<li>Kalorimetrin astian lämpenemistä ei huomata. Sivulla hyödyksi lasketaan vain veden saama lämpö, joten astian lämpeneminen kuuluu häviöihin. Jos haluat, että astia lasketaan mukaan, kerro opiskelijoille sen lämpökapasiteetti tai sen materiaali ja massa.</li>
+</ul>
+<p><strong>Eriyttäminen.</strong> Ohjattu työtapa antaa toimintaohjeen, taulukon ja akselit; se sopii, jos opiskelija ei ole aiemmin kytkenyt mittareita. Osittain ohjatussa opiskelija päättää veden määrän, lukemien tiheyden ja lämmitysajan ja valitsee kahdesta mallista. Itsenäisessä työtavassa sivu antaa tutkimuskysymyksen, välineet ja periaatteet ($\eta = Q/E$, $E = UIt$, $Q = cm\Delta T$ ja mittarien kytkentä); opiskelija päättää itse, mistä suureista piirtää kuvaajan, ja laajennus kuuluu työhön. FY10-suunnitelmassa työ on teeman 5 ydintyö osittain ohjattuna.</p>
+<p><strong>Turvallisuus.</strong> Ilmoita virtaraja ennen kuin virta kytketään, ja tarkista kytkentä ennen virran kytkemistä. Uppokuumennin ei saa olla virrallinen kuivana: kierukan on oltava koko ajan veden alla, ja virta katkaistaan ennen kuin kuumennin nostetaan vedestä. Vain koulun pienjännitevirtalähde; verkkojännitettä ei kytketä opiskelijoiden virtapiiriin. Pidä virtalähde ja liitokset kuivina ja erillään vesiastioista. Vettä ei kuumenneta kiehuvaksi, ja kuumentimen annetaan jäähtyä ennen käsittelyä. Lasiset lämpömittarit rikkoutuvat helposti, jos niillä sekoitetaan.</p></details></article>
+</main>
+<footer class="bottom"><span>Ruukkilabra · lukion fysiikka, LOPS 2019</span><a href="FY10.html">← FY10-moduuli</a><a href="../../index.html">← Takaisin portfolioon</a></footer>
+</div>
+<script src="vendor/katex/katex.min.js"></script>
+<script src="vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+<script src="lesson.js"></script><script src="investigation.js"></script>
+</body></html>

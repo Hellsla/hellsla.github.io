@@ -1,0 +1,118 @@
+{
+  "id": "fy10-kaasu",
+  "type": "investigation",
+  "title": "Kaasun tilanyhtälön kokeellinen tutkiminen",
+  "question": "Miten suljetun kaasun paine riippuu sen tilavuudesta ja lämpötilasta, ja kuinka hyvin mittaukset noudattavat ideaalikaasun mallia?",
+  "description": "Kokeellinen tutkimus: mittaa suljetun ilman paine tilavuuden funktiona vakiolämpötilassa ja lämpötilan funktiona vakiotilavuudessa, etsi riippuvuuksille mallit kuvaajista ja yhdistä tulokset laajennuksessa tilanyhtälöksi.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY3"
+  ],
+  "source": "Esimerkkityöt.pdf s. 14–15 (Kaasun tilanyhtälön kokeellinen tutkiminen), opettajan aineisto",
+  "learn": [
+    "suunnittelemaan mittaussarjan, jossa yksi tilanmuuttuja pidetään vakiona ja kahden muun riippuvuutta tutkitaan",
+    "valitsemaan kuvaajan akselit niin, että mallin mukainen riippuvuus näkyy suorana, ja tulkitsemaan suoran kulmakertoimen ja vakiotermin",
+    "arvioimaan, kuinka hyvin mittaukset noudattavat ideaalikaasun mallia ja mitkä tekijät aiheuttavat poikkeamat"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Paine tilavuuden ja lämpötilan funktiona",
+      "physics": "F2",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Sarjojen yhdistäminen tilanyhtälöksi",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-3",
+      "why": "Kaasun tilaa kuvaavat tilanmuuttujat, ja lämpötila ilmoitetaan kaasun malleissa kelvineinä."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-4",
+      "why": "Paineen käsite ja yksiköt sekä ero kokonaispaineen ja ylipaineen välillä."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-9",
+      "why": "Tilanmuutokset, joissa yksi tilanmuuttuja pidetään vakiona, sekä Boylen laki."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-10",
+      "why": "Ideaalikaasun malli, jota mittauksilla testataan, ja yhdistetty kaasulaki."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-13",
+      "why": "Paine–lämpötila-suoran ekstrapolointi nollapaineeseen ja sen epävarmuuden arviointi."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen sekä kulmakertoimen ja vakiotermin tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Paineen ja lämpötilan mittaaminen antureilla ja tietokoneen mittausohjelmalla",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Paine ja lämpötila luetaan antureista mittausohjelmaan."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Laskettu sarake ja suoran sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Kuvaajan akseleille tarvitaan mitatuista suureista laskettuja suureita, ja kulmakerroin epävarmuuksineen saadaan sovituksesta."
+    }
+  ],
+  "equipment": [
+    "kaasuruisku tai muu sylinteri, jonka tilavuuden voi lukea asteikolta",
+    "paineanturi ja sen letku ja liittimet",
+    "lämpötila-anturi, joka on tarkoitettu nesteisiin",
+    "suljettava lasiastia, joka kestää lämpötilan muutokset, esimerkiksi pieni kolvi tulpalla ja letkuliittimellä",
+    "vesihauteita eri lämpötiloissa: jäävesi, huoneenlämpöinen vesi ja kuuma vesi",
+    "mitta-astia",
+    "tietokone ja mittausohjelmisto"
+  ],
+  "safety": [
+    "Älä ylitä paineanturin sallittua mittausaluetta. Lue raja anturin merkinnöistä tai ohjeesta tai kysy opettajalta ennen mittausta, ja muista, että paine kasvaa sekä puristettaessa että suljettua astiaa lämmitettäessä.",
+    "Käsittele kuumaa vettä varovasti: käytä vakaita astioita, älä kurottele kuuman hauteen yli, ja lämmitä vettä vain opettajan osoittamalla välineellä.",
+    "Käytä lämmönkestävää lasiastiaa. Älä siirrä lasiastiaa jäävedestä suoraan hyvin kuumaan veteen.",
+    "Pidä paineanturi, liitännät ja tietokone kuivina: veteen laitetaan vain astia ja nesteisiin tarkoitettu lämpötila-anturi.",
+    "Tarkista ennen lämmitystä, että tulppa ja letkuliitokset ovat tiukasti kiinni."
+  ]
+}

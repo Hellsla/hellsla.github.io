@@ -1,0 +1,120 @@
+{
+  "id": "fy10-jaahtyminen",
+  "type": "investigation",
+  "title": "Kuuman veden jäähtyminen",
+  "question": "Miten kuuman veden lämpötila muuttuu ajan funktiona, kun vesi jäähtyy huoneessa, ja kuinka hyvin Newtonin jäähtymislaki kuvaa jäähtymistä?",
+  "description": "Kokeellinen tutkimus: mittaa jäähtyvän veden lämpötila ajan funktiona, etsi mittaustuloksiin sopiva malli ja vertaa sitä Newtonin jäähtymislakiin.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY3"
+  ],
+  "source": "Esimerkkityöt.pdf s. 5 (Kappaleen jäähtymisen tutkiminen), opettajan aineisto",
+  "learn": [
+    "etsimään mittaustuloksiin sopivan matemaattisen mallin ja testaamaan sitä kuvaajan avulla",
+    "testaamaan eksponentiaalista mallia linearisoimalla tai puoliintumisajan avulla",
+    "arvioimaan, millä alueella malli kuvaa mittauksia ja mistä poikkeamat voivat johtua"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Jäähtymiskäyrä ja Newtonin jäähtymislaki",
+      "physics": "F2",
+      "experiment": "E2"
+    },
+    {
+      "id": "laajennus",
+      "title": "Yhden tekijän vaikutus jäähtymiseen",
+      "physics": "F2",
+      "experiment": "E2"
+    }
+  ],
+  "modes": [
+    "O",
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-6",
+      "why": "Veden luovuttama lämpö laskee sen lämpötilaa yhtälön $Q = cm\\Delta T$ mukaisesti."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy3-12",
+      "why": "Lämpö siirtyy johtumalla, konvektiona ja säteilynä, ja siirtyvä teho kasvaa lämpötilaeron kasvaessa."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy3-3",
+      "why": "Lämpötila ja lämpötasapaino: vesi jäähtyy kohti ympäristön lämpötilaa."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Newtonin jäähtymislaki ja eksponentiaalinen malli",
+      "missing": "ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla ohjatussa ja osittain ohjatussa työtavassa",
+      "why": "Laki on malli, jota mittauksilla testataan; ohjatussa ja osittain ohjatussa työtavassa se selitetään kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "text": "Eksponenttifunktio ja luonnollinen logaritmi",
+      "missing": "matematiikan opinnot; ilman logaritmia mallia voi testata puoliintumisajan avulla",
+      "why": "Malli on eksponenttifunktio, ja logaritmin avulla sen kuvaaja muuttuu suoraksi."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen, suoran sovittaminen ja kulmakertoimen tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Lämpötilan tallentaminen anturilla ajan funktiona ja mittausdatan siirtäminen ohjelmaan",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Pitkä mittaus tiheällä mittausvälillä onnistuu parhaiten tallentavalla anturilla."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Laskettu sarake, suoran sovitus ja eksponenttisovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Mallia testataan laskemalla uusi suure mitatuista arvoista tai sovittamalla malli suoraan mittauspisteisiin."
+    }
+  ],
+  "equipment": [
+    "lasiastia tai muki ja eristävä alusta",
+    "kuumaa vettä (vedenkeitin)",
+    "lämpötila-anturi ja mittauslaite tai lämpömittari",
+    "toinen lämpömittari huoneen lämpötilan mittaamiseen",
+    "ajanottoväline, jos lämpötila luetaan käsin",
+    "statiivi ja pidike anturille",
+    "laajennukseen eristemateriaaleja, kansi ja erilaisia astioita"
+  ],
+  "safety": [
+    "Kuuma vesi voi aiheuttaa palovamman: kaada vesi pöydällä seisovaan astiaan, älä kanna täyttä astiaa ja pidä astia pöydän keskellä.",
+    "Pidä vedenkeitin ja sen johto opettajan osoittamassa paikassa, kaukana pöydän reunasta ja mittauslaitteista.",
+    "Upota anturista veteen vain se osa, joka on tarkoitettu upotettavaksi, ja tarkista anturin käyttölämpötila sen ohjeesta.",
+    "Jos kuumaa vettä roiskuu iholle, jäähdytä kohtaa heti viileällä vedellä ja kerro opettajalle."
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "fy10-vesivoima",
+  "type": "investigation",
+  "title": "Vesivoimalaitoksen pienoismallin hyötysuhde",
+  "question": "Kuinka suuri osa putoavan veden energiasta muuttuu pienoisvoimalaitoksessa sähköksi, ja miten hyötysuhde riippuu käyttötilanteesta?",
+  "description": "Kokeellinen tutkimus: rajaa järjestelmä, mittaa veden pienoisvoimalaitokselle tuoma teho ja siitä saatava sähköteho ja selvitä, miten hyötysuhde muuttuu virtaaman tai putouskorkeuden mukana.",
+  "courses": [
+    "FY10"
+  ],
+  "modules": [
+    "FY1",
+    "FY2",
+    "FY4",
+    "FY6"
+  ],
+  "source": "Esimerkkityöt.pdf s. 12 (Vesivoimalaitoksen pienoismallin hyötysuhteen määrittäminen), opettajan aineisto",
+  "learn": [
+    "rajaamaan tutkittavan järjestelmän ja päättelemään, mitkä suureet on mitattava sille tulevan ja siitä saatavan tehon selvittämiseksi",
+    "määrittämään laitteen hyötysuhteen mitatuista tehoista ja tarkastelemaan, miten se muuttuu käyttötilanteen mukana",
+    "arvioimaan, miten usean mitatun suureen epävarmuudet vaikuttavat tulokseen, ja tunnistamaan tärkeimmät energiahäviöt"
+  ],
+  "variants": [
+    {
+      "id": "perus",
+      "title": "Hyötysuhde eri virtaamilla tai putouskorkeuksilla",
+      "physics": "F2",
+      "experiment": "E3"
+    },
+    {
+      "id": "laajennus",
+      "title": "Kuorman vaikutus sähkötehoon ja hyötysuhteeseen",
+      "physics": "F2",
+      "experiment": "E3"
+    }
+  ],
+  "modes": [
+    "OO",
+    "I"
+  ],
+  "prerequisites": [
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-4",
+      "why": "Hyötysuhde on hyötytehon ja laitteeseen otetun tehon suhde."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy2-3",
+      "why": "Teho on energian muutos jaettuna ajalla, jossa se tapahtuu."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "target": "fy4-7",
+      "why": "Veden potentiaalienergia $E_\\text{p} = mgh$ on energia, jota voimala muuttaa sähköksi."
+    },
+    {
+      "kind": "physics",
+      "level": "helpful",
+      "target": "fy4-15",
+      "why": "Luku kertoo, miten oikea vesivoimala muuttaa putoavan veden energiaa sähköksi."
+    },
+    {
+      "kind": "physics",
+      "level": "essential",
+      "text": "Sähköteho $P = UI$",
+      "missing": "FY6: Sähköteho ja Joulen laki",
+      "why": "Generaattorin kuormalle antama teho lasketaan jännitteestä ja sähkövirrasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "text": "Jännitteen ja sähkövirran mittaaminen yleismittarilla",
+      "missing": "FY6: Mittaukset virtapiirissä",
+      "why": "Virtamittari kytketään sarjaan kuorman kanssa ja jännitemittari sen rinnalle; lyhyt ohje on tällä sivulla."
+    },
+    {
+      "kind": "experiment",
+      "level": "essential",
+      "target": "fy1-3",
+      "why": "Mittausepävarmuus ja tuloksen ilmoittaminen epävarmuuksineen."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-4",
+      "why": "Kuvaajan laatiminen ja tulkinta."
+    },
+    {
+      "kind": "experiment",
+      "level": "helpful",
+      "target": "fy1-8",
+      "why": "Oman tutkimuksen suunnittelu ja työselostuksen rakenne."
+    },
+    {
+      "kind": "tvt",
+      "level": "essential",
+      "text": "Tehojen ja hyötysuhteen laskeminen taulukkolaskennalla ja kuvaajan piirtäminen ohjelmalla (esimerkiksi taulukkolaskenta tai Graphical Analysis)",
+      "missing": "Ruukkilabran ohje on tekeillä",
+      "why": "Mittauksia on monta ja jokaisesta lasketaan kaksi tehoa ja hyötysuhde."
+    }
+  ],
+  "equipment": [
+    "vesivoimalaitoksen pienoismalli: vesiturbiini ja sen akselilla generaattori (opettajan pienoismalli voi poiketa tästä kuvauksesta)",
+    "vesiastia, jonka voi asettaa turbiinia korkeammalle, ja letku",
+    "keräysastia ja vaaka tai mitta-astia",
+    "ajanottoväline",
+    "mittanauha",
+    "kaksi yleismittaria tai jännite- ja virta-anturi",
+    "kuormavastus tai pienoislamppu (ei LEDiä eikä moottoria) sekä johtimia",
+    "liinoja roiskeiden kuivaamiseen"
+  ],
+  "safety": [
+    "Vettä ja sähköä käytetään yhdessä: virtapiirissä saa olla vain pienoismallin generaattori ja sen pienjännitekuorma, ei koskaan verkkovirtaa. Älä tuo verkkovirtaan kytkettyjä laitteita vesiastioiden lähelle; jos järjestelyssä on verkkovirralla toimiva pumppu, opettaja asentaa sen.",
+    "Pidä mittarit, johtimet ja liitokset kuivina ja erillään vesiastioista ja letkusta. Kuivaa roiskeet heti, myös lattialta, ettei kukaan liukastu.",
+    "Varmista, että korkealle nostettu vesiastia on tukevasti paikallaan eikä teline kaadu. Täytä ja nosta astia varovasti.",
+    "Pidä sormet ja johtimet poissa pyörivän turbiinin ja akselin luota.",
+    "Valitse virtamittarin mittausalue niin, ettei mittarin suurin sallittu virta ylity; aloita suurimmalla alueella."
+  ]
+}

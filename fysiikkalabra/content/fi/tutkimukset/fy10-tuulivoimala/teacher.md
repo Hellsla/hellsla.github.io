@@ -1,0 +1,16 @@
+**Valmistelu.** Kokeile pienoismalli ja puhallin etukäteen: lähteekö roottori pyörimään puhaltimen pienimmällä nopeusasetuksella ja kaikilla lapavaihtoehdoilla, ja tuottaako generaattori tasa- vai vaihtojännitettä. Valitse kuormitusvastus, jonka säätöalue ulottuu generaattorin kannalta selvästi pienistä arvoista suuriin, ja tarkista mittareiden mittausalueet sekä virtamittarin sulake. Ilmoita ryhmille, jos laitteistolla on virran tai jännitteen yläraja. Varaa tuulimittari, jos ryhmät tutkivat tuulen nopeutta tai tekevät laajennuksen, ja astelevy, jos navassa ei ole kulma-asteikkoa. Merkitse pöytään puhaltimen ja voimalan paikat teipillä. Jos samaa puhallinta käyttää useampi ryhmä, sovi vuorot, koska toisen ryhmän puhallin muuttaa ilmavirtaa.
+
+**Tavallisia virhekäsityksiä ja ongelmia.**
+
+- Tehoksi tulkitaan pelkkä jännite. Kun kuormaa ei ole kytketty, jännite voi olla suuri, mutta sähkövirtaa ei kulje eikä kuormaan siirry tehoa.
+- Virtamittari kytketään rinnan kuorman kanssa tai suoraan generaattorin napoihin, jolloin mittari oikosulkee piirin.
+- Useampaa tekijää muutetaan kerralla, esimerkiksi voimala siirtyy lapoja vaihdettaessa, tai puhaltimen ja voimalan keskilinjat eivät ole samassa kohdassa.
+- Jännite ja sähkövirta luetaan eri hetkinä heiluvasta näytöstä, ja hetkellinen huippulukema kirjataan tulokseksi.
+- Erot pisteiden välillä tulkitaan todellisiksi, vaikka ne ovat mittausten vaihtelua pienempiä.
+- Laajennuksessa tuulen nopeus mitataan vain yhdestä kohdasta tai aivan roottorin edestä, jossa roottori on jo hidastanut ilmaa. Roottorin halkaisija sekoitetaan säteeseen, tai nopeuksien keskiarvo korotetaan kolmanteen potenssiin.
+- Voimalan ajatellaan tuottavan energiaa, vaikka se muuntaa tuulen liike-energiaa sähköksi.
+- Betzin rajan ylittävä hyötysuhde hyväksytään tulokseksi, vaikka se kertoo mittaus- tai laskuvirheestä.
+
+**Eriyttäminen.** Tehtäväkortti on avoin: opiskelija valitsee tutkittavan tekijän, joten työ sopii FY10:n suunnittelua, muuttujia ja vakioituja suureita käsittelevään jaksoon. Ohjattua työtapaa ei tarjota, koska ohjattu työ edellyttäisi tekijän valitsemista opiskelijan puolesta. Jos ryhmä tarvitsee enemmän tukea, opettaja voi antaa sille tekijän (helpoimmin kuormitusvastus tai tuulen nopeus) ja käyttää osittain ohjatun työtavan tukea. Osittain ohjatussa työtavassa sivu antaa taulukon tekijöiden muuttamisesta ja vakioimisesta, suunnittelukysymykset, tekijäkohtaiset vihjeet, mittaustaulukon, kuvaajan akselit ja tavan arvioida tehon epävarmuus. Itsenäisessä työtavassa annetaan tutkimuskysymys, sähkötehon periaate ja kytkentä: opiskelija päättää tekijän arvot, toistot, lukutavan, kuvaajan ja epävarmuuden arviointitavan itse, ja laajennus kuuluu työhön, jos tuulimittari on käytettävissä. Sähköteho $P = UI$ ja mittareiden kytkeminen kuuluvat moduuliin FY6, joten ne on selitetty sivulla lyhyesti.
+
+**Turvallisuus.** Tärkeimmät riskit ovat pyörivät lavat ja irtoava lapa: lapoja säädetään vain, kun puhallin on sammutettu ja roottori pysähtynyt, eikä kasvoja tuoda roottorin pyörimistasoon. Tarkista lapojen kiinnitys ennen työtä. Puhallin on verkkovirtalaite, jota käytetään vain ehjänä; opiskelijan virtapiirissä on vain generaattorin pieni jännite. Virtamittarin väärä kytkentä voi polttaa mittarin sulakkeen.

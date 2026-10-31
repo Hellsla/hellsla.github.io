@@ -1,0 +1,17 @@
+**Valmistelu.** Varaa vedenkeitin ja kuumalle vedelle kestävät lasiastiat. Tee koeajo valitulla astialla ja vesimäärällä ja katso, kauanko lämpötilaeron puolittuminen kestää: ohjatussa työtavassa mitataan, kunnes ero on pudonnut noin neljäsosaan, eli noin kahden puoliintumisajan verran. Jos se ei mahdu tunnille, pienennä vesimäärää tai valitse ohuempi astia; mittaus vie helposti suurimman osan oppitunnista, joten ryhmä voi aloittaa sen heti ja suunnitella käsittelyä mittauksen aikana. Tarkista, että anturit näyttävät samassa huoneilmassa saman lukeman; pienikin ero näkyy logaritmikuvaajan lopussa. Sijoita ryhmät pois patterien, auringonpaisteen, ovien ja ilmanvaihdon vedosta. Laajennukseen tarvitaan eristemateriaaleja, kansia ja erimuotoisia astioita sekä mieluiten kaksi anturia ryhmää kohden.
+
+**Tavallisia virhekäsityksiä ja ongelmia.**
+
+- Lämpötilan kuvaajaan sovitetaan suora tai murtoviiva, eikä huomata, että jäähtyminen hidastuu lämpötilaeron pienentyessä.
+- Logaritmi otetaan lämpötilasta $T$ eikä lämpötilaerosta $T - T_\text{huone}$, tai lämpötila muutetaan kelvineiksi ennen logaritmia. Lämpötilaero on sama kummassakin yksikössä, mutta lämpötila itse ei.
+- Huoneen lämpötila jätetään mittaamatta tai mitataan kuuman astian vierestä. Systemaattinen virhe lukemassa $T_\text{huone}$ taivuttaa logaritmikuvaajaa juuri mittauksen lopussa, mikä tulkitaan helposti mallin pettämiseksi.
+- Lämpötilaan $T$ sovitetaan eksponenttifunktio $A\cdot e^{-Bt}$ ilman vakiotermiä. Käyrä lähestyy silloin lämpötilaa $0\ {}^\circ\text{C}$ eikä huoneen lämpötilaa, ja vakio $B$ on väärä. Oikein sovitetaan $A\cdot e^{-Bt} + C$ lämpötilaan tai $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$.
+- Mittaus lopetetaan liian aikaisin, jolloin kaareva alku näyttää lähes suoralta eikä mallia voi testata.
+- Alun nopea lämpötilan lasku, kun vesi lämmittää astiaa ja anturia, otetaan mukaan sovitukseen.
+- Anturi koskettaa astian pohjaa tai seinää tai on aivan vedenpinnassa, jolloin se ei mittaa veden keskimääräistä lämpötilaa.
+- Avoimessa astiassa haihtuminen jäähdyttää vettä. Kuivassa huoneilmassa vesi voi jäähtyä lopulta hieman huoneen lämpötilan alapuolelle, mikä ei sovi Newtonin jäähtymislain oletuksiin.
+- Laajennuksessa muutetaan useaa tekijää yhtä aikaa, esimerkiksi astiaa ja vesimäärää, tai mittaukset aloitetaan eri lämpötiloista.
+
+**Eriyttäminen.** Opintojakson suunnitelmassa työ sijoittuu teemaan 5, graafinen analyysi ja mallit. Ohjatussa työtavassa sivu antaa mittausjärjestelyn, taulukon ja mallin; opiskelija, jolle luonnollinen logaritmi ei ole tuttu, testaa mallia puoliintumisajan avulla tai ohjelman eksponenttisovituksella. Osittain ohjatussa opiskelija päättää astian, vesimäärän, keston ja mittausvälin sekä valitsee testaustavan perustellen. Itsenäisessä työtavassa sivu antaa vain lämmönsiirron periaatteen ja lain nimen: opiskelija selvittää lain sisällön, muotoilee mallin ja testaustavan itse, ja laajennus kuuluu työhön. Mallin muuttaminen suoraksi logaritmin avulla on matematiikan opintojen mukaan joko ydin tai lisähaaste.
+
+**Turvallisuus.** Kuuma vesi on työn tärkein riski: palovammojen välttämiseksi vesi kaadetaan pöydällä seisovaan astiaan, täysiä astioita ei kanneta, ja vedenkeittimen johto pidetään poissa kulkureiteiltä. Ohjatun työtavan alkulämpötila on valittu niin, ettei kiehuvaa vettä tarvita. Lasiastian on kestettävä kuumaa vettä, ja anturista upotetaan vain upotettavaksi tarkoitettu osa sen ohjeen mukaisesti.
