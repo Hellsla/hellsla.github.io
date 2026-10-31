@@ -235,7 +235,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Noudattaako jousi jousivoima
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki yhdeksän osaa. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** jousivoiman laki, miksi $F = mg$ ja miksi valitsit juuri nämä akselit.
 - **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten käsittelit punnustelineen.

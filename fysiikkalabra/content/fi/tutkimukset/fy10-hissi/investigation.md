@@ -320,7 +320,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Kuinka pitkän matkan hissi 
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** miten nopeus ja matka saadaan kuvaajien pinta-aloina ja mitä anturi näyttää levossa.
 - **Koejärjestely ja menetelmä:** puhelimen asento ja akseli, miten määritit anturin nollakohdan ja miten selvitit todellisen matkan.

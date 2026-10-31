@@ -300,7 +300,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Millainen matemaattinen mall
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** periaate, josta malli päätellään, malli hypoteesina ja ehdot, joilla se pätee.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, mistä kohdista etäisyys mitattiin, miten taustavalo huomioitiin ja miten asento pidettiin samana.

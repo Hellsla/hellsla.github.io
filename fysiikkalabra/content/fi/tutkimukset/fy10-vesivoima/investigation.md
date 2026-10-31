@@ -327,7 +327,7 @@ Halutessasi arvioi yhden häviön suuruus, esimerkiksi turbiinista lähtevän ve
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mitä energiaa järjestelmään syötetään, mitä siitä saadaan hyödyksi ja miten tehot lasketaan mitatuista suureista.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, järjestelmän rajaus, mistä mihin putouskorkeus mitattiin, miten virtapiiri kytkettiin ja miten työturvallisuus huomioitiin.

@@ -296,7 +296,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Kuvaako malli $U = E - R_\te
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki yhdeksän osaa. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** lähdejännite, sisäinen resistanssi, oikosulkuvirta ja malli $U = E - R_\text{s} I$ sekä se, miksi valitsit juuri nämä akselit.
 - **Koejärjestely ja menetelmä:** kytkentäkaavio, mitä muutit, mitä mittasit ja mitä pidit vakiona, sekä miten estit oikosulun.

@@ -360,7 +360,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella: miten huippuarvo ja pinta-al
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mikä tekijä valittiin ja miksi, induktiolaki ja mitä huippuarvo ja pinta-ala kertovat vuon muutoksesta.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, mitä muutit, mitä mittasit ja mitä pidit vakiona, sekä näytteenottotaajuus.

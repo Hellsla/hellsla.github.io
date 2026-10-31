@@ -292,7 +292,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella ja viittaa kuvaajaan tai lask
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** diffraktio ja minimien ehto, miksi hiuksen kuvio vastaa raon kuviota ja mitä mallin ehtoja tarvitaan.
 - **Koejärjestely ja menetelmä:** koejärjestely kuvana, miten mittasit minimien paikat ja etäisyyden $L$, mitä pidit vakiona ja miten huolehdit lasertyön turvallisuudesta.

@@ -207,7 +207,7 @@ Mieti ainakin näitä:
 - Veden lämpötila laskee mittauksen aikana. Miksi se ei haittaa vertailua, kun kaikki kappaleet ovat samassa astiassa, ja miten voit pienentää laskua?
 - Kuinka kauan mittaus kestää, ja kuinka usein otat kuvan? Kokeile ennen varsinaista mittausta, kuinka nopeasti lämpö etenee nopeimmassa kappaleessa.
 - Miksi lämpökameraa ei kannata pitää kädessä eikä kuvaajan pidä seistä kappaleiden takana?
-- Näkyykö kappale kuvassa niin leveänä, että lukemasi kohta on kokonaan kappaleen päällä? Jos kappale on kuvassa vain muutaman kuvapisteen levyinen, lukemaan sekoittuu taustan lämpötila.
+- Näkyykö kappale kuvassa niin leveänä, että lukemasi kohta on kokonaan kappaleen päällä? Mitä lukemalle tapahtuu, jos kappale on kuvassa vain muutaman kuvapisteen levyinen?
 - Kannen yläpuolinen lämmin ilma voi lämmittää kappaleita myös ulkopuolelta. Miten erotat sen johtumisesta, esimerkiksi huonosti johtavan kappaleen lukemista?
 :::
 
@@ -269,7 +269,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella: mikä materiaali johtaa läm
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tutkimuskysymys ja tausta:** mihin mitattavaan suureeseen materiaalien vertailu perustuu ja miksi.
 - **Koejärjestely ja menetelmä:** mitä pidit vakiona ja miten varmistit, että lämpökamera mittasi kaikkia kappaleita yhtä luotettavasti.

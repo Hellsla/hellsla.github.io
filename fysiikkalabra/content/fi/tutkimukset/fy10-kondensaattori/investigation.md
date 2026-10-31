@@ -443,7 +443,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Millainen malli kuvaa konden
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki yhdeksän osaa. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki yhdeksän osaa. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria (osa 2):** yhtälöt $Q = Cu$ ja $I = \dfrac{u}{R}$, aikavakio $\tau = RC$ ja mallin oletukset.
 - **Koejärjestely ja menetelmä (osa 3):** kytkentäkaavio ja työturvallisuus: miten varmistit napaisuuden, jännitteen rajan ja kondensaattorin purkamisen.

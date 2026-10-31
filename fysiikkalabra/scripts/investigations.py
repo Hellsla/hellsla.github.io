@@ -217,8 +217,9 @@ def render(iid, lang, T, md, chapters, published):
         for p in [p for p in d["prerequisites"] if p["kind"] == kind]:
             if "target" in p: what = _chapter(p["target"], T, chapters, published)
             elif p.get("guides"):
-                what = (f'{esc(p["text"])} <span class="inv-mod">({T("guides.prereq_guides")} '
-                        + ", ".join(guides.link(g, guides.load(g, lang)["title"] if (guides.folder(g, lang) / "guide.json").is_file() else g, published, lang) for g in p["guides"]) + ")</span>")
+                names = [guides.link(g, guides.load(g, lang)["title"], published, lang) for g in p["guides"]
+                         if (guides.folder(g, lang) / "guide.json").is_file()]     # never a raw id where a guide is missing
+                what = esc(p["text"]) + (f' <span class="inv-mod">({T("guides.prereq_guides")} {", ".join(names)})</span>' if names else "")
             else: what = f'{esc(p["text"])} <span class="inv-mod">({esc(p["missing"])})</span>'
             items += (f'<li><span class="inv-level inv-level-{p["level"]}">{T("investigation.prereq_" + p["level"])}</span> {what}'
                       f'<span class="inv-why">{md(p["why"])[3:-4]}</span></li>')

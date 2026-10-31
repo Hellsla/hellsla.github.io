@@ -313,7 +313,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten paine riippuu tilavuud
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** ideaalikaasun malli, miksi lämpötila ilmoitetaan kelvineinä ja miksi valitsit juuri nämä akselit.
 - **Koejärjestely ja menetelmä:** kummankin sarjan vakiona pidetyt suureet ja miten varmistit ne, piirros järjestelyistä sekä työturvallisuus.

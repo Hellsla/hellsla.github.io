@@ -242,7 +242,7 @@ Vastaa:
 **Vihje pinta-alaan.** Monet mittausohjelmat laskevat käyrän alle jäävän pinta-alan valitulta väliltä. Jos ohjelma laskee pinta-alan aika-akseliin asti, se antaa tukivoiman $N$ impulssin, ja kokonaisvoiman impulssi saadaan, kun siitä vähennetään painon impulssi $G\cdot T$, missä $T$ on valitun välin pituus. Taulukkolaskennassa voit laskea jokaiselle mittauspisteelle sarakkeen $(N_i - G)\cdot\Delta t$ ja summata sen valitulta väliltä.
 :::
 
-Pinta-alan määrittämiseen voit käyttää voimalevyn mittausohjelmaa, Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]], [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]] ja [[ohje:tvt-nopeus-datasta|Nopeus ja matka mittausdatasta]].
+Pinta-alan määrittämiseen voit käyttää voimalevyn mittausohjelmaa, Graphical Analysis -ohjelmaa tai taulukkolaskentaa. Ruukkilabran ohjeet: [[ohje:tvt-mittausohjelma|Anturit ja mittausohjelma]] ja [[ohje:tvt-taulukkolaskenta|Taulukkolaskenta]].
 
 ## Epävarmuus ja luotettavuus
 
@@ -266,7 +266,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten voima–aika-kuvaajast
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** miten lähtönopeus saadaan impulssiperiaatteesta ja korkeus lähtönopeudesta, ja mihin oletuksiin toinen menetelmä perustuu.
 - **Koejärjestely ja menetelmä:** hyppytapa, miten pidit sen samana, hyppyjen määrä ja hylkäämisen perusteet.

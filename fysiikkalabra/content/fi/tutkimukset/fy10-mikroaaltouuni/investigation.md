@@ -555,7 +555,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa tulostasi valonnopeud
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** seisova aalto, miksi juusto sulaa kupukohdissa ja miten lauseke valonnopeudelle saadaan.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, miten kuumensit juuston ja mittasit kohtien välit sekä työturvallisuus (vesikuppi, ei metallia, alusta ei pyöri: poistettu käyttöohjeen mukaan).

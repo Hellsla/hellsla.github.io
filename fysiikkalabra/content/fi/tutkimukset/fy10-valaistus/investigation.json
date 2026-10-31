@@ -81,7 +81,7 @@
       "kind": "tvt",
       "level": "essential",
       "text": "Mittauspisteiden kuvaaja, uusien sarakkeiden laskeminen sekä suoran tai potenssifunktion sovitus ohjelmalla (esimerkiksi Graphical Analysis tai taulukkolaskenta)",
-      "guides": ["tvt-kuvaaja", "tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
+      "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin", "tvt-epavarmuus", "tvt-taulukkolaskenta"],
       "why": "Malli ja sen vakioiden epävarmuudet saadaan sovituksesta."
     }
   ],

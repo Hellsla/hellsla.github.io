@@ -290,7 +290,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Säilyikö kokonaisliikemä�
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** millä ehdolla kokonaisliikemäärä säilyy, ja miten kimmoisa ja täysin kimmoton törmäys eroavat toisistaan.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, jossa näkyvät anturit, vaunut ja valittu positiivinen suunta, sekä se, miten anturien lukemat muutettiin tämän suunnan mukaisiksi ja miten radan vaakasuoruus tarkistettiin.

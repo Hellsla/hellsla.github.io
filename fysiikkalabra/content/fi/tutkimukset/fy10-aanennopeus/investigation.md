@@ -279,7 +279,7 @@ missä $v_0 \approx 331\ \text{m/s}$ on äänen nopeus kuivassa ilmassa lämpöt
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Koejärjestely ja menetelmä:** kuva koejärjestelystä, miten tuotit ja havaitsit äänen ja miten mittasit matkat ja ajat. Perustele, miksi menetelmäsi on riittävän tarkka.
 - **Mittaustulokset:** jokainen toisto omassa sarakkeessaan ja keskiarvo niiden oikealla puolella, sekä ilman lämpötila.

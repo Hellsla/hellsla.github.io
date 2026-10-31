@@ -280,7 +280,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Miten veden lämpötila muut
 
 ## Raportoi
 
-Kirjoita työstä työselostus FY10:n työselostuspohjalla (kuvaajista ja tuloksista ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]) ja käy läpi sen kaikki osat. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
+Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kaikki osat. Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]. Tässä tutkimuksessa erityisen tärkeitä ovat nämä:
 
 - **Tausta ja teoria:** Newtonin jäähtymislaki omin sanoin, sen oletukset ja se, miten mallia testataan kuvaajan avulla.
 - **Koejärjestely ja menetelmä:** astia, vesimäärä, alkulämpötila, anturin paikka, miten ja missä mittasit huoneen lämpötilan sekä mitä pidit vakiona.
