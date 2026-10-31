@@ -124,6 +124,18 @@ def check_text_rules(L, name, text):
             L.err(name, i, "\\( \\) and \\[ \\] are not rendered; use $ and $$ (NOTES 1)")
 
 
+def check_list_start(L, name, text):
+    """A list straight under a paragraph line is not a list in Markdown: it renders as one run-on paragraph with
+    literal hyphens or numbers (visual audit 2026-10-31, fy1-8). A blank line must come before the first item."""
+    lines, fence = text.split("\n"), False
+    for i in range(1, len(lines)):
+        if lines[i].startswith("```"): fence = not fence
+        if fence: continue
+        prev = lines[i - 1]
+        if re.match(r"(- |\* |\d+\. )", lines[i]) and prev.strip() and not re.match(r"\s*(- |\* |\d+\. |#|<|\||```)", prev) and not prev.startswith((" ", "\t")):
+            L.warn(name, i + 1, "a list straight under a paragraph renders as one run-on paragraph; put a blank line before the first item (visual audit 2026-10-31)")
+
+
 def check_math(L, name, text):
     for line, frag, display in math_fragments(text):
         if re.search(r"(?<![{,])\d,\d", frag):
@@ -227,6 +239,7 @@ def check_lesson_md(L, folder):
     if "$$" not in text and "```latex" not in text:
         L.warn("lesson.md", 1, "no display formula; every formula appears once in display LaTeX (CLAUDE.md)")
     check_text_rules(L, "lesson.md", text)
+    check_list_start(L, "lesson.md", text)
     check_plain_quantities(L, "lesson.md", text)
     for jf in ("inquiry.json", "exit-ticket.json", "exercises/exercises.json"):
         f = courses.lesson_file(folder, jf) if "/" not in jf else folder / jf

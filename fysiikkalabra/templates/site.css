@@ -304,7 +304,7 @@ p.sol-answer{display:inline-block;margin:.1rem 0 .5rem;padding:.35rem .9rem;back
 #sim-root button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1.4rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;cursor:pointer}
 #sim-root button:hover{background:var(--accent)}
 #sim-root select{min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)}
-#sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}
+#sim-root label.locked{opacity:.6}#sim-root label.locked::after{content:" (vakio)";font-size:.85em}html[lang=en] #sim-root label.locked::after{content:" (fixed)"}   /* a locked control in an experiment, in the page's language (visual audit 2026-10-31) */
 .sim-info{margin:.6rem 0 0;border-top:1px solid var(--line-2)}
 details.sim-box,#sim-root details.note{margin:0;border-bottom:1px solid var(--line-2)}
 details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-box>div>:first-child{margin-top:.2rem}
@@ -441,7 +441,7 @@ ul.choices label:has(input:checked){border:2px solid var(--accent);padding:calc(
 ul.choices label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 ul.choices input:disabled+span{color:var(--ink-2)}ul.choices input:checked:disabled+span{color:var(--ink);font-weight:600}
 fieldset.choice.models ul.choices{display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
-fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;height:100%;box-sizing:border-box}
+fieldset.choice.models ul.choices li{display:flex;flex-direction:column}fieldset.choice.models ul.choices label{border:1px solid var(--line);border-radius:10px;flex:1 0 auto;box-sizing:border-box}fieldset.choice.models .feedback{margin-left:0}   /* the opened feedback follows its card in the same grid cell, never over the next row (visual audit 2026-10-31, fy1-8) */
 fieldset.choice.figures ul.choices{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
 fieldset.choice.figures ul.choices label{height:100%;box-sizing:border-box}fieldset.choice.figures ul.choices label>span{flex:1;min-width:0}
 fieldset.choice.figures .task-fig{margin:.3rem 0 0}
@@ -580,7 +580,7 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
   nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
 }
 @media (min-width:85rem) and (max-height:34rem){.lesson-page>nav.toc{position:static}}
-.nobr{white-space:nowrap}
+.nobr{white-space:nowrap}.math-glue{white-space:nowrap}   /* lesson.html flGlueMath: a short formula and the punctuation beside it */
 .katex .katex-mathml{width:1px;height:1px;overflow:hidden}   /* the screen-reader copy of a formula is clipped but would still widen its scroll box */
 
 /* Self-assessment (teacher's brief 2026-10-28, scripts/practice.py): the Sovella itsenäisesti page with its shared
