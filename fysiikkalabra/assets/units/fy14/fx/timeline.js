@@ -6,7 +6,7 @@
    when the event is about a device on the course map and that page is published, "Show on the map" (#f-<id>).
    Data on the element: {eras?: [era ids shown, default all], themes?: [theme ids], map?: "<map page>.html",
    intro?: text, start_era?: era id selected first, ids?: [event ids shown, a
-   selection for one task; up to 12 ids hide the filters], query?: search text first}. Cards start closed (year, place and title);
+   selection for one task, shown without filters], query?: search text first}. Cards start closed (year, place and title);
    a mark on the strip opens its card. */
 window.FX.timeline = (el, d, A) => {
   const { h, md } = A;
@@ -37,7 +37,7 @@ window.FX.timeline = (el, d, A) => {
     const count = h('p', { class: 'fx-msg', 'aria-live': 'polite' });
     const list = h('ol', { class: 'fx-tl-list' });
     const legend = h('ul', { class: 'fx-legend', 'aria-label': 'Themes' }, Object.entries(data.themes).filter(([k]) => TH[k] && all.some((e) => e.theme === k)).map(([k, t]) => h('li', {}, h('span', { class: 'fx-sym', 'aria-hidden': 'true', style: `color:${TH[k][0]}` }, { circle: '●', square: '■', diamond: '◆', triangle: '▲' }[TH[k][1]]), t)));
-    const small = !!d.ids && all.length <= 12;   // a task's own small selection: no era, theme or search filters
+    const small = !!d.ids;   // a task's own selection: no era, theme or search filters
     root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []), ...(small ? [] : [eraBar,
       h('div', { class: 'fx-tl-filters' }, h('div', { class: 'fx-field' }, h('label', { for: idp + 'theme' }, 'Theme'), themeSel), h('div', { class: 'fx-field fx-field-wide' }, h('label', { for: idp + 'q' }, 'Search'), q))]),
       strip, legend, count, list, h('p', { class: 'fx-note' }, `Events checked ${A.date(data.checked)}. Sources are listed with every event.`));

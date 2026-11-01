@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 239a2f7980246a6a
+CONTENT-HASH: 63a171be08f0db43
 
 Science re-review of fy14-fusion-timeline and of the shared `timeline.json` events it uses, 2026-11-01. It covers commit 3ed55db3 and the timeline data commit d34ad4f1.
 
@@ -26,7 +26,10 @@ None.
 ## Polish
 None in the unit.
 
-## Shared issues (`assets/units/fy14/data/timeline.json`, not blocking)
-1. **`jet-decision-1978`.** It says "the **European Council** decided". The decision was made by the Council of the European Communities (the Council of Ministers). The European Council is the meeting of heads of government. Fix: "the Council of Ministers of the European Communities decided". fy14-big-machines already says "Council of Ministers".
-2. **`culham-five-1969`.** It says "Their joint paper with Soviet **colleagues**", but the paper had one Soviet author. Fix: "with a Soviet colleague, V. V. Sannikov".
-3. **`culham-five-1969`, `people`.** The new name "Vladimir Sannikov": I found no source that gives the first name. The paper and Forrest's list give only "V. V. Sannikov". Use "V. V. Sannikov" unless a source is cited for the first name.
+## Shared issues
+None open. In commits 525827b2 and b3bbc371 my three points on `timeline.json` are fixed:
+- "the Council of the European Communities decided"
+- "a Soviet colleague"
+- "V. V. Sannikov"
+
+`iter-first-module-2025` was rewritten, and I checked it against the ITER press release of 10 April 2025 (sector module #7; the first module, installed in May 2022, was taken out for repair). I also checked it against World Nuclear News (dimensional non-conformities in the welding joint region; corrosion cracks in the thermal shield piping). It is correct, and the earlier "stopped for about two years" is gone.

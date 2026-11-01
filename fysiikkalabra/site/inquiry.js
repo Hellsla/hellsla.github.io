@@ -158,6 +158,7 @@
     const start = ex.querySelector('.exp-start'), rec = ex.querySelector('.exp-record'), reset = ex.querySelector('.exp-reset');
     const tbody = ex.querySelector('tbody'), status = ex.querySelector('.exp-status'), question = ex.querySelector('.exp-question');
     let rows = [], armed = false;
+    let words = {}; try { words = JSON.parse(ex.dataset.words || '{}'); } catch (e) { words = {}; }
     const say = (t) => { status.textContent = t; if (t.includes('$')) typeset(status); };
     [start, rec].forEach((b) => { b.disabled = true; });
     if (question) question.hidden = true;
@@ -172,8 +173,9 @@
         tbody.innerHTML = '';
         rows.forEach((r) => {
           const tr = document.createElement('tr');
-          const td = (x, u) => `<td data-plain="${fi(x)}${u ? ' ' + u : ''}">${fiTex(x, u)}</td>`;   // plain text for the copied notes
-          tr.innerHTML = td(r.vary, unit(vary)) + measure.map((k) => td(r[k], unit(k))).join('');
+          const td = (x, u, k) => (words[k] && String(x) in words[k] ? `<td data-plain="${words[k][String(x)]}">${words[k][String(x)]}</td>`   // a select's value or a switch in words ("values" of the experiment)
+            : `<td data-plain="${fi(x)}${u ? ' ' + u : ''}">${fiTex(x, u)}</td>`);   // plain text for the copied notes
+          tr.innerHTML = td(r.vary, unit(vary), vary) + measure.map((k) => td(r[k], unit(k), k)).join('');
           tbody.appendChild(tr);
         });
         typeset(tbody);
@@ -222,7 +224,7 @@
       const v = Number(input.value.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, ''));
       if (!Number.isFinite(v) || out.dataset.state === 'ok') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
-      if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; }
+      if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
   document.querySelectorAll('.hints').forEach((h) => {

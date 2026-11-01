@@ -373,7 +373,7 @@ def explain_html(a, md, aid):
     those experiments, and offers to copy the tables and the student's own text for their notes. No grading, no model."""
     crit = "".join(f'<li><label><input type="checkbox"> <span>{criterion_html(c, md)}</span></label></li>' for c in a["criteria"])
     draw = a.get("draw")
-    pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
+    pair = f'<div class="pair">{md(a["pair"])}</div>' if a.get("pair") else ""
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""

@@ -224,7 +224,7 @@
       const v = Number(input.value.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, ''));
       if (!Number.isFinite(v) || out.dataset.state === 'ok') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
-      if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; }
+      if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
   document.querySelectorAll('.hints').forEach((h) => {

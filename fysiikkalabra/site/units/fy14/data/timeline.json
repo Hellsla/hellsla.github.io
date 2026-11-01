@@ -177,7 +177,7 @@
         "name": "Albert Einstein",
         "born": "1879-03-14",
         "died": "1955-04-18",
-        "text": "Albert Einstein was born in Ulm, Germany, and did his most famous early work while employed at the Swiss patent office. In 1905 alone he explained the photoelectric effect, Brownian motion and special relativity, which gave us E = mc². He received the 1921 Nobel Prize in Physics. Later he emigrated to the United States and lived in Princeton. For fusion, his equation is the key: it tells us how much energy is released when mass disappears in a nuclear reaction."
+        "text": "Albert Einstein was born in Ulm, Germany, and did his most famous early work while employed at the Swiss patent office. In 1905 alone he explained the photoelectric effect, Brownian motion and special relativity, which gave us $E = mc^2$. He received the 1921 Nobel Prize in Physics. Later he emigrated to the United States and lived in Princeton. For fusion, his equation is the key: it tells us how much energy is released when mass disappears in a nuclear reaction."
       },
       "sources": [
         {
@@ -196,8 +196,8 @@
       "date": "1905-11-21",
       "era": "modern-physics",
       "theme": "science",
-      "title": "E = mc²",
-      "text": "In a short follow-up paper, Einstein asked whether a body's inertia depends on its energy content. His answer was yes: mass and energy are equivalent, which we write as E = mc². Because c² is enormous, even a tiny loss of mass releases a great deal of energy. This is the basic reason why fusing light nuclei can power the stars, and perhaps power stations.",
+      "title": "$E = mc^2$",
+      "text": "In a short follow-up paper, Einstein asked whether a body's inertia depends on its energy content. His answer was yes: mass and energy are equivalent, which we write as $E = mc^2$. Because $c^2$ is enormous, even a tiny loss of mass releases a great deal of energy. This is the basic reason why fusing light nuclei can power the stars, and perhaps power stations.",
       "people": [
         "Albert Einstein"
       ],
@@ -344,12 +344,12 @@
     },
     {
       "id": "aston-1919",
-      "year": 1919,
+      "year": 1920,
       "date": null,
       "era": "modern-physics",
       "theme": "device",
       "title": "Aston's mass spectrograph",
-      "text": "At the Cavendish Laboratory, Francis Aston built a mass spectrograph that could weigh atoms very precisely. He found that isotope masses are nearly whole numbers, but not exactly. A helium atom turned out to be slightly lighter, about 0.8 percent, than four hydrogen atoms. That small 'missing mass' is the energy source of fusion, as Eddington soon pointed out.",
+      "text": "At the Cavendish Laboratory, Francis Aston built a mass spectrograph that could weigh atoms very precisely. He found that isotope masses are nearly whole numbers, but not exactly. By 1920 he had found that a helium atom is slightly lighter than four hydrogen atoms: about 0.8 percent by his measurement (the modern value is 0.7 percent). That small 'missing mass' is the energy source of fusion, as Eddington soon pointed out.",
       "people": [
         "Francis Aston"
       ],
@@ -386,7 +386,7 @@
         "name": "Arthur Eddington",
         "born": "1882-12-28",
         "died": "1944-11-22",
-        "text": "Arthur Eddington was an English astrophysicist from Kendal who worked at Cambridge. In 1919 he led an eclipse expedition to Príncipe that tested Einstein's theory of gravity. In 1920 he proposed that stars are powered by turning hydrogen into helium, using Aston's mass measurements and E = mc². He also wrote popular books that explained modern physics to the public. In our story he is the person who first said clearly what fusion is and why it might one day be useful."
+        "text": "Arthur Eddington was an English astrophysicist from Kendal who worked at Cambridge. In 1919 he led an eclipse expedition to Príncipe that tested Einstein's theory of gravity. In 1920 he proposed that stars are powered by turning hydrogen into helium, using Aston's mass measurements and $E = mc^2$. He also wrote popular books that explained modern physics to the public. In our story he is the person who first said clearly what fusion is and why it might one day be useful."
       },
       "sources": [
         {
@@ -564,7 +564,7 @@
       "era": "modern-physics",
       "theme": "device",
       "title": "Lawrence's first cyclotron",
-      "text": "At Berkeley, Ernest Lawrence and his student M. Stanley Livingston got a palm-sized cyclotron working, which accelerated protons to 80 keV by spiralling them in a magnetic field. By 1932 a 27-inch machine reached 4.8 MeV. Accelerators let physicists study nuclear reactions in detail, but they also showed that beam fusion wastes far more energy than it produces.",
+      "text": "At Berkeley, Ernest Lawrence and his student M. Stanley Livingston got a palm-sized cyclotron working, which accelerated protons to $80\\ \\text{keV}$ by spiralling them in a magnetic field. By 1932 a 27-inch machine reached $4.8\\ \\text{MeV}$. Accelerators let physicists study nuclear reactions in detail, but they also showed that beam fusion wastes far more energy than it produces.",
       "people": [
         "Ernest Lawrence",
         "M. Stanley Livingston"
@@ -729,7 +729,7 @@
       "era": "nuclear-age",
       "theme": "science",
       "title": "The discovery of fission",
-      "text": "In Berlin in December 1938, Otto Hahn and Fritz Strassmann found barium after bombarding uranium with neutrons. Over Christmas in Sweden, Lise Meitner and Otto Frisch explained that the uranium nucleus had split in two, releasing about 200 MeV. Fission of heavy nuclei was suddenly a practical energy source. Fusion, the joining of light nuclei, would prove much harder to control.",
+      "text": "In Berlin in December 1938, Otto Hahn and Fritz Strassmann found barium after bombarding uranium with neutrons. Over Christmas in Sweden, Lise Meitner and Otto Frisch explained that the uranium nucleus had split in two, releasing about $200\\ \\text{MeV}$. Fission of heavy nuclei was suddenly a practical energy source. Fusion, the joining of light nuclei, would prove much harder to control.",
       "people": [
         "Otto Hahn",
         "Fritz Strassmann",
@@ -842,7 +842,7 @@
       "era": "nuclear-age",
       "theme": "device",
       "title": "Chicago Pile-1 goes critical",
-      "text": "Under the stands of a sports field at the University of Chicago, Enrico Fermi's team achieved the first human-made, self-sustaining nuclear chain reaction. The pile of graphite and uranium ran for about four and a half minutes at only half a watt. Fission needed just over three years from discovery to a working reactor; fusion has needed far longer.",
+      "text": "Under the stands of a sports field at the University of Chicago, Enrico Fermi's team achieved the first human-made, self-sustaining nuclear chain reaction. The pile of graphite and uranium ran for about four and a half minutes at only half a watt. Fission needed four years from discovery to a working reactor; fusion has needed far longer.",
       "people": [
         "Enrico Fermi"
       ],
@@ -1416,7 +1416,7 @@
       "era": "tokamak-race",
       "theme": "science",
       "title": "Surprise results at Novosibirsk",
-      "text": "At the IAEA conference in Novosibirsk, 1–7 August 1968, Lev Artsimovich presented results from the T-3 tokamak: electron temperatures of about 1000 eV and confinement at least 50 times better than the Bohm limit. Many Western scientists suspected faulty measurements. Artsimovich also warned that new heating methods would be needed to go further.",
+      "text": "At the IAEA conference in Novosibirsk, 1–7 August 1968, Lev Artsimovich presented results from the T-3 tokamak: electron temperatures of about $1000\\ \\text{eV}$ and confinement at least 50 times better than the Bohm limit. Many Western scientists suspected faulty measurements. Artsimovich also warned that new heating methods would be needed to go further.",
       "people": [
         "Lev Artsimovich"
       ],
@@ -1447,11 +1447,12 @@
       "era": "tokamak-race",
       "theme": "science",
       "title": "The Culham Five confirm T-3",
-      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their Nature paper in November 1969 set off a worldwide 'tokamak stampede'.",
+      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their joint paper with a Soviet colleague in Nature in November 1969 set off a worldwide 'tokamak stampede'.",
       "people": [
         "Nicol Peacock",
         "Derek Robinson",
-        "Mike Forrest"
+        "Mike Forrest",
+        "V. V. Sannikov"
       ],
       "country": "Soviet Union",
       "place": "Moscow",
@@ -1559,17 +1560,21 @@
     {
       "id": "jet-decision-1978",
       "year": 1978,
-      "date": "1978-04-01",
+      "date": "1978-05-30",
       "era": "tokamak-race",
       "theme": "politics",
       "title": "Europe builds JET",
-      "text": "Culham in England was chosen as the host site at the end of 1977, and on 1 April 1978 the JET Joint Undertaking was set up with European funding. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
+      "text": "Culham in England was chosen as the host site on 25 October 1977, and on 30 May 1978 the Council of the European Communities decided to set up the JET Joint Undertaking, which started work on 1 June 1978. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
       "people": [],
       "country": "United Kingdom",
       "place": "Culham",
       "facility": "jet",
       "biography": null,
       "sources": [
+        {
+          "title": "Council Decision 78/471/Euratom of 30 May 1978 on the Joint European Torus (JET) Joint Undertaking (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31978D0471"
+        },
         {
           "title": "Joint European Torus (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Joint_European_Torus"
@@ -2528,8 +2533,8 @@
       "date": "2025-04-10",
       "era": "cooperation",
       "theme": "device",
-      "title": "First vacuum vessel module in ITER's pit",
-      "text": "The first of nine large vacuum vessel sector modules was lowered into the ITER tokamak pit, after repairs to welding defects found earlier. These modules together form the steel chamber that will hold the plasma. Assembly had been stopped for about two years because of the defects, which shows how one manufacturing problem can delay a whole project.",
+      "title": "ITER's vacuum vessel assembly restarts",
+      "text": "A sector module of the vacuum vessel was lowered into the ITER tokamak pit, the first after a long repair. In 2022 the steel sectors had been found to have the wrong shape at their welding edges, and the cooling pipes of the thermal shield had cracks; both had to be repaired before vessel assembly could go on. Nine such modules together form the steel chamber that will hold the plasma. One manufacturing problem can delay a whole project.",
       "people": [],
       "country": "France",
       "place": "Saint-Paul-lez-Durance",

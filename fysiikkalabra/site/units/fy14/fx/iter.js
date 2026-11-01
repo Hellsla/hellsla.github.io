@@ -148,6 +148,11 @@ window.FX.iter = (el, d, A) => {
       g.addEventListener('focus', () => m.classList.add('focus')); g.addEventListener('blur', () => m.classList.remove('focus'));
       p.mark = m; p.g = g;
     });
+    // markers keep at least 18 px across and an 11 px number however small the drawing is
+    function sizeMarks() {
+      const w = svg.getBoundingClientRect().width || VW, k = VW / w, r = Math.max(11, 9 * k), fs = Math.max(13, 11 * k);
+      svg.querySelectorAll('.ip-mk').forEach((m) => { m.querySelector('circle').setAttribute('r', r.toFixed(1)); m.querySelector('text').style.fontSize = fs.toFixed(1) + 'px'; });
+    }
     const [sx, sy] = P(-11.5, -13.4);
     const fig = h('div', { class: 'ip-fig' }, svg, h('span', { class: 'ip-scale', style: `left:${(sx / VW * 100).toFixed(1)}%;top:${((sy - 24) / VH * 100).toFixed(1)}%`, html: '$5\\ \\text{m}$' }));
 
@@ -156,7 +161,7 @@ window.FX.iter = (el, d, A) => {
     const panel = h('div', { class: 'ip-panel', tabindex: '-1', 'aria-live': 'polite' });
     const note = h('p', { class: 'fx-note', html: md(data.drawing_note) });
 
-    const showPanel = (id, focus) => {
+    const showPanel = (id, focus, stay) => {
       const p = byId[id];
       panel.replaceChildren(h('h4', {}, `${p.n}. ${p.name}`), h('dl', {},
         h('dt', {}, 'What it does'), h('dd', { html: md(p.does) }),
@@ -165,6 +170,12 @@ window.FX.iter = (el, d, A) => {
         h('dd', { class: 'ip-src' }, 'Sources: ', ...p.sources.flatMap((x, i) => [i ? ', ' : '', h('a', { href: x.url }, x.title)]), ` (checked ${checked}).`)));
       typeset(panel);
       if (focus) panel.focus({ preventScroll: true });
+      if (!stay) reveal();
+    };
+    // the panel sits right under the drawing; bring it into view if it is (partly) off screen, e.g. on a phone
+    const reveal = () => {
+      const r = panel.getBoundingClientRect(), vh = window.innerHeight || 0;
+      if (vh && (r.top < 0 || r.top > vh - 120)) panel.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     };
     const mark = (id) => {
       svg.classList.toggle('has-sel', !!id);
@@ -203,12 +214,12 @@ window.FX.iter = (el, d, A) => {
     function choose(id, focus) {
       if (mode === 'quiz' && qi < qs.length) {
         const want = byId[qs[qi]];
-        if (!qNext.hidden) { mark(id); showPanel(id, false); return; }   // already answered: just browse
+        if (!qNext.hidden) { mark(id); showPanel(id, false, true); return; }   // already answered: just browse
         if (id === want.id) {
           if (!tried) firstTry++;
           qOut.dataset.state = 'ok'; qOut.textContent = `Right: that is the ${want.name.toLowerCase()}.`;
           list.querySelector(`li[data-id="${id}"]`).dataset.state = 'ok';
-          mark(id); showPanel(id, false); qNext.hidden = false; qNext.textContent = qi === qs.length - 1 ? 'See your score →' : 'Next part →';
+          mark(id); showPanel(id, false, true); qNext.hidden = false; qNext.textContent = qi === qs.length - 1 ? 'See your score →' : 'Next part →';
           if (focus) qNext.focus();
         } else {
           tried = true; qOut.dataset.state = 'no';
@@ -221,7 +232,8 @@ window.FX.iter = (el, d, A) => {
       try { history.replaceState(null, '', '#iter-' + id); } catch (e) { /* file: pages */ }
     }
 
-    root.append(...(mode === 'quiz' ? [qBox] : []), fig, list, h('div', { class: 'ip-main' }, panel), note);
+    root.append(...(mode === 'quiz' ? [qBox] : []), fig, h('div', { class: 'ip-main' }, panel), list, note);
+    sizeMarks(); if (window.ResizeObserver) new ResizeObserver(sizeMarks).observe(svg);
     if (mode === 'quiz') startQuiz();
     else {
       const want = (location.hash.match(/^#iter-([\w-]+)$/) || [])[1];

@@ -124,7 +124,7 @@ def named_sections(html):
     return re.sub(r"<h2>(.*?)</h2>", sub, html)
 
 
-FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>.*?</table>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*<p>(<svg\b.*?</svg>)</p>", re.S)
+FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>(?:(?!</?table>).)*</table>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*<p>(<svg\b.*?</svg>)</p>", re.S)
 
 
 def fig_rows(html):

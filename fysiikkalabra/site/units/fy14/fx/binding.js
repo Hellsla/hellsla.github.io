@@ -5,7 +5,7 @@
    the graph is KaTeX in HTML laid over the SVG (no SVG text), so all symbols are typeset as in the text.
    - Select a nuclide from the list or click its point: the panel gives its notation, $B/A$, $B = A \cdot (B/A)$ and
      stability. "Whole curve" / "Light nuclei" switch the range of $A$.
-   - Compare a reaction: masses before and after, $\Delta m$ and $Q = \Delta m \cdot 931.494\ \text{MeV/u}$ step by
+   - Compare a reaction: masses before and after, the mass difference $\Delta m$ and $Q = \Delta m \cdot 931.494\ \text{MeV/u}$ step by
      step (atomic masses: the electrons cancel because charge is conserved), the same $Q$ again from binding energies,
      and arrows on the curve from the fuel to the products: fusion climbs from the left, fission from the right.
    Options in the element's JSON: {highlight?: [nuclide ids labelled on the curve], reactions?: [reaction ids from
@@ -26,7 +26,7 @@ window.FX.binding = (el, d, A) => {
     const pts = all.filter((x) => x.A > 1).sort((a, b) => a.A - b.A || a.Z - b.Z);
     const reactions = data.reactions.filter((r) => !d.reactions || d.reactions.includes(r.id));
     const idp = el.id + '-';
-    const W = 640, H = 400, X0 = 64, X1 = 620, Y0 = 34, Y1 = 344, BMAX = 9;
+    const W = 640, H = 400, X0 = 64, X1 = 620, Y0 = 34, Y1 = 344, BMAX = 10;
     const VIEWS = { all: { a0: 0, a1: 250, step: 50, label: 'Whole curve' }, light: { a0: 0, a1: 24, step: 4, label: 'Light nuclei ($A \\le 24$)' } };
     let view = 'all', sel = d.select && byId[d.select] ? d.select : null, rx = null;
     const hl = d.highlight || ['H-2', 'He-4', 'Fe-56', 'U-235'];
@@ -121,21 +121,6 @@ window.FX.binding = (el, d, A) => {
       const labelled = new Set(view === 'light' ? LIGHT : hl);
       if (sel) labelled.add(sel);
       if (R) [...R.before, ...R.after].forEach((i) => labelled.add(i));
-      // labels: try four places round the point and keep the first that hits no other label or point
-      const boxes = shown.map((x) => [xs(x.A) - 6, ys(x.be_per_A_MeV) - 6, xs(x.A) + 6, ys(x.be_per_A_MeV) + 6]);
-      const hit = (b) => boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);
-      const cw = svg.getBoundingClientRect().width || W, fsv = Math.min(16, Math.max(12, 0.0245 * cw)) / (cw / W);
-      const order = shown.filter((x) => labelled.has(x.id)).sort((a, b) => (b.id === sel) - (a.id === sel));
-      const placed = {};
-      order.forEach((x) => {
-        const cx = xs(x.A), cy = ys(x.be_per_A_MeV), w = fsv * (0.75 * x.symbol.length + 0.5 * String(x.A).length) + 4, hh = fsv * 1.25;
-        let cands = [[9, -13, 'start'], [-9, -13, 'end'], [9, 15, 'start'], [-9, 15, 'end'], [12, 0, 'start'], [-12, 0, 'end']];
-        if (shown.some((o) => o.A === x.A && o.be_per_A_MeV > x.be_per_A_MeV)) cands = [[9, 15, 'start'], [-9, 15, 'end'], [9, 0, 'start']];   // the lower of two points at the same A: label below
-        const box = ([dx, dy, an]) => { const x0 = an === 'start' ? cx + dx : cx + dx - w; return [x0, cy + dy - hh / 2, x0 + w, cy + dy + hh / 2]; };
-        let c = cands.find((k) => { const b = box(k); return !hit(b) && b[2] <= W - 2 && b[0] >= X0 + 2 && b[1] >= 0; });
-        if (!c && (x.id === sel || (R && [...R.before, ...R.after].includes(x.id)))) c = cands[0];
-        if (c) { boxes.push(box(c)); placed[x.id] = [cx + c[0], cy + c[1], c[2]]; }
-      });
       shown.forEach((x) => {
         const cx = xs(x.A), cy = ys(x.be_per_A_MeV), on = sel === x.id;
         const g = S('g', { class: 'fx-be-pt' + (on ? ' is-on' : ''), 'data-id': x.id });
@@ -146,11 +131,48 @@ window.FX.binding = (el, d, A) => {
         const t = S('title'); t.textContent = `${x.name}: ${x.be_per_A_MeV.toFixed(2)} MeV per nucleon`; g.append(t);
         g.addEventListener('click', () => choose(x.id));
         svg.append(g);
-        if (placed[x.id]) lab(placed[x.id][0], placed[x.id][1], tex(x), placed[x.id][2] === 'end' ? 'fx-lab-end' : 'fx-lab-start');
       });
+      placeLabels(shown, labelled, R);
       const R2 = R ? ` Arrows show the reaction ${R.label}.` : '';
       svg.setAttribute('aria-label', `Graph of binding energy per nucleon against mass number from A = ${V.a0} to ${V.a1}. The values rise steeply from hydrogen to a peak of about 8.8 MeV near iron-56 and nickel-62, then fall slowly to about 7.6 MeV for uranium.` + (sel ? ` Selected: ${byId[sel].name}.` : '') + R2);
       typeset(labs);
+    }
+
+    // Labels of the points: measured after KaTeX has drawn them, then put in the first free place round the point
+    // (above, beside, below, a little farther), never over another label, a point, the axis titles or outside the plot.
+    function placeLabels(shown, labelled, R) {
+      typeset(labs);
+      const pr = labs.getBoundingClientRect(), k = pr.width / W;
+      if (!k) return;
+      const rel = (e) => { const r = e.getBoundingClientRect(); return [(r.left - pr.left) / k, (r.top - pr.top) / k, (r.right - pr.left) / k, (r.bottom - pr.top) / k]; };
+      const obst = [...labs.children].map(rel);
+      shown.forEach((x) => { const cx = xs(x.A), cy = ys(x.be_per_A_MeV), r = x.id === sel ? 13 : 7; obst.push([cx - r, cy - r, cx + r, cy + r]); });
+      const must = new Set([sel, ...(R ? [...R.before, ...R.after] : []), ...hl].filter(Boolean));
+      const prio = [sel, ...(R ? [...R.before, ...R.after] : []), ...hl, ...(view === 'light' ? LIGHT : [])].filter((id, i, a) => id && a.indexOf(id) === i && labelled.has(id));
+      const area = (b) => obst.reduce((t, o) => t + Math.max(0, Math.min(b[2], o[2]) - Math.max(b[0], o[0])) * Math.max(0, Math.min(b[3], o[3]) - Math.max(b[1], o[1])), 0);
+      const free = (b) => area(b) < 3;
+      const inside = (b) => b[0] >= X0 + 2 && b[2] <= W - 2 && b[1] >= 2 && b[3] <= Y1 - 2;
+      prio.map((id) => shown.find((x) => x.id === id)).filter(Boolean).forEach((x) => {
+        const span = h('span', { class: 'fx-lab fx-lab-abs', html: tex(x) });
+        labs.append(span); typeset(span);
+        const m = rel(span), w = m[2] - m[0] + 3, hh = m[3] - m[1] - 2 / k;
+        const cx = xs(x.A), cy = ys(x.be_per_A_MeV), g = x.id === sel ? 14 : 8;
+        const lower = shown.some((o) => o.A === x.A && o.be_per_A_MeV > x.be_per_A_MeV);
+        const ring = (r) => {
+          const q = r * 0.7;
+          const up = [[cx + q, cy - q - hh], [cx - w / 2, cy - r - hh], [cx - q - w, cy - q - hh]], mid = [[cx + r, cy - hh / 2], [cx - r - w, cy - hh / 2]], down = [[cx + q, cy + q], [cx - w / 2, cy + r], [cx - q - w, cy + q]];
+          return lower ? [...down, ...mid, ...up] : [...up, ...mid, ...down];
+        };
+        const cands = [g, g + 10, g + 22, g + 36, g + 54].flatMap(ring).map(([x0, y0]) => [x0, y0, x0 + w, y0 + hh]).filter(inside);
+        let best = cands.find(free);
+        if (!best && must.has(x.id) && cands.length) best = cands.reduce((a, b) => (area(b) < area(a) ? b : a));
+        if (!best) { span.remove(); return; }
+        span.style.left = ((best[0] + 1.5) / W) * 100 + '%'; span.style.top = ((best[1] - 1 / k) / H) * 100 + '%';
+        // a thin leader line when the label had to move away from its point
+        const nx = Math.max(best[0], Math.min(cx, best[2])), ny = Math.max(best[1], Math.min(cy, best[3])), dist = Math.hypot(nx - cx, ny - cy);
+        if (dist > g + 6) svg.append(S('line', { x1: f(cx + ((nx - cx) / dist) * (g - 2), 1), y1: f(cy + ((ny - cy) / dist) * (g - 2), 1), x2: f(nx, 1), y2: f(ny, 1), stroke: '#6b7480', 'stroke-width': 1 }));
+        obst.push(best);
+      });
     }
 
     function showInfo() {
@@ -171,11 +193,12 @@ window.FX.binding = (el, d, A) => {
         return Object.entries(cnt).map(([i, c]) => (c > 1 ? c + '\\,' : '') + texFull(byId[i])).join(' + ');
       };
       const sum = (ids) => ids.reduce((s, i) => s + byId[i].mass_u, 0);
-      const terms = (ids) => { const cnt = {}; ids.forEach((i) => (cnt[i] = (cnt[i] || 0) + 1)); return Object.entries(cnt).map(([i, c]) => (c > 1 ? c + ' \\cdot ' : '') + byId[i].mass_u.toFixed(6) + '\\ \\text{u}').join(' + '); };
+      const narrow = calc.getBoundingClientRect().width < 520;   // a phone: one term per line, so no equation needs a sideways scroll
+      const terms = (ids) => { const cnt = {}; ids.forEach((i) => (cnt[i] = (cnt[i] || 0) + 1)); return Object.entries(cnt).map(([i, c]) => (c > 1 ? c + ' \\cdot ' : '') + byId[i].mass_u.toFixed(6) + '\\ \\text{u}').join(narrow ? ' \\\\ &\\quad + ' : ' + '); };
       const mb = sum(R.before), ma = sum(R.after), dm = mb - ma, Q = dm * uMeV;
       const Bsum = (ids) => ids.reduce((s, i) => s + byId[i].A * byId[i].be_per_A_MeV, 0);
       const Bb = Bsum(R.before), Ba = Bsum(R.after);
-      const rows = (ids) => { const cnt = {}; ids.forEach((i) => (cnt[i] = (cnt[i] || 0) + 1)); return Object.entries(cnt).map(([i, c]) => h('tr', {}, h('td', { html: (c > 1 ? c + ' × ' : '') + '$' + texFull(byId[i]) + '$' }), h('td', { html: byId[i].name }), h('td', { class: 'num', html: `$${byId[i].mass_u.toFixed(6)}$` }))); };
+      const rows = (ids) => { const cnt = {}; ids.forEach((i) => (cnt[i] = (cnt[i] || 0) + 1)); return Object.entries(cnt).map(([i, c]) => h('tr', {}, h('td', { html: '$' + (c > 1 ? c + ' \\cdot ' : '') + texFull(byId[i]) + '$' }), h('td', { html: byId[i].name }), h('td', { class: 'num', html: `$${byId[i].mass_u.toFixed(6)}$` }))); };
       const tbl = (cap, ids, tot) => h('table', { class: 'fx-be-tbl' }, h('caption', {}, cap), h('thead', {}, h('tr', {}, h('th', {}, 'Particle'), h('th', {}, 'Name'), h('th', { class: 'num', html: 'Mass ($\\text{u}$)' }))),
         h('tbody', {}, rows(ids), h('tr', { class: 'fx-be-total' }, h('td', { colspan: 2 }, 'Total'), h('td', { class: 'num', html: `$${tot.toFixed(6)}$` }))));
       const fis = R.kind === 'fission';
@@ -186,9 +209,9 @@ window.FX.binding = (el, d, A) => {
         h('ol', { class: 'fx-be-steps' },
           h('li', { html: `Mass before the reaction: $$\\begin{aligned} m_\\text{before} &= ${terms(R.before)} \\\\ &= ${mb.toFixed(6)}\\ \\text{u} \\end{aligned}$$` }),
           h('li', { html: `Mass after the reaction: $$\\begin{aligned} m_\\text{after} &= ${terms(R.after)} \\\\ &= ${ma.toFixed(6)}\\ \\text{u} \\end{aligned}$$` }),
-          h('li', { html: `Mass defect: $$\\begin{aligned} \\Delta m &= m_\\text{before} - m_\\text{after} \\\\ &= ${dm.toFixed(6)}\\ \\text{u} \\end{aligned}$$` }),
-          h('li', { html: `Energy released: $$\\begin{aligned} Q &= \\Delta m \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${dm.toFixed(6)}\\ \\text{u} \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${sig(Q)}\\ \\text{MeV} \\end{aligned}$$` })),
-        h('p', { html: `Check with binding energies: $Q = B_\\text{after} - B_\\text{before} = ${sig(Ba)}\\ \\text{MeV} - ${sig(Bb)}\\ \\text{MeV} = ${sig(Ba - Bb)}\\ \\text{MeV}$. The products are more tightly bound, so they have less mass, and the difference leaves as kinetic energy.` }),
+          h('li', { html: `Mass difference: $$\\begin{aligned} \\Delta m &= m_\\text{before} - m_\\text{after} \\\\ &= ${dm.toFixed(6)}\\ \\text{u} \\end{aligned}$$` }),
+          h('li', { html: `Energy released: $$\\begin{aligned} Q &= \\Delta m \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${dm.toFixed(6)}\\ \\text{u} ${narrow ? '\\\\ &\\quad' : ''} \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${sig(Q)}\\ \\text{MeV} \\end{aligned}$$` })),
+        h('p', { html: `Check with binding energies: $$\\begin{aligned} Q &= B_\\text{after} - B_\\text{before} \\\\ &= ${sig(Ba)}\\ \\text{MeV} - ${sig(Bb)}\\ \\text{MeV} \\\\ &= ${sig(Ba - Bb)}\\ \\text{MeV} \\end{aligned}$$ The products are more tightly bound, so they have less mass, and the difference leaves as kinetic energy.` }),
         h('p', { class: 'fx-note', html: 'These are atomic masses (electrons included). The electrons cancel because the charge is the same before and after.'
           + (fis ? ` This particular split releases $${sig(Q)}\\ \\text{MeV}$ at once. The fragments are radioactive, and their later decays bring the total to about $200\\ \\text{MeV}$ per fission.` : '') }));
       typeset(calc);
@@ -205,7 +228,7 @@ window.FX.binding = (el, d, A) => {
       draw(); showCalc();
     });
     let lastW = 0;
-    if (window.ResizeObserver) new ResizeObserver(() => { const cw = Math.round(svg.getBoundingClientRect().width); if (cw && Math.abs(cw - lastW) > 40) { lastW = cw; draw(); } }).observe(plot);
+    if (window.ResizeObserver) new ResizeObserver(() => { const cw = Math.round(svg.getBoundingClientRect().width); if (cw && Math.abs(cw - lastW) > 4) { lastW = cw; draw(); showCalc(); } }).observe(plot);
     if (d.reaction && reactions.find((r) => r.id === d.reaction)) { rsel.value = d.reaction; rsel.dispatchEvent(new Event('change')); }
     else draw();
     pick.value = sel || ''; showInfo();

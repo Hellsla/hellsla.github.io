@@ -1,0 +1,544 @@
+{
+ "version": 1,
+ "contribution": "The course's laboratory unit: students prepare the Fotoni visit (predictions, the physics of each station, planning and safety), record their own measurements on a printable worksheet, and afterwards fit straight lines for Planck's constant and e/m with uncertainties, connect the results to modern physics and fusion, and write an English lab report.",
+ "learn": [
+  "plan measurements at the Fotoni stations and record observations with their uncertainties.",
+  "determine Planck's constant from a straight-line fit and estimate its uncertainty.",
+  "write a lab report in English and connect the results to modern physics."
+ ],
+ "prior": [
+  "The stopping voltage $eU_\\text{s} = hf - W$ (chapter *Light as particles: the photoelectric effect*)",
+  "A charged particle that moves across a magnetic field moves on a circle (chapter *Charged particles and magnetic confinement*)",
+  "Light and electrons in a double slit, and probability (chapter *Waves, probability and quantum tunnelling*)",
+  "Each gas gives its own line spectrum (chapter *From Rutherford's nucleus to Bohr's atom*)",
+  "The peak of thermal radiation follows Wien's law $\\lambda_\\text{max} T = b$ (chapter *When classical physics ran out of answers*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Soon your group visits **Fotoni**, the open physics teaching laboratory of the University of Helsinki, on the second floor of the Physicum building on the Kumpula campus. Until now you have read about photons, electrons and spectra in this course. At Fotoni you do the experiments yourselves, with real lamps, glass tubes, coils and meters, in about an hour of lab work. Real measurements never give exactly the numbers in a book.",
+   "question": "What can we measure about light and electrons ourselves, and how sure can we be of our numbers?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: the stopping voltage",
+   "prompt": "In the unit *Light as particles: the photoelectric effect*, you raised a counter-voltage until the current of a photocell was zero. What does this stopping voltage $U_\\text{s}$ tell you?",
+   "choices": [
+    {
+     "text": "The largest kinetic energy of the electrons, $eU_\\text{s}$.",
+     "correct": true,
+     "feedback": "Right. The counter-voltage takes the energy $eU_\\text{s}$ from every electron, so at $U_\\text{s}$ even the fastest ones turn back: $eU_\\text{s} = E_{\\text{k,max}} = hf - W$. At Fotoni you measure $U_\\text{s}$ for several LEDs."
+    },
+    {
+     "text": "The energy $hf$ of one photon of the light used.",
+     "feedback": "Not quite. The photon's energy is shared: first the work function $W$ frees the electron, and only the rest, $hf - W$, is kinetic energy. So $eU_\\text{s}$ is smaller than $hf$."
+    },
+    {
+     "text": "The number of photons that hit the plate every second.",
+     "feedback": "The stopping voltage is the voltage that turns electrons back, so it measures the energy of an electron, not how many photons arrive."
+    },
+    {
+     "text": "The work function $W$ of the metal in the photocell.",
+     "feedback": "The work function is in the equation $eU_\\text{s} = hf - W$, but one stopping voltage does not give it alone. You need several colours and a graph: the intercept gives $W$."
+    }
+   ]
+  },
+  {
+   "id": "hook-help",
+   "stage": "herata",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>A number is trustworthy if …</li><li>We could repeat the measurement to …</li><li>One problem could be that …</li><li>I think the hardest part will be …, because …</li></ul></div>"
+  },
+  {
+   "id": "hook-discuss",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: a number you can trust",
+   "pair": "Pair work: share your ideas aloud first, then each of you writes your own answer.",
+   "prompt": "Discuss with a partner: you will measure Planck's constant yourselves. What would make your number trustworthy? Write two or three sentences. Name at least one thing that could make the result less precise.",
+   "model": "A number is trustworthy if we can repeat the measurement and get almost the same value, and if we know how big the uncertainty of each reading is. We should also use several points and a graph instead of one reading. One problem could be that it is hard to see exactly when the current becomes zero, so the stopping voltage can be a little wrong.",
+   "criteria": [
+    "The answer names a feature of a trustworthy result (repeating, several points, a known uncertainty).",
+    "The answer names at least one concrete source of imprecision.",
+    "The answer uses a sentence starter or a clear *because*."
+   ]
+  },
+  {
+   "id": "pred-current",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: a brighter LED at the stopping voltage",
+   "prompt": "At the photoelectric station you set the counter-voltage to the stopping voltage of the red LED, so the current is zero. Then you turn the intensity of the LED up. What happens to the current?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "It stays at zero: each photon still has the same energy.",
+     "correct": true,
+     "feedback": "This is what the stations show: at the stopping voltage the current stays at zero however bright the LED is. A brighter LED sends more photons, but each red photon still has the same energy $hf$, so no electron can get past the counter-voltage. Check your worksheet: did your current stay at zero?"
+    },
+    {
+     "text": "It grows, because more photons free more electrons.",
+     "feedback": "More photons do free more electrons, and below the stopping voltage the current does grow. But at the stopping voltage even the fastest electrons turn back, and a brighter LED does not make any electron faster: each photon has the same $hf$. So the current stays at zero."
+    },
+    {
+     "text": "It becomes negative, because the electrons now flow backwards.",
+     "feedback": "The electrons that turn back return to the plate they came from, so they carry no current in the opposite direction. The current stays at zero: brighter light gives more photons, not more energetic ones."
+    },
+    {
+     "text": "It grows slowly, because the electrons collect energy over time.",
+     "feedback": "This is the classical wave idea. An electron takes the energy of one photon at once and practically never collects two. So more light, or a longer time, does not get any electron past the stopping voltage: the current stays at zero."
+    }
+   ]
+  },
+  {
+   "id": "pred-radius",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: a stronger magnetic field",
+   "prompt": "At the electron-beam station the beam moves on a circle. You keep the accelerating voltage the same and increase the current in the coils, so the magnetic field becomes stronger. What happens to the circle?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "It becomes larger, because the field pushes the electrons outwards.",
+     "feedback": "The magnetic force points to the *centre* of the circle, not outwards. A stronger field gives a stronger force towards the centre, so the circle becomes smaller: $r = mv/(eB)$."
+    },
+    {
+     "text": "It becomes smaller, because the force towards the centre grows.",
+     "correct": true,
+     "feedback": "This is what the station shows. The speed is set by the accelerating voltage, so it stays the same. A stronger field gives a larger force $evB$ towards the centre, and the circle shrinks: $r = mv/(eB)$. Compare with your worksheet."
+    },
+    {
+     "text": "It stays the same, because the field does no work on the electrons.",
+     "feedback": "It is true that the magnetic force does no work, so the speed does not change. But the force still bends the path more sharply when $B$ is larger. The radius $r = mv/(eB)$ becomes smaller."
+    },
+    {
+     "text": "It opens up into a straight line along the field lines.",
+     "feedback": "The electrons move perpendicular to the field, so they cannot move along it. A stronger field bends their path more: the circle becomes smaller, $r = mv/(eB)$."
+    }
+   ]
+  },
+  {
+   "id": "pred-photons",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 3: one photon at a time",
+   "prompt": "At the double-slit station the light is made so dim that there is practically never more than one photon in the apparatus. A counter counts the photons at different positions behind the two slits. What will the counts show after a long time?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "Many counts only right behind the two slits, as for small balls.",
+     "feedback": "This is what a pure particle model predicts. The counts instead form several bright and dark bands, the same pattern as bright light. Each photon arrives at one point, but where it is likely to arrive follows a wave pattern."
+    },
+    {
+     "text": "The same bright and dark bands as with bright light.",
+     "correct": true,
+     "feedback": "This is what the station shows. Each photon gives one click at one point, so it is detected like a particle. But after many photons the counts form the bands of an interference pattern: the probability of where a photon arrives follows a wave. Compare with your worksheet."
+    },
+    {
+     "text": "The same count everywhere, as one photon cannot interfere.",
+     "feedback": "One might think that interference needs many photons at once. But the bands appear even when photons go through one at a time. Each photon's probability of arriving at a point follows the wave pattern."
+    },
+    {
+     "text": "No counts at all, because one photon is too weak to be detected.",
+     "feedback": "A photomultiplier is made to detect single photons: one photon frees one electron, and the tube multiplies it into a pulse that the counter registers. The counts form the bands of an interference pattern."
+    }
+   ]
+  },
+  {
+   "id": "pred-peak",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 4: a hotter filament",
+   "optional": true,
+   "prompt": "At the hot-filament station you raise the lamp voltage from $7\\ \\text{V}$ to $10\\ \\text{V}$, and the filament becomes hotter. The visible range is about $400\\text{–}700\\ \\text{nm}$. Where is the peak of the spectrum?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "It moves to shorter wavelengths but stays in the infrared.",
+     "correct": true,
+     "feedback": "This is what the station shows. By Wien's law $\\lambda_\\text{max} = b/T$, a hotter filament has its peak at a shorter wavelength. But a peak at $700\\ \\text{nm}$ would need about $4100\\ \\text{K}$, and lamp filaments are made of tungsten, which melts at $3695\\ \\text{K}$. So the peak stays in the infrared."
+    },
+    {
+     "text": "It moves into the visible range at the highest voltage.",
+     "feedback": "The peak does move to shorter wavelengths, and the lamp looks whiter. But to reach $700\\ \\text{nm}$ the filament would need about $4100\\ \\text{K}$, more than the melting point of tungsten, $3695\\ \\text{K}$. The peak stays in the infrared."
+    },
+    {
+     "text": "It moves to longer wavelengths, because more energy is radiated.",
+     "feedback": "More energy is radiated, but Wien's law says $\\lambda_\\text{max} = b/T$: a higher temperature gives a *shorter* peak wavelength. The peak moves towards the visible range but stays in the infrared."
+    },
+    {
+     "text": "It stays at the same wavelength; only the height grows.",
+     "feedback": "The height does grow, but the peak also moves: $\\lambda_\\text{max} = b/T$. A hotter filament peaks at a shorter wavelength, still in the infrared."
+    }
+   ]
+  },
+  {
+   "id": "theory-stations",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Stations"
+   ]
+  },
+  {
+   "id": "stations-match",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Which station measures what?",
+   "text": "Check that you know what each station is for.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-stations\"><script type=\"application/json\">{\"prompt\": \"Match each station with what you find out there.\", \"options\": [\"Planck's constant h\", \"the ratio e/m of the electron\", \"light as particles and waves\", \"how a spectrum shifts with heat\", \"the lines of each gas\", \"charge comes in steps of e\"], \"items\": [{\"text\": \"photocell and LEDs\", \"answer\": \"Planck's constant h\", \"feedback\": \"The stopping voltages of several LEDs give a straight line with the slope $h/e$.\"}, {\"text\": \"electron beam between two coils\", \"answer\": \"the ratio e/m of the electron\", \"feedback\": \"The radius of the circle, the voltage and the field give $2U = (e/m) \\\\cdot B^2r^2$.\"}, {\"text\": \"double slit with a photon counter\", \"answer\": \"light as particles and waves\", \"feedback\": \"Single photons are counted one at a time, but their positions are tested for a wave pattern.\"}, {\"text\": \"filament lamp, prism and sensor\", \"answer\": \"how a spectrum shifts with heat\", \"feedback\": \"The intensity is measured at each wavelength at four voltages, so at four temperatures.\"}, {\"text\": \"gas tubes and a spectroscope\", \"answer\": \"the lines of each gas\", \"feedback\": \"Each element gives light only at its own wavelengths.\"}, {\"text\": \"oil drops between charged plates\", \"answer\": \"charge comes in steps of e\", \"feedback\": \"A drop that suddenly changes its motion has gained or lost charge.\"}]}</script></div>"
+  },
+  {
+   "id": "theory-planning",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Planning"
+   ]
+  },
+  {
+   "id": "safety",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Safety check",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-safety\"><script type=\"application/json\">{\"prompt\": \"Match each situation at Fotoni with the right action.\", \"options\": [\"ask the instructor first\", \"bring it near, never touch\", \"do not touch; let it cool\", \"do not look straight into it\", \"turn it down soon\"], \"items\": [{\"text\": \"You want to change a cable at the electron tube.\", \"answer\": \"ask the instructor first\", \"feedback\": \"The tube's supply gives up to $300\\\\ \\\\text{V}$. Change connections only when the instructor allows it.\"}, {\"text\": \"You test the beam with a bar magnet.\", \"answer\": \"bring it near, never touch\", \"feedback\": \"The tube is thin glass. The magnet works from a few centimetres away.\"}, {\"text\": \"A gas tube has been on for a while.\", \"answer\": \"do not touch; let it cool\", \"feedback\": \"Lamps and gas tubes get hot, and a gas tube runs on a high voltage.\"}, {\"text\": \"A bright LED is close to your eyes.\", \"answer\": \"do not look straight into it\", \"feedback\": \"Look at the meters and the screen, not into the light source.\"}, {\"text\": \"The filament lamp is at $10\\\\ \\\\text{V}$.\", \"answer\": \"turn it down soon\", \"feedback\": \"The Fotoni instruction asks not to keep the lamp at $10\\\\ \\\\text{V}$ for long, so that it does not wear out.\"}, {\"text\": \"The oil-drop apparatus needs a new source.\", \"answer\": \"ask the instructor first\", \"feedback\": \"The alpha source stays inside the apparatus, and only the instructor handles it.\"}]}</script></div>"
+  },
+  {
+   "id": "plan-help",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>research question · independent variable · dependent variable · controlled variable · reading · uncertainty $\\Delta x$ · to repeat · to keep constant · smallest step of the scale</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Our research question is …</li><li>We will change … and measure …</li><li>We will keep … the same, because …</li><li>The uncertainty of one reading is about …, because …</li></ul></div>"
+  },
+  {
+   "id": "plan",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Plan the photoelectric measurement",
+   "pair": "Pair work: plan together, then each of you writes the plan on your own worksheet.",
+   "prompt": "Discuss with a partner and write a short plan for the photoelectric station: the research question, the independent, dependent and controlled variables, how many LEDs you will measure and how you will estimate the uncertainty of one stopping voltage.",
+   "model": "Our research question is how the stopping voltage depends on the frequency of the light, and what Planck's constant is. We will change the LED, so the wavelength and the frequency are the independent variable. We will measure the stopping voltage, the dependent variable. We will keep the photocell and the metal plate the same. We will measure every LED the station has, at least four, because a line needs several points. The uncertainty of one stopping voltage is about one or two steps of the voltmeter's last digit, because it is hard to see exactly when the current reaches zero; we will find each stopping voltage twice and compare.",
+   "criteria": [
+    "The plan has a research question that can be answered by the measurement.",
+    "The plan names the independent variable (the LED or its frequency), the dependent variable (the stopping voltage) and at least one controlled variable.",
+    "The plan says how many points it needs and why (a line, at least about four).",
+    "The plan gives a way to estimate the uncertainty (reading step or repeated readings)."
+   ]
+  },
+  {
+   "id": "theory-worksheet",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Worksheet"
+   ]
+  },
+  {
+   "id": "record-help",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Language for your observations",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>to increase · to decrease · to stay the same · to bend · to glow · a reading · a count · a peak · a line (in a spectrum) · continuous · roughly · exactly</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>When we increased …, the … stayed / grew / fell.</li><li>The reading jumped between … and …, so …</li><li>We repeated the count five times and got …</li><li>We could not measure … because …</li></ul></div>"
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Evidence",
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with your own worksheet and with the results above. Which prediction did the measurement change most? Then answer the opening question in one or two sentences: what can we measure about light and electrons ourselves?",
+   "predictions": [
+    "pred-current",
+    "pred-radius",
+    "pred-photons",
+    "pred-peak"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lab",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-fo-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"how far the true value may be\", \"the quantity you change\", \"the quantity you measure\", \"kept the same during a series\", \"the best straight line\", \"half of the largest minus smallest\"], \"items\": [{\"text\": \"uncertainty\", \"answer\": \"how far the true value may be\", \"feedback\": \"We write a result as $x \\\\pm \\\\Delta x$; $\\\\Delta x$ is its uncertainty.\"}, {\"text\": \"independent variable\", \"answer\": \"the quantity you change\", \"feedback\": \"At the photoelectric station, the LED and so the frequency $f$.\"}, {\"text\": \"dependent variable\", \"answer\": \"the quantity you measure\", \"feedback\": \"It *depends* on what you changed, for example the stopping voltage $U_\\\\text{s}$.\"}, {\"text\": \"controlled variable\", \"answer\": \"kept the same during a series\", \"feedback\": \"For example the accelerating voltage while you change the coil current.\"}, {\"text\": \"linear fit\", \"answer\": \"the best straight line\", \"feedback\": \"A spreadsheet finds the line that passes closest to all points; its slope gives the constant.\"}, {\"text\": \"half range\", \"answer\": \"half of the largest minus smallest\", \"feedback\": \"A simple estimate of $\\\\Delta x$ from repeated readings.\"}]}</script></div>"
+  },
+  {
+   "id": "theory-fit",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Kaava",
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "em-task",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "The charge-to-mass ratio from one reading",
+   "prompt": "Example data: at $U = 200\\ \\text{V}$ and a coil current of $I = 1.50\\ \\text{A}$, a group measured the **diameter** of the circle as $8.2\\ \\text{cm}$. One coil has $N = 130$ turns and the radius $R = 0.150\\ \\text{m}$, as in the Fotoni instruction. Calculate $e/m$. Give the answer as a number times $10^{11}\\ \\text{C/kg}$: for example, type $1.9$ for $1.9 \\cdot 10^{11}\\ \\text{C/kg}$.",
+   "answer": 1.74,
+   "unit": "$\\cdot 10^{11}\\ \\text{C/kg}$",
+   "tolerance": 0.025,
+   "hints": [
+    "First find the field: $B = (4/5)^{3/2}\\,\\mu_0 N I / R$, with $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$.",
+    "The equation is $2U = (e/m) \\cdot B^2r^2$, so $e/m = 2U/(B^2r^2)$. Is $8.2\\ \\text{cm}$ the radius?",
+    "$B \\approx 1.169 \\cdot 10^{-3}\\ \\text{T}$ and $r = 0.041\\ \\text{m}$, so $B^2r^2 \\approx 2.30 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.435,
+     "feedback": "You used the diameter as the radius. The radius is half of the diameter, and since the radius is squared, this changes the result by a factor of four."
+    },
+    {
+     "value": 0.871,
+     "feedback": "You forgot the factor of two. It comes from the kinetic energy, which is one half of the mass times the speed squared."
+    }
+   ],
+   "solution": "**Given:** accelerating voltage $U = 200\\ \\text{V}$, coil current $I = 1.50\\ \\text{A}$, diameter of the circle $8.2\\ \\text{cm}$, turns of one coil $N = 130$, coil radius $R = 0.150\\ \\text{m}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$. We want $e/m$.\n\n**Principle:** The magnetic force is the centripetal force, $evB = mv^2/r$, and the accelerating voltage gives the kinetic energy, $eU = \\tfrac{1}{2}mv^2$. Eliminating $v$ gives $2U = (e/m) \\cdot B^2r^2$. The field of the coil pair is $B = (4/5)^{3/2}\\,\\mu_0 N I / R$.\n\n**Formula:** Solved in symbols:\n\n$$\\begin{aligned} B &= \\left(\\frac{4}{5}\\right)^{3/2} \\frac{\\mu_0 N I}{R} \\\\ \\frac{e}{m} &= \\frac{2U}{B^2 r^2} \\end{aligned}$$\n\n**Unit conversions:** The radius is half of the diameter, in metres: $r = 8.2\\ \\text{cm} : 2 = 4.1\\ \\text{cm} = 0.041\\ \\text{m}$. The units: $\\text{V}/(\\text{T}^2 \\cdot \\text{m}^2) = \\text{C/kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\mu_0 N I &= 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A} \\\\ &\\quad \\cdot 130 \\cdot 1.50\\ \\text{A} \\\\ &= 2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m} \\\\[6pt] B &= 0.7155 \\cdot \\frac{2.450 \\cdot 10^{-4}\\ \\text{T} \\cdot \\text{m}}{0.150\\ \\text{m}} \\\\ &= 1.169 \\cdot 10^{-3}\\ \\text{T} \\\\[6pt] B^2r^2 &= (1.169 \\cdot 10^{-3}\\ \\text{T})^2 \\\\ &\\quad \\cdot (0.041\\ \\text{m})^2 \\\\ &= 2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2 \\\\[6pt] \\frac{e}{m} &= \\frac{2 \\cdot 200\\ \\text{V}}{B^2r^2} \\\\ &= \\frac{400\\ \\text{V}}{2.297 \\cdot 10^{-9}\\ \\text{T}^2 \\cdot \\text{m}^2} \\\\ &= 1.741 \\cdot 10^{11}\\ \\text{C/kg} \\end{aligned}$$\n\n**Answer:** $e/m \\approx 1.74 \\cdot 10^{11}\\ \\text{C/kg}$. The diameter has only two significant figures, so a report would give $1.7 \\cdot 10^{11}\\ \\text{C/kg}$; the third figure is kept here only to compare with the accepted value.\n\n**Reasonableness:** The accepted value is $1.76 \\cdot 10^{11}\\ \\text{C/kg}$, so the result is about $1\\ \\%$ too small. A radius error of only $1\\ \\text{mm}$ changes $r^2$ by about $5\\ \\%$, so the radius is the most important uncertainty, and one point is not enough: at Fotoni you measure six and fit a line."
+  },
+  {
+   "id": "own-help",
+   "stage": "sovella",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>We plotted … on the vertical axis and … on the horizontal axis.</li><li>The fit gave a slope of …, so $h$ = …</li><li>The steepest and least steep lines gave …, so $\\Delta h$ ≈ …</li><li>Our result is …% smaller / larger than the accepted value, which is inside / outside our uncertainty.</li></ul></div>"
+  },
+  {
+   "id": "own-data",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Analyse your own photoelectric data",
+   "prompt": "Use the table on your worksheet (or the example table above, if your group did not do this station). Plot $U_\\text{s}$ against $f$ in a spreadsheet, fit a line and find $h$, $\\Delta h$ and the percentage difference from $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. Write your result and three or four sentences on how you got it.",
+   "hints": [
+    "The frequency is $f = c/\\lambda$ with $c = 2.998 \\cdot 10^{8}\\ \\text{m/s}$ and $\\lambda$ in metres.",
+    "In most spreadsheets: make a scatter chart, add a linear trendline and show its equation. The slope is in $\\text{V/Hz} = \\text{V} \\cdot \\text{s}$.",
+    "For $\\Delta h$, draw the steepest and least steep lines through the first and last point moved by $\\pm \\Delta U_\\text{s}$, as in the worked example."
+   ],
+   "model": "We plotted the stopping voltage on the vertical axis and the frequency on the horizontal axis. The five points lay close to a straight line, and the spreadsheet fit gave the slope $3.96 \\cdot 10^{-15}\\ \\text{V} \\cdot \\text{s}$, so $h = e\\,k = 6.35 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. The steepest and least steep lines gave $\\Delta h \\approx 0.3 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, so $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. This is about $4\\ \\%$ smaller than the accepted value, which lies inside our uncertainty. (These are the numbers of the example table; your own will differ.)",
+   "criteria": [
+    "The answer says which quantity is on which axis and that the points lie close to a line (or where they do not).",
+    "The answer gives $h = e\\,k$ with a unit, and an uncertainty $\\Delta h$ found from the graph.",
+    "The value and the uncertainty are rounded consistently ($x \\pm \\Delta x$ to the same decimal place).",
+    "The answer compares with the accepted value by a percentage difference and says whether it lies inside $x \\pm \\Delta x$."
+   ]
+  },
+  {
+   "id": "slit-task",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "The spacing of the bands",
+   "optional": true,
+   "prompt": "In the Fotoni double-slit setup the slit separation is $d = 0.3556\\ \\text{mm}$ and the detector is $L = 49\\ \\text{cm}$ from the slits. For small angles, neighbouring bright bands are $\\Delta y = \\lambda L / d$ apart. How far apart are they for green light of $550\\ \\text{nm}$? Give the answer in millimetres.",
+   "answer": 0.758,
+   "unit": "$\\text{mm}$",
+   "tolerance": 0.02,
+   "hints": [
+    "Write all three lengths in metres before you substitute.",
+    "$\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}$, $L = 0.49\\ \\text{m}$ and $d = 0.3556 \\cdot 10^{-3}\\ \\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.000758,
+     "feedback": "You used the slit separation in millimetres but the other two lengths in metres. Write all three in metres first, and then convert the answer to millimetres."
+    }
+   ],
+   "solution": "**Given:** $\\lambda = 550\\ \\text{nm}$, $L = 49\\ \\text{cm}$, $d = 0.3556\\ \\text{mm}$. We want the distance $\\Delta y$ between neighbouring bright bands.\n\n**Principle:** Bright bands appear where the paths from the two slits differ by a whole number of wavelengths, $d \\sin\\theta_n = n\\lambda$. For small angles $\\sin\\theta \\approx \\tan\\theta = y/L$, so the bands are evenly spaced.\n\n**Formula:** $y_n = n\\lambda L/d$, so neighbouring bands are $\\Delta y = \\lambda L/d$ apart.\n\n**Unit conversions:** $\\lambda = 550 \\cdot 10^{-9}\\ \\text{m}$, $L = 0.49\\ \\text{m}$, $d = 0.3556 \\cdot 10^{-3}\\ \\text{m}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta y &= \\frac{550 \\cdot 10^{-9}\\ \\text{m} \\cdot 0.49\\ \\text{m}}{0.3556 \\cdot 10^{-3}\\ \\text{m}} \\\\ &= 7.58 \\cdot 10^{-4}\\ \\text{m} \\\\ &= 0.758\\ \\text{mm} \\end{aligned}$$\n\n**Answer:** $\\Delta y \\approx 0.76\\ \\text{mm}$, two significant figures, as in $L = 49\\ \\text{cm}$.\n\n**Reasonableness:** The bands are less than a millimetre apart, so the detector needs a narrow measuring slit that moves in small steps. The angle is about $0.76\\ \\text{mm} : 490\\ \\text{mm} \\approx 0.0015$, so the small-angle approximation is very good."
+  },
+  {
+   "id": "modern-help",
+   "stage": "sovella",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>quantum (plural quanta) · photon · Planck's constant · wave–particle duality · probability · charge-to-mass ratio · magnetic confinement · spectroscopy · impurity · classical physics</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Classical physics predicted …, but we saw …</li><li>This result is evidence that …</li><li>The same idea is used in fusion research, where …</li><li>The experiment was important because …</li></ul></div>"
+  },
+  {
+   "id": "modern",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Connect to modern physics",
+   "pair": "Group work in threes: each of you explains one station to the others, then each writes an own answer.",
+   "prompt": "Discuss in a group of three. Choose two stations you did. For each one, write two sentences: what the measurement shows that classical physics could not explain, and how the same physics is used in fusion research or elsewhere in modern technology.",
+   "model": "At the photoelectric station the stopping voltage did not change when the LED became brighter, only when its colour changed. Classical physics predicted that brighter light gives faster electrons, so this is evidence that light comes in quanta of energy $hf$. At the electron-beam station the electrons moved on a circle whose radius depended on the field, $r = mv/(eB)$. The same motion of charged particles around magnetic field lines is the idea of a tokamak, which keeps a hot plasma away from its walls.",
+   "criteria": [
+    "For each station, the answer names the classical expectation or the new idea (quanta, a particle with charge $e$, wave–particle duality).",
+    "The answer uses evidence from the measurement, not only the theory.",
+    "The answer makes one correct link to fusion research or another application (magnetic confinement, spectroscopy of plasma, photon detectors).",
+    "The answer uses at least two words from the word bank correctly."
+   ]
+  },
+  {
+   "id": "theory-report",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Report"
+   ]
+  },
+  {
+   "id": "report-order",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Put the report in order",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-fo-report\"><script type=\"application/json\">{\"prompt\": \"These sentences come from one photoelectric report. Put them in the order of the report's parts.\", \"items\": [\"*Aim:* We wanted to find out whether the stopping voltage depends on the frequency of the light.\", \"*Background:* According to Einstein, the stopping voltage is a linear function of the frequency.\", \"*Method:* We measured the stopping voltage for five LEDs of different colours.\", \"*Results:* The points of the stopping voltage against the frequency lie close to a straight line.\", \"*Analysis:* The slope of the fitted line gave $h = (6.4 \\\\pm 0.3) \\\\cdot 10^{-34}\\\\ \\\\text{J} \\\\cdot \\\\text{s}$.\", \"*Discussion:* The largest uncertainty came from deciding when the current was zero.\", \"*Conclusion:* The stopping voltage grows linearly with the frequency, as Einstein predicted.\"], \"explain\": \"This is the usual order: what you wanted to know, the theory, what you did, what you saw, what you calculated, how reliable it is, and the answer.\", \"hints\": [\"The aim comes first: it is the question the report answers.\", \"The theory comes before the method.\", \"What you did comes before what you saw.\", \"The data comes before the calculation.\", \"The calculation comes before you judge its reliability.\", \"The reliability comes before the final answer.\", \"The conclusion answers the aim.\"]}</script></div>"
+  },
+  {
+   "id": "report-help",
+   "stage": "sovella",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>accepted value · percentage difference · within the uncertainty · source of uncertainty · systematic error · random error · to improve · to repeat · to agree with · to be consistent with</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The evidence suggests that …</li><li>Our value agrees with the accepted value within …</li><li>The main source of uncertainty was …, because …</li><li>A limitation of our measurement is …</li><li>To improve the experiment, we could …</li></ul></div>"
+  },
+  {
+   "id": "report-write",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write the discussion of your report",
+   "prompt": "Write the **Discussion** of your photoelectric report (or of another quantitative station) in five to seven sentences. Compare your result with the accepted value, name the main sources of uncertainty, say whether they are random or systematic, and suggest one improvement.",
+   "model": "Our value $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$ is about $4\\ \\%$ smaller than the accepted value $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, but the accepted value lies within our uncertainty. The main source of uncertainty was deciding when the current was exactly zero, because the reading jumped between two values; this is a random error. A possible systematic error is that an LED does not give one exact wavelength but a band of wavelengths, so the frequencies in our table are not exact. A limitation of our measurement is that we had only five LEDs. To improve the experiment, we could measure each stopping voltage several times and find the wavelength of each LED with a spectrometer.",
+   "criteria": [
+    "The discussion compares the result with the accepted value with a number (a percentage difference) and says whether it agrees within the uncertainty.",
+    "It names at least two concrete sources of uncertainty and calls at least one of them random or systematic correctly.",
+    "It suggests an improvement that would reduce one named source of uncertainty.",
+    "The language is that of a report: past tense for what was done, numbers with units, sentence starters from the box."
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: does the result agree?",
+   "prompt": "A group reports $h = (6.4 \\pm 0.3) \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. The accepted value is $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. What can the group conclude?",
+   "choices": [
+    {
+     "text": "It agrees with the accepted value within the uncertainty.",
+     "correct": true,
+     "feedback": "Right. $6.4 \\pm 0.3$ covers $6.1\\text{–}6.7$, and $6.626$ lies inside. A difference smaller than the uncertainty is what we expect from a good measurement."
+    },
+    {
+     "text": "Their result is wrong, because it is not exactly $6.626$.",
+     "feedback": "No measurement gives exactly the accepted value. What matters is whether the accepted value lies inside $x \\pm \\Delta x$, and here it does: $6.1\\text{–}6.7$."
+    },
+    {
+     "text": "The uncertainty is so large that the result tells nothing.",
+     "feedback": "An uncertainty of about $5\\ \\%$ is quite small for a school measurement. The result clearly shows that $h$ is about $6 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$, not, say, ten times larger."
+    },
+    {
+     "text": "The accepted value is likely wrong, since they measured with care.",
+     "feedback": "The accepted value is the result of many very precise experiments; since 2019 it is even exact by definition. A careful school measurement still has an uncertainty, and here it covers the accepted value."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Graph: which axes for e/m?",
+   "prompt": "You measured the radius $r$ of the electron beam for several voltages $U$ and fields $B$. Which graph gives a straight line through the origin whose slope is $e/m$?",
+   "choices": [
+    {
+     "text": "$2U$ on the vertical axis, $B^2r^2$ on the horizontal",
+     "correct": true,
+     "feedback": "Right. The equation $2U = (e/m) \\cdot B^2r^2$ has the form $y = kx$, with $y = 2U$, $x = B^2r^2$ and the slope $k = e/m$."
+    },
+    {
+     "text": "$U$ on the vertical axis, $r$ on the horizontal axis",
+     "feedback": "At a fixed field, $U$ is proportional to $r^2$, not to $r$, so this graph is a curve. Choose the axes so that the equation has the form $y = kx$: $2U$ against $B^2r^2$."
+    },
+    {
+     "text": "$r$ on the vertical axis, $B$ on the horizontal axis",
+     "feedback": "At a fixed voltage, $r = mv/(eB)$ is inversely proportional to $B$, so this graph is a curve, not a line. Use $2U$ against $B^2r^2$."
+    },
+    {
+     "text": "$2U$ on the vertical axis, $Br$ on the horizontal axis",
+     "feedback": "The product $Br$ appears squared in $2U = (e/m) \\cdot B^2r^2$, so this graph is a parabola. Put $B^2r^2$ on the horizontal axis."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Data: report a repeated count",
+   "prompt": "At one position the photon counter gave $412$, $389$, $405$, $398$ and $421$ counts in five periods of $10\\ \\text{s}$. How should the group report the count?",
+   "choices": [
+    {
+     "text": "$(405 \\pm 16)$ counts in $10\\ \\text{s}$, the mean",
+     "correct": true,
+     "feedback": "Right. The mean is $2025 : 5 = 405$, and half of the range is $(421 - 389) : 2 = 16$. For random counts the spread is typically about $\\sqrt{N} \\approx 20$, which fits."
+    },
+    {
+     "text": "$412$ counts in $10\\ \\text{s}$, the first reading",
+     "feedback": "The first reading is no better than the others. The counts are random, so use all five: the mean and half of the range."
+    },
+    {
+     "text": "$(405.0 \\pm 0.1)$ counts in $10\\ \\text{s}$",
+     "feedback": "The mean is $405$, but the readings differ by up to $32$ counts. An uncertainty of $0.1$ claims a precision that the data does not have."
+    },
+    {
+     "text": "$421$ counts in $10\\ \\text{s}$, the largest value",
+     "feedback": "The largest value is not the true value: the photons arrive at random, so each count is a little different. Report the mean with half of the range."
+    }
+   ]
+  },
+  {
+   "id": "check-explain-help",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I disagree, because a difference of … is …</li><li>An experiment fails only if …</li><li>Every measurement has …</li><li>To make the result more reliable, we could …</li></ul></div>"
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain and argue",
+   "prompt": "A classmate writes in a report: \"Our value of $e/m$ was $1.74 \\cdot 10^{11}\\ \\text{C/kg}$, $1\\ \\%$ smaller than the accepted value, so the experiment failed.\" Do you agree? Explain the difference between an uncertainty and a mistake, and suggest two ways to make the result more reliable.",
+   "model": "I disagree. Every measurement has an uncertainty, and a difference of $1\\ \\%$ is small: a radius error of only $1\\ \\text{mm}$ in $4\\ \\text{cm}$ already changes $e/m$ by about $5\\ \\%$. An experiment fails only if the accepted value lies far outside $x \\pm \\Delta x$, or if there was a mistake such as a wrong connection or using the diameter instead of the radius. To make the result more reliable, we could measure the radius several times and use the mean, and measure at several voltages and currents and find $e/m$ from the slope of a fitted line.",
+   "criteria": [
+    "The answer takes a position and explains that a small difference is expected because every measurement has an uncertainty.",
+    "The answer explains what a mistake is (something wrong that can be found and corrected) and how it differs from an uncertainty.",
+    "The answer suggests two concrete improvements (repeated readings, more points and a fit, a better way to read the radius)."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Many words of the lab are almost the same in French: <span lang=\"fr\">le laboratoire</span>, <span lang=\"fr\">une mesure</span>, <span lang=\"fr\">un spectre</span>. A French lab report also discusses <span lang=\"fr\">l'incertitude</span>. Listen, repeat, and then tell your partner in French what you measured at Fotoni. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-fo-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: in the laboratory\", \"phrases\": [{\"fr\": \"le laboratoire\", \"en\": \"the laboratory\", \"tip\": \"*lö la-bo-ra-TWAR*: *{fr}oi{/fr}* sounds like *wa*, and the final *r* is heard.\"}, {\"fr\": \"une mesure\", \"en\": \"a measurement\", \"tip\": \"*yn mö-ZYR*: the French *u* is the Finnish *y*, and an *s* between two vowels sounds like *z*.\"}, {\"fr\": \"l'incertitude\", \"en\": \"uncertainty\", \"tip\": \"*lẽ-ser-ti-TYD*: *{fr}in{/fr}* is a nasal vowel, so do not say the *n*.\"}, {\"fr\": \"un spectre\", \"en\": \"a spectrum\", \"tip\": \"*ẽ SPEKTR*: the final *-e* is silent.\"}, {\"fr\": \"la constante de Planck\", \"en\": \"Planck's constant\", \"tip\": \"*la kõs-TÃT dö PLÃK*: *{fr}on{/fr}* and *{fr}an{/fr}* are nasal vowels.\"}, {\"fr\": \"Nous avons mesuré la constante de Planck.\", \"en\": \"We measured Planck's constant.\", \"tip\": \"*nu-za-võ mö-zy-RE la kõs-TÃT dö PLÃK*: link *{fr}nous‿avons{/fr}* with a *z* sound.\"}]}</script></div>"
+  }
+ ]
+}
