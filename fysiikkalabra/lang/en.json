@@ -494,7 +494,11 @@
       "eriste": "insulation",
       "kierros_2": "$\\text{cycle}$",
       "lammitys_2": "$\\text{heating}$",
-      "wk": "W_\\text{g}"
+      "wk": "W_\\text{g}",
+      "values": {
+        "sama paine": "at the same pressure",
+        "jäähdytys ensin": "cool first"
+      }
     },
     "fy3-14": {
       "sekoita": "Mix",

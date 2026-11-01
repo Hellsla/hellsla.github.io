@@ -494,7 +494,11 @@
       "eriste": "eriste",
       "kierros_2": "$\\text{kierros}$",
       "lammitys_2": "$\\text{lämmitys}$",
-      "wk": "W_\\text{k}"
+      "wk": "W_\\text{k}",
+      "values": {
+        "sama paine": "sama paine",
+        "jäähdytys ensin": "jäähdytys ensin"
+      }
     },
     "fy3-14": {
       "sekoita": "Sekoita",
