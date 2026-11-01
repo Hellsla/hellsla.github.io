@@ -1,0 +1,109 @@
+{
+ "id": "fy14-fr-cadarache",
+ "course": "FY14",
+ "chapter": 10,
+ "order": 4,
+ "title": "At a research centre in Provence",
+ "description": "Introduce yourself at a research centre, ask simple questions, say where you come from, ask for help and follow directions in French, and find out who does research at Cadarache and ITER.",
+ "kind": "french",
+ "minutes": 75,
+ "subjects": [
+  "french",
+  "english"
+ ],
+ "sources": [
+  {
+   "title": "French Alternative Energies and Atomic Energy Commission (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/French_Alternative_Energies_and_Atomic_Energy_Commission",
+   "checked": "2026-11-01",
+   "note": "Commissariat à l'énergie atomique et aux énergies alternatives; created 18 October 1945 under Charles de Gaulle; 'énergies alternatives' added to the name in March 2010; slightly over 21,000 staff (21,763 in the CEA's key figures for 2023)."
+  },
+  {
+   "title": "CEA: the CEA's centres (cea.fr)",
+   "url": "https://www.cea.fr/",
+   "checked": "2026-11-01",
+   "note": "Nine centres: Paris-Saclay, Grenoble, Marcoule, Cadarache, DAM Île-de-France, Valduc, Cesta, Le Ripault and Gramat."
+  },
+  {
+   "title": "French National Centre for Scientific Research (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/French_National_Centre_for_Scientific_Research",
+   "checked": "2026-11-01",
+   "note": "Centre national de la recherche scientifique; founded 19 October 1939; headquarters in Paris; the largest public research body in Europe; about 33,000 staff (2021); fundamental research in all fields."
+  },
+  {
+   "title": "Cadarache (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Cadarache",
+   "checked": "2026-11-01",
+   "note": "A CEA centre in the north of Bouches-du-Rhône, near Saint-Paul-lez-Durance; research since 1959; over 5,000 people; energy research (fission reactors and fuel, nuclear waste, fusion, solar). Its ITER schedule (first plasma 2025) is outdated."
+  },
+  {
+   "title": "WEST (formerly Tore Supra) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/WEST_(formerly_Tore_Supra)",
+   "checked": "2026-11-01",
+   "note": "Tore Supra operated 1988–2010; WEST first plasma December 2016; a plasma of 1,337 s on 12 February 2025."
+  },
+  {
+   "title": "EUROfusion: World record fusion plasma in Europe (CEA news)",
+   "url": "https://euro-fusion.org/member-news/cea/world-record-fusion-plasma-in-europe/",
+   "checked": "2026-11-01",
+   "note": "WEST at CEA Cadarache held a plasma for 1,337 seconds on 12 February (2025), 25 % longer than the record set in China weeks before."
+  },
+  {
+   "title": "ITER Organization: 20 years ago, the ITER site decision (7 July 2025)",
+   "url": "https://www.iter.org/node/31973",
+   "checked": "2026-11-01",
+   "note": "On 28 June 2005 in Moscow the ITER Members agreed unanimously to build ITER at Cadarache; the other candidate was Rokkasho in Japan."
+  },
+  {
+   "title": "ITER Organization: ITER France",
+   "url": "https://www.iter.org/about/iter-france",
+   "checked": "2026-11-01",
+   "note": "180-hectare parcel and 42-hectare platform; the CEA Cadarache centre is ITER's host and neighbour; the PACA International School in Manosque began in 2007."
+  },
+  {
+   "title": "ITER Organization: Visiting ITER",
+   "url": "https://www.iter.org/about/visiting-iter",
+   "checked": "2026-11-01",
+   "note": "About 35 km north of Aix-en-Provence; visitors at least 16 years old."
+  },
+  {
+   "title": "ITER (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01",
+   "note": "Seven members; ITER Agreement signed in Paris on 21 November 2006; 2024 baseline: start of research operation 2034, deuterium–tritium operation 2039."
+  },
+  {
+   "title": "ITER Organization: baseline press conference summary (July 2024)",
+   "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf",
+   "checked": "2026-11-01",
+   "note": "The proposed 2024 baseline: start of research operation in 2034, deuterium–tritium operation in 2039."
+  },
+  {
+   "title": "Saint-Paul-lez-Durance (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Saint-Paul-lez-Durance",
+   "checked": "2026-11-01",
+   "note": "Commune of Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, home of Cadarache and ITER."
+  },
+  {
+   "title": "Storey (Wikipedia): numbering of floors",
+   "url": "https://en.wikipedia.org/wiki/Storey",
+   "checked": "2026-11-01",
+   "note": "France: the ground floor is the *<span lang=\"fr\">rez-de-chaussée</span>* and the first floor is one level up; Finland numbers the ground floor as the first."
+  },
+  {
+   "title": "YouTube oEmbed metadata of TcBelFXMpOE",
+   "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=TcBelFXMpOE&format=json",
+   "checked": "2026-11-01",
+   "note": "Saluer - Prendre congé (greeting and taking leave), Alexandra Siopi, 19 November 2014; no description or length readable; the spoken content could not be played from the sandbox."
+  }
+ ],
+ "media": [
+  {
+   "file": "https://www.youtube.com/watch?v=TcBelFXMpOE",
+   "title": "Saluer - Prendre congé (embedded video, optional)",
+   "creator": "Alexandra Siopi",
+   "source": "https://www.youtube.com/watch?v=TcBelFXMpOE",
+   "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"
+  }
+ ]
+}

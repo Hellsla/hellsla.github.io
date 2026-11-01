@@ -1,0 +1,77 @@
+{
+ "id": "fy14-classical-limits",
+ "course": "FY14",
+ "chapter": 1,
+ "order": 1,
+ "title": "When classical physics ran out of answers",
+ "description": "The glow of hot objects broke the physics of 1900: students read black-body curves, meet the ultraviolet catastrophe and Planck's energy packets, and explore a timeline of modern physics with short biographies.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Lord Kelvin (Wikipedia): the lecture 'Nineteenth-Century Clouds over the Dynamical Theory of Heat and Light', Royal Institution, 27 April 1900; the misattributed 'nothing new to be discovered' quote",
+   "url": "https://en.wikipedia.org/wiki/Lord_Kelvin",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Heinrich Hertz (Wikipedia): Maxwell's theory 1864, Hertz's experiments 1886–1889",
+   "url": "https://en.wikipedia.org/wiki/Heinrich_Hertz",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Black-body radiation (Wikipedia): Kirchhoff's term 'black body' (1860), Stefan 1879, filament lamps about 2700 K",
+   "url": "https://en.wikipedia.org/wiki/Black-body_radiation",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Wien's displacement law (Wikipedia): Wien 1893, b = 2.897771955 · 10⁻³ m·K, the Sun's peak near 500 nm, skin near 10 µm",
+   "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Rayleigh–Jeans law (Wikipedia): Rayleigh's derivation of June 1900, the complete derivations of 1905 by Rayleigh and Jeans",
+   "url": "https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Jeans_law",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ultraviolet catastrophe (Wikipedia): the term first used by Paul Ehrenfest in 1911",
+   "url": "https://en.wikipedia.org/wiki/Ultraviolet_catastrophe",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Planck's law (Wikipedia): Lummer and Pringsheim, Rubens and Kurlbaum, Planck's law presented on 19 October 1900",
+   "url": "https://en.wikipedia.org/wiki/Planck%27s_law",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Heinrich Rubens (Wikipedia): long-wavelength measurements at the Physikalisch-Technische Reichsanstalt in Berlin, 7 October 1900",
+   "url": "https://en.wikipedia.org/wiki/Heinrich_Rubens",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Max Planck (Wikipedia): the quantum hypothesis presented to the German Physical Society on 14 December 1900, 'an act of despair'",
+   "url": "https://en.wikipedia.org/wiki/Max_Planck",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Sun (Wikipedia): effective surface temperature 5777 K",
+   "url": "https://en.wikipedia.org/wiki/Sun",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Planck constant and Boltzmann constant: exact SI values since 2019 (h = 6.62607015 · 10⁻³⁴ J·s, k_B = 1.380649 · 10⁻²³ J/K)",
+   "url": "https://en.wikipedia.org/wiki/2019_revision_of_the_SI",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni material bank, University of Helsinki: the station 'thermal radiation and black-body radiation' measures the spectrum of a filament",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
+   "checked": "2026-11-01"
+  }
+ ]
+}

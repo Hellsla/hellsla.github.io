@@ -1,0 +1,16 @@
+{
+  "_note": "English texts of local-courses.json (scripts/local_courses.py): a course is published in English when it has an entry here.",
+  "FY14": {
+    "subtitle": "From the Birth of Modern Physics to ITER.",
+    "school": "Kiviruukki upper secondary school",
+    "description": "An interdisciplinary course taught in English that combines physics, English and French (CLIL). It travels from the birth of modern physics through the energy of the nucleus, fusion in the stars and plasma to the Cold War race for fusion and the international ITER project. The whole course answers one question: if scientists have understood nuclear fusion for almost a century, why is producing electricity from fusion still so difficult?",
+    "goals": [
+      "explain why classical physics was not enough and how quantum physics was born",
+      "calculate the energy of nuclear reactions from the mass defect and binding energy",
+      "explain why fusion needs extreme temperatures and how magnetic fields confine a plasma",
+      "evaluate how politics, cooperation and technology have shaped fusion research",
+      "distinguish verified research results from predictions and commercial claims",
+      "discuss and write about science in English and get by in everyday situations in French"
+    ]
+  }
+}

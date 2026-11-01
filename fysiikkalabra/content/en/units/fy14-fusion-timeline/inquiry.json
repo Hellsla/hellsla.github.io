@@ -1,0 +1,437 @@
+{
+ "version": 1,
+ "contribution": "The last unit of chapter 5 and the course's interactive timeline: students explore about a hundred checked events from 1895 to ITER by era, theme and search, follow machines from the timeline to the Global Fusion Explorer map, find the patterns of the story (secrecy and openness, claims and checks, a wider world, slow steps) and answer the chapter's big question in writing.",
+ "learn": [
+  "explore a historical timeline by era, theme and search and collect evidence from it.",
+  "identify patterns in fusion history, such as secrecy and openness, claims and checks, and slow steps.",
+  "evaluate how the Cold War slowed and pushed fusion research, using events with their years."
+ ],
+ "prior": [
+  "Secrecy, Huemul, ZETA and the Geneva conference of 1958 (chapter *Secret beginnings: fusion research to the 1950s*)",
+  "The T-3 results and the Culham measurement of 1969 (chapter *Science across the Iron Curtain*)",
+  "The big machines and the Geneva summit of 1985 (chapter *Big machines and world politics: 1970s to 1985*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "In 1920 Arthur Eddington told an audience in Cardiff that the stars shine by turning hydrogen into helium, and that people might one day control this energy. In this chapter you have followed the story through secret laboratories, false claims, a measurement in Moscow and a summit in Geneva. Now you will see the whole road at once, from the first ideas of modern physics to the machines being built today.",
+   "question": "What patterns appear when you look at a hundred years of fusion history at once?"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: what do you remember?",
+   "prompt": "Without looking back, write down **three events** from fusion history that you remember from this chapter, each with its year (a guess is fine) and one word about why it mattered. Then compare with a partner: did you choose the same events?\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In …, … happened. It mattered because …</li><li>We both chose …</li><li>The most important event was …, because …</li></ul></div>",
+   "pair": "Pair work: compare your lists for one minute and agree on the most important event.",
+   "model": "Geneva, 1958: fusion research was declassified. The Culham measurement of T-3, 1969: independent verification made the tokamak the main design. Reagan and Gorbachev in Geneva, 1985: the rivals agreed to cooperate, which led to ITER.",
+   "criteria": [
+    "Three events, each with a year (or a sensible guess).",
+    "For each, a reason why it mattered."
+   ],
+   "hints": [
+    "Think of one event from the secret years, one from the tokamak race and one from the 1980s."
+   ]
+  },
+  {
+   "id": "pred-geo",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: where does the story happen?",
+   "prompt": "Think about **where** fusion research happened in the 1950s and where it happens in the 2020s. What do you expect the timeline to show? Commit and give a reason; the section *What the timeline shows* will tell you after your exploration.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-patterns"
+   },
+   "choices": [
+    {
+     "text": "The same few countries as in the 1950s.",
+     "feedback": "The timeline shows a change. In the 1950s nearly all events happen in the United States, Britain and the Soviet Union; since 2015 they come from seven countries, including China, Japan and South Korea."
+    },
+    {
+     "text": "Many more countries, on several continents.",
+     "feedback": "Right. In the 1950s nearly all events happen in three rival countries; since 2015 they come from seven countries in Europe, North America and Asia. Fusion research became a worldwide network.",
+     "correct": true
+    },
+    {
+     "text": "Fewer countries, because ITER is the only project.",
+     "feedback": "ITER is the largest project, but not the only one: since 2015 the timeline shows events in seven countries, including machines in China, South Korea, Japan, Germany and the United Kingdom."
+    },
+    {
+     "text": "Only Europe, because ITER is in France.",
+     "feedback": "France has the most recent events (ITER, WEST), but the timeline also shows records in China, South Korea, Japan and the United States. Fusion research is spread over several continents."
+    }
+   ]
+  },
+  {
+   "id": "pred-time",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: how long is a step?",
+   "prompt": "The first tokamak, T-1, started at the end of 1958. Estimate how long it took until a tokamak produced $16\\ \\text{MW}$ of fusion power, the record JET set with deuterium–tritium fuel. Commit and give a reason; you will check it in the timeline.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-patterns"
+   },
+   "choices": [
+    {
+     "text": "About 10 years.",
+     "feedback": "It took much longer: JET's record came in 1997, almost forty years after T-1. Each step needed a bigger machine, and each machine took about a decade to plan and build."
+    },
+    {
+     "text": "About 20 years.",
+     "feedback": "By 1978, twenty years after T-1, PLT had reached about 60 million degrees, but no machine had used deuterium–tritium fuel yet. JET's record came in 1997, almost forty years after T-1."
+    },
+    {
+     "text": "About 40 years.",
+     "feedback": "Right. T-1 started in 1958 and JET produced 16 MW in 1997, 39 years later, still with less fusion power out than heating power in. Progress in fusion comes in steps of decades.",
+     "correct": true
+    },
+    {
+     "text": "About 80 years.",
+     "feedback": "Not that long: JET's 16 MW came in 1997, 39 years after T-1. But it was still far from a power plant, and the whole road from Eddington's idea (1920) to ITER's planned fuel (2039) is about 120 years."
+    }
+   ]
+  },
+  {
+   "id": "theory-howto",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Howto"
+   ]
+  },
+  {
+   "id": "theory-timeline",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Timeline"
+   ]
+  },
+  {
+   "id": "explore-guide",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Exploration sheet",
+   "text": "Work in pairs with one device. Do the five tasks below. Tasks 1 and 4 use the big timeline above; Tasks 2, 3 and 5 have their own small timelines with only the events they need. Write your answers on paper or in the boxes, and use the sentence starters when you explain.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>an era · a theme · an event · a turning point · a claim · to withdraw a claim · to confirm · a trend · a pattern · most / fewest</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In the era …, the most common theme is …</li><li>Most of the events take place in …</li><li>The claim was checked by …, who found that …</li><li>This event was a turning point, because …</li><li>One pattern we found is …</li></ul></div>"
+  },
+  {
+   "id": "task-themes",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Task 1: themes by era",
+   "text": "The list gives the number of events of each theme in each era. **Check one row yourself:** choose *The tokamak race* with the era buttons, then each theme in turn in the *Theme* menu, and compare the count under the year strip with the list.\n\n- **The birth of modern physics** (1895–1938), 26 events: science 19 · machines 5 · politics 0 · people 2\n- **The nuclear age and secrecy** (1938–1958), 23 events: science 5 · machines 7 · politics 9 · people 2\n- **The tokamak race** (1958–1985), 15 events: science 4 · machines 8 · politics 3 · people 0\n- **From Geneva to ITER** (1985–2026), 40 events: science 6 · machines 26 · politics 8 · people 0\n\nAfter the question, discuss with your partner: why might the authors have chosen so many machine records in the last era?",
+   "question": {
+    "type": "choice",
+    "prompt": "In which era is **politics and society** the most common theme?",
+    "choices": [
+     {
+      "text": "The birth of modern physics",
+      "feedback": "This era has no politics events at all in the timeline: it is almost all scientific discovery (19 of 26 events)."
+     },
+     {
+      "text": "The nuclear age and secrecy",
+      "feedback": "Right. Politics is the most common theme here: 9 of 23 events (bombs, secret programmes, Perón's claim, Geneva 1958). In this era science was most closely tied to the state.",
+      "correct": true
+     },
+     {
+      "text": "The tokamak race",
+      "feedback": "This era is mostly machines (8 of 15 events). Politics appears 3 times: the oil crisis, JET's founding and INTOR."
+     },
+     {
+      "text": "From Geneva to ITER",
+      "feedback": "This era has 8 politics events, but 26 machine events, so machines are the most common theme. Politics is most common in the nuclear age (9 of 23)."
+     }
+    ]
+   }
+  },
+  {
+   "id": "task-claims",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Task 2: three claims and one check",
+   "prompt": "The small timeline below holds only the events of this task: **Huemul**, **ZETA**, **cold fusion** and **T-3**. Open the cards. For each of the four, write one sentence: what was claimed, who checked it and what they found. Then write one sentence on the difference between the first three and the fourth.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ft-claims\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"ids\": [\"huemul-1951\", \"huemul-exposed-1952\", \"zeta-announcement-1958\", \"zeta-retraction-1958\", \"novosibirsk-1968\", \"culham-five-1969\", \"cold-fusion-1989\"]}</script></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In …, … claimed that …</li><li>It was checked by …, who found that …</li><li>Unlike the first three, T-3 …</li></ul></div>",
+   "pair": "Pair work: each partner takes two of the four cases, then explain them to each other.",
+   "model": "Huemul (1951): Perón announced that Richter had produced controlled fusion; Balseiro's team inspected the laboratory in 1952 and found no nuclear reactions. ZETA (1958): British scientists suggested that its neutrons came from fusion; Basil Rose's measurements showed that the neutrons flew mostly in one direction, so they came from accelerated ions, and the claim was withdrawn. Cold fusion (1989): two chemists announced fusion at room temperature; laboratories around the world could not repeat it. T-3 (1968): Soviet scientists reported a temperature of about ten million degrees; the British Culham team measured it with a laser in 1969 and confirmed it. The first three claims were made public before others could check them and failed the check, while T-3 was doubted but passed an independent check.",
+   "criteria": [
+    "Each of the four cases has the claim, the checker and the result.",
+    "The last sentence names the difference: three failed the check, T-3 passed an independent check.",
+    "Dates are correct (1951–52, 1958, 1989, 1968–69)."
+   ],
+   "hints": [
+    "Open the cards in the small timeline; most cases have two cards.",
+    "For T-3, read both *Surprise results at Novosibirsk* and *The Culham Five confirm T-3*."
+   ]
+  },
+  {
+   "id": "task-map",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Task 3: from the timeline to the map",
+   "prompt": "The small timeline below holds the cards of **T-3**, **JET** and **JT-60**. Open them. On each card, use *Show on the map*, which opens the machine in the unit *Global Fusion Explorer*. For each machine, note its country (then and now), its site and its status today. Then write two sentences: what do these three machines show about who did fusion research in this era?\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ft-map\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"ids\": [\"novosibirsk-1968\", \"jet-first-plasma-1983\", \"jt60-1985\"], \"map\": \"fy14-global-fusion-explorer.html\"}</script></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>… was built at … in …</li><li>Today it is … (status, as of …)</li><li>These machines show that in this era …</li></ul></div>",
+   "pair": "Pair work: one partner reads the timeline card, the other the map panel.",
+   "model": "T-3 was at the Kurchatov Institute in Moscow, in the Soviet Union (today Russia); it is no longer operating. JET was at Culham in England, a European project, and it closed at the end of 2023. JT-60 was at Naka in Japan; it was upgraded and rebuilt, and its successor JT-60SA made its first plasma in 2023. The three machines show that in the tokamak race fusion research was led by a few rich powers and groups of countries in Europe, the Soviet Union and Japan, as well as the United States.",
+   "criteria": [
+    "Country, site and status are given for each of the three machines.",
+    "The status is taken from the map panel (with its checked date), not guessed.",
+    "The two sentences describe who did fusion research in the era."
+   ],
+   "hints": [
+    "The link is at the end of each card, after the sources.",
+    "The map panel shows the status and the date it was checked."
+   ]
+  },
+  {
+   "id": "task-turning",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Task 4: turning points",
+   "prompt": "A **turning point** is an event after which the story goes in a new direction. Choose **three** events from the timeline that you think were the biggest turning points for fusion research. For each, write its year and one sentence: what changed after it? Then compare your three with another pair and agree on one.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>… was a turning point, because after it …</li><li>Before …, …; after …, …</li><li>We agreed on …, because …</li></ul></div>",
+   "pair": "Group work: two pairs compare their choices and agree on one turning point.",
+   "model": "1958, Geneva: after the declassification, fusion research changed from secret national programmes to an open international science. 1969, the Culham Five confirm T-3: after this, laboratories everywhere built tokamaks, and the tokamak became the main road to fusion. 1985, Reagan and Gorbachev in Geneva: after this, the Cold War rivals started working together on one machine, which became ITER.",
+   "criteria": [
+    "Three events, each with the correct year.",
+    "For each, the answer says what was different *after* the event (a change of direction, not only that it was important).",
+    "The group agrees on one turning point and gives a reason."
+   ],
+   "hints": [
+    "Look for events after which the *next* events are of a different kind.",
+    "Compare the eras: what event starts each new era?"
+   ]
+  },
+  {
+   "id": "task-geo",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Task 5a: check Prediction 1",
+   "text": "The small timeline below holds only the events since 2015. Open the cards and note the **country** of each. In the 1950s the timeline's events take place in five countries: the United States, the United Kingdom, the Soviet Union, Argentina (Huemul) and Switzerland (the Geneva conference).\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ft-geo\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"ids\": [\"w7x-2015\", \"west-2016\", \"w7x-2018\", \"iter-assembly-2020\", \"mast-u-2020\", \"sparc-magnet-2021\", \"east-1056-2021\", \"jet-59mj-2021\", \"nif-ignition-2022\", \"east-403-2023\", \"jt60sa-2023\", \"jet-69mj-2023\", \"jet-closure-2023\", \"kstar-2024\", \"iter-baseline-2024\", \"east-1066-2025\", \"west-1337-2025\", \"nif-2025\", \"iter-first-module-2025\", \"w7x-2025\", \"sparc-magnet-2026\", \"iter-solenoid-2026\", \"iter-two-thirds-2026\"]}</script></div>",
+   "question": {
+    "type": "choice",
+    "prompt": "In how many different countries do the events since 2015 take place?",
+    "choices": [
+     {
+      "text": "Three countries",
+      "feedback": "Count again with the cards open: China, France, Germany, Japan, South Korea, the United Kingdom and the United States. That is seven."
+     },
+     {
+      "text": "Five countries",
+      "feedback": "Count again with the cards open: China, France, Germany, Japan, South Korea, the United Kingdom and the United States. That is seven."
+     },
+     {
+      "text": "Seven countries",
+      "feedback": "Right: China, France, Germany, Japan, South Korea, the United Kingdom and the United States, on three continents. In the 1950s the events were mostly in three rival powers.",
+      "correct": true
+     },
+     {
+      "text": "Twelve countries",
+      "feedback": "Fewer: China, France, Germany, Japan, South Korea, the United Kingdom and the United States. The map unit shows many more countries with facilities; the timeline is a selection."
+     }
+    ]
+   }
+  },
+  {
+   "id": "task-steps",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Task 5b: check Prediction 2",
+   "text": "The small timeline below holds two cards: the first tokamak and JET's record. Open both and note the years.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-ft-steps\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"ids\": [\"t1-1958\", \"jet-16mw-1997\"]}</script></div>",
+   "question": {
+    "type": "choice",
+    "prompt": "How many years passed from T-1 to JET's 16 MW record?",
+    "choices": [
+     {
+      "text": "19 years",
+      "feedback": "Subtract the years on the two cards: 1997 − 1958 = 39 years."
+     },
+     {
+      "text": "29 years",
+      "feedback": "Subtract the years on the two cards: 1997 − 1958 = 39 years."
+     },
+     {
+      "text": "39 years",
+      "feedback": "Right: 1997 − 1958 = 39 years, almost forty. Even then JET gave out less fusion power than the heating power put in.",
+      "correct": true
+     },
+     {
+      "text": "59 years",
+      "feedback": "Subtract the years on the two cards: 1997 − 1958 = 39 years."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-patterns",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Patterns",
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with what you found in the timeline. Then answer the opening question in two sentences: why has the road to a fusion power plant taken more than a hundred years?",
+   "predictions": [
+    "pred-geo",
+    "pred-time"
+   ]
+  },
+  {
+   "id": "sort-lessons",
+   "stage": "sovella",
+   "type": "text",
+   "title": "What does each event show?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-ft-sort\"><script type=\"application/json\">{\"prompt\": \"Each event shows one of four patterns of fusion history. Match each event with its pattern, then press *Check*.\", \"options\": [\"a claim tested by others\", \"secrecy opens up\", \"cooperation between rivals\", \"a record from a big machine\"], \"items\": [{\"text\": \"The Huemul claim collapses (1952)\", \"answer\": \"a claim tested by others\", \"feedback\": \"Balseiro's team inspected Richter's laboratory and found no nuclear reactions.\"}, {\"text\": \"ZETA's neutrons were not fusion (1958)\", \"answer\": \"a claim tested by others\", \"feedback\": \"Basil Rose's direction measurement tested the claim, and it failed.\"}, {\"text\": \"Kurchatov's lecture at Harwell (1956)\", \"answer\": \"secrecy opens up\", \"feedback\": \"The head of the Soviet atomic programme described secret Soviet fusion experiments in a lecture in Britain: an early crack in the secrecy.\"}, {\"text\": \"Fusion research declassified in Geneva (1958)\", \"answer\": \"secrecy opens up\", \"feedback\": \"The three nuclear powers opened their files at the UN conference.\"}, {\"text\": \"INTOR, the first world tokamak idea (1978)\", \"answer\": \"cooperation between rivals\", \"feedback\": \"Europe, Japan, the Soviet Union and the United States designed a reactor together under the IAEA.\"}, {\"text\": \"Reagan and Gorbachev in Geneva (1985)\", \"answer\": \"cooperation between rivals\", \"feedback\": \"The Cold War leaders called for cooperation on fusion, which led to ITER.\"}, {\"text\": \"JET's 16 megawatt record (1997)\", \"answer\": \"a record from a big machine\", \"feedback\": \"A record of the big European machine, still with a gain below one.\"}, {\"text\": \"The Culham Five confirm T-3 (1969)\", \"answer\": \"a claim tested by others\", \"feedback\": \"An independent British measurement tested the Soviet result, and it passed.\"}], \"done\": \"All right. The same four patterns run through the whole story: claims and checks, secrecy and openness, rivalry and cooperation, and ever bigger machines.\"}</script></div>"
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A student writes in a project: *\"According to the timeline, ITER will produce fusion energy with deuterium and tritium in 2039.\"* What is the problem with this sentence?",
+   "choices": [
+    {
+     "text": "It presents a plan as if it were certain.",
+     "feedback": "Right. 2039 is the start of deuterium–tritium operation in ITER's 2024 baseline, a plan of the ITER Organization. A careful sentence says: \"As of November 2026, ITER plans to start deuterium–tritium operation in 2039.\"",
+     "correct": true
+    },
+    {
+     "text": "ITER will never use deuterium or tritium.",
+     "feedback": "ITER is designed to use deuterium–tritium fuel. The problem is that the sentence presents a planned date as a certain future event."
+    },
+    {
+     "text": "The timeline does not mention ITER at all.",
+     "feedback": "The timeline has many ITER events, including the 2024 schedule. The problem is that the sentence turns a plan into a fact."
+    },
+    {
+     "text": "The year should be 1985, the Geneva summit.",
+     "feedback": "The Geneva summit started the cooperation that led to ITER, but ITER's operation is planned for the 2030s. The problem is that a plan is presented as a fact."
+    }
+   ]
+  },
+  {
+   "id": "card-help",
+   "stage": "sovella",
+   "type": "text",
+   "optional": true,
+   "title": "Extension: write your own timeline card",
+   "text": "The timeline is a selection. Choose an event from this chapter that is **not** in it, for example **Scylla I** at Los Alamos (1958, a theta pinch), **T-7**, the first superconducting tokamak (1979), or **T-15** (1988). Write a card in the style of the timeline: title, year, place and country, a text of three or four sentences, the people involved and at least one reliable source. Your teacher can suggest it for the course timeline.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In …, at …, …</li><li>It was the first …</li><li>It mattered because …</li><li>Source: …</li></ul></div>"
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Which event ended the secret years?",
+   "prompt": "Which event marks the end of the era *The nuclear age and secrecy* in the timeline?",
+   "choices": [
+    {
+     "text": "The Geneva conference, September 1958",
+     "feedback": "Right. In September 1958 the United States, the Soviet Union and Britain declassified their fusion research there, and the next era, the tokamak race, began.",
+     "correct": true
+    },
+    {
+     "text": "The Trinity bomb test of 16 July 1945",
+     "feedback": "Trinity was the first nuclear explosion, near the *start* of the secret era. The secrecy ended with the Geneva conference of 1958."
+    },
+    {
+     "text": "The Reagan–Gorbachev summit of November 1985",
+     "feedback": "That is the start of the *cooperation* era. The secret era ended much earlier, at the Geneva conference of 1958."
+    },
+    {
+     "text": "The Huemul claim of March 1951",
+     "feedback": "Huemul belongs to the middle of the secret era and pushed countries into more secret programmes. The secrecy ended at Geneva in 1958."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Chronology",
+   "prompt": "Which list is in the right order, from the earliest to the latest?",
+   "choices": [
+    {
+     "text": "ZETA, T-3 in Novosibirsk, JET's first plasma, ITER Agreement",
+     "feedback": "Right: ZETA 1957–1958, T-3 results 1968, JET's first plasma 1983, ITER Agreement 2006.",
+     "correct": true
+    },
+    {
+     "text": "T-3 in Novosibirsk, ZETA, ITER Agreement, JET's first plasma",
+     "feedback": "ZETA (1958) came before T-3's results (1968), and JET's first plasma (1983) before the ITER Agreement (2006)."
+    },
+    {
+     "text": "ZETA, JET's first plasma, T-3 in Novosibirsk, ITER Agreement",
+     "feedback": "T-3's results (1968) came long before JET (1983): JET was built *because* the tokamak had succeeded."
+    },
+    {
+     "text": "JET's first plasma, ZETA, T-3 in Novosibirsk, ITER Agreement",
+     "feedback": "JET (1983) came after both ZETA (1958) and T-3 (1968)."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Using a timeline as a source",
+   "prompt": "A timeline card says that an event was \"checked on 1 November 2026\". Why is this date important for some events and not for others?",
+   "choices": [
+    {
+     "text": "Old events can never change, so their sources are always right.",
+     "feedback": "Our knowledge of old events can change too, when new sources appear; but the date matters most for things that change quickly, such as ITER's schedule or the status of a machine."
+    },
+    {
+     "text": "Changing facts, like schedules, may be out of date later.",
+     "feedback": "Right. A date in 1958 will not move, but ITER's schedule, records and the status of machines change. The checked date tells you how current the information is.",
+     "correct": true
+    },
+    {
+     "text": "It shows when the event happened.",
+     "feedback": "The event has its own date at the top of the card. The checked date says when the information was last compared with its sources."
+    },
+    {
+     "text": "Only events after 2026 need a date.",
+     "feedback": "There are no events after 2026 in the timeline: future dates are plans. The checked date matters for every fact that can change, such as a schedule or a machine's status."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. The chapter's big question",
+   "prompt": "Answer the big question of this chapter in five or six sentences: **How did the Cold War influence scientific research?** Use at least three events from the timeline, with their years, and say both how the Cold War **slowed or distorted** fusion research and how it **pushed it forward**.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>At first, the Cold War …</li><li>For example, in …</li><li>On the other hand, rivalry also …</li><li>So, the Cold War both … and …</li></ul></div>",
+   "model": "The Cold War first made fusion research secret. Around 1950–1951 Britain, the Soviet Union and the United States all started classified programmes, because fusion was linked to the hydrogen bomb and to neutrons for bomb fuel, so scientists could not share or check results. At the same time, rivalry brought money: Perón's false Huemul claim in 1951 helped persuade the United States to fund Spitzer's stellarator. When the plasma problems turned out to be hard for everyone, the files were opened at Geneva in 1958. In 1969 British scientists crossed the Iron Curtain to verify the Soviet T-3 result, which shows that evidence could matter more than politics. Finally, in 1985 Reagan and Gorbachev called for cooperation on fusion, which led to ITER. So the Cold War both slowed fusion with secrecy and pushed it forward with funding and, in the end, with cooperation.",
+   "criteria": [
+    "The answer uses at least three events with correct years.",
+    "It describes at least one way the Cold War slowed or distorted research (secrecy, lack of checking, premature claims).",
+    "It describes at least one way it pushed research forward (funding, competition, cooperation).",
+    "It ends with a conclusion that answers the question."
+   ],
+   "hints": [
+    "Think of the three meetings: Geneva 1958, Moscow 1969, Geneva 1985.",
+    "What did secrecy prevent? What did rivalry pay for?"
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>A timeline is <span lang=\"fr\">une frise chronologique</span> in French: <span lang=\"fr\">une frise</span> is a long decorated band on a wall. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ft-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: time and history\", \"phrases\": [{\"fr\": \"une frise chronologique\", \"en\": \"a timeline\", \"tip\": \"yn FREEZ kro-no-lo-ZHEEK: *ch* is said like *k* in this Greek word.\"}, {\"fr\": \"une époque\", \"en\": \"an era\", \"tip\": \"y-nay-POK: link *une* and *époque*.\"}, {\"fr\": \"une découverte\", \"en\": \"a discovery\", \"tip\": \"yn day-koo-VAIRT: *ou* is the Finnish *u*.\"}, {\"fr\": \"un tournant\", \"en\": \"a turning point\", \"tip\": \"uh toor-NAN: two nasal sounds; do not say the final *t*.\"}, {\"fr\": \"La recherche sur la fusion a plus de cent ans.\", \"en\": \"Fusion research is more than a hundred years old.\", \"tip\": \"la ruh-SHAIRSH syr la fy-ZYON a ply duh san TAN: *cent ans* is linked, san-TAN.\"}]}</script></div>"
+  }
+ ]
+}

@@ -116,7 +116,10 @@
     "local_prepare": "Valmistaudu jo nyt",
     "local_prepare_lead": "Nämä luvut ovat jo valmiita. Ne auttavat opintojakson kokeissa.",
     "local_unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole selkosuomeksi. Se on vain tavallisella suomella.",
-    "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle"
+    "lang_unavailable_home": "sivua ei vielä ole, vie etusivulle",
+    "local_status_building": "Tekeillä",
+    "local_status_home_building": "Opintojakso on tekeillä",
+    "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty."
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",
@@ -1336,5 +1339,24 @@
     "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
     "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
     "velocity": "nopeus {{dir}};"
+  },
+  "units": {
+    "home_count": {
+      "one": "{{n}} oppitunti valmiina",
+      "other": "{{n}} oppituntia valmiina"
+    },
+    "taught_in_en": "englanniksi",
+    "language_note_en": "Tämä opintojakso on englanniksi. Oppitunnit ovat sivuston englanninkielisessä osassa.",
+    "authors": "Tekijät",
+    "and": "ja",
+    "chapters": "Luvut ja oppitunnit",
+    "chapters_lead": "Luvut ovat tässä järjestyksessä. Jokaisessa luvussa on yksi iso kysymys.",
+    "credits": "Kuvat ja videot",
+    "credit_source": "lähde",
+    "sources": "Lähteet",
+    "sources_lead": "Muuttuvat tiedot on tarkistettu näistä lähteistä. Päivämäärä kertoo, milloin.",
+    "checked": "tarkistettu {{date}}",
+    "teacher": "Opettajalle",
+    "notice_draft": "Tämä oppitunti on vielä kesken. Sitä ei ole julkaistu."
   }
 }

@@ -1,0 +1,25 @@
+{
+ "id": "fy14-iter-video",
+ "course": "FY14",
+ "chapter": 7,
+ "order": 3,
+ "title": "Inside the largest fusion reactor: a video investigation",
+ "description": "Watch The B1M's 2022 video from inside ITER with vocabulary, predictions and note frames, then check its claims against verified facts of November 2026 and evaluate it as a source.",
+ "kind": "clil",
+ "minutes": 75,
+ "subjects": ["english", "physics", "french"],
+ "sources": [
+  {"title": "The B1M: We Went Inside the Largest Nuclear Fusion Reactor (video page with the narration as an article; 13 April 2022; paid promotion for Thinkproject)", "url": "https://theb1m.com/video/inside-iter-worlds-largest-nuclear-fusion-reactor", "checked": "2026-11-01", "note": "Claims checked: 35 nations, 23,000 tonnes, about one million components, 104 km of adapted roads, ten times hotter than the Sun's core, forces about twice a space-shuttle launch, $22 billion, first power-on 2025, net energy, grid connection decades away."},
+  {"title": "YouTube oEmbed metadata of the videos 4BkOUOK0XzM (The B1M), mZsaaturR6E, EhAemz1v7dQ (Kurzgesagt) and R-8NbYM1-ws (La prof Elisabeth)", "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=4BkOUOK0XzM&format=json", "checked": "2026-11-01"},
+  {"title": "Rosetta: Kurzgesagt, Fusion Power Explained – Future or Failure (10 November 2016, 6:15)", "url": "https://rosetta.to/u/kurzgesagt/fusion-power-explained-future-or-failure", "checked": "2026-11-01"},
+  {"title": "ITER Organization: Facts and figures (23,000 t, about one million components, 104 km itinerary, 150 million °C, about ten times the Sun's core)", "url": "https://www.iter.org/facts-figures", "checked": "2026-11-01"},
+  {"title": "ITER Organization: ITER Members (seven Members, EU states, UK, Switzerland)", "url": "https://www.iter.org/about/iter-members", "checked": "2026-11-01"},
+  {"title": "ITER baseline press conference summary, 3 July 2024 (PDF)", "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf", "checked": "2026-11-01"},
+  {"title": "ITER Organization: What will ITER do? (Q = 10; no electricity)", "url": "https://www.iter.org/fusion-energy/what-will-iter-do", "checked": "2026-11-01"},
+  {"title": "ITER (Wikipedia): cost estimates (official estimates about €18–22 billion; US DOE $65 billion, disputed by ITER; about €5 billion more in 2024), NIF December 2022", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "https://www.youtube.com/watch?v=4BkOUOK0XzM", "title": "We Went Inside the Largest Nuclear Fusion Reactor (embedded video)", "creator": "The B1M", "source": "https://www.youtube.com/watch?v=4BkOUOK0XzM", "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"},
+  {"file": "https://www.youtube.com/watch?v=mZsaaturR6E", "title": "Fusion Power Explained – Future or Failure (embedded video, optional)", "creator": "Kurzgesagt – In a Nutshell", "source": "https://www.youtube.com/watch?v=mZsaaturR6E", "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"}
+ ]
+}

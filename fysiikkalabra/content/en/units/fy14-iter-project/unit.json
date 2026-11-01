@@ -1,0 +1,22 @@
+{
+ "id": "fy14-iter-project",
+ "course": "FY14",
+ "chapter": 7,
+ "order": 1,
+ "title": "ITER: why, where and who",
+ "description": "Why seven rival Members build one fusion machine together, how the site at Cadarache was chosen, how the work is shared, and how ITER's schedule changed from 2016 to 2024.",
+ "kind": "history",
+ "minutes": 75,
+ "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "ITER Organization: ITER Members (seven Members, cost shares, in-kind contributions, Domestic Agencies, results and IP shared, UK, Switzerland, cooperation partners)", "url": "https://www.iter.org/about/iter-members", "checked": "2026-11-01", "note": "EU 45.6 %, the six others 9.1 % each; about nine-tenths in kind; Members share 100 % of the results and the intellectual property; Switzerland a member of Fusion for Energy from 1 January 2026."},
+  {"title": "ITER Organization: 28 June 2005, a home at last (the site contest)", "url": "https://iter.org/node/18040", "checked": "2026-11-01", "note": "Candidates Clarington (withdrawn December 2003), Vandellòs, Cadarache, Rokkasho; EU choice of Cadarache 26 November 2003; deadlock in December 2003; decision in Moscow on 28 June 2005; the Broader Approach as compensation; about 75 km north of Marseille."},
+  {"title": "ITER Organization: ITER France (host-country obligations)", "url": "https://www.iter.org/about/iter-france", "checked": "2026-11-01", "note": "180-hectare site, 42-hectare platform; requirements met; international school in Manosque (opened 2007); ITER Itinerary."},
+  {"title": "ITER Organization: Facts and figures", "url": "https://www.iter.org/facts-figures", "checked": "2026-11-01", "note": "104 km itinerary from a Mediterranean port; about 5,000 people on site and in offices (2026)."},
+  {"title": "ITER baseline press conference summary, 3 July 2024 (PDF)", "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf", "checked": "2026-11-01", "note": "2016 baseline: first plasma 2025, full plasma current 2033, D–T 2035. 2024 baseline: research operation 2034, D–D 2035, full magnetic energy 2036, D–T 2039. Reasons: COVID-19, first-of-a-kind components, quality problems, optimistic schedules."},
+  {"title": "ITER Organization: Component repair (vacuum vessel bevels, thermal shield cracking), September 2023", "url": "https://iter.org/node/20387", "checked": "2026-11-01"},
+  {"title": "ITER press release: two-thirds of the tokamak core in place, 29 July 2026 (PDF)", "url": "https://www.iter.org/sites/default/files/media/2026-07/2026-07_pr_two-thirds-of-tokamak-core-in-place_0.pdf", "checked": "2026-11-01", "note": "Sixth of nine sector modules in the pit on 28 July 2026, almost six months ahead of schedule; the last one planned for mid-2027."},
+  {"title": "ITER Council appoints new Director-General (Pietro Barabaschi, September 2022)", "url": "https://iter.org/print/whatsnew/352", "checked": "2026-11-01"},
+  {"title": "ITER (Wikipedia): history, Geneva 1985, partners, US exit 1998 and return 2003, site, Agreement 21 November 2006, Organization 24 October 2007, costs, Directors-General, UK", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01", "note": "About five billion euros of extra cost for the 2024 repairs and changes (July 2024)."}
+ ]
+}

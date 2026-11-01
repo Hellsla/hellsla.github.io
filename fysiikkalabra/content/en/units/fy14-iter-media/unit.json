@@ -1,0 +1,22 @@
+{
+ "id": "fy14-iter-media",
+ "course": "FY14",
+ "chapter": 7,
+ "order": 4,
+ "title": "ITER: promise, progress and reality",
+ "description": "Read a Finnish news article about ITER, sort its claims into results, plans and opinions, compare it with ITER's official information of 2018 and 2026, and write a 300-word text in English.",
+ "kind": "clil",
+ "minutes": 75,
+ "subjects": ["english", "physics", "french"],
+ "sources": [
+  {"title": "Helsingin Sanomat: ITER (multimedia story, 2018)", "url": "https://dynamic.hs.fi/2018/iter/", "checked": "2026-11-01", "note": "The page could not be opened from the course's development environment (hs.fi is blocked there); its content was not checked. The unit does not state what it says."},
+  {"title": "Yle Uutiset, 14 January 2020: Tamperelaisessa teollisuushallissa on kehitetty tekniikkaa … (VTT Tampere, ITER remote handling)", "url": "https://yle.fi/a/3-11146330", "checked": "2026-11-01"},
+  {"title": "Yle Uutiset, 28 June 2005: Koeluontoinen fuusioreaktori Ranskaan (the site decision)", "url": "https://yle.fi/a/3-5217376", "checked": "2026-11-01"},
+  {"title": "ITER baseline press conference summary, 3 July 2024 (PDF): 2016 baseline (first plasma 2025, D–T 2035) and 2024 baseline (research operation 2034, D–T 2039), tungsten first wall", "url": "https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf", "checked": "2026-11-01"},
+  {"title": "Phys.org (AFP), 6 December 2017: Nuclear fusion project hails halfway milestone (first plasma 2025, about €20 billion)", "url": "https://phys.org/news/2017-12-nuclear-fusion-hails-halfway-milestone.pdf", "checked": "2026-11-01"},
+  {"title": "ITER press release, 29 July 2026: two-thirds of the tokamak core in place (PDF)", "url": "https://www.iter.org/sites/default/files/media/2026-07/2026-07_pr_two-thirds-of-tokamak-core-in-place_0.pdf", "checked": "2026-11-01"},
+  {"title": "ITER Organization: ITER Members (UK after Brexit; Switzerland in Fusion for Energy from 1 January 2026)", "url": "https://www.iter.org/about/iter-members", "checked": "2026-11-01"},
+  {"title": "ITER (Wikipedia): Directors-General (Bigot 2015–2022, Barabaschi since 2022), costs, about €5 billion more in 2024, earlier first-plasma plan of 2020", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01"},
+  {"title": "ITER Organization: What will ITER do? (Q = 10, 500 MW from 50 MW)", "url": "https://www.iter.org/fusion-energy/what-will-iter-do", "checked": "2026-11-01"}
+ ]
+}

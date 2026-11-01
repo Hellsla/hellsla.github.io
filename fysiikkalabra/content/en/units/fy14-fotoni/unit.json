@@ -1,0 +1,94 @@
+{
+ "id": "fy14-fotoni",
+ "course": "FY14",
+ "chapter": 9,
+ "order": 1,
+ "title": "Fotoni lab visit: modern physics experiments",
+ "description": "Before, during and after a visit to the University of Helsinki's Fotoni laboratory: predict, plan, measure Planck's constant and e/m yourself, analyse the uncertainty and write an English lab report.",
+ "kind": "lab",
+ "minutes": 150,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Fotonin materiaalipankki (University of Helsinki, LUMA science education): the works, stations and group sizes",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
+   "checked": "2026-11-01",
+   "note": "Photoelectric effect 3 stations, e/m 2, double slit 1, Millikan (qualitative) 1, hot filament 1, spectra 3; the double-slit work is a demonstration, analysis and a report."
+  },
+  {
+   "title": "Fysiikan avoin opetuslaboratorio Fotoni (University of Helsinki): upper-secondary visits, Physicum, Kumpula campus",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni",
+   "checked": "2026-11-01",
+   "note": "Upper-secondary visit: an introduction of about 15 min, lab work of about 60 min and a visit to a research department of 30–60 min; students choose the works in advance and bring laptops if possible."
+  },
+  {
+   "title": "Fotoni work instruction: Valosähköinen ilmiö (short version): LEDs, vacuum tube, stopping voltage, linear fit",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_valosahkoilmio_suppea.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni work instruction: Elektronin ominaisvaraus (e/m): 100–300 V, coils N = 130, R = 0.15 m, the graph of 2U against B²r²",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_ominaisvaraus_2.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni work instruction: Kaksoisrakokoe: photodiode, dim green lamp, photomultiplier, 10 s counts, d = 0.3556 mm, L = 49 cm",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/Kaksoisrakokoe_tyoohje.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni work instruction: Musta kappale: filament lamp at 7–10 V, prism, light sensor, temperature from the electrical power",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_mustakpl.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni work instruction: Spektritutkimus: hand spectroscope, spectrometer, hydrogen, oxygen and water-vapour tubes, energy-saving lamp",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_spektritutkimus.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni work instruction: Millikanin koe: atomiser, alpha source, about 500 V between the plates, microscope camera",
+   "url": "https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_millikan.pdf",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Mass-to-charge ratio (Wikipedia): electron e/m = 1.75882 · 10¹¹ C/kg (CODATA), first measured by J. J. Thomson in 1897",
+   "url": "https://en.wikipedia.org/wiki/Mass-to-charge_ratio",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Helmholtz coil (Wikipedia): B = (4/5)^(3/2) μ₀nI/R at the centre, coils one radius apart",
+   "url": "https://en.wikipedia.org/wiki/Helmholtz_coil",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Oil drop experiment (Wikipedia): Millikan and Fletcher 1909, published 1913, charges in whole multiples of e",
+   "url": "https://en.wikipedia.org/wiki/Oil_drop_experiment",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Balmer series (Wikipedia): visible hydrogen lines 656.3, 486.1, 434.0 and 410.2 nm (in air)",
+   "url": "https://en.wikipedia.org/wiki/Balmer_series",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Tungsten (Wikipedia): melting point 3422 °C (3695 K), so a tungsten filament's peak stays in the infrared",
+   "url": "https://en.wikipedia.org/wiki/Tungsten",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER diagnostics (iter.org): spectroscopic instruments from visible light to X-rays measure impurities and ion temperature",
+   "url": "https://www.iter.org/machine/supporting-systems/diagnostics",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Planck constant (Wikipedia): exact SI value h = 6.62607015 · 10⁻³⁴ J·s since 2019",
+   "url": "https://en.wikipedia.org/wiki/Planck_constant",
+   "checked": "2026-11-01"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "id": "fy14-secret-fusion",
+ "course": "FY14",
+ "chapter": 5,
+ "order": 1,
+ "title": "Secret beginnings: fusion research to the 1950s",
+ "description": "From Eddington's stars and the first accelerator reactions to the bomb, secret programmes, Richter's false claim, pinches, stellarators, the first tokamak ideas, ZETA's correction and the opening of the files at Geneva in 1958.",
+ "kind": "history",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Timeline of nuclear fusion (Wikipedia): Eddington 1920, Atkinson and Houtermans 1929, Oliphant 1934, Bethe 1938–1939",
+   "url": "https://en.wikipedia.org/wiki/Timeline_of_nuclear_fusion",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "History of nuclear fusion (Wikipedia): Thomson and Blackman's 1946 patent, UK classification after the Fuchs affair, Scylla I 1958",
+   "url": "https://en.wikipedia.org/wiki/History_of_nuclear_fusion",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Mark Oliphant (Wikipedia): deuterium–deuterium reactions, tritium and helium-3, 1934",
+   "url": "https://en.wikipedia.org/wiki/Mark_Oliphant",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Leo Szilard (Wikipedia): Rutherford's 'moonshine' speech of September 1933",
+   "url": "https://en.wikipedia.org/wiki/Leo_Szilard",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Discovery of nuclear fission (Wikipedia): Hahn and Strassmann, Meitner and Frisch, December 1938 – February 1939",
+   "url": "https://en.wikipedia.org/wiki/Discovery_of_nuclear_fission",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ivy Mike (Wikipedia): first US thermonuclear test, 1 November 1952",
+   "url": "https://en.wikipedia.org/wiki/Ivy_Mike",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Tokamak (Wikipedia): Lavrentiev's letter, Tamm and Sakharov's proposal of October 1950, Stalin's decision of 5 May 1951, T-1 at the end of 1958",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Huemul Project (Wikipedia): Richter, Perón's announcement of 24 March 1951, Balseiro's inspection 5–8 September 1952, closure in November 1952",
+   "url": "https://en.wikipedia.org/wiki/Huemul_Project",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ronald Richter (Wikipedia): born 21 February 1909 in Falkenau, Bohemia; died 1991",
+   "url": "https://en.wikipedia.org/wiki/Ronald_Richter",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Stellarator (Wikipedia): Spitzer 1951, the figure-eight, 50,000 dollars from the AEC, Project Matterhorn and Project Sherwood, Model A 1953",
+   "url": "https://en.wikipedia.org/wiki/Stellarator",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Lyman Spitzer (Wikipedia): 1914–1997, Princeton, Project Matterhorn, space telescopes",
+   "url": "https://en.wikipedia.org/wiki/Lyman_Spitzer",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Andrei Sakharov (Wikipedia): 1921–1989, Nobel Peace Prize 1975, internal exile 1980",
+   "url": "https://en.wikipedia.org/wiki/Andrei_Sakharov",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ZETA (fusion reactor) (Wikipedia): classification and neutrons, the pinch effect, kink and sausage instabilities, start in August 1957, press conference 24 January 1958, Nature 25 January 1958, Rose's measurement, retraction 16 May 1958",
+   "url": "https://en.wikipedia.org/wiki/ZETA_(fusion_reactor)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fusion Power Associates: 1958 Geneva conference and the declassification of fusion research",
+   "url": "https://qedfusion.org/FPA/ARC08/fpn08-58.shtml",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "United Nations Digital Library: Second United Nations International Conference on the Peaceful Uses of Atomic Energy, Geneva, 1–13 September 1958",
+   "url": "https://digitallibrary.un.org/record/3892717",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CODATA 2018 (NIST): Boltzmann constant and elementary charge, exact since 2019",
+   "url": "https://physics.nist.gov/cuu/Constants/index.html",
+   "checked": "2026-11-01",
+   "note": "$k_\\text{B} = 1.380649 \\cdot 10^{-23}\\ \\text{J/K}$ and $e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$ are exact; the unit rounds them to four significant figures."
+  }
+ ]
+}

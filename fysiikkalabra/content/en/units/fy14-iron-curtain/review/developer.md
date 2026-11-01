@@ -1,0 +1,46 @@
+VERDICT: DONE
+
+# fy14-iron-curtain: developer report (2026-11-01)
+
+## Files
+- `content/en/units/fy14-iron-curtain/unit.json`: FY14, chapter 5, order 2, kind clil, physics + English + French, 75 min, 11 sources.
+- `content/en/units/fy14-iron-curtain/unit.md`: the Why line, the hero, an introduction, five sources (A Novosibirsk 1968, B the Western doubt, C the invitation, D the measurement, E the tokamak stampede), each with a type line and the text as a blockquote (summaries written for the course; quotation marks only for original words), *How Thomson scattering works* with the `thomson` figure, Key idea + misconception (about 280 words), Summary.
+- `content/en/units/fy14-iron-curtain/inquiry.json`: hook, pair `explain` on believing claims; predictions `pred-verify` (revealed by Source D) and `pred-thomson` (revealed by the Thomson section); a source-reading guide (pairs split A+C / B+D) with word bank; a source question on A–B (`interpret` + `choice`), evidence-or-circumstance `match`, a source question on the invitation (`explain`); key idea + reflection; Apply: keV → K (`numeric`, seven steps), the Culham role-play (four roles, word bank, starters), a magazine report (80–120 words, `explain` with criteria), find-the-error `choice`; Check: three `choice` checks and a transfer `explain` on verifying today's records; summary; French corner.
+- `content/en/units/fy14-iron-curtain/teacher.md`.
+- `lessons/units/fy14-iron-curtain/figures.py`: hero (an early tokamak in a winter hall, tea table; no laser, no people, no text), `thomson` (laser through plasma, 90° scattering into a spectrometer; Gaussian spectra for a cooler and a hotter plasma, width ratio 2).
+
+## Facts verified (2026-11-01)
+Novosibirsk IAEA conference August 1968 (third conference); T-3: about 1 keV, confinement above 10 ms, at least 50 × Bohm, about ten times better than other machines, temperature inferred from magnetic properties; Spitzer's doubt (1965) and the runaway-electron argument (Wikipedia *Tokamak*); Artsimovich's offer to Bas Pease; team chosen December 1968: Peacock, Forrest, Wilcock, Robinson (+ a technician); travel rule "properly accompanied by a reliable person" (Robinson biography); arrival spring 1969, five tonnes, vibrating floor "like the skin of a drum", laser in the basement, 22 July 1969, about 88 shots by early August, about ten million degrees (ITER Newsline ×2, UKAEA); results phoned to Culham; *Nature* 224, 488 (November 1969), authors Peacock, Robinson, Forrest, Wilcock, Sannikov; abstract 100 eV – 1 keV; Symmetric Tokamak December 1969 – May 1970; Velikhov's quotation; Warsaw Pact invasion 20–21 August 1968; Thomson scattering: temperature from the Doppler width (IPP Prague COMPASS page).
+
+## Numbers computed
+$1.00\ \text{keV}/k_\text{B} = 1.1605 \cdot 10^{7}\ \text{K}$ (with rounded constants $1.160 \cdot 10^{7}$); electron speed at 1 keV $\sqrt{2E/m_\text{e}} = 1.88 \cdot 10^{7}\ \text{m/s}$ (6 % of $c$, teacher extension); spectrum widths in the figure drawn in the ratio $\sqrt{1\ \text{keV} / 0.25\ \text{keV}} = 2$.
+
+## Checks
+`units.py check` OK; build; layout 360/1280 OK; screenshots looked at (sources as blockquotes, the Thomson figure, hero). Playwright: predictions lock and reveal at Source D and at the Thomson section; all choices, the interpret question, the numeric task and all `explain` tasks answered (models closed until writing); `match` works; no console errors, no raw `$`, no katex errors.
+
+## Open questions
+- The Robinson Wikipedia article says the laser power was raised "about 100 times" and quotes "about 20 million degrees"; ITER, UKAEA and the *Nature* abstract say about ten million degrees / up to 1 keV, which the unit follows.
+- Mike Forrest's own publication list gives the volume as 234; ADS/Nature give 224, which the unit uses.
+- Photographs that would help: the T-3 tokamak, the Culham team in Moscow (`<!-- photo -->` markers not placed in the sources to keep them clean; the teacher notes mention it).
+
+## Shared issues (not edited; worked around in the unit)
+1. **`scripts/build.py` (about line 420) and `scripts/units.py` `ASSET_REF` (line 48): a `data-src` inside `inquiry.json` is not found.** In the JSON file the attribute is escaped as `data-src=\"units/…\"`, so the regex `data-src="(units/…)"` does not match. The data file is then neither embedded in the page (the timeline shows "could not be loaded (TypeError: Failed to fetch)" from a file or preview) nor counted in the content hash. Fix: match `data-src=\\?"(units/[^"\\]+\.json)\\?"` in both places, or search the decoded activity texts. Workaround: the timeline component of *fy14-fusion-timeline* sits in a `unit.md` section (`## The timeline {Timeline}`) placed by a `theory` activity.
+2. **`assets/units/fy14/fx/timeline.js`, the biography line** shows the raw ISO dates, e.g. "Arthur Eddington (1882-12-28–1944-11-22)". Fix: show years only (`born.slice(0,4)`) or `A.date()` for both. Also: the card ids are `ev-<event id>`, so two timelines on one page would repeat ids; prefix them with `el.id`.
+3. **`assets/units/fy14/fx/timeline.js` / `units.css`: the theme legend** is reported by `check_layout.py --width 360` as `small … 14 px text: "●Scientific discovery"` (the run still ends OK/see the timeline report). Fix: legend font size at least the body size.
+4. **`assets/units/fy14/data/timeline.json`, facts to correct or source:**
+   - `jet-first-plasma-1983`: "JET was completed on time and on budget" is not in the cited sources (the Wikipedia JET article gives the cost, 198.8 million EUA, but no such statement). Cite a EUROfusion/UKAEA source for it or remove the clause.
+   - `tftr-1982`: "It had been approved in 1976" — PPPL says 1976, Wikipedia says funding was granted in January 1975. Write "approved in the mid-1970s" or name PPPL as the source of 1976.
+   - `jet-decision-1978`, date `1978-04-01`: Wikipedia gives 1 April 1978 for the funding approval of the JET Joint Undertaking; I could not open the Council decision itself. Please confirm against a EUROfusion/EU source (I remember a Council decision of 30 May 1978, unverified).
+   - `culham-five-1969`: correct in substance; the 1969 paper's authors include the Soviet physicist V. V. Sannikov (Nature 224, 488), a detail worth adding to the card because it shows the cooperation.
+   - Checked and correct (no change): Eddington 1920, cyclotron 2 January 1931 and 4.8 MeV in 1932, Ivy Mike (74 t, 10.4 Mt, 1.9 km crater), Huemul dates, Spitzer's 50,000 dollars, ZETA dates (mid-August 1957, 24/25 January 1958, retraction 16 May 1958), Geneva 1–13 September 1958, T-1 end of 1958, Novosibirsk 1968, Symmetric Tokamak (December 1969 – May 1970), oil-crisis budget 40 → 332 million, PLT 20 December 1975 and 24 July 1978, JET 25 June 1983, JT-60 8 April 1985, Geneva summit 19–21 November 1985, ITER 1987 naming.
+5. **`assets/units/fy14/css/units.css` / `fx/timeline.js`: the timeline component makes `check_layout.py` FAIL** in *fy14-fusion-timeline* (strip `min-width:600px` overflows 265 px at 360; legend 14 px; `.fx-msg` line 448 px at 1280). Fix: treat `overflow-x:auto` content as scrolling in `check_layout.py`, and `max-width: var(--measure)` on `.fx-msg`/`.fx-note`. Details in that unit's report.
+
+## Fixes after review (2026-11-01)
+- Pedagogy blocking 1: `learn` no longer gives away `pred-verify`: "explain how a plasma's electron temperature can be measured with laser light" and "evaluate how the T-3 result of 1968 came to be accepted, and convert …".
+- Pedagogy 2: new `thomson-data` interpret before *How Thomson scattering works*: spectrum widths for 0.10, 0.40 and 1.6 keV (32, 65, 129 nm; Doppler FWHM for ruby 694.3 nm at 90°, computed: $\Delta\lambda = 2\sqrt{\ln 2}\cdot 2\lambda\sin 45^\circ\sqrt{2k_\text{B}T/m_ec^2}$, 102 nm at 1 keV) and a measured width of about 100 nm; badge `model`, note says the 100 nm matches the reported temperature, not a number from the paper. Students find "four times T, twice the width" and about 1 keV.
+- Pedagogy 3: `doubt` moved after the pair exchange (after Source E) and says so.
+- Pedagogy 4: `pred-thomson` prompt no longer explains the Doppler link; options rewritten ("The scattered light spreads over a wider range." etc.), correct one mid-length.
+- Pedagogy 5: `report` prompt: "If time runs short, finish it at home." teacher.md re-timed.
+- Visual 1–3: `kev-kelvin` Given values braced; Answer box holds one equation ("that is, 11.6 million kelvin"); Reasonableness sentence rewritten.
+- Visual 4: Source C notes that the original spells "Artsimovitch". Visual 5: `thomson` hotter curve now orange (HEAT), red only for the laser.
+- Checks: units.py check OK, build OK, check_layout 360/1280 OK, Playwright OK, figure looked at.
