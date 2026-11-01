@@ -1,0 +1,65 @@
+{
+ "id": "fy14-photoelectric",
+ "course": "FY14",
+ "chapter": 1,
+ "order": 2,
+ "title": "Light as particles: the photoelectric effect",
+ "description": "Einstein's photons explain why a dim violet lamp frees electrons from a metal when a bright red lamp cannot, and the stopping voltage gives Planck's constant.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sim": "fy14/photoelectric",
+ "sources": [
+  {
+   "title": "Photoelectric effect (Wikipedia): Hertz 1887, Lenard 1902, Einstein 1905, Millikan 1914–1916",
+   "url": "https://en.wikipedia.org/wiki/Photoelectric_effect",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "The Nobel Prize in Physics 1921: Albert Einstein (prize motivation; awarded in 1922)",
+   "url": "https://www.nobelprize.org/prizes/physics/1921/summary/",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Albert Einstein (Wikipedia): born in Ulm 1879, the Swiss patent office in Bern, 1905 papers",
+   "url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Annus mirabilis papers (Wikipedia): light-quantum paper received 18 March 1905 by Annalen der Physik",
+   "url": "https://en.wikipedia.org/wiki/Annus_mirabilis_papers",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Max Planck (Wikipedia): 14 December 1900, his view of light quanta, Nobel Prize for 1918",
+   "url": "https://en.wikipedia.org/wiki/Max_Planck",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Robert Andrews Millikan (Wikipedia): photoelectric tests 1914–1916, 1916 determination of h, Nobel Prize 1923",
+   "url": "https://en.wikipedia.org/wiki/Robert_Andrews_Millikan",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Planck constant (Wikipedia): exact SI value h = 6.62607015 · 10⁻³⁴ J·s since 2019",
+   "url": "https://en.wikipedia.org/wiki/Planck_constant",
+   "checked": "2026-11-01",
+   "note": "The elementary charge $e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$ is also exact in the SI since 2019."
+  },
+  {
+   "title": "Work function (Wikipedia): table of work functions of the elements",
+   "url": "https://en.wikipedia.org/wiki/Work_function",
+   "checked": "2026-11-01",
+   "note": "Tables differ by some tenths of an electronvolt (sodium 2.36 eV in many textbooks, 2.75 eV in this table): the value depends on the surface. The unit uses typical textbook values."
+  },
+  {
+   "title": "Fotoni material bank, University of Helsinki (photoelectric effect and Planck's constant)",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
+   "checked": "2026-11-01"
+  }
+ ]
+}

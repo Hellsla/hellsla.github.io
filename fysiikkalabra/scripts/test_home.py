@@ -26,7 +26,7 @@ Exit status 1 on any failure."""
 import json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
-import i18n, investigations, local_courses
+import i18n, investigations, local_courses, units
 
 SITE = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "site")
 curriculum = {k: v for k, v in json.loads((ROOT / "curriculum.json").read_text()).items() if not k.startswith("_")}
@@ -89,7 +89,8 @@ for lang in i18n.languages():
         for code, r in zip(local, lrows):
             expect(f"{lang} {code}: one link per row, to its page", re.findall(r'<a [^>]*href="([^"]*)"', r) == [f"{code}.html"])
             n_inv = sum(1 for i in investigations.ids(lang) if (out / f"{i}.html").is_file() and code in investigations.load(i, lang)["courses"])
-            want = T.count("site.local_investigations", n_inv) if n_inv else T("site.local_status_" + local[code]["status"])
+            n_units = sum(1 for ul, u in units.all_units() if units.load(u, ul).get("course") == code and (SITE / ("" if ul == "fi" else ul) / f"{u}.html").is_file())   # course units, built only for their own language (scripts/units.py)
+            want = T.count("site.local_investigations", n_inv) if n_inv else T.count("units.home_count", n_units) if n_units else T("site.local_status_" + local[code]["status"])
             expect(f"{lang} {code}: the row says what is published ('{want}'), the plan's status apart", f'<span class="mod-avail">{want}</span>' in r, r[:400])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",

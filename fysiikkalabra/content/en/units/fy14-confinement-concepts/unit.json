@@ -1,0 +1,87 @@
+{
+ "id": "fy14-confinement-concepts",
+ "course": "FY14",
+ "chapter": 6,
+ "order": 1,
+ "title": "Pinches, lasers and other paths to fusion",
+ "description": "From the pinches of the 1950s to laser ignition at NIF, spherical tokamaks, high-temperature superconducting magnets and private concepts: what each path has shown, what it still lacks, and how to tell results from claims.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Z-pinch (Wikipedia): how it works, the kink instability, ZETA, Zap Energy (founded 2017)",
+   "url": "https://en.wikipedia.org/wiki/Z-pinch",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Theta pinch (Wikipedia): Scylla I 1958, first clear evidence of thermonuclear fusion, end losses, Scyllac closed 1977",
+   "url": "https://en.wikipedia.org/wiki/Theta_pinch",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Lawrence Livermore National Laboratory: Achieving fusion ignition (shots of 5 Dec 2022 to 20 June 2026, how indirect drive works)",
+   "url": "https://lmf.llnl.gov/science/achieving-fusion-ignition",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "National Ignition Facility (Wikipedia): about 300 MJ of electricity for the 2.05 MJ pulse, about one shot every two days in 2014, weapons research",
+   "url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Spherical tokamak (Wikipedia): aspect ratio, START (January 1991, beta about 40 %), the central column",
+   "url": "https://en.wikipedia.org/wiki/Spherical_tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "UKAEA: STEP programme (prototype spherical tokamak plant at West Burton, delivered by UK Industrial Fusion Solutions)",
+   "url": "https://ccfe.ukaea.uk/programmes/step",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "World Nuclear News, 1 November 2024: STEP due to operate by 2040, net electricity above 100 MW",
+   "url": "https://world-nuclear-news.org/articles/new-company-takes-over-uks-fusion-programme",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "MIT Energy Initiative: 20 tesla high-temperature superconducting magnet, 5 September 2021",
+   "url": "https://energy.mit.edu/news/mit-designed-project-achieves-major-advance-toward-fusion-energy",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "SPARC (Wikipedia): Commonwealth Fusion Systems, Devens, 12.2 T, R = 1.85 m, planned first plasma 2027, expected Q about 11; 20 T at 20 K",
+   "url": "https://en.wikipedia.org/wiki/SPARC_(tokamak)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Helion Energy (Wikipedia): field-reversed configurations, Microsoft agreement of 10 May 2023 for 2028, plant near Malaga, Washington (2025); no net electricity shown",
+   "url": "https://en.wikipedia.org/wiki/Helion_Energy",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "General Fusion (Wikipedia): magnetized target fusion, LM26, about 25 % of staff cut in May 2025",
+   "url": "https://en.wikipedia.org/wiki/General_Fusion",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Laser Mégajoule (Wikipedia): CEA laser facility near Bordeaux, operational 23 October 2014",
+   "url": "https://en.wikipedia.org/wiki/Laser_M%C3%A9gajoule",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER (Wikipedia): the 2024 baseline (research operation 2034, deuterium–tritium operation 2039)",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Mega Ampere Spherical Tokamak (Wikipedia): MAST Upgrade at Culham, first plasma October 2020",
+   "url": "https://en.wikipedia.org/wiki/Mega_Ampere_Spherical_Tokamak",
+   "checked": "2026-11-01"
+  }
+ ]
+}

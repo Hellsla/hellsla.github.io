@@ -1,0 +1,68 @@
+{
+ "id": "fy14-fr-cafe",
+ "course": "FY14",
+ "chapter": 10,
+ "order": 3,
+ "title": "Au café: a role-play",
+ "description": "Order drinks and food in a French café, ask what there is and what it costs, ask for the bill, pay and thank: from a supported dialogue to a free role-play.",
+ "kind": "french",
+ "minutes": 75,
+ "subjects": [
+  "french",
+  "english"
+ ],
+ "sources": [
+  {
+   "title": "Pourboire (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Pourboire",
+   "checked": "2026-11-01",
+   "note": "In France cafés and restaurants must include the service charge in their prices; a tip is neither required nor expected; people often round up small bills."
+  },
+  {
+   "title": "café (Larousse, dictionnaire français-anglais)",
+   "url": "https://www.larousse.fr/dictionnaires/francais-anglais/caf%C3%A9/11930",
+   "checked": "2026-11-01",
+   "note": "café crème: coffee with cream; petit noir: a small cup of strong black coffee; café au lait: coffee with milk."
+  },
+  {
+   "title": "Expresso (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Expresso",
+   "checked": "2026-11-01",
+   "note": "*<span lang=\"fr\">Café noisette</span>*: an espresso with a little milk foam; *<span lang=\"fr\">café allongé</span>*: more water than an espresso."
+  },
+  {
+   "title": "Euro (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Euro",
+   "checked": "2026-11-01",
+   "note": "In France the cent is called centime."
+  },
+  {
+   "title": "Tutoiement et vouvoiement en français (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Tutoiement_et_vouvoiement_en_fran%C3%A7ais",
+   "checked": "2026-11-01",
+   "note": "Vous with people you do not know, such as a waiter; tu among young people."
+  },
+  {
+   "title": "YouTube oEmbed metadata of R-8NbYM1-ws and MBK7K1Xw3Lc",
+   "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=R-8NbYM1-ws&format=json",
+   "checked": "2026-11-01",
+   "note": "R-8NbYM1-ws: Commander au café en français. Dialogue simulé pour la production orale du DELF A1. English subtitles, La prof Elisabeth, 29 January 2022, 2 min 44 s; the description warns of a spelling mistake (eau gazeuse). MBK7K1Xw3Lc: How to Order Coffee in a French Café | Super Easy French 75, Easy French (date and length not readable from the sandbox). The spoken content could not be played from the sandbox."
+  }
+ ],
+ "media": [
+  {
+   "file": "https://www.youtube.com/watch?v=R-8NbYM1-ws",
+   "title": "Commander au café en français. Dialogue simulé pour la production orale du DELF A1 (embedded video)",
+   "creator": "La prof Elisabeth",
+   "source": "https://www.youtube.com/watch?v=R-8NbYM1-ws",
+   "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"
+  },
+  {
+   "file": "https://www.youtube.com/watch?v=MBK7K1Xw3Lc",
+   "title": "How to Order Coffee in a French Café | Super Easy French 75 (embedded video, optional)",
+   "creator": "Easy French",
+   "source": "https://www.youtube.com/watch?v=MBK7K1Xw3Lc",
+   "licence": "Standard YouTube licence; embedded with YouTube's player, not copied"
+  }
+ ]
+}

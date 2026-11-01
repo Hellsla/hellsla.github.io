@@ -93,6 +93,7 @@ def _check_choice(a, path, errs):
     if r is not None:
         if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment or theory id>\", \"min\": n}}")
         elif "min" in r and (not isinstance(r["min"], int) or r["min"] < 1): errs.append(f"{path}.reveal.min: a positive integer")
+        elif "pending" in r and (not isinstance(r["pending"], str) or not r["pending"].strip()): errs.append(f"{path}.reveal.pending: the text shown while the feedback waits (e.g. where the evidence is)")
     if "justify" in a and not isinstance(a["justify"], bool): errs.append(f"{path}.justify: true or false")
     if a.get("layout") not in (None, "list", "models", "figures"): errs.append(f"{path}.layout: \"list\", \"models\" or \"figures\" (each option a figure)")
 
@@ -172,6 +173,8 @@ def validate(folder, inquiry, lesson_md):
                 for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
+        if "fold" in a and (not isinstance(a["fold"], str) or not a["fold"].strip() or len(a["fold"]) > 24 or t not in OPTIONAL_TYPES or a.get("optional")):
+            errs.append(f"{path}.fold: a short tag (at most 24 characters) for a required part kept closed until it is opened, only on {', '.join(OPTIONAL_TYPES)} and not with optional")
         if "fbd" in a and a["fbd"] not in FBD_TAGS: errs.append(f"{path}.fbd: one of {', '.join(FBD_TAGS)} (docs/force-diagrams.md)")
         hints = a.get("hints")
         if hints is not None and (not isinstance(hints, list) or len(hints) > 3 or not all(isinstance(h, str) for h in hints)):
@@ -243,9 +246,9 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
-GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu "}
+GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
-SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣ](?:[A-Za-zΔρθηγαμΣ₀-₉/]|_[A-Za-z0-9μ]+)*")
+SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλν](?:[A-Za-zΔρθηγαμΣλν₀-₉/]|_[A-Za-z0-9μ]+)*")
 UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
 
 
@@ -257,7 +260,7 @@ def unit_tex(u):
 
 def is_symbol(tok):
     """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
-    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμ₀-₉_/Σ]", tok)))
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμλν₀-₉_/Σ]", tok)))
 
 
 def sym_tex(tok):
@@ -335,7 +338,7 @@ def choice_html(a, md, lid, aid):
     attrs = f' data-reveal="{esc(reveal["after"])}" data-reveal-min="{reveal.get("min", 1)}"' if reveal else ""
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
-    pending = f'<p class="pending" tabindex="-1" data-theory="{esc(T('inquiry.pending_theory'))}" hidden>{T("inquiry.pending")}</p>' if reveal else ""
+    pending = f'<p class="pending" tabindex="-1" data-theory="{esc(reveal.get('pending') or T('inquiry.pending_theory'))}" hidden>{esc(reveal.get("pending")) if reveal.get("pending") else T("inquiry.pending")}</p>' if reveal else ""
     return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{fig_of(a)}{sol}'
             f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')
@@ -373,7 +376,7 @@ def explain_html(a, md, aid):
     those experiments, and offers to copy the tables and the student's own text for their notes. No grading, no model."""
     crit = "".join(f'<li><label><input type="checkbox"> <span>{criterion_html(c, md)}</span></label></li>' for c in a["criteria"])
     draw = a.get("draw")
-    pair = f'<p class="pair">{md(a["pair"])}</p>' if a.get("pair") else ""
+    pair = f'<div class="pair">{md(a["pair"])}</div>' if a.get("pair") else ""
     after = a.get("after") or []
     attrs = f' data-after=\'{esc(json.dumps(after))}\'' if after else ""
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
@@ -404,7 +407,9 @@ def experiment_html(a, md, lid):
     tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
     words = a.get("values", {})   # {param: {value: words}}: a select's option named in words, not by its index
+    bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
+        tn = bare
         if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
         u = units.get(k, "")
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
@@ -420,7 +425,7 @@ def experiment_html(a, md, lid):
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
-            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
+            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}"' + (f' data-words=\'{esc(json.dumps(words, ensure_ascii=False))}\'' if words else "") + '>'
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
@@ -588,9 +593,10 @@ def render(folder, inquiry, parts, md):
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
             content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
-        if a.get("optional"):                          # a closed box, named, that a student may open or leave
-            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))
-            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{T("inquiry.optional")}</span> {name}</summary>'
+        if a.get("optional") or a.get("fold"):         # a closed box, named, that a student may open or leave; "fold": a
+            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2")
+            tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional")
+            return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary><span class="opt-tag">{tag}</span> {name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'

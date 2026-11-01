@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fotoni lab visit: modern physics experiments — Ruukkilabra</title>
+<meta name="description" content="Before, during and after a visit to the University of Helsinki&#x27;s Fotoni laboratory: predict, plan, measure Planck&#x27;s constant and e/m yourself, analyse the uncertainty and write an English lab report.">
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/en/fy14-fotoni.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruukkilabra">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Fotoni lab visit: modern physics experiments">
+<meta property="og:description" content="Before, during and after a visit to the University of Helsinki&#x27;s Fotoni laboratory: predict, plan, measure Planck&#x27;s constant and e/m yourself, analyse the uncertainty and write an English lab report.">
+<meta property="og:url" content="https://hellsla.github.io/fysiikkalabra/site/en/fy14-fotoni.html">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="stylesheet" href="../vendor/katex/katex.min.css">
+<link rel="icon" href="../brand/ruukkilabra-symboli.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../brand/ruukkilabra-180.png">
+<link rel="stylesheet" href="../site.css">
+<script id="fl-strings" type="application/json">{"js": {"check_number": "Type a number, for example 9.81.", "correct": "Correct.", "not_quite": "Not quite.", "check_close": "Close. Check the rounding and the unit.", "check_magnitude": "The order of magnitude is wrong. Check the unit.", "check_give_up": "Not yet. The answer and the solution are below.", "check_retry": "Not quite. Try again.", "choose_first": "Choose an option first.", "fold_answered": "answered {{done}}/{{n}}", "fold_feedback": " · feedback {{shown}}/{{n}}", "fold_question_one": "{{n}} question", "fold_question_many": "{{n}} questions", "sim_in_use": "In use: <a><\/a>", "sim_moved": "The simulation is now at the experiment: <a><\/a>.", "sim_moved_default": "to the experiment", "sim_note": "Assumptions of the model and explanation", "exp_no_sim": "This experiment uses the simulation on the page, which this browser could not start. You can read the set-up of the experiment and work out the result from the formula.", "exp_unsupported": "The simulation does not support this experiment (parameter {{params}}).", "exp_started": "Initial state set. {{locked}}Adjust {{vary}}, let the simulation run and press Record measurement.", "exp_started_locked": "Kept constant: {{names}}. ", "exp_start_first": "Set the initial state first.", "exp_no_value": "The simulation gives no value to measure.", "exp_same_value": "The same {{vary}} as in the previous measurement. Change the value before the next measurement.", "exp_recorded_more": "Measurement {{n}} recorded. Change {{vary}} and record {{left}} more.", "exp_recorded_enough": "Measurement {{n}} recorded. Compare the results with your prediction.", "exp_reset": "Simulation and table reset.", "explain_measure_first": "Make the measurements first: {{experiments}}. Draw the conclusion from your own observations.", "explain_write_first": "Write your own answer first. Then you can compare it with the model answer.", "explain_draw_first": "First draw the free-body diagram yourself on paper and tick the box. Then you can compare it with the model diagram.", "copy_no_rows": "(no measurements)", "copy_conclusion": "Conclusion", "copy_not_written": "(not written yet)", "copy_done": "The tables and your conclusion have been copied. Paste them into your notes.", "copy_failed": "Copying did not work in this browser. Select the text and copy it yourself.", "reflect_you_predicted": "<strong>You predicted:<\/strong> {{text}}", "reflect_supported": "the data supports your prediction.", "reflect_not_supported": "the data does not support your prediction.", "reflect_measure_first": " — make the measurements to see whether the prediction was right.", "reflect_not_answered": "You have not answered yet: <a href=\"{{href}}\">go to the prediction<\/a>.", "rubric_total": "Self-assessed points: {{got}} / {{max}}", "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)", "criteria_all": "Your answer contains all the key points of the model answer.", "criteria_missing": "Add these points to your answer and compare again:"}, "format": {"decimal": "."}}</script><link rel="stylesheet" href="../units/fy14/units.css">
+</head><body>
+<div class="page lesson-page">
+<header class="top">
+  <a class="brand" href="index.html" aria-label="Ruukkilabra, home page"><img class="brand-mark" src="../brand/ruukkilabra-symboli.svg" alt="" width="40" height="40"><span class="brand-name">Ruukkilabra<small>Upper secondary physics</small></span></a>
+  <nav aria-label="Main menu"><a class="nav-modules" href="index.html#moduulit">Modules</a></nav>
+</header>
+<nav class="crumbs" aria-label="Path"><a href="index.html">Ruukkilabra</a> › <a href="FY14.html">FY14</a> › Fotoni lab visit: modern physics experiments</nav>
+
+<nav class="toc" aria-label="Steps of the lesson"><p class="toc-head"><span>FY14</span>Fotoni lab visit: modern physics experiments</p><a href="#herata"><span class="toc-no" aria-hidden="true">1</span><span class="toc-label">Think about it</span></a><a href="#ennusta"><span class="toc-no" aria-hidden="true">2</span><span class="toc-label">Predict</span></a><a href="#tutki"><span class="toc-no" aria-hidden="true">3</span><span class="toc-label">Investigate</span></a><a href="#selita"><span class="toc-no" aria-hidden="true">4</span><span class="toc-label">Theory summary</span></a><a href="#sovella"><span class="toc-no" aria-hidden="true">5</span><span class="toc-label">Apply</span></a><a href="#tarkista"><span class="toc-no" aria-hidden="true">6</span><span class="toc-label">Check<span class="toc-rest"> your understanding</span></span></a><a href="#sources" class="toc-end"><span class="toc-label">Sources and verification</span></a></nav>
+<main class="reading lesson">
+<article id="teoria" class="inquiry unit unit-lab" data-course="fy14"><div class="intro"><div class="intro-head"><h1>Fotoni lab visit: modern physics experiments</h1>
+<blockquote>
+<p><strong>Why</strong> can a small glass tube, a lamp and a voltmeter tell us something about the whole universe of quantum physics?</p>
+</blockquote>
+</div><div class="intro-row"><div class="intro-media"><p><svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a dim university teaching laboratory. On a long bench stand three experiments. On the left, a small black box with a vacuum tube and a row of coloured LEDs, red, yellow, green, blue and violet, connected to a meter. In the middle, a round glass bulb stands between two large copper coils, and a thin glowing beam inside the bulb bends into a closed circle. On the right, a glowing gas tube shines through a grating, and four coloured lines appear on a small white screen. Two students without faces stand behind the bench, one looking at the coils and one writing on a clipboard." class="fig-hero" style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy14fo-h-room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3a46"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy14fo-h-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
+  <rect x="0" y="0" width="1200" height="600" fill="url(#fy14fo-h-room)"/>
+  <line x1="0" y1="140" x2="1200" y2="140" stroke="#3a4754" stroke-width="3" stroke-linecap="butt"/>
+  <path d="M435,720 L443,517.5 H497 L505,720 H478 L470,585 L462,720 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M424,531 Q418.5,382.5 470,374.5 Q521.5,382.5 516,531 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <path d="M429.5,401.5 L416,531" fill="none" stroke="#e8590c" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="416" cy="542" r="14.85" fill="#f1dfb5"/>
+  <path d="M510.5,401.5 L524,531" fill="none" stroke="#e8590c" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="524" cy="542" r="14.85" fill="#f1dfb5"/>
+  <rect x="458" y="347.5" width="24.5" height="32.5" fill="#f1dfb5"/>
+  <circle cx="470" cy="320.5" r="40.5" fill="#f1dfb5"/>
+  <path d="M428,320.5 Q429.5,272 470,274.5 Q513,274.5 512,315 Q478,299 428,320.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M825,720 L833,517.5 H887 L895,720 H868 L860,585 L852,720 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M814,531 Q808.5,382.5 860,374.5 Q911.5,382.5 906,531 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <path d="M819.5,401.5 L806,531" fill="none" stroke="#1971c2" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="806" cy="542" r="14.85" fill="#f1dfb5"/>
+  <path d="M900.5,401.5 L914,531" fill="none" stroke="#1971c2" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="914" cy="542" r="14.85" fill="#f1dfb5"/>
+  <rect x="848" y="347.5" width="24.5" height="32.5" fill="#f1dfb5"/>
+  <circle cx="860" cy="320.5" r="40.5" fill="#f1dfb5"/>
+  <path d="M818,320.5 Q819.5,272 860,274.5 Q903,274.5 902,315 Q868,299 818,320.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <rect x="790" y="330" width="76" height="96" rx="4" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <line x1="802" y1="352" x2="854" y2="352" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="802" y1="370" x2="854" y2="370" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="802" y1="388" x2="854" y2="388" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="802" y1="406" x2="854" y2="406" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="0" y="430" width="1200" height="170" fill="url(#fy14fo-h-bench)"/>
+  <line x1="0" y1="430" x2="1200" y2="430" stroke="#e9c98a" stroke-width="4" stroke-linecap="butt"/>
+  <rect x="70" y="330" width="230" height="100" rx="8" fill="#343a40" stroke="#1f2933" stroke-width="3"/>
+  <rect x="120" y="250" width="110" height="80" rx="40" fill="#eef5f9" fill-opacity="0.3" stroke="#eef5f9" stroke-width="3"/>
+  <rect x="140" y="272" width="16" height="46" rx="2" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <rect x="196" y="272" width="8" height="46" fill="#8a96a3"/>
+  <circle cx="96" cy="402" r="20" fill="#c92a2a" fill-opacity="0.25"/>
+  <circle cx="96" cy="402" r="10" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="136" cy="402" r="20" fill="#fab005" fill-opacity="0.25"/>
+  <circle cx="136" cy="402" r="10" fill="#fab005" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="176" cy="402" r="20" fill="#2b8a3e" fill-opacity="0.25"/>
+  <circle cx="176" cy="402" r="10" fill="#2b8a3e" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="216" cy="402" r="20" fill="#1971c2" fill-opacity="0.25"/>
+  <circle cx="216" cy="402" r="10" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="256" cy="402" r="20" fill="#7048e8" fill-opacity="0.25"/>
+  <circle cx="256" cy="402" r="10" fill="#7048e8" stroke="#ffffff" stroke-width="2"/>
+  <rect x="320" y="350" width="90" height="80" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <rect x="332" y="362" width="66" height="34" rx="3" fill="#e6fcf5" stroke="#1f2933" stroke-width="2"/>
+  <line x1="345" y1="388" x2="380" y2="368" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <circle cx="365" cy="412" r="6" fill="#1f2933"/>
+  <circle cx="640" cy="300" r="118" fill="none" stroke="#b8622d" stroke-width="22"/>
+  <circle cx="640" cy="300" r="118" fill="none" stroke="#e8a272" stroke-width="4" stroke-opacity="0.7"/>
+  <circle cx="640" cy="300" r="88" fill="#eef5f9" fill-opacity="0.18" stroke="#eef5f9" stroke-width="3"/>
+  <circle cx="640" cy="312" r="46" fill="none" stroke="#3bc9db" stroke-width="12" stroke-opacity="0.25"/>
+  <circle cx="640" cy="312" r="46" fill="none" stroke="#3bc9db" stroke-width="4"/>
+  <rect x="632" y="358" width="16" height="22" fill="#8a96a3"/>
+  <rect x="570" y="418" width="140" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <rect x="630" y="410" width="20" height="12" fill="#6c757d"/>
+  <rect x="930" y="220" width="22" height="200" rx="11" fill="#cc5de8" fill-opacity="0.85"/>
+  <rect x="922" y="212" width="38" height="216" rx="19" fill="#cc5de8" fill-opacity="0.18"/>
+  <rect x="920" y="410" width="42" height="22" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <path d="M960,300 L1040,268 L1040,332 Z" fill="#e5dbff" stroke-linejoin="round" fill-opacity="0.35"/>
+  <rect x="1036" y="262" width="10" height="76" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="1080" y="230" width="90" height="140" rx="4" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <rect x="1096" y="244" width="5" height="112" fill="#7048e8"/>
+  <rect x="1104" y="244" width="5" height="112" fill="#4263eb"/>
+  <rect x="1126" y="244" width="5" height="112" fill="#15aabf"/>
+  <rect x="1156" y="244" width="5" height="112" fill="#c92a2a"/>
+  <rect x="1118" y="370" width="14" height="62" fill="#8a96a3"/>
+</svg></p>
+</div><aside class="intro-aside"><div class="learn"><h2 class="intro-h">In this lesson, you will learn to</h2><ul><li>plan measurements at the Fotoni stations and record observations with their uncertainties.</li><li>determine Planck's constant from a straight-line fit and estimate its uncertainty.</li><li>write a lab report in English and connect the results to modern physics.</li></ul></div></aside></div><div class="intro-more"><div class="prior"><h2 class="intro-h">Prior knowledge</h2><ul><li>The stopping voltage $eU_\text{s} = hf - W$<span class="prior-ref">chapter <em>Light as particles: the photoelectric effect</em></span></li><li>A charged particle that moves across a magnetic field moves on a circle<span class="prior-ref">chapter <em>Charged particles and magnetic confinement</em></span></li><li>Light and electrons in a double slit, and probability<span class="prior-ref">chapter <em>Waves, probability and quantum tunnelling</em></span></li><li>Each gas gives its own line spectrum<span class="prior-ref">chapter <em>From Rutherford&#x27;s nucleus to Bohr&#x27;s atom</em></span></li><li>The peak of thermal radiation follows Wien's law $\lambda_\text{max} T = b$<span class="prior-ref">chapter <em>When classical physics ran out of answers</em></span></li></ul></div><p class="path-note"><strong>Core path:</strong> follow the steps in order. Tasks marked <em>Optional</em> give extra practice. <span class="path-count">Optional tasks: 3.</span></p></div></div>
+<section class="stage" id="herata" data-stage="herata"><h2><span class="stage-no" aria-hidden="true">1</span>Think about it</h2><div class="activity act-hook" id="hook" data-type="hook"><div class="hook"><p>Soon your group visits <strong>Fotoni</strong>, the open physics teaching laboratory of the University of Helsinki, on the second floor of the Physicum building on the Kumpula campus. Until now you have read about photons, electrons and spectra in this course. At Fotoni you do the experiments yourselves, with real lamps, glass tubes, coils and meters, in about an hour of lab work. Real measurements never give exactly the numbers in a book.</p></div><p class="question">What can we measure about light and electrons ourselves, and how sure can we be of our numbers?</p></div><div class="activity act-choice task-card" id="review" data-type="choice"><h3>Review: the stopping voltage</h3><fieldset class="choice list"><legend>In the unit <em>Light as particles: the photoelectric effect</em>, you raised a counter-voltage until the current of a photocell was zero. What does this stopping voltage $U_\text{s}$ tell you?</legend><ul class="choices"><li><label><input type="radio" name="review" value="0" data-correct="0"><span>The work function $W$ of the metal in the photocell.</span></label><div class="feedback" data-for="0" hidden><p>The work function is in the equation $eU_\text{s} = hf - W$, but one stopping voltage does not give it alone. You need several colours and a graph: the intercept gives $W$.</p></div></li><li><label><input type="radio" name="review" value="1" data-correct="1"><span>The largest kinetic energy of the electrons, $eU_\text{s}$.</span></label><div class="feedback" data-for="1" hidden><p>Right. The counter-voltage takes the energy $eU_\text{s}$ from every electron, so at $U_\text{s}$ even the fastest ones turn back: $eU_\text{s} = E_{\text{k,max}} = hf - W$. At Fotoni you measure $U_\text{s}$ for several LEDs.</p></div></li><li><label><input type="radio" name="review" value="2" data-correct="0"><span>The energy $hf$ of one photon of the light used.</span></label><div class="feedback" data-for="2" hidden><p>Not quite. The photon's energy is shared: first the work function $W$ frees the electron, and only the rest, $hf - W$, is kinetic energy. So $eU_\text{s}$ is smaller than $hf$.</p></div></li><li><label><input type="radio" name="review" value="3" data-correct="0"><span>The number of photons that hit the plate every second.</span></label><div class="feedback" data-for="3" hidden><p>The stopping voltage is the voltage that turns electrons back, so it measures the energy of an electron, not how many photons arrive.</p></div></li></ul><div class="choice-actions"><button type="button" class="commit">Answer</button></div><output aria-live="polite"></output></fieldset></div><div class="activity act-text" id="hook-help" data-type="text"><div class="wordbank"><h4>Sentence starters</h4><ul><li>A number is trustworthy if …</li><li>We could repeat the measurement to …</li><li>One problem could be that …</li><li>I think the hardest part will be …, because …</li></ul></div></div><div class="activity act-explain task-card" id="hook-discuss" data-type="explain"><h3>Think about it: a number you can trust</h3><div class="explain"><p class="task scenario">Discuss with a partner: you will measure Planck's constant yourselves.</p><p class="task ask">What would make your number trustworthy? Write two or three sentences. Name at least one thing that could make the result less precise.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="pair"><p>Pair work: share your ideas aloud first, then each of you writes your own answer.</p></div><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>A number is trustworthy if we can repeat the measurement and get almost the same value, and if we know how big the uncertainty of each reading is. We should also use several points and a graph instead of one reading. One problem could be that it is hard to see exactly when the current becomes zero, so the stopping voltage can be a little wrong.</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>The answer names a feature of a trustworthy result (repeating, several points, a known uncertainty).</span></label></li><li><label><input type="checkbox"> <span>The answer names at least one concrete source of imprecision.</span></label></li><li><label><input type="checkbox"> <span>The answer uses a sentence starter or a clear <em>because</em>.</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Read <em>Planning a measurement</em> in <a href="#tutki">Investigate</a> and compare.</p></p></div></div></div></div></section>
+<section class="stage" id="ennusta" data-stage="ennusta"><h2><span class="stage-no" aria-hidden="true">2</span>Predict</h2><details class="fold" data-fold="ennusta"><summary><span class="fold-title">Make your predictions before investigating</span> <span class="fold-status" data-n="4">4 questions</span></summary><div class="fold-body"><div class="activity act-choice task-card" id="pred-current" data-type="choice"><h3>Prediction 1: a brighter LED at the stopping voltage</h3><fieldset class="choice list" data-reveal="theory-main" data-reveal-min="1"><legend><span class="scenario">At the photoelectric station you set the counter-voltage to the stopping voltage of the red LED, so the current is zero. Then you turn the intensity of the LED up.</span><span class="ask">What happens to the current?</span></legend><ul class="choices"><li><label><input type="radio" name="pred-current" value="0" data-correct="0"><span>It grows slowly, because the electrons collect energy over time.</span></label><div class="feedback" data-for="0" hidden><p>This is the classical wave idea. An electron takes the energy of one photon at once and practically never collects two. So more light, or a longer time, does not get any electron past the stopping voltage: the current stays at zero.</p></div></li><li><label><input type="radio" name="pred-current" value="1" data-correct="0"><span>It becomes negative, because the electrons now flow backwards.</span></label><div class="feedback" data-for="1" hidden><p>The electrons that turn back return to the plate they came from, so they carry no current in the opposite direction. The current stays at zero: brighter light gives more photons, not more energetic ones.</p></div></li><li><label><input type="radio" name="pred-current" value="2" data-correct="0"><span>It grows, because more photons free more electrons.</span></label><div class="feedback" data-for="2" hidden><p>More photons do free more electrons, and below the stopping voltage the current does grow. But at the stopping voltage even the fastest electrons turn back, and a brighter LED does not make any electron faster: each photon has the same $hf$. So the current stays at zero.</p></div></li><li><label><input type="radio" name="pred-current" value="3" data-correct="1"><span>It stays at zero: each photon still has the same energy.</span></label><div class="feedback" data-for="3" hidden><p>This is what the stations show: at the stopping voltage the current stays at zero however bright the LED is. A brighter LED sends more photons, but each red photon still has the same energy $hf$, so no electron can get past the counter-voltage. Check your worksheet: did your current stay at zero?</p></div></li></ul><label class="justify">Justification (optional)<textarea rows="2"></textarea></label><div class="choice-actions"><button type="button" class="commit">Answer</button></div><p class="pending" tabindex="-1" data-theory="Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit." hidden>Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit.</p><output aria-live="polite"></output></fieldset></div><div class="activity act-choice task-card" id="pred-radius" data-type="choice"><h3>Prediction 2: a stronger magnetic field</h3><fieldset class="choice list" data-reveal="theory-main" data-reveal-min="1"><legend><span class="scenario">At the electron-beam station the beam moves on a circle. You keep the accelerating voltage the same and increase the current in the coils, so the magnetic field becomes stronger.</span><span class="ask">What happens to the circle?</span></legend><ul class="choices"><li><label><input type="radio" name="pred-radius" value="0" data-correct="1"><span>It becomes smaller, because the force towards the centre grows.</span></label><div class="feedback" data-for="0" hidden><p>This is what the station shows. The speed is set by the accelerating voltage, so it stays the same. A stronger field gives a larger force $evB$ towards the centre, and the circle shrinks: $r = mv/(eB)$. Compare with your worksheet.</p></div></li><li><label><input type="radio" name="pred-radius" value="1" data-correct="0"><span>It stays the same, because the field does no work on the electrons.</span></label><div class="feedback" data-for="1" hidden><p>It is true that the magnetic force does no work, so the speed does not change. But the force still bends the path more sharply when $B$ is larger. The radius $r = mv/(eB)$ becomes smaller.</p></div></li><li><label><input type="radio" name="pred-radius" value="2" data-correct="0"><span>It opens up into a straight line along the field lines.</span></label><div class="feedback" data-for="2" hidden><p>The electrons move perpendicular to the field, so they cannot move along it. A stronger field bends their path more: the circle becomes smaller, $r = mv/(eB)$.</p></div></li><li><label><input type="radio" name="pred-radius" value="3" data-correct="0"><span>It becomes larger, because the field pushes the electrons outwards.</span></label><div class="feedback" data-for="3" hidden><p>The magnetic force points to the <em>centre</em> of the circle, not outwards. A stronger field gives a stronger force towards the centre, so the circle becomes smaller: $r = mv/(eB)$.</p></div></li></ul><label class="justify">Justification (optional)<textarea rows="2"></textarea></label><div class="choice-actions"><button type="button" class="commit">Answer</button></div><p class="pending" tabindex="-1" data-theory="Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit." hidden>Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit.</p><output aria-live="polite"></output></fieldset></div><div class="activity act-choice task-card" id="pred-photons" data-type="choice"><h3>Prediction 3: one photon at a time</h3><fieldset class="choice list" data-reveal="theory-main" data-reveal-min="1"><legend><span class="scenario">At the double-slit station the light is made so dim that there is practically never more than one photon in the apparatus. A counter counts the photons at different positions behind the two slits.</span><span class="ask">What will the counts show after a long time?</span></legend><ul class="choices"><li><label><input type="radio" name="pred-photons" value="0" data-correct="0"><span>No counts at all, because one photon is too weak to be detected.</span></label><div class="feedback" data-for="0" hidden><p>A photomultiplier is made to detect single photons: a photon can free one electron, and the tube multiplies it into a pulse that the counter registers. The counts form the bands of an interference pattern.</p></div></li><li><label><input type="radio" name="pred-photons" value="1" data-correct="1"><span>The same bright and dark bands as with bright light.</span></label><div class="feedback" data-for="1" hidden><p>This is what the station shows. Each photon gives one click at one point, so it is detected like a particle. But after many photons the counts form the bands of an interference pattern: the probability of where a photon arrives follows a wave. Compare with your worksheet.</p></div></li><li><label><input type="radio" name="pred-photons" value="2" data-correct="0"><span>The same count everywhere, as one photon cannot interfere.</span></label><div class="feedback" data-for="2" hidden><p>One might think that interference needs many photons at once. But the bands appear even when photons go through one at a time. Each photon's probability of arriving at a point follows the wave pattern.</p></div></li><li><label><input type="radio" name="pred-photons" value="3" data-correct="0"><span>Many counts only right behind the two slits, as for small balls.</span></label><div class="feedback" data-for="3" hidden><p>This is what a pure particle model predicts. The counts instead form several bright and dark bands, the same pattern as bright light. Each photon arrives at one point, but where it is likely to arrive follows a wave pattern.</p></div></li></ul><label class="justify">Justification (optional)<textarea rows="2"></textarea></label><div class="choice-actions"><button type="button" class="commit">Answer</button></div><p class="pending" tabindex="-1" data-theory="Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit." hidden>Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit.</p><output aria-live="polite"></output></fieldset></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Prediction 4: a hotter filament</summary><div class="activity act-choice" id="pred-peak" data-type="choice"><fieldset class="choice list" data-reveal="theory-main" data-reveal-min="1"><legend><span class="scenario">At the hot-filament station you raise the lamp voltage from $7\ \text{V}$ to $10\ \text{V}$, and the filament becomes hotter. The visible range is about $400\text{–}700\ \text{nm}$.</span><span class="ask">Where is the peak of the spectrum?</span></legend><ul class="choices"><li><label><input type="radio" name="pred-peak" value="0" data-correct="0"><span>It moves into the visible range at the highest voltage.</span></label><div class="feedback" data-for="0" hidden><p>The peak does move to shorter wavelengths, and the lamp looks whiter. But to reach $700\ \text{nm}$ the filament would need about $4100\ \text{K}$, more than the melting point of tungsten, $3695\ \text{K}$. The peak stays in the infrared.</p></div></li><li><label><input type="radio" name="pred-peak" value="1" data-correct="0"><span>It moves to longer wavelengths, because more energy is radiated.</span></label><div class="feedback" data-for="1" hidden><p>More energy is radiated, but Wien's law says $\lambda_\text{max} = b/T$: a higher temperature gives a <em>shorter</em> peak wavelength. The peak moves towards the visible range but stays in the infrared.</p></div></li><li><label><input type="radio" name="pred-peak" value="2" data-correct="0"><span>It stays at the same wavelength; only the height grows.</span></label><div class="feedback" data-for="2" hidden><p>The height does grow, but the peak also moves: $\lambda_\text{max} = b/T$. A hotter filament peaks at a shorter wavelength, still in the infrared.</p></div></li><li><label><input type="radio" name="pred-peak" value="3" data-correct="1"><span>It moves to shorter wavelengths but stays in the infrared.</span></label><div class="feedback" data-for="3" hidden><p>This is what the station shows. By Wien's law $\lambda_\text{max} = b/T$, a hotter filament has its peak at a shorter wavelength. But a peak at $700\ \text{nm}$ would need about $4100\ \text{K}$, and lamp filaments are made of tungsten, which melts at $3695\ \text{K}$. So the peak stays in the infrared.</p></div></li></ul><label class="justify">Justification (optional)<textarea rows="2"></textarea></label><div class="choice-actions"><button type="button" class="commit">Answer</button></div><p class="pending" tabindex="-1" data-theory="Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit." hidden>Feedback opens with the box “Lesson 2: after visit” in the Theory summary, after the Fotoni visit.</p><output aria-live="polite"></output></fieldset></div></details></div></details></section>
+<section class="stage" id="tutki" data-stage="tutki"><h2><span class="stage-no" aria-hidden="true">3</span>Investigate</h2><div class="activity act-theory" id="theory-stations" data-type="theory"><h3 class="theory-h">Before the visit: the physics of each station</h3>
+<p>Fotoni is the open physics teaching laboratory of the University of Helsinki. Its material bank describes the stations below. Your teacher chooses with Fotoni which ones your group does, and the equipment on the day can differ a little from the instructions: always check with the instructor.</p>
+<h4>Photoelectric effect: Planck's constant</h4>
+<p>LEDs of different colours shine on the metal plate of a vacuum tube (a <strong>photocell</strong>). A <strong>counter-voltage</strong> pushes the freed electrons back. You raise it until the current is zero: this is the <strong>stopping voltage</strong> $U_\text{s}$. From the unit <em>Light as particles: the photoelectric effect</em> you know that ${eU_\text{s} = hf - W}$. You measure $U_\text{s}$ for every LED and find Planck's constant $h$ from the slope of a graph.</p>
+<h4>The charge-to-mass ratio of the electron</h4>
+<div class="fig-row stack"><div class="fig-text"><p>A heated cathode emits electrons, and an <strong>accelerating voltage</strong> $U$ of about $100\text{–}300\ \text{V}$ speeds them up. The tube contains a little helium, so the beam glows. Two coils make a nearly uniform magnetic field $\overline{B}$, and the beam bends into a circle of radius $r$, as in the unit <em>Charged particles and magnetic confinement</em>.</p></div><div class="fig"><svg data-fig="em" viewBox="0 0 420 380" role="img" aria-label="Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. The magnetic field points out of the page, shown by green circles with a dot and labelled B. An electron leaves the electron gun at the bottom moving to the right and travels on a circle of radius r. At one point of the circle a blue arrow shows its velocity v along the circle and a red arrow shows the magnetic force F, which points to the centre of the circle." style="max-width:100%;font-size:28px">
+  <circle cx="210" cy="195" r="172" fill="#eef5f9" fill-opacity="0.5" stroke="#8a96a3" stroke-width="3"/>
+  <circle cx="92" cy="108" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="92" cy="108" r="4" fill="#2b8a3e"/>
+  <circle cx="290" cy="62" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="290" cy="62" r="4" fill="#2b8a3e"/>
+  <circle cx="80" cy="230" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="80" cy="230" r="4" fill="#2b8a3e"/>
+  <circle cx="150" cy="50" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="150" cy="50" r="4" fill="#2b8a3e"/>
+  <circle cx="330" cy="290" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="330" cy="290" r="4" fill="#2b8a3e"/>
+  <circle cx="100" cy="312" r="12" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
+  <circle cx="100" cy="312" r="4" fill="#2b8a3e"/>
+  <foreignObject x="237" y="47" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="10" stroke-opacity="0.3"/>
+  <circle cx="210" cy="185" r="98" fill="none" stroke="#3bc9db" stroke-width="3.5"/>
+  <rect x="166" y="274" width="40" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="160" y="302" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\text{gun}$</div></foreignObject>
+  <circle cx="210" cy="185" r="4" fill="#1f2933"/>
+  <line x1="210" y1="185" x2="112" y2="185" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
+  <foreignObject x="149.5" y="148" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$r$</div></foreignObject>
+  <circle cx="308" cy="185" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="308" y1="185" x2="308" y2="120" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M308,105 L315,121 L301,121 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="320" y="102" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <line x1="308" y1="185" x2="257" y2="185" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M242,185 L258,178 L258,192 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="253.5" y="194" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+</svg></div></div>
+<p>The magnetic force is the centripetal force, and the voltage gives the kinetic energy:</p>
+<p>$$\begin{aligned}
+evB &= \frac{mv^2}{r} \\
+eU &= \tfrac{1}{2}mv^2
+\end{aligned}$$</p>
+<p>Together these give ${2U = (e/m) \cdot B^2r^2}$. The field of the coil pair is ${B = (4/5)^{3/2}\,\mu_0 N I / R}$, where $N$ is the number of turns of one coil, $R$ its radius and $I$ the current.</p>
+<h4>Double slit, also with single photons</h4>
+<p>Light passes two narrow slits, and a detector moves across the pattern. Bright light is measured with a <strong>photodiode</strong>. Then a very dim green lamp is used, so that there is practically never more than one photon in the apparatus. A <strong>photomultiplier</strong> turns each photon into a pulse, and a <strong>counter</strong> counts the pulses in $10\ \text{s}$. This links to the unit <em>Waves, probability and quantum tunnelling</em>.</p>
+<h4>Hot filament and spectra</h4>
+<p>The light of a lamp filament is spread out by a prism, and a sensor measures the intensity at each wavelength at four voltages ($7$, $8$, $9$ and $10\ \text{V}$). The software calculates the filament's temperature. Compare with Wien's law ${\lambda_\text{max} T = b}$ (unit <em>When classical physics ran out of answers</em>). At the spectra station you look at lamps and gas tubes with a hand spectroscope and a spectrometer (unit <em>From Rutherford's nucleus to Bohr's atom</em>).</p>
+<h4>Millikan's oil drops (qualitative)</h4>
+<p>Tiny oil drops float between two plates with a voltage of about $500\ \text{V}$. An alpha source charges them. You watch the drops through a microscope camera and look for sudden changes in their motion.</p>
+</div><div class="activity act-text" id="stations-match" data-type="text"><h3>Which station measures what?</h3><p>Check that you know what each station is for.</p>
+<div class="fx" data-fx="match" id="fx-fo-stations"><script type="application/json">{"prompt": "Match each station with what you find out there.", "options": ["Planck's constant h", "the ratio e/m of the electron", "light as particles and waves", "how a spectrum shifts with heat", "the lines of each gas", "charge comes in steps of e"], "items": [{"text": "photocell and LEDs", "answer": "Planck's constant h", "feedback": "The stopping voltages of several LEDs give a straight line with the slope $h/e$."}, {"text": "electron beam between two coils", "answer": "the ratio e/m of the electron", "feedback": "The radius of the circle, the voltage and the field give ${2U = (e/m) \\cdot B^2r^2}$."}, {"text": "double slit with a photon counter", "answer": "light as particles and waves", "feedback": "Single photons are counted one at a time, but their positions are tested for a wave pattern."}, {"text": "filament lamp, prism and sensor", "answer": "how a spectrum shifts with heat", "feedback": "The intensity is measured at each wavelength at four voltages, so at four temperatures."}, {"text": "gas tubes and a spectroscope", "answer": "the lines of each gas", "feedback": "Each element gives light only at its own wavelengths."}, {"text": "oil drops between charged plates", "answer": "charge comes in steps of e", "feedback": "A drop that suddenly changes its motion has gained or lost charge. Millikan's measurements showed that it changes in whole steps of $e$."}]}</script></div></div><div class="activity act-theory" id="theory-planning" data-type="theory"><h3 class="theory-h">Planning a measurement</h3>
+<p>Every station has a <strong>research question</strong>: what do you want to find out? Then name the variables:</p>
+<ul>
+<li>the <strong>independent variable</strong> is the one you change (the LED, the coil current);</li>
+<li>the <strong>dependent variable</strong> is the one you measure (the stopping voltage, the radius);</li>
+<li>the <strong>controlled variables</strong> are kept the same (the accelerating voltage, the intensity).</li>
+</ul>
+<p>No measurement is exact. The <strong>uncertainty</strong> $\Delta x$ of a quantity $x$ tells how far the true value may be from your reading. For a scale or a digital display, the reading uncertainty is about half of the smallest step you can read, unless the reading jumps around more. If you repeat a measurement, use the mean. Half of the range, (largest minus smallest) divided by two, is a simple estimate of how much single readings spread; use it as $\Delta x$ of one reading. It is not the uncertainty of the mean, which is smaller. Write the result as ${x \pm \Delta x}$ with its unit. The <strong>relative uncertainty</strong> $\Delta x / x$ is often given in percent.</p>
+<h4>Safety at the stations</h4>
+<ul>
+<li>Several stations use high voltages: the electron tube up to $300\ \text{V}$, the oil-drop plates about $500\ \text{V}$, and the gas tubes. Change the connections only when the instructor allows it.</li>
+<li>The electron tube is thin glass: a magnet may come near it, but never touch it.</li>
+<li>Lamps and gas tubes get hot. Do not touch them, and do not look straight into a bright lamp or LED from close by.</li>
+<li>The alpha source of the oil-drop station stays inside the apparatus. Only the instructor handles it.</li>
+<li>Do not run the filament lamp at $10\ \text{V}$ for long: it shortens the lamp's life.</li>
+</ul>
+</div><div class="activity act-text" id="safety" data-type="text"><h3>Safety check</h3><div class="fx" data-fx="match" id="fx-fo-safety"><script type="application/json">{"prompt": "Match each situation at Fotoni with the right action.", "options": ["ask the instructor first", "bring it near, never touch", "do not touch; let it cool", "do not look straight into it", "turn it down soon"], "items": [{"text": "You want to change a cable at the electron tube.", "answer": "ask the instructor first", "feedback": "The tube's supply gives up to $300\\ \\text{V}$. Change connections only when the instructor allows it."}, {"text": "You test the beam with a bar magnet.", "answer": "bring it near, never touch", "feedback": "The tube is thin glass. The magnet works from a few centimetres away."}, {"text": "A gas tube has been on for a while.", "answer": "do not touch; let it cool", "feedback": "Lamps and gas tubes get hot, and a gas tube runs on a high voltage."}, {"text": "A bright LED is close to your eyes.", "answer": "do not look straight into it", "feedback": "Look at the meters and the screen, not into the light source."}, {"text": "The filament lamp is at $10\\ \\text{V}$.", "answer": "turn it down soon", "feedback": "The Fotoni instruction asks not to keep the lamp at $10\\ \\text{V}$ for long, so that it does not wear out."}, {"text": "The oil-drop apparatus needs a new source.", "answer": "ask the instructor first", "feedback": "The alpha source stays inside the apparatus, and only the instructor handles it."}]}</script></div></div><div class="activity act-text" id="plan-help" data-type="text"><div class="wordbank"><h4>Word bank</h4><p>research question · independent variable · dependent variable · controlled variable · reading · uncertainty $\Delta x$ · to repeat · to keep constant · smallest step of the scale</p></div>
+
+<div class="wordbank"><h4>Sentence starters</h4><ul><li>Our research question is …</li><li>We will change … and measure …</li><li>We will keep … the same, because …</li><li>The uncertainty of one reading is about …, because …</li></ul></div></div><div class="activity act-explain task-card" id="plan" data-type="explain"><h3>Plan the photoelectric measurement</h3><div class="explain"><p class="task">Discuss with a partner and write a short plan for the photoelectric station: the research question, the independent, dependent and controlled variables, how many LEDs you will measure and how you will estimate the uncertainty of one stopping voltage.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="pair"><p>Pair work: plan together, then each of you writes the plan on your own worksheet.</p></div><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>Our research question is how the stopping voltage depends on the frequency of the light, and what Planck's constant is. We will change the LED, so the wavelength and the frequency are the independent variable. We will measure the stopping voltage, the dependent variable. We will keep the photocell and the metal plate the same. We will measure every LED the station has, at least four, because a line needs several points. The uncertainty of one stopping voltage is about one or two steps of the voltmeter's last digit, because it is hard to see exactly when the current reaches zero; we will find each stopping voltage twice and compare.</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>The plan has a research question that can be answered by the measurement.</span></label></li><li><label><input type="checkbox"> <span>The plan names the independent variable (the LED or its frequency), the dependent variable (the stopping voltage) and at least one controlled variable.</span></label></li><li><label><input type="checkbox"> <span>The plan says how many points it needs and why (a line, at least about four).</span></label></li><li><label><input type="checkbox"> <span>The plan gives a way to estimate the uncertainty (reading step or repeated readings).</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Read <em>Planning a measurement</em> again in <a href="#tutki">Investigate</a>.</p></p></div></div></div></div><div class="activity act-theory" id="theory-worksheet" data-type="theory"><h3 class="theory-h">During the visit: lab worksheet</h3>
+<p>Print this section, or copy the tables into your notebook. Fill in the empty cells at the station. Write every number with its unit and its uncertainty.</p>
+<h4>Group</h4>
+<table>
+<thead>
+<tr>
+<th>Names</th>
+<th>Date</th>
+<th>Stations we did</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>Station: photoelectric effect</h4>
+<p>Research question: how does the stopping voltage depend on the frequency of the light, and what is Planck's constant?</p>
+<table>
+<thead>
+<tr>
+<th>Instrument at the station</th>
+<th>What it measures</th>
+<th>Smallest step</th>
+<th>$\Delta x$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>voltage $U$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>current $I$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Observations with the red LED, before you take the measurements:</p>
+<table>
+<thead>
+<tr>
+<th>What we did</th>
+<th>What happened to the current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U$ slightly negative, more light</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>$U$ at the stopping voltage, more light</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>LED colour</th>
+<th>$\lambda\ (\text{nm})$</th>
+<th>$f\ (10^{14}\ \text{Hz})$</th>
+<th>$U_\text{s}\ (\text{V})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>red</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Where does the LED's wavelength come from (a label, the instructor, a spectrometer)? Write it down.</p>
+<h4>Station: charge-to-mass ratio of the electron</h4>
+<p>Research question: what is the ratio $e/m$ of the electron?</p>
+<table>
+<thead>
+<tr>
+<th>Coil data</th>
+<th>Value</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>turns of one coil $N$</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>coil radius $R\ (\text{m})$</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Observations before the measurements:</p>
+<table>
+<thead>
+<tr>
+<th>What we did</th>
+<th>What happened to the beam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a bar magnet near the tube (not touching)</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>$U$ kept the same, coil current up</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>coil current kept the same, $U$ up</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Measurements:</p>
+<table>
+<thead>
+<tr>
+<th>$I\ (\text{A})$</th>
+<th>$U\ (\text{V})$</th>
+<th>$r\ (\text{m})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Calculated from each row of the table above:</p>
+<table>
+<thead>
+<tr>
+<th>$B\ (\text{T})$</th>
+<th>$B^2r^2\ (\text{T}^2\text{m}^2)$</th>
+<th>$2U\ (\text{V})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>How did you measure the radius, and what is $\Delta r$?</p>
+<h4>Station: double slit and single photons</h4>
+<p>Research question: does a pattern of bright and dark bands appear when photons arrive one at a time?</p>
+<table>
+<thead>
+<tr>
+<th>Data of the setup</th>
+<th>Value</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slit separation $d\ (\text{mm})$</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>slit to detector $L\ (\text{cm})$</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>wavelength $\lambda\ (\text{nm})$</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Repeated counts at one position (each in $10\ \text{s}$):</p>
+<table>
+<thead>
+<tr>
+<th>Count 1</th>
+<th>Count 2</th>
+<th>Count 3</th>
+<th>Count 4</th>
+<th>Count 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Counts at different positions:</p>
+<table>
+<thead>
+<tr>
+<th>Position $x\ (\text{mm})$</th>
+<th>Counts in $10\ \text{s}$</th>
+<th>Position $x\ (\text{mm})$</th>
+<th>Counts in $10\ \text{s}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>Station: hot filament</h4>
+<p>Research question: how does the spectrum of a hot filament change with its temperature?</p>
+<table>
+<thead>
+<tr>
+<th>Voltage $U\ (\text{V})$</th>
+<th>Temperature $T\ (\text{K})$</th>
+<th>Peak $\lambda_\text{max}\ (\text{nm})$</th>
+<th>Colour we saw</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$7$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>$10$</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+<td>&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>Station: spectra</h4>
+<p>Research question: which light sources give a continuous spectrum, and which give lines?</p>
+<table>
+<thead>
+<tr>
+<th>Light source</th>
+<th>Continuous or lines?</th>
+<th>Brightest colours or lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>Station: oil drops</h4>
+<p>Research question: how do charged oil drops move between the plates, and what happens when a drop's charge changes?</p>
+<table>
+<thead>
+<tr>
+<th>What we saw</th>
+<th>Our explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>After each station</h4>
+<p>One sentence: what surprised us, and what limited the precision?</p>
+<table>
+<thead>
+<tr>
+<th>Station</th>
+<th>Our sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+<tr>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+<td>&emsp;&emsp;&emsp;&emsp;</td>
+</tr>
+</tbody>
+</table>
+</div><div class="activity act-text" id="record-help" data-type="text"><h3>Language for your observations</h3><div class="wordbank"><h4>Word bank</h4><p>to increase · to decrease · to stay the same · to bend · to glow · a reading · a count · a peak · a line (in a spectrum) · continuous · roughly · exactly</p></div>
+
+<div class="wordbank"><h4>Sentence starters</h4><ul><li>When we increased …, the … stayed / grew / fell.</li><li>The reading jumped between … and …, so …</li><li>We repeated the count five times and got …</li><li>We could not measure … because …</li></ul></div></div></section>
+<section class="stage" id="selita" data-stage="selita"><h2><span class="stage-no" aria-hidden="true">4</span>Theory summary</h2><details class="opt fold" data-type="theory"><summary><span class="opt-tag">Lesson 2: after visit</span> After the visit: open in lesson 2</summary><div class="activity act-theory" id="theory-main" data-type="theory"><h3 class="theory-h">After the visit: what the stations show</h3>
+<p>Compare these results with your own worksheet.</p>
+<p><strong>Photoelectric effect.</strong> When the counter-voltage is slightly negative, more intensity gives more current, because more photons free more electrons. At the stopping voltage the current stays at zero however bright the LED is. One photon frees at most one electron, and the photon's energy $hf$ depends only on the colour. Shorter wavelengths give larger stopping voltages, and the points $(f, U_\text{s})$ lie close to a straight line with the slope $h/e$.</p>
+<p><strong>Electron beam.</strong> A larger coil current makes a stronger field and a <em>smaller</em> circle, because ${r = mv/(eB)}$. A larger accelerating voltage makes the electrons faster and the circle larger. The points $(B^2r^2, 2U)$ lie on a line through the origin, and its slope is $e/m$, about ${1.76 \cdot 10^{11}\ \text{C/kg}}$.</p>
+<p><strong>Single photons.</strong> The counter clicks at random moments, and repeated counts at one place differ a little. But the counts at different positions form the same bright and dark bands as bright light does. Each photon arrives at one point like a particle, but the probability of where it arrives follows a wave pattern.</p>
+<p><strong>Hot filament.</strong> When the temperature rises, the peak moves to shorter wavelengths and the light looks whiter. The peak still stays in the infrared, so most of the energy of an ordinary filament lamp is not visible light. The curves fall at short wavelengths, as Planck's law says, not as classical physics predicted.</p>
+<p><strong>Spectra and oil drops.</strong> A filament gives a continuous spectrum. A gas tube gives lines at fixed wavelengths, for hydrogen $656$, $486$, $434$ and $410\ \text{nm}$. An oil drop that suddenly changes its speed has gained or lost charge. Millikan's measurements showed that the charge changes in whole steps of $e$.</p>
+<h3 class="theory-h">Key idea</h3>
+<p>Each station shows a result that classical physics could not explain. Light gives and takes energy in <strong>quanta</strong> $hf$: the photoelectric effect, line spectra and the shape of the filament's spectrum all need Planck's constant. Electrons are particles with a fixed charge $e$ and a fixed ratio $e/m$. And single photons behave like particles when they are detected and like waves when they travel. This is the <strong>wave–particle duality</strong> of modern physics.</p>
+<p>The same physics is a tool in fusion research. A charged particle circles around a magnetic field line and slides along it. Your electron beam shows the circling part, because it moves perpendicular to the field. A tokamak bends the field lines into closed loops inside the vessel, so the hot plasma stays away from the walls. Spectrometers measure the light of the plasma: at ITER, spectroscopic instruments cover the range from visible light to X-rays and measure, for example, which impurities the plasma contains and the temperature of its ions.</p>
+</div></details><div class="activity act-reflect task-card" id="back-to-predictions" data-type="reflect"><h3>Back to your predictions</h3><div class="reflect" data-predictions='[&quot;pred-current&quot;, &quot;pred-radius&quot;, &quot;pred-photons&quot;, &quot;pred-peak&quot;]'><p class="task">Compare your predictions with your own worksheet and with the results above. Which prediction did the measurement change most? Then answer the opening question in one or two sentences: what can we measure about light and electrons ourselves?</p><ul class="my-predictions"></ul><p class="revise"><strong>Would you change your prediction?</strong> <label><input type="radio" name="back-to-predictions-rev" value="ei"> No</label> <label><input type="radio" name="back-to-predictions-rev" value="kylla"> Yes</label></p><textarea rows="3" aria-label="Why?" placeholder="Why?"></textarea></div></div><div class="activity act-text" id="vocabulary" data-type="text"><h3>Words of the lab</h3><div class="fx" data-fx="match" id="fx-fo-words"><script type="application/json">{"prompt": "Match each word with its meaning.", "options": ["how far the true value may be", "the quantity you change", "the quantity you measure", "kept the same during a series", "the best straight line", "half of the largest minus smallest"], "items": [{"text": "uncertainty", "answer": "how far the true value may be", "feedback": "We write a result as ${x \\pm \\Delta x}$; $\\Delta x$ is its uncertainty."}, {"text": "independent variable", "answer": "the quantity you change", "feedback": "At the photoelectric station, the LED and so the frequency $f$."}, {"text": "dependent variable", "answer": "the quantity you measure", "feedback": "It *depends* on what you changed, for example the stopping voltage $U_\\text{s}$."}, {"text": "controlled variable", "answer": "kept the same during a series", "feedback": "For example the accelerating voltage while you change the coil current."}, {"text": "linear fit", "answer": "the best straight line", "feedback": "A spreadsheet finds the line that passes closest to all points; its slope gives the constant."}, {"text": "half range", "answer": "half of the largest minus smallest", "feedback": "It shows how much single readings spread, a simple estimate of $\\Delta x$ for one reading. It is not the uncertainty of the mean."}]}</script></div></div></section>
+<section class="stage" id="sovella" data-stage="sovella"><h2><span class="stage-no" aria-hidden="true">5</span>Apply</h2><div class="activity act-theory" id="theory-fit" data-type="theory"><h3 class="theory-h">A straight-line fit</h3>
+<p>When a law has the form $y = kx + b$, plot the measured points $(x, y)$ and <strong>fit</strong> the straight line that passes closest to all of them. A spreadsheet or a graphing calculator does this (a <em>trendline</em> or <em>linear fit</em>). For the photocell, ${U_\text{s} = (h/e)\,f - W/e}$, so</p>
+<p>$$\begin{aligned}
+k &= \frac{h}{e}, & h &= e\,k, \\
+b &= -\frac{W}{e}, & W &= -e\,b.
+\end{aligned}$$</p>
+<p>For the electron beam, ${2U = (e/m) \cdot B^2r^2}$ is a line through the origin, and its slope is $e/m$.</p>
+<p>The uncertainty of the slope can be estimated with the <strong>steepest and least steep lines</strong> that still pass through the uncertainty ranges of the points, usually the first and the last point. Then</p>
+<p>$$\Delta k \approx \frac{k_\text{max} - k_\text{min}}{2}$$</p>
+<p>Finally, compare your result with the accepted value by the <strong>percentage difference</strong>:</p>
+<p>$$\text{difference} = \dfrac{x - x_\text{acc}}{x_\text{acc}} \cdot 100\ \%$$</p>
+<p>where $x$ is your result and $x_\text{acc}$ the accepted value.</p>
+<p>If the accepted value lies inside ${x \pm \Delta x}$, your result <strong>agrees</strong> with it within the uncertainty.</p>
+<h3 class="theory-h">Worked example</h3><div class="example"><div class="example-task"><p class="example-label">Problem</p><!-- photo: fotoni-photocell-station -->
+
+<p>A group measured the stopping voltage with five LEDs. The numbers are an invented example, rounded like real readings. The group estimated the uncertainty of every stopping voltage as $\Delta U_\text{s} = 0.02\ \text{V}$. Find Planck's constant with its uncertainty, and compare it with the accepted value ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$.</p>
+<table>
+<thead>
+<tr>
+<th>LED</th>
+<th>$\lambda\ (\text{nm})$</th>
+<th>$f\ (10^{14}\ \text{Hz})$</th>
+<th>$U_\text{s}\ (\text{V})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>red</td>
+<td>625</td>
+<td>4.80</td>
+<td>0.55</td>
+</tr>
+<tr>
+<td>yellow</td>
+<td>590</td>
+<td>5.08</td>
+<td>0.69</td>
+</tr>
+<tr>
+<td>green</td>
+<td>525</td>
+<td>5.71</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td>blue</td>
+<td>470</td>
+<td>6.38</td>
+<td>1.17</td>
+</tr>
+<tr>
+<td>violet</td>
+<td>405</td>
+<td>7.40</td>
+<td>1.60</td>
+</tr>
+</tbody>
+</table>
+<div class="fig-row stack"><div class="fig-text"><p>The graph shows the five points and the line that a spreadsheet fits through them.</p></div><div class="fig"><svg data-fig="fit" viewBox="0 0 560 380" role="img" aria-label="Graph of invented example data: the stopping voltage U_s in volts against the frequency f in units of 10^14 Hz, from 4 to 8. Five points rise almost on a straight line, from 0.55 V at 4.80 to 1.60 V at 7.40. A fitted straight line runs through them; the label gives its slope, 3.96 · 10^-15 V · s. The line is labelled fit." style="max-width:100%;font-size:28px">
+  <line x1="155" y1="318" x2="155" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="220" y1="318" x2="220" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="285" y1="318" x2="285" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="350" y1="318" x2="350" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="265" x2="350" y2="265" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="211.5" x2="350" y2="211.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="158.5" x2="350" y2="158.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="105" x2="350" y2="105" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="52" x2="350" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="89" y1="318" x2="364" y2="318" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M376,318 L363,324 L363,312 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="319" x2="90" y2="38" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,26 L96,39 L84,39 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="155" y1="318" x2="155" y2="325" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="143.5" y="325" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$5$</div></foreignObject>
+  <line x1="220" y1="318" x2="220" y2="325" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="208.5" y="325" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$6$</div></foreignObject>
+  <line x1="285" y1="318" x2="285" y2="325" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="273.5" y="325" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$7$</div></foreignObject>
+  <line x1="350" y1="318" x2="350" y2="325" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="338.5" y="325" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$8$</div></foreignObject>
+  <line x1="83" y1="265" x2="90" y2="265" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="26" y="248" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$0.5$</div></foreignObject>
+  <line x1="83" y1="211.5" x2="90" y2="211.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="55" y="194.5" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$1$</div></foreignObject>
+  <line x1="83" y1="158.5" x2="90" y2="158.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="26" y="141.5" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$1.5$</div></foreignObject>
+  <line x1="83" y1="105" x2="90" y2="105" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="55" y="88" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$2$</div></foreignObject>
+  <line x1="83" y1="52" x2="90" y2="52" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="26" y="35" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:28px">$2.5$</div></foreignObject>
+  <foreignObject x="382" y="301" width="158" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$f\ (10^{14}\,\text{Hz})$</div></foreignObject>
+  <foreignObject x="80" y="-7" width="85" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$U_\text{s}\ (\text{V})$</div></foreignObject>
+  <polyline points="103,283.5 343.5,127.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="142" cy="259.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="160" cy="244.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="201" cy="219" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="244.5" cy="193.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="311" cy="148" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="96.5" y="40.5" width="168" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{example data}$</span></div></foreignObject>
+  <foreignObject x="96.5" y="82" width="357" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{fit: slope} = 3.96 \cdot 10^{-15}\,\text{V} \cdot \text{s}$</span></div></foreignObject>
+</svg></div></div></div><div class="worked" data-steps="7"><div class="step" data-step="1"><p class="step-label">Step 1/7</p><p><strong>Given:</strong> five pairs $(f, U_\text{s})$ from the table, ${\Delta U_\text{s} = 0.02\ \text{V}}$, the elementary charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$. We want Planck's constant $h$, its uncertainty $\Delta h$ and the percentage difference from ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$.</p></div><div class="step" data-step="2"><p class="step-label">Step 2/7</p><p><strong>Principle:</strong> Einstein's equation ${eU_\text{s} = hf - W}$ is a straight line ${U_\text{s} = (h/e)\,f - W/e}$. A fit through all five points gives the slope $k = h/e$ and uses every measurement. The steepest and least steep lines through the first and the last point, each moved by $\Delta U_\text{s}$, give the uncertainty of the slope.</p></div><div class="step" data-step="3"><p class="step-label">Step 3/7</p><p><strong>Formula:</strong> Solved in symbols, with the first point $(f_1, U_1)$ and the last point $(f_5, U_5)$:</p>
+<p>$$\begin{aligned}
+h &= e\,k \\
+k_\text{max} &= \frac{(U_5 + \Delta U_\text{s}) - (U_1 - \Delta U_\text{s})}{f_5 - f_1} \\
+k_\text{min} &= \frac{(U_5 - \Delta U_\text{s}) - (U_1 + \Delta U_\text{s})}{f_5 - f_1} \\
+\Delta h &= e \cdot \frac{k_\text{max} - k_\text{min}}{2}
+\end{aligned}$$</p></div><div class="step" data-step="4"><p class="step-label">Step 4/7</p><p><strong>Unit conversions:</strong> The frequencies are in units of $10^{14}\ \text{Hz}$, so the difference of the last and the first frequency is ${f_5 - f_1 = (7.40 - 4.80) \cdot 10^{14}\ \text{Hz}}$, that is, ${2.60 \cdot 10^{14}\ \text{Hz}}$. A slope in ${\text{V/Hz} = \text{V} \cdot \text{s}}$ times a charge in coulombs gives ${\text{C} \cdot \text{V} \cdot \text{s} = \text{J} \cdot \text{s}}$.</p></div><div class="step" data-step="5"><p class="step-label">Step 5/7</p><p><strong>Substitution:</strong> A spreadsheet fit of the five points gives the slope ${k = 3.964 \cdot 10^{-15}\ \text{V} \cdot \text{s}}$ and the intercept ${b = -1.34\ \text{V}}$. Then:</p>
+<p>$$\begin{aligned}
+h &= 1.602 \cdot 10^{-19}\ \text{C} \\
+&\quad \cdot 3.964 \cdot 10^{-15}\ \text{V} \cdot \text{s} \\
+&= 6.351 \cdot 10^{-34}\ \text{J} \cdot \text{s} \\[6pt]
+k_\text{max} &= \frac{1.62\ \text{V} - 0.53\ \text{V}}{2.60 \cdot 10^{14}\ \text{Hz}} \\
+&= 4.192 \cdot 10^{-15}\ \text{V} \cdot \text{s} \\[6pt]
+k_\text{min} &= \frac{1.58\ \text{V} - 0.57\ \text{V}}{2.60 \cdot 10^{14}\ \text{Hz}} \\
+&= 3.885 \cdot 10^{-15}\ \text{V} \cdot \text{s} \\[6pt]
+\Delta h &= 1.602 \cdot 10^{-19}\ \text{C} \\
+&\quad \cdot \frac{0.307 \cdot 10^{-15}\ \text{V} \cdot \text{s}}{2} \\
+&= 0.246 \cdot 10^{-34}\ \text{J} \cdot \text{s} \\[6pt]
+\text{difference} &= \frac{6.351 - 6.626}{6.626} \\
+&\quad \cdot 100\ \% \\
+&= -4.2\ \%
+\end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Answer:</strong> ${h = (6.4 \pm 0.3) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. The uncertainty is rounded up to one significant figure, and the value is given to the same decimal place. The result is about $4\ \%$ smaller than the accepted value.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness:</strong> The accepted value ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ lies inside ${(6.1\ \text{to}\ 6.7) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, so the result agrees with it within the uncertainty. The intercept gives ${W = -e\,b \approx 1.34\ \text{eV}}$, positive and of the order of one electronvolt, as a work function should be. Possible systematic errors: an LED gives a band of wavelengths, not one exact wavelength, and it is hard to decide when the current is exactly zero.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="numeric"><summary><span class="opt-tag">Optional</span> The charge-to-mass ratio from one reading</summary><div class="activity act-numeric" id="em-task" data-type="numeric"><div class="numeric"><p class="task" id="em-task-q">Example data: at $U = 200\ \text{V}$ and a coil current of $I = 1.50\ \text{A}$, a group measured the <strong>diameter</strong> of the circle as $8.2\ \text{cm}$. One coil has $N = 130$ turns and the radius $R = 0.150\ \text{m}$, as in the Fotoni instruction. Calculate $e/m$. Give the answer as a number times $10^{11}\ \text{C/kg}$: for example, type $1.9$ for ${1.9 \cdot 10^{11}\ \text{C/kg}}$.</p><form class="check" data-answer="1.74" data-tol="0.025" data-mistakes='[{&quot;value&quot;: 0.435, &quot;feedback&quot;: &quot;You used the diameter as the radius. The radius is half of the diameter, and since the radius is squared, this changes the result by a factor of four.&quot;}, {&quot;value&quot;: 0.871, &quot;feedback&quot;: &quot;You forgot the factor of two. It comes from the kinetic energy, which is one half of the mass times the speed squared.&quot;}]' novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Answer in ${\cdot 10^{11}\ \text{C/kg}}$" aria-describedby="em-task-q" placeholder="?"><span class="unit">${\cdot 10^{11}\ \text{C/kg}}$</span><button type="submit">Check</button><output aria-live="polite"></output></form><div class="hints"><details class="hint" data-n="1"><summary>Hint 1: a guiding question</summary><div><p>First find the field: $B = (4/5)^{3/2}\,\mu_0 N I / R$, with ${\mu_0 = 4\pi \cdot 10^{-7}\ \text{T} \cdot \text{m/A}}$.</p></div></details><details class="hint" data-n="2"><summary>Hint 2: what is the connection</summary><div><p>The equation is ${2U = (e/m) \cdot B^2r^2}$, so $e/m = 2U/(B^2r^2)$. Is $8.2\ \text{cm}$ the radius?</p></div></details><details class="hint" data-n="3"><summary>Hint 3: an intermediate step</summary><div><p>${B \approx 1.169 \cdot 10^{-3}\ \text{T}}$ and $r = 0.041\ \text{m}$, so $B^2r^2 \approx 2.30 \cdot 10^{-9}\ \text{T}^2 \cdot \text{m}^2$.</p></div></details></div><details class="solution"><summary>Show the solution</summary><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>accelerating voltage $U = 200\ \text{V}$, coil current $I = 1.50\ \text{A}$, diameter of the circle $8.2\ \text{cm}$, turns of one coil $N = 130$, coil radius $R = 0.150\ \text{m}$, ${\mu_0 = 4\pi \cdot 10^{-7}\ \text{T} \cdot \text{m/A}}$. We want $e/m$.</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>The magnetic force is the centripetal force, $evB = mv^2/r$, and the accelerating voltage gives the kinetic energy, $eU = \tfrac{1}{2}mv^2$. Eliminating $v$ gives ${2U = (e/m) \cdot B^2r^2}$. The field of the coil pair is $B = (4/5)^{3/2}\,\mu_0 N I / R$.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>Solved in symbols:</p>
+<p>$$\begin{aligned} B &= \left(\frac{4}{5}\right)^{3/2} \frac{\mu_0 N I}{R} \\ \frac{e}{m} &= \frac{2U}{B^2 r^2} \end{aligned}$$</p></div><div class="sol-step" data-step="unit-conversions"><p class="sol-label">Unit conversions</p><p>The radius is half of the diameter, in metres: </p>
+<div class="eq-chain"><div class="eq-row"><span class="eq-l">$r$</span><span class="eq-r">$= 8.2\ \text{cm} : 2$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 4.1\ \text{cm}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 0.041\ \text{m}$</span></div></div>
+
+<p>The units: ${\text{V}/(\text{T}^2 \cdot \text{m}^2) = \text{C/kg}}$.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p>$$\begin{aligned} \mu_0 N I &= 4\pi \cdot 10^{-7}\ \text{T} \cdot \text{m/A} \\ &\quad \cdot 130 \cdot 1.50\ \text{A} \\ &= 2.450 \cdot 10^{-4}\ \text{T} \cdot \text{m} \\[6pt] B &= 0.7155 \cdot \frac{2.450 \cdot 10^{-4}\ \text{T} \cdot \text{m}}{0.150\ \text{m}} \\ &= 1.169 \cdot 10^{-3}\ \text{T} \\[6pt] B^2r^2 &= (1.169 \cdot 10^{-3}\ \text{T})^2 \\ &\quad \cdot (0.041\ \text{m})^2 \\ &= 2.297 \cdot 10^{-9}\ \text{T}^2 \cdot \text{m}^2 \\[6pt] \frac{e}{m} &= \frac{2 \cdot 200\ \text{V}}{B^2r^2} \\ &= \frac{400\ \text{V}}{2.297 \cdot 10^{-9}\ \text{T}^2 \cdot \text{m}^2} \\ &= 1.741 \cdot 10^{11}\ \text{C/kg} \end{aligned}$$</p></div><div class="sol-step" data-step="answer"><p class="sol-label">Answer</p><p class="sol-answer">${e/m \approx 1.74 \cdot 10^{11}\ \text{C/kg}}$</p><p>The diameter has only two significant figures, so a report would give ${1.7 \cdot 10^{11}\ \text{C/kg}}$; the third figure is kept here only to compare with the accepted value.</p></div><div class="sol-step" data-step="reasonableness"><p class="sol-label">Reasonableness</p><p>The accepted value is ${1.76 \cdot 10^{11}\ \text{C/kg}}$, so the result is about $1\ \%$ too small. A radius error of only $1\ \text{mm}$ changes $r^2$ by about $5\ \%$, so the radius is the most important uncertainty, and one point is not enough: at Fotoni you measure six and fit a line.</p></div></div></details></div></div></details><div class="activity act-text" id="own-help" data-type="text"><div class="wordbank"><h4>Sentence starters</h4><ul><li>We plotted … on the vertical axis and … on the horizontal axis.</li><li>The fit gave a slope of …, so $h$ = …</li><li>The steepest and least steep lines gave …, so $\Delta h$ ≈ …</li><li>Our result is …% smaller / larger than the accepted value, which is inside / outside our uncertainty.</li></ul></div></div><div class="activity act-explain task-card" id="own-data" data-type="explain"><h3>Analyse your own photoelectric data</h3><div class="explain"><p class="task">Use the table on your worksheet (or the example table above, if your group did not do this station). Plot $U_\text{s}$ against $f$ in a spreadsheet, fit a line and find $h$, $\Delta h$ and the percentage difference from ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. Write your result and three or four sentences on how you got it.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>We plotted the stopping voltage on the vertical axis and the frequency on the horizontal axis. The five points lay close to a straight line, and the spreadsheet fit gave the slope ${3.96 \cdot 10^{-15}\ \text{V} \cdot \text{s}}$, so ${h = e\,k = 6.35 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. The steepest and least steep lines gave ${\Delta h \approx 0.3 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, so ${h = (6.4 \pm 0.3) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. This is about $4\ \%$ smaller than the accepted value, which lies inside our uncertainty. (These are the numbers of the example table; your own will differ.)</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>The answer says which quantity is on which axis and that the points lie close to a line (or where they do not).</span></label></li><li><label><input type="checkbox"> <span>The answer gives $h = e\,k$ with a unit, and an uncertainty $\Delta h$ found from the graph.</span></label></li><li><label><input type="checkbox"> <span>The value and the uncertainty are rounded consistently (${x \pm \Delta x}$ to the same decimal place).</span></label></li><li><label><input type="checkbox"> <span>The answer compares with the accepted value by a percentage difference and says whether it lies inside ${x \pm \Delta x}$.</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Follow the worked example step by step in <a href="#sovella">Apply</a>.</p></p></div></div></div><div class="hints"><details class="hint" data-n="1"><summary>Hint 1: a guiding question</summary><div><p>The frequency is $f = c/\lambda$ with ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$ and $\lambda$ in metres.</p></div></details><details class="hint" data-n="2"><summary>Hint 2: what is the connection</summary><div><p>In most spreadsheets: make a scatter chart, add a linear trendline and show its equation. The slope is in ${\text{V/Hz} = \text{V} \cdot \text{s}}$.</p></div></details><details class="hint" data-n="3"><summary>Hint 3: an intermediate step</summary><div><p>For $\Delta h$, draw the steepest and least steep lines through the first and last point moved by ${\pm \Delta U_\text{s}}$, as in the worked example.</p></div></details></div></div><details class="opt" data-type="numeric"><summary><span class="opt-tag">Optional</span> The spacing of the bands</summary><div class="activity act-numeric" id="slit-task" data-type="numeric"><div class="numeric"><p class="task scenario">In the Fotoni double-slit setup the slit separation is $d = 0.3556\ \text{mm}$ and the detector is $L = 49\ \text{cm}$ from the slits. For small angles, neighbouring bright bands are $\Delta y = \lambda L / d$ apart.</p><p class="task ask" id="slit-task-q">How far apart are they for green light of $550\ \text{nm}$? Give the answer in millimetres.</p><form class="check" data-answer="0.758" data-tol="0.02" data-mistakes='[{&quot;value&quot;: 0.000758, &quot;feedback&quot;: &quot;You used the slit separation in millimetres but the other two lengths in metres. Write all three in metres first, and then convert the answer to millimetres.&quot;}]' novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Answer in $\text{mm}$" aria-describedby="slit-task-q" placeholder="?"><span class="unit">$\text{mm}$</span><button type="submit">Check</button><output aria-live="polite"></output></form><div class="hints"><details class="hint" data-n="1"><summary>Hint 1: a guiding question</summary><div><p>Write all three lengths in metres before you substitute.</p></div></details><details class="hint" data-n="2"><summary>Hint 2: what is the connection</summary><div><p>${\lambda = 550 \cdot 10^{-9}\ \text{m}}$, $L = 0.49\ \text{m}$ and ${d = 0.3556 \cdot 10^{-3}\ \text{m}}$.</p></div></details></div><details class="solution"><summary>Show the solution</summary><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>$\lambda = 550\ \text{nm}$, $L = 49\ \text{cm}$, $d = 0.3556\ \text{mm}$. We want the distance $\Delta y$ between neighbouring bright bands.</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>Bright bands appear where the paths from the two slits differ by a whole number of wavelengths, $d \sin\theta_n = n\lambda$. For small angles $\sin\theta \approx \tan\theta = y/L$, so the bands are evenly spaced.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$y_n = n\lambda L/d$, so neighbouring bands are $\Delta y = \lambda L/d$ apart.</p></div><div class="sol-step" data-step="unit-conversions"><p class="sol-label">Unit conversions</p><p>${\lambda = 550 \cdot 10^{-9}\ \text{m}}$, $L = 0.49\ \text{m}$, ${d = 0.3556 \cdot 10^{-3}\ \text{m}}$.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p>$$\begin{aligned} \Delta y &= \frac{550 \cdot 10^{-9}\ \text{m} \cdot 0.49\ \text{m}}{0.3556 \cdot 10^{-3}\ \text{m}} \\ &= 7.58 \cdot 10^{-4}\ \text{m} \\ &= 0.758\ \text{mm} \end{aligned}$$</p></div><div class="sol-step" data-step="answer"><p class="sol-label">Answer</p><p class="sol-answer">$\Delta y \approx 0.76\ \text{mm}$</p><p>Two significant figures, as in $L = 49\ \text{cm}$.</p></div><div class="sol-step" data-step="reasonableness"><p class="sol-label">Reasonableness</p><p>The bands are less than a millimetre apart, so the detector needs a narrow measuring slit that moves in small steps. The angle is about $0.76\ \text{mm} : 490\ \text{mm} \approx 0.0015$, so the small-angle approximation is very good.</p></div></div></details></div></div></details><div class="activity act-text" id="modern-help" data-type="text"><div class="wordbank"><h4>Word bank</h4><p>quantum (plural quanta) · photon · Planck's constant · wave–particle duality · probability · charge-to-mass ratio · magnetic confinement · spectroscopy · impurity · classical physics</p></div>
+
+<div class="wordbank"><h4>Sentence starters</h4><ul><li>Classical physics predicted …, but we saw …</li><li>This result is evidence that …</li><li>The same idea is used in fusion research, where …</li><li>The experiment was important because …</li></ul></div></div><div class="activity act-explain task-card" id="modern" data-type="explain"><h3>Connect to modern physics</h3><div class="explain"><p class="task">Discuss in a group of three. Choose two stations you did. For each one, write two sentences: what the measurement shows that classical physics could not explain, and how the same physics is used in fusion research or elsewhere in modern technology.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="pair"><p>Group work in threes: each of you explains one station to the others, then each writes an own answer.</p></div><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>At the photoelectric station the stopping voltage did not change when the LED became brighter, only when its colour changed. Classical physics predicted that brighter light gives faster electrons, so this is evidence that light comes in quanta of energy $hf$. At the electron-beam station the electrons moved on a circle whose radius depended on the field, $r = mv/(eB)$. The same motion of charged particles around magnetic field lines is the idea of a tokamak, which keeps a hot plasma away from its walls.</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>For each station, the answer names the classical expectation or the new idea (quanta, a particle with charge $e$, wave–particle duality).</span></label></li><li><label><input type="checkbox"> <span>The answer uses evidence from the measurement, not only the theory.</span></label></li><li><label><input type="checkbox"> <span>The answer makes one correct link to fusion research or another application (magnetic confinement, spectroscopy of plasma, photon detectors).</span></label></li><li><label><input type="checkbox"> <span>The answer uses at least two words from the word bank correctly.</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Read the key idea in the <a href="#selita">Theory summary</a>.</p></p></div></div></div></div><div class="activity act-theory" id="theory-report" data-type="theory"><h3 class="theory-h">Writing a lab report in English</h3>
+<p>A lab report tells a reader what you did, what you found and how sure you are. Scientists write it in a fixed order:</p>
+<ol>
+<li><strong>Title</strong> and <strong>aim</strong>: the research question in one sentence.</li>
+<li><strong>Background</strong>: the physics and the equation you test, in the present tense ("The stopping voltage <em>depends</em> on …").</li>
+<li><strong>Method</strong>: the equipment and what you did, in the past tense ("We <em>measured</em> …", or the passive "The voltage <em>was increased</em> …").</li>
+<li><strong>Results</strong>: tables with units in the headings, a graph with labelled axes and the fitted line.</li>
+<li><strong>Analysis</strong>: the fit, the result with its uncertainty, ${x \pm \Delta x}$.</li>
+<li><strong>Discussion</strong>: the comparison with the accepted value, the sources of uncertainty and how to improve the experiment.</li>
+<li><strong>Conclusion</strong>: the answer to the research question in one or two sentences.</li>
+</ol>
+<p>Write numbers with a decimal point and their unit ($0.93\ \text{V}$). Do not claim more than the data shows: "the result agrees with the accepted value within its uncertainty" is stronger science than "the result proves the theory".</p>
+</div><div class="activity act-text" id="report-order" data-type="text"><h3>Put the report in order</h3><div class="fx" data-fx="order" id="fx-fo-report"><script type="application/json">{"prompt": "These sentences come from one photoelectric report, one from each part. Put them in the order of the report's parts. The tense and the content are your clues.", "items": ["We wanted to find out whether the stopping voltage depends on the frequency of the light.", "According to Einstein, the stopping voltage is a linear function of the frequency.", "We measured the stopping voltage for five LEDs of different colours.", "The points of the stopping voltage against the frequency lie close to a straight line.", "The slope of the fitted line gave Planck's constant with an uncertainty of about five percent.", "The largest uncertainty came from deciding when the current was zero.", "The stopping voltage grows linearly with the frequency, as Einstein predicted."], "explain": "Aim, background, method, results, analysis, discussion, conclusion. This is the usual order: what you wanted to know, the theory, what you did, what you saw, what you calculated, how reliable it is, and the answer.", "hints": ["The aim comes first: it is the question the report answers.", "The theory comes before the method.", "What you did comes before what you saw.", "The data comes before the calculation.", "The calculation comes before you judge its reliability.", "The reliability comes before the final answer.", "The conclusion answers the aim."]}</script></div></div><div class="activity act-text" id="report-help" data-type="text"><div class="wordbank"><h4>Word bank</h4><p>accepted value · percentage difference · within the uncertainty · source of uncertainty · systematic error · random error · to improve · to repeat · to agree with · to be consistent with</p></div>
+
+<div class="wordbank"><h4>Sentence starters</h4><ul><li>The evidence suggests that …</li><li>Our value agrees with the accepted value within …</li><li>The main source of uncertainty was …, because …</li><li>A limitation of our measurement is …</li><li>To improve the experiment, we could …</li></ul></div></div><div class="activity act-explain task-card" id="report-write" data-type="explain"><h3>Write the discussion of your report</h3><div class="explain"><p class="task">Write the <strong>Discussion</strong> of your photoelectric report (or of another quantitative station) in five to seven sentences. Compare your result with the accepted value, name the main sources of uncertainty, say whether they are random or systematic, and suggest one improvement.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>Our value ${h = (6.4 \pm 0.3) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ is about $4\ \%$ smaller than the accepted value ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, but the accepted value lies within our uncertainty. The main source of uncertainty was deciding when the current was exactly zero, because the reading jumped between two values; this is a random error. A possible systematic error is that an LED does not give one exact wavelength but a band of wavelengths, so the frequencies in our table are not exact. A limitation of our measurement is that we had only five LEDs. To improve the experiment, we could measure each stopping voltage several times and find the wavelength of each LED with a spectrometer.</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>The discussion compares the result with the accepted value with a number (a percentage difference) and says whether it agrees within the uncertainty.</span></label></li><li><label><input type="checkbox"> <span>It names at least two concrete sources of uncertainty and calls at least one of them random or systematic correctly.</span></label></li><li><label><input type="checkbox"> <span>It suggests an improvement that would reduce one named source of uncertainty.</span></label></li><li><label><input type="checkbox"> <span>The language is that of a report: past tense for what was done, numbers with units, sentence starters from the box.</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Read <em>Writing a lab report in English</em> in <a href="#sovella">Apply</a> and use the word bank.</p></p></div></div></div></div><div class="activity act-theory" id="misconception" data-type="theory"><h3 class="theory-h">Common misconception</h3>
+<p>"An uncertainty means that we made a mistake." No: every measurement has an uncertainty, even a perfect one. A <strong>mistake</strong> (a wrong connection, a misread scale) is something you can find and correct. The uncertainty estimates how far the true value may be from the result. Part of it shows as scatter when you repeat the measurement. <strong>Systematic errors</strong>, such as the band of wavelengths of an LED, do not show as scatter, and repeating does not reduce them.</p>
+<p>A second misconception is that more decimals mean a better result. A calculator may show ${6.351596 \cdot 10^{-34}}$, but with ${\Delta h = 0.3 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ only the first decimal means something. A third is that a result that differs from the accepted value is wrong. It is fine if the accepted value lies inside ${x \pm \Delta x}$.</p>
+</div></section>
+<section class="stage" id="tarkista" data-stage="tarkista"><h2><span class="stage-no" aria-hidden="true">6</span>Check your understanding</h2><div class="activity act-choice task-card" id="check-1" data-type="choice"><h3>1. Concept: does the result agree?</h3><fieldset class="choice list"><legend>A group reports ${h = (6.4 \pm 0.3) \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. The accepted value is ${6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. What can the group conclude?</legend><ul class="choices"><li><label><input type="radio" name="check-1" value="0" data-correct="1"><span>It agrees with the accepted value within the uncertainty.</span></label><div class="feedback" data-for="0" hidden><p>Right. ${6.4 \pm 0.3}$ covers $6.1$ to $6.7$, and $6.626$ lies inside. A difference smaller than the uncertainty is what we expect from a good measurement.</p></div></li><li><label><input type="radio" name="check-1" value="1" data-correct="0"><span>The uncertainty is so large that the result tells nothing.</span></label><div class="feedback" data-for="1" hidden><p>An uncertainty of about $5\ \%$ is quite small for a school measurement. The result clearly shows that $h$ is about ${6 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, not, say, ten times larger.</p></div></li><li><label><input type="radio" name="check-1" value="2" data-correct="0"><span>The accepted value is likely wrong, since they measured with care.</span></label><div class="feedback" data-for="2" hidden><p>The accepted value is the result of many very precise experiments; since 2019 it is even exact by definition. A careful school measurement still has an uncertainty, and here it covers the accepted value.</p></div></li><li><label><input type="radio" name="check-1" value="3" data-correct="0"><span>Their result is wrong, because it is not exactly $6.626$.</span></label><div class="feedback" data-for="3" hidden><p>No measurement gives exactly the accepted value. What matters is whether the accepted value lies inside ${x \pm \Delta x}$, and here it does: $6.1$ to $6.7$.</p></div></li></ul><div class="choice-actions"><button type="button" class="commit">Answer</button></div><output aria-live="polite"></output><p class="practice-hint" role="note">Read <em>Formula: A straight-line fit</em> and <em>Common misconception</em> in <a href="#sovella">Apply</a>.</p></fieldset></div><div class="activity act-choice task-card" id="check-2" data-type="choice"><h3>2. Graph: which axes for e/m?</h3><fieldset class="choice list"><legend>You measured the radius $r$ of the electron beam for several voltages $U$ and fields $B$. Which graph gives a straight line through the origin whose slope is $e/m$?</legend><ul class="choices"><li><label><input type="radio" name="check-2" value="0" data-correct="0"><span>$U$ on the vertical axis, $r$ on the horizontal axis</span></label><div class="feedback" data-for="0" hidden><p>At a fixed field, $U$ is proportional to $r^2$, not to $r$, so this graph is a curve. Choose the axes so that the equation has the form $y = kx$: $2U$ against $B^2r^2$.</p></div></li><li><label><input type="radio" name="check-2" value="1" data-correct="0"><span>$r$ on the vertical axis, $B$ on the horizontal axis</span></label><div class="feedback" data-for="1" hidden><p>At a fixed voltage, $r = mv/(eB)$ is inversely proportional to $B$, so this graph is a curve, not a line. Use $2U$ against $B^2r^2$.</p></div></li><li><label><input type="radio" name="check-2" value="2" data-correct="1"><span>$2U$ on the vertical axis, $B^2r^2$ on the horizontal</span></label><div class="feedback" data-for="2" hidden><p>Right. The equation ${2U = (e/m) \cdot B^2r^2}$ has the form $y = kx$, with $y = 2U$, $x = B^2r^2$ and the slope $k = e/m$.</p></div></li><li><label><input type="radio" name="check-2" value="3" data-correct="0"><span>$2U$ on the vertical axis, $Br$ on the horizontal axis</span></label><div class="feedback" data-for="3" hidden><p>The product $Br$ appears squared in ${2U = (e/m) \cdot B^2r^2}$, so this graph is a parabola. Put $B^2r^2$ on the horizontal axis.</p></div></li></ul><div class="choice-actions"><button type="button" class="commit">Answer</button></div><output aria-live="polite"></output><p class="practice-hint" role="note">Read the electron-beam part of <em>Before the visit</em> in <a href="#tutki">Investigate</a>.</p></fieldset></div><div class="activity act-choice task-card" id="check-3" data-type="choice"><h3>3. Data: report a repeated count</h3><fieldset class="choice list"><legend>At one position the photon counter gave $412$, $389$, $405$, $398$ and $421$ counts in five periods of $10\ \text{s}$. How should the group report the count?</legend><ul class="choices"><li><label><input type="radio" name="check-3" value="0" data-correct="0"><span>${(405.0 \pm 0.1)}$ counts in $10\ \text{s}$</span></label><div class="feedback" data-for="0" hidden><p>The mean is $405$, but the readings differ by up to $32$ counts. An uncertainty of $0.1$ claims a precision that the data does not have.</p></div></li><li><label><input type="radio" name="check-3" value="1" data-correct="0"><span>$421$ counts in $10\ \text{s}$, the largest value</span></label><div class="feedback" data-for="1" hidden><p>The largest value is not the true value: the photons arrive at random, so each count is a little different. Report the mean with half of the range.</p></div></li><li><label><input type="radio" name="check-3" value="2" data-correct="1"><span>${(405 \pm 16)}$ counts in $10\ \text{s}$, the mean</span></label><div class="feedback" data-for="2" hidden><p>Right. The mean is $2025 : 5 = 405$. Half the range of the single counts is $(421 - 389) : 2 = 16$, a simple measure of how much one count spreads. For random counts the spread is typically about $\sqrt{N} \approx 20$, which fits.</p></div></li><li><label><input type="radio" name="check-3" value="3" data-correct="0"><span>$412$ counts in $10\ \text{s}$, the first reading</span></label><div class="feedback" data-for="3" hidden><p>The first reading is no better than the others. The counts are random, so use all five: the mean and half of the range.</p></div></li></ul><div class="choice-actions"><button type="button" class="commit">Answer</button></div><output aria-live="polite"></output><p class="practice-hint" role="note">Read <em>Planning a measurement</em> in <a href="#tutki">Investigate</a>.</p></fieldset></div><div class="activity act-text" id="check-explain-help" data-type="text"><div class="wordbank"><h4>Sentence starters</h4><ul><li>I disagree, because a difference of … is …</li><li>An experiment fails only if …</li><li>Every measurement has …</li><li>To make the result more reliable, we could …</li></ul></div></div><div class="activity act-explain task-card" id="check-explain" data-type="explain"><h3>4. Explain and argue</h3><div class="explain"><p class="task">A classmate writes in a report: "Our value of $e/m$ was ${1.74 \cdot 10^{11}\ \text{C/kg}}$, $1\ \%$ smaller than the accepted value, so the experiment failed." Do you agree? Explain the difference between an uncertainty and a mistake, and suggest two ways to make the result more reliable.</p><textarea rows="4" aria-label="Your own answer"></textarea><div class="choice-actions"><button type="button" class="show-model">Show the model answer and assessment</button></div><p class="explain-status" role="status" aria-live="polite"></p><div class="model" hidden><h4>Model answer</h4><p>I disagree. Every measurement has an uncertainty, and a difference of $1\ \%$ is small: a radius error of only $1\ \text{mm}$ in $4\ \text{cm}$ already changes $e/m$ by about $5\ \%$. An experiment fails only if the accepted value lies far outside ${x \pm \Delta x}$, or if there was a mistake such as a wrong connection or using the diameter instead of the radius. To make the result more reliable, we could measure the radius several times and use the mean, and measure at several voltages and currents and find $e/m$ from the slope of a fitted line.</p><h4>Assess your own answer</h4><p class="crit-lead">Tick the points your own answer already contains.</p><ul class="criteria"><li><label><input type="checkbox"> <span>The answer takes a position and explains that a small difference is expected because every measurement has an uncertainty.</span></label></li><li><label><input type="checkbox"> <span>The answer explains what a mistake is (something wrong that can be found and corrected) and how it differs from an uncertainty.</span></label></li><li><label><input type="checkbox"> <span>The answer suggests two concrete improvements (repeated readings, more points and a fit, a better way to read the radius).</span></label></li></ul><div class="choice-actions"><button type="button" class="check-criteria">What is missing from my answer?</button></div><div class="crit-result" role="status" aria-live="polite" hidden><p class="crit-msg"></p><ul class="crit-missing"></ul><p class="crit-practice" hidden><p>Read <em>Common misconception</em> in <a href="#sovella">Apply</a>.</p></p></div></div></div></div><div class="activity act-theory" id="summary" data-type="theory"><h3 class="theory-h">Summary</h3>
+<ul>
+<li>At Fotoni you measure modern physics yourself: Planck's constant from stopping voltages, $e/m$ from a circular electron beam, single photons in a double slit, the spectrum of a hot filament, line spectra and charged oil drops.</li>
+<li>Plan every measurement: research question, independent, dependent and controlled variables, and the uncertainty $\Delta x$ of each reading.</li>
+<li>The slope of a fitted line gives the constant: ${h = e\,k}$ from ${U_\text{s} = (h/e)\,f - W/e}$, and $e/m$ from ${2U = (e/m) \cdot B^2r^2}$.</li>
+<li>The steepest and least steep lines give ${\Delta k \approx (k_\text{max} - k_\text{min})/2}$. Report ${x \pm \Delta x}$ and the percentage difference from the accepted value.</li>
+<li>A lab report has a fixed structure: aim, background, method, results, analysis, discussion and conclusion.</li>
+</ul></div><div class="activity act-text" id="french-corner" data-type="text"><div class="french-corner"><h4>Le coin français</h4><p>Many words of the lab are almost the same in French: <span lang="fr">le laboratoire</span>, <span lang="fr">une mesure</span>, <span lang="fr">un spectre</span>. A French lab report also discusses <span lang="fr">l'incertitude</span>. Listen, repeat, and then tell your partner in French what you measured at Fotoni. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>
+
+<div class="fx" data-fx="say" id="fx-fo-french"><script type="application/json">{"lang": "fr-FR", "title": "Le coin français: in the laboratory", "phrases": [{"fr": "le laboratoire", "en": "the laboratory", "tip": "*lö la-bo-ra-TWAR*: *{fr}oi{/fr}* sounds like *wa*, and the final *r* is heard."}, {"fr": "une mesure", "en": "a measurement", "tip": "*yn mö-ZYR*: the French *u* is the Finnish *y*, and an *s* between two vowels sounds like *z*."}, {"fr": "l'incertitude", "en": "uncertainty", "tip": "*lẽ-ser-ti-TYD*: *{fr}in{/fr}* is a nasal vowel, so do not say the *n*."}, {"fr": "un spectre", "en": "a spectrum", "tip": "*ẽ SPEKTR*: the final *-e* is silent."}, {"fr": "la constante de Planck", "en": "Planck's constant", "tip": "*la kõs-TÃT dö PLÃK*: *{fr}on{/fr}* and *{fr}an{/fr}* are nasal vowels."}, {"fr": "Nous avons mesuré la constante de Planck.", "en": "We measured Planck's constant.", "tip": "*nu-za-võ mö-zy-RE la kõs-TÃT dö PLÃK*: link *{fr}nous‿avons{/fr}* with a *z* sound."}]}</script></div></div></section><section class="unit-sources" id="sources"><h2>Sources and verification</h2><p class="unit-sources-lead">Facts that may change were checked against these sources on the date given.</p><ul><li><a href="https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki">Fotonin materiaalipankki (University of Helsinki, LUMA science education): the works, stations and group sizes</a> <span class="checked">checked 2026-11-01</span><span class="source-note">Photoelectric effect 3 stations, e/m 2, double slit 1, Millikan (qualitative) 1, hot filament 1, spectra 3; the double-slit work is a demonstration, analysis and a report.</span></li><li><a href="https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni">Fysiikan avoin opetuslaboratorio Fotoni (University of Helsinki): upper-secondary visits, Physicum, Kumpula campus</a> <span class="checked">checked 2026-11-01</span><span class="source-note">Upper-secondary visit: an introduction of about 15 min, lab work of about 60 min and a visit to a research department of 30–60 min; students choose the works in advance and bring laptops if possible.</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_valosahkoilmio_suppea.pdf">Fotoni work instruction: Valosähköinen ilmiö (short version): LEDs, vacuum tube, stopping voltage, linear fit</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_ominaisvaraus_2.pdf">Fotoni work instruction: Elektronin ominaisvaraus (e/m): 100–300 V, coils N = 130, R = 0.15 m, the graph of 2U against B²r²</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/Kaksoisrakokoe_tyoohje.pdf">Fotoni work instruction: Kaksoisrakokoe: photodiode, dim green lamp, photomultiplier, 10 s counts, d = 0.3556 mm, L = 49 cm</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_mustakpl.pdf">Fotoni work instruction: Musta kappale: filament lamp at 7–10 V, prism, light sensor, temperature from the electrical power</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_spektritutkimus.pdf">Fotoni work instruction: Spektritutkimus: hand spectroscope, spectrometer, hydrogen, oxygen and water-vapour tubes, energy-saving lamp</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.helsinki.fi/assets/drupal/2023-03/hyluma-f2k-tyoohje_millikan.pdf">Fotoni work instruction: Millikanin koe: atomiser, alpha source, about 500 V between the plates, microscope camera</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Mass-to-charge_ratio">Mass-to-charge ratio (Wikipedia): electron e/m = 1.75882 · 10¹¹ C/kg (CODATA), first measured by J. J. Thomson in 1897</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Helmholtz_coil">Helmholtz coil (Wikipedia): B = (4/5)^(3/2) μ₀nI/R at the centre, coils one radius apart</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Oil_drop_experiment">Oil drop experiment (Wikipedia): Millikan and Fletcher 1909, published 1913, charges in whole multiples of e</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Balmer_series">Balmer series (Wikipedia): visible hydrogen lines 656.3, 486.1, 434.0 and 410.2 nm (in air)</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Tungsten">Tungsten (Wikipedia): melting point 3422 °C (3695 K), so a tungsten filament&#x27;s peak stays in the infrared</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://www.iter.org/machine/supporting-systems/diagnostics">ITER diagnostics (iter.org): spectroscopic instruments from visible light to X-rays measure impurities and ion temperature</a> <span class="checked">checked 2026-11-01</span></li><li><a href="https://en.wikipedia.org/wiki/Planck_constant">Planck constant (Wikipedia): exact SI value h = 6.62607015 · 10⁻³⁴ J·s since 2019</a> <span class="checked">checked 2026-11-01</span></li></ul></section><details class="inv-teacher unit-teacher" id="teacher"><summary>For the teacher</summary><h2>Shape of the unit</h2>
+<p>The unit has three parts: a 75-minute lesson before the visit, the visit to Fotoni, and a 75-minute lesson after it. The page follows that order: <em>Think about it</em>, <em>Predict</em> and <em>Investigate</em> are the lesson before; the worksheet in <em>Investigate</em> is used at Fotoni; <em>Theory summary</em>, <em>Apply</em> and <em>Check your understanding</em> are the lesson after. The visit itself is not part of the 150 minutes.</p>
+<p>What Fotoni offers was checked in its material bank and its work instructions on 2026-11-01 (sources at the end of the page). The page describes only what those instructions confirm. Agree the stations, the group sizes and the timetable with Fotoni when you book, and check on the day that the equipment matches the worksheet (for example the LED colours, the coil data and the slit data).</p>
+<h2>Lesson 1, before the visit (75 minutes)</h2>
+<ul>
+<li><strong>0–10 min, Think about it.</strong> Read the hook together; the review question on the stopping voltage; pairs discuss what makes a measured number trustworthy (sentence starters on the page).</li>
+<li><strong>10–20 min, Predict.</strong> Predictions 1–3 individually, each committed with a short reason. Prediction 4 (hot filament) only for the groups that will do that station. The feedback stays closed until the closed box <em>Lesson 2: after visit</em> (in <em>Theory summary</em>) is opened after the visit.</li>
+<li><strong>20–40 min, Investigate: the physics of each station.</strong> Fotoni requires the double-slit video (7:25) before the visit and recommends the photoelectric video (5:30); both are linked on the material bank page. Show the double-slit video here if a group will do that station, and give the photoelectric video as homework (or show it here instead). Then each group reads the station it will do and reports it to the class in one minute; the matching task on what each station measures.</li>
+<li><strong>40–60 min, Planning and safety.</strong> Read <em>Planning a measurement</em>; the safety match; pairs write the plan for the photoelectric station with the word bank.</li>
+<li><strong>60–75 min, the worksheet.</strong> Hand out the printed worksheet. Each group reads the tables for its stations and writes its research questions; decide who records and who reads the meters.</li>
+</ul>
+<h2>At Fotoni</h2>
+<ul>
+<li>Fotoni (second floor of the Physicum building, Kumpula campus) describes an upper-secondary visit as an introduction of about 15 minutes, about 60 minutes of lab work and a visit to a research department of 30–60 minutes. Students choose their works in advance and should bring laptops if possible.</li>
+<li>Stations in the material bank: photoelectric effect 3 stations of 1–3 students, e/m 2 stations of 1–3, double slit 1 station of 1–4, Millikan (qualitative) 1 station of 1–4, hot filament 1 station of 1–4, spectra 3 stations of 1–5. In about an hour a group can do two stations; plan the rotation with Fotoni so that as many students as possible measure Planck's constant, which the lesson after needs.</li>
+<li>Fotoni asks you to tell them if you want to use the short version of the photoelectric instruction. Its videos (photoelectric effect, 5:30, recommended before the visit; double slit, 7:25, to be watched before the visit) are linked on the material bank page: show the double-slit video in lesson 1 if a group will do that station.</li>
+<li>Students fill in the worksheet at the station, with units and uncertainties. Photograph the completed tables, or let students type them into a spreadsheet on their laptops before they leave.</li>
+</ul>
+<h2>Printing the worksheet</h2>
+<p>Print the worksheet from the separate file <code>docs/fy14/fotoni-worksheet.md</code> in the repository (also <code>fy14/fotoni-worksheet.md</code> in the project files): open it in a Markdown editor or viewer, export it as PDF and print one copy per student, leaving out the stations a group will not do. Check the print preview: the empty cells should be large enough to write in by hand. The section <em>During the visit: lab worksheet</em> on the page has the same tables and is meant for reading on screen or for typing results on a laptop; printing the page itself also prints the tasks around it, and its tables keep their narrow screen width.</p>
+<h2>Lesson 2, after the visit (75 minutes)</h2>
+<ul>
+<li><strong>0–15 min, Theory summary.</strong> Read <em>What the stations show</em> and the key idea; every group compares its own worksheet with it; <em>Back to your predictions</em>; the vocabulary match.</li>
+<li><strong>15–40 min, Apply: the fit.</strong> The formula and the worked example step by step; then each pair analyses its own photoelectric data in a spreadsheet (pairs without photoelectric data use the example table). The e/m task is optional.</li>
+<li><strong>40–50 min, Connect to modern physics.</strong> Groups of three: each student explains one station, then each writes the answer.</li>
+<li><strong>50–65 min, the report.</strong> Read <em>Writing a lab report in English</em>; put the report in order; each student writes the discussion of the report.</li>
+<li><strong>65–75 min, Check your understanding.</strong> Three checks individually, the explanation task and the summary. The French corner if time allows.</li>
+</ul>
+<p><strong>Fast pairs.</strong> The optional e/m task and the optional task on the spacing of the bands; a full fit for $e/m$ from their own table ($2U$ against $B^2r^2$, through the origin); a second discussion for another station.</p>
+<p><strong>Running out of time.</strong> In lesson 1, give the planning text as homework and keep the predictions and the safety match in class. In lesson 2, give the whole lab report (all seven parts) as homework and keep the fit, the discussion paragraph and the checks in class. The French corner can move to the next lesson or be done at home.</p>
+<h2>Preparation</h2>
+<ul>
+<li>Book the visit through Fotoni's booking instructions on the University of Helsinki pages; agree the stations and tell Fotoni which instruction versions you want.</li>
+<li>Print the worksheet (above). Have spreadsheets ready on the students' laptops for lesson 2 (scatter chart and linear trendline).</li>
+<li>Keep the predictions on the students' devices or on paper: the page keeps them in the browser of that device only.</li>
+</ul>
+<h2>Assessment</h2>
+<ul>
+<li>Written answers are self-assessed with the criteria shown after the student has written something. For a grade, use the same criteria.</li>
+<li><strong>Worksheet and analysis:</strong> complete tables with units in every heading and an uncertainty for each measured quantity; a graph with labelled axes and a fitted line; $h = e\,k$ with $\Delta h$ from the steepest and least steep lines; a percentage difference and a correct statement about agreement within the uncertainty.</li>
+<li><strong>Lab report (English):</strong> the seven parts in order; present tense for the theory, past tense for the method; numbers with units; at least two concrete sources of uncertainty, called random or systematic correctly; one improvement linked to a named source.</li>
+<li><strong>Modern physics:</strong> for two stations, the classical expectation and what the measurement showed instead; one correct link to fusion research or another application.</li>
+</ul>
+<h2>Common difficulties</h2>
+<ul>
+<li>Students confuse the uncertainty with a mistake, or think that a result different from the accepted value is wrong. <em>Common misconception</em> and checks 1 and 4 target this.</li>
+<li>The radius of the electron beam is easy to read wrongly (diameter or radius, parallax against the scale). Ask each group how it read $r$ and what $\Delta r$ is; the e/m task has the diameter mistake.</li>
+<li>Frequencies in $10^{14}\ \text{Hz}$ and slopes in $\text{V} \cdot \text{s}$: remind students to write the power of ten in the spreadsheet's units or to convert before fitting.</li>
+<li>The intercept of the photoelectric line is far from the points (the Fotoni instruction says so too): the graph needs a scale that reaches $f = 0$ if students want to read $W$.</li>
+<li>The double-slit station is mostly a demonstration with analysis; if students did not collect counts themselves, they use the counts the instructor shows, and say so in the report.</li>
+</ul>
+<h2>Extension ideas</h2>
+<ul>
+<li>Fit $2U$ against $B^2r^2$ for all six e/m readings and compare the uncertainty of the slope with that of one reading.</li>
+<li>Use the filament temperatures from the software and Wien's law to calculate $\lambda_\text{max}$, and compare with the peak of the measured curves. Why might they differ (the prism, the sensor's sensitivity)?</li>
+<li>Read about how ITER uses spectroscopy to measure its plasma, and present one diagnostic in English.</li>
+<li>A short oral report: each group presents its result $x \pm \Delta x$ in English to the class in one minute.</li>
+</ul></details></article><nav class="chapter-nav" aria-label="Chapters"><a class="prev" href="fy14-global-fusion-explorer.html" rel="prev"><span class="dir">Previous chapter</span><span class="name">Global Fusion Explorer</span></a><a class="next" href="fy14-fr-bonjour.html" rel="next"><span class="dir">Next chapter</span><span class="name">Bonjour ! Introducing yourself</span></a></nav>
+</main>
+<footer class="bottom"><span>Ruukkilabra · upper secondary school physics, LOPS 2019</span><a href="FY14.html">← FY14 module</a><a href="../../../index.html">← Back to the portfolio</a></footer>
+</div>
+<script src="../vendor/katex/katex.min.js"></script>
+<script>/* inline maths (NOTES §1; visual audit 2026-10-31): never broken after a multiplication dot ("1,7 ·" / "10⁻¹⁵ m": KaTeX allows a break after every operator, so the box after a dot is merged into the one before; and a short formula is not broken after "=" either ("Q =" / "cmΔT"): pieces are merged while the merged box stays at most 14 characters, so a long calculation still wraps at 360 px), and never parted from the punctuation around it (a formula without a break point is wrapped with a comma, full stop, colon or bracket next to it in one nowrap span; a longer one gets word joiners) */
+window.flGlueMath=function(root){var WJ='\u2060';(root||document.body).querySelectorAll('.katex').forEach(function(k){if(k.dataset.glued||k.closest('.katex-display,.sim-tex,#sim-root'))return;k.dataset.glued='1';var bs=k.querySelectorAll(':scope>.katex-html>.base');for(var i=bs.length-2;i>=0;i--){var last=bs[i].lastElementChild;while(last&&last.classList.contains('mspace'))last=last.previousElementSibling;if(last&&(last.classList.contains('mrel')||last.classList.contains('mbin')&&/[\u22c5\u00d7]/.test(last.textContent))&&(bs[i].textContent+bs[i+1].textContent).length<=14){while(bs[i+1].firstChild)bs[i].appendChild(bs[i+1].firstChild);bs[i+1].remove();}}var h=k.parentNode;if(!(h&&h.nodeName==='SPAN'&&!h.className&&h.childNodes.length===1))h=k;var n=h.nextSibling,p=h.previousSibling,a=n&&n.nodeType===3&&n.data.match(/^[,.;:!?)\]]+/),b=p&&p.nodeType===3&&p.data.match(/[(\[]$/);if(!a&&!b)return;if(k.querySelectorAll(':scope>.katex-html>.base').length===1){var w=document.createElement('span');w.className='math-glue';h.parentNode.insertBefore(w,h);if(b){p.data=p.data.slice(0,-1);w.appendChild(document.createTextNode(b[0]));}w.appendChild(h);if(a){n.data=n.data.slice(a[0].length);w.appendChild(document.createTextNode(a[0]));}}else{if(a)n.data=WJ+n.data;if(b)p.data=p.data+WJ;}});};</script>
+<script src="../vendor/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});flGlueMath(document.body)"></script>
+<script src="../lesson.js"></script><script src="../inquiry.js"></script><script src="../units/fy14/units.js"></script>
+</body></html>

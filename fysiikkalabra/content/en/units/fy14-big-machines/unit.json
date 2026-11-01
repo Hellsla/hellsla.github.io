@@ -1,0 +1,106 @@
+{
+ "id": "fy14-big-machines",
+ "course": "FY14",
+ "chapter": 5,
+ "order": 3,
+ "title": "Big machines and world politics: 1970s to 1985",
+ "description": "How new heating methods, superconducting magnets and the money that followed the 1973 oil crisis built PLT, TFTR, JET, JT-60 and T-15, and how Reagan and Gorbachev's Geneva summit of 1985 started ITER.",
+ "kind": "history",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Tokamak (Wikipedia): ohmic heating loses effect at about 20–30 million kelvin, neutral beam injection, radio-frequency heating, T-7 the first superconducting tokamak (1979), TFTR 1982, JET 1983, JT-60 1985",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Princeton Large Torus (Wikipedia): declared operational 20 December 1975, about 60 million degrees on 24 July 1978, Innsbruck conference August 1978, graphite limiter",
+   "url": "https://en.wikipedia.org/wiki/Princeton_Large_Torus",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Eubank et al., Neutral-beam-heating results from the Princeton Large Torus, Physical Review Letters 43, 270 (1979), abstract",
+   "url": "https://collaborate.princeton.edu/en/publications/neutral-beam-heating-results-from-the-princeton-large-torus/",
+   "checked": "2026-11-01",
+   "note": "2.4 MW of beam power; ion temperatures up to 6.5 keV."
+  },
+  {
+   "title": "OSTI: PLT and ISX neutral beam injectors (40 keV beams; four injectors for PLT)",
+   "url": "https://www.osti.gov/biblio/6688024",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "T-15 (reactor) (Wikipedia): superconducting magnets, first plasma 1988, Kurchatov Institute",
+   "url": "https://en.wikipedia.org/wiki/T-15_(reactor)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "1973 oil crisis (Wikipedia): embargo from October 1973 to March 1974 against countries that had supported Israel in the Yom Kippur War",
+   "url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fusion Power Associates: US fusion funding history (FY1973 40, FY1978 332, FY1984 469 million dollars)",
+   "url": "https://aries.pppl.gov/FPA/ARC11/fpn11-03.shtml",
+   "checked": "2026-11-01",
+   "note": "Then-year dollars, not adjusted for inflation."
+  },
+  {
+   "title": "Tokamak Fusion Test Reactor (Wikipedia): construction from 1980, operation from 1982, deuterium–tritium from December 1993, 10.7 MW in 1994",
+   "url": "https://en.wikipedia.org/wiki/Tokamak_Fusion_Test_Reactor",
+   "checked": "2026-11-01",
+   "note": "Wikipedia dates the funding to January 1975; PPPL writes that TFTR was approved in 1976. The unit says 'in the mid-1970s'."
+  },
+  {
+   "title": "PPPL: Tokamak Fusion Test Reactor, 1982–1997 (energy research after the 1973 oil shortages; approved in 1976)",
+   "url": "https://www.pppl.gov/posts/2026/tokamak-fusion-test-reactor-1982-1997",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Joint European Torus (Wikipedia): Culham chosen at the end of 1977 after a long debate, JET Joint Undertaking 1978, first plasma 25 June 1983",
+   "url": "https://en.wikipedia.org/wiki/Joint_European_Torus",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "JT-60 (Wikipedia): began operation on 8 April 1985 at Naka, Japan Atomic Energy Research Institute",
+   "url": "https://en.wikipedia.org/wiki/JT-60",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER (Wikipedia): Gorbachev's proposal at Geneva based on INTOR, Velikhov, Reykjavik 1986, Vienna March 1987, design phases, US withdrawal 1998 and return 2003, Cadarache 2005, agreement 21 November 2006, the 2024 baseline, cost estimates",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Ronald Reagan Presidential Library: Joint Soviet–United States Statement on the Summit Meeting in Geneva, 21 November 1985",
+   "url": "https://www.reaganlibrary.gov/archives/speech/joint-soviet-united-states-statement-summit-meeting-geneva",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Geneva Summit (1985) (Wikipedia): 19–21 November 1985, no breakthrough on arms control",
+   "url": "https://en.wikipedia.org/wiki/Geneva_Summit_(1985)",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER Newsline: Conceived in Geneva (the joint statement and Velikhov's role)",
+   "url": "https://www.iter.org/node/18046",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Mikhail Gorbachev (Wikipedia): General Secretary from 11 March 1985",
+   "url": "https://en.wikipedia.org/wiki/Mikhail_Gorbachev",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "CODATA 2018 (NIST): elementary charge and atomic mass constant",
+   "url": "https://physics.nist.gov/cuu/Constants/index.html",
+   "checked": "2026-11-01",
+   "note": "$e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$ (exact), $1\\ \\text{u} = 1.66053906660 \\cdot 10^{-27}\\ \\text{kg}$; the deuterium atom has the mass $2.014101778\\ \\text{u}$ (AME 2020), so $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$."
+  }
+ ]
+}

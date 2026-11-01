@@ -1,0 +1,27 @@
+{
+  "en": {
+    "tauko": "Pause",
+    "jatka": "Continue",
+    "aallonpituus": "Wavelength $\\lambda = {{l}}\\,\\text{nm}$",
+    "intensiteetti": "Intensity ${{i}}\\,\\%$",
+    "jannite": "Voltage $U = {{u}}\\,\\text{V}$",
+    "metalli": "Metal",
+    "m_cs": "caesium",
+    "m_k": "potassium",
+    "m_na": "sodium",
+    "m_zn": "zinc",
+    "nopeus": "Speed",
+    "hidas": "slow",
+    "normaali": "normal",
+    "nopea": "fast",
+    "selite": "Wavy packets are photons; blue dots with a white ring are electrons.",
+    "katodi": "$\\text{cathode}$",
+    "kerain": "$\\text{collector}$",
+    "uv": "$(\\text{UV})$",
+    "ei_elektroneja": "$\\text{no electrons}$",
+    "lukemat": "${f = {{f}} \\cdot 10^{14}\\,\\text{Hz}}$, ${E = hf = {{E}}\\,\\text{eV}}$, ${W = {{W}}\\,\\text{eV}}$",
+    "lukemat_ek": "${E_{\\text{k,max}} = hf - W = {{ek}}\\,\\text{eV}}$, <strong>${I = {{I}}\\,\\text{nA}}$</strong>",
+    "lukemat_ei": "${hf \\le W}$: no electrons leave, <strong>${I = {{I}}\\,\\text{nA}}$</strong>",
+    "ei_elektroneja2": "$\\text{leave the metal}$"
+  }
+}

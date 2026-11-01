@@ -1,0 +1,14 @@
+{"id": "fy14-fr-bonjour", "course": "FY14", "chapter": 10, "order": 1, "title": "Bonjour ! Introducing yourself",
+ "description": "Greet people, introduce yourself and choose between tu and vous: your first minute of French on a visit to ITER in Provence.",
+ "kind": "french", "minutes": 75, "subjects": ["french", "english"],
+ "sources": [
+  {"title": "ITER (Wikipedia)", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01", "note": "Built near the Cadarache research centre in southern France; headquarters Saint-Paul-lez-Durance; seven members: China, the EU, India, Japan, Korea, Russia, the United States."},
+  {"title": "ITER Organization: home page", "url": "https://www.iter.org/", "checked": "2026-11-01", "note": "The seven participating members."},
+  {"title": "ITER Organization: Visiting ITER", "url": "https://www.iter.org/about/visiting-iter", "checked": "2026-11-01", "note": "Visitor Centre with a belvedere over the platform; the site is about 35 km north of Aix-en-Provence; group visits booked weeks ahead; visitors at least 16 years old, under-18s with a parent or guardian."},
+  {"title": "Saint-Paul-lez-Durance (Wikipédia)", "url": "https://fr.wikipedia.org/wiki/Saint-Paul-lez-Durance", "checked": "2026-11-01", "note": "Commune in Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, home of the Cadarache centre and ITER."},
+  {"title": "Tutoiement et vouvoiement en français (Wikipédia)", "url": "https://fr.wikipedia.org/wiki/Tutoiement_et_vouvoiement_en_fran%C3%A7ais", "checked": "2026-11-01", "note": "Vous with strangers, tu among young people; moving from vous to tu is common, back is rare; tu is frequent in scientific and technical work."},
+  {"title": "salut (Wiktionnaire)", "url": "https://fr.wiktionary.org/wiki/salut", "checked": "2026-11-01", "note": "Familiar greeting, both hello and goodbye."},
+  {"title": "bonsoir (Wiktionnaire)", "url": "https://fr.wiktionary.org/wiki/bonsoir", "checked": "2026-11-01", "note": "Evening greeting, when meeting and when leaving."},
+  {"title": "Liaison (French) (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Liaison_(French)", "checked": "2026-11-01", "note": "Liaison between a subject pronoun and the verb is obligatory; silent final consonants."},
+  {"title": "French phonology (Wikipedia)", "url": "https://en.wikipedia.org/wiki/French_phonology", "checked": "2026-11-01", "note": "The uvular r; the nasal vowels."}
+ ]}

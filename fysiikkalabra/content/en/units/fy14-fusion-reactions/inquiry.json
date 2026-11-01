@@ -1,0 +1,411 @@
+{
+ "version": 1,
+ "contribution": "Completes chapter 3: the proton–proton chain, the Coulomb barrier and quantum tunnelling, the first laboratory fusion reactions (Oliphant, Harteck and Rutherford 1934, as a source), D–T fusion with the 3.5 MeV + 14.1 MeV share from momentum conservation in the interactive reaction diagram, energy scales of chemical and nuclear fuels, and why a reactor must differ from the Sun.",
+ "learn": [
+  "explain the proton–proton chain and the role of the Coulomb barrier and tunnelling.",
+  "calculate how the energy of D–T fusion is shared between the neutron and the alpha particle.",
+  "compare fusion in the Sun with fusion in a laboratory or reactor."
+ ],
+ "prior": [
+  "Fusion of light nuclei releases energy because the products are more tightly bound, and D–T fusion gives $Q = 17.6\\ \\text{MeV}$ (chapter *Mass defect and binding energy*)",
+  "A particle can tunnel through a barrier that it classically cannot cross (chapter *Waves, probability and quantum tunnelling*)",
+  "Momentum $p = mv$ is conserved in a collision, and $E_\\text{k} = \\frac{1}{2}mv^2$ (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "The centre of the Sun has a temperature of about $15$ million kelvin. ITER, the international fusion experiment under construction in the south of France (as of November 2026), plans to heat its fuel to about $150$ million kelvin, ten times hotter. That sounds strange: the Sun has been fusing hydrogen for $4.6$ billion years at a much lower temperature. And in 1920, when Eddington proposed fusion in the Sun, his critics said that even the Sun was far too cold for it.",
+   "question": "How can fusion happen at all, and why does a machine on Earth need so much more heat than the Sun?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: where the energy comes from",
+   "prompt": "In D–T fusion, $^{2}\\text{H} + {}^{3}\\text{H} \\to {}^{4}\\text{He} + \\text{n}$, the energy $Q = 17.6\\ \\text{MeV}$ is released (chapter *Mass defect and binding energy*). Why?",
+   "choices": [
+    {
+     "text": "Helium-4 is much more tightly bound than the fuel nuclei.",
+     "correct": true,
+     "feedback": "Right: $B/A$ climbs from $1.1$ and $2.8\\ \\text{MeV}$ to $7.1\\ \\text{MeV}$, so the products have less mass; the difference is $17.6\\ \\text{MeV}$."
+    },
+    {
+     "text": "The neutron is created from the energy of the collision.",
+     "feedback": "The neutron was already in the fuel: deuterium has one and tritium two. Nucleons are rearranged, not created."
+    },
+    {
+     "text": "The fuel nuclei collide very fast and keep that energy.",
+     "feedback": "The collision energy is only some $\\text{keV}$; the $17.6\\ \\text{MeV}$ comes from the mass defect of the more tightly bound helium-4."
+    }
+   ]
+  },
+  {
+   "id": "pred-barrier",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: over the barrier?",
+   "layout": "models",
+   "prompt": "Two nuclei must come within about $3\\ \\text{fm}$ to fuse, and their electric repulsion at that distance corresponds to about $500\\ \\text{keV}$. In the Sun's core, a typical nucleus has a kinetic energy of only about $2\\ \\text{keV}$. How can the Sun fuse hydrogen at all?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-key"
+   },
+   "choices": [
+    {
+     "text": "Its core must really be much hotter than astronomers think.",
+     "feedback": "Solar models, tested by measurements of the neutrinos from the core, give about $15.7$ million kelvin. The barrier is not climbed over; it is passed by tunnelling."
+    },
+    {
+     "text": "A few nuclei pass through the barrier without enough energy.",
+     "correct": true,
+     "feedback": "Right: **quantum tunnelling**. A nucleus behaves partly like a wave and has a small chance to appear on the other side of the barrier. The fastest nuclei are most likely to tunnel."
+    },
+    {
+     "text": "Gravity in the core squeezes the nuclei over the barrier.",
+     "feedback": "Gravity keeps the core dense and hot, but it is far too weak between two nuclei to beat their electric repulsion. Fusion happens by tunnelling."
+    },
+    {
+     "text": "The electrons around the nuclei cancel the repulsion.",
+     "feedback": "In the core the atoms are fully ionised, and electrons screen the charge only a little. The nuclei still repel; they fuse by tunnelling through the barrier."
+    }
+   ]
+  },
+  {
+   "id": "pred-share",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: who gets the energy?",
+   "prompt": "In D–T fusion, $17.6\\ \\text{MeV}$ is shared between the helium-4 nucleus and the neutron. The helium nucleus is about four times heavier. How is the energy shared?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-formula"
+   },
+   "choices": [
+    {
+     "text": "Equally: each product gets $8.8\\ \\text{MeV}$.",
+     "feedback": "Momentum decides the share: with equal momenta $p$, $E_\\text{k} = p^2/(2m)$ is larger for the lighter particle. The neutron gets $14.1\\ \\text{MeV}$, the helium nucleus $3.5\\ \\text{MeV}$."
+    },
+    {
+     "text": "The heavier helium nucleus gets most of it.",
+     "feedback": "The opposite: the products have equal momenta, so the lighter neutron moves four times faster and gets four times the kinetic energy, $14.1\\ \\text{MeV}$."
+    },
+    {
+     "text": "The lighter neutron gets most of it.",
+     "correct": true,
+     "feedback": "Right: the momenta are equal and opposite, and $E_\\text{k} = p^2/(2m)$, so the neutron gets about $4/5$ of the energy, $14.1\\ \\text{MeV}$, and the helium nucleus $3.5\\ \\text{MeV}$."
+    }
+   ]
+  },
+  {
+   "id": "pred-pp",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 3: why not copy the Sun?",
+   "prompt": "The Sun fuses ordinary hydrogen, and hydrogen is cheap on Earth. Why will fusion power plants not use the Sun's reaction?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-chain"
+   },
+   "choices": [
+    {
+     "text": "Its first step is extremely slow, even in the Sun.",
+     "correct": true,
+     "feedback": "Right: a proton must turn into a neutron, which needs the weak interaction. An average proton in the Sun waits about $9$ billion years. A machine needs a much faster reaction: D–T."
+    },
+    {
+     "text": "It gives too little energy per reaction to be useful.",
+     "feedback": "Four protons give $26.7\\ \\text{MeV}$, more than one D–T reaction. The problem is the rate: the first step is extremely slow, because it needs the weak interaction."
+    },
+    {
+     "text": "Ordinary hydrogen is too rare and too costly.",
+     "feedback": "Hydrogen is very common: every water molecule has two atoms. The problem is that the proton–proton reaction is extremely slow."
+    }
+   ]
+  },
+  {
+   "id": "oliphant-source",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigation 1: the first fusion experiment, 1934",
+   "text": "M. L. Oliphant, P. Harteck and Lord Rutherford, \"Transmutation Effects observed with Heavy Hydrogen\", letter to *Nature* 133, 413, dated 9 March 1934. What they reported, in our words:\n\n- They fired a beam of deuterons, accelerated by a high voltage, at compounds that contained deuterium.\n- Already at $20\\,000$ volts they detected fast protons. At $100\\,000$ volts the effects were too large for their amplifier and recorder to follow.\n- They found two groups of particles with equal numbers: fast protons and a group of slow, singly charged particles, which they explained as a new hydrogen nucleus of mass $3$.\n- They also found neutrons, which they explained by a second reaction that makes a helium nucleus of mass $3$.\n- Beams of ordinary protons on the same targets gave no comparable effect.\n- They wrote that \"it is too early to draw definite conclusions\".",
+   "question": {
+    "type": "choice",
+    "prompt": "Which conclusion is best supported by this evidence?",
+    "choices": [
+     {
+      "text": "Two deuterons can fuse and form nuclei of mass $3$.",
+      "correct": true,
+      "feedback": "Right: the products had mass $3$, the new isotopes tritium and helium-3, and only deuteron beams gave them. It is the first laboratory fusion of light nuclei made on purpose."
+     },
+     {
+      "text": "The experiment produced more energy than it used.",
+      "feedback": "Each reaction released much more energy than the deuteron brought, but only a tiny fraction of the beam fused. The experiment as a whole used far more energy than it released."
+     },
+     {
+      "text": "Protons fuse as easily as deuterons at these voltages.",
+      "feedback": "The proton beams gave *no* such effect on the same targets. Proton–proton fusion is extremely slow; deuterons fuse far more easily."
+     }
+    ]
+   }
+  },
+  {
+   "id": "reaction-text",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigation 2: inside a D–T reaction",
+   "text": "Test predictions 1 and 2. Step through the reaction with *Next step* and read each sentence aloud in your pair. Blue arrows show velocity $\\overline{v}$, red arrows force $\\overline{F}$. The arrows compare speeds within one step only; the line under the figure gives the real speeds.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-dt\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"reaction\", \"question\": \"Step through the reaction twice. Which forces act in each step? After the reaction, which product moves faster, and which carries more of the energy?\"}</script></div>"
+  },
+  {
+   "id": "language-support",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>to approach · to repel · to slow down · Coulomb barrier · strong force · to fuse · to break up · alpha particle · neutron · momentum · kinetic energy · to share · lighter · faster</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In the first step, …</li><li>Then the electric force …</li><li>When the nuclei are close enough, …</li><li>The neutron moves faster because …</li><li>The evidence from the diagram suggests that …</li></ul></div>"
+  },
+  {
+   "id": "reaction-describe",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Describe the process",
+   "prompt": "Discuss with a partner, then write a description of the D–T reaction in four or five steps, in your own words. Say what happens to the nuclei, which force wins at each moment, and how the energy is shared at the end.",
+   "model": "In the first step, a deuterium nucleus and a tritium nucleus move towards each other. Then the electric force pushes them apart, because both are positive, and they slow down: this is the Coulomb barrier. When the fastest nuclei are close enough, about $3 \\cdot 10^{-15}\\ \\text{m}$, they tunnel through the rest of the barrier, the strong force wins, and they fuse into a very short-lived helium-5 nucleus. It breaks up at once into a helium-4 nucleus and a neutron, which have less mass than the fuel, so $17.6\\ \\text{MeV}$ is released. The products fly apart with equal and opposite momenta, so the lighter neutron moves faster and carries $14.1\\ \\text{MeV}$, while the helium nucleus carries $3.5\\ \\text{MeV}$.",
+   "criteria": [
+    "The description is in time order, with linking words (first, then, when, finally).",
+    "It names the electric repulsion (Coulomb barrier) and the strong force at the right moments.",
+    "It says that the products have less mass, and gives $17.6\\ \\text{MeV}$.",
+    "It explains the share $14.1\\ \\text{MeV}$ and $3.5\\ \\text{MeV}$ with momentum or with the lighter neutron."
+   ]
+  },
+  {
+   "id": "theory-chain",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Chain"
+   ]
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "theory-formula",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Kaava"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-fr-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"repulsion that keeps nuclei apart\", \"passing a barrier without climbing it\", \"the nucleus of helium-4\", \"a particle with no charge\", \"the slow first step of the Sun\", \"a hot gas of nuclei and electrons\", \"making tritium from lithium\"], \"items\": [{\"text\": \"Coulomb barrier\", \"answer\": \"repulsion that keeps nuclei apart\", \"feedback\": \"About $0.5\\\\ \\\\text{MeV}$ for two hydrogen nuclei.\"}, {\"text\": \"quantum tunnelling\", \"answer\": \"passing a barrier without climbing it\", \"feedback\": \"A wave effect: Gamow, 1928.\"}, {\"text\": \"alpha particle\", \"answer\": \"the nucleus of helium-4\", \"feedback\": \"It carries $3.5\\\\ \\\\text{MeV}$ in D–T fusion.\"}, {\"text\": \"neutron\", \"answer\": \"a particle with no charge\", \"feedback\": \"Magnetic fields cannot hold it, so it leaves the plasma.\"}, {\"text\": \"proton–proton fusion\", \"answer\": \"the slow first step of the Sun\", \"feedback\": \"It needs the weak interaction.\"}, {\"text\": \"plasma\", \"answer\": \"a hot gas of nuclei and electrons\", \"feedback\": \"The next chapter is all about plasma.\"}, {\"text\": \"tritium breeding\", \"answer\": \"making tritium from lithium\", \"feedback\": \"The neutrons of D–T fusion can do it in the reactor wall.\"}], \"done\": \"You have the words of fusion.\"}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your three predictions with the source, the reaction diagram and the theory. Which of them would you change, and why?",
+   "predictions": [
+    "pred-barrier",
+    "pred-share",
+    "pred-pp"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "theory-lab",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Lab"
+   ]
+  },
+  {
+   "id": "lab-support",
+   "stage": "sovella",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>gravity · magnetic field · density · temperature · pressure · reaction rate · to hold (confine) · fuel · tritium · deuterium · plasma · beam · energy gain</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The main difference between the Sun and a reactor is …</li><li>The Sun can use a slow reaction because …</li><li>A reactor cannot …, so it must …</li><li>One limitation of a beam experiment is …</li><li>\"Hotter than the Sun\" does not mean …</li></ul></div>"
+  },
+  {
+   "id": "lab-vs-sun",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Compare: the Sun and a fusion reactor",
+   "prompt": "Discuss with a partner, then write three or four sentences of your own that answers the opening question: why must a fusion reactor on Earth be hotter than the centre of the Sun? Compare the fuel, the density, how the plasma is held and for how long. Also say what \"hotter than the Sun\" does *not* mean.",
+   "model": "The main difference between the Sun and a reactor is how the fuel is held. The Sun's gravity holds a huge, dense core, $150\\ \\text{g/cm}^3$, for billions of years, so it can use the very slow proton–proton reaction. A reactor cannot do this: its magnetic fields hold only a thin plasma, about a million times thinner than air, for seconds or less. So it must use the fastest reaction, deuterium–tritium, and make the nuclei so fast that many of them tunnel through the Coulomb barrier in that short time. That needs about $150$ million kelvin, ten times the temperature of the Sun's core. \"Hotter than the Sun\" refers only to the temperature: the Sun's core has a far higher density and pressure.",
+   "criteria": [
+    "The answer compares the fuels: slow proton–proton fusion in the Sun, fast D–T fusion in a reactor.",
+    "The answer compares the density and the confinement: gravity for billions of years against magnetic fields for a short time.",
+    "The answer links the higher temperature to the reaction rate (more nuclei tunnel through the barrier).",
+    "The answer says that only the temperature is higher, not the density or pressure.",
+    "The answer uses at least two sentence starters for comparing."
+   ]
+  },
+  {
+   "id": "scales-text",
+   "stage": "sovella",
+   "type": "text",
+   "optional": true,
+   "text": "Compare the energy released by chemical and nuclear fuels. The chart has a logarithmic axis: each step is ten times the one before.\n\n<div class=\"fx\" data-fx=\"reaction\" id=\"fx-fr-scales\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"part\": \"scales\", \"scales_mode\": \"kg\", \"scales_compare\": false, \"question\": \"Switch between *per kilogram* and *per reaction*. Roughly how many times more energy does $1\\\\ \\\\text{kg}$ of D–T fuel give than $1\\\\ \\\\text{kg}$ of coal? Then calculate it below.\"}</script></div>"
+  },
+  {
+   "id": "coal-equivalent",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How much coal is one kilogram of D–T fuel?",
+   "optional": true,
+   "prompt": "One kilogram of D–T fuel releases $3.37 \\cdot 10^{14}\\ \\text{J}$ by fusion, and one kilogram of anthracite coal releases $3.25 \\cdot 10^{7}\\ \\text{J}$ by burning. How many kilograms of coal give the same energy as one kilogram of D–T fuel?",
+   "answer": 10400000.0,
+   "unit": "kg",
+   "tolerance": 0.02,
+   "hints": [
+    "The same energy: $m_\\text{coal} \\cdot q_\\text{coal} = 1\\ \\text{kg} \\cdot q_\\text{DT}$.",
+    "Divide the two energies per kilogram.",
+    "$3.37 \\cdot 10^{14} : 3.25 \\cdot 10^{7} = 1.04 \\cdot 10^{7}$."
+   ],
+   "mistakes": [
+    {
+     "value": 9.64e-08,
+     "feedback": "You divided the wrong way round: coal gives *less* per kilogram, so you need *more* coal."
+    }
+   ],
+   "solution": "**Given:** $q_\\text{DT} = 3.37 \\cdot 10^{14}\\ \\text{J/kg}$, $q_\\text{coal} = 3.25 \\cdot 10^{7}\\ \\text{J/kg}$, $m_\\text{DT} = 1\\ \\text{kg}$\n\n**Find:** the mass of coal $m_\\text{coal}$ that releases the same energy\n\n**Principle:** Both fuels must release the same energy $E$; the energy is the mass times the energy per kilogram.\n\n**Formula:**\n\n$$m_\\text{coal} = \\frac{q_\\text{DT} \\cdot m_\\text{DT}}{q_\\text{coal}}$$\n\n**Unit conversions:** None: both energies are in $\\text{J/kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} m_\\text{coal} &= \\frac{3.37 \\cdot 10^{14}\\ \\text{J/kg} \\cdot 1\\ \\text{kg}}{3.25 \\cdot 10^{7}\\ \\text{J/kg}} \\\\ &= 1.04 \\cdot 10^{7}\\ \\text{kg} \\end{aligned}$$\n\n**Answer:** about $10^{7}\\ \\text{kg}$, ten thousand tonnes of coal, three significant figures as in the data.\n\n**Reasonableness:** A D–T reaction releases $17.6\\ \\text{MeV}$, while burning releases a few $\\text{eV}$ per atom: the ratio per reaction is millions, and so is the ratio per kilogram. Ten thousand tonnes of coal fill more than a hundred railway wagons."
+  },
+  {
+   "id": "pp-order",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Practice: the proton–proton chain",
+   "optional": true,
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-fr-pp\"><script type=\"application/json\">{\"prompt\": \"Put the steps of the proton–proton chain in the order in which they happen in the Sun.\", \"items\": [\"Two protons meet; one of them turns into a neutron, and a deuteron forms with a positron and a neutrino.\", \"The deuteron captures another proton and becomes helium-3, giving off a gamma-ray photon.\", \"The first two steps happen again, so that a second helium-3 nucleus forms.\", \"Two helium-3 nuclei fuse into helium-4 and give back two protons.\"], \"explain\": \"Four protons have become one helium-4 nucleus, and $26.7\\\\ \\\\text{MeV}$ has been released. The first step is the slow one.\"}</script></div>"
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "people",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "People"
+   ],
+   "optional": true,
+   "title": "Mark Oliphant"
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: the neutron's energy",
+   "prompt": "Why does the neutron get about $80\\ \\%$ of the energy of D–T fusion?",
+   "choices": [
+    {
+     "text": "Both products have the same momentum, and it is lighter.",
+     "correct": true,
+     "feedback": "Right: $E_\\text{k} = p^2/(2m)$ with the same $p$, so the lighter particle gets more: $14.1\\ \\text{MeV}$ against $3.5\\ \\text{MeV}$."
+    },
+    {
+     "text": "It has no charge, so no energy is lost to the field.",
+     "feedback": "Charge does not decide the share at the moment of the reaction. Momentum conservation does: equal momenta, so the lighter neutron gets more kinetic energy."
+    },
+    {
+     "text": "The neutron comes from tritium, which carries more energy.",
+     "feedback": "The energy comes from the mass defect of the whole reaction, and momentum conservation shares it: the lighter product gets more."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Representation: balance a reaction",
+   "prompt": "Complete the reaction from 1934: $^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\to \\,? + {}^{1}_{0}\\text{n}$",
+   "choices": [
+    {
+     "text": "$^{3}_{2}\\text{He}$",
+     "correct": true,
+     "feedback": "Right: nucleons $2 + 2 = 3 + 1$, charges $1 + 1 = 2 + 0$. This is helium-3, one of the two isotopes discovered in 1934."
+    },
+    {
+     "text": "$^{3}_{1}\\text{H}$",
+     "feedback": "The nucleons balance, $2 + 2 = 3 + 1$, but the charge does not: $1 + 1 = 2$, and a neutron has $0$, so the product needs $Z = 2$."
+    },
+    {
+     "text": "$^{4}_{2}\\text{He}$",
+     "feedback": "Count the nucleons: $2 + 2 = 4$ on the left, so with a neutron on the right the other product can have only $A = 3$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Lab and Sun: the temperature",
+   "prompt": "A newspaper says: \"ITER's plasma will be ten times hotter than the Sun, so it will be far more extreme than the Sun's core.\" Which correction is best?",
+   "choices": [
+    {
+     "text": "Only the temperature is higher; the Sun's core is far denser.",
+     "correct": true,
+     "feedback": "Right. The reactor plasma is about a million times thinner than air, while the Sun's core is $150\\ \\text{g/cm}^3$. The high temperature makes up for the low density and the short time."
+    },
+    {
+     "text": "The plasma will be cooler; the Sun's core is $150$ million kelvin.",
+     "feedback": "The Sun's core is about $15$ million kelvin; ITER plans about $150$ million kelvin. The temperature claim is right, but the density is far lower."
+    },
+    {
+     "text": "There is nothing to correct: ITER's plasma is more extreme.",
+     "feedback": "\"Extreme\" is only true for the temperature. The density and pressure of the Sun's core are far higher than in any reactor plasma."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Transfer: what the neutrons do",
+   "prompt": "In a D–T reactor, the plasma is held by magnetic fields. Explain what happens to the two products of the reaction, the alpha particle and the neutron, and why this matters for the design of a reactor.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The alpha particle is charged, so …</li><li>The neutron has no charge, so …</li><li>Because the neutron carries … of the energy, …</li><li>This means that the wall of the reactor must …</li></ul></div>",
+   "model": "The alpha particle is charged, so the magnetic field keeps it in the plasma, and its $3.5\\ \\text{MeV}$ heats the plasma. The neutron has no charge, so the magnetic field cannot hold it, and it flies out of the plasma with $14.1\\ \\text{MeV}$. Because the neutron carries about $80\\ \\%$ of the energy, the wall around the plasma must catch the neutrons and turn their energy into heat, which could be used to make electricity. This means that the wall must also stand the neutron radiation, and it can contain lithium to breed new tritium.",
+   "criteria": [
+    "The answer says that the charged alpha particle is held by the field and heats the plasma.",
+    "The answer says that the neutron is not held and leaves with most of the energy ($14.1\\ \\text{MeV}$, about $80\\ \\%$).",
+    "The answer draws a consequence for the reactor: a wall (blanket) that absorbs the neutrons, collects heat and/or breeds tritium.",
+    "The answer uses at least two sentence starters."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>ITER is being built at Saint-Paul-lez-Durance, next to the French research centre of Cadarache. The fuel there will be <span lang=\"fr\">le deutérium</span> and <span lang=\"fr\">le tritium</span>, and much of the energy will leave as <span lang=\"fr\">la chaleur</span>, heat. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-fr-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: fusion fuel\", \"phrases\": [{\"fr\": \"le deutérium\", \"en\": \"deuterium\", \"tip\": \"luh dö-tay-RYOM: *eu* is close to the Finnish *ö*, and *-ium* sounds like *yom*.\"}, {\"fr\": \"le tritium\", \"en\": \"tritium\", \"tip\": \"luh tree-SYOM: the *ti* before a vowel sounds like *sy*.\"}, {\"fr\": \"un neutron\", \"en\": \"a neutron\", \"tip\": \"uhn nö-TRON: the final *-on* is nasal.\"}, {\"fr\": \"la chaleur\", \"en\": \"heat\", \"tip\": \"la sha-LÖR: *ch* sounds like the English *sh*.\"}, {\"fr\": \"Le deutérium et le tritium fusionnent.\", \"en\": \"Deuterium and tritium fuse.\", \"tip\": \"*fusionner* = to fuse; the *-ent* at the end is silent.\"}]}</script></div>"
+  }
+ ]
+}

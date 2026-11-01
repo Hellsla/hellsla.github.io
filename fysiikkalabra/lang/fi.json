@@ -116,7 +116,10 @@
     "local_prepare": "Valmistaudu jo nyt",
     "local_prepare_lead": "Nämä jo julkaistut luvut tukevat opintojakson kokeellisia töitä.",
     "local_unavailable_note": "<strong>{{title}}</strong> on toistaiseksi saatavilla vain suomeksi.",
-    "lang_unavailable_home": "sivu ei vielä saatavilla, vie etusivulle"
+    "lang_unavailable_home": "sivu ei vielä saatavilla, vie etusivulle",
+    "local_status_building": "Rakenteilla",
+    "local_status_home_building": "Opintojakso rakenteilla",
+    "local_status_note_building": "Opintojakson oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat ja on tarkistettu. Laajuutta ja arviointia ei ole vielä vahvistettu."
   },
   "lesson": {
     "steps_nav": "Oppitunnin vaiheet",
@@ -1331,5 +1334,24 @@
     "split": "vaakasuorat voimat on piirretty eri mittakaavassa kuin pystysuorat;",
     "split_note": "vaaka- ja pystyvoimat eri mittakaavassa",
     "velocity": "nopeus {{dir}};"
+  },
+  "units": {
+    "home_count": {
+      "one": "{{n}} oppitunti saatavilla",
+      "other": "{{n}} oppituntia saatavilla"
+    },
+    "taught_in_en": "englanniksi",
+    "language_note_en": "Opintojakso opiskellaan englanniksi. Oppituntien sivut ovat sivuston englanninkielisessä osassa.",
+    "authors": "Tekijät",
+    "and": "ja",
+    "chapters": "Luvut ja oppitunnit",
+    "chapters_lead": "Opintojakson luvut järjestyksessä. Jokaisella luvulla on oma kysymyksensä, ja oppitunnit vastaavat siihen yhdessä.",
+    "credits": "Kuvat ja videot",
+    "credit_source": "lähde",
+    "sources": "Lähteet ja tarkistuspäivät",
+    "sources_lead": "Muuttuvat tiedot on tarkistettu näistä lähteistä ilmoitettuna päivänä.",
+    "checked": "tarkistettu {{date}}",
+    "teacher": "Opettajalle",
+    "notice_draft": "Tämä oppitunti on luonnos: sen tarkistukset ovat kesken, eikä sitä ole julkaistu."
   }
 }
