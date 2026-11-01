@@ -247,7 +247,7 @@ new p5((p) => {
     const big = ts(13);
     if (rects.wk && !rects.on && ph !== 'jaahdytys') {
       const xm = (X(V1) + X(V1 + rects.wk)) / 2, wpx = X(V1 + rects.wk) - X(V1);
-      if (wpx > ts(30)) lab('$W_\\text{k}$', xm, Y(P1 / 2) + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
+      if (wpx > ts(30)) lab(`$${__('wk')}$`, xm, Y(P1 / 2) + big * 0.36, 'c', big, COL.Wk.map((x) => x * 0.6));
     }
     if (done && P.B) {
       const hpx = Y(P.p2) - Y(P1), wpx = X(P.V2) - X(V1);
@@ -282,7 +282,7 @@ new p5((p) => {
     } else {
       row(y1, [[Q, COL.Q]]); row(y2, [[dU, COL.dU], [Wk, COL.Wk]]);
       lab(`$${tc('Q', COL.Q)}$`, BAR.x0 - 8, y1 + h / 2 + fz * 0.36, 'r', fz);
-      lab(`$${tc('\\Delta U', COL.dU)} + ${tc('W_\\text{k}', COL.Wk)}$`, BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
+      lab(`$${tc('\\Delta U', COL.dU)} + ${tc(__('wk'), COL.Wk)}$`, BAR.x0 - 8, y2 + h / 2 + fz * 0.36, 'r', fz);
     }
     lab(done ? __('kierros_2') : __('lammitys_2'), BAR.x0, y2 + h + fz + 8, 'l', fz);
   }

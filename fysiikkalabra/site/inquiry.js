@@ -170,7 +170,8 @@
         rows.forEach((r) => {
           const tr = document.createElement('tr');
           const td = (x, u) => `<td data-plain="${fi(x)}${u ? ' ' + u : ''}">${fiTex(x, u)}</td>`;   // plain text for the copied notes
-          tr.innerHTML = td(r.vary, unit(vary)) + measure.map((k) => td(r[k], unit(k))).join('');
+          const shown = (x) => (typeof x === 'string' && typeof window.__v === 'function' ? window.__v(x) : x);   // a body or material named in the page's language (sim "values")
+          tr.innerHTML = td(shown(r.vary), unit(vary)) + measure.map((k) => td(r[k], unit(k))).join('');
           tbody.appendChild(tr);
         });
         typeset(tbody);
