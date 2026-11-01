@@ -334,8 +334,17 @@ new p5((p) => {
     p.stroke(160, 172, 186, 160); p.strokeWeight(1); p.fill(255, 255, 255, 222);
     p.rect(x0 - 7, yTop, w + 14, lines.length * lh + 6, 7);
     lines.forEach((l, i) => lab(l[0], align === 'r' ? x : x, yTop + 3 + lh * (i + 0.72), align, fh, l[1] || INK));
+    return { x0: x0 - 7, x1: x0 + w + 7, y1: yTop + lines.length * lh + 6 };
   }
-  const panel = (lines, x, align, fh) => card(lines, x, align, fh, 14);
+  // top cards: the left one first; a right card that would touch it goes under it (narrow canvases)
+  let topLeft = null;
+  const panel = (lines, x, align, fh) => {
+    if (align !== 'r') { topLeft = card(lines, x, align, fh, 14); return; }
+    p.textSize(fh);
+    const w = Math.max(...lines.map((l) => p.textWidth(l[0])));
+    const clash = topLeft && x - w - 7 < topLeft.x1 + 8;
+    card(lines, x, align, fh, clash ? topLeft.y1 + 6 : 14); topLeft = null;
+  };
   const panelBottom = (lines, x, align, fh) => card(lines, x, align, fh, H - 14 - 6 - lines.length * fh * 1.5);
   // a label at an arrow tip, at the first offset where it overlaps nothing and stays inside the view
   function tag(s, x, y, col, fh) {
