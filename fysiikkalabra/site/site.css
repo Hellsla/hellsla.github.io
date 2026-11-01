@@ -367,18 +367,20 @@ li.ex-js>details.answer>summary,li.ex-js>details.solution>summary{display:none}
 li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin:0}
 @media print{.ex-head .ex-toggle{display:none}}
 /* the solution editor under an exercise (lesson.js 6; Abitti's own editor, loaded on the first click) */
-.pad-open,.pad-copy{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;margin:.1rem 0 .5rem}
-.pad-open:hover,.pad-copy:hover{background:var(--accent-soft)}
+.pad-open,.pad-copy,.pad-btn{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;margin:.1rem 0 .5rem}
+.pad-open:hover,.pad-copy:hover,.pad-btn:hover{background:var(--accent-soft)}
 .pad-open[aria-expanded=true]{background:var(--accent-soft)}
 .pad{margin:0 0 .8rem}
 .pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);font-family:var(--sans);overflow-wrap:anywhere;scroll-margin-top:9rem}
 .pad .rich-text-editor:focus{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
 .pad .rich-text-editor img{max-width:100%;vertical-align:middle}
 .pad .rich-text-editor-toolbar-root>div{max-width:100vw;overflow-x:auto;overscroll-behavior-x:contain}   /* Abitti's toolbar is fixed to the top of the window; on a phone it scrolls sideways */
-.pad-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .8rem;margin-top:.5rem}.pad-tools .pad-copy{margin:0}
+.pad-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .8rem;margin-top:.5rem}.pad-tools .pad-copy,.pad-tools .pad-btn{margin:0}
 .pad-status{margin:0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-status[data-state=ok]{color:var(--accent-deep);font-weight:600}.pad-status[data-state=no]{color:#8a3b1a}
 .pad-note{margin:.3rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
-@media print{.pad-open,.pad-tools,.pad-note,.pad .rich-text-editor-toolbar-root{display:none!important}}
+.pad-save{margin:.3rem 0 0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-save[data-state=ok]{color:var(--accent-deep)}.pad-save[data-state=no]{color:#8a3b1a;font-weight:600}
+.pad-saved{margin:.4rem 0 0}.pad-saved>summary{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}.pad-saved .pad-tools{margin-top:.3rem}
+@media print{.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */
 @media print{
