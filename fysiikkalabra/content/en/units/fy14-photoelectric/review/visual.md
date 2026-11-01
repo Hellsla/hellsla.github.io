@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b0acda37ffbeec0d
+CONTENT-HASH: 416657015f0d3d08
 
 ## Blocking
 (none) All four earlier blocking findings are resolved:
@@ -21,3 +21,5 @@ Re-check for b0acda37ffbeec0d (commits 4ec672e4 and ba143d0c): I rebuilt the uni
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
+
+Re-check 2026-11-01: the "Find the error" aligned block now fits at 360/390 px with no overflow or KaTeX errors.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 28edfef6c272a14b
+CONTENT-HASH: edfd37cb96fa903e
 
 Re-review after commit ba3f91b8 (fix log in `review/developer.md`). I judged the full diff of `unit.md`, `inquiry.json`, `teacher.md` and `figures.py` against the previous report.
 
@@ -31,3 +31,5 @@ None open. The oil-drop sentence (Evidence and `stations-match`) now credits Mil
 ## Shared issues
 
 None new. Still open from the developer report: the pilot `fy14-photoelectric` says Fotoni uses a mercury lamp, but Fotoni's instruction uses LEDs.
+
+Re-check 2026-11-01: typography-only change (braces removed around the inline $B^2r^2 \approx 2.30 \cdot 10^{-9}$ formula in hint 3 so it can wrap); physics, numbers and LaTeX unchanged and valid.

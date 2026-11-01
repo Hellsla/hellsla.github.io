@@ -349,7 +349,7 @@
    "type": "choice",
    "title": "Find the error",
    "optional": true,
-   "prompt": "Light of wavelength $500\\ \\text{nm}$ falls on caesium, $W = 2.14\\ \\text{eV}$. A student writes:\n\n$$E = \\frac{hc}{\\lambda} = 3.97 \\cdot 10^{-19}\\ \\text{J}$$\n\n$$\\begin{aligned} E_{\\text{k,max}} &= E - W \\\\ &= 3.97 - 2.14 = 1.83\\ \\text{eV} \\end{aligned}$$\n\nWhere is the error?",
+   "prompt": "Light of wavelength $500\\ \\text{nm}$ falls on caesium, $W = 2.14\\ \\text{eV}$. A student writes:\n\n$$E = \\frac{hc}{\\lambda} = 3.97 \\cdot 10^{-19}\\ \\text{J}$$\n\n$$\\begin{aligned} E_{\\text{k,max}} &= E - W \\\\ &= 3.97 - 2.14 \\\\ &= 1.83\\ \\text{eV} \\end{aligned}$$\n\nWhere is the error?",
    "choices": [
     {
      "text": "The photon energy is in joules, but the work function is in electronvolts.",

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 28edfef6c272a14b
+CONTENT-HASH: edfd37cb96fa903e
 
 ## Blocking
 (none) The three earlier blocking findings are resolved:
@@ -30,3 +30,5 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 ## Shared issues
 1. `templates/site.css` `@media print`: when a page is printed, its tables keep their screen width and empty rows are short. This no longer blocks this unit, because printing goes through the md file.
 2. `scripts/inquiry.py`: the criteria box links to `#exercises`, which a unit without exercises does not have.
+
+Re-check 2026-11-01: hint 3 $B^2r^2$ formula now wraps at 360/390 px without overflow (no KaTeX errors); minor nit: at 360 px the closing full stop wraps onto its own line.
