@@ -650,7 +650,7 @@ t = \frac{-v_0 + \sqrt{v_0^2 + 2a\,\Delta x}}{a}
 **Järkevyys.** Nopeus kasvaa tasaisesti, joten keskinopeus on alku- ja loppunopeuden keskiarvo $(4{,}0\,\text{m/s} + 8{,}72\,\text{m/s}) : 2 \approx 6{,}36\,\text{m/s}$. Lasketaan matka: $6{,}36\,\text{m/s} \cdot 9{,}44\,\text{s} \approx 60\,\text{m}$. Se on mäen pituus. Loppunopeus $8{,}7\,\text{m/s} \approx 31\,\text{km/h}$ on alamäessä tavallinen pyöräilyvauhti.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heitetty pallo on lakipisteessä hetken paikallaan. Sen nopeus muuttuu silti koko ajan. Juuri ennen lakipistettä pallo liikkuu ylöspäin, ja heti sen jälkeen alaspäin. Kiihtyvyys on koko lennon ajan $g = 9{,}81\,\text{m/s}^2$ alaspäin.
+Moni ajattelee, että kiihtyvyys on nolla aina, kun nopeus on nolla. Ylös heitetty pallo on lakipisteessä hetken paikallaan. Sen nopeus muuttuu silti koko ajan. Juuri ennen lakipistettä pallo liikkuu ylöspäin, ja heti sen jälkeen alaspäin. Kun ilmanvastus on pieni, kiihtyvyys on koko lennon ajan $g = 9{,}81\,\text{m/s}^2$ alaspäin.
 
 Toinen virhe on ajatella, että negatiivinen kiihtyvyys on aina hidastumista. Vauhti pienenee vain, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset. Kolmas virhe on ajatella, että raskas kappale putoaa nopeammin kuin kevyt. Kun ilmanvastus on pieni, molemmat putoavat samalla kiihtyvyydellä.
 
