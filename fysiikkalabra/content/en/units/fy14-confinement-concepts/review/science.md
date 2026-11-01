@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eeec805ba4f919ad
+CONTENT-HASH: 19e029c637aecc7b
 
 Re-review of commit cf5a329b. Both blocking findings are fixed. The Inertial section now says "released more energy than the laser energy delivered to its target". The misconception gives LLNL's working definition ($G > 1$ on the target) and the physical one (the alpha particles heat the fuel faster than it loses heat). The 2024 table row is marked as an estimate, and the shot rate is dated (2014).
 
@@ -12,3 +12,6 @@ None.
 ## Checked
 - Re-read: the Inertial paragraph, the misconception, pred-nif feedback, the nif-data table and source note, problems-match (now optional, with the 2014 shot rate), find-error, check-1 and check-3 (rebalanced, correct answers unchanged, distractors wrong with correct feedback). The Z-pinch sentence "parallel currents attract" is correct.
 - All numbers from the first review still hold: $G = 1.54$, about 1 % of the electricity, 4.13 for 7 April 2025, and a needed gain of 144. Company claims are still labelled and dated, and the target gain is still kept apart from wall-plug electricity throughout.
+
+## Re-check 2026-11-01: photographs
+NIF (192 lasers, ignition in December 2022) is correct. Fixed: the alt said "a worker inside" the target chamber, but no person is in the image. The alt now describes the blue-lit chamber wall and the pointed instrument. The photos.json alt still has the old wording. CC BY-SA 3.0; credit matches.

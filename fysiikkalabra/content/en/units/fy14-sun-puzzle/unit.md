@@ -77,6 +77,8 @@ m(^{4}\text{He}) &= 4.002603\ \text{u}
 ```
 About $0.71\ \%$ of the mass disappears, and by $E = \Delta m \cdot c^2$ it must leave as energy. Eddington argued that a star is "drawing on some vast reservoir of energy", which "can scarcely be other than the sub-atomic energy". Turning hydrogen into helium, he showed, would easily keep the Sun shining for billions of years.
 
+<figure class="unit-photo"><img src="units/fy14/pics/aston.jpg" alt="Black-and-white portrait photograph of Francis William Aston, a man with a moustache wearing a suit." width="1164" height="1600" loading="lazy"><figcaption>Francis Aston (1877–1945) built the mass spectrograph and measured that a helium atom is slightly lighter than four hydrogen atoms, the clue to fusion energy. <span class="photo-credit">Photo: Bain News Service, publisher, public domain, via Wikimedia Commons</span></figcaption></figure>
+
 Eddington could not say *how* the protons fuse: by classical physics, the Sun's core was much too cold for them to overcome their electric repulsion. George Gamow explained alpha decay with quantum tunnelling in 1928; in 1929 Robert Atkinson and Fritz Houtermans applied tunnelling to stars, and in 1938–1939 Hans Bethe worked out the reactions. That is the next unit.
 
 ## Formula: The lifetime of an energy source
@@ -181,7 +183,7 @@ t &= \frac{1.27 \cdot 10^{44}\ \text{J}}{3.83 \cdot 10^{26}\ \text{J/s}} \\
 
 ### Arthur Eddington (1882–1944)
 
-<!-- photo: arthur-eddington -->
+<figure class="unit-photo"><img src="units/fy14/pics/eddington.jpg" alt="Black-and-white portrait photograph of Arthur Eddington, a man in a suit and tie." width="1164" height="1600" loading="lazy"><figcaption>Arthur Eddington (1882–1944) suggested in 1920 that the Sun gets its energy by turning hydrogen into helium. <span class="photo-credit">Photo: Bain News Service, publisher, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Arthur Stanley Eddington was an English astronomer, born in Kendal, and from 1913 a professor at the University of Cambridge. In 1919 he led the expedition to the island of Príncipe that measured how the Sun bends starlight during an eclipse, an early test of Einstein's general relativity. In his 1920 address in Cardiff he proposed that stars shine by turning hydrogen into helium, years before anyone could explain how. His book *The Internal Constitution of the Stars* (1926) trained a generation of astrophysicists.
 

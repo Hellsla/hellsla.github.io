@@ -255,9 +255,11 @@ Most of the ordinary matter that we can see in the universe is plasma, because *
 
 On Earth, natural plasma is rare and short-lived. In a **lightning** flash a current of tens of kiloamperes heats a narrow channel of air to about $30\ 000\ ^\circ\text{C}$, and the air becomes a glowing plasma for a fraction of a second.
 
+<figure class="unit-photo"><img src="units/fy14/pics/lightning.jpg" alt="Colour photograph of a bright lightning bolt from a cloud to the ground at night." width="1600" height="900" loading="lazy"><figcaption>A lightning strike. The channel of the bolt is a short-lived plasma. <span class="photo-credit">Photo: Rollingskyphoto, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
+
 The **northern lights** (aurora borealis) start in space. The solar wind, a plasma that flows out from the Sun, disturbs the Earth's magnetic field. Electrons of a few kiloelectronvolts follow the field lines down towards the polar regions. At heights of about $100\text{–}150\ \text{km}$ they hit atoms and molecules of the air and ionise or excite them. Oxygen gives off green light ($557.7\ \text{nm}$) and, higher up, red light; nitrogen gives blue and violet light.
 
-<!-- photo: aurora-lapland -->
+<figure class="unit-photo"><img src="units/fy14/pics/aurora.jpg" alt="Colour photograph of green northern lights over the Saana fell in Finnish Lapland at night." width="1600" height="900" loading="lazy"><figcaption>Northern lights over Saana fell in Kilpisjärvi, Finland. Charged particles from the Sun follow Earth's magnetic field and make oxygen and nitrogen glow. <span class="photo-credit">Photo: WikiLucas00, CC BY-SA 4.0, via Wikimedia Commons</span></figcaption></figure>
 
 The aurora appears most often in a ring-shaped band around the magnetic pole, the **auroral oval**, about $2500\ \text{km}$ from the pole. Finnish Lapland lies under it: in the Kilpisjärvi–Utsjoki area northern lights can be seen on about three clear nights out of four, but in Helsinki only on about one night a month (Finnish Meteorological Institute).
 

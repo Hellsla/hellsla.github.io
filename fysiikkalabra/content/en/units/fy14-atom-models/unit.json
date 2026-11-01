@@ -63,5 +63,23 @@
    "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
    "checked": "2026-11-01"
   }
+ ],
+ "media": [
+  {
+   "file": "units/fy14/pics/rutherford.jpg",
+   "title": "Ernest Rutherford",
+   "creator": "Bain News Service, publisher",
+   "source": "https://commons.wikimedia.org/wiki/File:Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+   "file": "units/fy14/pics/bohr.jpg",
+   "title": "Niels Bohr around 1922",
+   "creator": "AB Lagrelius & Westphal",
+   "source": "https://commons.wikimedia.org/wiki/File:Niels_Bohr.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  }
  ]
 }

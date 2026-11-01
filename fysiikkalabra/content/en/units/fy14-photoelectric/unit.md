@@ -207,13 +207,13 @@ You will do this measurement yourself with a real photocell and LEDs of differen
 
 ### Max Planck (1858–1947)
 
-<!-- photo: max-planck -->
+<figure class="unit-photo"><img src="units/fy14/pics/planck.jpg" alt="Black-and-white portrait photograph of Max Planck, an elderly man with a bald head and round glasses." width="1288" height="1600" loading="lazy"><figcaption>Max Planck (1858–1947) introduced the idea of energy quanta in 1900 to explain blackbody radiation. Photographed in Berlin in 1933. <span class="photo-credit">Photo: Unknown author, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Max Planck was a German theoretical physicist. In 1900 he found a new law for the radiation of hot objects, and on 14 December 1900 he presented its derivation to the German Physical Society. To derive it, he had to assume that energy is exchanged in packets of size $hf$. Planck saw this as a mathematical step, not as a statement about light itself, and at first he rejected Einstein's light quanta. Still, his constant $h$ became the starting point of quantum physics. He received the Nobel Prize in Physics for 1918 for his discovery of energy quanta.
 
 ### Albert Einstein (1879–1955)
 
-<!-- photo: albert-einstein -->
+<figure class="unit-photo"><img src="units/fy14/pics/einstein.jpg" alt="Black-and-white photograph of Albert Einstein in a suit, standing at a desk in front of a blackboard." width="1218" height="1600" loading="lazy"><figcaption>Albert Einstein (1879–1955) explained the photoelectric effect with light quanta in 1905. Photograph by Ferdinand Schmutzer, Vienna, 1921. <span class="photo-credit">Photo: Ferdinand Schmutzer, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Albert Einstein was born in Ulm, Germany. In 1905 he worked as an examiner at the Swiss patent office in Bern and did physics in his free time. In March 1905 he sent a paper to the journal *Annalen der Physik*. It proposed that light itself consists of energy quanta and predicted the law ${E_{\text{k,max}} = hf - W}$. In the same year he also published special relativity. His Nobel Prize in Physics for 1921, presented in 1922, was "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect".
 

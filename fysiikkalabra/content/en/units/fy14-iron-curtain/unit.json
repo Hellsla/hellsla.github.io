@@ -71,5 +71,8 @@
    "checked": "2026-11-01",
    "note": "$k_\\text{B} = 1.380649 \\cdot 10^{-23}\\ \\text{J/K}$ and $e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$; the unit rounds them to four significant figures."
   }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/artsimovich.jpg", "title": "Lev Artsimovich at the Kurchatov Institute, 1967", "creator": "В. Савостьянов, Е. Кассин", "source": "https://commons.wikimedia.org/wiki/File:Artsimovich_1967.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"}
  ]
 }

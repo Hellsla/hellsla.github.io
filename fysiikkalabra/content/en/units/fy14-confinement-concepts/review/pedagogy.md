@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eeec805ba4f919ad
+CONTENT-HASH: 19e029c637aecc7b
 
 Pedagogy re-review of fy14-confinement-concepts (2026-11-01), after "Fixes after review" (commit cf5a329b). Rebuilt; I read inquiry.json and unit.md again.
 
@@ -22,3 +22,6 @@ None.
 - Word bank and starters before both argue tasks.
 - The worked example is staged, and the numeric tasks have full solutions.
 - teacher.md has plans for fast pairs and for running out of time.
+
+## Re-check 2026-11-01: photographs
+NIF photo between the hohlraum paragraph and the 5 December 2022 paragraph; the NIF prediction and data tasks come earlier, and the caption only anticipates the next paragraph. Does not split the icf or energy figure from its text. No lesson ids, no ×, British spelling.

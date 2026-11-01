@@ -372,7 +372,7 @@ B &= 0.030377\ \text{u} \cdot 931.5\ \text{MeV/u} \\
 
 ### Lise Meitner (1878–1968)
 
-<!-- photo: lise-meitner -->
+<figure class="unit-photo"><img src="units/fy14/pics/meitner.jpg" alt="Black-and-white photograph of Lise Meitner, an older woman in a dark jacket and white blouse, sitting in front of bookshelves with a book in her hands." width="960" height="1255" loading="lazy"><figcaption>Lise Meitner (1878–1968) explained nuclear fission together with Otto Frisch in 1939, using the idea of mass defect and $E = mc^2$. <span class="photo-credit">Photo: Harris &amp; Ewing, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Lise Meitner was an Austrian physicist who worked for about thirty years in Berlin with the chemist Otto Hahn. In July 1938 she had to flee from Nazi Germany and moved to Sweden. In December Hahn wrote to her that uranium hit by neutrons gave barium, a much lighter element. Over Christmas 1938 Meitner and her nephew Otto Frisch worked out that the uranium nucleus had split in two, and with $E = \Delta m \cdot c^2$ they estimated about $200\ \text{MeV}$ per split. The Nobel Prize in Chemistry for 1944 went to Hahn alone, which many scientists see as unjust. Element 109, meitnerium, is named after her.
 

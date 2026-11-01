@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a8503bb6d2f4c8b
+CONTENT-HASH: 4d4c220db142d2dd
 
 ## Blocking
 (none) The earlier blocking finding is fixed: the feedback and the "Find the error" prompt now use curly quotes. The toroidal figure's radius dots are larger and easy to find at 390.
@@ -20,3 +20,7 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 ## Shared issues
 - Known: raw select keys and true/false in experiment tables; the unit repeats in the initial-state line.
 - `assets/units/fy14/fx/reactors.js`: the stellarator legend swatch and the same-green layers.
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- W7-X coil and WEST chamber fine; at 360 and 768 px the caption wraps inside 'Wendelstein 7-X' ("7-" / "X"), cosmetic only.

@@ -93,6 +93,8 @@ Facts about a project under construction change. The table compares ITER's own o
 | Members | seven; the UK through Euratom | seven; the UK has left, Switzerland is back through Europe (2026) |
 | Director-General | Bernard Bigot | Pietro Barabaschi (since 2022) |
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-tokamak-pit.jpg" alt="Colour photograph of the concrete ITER tokamak building under construction with cranes." width="1600" height="1030" loading="lazy"><figcaption>The ITER tokamak complex under construction in April 2018. The tokamak itself is assembled inside the central building. <span class="photo-credit">Photo: Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>
+
 Construction has also moved on elsewhere in the machine: in June 2026 all six modules of the central solenoid were stacked.
 
 Some things have **not** changed: ITER's scientific goal ($Q = 10$, $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating), the site at Cadarache, the seven Members, and the physics of fusion. An article from 2018 that reported the plan of 2018 was correct at the time; a reader in 2026 must update the dates, the costs and the construction status.

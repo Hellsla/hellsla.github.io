@@ -50,6 +50,8 @@ In 1909 Hans Geiger and the 20-year-old student Ernest Marsden worked in Ernest 
 
 Most alpha particles went through the foil and were turned aside by only a small angle. But a few bounced back: from a thin platinum foil, about one alpha particle in 8000 was turned through more than $90^\circ$. Nobody had expected this. Rutherford later said that it was "almost as incredible as if you fired a 15-inch shell at a piece of tissue paper and it came back and hit you".
 
+<figure class="unit-photo"><img src="units/fy14/pics/rutherford.jpg" alt="Black-and-white portrait photograph of Ernest Rutherford, a man with a moustache wearing a suit." width="1185" height="1600" loading="lazy"><figcaption>Ernest Rutherford (1871–1937) discovered the atomic nucleus in 1911 from the scattering of alpha particles by gold foil. <span class="photo-credit">Photo: Bain News Service, publisher, public domain, via Wikimedia Commons</span></figcaption></figure>
+
 In 1911 Rutherford explained the result. Almost all the mass and all the positive charge of an atom sit in a tiny **nucleus** at its centre. An alpha particle that passes far from a nucleus hardly feels it. Only the rare one that comes very close is pushed back by the strong electric repulsion. The figure shows such paths near one gold nucleus, to scale.
 
 <svg data-fig="scatter" viewBox="0 0 600 420" role="img" aria-label="Drawing to scale of alpha particles that move from left to right past one gold nucleus, a small red dot in the middle. Each path starts at a different distance b from the line through the centre of the nucleus. Paths that start far from the line bend only a little. Paths closer to the line bend more, and the closest ones turn back towards the left. A scale bar shows 50 femtometres. The whole atom would be about 600 times wider than this drawing." style="max-width:100%;font-size:24px">
@@ -251,7 +253,7 @@ Ernest Marsden was born in Lancashire, England. In 1909 he was a 20-year-old und
 
 ### Niels Bohr (1885–1962)
 
-<!-- photo: niels-bohr -->
+<figure class="unit-photo"><img src="units/fy14/pics/bohr.jpg" alt="Black-and-white portrait photograph of Niels Bohr as a young man in a suit and tie." width="1138" height="1600" loading="lazy"><figcaption>Niels Bohr (1885–1962) proposed in 1913 that electrons in atoms occupy fixed energy levels. He received the Nobel Prize in Physics in 1922. <span class="photo-credit">Photo: AB Lagrelius &amp; Westphal, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Niels Bohr was born and died in Copenhagen. After his doctorate he worked with Rutherford in Manchester in 1912, and back in Copenhagen he published his model of the atom in three papers in 1913. His institute in Copenhagen, opened in 1921, became a meeting place for the young physicists who built quantum mechanics. He received the Nobel Prize in Physics in 1922 "for his services in the investigation of the structure of atoms and of the radiation emanating from them". Bohr linked Rutherford's nucleus with Planck's quanta.
 

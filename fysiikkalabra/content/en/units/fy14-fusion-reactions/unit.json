@@ -19,5 +19,8 @@
   {"title": "ITER, 'The Tokamak': plasma volume 840 m³, 500 MW of fusion power (planned)", "url": "https://www.iter.org/node/2304", "checked": "2026-11-01"},
   {"title": "AME2020 atomic masses (IAEA Atomic Mass Data Center) and CODATA 2018 constants (NIST): Q-values of the pp chain and of D–T, nuclear masses of ⁴He and the neutron", "url": "https://www-nds.iaea.org/amdc/", "checked": "2026-11-01"},
   {"title": "Heat of combustion (Wikipedia): anthracite 32.5 MJ/kg, methane 50.0 MJ/kg (energy scales)", "url": "https://en.wikipedia.org/wiki/Heat_of_combustion", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/oliphant.jpg", "title": "Mark Oliphant in 1941", "creator": "Donald Cooksey, Lawrence Berkeley National Laboratory", "source": "https://commons.wikimedia.org/wiki/File:Sir_Mark_L._Oliphant%2C_1941.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
  ]
 }

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9aa351a8af4c0779
+CONTENT-HASH: 98884cb62e662452
 
 Pedagogy re-review of fy14-atom-models (2026-11-01), after the "Fixes after review" in review/developer.md (commit cdc675d6). I rebuilt the page and tested it in Playwright at 390 px.
 
@@ -27,3 +27,6 @@ None.
 
 ## Shared issues
 - `templates/inquiry.js` §1 (unchanged): a theory section counts as seen once any pixel of it enters the viewport. This unit is not affected.
+
+## Re-check 2026-11-01: photographs
+Edited: the Rutherford portrait sat between "The figure shows such paths … to scale" and the scatter drawing, splitting the figure from its text; moved it before "In 1911 Rutherford explained the result". It now follows the predictions and does not answer `foil-read`. Bohr portrait in People is fine. No lesson ids, no ×, British spelling.

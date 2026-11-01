@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 46ad737ab67de926
+CONTENT-HASH: 222bf8240799daec
 
 Science re-review, 2026-11-01, of commit c6532e4f.
 
@@ -22,3 +22,6 @@ The earlier `iter.json` points are all fixed:
 - the power figures now come from iter.org, with the Power supply page cited;
 - the 2034 entry now says "a more complete machine";
 - the cryopump text and hint now say "lower (divertor) port", which matches iter.org.
+
+## Re-check 2026-11-01: photographs
+The text says the poloidal field coils shape the plasma and hold it in place, and the caption matches. The image shows a large ring coil on a winding platform in the on-site factory hall. CC BY 4.0; credit matches.

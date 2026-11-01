@@ -83,5 +83,8 @@
    "url": "https://en.wikipedia.org/wiki/Mega_Ampere_Spherical_Tokamak",
    "checked": "2026-11-01"
   }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/nif.jpg", "title": "NIF target chamber", "creator": "Lawrence Livermore National Security", "source": "https://commons.wikimedia.org/wiki/File:National_Ignition_Facility%27s_target_chamber.jpg", "licence": "CC BY-SA 3.0", "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"}
  ]
 }

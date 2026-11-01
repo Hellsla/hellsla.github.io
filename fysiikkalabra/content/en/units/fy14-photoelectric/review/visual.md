@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 416657015f0d3d08
+CONTENT-HASH: 7b8cdb8f6d779460
 
 ## Blocking
 (none) All four earlier blocking findings are resolved:
@@ -23,3 +23,7 @@ Re-check for b0acda37ffbeec0d (commits 4ec672e4 and ba143d0c): I rebuilt the uni
 illustrations 4 · typography 4 · English 4 · accessibility 4
 
 Re-check 2026-11-01: the "Find the error" aligned block now fits at 360/390 px with no overflow or KaTeX errors.
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Planck and Einstein portraits in the optional box are capped at 352 px tall and fit a phone screen with caption; at 768/1280 px the portrait is centred and narrower than its full-width caption (CSS polish, not blocking).

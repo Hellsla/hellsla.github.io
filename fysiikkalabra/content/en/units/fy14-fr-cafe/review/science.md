@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b1710febe7eb7638
+CONTENT-HASH: d2bb84b94122e667
 
 Science, fact and French-accuracy re-review of fy14-fr-cafe, 2026-11-01 (HEAD 63a494f6).
 
@@ -17,3 +17,6 @@ None.
 
 ## Checked
 The new pred-bill item has exactly one correct option, and its new distractor (go to the kitchen) is really wrong. The French on the four `fold` role cards is correct: *Désolé, il n'y a plus de croissants*, *Qu'est-ce qu'il y a dans le croque-monsieur ?*, *Ah, je ne mange pas de viande. Alors, je vais prendre …*, *Désolé, seulement en espèces*, *Je vous conseille la tarte aux pommes*. The check 1 distractor *Il y a combien de quiches ?* is correct French and rightly glossed as "how many". The sums are unchanged and still right (9,40; 17,90; 12,70 / 8,30; 14,00; 0,60 €). The *tip* and *service compris* claims are still sourced.
+
+## Re-check 2026-11-01: photographs
+The café terrace on the Rue de Buci matches the image (the "Café de Paris" awning is visible). There are no science claims. CC BY 2.0; credit matches.

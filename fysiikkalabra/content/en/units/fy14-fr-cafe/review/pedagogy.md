@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b1710febe7eb7638
+CONTENT-HASH: d2bb84b94122e667
 
 Pedagogy re-review of fy14-fr-cafe (2026-11-01), after "Fixes after review" in review/developer.md. Built with `python3 scripts/build.py`, tested in Playwright at 390 px over HTTP (port 8781).
 
@@ -33,3 +33,6 @@ None.
 
 ## Shared issues
 - None.
+
+## Re-check 2026-11-01: photographs
+Edited: the café photo sat between the lead-in sentence and its numbered list of steps; moved it directly under the heading. Caption is simple English and fits the topic. No lesson ids, no ×, British spelling.

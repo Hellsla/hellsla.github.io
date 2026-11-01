@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ce7528c836feb20f
+CONTENT-HASH: c8f570b82c030bf8
 
 ## Blocking
 (none) This is a re-review after commit c6532e4f. The earlier Polish is resolved:
@@ -27,3 +27,7 @@ CONTENT-HASH: ce7528c836feb20f
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Tokamak-pit photo after the comparison table fits and does not touch the table; legible at all widths.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8e9aae9fb545c2d4
+CONTENT-HASH: b5b52f45c65467fe
 
 Re-review of commit cf5a329b. The previous science points are fixed: the hook now says "its hot core only about two metres from steel walls", and the Sun's core is "almost completely ionised" in the text and in the sort feedback.
 
@@ -14,3 +14,6 @@ None.
 - Reworded worked-example reasonableness: $250\,000$ times fewer ions × $500\,000$ times hotter = 2, and doubled for the electrons = 4. This is correct.
 - New sort item: "the air at 110 km during a bright aurora" is a (partly ionised) plasma, which is correct. All rebalanced choice options were re-read. The correct answers are unchanged, and every distractor is still wrong, with correct feedback (check-1 "Its free charges feel magnetic forces" is correct).
 - All numbers from the first review still hold. The Lawson task gives 2.0 s.
+
+## Re-check 2026-11-01: photographs
+The lightning (night, cloud to ground) and aurora (Saana, Kilpisjärvi) images match the alt. The shortened lightning caption makes no unsourced claim. CC BY 4.0 and CC BY-SA 4.0: creator and licence are in the caption, and the credits section links the source and the licence, so attribution is adequate.

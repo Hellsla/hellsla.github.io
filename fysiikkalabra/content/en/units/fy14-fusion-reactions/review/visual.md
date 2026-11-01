@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: af00c5738a515fa3
+CONTENT-HASH: f9123ac373589430
 
 ## Blocking
 (none)
@@ -28,3 +28,7 @@ illustrations 4 · typography 4 · English/French 4 · accessibility 4
 
 ## Shared issues
 - none open.
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Oliphant portrait in the optional box fits a phone screen with its caption; nothing crowds the text after it.

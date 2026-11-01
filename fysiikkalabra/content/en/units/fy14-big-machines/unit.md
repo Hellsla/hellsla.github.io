@@ -142,6 +142,8 @@ In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With
 
 The magnetic field of a tokamak comes from coils of copper. Copper has resistance, so a strong field needs huge electric power and heats the coils, and the machines could run only in short pulses. A **superconductor** has no electrical resistance at all when it is cooled to a few kelvin, usually with liquid helium. A current then flows without losses, and a strong field can be kept for a long time. The Soviet tokamak **T-7** at the Kurchatov Institute was the first to use superconducting magnets, in 1979. Its larger successor **T-15** produced its first plasma in 1988. Today ITER and many other machines use superconducting magnets.
 
+<figure class="unit-photo"><img src="units/fy14/pics/t15-stamp.jpg" alt="Soviet postage stamp from 1987 showing a drawing of a large tokamak machine." width="565" height="800" loading="lazy"><figcaption>A 1987 Soviet stamp celebrating the T-15 tokamak at the Kurchatov Institute. Tokamaks were a source of national pride in the USSR. <span class="photo-credit">Photo: Scanned and processed by Mariluna, public domain, via Wikimedia Commons</span></figcaption></figure>
+
 ## Oil, money and big machines {Oil}
 
 In October 1973 Arab oil-producing countries stopped selling oil to the United States and several other countries that had supported Israel in the Yom Kippur War. The **oil crisis** lasted until March 1974, and oil prices rose sharply. Suddenly, energy security was a political priority. Governments in the West spent much more on new energy sources, including fusion.
@@ -182,7 +184,7 @@ The money made bigger machines possible:
 
 With TFTR and JET, JT-60 was one of the "big three" tokamaks of the 1980s. In 1978 scientists from Europe, Japan, the Soviet Union and the United States also began **INTOR**, a study under the International Atomic Energy Agency for a shared international tokamak reactor. It was never built, but it brought the four sides' fusion experts together.
 
-<!-- photo: jet-torus-hall -->
+<figure class="unit-photo"><img src="units/fy14/pics/jet-exterior.jpg" alt="Colour photograph of the JET machine, a huge ring hidden under heating systems, pipes and diagnostics." width="1600" height="1257" loading="lazy"><figcaption>The Joint European Torus (JET) at Culham, UK, in 1991, the year it first produced fusion power with tritium. Its D-shaped vacuum chamber is 4.2 metres high and 2.5 metres wide. <span class="photo-credit">Photo: EFDA JET, CC BY-SA 3.0, via Wikimedia Commons</span></figcaption></figure>
 
 ## Geneva 1985: an offer between rivals {Geneva}
 

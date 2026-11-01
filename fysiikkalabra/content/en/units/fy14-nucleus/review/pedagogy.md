@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c3553fea1e86a21a
+CONTENT-HASH: b8edfaa71c7e32c5
 
 Pedagogy re-review of fy14-nucleus (2026-11-01), after the "Fixes after review" in review/developer.md (commit 7843fefa). Page rebuilt and tested in Playwright at 390 px. `check_layout.py --width 360` is all OK, with no console errors, no raw `$` and no `.katex-error`.
 
@@ -19,3 +19,6 @@ None new.
 - The model answers stay closed until the student writes something.
 - The theory is about 520 words.
 - The teacher notes are unchanged and still have a realistic 75-minute plan.
+
+## Re-check 2026-11-01: photographs
+Edited the Chadwick caption: a group photo that did not say which man is Chadwick, and "Manhattan Project" unexplained for B1–B2 readers; now "James Chadwick (left) … during the Manhattan Project, the wartime US atomic bomb programme." Placed in People after all tasks that it could answer. No lesson ids, no ×, British spelling.

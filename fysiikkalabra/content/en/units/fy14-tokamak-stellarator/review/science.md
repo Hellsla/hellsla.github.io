@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a8503bb6d2f4c8b
+CONTENT-HASH: 4d4c220db142d2dd
 
 Re-review of commit cf5a329b. The previous Polish 1–3 are fixed:
 - Neutral beams now "become fast ions and carry current round the ring".
@@ -20,3 +20,6 @@ None.
 
 ## Shared issues
 - `assets/units/fy14/fx/reactors.js` has not changed since the first review and has no physics findings. The only open point is to confirm the "May 2025" date of the W7-X record (Polish).
+
+## Re-check 2026-11-01: photographs
+W7-X has 50 non-planar superconducting coils, and the image shows one twisted coil on outdoor display. WEST at Cadarache tests ITER's tungsten wall components, and the image shows the inside of the vessel. CC BY-SA 4.0 and CC BY 4.0, with creators and links in the credits.

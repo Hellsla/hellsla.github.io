@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c3553fea1e86a21a
+CONTENT-HASH: b8edfaa71c7e32c5
 
 ## Blocking
 (none) All four earlier Polish items are resolved:
@@ -20,3 +20,7 @@ CONTENT-HASH: c3553fea1e86a21a
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Chadwick group photo (600x460 source) is shown at most 459 px wide, still sharp enough; the four people stay recognisable on a phone.

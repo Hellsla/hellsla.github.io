@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8e9aae9fb545c2d4
+CONTENT-HASH: b5b52f45c65467fe
 
 ## Blocking
 (none) The earlier blocking finding is fixed: the "Explain to a friend" prompt and its model answer now use curly quotes, and the page has no backslashes.
@@ -20,3 +20,7 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 ## Shared issues
 - Known: raw select keys and true/false in experiment tables; the unit repeats in the initial-state line.
 - Site font: an italic word followed by a space renders with no visible gap ("mustbe").
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Lightning and aurora are 16:9 and read well at every width (185 px tall on a phone); the aurora photo does not crowd the text before it.
