@@ -172,6 +172,8 @@ def validate(folder, inquiry, lesson_md):
                 for _, msg in (figcat.check_refs(json.dumps({"figure": x["figure"]})) if isinstance(x["figure"], str) else [(0, "an id such as \"fy1-4/scatter\"")]): E(f"{where}.figure: {msg}")
         if "optional" in a and (not isinstance(a["optional"], bool) or (a["optional"] and t not in OPTIONAL_TYPES)):
             errs.append(f"{path}.optional: true or false, and only on {', '.join(OPTIONAL_TYPES)} (the simulation and the exercises are never folded away)")
+        if "fold" in a and (not isinstance(a["fold"], str) or not a["fold"].strip() or len(a["fold"]) > 24 or t not in OPTIONAL_TYPES or a.get("optional")):
+            errs.append(f"{path}.fold: a short tag (at most 24 characters) for a required part kept closed until it is opened, only on {', '.join(OPTIONAL_TYPES)} and not with optional")
         if "fbd" in a and a["fbd"] not in FBD_TAGS: errs.append(f"{path}.fbd: one of {', '.join(FBD_TAGS)} (docs/force-diagrams.md)")
         hints = a.get("hints")
         if hints is not None and (not isinstance(hints, list) or len(hints) > 3 or not all(isinstance(h, str) for h in hints)):
@@ -590,9 +592,10 @@ def render(folder, inquiry, parts, md):
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
             content = content.replace("<output aria-live=\"polite\"></output></fieldset>", f'<output aria-live="polite"></output>{hint}</fieldset>') if t == "choice" else content[:-len("</div>")] + hint + "</div>"
         hints = hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])]) if t not in ("numeric",) else ""
-        if a.get("optional"):                          # a closed box, named, that a student may open or leave
-            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))
-            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{T("inquiry.optional")}</span> {name}</summary>'
+        if a.get("optional") or a.get("fold"):         # a closed box, named, that a student may open or leave; "fold": a
+            name = esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2")
+            tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional")
+            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{tag}</span> {name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'

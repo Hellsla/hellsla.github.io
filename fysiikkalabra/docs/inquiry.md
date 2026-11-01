@@ -42,7 +42,9 @@ The `exercises` activity is rendered last, in its own section "Tehtävät" after
 
 Every activity has `id` (lowercase, unique, and not one of the page's own ids `sim`, `exercises`, `exit`, `teoria` or a stage id), `stage`, `type`, optional `title` (plain text) and optional `hints`
 (at most three strings, shown progressively: a guiding question, the representation or relationship, a worked
-intermediate step). Text fields are markdown with `$…$` LaTeX. Activity types:
+intermediate step). `optional: true` puts an activity in a closed box tagged *Optional*; `fold: "<short tag>"` (e.g.
+`"Lesson 2"`) puts a required part in the same closed box under its own tag, so that it stays unseen (and its
+reveals stay closed) until it is opened. Text fields are markdown with `$…$` LaTeX. Activity types:
 
 | type | fields | renders as |
 |---|---|---|

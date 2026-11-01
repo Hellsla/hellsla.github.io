@@ -1,19 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: f99d2c16745c6793
+VERDICT: PASS
+CONTENT-HASH: eeec805ba4f919ad
 
 ## Blocking
-1. [Major] `inquiry.json` line 251, optional task "Find the error" (`stage-sovella-390-*`, contact #17/#45) — the prompt shows literal backslashes: `A news text says: \"The target gain of 1.5 … can be built.\"`. The JSON has `\\\"`. Visible markup garbage in a student task. Fix: use `\"` or typographic quotes “ … ”.
+(none) The earlier blocking finding is fixed: the "Find the error" news quote now uses curly quotes. Also fixed: the energy-chart bars are visible and the theta-pinch label clears the coils. The 2024 table value is now explained in the source note.
 
 ## Polish
-2. [Minor] Investigation 1 table (`stage-tutki-390-1`) — laser energies mix precisions: "2.2" (12 Feb 2024) next to "2.05" and "2.08". Use the published value with the same number of decimals, or footnote it. (for science: confirm the LLNL value.)
-3. [Minor] Figure `energy` — on the 0–300 MJ linear axis the laser (2.05) and fusion (3.15) bars are hairlines, so their colours cannot be seen. The contrast is the point, so keep the axis. Draw both bars at least 3 units wide, or add a magnified inset ×20.
-4. [Minor] Figure `pinch`, theta-pinch — the label "$I$ around the tube" touches the top of the first coils. Move it up about 8 units.
-5. [Minor] Emphasis followed by a space renders with no visible gap ("*along*a column", "*not*mean"): the shared italic font issue.
+1. [Minor] `unit.md`, "What it does *not* mean": "In 2014 NIF fired about one shot every two days, and most of its shots are not ignition attempts, while a power plant would need…" is a run-on sentence that mixes tenses. Fix: "NIF fires only a few shots a week (about one every two days in 2014), and most are not ignition attempts. A power plant would need several shots every second, each with a cheap target."
+2. [Minor] Options padded to equal length read unnaturally: "Z: current along the plasma; theta: around the tube.", "There is no error; the news text is quite correct.", "…a data-centre firm from 2028 on." Fix: "In a Z-pinch the current runs along the plasma; in a theta-pinch, around it." Drop "quite" and "on".
+3. [Minor] Italic followed by a space renders with no gap ("*along*a column"): the shared font issue.
 
 ## Checked
-- Fresh build and captures for this hash: all contact sheets; top/intro at 390 and 1280; stage-selita-390-1, -2, -3 (pinch, ICF, energy and aspect figures); the 1280 theory sheet (aspect figure); the NIF table with hints and solution; the sorting task; the Check stage; the French corner.
-- Playwright at 390 and 1280 with all `details` open: no overflow, no `.katex-error`, no raw `$`, no console errors. Figure labels are at least 13.7 px at 390. The hero has no text.
-- Z-pinch field symbols (⊙ above, ⊗ below for current to the right) and the inward red forces are consistent.
+- New captures for this hash: contact sheets, top/intro at 390 and 1280, stage-selita-390-1 and -2 (pinch, ICF, energy and aspect figures), the NIF table, and the Check stage.
+- Playwright at 390 and 1280: no overflow, no `.katex-error`, no raw `$`, no backslashes, no console errors. Labels are at least 13.7 px at 390.
 - The hash was the same at the end.
 
 ## Scores
@@ -21,4 +19,4 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 
 ## Shared issues
 - Known: raw select keys and true/false in experiment tables; the unit repeats in the initial-state line.
-- Italic-space rendering (site font/CSS).
+- Italic-space rendering in the site font.
