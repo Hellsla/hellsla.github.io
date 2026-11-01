@@ -167,7 +167,8 @@ new p5((p) => {
       p.noStroke(); p.fill(70); p.text(`$${fi(v, 0)}$`, BARS.x - 6, y);
     }
     p.stroke(0, 0, 0, 45); p.line(BARS.x, top, BARS.x + BARS.w, top);                 // full-scale gridline
-    p.noStroke(); p.fill(40); p.textStyle(p.BOLD); p.text('$G\\ (\\text{N})$', BARS.x - 6, top + ts(3)); p.textStyle(p.NORMAL);
+    p.noStroke(); p.fill(70); p.text(`$${tx(chartFull, chartFull < 100 ? 1 : 0)}$`, BARS.x - 6, top);   // the full-scale value closes the axis (readout: this mass on Jupiter)
+    p.fill(40); p.textStyle(p.BOLD); p.text('$G\\ (\\text{N})$', BARS.x - 6, top - ts(14)); p.textStyle(p.NORMAL);   // axis title above the axis
     p.stroke(60); p.strokeWeight(2); p.line(BARS.x, base, BARS.x + BARS.w, base);
     p.line(BARS.x, base, BARS.x, top); p.line(BARS.x - 5, top, BARS.x + 5, top);   // y axis ends at full scale, with a tick
     const bw = BARS.w / 4 - 16;
@@ -190,10 +191,7 @@ new p5((p) => {
     const title = __('sama_massa_paino'), titleMax = 2 * (600 - (BARS.x + BARS.w / 2)) - 10;
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
     p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
-    p.fill(60); p.textSize(ts(11));                               // scale line: short, the explanation is in the readout
-    const scale = __(`asteikko_0`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}), scaleMax = 3 * (bw + 16) - 12;   // stays left of the Jupiter bar's value label
-    if (p.textWidth(scale) > scaleMax) p.textSize(ts(11) * scaleMax / p.textWidth(scale));
-    p.textAlign(p.LEFT); p.text(scale, BARS.x + 9, top - ts(4));
+
   }
 
   function planet(i, x, y, r, on) {                            // small shaded disc of the body, in its own colour

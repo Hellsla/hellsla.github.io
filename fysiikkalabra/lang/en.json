@@ -443,7 +443,6 @@
       "massa_sama_kaikkialla": "<strong>Mass $m = {{m}}\\,\\text{kg}$</strong> (the same everywhere)<br>$g = {{g}}\\,\\text{m/s}^2$ ({{body}})",
       "palkkikaavion_asteikko_on": "<br>The scale of the bar chart $0\\text{–}{{chartfull}}\\,\\text{N}$ is the weight of this mass on Jupiter.",
       "sama_massa_paino": "$\\text{Same mass, weight in different places}$",
-      "asteikko_0": "$\\text{chart scale } 0\\text{–}{{chartfull}}\\,\\text{N}$",
       "paino": "$\\text{weight } G$",
       "massa_2": "$\\text{mass } m$",
       "values": {
