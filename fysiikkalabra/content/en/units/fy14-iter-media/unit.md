@@ -95,6 +95,8 @@ Facts about a project under construction change. The table compares ITER's own o
 
 <figure class="unit-photo"><img src="units/fy14/pics/iter-tokamak-pit.jpg" alt="Colour photograph of the concrete ITER tokamak building under construction with cranes." width="1600" height="1030" loading="lazy"><figcaption>The ITER tokamak complex under construction in April 2018. The tokamak itself is assembled inside the central building. <span class="photo-credit">Photo: Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-visit-hellsten.jpg" alt="Colour photograph of a man in a yellow hard hat and safety vest standing on a balcony above the ITER tokamak pit, where a tall grey cylindrical structure rises among pink-wrapped components and scaffolding." width="1262" height="947" loading="lazy"><figcaption>Course author Lauri Hellsten visiting the ITER tokamak pit on 26 March 2024. The tall cylinder in the centre is a support structure in the middle of the machine; the pink-wrapped parts are protected components waiting for assembly. <span class="photo-credit">Photo: Lauri Hellsten</span></figcaption></figure>
+
 Construction has also moved on elsewhere in the machine: in June 2026 all six modules of the central solenoid were stacked.
 
 Some things have **not** changed: ITER's scientific goal ($Q = 10$, $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating), the site at Cadarache, the seven Members, and the physics of fusion. An article from 2018 that reported the plan of 2018 was correct at the time; a reader in 2026 must update the dates, the costs and the construction status.

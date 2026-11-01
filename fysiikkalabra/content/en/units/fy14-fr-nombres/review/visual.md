@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 205540ba7c16d868
+CONTENT-HASH: da4fb244be493ec3
 
 ## Blocking
 (none) The earlier blocking finding is resolved. The 70–100 table now fits at 360 px: row 97 breaks *quatre-vingt-/dix-sept* at its own hyphen, and every sum is visible (60 + 10, 60 + 11 …). No table scrolls at 360, 390 or 1280.
@@ -20,3 +20,6 @@ CONTENT-HASH: 205540ba7c16d868
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Market photo (french-market.jpg) after the first paragraph of "Prices in euros", outside any task: screenshots at 360, 768, 1280 px; image loads, aspect kept, caption and credit legible, no overflow. check_layout.py OK at 360 and 1280 px.

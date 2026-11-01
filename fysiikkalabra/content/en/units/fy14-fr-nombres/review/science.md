@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 205540ba7c16d868
+CONTENT-HASH: da4fb244be493ec3
 
 Science, fact and French-accuracy re-review of fy14-fr-nombres, 2026-11-01 (HEAD 63a494f6).
 
@@ -19,3 +19,5 @@ None.
 
 ## Checked
 The diff since the last review: the *notice* option (still exactly one correct option), the hidden-text listening instruction, the check 3 retitle and the French tagging. I recomputed all the numbers in Python again. The respellings are unchanged and still consistent with the pilot.
+
+Hash updated 2026-11-01 for a photo-only change; per the teacher, photo changes get a visual review only.

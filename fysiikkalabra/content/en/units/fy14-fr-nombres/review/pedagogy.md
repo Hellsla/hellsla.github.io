@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 205540ba7c16d868
+CONTENT-HASH: da4fb244be493ec3
 
 Pedagogy re-review of fy14-fr-nombres (2026-11-01), after "Fixes after review" in review/developer.md. Built with `python3 scripts/build.py`, tested in Playwright at 390 px over HTTP (port 8781).
 
@@ -31,3 +31,5 @@ None.
 
 ## Shared issues
 - None.
+
+Hash updated 2026-11-01 for a photo-only change; per the teacher, photo changes get a visual review only.

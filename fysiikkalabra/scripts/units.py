@@ -208,7 +208,7 @@ def tail_html(uid, lang, T, md, teacher=False):
     if d.get("media"):
         out += (f'<section class="unit-credits" id="credits"><h2>{T("units.credits")}</h2><ul>'
                 + "".join(f'<li><strong>{esc(m["title"])}</strong>. {esc(m["creator"])}. '
-                          f'<a href="{esc(m["source"])}">{T("units.credit_source")}</a>, '
+                          + (f'<a href="{esc(m["source"])}">{T("units.credit_source")}</a>, ' if m["source"].startswith("https://") else f'{esc(m["source"])}, ')
                           + (f'<a href="{esc(m["licence_url"])}">{esc(m["licence"])}</a>' if m.get("licence_url") else esc(m["licence"])) + "</li>"
                           for m in d["media"]) + "</ul></section>")
     if teacher and d.get("sources"):

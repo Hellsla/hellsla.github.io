@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: edfd37cb96fa903e
+CONTENT-HASH: 9e9b8ad627a9f572
 
 ## Blocking
 (none) The three earlier blocking findings are resolved:
@@ -32,3 +32,6 @@ illustrations 4 · typography 4 · English 4 · accessibility 4
 2. `scripts/inquiry.py`: the criteria box links to `#exercises`, which a unit without exercises does not have.
 
 Re-check 2026-11-01: hint 3 $B^2r^2$ formula now wraps at 360/390 px without overflow (no KaTeX errors); minor nit: at 360 px the closing full stop wraps onto its own line.
+
+## Re-check 2026-11-01: photographs
+- Fotoni logo (fotoni-logo.png, unmodified) after the lab introduction, class `unit-photo logo`: 256 px wide (16rem) at all widths, full logo visible with no crop, aspect kept, credit "Logo: Fotoni, University of Helsinki". Screenshots at 360, 768, 1280 px; check_layout.py OK at 360 and 1280 px.

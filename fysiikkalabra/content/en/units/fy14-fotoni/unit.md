@@ -74,6 +74,8 @@
 
 Fotoni is the open physics teaching laboratory of the University of Helsinki. Its material bank describes the stations below. Your teacher chooses with Fotoni which ones your group does, and the equipment on the day can differ a little from the instructions: always check with the instructor.
 
+<figure class="unit-photo logo"><img src="units/fy14/pics/fotoni-logo.png" alt="The Fotoni logo: the word FOTONI in large black letters over an orange wave, with the text Fysiikan avoin opetuslaboratorio below." width="1200" height="468" loading="lazy"><figcaption>Fotoni is the open physics teaching laboratory of the University of Helsinki, where upper-secondary groups can do modern-physics experiments. <span class="photo-credit">Logo: Fotoni, University of Helsinki</span></figcaption></figure>
+
 ### Photoelectric effect: Planck's constant
 
 LEDs of different colours shine on the metal plate of a vacuum tube (a **photocell**). A **counter-voltage** pushes the freed electrons back. You raise it until the current is zero: this is the **stopping voltage** $U_\text{s}$. From the unit *Light as particles: the photoelectric effect* you know that ${eU_\text{s} = hf - W}$. You measure $U_\text{s}$ for every LED and find Planck's constant $h$ from the slope of a graph.
