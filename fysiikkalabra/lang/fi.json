@@ -443,7 +443,7 @@
       "massa_sama_kaikkialla": "<strong>Massa $m = {{m}}\\,\\text{kg}$</strong> (sama kaikkialla)<br>$g = {{g}}\\,\\text{m/s}^2$ ({{body}})",
       "palkkikaavion_asteikko_on": "<br>Palkkikaavion asteikko $0\\text{–}{{chartfull}}\\,\\text{N}$ on tämän massan paino Jupiterissa.",
       "sama_massa_paino": "$\\text{Sama massa, paino eri paikoissa}$",
-      "asteikko_0": "$\\text{asteikko } 0\\text{–}{{chartfull}}\\,\\text{N}$",
+      "asteikko_0": "$\\text{kaavion asteikko } 0\\text{–}{{chartfull}}\\,\\text{N}$",
       "paino": "$\\text{paino } G$",
       "massa_2": "$\\text{massa } m$",
       "values": {

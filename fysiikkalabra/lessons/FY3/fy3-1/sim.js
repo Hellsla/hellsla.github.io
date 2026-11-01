@@ -161,7 +161,7 @@ new p5((p) => {
     const raw = chartFull / 6, mag = Math.pow(10, Math.floor(Math.log10(raw)));
     const step = [1, 2, 2.5, 5, 10].map((f) => f * mag).find((s) => s >= raw);       // gridline step, a round number
     p.textSize(ts(10)); p.textAlign(p.RIGHT, p.CENTER);
-    for (let v = step; v < 0.8 * chartFull; v += step) {
+    for (let v = step; v < 0.9 * chartFull; v += step) {          // gridlines up to near the full-scale line (248 N: 50…200)
       const y = base - H * v / chartFull;
       p.stroke(0, 0, 0, 30); p.strokeWeight(1); p.line(BARS.x, y, BARS.x + BARS.w, y);
       p.noStroke(); p.fill(70); p.text(`$${fi(v, 0)}$`, BARS.x - 6, y);

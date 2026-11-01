@@ -1,5 +1,5 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-1` writes them into lesson.md."""
-from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, HEAT, HEAT_LIGHT, ALUMINIUM, METAL_EDGE, IRON, WATER, COPPER, GRAIN, fi
+from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, HEAT_LIGHT, HOT, ALUMINIUM, METAL_EDGE, IRON, WATER, COPPER, GRAIN, fi
 import herolib as H
 
 
@@ -30,7 +30,7 @@ def forcemeter():
                 f.line(cx, y + 42, cx, y + 50, INK, 2.5)
             y += 50
         bottom = y - 8
-        f.arrow(cx, bottom, cx, bottom + 36 * k, HEAT, 4, 16)        # arrow length to scale: 2G is twice G
+        f.arrow(cx, bottom, cx, bottom + 36 * k, HOT, 4, 16)         # a force is red in every figure and sim (teacher); length to scale: 2G is twice G
         f.tex(cx + 14, bottom + 18 * k + 4, "G" if k == 1 else "2G", "start")
     # the extension, to scale: one load 50, two loads 100
     for cx, k in ((170, 1), (370, 2)):

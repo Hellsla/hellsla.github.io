@@ -6,7 +6,7 @@
 **Conversions:** The mass is already in kilograms and $g$ in $\text{m/s}^2$, so the product comes out directly in newtons: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$.
 **Substitution:** $G = 4.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 39.24\,\text{N}$
 **Answer:** $39\,\text{N}$, two significant figures like the mass $4.0\,\text{kg}$.
-**Reasonableness:** The weight of a 1 kg mass is about $10\,\text{N}$, so the weight of a $4.0\,\text{kg}$ mass is about $4 \cdot 10\,\text{N} = 40\,\text{N}$. The result is positive and in newtons, as a force should be.
+**Reasonableness:** The weight of a one-kilogram mass is about $10\,\text{N}$, so the weight of a $4.0\,\text{kg}$ mass is about $4 \cdot 10\,\text{N} = 40\,\text{N}$. The result is positive and in newtons, as a force should be.
 
 ## fy3-1-L1-02
 **Given:** $F_1 = 4.0\,\text{N}$ and its extension $x_1 = 2.0\,\text{cm}$; a second force $F = 12\,\text{N}$
@@ -57,7 +57,7 @@
 **Conversions:** No conversions are needed: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, so $\dfrac{\text{N}}{\text{m/s}^2}$ is a kilogram.
 **Substitution:** $m = \dfrac{49\,\text{N}}{9.81\,\text{m/s}^2} = 4.995\,\text{kg}$
 **Answer:** $5.0\,\text{kg}$, two significant figures like the weight $49\,\text{N}$.
-**Reasonableness:** The weight of a 1 kg mass is about $10\,\text{N}$, so $49\,\text{N}$ corresponds to a mass of about $5\,\text{kg}$. Check by calculating back: $5.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 49.05\,\text{N} \approx 49\,\text{N}$.
+**Reasonableness:** The weight of a one-kilogram mass is about $10\,\text{N}$, so $49\,\text{N}$ corresponds to a mass of about $5\,\text{kg}$. Check by calculating back: $5.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 49.05\,\text{N} \approx 49\,\text{N}$.
 
 ## fy3-1-L2-02
 **Given:** $m = 60\,\text{g}$; from the table $g = 9.81\,\text{m/s}^2$ (Earth)

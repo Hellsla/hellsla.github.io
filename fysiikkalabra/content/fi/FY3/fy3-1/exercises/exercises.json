@@ -11,7 +11,7 @@
     {
       "id": "fy3-1-L1-02",
       "level": 1,
-      "text": "Voimamittarin jousi venyy 2,0 cm, kun siihen ripustetaan kappale, jonka paino on 4,0 N. Kuinka monta senttimetriä jousi venyy, kun siihen ripustetaan kappale, jonka paino on 12 N?",
+      "text": "Voimamittarin jousi venyy $2{,}0\\,\\text{cm}$, kun siihen ripustetaan kappale, jonka paino on $4{,}0\\,\\text{N}$. Kuinka monta senttimetriä jousi venyy, kun siihen ripustetaan kappale, jonka paino on $12\\,\\text{N}$?",
       "answer": 6.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -46,7 +46,7 @@
     {
       "id": "fy3-1-L2-01",
       "level": 2,
-      "text": "Voimamittari näyttää 49 N, kun siihen ripustetaan kappale Maassa. Mikä on kappaleen massa?",
+      "text": "Voimamittari näyttää $49\\,\\text{N}$, kun siihen ripustetaan kappale Maassa. Mikä on kappaleen massa?",
       "answer": 5.0,
       "unit": "kg",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy3-1-L2-04",
       "level": 2,
-      "text": "Voimamittarin jousi venyy 1,5 cm, kun siihen ripustetaan Maassa $0{,}20\\,\\text{kg}$:n kappale. Kuinka suuri voima venyttää jousta 4,5 cm?",
+      "text": "Voimamittarin jousi venyy $1{,}5\\,\\text{cm}$, kun siihen ripustetaan Maassa $0{,}20\\,\\text{kg}$:n kappale. Kuinka suuri voima venyttää jousta $4{,}5\\,\\text{cm}$?",
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-1-L3-01",
       "level": 3,
-      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää 18 N. Sama kappale viedään Marsiin ($g = 3{,}71\\,\\text{m/s}^2$). Mitä sama mittari näyttää siellä?",
+      "text": "Kappale ripustetaan voimamittariin Maassa, ja mittari näyttää $18\\,\\text{N}$. Sama kappale viedään Marsiin ($g = 3{,}71\\,\\text{m/s}^2$). Mitä sama mittari näyttää siellä?",
       "answer": 6.8,
       "unit": "N",
       "tolerance": 0.02

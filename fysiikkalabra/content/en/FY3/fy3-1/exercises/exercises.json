@@ -11,7 +11,7 @@
     {
       "id": "fy3-1-L1-02",
       "level": 1,
-      "text": "The spring of a force meter stretches 2.0 cm when an object with a weight of 4.0 N is hung on it. How many centimetres does the spring stretch when an object with a weight of 12 N is hung on it?",
+      "text": "The spring of a force meter stretches $2.0\\,\\text{cm}$ when an object with a weight of $4.0\\,\\text{N}$ is hung on it. How many centimetres does the spring stretch when an object with a weight of $12\\,\\text{N}$ is hung on it?",
       "answer": 6.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -46,7 +46,7 @@
     {
       "id": "fy3-1-L2-01",
       "level": 2,
-      "text": "A force meter shows 49 N when an object is hung on it on Earth. What is the mass of the object?",
+      "text": "A force meter shows $49\\,\\text{N}$ when an object is hung on it on Earth. What is the mass of the object?",
       "answer": 5.0,
       "unit": "kg",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy3-1-L2-04",
       "level": 2,
-      "text": "The spring of a force meter stretches 1.5 cm when a $0.20\\,\\text{kg}$ object is hung on it on Earth. How great a force stretches the spring 4.5 cm?",
+      "text": "The spring of a force meter stretches $1.5\\,\\text{cm}$ when a $0.20\\,\\text{kg}$ object is hung on it on Earth. How great a force stretches the spring $4.5\\,\\text{cm}$?",
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-1-L3-01",
       "level": 3,
-      "text": "An object is hung on a force meter on Earth, and the meter shows 18 N. The same object is taken to Mars ($g = 3.71\\,\\text{m/s}^2$). What does the same meter show there?",
+      "text": "An object is hung on a force meter on Earth, and the meter shows $18\\,\\text{N}$. The same object is taken to Mars ($g = 3.71\\,\\text{m/s}^2$). What does the same meter show there?",
       "answer": 6.8,
       "unit": "N",
       "tolerance": 0.02

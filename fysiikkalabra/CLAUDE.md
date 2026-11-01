@@ -16,6 +16,7 @@ A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, simu
 
 ## Physics and maths conventions
 - SI units, upright with a thin space: `9,81 m/s²`. Decimal comma in Finnish text, decimal point in JSON.
+- **Every number with its unit is LaTeX, in prose too** (teacher 2026-11-01, "jatkossa näin"; NOTES.md §1): `$10\,\text{N}$`, `$1{,}18\,\text{kN}$`, `$9{,}81\,\text{m/s}^2$`, `$4{,}0\,\%$`, in every language and every text a student reads; only an `aria-label` stays plain. `lint_lesson.py` fails an edited lesson on a plain one; reviewers report one in new or edited text as Major.
 - g = 9,81 m/s², always in m/s² (never N/kg). Three significant figures in final answers unless the data has fewer.
 - Vectors with an overline in LaTeX (`\overline{F}`, `\overline{F}_{\mu}`; teacher 2026-10-29, never `\mathbf` or `\vec`; `scripts/test_notation.py` checks every text, figure, simulation and interface string in CI), magnitudes plain. Every formula appears once in display LaTeX with its symbols named.
 - Every exercise has `answer`, `unit` and `tolerance`; the data carries the significant figures the answer should have, and a student rounding to them stays inside the tolerance. `answers.py` computes every exercise answer; `lesson-answers.py` the numbers of the lesson text and the inquiry.
