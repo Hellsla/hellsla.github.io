@@ -419,6 +419,11 @@ def draw(spec, fid, _frame=None):
                                                                                    # bodies: a rope turning over a pulley
             hz[mh < mv] = SPLIT * max(mv, mh) / weak
     split = hz[True] != hz[False]
+    if split and not two:                                                          # the weak axis' smallest force keeps a shaft too:
+        hw = mh < mv; sw = [x for x, h in probe if h == hw and x > 0]              # its scale up to the other axis' (largest as long
+        hz[hw] = max(hz[hw], min(LEAST / (min(sw) * scale), max(mv, mh) / max(sw)))   # as the other's), then the whole figure
+        drawn = min(sw) * hz[hw] * scale                                           # (visual audit 2026-11-01)
+        if drawn < LEAST: scale *= max(1.0, min(LEAST / drawn, CAP / (max(max(mv, mh), max(sw) * hz[hw]) * scale)))
     small_body = False
     if not two and not split:                                                      # a small force or component keeps a shaft behind its
         parts = []                                                                 # head: the whole figure on a larger scale, still one

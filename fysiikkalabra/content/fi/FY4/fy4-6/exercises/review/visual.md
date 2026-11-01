@@ -2,15 +2,16 @@ VERDICT: PASS
 CONTENT-HASH: 92a29494f4fbe0d8
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] open-exercises-L2-1280-1 (L2-01 solution figure) — the dashed G_y arrow runs close to the solid G arrow and their labels sit near each other — nudge the G_y label outward.
-- [Minor] open-exercises-1280-3 — the solution figure caption "vaaka- ja pystyvoimat eri mittakaavassa" is set in a grey serif unlike the other figure text — keep it in the figure typeface, or leave it if intended.
-- [Minor] open-exercises-L2-1280-5, -L3-4 — the Vastaus box for L2-04 is a whole chain "56,3 N − 48,2 N = 8,1 N" while the others show a bare value — unify.
+- [Minor] open-exercises-L2-1280-1 (L2 task 1, 12 degree slope) — the redrawn diagram is tall (about 400 px) with long N and G arrows and much empty space above the box; it does not dominate but is the largest figure in the set — optional: crop the viewBox to the arrows.
+- [Minor] all solution diagrams — labels are about 9-10 px at 1280 px and the figures only 130-290 px wide; legible but small (carried from the earlier report) — enlarge when figures are next edited.
 
 ## Checked
-- open-exercises-1280-3 (L1-02, L1-03 start), -5 (L1-03 end, L1-04), -6 (L1-04, L1-05); L2-1280-1 (L2-01), -5 (L2-03 end, L2-04); L3-1280-4 (L3-03); contact sheets 5 and 6 for all levels.
-- Figures: the L2-03 graph (points only, axes with units, N and F_mu ticks readable), the force diagrams with x/y axis marker and "eri mittakaavassa" notes; units, decimal commas and thin spaces are right; solution cards leave no gaps.
+- Captures (1280 px; the exercise captures live in fy4-6/review/shots): open-exercises-1280-1..7, L2-1280-1..6, L3-1280-1..5, contact sheets not needed.
+- Redrawn solution diagrams: level 1 task 3 (sliding crate; v on its own row above N, F and F_mu on separate rows), task 4 and 5 (book on 20 degree and crate on 30 degree slope; F_mu, G_x, G_y, G distinct), level 2 task 1 (12 degree), level 3 task 2 (v and a apart, F_mu short but shaft visible), and neighbours level 1 task 1-2, level 2 task 2, 4, level 3 task 1, 3.
+- No overlapping labels; velocity and acceleration arrows no longer on force shafts; the 390 px widths use the same figure size, so no separate capture was needed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
