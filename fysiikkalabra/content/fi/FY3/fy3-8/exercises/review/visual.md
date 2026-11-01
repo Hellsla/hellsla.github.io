@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e84f30aeda6e6c9c
+CONTENT-HASH: b9f5870e18aa53bc
 
 ## Blocking
 (none)
 
 ## Notes
-- Teacher's decision 2026-11-01 ("Pidä pieni l"): the litre stays as the small \textsf{l} in the L1-04 answer-unit box and Vastaus (round 1 Major, now closed). The capture still shows the unit as "|" and "0,84 l" resembling "0,841"; the task text asks "Kuinka monta litraa", which gives context. Recorded as a decision, not a finding.
+- Teacher's decision: litre stays a small l ("20,0 l:n", "0,84 l" resemble a bar/1 in captures). Recorded as a decision, not a finding.
 
 ## Polish
-- [Minor] L1-02, L2-02, L3-01 texts — "−$27\,°C$:seen" has the minus outside the maths; put the sign inside ($-27\,{}^\circ\text{C}$).
-- [Minor] L1-03, L1-04, L2-02, L2-03, L3-01..03 texts — values such as "500,0 mm", "200,0 litran", "2,0 dm³", "7,2 mm:n", "75,000 mm", "20,0 litran" are plain text beside maths values in the same sentence; the house rule sets number-with-unit as maths.
 - [Minor] L2-04 graph — fine and honest; the orange data line equals the FY4 acceleration colour, harmless here.
+- [Minor] L1-04/L3-03 solution Muunnokset — "20,0 l" rows in plain-sans litre next to KaTeX numbers read as "20,0 |"; decision above, no action unless the task text lacks "litraa" nearby.
+- [Minor] Järkevyys boxes — "Karkea arvio" chains put the unit on every factor and the result; fine, but a result-only unit would be shorter.
 
 ## Checked
-- Round 2, hash unchanged since round 1 (e84f30aeda6e6c9c at start and end).
-- open-exercises-1280-1 (L1-01), -4 (L1-03 end, L1-04 unit and Vastaus); L2-1280-5 (graph L2-04 and solution start); L3-1280-3 (L3-02 solution).
-- Graph L2-04: axis titles with units, ticks, end-point markers, 3 px line; description gives all values.
-- Solutions: chains set as aligned rows, Vastaus boxed, Järkevyys block clear; nothing clipped, no overflow. No new blocking issue found.
+- Delta (numbers with units set as inline LaTeX, "−$27\,°C$:seen" sign now inside maths, "$7{,}2\,\text{mm}$:n"): open-exercises-1280-3 (L1-02 sijoitus/vastaus, L1-03 text "500,0 mm", solution), open-exercises-L3-1280-4 (L3-02 end, L3-03 canister task with "$20{,}0\,\textsf{l}$:n", "$10\,°C$:n", full solution).
+- Case endings after maths read naturally; stacked fraction rows have clean spacing; no clipping or overflow.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3ed8319b2e02b3ee
+CONTENT-HASH: 24f3551fe9d8cba8
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] lesson.md Hyötysuhde-teoria, "lämpötilaero kuuman lähteen lämpötilaan nähden" — heavy phrasing; suggest "lämpötilaero on suuri kuuman lähteen lämpötilaan verrattuna".
+- [Minor] lesson.md Hyötysuhde-teoria — "lämpötilaero kuuman lähteen lämpötilaan nähden" is heavy; "…on suuri kuuman lähteen lämpötilaan verrattuna".
 - [Minor] lesson.md "85–$90\,\%$" — range half text, half maths; set the whole range in maths.
-- [Minor] inquiry Koe 1 Alkutila — says p_2 = 100 kPa although the experiment keeps 200 kPa; reads as a contradiction (for pedagogy).
-- [Minor] sim canvas at 390 px — tick numbers about 9-10 px; legible but small.
+- [Minor] Koe 1 Alkutila (lab-1280-1) — lists "paine p₂ = 100 kPa" while the experiment text and sim keep 200 kPa; reads as a contradiction (for pedagogy).
+- [Minor] sim canvas at 390 px — tick numbers about 9–10 px; the readout "ΔV = 0,001 l" has a bold digit run, inconsistent with the rest of the line.
 
 ## Checked
-Round 2. Round-1 Major resolved: exit-ticket q1/a2 and Ennuste 1 now set "200 kPa:na", "0,50 l" (\textsf{l}), "60 kW", "0,30 · 60 kW = 18 kW" fully in KaTeX (open-exit-1280, open-ennusta-1280-1; source grep finds no plain units left).
-- contact-1; fig-3-390; example-390-1; sim-1280; open-tarkista-1280-2; theory/layout otherwise unchanged and intact.
+- Delta (sim label template change, Initial-state wording, units as maths): lab-1280-1 (both experiments' Alkutila lines and readouts), sim-390 (label and graph render, "W_k" label legend intact), example-390-2 (7-row chains with fraction rows: spacing clean, no clipping), open-exercises-L2-1280-3 (stacked fractions in solution).
+- Not re-opened: figures (unchanged).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
