@@ -344,12 +344,12 @@
     },
     {
       "id": "aston-1919",
-      "year": 1919,
+      "year": 1920,
       "date": null,
       "era": "modern-physics",
       "theme": "device",
       "title": "Aston's mass spectrograph",
-      "text": "At the Cavendish Laboratory, Francis Aston built a mass spectrograph that could weigh atoms very precisely. He found that isotope masses are nearly whole numbers, but not exactly. A helium atom turned out to be slightly lighter, about 0.8 percent, than four hydrogen atoms. That small 'missing mass' is the energy source of fusion, as Eddington soon pointed out.",
+      "text": "At the Cavendish Laboratory, Francis Aston built a mass spectrograph that could weigh atoms very precisely. He found that isotope masses are nearly whole numbers, but not exactly. By 1920 he had found that a helium atom is slightly lighter than four hydrogen atoms: about 0.8 percent by his measurement (the modern value is 0.7 percent). That small 'missing mass' is the energy source of fusion, as Eddington soon pointed out.",
       "people": [
         "Francis Aston"
       ],
@@ -842,7 +842,7 @@
       "era": "nuclear-age",
       "theme": "device",
       "title": "Chicago Pile-1 goes critical",
-      "text": "Under the stands of a sports field at the University of Chicago, Enrico Fermi's team achieved the first human-made, self-sustaining nuclear chain reaction. The pile of graphite and uranium ran for about four and a half minutes at only half a watt. Fission needed just over three years from discovery to a working reactor; fusion has needed far longer.",
+      "text": "Under the stands of a sports field at the University of Chicago, Enrico Fermi's team achieved the first human-made, self-sustaining nuclear chain reaction. The pile of graphite and uranium ran for about four and a half minutes at only half a watt. Fission needed four years from discovery to a working reactor; fusion has needed far longer.",
       "people": [
         "Enrico Fermi"
       ],
@@ -1447,11 +1447,12 @@
       "era": "tokamak-race",
       "theme": "science",
       "title": "The Culham Five confirm T-3",
-      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their Nature paper in November 1969 set off a worldwide 'tokamak stampede'.",
+      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their joint paper with Soviet colleagues in Nature in November 1969 set off a worldwide 'tokamak stampede'.",
       "people": [
         "Nicol Peacock",
         "Derek Robinson",
-        "Mike Forrest"
+        "Mike Forrest",
+        "Vladimir Sannikov"
       ],
       "country": "Soviet Union",
       "place": "Moscow",
@@ -1559,17 +1560,21 @@
     {
       "id": "jet-decision-1978",
       "year": 1978,
-      "date": "1978-04-01",
+      "date": "1978-05-30",
       "era": "tokamak-race",
       "theme": "politics",
       "title": "Europe builds JET",
-      "text": "Culham in England was chosen as the host site at the end of 1977, and on 1 April 1978 the JET Joint Undertaking was set up with European funding. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
+      "text": "Culham in England was chosen as the host site on 25 October 1977, and on 30 May 1978 the European Council decided to set up the JET Joint Undertaking, which started work on 1 June 1978. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
       "people": [],
       "country": "United Kingdom",
       "place": "Culham",
       "facility": "jet",
       "biography": null,
       "sources": [
+        {
+          "title": "Council Decision 78/471/Euratom of 30 May 1978 on the Joint European Torus (JET) Joint Undertaking (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31978D0471"
+        },
         {
           "title": "Joint European Torus (Wikipedia)",
           "url": "https://en.wikipedia.org/wiki/Joint_European_Torus"
