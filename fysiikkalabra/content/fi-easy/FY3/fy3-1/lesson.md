@@ -211,7 +211,7 @@ Kaksi samanlaista kappaletta venyttää voimamittarin jousta kaksi kertaa niin p
 ```latex
 G = m g
 ```
-Tässä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys (m/s²). Maan pinnalla putoamiskiihtyvyys on $9{,}81\,\text{m/s}^2$. Kun massa on kilogrammoina ja $g$ yksikössä m/s², paino tulee newtoneina, sillä $1\,\text{N}$ = $1\,\text{kg}\cdot\text{m/s}^2$ (tämä perustellaan FY4:ssä). Yhden kilogramman massan paino Maassa on siis $9{,}81\,\text{N}$. Muualla $g$ on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa. Jupiterissa pinta tarkoittaa pilvien yläpintaa.
+Tässä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys (m/s²). Maan pinnalla putoamiskiihtyvyys on $9{,}81\,\text{m/s}^2$. Kun massa on kilogrammoina ja $g$ yksikössä m/s², paino tulee newtoneina, sillä $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$ (tämä perustellaan FY4:ssä). Yhden kilogramman massan paino Maassa on siis $9{,}81\,\text{N}$. Muualla $g$ on erilainen. Taulukon arvot koskevat taivaankappaleen pintaa. Jupiterissa pinta tarkoittaa pilvien yläpintaa.
 
 | Taivaankappale | $g$ pinnalla (m/s²) |
 | --- | --- |

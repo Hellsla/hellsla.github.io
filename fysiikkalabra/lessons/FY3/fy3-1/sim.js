@@ -191,7 +191,9 @@ new p5((p) => {
     if (p.textWidth(title) > titleMax) p.textSize(ts(13) * titleMax / p.textWidth(title));
     p.text(title, BARS.x + BARS.w / 2, BARS.y - ts(6));
     p.fill(60); p.textSize(ts(11));                               // scale line: short, the explanation is in the readout
-    p.textAlign(p.LEFT); p.text(__(`asteikko_0`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}), BARS.x + 9, top - ts(4));
+    const scale = __(`asteikko_0`, {chartfull: tx(chartFull, chartFull < 100 ? 1 : 0)}), scaleMax = 3 * (bw + 16) - 12;   // stays left of the Jupiter bar's value label
+    if (p.textWidth(scale) > scaleMax) p.textSize(ts(11) * scaleMax / p.textWidth(scale));
+    p.textAlign(p.LEFT); p.text(scale, BARS.x + 9, top - ts(4));
   }
 
   function planet(i, x, y, r, on) {                            // small shaded disc of the body, in its own colour
