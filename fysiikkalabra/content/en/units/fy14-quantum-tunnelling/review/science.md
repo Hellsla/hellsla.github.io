@@ -1,7 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 52dad39318ce6af1
+CONTENT-HASH: 04f3108ac7d6230d
 
 Science re-review of fy14-quantum-tunnelling, 2026-11-01. It covers the fixes in commit cdc675d6.
+Update for commit 3dd4228a: in the worked example the momentum root is now written as $\sqrt{2.919 \cdot 10^{-47}} \cdot \sqrt{\text{kg}^2 \cdot \text{m}^2/\text{s}^2}$. That is mathematically correct, and $p = 5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s}$ is unchanged.
+
 
 ## Previous findings
 All are resolved:

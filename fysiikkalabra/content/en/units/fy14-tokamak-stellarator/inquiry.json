@@ -2,12 +2,12 @@
  "version": 1,
  "contribution": "Closes chapter 6 by comparing the two leading magnetic designs: why a purely toroidal field fails, toroidal and poloidal fields and helical field lines, the tokamak's plasma current and central solenoid, the stellarator's three-dimensional coils, pulsed and steady operation with non-inductive current drive, and the limitations of each, with the field of ITER's coils as a calculation.",
  "learn": [
-  "explain why a magnetic fusion machine needs twisted field lines, and how a tokamak and a stellarator make the twist.",
+  "explain how a tokamak and a stellarator confine a plasma in a ring.",
   "calculate the toroidal field from the coil current and explain why it falls as $1/R$.",
   "compare the advantages and limitations of tokamaks and stellarators, including pulsed and steady operation."
  ],
  "prior": [
-  "Charged particles drift across a curved magnetic field that is stronger on one side; a ring has no open ends (chapter *Charged particles and magnetic confinement*)",
+  "A charged particle circles around a magnetic field line, and a ring of field lines has no open ends (chapter *Charged particles and magnetic confinement*)",
   "A changing current in one coil induces a current in another coil, as in a transformer (electromagnetism course)"
  ],
  "activities": [
@@ -28,7 +28,7 @@
     {
      "text": "The field lines close on themselves, so there are no open ends.",
      "correct": true,
-     "feedback": "Right. In a straight tube, particles stream along the field lines and out of the ends. Bending the tube into a ring removes the ends. In this unit you find out whether that is enough."
+     "feedback": "Right. In a straight tube, particles stream along the field lines and out of the ends. Bending the tube into a ring removes the ends. In this unit you compare two machines that both use a ring."
     },
     {
      "text": "A ring is the cheapest shape for a large vacuum vessel to build.",
@@ -79,23 +79,23 @@
    "reveal": {
     "after": "theory-operation"
    },
-   "prompt": "In a tokamak, a coil in the middle of the ring induces a large current in the plasma, as in a transformer. Must a tokamak therefore always run in pulses of a few minutes?",
+   "prompt": "In a tokamak, a coil in the middle of the ring induces a large current in the plasma, as in a transformer. How long can a tokamak keep its plasma current going?",
    "choices": [
     {
-     "text": "Yes: a transformer works only while its current changes.",
+     "text": "Only while the current in the middle coil keeps changing.",
      "feedback": "This is true for the transformer, but the plasma current can also be driven in other ways: with neutral beams, radio waves and the plasma's own bootstrap current."
     },
     {
-     "text": "No: the current can be driven without the transformer.",
+     "text": "As long as something keeps driving it, not only the coil.",
      "correct": true,
      "feedback": "The theory supports this. Beams, radio-frequency waves and the bootstrap current can drive the plasma current without induction. In 2025 the tokamak WEST held a plasma for $1337\\ \\text{s}$ in this way."
     },
     {
-     "text": "No: once started, the current keeps flowing by itself.",
+     "text": "For ever: once started, the current flows by itself.",
      "feedback": "The plasma has electrical resistance, so its current dies away unless something keeps driving it, inductively or in another way."
     },
     {
-     "text": "Yes: in a long pulse, the plasma would melt the coils.",
+     "text": "Only a few seconds, or the plasma would melt the coils.",
      "feedback": "Long pulses do load the walls with heat, and they must be cooled. But the reason for pulses is the transformer, and the current can be driven in other ways."
     }
    ]
@@ -111,20 +111,20 @@
    "id": "lang-compare",
    "stage": "tutki",
    "type": "text",
-   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>toroidal (the long way round) · poloidal (the short way round) · helical · a coil · the plasma current · the central solenoid · to induce · to twist · a pulse · steady</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In a tokamak, the poloidal field comes from …</li><li>In a stellarator, the twist comes from …</li><li>Both machines …, but only the … has …</li><li>An advantage of the … is that …</li><li>A drawback of the … is that …</li></ul></div>"
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>toroidal (the long way round) · poloidal (the short way round) · helical · a coil · the plasma current · the central solenoid · to induce · to twist · a disruption · steady</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In a tokamak, the poloidal field comes from …</li><li>In a stellarator, the twist comes from …</li><li>The tokamak risks disruptions because …</li><li>The stellarator does not, because …</li><li>So steady operation is easier for the …, because …</li></ul></div>"
   },
   {
    "id": "compare-talk",
    "stage": "tutki",
    "type": "explain",
    "title": "Discuss: two ways to twist",
-   "prompt": "Discuss with your partner, then write three or four sentences. How does each machine twist its field lines? Name one advantage and one drawback of each design that you found in the drawing.",
-   "model": "In a tokamak, the poloidal field comes from a large current that flows round the ring in the plasma itself, induced by the central solenoid. In a stellarator, the twist comes from the coils, which are bent into three-dimensional shapes. An advantage of the tokamak is that its coils are flat and simpler to build, but a drawback is that its large plasma current can suddenly collapse in a disruption. An advantage of the stellarator is that it needs no plasma current and can run steadily, but a drawback is that its coils are very hard to design and build.",
+   "prompt": "Discuss with your partner, then write three or four sentences. How does each machine twist its field lines? Explain *why* the tokamak risks disruptions and the stellarator does not, and *why* that makes steady operation easier for one of them.",
+   "model": "In a tokamak, the poloidal field comes from a large current that flows round the ring in the plasma itself, induced by the central solenoid. In a stellarator, the twist comes from the coils, which are bent into three-dimensional shapes. The tokamak risks disruptions because its confinement depends on a huge current in the plasma: if the plasma becomes unstable, the current and the twist can collapse together within milliseconds. The stellarator does not, because its twist is made by the coils and stays there even if the plasma changes. So steady operation is easier for the stellarator, because no plasma current has to be driven, while a tokamak must keep driving its current without a changing transformer current.",
    "criteria": [
-    "The answer says that the tokamak's poloidal field comes from a current in the plasma.",
-    "The answer says that the stellarator's twist comes from its three-dimensional coils.",
-    "The answer gives one correct advantage and one correct drawback of each design.",
-    "The answer uses words from the word bank (toroidal, poloidal, coil, plasma current) and a sentence starter."
+    "The answer says that the tokamak's poloidal field comes from a current in the plasma and the stellarator's twist from its three-dimensional coils.",
+    "The answer explains that a disruption is possible because the tokamak's confinement depends on the plasma current.",
+    "The answer explains why steady operation is easier for the stellarator (no current to drive).",
+    "The answer uses words from the word bank and a sentence starter."
    ]
   },
   {
@@ -134,7 +134,7 @@
    "title": "Investigation 2: long plasmas",
    "source": "statistics",
    "source_note": "Durations from CEA (WEST, 2025), Wikipedia articles on WEST (Tore Supra), Wendelstein 7-X and EAST, and the ITER Organization (planned pulse), read 2026-11-01. Rounded values.",
-   "text": "| Year | Machine (country, design) | Duration (s) |\n| --- | --- | --- |\n| 2003 | Tore Supra (FR, tokamak) | about $390$ |\n| 2021 | EAST (CN, tokamak) | $1056$ |\n| 2023 | Wendelstein 7-X (DE, stellarator) | about $480$ |\n| 2025 | WEST (FR, tokamak) | $1337$ |\n| plan | ITER (FR, tokamak) | $300$–$500$ |\n\nWEST is Tore Supra rebuilt. ITER's planned pulse is inductive. All these machines have superconducting coils, which use little power and can stay on for a long time. The long tokamak plasmas were driven mainly without induction.",
+   "text": "| Year | Machine (country, design) | Duration (s) |\n| --- | --- | --- |\n| 2003 | Tore Supra (FR, tokamak) | about $390$ |\n| 2021 | EAST (CN, tokamak) | $1056$ |\n| 2023 | Wendelstein 7-X (DE, stellarator) | about $480$ |\n| 2025 | EAST (CN, tokamak) | $1066$ |\n| 2025 | WEST (FR, tokamak) | $1337$ |\n| plan | ITER (FR, tokamak) | $300$–$500$ |\n\nWEST is Tore Supra rebuilt. ITER's planned pulse is inductive. All these machines have superconducting coils, which use little power and can stay on for a long time. The long tokamak plasmas were driven mainly without induction.",
    "question": {
     "type": "numeric",
     "prompt": "How many times longer was WEST's plasma of 2025 than the record of its predecessor Tore Supra in 2003?",
@@ -148,7 +148,7 @@
     "mistakes": [
      {
       "value": 0.292,
-      "feedback": "You divided the older duration by the newer one. \\\"How many times longer\\\" divides the longer time by the shorter."
+      "feedback": "You divided the older duration by the newer one. “How many times longer” divides the longer time by the shorter."
      },
      {
       "value": 947,
@@ -222,7 +222,7 @@
    "tolerance": 0.02,
    "hints": [
     "Use the same formula as in the worked example, with $R = 4.2\\ \\text{m}$.",
-    "$B = \\frac{\\mu_0 N I}{2\\pi R}$ with $N = 2412$. A smaller $R$ gives a stronger field."
+    "$B = \\mu_0 N I/(2\\pi R)$ with $N = 2412$. A smaller $R$ gives a stronger field."
    ],
    "mistakes": [
     {
@@ -238,7 +238,7 @@
      "feedback": "You used the $134$ turns of one coil only. All $18$ coils together have $N = 18 \\cdot 134 = 2412$ turns."
     }
    ],
-   "solution": "**Given:** $N = 18 \\cdot 134 = 2412$, $I = 68\\ \\text{kA}$, $R = 4.2\\ \\text{m}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$\n\n**Asked:** the toroidal field $B$ at the inner edge of the plasma\n\n**Principle:** Ampère's law around a circle of radius $R$ inside the toroidal field coils: the field falls as $1/R$.\n\n**Formula:**\n\n$$B = \\frac{\\mu_0 N I}{2 \\pi R}$$\n\n**Unit conversions:** $I = 68\\ \\text{kA} = 6.8 \\cdot 10^{4}\\ \\text{A}$\n\n**Substitution:**\n\n$$\\begin{aligned}\nB &= \\frac{4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}}{2\\pi \\cdot 4.2\\ \\text{m}} \\\\\n&\\quad \\cdot 2412 \\cdot 6.8 \\cdot 10^{4}\\ \\text{A} \\\\\n&= 7.81\\ \\text{T}\n\\end{aligned}$$\n\n**Answer:** $B \\approx 7.8\\ \\text{T}$ at the inner edge.\n\n**Reasonableness:** The inner edge is closer to the axis than the centre line, so the field is stronger than $5.3\\ \\text{T}$: $5.29\\ \\text{T} \\cdot \\frac{6.2}{4.2} = 7.81\\ \\text{T}$. At the outer edge it is only $4.0\\ \\text{T}$. This difference across the plasma is what makes the particles drift."
+   "solution": "**Given:** $N = 18 \\cdot 134 = 2412$, $I = 68\\ \\text{kA}$, $R = 4.2\\ \\text{m}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}$\n\n**Asked:** the toroidal field $B$ at the inner edge of the plasma\n\n**Principle:** Ampère's law around a circle of radius $R$ inside the toroidal field coils: the field falls as $1/R$.\n\n**Formula:**\n\n$$B = \\frac{\\mu_0 N I}{2 \\pi R}$$\n\n**Unit conversions:** $I = 68\\ \\text{kA} = 6.8 \\cdot 10^{4}\\ \\text{A}$\n\n**Substitution:**\n\n$$\\begin{aligned}\nB &= \\frac{4\\pi \\cdot 10^{-7}\\ \\text{T} \\cdot \\text{m/A}}{2\\pi \\cdot 4.2\\ \\text{m}} \\\\\n&\\quad \\cdot 2412 \\cdot 6.8 \\cdot 10^{4}\\ \\text{A} \\\\\n&= 7.81\\ \\text{T}\n\\end{aligned}$$\n\n**Answer:** $B \\approx 7.8\\ \\text{T}$ at the inner edge.\n\n**Reasonableness:** The inner edge is closer to the axis than the centre line, so the field is stronger than $5.3\\ \\text{T}$: $5.29\\ \\text{T} \\cdot 6.2 : 4.2 = 7.81\\ \\text{T}$. At the outer edge it is only $4.0\\ \\text{T}$. This difference across the plasma is what makes the particles drift."
   },
   {
    "id": "find-error",
@@ -246,7 +246,7 @@
    "type": "choice",
    "title": "Find the error",
    "optional": true,
-   "prompt": "A student writes: \\\"The toroidal field coils of a tokamak make field lines that close on themselves, so the plasma is confined. The plasma current is only needed to heat the plasma.\\\" What is the main error?",
+   "prompt": "A student writes: “The toroidal field coils of a tokamak make field lines that close on themselves, so the plasma is confined. The plasma current is only needed to heat the plasma.” What is the main error?",
    "choices": [
     {
      "text": "Without the current's poloidal field, the plasma drifts out.",
@@ -306,7 +306,7 @@
    "stage": "tarkista",
    "type": "choice",
    "title": "2. Calculation: field and radius",
-   "prompt": "The toroidal field is $B = \\frac{\\mu_0 N I}{2\\pi R}$. At $R = 3.0\\ \\text{m}$ in a tokamak, $B = 6.0\\ \\text{T}$. What is the field at $R = 6.0\\ \\text{m}$ in the same machine?",
+   "prompt": "The toroidal field is $B = \\mu_0 N I/(2\\pi R)$. At $R = 3.0\\ \\text{m}$ in a tokamak, $B = 6.0\\ \\text{T}$. What is the field at $R = 6.0\\ \\text{m}$ in the same machine?",
    "choices": [
     {
      "text": "$12\\ \\text{T}$",
@@ -319,7 +319,7 @@
     {
      "text": "$3.0\\ \\text{T}$",
      "correct": true,
-     "feedback": "Right. $B \\propto 1/R$, so $B = 6.0\\ \\text{T} \\cdot \\frac{3.0\\ \\text{m}}{6.0\\ \\text{m}} = 3.0\\ \\text{T}$."
+     "feedback": "Right. $B \\propto 1/R$, so $B = 6.0\\ \\text{T} \\cdot 3.0 : 6.0 = 3.0\\ \\text{T}$."
     },
     {
      "text": "$6.0\\ \\text{T}$",
@@ -385,7 +385,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The 22-minute record of 2025 was set in France, by the tokamak WEST at the CEA centre of Cadarache, a few kilometres from ITER. A coil is <span lang=\"fr\">une bobine</span>, and a machine that runs without stopping runs <span lang=\"fr\">en continu</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ts-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: coils and currents\", \"phrases\": [{\"fr\": \"une bobine\", \"en\": \"a coil\", \"tip\": \"yn boh-BEEN: the *u* of *une* is the Finnish *y*; the final *e* is silent.\"}, {\"fr\": \"le courant\", \"en\": \"the current\", \"tip\": \"luh koo-RAHN: *ou* is the Finnish *u*; *ant* is a nasal vowel, and the *t* is silent.\"}, {\"fr\": \"le champ magnétique\", \"en\": \"the magnetic field\", \"tip\": \"luh SHAHN mah-nyay-TEEK: *ch* is like English *sh*; *gn* is like *ny* in English *canyon*.\"}, {\"fr\": \"en continu\", \"en\": \"continuously\", \"tip\": \"ahn kon-tee-NY: two nasal vowels; the final *u* is the Finnish *y*.\"}, {\"fr\": \"Le plasma a tenu vingt-deux minutes.\", \"en\": \"The plasma lasted twenty-two minutes.\", \"tip\": \"luh plahs-MAH ah tuh-NY vant-DUH mee-NYT: the *t* of *vingt* is heard before *deux*\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The 22-minute record of 2025 was set in France, by the tokamak WEST at the CEA centre of Cadarache, a few kilometres from ITER. A coil is <span lang=\"fr\">une bobine</span>, and a machine that runs without stopping runs <span lang=\"fr\">en continu</span>. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ts-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: coils and currents\", \"phrases\": [{\"fr\": \"une bobine\", \"en\": \"a coil\", \"tip\": \"*yn bo-BIN*: the *u* of *{fr}une{/fr}* is the Finnish *y*; the final *e* is silent.\"}, {\"fr\": \"le courant\", \"en\": \"the current\", \"tip\": \"*lö ku-RÃ*: *{fr}ou{/fr}* is the Finnish *u*; *{fr}ant{/fr}* is a nasal vowel, and the *t* is silent.\"}, {\"fr\": \"le champ magnétique\", \"en\": \"the magnetic field\", \"tip\": \"*lö šã ma-nje-TIK*: *{fr}ch{/fr}* is the Finnish *š*; *{fr}gn{/fr}* is the Finnish *nj*.\"}, {\"fr\": \"en continu\", \"en\": \"continuously\", \"tip\": \"*ã kõ-ti-NY*: two nasal vowels; the final *u* is the Finnish *y*.\"}, {\"fr\": \"Le plasma a tenu vingt-deux minutes.\", \"en\": \"The plasma lasted twenty-two minutes.\", \"tip\": \"*lö plas-MA a tö-NY vẽt-DÖ mi-NYT*: the *t* of *{fr}vingt{/fr}* is heard before *{fr}deux{/fr}*.\"}]}</script></div>"
   }
  ]
 }

@@ -36,3 +36,12 @@ Unit fy14-tokamak-stellarator, "Tokamak or stellarator?" (FY14 chapter 6, order 
 - Experiment tables show a boolean measure as the raw words true/false, and a `select` parameter as its raw key (p, d, e, a) in the varied column; the `names`/`values` maps do not translate the table cell.
 - When an experiment name includes its unit, the initial-state line repeats it (value + unit after a name that already ends in the unit).
 - `screenshot.py` captures only step 1 of a staged worked example; the full examples were opened and captured by hand at 390 px.
+
+## Fixes after review (2026-11-01)
+- Pedagogy 1 (option b): the prior-knowledge line no longer mentions drifts ("a particle circles around a field line; a ring has no open ends"). Goal 1 is now "explain how a tokamak and a stellarator confine a plasma in a ring". The review feedback no longer asks "whether that is enough".
+- pred-pulse is asked neutrally ("How long can a tokamak keep its plasma current going?"), with balanced options.
+- compare-talk now asks *why* the tokamak risks disruptions and *why* steady operation is easier for the stellarator. The starters, model and criteria are new.
+- teacher.md says that the component's checks are switched off.
+- The French corner uses the shared style, *gn* is compared with Finnish *nj*, and every tip ends with a full stop.
+- Visual 1: curly quotes in the pulse-data feedback and find-error. Inline `\frac` is replaced by a slash or a ratio in check-2, hint 2 and both reasonableness lines. The toroidal figure's radius dots are larger.
+- Science: neutral beams "become fast ions and carry current"; EAST's 1066 s (20 Jan 2025) is added to the table; the summary says "In 2025 Wendelstein 7-X set a record triple product for long plasmas".

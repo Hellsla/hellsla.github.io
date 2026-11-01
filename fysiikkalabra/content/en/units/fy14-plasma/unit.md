@@ -186,7 +186,7 @@
 
 An atom is neutral: its electrons balance the positive charge of its nucleus. If an electron gets enough energy, it breaks free. The atom becomes a positive **ion**, and the electron becomes a **free electron**. This process is called **ionisation**. A hydrogen atom needs at least $13.6\ \text{eV}$ to lose its electron.
 
-When a gas is heated, its particles move faster and collide harder. At high enough temperatures, the collisions ionise many atoms. The gas becomes a **plasma**: a mixture of ions and free electrons. The American chemist Irving Langmuir gave it this name in 1928.
+When a gas is heated, its particles move faster and collide harder. At high enough temperatures, the collisions ionise many atoms. The gas becomes a **plasma**: a mixture of ions and free electrons. The American chemist Irving Langmuir gave it this name in 1928. In the figure below, the nuclei and ions are red and the electrons blue.
 
 <svg data-fig="ionisation" viewBox="0 0 600 330" role="img" aria-label="Diagram in three boxes from left to right, joined by arrows labelled heating. Left box, gas: six neutral hydrogen atoms, each a small red proton with a blue electron close to it. Middle box, ionisation: a fast particle hits an atom and its electron is knocked away; it takes at least 13.6 eV. Right box, plasma: red protons and blue electrons move separately in all directions; the numbers of positive and negative charges are equal." style="max-width:100%;font-size:24px">
   <rect x="10" y="40" width="180" height="220" rx="10" fill="#fbfaf6" stroke="#c9c2b2" stroke-width="2.5"/>
@@ -251,7 +251,7 @@ A plasma is **quasi-neutral**: in any large volume there is almost the same amou
 
 ## Plasma in nature {Nature}
 
-Most of the ordinary matter that we can see in the universe is plasma, because **stars** are made of it. In the Sun's core the temperature is about $1.57 \cdot 10^{7}\ \text{K}$, and there are no neutral atoms at all.
+Most of the ordinary matter that we can see in the universe is plasma, because **stars** are made of it. In the Sun's core the temperature is about $1.57 \cdot 10^{7}\ \text{K}$, and the matter is almost completely ionised.
 
 On Earth, natural plasma is rare and short-lived. In a **lightning** flash a current of tens of kiloamperes heats a narrow channel of air to about $30\ 000\ ^\circ\text{C}$, and the air becomes a glowing plasma for a fraction of a second.
 
@@ -356,7 +356,7 @@ p &= 2 \cdot 1.0 \cdot 10^{20}\ \text{m}^{-3} \\
 
 <!-- vaihe -->
 
-**Reasonableness:** Air has about $2.5 \cdot 10^{25}$ molecules in each cubic metre at room temperature, $250\ 000$ times more than the plasma, but the plasma is $500\ 000$ times hotter ($1.5 \cdot 10^{8}\ \text{K} : 293\ \text{K}$). Twice as many particles (ions and electrons), $500\ 000 : 250\ 000 = 2$ times more per particle: about $2 \cdot 2 = 4$ times air pressure, as calculated. The Sun's core, at about $2.7 \cdot 10^{16}\ \text{Pa}$, has a pressure some 60 billion times higher.
+**Reasonableness:** Air has about $2.5 \cdot 10^{25}$ molecules in each cubic metre at room temperature, $250\ 000$ times more than the plasma, but the plasma is $500\ 000$ times hotter ($1.5 \cdot 10^{8}\ \text{K} : 293\ \text{K}$). The plasma has $250\ 000$ times fewer ions but is $500\ 000$ times hotter, which gives $2$ times the pressure; ions and electrons together double it again: about $4$ times air pressure, as calculated. The Sun's core, at about $2.7 \cdot 10^{16}\ \text{Pa}$, has a pressure some 60 billion times higher.
 
 ## Common misconception
 

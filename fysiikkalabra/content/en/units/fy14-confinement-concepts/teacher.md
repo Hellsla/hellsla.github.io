@@ -4,7 +4,7 @@
 - **6–11 min, Predict.** Both predictions individually, each with a reason. No answers yet: the feedback opens with the theory sections.
 - **11–30 min, Investigate.** Pairs: NIF's shot table and the target gain of the record shot; the sorting of statements into results, plans and claims; then the pair discussion with the word bank and sentence starters.
 - **30–47 min, Theory summary.** Read the four sections in two halves: pinches and inertial confinement together on the board; then pairs split *Spherical tokamaks and stronger magnets* and *Private concepts* and tell each other the main points. The vocabulary match; back to the predictions.
-- **47–62 min, Apply.** The worked example (NIF energy accounting) on the board; the needed-gain task individually; the matching of concepts and problems; the misconception text.
+- **47–62 min, Apply.** The worked example (NIF energy accounting) on the board; the needed-gain task individually; the misconception text. The matching of concepts and problems is optional.
 - **62–75 min, Check your understanding.** Three checks individually, the funding argument with its sentence starters, the summary and the French corner.
 
 ## Organisation and preparation
@@ -13,7 +13,7 @@
 - The dates of companies change quickly. Before the lesson, check the companies' latest statements (the unit's sources give the state on 1 November 2026) and tell students what has changed: this is a useful lesson in itself.
 
 ## Plan for fast pairs and for running out of time
-- **Fast pairs:** the optional error-spotting task; then find one more fusion company on the web, write one of its claims, and decide what evidence would turn it into a result.
+- **Fast pairs:** the optional matching of concepts and problems and the optional error-spotting task; then find one more fusion company on the web, write one of its claims, and decide what evidence would turn it into a result.
 - **Running out of time:** set the French corner and check 3 as homework; in Theory, read only the key idea and the summary of *Private concepts* aloud.
 
 ## Assessment

@@ -32,3 +32,13 @@ Unit fy14-confinement-concepts, "Pinches, lasers and other paths to fusion" (FY1
 - Experiment tables show a boolean measure as the raw words true/false, and a `select` parameter as its raw key (p, d, e, a) in the varied column; the `names`/`values` maps do not translate the table cell.
 - When an experiment name includes its unit, the initial-state line repeats it (value + unit after a name that already ends in the unit).
 - `screenshot.py` captures only step 1 of a staged worked example; the full examples were opened and captured by hand at 390 px.
+
+## Fixes after review (2026-11-01)
+- Science 1–2: the text now says "released more energy than the laser energy delivered to its target". The misconception gives LLNL's working definition of ignition (G > 1 on the target) and the physical one (alpha heating beats losses).
+- The shot rate is dated: one shot about every two days in 2014, most of them not ignition attempts.
+- The 2024 table row is marked as an estimate.
+- Visual 1: curly quotes in find-error.
+- Pedagogy: the options of review, find-error, check-1 and check-3 are rebalanced. *Pinches* now says that parallel currents attract. The pred-nif feedback names the table and the sort as evidence.
+- problems-match is optional (teacher.md updated).
+- The French corner uses the shared style.
+- Visual: the energy bars are now at least 6 units wide; the "I around the tube" label moved up.

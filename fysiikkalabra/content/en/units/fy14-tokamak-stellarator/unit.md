@@ -95,9 +95,9 @@ Here $\mu_0 = 4\pi \cdot 10^{-7}\ \text{T} \cdot \text{m/A}$. The field falls as
   <path d="M206,73.5 L192,80 L192,67 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <circle cx="192" cy="210" r="38.5" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
   <line x1="192" y1="210" x2="335.5" y2="210" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <circle cx="265.5" cy="210" r="5" fill="#1f2933"/>
-  <circle cx="300.5" cy="210" r="5" fill="#1f2933"/>
-  <circle cx="335.5" cy="210" r="5" fill="#1f2933"/>
+  <circle cx="265.5" cy="210" r="8" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="300.5" cy="210" r="8" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="335.5" cy="210" r="8" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="265.5" y1="210" x2="398" y2="74" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="404" y="54" width="96" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px">$R = 4.2\ \text{m}$</div></foreignObject>
   <foreignObject x="404" y="90" width="96" height="32" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:27px;color:#2b8a3e">$B = 7.8\ \text{T}$</div></foreignObject>
@@ -127,7 +127,7 @@ A transformer works only while the current in its primary coil keeps *changing*,
 
 But a tokamak current can also be driven **without induction**:
 
-- **neutral beams**: fast neutral atoms shot into the plasma push its charges round the ring;
+- **neutral beams**: fast neutral atoms enter the plasma, become fast ions and carry current round the ring;
 - **radio-frequency waves**, such as lower hybrid waves, push electrons along the field;
 - the **bootstrap current**: the plasma's own pressure gradient drives part of the current.
 
@@ -188,4 +188,4 @@ B &= \frac{4\pi \cdot 10^{-7}\ \text{T} \cdot \text{m/A}}{2\pi \cdot 6.2\ \text{
 - A purely toroidal field cannot hold a plasma: in the curved field that is stronger on the inside, ions and electrons drift apart and the plasma drifts outward. The field lines must be **twisted** (toroidal + poloidal = helical).
 - The toroidal field is $B = \mu_0 N I / (2\pi R)$, so it falls as $1/R$ across the plasma.
 - **Tokamak:** the poloidal field comes from a large plasma current, driven inductively by the central solenoid (pulses) or non-inductively by beams, waves and the bootstrap current (long pulses, perhaps steady). Risk: disruptions.
-- **Stellarator:** the twist comes from three-dimensional coils. Steady by design and without disruptions, but the coils are difficult. Wendelstein 7-X shows that optimised stellarators can compete.
+- **Stellarator:** the twist comes from three-dimensional coils. Steady by design and without disruptions, but the coils are difficult. In 2025 Wendelstein 7-X set a record triple product for long plasmas.

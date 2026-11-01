@@ -15,7 +15,7 @@
    "id": "hook",
    "stage": "herata",
    "type": "hook",
-   "text": "On a clear winter night in Kilpisjärvi, green curtains of light move silently across the sky, sometimes with a red top edge. In a summer storm, a lightning flash lights up the whole sky for a moment. In the south of France, engineers are building ITER, a machine whose fuel will be about ten times hotter than the centre of the Sun, held only a few metres from steel walls. Physicists say that all three contain the same unusual kind of matter.",
+   "text": "On a clear winter night in Kilpisjärvi, green curtains of light move silently across the sky, sometimes with a red top edge. In a summer storm, a lightning flash lights up the whole sky for a moment. In the south of France, engineers are building ITER, a machine whose fuel will be about ten times hotter than the centre of the Sun, its hot core only about two metres from steel walls. Physicists say that all three contain the same unusual kind of matter.",
    "question": "What kind of matter is this, and how can something so hot be kept inside a machine?"
   },
   {
@@ -26,16 +26,16 @@
    "prompt": "In the chapter *Fusion reactions: from the Sun to deuterium and tritium* you met the Coulomb barrier. Why must the fuel of a fusion reactor be extremely hot?",
    "choices": [
     {
-     "text": "The nuclei must move fast enough to get very close despite their electric repulsion.",
+     "text": "Fast nuclei can come close despite their electric repulsion.",
      "correct": true,
      "feedback": "Right. Both nuclei are positive and repel each other. Only very fast nuclei come close enough for the strong force to act, often with help from quantum tunnelling. Temperature measures how fast the particles move."
     },
     {
-     "text": "The heat breaks the nuclei into protons and neutrons, which then join again.",
+     "text": "The heat breaks nuclei into protons and neutrons, which rejoin.",
      "feedback": "Heat does not break nuclei apart: the particle energies in a fusion plasma, about $10\\ \\text{keV}$, are far below the binding energy of a nucleus (millions of electronvolts). The nuclei must *join*, and the problem is their repulsion."
     },
     {
-     "text": "Hot fuel has more mass, and the extra mass is turned into energy.",
+     "text": "Hot fuel has more mass, and this extra mass becomes energy.",
      "feedback": "The energy of fusion comes from the mass defect of the *reaction*, not from heating the fuel. Heat only gives the nuclei the speed they need to overcome the Coulomb repulsion."
     }
    ]
@@ -52,16 +52,16 @@
    "prompt": "What makes the northern lights glow?",
    "choices": [
     {
-     "text": "Sunlight is reflected by ice crystals high in the cold polar air.",
+     "text": "Sunlight is reflected by ice crystals high in the polar air.",
      "feedback": "Reflected light would have the colours of sunlight and would appear on the day side. The aurora glows in the dark, with sharp green and red colours of oxygen. Its light is *emitted* by the air, which is hit by fast electrons from space."
     },
     {
-     "text": "Fast electrons from space hit atoms and molecules of the upper air, which give off light.",
+     "text": "Fast electrons from space hit the upper air and make it glow.",
      "correct": true,
      "feedback": "The theory supports this. Electrons accelerated in near-Earth space follow the magnetic field lines down to the polar regions. At about $100\\text{–}150\\ \\text{km}$ they ionise and excite oxygen and nitrogen, which emit green, red and blue light. The region where this happens is a plasma."
     },
     {
-     "text": "The air above the poles is so hot that it glows like a flame.",
+     "text": "The air high above the poles is so hot that it glows like a flame.",
      "feedback": "The air at these heights is not hot like a flame. The light comes from single atoms and molecules that are hit by fast electrons and then emit light of their own exact wavelengths, such as green at $557.7\\ \\text{nm}$ from oxygen."
     },
     {
@@ -86,12 +86,12 @@
      "feedback": "This would be true only if both had the same number of particles in each cubic metre. They do not: with $p = nkT$, ITER's plasma has about $4 \\cdot 10^{5}\\ \\text{Pa}$, the Sun's core about $2.7 \\cdot 10^{16}\\ \\text{Pa}$, some 60 billion times more, because it is so much denser."
     },
     {
-     "text": "Far lower, only a few times air pressure, because it is very thin.",
+     "text": "Far lower, only a few times air pressure: it is very thin.",
      "correct": true,
      "feedback": "The theory supports this. $p = nkT$ depends on the density too. ITER's plasma has about $10^{20}$ ions per cubic metre and a pressure of about $4 \\cdot 10^{5}\\ \\text{Pa}$, four times air pressure. The Sun's core, held together by gravity, has about $2.7 \\cdot 10^{16}\\ \\text{Pa}$."
     },
     {
-     "text": "About the same, because both are hot enough for fusion.",
+     "text": "About the same, because both of them are hot enough for fusion.",
      "feedback": "Being hot enough for fusion fixes neither the density nor the pressure. The Sun's core is very dense and has about $2.7 \\cdot 10^{16}\\ \\text{Pa}$; ITER's thin plasma has only about $4 \\cdot 10^{5}\\ \\text{Pa}$."
     }
    ]
@@ -101,7 +101,7 @@
    "stage": "tutki",
    "type": "text",
    "title": "Investigation 1: plasma or not?",
-   "text": "A plasma contains so many free electrons and ions that electric and magnetic forces control how it behaves. Read each description and decide.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-pl-sort\"><script type=\"application/json\">{\"prompt\": \"Is the matter described a plasma, or mostly neutral atoms and molecules?\", \"options\": [\"a plasma\", \"mostly neutral\"], \"items\": [{\"text\": \"the air in your classroom\", \"answer\": \"mostly neutral\", \"feedback\": \"At room temperature collisions are far too gentle to free electrons: air is a gas of neutral molecules (and it insulates well).\"}, {\"text\": \"the narrow channel of a lightning flash\", \"answer\": \"a plasma\", \"feedback\": \"The current heats the channel to about 30 000 °C, so many atoms lose electrons and the channel conducts.\"}, {\"text\": \"the centre of the Sun\", \"answer\": \"a plasma\", \"feedback\": \"At about 15.7 million kelvins no atom keeps its electrons: the Sun's core is fully ionised.\"}, {\"text\": \"the glowing gas in a neon sign\", \"answer\": \"a plasma\", \"feedback\": \"The voltage accelerates electrons, which ionise and excite the neon atoms. A small fraction of ions is enough to make it a plasma that conducts.\"}, {\"text\": \"ice on a frozen lake\", \"answer\": \"mostly neutral\", \"feedback\": \"A solid of neutral water molecules; its electrons stay bound.\"}, {\"text\": \"the fuel inside ITER during operation\", \"answer\": \"a plasma\", \"feedback\": \"At about 150 million kelvins the hydrogen isotopes are completely ionised: nuclei and free electrons.\"}], \"done\": \"Plasmas can be very hot (the Sun's core) or only partly ionised (a neon sign). What they share is a large number of free charges.\"}</script></div>"
+   "text": "A plasma contains so many free electrons and ions that electric and magnetic forces control how it behaves. Read each description and decide.\n\n<div class=\"fx\" data-fx=\"match\" id=\"fx-pl-sort\"><script type=\"application/json\">{\"prompt\": \"Is the matter described a plasma, or mostly neutral atoms and molecules?\", \"options\": [\"a plasma\", \"mostly neutral\"], \"items\": [{\"text\": \"the air in your classroom\", \"answer\": \"mostly neutral\", \"feedback\": \"At room temperature collisions are far too gentle to free electrons: air is a gas of neutral molecules (and it insulates well).\"}, {\"text\": \"the narrow channel of a lightning flash\", \"answer\": \"a plasma\", \"feedback\": \"The current heats the channel to about 30 000 °C, so many atoms lose electrons and the channel conducts.\"}, {\"text\": \"the centre of the Sun\", \"answer\": \"a plasma\", \"feedback\": \"At about 15.7 million kelvins almost no atom keeps its electrons: the Sun's core is almost completely ionised.\"}, {\"text\": \"the glowing gas in a neon sign\", \"answer\": \"a plasma\", \"feedback\": \"The voltage accelerates electrons, which ionise and excite the neon atoms. A small fraction of ions is enough to make it a plasma that conducts.\"}, {\"text\": \"ice on a frozen lake\", \"answer\": \"mostly neutral\", \"feedback\": \"A solid of neutral water molecules; its electrons stay bound.\"}, {\"text\": \"the air at 110 km during a bright aurora\", \"answer\": \"a plasma\", \"feedback\": \"Fast electrons from space ionise and excite the thin upper air, which glows. The ionised layer conducts currents of its own.\"}, {\"text\": \"the fuel inside ITER during operation\", \"answer\": \"a plasma\", \"feedback\": \"At about 150 million kelvins the hydrogen isotopes are completely ionised: nuclei and free electrons.\"}], \"done\": \"Plasmas can be very hot (the Sun's core) or only partly ionised (a neon sign). What they share is a large number of free charges.\"}</script></div>"
   },
   {
    "id": "plasma-data",
@@ -233,7 +233,7 @@
    "prompt": "A student calculates the pressure of the plasma in the worked example and writes: $p = nkT = 1.0 \\cdot 10^{20}\\ \\text{m}^{-3} \\cdot 1.381 \\cdot 10^{-23}\\ \\text{J/K} \\cdot 1.5 \\cdot 10^{8}\\ \\text{K} = 2.1 \\cdot 10^{5}\\ \\text{Pa}$. What is wrong?",
    "choices": [
     {
-     "text": "Only the ions were counted; the electrons push too.",
+     "text": "Only the ions were counted, not the electrons.",
      "correct": true,
      "feedback": "Right. The plasma has $1.0 \\cdot 10^{20}$ ions *and* $1.0 \\cdot 10^{20}$ electrons in each cubic metre, at the same temperature. So $p = 2nkT = 4.1 \\cdot 10^{5}\\ \\text{Pa}$."
     },
@@ -246,7 +246,7 @@
      "feedback": "A thin, hot plasma behaves like an ideal gas of ions and electrons, so $p = nkT$ works if all particles are counted. The student forgot the electrons."
     },
     {
-     "text": "There is no error; the pressure is $2.1 \\cdot 10^{5}\\ \\text{Pa}$.",
+     "text": "There is no error: the pressure is $2.1 \\cdot 10^{5}\\ \\text{Pa}$ as written.",
      "feedback": "Count the particles: one free electron for every hydrogen ion. The electrons also hit any surface and add their pressure, so the result is twice as large."
     }
    ]
@@ -271,16 +271,16 @@
      "feedback": "Not always: a lightning channel is about $3 \\cdot 10^{4}\\ \\text{K}$ and a neon sign is cooler still. What matters is the number of free charges, not a fixed temperature."
     },
     {
-     "text": "It has a large net positive charge.",
+     "text": "It has a large net positive electric charge.",
      "feedback": "A plasma is quasi-neutral: in a large volume the ions' charge and the electrons' charge almost cancel."
     },
     {
-     "text": "Its free charges carry currents and feel magnetic forces.",
+     "text": "Its free charges feel magnetic forces.",
      "correct": true,
      "feedback": "Right. Free ions and electrons let the plasma conduct electricity and make it respond strongly to magnetic fields. This is why a magnetic field can hold a plasma, the topic of the next unit."
     },
     {
-     "text": "Its particles have no mass, only energy.",
+     "text": "Its particles have no mass, only their energy.",
      "feedback": "Ions and electrons have their normal masses. Ionisation only separates the electrons from the nuclei."
     }
    ]
@@ -293,7 +293,7 @@
    "prompt": "Which statement about the triple product $n T \\tau_\\text{E}$ for deuterium–tritium fuel is correct?",
    "choices": [
     {
-     "text": "At the same temperature, doubling $n$ halves the $\\tau_\\text{E}$ needed.",
+     "text": "At the same $T$, doubling $n$ halves the $\\tau_\\text{E}$ needed.",
      "correct": true,
      "feedback": "Right. The condition is a product: if $n$ is twice as large and $T$ stays the same, $\\tau_\\text{E}$ can be half as long. A denser plasma can make up for a shorter confinement time."
     },
@@ -306,7 +306,7 @@
      "feedback": "The requirement is smallest near $14\\ \\text{keV}$. Far above that, the fusion rate grows only slowly while the pressure and the losses keep growing, so the needed product rises again."
     },
     {
-     "text": "It measures the plasma's fusion power in watts.",
+     "text": "It measures the fusion power of the plasma in watts.",
      "feedback": "Its unit is $\\text{keV} \\cdot \\text{s/m}^3$, not watts. It is a figure of merit that compares a plasma with the condition for ignition."
     }
    ]
@@ -319,16 +319,16 @@
    "prompt": "On clear nights, people in Utsjoki see the northern lights about three nights out of four, but people in Helsinki only about once a month. What is the main reason?",
    "choices": [
     {
-     "text": "Utsjoki is closer to the auroral oval, where electrons reach the air.",
+     "text": "Utsjoki lies under the auroral oval.",
      "correct": true,
      "feedback": "Right. The electrons follow the Earth's magnetic field lines, which lead them down in a band around the magnetic pole, about $2500\\ \\text{km}$ from it. Northern Lapland lies under this band; Helsinki, about $1000\\ \\text{km}$ further south, sees the aurora only when the oval grows during strong magnetic storms."
     },
     {
-     "text": "The air in Lapland is colder, and cold air glows more easily.",
+     "text": "The air in Lapland is colder, and cold air glows easily.",
      "feedback": "The light comes from about $100\\text{–}150\\ \\text{km}$ up, far above the weather. The temperature of the air near the ground does not matter."
     },
     {
-     "text": "Lapland is closer to the Sun during the winter months.",
+     "text": "Lapland is closer to the Sun in the winter.",
      "feedback": "The distance to the Sun is practically the same for all of Finland. The difference is where the Earth's magnetic field leads the electrons."
     },
     {
@@ -341,20 +341,20 @@
    "id": "lang-explain",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>\"Hotter than the Sun\" means …, but it does not mean …</li><li>The Sun's core produces only about … in each cubic metre, whereas …</li><li>A reactor must be hotter because …</li><li>The wall does not melt because …</li></ul></div>"
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The headline mixes up … and …</li><li>With $p = nkT$, the pressure is only … because …</li><li>The walls do not touch … because …</li><li>What the walls must survive is …, not …</li><li>So the headline is partly right: …</li></ul></div>"
   },
   {
    "id": "check-explain",
    "stage": "tarkista",
    "type": "explain",
-   "title": "4. Explain to a friend",
-   "prompt": "A friend reads that ITER's plasma will be \\\"ten times hotter than the Sun\\\" and says: \\\"So ITER will be more powerful than the Sun's core, and it will melt.\\\" Write four or five sentences to answer your friend. Use at least two numbers from this unit.",
-   "model": "\\\"Hotter than the Sun\\\" only means a higher temperature: about $1.5 \\cdot 10^{8}\\ \\text{K}$ in ITER and $1.57 \\cdot 10^{7}\\ \\text{K}$ in the Sun's core. It does not mean more power: the Sun's core produces only about $280\\ \\text{W}$ per cubic metre, because it is huge and its reactions are slow. A reactor must be hotter because it has no gravity to hold a dense plasma for billions of years, so it needs fast reactions. The plasma does not melt the machine, because it is extremely thin, with a pressure of only about four atmospheres, and magnetic fields keep it away from the walls. Still, its energy must be controlled, because a sudden loss could damage the wall.",
+   "title": "4. Judge a headline",
+   "prompt": "A news headline says: “Fusion reactor will be hotter than the Sun, so it needs walls that survive 150 million degrees.” Write four or five sentences: what is right and what is wrong in the headline? Use $p = nkT$ and at least two numbers from this unit.",
+   "model": "The headline mixes up the temperature of the plasma with the temperature of the walls. The plasma core does reach about $1.5 \\cdot 10^{8}\\ \\text{K}$, but it is extremely thin: about $10^{20}$ ions per cubic metre, some $250\\ 000$ times fewer particles than in air. With $p = nkT$, the pressure is only about $4 \\cdot 10^{5}\\ \\text{Pa}$, four times air pressure, so the plasma carries little energy per cubic metre. The walls do not touch the hot core, because magnetic fields hold it about two metres away. What the walls must survive is the heat and the neutrons that leave the plasma, not a temperature of $150$ million degrees, so the headline is only partly right.",
    "criteria": [
-    "The answer separates temperature from power (or pressure) and gives a number for at least one of them.",
-    "The answer explains why a reactor needs a higher temperature than the Sun (no gravity, it cannot wait billions of years).",
-    "The answer explains why the walls do not melt: the plasma is very thin and held away from the walls by magnetic fields.",
-    "The answer is written to the friend in clear sentences, using a sentence starter or a linking word such as whereas or because."
+    "The answer separates the temperature of the plasma from the temperature (or load) of the walls.",
+    "The answer uses $p = nkT$ to show that the hot plasma is very thin and has a low pressure, with a number.",
+    "The answer says that magnetic fields keep the plasma away from the walls.",
+    "The answer judges the headline in clear sentences, using a sentence starter or a linking word such as but or because."
    ]
   },
   {
@@ -369,7 +369,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, plasma is <span lang=\"fr\">le plasma</span>, the northern lights are <span lang=\"fr\">les aurores boréales</span>, and lightning is <span lang=\"fr\">la foudre</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-pl-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: plasma in nature\", \"phrases\": [{\"fr\": \"le plasma\", \"en\": \"plasma\", \"tip\": \"luh plahs-MAH: stress the last syllable, as in most French words.\"}, {\"fr\": \"une aurore boréale\", \"en\": \"a northern light (aurora)\", \"tip\": \"yn oh-ROHR boh-ray-AHL: the *u* of *une* is the Finnish *y*.\"}, {\"fr\": \"la foudre\", \"en\": \"lightning\", \"tip\": \"lah FOODR: *ou* is the Finnish *u*.\"}, {\"fr\": \"le Soleil\", \"en\": \"the Sun\", \"tip\": \"luh soh-LEY: *-eil* sounds like the Finnish *ei*.\"}, {\"fr\": \"très chaud\", \"en\": \"very hot\", \"tip\": \"tray SHOH: *ch* is like English *sh*, and the final *d* is silent.\"}, {\"fr\": \"Le plasma est le quatrième état de la matière.\", \"en\": \"Plasma is the fourth state of matter.\", \"tip\": \"kah-tree-EM ay-TAH: *état* means *state*, as in a state of matter.\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, plasma is <span lang=\"fr\">le plasma</span>, the northern lights are <span lang=\"fr\">les aurores boréales</span>, and lightning is <span lang=\"fr\">la foudre</span>. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-pl-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: plasma in nature\", \"phrases\": [{\"fr\": \"le plasma\", \"en\": \"plasma\", \"tip\": \"*lö plas-MA*: stress the last syllable, as in most French words.\"}, {\"fr\": \"une aurore boréale\", \"en\": \"a northern light (aurora)\", \"tip\": \"*yn o-ROR bo-re-AL*: the *u* of *{fr}une{/fr}* is the Finnish *y*.\"}, {\"fr\": \"la foudre\", \"en\": \"lightning\", \"tip\": \"*la FUDR*: *{fr}ou{/fr}* is the Finnish *u*.\"}, {\"fr\": \"le Soleil\", \"en\": \"the Sun\", \"tip\": \"*lö so-LEJ*: *{fr}-eil{/fr}* sounds like the Finnish *ei*.\"}, {\"fr\": \"très chaud\", \"en\": \"very hot\", \"tip\": \"*trä ŠO*: *{fr}ch{/fr}* is the Finnish *š*, and the final *d* is silent.\"}, {\"fr\": \"Le plasma est le quatrième état de la matière.\", \"en\": \"Plasma is the fourth state of matter.\", \"tip\": \"*lö plas-MA e lö kat-ri-ÄM e-TA dö la ma-TJÄR*: *{fr}état{/fr}* means *state*.\"}]}</script></div>"
   }
  ]
 }

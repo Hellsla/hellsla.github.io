@@ -35,3 +35,12 @@ Unit fy14-plasma, "Plasma: the fourth state of matter" (FY14 chapter 4, order 1)
 - Experiment tables show a boolean measure as the raw words true/false, and a `select` parameter as its raw key (p, d, e, a) in the varied column; the `names`/`values` maps do not translate the table cell.
 - When an experiment name includes its unit, the initial-state line repeats it (value + unit after a name that already ends in the unit).
 - `screenshot.py` captures only step 1 of a staged worked example; the full examples were opened and captured by hand at 390 px.
+
+## Fixes after review (2026-11-01)
+- Visual 1: the quotes in check-explain are now curly quotes (no `\"` left in inquiry.json).
+- Pedagogy 1: all seven choices were rebalanced to within ±30 %, and the correct option is now shorter than at least one distractor in every choice.
+- Pedagogy 2: check-explain is now a transfer task ("Judge a headline", using p = nkT), with new starters.
+- Pedagogy 3: an aurora item was added to plasma-sort.
+- Pedagogy 4: the French corner uses the shared respelling style (italic, Finnish letters, õ/ã/ẽ, explained in the corner).
+- Science: the hook now says the core is "about two metres from steel walls"; the Sun's core is "almost completely ionised" in the text and the sort feedback.
+- Visual: the reasonableness step is reworded, and the text before the ionisation figure names the colours.

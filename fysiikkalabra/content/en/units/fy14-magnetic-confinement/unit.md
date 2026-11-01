@@ -141,7 +141,7 @@ The force is always **perpendicular** both to $\overline{v}$ and to $\overline{B
   <foreignObject x="291" y="308" width="18" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#ffffff">$+$</div></foreignObject>
   <line x1="420" y1="200" x2="420" y2="111" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
   <path d="M420,96 L427,112 L413,112 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="430" y="89.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{v}$</span></div></foreignObject>
+  <foreignObject x="438" y="89.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{v}$</span></div></foreignObject>
   <line x1="420" y1="200" x2="355" y2="200" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M340,200 L356,193 L356,207 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="343.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{F}$</span></div></foreignObject>
@@ -250,7 +250,7 @@ A straight field always has ends, and every particle with $v_{\parallel} \neq 0$
   <path d="M32,132 L31,137 L30,140.5 L29.5,142 L28.5,141 L27.5,138 L26.5,133.5 L25.5,128.5 L25,124.5 L24,122 L23,122.5 L22,125 L21,129 L20.5,134 L19.5,138.5 L18.5,141.5 L17.5,142 L16.5,140 L16,136 L15,131 L14,126.5 L13,123 L12,122 L11.5,123 L10.5,126.5 L9.5,131.5 L8.5,136 L7.5,140 L7,142 L6,141.5 L5,138.5 L4,134 L3,129 L2.5,125" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <line x1="2.5" y1="125" x2="-3.5" y2="125" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M-13.5,125 L-2.5,120 L-2.5,130 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="8.5" y="257.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{open ends: particles leak}$</div></foreignObject>
+  <foreignObject x="8.5" y="269.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{open ends: particles leak}$</div></foreignObject>
   <ellipse cx="542" cy="140" rx="8" ry="40" fill="none" stroke="#e8590c" stroke-width="6" transform="rotate(90 542 140)"/>
   <ellipse cx="529.5" cy="186" rx="8" ry="40" fill="none" stroke="#e8590c" stroke-width="6" transform="rotate(120 529.5 186)"/>
   <ellipse cx="496" cy="219.5" rx="8" ry="40" fill="none" stroke="#e8590c" stroke-width="6" transform="rotate(150 496 219.5)"/>
@@ -272,7 +272,7 @@ A straight field always has ends, and every particle with $v_{\parallel} \neq 0$
   <circle cx="450" cy="140" r="114" fill="none" stroke="#2b8a3e" stroke-width="2.5"/>
   <line x1="564" y1="136" x2="564" y2="140" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M564,150 L559,139 L569,139 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="371" y="257.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{a ring: no ends}$</div></foreignObject>
+  <foreignObject x="371" y="269.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{a ring: no ends}$</div></foreignObject>
 </svg>
 
 But in a ring the coils are closer together on the inside, so the field is **stronger near the centre and weaker on the outside**, and the field lines are curved. A circling particle then **drifts** slowly across the field: ions one way, electrons the other. The charges separate, an electric field forms, and the whole plasma drifts outward into the wall. The cure is to **twist** the field lines, which is the topic of the chapter *From Early Machines to Modern Reactors*.

@@ -26,16 +26,16 @@
    "prompt": "In the unit *Charged particles and magnetic confinement* you saw a proton in a straight magnetic field. What happens to a particle that has some velocity along the field lines?",
    "choices": [
     {
-     "text": "It spirals along a field line and escapes through an open end.",
+     "text": "It spirals along a field line and out of an end.",
      "correct": true,
      "feedback": "Right. The field holds particles across the field lines, but not along them. In a straight field every particle with $v_{\\parallel} \\neq 0$ eventually reaches an end, unless a magnetic mirror reflects it. Keep this in mind for the straight pinch machines of the 1950s."
     },
     {
-     "text": "It stays in place, because the field stops all motion.",
+     "text": "It stays in place, as the field stops all motion.",
      "feedback": "The magnetic force is perpendicular to the velocity: it bends the motion across the field into circles, but it does not affect the motion along the field."
     },
     {
-     "text": "It is pushed to the centre of the tube by the field.",
+     "text": "The field pushes it to the centre of the tube.",
      "feedback": "The force points to the centre of the particle's own small circle, not to the centre of the machine. Along the field the particle moves freely."
     }
    ]
@@ -88,7 +88,7 @@
     {
      "text": "No: making the laser light took far more electricity.",
      "correct": true,
-     "feedback": "The theory supports this. The laser pulse of $2.05\\ \\text{MJ}$ took about $300\\ \\text{MJ}$ of electricity, so the fusion energy was only about $1\\ \\%$ of it. The target gain above one was still a real scientific first."
+     "feedback": "The evidence supports this: the theory, the NIF table and the sorting task. The laser pulse of $2.05\\ \\text{MJ}$ took about $300\\ \\text{MJ}$ of electricity, so the fusion energy was only about $1\\ \\%$ of it. The target gain above one was still a real scientific first."
     },
     {
      "text": "Yes, and since then NIF has supplied electricity to the grid.",
@@ -106,8 +106,8 @@
    "type": "interpret",
    "title": "Investigation 1: NIF's ignition shots",
    "source": "statistics",
-   "source_note": "Lawrence Livermore National Laboratory, *Achieving fusion ignition* (lmf.llnl.gov), read 2026-11-01. Selected shots; energies as published by LLNL.",
-   "text": "| Date | Laser energy on target (MJ) | Fusion energy (MJ) |\n| --- | --- | --- |\n| 5 Dec 2022 | $2.05$ | $3.15$ |\n| 30 Jul 2023 | $2.05$ | $3.88$ |\n| 12 Feb 2024 | $2.2$ | $5.2$ |\n| 23 Feb 2025 | $2.05$ | $5.0$ |\n| 7 Apr 2025 | $2.08$ | $8.6$ |\n\nThe **target gain** is the fusion energy divided by the laser energy on target: $G = E_\\text{fusion} : E_\\text{laser}$.",
+   "source_note": "Lawrence Livermore National Laboratory, *Achieving fusion ignition* (lmf.llnl.gov), read 2026-11-01. Selected shots; energies as published by LLNL (to one decimal for 2024, and the fusion energy of that shot only estimated).",
+   "text": "| Date | Laser energy on target (MJ) | Fusion energy (MJ) |\n| --- | --- | --- |\n| 5 Dec 2022 | $2.05$ | $3.15$ |\n| 30 Jul 2023 | $2.05$ | $3.88$ |\n| 12 Feb 2024 | $2.2$ | about $5.2$ (estimate) |\n| 23 Feb 2025 | $2.05$ | $5.0$ |\n| 7 Apr 2025 | $2.08$ | $8.6$ |\n\nThe **target gain** is the fusion energy divided by the laser energy on target: $G = E_\\text{fusion} : E_\\text{laser}$.",
    "question": {
     "type": "numeric",
     "prompt": "Calculate the target gain $G$ of the record shot on 7 April 2025.",
@@ -239,8 +239,9 @@
    "id": "problems-match",
    "stage": "sovella",
    "type": "text",
+   "optional": true,
    "title": "Compare: each path and its main problem",
-   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-cc-problems\"><script type=\"application/json\">{\"prompt\": \"Which difficulty belongs to which concept?\", \"options\": [\"kinks and sausages\", \"plasma escapes at the ends\", \"inefficient lasers, slow shots\", \"crowded central column\", \"heat and neutrons in a small space\"], \"items\": [{\"text\": \"Z-pinch\", \"answer\": \"kinks and sausages\", \"feedback\": \"The squeezed column is unstable: it bends (kinks) or pinches off (sausages).\"}, {\"text\": \"theta-pinch in a straight tube\", \"answer\": \"plasma escapes at the ends\", \"feedback\": \"Its field runs along the tube, and particles stream out of the open ends.\"}, {\"text\": \"laser inertial fusion\", \"answer\": \"inefficient lasers, slow shots\", \"feedback\": \"NIF's lasers turn under 1 % of their electricity into light on target, and fire a few hundred times a year, not several times a second.\"}, {\"text\": \"spherical tokamak\", \"answer\": \"crowded central column\", \"feedback\": \"The narrow centre leaves little room for the solenoid, superconducting coils and neutron shielding.\"}, {\"text\": \"compact HTS tokamak\", \"answer\": \"heat and neutrons in a small space\", \"feedback\": \"A smaller machine with the same fusion power has stronger heat and neutron loads on every square metre of wall.\"}], \"done\": \"Every concept trades one difficulty for another.\"}</script></div>"
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-cc-problems\"><script type=\"application/json\">{\"prompt\": \"Which difficulty belongs to which concept?\", \"options\": [\"kinks and sausages\", \"plasma escapes at the ends\", \"inefficient lasers, slow shots\", \"crowded central column\", \"heat and neutrons in a small space\"], \"items\": [{\"text\": \"Z-pinch\", \"answer\": \"kinks and sausages\", \"feedback\": \"The squeezed column is unstable: it bends (kinks) or pinches off (sausages).\"}, {\"text\": \"theta-pinch in a straight tube\", \"answer\": \"plasma escapes at the ends\", \"feedback\": \"Its field runs along the tube, and particles stream out of the open ends.\"}, {\"text\": \"laser inertial fusion\", \"answer\": \"inefficient lasers, slow shots\", \"feedback\": \"NIF's lasers turn under 1 % of their electricity into light on target, and in 2014 fired about once every two days, not several times a second.\"}, {\"text\": \"spherical tokamak\", \"answer\": \"crowded central column\", \"feedback\": \"The narrow centre leaves little room for the solenoid, superconducting coils and neutron shielding.\"}, {\"text\": \"compact HTS tokamak\", \"answer\": \"heat and neutrons in a small space\", \"feedback\": \"A smaller machine with the same fusion power has stronger heat and neutron loads on every square metre of wall.\"}], \"done\": \"Every concept trades one difficulty for another.\"}</script></div>"
   },
   {
    "id": "find-error",
@@ -248,23 +249,23 @@
    "type": "choice",
    "title": "Find the error",
    "optional": true,
-   "prompt": "A news text says: \\\"The target gain of $1.5$ means that the National Ignition Facility now produces $50\\ \\%$ more energy than it uses, so laser fusion power plants can be built.\\\" What is the main error?",
+   "prompt": "A news text says: “The target gain of $1.5$ means that the National Ignition Facility now produces $50\\ \\%$ more energy than it uses, so laser fusion power plants can be built.” What is the main error?",
    "choices": [
     {
-     "text": "The gain counts only the laser light on target, not the electricity.",
+     "text": "The gain ignores the electricity for the lasers.",
      "correct": true,
      "feedback": "Right. $G = 3.15 : 2.05$ compares the fusion energy with the laser light on the target. The facility used about $300\\ \\text{MJ}$ of electricity, a hundred times more than the fusion energy."
     },
     {
-     "text": "The gain is wrong: it should be $3.15 - 2.05 = 1.1$.",
+     "text": "The gain is wrong: it should be $3.15 - 2.05 = 1.1$ instead.",
      "feedback": "A gain is a ratio, not a difference: $3.15 : 2.05 \\approx 1.5$ is right. The error is in what the gain is compared with."
     },
     {
-     "text": "NIF uses magnetic confinement, not lasers.",
+     "text": "NIF uses magnetic confinement, not powerful lasers.",
      "feedback": "NIF is an inertial confinement facility: its 192 lasers drive the implosion. The error is in reading the gain as a gain of the whole facility."
     },
     {
-     "text": "There is no error; the text is correct.",
+     "text": "There is no error; the news text is quite correct.",
      "feedback": "Ignition was a real milestone, but the facility draws far more electricity than the target releases, and a plant would also need many cheap shots every second."
     }
    ]
@@ -285,20 +286,20 @@
    "prompt": "How do a Z-pinch and a theta-pinch differ?",
    "choices": [
     {
-     "text": "In a Z-pinch the current flows along the plasma; in a theta-pinch it flows around the tube.",
+     "text": "Z: current along the plasma; theta: around the tube.",
      "correct": true,
      "feedback": "Right. In a Z-pinch the current along the column makes a circular field that squeezes it. In a theta-pinch a coil current around the tube makes a field along the tube, which squeezes the plasma from all sides."
     },
     {
-     "text": "A Z-pinch uses lasers; a theta-pinch uses magnetic fields.",
+     "text": "A Z-pinch uses lasers, and a theta-pinch uses magnets.",
      "feedback": "Both are magnetic: in both, a current and its magnetic field squeeze the plasma. Lasers are used in inertial confinement."
     },
     {
-     "text": "A Z-pinch is a ring; a theta-pinch is a sphere.",
+     "text": "A Z-pinch is a ring, and a theta-pinch is a sphere.",
      "feedback": "Both were usually straight tubes. The names come from the direction of the current: along the axis $z$ or around it, in the direction of the angle $\\theta$."
     },
     {
-     "text": "Only the theta-pinch has a magnetic field.",
+     "text": "Only the theta-pinch has a magnetic field at all.",
      "feedback": "Every current has a magnetic field. In a Z-pinch the field of the plasma current itself does the squeezing."
     }
    ]
@@ -341,11 +342,11 @@
      "feedback": "This is a company's plan and prediction. Nothing of it has been measured yet."
     },
     {
-     "text": "Fusion electricity will be sold to a data-centre company from 2028.",
+     "text": "Fusion electricity will be sold to a data-centre firm from 2028 on.",
      "feedback": "This is a commercial agreement and a company target. No fusion device has yet produced net electricity."
     },
     {
-     "text": "A fusion target has released more energy than the laser energy on it.",
+     "text": "A fusion target released more energy than the laser light on it.",
      "correct": true,
      "feedback": "Right. NIF first did this on 5 December 2022 ($3.15\\ \\text{MJ}$ from $2.05\\ \\text{MJ}$) and has repeated it several times. It is measured and published."
     },
@@ -387,7 +388,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Ignition at NIF made headlines in France too: <span lang=\"fr\">l'allumage</span> is ignition, and the target is <span lang=\"fr\">la cible</span>. France has its own large laser facility for this kind of research, <span lang=\"fr\">le Laser Mégajoule</span>, near Bordeaux. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-cc-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: lasers and targets\", \"phrases\": [{\"fr\": \"le laser\", \"en\": \"the laser\", \"tip\": \"luh lah-ZAIR: the *s* between two vowels sounds like *z*.\"}, {\"fr\": \"la cible\", \"en\": \"the target\", \"tip\": \"lah SEEBL: *c* before *i* is an *s*.\"}, {\"fr\": \"l'allumage\", \"en\": \"ignition\", \"tip\": \"lah-ly-MAHZH: the *u* is the Finnish *y*; *-age* ends with the sound of *s* in *measure*.\"}, {\"fr\": \"une impulsion\", \"en\": \"a pulse\", \"tip\": \"yn an-pyl-SYON: *im* and *on* are nasal vowels.\"}, {\"fr\": \"Les lasers compriment la cible.\", \"en\": \"The lasers compress the target.\", \"tip\": \"lay lah-ZAIR kom-PREEM lah SEEBL\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Ignition at NIF made headlines in France too: <span lang=\"fr\">l'allumage</span> is ignition, and the target is <span lang=\"fr\">la cible</span>. France has its own large laser facility for this kind of research, <span lang=\"fr\">le Laser Mégajoule</span>, near Bordeaux. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-cc-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: lasers and targets\", \"phrases\": [{\"fr\": \"le laser\", \"en\": \"the laser\", \"tip\": \"*lö la-ZER*: the *s* between two vowels sounds like *z*, and the final *r* is heard.\"}, {\"fr\": \"la cible\", \"en\": \"the target\", \"tip\": \"*la SIBL*: *{fr}c{/fr}* before *i* is an *s*, and the final *e* is silent.\"}, {\"fr\": \"l'allumage\", \"en\": \"ignition\", \"tip\": \"*la-ly-MAŽ*: the *u* is the Finnish *y*; *ž* is the sound of *s* in English *measure*.\"}, {\"fr\": \"une impulsion\", \"en\": \"a pulse\", \"tip\": \"*yn ẽ-pyl-SJÕ*: *{fr}im{/fr}* and *{fr}on{/fr}* are nasal vowels, so no *m* or *n* is heard.\"}, {\"fr\": \"Les lasers compriment la cible.\", \"en\": \"The lasers compress the target.\", \"tip\": \"*le la-ZER kõ-PRIM la SIBL*: *{fr}-ent{/fr}* at the end of a verb is silent.\"}]}</script></div>"
   }
  ]
 }

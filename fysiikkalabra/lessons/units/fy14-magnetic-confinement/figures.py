@@ -87,7 +87,7 @@ def lorentz():
     f.circle(bx, by, 11, ION, WHITE, 2); f.tex(bx, by, r"+", "middle", color=WHITE, size=20)
     # right point
     rx, ry = cx + r, cy
-    f.arrow(rx, ry, rx, ry - 104, V_COL, 4, 16); f.tex(rx + 10, ry - 96, r"\overline{v}", "start", color=V_COL, bg=True)
+    f.arrow(rx, ry, rx, ry - 104, V_COL, 4, 16); f.tex(rx + 18, ry - 96, r"\overline{v}", "start", color=V_COL, bg=True)
     f.arrow(rx, ry, rx - 80, ry, F_COL, 4, 16); f.tex(rx - 60, ry + 26, r"\overline{F}", "middle", color=F_COL, bg=True)
     f.circle(rx, ry, 11, ION, WHITE, 2); f.tex(rx, ry, r"+", "middle", color=WHITE, size=20)
     # direction of motion
@@ -168,7 +168,7 @@ def torus():
         pts = [(xs + sgn * i * 0.9, 150 - 18 + 10 * math.sin(i * 0.5)) for i in range(0, 34)]
         f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts), stroke=INK, w=2)
         f.arrow(pts[-1][0], pts[-1][1], pts[-1][0] + sgn * 16, pts[-1][1], INK, 2.5, 11)
-    f.tex(150, 272, r"\text{open ends: particles leak}", "middle")
+    f.tex(150, 284, r"\text{open ends: particles leak}", "middle")
     # torus
     cx, cy = 450, 140
     for j in range(12):
@@ -178,7 +178,7 @@ def torus():
     for r in (70, 92, 114):
         f.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{B_COL}" stroke-width="2.5"/>')
         f.arrow(cx + r, cy - 4, cx + r, cy + 10, B_COL, 2.5, 11)
-    f.tex(450, 272, r"\text{a ring: no ends}", "middle")
+    f.tex(450, 284, r"\text{a ring: no ends}", "middle")
     return f.svg()
 
 

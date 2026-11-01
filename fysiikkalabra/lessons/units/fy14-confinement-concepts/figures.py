@@ -109,7 +109,7 @@ def pinches():
         x = 92 + k * 46
         f.add(f'<ellipse cx="{x}" cy="{y1}" rx="9" ry="56" fill="none" stroke="{I_COL}" stroke-width="5"/>')
     f.arrow(196, y1 - 70, 236, y1 - 62, I_COL, 3, 12)
-    f.tex(244, y1 - 74, r"I\ \text{around the tube}", "start", color=I_COL)
+    f.tex(244, y1 - 82, r"I\ \text{around the tube}", "start", color=I_COL)
     f.arrow(180, y1, 420, y1, B_COL, 4, 16); f.tex(430, y1 + 2, r"\overline{B}", "start", color=B_COL, bg=True)
     for x in (207, 345):
         f.arrow(x, y1 - 66, x, y1 - 22, F_COL, 4, 14)
@@ -171,7 +171,7 @@ def energy():
     for k, (name, e, col, val) in enumerate(rows):
         y = 54 + k * 56
         f.tex(x0 - 10, y, name, "end")
-        f.rect(x0, y - 16, max(3, X(e) - x0), 32, col, rx=3)
+        f.rect(x0, y - 16, max(6, X(e) - x0), 32, col, rx=2)
         if e > 100: f.tex(X(e) - 10, y, val, "end", color=WHITE)
         else: f.tex(X(e) + 10, y, val, "start", bg=True)
     return f.svg()

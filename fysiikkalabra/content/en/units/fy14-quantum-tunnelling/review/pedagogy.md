@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 52dad39318ce6af1
+CONTENT-HASH: 04f3108ac7d6230d
+
+Delta check (commit 3dd4228a): the only content change is in the worked example's Substitution step of `unit.md`, where the momentum root is split onto two lines ($\sqrt{2.919 \cdot 10^{-47}} \cdot \sqrt{\text{kg}^2 \cdot \text{m}^2/\text{s}^2}$). The numbers and the stages are unchanged, so the verdict stands.
 
 Pedagogy re-review of fy14-quantum-tunnelling (2026-11-01), after the "Fixes after review" in review/developer.md (commit cdc675d6). I rebuilt the page and tested it in Playwright at 390 px.
 

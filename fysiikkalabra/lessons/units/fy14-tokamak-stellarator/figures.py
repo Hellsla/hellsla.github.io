@@ -92,7 +92,7 @@ def toroidal():
     f.circle(cx, cy, 2.2 * s, COPPER, INK, 2)
     f.line(cx, cy, cx + 8.2 * s, cy, INK, 1.5, "4 4")
     for R in (4.2, 6.2, 8.2):
-        f.circle(cx + R * s, cy, 5, INK)
+        f.circle(cx + R * s, cy, 8, INK, WHITE, 2)
     # labels of the field at three radii, joined to the points on the radius
     rows = ((4.2, 70), (6.2, 196), (8.2, 322))
     for R, y in rows:

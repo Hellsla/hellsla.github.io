@@ -75,7 +75,7 @@
 
 ## Pinches: squeezing plasma with its own current {Pinches}
 
-The earliest fusion machines of the 1950s were **pinches**. In a **Z-pinch** a large current flows *along* a column of plasma. The circular magnetic field of this current pushes the current-carrying plasma inward. The column is squeezed, or *pinched*, and heats up.
+The earliest fusion machines of the 1950s were **pinches**. In a **Z-pinch** a large current flows *along* a column of plasma. The circular magnetic field of this current pushes the current-carrying plasma inward: parallel currents attract, so all the small currents in the column pull together. The column is squeezed, or *pinched*, and heats up.
 
 <svg data-fig="pinch" viewBox="0 0 600 400" role="img" aria-label="Two diagrams, one above the other. Top, Z-pinch: a horizontal column of plasma carries a violet current I to the right. Above the column its magnetic field points out of the page (green dotted circles), below it into the page (green crossed circles): the field circles the column. Red force arrows on the top and bottom surfaces point inward, squeezing the column. Bottom, theta-pinch: a coil wound around a tube carries a current around it; inside, a green magnetic field arrow points along the axis, and red arrows squeeze the plasma inward from all sides." style="max-width:100%;font-size:24px">
   <foreignObject x="14" y="7.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Z-pinch}$</div></foreignObject>
@@ -142,7 +142,7 @@ The earliest fusion machines of the 1950s were **pinches**. In a **Z-pinch** a l
   <ellipse cx="506" cy="310" rx="9" ry="56" fill="none" stroke="#7048e8" stroke-width="5"/>
   <line x1="196" y1="240" x2="225" y2="246" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M236,248 L223,251 L225.5,240.5 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="244" y="221.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I\ \text{around the tube}$</div></foreignObject>
+  <foreignObject x="244" y="213.5" width="186" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I\ \text{around the tube}$</div></foreignObject>
   <line x1="180" y1="310" x2="405" y2="310" stroke="#2b8a3e" stroke-width="4" stroke-linecap="butt"/>
   <path d="M420,310 L404,317 L404,303 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <foreignObject x="430" y="297.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
@@ -224,7 +224,7 @@ Pinches compress plasma well but hold it badly. A Z-pinch column is unstable: it
 
 At the **National Ignition Facility (NIF)** in California, 192 laser beams shine into a centimetre-sized gold cylinder, the **hohlraum**. Its hot walls fill it with X-rays, which boil off the outer layer of a peppercorn-sized capsule. Like a rocket, this drives the rest of the capsule inward.
 
-On **5 December 2022** NIF's lasers delivered $2.05\ \text{MJ}$ to a target, and the target released $3.15\ \text{MJ}$ of fusion energy. For the first time, a fusion experiment gave out more energy than the energy put into the fuel: the **target gain** was about $1.5$. By mid-2026 NIF had reached ignition eleven times in all, with target gains up to about $4$.
+On **5 December 2022** NIF's lasers delivered $2.05\ \text{MJ}$ to a target, and the target released $3.15\ \text{MJ}$ of fusion energy. For the first time, a fusion experiment released more energy than the laser energy delivered to its target: the **target gain** was about $1.5$. By mid-2026 NIF had reached ignition eleven times in all, with target gains up to about $4$.
 
 <svg data-fig="energy" viewBox="0 0 600 270" role="img" aria-label="Horizontal bar chart to scale, in megajoules, for NIF&#x27;s shot of 5 December 2022. Electricity drawn from the grid to fire the lasers: about 300 MJ, a bar across almost the whole width. Laser energy delivered to the target: 2.05 MJ, a sliver less than one percent as long. Fusion energy released: 3.15 MJ, a slightly longer sliver. The target gain is 3.15 MJ divided by 2.05 MJ, about 1.5." style="max-width:100%;font-size:24px">
   <line x1="220" y1="30" x2="220" y2="196" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -237,17 +237,17 @@ On **5 December 2022** NIF's lasers delivered $2.05\ \text{MJ}$ to a target, and
   <foreignObject x="537.5" y="199.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$300$</div></foreignObject>
   <foreignObject x="506" y="229.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E\ (\text{MJ})$</div></foreignObject>
   <foreignObject x="65" y="39.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{electricity}$</div></foreignObject>
-  <rect x="220" y="38" width="340" height="32" rx="3" fill="#6c757d"/>
+  <rect x="220" y="38" width="340" height="32" rx="2" fill="#6c757d"/>
   <foreignObject x="463" y="39.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\approx 300\ \text{MJ}$</div></foreignObject>
   <foreignObject x="40" y="95.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{laser on target}$</div></foreignObject>
-  <rect x="220" y="94" width="3" height="32" rx="3" fill="#2f9e44"/>
+  <rect x="220" y="94" width="6" height="32" rx="2" fill="#2f9e44"/>
   <foreignObject x="232.5" y="95.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$2.05\ \text{MJ}$</span></div></foreignObject>
   <foreignObject x="52" y="151.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{fusion energy}$</div></foreignObject>
-  <rect x="220" y="150" width="3.5" height="32" rx="3" fill="#e8590c"/>
+  <rect x="220" y="150" width="6" height="32" rx="2" fill="#e8590c"/>
   <foreignObject x="233.5" y="151.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3.15\ \text{MJ}$</span></div></foreignObject>
 </svg>
 
-What it does *not* mean: making the $2.05\ \text{MJ}$ laser pulse took about $300\ \text{MJ}$ of electricity, about a hundred times the fusion energy. NIF fires a few hundred shots a year, while a power plant would need several shots every second, each with a cheap target. It is a scientific milestone, not a power plant.
+What it does *not* mean: making the $2.05\ \text{MJ}$ laser pulse took about $300\ \text{MJ}$ of electricity, about a hundred times the fusion energy. In 2014 NIF fired about one shot every two days, and most of its shots are not ignition attempts, while a power plant would need several shots every second, each with a cheap target. It is a scientific milestone, not a power plant.
 
 ## Spherical tokamaks and stronger magnets {Compact}
 
@@ -342,7 +342,7 @@ G &= \frac{3.15\ \text{MJ}}{2.05\ \text{MJ}} = 1.54 \\[6pt]
 
 ## Common misconception
 
-"Ignition at NIF means that laser fusion power is ready." Ignition means that the fuel produced more fusion energy than the laser energy that reached it, $G > 1$. A power plant must also cover the electricity of the whole plant, turn heat into electricity (losing more than half), fire many times a second and breed its own tritium. The same caution holds for a magnetic machine's gain $Q$: plasma gain is not electricity.
+"Ignition at NIF means that laser fusion power is ready." In LLNL's working definition, ignition means more fusion energy than the laser energy delivered to the target, $G > 1$; physically, it means that the fusion alpha particles heat the fuel faster than it loses heat. A power plant must also cover the electricity of the whole plant, turn heat into electricity (losing more than half), fire many times a second and breed its own tritium. The same caution holds for a magnetic machine's gain $Q$: plasma gain is not electricity.
 
 ## Summary
 

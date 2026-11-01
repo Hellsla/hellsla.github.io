@@ -31,3 +31,14 @@ Unit fy14-magnetic-confinement, "Charged particles and magnetic confinement" (FY
 - Experiment tables show a boolean measure as the raw words true/false, and a `select` parameter as its raw key (p, d, e, a) in the varied column; the `names`/`values` maps do not translate the table cell.
 - When an experiment name includes its unit, the initial-state line repeats it (value + unit after a name that already ends in the unit).
 - `screenshot.py` captures only step 1 of a staged worked example; the full examples were opened and captured by hand at 390 px.
+
+## Fixes after review (2026-11-01)
+- Visual 1: the quotes are now curly quotes (find-error, check-explain).
+- The experiment `values` map now names the particles (proton, deuteron, alpha particle, electron) and shows `trapped` as trapped/escapes. The measure label is "trapped or escapes".
+- Pedagogy: the options of review, exp-particles, find-error and check-1 are within ±30 %.
+- check-2 is a new case: an electron moving up the page in a ⊙ field (answer: to the left).
+- The "How the calculation works" box no longer states the 30° rule.
+- The French corner uses the shared style; *gn* is compared with Finnish *nj*.
+- Science: the alpha task now shows the deuteron's 10 keV; the sim model says the fastest speed is 3.3 % of c; the howto names the E × B drift.
+- Visual: the Given line of the alpha solution is wrapped in braces; the torus labels moved down; the lorentz v label moved right.
+- Not mine (the coordinator is fixing them): the sim canvas text, the readout `\dfrac`, the mirror verdict, the label card and the checkbox layout.

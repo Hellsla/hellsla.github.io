@@ -2,7 +2,7 @@
 
 - **0–5 min, Think about it.** Read the hook; one minute of pair talk on the question. The review question recalls why a ring has no open ends.
 - **5–10 min, Predict.** Both predictions individually, each with a reason. No answers yet: the feedback opens with the theory sections.
-- **10–32 min, Investigate.** Pairs explore the two 3D machines: all layers, all five step cards and the short checks inside the component. Then the pair discussion with the word bank and sentence starters, and the table of long plasmas.
+- **10–32 min, Investigate.** Pairs explore the two 3D machines: all layers and all five step cards (the component's own checks are switched off; the unit's checks come at the end). Then the pair discussion with the word bank and sentence starters, and the table of long plasmas.
 - **32–47 min, Theory summary.** Three short parts: the twist and the formula on the board, then the two designs (pairs can split *The tokamak* and *The stellarator* and tell each other), then pulsed and steady operation. The vocabulary match; back to the predictions.
 - **47–62 min, Apply.** The worked example (ITER's toroidal field) on the board, step by step; the inner-edge field task individually; the misconception text.
 - **62–75 min, Check your understanding.** Three checks individually, the argument "Which design?" with its sentence starters, the summary and the French corner.
