@@ -387,3 +387,4 @@
 .fx-tl-title{font:600 var(--fs-h3)/1.3 var(--sans);color:var(--ink)}
 .unit th{text-align:left}
 .fx-tl-more>summary::before{content:none;display:none}
+.unit p.source{border-radius:var(--inner-radius)}

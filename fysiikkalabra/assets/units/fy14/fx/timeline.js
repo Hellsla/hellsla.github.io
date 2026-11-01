@@ -36,7 +36,7 @@ window.FX.timeline = (el, d, A) => {
     const strip = h('div', { class: 'fx-tl-strip' });
     const count = h('p', { class: 'fx-msg', 'aria-live': 'polite' });
     const list = h('ol', { class: 'fx-tl-list' });
-    const legend = h('ul', { class: 'fx-legend', 'aria-label': 'Themes' }, Object.entries(data.themes).filter(([k]) => TH[k]).map(([k, t]) => h('li', {}, h('span', { class: 'fx-sym', 'aria-hidden': 'true', style: `color:${TH[k][0]}` }, { circle: '●', square: '■', diamond: '◆', triangle: '▲' }[TH[k][1]]), t)));
+    const legend = h('ul', { class: 'fx-legend', 'aria-label': 'Themes' }, Object.entries(data.themes).filter(([k]) => TH[k] && all.some((e) => e.theme === k)).map(([k, t]) => h('li', {}, h('span', { class: 'fx-sym', 'aria-hidden': 'true', style: `color:${TH[k][0]}` }, { circle: '●', square: '■', diamond: '◆', triangle: '▲' }[TH[k][1]]), t)));
     const small = !!d.ids && all.length <= 12;   // a task's own small selection: no era, theme or search filters
     root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []), ...(small ? [] : [eraBar,
       h('div', { class: 'fx-tl-filters' }, h('div', { class: 'fx-field' }, h('label', { for: idp + 'theme' }, 'Theme'), themeSel), h('div', { class: 'fx-field fx-field-wide' }, h('label', { for: idp + 'q' }, 'Search'), q))]),

@@ -1,26 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: d2a9fd877ad07dac
+CONTENT-HASH: 52dad39318ce6af1
 
-Pedagogy review of fy14-quantum-tunnelling (2026-11-01). Read unit.md, inquiry.json, teacher.md, developer.md and the hero capture. Page rebuilt and tested in Playwright at 390 px.
+Pedagogy re-review of fy14-quantum-tunnelling (2026-11-01), after the "Fixes after review" in review/developer.md (commit cdc675d6). I rebuilt the page and tested it in Playwright at 390 px.
 
-Browser check: both predictions lock on commit with no feedback. `pred-slits` opens at *Key idea*, after the slit panels, `slits-talk` and the tunnelling table. `pred-tunnel` opens at *Tunnelling and the Sun*. The model answers of the two explain tasks stay closed until the student writes. There are no console errors.
+Browser check:
+- Both predictions lock on commit and show no feedback.
+- `pred-slits` opens when *Key idea* is on screen, after the slit panels, `slits-talk` and the tunnelling table. `pred-tunnel` opens when *Tunnelling and the Sun* is on screen.
+- The model answers stay closed while the text box is empty.
+- There are no console errors.
 
-The lesson works well:
-- The hook-talk ("impossible or only unlikely?") is a good way into probability.
-- The factor task on the table makes exponential decrease something the student finds, not something they are told; `check-2` then tests it.
-- `check-explain` ("explain to a younger student") brings the chapter back to fusion.
-- Word banks and starters sit with both written tasks, there is a vocabulary match, and the French corner is tied to de Broglie.
-- The selita sections run to about 410 words.
+## Earlier findings: all resolved
+1. `pred-tunnel` now asks "What do you predict?" about a barrier made twice as wide. Its options are now the classical bounce, "far more rarely", "half as often" and "equally often". So the part that is open to argument, the effect of width, is now what the student predicts. The "half as often" distractor targets the linear-thinking misconception that the factor task and `check-2` later repair.
+2. Each option is now a single claim about width, so a student is no longer forced to accept two claims at once.
+3. The Reasonableness step of `proton-wave` compares $779\ \text{fm}$ with the turning distance of about $1000\ \text{fm}$.
+4. *Tunnelling and the Sun* now says that tunnelling only brings the protons close. The long wait comes from the weak interaction ($\text{p} + \text{p} \to \text{d} + \text{e}^+ + \nu$), which the feedback of `check-3` repeats. This removes the misconception that tunnelling alone makes the Sun slow. The selita sections now run to about 470 words, still within the limit.
+5. The correct option of `check-3` has been shortened.
 
 ## Blocking
 None.
 
 ## Polish
-1. `inquiry.json` `pred-tunnel` prompt: "What does quantum physics say happens?" asks for knowledge that the student does not have yet. The Why line, the hook and the learning goal ("how quantum tunnelling makes fusion possible") already show that barriers can be crossed. So the part still open to argument is the role of the width. Fix: ask "What do you predict?", and put the width in the stem: "… The barrier is then made twice as wide. What do you predict?"
-2. `inquiry.json` `pred-tunnel`: the correct option joins two claims ("Sometimes it passes; a wider wall makes it rarer."), so the choice is forced for a student who agrees only with the first. This is fine once Polish 1 puts the width in the stem.
-3. `inquiry.json` `proton-wave` asks the student to compare the result with the classical turning distance of about $1000\ \text{fm}$, but only the number is checked. Fix: end the solution's Reasonableness step with that comparison ("$779\ \text{fm}$ is about the same size as $1000\ \text{fm}$, so the wave reaches into the barrier").
-4. `unit.md` *Tunnelling and the Sun*: "An average proton … waits about 9 billion years …: this is why the Sun shines steadily" reads as if tunnelling alone caused the slowness. Teacher.md rightly names the weak force. Fix: add half a sentence to the page, "(partly because the first step also needs the weak force; chapter *The Energy of the Stars*)".
-5. `check-3`: the correct option ties for longest (63 characters). Fix: shorten it to "Protons tunnel, rarely, and there are huge numbers of them."
+1. `inquiry.json` `pred-tunnel`: the correct option (62 characters) is the longest, slightly ahead of 60, 55 and 54. Fix: "It sometimes passes, far more rarely through the wide one." (58).
 
 ## Shared issues
-- As for fy14-classical-limits: in `templates/inquiry.js` a section that is merely touched by the viewport counts as seen.
+- `templates/inquiry.js` §1 (unchanged): a theory section counts as seen once any pixel of it enters the viewport. This unit is not affected.

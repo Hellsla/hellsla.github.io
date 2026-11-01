@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: c4613f28acbcb79a
+CONTENT-HASH: fe3577a0c0da4706
 
 ## Blocking
-(none)
+(none) The four polish items of the first review are resolved:
+- `pinch` now draws each $\overline{B}$ ring with a faint back half and a front half with arrowheads. The arrows point downwards at the front, which is right for $I$ to the right. A copper arrowhead on the last coil turn shows the coil current.
+- `pred-secret` no longer has a dangling "Their".
+- The accelerator bullet in the Summary now matches the section.
+- The `neutrons` key is in ink.
 
 ## Polish
-1. [Minor] `lessons/units/fy14-secret-fusion/figures.py`, figure `pinch` (Z-pinch panel). The green $\overline{B}$ rings have no direction, and in the theta-pinch panel "$I$ in the coil" has no arrow on the coil. A student cannot check "the field circles the current" with the right-hand rule. Fix: add one small arrowhead on each $\overline{B}$ ring (front side, the right-hand sense for $I$ to the right) and one copper arrowhead on a coil turn next to the label.
-2. [Minor] `inquiry.json` `pred-secret`, correct option "Their neutrons could be used to make bomb fuel." "Their" has no antecedent in the prompt (governments? the countries?). Fix: "Fusion devices make neutrons that can make bomb fuel." (47 characters, still within ±30 % of the other options.)
-3. [Minor] `unit.md` Summary, first bullet: "accelerator beams could never give more energy than they used" says more than the section, which only says that a beam "mostly loses its energy in collisions, and only a tiny fraction of the nuclei fuse". Fix: "but in accelerator beams only a tiny fraction of the nuclei fuse, so they use far more energy than they give". (For science, if "never" is meant.)
-4. [Minor] Figure `neutrons` caption "Arrows show where neutrons fly." is grey on white and is the only key to the drawing. Fix: use the ink colour of the other labels.
+1. [Minor] `inquiry.json` `zeta-data`, table header at 390: "Share of neutrons in the direction of the original current (%)" hyphenates as "cur- / rent (%)" in a narrow column. Fix: shorter headers, for example "Along the original current (%)" and "Against it (%)".
+2. [Minor] Shared badge style (`zeta-data` "Made-up example data"): a four-line note in the pill-shaped badge turns into an oval with text near its edges at 390. Fix (shared CSS): a radius of about 10 px when the badge wraps, or the note as plain small text after a short badge.
 
 ## Checked
-- Captures regenerated for this hash: contact-1 to -6; top-390, intro-390, intro-1280, stage-tutki-390-4 (pinch figure), stage-tutki-390-6 (ZETA text and `neutrons` figure), stage-sovella-390-2 (`zeta-temperature` solution open: Formula, Substitution, Answer, Reasonableness), selita and tarkista via contact sheets.
-- Own Playwright captures of `hero`, `pinch`, `neutrons` at 390 and 1280. Smallest label is 16.7 px (`pinch`) and 15.5 px (`neutrons`) at 390. No `.katex-error`, no raw `$`, no console errors, no horizontal scroll.
-- Components `fx-sf-order`, `fx-sf-sort` (match) and `fx-sf-french` (say) at 390 and 1280: options short, selects fit.
-- Hero has no text and does not answer either prediction. Hash unchanged at the end.
+- Rebuilt; captures regenerated for this hash (contact sheets).
+- Own Playwright captures of `hero`, `pinch` and `neutrons` at 390 and 1280. Smallest label 15.5 px at 390. The right-hand rule checked on the drawn arrows.
+- `zeta-data` at 390 and 1280: the table fits (322 of 324 px), and the options are balanced.
+- No `.katex-error`, no raw `$`, no console errors, no failed requests, no horizontal scroll. Hash unchanged at the end.
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
