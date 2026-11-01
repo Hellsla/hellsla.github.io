@@ -2,18 +2,20 @@ VERDICT: FAIL
 CONTENT-HASH: 548a782b3164dea2
 
 ## Blocking
-- [Major] Level 2 task 3 (push 120 N at 30° downward), solution figure (L2-1280-4) — the arrows are degenerate: F is a stub, F_x and F_y collapse into arrowheads inside the box, F_μ is an arrowhead with no shaft, and the labels F, F_x, F_y and N collide — the diagram cannot be read, and F (120 N) is drawn shorter than F_μ (80 N) although F_x > F_μ in the solution — fix: give the figure the room the L1/L3 ones have (box smaller, arrows at least 30 px, scale F, F_x, F_μ in proportion, labels apart) or drop the components.
-- [Major] Level 2 task 1 (pulkka, 60 N, 30°), second figure in "Voimakuvio" of the solution (L2-1280-2) — same defect: T is shorter than F_μ and N although T (60 N) > F_μ (52 N), T_y is nearly invisible, and the labels N, T, T_x overlap — misleading for the very point (components vs force) — fix: redraw with true arrow proportions and separated labels, or reuse the larger model figure shown above it.
+- [Major] L2 task 3 (laatikon työntö 120 N, 30°), solution figure (open-exercises-L2-1280-4) — the figure is tiny and cramped: F is a stub inside the box, F_x and F_y are almost only arrowheads, labels F, F_x, N, F_y collide with the arrows, and F (120 N) is drawn far shorter than N and G — the point of the task (components vs force) cannot be read — redraw with the room of the L3 lift figure, arrows in proportion (F > F_x > F_μ) and separated labels, or drop the components.
+- [Major] L3 task 3 (helium balloon), solution figure (open-exercises-L3-1280-4) — the box is about 35 px high, the lift arrow F_noste runs through the ceiling hatch, the N and G arrows stand side by side with labels crammed under the box (N label detached from its arrow) — the key idea (ceiling pushes down) is hard to read — enlarge the figure, keep arrows clear of the hatch, labels apart.
+- [Major] L2 task 1 (pulkka), second figure in "Voimakuvio" (open-exercises-L2-1280-2) — T is drawn about as short as F_μ though T > F_μ, N is half of G although the text says N is only slightly shorter, T_y and its label are nearly invisible — misleading proportions in a figure about components — redraw at the size of the model figure above it (L2-1280-1) or drop the duplicate.
 
 ## Polish
-- [Minor] Level 3 task 3 (helium balloon), solution figure — the ceiling hatch line cuts through F_noste and the box is only about 35 px high; enlarge it and keep the arrows clear of the hatch.
-- [Minor] Level 3 task 2 (kivi) — F_μ is drawn on top of the floor hatch; lift it a few pixels above the line.
-- [Minor] Level 1 task 1 — the answer is given twice ("14,7 N ≈ 15 N"); keep to one rounded value, as in the other tasks.
-- [Minor] Level 2 task 2 and 3 — long "kiihtyy … kiihtyvyydellä" phrasings ("kiihtyvyydellä 1,2 m/s²") are repeated; plain "kiihtyvyys on …" reads better.
+- [Minor] L1 task 3 (kirja seinää vasten) figure — F and N are collinear at the same height, so F's arrowhead is hidden and the pair reads as one line; offset N slightly.
+- [Minor] L3 task 2 (curlingkivi) — F_μ is drawn on the floor hatch; lift it a few pixels.
+- [Minor] L1 task 1 — answer panel shows "14,7 N ≈ 15 N" while the other tasks show one value.
+- [Minor] L2 task 4 (kelkka) — the figure's a arrow is partly cut at the top of the capture; check the margin.
 
 ## Checked
-- Opened: open-exercises 1280 level 1 parts 1, 3, 4, 5; level 2 parts 1, 2, 4; level 3 parts 3, 4; contact-5 and contact-6 for the rest; enlarged the wall-book (L1-3, fine) and push (L2-3) figures; sovella 390 for virhe and hissi-a–d.
-- Not opened separately: level 1 parts 2, 6, 7; level 2 parts 3, 5, 6; level 3 parts 1, 2, 5 (seen on the contact sheets only).
+- Opened at 1280: level 1 parts 1–6 (figures of tasks 1, 2, 3, 4, 5); level 2 parts 1, 2, 4, 5, 6 (tasks 1, 3, 4 figures); level 3 parts 1, 3, 4 (lift, kivi, balloon figures).
+- Not opened: level 1 part 7; level 2 part 3; level 3 parts 2, 5; sovella 390 (virhe, hissi-a–d) not judged here.
+- Maths typography, units, decimal commas, case endings and plain-quantity check: all clean in the captures seen.
 
 ## Scores
 illustrations 3 · typography 5 · Finnish 4 · accessibility 4

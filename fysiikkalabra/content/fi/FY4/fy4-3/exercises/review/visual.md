@@ -1,19 +1,21 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 1b72d20a59f51860
 
 ## Blocking
-- [Major] solutions.md L2-04 (open-exercises-L2-1280-5) — the kori diagram draws $\overline{G}_\text{k}$ (5800 N) and $\overline{G}_\text{m}$ (3139 N) almost equally long, and together longer than $\overline{T}$ (8939 N); no "not to scale" note appears, although other diagrams carry one — in an equilibrium diagram the student reads arrow lengths, and the picture suggests the forces do not balance — fix: draw to scale (T = G_k + G_m) or add the caption that the arrows are not to scale.
-- [Major] solutions.md L3-03 (open-exercises-L3-1280-4) — $\overline{G}_\text{v}$ (0,40 N) is drawn about three-quarters as long as $\overline{F}_\text{o}$ (1,5 N), and the two together far exceed $\overline{F}$ (1,9 N), with no note. The small weight sits inside the box with its label off to the left, beside nothing — same reason: false lengths in the very task about adding forces — fix: draw to scale or say that the small weight is enlarged; put the label at its arrow tip.
+(none)
 
 ## Polish
-- [Minor] L1-01 Järkevyys — after "johto" the last sentence says "naru" — use "johto".
-- [Minor] exercises.json L3-02 — the neglect of the stick is said twice ("kitka tikkua vasten jätetään huomiotta" … "Tikun voima jätetään huomiotta") — merge into one sentence.
-- [Minor] L3-01 (L3-1280-1) — $\overline{F}_\text{v}$ and $\overline{F}_\text{n}$ run side by side and the $\overline{F}_\text{v}$ label is tiny — give the labels more room.
-- [Minor] for science: precision wording differs between L1-02 (850 N) and L1-04 — word it alike.
+- [Minor] fy4-3-L3-03 force diagram (open-exercises-L3-1280-4) — $\overline{G}_\text{v}$ (0,40 N) is a stub inside the small box, collinear with and almost hidden by $\overline{F}_\text{o}$; its label sits left of the box — draw the box taller or offset the two arrows sideways so both weights read.
+- [Minor] fy4-3-L2-04 diagram (L2-1280-5) — $\overline{G}_\text{k}$ and $\overline{G}_\text{m}$ run side by side and nearly touch, labels crowded — separate them a little more.
+- [Minor] fy4-3-L1-04 diagram (exercises-1280-5) — $\overline{F}_\text{i}$ and $\overline{F}_\text{r}$ overlap on one line, and the $\overline{F}_\text{r}$ label lands on the ground hatching — offset vertically, move label.
+- [Minor] fy4-3-L1-02 diagram / solution (exercises-1280-2) — figure labels $F_\text{A}$, $F_\text{B}$ upright, prose $F_A$, $F_B$ italic — one form (italic, as in solution maths).
+- [Minor] Sijoitus rows (all levels) — the aligned chain box is set visibly smaller than the surrounding maths; consistent with mathlayout, only noting the size jump.
 
 ## Checked
-- open-exercises-1280-1, -2 and -4 (L1-01 to L1-04); L2-1280-5 (L2-04); L3-1280-1, -2 and -4 (L3-01 to L3-03).
-- Lamp, rope, skater and car diagrams are balanced and consistent in size. Units and numbers are LaTeX; answers and solutions read well in the open state.
+- Hash 1b72d20a59f51860 at start and end; packet captures current.
+- open-exercises-1280-1…6 (L1-01…05 opened: 1,2,3,4,5,6), open-exercises-L2-1280-1,3,5 (L2-01, L2-02, L2-04), open-exercises-L3-1280-1,3,4 (L3-01, L3-02, L3-03).
+- Text of exercises.json and solutions.md read in full: all quantities are LaTeX with units, decimal comma, \cdot, case endings correct; glossary terms (voima ja vastavoima, jatkavuuden laki) consistent; one voice.
+- Force red, velocity blue (L2-03, L3-01), acceleration orange conventions respected; no figure shows a misleading situation; scale caption present where mixed.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

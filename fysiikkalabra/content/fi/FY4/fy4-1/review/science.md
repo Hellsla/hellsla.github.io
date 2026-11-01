@@ -1,20 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: 37d95c045210014f
+VERDICT: FAIL
+CONTENT-HASH: bb655d3ae81a61dd
 
 ## Blocking
+- inquiry.json:198 (exp-1 solution, Vastaus) and inquiry.json:310 (exp-3 solution, Vastaus) — **A**: the rounding reason "simulaation mallin arvot esitetään kahdella numerolla" is false. sim.js formats every position with `tx(x, 1)`, so the readout and table show 40,0 m, 16,0 m, 30,0 m (three significant figures; see shots/fy4-1-exp-exp-1-390-1.png). The answers 4,0 and −3,0 m/s are right, but the stated reason contradicts what the student sees. — Give a true reason, e.g. "mallin arvot ovat tarkkoja; nopeus ilmoitetaan kahdella numerolla kuten tunnin muut tulokset", or write 4,00 / −3,00 m/s from the 0,1 m readout.
+- inquiry.json:84 (pred-2 prompt; correct option "C pysyy koko ajan 20 m edellä") and inquiry.json:206 (exp-2 intro "C lähtee A:n edestä") — **B**: under the motion-graph guardrail (higher-line-ahead), "edellä" holds only when both carts move in the positive x direction, and pred-2 says only "samaan suuntaan". — Write "ajaa positiiviseen suuntaan yhtä nopeasti kuin A" in the pred-2 prompt. The exp-2 intro then follows from it.
 
 ## Polish
-- inquiry.json:448 (siirto, mistake 50) — "alkupaikka on noin $-11\,\text{m}$": it is exactly −11 m from the given data (4,0 m − 5,0 m/s · 3,0 s); drop "noin". (carried from round 2)
-- assets/sims/fy4/fy4-1/sim.js:1248 — the control "Nopeus (toisto)" (hidas/normaali/nopea) in a lesson about velocity can be read as the carts' velocity; consider "Toistotahti" (tests/sims/fy4-1.json follows the label). (carried)
-- inquiry.json (data, mistake 1,3) — only the first neighbouring pair gives 1,3; the others give 1,7 / 1,55 / 1,25 / 1,65, so the neighbour-pair feedback fires for one pair only (correct where it fires). (carried)
+- lesson.md:5 — the hero shows a loop around a lake, but the Miksi line, the hook and the round-trip figure use a straight there-and-back ride to the shop. Both have Δx = 0, but on a loop the 1-D x axis does not apply. Consider a straight road in the hero, or say in the caption that the start and end points are the same.
+- inquiry.json:532 (check-3 model) — in the hook he stops to buy milk, so his graph also has a horizontal part. Add "ja kaupassa vaakasuora osa".
+- inquiry.json check-3 criteria — the units criterion says "paikka ja siirtymä metreinä", but the task's distances are in km. Write "pituusyksikössä (m, km)".
 
 ## Checked
-- Unit-as-LaTeX commit 212c48d: a script compared every changed hunk (47, all in lesson.md, inquiry.json, exit-ticket.json, exercises.json, solutions.md) old vs new, normalising `{,}`, `\,` and the Unicode minus — the multiset of numbers and of number–unit pairs is identical in every hunk; a word diff confirms each change only wraps the same value and unit (e.g. −5,0 m → $-5{,}0\,\text{m}$, 0–10 s → 0–$10\,\text{s}$). No value, sign or unit changed.
-- Round-2 polish on the endpoint mistake (1,9) is fixed: Δx now 19 m − 4,1 m, consistent with "lue piste suoralta".
-- One script recomputed every inquiry and lesson number: exp-1 4,0; exp-3 −3,0; data LS slope 1,494 ± 0,029 (intercept 4,10, so x₀ = 4,1 m and "1,49 ± 0,03" hold), line 4,1→19,1 m ⇒ 1,5; siirto 39 (x₀ −11); check-2 13 (origin at 4,8 s); example 2,5 m/s, 170 m = 1,7·10² m; E path 16 m, v_ka 0; pr-nopeus 7,5 / 3000 / 0,13 / 130; pred-3 meeting at 6 s, 12 m — all match lesson-answers.py and the text.
-- Ruler label change (39e7459): only the x-position/alignment of "x (m)" moved (598, right-aligned); no physics touched. At 390 px it sits right of the "40" tick without overlap (sim and exp-3 captures); readouts show model values 0,0 / 30,0 m correctly.
-- sim.js model unchanged: pos/vel/path give A 0→20 m, B 0→40, C 20→40, D 30→0, E 0→8→8→0 with s = 16 m; simState exposes t, xA, x2 for every experiment; tapaus locked, t varied.
-- `model`/`calc` boxes state model values, constant velocity, no friction/acceleration, case 4 exception and Δx = 0 with s ≠ 0 — consistent with the theory and sim-spec.
-- Figures to scale where claimed (displacement 40 px/m; jogger; robot data on 11,1 px/m, points and line match the table; E graph).
-- Formulas and conditions (uniform motion, x₀ at t = 0), sign conventions (signed Δx, v; non-negative s, |v|) consistent across theory, summary, checks, exit ticket.
-- Hash identical at start and end.
+- Recomputed every number in one script: exp-1 4,0; exp-3 −3,0; A and D meet at t = 6 s, x = 12 m; pulkka v = 5,0 m/s, x(10 s) = 39 m, x₀ = −11 m; check-2 13 m and 4,8 s; example 2,5 m/s, 170 m ≈ 1,7·10² m, 9 km/h; path of E 16 m; pr-nopeus 7,5 m/s. Every mistake value (2,0; 40; 3,0; 30; 1,9; 1,3; 0,67; 50; 74; 5,0; 25; 37) is the stated wrong method.
+- Robot data: least-squares slope 1,494 ± 0,029 m/s, intercept 4,10 m, x(10 s) = 19,04 m. The SVG line runs from (0; 4,1) to (10; 19,1) m to scale, so "hieman alle 20 m" holds.
+- Edestakainen figure geometry (0→8 m in 4 s, rest until 6 s, back to 0 at 10 s) matches sim.js `pos` for case 4. `path` gives 16 m and `vel` changes sign correctly.
+- sim.js implements x = x₀ + vt for cases 1–3 with the stated speeds. simState carries xA and x2. The 0,5 s slider step reaches t = 4,0 / 6,0 / 10 s. The model box states the simplifications (instant full speed, no friction or size).
+- Each experiment locks tapaus and varies t, so the setups isolate the comparison.
+- Every prediction, Etsi virhe, check-1 and edestakainen item has exactly one correct option, and each distractor's feedback is right.
+- Definitions (paikka, siirtymä, matka, nopeus/vauhti, keskinopeus = Δx/Δt) agree with the glossary and the exit ticket. The vector notation (overline, components on a line) follows the FY4 scope.
+- The slope is read from the fitted line, not from neighbouring raw points, in line with the guardrail.
+- Worked example: solved symbolically first, the rounding reason is sound, and the reasonableness check is real.
+- Hash is the same at the start and at the end.

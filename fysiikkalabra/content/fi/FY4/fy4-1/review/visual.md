@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 33e043c310aa5079
+VERDICT: PASS
+CONTENT-HASH: bb655d3ae81a61dd
 
 ## Blocking
-- [Major] fig graph-slope (fig-6-390), right panel — velocity sign shown by colour: v>0 blue, v<0 orange, but orange is the FY4 acceleration colour; velocity changes colour with its sign, so a negative velocity reads as acceleration (same orange also on the Δx = -5 m and "paluumatka" arrows and the fitted line in fig 2) — breaks the fixed velocity/acceleration colour convention and misleads — keep the v<0 line blue (or neutral ink) and tell the sign apart by the label and the slope direction; do not use acceleration orange for displacement/distance arrows (use ink or a neutral accent).
-- [Major] inquiry.json pred-2 choice 4 ("C:n paikka pysyy 20 metrissä"), lesson Järkevyys ("40 sekunnin", "20 sekunnin"), numeric prompts "Vastaa yksikössä m/s" / "Vastaa metreinä" — quantities with number and unit in plain text in new text (teacher 2026-11-01) — inconsistent with the rest of the page's maths — write "$20\,\text{m}$:ssä", "$40\,\text{s}$:n", "$20\,\text{s}$:n" and the answer unit as "$\text{m/s}$".
+(none)
 
 ## Polish
-- [Minor] fig-4/fig-5 — displacement and distance arrows in blue and orange look like velocity and acceleration; same fix as above if the colours are changed.
-- [Minor] fig-2 (robot data) — fitted line orange vs data blue is clear, but the line label "sovitettu suora" is small at 390 px.
-- [Minor] sim-390 — graph legend and axis numbers are tiny on the phone canvas.
-- [Minor] inquiry mistakes feedback "Tulos 0,13 on sekuntia metriä kohti" — bare number; write as $0{,}13\,\text{s/m}$.
-- [Minor] exit-ticket answers "siirtymä on 0" — write $\Delta x = 0$.
+- [Minor] fig-2 (robotti, "sovitettu suora") — the fitted line is drawn in orange, the project's acceleration colour — a student may read it as a second quantity — use ink or a neutral colour (for the line and its label).
+- [Minor] fig-4 (displacement) — the arrow for Δx = +6 m is blue (the velocity colour) while Δx = −5 m is dark ink — same quantity, two colours, and blue suggests velocity — draw both displacement arrows in one colour that is not blue.
+- [Minor] intro/theory at 1280 px — the round-trip figure fills the column with labels larger than the body text, while the displacement figure beside the text is small — uneven figure scale in one section — cap its width as the other figures.
+- [Minor] inquiry exp-1..3 intro — "Hetki $t$ -liukusäädintä" breaks as "Hetki t -" at line end (390 px) — write "$t$-liukusäädintä" or "Hetki-liukusäädintä".
+- [Minor] exit ticket heading "Exit ticket" is English on the Finnish page, though the stage is "Lähtölippu" elsewhere — use the Finnish heading (template, project-wide).
 
 ## Checked
-- fig-1..fig-7 at 390 px (hero, robot graph, E graph, displacement, round-trip, graph-slope, jogger graph)
-- top-390, intro-1280, theory-1280-1, example-390-1/2, sim-390, sim-1280, lab-1280-1, stage-tutki-390-3, open-ennusta-1280-1, open-exercises-1280-1. Maths renders cleanly (no red source), chains aligned at = and broken sensibly; graphs have axes, units, dashed extrapolation, labelled example data.
+- 390 px: top, fig-1..7 (all seven figures opened), sim, example 1/2, tutki 1 and 3, exp-1 part 1.
+- 1280 px: intro, sim, lab 1 and 3, theory 1–3, open-ennusta 1, open-tarkista 2, open-exit, exercises L1-1 and L3-2.
+- Text of lesson, inquiry, exit ticket read in full; contact sheets not needed.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
