@@ -3549,7 +3549,8 @@ E_\text{k} &= 1.602 \cdot 10^{-19}\ \text{C} \\
 2mE_\text{k} &= 2 \cdot 9.109 \cdot 10^{-31}\ \text{kg} \\
 &\quad \cdot 1.602 \cdot 10^{-17}\ \text{J} \\
 &= 2.919 \cdot 10^{-47}\ \text{kg}^2 \cdot \text{m}^2/\text{s}^2 \\[6pt]
-p &= \sqrt{2.919 \cdot 10^{-47}\ \text{kg}^2 \cdot \text{m}^2/\text{s}^2} \\
+p &= \sqrt{2.919 \cdot 10^{-47}} \\
+&\quad \cdot \sqrt{\text{kg}^2 \cdot \text{m}^2/\text{s}^2} \\
 &= 5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s} \\[6pt]
 \lambda &= \frac{6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}{5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s}} \\
 &= 1.227 \cdot 10^{-10}\ \text{m} \\
