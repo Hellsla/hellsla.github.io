@@ -1342,6 +1342,7 @@
     "velocity": "nopeus {{dir}};"
   },
   "units": {
+    "home_sessions": "noin {{n}} oppituntia",
     "home_count": {
       "one": "{{n}} oppitunti valmiina",
       "other": "{{n}} oppituntia valmiina"
