@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 416657015f0d3d08
+CONTENT-HASH: 7b8cdb8f6d779460
 
 Delta check (2026-11-01) of two later commits, neither of which changes the pedagogy, so the verdict stands:
 - 4ec672e4 only moves the sim's $I$ readout so that it stays inside the canvas on phones.
@@ -25,3 +25,6 @@ Pedagogy re-review of fy14-photoelectric (2026-11-01), after the "Fixes after re
 3. Shared file, not this unit: the reflection list in `templates/inquiry.js` joins the scenario and the question without a space. This is already noted in developer.md.
 
 Re-check 2026-11-01: typography-only change to the "Find the error" working (one row split in two); the J-minus-eV error stays visible and the choices and feedback still match.
+
+## Re-check 2026-11-01: photographs
+Planck and Einstein portraits open their biographies in People; the captions repeat only what the biographies say, so `people-task` (who did what, who believed the photon idea) is not given away. Captions clear and concise. No lesson ids, no ×, British spelling.

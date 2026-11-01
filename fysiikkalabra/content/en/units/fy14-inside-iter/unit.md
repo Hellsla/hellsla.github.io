@@ -57,6 +57,8 @@ ITER is a **tokamak**. Its plasma, about $830\ \text{m}^3$ of deuterium and trit
 - **Heating.** Beams of fast neutral atoms and two kinds of radio waves heat the plasma with a planned $50\ \text{MW}$.
 - **Cryostat.** A vacuum chamber about $30\ \text{m}$ tall around everything insulates the cold magnets from the warm building.
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-magnet-coil.jpg" alt="Colour photograph of a very large ring-shaped magnet coil in a factory hall." width="1600" height="1067" loading="lazy"><figcaption>A poloidal field coil being built in the coil factory on the ITER site. These giant rings shape and position the plasma. <span class="photo-credit">Photo: Johannes Reimer, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
+
 ## Key idea
 
 A fusion plasma loses energy all the time: hot particles escape across the magnetic field and the plasma radiates. To keep it hot, we heat it from outside. The **fusion gain** $Q$ compares the fusion power produced in the plasma with this heating power.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 193182898c9dcf0e
+CONTENT-HASH: 48a48bf08ce39cb6
 
 Pedagogy re-review of fy14-sun-puzzle (2026-11-01), after the "Fixes after review" in review/developer.md (commit 7843fefa). I rebuilt the page and tested it in Playwright at 390 px. `check_layout.py --width 360` is all OK. There are no console errors, no raw `$` and no `.katex-error`.
 
@@ -24,3 +24,6 @@ Pedagogy re-review of fy14-sun-puzzle (2026-11-01), after the "Fixes after revie
 - The model answers of `kelvin-debate` and `check-explain` stay closed until the student writes something.
 - The theory is about 530 words.
 - The historical investigation (data, source, ordering, pair discussion) is unchanged and good.
+
+## Re-check 2026-11-01: photographs
+Aston portrait follows the completed Eddington argument in Key idea (not inside the calculation) and shows who made the decisive measurement; `eddington-source` comes earlier, and later checks are answered by the text anyway. Eddington portrait in People is fine. No lesson ids, no ×, British spelling.

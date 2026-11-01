@@ -18,5 +18,9 @@
   {"title": "ITER press release: two-thirds of the tokamak core in place, 29 July 2026 (PDF)", "url": "https://www.iter.org/sites/default/files/media/2026-07/2026-07_pr_two-thirds-of-tokamak-core-in-place_0.pdf", "checked": "2026-11-01", "note": "Sixth of nine sector modules in the pit on 28 July 2026, almost six months ahead of schedule; the last one planned for mid-2027."},
   {"title": "ITER Council appoints new Director-General (Pietro Barabaschi, September 2022)", "url": "https://iter.org/print/whatsnew/352", "checked": "2026-11-01"},
   {"title": "ITER (Wikipedia): history, Geneva 1985, partners, US exit 1998 and return 2003, site, Agreement 21 November 2006, Organization 24 October 2007, costs, Directors-General, UK", "url": "https://en.wikipedia.org/wiki/ITER", "checked": "2026-11-01", "note": "About five billion euros of extra cost for the 2024 repairs and changes (July 2024)."}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/iter-site-aerial.jpg", "title": "Aerial view of the ITER site", "creator": "Oak Ridge National Laboratory", "source": "https://commons.wikimedia.org/wiki/File:Iter_aerial_2017_Halfway_to_first_plasma_%2845588568915%29.jpg", "licence": "CC BY 2.0", "licence_url": "https://creativecommons.org/licenses/by/2.0"},
+  {"file": "units/fy14/pics/iter-central-solenoid.jpg", "title": "Winding the ITER central solenoid", "creator": "Oak Ridge National Laboratory", "source": "https://commons.wikimedia.org/wiki/File:ITER_central_solenoid_manufacturing_%2841809722361%29.jpg", "licence": "CC BY 2.0", "licence_url": "https://creativecommons.org/licenses/by/2.0"}
  ]
 }

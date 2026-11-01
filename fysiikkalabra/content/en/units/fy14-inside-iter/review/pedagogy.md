@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 46ad737ab67de926
+CONTENT-HASH: 222bf8240799daec
 
 Pedagogy re-review of fy14-inside-iter (2026-11-01) after the "Fixes after review" in review/developer.md (commit c6532e4f). Rebuilt, served over HTTP and tested in Playwright at 390 and 1280 px.
 
@@ -19,3 +19,6 @@ Pedagogy re-review of fy14-inside-iter (2026-11-01) after the "Fixes after revie
 
 ## Polish (not blocking)
 1. `pred-gain`: before the reveal, the student cannot know ITER's own power demand. The prompt could add one neutral sentence for the justification, such as "Think about what else the plant needs power for (magnets, cooling, heating systems)". This invites reasoning without giving a number.
+
+## Re-check 2026-11-01: photographs
+Poloidal field coil photo ends the parts list it illustrates; its caption matches the text ("shape the plasma and hold it in place") and adds no answer to the vocabulary match. No lesson ids, no ×, British spelling.

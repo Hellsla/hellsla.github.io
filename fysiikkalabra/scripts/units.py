@@ -156,6 +156,9 @@ def check(uid, lang):
     if "×" in re.sub(r"<svg\b.*?</svg>", "", allt, flags=re.S): errs.append(f"{where}: multiplication is \\cdot, never × (teacher's rule 8)")
     for ref in asset_refs(uid, lang):
         if not asset_source(ref).is_file(): errs.append(f"{where}: asset {ref} not found (expected assets/{ref})")
+    credited = {m.get("file") for m in d.get("media", [])}
+    for ref in dict.fromkeys(ASSET_REF.findall(allt)):
+        if re.match(r"units/[a-z0-9]+/pics/", ref) and ref not in credited: errs.append(f"{where}: photograph {ref} has no media entry (unit.json media, file {ref!r})")
     sf = sim_folder(uid, lang)
     if sf and not (sf / "sim.js").is_file(): errs.append(f"{where}: simulation {d['sim']} has no sim.js")
     inq_f = folder(uid, lang) / "inquiry.json"

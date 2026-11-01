@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 500ce96b0c7964c4
+CONTENT-HASH: dfd86936dde13656
 
 Pedagogy re-review of fy14-fr-cadarache (2026-11-01), after "Fixes after review" in review/developer.md. Built with `python3 scripts/build.py`, tested in Playwright at 390 px over HTTP (port 8781).
 
@@ -27,3 +27,6 @@ None new.
 
 ## Shared issues
 - None.
+
+## Re-check 2026-11-01: photographs
+ITER-from-a-distance photo ends the CEA/ITER section and gives a real view before the Provence section; the caption answers none of the ITER checks. No lesson ids, no ×, British spelling.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c4cb2276f3c98102
+CONTENT-HASH: 9c862ad14f6e60cb
 
 Pedagogy re-review of fy14-binding-energy (2026-11-01), after the "Fixes after review" in review/developer.md (commit 7843fefa). I rebuilt the page and tested it in Playwright at 390 px. `check_layout.py --width 360` is all OK, and the page has no console errors, no raw `$` and no `.katex-error`.
 
@@ -24,3 +24,6 @@ Pedagogy re-review of fy14-binding-energy (2026-11-01), after the "Fixes after r
 - The worked example is staged.
 - The theory is about 550 words.
 - The checks still target real misconceptions, and the new 22.2 MeV distractor in `check-2` is a realistic power-of-ten error.
+
+## Re-check 2026-11-01: photographs
+Meitner portrait in People, after the fission tasks and theory; the caption adds nothing a later check question asks. Clear and concise. No lesson ids, no ×, British spelling.

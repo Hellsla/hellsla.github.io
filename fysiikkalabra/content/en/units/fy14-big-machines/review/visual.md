@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 01a45cca341ca829
+CONTENT-HASH: 849e390d8423fd52
 
 ## Blocking
 (none) The blocking finding is resolved. In `heating` the injector box is outside the ring, with its label above it and clear of the band. The arrow and the four fading dots end inside the plasma band, and nothing is drawn in the central hole (seen at 390 and 1280). The four polish items are also resolved:
@@ -21,3 +21,7 @@ CONTENT-HASH: 01a45cca341ca829
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- T-15 stamp (portrait) and JET photo fine; JET sits about 35 px above the 'Data: the big machines' card, which is not crowded.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 193182898c9dcf0e
+CONTENT-HASH: 48a48bf08ce39cb6
 
 Science re-review of fy14-sun-puzzle, 2026-11-01, after commit 7843fefa.
 
@@ -29,3 +29,6 @@ None.
 
 ## Checked
 History and dates, every recomputed number (5350 a, .14 \cdot 10^7$ a, .05 \cdot 10^{10}$ a, .26 \cdot 10^9$ kg/s, 0.03 %), every option and its feedback, the teacher notes and sources.
+
+## Re-check 2026-11-01: photographs
+Aston (1877–1945) and Eddington (1882–1944, 1920 Cardiff address) match the text; the Bain plate labels in both images name the sitter. PD-Bain; credits match.

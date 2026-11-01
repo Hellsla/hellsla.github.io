@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 500ce96b0c7964c4
+CONTENT-HASH: dfd86936dde13656
 
 Science, fact and French-accuracy re-review of fy14-fr-cadarache, 2026-11-01 (HEAD 63a494f6).
 
@@ -18,3 +18,6 @@ None.
 
 ## Checked
 pred-who still has exactly one correct option. The four `fold` cards are unchanged in content. The map changes are labels only: *le Rhône*, *la Durance* and *l'étang de Berre* (north-west of Marseille, which is correct). The plan geometry is unchanged, so all six directions and the role-play model still match the plan.
+
+## Re-check 2026-11-01: photographs
+The ITER buildings appear in the distance in a wooded landscape, as the caption and alt say, and the location near CEA Cadarache matches the text. CC BY 4.0; credit matches.

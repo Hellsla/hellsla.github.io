@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe3577a0c0da4706
+CONTENT-HASH: 76157f25ebed4a23
 
 Science re-review of fy14-secret-fusion, 2026-11-01. It covers the changes in commit 3ed55db3 and what they touch.
 
@@ -28,3 +28,6 @@ None.
 
 ## Checked
 The diff, and the unchanged facts and numbers from my first review: $k_\text{B}T$ = 430.9 eV at $5.0\cdot10^6$ K, and the dates as listed there.
+
+## Re-check 2026-11-01: photographs
+ZETA (pinch at Harwell, 1957; the A.E.R.E. crane is visible), Richter left of Perón (1951 announcement), Spitzer (1914–1997, stellarator 1951) and Sakharov (1921–1989, Tamm, Nobel Peace 1975) are all correct and consistent with the text. The images match the alt. Minor: the "at an airport in 1989" in the Sakharov alt cannot be seen in the tight crop. It comes from the source, so I left it. Licences: PD with a basis, and CC0.

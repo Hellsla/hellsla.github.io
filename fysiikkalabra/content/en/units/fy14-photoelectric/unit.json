@@ -61,5 +61,23 @@
    "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
    "checked": "2026-11-01"
   }
+ ],
+ "media": [
+  {
+   "file": "units/fy14/pics/planck.jpg",
+   "title": "Max Planck in 1933",
+   "creator": "Unknown author",
+   "source": "https://commons.wikimedia.org/wiki/File:Max_Planck_1933.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+   "file": "units/fy14/pics/einstein.jpg",
+   "title": "Albert Einstein in 1921",
+   "creator": "Ferdinand Schmutzer",
+   "source": "https://commons.wikimedia.org/wiki/File:Albert_Einstein_1921_by_F_Schmutzer.jpg",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  }
  ]
 }

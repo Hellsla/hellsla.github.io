@@ -94,5 +94,11 @@
    "checked": "2026-11-01",
    "note": "$k_\\text{B} = 1.380649 \\cdot 10^{-23}\\ \\text{J/K}$ and $e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$ are exact; the unit rounds them to four significant figures."
   }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/zeta.jpg", "title": "ZETA seen from above, 1957", "creator": "UKAEA (unknown photographer)", "source": "https://commons.wikimedia.org/wiki/File:ZETA_reactor_from_above.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"},
+  {"file": "units/fy14/pics/richter.jpg", "title": "Ronald Richter and Juan Perón", "creator": "Unknown author", "source": "https://commons.wikimedia.org/wiki/File:Ronald_Richter_y_Per%C3%B3n.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"},
+  {"file": "units/fy14/pics/spitzer.jpg", "title": "Lyman Spitzer", "creator": "NASA APPEL Knowledge Services", "source": "https://commons.wikimedia.org/wiki/File:1946-_Lyman_Spitzer_%284526166350%29.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"},
+  {"file": "units/fy14/pics/sakharov.jpg", "title": "Andrei Sakharov in 1989", "creator": "Anefo / Croes, R.C.", "source": "https://commons.wikimedia.org/wiki/File:Andrei_Sakharov_1989_%28cropped%29.jpg", "licence": "CC0", "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"}
  ]
 }

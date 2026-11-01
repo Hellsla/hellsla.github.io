@@ -15,5 +15,8 @@
   {"title": "Nuclear binding energy (Wikipedia): definition, mass defect, ⁶²Ni 8.7948 MeV and ⁵⁶Fe 8.7906 MeV per nucleon, deuteron 2.22 MeV", "url": "https://en.wikipedia.org/wiki/Nuclear_binding_energy", "checked": "2026-11-01"},
   {"title": "Nuclear fission (Wikipedia): Hahn and Strassmann, December 1938 (published 6 January 1939); Meitner and Frisch's explanation and the name 'fission' (1939); about 200 MeV per U-235 fission", "url": "https://en.wikipedia.org/wiki/Nuclear_fission", "checked": "2026-11-01"},
   {"title": "Lise Meitner (Wikipedia): 1878–1968, about 30 years with Hahn in Berlin, fled in July 1938, the Christmas 1938 explanation with Frisch, the 1944 Nobel Prize in Chemistry to Hahn alone, meitnerium", "url": "https://en.wikipedia.org/wiki/Lise_Meitner", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/meitner.jpg", "title": "Lise Meitner", "creator": "Harris & Ewing", "source": "https://commons.wikimedia.org/wiki/File:Lise_Meitner.tif", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
  ]
 }

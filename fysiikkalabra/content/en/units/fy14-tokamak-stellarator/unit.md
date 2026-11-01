@@ -121,6 +121,8 @@ The **stellarator** was invented by Lyman Spitzer at Princeton in 1951. Its **co
 
 Early stellarators confined plasma worse than tokamaks. Modern ones are **optimised**: computers search for coil shapes that hold the plasma well. Wendelstein 7-X in Greifswald, Germany, has 50 non-planar and 20 planar superconducting coils. It made its first plasma in December 2015 and held a plasma for about eight minutes in February 2023. The price is the coils: they are very hard to design, build and place accurately.
 
+<figure class="unit-photo"><img src="units/fy14/pics/wendelstein-7x-2.jpg" alt="Colour photograph of a large twisted superconducting magnet coil on display." width="1490" height="1600" loading="lazy"><figcaption>One of the 50 twisted (non-planar) superconducting coils of Wendelstein 7-X. Their shape creates the magnetic cage without a plasma current. <span class="photo-credit">Photo: Siarhei Besarab, CC BY-SA 4.0, via Wikimedia Commons</span></figcaption></figure>
+
 ## Pulsed or steady? {Operation}
 
 A transformer works only while the current in its primary coil keeps *changing*, and that cannot go on for ever. So **inductive** current drive alone gives **pulses**: ITER's solenoid can drive $15\ \text{MA}$ for about $300$ to $500\ \text{s}$.
@@ -132,6 +134,8 @@ But a tokamak current can also be driven **without induction**:
 - the **bootstrap current**: the plasma's own pressure gradient drives part of the current.
 
 On 12 February 2025 the French tokamak WEST held a plasma for $1337\ \text{s}$, about 22 minutes, with its current driven by lower hybrid waves. A stellarator needs no driven current, so it can run steadily by design.
+
+<figure class="unit-photo"><img src="units/fy14/pics/west.jpg" alt="Colour photograph of the ring-shaped inside of the WEST tokamak, lined with metal tiles." width="1600" height="1199" loading="lazy"><figcaption>The vacuum chamber of WEST at CEA Cadarache, France, in 2018. WEST tests the tungsten wall components that ITER will use. <span class="photo-credit">Photo: Christophe Roux / IRFM, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
 
 ## Key idea
 

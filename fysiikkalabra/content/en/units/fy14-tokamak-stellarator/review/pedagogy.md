@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a8503bb6d2f4c8b
+CONTENT-HASH: 4d4c220db142d2dd
 
 Pedagogy re-review of fy14-tokamak-stellarator (2026-11-01), after "Fixes after review" (commit cf5a329b). Rebuilt; I read inquiry.json and teacher.md again.
 
@@ -26,3 +26,6 @@ None.
 - Non-inductive current drive is taught.
 - Word bank and starters before both writing tasks. The chapter's question is argued with a dated result kept apart from a plan.
 - Workload: about 650 words of core theory in three parts, which is realistic in 75 minutes.
+
+## Re-check 2026-11-01: photographs
+W7-X coil and WEST photos each follow their paragraph; they make "twisted 3-D coils" and "long pulse" concrete. Predictions come earlier; check questions are answered by the text, not only by the captions. No lesson ids, no ×, British spelling.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7535d2d9b9420b7a
+CONTENT-HASH: 1471d73e16f9321b
 
 Pedagogy re-review of fy14-iter-project (2026-11-01) after the "Fixes after review" in review/developer.md (commit c6532e4f; the hash also covers the shared timeline data and component as changed in 525827b2 and b3bbc371, which is the version tested). Rebuilt, served over HTTP and tested in Playwright at 390 and 1280 px.
 
@@ -16,3 +16,6 @@ Pedagogy re-review of fy14-iter-project (2026-11-01) after the "Fixes after revi
 ## Polish (not blocking)
 1. `pred-schedule` and the video unit's `pred-date` both turn on the 2025 → 2034 change. The coordinator's reasoning is accepted: one prediction is about the official plan, the other about what a 2022 source says. No change is needed.
 2. Apply is still full: the order task, the error-finding task and the 60–80-word paragraph, plus the optional role-play. The plan for running short of time in `teacher.md` covers this.
+
+## Re-check 2026-11-01: photographs
+Central solenoid photo ends the Members section (shows in-kind manufacturing); site photo ends the Investigate 2 reading before its question and does not answer it. Optional polish: link the solenoid caption to "in kind" (US contribution). No lesson ids, no ×, British spelling.

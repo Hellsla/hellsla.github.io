@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c107808fdf27e4d4
+CONTENT-HASH: 57a7914428d502bd
 
 ## Blocking
 (none) The five polish items of the first review are resolved:
@@ -24,3 +24,7 @@ CONTENT-HASH: c107808fdf27e4d4
 illustrations 4 · typography 4 · English 4 · accessibility 4
 
 2026-11-01: re-checked the intro sentence changed to "written for this course from historical documents" (Sources and verification no longer published); accurate, clear at B1-B2, no remaining pointer to a hidden section in unit.md or inquiry.json.
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Artsimovich photo after the Source A quote closes that block cleanly before the Source B heading; legible at all widths.

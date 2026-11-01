@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ce7528c836feb20f
+CONTENT-HASH: c8f570b82c030bf8
 
 Science re-review, 2026-11-01, of commit c6532e4f.
 - **Earlier Polish 1 (tungsten date): fixed.** The table now says "decided 2023, part of the 2024 baseline", which agrees with iter.org Blanket and `iter.json`.
@@ -19,3 +19,6 @@ None.
 
 ## Polish
 None.
+
+## Re-check 2026-11-01: photographs
+The image shows the tokamak building under construction with cranes, as the caption (April 2018) and alt say, which fits the unit's 2018 comparison. CC BY 2.0; credit matches.

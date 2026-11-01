@@ -68,5 +68,9 @@
    "url": "https://euro-fusion.org/glossary/lawson-criteria/",
    "checked": "2026-11-01"
   }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/lightning.jpg", "title": "Lightning strike", "creator": "Rollingskyphoto", "source": "https://commons.wikimedia.org/wiki/File:High_Quality_Lightning_Strike.jpg", "licence": "CC BY 4.0", "licence_url": "https://creativecommons.org/licenses/by/4.0"},
+  {"file": "units/fy14/pics/aurora.jpg", "title": "Northern lights over Saana, Finland", "creator": "WikiLucas00", "source": "https://commons.wikimedia.org/wiki/File:Aurora_borealis_over_Saana_fell.jpg", "licence": "CC BY-SA 4.0", "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"}
  ]
 }

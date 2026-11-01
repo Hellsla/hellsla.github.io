@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: af00c5738a515fa3
+CONTENT-HASH: f9123ac373589430
 
 Pedagogy re-review of fy14-fusion-reactions (2026-11-01), after the "Fixes after review" in review/developer.md (commit 7843fefa). Page rebuilt and tested in Playwright at 390 px. `check_layout.py --width 360` is all OK, and there are no console errors, no raw `$` and no `.katex-error`.
 
@@ -28,3 +28,6 @@ Pedagogy re-review of fy14-fusion-reactions (2026-11-01), after the "Fixes after
 - The model answers of the three explain tasks stay closed until the student writes something.
 - Word bank and sentence starters at every writing task.
 - The French corner is unchanged.
+
+## Re-check 2026-11-01: photographs
+Oliphant portrait in People, after `oliphant-source`; `check-2` (1934, helium-3) is already answered by the biography beside it, so the caption gives nothing extra away. No lesson ids, no ×, British spelling.

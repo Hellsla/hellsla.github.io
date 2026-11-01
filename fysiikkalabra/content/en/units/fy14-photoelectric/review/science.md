@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 416657015f0d3d08
+CONTENT-HASH: 7b8cdb8f6d779460
 
 Update 2026-11-01 for two later commits:
 - **4ec672e4:** only the y position of the current label changed in sim.js (its baseline is capped inside the canvas). The physics and the readout values are unchanged.
@@ -50,3 +50,6 @@ None.
 Physics, maths, LaTeX, the 7-step solutions, the sim model and readouts, the figures, history and sources (as in the first review), misconceptions, and assessment correctness.
 
 Re-check 2026-11-01: typography-only change (student's working in "Find the error" split into rows $= 3.97 - 2.14$ / $= 1.83\ \text{eV}$); the deliberate J/eV mix-up is unchanged, LaTeX valid.
+
+## Re-check 2026-11-01: photographs
+Planck (1858–1947, quanta 1900) and Einstein (1879–1955, light quanta 1905; Schmutzer, Vienna 1921) match the unit text; both images show the named person as the alt says. PD with a stated basis (PD-anon-70-EU, PD-old); credit and media entry match photos.json.

@@ -363,7 +363,7 @@ R &= 1.2 \cdot 10^{-15}\ \text{m} \cdot 56^{1/3} \\
 
 ### James Chadwick (1891–1974)
 
-<!-- photo: james-chadwick -->
+<figure class="unit-photo"><img src="units/fy14/pics/chadwick.jpg" alt="Black-and-white photograph of four men talking at a table; one of them, General Groves, is in army uniform." width="600" height="460" loading="lazy"><figcaption>James Chadwick (left), discoverer of the neutron in 1932, with General Leslie Groves, Richard Tolman and Henry DeWolf Smyth during the Manhattan Project, the wartime US atomic bomb programme. <span class="photo-credit">Photo: United States Army Signal Corps, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 James Chadwick was an English physicist who studied under Ernest Rutherford in Manchester and followed him to the Cavendish Laboratory in Cambridge. Rutherford had suggested that the nucleus might contain a neutral particle, but nobody had found it. In 1932 Chadwick aimed the radiation from polonium and beryllium at paraffin wax and measured the protons that it knocked out. Only a neutral particle with about the mass of a proton explained the results. In February 1932 he reported "the possible existence of a neutron". He received the Nobel Prize in Physics in 1935.
 

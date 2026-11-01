@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c107808fdf27e4d4
+CONTENT-HASH: 57a7914428d502bd
 
 Science re-review of fy14-iron-curtain, 2026-11-01. It covers the changes in commit 3ed55db3 and what they touch.
 
@@ -21,3 +21,6 @@ None.
 The diff, the thomson figure's colours (no physics change), and the unchanged facts from my first review.
 
 2026-11-01: re-checked the intro sentence changed to "written for this course from historical documents" (Sources and verification no longer published); accurate, clear at B1-B2, no remaining pointer to a hidden section in unit.md or inquiry.json.
+
+## Re-check 2026-11-01: photographs
+Artsimovich (1909–1973) is correct. The image shows him pointing at a machine while visitors look on, as the alt says. The caption dates the photo (1967, Kurchatov) and does not repeat the T-3 claim, which the text already covers. CC BY 4.0 with creators named, and linked in the credits.

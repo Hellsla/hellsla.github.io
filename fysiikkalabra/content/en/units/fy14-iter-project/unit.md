@@ -209,6 +209,8 @@ ITER has seven **Members**: China, the European Union, India, Japan, Korea, Russ
 
 The Members pay mostly **in kind**: about nine-tenths of their contribution is delivered as finished components, systems or buildings, not as money. Each Member has a **Domestic Agency** that signs contracts with its own industry; Europe's agency is Fusion for Energy. On the site, the **ITER Organization** assembles the machine and will run it. It is led by a Director-General, since October 2022 Pietro Barabaschi, and the **ITER Council**, where every Member is represented, takes the major decisions. About 5,000 people work on the site and in its offices (2026).
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-central-solenoid.jpg" alt="Colour photograph of workers winding a thick superconducting cable into a coil in a factory." width="1600" height="1067" loading="lazy"><figcaption>Winding a module of ITER's central solenoid at General Atomics in the USA (2016). The central solenoid drives the electric current in the plasma. <span class="photo-credit">Photo: Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>
+
 ## Technical and organisational challenges {Challenges}
 
 The **technical** challenges come from building parts that have never existed. In 2022 the steel sectors of the vacuum vessel did not have the right shape at their welding edges, and the cooling pipes of the thermal shield had cracks. Both had to be repaired, which halted the vessel assembly; the next sector module went into the pit only in April 2025. The parts must also fit to within millimetres, and the machine is a nuclear installation that must pass the French safety authority's rules.

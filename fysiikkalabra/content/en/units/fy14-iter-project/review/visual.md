@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7535d2d9b9420b7a
+CONTENT-HASH: 1471d73e16f9321b
 
 ## Blocking
 (none) This is a re-review after commit c6532e4f and the timeline commits up to b3bbc371. All earlier Polish items are resolved or reduced:
@@ -25,3 +25,7 @@ CONTENT-HASH: 7535d2d9b9420b7a
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Aerial site photo in the inquiry card stays inside the card and above the choice question; the central solenoid photo sits 35 px above the next heading.

@@ -390,3 +390,10 @@
 .fx-tl-more>summary::before{content:none;display:none}
 .unit p.source{border-radius:var(--inner-radius)}
 details.opt.fold{border-style:solid;border-color:var(--accent-deep)}details.opt.fold .opt-tag{background:var(--accent-deep);color:#fff}
+/* a licensed photograph (photos.json): never wider than the reading column, at most 22rem tall so a portrait never
+   fills a phone screen, centred in its box (the box keeps the width and height attributes' ratio while it loads);
+   the caption under it, the credit on its own line */
+figure.unit-photo{margin:1.25rem 0 1.5rem;max-width:var(--measure)}
+figure.unit-photo img{display:block;width:auto;max-width:100%;height:auto;max-height:22rem}
+figure.unit-photo figcaption{margin-top:.5rem;font-size:var(--fs-inner);line-height:var(--lh);color:var(--ink-2)}
+figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--fs-small)}

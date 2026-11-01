@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c4cb2276f3c98102
+CONTENT-HASH: 9c862ad14f6e60cb
 
 ## Blocking
 (none) The explorer label finding is resolved by the updated `fx/binding.js`, now that point labels are paper cards drawn above the points:
@@ -22,3 +22,7 @@ This holds at 360, 390 and 1280. The reaction steps (D–T and U-235) have no di
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
+
+## Re-check 2026-11-01: photographs
+- Screenshots at 360, 768 and 1280 px (details opened, image loaded); check_layout.py OK at 360 and 1280 px; figure gaps 20 px above and 24 px below, no overflow, credit on its own line and legible.
+- Meitner portrait fine at all widths; the scan's light border is visible on the left edge but unobtrusive.

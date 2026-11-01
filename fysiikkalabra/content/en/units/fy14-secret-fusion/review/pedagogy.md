@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe3577a0c0da4706
+CONTENT-HASH: 76157f25ebed4a23
 
 Pedagogy re-review of fy14-secret-fusion (2026-11-01), after the "Fixes after review" in commit 3ed55db3. I rebuilt the page and tested it in Playwright at 390 px. Both predictions lock when the student commits and show no feedback. `pred-secret` opens at `theory-war` and `pred-zeta` at `theory-zeta`. Model answers stay closed until the student writes. No console errors, raw `$` or katex errors.
 
@@ -19,3 +19,6 @@ None.
 ## Shared issues
 - `scripts/inquiry.py` still renders the `pair` note after the textarea, inside a `<p class="task">` (invalid nesting).
 - There are no photographs yet (the photo pass).
+
+## Re-check 2026-11-01: photographs
+ZETA photo opens the ZETA section after `zeta-data` and does not hint at the correction. Richter, Spitzer and Sakharov portraits in People only repeat the biographies used by `people-task`. Captions clear. No lesson ids, no ×, British spelling.

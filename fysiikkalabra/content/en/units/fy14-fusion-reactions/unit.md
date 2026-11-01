@@ -492,7 +492,7 @@ E_\alpha &= \frac{1.0087\ \text{u}}{5.0102\ \text{u}} \cdot 17.6\ \text{MeV} \\
 
 ### Mark Oliphant (1901–2000)
 
-<!-- photo: mark-oliphant -->
+<figure class="unit-photo"><img src="units/fy14/pics/oliphant.jpg" alt="Black-and-white photograph of Mark Oliphant, a man in a suit, photographed at Berkeley." width="1164" height="1600" loading="lazy"><figcaption>Mark Oliphant (1901–2000) was the first to fuse deuterium nuclei in a laboratory, at the Cavendish Laboratory in 1934, and discovered tritium and helium-3. <span class="photo-credit">Photo: Donald Cooksey, Lawrence Berkeley National Laboratory, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Mark Oliphant was an Australian physicist from Adelaide. In 1927 he came to the Cavendish Laboratory in Cambridge to work with Ernest Rutherford. When a small amount of heavy water became available, he, Paul Harteck and Rutherford fired deuterons at deuterium and observed the first fusion reactions made on purpose, discovering tritium and helium-3 in 1934. Later, in Birmingham, his group developed the cavity magnetron, which made microwave radar possible. Back in Australia he founded a research school of physics in Canberra and served as Governor of South Australia from 1971 to 1976.
 
