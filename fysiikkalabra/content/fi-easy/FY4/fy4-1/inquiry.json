@@ -36,7 +36,7 @@
         },
         {
           "text": "$0{,}13\\,\\text{m/s}$",
-          "feedback": "Jaoit ajan matkalla. Tulos 0,13 on sekuntia metriä kohti. Se ei ole metriä sekunnissa. Nopeus on matka jaettuna ajalla."
+          "feedback": "Jaoit ajan matkalla. Tulos $0{,}13\\,\\text{s/m}$ on sekuntia metriä kohti. Se ei ole metriä sekunnissa. Nopeus on matka jaettuna ajalla."
         },
         {
           "text": "$130\\,\\text{m/s}$",
@@ -101,7 +101,7 @@
           "feedback": "Jyrkkyys kertoo nopeuden. Se ei kerro lähtöpaikkaa. Mallin arvoissa kummankin nopeus on sama, joten suorat ovat yhdensuuntaiset. Lähtöpaikka vain siirtää C:n suoraa ylemmäs."
         },
         {
-          "text": "C:n paikka pysyy 20 metrissä, koska $20\\,\\text{m}$ on C:n lähtöpaikka.",
+          "text": "C:n paikka pysyy kohdassa $20\\,\\text{m}$, koska $20\\,\\text{m}$ on C:n lähtöpaikka.",
           "feedback": "Mallin arvoissa C:n paikka kasvaa joka sekunti. Luku $20\\,\\text{m}$ on vain alkupaikka. Kun nopeus ei ole nolla, paikka muuttuu."
         }
       ]
@@ -180,7 +180,7 @@
       "min": 2,
       "question": {
         "type": "numeric",
-        "prompt": "Laske kärryn B nopeus taulukon kahden rivin avulla. Vastaa yksikössä m/s.",
+        "prompt": "Laske kärryn B nopeus taulukon kahden rivin avulla. Vastaa yksikössä $\\text{m/s}$.",
         "answer": 4.0,
         "unit": "m/s",
         "tolerance": 0.02,
@@ -292,7 +292,7 @@
       "min": 2,
       "question": {
         "type": "numeric",
-        "prompt": "Laske kärryn D nopeus taulukon kahden rivin avulla. Anna vastaus etumerkkeineen yksikössä m/s.",
+        "prompt": "Laske kärryn D nopeus taulukon kahden rivin avulla. Anna vastaus etumerkkeineen yksikössä $\\text{m/s}$.",
         "answer": -3.0,
         "unit": "m/s",
         "tolerance": 0.02,
@@ -322,12 +322,12 @@
       "text": "Robotti ajaa suoraa viivaa pitkin tasaisella nopeudella. Etäisyysanturi mittaa sen paikan $x$ kahden sekunnin välein. Jokaisessa mittauksessa on pieni virhe. Siksi pisteet eivät osu täsmälleen samalle suoralle. Mittaukset ovat tässä taulukkona ja $(t, x)$-kuvaajana. Aineisto on esimerkki. Se ei ole oikea koe.\n\n| $t$ (s) | $x$ (m) |\n|---|---|\n| 0 | 4,2 |\n| 2 | 6,8 |\n| 4 | 10,2 |\n| 6 | 13,3 |\n| 8 | 15,8 |\n| 10 | 19,1 |\n\n<svg viewBox=\"0 0 600 340\" role=\"img\" aria-label=\"Mittauspisteet (t,x)-koordinaatistossa ja niiden läpi sovitettu suora: paikka kasvaa noin 4 metristä hetkellä 0 noin 19 metriin hetkellä 10 sekuntia. Suora alkaa pisteestä (0 s; 4,1 m), ja pisteet jäävät suunnilleen tasaisesti sen molemmille puolille.\" style=\"max-width:100%;font-size:24px\">\n  <line x1=\"167.5\" y1=\"286\" x2=\"167.5\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"243\" y1=\"286\" x2=\"243\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"319\" y1=\"286\" x2=\"319\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"394.5\" y1=\"286\" x2=\"394.5\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"470\" y1=\"286\" x2=\"470\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"92\" y1=\"230.5\" x2=\"470\" y2=\"230.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"92\" y1=\"175\" x2=\"470\" y2=\"175\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"92\" y1=\"119.5\" x2=\"470\" y2=\"119.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"92\" y1=\"64\" x2=\"470\" y2=\"64\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"91\" y1=\"286\" x2=\"484\" y2=\"286\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M496,286 L483,292 L483,280 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"92\" y1=\"287\" x2=\"92\" y2=\"50\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M92,38 L98,51 L86,51 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"167.5\" y1=\"286\" x2=\"167.5\" y2=\"293\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"157.5\" y=\"295.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$2$</div></foreignObject>\n  <line x1=\"243\" y1=\"286\" x2=\"243\" y2=\"293\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"233\" y=\"295.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$4$</div></foreignObject>\n  <line x1=\"319\" y1=\"286\" x2=\"319\" y2=\"293\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"309\" y=\"295.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$6$</div></foreignObject>\n  <line x1=\"394.5\" y1=\"286\" x2=\"394.5\" y2=\"293\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"384.5\" y=\"295.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$8$</div></foreignObject>\n  <line x1=\"470\" y1=\"286\" x2=\"470\" y2=\"293\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"453.5\" y=\"295.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:24px\">$10$</div></foreignObject>\n  <line x1=\"85\" y1=\"230.5\" x2=\"92\" y2=\"230.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"60\" y=\"216\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$5$</div></foreignObject>\n  <line x1=\"85\" y1=\"175\" x2=\"92\" y2=\"175\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"47\" y=\"160.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$10$</div></foreignObject>\n  <line x1=\"85\" y1=\"119.5\" x2=\"92\" y2=\"119.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"47\" y=\"105\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$15$</div></foreignObject>\n  <line x1=\"85\" y1=\"64\" x2=\"92\" y2=\"64\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"47\" y=\"49.5\" width=\"33\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$20$</div></foreignObject>\n  <foreignObject x=\"62\" y=\"291.5\" width=\"20\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px\">$0$</div></foreignObject>\n  <foreignObject x=\"502\" y=\"271.5\" width=\"62\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"82\" y=\"7.5\" width=\"62\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px\">$x\\ (\\text{m})$</div></foreignObject>\n  <polyline points=\"92,240.5 470,74\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"92\" cy=\"239.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"167.5\" cy=\"210.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"243\" cy=\"173\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"319\" cy=\"138.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"394.5\" cy=\"110.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"470\" cy=\"74\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <foreignObject x=\"288.5\" y=\"209.5\" width=\"183\" height=\"29\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c\"><span style=\"background:#ffffff;padding:0 5px;border-radius:3px\">$\\text{sovitettu suora}$</span></div></foreignObject>\n</svg>\n\nKuvaan on piirretty suora pisteiden läpi. Pisteet jäävät suunnilleen tasaisesti suoran molemmille puolille. Sovitettu suora alkaa paikasta $x_0 = 4{,}1\\,\\text{m}$ eli pisteestä $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$.",
       "question": {
         "type": "numeric",
-        "prompt": "Valitse sovitetulta suoralta toinen piste. Sen pitää olla kaukana alkupisteestä $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$. Lue pisteen $t$ ja $x$ kuvaajasta. Laske suoran kulmakerroin eli robotin nopeus näiden kahden pisteen avulla. Vastaa yksikössä m/s.",
+        "prompt": "Valitse sovitetulta suoralta toinen piste. Sen pitää olla kaukana alkupisteestä $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$. Lue pisteen $t$ ja $x$ kuvaajasta. Laske suoran kulmakerroin eli robotin nopeus näiden kahden pisteen avulla. Vastaa yksikössä $\\text{m/s}$.",
         "answer": 1.5,
         "unit": "m/s",
         "tolerance": 0.03,
         "hints": [
-          "Suora ei kulje kaikkien mittauspisteiden kautta. Lue siksi piste suoralta. Älä lue sitä taulukosta. Valitse piste, joka on kaukana alkupisteestä, esimerkiksi lähellä hetkeä $t = 10\\,\\text{s}$. Kirjaa sen t ja x.",
+          "Suora ei kulje kaikkien mittauspisteiden kautta. Lue siksi piste suoralta. Älä lue sitä taulukosta. Valitse piste, joka on kaukana alkupisteestä, esimerkiksi lähellä hetkeä $t = 10\\,\\text{s}$. Kirjaa sen $t$ ja $x$.",
           "$v = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Alkupiste on $(0\\,\\text{s};\\, 4{,}1\\,\\text{m})$; suora päättyy noin paikkaan $19\\,\\text{m}$.",
           "Hetkien $t = 0$ ja $t = 10\\,\\text{s}$ välillä suoran paikka kasvaa noin $19\\,\\text{m} - 4\\,\\text{m} = 15\\,\\text{m}$."
         ],
@@ -438,7 +438,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Pulkka liukuu suoraa rinnettä pitkin tasaisella nopeudella. Rinteessä on mittaustolppa, jonka kohdalla paikka on 0. Pulkka on hetkellä $t = 3{,}0\\,\\text{s}$ paikassa $4{,}0\\,\\text{m}$. Hetkellä $t = 7{,}0\\,\\text{s}$ se on paikassa $24\\,\\text{m}$. Missä paikassa pulkka on hetkellä $t = 10{,}0\\,\\text{s}$? Vastaa metreinä.",
+      "prompt": "Pulkka liukuu suoraa rinnettä pitkin tasaisella nopeudella. Rinteessä on mittaustolppa, jonka kohdalla paikka on 0. Pulkka on hetkellä $t = 3{,}0\\,\\text{s}$ paikassa $4{,}0\\,\\text{m}$. Hetkellä $t = 7{,}0\\,\\text{s}$ se on paikassa $24\\,\\text{m}$. Missä paikassa pulkka on hetkellä $t = 10{,}0\\,\\text{s}$? Vastaa yksikössä $\\text{m}$.",
       "answer": 39,
       "unit": "m",
       "tolerance": 0.02,
@@ -500,7 +500,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Laskeminen",
-      "prompt": "Kärry on hetkellä $t = 0$ paikassa $-12\\,\\text{m}$. Se liikkuu tasaisesti nopeudella $2{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Missä paikassa kärry on hetkellä $t = 10\\,\\text{s}$? Vastaa metreinä etumerkkeineen.",
+      "prompt": "Kärry on hetkellä $t = 0$ paikassa $-12\\,\\text{m}$. Se liikkuu tasaisesti nopeudella $2{,}5\\,\\text{m/s}$ positiiviseen suuntaan. Missä paikassa kärry on hetkellä $t = 10\\,\\text{s}$? Vastaa yksikössä $\\text{m}$ etumerkkeineen.",
       "answer": 13,
       "unit": "m",
       "tolerance": 0.02,

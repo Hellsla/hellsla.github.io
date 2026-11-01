@@ -305,11 +305,11 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
   <line x1="470" y1="300" x2="470" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="453.5" y="315.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$10$</div></foreignObject>
   <foreignObject x="502" y="289.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$x\ (\text{m})$</div></foreignObject>
-  <foreignObject x="242.5" y="211.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\Delta x = -5\,\text{m}$</div></foreignObject>
-  <line x1="390" y1="262" x2="209" y2="262" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M190,262 L210,253 L210,271 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <circle cx="390" cy="304" r="9" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="190" cy="304" r="9" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="242.5" y="211.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta x = -5\,\text{m}$</div></foreignObject>
+  <line x1="390" y1="262" x2="209" y2="262" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M190,262 L210,253 L210,271 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <circle cx="390" cy="304" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="190" cy="304" r="9" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="373.5" y="347.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_1$</div></foreignObject>
   <foreignObject x="173.5" y="347.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x_2$</div></foreignObject>
 </svg>
@@ -331,9 +331,9 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
   <line x1="110" y1="64" x2="391" y2="64" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
   <path d="M410,64 L390,73 L390,55 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="175" y="15.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{menomatka } 2\,\text{km}$</div></foreignObject>
-  <line x1="410" y1="184" x2="129" y2="184" stroke="#e8590c" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M110,184 L130,175 L130,193 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="168.5" y="199.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{paluumatka } 2\,\text{km}$</div></foreignObject>
+  <line x1="410" y1="184" x2="129" y2="184" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M110,184 L130,175 L130,193 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="168.5" y="199.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{paluumatka } 2\,\text{km}$</div></foreignObject>
   <line x1="24" y1="238" x2="576" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="196" y="251.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s = 2\,\text{km} + 2\,\text{km} = 4\,\text{km}$</div></foreignObject>
   <foreignObject x="233.5" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta x = x_2 - x_1 = 0$</div></foreignObject>
@@ -382,8 +382,8 @@ missä $x$ on paikka hetkellä $t$ (m), $x_0$ alkupaikka (m), $v$ nopeus (m/s) j
   <foreignObject x="500" y="99.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v > 0$</div></foreignObject>
   <polyline points="340,180 490,180" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="500" y="165.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$v = 0$</div></foreignObject>
-  <polyline points="340,180 490,246" fill="none" stroke="#e8590c" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <foreignObject x="500" y="231.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$v < 0$</div></foreignObject>
+  <polyline points="340,180 490,246" fill="none" stroke="#1971c2" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <foreignObject x="500" y="231.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v < 0$</div></foreignObject>
   <circle cx="340" cy="180" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="297" y="165.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x_0$</div></foreignObject>
 </svg>
@@ -474,7 +474,7 @@ x &= x_1 + v\,t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Ensimmäisten 40 sekunnin aikana paikka kasvoi $100\,\text{m}$, joten seuraavien 20 sekunnin aikana se kasvaa puolet siitä, $50\,\text{m}$. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
+**Järkevyys.** Ensimmäisten $40\,\text{s}$:n aikana paikka kasvoi $100\,\text{m}$, joten seuraavien $20\,\text{s}$:n aikana se kasvaa puolet siitä, $50\,\text{m}$. Paikka on $120\,\text{m} + 50\,\text{m} = 170\,\text{m}$, eli sama tulos. Nopeus $2{,}5\,\text{m/s}$ on noin $9\,\text{km/h}$, joka on hölkän vauhti. Nopeus on positiivinen, koska kuvaaja nousee.
 
 ## Yleinen virhekäsitys
 $(t,x)$-kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa. Toinen virhe on pitää negatiivista nopeutta hitaana nopeutena. Etumerkki kertoo vain suunnan: nopeus $-3\,\text{m/s}$ on suuruudeltaan suurempi kuin $+2\,\text{m/s}$. Kolmas virhe on päätellä paikasta nopeus: kappale voi olla edellä ja liikkua silti hitaammin.

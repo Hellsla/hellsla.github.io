@@ -52,6 +52,12 @@ KIND = [(r"^G(_|$)", "gravity"), (r"^N(_|$)", "normal"), (r"^F_(\\?mu|μ)", "fri
 W, H = 120, 70                     # the body rectangle (figure units)
 
 
+def _body_size():
+    """The body rectangle back at its usual size (draw makes it smaller for one body whose weight is short)."""
+    global W, H
+    W, H = 120, 70
+
+
 def kind_of(sym):
     return next((k for pat, k in KIND if re.search(pat, sym)), "applied")
 
@@ -263,6 +269,13 @@ def _exit(cx, cy, ang, at, d):
 EXIT = 24                          # a force drawn from inside the body reaches at least this far past its outline (visual audit 2026-11-01)
 
 
+def _short_inside(forces, cx, cy, ang, scale):
+    """The drawn length of the shortest force that starts inside the body and would not reach EXIT past its outline, else 0."""
+    out = [math.hypot(*L) * scale for _, _, L, at, _, extra in forces if math.hypot(*L) and not extra.get("push")
+           and (e := _exit(cx, cy, ang, at, (L[0] / math.hypot(*L), L[1] / math.hypot(*L))) ) > 1 and math.hypot(*L) * scale < e + EXIT]
+    return min(out) if out else 0.0
+
+
 def _out_of_body(forces, cx, cy, ang, scale):
     """A small force from the centre (a light body's weight beside a heavy load) would end inside the rectangle, its label
     then naming the wrong arrow: it is drawn long enough to leave the body. Returns the forces and whether one was lengthened."""
@@ -369,8 +382,9 @@ def draw(spec, fid, _frame=None):
     scale = (70 if two else 100) / big
     small = min([f[1] for b in bodies for f in b["forces"] if f[1] > 0] or [big])
     if two: scale = min(130.0, max(70.0, 26 * big / small)) / big           # two bodies: the same, within their half of the figure
-    if not two and any(b["surface"] not in (None, 0) for b in bodies): scale = min(180.0, max(100.0, 26 * big / small)) / big      # on a slope a small force (friction, a gentle slope) keeps a shaft
-                                                                            # behind its head: the whole figure on a larger scale (visual audit 2026-11-01)
+    centre = [f[1] for b in bodies for f in b["forces"] if kind_of(f[0]) in ("gravity", "buoyancy") and f[1] > 0]
+    if not two and centre and min(centre) * scale < 40: scale = min(160.0, 40 * big / min(centre)) / big   # a light body's weight beside a heavy
+                                                                            # load: the figure on a larger scale, still one scale (visual audit 2026-11-01)
     floor = lambda x: math.copysign(max(abs(x), MIN_SHOWN * big), x) if x else 0.0   # one linear scale, tiny ones visible
     Hfig, shift, xr = _frame or (460, 0, None)
     f = Fig(fid, Hfig, "")
@@ -387,15 +401,32 @@ def draw(spec, fid, _frame=None):
                                                                                    # bodies: a rope turning over a pulley
             hz[mh < mv] = SPLIT * max(mv, mh) / weak
     split = hz[True] != hz[False]
+    if not two and not split:                                                      # a small force or component keeps a shaft behind its
+        parts = []                                                                 # head: the whole figure on a larger scale, still one
+        for b in bodies:                                                           # scale (visual audit 2026-11-01)
+            for sym, size, deg, *_ in b["forces"]:
+                parts.append(size)
+                if sym in b["comps"] and b["axes"] is not None:
+                    k = kind_of(sym)
+                    ang_ = 270.0 if k == "gravity" else (b["surface"] or 0) + 90.0 if k == "normal" and deg is None else direction(deg) if deg is not None else None
+                    if ang_ is not None:
+                        d = math.radians(ang_ - b["axes"]); parts += [abs(size * math.cos(d)), abs(size * math.sin(d))]
+        least = min([x for x in parts if x > 1e-9 * big] or [big])
+        scale = max(scale, min(180.0, 32 * big / least) / big)
     shown = lambda size, horiz=False: floor(size * hz[horiz])
     for i, b in enumerate(bodies):
+        _body_size()
         cx = (150 + 300 * i) if two else 300; cy = 230 - shift
         surf = b["surface"]; ang = surf if surf is not None else 0.0
         a_dir = None
         if b["a"] is not None:
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
-        forces, longer = _out_of_body(forces, cx, cy, ang, scale); approx = approx or longer
+        short = _short_inside(forces, cx, cy, ang, scale)
+        if short:                                                                  # a force from the centre that would end inside the
+            global W, H                                                            # body: a smaller rectangle, the arrows kept to scale
+            k = max(0.35, min(1.0, (short - 12) / (H / 2))); W, H = W * k, H * k
+            forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
         for sym, vec, _, at, k, extra in forces: true.force(sym, vec, at, "gravity" if k == "gravity2" else k, tex=tex_of(sym), **extra)
@@ -459,6 +490,7 @@ def draw(spec, fid, _frame=None):
         nx = (min(xs) + max(xs)) / 2; ny = max(ys) + 22
         note = r"\text{" + i18n.t("fbd.split_note") + "}"; half = (figlib.visible_len(note) * 18 * 0.52 + 8) / 2 + 4
         f.tex(nx, ny, note, "middle", MUTED, size=18); ys += [ny + 14]; xs += [nx - half, nx + half]
+    _body_size()
     f.label = describe(words, two, approx, split)
     if _frame is None:                                                             # again, cut to what it holds
         y0, y1 = min(ys) - 8, max(ys) + 8
