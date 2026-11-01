@@ -464,7 +464,15 @@ def render(text):
     return FENCE.sub(sub, text), figs
 
 
+def sized(svg):
+    """A drawn diagram at its natural size: 0,7 px per viewBox unit (24-unit labels read at about 17 px), never wider than
+    its column. Stretched to the column width a tall one-body diagram grew to 900 px with 60 px labels (FY4 visual audit 2026-11-01)."""
+    m = re.search(r'viewBox="[-\d.]+ [-\d.]+ ([\d.]+) [\d.]+"', svg)
+    return svg.replace('style="max-width:100%', f'style="width:{float(m.group(1)) * 0.7:.0f}px;max-width:100%', 1) if m else svg
+
+
 def restore(html_text, figs):
+    figs = {tok: sized(svg) for tok, svg in figs.items()}
     for tok, svg in figs.items():
         html_text = re.sub(rf"(?:<p>)?{tok}(?:</p>|<br\s*/?>)?", lambda m, svg=svg: f'<div class="fig fbd">{svg}</div>', html_text)
     return html_text
