@@ -19,7 +19,8 @@ A course's fields (all texts in the language of the file):
                                          of every language says so and links to the units in that language's folder
   chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
                                          their units (scripts/units.py) in teaching order; a unit not yet published is
-                                         named as coming
+                                         named as coming; a unit with "optional": true is marked ★ (optional extra material)
+  overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
@@ -110,13 +111,15 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
         lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang else ""
         css = ROOT / "assets" / "units" / code.lower() / "units.css"
         if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
-        out += f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p><ol class="unit-chapters">'
+        out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
+                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<ol class="unit-chapters">')
         for i, ch in enumerate(c["chapters"], 1):
             items = ""
             for j, u in enumerate(ch["units"], 1):
                 num = f'<span class="l-num">{i}.{j}</span>'
-                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a></li>'
-                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span> <span class="tag">{T("site.lesson_coming")}</span></li>'
+                star = f' <span aria-hidden="true">★</span><span class="visually-hidden"> ({T("units.optional_mark")})</span>' if u.get("optional") else ""
+                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a>{star}</li>'
+                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span>{star} <span class="tag">{T("site.lesson_coming")}</span></li>'
             out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
                     f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
         out += "</ol>"
