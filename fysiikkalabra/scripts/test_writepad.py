@@ -1,0 +1,132 @@
+"""The solution editor under the exercises (templates/lesson.js part 6, teacher 2026-11-01: Abitti's own Digabi
+rich-text-editor, "Kirjoita ratkaisu" / "Kopioi ratkaisu", for L'Math). Usage: python scripts/test_writepad.py [site] [page ...]
+
+Static, every published lesson in every language: lesson.js marks the exercises it serves by `#exercises li[id]`, so
+every exercise the build writes must be such an <li> with its p.task, and the vendored editor files must be there.
+In a browser, on one lesson per language (or the pages named) served over http://localhost (the clipboard needs a
+secure page):
+  - one "Kirjoita ratkaisu" per exercise, in this language, before the exercise's answer and model solution; the
+    answer box, Tarkista and the answer/solution boxes are still there and the check still answers
+  - nothing of the editor is loaded before the first click (no vendor/digabi request), and it is loaded once
+  - the editor opens under the exercise; text and a formula (Ctrl+E) are typed, the formula becomes an image with
+    its LaTeX in alt; "Kopioi ratkaisu" puts the editor's HTML and a plain-text copy (formula as \\( LaTeX \\)) on the
+    clipboard, and pasting that HTML into another exercise's editor (the same editor as in Abitti) gives back an
+    editable formula with the same LaTeX
+  - at 360, 768 and 1280 px the open editor fits the exercise: no horizontal scroll, buttons at least 40 px high
+Exit status 1 on any failure."""
+import functools, http.server, re, sys, threading, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from courses import ROOT
+import i18n
+from _browser import launch
+
+args = sys.argv[1:]
+SITE = ROOT / (args.pop(0) if args and (ROOT / args[0]).is_dir() else "site")
+fails = 0
+
+
+def expect(name, ok, detail=""):
+    global fails
+    print(("ok   " if ok else "FAIL ") + name + ("" if ok else f"\n     {detail}"))
+    fails += not ok
+
+
+VENDOR = ["rich-text-editor-bundle.js", "tex-svg.js", "mathquill.css", "fonts/Symbola.woff2", "fonts/Symbola.woff"]
+expect("the editor files are published in vendor/digabi/", all((SITE / "vendor/digabi" / f).is_file() for f in VENDOR),
+       [f for f in VENDOR if not (SITE / "vendor/digabi" / f).is_file()])
+
+pages = {}   # lang -> [page names with exercises]
+for lang in i18n.languages():
+    out = SITE if lang == i18n.SOURCE else SITE / lang
+    for f in sorted(out.glob("*.html")):
+        h = f.read_text()
+        m = re.search(r'id="exercises"(.*?)(?=<section|<div class="stage|</main>)', h, re.S)
+        if not m or "<li" not in m.group(1): continue
+        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-core">[^<]*</span>)?<p class="task"', m.group(1))
+        tasks = m.group(1).count('class="task"')
+        if tasks: pages.setdefault(lang, []).append(f.relative_to(SITE).as_posix())
+        if len(items) != tasks:
+            expect(f"{lang} {f.name}: every exercise is an <li id> with its p.task", False, f"{len(items)} of {tasks}")
+for lang in pages:
+    expect(f"{lang}: {len(pages[lang])} published lessons have exercises", True)
+
+targets = [p for p in (args or [pp[0] for pp in pages.values()])]
+
+handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
+handler.log_message = lambda *a, **k: None
+srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+threading.Thread(target=srv.serve_forever, daemon=True).start()
+BASE = f"http://127.0.0.1:{srv.server_address[1]}/"
+
+from playwright.sync_api import sync_playwright
+with sync_playwright() as pw:
+    b = launch(pw)
+    for page in targets:
+        lang = page.split("/")[0] if "/" in page else i18n.SOURCE
+        T = i18n.T(lang)
+        ctx = b.new_context(viewport={"width": 1280, "height": 900}, permissions=["clipboard-read", "clipboard-write"])
+        pg = ctx.new_page()
+        reqs = []; errs = []
+        pg.on("request", lambda r: reqs.append(r.url))
+        pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.goto(BASE + page); pg.wait_for_load_state("load")
+        pg.evaluate("document.querySelectorAll('#exercises details.level').forEach(d => { d.open = true; })")   # the levels are closed boxes
+        n_ex = pg.locator("#exercises li[id]:has(> .task)").count()
+        btns = pg.locator("#exercises .pad-open")
+        expect(f"{page}: one '{T('js.pad_write')}' per exercise ({n_ex})", n_ex > 0 and btns.count() == n_ex, f"{btns.count()} buttons")
+        expect(f"{page}: the button's text is this language's", btns.first.inner_text().strip() == T("js.pad_write"), btns.first.inner_text())
+        order = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
+            const b = li.querySelector(':scope > .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution');
+            return b && (!a || (b.compareDocumentPosition(a) & 4)) && (!s || (b.compareDocumentPosition(s) & 4)); })""")
+        expect(f"{page}: the button comes after the task and before its answer and model solution", order)
+        expect(f"{page}: nothing of the editor loads before the first click", not any("/vendor/digabi/" in u for u in reqs),
+               [u for u in reqs if "/vendor/digabi/" in u])
+        # the answer check is unchanged
+        form = pg.locator("#exercises form.check").first
+        if form.count():
+            form.locator("input").fill("abc"); form.locator("button").click()
+            expect(f"{page}: the answer check still answers", form.locator("output").inner_text().strip() == T("js.check_number"))
+        li = pg.locator("#exercises li[id]:has(> .task)").first
+        li.locator(".pad-open").scroll_into_view_if_needed(); li.locator(".pad-open").click()
+        try:
+            li.locator(".rich-text-editor").wait_for(timeout=20000)
+        except Exception:
+            expect(f"{page}: the editor opens", False, errs); ctx.close(); continue
+        expect(f"{page}: the editor opens under the exercise, focused", pg.evaluate("document.activeElement && document.activeElement.classList.contains('rich-text-editor')"))
+        pg.keyboard.type("v = s : t, joten "); pg.keyboard.press("Control+e"); pg.wait_for_timeout(200)
+        pg.keyboard.type("v=s/t"); pg.keyboard.press("Escape"); pg.wait_for_timeout(400)
+        pg.keyboard.type(" eli nopeus.")
+        alt = li.locator(".rich-text-editor img").first.get_attribute("alt") if li.locator(".rich-text-editor img").count() else None
+        src = li.locator(".rich-text-editor img").first.get_attribute("src") if alt else ""
+        expect(f"{page}: a formula becomes an image with its LaTeX in alt, drawn in the browser", alt == "v=\\frac{s}{t}" and src.startswith("data:image/svg+xml"), (alt, src[:40]))
+        li.locator(".pad-copy").click(); pg.wait_for_timeout(300)
+        expect(f"{page}: Kopioi ratkaisu says the solution is copied", li.locator(".pad-status").inner_text().strip() == T("js.pad_copied"), li.locator(".pad-status").inner_text())
+        clip = pg.evaluate("""async () => { const out = {}; for (const it of await navigator.clipboard.read()) for (const t of it.types) out[t] = await (await it.getType(t)).text(); return out; }""")
+        expect(f"{page}: the clipboard has the plain text with the formula as \\( LaTeX \\)",
+               clip.get("text/plain", "").replace(" ", " ") == "v = s : t, joten \\(v=\\frac{s}{t}\\) eli nopeus.", clip.get("text/plain"))
+        expect(f"{page}: the clipboard has the HTML with the formula image and its LaTeX", 'alt="v=\\frac{s}{t}"' in clip.get("text/html", ""), clip.get("text/html", "")[:200])
+        loaded = [u for u in reqs if "/vendor/digabi/" in u]
+        li2 = pg.locator("#exercises li[id]:has(> .task)").nth(1)
+        if li2.count():
+            li2.locator(".pad-open").click(); li2.locator(".rich-text-editor").wait_for(timeout=10000)
+            li2.locator(".rich-text-editor").click(); pg.keyboard.press("Control+v"); pg.wait_for_timeout(600)
+            alt2 = li2.locator(".rich-text-editor img[data-math-image]").first.get_attribute("alt") if li2.locator(".rich-text-editor img[data-math-image]").count() else None
+            expect(f"{page}: pasted into the same editor as in Abitti, the formula is an editable formula again", alt2 == "v=\\frac{s}{t}",
+                   li2.locator(".rich-text-editor").inner_html()[:300])
+            expect(f"{page}: the editor files load once", len([u for u in reqs if "/vendor/digabi/" in u]) == len(loaded), [u for u in reqs if "/vendor/digabi/" in u])
+        for w in (360, 768, 1280):
+            pg.set_viewport_size({"width": w, "height": 800}); pg.wait_for_timeout(200)
+            m = pg.evaluate("""(id) => { const li = document.getElementById(id), ed = li.querySelector('.rich-text-editor'), r = li.getBoundingClientRect(), e = ed.getBoundingClientRect();
+                return { scroll: document.documentElement.scrollWidth - innerWidth, inside: e.left >= r.left - 1 && e.right <= r.right + 1,
+                         small: [...li.querySelectorAll('.pad-open,.pad-copy')].filter(b => b.getBoundingClientRect().height < 40).length }; }""", li.get_attribute("id"))
+            expect(f"{page} {w} px: the open editor fits the exercise, no horizontal scroll, buttons 40 px", m["scroll"] <= 0 and m["inside"] and not m["small"], m)
+            if w in (360, 1280):
+                li.locator(".pad").scroll_into_view_if_needed()
+                shot = ROOT / "preview" / "writepad"; shot.mkdir(parents=True, exist_ok=True)
+                li.screenshot(path=str(shot / f"{page.replace('/', '_')}-{w}.png"))
+        expect(f"{page}: no script errors", not errs, errs)
+        ctx.close()
+    b.close()
+srv.shutdown()
+print("FAILURES:", fails) if fails else print("all ok")
+sys.exit(1 if fails else 0)
