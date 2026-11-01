@@ -193,6 +193,7 @@ When two objects or substances are in an insulated container, the quantity of he
 Q_\text{released} = Q_\text{absorbed}
 ```
 The problem goes like this:
+
 1. Define the system and decide where the energy comes from and where it goes.
 2. Write the energy of the source: $Pt$ or $cm\Delta T$ of the substance that gives out heat.
 3. Go through the stages in order of temperature: warming up to the melting point, melting, warming up. During melting the temperature is constant.

@@ -211,7 +211,7 @@ The picture is drawn to scale. The limit lines run close to each other in the me
 ## Worked example
 The example data give the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to measurement imprecision has been added; they are not the results of a real measurement. The uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$.
 
-| θ (°C) | p (kPa) |
+| $\theta$ (°C) | $p$ (kPa) |
 | --- | --- |
 | 10 | 105 |
 | 25 | 110 |

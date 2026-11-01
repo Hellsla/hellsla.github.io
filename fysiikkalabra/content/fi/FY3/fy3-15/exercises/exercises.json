@@ -19,7 +19,7 @@
     {
       "id": "fy3-15-L1-03",
       "level": 1,
-      "text": "Katolle asennetun aurinkopaneelin pinta-ala on 20,0 m², ja siihen osuu auringon säteilyä teholla $1{,}00\\,\\text{kW}$ jokaista neliömetriä kohti. Paneelin hyötysuhde on 0,210. Kuinka suuren sähkötehon paneeli tuottaa? Anna vastaus kilowatteina.",
+      "text": "Katolle asennetun aurinkopaneelin pinta-ala on $20{,}0\\,\\text{m}^2$, ja siihen osuu auringon säteilyä teholla $1{,}00\\,\\text{kW}$ jokaista neliömetriä kohti. Paneelin hyötysuhde on 0,210. Kuinka suuren sähkötehon paneeli tuottaa? Anna vastaus kilowatteina.",
       "answer": 4.2,
       "unit": "kW",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh}$ = 3,60 · 10¹² J). Jos sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa, jonka hyötysuhde on 0,380 ja jossa hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$, kuinka monta kilotonnia hiiltä (1 kt = 10⁶ kg) vuodessa poltettaisiin? Selitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen.",
+      "text": "Tuulipuisto tuottaa vuodessa sähköä $36{,}0\\,\\text{GWh}$ ($1\\,\\text{GWh} = 3{,}60 \\cdot 10^{12}\\,\\text{J}$). Jos sama sähkö tuotettaisiin kivihiilellä lauhdevoimalaitoksessa, jonka hyötysuhde on 0,380 ja jossa hiilen lämpöarvo on $25{,}0\\,\\text{MJ/kg}$, kuinka monta kilotonnia hiiltä ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) vuodessa poltettaisiin? Selitä myös, miksi tuulipuiston hyötysuhdetta ei voi verrata hiilivoimalaitoksen hyötysuhteeseen yhtä suoraan kuin kahden lauhdevoimalaitoksen.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy3-15-L3-03",
       "level": 3,
-      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä. Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400, ja voimajohdoissa ja muuntajissa siitä menetetään $5{,}0\\,\\%$, joten talon sähkömittariin tulee 0,950 · 0,400 = 0,380 osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00. Kuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina. Vertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900) ja päättele, mikä tavoista säästää polttoainetta eniten.",
+      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä. Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400, ja voimajohdoissa ja muuntajissa siitä menetetään $5{,}0\\,\\%$, joten talon sähkömittariin tulee $0{,}950 \\cdot 0{,}400 = 0{,}380$ osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00. Kuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina. Vertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900) ja päättele, mikä tavoista säästää polttoainetta eniten.",
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02

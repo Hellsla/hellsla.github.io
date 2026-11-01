@@ -26,17 +26,17 @@
       "prompt": "A cubic metre of water (density $1000\\,\\text{kg/m}^3$) has a mass of $1000\\,\\text{kg}$. What is the weight $G = mg$ of this amount of water?",
       "choices": [
         {
-          "text": "1000 N",
+          "text": "$1000\\,\\text{N}$",
           "feedback": "You mixed up mass and weight. Weight is a force, and you get it by multiplying the mass by the acceleration of free fall: $G = mg = 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 9810\\,\\text{N}$."
         },
         {
-          "text": "about 9.8 kN",
+          "text": "about $9.8\\,\\text{kN}$",
           "correct": true,
           "feedback": "Correct: $G = mg = 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 9810\\,\\text{N} \\approx 9.8\\,\\text{kN}$. You need this weight of a column of water in this lesson."
         },
         {
-          "text": "102 N",
-          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs 9.81 N at the Earth's surface, so $1000\\,\\text{kg}$ weighs 9810 N."
+          "text": "$102\\,\\text{N}$",
+          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs $9.81\\,\\text{N}$ at the Earth's surface, so $1000\\,\\text{kg}$ weighs $9810\\,\\text{N}$."
         },
         {
           "text": "$1000\\,\\text{kg}$",
@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the depth doubles",
-      "prompt": "A pressure gauge in a lake is at a depth of $5\\,\\text{m}$. It is lowered to a depth of $10\\,\\text{m}$. Atmospheric pressure of 101 kPa acts at the surface. What happens to the total pressure that the gauge shows?",
+      "prompt": "A pressure gauge in a lake is at a depth of $5\\,\\text{m}$. It is lowered to a depth of $10\\,\\text{m}$. Atmospheric pressure of $101\\,\\text{kPa}$ acts at the surface. What happens to the total pressure that the gauge shows?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -59,16 +59,16 @@
       "choices": [
         {
           "text": "The total pressure doubles, because the depth doubles.",
-          "feedback": "Your measurements show that the total pressure grows from about 150 kPa to 199 kPa, that is, only about 1.3 times. Only the part caused by the water doubles (about 49 kPa → 98 kPa). The atmospheric pressure of 101 kPa at the surface is the same at both depths, so the total pressure is not directly proportional to the depth."
+          "feedback": "Your measurements show that the total pressure grows from about $150\\,\\text{kPa}$ to $199\\,\\text{kPa}$, that is, only about 1.3 times. Only the part caused by the water doubles (about $49\\,\\text{kPa}$ → $98\\,\\text{kPa}$). The atmospheric pressure of $101\\,\\text{kPa}$ at the surface is the same at both depths, so the total pressure is not directly proportional to the depth."
         },
         {
           "text": "The total pressure grows, but by less than a factor of two.",
           "correct": true,
-          "feedback": "The values of the model support this: at $5\\,\\text{m}$ the total pressure in the model is about 150 kPa and at $10\\,\\text{m}$ about 199 kPa. The part caused by the water doubles (49 kPa → 98 kPa), but the atmospheric pressure of 101 kPa stays the same as the constant term."
+          "feedback": "The values of the model support this: at $5\\,\\text{m}$ the total pressure in the model is about $150\\,\\text{kPa}$ and at $10\\,\\text{m}$ about $199\\,\\text{kPa}$. The part caused by the water doubles ($49\\,\\text{kPa}$ → $98\\,\\text{kPa}$), but the atmospheric pressure of $101\\,\\text{kPa}$ stays the same as the constant term."
         },
         {
           "text": "The pressure stays the same, because the water is the same all the way down.",
-          "feedback": "Your measurements show an increase of about 49 kPa over five metres. The water is the same, but deeper down there is more water above, and the weight of this column of water presses on the gauge."
+          "feedback": "Your measurements show an increase of about $49\\,\\text{kPa}$ over five metres. The water is the same, but deeper down there is more water above, and the weight of this column of water presses on the gauge."
         }
       ]
     },
@@ -86,20 +86,20 @@
       "choices": [
         {
           "text": "Nothing changes, because pressure depends only on the depth.",
-          "feedback": "The values of the model show that the pressure caused by the water grows from about 98 kPa to 122 kPa. The same depth of a denser liquid means a heavier column of liquid above the gauge."
+          "feedback": "The values of the model show that the pressure caused by the water grows from about $98\\,\\text{kPa}$ to $122\\,\\text{kPa}$. The same depth of a denser liquid means a heavier column of liquid above the gauge."
         },
         {
           "text": "The pressure caused by the water decreases, because you float better in denser water.",
-          "feedback": "The values of the model show an increase, not a decrease: about 98 kPa → 122 kPa. Floating is about buoyancy, which is a different thing. The column of liquid above the gauge is heavier when it is denser, so the pressure grows."
+          "feedback": "The values of the model show an increase, not a decrease: about $98\\,\\text{kPa}$ → $122\\,\\text{kPa}$. Floating is about buoyancy, which is a different thing. The column of liquid above the gauge is heavier when it is denser, so the pressure grows."
         },
         {
           "text": "The pressure caused by the water grows by $24\\,\\%$, but the total pressure by less.",
           "correct": true,
-          "feedback": "The values of the model support this: the part caused by the water grows from about 98 kPa to 122 kPa ($24\\,\\%$), but the total pressure only from about 199 kPa to 223 kPa (about $12\\,\\%$), because the atmospheric pressure of 101 kPa does not change."
+          "feedback": "The values of the model support this: the part caused by the water grows from about $98\\,\\text{kPa}$ to $122\\,\\text{kPa}$ ($24\\,\\%$), but the total pressure only from about $199\\,\\text{kPa}$ to $223\\,\\text{kPa}$ (about $12\\,\\%$), because the atmospheric pressure of $101\\,\\text{kPa}$ does not change."
         },
         {
           "text": "The total pressure grows by $24\\,\\%$, in the same proportion as the density.",
-          "feedback": "According to the values of the model, the total pressure grows from about 199 kPa to 223 kPa, that is, about $12\\,\\%$. Only the part caused by the liquid grows with the density; the atmospheric pressure of 101 kPa stays the same."
+          "feedback": "According to the values of the model, the total pressure grows from about $199\\,\\text{kPa}$ to $223\\,\\text{kPa}$, that is, about $12\\,\\%$. Only the part caused by the liquid grows with the density; the atmospheric pressure of $101\\,\\text{kPa}$ stays the same."
         }
       ],
       "optional": true
@@ -134,7 +134,7 @@
       "type": "sim",
       "text": "In the simulation a pressure gauge is lowered into a liquid.",
       "howto": "Adjust the depth and the density and follow the reading of the gauge and the $(h, p)$ graph. The box *Show gauge pressure only* removes atmospheric pressure from the graph.",
-      "model": "Atmospheric pressure at the surface is a fixed 101 kPa, and the liquid is at rest and equally dense everywhere (its compression is ignored). The readings are values from a model, not measurements from a real lake.",
+      "model": "Atmospheric pressure at the surface is a fixed $101\\,\\text{kPa}$, and the liquid is at rest and equally dense everywhere (its compression is ignored). The readings are values from a model, not measurements from a real lake.",
       "calc": "Pressure grows steadily with depth: $p = p_0 + \\rho g h$, so every metre adds $\\rho g \\cdot 1\\,\\text{m}$ of pressure. The slope of the line, $\\rho g$, depends on the density, but at the surface ($h = 0$) the pressure is always the atmospheric pressure $p_0$."
     },
     {
@@ -284,7 +284,7 @@
           "feedback": "Correct. The pressure is determined by the column of water above the point, and its height is $4.0\\,\\text{m} - 1.0\\,\\text{m} = 3.0\\,\\text{m}$. So $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{m} \\approx 29\\,\\text{kPa}$."
         },
         {
-          "text": "The atmospheric pressure of 101 kPa is missing.",
+          "text": "The atmospheric pressure of $101\\,\\text{kPa}$ is missing.",
           "feedback": "The question asked for the hydrostatic pressure, that is, the gauge pressure $\\rho g h$, which does not include atmospheric pressure. In the total pressure it would be included. The error is in where the depth is measured from."
         },
         {
@@ -303,7 +303,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A mercury barometer has a vertical glass tube that is closed at the top and whose lower end is in a dish of mercury. In the upper part of the tube, above the mercury, there is a vacuum, so the pressure at the top of the column is zero. The atmospheric pressure of 101 kPa holds the column of mercury up in the tube. How tall is the column? The density of mercury is $13\\,600\\,\\text{kg/m}^3$. Give the answer in metres.",
+      "prompt": "A mercury barometer has a vertical glass tube that is closed at the top and whose lower end is in a dish of mercury. In the upper part of the tube, above the mercury, there is a vacuum, so the pressure at the top of the column is zero. The atmospheric pressure of $101\\,\\text{kPa}$ holds the column of mercury up in the tube. How tall is the column? The density of mercury is $13\\,600\\,\\text{kg/m}^3$. Give the answer in metres.",
       "answer": 0.757,
       "unit": "m",
       "tolerance": 0.02,
@@ -380,7 +380,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Graph and calculation",
-      "prompt": "The $(h, p)$ graph of an unknown liquid is a straight line through the points ($0\\,\\text{m}$, 101 kPa) and ($8.0\\,\\text{m}$, 171 kPa). What is the density of the liquid? Give the answer in kg/m³.",
+      "prompt": "The $(h, p)$ graph of an unknown liquid is a straight line through the points ($0\\,\\text{m}$, $101\\,\\text{kPa}$) and ($8.0\\,\\text{m}$, $171\\,\\text{kPa}$). What is the density of the liquid? Give the answer in kg/m³.",
       "answer": 890,
       "unit": "kg/m³",
       "tolerance": 0.02,
@@ -392,7 +392,7 @@
       "mistakes": [
         {
           "value": 2180,
-          "feedback": "You divided the total pressure of 171 kPa by the depth. The constant term of the graph, 101 kPa, is atmospheric pressure, not pressure caused by the liquid. Use the slope, that is, the change in pressure: $(171 - 101)\\,\\text{kPa} / 8.0\\,\\text{m}$."
+          "feedback": "You divided the total pressure of $171\\,\\text{kPa}$ by the depth. The constant term of the graph, $101\\,\\text{kPa}$, is atmospheric pressure, not pressure caused by the liquid. Use the slope, that is, the change in pressure: $(171 - 101)\\,\\text{kPa} / 8.0\\,\\text{m}$."
         },
         {
           "value": 0.892,
@@ -408,12 +408,12 @@
       "title": "4. Explain and transfer",
       "prompt": "A diver is at a depth of $3.0\\,\\text{m}$ and feels pressure in an ear. When the diver equalises the pressure by letting air from the throat into the middle ear, the feeling goes away. Use pressure to explain why a force acts on the eardrum at first and why it disappears when the pressure is equalised. Use the concepts pressure, gauge pressure and force.",
       "criteria": [
-        "I say that at $3.0\\,\\text{m}$ the outside pressure is greater than atmospheric pressure by the hydrostatic pressure $\\rho g h$ (about 29 kPa).",
+        "I say that at $3.0\\,\\text{m}$ the outside pressure is greater than atmospheric pressure by the hydrostatic pressure $\\rho g h$ (about $29\\,\\text{kPa}$).",
         "I say that the air in the middle ear is at first at atmospheric pressure, so the pressure on the two sides of the eardrum is different.",
         "I justify the force with the pressure difference and the area, $F = \\Delta p \\cdot A$, and say that the force is perpendicular to the membrane.",
         "I explain that after equalising, the pressure is the same on both sides of the membrane, so the forces cancel."
       ],
-      "model": "At the surface there is atmospheric pressure on both sides of the eardrum, so the forces cancel. At a depth of three metres the outside pressure is greater than atmospheric pressure by the gauge pressure $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{m} \\approx 29\\,\\text{kPa}$, but the air in the middle ear is still at atmospheric pressure. The pressure difference pushes the membrane inwards, perpendicular to its surface, with a force $F = \\Delta p \\cdot A$; if the area of the membrane is about $0.6\\,\\text{cm}^2$ (an approximation), the force is about 1.8 N. When the diver lets more air into the middle ear, its pressure rises to the same size as the outside pressure. Then the pressure on the two sides of the membrane is the same, the forces cancel and the feeling goes away.",
+      "model": "At the surface there is atmospheric pressure on both sides of the eardrum, so the forces cancel. At a depth of three metres the outside pressure is greater than atmospheric pressure by the gauge pressure $\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 3.0\\,\\text{m} \\approx 29\\,\\text{kPa}$, but the air in the middle ear is still at atmospheric pressure. The pressure difference pushes the membrane inwards, perpendicular to its surface, with a force $F = \\Delta p \\cdot A$; if the area of the membrane is about $0.6\\,\\text{cm}^2$ (an approximation), the force is about $1.8\\,\\text{N}$. When the diver lets more air into the middle ear, its pressure rises to the same size as the outside pressure. Then the pressure on the two sides of the membrane is the same, the forces cancel and the feeling goes away.",
       "optional": true
     },
     {

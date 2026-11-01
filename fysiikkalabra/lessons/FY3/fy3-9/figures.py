@@ -78,7 +78,7 @@ def boyle_graphs():
 
 
 def absolute_zero():
-    f = Fig("fy39-kelvin", 622, "Kuvaajat mittakaavassa, kun T on 0–400 K. Ylhäällä kaasun tilavuus vakiopaineessa, "
+    f = Fig("fy39-kelvin", 640, "Kuvaajat mittakaavassa, kun T on 0–400 K. Ylhäällä kaasun tilavuus vakiopaineessa, "
             "alhaalla kaasun paine vakiotilavuudessa kelvinlämpötilan funktiona. Mittauspisteet välillä 253–373 K "
             "ovat suoralla. Suoran katkoviivalla piirretty jatke kulkee origon kautta: tilavuus tai paine olisi nolla "
             "absoluuttisessa nollapisteessä 0 K eli −273 °C.")

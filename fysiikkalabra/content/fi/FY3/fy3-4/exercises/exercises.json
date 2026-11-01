@@ -3,7 +3,7 @@
     {
       "id": "fy3-4-L1-01",
       "level": 1,
-      "text": "Hiihtäjän paino on 720 N. Se jakautuu tasaisesti suksien pohjille, joiden yhteinen pinta-ala on 0,30 m². Kuinka suuri paine suksista kohdistuu lumeen?",
+      "text": "Hiihtäjän paino on $720\\,\\text{N}$. Se jakautuu tasaisesti suksien pohjille, joiden yhteinen pinta-ala on $0{,}30\\,\\text{m}^2$. Kuinka suuri paine suksista kohdistuu lumeen?",
       "answer": 2400,
       "unit": "Pa",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-4-L1-03",
       "level": 1,
-      "text": "Järven pohjaan $18{,}0\\,\\text{m}$:n syvyyteen on asennettu painemittari. Matalapaineen aikana ilmanpaine järven pinnalla on 98,5 kPa. Mikä on kokonaispaine mittarin kohdalla? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
+      "text": "Järven pohjaan $18{,}0\\,\\text{m}$:n syvyyteen on asennettu painemittari. Matalapaineen aikana ilmanpaine järven pinnalla on $98{,}5\\,\\text{kPa}$. Mikä on kokonaispaine mittarin kohdalla? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 275,
       "unit": "kPa",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-4-L1-04",
       "level": 1,
-      "text": "Saunan kiukaan paino on 750 N. Kiuas seisoo neljällä jalalla, joiden yhteinen pinta-ala lattiaa vasten on 0,0025 m². Kuinka suuri paine jaloista kohdistuu lattiaan? Anna vastaus kilopascaleina.",
+      "text": "Saunan kiukaan paino on $750\\,\\text{N}$. Kiuas seisoo neljällä jalalla, joiden yhteinen pinta-ala lattiaa vasten on $0{,}0025\\,\\text{m}^2$. Kuinka suuri paine jaloista kohdistuu lattiaan? Anna vastaus kilopascaleina.",
       "answer": 300,
       "unit": "kPa",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-4-L2-01",
       "level": 2,
-      "text": "Ihmisen paino on 600 N. Askeleen alussa hän painaa parkettilattiaa hetken pelkällä korkokengän korolla, jonka kosketusala lattiaan on 1,5 cm². Kuinka suuri paine korosta kohdistuu lattiaan? Anna vastaus megapascaleina (MPa); etuliite mega tarkoittaa miljoonaa.",
+      "text": "Ihmisen paino on $600\\,\\text{N}$. Askeleen alussa hän painaa parkettilattiaa hetken pelkällä korkokengän korolla, jonka kosketusala lattiaan on $1{,}5\\,\\text{cm}^2$. Kuinka suuri paine korosta kohdistuu lattiaan? Anna vastaus megapascaleina (MPa); etuliite mega tarkoittaa miljoonaa.",
       "answer": 4.0,
       "unit": "MPa",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-4-L2-02",
       "level": 2,
-      "text": "Talo saa vetensä vesitornista. Kun hanat ovat kiinni, painemittari näyttää kellarin hanan kohdalla ylipaineen 350 kPa. Kuinka korkealla tornin vedenpinta on hanan yläpuolella? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
+      "text": "Talo saa vetensä vesitornista. Kun hanat ovat kiinni, painemittari näyttää kellarin hanan kohdalla ylipaineen $350\\,\\text{kPa}$. Kuinka korkealla tornin vedenpinta on hanan yläpuolella? Veden tiheys on $1000\\,\\text{kg/m}^3$.",
       "answer": 35.7,
       "unit": "m",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy3-4-L2-04",
       "level": 2,
-      "text": "Painekattilan sisällä on ylipaine 0,85 bar (1 bar = 100 kPa). Kannen pinta-ala on 380 cm². Kuinka suuren voiman ylipaine kohdistaa kanteen? Anna vastaus kilonewtoneina.",
+      "text": "Painekattilan sisällä on ylipaine $0{,}85\\,\\text{bar}$ ($1\\,\\text{bar} = 100\\,\\text{kPa}$). Kannen pinta-ala on $380\\,\\text{cm}^2$. Kuinka suuren voiman ylipaine kohdistaa kanteen? Anna vastaus kilonewtoneina.",
       "answer": 3.2,
       "unit": "kN",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-4-L3-01",
       "level": 3,
-      "text": "Retkeilijän massa on rinkan kanssa $85\\,\\text{kg}$. Upottava hanki kantaa, jos paine siihen on enintään 6,0 kPa. Kävellessä retkeilijä on hetkittäin vain yhden jalan varassa. Kuinka suuri yhden lumikengän pinta-alan on vähintään oltava, jotta hän ei uppoa?",
+      "text": "Retkeilijän massa on rinkan kanssa $85\\,\\text{kg}$. Upottava hanki kantaa, jos paine siihen on enintään $6{,}0\\,\\text{kPa}$. Kävellessä retkeilijä on hetkittäin vain yhden jalan varassa. Kuinka suuri yhden lumikengän pinta-alan on vähintään oltava, jotta hän ei uppoa?",
       "answer": 0.14,
       "unit": "m²",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy3-4-L3-02",
       "level": 3,
-      "text": "Mökin sadevesitynnyri on täynnä vettä, ja sen tiivis kansi on vettä vasten. Kannen pinta-ala on 0,25 m². Kannen läpi asennetaan ohut pystysuora letku, joka täytetään vedellä $4{,}0\\,\\text{m}$:n korkeuteen kannen yläpuolelle. Letkuun mahtuu vain $0{,}40\\,\\textsf{l}$ vettä. Kuinka paljon kasvaa voima, jolla tynnyrin vesi painaa kantta? Anna vastaus kilonewtoneina.",
+      "text": "Mökin sadevesitynnyri on täynnä vettä, ja sen tiivis kansi on vettä vasten. Kannen pinta-ala on $0{,}25\\,\\text{m}^2$. Kannen läpi asennetaan ohut pystysuora letku, joka täytetään vedellä $4{,}0\\,\\text{m}$:n korkeuteen kannen yläpuolelle. Letkuun mahtuu vain $0{,}40\\,\\textsf{l}$ vettä. Kuinka paljon kasvaa voima, jolla tynnyrin vesi painaa kantta? Anna vastaus kilonewtoneina.",
       "answer": 9.8,
       "unit": "kN",
       "tolerance": 0.02

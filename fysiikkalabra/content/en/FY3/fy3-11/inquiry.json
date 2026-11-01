@@ -60,12 +60,12 @@
       "choices": [
         {
           "text": "$W_\\text{g} = 200\\,\\text{J}$, because the work is determined by the pressure, which stays at $200\\,\\text{kPa}$.",
-          "feedback": "In the experiment the pressure is 200 kPa on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives $200\\,\\text{J}$ and $\\Delta V = 1.50\\,\\text{l}$ gives $300\\,\\text{J}$. Pressure alone does no work; the piston does work only when it moves."
+          "feedback": "In the experiment the pressure is $200\\,\\text{kPa}$ on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives $200\\,\\text{J}$ and $\\Delta V = 1.50\\,\\text{l}$ gives $300\\,\\text{J}$. Pressure alone does no work; the piston does work only when it moves."
         },
         {
           "text": "$W_\\text{g} = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from 1.0 litres to 2.5 litres, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is 200 kPa high and $1.5\\,\\textsf{l}$ wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from $1.0\\,\\textsf{l}$ to $2.5\\,\\textsf{l}$, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is $200\\,\\text{kPa}$ high and $1.5\\,\\textsf{l}$ wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
           "text": "$W_\\text{g} = 500\\,\\text{J}$",
@@ -73,7 +73,7 @@
         },
         {
           "text": "$W_\\text{g} = 300\\,000\\,\\text{J}$",
-          "feedback": "Here the pascals have been multiplied by litres. In the experiment the model gives $W_\\text{g} = 300\\,\\text{J}$ for an expansion of 1.5 litres: the volume must be converted to cubic metres, $1.5\\,\\text{l} = 0.0015\\,\\text{m}^3$."
+          "feedback": "Here the pascals have been multiplied by litres. In the experiment the model gives $W_\\text{g} = 300\\,\\text{J}$ for an expansion of $1.5\\,\\textsf{l}$: the volume must be converted to cubic metres, $1.5\\,\\text{l} = 0.0015\\,\\text{m}^3$."
         }
       ]
     },
@@ -91,7 +91,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: heating at constant pressure",
-      "intro": "Test prediction 1. The pressure stays at 200 kPa, because the weights do not change. Change only the heat $Q$, for example $500\\,\\text{J}$, $750\\,\\text{J}$ and $1000\\,\\text{J}$. Press *Heat* each time and record the measurement only when the piston has stopped. Record at least the row $Q = 1000\\,\\text{J}$.",
+      "intro": "Test prediction 1. The pressure stays at $200\\,\\text{kPa}$, because the weights do not change. Change only the heat $Q$, for example $500\\,\\text{J}$, $750\\,\\text{J}$ and $1000\\,\\text{J}$. Press *Heat* each time and record the measurement only when the piston has stopped. Record at least the row $Q = 1000\\,\\text{J}$.",
       "initial": {
         "Qin": 500,
         "paluu": "sama paine",
@@ -227,16 +227,16 @@
       "min": 2,
       "question": {
         "type": "choice",
-        "prompt": "After cycle B, an orange rectangle remains in the $(V, p)$ graph between the pressures 100 kPa and 200 kPa. What does its area tell you?",
+        "prompt": "After cycle B, an orange rectangle remains in the $(V, p)$ graph between the pressures $100\\,\\text{kPa}$ and $200\\,\\text{kPa}$. What does its area tell you?",
         "choices": [
           {
             "text": "The net work of the cycle: $W = (p_1 - p_2)\\,\\Delta V = 100\\,\\text{kPa} \\cdot 1.0\\,\\text{l} = 100\\,\\text{J}$.",
             "correct": true,
-            "feedback": "Correct. The gas did $200\\,\\text{J}$ of work when it rose, and on the return at the pressure 100 kPa $100\\,\\text{J}$ of work was done on it (blue). The difference $100\\,\\text{J}$ equals $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, and it is the energy used to lift the weight."
+            "feedback": "Correct. The gas did $200\\,\\text{J}$ of work when it rose, and on the return at the pressure $100\\,\\text{kPa}$ $100\\,\\text{J}$ of work was done on it (blue). The difference $100\\,\\text{J}$ equals $Q_1 - Q_2 = 650\\,\\text{J} - 550\\,\\text{J}$, and it is the energy used to lift the weight."
           },
           {
             "text": "The heat $Q_2$ transferred to the cold water.",
-            "feedback": "The model gives $Q_2 = 550\\,\\text{J}$, but the rectangle is 100 kPa high and $1.0\\,\\textsf{l}$ wide, which is $100\\,\\text{J}$. An area in the $(V, p)$ graph is work, not heat; heat shows only in the bars."
+            "feedback": "The model gives $Q_2 = 550\\,\\text{J}$, but the rectangle is $100\\,\\text{kPa}$ high and $1.0\\,\\textsf{l}$ wide, which is $100\\,\\text{J}$. An area in the $(V, p)$ graph is work, not heat; heat shows only in the bars."
           },
           {
             "text": "The work done by the gas as the piston rises.",

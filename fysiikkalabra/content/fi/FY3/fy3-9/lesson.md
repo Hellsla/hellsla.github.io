@@ -345,7 +345,7 @@ T = \theta + 273{,}15\,\text{K}
 ```
 missä $\theta$ on lämpötila celsiusasteina lukuarvona; laskuissa riittää $273\,\text{K}$.
 
-<svg data-fig="absolute-zero" viewBox="0 0 600 622" role="img" aria-label="Kuvaajat mittakaavassa, kun T on 0–400 K. Ylhäällä kaasun tilavuus vakiopaineessa, alhaalla kaasun paine vakiotilavuudessa kelvinlämpötilan funktiona. Mittauspisteet välillä 253–373 K ovat suoralla. Suoran katkoviivalla piirretty jatke kulkee origon kautta: tilavuus tai paine olisi nolla absoluuttisessa nollapisteessä 0 K eli −273 °C." style="max-width:100%;font-size:24px">
+<svg data-fig="absolute-zero" viewBox="0 0 600 640" role="img" aria-label="Kuvaajat mittakaavassa, kun T on 0–400 K. Ylhäällä kaasun tilavuus vakiopaineessa, alhaalla kaasun paine vakiotilavuudessa kelvinlämpötilan funktiona. Mittauspisteet välillä 253–373 K ovat suoralla. Suoran katkoviivalla piirretty jatke kulkee origon kautta: tilavuus tai paine olisi nolla absoluuttisessa nollapisteessä 0 K eli −273 °C." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="240" x2="179.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="263" y1="240" x2="263" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="346.5" y1="240" x2="346.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

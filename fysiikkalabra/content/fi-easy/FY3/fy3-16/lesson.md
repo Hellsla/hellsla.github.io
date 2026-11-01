@@ -195,6 +195,7 @@ Kaksi kappaletta tai ainetta on eristetyssä astiassa. Silloin kuuman luovuttama
 Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 Tehtävä etenee näin:
+
 1. Rajaa systeemi. Päätä, mistä energia tulee ja minne se menee.
 2. Kirjoita lähteen energia: $Pt$ tai luovuttavan aineen $cm\Delta T$.
 3. Käy vaiheet läpi lämpötilan mukaan: lämpeneminen sulamispisteeseen, sulaminen, lämpeneminen. Sulamisen aikana lämpötila on vakio.
