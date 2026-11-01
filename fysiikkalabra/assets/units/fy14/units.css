@@ -150,6 +150,7 @@
 .fx-lab .katex{font-size:1.05em}
 .fx-lab-start{transform:translate(0,-50%)}
 .fx-lab-end{transform:translate(-100%,-50%)}
+.fx-lab.fx-lab-abs{transform:none}
 .fx-lab-muted{color:var(--fig-muted)}
 .fx-lab-strong{font-weight:700}
 .fx-lab-v{color:#1971c2}.fx-lab-f{color:#c92a2a}.fx-lab-fus{color:#1a4d2e}.fx-lab-fis{color:#7048e8}
@@ -382,3 +383,4 @@
 .fx-tl-more[open]>summary{margin-bottom:.5rem}
 .fx-tl-title{font:600 var(--fs-h3)/1.3 var(--sans);color:var(--ink)}
 .unit th{text-align:left}
+.fx-tl-more>summary::before{content:none;display:none}

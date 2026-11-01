@@ -404,7 +404,9 @@ def experiment_html(a, md, lid):
     tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
     words = a.get("values", {})   # {param: {value: words}}: a select's option named in words, not by its index
+    bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
+        tn = bare
         if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
         u = units.get(k, "")
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
@@ -420,7 +422,7 @@ def experiment_html(a, md, lid):
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
-            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}">'
+            f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}"' + (f' data-words=\'{esc(json.dumps(words, ensure_ascii=False))}\'' if words else "") + '>'
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
