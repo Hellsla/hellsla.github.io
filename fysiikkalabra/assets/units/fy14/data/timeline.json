@@ -1447,12 +1447,12 @@
       "era": "tokamak-race",
       "theme": "science",
       "title": "The Culham Five confirm T-3",
-      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their joint paper with Soviet colleagues in Nature in November 1969 set off a worldwide 'tokamak stampede'.",
+      "text": "A British team from Culham, led by Nicol Peacock, took a laser to Moscow and measured T-3's electrons by Thomson scattering. After Derek Robinson's group made the laser much more powerful, the signal was clear: around ten million degrees, as the Soviets had claimed. Their joint paper with a Soviet colleague in Nature in November 1969 set off a worldwide 'tokamak stampede'.",
       "people": [
         "Nicol Peacock",
         "Derek Robinson",
         "Mike Forrest",
-        "Vladimir Sannikov"
+        "V. V. Sannikov"
       ],
       "country": "Soviet Union",
       "place": "Moscow",
@@ -1564,7 +1564,7 @@
       "era": "tokamak-race",
       "theme": "politics",
       "title": "Europe builds JET",
-      "text": "Culham in England was chosen as the host site on 25 October 1977, and on 30 May 1978 the European Council decided to set up the JET Joint Undertaking, which started work on 1 June 1978. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
+      "text": "Culham in England was chosen as the host site on 25 October 1977, and on 30 May 1978 the Council of the European Communities decided to set up the JET Joint Undertaking, which started work on 1 June 1978. JET was designed to reach conditions close to those of a reactor and to use real deuterium–tritium fuel. It showed that only international teams could afford the next step.",
       "people": [],
       "country": "United Kingdom",
       "place": "Culham",

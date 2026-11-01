@@ -3,10 +3,10 @@
    the last year shown) with one tick per event, coloured and shaped by theme (the legend names them in words); a tick
    is a link to its event card. Filters: era (buttons), theme, a search over titles, text, people and places. Each
    card shows the year and place, the text, the people (a short biography behind a disclosure), the sources and,
-   when the event is about a device on the course map, "Show on the map" (the map unit's page with #f-<id>).
+   when the event is about a device on the course map and that page is published, "Show on the map" (#f-<id>).
    Data on the element: {eras?: [era ids shown, default all], themes?: [theme ids], map?: "<map page>.html",
    intro?: text, start_era?: era id selected first, ids?: [event ids shown, a
-   selection for one task], query?: search text filled in first}. Cards start closed (year, place and title);
+   selection for one task; up to 12 ids hide the filters], query?: search text first}. Cards start closed (year, place and title);
    a mark on the strip opens its card. */
 window.FX.timeline = (el, d, A) => {
   const { h, md } = A;
@@ -37,8 +37,9 @@ window.FX.timeline = (el, d, A) => {
     const count = h('p', { class: 'fx-msg', 'aria-live': 'polite' });
     const list = h('ol', { class: 'fx-tl-list' });
     const legend = h('ul', { class: 'fx-legend', 'aria-label': 'Themes' }, Object.entries(data.themes).filter(([k]) => TH[k]).map(([k, t]) => h('li', {}, h('span', { class: 'fx-sym', 'aria-hidden': 'true', style: `color:${TH[k][0]}` }, { circle: '●', square: '■', diamond: '◆', triangle: '▲' }[TH[k][1]]), t)));
-    root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []), eraBar,
-      h('div', { class: 'fx-tl-filters' }, h('div', { class: 'fx-field' }, h('label', { for: idp + 'theme' }, 'Theme'), themeSel), h('div', { class: 'fx-field fx-field-wide' }, h('label', { for: idp + 'q' }, 'Search'), q)),
+    const small = !!d.ids && all.length <= 12;   // a task's own small selection: no era, theme or search filters
+    root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []), ...(small ? [] : [eraBar,
+      h('div', { class: 'fx-tl-filters' }, h('div', { class: 'fx-field' }, h('label', { for: idp + 'theme' }, 'Theme'), themeSel), h('div', { class: 'fx-field fx-field-wide' }, h('label', { for: idp + 'q' }, 'Search'), q))]),
       strip, legend, count, list, h('p', { class: 'fx-note' }, `Events checked ${A.date(data.checked)}. Sources are listed with every event.`));
 
     const mark = (shape, x, y, c) => {
@@ -49,6 +50,9 @@ window.FX.timeline = (el, d, A) => {
       return `<circle cx="${x}" cy="${y}" r="${s}" fill="${c}"/>`;
     };
     let shown = [];
+    // "Show on the map" only when the map page is published (a unit is on the site only after its reviews)
+    let mapOK = false;
+    if (d.map) fetch(d.map, { method: 'HEAD' }).then((r) => { if (r.ok) { mapOK = true; drawList(); } }).catch(() => {});
     function filter() {
       shown = all.filter((e) => (!era || e.era === era) && (!theme || e.theme === theme)
         && (!text || [e.title, e.text, (e.people || []).join(' '), e.place, e.country].join(' ').toLowerCase().includes(text)));
@@ -77,7 +81,7 @@ window.FX.timeline = (el, d, A) => {
         const [c] = TH[e.theme] || ['#555'];
         const bio = e.biography ? h('details', { class: 'fx-tl-bio' }, h('summary', {}, `Who was ${e.biography.name}?`),
           h('p', {}, h('strong', {}, `${e.biography.name} (${yr(e.biography.born)}–${e.biography.died ? yr(e.biography.died) : ''})`)), h('p', { html: md(e.biography.text) })) : null;
-        const mapLink = e.facility && d.map ? h('a', { class: 'fx-link', href: `${d.map}#f-${e.facility}` }, 'Show on the map →') : null;
+        const mapLink = e.facility && d.map && mapOK ? h('a', { class: 'fx-link', href: `${d.map}#f-${e.facility}` }, 'Show on the map →') : null;
         return h('li', { class: 'fx-tl-card', id: idp + 'ev-' + e.id, style: `border-left-color:${c}`, tabindex: '-1' },
           h('details', { class: 'fx-tl-more' },
             h('summary', {}, h('span', { class: 'fx-tl-year' }, h('span', { class: 'fx-tl-y' }, e.date ? new Date(e.date + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : String(e.year)),
