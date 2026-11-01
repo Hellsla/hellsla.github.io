@@ -9,7 +9,7 @@
 
 ## Plan for fast pairs and for running short of time
 - **Fast pairs:** the optional error-spotting task (degrees Celsius in Wien's law); then estimate the peak wavelength of the Sun and of the cosmic background radiation ($2.7\ \text{K}$, peak about $1\ \text{mm}$, microwaves).
-- **Short of time:** keep the predictions, the curves, the peak table and the catastrophe. Shorten the timeline to the ordering task in class and give the biography text as homework; the French corner can also be homework.
+- **Short of time:** keep the predictions, the curves, the peak table and the catastrophe. Shorten the timeline to the ordering task in class. The written half of the biography task (*Speak and write*) is the first thing to set as homework; the French corner can also be homework.
 
 ## Organisation and preparation
 - Pairs share one device for the timeline; each student answers the predictions and checks on their own device or on paper.

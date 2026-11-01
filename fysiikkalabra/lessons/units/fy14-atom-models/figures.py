@@ -19,8 +19,8 @@ def hero():
     it makes four separate coloured lines. No text."""
     f = H.hero("fy14am-hero", "Illustration: a darkened laboratory. On the left a thin glass tube on a stand glows with a soft "
                "pink-violet light. Its light passes through a narrow slit and a small glass grating on the bench. On a white "
-               "screen on the right the light appears not as a rainbow but as four separate thin lines: red, turquoise, blue "
-               "and violet, with darkness between them.")
+               "screen on the right the light appears not as a rainbow but as four separate thin lines on each side of a dim central image: violet, blue, "
+               "turquoise and red, with red bent farthest, and darkness between them.")
     f.rect(0, 0, 1200, 600, H.grad(f, "am-room", "#26313c", "#1a222b"))
     f.rect(0, 470, 1200, 130, H.grad(f, "am-bench", "#7a5a32", "#5a4024"))
     f.line(0, 470, 1200, 470, "#a07a46", 4)
@@ -46,10 +46,11 @@ def hero():
     f.rect(900, 80, 220, 380, "#f8f9fa", INK, 3, 4)
     f.rect(1000, 460, 20, 12, METAL_EDGE)
     # fans of light from the grating to four lines on the screen
-    ys = [380, 230, 180, 160]
-    for (lam, col), y in zip(BALMER, ys):
-        f.path(f"M580,268 L900,{y - 6} L900,{y + 6} L580,272 Z", col, extra='fill-opacity="0.22"')
-        f.rect(904, y - 5, 212, 10, col)
+    # first order on both sides of the straight-through image: the deflection grows with the wavelength
+    for lam, col in BALMER:
+        for y in (270 - 0.28 * lam, 270 + 0.28 * lam):
+            f.path(f"M580,268 L900,{n(y - 3)} L900,{n(y + 3)} L580,272 Z", col, extra='fill-opacity="0.2"')
+            f.rect(904, y - 2.5, 212, 5, col)
     # the straight-through image of the slit, dimmer
     f.path("M580,268 L900,262 L900,274 L580,272 Z", "#e599f7", extra='fill-opacity="0.12"')
     return f.svg()
@@ -79,7 +80,7 @@ def scatter():
     f = Fig("fy14am-scatter", 420, "Drawing to scale of alpha particles that move from left to right past one gold nucleus, a small red "
             "dot in the middle. Each path starts at a different distance b from the line through the centre of the nucleus. "
             "Paths that start far from the line bend only a little. Paths closer to the line bend more, and the closest ones "
-            "turn back towards the left. A scale bar shows 50 femtometres. The whole atom would be about 10 000 times wider "
+            "turn back towards the left. A scale bar shows 50 femtometres. The whole atom would be about 600 times wider "
             "than this drawing.")
     S, cx, cy = 34, 300, 240            # figure units per d (27.4 fm), position of the nucleus
     for b, col in ((0.12, HOT), (-0.3, HEAT), (0.6, "#7048e8"), (-1.2, COLD), (2.4, GOOD), (-3.6, MUTED)):
@@ -93,8 +94,9 @@ def scatter():
     f.circle(cx, cy, max(3, 7.3 / D_FM * S), HOT, INK, 1.5)
     f.tex(cx + 14, cy + 22, r"\text{nucleus}", "start", bg=True)
     # b for the 1.2 d path
-    f.line(60, cy, 60, cy + S * 1.2, INK, 2)
-    f.tex(52, cy + S * 0.6, "b", "end")
+    f.line(48, cy, 48, cy + S * 1.2, INK, 2)
+    f.line(42, cy, 54, cy, INK, 2); f.line(42, cy + S * 1.2, 54, cy + S * 1.2, INK, 2)
+    f.tex(38, cy + S * 0.6, "b", "end")
     # scale bar: 50 fm
     L = 50 / D_FM * S
     f.line(470, 40, 470 + L, 40, INK, 3)
@@ -105,19 +107,20 @@ def scatter():
 
 def lines():
     """The visible lines of hydrogen on a wavelength scale, as seen through a grating."""
-    f = Fig("fy14am-lines", 220, "The visible spectrum of hydrogen gas as seen through a grating, on a wavelength scale from 380 to "
+    f = Fig("fy14am-lines", 250, "The visible spectrum of hydrogen gas as seen through a grating, on a wavelength scale from 380 to "
             "720 nanometres. On a dark background there are only four thin bright lines: violet at 410 nanometres, blue at 434, "
             "turquoise at 486 and red at 656 nanometres. Between them there is no light.")
     X = lambda l: 40 + (l - 380) / (720 - 380) * 520
-    f.rect(40, 30, 520, 90, "#15191e", INK, 2)
+    f.rect(40, 60, 520, 90, "#15191e", INK, 2)
     for lam, col in BALMER:
-        f.rect(X(lam) - 3, 30, 6, 90, col)
-    for t in (400, 450, 500, 550, 600, 650, 700):
-        f.line(X(t), 120, X(t), 130, INK, 2)
-    for lam, col in BALMER:
+        f.rect(X(lam) - 3, 60, 6, 90, col)
+    for lam, col in BALMER:              # the measured wavelengths, above their lines
         anchor, dx = {410.2: ("end", 6), 434.0: ("start", -6)}.get(lam, ("middle", 0))
-        f.tex(X(lam) + dx, 154, rf"{lam:.0f}", anchor, color=INK)
-    f.tex(560, 196, r"\lambda\ (\text{nm})", "end")
+        f.tex(X(lam) + dx, 36, rf"{lam:.0f}", anchor, color=INK)
+    for t in (400, 450, 500, 550, 600, 650, 700):
+        f.line(X(t), 150, X(t), 160 if t % 100 else 166, INK, 2)
+        if t % 100 == 0: f.tex(X(t), 186, rf"{t}", "middle", color=MUTED)
+    f.tex(560, 224, r"\lambda\ (\text{nm})", "end")
     return f.svg()
 
 
@@ -137,10 +140,12 @@ def levels():
     for k in range(1, 7):
         E = -13.6 / k ** 2
         f.line(x0, Y(E), x1, Y(E), INK, 3 if k < 5 else 2)
-    for k, dy in ((1, 0), (2, 0), (3, 12), (4, -9)):
+    for k, dy in ((1, 0), (2, 0), (3, 5), (4, -5)):       # n = 3 and 4 are 22 units apart: nudge apart, with leaders
         E = -13.6 / k ** 2
+        if dy:
+            f.line(x0 - 8, Y(E) + dy, x0, Y(E), INK, 1.5); f.line(x1, Y(E), x1 + 6, Y(E) + dy, INK, 1.5)
         f.tex(x0 - 10, Y(E) + dy, rf"n = {k}", "end")
-        f.tex(x1 + 8, Y(E) + dy, rf"{E:.2f}\ \text{{eV}}", "start")
+        f.tex(x1 + 8, Y(E) + dy, (r"-13.6" if k == 1 else f"{E:.2f}") + r"\ \text{eV}", "start")
     for (lam, col), k, x in zip(BALMER, (3, 4, 5, 6), (250, 310, 370, 430)):
         f.arrow(x, Y(-13.6 / k ** 2), x, Y(-3.4) - 1, col, 4, 16)
         f.tex(x, Y(-3.4) + 30, rf"{lam:.0f}", "middle", color=col)

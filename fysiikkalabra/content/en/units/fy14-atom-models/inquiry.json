@@ -20,30 +20,11 @@
    "question": "What can bullets that are far too small to see tell us about the inside of an atom?"
   },
   {
-   "id": "review",
+   "id": "hook-talk",
    "stage": "herata",
-   "type": "choice",
-   "title": "Review: photons from the photoelectric effect",
-   "prompt": "In the unit *Light as particles: the photoelectric effect* you met the photon energy $E = hf = hc/\\lambda$. Which light has photons with the largest energy?",
-   "choices": [
-    {
-     "text": "violet light of wavelength $410\\ \\text{nm}$",
-     "correct": true,
-     "feedback": "Right. The shortest wavelength means the highest frequency, so the largest photon energy: $hc/\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 410\\ \\text{nm} \\approx 3.0\\ \\text{eV}$."
-    },
-    {
-     "text": "red light of wavelength $656\\ \\text{nm}$",
-     "feedback": "A long wavelength means a low frequency, so a *small* photon energy: $1240\\ \\text{eV} \\cdot \\text{nm} : 656\\ \\text{nm} \\approx 1.9\\ \\text{eV}$."
-    },
-    {
-     "text": "the brightest light, whatever its colour",
-     "feedback": "Brightness means *more* photons, not bigger ones. The energy of one photon depends only on the frequency, $E = hf$."
-    },
-    {
-     "text": "all three have photons of the same energy",
-     "feedback": "The photon energy $E = hc/\\lambda$ depends on the wavelength: violet photons ($410\\ \\text{nm}$) have about $3.0\\ \\text{eV}$, red ones ($656\\ \\text{nm}$) about $1.9\\ \\text{eV}$."
-    }
-   ]
+   "type": "text",
+   "title": "Talk in pairs (2 minutes)",
+   "text": "You are given a closed box and you may not open it. You may only throw small marbles in through a hole on one side and see where they come out. How could you find out whether the box holds cotton wool or a few heavy steel balls? Write down your idea: you will come back to it.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>If the box holds cotton wool, the marbles would …</li><li>If it holds a few steel balls, the marbles would …</li><li>We could tell the difference by …</li></ul></div>"
   },
   {
    "id": "pred-gold",
@@ -51,7 +32,7 @@
    "type": "choice",
    "title": "Prediction 1: alpha particles and gold",
    "layout": "models",
-   "prompt": "Imagine that Thomson's model is how you picture the atom. What do you expect Geiger and Marsden to see when they shoot alpha particles at a thin metal foil?",
+   "prompt": "In 1909 Thomson's model was the best picture of the atom. What do you think Geiger and Marsden actually saw when they shot alpha particles at a thin metal foil?",
    "justify": true,
    "reveal": {
     "after": "theory-main"
@@ -59,10 +40,10 @@
    "choices": [
     {
      "text": "All pass through, each turned by a tiny angle at most.",
-     "feedback": "This is what Thomson's model predicts, because its positive charge is spread out and pushes only weakly. The experiment showed something else: a few alpha particles bounced back, about one in 8000 from a thin platinum foil. Thomson's model could not explain this."
+     "feedback": "That is what Thomson's model predicts, because its positive charge is spread out and pushes only weakly, and it is what everyone expected. The experiment showed something else: a few alpha particles bounced back, about one in 8000 from a thin platinum foil. Thomson's model could not explain this."
     },
     {
-     "text": "Most pass almost straight, but a very few bounce back.",
+     "text": "Most pass almost straight; a very few bounce back.",
      "correct": true,
      "feedback": "This is what Geiger and Marsden saw: most alpha particles went through with small deflections, and about one in 8000 was turned through more than $90^\\circ$ by a thin platinum foil. Thomson's model could not explain the bounces; a tiny, heavy nucleus could."
     },
@@ -153,6 +134,32 @@
    ]
   },
   {
+   "id": "review",
+   "stage": "tutki",
+   "type": "choice",
+   "title": "Review: photons from the photoelectric effect",
+   "prompt": "In the unit *Light as particles: the photoelectric effect* you met the photon energy $E = hf = hc/\\lambda$. Which light has photons with the largest energy?",
+   "choices": [
+    {
+     "text": "violet light of wavelength $410\\ \\text{nm}$",
+     "correct": true,
+     "feedback": "Right. The shortest wavelength means the highest frequency, so the largest photon energy: $hc/\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 410\\ \\text{nm} \\approx 3.0\\ \\text{eV}$."
+    },
+    {
+     "text": "red light of wavelength $656\\ \\text{nm}$",
+     "feedback": "A long wavelength means a low frequency, so a *small* photon energy: $1240\\ \\text{eV} \\cdot \\text{nm} : 656\\ \\text{nm} \\approx 1.9\\ \\text{eV}$."
+    },
+    {
+     "text": "the brightest light, whatever its colour",
+     "feedback": "Brightness means *more* photons, not bigger ones. The energy of one photon depends only on the frequency, $E = hf$."
+    },
+    {
+     "text": "all three have photons of the same energy",
+     "feedback": "The photon energy $E = hc/\\lambda$ depends on the wavelength: violet photons ($410\\ \\text{nm}$) have about $3.0\\ \\text{eV}$, red ones ($656\\ \\text{nm}$) about $1.9\\ \\text{eV}$."
+    }
+   ]
+  },
+  {
    "id": "red-line",
    "stage": "tutki",
    "type": "interpret",
@@ -190,7 +197,7 @@
    "type": "explain",
    "title": "Compare two spectra",
    "prompt": "Discuss with a partner, then write three or four sentences. Compare the light of glowing hydrogen gas with the light of a hot filament (unit *When classical physics ran out of answers*). What do you see through a grating in each case? What does the hydrogen spectrum suggest about the energy of the atom?\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a line spectrum · a continuous spectrum · a sharp line · a rainbow · a gas discharge tube · a filament · a fixed amount of energy · every / only certain wavelengths</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The filament gives …, whereas hydrogen gives …</li><li>Through the grating we see …</li><li>One possible explanation is that the atom can only …</li><li>This suggests that …</li></ul></div>",
-   "model": "The hot filament gives a continuous spectrum: through a grating we see a whole rainbow, with every wavelength. Glowing hydrogen gas, whereas, gives a line spectrum of only four sharp visible lines, at $656$, $486$, $434$ and $410\\ \\text{nm}$. Each line contains photons of one energy, for example $1.89\\ \\text{eV}$ for the red line. This suggests that the hydrogen atom can only give out certain fixed amounts of energy, not any amount.",
+   "model": "The hot filament gives a continuous spectrum: through a grating we see a whole rainbow, with every wavelength, whereas glowing hydrogen gas gives a line spectrum of only four sharp visible lines, at $656$, $486$, $434$ and $410\\ \\text{nm}$. Each line contains photons of one energy, for example $1.89\\ \\text{eV}$ for the red line. This suggests that the hydrogen atom can only give out certain fixed amounts of energy, not any amount.",
    "criteria": [
     "The answer names the continuous spectrum of the filament and the line spectrum of the gas.",
     "The answer gives at least one wavelength or the photon energy of a line.",
@@ -227,7 +234,7 @@
    "stage": "selita",
    "type": "reflect",
    "title": "Back to your predictions",
-   "prompt": "Compare your predictions with the gold-foil evidence and with Bohr's model. Then answer the opening question in one or two sentences: why does glowing hydrogen give off light of only a few colours?",
+   "prompt": "Compare your predictions with the gold-foil evidence and with Bohr's model. Then answer the opening question in one or two sentences: why does glowing hydrogen give off light of only a few colours? Also check that $E_3 - E_2$ from the energy levels gives your $1.89\\ \\text{eV}$ for the red line.",
    "predictions": [
     "pred-gold",
     "pred-jump"
@@ -290,7 +297,7 @@
    "prompt": "A student calculates the light from the jump $n = 3 \\to n = 1$ in hydrogen:\n\n$$\\begin{aligned} E &= \\frac{13.6\\ \\text{eV}}{3^2} = 1.51\\ \\text{eV} \\\\ \\lambda &= \\frac{1240\\ \\text{eV} \\cdot \\text{nm}}{1.51\\ \\text{eV}} = 821\\ \\text{nm} \\end{aligned}$$\n\nWhere is the error?",
    "choices": [
     {
-     "text": "The photon energy is $E_3 - E_1$, not one level alone.",
+     "text": "The photon energy is $E_3 - E_1$, not one level.",
      "correct": true,
      "feedback": "Right. $E_3 - E_1 = -1.51\\ \\text{eV} - (-13.6\\ \\text{eV}) = 12.1\\ \\text{eV}$, so $\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 12.1\\ \\text{eV} \\approx 103\\ \\text{nm}$, ultraviolet. A jump to the ground state is a big jump."
     },
@@ -376,7 +383,7 @@
    "prompt": "A hot filament gives a continuous spectrum, but thin hydrogen gas in a discharge tube gives a line spectrum. Why?",
    "choices": [
     {
-     "text": "Free atoms can only make jumps between their own levels.",
+     "text": "Free atoms only jump between their own levels.",
      "correct": true,
      "feedback": "Right. In a thin gas the atoms are far apart, and each sends out only the photon energies of its own level differences. In a hot solid the particles are packed closely and interact, and the light is thermal radiation with all wavelengths."
     },
@@ -420,7 +427,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, a nucleus is <span lang=\"fr\">un noyau</span>, the same word as the stone of a cherry or a peach. A spectral line is <span lang=\"fr\">une raie</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-am-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: inside the atom\", \"phrases\": [{\"fr\": \"un atome\", \"en\": \"an atom\", \"tip\": \"õ-na-TOM: a nasal *un*, then the *n* links to *atome*.\"}, {\"fr\": \"le noyau\", \"en\": \"the nucleus\", \"tip\": \"lö nwa-JO: *oy* sounds like *wa-j*.\"}, {\"fr\": \"un électron\", \"en\": \"an electron\", \"tip\": \"õ-ne-lek-TRÕ: a nasal *un* and a nasal *-on*; link the *n*.\"}, {\"fr\": \"le spectre\", \"en\": \"the spectrum\", \"tip\": \"lö SPEKTR: the final *-e* is silent.\"}, {\"fr\": \"une raie\", \"en\": \"a (spectral) line\", \"tip\": \"yn RE: the French *u* is the Finnish *y*.\"}, {\"fr\": \"Chaque élément a ses propres raies.\", \"en\": \"Every element has its own lines.\", \"tip\": \"sha-ke-le-MÃ: link *chaque* and *élément*.\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, a nucleus is <span lang=\"fr\">un noyau</span>, the same word as the stone of a cherry or a peach. A spectral line is <span lang=\"fr\">une raie</span>. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-am-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: inside the atom\", \"phrases\": [{\"fr\": \"un atome\", \"en\": \"an atom\", \"tip\": \"*ẽ-na-TOM*: a nasal *un*, then the *n* links to *atome*.\"}, {\"fr\": \"le noyau\", \"en\": \"the nucleus\", \"tip\": \"*lö nwa-JO*: *oy* sounds like *wa-j*.\"}, {\"fr\": \"un électron\", \"en\": \"an electron\", \"tip\": \"*ẽ-ne-lek-TRÕ*: a nasal *un* and a nasal *-on*; link the *n*.\"}, {\"fr\": \"le spectre\", \"en\": \"the spectrum\", \"tip\": \"*lö SPEKTR*: the final *-e* is silent.\"}, {\"fr\": \"une raie\", \"en\": \"a (spectral) line\", \"tip\": \"*yn RE*: the French *u* is the Finnish *y*.\"}, {\"fr\": \"Chaque élément a ses propres raies.\", \"en\": \"Every element has its own lines.\", \"tip\": \"*sha-ke-le-MÃ*: link *chaque* and *élément*.\"}]}</script></div>"
   }
  ]
 }

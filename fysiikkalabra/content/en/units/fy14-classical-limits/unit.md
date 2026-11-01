@@ -2,7 +2,6 @@
 
 > **Why** could the best physics of 1900 not explain the glow of a hot piece of metal?
 
-<!-- The timeline in inquiry.json reads data-src="units/fy14/data/timeline.json"; it is named here so that build.py embeds the data in the page and the content hash covers it. -->
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a calm blue sky over a white stone building with a wide staircase, columns and a triangular roof, like a temple of science. The sky is clear except for two heavy dark clouds that drift in over the roof. In front of the building, on the paved square, stands a small brick furnace with its door open; inside, coals glow orange and a metal bar lies in the glow." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="cl-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcdcf5"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="cl-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="cl-square" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -187,7 +186,7 @@ Around 1900, careful measurements in Berlin showed how the power of this radiati
   <polyline points="103.5,330 106.5,330 109.5,330 112.5,330 115.5,330 118.5,330 121.5,330 124.5,330 127.5,330 131,329.5 134,329.5 137,329 140,328 143,327.5 146,326.5 149,325 152,323.5 155,322 158.5,320.5 161.5,319 164.5,317 167.5,315 170.5,313.5 173.5,311.5 176.5,310 179.5,308.5 183,307 186,305.5 189,304 192,303 195,302 198,301 201,300 204,299.5 207,299 210.5,298.5 213.5,298 216.5,298 219.5,298 222.5,297.5 225.5,297.5 228.5,298 231.5,298 234.5,298 238,298.5 241,298.5 244,299 247,299.5 250,300 253,300 256,300.5 259,301 262,301.5 265.5,302 268.5,302.5 271.5,303 274.5,303.5 277.5,304 280.5,305 283.5,305.5 286.5,306 289.5,306.5 293,307 296,307.5 299,308 302,308.5 305,309 308,309.5 311,310 314,310.5 317,311 320.5,311.5 323.5,312 326.5,312 329.5,312.5 332.5,313 335.5,313.5 338.5,314 341.5,314.5 344.5,314.5 348,315 351,315.5 354,316 357,316 360,316.5 363,317 366,317 369,317.5 372,318 375.5,318 378.5,318.5 381.5,318.5 384.5,319 387.5,319 390.5,319.5 393.5,319.5 396.5,320 399.5,320 403,320.5 406,320.5 409,321 412,321 415,321.5 418,321.5 421,321.5 424,322 427,322 430.5,322.5 433.5,322.5 436.5,322.5 439.5,323 442.5,323 445.5,323 448.5,323.5 451.5,323.5 454.5,323.5 458,324 461,324 464,324 467,324 470,324.5" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="224" y1="297.5" x2="224" y2="330" stroke="#c92a2a" stroke-width="1.8" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="224" cy="297.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="323.5" y="266.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$4000\ \text{K}$</span></div></foreignObject>
+  <foreignObject x="200" y="274" width="69" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#c92a2a">$4000\ \text{K}$</div></foreignObject>
   <foreignObject x="291.5" y="107" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{model values}$</span></div></foreignObject>
 </svg>
 
@@ -202,13 +201,14 @@ Visible light is only a narrow band of the **electromagnetic spectrum**. Waves s
   <rect x="40" y="70" width="37" height="56" fill="#868e96" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="48.5" y="83.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\gamma$</div></foreignObject>
   <rect x="77" y="70" width="111.5" height="56" fill="#adb5bd" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="123" y="83.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{X}$</div></foreignObject>
+  <foreignObject x="91.5" y="83.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{X-rays}$</div></foreignObject>
   <rect x="188.5" y="70" width="58.5" height="56" fill="#b197fc" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="201.5" y="83.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{UV}$</div></foreignObject>
   <rect x="258.5" y="70" width="116" height="56" fill="#ffa8a8" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="300" y="83.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{IR}$</div></foreignObject>
   <rect x="374.5" y="70" width="111.5" height="56" fill="#ffd8a8" stroke="#1f2933" stroke-width="1.5"/>
-  <foreignObject x="395" y="83.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{micro}$</div></foreignObject>
+  <foreignObject x="391.5" y="71" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{micro-}$</div></foreignObject>
+  <foreignObject x="397.5" y="99" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{waves}$</div></foreignObject>
   <rect x="485.5" y="70" width="74.5" height="56" fill="#d3f9d8" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="488" y="83.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{radio}$</div></foreignObject>
   <rect x="247.5" y="70" width="11" height="56" fill="url(#fy14cl-vis)" stroke="#1f2933" stroke-width="1.5"/>
@@ -316,7 +316,7 @@ A filament lamp has a tungsten filament at a temperature of about $2700\ \text{K
 
 <!-- vaihe -->
 
-**Given:** $T = 2700\ \text{K}$, $b = 2.898 \cdot 10^{-3}\ \text{m} \cdot \text{K}$, $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$, $c = 2.998 \cdot 10^{8}\ \text{m/s}$. Find the peak wavelength $\lambda_\text{max}$ and the packet energy $E$.
+**Given:** ${T = 2700\ \text{K}}$, ${b = 2.898 \cdot 10^{-3}\ \text{m} \cdot \text{K}}$, ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$. Find the peak wavelength $\lambda_\text{max}$ and the packet energy $E$.
 
 <!-- vaihe -->
 
@@ -334,7 +334,7 @@ E &= hf = \frac{hc}{\lambda_\text{max}}
 
 <!-- vaihe -->
 
-**Unit conversions:** The temperature is already in kelvins. The energy in joules is changed to electronvolts with $1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}$.
+**Unit conversions:** The temperature is already in kelvins. The energy in joules is changed to electronvolts with ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$.
 
 <!-- vaihe -->
 
@@ -356,11 +356,11 @@ E &= \frac{hc}{\lambda_\text{max}} \\
 
 <!-- vaihe -->
 
-**Answer:** The filament radiates most strongly at $\lambda_\text{max} \approx 1.07\ \mu\text{m} = 1070\ \text{nm}$, and one packet there has $E \approx 1.16\ \text{eV}$. Three significant figures, because the temperature is a rounded value. The peak is in the **infrared**, not in the visible band ($380\text{–}750\ \text{nm}$).
+**Answer:** The filament radiates most strongly at ${\lambda_\text{max} \approx 1.07\ \mu\text{m}}$, that is, ${1070\ \text{nm}}$, and one packet there has ${E \approx 1.16\ \text{eV}}$. Three significant figures, because the temperature is a rounded value. The peak is in the **infrared**, not in the visible band ($380\text{–}750\ \text{nm}$).
 
 <!-- vaihe -->
 
-**Reasonableness:** The filament is about half as hot as the Sun's surface, so its peak should be at about twice the Sun's $500\ \text{nm}$: $1070\ \text{nm}$ fits. A visible photon has $1.6\text{–}3.3\ \text{eV}$, and $1.16\ \text{eV}$ is less, as it should be for infrared. This is why an old filament lamp turns most of its electrical energy into heat, not light.
+**Reasonableness:** The filament is about half as hot as the Sun's surface, so its peak should be at about twice the Sun's $500\ \text{nm}$: $1070\ \text{nm}$ fits. A visible photon has $1.6\text{–}3.3\ \text{eV}$, and $1.16\ \text{eV}$ is less, as it should be for infrared. This is why an old filament lamp turns most of its electrical energy into infrared radiation (and heat), not visible light.
 
 ## Common misconception
 

@@ -38,3 +38,22 @@ Content hash at hand-over: see `python3 scripts/units.py hash fy14-quantum-tunne
 
 ## Shared issues
 - None new beyond those reported in fy14-classical-limits (build.py data embedding from inquiry.json; timeline strip vs check_layout; Bohr's place in timeline.json).
+
+## Fixes after review
+
+Content hash after the fixes: 52dad39318ce6af1.
+
+- Science 1 (a): "within a few femtometres, where the strong nuclear force acts" (also in the sunbarrier aria-label).
+- Science 1 (b) / Pedagogy 4: the Sun section now says that tunnelling only lets two protons get close; two protons alone cannot stay together, fusion needs one to turn into a neutron, p + p → d + e⁺ + ν, a slow process of the weak interaction, so an average proton waits about 9 billion years.
+- Science 1 (c): check-3 correct feedback: "An average proton still waits about 9 billion years, also because the first step, p + p → d + e⁺ + ν, needs the weak interaction." check-explain model says the protons "come close enough to fuse" and "roughly 1000 fm" (Science 4).
+- Science 2: "Gamow's tunnelling (1928) solved the puzzle." Science 3: "an electron biprism, which acts like two slits".
+- Pedagogy 1–2: pred-tunnel stem: "The barrier is then made twice as wide. What do you predict?" Options rewritten around width (classical bounce, far rarer [correct], half as often, equally often); feedback uses 7.7 % → 0.60 % (about 13 times less).
+- Pedagogy 3: proton-wave Reasonableness compares 779 fm with the turning distance of about 1000 fm.
+- Pedagogy 5: check-3 correct option shortened ("… huge numbers of them.").
+- Visual 1: sunbarrier: the green strip is labelled "strong force" with an arrow.
+- Visual 2: the unit chain C·V = J = kg·m²/s² is its own display line after "Check the units:"; the next sentence starts with "So".
+- Visual 3: kg² · m²/s² with a dot, in the worked example and the proton task. Visual 4: heading "Formula: The de Broglie wavelength".
+- Visual 5: barrier figure: E at the right end of the dashed line, "barrier top" label at the top edge; sunbarrier top tick "10 000".
+- Visual 6: Given equalities braced.
+- French respellings in italics, with the convention sentence in the box (this unit has no *un*).
+- Checks: units.py figures, units.py check, build.py, check_layout 360 and 1280 OK, browser test (all tasks, reveals, no KaTeX or console errors).

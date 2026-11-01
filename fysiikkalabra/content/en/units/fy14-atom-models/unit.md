@@ -2,7 +2,7 @@
 
 > **Why** does glowing hydrogen give off light of only a few colours, while a hot metal glows in all of them?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a darkened laboratory. On the left a thin glass tube on a stand glows with a soft pink-violet light. Its light passes through a narrow slit and a small glass grating on the bench. On a white screen on the right the light appears not as a rainbow but as four separate thin lines: red, turquoise, blue and violet, with darkness between them." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a darkened laboratory. On the left a thin glass tube on a stand glows with a soft pink-violet light. Its light passes through a narrow slit and a small glass grating on the bench. On a white screen on the right the light appears not as a rainbow but as four separate thin lines on each side of a dim central image: violet, blue, turquoise and red, with red bent farthest, and darkness between them." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="am-room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26313c"/><stop offset="1" stop-color="#1a222b"/></linearGradient><linearGradient id="am-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5a32"/><stop offset="1" stop-color="#5a4024"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#am-room)"/>
   <rect x="0" y="470" width="1200" height="130" fill="url(#am-bench)"/>
@@ -25,14 +25,22 @@
   <path d="M478,264 L560,262 L560,278 L478,276 Z" fill="#e599f7" stroke-linejoin="round" fill-opacity="0.3"/>
   <rect x="900" y="80" width="220" height="380" rx="4" fill="#f8f9fa" stroke="#1f2933" stroke-width="3"/>
   <rect x="1000" y="460" width="20" height="12" fill="#8a96a3"/>
-  <path d="M580,268 L900,374 L900,386 L580,272 Z" fill="#e03131" stroke-linejoin="round" fill-opacity="0.22"/>
-  <rect x="904" y="375" width="212" height="10" fill="#e03131"/>
-  <path d="M580,268 L900,224 L900,236 L580,272 Z" fill="#15aabf" stroke-linejoin="round" fill-opacity="0.22"/>
-  <rect x="904" y="225" width="212" height="10" fill="#15aabf"/>
-  <path d="M580,268 L900,174 L900,186 L580,272 Z" fill="#3b5bdb" stroke-linejoin="round" fill-opacity="0.22"/>
-  <rect x="904" y="175" width="212" height="10" fill="#3b5bdb"/>
-  <path d="M580,268 L900,154 L900,166 L580,272 Z" fill="#7048e8" stroke-linejoin="round" fill-opacity="0.22"/>
-  <rect x="904" y="155" width="212" height="10" fill="#7048e8"/>
+  <path d="M580,268 L900,83 L900,89 L580,272 Z" fill="#e03131" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="83.5" width="212" height="5" fill="#e03131"/>
+  <path d="M580,268 L900,451 L900,457 L580,272 Z" fill="#e03131" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="451.5" width="212" height="5" fill="#e03131"/>
+  <path d="M580,268 L900,131 L900,137 L580,272 Z" fill="#15aabf" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="131.5" width="212" height="5" fill="#15aabf"/>
+  <path d="M580,268 L900,403 L900,409 L580,272 Z" fill="#15aabf" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="403.5" width="212" height="5" fill="#15aabf"/>
+  <path d="M580,268 L900,145.5 L900,151.5 L580,272 Z" fill="#3b5bdb" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="146" width="212" height="5" fill="#3b5bdb"/>
+  <path d="M580,268 L900,388.5 L900,394.5 L580,272 Z" fill="#3b5bdb" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="389" width="212" height="5" fill="#3b5bdb"/>
+  <path d="M580,268 L900,152 L900,158 L580,272 Z" fill="#7048e8" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="152.5" width="212" height="5" fill="#7048e8"/>
+  <path d="M580,268 L900,382 L900,388 L580,272 Z" fill="#7048e8" stroke-linejoin="round" fill-opacity="0.2"/>
+  <rect x="904" y="382.5" width="212" height="5" fill="#7048e8"/>
   <path d="M580,268 L900,262 L900,274 L580,272 Z" fill="#e599f7" stroke-linejoin="round" fill-opacity="0.12"/>
 </svg>
 
@@ -44,7 +52,7 @@ Most alpha particles went through the foil and were turned aside by only a small
 
 In 1911 Rutherford explained the result. Almost all the mass and all the positive charge of an atom sit in a tiny **nucleus** at its centre. An alpha particle that passes far from a nucleus hardly feels it. Only the rare one that comes very close is pushed back by the strong electric repulsion. The figure shows such paths near one gold nucleus, to scale.
 
-<svg data-fig="scatter" viewBox="0 0 600 420" role="img" aria-label="Drawing to scale of alpha particles that move from left to right past one gold nucleus, a small red dot in the middle. Each path starts at a different distance b from the line through the centre of the nucleus. Paths that start far from the line bend only a little. Paths closer to the line bend more, and the closest ones turn back towards the left. A scale bar shows 50 femtometres. The whole atom would be about 10 000 times wider than this drawing." style="max-width:100%;font-size:24px">
+<svg data-fig="scatter" viewBox="0 0 600 420" role="img" aria-label="Drawing to scale of alpha particles that move from left to right past one gold nucleus, a small red dot in the middle. Each path starts at a different distance b from the line through the centre of the nucleus. Paths that start far from the line bend only a little. Paths closer to the line bend more, and the closest ones turn back towards the left. A scale bar shows 50 femtometres. The whole atom would be about 600 times wider than this drawing." style="max-width:100%;font-size:24px">
   <polyline points="62,236 63.5,236 64.5,236 66,236 67.5,236 69,236 70,236 71.5,236 73,236 74,236 75.5,236 77,236 78.5,236 79.5,236 81,236 82.5,236 83.5,236 85,236 86.5,236 87.5,236 89,236 90.5,236 92,236 93,236 94.5,236 96,236 97,236 98.5,236 100,236 101,236 102.5,236 104,236 105,236 106.5,236 108,236 109,236 110.5,236 112,236 113,236 114.5,236 116,236 117,236 118.5,236 120,236 121,236 122.5,236 124,236 125,236 126.5,236 128,236 129,236 130.5,236 132,236 133,236 134.5,236 135.5,236 137,236 138.5,236 139.5,236 141,236 142.5,236 143.5,236 145,236 146,236 147.5,236 149,236 150,236 151.5,236 152.5,236 154,236 155.5,236 156.5,236 158,236 159,236 160.5,236 162,236 163,236 164.5,236 165.5,236 167,236 168,236 169.5,236 171,236 172,236 173.5,236 174.5,236 176,236 177,236 178.5,236 179.5,236 181,236 182,236 183.5,236 184.5,236 186,236 187,236 188.5,236 189.5,236 191,236 192,236 193.5,236 194.5,236 196,236 197,236 198.5,236 199.5,236 200.5,236 202,236 203,236 204.5,236 205.5,236 207,236 208,236 209,236 210.5,235.5 211.5,235.5 212.5,235.5 214,235.5 215,235.5 216.5,235.5 217.5,235.5 218.5,235.5 219.5,235.5 221,235.5 222,235.5 223,235.5 224.5,235.5 225.5,235.5 226.5,235.5 227.5,235.5 229,235.5 230,235.5 231,235.5 232,235.5 233,235.5 234.5,235.5 235.5,235.5 236.5,235.5 237.5,235.5 238.5,235.5 239.5,235.5 240.5,235.5 241.5,235.5 242.5,235.5 243.5,235.5 244.5,235.5 245.5,235.5 246.5,235.5 247.5,235.5 248.5,235.5 249.5,235.5 250.5,235.5 251.5,235.5 252,235 253,235 254,235 255,235 255.5,235 256.5,235 257.5,235 258,235 259,235 259.5,235 260.5,235 261,235 262,235 262.5,234.5 263,234.5 264,234.5 264.5,234.5 265,234.5 265.5,234.5 266,234.5 266.5,234.5 267,234 267.5,234 268,234 268.5,234 269,234 269,233.5 269.5,233.5 269.5,233.5 270,233.5 270,233 270.5,233 270.5,233 270.5,232.5 270.5,232.5 270.5,232.5 271,232 270.5,232 270.5,232 270.5,231.5 270.5,231.5 270.5,231 270,231 270,230.5 269.5,230.5 269.5,230 269,230 269,229.5 268.5,229.5 268,229 267.5,228.5 267,228.5 267,228 266.5,227.5 266,227.5 265.5,227 264.5,226.5 264,226 263.5,226 263,225.5 262.5,225 261.5,224.5 261,224 260.5,224 259.5,223.5 259,223 258,222.5 257.5,222 256.5,221.5 256,221 255,220.5 254.5,220.5 253.5,220 253,219.5 252,219 251,218.5 250.5,218 249.5,217.5 248.5,217 247.5,216.5 247,216 246,215.5 245,215 244,214.5 243,214 242.5,213.5 241.5,213 240.5,212.5 239.5,211.5 238.5,211 237.5,210.5 236.5,210 235.5,209.5 234.5,209 234,208.5 233,208 232,207.5 231,207 230,206.5 229,205.5 228,205 227,204.5 226,204 225,203.5 223.5,203 222.5,202.5 221.5,201.5 220.5,201 219.5,200.5 218.5,200 217.5,199.5 216.5,199 215.5,198.5 214.5,197.5 213.5,197 212.5,196.5 211,196 210,195.5 209,194.5 208,194 207,193.5 206,193 205,192.5 203.5,191.5 202.5,191 201.5,190.5 200.5,190 199.5,189.5 198.5,188.5 197,188 196,187.5 195,187 194,186.5 193,185.5 191.5,185 190.5,184.5 189.5,184 188.5,183 187,182.5 186,182 185,181.5 184,181 183,180 181.5,179.5 180.5,179 179.5,178.5 178.5,177.5 177,177 176,176.5 175,176 174,175 172.5,174.5 171.5,174 170.5,173.5 169,172.5 168,172 167,171.5 166,171 164.5,170 163.5,169.5 162.5,169 161,168.5 160,167.5 159,167 158,166.5 156.5,165.5 155.5,165 154.5,164.5 153,164 152,163 151,162.5 149.5,162 148.5,161.5 147.5,160.5 146.5,160 145,159.5 144,158.5 143,158 141.5,157.5 140.5,157 139.5,156 138,155.5 137,155 136,154 134.5,153.5 133.5,153 132.5,152.5 131,151.5 130,151 129,150.5 127.5,149.5 126.5,149 125.5,148.5 124,148 123,147 121.5,146.5 120.5,146 119.5,145 118,144.5 117,144 116,143 114.5,142.5 113.5,142 112.5,141.5 111,140.5 110,140 109,139.5 107.5,138.5 106.5,138 105,137.5 104,136.5 103,136 101.5,135.5 100.5,135 99.5,134 98,133.5 97,133 95.5,132 94.5,131.5 93.5,131 92,130 91,129.5 90,129 88.5,128 87.5,127.5 86,127 85,126 84,125.5 82.5,125 81.5,124.5 80,123.5 79,123 78,122.5 76.5,121.5 75.5,121 74.5,120.5 73,119.5 72,119 70.5,118.5 69.5,117.5 68.5,117 67,116.5 66,115.5 64.5,115 63.5,114.5 62.5,113.5 61,113 60,112.5 58.5,111.5 57.5,111 56,110.5 55,109.5 54,109 52.5,108.5 51.5,108 50,107 49,106.5 48,106 46.5,105 45.5,104.5" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linecap="round"/>
   <line x1="51.5" y1="108" x2="57" y2="110.5" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
   <path d="M45.5,104.5 L60.5,105.5 L54.5,116.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
@@ -66,8 +74,10 @@ In 1911 Rutherford explained the result. Almost all the mass and all the positiv
   <line x1="40" y1="240" x2="560" y2="240" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="300" cy="240" r="9.05839" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="314" y="247.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{nucleus}$</span></div></foreignObject>
-  <line x1="60" y1="240" x2="60" y2="281" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="32" y="246" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$b$</div></foreignObject>
+  <line x1="48" y1="240" x2="48" y2="281" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="42" y1="240" x2="54" y2="240" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="42" y1="281" x2="54" y2="281" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="18" y="246" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$b$</div></foreignObject>
   <line x1="470" y1="40" x2="532" y2="40" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <line x1="470" y1="32" x2="470" y2="48" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="532" y1="32" x2="532" y2="48" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -78,24 +88,28 @@ In 1911 Rutherford explained the result. Almost all the mass and all the positiv
 
 A **gas discharge tube** contains a thin gas, and a high voltage between its ends makes the gas glow. When you look at the glow of hydrogen through a **diffraction grating** or a spectroscope, you do not see a rainbow. You see a **line spectrum**: four bright, thin lines of visible light, always at the same wavelengths.
 
-<svg data-fig="lines" viewBox="0 0 600 220" role="img" aria-label="The visible spectrum of hydrogen gas as seen through a grating, on a wavelength scale from 380 to 720 nanometres. On a dark background there are only four thin bright lines: violet at 410 nanometres, blue at 434, turquoise at 486 and red at 656 nanometres. Between them there is no light." style="max-width:100%;font-size:24px">
-  <rect x="40" y="30" width="520" height="90" fill="#15191e" stroke="#1f2933" stroke-width="2"/>
-  <rect x="459.5" y="30" width="6" height="90" fill="#e03131"/>
-  <rect x="199.5" y="30" width="6" height="90" fill="#15aabf"/>
-  <rect x="119.5" y="30" width="6" height="90" fill="#3b5bdb"/>
-  <rect x="83" y="30" width="6" height="90" fill="#7048e8"/>
-  <line x1="70.5" y1="120" x2="70.5" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="147" y1="120" x2="147" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="223.5" y1="120" x2="223.5" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="120" x2="300" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="376.5" y1="120" x2="376.5" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="453" y1="120" x2="453" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="529.5" y1="120" x2="529.5" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="440" y="139.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$656$</div></foreignObject>
-  <foreignObject x="180" y="139.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$486$</div></foreignObject>
-  <foreignObject x="116.5" y="139.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$434$</div></foreignObject>
-  <foreignObject x="47" y="139.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$410$</div></foreignObject>
-  <foreignObject x="486" y="181.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\lambda\ (\text{nm})$</div></foreignObject>
+<svg data-fig="lines" viewBox="0 0 600 250" role="img" aria-label="The visible spectrum of hydrogen gas as seen through a grating, on a wavelength scale from 380 to 720 nanometres. On a dark background there are only four thin bright lines: violet at 410 nanometres, blue at 434, turquoise at 486 and red at 656 nanometres. Between them there is no light." style="max-width:100%;font-size:24px">
+  <rect x="40" y="60" width="520" height="90" fill="#15191e" stroke="#1f2933" stroke-width="2"/>
+  <rect x="459.5" y="60" width="6" height="90" fill="#e03131"/>
+  <rect x="199.5" y="60" width="6" height="90" fill="#15aabf"/>
+  <rect x="119.5" y="60" width="6" height="90" fill="#3b5bdb"/>
+  <rect x="83" y="60" width="6" height="90" fill="#7048e8"/>
+  <foreignObject x="440" y="21.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$656$</div></foreignObject>
+  <foreignObject x="180" y="21.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$486$</div></foreignObject>
+  <foreignObject x="116.5" y="21.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$434$</div></foreignObject>
+  <foreignObject x="47" y="21.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$410$</div></foreignObject>
+  <line x1="70.5" y1="150" x2="70.5" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="48" y="171.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$400$</div></foreignObject>
+  <line x1="147" y1="150" x2="147" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="223.5" y1="150" x2="223.5" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="201" y="171.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$500$</div></foreignObject>
+  <line x1="300" y1="150" x2="300" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="376.5" y1="150" x2="376.5" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="354" y="171.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$600$</div></foreignObject>
+  <line x1="453" y1="150" x2="453" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <line x1="529.5" y1="150" x2="529.5" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="507" y="171.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$700$</div></foreignObject>
+  <foreignObject x="486" y="209.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\lambda\ (\text{nm})$</div></foreignObject>
 </svg>
 
 In 1885 the Swiss teacher Johann Balmer found a simple formula that gives these four wavelengths, but nobody could say *why* it worked. Every element has its own pattern of lines, like a fingerprint. At the Fotoni lab visit you will look at the spectra of lamps and gas tubes yourself, at the station on spectra (unit *Fotoni lab visit: modern physics experiments*).
@@ -104,7 +118,7 @@ In 1885 the Swiss teacher Johann Balmer found a simple formula that gives these 
 
 Rutherford's atom has a tiny, heavy, positive nucleus. The nucleus of gold has a radius of about $7\ \text{fm}$ ($1\ \text{fm} = 10^{-15}\ \text{m}$), while the gold atom has a radius of about $144\ \text{pm} = 1.44 \cdot 10^{-10}\ \text{m}$, about $20\,000$ times more. The atom is almost empty space, and the light **electrons** move around the nucleus.
 
-But this atom raised a new problem. An electron moving round the nucleus is always accelerating, and classical physics says that an accelerating charge sends out electromagnetic radiation. The electron should lose energy, spiral into the nucleus and send out a smear of all wavelengths on the way. Real atoms are stable and give sharp lines. Classical physics had failed again.
+But this atom raised a new problem. An electron moving round the nucleus is always accelerating, and classical physics says that an accelerating charge sends out electromagnetic radiation. The electron should lose energy, spiral into the nucleus and send out a continuous spectrum on the way. Real atoms are stable and give sharp lines. Classical physics had failed again.
 
 ## Bohr's quantum atom {Bohr}
 
@@ -127,13 +141,17 @@ So a hot gas sends out only the photon energies that match jumps between its lev
   <line x1="120" y1="68.5" x2="470" y2="68.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="120" y1="63" x2="470" y2="63" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="65" y="498" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 1$</div></foreignObject>
-  <foreignObject x="478" y="498" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-13.60\ \text{eV}$</div></foreignObject>
+  <foreignObject x="478" y="498" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-13.6\ \text{eV}$</div></foreignObject>
   <foreignObject x="65" y="151" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 2$</div></foreignObject>
   <foreignObject x="478" y="151" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-3.40\ \text{eV}$</div></foreignObject>
-  <foreignObject x="65" y="99" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 3$</div></foreignObject>
-  <foreignObject x="478" y="99" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-1.51\ \text{eV}$</div></foreignObject>
-  <foreignObject x="65" y="55.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 4$</div></foreignObject>
-  <foreignObject x="478" y="55.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-0.85\ \text{eV}$</div></foreignObject>
+  <line x1="112" y1="106.5" x2="120" y2="101.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="470" y1="101.5" x2="476" y2="106.5" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="65" y="92" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 3$</div></foreignObject>
+  <foreignObject x="478" y="92" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-1.51\ \text{eV}$</div></foreignObject>
+  <line x1="112" y1="74" x2="120" y2="79" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="470" y1="79" x2="476" y2="74" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="65" y="59.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n = 4$</div></foreignObject>
+  <foreignObject x="478" y="59.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-0.85\ \text{eV}$</div></foreignObject>
   <line x1="250" y1="101.5" x2="250" y2="149.5" stroke="#e03131" stroke-width="4" stroke-linecap="butt"/>
   <path d="M250,164.5 L243,148.5 L257,148.5 Z" fill="#e03131" stroke-linejoin="round"/>
   <foreignObject x="227.5" y="181" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e03131">$656$</div></foreignObject>
@@ -154,7 +172,7 @@ So a hot gas sends out only the photon energies that match jumps between its lev
 
 Bohr's model gives the hydrogen lines very accurately, but it fails for atoms with more than one electron, and its electrons in neat circular orbits are not the whole truth. In the 1920s **quantum mechanics** replaced the orbits with waves and probabilities: the topic of the next unit. The idea of energy levels survived.
 
-## Formula: energy levels of hydrogen
+## Formula: Energy levels of hydrogen
 
 The energy levels of the hydrogen atom are
 ```latex
@@ -172,7 +190,7 @@ Rutherford's reasoning showed how close an alpha particle can come to a nucleus.
 
 <!-- vaihe -->
 
-**Given:** $m = 6.64 \cdot 10^{-27}\ \text{kg}$, $v = 2.0 \cdot 10^{7}\ \text{m/s}$, $q_1 = 2e$, $q_2 = 79e$, $e = 1.602 \cdot 10^{-19}\ \text{C}$, $k = 8.988 \cdot 10^{9}\ \text{N} \cdot \text{m}^2/\text{C}^2$. Find the closest distance $d$.
+**Given:** ${m = 6.64 \cdot 10^{-27}\ \text{kg}}$, ${v = 2.0 \cdot 10^{7}\ \text{m/s}}$, ${q_1 = 2e}$, ${q_2 = 79e}$, ${e = 1.602 \cdot 10^{-19}\ \text{C}}$, ${k = 8.988 \cdot 10^{9}\ \text{N} \cdot \text{m}^2/\text{C}^2}$. Find the closest distance $d$.
 
 <!-- vaihe -->
 
@@ -215,7 +233,7 @@ d &= \frac{3.645 \cdot 10^{-26}\ \text{J} \cdot \text{m}}{1.328 \cdot 10^{-12}\ 
 
 <!-- vaihe -->
 
-**Reasonableness:** Rutherford found the same order of magnitude: the nucleus must be smaller than about $3 \cdot 10^{-14}\ \text{m}$. Today's value for the radius of the gold nucleus, about $7\ \text{fm}$, is indeed smaller than $27\ \text{fm}$, so the alpha particle never touches it: only the electric force acts. The kinetic energy is $1.328 \cdot 10^{-12}\ \text{J} : 1.602 \cdot 10^{-19}\ \text{J/eV} \approx 8.3\ \text{MeV}$, a typical energy of alpha particles from radioactive decay.
+**Reasonableness:** Rutherford found the same order of magnitude: the nucleus must be smaller than about $3 \cdot 10^{-14}\ \text{m}$. Today's value for the radius of the gold nucleus, about $7\ \text{fm}$, is indeed smaller than $27\ \text{fm}$, so the alpha particle never touches it: only the electric force acts. The kinetic energy is about $8.3\ \text{MeV}$ ($1.328 \cdot 10^{-12}\ \text{J}$ divided by $1.602 \cdot 10^{-19}\ \text{J/eV}$). This is within the range of alpha particles from radioactive decay, about $4\text{–}9\ \text{MeV}$.
 
 ## Common misconception
 

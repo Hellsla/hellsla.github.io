@@ -83,28 +83,28 @@
    "stage": "ennusta",
    "type": "choice",
    "title": "Prediction 2: a wall that is too high",
-   "prompt": "An electron moves towards a thin **energy barrier**. Its kinetic energy is *less* than the energy it would need to get over the top. What does quantum physics say happens?",
+   "prompt": "An electron moves towards a thin **energy barrier**. Its kinetic energy is *less* than the energy it would need to get over the top. The barrier is then made twice as wide. What do you predict?",
    "justify": true,
    "reveal": {
     "after": "theory-sun"
    },
    "choices": [
     {
-     "text": "It always bounces back, as a ball would.",
+     "text": "It always bounces back, from the thin or the wide wall.",
      "feedback": "This is the classical answer. For an electron and a thin barrier there is a real chance of passing: for a $1\\ \\text{eV}$ barrier $0.25\\ \\text{nm}$ wide, about $7.7\\ \\%$. This is quantum tunnelling."
     },
     {
-     "text": "Sometimes it passes; a wider wall makes it rarer.",
+     "text": "It sometimes passes, but far more rarely through the wide one.",
      "correct": true,
-     "feedback": "Right. The electron's wave reaches through the barrier, so there is a chance of finding it on the other side. The chance falls very fast with width: about $7.7\\ \\%$ at $0.25\\ \\text{nm}$ but only $0.0035\\ \\%$ at $1.00\\ \\text{nm}$."
+     "feedback": "Right. The electron's wave reaches through the barrier, so there is a chance of finding it on the other side. The chance falls very fast with width: about $7.7\\ \\%$ at $0.25\\ \\text{nm}$ but only $0.60\\ \\%$ at $0.50\\ \\text{nm}$, about $13$ times less."
     },
     {
-     "text": "It always passes, because an electron is so small.",
-     "feedback": "Being small does not let it through every time. The chance is only a few per cent for a very thin barrier and falls very fast with width; most electrons bounce back."
+     "text": "It sometimes passes, and half as often through the wide one.",
+     "feedback": "The electron can pass, but the chance does not simply halve. It falls exponentially: from about $7.7\\ \\%$ at $0.25\\ \\text{nm}$ to $0.60\\ \\%$ at $0.50\\ \\text{nm}$, about $13$ times less."
     },
     {
-     "text": "It waits, collects energy, and then climbs over.",
-     "feedback": "The electron does not collect extra energy. It passes, when it does, with the energy it had: its wave reaches through the barrier. The chance falls very fast with width."
+     "text": "It sometimes passes, equally often through both walls.",
+     "feedback": "The electron can pass, but the width matters a great deal: the chance falls from about $7.7\\ \\%$ at $0.25\\ \\text{nm}$ to $0.60\\ \\%$ at $0.50\\ \\text{nm}$."
     }
    ]
   },
@@ -250,7 +250,7 @@
      "feedback": "You used the mass of an electron. A proton is about $1840$ times heavier: $m = 1.673 \\cdot 10^{-27}\\ \\text{kg}$."
     }
    ],
-   "solution": "**Given:** $m = 1.673 \\cdot 10^{-27}\\ \\text{kg}$, $E_\\text{k} = 1.35\\ \\text{keV}$, $h = 6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. Find the de Broglie wavelength $\\lambda$.\n\n**Principle:** Every particle has the de Broglie wavelength $\\lambda = h/p$. The momentum follows from the kinetic energy, $E_\\text{k} = p^2/(2m)$; at this speed classical momentum is accurate.\n\n**Formula:** $p = \\sqrt{2mE_\\text{k}}$ and $\\lambda = h/p = h/\\sqrt{2mE_\\text{k}}$.\n\n**Unit conversions:** $E_\\text{k} = 1.35 \\cdot 10^{3}\\ \\text{eV} \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J/eV} = 2.163 \\cdot 10^{-16}\\ \\text{J}$, and at the end $1\\ \\text{fm} = 10^{-15}\\ \\text{m}$.\n\n**Substitution:** $$\\begin{aligned} 2mE_\\text{k} &= 2 \\cdot 1.673 \\cdot 10^{-27}\\ \\text{kg} \\\\ &\\quad \\cdot 2.163 \\cdot 10^{-16}\\ \\text{J} \\\\ &= 7.237 \\cdot 10^{-43}\\ \\text{kg}^2\\text{m}^2/\\text{s}^2 \\\\ p &= \\sqrt{7.237 \\cdot 10^{-43}\\ \\text{kg}^2\\text{m}^2/\\text{s}^2} \\\\ &= 8.507 \\cdot 10^{-22}\\ \\text{kg} \\cdot \\text{m/s} \\\\ \\lambda &= \\frac{6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}{8.507 \\cdot 10^{-22}\\ \\text{kg} \\cdot \\text{m/s}} \\\\ &= 7.79 \\cdot 10^{-13}\\ \\text{m} \\end{aligned}$$\n\n**Answer:** $\\lambda \\approx 7.79 \\cdot 10^{-13}\\ \\text{m} = 779\\ \\text{fm}$, three significant figures like the energy. It is almost as long as the classical turning distance of about $1000\\ \\text{fm}$.\n\n**Reasonableness:** The proton is much heavier than the electron of the worked example, but also has more energy; its wavelength, $779\\ \\text{fm}$, is shorter than the electron's $0.123\\ \\text{nm} = 123\\,000\\ \\text{fm}$, as expected. Because the wave is about as long as the distance the proton must still cover, its wave reaches into the barrier, and tunnelling becomes possible."
+   "solution": "**Given:** $m = 1.673 \\cdot 10^{-27}\\ \\text{kg}$, $E_\\text{k} = 1.35\\ \\text{keV}$, $h = 6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$. Find the de Broglie wavelength $\\lambda$.\n\n**Principle:** Every particle has the de Broglie wavelength $\\lambda = h/p$. The momentum follows from the kinetic energy, $E_\\text{k} = p^2/(2m)$; at this speed classical momentum is accurate.\n\n**Formula:** $p = \\sqrt{2mE_\\text{k}}$ and $\\lambda = h/p = h/\\sqrt{2mE_\\text{k}}$.\n\n**Unit conversions:** $E_\\text{k} = 1.35 \\cdot 10^{3}\\ \\text{eV} \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J/eV} = 2.163 \\cdot 10^{-16}\\ \\text{J}$, and at the end $1\\ \\text{fm} = 10^{-15}\\ \\text{m}$.\n\n**Substitution:** $$\\begin{aligned} 2mE_\\text{k} &= 2 \\cdot 1.673 \\cdot 10^{-27}\\ \\text{kg} \\\\ &\\quad \\cdot 2.163 \\cdot 10^{-16}\\ \\text{J} \\\\ &= 7.237 \\cdot 10^{-43}\\ \\text{kg}^2 \\cdot \\text{m}^2/\\text{s}^2 \\\\ p &= \\sqrt{7.237 \\cdot 10^{-43}\\ \\text{kg}^2 \\cdot \\text{m}^2/\\text{s}^2} \\\\ &= 8.507 \\cdot 10^{-22}\\ \\text{kg} \\cdot \\text{m/s} \\\\ \\lambda &= \\frac{6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}}{8.507 \\cdot 10^{-22}\\ \\text{kg} \\cdot \\text{m/s}} \\\\ &= 7.79 \\cdot 10^{-13}\\ \\text{m} \\end{aligned}$$\n\n**Answer:** $\\lambda \\approx 7.79 \\cdot 10^{-13}\\ \\text{m} = 779\\ \\text{fm}$, three significant figures like the energy. It is almost as long as the classical turning distance of about $1000\\ \\text{fm}$.\n\n**Reasonableness:** The proton is much heavier than the electron of the worked example, but also has more energy; its wavelength, $779\\ \\text{fm}$, is shorter than the electron's $0.123\\ \\text{nm} = 123\\,000\\ \\text{fm}$, as expected. Compare: $779\\ \\text{fm}$ is about the same size as the classical turning distance of about $1000\\ \\text{fm}$, so the proton's wave reaches far into the barrier, and tunnelling becomes possible."
   },
   {
    "id": "tennis",
@@ -351,9 +351,9 @@
      "feedback": "A typical proton has about $1.35\\ \\text{keV}$, more than $500$ times too little to climb a $720\\ \\text{keV}$ barrier. Classical physics alone would allow almost no fusion."
     },
     {
-     "text": "Protons tunnel, rarely, and there are enormous numbers of them.",
+     "text": "Protons tunnel, rarely, and there are huge numbers of them.",
      "correct": true,
-     "feedback": "Right. Each meeting of two protons has only a tiny chance to tunnel close enough, but the core contains so many protons that fusion goes on all the time. An average proton waits about $9$ billion years."
+     "feedback": "Right. Each meeting of two protons has only a tiny chance to tunnel close enough, but the core contains so many protons that fusion goes on all the time. An average proton still waits about $9$ billion years, also because the first step, $\\text{p} + \\text{p} \\to \\text{d} + \\text{e}^+ + \\nu$, needs the weak interaction."
     },
     {
      "text": "Protons store energy over many years until they can climb over.",
@@ -371,7 +371,7 @@
    "type": "explain",
    "title": "4. Explain: why the Sun shines",
    "prompt": "Explain to a younger student, in four or five sentences, why fusion in the Sun is possible. Use the words *barrier*, *classical physics*, *tunnelling* and *probability*, and at least one number from this unit.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Two protons repel each other, so …</li><li>In classical physics, a proton with … would …</li><li>In quantum physics, however, …</li><li>The probability is very small, but …</li><li>So the Sun can …</li></ul></div>",
-   "model": "Two protons are both positive, so they repel each other, and there is an energy barrier of about $720\\ \\text{keV}$ before they are close enough to fuse. In classical physics, a proton with a typical energy of $1.35\\ \\text{keV}$ would turn back about $1000\\ \\text{fm}$ away and never fuse. In quantum physics, however, a proton also behaves like a wave, and its wave reaches into the barrier. So there is a small probability that two protons tunnel through the barrier and fuse. The probability is very small, but the Sun's core contains so many protons that fusion goes on all the time, and the Sun can shine for billions of years.",
+   "model": "Two protons are both positive, so they repel each other, and there is an energy barrier of about $720\\ \\text{keV}$ before they are close enough to fuse. In classical physics, a proton with a typical energy of $1.35\\ \\text{keV}$ would turn back roughly $1000\\ \\text{fm}$ away and never fuse. In quantum physics, however, a proton also behaves like a wave, and its wave reaches into the barrier. So there is a small probability that two protons tunnel through the barrier and come close enough to fuse. The probability is very small, but the Sun's core contains so many protons that fusion goes on all the time, and the Sun can shine for billions of years.",
    "criteria": [
     "The answer explains the barrier with the repulsion of two positive protons.",
     "The answer contrasts classical physics (no fusion) with tunnelling (a small chance).",
@@ -391,7 +391,7 @@
    "id": "french-corner",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Louis de Broglie wrote his famous thesis in French: <span lang=\"fr\">Recherches sur la théorie des quanta</span>. In French, tunnelling is <span lang=\"fr\">l'effet tunnel</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-qt-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: waves and chances\", \"phrases\": [{\"fr\": \"une onde\", \"en\": \"a wave\", \"tip\": \"yn ÕD: a nasal *on*, no *n*; the French *u* is the Finnish *y*.\"}, {\"fr\": \"une particule\", \"en\": \"a particle\", \"tip\": \"yn par-ti-KYL: the final *-e* is silent.\"}, {\"fr\": \"la longueur d'onde\", \"en\": \"the wavelength\", \"tip\": \"la lõ-GÖR DÕD: *eu* is close to the Finnish *ö*.\"}, {\"fr\": \"l'effet tunnel\", \"en\": \"tunnelling\", \"tip\": \"le-FE ty-NEL: the *t* of *effet* is silent.\"}, {\"fr\": \"la probabilité\", \"en\": \"probability\", \"tip\": \"la pro-ba-bi-li-TE: every syllable is short and even.\"}, {\"fr\": \"Le Soleil brille grâce à l'effet tunnel.\", \"en\": \"The Sun shines thanks to tunnelling.\", \"tip\": \"lö so-LEJ BRIJ: *-eil* and *-ille* end in a *j* sound.\"}]}</script></div>"
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>Louis de Broglie wrote his famous thesis in French: <span lang=\"fr\">Recherches sur la théorie des quanta</span>. In French, tunnelling is <span lang=\"fr\">l'effet tunnel</span>. Listen, repeat, and then say the last sentence to your partner. In the hints, capitals show the stressed syllable, and <em>õ</em>, <em>ã</em> and <em>ẽ</em> are nasal vowels: the air goes through the nose and no <em>n</em> is heard.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-qt-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: waves and chances\", \"phrases\": [{\"fr\": \"une onde\", \"en\": \"a wave\", \"tip\": \"*yn ÕD*: a nasal *on*, no *n*; the French *u* is the Finnish *y*.\"}, {\"fr\": \"une particule\", \"en\": \"a particle\", \"tip\": \"*yn par-ti-KYL*: the final *-e* is silent.\"}, {\"fr\": \"la longueur d'onde\", \"en\": \"the wavelength\", \"tip\": \"*la lõ-GÖR DÕD*: *eu* is close to the Finnish *ö*.\"}, {\"fr\": \"l'effet tunnel\", \"en\": \"tunnelling\", \"tip\": \"*le-FE ty-NEL*: the *t* of *effet* is silent.\"}, {\"fr\": \"la probabilité\", \"en\": \"probability\", \"tip\": \"*la pro-ba-bi-li-TE*: every syllable is short and even.\"}, {\"fr\": \"Le Soleil brille grâce à l'effet tunnel.\", \"en\": \"The Sun shines thanks to tunnelling.\", \"tip\": \"*lö so-LEJ BRIJ*: *-eil* and *-ille* end in a *j* sound.\"}]}</script></div>"
   }
  ]
 }

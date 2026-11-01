@@ -91,12 +91,15 @@ def spectrum():
             "wavelength, higher frequency.")
     x0, x1, e0, e1 = 40, 560, -12, 2
     X = lambda e: x0 + (e - e0) / (e1 - e0) * (x1 - x0)
-    regions = [(-12, -11, "#868e96", r"\gamma"), (-11, -8, "#adb5bd", r"\text{X}"), (-8, -6.42, "#b197fc", r"\text{UV}"),
-               (-6.42, -6.12, None, ""), (-6.12, -3, "#ffa8a8", r"\text{IR}"), (-3, 0, "#ffd8a8", r"\text{micro}"),
+    regions = [(-12, -11, "#868e96", r"\gamma"), (-11, -8, "#adb5bd", r"\text{X-rays}"), (-8, -6.42, "#b197fc", r"\text{UV}"),
+               (-6.42, -6.12, None, ""), (-6.12, -3, "#ffa8a8", r"\text{IR}"), (-3, 0, "#ffd8a8", "MW"),
                (0, 2, "#d3f9d8", r"\text{radio}")]
     for a, b, col, lab in regions:
         if col: f.rect(X(a), 70, X(b) - X(a), 56, col, INK, 1.5)
-        if lab: f.tex((X(a) + X(b)) / 2, 98, lab, "middle")
+        if lab == "MW":
+            f.tex((X(a) + X(b)) / 2, 84, r"\text{micro-}", "middle", size=22)
+            f.tex((X(a) + X(b)) / 2, 112, r"\text{waves}", "middle", size=22)
+        elif lab: f.tex((X(a) + X(b)) / 2, 98, lab, "middle")
     # the visible band on the bar
     f.defs_add('<linearGradient id="fy14cl-vis" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7048e8"/><stop offset="0.2" stop-color="#1971c2"/>'
                '<stop offset="0.4" stop-color="#2b8a3e"/><stop offset="0.6" stop-color="#fab005"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient>')
@@ -130,13 +133,16 @@ def curves():
     f.rect(ax.X(380), ax.Y(1.1), ax.X(750) - ax.X(380), ax.Y(0) - ax.Y(1.1), "#e7f0ff", extra='fill-opacity="0.8"')
     f.tex((ax.X(380) + ax.X(750)) / 2, ax.Y(1.06), r"\text{visible}", "middle", color=MUTED)
     top = planck(2.897771955e-3 / 6000 * 1e9, 6000)
-    for T, col, lx, ly in ((6000, COLD, 790, 0.97), (5000, GOOD, 940, 0.42), (4000, HOT, 1180, 0.2)):
+    for T, col, lx, ly in ((6000, COLD, 790, 0.97), (5000, GOOD, 940, 0.42), (4000, HOT, 600, 0.175)):
         ax.curve(lambda l: planck(max(l, 60), T) / top, 100, 2000, col, 3)
         lp = 2.897771955e-3 / T * 1e9
         yp = planck(lp, T) / top
         f.line(ax.X(lp), ax.Y(yp), ax.X(lp), ax.Y(0), col, 1.8, "6 5")
         ax.point(lp, yp, col)
-        f.tex(ax.X(lx) + 12, ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, bg=True)
+        if T == 4000:     # in the gap between the 5000 K curve and the 4000 K peak, without a white box over the curves
+            f.tex(ax.X(lx), ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, size=22)
+        else:
+            f.tex(ax.X(lx) + 12, ax.Y(ly), rf"{T}\ \text{{K}}", "start", color=col, bg=True)
     f.tex(ax.X(1450), ax.Y(0.85), r"\text{model values}", "middle", color=MUTED, bg=True)
     return f.svg()
 

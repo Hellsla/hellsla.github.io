@@ -1,10 +1,10 @@
 ## Timing (75 minutes)
 
-- **0–6 min, Think about it.** Read the hook (Thomson's "pudding" atom and the alpha particles). The review question on photon energy.
+- **0–6 min, Think about it.** Read the hook (Thomson's "pudding" atom and the alpha particles), then the pair talk about the closed box.
 - **6–11 min, Predict.** Both predictions individually, committed with a short reason. Ask two or three students to say their reason aloud; do not judge them yet.
-- **11–30 min, Investigate.** Read *The gold-foil evidence* together, then the paths figure and its question in pairs. Then the hydrogen spectrum: the photon energy of the red line (students keep their answer) and the pair comparison of the two spectra.
+- **11–30 min, Investigate.** Read *The gold-foil evidence* together, then the paths figure and its question in pairs. Then the hydrogen spectrum: the review question on photon energy, the photon energy of the red line (students keep their answer) and the pair comparison of the two spectra.
 - **30–42 min, Theory summary.** Key idea, Bohr's atom and the formula; the vocabulary match; back to the predictions. The biographies are optional.
-- **42–60 min, Apply.** The worked example (closest approach) step by step; the $5 \to 2$ jump: students check that Bohr's model gives a measured line.
+- **42–60 min, Apply.** The worked example (closest approach) step by step; the $5 \to 2$ jump: students check that Bohr's model gives a measured line. Weaker students: after a first attempt, point them to the hints and then the full solution of this task, because the worked example models a different calculation (closest approach).
 - **60–75 min, Check your understanding.** Three checks individually, the explanation on fusion with the sentence starters, the summary, the French corner in pairs.
 
 ## Plan for fast pairs and for running short of time

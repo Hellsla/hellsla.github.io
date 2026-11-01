@@ -35,3 +35,24 @@ Content hash at hand-over: see `python3 scripts/units.py hash fy14-atom-models`.
 
 ## Shared issues
 - `assets/units/fy14/data/timeline.json` `bohr-model-1913` gives Manchester as the place of Bohr's 1913 model; it was Copenhagen (see the report of fy14-classical-limits, Shared issues 3).
+
+## Fixes after review
+
+Content hash after the fixes: 9aa351a8af4c0779.
+
+- Science 1 / Pedagogy B1: pred-gold now asks "In 1909 Thomson's model was the best picture of the atom. What do you think Geiger and Marsden actually saw …?" The Thomson option's feedback opens "That is what Thomson's model predicts, … and it is what everyone expected. The experiment showed something else".
+- Science 2: scatter aria-label: the atom is "about 600 times wider than this drawing".
+- Science 3: Key idea says "a continuous spectrum" instead of "a smear of all wavelengths".
+- Science 4 / Visual 5: worked example Reasonableness: "about 8.3 MeV (1.328·10⁻¹² J divided by 1.602·10⁻¹⁹ J/eV). This is within the range of alpha particles from radioactive decay, about 4–9 MeV." No long inline formula mid-sentence.
+- Pedagogy B2: the photon-energy `review` task moved to Investigate, just before red-line. Think about it now has a pair talk (find out what is in a closed box by throwing marbles in), with neutral starters.
+- Pedagogy P1: compare-spectra model uses *whereas* correctly.
+- Pedagogy P2: back-to-predictions asks students to check that E₃ − E₂ gives their 1.89 eV.
+- Pedagogy P3: teacher.md points weaker students to the hints and solution of the 5 → 2 task.
+- Pedagogy P4: correct options of pred-gold, find-error and check-3 shortened; none is the longest.
+- Visual 1: hero grating: four lines on each side of a dim central image, offset ∝ λ, so violet is nearest the centre and red farthest.
+- Visual 2: levels: n = 3 and n = 4 labels nudged 5 units apart from each other with short leader lines to their own levels; n = 1 is "−13.6 eV".
+- Visual 3: French *un* is *ẽ* (*ẽ-na-TOM*, *ẽ-ne-lek-TRÕ*); respellings in italics; convention sentence in the box.
+- Visual 4: lines figure: ticks numbered 400–700, wavelengths above their lines.
+- Visual 6: heading "Formula: Energy levels of hydrogen". Visual 7: b bracket in scatter has end ticks and sits clear of the paths.
+- Given line equalities braced.
+- Checks: units.py figures, units.py check, build.py, check_layout 360 and 1280 OK, browser test (all tasks, reveals, no KaTeX or console errors).

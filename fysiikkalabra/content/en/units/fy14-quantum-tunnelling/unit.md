@@ -72,7 +72,7 @@
 
 Light passing through two narrow slits makes a pattern of bright and dark bands on a screen. Thomas Young showed such **interference** of light around 1801–1803, and it became the classic proof that light is a wave. In 1909 Geoffrey Taylor repeated a two-slit experiment with light so dim that only a few photons were on their way at any moment, and the bands still appeared.
 
-In 1924 the French physicist Louis de Broglie suggested that electrons might be waves too. In 1927 Clinton Davisson and Lester Germer, and independently George Paget Thomson and Alexander Reid, saw electrons **diffract** from crystals, just like waves. Later, Merli, Missiroli and Pozzi (1974) sent electrons through a two-slit device *one at a time*. The figure shows what such an experiment looks like.
+In 1924 the French physicist Louis de Broglie suggested that electrons might be waves too. In 1927 Clinton Davisson and Lester Germer, and independently George Paget Thomson and Alexander Reid, saw electrons **diffract** from crystals, just like waves. Later, Merli, Missiroli and Pozzi (1974) sent electrons *one at a time* through an electron biprism, which acts like two slits. The figure shows what such an experiment looks like.
 
 <svg data-fig="slits" viewBox="0 0 600 400" role="img" aria-label="Three panels of a detector screen after a double-slit experiment with single electrons, simulated. Left, after 30 electrons: scattered dots with no clear pattern. Middle, after 300 electrons: the dots begin to gather in vertical bands. Right, after 3000 electrons: clear bright bands of many dots with almost empty bands between them, an interference pattern." style="max-width:100%;font-size:24px">
   <rect x="20" y="40" width="176" height="300" rx="4" fill="#15191e" stroke="#1f2933" stroke-width="2"/>
@@ -3424,7 +3424,8 @@ Roll a ball towards a hill. If its kinetic energy is less than the energy needed
   <rect x="260" y="70" width="80" height="230" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <line x1="30" y1="300" x2="570" y2="300" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="30" y1="200" x2="570" y2="200" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <foreignObject x="36" y="163.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$E$</div></foreignObject>
+  <foreignObject x="550" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$E$</div></foreignObject>
+  <foreignObject x="352" y="55.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{barrier top}$</div></foreignObject>
   <foreignObject x="252.5" y="37.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{barrier}$</div></foreignObject>
   <polyline points="30,215.5 32,203 34,190.5 36,178.5 38,167 40,156.5 42,147.5 44,140 46,134.5 48,131 50,130 52,131 54,134.5 56,140 58,147.5 60,156.5 62,167 64,178.5 66,190.5 68,203 70,215.5 72,227.5 74,238.5 76,248.5 78,256.5 80,263 82,267.5 84,269.5 86,269.5 88,267.5 90,263 92,256.5 94,248.5 96,238.5 98,227.5 100,215.5 102,203 104,190.5 106,178.5 108,167 110,156.5 112,147.5 114,140 116,134.5 118,131 120,130 122,131 124,134.5 126,140 128,147.5 130,156.5 132,167 134,178.5 136,190.5 138,203 140,215.5 142,227.5 144,238.5 146,248.5 148,256.5 150,263 152,267.5 154,269.5 156,269.5 158,267.5 160,263 162,256.5 164,248.5 166,238.5 168,227.5 170,215.5 172,203 174,190.5 176,178.5 178,167 180,156.5 182,147.5 184,140 186,134.5 188,131 190,130 192,131 194,134.5 196,140 198,147.5 200,156.5 202,167 204,178.5 206,190.5 208,203 210,215.5 212,227.5 214,238.5 216,248.5 218,256.5 220,263 222,267.5 224,269.5 226,269.5 228,267.5 230,263 232,256.5 234,248.5 236,238.5 238,227.5 240,215.5 242,203 244,190.5 246,178.5 248,167 250,156.5 252,147.5 254,140 256,134.5 258,131 260,130 260,130 262,133 264,136 266,138.5 268,141.5 270,144 272,146.5 274,148.5 276,151 278,153 280,155 282,157 284,159 286,160.5 288,162 290,164 292,165.5 294,167 296,168.5 298,169.5 300,171 302,172.5 304,173.5 306,174.5 308,175.5 310,177 312,178 314,178.5 316,179.5 318,180.5 320,181.5 322,182 324,183 326,183.5 328,184.5 330,185 332,185.5 334,186.5 336,187 338,187.5 340,188 340,188 342,188 344,189 346,189.5 348,191 350,192.5 352,194.5 354,196.5 356,198.5 358,200.5 360,202.5 362,204.5 364,206.5 366,208.5 368,209.5 370,211 372,211.5 374,212 376,212 378,211.5 380,211 382,209.5 384,208.5 386,206.5 388,204.5 390,202.5 392,200.5 394,198.5 396,196.5 398,194.5 400,192.5 402,191 404,189.5 406,189 408,188 410,188 412,188 414,189 416,189.5 418,191 420,192.5 422,194.5 424,196.5 426,198.5 428,200.5 430,202.5 432,204.5 434,206.5 436,208.5 438,209.5 440,211 442,211.5 444,212 446,212 448,211.5 450,211 452,209.5 454,208.5 456,206.5 458,204.5 460,202.5 462,200.5 464,198.5 466,196.5 468,194.5 470,192.5 472,191 474,189.5 476,189 478,188 480,188 482,188 484,189 486,189.5 488,191 490,192.5 492,194.5 494,196.5 496,198.5 498,200.5 500,202.5 502,204.5 504,206.5 506,208.5 508,209.5 510,211 512,211.5 514,212 516,212 518,211.5 520,211 522,209.5 524,208.5 526,206.5 528,204.5 530,202.5 532,200.5 534,198.5 536,196.5 538,194.5 540,192.5 542,191 544,189.5 546,189 548,188 550,188 552,188 554,189 556,189.5 558,191 560,192.5 562,194.5 564,196.5 566,198.5 568,200.5 570,202.5" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round"/>
   <foreignObject x="86" y="305.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{incoming}$</div></foreignObject>
@@ -3449,7 +3450,7 @@ Light and matter are neither ordinary waves nor ordinary particles. This is call
 
 Every moving particle has a **de Broglie wavelength**. When the wavelength is similar to the size of an object in its way, such as the distance between atoms or the width of a barrier, the wave nature becomes important: diffraction, interference and tunnelling. For a ball or a car the wavelength is so tiny that we never notice it.
 
-## Formula: the de Broglie wavelength
+## Formula: The de Broglie wavelength
 
 A particle with the momentum $p = mv$ has the wavelength
 ```latex
@@ -3459,9 +3460,9 @@ where $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$. If the kinetic energy
 
 ## Tunnelling and the Sun {Sun}
 
-At the centre of the Sun the temperature is about $15.7$ million kelvins. A typical kinetic energy of a particle there is of the order of $k_\text{B}T \approx 1.35\ \text{keV}$. Two protons repel each other, because both are positive. To fuse, they must come within a few femtometres, where the **strong nuclear force** can hold them together. At $2\ \text{fm}$ the electric potential energy of two protons is about $720\ \text{keV}$, more than $500$ times the typical energy. In classical physics a proton with $1.35\ \text{keV}$ turns back at about $1000\ \text{fm}$ and never gets close.
+At the centre of the Sun the temperature is about $15.7$ million kelvins. A typical kinetic energy of a particle there is of the order of $k_\text{B}T \approx 1.35\ \text{keV}$. Two protons repel each other, because both are positive. To fuse, they must come within a few femtometres, where the **strong nuclear force** acts. At $2\ \text{fm}$ the electric potential energy of two protons is about $720\ \text{keV}$, more than $500$ times the typical energy. In classical physics a proton with $1.35\ \text{keV}$ turns back at about $1000\ \text{fm}$ and never gets close.
 
-<svg data-fig="sunbarrier" viewBox="0 0 600 440" role="img" aria-label="Graph with logarithmic scales on both axes. Horizontal axis: the distance r between two protons, from 1 to 3000 femtometres. Vertical axis: energy in kiloelectronvolts, from 0.1 to 10 000. A falling straight line is the electric potential energy of the two protons, which grows as they come closer: 1.44 MeV at 1 femtometre, 0.72 MeV at 2 femtometres. A horizontal orange line at 1.35 keV is the typical kinetic energy at the centre of the Sun. It meets the potential energy line at about 1060 femtometres, the closest a proton with this energy could come in classical physics. A shaded strip below 2 femtometres marks where the strong nuclear force can join the protons." style="max-width:100%;font-size:24px">
+<svg data-fig="sunbarrier" viewBox="0 0 600 440" role="img" aria-label="Graph with logarithmic scales on both axes. Horizontal axis: the distance r between two protons, from 1 to 3000 femtometres. Vertical axis: energy in kiloelectronvolts, from 0.1 to 10 000. A falling straight line is the electric potential energy of the two protons, which grows as they come closer: 1.44 MeV at 1 femtometre, 0.72 MeV at 2 femtometres. A horizontal orange line at 1.35 keV is the typical kinetic energy at the centre of the Sun. It meets the potential energy line at about 1060 femtometres, the closest a proton with this energy could come in classical physics. A shaded strip below 2 femtometres marks where the strong nuclear force acts; it is labelled strong force." style="max-width:100%;font-size:24px">
   <line x1="206.5" y1="360" x2="206.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="317" y1="360" x2="317" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="427.5" y1="360" x2="427.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -3489,12 +3490,15 @@ At the centre of the Sun the temperature is about $15.7$ million kelvins. A typi
   <line x1="89" y1="120" x2="96" y2="120" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="26" y="105.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1000$</div></foreignObject>
   <line x1="89" y1="60" x2="96" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="39" y="45.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10^4$</div></foreignObject>
+  <foreignObject x="1" y="45.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$10\,000$</div></foreignObject>
   <foreignObject x="512" y="345.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r\ (\text{fm})$</div></foreignObject>
   <foreignObject x="86" y="3.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E\ (\text{keV})$</div></foreignObject>
   <foreignObject x="86" y="369.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
   <foreignObject x="39" y="345.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0.1$</div></foreignObject>
   <rect x="96" y="60" width="33" height="300" fill="#b2f2bb" fill-opacity="0.6"/>
+  <line x1="168" y1="83" x2="136" y2="83" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M125,83 L137,77.5 L137,88 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <foreignObject x="176" y="68.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{strong force}$</span></div></foreignObject>
   <polyline points="96,110.5 480,319" fill="none" stroke="#c92a2a" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="96,292 480,292" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="10 6"/>
   <circle cx="430.5" cy="292" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
@@ -3505,7 +3509,7 @@ At the centre of the Sun the temperature is about $15.7$ million kelvins. A typi
   <foreignObject x="272.5" y="153.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{electric repulsion}$</span></div></foreignObject>
 </svg>
 
-In 1928 Gamow's tunnelling solved the puzzle. A proton's de Broglie wavelength at these energies is hundreds of femtometres, so its wave reaches far into the barrier, and there is a tiny chance that two protons tunnel close enough to fuse. In 1929 Robert Atkinson and Fritz Houtermans used this idea to make the first calculation of fusion in stars. Each meeting has only a tiny chance, but the Sun's core contains an enormous number of protons, so fusion goes on all the time. An average proton in the Sun's core waits about $9$ billion years before it fuses with another proton: this is why the Sun shines steadily for so long. The chapter *The Energy of the Stars* continues this story.
+Gamow's tunnelling (1928) solved the puzzle. A proton's de Broglie wavelength at these energies is hundreds of femtometres, so its wave reaches far into the barrier, and there is a tiny chance that two protons tunnel close enough to fuse. In 1929 Robert Atkinson and Fritz Houtermans used this idea to make the first calculation of fusion in stars. Each meeting has only a tiny chance, but the Sun's core contains an enormous number of protons, so fusion goes on all the time. But tunnelling only lets two protons get close. Two protons alone cannot stay together: fusion succeeds only if one of them turns into a neutron at that moment, $\text{p} + \text{p} \to \text{d} + \text{e}^+ + \nu$, and this change is a very slow process of the **weak interaction**. So an average proton in the Sun's core waits about $9$ billion years before it fuses, and this is why the Sun shines steadily for so long. The chapter *The Energy of the Stars* continues this story.
 
 ## Worked example
 
@@ -3513,7 +3517,7 @@ In an electron microscope, electrons are accelerated from rest through a voltage
 
 <!-- vaihe -->
 
-**Given:** $U = 100\ \text{V}$, electron mass $m = 9.109 \cdot 10^{-31}\ \text{kg}$, charge $e = 1.602 \cdot 10^{-19}\ \text{C}$, $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$. Find the wavelength $\lambda$.
+**Given:** ${U = 100\ \text{V}}$, electron mass ${m = 9.109 \cdot 10^{-31}\ \text{kg}}$, charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$, ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$. Find the wavelength $\lambda$.
 
 <!-- vaihe -->
 
@@ -3544,8 +3548,8 @@ E_\text{k} &= 1.602 \cdot 10^{-19}\ \text{C} \\
 &= 1.602 \cdot 10^{-17}\ \text{J} \\[6pt]
 2mE_\text{k} &= 2 \cdot 9.109 \cdot 10^{-31}\ \text{kg} \\
 &\quad \cdot 1.602 \cdot 10^{-17}\ \text{J} \\
-&= 2.919 \cdot 10^{-47}\ \text{kg}^2\text{m}^2/\text{s}^2 \\[6pt]
-p &= \sqrt{2.919 \cdot 10^{-47}\ \text{kg}^2\text{m}^2/\text{s}^2} \\
+&= 2.919 \cdot 10^{-47}\ \text{kg}^2 \cdot \text{m}^2/\text{s}^2 \\[6pt]
+p &= \sqrt{2.919 \cdot 10^{-47}\ \text{kg}^2 \cdot \text{m}^2/\text{s}^2} \\
 &= 5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s} \\[6pt]
 \lambda &= \frac{6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}{5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s}} \\
 &= 1.227 \cdot 10^{-10}\ \text{m} \\
@@ -3559,7 +3563,13 @@ p &= \sqrt{2.919 \cdot 10^{-47}\ \text{kg}^2\text{m}^2/\text{s}^2} \\
 
 <!-- vaihe -->
 
-**Reasonableness:** Units: $\text{C} \cdot \text{V} = \text{J} = \text{kg} \cdot \text{m}^2/\text{s}^2$, so the square root gives $\text{kg} \cdot \text{m/s}$, a momentum, and $\text{J} \cdot \text{s} : (\text{kg} \cdot \text{m/s}) = \text{m}$. The speed is $p/m \approx 5.9 \cdot 10^{6}\ \text{m/s}$, about $2\ \%$ of the speed of light, so classical momentum is good enough. The wavelength is much shorter than that of visible light ($400\text{–}750\ \text{nm}$), which is why electron microscopes can see much smaller details than light microscopes.
+**Reasonableness:** Check the units:
+
+```latex
+\text{C} \cdot \text{V} = \text{J} = \text{kg} \cdot \text{m}^2/\text{s}^2
+```
+
+So the square root gives $\text{kg} \cdot \text{m/s}$, a momentum, and $\text{J} \cdot \text{s}$ divided by $\text{kg} \cdot \text{m/s}$ gives $\text{m}$. The speed is $p/m \approx 5.9 \cdot 10^{6}\ \text{m/s}$, about $2\ \%$ of the speed of light, so classical momentum is good enough. The wavelength is much shorter than that of visible light ($400\text{–}750\ \text{nm}$), which is why electron microscopes can see much smaller details than light microscopes.
 
 ## Common misconception
 

@@ -87,7 +87,8 @@ def barrier():
     f.rect(a, 70, b - a, 230, ALUMINIUM, INK, 2)
     f.line(30, 300, 570, 300, INK, 2)
     f.line(30, yE, 570, yE, MUTED, 2, "8 6")
-    f.tex(36, yE - 22, r"E", "start", color=MUTED)
+    f.tex(570, yE - 34, r"E", "end", color=MUTED)
+    f.tex(b + 12, 70, r"\text{barrier top}", "start", color=INK)
     f.tex((a + b) / 2, 52, r"\text{barrier}", "middle")
     A0, k = 70, 2 * math.pi / 70
     kap = math.log(A0 / 12) / (b - a)
@@ -109,14 +110,16 @@ def sun_barrier():
             "is the electric potential energy of the two protons, which grows as they come closer: 1.44 MeV at 1 femtometre, "
             "0.72 MeV at 2 femtometres. A horizontal orange line at 1.35 keV is the typical kinetic energy at the centre of the "
             "Sun. It meets the potential energy line at about 1060 femtometres, the closest a proton with this energy could come "
-            "in classical physics. A shaded strip below 2 femtometres marks where the strong nuclear force can join the protons.")
+            "in classical physics. A shaded strip below 2 femtometres marks where the strong nuclear force acts; it is labelled strong force.")
     ax = Axes(f, (96, 360), (480, 60), x=(0, math.log10(3000)), y=(-1, 4), xticks=[1, 2, 3], yticks=[0, 1, 2, 3, 4],
               xlabel=r"r\ (\text{fm})", ylabel=r"E\ (\text{keV})",
-              xfmt=lambda v: {1: "10", 2: "100", 3: "1000"}[v], yfmt=lambda v: {0: "1", 1: "10", 2: "100", 3: "1000", 4: r"10^4"}[v],
+              xfmt=lambda v: {1: "10", 2: "100", 3: "1000"}[v], yfmt=lambda v: {0: "1", 1: "10", 2: "100", 3: "1000", 4: r"10\,000"}[v],
               origin_label=False)
     f.tex(ax.X(0), ax.y0 + 24, "1", "middle")
     f.tex(ax.x0 - 12, ax.Y(-1), "0.1", "end")
     f.rect(ax.X(0), ax.Y(4), ax.X(math.log10(2)) - ax.X(0), ax.Y(-1) - ax.Y(4), GOOD_LIGHT, extra='fill-opacity="0.6"')
+    f.arrow(ax.X(0) + 72, ax.Y(3.62), ax.X(math.log10(2)) - 4, ax.Y(3.62), GOOD, 2.5, 12)
+    f.tex(ax.X(0) + 80, ax.Y(3.62), r"\text{strong force}", "start", color=GOOD, bg=True)
     ax.line([(0, math.log10(KE2 * 1000)), (math.log10(3000), math.log10(KE2 * 1000 / 3000))], HOT, 3.5)
     ax.line([(0, math.log10(KT_KEV)), (math.log10(3000), math.log10(KT_KEV))], HEAT, 3, dash="10 6")
     rt = KE2 * 1000 / KT_KEV
