@@ -1,27 +1,31 @@
 VERDICT: PASS
-CONTENT-HASH: c24379ba79d6f049
+CONTENT-HASH: af00c5738a515fa3
 
 ## Blocking
 (none)
 
 ## Polish
-1. [Minor] *Energy scales: chemical and nuclear fuels* appears twice in a row: as the activity title (`scales-text`) and as the component's own heading. Fix: drop the activity `title`, or give the component no heading.
-2. [Minor] Sun–reactor table at 390: the row label breaks as "temper- / ature". Fix: give the first column a minimum width, or turn off hyphenation in tables (`hyphens: manual`).
-3. [Minor] "about $150$ million degrees" in the hook, the *Fusion in the laboratory* text, the `lab-vs-sun` model and `check-3`. Next to "$15$ million kelvin" and $1.5 \cdot 10^{8}\ \text{K}$ in the table, "degrees" has no unit. Fix: "$150$ million kelvin".
-4. [Minor] Figure `barrier`: the white-backed "strong force" label sits on the green well wall and the tunnelling arrowhead at $r \approx 3\ \text{fm}$. Fix: move it about 20 units down or left, into the well.
-5. [Minor] Reaction component, step 2 (shared `fx/reaction.js`): the two $\overline{v}$ labels sit on the edges of the "Coulomb barrier" box. Its inline chains also break after "$\cdot$" at 390 (for example "$= 0.799 \cdot$ / $17.6\ \text{MeV}$"). Fix: move the labels above the box, and brace the inline equalities. For science: the `reaction-describe` model answer says "about $10^{-15}\ \text{m}$", where the text says $3\ \text{fm}$.
+1. [Minor] Figure `barrier`: "strong force" now sits right of the well wall, at $r \approx 4$–$9\ \text{fm}$, under the tunnelling arrow. There it reads as a label for the region where the electric force dominates. Fix: put it inside or below the green well (left of $r = 3\ \text{fm}$, under the axis), or add a short leader to the well.
+2. [Minor] Reaction component, details box (shared `fx/reaction.js`, 390 px): the line "$= 0.018883\ \text{u} \cdot 931.494\ \text{MeV/u}$" loses its final "u" at the right edge. Fix: break before "$\cdot\ 931.494$".
+3. [Minor] Reaction component, step 4: the labels "$^{4}_{2}\text{He}$" and "$^{1}_{0}\text{n}$" sit almost touching under the flash. Fix: spread them about 10 units apart.
+
+The earlier items are resolved:
+- No duplicate scales heading.
+- "how hot" instead of "temper-ature".
+- "150 million kelvin" throughout.
+- The step-2 velocity labels clear the barrier box.
+- The new tunnelling step is clear.
 
 ## Checked
-- Fresh build and captures for this hash: contact sheets 1–2, top/intro at 390 and 1280.
-- I captured each figure myself at 390 and 1280: the hero (no text), `ppchain` and `barrier` (labels 14.3 px or larger).
-- Worked example with all steps at 390. The coal solution.
-- I stepped the D–T reaction component through all 6 steps at 390: velocity is blue, force red, and the $v_\text{n} : v_\alpha$ arrows are to scale.
-- Energy-scales chart at 390: the bars now line up with the log axis.
-- The order, match and say components. No KaTeX errors, no raw `$`, no overflow, no console errors.
-- French respellings: I checked *tritium* \tʁi.sjɔm\ against Wiktionnaire. The hash was the same at the end.
+- Fresh build and captures for this hash (stamp af00c5738a515fa3): contact sheet 1, `stage-selita-390-2` (the barrier figure), `fx-1-390-2`.
+- ppchain and barrier label sizes at 390 and 1280 (smallest 14.3 px).
+- I stepped the D–T component through all 7 steps at 390: velocity is blue and force red, the legend says the arrows compare speeds within one step only, and the tunnelling step is labelled.
+- Worked example at 390.
+- Playwright at 390 and 1280: no display overflow in the page, no KaTeX errors, no raw `$`, no horizontal scroll, no console errors.
+- Hash unchanged at the end.
 
 ## Scores
 illustrations 4 · typography 4 · English/French 4 · accessibility 4
 
 ## Shared issues
-- `fx/reaction.js`: the step-2 label overlap and the inline line breaks above. The energy-scales axis misalignment that the developer reported no longer shows at 390.
+- `fx/reaction.js`: Polish 2 and 3.
