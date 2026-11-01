@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 339ff2bfdf81959e
+CONTENT-HASH: 979dd4b15493dfaa
 
 ## Blocking
 (none)
 
-## Fixed
-- none needed
-
 ## Polish
-- None.
+(none)
 
 ## Checked
-Translation review of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish, after the W_g / E_el relabelling (figures.json, sim label from lang/en.json sims.fy3-11.wk). Script comparison of every number and inline formula (also inquiry/exit ticket by structure): no difference. Same physics: W_g = p dV, dU = Q - W_g with W = -W_g, W = Q1 - Q2, eta = W/Q1, COP = Q_indoors/E_el, worked example 38.0 % / 310 MW and 88.0 % / 60 MW. Symbols W_g, E_el, Q_indoors, Q_outdoors are the same in text, SVG labels, figure descriptions, inquiry and the sim's W label. No leftover W_k / E_s. check_i18n 0 errors.
+- Only change since the PASS at ee6b2ec: sims.fy3-11.oranssi_kaasun_tekema shortened to "Orange: work by the gas. Blue: work on the gas. Same colour, same energy." Physics identical: orange = work done by the gas (W_g, expansion), blue = work done on the gas (compression), equal colour for equal energy, as in the Finnish ("kaasun tekemä työ", "kaasuun tehty työ", "sama väri, sama energia").
+- Rest of the sim's English strings compared with the Finnish key by key: heating, piston return, cool first / same pressure, Q1, Q2, net work W, pressure after cooling, hot plate / cold water / insulation, symbol W_g for W_k. All match in meaning and signs; no number or formula altered.
+- The note is 14 words, so it stays a short caption and does not fold into the assumptions box; the model statement is unchanged.
+- check_i18n: 0 errors. Lesson text, inquiry, exercises and solutions are unchanged from the earlier PASS.

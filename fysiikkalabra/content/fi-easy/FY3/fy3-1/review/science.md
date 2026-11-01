@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8c2f8e45ac4e941d
+CONTENT-HASH: 04224f76769b52e5
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 8c2f8e45ac4e941d
 - none
 
 ## Checked
-- Delta since the passed version (commit 79af52c4 and the learn wording): fi-easy: values map 'Maa' -> 'Maa' added to exp-1 and exp-2, matching the Finnish source; names, numbers and physics unchanged. Sim legend uses the translated body name; G = mg, 9.81, 1.62, 24.8 m/s2 and all answers unchanged against the Finnish.
+- Translation delta since ee6b2ec (units set as inline LaTeX, ratio 'content/fi-easy/FY3/fy3-1/review.62 : 9.81 \approx 0.17 \approx 1 : 6$', one-kilogram / hundred-gram wording, red weight arrow, chart-scale caption) compared with the reviewed Finnish source: every number, unit, answer, feedback and the G = mg physics identical; 9.81, 3.71, 1.62 values and 3.5 N / 73 N / 440 N / 7.5 cm results unchanged. Ratio notation 1.62 : 9.81 is correct. aria-labels plain text, matching Finnish. check_i18n 0 errors.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 75fdafbd5a6efc25
+CONTENT-HASH: 0742cd113c6b891d
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 75fdafbd5a6efc25
 - none
 
 ## Checked
-- Teaching sequence (prediction, experiments with locked body or mass, conclusion) is unchanged and identical to the Finnish source. English experiment panels: body/Earth values map ('Maa' -> 'Earth', name 'celestial body') in exp-1 and exp-2; no Finnish word left in the English text. The Moon/Jupiter options come from the sim's select labels (lang/en.json), unchanged.
+- Translation delta compared with the Finnish source: teaching sequence, prediction/feedback structure and exercise levels unchanged; text reads naturally (English), no Finnish words left, values with units set as maths as in Finnish. Chart caption 'chart scale' clearer; weight arrow red consistent with the figure legend. check_i18n 0 errors.

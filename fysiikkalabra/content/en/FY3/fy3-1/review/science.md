@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 75fdafbd5a6efc25
+CONTENT-HASH: 0742cd113c6b891d
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 75fdafbd5a6efc25
 - none
 
 ## Checked
-- Delta since the passed version (commit 79af52c4 and the learn wording): English experiment panels: body/Earth values map ('Maa' -> 'Earth', name 'celestial body') in exp-1 and exp-2; no Finnish word left in the English text. The Moon/Jupiter options come from the sim's select labels (lang/en.json), unchanged. Sim legend uses the translated body name; G = mg, 9.81, 1.62, 24.8 m/s2 and all answers unchanged against the Finnish.
+- Translation delta since ee6b2ec (units set as inline LaTeX, ratio 'content/en/FY3/fy3-1/review.62 : 9.81 \approx 0.17 \approx 1 : 6$', one-kilogram / hundred-gram wording, red weight arrow, chart-scale caption) compared with the reviewed Finnish source: every number, unit, answer, feedback and the G = mg physics identical; 9.81, 3.71, 1.62 values and 3.5 N / 73 N / 440 N / 7.5 cm results unchanged. Ratio notation 1.62 : 9.81 is correct. aria-labels plain text, matching Finnish. check_i18n 0 errors.

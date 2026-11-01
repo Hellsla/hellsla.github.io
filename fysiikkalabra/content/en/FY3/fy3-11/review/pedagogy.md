@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 339ff2bfdf81959e
+CONTENT-HASH: 979dd4b15493dfaa
 
 ## Blocking
+(none)
 
 ## Polish
-- The sim readout shows `ΔV = 0,001 l` with a decimal comma in the English page (platform convention, as in other FY3 sims).
+- The sim readout still shows a decimal comma (e.g. ΔV = 0,001 l) in the English page (platform convention).
 
 ## Checked
-- Previous blocking item resolved: in the built page (Playwright, 1280 px) no visible text contains "sama paine" or "jäähdytys ensin"; both experiments' "Initial state" lines read "piston return = at the same pressure", and "Kept constant"/"Varied" name the parameter. The remaining occurrences in the HTML are data attributes and sim configuration, not shown.
-- The table row's varied value goes through `shown()` / `window.__v` ("sama paine" returns "at the same pressure"; lang/en.json sims.fy3-11.values has both entries); I did not drive the table row itself.
-- Same activity order, predictions, experiments, hints, mistakes, feedback, solutions and exit ticket as the Finnish; nothing added or dropped.
-- Learning path: retrieval, two predictions each tested by an experiment, conclusion, staged worked example, transfer task; the opening question is answered in the efficiency section; slot goals met.
-- Natural English; terms (efficiency, coefficient of performance, heat engine) consistent; units and symbols as in the Finnish.
-- Workload fits one lesson; optional items marked.
+- The shortened caption "Orange: work by the gas. Blue: work on the gas. Same colour, same energy." is clear, parallel in structure, and at 14 words remains a caption under the canvas rather than a folded second box; "by/on" carries the distinction the student must read off the colours, and colour is paired with the words, not alone.
+- Sim strings match the Finnish in meaning and register (buttons Heat/Reset/Return the piston/New cycle, status lines, cycle readouts); nothing added or dropped.
+- Rest of the lesson (predictions, experiments, feedback, worked example, exit ticket) unchanged from the earlier PASS; learning path and workload still fit one lesson.
