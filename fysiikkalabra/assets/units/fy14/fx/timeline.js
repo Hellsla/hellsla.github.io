@@ -5,7 +5,9 @@
    card shows the year and place, the text, the people (a short biography behind a disclosure), the sources and,
    when the event is about a device on the course map, "Show on the map" (the map unit's page with #f-<id>).
    Data on the element: {eras?: [era ids shown, default all], themes?: [theme ids], map?: "<map page>.html",
-   intro?: text, start_era?: era id selected first}. */
+   intro?: text, start_era?: era id selected first, ids?: [event ids shown, a
+   selection for one task], query?: search text filled in first}. Cards start closed (year, place and title);
+   a mark on the strip opens its card. */
 window.FX.timeline = (el, d, A) => {
   const { h, md } = A;
   const src = el.getAttribute('data-src');
@@ -17,8 +19,8 @@ window.FX.timeline = (el, d, A) => {
   const yr = (x) => String(x == null ? '' : x).slice(0, 4);   // a biography's ISO date shown as its year
   function build(data) {
     const eras = data.eras.filter((e) => !d.eras || d.eras.includes(e.id));
-    const all = data.events.filter((e) => eras.some((x) => x.id === e.era) && (!d.themes || d.themes.includes(e.theme))).sort((a, b) => a.year - b.year || String(a.date).localeCompare(String(b.date)));
-    let era = d.start_era || '', theme = '', text = '';
+    const all = data.events.filter((e) => eras.some((x) => x.id === e.era) && (!d.themes || d.themes.includes(e.theme)) && (!d.ids || d.ids.includes(e.id))).sort((a, b) => a.year - b.year || String(a.date).localeCompare(String(b.date)));
+    let era = d.start_era || '', theme = '', text = (d.query || '').toLowerCase();
     const idp = el.id + '-';
     const eraBar = h('div', { class: 'fx-steps', role: 'group', 'aria-label': 'Era' },
       [['', 'All eras']].concat(eras.map((e) => [e.id, `${e.title} (${e.from}–${e.to})`])).map(([id, t]) => {
@@ -29,6 +31,7 @@ window.FX.timeline = (el, d, A) => {
     const themeSel = h('select', { id: idp + 'theme' }, h('option', { value: '' }, 'All themes'), ...Object.entries(data.themes).filter(([k]) => !d.themes || d.themes.includes(k)).map(([k, t]) => h('option', { value: k }, t)));
     const q = h('input', { id: idp + 'q', type: 'search', autocomplete: 'off', placeholder: 'a name, a place, a word' });
     themeSel.addEventListener('change', () => { theme = themeSel.value; draw(); });
+    if (d.query) q.value = d.query;
     q.addEventListener('input', () => { text = q.value.trim().toLowerCase(); draw(); });
     const strip = h('div', { class: 'fx-tl-strip' });
     const count = h('p', { class: 'fx-msg', 'aria-live': 'polite' });
