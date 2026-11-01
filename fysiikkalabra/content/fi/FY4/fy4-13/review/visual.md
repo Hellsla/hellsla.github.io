@@ -1,21 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 7caf8e281c418c80
+VERDICT: PASS
+CONTENT-HASH: fd519394807ca743
 
 ## Blocking
-- [Critical] Koe 1 / Koe 2 simulation at 390 px (exp-exp-1-390-1, exp-exp-2-390-1) — in the experiment card the canvas is clipped (pulley and hanging mass cut off), its labels are oversized and overlap ("Tilannekuva" over $t$, "Voimakuvio: punnus" over $\overline{N}$/$\overline{G}_2$) and no force diagram is visible; sim-390 and lab-1280 are fine, so the embedding is at fault — Koe 1 asks the student to watch $\overline{T}_1$ and $\overline{G}_2$ change, impossible on a phone — resize the canvas and its label overlay to the card width and recapture (if it is a capture-timing artefact, the capture must wait for the resize).
-- [Major] figures `atwood` and `tilanne` (fig-6-390, fig-5-390, theory-1280-1/-2) — the short weight arrows start at the box centre and end at or just past the box edge: in "voimakuvio: kevyempi" $\overline{G}_1$ shows only as an arrowhead under the box, in "voimakuvio: punnus" $\overline{G}_2$ mostly lies inside the box. Comparing $T$ with $G$ is the figures' whole point, and at 390 px it cannot be read — keep the common scale but make the boxes smaller (or the scale larger) so every arrow extends clearly outside its box.
+(none)
 
 ## Polish
-- [Minor] lesson.md Kaava — "(kg)", "(N)", "(m/s²)" in plain text after the symbols; the experiment tables' headers mix plain "m/s" with maths — write $(\text{kg})$, $(\text{N})$, $(\text{m/s}^2)$.
-- [Minor] lesson.md Yleinen virhekäsitys and exit ticket 1 — "Ne vaikuttavat eri kappaleisiin mutta kuuluvat eri vuorovaikutuksiin" reads as if acting on different bodies argued against a pair → "Ne vaikuttavat eri kappaleisiin kuten voima ja vastavoima, mutta ne kuuluvat eri vuorovaikutuksiin: …". Also "$T$ supistuu pois, koska lanka on … sisäinen voima" → "$T$ kumoutuu, koska langan jännitysvoima on kappaleiden välinen sisäinen voima."
-- [Minor] inquiry.json pred-2, check-1, check-3 — "langan päissä roikkuu kappaleet, joiden…" → "langan päissä roikkuvat kappaleet, joiden…".
-- [Minor] inquiry.json exp-2 solution, Vastaus — "kolme merkitsevää numeroa kuten taulukon lukemissa, mutta erotuksella on vain kaksi…" contradicts itself → "$0{,}74\,\text{N}$ ylös. Erotuksessa desimaalien määrä ratkaisee: lukemat ovat sadasosan tarkkuudella, joten tulos annetaan sadasosan tarkkuudella."
-- [Minor] figure `atwood` — $\overline{a}$ is drawn beside the force diagrams too, while `tilanne`, `esimerkki` and the sim's "Mallin oletukset" keep velocity and acceleration in the tilannekuva only, because they are not forces; drop the two $\overline{a}$ arrows in the force-diagram column.
+- [Minor] lesson.md Kaava, "missä m_1 … (kg) … (m/s²)" — unit symbols in plain text ("(kg)", "(N)", "(m/s²)") while every other unit is LaTeX — write $(\text{kg})$, $(\text{m/s}^2)$.
+- [Minor] Esimerkki, Sijoitus (example-390-2) — the chain shows $a \approx 2{,}80$ and then uses $2{,}803$ without saying it is the unrounded value — write "$a = 2{,}803\,\text{m/s}^2$ (pyöristämätön)" or carry $a \approx 2{,}80$ and match Järkevyys.
+- [Minor] figures tilanne/esimerkki (fig-5-390) — label $m_2$ sits against the table leg and the pulley string leaves the wheel slightly to the right of its rim; move $m_2$ right of the weight.
+- [Minor] exp-1 at 390 (exp-exp-1-390-1) — the locked "Tilanne" select clips its text ("riippumass"); shorten the option label or let it wrap.
+- [Minor] Tiivistelmä bullet 3 — four inline fractions in two lines read dense at 390 px; split into two bullets (kärry ja punnus / kaksi riippuvaa).
 
 ## Checked
-- contact-1…6; fig-1/5/6/8-390; theory-1280-1/-2/-3
-- example-390-2; sim-390, sim-1280, lab-1280
-- exp-exp-1-390-1/-2, exp-exp-2-390-1; open-tarkista-1280-2/-3 (check-2, check-3, exit ticket)
+- Opened: top-390, intro-1280, fig-1, fig-5, fig-6, fig-8 (390), sim-390, sim-1280, lab-1280, exp-exp-1-390-1, example-390-1/2, theory-1280-1/2/3, stage-sovella-390-1, open-tarkista-1280-1, open-exit-1280, open-exercises-1280-1, -L2-3, -L3-1, contact-3.
+- Figure colours follow the convention (force red, velocity blue, acceleration orange); atwood arrows T1 > G1 and T2 < G2 are drawn so; the "virhe" figure is deliberately wrong and its description does not give the error away.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 2
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

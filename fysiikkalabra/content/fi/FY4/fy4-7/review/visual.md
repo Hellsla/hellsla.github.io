@@ -1,24 +1,21 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 688464c5a7f5edd4
 
 ## Blocking
-- [Major] inquiry.json exp-1–exp-4, generated "Alkutila" line (exp-exp-1-390-1, exp-exp-4-390-1, lab-1280-1) — the mass is plain text, "$m$ = 1 kg", and in Koe 4 "$m$ = 0.5 kg" with a decimal point. The speed is "3 m/s" although the card's own text says $3{,}0\,\text{m/s}$ and $0{,}50\,\text{kg}$ — wrong decimal mark in Finnish, a quantity outside LaTeX, and a precision that contradicts the instruction a line above — format select values like numeric ones (take the option label or pass the value through the numeric formatter in scripts/inquiry.py) so the line reads $m = 0{,}50\,\text{kg}$, $v_0 = 3{,}0\,\text{m/s}$.
+(none)
 
 ## Polish
-- [Minor] lesson.md Kaava, "$m g h = m g \cdot \tfrac{v^2}{2g} = \tfrac12 m v^2$" (theory-1280-2) — the inline chain wraps after "$mg\,\cdot$" at 1280 px — make this derivation step a display equation.
-- [Minor] figs ek-kuvaaja and pallo-ek (fig-4-390, fig-6-390) — the curve runs past the last gridline (beyond $4\,\text{m/s}$ / $8\,\text{J}$, beyond $6\,\text{m/s}$) — end it at the last gridline or extend the grid.
-- [Minor] Esimerkki, Järkevyys (example-390-2) — the two estimates merge into one box and the "ja" between them disappears, so the sentence jumps from "luvuilla" to "yhteensä" — keep the connector visible (e.g. "…$\approx 5\,\text{kJ}$. Potentiaalienergia on $E_\text{p} \approx …$").
-- [Minor] Finnish — "…muutoksella, ja se ei riipu nollatasosta" → "…muutoksella, eikä se riipu nollatasosta"; Tiivistelmä bullet 3 "jonka energia riippuu vain paikasta" is ambiguous → "ja johon liittyvä potentiaalienergia riippuu vain paikasta".
-- [Minor] simulation canvas (sim-390, sim-1280) — the $h$ axis "0" is half hidden by the ground strip — lift the label or the axis origin by a few pixels.
+- [Minor] ek-kuvaaja (fig 4) — the graph is for m = 1,0 kg but the mass appears only in the aria-label — add a small label $m = 1{,}0\,\text{kg}$ in the plot.
+- [Minor] nollataso (fig 5) — energy values and the $\Delta E_\text{p}$ arrow are green, which the palette reserves for a correct/stable state; energy is orange — consider the energy colour, or leave it as a consistent scale colour.
+- [Minor] Experiment "Alkutila" lines (exp-1..4 at 390) — generated "$v_0 = 1\,\text{m/s}$, $m = 1\,\text{kg}$" omit the decimal (",0") that the task text above uses ("1,0 m/s") — align significant figures.
+- [Minor] Simulation canvas — the cart sits over the axis "0" tick label at the ramp foot (sim-390, sim-1280).
+- [Minor] glossary says "lämpöenergiaksi" for mekaaninen energia, the lesson uses "sisäenergiaksi" throughout — for pedagogy/glossary: align the term.
 
 ## Checked
-- contact-1…6; top-390, top-1280, intro-1280 (hero labels v, v/2, v = 0, ¼h/¾h consistent with the text)
-- fig-1…fig-6-390 at full size: ramppi h:4h and v:2v to scale, polut, ek-kuvaaja (2,0 J / 8,0 J correct for 1 kg), nollataso to scale (3,9/−3,9 J), pallo-ek grid points readable
-- theory-1280-1…3 (figures beside text, display formulas, Tiivistelmä)
-- example-390-1/2 (aligned rows, rounding, order principle → formula → substitution → result → Järkevyys)
-- sim-390, sim-1280, lab-1280-1/2 (sticky panel scrolls by design; colours: velocity blue, energy bars orange/green/grey)
-- exp-exp-1-390-1, exp-exp-4-390-1 (canvas blank in these and tutki-390-1, shown in exp-2/exp-3: probably capture timing, worth a glance)
-- stage-herata-390, open-ennusta-1280-1, open-tarkista-1280-2, open-exit-1280
+- top-390, intro-1280, fig-1..6-390 (hero, ramppi, polut, ek-kuvaaja, nollataso, pallo-ek), fig-row/theory-1280-1..3
+- example-390-1/2, sim-390, sim-1280, lab-1280-1/2, exp-exp-1-390-1, stage-tutki-390-2, stage-herata-390, stage-sovella-390-2
+- open-ennusta-1280-1, open-tarkista-1280-1/2, open-exit-1280
+- Source lesson.md/inquiry.json read for language, LaTeX quantities (no plain number+unit found) and notation.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

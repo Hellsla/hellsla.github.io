@@ -2,22 +2,18 @@ VERDICT: FAIL
 CONTENT-HASH: 548a782b3164dea2
 
 ## Blocking
-- [Major] fy4-5-L1-01 solution voimakuvio (open-exercises-1280-1/2) — the diagram renders about 1100 px tall with labels about 50 px. With only two vertical forces and no `pinta`, it scales to the full width. It fills a screen and a half — cap the generated diagram's height at about 400 px.
-- [Major] fy4-5-L3-03 solution diagram (open-exercises-L3-1280-5) — $\overline{F}_\text{noste}$ and $\overline{G}$ both start at the centre on one vertical line. The $\overline{G}$ arrow lies on the noste shaft and reads as one double-headed line, and the noste arrow also crosses the drawn ceiling — the reader cannot see two separate forces — offset the two arrows sideways, as the lesson's heliumpallo panel does, and keep arrows clear of the ceiling hatching.
-- [Major] fy4-5-L2-03 and fy4-5-L2-01 solution diagrams (L2-1280-5, L2-1280-2) — the slanted force and its dashed components form a cluster about 40 px across at one corner. In L2-03 the $\overline{F}_x$ head overlaps $\overline{F}$'s head and the label $\overline{F}_y$ sits beside $\overline{N}$, far from its arrow. In L2-01 the label $\overline{T}_y$ is about 80 px from its short arrow — the components the solution relies on cannot be identified — give a slanted force a readable minimum length (with "eri mittakaavassa" noted, as L3-02 does) and place each component label at its own tip.
+- [Major] Level 2 task 3 (push 120 N at 30° downward), solution figure (L2-1280-4) — the arrows are degenerate: F is a stub, F_x and F_y collapse into arrowheads inside the box, F_μ is an arrowhead with no shaft, and the labels F, F_x, F_y and N collide — the diagram cannot be read, and F (120 N) is drawn shorter than F_μ (80 N) although F_x > F_μ in the solution — fix: give the figure the room the L1/L3 ones have (box smaller, arrows at least 30 px, scale F, F_x, F_μ in proportion, labels apart) or drop the components.
+- [Major] Level 2 task 1 (pulkka, 60 N, 30°), second figure in "Voimakuvio" of the solution (L2-1280-2) — same defect: T is shorter than F_μ and N although T (60 N) > F_μ (52 N), T_y is nearly invisible, and the labels N, T, T_x overlap — misleading for the very point (components vs force) — fix: redraw with true arrow proportions and separated labels, or reuse the larger model figure shown above it.
 
 ## Polish
-- [Minor] Sijoitus chains with a fraction (L2-03, L2-04, L3-02) — the auto-split puts the left side "$a$" or "$F_\mu$" half a line above its "=" — for the build (mathlayout.py): keep a short left side on the fraction's row.
-- [Minor] fy4-5-L1-02 solution — the heading "Kuvaajan lukeminen" names a force diagram as a graph — "Kuvion lukeminen".
-- [Minor] fy4-5-L1-05 solution diagram — the text says $40^\circ$ but the figure has no angle mark — add the arc with $40^\circ$.
-- [Minor] Vastaus follow-ups (L1-04, L1-05, L2-02, L3-01) render as a fragment, "Eli $6{,}4\cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa…" — write a full sentence, for example "Tulos on $6{,}4\cdot 10^{2}\,\text{N}$; …".
-- [Minor] fy4-5-L1-01 Vastaus — "$14{,}7\,\text{N} \approx 15\,\text{N}$" shows two answers in the answer box — give one value.
+- [Minor] Level 3 task 3 (helium balloon), solution figure — the ceiling hatch line cuts through F_noste and the box is only about 35 px high; enlarge it and keep the arrows clear of the hatch.
+- [Minor] Level 3 task 2 (kivi) — F_μ is drawn on top of the floor hatch; lift it a few pixels above the line.
+- [Minor] Level 1 task 1 — the answer is given twice ("14,7 N ≈ 15 N"); keep to one rounded value, as in the other tasks.
+- [Minor] Level 2 task 2 and 3 — long "kiihtyy … kiihtyvyydellä" phrasings ("kiihtyvyydellä 1,2 m/s²") are repeated; plain "kiihtyvyys on …" reads better.
 
 ## Checked
-- contact-4…6 to triage the exercise captures
-- open-exercises-1280-1, -2, -3 (ruutu grid figure: lengths match 4, 2½, 3 and 3 squares), -7, -8
-- open-exercises-L2-1280-2 (zoomed), -5; L3-1280-5 (zoomed)
-- remaining level 2–3 solutions (L1-04, L2-02, L2-04, L3-01 malli-hissi, L3-02) through contact sheets 5–6
+- Opened: open-exercises 1280 level 1 parts 1, 3, 4, 5; level 2 parts 1, 2, 4; level 3 parts 3, 4; contact-5 and contact-6 for the rest; enlarged the wall-book (L1-3, fine) and push (L2-3) figures; sovella 390 for virhe and hissi-a–d.
+- Not opened separately: level 1 parts 2, 6, 7; level 2 parts 3, 5, 6; level 3 parts 1, 2, 5 (seen on the contact sheets only).
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 3 · typography 5 · Finnish 4 · accessibility 4
