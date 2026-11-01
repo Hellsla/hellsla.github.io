@@ -1341,6 +1341,7 @@
     "velocity": "velocity {{dir}};"
   },
   "units": {
+    "home_sessions": "about {{n}} lessons",
     "home_count": {
       "one": "{{n}} unit available",
       "other": "{{n}} units available"
