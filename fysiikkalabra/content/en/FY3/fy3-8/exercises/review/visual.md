@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: aedf0ec0f4ee3b68
+VERDICT: PASS
+CONTENT-HASH: 58836752ed87edcc
 
 ## Blocking
-- [Major] exercises/exercises.json L1-03 "500.0 mm", L2-01 "50.0 mm", L2-02 "2.0 dm³", L2-03 "7.2 mm", L3-01 "75.000 mm"/"75.090 mm", L3-02 "50.0 mm" — numbers with units are plain sans text in the same sentence as maths-rendered ones ("0 °C", "12 · 10⁻⁶ 1/K"), so the typeface and spacing change mid-sentence (NOTES §1) — wrap each in inline `$…\,\text{unit}$`. (Same defect as in the fy3-10 exercises round 1; the Finnish text has it too.)
+(none) Round 1 Major resolved: numbers with units in exercise prose (6.0 m, 50.0 mm, 75.000 mm, 2.0 cm³ etc.) are now inline maths, typeface consistent within sentences.
 
 ## Polish
-- [Minor] L1-02/L2: minus before a maths value is set outside the maths ("−$27\,{}^\circ\text{C}$"); put the sign inside the maths.
+- [Minor] L1-02 etc.: check that the minus before a temperature is inside the maths (round 1 item, not re-verified in a capture).
+- [Minor] L2-04 answer box unit "10⁻⁶ 1/K" is plain text beside the input; acceptable for an input suffix.
 
 ## Checked
-- contact-4/5/6; open-exercises 1280-5 (L1-04/05 with solution), L2-1280-5 (L2-03/04 with the ΔL–T graph: axes, units, ticks and end markers fine), L3-1280-3 (solution chains, answer boxes, significant-figure notes). Chains are aligned and legible; the litre l is not a finding.
+- open-exercises-1280-1 (L1-01 with solution), -5 (litre problem; litre l is a teacher decision), L2-1280-1 (L2-01), L2-1280-5 (L2-03/04 with the ΔL–T graph: axes, units, ticks, markers fine), L3-1280-1 and -3 (shrink fit, bimetal strips). Chains aligned and legible; significant-figure notes clear.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish (English) 5 · accessibility 4

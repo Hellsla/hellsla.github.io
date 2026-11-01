@@ -1,17 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 65e21c153877bd61
+VERDICT: PASS
+CONTENT-HASH: 0588727484a780a3
 
 ## Blocking
-- [Major] exercises.json L3-03 and solutions.md — loss-power subscript $P_\text{l}$ next to $P_1$, $P_2$ in "(P_1 − P_l)t" — an upright "l" in a small subscript is nearly identical to "1" in the rendering, so the symbol reads as another — rename to $P_\text{loss}$ (or $P_\text{L}$).
-- [Major] exercises.json lines 6, 22, 30, 57, 65, 99 (L1-01, L1-03, L1-04, L2-02, L2-03, L3-03) — "0 °C" / "100 °C" typed as plain text in sentences whose other numbers are KaTeX (e.g. "0.030 kg ... at 100 °C") — two typefaces in one sentence (the same defect fixed in the lesson in round 3) — set as $0\,{}^\circ\text{C}$ or use words as the lesson did.
+(none) Round 1 Majors resolved: the loss power is now $P_\text{loss}$ (L3-03 given, principle, formula all legible, no longer confusable with 1); "0 °C" and "100 °C" in the prose are KaTeX and match the neighbouring numbers; "löyly" is gone.
 
 ## Polish
-- [Minor] L3-02 prompt — "löyly" left in an English text; write "steam (löyly)" or "making steam".
-- [Minor] L2-03 solution — "Estimate: 12 000/330 ≈ 36" fraction mid-sentence; end the sentence with it.
-- [Minor] L1-05 graph — the start point (0 kJ, −16 °C) is below the lowest tick; add a −20 tick.
+- [Minor] L1-05 graph — x tick labels "40 80 120 … 320" nearly touch at 664 px; the start point (−16 °C) is below the lowest tick (−10). Label every second tick and add −20.
+- [Minor] L3-03 principle — "(P − P_loss)t = rΔm" breaks across a line after "(P −"; keep the expression unbroken (non-breaking space or display).
+- [Minor] L2-03 solution — fraction "12 000/330 ≈ 36" mid-sentence is fine now, no change needed.
 
 ## Checked
-- open-exercises L1 (1-6), L2 (1-5), L3 (1-5) at 1280 px; melting-curve graph (axes, units, end points marked, flat part at grid crossings; description matches); crops of L3-03 formulas.
+- contact-4, 5, 6; open-exercises-1280-5 (L1-04 solution, L1-05 graph), L3-1280-1 (L3-01 solution), L3-1280-4 (L3-03 formulas and substitution); melting-curve graph: axes with units, end points marked, flat part at grid crossings.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2263e91e4536bee2
+CONTENT-HASH: f2b6f9c335faa267
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson Hyötysuhde and Tiivistelmä — "85–$90\,\%$" has the first number as plain text — write both numbers in maths.
-- [Minor] example Tulos at 390 px — inline "η₂ =" breaks after = — acceptable, optional.
-- [Minor] lesson Heat-engine paragraph and Tulos — a few sentences heavy for fi-easy ("Verrataan kuuman lähteen ja kylmän ympäristön lämpötilaeroa…") — shorten if revisited.
+- [Minor] lesson Hyötysuhde and Tiivistelmä — "85-$90\,\%$" has the first number as plain text — write both numbers in maths.
+- [Minor] example Tulos at 390 px — inline "η₂ =" breaks after = — optional.
+- [Minor] lesson heat-engine paragraph and Tulos — a few sentences heavy for fi-easy — shorten if revisited.
 
 ## Checked
-- contact-1..3,5,6; fig-2..5-390 (enlarged); sim-1280; example-390-2; theory-1280-2; open-exercises-1280-1/3; open-exercises-L3-1280-2
+- Delta: contact-4 (lab, theory, exercises), sim-390, lab-1280-1 (sim label now from translation key).
+- Bar label "ΔU + W_k" renders in LaTeX identical to before; Q and ΔU labels, axes, readout (decimal comma allowed) and legend line intact; layout of the simulation unchanged at 390 and 1280.
+- Fraction-row spacing and inline unit numbers in the lesson text checked on contact-4 (#41-#44).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

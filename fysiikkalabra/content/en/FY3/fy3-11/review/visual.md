@@ -1,16 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 59f8c6d98072df03
+VERDICT: PASS
+CONTENT-HASH: 339ff2bfdf81959e
+
+Round 2 (round-1 report was for hash 59f8c6d98072df03).
 
 ## Blocking
-- [Major] fig-2 piston-work, fig-5 pv-work, fig-4 heat-pump, simulation readout — Finnish subscripts left in English: $W_\text{k}$ (text says $W_\text{g}$), $E_\text{s}$ (text says $E_\text{el}$), readout "ΔU + W_k" — the symbols contradict the text and formulas — use g and el in figure labels and the simulation.
+(none) Round-1 Major resolved: fig-2 and fig-5 now read W_g, fig-4 and the formula block read E_el, the simulation readout reads "ΔU + W_g"; the piston-return select reads "at the same pressure" and the experiment tables and initial-state lines use the same wording. Nothing else broke.
 
 ## Polish
-- [Minor] fig-4 — "heat from outdoor air" label crowds the pump box — move it left/down.
-- [Minor] simulation — near-duplicate collapsibles "Assumptions of the model and explanation" and "Assumptions of the model" — merge.
-- [Minor] Efficiency/Summary — "85–$90\,\%$" has the dash outside the maths — put the range in one `$...$`.
+- [Minor] fig-4 — "heat from outdoor air Q_outdoors" label sits tight against the pump box and the bottom of the frame; move it down/left a little.
+- [Minor] simulation (sim-390) — "Assumptions of the model and explanation" and "Assumptions of the model" are still near-duplicate collapsibles; merge.
+- [Minor] sim canvas — "ΔV = 0,001 l" uses decimal comma (accepted for simulations) while the page text uses points; no change asked.
 
 ## Checked
-- contact-1; fig-1..5-390; sim-1280; theory-1280-1; example-390-2; open-exercises-1280-1, -3, -4, L2-3, L3-1.
+- fig-1..5-390; sim-1280, sim-390; lab-1280-1, -2 (both experiments, tables); theory-1280-1, -3 (figures beside text, formula cards); example-390-2 (fraction chains spaced).
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

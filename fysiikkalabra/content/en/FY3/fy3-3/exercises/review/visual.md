@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: ee18ed0fb9e6bfd6
+VERDICT: PASS
+CONTENT-HASH: 062a2a1bcfaa894b
 
 ## Blocking
-- [Major] fy3-3-L2-04 (capture #56, exercises.json "unit") — the answer-unit box shows the Finnish word "kertaa" — a Finnish word left in the English page — set the English unit to "times" (or leave it empty and say "times" in the prompt).
+(none) Round 1 Major resolved: the L2-04 answer box now reads "times" (capture fy3-3-open-exercises-L2-1280-5), the exercises.json unit is "times", and no "kertaa" remains.
 
 ## Polish
-- [Minor] L2-04 solution — "Times. Whole degrees give…" reads like a stray fragment — rephrase.
+- [Minor] L2-04 solution — the earlier stray fragment "Times. Whole degrees give…" is not visible in the current capture; nothing further.
 
 ## Checked
-- contact-4/5 (exercises L1–L3 open, answers and solutions), figure exercise L2-03 graph (#54), English alt text via figures.json.
+- review/shots/fy3-3-open-exercises-L2-1280-3, -4, -5 (L2-03 extrapolation graph, its solution, L2-04 answer box and solution); grep for "kertaa" in exercises. The rest of the set is unchanged (mode none).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 3 · accessibility 4
+illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

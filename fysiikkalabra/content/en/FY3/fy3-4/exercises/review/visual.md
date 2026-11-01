@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2635a6898134e622
+CONTENT-HASH: d888d837342119d7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] none of substance; "Lake Päijänne" is a proper noun.
+- [Minor] L2-03 graph — the mid-points at 5 m are off the grid crossings; harmless, but a note "read at grid crossings" in the prompt would help.
+- [Minor] L3-01 solution — the A = G/p_max = mg/p_max chain stacks two tall fractions with tight spacing; acceptable.
+- [Minor] "Lake Päijänne" is a proper noun, fine.
 
 ## Checked
-- contact-4/5: levels 1–3, answers, solutions, two-liquids graph (#53). No Finnish words in units or text.
+- contact-4, contact-5 (shots under fy3-4/review/shots, stamp matches the exercises hash); open-exercises-1280-4, L2-1280-3, L3-1280-1. Units are set as maths in prose, no Finnish words, fractions in chains are spaced, two-liquids graph has axes, units and distinct data points.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
