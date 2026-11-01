@@ -110,12 +110,13 @@ window.FX.map = (el, d, A) => {
         markers[key] = m;
       });
     };
-    form.addEventListener('input', draw); form.addEventListener('change', draw);
+    form.addEventListener('input', draw);   // 'change' only for controls without 'input': a search box's change on blur would
+    form.addEventListener('change', (e) => { if (e.target.type !== 'search' && e.target.type !== 'text') draw(); });   // rebuild the list under a tap
     form.addEventListener('reset', () => setTimeout(() => { anyYear.checked = true; draw(); }, 0));
     draw();
     const want = (location.hash.match(/^#f-([\w-]+)$/) || [])[1];
     const f = want && F.find((x) => x.id === want);
-    if (f) { anyYear.checked = true; draw(); show(f, false); el.scrollIntoView(); }
+    if (f) { anyYear.checked = true; draw(); show(f, false); requestAnimationFrame(() => panel.scrollIntoView({ block: 'start' })); }
     if (map) setTimeout(() => map.invalidateSize(), 200);
   }
 };
