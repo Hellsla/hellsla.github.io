@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 378e4d7ef17c1e99
-
-Delta review over the audit's PASS (ed07fb32bd2bf3da): L1-05 replaced by figure task melting-curve (s from the plateau), LaTeX units elsewhere.
+CONTENT-HASH: 8b0e2df23d46ded5
 
 ## Blocking
 - none
+
 ## Polish
-- solutions.md:49 — "333 kJ/kg, kolme merkitsevää numeroa" gives no reason, and m = 0,60 kg has two: write 3,3 · 10² kJ/kg (330 is inside the tolerance) or justify the third figure.
-- solutions.md:49 says 323…343 kJ/kg is accepted, but tolerance 0,03 on 333 accepts 323,01…342,99, so both stated ends fail. The readings are exact, so this is only cosmetic.
-- exercises.json:57 — "−$18\,...$": the minus sits outside the maths; put it inside $...$.
+- Carried over, still cosmetic: solutions.md L1-05 gives 3 sf with no reason and says 323...343 is accepted while tolerance 0,03 on 333 gives 323,01...342,99.
+
 ## Checked
-- Recomputed: Q = 220 − 20 = 200 kJ, s = 200 kJ / 0,60 kg = 333 kJ/kg; the table value is 334; answers.py 333,3.
-- Figure melting-curve: physically consistent, since 2100 · 0,60 · 16 = 20,2 kJ ≈ 20 kJ to warm the ice and 80 kJ / (4190 · 0,60) = 31,8 K after melting (code 31,9). Plateau ends on 20 kJ × 10 °C grid crossings; no part is labelled.
-- Melting at constant 0 °C (pure ice, normal pressure) explained correctly; the steeper ice and gentler water slopes agree with c_ice < c_water.
+- Typesetting round: 0-asteinen / 100-asteinen replaced by $0\,{}^\circ\text{C}$:n lämpöinen etc. (L1-01, L1-03, L1-04, L2-02, L2-03, L3-01 task and solutions), "10,0 minuutissa" -> $10{,}0\,\text{min}$:ssa (L3-03), minus inside maths in L2-02. No number, answer, unit or tolerance changed.
+- Recomputed all 12 in one script: 400,8 kJ; 0,904 MJ; 15,03 MJ; 67,8 kJ; s = 200/0,60 = 333 kJ/kg; 9,42 min; 278,85 kJ; 35,9 kg; 0,938 MJ; 9,68 °C; 27,0 K; 2,264 MJ/kg. All match.
+- Physics: constant T during change of state for pure water at normal pressure; ice case checks (36,7 kJ juice vs 20 kJ to melt) right; the two-power subtraction removes the equal loss power; single runs overestimate r. Melting-curve figure consistent (20 kJ warms 0,60 kg ice 16 K).

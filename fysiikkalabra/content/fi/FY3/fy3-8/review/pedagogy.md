@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6909041be653193e
+CONTENT-HASH: 40aaaa15b5d2794f
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 6909041be653193e
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+- Delta: identity values map in exp-1/exp-2 only; Finnish text of the experiments unchanged, no task, number or figure touched. Learning goals parallel -maan/-mään from the earlier pass.

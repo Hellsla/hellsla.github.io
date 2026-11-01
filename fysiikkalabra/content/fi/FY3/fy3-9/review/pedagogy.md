@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 85aedb31a7c8dc29
+CONTENT-HASH: d42131f792a90753
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 85aedb31a7c8dc29
 - none
 
 ## Checked
-Delta over the passed version: figure now fits (-273 C label inside viewBox at y 599.5-628.5), aria-label and description unchanged and still give the data without clipping; learn goals now complete 'Tällä tunnilla opit' grammatically with the same three goals. Lesson sequence, activities and exercises untouched.
+Delta review. The identity `values` map only changes how the Initial state line prints the mode (tilanmuutos: isoterminen), which reads as natural Finnish and matches the glossary terms. Experiment design, locks, min 3/2 readings, predictions and feedback unchanged; no answer disclosed earlier; workload unchanged.

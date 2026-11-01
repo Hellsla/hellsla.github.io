@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b797c64f66fbfada
+CONTENT-HASH: 75fdafbd5a6efc25
+
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- none
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Teaching sequence (prediction, experiments with locked body or mass, conclusion) is unchanged and identical to the Finnish source. English experiment panels: body/Earth values map ('Maa' -> 'Earth', name 'celestial body') in exp-1 and exp-2; no Finnish word left in the English text. The Moon/Jupiter options come from the sim's select labels (lang/en.json), unchanged.

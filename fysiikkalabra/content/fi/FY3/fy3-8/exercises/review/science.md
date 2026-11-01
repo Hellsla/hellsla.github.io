@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e84f30aeda6e6c9c
-
-Delta review over the audit's PASS (95f447a9c89c7a99): L2-04 replaced by figure task length-graph (α of a beam), LaTeX units elsewhere.
+CONTENT-HASH: b9f5870e18aa53bc
 
 ## Blocking
 - none
+
 ## Polish
-- solutions.md:90 Järkevyys — "Millimetrin murto-osa metrien pituudella" does not fit the 3,0 mm read here. Say "noin 0,6 mm metriä kohti 50 K:n muutoksella" or drop the sentence.
-- solutions.md:89 says 11,6…12,4 is accepted, but tolerance 0,03 on 12 accepts 11,64…12,36. The readings are exact, so this is cosmetic; narrow the stated range or set tolerance 0.034.
-- exercises.json:14 and :56 — the minus of −27 °C and −22 °C sits outside the maths ("−$27\,...$"); put it inside $...$.
+- L1-04 / L3-03: "$200{,}0\,\textsf{l}$:n" is a sans-serif l; fine, but the answer unit is plain "l" (cosmetic).
+
 ## Checked
-- Recomputed: α = 0,0030 m / (5,00 m · 50 K) = 12 · 10⁻⁶ 1/K → steel; aluminium would give 5,75 mm and copper 4,25 mm (checked); answers.py 12,0.
-- Figure length-graph: (20 °C; 0) and (70 °C; 3,0 mm) on 10 °C × 0,5 mm grid crossings; the description names no α or material.
-- ΔT = 50 K is within the about 100 K range where the linear formula holds (guardrail); two significant figures from the 3,0 mm reading.
+- Typesetting round changed only prose forms of numbers with units: 500,0 mm, 200,0 l, 50,0 mm, 2,0 dm³, 7,2 mm, 75,000/75,090 mm, 50,0 mm, 20,0 l and the minus of -27 and -22 °C moved inside the maths. Every value is identical; answer, unit, tolerance fields unchanged; solutions.md unchanged.
+- Recomputed all 12 in one script: 2,88 mm; -51,75 mm; 0,850 mm; 0,84 l; 0,3375 mm; 52,1 m; 3,02 cm³; 36 °C; alpha = 12 (steel) from the graph; 120 °C; 20 µm; 475-18 = 457 -> 460 cm³. All match exercises.json and solutions.
+- Physics: expansion formulas used within about 100 K; liquid gamma near 20 °C; gamma = 3 alpha for solids; hole grows with the body; bimetal bends toward the steel (less expanding) side. Rounding reasons right.
+- Figure length-graph: points (20; 0) and (70; 3,0) on grid, no alpha given.

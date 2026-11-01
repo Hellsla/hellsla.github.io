@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f1b6106e41b20a98
+CONTENT-HASH: 062a2a1bcfaa894b
 
 ## Blocking
-(none left; list what you fixed under Fixed)
-
-## Fixed
-- (none needed)
+(none)
 
 ## Polish
-- (none)
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): questions ask the same thing at the same level, the English reads naturally, step labels match lang/en.json, terms consistent with the lesson (temperature in kelvins, slope, extrapolation, gauge pressure).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (LaTeX temperatures, new figure task L2-03 with answer 47.5 and tolerance 0.08) and solutions.md (new L2-03 solution, wording fixes in L1-02, L2-04, L3-03); answers, units and tolerances match the Finnish.
+- Translation review of the exercise set against the reviewed Finnish: all 12 task texts, answers, tolerances and units match (294 K, 77, -196, 25 K, -270, 60, 102 kPa, 47.5 kPa, 4.0, 321 kPa, 127, -127 degC); the L2-04 answer unit is now "times" (was Finnish "kertaa"); decimal points, inline-LaTeX values with units and symbols as in the Finnish; solutions.md follows the Finnish step for step (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness), with the same significant-figure reasoning and the same difficulty sequence. Natural English; no Finnish words left.

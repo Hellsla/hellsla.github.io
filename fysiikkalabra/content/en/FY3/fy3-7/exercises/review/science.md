@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 65e21c153877bd61
+CONTENT-HASH: 0588727484a780a3
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- (none needed: translation matches the Finnish; no blocking issues found)
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json, solutions.md (all 12 tasks, every step). Science: every statement, number, unit, formula, sign and causal claim compared against the Finnish; chapter references against courses.json; decimal point and \cdot; sim labels (Heat/Reset/melts/boils) against lang/en.json sims.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, exercises/solutions.md (incl. the new figure task fy3-7-L1-05 with the melting-curve figure, answer 333 kJ/kg, accepted 323...343).
+- Translation review of the exercise set against the reviewed Finnish: all 12 tasks have the same data, numbers with units (inline LaTeX), answers (401 kJ, 0.9 MJ, 15 MJ, 68 kJ, 333 kJ/kg, 9.4 min, 280 kJ, 36 kg, 0.94 MJ, 9.7 degC, 27 K, 2.26 MJ/kg), tolerances and level order. I recomputed every answer from the task data; solutions.md follows the Finnish step by step with the same physics (no cmDeltaT during a change of state, latent heat, two-stage sums, difference method in L3-03 with the loss power cancelling). Natural British English; symbols P_loss, m_v, c_ice; no Finnish words left (löyly removed).

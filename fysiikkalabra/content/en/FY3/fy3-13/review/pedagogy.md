@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1826ca01b35cc850
+CONTENT-HASH: d1f1fb338173b790
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Teaching sequence (opening question, predictions, investigation, theory, worked example, checks, exit ticket) and structure of inquiry.json/exit-ticket.json equal the Finnish source.
-- Wording of prompts and feedback keeps the same skill and demand; no answer disclosed early by the translation.
-- English is natural; no Finnish words in text, units or experiment names; decimal points and symbols as in the Finnish.
-- Delta since last pass is typesetting only (sign placed inside $...$); no change to demand or sequence.
+- Delta review: label widening in two figures only; no change to text, demand or sequence.
+- Teaching sequence, demand, feedback and structure equal the Finnish; no answer disclosed early; English natural.

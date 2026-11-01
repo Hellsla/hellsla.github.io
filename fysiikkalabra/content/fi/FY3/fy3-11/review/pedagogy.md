@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3ed8319b2e02b3ee
+CONTENT-HASH: 24f3551fe9d8cba8
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 3ed8319b2e02b3ee
 - none
 
 ## Checked
-Delta: typesetting only plus learn-goal verbs (laskemaan, selittämään). Meaning, order and feedback logic unchanged; units now spaced consistently (\, before units, decimal {,}, \cdot). Exit-ticket answer reads as one equation 0,30 · 60 kW = 18 kW. Nothing here affects staging, prediction or experiment design.
+Judged the change since the passed version: only the source of the W_k label in the sim moved to the language file with identical Finnish/TeX output; no visible change on the page, controls, experiments, wording or workload. Inquiry tests (65 passed) and layout checks at 360/768/1280 px ok, so the earlier pedagogy PASS stands.
