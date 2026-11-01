@@ -33,7 +33,7 @@
     const unitTex = u ? '\\,' + (u === '%' ? '\\%' : '\\text{' + u + '}') : '';
     return '$' + n + unitTex + '$';
   };
-  const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); };
+  const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); if (window.flGlueMath) window.flGlueMath(el); };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
 
