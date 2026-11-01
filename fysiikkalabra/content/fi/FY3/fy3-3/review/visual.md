@@ -1,20 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 9d3ad72f000cfde4
+VERDICT: PASS
+CONTENT-HASH: 987fd85d1a533a05
 
 ## Blocking
-- [Major] Tarkista task 3 (inquiry.json check-2), solution "Sijoitus" (capture open-tarkista-1280-3) — `\theta_0 = 27\,°C - \dfrac{100}{\tfrac13\,\tfrac{1}{°C}}` sets a \tfrac inside a \dfrac denominator: the fraction-in-fraction renders at sub-script size and is cramped and hard to read (also `\tfrac{1}{°C}` in Muunnokset drops below the baseline) — a student cannot follow the key step of the extrapolation — write the slope as `k = 0{,}33\,\tfrac{1}{{}^\circ\text{C}}` (or `\tfrac13\,{}^\circ\text{C}^{-1}`) and the step as `\theta_0 = 27\,{}^\circ\text{C} - 100 \cdot 3\,{}^\circ\text{C}`, or take the unit out of the denominator.
 
 ## Polish
-- [Minor] Tarkista hint 2 and the check-2 solution — `27\,\text{°C}` renders a small text degree sign unlike `{}^\circ\text{C}` everywhere else — use `{}^\circ\text{C}`.
-- [Minor] sim-390 / sim-1280 — the canvas labels (600 K, 100 K, V) are about 8 px at 390 px, and the readout shows "p ≈ 0" or a low value just after loading while "teoria 100" is shown; ")," wraps onto its own line at 390 px — larger canvas type; settle the first reading.
-- [Minor] Example, "Pystyakseli…" paragraph and Vaihe 1 — "7–8 kPa" and "−300 °C:n" can break at the dash, so "–8" can read as a negative number — keep the range together (non-breaking).
-- [Minor] Prose numbers with units (`90,0 kPa`, `2,0 dm³`, `120 kPa`) are plain text beside KaTeX `°C`, so two typefaces share one sentence — set them as inline maths (NOTES §1).
+- [Minor] Tarkista check-2 solution, Muunnokset/Sijoitus — the unit `\tfrac{1}{°C}` is still small beside the `\tfrac13` and the hint-2 `27\,\text{°C}` is a text degree sign unlike `{}^\circ\text{C}` elsewhere — use `{}^\circ\text{C}`; for the unit write `\text{°C}^{-1}`.
+- [Minor] sim-390 / sim-1280 — canvas labels about 8 px at 390 px; first reading just after load looks unsettled — larger canvas type.
+- [Minor] Example, "Pystyakseli…" and Vaihe 1 — "7–8 kPa" and "−300 °C:n" can break at the dash — non-breaking.
+- [Minor] Prose numbers with units (`90,0 kPa`, `2,0 dm³`) are plain text beside KaTeX — set as inline maths.
 
 ## Checked
-- contact-1…4; fig-1…6-390 (hero, system, micro-model, kelvin-scale, scene, extrapolation: all legible, no clipping, scale figure is to scale); top-390, intro-1280, theory-1280-1/2, fig description text.
-- example-390-1/2 (table scrolls by design; aligned rows read well), sim-390, sim-1280, lab-1280, exp-exp-2-390.
-- open-ennusta-1280-1 (models layout OK), open-tarkista-1280-2/3, open-exit-1280 via contact-4.
-- Figure descriptions give the same information as the figures.
+- Round 2. Round-1 Blocking (nested fraction): open-tarkista-1280-3 shows k = 100/(300 °C) = 1/3 · 1/°C and θ0 = 27 °C − 100 · 3 °C chain, readable, resolved.
+- contact-4 (ennusta, tarkista, exit ticket, tasks) and contact sheets overall: layout intact, no clipping.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

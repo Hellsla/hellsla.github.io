@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 449906b56c123714
+VERDICT: PASS
+CONTENT-HASH: b2dff39ca08bc6e2
 
 ## Blocking
-- [Major] exercises.json L1-03, L3-02, L3-03 — numbers with units and a calculation are plain text with Unicode superscripts beside maths ("20,0 m²", "(1 GWh = 3,60 · 10¹² J)", "1 kt = 10⁶ kg", "0,950 · 0,400 = 0,380"); the sans font differs from the maths, and "10¹² / J)" breaks across a line at 390 px — house rule: number with unit in prose is maths — fix: $20{,}0\,\text{m}^2$, $1\,\text{GWh} = 3{,}60 \cdot 10^{12}\,\text{J}$, $1\,\text{kt} = 10^{6}\,\text{kg}$, $0{,}950 \cdot 0{,}400 = 0{,}380$.
 
 ## Polish
-- [Minor] figure fy3-15/chain-bars — P3 bar is blue while the lesson uses navy for electricity and orange for heat flow; gridlines every 50 MW but ticks only every 100 — use the lesson's colour, label or drop the extra lines.
-- [Minor] L3-02 solution Järkevyys — nested \tfrac with J/kg and powers of ten is tiny; use \dfrac.
-- [Minor] L1-02/L2 tasks — dimensionless values (0,910, 0,380) plain in tasks, maths in solutions; unify.
+- [Minor] L1-03, L3-02, L3-03 tasks — dimensionless values ("0,210", "0,380", "0,400", "0,40") are plain sans in the prose but maths in the solutions; set them in maths.
+- [Minor] L3-02 task — "(1 GWh = 3,60 · 10^12 J)" wraps after "=" at 390 px; keep the equation in one maths span with a non-breaking join.
+- [Minor] Figure fy3-15/chain-bars (round 1): P3 bar colour versus the lesson's colours and the extra gridlines; still open from round 1.
+- [Minor] L3-02 solution Järkevyys — nested fractions with J/kg are small; use \dfrac.
 
 ## Checked
-- open-exercises 1280 parts 1, 3, 4, 5 (L1); L2 parts 1, 3; L3 parts 1–4; stage-exercises-390; chain-bars figure in L1-04.
-- Solutions' chains aligned at "=", fractions, units upright, \cdot used; no clipping.
+- Round 1 Blocking (plain units and Unicode superscripts in L1-03, L3-02, L3-03): resolved; "20,0 m²", "1 GWh = 3,60 · 10^12 J", "1 kt = 10^6 kg", "0,950 · 0,400 = 0,380" now render as KaTeX with upright units.
+- open-exercises-1280-2, -3 (L1), L3-1280-1, -2, -3; stage-exercises-390. Solution chains aligned at "=", nothing clipped, layout intact.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
