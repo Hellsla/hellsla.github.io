@@ -143,6 +143,11 @@
       "names": {
         "m": "massa m",
         "body": "taivaankappale"
+      },
+      "values": {
+        "body": {
+          "Maa": "Maa"
+        }
       }
     },
     {
@@ -180,6 +185,11 @@
       "names": {
         "m": "massa m",
         "body": "taivaankappale"
+      },
+      "values": {
+        "body": {
+          "Maa": "Maa"
+        }
       }
     },
     {

@@ -88,8 +88,8 @@ In a condensing power plant the chain is fuel, boiler, turbine and condenser, ge
   <foreignObject x="4" y="316" width="148" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$40\,\text{MW}$</div></foreignObject>
   <foreignObject x="372" y="290" width="224" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{condenser}$</div></foreignObject>
   <foreignObject x="372" y="328" width="224" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$248\,\text{MW}$</div></foreignObject>
-  <foreignObject x="446" y="160" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{generator}$</div></foreignObject>
-  <foreignObject x="446" y="196" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{and transformer}$</div></foreignObject>
+  <foreignObject x="446" y="160" width="154" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{generator and}$</div></foreignObject>
+  <foreignObject x="446" y="196" width="154" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$\text{transformer}$</div></foreignObject>
   <foreignObject x="446" y="232" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$12\,\text{MW}$</div></foreignObject>
   <path d="M20,386 H60 M20,378 V394 M60,378 V394" stroke="#1f2933" stroke-width="2.5" fill="none"/>
   <foreignObject x="70" y="368" width="200" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$=100\,\text{MW}$</div></foreignObject>

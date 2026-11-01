@@ -162,6 +162,12 @@
         "Vml": "tilavuus V",
         "Tc": "θ"
       },
+      "values": {
+        "mode": {
+          "isoterminen": "isoterminen",
+          "isobaarinen": "isobaarinen"
+        }
+      },
       "units": {
         "Vml": "ml",
         "Tc": "°C"
@@ -197,6 +203,12 @@
         "mode": "tilanmuutos",
         "Vml": "tilavuus V",
         "Tc": "θ"
+      },
+      "values": {
+        "mode": {
+          "isoterminen": "isoterminen",
+          "isobaarinen": "isobaarinen"
+        }
       },
       "units": {
         "Vml": "ml",

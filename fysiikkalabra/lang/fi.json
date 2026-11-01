@@ -493,7 +493,8 @@
       "kylma_vesi": "kylmä vesi",
       "eriste": "eriste",
       "kierros_2": "$\\text{kierros}$",
-      "lammitys_2": "$\\text{lämmitys}$"
+      "lammitys_2": "$\\text{lämmitys}$",
+      "wk": "W_\\text{k}"
     },
     "fy3-14": {
       "sekoita": "Sekoita",

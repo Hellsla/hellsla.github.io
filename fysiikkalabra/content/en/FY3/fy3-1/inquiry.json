@@ -142,7 +142,12 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "taivaankappale"
+        "body": "celestial body"
+      },
+      "values": {
+        "body": {
+          "Maa": "Earth"
+        }
       }
     },
     {
@@ -179,7 +184,12 @@
       "min": 2,
       "names": {
         "m": "mass m",
-        "body": "taivaankappale"
+        "body": "celestial body"
+      },
+      "values": {
+        "body": {
+          "Maa": "Earth"
+        }
       }
     },
     {
