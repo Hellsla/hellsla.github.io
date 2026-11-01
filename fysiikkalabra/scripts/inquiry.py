@@ -93,6 +93,7 @@ def _check_choice(a, path, errs):
     if r is not None:
         if not isinstance(r, dict) or not isinstance(r.get("after"), str): errs.append(f"{path}.reveal: {{\"after\": \"<experiment or theory id>\", \"min\": n}}")
         elif "min" in r and (not isinstance(r["min"], int) or r["min"] < 1): errs.append(f"{path}.reveal.min: a positive integer")
+        elif "pending" in r and (not isinstance(r["pending"], str) or not r["pending"].strip()): errs.append(f"{path}.reveal.pending: the text shown while the feedback waits (e.g. where the evidence is)")
     if "justify" in a and not isinstance(a["justify"], bool): errs.append(f"{path}.justify: true or false")
     if a.get("layout") not in (None, "list", "models", "figures"): errs.append(f"{path}.layout: \"list\", \"models\" or \"figures\" (each option a figure)")
 
@@ -337,7 +338,7 @@ def choice_html(a, md, lid, aid):
     attrs = f' data-reveal="{esc(reveal["after"])}" data-reveal-min="{reveal.get("min", 1)}"' if reveal else ""
     justify = (f'<label class="justify">{T("inquiry.justify")}<textarea rows="2"></textarea></label>' if a.get("justify") else "")
     sol = f'<div class="solution-text">{md(a["solution"])}</div>' if a.get("solution") else ""
-    pending = f'<p class="pending" tabindex="-1" data-theory="{esc(T('inquiry.pending_theory'))}" hidden>{T("inquiry.pending")}</p>' if reveal else ""
+    pending = f'<p class="pending" tabindex="-1" data-theory="{esc(reveal.get('pending') or T('inquiry.pending_theory'))}" hidden>{esc(reveal.get("pending")) if reveal.get("pending") else T("inquiry.pending")}</p>' if reveal else ""
     return (f'<fieldset class="choice {esc(a.get("layout", "list"))}"{attrs}><legend>{legend_html(inline(md, a["prompt"]))}</legend>{fig_of(a)}{sol}'
             f'<ul class="choices">{opts}</ul>{justify}<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div>'
             f'{pending}<output aria-live="polite"></output></fieldset>')
