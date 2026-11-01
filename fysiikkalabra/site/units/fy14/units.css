@@ -401,8 +401,7 @@ figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}
 /* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
    (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
 @media (min-width:80rem){
-  .act-theory{display:flow-root}
-  .act-theory>figure.unit-photo:not(:has(+ .fx-wide, + .fig-row, + .example, + .fx-map, + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
+  .act-theory>figure.unit-photo:not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
   details .activity.act-theory>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
-  .act-theory>.fx-wide,.act-theory>.fig-row,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline{clear:right}
+  .act-theory>.fx-wide,.act-theory>.fig-row.side,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline,.act-sim,section.stage,.unit-credits{clear:right}
 }
