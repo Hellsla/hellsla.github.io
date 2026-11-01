@@ -159,34 +159,14 @@ def _rot(ang, u, v):
     return (u * c - v * s, u * s + v * c)
 
 
-def _cross(p, q, a, b):
-    """Where the segment a-b crosses the surface p-q, as a distance from p, or None."""
-    d1 = (q[0] - p[0], q[1] - p[1]); d2 = (b[0] - a[0], b[1] - a[1])
-    den = d1[0] * d2[1] - d1[1] * d2[0]
-    if abs(den) < 1e-9: return None
-    t = ((a[0] - p[0]) * d2[1] - (a[1] - p[1]) * d2[0]) / den
-    u = ((a[0] - p[0]) * d1[1] - (a[1] - p[1]) * d1[0]) / den
-    if not (0 < t < 1 and 0.02 < u < 0.98): return None
-    return t * math.hypot(*d1)
-
-
-def _surface(f, p, q, solid, gaps=()):
-    """A contact surface from p to q (figure coords), hatched on its solid side (unit vector solid, y up). An arrow
-    that passes through the surface (a force from the centre, such as buoyancy under a ceiling) gets a gap of its own."""
+def _surface(f, p, q, solid):
+    """A contact surface from p to q (figure coords), hatched on its solid side (unit vector solid, y up)."""
+    f.line(p[0], p[1], q[0], q[1], INK, 3, cap="round")
     L = math.hypot(q[0] - p[0], q[1] - p[1]); ux, uy = (q[0] - p[0]) / L, (q[1] - p[1]) / L
-    cuts = sorted((max(0, g - 11), min(L, g + 11)) for g in gaps)
-    pieces, k0 = [], 0.0
-    for c0, c1 in cuts:
-        if c0 > k0: pieces.append((k0, c0))
-        k0 = max(k0, c1)
-    if k0 < L: pieces.append((k0, L))
-    for k0, k1 in pieces:
-        f.line(p[0] + ux * k0, p[1] + uy * k0, p[0] + ux * k1, p[1] + uy * k1, INK, 3, cap="round" if not cuts else "butt")
     k = 6.0
     while k <= L - 4:
-        if not any(c0 - 2 <= k <= c1 + 8 for c0, c1 in cuts):
-            ax, ay = p[0] + ux * k, p[1] + uy * k
-            f.line(ax, ay, ax + solid[0] * 12 - ux * 8, ay - solid[1] * 12 - uy * 8, MUTED, 1.5)
+        ax, ay = p[0] + ux * k, p[1] + uy * k
+        f.line(ax, ay, ax + solid[0] * 12 - ux * 8, ay - solid[1] * 12 - uy * 8, MUTED, 1.5)
         k += 16
 
 
