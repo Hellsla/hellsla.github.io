@@ -16,7 +16,7 @@ new p5((p) => {
   const H = 6.62607015e-34, E = 1.602176634e-19, C = 2.99792458e8;
   const METALS = { cs: 2.14, k: 2.29, na: 2.36, zn: 4.3 };                        // eV, typical values
   const ISAT = 20;                                                                // nA at 100 % intensity
-  const CAT = 196, ANO = 430, TOP = 150, BOT = 290;                               // cathode and anode plates (x), plate ends (y)
+  const H0 = 400, CAT = 196, ANO = 430, TOP = 150, BOT = 290;                     // canvas height; cathode and anode plates (x), plate ends (y)
   const INK = [31, 41, 51], ELEC = [25, 113, 194], MUTED = [90, 98, 110];
   const LX = 282, LY = 84, FACE = CAT + 6;                                         // the lamp's aperture; the cathode's inner face
   let slL, slI, slU, selM, selSpeed, btn, readout, lL, lI, lU;
@@ -118,7 +118,7 @@ new p5((p) => {
     lab('$\\text{A}$', 385, 360 + fh * 0.36, 'c', fh * 1.2, INK);
     lab('$+$', CAT - 16, BOT + 18, 'c', fh * 1.3, INK); lab('$-$', ANO + 16, BOT + 18, 'c', fh * 1.3, INK);   // retarding: cathode +, collector −, below the beam
     lab(`$U = ${tx(s.U, 2)}\\,\\text{V}$`, 286, 340, 'c', fh, INK);
-    lab(`$I = ${tx(s.I, 1)}\\,\\text{nA}$`, 407, 384 + fh * 0.4, 'l', fh, INK);   // beside the ammeter, under the wire
+    lab(`$I = ${tx(s.I, 1)}\\,\\text{nA}$`, 407, Math.min(384 + fh * 0.4, H0 - 1 - fh * 0.25), 'l', fh, INK);   // beside the ammeter, under the wire; its baseline rises on a phone (fh up to 29) so the ink stays above the canvas edge
     lab(__('katodi'), CAT - 8, 345, 'r', fh, MUTED); lab(__('kerain'), ANO + 8, 345, 'l', fh, MUTED);   // under the tube, clear of the light beam
     lab(`$\\lambda = ${tx(s.lam, 0)}\\,\\text{nm}$` + (s.lam < 380 ? ' ' + __('uv') : ''), 22, 26, 'l', fh, INK);   // both readings on the top line, clear of the beam
     lab(`$E = hf = ${tx(s.Eph, 2)}\\,\\text{eV}$`, 578, 26, 'r', fh, INK);

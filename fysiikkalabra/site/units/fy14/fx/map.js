@@ -7,6 +7,8 @@
      with a keyboard and a screen reader without touching the map.
    - Selecting a facility (marker, list or #f-<id> in the address, as the timeline links) shows its panel: type,
      status, place, years, achievements, why it matters, sources and the date they were checked.
+   - "Operating in" a year: start ≤ year ≤ end. A retired machine with end null (no source gives its end year) counts
+     only up to its last_seen year (the latest year a source shows it running) or else start + 10, never to today.
    - Without scripts or tiles the list still works; the map is an extra, never the only way to the facts.
    Data on the element: {map_height?: px, year?: default year filter, intro?: text}. */
 window.FX.map = (el, d, A) => {
@@ -66,7 +68,9 @@ window.FX.map = (el, d, A) => {
     const where = (f) => (f.country_then ? `${f.country_then} (today ${f.country})` : f.country);
     const site = (f) => f.lat.toFixed(2) + ',' + f.lon.toFixed(2);
     const years = (f) => (f.start ? f.start : '?') + '–' + (f.end ? f.end : f.status === 'operating' ? 'today' : f.status === 'retired' ? '?' : '');
-    const live = (f, y) => f.start != null && f.start <= y && (f.end == null ? f.status !== 'planned' && f.status !== 'construction' : f.end >= y);
+    const UNKNOWN_SPAN = 10; // a retired machine whose end year no source gives: counted only to last_seen or start + 10
+    const live = (f, y) => f.start != null && f.start <= y && (f.end != null ? f.end >= y
+      : f.status === 'retired' ? y <= (f.last_seen || f.start + UNKNOWN_SPAN) : f.status !== 'planned' && f.status !== 'construction');
     const show = (f, focusPanel) => {
       panel.replaceChildren(
         h('p', { class: 'fx-map-kicker' }, h('span', { class: 'fx-swatch', style: `background:${COL[f.category] || '#555'}` }), `${cats[f.category] || f.category} · ${stats[f.status] || f.status}`),
@@ -106,12 +110,13 @@ window.FX.map = (el, d, A) => {
         markers[key] = m;
       });
     };
-    form.addEventListener('input', draw); form.addEventListener('change', draw);
+    form.addEventListener('input', draw);   // 'change' only for controls without 'input': a search box's change on blur would
+    form.addEventListener('change', (e) => { if (e.target.type !== 'search' && e.target.type !== 'text') draw(); });   // rebuild the list under a tap
     form.addEventListener('reset', () => setTimeout(() => { anyYear.checked = true; draw(); }, 0));
     draw();
     const want = (location.hash.match(/^#f-([\w-]+)$/) || [])[1];
     const f = want && F.find((x) => x.id === want);
-    if (f) { anyYear.checked = true; draw(); show(f, false); el.scrollIntoView(); }
+    if (f) { anyYear.checked = true; draw(); show(f, false); requestAnimationFrame(() => panel.scrollIntoView({ block: 'start' })); }
     if (map) setTimeout(() => map.invalidateSize(), 200);
   }
 };

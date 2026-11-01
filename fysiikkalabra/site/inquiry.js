@@ -51,7 +51,8 @@
     if (seen.has(t.id)) return;
     seen.add(t.id);
     const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) {
-      io.disconnect(); measured[t.id] = Infinity; bus.dispatchEvent(new CustomEvent('fl:measured', { detail: { id: t.id, count: Infinity } })); } });
+      io.disconnect(); measured[t.id] = Infinity; bus.dispatchEvent(new CustomEvent('fl:measured', { detail: { id: t.id, count: Infinity } })); } },
+      { rootMargin: '0px 0px -40% 0px' });   // read, not glimpsed: the section must reach the upper 60 % of the window
     io.observe(t);
   });
 
