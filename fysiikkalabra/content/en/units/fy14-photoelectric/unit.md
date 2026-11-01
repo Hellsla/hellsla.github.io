@@ -201,7 +201,7 @@ This gives a way to measure Planck's constant: measure $U_\text{s}$ for two or m
 ```latex
 h = e \cdot \frac{\Delta U_\text{s}}{\Delta f}
 ```
-You will do this measurement yourself with a real photocell and a mercury lamp in the unit *Fotoni lab visit: modern physics experiments*.
+You will do this measurement yourself with a real photocell and LEDs of different colours in the unit *Fotoni lab visit: modern physics experiments*.
 
 ## The people behind the equation {People}
 

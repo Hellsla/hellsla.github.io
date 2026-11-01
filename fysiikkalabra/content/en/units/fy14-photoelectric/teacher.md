@@ -15,7 +15,7 @@
 - Pairs share one device for the simulation; both students keep their own predictions on their own device or on paper.
 - The word bank and sentence starters support the pair conclusion: ask one student to speak and the other to write, then swap for the explanation task.
 - If possible, show a real photocell or a freshly cleaned zinc plate on a **negatively** charged electroscope with an ultraviolet lamp (and a strong visible lamp that does nothing). A positively charged plate does not discharge, because the freed electrons are pulled back. Protect skin and eyes from the UV-C lamp: UV safety glasses, and no one looks into the lamp.
-- The unit prepares the Fotoni lab visit, where students measure Planck's constant with a photocell and a mercury lamp. Keep the students' experiment 1 tables for the comparison.
+- The unit prepares the Fotoni lab visit, where students measure Planck's constant with a photocell and LEDs of different colours. Keep the students' experiment 1 tables for the comparison.
 
 ## Assessment
 - Written answers are self-assessed against the criteria shown after the student has written something. For a grade, use the same criteria: the conclusion shows the threshold, the effect of intensity on the current only, and the growth of the stopping voltage with frequency, each with numbers from the student's own table; the explanation compares one photon's energy with the work function and proposes ultraviolet light.

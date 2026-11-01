@@ -318,7 +318,7 @@
    "type": "interpret",
    "title": "Planck's constant from example data",
    "source": "example",
-   "text": "A group measured the stopping voltage of a photocell with the spectral lines of a mercury lamp, like the measurement at Fotoni. The numbers below are an invented example, rounded like real readings.\n\n| Wavelength $\\lambda$ (nm) | Frequency $f$ ($10^{14}\\ \\text{Hz}$) | Stopping voltage $U_\\text{s}$ (V) |\n| --- | --- | --- |\n| 578.0 | 5.19 | 0.25 |\n| **546.1** | **5.49** | **0.37** |\n| 435.8 | 6.88 | 0.94 |\n| 404.7 | 7.41 | 1.17 |\n| **365.0** | **8.21** | **1.49** |",
+   "text": "A group measured the stopping voltage of a photocell with the spectral lines of a mercury lamp. The numbers below are an invented example, rounded like real readings.\n\n| Wavelength $\\lambda$ (nm) | Frequency $f$ ($10^{14}\\ \\text{Hz}$) | Stopping voltage $U_\\text{s}$ (V) |\n| --- | --- | --- |\n| 578.0 | 5.19 | 0.25 |\n| **546.1** | **5.49** | **0.37** |\n| 435.8 | 6.88 | 0.94 |\n| 404.7 | 7.41 | 1.17 |\n| **365.0** | **8.21** | **1.49** |",
    "question": {
     "type": "numeric",
     "prompt": "Use the two rows in bold. Calculate Planck's constant $h$ from the slope of the line $U_\\text{s} = (h/e)\\,f - W/e$. Give $h$ as a number times $10^{-34}\\ \\text{J} \\cdot \\text{s}$: for example, type $6.1$ for $6.1 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s}$.",
