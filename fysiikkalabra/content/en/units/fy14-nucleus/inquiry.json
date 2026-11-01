@@ -1,0 +1,400 @@
+{
+ "version": 1,
+ "contribution": "Opens chapter 2: the structure of the nucleus ($Z$, $N$, $A$, nuclear notation), isotopes (the hydrogen isotopes that fuel fusion) and the strong nuclear force against the electric repulsion of protons, with the Isotope Builder; it prepares mass defect and binding energy in the next unit.",
+ "learn": [
+  "describe a nucleus with $Z$, $N$ and $A$ and write it in nuclear notation.",
+  "explain what isotopes are and name the isotopes of hydrogen.",
+  "compare the strong nuclear force with the electric repulsion of protons."
+ ],
+ "prior": [
+  "An atom has a tiny positive nucleus with electrons around it (chapter *From Rutherford's nucleus to Bohr's atom*)",
+  "Charges of the same sign repel each other, and Coulomb's law $F = k q_1 q_2 / r^2$ gives the force (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Imagine an atom as large as a football stadium, about $100\\ \\text{m}$ across. Its nucleus would then be a small seed of a few millimetres in the middle, and yet it would hold almost all of the atom's mass. Inside that seed, the protons are all positive and packed very close together. Charges of the same sign repel, and the closer they are, the stronger the push.",
+   "question": "What could keep the protons of a nucleus together?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: Rutherford's nucleus",
+   "prompt": "In Rutherford's gold-foil experiment, almost all alpha particles went straight through the foil, but a very few bounced back. What did this show?",
+   "choices": [
+    {
+     "text": "The positive charge and most of the mass sit in a tiny nucleus.",
+     "correct": true,
+     "feedback": "Right. A few alpha particles bounced back because they came very close to a small, heavy, positive nucleus. Most passed through the empty space around it. Today you look inside that nucleus."
+    },
+    {
+     "text": "The atom is a uniform positive sphere with electrons in it.",
+     "feedback": "This is Thomson's model, which the experiment rejected: a spread-out charge could not turn an alpha particle back."
+    },
+    {
+     "text": "The electrons in gold are heavy enough to stop alpha particles.",
+     "feedback": "An electron is about $7300$ times lighter than an alpha particle, so it cannot turn it back. Only a heavy nucleus can."
+    }
+   ]
+  },
+  {
+   "id": "pred-neutron",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: one more neutron",
+   "prompt": "A hydrogen-1 nucleus is a single proton. Suppose you add one neutron to it. What do you have now?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "A helium nucleus, because it now has two particles.",
+     "feedback": "The element is decided by the number of protons, $Z$, not by the number of particles. With one proton the nucleus is still hydrogen: deuterium, $^{2}_{1}\\text{H}$. Helium needs two protons."
+    },
+    {
+     "text": "A heavier hydrogen nucleus, because it still has one proton.",
+     "correct": true,
+     "feedback": "Right: $Z = 1$ still, so it is hydrogen, but $A = 2$. This isotope is deuterium, $^{2}_{1}\\text{H}$, and you built it in the Isotope Builder."
+    },
+    {
+     "text": "A hydrogen nucleus with no charge, as the neutron cancels it.",
+     "feedback": "A neutron has no charge, so it cannot cancel the proton's charge: the nucleus still has the charge $+e$. It is deuterium, $^{2}_{1}\\text{H}$."
+    }
+   ]
+  },
+  {
+   "id": "pred-glue",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: what holds the nucleus together?",
+   "layout": "models",
+   "prompt": "Protons in a nucleus repel each other strongly. Which explanation of why the nucleus holds together seems most likely to you?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-forces"
+   },
+   "choices": [
+    {
+     "text": "Gravity between the nucleons, which is very strong at tiny distances.",
+     "feedback": "Gravity grows at short distance too, but in the same way as the electric force, so the ratio stays the same: gravity between two protons is about $10^{36}$ times weaker than their electric repulsion."
+    },
+    {
+     "text": "A separate attractive force between all nucleons, with a very short reach.",
+     "correct": true,
+     "feedback": "This is the **strong nuclear force**. It attracts protons and neutrons almost equally and wins over the electric repulsion when nucleons nearly touch, but it fades out by about $2.5\\ \\text{fm}$."
+    },
+    {
+     "text": "Electrons inside the nucleus, which attract the protons and glue them.",
+     "feedback": "Before 1932 some physicists thought so, but there are no electrons in a nucleus. Chadwick's neutron replaced this idea, and the binding comes from the strong nuclear force."
+    },
+    {
+     "text": "Neutrons, which cancel the positive charge of the protons near them.",
+     "feedback": "A neutron has no charge, so it cannot cancel anything. Neutrons help because the strong force attracts them too, without adding any repulsion."
+    }
+   ]
+  },
+  {
+   "id": "pred-heavy",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 3: light and heavy nuclei",
+   "prompt": "A light stable nucleus such as carbon-12 has as many neutrons as protons, $N = Z = 6$. What do you expect for a heavy stable nucleus such as lead-208, with $Z = 82$?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-forces"
+   },
+   "choices": [
+    {
+     "text": "Also $N = Z$, because the rule is the same for every nucleus.",
+     "feedback": "The table of stable nuclei shows otherwise: lead-208 has $N = 126$, so $N/Z = 1.54$. The more protons there are, the more extra neutrons are needed."
+    },
+    {
+     "text": "More neutrons than protons, $N > Z$.",
+     "correct": true,
+     "feedback": "Right: lead-208 has $126$ neutrons and $82$ protons. Every proton pushes every other proton, but the strong force acts only between neighbours, so a large nucleus needs extra neutrons for extra attraction."
+    },
+    {
+     "text": "Fewer neutrons than protons, $N < Z$, to keep the nucleus light.",
+     "feedback": "No stable heavy nucleus has $N < Z$. Lead-208 has $N = 126$ and $Z = 82$. Neutrons add attraction without repulsion, so heavy nuclei need *more* of them."
+    }
+   ]
+  },
+  {
+   "id": "builder-text",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigation 1: the Isotope Builder",
+   "text": "Test prediction 1 here. Work in pairs: one of you changes the nucleus, the other reads the notation and the stability line aloud.\n\n<div class=\"fx\" data-fx=\"isotopes\" id=\"fx-nu-builder\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"zmax\": 26, \"start\": [1, 0], \"intro\": \"Change the number of protons $Z$ and neutrons $N$. Watch the name, the notation and the stability line. Then solve the tasks below the builder; each has its own *Check* button.\", \"tasks\": [{\"text\": \"Build **deuterium**, the isotope of hydrogen with mass number $A = 2$.\", \"z\": 1, \"n\": 1, \"hint\": \"Hydrogen always has one proton. How many neutrons make $A = 2$?\", \"done\": \"Deuterium, $^{2}_{1}\\\\text{H}$: one proton and one neutron. It is stable.\"}, {\"text\": \"Build **tritium**, $^{3}_{1}\\\\text{H}$. Read its stability line.\", \"z\": 1, \"n\": 2, \"hint\": \"$N = A - Z$.\", \"done\": \"Tritium, $^{3}_{1}\\\\text{H}$, is radioactive: its half-life is $12.3$ years.\"}, {\"text\": \"Build a nucleus with $2$ protons and $1$ neutron. Which element and which isotope is it?\", \"z\": 2, \"n\": 1, \"done\": \"Helium-3, $^{3}_{2}\\\\text{He}$. It has the same mass number as tritium, but it is a different element.\"}, {\"text\": \"Build **carbon-14**, $^{14}_{6}\\\\text{C}$, the isotope used to date old wood and bones.\", \"z\": 6, \"n\": 8, \"hint\": \"Carbon has $Z = 6$, and $A = 14$.\", \"done\": \"Carbon-14: $6$ protons and $8$ neutrons, radioactive with a half-life of about $5700$ years.\"}, {\"text\": \"Build **iron-56**, $^{56}_{26}\\\\text{Fe}$. Compare $N$ with $Z$.\", \"z\": 26, \"n\": 30, \"done\": \"Iron-56 has $26$ protons and $30$ neutrons: already more neutrons than protons.\"}, {\"text\": \"Try a nucleus of $2$ protons and **no** neutrons. What does the builder say?\", \"z\": 2, \"n\": 0, \"done\": \"Two protons alone do not form a bound nucleus: without a neutron, the attraction is not enough. Neutrons matter.\"}]}</script></div>"
+  },
+  {
+   "id": "stable-table",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigation 2: stable nuclei, light and heavy",
+   "source": "measured",
+   "source_note": "Proton and neutron numbers of stable nuclides from the evaluated nuclear data NUBASE2020 (F. G. Kondev et al., Chinese Physics C 45, 030001, 2021), as in the course's data file.",
+   "text": "Test prediction 3 with real nuclei. Each row is a stable nucleus (no decay has been observed).\n\n| Nucleus | $Z$ | $N$ | $N/Z$ |\n| --- | --- | --- | --- |\n| $^{4}_{2}\\text{He}$ | 2 | 2 | 1.00 |\n| $^{12}_{6}\\text{C}$ | 6 | 6 | 1.00 |\n| $^{40}_{20}\\text{Ca}$ | 20 | 20 | 1.00 |\n| $^{56}_{26}\\text{Fe}$ | 26 | 30 | 1.15 |\n| $^{120}_{50}\\text{Sn}$ | 50 | 70 | 1.40 |\n| $^{197}_{79}\\text{Au}$ | 79 | 118 | 1.49 |\n| $^{208}_{82}\\text{Pb}$ | 82 | ? | ? |",
+   "question": {
+    "type": "numeric",
+    "prompt": "Lead-208 is $^{208}_{82}\\text{Pb}$. Calculate its neutron number $N$ and then the ratio $N/Z$ for the last row. Type the ratio.",
+    "answer": 1.54,
+    "unit": "",
+    "tolerance": 0.01,
+    "hints": [
+     "The upper number is $A$, the lower number is $Z$.",
+     "$N = A - Z$.",
+     "$N = 208 - 82 = 126$; now divide by $Z$."
+    ],
+    "mistakes": [
+     {
+      "value": 2.54,
+      "feedback": "You divided $A$ by $Z$. The ratio asked is $N/Z$, and $N = A - Z = 126$."
+     },
+     {
+      "value": 0.65,
+      "feedback": "You calculated $Z/N$. Turn the fraction over: $N/Z = 126 : 82$."
+     }
+    ],
+    "solution": "**Given:** lead-208, $A = 208$, $Z = 82$\n\n**Find:** the neutron number $N$ and the ratio $N/Z$\n\n**Principle:** The mass number counts all nucleons, $A = Z + N$, so the neutron number is the difference of the two numbers in the notation.\n\n**Formula:** $N = A - Z$, and then the ratio $N/Z$\n\n**Unit conversions:** None: $N$, $Z$ and their ratio are pure numbers.\n\n**Substitution:** $N = 208 - 82 = 126$, and $N/Z = 126 : 82 = 1.537$\n\n**Answer:** $N = 126$ and $N/Z \\approx 1.54$, to two decimal places like the other rows of the table.\n\n**Reasonableness:** The ratio continues the trend of the table: $1.00$ for light nuclei, $1.15$ for iron, $1.40$ for tin, $1.49$ for gold. The heaviest stable nucleus has the most extra neutrons."
+   }
+  },
+  {
+   "id": "language-support",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>nucleus · nucleon · proton · neutron · atomic number $Z$ · neutron number $N$ · mass number $A$ · isotope · stable · radioactive · half-life · to decide · to stay the same · to change into</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The number of … decides …</li><li>When I added a neutron, …</li><li>… and … are isotopes, because …</li><li>The evidence from the builder suggests that …</li><li>I agree / I disagree, because …</li></ul></div>"
+  },
+  {
+   "id": "builder-conclusion",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Conclusion: element or isotope?",
+   "prompt": "Discuss with a partner, then write three or four sentences of your own. Use your results from the builder and the table. What decides *which element* a nucleus is? What changes when you add only neutrons? What did you notice about $N$ and $Z$ in heavy stable nuclei?",
+   "model": "The number of protons $Z$ decides the element: with one proton the nucleus was always hydrogen, and with two protons it became helium. When I added only neutrons, the element stayed the same, but the mass number and the isotope changed, for example from hydrogen-1 to deuterium and tritium. Some isotopes, like tritium and carbon-14, are radioactive. The evidence from the table suggests that heavy stable nuclei need more neutrons than protons: iron-56 has $30$ neutrons and $26$ protons, and lead-208 has $126$ and $82$.",
+   "criteria": [
+    "The answer says that $Z$, the number of protons, decides the element.",
+    "The answer says that adding neutrons gives another isotope of the same element, with an example.",
+    "The answer says that heavy stable nuclei have $N > Z$, with a number from the table.",
+    "The answer uses at least three words of the word bank correctly."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Particles",
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-nu-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"number of protons\", \"number of protons and neutrons\", \"number of neutrons\", \"same Z, different N\", \"a proton or a neutron\", \"time for half of the nuclei to decay\", \"attracts nucleons at short range\"], \"items\": [{\"text\": \"atomic number $Z$\", \"answer\": \"number of protons\", \"feedback\": \"$Z$ decides the element.\"}, {\"text\": \"mass number $A$\", \"answer\": \"number of protons and neutrons\", \"feedback\": \"$A = Z + N$ counts all nucleons.\"}, {\"text\": \"neutron number $N$\", \"answer\": \"number of neutrons\", \"feedback\": \"$N = A - Z$.\"}, {\"text\": \"isotopes\", \"answer\": \"same Z, different N\", \"feedback\": \"Isotopes are forms of one element, so $Z$ is the same.\"}, {\"text\": \"nucleon\", \"answer\": \"a proton or a neutron\", \"feedback\": \"Both particles of the nucleus are nucleons.\"}, {\"text\": \"half-life\", \"answer\": \"time for half of the nuclei to decay\", \"feedback\": \"Tritium has a half-life of $12.3$ years.\"}, {\"text\": \"strong nuclear force\", \"answer\": \"attracts nucleons at short range\", \"feedback\": \"It fades out by about $2.5\\\\ \\\\text{fm}$.\"}], \"done\": \"You know the words of nuclear notation.\"}</script></div>"
+  },
+  {
+   "id": "theory-forces",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Forces"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your three predictions with the builder, the table and the theory. Then answer the opening question in one or two sentences: why do the protons in a nucleus not fly apart?",
+   "predictions": [
+    "pred-neutron",
+    "pred-glue",
+    "pred-heavy"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "coulomb",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How hard do two protons push?",
+   "prompt": "Two protons in a nucleus are $r = 2.0\\ \\text{fm}$ apart, centre to centre. Calculate the electric force between them with Coulomb's law $F = k q_1 q_2 / r^2$, where $k = 8.99 \\cdot 10^{9}\\ \\text{N} \\cdot \\text{m}^2/\\text{C}^2$ and the charge of a proton is $e = 1.602 \\cdot 10^{-19}\\ \\text{C}$. Give the force in newtons.",
+   "answer": 57.7,
+   "unit": "N",
+   "tolerance": 0.02,
+   "hints": [
+    "Both charges are $e$, so $q_1 q_2 = e^2$.",
+    "Convert $2.0\\ \\text{fm} = 2.0 \\cdot 10^{-15}\\ \\text{m}$ before you square it.",
+    "$e^2 = 2.566 \\cdot 10^{-38}\\ \\text{C}^2$ and $r^2 = 4.0 \\cdot 10^{-30}\\ \\text{m}^2$."
+   ],
+   "mistakes": [
+    {
+     "value": 1.15e-13,
+     "feedback": "You divided by $r$, not by $r^2$. Coulomb's law has the square of the distance."
+    },
+    {
+     "value": 5.77e-29,
+     "feedback": "Check the conversion: $1\\ \\text{fm} = 10^{-15}\\ \\text{m}$, so $r^2 = 4.0 \\cdot 10^{-30}\\ \\text{m}^2$."
+    }
+   ],
+   "solution": "**Given:** distance $r = 2.0\\ \\text{fm}$, charges $q_1 = q_2 = e = 1.602 \\cdot 10^{-19}\\ \\text{C}$, $k = 8.99 \\cdot 10^{9}\\ \\text{N} \\cdot \\text{m}^2/\\text{C}^2$\n\n**Find:** the electric force $F$ between the protons\n\n**Principle:** Two charges of the same sign repel each other with the force of Coulomb's law. At this distance the protons can be treated as point charges for an estimate.\n\n**Formula:**\n\n$$F = k\\frac{q_1 q_2}{r^2} = \\frac{k e^2}{r^2}$$\n\n**Unit conversions:** $r = 2.0\\ \\text{fm} = 2.0 \\cdot 10^{-15}\\ \\text{m}$\n\n**Substitution:**\n\n$$\\begin{aligned} F &= 8.99 \\cdot 10^{9}\\ \\text{N} \\cdot \\text{m}^2/\\text{C}^2 \\\\ &\\quad \\cdot \\frac{(1.602 \\cdot 10^{-19}\\ \\text{C})^2}{(2.0 \\cdot 10^{-15}\\ \\text{m})^2} \\\\ &= 57.7\\ \\text{N} \\end{aligned}$$\n\n**Answer:** $F \\approx 58\\ \\text{N}$, two significant figures as in the distance $2.0\\ \\text{fm}$.\n\n**Reasonableness:** $58\\ \\text{N}$ is about the weight of a $6\\ \\text{kg}$ bag, acting on a particle of only $1.67 \\cdot 10^{-27}\\ \\text{kg}$: it would give the proton an acceleration of $58\\ \\text{N} : 1.67 \\cdot 10^{-27}\\ \\text{kg} \\approx 3 \\cdot 10^{28}\\ \\text{m/s}^2$. Without a much stronger attraction, the nucleus would fly apart at once."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student writes: \"Oxygen-17, $^{17}_{8}\\text{O}$, has $8$ protons and $17$ neutrons.\" What is wrong?",
+   "choices": [
+    {
+     "text": "17 counts all nucleons, so it has $N = 17 - 8 = 9$ neutrons.",
+     "correct": true,
+     "feedback": "Right. The upper number is the mass number $A = Z + N$, so $N = A - Z = 9$."
+    },
+    {
+     "text": "Nothing: the upper number is the number of neutrons.",
+     "feedback": "The upper number is the mass number: protons *and* neutrons together. $N = A - Z = 17 - 8 = 9$."
+    },
+    {
+     "text": "It has $8$ neutrons, because isotopes always have $N = Z$.",
+     "feedback": "Isotopes of one element have the *same* $Z$ but *different* $N$. Oxygen-16 has $8$ neutrons; oxygen-17 has $9$."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "people",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "People"
+   ],
+   "optional": true,
+   "title": "The discovery of the neutron"
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: isotopes",
+   "prompt": "Which pair of nuclei are isotopes of the same element?",
+   "choices": [
+    {
+     "text": "$^{14}_{6}\\text{C}$ and $^{14}_{7}\\text{N}$",
+     "feedback": "They have the same mass number, but $Z = 6$ and $Z = 7$: two different elements. Isotopes need the same $Z$."
+    },
+    {
+     "text": "$^{12}_{6}\\text{C}$ and $^{13}_{6}\\text{C}$",
+     "correct": true,
+     "feedback": "Right. Both have $Z = 6$, so both are carbon; they have $6$ and $7$ neutrons."
+    },
+    {
+     "text": "$^{3}_{1}\\text{H}$ and $^{3}_{2}\\text{He}$",
+     "feedback": "Same $A = 3$, but different $Z$: hydrogen and helium. The mass number does not decide the element."
+    },
+    {
+     "text": "$^{4}_{2}\\text{He}$ and $^{8}_{4}\\text{Be}$",
+     "feedback": "Beryllium has twice as many of everything, but $Z$ is different, so these are different elements."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Notation: uranium-235",
+   "prompt": "The fuel of most fission reactors is uranium-235, $^{235}_{92}\\text{U}$. How many neutrons does its nucleus have?",
+   "choices": [
+    {
+     "text": "$235$",
+     "feedback": "$235$ is the mass number $A$: all nucleons together. Subtract the protons: $N = A - Z$."
+    },
+    {
+     "text": "$143$",
+     "correct": true,
+     "feedback": "Right: $N = A - Z = 235 - 92 = 143$."
+    },
+    {
+     "text": "$92$",
+     "feedback": "$92$ is the number of protons, $Z$. The neutrons are $N = 235 - 92$."
+    },
+    {
+     "text": "$327$",
+     "feedback": "You added $A$ and $Z$. But $A$ already includes the protons: $N = A - Z$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Forces: heavy nuclei",
+   "prompt": "Lead-208 has $44$ more neutrons than protons. What is the best explanation?",
+   "choices": [
+    {
+     "text": "Neutrons add strong-force attraction but no electric repulsion.",
+     "correct": true,
+     "feedback": "Right. Each proton repels every other proton across the whole nucleus, while the strong force acts only between neighbours. Extra neutrons add attraction without adding repulsion."
+    },
+    {
+     "text": "The neutrons cancel the charge of the extra protons.",
+     "feedback": "A neutron is neutral, so it cannot cancel charge. The lead nucleus still has the charge $+82e$."
+    },
+    {
+     "text": "Heavy nuclei need more mass so that gravity holds them.",
+     "feedback": "Gravity between nucleons is about $10^{36}$ times weaker than their electric repulsion. It plays no part inside a nucleus."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain: tritium and helium-3",
+   "prompt": "Tritium, $^{3}_{1}\\text{H}$, and helium-3, $^{3}_{2}\\text{He}$, have the same mass number. Your friend says they are isotopes. Do you agree? Explain with $Z$, $N$ and $A$, and say what *would* be an isotope of tritium.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I agree / I disagree, because …</li><li>Tritium has … protons and … neutrons, while …</li><li>The element is decided by …</li><li>An isotope of tritium would be …</li></ul></div>",
+   "model": "I disagree. Tritium has $Z = 1$ and $N = 2$, while helium-3 has $Z = 2$ and $N = 1$. They have the same mass number $A = 3$, but the element is decided by the number of protons, so they are two different elements. An isotope of tritium must also have one proton, for example hydrogen-1, $^{1}_{1}\\text{H}$, or deuterium, $^{2}_{1}\\text{H}$.",
+   "criteria": [
+    "The answer disagrees and says that isotopes need the same $Z$.",
+    "The answer gives $Z$ and $N$ for both nuclei.",
+    "The answer names another hydrogen isotope as an isotope of tritium.",
+    "The answer uses a sentence starter to argue."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The nucleus is <span lang=\"fr\">le noyau</span> in French, the same word as the stone of a cherry. The particles are almost the same as in English: <span lang=\"fr\">un proton</span>, <span lang=\"fr\">un neutron</span>, <span lang=\"fr\">un isotope</span>. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-nu-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: inside the nucleus\", \"phrases\": [{\"fr\": \"le noyau\", \"en\": \"the nucleus\", \"tip\": \"luh nwa-YO: *oy* is said like *wa*, and the *au* like a short *o*.\"}, {\"fr\": \"un proton\", \"en\": \"a proton\", \"tip\": \"uhn pro-TON: the final *-on* is nasal, do not say the *n*.\"}, {\"fr\": \"un neutron\", \"en\": \"a neutron\", \"tip\": \"uhn nö-TRON: *eu* is close to the Finnish *ö*.\"}, {\"fr\": \"un isotope\", \"en\": \"an isotope\", \"tip\": \"uh-nee-zo-TOP: the *s* between vowels sounds like *z*.\"}, {\"fr\": \"Le noyau contient des protons et des neutrons.\", \"en\": \"The nucleus contains protons and neutrons.\", \"tip\": \"*contient* = contains; the *t* at the end is silent.\"}]}</script></div>"
+  }
+ ]
+}

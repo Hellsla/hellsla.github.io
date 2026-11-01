@@ -1,0 +1,364 @@
+{
+ "version": 1,
+ "contribution": "Turns the nucleus of the previous unit into a source of energy: $E = \\Delta m \\cdot c^2$, the mass defect and binding energy calculated from AME2020 masses, the binding-energy-per-nucleon curve in the Binding Energy Explorer, and why both fusion of light nuclei and fission of heavy nuclei release energy (Q-values of D–T and U-235).",
+ "learn": [
+  "calculate a mass defect and a binding energy from atomic masses.",
+  "explain with the binding energy curve why fusion and fission release energy.",
+  "calculate the energy released in a nuclear reaction."
+ ],
+ "prior": [
+  "A nucleus has $Z$ protons and $N$ neutrons, $A = Z + N$, written $^{A}_{Z}\\text{X}$ (chapter *Building nuclei: isotopes and nuclear notation*)",
+  "The strong nuclear force attracts nucleons at short range; the protons repel each other (chapter *Building nuclei: isotopes and nuclear notation*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Heat a cup of tea, $0.25\\ \\text{kg}$ of water, from $20\\ ^\\circ\\text{C}$ to $80\\ ^\\circ\\text{C}$. It takes about $63\\ \\text{kJ}$ of energy. According to Einstein, the hot tea is now heavier than the cold tea, by about $7 \\cdot 10^{-13}\\ \\text{kg}$. No balance in the world can measure that. In chemistry, mass is always conserved in practice. But in nuclei, the energies are millions of times larger, and the change in mass can be measured.",
+   "question": "Where does nuclear energy come from, if mass and energy are two sides of the same thing?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: inside helium-4",
+   "prompt": "A helium-4 nucleus is $^{4}_{2}\\text{He}$. What is it made of?",
+   "choices": [
+    {
+     "text": "$2$ protons and $2$ neutrons",
+     "correct": true,
+     "feedback": "Right: $Z = 2$ and $N = A - Z = 2$. Today you compare its mass with the mass of these four particles."
+    },
+    {
+     "text": "$4$ protons and $2$ neutrons",
+     "feedback": "The upper number $4$ counts *all* nucleons, protons and neutrons: $Z = 2$, so $N = 4 - 2 = 2$."
+    },
+    {
+     "text": "$2$ protons and $4$ neutrons",
+     "feedback": "The mass number is the total $A = Z + N = 4$, not the number of neutrons. $N = 4 - 2 = 2$."
+    }
+   ]
+  },
+  {
+   "id": "pred-mass",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the mass of helium-4",
+   "prompt": "Compare the mass of a helium-4 nucleus with the total mass of $2$ free protons and $2$ free neutrons. What do you expect?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "The nucleus has more mass: the force holding it adds mass.",
+     "feedback": "The data show the opposite: the nucleus is lighter by $0.0304\\ \\text{u}$. Joining the nucleons *releases* energy, so the bound system has *less* energy and less mass."
+    },
+    {
+     "text": "The masses are equal: mass is always conserved.",
+     "feedback": "In everyday chemistry the change is far too small to measure, but in nuclei it is not: helium-4 is $0.75\\ \\%$ lighter than its free nucleons. Mass and energy together are conserved, not mass alone."
+    },
+    {
+     "text": "The nucleus has less mass than the four free particles.",
+     "correct": true,
+     "feedback": "Right: $4.002603\\ \\text{u}$ against $4.032980\\ \\text{u}$, a mass defect of $0.0304\\ \\text{u}$. That mass left as energy, $28.3\\ \\text{MeV}$, when the nucleus formed."
+    }
+   ]
+  },
+  {
+   "id": "pred-iron",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: fusing iron",
+   "prompt": "Imagine that two iron-56 nuclei could be fused into one nucleus with $A = 112$. Would this reaction release energy?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-curve"
+   },
+   "choices": [
+    {
+     "text": "Yes, because every fusion of two nuclei releases energy.",
+     "feedback": "Only fusion of *light* nuclei releases energy. Iron is at the peak of the curve: a nucleus with $A = 112$ has a lower $B/A$, so this fusion would *need* energy."
+    },
+    {
+     "text": "No, because the product would be less tightly bound.",
+     "correct": true,
+     "feedback": "Right. Iron-56 sits at the peak, $8.79\\ \\text{MeV}$ per nucleon; nuclei with $A \\approx 112$ have about $8.5\\ \\text{MeV}$. Going away from the peak costs energy."
+    },
+    {
+     "text": "Yes, but much less than in the fusion of hydrogen.",
+     "feedback": "It would not release any: the product would be less tightly bound than iron. Energy is released only when a reaction moves *towards* the peak of $B/A$."
+    }
+   ]
+  },
+  {
+   "id": "mass-data",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigation 1: weighing helium",
+   "source": "measured",
+   "source_note": "Atomic masses from the Atomic Mass Evaluation AME2020 (W. J. Huang et al. and M. Wang et al., Chinese Physics C 45, 030002 and 030003, 2021), rounded to six decimals.",
+   "text": "Test prediction 1 with measured masses. Atomic masses include the electrons, so a hydrogen-1 atom counts as one proton with its electron, and the electrons of helium cancel.\n\n| Particle | Mass (u) |\n| --- | --- |\n| hydrogen-1 atom, $^{1}_{1}\\text{H}$ | $1.007825$ |\n| neutron, $\\text{n}$ | $1.008665$ |\n| helium-4 atom, $^{4}_{2}\\text{He}$ | $4.002603$ |",
+   "question": {
+    "type": "numeric",
+    "prompt": "Calculate the total mass of $2$ hydrogen-1 atoms and $2$ neutrons, and subtract the mass of the helium-4 atom. Give the difference $\\Delta m$ in $\\text{u}$.",
+    "answer": 0.030377,
+    "unit": "u",
+    "tolerance": 0.01,
+    "hints": [
+     "Helium-4 has $Z = 2$ and $N = 2$.",
+     "$m_\\text{parts} = 2 \\cdot 1.007825\\ \\text{u} + 2 \\cdot 1.008665\\ \\text{u}$.",
+     "$m_\\text{parts} = 4.032980\\ \\text{u}$; now subtract $4.002603\\ \\text{u}$."
+    ],
+    "mistakes": [
+     {
+      "value": -0.030377,
+      "feedback": "You subtracted the wrong way round. The free particles have *more* mass, so $\\Delta m = m_\\text{parts} - m_\\text{He}$ is positive."
+     },
+     {
+      "value": 0.014165,
+      "feedback": "You used one hydrogen atom and one neutron. Helium-4 has two of each."
+     }
+    ],
+    "solution": "**Given:** $m_\\text{H} = 1.007825\\ \\text{u}$, $m_\\text{n} = 1.008665\\ \\text{u}$, $m_\\text{He} = 4.002603\\ \\text{u}$; helium-4 has $Z = 2$, $N = 2$\n\n**Find:** the mass difference $\\Delta m$ between the free particles and the atom\n\n**Principle:** The free particles and the atom contain the same nucleons and electrons, so any difference in mass belongs to the binding of the nucleus.\n\n**Formula:**\n\n$$\\Delta m = 2 m_\\text{H} + 2 m_\\text{n} - m_\\text{He}$$\n\n**Unit conversions:** None: all masses are in $\\text{u}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta m &= 2 \\cdot 1.007825\\ \\text{u} + 2 \\cdot 1.008665\\ \\text{u} \\\\ &\\quad - 4.002603\\ \\text{u} \\\\ &= 0.030377\\ \\text{u} \\end{aligned}$$\n\n**Answer:** $\\Delta m = 0.030377\\ \\text{u}$, six decimals as in the table.\n\n**Reasonableness:** The difference is positive: the helium atom is lighter than its parts, by $0.75\\ \\%$. It is small compared with the masses, but far larger than the uncertainty of the table values, which is less than $10^{-9}\\ \\text{u}$."
+   }
+  },
+  {
+   "id": "explorer-text",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Investigation 2: the Binding Energy Explorer",
+   "text": "Test prediction 2. Choose nuclei from the list or click the points of the curve, and read $B/A$ in the panel. Then compare the reactions. Work in pairs: one of you operates the explorer, the other writes the numbers down.\n\n<div class=\"fx\" data-fx=\"binding\" id=\"fx-be-explorer\" data-src=\"units/fy14/data/nuclides.json\"><script type=\"application/json\">{\"highlight\": [\"H-2\", \"He-4\", \"C-12\", \"Fe-56\", \"U-235\"], \"reactions\": [\"dt\", \"dd-he3\", \"u235\"], \"select\": \"He-4\", \"question\": \"Find the three nuclei with the largest $B/A$ in the list. Then choose the reaction *D–T fusion* and the reaction *U-235 fission*: which way does each arrow point on the curve, and how large is $Q$?\"}</script></div>"
+  },
+  {
+   "id": "language-support",
+   "stage": "tutki",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>mass defect · binding energy · binding energy per nucleon · tightly bound · the peak of the curve · fusion · fission · products · fuel · to release · to climb towards · Q-value</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The curve shows that …</li><li>When … fuse, $B/A$ rises from … to …</li><li>Fission releases energy because the products …</li><li>The evidence suggests that …</li><li>Compared with fission, fusion …</li></ul></div>"
+  },
+  {
+   "id": "explorer-findings",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Conclusion: two ways to the peak",
+   "prompt": "Discuss with a partner, then write three or four sentences of your own with numbers from the explorer. Where on the curve are the most tightly bound nuclei? In which direction does D–T fusion move on the curve, and in which direction does uranium fission move? Why do both release energy?",
+   "model": "The curve shows that the most tightly bound nuclei are near iron and nickel, with about $8.79\\ \\text{MeV}$ per nucleon. In D–T fusion, the light nuclei deuterium ($1.11\\ \\text{MeV}$) and tritium ($2.83\\ \\text{MeV}$) form helium-4 ($7.07\\ \\text{MeV}$), so the reaction climbs the curve from the left and releases $Q = 17.6\\ \\text{MeV}$. In fission, uranium-235 ($7.59\\ \\text{MeV}$) splits into barium and krypton, which have about $8.3$ and $8.5\\ \\text{MeV}$, so it climbs from the right and releases $173\\ \\text{MeV}$. Both release energy because the products are more tightly bound than the fuel.",
+   "criteria": [
+    "The answer says that the peak of $B/A$ is near iron or nickel, at about $8.8\\ \\text{MeV}$.",
+    "The answer says that fusion moves light nuclei up the curve from the left and fission moves heavy nuclei up from the right.",
+    "The answer explains that energy is released because the products have a larger $B/A$, with at least one number from the explorer.",
+    "The answer uses a sentence starter and key words from the word bank."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Kaava",
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "theory-curve",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Curve",
+    "Reactions"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-be-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"missing mass of a bound nucleus\", \"energy to take a nucleus apart\", \"average binding of one nucleon\", \"energy released in a reaction\", \"light nuclei join\", \"a heavy nucleus splits\", \"1/12 of a carbon-12 atom\"], \"items\": [{\"text\": \"mass defect $\\\\Delta m$\", \"answer\": \"missing mass of a bound nucleus\", \"feedback\": \"$\\\\Delta m = Z m_\\\\text{H} + N m_\\\\text{n} - m_\\\\text{atom}$.\"}, {\"text\": \"binding energy $B$\", \"answer\": \"energy to take a nucleus apart\", \"feedback\": \"$B = \\\\Delta m \\\\cdot c^2$: you must *add* it to separate the nucleons.\"}, {\"text\": \"binding energy per nucleon\", \"answer\": \"average binding of one nucleon\", \"feedback\": \"$B/A$, the height of the curve.\"}, {\"text\": \"Q-value\", \"answer\": \"energy released in a reaction\", \"feedback\": \"$Q = B_\\\\text{after} - B_\\\\text{before}$.\"}, {\"text\": \"fusion\", \"answer\": \"light nuclei join\", \"feedback\": \"Fusion climbs the curve from the left.\"}, {\"text\": \"fission\", \"answer\": \"a heavy nucleus splits\", \"feedback\": \"Fission climbs the curve from the right.\"}, {\"text\": \"atomic mass unit $\\\\text{u}$\", \"answer\": \"1/12 of a carbon-12 atom\", \"feedback\": \"$1\\\\ \\\\text{u} = 1.661 \\\\cdot 10^{-27}\\\\ \\\\text{kg}$; carbon-12 has exactly $12\\\\ \\\\text{u}$.\"}], \"done\": \"You have the words of nuclear energy.\"}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the masses, the explorer and the theory. Then answer the opening question in one or two sentences: why can joining light nuclei and splitting heavy nuclei both release energy?",
+   "predictions": [
+    "pred-mass",
+    "pred-iron"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "dt-q",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "The energy of D–T fusion",
+   "prompt": "The fuel of future fusion power plants reacts as $^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. The atomic masses (AME2020) are $m(^{2}\\text{H}) = 2.014102\\ \\text{u}$, $m(^{3}\\text{H}) = 3.016049\\ \\text{u}$, $m(^{4}\\text{He}) = 4.002603\\ \\text{u}$, and the neutron has $m_\\text{n} = 1.008665\\ \\text{u}$. Calculate the energy $Q$ released in one reaction, in $\\text{MeV}$.",
+   "answer": 17.59,
+   "unit": "MeV",
+   "tolerance": 0.01,
+   "hints": [
+    "Energy is released because the products have less mass than the fuel: $Q = (m_\\text{before} - m_\\text{after}) \\cdot c^2$.",
+    "$m_\\text{before} = 5.030151\\ \\text{u}$. What is $m_\\text{after}$?",
+    "$\\Delta m = 5.030151\\ \\text{u} - 5.011268\\ \\text{u} = 0.018883\\ \\text{u}$; multiply by $931.5\\ \\text{MeV/u}$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.018883,
+     "feedback": "This is the mass defect in $\\text{u}$. Turn it into energy: multiply by $931.5\\ \\text{MeV/u}$."
+    },
+    {
+     "value": 2.82e-12,
+     "feedback": "This is $Q$ in joules. The task asks for megaelectronvolts: $1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$, or use $1\\ \\text{u} \\cdot c^2 = 931.5\\ \\text{MeV}$ directly."
+    }
+   ],
+   "solution": "**Given:** $m(^{2}\\text{H}) = 2.014102\\ \\text{u}$, $m(^{3}\\text{H}) = 3.016049\\ \\text{u}$, $m(^{4}\\text{He}) = 4.002603\\ \\text{u}$, $m_\\text{n} = 1.008665\\ \\text{u}$, $1\\ \\text{u} \\cdot c^2 = 931.5\\ \\text{MeV}$\n\n**Find:** the energy $Q$ released in one D–T reaction\n\n**Principle:** The products are more tightly bound than the fuel, so they have less mass; the lost mass leaves as kinetic energy, $Q = \\Delta m \\cdot c^2$. Atomic masses work, because there are two electrons on both sides.\n\n**Formula:**\n\n$$\\begin{aligned} Q = \\big(&m(^{2}\\text{H}) + m(^{3}\\text{H}) \\\\ &- m(^{4}\\text{He}) - m_\\text{n}\\big) \\cdot c^2 \\end{aligned}$$\n\n**Unit conversions:** The mass difference in $\\text{u}$ is multiplied by $931.5\\ \\text{MeV/u}$.\n\n**Substitution:**\n\n$$\\begin{aligned} m_\\text{before} &= 2.014102\\ \\text{u} + 3.016049\\ \\text{u} \\\\ &= 5.030151\\ \\text{u} \\\\ m_\\text{after} &= 4.002603\\ \\text{u} + 1.008665\\ \\text{u} \\\\ &= 5.011268\\ \\text{u} \\\\ \\Delta m &= 0.018883\\ \\text{u} \\\\ Q &= 0.018883\\ \\text{u} \\cdot 931.5\\ \\text{MeV/u} \\\\ &= 17.59\\ \\text{MeV} \\end{aligned}$$\n\n**Answer:** $Q \\approx 17.6\\ \\text{MeV}$, three significant figures.\n\n**Reasonableness:** This is the value used for D–T fusion everywhere, $17.6\\ \\text{MeV}$. Check with binding energies: $B(^{4}\\text{He}) - B(^{2}\\text{H}) - B(^{3}\\text{H}) = 28.30\\ \\text{MeV} - 2.22\\ \\text{MeV} - 8.48\\ \\text{MeV} = 17.60\\ \\text{MeV}$, the same within rounding."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student calculates the binding energy of helium-4 like this:\n\n$$\\begin{aligned} \\Delta m &= 2 \\cdot 1.007276\\ \\text{u} \\\\ &\\quad + 2 \\cdot 1.008665\\ \\text{u} \\\\ &\\quad - 4.002603\\ \\text{u} \\\\ &= 0.029279\\ \\text{u} \\end{aligned}$$\n\nand gets $B = 27.3\\ \\text{MeV}$. The correct value is $28.3\\ \\text{MeV}$. What went wrong?",
+   "choices": [
+    {
+     "text": "The proton mass was mixed with the mass of a whole atom.",
+     "correct": true,
+     "feedback": "Right. $1.007276\\ \\text{u}$ is a bare proton, but $4.002603\\ \\text{u}$ is the helium *atom* with two electrons. Use the hydrogen-1 atom, $1.007825\\ \\text{u}$, so that the electrons cancel."
+    },
+    {
+     "text": "The neutron mass should be the same as the proton mass.",
+     "feedback": "The neutron really is heavier, $1.008665\\ \\text{u}$. The error is the proton: a bare proton was subtracted from a whole atom with electrons."
+    },
+    {
+     "text": "The factor $931.5\\ \\text{MeV/u}$ is wrong for a nucleus.",
+     "feedback": "$931.5\\ \\text{MeV/u}$ holds for every mass. The masses are the problem: the two electrons of the helium atom were not matched on the other side."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "people",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "People"
+   ],
+   "optional": true,
+   "title": "Lise Meitner and the explanation of fission"
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: why fission releases energy",
+   "prompt": "A uranium-235 nucleus splits into two medium-sized nuclei. Why is energy released?",
+   "choices": [
+    {
+     "text": "The products are more tightly bound, so they have less mass.",
+     "correct": true,
+     "feedback": "Right: $B/A$ rises from $7.6\\ \\text{MeV}$ to about $8.4\\ \\text{MeV}$, and the lost mass leaves as kinetic energy."
+    },
+    {
+     "text": "The nucleons are destroyed and turn into pure energy.",
+     "feedback": "No nucleon disappears: $236$ nucleons go in and $236$ come out. Only the binding changes, and with it the mass of the system."
+    },
+    {
+     "text": "The uranium nucleus has a larger binding energy to give away.",
+     "feedback": "Binding energy is not stored energy that comes out. A *larger* $B/A$ after the reaction means energy was released."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Calculation: the deuteron",
+   "prompt": "The mass defect of a deuterium nucleus is $\\Delta m = 0.002388\\ \\text{u}$. What is its binding energy?",
+   "choices": [
+    {
+     "text": "$2.22\\ \\text{MeV}$",
+     "correct": true,
+     "feedback": "Right: $B = 0.002388\\ \\text{u} \\cdot 931.5\\ \\text{MeV/u} = 2.22\\ \\text{MeV}$, or $1.11\\ \\text{MeV}$ per nucleon."
+    },
+    {
+     "text": "$1.11\\ \\text{MeV}$",
+     "feedback": "This is the binding energy *per nucleon*. The deuteron has two nucleons, so $B = 2 \\cdot 1.11\\ \\text{MeV}$."
+    },
+    {
+     "text": "$0.0024\\ \\text{MeV}$",
+     "feedback": "This is the mass defect in $\\text{u}$, not an energy. Multiply by $931.5\\ \\text{MeV/u}$."
+    },
+    {
+     "text": "$3.6 \\cdot 10^{-13}\\ \\text{MeV}$",
+     "feedback": "The order of magnitude is that of joules, not $\\text{MeV}$: $3.6 \\cdot 10^{-13}\\ \\text{J} = 2.22\\ \\text{MeV}$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Graph: the most tightly bound",
+   "prompt": "Which of these nuclei has the largest binding energy *per nucleon*?",
+   "choices": [
+    {
+     "text": "$^{235}\\text{U}$, because it has the most nucleons",
+     "feedback": "Uranium has the largest *total* $B$, about $1784\\ \\text{MeV}$, but per nucleon only $7.59\\ \\text{MeV}$."
+    },
+    {
+     "text": "$^{56}\\text{Fe}$, at the peak of the curve",
+     "correct": true,
+     "feedback": "Right: $8.79\\ \\text{MeV}$ per nucleon, near the top together with $^{62}\\text{Ni}$."
+    },
+    {
+     "text": "$^{4}\\text{He}$, because it is so stable",
+     "feedback": "Helium-4 is very stable for a light nucleus, $7.07\\ \\text{MeV}$, but iron is more tightly bound per nucleon."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain: the end of a star",
+   "prompt": "A massive star fuses lighter elements into heavier ones, step by step, until its core is mostly iron. Then the fusion stops. Explain with the binding energy curve why a star cannot get energy by fusing iron.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>On the binding energy curve, iron …</li><li>If iron nuclei fused, the product would …</li><li>Energy is released only when …</li><li>Therefore the star …</li></ul></div>",
+   "model": "On the binding energy curve, iron is at the peak: its nucleons are the most tightly bound, about $8.8\\ \\text{MeV}$ per nucleon. If iron nuclei fused, the product would be heavier and less tightly bound, so it would have *more* mass than the fuel. Energy is released only when a reaction moves towards larger $B/A$. Fusing iron would therefore take energy instead of giving it, and the star's core loses its source of energy.",
+   "criteria": [
+    "The answer says that iron is at or near the peak of $B/A$.",
+    "The answer says that fusing iron gives a less tightly bound product (lower $B/A$, more mass).",
+    "The answer concludes that the reaction would need energy instead of releasing it.",
+    "The answer uses at least two sentence starters or key words correctly."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>French scientists played a big part in the story of nuclear energy: Henri Becquerel discovered radioactivity in Paris in 1896. In French, binding energy is <span lang=\"fr\">l'énergie de liaison</span>, and the two reactions are <span lang=\"fr\">la fusion</span> and <span lang=\"fr\">la fission</span>. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-be-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: nuclear energy\", \"phrases\": [{\"fr\": \"l'énergie de liaison\", \"en\": \"binding energy\", \"tip\": \"lay-nair-ZHEE duh lyay-ZON: *liaison* is the same word as the English one, said the French way.\"}, {\"fr\": \"la masse\", \"en\": \"mass\", \"tip\": \"la MASS: short and simple.\"}, {\"fr\": \"la fusion\", \"en\": \"fusion\", \"tip\": \"la fy-ZYON: the French *u* is close to the Finnish *y*.\"}, {\"fr\": \"la fission\", \"en\": \"fission\", \"tip\": \"la fee-SYON: the double *s* sounds like *s*.\"}, {\"fr\": \"La fusion libère de l'énergie.\", \"en\": \"Fusion releases energy.\", \"tip\": \"*libère* = releases, frees.\"}]}</script></div>"
+  }
+ ]
+}

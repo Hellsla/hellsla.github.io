@@ -1,0 +1,425 @@
+{
+ "version": 1,
+ "contribution": "The CLIL source investigation of chapter 5: students read five short sources on the T-3 results of 1968, the Western doubts, the invitation and the 1969 Culham measurement in Moscow, separate scientific evidence from political circumstances, learn how laser Thomson scattering measures an electron temperature, and argue why independent verification matters.",
+ "learn": [
+  "distinguish scientific evidence from political circumstances in historical sources.",
+  "explain how laser Thomson scattering measures the electron temperature of a plasma.",
+  "argue why independent verification made the T-3 result trusted, and convert a plasma temperature from keV to kelvins."
+ ],
+ "prior": [
+  "Secrecy ended at Geneva in 1958, and the tokamak was a Soviet design of the 1950s (chapter *Secret beginnings: fusion research to the 1950s*)",
+  "The Doppler effect: a moving source or reflector shifts the wavelength of a wave (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "It is August 1968. In Novosibirsk, in the middle of Siberia, a Soviet physicist tells an international conference that his machine has heated a plasma to about ten million degrees and held it far longer than any other machine in the world. If he is right, fusion research has found its way forward. If he is wrong, the West could waste years and millions copying a mistake.\n\nThe Western scientists in the room cannot visit his laboratory. Their governments and his are rivals in the Cold War, and nuclear research is watched by security services on both sides.",
+   "question": "How could anyone find out whether the result was true?"
+  },
+  {
+   "id": "think",
+   "stage": "herata",
+   "type": "explain",
+   "title": "Think about it: whom do you believe?",
+   "prompt": "Discuss with a partner, then write two or three sentences. Think of a surprising claim you have seen in the news or online (a new record, a miracle product, a discovery). What made you believe it or doubt it? Was it **who** made the claim, or **what evidence** they showed?\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a claim · evidence · to trust · to doubt · independent · to check · biased</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I believed / doubted it because …</li><li>The evidence was …</li><li>I would trust it more if …</li></ul></div>",
+   "pair": "Pair work: each of you gives one example; then decide together what made each claim believable.",
+   "model": "I once saw a video claiming that a new battery charges a phone in one minute. I doubted it, because it came from the company selling the battery and there were no tests by anyone else. I would believe it more if an independent laboratory or a consumer magazine had measured it. My partner believed a sports record, because it was measured with official timing and filmed by many cameras.",
+   "criteria": [
+    "The answer gives a concrete example of a claim.",
+    "The answer separates *who* made the claim from *what evidence* there was.",
+    "The answer says what would make the claim more believable."
+   ],
+   "hints": [
+    "Who gained if people believed the claim?",
+    "Could anyone else check it?"
+   ]
+  },
+  {
+   "id": "pred-verify",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: settling the question",
+   "prompt": "In 1968 many Western scientists doubted the Soviet temperature of about ten million degrees. Which way would settle the question most convincingly? Commit and give a reason. Sources C and D will show what really happened.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-d"
+   },
+   "choices": [
+    {
+     "text": "An outside team measures it with a different method.",
+     "feedback": "Right, and this is what happened. A British team from Culham measured T-3 in Moscow with laser Thomson scattering, a method that did not depend on the Soviet magnetic measurements. Different people, different equipment and a different method agreed: that is independent verification.",
+     "correct": true
+    },
+    {
+     "text": "The Soviet team repeats its own measurement many times.",
+     "feedback": "Repeating the same method does not remove its weakness: if runaway electrons fooled the magnetic method once, they would fool it every time. Source D shows the answer: an outside team with a different method, laser Thomson scattering."
+    },
+    {
+     "text": "Soviet and Western leaders discuss it at a summit.",
+     "feedback": "Politicians cannot decide what the temperature of a plasma is. A measurement can. Source D shows the answer: a British team measured T-3 with a different method, laser Thomson scattering."
+    },
+    {
+     "text": "The world's leading fusion experts hold a vote.",
+     "feedback": "A vote shows what experts believe, not what is true; in 1968 most Western experts would have voted *no*, and they were wrong. Source D shows what settled it: an independent measurement with a different method."
+    }
+   ]
+  },
+  {
+   "id": "pred-thomson",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: hot electrons and laser light",
+   "prompt": "A laser beam passes through a plasma, and the electrons scatter a little of its light sideways. Because the electrons move in all directions, the scattered light is spread over a range of wavelengths around the laser's wavelength (the **Doppler effect**). What happens to this range if the electrons are **hotter**? Commit now; the section *How Thomson scattering works* will show you.",
+   "justify": true,
+   "reveal": {
+    "after": "theory-thomson"
+   },
+   "choices": [
+    {
+     "text": "The range becomes wider.",
+     "feedback": "Right. Hotter electrons move faster, so the Doppler shifts are larger and the scattered light spreads over a wider range of wavelengths. The width of the spectrum measures the temperature directly.",
+     "correct": true
+    },
+    {
+     "text": "The range becomes narrower.",
+     "feedback": "Faster electrons give *larger* Doppler shifts, not smaller ones. A narrower spectrum would mean slower, colder electrons. The width grows with the temperature."
+    },
+    {
+     "text": "The range stays the same, but it is brighter.",
+     "feedback": "The brightness depends mainly on how many electrons there are (the density) and on the laser power. The temperature changes the speed of the electrons and so the *width* of the spectrum."
+    },
+    {
+     "text": "All the light moves to longer wavelengths.",
+     "feedback": "The electrons move towards and away from the detector equally often, so the light is spread on *both* sides of the laser wavelength. Hotter electrons make the spread wider."
+    }
+   ]
+  },
+  {
+   "id": "read-guide",
+   "stage": "tutki",
+   "type": "text",
+   "title": "How to work with the sources",
+   "text": "Read the introduction together. Then work in pairs: **partner A reads Sources A and C, partner B reads Sources B and D**, and both read Source E. For each source, note (1) **what type of source** it is, (2) **one fact** it gives, and (3) whether this fact is **scientific evidence** or a **political circumstance**. Then explain your sources to your partner.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>the Iron Curtain · a tokamak · an electron temperature · confinement · Bohm diffusion · runaway electrons · indirect · direct · a method · to verify · independent · scattering · a laser · surveillance · a co-author</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Source … is a … written by / based on …</li><li>It tells us that …</li><li>This is evidence, because it can be checked by …</li><li>This is a circumstance: it explains why people …</li><li>The source is reliable / less reliable because …</li></ul></div>"
+  },
+  {
+   "id": "theory-intro",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Intro"
+   ]
+  },
+  {
+   "id": "theory-a",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Source A"
+   ]
+  },
+  {
+   "id": "theory-b",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Source B"
+   ]
+  },
+  {
+   "id": "doubt",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Question on Sources A and B",
+   "text": "Source A says that the T-3 temperature was *calculated from the magnetic properties of the plasma*. Source B explains the critics' argument.",
+   "question": {
+    "type": "choice",
+    "prompt": "Which statement best describes the **scientific** reason for the Western doubt?",
+    "choices": [
+     {
+      "text": "A few very fast electrons could fake the reading.",
+      "feedback": "Right. The magnetic method measures the total energy of the electrons. A small group of runaway electrons could carry much of that energy while most of the plasma stayed colder, so the method could not show that the bulk was hot.",
+      "correct": true
+     },
+     {
+      "text": "Soviet scientists could not be trusted in the Cold War.",
+      "feedback": "This is a political circumstance, not a scientific reason. Source B gives a physical argument: the magnetic method could be fooled by a few runaway electrons."
+     },
+     {
+      "text": "The tokamak was too small to reach high temperatures.",
+      "feedback": "Size was not the argument. Source B says that the *method* was the problem: a few runaway electrons could make the magnetic estimate too high."
+     },
+     {
+      "text": "Novosibirsk was too far away for Western visitors.",
+      "feedback": "Western scientists did attend the conference in Novosibirsk. Their doubt was about the measurement method, which runaway electrons could fool."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-c",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Source C"
+   ]
+  },
+  {
+   "id": "theory-d",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Source D"
+   ]
+  },
+  {
+   "id": "theory-e",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Source E"
+   ]
+  },
+  {
+   "id": "sort",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Evidence or circumstance?",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-ic-sort\"><script type=\"application/json\">{\"prompt\": \"Sort each statement from the sources. Is it **scientific evidence** about the plasma, or a **political circumstance** around the research? Then press *Check*.\", \"options\": [\"scientific evidence\", \"political circumstance\"], \"items\": [{\"text\": \"The scattered laser light showed electron temperatures of about 1 keV.\", \"answer\": \"scientific evidence\", \"feedback\": \"A measurement of the plasma that others can repeat with the same method: evidence.\"}, {\"text\": \"Warsaw Pact armies invaded Czechoslovakia in August 1968.\", \"answer\": \"political circumstance\", \"feedback\": \"This tells us about the world in which the scientists worked, not about the plasma.\"}, {\"text\": \"The team needed clearance and felt watched by the KGB.\", \"answer\": \"political circumstance\", \"feedback\": \"Security rules and surveillance made the work harder, but they say nothing about the temperature.\"}, {\"text\": \"The Thomson results agreed with other methods where they could be compared.\", \"answer\": \"scientific evidence\", \"feedback\": \"Agreement between independent methods is strong evidence.\"}, {\"text\": \"T-3 held its energy for more than 10 milliseconds.\", \"answer\": \"scientific evidence\", \"feedback\": \"A measured property of the plasma: evidence (here from the Soviet team's own measurements).\"}, {\"text\": \"Western scientists distrusted results from a rival country.\", \"answer\": \"political circumstance\", \"feedback\": \"Distrust explains why people doubted, but it is not a measurement of the plasma.\"}, {\"text\": \"A Soviet scientist was a co-author of the British paper.\", \"answer\": \"political circumstance\", \"feedback\": \"This shows cooperation across the Iron Curtain. It is about the people, not a measurement of the plasma.\"}], \"done\": \"All right. The temperature was settled by evidence: measurements that others can repeat. The circumstances explain why people doubted and why the visit was difficult and unusual.\"}</script></div>"
+  },
+  {
+   "id": "why-invite",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Source question: why invite a rival?",
+   "prompt": "Use Sources C and D. Discuss with your partner, then write three or four sentences: why did Artsimovich invite British scientists to measure his machine, and why did the British accept, although the two countries were Cold War rivals? Give one reason for each side and name the source.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Artsimovich invited them because …</li><li>According to Source C, …</li><li>The British accepted because …</li><li>Both sides gained, because …</li></ul></div>",
+   "pair": "Pair work: partner A explains Artsimovich's side, partner B the British side; then write together.",
+   "model": "Artsimovich invited the British because his result was doubted in the West, and an independent measurement by Western scientists was the best way to prove it (Source C). He was confident that the result was correct, so he had little to lose. The British accepted because they wanted to test their new laser method on the best plasma in the world and to find out whether the tokamak really worked (Source C). Both sides gained from the cooperation, even though the political situation was tense and the team was watched (Sources C and D).",
+   "criteria": [
+    "The answer gives a reason for Artsimovich (to have his result accepted, confidence in it).",
+    "The answer gives a reason for the British (to test their method, to learn whether tokamaks work).",
+    "The answer names the source of each reason.",
+    "The answer mentions that both sides gained despite the political situation."
+   ],
+   "hints": [
+    "What did Artsimovich need that only Western scientists could give him?",
+    "What did the Culham team want to test?"
+   ]
+  },
+  {
+   "id": "theory-thomson",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Thomson"
+   ]
+  },
+  {
+   "id": "theory-key",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with the sources and the physics. Then answer the opening question in two sentences: why should a scientist believe a result from a rival country?",
+   "predictions": [
+    "pred-verify",
+    "pred-thomson"
+   ]
+  },
+  {
+   "id": "kev-kelvin",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Ten million degrees?",
+   "prompt": "The Culham team measured an electron temperature of about $1\\ \\text{keV}$. Physicists give plasma temperatures as an energy $k_\\text{B} T$ in electronvolts. Calculate the temperature $T$ in kelvins that corresponds to $k_\\text{B} T = 1.00\\ \\text{keV}$. Give $T$ in millions of kelvins: for example, type $3.5$ for $3.5 \\cdot 10^{6}\\ \\text{K}$.",
+   "answer": 11.6,
+   "unit": "$\\cdot 10^{6}\\ \\text{K}$",
+   "tolerance": 0.02,
+   "hints": [
+    "First convert $1.00\\ \\text{keV}$ to joules: $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$ and $1\\ \\text{keV} = 1000\\ \\text{eV}$.",
+    "Solve $E = k_\\text{B} T$ for $T$: $T = E / k_\\text{B}$, with $k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}$.",
+    "$E = 1.602 \\cdot 10^{-16}\\ \\text{J}$"
+   ],
+   "mistakes": [
+    {
+     "value": 0.0116,
+     "feedback": "You forgot that $1\\ \\text{keV} = 1000\\ \\text{eV}$: this is the temperature for $1\\ \\text{eV}$, in millions of kelvins."
+    },
+    {
+     "value": 11600000,
+     "feedback": "This is the temperature in kelvins. The task asks for millions of kelvins: $11\\ 600\\ 000\\ \\text{K} = 11.6 \\cdot 10^{6}\\ \\text{K}$, so type $11.6$."
+    }
+   ],
+   "solution": "**Given:** $k_\\text{B} T = E = 1.00\\ \\text{keV}$; the Boltzmann constant $k_\\text{B} = 1.381 \\cdot 10^{-23}\\ \\text{J/K}$; $1\\ \\text{eV} = 1.602 \\cdot 10^{-19}\\ \\text{J}$\n\n**Find:** the temperature $T$ in kelvins\n\n**Principle:** Physicists state a plasma temperature as the energy $k_\\text{B} T$, the typical energy of one particle's random motion. To get kelvins, divide this energy by the Boltzmann constant.\n\n**Formula:** $E = k_\\text{B} T$, so $T = \\dfrac{E}{k_\\text{B}}$\n\n**Unit conversions:** $E = 1.00\\ \\text{keV} = 1000\\ \\text{eV} = 1000 \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J} = 1.602 \\cdot 10^{-16}\\ \\text{J}$\n\n**Substitution:**\n\n$$\\begin{aligned} T &= \\frac{1.602 \\cdot 10^{-16}\\ \\text{J}}{1.381 \\cdot 10^{-23}\\ \\text{J/K}} \\\\ &= 1.160 \\cdot 10^{7}\\ \\text{K} \\end{aligned}$$\n\n**Answer:** $T \\approx 1.16 \\cdot 10^{7}\\ \\text{K} = 11.6 \\cdot 10^{6}\\ \\text{K}$, about $12$ million kelvin. Three significant figures, as in $1.00\\ \\text{keV}$.\n\n**Reasonableness:** The sources speak of \"about ten million degrees\", which fits. A difference of $273$ between kelvins and degrees Celsius does not matter at this size. The centre of the Sun is at about $15$ million kelvin, so T-3's electrons were nearly as hot as the Sun's core, although the plasma was far less dense."
+  },
+  {
+   "id": "roleplay-help",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Role-play: Culham, December 1968",
+   "text": "Work in groups of three or four. It is December 1968 at Culham. Should the laboratory send a team to Moscow? Each person takes one role, prepares for two minutes, and speaks for about one minute. Then the director decides.\n\n- **The director (Bas Pease)** chairs the meeting and must decide.\n- **A laser scientist** wants to go: the new method could finally settle the question.\n- **A sceptical physicist** thinks the Soviet result is probably wrong and the trip a waste of time and money.\n- **A security officer** worries about secrets, surveillance and the political situation after Czechoslovakia.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a risk · a benefit · a measurement · to settle a question · to waste · surveillance · trust · independent</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>In my role, I think we should / should not …, because …</li><li>The main risk is …, but …</li><li>If the result is correct, then …</li><li>I see your point, but the evidence …</li><li>As director, I have decided to …, because …</li></ul></div>"
+  },
+  {
+   "id": "report",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Write: a short report for a science magazine",
+   "prompt": "Write a short report of 80–120 words for a science magazine in November 1969: what the Culham team did in Moscow, what they found, and **why independent verification matters**. Use at least three words from the word bank and one sentence starter.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Last year, Soviet scientists reported that …</li><li>Many physicists doubted it, because …</li><li>The team measured … by …</li><li>Independent verification matters because …</li></ul></div>",
+   "model": "**Soviet fusion result confirmed by British team.** Last year Soviet scientists reported that their T-3 tokamak had heated a plasma to about ten million degrees. Many Western physicists doubted it, because the temperature had been calculated indirectly. This year a team from Culham travelled to Moscow and measured the electron temperature directly by shining a laser through the plasma and analysing the scattered light. Their result, published in *Nature*, agrees with the Soviet value: about 1 keV. Independent verification matters because a different team with a different method can find hidden errors. When two independent methods agree, the result is much more trustworthy. The tokamak now looks like the most promising fusion machine.",
+   "criteria": [
+    "The report says what the team did (laser Thomson scattering on T-3 in Moscow).",
+    "The report gives the result (about 1 keV, ten million degrees) and says that it agreed with the Soviet claim.",
+    "The report explains why independent verification matters (a different team and method can find hidden errors).",
+    "The language: 80–120 words, at least three key terms, clear sentences."
+   ],
+   "hints": [
+    "Start with a headline and one sentence about the doubt.",
+    "What makes Thomson scattering *independent* of the Soviet method?"
+   ]
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A student writes: *\"The British confirmed the T-3 result because relations between East and West had improved, so they trusted the Soviet scientists.\"* What is wrong with this explanation?",
+   "choices": [
+    {
+     "text": "It explains a measured result with politics.",
+     "feedback": "Right. The result was accepted because a direct, independent measurement agreed with it. Relations were not good in 1968–1969, and trust was not the reason: the team checked rather than trusted.",
+     "correct": true
+    },
+    {
+     "text": "The British never measured T-3 at all.",
+     "feedback": "They did: the Culham team measured T-3 with laser Thomson scattering in 1969 (Source D). The error is the reason the student gives: politics instead of evidence."
+    },
+    {
+     "text": "Relations had improved because of the Prague Spring.",
+     "feedback": "The Prague Spring was ended by the Warsaw Pact invasion of August 1968, which made relations worse. And in any case, the result was accepted because of the measurement, not because of politics."
+    },
+    {
+     "text": "Only Soviet scientists could judge a Soviet result.",
+     "feedback": "The opposite is true: an *outside* team made the strongest test. The student's error is to explain the confirmation with politics instead of with the measurement."
+    }
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. What made it independent?",
+   "prompt": "What made the Culham measurement an **independent** verification of the T-3 result?",
+   "choices": [
+    {
+     "text": "It was published in a famous Western journal.",
+     "feedback": "Publication lets others read and check a result, but it does not make a measurement independent. Independence came from a different team, its own equipment and a different method."
+    },
+    {
+     "text": "Another team used its own, different method.",
+     "feedback": "Right. The British brought their own equipment and measured the electron temperature with Thomson scattering, which does not depend on the Soviet magnetic method or its possible errors.",
+     "correct": true
+    },
+    {
+     "text": "The measurement was made outside the Soviet Union.",
+     "feedback": "It was made in Moscow, on the Soviet machine. What made it independent was the different team and the different method."
+    },
+    {
+     "text": "Many more shots were measured than in 1968.",
+     "feedback": "The number of shots helps with random errors, but the critics' worry was a *systematic* weakness of the method. A different method was needed, and that is what made the check independent."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Reading a spectrum",
+   "prompt": "Two Thomson scattering spectra are measured on the same machine on two different days. Spectrum P is twice as wide as spectrum Q, and both are centred on the laser wavelength. What can you conclude?",
+   "choices": [
+    {
+     "text": "The electrons were hotter on the day of P.",
+     "feedback": "Right. A wider spectrum means larger Doppler shifts, so faster electrons and a higher electron temperature. (The width grows with the square root of the temperature, so twice the width means four times the temperature.)",
+     "correct": true
+    },
+    {
+     "text": "The plasma was denser on the day of P.",
+     "feedback": "A denser plasma scatters *more* light, so the spectrum is brighter, but the width depends on the speed of the electrons, that is, on the temperature."
+    },
+    {
+     "text": "The laser was more powerful on the day of P.",
+     "feedback": "A stronger laser gives more scattered light but the same width. The width comes from the electrons' motion: P's electrons were hotter."
+    },
+    {
+     "text": "The plasma moved towards the detector during P.",
+     "feedback": "A plasma moving as a whole would *shift* the whole spectrum to one side. A wider spectrum centred on the laser wavelength means faster random motion: hotter electrons."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Evidence or circumstance?",
+   "prompt": "Which of these is **evidence** that the T-3 plasma was hot, rather than a circumstance of the research?",
+   "choices": [
+    {
+     "text": "Artsimovich led a famous programme.",
+     "feedback": "Fame and position are circumstances. They may explain why people listened, but they are not measurements of the plasma."
+    },
+    {
+     "text": "Western scientists were suspicious of Soviet claims.",
+     "feedback": "Suspicion is a circumstance that explains the doubt. It says nothing about the temperature itself."
+    },
+    {
+     "text": "A laser spectrum was wide enough for about 1 keV.",
+     "feedback": "Right. The width of the Thomson scattering spectrum is a measurement of the plasma that other people can repeat: evidence.",
+     "correct": true
+    },
+    {
+     "text": "The team needed security clearance to travel.",
+     "feedback": "Security rules are a political circumstance. They made the visit difficult but did not measure anything."
+    }
+   ]
+  },
+  {
+   "id": "check-write",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Transfer: a record today",
+   "prompt": "Today, both public laboratories and private fusion companies announce records, for example the longest plasma or the highest temperature. Choose one kind of claim and write three or four sentences: what would **independent verification** of such a record look like, and why is it important? Use the T-3 story as an example.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Independent verification would mean that …</li><li>This matters because …</li><li>For example, in 1969 …</li></ul></div>",
+   "model": "Suppose a company announces that its machine has reached 100 million degrees. Independent verification would mean that scientists from another institution measure the temperature, ideally with a different diagnostic method, or at least check the raw data and the method in a peer-reviewed paper. This is important because the company has a reason to present its results in the best light, and every method has hidden weaknesses. In 1968 the T-3 temperature was doubted until a British team measured it with laser Thomson scattering; only then did the world accept it and start building tokamaks.",
+   "criteria": [
+    "The answer describes a real form of independent verification (another team, another method, peer review of data).",
+    "The answer explains why it matters (hidden errors, interests of the claimant).",
+    "The answer uses the T-3 case correctly as an example."
+   ],
+   "hints": [
+    "Who made the claim, and do they gain from it?",
+    "What did the Culham team bring that the Soviet team did not have?"
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The Iron Curtain is <span lang=\"fr\">le rideau de fer</span> in French. Scientists who check each other's results do <span lang=\"fr\">une vérification</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ic-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: across the Iron Curtain\", \"phrases\": [{\"fr\": \"le rideau de fer\", \"en\": \"the Iron Curtain\", \"tip\": \"luh ree-DOH duh FAIR: *eau* sounds like a Finnish *oo*.\"}, {\"fr\": \"un laser\", \"en\": \"a laser\", \"tip\": \"uh la-ZAIR: a nasal *un*, and the *s* between vowels sounds like *z*.\"}, {\"fr\": \"la température\", \"en\": \"the temperature\", \"tip\": \"la tan-pay-ra-TYR: *u* is the Finnish *y*.\"}, {\"fr\": \"une vérification indépendante\", \"en\": \"an independent check\", \"tip\": \"yn vay-ree-fee-ka-SYON an-day-pan-DANT: three nasal vowels; do not say the *n*.\"}, {\"fr\": \"Les scientifiques travaillent ensemble.\", \"en\": \"The scientists work together.\", \"tip\": \"lay syan-tee-FEEK tra-VAI an-SANBL: the *-ent* of *{fr}travaillent{/fr}* is silent.\"}]}</script></div>"
+  }
+ ]
+}

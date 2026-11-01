@@ -13,8 +13,8 @@
 .fx-btn.fx-small{min-height:40px;padding:0 .75rem}
 .fx-btn[hidden]{display:none}
 .fx-link{font-weight:600}
-.fx-msg{margin:.5rem 0 0;min-height:1.3em;font-size:var(--fs-ui)}
-.fx-note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0}
+.fx-msg{margin:.5rem 0 0;min-height:1.3em;font-size:var(--fs-ui);max-width:var(--measure)}
+.fx-note{font-size:var(--fs-small);color:var(--ink-2);margin:.5rem 0 0;max-width:var(--measure)}
 .fx output{display:block;font-size:var(--fs-ui);min-height:0}
 .fx output[data-state=ok]{color:var(--accent-deep);font-weight:600}
 .fx output[data-state=no]{color:#8a3b1a}
@@ -102,7 +102,7 @@
 .fx-field-wide{flex:2 1 14rem}
 .fx-check{display:flex;gap:.4rem;align-items:center;font-size:var(--fs-small);font-weight:400!important;min-height:40px}
 .fx-check input{width:20px;height:20px}
-.fx-legend{list-style:none;margin:.5rem 0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:var(--fs-small);color:var(--ink-2)}
+.fx-legend{list-style:none;margin:.5rem 0;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:var(--fs-inner);color:var(--ink-2)}
 .fx-legend li{display:flex;align-items:center;gap:.35rem}
 .fx-swatch{display:inline-block;width:.85rem;height:.85rem;border-radius:3px;flex:none}
 .fx-sym{font-size:1rem;line-height:1}
@@ -128,7 +128,7 @@
 /* the timeline */
 .fx-tl-filters{display:flex;flex-wrap:wrap;gap:.75rem 1rem;margin:.25rem 0 .5rem}
 .fx-tl-strip{border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--fig-paper);padding:.25rem .5rem;overflow-x:auto}
-.fx-tl-strip svg{display:block;width:100%;min-width:600px;height:auto}
+.fx-tl-strip svg{display:block;width:100%;height:auto}
 .fx-tl-strip a:focus-visible{outline:none}.fx-tl-strip a:focus-visible *{stroke:#14171e;stroke-width:3}
 .fx-tl-list{list-style:none;margin:.5rem 0 0;padding:0;display:grid;gap:.75rem;max-width:calc(var(--measure) + 3rem)}
 .fx-tl-card{border:1px solid var(--line);border-left:6px solid var(--fig-muted);border-radius:var(--inner-radius);background:var(--surface);padding:.8rem 1rem;font-size:var(--fs-inner)}
@@ -146,7 +146,7 @@
 .fx-plot{position:relative;container-type:inline-size;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--fig-paper)}
 .fx-plot>svg{display:block;width:100%;height:auto}
 .fx-labs{position:absolute;inset:0;pointer-events:none}
-.fx-lab{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-size:clamp(12px,2.45cqw,16px);line-height:1;color:var(--fig-ink)}
+.fx-lab{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-size:clamp(14px,2.45cqw,16px);line-height:1;color:var(--fig-ink)}
 .fx-lab .katex{font-size:1.05em}
 .fx-lab-start{transform:translate(0,-50%)}
 .fx-lab-end{transform:translate(-100%,-50%)}
@@ -248,7 +248,7 @@
 .fx-sc-say{margin:.6rem 0 0}
 .fx-sc-src{margin:.3rem 0 0;padding-left:1.2rem;display:grid;gap:.45rem;font-size:var(--fs-ui)}
 .fx-sc-cite{display:block;margin:0}
-@media (max-width:34rem){.fx-sc-row{grid-template-columns:minmax(0,1fr) auto;gap:.2rem .6rem}.fx-sc-lab{grid-column:1/-1}.fx-sc-track,.fx-sc-axis{grid-column:1}.fx-sc-val{grid-column:2}.fx-sc-axisrow>span:first-child{display:none}.fx-sc-kind{display:inline}}
+@media (max-width:34rem){.fx-sc-row{grid-template-columns:minmax(0,1fr) 7.6rem;gap:.2rem .6rem}.fx-sc-lab{grid-column:1/-1}.fx-sc-track,.fx-sc-axis{grid-column:1}.fx-sc-val{grid-column:2}.fx-sc-axisrow>span:first-child{display:none}.fx-sc-kind{display:inline}}
 /* ===== end of the nuclear components ===== */
 
 /* ===== FY14 explorers: Tokamak vs Stellarator (fx/reactors.js) and the ITER component explorer (fx/iter.js) =====
@@ -370,3 +370,6 @@
 /* French is never hyphenated automatically: beginners learn these words' spelling from the page */
 [lang|="fr"]{hyphens:manual;-webkit-hyphens:manual}
 .unit .intro-media>p{margin-top:.9rem}
+
+/* component prompts keep the reading measure */
+.fx .fx-prompt{max-width:var(--measure)}

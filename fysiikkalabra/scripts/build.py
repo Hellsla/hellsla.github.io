@@ -417,7 +417,7 @@ def build_units(lang, out, unit_pub):
             data = json.loads(re.search(r'>(.*)</script>', block, re.S).group(1).replace("<\\/", "</")); data["sim"] = sb
             block = '<script id="fl-strings" type="application/json">' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>"
         embedded = ""                                    # the data files the components read, in the page (works from file: and offline)
-        for ref in dict.fromkeys(re.findall(r'data-src="(units/[^"]+\.json)"', md_text + (f / "inquiry.json").read_text())):
+        for ref in dict.fromkeys(re.findall(r'data-src=\\?"(units/[^"\\]+\.json)\\?"', md_text + (f / "inquiry.json").read_text())):
             embedded += (f'<script type="application/json" class="fx-src" data-for="{ref}">'
                          + json.dumps(json.loads(units.asset_source(ref).read_text()), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>")
         notice_html = "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("units.notice_draft")}</p>'

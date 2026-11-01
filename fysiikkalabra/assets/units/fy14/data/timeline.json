@@ -274,12 +274,12 @@
       "era": "modern-physics",
       "theme": "science",
       "title": "Bohr's quantum atom",
-      "text": "Niels Bohr, who had worked in Rutherford's laboratory, published a new atomic model in July 1913. Electrons move only in certain allowed orbits and give off light when they jump between them. The model explained the spectrum of hydrogen. Today, physicists use these spectral lines to measure what happens inside fusion plasmas, for example how many impurity atoms are present.",
+      "text": "Niels Bohr, back in Copenhagen after working in Rutherford's laboratory in Manchester, published a new atomic model in July 1913. Electrons move only in certain allowed orbits and give off light when they jump between them. The model explained the spectrum of hydrogen. Today, physicists use these spectral lines to measure what happens inside fusion plasmas, for example how many impurity atoms are present.",
       "people": [
         "Niels Bohr"
       ],
-      "country": "United Kingdom",
-      "place": "Manchester",
+      "country": "Denmark",
+      "place": "Copenhagen",
       "facility": null,
       "biography": {
         "name": "Niels Bohr",
@@ -1681,7 +1681,7 @@
       "era": "tokamak-race",
       "theme": "device",
       "title": "TFTR starts in Princeton",
-      "text": "The Tokamak Fusion Test Reactor at the Princeton Plasma Physics Laboratory began operating in 1982. It had been approved in 1976, during the energy crisis, and construction began in 1980. TFTR was designed to work with deuterium–tritium fuel. Handling radioactive tritium safely became a new engineering challenge that fusion research had to learn.",
+      "text": "The Tokamak Fusion Test Reactor at the Princeton Plasma Physics Laboratory began operating in 1982. It had been approved in the mid-1970s, during the energy crisis, and construction began in 1980. TFTR was designed to work with deuterium–tritium fuel. Handling radioactive tritium safely became a new engineering challenge that fusion research had to learn.",
       "people": [],
       "country": "United States",
       "place": "Princeton",
@@ -1705,7 +1705,7 @@
       "era": "tokamak-race",
       "theme": "device",
       "title": "JET's first plasma",
-      "text": "The Joint European Torus produced its first plasma at Culham, and Queen Elizabeth II opened it officially in April 1984. JET was completed on time and on budget, a rare achievement for a big science project. For forty years it was the largest operating tokamak and the main testing ground for ITER's physics and technology.",
+      "text": "The Joint European Torus produced its first plasma at Culham, and Queen Elizabeth II opened it officially in April 1984. For forty years it was the largest operating tokamak and the main testing ground for ITER's physics and technology.",
       "people": [],
       "country": "United Kingdom",
       "place": "Culham",

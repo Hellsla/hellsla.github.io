@@ -13,6 +13,7 @@ window.FX.timeline = (el, d, A) => {
   const root = h('div', { class: 'fx-tl' }); el.append(root);
   A.data(src).then(build).catch((e) => root.append(h('p', { class: 'fx-note' }, 'The timeline data could not be loaded (' + e + ').')));
 
+  const yr = (x) => String(x == null ? '' : x).slice(0, 4);   // a biography's ISO date shown as its year
   function build(data) {
     const eras = data.eras.filter((e) => !d.eras || d.eras.includes(e.id));
     const all = data.events.filter((e) => eras.some((x) => x.id === e.era) && (!d.themes || d.themes.includes(e.theme))).sort((a, b) => a.year - b.year || String(a.date).localeCompare(String(b.date)));
@@ -49,22 +50,24 @@ window.FX.timeline = (el, d, A) => {
       count.textContent = `${shown.length} event${shown.length === 1 ? '' : 's'} shown.`;
       // the strip: the years of the selected era (or all), ticks stacked when they share a year
       const er = eras.find((x) => x.id === era), a = er ? er.from : Math.min(...all.map((e) => e.year)), b = er ? er.to : Math.max(...all.map((e) => e.year));
-      const W = 1000, X = (y) => 30 + (W - 60) * (y - a) / Math.max(1, b - a), seen = {};
-      let svg = `<svg viewBox="0 0 ${W} 120" role="img" aria-label="Year strip from ${a} to ${b}: one mark per event shown; the list below has the same events."><line x1="20" y1="90" x2="${W - 20}" y2="90" stroke="#6b7480" stroke-width="2"/>`;
-      const step = b - a > 80 ? 20 : b - a > 30 ? 10 : 5;
-      for (let y = Math.ceil(a / step) * step; y <= b; y += step) svg += `<line x1="${X(y)}" y1="86" x2="${X(y)}" y2="96" stroke="#6b7480" stroke-width="2"/><text x="${X(y)}" y="114" font-size="15" text-anchor="middle" fill="#474c5b">${y}</text>`;
-      shown.forEach((e) => {
-        const k = Math.round(X(e.year) / 8); seen[k] = (seen[k] || 0) + 1;
+      // the strip is drawn at its real width (1 unit = 1 px), so labels keep their size on a phone; fewer year labels there
+      const W = Math.max(300, Math.min(1000, Math.round(strip.clientWidth || 1000) - 16)), X = (y) => 30 + (W - 60) * (y - a) / Math.max(1, b - a), seen = {};
+      const step = [5, 10, 20, 25, 50].find((st) => (W - 60) * st / Math.max(1, b - a) >= 56) || 50;   // labels at least 56 px apart
+      const level = shown.map((e) => { const k = Math.round(X(e.year) / 10); seen[k] = (seen[k] || 0) + 1; return seen[k]; });
+      const H = 60 + 15 * Math.max(2, ...level), base = H - 30;   // as tall as the highest stack of marks
+      let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Year strip from ${a} to ${b}: one mark per event shown; the list below has the same events."><line x1="20" y1="${base}" x2="${W - 20}" y2="${base}" stroke="#6b7480" stroke-width="2"/>`;
+      for (let y = Math.ceil(a / step) * step; y <= b; y += step) svg += `<line x1="${X(y)}" y1="${base - 4}" x2="${X(y)}" y2="${base + 6}" stroke="#6b7480" stroke-width="2"/><text x="${X(y)}" y="${base + 24}" font-size="15" text-anchor="middle" fill="#474c5b">${y}</text>`;
+      shown.forEach((e, i) => {
         const [c, sh] = TH[e.theme] || ['#555', 'circle'];
-        svg += `<a href="#ev-${e.id}" aria-label="${e.year}: ${e.title.replace(/"/g, '&quot;')}">${mark(sh, X(e.year), 82 - 15 * seen[k], c)}<title>${e.year}: ${e.title.replace(/</g, '&lt;')}</title></a>`;
+        svg += `<a href="#${idp}ev-${e.id}" aria-label="${e.year}: ${e.title.replace(/"/g, '&quot;')}">${mark(sh, X(e.year), base - 8 - 15 * (level[i] - 1), c)}<title>${e.year}: ${e.title.replace(/</g, '&lt;')}</title></a>`;
       });
       strip.innerHTML = svg + '</svg>';
       list.replaceChildren(...shown.map((e) => {
         const [c] = TH[e.theme] || ['#555'];
         const bio = e.biography ? h('details', { class: 'fx-tl-bio' }, h('summary', {}, `Who was ${e.biography.name}?`),
-          h('p', {}, h('strong', {}, `${e.biography.name} (${e.biography.born}–${e.biography.died || ''})`)), h('p', { html: md(e.biography.text) })) : null;
+          h('p', {}, h('strong', {}, `${e.biography.name} (${yr(e.biography.born)}–${e.biography.died ? yr(e.biography.died) : ''})`)), h('p', { html: md(e.biography.text) })) : null;
         const mapLink = e.facility && d.map ? h('a', { class: 'fx-link', href: `${d.map}#f-${e.facility}` }, 'Show on the map →') : null;
-        return h('li', { class: 'fx-tl-card', id: 'ev-' + e.id, style: `border-left-color:${c}`, tabindex: '-1' },
+        return h('li', { class: 'fx-tl-card', id: idp + 'ev-' + e.id, style: `border-left-color:${c}`, tabindex: '-1' },
           h('p', { class: 'fx-tl-year' }, h('span', { class: 'fx-tl-y' }, e.date ? new Date(e.date + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : String(e.year)),
             ' · ' + [e.place, e.country].filter(Boolean).join(', ') + ' · ' + (data.themes[e.theme] || e.theme)),
           h('h4', {}, e.title), h('p', { html: md(e.text) }),
@@ -75,6 +78,8 @@ window.FX.timeline = (el, d, A) => {
       A.typeset(list);
     }
     draw();
+    let lastW = strip.clientWidth;
+    if ('ResizeObserver' in window) new ResizeObserver(() => { if (Math.abs(strip.clientWidth - lastW) > 20) { lastW = strip.clientWidth; draw(); } }).observe(strip);
     strip.addEventListener('click', (ev) => { const a = ev.target.closest('a'); if (!a) return; ev.preventDefault(); const t = document.getElementById(a.getAttribute('href').slice(1)); if (t) { t.scrollIntoView({ block: 'center' }); t.focus({ preventScroll: true }); } });
   }
 };

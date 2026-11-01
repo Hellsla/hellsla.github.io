@@ -1,0 +1,23 @@
+{
+ "id": "fy14-fusion-reactions",
+ "course": "FY14",
+ "chapter": 3,
+ "order": 2,
+ "title": "Fusion reactions: from the Sun to deuterium and tritium",
+ "description": "The proton–proton chain, the Coulomb barrier and quantum tunnelling, the first laboratory fusion reactions of 1934, D–T fusion with its 14.1 MeV neutron and 3.5 MeV alpha particle, energy scales of fuels, and why a reactor cannot copy the Sun.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": ["physics", "english", "french"],
+ "sources": [
+  {"title": "M. L. Oliphant, P. Harteck and Lord Rutherford, 'Transmutation Effects observed with Heavy Hydrogen', Nature 133, 413 (1934), letter dated 9 March 1934 (text as reproduced by ChemTeam)", "url": "https://www.chemteam.info/Chem-History/Rutherford-1934a/Rutherford-1934a.html", "checked": "2026-11-01"},
+  {"title": "Mark Oliphant (Wikipedia): 1901–2000, Cavendish from 1927, discovery of tritium and helium-3 in 1934, cavity magnetron in Birmingham, ANU, Governor of South Australia 1971–1976", "url": "https://en.wikipedia.org/wiki/Mark_Oliphant", "checked": "2026-11-01"},
+  {"title": "Proton–proton chain (Wikipedia): steps of the pp-I branch, 26.73 MeV, about 2 % to neutrinos, average proton waits about 9 billion years, Bethe and Critchfield 1938, tunnelling", "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain", "checked": "2026-11-01"},
+  {"title": "Nuclear fusion (Wikipedia): Oliphant 1934 as the first laboratory demonstration, D–T products 3.5 MeV and 14.1 MeV, Sun's core power density 276 µW/cm³", "url": "https://en.wikipedia.org/wiki/Nuclear_fusion", "checked": "2026-11-01"},
+  {"title": "H. Kragh, 'Before Bethe: Early Ideas of the Sun's Generation of Energy' (arXiv:2209.00072): Gamow 1928, Atkinson and Houtermans 1929", "url": "https://arxiv.org/abs/2209.00072", "checked": "2026-11-01"},
+  {"title": "Sun (Wikipedia): core temperature 15.7 million K, core density up to 150 g/cm³", "url": "https://en.wikipedia.org/wiki/Sun", "checked": "2026-11-01"},
+  {"title": "ITER, 'Hotter than the sun': 150 million °C, about ten times the Sun's core; a tokamak plasma about a million times less dense than air", "url": "https://iter.org/node/18010", "checked": "2026-11-01"},
+  {"title": "ITER, 'The Tokamak': plasma volume 840 m³, 500 MW of fusion power (planned)", "url": "https://www.iter.org/node/2304", "checked": "2026-11-01"},
+  {"title": "AME2020 atomic masses (IAEA Atomic Mass Data Center) and CODATA 2018 constants (NIST): Q-values of the pp chain and of D–T, nuclear masses of ⁴He and the neutron", "url": "https://www-nds.iaea.org/amdc/", "checked": "2026-11-01"},
+  {"title": "Heat of combustion (Wikipedia): anthracite 32.5 MJ/kg, methane 50.0 MJ/kg (energy scales)", "url": "https://en.wikipedia.org/wiki/Heat_of_combustion", "checked": "2026-11-01"}
+ ]
+}

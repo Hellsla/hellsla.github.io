@@ -1,0 +1,62 @@
+{
+ "id": "fy14-quantum-tunnelling",
+ "course": "FY14",
+ "chapter": 1,
+ "order": 4,
+ "title": "Waves, probability and quantum tunnelling",
+ "description": "Single electrons build up an interference pattern, waves give probabilities, and quantum tunnelling explains how protons in the Sun can fuse although they are far too slow to climb their electric barrier.",
+ "kind": "physics",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Double-slit experiment (Wikipedia): Young 1801–1803, Taylor's low-intensity experiment 1909, single electrons by Merli, Missiroli and Pozzi (1974)",
+   "url": "https://en.wikipedia.org/wiki/Double-slit_experiment",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Davisson–Germer experiment (Wikipedia): electron diffraction published 1927; G. P. Thomson and Reid 1927; Nobel Prize 1937",
+   "url": "https://en.wikipedia.org/wiki/Davisson%E2%80%93Germer_experiment",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Louis de Broglie (Wikipedia): born in Dieppe 1892, died 1987, history degree 1910, thesis 1924, Nobel Prize 1929 and its motivation",
+   "url": "https://en.wikipedia.org/wiki/Louis_de_Broglie",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Born rule (Wikipedia): Max Born, July 1926; probability density proportional to the square of the amplitude",
+   "url": "https://en.wikipedia.org/wiki/Born_rule",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Quantum tunnelling (Wikipedia): alpha decay by Gamow and by Gurney and Condon (1928), fusion in stars, the scanning tunnelling microscope (Binnig and Rohrer 1981, Nobel Prize 1986), flash memory, exponential dependence on width, height and mass",
+   "url": "https://en.wikipedia.org/wiki/Quantum_tunnelling",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Proton–proton chain (Wikipedia): tunnelling through the Coulomb barrier; an average proton in the Sun's core waits 9 billion years",
+   "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Sun (Wikipedia): core temperature 15.7 million K, age 4.6 billion years",
+   "url": "https://en.wikipedia.org/wiki/Sun",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fritz Houtermans (Wikipedia) and the FY14 timeline: Atkinson and Houtermans' calculation of stellar fusion, 1929",
+   "url": "https://en.wikipedia.org/wiki/Fritz_Houtermans",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Fotoni material bank, University of Helsinki: the double-slit station, repeated with single photons",
+   "url": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni/fotonin-materiaalipankki",
+   "checked": "2026-11-01"
+  }
+ ]
+}

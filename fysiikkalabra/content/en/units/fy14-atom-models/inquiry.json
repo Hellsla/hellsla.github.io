@@ -1,0 +1,426 @@
+{
+ "version": 1,
+ "contribution": "The structure of the atom in two steps: the gold-foil evidence for Rutherford's nucleus (with the distance of closest approach as the first look at the Coulomb barrier of fusion), and Bohr's energy levels, which explain the line spectrum of hydrogen with $hf = E_{n_\\text{u}} - E_{n_\\text{l}}$ and prepare the spectra station of the Fotoni visit.",
+ "learn": [
+  "describe how the gold-foil experiment revealed the atomic nucleus.",
+  "explain line spectra with the energy levels of Bohr's model.",
+  "calculate the wavelength of the light sent out in a jump between two energy levels."
+ ],
+ "prior": [
+  "Light consists of photons with the energy $E = hf = hc/\\lambda$ (chapter *Light as particles: the photoelectric effect*)",
+  "A hot body sends out a continuous spectrum of thermal radiation (chapter *When classical physics ran out of answers*)",
+  "Charges of the same sign repel each other, and two charges at a distance $r$ have the electric potential energy $E_\\text{p} = kq_1q_2/r$ (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "In 1904 J. J. Thomson, the discoverer of the electron, proposed a model of the atom. The atom is a ball of positive charge, spread evenly through it, with the tiny negative electrons sitting inside like raisins in a pudding. In 1909, in Manchester, Ernest Rutherford asked a young student, Ernest Marsden, to test the atom with fast alpha particles: heavy, positive particles that radioactive substances shoot out at about $2 \\cdot 10^{7}\\ \\text{m/s}$. Marsden and Hans Geiger fired them at very thin metal foils, among them gold, and looked for them on a screen that flashes when an alpha particle hits it.",
+   "question": "What can bullets that are far too small to see tell us about the inside of an atom?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: photons from the photoelectric effect",
+   "prompt": "In the unit *Light as particles: the photoelectric effect* you met the photon energy $E = hf = hc/\\lambda$. Which light has photons with the largest energy?",
+   "choices": [
+    {
+     "text": "violet light of wavelength $410\\ \\text{nm}$",
+     "correct": true,
+     "feedback": "Right. The shortest wavelength means the highest frequency, so the largest photon energy: $hc/\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 410\\ \\text{nm} \\approx 3.0\\ \\text{eV}$."
+    },
+    {
+     "text": "red light of wavelength $656\\ \\text{nm}$",
+     "feedback": "A long wavelength means a low frequency, so a *small* photon energy: $1240\\ \\text{eV} \\cdot \\text{nm} : 656\\ \\text{nm} \\approx 1.9\\ \\text{eV}$."
+    },
+    {
+     "text": "the brightest light, whatever its colour",
+     "feedback": "Brightness means *more* photons, not bigger ones. The energy of one photon depends only on the frequency, $E = hf$."
+    },
+    {
+     "text": "all three have photons of the same energy",
+     "feedback": "The photon energy $E = hc/\\lambda$ depends on the wavelength: violet photons ($410\\ \\text{nm}$) have about $3.0\\ \\text{eV}$, red ones ($656\\ \\text{nm}$) about $1.9\\ \\text{eV}$."
+    }
+   ]
+  },
+  {
+   "id": "pred-gold",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: alpha particles and gold",
+   "layout": "models",
+   "prompt": "Imagine that Thomson's model is how you picture the atom. What do you expect Geiger and Marsden to see when they shoot alpha particles at a thin metal foil?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "All pass through, each turned by a tiny angle at most.",
+     "feedback": "This is what Thomson's model predicts, because its positive charge is spread out and pushes only weakly. The experiment showed something else: a few alpha particles bounced back, about one in 8000 from a thin platinum foil. Thomson's model could not explain this."
+    },
+    {
+     "text": "Most pass almost straight, but a very few bounce back.",
+     "correct": true,
+     "feedback": "This is what Geiger and Marsden saw: most alpha particles went through with small deflections, and about one in 8000 was turned through more than $90^\\circ$ by a thin platinum foil. Thomson's model could not explain the bounces; a tiny, heavy nucleus could."
+    },
+    {
+     "text": "Most bounce back, because the atoms are packed tight.",
+     "feedback": "Most alpha particles went straight through the foil, so the atoms cannot be solid balls. Only about one in 8000 bounced back: the atom is mostly empty, with a tiny nucleus."
+    },
+    {
+     "text": "None pass; all are stopped inside the gold foil.",
+     "feedback": "The foil is very thin, and almost all alpha particles passed through it. The surprise was the very few that bounced back, about one in 8000."
+    }
+   ]
+  },
+  {
+   "id": "pred-jump",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: a bigger jump",
+   "prompt": "Suppose that an atom gives off light when its electron loses a certain amount of energy. In hydrogen, one such energy change sends out red light of wavelength $656\\ \\text{nm}$. Another change releases *more* energy. What light do you expect from it?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-bohr"
+   },
+   "choices": [
+    {
+     "text": "Light of a shorter wavelength, towards blue.",
+     "correct": true,
+     "feedback": "Right. One photon carries the energy, $E = hc/\\lambda$, so more energy means a shorter wavelength. In hydrogen the bigger jump from $n = 4$ to $n = 2$ gives turquoise light of $486\\ \\text{nm}$."
+    },
+    {
+     "text": "Light of a longer wavelength, towards infrared.",
+     "feedback": "A longer wavelength means a lower frequency and *less* energy per photon. More energy gives a shorter wavelength: the jump from $n = 4$ to $n = 2$ gives $486\\ \\text{nm}$, bluer than the red $656\\ \\text{nm}$ line."
+    },
+    {
+     "text": "The same red light, but brighter than before.",
+     "feedback": "Brightness is the number of photons. The *energy of one photon* fixes its colour: the bigger jump from $n = 4$ to $n = 2$ gives one photon of $486\\ \\text{nm}$, a different colour."
+    },
+    {
+     "text": "Two red photons instead of one red photon.",
+     "feedback": "In one jump the atom sends out one photon with the whole energy difference. The bigger jump from $n = 4$ to $n = 2$ gives one photon of $486\\ \\text{nm}$."
+    }
+   ]
+  },
+  {
+   "id": "theory-foil",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Foil"
+   ]
+  },
+  {
+   "id": "foil-read",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Read the paths",
+   "text": "Look at the drawing of the alpha paths near one gold nucleus. Each path starts at a different distance $b$ from the line through the centre of the nucleus. The scale bar shows $50\\ \\text{fm}$, but a whole gold atom is about $290\\,000\\ \\text{fm}$ across.",
+   "question": {
+    "type": "choice",
+    "prompt": "Why did almost every alpha particle in the real experiment go nearly straight through the foil?",
+    "choices": [
+     {
+      "text": "Almost all of them pass far from every nucleus.",
+      "correct": true,
+      "feedback": "Right. The nucleus is tiny compared with the atom, so almost every alpha particle passes so far from it that the repulsion turns it only a little. Only the very rare ones that come within a few tens of femtometres bounce back."
+     },
+     {
+      "text": "The electrons push the alpha particles forward.",
+      "feedback": "Electrons are about $7000$ times lighter than an alpha particle, so they cannot change its path much. The paths show that the deflection depends on how close the alpha particle comes to the nucleus."
+     },
+     {
+      "text": "The nucleus attracts them and pulls them through.",
+      "feedback": "The nucleus and the alpha particle are both positive, so they *repel* each other. The paths bend away from the nucleus, and the closest ones turn back."
+     },
+     {
+      "text": "The gold foil has holes between its atoms.",
+      "feedback": "The foil is a solid metal, with atoms touching each other. The atom itself is mostly empty: its nucleus is about $20\\,000$ times smaller than the atom."
+     }
+    ]
+   }
+  },
+  {
+   "id": "theory-lines",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Lines"
+   ]
+  },
+  {
+   "id": "red-line",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate: the energy of the red line",
+   "source": "measured",
+   "source_note": "Wavelengths of the visible hydrogen lines in air (Balmer series), as listed in Wikipedia, *Balmer series*, from NIST data, checked 2026-11-01.",
+   "text": "| Colour | Wavelength $\\lambda$ (nm) |\n| --- | --- |\n| red | 656.3 |\n| turquoise | 486.1 |\n| blue | 434.0 |\n| violet | 410.2 |\n\nEach line is light of one wavelength. In the photon picture, every photon of the red line has the same energy. How large?",
+   "question": {
+    "type": "numeric",
+    "prompt": "Calculate the energy of one photon of the red hydrogen line, $656.3\\ \\text{nm}$, in electronvolts. Keep the answer: you will compare it with Bohr's model.",
+    "answer": 1.889,
+    "unit": "eV",
+    "tolerance": 0.01,
+    "hints": [
+     "The energy of one photon is $E = hf$, and $f = c/\\lambda$.",
+     "$E = hc/\\lambda$. You can use $hc = 1240\\ \\text{eV} \\cdot \\text{nm}$, so the wavelength can stay in nanometres.",
+     "$E = 1240\\ \\text{eV} \\cdot \\text{nm} : 656.3\\ \\text{nm}$."
+    ],
+    "mistakes": [
+     {
+      "value": 3.027e-19,
+      "feedback": "This is the energy in joules. Divide by $1.602 \\cdot 10^{-19}\\ \\text{J/eV}$ to get electronvolts."
+     },
+     {
+      "value": 0.529,
+      "feedback": "You calculated $\\lambda/(hc)$, upside down. The energy is $E = hc/\\lambda$: a longer wavelength gives a smaller energy."
+     }
+    ],
+    "solution": "**Given:** $\\lambda = 656.3\\ \\text{nm}$, $hc = 1240\\ \\text{eV} \\cdot \\text{nm}$ (that is, $6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s} \\cdot 2.998 \\cdot 10^{8}\\ \\text{m/s}$ in electronvolts and nanometres). Find the photon energy $E$.\n\n**Principle:** Light of one wavelength consists of photons with the same energy $E = hf$; with $f = c/\\lambda$ this is $E = hc/\\lambda$.\n\n**Formula:** $E = hc/\\lambda$.\n\n**Unit conversions:** None: $hc$ is in $\\text{eV} \\cdot \\text{nm}$ and $\\lambda$ in nanometres, so the result is in electronvolts.\n\n**Substitution:** $E = 1240\\ \\text{eV} \\cdot \\text{nm} : 656.3\\ \\text{nm} = 1.889\\ \\text{eV}$.\n\n**Answer:** $E \\approx 1.89\\ \\text{eV}$. Three significant figures, like $hc$.\n\n**Reasonableness:** Visible photons have $1.6\\text{–}3.3\\ \\text{eV}$, and red ones are at the low end: $1.89\\ \\text{eV}$ fits. In joules: $1.889\\ \\text{eV} \\cdot 1.602 \\cdot 10^{-19}\\ \\text{J/eV} = 3.03 \\cdot 10^{-19}\\ \\text{J}$."
+   }
+  },
+  {
+   "id": "compare-spectra",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Compare two spectra",
+   "prompt": "Discuss with a partner, then write three or four sentences. Compare the light of glowing hydrogen gas with the light of a hot filament (unit *When classical physics ran out of answers*). What do you see through a grating in each case? What does the hydrogen spectrum suggest about the energy of the atom?\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>a line spectrum · a continuous spectrum · a sharp line · a rainbow · a gas discharge tube · a filament · a fixed amount of energy · every / only certain wavelengths</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The filament gives …, whereas hydrogen gives …</li><li>Through the grating we see …</li><li>One possible explanation is that the atom can only …</li><li>This suggests that …</li></ul></div>",
+   "model": "The hot filament gives a continuous spectrum: through a grating we see a whole rainbow, with every wavelength. Glowing hydrogen gas, whereas, gives a line spectrum of only four sharp visible lines, at $656$, $486$, $434$ and $410\\ \\text{nm}$. Each line contains photons of one energy, for example $1.89\\ \\text{eV}$ for the red line. This suggests that the hydrogen atom can only give out certain fixed amounts of energy, not any amount.",
+   "criteria": [
+    "The answer names the continuous spectrum of the filament and the line spectrum of the gas.",
+    "The answer gives at least one wavelength or the photon energy of a line.",
+    "The answer suggests that the atom can only give out certain amounts of energy.",
+    "The answer uses a comparing word (whereas, but, while, unlike) and at least three words from the word bank."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "theory-bohr",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Bohr",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "selita",
+   "type": "text",
+   "title": "Words of the lesson",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-am-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"tiny, heavy, positive centre\", \"an allowed energy of the atom\", \"the lowest energy level\", \"a spectrum of separate lines\", \"a fast, heavy, positive particle\", \"a change between two levels\"], \"items\": [{\"text\": \"nucleus\", \"answer\": \"tiny, heavy, positive centre\", \"feedback\": \"Rutherford's discovery: almost all the mass of the atom is in its *nucleus* (plural *nuclei*).\"}, {\"text\": \"energy level\", \"answer\": \"an allowed energy of the atom\", \"feedback\": \"In Bohr's model the electron can have only certain energies, the *levels* $E_n$.\"}, {\"text\": \"ground state\", \"answer\": \"the lowest energy level\", \"feedback\": \"The *ground* is the bottom: for hydrogen $n = 1$, $E_1 = -13.6\\\\ \\\\text{eV}$.\"}, {\"text\": \"line spectrum\", \"answer\": \"a spectrum of separate lines\", \"feedback\": \"Glowing gases give *lines*; hot solids give a continuous rainbow.\"}, {\"text\": \"alpha particle\", \"answer\": \"a fast, heavy, positive particle\", \"feedback\": \"Alpha particles come from radioactive decay and have the charge $2e$.\"}, {\"text\": \"transition (jump)\", \"answer\": \"a change between two levels\", \"feedback\": \"In a *transition* the atom sends out or absorbs one photon.\"}], \"done\": \"All right. Use these words in the tasks that follow.\"}</script></div>"
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the gold-foil evidence and with Bohr's model. Then answer the opening question in one or two sentences: why does glowing hydrogen give off light of only a few colours?",
+   "predictions": [
+    "pred-gold",
+    "pred-jump"
+   ]
+  },
+  {
+   "id": "theory-people",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "People"
+   ],
+   "optional": true,
+   "title": "People in this story"
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "blue-line",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Apply: which line is it?",
+   "prompt": "An electron in a hydrogen atom jumps from the level $n = 5$ to the level $n = 2$. Calculate the wavelength of the light in nanometres. Which line of the measured spectrum is it?",
+   "answer": 434,
+   "unit": "nm",
+   "tolerance": 0.01,
+   "hints": [
+    "First find the two energies with $E_n = -13.6\\ \\text{eV}/n^2$.",
+    "The photon carries the difference: $E = E_5 - E_2$. Then $\\lambda = hc/E$.",
+    "$E_5 = -0.544\\ \\text{eV}$ and $E_2 = -3.40\\ \\text{eV}$, so $E = 2.856\\ \\text{eV}$."
+   ],
+   "mistakes": [
+    {
+     "value": 2279,
+     "feedback": "You used only the level $E_5$. The photon carries the *difference* between two levels: $E = E_5 - E_2 = 2.856\\ \\text{eV}$."
+    },
+    {
+     "value": 365,
+     "feedback": "You used only the level $E_2$. The photon carries the *difference* between two levels: $E = E_5 - E_2 = 2.856\\ \\text{eV}$."
+    },
+    {
+     "value": 304,
+     "feedback": "Check the squares: $E_n = -13.6\\ \\text{eV}/n^2$, so $E_5 = -13.6\\ \\text{eV} : 25$ and $E_2 = -13.6\\ \\text{eV} : 4$, not divided by $5$ and $2$."
+    }
+   ],
+   "solution": "**Given:** $n_\\text{u} = 5$, $n_\\text{l} = 2$, $E_n = -13.6\\ \\text{eV}/n^2$, $hc = 1240\\ \\text{eV} \\cdot \\text{nm}$. Find the wavelength $\\lambda$.\n\n**Principle:** Bohr's model: the atom sends out one photon whose energy is the difference between the two levels (conservation of energy).\n\n**Formula:** $hc/\\lambda = E_5 - E_2$, so $\\lambda = hc/(E_5 - E_2)$.\n\n**Unit conversions:** None: the energies are in electronvolts and $hc$ in $\\text{eV} \\cdot \\text{nm}$, so $\\lambda$ comes out in nanometres.\n\n**Substitution:** $E_5 = -13.6\\ \\text{eV} : 25 = -0.544\\ \\text{eV}$ and $E_2 = -13.6\\ \\text{eV} : 4 = -3.40\\ \\text{eV}$, so $E_5 - E_2 = -0.544\\ \\text{eV} - (-3.40\\ \\text{eV}) = 2.856\\ \\text{eV}$. Then $\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 2.856\\ \\text{eV} = 434.2\\ \\text{nm}$.\n\n**Answer:** $\\lambda \\approx 434\\ \\text{nm}$, three significant figures like $13.6\\ \\text{eV}$. It is the blue line of the measured spectrum, $434.0\\ \\text{nm}$.\n\n**Reasonableness:** A jump to $n = 2$ should give visible light, and a bigger jump than $4 \\to 2$ ($486\\ \\text{nm}$) should give a shorter wavelength: $434\\ \\text{nm}$ fits. Bohr's model and the measurement agree to better than $0.1\\ \\%$."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student calculates the light from the jump $n = 3 \\to n = 1$ in hydrogen:\n\n$$\\begin{aligned} E &= \\frac{13.6\\ \\text{eV}}{3^2} = 1.51\\ \\text{eV} \\\\ \\lambda &= \\frac{1240\\ \\text{eV} \\cdot \\text{nm}}{1.51\\ \\text{eV}} = 821\\ \\text{nm} \\end{aligned}$$\n\nWhere is the error?",
+   "choices": [
+    {
+     "text": "The photon energy is $E_3 - E_1$, not one level alone.",
+     "correct": true,
+     "feedback": "Right. $E_3 - E_1 = -1.51\\ \\text{eV} - (-13.6\\ \\text{eV}) = 12.1\\ \\text{eV}$, so $\\lambda = 1240\\ \\text{eV} \\cdot \\text{nm} : 12.1\\ \\text{eV} \\approx 103\\ \\text{nm}$, ultraviolet. A jump to the ground state is a big jump."
+    },
+    {
+     "text": "The level energy should be $13.6\\ \\text{eV} \\cdot 3^2$, not divided.",
+     "feedback": "The levels get *closer to zero* as $n$ grows: $E_n = -13.6\\ \\text{eV}/n^2$. The error is that the photon carries the difference of two levels, $E_3 - E_1$."
+    },
+    {
+     "text": "The value $hc = 1240\\ \\text{eV} \\cdot \\text{nm}$ is wrong for this.",
+     "feedback": "$hc = 6.626 \\cdot 10^{-34}\\ \\text{J} \\cdot \\text{s} \\cdot 2.998 \\cdot 10^{8}\\ \\text{m/s} = 1240\\ \\text{eV} \\cdot \\text{nm}$ is right. The error is in the energy: one level alone is not the photon energy."
+    },
+    {
+     "text": "There is no error; the line is in the infrared.",
+     "feedback": "A jump down to the ground state $n = 1$ releases $12.1\\ \\text{eV}$, which gives ultraviolet light of about $103\\ \\text{nm}$, not infrared."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: what the bounces showed",
+   "prompt": "About one alpha particle in 8000 bounced back from a thin metal foil. What did Rutherford conclude?",
+   "choices": [
+    {
+     "text": "The positive charge and mass sit in a tiny nucleus.",
+     "correct": true,
+     "feedback": "Right. Only a tiny, heavy, concentrated charge can push a fast alpha particle back. Because the nucleus is so small, only very few alpha particles come close enough."
+    },
+    {
+     "text": "The atom is a solid ball that fills its whole volume.",
+     "feedback": "Then most alpha particles would bounce back or stop. Almost all went through: the atom is mostly empty space."
+    },
+    {
+     "text": "The electrons are heavy enough to stop alpha particles.",
+     "feedback": "Electrons are about $7000$ times lighter than alpha particles, so they hardly change their paths. The bounces need a heavy positive centre."
+    },
+    {
+     "text": "The positive charge is spread evenly through the atom.",
+     "feedback": "That was Thomson's model, and it cannot turn alpha particles back: spread-out charge pushes too weakly. The bounces showed that the charge is concentrated in a nucleus."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Energy levels: the longest wavelength",
+   "prompt": "Which of these jumps in a hydrogen atom sends out light of the **longest** wavelength? Use $E_n = -13.6\\ \\text{eV}/n^2$ or the energy-level diagram.",
+   "choices": [
+    {
+     "text": "from $n = 2$ to $n = 1$",
+     "feedback": "This is the *biggest* of these jumps, $10.2\\ \\text{eV}$, so its wavelength is the shortest: $122\\ \\text{nm}$, ultraviolet."
+    },
+    {
+     "text": "from $n = 3$ to $n = 2$",
+     "feedback": "This jump of $1.89\\ \\text{eV}$ gives red light, $656\\ \\text{nm}$. But the jump from $n = 4$ to $n = 3$ is even smaller, so its wavelength is longer."
+    },
+    {
+     "text": "from $n = 4$ to $n = 3$",
+     "correct": true,
+     "feedback": "Right. The levels crowd together at the top, so this jump is the smallest: $-0.85\\ \\text{eV} - (-1.51\\ \\text{eV}) = 0.66\\ \\text{eV}$. The smallest energy gives the longest wavelength, about $1880\\ \\text{nm}$, in the infrared."
+    },
+    {
+     "text": "from $n = 4$ to $n = 2$",
+     "feedback": "This jump of $2.55\\ \\text{eV}$ gives turquoise light, $486\\ \\text{nm}$. A smaller jump gives a longer wavelength: the jump from $n = 4$ to $n = 3$ is only $0.66\\ \\text{eV}$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Two kinds of spectrum",
+   "prompt": "A hot filament gives a continuous spectrum, but thin hydrogen gas in a discharge tube gives a line spectrum. Why?",
+   "choices": [
+    {
+     "text": "Free atoms can only make jumps between their own levels.",
+     "correct": true,
+     "feedback": "Right. In a thin gas the atoms are far apart, and each sends out only the photon energies of its own level differences. In a hot solid the particles are packed closely and interact, and the light is thermal radiation with all wavelengths."
+    },
+    {
+     "text": "The filament is hotter, and hot things have more lines.",
+     "feedback": "Temperature moves the peak of thermal radiation, but it does not turn lines into a rainbow. The lines come from the fixed energy levels of free atoms."
+    },
+    {
+     "text": "Hydrogen absorbs every colour except its four lines.",
+     "feedback": "The gas is not filtering white light here: the tube itself sends out the light. Each line is a jump between two levels of the hydrogen atom."
+    },
+    {
+     "text": "The grating breaks the light of the gas into lines.",
+     "feedback": "The same grating shows a full rainbow for a filament. The lines are in the light itself: the atoms send out only certain photon energies."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain: the nucleus and fusion",
+   "prompt": "In fusion, two light nuclei must come very close, within a few femtometres, to join. Use Rutherford's nuclear atom and the worked example to explain in four or five sentences why this is difficult. Which number from the worked example helps you?\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>A nucleus is … and positively charged, so two nuclei …</li><li>In the worked example, an alpha particle with … could only come within …</li><li>To get closer, the nuclei need …</li><li>This is why fusion needs …</li></ul></div>",
+   "model": "A nucleus is tiny and positively charged, so two nuclei repel each other with an electric force that grows quickly as they come closer. In the worked example, an alpha particle with about $8.3\\ \\text{MeV}$ of kinetic energy could only come within about $27\\ \\text{fm}$ of a gold nucleus before it turned back. For fusion, two nuclei must come within a few femtometres, even closer. To get there, they need a very high kinetic energy, or another way through the repulsion. This is why fusion needs extremely high temperatures, and why it is so hard to make on Earth.",
+   "criteria": [
+    "The answer says that both nuclei are positive and repel each other.",
+    "The answer uses a number from the worked example ($27\\ \\text{fm}$ or $8.3\\ \\text{MeV}$).",
+    "The answer links the closer approach needed for fusion to a larger kinetic energy (high temperature).",
+    "The answer is in your own words and uses at least one sentence starter."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, a nucleus is <span lang=\"fr\">un noyau</span>, the same word as the stone of a cherry or a peach. A spectral line is <span lang=\"fr\">une raie</span>. Listen, repeat, and then say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-am-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: inside the atom\", \"phrases\": [{\"fr\": \"un atome\", \"en\": \"an atom\", \"tip\": \"õ-na-TOM: a nasal *un*, then the *n* links to *atome*.\"}, {\"fr\": \"le noyau\", \"en\": \"the nucleus\", \"tip\": \"lö nwa-JO: *oy* sounds like *wa-j*.\"}, {\"fr\": \"un électron\", \"en\": \"an electron\", \"tip\": \"õ-ne-lek-TRÕ: a nasal *un* and a nasal *-on*; link the *n*.\"}, {\"fr\": \"le spectre\", \"en\": \"the spectrum\", \"tip\": \"lö SPEKTR: the final *-e* is silent.\"}, {\"fr\": \"une raie\", \"en\": \"a (spectral) line\", \"tip\": \"yn RE: the French *u* is the Finnish *y*.\"}, {\"fr\": \"Chaque élément a ses propres raies.\", \"en\": \"Every element has its own lines.\", \"tip\": \"sha-ke-le-MÃ: link *chaque* and *élément*.\"}]}</script></div>"
+  }
+ ]
+}

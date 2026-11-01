@@ -1,0 +1,48 @@
+{
+ "id": "fy14-fusion-timeline",
+ "course": "FY14",
+ "chapter": 5,
+ "order": 4,
+ "title": "Fusion history: an interactive timeline",
+ "description": "Explore about a hundred events of fusion history from 1895 to ITER by era, theme and search, follow machines to the world map, and find the patterns: secrecy and openness, claims and checks, a wider world and slow steps.",
+ "kind": "explorer",
+ "minutes": 75,
+ "subjects": [
+  "physics",
+  "english",
+  "french"
+ ],
+ "sources": [
+  {
+   "title": "Timeline of nuclear fusion (Wikipedia): an overview used to cross-check the order of the events",
+   "url": "https://en.wikipedia.org/wiki/Timeline_of_nuclear_fusion",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Joint European Torus (Wikipedia): 16 MW of fusion power from 24 MW of heating in 1997",
+   "url": "https://en.wikipedia.org/wiki/Joint_European_Torus",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Tokamak (Wikipedia): T-1 at the end of 1958",
+   "url": "https://en.wikipedia.org/wiki/Tokamak",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "ITER (Wikipedia): the 2024 baseline (start of research operation 2034, deuterium–deuterium 2035, deuterium–tritium 2039)",
+   "url": "https://en.wikipedia.org/wiki/ITER",
+   "checked": "2026-11-01",
+   "note": "Institutional plans as of November 2026, not results."
+  },
+  {
+   "title": "Stellarator (Wikipedia): the stellarator set aside after 1969 and revived; Wendelstein 7-X",
+   "url": "https://en.wikipedia.org/wiki/Stellarator",
+   "checked": "2026-11-01"
+  },
+  {
+   "title": "Arthur Eddington (Wikipedia): the 1920 lecture on hydrogen burning in the stars",
+   "url": "https://en.wikipedia.org/wiki/Arthur_Eddington",
+   "checked": "2026-11-01"
+  }
+ ]
+}

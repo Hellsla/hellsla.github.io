@@ -1,0 +1,392 @@
+{
+ "version": 1,
+ "contribution": "The opening unit of the course: the black-body spectrum and Wien's law, the classical prediction that fails (the ultraviolet catastrophe), Planck's packets $E = hf$ as the start of quantum physics, and the interactive timeline of modern physics with its biographies, which frames the whole chapter.",
+ "learn": [
+  "explain why classical physics could not explain the radiation of hot objects.",
+  "calculate the peak wavelength or the temperature of a black body with Wien's law.",
+  "describe Planck's energy packets and place the main steps of modern physics on a timeline."
+ ],
+ "prior": [
+  "Light is an electromagnetic wave, and its speed, frequency and wavelength are linked by $c = f\\lambda$ (earlier physics courses)",
+  "The absolute temperature in kelvins is $T = (t + 273.15)\\ \\text{K}$, where $t$ is the temperature in degrees Celsius (earlier physics courses)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "On 27 April 1900 the famous physicist Lord Kelvin gave a lecture at the Royal Institution in London. Physics seemed almost complete: Newton's mechanics described the motion of planets and machines, Maxwell's theory described electricity, magnetism and light, and thermodynamics described heat. Kelvin praised this beautiful theory, but he warned of two \"clouds\" over it, two problems it could not solve. One cloud was about the rule for how heat energy is shared among the parts of a body. The same rule, applied to the light inside a hot oven, ran into trouble with something very ordinary: the glow of hot objects. Within thirty years both clouds had turned into new physics.",
+   "question": "How can something as ordinary as a glowing piece of hot metal break the physics of 1900?"
+  },
+  {
+   "id": "hook-talk",
+   "stage": "herata",
+   "type": "text",
+   "title": "Talk in pairs (2 minutes)",
+   "text": "Name three things around you that glow because they are hot. What colour is each glow? Does a hot thing always glow? Write down your ideas: you will come back to them.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Something that glows because it is hot is …</li><li>Its glow is … , and I think it is about … degrees.</li><li>I think a hot thing does not always glow, because …</li></ul></div>"
+  },
+  {
+   "id": "theory-waves",
+   "stage": "herata",
+   "type": "theory",
+   "sections": [
+    "Waves"
+   ]
+  },
+  {
+   "id": "review-spectrum",
+   "stage": "herata",
+   "type": "text",
+   "title": "Review: the electromagnetic spectrum",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-cl-spectrum\"><script type=\"application/json\">{\"prompt\": \"Put the kinds of electromagnetic radiation in order from the **longest** wavelength (top) to the **shortest** (bottom). Use the arrow buttons.\", \"items\": [\"radio waves\", \"microwaves\", \"infrared\", \"visible light\", \"ultraviolet\", \"X-rays\", \"gamma rays\"], \"explain\": \"Long wavelength means low frequency, because $c = f\\\\lambda$ is the same for all of them. Ultraviolet, X-rays and gamma rays have the shortest waves and the highest frequencies.\", \"hints\": [\"Radio waves can be metres or kilometres long.\", \"Microwaves are centimetres long, shorter than radio waves.\", \"Infrared is just beyond red light.\", \"Visible light is in the middle.\", \"Ultraviolet is just beyond violet light.\", \"X-rays are shorter than ultraviolet.\", \"Gamma rays come from atomic nuclei.\"]}</script></div>"
+  },
+  {
+   "id": "pred-peak",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: a hotter glow",
+   "prompt": "A black body is heated from $4000\\ \\text{K}$ to $6000\\ \\text{K}$. What happens to the wavelength $\\lambda_\\text{max}$ at which it radiates most strongly?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-main"
+   },
+   "choices": [
+    {
+     "text": "It becomes shorter, towards blue and violet.",
+     "correct": true,
+     "feedback": "The model curves support this: the peak moves from $724\\ \\text{nm}$ at $4000\\ \\text{K}$ to $483\\ \\text{nm}$ at $6000\\ \\text{K}$. A hotter body radiates more at every wavelength, and its peak moves to shorter waves."
+    },
+    {
+     "text": "It becomes longer, towards red and infrared.",
+     "feedback": "The curves show the opposite: at $6000\\ \\text{K}$ the peak is at $483\\ \\text{nm}$, at $4000\\ \\text{K}$ at $724\\ \\text{nm}$. Red is the colour of the *coolest* visible glow."
+    },
+    {
+     "text": "It stays the same; only the brightness grows.",
+     "feedback": "The brightness does grow, but the peak also moves: from $724\\ \\text{nm}$ at $4000\\ \\text{K}$ to $483\\ \\text{nm}$ at $6000\\ \\text{K}$. That is why the colour of a glow changes with temperature."
+    },
+    {
+     "text": "There is no peak: a hotter body radiates equally at all wavelengths.",
+     "feedback": "Every curve in the figure has one clear peak and falls towards both short and long wavelengths. Heating moves that peak to shorter wavelengths, from $724\\ \\text{nm}$ to $483\\ \\text{nm}$."
+    }
+   ]
+  },
+  {
+   "id": "pred-share",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: sharing the energy",
+   "layout": "models",
+   "prompt": "Think of the radiation in a hot oven as standing waves, like the vibrations of a guitar string. There is no limit to how short a wave can be, and the shorter the wavelength, the more wave patterns fit into the oven. Classical physics gives **every** wave pattern the same average energy. What does this idea predict for the radiation at very short wavelengths?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-catastrophe"
+   },
+   "choices": [
+    {
+     "text": "The power falls to zero, as for a real hot object.",
+     "feedback": "That is what real hot objects do, but not what the classical idea predicts. If every pattern gets the same share and there are ever more short-wave patterns, the predicted power at short wavelengths *grows*. The classical model and the measurements disagree."
+    },
+    {
+     "text": "The power grows without limit at short wavelengths.",
+     "correct": true,
+     "feedback": "Right: this is the classical prediction of Rayleigh and Jeans. Ever more patterns, each with the same share, give ever more power at short wavelengths, and an infinite total. The measured curve falls to zero instead: this failure was later called the ultraviolet catastrophe."
+    },
+    {
+     "text": "The power is the same at every wavelength.",
+     "feedback": "Each pattern gets the same share, but the *number* of patterns grows as the wavelength gets shorter. So the predicted power grows without limit towards short wavelengths, which real ovens do not show."
+    }
+   ]
+  },
+  {
+   "id": "theory-curves",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Curves"
+   ]
+  },
+  {
+   "id": "peaks",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate: the peak and the temperature",
+   "source": "model",
+   "text": "The table gives the peak wavelength of a black body at five temperatures, computed from Planck's law (the law that fits the measurements). Look for a pattern: what happens to $\\lambda_\\text{max}$ when $T$ doubles? Try multiplying $\\lambda_\\text{max}$ by $T$ in each row.\n\n| Temperature $T$ (K) | Peak wavelength $\\lambda_\\text{max}$ (nm) |\n| --- | --- |\n| 2000 | 1449 |\n| 3000 | 966 |\n| 4000 | 724 |\n| 5000 | 580 |\n| 6000 | 483 |",
+   "question": {
+    "type": "numeric",
+    "prompt": "A hot blue star has a surface temperature of $10\\,000\\ \\text{K}$. Use the pattern in the table to predict its peak wavelength in nanometres.",
+    "answer": 290,
+    "unit": "nm",
+    "tolerance": 0.03,
+    "hints": [
+     "Compare the rows $3000\\ \\text{K}$ and $6000\\ \\text{K}$: what happens to $\\lambda_\\text{max}$ when $T$ doubles?",
+     "The product $\\lambda_\\text{max} \\cdot T$ is the same in every row. Calculate it for one row.",
+     "$483\\ \\text{nm} \\cdot 6000\\ \\text{K} \\approx 2.90 \\cdot 10^{6}\\ \\text{nm} \\cdot \\text{K}$. Divide this by $10\\,000\\ \\text{K}$."
+    ],
+    "mistakes": [
+     {
+      "value": 805,
+      "feedback": "You assumed that the peak wavelength *grows* in proportion to the temperature ($483 \\cdot 10\\,000 : 6000$). The table shows the opposite: a higher temperature gives a *shorter* peak wavelength."
+     }
+    ],
+    "solution": "**Given:** $T = 10\\,000\\ \\text{K}$ and the table. Find $\\lambda_\\text{max}$.\n\n**Principle:** In every row, $\\lambda_\\text{max} \\cdot T$ has the same value, about $2.90 \\cdot 10^{6}\\ \\text{nm} \\cdot \\text{K}$: the peak wavelength is inversely proportional to the temperature (Wien's law).\n\n**Formula:** $\\lambda_\\text{max} T = b$, so $\\lambda_\\text{max} = b/T$.\n\n**Unit conversions:** None: the table is in nanometres and kelvins, so $b$ is in $\\text{nm} \\cdot \\text{K}$.\n\n**Substitution:** $b = 483\\ \\text{nm} \\cdot 6000\\ \\text{K} = 2.898 \\cdot 10^{6}\\ \\text{nm} \\cdot \\text{K}$, and $\\lambda_\\text{max} = 2.898 \\cdot 10^{6}\\ \\text{nm} \\cdot \\text{K} : 10\\,000\\ \\text{K} = 289.8\\ \\text{nm}$.\n\n**Answer:** $\\lambda_\\text{max} \\approx 290\\ \\text{nm}$, given to three significant figures like the table. This is ultraviolet, just shorter than visible violet light ($380\\ \\text{nm}$).\n\n**Reasonableness:** The star is $10\\,000 : 6000 \\approx 1.7$ times as hot as the $6000\\ \\text{K}$ body, so its peak should be $1.7$ times shorter: $483\\ \\text{nm} : 1.7 \\approx 290\\ \\text{nm}$. Such a star looks bluish-white."
+   }
+  },
+  {
+   "id": "curves-talk",
+   "stage": "tutki",
+   "type": "explain",
+   "title": "Describe the graph",
+   "prompt": "Discuss with a partner, then write three sentences that describe the figure *Reading the curves*. Say what happens to (1) the height of the curves and (2) the position of the peak when the temperature rises, with numbers. (3) Which of the three temperatures glows in the colour closest to white, and why?\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>the peak · the wavelength · the curve rises / falls · higher / lower · to shift (shifts, shifted) · in the infrared · in the visible band · at every wavelength</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>When the temperature rises from … to …, the curve …</li><li>The peak shifts from … nm to … nm.</li><li>The … K curve has its peak in the middle of the visible band, so …</li></ul></div>",
+   "model": "When the temperature rises from $4000\\ \\text{K}$ to $6000\\ \\text{K}$, the curve becomes higher at every wavelength, so the body radiates much more power. The peak shifts from $724\\ \\text{nm}$, at the red edge of the visible band, to $483\\ \\text{nm}$, in the blue-green part. The $6000\\ \\text{K}$ body glows closest to white, because its peak is in the middle of the visible band and it radiates strongly at all visible wavelengths.",
+   "criteria": [
+    "The answer says that the curves become higher at every wavelength when the temperature rises.",
+    "The answer says that the peak moves to shorter wavelengths, with two values from the figure or the table.",
+    "The answer links white light to radiation spread over the whole visible band (the hottest body).",
+    "The answer uses at least three words from the word bank."
+   ]
+  },
+  {
+   "id": "theory-main",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus"
+   ]
+  },
+  {
+   "id": "theory-catastrophe",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Catastrophe"
+   ]
+  },
+  {
+   "id": "theory-formula",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Kaava"
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your two predictions with the curves and with the classical prediction. Then answer the opening question in one or two sentences: why could the best physics of 1900 not explain the glow of a hot piece of metal?",
+   "predictions": [
+    "pred-peak",
+    "pred-share"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "camera",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Apply: a thermal camera",
+   "prompt": "A thermal camera shows that the radiation from a person's forehead has its peak at $\\lambda_\\text{max} = 9.4\\ \\mu\\text{m}$. Treat the skin as a black body and calculate its temperature in kelvins.",
+   "answer": 308,
+   "unit": "K",
+   "tolerance": 0.02,
+   "hints": [
+    "Which law links the peak wavelength and the temperature?",
+    "$T = b/\\lambda_\\text{max}$ with $b = 2.898 \\cdot 10^{-3}\\ \\text{m} \\cdot \\text{K}$.",
+    "Write the wavelength in metres: $9.4\\ \\mu\\text{m} = 9.4 \\cdot 10^{-6}\\ \\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 35,
+     "feedback": "This is the temperature in degrees Celsius. The task asks for kelvins: $T = (t + 273)\\ \\text{K}$."
+    },
+    {
+     "value": 0.000308,
+     "feedback": "You divided by $9.4$ without changing micrometres to metres. $9.4\\ \\mu\\text{m} = 9.4 \\cdot 10^{-6}\\ \\text{m}$."
+    },
+    {
+     "value": 27.2,
+     "feedback": "You multiplied instead of dividing. Wien's law is $\\lambda_\\text{max} T = b$, so $T = b/\\lambda_\\text{max}$."
+    }
+   ],
+   "solution": "**Given:** $\\lambda_\\text{max} = 9.4\\ \\mu\\text{m}$, $b = 2.898 \\cdot 10^{-3}\\ \\text{m} \\cdot \\text{K}$. Find the temperature $T$.\n\n**Principle:** The skin behaves almost like a black body, so Wien's law links the peak and the temperature.\n\n**Formula:** $\\lambda_\\text{max} T = b$, so $T = b/\\lambda_\\text{max}$.\n\n**Unit conversions:** $\\lambda_\\text{max} = 9.4\\ \\mu\\text{m} = 9.4 \\cdot 10^{-6}\\ \\text{m}$.\n\n**Substitution:** $$T = \\frac{2.898 \\cdot 10^{-3}\\ \\text{m} \\cdot \\text{K}}{9.4 \\cdot 10^{-6}\\ \\text{m}} = 308.3\\ \\text{K}$$\n\n**Answer:** $T \\approx 308\\ \\text{K}$, which is about $35\\ ^\\circ\\text{C}$. The wavelength has two significant figures, so the answer is good to a few kelvins.\n\n**Reasonableness:** The skin of the forehead is a little cooler than the inside of the body ($37\\ ^\\circ\\text{C} = 310\\ \\text{K}$), so $308\\ \\text{K}$ is very reasonable."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "optional": true,
+   "prompt": "A student calculates the peak wavelength of a pizza oven at $400\\ ^\\circ\\text{C}$:\n\n$$\\begin{aligned} \\lambda_\\text{max} &= \\frac{2.898 \\cdot 10^{-3}\\ \\text{m} \\cdot \\text{K}}{400} \\\\ &= 7.2\\ \\mu\\text{m} \\end{aligned}$$\n\nWhat is wrong?",
+   "choices": [
+    {
+     "text": "The temperature must be in kelvins, $673\\ \\text{K}$.",
+     "correct": true,
+     "feedback": "Right. Wien's law uses the absolute temperature: $T = (400 + 273)\\ \\text{K} = 673\\ \\text{K}$, so $\\lambda_\\text{max} = 2.898 \\cdot 10^{-3}\\ \\text{m} \\cdot \\text{K} : 673\\ \\text{K} = 4.3\\ \\mu\\text{m}$, still in the infrared."
+    },
+    {
+     "text": "The law should be $\\lambda_\\text{max} = b \\cdot T$ instead.",
+     "feedback": "Then a hotter oven would have a *longer* peak wavelength, but the curves show the opposite. $\\lambda_\\text{max} T = b$ gives $\\lambda_\\text{max} = b/T$. The real error is the temperature scale."
+    },
+    {
+     "text": "A pizza oven has no peak: it does not glow.",
+     "feedback": "Every body has a peak in its thermal radiation, even when it is not visible. The oven's peak is in the infrared. The error is that $400$ is in degrees Celsius, not kelvins."
+    },
+    {
+     "text": "There is no error; the answer is right.",
+     "feedback": "Look at the units: $b$ is in $\\text{m} \\cdot \\text{K}$, so the temperature must be in kelvins. $400\\ ^\\circ\\text{C} = 673\\ \\text{K}$, and the peak is at $4.3\\ \\mu\\text{m}$, not $7.2\\ \\mu\\text{m}$."
+    }
+   ]
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "timeline",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Investigate: a timeline of modern physics",
+   "text": "Planck's packets were only the start. In the next thirty years physicists discovered the nucleus, photons, the quantum atom and the wave nature of matter. This chapter follows that story, and the rest of the course shows why it matters for fusion.\n\nExplore the timeline with a partner: from Röntgen's X-rays in 1895 to Bethe's theory of the Sun in 1938. Filter by theme or search for a name, and open *Who was …?* on a card to read a short biography.\n\n<div class=\"fx\" data-fx=\"timeline\" id=\"fx-cl-timeline\" data-src=\"units/fy14/data/timeline.json\"><script type=\"application/json\">{\"eras\": [\"modern-physics\"], \"start_era\": \"modern-physics\"}</script></div>"
+  },
+  {
+   "id": "timeline-order",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Six steps in order",
+   "text": "<div class=\"fx\" data-fx=\"order\" id=\"fx-cl-order\"><script type=\"application/json\">{\"prompt\": \"Use the timeline to put these six steps of the story in order, from the earliest (top) to the latest (bottom).\", \"items\": [\"Planck's energy quanta\", \"Einstein's light quanta\", \"Rutherford's nuclear atom\", \"Bohr's quantum atom\", \"De Broglie: particles are also waves\", \"Gamow explains tunnelling\"], \"explain\": \"1900, 1905, 1911, 1913, 1924 and 1928. You will meet each of these steps in this chapter: light quanta in the next unit, the nucleus and Bohr's atom after that, and waves and tunnelling at the end.\", \"hints\": [\"Search the timeline for *Planck*.\", \"Search for *Einstein*: 1905.\", \"Search for *Rutherford*.\", \"Search for *Bohr*.\", \"Search for *de Broglie*.\", \"Search for *Gamow*.\"]}</script></div>"
+  },
+  {
+   "id": "people-task",
+   "stage": "sovella",
+   "type": "explain",
+   "title": "Speak and write: one life in physics",
+   "prompt": "Work in pairs. Each of you opens two biographies in the timeline (*Who was …?*), for example Max Planck, Marie Curie, Ernest Rutherford, Niels Bohr or George Gamow. Tell your partner about one person in about one minute, without reading aloud. Then write three or four sentences of your own about that person: where they worked, what they discovered, and why it matters for the story of fusion.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>to discover · to propose · to explain · to measure · an experiment · a theory · a model · a prize · to emigrate · important for</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>… was a … physicist who worked in …</li><li>In …, she / he discovered / proposed that …</li><li>This was important because …</li><li>For fusion, this matters because …</li></ul></div>",
+   "model": "Ernest Rutherford was a physicist from New Zealand who worked in Montreal, Manchester and Cambridge. In 1911 he explained the results of Geiger and Marsden with a tiny, positive nucleus that holds almost all the mass of the atom. This was important because it showed what atoms are made of. For fusion, it matters because two positive nuclei repel each other, so they must move extremely fast before they can meet.",
+   "criteria": [
+    "The answer names the person, the place(s) and the time.",
+    "The answer says what the person discovered or proposed, in the person's own field.",
+    "The answer links the discovery to the story of this course (quantum physics, the nucleus or fusion).",
+    "The sentences are in your own words, in the past tense, and use at least two words from the word bank."
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: red hot or white hot?",
+   "prompt": "A blacksmith heats an iron bar. First it glows \"red hot\", later \"white hot\". What does this tell you about its temperature?",
+   "choices": [
+    {
+     "text": "White hot is hotter: the peak has moved to shorter waves.",
+     "correct": true,
+     "feedback": "Right. At a higher temperature the peak moves to shorter wavelengths and the bar radiates strongly over the whole visible band, so the glow looks white."
+    },
+    {
+     "text": "Red hot is hotter, because red is the colour of danger.",
+     "feedback": "In thermal radiation red is the *coolest* visible glow: only the long-wave edge of the spectrum reaches the visible band. Heating moves the peak to shorter wavelengths."
+    },
+    {
+     "text": "Both glows have the same temperature in different light.",
+     "feedback": "The colour of a glow depends on the temperature of the body (Wien's law), not on the room lighting. The white glow belongs to the higher temperature."
+    },
+    {
+     "text": "White hot is cooler: white light has less energy.",
+     "feedback": "White light contains all visible wavelengths, including blue and violet. A body that sends out enough of these must be hotter, because its peak lies at a shorter wavelength."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Calculation: two temperatures",
+   "prompt": "Body A has a temperature of $3000\\ \\text{K}$ and body B $6000\\ \\text{K}$. How do their peak wavelengths compare?",
+   "choices": [
+    {
+     "text": "B's peak wavelength is twice as long as A's.",
+     "feedback": "This would mean $\\lambda_\\text{max}$ grows with $T$. Wien's law says $\\lambda_\\text{max} = b/T$: doubling $T$ *halves* the peak wavelength."
+    },
+    {
+     "text": "B's peak wavelength is half of A's.",
+     "correct": true,
+     "feedback": "Right. $\\lambda_\\text{max} = b/T$, so doubling the temperature halves the peak wavelength: $966\\ \\text{nm}$ for A and $483\\ \\text{nm}$ for B."
+    },
+    {
+     "text": "B's peak wavelength is a quarter of A's.",
+     "feedback": "The peak wavelength is inversely proportional to $T$ itself, not to $T^2$: $966\\ \\text{nm}$ and $483\\ \\text{nm}$, half."
+    },
+    {
+     "text": "Both have the same peak wavelength.",
+     "feedback": "The peak depends on the temperature: $\\lambda_\\text{max} = b/T$ gives $966\\ \\text{nm}$ for A and $483\\ \\text{nm}$ for B."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Planck's idea",
+   "prompt": "How did Planck's assumption $E = hf$ remove the ultraviolet catastrophe?",
+   "choices": [
+    {
+     "text": "Short waves need big packets, which heat rarely supplies.",
+     "correct": true,
+     "feedback": "Right. A short wave has a high frequency, so one packet $hf$ is much larger than the typical heat energy $k_\\text{B}T$. Such wave patterns are rarely excited and carry almost no energy, so the curve falls to zero."
+    },
+    {
+     "text": "He showed that short waves cannot exist inside an oven.",
+     "feedback": "Short standing waves do fit in an oven. Planck's idea was that they rarely get energy, because their packets $hf$ are so large."
+    },
+    {
+     "text": "He proved that light is a stream of particles.",
+     "feedback": "Planck quantised the *exchange* of energy and thought of it as a mathematical step. Einstein proposed that light itself consists of quanta in 1905."
+    },
+    {
+     "text": "He corrected errors in the Berlin measurements.",
+     "feedback": "The measurements were right; the classical theory was wrong. Planck found a formula that fits the measurements, and $E = hf$ was the assumption behind it."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain: what went wrong?",
+   "prompt": "A friend says: \"Classical physics was simply wrong about everything.\" Do you agree? Write four or five sentences. Say what classical physics explained well, what it predicted for the radiation of a hot oven, how this compared with the measurements, and what Planck changed.\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>I partly agree / disagree, because …</li><li>Classical physics explained … well.</li><li>For a hot oven, it predicted that …</li><li>The measurements showed instead that …</li><li>Planck assumed that …, so …</li></ul></div>",
+   "model": "I disagree. Classical physics explained a great deal well, for example the motion of planets, electricity and light as an electromagnetic wave; it even agrees with the radiation of hot objects at long wavelengths. But for a hot oven it predicted that the power grows without limit at short wavelengths, because every wave pattern gets the same share of the energy. The measurements showed instead that the power has a peak and falls to zero at short wavelengths. Planck assumed that energy is exchanged in packets $E = hf$, so the short waves rarely get any energy, and his formula fits the measurements. Classical physics was not useless, but it failed where the quantum nature of energy matters.",
+   "criteria": [
+    "The answer gives at least one thing that classical physics explains well.",
+    "The answer states the classical prediction (unlimited power at short wavelengths, the ultraviolet catastrophe).",
+    "The answer compares it with the measured curve, which has a peak and falls to zero.",
+    "The answer explains Planck's packets $E = hf$ and takes a clear position."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>In French, thermal radiation is <span lang=\"fr\">le rayonnement thermique</span> and a black body is <span lang=\"fr\">un corps noir</span>. Listen, repeat, and then say the last sentence to your partner. Can you guess its meaning before you read the English?</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-cl-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: hot and bright\", \"phrases\": [{\"fr\": \"chaud\", \"en\": \"hot\", \"tip\": \"SHO: the *ch* is like English *sh*, and the *d* is silent.\"}, {\"fr\": \"la chaleur\", \"en\": \"heat\", \"tip\": \"la sha-LÖR: *eu* is close to the Finnish *ö*.\"}, {\"fr\": \"un corps noir\", \"en\": \"a black body\", \"tip\": \"õ KOR NWAR: the *p* and *s* of *corps* are silent.\"}, {\"fr\": \"le rayonnement\", \"en\": \"radiation\", \"tip\": \"lö re-jon-MÃ: the final *-ent* is a nasal vowel, no *n* and no *t*.\"}, {\"fr\": \"la température\", \"en\": \"temperature\", \"tip\": \"la tã-pe-ra-TYR: the French *u* is the Finnish *y*.\"}, {\"fr\": \"Plus c'est chaud, plus la lumière est bleue.\", \"en\": \"The hotter it is, the bluer the light.\", \"tip\": \"*plus … plus …* = the more …, the more …\"}]}</script></div>"
+  }
+ ]
+}

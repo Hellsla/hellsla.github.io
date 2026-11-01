@@ -1,0 +1,376 @@
+{
+ "version": 1,
+ "contribution": "The physics and engineering of ITER: an explorer of the main components (magnets, central solenoid, vacuum vessel, blanket, divertor, heating, cryostat), the fusion gain $Q = P_\\text{fusion}/P_\\text{heating}$ with $Q = 1$, JET's $0.67$ and ITER's $Q = 10$, the burning plasma, plasma gain versus electricity and commercial viability; the tritium fuel cycle, breeding and radiation protection with a worked calculation of the tritium burned in one pulse.",
+ "learn": [
+  "name ITER's main components and explain what each of them does.",
+  "calculate the fusion gain $Q$ and the power carried by the helium nuclei.",
+  "explain why scientific gain is not electricity or commercial viability."
+ ],
+ "prior": [
+  "D–T fusion releases $17.6\\ \\text{MeV}$: $3.5\\ \\text{MeV}$ to the helium nucleus and $14.1\\ \\text{MeV}$ to the neutron (chapter *Fusion reactions: from the Sun to deuterium and tritium*)",
+  "A magnetic field exerts a force only on moving charges (chapter *Charged particles and magnetic confinement*)",
+  "Why ITER is built by seven Members (chapter *ITER: why, where and who*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Inside a steel chamber as tall as a four-storey house, a gas thinner than air will be heated to about 150 million degrees, ten times hotter than the centre of the Sun. A few metres away, the magnets that hold it are colder than $-269\\ ^\\circ\\text{C}$. Heating the gas takes huge amounts of power, and the hot gas keeps losing its energy.",
+   "question": "Can such a machine give out more energy than it takes in, and what would that mean for electricity?"
+  },
+  {
+   "id": "review",
+   "stage": "herata",
+   "type": "choice",
+   "title": "Review: the D–T neutron",
+   "prompt": "In D–T fusion, $^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to {}^{4}_{2}\\text{He}\\ (3.5\\ \\text{MeV}) + \\text{n}\\ (14.1\\ \\text{MeV})$. Why can the magnetic field of a tokamak hold the helium nucleus in the plasma but not the neutron?",
+   "choices": [
+    {
+     "text": "The neutron has no charge, so no magnetic force acts on it.",
+     "correct": true,
+     "feedback": "Right. The magnetic force acts only on moving charges. The neutron flies straight out of the plasma and hits the wall, which is why ITER needs a blanket and shielding."
+    },
+    {
+     "text": "The neutron is much faster than any magnetic field can hold.",
+     "feedback": "A faster charged particle only moves on a larger circle. The neutron escapes because it has no charge, so the field exerts no force on it at all."
+    },
+    {
+     "text": "The neutron is heavier than the helium nucleus.",
+     "feedback": "It is about four times lighter. The reason is its charge: a neutral particle feels no magnetic force."
+    },
+    {
+     "text": "The magnetic field pushes the neutron out on purpose.",
+     "feedback": "The field does not act on the neutron at all, because the neutron has no charge. It simply flies straight through the field."
+    }
+   ]
+  },
+  {
+   "id": "pred-heat",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 1: the hottest surface",
+   "prompt": "Which part of ITER do you think must survive the largest heat flow on each square metre of its surface?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-machine"
+   },
+   "choices": [
+    {
+     "text": "The divertor at the bottom of the vessel.",
+     "correct": true,
+     "feedback": "Right. Heat and particles flow out along the edge of the plasma onto a narrow strip of the divertor targets: about $10\\text{–}20\\ \\text{MW}$ on each square metre, the highest in the machine. The targets are made of tungsten and cooled with water."
+    },
+    {
+     "text": "The central solenoid in the middle.",
+     "feedback": "The central solenoid is a superconducting magnet at about $4\\ \\text{K}$, shielded from the plasma. The largest heat flow hits the divertor targets, where the edge of the plasma touches the wall."
+    },
+    {
+     "text": "The toroidal field coils around the vessel.",
+     "feedback": "These coils must be kept extremely cold, so the blanket, the vessel and the thermal shield protect them. The highest heat flow is on the divertor targets."
+    },
+    {
+     "text": "The cryostat around the whole machine.",
+     "feedback": "The cryostat is the outermost vacuum chamber, far from the plasma and near room temperature. The highest heat flow is on the divertor targets."
+    }
+   ]
+  },
+  {
+   "id": "pred-gain",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Prediction 2: power out",
+   "prompt": "ITER is designed to make $500\\ \\text{MW}$ of fusion power from $50\\ \\text{MW}$ of heating. How much electricity do you think ITER will send to the grid?",
+   "justify": true,
+   "reveal": {
+    "after": "theory-gain"
+   },
+   "choices": [
+    {
+     "text": "About $500\\ \\text{MW}$: all of its fusion power goes to the grid.",
+     "feedback": "Fusion power is heat in the plasma, not electricity. ITER has no turbines and sends no electricity to the grid; it draws over $300\\ \\text{MW}$ from it."
+    },
+    {
+     "text": "About $450\\ \\text{MW}$, the fusion power minus the heating.",
+     "feedback": "This treats the plasma gain as electricity. ITER has no turbines, so it sends nothing to the grid, and the whole plant draws over $300\\ \\text{MW}$."
+    },
+    {
+     "text": "About $170\\ \\text{MW}$, after turbines turn heat to electricity.",
+     "feedback": "A power plant could do this, but ITER has no turbines. It is an experiment: it sends no electricity to the grid and draws over $300\\ \\text{MW}$ from it."
+    },
+    {
+     "text": "None: it has no turbines and uses power from the grid.",
+     "correct": true,
+     "feedback": "Right. ITER is an experiment to study a burning plasma. It has no turbines, and the plant draws over $300\\ \\text{MW}$ of electricity. $Q = 10$ is a gain of the plasma, not of the power station."
+    }
+   ]
+  },
+  {
+   "id": "explorer",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Investigate: explore the machine",
+   "text": "Explore the cross-section of ITER. Select every part, in the drawing or in the list below it. For each part, note in your own words: what it does, one number, and why it is hard to build. Work in pairs: one of you reads the panel aloud, the other takes notes, then swap.\n\n<div class=\"fx\" data-fx=\"iter\" id=\"fx-ii-explore\" data-src=\"units/fy14/data/iter.json\"><script type=\"application/json\">{\"mode\": \"explore\", \"about\": false}</script></div>",
+   "question": {
+    "type": "explain",
+    "prompt": "From your notes, explain to your partner, then write four or five sentences: how do the three kinds of magnets work together to hold the plasma, and why must they be so cold?",
+    "model": "The 18 D-shaped toroidal field coils make a strong field that runs around the ring, up to $11.8\\ \\text{T}$. The central solenoid in the middle works like a transformer: a changing current in it drives a large current in the plasma, and this current adds a field that twists the field lines. The six poloidal field coils outside shape the plasma and hold it in position. All the coils are superconducting: only at about $4\\ \\text{K}$ can they carry their huge currents without electrical resistance and without heating up.",
+    "criteria": [
+     "The answer names the toroidal field coils, the poloidal field coils and the central solenoid, each with its job.",
+     "It says that the central solenoid drives the plasma current like a transformer.",
+     "It explains that the coils are superconducting only at a very low temperature (about 4 K).",
+     "It uses at least one number from the explorer."
+    ]
+   }
+  },
+  {
+   "id": "theory-machine",
+   "stage": "tutki",
+   "type": "theory",
+   "sections": [
+    "Machine"
+   ]
+  },
+  {
+   "id": "vocabulary",
+   "stage": "tutki",
+   "type": "text",
+   "title": "Words of the machine",
+   "text": "<div class=\"fx\" data-fx=\"match\" id=\"fx-ii-words\"><script type=\"application/json\">{\"prompt\": \"Match each word with its meaning.\", \"options\": [\"a ring of plasma held by magnets\", \"no electrical resistance when cold\", \"exhaust for heat and helium ash\", \"lining that takes heat and neutrons\", \"coil that drives the plasma current\", \"vacuum chamber around everything\", \"fusion power equals heating power\"], \"items\": [{\"text\": \"tokamak\", \"answer\": \"a ring of plasma held by magnets\", \"feedback\": \"A tokamak holds a ring-shaped plasma with magnetic fields and a current in the plasma.\"}, {\"text\": \"superconducting\", \"answer\": \"no electrical resistance when cold\", \"feedback\": \"Below a critical temperature a superconductor carries current without losses: ITER's coils work at about 4 K.\"}, {\"text\": \"divertor\", \"answer\": \"exhaust for heat and helium ash\", \"feedback\": \"The divertor at the bottom of the vessel *diverts* the edge of the plasma onto cooled tungsten targets.\"}, {\"text\": \"blanket\", \"answer\": \"lining that takes heat and neutrons\", \"feedback\": \"Like a blanket on a bed, it covers the inside of the vessel and shields what lies behind it.\"}, {\"text\": \"central solenoid\", \"answer\": \"coil that drives the plasma current\", \"feedback\": \"It works like the primary coil of a transformer; the plasma ring is the secondary.\"}, {\"text\": \"cryostat\", \"answer\": \"vacuum chamber around everything\", \"feedback\": \"*Cryo-* means cold: the cryostat's vacuum insulates the cold magnets from the warm building.\"}, {\"text\": \"scientific breakeven\", \"answer\": \"fusion power equals heating power\", \"feedback\": \"Breakeven is $Q = 1$: the plasma gives out as much fusion power as the heating it receives.\"}], \"done\": \"All right. Use these words when you explain the machine to your partner.\"}</script></div>"
+  },
+  {
+   "id": "theory-gain",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava"
+   ]
+  },
+  {
+   "id": "language-support",
+   "stage": "selita",
+   "type": "text",
+   "text": "<div class=\"wordbank\"><h4>Word bank</h4><p>fusion power · heating power · gain · breakeven · burning plasma · to produce · to consume · to convert (heat into electricity) · a turbine · an experiment · a power plant · commercially viable</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>The gain $Q$ compares … with …</li><li>This does not mean that …, because …</li><li>ITER is an experiment, whereas a power plant …</li><li>A limitation of ITER is …</li><li>The evidence suggests that …</li></ul></div>"
+  },
+  {
+   "id": "pair-gain",
+   "stage": "selita",
+   "type": "explain",
+   "title": "Pair discussion: gain and electricity",
+   "prompt": "Discuss with a partner, using the word bank and the sentence starters, then each write three or four sentences: what is the difference between the gain of the plasma and the electricity a power plant produces? Use the bar chart.",
+   "model": "The gain $Q$ compares the fusion power made in the plasma with the heating power that reaches the plasma: for ITER $500\\ \\text{MW} : 50\\ \\text{MW} = 10$. This does not mean that ITER produces electricity, because ITER has no turbines and the plant draws over $300\\ \\text{MW}$ from the grid. A power plant would turn only about a third of its heat into electricity, so it needs a much higher gain and a plant that uses little of its own power.",
+   "criteria": [
+    "The answer defines $Q$ as fusion power divided by heating power into the plasma.",
+    "It says that ITER produces no electricity and draws over 300 MW from the grid.",
+    "It explains that a power plant loses energy when it turns heat into electricity, so it needs more than $Q > 1$.",
+    "It uses at least three words from the word bank correctly."
+   ]
+  },
+  {
+   "id": "back-to-predictions",
+   "stage": "selita",
+   "type": "reflect",
+   "title": "Back to your predictions",
+   "prompt": "Compare your predictions with the explorer and the text. Then answer the opening question in one or two sentences: why is it so hard to get more energy out of a fusion plasma than you put in?",
+   "predictions": [
+    "pred-heat",
+    "pred-gain"
+   ]
+  },
+  {
+   "id": "example",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "theory-fuel",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Fuel"
+   ]
+  },
+  {
+   "id": "tritium",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "How much tritium burns in one pulse?",
+   "prompt": "During one planned pulse ITER produces $500\\ \\text{MW}$ of fusion power for $400\\ \\text{s}$. Each D–T reaction releases $17.6\\ \\text{MeV}$ and uses one tritium atom, mass $3.016\\ \\text{u}$. How many grams of tritium fuse during the pulse? ($1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$)",
+   "answer": 0.355,
+   "unit": "g",
+   "tolerance": 0.03,
+   "hints": [
+    "First find the fusion energy of the whole pulse, $E_\\text{pulse} = Pt$, in joules.",
+    "The number of reactions is $N = E_\\text{pulse} / E$, with $E = 17.6\\ \\text{MeV}$ in joules.",
+    "$N \\approx 7.09 \\cdot 10^{22}$. Multiply by the mass of one tritium atom in kilograms, then change to grams."
+   ],
+   "mistakes": [
+    {
+     "value": 0.000888,
+     "feedback": "This is the tritium burned in one *second*. Multiply by the pulse length, $400\\ \\text{s}$."
+    },
+    {
+     "value": 0.237,
+     "feedback": "This is the mass of *deuterium* ($2.014\\ \\text{u}$). Use the mass of a tritium atom, $3.016\\ \\text{u}$."
+    },
+    {
+     "value": 355,
+     "feedback": "Check the unit: $3.55 \\cdot 10^{-4}\\ \\text{kg}$ is $0.355\\ \\text{g}$ (or $355\\ \\text{mg}$)."
+    }
+   ],
+   "solution": "**Given:** fusion power $P = 500\\ \\text{MW} = 5.00 \\cdot 10^{8}\\ \\text{W}$, pulse length $t = 400\\ \\text{s}$, energy of one D–T reaction $E = 17.6\\ \\text{MeV}$, mass of a tritium atom $m_\\text{T} = 3.016\\ \\text{u}$, $1\\ \\text{u} = 1.661 \\cdot 10^{-27}\\ \\text{kg}$, $1\\ \\text{MeV} = 1.602 \\cdot 10^{-13}\\ \\text{J}$\n\n**Find:** the mass $m$ of tritium that fuses during the pulse\n\n**Principle:** Each reaction uses one tritium nucleus and releases $17.6\\ \\text{MeV}$. The number of reactions is the fusion energy of the pulse divided by the energy of one reaction, and the mass is that number times the mass of one atom.\n\n**Formula:**\n\n$$N = \\frac{Pt}{E}, \\qquad m = N m_\\text{T} = \\frac{Pt}{E}\\,m_\\text{T}$$\n\n**Unit conversions:** $E = 17.6\\ \\text{MeV} = 17.6 \\cdot 1.602 \\cdot 10^{-13}\\ \\text{J} = 2.820 \\cdot 10^{-12}\\ \\text{J}$ and $m_\\text{T} = 3.016 \\cdot 1.661 \\cdot 10^{-27}\\ \\text{kg} = 5.010 \\cdot 10^{-27}\\ \\text{kg}$.\n\n**Substitution:**\n\n$$\\begin{aligned} N &= \\frac{5.00 \\cdot 10^{8}\\ \\text{W} \\cdot 400\\ \\text{s}}{2.820 \\cdot 10^{-12}\\ \\text{J}} \\\\ &= 7.093 \\cdot 10^{22} \\\\[6pt] m &= 7.093 \\cdot 10^{22} \\cdot 5.010 \\cdot 10^{-27}\\ \\text{kg} \\\\ &= 3.554 \\cdot 10^{-4}\\ \\text{kg} \\end{aligned}$$\n\n**Answer:** $m \\approx 0.36\\ \\text{g}$ of tritium in one $400$-second pulse, two significant figures, because the fusion power and the pulse length are planned, rounded values.\n\n**Reasonableness:** One gram of tritium has about $2 \\cdot 10^{23}$ atoms, and the pulse needs about $7 \\cdot 10^{22}$ reactions, about a third of that. The pulse releases $200\\ \\text{GJ}$ of fusion energy from less than half a gram of tritium (and about a quarter of a gram of deuterium): the huge energy density that makes fusion attractive. Because only about one per cent of the fuel burns on one pass, far more tritium is pumped through the plasma and recycled."
+  },
+  {
+   "id": "find-error",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Find the error",
+   "prompt": "A student writes: \"JET reached $Q = 0.67$ in 1997, so JET produced $67\\ \\%$ of the electricity it used.\" What is wrong?",
+   "choices": [
+    {
+     "text": "$Q$ compares plasma powers, not electricity.",
+     "correct": true,
+     "feedback": "Right. JET made $16\\ \\text{MW}$ of fusion power from $24\\ \\text{MW}$ of heating in the plasma. It produced no electricity, and its whole site used far more electricity than $24\\ \\text{MW}$."
+    },
+    {
+     "text": "$Q = 0.67$ means it made $67$ times more power.",
+     "feedback": "$Q = 0.67$ is less than one: the plasma made less fusion power ($16\\ \\text{MW}$) than it received ($24\\ \\text{MW}$). The real error is calling it electricity."
+    },
+    {
+     "text": "JET reached $Q = 10$, not $0.67$.",
+     "feedback": "$Q = 10$ is ITER's goal. JET's 1997 record was $16\\ \\text{MW} : 24\\ \\text{MW} \\approx 0.67$. The error is treating plasma powers as electricity."
+    },
+    {
+     "text": "Nothing is wrong with this statement.",
+     "feedback": "$Q$ describes the plasma only: fusion power divided by heating power. JET produced no electricity at all."
+    }
+   ]
+  },
+  {
+   "id": "quiz",
+   "stage": "sovella",
+   "type": "text",
+   "title": "Find the parts",
+   "optional": true,
+   "text": "Test yourself: the explorer asks you to find six parts from their descriptions.\n\n<div class=\"fx\" data-fx=\"iter\" id=\"fx-ii-quiz\" data-src=\"units/fy14/data/iter.json\"><script type=\"application/json\">{\"mode\": \"quiz\", \"count\": 6, \"about\": false}</script></div>"
+  },
+  {
+   "id": "misconception",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Yleinen virhekäsitys"
+   ]
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Concept: breakeven",
+   "prompt": "What does $Q = 1$ mean?",
+   "choices": [
+    {
+     "text": "Fusion power out equals heating power in.",
+     "correct": true,
+     "feedback": "Right. $Q = P_\\text{fusion} / P_\\text{heating} = 1$ is scientific breakeven, a property of the plasma only."
+    },
+    {
+     "text": "The power plant makes as much electricity as it uses.",
+     "feedback": "That would be *engineering* breakeven of a whole plant, which needs a much higher $Q$. $Q = 1$ compares fusion power with heating power in the plasma."
+    },
+    {
+     "text": "The plasma heats itself and needs no heating at all.",
+     "feedback": "That is *ignition*, when $Q$ grows without limit. At $Q = 1$ the plasma still needs as much heating as it produces in fusion power."
+    },
+    {
+     "text": "All of the fuel in the vessel has fused at last.",
+     "feedback": "$Q$ says nothing about how much fuel burns; in ITER only about one per cent of it fuses on each pass. $Q = 1$ means fusion power equals heating power."
+    }
+   ]
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "2. Calculation: a record",
+   "prompt": "In 1997 JET produced $16\\ \\text{MW}$ of fusion power while $24\\ \\text{MW}$ of heating reached the plasma. What was its fusion gain?",
+   "choices": [
+    {
+     "text": "$Q = 1.5$",
+     "feedback": "You divided the heating by the fusion power. $Q = P_\\text{fusion} / P_\\text{heating} = 16\\ \\text{MW} : 24\\ \\text{MW}$."
+    },
+    {
+     "text": "$Q = 0.67$",
+     "correct": true,
+     "feedback": "Right. $Q = 16\\ \\text{MW} : 24\\ \\text{MW} \\approx 0.67$: less fusion power than heating, below breakeven."
+    },
+    {
+     "text": "$Q = -8\\ \\text{MW}$",
+     "feedback": "$Q$ is a ratio, not a difference, and it has no unit: $Q = 16\\ \\text{MW} : 24\\ \\text{MW} \\approx 0.67$."
+    },
+    {
+     "text": "$Q = 40$",
+     "feedback": "Adding the powers gives no meaningful quantity. $Q$ is the ratio $16\\ \\text{MW} : 24\\ \\text{MW} \\approx 0.67$."
+    }
+   ]
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "3. Gain and viability",
+   "prompt": "A laboratory reports that its plasma reached $Q = 1.5$ for a few seconds. Which conclusion is justified by this result alone?",
+   "choices": [
+    {
+     "text": "The plasma gave out more power than its heating.",
+     "correct": true,
+     "feedback": "Right. That is exactly what $Q > 1$ says. Whether the whole plant produces net electricity, runs long enough and is affordable is a different and much harder question."
+    },
+    {
+     "text": "The laboratory can now sell electricity to the grid.",
+     "feedback": "$Q$ describes the plasma only. The laboratory has no turbines, and the plant uses much more electricity than the heating that reaches the plasma."
+    },
+    {
+     "text": "The whole plant used less electricity than it produced.",
+     "feedback": "At $Q = 1.5$ the plasma gives out only a little more than the heating, while heating systems, magnets and pumps use far more electricity. The plant is still a large consumer."
+    },
+    {
+     "text": "Fusion power plants will be cheaper than wind power soon.",
+     "feedback": "A short plasma result says nothing about cost, lifetime or tritium breeding. Predictions about prices are claims, not results."
+    }
+   ]
+  },
+  {
+   "id": "check-explain",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "4. Explain and argue",
+   "prompt": "Your friend says: \"ITER makes $500\\ \\text{MW}$. That is enough for a city, so why don't they connect it to the grid?\" Answer your friend in four or five sentences. Use $Q$, numbers and at least one reason why a power plant needs more than ITER can show.\n\n<div class=\"wordbank\"><h4>Word bank</h4><p>fusion power · heat · turbine · gain $Q$ · experiment · to draw power from the grid · to breed · pulse</p></div>\n\n<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>That is a good question, but …</li><li>The $500\\ \\text{MW}$ is …, not …</li><li>ITER is built to …, whereas a power plant …</li><li>Even if …, it would still …</li></ul></div>",
+   "model": "That is a good question, but the $500\\ \\text{MW}$ is fusion power, heat in the plasma, not electricity. ITER has no turbines, and to heat the plasma with $50\\ \\text{MW}$ the plant draws over $300\\ \\text{MW}$ from the grid. Even if turbines turned about a third of the heat into electricity, $500\\ \\text{MW}$ would give only about $170\\ \\text{MW}$, less than ITER uses. ITER is built to show a burning plasma with $Q = 10$ and to test the technology; a power plant must also run for months, breed its own tritium and be affordable.",
+   "criteria": [
+    "The answer says that 500 MW is fusion power (heat), not electricity, and that ITER has no turbines.",
+    "It uses $Q = 10$ or the numbers 500 MW and 50 MW correctly.",
+    "It mentions that the plant draws over 300 MW, or that conversion to electricity loses most of the heat.",
+    "It gives at least one more requirement for a power plant (long operation, tritium breeding, cost, materials)."
+   ]
+  },
+  {
+   "id": "summary",
+   "stage": "tarkista",
+   "type": "theory",
+   "sections": [
+    "Tiivistelmä"
+   ]
+  },
+  {
+   "id": "french-corner",
+   "stage": "tarkista",
+   "type": "text",
+   "text": "<div class=\"french-corner\"><h4>Le coin français</h4><p>The French name of the tokamak is the same word, <span lang=\"fr\">le tokamak</span>, and many words of the machine look like English ones. Listen, repeat, and say the last sentence to your partner.</p></div>\n\n<div class=\"fx\" data-fx=\"say\" id=\"fx-ii-french\"><script type=\"application/json\">{\"lang\": \"fr-FR\", \"title\": \"Le coin français: inside the machine\", \"phrases\": [{\"fr\": \"un aimant\", \"en\": \"a magnet\", \"tip\": \"*uh-neh-MAHN*: the final *-ant* is nasal, without a *t* or *n* sound.\"}, {\"fr\": \"supraconducteur\", \"en\": \"superconducting\", \"tip\": \"*sew-pra-kon-dewk-TUR*: both *u* sounds are like the Finnish *y*.\"}, {\"fr\": \"la chambre à vide\", \"en\": \"the vacuum vessel\", \"tip\": \"*la SHAHM-bruh a VEED*: *ch* is said like English *sh*.\"}, {\"fr\": \"le gain\", \"en\": \"the gain\", \"tip\": \"*luh GAN*: a nasal vowel, no *n* sound at the end.\"}, {\"fr\": \"Le plasma est très chaud, les aimants sont très froids.\", \"en\": \"The plasma is very hot, the magnets are very cold.\", \"tip\": \"*lay-zeh-MAHN*: the *s* of *les* links to *aimants* and sounds like *z*.\"}]}</script></div>"
+  }
+ ]
+}

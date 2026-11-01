@@ -45,7 +45,7 @@ DIR = "units"
 TEXTS = ("unit.json", "unit.md", "inquiry.json", "teacher.md")
 KINDS = ("physics", "history", "clil", "french", "lab", "explorer")
 SUBJECTS = ("physics", "english", "french")
-ASSET_REF = re.compile(r"""(?:src=["']|data-src=["']|\]\()(units/[a-z0-9]+/[^"')\s]+)""")
+ASSET_REF = re.compile(r"""(?:src=\\?["']|data-src=\\?["']|\]\()(units/[a-z0-9]+/[^"'\\)\s]+)""")   # also inside inquiry.json, where quotes are \"
 esc = lambda s: _h.escape(str(s), quote=True)
 
 
