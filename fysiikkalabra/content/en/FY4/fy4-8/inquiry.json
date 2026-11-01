@@ -148,7 +148,7 @@
         "h1": "starting height h_1",
         "F": "resistive force F_res",
         "m": "mass m",
-        "rata": "rata"
+        "rata": "track"
       },
       "units": {
         "h1": "m",
@@ -197,7 +197,7 @@
         "h1": "starting height h_1",
         "F": "resistive force F_res",
         "m": "mass m",
-        "rata": "rata"
+        "rata": "track"
       },
       "units": {
         "h1": "m",
@@ -270,7 +270,7 @@
         "h1": "starting height h_1",
         "F": "resistive force F_res",
         "m": "mass m",
-        "rata": "rata"
+        "rata": "track"
       },
       "units": {
         "h1": "m",
