@@ -105,7 +105,7 @@ new p5((p) => {
     const bt = running ? __('tauko') : __('jatka'); if (btn.elt.textContent !== bt) btn.elt.textContent = bt;
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const fh = Math.round(12 * k);
+    const fh = Math.round(14 * k);
     labels = [];
     let escaped = false, trapped = false, extra = {};
     if (s.view === 'uniform') extra = drawUniform(s, dt, fh);
@@ -120,8 +120,7 @@ new p5((p) => {
       more = '<br>' + __('lukemat_v', { vpar: sci(s.v * Math.cos(s.pitch * Math.PI / 180), 3) + '\\,\\text{m/s}', vperp: sci(s.vperp, 3) + '\\,\\text{m/s}' });
       if (s.mirror) {
         const s2 = Math.sin(s.pitch * Math.PI / 180) ** 2;
-        more += '<br>' + __('lukemat_peili', { ratio: tx(1 / M.RM, 2), s2: tx(s2, 2),
-          verdict: trapped ? __('loukussa') : __('kartio', { lc: tx(M.lossConeDeg(M.RM), 0) }) });
+        more += '<br>' + __('lukemat_peili', { ratio: tx(1 / M.RM, 2), s2: tx(s2, 2) });   // no verdict: students watch the orbit
       } else more += '<br>' + __('lukemat_suora');
     }
     readout.html(head + '<br>' + mline + more);
