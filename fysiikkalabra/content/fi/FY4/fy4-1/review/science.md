@@ -1,9 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: bb655d3ae81a61dd
+VERDICT: PASS
+CONTENT-HASH: d3cb9c05c11ebf1a
+
+Delta review (inquiry.json, 4 lines changed since bb655d3ae81a61dd).
 
 ## Blocking
-- inquiry.json:198 (exp-1 solution, Vastaus) and inquiry.json:310 (exp-3 solution, Vastaus) — **A**: the rounding reason "simulaation mallin arvot esitetään kahdella numerolla" is false. sim.js formats every position with `tx(x, 1)`, so the readout and table show 40,0 m, 16,0 m, 30,0 m (three significant figures; see shots/fy4-1-exp-exp-1-390-1.png). The answers 4,0 and −3,0 m/s are right, but the stated reason contradicts what the student sees. — Give a true reason, e.g. "mallin arvot ovat tarkkoja; nopeus ilmoitetaan kahdella numerolla kuten tunnin muut tulokset", or write 4,00 / −3,00 m/s from the 0,1 m readout.
-- inquiry.json:84 (pred-2 prompt; correct option "C pysyy koko ajan 20 m edellä") and inquiry.json:206 (exp-2 intro "C lähtee A:n edestä") — **B**: under the motion-graph guardrail (higher-line-ahead), "edellä" holds only when both carts move in the positive x direction, and pred-2 says only "samaan suuntaan". — Write "ajaa positiiviseen suuntaan yhtä nopeasti kuin A" in the pred-2 prompt. The exp-2 intro then follows from it.
 
 ## Polish
 - lesson.md:5 — the hero shows a loop around a lake, but the Miksi line, the hook and the round-trip figure use a straight there-and-back ride to the shop. Both have Δx = 0, but on a loop the 1-D x axis does not apply. Consider a straight road in the hero, or say in the caption that the start and end points are the same.
@@ -20,4 +20,5 @@ CONTENT-HASH: bb655d3ae81a61dd
 - Definitions (paikka, siirtymä, matka, nopeus/vauhti, keskinopeus = Δx/Δt) agree with the glossary and the exit ticket. The vector notation (overline, components on a line) follows the FY4 scope.
 - The slope is read from the fitted line, not from neighbouring raw points, in line with the guardrail.
 - Worked example: solved symbolically first, the rounding reason is sound, and the reasonableness check is real.
-- Hash is the same at the start and at the end.
+- Delta: the exp-1 and exp-3 rounding reason now cites only the given two-digit data (true). The pred-2 correct option and the exp-2 intro now say "edellä positiiviseen suuntaan", which is right whichever way the carts move. Previous blocking items are resolved.
+- Second delta (hash d3cb9c05c11ebf1a): the only change is the colon to a comma in the exp-1 and exp-3 Vastaus lines. It is punctuation only, with no physics or number changed.

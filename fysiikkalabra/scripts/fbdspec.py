@@ -159,14 +159,34 @@ def _rot(ang, u, v):
     return (u * c - v * s, u * s + v * c)
 
 
-def _surface(f, p, q, solid):
-    """A contact surface from p to q (figure coords), hatched on its solid side (unit vector solid, y up)."""
-    f.line(p[0], p[1], q[0], q[1], INK, 3, cap="round")
+def _cross(p, q, a, b):
+    """Where the segment a-b crosses the surface p-q, as a distance from p, or None."""
+    d1 = (q[0] - p[0], q[1] - p[1]); d2 = (b[0] - a[0], b[1] - a[1])
+    den = d1[0] * d2[1] - d1[1] * d2[0]
+    if abs(den) < 1e-9: return None
+    t = ((a[0] - p[0]) * d2[1] - (a[1] - p[1]) * d2[0]) / den
+    u = ((a[0] - p[0]) * d1[1] - (a[1] - p[1]) * d1[0]) / den
+    if not (0 < t < 1 and 0.02 < u < 0.98): return None
+    return t * math.hypot(*d1)
+
+
+def _surface(f, p, q, solid, gaps=()):
+    """A contact surface from p to q (figure coords), hatched on its solid side (unit vector solid, y up). An arrow
+    that passes through the surface (a force from the centre, such as buoyancy under a ceiling) gets a gap of its own."""
     L = math.hypot(q[0] - p[0], q[1] - p[1]); ux, uy = (q[0] - p[0]) / L, (q[1] - p[1]) / L
+    cuts = sorted((max(0, g - 11), min(L, g + 11)) for g in gaps)
+    pieces, k0 = [], 0.0
+    for c0, c1 in cuts:
+        if c0 > k0: pieces.append((k0, c0))
+        k0 = max(k0, c1)
+    if k0 < L: pieces.append((k0, L))
+    for k0, k1 in pieces:
+        f.line(p[0] + ux * k0, p[1] + uy * k0, p[0] + ux * k1, p[1] + uy * k1, INK, 3, cap="round" if not cuts else "butt")
     k = 6.0
     while k <= L - 4:
-        ax, ay = p[0] + ux * k, p[1] + uy * k
-        f.line(ax, ay, ax + solid[0] * 12 - ux * 8, ay - solid[1] * 12 - uy * 8, MUTED, 1.5)
+        if not any(c0 - 2 <= k <= c1 + 8 for c0, c1 in cuts):
+            ax, ay = p[0] + ux * k, p[1] + uy * k
+            f.line(ax, ay, ax + solid[0] * 12 - ux * 8, ay - solid[1] * 12 - uy * 8, MUTED, 1.5)
         k += 16
 
 
@@ -427,9 +447,16 @@ def draw(spec, fid, _frame=None):
             a_dir = (0, 0) if b["a"] in ("0", "nolla", "none") else _unit(along(b["a"], surf))
         forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         short = _short_inside(forces, cx, cy, ang, scale)
+        if short and not two and not split and short < 52:                         # one body: first the whole figure on a larger
+            grow = min(52 / short, 220.0 / (big * scale))                          # scale, so the short arrow keeps a shaft outside
+            if grow > 1:
+                scale *= grow
+                forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
+                short = _short_inside(forces, cx, cy, ang, scale)
         if short:                                                                  # a force from the centre that would end inside the
             # body: a smaller rectangle, the arrows kept to scale
-            k = max(0.35, min(1.0, (short - 12) / (H / 2))); W, H = W * k, H * k
+            k = max(0.35, min(1.0, (short - (12 if two else 26)) / (H / 2)));   # one body: the head and a bit of shaft outside
+            W, H = W * k, H * k
             forces, faces = _restore_sums(_forces(b, cx, cy, ang, shown, scale), hz, big)
         approx = approx or any(0 < size * hz[h] < MIN_SHOWN * big for size, h in _probe(b, cx, cy, ang, scale))   # one drawn at the floor
         true = fbd.FBD(f, scale, body=(cx, cy, W, H, ang), a_dir=a_dir)              # the physics, on the true sizes
@@ -443,6 +470,12 @@ def draw(spec, fid, _frame=None):
         solid = []                                                                 # points a label must not cover
         for gx in range(-10, 11):
             for gy in range(-5, 6): solid.append(_local(cx, cy, ang, gx * W / 20, gy * H / 10))
+        arrows = []                                                                # (tail, tip, tex, labelled at the tail)
+        LENGTHS.update({x[0]: math.hypot(*x[2]) for x in forces})
+        for sym, _, vec, (px, py), k, extra in forces:
+            tip = (px + vec[0] * scale, py - vec[1] * scale)
+            arrows.append(((px - vec[0] * scale, py + vec[1] * scale), (px, py), tex_of(sym), True) if extra.get("push")
+                          else ((px, py), tip, tex_of(sym), False))
         for face in sorted(faces):                                                 # the surfaces it touches
             fo = _face(face); sol = _rot(ang, fo[0], fo[1])
             al = (1, 0) if fo[1] else (0, 1); e = W * 0.95 if fo[1] else H * 1.4
@@ -451,12 +484,6 @@ def draw(spec, fid, _frame=None):
             _surface(f, p1, p2, sol)
             solid += [(p1[0] + (p2[0] - p1[0]) * t / 30 + sol[0] * 6, p1[1] + (p2[1] - p1[1]) * t / 30 - sol[1] * 6) for t in range(31)]
             ys += [p1[1], p2[1]]; xs += [p1[0], p2[0]]
-        arrows = []                                                                # (tail, tip, tex, labelled at the tail)
-        LENGTHS.update({x[0]: math.hypot(*x[2]) for x in forces})
-        for sym, _, vec, (px, py), k, extra in forces:
-            tip = (px + vec[0] * scale, py - vec[1] * scale)
-            arrows.append(((px - vec[0] * scale, py + vec[1] * scale), (px, py), tex_of(sym), True) if extra.get("push")
-                          else ((px, py), tip, tex_of(sym), False))
         comps = []
         if axes:
             for sym in b["comps"]:

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: bb655d3ae81a61dd
+CONTENT-HASH: d3cb9c05c11ebf1a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig-2 (robotti, "sovitettu suora") — the fitted line is drawn in orange, the project's acceleration colour — a student may read it as a second quantity — use ink or a neutral colour (for the line and its label).
-- [Minor] fig-4 (displacement) — the arrow for Δx = +6 m is blue (the velocity colour) while Δx = −5 m is dark ink — same quantity, two colours, and blue suggests velocity — draw both displacement arrows in one colour that is not blue.
-- [Minor] intro/theory at 1280 px — the round-trip figure fills the column with labels larger than the body text, while the displacement figure beside the text is small — uneven figure scale in one section — cap its width as the other figures.
-- [Minor] inquiry exp-1..3 intro — "Hetki $t$ -liukusäädintä" breaks as "Hetki t -" at line end (390 px) — write "$t$-liukusäädintä" or "Hetki-liukusäädintä".
-- [Minor] exit ticket heading "Exit ticket" is English on the Finnish page, though the stage is "Lähtölippu" elsewhere — use the Finnish heading (template, project-wide).
+- [Minor] Ennuste 2, third option — "C on koko ajan $20\,\text{m}$ A:n edellä positiiviseen suuntaan" is correct and unambiguous, but "A:n edellä" breaks at line end beside the quantity at 390 px ("20 m A:n edellä" over two lines) — no action needed; optional "C on koko ajan A:n edellä $20\,\text{m}$ positiiviseen suuntaan".
+- [Minor] Koe 2 intro — "lähtee A:n edestä positiiviseen suuntaan katsottuna" is fluent but "lähtee A:n edestä" and the sign direction sit in one clause; acceptable as is.
+- [Carried, unchanged] fig-2 fitted line orange (acceleration colour); fig-4 displacement arrows in two colours; round-trip figure scale at 1280 px; "Exit ticket" English heading (all from the previous report, not in this diff).
 
 ## Checked
-- 390 px: top, fig-1..7 (all seven figures opened), sim, example 1/2, tutki 1 and 3, exp-1 part 1.
-- 1280 px: intro, sim, lab 1 and 3, theory 1–3, open-ennusta 1, open-tarkista 2, open-exit, exercises L1-1 and L3-2.
-- Text of lesson, inquiry, exit ticket read in full; contact sheets not needed.
+- Delta: the three changed texts, in captures: ennusta option 3 (open-ennusta-1280-1, stage-ennusta-390-2), exp-2 intro (exp-exp-2-390-1), Vastaus lines of the B and D solutions (text read in diff; closed in the 390 px tutki capture tutki-390-3 and tarkista-1280-1/2, so not seen rendered open).
+- Surrounding layout: open-ennusta-1280-2, stage-sovella-390-1, tutki-390-3, tarkista-1280-1 and -2: no clipping, overflow or broken maths; quantities stay in LaTeX; no figure or formula changed.
+- Hash run at start and end: identical.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
