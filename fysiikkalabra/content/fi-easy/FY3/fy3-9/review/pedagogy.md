@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 30ee8b4a6ddae833
+CONTENT-HASH: 0b2d8154f98ba8a6
 
 ## Blocking
 (none)
-
-## Fixed
-- none needed
 
 ## Polish
 - None.
 
 ## Checked
-Same section order, stages, predictions, experiments, feedback and exit ticket as the Finnish; the typesetting round is applied identically. Sentences are short and clear, terms explained in plain words (e.g. harva kaasu = particles far apart; kääntäen verrannollisuus explained as doubling V halves p).
+- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
+- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.

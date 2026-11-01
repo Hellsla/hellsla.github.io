@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 305f6c5335d3dde9
+CONTENT-HASH: 34278732587c5527
 
 ## Blocking
 (none)
-
-## Fixed
-- none needed
 
 ## Polish
 - None.
 
 ## Checked
-Same section order, stages, predictions, experiments, feedback and exit ticket as the Finnish; the typesetting round (inline LaTeX values with units) is applied identically. Language is natural and level-appropriate.
+- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
+- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.

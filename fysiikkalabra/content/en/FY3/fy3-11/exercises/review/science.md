@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2198121b2500052f
+CONTENT-HASH: 57ff55f2f9cf838b
 
 ## Blocking
 (none)
@@ -11,4 +11,4 @@ CONTENT-HASH: 2198121b2500052f
 - None.
 
 ## Checked
-Translation review of exercises.json and solutions.md against the reviewed Finnish. A script comparing every number, unit, inline formula and answer found no difference (only symbol subscripts translated consistently: W_g / P_e / P_dh / E_el etc. in English). Answers and worked solutions unchanged: e.g. W = 480 kPa·0.0250 m³ = 12.0 kJ, 172 J, 37.2 % efficiencies, 720 kW, heat pump 9.60 MWh from outdoors; the sign convention ΔU = Q - W_gas is kept. answers.py is shared and not a translation file. check_i18n 0 errors.
+Translation review of exercises.json and solutions.md against the reviewed Finnish. A script compared every number, unit and inline formula in all tasks, hints, mistakes and the 124-line solutions.md: no difference; answers and units unchanged. Symbols W_g / P_e / P_dh / E_el as in the lesson; the figure change since the last pass (W_g, E_el labels) does not touch the exercises (pv-isobaari task figure has no W label). check_i18n 0 errors.

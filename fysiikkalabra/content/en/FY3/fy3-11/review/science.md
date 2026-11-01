@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 59f8c6d98072df03
+CONTENT-HASH: 339ff2bfdf81959e
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 59f8c6d98072df03
 - none needed
 
 ## Polish
-- The lesson figures and the simulation draw their own symbols from shared code (lessons/FY3/fy3-11/figures.py, sim.js): they show $W_\text{k}$ (and $E_\text{s}$ in the heat-pump figure label) while the English text uses $W_\text{g}$ / $E_\text{el}$. Not a translation file and meaning is unambiguous from the figure captions and the text; suggest letting the shared code take the symbols from the language.
+- None.
 
 ## Checked
-Full translation review (English) of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish. Script comparison of all numbers and inline LaTeX: every value, unit and answer equals the Finnish (worked example 38.0 % / 310 MW and 88.0 % / 60 MW; $W = p\Delta V$; $\Delta U = Q - W_\text{g}$ sign convention and $W = -W_\text{g}$ kept). Symbol subscripts translated consistently in text, inquiry and solutions. Physics statements (second law, cogeneration, heat pump COP can exceed 1, no work without volume change) agree with the Finnish. No Finnish words left. check_i18n 0 errors.
+Translation review of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish, after the W_g / E_el relabelling (figures.json, sim label from lang/en.json sims.fy3-11.wk). Script comparison of every number and inline formula (also inquiry/exit ticket by structure): no difference. Same physics: W_g = p dV, dU = Q - W_g with W = -W_g, W = Q1 - Q2, eta = W/Q1, COP = Q_indoors/E_el, worked example 38.0 % / 310 MW and 88.0 % / 60 MW. Symbols W_g, E_el, Q_indoors, Q_outdoors are the same in text, SVG labels, figure descriptions, inquiry and the sim's W label. No leftover W_k / E_s. check_i18n 0 errors.

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8658644bef26f294
+CONTENT-HASH: a31dd74dd56c8b2c
 
 ## Blocking
+(none)
 
 ## Polish
 - None.
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
+- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.
