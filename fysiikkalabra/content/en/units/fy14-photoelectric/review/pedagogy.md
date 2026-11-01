@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8a765aee3682cb12
+CONTENT-HASH: 32f7650573683cf9
 
 Pedagogy re-review of fy14-photoelectric (2026-11-01), after the "Fixes after review" in review/developer.md. Page rebuilt with `python3 scripts/build.py fy14-photoelectric` and tested in Playwright at 390 px.
 

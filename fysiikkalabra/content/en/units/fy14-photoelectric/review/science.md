@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 8a765aee3682cb12
+CONTENT-HASH: 32f7650573683cf9
 
-Science re-review of fy14-photoelectric, 2026-11-01. It covers the fixes after review, the new `pred-stop`, `hook-discuss`, the rewritten options and the sim changes.
+Science re-review of fy14-photoelectric, 2026-11-01 (updated for the Planck sentence: the law was presented on 19 Oct 1900 and its derivation with energy elements on 14 Dec 1900, both to the German Physical Society; correct). It covers the fixes after review, the new `pred-stop`, `hook-discuss`, the rewritten options and the sim changes.
 
 ## Previous findings
 All eight are resolved:

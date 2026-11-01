@@ -209,7 +209,7 @@ You will do this measurement yourself with a real photocell and a mercury lamp i
 
 <!-- photo: max-planck -->
 
-Max Planck was a German theoretical physicist. On 14 December 1900 he presented to the German Physical Society a new law for the radiation of hot objects. To derive it, he had to assume that energy is exchanged in packets of size $hf$. Planck saw this as a mathematical step, not as a statement about light itself, and at first he rejected Einstein's light quanta. Still, his constant $h$ became the starting point of quantum physics. He received the Nobel Prize in Physics for 1918 for his discovery of energy quanta.
+Max Planck was a German theoretical physicist. In 1900 he found a new law for the radiation of hot objects, and on 14 December 1900 he presented its derivation to the German Physical Society. To derive it, he had to assume that energy is exchanged in packets of size $hf$. Planck saw this as a mathematical step, not as a statement about light itself, and at first he rejected Einstein's light quanta. Still, his constant $h$ became the starting point of quantum physics. He received the Nobel Prize in Physics for 1918 for his discovery of energy quanta.
 
 ### Albert Einstein (1879–1955)
 
