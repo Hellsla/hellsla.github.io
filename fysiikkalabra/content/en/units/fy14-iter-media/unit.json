@@ -20,6 +20,7 @@
   {"title": "ITER Organization: What will ITER do? (Q = 10, 500 MW from 50 MW)", "url": "https://www.iter.org/fusion-energy/what-will-iter-do", "checked": "2026-11-01"}
  ],
  "media": [
-  {"file": "units/fy14/pics/iter-tokamak-pit.jpg", "title": "ITER tokamak complex, 2018", "creator": "Oak Ridge National Laboratory", "source": "https://commons.wikimedia.org/wiki/File:ITER_construction_in_2018_%2841809718461%29.jpg", "licence": "CC BY 2.0", "licence_url": "https://creativecommons.org/licenses/by/2.0"}
+  {"file": "units/fy14/pics/iter-tokamak-pit.jpg", "title": "ITER tokamak complex, 2018", "creator": "Oak Ridge National Laboratory", "source": "https://commons.wikimedia.org/wiki/File:ITER_construction_in_2018_%2841809718461%29.jpg", "licence": "CC BY 2.0", "licence_url": "https://creativecommons.org/licenses/by/2.0"},
+  {"file": "units/fy14/pics/iter-visit-hellsten.jpg", "title": "Inside the ITER tokamak pit, March 2024", "creator": "Lauri Hellsten", "source": "Photograph supplied by the author (2026-11-01)", "licence": "© Lauri Hellsten, all rights reserved; used with the author's permission"}
  ]
 }

@@ -397,3 +397,4 @@ figure.unit-photo{margin:1.25rem 0 1.5rem;max-width:var(--measure)}
 figure.unit-photo img{display:block;width:auto;max-width:100%;height:auto;max-height:22rem}
 figure.unit-photo figcaption{margin-top:.5rem;font-size:var(--fs-inner);line-height:var(--lh);color:var(--ink-2)}
 figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--fs-small)}
+figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}

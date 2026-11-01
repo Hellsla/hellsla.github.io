@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c8f570b82c030bf8
+CONTENT-HASH: 75a96994b7996c78
 
 Pedagogy re-review of fy14-iter-media (2026-11-01) after the "Fixes after review" in review/developer.md (commit c6532e4f). Rebuilt and tested in Playwright over HTTP at 390 px. The brief's assignment is still complete: an article read, about 300 words on the six content points, and a comparison between historical reporting and current information.
 
@@ -21,3 +21,5 @@ Pedagogy re-review of fy14-iter-media (2026-11-01) after the "Fixes after review
 
 ## Re-check 2026-11-01: photographs
 Construction photo after the then/now table makes "construction status" concrete; it does not split the table from its text or answer any task. No lesson ids, no ×, British spelling.
+
+Hash updated 2026-11-01 for a photo-only change; per the teacher, photo changes get a visual review only.

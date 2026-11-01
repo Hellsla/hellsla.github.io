@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: edfd37cb96fa903e
+CONTENT-HASH: 9e9b8ad627a9f572
 
 Pedagogy re-review of fy14-fotoni (2026-11-01) after commit ba3f91b8 ("Fixes after review" in review/developer.md). I rebuilt the page and tested it in Playwright at 390 and 1280 px.
 
@@ -37,3 +37,5 @@ Pedagogy re-review of fy14-fotoni (2026-11-01) after commit ba3f91b8 ("Fixes aft
 - `templates/lesson.js` `beforeprint`: see Polish 1.
 
 Re-check 2026-11-01: typography-only change to hint 3 (inline $B^2r^2$ formula can now wrap); no change to meaning or pedagogy.
+
+Hash updated 2026-11-01 for a photo-only change; per the teacher, photo changes get a visual review only.

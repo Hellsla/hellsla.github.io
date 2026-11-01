@@ -90,5 +90,14 @@
    "url": "https://en.wikipedia.org/wiki/Planck_constant",
    "checked": "2026-11-01"
   }
+ ],
+ "media": [
+  {
+   "file": "units/fy14/pics/fotoni-logo.png",
+   "title": "Fotoni logo",
+   "creator": "University of Helsinki, Fotoni",
+   "source": "https://www.helsinki.fi/fi/tiedekasvatus/opettajille/fysiikan-avoin-opetuslaboratorio-fotoni",
+   "licence": "© University of Helsinki (logo; not freely licensed). Use only to identify the Fotoni lab, unmodified."
+  }
  ]
 }

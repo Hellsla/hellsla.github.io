@@ -281,6 +281,8 @@ Valais, Fribourg) 80 is **<span lang="fr">huitante</span>**. In France you will 
 France uses the **euro** (€), and one euro is 100 **<span lang="fr">centimes</span>**. In France people say *<span lang="fr">centime</span>*, not *cent*.
 French writes prices with a **decimal comma** and puts the euro sign after the number: <span lang="fr">2,50 €</span>, <span lang="fr">0,90 €</span>.
 
+<figure class="unit-photo"><img src="units/fy14/pics/french-market.jpg" alt="Colour photograph of a busy outdoor market under plane trees, with stalls of fruit and vegetables under green and orange parasols in front of ochre buildings with shutters." width="1262" height="947" loading="lazy"><figcaption>A morning market in the old town of Aix-en-Provence. Markets are a good place to practise French: asking for prices, quantities and saying merci. <span class="photo-credit">Photo: Lauri Hellsten</span></figcaption></figure>
+
 To say a price, put **<span lang="fr">euros</span>** between the euros and the cents:
 
 - <span lang="fr">2,50 €</span> = <span lang="fr">deux euros cinquante</span>
