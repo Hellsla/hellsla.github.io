@@ -94,7 +94,7 @@
         },
         {
           "text": "Melting lasts longer, because cold ice is harder to heat.",
-          "feedback": "During melting the ice is already at 0 °C and its temperature does not change. According to the model, melting lasts only about a seventh of the duration of boiling (about $84\\,\\text{s}$ and $565\\,\\text{s}$ when $m = 0.25\\,\\text{kg}$)."
+          "feedback": "During melting the ice is already at zero degrees and its temperature does not change. According to the model, melting lasts only about a seventh of the duration of boiling (about $84\\,\\text{s}$ and $565\\,\\text{s}$ when $m = 0.25\\,\\text{kg}$)."
         }
       ],
       "optional": true
@@ -131,7 +131,7 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "In the simulation, ice is heated from $-20\\,{}^\\circ\\text{C}$ at constant power at normal atmospheric pressure until it is steam at 130 °C.",
+      "text": "In the simulation, ice is heated from $-20\\,{}^\\circ\\text{C}$ at constant power at normal atmospheric pressure until it is 130-degree steam.",
       "howto": "Press *Heat* and follow the $(t, T)$ graph: where does the temperature rise and where does it stay in place?",
       "model": "The model assumes that all the energy from the heater is transferred to the substance and that the pressure stays at normal atmospheric pressure $p = 101\\,\\text{kPa}$. The vessel is closed by a light, freely moving piston, and the steam does not leave the vessel but expands under the piston; the picture is not to scale, since the volume of the steam is about 1700 times that of the water. That is why the water boils at $100\\,{}^\\circ\\text{C}$, and the specific heat capacity at constant pressure, $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$, is used for warming the steam. In an open pan the steam would escape and would not warm up to $130\\,{}^\\circ\\text{C}$. In a closed rigid vessel the pressure would rise as the steam formed, the boiling temperature would rise, and the curve would have no horizontal part at exactly $100\\,{}^\\circ\\text{C}$. The values on the screen are calculated by the model, not measurements from a real vessel."
     },
@@ -256,7 +256,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates the quantity of heat needed to melt $0.20\\,\\text{kg}$ of ice at 0 °C into water at 0 °C: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. The student concludes that ice melts without energy. Where is the error?",
+      "prompt": "A student calculates the quantity of heat needed to melt $0.20\\,\\text{kg}$ of ice at zero degrees into water at zero degrees: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. The student concludes that ice melts without energy. Where is the error?",
       "choices": [
         {
           "text": "The value for water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$, should be used in place of the specific heat capacity of ice.",
@@ -273,7 +273,7 @@
         },
         {
           "text": "There is no error in the calculation: ice melts by itself at $0\\,{}^\\circ\\text{C}$.",
-          "feedback": "Ice at 0 °C does not melt unless energy is transferred to it; in a cool bag ice melts precisely because it takes heat from its surroundings. Melting needs $Q = sm$."
+          "feedback": "Ice at zero degrees does not melt unless energy is transferred to it; in a cool bag ice melts precisely because it takes heat from its surroundings. Melting needs $Q = sm$."
         }
       ],
       "optional": true
@@ -283,7 +283,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A steam humidifier boils water into steam. In an hour, $0.30\\,\\text{kg}$ of water evaporates from its tank, and the water is already at 100 °C to begin with. What is the power the humidifier uses for vaporising? Heat losses are not taken into account. Give your answer in watts.",
+      "prompt": "A steam humidifier boils water into steam. In an hour, $0.30\\,\\text{kg}$ of water evaporates from its tank, and the water is at 100 degrees to begin with. What is the power the humidifier uses for vaporising? Heat losses are not taken into account. Give your answer in watts.",
       "answer": 188,
       "unit": "W",
       "tolerance": 0.02,
@@ -394,14 +394,14 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "4. Explain and transfer",
-      "prompt": "Why does steam at 100 °C burn skin worse than the same mass of water at 100 °C? Use a change of state and energy in your explanation.",
+      "prompt": "Why does 100-degree steam burn skin worse than the same mass of 100-degree water? Use a change of state and energy in your explanation.",
       "criteria": [
         "I say that steam condenses into water on the skin and then gives out the quantity of heat $Q = rm$.",
         "I say that water gives out only $Q = cm\\Delta T$ as it cools, and steam gives out the latent heat of condensation in addition to this.",
         "I compare the sizes: the latent heat of condensation is many times the heat released in cooling.",
         "I use the micro model: when steam condenses, the molecules move close to each other, the interaction energy between them decreases and the energy is transferred to the skin."
       ],
-      "model": "When steam hits the skin, it condenses into water. As it condenses, the molecules bind to each other, and the energy that was taken up in vaporisation is released: $Q = rm$. After that the water that has formed cools to the temperature of the skin like ordinary hot water. One gram of steam gives out $2260\\,\\text{J}$ as it condenses and a further $264\\,\\text{J}$ or so as it cools from $100\\,{}^\\circ\\text{C}$ to $37\\,{}^\\circ\\text{C}$, about $2.5\\,\\text{kJ}$ in total. One gram of water at 100 °C gives out only the cooling part, about $264\\,\\text{J}$, which is almost ten times less.",
+      "model": "When steam hits the skin, it condenses into water. As it condenses, the molecules bind to each other, and the energy that was taken up in vaporisation is released: $Q = rm$. After that the water that has formed cools to the temperature of the skin like ordinary hot water. One gram of steam gives out $2260\\,\\text{J}$ as it condenses and a further $264\\,\\text{J}$ or so as it cools from $100\\,{}^\\circ\\text{C}$ to $37\\,{}^\\circ\\text{C}$, about $2.5\\,\\text{kJ}$ in total. One gram of 100-degree water gives out only the cooling part, about $264\\,\\text{J}$, which is almost ten times less.",
       "optional": true
     },
     {
