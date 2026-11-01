@@ -4,6 +4,7 @@
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
    5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows.
+   5b. Exercise head: Vastaus and Näytä ratkaisu as buttons beside the Ydintehtävä tag (the boxes open in place).
    6. Solution editor: "Kirjoita ratkaisu" under every exercise opens Abitti's own editor (Digabi rich-text-editor) and
       "Kopioi ratkaisu" copies the solution for L'Math or Abitti. The editor is loaded on the first click only.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
@@ -88,6 +89,26 @@
   document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) openTo(hashId(a.getAttribute('href'))); });
   window.addEventListener('hashchange', () => openTo(hashId(location.hash)));
   if (location.hash) openTo(hashId(location.hash));
+
+  // 5b. Exercise head row (teacher 2026-11-01): "Vastaus" and "Näytä ratkaisu" sit beside the Ydintehtävä tag at the
+  // top of the exercise, as buttons; what they open stays where it is, after the answer box and the editor. Without
+  // scripts the boxes keep their own summaries (site.css hides them only under li.ex-js).
+  document.querySelectorAll('#exercises li[id]').forEach((li) => {
+    const boxes = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
+    if (!boxes.length || !li.querySelector(':scope > .task')) return;
+    const head = document.createElement('div'); head.className = 'ex-head';
+    const tag = li.querySelector(':scope > .ex-core'); if (tag) head.append(tag);
+    boxes.forEach((d, i) => {
+      d.id = d.id || `${li.id}-${d.classList.contains('answer') ? 'answer' : 'solution'}`;
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'ex-toggle';
+      b.textContent = d.querySelector(':scope > summary').textContent; b.setAttribute('aria-controls', d.id);
+      const sync = () => b.setAttribute('aria-expanded', String(d.open));
+      b.addEventListener('click', () => { d.open = !d.open; });
+      d.addEventListener('toggle', sync); sync();
+      head.append(b);
+    });
+    li.prepend(head); li.classList.add('ex-js');
+  });
 
   // 6. Solution editor (teacher 2026-11-01). Every exercise the build writes (build.py exercise_html: an <li id> with a
   // p.task, in #exercises) and every Sovella itsenäisesti task (practice.py: section.practice-task > .task-card) gets

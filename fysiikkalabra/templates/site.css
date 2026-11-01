@@ -358,6 +358,14 @@ form.check output[data-state=ok]{color:var(--accent-deep);font-weight:600}
 form.check output[data-state=no]{color:#8a3b1a}
 form.check output[data-state=hint]{color:var(--ink-2)}
 form.check.is-ok input{border-color:var(--accent);background:var(--accent-soft)}
+/* the exercise head (lesson.js 5b): the Ydintehtävä tag, Vastaus and Näytä ratkaisu on one row; the boxes open in place */
+.ex-head{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem 1rem;margin:0 0 .2rem}.ex-head .ex-core{margin:0}
+.ex-toggle{display:inline-flex;align-items:center;min-height:40px;padding:0 .2rem 0 0;border:0;background:none;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.ex-toggle::before{content:"▸";display:inline-block;width:1.2em;flex:none}.ex-toggle[aria-expanded=true]::before{content:"▾"}
+.ex-toggle:hover{text-decoration:underline;text-underline-offset:.18em}
+li.ex-js>details.answer>summary,li.ex-js>details.solution>summary{display:none}
+li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin:0}
+@media print{.ex-head .ex-toggle{display:none}}
 /* the solution editor under an exercise (lesson.js 6; Abitti's own editor, loaded on the first click) */
 .pad-open,.pad-copy{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;margin:.1rem 0 .5rem}
 .pad-open:hover,.pad-copy:hover{background:var(--accent-soft)}

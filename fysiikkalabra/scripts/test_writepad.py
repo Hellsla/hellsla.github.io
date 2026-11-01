@@ -12,6 +12,8 @@ secure page):
     its LaTeX in alt; "Kopioi ratkaisu" puts the editor's HTML and a plain-text copy (formula as \\( LaTeX \\)) on the
     clipboard, and pasting that HTML into another exercise's editor (the same editor as in Abitti) gives back an
     editable formula with the same LaTeX
+  - Vastaus and Näytä ratkaisu are buttons on the exercise's top row beside the Ydintehtävä tag, and open their
+    boxes in place (teacher 2026-11-01)
   - at 360, 768 and 1280 px the open editor fits the exercise: no horizontal scroll, buttons at least 40 px high
 And on the Sovella itsenäisesti page of every course in every language (teacher 2026-11-01, "myös Sovella"): one
 button per task, inside its task card before the model answer, the editor opens and the copy works, and at 360 and
@@ -83,6 +85,15 @@ with sync_playwright() as pw:
             const b = li.querySelector(':scope > .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution');
             return b && (!a || (b.compareDocumentPosition(a) & 4)) && (!s || (b.compareDocumentPosition(s) & 4)); })""")
         expect(f"{page}: the button comes after the task and before its answer and model solution", order)
+        head = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
+            const h = li.firstElementChild, t = h && [...h.querySelectorAll('.ex-toggle')], d = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
+            return h && h.classList.contains('ex-head') && t.length === d.length && t.every((b, i) => b.getAttribute('aria-controls') === d[i].id && b.textContent === d[i].querySelector('summary').textContent)
+                && (!li.querySelector('.ex-core') || h.contains(li.querySelector('.ex-core'))) && d.every(x => !x.open && x.querySelector('summary').offsetHeight === 0); })""")
+        expect(f"{page}: Vastaus and Näytä ratkaisu are buttons in the exercise's top row beside its tag (teacher 2026-11-01)", head)
+        tg = pg.locator("#exercises li[id] .ex-toggle").first
+        tg.scroll_into_view_if_needed(); tg.click()
+        expect(f"{page}: the Vastaus button opens the answer in its place", pg.evaluate("(id) => document.getElementById(id).open", tg.get_attribute("aria-controls")) and tg.get_attribute("aria-expanded") == "true")
+        tg.click()
         expect(f"{page}: nothing of the editor loads before the first click", not any("/vendor/digabi/" in u for u in reqs),
                [u for u in reqs if "/vendor/digabi/" in u])
         # the answer check is unchanged
