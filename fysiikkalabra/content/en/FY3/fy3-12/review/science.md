@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ef052eba690ddf4f
-
+CONTENT-HASH: 528237b936f3b704
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- inquiry.json activities[6].question.mistakes[1].feedback — "for the 3.6 W/m² to be closed" (literal "kuroutuu umpeen") → "for the 3.6 W/m² excess to drop to zero"
-- lesson.md section heading — "Formula: Heat transfer rate and U-value" did not match the Finnish "Lämpöteho ja U-arvo" → "Formula: Thermal power and U-value"
-- meta.json glossary — johtuminen, konvektio, energiatasapaino left in Finnish → conduction, convection, energy balance
-
+(none)
 ## Polish
-- Subscripts in \text{} (A_s, A_i, A_y, U_v, U_u, t_v) keep the Finnish initials because the formula check requires identical symbols; they are defined in the Given line.
-
+(none)
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, feedback, hints, solutions, model answers), exit-ticket.json, meta.json, figures.json (each value translates its own key) against the Finnish; sim: none (sim=false).
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md (key idea, units in maths, summary), inquiry.json (new check-c2 item, renumbered titles, unit markup), exit-ticket.json (trimmed to one question), figures.json (new earth-flows figure) against the new Finnish.
+- Translation reviewed against the reviewed Finnish source (fy3-12, en): every number, unit, symbol and formula agrees (script comparison of all numbers after decimal-mark normalisation: lesson.md, inquiry.json, exit-ticket.json; only SVG label coordinates differ, as expected).
+- inquiry.json and exit-ticket.json have the same structure as the Finnish: same correct options, numeric answers, hint and option counts.
+- Inline-LaTeX typesetting round applied: signs now inside the maths ($+15\,{}^\circ\text{C}$), values with units and symbols as in the Finnish.
+- Physics, model conditions and worked-example reasoning identical to the Finnish; no content added or dropped.
+- English is natural; no Finnish words in text, units or experiment names; decimal points and symbols as in the Finnish.

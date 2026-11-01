@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9d3ad72f000cfde4
+CONTENT-HASH: 987fd85d1a533a05
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 9d3ad72f000cfde4
 - none
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+Delta: the simplified Sijoitus line is easier to follow than the nested fraction (k first, then 100 · 3 °C = 300 °C, then subtraction); staging Annettu/Kysytty/Periaate/.../Järkevyys intact; no number, answer or meaning changed; Finnish unchanged.

@@ -407,10 +407,12 @@ def experiment_html(a, md, lid):
     tn = lambda k: tex_name(names.get(k, k))
     fi = lambda v: str(v).replace(".", T("format.decimal")) if isinstance(v, (int, float)) else str(v)   # decimal comma on the page
     words = a.get("values", {})   # {param: {value: words}}: a select's option named in words, not by its index
+    sim_words = (T(f"sims.{lid}.values") if T.has(f"sims.{lid}.values") else None) or {}
     bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         tn = bare
         if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
             num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")

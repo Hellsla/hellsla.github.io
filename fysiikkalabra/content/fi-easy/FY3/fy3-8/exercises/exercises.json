@@ -11,7 +11,7 @@
     {
       "id": "fy3-8-L1-02",
       "level": 1,
-      "text": "Kahden sähköpylvään välillä on alumiininen ilmajohto ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Kesäiltana $18\\,{}^\\circ\\text{C}$:ssa se on $50{,}0\\,\\text{m}$ pitkä. Pakkasyönä johdon lämpötila laskee −$27\\,{}^\\circ\\text{C}$:seen. Laske johdon pituuden muutos $\\Delta L$ etumerkkeineen. Anna vastaus millimetreinä.",
+      "text": "Kahden sähköpylvään välillä on alumiininen ilmajohto ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Kesäiltana $18\\,{}^\\circ\\text{C}$:ssa se on $50{,}0\\,\\text{m}$ pitkä. Pakkasyönä johdon lämpötila laskee $-27\\,{}^\\circ\\text{C}$:seen. Laske johdon pituuden muutos $\\Delta L$ etumerkkeineen. Anna vastaus millimetreinä.",
       "answer": -52,
       "unit": "mm",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-8-L1-03",
       "level": 1,
-      "text": "Fysiikan tunnilla kupariputki ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) jäähdytetään jäävedellä $0\\,{}^\\circ\\text{C}$:seen. Sen pituudeksi mitataan 500,0 mm. Putken toinen pää on kiinni telineessä, ja toista päätä vasten on mittakello. Sitten putken läpi johdetaan kiehuvasta vedestä nousevaa höyryä. Putki lämpenee $100\\,{}^\\circ\\text{C}$:seen. Kuinka paljon putki pitenee eli kuinka paljon mittakellon lukema muuttuu? Anna vastaus millimetreinä.",
+      "text": "Fysiikan tunnilla kupariputki ($\\alpha = 17 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) jäähdytetään jäävedellä $0\\,{}^\\circ\\text{C}$:seen. Sen pituudeksi mitataan $500{,}0\\,\\text{mm}$. Putken toinen pää on kiinni telineessä, ja toista päätä vasten on mittakello. Sitten putken läpi johdetaan kiehuvasta vedestä nousevaa höyryä. Putki lämpenee $100\\,{}^\\circ\\text{C}$:seen. Kuinka paljon putki pitenee eli kuinka paljon mittakellon lukema muuttuu? Anna vastaus millimetreinä.",
       "answer": 0.85,
       "unit": "mm",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-8-L1-04",
       "level": 1,
-      "text": "Kesämökin saunan katolla on musta 200,0 litran säiliö, josta lasketaan suihkuvesi. Aamulla veden lämpötila on $12\\,{}^\\circ\\text{C}$. Iltapäivällä aurinko on lämmittänyt sen $32\\,{}^\\circ\\text{C}$:seen. Veden tilavuuden lämpötilakerroin on $\\gamma = 0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta litraa veden tilavuus kasvaa?",
+      "text": "Kesämökin saunan katolla on musta $200{,}0\\,\\textsf{l}$:n säiliö, josta lasketaan suihkuvesi. Aamulla veden lämpötila on $12\\,{}^\\circ\\text{C}$. Iltapäivällä aurinko on lämmittänyt sen $32\\,{}^\\circ\\text{C}$:seen. Veden tilavuuden lämpötilakerroin on $\\gamma = 0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta litraa veden tilavuus kasvaa?",
       "answer": 0.84,
       "unit": "l",
       "tolerance": 0.02
@@ -45,7 +45,7 @@
     {
       "id": "fy3-8-L2-01",
       "level": 2,
-      "text": "Kaukolämpöputken suoran osuuden päähän asennetaan joustava paljeosa. Se voi ottaa vastaan enintään 50,0 mm:n pituuden muutoksen. Teräsputki ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) asennetaan $10\\,{}^\\circ\\text{C}$:ssa. Käytössä sen lämpötila on $90\\,{}^\\circ\\text{C}$. Kuinka pitkä putken suora osuus saa enintään olla? Anna vastaus metreinä.",
+      "text": "Kaukolämpöputken suoran osuuden päähän asennetaan joustava paljeosa. Se voi ottaa vastaan enintään $50{,}0\\,\\text{mm}$:n pituuden muutoksen. Teräsputki ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) asennetaan $10\\,{}^\\circ\\text{C}$:ssa. Käytössä sen lämpötila on $90\\,{}^\\circ\\text{C}$. Kuinka pitkä putken suora osuus saa enintään olla? Anna vastaus metreinä.",
       "answer": 52,
       "unit": "m",
       "tolerance": 0.02
@@ -53,7 +53,7 @@
     {
       "id": "fy3-8-L2-02",
       "level": 2,
-      "text": "Teräksisen kahvakuulan tilavuus on 2,0 dm³. Kuula on ollut pakkasyön autotallissa −$22\\,{}^\\circ\\text{C}$:ssa. Se tuodaan sisälle, jossa se lämpenee $20\\,{}^\\circ\\text{C}$:seen. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta kuutiosenttimetriä kahvakuulan tilavuus kasvaa? Vihje: kiinteällä aineella $\\gamma \\approx 3\\alpha$.",
+      "text": "Teräksisen kahvakuulan tilavuus on $2{,}0\\,\\text{dm}^3$. Kuula on ollut pakkasyön autotallissa $-22\\,{}^\\circ\\text{C}$:ssa. Se tuodaan sisälle, jossa se lämpenee $20\\,{}^\\circ\\text{C}$:seen. Teräksen pituuden lämpötilakerroin on $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka monta kuutiosenttimetriä kahvakuulan tilavuus kasvaa? Vihje: kiinteällä aineella $\\gamma \\approx 3\\alpha$.",
       "answer": 3.0,
       "unit": "cm³",
       "tolerance": 0.02
@@ -61,7 +61,7 @@
     {
       "id": "fy3-8-L2-03",
       "level": 2,
-      "text": "Vanhanmallisella radalla teräksiset rautatiekiskot ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $25{,}0\\,\\text{m}$ pitkiä. Rata rakennetaan $12\\,{}^\\circ\\text{C}$:ssa, ja kiskojen väliin jätetään 7,2 mm:n rako. Oleta, että rako sulkeutuu, kun kisko on pidentynyt raon leveyden verran. Missä lämpötilassa rako sulkeutuu?",
+      "text": "Vanhanmallisella radalla teräksiset rautatiekiskot ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $25{,}0\\,\\text{m}$ pitkiä. Rata rakennetaan $12\\,{}^\\circ\\text{C}$:ssa, ja kiskojen väliin jätetään $7{,}2\\,\\text{mm}$:n rako. Oleta, että rako sulkeutuu, kun kisko on pidentynyt raon leveyden verran. Missä lämpötilassa rako sulkeutuu?",
       "answer": 36,
       "unit": "°C",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-8-L3-01",
       "level": 3,
-      "text": "Maatilan konekorjaamossa teräksinen hammaspyörä asennetaan traktorin akselille kutistusliitoksella. Hammaspyörän keskireiän halkaisija on $20\\,{}^\\circ\\text{C}$:ssa 75,000 mm. Akselin halkaisija on 75,090 mm. Teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Mihin lämpötilaan hammaspyörä on vähintään lämmitettävä, jotta se mahtuu akselille? Perustele myös kaksi asiaa. Miksi reikä suurenee eikä pienene, kun hammaspyörä lämpenee? Miksi pyörä on jäähdyttyään tiukasti kiinni?",
+      "text": "Maatilan konekorjaamossa teräksinen hammaspyörä asennetaan traktorin akselille kutistusliitoksella. Hammaspyörän keskireiän halkaisija on $20\\,{}^\\circ\\text{C}$:ssa $75{,}000\\,\\text{mm}$. Akselin halkaisija on $75{,}090\\,\\text{mm}$. Teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Mihin lämpötilaan hammaspyörä on vähintään lämmitettävä, jotta se mahtuu akselille? Perustele myös kaksi asiaa. Miksi reikä suurenee eikä pienene, kun hammaspyörä lämpenee? Miksi pyörä on jäähdyttyään tiukasti kiinni?",
       "answer": 120,
       "unit": "°C",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy3-8-L3-02",
       "level": 3,
-      "text": "Saunan vanhanmallisen sähkökiukaan termostaatissa on kaksoismetalliliuska. Siinä 50,0 mm pitkät kupari- ja teräsliuskat on liitetty toisiinsa (kupari $\\alpha = 17{,}0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, teräs $\\alpha = 12{,}0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Saunan lämmetessä liuskan lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $100\\,{}^\\circ\\text{C}$:seen. Kuinka paljon enemmän kupariliuska pitenisi kuin teräsliuska, jos ne olisivat irti toisistaan? Anna vastaus mikrometreinä eli millimetrin tuhannesosina. Perustele, mihin suuntaan liitetty liuska taipuu.",
+      "text": "Saunan vanhanmallisen sähkökiukaan termostaatissa on kaksoismetalliliuska. Siinä $50{,}0\\,\\text{mm}$ pitkät kupari- ja teräsliuskat on liitetty toisiinsa (kupari $\\alpha = 17{,}0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, teräs $\\alpha = 12{,}0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Saunan lämmetessä liuskan lämpötila nousee $20\\,{}^\\circ\\text{C}$:sta $100\\,{}^\\circ\\text{C}$:seen. Kuinka paljon enemmän kupariliuska pitenisi kuin teräsliuska, jos ne olisivat irti toisistaan? Anna vastaus mikrometreinä eli millimetrin tuhannesosina. Perustele, mihin suuntaan liitetty liuska taipuu.",
       "answer": 20,
       "unit": "µm",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy3-8-L3-03",
       "level": 3,
-      "text": "Mökkiveneen teräskanisteri on 20,0 litran kokoinen. Se täytetään huoltoasemalla piripintaan $10\\,{}^\\circ\\text{C}$:n bensiinillä ja suljetaan. Laiturilla aurinko lämmittää kanisterin ja bensiinin $35\\,{}^\\circ\\text{C}$:seen. Bensiinin $\\gamma = 0{,}95 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ ja teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kanisterin sisätilavuus kasvaa samoin kuin yhtä suuren teräskappaleen tilavuus. Kuinka monta kuutiosenttimetriä bensiiniä pyrkisi valumaan yli, jos korkki avataan? Perustele myös, miksi kanisteria ei täytetä piripintaan, vaikka myös kanisteri laajenee.",
+      "text": "Mökkiveneen teräskanisteri on $20{,}0\\,\\textsf{l}$:n kokoinen. Se täytetään huoltoasemalla piripintaan $10\\,{}^\\circ\\text{C}$:n bensiinillä ja suljetaan. Laiturilla aurinko lämmittää kanisterin ja bensiinin $35\\,{}^\\circ\\text{C}$:seen. Bensiinin $\\gamma = 0{,}95 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ ja teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kanisterin sisätilavuus kasvaa samoin kuin yhtä suuren teräskappaleen tilavuus. Kuinka monta kuutiosenttimetriä bensiiniä pyrkisi valumaan yli, jos korkki avataan? Perustele myös, miksi kanisteria ei täytetä piripintaan, vaikka myös kanisteri laajenee.",
       "answer": 460,
       "unit": "cm³",
       "tolerance": 0.02

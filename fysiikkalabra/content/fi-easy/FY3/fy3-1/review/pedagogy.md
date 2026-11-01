@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c317a9201957d537
+CONTENT-HASH: 8c2f8e45ac4e941d
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- none
 
 ## Checked
-batch delta review: every `learn` goal completes "Tällä tunnilla opit" with a lowercase -maan/-mään verb in parallel form; the skill, demand, key terms, symbols and numbers match the previous wording; plain Selkeä suomi.
+- Teaching sequence (prediction, experiments with locked body or mass, conclusion) is unchanged and identical to the Finnish source. fi-easy: values map 'Maa' -> 'Maa' added to exp-1 and exp-2, matching the Finnish source; names, numbers and physics unchanged.

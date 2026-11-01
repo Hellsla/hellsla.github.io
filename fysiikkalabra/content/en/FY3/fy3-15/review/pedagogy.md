@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5fc06a45d1d58663
+CONTENT-HASH: b44730dcfea8a551
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Delta review: label split and parallel learn goals (same skills as the Finnish); no change to demand or sequence.
+- Teaching sequence, demand, feedback and structure equal the Finnish; no answer disclosed early; English natural.

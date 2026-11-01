@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3afd1e8af8570be3
+CONTENT-HASH: 70b245bb7958e152
+
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- None.
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording. 'You investigate' became 'investigate', still the same experimental skill.
+- Delta review 2026-11-01: the learn list now continues the page prefix and the experiment panels show translated values.
+- Learn list reads correctly after "In this lesson, you will learn to" / "Tällä tunnilla opit"; teaching sequence identical to the Finnish; no Finnish words left in experiment names or values; check_i18n 0 errors.

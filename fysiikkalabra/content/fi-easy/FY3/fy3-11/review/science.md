@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a677b67338db26da
+CONTENT-HASH: f2b6f9c335faa267
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- content/fi-easy/FY3/fy3-11/figures.json — values were shifted: the label "leveys kuvaa tehoa" held the whole description of the (V, p) graph, and the description's own key held the dense Finnish original → label restored to "leveys kuvaa tehoa", the (V, p) description now simplified under its own key; figures redrawn (figures.py fy3-11 --lang fi-easy)
+- none needed
 
 ## Polish
-- Same Finnish-source gap as in en: no `values` map for the select "paluu"; harmless in fi-easy since the words are Finnish.
+- None. (W_k, E_s, Q_ulko, Q_sisälle are the Finnish symbols, as in the Finnish source; the stale mark came from the English-only relabelling.)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json (all activities, hints, feedback, solutions, experiment names/intros), exit-ticket.json, meta.json, figures.json and the sim labels (lang/fi-easy.json sims.fy3-11). Science: meaning, signs (W_g, Delta U = Q - W_g), numbers, units, terms, chapter titles and decimal sign compared with the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson, inquiry (check-c2 heat-pump item, units, feedback), exit ticket, figure description in Selkeä suomi.
+Translation review of lesson.md, inquiry.json, exit-ticket.json, figures.json and meta.json against the reviewed Finnish. Script comparison of every number and inline formula: no difference. Same physics and sign convention (dU = Q - W_k, W = -W_k), worked example 38,0 % / 310 MW and 88,0 % / 60 MW, COP can exceed 1, no work without volume change. Symbols as in the Finnish in text, figures and the sim label (lang/fi-easy.json wk = W_k). check_i18n 0 errors.

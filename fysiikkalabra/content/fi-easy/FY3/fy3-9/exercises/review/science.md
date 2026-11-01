@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6b118648d8b5ada3
+CONTENT-HASH: e2fc4fcf6875633b
 
 ## Blocking
-(none left)
-
-## Fixed
-- none needed
+(none)
 
 ## Polish
-- Terminology and decimal point consistent; no meaning changed.
+- None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with the Finnish source for meaning, physics terms, units, sign/causality, chapter titles, figure texts (each value translates its own key), and Selkeä suomi level without lowering the cognitive demand.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, solutions.md (new boyle-points figure task L1-03, unit LaTeX, trimmed wording) against the new Finnish.
+- Delta review 2026-11-01 (commit 79af52c4): units and numbers with units in exercise prose and solutions set as inline LaTeX; compared with the reviewed Finnish source.
+- exercises.json and solutions.md: every number (incl. signs, minus as maths, decimal sign) matches the Finnish in all tasks; answers, tolerances, units and reasonableness checks unchanged; no physics changed by the typography edit.

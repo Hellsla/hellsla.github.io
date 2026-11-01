@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0df62b0a656cede9
+CONTENT-HASH: 528237b936f3b704
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording. The first goal also changed 'ways heat transfers' to 'ways heat is transferred' (grammar only, same skill).
+- Teaching sequence (opening question, predictions, investigation, theory, worked example, checks, exit ticket) and structure of inquiry.json/exit-ticket.json equal the Finnish source.
+- Wording of prompts and feedback keeps the same skill and demand; no answer disclosed early by the translation.
+- English is natural; no Finnish words in text, units or experiment names; decimal points and symbols as in the Finnish.
+- Delta since last pass is typesetting only (sign placed inside $...$); no change to demand or sequence.

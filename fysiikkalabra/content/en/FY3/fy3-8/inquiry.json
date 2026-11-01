@@ -156,9 +156,14 @@
         "T": 20
       },
       "names": {
-        "material": "aine",
+        "material": "substance",
         "L0": "initial length L₀",
         "T": "temperature T"
+      },
+      "values": {
+        "material": {
+          "teräs": "steel"
+        }
       },
       "units": {
         "L0": "m",
@@ -193,9 +198,14 @@
         "T": 70
       },
       "names": {
-        "material": "aine",
+        "material": "substance",
         "L0": "initial length L₀",
         "T": "temperature T"
+      },
+      "values": {
+        "material": {
+          "teräs": "steel"
+        }
       },
       "units": {
         "L0": "m",

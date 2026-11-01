@@ -1,6 +1,6 @@
 # Heat transfer, energy balance and climate change
 
-> **Why** is the mean temperature of the Earth about +$15\,{}^\circ\text{C}$ and not below freezing, even though the Earth radiates as much energy into space as it absorbs from the Sun?
+> **Why** is the mean temperature of the Earth about $+15\,{}^\circ\text{C}$ and not below freezing, even though the Earth radiates as much energy into space as it absorbs from the Sun?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Earth seen from space, with a thin atmosphere around it. The Sun shines at the left edge of the picture, and stars twinkle in the black sky." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy312h-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#ffc078"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy312h-ocean" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><clipPath id="fy312h-clip"><circle cx="800" cy="300" r="210"/></clipPath></defs>
@@ -158,7 +158,7 @@ A large part of the heating energy of a house is used because heat is conducted 
 The temperature of an object stays constant when the power coming into it is equal to the power leaving it. This is called energy balance. The Earth receives energy as radiation from the Sun, and about $30\,\%$ of it is reflected straight back into space by clouds, ice and light surfaces. The rest is absorbed, and the Earth radiates the same power away as long-wavelength thermal radiation. Without an atmosphere, the balance would settle at a mean temperature of about $-18\,{}^\circ\text{C}$.
 
 ### Greenhouse effect
-Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly through, although about a fifth of it is absorbed in the atmosphere. They absorb the thermal radiation emitted by the ground and radiate part of it back down. The ground therefore receives more energy than from the Sun alone, and the balance settles at about +$15\,{}^\circ\text{C}$. This is called the greenhouse effect, and it answers the question at the start.
+Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly through, although about a fifth of it is absorbed in the atmosphere. They absorb the thermal radiation emitted by the ground and radiate part of it back down. The ground therefore receives more energy than from the Sun alone, and the balance settles at about $+15\,{}^\circ\text{C}$. This is called the greenhouse effect, and it answers the question at the start.
 
 <svg data-fig="energy-balance" viewBox="0 0 600 300" role="img" aria-label="Energy balance of the Earth, schematic diagram. Radiation from the Sun passes through the atmosphere to the ground; part of it is reflected back into space. The ground radiates thermal radiation upwards, and the greenhouse gases of the atmosphere radiate part of it back down." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy312-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy312-air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><radialGradient id="fy312-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffc078"/></radialGradient></defs>
@@ -264,7 +264,7 @@ Many people mix up the greenhouse effect and ozone depletion, although they are 
 - Heat transfers by conduction, convection and thermal radiation, and because of a temperature difference the net transfer of energy is from the warmer object to the colder one. All objects emit thermal radiation, the colder one too.
 - The thermal power conducted through a building part is $P = UA\Delta T$. A small U-value means good heat insulation.
 - In energy balance the power coming in and the power going out are equal, and the temperature stays constant.
-- Greenhouse gases absorb the thermal radiation of the ground and radiate part of it back, which raises the equilibrium temperature of the ground from about $-18\,{}^\circ\text{C}$ to about +$15\,{}^\circ\text{C}$.
+- Greenhouse gases absorb the thermal radiation of the ground and radiate part of it back, which raises the equilibrium temperature of the ground from about $-18\,{}^\circ\text{C}$ to about $+15\,{}^\circ\text{C}$.
 - An increase in greenhouse gases breaks the balance for a while, and the Earth warms until a new balance settles at a higher temperature.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a detached house on a winter night. Heat escapes outwards through the windows and the roof, shown by orange arrows. There is snow on the ground." style="max-width:100%;font-size:24px">

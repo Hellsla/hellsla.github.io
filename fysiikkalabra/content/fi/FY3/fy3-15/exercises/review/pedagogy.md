@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 449906b56c123714
+CONTENT-HASH: b2dff39ca08bc6e2
 
-Round 2: no round-1 Blocking item. Delta review of the diff: Kuvaajan lukeminen of L1-04 solution.
+Delta review: three task texts re-set with maths units; no change of meaning.
 
 ## Blocking
 - none
 ## Polish
-- the answer field grades only 200 MW, not which stage; the stage is named in the solution only.
-- one plain quantity remains in L1-03 (20,0 m²).
+- none
 ## Checked
-- Round-1 Polish done: only P0, P1, P2 are said to lie on gridlines; P3 is 'vähän viivan 150 MW alapuolella, noin 140 MW' and not needed for the answer. No false claim.
-- Drops 50, 200, 10 MW sum to 260 = 400 - 140; 350 - 150 = 200 MW, largest drop is the steam cycle. Figure needed, level L1 fits.
+- L1-03, L3-02, L3-03: quantities, units and conversion factors now set uniformly as maths, in line with the neighbouring $1{,}00\,\text{kW}$ and $36{,}0\,\text{GWh}$. Easier to read than the mixed plain text; no case ending follows the new maths ("(1 kt = ...) vuodessa" is outside the maths).
+- The conversion facts the student needs (1 GWh, 1 kt) are still given; levels, staging, task order and the solution structure are unchanged; no answer is disclosed.
+- Phone fit: the longest formula, $1\,\text{GWh} = 3{,}60 \cdot 10^{12}\,\text{J}$, is short and wraps in the paragraph.

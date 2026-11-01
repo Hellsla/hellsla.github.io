@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 91b1ce996b002359
+CONTENT-HASH: 57ff55f2f9cf838b
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- (none)
+- none needed
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (texts, units, answers) and solutions.md, all 17 tasks. Pedagogy: natural reading level, term consistency with terms.md and the sim labels, step labels and button names; correct choices and feedback still match.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises (solutions, task texts, new figure task fy3-11-L1-04 with Reading the graph step).
+Same levels, task order, figure task, hints, mistakes and staged solutions as the Finnish; nothing added or dropped. Language: natural English; no Finnish words in text, units or names.

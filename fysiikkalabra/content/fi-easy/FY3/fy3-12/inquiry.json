@@ -52,7 +52,7 @@
       "layout": "models",
       "justify": true,
       "title": "Ennuste 1: miksi maanpinta on lämpimämpi?",
-      "prompt": "Ilman ilmakehää maanpinnan keskilämpötila olisi noin $-18\\,{}^\\circ\\text{C}$. Se on kuitenkin noin +$15\\,{}^\\circ\\text{C}$. Kolme opiskelijaa selittää eroa. Kenen selitys on mielestäsi paras?",
+      "prompt": "Ilman ilmakehää maanpinnan keskilämpötila olisi noin $-18\\,{}^\\circ\\text{C}$. Se on kuitenkin noin $+15\\,{}^\\circ\\text{C}$. Kolme opiskelijaa selittää eroa. Kenen selitys on mielestäsi paras?",
       "choices": [
         {
           "text": "Aino: Ilmakehä on kuin peitto, joka estää lämpöä johtumasta maanpinnalta avaruuteen.",
@@ -65,7 +65,7 @@
         },
         {
           "text": "Cem: Ilmakehä varastoi Auringon energiaa ja sitä kertyy koko ajan lisää, joten maanpinta on lämmin.",
-          "feedback": "Jos energiaa kertyisi koko ajan, maapallo lämpenisi jatkuvasti. Sen lämpötila ei pysyisi noin +$15\\,{}^\\circ\\text{C}$:ssa. Tasaisessa lämpötilassa tulevan ja lähtevän tehon on oltava yhtä suuret. Tutki-vaiheen taulukossa voit tarkistaa, pätevätkö nämä tasapainot."
+          "feedback": "Jos energiaa kertyisi koko ajan, maapallo lämpenisi jatkuvasti. Sen lämpötila ei pysyisi noin $+15\\,{}^\\circ\\text{C}$:ssa. Tasaisessa lämpötilassa tulevan ja lähtevän tehon on oltava yhtä suuret. Tutki-vaiheen taulukossa voit tarkistaa, pätevätkö nämä tasapainot."
         }
       ]
     },
@@ -98,7 +98,7 @@
       "stage": "tutki",
       "type": "numeric",
       "title": "Ennusta ilmakehän säteily alas",
-      "prompt": "Tutkit seuraavaksi maanpinnan energiataseen mallia. Mallissa Auringosta imeytyy maanpintaan $240\\,\\text{W/m}^2$. Maanpinta luovuttaa energiaa vain lämpösäteilynä. Ilman ilmakehää pinta säteilee $240\\,\\text{W/m}^2$ ja on tasapainossa ($-18\\,{}^\\circ\\text{C}$). Ilmakehän kanssa pinta on tasapainossa +$15\\,{}^\\circ\\text{C}$:ssa ja säteilee $390\\,\\text{W/m}^2$. Kuinka suuren tehon neliömetriä kohti ilmakehän täytyy säteillä alas maanpinnalle?",
+      "prompt": "Tutkit seuraavaksi maanpinnan energiataseen mallia. Mallissa Auringosta imeytyy maanpintaan $240\\,\\text{W/m}^2$. Maanpinta luovuttaa energiaa vain lämpösäteilynä. Ilman ilmakehää pinta säteilee $240\\,\\text{W/m}^2$ ja on tasapainossa ($-18\\,{}^\\circ\\text{C}$). Ilmakehän kanssa pinta on tasapainossa $+15\\,{}^\\circ\\text{C}$:ssa ja säteilee $390\\,\\text{W/m}^2$. Kuinka suuren tehon neliömetriä kohti ilmakehän täytyy säteillä alas maanpinnalle?",
       "answer": 150,
       "unit": "W/m²",
       "tolerance": 0.02,
@@ -116,14 +116,14 @@
           "feedback": "Laskit tehot yhteen. Tasapainossa tuleva teho on yhtä suuri kuin lähtevä $390\\,\\text{W/m}^2$. Ilmakehän osuus on siis lähtevä teho miinus Auringosta tuleva teho."
         }
       ],
-      "solution": "**Annettu:** maanpinnan tasapainossa Auringosta imeytyy $P_\\text{aur} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja pinta säteilee $P_\\text{säteily} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Pinta luovuttaa energiaa vain lämpösäteilynä.\n\n**Kysytty:** ilmakehän alas säteilemä teho $P_\\text{alas}$ yksikössä $\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Periaate:** Pinnan lämpötila pysyy vakiona (+$15\\,{}^\\circ\\text{C}$). Energia ei siis kerry pintaan eikä vähene. Pintaan tuleva teho on yhtä suuri kuin siitä lähtevä teho. Tuloa on kaksi: Aurinko ja ilmakehän alas säteilemä lämpösäteily. Lähtöä on vain pinnan oma säteily.\n\n**Kaava:** Tasapainossa tuleva teho on yhtä suuri kuin lähtevä:\n\n$$P_\\text{aur} + P_\\text{alas} = P_\\text{säteily}$$\n\n$$P_\\text{alas} = P_\\text{säteily} - P_\\text{aur}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Kaikki tehot on annettu samassa yksikössä $\\tfrac{\\text{W}}{\\text{m}^2}$.\n\n**Sijoitus:** $P_\\text{alas} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2} - 240\\,\\tfrac{\\text{W}}{\\text{m}^2} = 150\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Vastaus:** $150\\,\\tfrac{\\text{W}}{\\text{m}^2}$, kolme merkitsevää numeroa. Esimerkkiarvot $390$ ja $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ on annettu kokonaislukuina. Erotuksella on siis sama W/m²:n tarkkuus. Mikään tieto ei rajoita sitä enempää.\n\n**Järkevyys:** Tase kuntoon: tulee $240 + 150 = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja lähtee $390\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Tulos on positiivinen. Se on pienempi kuin pinnan säteily, koska osan lähtevästä tehosta kattaa jo Aurinko. Ilman ilmakehää $P_\\text{alas} = 0$. Pinta säteilisi silloin vain $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$, mikä vastaa kylmempää tilannetta."
+      "solution": "**Annettu:** maanpinnan tasapainossa Auringosta imeytyy $P_\\text{aur} = 240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja pinta säteilee $P_\\text{säteily} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Pinta luovuttaa energiaa vain lämpösäteilynä.\n\n**Kysytty:** ilmakehän alas säteilemä teho $P_\\text{alas}$ yksikössä $\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Periaate:** Pinnan lämpötila pysyy vakiona ($+15\\,{}^\\circ\\text{C}$). Energia ei siis kerry pintaan eikä vähene. Pintaan tuleva teho on yhtä suuri kuin siitä lähtevä teho. Tuloa on kaksi: Aurinko ja ilmakehän alas säteilemä lämpösäteily. Lähtöä on vain pinnan oma säteily.\n\n**Kaava:** Tasapainossa tuleva teho on yhtä suuri kuin lähtevä:\n\n$$P_\\text{aur} + P_\\text{alas} = P_\\text{säteily}$$\n\n$$P_\\text{alas} = P_\\text{säteily} - P_\\text{aur}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Kaikki tehot on annettu samassa yksikössä $\\tfrac{\\text{W}}{\\text{m}^2}$.\n\n**Sijoitus:** $P_\\text{alas} = 390\\,\\tfrac{\\text{W}}{\\text{m}^2} - 240\\,\\tfrac{\\text{W}}{\\text{m}^2} = 150\\,\\tfrac{\\text{W}}{\\text{m}^2}$\n\n**Vastaus:** $150\\,\\tfrac{\\text{W}}{\\text{m}^2}$, kolme merkitsevää numeroa. Esimerkkiarvot $390$ ja $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$ on annettu kokonaislukuina. Erotuksella on siis sama W/m²:n tarkkuus. Mikään tieto ei rajoita sitä enempää.\n\n**Järkevyys:** Tase kuntoon: tulee $240 + 150 = 390\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja lähtee $390\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Tulos on positiivinen. Se on pienempi kuin pinnan säteily, koska osan lähtevästä tehosta kattaa jo Aurinko. Ilman ilmakehää $P_\\text{alas} = 0$. Pinta säteilisi silloin vain $240\\,\\tfrac{\\text{W}}{\\text{m}^2}$, mikä vastaa kylmempää tilannetta."
     },
     {
       "id": "tase",
       "stage": "tutki",
       "type": "interpret",
       "title": "Maanpinnan energiatase ilman ilmakehää ja sen kanssa",
-      "text": "Taulukossa on maanpinnan energiatase koko maapallon keskiarvona neliömetriä kohti. Luvut on laskettu yksinkertaisella mallilla. Ne ovat *esimerkkiarvoja*, eivät mittauksia. Mallissa Auringosta imeytyvä teho imeytyy kokonaan maanpintaan. Maanpinta luovuttaa energiaa vain lämpösäteilynä. Todellisuudessa osa auringonvalosta imeytyy ilmakehään. Maanpinta luovuttaa energiaa myös konvektiolla ja veden haihtumisena. Kummassakin tapauksessa avaruuteen lähtee yhteensä $240\\,\\text{W/m}^2$. Se on yhtä paljon kuin Auringosta imeytyy.\n\nSarakkeessa *ilman* maapallolla ei ole ilmakehää. Sarakkeessa *kanssa* sillä on ilmakehä. Tehot ovat yksikössä W/m².\n\n| Maanpinta | ilman | kanssa |\n|---|---|---|\n| Auringosta imeytyy | 240 | 240 |\n| ilmakehästä tulee alas | 0 | 150 |\n| pinta säteilee | 240 | 390 |\n| lämpötila | $-18\\,{}^\\circ\\text{C}$ | +$15\\,{}^\\circ\\text{C}$ |",
+      "text": "Taulukossa on maanpinnan energiatase koko maapallon keskiarvona neliömetriä kohti. Luvut on laskettu yksinkertaisella mallilla. Ne ovat *esimerkkiarvoja*, eivät mittauksia. Mallissa Auringosta imeytyvä teho imeytyy kokonaan maanpintaan. Maanpinta luovuttaa energiaa vain lämpösäteilynä. Todellisuudessa osa auringonvalosta imeytyy ilmakehään. Maanpinta luovuttaa energiaa myös konvektiolla ja veden haihtumisena. Kummassakin tapauksessa avaruuteen lähtee yhteensä $240\\,\\text{W/m}^2$. Se on yhtä paljon kuin Auringosta imeytyy.\n\nSarakkeessa *ilman* maapallolla ei ole ilmakehää. Sarakkeessa *kanssa* sillä on ilmakehä. Tehot ovat yksikössä W/m².\n\n| Maanpinta | ilman | kanssa |\n|---|---|---|\n| Auringosta imeytyy | 240 | 240 |\n| ilmakehästä tulee alas | 0 | 150 |\n| pinta säteilee | 240 | 390 |\n| lämpötila | $-18\\,{}^\\circ\\text{C}$ | $+15\\,{}^\\circ\\text{C}$ |",
       "question": {
         "type": "choice",
         "prompt": "Mistä taulukon mukaan johtuu, että maanpinta on ilmakehän kanssa lämpimämpi?",
@@ -368,9 +368,9 @@
         "Sanon, että tasapainossa tuleva ja lähtevä teho ovat yhtä suuret ja lämpötila pysyy vakiona.",
         "Selitän, että lisähiilidioksidi imee enemmän maanpinnan lämpösäteilyä. Siksi avaruuteen lähtee hetkellisesti vähemmän kuin imeytyy.",
         "Selitän, että maapallo lämpenee, kunnes se säteilee taas yhtä paljon kuin imee. Uusi tasapaino asettuu siis korkeampaan lämpötilaan.",
-        "Totean, että luonnollinen kasvihuoneilmiö pitää maanpinnan noin +$15\\,{}^\\circ\\text{C}$:ssa noin $-18\\,{}^\\circ\\text{C}$:n sijaan. Ongelma on sen voimistuminen."
+        "Totean, että luonnollinen kasvihuoneilmiö pitää maanpinnan noin $+15\\,{}^\\circ\\text{C}$:ssa noin $-18\\,{}^\\circ\\text{C}$:n sijaan. Ongelma on sen voimistuminen."
       ],
-      "model": "Väitteen alkuosa pitää paikkansa tasapainotilassa. Kun maapallo säteilee avaruuteen yhtä suuren tehon kuin imee Auringosta, sen lämpötila pysyy vakiona. Tasapaino ei kuitenkaan ole pysyvä. Kun hiilidioksidia lisätään, ilmakehä imee enemmän maanpinnan lämpösäteilyä. Se säteilee osan siitä takaisin alas. Avaruuteen pääsee hetkellisesti vähemmän tehoa kuin maapallo imee. Ylimääräinen teho lämmittää meriä, maata ja ilmaa. Lämpimämpi maapallo säteilee enemmän. Lämpeneminen jatkuu, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä. Uusi tasapaino asettuu siis korkeampaan lämpötilaan. Kasvihuoneilmiö ei myöskään ole kokonaan haitallinen. Luonnollinen kasvihuoneilmiö nostaa maanpinnan keskilämpötilan noin $-18\\,{}^\\circ\\text{C}$:sta noin +$15\\,{}^\\circ\\text{C}$:een. Ongelma on sen voimistuminen ihmisen päästöjen vuoksi."
+      "model": "Väitteen alkuosa pitää paikkansa tasapainotilassa. Kun maapallo säteilee avaruuteen yhtä suuren tehon kuin imee Auringosta, sen lämpötila pysyy vakiona. Tasapaino ei kuitenkaan ole pysyvä. Kun hiilidioksidia lisätään, ilmakehä imee enemmän maanpinnan lämpösäteilyä. Se säteilee osan siitä takaisin alas. Avaruuteen pääsee hetkellisesti vähemmän tehoa kuin maapallo imee. Ylimääräinen teho lämmittää meriä, maata ja ilmaa. Lämpimämpi maapallo säteilee enemmän. Lämpeneminen jatkuu, kunnes lähtevä teho on taas yhtä suuri kuin imeytyvä. Uusi tasapaino asettuu siis korkeampaan lämpötilaan. Kasvihuoneilmiö ei myöskään ole kokonaan haitallinen. Luonnollinen kasvihuoneilmiö nostaa maanpinnan keskilämpötilan noin $-18\\,{}^\\circ\\text{C}$:sta noin $+15\\,{}^\\circ\\text{C}$:een. Ongelma on sen voimistuminen ihmisen päästöjen vuoksi."
     },
     {
       "id": "lahtolippu",

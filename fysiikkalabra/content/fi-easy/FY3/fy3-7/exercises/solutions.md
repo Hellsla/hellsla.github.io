@@ -1,7 +1,7 @@
 ## fy3-7-L1-01
 **Annettu:** jää, $m = 1{,}20\,\text{kg}$, lämpötila $0\,{}^\circ\text{C}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään sulamiseen tarvittava lämpömäärä $Q$ kilojouleina
-**Periaate:** Jää on jo sulamislämpötilassa $0\,{}^\circ\text{C}$ ja muuttuu 0-asteiseksi vedeksi. Lämpötila ei muutu, joten $Q = cm\Delta T$ ei päde. Tarvitaan sulamislämpö. Lämpömäärä on verrannollinen sulavaan massaan.
+**Periaate:** Jää on jo sulamislämpötilassa $0\,{}^\circ\text{C}$ ja muuttuu $0\,{}^\circ\text{C}$:n lämpöiseksi vedeksi. Lämpötila ei muutu, joten $Q = cm\Delta T$ ei päde. Tarvitaan sulamislämpö. Lämpömäärä on verrannollinen sulavaan massaan.
 **Kaava:** $Q = sm$, ja kysytty $Q$ on jo yksin vasemmalla puolella: $Q = sm$
 **Muunnokset:** Ei tarvita. Massa on kilogrammoina ja $s$ on kilojouleina kilogrammaa kohti. Siksi tulos tulee suoraan kilojouleina.
 **Sijoitus:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 1{,}20\,\text{kg} = 400{,}8\,\text{kJ}$
@@ -21,7 +21,7 @@
 ## fy3-7-L1-03
 **Annettu:** järven pintaan jäätyvä vesi, $m = 45\,\text{kg}$ jokaista neliömetriä kohti, lämpötila $0\,{}^\circ\text{C}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jäätymisessä vapautuva lämpömäärä $Q$ megajouleina
-**Periaate:** Vesi jähmettyy 0-asteiseksi jääksi vakiolämpötilassa. Jähmettyessä vapautuu sama lämpömäärä, jonka sama massa ottaisi vastaan sulaessaan. Siksi käytetään sulamislämpöä $s$ eikä lämpötilan muutosta.
+**Periaate:** Vesi jähmettyy $0\,{}^\circ\text{C}$:n lämpöiseksi jääksi vakiolämpötilassa. Jähmettyessä vapautuu sama lämpömäärä, jonka sama massa ottaisi vastaan sulaessaan. Siksi käytetään sulamislämpöä $s$ eikä lämpötilan muutosta.
 **Kaava:** $Q = sm$ (luovutettu lämpömäärä ilmoitetaan positiivisena), ja $Q$ on jo ratkaistu: $Q = sm$
 **Muunnokset:** Tulos tulee kilojouleina: $15\,030\,\text{kJ}$. Lopuksi muunnetaan megajouleiksi. Koska $1\,\text{MJ} = 1000\,\text{kJ}$, niin $15\,030\,\text{kJ} = 15{,}03\,\text{MJ}$.
 **Sijoitus:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} = 15\,030\,\text{kJ} = 15{,}03\,\text{MJ}$
@@ -29,7 +29,7 @@
 **Järkevyys:** Arvio: $330\,\tfrac{\text{kJ}}{\text{kg}} \cdot 45\,\text{kg} \approx 15\,000\,\text{kJ}$. Vesikerroksen paksuus on $\dfrac{45\,\text{kg}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1\,\text{m}^2} = 4{,}5\,\text{cm}$, ja se sopii pakkasviikon aikana jäätyneeksi kerrokseksi. Vapautuva lämpö hidastaa jäätymistä. Siksi järvi ei jäädy hetkessä.
 
 ## fy3-7-L1-04
-**Annettu:** höyry, joka tiivistyy $100$-asteiseksi vedeksi, $m = 0{,}030\,\text{kg}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Annettu:** höyry, joka tiivistyy $100\,{}^\circ\text{C}$:n lämpöiseksi vedeksi, $m = 0{,}030\,\text{kg}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** höyryn luovuttama lämpömäärä $Q$ kilojouleina
 **Periaate:** Höyry tiivistyy vedeksi samassa $100\,{}^\circ\text{C}$:n lämpötilassa, joten lämpötila ei muutu. Tiivistyessä vapautuu sama lämpömäärä, joka höyrystymiseen tarvittaisiin. Siksi käytetään höyrystymislämpöä $r$.
 **Kaava:** $Q = rm$ (luovutettu lämpömäärä ilmoitetaan positiivisena), ja $Q$ on jo ratkaistu: $Q = rm$
@@ -60,7 +60,7 @@
 **Järkevyys:** Arvio: noin $1{,}1\,\text{MJ}$ energiaa teholla $2\,\text{kW}$ vie noin $550\,\text{s}$ eli vajaat $10\,\text{min}$. Puolen kilon kiehuminen pois noin kymmenessä minuutissa vastaa kokemusta. Yksiköt: $\tfrac{\text{J}}{\text{W}} = \tfrac{\text{J}}{\text{J/s}} = \text{s}$.
 
 ## fy3-7-L2-02
-**Annettu:** jää, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, loppu 0-asteinen vesi; taulukosta $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Annettu:** jää, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, loppu $0\,{}^\circ\text{C}$:n lämpöinen vesi; taulukosta $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kokonaislämpömäärä $Q$ kilojouleina
 **Periaate:** Prosessissa on kaksi vaihetta. Ensin jää lämpenee $-18\,{}^\circ\text{C}$:sta sulamislämpötilaan $0\,{}^\circ\text{C}$ ($Q_1 = cm\Delta T$). Sitten se sulaa vakiolämpötilassa ($Q_2 = sm$). Kokonaislämpömäärä on näiden summa.
 **Kaava:** $Q = Q_1 + Q_2$, ja $Q = c_\text{jää} m \Delta T + sm$, missä $\Delta T = 0\,{}^\circ\text{C} - T_1$
@@ -100,7 +100,7 @@
 $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}$$
 
 **Vastaus:** $9{,}7\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}35\,\text{kg}$.
-**Järkevyys:** Tulos on välillä $0\,{}^\circ\text{C}$ ja $25\,{}^\circ\text{C}$. Jos $60\,\text{g}$ olisi jo $0$-asteista vettä, loppulämpötila olisi $\dfrac{0{,}35 \cdot 25}{0{,}41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Jää jäähdyttää paljon enemmän, koska sulaminen sitoo $20\,040\,\text{J}$ lämpöä ilman lämpötilan muutosta. Siksi juoma jäähtyy yli $11\,\text{K}$ lisää.
+**Järkevyys:** Tulos on välillä $0\,{}^\circ\text{C}$ ja $25\,{}^\circ\text{C}$. Jos $60\,\text{g}$ olisi jo $0\,{}^\circ\text{C}$:n lämpöistä vettä, loppulämpötila olisi $\dfrac{0{,}35 \cdot 25}{0{,}41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Jää jäähdyttää paljon enemmän, koska sulaminen sitoo $20\,040\,\text{J}$ lämpöä ilman lämpötilan muutosta. Siksi juoma jäähtyy yli $11\,\text{K}$ lisää.
 
 ## fy3-7-L3-02
 **Annettu:** vesi $m = 0{,}25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, lämpenee $T_2 = 100\,{}^\circ\text{C}$:seen ja höyrystyy kokonaan; kivet $m_\text{k} = 30\,\text{kg}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$

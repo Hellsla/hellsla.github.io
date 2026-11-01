@@ -19,7 +19,7 @@
     {
       "id": "fy3-15-L1-03",
       "level": 1,
-      "text": "The area of a solar panel installed on a roof is 20.0 m², and sunlight hits it with a power of $1.00\\,\\text{kW}$ for every square metre. The efficiency of the panel is 0.210. How much electric power does the panel produce? Give your answer in kilowatts.",
+      "text": "The area of a solar panel installed on a roof is $20.0\\,\\text{m}^2$, and sunlight hits it with a power of $1.00\\,\\text{kW}$ for every square metre. The efficiency of the panel is 0.210. How much electric power does the panel produce? Give your answer in kilowatts.",
       "answer": 4.2,
       "unit": "kW",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy3-15-L3-02",
       "level": 3,
-      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh}$ = 3.60 · 10¹² J). If the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal (1 kt = 10⁶ kg) would be burned in a year? Also explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
+      "text": "A wind farm produces $36.0\\,\\text{GWh}$ of electricity in a year ($1\\,\\text{GWh} = 3.60 \\cdot 10^{12}\\,\\text{J}$). If the same electricity were produced with hard coal in a condensing power plant with an efficiency of 0.380 and where the heat of combustion of coal is $25.0\\,\\text{MJ/kg}$, how many kilotonnes of coal ($1\\,\\text{kt} = 10^{6}\\,\\text{kg}$) would be burned in a year? Also explain why the efficiency of a wind farm cannot be compared with the efficiency of a coal power plant as directly as those of two condensing power plants.",
       "answer": 13.6,
       "unit": "kt",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy3-15-L3-03",
       "level": 3,
-      "text": "Heating a house takes $100\\,\\text{kWh}$ of heat. The electricity is produced in a condensing power plant with an efficiency of 0.400, and $5.0\\,\\%$ of it is lost in power lines and transformers, so the house's electricity meter receives the fraction 0.950 · 0.400 = 0.380 of the energy of the fuel. The house has an air-source heat pump with a coefficient of performance of 3.00. How much fuel energy does heating with the pump require at the power plant? Give your answer in kilowatt-hours. Compare the result directly with electric heating and an oil boiler (efficiency 0.900) and conclude which way saves the most fuel.",
+      "text": "Heating a house takes $100\\,\\text{kWh}$ of heat. The electricity is produced in a condensing power plant with an efficiency of 0.400, and $5.0\\,\\%$ of it is lost in power lines and transformers, so the house's electricity meter receives the fraction $0.950 \\cdot 0.400 = 0.380$ of the energy of the fuel. The house has an air-source heat pump with a coefficient of performance of 3.00. How much fuel energy does heating with the pump require at the power plant? Give your answer in kilowatt-hours. Compare the result directly with electric heating and an oil boiler (efficiency 0.900) and conclude which way saves the most fuel.",
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02

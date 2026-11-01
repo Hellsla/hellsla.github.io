@@ -3,7 +3,7 @@
     {
       "id": "fy3-11-L1-01",
       "level": 1,
-      "text": "Steam flows from the boiler into the cylinder of a steam locomotive on a heritage railway and pushes the piston. While the piston moves, the pressure of the steam stays at 480.0 kPa, and the volume of the steam in the cylinder grows by 0.0250 m³. How much work does the steam do while the piston moves? Give the answer in kilojoules.",
+      "text": "Steam flows from the boiler into the cylinder of a steam locomotive on a heritage railway and pushes the piston. While the piston moves, the pressure of the steam stays at $480.0\\,\\text{kPa}$, and the volume of the steam in the cylinder grows by $0.0250\\,\\text{m}^3$. How much work does the steam do while the piston moves? Give the answer in kilojoules.",
       "answer": 12.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-11-L1-02",
       "level": 1,
-      "text": "Water is thrown on the stones of a sauna stove. When one gram of water evaporates, the resulting steam at $100\\,{}^\\circ\\text{C}$ takes up 1.70 litres more space than the water did. The evaporation takes place at atmospheric pressure, which is 101 kPa. How much work does the steam do as it pushes the surrounding air out of the way?",
+      "text": "Water is thrown on the stones of a sauna stove. When one gram of water evaporates, the resulting steam at $100\\,{}^\\circ\\text{C}$ takes up $1.70\\,\\textsf{l}$ more space than the water did. The evaporation takes place at atmospheric pressure, which is $101\\,\\text{kPa}$. How much work does the steam do as it pushes the surrounding air out of the way?",
       "answer": 172,
       "unit": "J",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-11-L1-03",
       "level": 1,
-      "text": "The reactor of the third nuclear power plant unit at Olkiluoto produces steam with a thermal power of 4.30 · 10³ MW, and the electric power of the unit is 1.60 · 10³ MW. What is the efficiency of the unit? Give the answer as a percentage.",
+      "text": "The reactor of the third nuclear power plant unit at Olkiluoto produces steam with a thermal power of $4.30 \\cdot 10^{3}\\,\\text{MW}$, and the electric power of the unit is $1.60 \\cdot 10^{3}\\,\\text{MW}$. What is the efficiency of the unit? Give the answer as a percentage.",
       "answer": 37.2,
       "unit": "%",
       "tolerance": 0.02
@@ -62,7 +62,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at 125 kPa and its volume grows by 1.60 litres. By how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
+      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$. By how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02

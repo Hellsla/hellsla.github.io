@@ -47,7 +47,7 @@
 **Muunnokset:** Lämpötilat kelvineinä: $T_1 = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$ ja $T_2 = (-18 + 273{,}15)\,\text{K} = 255{,}15\,\text{K}$.
 **Sijoitus:** $p_2 = \dfrac{101\,\text{kPa} \cdot 255{,}15\,\text{K}}{295{,}15\,\text{K}} = 87{,}312\,\text{kPa}$
 **Vastaus:** $p_2 \approx 87{,}3\,\text{kPa}$, kolme merkitsevää numeroa. Paine $101\,\text{kPa}$ ja kelvinlämpötilat $295\,\text{K}$ ja $255\,\text{K}$ (kokonaisasteista $22\,{}^\circ\text{C}$ ja $-18\,{}^\circ\text{C}$) ovat kaikki kolmen numeron arvoja.
-**Järkevyys:** Absoluuttinen lämpötila pienenee noin $14\,\%$, joten paine pienenee saman verran: $101\,\text{kPa} \cdot 0{,}86 \approx 87\,\text{kPa}$. Paine laskee noin 14 kPa, joten ulkoilma painaa kantta enemmän kuin sisäilma. Täysin tiiviiseen puolen neliömetrin kanteen kohdistuisi noin $14\,\text{kPa} \cdot 0{,}5\,\text{m}^2 \approx 7\,\text{kN}$:n ylimääräinen voima. Käytännössä ilmaa vuotaa tiivisteiden ohi, ja kansi aukeaa taas hetken päästä.
+**Järkevyys:** Absoluuttinen lämpötila pienenee noin $14\,\%$, joten paine pienenee saman verran: $101\,\text{kPa} \cdot 0{,}86 \approx 87\,\text{kPa}$. Paine laskee noin $14\,\text{kPa}$, joten ulkoilma painaa kantta enemmän kuin sisäilma. Täysin tiiviiseen puolen neliömetrin kanteen kohdistuisi noin $14\,\text{kPa} \cdot 0{,}5\,\text{m}^2 \approx 7\,\text{kN}$:n ylimääräinen voima. Käytännössä ilmaa vuotaa tiivisteiden ohi, ja kansi aukeaa taas hetken päästä.
 
 ## fy3-9-L2-01
 **Annettu:** $V_1 = 6{,}8\,\textsf{l}$, $p_1 = 300{,}0\,\text{bar}$, $p_2 = 101\,\text{kPa}$, $1\,\text{bar} = 100\,\text{kPa}$, lämpötila vakio
@@ -57,7 +57,7 @@
 **Muunnokset:** Paineet samaan yksikköön: $p_1 = 300{,}0\,\text{bar} = 300{,}0 \cdot 100\,\text{kPa} = 30\,000\,\text{kPa}$ (kerroin $100\,\text{kPa/bar}$ on määritelmä eikä rajoita). Tulos tulee litroina, ja $1\,\text{m}^3 = 1000\,\textsf{l}$.
 **Sijoitus:** $V_2 = \dfrac{30\,000\,\text{kPa} \cdot 6{,}8\,\textsf{l}}{101\,\text{kPa}} = 2019{,}8\,\textsf{l} = 2{,}0198\,\text{m}^3$
 **Vastaus:** $V_2 \approx 2{,}0\,\text{m}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $6{,}8\,\textsf{l}$ (kaksi numeroa); paine $300{,}0\,\text{bar}$ on neljän ja $101\,\text{kPa}$ kolmen numeron arvo, joten kumpikaan ei rajoita.
-**Järkevyys:** Paine on noin 300-kertainen ilmanpaineeseen nähden, joten tilavuus on noin $300 \cdot 6{,}8\,\textsf{l} \approx 2000\,\textsf{l}$. Jos palomies hengittää $50\,\textsf{l}$ minuutissa, ilma riittää noin 40 minuutiksi, mikä vastaa todellisia laitteita. Näin suuressa paineessa ilma ei enää noudata Boylen lakia tarkasti: tulo $pV$ on noin $10\,\%$ suurempi kuin laki ennustaa, joten todellinen tilavuus on noin $1{,}8\,\text{m}^3$.
+**Järkevyys:** Paine on noin 300-kertainen ilmanpaineeseen nähden, joten tilavuus on noin $300 \cdot 6{,}8\,\textsf{l} \approx 2000\,\textsf{l}$. Jos palomies hengittää $50\,\textsf{l}$ minuutissa, ilma riittää noin $40\,\text{min}$:ksi, mikä vastaa todellisia laitteita. Näin suuressa paineessa ilma ei enää noudata Boylen lakia tarkasti: tulo $pV$ on noin $10\,\%$ suurempi kuin laki ennustaa, joten todellinen tilavuus on noin $1{,}8\,\text{m}^3$.
 
 ## fy3-9-L2-02
 **Annettu:** $\theta_1 = 20\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$, $p_2 = 125\,\text{kPa}$, tilavuus vakio
@@ -108,7 +108,7 @@
 **Muunnokset:** Kokonaispaine $p_1 = 250{,}0\,\text{kPa} + 101\,\text{kPa} = 351\,\text{kPa}$ (summan tarkkuus on yksiköt, koska $101\,\text{kPa}$ on annettu yksiköiden tarkkuudella). Lämpötilat kelvineinä: $T_1 = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$ ja $T_2 = (-20 + 273{,}15)\,\text{K} = 253{,}15\,\text{K}$.
 **Sijoitus:** $p_2 = \dfrac{351\,\text{kPa} \cdot 253{,}15\,\text{K}}{293{,}15\,\text{K}} = 303{,}11\,\text{kPa}$, joten $\Delta p_2 = 303{,}11\,\text{kPa} - 101\,\text{kPa} = 202{,}11\,\text{kPa}$
 **Vastaus:** $\Delta p_2 \approx 202\,\text{kPa}$, kolme merkitsevää numeroa. Ilmanpaine $101\,\text{kPa}$ on annettu yksiköiden tarkkuudella, joten sekä kokonaispaine $351\,\text{kPa}$ että $p_2 = 303\,\text{kPa}$ tunnetaan yksiköiden tarkkuudella (kolme numeroa); myös $T_1 = 293\,\text{K}$ ja $T_2 = 253\,\text{K}$ ovat kolmen numeron arvoja. Erotus $303 - 101$ säilyttää yksiköt, joten $202\,\text{kPa}$ on kolmen numeron arvo.
-**Järkevyys:** Kokonaispaine pienenee noin $14\,\%$ ($253/293 \approx 0{,}86$): $351\,\text{kPa} \cdot 0{,}86 \approx 303\,\text{kPa}$. Jos lukema sijoitettaisiin suoraan kaavaan, tulos olisi $250\,\text{kPa} \cdot 0{,}86 \approx 216\,\text{kPa}$, mikä on väärin, koska ylipaine ei ole verrannollinen lämpötilaan. Lukema laskee 250 kPa:sta 202 kPa:iin eli lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
+**Järkevyys:** Kokonaispaine pienenee noin $14\,\%$ ($253/293 \approx 0{,}86$): $351\,\text{kPa} \cdot 0{,}86 \approx 303\,\text{kPa}$. Jos lukema sijoitettaisiin suoraan kaavaan, tulos olisi $250\,\text{kPa} \cdot 0{,}86 \approx 216\,\text{kPa}$, mikä on väärin, koska ylipaine ei ole verrannollinen lämpötilaan. Lukema laskee $250\,\text{kPa}$:sta $202\,\text{kPa}$:iin eli lähes viidenneksen, joten renkaat kannattaa tarkistaa pakkasella.
 
 ## fy3-9-L3-03
 **Annettu:** sylinterin pituus $L_1 = 40{,}0\,\text{cm}$, alkupaine $p_1 = p_0 = 101\,\text{kPa}$, renkaan ylipaine $\Delta p = 300{,}0\,\text{kPa}$, poikkipinta-ala vakio, lämpötila vakio

@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b3844089f4bc6265
+CONTENT-HASH: 73a72fe302bfea2a
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review (round 1, 2026-10-28): the hashed content on this branch is identical to the version passed on main after the physics audit (same hash b3844089f4bc6265; git diff against origin/main touches only review/usage.tsv), so the diff is empty. The sim LaTeX pass (KaTeX labels and readouts in lang/fi.json, window.simText tests, howto/model/calc boxes) is already part of that passed version; spot-read its sim strings for physics, symbols and units against the guardrails: no new or changed claim.
+Re-review after typesetting round. Only change: lesson.md weighted-average sentence in the mixing example, inline \tfrac replaced by colon form: T = (3,0 kg · 20 °C + 1,0 kg · 80 °C) : 4,0 kg = 35 °C. (60+80)/4,0 = 35 °C, equal to the aligned solution above (T = 35 °C) and to the energy balance; units cancel to °C. Colon division in text follows house rules, decimal {,} and \, correct. Goal-verb rewording has no physics content.

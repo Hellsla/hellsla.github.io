@@ -162,6 +162,12 @@
         "Vml": "volume V",
         "Tc": "θ"
       },
+      "values": {
+        "mode": {
+          "isoterminen": "isothermal",
+          "isobaarinen": "isobaric"
+        }
+      },
       "units": {
         "Vml": "ml",
         "Tc": "°C"
@@ -197,6 +203,12 @@
         "mode": "change of state",
         "Vml": "volume V",
         "Tc": "θ"
+      },
+      "values": {
+        "mode": {
+          "isoterminen": "isothermal",
+          "isobaarinen": "isobaric"
+        }
       },
       "units": {
         "Vml": "ml",

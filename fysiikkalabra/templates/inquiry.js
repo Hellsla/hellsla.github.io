@@ -176,7 +176,8 @@
           const tr = document.createElement('tr');
           const td = (x, u, k) => (words[k] && String(x) in words[k] ? `<td data-plain="${words[k][String(x)]}">${words[k][String(x)]}</td>`   // a select's value or a switch in words ("values" of the experiment)
             : `<td data-plain="${fi(x)}${u ? ' ' + u : ''}">${fiTex(x, u)}</td>`);   // plain text for the copied notes
-          tr.innerHTML = td(r.vary, unit(vary), vary) + measure.map((k) => td(r[k], unit(k), k)).join('');
+          const shown = (x) => (typeof x === 'string' && !(words[vary] && x in words[vary]) && typeof window.__v === 'function' ? window.__v(x) : x);   // a body or material named in the page's language (sim "values")
+          tr.innerHTML = td(shown(r.vary), unit(vary), vary) + measure.map((k) => td(r[k], unit(k), k)).join('');
           tbody.appendChild(tr);
         });
         typeset(tbody);

@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 738ad504ed25803e
+CONTENT-HASH: 339ff2bfdf81959e
+
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- The sim readout shows `ΔV = 0,001 l` with a decimal comma in the English page (platform convention, as in other FY3 sims).
+
 ## Checked
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Previous blocking item resolved: in the built page (Playwright, 1280 px) no visible text contains "sama paine" or "jäähdytys ensin"; both experiments' "Initial state" lines read "piston return = at the same pressure", and "Kept constant"/"Varied" name the parameter. The remaining occurrences in the HTML are data attributes and sim configuration, not shown.
+- The table row's varied value goes through `shown()` / `window.__v` ("sama paine" returns "at the same pressure"; lang/en.json sims.fy3-11.values has both entries); I did not drive the table row itself.
+- Same activity order, predictions, experiments, hints, mistakes, feedback, solutions and exit ticket as the Finnish; nothing added or dropped.
+- Learning path: retrieval, two predictions each tested by an experiment, conclusion, staged worked example, transfer task; the opening question is answered in the efficiency section; slot goals met.
+- Natural English; terms (efficiency, coefficient of performance, heat engine) consistent; units and symbols as in the Finnish.
+- Workload fits one lesson; optional items marked.

@@ -315,7 +315,7 @@ Many people think that heat and temperature are the same thing, or that objects 
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-The hot water is on the left side, as in the general equation. On the third line the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = \tfrac{3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}}{4.0\,\text{kg}} = 35\,{}^\circ\text{C}$.
+The hot water is on the left side, as in the general equation. On the third line the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = (3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4.0\,\text{kg} = 35\,{}^\circ\text{C}$.
 
 A third mistake is to convert $\Delta T$ to kelvins by adding 273: a change in temperature is the same on both scales.
 

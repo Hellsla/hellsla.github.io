@@ -3,7 +3,7 @@
     {
       "id": "fy3-12-L1-01",
       "level": 1,
-      "text": "The roof of a log cabin has an area of 45 m² and a U-value of $0.24\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $22\\,{}^\\circ\\text{C}$ in the cabin and $-18\\,{}^\\circ\\text{C}$ outdoors. How large is the thermal power conducted out through the roof?",
+      "text": "The roof of a log cabin has an area of $45\\,\\text{m}^2$ and a U-value of $0.24\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $22\\,{}^\\circ\\text{C}$ in the cabin and $-18\\,{}^\\circ\\text{C}$ outdoors. How large is the thermal power conducted out through the roof?",
       "answer": 432,
       "unit": "W",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-12-L1-02",
       "level": 1,
-      "text": "A measurement on the front door of an old detached house shows that heat is conducted through the door at a power of $96\\,\\text{W}$ when it is $21\\,{}^\\circ\\text{C}$ indoors and $-19\\,{}^\\circ\\text{C}$ outdoors. The area of the door is 2.0 m². What is the U-value of the door?",
+      "text": "A measurement on the front door of an old detached house shows that heat is conducted through the door at a power of $96\\,\\text{W}$ when it is $21\\,{}^\\circ\\text{C}$ indoors and $-19\\,{}^\\circ\\text{C}$ outdoors. The area of the door is $2.0\\,\\text{m}^2$. What is the U-value of the door?",
       "answer": 1.2,
       "unit": "W/(m²·K)",
       "tolerance": 0.02
@@ -19,7 +19,7 @@
     {
       "id": "fy3-12-L1-03",
       "level": 1,
-      "text": "The outer wall of a district-heated flat has an area of 28 m² and a U-value of $0.25\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. On a frosty night heat is conducted out through the wall at a power of $210\\,\\text{W}$. How large is the difference between the indoor and outdoor temperature?",
+      "text": "The outer wall of a district-heated flat has an area of $28\\,\\text{m}^2$ and a U-value of $0.25\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. On a frosty night heat is conducted out through the wall at a power of $210\\,\\text{W}$. How large is the difference between the indoor and outdoor temperature?",
       "answer": 30,
       "unit": "K",
       "tolerance": 0.02
@@ -27,7 +27,7 @@
     {
       "id": "fy3-12-L1-04",
       "level": 1,
-      "text": "On a frosty night heat is conducted out of a detached house at a mean power of $3.5\\,\\text{kW}$. How many kilowatt-hours of heat must the heating of the house produce during a 14-hour night for the indoor temperature to stay the same?",
+      "text": "On a frosty night heat is conducted out of a detached house at a mean power of $3.5\\,\\text{kW}$. How many kilowatt-hours of heat must the heating of the house produce during a $14\\,\\text{h}$ night for the indoor temperature to stay the same?",
       "answer": 49,
       "unit": "kWh",
       "tolerance": 0.02
@@ -46,7 +46,7 @@
     {
       "id": "fy3-12-L2-01",
       "level": 2,
-      "text": "The walls of a summer cabin have an area of 70 m² and a U-value of $0.50\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The roof has an area of 50.0 m² and a U-value of $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Heat conducted through other structures is ignored. On a winter weekend the cabin is heated by electric radiators with a total power of $2.0\\,\\text{kW}$. What is the lowest outdoor temperature at which the radiators can keep the cabin at $20\\,{}^\\circ\\text{C}$?",
+      "text": "The walls of a summer cabin have an area of $70\\,\\text{m}^2$ and a U-value of $0.50\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The roof has an area of $50.0\\,\\text{m}^2$ and a U-value of $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Heat conducted through other structures is ignored. On a winter weekend the cabin is heated by electric radiators with a total power of $2.0\\,\\text{kW}$. What is the lowest outdoor temperature at which the radiators can keep the cabin at $20\\,{}^\\circ\\text{C}$?",
       "answer": -20,
       "unit": "°C",
       "tolerance": 0.02
@@ -54,7 +54,7 @@
     {
       "id": "fy3-12-L2-02",
       "level": 2,
-      "text": "The roof of a detached house has an area of 130 m² and a U-value of $0.090\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The heating season lasts 230 days, and the difference between the indoor and outdoor temperature is on average $21\\,\\text{K}$ during it. The house uses district heating, and the price of heat is 0.11 €/kWh. How much does the heat escaping through the roof cost during the heating season?",
+      "text": "The roof of a detached house has an area of $130\\,\\text{m}^2$ and a U-value of $0.090\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The heating season lasts 230 days, and the difference between the indoor and outdoor temperature is on average $21\\,\\text{K}$ during it. The house uses district heating, and the price of heat is $0.11\\,\\text{€/kWh}$. How much does the heat escaping through the roof cost during the heating season?",
       "answer": 149,
       "unit": "€",
       "tolerance": 0.02
@@ -62,7 +62,7 @@
     {
       "id": "fy3-12-L2-03",
       "level": 2,
-      "text": "The old double-glazed windows of a post-war house have a U-value of $2.8\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. They are replaced with triple-glazed windows with a U-value of $0.80\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The total area of the windows is 14 m². How many kilowatt-hours of heat does the replacement save during a frosty week (7 days), when it is $21\\,{}^\\circ\\text{C}$ indoors and $-24\\,{}^\\circ\\text{C}$ outdoors for the whole week?",
+      "text": "The old double-glazed windows of a post-war house have a U-value of $2.8\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. They are replaced with triple-glazed windows with a U-value of $0.80\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The total area of the windows is $14\\,\\text{m}^2$. How many kilowatt-hours of heat does the replacement save during a frosty week (7 days), when it is $21\\,{}^\\circ\\text{C}$ indoors and $-24\\,{}^\\circ\\text{C}$ outdoors for the whole week?",
       "answer": 212,
       "unit": "kWh",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-12-L3-01",
       "level": 3,
-      "text": "$0.60\\,\\text{kg}$ of hot coffee is packed into a thermos flask for a ski trip. The flask has two nested walls with the air removed from between them, and the surfaces of the walls are shiny. Explain which ways of heat transfer the vacuum and the shiny surfaces prevent and how. Through which route does heat still escape? Heat escapes from the flask at a mean power of $1.4\\,\\text{W}$. By how many kelvins does the coffee cool in 10.0 hours? The specific heat capacity of coffee is the same as that of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "text": "$0.60\\,\\text{kg}$ of hot coffee is packed into a thermos flask for a ski trip. The flask has two nested walls with the air removed from between them, and the surfaces of the walls are shiny. Explain which ways of heat transfer the vacuum and the shiny surfaces prevent and how. Through which route does heat still escape? Heat escapes from the flask at a mean power of $1.4\\,\\text{W}$. By how many kelvins does the coffee cool in $10.0\\,\\text{h}$? The specific heat capacity of coffee is the same as that of water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
       "answer": 20,
       "unit": "K",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy3-12-L3-03",
       "level": 3,
-      "text": "A detached house is heated by an air-to-water heat pump whose coefficient of performance is on average 2.8 over the heating season. More insulation wool is blown into the roof, and its U-value decreases from $0.35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ to $0.10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The area of the roof is 100 m². The heating season lasts $5800\\,\\text{h}$, and the difference between the indoor and outdoor temperature is on average $19\\,\\text{K}$ during it. How many kilowatt-hours of electricity does the extra insulation save over the heating season? A neighbour thinks insulation does not matter to the owner of a heat pump, because the pump gets its heat free from the outdoor air. Justify why insulation is still worthwhile.",
+      "text": "A detached house is heated by an air-to-water heat pump whose coefficient of performance is on average 2.8 over the heating season. More insulation wool is blown into the roof, and its U-value decreases from $0.35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$ to $0.10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. The area of the roof is $100\\,\\text{m}^2$. The heating season lasts $5800\\,\\text{h}$, and the difference between the indoor and outdoor temperature is on average $19\\,\\text{K}$ during it. How many kilowatt-hours of electricity does the extra insulation save over the heating season? A neighbour thinks insulation does not matter to the owner of a heat pump, because the pump gets its heat free from the outdoor air. Justify why insulation is still worthwhile.",
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02

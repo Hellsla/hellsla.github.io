@@ -210,7 +210,7 @@ new p5((p) => {
 
   function drawLegend(idx) {                                   // colour key in a pill on the ground, bottom right
     p.textSize(ts(11)); p.textAlign(p.LEFT, p.CENTER);
-    const items = [[__('paino'), RED], [__('massa_2'), [150, 156, 164]], [`$\\text{${BODIES[idx][0]}}$`, null]], y = 386, sw = 16 + 5, gap = 12;
+    const items = [[__('paino'), RED], [__('massa_2'), [150, 156, 164]], [`$\\text{${__v(BODIES[idx][0])}}$`, null]], y = 386, sw = 16 + 5, gap = 12;
     const w = items.reduce((s, [t]) => s + sw + p.textWidth(t), 0) + gap * (items.length - 1) + 16, h = ts(11) + 8;
     let x = 594 - w + 8;
     p.noStroke(); p.fill(255, 235); p.rect(594 - w, y - h / 2, w, h, 6);
