@@ -57,7 +57,7 @@ window.FX.isotopes = (el, d, A) => {
 
     root.append(...(d.intro ? [h('p', { class: 'fx-prompt', html: md(d.intro) })] : []),
       h('div', { class: 'fx-iso-ctls' }, cz.row, cn.row),
-      h('div', { class: 'fx-iso-main' }, h('div', { class: 'fx-iso-pic' }, svg), h('div', { class: 'fx-iso-info' }, notation, nameP, massP)), status,
+      h('div', { class: 'fx-iso-main' }, h('div', { class: 'fx-iso-pic' }, svg), h('div', { class: 'fx-iso-info' }, notation, nameP)), massP, status,
       legend, chipsH, chips);
 
     let tasksBox = null; const taskRows = [];
@@ -119,13 +119,13 @@ window.FX.isotopes = (el, d, A) => {
       const Anum = Z + N, key = Z + '-' + N, e = el0(Z);
       draw();
       if (Anum === 0) {
-        notation.innerHTML = '—'; nameP.textContent = 'Add protons or neutrons to build a nucleus.'; massP.innerHTML = '$A = 0$';
+        notation.innerHTML = '—'; nameP.textContent = 'Add protons or neutrons to build a nucleus.'; massP.innerHTML = 'Mass number: $A = 0$';
         status.dataset.state = 'hint'; status.textContent = 'Nothing to show yet.';
       } else {
         notation.innerHTML = Z === 0 && N !== 1 ? '—' : tex(Z, N);
         nameP.innerHTML = Z === 0 ? (N === 1 ? 'A free <strong>neutron</strong> (no protons: not an element)' : 'Only neutrons: this is not an element.')
-          : `Element: <strong>${e.name.toLowerCase()}</strong> (symbol ${'$\\text{' + e.symbol + '}$'}), because $Z = ${Z}$`;
-        massP.innerHTML = `Mass number $A = Z + N = ${Z} + ${N} = ${Anum}$`;
+          : `Element: <strong>${e.name.toLowerCase()}</strong> (symbol ${'$\\text{' + e.symbol + '}$'}), because ${'$'}{Z = ${Z}}${'$'}`;
+        massP.innerHTML = `Mass number: ${'$'}{A = Z + N = ${Z} + ${N} = ${Anum}}${'$'}`;
         const v = chart[key], own = byZN[key];
         if (v === 'stable') {
           status.dataset.state = 'ok';

@@ -1,16 +1,21 @@
 /* Fusion reaction and energy scales (data-fx="reaction"), with the facts from the data file named by data-src
    (units/fy14/data/nuclides.json: AME2020 masses, CODATA 2018 constants, "energy_scales").
-   (a) "reaction": D + T → He-4 + n in six steps (Step back / Next step / Play): the nuclei approach, the Coulomb
-       barrier (electric force, red #c92a2a) slows them, they fuse into helium-5, it breaks into an alpha particle and a
-       neutron and the products fly apart. Velocity arrows are blue (#1971c2) and their lengths are proportional to the
-       speeds (centre-of-mass frame, $m v$ equal and opposite). Every step has one sentence; the last shows how the
+   (a) "reaction": D + T → He-4 + n in seven steps (Step back / Next step / Play): the nuclei approach, the Coulomb
+       barrier (electric force, red #c92a2a) slows them, they tunnel through its top (about $0.48\ \text{MeV}$ at
+       $3\ \text{fm}$; D–T fusion becomes likely near $0.1\ \text{MeV}$), fuse into helium-5, which breaks into an alpha
+       particle and a neutron, and the products fly apart. Velocity arrows are blue (#1971c2); their lengths compare the
+       speeds within one step only (centre-of-mass frame, $m v$ equal and opposite), and a line under the figure gives
+       the real speeds: a 10 keV deuteron about $1 \cdot 10^{6}\ \text{m/s}$, the products 13 and 52 times faster.
+       Every step has one sentence; the last shows how the
        energy is shared: with equal momenta $E_\text{k} = p^2 / (2m)$, so the neutron gets $m_\alpha / (m_\alpha + m_\text{n})$
        of $Q$, computed from the nuclear masses (atomic mass minus the electrons). With prefers-reduced-motion the
        steps change without animation and there is no Play button.
    (b) "scales": a bar chart on a logarithmic axis of the energy released per kilogram of fuel or per reaction
        (burning methane and coal, U-235 fission, D–T fusion), with each value's calculation and source.
    Every label is KaTeX laid over the SVG in HTML. Options: {part?: "reaction" | "scales" | "both" (default "both"),
-   question?: text shown as a question box under the part(s), scales_mode?: "kg" | "reaction"}. */
+   question?: text shown as a question box under the part(s), scales_mode?: "kg" | "reaction", reaction_title?: false
+   and scales_title?: false (leave out the component's own heading when the unit gives one), scales_compare?: false
+   (leave out the sentence that compares the fuels, when a task asks the student to work it out)}. */
 window.FX.reaction = (el, d, A) => {
   const { h, md, typeset } = A;
   const NS = 'http://www.w3.org/2000/svg';
@@ -35,6 +40,11 @@ window.FX.reaction = (el, d, A) => {
       const dm = by['H-2'].mass_u + by['H-3'].mass_u - by['He-4'].mass_u - by.n.mass_u, Q = dm * C.u_MeV;
       const Q3 = Number(Q.toFixed(1)), share = mA / (mA + mN), En = share * Q3, Ea = Q3 - Number(En.toFixed(1));
       const ratio = mA / mN;
+      // real speeds (relativistic, small correction): a deuteron of 10 keV in the centre-of-mass frame, and the products
+      const c = 299792458, speed = (Ek, m) => { const g = 1 + Ek / (m * C.u_MeV); return c * Math.sqrt(1 - 1 / (g * g)); };
+      const sD = speed(0.010, mD), sT = sD * (mD / mT), sN = speed(share * Q3, mN), sA = speed(Q3 - share * Q3, mA);
+      const ms = (v) => `${'$'}{${p3(v)}\\ \\text{m/s}}${'$'}`;
+      const barrierTop = 1.43996 / 3;   // k e^2 / r in MeV at r = 3 fm (k e^2 = 1.440 MeV fm)
       const W = 560, H = 240, Y = 122, R = 11, CX = 280;
       const P = 'p', Nn = 'n';
       const SHAPES = {
@@ -45,20 +55,22 @@ window.FX.reaction = (el, d, A) => {
         N: [[Nn, 0, 0]],
       };
       const TEX = { D: '^{2}_{1}\\text{H}', T: '^{3}_{1}\\text{H}', C: '^{5}_{2}\\text{He}', He: '^{4}_{2}\\text{He}', N: '^{1}_{0}\\text{n}' };
-      const vD = 80, vT = vD * (mD / mT), vN = 150, vA = vN / ratio;
+      const vD = 60, vT = vD * (mD / mT), vN = 150, vA = vN / ratio;
       const STEPS = [
-        { b: { D: [80, 1], T: [480, 1] }, v: { D: vD, T: -vT },
+        { b: { D: [80, 1], T: [480, 1] }, v: { D: vD, T: -vT }, speeds: `Speeds in this step: deuteron ${ms(sD)} (kinetic energy $10\\ \\text{keV}$), triton ${ms(sT)}.`,
           t: 'A deuterium nucleus (1 proton, 1 neutron) and a tritium nucleus (1 proton, 2 neutrons) move towards each other; the blue arrows are their velocities $\\overline{v}$.' },
-        { b: { D: [206, 1], T: [354, 1] }, v: { D: vD / 2, T: -vT / 2 }, F: { D: -44, T: 44 }, barrier: true,
-          t: 'Both nuclei are positive, so the electric force $\\overline{F}$ (red) pushes them apart and slows them down: this repulsion is the **Coulomb barrier**, and only very fast nuclei in a plasma of over 100 million kelvin get close enough (helped by quantum tunnelling).' },
+        { b: { D: [196, 1], T: [364, 1] }, v: { D: vD / 2, T: -vT / 2 }, F: { D: -44, T: 44 }, barrier: true,
+          t: 'Both nuclei are positive, so the electric force $\\overline{F}$ (red) pushes them apart and slows them down: this repulsion is the **Coulomb barrier**.' },
+        { b: { D: [CX - 58, 1], T: [CX + 58, 1] }, barrier: true, tunnel: true,
+          t: `To climb over the barrier the nuclei would need about ${'$'}{${barrierTop.toFixed(2)}\\ \\text{MeV}}${'$'} (its top, at ${'$'}{r \\approx 3\\ \\text{fm}}${'$'}), far more than they have, but by **quantum tunnelling** they can pass through the barrier: D–T fusion becomes likely already at collision energies of about ${'$'}{0.1\\ \\text{MeV}}${'$'}, so in a reactor the fastest nuclei of the plasma do most of the fusing.` },
         { b: { C: [CX, 1] },
-          t: 'At a distance of about $10^{-15}\\ \\text{m}$ the strong nuclear force, which attracts all nucleons, wins and the nuclei fuse into one very short-lived nucleus, helium-5.' },
+          t: 'At a distance of about ${3 \\cdot 10^{-15}\\ \\text{m}}$ ($3\\ \\text{fm}$) the strong nuclear force, which attracts all nucleons, wins and the nuclei fuse into one very short-lived nucleus, helium-5.' },
         { b: { He: [CX - 18, 1], N: [CX + 28, 1] }, burst: true,
-          t: `Helium-5 breaks up at once into a helium-4 nucleus (an alpha particle) and a neutron, which together have less mass than the fuel: $\\Delta m = ${dm.toFixed(4)}\\ \\text{u}$, so $Q = ${Q3}\\ \\text{MeV}$ is released.` },
-        { b: { He: [236, 1], N: [356, 1] }, v: { He: -vA, N: vN },
-          t: 'The products fly apart in opposite directions; the total momentum stays zero, so $m_\\alpha v_\\alpha = m_\\text{n} v_\\text{n}$, and the neutron, about four times lighter, moves about four times faster.' },
-        { b: { He: [236, 1], N: [356, 1] }, v: { He: -vA, N: vN }, share: true,
-          t: `With equal momenta $p$, the kinetic energy $E_\\text{k} = \\dfrac{p^2}{2m}$ is larger for the lighter particle: the neutron carries $${En.toFixed(1)}\\ \\text{MeV}$ (about $80\\ \\%$) and the alpha particle $${Ea.toFixed(1)}\\ \\text{MeV}$.` },
+          t: `Helium-5 breaks up at once into a helium-4 nucleus (an alpha particle) and a neutron, which together have less mass than the fuel: ${'$'}{\\Delta m = ${dm.toFixed(4)}\\ \\text{u}}${'$'}, so ${'$'}{Q = ${Q3}\\ \\text{MeV}}${'$'} is released.` },
+        { b: { He: [236, 1], N: [356, 1] }, v: { He: -vA, N: vN }, speeds: `Speeds in this step: neutron ${ms(sN)}, alpha particle ${ms(sA)}: about ${Math.round(sN / sD)} and ${Math.round(sA / sD)} times faster than the deuteron of step 1.`,
+          t: 'The products fly apart in opposite directions; the total momentum stays zero, so ${m_\\alpha v_\\alpha = m_\\text{n} v_\\text{n}}$, and the neutron, about four times lighter, moves about four times faster.' },
+        { b: { He: [236, 1], N: [356, 1] }, v: { He: -vA, N: vN }, share: true, speeds: `Speeds in this step: neutron ${ms(sN)}, alpha particle ${ms(sA)}.`,
+          t: `With equal momenta $p$, the kinetic energy ${'$'}{E_\\text{k} = \\dfrac{p^2}{2m}}${'$'} is larger for the lighter particle: the neutron carries ${'$'}{${En.toFixed(1)}\\ \\text{MeV}}${'$'} (about ${'$'}{80\\ \\%}${'$'}) and the alpha particle ${'$'}{${Ea.toFixed(1)}\\ \\text{MeV}}${'$'}.` },
       ];
       const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const svg = S('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', class: 'fx-rx-svg' });
@@ -83,16 +95,18 @@ window.FX.reaction = (el, d, A) => {
         h('p', { class: 'fx-rx-share-key', html: `<span><span class="fx-swatch fx-rx-sw-n"></span> neutron $${En.toFixed(1)}\\ \\text{MeV}$ $(${(share * 100).toFixed(1)}\\ \\%)$</span> <span><span class="fx-swatch fx-rx-sw-a"></span> alpha particle $${Ea.toFixed(1)}\\ \\text{MeV}$ $(${(100 - share * 100).toFixed(1)}\\ \\%)$</span>` }));
       const why = h('details', { class: 'fx-rx-why' }, h('summary', {}, 'Why does the neutron get about 80 % of the energy?'),
         h('ol', { class: 'fx-be-steps' },
-          h('li', { html: `Before the reaction the total momentum is (almost) zero, so after it $p_\\alpha = p_\\text{n} = p$ in opposite directions.` }),
-          h('li', { html: `Kinetic energy $E_\\text{k} = \\dfrac{1}{2} m v^2 = \\dfrac{p^2}{2m}$, so $\\dfrac{E_\\text{n}}{E_\\alpha} = \\dfrac{m_\\alpha}{m_\\text{n}} = \\dfrac{${mA.toFixed(4)}\\ \\text{u}}{${mN.toFixed(4)}\\ \\text{u}} = ${ratio.toFixed(2)}$.` }),
-          h('li', { html: `Nuclear masses: $m_\\alpha = m(^{4}\\text{He}) - 2 m_\\text{e} = ${by['He-4'].mass_u.toFixed(6)}\\ \\text{u} - 2 \\cdot ${me.toFixed(6)}\\ \\text{u} = ${mA.toFixed(6)}\\ \\text{u}$, $m_\\text{n} = ${mN.toFixed(6)}\\ \\text{u}$.` }),
-          h('li', { html: `$E_\\text{n} = \\dfrac{m_\\alpha}{m_\\alpha + m_\\text{n}} \\cdot Q = ${share.toFixed(3)} \\cdot ${Q3}\\ \\text{MeV} = ${En.toFixed(1)}\\ \\text{MeV}$, and $E_\\alpha = Q - E_\\text{n} = ${Q3}\\ \\text{MeV} - ${En.toFixed(1)}\\ \\text{MeV} = ${Ea.toFixed(1)}\\ \\text{MeV}$.` }),
-          h('li', { html: `Here $Q = \\Delta m \\cdot 931.494\\ \\text{MeV/u} = ${dm.toFixed(6)}\\ \\text{u} \\cdot 931.494\\ \\text{MeV/u} = ${Q.toFixed(2)}\\ \\text{MeV}$ from the atomic masses of $^{2}\\text{H}$, $^{3}\\text{H}$, $^{4}\\text{He}$ and the neutron (AME2020).` })),
+          h('li', { html: `Before the reaction the total momentum is (almost) zero, so afterwards ${'$'}{p_\\alpha = p_\\text{n} = p}${'$'}, in opposite directions.` }),
+          h('li', { html: `Kinetic energy and momentum: $$\\begin{aligned} E_\\text{k} &= \\tfrac{1}{2} m v^2 = \\dfrac{p^2}{2m} \\\\ \\dfrac{E_\\text{n}}{E_\\alpha} &= \\dfrac{m_\\alpha}{m_\\text{n}} = \\dfrac{${mA.toFixed(4)}\\ \\text{u}}{${mN.toFixed(4)}\\ \\text{u}} \\\\ &= ${ratio.toFixed(2)} \\end{aligned}$$` }),
+          h('li', { html: `Nuclear masses (atomic mass minus the electrons): $$\\begin{aligned} m_\\alpha &= m(^{4}\\text{He}) - 2 m_\\text{e} \\\\ &= ${by['He-4'].mass_u.toFixed(6)}\\ \\text{u} - 2 \\cdot ${me.toFixed(6)}\\ \\text{u} \\\\ &= ${mA.toFixed(6)}\\ \\text{u} \\end{aligned}$$ and ${'$'}{m_\\text{n} = ${mN.toFixed(6)}\\ \\text{u}}${'$'}.` }),
+          h('li', { html: `The neutron's share: $$\\begin{aligned} E_\\text{n} &= \\dfrac{m_\\alpha}{m_\\alpha + m_\\text{n}} \\cdot Q \\\\ &= ${share.toFixed(3)} \\cdot ${Q3}\\ \\text{MeV} \\\\ &= ${En.toFixed(1)}\\ \\text{MeV} \\\\ E_\\alpha &= Q - E_\\text{n} \\\\ &= ${Q3}\\ \\text{MeV} - ${En.toFixed(1)}\\ \\text{MeV} \\\\ &= ${Ea.toFixed(1)}\\ \\text{MeV} \\end{aligned}$$` }),
+          h('li', { html: `Here $Q$ comes from the atomic masses of $^{2}\\text{H}$, $^{3}\\text{H}$, $^{4}\\text{He}$ and the neutron (AME2020): $$\\begin{aligned} Q &= \\Delta m \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${dm.toFixed(6)}\\ \\text{u} \\cdot 931.494\\ \\text{MeV/u} \\\\ &= ${Q.toFixed(2)}\\ \\text{MeV} \\end{aligned}$$` }),
+          h('li', { html: `Speeds: the neutron moves at ${ms(sN)} and the alpha particle at ${ms(sA)}, while a deuteron of $10\\ \\text{keV}$ moves at ${ms(sD)}: the products are about ${Math.round(sA / sD)} and ${Math.round(sN / sD)} times faster than the fuel nuclei. The released energy is what makes them fast.` })),
         h('p', { class: 'fx-note' }, 'A neutron has no charge, so the magnetic field cannot hold it: it leaves the plasma and carries most of the energy to the wall, where it heats the blanket and breeds tritium. The alpha particle stays in the plasma and keeps it hot.'));
-      const legend = h('p', { class: 'fx-note fx-rx-legend', html: '<span><span class="fx-key fx-key-v" aria-hidden="true"></span> velocity $\\overline{v}$ (length proportional to speed)</span> <span><span class="fx-key fx-key-f" aria-hidden="true"></span> electric force $\\overline{F}$</span> <span><span class="fx-iso-dot fx-iso-p" aria-hidden="true">+</span> proton</span> <span><span class="fx-iso-dot fx-iso-n" aria-hidden="true"></span> neutron</span>' });
-      root.append(h('h4', { class: 'fx-rx-h' }, 'The D–T fusion reaction, step by step'),
+      const legend = h('p', { class: 'fx-note fx-rx-legend', html: '<span><span class="fx-key fx-key-v" aria-hidden="true"></span> velocity $\\overline{v}$ (lengths compare speeds within one step only)</span> <span><span class="fx-key fx-key-f" aria-hidden="true"></span> electric force $\\overline{F}$</span> <span><span class="fx-iso-dot fx-iso-p" aria-hidden="true">+</span> proton</span> <span><span class="fx-iso-dot fx-iso-n" aria-hidden="true"></span> neutron</span>' });
+      const speedsP = h('p', { class: 'fx-note fx-rx-speeds', 'aria-live': 'polite' });
+      root.append(...(d.reaction_title === false ? [] : [h('h4', { class: 'fx-rx-h' }, 'The D–T fusion reaction, step by step')]),
         h('p', { class: 'fx-rx-eq', html: `$$\\begin{aligned} {}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\to\\ &{}^{4}_{2}\\text{He}\\ (${Ea.toFixed(1)}\\ \\text{MeV}) \\\\ +\\ &{}^{1}_{0}\\text{n}\\ (${En.toFixed(1)}\\ \\text{MeV}) \\end{aligned}$$` }),
-        plot, legend, h('div', { class: 'fx-actions fx-rx-ctl' }, back, next, play, count), text, bar, why);
+        plot, legend, h('div', { class: 'fx-actions fx-rx-ctl' }, back, next, play, count), text, speedsP, bar, why);
 
       let step = 0, anim = null, timer = null;
       const nucleus = (key, x, op) => {
@@ -136,10 +150,20 @@ window.FX.reaction = (el, d, A) => {
           scene.insertBefore(S('rect', { x: CX - 34, y: Y - 70, width: 68, height: 140, rx: 8, fill: '#ffe3e3', stroke: '#c92a2a', 'stroke-dasharray': '6 4' }), scene.firstChild);
           lab(CX, Y - 86, '$\\text{Coulomb barrier}$', 'fx-lab-f');
         }
+        if (st.tunnel) {
+          const x1 = pos.D + 22, x2 = pos.T - 24;
+          let dd = `M${x1} ${Y}`;
+          for (let x = x1; x < x2; x += 4) dd += `L${(x + 4).toFixed(1)} ${(Y + 5 * Math.sin(((x + 4 - x1) / (x2 - x1)) * Math.PI * 6)).toFixed(1)}`;
+          scene.append(S('path', { d: dd, fill: 'none', stroke: '#343a40', 'stroke-width': 2, 'stroke-dasharray': '5 3' }));
+          scene.append(S('path', { d: `M${x2 + 2} ${Y}l-10 -5v10Z`, fill: '#343a40' }));
+          lab(CX, Y + 88, '$\\text{tunnelling}$', 'fx-lab-strong');
+        }
         Object.entries(st.v || {}).forEach(([k, v]) => {
           const x0 = pos[k] + Math.sign(v) * (k === 'N' ? 14 : 24);
           scene.append(arrow(x0, Y - 34, v, '#1971c2'));
-          lab(x0 + v / 2, Y - 52, k === 'N' ? '$\\overline{v}_\\text{n}$' : k === 'He' ? '$\\overline{v}_\\alpha$' : '$\\overline{v}$', 'fx-lab-v');
+          const t = k === 'N' ? '$\\overline{v}_\\text{n}$' : k === 'He' ? '$\\overline{v}_\\alpha$' : '$\\overline{v}$';
+          if (st.barrier) lab(x0 - Math.sign(v) * 6, Y - 34, t, (v > 0 ? 'fx-lab-end' : 'fx-lab-start') + ' fx-lab-v');   // beside the arrow's tail, away from the barrier
+          else lab(x0 + v / 2, Y - 52, t, 'fx-lab-v');
         });
         Object.entries(st.F || {}).forEach(([k, F]) => {
           const x0 = pos[k] + Math.sign(F) * 24;
@@ -157,6 +181,7 @@ window.FX.reaction = (el, d, A) => {
         text.innerHTML = md(st.t); count.textContent = `Step ${step + 1} of ${STEPS.length}`;
         back.disabled = step === 0; next.disabled = step === STEPS.length - 1;
         bar.hidden = !st.share;
+        speedsP.innerHTML = st.speeds || ''; typeset(speedsP);
         svg.setAttribute('aria-label', `Step ${step + 1} of ${STEPS.length}: ` + plain(st.t));
         typeset(text); typeset(bar);
         if (anim) cancelAnimationFrame(anim);
@@ -184,10 +209,10 @@ window.FX.reaction = (el, d, A) => {
       let mode = d.scales_mode === 'reaction' ? 'reaction' : 'kg';
       const btns = [['kg', 'Per kilogram of fuel'], ['reaction', 'Per reaction or molecule']].map(([k, t]) => h('button', { type: 'button', class: 'fx-step', 'data-mode': k, 'aria-pressed': String(k === mode) }, t));
       const chart = h('div', { class: 'fx-sc', role: 'img' });
-      const say = h('p', { class: 'fx-sc-say', 'aria-live': 'polite' });
+      const say = h('p', { class: 'fx-sc-say', 'aria-live': 'polite', hidden: d.scales_compare === false });
       const how = h('details', { class: 'fx-rx-why' }, h('summary', {}, 'Where the numbers come from'),
         h('ul', { class: 'fx-sc-src' }, items.map((it) => h('li', {}, h('strong', {}, it.label + ': '), h('span', { html: it.how }), h('span', { class: 'fx-note fx-sc-cite' }, ' Source: ' + it.source)))));
-      root.append(h('h4', { class: 'fx-rx-h' }, 'Energy scales: chemical and nuclear fuels'),
+      root.append(...(d.scales_title === false ? [] : [h('h4', { class: 'fx-rx-h' }, 'Energy scales: chemical and nuclear fuels')]),
         h('div', { class: 'fx-steps', role: 'group', 'aria-label': 'Compare' }, btns), chart, say, how);
       const fmtE = (it) => {
         if (mode === 'kg') return `$${p3(it.per_kg_J)}\\ \\text{J/kg}$`;
@@ -212,6 +237,7 @@ window.FX.reaction = (el, d, A) => {
         say.innerHTML = mode === 'kg'
           ? `Per kilogram, D–T fusion releases about $${p3(by.dt.per_kg_J / by.methane.per_kg_J)}$ times as much energy as burning methane, and about $${g3(by.dt.per_kg_J / by.fission.per_kg_J)}$ times as much as the fission of uranium-235.`
           : `One fission ($${g3(by.fission.per_reaction_eV / 1e6)}\\ \\text{MeV}$) releases more than one D–T reaction ($${g3(by.dt.per_reaction_eV / 1e6)}\\ \\text{MeV}$), but a uranium-235 nucleus is about $${g3(mU / mF)}$ times heavier than the fuel of one fusion reaction, so per kilogram fusion wins. Both are millions of times more than a chemical reaction.`;
+        if (d.scales_compare === false) say.replaceChildren();
         typeset(chart); typeset(say);
       };
       btns.forEach((b) => b.addEventListener('click', () => { mode = b.dataset.mode; btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b))); draw(); }));

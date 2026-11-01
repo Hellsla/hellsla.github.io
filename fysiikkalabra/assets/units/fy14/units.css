@@ -170,6 +170,7 @@
 .fx-iso-info p{margin:0 0 .4rem}
 .fx-iso-notation{font-size:2rem;line-height:1.2}
 .fx-iso-name,.fx-iso-mass{font-size:var(--fs-inner)}
+.fx-iso-mass{margin:.75rem 0 0}
 .fx-iso-row .fx-move{font-size:1.3rem}
 .fx-iso-status{margin:.75rem 0 0;padding:.5rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:var(--fs-ui)}
 .fx-iso-status[data-state=ok]{border-color:var(--accent-deep)}.fx-iso-status[data-state=ok]::before{content:"✓ ";font-weight:700;color:var(--accent-deep)}
@@ -230,6 +231,8 @@
 .fx-rx-share-key{display:flex;flex-wrap:wrap;gap:.2rem 1.2rem;margin:.35rem 0 0;font-size:var(--fs-small)}
 .fx-rx-share-key>span,.fx-rx-legend>span{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap}
 .fx-rx-legend{display:flex;flex-wrap:wrap;gap:.2rem 1rem}
+.fx-rx-legend>span:first-child{white-space:normal;display:inline;max-width:100%}
+.fx-rx-speeds{margin:.4rem 0 0;min-height:1.5em}.fx-rx-speeds:empty{display:none}
 .fx-rx-why{margin-top:.75rem;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--fig-paper);padding:.2rem 1rem .6rem}
 .fx-rx-why summary{cursor:pointer;font-weight:600;font-size:var(--fs-ui);min-height:40px;display:flex;align-items:center}
 .fx-sc{display:grid;gap:.45rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--fig-paper)}
@@ -320,7 +323,7 @@
 @media (max-width:34rem){.rx-lab .rx-lab-t{display:none}.rx-lab{padding:.1rem}.rx-key{display:block}.rx-dl{font-size:.6875rem}}
 /* ITER explorer */
 .ip-mode{margin:0 0 .6rem}
-.ip-main{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.ip-main{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:.75rem}
 .ip-part{cursor:pointer;outline:none}
 .ip-part:focus-visible .ip-hl,.ip-part:hover .ip-hl{stroke:#14171e;stroke-width:3}
 .ip-svg.has-sel .ip-part:not(.sel){opacity:.42}
