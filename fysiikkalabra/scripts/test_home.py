@@ -90,7 +90,8 @@ for lang in i18n.languages():
             expect(f"{lang} {code}: one link per row, to its page", re.findall(r'<a [^>]*href="([^"]*)"', r) == [f"{code}.html"])
             n_inv = sum(1 for i in investigations.ids(lang) if (out / f"{i}.html").is_file() and code in investigations.load(i, lang)["courses"])
             n_units = sum(1 for ul, u in units.all_units() if units.load(u, ul).get("course") == code and (SITE / ("" if ul == "fi" else ul) / f"{u}.html").is_file())   # course units, built only for their own language (scripts/units.py)
-            want = T.count("site.local_investigations", n_inv) if n_inv else T.count("units.home_count", n_units) if n_units else T("site.local_status_" + local[code]["status"])
+            want = (T.count("site.local_investigations", n_inv) if n_inv else T("units.home_sessions", n=local[code]["sessions"]) if n_units and local[code].get("sessions")
+                    else T.count("units.home_count", n_units) if n_units else T("site.local_status_" + local[code]["status"]))
             expect(f"{lang} {code}: the row says what is published ('{want}'), the plan's status apart", f'<span class="mod-avail">{want}</span>' in r, r[:400])
             pg = (out / f"{code}.html").read_text() if (out / f"{code}.html").is_file() else ""
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",

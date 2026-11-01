@@ -59,6 +59,7 @@
       "Marjo Inkala"
     ],
     "language": "en",
+    "sessions": 16,
     "description": "Englanninkielinen monitieteinen opintojakso, jossa yhdistyvät fysiikka, englanti ja ranska (CLIL). Kurssi etenee modernin fysiikan synnystä ytimen energiaan, tähtien fuusioon, plasmaan, kylmän sodan fuusiokilpailuun ja kansainväliseen ITER-hankkeeseen. Koko kurssi vastaa yhteen kysymykseen: jos fuusio on ymmärretty lähes sata vuotta, miksi fuusiosähkön tuottaminen on yhä niin vaikeaa?",
     "goals": [
       "selittämään, miksi klassinen fysiikka ei riittänyt ja miten kvanttifysiikka syntyi",

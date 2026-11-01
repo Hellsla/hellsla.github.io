@@ -20,6 +20,8 @@ A course's fields (all texts in the language of the file):
   chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
                                          their units (scripts/units.py) in teaching order; a unit not yet published is
                                          named as coming; a unit with "optional": true is marked ★ (optional extra material)
+  sessions                               optional: about how many lessons the course is taught in; the front page
+                                         says "about N lessons" instead of counting the units (FY14: 16)
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
@@ -79,7 +81,9 @@ def home_row(code, c, T, investigations=0, n_units=0):
     """The front page row: the same anatomy as a national module's row, one link stretched over it. What the course
     already publishes (its investigations in this language) comes first; the plan's status is said apart from it
     (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
-    avail = (T.count("site.local_investigations", investigations) if investigations else T.count("units.home_count", n_units) if n_units
+    avail = (T.count("site.local_investigations", investigations) if investigations
+             else T("units.home_sessions", n=c["sessions"]) if n_units and c.get("sessions")   # the lessons taught, not the units written
+             else T.count("units.home_count", n_units) if n_units
              else T("site.local_status_" + c["status"]))
     status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if investigations or n_units else ""
     if c.get("language") and c["language"] != T.lang:
