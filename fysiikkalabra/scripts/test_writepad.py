@@ -82,9 +82,9 @@ with sync_playwright() as pw:
         expect(f"{page}: one '{T('js.pad_write')}' per exercise ({n_ex})", n_ex > 0 and btns.count() == n_ex, f"{btns.count()} buttons")
         expect(f"{page}: the button's text is this language's", btns.first.inner_text().strip() == T("js.pad_write"), btns.first.inner_text())
         order = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
-            const b = li.querySelector(':scope > .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution');
-            return b && (!a || (b.compareDocumentPosition(a) & 4)) && (!s || (b.compareDocumentPosition(s) & 4)); })""")
-        expect(f"{page}: the button comes after the task and before its answer and model solution", order)
+            const b = li.querySelector(':scope > .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution'), f = li.querySelector(':scope > form.check');
+            return b && [a, s, f].every(x => !x || (b.compareDocumentPosition(x) & 4)) && (!f || (b.nextElementSibling.classList.contains('pad') && (b.nextElementSibling.compareDocumentPosition(f) & 4))); })""")
+        expect(f"{page}: the button and editor come after the task and before its answer box, answer and model solution (write first, then check)", order)
         head = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
             const h = li.firstElementChild, t = h && [...h.querySelectorAll('.ex-toggle')], d = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
             return h && h.classList.contains('ex-head') && t.length === d.length && t.every((b, i) => b.getAttribute('aria-controls') === d[i].id && b.textContent === d[i].querySelector('summary').textContent)
