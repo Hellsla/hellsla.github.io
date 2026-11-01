@@ -9,13 +9,16 @@
 // textbook values (they depend on the surface). Every canvas text goes through lab(), which pushes its ink box to
 // simState.labels. simState.f is in units of 10^14 Hz (as the readout shows it), so an experiment table records
 // readable values; photonE, W and Ekmax are in eV, Us and U in V, I in nA. The retarding voltage makes the cathode the
-// positive plate (+) and the collector the negative one (−); its range 0–4.5 V can stop every electron of the model. p5.js 1.9 instance mode; texts from strings.json via __().
+// positive plate (+) and the collector the negative one (−); its range 0–4.5 V can stop every electron of the model.
+// The lamp sits above the gap and lights the inner face of the cathode, the face the electrons leave from (a surface
+// effect). Canvas text is 14 px at every width (fh = 14 · k). p5.js 1.9 instance mode; texts from strings.json via __().
 new p5((p) => {
   const H = 6.62607015e-34, E = 1.602176634e-19, C = 2.99792458e8;
   const METALS = { cs: 2.14, k: 2.29, na: 2.36, zn: 4.3 };                        // eV, typical values
   const ISAT = 20;                                                                // nA at 100 % intensity
   const CAT = 196, ANO = 430, TOP = 150, BOT = 290;                               // cathode and anode plates (x), plate ends (y)
-  const INK = [31, 41, 51], ELEC = [25, 113, 194], MUTED = [107, 116, 128];
+  const INK = [31, 41, 51], ELEC = [25, 113, 194], MUTED = [90, 98, 110];
+  const LX = 282, LY = 84, FACE = CAT + 6;                                         // the lamp's aperture; the cathode's inner face
   let slL, slI, slU, selM, selSpeed, btn, readout, lL, lI, lU;
   let running = true, photons = [], electrons = [], acc = 0, labels = [];
 
@@ -83,7 +86,7 @@ new p5((p) => {
     electrons = electrons.filter((e) => e.x < ANO - 4 && e.x > CAT + 2).slice(-160);
 
     const k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));
-    const fh = Math.round(11 * k);
+    const fh = Math.round(14 * k);
     labels = [];
     p.background(250);
     // the glass tube
@@ -91,11 +94,12 @@ new p5((p) => {
     p.noFill(); p.stroke(170, 190, 205); p.strokeWeight(2); p.rect(150, 118, 330, 205, 60);
     // lamp and beam
     const col = rgb(s.lam);
-    p.noStroke(); p.fill(60, 66, 76); p.rect(22, 40, 70, 46, 8); p.fill(...col, s.inten > 0 ? 255 : 60); p.circle(92, 63, 22);
-    if (s.inten > 0) { p.fill(...col, 30 + s.inten * 0.6); p.quad(96, 52, CAT, TOP + 6, CAT, BOT - 6, 96, 74); }
+    if (s.inten > 0) { p.noStroke(); p.fill(...col, 30 + s.inten * 0.6); p.quad(LX - 12, LY, FACE, TOP + 6, FACE, BOT - 6, LX + 12, LY); }   // the beam, from above the gap onto the inner face
+    p.noStroke(); p.fill(60, 66, 76); p.rect(LX - 34, LY - 46, 68, 40, 8); p.rect(LX - 14, LY - 10, 28, 10, 2);
+    p.fill(...col, s.inten > 0 ? 255 : 60); p.ellipse(LX, LY, 26, 10);
     photons.forEach((q) => {                                       // a short wave packet travelling to the plate
-      const dx = CAT - 96, dy = q.y - 63, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
-      const x = 96 + dx * q.t, y = 63 + dy * q.t;
+      const dx = FACE - LX, dy = q.y - LY, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+      const x = LX + dx * q.t, y = LY + dy * q.t;
       p.stroke(...col); p.strokeWeight(2); p.noFill(); p.beginShape();
       for (let u = -9; u <= 9; u += 1.5) { const w = 3.5 * Math.sin(u * 0.9); p.vertex(x + ux * u - uy * w, y + uy * u + ux * w); }
       p.endShape();
@@ -104,7 +108,7 @@ new p5((p) => {
     p.noStroke(); p.fill(150, 158, 168); p.rect(CAT - 6, TOP, 12, BOT - TOP, 2);
     p.fill(184, 98, 45); p.rect(ANO - 6, TOP, 12, BOT - TOP, 2);
     // electrons
-    p.noStroke(); p.fill(...ELEC); electrons.forEach((e) => p.circle(e.x, e.y, 6));
+    p.stroke(255); p.strokeWeight(2); p.fill(...ELEC); electrons.forEach((e) => p.circle(e.x, e.y, 11)); p.noStroke();   // larger than the photon packets, with a white ring
     // circuit: from each plate down to the battery and the ammeter
     p.stroke(...INK); p.strokeWeight(2); p.noFill();
     p.line(CAT, BOT, CAT, 360); p.line(CAT, 360, 280, 360); p.line(330, 360, 367, 360); p.line(403, 360, ANO, 360); p.line(ANO, 360, ANO, BOT);
@@ -118,7 +122,10 @@ new p5((p) => {
     lab(__('katodi'), CAT - 8, 345, 'r', fh, MUTED); lab(__('kerain'), ANO + 8, 345, 'l', fh, MUTED);   // under the tube, clear of the light beam
     lab(`$\\lambda = ${tx(s.lam, 0)}\\,\\text{nm}$` + (s.lam < 380 ? ' ' + __('uv') : ''), 22, 26, 'l', fh, INK);   // both readings on the top line, clear of the beam
     lab(`$E = hf = ${tx(s.Eph, 2)}\\,\\text{eV}$`, 578, 26, 'r', fh, INK);
-    if (s.Ek <= 0) lab(__('ei_elektroneja'), 315, 220, 'c', fh, [138, 59, 26]);
+    if (s.Ek <= 0) {                                              // on a pale box, so that electrons still in flight do not hide it
+      p.noStroke(); p.fill(250, 250, 250, 225); p.rect(316 - fh * 4.5, 214 - fh * 1.05, fh * 9, fh * 2.6, 6);
+      lab(__('ei_elektroneja'), 316, 214, 'c', fh, [138, 59, 26]); lab(__('ei_elektroneja2'), 316, 214 + fh * 1.25, 'c', fh, [138, 59, 26]);
+    }
     window.simState.labels = labels;
   };
 

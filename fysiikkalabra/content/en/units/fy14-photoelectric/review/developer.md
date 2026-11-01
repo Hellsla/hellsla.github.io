@@ -53,3 +53,44 @@ Content hash at hand-over: f66de27277e0e818 (`python3 scripts/units.py hash fy14
 - `experiment` names: `tex_name` does not treat λ as a symbol (it stays in the text font).
 - `scripts/test_inquiry.py <id>` and `scripts/check_latex.py <id>` do not know units ("no lesson folder", "0 fragments"); there is no sim test for unit sims.
 - `git status` shows `site/index.html`, `site/en/index.html`, `site/fi-easy/index.html` modified and untracked `site/*FY14*` files; I did not write them deliberately (`build.py fy14-photoelectric` reported writing to preview/), so they likely come from another thread or the build's index step.
+
+## Fixes after review (2026-11-01)
+
+Content hash after the fixes: 8a765aee3682cb12. Files: `unit.md`, `inquiry.json`, `teacher.md`, `lessons/units/fy14-photoelectric/figures.py` (figures rewritten), `assets/sims/fy14/photoelectric/sim.js`, `strings.json`.
+
+### Pedagogy
+1. (Blocking) `pred-red` replaced by `pred-stop`: "500 nm → 300 nm at the same intensity: what happens to the stopping voltage?" (the term is defined in the prompt), four options of 66–72 characters (grows / same because of intensity / falls / same because of the metal), `reveal: {"after": "exp-stop", "min": 3}`; each feedback quotes model values (0.12 V at 500 nm, 0.40 V at 450 nm, 1.78 V at 300 nm on the 0.02 V grid). The hook question became a pair discussion in Think about it (`hook-discuss` with sentence starters `hook-help`, model answer and criteria). `exp-stop` intro and `back-to-predictions` updated. Nothing before the predictions answers them (the hook, Why line and hero concern red vs violet only).
+2. `find-error`: correct option shortened to "The photon energy is in joules, but the work function is in electronvolts." (numbers moved to its feedback); the other options rewritten to 58–64 characters. Also balanced `review`, `pred-bright` and `check-1` options to within about ±30 %.
+3. `check-explain-help`: a sentence-starter box right before check 4.
+4. `theory-People` (biographies) is now `optional`; teacher.md Theory summary says biographies are optional/homework; the vocabulary lead no longer points at them.
+5. French corner tips: Finnish *y* instead of German *ü*; *un électron* = nasal *un* linked to the next word (*ẽ-ne-lek-TRÕ*); one respelling style shared with fy14-fr-bonjour (italic, stressed syllable in capitals, õ/ã/ẽ nasal, Finnish letters, not tagged `lang="fr"`), explained in the corner's text.
+6. The "delay" option is gone with `pred-red`; the sim's model box now says the model has no time axis and that real experiments show no measurable delay.
+7. teacher.md: Think about it 0–8 min with the pair discussion; a *Fast pairs* plan (find-error, experiment 1 for caesium, biographies) and a *Running out of time* plan (three rows in experiment 1, two in experiment 2, French corner and check 4 as homework).
+
+### Science
+1. Misconception: "which only the most loosely bound electrons at the surface reach".
+2. Worked example substitution shows $4.9049 \cdot 10^{-19}$ J (→ 3.062 eV; checked in Python).
+3. Stage labels **Given:**, **Principle:**, **Formula:**, **Unit conversions:**, **Substitution:**, **Answer:**, **Reasonableness:**; planck-data "**Unit conversions:**".
+4. planck-data Reasonableness: fitted line with all five rows gives $h \approx 6.60 \cdot 10^{-34}$ J·s and $W \approx 1.89$ eV (numpy polyfit: 6.600e-34, 1.890 eV).
+5. `lukemat_ei` → "$hf \le W$: no electrons leave, I = …" (also shown at hf = W, since E_k,max = 0 there).
+6. Measure labels `$U\;(\text{V})$`, `$I\;(\text{nA})$`; numeric unit `$\cdot 10^{-34}\ \text{J} \cdot \text{s}$` (renders as maths; see Shared issues).
+7. teacher.md: freshly cleaned zinc plate on a **negatively** charged electroscope (a positive one does not discharge); protect skin and eyes from the UV-C lamp.
+8. Sim `calc` box: "the text rounds it to 6.626 · 10⁻³⁴ J·s".
+
+### Visual
+1. Sim: the lamp is above the gap (aperture at (282, 84)); the beam and the photon packets end on the cathode's inner face `x = CAT + 6`, where the electrons leave.
+2. Sim labels `fh = Math.round(14 * k)`; muted label colour darker; all labels fit at 390 and 1280 (screenshots checked). The "no electrons leave the metal" note is two lines on a pale box.
+3. Experiment names `{"lambda": "wavelength λ (nm)", "intensity": "intensity (%)", "U": "voltage U (V)"}` and LaTeX measure labels with units; every column now has its unit (checked in the browser tables).
+4. Not touched (fixed in templates/inquiry.js by the coordinator).
+5. Answer step: "…energy ${E \approx 4.90 \cdot 10^{-19}\ \text{J}}$, which is ${E \approx 3.06\ \text{eV}}$. Both have three significant figures, as the wavelength has." No display splits the sentence.
+6. No `\dfrac` inline: planck-data prompt, hint and Principle use $(h/e)\,f - W/e$; its substitution is a display (`aligned`, fits 360 px); the sim calc formula is a display; check-3 feedback uses $(h/e)\,f - W/e$. Short inline equalities are wrapped in braces `${…}$` (unit.md, sim readout strings) so they no longer break after "=".
+7. Energy diagram: dashed level labelled $\text{free electron}$; labels 24 units (≈ 14 px at 390). $U_\text{s}$–$f$ graph: $f_0$ marked on the axis for sodium and zinc; the line is drawn over the points' white rings; slope label `slope = h/e`, 24 units.
+8. Sim electrons: diameter 11 with a 2 px white ring, clearly unlike the wavy photon packets; legend text updated.
+9. French tip for *un électron* fixed (see Pedagogy 5).
+
+### Checks
+`units.py check` (no errors for this unit), `build.py fy14-photoelectric`, `check_layout` 360 OK and 1280 OK, `screenshot.py` re-run and looked at (sim, figures, stages, French corner). Playwright at 390 and 1280: both predictions lock on commit with no feedback; `pred-stop` stays closed after 2 rows of exp-stop and opens at row 3; `pred-bright` opens at row 2 of exp-intensity; rows recorded 650 nm 0.00 nA, 500 nm 0.120 V, 450 nm 0.400 V, 300 nm 1.78 V (at 1.76 V the current is still 0.14 nA); 6.00 → 18.0 nA with E_k,max 0.740 eV; wrong answers to every choice show feedback; the conclusion's model stays closed before writing; readout at 530 and 650 nm shows "hf ≤ W: no electrons leave"; no console errors, no raw `$`, no `.katex-error`, no literal `*`.
+
+### Shared issues (not edited)
+- `templates/inquiry.js` reflection list: the quoted prompt joins `.scenario` and `.ask` without a space ("…from 30 % to 90 %.What happens…"); add a space (or `' '` text node) between the two spans.
+- `scripts/inquiry.py` `numeric_html`: a LaTeX `unit` renders visually, but `answer_label()` puts the raw LaTeX into the input's `aria-label`; strip `$`/TeX for the label or accept a separate plain `unit_label`.

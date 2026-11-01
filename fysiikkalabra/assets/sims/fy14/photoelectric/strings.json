@@ -14,13 +14,14 @@
     "hidas": "slow",
     "normaali": "normal",
     "nopea": "fast",
-    "selite": "Wave packets are photons, blue dots electrons.",
+    "selite": "Wavy packets are photons; blue dots with a white ring are electrons.",
     "katodi": "$\\text{cathode}$",
     "kerain": "$\\text{collector}$",
     "uv": "$(\\text{UV})$",
-    "ei_elektroneja": "$\\text{no electrons leave the metal}$",
-    "lukemat": "$f = {{f}} \\cdot 10^{14}\\,\\text{Hz}$, $E = hf = {{E}}\\,\\text{eV}$, $W = {{W}}\\,\\text{eV}$",
-    "lukemat_ek": "$E_{\\text{k,max}} = hf - W = {{ek}}\\,\\text{eV}$, <strong>$I = {{I}}\\,\\text{nA}$</strong>",
-    "lukemat_ei": "$hf < W$: $E_{\\text{k,max}}$ does not exist, <strong>$I = {{I}}\\,\\text{nA}$</strong>"
+    "ei_elektroneja": "$\\text{no electrons}$",
+    "lukemat": "${f = {{f}} \\cdot 10^{14}\\,\\text{Hz}}$, ${E = hf = {{E}}\\,\\text{eV}}$, ${W = {{W}}\\,\\text{eV}}$",
+    "lukemat_ek": "${E_{\\text{k,max}} = hf - W = {{ek}}\\,\\text{eV}}$, <strong>${I = {{I}}\\,\\text{nA}}$</strong>",
+    "lukemat_ei": "${hf \\le W}$: no electrons leave, <strong>${I = {{I}}\\,\\text{nA}}$</strong>",
+    "ei_elektroneja2": "$\\text{leave the metal}$"
   }
 }

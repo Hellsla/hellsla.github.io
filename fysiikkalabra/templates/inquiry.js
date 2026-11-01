@@ -36,7 +36,7 @@
   const typeset = (el) => { if (window.renderMathInElement) window.renderMathInElement(el, { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false }); if (window.flGlueMath) window.flGlueMath(el); };
   // an element's content without its form controls, as HTML: rendered formulas stay formulas (textContent would read
   // KaTeX's hidden MathML copy as well and repeat every formula as plain letters)
-  const asHtml = (n) => { const c = n.cloneNode(true); c.querySelectorAll('input, .feedback').forEach((x) => x.remove()); return c.innerHTML.trim(); };
+  const asHtml = (n) => { const c = n.cloneNode(true); c.querySelectorAll('input, .feedback').forEach((x) => x.remove()); c.querySelectorAll('.scenario').forEach((x) => x.after(' ')); return c.innerHTML.trim(); };
   const measured = {};              // experiment id -> number of recorded measurements
   const bus = new EventTarget();
 

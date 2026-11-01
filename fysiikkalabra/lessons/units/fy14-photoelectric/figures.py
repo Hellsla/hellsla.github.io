@@ -72,7 +72,7 @@ def energy():
             "The photon energy hf = 1.91 eV is drawn as an arrow from the electron in the metal; it ends below the dashed line "
             "of the energy needed to get out of the metal, so the electron stays. Right: violet light of 400 nm. The arrow "
             "hf = 3.10 eV reaches above the dashed line: the first 2.36 eV, the work function W, frees the electron, and the "
-            "remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have.")
+            "remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have. The dashed line is labelled free electron.")
     S, y0 = 70, 318                     # units per eV, the energy of the least tightly bound electron in the metal
     yv = y0 - W_NA * S                  # the level outside the metal
     f.line(300, 14, 300, 372, RULE, 2, "6 6")
@@ -83,8 +83,10 @@ def energy():
         f.rect(p + 14, y0, 112, 46, ALUMINIUM, INK, 2.5, 3)
         f.tex(p + 70, y0 + 23, r"\text{metal}", "middle")
         f.circle(p + 100, y0 - 1, 8, COLD, WHITE, 2)
-        f.tex(p + 140, y0 + 23, rf"W = {W_NA:.2f}\,\text{{eV}}", "start", size=22)
+        f.tex(p + 140, y0 + 23, rf"W = {W_NA:.2f}\,\text{{eV}}", "start", size=24)
         f.line(p + 14, yv, p + 288, yv, MUTED, 2, "8 6")
+        if E <= W_NA:
+            f.tex(p + 288, yv - 16, r"\text{free electron}", "end", color=MUTED)
         # W bracket
         f.path(f"M{p + 46},{n(y0)} H{p + 38} V{n(yv)} H{p + 46}", stroke=INK, w=2.5)
         f.tex(p + 32, (y0 + yv) / 2, "W", "end")
@@ -92,13 +94,13 @@ def energy():
         top = y0 - E * S
         f.block_arrow(p + 100, y0 - 10, p + 100, top, col, shaft=10, head=24, headlen=20)
         if E > W_NA:
-            f.tex(p + 120, (y0 + yv) / 2 + 14, rf"hf = {E:.2f}\,\text{{eV}}", "start", size=22)
+            f.tex(p + 120, (y0 + yv) / 2 + 14, rf"hf = {E:.2f}\,\text{{eV}}", "start", size=24)
             f.path(f"M{p + 116},{n(yv)} H{p + 124} V{n(top)} H{p + 116}", stroke=INK, w=2.5)
-            f.tex(p + 132, (yv + top) / 2 - 26, r"E_{\text{k,max}}", "start", size=22)
-            f.tex(p + 132, (yv + top) / 2 + 2, rf"= {E - W_NA:.2f}\,\text{{eV}}", "start", size=22)
+            f.tex(p + 132, (yv + top) / 2 - 26, r"E_{\text{k,max}}", "start", size=24)
+            f.tex(p + 132, (yv + top) / 2 + 2, rf"= {E - W_NA:.2f}\,\text{{eV}}", "start", size=24)
         else:
-            f.tex(p + 120, (y0 + top) / 2 + 10, rf"hf = {E:.2f}\,\text{{eV}}", "start", size=22)
-            f.tex(p + 120, top + 8, r"hf < W", "start", size=22)
+            f.tex(p + 120, (y0 + top) / 2 + 10, rf"hf = {E:.2f}\,\text{{eV}}", "start", size=24)
+            f.tex(p + 120, top + 8, r"hf < W", "start", size=24)
     return f.svg()
 
 
@@ -108,27 +110,30 @@ def usf():
             "of 10^14 Hz, from 0 to 14. Two straight, parallel lines: sodium starts on the frequency axis at its threshold "
             "frequency 5.71 · 10^14 Hz and zinc at 10.4 · 10^14 Hz. Five points on the sodium line are the wavelengths 500, 450, "
             "400, 350 and 300 nm. A triangle on the sodium line shows that the stopping voltage rises by 1.65 V when the frequency "
-            "rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals.")
+            "rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals. The threshold frequency f_0 of each metal is marked where its line meets the axis.")
     ax = Axes(f, (84, 300), (424, 58), x=(0, 14), y=(0, 3.5), xticks=[2, 4, 6, 8, 10, 12, 14], yticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5],
               xlabel=r"f\ (10^{14}\,\text{Hz})", ylabel=r"U_\text{s}\ (\text{V})",
               yfmt=lambda v: fi(v) if float(v).is_integer() else "")
     us = lambda f14, W: H_EV * f14 * 1e14 - W
     f0na, f0zn = W_NA / H_EV / 1e14, W_ZN / H_EV / 1e14
-    ax.line([(f0na, 0), (14, us(14, W_NA))], COLD, 3)
-    ax.line([(f0zn, 0), (14, us(14, W_ZN))], HEAT, 3)
-    for lam in (500, 450, 400, 350, 300):
+    for lam in (500, 450, 400, 350, 300):          # the points first, so that the line runs on top of their white rings
         fr = 2.99792458e8 / (lam * 1e-9) / 1e14
         ax.point(fr, us(fr, W_NA), COLD)
+    ax.line([(f0na, 0), (14, us(14, W_NA))], COLD, 3)
+    ax.line([(f0zn, 0), (14, us(14, W_ZN))], HEAT, 3)
+    for f0, col in ((f0na, COLD), (f0zn, HEAT)):   # the threshold frequencies on the axis
+        f.circle(ax.X(f0), ax.Y(0), 5, col, WHITE, 1.5)
+        f.tex(ax.X(f0) - 8, ax.Y(0) - 18, r"f_0", "end", color=col)
     # slope triangle between 9 and 13 · 10^14 Hz
     a, b = 9.0, 13.0
     f.line(ax.X(a), ax.Y(us(a, W_NA)), ax.X(b), ax.Y(us(a, W_NA)), INK, 2)
     f.line(ax.X(b), ax.Y(us(a, W_NA)), ax.X(b), ax.Y(us(b, W_NA)), INK, 2)
-    f.tex(ax.X(11), ax.Y(us(a, W_NA)) + 18, r"\Delta f", "middle", size=22)
-    f.tex(ax.X(b) + 8, ax.Y((us(a, W_NA) + us(b, W_NA)) / 2), r"\Delta U_\text{s}", "start", size=22)
-    f.tex(ax.X(1.2), ax.Y(3.25), r"\text{model values}", "start", color=MUTED, size=22, bg=True)
-    f.tex(ax.X(11.4), ax.Y(3.3), r"\text{sodium}", "end", color=COLD, size=22, bg=True)
-    f.tex(ax.X(13.9), ax.Y(0.55), r"\text{zinc}", "end", color=HEAT, size=22, bg=True)
-    f.tex(ax.X(1.2), ax.Y(2.6), r"\text{slope} = \dfrac{h}{e}", "start", size=22, bg=True)
+    f.tex(ax.X(11), ax.Y(us(a, W_NA)) + 18, r"\Delta f", "middle", size=24)
+    f.tex(ax.X(b) + 8, ax.Y((us(a, W_NA) + us(b, W_NA)) / 2), r"\Delta U_\text{s}", "start", size=24)
+    f.tex(ax.X(1.2), ax.Y(3.25), r"\text{model values}", "start", color=MUTED, size=24, bg=True)
+    f.tex(ax.X(11.4), ax.Y(3.3), r"\text{sodium}", "end", color=COLD, size=24, bg=True)
+    f.tex(ax.X(13.9), ax.Y(0.55), r"\text{zinc}", "end", color=HEAT, size=24, bg=True)
+    f.tex(ax.X(1.2), ax.Y(2.6), r"\text{slope} = h/e", "start", size=24, bg=True)
     return f.svg()
 
 

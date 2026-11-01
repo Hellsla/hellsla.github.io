@@ -67,41 +67,42 @@ Classical physics had no answer to these observations. A new idea was needed.
 
 ## Key idea
 
-In 1905 Albert Einstein suggested that light carries its energy in small packets. Today we call these packets **photons**. The energy of one photon depends only on the frequency $f$ of the light: $E = hf$, where $h$ is **Planck's constant**. Violet light has a higher frequency than red light, so a violet photon carries more energy than a red one.
+In 1905 Albert Einstein suggested that light carries its energy in small packets. Today we call these packets **photons**. The energy of one photon depends only on the frequency $f$ of the light: ${E = hf}$, where $h$ is **Planck's constant**. Violet light has a higher frequency than red light, so a violet photon carries more energy than a red one.
 
 When light falls on a metal, one photon gives all its energy to one electron. The electron needs a minimum energy to escape from the metal surface. This energy is called the **work function** $W$, and it is different for different metals. If $hf < W$, the electron cannot escape, and it soon loses the energy as heat in the metal. If $hf > W$, the electron can leave, and the rest of the photon's energy becomes its kinetic energy.
 
-<svg data-fig="energy" viewBox="0 0 600 384" role="img" aria-label="Energy diagram to scale for sodium, work function 2.36 eV. Left: red light of wavelength 650 nm. The photon energy hf = 1.91 eV is drawn as an arrow from the electron in the metal; it ends below the dashed line of the energy needed to get out of the metal, so the electron stays. Right: violet light of 400 nm. The arrow hf = 3.10 eV reaches above the dashed line: the first 2.36 eV, the work function W, frees the electron, and the remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have." style="max-width:100%;font-size:24px">
+<svg data-fig="energy" viewBox="0 0 600 384" role="img" aria-label="Energy diagram to scale for sodium, work function 2.36 eV. Left: red light of wavelength 650 nm. The photon energy hf = 1.91 eV is drawn as an arrow from the electron in the metal; it ends below the dashed line of the energy needed to get out of the metal, so the electron stays. Right: violet light of 400 nm. The arrow hf = 3.10 eV reaches above the dashed line: the first 2.36 eV, the work function W, frees the electron, and the remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have. The dashed line is labelled free electron." style="max-width:100%;font-size:24px">
   <line x1="300" y1="14" x2="300" y2="372" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="96" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda = 650\,\text{nm}$</div></foreignObject>
   <rect x="14" y="318" width="112" height="46" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="35" y="326.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{metal}$</div></foreignObject>
   <circle cx="100" cy="317" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="140" y="328" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = 2.36\,\text{eV}$</div></foreignObject>
+  <foreignObject x="140" y="326.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = 2.36\,\text{eV}$</div></foreignObject>
   <line x1="14" y1="153" x2="288" y2="153" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
+  <foreignObject x="130" y="122.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{free electron}$</div></foreignObject>
   <path d="M46,318 H38 V153 H46" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="12" y="221" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$W$</div></foreignObject>
   <path d="M105,308 L105,204.5 L112,204.5 L100,184.5 L88,204.5 L95,204.5 L95,308 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="120" y="248" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$hf = 1.91\,\text{eV}$</div></foreignObject>
-  <foreignObject x="120" y="179.5" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$hf < W$</div></foreignObject>
+  <foreignObject x="120" y="246.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf = 1.91\,\text{eV}$</div></foreignObject>
+  <foreignObject x="120" y="178" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf < W$</div></foreignObject>
   <foreignObject x="396" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda = 400\,\text{nm}$</div></foreignObject>
   <rect x="314" y="318" width="112" height="46" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="335" y="326.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{metal}$</div></foreignObject>
   <circle cx="400" cy="317" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="440" y="328" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = 2.36\,\text{eV}$</div></foreignObject>
+  <foreignObject x="440" y="326.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = 2.36\,\text{eV}$</div></foreignObject>
   <line x1="314" y1="153" x2="588" y2="153" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <path d="M346,318 H338 V153 H346" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="312" y="221" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$W$</div></foreignObject>
   <path d="M405,308 L405,121 L412,121 L400,101 L388,121 L395,121 L395,308 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="420" y="236.5" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$hf = 3.10\,\text{eV}$</div></foreignObject>
+  <foreignObject x="420" y="235" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf = 3.10\,\text{eV}$</div></foreignObject>
   <path d="M416,153 H424 V101 H416" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="432" y="88" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E_{\text{k,max}}$</div></foreignObject>
-  <foreignObject x="432" y="116" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$= 0.74\,\text{eV}$</div></foreignObject>
+  <foreignObject x="432" y="86.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_{\text{k,max}}$</div></foreignObject>
+  <foreignObject x="432" y="114.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$= 0.74\,\text{eV}$</div></foreignObject>
 </svg>
 
 The photon model explains every observation in the table. Brighter light means *more* photons every second, not *bigger* photons. So more electrons leave, and the current grows, but each electron still gets the energy of just one photon. One photon is absorbed at once, so there is no delay. And if one photon is too small, many photons do not help, because an electron practically never collects the energy of two photons.
 
-Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, $1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
+Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
 
 ## Formula: Einstein's photoelectric equation
 
@@ -109,18 +110,18 @@ The energy of a photon of frequency $f$ and wavelength $\lambda$ is
 ```latex
 E = hf = \frac{hc}{\lambda}
 ```
-where $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$ is Planck's constant and $c = 2.998 \cdot 10^{8}\ \text{m/s}$ is the speed of light. Energy is conserved when the photon frees an electron:
+where ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ is Planck's constant and ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$ is the speed of light. Energy is conserved when the photon frees an electron:
 ```latex
 \begin{aligned}
 hf &= W + E_{\text{k,max}} \\
 E_{\text{k,max}} &= hf - W
 \end{aligned}
 ```
-where $W$ is the work function of the metal and $E_{\text{k,max}}$ is the **largest kinetic energy** of the photoelectrons. Most electrons leave with less, because they lose some energy on their way to the surface. Electrons leave only when $hf > W$, so the threshold frequency is $f_0 = W/h$.
+where $W$ is the work function of the metal and $E_{\text{k,max}}$ is the **largest kinetic energy** of the photoelectrons. Most electrons leave with less, because they lose some energy on their way to the surface. Electrons leave only when $hf > W$, so the threshold frequency is ${f_0 = W/h}$.
 
 ### Measuring the energy with a stopping voltage
 
-In a photocell, a **retarding voltage** $U$ between the metal plate and the collector pushes the electrons back. An electron with the charge $e = 1.602 \cdot 10^{-19}\ \text{C}$ loses the energy $eU$ on its way. When $U$ is large enough, even the fastest electrons turn back and the current $I$ falls to zero. This voltage is the **stopping voltage** $U_\text{s}$:
+In a photocell, a **retarding voltage** $U$ between the metal plate and the collector pushes the electrons back. An electron with the charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$ loses the energy $eU$ on its way. When $U$ is large enough, even the fastest electrons turn back and the current $I$ falls to zero. This voltage is the **stopping voltage** $U_\text{s}$:
 ```latex
 \begin{aligned}
 eU_\text{s} &= E_{\text{k,max}} = hf - W \\
@@ -129,7 +130,7 @@ U_\text{s} &= \frac{h}{e}\,f - \frac{W}{e}
 ```
 So the stopping voltage is a straight-line function of the frequency, and the slope of the line is $h/e$. It is the same for every metal. The work function only moves the line sideways.
 
-<svg data-fig="usf" viewBox="0 0 600 360" role="img" aria-label="Graph of model values, to scale: the stopping voltage U_s in volts against the frequency f in units of 10^14 Hz, from 0 to 14. Two straight, parallel lines: sodium starts on the frequency axis at its threshold frequency 5.71 · 10^14 Hz and zinc at 10.4 · 10^14 Hz. Five points on the sodium line are the wavelengths 500, 450, 400, 350 and 300 nm. A triangle on the sodium line shows that the stopping voltage rises by 1.65 V when the frequency rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals." style="max-width:100%;font-size:24px">
+<svg data-fig="usf" viewBox="0 0 600 360" role="img" aria-label="Graph of model values, to scale: the stopping voltage U_s in volts against the frequency f in units of 10^14 Hz, from 0 to 14. Two straight, parallel lines: sodium starts on the frequency axis at its threshold frequency 5.71 · 10^14 Hz and zinc at 10.4 · 10^14 Hz. Five points on the sodium line are the wavelengths 500, 450, 400, 350 and 300 nm. A triangle on the sodium line shows that the stopping voltage rises by 1.65 V when the frequency rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals. The threshold frequency f_0 of each metal is marked where its line meets the axis." style="max-width:100%;font-size:24px">
   <line x1="132.5" y1="300" x2="132.5" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="181" y1="300" x2="181" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="229.5" y1="300" x2="229.5" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -175,21 +176,25 @@ So the stopping voltage is a straight-line function of the frequency, and the sl
   <foreignObject x="54" y="305.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="456" y="285.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$f\ (10^{14}\,\text{Hz})$</div></foreignObject>
   <foreignObject x="74" y="1.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U_\text{s}\ (\text{V})$</div></foreignObject>
-  <polyline points="222.5,300 424,63" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="336.5,300 424,197" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="229.5" cy="291.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="246" cy="272.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="266" cy="249" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="292" cy="218" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <circle cx="326.5" cy="177.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="222.5,300 424,63" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="336.5,300 424,197" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="222.5" cy="300" r="5" fill="#1971c2" stroke="#ffffff" stroke-width="1.5"/>
+  <foreignObject x="181.5" y="267.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$f_0$</div></foreignObject>
+  <circle cx="336.5" cy="300" r="5" fill="#e8590c" stroke="#ffffff" stroke-width="1.5"/>
+  <foreignObject x="295.5" y="267.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$f_0$</div></foreignObject>
   <line x1="302.5" y1="206" x2="399.5" y2="206" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="399.5" y1="206" x2="399.5" y2="91.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="335.5" y="211" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\Delta f$</div></foreignObject>
-  <foreignObject x="407.5" y="135.5" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\Delta U_\text{s}$</div></foreignObject>
-  <foreignObject x="113" y="62.5" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{model values}$</span></div></foreignObject>
-  <foreignObject x="284" y="59" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{sodium}$</span></div></foreignObject>
-  <foreignObject x="367.5" y="249" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{zinc}$</span></div></foreignObject>
-  <foreignObject x="113" y="93.5" width="88" height="53" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{slope} = \dfrac{h}{e}$</span></div></foreignObject>
+  <foreignObject x="334.5" y="209.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta f$</div></foreignObject>
+  <foreignObject x="407.5" y="134" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta U_\text{s}$</div></foreignObject>
+  <foreignObject x="113" y="61" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{model values}$</span></div></foreignObject>
+  <foreignObject x="278" y="57.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{sodium}$</span></div></foreignObject>
+  <foreignObject x="363.5" y="247.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{zinc}$</span></div></foreignObject>
+  <foreignObject x="113" y="105.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{slope} = h/e$</span></div></foreignObject>
 </svg>
 
 This gives a way to measure Planck's constant: measure $U_\text{s}$ for two or more frequencies, find the slope of the line, and multiply it by $e$:
@@ -210,7 +215,7 @@ Max Planck was a German theoretical physicist. On 14 December 1900 he presented 
 
 <!-- photo: albert-einstein -->
 
-Albert Einstein was born in Ulm, Germany. In 1905 he worked as an examiner at the Swiss patent office in Bern and did physics in his free time. In March 1905 he sent a paper to the journal *Annalen der Physik*. It proposed that light itself consists of energy quanta and predicted the law $E_{\text{k,max}} = hf - W$. In the same year he also published special relativity. His Nobel Prize in Physics for 1921, presented in 1922, was "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect".
+Albert Einstein was born in Ulm, Germany. In 1905 he worked as an examiner at the Swiss patent office in Bern and did physics in his free time. In March 1905 he sent a paper to the journal *Annalen der Physik*. It proposed that light itself consists of energy quanta and predicted the law ${E_{\text{k,max}} = hf - W}$. In the same year he also published special relativity. His Nobel Prize in Physics for 1921, presented in 1922, was "for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect".
 
 ### Robert Millikan (1868–1953)
 
@@ -224,15 +229,15 @@ A violet laser pointer gives light of wavelength $405\ \text{nm}$. The beam fall
 
 <!-- vaihe -->
 
-**Given and find.** Wavelength $\lambda = 405\ \text{nm}$, work function $W = 2.29\ \text{eV}$, Planck's constant $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$, speed of light $c = 2.998 \cdot 10^{8}\ \text{m/s}$, elementary charge $e = 1.602 \cdot 10^{-19}\ \text{C}$. We want the photon energy $E$, the largest kinetic energy $E_{\text{k,max}}$ and the stopping voltage $U_\text{s}$.
+**Given:** Wavelength ${\lambda = 405\ \text{nm}}$, work function ${W = 2.29\ \text{eV}}$, Planck's constant ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$, speed of light ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$, elementary charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$. We want to find the photon energy $E$, the largest kinetic energy $E_{\text{k,max}}$ and the stopping voltage $U_\text{s}$.
 
 <!-- vaihe -->
 
-**Principle.** One photon gives all its energy $E = hf$ to one electron, and $f = c/\lambda$. The electron uses the work function $W$ to leave the metal, and the rest is its kinetic energy (conservation of energy). The fastest electrons are stopped when the retarding voltage takes their whole kinetic energy, $eU_\text{s} = E_{\text{k,max}}$.
+**Principle:** One photon gives all its energy ${E = hf}$ to one electron, and ${f = c/\lambda}$. The electron uses the work function $W$ to leave the metal, and the rest is its kinetic energy (conservation of energy). The fastest electrons are stopped when the retarding voltage takes their whole kinetic energy, ${eU_\text{s} = E_{\text{k,max}}}$.
 
 <!-- vaihe -->
 
-**Rearranged formula.** Solved in symbols:
+**Formula:** Solved in symbols:
 ```latex
 \begin{aligned}
 E &= hf = \frac{hc}{\lambda} \\
@@ -243,11 +248,11 @@ U_\text{s} &= \frac{E_{\text{k,max}}}{e}
 
 <!-- vaihe -->
 
-**Unit conversions.** The wavelength in metres: $\lambda = 405\ \text{nm} = 405 \cdot 10^{-9}\ \text{m} = 4.05 \cdot 10^{-7}\ \text{m}$. From joules to electronvolts we divide by $1.602 \cdot 10^{-19}\ \text{J/eV}$, because $1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}$.
+**Unit conversions:** The wavelength in metres: $\lambda = 405\ \text{nm} = 405 \cdot 10^{-9}\ \text{m} = 4.05 \cdot 10^{-7}\ \text{m}$. From joules to electronvolts we divide by $1.602 \cdot 10^{-19}\ \text{J/eV}$, because ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$.
 
 <!-- vaihe -->
 
-**Substitution.** First the photon energy, then the difference:
+**Substitution:** First the photon energy, then the difference:
 ```latex
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \\
@@ -255,8 +260,8 @@ hc &= 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \\
 &= 1.9865 \cdot 10^{-25}\ \text{J} \cdot \text{m} \\[6pt]
 E &= \frac{hc}{\lambda} \\
 &= \frac{1.9865 \cdot 10^{-25}\ \text{J} \cdot \text{m}}{4.05 \cdot 10^{-7}\ \text{m}} \\
-&= 4.905 \cdot 10^{-19}\ \text{J} \\
-&= \frac{4.905 \cdot 10^{-19}\ \text{J}}{1.602 \cdot 10^{-19}\ \text{J/eV}} \\
+&= 4.9049 \cdot 10^{-19}\ \text{J} \\
+&= \frac{4.9049 \cdot 10^{-19}\ \text{J}}{1.602 \cdot 10^{-19}\ \text{J/eV}} \\
 &= 3.062\ \text{eV} \\[6pt]
 E_{\text{k,max}} &= 3.062\ \text{eV} - 2.29\ \text{eV} \\
 &= 0.772\ \text{eV} \\[6pt]
@@ -266,23 +271,23 @@ U_\text{s} &= \frac{0.772\ \text{eV}}{e} = 0.772\ \text{V}
 
 <!-- vaihe -->
 
-**Result.** One photon has the energy $E \approx 4.90 \cdot 10^{-19}\ \text{J} \approx 3.06\ \text{eV}$, three significant figures as in the wavelength. The largest kinetic energy of the electrons is $E_{\text{k,max}} \approx 0.77\ \text{eV}$, and the stopping voltage is $U_\text{s} \approx 0.77\ \text{V}$. These are given to two decimal places of an electronvolt, because the work function $2.29\ \text{eV}$ is known to two decimal places.
+**Answer:** One photon has the energy ${E \approx 4.90 \cdot 10^{-19}\ \text{J}}$, which is ${E \approx 3.06\ \text{eV}}$. Both have three significant figures, as the wavelength has. The largest kinetic energy of the electrons is $E_{\text{k,max}} \approx 0.77\ \text{eV}$, and the stopping voltage is $U_\text{s} \approx 0.77\ \text{V}$. These are given to two decimal places of an electronvolt, because the work function $2.29\ \text{eV}$ is known to two decimal places.
 
 <!-- vaihe -->
 
-**Reasonableness.** A photon of violet light should have about $3\ \text{eV}$, near the top of the visible range $1.6\text{–}3.3\ \text{eV}$, and $3.06\ \text{eV}$ fits. The photon energy is larger than the work function, so electrons really do leave: the threshold wavelength of potassium is $hc/W \approx 541\ \text{nm}$, longer than $405\ \text{nm}$. Check: $W + E_{\text{k,max}} = 2.29\ \text{eV} + 0.77\ \text{eV} = 3.06\ \text{eV} = hf$.
+**Reasonableness:** A photon of violet light should have about $3\ \text{eV}$, near the top of the visible range $1.6\text{–}3.3\ \text{eV}$, and $3.06\ \text{eV}$ fits. The photon energy is larger than the work function, so electrons really do leave: the threshold wavelength of potassium is $hc/W \approx 541\ \text{nm}$, longer than $405\ \text{nm}$. Check: $W + E_{\text{k,max}} = 2.29\ \text{eV} + 0.77\ \text{eV} = 3.06\ \text{eV} = hf$.
 
 ## Common misconception
 
 "Brighter light gives faster electrons." This is the wave-model idea, and the experiments reject it. Intensity changes the *number* of photons each second, so it changes the current. The energy of one photon, and so the largest kinetic energy of one electron, depends only on the frequency.
 
-A second mistake is to mix the units of energy. The work function is usually given in electronvolts and a photon energy from $hc/\lambda$ comes out in joules. Convert one of them before you subtract. A third mistake is to think that every electron has the energy $E_{\text{k,max}}$: it is the largest value, which only the electrons nearest the surface reach.
+A second mistake is to mix the units of energy. The work function is usually given in electronvolts and a photon energy from $hc/\lambda$ comes out in joules. Convert one of them before you subtract. A third mistake is to think that every electron has the energy $E_{\text{k,max}}$: it is the largest value, which only the most loosely bound electrons at the surface reach.
 
 ## Summary
 
-- Light is absorbed and emitted in photons, each with the energy $E = hf = hc/\lambda$.
-- One photon frees at most one electron. The electron leaves only if $hf > W$, so below the threshold frequency $f_0 = W/h$ no electrons leave, however bright the light.
-- Einstein's photoelectric equation: $E_{\text{k,max}} = hf - W$. The stopping voltage gives this energy: $eU_\text{s} = E_{\text{k,max}}$.
+- Light is absorbed and emitted in photons, each with the energy ${E = hf = hc/\lambda}$.
+- One photon frees at most one electron. The electron leaves only if $hf > W$, so below the threshold frequency ${f_0 = W/h}$ no electrons leave, however bright the light.
+- Einstein's photoelectric equation: ${E_{\text{k,max}} = hf - W}$. The stopping voltage gives this energy: ${eU_\text{s} = E_{\text{k,max}}}$.
 - Brighter light means more photons every second: a larger current, but the same $E_{\text{k,max}}$.
 - The graph of $U_\text{s}$ against $f$ is a straight line with the slope $h/e$, the same for every metal; Millikan used it in 1916 to measure Planck's constant.
 - The photoelectric effect showed that classical wave physics could not explain how light and matter exchange energy.

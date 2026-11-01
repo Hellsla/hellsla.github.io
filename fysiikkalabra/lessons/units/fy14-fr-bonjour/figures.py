@@ -16,22 +16,23 @@ def cypress(f, x, ybase, h, w):
     f.add(f'<path d="M{n(x)},{n(ybase - h)} C{n(x + w * 0.6)},{n(ybase - h * 0.7)} {n(x + w * 0.62)},{n(ybase - h * 0.2)} {n(x + w * 0.2)},{n(ybase)} H{n(x)} Z" fill="{INK}" fill-opacity="0.25"/>')
 
 
-def bubble(f, x0, y0, w, h, tail, text):
-    """A speech bubble: a rounded box with a tail ending at tail = (x, y), and the words as a LaTeX \\text{} label."""
+def bubble(f, x0, y0, w, h, tail):
+    """An empty speech bubble: a rounded box with a tail ending at tail = (x, y). The opening illustration has no text
+    (NOTES §3); three dots inside say that someone speaks without saying what."""
     tx, ty = tail
     bx = min(max(tx, x0 + 40), x0 + w - 40)
     f.path(f"M{n(x0 + 18)},{n(y0)} H{n(x0 + w - 18)} Q{n(x0 + w)},{n(y0)} {n(x0 + w)},{n(y0 + 18)} V{n(y0 + h - 18)} "
            f"Q{n(x0 + w)},{n(y0 + h)} {n(x0 + w - 18)},{n(y0 + h)} H{n(bx + 18)} L{n(tx)},{n(ty)} L{n(bx - 14)},{n(y0 + h)} "
            f"H{n(x0 + 18)} Q{n(x0)},{n(y0 + h)} {n(x0)},{n(y0 + h - 18)} V{n(y0 + 18)} Q{n(x0)},{n(y0)} {n(x0 + 18)},{n(y0)} Z", WHITE, INK, 3)
-    f.tex(x0 + w / 2, y0 + h / 2, r"\text{" + text + "}", "middle", size=32, w=w - 24)
+    for k in (-1, 0, 1):
+        f.circle(x0 + w / 2 + 34 * k, y0 + h / 2, 9, MUTED)
 
 
 def hero():
     f = H.hero("fy14frb-hero", "Illustration: a sunny morning in Provence. Behind low limestone hills and dark cypress trees "
                "stands a modern visitor centre with a glass front and a flat roof. In front of its entrance two simple figures "
-               "without faces meet: a student with a blue shirt and a backpack, and an engineer with a green shirt and a badge. "
-               "Speech bubbles show what they say: the engineer says “Bonjour ! Bienvenue !” and the student answers "
-               "“Bonjour, madame !”. In the foreground rows of lavender lead towards the building.")
+               "without faces meet: a student with a blue shirt and a backpack, and an engineer with a green shirt and a staff badge. "
+               "Two speech bubbles without words show that they greet each other. In the foreground rows of lavender lead towards the building.")
     H.sky(f, "frb", 600, ICE, GLASS)
     H.sun(f, "frb", 140, 96, 50)
     H.cloud(f, 420, 70, 0.6)
@@ -76,9 +77,9 @@ def hero():
     f.rect(592, 342, 30, 80, IRON, INK, 2, 8)          # backpack behind the student
     H.person(f, 650, 568, shirt=COLD, trousers=INK, sc=0.86)
     H.person(f, 846, 568, shirt=GOOD, trousers=IRON, sc=0.86)
-    f.rect(858, 398, 20, 26, WHITE, INK, 1.5, 2)       # the visitor badge on the engineer's shirt
-    bubble(f, 760, 54, 400, 82, (850, 262), "Bonjour ! Bienvenue !")
-    bubble(f, 250, 138, 360, 82, (630, 262), "Bonjour, madame !")
+    f.rect(858, 398, 20, 26, WHITE, INK, 1.5, 2)       # the staff badge on the engineer's shirt
+    bubble(f, 820, 70, 220, 82, (850, 262))
+    bubble(f, 470, 138, 220, 82, (630, 262))
     return f.svg()
 
 

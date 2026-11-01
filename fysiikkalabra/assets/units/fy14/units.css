@@ -369,3 +369,4 @@
 .unit table:not(.exp-table) td,.unit table:not(.exp-table) th{white-space:normal}
 /* French is never hyphenated automatically: beginners learn these words' spelling from the page */
 [lang|="fr"]{hyphens:manual;-webkit-hyphens:manual}
+.unit .intro-media>p{margin-top:.9rem}

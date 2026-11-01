@@ -13,17 +13,20 @@ visitor needs a passport or national ID card (iter.org, *Visiting ITER*, checked
 ## Timing (75 minutes)
 
 - **0–8 min, Think about it.** Read the hook together. Pairs discuss greetings in Finnish and collect the French they already know; collect a class list on the board.
-- **8–13 min, Predict.** Both predictions individually; prediction 2 stays closed until the theory section is read.
-- **13–25 min, Investigate: listen.** Go through the phrase table together: you say each phrase, the class repeats in chorus, then pairs listen and repeat. Pick out the silent letters.
-- **25–37 min, Investigate: dialogue.** Pairs read the ITER dialogue (step 1), practise it (step 2), swap roles and perform from the cues (step 3).
-- **37–42 min, Investigate: order.** Pairs order the evening conversation and answer *What did you notice?*
-- **42–50 min, Theory summary.** Read *Tu or vous?* and the sound tips; drill the four sounds in chorus; look at the summary table.
-- **50–57 min, Apply.** Gap fill and matching, individually; partners compare.
-- **57–70 min, Role-play.** Two rounds in pairs (see below), two or three pairs perform for the class.
-- **70–75 min, Check.** The three checks and the short written introduction (may be finished as homework).
+- **8–12 min, Predict.** Both predictions individually (the evening greeting at the hotel, asking the engineer's name); their feedback stays closed until the section *Tu or vous?* has been read.
+- **12–21 min, Investigate: listen.** Go through the phrase table together: you say each phrase once, the class repeats in chorus, then pairs listen once at normal speed and repeat (skip the second, slow listening). Pick out the silent letters.
+- **21–33 min, Investigate: dialogue.** Pairs read the ITER dialogue (step 1), practise it (step 2), swap roles and perform from the cues (step 3).
+- **33–38 min, Investigate: order.** Pairs order the evening conversation and answer *What did you notice?*
+- **38–46 min, Theory summary.** Read *Tu or vous?* and the sound tips; drill the four sounds in chorus; look at the summary table; back to the predictions, with a one- or two-sentence answer to the Why question.
+- **46–53 min, Apply.** Gap fill and matching, individually; partners compare.
+- **53–65 min, Role-play.** Two rounds in pairs (see below), two or three pairs perform for the class.
+- **65–75 min, Check.** The three checks individually (about 5 minutes); start the short written introduction (check 4) and finish it as homework.
 
 Fast pairs: the optional extension (introducing a classmate with *<span lang="fr">il</span>* / *<span lang="fr">elle</span>*), then introduce their partner to
 another pair.
+
+Running out of time: let only two pairs perform the role-play, do the gap fill in class and the matching as homework,
+and give the written introduction (check 4) as homework. Do not cut the three checks or the pronunciation drill.
 
 ## Pairs and organisation
 
@@ -53,7 +56,7 @@ Peer assessment with the same criteria works well when a pair performs for anoth
 
 ## Common difficulties
 
-- Pronouncing every letter (*<span lang="fr">vus</span>*, *<span lang="fr">finlandais</span>* with a clear *s*); the *u* of *<span lang="fr">salut</span>* said as a Finnish *u*.
+- Pronouncing every letter (*vus* for <span lang="fr">vous</span>, <span lang="fr">finlandais</span> with a clear *s*); the *u* of *<span lang="fr">salut</span>* said as a Finnish *u*.
 - *<span lang="fr">Salut</span>* to adults, or *<span lang="fr">tu</span>* with everyone because it is shorter. Remind students: when in doubt, *<span lang="fr">vous</span>*.
 - *<span lang="fr">Je suis Finlande</span>* instead of *<span lang="fr">Je viens de Finlande</span>* / *<span lang="fr">Je suis finlandais(e)</span>*; the feminine nationality forgotten.
 - *<span lang="fr">Et tu ?</span>* instead of *<span lang="fr">Et toi ?</span>*
