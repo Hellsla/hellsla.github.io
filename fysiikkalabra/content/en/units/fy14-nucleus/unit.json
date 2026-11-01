@@ -18,5 +18,8 @@
   {"title": "Deuterium (Wikipedia): about 1 in 6420 hydrogen atoms (0.0156 %), discovered by Harold Urey in 1931", "url": "https://en.wikipedia.org/wiki/Deuterium", "checked": "2026-11-01"},
   {"title": "NUBASE2020 and AME2020 (IAEA Atomic Mass Data Center): stability, half-lives (tritium 12.3 a, carbon-14 5700 a) and masses in the Isotope Builder's data file", "url": "https://www-nds.iaea.org/amdc/", "checked": "2026-11-01"},
   {"title": "CODATA 2018 recommended values (NIST): proton, neutron and electron masses, e, u", "url": "https://physics.nist.gov/cuu/Constants/ArchiveASCII/allascii_2018.txt", "checked": "2026-11-01"}
+ ],
+ "media": [
+  {"file": "units/fy14/pics/chadwick.jpg", "title": "James Chadwick with Manhattan Project leaders", "creator": "United States Army Signal Corps", "source": "https://commons.wikimedia.org/wiki/File:James_Chadwick%2C_Leslie_Groves%2C_Richard_Tolman%2C_%26_Henry_deWolf_Smyth.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
  ]
 }

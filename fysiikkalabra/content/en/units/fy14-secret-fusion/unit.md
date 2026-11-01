@@ -336,7 +336,7 @@ In 1951 **Lyman Spitzer**, a Princeton astronomer, read about Richter's claim an
 
 ## ZETA: a headline and a correction {ZETA}
 
-<!-- photo: zeta-harwell -->
+<figure class="unit-photo"><img src="units/fy14/pics/zeta.jpg" alt="Colour photograph from above of the ZETA machine, a large ring of metal coils, with technicians working on it in a tall hall." width="1600" height="1242" loading="lazy"><figcaption>ZETA at Harwell, UK, photographed from above in 1957. It was the largest fusion experiment of its time, a ring-shaped pinch device. <span class="photo-credit">Photo: UKAEA (unknown photographer), public domain, via Wikimedia Commons</span></figcaption></figure>
 
 The largest fusion machine of the 1950s was **ZETA**, a ring-shaped pinch at Harwell in England. It started in August 1957, and within weeks it produced about a million neutrons in each pulse of deuterium plasma. Neutrons are made when two deuterium nuclei fuse, so many people hoped that ZETA had reached fusion. At a press conference on 24 January 1958, John Cockcroft, the director of Harwell, said he was "90 percent certain" that the neutrons came from fusion. Newspapers called it a breakthrough.
 
@@ -425,19 +425,19 @@ A second mistake is to think that **neutrons prove fusion in a hot plasma**. A f
 
 ### Ronald Richter (1909–1991)
 
-<!-- photo: ronald-richter -->
+<figure class="unit-photo"><img src="units/fy14/pics/richter.jpg" alt="Black-and-white photograph of Ronald Richter standing next to Argentine president Juan Perón." width="1024" height="576" loading="lazy"><figcaption>Ronald Richter (left) with Argentine president Juan Perón. In 1951 Perón announced that Richter had produced controlled fusion; the claim turned out to be false. <span class="photo-credit">Photo: Unknown author, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Ronald Richter was born in Falkenau in Bohemia, then part of Austria-Hungary, and studied at the German University of Prague. After the Second World War he came to Argentina and won the trust of President Perón, who gave him an island laboratory and a huge budget. His 1951 claim of controlled fusion was false: inspectors found temperatures far too low. Richter matters to this story because his claim pushed other countries into fusion research, and because it shows why a result must be checked by others.
 
 ### Lyman Spitzer (1914–1997)
 
-<!-- photo: lyman-spitzer -->
+<figure class="unit-photo"><img src="units/fy14/pics/spitzer.jpg" alt="Colour photograph of Lyman Spitzer in a suit, sitting at a desk with an open book." width="1260" height="1600" loading="lazy"><figcaption>Lyman Spitzer (1914–1997) invented the stellarator in 1951 and founded what became the Princeton Plasma Physics Laboratory. <span class="photo-credit">Photo: NASA APPEL Knowledge Services, public domain, via Wikimedia Commons</span></figcaption></figure>
 
 Lyman Spitzer was an American astronomer at Princeton University who studied the thin gas between the stars. In 1951, after reading about Richter's claim, he invented the stellarator and led the secret Project Matterhorn, which became the Princeton Plasma Physics Laboratory. He also argued for telescopes in space long before the Hubble Space Telescope was launched. Spitzer matters because he brought careful plasma physics into fusion research and started one of the two main machine designs still studied today.
 
 ### Andrei Sakharov (1921–1989)
 
-<!-- photo: andrei-sakharov -->
+<figure class="unit-photo"><img src="units/fy14/pics/sakharov.jpg" alt="Photograph of Andrei Sakharov, an elderly bald man with glasses, at an airport in 1989." width="850" height="1062" loading="lazy"><figcaption>Andrei Sakharov (1921–1989) developed the tokamak idea with Igor Tamm. He later became a famous human-rights campaigner and won the Nobel Peace Prize in 1975. <span class="photo-credit">Photo: Anefo / Croes, R.C., CC0, via Wikimedia Commons</span></figcaption></figure>
 
 Andrei Sakharov was a Soviet physicist who helped to design the Soviet hydrogen bomb. In 1950, with his teacher Igor Tamm, he proposed holding a hot plasma in a ring-shaped magnetic field, the idea behind the tokamak. Later he turned against nuclear testing and became a defender of human rights; he received the Nobel Peace Prize in 1975 and was sent into internal exile in 1980. Sakharov matters because his life shows how closely weapons research, peaceful fusion and personal conscience were linked.
 

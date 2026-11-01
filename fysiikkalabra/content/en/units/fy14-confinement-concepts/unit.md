@@ -224,6 +224,8 @@ Pinches compress plasma well but hold it badly. A Z-pinch column is unstable: it
 
 At the **National Ignition Facility (NIF)** in California, 192 laser beams shine into a centimetre-sized gold cylinder, the **hohlraum**. Its hot walls fill it with X-rays, which boil off the outer layer of a peppercorn-sized capsule. Like a rocket, this drives the rest of the capsule inward.
 
+<figure class="unit-photo"><img src="units/fy14/pics/nif.jpg" alt="Colour photograph of a worker inside the huge spherical target chamber of the National Ignition Facility." width="1600" height="1065" loading="lazy"><figcaption>Inside the target chamber of the National Ignition Facility in California. In December 2022 its 192 lasers achieved fusion ignition for the first time. <span class="photo-credit">Photo: Lawrence Livermore National Security, CC BY-SA 3.0, via Wikimedia Commons</span></figcaption></figure>
+
 On **5 December 2022** NIF's lasers delivered $2.05\ \text{MJ}$ to a target, and the target released $3.15\ \text{MJ}$ of fusion energy. For the first time, a fusion experiment released more energy than the laser energy delivered to its target: the **target gain** was about $1.5$. By mid-2026 NIF had reached ignition eleven times in all, with target gains up to about $4$.
 
 <svg data-fig="energy" viewBox="0 0 600 270" role="img" aria-label="Horizontal bar chart to scale, in megajoules, for NIF&#x27;s shot of 5 December 2022. Electricity drawn from the grid to fire the lasers: about 300 MJ, a bar across almost the whole width. Laser energy delivered to the target: 2.05 MJ, a sliver less than one percent as long. Fusion energy released: 3.15 MJ, a slightly longer sliver. The target gain is 3.15 MJ divided by 2.05 MJ, about 1.5." style="max-width:100%;font-size:24px">

@@ -102,5 +102,9 @@
    "checked": "2026-11-01",
    "note": "$e = 1.602176634 \\cdot 10^{-19}\\ \\text{C}$ (exact), $1\\ \\text{u} = 1.66053906660 \\cdot 10^{-27}\\ \\text{kg}$; the deuterium atom has the mass $2.014101778\\ \\text{u}$ (AME 2020), so $m = 3.344 \\cdot 10^{-27}\\ \\text{kg}$."
   }
+ ],
+ "media": [
+  {"file": "units/fy14/pics/jet-exterior.jpg", "title": "The JET experiment in 1991", "creator": "EFDA JET", "source": "https://commons.wikimedia.org/wiki/File:The_JET_magnetic_fusion_experiment_in_1991.jpg", "licence": "CC BY-SA 3.0", "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"},
+  {"file": "units/fy14/pics/t15-stamp.jpg", "title": "1987 Soviet stamp showing the T-15 tokamak", "creator": "Scanned and processed by Mariluna", "source": "https://commons.wikimedia.org/wiki/File:1987_CPA_5891.jpg", "licence": "Public domain", "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/"}
  ]
 }

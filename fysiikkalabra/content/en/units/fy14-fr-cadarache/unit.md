@@ -110,6 +110,8 @@ On 28 June 2005, in Moscow, the ITER partners chose Cadarache instead of Rokkash
 was signed in Paris on 21 November 2006. Today seven members (China, the European Union, India, Japan, Korea, Russia
 and the United States) work together there. As of November 2026, the start of research operation is planned for 2034.
 
+<figure class="unit-photo"><img src="units/fy14/pics/iter-site-aerial-2.jpg" alt="Colour photograph of the ITER buildings in a hilly, wooded Provence landscape." width="1600" height="1067" loading="lazy"><figcaption>The ITER buildings seen from a distance in 2022, near the CEA Cadarache research centre. <span class="photo-credit">Photo: Johannes Reimer, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
+
 ## Cadarache, ITER and Provence
 
 Cadarache and ITER are in the commune of **Saint-Paul-lez-Durance**, in the department of Bouches-du-Rhône, in the

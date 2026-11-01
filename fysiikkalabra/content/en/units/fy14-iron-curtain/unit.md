@@ -142,6 +142,8 @@ Fusion research had been open since the Geneva conference of 1958, but it was st
 
 > At the third IAEA conference on plasma physics and controlled fusion research, held in Novosibirsk in Siberia, **Lev Artsimovich**, the head of the Soviet fusion programme, presented results from the **T-3 tokamak** at the Kurchatov Institute in Moscow. T-3 had reached an electron temperature of about $1\ \text{keV}$, roughly ten million degrees, and it held its energy for more than $10\ \text{ms}$. This was many times better than the Bohm rate and about ten times better than any other machine in the world. The temperature was not measured directly: it was calculated from the magnetic properties of the plasma.
 
+<figure class="unit-photo"><img src="units/fy14/pics/artsimovich.jpg" alt="Black-and-white photograph of Lev Artsimovich pointing at a large experimental machine full of pipes and cables while visitors in suits look on." width="1600" height="1199" loading="lazy"><figcaption>Lev Artsimovich (1909–1973) led Soviet tokamak research. Photographed at the Kurchatov Institute in 1967. <span class="photo-credit">Photo: В. Савостьянов, Е. Кассин, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
+
 ## Source B: Why the West doubted {Source B}
 
 *Type: a summary of the scientific objections, based on histories of the tokamak.*
