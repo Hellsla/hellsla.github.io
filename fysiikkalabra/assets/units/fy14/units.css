@@ -151,7 +151,7 @@
 .fx-lab{text-shadow:0 0 2px var(--fig-paper),0 0 2px var(--fig-paper),0 0 3px var(--fig-paper),0 0 4px var(--fig-paper)}   /* a halo: a label stays readable over a point or a line */
 .fx-lab-start{transform:translate(0,-50%)}
 .fx-lab-end{transform:translate(-100%,-50%)}
-.fx-lab.fx-lab-abs{transform:none}
+.fx-lab.fx-lab-abs{transform:none;background:rgba(255,253,248,.92);border-radius:3px;padding:1px 2px;box-shadow:0 0 0 1px rgba(201,194,178,.6)}   /* a point label is a small card over the points it may cover */
 .fx-lab-muted{color:var(--fig-muted)}
 .fx-lab-strong{font-weight:700}
 .fx-lab-v{color:#1971c2}.fx-lab-f{color:#c92a2a}.fx-lab-fus{color:#1a4d2e}.fx-lab-fis{color:#7048e8}

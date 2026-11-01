@@ -114,7 +114,7 @@ window.FX.binding = (el, d, A) => {
         from.forEach((a) => to.forEach((b) => gl.append(arrow(xs(a.A), ys(a.be_per_A_MeV), xs(b.A), ys(b.be_per_A_MeV), col, R.kind === 'fission' ? '8 5' : null))));
       }
       if (view === 'all' && !R) {   // the two general directions, under the curve
-        gl.append(arrow(xs(8), ys(4.6), xs(46), ys(7.7), '#1a4d2e')); lab(xs(30), ys(5.2), '$\\text{fusion}$', 'fx-lab-fus');
+        gl.append(arrow(xs(8), ys(4.6), xs(46), ys(7.7), '#1a4d2e')); lab(xs(22), ys(4.5), '$\\text{fusion}$', 'fx-lab-start fx-lab-fus');
         gl.append(arrow(xs(240), ys(6.6), xs(150), ys(7.6), '#7048e8', '8 5')); lab(xs(205), ys(6.45), '$\\text{fission}$', 'fx-lab-fis');
       }
       const shown = pts.filter((x) => x.A >= V.a0 && x.A <= V.a1);
@@ -145,17 +145,16 @@ window.FX.binding = (el, d, A) => {
       const pr = labs.getBoundingClientRect(), k = pr.width / W;
       if (!k) return;
       const rel = (e) => { const r = e.getBoundingClientRect(); return [(r.left - pr.left) / k, (r.top - pr.top) / k, (r.right - pr.left) / k, (r.bottom - pr.top) / k]; };
-      const obst = [...labs.children].map(rel);
-      shown.forEach((x) => { const cx = xs(x.A), cy = ys(x.be_per_A_MeV), r = x.id === sel ? 13 : 7; obst.push([cx - r, cy - r, cx + r, cy + r]); });
+      const obst = [...labs.children].map(rel), pobst = [];   // labels (never overlap) and every data point (avoid)
+      shown.forEach((x) => { const cx = xs(x.A), cy = ys(x.be_per_A_MeV), r = x.id === sel ? 13 : 7; pobst.push([cx - r, cy - r, cx + r, cy + r]); });
       const must = new Set([sel, ...(R ? [...R.before, ...R.after] : []), ...hl].filter(Boolean));
       const prio = [sel, ...(R ? [...R.before, ...R.after] : []), ...hl, ...(view === 'light' ? LIGHT : [])].filter((id, i, a) => id && a.indexOf(id) === i && labelled.has(id));
-      const area = (b) => obst.reduce((t, o) => t + Math.max(0, Math.min(b[2], o[2]) - Math.max(b[0], o[0])) * Math.max(0, Math.min(b[3], o[3]) - Math.max(b[1], o[1])), 0);
-      const free = (b) => area(b) < 3;
-      const inside = (b) => b[0] >= X0 + 2 && b[2] <= W - 2 && b[1] >= 2 && b[3] <= Y1 - 2;
+      const ov = (list, b) => list.reduce((t, o) => t + Math.max(0, Math.min(b[2], o[2]) - Math.max(b[0], o[0])) * Math.max(0, Math.min(b[3], o[3]) - Math.max(b[1], o[1])), 0);
+      const inside = (b) => b[0] >= X0 - 4 && b[2] <= W - 2 && b[1] >= 2 && b[3] <= Y1 - 2;
       prio.map((id) => shown.find((x) => x.id === id)).filter(Boolean).forEach((x) => {
         const span = h('span', { class: 'fx-lab fx-lab-abs', html: tex(x) });
         labs.append(span); typeset(span);
-        const m = rel(span), w = m[2] - m[0] + 3, hh = m[3] - m[1] - 2 / k;
+        const m = rel(span), w = m[2] - m[0] + 1, hh = m[3] - m[1];
         const cx = xs(x.A), cy = ys(x.be_per_A_MeV), g = x.id === sel ? 14 : 8;
         const lower = shown.some((o) => o.A === x.A && o.be_per_A_MeV > x.be_per_A_MeV);
         const ring = (r) => {
@@ -163,11 +162,16 @@ window.FX.binding = (el, d, A) => {
           const up = [[cx + q, cy - q - hh], [cx - w / 2, cy - r - hh], [cx - q - w, cy - q - hh]], mid = [[cx + r, cy - hh / 2], [cx - r - w, cy - hh / 2]], down = [[cx + q, cy + q], [cx - w / 2, cy + r], [cx - q - w, cy + q]];
           return lower ? [...down, ...mid, ...up] : [...up, ...mid, ...down];
         };
-        const cands = [g, g + 10, g + 22, g + 36, g + 54].flatMap(ring).map(([x0, y0]) => [x0, y0, x0 + w, y0 + hh]).filter(inside);
-        let best = cands.find(free);
-        if (!best && must.has(x.id) && cands.length) best = cands.reduce((a, b) => (area(b) < area(a) ? b : a));
+        // close to the point first; a little farther (with a leader line) only if that place is free; a label that must be
+        // shown and finds no free place stays right beside its own point, drawn over the points with a halo
+        const box = ([x0, y0]) => [x0, y0, x0 + w, y0 + hh];
+        const clampX = ([x0, y0]) => [Math.max(X0 + 2, Math.min(W - 2 - w, x0)), y0];
+        const near = [g, g + 8].flatMap(ring).flatMap((c) => [c, clampX(c)]).map(box).filter(inside), far = [g + 20].flatMap(ring).map(box).filter(inside);
+        const clean = (b) => ov(obst, b) < 1 && ov(pobst, b) < 3;
+        let best = near.find(clean) || far.find(clean);
+        if (!best && must.has(x.id)) best = near.filter((b) => ov(obst, b) < 1).sort((a, b) => ov(pobst, a) - ov(pobst, b))[0] || near.concat(far).sort((a, b) => ov(obst, a) - ov(obst, b))[0];
         if (!best) { span.remove(); return; }
-        span.style.left = ((best[0] + 1.5) / W) * 100 + '%'; span.style.top = ((best[1] - 1 / k) / H) * 100 + '%';
+        span.style.left = (best[0] / W) * 100 + '%'; span.style.top = (best[1] / H) * 100 + '%';
         // a thin leader line when the label had to move away from its point
         const nx = Math.max(best[0], Math.min(cx, best[2])), ny = Math.max(best[1], Math.min(cy, best[3])), dist = Math.hypot(nx - cx, ny - cy);
         if (dist > g + 6) svg.append(S('line', { x1: f(cx + ((nx - cx) / dist) * (g - 2), 1), y1: f(cy + ((ny - cy) / dist) * (g - 2), 1), x2: f(nx, 1), y2: f(ny, 1), stroke: '#6b7480', 'stroke-width': 1 }));
