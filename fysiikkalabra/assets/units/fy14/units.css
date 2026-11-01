@@ -389,3 +389,4 @@
 .unit th{text-align:left}
 .fx-tl-more>summary::before{content:none;display:none}
 .unit p.source{border-radius:var(--inner-radius)}
+details.opt.fold{border-style:solid;border-color:var(--accent-deep)}details.opt.fold .opt-tag{background:var(--accent-deep);color:#fff}

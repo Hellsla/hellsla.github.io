@@ -1,5 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 32f7650573683cf9
+CONTENT-HASH: b0acda37ffbeec0d
+
+Update 2026-11-01 for two later commits:
+- **4ec672e4:** only the y position of the current label changed in sim.js (its baseline is capped inside the canvas). The physics and the readout values are unchanged.
+- **ba143d0c:** unit.md and teacher.md now say that the Fotoni photocell station uses LEDs of different colours, which agrees with the fy14-fotoni unit. The planck-data task still uses mercury lines as an invented example, without claiming that Fotoni uses them. Its numbers are unchanged.
+
+Both changes are correct, and the verdict stays PASS.
 
 Science re-review of fy14-photoelectric, 2026-11-01 (updated for the Planck sentence: the law was presented on 19 Oct 1900 and its derivation with energy elements on 14 Dec 1900, both to the German Physical Society; correct). It covers the fixes after review, the new `pred-stop`, `hook-discuss`, the rewritten options and the sim changes.
 

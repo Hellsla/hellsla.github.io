@@ -596,7 +596,7 @@ def render(folder, inquiry, parts, md):
         if a.get("optional") or a.get("fold"):         # a closed box, named, that a student may open or leave; "fold": a
             name = esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2")
             tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional")
-            return (f'<details class="opt" data-type="{t}"><summary><span class="opt-tag">{tag}</span> {name}</summary>'
+            return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary><span class="opt-tag">{tag}</span> {name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""
         return f'<div class="activity act-{t}{card}" id="{esc(aid)}" data-type="{t}">{head}{content}{hints}</div>'

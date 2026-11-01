@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c5fef9077a48f7ca
+CONTENT-HASH: c14fd77f3c588c7d
 
 Pedagogy re-review of fy14-magnetic-confinement (2026-11-01), after "Fixes after review" (commit cf5a329b) and the simulation fix (commit 7561f2b5). Rebuilt. Playwright at 390 px:
 - exp-mirror records 10° and 20° as *escapes*, 40° and 80° as *trapped*;
@@ -27,3 +27,4 @@ None.
 - teacher.md has plans for fast pairs and for running out of time.
 
 Hash update (2026-11-01): the only change since this review is the placement of the canvas label cards in `assets/sims/fy14/magnetic/sim.js` (commit 3735b0fa). It is layout only and does not change the pedagogy.
+Hash update (2026-11-01): commit 4ec672e4 changes only label and card placement in the simulation canvas (labels stay clear of the cards). The physics and the readout are unchanged, and there is no pedagogical effect.

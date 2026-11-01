@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c5fef9077a48f7ca
+CONTENT-HASH: c14fd77f3c588c7d
 
-Re-review of commit cf5a329b and of the simulation commits 7561f2b5 and 3735b0fa (the latter only moves canvas label cards; physics unchanged). The previous Polish 1–3 are fixed: the alpha task shows $mv^2/2 = 1.67 \cdot 10^{-15}\ \text{J} \approx 10\ \text{keV}$, the sim model says the fastest speed is 3.3 % of c, and the howto names the sideways drift with $\overline{E}$.
+Re-review of commit cf5a329b and of the simulation commits 7561f2b5, 3735b0fa and 4ec672e4 (the last two only place canvas label cards and the $\overline{B}$ tag; physics unchanged). The previous Polish 1–3 are fixed: the alpha task shows $mv^2/2 = 1.67 \cdot 10^{-15}\ \text{J} \approx 10\ \text{keV}$, the sim model says the fastest speed is 3.3 % of c, and the howto names the sideways drift with $\overline{E}$.
 
 ## Blocking
 None.

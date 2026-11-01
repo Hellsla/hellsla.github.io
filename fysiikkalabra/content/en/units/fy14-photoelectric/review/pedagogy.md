@@ -1,5 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 32f7650573683cf9
+CONTENT-HASH: b0acda37ffbeec0d
+
+Delta check (2026-11-01) of two later commits, neither of which changes the pedagogy, so the verdict stands:
+- 4ec672e4 only moves the sim's $I$ readout so that it stays inside the canvas on phones.
+- ba143d0c says that the Fotoni photocell station uses LEDs: in unit.md, in teacher.md, and by dropping "like the measurement at Fotoni" from the mercury-lamp example data.
 
 Pedagogy re-review of fy14-photoelectric (2026-11-01), after the "Fixes after review" in review/developer.md. Page rebuilt with `python3 scripts/build.py fy14-photoelectric` and tested in Playwright at 390 px.
 

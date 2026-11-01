@@ -1,27 +1,33 @@
-VERDICT: FAIL
-CONTENT-HASH: 50ba844bc762df91
+VERDICT: PASS
+CONTENT-HASH: 28edfef6c272a14b
+
+Re-review after commit ba3f91b8 (fix log in `review/developer.md`). I judged the full diff of `unit.md`, `inquiry.json`, `teacher.md` and `figures.py` against the previous report.
 
 ## Blocking
 
-1. **B, the fusion link (causality, consistency).** `unit.md`, *Key idea*, 2nd paragraph: "A charged particle in a magnetic field moves on a circle, just like your electron beam, and a tokamak uses this…". A circle only happens when the velocity is perpendicular to B. The course (`fy14-magnetic-confinement`) teaches a helix that slides *along* field lines, and confinement works because the field lines close inside the torus. Fix: "A charged particle circles around a magnetic field line and slides along it. Your electron beam shows the circling part. A tokamak bends the field lines into closed loops inside the vessel, so the hot plasma stays away from the walls."
-2. **B, half range called the uncertainty of the mean (guardrail "Half the range").** `unit.md` *Planning*: "use the mean and take half of the range … as Δx"; `inquiry.json` `vocabulary` ("A simple estimate of Δx") and `check-3` correct feedback. Fix: "…take half of the range as a simple estimate of how much single readings spread, and use it as Δx. It is not the uncertainty of the mean." In `check-3`, keep the option but write "16 is half the range of the single counts. For random counts the spread is typically about √N ≈ 20, which fits."
-3. **A, definition of uncertainty.** `unit.md` *Common misconception*: "The uncertainty tells how much the result could change if you repeated the measurement." This covers only random error. It contradicts *Planning* ("how far the true value may be") and the systematic LED-bandwidth error that the worked example and `report-write` list. Fix: "The uncertainty estimates how far the true value may be from the result. Part of it shows as scatter when you repeat the measurement. Systematic errors do not, and repeating does not reduce them."
+None. The three previous blocking findings are fixed:
+
+1. The Key idea now says a particle circles around a field line and slides along it. The beam shows the circling part because it moves perpendicular to the field, and a tokamak bends the field lines into closed loops. This matches `fy14-magnetic-confinement` (the helix).
+2. Half range is now described as the spread of single readings, Δx of one reading, "not the uncertainty of the mean, which is smaller". *Planning*, the `vocabulary` feedback, the `check-3` feedback and the worksheet md say the same. Check-3 still has exactly one correct option, and its feedback is right (16 compared with √N ≈ 20 for a single count).
+3. The *Common misconception* uncertainty now estimates how far the true value may be. Scatter shows part of it; systematic errors (the LED band) do not, and repeating does not reduce them. This is consistent with *Planning*, the worked example and `report-write`.
 
 ## Polish
 
-4. `unit.md` *Evidence*, "Spectra and oil drops", and `stations-match`: "always in whole steps of e" is presented as what the qualitative station shows. Write "…has gained or lost charge. Millikan's measurements showed that it changes in whole steps of e."
-5. `pred-photons`, last option feedback: "one photon frees one electron" should be "a photon can free one electron" (quantum efficiency < 1).
+None open. The oil-drop sentence (Evidence and `stations-match`) now credits Millikan's measurements for the steps of e. The photomultiplier feedback now says "a photon can free one electron".
 
 ## Checked
 
-- **Numbers.** I recomputed every number with CODATA constants. LED frequencies 4.797…7.402·10¹⁴ Hz. Fit k = 3.9644·10⁻¹⁵ V·s, b = −1.341 V, h = 6.351·10⁻³⁴ J·s. k_max = 4.192 and k_min = 3.885 (·10⁻¹⁵ V·s), Δh = 0.246·10⁻³⁴, giving (6.4 ± 0.3)·10⁻³⁴ J·s, −4.15 % (shown as −4.2 %).
-- **e/m task.** B = 1.1689 mT, e/m = 1.741·10¹¹ C/kg (−1.0 %). The two mistakes give 0.435 and 0.871. r at 1.5 A and 200 V is 4.08 cm, inside Fotoni's range. Helmholtz formula correct.
-- **Other numbers.** Δy = 0.758 mm. Wien: 4140 K and 784 nm. Counts: mean 405, half range 16, √N = 20.1. A 1 mm error in r changes r² by ≈ 5 %.
-- **Fotoni instructions (WebFetch, 2026-11-01).** LEDs on a vacuum tube, no mercury lamp. The red-LED intensity steps match Prediction 1. The intercept is far from the points. The hot-filament temperature comes from the electrical power, and the sweep reaches 5000 nm, so the infrared peak claim is safe.
-- **ITER.** iter.org confirms spectroscopic diagnostics from visible to X-ray, measuring impurity species and ion temperature.
-- **Assessment.** Every prediction and check has exactly one correct option, and every distractor's feedback is right. The e/m figure's directions are consistent: for the electron, F = −e v×B points to the centre.
-- **Length.** 150 minutes (two 75-minute lessons around the visit) is acceptable for a lab-visit unit. Both lesson plans add up to 75 minutes, and the evidence and key idea come to 438 words.
+- **Numbers.** Unchanged by the diff, and I recomputed them again with CODATA constants:
+  - fit: k = 3.9644·10⁻¹⁵ V·s, h = 6.351·10⁻³⁴ J·s, Δh = 0.246·10⁻³⁴, (6.4 ± 0.3)·10⁻³⁴ J·s, −4.15 %;
+  - e/m: B = 1.1689 mT, e/m = 1.741·10¹¹ C/kg, mistakes 0.435 and 0.871;
+  - Δy = 0.758 mm; Wien 4140 K and 784 nm; counts 405, 16 and 20.1.
+- **e/m figure.** Only the ⊙ markers and the B label moved. B still points out of the page, v and F are unchanged, and F = −e v×B still points to the centre.
+- **New text.** The new e/m observation rows (coil current up, then U up) match r = mv/(eB) and the Evidence section. The new oil-drop research question fits the qualitative station.
+- **Reveals.** The predictions now open only when the Lesson 2 fold is opened. The physics of the predictions and their feedback is unchanged and correct.
+- **Report order.** The `report-order` analysis item ("an uncertainty of about five percent") is consistent with 0.3/6.4 ≈ 5 %.
+- **Facts.** Fotoni facts (LED photocell, hot-filament method) and the ITER spectroscopy claim were verified on 2026-11-01, in the first review.
+- **Length.** 150 minutes, two 75-minute lessons around the visit, is acceptable for a lab-visit unit.
 
 ## Shared issues
 
-None found in the science. The developer's shared issue 4 (pilot `fy14-photoelectric` says "mercury lamp" at Fotoni) is confirmed wrong by Fotoni's instruction.
+None new. Still open from the developer report: the pilot `fy14-photoelectric` says Fotoni uses a mercury lamp, but Fotoni's instruction uses LEDs.

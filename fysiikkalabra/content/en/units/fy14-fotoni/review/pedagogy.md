@@ -1,20 +1,37 @@
-VERDICT: FAIL
-CONTENT-HASH: 50ba844bc762df91
+VERDICT: PASS
+CONTENT-HASH: 28edfef6c272a14b
 
-Pedagogy review of fy14-fotoni (2026-11-01). Page rebuilt and tested in Playwright at 390 px, the print layout checked as A4 PDF.
+Pedagogy re-review of fy14-fotoni (2026-11-01) after commit ba3f91b8 ("Fixes after review" in review/developer.md). I rebuilt the page and tested it in Playwright at 390 and 1280 px.
 
-## Blocking
-1. `unit.md` {Evidence} / `inquiry.json` `theory-main`: the visit's results and all four prediction feedbacks open **before the visit**. The section *After the visit: what the stations show* follows the worksheet directly on the same scrolling page. In Playwright, scrolling about 300 px past the last worksheet table (`record-help`) brought `theory-main` on screen and revealed `pred-current`, `pred-radius`, `pred-photons` and `pred-peak`. Students do this in lesson 1 (60–75 min, worksheet open) or on their laptops at Fotoni. Their own measurement is then no longer the evidence. Fix: put Evidence + Key idea in a closed fold ("After the visit: open in lesson 2"), like the Predict fold, so that the reveal fires only when the fold is opened. Do not rely on teacher.md's "students should not open the second half".
+## Earlier findings: all resolved
+1. Old Blocking 1 is resolved: the results no longer open before the visit.
+   - `theory-main` (Evidence and Key idea) is now inside a closed box, *Lesson 2: after visit*.
+   - With the box closed and its heading on screen, none of the four committed predictions shows feedback, and the results text is hidden.
+   - After a reload the predictions stay locked and their feedback stays closed.
+   - Opening the box reveals each prediction's own feedback.
+   - Each prediction now says where its feedback opens: "…with the box 'Lesson 2: after visit' in the Theory summary, after the Fotoni visit."
+2. Lesson 2 now fits in 75 minutes:
+   - `em-task` is optional and listed under fast pairs;
+   - Apply has 25 minutes;
+   - the French corner is "if time allows" and is in the running-out-of-time plan.
+3. Printing: teacher.md now sends the teacher to `docs/fy14/fotoni-worksheet.md`, exported as PDF. The page section is for screens and laptops.
+4. Lesson 1, 20–40 min, now includes the required double-slit video and the recommended photoelectric video (or the latter as homework).
+5. The e/m worksheet has observation rows for prediction 2 ("U kept the same, coil current up") and for its control case, on the page and in the md file.
+6. `report-order` no longer labels the parts. The prompt points students to tense and content as clues.
 
-## Polish
-2. `teacher.md`, lesson 2 workload: in 15–35 min students do the formula, a 7-step worked example, a spreadsheet fit with Δh **and** `em-task`, and in 65–75 min three checks, an argue task, the summary and the French corner. That is about 1,260 words of reading and four writing tasks. Make `em-task` optional or a fast-pairs task, give Apply 25 min, and move the French corner to the "running out of time" list.
-3. `teacher.md` "Printing the worksheet": printing "the pages that contain it" from the page also prints the planning task and the start of the Evidence section. On A4 the worksheet runs over pages 10–14, "Group" and "Oil drops" are cut from their tables, and the cells are content-width. Make `docs/fy14/fotoni-worksheet.md` (or a PDF of it, linked from teacher.md) the primary route.
-4. `teacher.md` lesson 1: Fotoni requires the double-slit video (7:25) and recommends the photoelectric one (5:30). Neither is in the timings. Put them in 20–40 min or set them as homework.
-5. Worksheet, e/m station: prediction 2 has no observation prompt. Add the row "U kept the same, coil current increased → what happened to r?", in the same form as the photoelectric observation table.
-6. `report-order`: each sentence starts with its part name (*Aim:*, *Method:* …), so the task is a copy of the list just read. Remove the labels, so that students sort by content and tense.
+## Polish (not blocking)
+1. `templates/lesson.js` opens every `<details>` on `beforeprint`, so the *Lesson 2: after visit* box opens if someone prints the page in lesson 1. The printed copy then shows the results. teacher.md already advises against printing the page. A shared fix would be to skip `details[data-type=theory]` folds of this kind on `beforeprint`.
+2. The box *Lesson 2: after visit* uses the same tag style as "Optional" boxes. A student could take the after-visit summary as optional. A distinct style, or a lead line "Required in lesson 2", would help.
 
 ## Checked
-The split is clear: lesson 1, the visit and lesson 2 are each mapped to page sections. Predictions lock on commit with no feedback, and each option has its own feedback. All six explain models stay closed until the student writes a sentence. Both numerics give their mistake feedback. The steps of the worked example open one at a time. Option lengths are within ±30 %. Every writing task has sentence starters. No console errors, no raw `$`, 360 px layout OK.
+- The split is clear for the teacher. Lesson 1, the visit and lesson 2 each map to named page sections, with timings, a plan for fast pairs and a plan for running out of time.
+- Predictions lock on commit.
+- The model answer of every explain task stays closed until the student writes a sentence.
+- Plain choices give per-option feedback.
+- The numerics give their mistake feedback.
+- The worked example opens step by step.
+- check_layout reports OK at 360 and 1280 px.
+- No console errors, no raw `$`, no `.katex-error`.
 
 ## Shared issues
-- `templates/inquiry.js`: the pending text "Feedback appears when you have read the theory section" misleads in a lab unit. Allow a per-prediction pending text (here: "…after the visit, in *Theory summary*").
+- `templates/lesson.js` `beforeprint`: see Polish 1.
