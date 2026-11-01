@@ -134,7 +134,7 @@
 
 In 1968 the world was divided by the **Iron Curtain**, the border between the Soviet Union and its allies in the East and the countries of Western Europe and North America. Travel across it was difficult, and scientists in nuclear research were watched by security services on both sides. In August 1968, Warsaw Pact armies invaded Czechoslovakia to end the reforms of the *Prague Spring*.
 
-Fusion research had been open since the Geneva conference of 1958, but it was stuck. Most machines lost their plasma much faster than theory predicted, at a rate known as **Bohm diffusion**. If that rate was a law of nature, a fusion reactor would be impossible. The five sources below follow what happened next. They are short texts written for this course from the documents named under *Sources and verification*; words in quotation marks are the original words.
+Fusion research had been open since the Geneva conference of 1958, but it was stuck. Most machines lost their plasma much faster than theory predicted, at a rate known as **Bohm diffusion**. If that rate was a law of nature, a fusion reactor would be impossible. The five sources below follow what happened next. They are short texts written for this course from historical documents; words in quotation marks are the original words.
 
 ## Source A: Novosibirsk, August 1968 {Source A}
 

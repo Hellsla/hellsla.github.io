@@ -68,6 +68,7 @@
       "erottamaan todennetut tutkimustulokset ennusteista ja kaupallisista lupauksista",
       "keskustelemaan ja kirjoittamaan tieteestä englanniksi ja selviytymään arkitilanteista ranskaksi"
     ],
+    "overview": "Opintojaksossa on noin 16 opetuskertaa: 8 fysiikan, 5 ranskan ja 3 projektikertaa. Fotoni-laboratoriovierailu on näiden kertojen lisäksi. ★ merkitsee valinnaista lisämateriaalia, jota ei tarvita opintojakson suorittamiseen.",
     "chapters": [
       {
         "title": "The Birth of Modern Physics",
@@ -83,11 +84,13 @@
           },
           {
             "id": "fy14-atom-models",
-            "title": "From Rutherford's nucleus to Bohr's atom"
+            "title": "From Rutherford's nucleus to Bohr's atom",
+            "optional": true
           },
           {
             "id": "fy14-quantum-tunnelling",
-            "title": "Waves, probability and quantum tunnelling"
+            "title": "Waves, probability and quantum tunnelling",
+            "optional": true
           }
         ]
       },
@@ -147,11 +150,13 @@
           },
           {
             "id": "fy14-big-machines",
-            "title": "Big machines and world politics: 1970s to 1985"
+            "title": "Big machines and world politics: 1970s to 1985",
+            "optional": true
           },
           {
             "id": "fy14-fusion-timeline",
-            "title": "Fusion history: an interactive timeline"
+            "title": "Fusion history: an interactive timeline",
+            "optional": true
           }
         ]
       },
@@ -161,7 +166,8 @@
         "units": [
           {
             "id": "fy14-confinement-concepts",
-            "title": "Pinches, lasers and other paths to fusion"
+            "title": "Pinches, lasers and other paths to fusion",
+            "optional": true
           },
           {
             "id": "fy14-tokamak-stellarator",
@@ -183,11 +189,13 @@
           },
           {
             "id": "fy14-iter-video",
-            "title": "Inside the largest fusion reactor: a video investigation"
+            "title": "Inside the largest fusion reactor: a video investigation",
+            "optional": true
           },
           {
             "id": "fy14-iter-media",
-            "title": "ITER: promise, progress and reality"
+            "title": "ITER: promise, progress and reality",
+            "optional": true
           }
         ]
       },
@@ -201,11 +209,13 @@
           },
           {
             "id": "fy14-fusion-debate",
-            "title": "Debate: should governments invest more in fusion?"
+            "title": "Debate: should governments invest more in fusion?",
+            "optional": true
           },
           {
             "id": "fy14-global-fusion-explorer",
-            "title": "Global Fusion Explorer"
+            "title": "Global Fusion Explorer",
+            "optional": true
           }
         ]
       },
