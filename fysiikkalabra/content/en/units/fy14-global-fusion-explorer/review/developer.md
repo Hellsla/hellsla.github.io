@@ -35,3 +35,9 @@ facilities.json and map.js changed (retired machines with real end years, unknow
 
 New shared issue:
 7. **facilities.json, country_then for TEXTOR and W7-AS**: with `country_then` dropped, the 1985 list shows ASDEX as "West Germany (today Germany)" but TEXTOR (Jülich, also West Germany in 1985) as plain "Germany", so students may count two countries. The unit counts 6 and teacher.md explains it. A per-period label (or a note "West Germany until 1990") would make the list consistent.
+
+## Science and pedagogy review fixes (2026-11-01), hash 3259381ff4df8e48
+- Blocking 1: Summary now says the large programmes of the US, USSR and UK were secret until 1958 and that the explorer shows machines only in these three countries before 1970 (no claim that research was limited to them).
+- Blocking 2: check-write model, its starter, prompt and criterion say "Before 1970" instead of "During the Cold War"; learning goal says "the early Cold War years".
+- Polish: Story notes the selection leaves out West Germany's first Wendelstein stellarators (1960); find-error feedback mentions them too; find-error options shortened to 43–49 characters; teacher.md TEXTOR line now matches the data ("West Germany until 1990"). Shared issue 7 above is resolved by the data.
+- Rechecked: units.py check, build, check_layout 360/1280, screenshots, Playwright (only OSM tile requests fail).

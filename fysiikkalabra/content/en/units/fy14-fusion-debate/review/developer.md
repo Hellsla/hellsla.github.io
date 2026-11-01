@@ -28,3 +28,7 @@ None in the components used (match, video, say).
 - Pedagogy: the two predictions are new (pred-public: public share of private fusion funding, card E; pred-origin: CFS as a university spin-off, card I) instead of repeating the society unit; debate steps now total 21 minutes (open floor 5 min); chair script in the starters and teacher.md; rebuttal and closing-speaker help lines; video task starters; card C feedback "mainly for".
 - Visual: role labels in the starters bold with `<strong>`; shorter rebuttal option.
 - Rechecked: units.py check, build, check_layout 360/1280 OK, screenshots, Playwright (predictions lock and reveal after the cards, 7 choices, models after writing, no console/katex errors).
+
+## Second-round polish (2026-11-01), hash 2953f276a281a98f
+- Chair script in teacher.md reads the motion word for word ("…invest more public money in fusion research").
+- check-1 distractor: "ITER's cost estimates grew from 5.9 to 18–22 billion euros"; its feedback notes that the later figure includes operation.

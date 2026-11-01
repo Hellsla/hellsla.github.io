@@ -24,9 +24,9 @@
 
 ## Common difficulties
 - Reading a ten-year count as a fact: Model A disappears after 1963 only because no end year is known. Ask: *"What does the note in the panel say, and how sure is that year?"*
-- Country names in 1985: ASDEX shows *West Germany (today Germany)*, but TEXTOR (also in West Germany then) shows only *Germany*. Both count as one country, West Germany, in 1985.
+- Country names in 1985: ASDEX shows *West Germany (today Germany)* and TEXTOR *West Germany until 1990 (today Germany)*. Both count as one country, West Germany, in 1985; the country filter uses today's *Germany*.
 - Today's country names: T-1 appears as *Soviet Union (today Russia)*, and the country filter uses *Russia*.
-- Reading an empty region as "no research": the explorer is a selection (for example, Germany's IPP was founded in 1960, but its first machine in the explorer starts in 1973).
+- Reading an empty region as "no research": the explorer is a selection (for example, West Germany's IPP was founded in 1960 and ran its first Wendelstein stellarators from 1960, but its first machine in the explorer starts in 1973).
 - On a phone, the facility panel opens below the map and can be partly hidden under the stage navigation bar: scroll a little.
 
 ## Extension ideas

@@ -281,8 +281,8 @@
      "feedback": "This uses a measured result with a date (card A) and draws a modest conclusion from it. It is not the weakest."
     },
     {
-     "text": "\"ITER's cost rose from $5.9$ to $18\\text{–}22$ billion euros, a warning sign.\"",
-     "feedback": "This uses a documented fact (card F) and gives a reason. Whether it is a *warning* is debatable, but it is evidence-based."
+     "text": "\"ITER's cost estimates grew from $5.9$ to $18\\text{–}22$ billion euros, a warning sign.\"",
+     "feedback": "This uses documented estimates (card F) and gives a reason. Whether it is a *warning* is debatable, but it is evidence-based. (Card F notes that the later figure also includes operation.)"
     },
     {
      "text": "\"Renewables gave $33.8\\ \\%$ of electricity in 2025, so they work now.\"",

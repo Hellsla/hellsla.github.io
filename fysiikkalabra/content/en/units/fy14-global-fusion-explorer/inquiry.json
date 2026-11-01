@@ -2,7 +2,7 @@
  "version": 1,
  "contribution": "The course's world map: students use the Global Fusion Explorer (63 facilities, year, status, country and type filters) to compare the Cold-War geography of fusion research with today's networks, read the data critically (selection, unknown end years, today's country names) and connect the map with the course timeline.",
  "learn": [
-  "compare the geography of fusion research during the Cold War with today's network, using a data map.",
+  "compare the geography of fusion machines in the early Cold War years with today's network, using a data map.",
   "explain how declassification, verification and cost turned competition into collaboration.",
   "evaluate the limits of a facility map: selection, unknown years and company-reported results."
  ],
@@ -222,20 +222,20 @@
    "prompt": "A student sets the year slider to 1965 and writes: *\"In 1965 only three countries in the world did fusion research: the list shows only American, British and Soviet machines.\"* What is wrong with this conclusion?",
    "choices": [
     {
-     "text": "The explorer is a selection: other countries had fusion labs without listed machines.",
+     "text": "The explorer is a selection, not every lab.",
      "correct": true,
-     "feedback": "Right. For example, Germany's Max Planck Institute for Plasma Physics (IPP) was founded in 1960, but its first machine in the explorer, Pulsator, starts only in 1973. A short list in a selection is not proof that nobody else did research."
+     "feedback": "Right. For example, Germany's Max Planck Institute for Plasma Physics (IPP) was founded in 1960, and its first Wendelstein stellarators ran from 1960, but its first machine in the explorer, Pulsator, starts only in 1973. A short list in a selection is not proof that nobody else did research."
     },
     {
-     "text": "Nothing: other countries began fusion research only after the T-3 measurement of 1969.",
+     "text": "Nothing: others began only after T-3 in 1969.",
      "feedback": "Some did start tokamaks after 1969, but research had begun earlier: Germany's IPP was founded in 1960. The explorer is a selection of important machines, so it cannot show every lab."
     },
     {
-     "text": "The slider shows only machines built in exactly 1965.",
+     "text": "The slider shows only machines built in 1965.",
      "feedback": "The slider shows machines *operating* in that year, not only those built then. The real problem is that the explorer is a selection."
     },
     {
-     "text": "The year filter hides every machine whose end year is unknown.",
+     "text": "The filter hides machines with unknown end years.",
      "feedback": "It does not hide them: it counts them for ten years after their start, so T-3 and Scylla I are in the 1965 list. The real problem is that the explorer is a selection."
     }
    ]
@@ -330,17 +330,17 @@
    "id": "check-write-help",
    "stage": "tarkista",
    "type": "text",
-   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>During the Cold War, fusion machines stood only in …</li><li>Today, the map shows …</li><li>The change happened because …</li><li>However, the data has limits: …</li><li>Competition has not disappeared: …</li></ul></div>"
+   "text": "<div class=\"wordbank\"><h4>Sentence starters</h4><ul><li>Before 1970, fusion machines in the explorer stood only in …</li><li>Today, the map shows …</li><li>The change happened because …</li><li>However, the data has limits: …</li><li>Competition has not disappeared: …</li></ul></div>"
   },
   {
    "id": "check-write",
    "stage": "tarkista",
    "type": "explain",
    "title": "4. Write: from competition to collaboration",
-   "prompt": "Write a paragraph of 100–140 words. Compare the geography of fusion research during the Cold War with today's network. Use at least two pieces of evidence from the explorer (counts, facilities or panels) and one event from the timeline, explain why the change happened, and name one limit of the data.",
-   "model": "During the Cold War, fusion machines in the explorer stood only in the United States, the United Kingdom and the Soviet Union, and until 1958 their research was secret. Today, operating facilities stand in 12 countries on three continents, and the largest machine, ITER, is built by seven members. The change happened because the 1958 Geneva conference made the field open, because surprising results such as T-3's needed independent checks, and because machines became too expensive for one country: JET (1978) and ITER (agreement in 2006) were shared. Machines even crossed borders, like Germany's ASDEX, which became HL-2A in China. However, the data has limits: it is a selection, and for old machines with unknown end years, such as T-3, the year filter can only guess. Competition has not disappeared: countries and companies still race for records.",
+   "prompt": "Write a paragraph of 100–140 words. Compare the geography of fusion machines before 1970 with today's network. Use at least two pieces of evidence from the explorer (counts, facilities or panels) and one event from the timeline, explain why the change happened, and name one limit of the data.",
+   "model": "Before 1970, fusion machines in the explorer stood only in the United States, the United Kingdom and the Soviet Union, and until 1958 their large programmes were secret. Today, operating facilities stand in 12 countries on three continents, and the largest machine, ITER, is built by seven members. The change happened because the 1958 Geneva conference made the field open, because surprising results such as T-3's needed independent checks, and because machines became too expensive for one country: JET (1978) and ITER (agreement in 2006) were shared. Machines even crossed borders, like Germany's ASDEX, which became HL-2A in China. However, the data has limits: it is a selection, and for old machines with unknown end years, such as T-3, the year filter can only guess. Competition has not disappeared: countries and companies still race for records.",
    "criteria": [
-    "The answer describes the Cold War geography (few countries, secrecy) and today's network with evidence from the explorer.",
+    "The answer describes the geography before 1970 (few countries, secrecy until 1958) and today's network with evidence from the explorer.",
     "The answer uses at least one dated event (1958, 1969, 1978, 1985 or 2006).",
     "The answer explains at least one reason for the change.",
     "The answer names a limitation of the data.",

@@ -168,7 +168,7 @@ Read the data critically:
 
 ## From competition to collaboration {Story}
 
-In the early 1950s, fusion research was **secret**. The United States, the Soviet Union and the United Kingdom each hoped that controlled fusion would give them an advantage, and each worked alone. In September 1958, at the second United Nations conference on the peaceful uses of atomic energy in Geneva, the three countries **declassified** their fusion research. They found that all of them had the same unstable, leaky plasmas. In the explorer's data, the machines that started before 1970 stand in exactly these three countries; in 1958 the year filter shows six of them.
+In the early 1950s, fusion research was **secret**. The United States, the Soviet Union and the United Kingdom each hoped that controlled fusion would give them an advantage, and each worked alone. In September 1958, at the second United Nations conference on the peaceful uses of atomic energy in Geneva, the three countries **declassified** their fusion research. They found that all of them had the same unstable, leaky plasmas. In the explorer's data, the machines that started before 1970 stand in exactly these three countries (the selection leaves out, for example, West Germany's first Wendelstein stellarators of 1960); in 1958 the year filter shows six of them.
 
 Openness made **independent verification** possible. In 1968 Soviet scientists reported that their T-3 tokamak reached about ten million degrees. In 1969 a British team from Culham took a laser to Moscow and confirmed the result, and laboratories all over the world started building tokamaks: in the explorer, France's TFR and West Germany's Pulsator both started in 1973. In 1978 European countries set up the **JET Joint Undertaking** to build one shared machine at Culham.
 
@@ -186,7 +186,7 @@ The geography of fusion research changed from a few **rival** nuclear powers wor
 
 ## Summary
 
-- Until 1958 fusion research was secret and limited to the United States, the Soviet Union and the United Kingdom; the 1958 Geneva conference made it open.
+- Until 1958 the large fusion programmes of the United States, the Soviet Union and the United Kingdom were secret; the 1958 Geneva conference made them open. Before 1970 the explorer shows machines only in these three countries.
 - Independent verification (the British measurement of T-3 in 1969) and expensive machines pushed countries to work together: JET (1978), the Geneva summit (1985), the ITER Agreement (2006).
 - In 2026 the explorer's operating facilities stand in 12 countries on three continents; private companies have added new sites.
 - A data map is a selection: check unknown end years, today's and historical country names, and who reported a result.

@@ -14,7 +14,7 @@
 
 **Running out of time.** Drop the open floor to 3 minutes and the rebuttals to 90 seconds; keep the fact-check report, which is where the physics is assessed. The final position paragraph can be homework. If the class has only one lesson, skip the video entirely.
 
-**Chair's script.** *"The motion is: public money should be spent on fusion research. Please vote now."* — *"I call the first speaker for the motion. You have two minutes."* — *"Thank you. Time is up; please finish your sentence."* — *"The floor is open. Please raise your hand; questions must name a card."* — *"I call the fact-checkers to report."* — *"Please vote again. Did anyone change their mind, and which card did it?"* The same phrases are on the page as sentence starters.
+**Chair's script.** *"The motion is: This house believes that governments should invest more public money in fusion research. Please vote now."* — *"I call the first speaker for the motion. You have two minutes."* — *"Thank you. Time is up; please finish your sentence."* — *"The floor is open. Please raise your hand; questions must name a card."* — *"I call the fact-checkers to report."* — *"Please vote again. Did anyone change their mind, and which card did it?"* The same phrases are on the page as sentence starters.
 
 ## Organisation and preparation
 - Print the nine evidence cards (or let teams use one device for the cards and another for notes). A timer visible to all (phone or projector).
