@@ -1,7 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d996ffa7f72afcaa
+CONTENT-HASH: 3259381ff4df8e48
 
 First pedagogy review of fy14-global-fusion-explorer (2026-11-01). The page was built with `python3 scripts/build.py fy14-global-fusion-explorer`, served on port 8775 and tested in Playwright at 390 and 1280 px. The map tiles are blocked in this sandbox (the only console errors are failed tile requests), so I tested the list, the filters, the panels and the hash links. The map canvas could not be judged.
+
+Delta check after commit f3c5f463:
+- The Summary now says that the *programmes* were secret until 1958, and that the explorer shows machines in only three countries before 1970.
+- `check-write` now says "Before 1970" in its prompt, sentence starter, model answer (136 words) and criterion. The learning goal says "early Cold War years".
+- The Story and the `find-error` feedback note West Germany's first Wendelstein stellarators of 1960. This makes the selection point concrete without answering `find-error` before it is asked: the Story is the theory summary before Apply.
+- Polish 2 and 3 below are resolved: the `find-error` options are 43–49 characters, and the TEXTOR note in `teacher.md` matches the data.
+
+The page was rebuilt and tested again in Playwright: the predictions lock and reveal at *Story*, and the model answers stay closed until the student writes. There are no KaTeX errors and no horizontal scroll at 390 px.
 
 ## Blocking
 None.
@@ -10,8 +18,8 @@ None.
 1. Workload of the writing tasks. The unit has a findings paragraph, a 60–90-word museum label and a 100–140-word final paragraph. The findings task and `check-write` ask for nearly the same content: counts for two years, machines that cross borders, and one limitation. The findings model is also 146 words for "four or five sentences".
    - Cut `findings` to "three sentences from your table" and shorten its model to match.
    - Or turn `check-write` into a transfer, for example: "Explain to a minister why Finland works through EUROfusion instead of building its own machine, using the explorer."
-2. `find-error`, option lengths: the options are 85, 86, 53 and 62 characters. The two long options differ by more than 30 % from the short ones, so a student can narrow the choice by length. The correct option is not the longest. Shorten the two long ones, for example to "The explorer is a selection, not every lab." and "Nothing: others began only after T-3 in 1969."
-3. `teacher.md`, *Common difficulties*: it says that TEXTOR shows only "Germany" in 1985. The list now shows "West Germany until 1990 (today Germany)". Update the note, or delete it.
+2. ~~`find-error` option lengths~~: done in f3c5f463.
+3. ~~`teacher.md` TEXTOR note~~: done in f3c5f463.
 4. `pred-cold`: students who did *Science across the Iron Curtain* know the three secret programmes. The question asks about the explorer's data, so it remains a fair prediction. A note "(in the explorer's selection)" in the options' feedback is already there.
 
 ## Checked

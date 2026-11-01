@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 82acc2ba7765614a
+CONTENT-HASH: 2953f276a281a98f
 
 Pedagogy re-review of fy14-fusion-debate (2026-11-01) after commit 04ac2449. The page was rebuilt, served on port 8775 and tested in Playwright at 390 px.
 
@@ -22,12 +22,19 @@ Polish 2–9 are resolved:
 - the opposition model has 123 words;
 - the video task has sentence starters.
 
+Delta check after commit f3c5f463:
+- the chair's script now reads the motion word for word;
+- the `check-1` distractor now says "cost estimates grew", and its feedback notes the different scope;
+- Polish 2 below is done.
+
+The page was rebuilt and tested again in Playwright: the predictions lock and reveal, and the model answers stay closed until the student writes.
+
 ## Blocking
 None.
 
 ## Polish
 1. `check-2` (64 against 63) and `check-3` (61 against 60): the correct option is still the longest, by one character. This is harmless. Elsewhere there is no length pattern.
-2. `check-1`, the distractor "ITER's cost rose from 5.9 to 18–22 billion euros": card F now says that these two figures have different scopes, construction against construction and operation. Write "ITER's estimates grew from 5.9 to 18–22 billion euros" so that the check does not teach the comparison the card warns against. This is a matter for the science review.
+2. ~~`check-1` distractor scope~~: done in f3c5f463.
 
 ## Checked
 - 75 minutes, roles, timing, the phrase bank with a match and starters for every speech and for the chair, the fact-checkers' script, and four 0–3 criteria shown on the page; the opinion is not graded.
