@@ -406,6 +406,8 @@ def build_units(lang, out, unit_pub):
                 for q in exit_q) + "</ol></div>")
         md = lambda t: nbsp_units(render_md(t))
         body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": "", "exit": exit_html}, md)
+        for key in ("check_practice", "further_practice"):   # a unit has no exercises section: point to the theory summary only
+            body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
         tail = units.tail_html(uid, lang, T, md)
         if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
         cdir = ROOT / "assets" / "units" / code.lower()
