@@ -1,4 +1,4 @@
-"""Headless check of every built simulation. Usage: python scripts/test_sims.py [lesson-id]
+"""Headless check of every built simulation. Usage: python scripts/test_sims.py [page-id ...]
 
 A sim passes when the page loads with no console errors, window.simState exists after 1.5 s, every assertion in
 tests/sims/<id>.json holds (|expr - expected| <= tol * max(1, |expected|); "setup" is JS run before the expression;
@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
 import i18n
-only = sys.argv[1] if len(sys.argv) > 1 else None
+only = set(sys.argv[1:])   # none: every page; CI on a pull request passes the pages scripts/ci_scope.py names
 OUT = ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # preview/ holds drafts + --all
 WIDTHS = (360, 390, 1280)
 MAX_STATES = 120            # per width; beyond this sliders use min/max only
@@ -106,7 +106,7 @@ with sync_playwright() as pw:
     b = launch(pw)
     for page_file in sorted(OUT.glob("*.html")) + [f for lang in i18n.languages()[1:] for f in sorted((OUT / lang).glob("*.html"))]:   # site/<lang>/ too
         lid = page_file.stem
-        if only and lid != only: continue
+        if only and lid not in only: continue
         if 'id="sim-root"' not in page_file.read_text(): continue   # a lesson page with a simulation, wherever its sim.js lives
         page = b.new_page(viewport={"width": 1280, "height": 900})   # fresh page: no leftover listeners
         errors = []

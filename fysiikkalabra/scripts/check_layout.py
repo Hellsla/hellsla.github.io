@@ -1,4 +1,4 @@
-r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [lesson-id] [--width 360] [--site]
+r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [page-id ...] [--width 360] [--site]
 
 Opens each page in preview/ (or site/) at a viewport (360 by default; CI runs 360, 390, 768, 1024, 1280, 1440 and
 1920, and 640 for a 1280 px window at 200 % zoom) and checks it in three states, because a page that is fine closed
@@ -32,7 +32,7 @@ import i18n
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 width = int(sys.argv[sys.argv.index("--width") + 1]) if "--width" in sys.argv else 360
 args = [a for a in args if a != str(width)]
-only = args[0] if args else None
+only = set(args)   # none: every page; CI on a pull request passes the pages scripts/ci_scope.py names
 OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 JS = """() => {
@@ -159,7 +159,7 @@ with sync_playwright() as pw:
     b = launch(pw)
     for page_file in sorted(OUT.glob("*.html")) + [f for lang in i18n.languages()[1:] for f in sorted((OUT / lang).glob("*.html"))]:   # site/<lang>/ too
         lid = page_file.stem
-        if only and lid != only: continue
+        if only and lid not in only: continue
         if lid == "index" or "-" not in lid: continue
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
