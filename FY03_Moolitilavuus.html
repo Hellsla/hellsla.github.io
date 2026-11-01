@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>1 mol kaasu</title>
+<link rel="stylesheet" href="simulaatio-theme.css" />
 <style>
   :root {
-    --ink: #3f3d39;
+    --ink: var(--sim-ink);
     --muted: #77736c;
     --soft: #f4f4f4;
     --N: #2e86a6;
@@ -17,12 +18,9 @@
   }
 
   html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
+    background: var(--sim-bg);
     color: var(--ink);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: var(--sim-font);
     overflow: hidden;
   }
 
