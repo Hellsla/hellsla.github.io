@@ -1,22 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: 03667762f34381de
+CONTENT-HASH: ce7528c836feb20f
 
 ## Blocking
-(none)
+(none) This is a re-review after commit c6532e4f. The earlier Polish is resolved:
+- The sentence starter uses `<em>`, so no asterisks show.
+- The table *ITER then and now* is shorter at 390.
+- The writing-task title uses the colon.
+- The temperatures are in LaTeX.
 
 ## Polish
-1. [Minor] `check-explain`, the first sentence starter (capture `stage-tarkista-390-2`) shows literal asterisks: "*Update, November 2026:* …". Inside raw HTML, Markdown does not render. Fix: `<li><em>Update, November 2026:</em> …</li>`.
-2. [Minor] The table *ITER then and now* at 390 (`stage-tutki-390-4`). The narrow Topic column hyphenates "experi-ments", "deu-terium–tritium" and "con-struction", and the right column runs to 8 lines ("so-lenoid", "re-pairs"). It is readable. Fix: shorten the topics ("first plasma", "D–T operation", "construction") and trim the construction cell to "6 of 9 vessel modules in the pit (July 2026)", leaving the solenoid fact in the text.
-3. [Minor] Title consistency: the writing task is called "ITER – promise, progress and reality", but the unit title is "ITER: promise, progress and reality". Use the colon in both.
-4. [Minor] Reading-notes and writing models: "150 million °C", "−269 °C" and "30 m" are plain text, while the theory uses LaTeX. These are model student notes, so this is acceptable, but `$-269\ ^\circ\text{C}$` in the model text would match the hook of *Inside ITER*.
+1. [Minor] The two predictions now ask almost the same question (`inquiry.json` `pred-ages` and `pred-change`):
+   - pred-ages: "Which kind of **statement** in a careful 2018 article … is most likely to be out of date by 2026?"
+   - pred-change: "Which kind of **information** in a 2018 article … is most likely to be out of date in 2026?"
+
+   A reader sees the same question twice. Fix: make the difference explicit. For example, pred-ages asks about the type of claim (result, plan or opinion), and pred-change asks about the topic: "Which **topic** of a 2018 article — physics, goal, site, or dates and costs — has changed most by 2026?" Alternatively, drop one. For pedagogy.
+2. [Minor] The then-and-now table at 390: the right column still hyphenates "op-eration" and "bil-lion". Acceptable.
 
 ## Checked
-- Fresh build and captures for this hash: top and intro at 390 and 1280, every stage at 390 and 1280, contact sheets 1–4.
-- The hero at 1280: newspaper and tablet with drawn tokamaks and grey lines only, no text.
-- The claims match component, the then-and-now table at both widths, the 300-word writing task with word bank, sentence starters, outline, model and seven criteria. The peer-feedback box, and the say component (also as a table at 1280). Sources and teacher notes.
-- No `.katex-error`, no raw `$` and no overflow.
-- English editing of every text: the claims sorting, the three checks (option lengths within range) and the correction-note model.
-- French phrases, `lang="fr"` and one respelling style.
+- Fresh build and captures for this hash: top and intro at 390 and 1280, every stage at 390 and 1280, contact sheets.
+- In the built HTML: `<li><em>Update, November 2026:</em>`, and no literal `*Update`.
+- The table, the claims sorting with LaTeX −269 °C, and the predictions with their wording.
+- Playwright: no `.katex-error`, no raw `$` and no overflow.
 
 ## Shared issues
 (none new)

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0e35175c4902c240
+CONTENT-HASH: 7535d2d9b9420b7a
 
 Science re-review, 2026-11-01, of commit c6532e4f. Earlier findings 1–3 are all fixed:
 - §Why now gives 1987 for the agreement and 1988 for the conceptual design, matching `order-story`.
@@ -14,4 +14,4 @@ None.
 None in the unit files.
 
 ## Shared issues
-1. `assets/units/fy14/data/timeline.json`, card `iter-first-module-2025`, which this unit's timeline task now shows. The card says "Assembly had been stopped for about two years". That is the claim this unit dropped: module #6 was in the pit from May 2022 and came out 14 months later, and the next module went in in April 2025. The card also calls the bevel non-conformities "welding defects". Fix: "…after repairs to defects at the welding edges of its sectors. Assembly of the vessel had been halted since 2022…".
+None. The earlier timeline.json point is fixed in commit b3bbc371. The card `iter-first-module-2025`, now titled "ITER's vacuum vessel assembly restarts", names the 2022 edge-shape and thermal-shield defects and no longer gives a two-year stop. This matches iter.org/node/20387, NEI (April 2025) and the ITER press release of 29 July 2026.
