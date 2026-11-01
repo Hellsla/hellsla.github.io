@@ -1,26 +1,37 @@
 VERDICT: PASS
-CONTENT-HASH: 61ad9554da6ac05b
+CONTENT-HASH: edd56ca7362d855c
 
-Science and fact review of fy14-fr-bonjour, 2026-11-01. The unit has no physics or maths.
+Science and fact re-review of fy14-fr-bonjour, 2026-11-01. It covers the fixes after review and the new or rewritten tasks.
 
-Facts were checked by WebFetch on 2026-11-01:
-- iter.org, *Visiting ITER*: about 35 km north of Aix-en-Provence; visitors at least 16, with 16–17-year-olds accompanied by a parent or legal guardian; booking at least four weeks ahead; a valid ID; visits Monday to Friday, 9:00–16:00. This agrees with the hook, the Monday 10:00 and 9:00 scenarios and teacher.md.
-- Wikipedia, *ITER*: near Cadarache, headquarters in Saint-Paul-lez-Durance, and the seven members exactly as listed. The scenario is clearly marked as such.
+## Previous findings
+All eight are resolved:
+1. The ITER sentence reads "under construction (as of November 2026)".
+2. The woman in the hook wears a staff badge.
+3. The *vous* column has *Je vais bien, merci*.
+4. The order hint is rewritten and now matches the dialogue.
+5. The *toi* rule reads "subject of a verb".
+6. The `{fr}` tags are removed from the English *in*.
+7. The rule is limited to verbs like *parler* and *habiter*.
+8. The last line reads "rarely a mistake".
 
-French was checked line by line, in the summary table, the say phrases, the dialogue, the order and gapfill items, the match, the role-play model and the checks. Grammar, agreement (finlandais/finlandaise, enchanté(e), ingénieure), prepositions (de Finlande, à Espoo), inversion, the tu/vous forms and the typographic spaces are all correct. The pronunciation tips are sound approximations: silent finals, the CaReFuL consonants, nasal vowels, compulsory liaison after *vous*, voiced liaison *s*, *u* = Finnish *y*. Each check has exactly one correct option, and the feedback is right.
+## Facts
+These are unchanged and still match iter.org and Wikipedia (checked 2026-11-01): Saint-Paul-lez-Durance near Cadarache, about 35 km north of Aix-en-Provence, the seven members, and the visitor rules in teacher.md (16+, a parent or guardian for 16–17-year-olds, four weeks' notice, ID).
+
+## New French
+I checked each item line by line:
+- **pred-greet** (evening at the hotel): *Bonsoir, monsieur* is correct, and the *Bonjour, monsieur* feedback ("would not offend, but usually Bonsoir") is accurate.
+- **pred-name** distractors: correct.
+- **check-1:** *vous* for two people, *D'où venez-vous ?* is correct. *D'où viens-tu ?* is rightly described as the careful *tu* form.
+- **Intonation questions:** *Tu parles anglais ?* and *Tu habites où ?* are correct, and so is the summary sentence on inversion.
+- **Gapfill:** *appelez-vous* with ungrammatical distractors is fine. Its feedback cites *vous appelez-vous*, which is awkward but correct in context.
+- **Respellings:** consistent and sound. Examples: *bõ-ŽUR*, *mö-SJÖ*, *ã-šã-TE*, *fẽ-lã-DÈZ*, *vu-ZÈT*, *ty a-bit U*, *par-LE vu-zã-GLÈ*. The note on stress ("usually the last syllable") is correct.
+- **back-to-predictions:** asks only what the unit teaches.
 
 ## Blocking
 None.
 
 ## Polish
-1. unit.md, intro, "ITER … that is being built": a changing fact without a date (guide §4). Write "that is under construction (as of November 2026)".
-2. inquiry.json, hook: "A woman with a **visitor** badge" greets the class as if she were staff. Write "a staff badge" or just "a badge".
-3. unit.md, Summary table, row "I'm fine, thanks." in the *vous* column: *Ça va bien, merci* is acceptable, but the natural reply to *Comment allez-vous ?* is <span lang="fr">Je vais bien, merci</span> (or *Très bien, merci*, as Claire says). Put that in the vous column.
-4. inquiry.json, order component, hint 3, "A question about the country comes before a question about the town": Léa never asks about the country, because Eetu volunteers it. Write "Eetu says where he comes from before Léa asks about his town."
-5. inquiry.json, gapfill fx-gap-intro, the feedback on `[[toi|tu|te]]`: "*Tu* comes only right before a verb" is contradicted by *tu t'appelles*. Write "*Tu* is only the subject of a verb; after *et* use *toi*."
-6. inquiry.json, gapfill fx-gap-intro, the feedback on `de/à`: "You live *{fr}in{/fr}* a town" marks the English word *in* as French. Remove the {fr} tags around *in*.
-7. inquiry.json, fx-gap-classmate, the feedback on *habite*: "With *il* and *elle* the verb ends in a silent *-e*" holds only for -er verbs (the line above uses *est*). Add "for verbs like *parler* and *habiter*".
-8. unit.md, last line, "being a little too polite is never a mistake": this sits oddly with the rule that young people say *tu* at once. "is rarely a mistake" is more accurate.
+None.
 
 ## Checked
-ITER/Cadarache location, members and visitor rules; French grammar, spelling, typography and pronunciation tips; consistency between the theory, the table, the components, the feedback and teacher.md; sources with dates.
+ITER facts and dates, French grammar, spelling, typography and pronunciation tips, consistency between the theory, the table, the components, the feedback and teacher.md, and that every check has exactly one correct option.
