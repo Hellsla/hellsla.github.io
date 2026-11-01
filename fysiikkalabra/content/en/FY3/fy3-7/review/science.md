@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0db05c39c956e676
+CONTENT-HASH: 5ee4fff209593786
 
 ## Blocking
 (none left; see Fixed)
@@ -19,3 +19,6 @@ CONTENT-HASH: 0db05c39c956e676
 ## Delta review (2026-11-01)
 - Fixed: "0-degree ice into 0-degree water" (check item prompt) reworded to "ice at zero degrees into water at zero degrees", which is natural English with the same physics.
 - Checked: inquiry.json prose temperatures ("at zero degrees", "100 degrees", "130-degree steam", "100-degree steam/water") match the Finnish 0-asteinen/100-asteinen/130-asteinen: same values, same physics, no unit typed as text beside maths; maths formulas unchanged, so parity with the Finnish holds. Time-axis label shift is visual only.
+
+## Delta review (lesson.md, 2026-11-01)
+- Checked: two sentences changed since bd71b55: "100-degree steam burns worse than 100-degree water" and "ice at zero degrees and water at zero degrees". Both mirror the Finnish 100-asteinen / 0-asteista; same values and physics, no unit typed as text beside maths (the maths-wrapped $100\,{}^\circ\text{C}$ elsewhere is unchanged). No blocking issues.

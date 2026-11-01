@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0db05c39c956e676
+CONTENT-HASH: 5ee4fff209593786
 
 ## Blocking
 - none
@@ -12,3 +12,6 @@ delta review: the only change is sim.js line 165, the time-axis label "t (s)" mo
 
 ## Delta review (2026-11-01)
 - Wording-only changes in inquiry.json (temperatures in prose); teaching sequence, demand, answers and feedback unchanged. The one awkward phrase "0-degree ice into 0-degree water" was made "ice at zero degrees into water at zero degrees".
+
+## Delta review (lesson.md, 2026-11-01)
+- Wording-only change in two sentences (steam/water at 100 degrees; ice/water at zero degrees); natural English, matches the Finnish, teaching sequence unchanged.
