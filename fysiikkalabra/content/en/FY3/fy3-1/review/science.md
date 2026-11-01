@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 199db6cdf206c390
+CONTENT-HASH: 1e44a607914779d5
 
 ## Blocking
 (none)
@@ -8,4 +8,6 @@ CONTENT-HASH: 199db6cdf206c390
 - none
 
 ## Checked
-- Round 2 delta since 7f8acef vs the reviewed Finnish source: 1 N = 1 kg·m/s² now one formula (correct, same as Finnish); sim chart caption removed, full-scale value now labelled on the y axis, G (N) title above the axis; the chart-scale readout sentence is unchanged and still states the scale is this mass's weight on Jupiter. No numbers, units, answers or G = mg physics changed; nothing else differs in meaning. check_i18n 0 errors.
+- Round 3 delta since 4253a4a: only lessons/FY3/fy3-1/sim.js drawChart title placement (drawn ts(8) higher, width capped at the chart's 292 px); lang/, content/en/FY3/fy3-1 unchanged (only the exercise review log carry.tsv in fi changed). No physics, numbers, readout, simState or text changed.
+- sim-390/sim-1280 (en, 10 kg, Earth): bars 16,2 / 37,1 / 98,1 / 248 N correct for m·g, axis top 248 = Jupiter weight, readout scale sentence agrees; title no longer touches G (N).
+- Earlier findings hold; check_i18n en: 0 errors. Hash 1e44a607914779d5 at start and end.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 610363548f8ddbac
+CONTENT-HASH: e3b9ca921e71f66f
 
 ## Blocking
 (none)
@@ -8,4 +8,6 @@ CONTENT-HASH: 610363548f8ddbac
 - none
 
 ## Checked
-- Round 2 delta since 7f8acef: unit identity joined into one formula (reads better); chart now labels its full-scale value on the axis with the title G (N) above it, readout sentence still explains the scale, so no information lost and no clutter; removed lang key leaves no dangling reference (check_i18n 0 errors). Rest of the lesson unchanged in meaning.
+- Round 3 delta since 4253a4a: only the chart title's position and width cap in sim.js; no text, lang key or lesson content changed.
+- sim-390 and sim-1280: "Sama massa, paino eri paikoissa" on its own line above G (N), no overlap, readable size on a phone; readout scale sentence still matches the axis 0–248 N.
+- Earlier findings hold; check_i18n fi-easy: 0 errors. Hash e3b9ca921e71f66f at start and end.
