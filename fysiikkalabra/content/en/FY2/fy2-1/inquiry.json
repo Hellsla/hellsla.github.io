@@ -107,7 +107,7 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "kitka",
+        "kitka": "friction",
         "h0": "initial height $h_0$"
       },
       "units": {
@@ -180,7 +180,7 @@
       "vary": "t",
       "names": {
         "t": "t",
-        "kitka": "kitka",
+        "kitka": "friction",
         "h0": "initial height $h_0$"
       },
       "units": {
