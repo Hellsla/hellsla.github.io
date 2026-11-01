@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c725adc7428f7a3a
+CONTENT-HASH: 9b2d1c5d3a2e7f48
 
 ## Blocking
 (none)
 
 ## Polish
-- (none new beyond the Finnish exercise report)
+- (none beyond the Finnish report's own polish items)
 
 ## Checked
-- L1-03 now the figure-reading skater task: given values 700/0 J at A and 0/500 J at C, answer 200 J, tolerance 0.02 and the figure id are identical to the Finnish; recomputed 700 - 500 = 200 J, and B gives 600 J mechanical, 100 J thermal so far.
-- Solution steps in the same order as the Finnish (Given, Find, Principle, Reading the graph, Formula, Conversions, Substitution, Answer, Reasonableness); all formulas, units and rounding reasons preserved.
-- The task text does not state the answer and the figure description gives only the bar values.
-- Other exercises unchanged and still follow the Finnish.
+- All 12 exercises compared with the Finnish: texts, numbers, units, answers, tolerances, figure id (fy2-1/kitka-pylvaat) identical. Recomputed: 50, 239, 200 (700-500), 510, 850, 3.0 kJ, 360, 29000, 130, 0.2 J.
+- Solutions follow the Finnish step order (Given ... Reasonableness, with Reading the graph for L1-03); formulas, unit conversions and significant-figure reasons preserved; L1-04 and L3-03 model answers keep the same physics.

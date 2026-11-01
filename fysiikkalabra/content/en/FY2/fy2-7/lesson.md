@@ -466,7 +466,7 @@ In the figure the width of a stream shows the amount of energy. In the electrici
 
 A loss percentage is always taken of the sent energy. If the loss is $9.0\,\%$, then $100\,\% - 9.0\,\% = 91.0\,\%$ of the sent energy arrives, and $91.0\,\% = 91.0 : 100 = 0.910$. The energy you need is solved from the formula: $E_\text{arrived} = \eta\, E_\text{sent}$ and $E_\text{sent} = E_\text{arrived} : \eta$.
 
-The same applies to power: the power that arrives is $\eta$ times the power sent. Energy and power are connected by the formula $P = \tfrac{E}{t}$ (chapter *Power P = ΔE/Δt*), so with a steady loss power $P_\text{loss}$ the energy lost during a time $t$ is $E_\text{loss} = P_\text{loss} \cdot t$.
+The same applies to power: the power that arrives is $\eta$ times the power sent. Energy and power are connected by the formula $P = \tfrac{E}{t}$ (chapter *Power: P = ΔE/Δt*), so with a steady loss power $P_\text{loss}$ the energy lost during a time $t$ is $E_\text{loss} = P_\text{loss} \cdot t$.
 
 ## Worked example
 

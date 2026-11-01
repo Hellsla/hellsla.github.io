@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e9496b837c267421
+CONTENT-HASH: 64fb51679b9b6f6a
 
 ## Blocking
 (none)
@@ -11,4 +11,4 @@ CONTENT-HASH: e9496b837c267421
 (none)
 
 ## Checked
-Translation delta review against the reviewed Finnish: L1-04 figure-reading exercise (text, figure fy2-6/fi-bars, answer 26.4 %, unit and tolerance unchanged), solutions.md L1-04 (Annettu, Kuvaajan lukeminen step, 20.2 + 0.9 = 21.1 TWh of 79.9 TWh = 0.2641, three significant figures). Numbers, units and LaTeX preserved; the task does not give the readings away; figure is labelled in the language. Science: statements about nuclear modulation, hydropower and rated versus average power are correct.
+All 12 exercises and worked solutions against the Finnish: powers, times, answers, units (turbines, million, times), tolerances and the figure reference unchanged; solution arithmetic rechecked (420 MWh, 960 MWh, 38.4 GWh, 26.4 %, 70.08 GWh, 8750 h, 2583 turbines, 2.8 million, 7.14 GW, 2.7, 13.1 GW).

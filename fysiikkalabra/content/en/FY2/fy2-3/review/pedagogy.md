@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a2b91603cd174032
+CONTENT-HASH: ed6f842cf8a1ed44
+
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: hero illustration aria-label (en) compared with the Finnish description and the rendered picture; faithful, natural, complete, no Finnish left.
+- Translation delta against the Finnish: hero aria-label is faithful and natural, the exit-ticket answer keeps the teaching sequence (convert W to kW, then multiply by time) and is easier to follow than before, inquiry labels are plain English. Teaching sequence of the lesson unchanged from the Finnish.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 57ec827dbcf284f3
+CONTENT-HASH: 2480aed8f87895fd
 
 ## Blocking
 (none)
@@ -11,4 +11,4 @@ CONTENT-HASH: 57ec827dbcf284f3
 - (none)
 
 ## Checked
-- Update 2026-10-29: figure-reading exercise keeps the Finnish demand; the solution names the figure's lower flow and the 9 % / 91 % labels; step labels as in other solutions. Short sentences, same demand.
+- Short clear sentences (split compound sentences, e.g. 'Mitä ... Kuinka monta ...'); same levels, order and solution structure as the Finnish; every task names the unit to answer in; terms as in the reviewed lesson (lähtevä, perille, siirtohäviö).

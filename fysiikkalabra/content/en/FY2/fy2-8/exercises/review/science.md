@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7adf7b7d136869eb
+CONTENT-HASH: ef5656b572d016c7
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7adf7b7d136869eb
 - none
 
 ## Checked
-- Checked (batch delta review): exercise L1-05 now reads the emission factor from the figure fy2-8/emissions (answer 1.2 kg unchanged); solution gets the graph-reading step (bar between 400 and 600, a little before the middle, 490); L3-01 reasonableness and conclusion follow the softened Finnish (coal about 10 % above the limit, within the uncertainty, only burning counted for petrol). Numbers, units, significant figures and decimal point preserved. check_i18n: 0 errors.
+- Translation review against the reviewed Finnish source, all 12 exercises and solutions (en): same data, units, answers (72 kg, 2.5 kg, 220 g, 12 times, 1.2 kg, 460 t, 2.9 t, 24 000 kWh, 250 g/kWh, 740 g/kWh, 50 times, 4.1 times), tolerances, figure reference fy2-8/emissions and solution structure (same number of values in every section). Graph reading (second bar, 400-600 grid lines) and the L3-01 conclusion (coal about 10 % above the limit, within the uncertainty) match the Finnish. No Finnish words left; units as in the Finnish ("times" for kertaa). No edits needed. check_i18n: 0 errors.

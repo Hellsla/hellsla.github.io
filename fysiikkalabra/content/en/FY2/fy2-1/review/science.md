@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c9d01e7a4a722af4
+CONTENT-HASH: 682fc99b29fd96a9
 
 ## Blocking
 (none)
 
 ## Polish
-- (none beyond the Finnish report's own polish items, which are carried unchanged)
+- (none beyond the Finnish report's own polish items)
 
 ## Checked
-- Compared inquiry.json, lesson.md, exit-ticket.json and meta.json with the reviewed Finnish: every number, unit, `$...$` formula, correct option and experiment setting is preserved (decimal point used in text and LaTeX).
-- check-kitka: exactly one correct option (total energy including thermal); both distractors stay wrong for the reason their feedback gives; feedback is translated fully and states the physics as in Finnish (friction changes mechanical into thermal energy, nothing is destroyed).
-- Rebalanced options (pred-2, koe-1, virhe) follow the new Finnish wording; the correct option is not the longest; the added "so energy is conserved" in the virhe feedback matches.
-- Opening question no longer gives the answer away; exit ticket has two questions and the intro says two.
-- Figure texts: the new kitka-pylvaat description lists 700/0, 300/300, 0/500 J as in the figure, no thermal energy; figures up to date in the language.
-- Terms (thermal energy, kinetic/potential energy, isolated system) follow the glossary.
+- Lesson.md, inquiry.json, exit-ticket.json, meta.json and figures.json compared with the reviewed Finnish: all numbers, units, formulas, worked-example values (840 J, 0.72 kJ = 720 J, 120 J), model values (981 J; 63/918, 862/119, 424/557 J; 469, 143, 512, 838 J), correct options and answers are identical; decimal point used in text and LaTeX.
+- Physics wording: thermal energy vs heat, isolated system, friction converts mechanical to thermal energy (nothing created or destroyed), kinetic/potential/thermal terms follow the glossary; no Finnish words left in text, units or symbols.
+- Edit: worked-example paragraph said the skateboarder's tyres warm up; the Finnish skateboard has wheels (renkaat), changed to wheels. Figure texts (aria-labels) match the figures and the 700/0, 300/300, 0/500 J reading.
