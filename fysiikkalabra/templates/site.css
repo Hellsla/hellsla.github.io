@@ -362,9 +362,10 @@ form.check.is-ok input{border-color:var(--accent);background:var(--accent-soft)}
 .pad-open:hover,.pad-copy:hover{background:var(--accent-soft)}
 .pad-open[aria-expanded=true]{background:var(--accent-soft)}
 .pad{margin:0 0 .8rem}
-.pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);overflow-wrap:anywhere}
+.pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);font-family:var(--sans);overflow-wrap:anywhere;scroll-margin-top:9rem}
 .pad .rich-text-editor:focus{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
 .pad .rich-text-editor img{max-width:100%;vertical-align:middle}
+.pad .rich-text-editor-toolbar-root>div{max-width:100vw;overflow-x:auto;overscroll-behavior-x:contain}   /* Abitti's toolbar is fixed to the top of the window; on a phone it scrolls sideways */
 .pad-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .8rem;margin-top:.5rem}.pad-tools .pad-copy{margin:0}
 .pad-status{margin:0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-status[data-state=ok]{color:var(--accent-deep);font-weight:600}.pad-status[data-state=no]{color:#8a3b1a}
 .pad-note{margin:.3rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}

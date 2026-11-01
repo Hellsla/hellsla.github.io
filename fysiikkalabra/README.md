@@ -117,6 +117,12 @@ lessons/<COURSE>/<id>/answers.py                    every exercise answer (lesso
   (category `split`, `review/carry.tsv` and `exercises/review/carry.tsv`): `reviews.py verify` re-derives each one from
   git history, checking that every file is the one that was passed and that each answers file's lines and values come
   from the one passed `answers.py`.
+- **Solution editor** (teacher 2026-11-01): every exercise gets "Kirjoita ratkaisu" from `templates/lesson.js`
+  (part 6), which opens Abitti's own Digabi rich-text-editor under the task and adds "Kopioi ratkaisu" for L'Math or
+  Abitti. It finds the exercises by `#exercises li[id]`, the markup `build.py exercise_html` writes, so no lesson or
+  exercise file says anything about it and a new lesson has it at once. The editor (`templates/vendor/digabi/`,
+  versions and licences in its README) loads on the first click only; texts are `js.pad_*` in `lang/<lang>.json`.
+  Tested by `scripts/test_writepad.py` (CI).
 
 ## Exercise schema
 ```json

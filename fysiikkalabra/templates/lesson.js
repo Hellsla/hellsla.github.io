@@ -93,7 +93,7 @@
   // p.task, in #exercises) gets the button, so every lesson, now and later, has it without a change to the lesson.
   // The answer box, the check, the answer and the model solution are left as they are; the editor goes before them.
   // Nothing is stored: the solution lives in the page until the student copies it (vendor/digabi/README.md).
-  const PAD_TASKS = '#exercises li#fy3-3-L1-01';   // PILOT
+  const PAD_TASKS = '#exercises li[id]';
   const VENDOR = new URL('vendor/digabi/', document.currentScript ? document.currentScript.src : location.href).href;
   let padLib = null;
   const load = (src) => new Promise((ok, fail) => { const s = document.createElement('script'); s.src = VENDOR + src; s.onload = ok; s.onerror = fail; document.head.appendChild(s); });
