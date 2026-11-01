@@ -52,7 +52,13 @@
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/\[([^\]]+)\]\((https?:[^)\s]+|[\w./#-]+)\)/g, '<a href="$2">$1</a>')
     .replace(/\{fr\}(.+?)\{\/fr\}/g, '<span lang="fr">$1</span>');
-  const api = { base, store, typeset, h, shuffle, scramble, speech, md };
+  // a component's data file: the copy build.py embedded in the page (works offline and from a file), else fetched
+  const data = (src) => {
+    const own = [...document.querySelectorAll('script.fx-src')].find((s) => src && src.endsWith(s.dataset.for));
+    if (own) { try { return Promise.resolve(JSON.parse(own.textContent)); } catch (e) { return Promise.reject(e); } }
+    return fetch(src).then((r) => r.json());
+  };
+  const api = { base, store, typeset, h, shuffle, scramble, speech, md, data };
   window.FXAPI = api;
 
   const loaded = {};

@@ -39,6 +39,8 @@ jobs:
         run: python scripts/investigations.py check
       - name: TVT-ohjeet (fields, links to and from investigations, figures; teacher 2026-10-31)
         run: python scripts/guides.py check
+      - name: course units of local courses (FY14 Road to Fusion; fields, chapters, inquiry, components, sources, figures; teacher 2026-11-01)
+        run: python scripts/units.py check
       - name: the figure catalog is current and figures in tasks resolve, render and hash as they should (scripts/figcat.py)
         run: python scripts/figcat.py build --check && python scripts/test_figcat.py
       - name: assessment audits are current (docs/assessment/)

@@ -113,11 +113,12 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
         out += f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p><ol class="unit-chapters">'
         for i, ch in enumerate(c["chapters"], 1):
             items = ""
-            for u in ch["units"]:
-                if u["id"] in hrefs: items += f'<li class="live"><a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a></li>'
-                else: items += f'<li class="soon"><span{lang_attr}>{esc(u["title"])}</span> <span class="tag">{T("site.lesson_coming")}</span></li>'
+            for j, u in enumerate(ch["units"], 1):
+                num = f'<span class="l-num">{i}.{j}</span>'
+                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a></li>'
+                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span> <span class="tag">{T("site.lesson_coming")}</span></li>'
             out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
-                    f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ul class="lessons">{items}</ul></li>')
+                    f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
         out += "</ol>"
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
         import investigations as inv     # the bank with its filter (teacher 2026-10-31)
